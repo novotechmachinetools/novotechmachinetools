@@ -4,6 +4,13 @@
   var d = document;
   var PREVIEW = !!d.querySelector(".preview-note"); // artifact preview: no embeds, no mail handler
 
+  /* ---------- e-mail links: the address is never written in the HTML, so harvesters cannot scrape it ---------- */
+  var EMAIL = "";
+  d.querySelectorAll("a.em[data-u]").forEach(function (a) {
+    var e = a.dataset.u + "@" + a.dataset.d;
+    a.href = "mailto:" + e; a.textContent = e; EMAIL = EMAIL || e;
+  });
+
   /* ---------- mobile navigation ---------- */
   var toggle = d.querySelector(".nav-toggle");
   var menu = d.getElementById("nav-menu");
@@ -195,7 +202,7 @@
     var status = form.querySelector(".form-status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (PREVIEW) { status.className = "form-status"; status.textContent = "This is a preview — on the live site this sends the request to info@NovoTechMachineTools.com."; return; }
+      if (PREVIEW) { status.className = "form-status"; status.textContent = "This is a preview — on the live site this sends the request to " + EMAIL + "."; return; }
       var ok = true;
       form.querySelectorAll("[required]").forEach(function (el) {
         var bad = !el.value.trim() || (el.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));
@@ -215,7 +222,7 @@
         })
         .catch(function () {
           status.className = "form-status is-error";
-          status.innerHTML = "We could not send the form from this page. Please email <a href=\"mailto:info@NovoTechMachineTools.com\">info@NovoTechMachineTools.com</a> or call +1 647 526 5510.";
+          status.innerHTML = "We could not send the form from this page. Please email <a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a> or call +1 647 526 5510.";
         })
         .then(function () { btn.disabled = false; });
     });

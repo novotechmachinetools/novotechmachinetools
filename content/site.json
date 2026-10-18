@@ -4,7 +4,8 @@
   "domain": "https://novotechmachinetools.com",
   "phone": "+1 647 526 5510",
   "phone_tel": "+16475265510",
-  "email": "info@NovoTechMachineTools.com",
+  "email_user": "info",
+  "email_domain": "NovoTechMachineTools.com",
   "address": {
     "street": "1365 Mid-Way Blvd, Unit 26",
     "city": "Mississauga",
@@ -20,6 +21,28 @@
   "founded_note": "Metalworking machinery supplier in Mississauga, Ontario — serving fabricators across Canada.",
   "youtube_channel": "https://www.youtube.com/@NovoTechMachineTools",
   "youtube_rebar_playlist": "https://www.youtube.com/playlist?list=PLgtouQi-TePskd87VBPL7EEoHJJ_yKnH5",
+  "social": [
+    {
+      "name": "YouTube",
+      "icon": "youtube",
+      "url": "https://www.youtube.com/@NovoTechMachineTools"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/company/novotech-machine-tools-inc/"
+    },
+    {
+      "name": "Facebook",
+      "icon": "facebook",
+      "url": "https://www.facebook.com/novotechmachinetoolscanada"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/novotech_machinetools/"
+    }
+  ],
   "nav": [
     {
       "label": "Products",

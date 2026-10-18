@@ -1,3 +1,4 @@
+{% from "partials/macros.html" import email_link, social_links with context %}
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
@@ -75,8 +76,10 @@
     <div>
       <p class="footer-brand">NovoTech Machine Tools Inc.</p>
       <p>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}</p>
-      <p><a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a><br>{{ email_link() }}</p>
       <p>{{ site.hours }} (Eastern)</p>
+      <p class="footer-title footer-follow">Follow NovoTech</p>
+      {{ social_links() }}
     </div>
     <div>
       <p class="footer-title">Products</p>
@@ -97,7 +100,6 @@
         <li><a href="brochures.html">Brochures</a></li>
         <li><a href="metal-fabricating-articles.html">Articles &amp; buying guides</a></li>
         <li><a href="contact-us.html">Contact us</a></li>
-        <li><a href="{{ site.youtube_channel }}" rel="noopener">YouTube channel</a></li>
         <li><a href="privacy-policy.html">Privacy policy</a></li>
       </ul>
     </div>

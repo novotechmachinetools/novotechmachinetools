@@ -163,13 +163,12 @@ def organization_ld():
         "logo": absurl(img("novotech-logo")["src"]),
         "image": absurl(img("novotech-logo")["src"]),
         "telephone": site["phone"],
-        "email": site["email"],
         "description": site["founded_note"],
         "address": {"@type": "PostalAddress", "streetAddress": a["street"], "addressLocality": a["city"], "addressRegion": a["region"], "postalCode": a["postal"], "addressCountry": "CA"},
         "geo": {"@type": "GeoCoordinates", "latitude": site["geo"]["lat"], "longitude": site["geo"]["lng"]},
         "areaServed": {"@type": "Country", "name": "Canada"},
         "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:30", "closes": "17:00"}],
-        "sameAs": [site["youtube_channel"]],
+        "sameAs": [x["url"] for x in site.get("social", []) if x.get("url")],
     }
 
 

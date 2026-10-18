@@ -278,6 +278,9 @@ small { font-size: .85em; }
 .related-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; }
 .related-list a { font-family: var(--cond); font-weight: 600; font-size: 20px; color: var(--charcoal); }
 
+/* ---------- protected e-mail: the @ is drawn here, JS later swaps in the real mailto: link ---------- */
+.em { white-space: nowrap; }
+.em-at::before { content: "\0040"; }
 /* ---------- footer ---------- */
 .site-footer { background: var(--charcoal); color: #D5D7DA; padding: 40px 0 20px; margin-top: 0; font-size: 15.5px; }
 .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 28px; }
@@ -285,6 +288,12 @@ small { font-size: .85em; }
 .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .site-footer a { color: #fff; text-decoration: none; display: inline-block; padding: 3px 0; }
 .site-footer a:hover { color: var(--orange); text-decoration: underline; }
+/* ---------- social links ---------- */
+.social { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.site-footer .social a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px 8px 11px; border: 1px solid #5A5D62; border-radius: 999px; color: #fff; font-size: 14.5px; font-weight: 600; line-height: 1; }
+.site-footer .social a:hover, .site-footer .social a:focus-visible { border-color: var(--orange); color: var(--orange); text-decoration: none; }
+.social svg { flex: none; }
+.footer-follow { margin-top: 18px; }
 .footer-bottom { border-top: 1px solid #45474B; margin-top: 26px; padding-top: 14px; font-size: 14px; color: #B5B8BC; }
 
 /* ---------- lightbox ---------- */

@@ -1,9 +1,10 @@
+{% from "partials/macros.html" import email_link with context %}
 <section class="quote" id="reques-a-quote" aria-labelledby="quote-title">
   <div class="wrap quote-grid">
     <div class="quote-copy">
       <h2 id="quote-title">Request a quote</h2>
       <p>Tell us which machine you are looking at and the bar sizes you run, and we will come back with pricing, delivery and the right voltage option for your shop. We answer within one business day.</p>
-      <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern) or email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+      <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern) or email {{ email_link() }}.</p>
       <p class="quote-contact">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}</p>
     </div>
     <form class="quote-form" action="quote.php" method="post" novalidate>
