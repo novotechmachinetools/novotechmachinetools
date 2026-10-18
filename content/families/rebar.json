@@ -37,13 +37,13 @@
         "b-36",
         "b-26",
         "b-50",
+        "spiral-bending-attachment",
         "b-bending-disc",
         "b-multi-bend",
         "b-50-bending",
         "b-pins-rollers",
         "b-bar-stop",
-        "tooling-set",
-        "csa-label"
+        "tooling-set"
       ],
       "specs": {
         "kind": "bending",
@@ -239,7 +239,10 @@
           "thumb": "video-V8oJgSzeiq4",
           "duration": "PT7M19S"
         }
-      ]
+      ],
+      "model_caps": {
+        "Spiral bending attachment": "optional accessory for B and BS series · spirals and round stirrups"
+      }
     },
     "bs-series-long-table-benders": {
       "id": "bs-series-long-table-benders",
@@ -258,6 +261,7 @@
         "bs-36",
         "bs-45",
         "bs-60",
+        "spiral-bending-attachment",
         "bs-disc-rollers",
         "bs-two-sleeves",
         "bs-multi-bend",
@@ -452,7 +456,10 @@
           "thumb": "video-E9k845OzwUs",
           "duration": "PT42S"
         }
-      ]
+      ],
+      "model_caps": {
+        "Spiral bending attachment": "optional accessory for B and BS series · spirals and round stirrups"
+      }
     },
     "Protable-rebar-bender-MG-BT-A-series": {
       "id": "Protable-rebar-bender-MG-BT-A-series",
