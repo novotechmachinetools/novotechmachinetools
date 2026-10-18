@@ -274,6 +274,7 @@ table.range-t { width: 100%; border-collapse: collapse; font-size: 7.9pt; line-h
   font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9.3pt; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink); border-bottom: 1.5px solid var(--orange); background: #fff;
 }
+.range-t tr.grp td { vertical-align: baseline; }
 .range-t tr.grp td.pg { color: var(--mid); font-family: "Barlow", sans-serif; font-weight: 500; font-size: 7.2pt; letter-spacing: 0.06em; text-transform: uppercase; }
 .range.fit-1 table.range-t { font-size: 7.6pt; }
 .range.fit-1 .range-t td { padding: 1.5pt 6pt; }
