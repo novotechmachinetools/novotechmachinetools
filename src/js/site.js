@@ -211,6 +211,15 @@
         if (bad) ok = false;
       });
       if (!ok) { status.className = "form-status is-error"; status.textContent = "Please add your name and a valid email address."; return; }
+      if (form.dataset.staging) {
+        // GitHub test site: no PHP here, so hand the request to the visitor's e-mail app instead
+        var f = function (n) { var el = form.elements[n]; return el ? el.value : ""; };
+        var body = "Name: " + f("name") + "\nCompany: " + f("company") + "\nEmail: " + f("email") + "\nPhone: " + f("phone") + "\nMachine: " + f("machine") + "\nPage: " + f("page") + "\n\n" + f("message");
+        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Quote request — " + (f("machine") || "NovoTech website")) + "&body=" + encodeURIComponent(body);
+        status.className = "form-status";
+        status.textContent = "This is the test site (GitHub) and it cannot send e-mail by itself, so your request was opened in your e-mail app instead. On the live site at NovoTechMachineTools.com the form sends directly to " + EMAIL + ".";
+        return;
+      }
       var btn = form.querySelector("button[type=submit]");
       btn.disabled = true; status.className = "form-status"; status.textContent = "Sending…";
       fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })

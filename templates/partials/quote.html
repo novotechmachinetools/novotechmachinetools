@@ -7,7 +7,7 @@
       <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern) or email {{ email_link() }}.</p>
       <p class="quote-contact">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}</p>
     </div>
-    <form class="quote-form" action="quote.php" method="post" novalidate>
+    <form class="quote-form" action="quote.php" method="post" novalidate{% if staging %} data-staging="1"{% endif %}>
       <input type="hidden" name="page" value="{{ page.title }}">
       <input type="hidden" name="ts" value="{{ build_ts }}">
       <p class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
