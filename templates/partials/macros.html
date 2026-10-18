@@ -39,7 +39,7 @@
 {% set t = img(v.thumb) %}
 <div class="video" data-video="{{ v.id }}" data-title="{{ v.title }}">
   <a class="video-poster" href="https://www.youtube.com/watch?v={{ v.id }}" rel="noopener" aria-label="Play video: {{ v.title }}">
-    <img src="{{ t.src }}" width="{{ t.w }}" height="{{ t.h }}" alt="" loading="lazy" decoding="async">
+    <img src="{{ t.small }}" srcset="{{ t.srcset }}" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 44vw, 420px" width="{{ t.w }}" height="{{ t.h }}" alt="" loading="lazy" decoding="async">
     <span class="play" aria-hidden="true"></span>
   </a>
   <p class="video-title">{{ v.title }}</p>

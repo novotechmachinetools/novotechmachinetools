@@ -337,7 +337,8 @@ def render_page(page):
         page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
     page["url"] = f"{site['domain']}/{page['slug']}.html"
     tpl = env.get_template(page.get("template", "page.html"))
-    return tpl.render(page=page, ld_json=page_ld(page), build_ts=int(datetime.datetime.now().timestamp()),
+    inline_css = None if ARTIFACT else open(os.path.join(DIST, "css", "site.css"), encoding="utf-8").read().replace("../fonts/", "fonts/")   # minified by main(); URLs re-based to the page
+    return tpl.render(page=page, ld_json=page_ld(page), build_ts=int(datetime.datetime.now().timestamp()), inline_css=inline_css,
                       css_hash=asset_hash(os.path.join(ROOT, "src", "css", "site.css")), js_hash=asset_hash(os.path.join(ROOT, "src", "js", "site.js")))
 
 

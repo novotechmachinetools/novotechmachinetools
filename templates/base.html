@@ -32,7 +32,7 @@
 <link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 {% if page.hero_image %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, 520px">{% endif %}
-<link rel="stylesheet" href="css/site.css?v={{ css_hash }}">
+{% if inline_css %}<style>{{ inline_css | safe }}</style>{% else %}<link rel="stylesheet" href="css/site.css?v={{ css_hash }}">{% endif %}
 {% block head %}{% endblock %}
 <script type="application/ld+json">{{ ld_json|safe }}</script>
 </head>
