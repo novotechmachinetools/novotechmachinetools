@@ -12,7 +12,7 @@
     <a class="gallery-link" href="{{ first.src }}" data-index="0">
       <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 560px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
     </a>
-    <figcaption>{{ first.alt }}</figcaption>
+    <figcaption><b class="cap-model">{{ first.cap1 }}</b><span class="cap-desc">{{ first.cap2 }}</span></figcaption>
     {% if images|length > 1 %}
     <button type="button" class="gal-nav gal-prev" aria-label="Previous photo">‹</button>
     <button type="button" class="gal-nav gal-next" aria-label="Next photo">›</button>
@@ -23,7 +23,7 @@
   <ul class="gallery-thumbs" aria-label="More photos">
     {% for im in images %}
     <li>
-      <a href="{{ im.src }}" class="thumb{{ ' is-cutout' if im.alpha else '' }}{{ ' is-current' if loop.first else '' }}" data-index="{{ loop.index0 }}" data-src="{{ im.src }}" data-srcset="{{ im.srcset }}" data-w="{{ im.w }}" data-h="{{ im.h }}" data-alt="{{ im.alt }}" aria-label="{{ im.alt }}">
+      <a href="{{ im.src }}" class="thumb{{ ' is-cutout' if im.alpha else '' }}{{ ' is-current' if loop.first else '' }}" data-index="{{ loop.index0 }}" data-src="{{ im.src }}" data-srcset="{{ im.srcset }}" data-w="{{ im.w }}" data-h="{{ im.h }}" data-alt="{{ im.alt }}" data-cap1="{{ im.cap1 }}" data-cap2="{{ im.cap2 }}" aria-label="{{ im.alt }}" title="{{ im.cap1 }}">
         <img src="{{ im.thumb }}" width="{{ im.w }}" height="{{ im.h }}" alt="" loading="lazy" decoding="async">
       </a>
     </li>

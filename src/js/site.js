@@ -81,7 +81,8 @@
     if (!lbItems.length) return;
     lbIndex = (i + lbItems.length) % lbItems.length;
     var it = lbItems[lbIndex];
-    lbImg.src = it.src; lbImg.srcset = it.srcset || ""; lbImg.sizes = "92vw"; lbImg.alt = it.alt; lbCap.textContent = it.alt;
+    lbImg.src = it.src; lbImg.srcset = it.srcset || ""; lbImg.sizes = "92vw"; lbImg.alt = it.alt;
+    lbCap.textContent = ""; if (it.cap1) { var bb = d.createElement("b"); bb.textContent = it.cap1 + " — "; lbCap.appendChild(bb); } lbCap.appendChild(d.createTextNode(it.cap2 || it.alt));
   }
   /* Horizontal swipe / drag detection shared by galleries and the lightbox */
   function onSwipe(el, cb) {
@@ -101,19 +102,19 @@
     var main = g.querySelector(".gallery-main img");
     var link = g.querySelector(".gallery-main .gallery-link");
     var figure = g.querySelector(".gallery-main");
-    var cap = g.querySelector(".gallery-main figcaption");
+    var capModel = g.querySelector(".gallery-main .cap-model"), capDesc = g.querySelector(".gallery-main .cap-desc");
     var counter = g.querySelector(".gal-index");
     var thumbs = Array.prototype.slice.call(g.querySelectorAll(".thumb"));
     var items = thumbs.length ? thumbs.map(function (t) {
-      return { src: t.dataset.src, srcset: t.dataset.srcset, w: t.dataset.w, h: t.dataset.h, alt: t.dataset.alt, cutout: t.classList.contains("is-cutout") };
-    }) : [{ src: main.currentSrc || main.src, srcset: main.srcset, w: main.width, h: main.height, alt: main.alt, cutout: figure.classList.contains("is-cutout") }];
+      return { src: t.dataset.src, srcset: t.dataset.srcset, w: t.dataset.w, h: t.dataset.h, alt: t.dataset.alt, cap1: t.dataset.cap1, cap2: t.dataset.cap2, cutout: t.classList.contains("is-cutout") };
+    }) : [{ src: main.currentSrc || main.src, srcset: main.srcset, w: main.width, h: main.height, alt: main.alt, cap1: capModel && capModel.textContent, cap2: capDesc && capDesc.textContent, cutout: figure.classList.contains("is-cutout") }];
     var index = 0;
     function show(i) {
       index = (i + items.length) % items.length;
       var it = items[index];
       main.src = it.src; main.srcset = it.srcset || ""; main.width = it.w; main.height = it.h; main.alt = it.alt;
       link.href = it.src; link.dataset.index = index;
-      cap.textContent = it.alt;
+      if (capModel) capModel.textContent = it.cap1 || ""; if (capDesc) capDesc.textContent = it.cap2 || it.alt;
       if (counter) counter.textContent = index + 1;
       figure.classList.toggle("is-cutout", !!it.cutout);
       thumbs.forEach(function (t, j) { t.classList.toggle("is-current", j === index); });

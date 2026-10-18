@@ -258,6 +258,37 @@ def max_single_bar(spec, grade="45"):
     return best
 
 
+def model_single(spec, i, key="capacity", grade="45"):
+    """Largest single-bar diameter (mm) of model i, or 0."""
+    for mm, n in spec.get(key, {}).get(grade, [[]] * (i + 1))[i]:
+        if n == 1:
+            return mm
+    return 0
+
+
+def caption_for(f, alt):
+    """Two caption lines for a gallery photo: 'B 36 · bends up to Ø1-3/8″ (36 mm)' and the photo description."""
+    caps = {}
+    spec = f.get("specs")
+    if spec:
+        verb = "cuts" if spec.get("kind") == "cutting" else "bends"
+        for i, m in enumerate(spec["models"]):
+            parts = []
+            mm = model_single(spec, i)
+            if mm:
+                parts.append(f"{verb} up to {dia(mm)}")
+            cmm = model_single(spec, i, "cutting_capacity")
+            if cmm:
+                parts.append(f"cuts up to {dia(cmm)}")
+            caps[m["name"]] = " · ".join(parts)
+    caps.update(f.get("model_caps") or {})
+    for name in sorted(caps, key=len, reverse=True):           # longest model name first: "MG 26 Junior" before "MG 26"
+        if re.search(r"(?<![\w-])" + re.escape(name) + r"(?![\w-])", alt):
+            return f"{name} · {caps[name]}" if caps[name] else name, alt
+    head = f.get("headline", "")
+    return f"{f['short']} · {head[0].lower() + head[1:]}" if head else f["short"], alt
+
+
 def prepare_family(f):
     if f.get("specs"):
         f["table"] = build_spec_table(f["specs"])
@@ -265,6 +296,8 @@ def prepare_family(f):
         kind = "Cuts" if f["specs"].get("kind") == "cutting" else "Bends"
         f["headline"] = f.get("headline") or f"{kind} single bars to {dia(f['max_mm'])}"
     f["gallery"] = [img(n) for n in f.get("images", [])]
+    for im in f["gallery"]:
+        im["cap1"], im["cap2"] = caption_for(f, im["alt"])
     f["card_image"] = f["gallery"][0] if f["gallery"] else None
     return f
 
