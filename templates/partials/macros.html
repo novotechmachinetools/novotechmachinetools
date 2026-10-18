@@ -12,12 +12,12 @@
     <a class="gallery-link" href="{{ first.src }}" data-index="0">
       <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 560px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
     </a>
-    <figcaption><span class="cap-desc">{{ first.cap2 }}</span><b class="cap-model">{{ first.cap1 }}</b></figcaption>
     {% if images|length > 1 %}
     <button type="button" class="gal-nav gal-prev" aria-label="Previous photo">‹</button>
     <button type="button" class="gal-nav gal-next" aria-label="Next photo">›</button>
     <span class="gal-count" aria-live="polite"><span class="gal-index">1</span> / {{ images|length }}</span>
     {% endif %}
+    <figcaption><span class="cap-desc">{{ first.cap2 }}</span><b class="cap-model">{{ first.cap1 }}</b></figcaption>
   </figure>
   {% if images|length > 1 %}
   <ul class="gallery-thumbs" aria-label="More photos">
@@ -59,7 +59,7 @@
 {% macro spec_table(f) -%}
 {% set t = f.table %}
 <div class="specs" id="{{ f.id }}-specs">
-  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ f.name }} technical specifications">
+  <section class="table-scroll" tabindex="0" aria-label="{{ f.name }} technical specifications">
     <table class="spec-table">
       <caption>{{ f.name }} — technical specifications and capacities</caption>
       <thead>
@@ -85,7 +85,7 @@
         {% endfor %}
       </tbody>
     </table>
-  </div>
+  </section>
   <p class="table-note">Single-bar capacity shows the largest Canadian metric bar / US bar number that fits. Dimensions are overall W × L × H. {{ site.voltage_note }}</p>
 </div>
 {%- endmacro %}
@@ -93,7 +93,7 @@
 {# ---------- simple two-column (or multi-column) table ---------- #}
 {% macro extra_table(t) -%}
 <div class="specs">
-  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ t.title }}">
+  <section class="table-scroll" tabindex="0" aria-label="{{ t.title }}">
     <table class="spec-table spec-table-simple">
       <caption>{{ t.title }}</caption>
       {% if t.cols %}
@@ -105,14 +105,14 @@
         {% endfor %}
       </tbody>
     </table>
-  </div>
+  </section>
 </div>
 {%- endmacro %}
 
 {# ---------- capacity list (bars at once by diameter) ---------- #}
 {% macro capacity_list(t) -%}
 <div class="specs">
-  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ t.title }}">
+  <section class="table-scroll" tabindex="0" aria-label="{{ t.title }}">
     <table class="spec-table spec-table-cap">
       <caption>{{ t.title }}</caption>
       <thead><tr>{% for h in t.head %}<th scope="col"{% if loop.first %} class="label-col"{% endif %}>{{ h }}</th>{% endfor %}</tr></thead>
@@ -122,13 +122,13 @@
         {% endfor %}
       </tbody>
     </table>
-  </div>
+  </section>
 </div>
 {%- endmacro %}
 
 {# ---------- e-mail address that harvesters cannot read: the "@" is drawn by CSS and the mailto: link is built by JS ---------- #}
 {% macro email_link(cls="") -%}
-<a class="em{{ ' ' ~ cls if cls else '' }}" href="#reques-a-quote" data-u="{{ site.email_user }}" data-d="{{ site.email_domain }}"><span>{{ site.email_user }}</span><span class="em-at" aria-label="at"></span><span>{{ site.email_domain }}</span></a>
+<a class="em{{ ' ' ~ cls if cls else '' }}" href="#reques-a-quote" data-u="{{ site.email_user }}" data-d="{{ site.email_domain }}"><span>{{ site.email_user }}</span><span class="em-at"></span><span>{{ site.email_domain }}</span></a>
 {%- endmacro %}
 
 {# ---------- social profile links (icons: Font Awesome Free 7, CC BY 4.0 — https://fontawesome.com/license/free) ---------- #}

@@ -45,13 +45,13 @@
       <img src="{{ logo.small }}" srcset="{{ logo.srcset }}" sizes="220px" width="{{ logo.w }}" height="{{ logo.h }}" alt="NovoTech Machine Tools Inc." fetchpriority="high">
     </a>
     <nav class="site-nav" aria-label="Main">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
       <ul id="nav-menu" class="nav-menu">
         {% for item in site.nav %}
         <li class="{{ 'has-children' if item.children else '' }}{{ ' current' if page.slug + '.html' == item.href or (item.children and page.slug + '.html' in item.children|map(attribute='href')|list) else '' }}">
           <a href="{{ item.href }}">{{ item.label }}</a>
           {% if item.children %}
-          <button class="sub-toggle" aria-expanded="false" aria-label="Show all products">▾</button>
+          <button type="button" class="sub-toggle" aria-expanded="false" aria-label="Show all products">▾</button>
           <ul class="sub-menu">
             {% for c in item.children %}<li><a href="{{ c.href }}"{% if c.href == page.slug + '.html' %} aria-current="page"{% endif %}>{{ c.label }}</a></li>{% endfor %}
           </ul>
