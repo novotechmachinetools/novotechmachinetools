@@ -7,8 +7,8 @@ cd "$(dirname "$0")/.."
 python3 build.py --staging >/dev/null
 cat > dist/index.html <<'EOF'
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0; url=rebar-bender-and-cutter.html"><title>NovoTech — test site</title></head>
-<body style="font-family:Arial,sans-serif;padding:2em"><p>Test build of the new NovoTech website. <a href="rebar-bender-and-cutter.html">Open the rebar benders &amp; cutters page</a>.</p></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0; url=band-saw"><title>NovoTech — test site</title></head>
+<body style="font-family:Arial,sans-serif;padding:2em"><p>Test build of the new NovoTech website. <a href="band-saw">Open the band saws page</a> · <a href="rebar-bender-and-cutter">rebar benders &amp; cutters</a>.</p></body></html>
 EOF
 touch dist/.nojekyll
 rm -f dist/quote.php                      # GitHub Pages cannot run PHP; the form only works on HostPapa
