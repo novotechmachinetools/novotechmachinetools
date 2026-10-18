@@ -26,11 +26,11 @@
       "summary": "The B series is the workhorse rebar bender for rebar shops, precast plants and steel-joist (OWSJ) fabricators: up to Ø2″ (50 mm) bars, or several smaller bars at once, with programmable angles.",
       "features": [
         "Planetary reducer drive — a B 45x1 bends about 1,100 pieces of rebar in an 8-hour shift",
-        "Program memory for 9 different bending angles; manual or automatic cycle",
+        "Program memory for 3 different bending angles; manual or automatic cycle",
         "Bends left and right; adjustable bar stop and support rollers",
         "Stirrup bending with the machine's standard pins and rollers; spiral stirrup attachment optional",
         "BD series: same machines with a digital display control panel (BD 36 / BD 45 / BD 50)",
-        "600 V 3-phase with CSA-approved electrical panel, inverter drive and overload protection"
+        "600 V 3-phase with CSA-approved electrical panel and overload protection"
       ],
       "images": [
         "b-45x1",
@@ -679,7 +679,7 @@
     },
     "stirrup-benders": {
       "id": "stirrup-benders",
-      "name": "SL series stirrup bending machines",
+      "name": "SL series stirrup and dowel bar benders",
       "models_label": "SL 30 · SL 36",
       "summary": "Dedicated stirrup benders that repeat a stirrup automatically without re-adjusting the angles — the fastest way to produce ties and stirrups from straight bars.",
       "features": [
