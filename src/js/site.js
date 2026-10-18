@@ -2,6 +2,7 @@
 (function () {
   "use strict";
   var d = document;
+  var PREVIEW = !!d.querySelector(".preview-note"); // artifact preview: no embeds, no mail handler
 
   /* ---------- mobile navigation ---------- */
   var toggle = d.querySelector(".nav-toggle");
@@ -108,7 +109,7 @@
   /* ---------- YouTube facades: load the player only on click ---------- */
   d.querySelectorAll(".video[data-video]").forEach(function (v) {
     var a = v.querySelector(".video-poster");
-    if (!a) return;
+    if (!a || PREVIEW) return; // in the preview the poster simply links to YouTube
     a.addEventListener("click", function (e) {
       e.preventDefault();
       var f = d.createElement("iframe");
@@ -140,6 +141,7 @@
     var status = form.querySelector(".form-status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      if (PREVIEW) { status.className = "form-status"; status.textContent = "This is a preview — on the live site this sends the request to info@NovoTechMachineTools.com."; return; }
       var ok = true;
       form.querySelectorAll("[required]").forEach(function (el) {
         var bad = !el.value.trim() || (el.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));

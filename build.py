@@ -12,6 +12,9 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
 STAGING = "--staging" in sys.argv
+ARTIFACT = "--artifact" in sys.argv   # claude.ai artifact preview: page fragment, no doc skeleton
+if ARTIFACT:
+    DIST = os.path.join(ROOT, "dist-artifact")
 
 site = json.load(open(os.path.join(ROOT, "content", "site.json"), encoding="utf-8"))
 manifest = json.load(open(os.path.join(ROOT, "tools", "image_manifest.json"), encoding="utf-8"))
@@ -240,6 +243,18 @@ def render_page(page):
                       css_hash=asset_hash(os.path.join(ROOT, "src", "css", "site.css")), js_hash=asset_hash(os.path.join(ROOT, "src", "js", "site.js")))
 
 
+def artifact_fragment(html, page):
+    """Strip the document skeleton (the artifact host adds its own) and add a preview banner."""
+    html = re.sub(r"<!DOCTYPE html>\s*", "", html)
+    html = re.sub(r"<html[^>]*>|</html>|<head>|</head>|<body>|</body>", "", html)
+    html = re.sub(r'<meta charset="utf-8">\s*|<meta name="viewport"[^>]*>\s*', "", html)
+    html = re.sub(r"<title>.*?</title>", "<title>" + page.get("artifact_title", page["h1"]) + "</title>", html, count=1, flags=re.S)
+    banner = ('<div class="preview-note"><div class="wrap">Preview of the new NovoTechMachineTools.com page. '
+              'Video playback, the PDF download and the quote form only work on the live site.</div></div>\n')
+    html = html.replace('<a class="skip"', banner + '<a class="skip"', 1)
+    return html.strip() + "\n"
+
+
 def main():
     if os.path.exists(DIST):
         shutil.rmtree(DIST)
@@ -260,6 +275,8 @@ def main():
             continue
         page = json.load(open(os.path.join(pdir, fn), encoding="utf-8"))
         html = render_page(page)
+        if ARTIFACT:
+            html = artifact_fragment(html, page)
         out = os.path.join(DIST, page["slug"] + ".html")
         open(out, "w", encoding="utf-8").write(html)
         pages.append(page)
