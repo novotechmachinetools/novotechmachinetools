@@ -110,8 +110,7 @@
       if (counter) counter.textContent = index + 1;
       figure.classList.toggle("is-cutout", !!it.cutout);
       thumbs.forEach(function (t, j) { t.classList.toggle("is-current", j === index); });
-      var cur = thumbs[index];
-      if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: "nearest", inline: "nearest" });
+      // never call scrollIntoView here: it scrolls the whole page when the thumbnails are below the fold
     }
     thumbs.forEach(function (t, i) {
       t.addEventListener("click", function (e) { e.preventDefault(); show(i); });
