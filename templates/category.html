@@ -18,12 +18,14 @@
       </ul>
       <div class="cta-row">
         <a class="btn btn-primary" href="#reques-a-quote">Request a quote</a>
-        <a class="btn btn-ghost" href="{{ page.catalogue_pdf.file }}" download>{{ page.catalogue_pdf.label }} <small>({{ page.catalogue_pdf.size }})</small></a>
+        {% if page.catalogue_pdf %}<a class="btn btn-ghost" href="{{ page.catalogue_pdf.file }}" download>{{ page.catalogue_pdf.label }} <small>({{ page.catalogue_pdf.size }})</small></a>{% endif %}
+        {% for b in page.catalogue_pdfs or [] %}<a class="btn btn-ghost" href="{{ b.file }}" download>{{ b.label }} <small>({{ b.size }})</small></a>{% endfor %}
       </div>
-      <p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
+      {% if page.brand %}<p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
+      {% elif page.hero_brand_line %}<p class="hero-brand">{{ page.hero_brand_line }}</p>{% endif %}
       {% if page.section %}
       <nav class="section-nav" aria-label="Rebar machinery pages">
-        <span class="section-nav-label">Rebar machinery:</span>
+        <span class="section-nav-label">{{ page.section.label }}:</span>
         {% for s in page.section.pages %}<a href="{{ s.href }}"{% if s.current %} aria-current="page"{% endif %}>{{ s.label }}</a>{% endfor %}
         <a href="{{ page.section.hub.href }}" class="section-nav-hub">{{ page.section.hub.label }}</a>
       </nav>
@@ -52,9 +54,16 @@
 <div class="wrap page-body">
 {% for g in page.groups %}
 <section class="group" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
-  <header class="group-head">
+  <header class="group-head{{ ' has-brand' if g.brand else '' }}">
+    {% if g.brand %}{% set br = site.brands[g.brand] %}
+    <div class="line-badge line-{{ g.brand }}">
+      {% if br.logo %}{% set lg = img(br.logo) %}<img src="{{ lg.src }}" width="{{ lg.w }}" height="{{ lg.h }}" alt="{{ br.name }}" loading="lazy" decoding="async">{% endif %}
+      <span class="line-name">{{ br.line }}</span>
+    </div>
+    {% endif %}
     <h2 id="{{ g.id }}-title">{{ g.title }}</h2>
     {% if g.lead %}<p class="group-lead">{{ g.lead }}</p>{% endif %}
+    {% if g.brand %}<p class="group-tagline">{{ site.brands[g.brand].tagline }}</p>{% endif %}
   </header>
 
   {% for f in g.families %}
@@ -115,8 +124,8 @@
 <section class="videos wrap" id="GMS-introduction-video" aria-labelledby="videos-title">
   <div class="videos-grid">
     <div>
-      <h2 id="videos-title">See the machines running</h2>
-      <p>A short tour of the GMS factory in Turkey, where every machine on this page is built. More rebar bending and cutting videos are on <a href="{{ site.youtube_rebar_playlist }}" rel="noopener">NovoTech's YouTube playlist</a>.</p>
+      <h2 id="videos-title">{{ page.intro_video_heading or "See the machines running" }}</h2>
+      <p>{{ page.intro_video_text or "A short tour of the GMS factory in Turkey, where every machine on this page is built." }} More videos are on <a href="{{ page.youtube_playlist or site.youtube_rebar_playlist }}" rel="noopener">NovoTech's YouTube playlist</a>.</p>
       {% if page.related_article %}<p><a class="arrow" href="{{ page.related_article.href }}">{{ page.related_article.label }}</a></p>{% endif %}
     </div>
     {{ video(page.intro_video) }}
@@ -135,7 +144,7 @@
     </details>
     {% endfor %}
   </div>
-  <p class="steel-note">{{ site.steel_note }}</p>
+  {% if page.family_set != 'bandsaw' %}<p class="steel-note">{{ site.steel_note }}</p>{% endif %}
 </section>
 {% endif %}
 

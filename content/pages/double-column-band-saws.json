@@ -1,0 +1,118 @@
+{
+ "template": "category.html",
+ "family_set": "bandsaw",
+ "hero_brand_line": "Bekamak band saws are made in Turkey; NovoFab Machinery is NovoTech's own value line. Every machine is sold, installed and supported in Canada by NovoTech.",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+   "label": "Bekamak band saw catalogue",
+   "size": "PDF · 7.5 MB · imperial units"
+  },
+  {
+   "file": "files/NovoFab-Sawing-Machines-Catalogue-2026.pdf",
+   "label": "NovoFab sawing machines catalogue",
+   "size": "PDF · 25 MB · imperial units"
+  }
+ ],
+ "youtube_playlist": "https://www.youtube.com/playlist?list=PLgtouQi-TePvLZjD0XkwpvL2pX1sAUuFG",
+ "intro_video_heading": "See the saws running",
+ "related_article": {
+  "href": "band-saw.html#buying-guide",
+  "label": "Band saw buying guide: sizes, feeds, blades and troubleshooting"
+ },
+ "slug": "double-column-band-saws",
+ "artifact_title": "Double-Column Band Saws",
+ "title": "Double Column Band Saws for Heavy Bar & Bundles in Canada | NovoTech",
+ "meta_description": "Double-column (twin-post) horizontal band saws in Canada from Ø13″ (330 mm) to 59″ (1500 mm): Bekamak semi-automatic, miter, servo-feed NC and high-tech XS saws, plus NovoFab value double-column saws. Specs in inches and mm.",
+ "h1": "Double-column band saws",
+ "intro": "For heavy bar, billets, beams and bundles the bow runs between two hardened columns instead of pivoting, so the blade enters the material squarely and stays square through the cut. Semi-automatic and fully automatic versions, miter heads to 60°, servo feeding with NC job lists and high-tech production saws — Bekamak premium machines from Ø13″ to 59″ (330–1500 mm) and the NovoFab Machinery value line.",
+ "hero_points": [
+  "Twin-column guidance for square cuts in heavy stock",
+  "Semi-automatic, roller-feed and servo-feed NC models",
+  "Round capacities from Ø13″ (330 mm) to 59″ (1500 mm)"
+ ],
+ "hero_image": "bk-hero-dc",
+ "hero_image_secondary": [
+  "bk-bmsy-460c-1-cut",
+  "bk-bmso-440cgs-1-cut",
+  "nf-dc280a-1"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Metal cutting band saws",
+   "href": "band-saw.html"
+  },
+  {
+   "label": "Double-column band saws"
+  }
+ ],
+ "groups": [
+  {
+   "id": "premium-line",
+   "brand": "bekamak",
+   "title": "Premium line — Bekamak double-column band saws",
+   "lead": "From the BMSY C semi-automatics to servo-feed CS NC production saws and the enclosed XS line.",
+   "families": [
+    "bekamak-bmsy-c",
+    "bekamak-bmsy-cgh",
+    "bekamak-bmsy-dg-nc",
+    "bekamak-bmso-c",
+    "bekamak-bmso-cs",
+    "bekamak-bmso-cgs",
+    "bekamak-bmso-xs",
+    "bekamak-bmsy-heavy"
+   ]
+  },
+  {
+   "id": "value-line",
+   "brand": "novofab",
+   "title": "Value line — NovoFab Machinery double-column band saws",
+   "lead": "Twin-column saws from Ø11″ to Ø23-5/8″ (280–600 mm): hydraulic semi-automatics, a mitre version, automatics with shuttle vise and gantry saws for plate and bundles.",
+   "families": [
+    "novofab-nf-dc280",
+    "novofab-nf-dc350",
+    "novofab-nf-dc500"
+   ]
+  }
+ ],
+ "intro_video": {
+  "id": "MbLsI9PqLjI",
+  "title": "Bekamak BMSO 570CS fully automatic 22″ double-column band saw with servo feeder",
+  "thumb": "video-MbLsI9PqLjI",
+  "duration": "PT2M2S"
+ },
+ "intro_video_text": "A Bekamak BMSO 570CS servo-feed double-column saw in production.",
+ "faq_title": "Questions we get asked about double-column band saws",
+ "faq": [
+  {
+   "q": "Why choose a double-column saw over a pivot saw?",
+   "a": "Rigidity and capacity. The bow is guided on two columns, so there is no side load on the blade — cuts stay square in large solids and the blade lasts longer. Double-column saws also reach capacities a pivot bow cannot: 330 mm up to 1500 mm on the Bekamak range."
+  },
+  {
+   "q": "Can a double-column saw cut miters?",
+   "a": "Yes — the BMSY CGH (single miter) and BMSY DG NC (double miter) swivel the whole bow assembly up to 60° under hydraulic or NC control, and the automatic CGS/CDGS NC models do the same with servo feeding."
+  },
+  {
+   "q": "What is a split vise (SV)?",
+   "a": "The SV versions of the BMSY C saws have a second vise jaw close to the blade, so short pieces and remnants are clamped on both sides of the cut — useful for cutting slices from blocks and billets."
+  },
+  {
+   "q": "What is the XS line?",
+   "a": "Bekamak's high-tech production saws: servo-driven bow feed and material feed, full enclosure and CNC control, designed for carbide blades, the fastest cycle times and unattended running."
+  }
+ ],
+ "related_pages": [
+  {
+   "href": "cold-saw-carbide-saw-cutting.html",
+   "label": "Circular cold saws"
+  }
+ ]
+}

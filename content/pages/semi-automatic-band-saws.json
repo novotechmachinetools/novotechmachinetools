@@ -1,0 +1,115 @@
+{
+ "template": "category.html",
+ "family_set": "bandsaw",
+ "hero_brand_line": "Bekamak band saws are made in Turkey; NovoFab Machinery is NovoTech's own value line. Every machine is sold, installed and supported in Canada by NovoTech.",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+   "label": "Bekamak band saw catalogue",
+   "size": "PDF · 7.5 MB · imperial units"
+  },
+  {
+   "file": "files/NovoFab-Sawing-Machines-Catalogue-2026.pdf",
+   "label": "NovoFab sawing machines catalogue",
+   "size": "PDF · 25 MB · imperial units"
+  }
+ ],
+ "youtube_playlist": "https://www.youtube.com/playlist?list=PLgtouQi-TePvLZjD0XkwpvL2pX1sAUuFG",
+ "intro_video_heading": "See the saws running",
+ "related_article": {
+  "href": "band-saw.html#buying-guide",
+  "label": "Band saw buying guide: sizes, feeds, blades and troubleshooting"
+ },
+ "slug": "semi-automatic-band-saws",
+ "artifact_title": "Semi-Automatic Band Saws",
+ "title": "Semi-Automatic Band Saws for Metal Cutting in Canada | NovoTech",
+ "meta_description": "Semi-automatic horizontal band saws in Canada with hydraulic vise and automatic bow return: Bekamak BMSY miter and straight-cut saws to Ø17-3/8″ (440 mm) and NovoFab value saws. Specs in inches and mm, support in Mississauga.",
+ "h1": "Semi-automatic band saws",
+ "intro": "The workhorse of most fabrication shops: the operator loads the bar and presses start; the hydraulic vise clamps, the bow cuts at the set feed rate and lifts clear when the cut is done. Miter heads swivel to one or both sides for structural steel. Premium Bekamak BMSY saws from Ø9″ to Ø17-3/8″ (230–440 mm), and the NovoFab Machinery value line.",
+ "hero_points": [
+  "Hydraulic vise, automatic bow return, inverter blade speed",
+  "Single- or double-miter heads to 60°",
+  "Round capacities from Ø9″ (230 mm) to Ø17-3/8″ (440 mm)"
+ ],
+ "hero_image": "bk-hero-semi",
+ "hero_image_secondary": [
+  "bk-bmsy-320g-1-cut",
+  "bk-bmsy-350m-1-cut",
+  "nf-h330-1"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Metal cutting band saws",
+   "href": "band-saw.html"
+  },
+  {
+   "label": "Semi-automatic band saws"
+  }
+ ],
+ "groups": [
+  {
+   "id": "premium-line",
+   "brand": "bekamak",
+   "title": "Premium line — Bekamak semi-automatic band saws",
+   "lead": "Pivot-type saws with inverter blade speed, hydro-mechanical blade tension and hydraulic miter positioning on the DGH models.",
+   "families": [
+    "bekamak-bmsy-dgh",
+    "bekamak-bmsy-g",
+    "bekamak-bmsy-straight"
+   ]
+  },
+  {
+   "id": "value-line",
+   "brand": "novofab",
+   "title": "Value line — NovoFab Machinery semi-automatic band saws",
+   "lead": "Hydraulic descent, hydraulic vises and automatic bow return from Ø10″ to Ø18″ (254–460 mm), including a single-column saw with touch screen.",
+   "families": [
+    "novofab-nf-h250",
+    "novofab-nf-h330",
+    "novofab-nf-h400",
+    "novofab-nf-h300sc",
+    "novofab-nf-h460"
+   ]
+  }
+ ],
+ "intro_video": {
+  "id": "2rTmkYcd2k4",
+  "title": "Bekamak BMSY 320DGH double-miter band saw, 12.6″ × 17″",
+  "thumb": "video-2rTmkYcd2k4",
+  "duration": "PT3M2S"
+ },
+ "intro_video_text": "A Bekamak BMSY 320DGH semi-automatic double-miter saw at work.",
+ "faq_title": "Questions we get asked about semi-automatic band saws",
+ "faq": [
+  {
+   "q": "What is the difference between a semi-automatic and a fully automatic band saw?",
+   "a": "A semi-automatic saw makes one cut per start: it clamps, cuts and lifts the bow, then waits for the operator to feed the next piece. A fully automatic saw also feeds the material to length (by rollers or a shuttle vise) and repeats the cycle for the programmed quantity. See the automatic band saws page."
+  },
+  {
+   "q": "Single miter or double miter?",
+   "a": "A single-miter head (BMSY 320G/GL) swivels to one side, so angled parts are cut by flipping the bar. A double-miter head (BMSY DG/DGH) swivels both ways — +60° right, −45° left — which saves handling on frames and trusses with opposite angles."
+  },
+  {
+   "q": "What does the DGH suffix mean?",
+   "a": "DGH models position the saw head hydraulically for miter angles instead of by hand, and include hydraulic head lifting — useful on the larger 320–440 mm machines where the bow is heavy."
+  },
+  {
+   "q": "Can these saws cut bundles?",
+   "a": "Yes, with the optional hydraulic top clamping, which presses a bundle of tubes or bars down while the side vise holds it. Ask us about bundle sizes for the model you need."
+  }
+ ],
+ "related_pages": [
+  {
+   "href": "cold-saw-carbide-saw-cutting.html",
+   "label": "Circular cold saws"
+  }
+ ]
+}

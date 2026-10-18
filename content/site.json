@@ -77,8 +77,8 @@
           "href": "pipe-profile-roll-bender.html"
         },
         {
-          "label": "Horizontal bandsaws",
-          "href": "bekamak-pivot-band-saw.html"
+          "label": "Band saws",
+          "href": "band-saw.html"
         },
         {
           "label": "Cold saws",
@@ -205,5 +205,40 @@
     ],
     "cta": "Apply to become an agent",
     "form_option": "Becoming a NovoTech sales agent / dealer"
+  },
+  "brands": {
+    "gms": {
+      "name": "GMS GöçMakSan",
+      "manufacturer": "GMS GöçMakSan",
+      "country": "Turkey",
+      "country_code": "TR"
+    },
+    "bekamak": {
+      "name": "Bekamak",
+      "manufacturer": "Bekamak Makina",
+      "country": "Turkey",
+      "country_code": "TR",
+      "line": "Premium line",
+      "logo": "bekamak-logo",
+      "tagline": "Made in Turkey since 1990 — Bekamak band saws sold, installed and supported in Canada by NovoTech",
+      "pdf": {
+        "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+        "label": "Bekamak band saw catalogue",
+        "size": "PDF · 7.5 MB · imperial units"
+      }
+    },
+    "novofab": {
+      "name": "NovoFab Machinery",
+      "country": "Canada",
+      "country_code": "CA",
+      "line": "Value line",
+      "logo": "novofab-logo",
+      "tagline": "NovoTech's own value brand — machines built to our specification, CSA-approved panels, parts and support from Mississauga",
+      "pdf": {
+        "file": "files/NovoFab-Sawing-Machines-Catalogue-2026.pdf",
+        "label": "NovoFab sawing machines catalogue",
+        "size": "PDF · 25 MB · imperial units"
+      }
+    }
   }
 }

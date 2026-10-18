@@ -83,6 +83,153 @@ def dims(cm3):
     return f"{cm_to_in(w)} × {cm_to_in(l)} × {cm_to_in(h)} in ({w:g} × {l:g} × {h:g} cm)"
 
 
+# ---------------------------------------------------------------- band saws
+from fractions import Fraction
+
+def inch_frac(mm, denom=8):
+    """270 -> '10-5/8″' (nearest 1/denom inch)."""
+    v = mm / 25.4
+    whole = int(v); fr = Fraction(round((v - whole) * denom), denom)
+    if fr == 1:
+        whole += 1; fr = Fraction(0)
+    if fr == 0:
+        return f"{whole}″"
+    return (f"{whole}-" if whole else "") + f"{fr.numerator}/{fr.denominator}″"
+
+
+def rng(s, conv, unit_i, unit_m, nd=0):
+    """'15-120' m/min -> '49–394 ft/min (15–120 m/min)'; single numbers too.
+    Step speeds '35/60/88/115' -> '115/197/289/377 ft/min (35/60/88/115 m/min)'."""
+    if s is None:
+        return "—"
+    fmt = (lambda x: f"{x:,.{nd}f}") if nd else (lambda x: f"{round(x):,}")
+    if "/" in str(s):
+        parts = [p.strip() for p in str(s).split("/") if p.strip()]
+        try:
+            nums = [float(p.replace(",", ".")) for p in parts]
+        except ValueError:
+            return str(s)
+        return "/".join(fmt(conv(n)) for n in nums) + f" {unit_i} (" + "/".join(f"{n:g}" for n in nums) + f" {unit_m})"
+    parts = [p.strip() for p in str(s).replace("–", "-").split("-") if p.strip()]
+    try:
+        nums = [float(p.replace(",", ".")) for p in parts]
+    except ValueError:
+        return str(s)
+    a = "–".join(fmt(conv(n)) for n in nums)
+    m = "–".join(f"{n:g}" for n in nums)
+    return f"{a} {unit_i} ({m} {unit_m})"
+
+
+def hp_range(kw):
+    if kw is None:
+        return "—"
+    parts = [p.strip() for p in str(kw).replace("–", "-").split("-") if p.strip()]
+    try:
+        nums = [float(p.replace(",", ".")) for p in parts]
+    except ValueError:
+        return str(kw)
+    h = "–".join(hp(n).replace(" HP", "") for n in nums)
+    return f"{h} HP ({'–'.join(f'{n:g}' for n in nums)} kW)"
+
+
+ANGLE_ORDER = ["0", "+15", "+30", "+45", "+60", "-30", "-45", "-60"]
+
+
+def build_bandsaw_table(spec):
+    models = spec["models"]
+    names = [m["name"] for m in models]
+    rows = []
+    angles = []
+    for m in models:
+        for a in (m.get("capacity_mm") or {}):
+            if a not in angles:
+                angles.append(a)
+    angles.sort(key=lambda a: ANGLE_ORDER.index(a) if a in ANGLE_ORDER else 99)
+    def ang_label(a):
+        return "0° (straight)" if a == "0" else (a.replace("+", "+") + "°" + (" right" if a.startswith("+") else " left"))
+    for a in angles:
+        for key, lab in (("round", "round"), ("rect", "rectangular W × H"), ("square", "square")):
+            cells = []
+            any_val = False
+            for m in models:
+                c = (m.get("capacity_mm") or {}).get(a) or {}
+                v = c.get(key)
+                if v is None:
+                    cells.append("—"); continue
+                any_val = True
+                if key == "rect":
+                    cells.append(f"{inch_frac(v[0])} × {inch_frac(v[1])} ({v[0]:g} × {v[1]:g} mm)")
+                else:
+                    cells.append(("Ø" if key == "round" else "") + f"{inch_frac(v)} ({v:g} mm)")
+            if any_val:
+                rows.append({"label": f"Capacity {ang_label(a)} — {lab}", "cells": cells, "type": "text", "cap": key == "round" and a == "0"})
+    rows.append({"label": "Blade speed", "cells": [rng(m.get("blade_speed_m_min"), lambda x: x * 3.2808, "ft/min", "m/min") for m in models], "type": "text"})
+    def band(m):
+        bd = m.get("band_mm")
+        if not bd:
+            return "—"
+        L, W, T = bd
+        Wi = inch_frac(W, 8) if isinstance(W, (int, float)) else str(W)
+        Ti = f"{T / 25.4:.3f}" if isinstance(T, (int, float)) else str(T)
+        if L is None:  # width × thickness only
+            return f"{Wi.replace('″', '')} × {Ti} in ({W} × {T} mm)"
+        return f"{inch_frac(L, 2).replace('″', '')} × {Wi.replace('″', '')} × {Ti} in ({L:g} × {W} × {T} mm)"
+    rows.append({"label": "Band blade L × W × T", "cells": [band(m) for m in models], "type": "text"})
+    rows.append({"label": "Main motor", "cells": [hp_range(m.get("main_motor_kw")) for m in models], "type": "text"})
+    if any(m.get("hydraulic_motor_kw") for m in models):
+        rows.append({"label": "Hydraulic motor", "cells": [hp_range(m.get("hydraulic_motor_kw")) if m.get("hydraulic_motor_kw") else "—" for m in models], "type": "text"})
+    if any(m.get("coolant_pump_kw") for m in models):
+        rows.append({"label": "Coolant pump", "cells": [hp_range(m.get("coolant_pump_kw")) if m.get("coolant_pump_kw") else "—" for m in models], "type": "text"})
+    extras = {}
+    for m in models:
+        for k, v in (m.get("other") or {}).items():
+            extras.setdefault(k, {})[m["name"]] = v
+    late = {k: v for k, v in extras.items() if re.search(r"weight|packing", k, re.I)}
+
+    def conv(v):
+        mm = re.match(r"^\s*([\d.,]+)\s*kW", str(v))
+        if mm:
+            return hp_range(mm.group(1).replace(",", "."))
+        mm = re.match(r"^\s*([\d.,]+)\s*kg\s*$", str(v))
+        if mm:
+            x = float(mm.group(1).replace(",", ".")); return f"{lb(x)} ({x:g} kg)"
+        mm = re.match(r"^\s*([\d.,]+)\s*mm\s*$", str(v))
+        if mm:
+            x = float(mm.group(1).replace(",", ".")); return f"{inch_frac(x)} ({x:g} mm)"
+        # '2300 × 830 × 1580 mm' (possibly several, separated by commas) -> inches + mm
+        def dims3(mt):
+            d = [float(t) for t in mt.group(1).replace("×", "x").split("x")]
+            return " × ".join(str(round(t / 25.4)) for t in d) + " in (" + " × ".join(f"{t:g}" for t in d) + " mm)"
+        if re.search(r"\d+\s*[×x]\s*\d+\s*[×x]\s*\d+\s*mm", str(v)):
+            return re.sub(r"(\d+(?:\s*[×x]\s*\d+){2})\s*mm", dims3, str(v))
+        return str(v)
+
+    for k, vals in extras.items():
+        if k in late:
+            continue
+        rows.append({"label": k, "cells": [conv(vals[m["name"]]) if m["name"] in vals else "—" for m in models], "type": "text"})
+    if any(m.get("working_height_mm") for m in models):
+        rows.append({"label": "Working height", "cells": [f"{inch_frac(m['working_height_mm'], 2)} ({m['working_height_mm']:g} mm)" if m.get("working_height_mm") else "—" for m in models], "type": "text"})
+    rows.append({"label": "Weight", "cells": [f"{lb(m['weight_kg'])} ({m['weight_kg']:g} kg)" if m.get("weight_kg") else "—" for m in models], "type": "text"})
+    for k, vals in late.items():
+        rows.append({"label": k, "cells": [conv(vals[m["name"]]) if m["name"] in vals else "—" for m in models], "type": "text"})
+    def dims_mm(d):
+        if not d:
+            return "—"
+        return " × ".join(str(round(x / 25.4)) for x in d) + " in (" + " × ".join(f"{x:g}" for x in d) + " mm)"
+    if any(m.get("dims_mm") for m in models):
+        rows.append({"label": "Dimensions L × W × H", "cells": [dims_mm(m.get("dims_mm")) for m in models], "type": "text"})
+    rows.append({"label": "Voltage", "cells": [spec.get("voltage", "600 V 3-phase (208/240/480 V on request)") for m in models], "type": "text"})
+    return {"models": names, "rows": rows}
+
+
+def bandsaw_round0(m):
+    try:
+        return m["capacity_mm"]["0"]["round"] or 0
+    except (KeyError, TypeError):
+        return 0
+
+
 def cap_cell(pairs):
     """[[36,1],[22,2]] -> list of (text, barsizes) for the template"""
     out = []
@@ -200,12 +347,13 @@ def page_ld(page):
             purl = (absurl(g["id"] + ".html") if page.get("subpages") else url) + "#" + f["id"]
             gal = f.get("gallery") or []
             models = [m["name"] for m in (f.get("specs") or {}).get("models", [])] or [s.strip() for s in f.get("models_label", "").split("·") if s.strip()]
+            fb = site.get("brands", {}).get(f.get("brand"), {}) or brand
             prod = {
                 "@type": "Product", "@id": purl, "url": purl,
                 "name": f["name"], "description": f["summary"],
                 "image": [absurl(i["src"]) for i in gal[:6]],
-                "brand": {"@type": "Brand", "name": brand.get("name", "")},
-                "manufacturer": {"@type": "Organization", "name": brand.get("name", ""), "address": {"@type": "PostalAddress", "addressCountry": "TR"}},
+                "brand": {"@type": "Brand", "name": fb.get("name", "")},
+                **({"manufacturer": {"@type": "Organization", "name": fb["manufacturer"], "address": {"@type": "PostalAddress", "addressCountry": fb.get("country_code", "TR")}}} if fb.get("manufacturer") else {}),
                 "category": g["title"],
                 "model": models,
                 "additionalProperty": [{"@type": "PropertyValue", "name": "Standard equipment", "value": "CSA-approved electrical panel; 1-year warranty; spare parts and technical support in Canada"}],
@@ -270,7 +418,15 @@ def caption_for(f, alt):
     """Two caption lines for a gallery photo: 'B 36 · bends up to Ø1-3/8″ (36 mm)' and the photo description."""
     caps = {}
     spec = f.get("specs")
-    if spec:
+    if spec and spec.get("kind") == "bandsaw":
+        for m in spec["models"]:
+            r = bandsaw_round0(m)
+            rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
+            parts = []
+            if r: parts.append(f"cuts Ø{inch_frac(r)} ({r:g} mm) round")
+            if rect: parts.append(f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)")
+            caps[m["name"]] = " · ".join(parts)
+    elif spec:
         verb = "cuts" if spec.get("kind") == "cutting" else "bends"
         for i, m in enumerate(spec["models"]):
             parts = []
@@ -290,7 +446,13 @@ def caption_for(f, alt):
 
 
 def prepare_family(f):
-    if f.get("specs"):
+    if f.get("specs") and f["specs"].get("kind") == "bandsaw":
+        f["table"] = build_bandsaw_table(f["specs"])
+        rounds = [bandsaw_round0(m) for m in f["specs"]["models"]]
+        f["max_mm"] = max(rounds) if rounds else 0
+        lo = min(r for r in rounds if r) if any(rounds) else 0
+        f["headline"] = f.get("headline") or (f"Round capacity Ø{inch_frac(lo)} – Ø{inch_frac(f['max_mm'])} ({lo:g}–{f['max_mm']:g} mm)" if lo != f["max_mm"] else f"Round capacity Ø{inch_frac(f['max_mm'])} ({f['max_mm']:g} mm)")
+    elif f.get("specs"):
         f["table"] = build_spec_table(f["specs"])
         f["max_mm"] = max_single_bar(f["specs"])
         kind = "Cuts" if f["specs"].get("kind") == "cutting" else "Bends"
@@ -309,6 +471,15 @@ def range_table(subpages):
         for f in sp["families"]:
             spec = f.get("specs")
             if not spec:
+                continue
+            if spec.get("kind") == "bandsaw":
+                for m in spec["models"]:
+                    r = bandsaw_round0(m)
+                    rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
+                    rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "line": "Premium · Bekamak" if f.get("line") == "premium" else "Value · NovoFab",
+                                 "kind": sp.get("nav_label") or sp["title"], "round": f"Ø{inch_frac(r)} ({r:g} mm)" if r else "—",
+                                 "rect": f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)" if rect else "—",
+                                 "motor": hp_range(m.get("main_motor_kw")), "weight": f"{lb(m['weight_kg'])} ({m['weight_kg']:g} kg)" if m.get("weight_kg") else "—"})
                 continue
             for i, m in enumerate(spec["models"]):
                 def single(grade):
@@ -336,6 +507,15 @@ def render_page(page):
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
         page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
     page["url"] = f"{site['domain']}/{page['slug']}.html"
+    if page.get("article"):   # long-form guide kept from the old site (HTML fragment with <figure data-img> placeholders)
+        art = open(os.path.join(ROOT, "content", "articles", page["article"]), encoding="utf-8").read()
+        def fig(m):
+            im = img(m.group(1))
+            return (f'<figure class="guide-figure"><img src="{im["small"]}" srcset="{im["srcset"]}" sizes="(max-width: 700px) 92vw, 760px" '
+                    f'width="{im["w"]}" height="{im["h"]}" alt="{im["alt"]}" loading="lazy" decoding="async"></figure>')
+        art = re.sub(r'<figure class="guide-figure" data-img="([^"]+)"></figure>', fig, art)
+        page["article_html"] = art
+        page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
     tpl = env.get_template(page.get("template", "page.html"))
     inline_css = None if ARTIFACT else open(os.path.join(DIST, "css", "site.css"), encoding="utf-8").read().replace("../fonts/", "fonts/")   # minified by main(); URLs re-based to the page
     return tpl.render(page=page, ld_json=page_ld(page), build_ts=int(datetime.datetime.now().timestamp()), inline_css=inline_css,
@@ -385,7 +565,7 @@ def main():
         members = [{"href": sp["slug"] + ".html", "slug": sp["slug"], "label": sp.get("nav_label") or sp["title"], "blurb": sp.get("blurb", ""), "image": img(sp["image"]) if sp.get("image") else None} for sp in hub["subpages"]]
         for p in loaded:
             if any(m["slug"] == p["slug"] for m in members):
-                p["section"] = {"hub": {"href": hub["slug"] + ".html", "label": hub.get("nav_label") or hub["h1"], "image": img(hub["hero_image"]) if hub.get("hero_image") else None},
+                p["section"] = {"hub": {"href": hub["slug"] + ".html", "label": hub.get("nav_label") or hub["h1"], "image": img(hub["hero_image"]) if hub.get("hero_image") else None}, "label": hub.get("section_label", "Rebar machinery"),
                                 "pages": [dict(m, current=(m["slug"] == p["slug"])) for m in members]}
                 covered = {m["href"] for m in members} | {hub["slug"] + ".html"}
                 p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these

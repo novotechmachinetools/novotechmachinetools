@@ -290,6 +290,26 @@ small { font-size: .85em; }
 .related-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; }
 .related-list a { font-family: var(--cond); font-weight: 600; font-size: 20px; color: var(--charcoal); }
 
+/* ---------- long-form buying guide ---------- */
+.guide { padding-top: 10px; }
+.guide-toc ol { margin: 10px 0 26px; padding-left: 22px; columns: 2; column-gap: 32px; font-size: 15.5px; }
+.guide-toc li { break-inside: avoid; padding: 3px 0; }
+.guide-section { margin-top: 30px; }
+.guide-section h3 { font-size: 26px; margin: 0 0 10px; }
+.guide-section h4 { font-size: 19px; margin: 22px 0 6px; color: var(--charcoal); }
+.guide-section p, .guide-section li { max-width: 78ch; }
+.guide-figure { margin: 18px 0; }
+.guide-figure img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.guide-table th[scope="row"] { font-weight: 600; }
+/* ---------- premium / value line badges ---------- */
+.line-badge { display: inline-flex; align-items: center; gap: 12px; padding: 6px 14px 6px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); margin-bottom: 12px; }
+.line-badge img { height: 28px; width: auto; }
+.line-badge .line-name { font-family: var(--cond); font-weight: 700; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--charcoal); padding-left: 12px; border-left: 1px solid var(--line); }
+.line-bekamak .line-name { color: var(--charcoal); }
+.line-novofab .line-name { color: var(--orange-ink); }
+.group-tagline { color: var(--steel); font-size: 15px; margin: 6px 0 0; }
+.card-line { display: inline-block; font-family: var(--cond); font-weight: 700; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; color: var(--charcoal); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; margin-bottom: 8px; }
+.card-line.line-novofab { color: var(--orange-ink); border-color: var(--orange); }
 /* ---------- section switcher: benders / cutters / automatic lines ---------- */
 .section-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
 .section-nav-label { font-family: var(--cond); font-weight: 600; font-size: 15px; letter-spacing: .02em; text-transform: uppercase; color: var(--steel); margin-right: 2px; }
@@ -384,6 +404,7 @@ small { font-size: .85em; }
   .header-contact .phone { font-size: 18px; }
   .why-grid, .footer-grid, .quote-form { grid-template-columns: 1fr; }
   .related-cards { grid-template-columns: 1fr; }
+  .guide-toc ol { columns: 1; }
   .quote-form { padding: 16px; }
   .gallery-thumbs { grid-template-columns: repeat(4, 1fr); }
   .family-cards { grid-template-columns: 1fr; }

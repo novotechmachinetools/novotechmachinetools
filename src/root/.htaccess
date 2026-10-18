@@ -9,6 +9,7 @@ RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
 # ---- Old URLs that changed (add one line per moved page) ---------------------
 # Redirect 301 /old-page.html /new-page.html
+RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw.html
 
 # ---- Compression -------------------------------------------------------------
 <IfModule mod_brotli.c>

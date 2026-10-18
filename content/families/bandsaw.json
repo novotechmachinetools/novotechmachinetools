@@ -1,0 +1,6035 @@
+{
+ "order": [
+  "bekamak-bms-dg",
+  "bekamak-bmsy-dgh",
+  "bekamak-bmsy-g",
+  "bekamak-bmsy-straight",
+  "bekamak-bmso-roller",
+  "bekamak-bmso-e",
+  "bekamak-bmso-ga",
+  "bekamak-bmso-gs",
+  "bekamak-bmso-dgs",
+  "bekamak-bmsy-c",
+  "bekamak-bmsy-cgh",
+  "bekamak-bmsy-dg-nc",
+  "bekamak-bmso-c",
+  "bekamak-bmso-cs",
+  "bekamak-bmso-cgs",
+  "bekamak-bmso-xs",
+  "bekamak-bmsy-heavy",
+  "novofab-nf-m250",
+  "novofab-nf-m400",
+  "novofab-nf-h250",
+  "novofab-nf-h330",
+  "novofab-nf-h400",
+  "novofab-nf-h300sc",
+  "novofab-nf-h460",
+  "novofab-nf-a300",
+  "novofab-nf-a300sc",
+  "novofab-nf-a330",
+  "novofab-nf-a-cnc",
+  "novofab-nf-dc280",
+  "novofab-nf-dc350",
+  "novofab-nf-dc500"
+ ],
+ "families": {
+  "bekamak-bms-dg": {
+   "id": "bekamak-bms-dg",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "manual",
+   "name": "BMS DG manual double-miter band saws",
+   "short": "BMS manual saws",
+   "models_label": "BMS 230DG · BMS 270DG",
+   "summary": "Gravity-feed pivot band saws for the maintenance shop and light fabrication: the operator swings the bow, a hydraulic cylinder controls the descent and the head swivels both ways for miter cuts up to 60°. Two-speed motor, mechanical blade tensioner with microswitch, electric coolant system.",
+   "features": [
+    "Bow swivels left and right: miter cuts to +60° / −45°",
+    "Hydraulic cylinder for controlled, adjustable descent",
+    "Two-speed motor (BMS 270DG: 15–120 m/min with inverter option)",
+    "Manual vise with quick-approach; cutting-length stop",
+    "Safety switches on the wheel cover and blade guard",
+    "Electric coolant pump and blade brush"
+   ],
+   "optional": [
+    "3 Mt Material Roller Table",
+    "Microspray Device",
+    "Inverter"
+   ],
+   "images": [
+    "bk-bms-270dg-1",
+    "bk-bms-270dg-2",
+    "bk-bms-270dg-3",
+    "bk-bms-270dg-4",
+    "bk-bms-230dg-1",
+    "bk-bms-230dg-2",
+    "bk-bms-230dg-3",
+    "bk-bms-230dg-4"
+   ],
+   "videos": [
+    {
+     "id": "Cef4WeM5WQg",
+     "title": "Bekamak BMS 270DG manual double-miter band saw",
+     "thumb": "video-Cef4WeM5WQg",
+     "duration": "PT5M9S"
+    },
+    {
+     "id": "JThV4NvdwVg",
+     "title": "Bekamak BMS 230DG and BMSY 230DGH double-miter band saws",
+     "thumb": "video-JThV4NvdwVg",
+     "duration": "PT3M47S"
+    },
+    {
+     "id": "LAJ4t_c1XAw",
+     "title": "Bekamak BMSY 270DG double-miter manual band saw, 12.6″",
+     "thumb": "video-LAJ4t_c1XAw",
+     "duration": "PT1M1S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMS 230DG",
+      "capacity_mm": {
+       "0": {
+        "round": 230,
+        "rect": [
+         320,
+         130
+        ],
+        "square": 230
+       },
+       "+45": {
+        "round": 210,
+        "rect": [
+         210,
+         160
+        ],
+        "square": 190
+       },
+       "+60": {
+        "round": 130,
+        "rect": [
+         130,
+         100
+        ],
+        "square": 100
+       },
+       "-45": {
+        "round": 180,
+        "rect": [
+         230,
+         90
+        ],
+        "square": 150
+       }
+      },
+      "main_motor_kw": "1.0-1.3",
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "35-70",
+      "band_mm": [
+       2730,
+       27,
+       0.9
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 415,
+      "dims_mm": [
+       1350,
+       700,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {},
+      "notes": "No hydraulic motor row is printed (manual machine)."
+     },
+     {
+      "name": "BMS 270DG",
+      "capacity_mm": {
+       "0": {
+        "round": 270,
+        "rect": [
+         350,
+         220
+        ],
+        "square": 270
+       },
+       "+45": {
+        "round": 240,
+        "rect": [
+         220,
+         180
+        ],
+        "square": 180
+       },
+       "+60": {
+        "round": 150,
+        "rect": [
+         150,
+         100
+        ],
+        "square": 100
+       },
+       "-45": {
+        "round": 200,
+        "rect": [
+         200,
+         150
+        ],
+        "square": 170
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3160,
+       27,
+       0.9
+      ],
+      "working_height_mm": 910,
+      "weight_kg": 465,
+      "dims_mm": [
+       1730,
+       770,
+       1460
+      ],
+      "feed_length_mm": null,
+      "other": {},
+      "notes": "No hydraulic motor row is printed (manual machine)."
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-dgh": {
+   "id": "bekamak-bmsy-dgh",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "semi-automatic",
+   "name": "BMSY DG / DGH semi-automatic double-miter band saws",
+   "short": "BMSY DG/DGH double-miter",
+   "models_label": "BMSY 230DG · BMSY 230DGH · BMSY 270DG · BMSY 270DGH · BMSY 320DGH · BMSY 360DGH · BMSY 360DGH ECO · BMSY 440DGH",
+   "summary": "The most popular Bekamak pivot saws: hydraulic vise and automatic bow lift after every cut, with the head swivelling both ways for miters — right to 60°, left to 45°. DGH versions add hydraulic head positioning. Sizes from Ø9″ (230 mm) to Ø17-3/8″ (440 mm).",
+   "features": [
+    "Semi-automatic cycle: hydraulic vise closes, bow descends at the set feed and returns after the cut",
+    "Double miter: +60° right and −45° left (angle scale with fast stops at 30°/45°/60°)",
+    "Inverter drive for stepless blade speed 15–120 m/min",
+    "Hydro-mechanical blade tension with safety switch; blade brush; coolant pump",
+    "Sensitive-pressure feed control and height-adjustment switch",
+    "Heavy-duty gearbox; control panel on an arm"
+   ],
+   "optional": [
+    "3 Mt Material Roller Table",
+    "Inverter",
+    "Microspray Device",
+    "Hydraulic Top Clamping",
+    "Microsprey Device",
+    "3 Mt Roller Table",
+    "3 Mt Motorized Roller Table",
+    "Laser Line Pointer"
+   ],
+   "images": [
+    "bk-bmsy-440dgh-1",
+    "bk-bmsy-440dgh-2",
+    "bk-bmsy-360dgh-eco-1",
+    "bk-bmsy-360dgh-eco-2",
+    "bk-bmsy-320dgh-1",
+    "bk-bmsy-320dgh-2",
+    "bk-bmsy-320dgh-3",
+    "bk-bmsy-270dg-1",
+    "bk-bmsy-270dgh-1",
+    "bk-bmsy-270dg-2",
+    "bk-bmsy-270dgh-2",
+    "bk-bmsy-270dg-3",
+    "bk-bmsy-270dgh-3",
+    "bk-bmsy-270dg-4"
+   ],
+   "videos": [
+    {
+     "id": "7zD4VnxjKr8",
+     "title": "Bekamak BMSY 440DGH double-miter band saw",
+     "thumb": "video-7zD4VnxjKr8",
+     "duration": "PT2M20S"
+    },
+    {
+     "id": "2rTmkYcd2k4",
+     "title": "Bekamak BMSY 320DGH double-miter band saw, 12.6″ × 17″",
+     "thumb": "video-2rTmkYcd2k4",
+     "duration": "PT3M2S"
+    },
+    {
+     "id": "s1fs3zSEV8w",
+     "title": "Bekamak BMSY 270DGH semi-automatic double-miter band saw with hydraulic uplift",
+     "thumb": "video-s1fs3zSEV8w",
+     "duration": "PT1M43S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 230DG",
+      "capacity_mm": {
+       "0": {
+        "round": 230,
+        "rect": [
+         320,
+         130
+        ],
+        "square": 230
+       },
+       "+45": {
+        "round": 210,
+        "rect": [
+         230,
+         160
+        ],
+        "square": 190
+       },
+       "+60": {
+        "round": 130,
+        "rect": [
+         130,
+         100
+        ],
+        "square": 100
+       },
+       "-45": {
+        "round": 180,
+        "rect": [
+         230,
+         90
+        ],
+        "square": 150
+       }
+      },
+      "main_motor_kw": "1.0-1.3",
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "35-70",
+      "band_mm": [
+       2730,
+       27,
+       0.9
+      ],
+      "working_height_mm": 760,
+      "weight_kg": 430,
+      "dims_mm": [
+       1350,
+       700,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 230DGH",
+      "capacity_mm": {
+       "0": {
+        "round": 230,
+        "rect": [
+         320,
+         130
+        ],
+        "square": 230
+       },
+       "+45": {
+        "round": 210,
+        "rect": [
+         230,
+         160
+        ],
+        "square": 190
+       },
+       "+60": {
+        "round": 130,
+        "rect": [
+         130,
+         100
+        ],
+        "square": 100
+       },
+       "-45": {
+        "round": 180,
+        "rect": [
+         230,
+         160
+        ],
+        "square": 150
+       }
+      },
+      "main_motor_kw": "1.0-1.3",
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "35-70",
+      "band_mm": [
+       2730,
+       27,
+       0.9
+      ],
+      "working_height_mm": 806,
+      "weight_kg": 465,
+      "dims_mm": [
+       1350,
+       700,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 270DG",
+      "capacity_mm": {
+       "0": {
+        "round": 270,
+        "rect": [
+         350,
+         220
+        ],
+        "square": 270
+       },
+       "+45": {
+        "round": 180,
+        "rect": [
+         220,
+         180
+        ],
+        "square": 180
+       },
+       "+60": {
+        "round": 150,
+        "rect": [
+         150,
+         100
+        ],
+        "square": 100
+       },
+       "-45": {
+        "round": 200,
+        "rect": [
+         200,
+         150
+        ],
+        "square": 170
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3160,
+       27,
+       0.9
+      ],
+      "working_height_mm": 910,
+      "weight_kg": 476,
+      "dims_mm": [
+       1730,
+       770,
+       1460
+      ],
+      "feed_length_mm": null,
+      "other": {},
+      "notes": "+45 degree round capacity is printed as 180 mm (the 270DGH and BMS 270DG print 240 mm); kept as printed."
+     },
+     {
+      "name": "BMSY 270DGH",
+      "capacity_mm": {
+       "0": {
+        "round": 270,
+        "rect": [
+         350,
+         220
+        ],
+        "square": 270
+       },
+       "+45": {
+        "round": 240,
+        "rect": [
+         220,
+         180
+        ],
+        "square": 180
+       },
+       "+60": {
+        "round": 150,
+        "rect": [
+         150,
+         100
+        ],
+        "square": 100
+       },
+       "-45": {
+        "round": 200,
+        "rect": [
+         200,
+         150
+        ],
+        "square": 170
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3160,
+       27,
+       0.9
+      ],
+      "working_height_mm": 910,
+      "weight_kg": 525,
+      "dims_mm": [
+       1730,
+       770,
+       1460
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 320DGH",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         450,
+         320
+        ],
+        "square": 320
+       },
+       "+30": {
+        "round": 320,
+        "rect": [
+         380,
+         320
+        ],
+        "square": 320
+       },
+       "+45": {
+        "round": 320,
+        "rect": [
+         330,
+         320
+        ],
+        "square": 320
+       },
+       "-30": {
+        "round": 320,
+        "rect": [
+         380,
+         320
+        ],
+        "square": 320
+       },
+       "-45": {
+        "round": 320,
+        "rect": [
+         340,
+         320
+        ],
+        "square": 300
+       },
+       "-60": {
+        "round": 230,
+        "rect": [
+         230,
+         220
+        ],
+        "square": 220
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 860,
+      "weight_kg": 1030,
+      "dims_mm": [
+       2230,
+       1150,
+       2140
+      ],
+      "feed_length_mm": null,
+      "other": {},
+      "notes": "No +60 degree row is printed for this model (only -60). Height is printed as 2140 mm, taller than the 440DGH (1870 mm); kept as printed."
+     },
+     {
+      "name": "BMSY 360DGH",
+      "capacity_mm": {
+       "0": {
+        "round": 360,
+        "rect": [
+         610,
+         360
+        ],
+        "square": 360
+       },
+       "+30": {
+        "round": 360,
+        "rect": [
+         550,
+         360
+        ],
+        "square": 360
+       },
+       "+45": {
+        "round": 360,
+        "rect": [
+         440,
+         360
+        ],
+        "square": 360
+       },
+       "+60": {
+        "round": 320,
+        "rect": [
+         270,
+         360
+        ],
+        "square": 280
+       },
+       "-30": {
+        "round": 360,
+        "rect": [
+         550,
+         360
+        ],
+        "square": 360
+       },
+       "-45": {
+        "round": 360,
+        "rect": [
+         440,
+         360
+        ],
+        "square": 360
+       },
+       "-60": {
+        "round": 330,
+        "rect": [
+         300,
+         360
+        ],
+        "square": 300
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5000,
+       34,
+       1.1
+      ],
+      "working_height_mm": 860,
+      "weight_kg": 1470,
+      "dims_mm": [
+       2750,
+       1210,
+       1870
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 360DGH ECO",
+      "capacity_mm": {
+       "0": {
+        "round": 360,
+        "rect": [
+         510,
+         360
+        ],
+        "square": 360
+       },
+       "+30": {
+        "round": 360,
+        "rect": [
+         440,
+         360
+        ],
+        "square": 360
+       },
+       "+45": {
+        "round": 360,
+        "rect": [
+         390,
+         360
+        ],
+        "square": 360
+       },
+       "+60": {
+        "round": 250,
+        "rect": [
+         220,
+         360
+        ],
+        "square": 220
+       },
+       "-30": {
+        "round": 360,
+        "rect": [
+         440,
+         360
+        ],
+        "square": 360
+       },
+       "-45": {
+        "round": 360,
+        "rect": [
+         390,
+         360
+        ],
+        "square": 360
+       },
+       "-60": {
+        "round": 280,
+        "rect": [
+         260,
+         360
+        ],
+        "square": 260
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4800,
+       34,
+       1.1
+      ],
+      "working_height_mm": 860,
+      "weight_kg": 1450,
+      "dims_mm": [
+       2650,
+       1210,
+       1870
+      ],
+      "feed_length_mm": null,
+      "other": {},
+      "notes": "The +30 degree row label is printed as '+30° KCutting Capacity' (catalogue typo)."
+     },
+     {
+      "name": "BMSY 440DGH",
+      "capacity_mm": {
+       "0": {
+        "round": 440,
+        "rect": [
+         610,
+         440
+        ],
+        "square": 440
+       },
+       "+30": {
+        "round": 440,
+        "rect": [
+         440,
+         500
+        ],
+        "square": 440
+       },
+       "+45": {
+        "round": 410,
+        "rect": [
+         440,
+         410
+        ],
+        "square": 410
+       },
+       "+60": {
+        "round": 320,
+        "rect": [
+         440,
+         250
+        ],
+        "square": 270
+       },
+       "-30": {
+        "round": 440,
+        "rect": [
+         440,
+         500
+        ],
+        "square": 440
+       },
+       "-45": {
+        "round": 410,
+        "rect": [
+         440,
+         410
+        ],
+        "square": 410
+       },
+       "-60": {
+        "round": 320,
+        "rect": [
+         440,
+         280
+        ],
+        "square": 280
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5200,
+       34,
+       1.1
+      ],
+      "working_height_mm": 860,
+      "weight_kg": 1640,
+      "dims_mm": [
+       2800,
+       1210,
+       1870
+      ],
+      "feed_length_mm": null,
+      "other": {},
+      "notes": "Rectangle capacities for this model are printed with 440 first (e.g. '440 x 610 mm'), i.e. apparently height x width, unlike every other model on these pages (e.g. BMSY 440 on p. 15 prints '610x440'). Values kept exactly as printed."
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-g": {
+   "id": "bekamak-bmsy-g",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "semi-automatic",
+   "name": "BMSY 320G / 320GL semi-automatic single-miter band saws",
+   "short": "BMSY 320G/GL",
+   "models_label": "BMSY 320G · BMSY 320GL",
+   "summary": "Semi-automatic Ø12-5/8″ (320 mm) saws that miter to one side up to 60°; the 320GL has a longer bow for 24″ (610 mm) wide stock at 0°.",
+   "features": [
+    "Hydraulic vise and automatic bow return",
+    "Miter cutting to one side: 0° to 60°",
+    "Inverter drive, 15–120 m/min blade speed",
+    "Hydro-mechanical blade tension with safety switch",
+    "Blade brush, coolant pump, 2° inclined blade for faster cutting",
+    "Optional hydraulic top clamping and 10 ft roller table"
+   ],
+   "optional": [
+    "Hydraulic Top Clamping",
+    "Microspray Device",
+    "3 Mt Material Roller Table"
+   ],
+   "images": [
+    "bk-bmsy-320g-1",
+    "bk-bmsy-320gl-1",
+    "bk-bmsy-320g-2",
+    "bk-bmsy-320gl-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 320G",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         350,
+         320
+        ],
+        "square": 320
+       },
+       "+15": {
+        "round": 320,
+        "rect": [
+         340,
+         300
+        ],
+        "square": 300
+       },
+       "+30": {
+        "round": 300,
+        "rect": [
+         300,
+         200
+        ],
+        "square": 250
+       },
+       "+45": {
+        "round": 260,
+        "rect": [
+         250,
+         180
+        ],
+        "square": 180
+       },
+       "+60": {
+        "round": 160,
+        "rect": [
+         150,
+         150
+        ],
+        "square": 150
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": 740,
+      "weight_kg": 1015,
+      "dims_mm": [
+       1900,
+       1200,
+       1350
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 320GL",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         610,
+         320
+        ],
+        "square": 320
+       },
+       "+30": {
+        "round": 320,
+        "rect": [
+         510,
+         320
+        ],
+        "square": 320
+       },
+       "+45": {
+        "round": 320,
+        "rect": [
+         355,
+         320
+        ],
+        "square": 320
+       },
+       "+60": {
+        "round": 280,
+        "rect": [
+         280,
+         280
+        ],
+        "square": 280
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 740,
+      "weight_kg": 1195,
+      "dims_mm": [
+       2100,
+       1200,
+       1350
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-straight": {
+   "id": "bekamak-bmsy-straight",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "semi-automatic",
+   "name": "BMSY 280–440 semi-automatic band saws",
+   "short": "BMSY straight-cut",
+   "models_label": "BMSY 280 · BMSY 320 · BMSY 320L · BMSY 350M · BMSY 440",
+   "summary": "Straight-cutting pivot saws with hydraulic vise and automatic head lift, from Ø11″ (280 mm) to Ø17-3/8″ (440 mm); the 320L bow passes 24″ (610 mm) wide flats and the 350M bundles tube.",
+   "features": [
+    "Semi-automatic cycle with hydraulic vise",
+    "Inverter drive, blade speed 15–120 m/min",
+    "Hydro-mechanical blade tension, blade brush, coolant pump",
+    "Adjustable cutting-length stop and material roller",
+    "Options: hydraulic top clamping, chip conveyor, turn table, 10 ft motorized roller table"
+   ],
+   "optional": [
+    "Hydraulic Top Clamping",
+    "Microspray Device",
+    "Chip Conveyor",
+    "3 Mt Roller Table",
+    "Turn Table",
+    "Mikrosprey Device",
+    "Mikcrospray Device"
+   ],
+   "images": [
+    "bk-bmsy-350m-1",
+    "bk-bmsy-350m-2",
+    "bk-bmsy-350m-3",
+    "bk-bmsy-320l-1",
+    "bk-bmsy-320l-2",
+    "bk-bmsy-320-1",
+    "bk-bmsy-320-2"
+   ],
+   "videos": [
+    {
+     "id": "1jyMWbLef94",
+     "title": "Bekamak BMSY 350M semi-automatic straight-cutting band saw",
+     "thumb": "video-1jyMWbLef94",
+     "duration": "PT46S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 280",
+      "capacity_mm": {
+       "0": {
+        "round": 280,
+        "rect": [
+         350,
+         200
+        ],
+        "square": 280
+       },
+       "+45": {
+        "round": 240,
+        "rect": [
+         240,
+         180
+        ],
+        "square": 210
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3400,
+       27,
+       0.9
+      ],
+      "working_height_mm": 640,
+      "weight_kg": 620,
+      "dims_mm": [
+       1800,
+       850,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {},
+      "notes": "Labels printed as 'Hydraulic Pomp' and 'Coolant Pomp' (catalogue typos); mapped to the hydraulic motor and coolant pump fields."
+     },
+     {
+      "name": "BMSY 320",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         440,
+         220
+        ],
+        "square": 320
+       },
+       "+45": {
+        "round": 280,
+        "rect": [
+         280,
+         200
+        ],
+        "square": 260
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": 640,
+      "weight_kg": 670,
+      "dims_mm": [
+       1900,
+       850,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 320L",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         610,
+         310
+        ],
+        "square": 330
+       },
+       "+45": {
+        "round": 320,
+        "rect": [
+         460,
+         180
+        ],
+        "square": 320
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 640,
+      "weight_kg": 773,
+      "dims_mm": [
+       2100,
+       850,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 350M",
+      "capacity_mm": {
+       "0": {
+        "round": 350,
+        "rect": [
+         570,
+         260
+        ],
+        "square": 350
+       },
+       "+45": {
+        "round": 350,
+        "rect": [
+         460,
+         180
+        ],
+        "square": 350
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 640,
+      "weight_kg": 795,
+      "dims_mm": [
+       2300,
+       850,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 440",
+      "capacity_mm": {
+       "0": {
+        "round": 440,
+        "rect": [
+         610,
+         440
+        ],
+        "square": 440
+       },
+       "+45": {
+        "round": 410,
+        "rect": [
+         410,
+         440
+        ],
+        "square": 410
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5200,
+       34,
+       1.1
+      ],
+      "working_height_mm": 735,
+      "weight_kg": 1310,
+      "dims_mm": [
+       2600,
+       900,
+       1710
+      ],
+      "feed_length_mm": null,
+      "other": {}
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-roller": {
+   "id": "bekamak-bmso-roller",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "automatic",
+   "name": "BMSO 230–440 automatic roller-feed band saws",
+   "short": "BMSO roller-feed",
+   "models_label": "BMSO 230 · BMSO 320 · BMSO 320L · BMSO 440",
+   "summary": "Fully automatic pivot saws with roller material feed: set the length and quantity and the machine feeds, clamps, cuts and counts. Ø9″ (230 mm) to Ø17-3/8″ (440 mm), 24″ (610 mm) wide on the 320L.",
+   "features": [
+    "Automatic feeding by driven rollers with hydraulic feed vise",
+    "Piece counter and length setting on the control panel",
+    "Hydraulic vise and automatic bow return; inverter blade speed",
+    "Hydro-mechanical blade tension, blade brush, coolant pump",
+    "Options: hydraulic blade tension, chip conveyor, microspray, 10 ft roller table"
+   ],
+   "optional": [
+    "3 Mt Material Roller Table",
+    "Inverter",
+    "Microspray Device",
+    "Hydraulic Blade Tension",
+    "Chip Conveyor",
+    "Hydraulic Vise"
+   ],
+   "images": [
+    "bk-bmso-320l-1",
+    "bk-bmso-320l-2",
+    "bk-bmso-320-1",
+    "bk-bmso-230-1",
+    "bk-bmso-230-2",
+    "bk-bmso-230-3",
+    "bk-bmso-230-4"
+   ],
+   "videos": [
+    {
+     "id": "CDE5QZraFis",
+     "title": "Bekamak BMSO 320 fully automatic band saw",
+     "thumb": "video-CDE5QZraFis",
+     "duration": "PT1M55S"
+    },
+    {
+     "id": "u5HpQSlLgCY",
+     "title": "Bekamak BMSO 320L fully automatic straight-cutting band saw",
+     "thumb": "video-u5HpQSlLgCY",
+     "duration": "PT1M44S"
+    },
+    {
+     "id": "AX6sg7E_MKA",
+     "title": "Bekamak BMSO 320H fully automatic straight bundle-cutting band saw",
+     "thumb": "video-AX6sg7E_MKA",
+     "duration": "PT57S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 230",
+      "capacity_mm": {
+       "0": {
+        "round": 230,
+        "rect": [
+         240,
+         230
+        ],
+        "square": 230
+       }
+      },
+      "main_motor_kw": "1.0-1.3",
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       2730,
+       27,
+       0.9
+      ],
+      "working_height_mm": 590,
+      "weight_kg": 530,
+      "dims_mm": [
+       1700,
+       800,
+       1160
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Feed Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 320",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         320,
+         300
+        ],
+        "square": 300
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": 640,
+      "weight_kg": 770,
+      "dims_mm": [
+       1900,
+       850,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW",
+       "Feed Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 320L",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         500,
+         320
+        ],
+        "square": 320
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 640,
+      "weight_kg": 860,
+      "dims_mm": [
+       2100,
+       850,
+       1300
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Feed Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 440",
+      "capacity_mm": {
+       "0": {
+        "round": 440,
+        "rect": [
+         560,
+         440
+        ],
+        "square": 440
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5200,
+       34,
+       1.1
+      ],
+      "working_height_mm": 735,
+      "weight_kg": 1440,
+      "dims_mm": [
+       2630,
+       1110,
+       1710
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW",
+       "Drive Motor": "0.55 kW"
+      },
+      "notes": "This model prints 'Drive Motor 0,55 kW' where the other BMSO models print 'Feed Motor 0,25 kW'."
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-e": {
+   "id": "bekamak-bmso-e",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "automatic",
+   "name": "BMSO E automatic band saws with encoder feed",
+   "short": "BMSO E encoder-feed",
+   "models_label": "BMSO 230E · BMSO 320E · BMSO 350E",
+   "summary": "Roller-feed automatic saws with an encoder measuring the fed length for accurate repeat cuts, Ø9″ (230 mm) to Ø13-3/4″ (350 mm).",
+   "features": [
+    "Encoder-controlled roller feed for precise length",
+    "Automatic cycle with piece counter",
+    "Hydraulic vise; heavy-duty gearbox; 4 ft (1.2 m) roller table standard",
+    "Inverter blade speed 15–120 m/min; blade brush; coolant pump",
+    "Options: hydraulic blade tension, chip conveyor, microspray"
+   ],
+   "optional": [
+    "Microspray Device",
+    "Hydraulic Blade Tension",
+    "Chip Conveyor",
+    "3 Mt Material Roller Table"
+   ],
+   "images": [
+    "bk-bmso-320e-1",
+    "bk-bmso-320e-2",
+    "bk-bmso-320e-3",
+    "bk-bmso-320e-4",
+    "bk-bmso-320e-5"
+   ],
+   "videos": [
+    {
+     "id": "ZR3ZC0i3D0A",
+     "title": "Bekamak BMSO 320E fully automatic band saw with NC controller",
+     "thumb": "video-ZR3ZC0i3D0A",
+     "duration": "PT3M59S"
+    },
+    {
+     "id": "6XbDVgDcpJ4",
+     "title": "Bekamak BMSO 320E automatic band saw, 320 mm (12.6″)",
+     "thumb": "video-6XbDVgDcpJ4",
+     "duration": "PT1M5S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 230E",
+      "capacity_mm": {
+       "0": {
+        "round": 230,
+        "rect": [
+         240,
+         230
+        ],
+        "square": 230
+       }
+      },
+      "main_motor_kw": "1.0-1.3",
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "35-70",
+      "band_mm": [
+       2730,
+       27,
+       0.9
+      ],
+      "working_height_mm": 590,
+      "weight_kg": 530,
+      "dims_mm": [
+       1700,
+       800,
+       1160
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed with encoder",
+      "other": {
+       "Feed Motor": "0.25 kW"
+      },
+      "notes": "Band dimensions are printed as '2730x27x09 mm' (missing decimal separator); thickness entered as 0.9 mm, consistent with every other 27 mm band in the catalogue - confirm with Bekamak. Main motor printed as '1,0 - 1,3 kW'."
+     },
+     {
+      "name": "BMSO 320E",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         320,
+         320
+        ],
+        "square": 300
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": 640,
+      "weight_kg": 770,
+      "dims_mm": [
+       1900,
+       850,
+       1300
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed with encoder",
+      "other": {
+       "Feed Motor": "0.25 kW"
+      },
+      "notes": "Printed 0° square capacity is 300 mm although the rectangular capacity is printed as 320x320 mm - reproduced as printed."
+     },
+     {
+      "name": "BMSO 350E",
+      "capacity_mm": {
+       "0": {
+        "round": 350,
+        "rect": [
+         450,
+         350
+        ],
+        "square": 350
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4800,
+       34,
+       1.1
+      ],
+      "working_height_mm": 660,
+      "weight_kg": 1200,
+      "dims_mm": [
+       2800,
+       900,
+       1400
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed with encoder",
+      "other": {
+       "Feeder Motor": "0.25 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-ga": {
+   "id": "bekamak-bmso-ga",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "automatic",
+   "name": "BMSO 350GA automatic single-miter band saw",
+   "short": "BMSO 350GA",
+   "models_label": "BMSO 350GA",
+   "summary": "Roller-feed automatic saw that also miters to one side up to 60° — automatic repeat cutting of angled structural parts up to Ø13-3/4″ (350 mm).",
+   "features": [
+    "Automatic roller feed with hydraulic feed vise",
+    "Single miter 0°–60° with hydraulic head rotation",
+    "Inverter blade speed, hydro-mechanical blade tension",
+    "Blade brush, coolant pump, chip conveyor motor",
+    "Options: hydraulic top clamping, microspray, 10 ft roller table"
+   ],
+   "optional": [
+    "Microspray Device",
+    "Chip Conveyor",
+    "3 Mt Material Roller Table"
+   ],
+   "images": [
+    "bk-bmso-350ga-1",
+    "bk-bmso-350ga-2",
+    "bk-bmso-350ga-3",
+    "bk-bmso-350ga-4"
+   ],
+   "videos": [
+    {
+     "id": "FjbwH4Chf0w",
+     "title": "Bekamak BMSO 350GA 14″ automatic swivelling-head band saw",
+     "thumb": "video-FjbwH4Chf0w",
+     "duration": "PT3M15S"
+    },
+    {
+     "id": "DwMoB3JW2gY",
+     "title": "Bekamak BMSO 350GA automatic miter band saw with NC controller",
+     "thumb": "video-DwMoB3JW2gY",
+     "duration": "PT2M15S"
+    },
+    {
+     "id": "EJmMbr1g4Hs",
+     "title": "Bekamak BMSO 350GA — instruction video",
+     "thumb": "video-EJmMbr1g4Hs",
+     "duration": "PT11M44S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 350GA",
+      "capacity_mm": {
+       "0": {
+        "round": 350,
+        "rect": [
+         400,
+         350
+        ],
+        "square": 350
+       },
+       "+30": {
+        "round": 320,
+        "rect": [
+         400,
+         230
+        ],
+        "square": 350
+       },
+       "+45": {
+        "round": 320,
+        "rect": [
+         260,
+         360
+        ],
+        "square": 280
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.37,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 760,
+      "weight_kg": 1050,
+      "dims_mm": [
+       2450,
+       920,
+       2020
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed",
+      "other": {
+       "Feed Motor": "0.25 kW"
+      },
+      "notes": "As printed: +30° square capacity (350 mm) exceeds the +30° round capacity (320 mm); +45° rectangular capacity is printed as 260x360 mm. The catalogue label 'Cutting Seeds' is a typo for Cutting Speeds."
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-gs": {
+   "id": "bekamak-bmso-gs",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "automatic",
+   "name": "BMSO 320GS / 320GLS servo-feed single-miter band saws",
+   "short": "BMSO GS servo",
+   "models_label": "BMSO 320GS · BMSO 320GLS",
+   "summary": "NC automatic saws with servo-driven shuttle vise feeding and programmable miter angles (0° to 60°); the GLS bow takes 24″ (610 mm) wide material.",
+   "features": [
+    "Servo shuttle-vise feed with ball screw: ±0.1 mm length accuracy",
+    "NC control with multi-program job list (length × quantity × angle)",
+    "Hydraulic head rotation for single miter cuts",
+    "Hydraulic vise, inverter blade speed, hydraulic blade tension",
+    "Chip conveyor and roller table options"
+   ],
+   "optional": [
+    "Multiple Segments",
+    "Microspray Device",
+    "Hydraulic Blade Tension",
+    "3 Mt Roller Table",
+    "Hydraulic Top Clamping"
+   ],
+   "images": [
+    "bk-bmso-320gs-1",
+    "bk-bmso-320gls-1",
+    "bk-bmso-320gs-2",
+    "bk-bmso-320gls-2",
+    "bk-bmso-320gs-3",
+    "bk-bmso-320gls-3"
+   ],
+   "videos": [
+    {
+     "id": "80A2SoXkzDU",
+     "title": "Bekamak BMSO 320GS NC automatic bundling and mitering band saw",
+     "thumb": "video-80A2SoXkzDU",
+     "duration": "PT1M56S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 320GS",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         350,
+         320
+        ],
+        "square": 320
+       },
+       "-30": {
+        "round": 320,
+        "rect": [
+         320,
+         250
+        ],
+        "square": 280
+       },
+       "-45": {
+        "round": 260,
+        "rect": [
+         320,
+         190
+        ],
+        "square": 220
+       },
+       "-60": {
+        "round": 170,
+        "rect": [
+         200,
+         120
+        ],
+        "square": 150
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": 850,
+      "weight_kg": 2310,
+      "dims_mm": [
+       2120,
+       2100,
+       1810
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feeding",
+      "other": {
+       "Servo Engine": "1 kW"
+      }
+     },
+     {
+      "name": "BMSO 320GLS",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         610,
+         320
+        ],
+        "square": 320
+       },
+       "-60": {
+        "round": 260,
+        "rect": [
+         260,
+         220
+        ],
+        "square": 220
+       },
+       "-45": {
+        "round": 320,
+        "rect": [
+         360,
+         320
+        ],
+        "square": 320
+       },
+       "-30": {
+        "round": 320,
+        "rect": [
+         510,
+         320
+        ],
+        "square": 320
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 740,
+      "weight_kg": 2060,
+      "dims_mm": [
+       2300,
+       2350,
+       1750
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feeding",
+      "other": {},
+      "notes": "Angle rows are printed in the order 0°, -60°, -45°, -30° and are reproduced in that order. No servo motor rating is printed for this model. As printed, the -45° capacity (320 round / 360x320) is larger than the -60° capacity (260 / 260x220) and the GLS weight (2060 kg) is lower than the GS (2310 kg)."
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-dgs": {
+   "id": "bekamak-bmso-dgs",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "automatic",
+   "name": "BMSO 270DGS servo-feed double-miter band saw",
+   "short": "BMSO 270DGS",
+   "models_label": "BMSO 270DGS",
+   "summary": "Compact NC automatic saw that feeds with a servo shuttle vise and miters both ways — automatic production of angled parts up to Ø10-5/8″ (270 mm).",
+   "features": [
+    "Servo shuttle-vise feeding, NC programmable lengths and quantities",
+    "Double miter +60° / −45° with hydraulic head rotation",
+    "Hydraulic vise, inverter blade speed",
+    "Hydraulic blade tension, blade brush, coolant pump"
+   ],
+   "optional": [
+    "Hydraulic Top Clamping",
+    "Micro Spray",
+    "3 Mt. Roller Table"
+   ],
+   "images": [
+    "bk-bmso-270dgs-1",
+    "bk-bmso-270dgs-2"
+   ],
+   "videos": [
+    {
+     "id": "fUZQp6XiXqc",
+     "title": "Bekamak BMSO 270DGS 10.6″ automatic double-miter band saw with shuttle-vise feeder",
+     "thumb": "video-fUZQp6XiXqc",
+     "duration": "PT2M26S"
+    },
+    {
+     "id": "2lI0nHlPBHA",
+     "title": "Bekamak BMSO 270DGS auto-feed double-miter band saw with NC controller",
+     "thumb": "video-2lI0nHlPBHA",
+     "duration": "PT48S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 270DGS",
+      "capacity_mm": {
+       "0": {
+        "round": 270,
+        "rect": [
+         340,
+         240
+        ],
+        "square": 270
+       },
+       "+30": {
+        "round": 270,
+        "rect": [
+         270,
+         250
+        ],
+        "square": 270
+       },
+       "+45": {
+        "round": 250,
+        "rect": [
+         230,
+         180
+        ],
+        "square": 180
+       },
+       "+60": {
+        "round": 150,
+        "rect": [
+         150,
+         100
+        ],
+        "square": 100
+       },
+       "-30": {
+        "round": 260,
+        "rect": [
+         270,
+         180
+        ],
+        "square": 220
+       },
+       "-45": {
+        "round": 200,
+        "rect": [
+         210,
+         100
+        ],
+        "square": 170
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       3160,
+       27,
+       0.9
+      ],
+      "working_height_mm": 845,
+      "weight_kg": 920,
+      "dims_mm": [
+       2400,
+       1900,
+       1600
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feeding",
+      "other": {
+       "Feeder Motor": "0.37 kW"
+      },
+      "notes": "No -60° capacity is printed (tabulated miter range is +60° to -45°)."
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-c": {
+   "id": "bekamak-bmsy-c",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSY C semi-automatic double-column band saws",
+   "short": "BMSY C double-column",
+   "models_label": "BMSY 330C · BMSY 360C · BMSY 460C · BMSY 560C · BMSY 810C · BMSY 825C · BMSY 1020C",
+   "summary": "Twin-column saws for straight cutting of heavy bar, billet and bundles from Ø13″ (330 mm) to Ø40-1/8″ (1020 mm). The bow runs on two hardened columns for a rigid, square cut; hydraulic vise, automatic bow return and a 2° inclined blade are standard. SV versions have a split vise for cutting short pieces.",
+   "features": [
+    "Double-column guidance with hydraulic vise and automatic bow return",
+    "2° inclined blade and heavy-duty gearbox for fast, square cuts",
+    "Inverter drive, blade speed 15–120 m/min; hydro-mechanical blade tension",
+    "Cutting-width adjustment lever, blade brush, coolant pump",
+    "Options: split vise (SV), hydraulic top clamping, chip conveyor, roller tables"
+   ],
+   "optional": [
+    "Split Vice",
+    "Chip Conveyor",
+    "Hydraulic Top Clamping",
+    "3 Mt Material Roller Table",
+    "3 Mt Motorized Roller Table",
+    "Hydraulic Blade Tension",
+    "Microspray Device",
+    "High Vice",
+    "Second Vice",
+    "Multiple Segments"
+   ],
+   "images": [
+    "bk-bmsy-1020c-1",
+    "bk-bmsy-1020c-2",
+    "bk-bmsy-1020c-3",
+    "bk-bmsy-825c-1",
+    "bk-bmsy-810c-1",
+    "bk-bmsy-810c-2",
+    "bk-bmsy-810c-3",
+    "bk-bmsy-560c-1",
+    "bk-bmsy-560c-2",
+    "bk-bmsy-560c-3",
+    "bk-bmsy-560c-4",
+    "bk-bmsy-460c-1",
+    "bk-bmsy-460c-2",
+    "bk-bmsy-460c-3"
+   ],
+   "videos": [
+    {
+     "id": "HEiMFBrMomA",
+     "title": "Bekamak BMSY 560C 22″ double-column band saw",
+     "thumb": "video-HEiMFBrMomA",
+     "duration": "PT8M32S"
+    },
+    {
+     "id": "OJatA1MuGe0",
+     "title": "Bekamak BMSY 460C double-column band saw",
+     "thumb": "video-OJatA1MuGe0",
+     "duration": "PT3M24S"
+    },
+    {
+     "id": "GNMyG33ms8E",
+     "title": "Bekamak BMSY 1020C double-column band saw",
+     "thumb": "video-GNMyG33ms8E",
+     "duration": "PT2M7S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 330C",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         450,
+         330
+        ],
+        "square": 330
+       },
+       "+45": {
+        "round": 200,
+        "rect": [
+         200,
+         330
+        ],
+        "square": 200
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5000,
+       34,
+       1.1
+      ],
+      "working_height_mm": 575,
+      "weight_kg": 1150,
+      "dims_mm": [
+       2700,
+       1200,
+       1700
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 360C",
+      "capacity_mm": {
+       "0": {
+        "round": 380,
+        "rect": [
+         520,
+         370
+        ],
+        "square": 370
+       },
+       "+45": {
+        "round": 260,
+        "rect": [
+         260,
+         370
+        ],
+        "square": 260
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5200,
+       34,
+       1.1
+      ],
+      "working_height_mm": 575,
+      "weight_kg": 1330,
+      "dims_mm": [
+       2700,
+       1200,
+       1660
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {},
+      "notes": "Printed 0° capacity is round 380 mm, rectangle 520x370 mm, square 370 mm (the SV version on p23 prints 520x380 / 380 mm) - reproduced as printed. Hydraulic drive labelled 'Hydraulic Motor' on this table."
+     },
+     {
+      "name": "BMSY 460C",
+      "capacity_mm": {
+       "0": {
+        "round": 460,
+        "rect": [
+         650,
+         460
+        ],
+        "square": 460
+       },
+       "+45": {
+        "round": 340,
+        "rect": [
+         340,
+         460
+        ],
+        "square": 340
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5750,
+       41,
+       1.3
+      ],
+      "working_height_mm": 585,
+      "weight_kg": 1520,
+      "dims_mm": [
+       3000,
+       1200,
+       1800
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {},
+      "notes": "Hydraulic drive labelled 'Hydraulic Motor' on this table."
+     },
+     {
+      "name": "BMSY 560C",
+      "capacity_mm": {
+       "0": {
+        "round": 560,
+        "rect": [
+         750,
+         560
+        ],
+        "square": 560
+       },
+       "+45": {
+        "round": 400,
+        "rect": [
+         400,
+         560
+        ],
+        "square": 400
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6000,
+       41,
+       1.3
+      ],
+      "working_height_mm": 585,
+      "weight_kg": 2000,
+      "dims_mm": [
+       3250,
+       1400,
+       2100
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 810C",
+      "capacity_mm": {
+       "0": {
+        "round": 810,
+        "rect": [
+         850,
+         790
+        ],
+        "square": 790
+       },
+       "+45": {
+        "round": 480,
+        "rect": [
+         480,
+         790
+        ],
+        "square": 480
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       8200,
+       41,
+       1.3
+      ],
+      "working_height_mm": 585,
+      "weight_kg": 3080,
+      "dims_mm": [
+       3900,
+       1400,
+       2720
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 825C",
+      "capacity_mm": {
+       "0": {
+        "round": 825,
+        "rect": [
+         950,
+         790
+        ],
+        "square": 790
+       },
+       "+45": {
+        "round": 560,
+        "rect": [
+         560,
+         790
+        ],
+        "square": 560
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       8400,
+       54,
+       1.6
+      ],
+      "working_height_mm": 600,
+      "weight_kg": 3300,
+      "dims_mm": [
+       3900,
+       1270,
+       2720
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSY 1020C",
+      "capacity_mm": {
+       "0": {
+        "round": 1020,
+        "rect": [
+         1020,
+         1020
+        ],
+        "square": 1020
+       },
+       "+45": {
+        "round": 600,
+        "rect": [
+         600,
+         1020
+        ],
+        "square": 600
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       9700,
+       54,
+       1.6
+      ],
+      "working_height_mm": 600,
+      "weight_kg": 6700,
+      "dims_mm": [
+       4500,
+       1500,
+       3200
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": "Weight printed as '6700 Kg'."
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-cgh": {
+   "id": "bekamak-bmsy-cgh",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSY CGH semi-automatic single-miter double-column band saws",
+   "short": "BMSY CGH miter",
+   "models_label": "BMSY 325CGH · BMSY 440CGH · BMSY 540CGH · BMSY 810CGH",
+   "summary": "Double-column rigidity with a head that rotates up to 60° for miter cuts on beams and heavy sections, from Ø12-3/4″ (325 mm) to Ø31-7/8″ (810 mm).",
+   "features": [
+    "Hydraulic head rotation 0°–60° with angle display",
+    "Twin-column bow guidance; hydraulic vise; automatic bow return",
+    "Inverter blade speed, hydraulic blade tension",
+    "Blade brush, coolant pump, chip conveyor option",
+    "Options: hydraulic top clamping, roller tables, laser line"
+   ],
+   "optional": [
+    "Microspray Device",
+    "Hydraulic Top Clamping",
+    "Hydraulic Blade Tension",
+    "Chip Conveyor",
+    "Laser Line Pointer",
+    "3 Mt Roller Table",
+    "3 Mt Motorized Roller Table",
+    "3 Mt Material Roller Table"
+   ],
+   "images": [
+    "bk-bmsy-810cgh-1",
+    "bk-bmsy-810cgh-2",
+    "bk-bmsy-810cgh-3",
+    "bk-bmsy-540cgh-1",
+    "bk-bmsy-540cgh-2",
+    "bk-bmsy-540cgh-3",
+    "bk-bmsy-440cgh-1",
+    "bk-bmsy-440cgh-2",
+    "bk-bmsy-440cgh-3",
+    "bk-bmsy-325cgh-1",
+    "bk-bmsy-325cgh-2",
+    "bk-bmsy-325cgh-3"
+   ],
+   "videos": [
+    {
+     "id": "74A56aUB1TE",
+     "title": "Bekamak BMSY 810CGH mitering double-column band saw",
+     "thumb": "video-74A56aUB1TE",
+     "duration": "PT1M16S"
+    },
+    {
+     "id": "ALd-9cGzMvA",
+     "title": "Bekamak 540CGH double-column mitering band saw",
+     "thumb": "video-ALd-9cGzMvA",
+     "duration": "PT3M57S"
+    },
+    {
+     "id": "tVMqRLMrgKM",
+     "title": "Bekamak BMSY 325CGH double-column miter band saw",
+     "thumb": "video-tVMqRLMrgKM",
+     "duration": "PT1M20S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 325CGH",
+      "capacity_mm": {
+       "0": {
+        "round": 325,
+        "rect": [
+         440,
+         320
+        ],
+        "square": 320
+       },
+       "+30": {
+        "round": 325,
+        "rect": [
+         360,
+         320
+        ],
+        "square": 320
+       },
+       "+45": {
+        "round": 305,
+        "rect": [
+         270,
+         320
+        ],
+        "square": 270
+       },
+       "+60": {
+        "round": 180,
+        "rect": [
+         180,
+         240
+        ],
+        "square": 180
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "20-100",
+      "band_mm": [
+       4300,
+       34,
+       1.1
+      ],
+      "working_height_mm": 650,
+      "weight_kg": 1250,
+      "dims_mm": [
+       2425,
+       1050,
+       1600
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {},
+      "notes": "+60° rectangle printed as 180x240 mm (height larger than width) - reproduced as printed."
+     },
+     {
+      "name": "BMSY 440CGH",
+      "capacity_mm": {
+       "0": {
+        "round": 450,
+        "rect": [
+         695,
+         425
+        ],
+        "square": 425
+       },
+       "+30": {
+        "round": 450,
+        "rect": [
+         560,
+         425
+        ],
+        "square": 425
+       },
+       "+45": {
+        "round": 430,
+        "rect": [
+         430,
+         425
+        ],
+        "square": 425
+       },
+       "+60": {
+        "round": 310,
+        "rect": [
+         260,
+         425
+        ],
+        "square": 290
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6350,
+       41,
+       1.3
+      ],
+      "working_height_mm": 675,
+      "weight_kg": 1675,
+      "dims_mm": [
+       3000,
+       1300,
+       1940
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": "Printed 0° round capacity is 450 mm (model name suggests 440). +60° prints rectangle 260x425 mm but square 290 mm (square wider than the rectangle width) - reproduced as printed."
+     },
+     {
+      "name": "BMSY 540CGH",
+      "capacity_mm": {
+       "0": {
+        "round": 540,
+        "rect": [
+         750,
+         540
+        ],
+        "square": 540
+       },
+       "+30": {
+        "round": 540,
+        "rect": [
+         600,
+         540
+        ],
+        "square": 540
+       },
+       "+45": {
+        "round": 510,
+        "rect": [
+         450,
+         540
+        ],
+        "square": 450
+       },
+       "+60": {
+        "round": 270,
+        "rect": [
+         250,
+         540
+        ],
+        "square": 250
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6000,
+       41,
+       1.3
+      ],
+      "working_height_mm": 715,
+      "weight_kg": 2200,
+      "dims_mm": [
+       3000,
+       1300,
+       2200
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 810CGH",
+      "capacity_mm": {
+       "0": {
+        "round": 810,
+        "rect": [
+         910,
+         750
+        ],
+        "square": 770
+       },
+       "+30": {
+        "round": 760,
+        "rect": [
+         750,
+         740
+        ],
+        "square": 740
+       },
+       "+45": {
+        "round": 600,
+        "rect": [
+         750,
+         600
+        ],
+        "square": 600
+       },
+       "+60": {
+        "round": 360,
+        "rect": [
+         750,
+         360
+        ],
+        "square": 360
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       8400,
+       41,
+       1.3
+      ],
+      "working_height_mm": 725,
+      "weight_kg": 3920,
+      "dims_mm": [
+       4000,
+       1600,
+       2780
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {},
+      "notes": "0° prints rectangle 910x750 mm but square 770 mm (square taller than the rectangle height) - reproduced as printed."
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-dg-nc": {
+   "id": "bekamak-bmsy-dg-nc",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSY DG NC semi-automatic double-miter double-column band saws",
+   "short": "BMSY DG NC double-miter",
+   "models_label": "BMSY 360CDGH · BMSY 440CDGH · BMSY 560DG · BMSY 650DG · BMSY 750DG",
+   "summary": "Heavy double-column miter saws whose head swivels both ways under NC control — the operator enters the angle and the saw positions itself. Ø14-1/8″ (360 mm) to Ø29-1/2″ (750 mm).",
+   "features": [
+    "NC-controlled head rotation to both sides (+60° / −45° on most sizes)",
+    "Twin-column guidance, hydraulic vise, automatic bow return",
+    "Inverter blade speed, hydraulic blade tension",
+    "Chip conveyor and roller table options"
+   ],
+   "optional": [
+    "Hydraulic Blade Tension",
+    "3 Mt Motorized Roller Table",
+    "3 Mt Material Roller Table",
+    "Hydraulic Top Clamping",
+    "Laser Line Pointer",
+    "Microspray Device",
+    "Chip Conveyor",
+    "45° / 60° 1,2 Mt Metarial Roller Table"
+   ],
+   "images": [
+    "bk-bmsy-750dg-1",
+    "bk-bmsy-750dg-2",
+    "bk-bmsy-750dg-3",
+    "bk-bmsy-750dg-4",
+    "bk-bmsy-750dg-5",
+    "bk-bmsy-650dg-1",
+    "bk-bmsy-650dg-2",
+    "bk-bmsy-650dg-3",
+    "bk-bmsy-650dg-4",
+    "bk-bmsy-650dg-5",
+    "bk-bmsy-560dg-1",
+    "bk-bmsy-560dg-2",
+    "bk-bmsy-560dg-3",
+    "bk-bmsy-560dg-4"
+   ],
+   "videos": [
+    {
+     "id": "S4ATmtft7Jg",
+     "title": "Bekamak BMSY 560DG double-column double-miter band saw",
+     "thumb": "video-S4ATmtft7Jg",
+     "duration": "PT1M43S"
+    },
+    {
+     "id": "uiwLb7HElUY",
+     "title": "Bekamak BMSY 560DG NC programmable double-miter band saw",
+     "thumb": "video-uiwLb7HElUY",
+     "duration": "PT45S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 360CDGH",
+      "capacity_mm": {
+       "0": {
+        "round": 360,
+        "rect": [
+         640,
+         360
+        ],
+        "square": 360
+       },
+       "+30": {
+        "round": 360,
+        "rect": [
+         510,
+         360
+        ],
+        "square": 360
+       },
+       "+45": {
+        "round": 360,
+        "rect": [
+         390,
+         360
+        ],
+        "square": 360
+       },
+       "+60": {
+        "round": 310,
+        "rect": [
+         250,
+         360
+        ],
+        "square": 270
+       },
+       "-30": {
+        "round": 360,
+        "rect": [
+         510,
+         360
+        ],
+        "square": 360
+       },
+       "-45": {
+        "round": 360,
+        "rect": [
+         390,
+         360
+        ],
+        "square": 360
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5000,
+       34,
+       1.1
+      ],
+      "working_height_mm": 800,
+      "weight_kg": 1995,
+      "dims_mm": [
+       3000,
+       1200,
+       1910
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 440CDGH",
+      "capacity_mm": {
+       "0": {
+        "round": 440,
+        "rect": [
+         640,
+         440
+        ],
+        "square": 440
+       },
+       "+30": {
+        "round": 440,
+        "rect": [
+         510,
+         440
+        ],
+        "square": 440
+       },
+       "+45": {
+        "round": 440,
+        "rect": [
+         400,
+         440
+        ],
+        "square": 400
+       },
+       "+60": {
+        "round": 250,
+        "rect": [
+         250,
+         440
+        ],
+        "square": 250
+       },
+       "-30": {
+        "round": 440,
+        "rect": [
+         510,
+         440
+        ],
+        "square": 440
+       },
+       "-45": {
+        "round": 390,
+        "rect": [
+         390,
+         440
+        ],
+        "square": 390
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6300,
+       41,
+       1.3
+      ],
+      "working_height_mm": 860,
+      "weight_kg": 2050,
+      "dims_mm": [
+       3150,
+       1850,
+       2115
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {}
+     },
+     {
+      "name": "BMSY 560DG",
+      "capacity_mm": {
+       "0": {
+        "round": 560,
+        "rect": [
+         850,
+         530
+        ],
+        "square": 540
+       },
+       "+30": {
+        "round": 560,
+        "rect": [
+         670,
+         540
+        ],
+        "square": 540
+       },
+       "+45": {
+        "round": 520,
+        "rect": [
+         520,
+         540
+        ],
+        "square": 520
+       },
+       "-60": {
+        "round": 340,
+        "rect": [
+         340,
+         520
+        ],
+        "square": 340
+       },
+       "-30": {
+        "round": 560,
+        "rect": [
+         670,
+         540
+        ],
+        "square": 540
+       },
+       "-45": {
+        "round": 520,
+        "rect": [
+         520,
+         540
+        ],
+        "square": 520
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       7000,
+       41,
+       1.3
+      ],
+      "working_height_mm": 875,
+      "weight_kg": 3450,
+      "dims_mm": [
+       3850,
+       1700,
+       2450
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {},
+      "notes": "The 60-degree row is printed as '-60 deg' for this model (the CDGH models print '+60 deg'); key kept as printed."
+     },
+     {
+      "name": "BMSY 650DG",
+      "capacity_mm": {
+       "0": {
+        "round": 650,
+        "rect": [
+         1000,
+         600
+        ],
+        "square": 600
+       },
+       "+30": {
+        "round": 650,
+        "rect": [
+         840,
+         600
+        ],
+        "square": 600
+       },
+       "+45": {
+        "round": 650,
+        "rect": [
+         660,
+         600
+        ],
+        "square": 600
+       },
+       "-60": {
+        "round": 440,
+        "rect": [
+         440,
+         600
+        ],
+        "square": 440
+       },
+       "-30": {
+        "round": 650,
+        "rect": [
+         840,
+         600
+        ],
+        "square": 600
+       },
+       "-45": {
+        "round": 650,
+        "rect": [
+         660,
+         600
+        ],
+        "square": 600
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 4,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       8400,
+       54,
+       1.6
+      ],
+      "working_height_mm": 880,
+      "weight_kg": 6800,
+      "dims_mm": [
+       4725,
+       2250,
+       2750
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Angle Engine": "0.37 kW",
+       "Chip Brush Motor": "0.18 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": "The 60-degree row is printed as '-60 deg'; key kept as printed."
+     },
+     {
+      "name": "BMSY 750DG",
+      "capacity_mm": {
+       "0": {
+        "round": 700,
+        "rect": [
+         1300,
+         750
+        ],
+        "square": 750
+       },
+       "+30": {
+        "round": 800,
+        "rect": [
+         1070,
+         750
+        ],
+        "square": 750
+       },
+       "+45": {
+        "round": 700,
+        "rect": [
+         850,
+         750
+        ],
+        "square": 750
+       },
+       "-60": {
+        "round": 570,
+        "rect": [
+         570,
+         750
+        ],
+        "square": 570
+       },
+       "-30": {
+        "round": 800,
+        "rect": [
+         1070,
+         750
+        ],
+        "square": 750
+       },
+       "-45": {
+        "round": 800,
+        "rect": [
+         850,
+         750
+        ],
+        "square": 750
+       }
+      },
+      "main_motor_kw": 11,
+      "hydraulic_motor_kw": 4,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       10430,
+       54,
+       1.6
+      ],
+      "working_height_mm": 920,
+      "weight_kg": 9000,
+      "dims_mm": [
+       5500,
+       2300,
+       3250
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Angle Engine": "0.37 kW",
+       "Chip Brush Motor": "0.18 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": "The 60-degree row is printed as '-60 deg'; key kept as printed. Round capacity is printed as 700 mm at 0 deg but 800 mm at +/-30 and -45 deg, exactly as in the catalogue."
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-c": {
+   "id": "bekamak-bmso-c",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSO C automatic roller-feed double-column band saws",
+   "short": "BMSO C automatic",
+   "models_label": "BMSO 330C · BMSO 460C · BMSO 560C · BMSO 825C",
+   "summary": "Automatic straight-cutting double-column saws with roller material feed and piece counting, from Ø13″ (330 mm) up to the 825C.",
+   "features": [
+    "Automatic roller feed with hydraulic feed vise",
+    "Piece counter and length setting",
+    "Twin-column guidance, hydraulic vise, inverter blade speed",
+    "Hydraulic blade tension, blade brush, coolant pump",
+    "Chip conveyor, hydraulic top clamping and roller tables optional"
+   ],
+   "optional": [
+    "Split Vice",
+    "Chip Conveyor",
+    "3 Mt Material Roller Table",
+    "Hydraulic Blade Tension",
+    "Microspray Device",
+    "Microspray Coolant",
+    "3 Mt Roller Table",
+    "3 Mt Motorized Roller Table",
+    "Lazer Line Pointer",
+    "Laser Line Pointer"
+   ],
+   "images": [
+    "bk-bmso-825c-1",
+    "bk-bmso-825c-2",
+    "bk-bmso-560c-1",
+    "bk-bmso-560c-2",
+    "bk-bmso-460c-1",
+    "bk-bmso-460c-2",
+    "bk-bmso-330c-1",
+    "bk-bmso-330c-2",
+    "bk-bmso-330c-3",
+    "bk-bmso-330c-4"
+   ],
+   "videos": [
+    {
+     "id": "A9ARGKtxBbI",
+     "title": "Bekamak BMSO 560C fully automatic double-column band saw",
+     "thumb": "video-A9ARGKtxBbI",
+     "duration": "PT1M28S"
+    },
+    {
+     "id": "vS1S13whY3E",
+     "title": "Bekamak BMSO 360C / 460C fully automatic double-column band saws",
+     "thumb": "video-vS1S13whY3E",
+     "duration": "PT47S"
+    },
+    {
+     "id": "hMbl70LAgo0",
+     "title": "Bekamak BMSO 810C automatic double-column band saw",
+     "thumb": "video-hMbl70LAgo0",
+     "duration": "PT36S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 330C",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         350,
+         330
+        ],
+        "square": 330
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5000,
+       34,
+       1.1
+      ],
+      "working_height_mm": 575,
+      "weight_kg": 1250,
+      "dims_mm": [
+       2600,
+       1200,
+       1700
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed",
+      "other": {
+       "Feed Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 460C",
+      "capacity_mm": {
+       "0": {
+        "round": 460,
+        "rect": [
+         520,
+         460
+        ],
+        "square": 460
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5750,
+       41,
+       1.3
+      ],
+      "working_height_mm": 585,
+      "weight_kg": 1650,
+      "dims_mm": [
+       3000,
+       1200,
+       1800
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed",
+      "other": {
+       "Feed Motor": "0.25 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 560C",
+      "capacity_mm": {
+       "0": {
+        "round": 560,
+        "rect": [
+         600,
+         560
+        ],
+        "square": 560
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6000,
+       41,
+       1.3
+      ],
+      "working_height_mm": 585,
+      "weight_kg": 2100,
+      "dims_mm": [
+       3250,
+       1400,
+       2100
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed",
+      "other": {
+       "Feed Motor": "0.55 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 825C",
+      "capacity_mm": {
+       "0": {
+        "round": 900,
+        "rect": [
+         900,
+         790
+        ],
+        "square": 790
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "20-100",
+      "band_mm": [
+       8400,
+       41,
+       1.3
+      ],
+      "working_height_mm": 600,
+      "weight_kg": 3500,
+      "dims_mm": [
+       3900,
+       1400,
+       2720
+      ],
+      "feed_length_mm": null,
+      "feed_type": "roller feed",
+      "other": {
+       "Feed Motor": "0.55 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": "Table headed 'BMSO 825C' but the p24 model list says 'BMSO 810C'. Printed 0° round capacity is 900 mm (not 825), rectangle 900x790 mm, square 790 mm. Band printed as '8400 x 41 x 1,3 mm' (41 mm wide, unlike the 54 mm band of the BMSY 825C). Cutting speed printed 20 - 100 m/min. Weight printed as '3500 Kg'. This table uses decimal points (1.5 / 0.55 / 0.12 / 0.25 kW) where the others use commas. Reproduced as printed - confirm with Bekamak."
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-cs": {
+   "id": "bekamak-bmso-cs",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSO CS NC fully automatic servo-feed double-column band saws",
+   "short": "BMSO CS NC servo",
+   "models_label": "BMSO 330CS · BMSO 420CS · BMSO 560CS · BMSO 570CS · BMSO 820CS · BMSO 1110CS",
+   "summary": "Production saws with ball-screw servo shuttle-vise feeding and PLC touch-screen control: job lists of length and quantity run unattended with ±0.1 mm repeatability. Ø13″ (330 mm) to Ø43-3/4″ (1110 mm).",
+   "features": [
+    "Servo shuttle-vise feed on ball screw; multi-program PLC touch screen",
+    "Twin-column guidance; hydraulic vise on feed and cutting side",
+    "Inverter blade speed; hydraulic blade tension; blade deviation monitoring",
+    "Chip conveyor, blade brush, coolant pump",
+    "Options: hydraulic top clamping, bundle clamping, roller tables"
+   ],
+   "optional": [
+    "Hydraulic Blade Tension",
+    "Multiple Segments",
+    "Microspray Device",
+    "3 Mt Material Roller Table",
+    "Hydraulic Top Clamping",
+    "Deflection Control",
+    "Palet Type Chip Conveyor",
+    "Cutting Speed Display",
+    "15 Kw Main Drive Motor",
+    "Hexagonal Vise"
+   ],
+   "images": [
+    "bk-bmso-1110cs-1",
+    "bk-bmso-1110cs-2",
+    "bk-bmso-1110cs-3",
+    "bk-bmso-820cs-1",
+    "bk-bmso-820cs-2",
+    "bk-bmso-820cs-3",
+    "bk-bmso-820cs-4",
+    "bk-bmso-820cs-5",
+    "bk-bmso-820cs-6",
+    "bk-bmso-820cs-7",
+    "bk-bmso-570cs-1",
+    "bk-bmso-570cs-2",
+    "bk-bmso-570cs-3",
+    "bk-bmso-570cs-4"
+   ],
+   "videos": [
+    {
+     "id": "MbLsI9PqLjI",
+     "title": "Bekamak BMSO 570CS fully automatic 22″ double-column band saw with servo feeder",
+     "thumb": "video-MbLsI9PqLjI",
+     "duration": "PT2M2S"
+    },
+    {
+     "id": "WWHcf73Jt8M",
+     "title": "Bekamak BMSO 330CS NC fully automatic bundle-cutting band saw",
+     "thumb": "video-WWHcf73Jt8M",
+     "duration": "PT2M58S"
+    },
+    {
+     "id": "MLBnkqpGtJA",
+     "title": "Bekamak BMSO 420CS customized for bundle cutting",
+     "thumb": "video-MLBnkqpGtJA",
+     "duration": "PT1M54S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 330CS",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         360,
+         330
+        ],
+        "square": 330
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5000,
+       34,
+       1.1
+      ],
+      "working_height_mm": 845,
+      "weight_kg": 2670,
+      "dims_mm": [
+       2815,
+       1935,
+       1855
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed (ball screw)",
+      "other": {
+       "Feeder Servo Motor": "1 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 420CS",
+      "capacity_mm": {
+       "0": {
+        "round": 420,
+        "rect": [
+         420,
+         420
+        ],
+        "square": 420
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5750,
+       41,
+       1.3
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 3300,
+      "dims_mm": [
+       2860,
+       1980,
+       2100
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed (ball screw)",
+      "other": {
+       "Feeder Servo Motor": "1.5 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": "Hydraulic drive is labelled 'Hydraulic Motor' on this model."
+     },
+     {
+      "name": "BMSO 560CS",
+      "capacity_mm": {
+       "0": {
+        "round": 560,
+        "rect": [
+         600,
+         560
+        ],
+        "square": 560
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6000,
+       41,
+       1.3
+      ],
+      "working_height_mm": 810,
+      "weight_kg": 4500,
+      "dims_mm": [
+       3250,
+       2200,
+       2350
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed (ball screw)",
+      "other": {
+       "Feeder Servo Motor": "1.5 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 570CS",
+      "capacity_mm": {
+       "0": {
+        "round": 570,
+        "rect": [
+         600,
+         570
+        ],
+        "square": 570
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       7400,
+       54,
+       1.6
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 5900,
+      "dims_mm": [
+       3500,
+       2000,
+       2700
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed (ball screw)",
+      "other": {
+       "Feeder Servo Motor": "1.5 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 820CS",
+      "capacity_mm": {
+       "0": {
+        "round": 820,
+        "rect": [
+         850,
+         820
+        ],
+        "square": 820
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       9500,
+       "54/67",
+       1.6
+      ],
+      "working_height_mm": 859,
+      "weight_kg": 9650,
+      "dims_mm": [
+       4500,
+       2650,
+       3100
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed (ball screw)",
+      "other": {
+       "Feeder Servo Motor": "2 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": "Band dimensions printed as '9500 x 54/67x1,6 mm', i.e. the machine accepts either 54 mm or 67 mm wide blades; band width stored as the string '54/67'. Hydraulic drive is labelled 'Hydraulic Motor'."
+     },
+     {
+      "name": "BMSO 1110CS",
+      "capacity_mm": {
+       "0": {
+        "round": 1110,
+        "rect": null,
+        "square": 1110
+       }
+      },
+      "main_motor_kw": 11,
+      "hydraulic_motor_kw": 4,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       10900,
+       67,
+       1.6
+      ],
+      "working_height_mm": 542,
+      "weight_kg": 15150,
+      "dims_mm": [
+       6000,
+       3800,
+       3480
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed (ball screw)",
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW",
+       "500 mm Pull Table": "2800 kg",
+       "3M Stand Weight (Piece)": "1050 kg",
+       "1M Stand Weight": "784 kg"
+      },
+      "notes": "Only round and square capacities are printed (no rectangular value). No feeder servo motor rating is printed for this model. The extra weight rows (pull table, stand weights) are printed as-is in the table."
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-cgs": {
+   "id": "bekamak-bmso-cgs",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSO CGS / CDGS NC automatic miter double-column band saws",
+   "short": "BMSO CGS/CDGS miter NC",
+   "models_label": "BMSO 325CGS · BMSO 440CGS · BMSO 540CGS · BMSO 440CDGS",
+   "summary": "Servo-feed automatic double-column saws with NC-controlled miter rotation — single miter on the CGS, both sides on the CDGS — for unattended cutting of angled parts up to Ø21-1/4″ (540 mm).",
+   "features": [
+    "Servo shuttle-vise feeding with NC job programming",
+    "NC head rotation: 0°–60° (CGS) or +60° / −45° (CDGS)",
+    "Twin-column guidance, hydraulic vise, inverter blade speed",
+    "Hydraulic blade tension, chip conveyor, blade brush, coolant pump"
+   ],
+   "optional": [
+    "Microspray Device",
+    "Chip Conveyor",
+    "Hydraulic Blade Tension",
+    "3 Mt Material Roller Table",
+    "Multiple Segments",
+    "Lazer Line Pointer",
+    "Hydraulic Top Clamping",
+    "Chip Conveyor Motor"
+   ],
+   "images": [
+    "bk-bmso-540cgs-1",
+    "bk-bmso-540cgs-2",
+    "bk-bmso-540cgs-3",
+    "bk-bmso-540cgs-4",
+    "bk-bmso-540cgs-5",
+    "bk-bmso-440cgs-1",
+    "bk-bmso-440cdgs-1",
+    "bk-bmso-440cgs-2",
+    "bk-bmso-440cdgs-2",
+    "bk-bmso-440cgs-3",
+    "bk-bmso-440cdgs-3",
+    "bk-bmso-325cgs-1",
+    "bk-bmso-325cgs-2",
+    "bk-bmso-325cgs-3"
+   ],
+   "videos": [
+    {
+     "id": "iYt_FXss9AU",
+     "title": "Bekamak BMSO 440CGS NC fully automatic mitering and bundling band saw",
+     "thumb": "video-iYt_FXss9AU",
+     "duration": "PT2M43S"
+    },
+    {
+     "id": "QQ6iF1zcyS0",
+     "title": "Bekamak BMSO 540CGS NC automatic miter band saw",
+     "thumb": "video-QQ6iF1zcyS0",
+     "duration": "PT3M39S"
+    },
+    {
+     "id": "IZSPUT8ThJM",
+     "title": "Bekamak 440CDGS double-column double-miter fully automatic band saw",
+     "thumb": "video-IZSPUT8ThJM",
+     "duration": "PT1M14S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 325CGS",
+      "capacity_mm": {
+       "0": {
+        "round": 325,
+        "rect": [
+         400,
+         325
+        ],
+        "square": 325
+       },
+       "+30": {
+        "round": 325,
+        "rect": [
+         360,
+         325
+        ],
+        "square": 325
+       },
+       "+45": {
+        "round": 300,
+        "rect": [
+         260,
+         325
+        ],
+        "square": 265
+       },
+       "+60": {
+        "round": 190,
+        "rect": [
+         140,
+         325
+        ],
+        "square": 190
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "20-100",
+      "band_mm": [
+       4900,
+       34,
+       1.1
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 1860,
+      "dims_mm": [
+       2130,
+       2150,
+       1650
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Feeder Servo Motor": "1 kW"
+      }
+     },
+     {
+      "name": "BMSO 440CGS",
+      "capacity_mm": {
+       "0": {
+        "round": 440,
+        "rect": [
+         610,
+         440
+        ],
+        "square": 440
+       },
+       "+30": {
+        "round": 440,
+        "rect": [
+         540,
+         440
+        ],
+        "square": 440
+       },
+       "+45": {
+        "round": 430,
+        "rect": [
+         400,
+         440
+        ],
+        "square": 430
+       },
+       "+60": {
+        "round": 310,
+        "rect": [
+         245,
+         440
+        ],
+        "square": 260
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "20-100",
+      "band_mm": [
+       6350,
+       41,
+       1.3
+      ],
+      "working_height_mm": 807.5,
+      "weight_kg": 3600,
+      "dims_mm": [
+       2850,
+       2350,
+       2000
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Feeder Servo Motor": "1.5 kW"
+      }
+     },
+     {
+      "name": "BMSO 540CGS",
+      "capacity_mm": {
+       "0": {
+        "round": 540,
+        "rect": [
+         690,
+         540
+        ],
+        "square": 540
+       },
+       "+30": {
+        "round": 540,
+        "rect": [
+         550,
+         540
+        ],
+        "square": 540
+       },
+       "+45": {
+        "round": 470,
+        "rect": [
+         410,
+         540
+        ],
+        "square": 410
+       },
+       "+60": {
+        "round": 250,
+        "rect": [
+         240,
+         540
+        ],
+        "square": 240
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "20-100",
+      "band_mm": [
+       6000,
+       41,
+       1.3
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 4190,
+      "dims_mm": [
+       3000,
+       2415,
+       2250
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Feeder Servo Motor": "1.5 kW"
+      }
+     },
+     {
+      "name": "BMSO 440CDGS",
+      "capacity_mm": {
+       "0": {
+        "round": 440,
+        "rect": [
+         640,
+         440
+        ],
+        "square": 440
+       },
+       "+30": {
+        "round": 440,
+        "rect": [
+         605,
+         440
+        ],
+        "square": 440
+       },
+       "+45": {
+        "round": 440,
+        "rect": [
+         495,
+         440
+        ],
+        "square": 440
+       },
+       "+60": {
+        "round": 325,
+        "rect": [
+         325,
+         440
+        ],
+        "square": 325
+       },
+       "-30": {
+        "round": 440,
+        "rect": [
+         545,
+         440
+        ],
+        "square": 440
+       },
+       "-45": {
+        "round": 425,
+        "rect": [
+         425,
+         440
+        ],
+        "square": 425
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6350,
+       41,
+       1.3
+      ],
+      "working_height_mm": 855,
+      "weight_kg": 3800,
+      "dims_mm": [
+       3600,
+       3005,
+       2200
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Feeder Servo Motor": "2 kW"
+      },
+      "notes": "Hydraulic drive is labelled 'Hydraulic Motor'."
+     }
+    ]
+   }
+  },
+  "bekamak-bmso-xs": {
+   "id": "bekamak-bmso-xs",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSO XS high-tech production band saws",
+   "short": "BMSO XS high-tech",
+   "models_label": "BMSO 335XS · BMSO 420XS · BMSO 570XS · BMSO 660XS · BMSO 825XS",
+   "summary": "Bekamak's top production line: servo bow feed and servo material feed, full enclosure and CNC control for carbide blades and the shortest cycle times. Ø13-1/4″ (335 mm) to Ø32-1/2″ (825 mm).",
+   "features": [
+    "Servo-driven bow feed and servo shuttle-vise material feed",
+    "CNC control with cutting database and remote diagnostics",
+    "Enclosed cabin design, carbide-blade capable, high blade speeds",
+    "Hydraulic vises on both sides, hydraulic blade tension, chip conveyor"
+   ],
+   "optional": [
+    "Hexagonal Vices",
+    "Microspray Device",
+    "Hydraulic Top Clamping",
+    "Pallet Type Chip Conveyor",
+    "Hexagonal Vise",
+    "15 Kw Main Drive Motor",
+    "Tilt Adjustment Lever",
+    "Optional Main Derive Motor 15 kW",
+    "Height Adjustable Control Panel"
+   ],
+   "images": [
+    "bk-bmso-825xs-1",
+    "bk-bmso-825xs-2",
+    "bk-bmso-825xs-3",
+    "bk-bmso-825xs-4",
+    "bk-bmso-825xs-5",
+    "bk-bmso-660xs-1",
+    "bk-bmso-660xs-2",
+    "bk-bmso-660xs-3",
+    "bk-bmso-660xs-4",
+    "bk-bmso-660xs-5",
+    "bk-bmso-660xs-6",
+    "bk-bmso-570xs-1",
+    "bk-bmso-570xs-2",
+    "bk-bmso-570xs-3"
+   ],
+   "videos": [
+    {
+     "id": "dRGeqEkaZQ8",
+     "title": "Bekamak BMSO 570XS SMART CNC fully automatic band saw",
+     "thumb": "video-dRGeqEkaZQ8",
+     "duration": "PT2M51S"
+    },
+    {
+     "id": "etYuAI5JzRg",
+     "title": "Bekamak BMSO 420XS fully automatic smart band saw",
+     "thumb": "video-etYuAI5JzRg",
+     "duration": "PT1M46S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 335XS",
+      "capacity_mm": {
+       "0": {
+        "round": 335,
+        "rect": [
+         335,
+         500
+        ],
+        "square": 335
+       }
+      },
+      "main_motor_kw": 3,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5260,
+       41,
+       1.3
+      ],
+      "working_height_mm": 1000,
+      "weight_kg": 3250,
+      "dims_mm": [
+       2560,
+       2900,
+       2150
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Feeder Servo Motor": "2 kW",
+       "Bow Servo Motor": "1.5 kW",
+       "Chip Conveyor Motor": "0.25 kW",
+       "Stroke": "1300 mm"
+      },
+      "notes": "A 'Stroke 1300 mm' row is printed (probably the feeder stroke, but the catalogue does not say), so it is kept in 'other' rather than feed_length_mm. Rectangular capacity is printed as 335x500 mm."
+     },
+     {
+      "name": "BMSO 420XS",
+      "capacity_mm": {
+       "0": {
+        "round": 420,
+        "rect": [
+         420,
+         420
+        ],
+        "square": 420
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5750,
+       41,
+       1.3
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 3300,
+      "dims_mm": [
+       2860,
+       1980,
+       2100
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Feeder Servo Motor": "1.5 kW",
+       "Bow Servo Motor": "1.5 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSO 570XS",
+      "capacity_mm": {
+       "0": {
+        "round": 570,
+        "rect": [
+         600,
+         570
+        ],
+        "square": 570
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       7400,
+       54,
+       1.6
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 5900,
+      "dims_mm": [
+       3500,
+       2000,
+       2700
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW",
+       "Feeder Servo Motor": "2 kW",
+       "Bow Servo Motor": "1.5 kW"
+      }
+     },
+     {
+      "name": "BMSO 660XS",
+      "capacity_mm": {
+       "0": {
+        "round": 660,
+        "rect": [
+         660,
+         660
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       7925,
+       54,
+       1.6
+      ],
+      "working_height_mm": 805,
+      "weight_kg": 7200,
+      "dims_mm": [
+       2090,
+       3900,
+       2770
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Bow Servo Motor": "1.5 kW",
+       "Feeder Servo Motor": "2 kW"
+      },
+      "notes": "Main motor is labelled 'Main Drive Motor' and hydraulic drive 'Hydraulic Motor'. No square capacity, coolant pump or chip conveyor motor row is printed. Length 2090 mm / Width 3900 mm are exactly as printed (length is smaller than width, unlike the other models) - worth confirming with Bekamak."
+     },
+     {
+      "name": "BMSO 825XS",
+      "capacity_mm": {
+       "0": {
+        "round": 825,
+        "rect": [
+         825,
+         850
+        ],
+        "square": 825
+       }
+      },
+      "main_motor_kw": 15,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       9500,
+       67,
+       1.6
+      ],
+      "working_height_mm": 859,
+      "weight_kg": 10000,
+      "dims_mm": [
+       4500,
+       2650,
+       3100
+      ],
+      "feed_length_mm": null,
+      "feed_type": "servo feed",
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW",
+       "Feeder Servo Motor": "2 kW",
+       "Bow Servo Motor": "2 kW"
+      },
+      "notes": "Square capacity is printed as '825x825 mm'; stored as 825."
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-heavy": {
+   "id": "bekamak-bmsy-heavy",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "BMSY 1110C–1515C heavy-duty band saws",
+   "short": "BMSY heavy-duty",
+   "models_label": "BMSY 1110C · BMSY 1113C · BMSY 1122C · BMSY 1313C · BMSY 1515C",
+   "summary": "Large semi-automatic saws for forging shops, steel service centres and mould makers — blocks and bundles up to 59″ (1500 mm) wide on a massive welded body with a reinforced bow.",
+   "features": [
+    "Capacities from Ø43-3/4″ (1110 mm) to 59″ × 59″ (1500 × 1500 mm)",
+    "Twin-column guidance with hydraulic vise and automatic bow return",
+    "Heavy-duty gearbox and high-power main motor; inverter blade speed",
+    "Hydraulic blade tension, chip conveyor, blade brush, coolant pumps"
+   ],
+   "optional": [
+    "Second Vice",
+    "3 Mt Motorized Roller Table",
+    "3 Mt Material Roller Table",
+    "Microspray Device",
+    "Lazer Line Pointer",
+    "Hydraulic Top Clamping",
+    "3 Mt Motorized Material Roller Table",
+    "4 Mt Motorized Roller Table",
+    "Laser Line Pointer"
+   ],
+   "images": [
+    "bk-bmsy-1515c-1",
+    "bk-bmsy-1515c-2",
+    "bk-bmsy-1515c-3",
+    "bk-bmsy-1313c-1",
+    "bk-bmsy-1313c-2",
+    "bk-bmsy-1110c-1",
+    "bk-bmsy-1113c-1",
+    "bk-bmsy-1110c-2",
+    "bk-bmsy-1113c-2",
+    "bk-bmsy-1110c-3",
+    "bk-bmsy-1110c-4",
+    "bk-bmsy-1122c-1",
+    "bk-bmsy-1122c-2",
+    "bk-bmsy-1122c-3"
+   ],
+   "videos": [
+    {
+     "id": "Z4FbXkjRfpc",
+     "title": "Bekamak BMSY 1110C heavy-duty double-column band saw with programmable length stop",
+     "thumb": "video-Z4FbXkjRfpc",
+     "duration": "PT2M38S"
+    },
+    {
+     "id": "Sk_NmJ9qtrM",
+     "title": "Bekamak BMSY 1515C heavy-duty double-column band saw",
+     "thumb": "video-Sk_NmJ9qtrM",
+     "duration": "PT3M21S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 1110C",
+      "capacity_mm": {
+       "0": {
+        "round": 1110,
+        "rect": [
+         1110,
+         1110
+        ],
+        "square": 1110
+       }
+      },
+      "main_motor_kw": 11,
+      "hydraulic_motor_kw": 4,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "20-100",
+      "band_mm": [
+       10500,
+       67,
+       1.6
+      ],
+      "working_height_mm": 545,
+      "weight_kg": 12500,
+      "dims_mm": [
+       4800,
+       1500,
+       2975
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSY 1113C",
+      "capacity_mm": {
+       "0": {
+        "round": 1110,
+        "rect": [
+         1110,
+         1300
+        ],
+        "square": 1110
+       }
+      },
+      "main_motor_kw": 11,
+      "hydraulic_motor_kw": 7.5,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "20-100",
+      "band_mm": [
+       10900,
+       67,
+       1.6
+      ],
+      "working_height_mm": 545,
+      "weight_kg": 13500,
+      "dims_mm": [
+       5300,
+       1500,
+       2975
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSY 1122C",
+      "capacity_mm": {
+       "0": {
+        "round": 1100,
+        "rect": [
+         1100,
+         2300
+        ],
+        "square": 1100
+       }
+      },
+      "main_motor_kw": 15,
+      "hydraulic_motor_kw": 7.5,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       13100,
+       80,
+       1.6
+      ],
+      "working_height_mm": 790,
+      "weight_kg": 15700,
+      "dims_mm": [
+       7700,
+       2250,
+       3900
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.55 kW"
+      }
+     },
+     {
+      "name": "BMSY 1313C",
+      "capacity_mm": {
+       "0": {
+        "round": 1300,
+        "rect": [
+         1300,
+         1300
+        ],
+        "square": 1300
+       }
+      },
+      "main_motor_kw": 11,
+      "hydraulic_motor_kw": 7.5,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       12100,
+       67,
+       1.6
+      ],
+      "working_height_mm": 545,
+      "weight_kg": 15500,
+      "dims_mm": [
+       6000,
+       2350,
+       4000
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW"
+      }
+     },
+     {
+      "name": "BMSY 1515C",
+      "capacity_mm": {
+       "0": {
+        "round": 1500,
+        "rect": [
+         1510,
+         1500
+        ],
+        "square": 1500
+       }
+      },
+      "main_motor_kw": 15,
+      "hydraulic_motor_kw": 7.5,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "10-70",
+      "band_mm": [
+       13300,
+       80,
+       1.6
+      ],
+      "working_height_mm": 635,
+      "weight_kg": 22500,
+      "dims_mm": [
+       6700,
+       2400,
+       4650
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip Conveyor Motor": "0.25 kW",
+       "Coolant Pump": "2 x 0.20 kW"
+      },
+      "notes": "Coolant pump is printed as '2 x 0.20 kw' (two pumps); coolant_pump_kw holds the per-pump rating 0.2 and the literal is kept in 'other'."
+     }
+    ]
+   }
+  },
+  "novofab-nf-m250": {
+   "id": "novofab-nf-m250",
+   "brand": "novofab",
+   "line": "value",
+   "group": "manual",
+   "name": "NF-M 250 series manual pivot band saws",
+   "short": "NF-M 250 manual saws",
+   "models_label": "NF-M 250 · NF-M 250 S · NF-M 260 · NF-M 260 T",
+   "summary": "Four 10-inch gravity-feed pivot saws for the maintenance shop and light fabrication. The bow descends on a hydraulic damper with adjustable feed, a four-speed belt drive matches blade speed to the material, and every model ships with a coolant system and a repeat-cut stop rod. Pick the mitre arrangement you need: mitre vise (NF-M 250), swivel bow 45°–90° (NF-M 250 S), larger-capacity frame (NF-M 260) or a twin-mitre bow that swings 60° both ways (NF-M 260 T).",
+   "features": [
+    "Descent controlled by a hydraulic cylinder — adjustable, repeatable feed pressure",
+    "Four blade speeds on a belt drive (up to 130 m/min on the NF-M 260 / 260 T)",
+    "27 × 0.9 mm bi-metal blade, coolant pump and stop rod included",
+    "NF-M 250 S: bow swivels 45°–90° for mitre cuts without moving the stock",
+    "NF-M 260 T: bow swivels both ways — 45° left and right, 60° right",
+    "2 HP (1.5 kW) three-phase motor; 600 V with CSA-approved panel"
+   ],
+   "optional": [
+    "Roller stand with length stop",
+    "Extra blades"
+   ],
+   "images": [
+    "nf-m250-1",
+    "nf-m250s-1",
+    "nf-m260-1",
+    "nf-m260t-1"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-M 250",
+      "capacity_mm": {
+       "0": {
+        "round": 254,
+        "rect": [
+         457,
+         127
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 150,
+        "rect": [
+         190,
+         150
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "35/60/88/115",
+      "band_mm": [
+       3280,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 310,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Mitre cutting": "Mitre vise, 45°",
+       "Drive": "V-belt, 4 speeds",
+       "Packing size": "1820 × 830 × 1160 mm",
+       "Gross weight": "392 kg"
+      },
+      "notes": "Angle cuts via the mitre vise (the frame does not swivel)."
+     },
+     {
+      "name": "NF-M 250 S",
+      "capacity_mm": {
+       "0": {
+        "round": 254,
+        "rect": [
+         406,
+         160
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 170,
+        "rect": [
+         190,
+         160
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "35/60/88/115",
+      "band_mm": [
+       3215,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 340,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Mitre cutting": "Swivel bow, 45°–90°",
+       "Drive": "V-belt, 4 speeds",
+       "Packing size": "1820 × 780 × 1340 mm",
+       "Gross weight": "440 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-M 260",
+      "capacity_mm": {
+       "0": {
+        "round": 260,
+        "rect": [
+         460,
+         125
+        ],
+        "square": 260
+       },
+       "+45": {
+        "round": 230,
+        "rect": [
+         230,
+         220
+        ],
+        "square": 220
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "28/62/93/130",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 320,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Mitre cutting": "Swivel bow, 45°",
+       "Drive": "Belt, 4 speeds",
+       "Packing size": "2130 × 870 × 1250 mm",
+       "Gross weight": "440 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-M 260 T",
+      "capacity_mm": {
+       "0": {
+        "round": 260,
+        "rect": [
+         430,
+         260
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 260,
+        "rect": [
+         300,
+         200
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 155,
+        "rect": [
+         125,
+         125
+        ],
+        "square": null
+       },
+       "-45": {
+        "round": 260,
+        "rect": [
+         260,
+         130
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "28/62/93/130",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 466,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Mitre cutting": "Swivel bow, 45° left / 45° and 60° right",
+       "Drive": "Belt, 4 speeds",
+       "Packing size": "2120 × 1080 × 1220 mm",
+       "Gross weight": "520 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-m400": {
+   "id": "novofab-nf-m400",
+   "brand": "novofab",
+   "line": "value",
+   "group": "manual",
+   "name": "NF-M 400 manual band saw, Ø400 mm",
+   "short": "NF-M 400",
+   "models_label": "NF-M 400",
+   "summary": "A big 15¾-inch pivot saw with a gear-driven two-speed motor and sintered-carbide blade guides, for shops that cut heavy sections but do not need an automatic cycle. The bow swivels for mitre cuts up to 60°, the sliding vise has a quick clamp for fast workpiece changes, and the heavy welded base keeps the cut square on 550 × 360 mm stock.",
+   "features": [
+    "Ø400 mm round / 550 × 360 mm rectangular at 0°; mitre cuts up to 60°",
+    "Gear-driven two-speed motor, 2.2/2.8 kW — no belts to tension",
+    "Blade guides with sintered-carbide inserts for straight cuts in series production",
+    "Sliding vise with quick clamp; powerful coolant pump",
+    "34 × 1.1 × 4405 mm blade"
+   ],
+   "optional": [
+    "Roller stand with length stop",
+    "Hydraulic version — see NF-H 400"
+   ],
+   "images": [
+    "nf-m400-1"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-M 400",
+      "capacity_mm": {
+       "0": {
+        "round": 400,
+        "rect": [
+         550,
+         360
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 340,
+        "rect": [
+         400,
+         340
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 150,
+        "rect": [
+         250,
+         200
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": "2.2-2.8",
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "48/70",
+      "band_mm": [
+       4405,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 580,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Drive": "Gear, 2 speeds",
+       "Packing size": "2300 × 830 × 1580 mm",
+       "Gross weight": "710 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-h250": {
+   "id": "novofab-nf-h250",
+   "brand": "novofab",
+   "line": "value",
+   "group": "semi-automatic",
+   "name": "NF-H 250 series hydraulic band saws",
+   "short": "NF-H 250 hydraulic saws",
+   "models_label": "NF-H 250 S · NF-H 260 T",
+   "summary": "The hydraulic versions of the 10-inch pivot saws: a hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts automatically at the end of the cut and the machine shuts off — the operator only loads, clamps and starts. The NF-H 250 S adds a hydraulic clamping vise and a swivel bow for 45° mitres; the NF-H 260 T swings both ways for 45°/60° cuts and comes with a movable control panel.",
+   "features": [
+    "Hydraulic descent with variable feed speed; automatic bow return and shut-off",
+    "NF-H 250 S: hydraulic clamping vise, swivel bow 45°–90°, manual or auto-cut cycle",
+    "NF-H 260 T: twin-mitre bow (45° left, 45°/60° right), quick-clamp vise, movable control panel",
+    "Four-speed belt drive, 2 HP (1.5 kW) three-phase motor",
+    "Coolant system and stop rod included"
+   ],
+   "optional": [
+    "Roller stand with length stop"
+   ],
+   "images": [
+    "nf-h250s-1",
+    "nf-h260t-1"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-H 250 S",
+      "capacity_mm": {
+       "0": {
+        "round": 254,
+        "rect": [
+         406,
+         160
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 170,
+        "rect": [
+         190,
+         160
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "35/60/88/115",
+      "band_mm": [
+       3215,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 420,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Mitre cutting": "Swivel bow, 45°–90°",
+       "Vise": "Hydraulic",
+       "Drive": "V-belt, 4 speeds",
+       "Packing size": "1890 × 780 × 1430 mm",
+       "Gross weight": "533 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-H 260 T",
+      "capacity_mm": {
+       "0": {
+        "round": 260,
+        "rect": [
+         430,
+         260
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 260,
+        "rect": [
+         300,
+         200
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 155,
+        "rect": [
+         125,
+         125
+        ],
+        "square": null
+       },
+       "-45": {
+        "round": 260,
+        "rect": [
+         260,
+         130
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "28/62/93/130",
+      "band_mm": [
+       3660,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 515,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Mitre cutting": "Swivel bow, 45° left / 45° and 60° right",
+       "Vise": "Quick-clamp, manual",
+       "Drive": "Belt, 4 speeds",
+       "Packing size": "2120 × 1310 × 1220 mm",
+       "Gross weight": "653 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-h330": {
+   "id": "novofab-nf-h330",
+   "brand": "novofab",
+   "line": "value",
+   "group": "semi-automatic",
+   "name": "NF-H 330 twin-mitre hydraulic band saws",
+   "short": "NF-H 330 saws",
+   "models_label": "NF-H 330 · NF-H 330 C",
+   "summary": "A 13-inch gear-driven semi-automatic saw whose bow swivels both ways — 45° left and right, 60° right — with a quick lock at every angle. Hydraulic vise, hydraulic descent and a two-speed gear motor make it the workhorse for structural steel, tube and profile cutting. The NF-H 330 C is the same machine with a movable control panel on an arm. PLC control and servo feed can be added to turn it into an automatic.",
+   "features": [
+    "Ø330 mm round / 460 × 250 mm at 0°; Ø305 mm at 45° both sides, Ø205 mm at 60°",
+    "Hydraulic clamping vise and hydraulic bow descent",
+    "Bow swivels left and right with quick lock",
+    "Gear drive, two-speed 1.5/2.2 kW motor (48/96 m/min at 60 Hz)",
+    "NF-H 330 C: movable control panel"
+   ],
+   "optional": [
+    "PLC control",
+    "Servo motor (variable blade speed)",
+    "Roller stands"
+   ],
+   "images": [
+    "nf-h330-1",
+    "nf-h330c-1"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-H 330",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         460,
+         250
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 305,
+        "rect": [
+         305,
+         250
+        ],
+        "square": null
+       },
+       "-45": {
+        "round": 305,
+        "rect": [
+         305,
+         250
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 205,
+        "rect": [
+         205,
+         250
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": "1.5-2.2",
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "48/96",
+      "band_mm": [
+       3960,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 900,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Drive": "Gear, 2 speeds",
+       "Packing size": "2300 × 1050 × 1630 mm",
+       "Gross weight": "1060 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-H 330 C",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         460,
+         250
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 305,
+        "rect": [
+         305,
+         250
+        ],
+        "square": null
+       },
+       "-45": {
+        "round": 305,
+        "rect": [
+         305,
+         250
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 205,
+        "rect": [
+         205,
+         250
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": "1.5-2.2",
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "48/96",
+      "band_mm": [
+       3960,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 900,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Drive": "Gear, 2 speeds",
+       "Control panel": "Movable, on arm",
+       "Packing size": "2300 × 1050 × 1630 mm",
+       "Gross weight": "1060 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-h400": {
+   "id": "novofab-nf-h400",
+   "brand": "novofab",
+   "line": "value",
+   "group": "semi-automatic",
+   "name": "NF-H 400 hydraulic band saw, Ø400 mm",
+   "short": "NF-H 400",
+   "models_label": "NF-H 400",
+   "summary": "The hydraulic version of the NF-M 400: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 550 × 360 mm.",
+   "features": [
+    "Ø400 mm round / 550 × 360 mm rectangular at 0°; mitre cuts up to 60°",
+    "Automatic bow descent and return on a hydraulic cylinder",
+    "Gear-driven two-speed motor, 2.2/2.8 kW",
+    "Sintered-carbide blade guides, quick-clamp sliding vise",
+    "Powerful coolant pump; 34 × 1.1 × 4405 mm blade"
+   ],
+   "optional": [
+    "Roller stand with length stop"
+   ],
+   "images": [
+    "nf-h400-1"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-H 400",
+      "capacity_mm": {
+       "0": {
+        "round": 400,
+        "rect": [
+         550,
+         360
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 340,
+        "rect": [
+         400,
+         340
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 150,
+        "rect": [
+         250,
+         200
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": "2.2-2.8",
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "48/70",
+      "band_mm": [
+       4405,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 630,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Drive": "Gear, 2 speeds",
+       "Packing size": "2300 × 830 × 1580 mm",
+       "Gross weight": "760 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-h300sc": {
+   "id": "novofab-nf-h300sc",
+   "brand": "novofab",
+   "line": "value",
+   "group": "semi-automatic",
+   "name": "NF-H 300 SC single-column band saw with touch screen",
+   "short": "NF-H 300 SC",
+   "models_label": "NF-H 300 SC",
+   "summary": "A single-column saw for straight cuts up to Ø300 mm / 500 × 300 mm with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the NF-A 300 SC.",
+   "features": [
+    "Ø300 mm round / 500 × 300 mm rectangular (straight cut)",
+    "PLC control with graphical finger-touch screen; work light",
+    "Hydraulic jaw clamping vise, variable hydraulic down-feed",
+    "Blade overload protection; bearing + carbide double guides",
+    "Four blade speeds, 3 kW motor, 34 × 1.1 × 4180 mm blade"
+   ],
+   "optional": [
+    "Roller stands",
+    "Automatic feeding — see NF-A 300 SC"
+   ],
+   "images": [
+    "nf-h300sc-1",
+    "nf-h300sc-2",
+    "nf-h300sc-3",
+    "nf-h300sc-4"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-H 300 SC",
+      "capacity_mm": {
+       "0": {
+        "round": 300,
+        "rect": [
+         500,
+         300
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "30/50/75/90",
+      "band_mm": [
+       4180,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 1085,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic jaw",
+       "Control": "PLC, touch screen",
+       "Max. hydraulic pressure": "2.2 MPa",
+       "Drive": "V-belt, 4 speeds",
+       "Packing size": "2270 × 1320 × 1710 mm",
+       "Gross weight": "1175 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-h460": {
+   "id": "novofab-nf-h460",
+   "brand": "novofab",
+   "line": "value",
+   "group": "semi-automatic",
+   "name": "NF-H 460 hydraulic band saw, Ø460 mm",
+   "short": "NF-H 460",
+   "models_label": "NF-H 460",
+   "summary": "An 18-inch swivel-head saw with automatic cutting and manual feeding: hydraulic vise, variable-frequency drive for stepless blade speed, a digital read-out for the feed position and a movable control panel. The bow swivels 45° to both sides and 60° to the right, and the gear-driven 5.5 kW motor handles 650 × 350 mm sections. Same frame as the automatic NF-A 460 without the feeder.",
+   "features": [
+    "Ø460 mm round / 650 × 350 mm at 0°; Ø460 mm at 45° both sides, Ø310 mm at 60°",
+    "Automatic cutting cycle; material fed by hand on the roller table",
+    "Hydraulic clamping vise, digital read-out of the feed position",
+    "Variable blade speed 0–95 m/min (inverter); 5.5 kW gear-driven motor",
+    "Movable control panel; 41 × 1.3 × 5220 mm blade"
+   ],
+   "optional": [
+    "Roller conveyors",
+    "Automatic feeding — see NF-A 460"
+   ],
+   "images": [
+    "nf-h460-1",
+    "nf-h460-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-H 460",
+      "capacity_mm": {
+       "0": {
+        "round": 460,
+        "rect": [
+         650,
+         350
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 460,
+        "rect": [
+         460,
+         350
+        ],
+        "square": null
+       },
+       "-45": {
+        "round": 460,
+        "rect": [
+         460,
+         350
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 310,
+        "rect": [
+         310,
+         350
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "0-95",
+      "band_mm": [
+       5220,
+       41,
+       1.3
+      ],
+      "working_height_mm": null,
+      "weight_kg": 1640,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Drive": "Gear, inverter",
+       "Control panel": "Movable",
+       "Packing size": "2950 × 1480 × 2120 mm",
+       "Gross weight": "1880 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-a300": {
+   "id": "novofab-nf-a300",
+   "brand": "novofab",
+   "line": "value",
+   "group": "automatic",
+   "name": "NF-A 300 automatic band saws with roller feed",
+   "short": "NF-A 300 automatic saws",
+   "models_label": "NF-A 300 · NF-A 300 T",
+   "summary": "Compact automatic saws for batch cutting of bar, tube and profile up to Ø300 mm: a powered roller feed advances the stock, the hydraulic vise clamps, the bow cuts and returns, and the cycle repeats for the programmed count. Stepless blade speed from an inverter, gear drive and a 3 HP motor. The NF-A 300 T adds an automatic mitre head for angle cuts of 30°, 45° and 60°.",
+   "features": [
+    "Ø300 mm round / 370 × 280 mm rectangular at 0°",
+    "Roller feeding with automatic cycle; piece counter",
+    "Hydraulic clamping vise; inverter-driven blade speed 0–113 m/min",
+    "Gear drive, 2.2 kW main motor, 0.25 kW feed motor",
+    "NF-A 300 T: mitre cutting 0°–60° (Ø280 mm at 30°, Ø230 mm at 45°, Ø130 mm at 60°)"
+   ],
+   "optional": [
+    "Roller conveyors",
+    "Extra blades"
+   ],
+   "images": [
+    "nf-a300-1",
+    "nf-a300-2",
+    "nf-a300-3",
+    "nf-a300t-1",
+    "nf-a300t-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-A 300",
+      "capacity_mm": {
+       "0": {
+        "round": 300,
+        "rect": [
+         370,
+         280
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "0-113",
+      "band_mm": [
+       3820,
+       27,
+       0.9
+      ],
+      "working_height_mm": 730,
+      "weight_kg": 800,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Feed motor": "0.25 kW",
+       "Feeding": "Roller feed, automatic cycle",
+       "Vise": "Hydraulic",
+       "Drive": "Gear, inverter",
+       "Packing size": "2140 × 1320 × 1500 mm",
+       "Gross weight": "950 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-A 300 T",
+      "capacity_mm": {
+       "0": {
+        "round": 300,
+        "rect": [
+         370,
+         280
+        ],
+        "square": null
+       },
+       "+30": {
+        "round": 280,
+        "rect": [
+         280,
+         280
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 230,
+        "rect": [
+         230,
+         250
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 130,
+        "rect": [
+         130,
+         150
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "0-113",
+      "band_mm": [
+       3820,
+       27,
+       0.9
+      ],
+      "working_height_mm": 730,
+      "weight_kg": 940,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Feed motor": "0.25 kW",
+       "Feeding": "Roller feed, automatic cycle",
+       "Vise": "Hydraulic",
+       "Drive": "Gear, inverter",
+       "Packing size": "2140 × 1320 × 1500 mm",
+       "Gross weight": "1090 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-a300sc": {
+   "id": "novofab-nf-a300sc",
+   "brand": "novofab",
+   "line": "value",
+   "group": "automatic",
+   "name": "NF-A 300 SC single-column automatic band saw",
+   "short": "NF-A 300 SC",
+   "models_label": "NF-A 300 SC",
+   "summary": "The automatic version of the single-column saw: a hydraulic shuttle vise feeds up to 500 mm per stroke, a batch clamping device holds bundles, and an automatic chip conveyor clears the swarf. PLC control with touch screen, hydraulic jaw vise, variable hydraulic down-feed, rapid descent until the blade touches the work and blade overload protection.",
+   "features": [
+    "Ø300 mm round / 500 × 300 mm rectangular (straight cut)",
+    "Hydraulic shuttle-vise feeding, up to 500 mm per stroke; batch clamping device",
+    "PLC with finger-touch screen; rapid approach, then controlled feed",
+    "Automatic chip conveyor, work light, coolant system",
+    "Four blade speeds, 3 kW motor, 34 × 1.1 × 4180 mm blade"
+   ],
+   "optional": [
+    "Roller conveyors"
+   ],
+   "images": [
+    "nf-a300sc-1",
+    "nf-a300sc-2",
+    "nf-a300sc-3",
+    "nf-a300sc-4"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-A 300 SC",
+      "capacity_mm": {
+       "0": {
+        "round": 300,
+        "rect": [
+         500,
+         300
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "30/50/75/90",
+      "band_mm": [
+       4180,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 1550,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Feeding": "Hydraulic shuttle vise",
+       "Feed length per stroke": "500 mm",
+       "Vise": "Hydraulic jaw",
+       "Control": "PLC, touch screen",
+       "Max. hydraulic pressure": "2.5 MPa",
+       "Drive": "V-belt, 4 speeds",
+       "Packing size": "2260 × 2130 × 1780 mm",
+       "Gross weight": "1720 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-a330": {
+   "id": "novofab-nf-a330",
+   "brand": "novofab",
+   "line": "value",
+   "group": "automatic",
+   "name": "NF-A 330 automatic twin-mitre band saw with 6 m stand",
+   "short": "NF-A 330",
+   "models_label": "NF-A 330",
+   "summary": "The automatic version of the NF-H 330: PLC-controlled feeding and clamping with a shuttle vise (500 mm per stroke), feed length selectable in metric or inch, and a 6 m material stand (3 m feed, 3 m return) delivered with the machine. The bow still swivels to both sides for mitre cuts, and a guard net protects the operator. Gear drive with a two-speed motor; blade 34 × 1.1 × 3960 mm.",
+   "features": [
+    "Ø330 mm round / 460 × 250 mm at 0°; Ø305 mm at 45° both sides, Ø205 mm at 60°",
+    "Automatic feeding and clamping, max. 500 mm per stroke; standard PLC",
+    "6 m material stand included (feeder width 460 mm, height 850 mm)",
+    "Bow swivels left and right; safety guard net",
+    "Gear drive, 1.5/2.2 kW two-speed motor"
+   ],
+   "optional": [
+    "Extra stands and supports",
+    "Servo motor (variable blade speed)"
+   ],
+   "images": [
+    "nf-a330-1",
+    "nf-a330-2",
+    "nf-a330-3"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-A 330",
+      "capacity_mm": {
+       "0": {
+        "round": 330,
+        "rect": [
+         460,
+         250
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 305,
+        "rect": [
+         305,
+         250
+        ],
+        "square": null
+       },
+       "-45": {
+        "round": 305,
+        "rect": [
+         305,
+         250
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 205,
+        "rect": [
+         205,
+         250
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": "1.5-2.2",
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "48/96",
+      "band_mm": [
+       3960,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 1520,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Feeding": "Shuttle vise, PLC",
+       "Feed length per stroke": "500 mm",
+       "Vise": "Hydraulic",
+       "Drive": "Gear, 2 speeds",
+       "Packing size": "2500 × 2300 × 1630 mm",
+       "Gross weight": "1655 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-a-cnc": {
+   "id": "novofab-nf-a-cnc",
+   "brand": "novofab",
+   "line": "value",
+   "group": "automatic",
+   "name": "NF-A 350–600 CNC automatic band saws",
+   "short": "NF-A CNC saws",
+   "models_label": "NF-A 350 · NF-A 415 · NF-A 460 · NF-A 600",
+   "summary": "Production saws with CNC feeding and cutting: a servo-driven feeder positions the stock, hydraulic vises clamp it, the servo blade drive sets a stepless cutting speed and the PLC runs the batch. The NF-A 350 and NF-A 415 have an automatic rotary bow (45°) and chip extraction; the NF-A 460 feeds up to 650 mm per stroke with a linear scale on the feed and a swivelling control panel; the NF-A 600 cuts 850 × 600 mm sections with a hydraulic feeder as standard.",
+   "features": [
+    "Round capacity from Ø350 mm to Ø600 mm; mitre cuts to 45° (NF-A 460: 60°)",
+    "CNC / PLC automatic feeding and clamping, hydraulic vises",
+    "Servo motor for stepless blade speed; industrial gearbox (NF-A 460)",
+    "Feed per stroke: 500 mm (NF-A 350/415), 650 mm (NF-A 460), 600 mm (NF-A 600)",
+    "Work light, chip extraction and coolant system included"
+   ],
+   "optional": [
+    "Material supports and roller conveyors"
+   ],
+   "images": [
+    "nf-a350-1",
+    "nf-a460-1",
+    "nf-a460-2",
+    "nf-a600-1"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-A 350",
+      "capacity_mm": {
+       "0": {
+        "round": 350,
+        "rect": [
+         500,
+         350
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 330,
+        "rect": [
+         330,
+         350
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 3.7,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": null,
+      "band_mm": [
+       4180,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 2700,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Blade drive": "Servo motor, stepless speed",
+       "Feeding": "CNC, hydraulic clamping",
+       "Feed length per stroke": "500 mm",
+       "Bow swivel": "Automatic, to 45°",
+       "Packing size": "2230 × 2220 × 1700 mm",
+       "Gross weight": "2900 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-A 415",
+      "capacity_mm": {
+       "0": {
+        "round": 415,
+        "rect": [
+         500,
+         415
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 335,
+        "rect": [
+         265,
+         415
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 3.7,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": null,
+      "band_mm": [
+       4555,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 2780,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Blade drive": "Servo motor, stepless speed",
+       "Feeding": "CNC, hydraulic clamping",
+       "Feed length per stroke": "500 mm",
+       "Bow swivel": "Automatic, to 45°",
+       "Packing size": "2250 × 2350 × 1750 mm",
+       "Gross weight": "3000 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-A 460",
+      "capacity_mm": {
+       "0": {
+        "round": 460,
+        "rect": [
+         650,
+         350
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 460,
+        "rect": [
+         460,
+         350
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 310,
+        "rect": [
+         310,
+         350
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "23-95",
+      "band_mm": [
+       5220,
+       41,
+       1.3
+      ],
+      "working_height_mm": null,
+      "weight_kg": 2430,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Blade drive": "Servo motor + industrial gearbox",
+       "Feeding": "NC, automatic clamping",
+       "Feed length per stroke": "650 mm",
+       "Bow swivel": "Automatic, to 60° right",
+       "Packing size": "3030 × 2280 × 2220 mm",
+       "Gross weight": "2730 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-A 600",
+      "capacity_mm": {
+       "0": {
+        "round": 600,
+        "rect": [
+         850,
+         600
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 400,
+        "rect": [
+         400,
+         600
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "0-119",
+      "band_mm": [
+       6685,
+       54,
+       1.6
+      ],
+      "working_height_mm": null,
+      "weight_kg": 3945,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Blade drive": "Servo motor, stepless speed",
+       "Feeding": "Hydraulic feeder, CNC",
+       "Feed length per stroke": "600 mm",
+       "Bow swivel": "To 45°",
+       "Packing size": "3550 × 2120 × 2660 mm (body), 1790 × 1720 × 1490 mm (feeder)",
+       "Gross weight": "4235 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-dc280": {
+   "id": "novofab-nf-dc280",
+   "brand": "novofab",
+   "line": "value",
+   "group": "double-column",
+   "name": "NF-DC 280 series double column band saws",
+   "short": "NF-DC 280 saws",
+   "models_label": "NF-DC 280 · NF-DC 280 T · NF-DC 280 A · NF-DC 280 AV",
+   "summary": "Twin-column saws for Ø280 mm / 280 × 280 mm stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (NF-DC 280), the mitre version that cuts at 30° and 45° (NF-DC 280 T), the automatic with a 3-position shuttle vise (NF-DC 280 A) or the automatic with stepless blade speed, chip conveyor and the new vise design (NF-DC 280 AV).",
+   "features": [
+    "Ø280 mm round / 280 × 280 mm square; NF-DC 280 T: Ø260 mm at 30°, Ø170 mm at 45°",
+    "Double column — vertical, rigid bow travel",
+    "Hydraulic variable down-feed, hydraulic clamping, auto shut-off",
+    "NF-DC 280 A / AV: automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
+    "NF-DC 280 AV: variable blade speed 0–61 m/min, automatic chip conveyor",
+    "Belt drive, 3 kW motor; work light, coolant and material stand included"
+   ],
+   "optional": [
+    "Roller stand",
+    "Extra blades"
+   ],
+   "images": [
+    "nf-dc280-1",
+    "nf-dc280t-1",
+    "nf-dc280t-2",
+    "nf-dc280t-3",
+    "nf-dc280a-1",
+    "nf-dc280av-1",
+    "nf-dc280av-2",
+    "nf-dc280av-3",
+    "nf-dc280av-4",
+    "nf-dc280-stand"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-DC 280",
+      "capacity_mm": {
+       "0": {
+        "round": 280,
+        "rect": [
+         280,
+         280
+        ],
+        "square": 280
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "27/45/69",
+      "band_mm": [
+       3505,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 695,
+      "dims_mm": [
+       2180,
+       1310,
+       1610
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Feeding": "Manual hand wheel",
+       "Vise": "Hydraulic",
+       "Blade tensioning": "Mechanical",
+       "Drive": "V-belt, 3 speeds",
+       "Gross weight": "834 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-DC 280 T",
+      "capacity_mm": {
+       "0": {
+        "round": 280,
+        "rect": [
+         280,
+         280
+        ],
+        "square": 280
+       },
+       "+30": {
+        "round": 260,
+        "rect": [
+         260,
+         280
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 170,
+        "rect": [
+         170,
+         280
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "27/45/69",
+      "band_mm": [
+       3625,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 820,
+      "dims_mm": [
+       2180,
+       1300,
+       1600
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Feeding": "Manual",
+       "Mitre cutting": "0°–45°",
+       "Vise": "Hydraulic",
+       "Blade tensioning": "Mechanical",
+       "Drive": "V-belt, 3 speeds",
+       "Gross weight": "965 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-DC 280 A",
+      "capacity_mm": {
+       "0": {
+        "round": 280,
+        "rect": [
+         280,
+         280
+        ],
+        "square": 280
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "27/45/69",
+      "band_mm": [
+       3505,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 990,
+      "dims_mm": [
+       2250,
+       2010,
+       1640
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Feeding": "Automatic, 3-position shuttle vise",
+       "Vise": "Hydraulic",
+       "Blade tensioning": "Mechanical",
+       "Drive": "V-belt, 3 speeds",
+       "Gross weight": "1160 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-DC 280 AV",
+      "capacity_mm": {
+       "0": {
+        "round": 280,
+        "rect": [
+         280,
+         280
+        ],
+        "square": 280
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "0-61",
+      "band_mm": [
+       3505,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 990,
+      "dims_mm": [
+       2250,
+       2010,
+       1640
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Feeding": "Automatic, shuttle vise",
+       "Vise": "Hydraulic, new clamp design",
+       "Blade tensioning": "Mechanical",
+       "Drive": "V-belt, inverter",
+       "Chip conveyor": "Automatic",
+       "Gross weight": "1160 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-dc350": {
+   "id": "novofab-nf-dc350",
+   "brand": "novofab",
+   "line": "value",
+   "group": "double-column",
+   "name": "NF-DC 350 and NF-DC 400 gear-driven double column saws",
+   "short": "NF-DC 350 / 400",
+   "models_label": "NF-DC 350 · NF-DC 400",
+   "summary": "Heavier twin-column saws with a gear-driven two-speed motor, hydraulic blade tensioning and hydraulic clamping. Vertical lifting on two columns keeps the blade square in Ø350 mm and Ø400 mm solids; the cutting feed is hydraulically controlled and stepless. A three-position hydraulic clamping vise for bundles is optional.",
+   "features": [
+    "NF-DC 350: Ø350 mm / 350 × 350 mm · NF-DC 400: Ø400 mm / 400 × 400 mm",
+    "Double column structure, vertical lifting, high stability",
+    "Hydraulic variable down-feed, hydraulic clamping, hydraulic blade tensioning",
+    "Gear drive with two-speed motor (2.2/2.8 kW or 3.0/4.0 kW)",
+    "Work light, coolant pump and material stand included"
+   ],
+   "optional": [
+    "Three-position hydraulic clamping vise",
+    "Roller stands"
+   ],
+   "images": [
+    "nf-dc350-1",
+    "nf-dc350-2",
+    "nf-dc350-3"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-DC 350",
+      "capacity_mm": {
+       "0": {
+        "round": 350,
+        "rect": [
+         350,
+         350
+        ],
+        "square": 350
+       }
+      },
+      "main_motor_kw": "2.2-2.8",
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": 0.04,
+      "blade_speed_m_min": "45/69",
+      "band_mm": [
+       4115,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 880,
+      "dims_mm": [
+       2410,
+       1150,
+       1500
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Blade tensioning": "Hydraulic",
+       "Drive": "Gear, 2 speeds",
+       "Gross weight": "990 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "NF-DC 400",
+      "capacity_mm": {
+       "0": {
+        "round": 400,
+        "rect": [
+         400,
+         400
+        ],
+        "square": 400
+       }
+      },
+      "main_motor_kw": "3.0-4.0",
+      "hydraulic_motor_kw": 0.75,
+      "coolant_pump_kw": 0.9,
+      "blade_speed_m_min": "36/56",
+      "band_mm": [
+       5000,
+       41,
+       1.3
+      ],
+      "working_height_mm": null,
+      "weight_kg": 1325,
+      "dims_mm": [
+       2700,
+       1350,
+       2150
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Blade tensioning": "Hydraulic",
+       "Drive": "Gear, 2 speeds",
+       "Gross weight": "1585 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novofab-nf-dc500": {
+   "id": "novofab-nf-dc500",
+   "brand": "novofab",
+   "line": "value",
+   "group": "double-column",
+   "name": "NF-DC 500 and NF-DC 600 gantry double column saws",
+   "short": "NF-DC 500 / 600",
+   "models_label": "NF-DC 500 · NF-DC 600",
+   "summary": "Gantry-type double column saws for heavy plate, blocks, bundles and large tube: Ø500 mm / 700 × 500 mm on the NF-DC 500 and Ø600 mm / 1200 × 600 mm on the NF-DC 600. Hydraulic clamping, stepless blade speed and a powered roller table; the NF-DC 600 adds hydraulic blade tensioning and an 11 kW motor for the 67 mm blade.",
+   "features": [
+    "NF-DC 500: Ø500 mm / 700 × 500 mm · NF-DC 600: Ø600 mm / 1200 × 600 mm",
+    "Double column gantry structure for batch sawing of tubes, bars, profiles and plates",
+    "Hydraulic clamping; variable blade speed (40–80 and 20–80 m/min)",
+    "NF-DC 500: 5.5 kW, 41 × 1.3 mm blade · NF-DC 600: 11 kW, 67 × 1.3 × 8800 mm blade, hydraulic tensioning",
+    "Powered roller table with chain drive"
+   ],
+   "optional": [
+    "Roller conveyors",
+    "Bundle clamping"
+   ],
+   "images": [
+    "nf-dc500-1",
+    "nf-dc600-1",
+    "nf-dc600-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NF-DC 500",
+      "capacity_mm": {
+       "0": {
+        "round": 500,
+        "rect": [
+         700,
+         500
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 5.5,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.09,
+      "blade_speed_m_min": "40-80",
+      "band_mm": [
+       null,
+       41,
+       1.3
+      ],
+      "working_height_mm": null,
+      "weight_kg": 2590,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Blade tensioning": "Manual",
+       "Drive": "Belt",
+       "Packing size": "3550 × 1500 × 2180 mm",
+       "Gross weight": "2960 kg"
+      },
+      "notes": "Blade length not printed in the catalogue."
+     },
+     {
+      "name": "NF-DC 600",
+      "capacity_mm": {
+       "0": {
+        "round": 600,
+        "rect": [
+         1200,
+         600
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 11.0,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "20-80",
+      "band_mm": [
+       8800,
+       67,
+       1.3
+      ],
+      "working_height_mm": null,
+      "weight_kg": 5060,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Blade tensioning": "Hydraulic",
+       "Packing size": "4250 × 1750 × 2370 mm",
+       "Gross weight": "5320 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  }
+ }
+}

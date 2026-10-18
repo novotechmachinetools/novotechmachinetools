@@ -1,0 +1,116 @@
+{
+ "template": "category.html",
+ "family_set": "bandsaw",
+ "hero_brand_line": "Bekamak band saws are made in Turkey; NovoFab Machinery is NovoTech's own value line. Every machine is sold, installed and supported in Canada by NovoTech.",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+   "label": "Bekamak band saw catalogue",
+   "size": "PDF · 7.5 MB · imperial units"
+  },
+  {
+   "file": "files/NovoFab-Sawing-Machines-Catalogue-2026.pdf",
+   "label": "NovoFab sawing machines catalogue",
+   "size": "PDF · 25 MB · imperial units"
+  }
+ ],
+ "youtube_playlist": "https://www.youtube.com/playlist?list=PLgtouQi-TePvLZjD0XkwpvL2pX1sAUuFG",
+ "intro_video_heading": "See the saws running",
+ "related_article": {
+  "href": "band-saw.html#buying-guide",
+  "label": "Band saw buying guide: sizes, feeds, blades and troubleshooting"
+ },
+ "slug": "automatic-band-saws",
+ "artifact_title": "Automatic Band Saws",
+ "title": "Automatic Band Saws with NC Feeding for Metal Cutting | NovoTech",
+ "meta_description": "Fully automatic horizontal band saws in Canada: Bekamak BMSO roller-feed and servo shuttle-vise NC saws to Ø17-3/8″ (440 mm), automatic miter saws, and NovoFab value automatic saws. Specs in inches and mm.",
+ "h1": "Automatic band saws",
+ "intro": "Set the length and the quantity, load the bar and walk away. Fully automatic saws feed the material — with driven rollers, an encoder-measured feed or a servo shuttle vise — clamp, cut and count until the job is done. Premium Bekamak BMSO saws from Ø9″ to Ø17-3/8″ (230–440 mm), including automatic miter models, and the NovoFab Machinery value line.",
+ "hero_points": [
+  "Roller feed, encoder feed or servo shuttle-vise feed",
+  "NC job lists: length × quantity × angle",
+  "Automatic single- and double-miter models"
+ ],
+ "hero_image": "bk-hero-auto",
+ "hero_image_secondary": [
+  "bk-bmso-320e-1-cut",
+  "bk-bmso-350ga-1-cut",
+  "nf-a460-1"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Metal cutting band saws",
+   "href": "band-saw.html"
+  },
+  {
+   "label": "Automatic band saws"
+  }
+ ],
+ "groups": [
+  {
+   "id": "premium-line",
+   "brand": "bekamak",
+   "title": "Premium line — Bekamak automatic band saws",
+   "lead": "Roller-feed automatics for simple repeat cutting, encoder and servo versions for length accuracy, and automatic miter saws for angled parts.",
+   "families": [
+    "bekamak-bmso-roller",
+    "bekamak-bmso-e",
+    "bekamak-bmso-ga",
+    "bekamak-bmso-gs",
+    "bekamak-bmso-dgs"
+   ]
+  },
+  {
+   "id": "value-line",
+   "brand": "novofab",
+   "title": "Value line — NovoFab Machinery automatic band saws",
+   "lead": "Roller-feed, shuttle-vise and CNC servo automatics from Ø12″ to Ø23-5/8″ (300–600 mm): feed, clamp, cut and count without an operator at the saw.",
+   "families": [
+    "novofab-nf-a300",
+    "novofab-nf-a300sc",
+    "novofab-nf-a330",
+    "novofab-nf-a-cnc"
+   ]
+  }
+ ],
+ "intro_video": {
+  "id": "80A2SoXkzDU",
+  "title": "Bekamak BMSO 320GS NC automatic bundling and mitering band saw",
+  "thumb": "video-80A2SoXkzDU",
+  "duration": "PT1M56S"
+ },
+ "intro_video_text": "The Bekamak BMSO 320GS feeding, mitering and bundle-cutting under NC control.",
+ "faq_title": "Questions we get asked about automatic band saws",
+ "faq": [
+  {
+   "q": "Roller feed or shuttle vise — which is better?",
+   "a": "Roller feed (BMSO 230–440, BMSO E) is simple and fast for bar and tube in straight cuts; the encoder versions measure the fed length for better accuracy. A servo shuttle vise (BMSO GS/GLS, 270DGS, and all CS/CGS double-column saws) grips the bar and moves it on a ball screw, giving ±0.1 mm repeatability and reliable feeding of bundles and short remnants."
+  },
+  {
+   "q": "How many lengths can I program?",
+   "a": "The NC control on the servo-feed models stores a job list of several length-and-quantity pairs (and the miter angle on GS/DGS models), so one bar can be cut into different parts without re-programming."
+  },
+  {
+   "q": "What happens at the end of the bar?",
+   "a": "The saw stops when the remaining length is shorter than the next part or the feed vise reaches its limit, and the counter shows how many pieces were cut. Remnant length depends on the model — typically 3–6 in (80–150 mm)."
+  },
+  {
+   "q": "Do automatic saws need a roller table?",
+   "a": "A short infeed roller table is included on the BMSO E models; a 10 ft (3 m) manual or motorized roller table is optional on the others and is strongly recommended for bars longer than about 6 ft."
+  }
+ ],
+ "related_pages": [
+  {
+   "href": "cold-saw-carbide-saw-cutting.html",
+   "label": "Automatic circular cold saws"
+  }
+ ]
+}
