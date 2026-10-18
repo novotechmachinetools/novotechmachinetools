@@ -1,0 +1,122 @@
+{# ---------- responsive <img> ---------- #}
+{% macro picture(im, sizes, cls="", lazy=true) -%}
+<img class="{{ cls }}" src="{{ im.src }}" srcset="{{ im.srcset }}" sizes="{{ sizes }}" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}"{% if lazy %} loading="lazy"{% endif %} decoding="async">
+{%- endmacro %}
+
+{# ---------- product gallery: large image + thumbnails, lightbox via JS ---------- #}
+{% macro gallery(images, fid) -%}
+{% if images %}
+<div class="gallery" data-gallery="{{ fid }}">
+  {% set first = images[0] %}
+  <figure class="gallery-main{{ ' is-cutout' if first.alpha else '' }}">
+    <a class="gallery-link" href="{{ first.src }}" data-index="0">
+      <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 560px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
+    </a>
+    <figcaption>{{ first.alt }}</figcaption>
+  </figure>
+  {% if images|length > 1 %}
+  <ul class="gallery-thumbs" aria-label="More photos">
+    {% for im in images %}
+    <li>
+      <a href="{{ im.src }}" class="thumb{{ ' is-cutout' if im.alpha else '' }}{{ ' is-current' if loop.first else '' }}" data-index="{{ loop.index0 }}" data-src="{{ im.src }}" data-srcset="{{ im.srcset }}" data-w="{{ im.w }}" data-h="{{ im.h }}" data-alt="{{ im.alt }}" aria-label="{{ im.alt }}">
+        <img src="{{ im.small }}" width="{{ im.w }}" height="{{ im.h }}" alt="" loading="lazy" decoding="async">
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endif %}
+{%- endmacro %}
+
+{# ---------- YouTube facade: thumbnail + play, iframe injected on click ---------- #}
+{% macro video(v) -%}
+{% set t = img(v.thumb) %}
+<div class="video" data-video="{{ v.id }}" data-title="{{ v.title }}">
+  <a class="video-poster" href="https://www.youtube.com/watch?v={{ v.id }}" rel="noopener" aria-label="Play video: {{ v.title }}">
+    <img src="{{ t.src }}" width="{{ t.w }}" height="{{ t.h }}" alt="" loading="lazy" decoding="async">
+    <span class="play" aria-hidden="true"></span>
+  </a>
+  <p class="video-title">{{ v.title }}</p>
+</div>
+{%- endmacro %}
+
+{# ---------- CTA row under features ---------- #}
+{% macro cta_row(f) -%}
+<div class="cta-row cta-row-sm">
+  <a class="btn btn-primary btn-sm" href="#reques-a-quote" data-machine="{{ f.name }}">Request a quote</a>
+  <a class="btn btn-ghost btn-sm" href="{{ page.catalogue_pdf.file }}" download>Download PDF brochure</a>
+  {% if f.video %}<a class="btn btn-link btn-sm" href="#{{ f.id }}-video">Watch the video</a>{% endif %}
+</div>
+{%- endmacro %}
+
+{# ---------- model-column spec table ---------- #}
+{% macro spec_table(f) -%}
+{% set t = f.table %}
+<div class="specs" id="{{ f.id }}-specs">
+  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ f.name }} technical specifications">
+    <table class="spec-table">
+      <caption>{{ f.name }} — technical specifications and capacities</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="label-col">Model</th>
+          {% for m in t.models %}<th scope="col">{{ m }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in t.rows %}
+        <tr class="{{ 'row-cap' if r.type == 'cap' else 'row-text' }}">
+          <th scope="row">{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>
+          {% for c in r.cells %}
+          <td>
+            {% if r.type == 'cap' %}
+              {% for p in c %}
+              <span class="cap"><b>{{ p.dia }}</b> <span class="n">× {{ p.n }}</span>{% if p.n == 1 and p.bars %}<small>{{ p.bars }}</small>{% endif %}</span>
+              {% endfor %}
+            {% else %}{{ c }}{% endif %}
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="table-note">Single-bar capacity shows the largest Canadian metric bar / US bar number that fits. Dimensions are overall W × L × H. {{ site.voltage_note }}</p>
+</div>
+{%- endmacro %}
+
+{# ---------- simple two-column (or multi-column) table ---------- #}
+{% macro extra_table(t) -%}
+<div class="specs">
+  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ t.title }}">
+    <table class="spec-table spec-table-simple">
+      <caption>{{ t.title }}</caption>
+      {% if t.cols %}
+      <thead><tr><th scope="col" class="label-col">Model</th>{% for c in t.cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
+      {% endif %}
+      <tbody>
+        {% for r in t.rows %}
+        <tr><th scope="row">{{ r[0] }}</th>{% for c in r[1:] %}<td>{{ c }}</td>{% endfor %}</tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{%- endmacro %}
+
+{# ---------- capacity list (bars at once by diameter) ---------- #}
+{% macro capacity_list(t) -%}
+<div class="specs">
+  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ t.title }}">
+    <table class="spec-table spec-table-cap">
+      <caption>{{ t.title }}</caption>
+      <thead><tr>{% for h in t.head %}<th scope="col"{% if loop.first %} class="label-col"{% endif %}>{{ h }}</th>{% endfor %}</tr></thead>
+      <tbody>
+        {% for r in t.rows %}
+        <tr><th scope="row">{{ r[0] }}</th>{% for c in r[1:] %}<td>{{ c }}</td>{% endfor %}</tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{%- endmacro %}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.meta_description }}">
+{% if staging %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
+<link rel="canonical" href="{{ page.url }}">
+<meta name="theme-color" content="#2D2E30">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="img/site/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ page.og_title or page.title }}">
+<meta property="og:description" content="{{ page.meta_description }}">
+<meta property="og:url" content="{{ page.url }}">
+<meta property="og:locale" content="en_CA">
+{% if page.hero_image %}{% set og = img(page.hero_image) %}<meta property="og:image" content="{{ site.domain }}/{{ og.src }}">
+<meta property="og:image:width" content="{{ og.w }}">
+<meta property="og:image:height" content="{{ og.h }}">
+<meta property="og:image:alt" content="{{ og.alt }}">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+{% if page.hero_image %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, 520px">{% endif %}
+<link rel="stylesheet" href="css/site.css?v={{ css_hash }}">
+{% block head %}{% endblock %}
+<script type="application/ld+json">{{ ld_json|safe }}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html" aria-label="NovoTech Machine Tools — home">
+      {% set logo = img('novotech-logo') %}
+      <img src="{{ logo.small }}" srcset="{{ logo.srcset }}" sizes="220px" width="{{ logo.w }}" height="{{ logo.h }}" alt="NovoTech Machine Tools Inc." fetchpriority="high">
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul id="nav-menu" class="nav-menu">
+        {% for item in site.nav %}
+        <li class="{{ 'has-children' if item.children else '' }}{{ ' current' if page.slug + '.html' == item.href or (item.children and page.slug + '.html' in item.children|map(attribute='href')|list) else '' }}">
+          <a href="{{ item.href }}">{{ item.label }}</a>
+          {% if item.children %}
+          <button class="sub-toggle" aria-expanded="false" aria-label="Show all products">▾</button>
+          <ul class="sub-menu">
+            {% for c in item.children %}<li><a href="{{ c.href }}"{% if c.href == page.slug + '.html' %} aria-current="page"{% endif %}>{{ c.label }}</a></li>{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="header-contact">
+      <a class="phone" href="tel:{{ site.phone_tel }}">{{ site.phone }}</a>
+      <a class="btn btn-primary btn-sm" href="#reques-a-quote">Get a quote</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">NovoTech Machine Tools Inc.</p>
+      <p>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}</p>
+      <p><a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p>{{ site.hours }} (Eastern)</p>
+    </div>
+    <div>
+      <p class="footer-title">Products</p>
+      <ul class="footer-links">
+        {% for c in site.nav[0].children[:12] %}<li><a href="{{ c.href }}">{{ c.label }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <p class="footer-title">&nbsp;</p>
+      <ul class="footer-links">
+        {% for c in site.nav[0].children[12:] %}<li><a href="{{ c.href }}">{{ c.label }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <p class="footer-title">Company</p>
+      <ul class="footer-links">
+        <li><a href="about-us.html">About NovoTech</a></li>
+        <li><a href="brochures.html">Brochures</a></li>
+        <li><a href="metal-fabricating-articles.html">Articles &amp; buying guides</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+        <li><a href="{{ site.youtube_channel }}" rel="noopener">YouTube channel</a></li>
+        <li><a href="privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© {{ year }} NovoTech Machine Tools Inc. — Metalworking machinery supplier, Mississauga, Ontario, Canada.</p>
+  </div>
+</footer>
+<script src="js/site.js?v={{ js_hash }}" defer></script>
+</body>
+</html>

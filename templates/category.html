@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import picture, gallery, video, spec_table, extra_table, capacity_list, cta_row with context %}
+
+{% block content %}
+{% set hero = img(page.hero_image) %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          {% for c in page.breadcrumb %}<li>{% if c.href %}<a href="{{ c.href }}">{{ c.label }}</a>{% else %}<span aria-current="page">{{ c.label }}</span>{% endif %}</li>{% endfor %}
+        </ol>
+      </nav>
+      <h1>{{ page.h1 }}</h1>
+      <p class="lead">{{ page.intro }}</p>
+      <ul class="hero-points">
+        {% for p in page.hero_points %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#reques-a-quote">Request a quote</a>
+        <a class="btn btn-ghost" href="{{ page.catalogue_pdf.file }}" download>{{ page.catalogue_pdf.label }} <small>({{ page.catalogue_pdf.size }})</small></a>
+      </div>
+      <p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="hero-band"></div>
+      <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, 520px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">
+      {% if page.hero_image_secondary %}
+      <div class="hero-minis">
+        {% for n in page.hero_image_secondary %}{% set m = img(n) %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="160px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async">{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<nav class="jump" aria-label="On this page">
+  <div class="wrap">
+    <ul class="jump-list">
+      {% for j in page.jump_links %}<li><a href="{{ j.href }}">{{ j.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap page-body">
+{% for g in page.groups %}
+<section class="group" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
+  <header class="group-head">
+    <h2 id="{{ g.id }}-title">{{ g.title }}</h2>
+    {% if g.lead %}<p class="group-lead">{{ g.lead }}</p>{% endif %}
+  </header>
+
+  {% for f in g.families %}
+  <article class="family" id="{{ f.id }}">
+    {% for a in f.alt_ids or [] %}<span id="{{ a }}" class="anchor"></span>{% endfor %}
+    <header class="family-head">
+      <h3 class="family-name">{{ f.name }}</h3>
+      <p class="nameplate"><span>{{ f.models_label }}</span></p>
+    </header>
+
+    <div class="family-grid">
+      <div class="family-media">
+        {{ gallery(f.gallery, f.id) }}
+      </div>
+      <div class="family-text">
+        <p class="summary">{{ f.summary }}</p>
+        <ul class="features">
+          {% for feat in f.features %}<li>{{ feat }}</li>{% endfor %}
+        </ul>
+        {{ cta_row(f) }}
+      </div>
+    </div>
+
+    {% if f.video %}
+    <div class="family-video" id="{{ f.id }}-video">
+      {{ video(f.video) }}
+    </div>
+    {% endif %}
+
+    {% if f.table %}
+      {{ spec_table(f) }}
+    {% endif %}
+    {% if f.extra_table %}
+      {{ extra_table(f.extra_table) }}
+    {% endif %}
+    {% if f.capacity_list %}
+      {{ capacity_list(f.capacity_list) }}
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endfor %}
+</div>
+
+<section class="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <h2 id="why-title">Included with every machine from NovoTech</h2>
+    <ul class="why-grid">
+      {% for s in site.standard_features %}
+      <li><strong>{{ s.title }}</strong><span>{{ s.text }}</span></li>
+      {% endfor %}
+    </ul>
+    <p class="why-note">{{ site.voltage_note }}</p>
+  </div>
+</section>
+
+{% if page.intro_video %}
+<section class="videos wrap" id="GMS-introduction-video" aria-labelledby="videos-title">
+  <div class="videos-grid">
+    <div>
+      <h2 id="videos-title">See the machines running</h2>
+      <p>A short tour of the GMS factory in Ankara, where every machine on this page is built. More rebar bending and cutting videos are on <a href="{{ site.youtube_rebar_playlist }}" rel="noopener">NovoTech's YouTube playlist</a>.</p>
+      {% if page.related_article %}<p><a class="arrow" href="{{ page.related_article.href }}">{{ page.related_article.label }}</a></p>{% endif %}
+    </div>
+    {{ video(page.intro_video) }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.faq %}
+<section class="faq wrap" aria-labelledby="faq-title">
+  <h2 id="faq-title">Questions we get asked about rebar benders and cutters</h2>
+  <div class="faq-list">
+    {% for q in page.faq %}
+    <details{% if loop.first %} open{% endif %}>
+      <summary>{{ q.q }}</summary>
+      <p>{{ q.a }}</p>
+    </details>
+    {% endfor %}
+  </div>
+  <p class="steel-note">{{ site.steel_note }}</p>
+</section>
+{% endif %}
+
+<section class="quote" id="reques-a-quote" aria-labelledby="quote-title">
+  <div class="wrap quote-grid">
+    <div class="quote-copy">
+      <h2 id="quote-title">Request a quote</h2>
+      <p>Tell us which machine you are looking at and the bar sizes you run, and we will come back with pricing, delivery and the right voltage option for your shop. We answer within one business day.</p>
+      <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern) or email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+      <p class="quote-contact">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}</p>
+    </div>
+    <form class="quote-form" action="quote.php" method="post" novalidate>
+      <input type="hidden" name="page" value="{{ page.title }}">
+      <input type="hidden" name="ts" value="{{ build_ts }}">
+      <p class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field">
+        <label for="q-name">Name <span>required</span></label>
+        <input id="q-name" name="name" type="text" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="q-company">Company</label>
+        <input id="q-company" name="company" type="text" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="q-email">Email <span>required</span></label>
+        <input id="q-email" name="email" type="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="q-phone">Phone</label>
+        <input id="q-phone" name="phone" type="tel" autocomplete="tel">
+      </div>
+      <div class="field field-wide">
+        <label for="q-machine">Machine of interest</label>
+        <select id="q-machine" name="machine">
+          <option value="">Choose a machine family…</option>
+          {% for g in page.groups %}{% for f in g.families %}<option value="{{ f.name }}">{{ f.name }} — {{ f.models_label }}</option>{% endfor %}{% endfor %}
+          <option value="Not sure — please advise">Not sure — please advise</option>
+        </select>
+      </div>
+      <div class="field field-wide">
+        <label for="q-message">Bar sizes, voltage, quantity, delivery city…</label>
+        <textarea id="q-message" name="message" rows="5"></textarea>
+      </div>
+      <div class="field field-wide form-actions">
+        <button class="btn btn-primary" type="submit">Send quote request</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}

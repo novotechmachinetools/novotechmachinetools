@@ -1,0 +1,2204 @@
+{
+ "b-45x1": {
+  "alt": "GMS B 45x1 stationary rebar bending machine with foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 930,
+    "file": "img/rebar/b-45x1-1200.webp",
+    "bytes": 72136
+   },
+   {
+    "w": 800,
+    "h": 620,
+    "file": "img/rebar/b-45x1-800.webp",
+    "bytes": 42988
+   },
+   {
+    "w": 480,
+    "h": 372,
+    "file": "img/rebar/b-45x1-480.webp",
+    "bytes": 24624
+   }
+  ],
+  "alpha": true
+ },
+ "b-26": {
+  "alt": "GMS B 26 rebar bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 757,
+    "file": "img/rebar/b-26-800.webp",
+    "bytes": 43496
+   },
+   {
+    "w": 480,
+    "h": 454,
+    "file": "img/rebar/b-26-480.webp",
+    "bytes": 23932
+   }
+  ],
+  "alpha": true
+ },
+ "b-36": {
+  "alt": "GMS B 36 rebar bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 706,
+    "file": "img/rebar/b-36-800.webp",
+    "bytes": 39488
+   },
+   {
+    "w": 480,
+    "h": 423,
+    "file": "img/rebar/b-36-480.webp",
+    "bytes": 21662
+   }
+  ],
+  "alpha": true
+ },
+ "b-50": {
+  "alt": "GMS B 50 rebar bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 632,
+    "file": "img/rebar/b-50-800.webp",
+    "bytes": 42992
+   },
+   {
+    "w": 480,
+    "h": 379,
+    "file": "img/rebar/b-50-480.webp",
+    "bytes": 23426
+   }
+  ],
+  "alpha": true
+ },
+ "b-bending-disc": {
+  "alt": "Bending disc with centre pin and bending pins",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 726,
+    "file": "img/rebar/b-bending-disc-1200.webp",
+    "bytes": 61526
+   },
+   {
+    "w": 800,
+    "h": 484,
+    "file": "img/rebar/b-bending-disc-800.webp",
+    "bytes": 34696
+   },
+   {
+    "w": 480,
+    "h": 290,
+    "file": "img/rebar/b-bending-disc-480.webp",
+    "bytes": 17592
+   }
+  ],
+  "alpha": false
+ },
+ "b-bar-stop": {
+  "alt": "Adjustable bar stop and support rollers on a B series bender",
+  "variants": [
+   {
+    "w": 800,
+    "h": 971,
+    "file": "img/rebar/b-bar-stop-800.webp",
+    "bytes": 39912
+   },
+   {
+    "w": 480,
+    "h": 583,
+    "file": "img/rebar/b-bar-stop-480.webp",
+    "bytes": 20998
+   }
+  ],
+  "alpha": false
+ },
+ "b-pins-rollers": {
+  "alt": "Standard bending pins, rollers and disc supplied with the machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 982,
+    "file": "img/rebar/b-pins-rollers-800.webp",
+    "bytes": 43840
+   },
+   {
+    "w": 480,
+    "h": 589,
+    "file": "img/rebar/b-pins-rollers-480.webp",
+    "bytes": 23314
+   }
+  ],
+  "alpha": false
+ },
+ "b-multi-bend": {
+  "alt": "Multiple bends in one rebar on the bending disc",
+  "variants": [
+   {
+    "w": 800,
+    "h": 985,
+    "file": "img/rebar/b-multi-bend-800.webp",
+    "bytes": 53456
+   },
+   {
+    "w": 480,
+    "h": 591,
+    "file": "img/rebar/b-multi-bend-480.webp",
+    "bytes": 26704
+   }
+  ],
+  "alpha": false
+ },
+ "bd-45-panel": {
+  "alt": "BD 45 digital display control panel",
+  "variants": [
+   {
+    "w": 480,
+    "h": 471,
+    "file": "img/rebar/bd-45-panel-480.webp",
+    "bytes": 15366
+   }
+  ],
+  "alpha": false
+ },
+ "bs-50": {
+  "alt": "GMS BS 50 long-table rebar bending machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 932,
+    "file": "img/rebar/bs-50-1200.webp",
+    "bytes": 74264
+   },
+   {
+    "w": 800,
+    "h": 622,
+    "file": "img/rebar/bs-50-800.webp",
+    "bytes": 43954
+   },
+   {
+    "w": 480,
+    "h": 373,
+    "file": "img/rebar/bs-50-480.webp",
+    "bytes": 24036
+   }
+  ],
+  "alpha": true
+ },
+ "bs-36": {
+  "alt": "GMS BS 36 rebar bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 672,
+    "file": "img/rebar/bs-36-800.webp",
+    "bytes": 44564
+   },
+   {
+    "w": 480,
+    "h": 403,
+    "file": "img/rebar/bs-36-480.webp",
+    "bytes": 24646
+   }
+  ],
+  "alpha": true
+ },
+ "bs-45": {
+  "alt": "GMS BS 45 rebar bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 604,
+    "file": "img/rebar/bs-45-800.webp",
+    "bytes": 39326
+   },
+   {
+    "w": 480,
+    "h": 362,
+    "file": "img/rebar/bs-45-480.webp",
+    "bytes": 21602
+   }
+  ],
+  "alpha": true
+ },
+ "bs-60": {
+  "alt": "GMS BS 60 rebar bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 552,
+    "file": "img/rebar/bs-60-800.webp",
+    "bytes": 38366
+   },
+   {
+    "w": 480,
+    "h": 331,
+    "file": "img/rebar/bs-60-480.webp",
+    "bytes": 20642
+   }
+  ],
+  "alpha": true
+ },
+ "bs-disc-rollers": {
+  "alt": "BS series bending disc with pins and support rollers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 726,
+    "file": "img/rebar/bs-disc-rollers-1200.webp",
+    "bytes": 55196
+   },
+   {
+    "w": 800,
+    "h": 484,
+    "file": "img/rebar/bs-disc-rollers-800.webp",
+    "bytes": 30994
+   },
+   {
+    "w": 480,
+    "h": 290,
+    "file": "img/rebar/bs-disc-rollers-480.webp",
+    "bytes": 15852
+   }
+  ],
+  "alpha": false
+ },
+ "bs-two-sleeves": {
+  "alt": "Bending with two bending sleeves on a BS series machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 971,
+    "file": "img/rebar/bs-two-sleeves-800.webp",
+    "bytes": 50840
+   },
+   {
+    "w": 480,
+    "h": 583,
+    "file": "img/rebar/bs-two-sleeves-480.webp",
+    "bytes": 26758
+   }
+  ],
+  "alpha": false
+ },
+ "bs-multi-bend": {
+  "alt": "Multiple bends in one bar on a BS series bender",
+  "variants": [
+   {
+    "w": 800,
+    "h": 982,
+    "file": "img/rebar/bs-multi-bend-800.webp",
+    "bytes": 45224
+   },
+   {
+    "w": 480,
+    "h": 589,
+    "file": "img/rebar/bs-multi-bend-480.webp",
+    "bytes": 23544
+   }
+  ],
+  "alpha": false
+ },
+ "bs-disc-holes": {
+  "alt": "BS series bending disc with pin holes",
+  "variants": [
+   {
+    "w": 800,
+    "h": 985,
+    "file": "img/rebar/bs-disc-holes-800.webp",
+    "bytes": 42762
+   },
+   {
+    "w": 480,
+    "h": 591,
+    "file": "img/rebar/bs-disc-holes-480.webp",
+    "bytes": 21738
+   }
+  ],
+  "alpha": false
+ },
+ "mg-20b": {
+  "alt": "GMS MG 20B portable rebar bender on its stand",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1284,
+    "file": "img/rebar/mg-20b-1200.webp",
+    "bytes": 102004
+   },
+   {
+    "w": 800,
+    "h": 856,
+    "file": "img/rebar/mg-20b-800.webp",
+    "bytes": 62646
+   },
+   {
+    "w": 480,
+    "h": 514,
+    "file": "img/rebar/mg-20b-480.webp",
+    "bytes": 30770
+   }
+  ],
+  "alpha": true
+ },
+ "mg-26-junior": {
+  "alt": "GMS MG 26 Junior portable rebar bender",
+  "variants": [
+   {
+    "w": 800,
+    "h": 920,
+    "file": "img/rebar/mg-26-junior-800.webp",
+    "bytes": 63782
+   },
+   {
+    "w": 480,
+    "h": 552,
+    "file": "img/rebar/mg-26-junior-480.webp",
+    "bytes": 31750
+   }
+  ],
+  "alpha": true
+ },
+ "bt-24x5": {
+  "alt": "GMS BT 24x5 portable rebar bender with stirrup bending pin",
+  "variants": [
+   {
+    "w": 800,
+    "h": 819,
+    "file": "img/rebar/bt-24x5-800.webp",
+    "bytes": 44294
+   },
+   {
+    "w": 480,
+    "h": 491,
+    "file": "img/rebar/bt-24x5-480.webp",
+    "bytes": 24442
+   }
+  ],
+  "alpha": true
+ },
+ "bt-26": {
+  "alt": "GMS BT 26 portable rebar bender",
+  "variants": [
+   {
+    "w": 800,
+    "h": 816,
+    "file": "img/rebar/bt-26-800.webp",
+    "bytes": 43404
+   },
+   {
+    "w": 480,
+    "h": 490,
+    "file": "img/rebar/bt-26-480.webp",
+    "bytes": 24450
+   }
+  ],
+  "alpha": true
+ },
+ "power-24": {
+  "alt": "GMS POWER 24 portable hydraulic rebar cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 733,
+    "file": "img/rebar/power-24-800.webp",
+    "bytes": 51928
+   },
+   {
+    "w": 480,
+    "h": 440,
+    "file": "img/rebar/power-24-480.webp",
+    "bytes": 28106
+   }
+  ],
+  "alpha": true
+ },
+ "portable-disc": {
+  "alt": "Portable bender bending disc with pins and rollers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 626,
+    "file": "img/rebar/portable-disc-1200.webp",
+    "bytes": 38842
+   },
+   {
+    "w": 800,
+    "h": 417,
+    "file": "img/rebar/portable-disc-800.webp",
+    "bytes": 21256
+   },
+   {
+    "w": 480,
+    "h": 250,
+    "file": "img/rebar/portable-disc-480.webp",
+    "bytes": 10498
+   }
+  ],
+  "alpha": false
+ },
+ "portable-bending": {
+  "alt": "Bending a rebar with the bending pin on a portable bender",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 853,
+    "file": "img/rebar/portable-bending-1200.webp",
+    "bytes": 47796
+   },
+   {
+    "w": 800,
+    "h": 569,
+    "file": "img/rebar/portable-bending-800.webp",
+    "bytes": 27630
+   },
+   {
+    "w": 480,
+    "h": 341,
+    "file": "img/rebar/portable-bending-480.webp",
+    "bytes": 12528
+   }
+  ],
+  "alpha": false
+ },
+ "bt-24x5-panel": {
+  "alt": "BT 24x5 control panel",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 850,
+    "file": "img/rebar/bt-24x5-panel-1200.webp",
+    "bytes": 42026
+   },
+   {
+    "w": 800,
+    "h": 567,
+    "file": "img/rebar/bt-24x5-panel-800.webp",
+    "bytes": 25786
+   },
+   {
+    "w": 480,
+    "h": 340,
+    "file": "img/rebar/bt-24x5-panel-480.webp",
+    "bytes": 12642
+   }
+  ],
+  "alpha": false
+ },
+ "sl-30": {
+  "alt": "GMS SL 30 stirrup bending machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1160,
+    "file": "img/rebar/sl-30-1200.webp",
+    "bytes": 89940
+   },
+   {
+    "w": 800,
+    "h": 774,
+    "file": "img/rebar/sl-30-800.webp",
+    "bytes": 51782
+   },
+   {
+    "w": 480,
+    "h": 464,
+    "file": "img/rebar/sl-30-480.webp",
+    "bytes": 26422
+   }
+  ],
+  "alpha": true
+ },
+ "sl-36": {
+  "alt": "GMS SL 36 stirrup bending machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1265,
+    "file": "img/rebar/sl-36-1200.webp",
+    "bytes": 71300
+   },
+   {
+    "w": 800,
+    "h": 843,
+    "file": "img/rebar/sl-36-800.webp",
+    "bytes": 44410
+   },
+   {
+    "w": 480,
+    "h": 506,
+    "file": "img/rebar/sl-36-480.webp",
+    "bytes": 22470
+   }
+  ],
+  "alpha": true
+ },
+ "sl-disc": {
+  "alt": "SL series bending disc with stirrup pins and rollers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 722,
+    "file": "img/rebar/sl-disc-1200.webp",
+    "bytes": 53650
+   },
+   {
+    "w": 800,
+    "h": 481,
+    "file": "img/rebar/sl-disc-800.webp",
+    "bytes": 31310
+   },
+   {
+    "w": 480,
+    "h": 289,
+    "file": "img/rebar/sl-disc-480.webp",
+    "bytes": 17162
+   }
+  ],
+  "alpha": false
+ },
+ "sl-stirrup": {
+  "alt": "Stirrup bending on an SL series machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 757,
+    "file": "img/rebar/sl-stirrup-1200.webp",
+    "bytes": 66122
+   },
+   {
+    "w": 800,
+    "h": 505,
+    "file": "img/rebar/sl-stirrup-800.webp",
+    "bytes": 33806
+   },
+   {
+    "w": 480,
+    "h": 303,
+    "file": "img/rebar/sl-stirrup-480.webp",
+    "bytes": 14192
+   }
+  ],
+  "alpha": false
+ },
+ "sl-pin": {
+  "alt": "Stirrup bending pin",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1042,
+    "file": "img/rebar/sl-pin-800.webp",
+    "bytes": 62478
+   },
+   {
+    "w": 480,
+    "h": 625,
+    "file": "img/rebar/sl-pin-480.webp",
+    "bytes": 31440
+   }
+  ],
+  "alpha": false
+ },
+ "sx-40": {
+  "alt": "GMS SX 40 spiral rebar bending machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 944,
+    "file": "img/rebar/sx-40-1200.webp",
+    "bytes": 74094
+   },
+   {
+    "w": 800,
+    "h": 630,
+    "file": "img/rebar/sx-40-800.webp",
+    "bytes": 43040
+   },
+   {
+    "w": 480,
+    "h": 378,
+    "file": "img/rebar/sx-40-480.webp",
+    "bytes": 23672
+   }
+  ],
+  "alpha": true
+ },
+ "sx-26": {
+  "alt": "GMS SX 26 spiral bending machine forming a continuous spiral",
+  "variants": [
+   {
+    "w": 800,
+    "h": 541,
+    "file": "img/rebar/sx-26-800.webp",
+    "bytes": 37348
+   },
+   {
+    "w": 480,
+    "h": 325,
+    "file": "img/rebar/sx-26-480.webp",
+    "bytes": 20338
+   }
+  ],
+  "alpha": true
+ },
+ "sx-36": {
+  "alt": "GMS SX 36 spiral bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 671,
+    "file": "img/rebar/sx-36-800.webp",
+    "bytes": 35734
+   },
+   {
+    "w": 480,
+    "h": 402,
+    "file": "img/rebar/sx-36-480.webp",
+    "bytes": 19666
+   }
+  ],
+  "alpha": true
+ },
+ "sx-spiral-cage": {
+  "alt": "Spiral-reinforced pile cage",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 511,
+    "file": "img/rebar/sx-spiral-cage-1200.webp",
+    "bytes": 140794
+   },
+   {
+    "w": 800,
+    "h": 341,
+    "file": "img/rebar/sx-spiral-cage-800.webp",
+    "bytes": 76394
+   },
+   {
+    "w": 480,
+    "h": 205,
+    "file": "img/rebar/sx-spiral-cage-480.webp",
+    "bytes": 35596
+   }
+  ],
+  "alpha": false
+ },
+ "sx-forming": {
+  "alt": "Spiral forming on an SX series machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 773,
+    "file": "img/rebar/sx-forming-800.webp",
+    "bytes": 32654
+   },
+   {
+    "w": 480,
+    "h": 464,
+    "file": "img/rebar/sx-forming-480.webp",
+    "bytes": 16748
+   }
+  ],
+  "alpha": false
+ },
+ "sx-continuous": {
+  "alt": "Continuous rebar spiral",
+  "variants": [
+   {
+    "w": 800,
+    "h": 776,
+    "file": "img/rebar/sx-continuous-800.webp",
+    "bytes": 37506
+   },
+   {
+    "w": 480,
+    "h": 466,
+    "file": "img/rebar/sx-continuous-480.webp",
+    "bytes": 20008
+   }
+  ],
+  "alpha": false
+ },
+ "axis-50s": {
+  "alt": "GMS AXIS 50S 2-inch spiral bending machine with supporting conveyors open",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1031,
+    "file": "img/rebar/axis-50s-1200.webp",
+    "bytes": 70232
+   },
+   {
+    "w": 800,
+    "h": 687,
+    "file": "img/rebar/axis-50s-800.webp",
+    "bytes": 40856
+   },
+   {
+    "w": 480,
+    "h": 412,
+    "file": "img/rebar/axis-50s-480.webp",
+    "bytes": 21858
+   }
+  ],
+  "alpha": true
+ },
+ "axis-50s-closed": {
+  "alt": "AXIS 50S with supporting conveyors closed",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 915,
+    "file": "img/rebar/axis-50s-closed-1200.webp",
+    "bytes": 71582
+   },
+   {
+    "w": 800,
+    "h": 610,
+    "file": "img/rebar/axis-50s-closed-800.webp",
+    "bytes": 41104
+   },
+   {
+    "w": 480,
+    "h": 366,
+    "file": "img/rebar/axis-50s-closed-480.webp",
+    "bytes": 22402
+   }
+  ],
+  "alpha": true
+ },
+ "axis-50s-front": {
+  "alt": "AXIS 50S front view",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1029,
+    "file": "img/rebar/axis-50s-front-1200.webp",
+    "bytes": 68982
+   },
+   {
+    "w": 800,
+    "h": 686,
+    "file": "img/rebar/axis-50s-front-800.webp",
+    "bytes": 39082
+   },
+   {
+    "w": 480,
+    "h": 412,
+    "file": "img/rebar/axis-50s-front-480.webp",
+    "bytes": 21302
+   }
+  ],
+  "alpha": true
+ },
+ "axis-rollers": {
+  "alt": "AXIS 50S bending rollers and supporting roller unit",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 777,
+    "file": "img/rebar/axis-rollers-1200.webp",
+    "bytes": 54140
+   },
+   {
+    "w": 800,
+    "h": 518,
+    "file": "img/rebar/axis-rollers-800.webp",
+    "bytes": 30774
+   },
+   {
+    "w": 480,
+    "h": 311,
+    "file": "img/rebar/axis-rollers-480.webp",
+    "bytes": 15494
+   }
+  ],
+  "alpha": false
+ },
+ "axis-cage": {
+  "alt": "Spiral-reinforced pile cage produced on the AXIS 50S",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 678,
+    "file": "img/rebar/axis-cage-1200.webp",
+    "bytes": 174074
+   },
+   {
+    "w": 800,
+    "h": 452,
+    "file": "img/rebar/axis-cage-800.webp",
+    "bytes": 93172
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/rebar/axis-cage-480.webp",
+    "bytes": 44398
+   }
+  ],
+  "alpha": false
+ },
+ "a-40": {
+  "alt": "GMS A 40 portable hydraulic dowel bar bender",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1135,
+    "file": "img/rebar/a-40-800.webp",
+    "bytes": 90306
+   },
+   {
+    "w": 480,
+    "h": 681,
+    "file": "img/rebar/a-40-480.webp",
+    "bytes": 47078
+   }
+  ],
+  "alpha": true
+ },
+ "mg-26-32b": {
+  "alt": "GMS MG 26-32B portable hydraulic dowel bar bender",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1281,
+    "file": "img/rebar/mg-26-32b-1200.webp",
+    "bytes": 121748
+   },
+   {
+    "w": 800,
+    "h": 854,
+    "file": "img/rebar/mg-26-32b-800.webp",
+    "bytes": 78338
+   },
+   {
+    "w": 480,
+    "h": 512,
+    "file": "img/rebar/mg-26-32b-480.webp",
+    "bytes": 38878
+   }
+  ],
+  "alpha": true
+ },
+ "mg-26-32b-use": {
+  "alt": "MG 26-32B dowel bar bender in use on site",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1148,
+    "file": "img/rebar/mg-26-32b-use-800.webp",
+    "bytes": 70164
+   },
+   {
+    "w": 480,
+    "h": 689,
+    "file": "img/rebar/mg-26-32b-use-480.webp",
+    "bytes": 39184
+   }
+  ],
+  "alpha": true
+ },
+ "dowel-head": {
+  "alt": "Bending head on a dowel bar",
+  "variants": [
+   {
+    "w": 800,
+    "h": 902,
+    "file": "img/rebar/dowel-head-800.webp",
+    "bytes": 42510
+   },
+   {
+    "w": 480,
+    "h": 541,
+    "file": "img/rebar/dowel-head-480.webp",
+    "bytes": 22074
+   }
+  ],
+  "alpha": false
+ },
+ "dowel-in-place": {
+  "alt": "Bending dowel bars in place",
+  "variants": [
+   {
+    "w": 800,
+    "h": 871,
+    "file": "img/rebar/dowel-in-place-800.webp",
+    "bytes": 30034
+   },
+   {
+    "w": 480,
+    "h": 523,
+    "file": "img/rebar/dowel-in-place-480.webp",
+    "bytes": 15326
+   }
+  ],
+  "alpha": false
+ },
+ "h-45s": {
+  "alt": "GMS H 45S hydraulic rebar cutting machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 898,
+    "file": "img/rebar/h-45s-1200.webp",
+    "bytes": 92708
+   },
+   {
+    "w": 800,
+    "h": 599,
+    "file": "img/rebar/h-45s-800.webp",
+    "bytes": 54062
+   },
+   {
+    "w": 480,
+    "h": 359,
+    "file": "img/rebar/h-45s-480.webp",
+    "bytes": 26352
+   }
+  ],
+  "alpha": true
+ },
+ "h-36s": {
+  "alt": "GMS H 36S hydraulic rebar cutter",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 946,
+    "file": "img/rebar/h-36s-1200.webp",
+    "bytes": 80724
+   },
+   {
+    "w": 800,
+    "h": 631,
+    "file": "img/rebar/h-36s-800.webp",
+    "bytes": 46420
+   },
+   {
+    "w": 480,
+    "h": 378,
+    "file": "img/rebar/h-36s-480.webp",
+    "bytes": 23178
+   }
+  ],
+  "alpha": true
+ },
+ "h-26": {
+  "alt": "GMS H 26 hydraulic rebar cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 764,
+    "file": "img/rebar/h-26-800.webp",
+    "bytes": 54976
+   },
+   {
+    "w": 480,
+    "h": 459,
+    "file": "img/rebar/h-26-480.webp",
+    "bytes": 30442
+   }
+  ],
+  "alpha": true
+ },
+ "h-38s": {
+  "alt": "GMS H 38S hydraulic rebar cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 575,
+    "file": "img/rebar/h-38s-800.webp",
+    "bytes": 49562
+   },
+   {
+    "w": 480,
+    "h": 345,
+    "file": "img/rebar/h-38s-480.webp",
+    "bytes": 26070
+   }
+  ],
+  "alpha": true
+ },
+ "h-55": {
+  "alt": "GMS H 55 hydraulic rebar cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 610,
+    "file": "img/rebar/h-55-800.webp",
+    "bytes": 51636
+   },
+   {
+    "w": 480,
+    "h": 366,
+    "file": "img/rebar/h-55-480.webp",
+    "bytes": 27822
+   }
+  ],
+  "alpha": true
+ },
+ "h-two-bars": {
+  "alt": "Cutting two rebars at once on an H series cutter",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 726,
+    "file": "img/rebar/h-two-bars-1200.webp",
+    "bytes": 58848
+   },
+   {
+    "w": 800,
+    "h": 484,
+    "file": "img/rebar/h-two-bars-800.webp",
+    "bytes": 33584
+   },
+   {
+    "w": 480,
+    "h": 290,
+    "file": "img/rebar/h-two-bars-480.webp",
+    "bytes": 17694
+   }
+  ],
+  "alpha": false
+ },
+ "h-bar-stop": {
+  "alt": "Adjustable bar stop on an H series rebar cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 971,
+    "file": "img/rebar/h-bar-stop-800.webp",
+    "bytes": 46540
+   },
+   {
+    "w": 480,
+    "h": 583,
+    "file": "img/rebar/h-bar-stop-480.webp",
+    "bytes": 24358
+   }
+  ],
+  "alpha": false
+ },
+ "h-blades": {
+  "alt": "H series cutting blades",
+  "variants": [
+   {
+    "w": 800,
+    "h": 982,
+    "file": "img/rebar/h-blades-800.webp",
+    "bytes": 18012
+   },
+   {
+    "w": 480,
+    "h": 589,
+    "file": "img/rebar/h-blades-480.webp",
+    "bytes": 9098
+   }
+  ],
+  "alpha": false
+ },
+ "h-head": {
+  "alt": "H series cutting head",
+  "variants": [
+   {
+    "w": 800,
+    "h": 985,
+    "file": "img/rebar/h-head-800.webp",
+    "bytes": 55098
+   },
+   {
+    "w": 480,
+    "h": 591,
+    "file": "img/rebar/h-head-480.webp",
+    "bytes": 27958
+   }
+  ],
+  "alpha": false
+ },
+ "m-45": {
+  "alt": "GMS M 45 mechanical rebar cutting machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1084,
+    "file": "img/rebar/m-45-1200.webp",
+    "bytes": 89676
+   },
+   {
+    "w": 800,
+    "h": 722,
+    "file": "img/rebar/m-45-800.webp",
+    "bytes": 49726
+   },
+   {
+    "w": 480,
+    "h": 433,
+    "file": "img/rebar/m-45-480.webp",
+    "bytes": 26136
+   }
+  ],
+  "alpha": true
+ },
+ "m-36": {
+  "alt": "GMS M 36 mechanical rebar cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 788,
+    "file": "img/rebar/m-36-800.webp",
+    "bytes": 56342
+   },
+   {
+    "w": 480,
+    "h": 473,
+    "file": "img/rebar/m-36-480.webp",
+    "bytes": 30670
+   }
+  ],
+  "alpha": true
+ },
+ "m-55": {
+  "alt": "GMS M 55 mechanical rebar cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 800,
+    "file": "img/rebar/m-55-800.webp",
+    "bytes": 52762
+   },
+   {
+    "w": 480,
+    "h": 480,
+    "file": "img/rebar/m-55-480.webp",
+    "bytes": 27976
+   }
+  ],
+  "alpha": true
+ },
+ "m-cutting": {
+  "alt": "Cutting head with rebar on an M series cutter",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 726,
+    "file": "img/rebar/m-cutting-1200.webp",
+    "bytes": 53434
+   },
+   {
+    "w": 800,
+    "h": 484,
+    "file": "img/rebar/m-cutting-800.webp",
+    "bytes": 29500
+   },
+   {
+    "w": 480,
+    "h": 290,
+    "file": "img/rebar/m-cutting-480.webp",
+    "bytes": 15024
+   }
+  ],
+  "alpha": false
+ },
+ "m-cutting-2": {
+  "alt": "Cutting a rebar on an M series cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 971,
+    "file": "img/rebar/m-cutting-2-800.webp",
+    "bytes": 47908
+   },
+   {
+    "w": 480,
+    "h": 583,
+    "file": "img/rebar/m-cutting-2-480.webp",
+    "bytes": 24580
+   }
+  ],
+  "alpha": false
+ },
+ "m-blades": {
+  "alt": "M series cutting blades",
+  "variants": [
+   {
+    "w": 800,
+    "h": 982,
+    "file": "img/rebar/m-blades-800.webp",
+    "bytes": 17082
+   },
+   {
+    "w": 480,
+    "h": 589,
+    "file": "img/rebar/m-blades-480.webp",
+    "bytes": 8598
+   }
+  ],
+  "alpha": false
+ },
+ "m-pedal": {
+  "alt": "Foot pedal of an M series cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 985,
+    "file": "img/rebar/m-pedal-800.webp",
+    "bytes": 25328
+   },
+   {
+    "w": 480,
+    "h": 591,
+    "file": "img/rebar/m-pedal-480.webp",
+    "bytes": 12750
+   }
+  ],
+  "alpha": false
+ },
+ "sh-60": {
+  "alt": "GMS SH 60 double-acting hydraulic rebar cutting machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1035,
+    "file": "img/rebar/sh-60-1200.webp",
+    "bytes": 101194
+   },
+   {
+    "w": 800,
+    "h": 690,
+    "file": "img/rebar/sh-60-800.webp",
+    "bytes": 55834
+   },
+   {
+    "w": 480,
+    "h": 414,
+    "file": "img/rebar/sh-60-480.webp",
+    "bytes": 29300
+   }
+  ],
+  "alpha": true
+ },
+ "sh-45": {
+  "alt": "GMS SH 45 hydraulic rebar cutting machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 867,
+    "file": "img/rebar/sh-45-1200.webp",
+    "bytes": 82330
+   },
+   {
+    "w": 800,
+    "h": 578,
+    "file": "img/rebar/sh-45-800.webp",
+    "bytes": 46484
+   },
+   {
+    "w": 480,
+    "h": 347,
+    "file": "img/rebar/sh-45-480.webp",
+    "bytes": 25088
+   }
+  ],
+  "alpha": true
+ },
+ "sh-unit": {
+  "alt": "SH series hydraulic cutting unit",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 726,
+    "file": "img/rebar/sh-unit-1200.webp",
+    "bytes": 78134
+   },
+   {
+    "w": 800,
+    "h": 484,
+    "file": "img/rebar/sh-unit-800.webp",
+    "bytes": 43260
+   },
+   {
+    "w": 480,
+    "h": 290,
+    "file": "img/rebar/sh-unit-480.webp",
+    "bytes": 20850
+   }
+  ],
+  "alpha": false
+ },
+ "sh-cut-end": {
+  "alt": "Cut rebar end on an SH series cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 971,
+    "file": "img/rebar/sh-cut-end-800.webp",
+    "bytes": 52010
+   },
+   {
+    "w": 480,
+    "h": 583,
+    "file": "img/rebar/sh-cut-end-480.webp",
+    "bytes": 26446
+   }
+  ],
+  "alpha": false
+ },
+ "sh-blades": {
+  "alt": "SH series cutting blades",
+  "variants": [
+   {
+    "w": 800,
+    "h": 982,
+    "file": "img/rebar/sh-blades-800.webp",
+    "bytes": 16120
+   },
+   {
+    "w": 480,
+    "h": 589,
+    "file": "img/rebar/sh-blades-480.webp",
+    "bytes": 8098
+   }
+  ],
+  "alpha": false
+ },
+ "sh-gauge": {
+  "alt": "Pressure gauge on an SH series cutter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 985,
+    "file": "img/rebar/sh-gauge-800.webp",
+    "bytes": 29638
+   },
+   {
+    "w": 480,
+    "h": 591,
+    "file": "img/rebar/sh-gauge-480.webp",
+    "bytes": 14750
+   }
+  ],
+  "alpha": false
+ },
+ "max-40": {
+  "alt": "GMS MAX 40 combined rebar cutting and bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 711,
+    "file": "img/rebar/max-40-800.webp",
+    "bytes": 46782
+   },
+   {
+    "w": 480,
+    "h": 426,
+    "file": "img/rebar/max-40-480.webp",
+    "bytes": 25012
+   }
+  ],
+  "alpha": true
+ },
+ "max-40-side": {
+  "alt": "MAX 40 cutting unit side",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1096,
+    "file": "img/rebar/max-40-side-1200.webp",
+    "bytes": 87228
+   },
+   {
+    "w": 800,
+    "h": 730,
+    "file": "img/rebar/max-40-side-800.webp",
+    "bytes": 52634
+   },
+   {
+    "w": 480,
+    "h": 438,
+    "file": "img/rebar/max-40-side-480.webp",
+    "bytes": 26214
+   }
+  ],
+  "alpha": true
+ },
+ "max-40-cutting": {
+  "alt": "MAX 40 cutting unit",
+  "variants": [
+   {
+    "w": 800,
+    "h": 865,
+    "file": "img/rebar/max-40-cutting-800.webp",
+    "bytes": 47416
+   },
+   {
+    "w": 480,
+    "h": 519,
+    "file": "img/rebar/max-40-cutting-480.webp",
+    "bytes": 24844
+   }
+  ],
+  "alpha": false
+ },
+ "max-40-bending": {
+  "alt": "Bending a rebar on the MAX 40 bending disc",
+  "variants": [
+   {
+    "w": 800,
+    "h": 880,
+    "file": "img/rebar/max-40-bending-800.webp",
+    "bytes": 42022
+   },
+   {
+    "w": 480,
+    "h": 528,
+    "file": "img/rebar/max-40-bending-480.webp",
+    "bytes": 21690
+   }
+  ],
+  "alpha": false
+ },
+ "sls-12": {
+  "alt": "GMS SLS 12 automatic stirrup bender with two decoilers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 447,
+    "file": "img/rebar/sls-12-1200.webp",
+    "bytes": 70180
+   },
+   {
+    "w": 800,
+    "h": 298,
+    "file": "img/rebar/sls-12-800.webp",
+    "bytes": 40576
+   },
+   {
+    "w": 480,
+    "h": 179,
+    "file": "img/rebar/sls-12-480.webp",
+    "bytes": 21242
+   }
+  ],
+  "alpha": true
+ },
+ "sls-12-omnitron": {
+  "alt": "SLS 12 Omnitron robotic stirrup handling cell",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1266,
+    "file": "img/rebar/sls-12-omnitron-1200.webp",
+    "bytes": 105526
+   },
+   {
+    "w": 800,
+    "h": 844,
+    "file": "img/rebar/sls-12-omnitron-800.webp",
+    "bytes": 63106
+   },
+   {
+    "w": 480,
+    "h": 506,
+    "file": "img/rebar/sls-12-omnitron-480.webp",
+    "bytes": 31386
+   }
+  ],
+  "alpha": true
+ },
+ "sls-decoilers": {
+  "alt": "SLS 12 decoilers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 773,
+    "file": "img/rebar/sls-decoilers-1200.webp",
+    "bytes": 102444
+   },
+   {
+    "w": 800,
+    "h": 515,
+    "file": "img/rebar/sls-decoilers-800.webp",
+    "bytes": 61654
+   },
+   {
+    "w": 480,
+    "h": 309,
+    "file": "img/rebar/sls-decoilers-480.webp",
+    "bytes": 28324
+   }
+  ],
+  "alpha": false
+ },
+ "sls-straightening": {
+  "alt": "SLS 12 straightening wheels",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 907,
+    "file": "img/rebar/sls-straightening-1200.webp",
+    "bytes": 77110
+   },
+   {
+    "w": 800,
+    "h": 605,
+    "file": "img/rebar/sls-straightening-800.webp",
+    "bytes": 46290
+   },
+   {
+    "w": 480,
+    "h": 363,
+    "file": "img/rebar/sls-straightening-480.webp",
+    "bytes": 20780
+   }
+  ],
+  "alpha": false
+ },
+ "sls-panel": {
+  "alt": "SLS 12 touch-screen control console",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 719,
+    "file": "img/rebar/sls-panel-1200.webp",
+    "bytes": 33298
+   },
+   {
+    "w": 800,
+    "h": 479,
+    "file": "img/rebar/sls-panel-800.webp",
+    "bytes": 19394
+   },
+   {
+    "w": 480,
+    "h": 288,
+    "file": "img/rebar/sls-panel-480.webp",
+    "bytes": 10594
+   }
+  ],
+  "alpha": false
+ },
+ "sls-shapes": {
+  "alt": "SLS 12 pre-loaded stirrup shape library",
+  "variants": [
+   {
+    "w": 800,
+    "h": 519,
+    "file": "img/rebar/sls-shapes-800.webp",
+    "bytes": 11938
+   },
+   {
+    "w": 480,
+    "h": 311,
+    "file": "img/rebar/sls-shapes-480.webp",
+    "bytes": 5866
+   }
+  ],
+  "alpha": false
+ },
+ "sls-bending": {
+  "alt": "Stirrup bending head of the SLS 12",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1053,
+    "file": "img/rebar/sls-bending-800.webp",
+    "bytes": 35948
+   },
+   {
+    "w": 480,
+    "h": 632,
+    "file": "img/rebar/sls-bending-480.webp",
+    "bytes": 18834
+   }
+  ],
+  "alpha": false
+ },
+ "sls-omnitron-cell": {
+  "alt": "SLS 12 Omnitron robotic cell",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 796,
+    "file": "img/rebar/sls-omnitron-cell-1200.webp",
+    "bytes": 110370
+   },
+   {
+    "w": 800,
+    "h": 530,
+    "file": "img/rebar/sls-omnitron-cell-800.webp",
+    "bytes": 60350
+   },
+   {
+    "w": 480,
+    "h": 318,
+    "file": "img/rebar/sls-omnitron-cell-480.webp",
+    "bytes": 26990
+   }
+  ],
+  "alpha": false
+ },
+ "sls-omnitron-handling": {
+  "alt": "Omnitron robot stacking finished stirrups",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1059,
+    "file": "img/rebar/sls-omnitron-handling-800.webp",
+    "bytes": 95520
+   },
+   {
+    "w": 480,
+    "h": 635,
+    "file": "img/rebar/sls-omnitron-handling-480.webp",
+    "bytes": 42362
+   }
+  ],
+  "alpha": false
+ },
+ "matrix-55": {
+  "alt": "GMS MATRIX 55 automatic rebar shear line",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 565,
+    "file": "img/rebar/matrix-55-1200.webp",
+    "bytes": 80308
+   },
+   {
+    "w": 800,
+    "h": 377,
+    "file": "img/rebar/matrix-55-800.webp",
+    "bytes": 47790
+   },
+   {
+    "w": 480,
+    "h": 226,
+    "file": "img/rebar/matrix-55-480.webp",
+    "bytes": 24592
+   }
+  ],
+  "alpha": true
+ },
+ "matrix-55-infeed": {
+  "alt": "MATRIX 55 infeed conveyor and feeding platform",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 741,
+    "file": "img/rebar/matrix-55-infeed-1200.webp",
+    "bytes": 100778
+   },
+   {
+    "w": 800,
+    "h": 494,
+    "file": "img/rebar/matrix-55-infeed-800.webp",
+    "bytes": 55718
+   },
+   {
+    "w": 480,
+    "h": 296,
+    "file": "img/rebar/matrix-55-infeed-480.webp",
+    "bytes": 29572
+   }
+  ],
+  "alpha": true
+ },
+ "matrix-55-panel": {
+  "alt": "MATRIX 55 control panel",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1145,
+    "file": "img/rebar/matrix-55-panel-1200.webp",
+    "bytes": 101608
+   },
+   {
+    "w": 800,
+    "h": 763,
+    "file": "img/rebar/matrix-55-panel-800.webp",
+    "bytes": 66418
+   },
+   {
+    "w": 480,
+    "h": 458,
+    "file": "img/rebar/matrix-55-panel-480.webp",
+    "bytes": 34288
+   }
+  ],
+  "alpha": true
+ },
+ "matrix-55-cutting": {
+  "alt": "MATRIX 55 cutting unit",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1057,
+    "file": "img/rebar/matrix-55-cutting-1200.webp",
+    "bytes": 93500
+   },
+   {
+    "w": 800,
+    "h": 705,
+    "file": "img/rebar/matrix-55-cutting-800.webp",
+    "bytes": 60230
+   },
+   {
+    "w": 480,
+    "h": 423,
+    "file": "img/rebar/matrix-55-cutting-480.webp",
+    "bytes": 30132
+   }
+  ],
+  "alpha": true
+ },
+ "matrix-55-outfeed": {
+  "alt": "MATRIX 55 outfeed conveyor",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 609,
+    "file": "img/rebar/matrix-55-outfeed-1200.webp",
+    "bytes": 91104
+   },
+   {
+    "w": 800,
+    "h": 406,
+    "file": "img/rebar/matrix-55-outfeed-800.webp",
+    "bytes": 50938
+   },
+   {
+    "w": 480,
+    "h": 244,
+    "file": "img/rebar/matrix-55-outfeed-480.webp",
+    "bytes": 24680
+   }
+  ],
+  "alpha": true
+ },
+ "matrix-55s": {
+  "alt": "MATRIX 55S shear line with outfeed conveyor and collecting bins",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 870,
+    "file": "img/rebar/matrix-55s-1200.webp",
+    "bytes": 144232
+   },
+   {
+    "w": 800,
+    "h": 580,
+    "file": "img/rebar/matrix-55s-800.webp",
+    "bytes": 81618
+   },
+   {
+    "w": 480,
+    "h": 348,
+    "file": "img/rebar/matrix-55s-480.webp",
+    "bytes": 42848
+   }
+  ],
+  "alpha": true
+ },
+ "matrix-55s-bins": {
+  "alt": "MATRIX 55S outfeed conveyor and collecting bins",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 618,
+    "file": "img/rebar/matrix-55s-bins-1200.webp",
+    "bytes": 83014
+   },
+   {
+    "w": 800,
+    "h": 412,
+    "file": "img/rebar/matrix-55s-bins-800.webp",
+    "bytes": 48148
+   },
+   {
+    "w": 480,
+    "h": 247,
+    "file": "img/rebar/matrix-55s-bins-480.webp",
+    "bytes": 23992
+   }
+  ],
+  "alpha": true
+ },
+ "matrix-platform": {
+  "alt": "MATRIX 55 loading platform",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 892,
+    "file": "img/rebar/matrix-platform-1200.webp",
+    "bytes": 55286
+   },
+   {
+    "w": 800,
+    "h": 594,
+    "file": "img/rebar/matrix-platform-800.webp",
+    "bytes": 32880
+   },
+   {
+    "w": 480,
+    "h": 357,
+    "file": "img/rebar/matrix-platform-480.webp",
+    "bytes": 14178
+   }
+  ],
+  "alpha": false
+ },
+ "matrix-operator": {
+  "alt": "Operator loading rebar on a MATRIX shear line",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 897,
+    "file": "img/rebar/matrix-operator-1200.webp",
+    "bytes": 151598
+   },
+   {
+    "w": 800,
+    "h": 598,
+    "file": "img/rebar/matrix-operator-800.webp",
+    "bytes": 94130
+   },
+   {
+    "w": 480,
+    "h": 359,
+    "file": "img/rebar/matrix-operator-480.webp",
+    "bytes": 39190
+   }
+  ],
+  "alpha": false
+ },
+ "matrix-bins": {
+  "alt": "Sheared rebars unloaded to collecting bins",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 928,
+    "file": "img/rebar/matrix-bins-1200.webp",
+    "bytes": 175486
+   },
+   {
+    "w": 800,
+    "h": 618,
+    "file": "img/rebar/matrix-bins-800.webp",
+    "bytes": 105126
+   },
+   {
+    "w": 480,
+    "h": 371,
+    "file": "img/rebar/matrix-bins-480.webp",
+    "bytes": 43264
+   }
+  ],
+  "alpha": false
+ },
+ "synclone-45s": {
+  "alt": "GMS SYNCLONE 45S servo-controlled double bender with control console and feeding conveyor",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 365,
+    "file": "img/rebar/synclone-45s-1200.webp",
+    "bytes": 50846
+   },
+   {
+    "w": 800,
+    "h": 243,
+    "file": "img/rebar/synclone-45s-800.webp",
+    "bytes": 29692
+   },
+   {
+    "w": 480,
+    "h": 146,
+    "file": "img/rebar/synclone-45s-480.webp",
+    "bytes": 15254
+   }
+  ],
+  "alpha": true
+ },
+ "synclone-matrix": {
+  "alt": "SYNCLONE 45S double bender combined with a MATRIX shear line",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 544,
+    "file": "img/rebar/synclone-matrix-1200.webp",
+    "bytes": 92544
+   },
+   {
+    "w": 800,
+    "h": 362,
+    "file": "img/rebar/synclone-matrix-800.webp",
+    "bytes": 55466
+   },
+   {
+    "w": 480,
+    "h": 217,
+    "file": "img/rebar/synclone-matrix-480.webp",
+    "bytes": 28458
+   }
+  ],
+  "alpha": true
+ },
+ "hb-12x3": {
+  "alt": "GMS HB 12x3 hydraulic mesh bending machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 627,
+    "file": "img/rebar/hb-12x3-1200.webp",
+    "bytes": 85292
+   },
+   {
+    "w": 800,
+    "h": 418,
+    "file": "img/rebar/hb-12x3-800.webp",
+    "bytes": 48582
+   },
+   {
+    "w": 480,
+    "h": 251,
+    "file": "img/rebar/hb-12x3-480.webp",
+    "bytes": 26602
+   }
+  ],
+  "alpha": true
+ },
+ "mh-8c": {
+  "alt": "GMS MH 8C mechanical mesh cutting machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 790,
+    "file": "img/rebar/mh-8c-1200.webp",
+    "bytes": 98122
+   },
+   {
+    "w": 800,
+    "h": 527,
+    "file": "img/rebar/mh-8c-800.webp",
+    "bytes": 54110
+   },
+   {
+    "w": 480,
+    "h": 316,
+    "file": "img/rebar/mh-8c-480.webp",
+    "bytes": 28116
+   }
+  ],
+  "alpha": true
+ },
+ "shop-benders-stock": {
+  "alt": "Rebar benders and cutters in stock at NovoTech, Mississauga",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/rebar/shop-benders-stock-480.webp",
+    "bytes": 23834
+   }
+  ],
+  "alpha": false
+ },
+ "shop-b36": {
+  "alt": "GMS B 36 rebar bender at the NovoTech warehouse",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/rebar/shop-b36-480.webp",
+    "bytes": 26884
+   }
+  ],
+  "alpha": false
+ },
+ "csa-label": {
+  "alt": "CSA approval label on a GMS rebar bender electrical panel",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 706,
+    "file": "img/rebar/csa-label-1200.webp",
+    "bytes": 120112
+   },
+   {
+    "w": 800,
+    "h": 471,
+    "file": "img/rebar/csa-label-800.webp",
+    "bytes": 70050
+   },
+   {
+    "w": 480,
+    "h": 282,
+    "file": "img/rebar/csa-label-480.webp",
+    "bytes": 32186
+   }
+  ],
+  "alpha": false
+ },
+ "tooling-set": {
+  "alt": "Standard bending tooling supplied with a GMS rebar bender",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1058,
+    "file": "img/rebar/tooling-set-1200.webp",
+    "bytes": 66152
+   },
+   {
+    "w": 800,
+    "h": 705,
+    "file": "img/rebar/tooling-set-800.webp",
+    "bytes": 39646
+   },
+   {
+    "w": 480,
+    "h": 423,
+    "file": "img/rebar/tooling-set-480.webp",
+    "bytes": 20682
+   }
+  ],
+  "alpha": false
+ },
+ "stirrup-accessory": {
+  "alt": "Optional stirrup bending attachment",
+  "variants": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/rebar/stirrup-accessory-480.webp",
+    "bytes": 5952
+   }
+  ],
+  "alpha": false
+ },
+ "spiral-accessory": {
+  "alt": "Optional spiral stirrup bending attachment",
+  "variants": [
+   {
+    "w": 480,
+    "h": 400,
+    "file": "img/rebar/spiral-accessory-480.webp",
+    "bytes": 15122
+   }
+  ],
+  "alpha": false
+ },
+ "bt26-shop": {
+  "alt": "BT 26 portable rebar bender, 110/220 V single phase",
+  "variants": [
+   {
+    "w": 370,
+    "h": 459,
+    "file": "img/rebar/bt26-shop-370.webp",
+    "bytes": 25556
+   }
+  ],
+  "alpha": false
+ },
+ "b36-stirrup": {
+  "alt": "Stirrup bending on a B 36 with standard accessories",
+  "variants": [
+   {
+    "w": 286,
+    "h": 480,
+    "file": "img/rebar/b36-stirrup-286.webp",
+    "bytes": 17224
+   }
+  ],
+  "alpha": false
+ },
+ "novotech-logo": {
+  "alt": "NovoTech Machine Tools Inc.",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 419,
+    "file": "img/site/novotech-logo-1200.webp",
+    "bytes": 106938
+   },
+   {
+    "w": 800,
+    "h": 279,
+    "file": "img/site/novotech-logo-800.webp",
+    "bytes": 62428
+   },
+   {
+    "w": 480,
+    "h": 168,
+    "file": "img/site/novotech-logo-480.webp",
+    "bytes": 32510
+   }
+  ],
+  "alpha": true
+ },
+ "video-rebar-bender-1": {
+  "alt": "Video: GMS factory introduction",
+  "variants": [
+   {
+    "w": 480,
+    "h": 416,
+    "file": "img/rebar/video-rebar-bender-1-480.webp",
+    "bytes": 17210
+   }
+  ],
+  "alpha": false
+ },
+ "video-rebar-bender-2": {
+  "alt": "Video: GMS rebar bending machine, manual or automatic control",
+  "variants": [
+   {
+    "w": 480,
+    "h": 415,
+    "file": "img/rebar/video-rebar-bender-2-480.webp",
+    "bytes": 26706
+   }
+  ],
+  "alpha": false
+ },
+ "video-rebar-bender-3": {
+  "alt": "Video: portable rebar bender bending stirrups in automatic mode",
+  "variants": [
+   {
+    "w": 480,
+    "h": 415,
+    "file": "img/rebar/video-rebar-bender-3-480.webp",
+    "bytes": 20282
+   }
+  ],
+  "alpha": false
+ },
+ "video-rebar-cutter-1": {
+  "alt": "Video: POWER 24 portable rebar cutter",
+  "variants": [
+   {
+    "w": 480,
+    "h": 429,
+    "file": "img/rebar/video-rebar-cutter-1-480.webp",
+    "bytes": 18404
+   }
+  ],
+  "alpha": false
+ },
+ "video-rebar-cutter-2": {
+  "alt": "Video: rebar shear line and double bender",
+  "variants": [
+   {
+    "w": 480,
+    "h": 414,
+    "file": "img/rebar/video-rebar-cutter-2-480.webp",
+    "bytes": 27436
+   }
+  ],
+  "alpha": false
+ }
+}
