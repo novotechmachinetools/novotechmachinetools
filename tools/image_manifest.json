@@ -4127,36 +4127,6 @@
    "bytes": 4458
   }
  },
- "video-LAKpCv_5U9M": {
-  "alt": "Video thumbnail",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 675,
-    "file": "img/rebar/video-LAKpCv_5U9M-1200.webp",
-    "bytes": 58146
-   },
-   {
-    "w": 800,
-    "h": 450,
-    "file": "img/rebar/video-LAKpCv_5U9M-800.webp",
-    "bytes": 36746
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/rebar/video-LAKpCv_5U9M-480.webp",
-    "bytes": 20088
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 90,
-   "file": "img/rebar/video-LAKpCv_5U9M-thumb.webp",
-   "bytes": 4548
-  }
- },
  "video-MPkRy0OXaNQ": {
   "alt": "Video thumbnail",
   "variants": [
@@ -4803,6 +4773,24 @@
    "h": 107,
    "file": "img/rebar/max-40-tooling-thumb.webp",
    "bytes": 3122
+  }
+ },
+ "video-EubXf7_Kn60": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/rebar/video-EubXf7_Kn60-480.webp",
+    "bytes": 16438
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/rebar/video-EubXf7_Kn60-thumb.webp",
+   "bytes": 3930
   }
  }
 }
