@@ -1833,102 +1833,120 @@
   "alt": "GMS MAX 40 combined rebar cutting and bending machine",
   "variants": [
    {
+    "w": 1200,
+    "h": 1121,
+    "file": "img/rebar/max-40-1200.webp",
+    "bytes": 105422
+   },
+   {
     "w": 800,
-    "h": 711,
+    "h": 747,
     "file": "img/rebar/max-40-800.webp",
-    "bytes": 46782
+    "bytes": 61416
    },
    {
     "w": 480,
-    "h": 426,
+    "h": 448,
     "file": "img/rebar/max-40-480.webp",
-    "bytes": 25012
+    "bytes": 30722
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 142,
+   "h": 149,
    "file": "img/rebar/max-40-thumb.webp",
-   "bytes": 6196
+   "bytes": 6936
   }
  },
  "max-40-side": {
-  "alt": "MAX 40 cutting unit side",
+  "alt": "MAX 40 cutting unit on the side of the machine",
   "variants": [
    {
     "w": 1200,
-    "h": 1096,
+    "h": 801,
     "file": "img/rebar/max-40-side-1200.webp",
-    "bytes": 87228
+    "bytes": 44008
    },
    {
     "w": 800,
-    "h": 730,
+    "h": 534,
     "file": "img/rebar/max-40-side-800.webp",
-    "bytes": 52634
+    "bytes": 25114
    },
    {
     "w": 480,
-    "h": 438,
+    "h": 320,
     "file": "img/rebar/max-40-side-480.webp",
-    "bytes": 26214
+    "bytes": 12226
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 146,
+   "h": 107,
    "file": "img/rebar/max-40-side-thumb.webp",
-   "bytes": 6600
+   "bytes": 2364
   }
  },
  "max-40-cutting": {
-  "alt": "MAX 40 cutting unit",
+  "alt": "MAX 40 cutting unit with a rebar in the blades",
   "variants": [
    {
+    "w": 1200,
+    "h": 801,
+    "file": "img/rebar/max-40-cutting-1200.webp",
+    "bytes": 101894
+   },
+   {
     "w": 800,
-    "h": 865,
+    "h": 534,
     "file": "img/rebar/max-40-cutting-800.webp",
-    "bytes": 47416
+    "bytes": 51526
    },
    {
     "w": 480,
-    "h": 519,
+    "h": 320,
     "file": "img/rebar/max-40-cutting-480.webp",
-    "bytes": 24844
+    "bytes": 22350
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 148,
-   "h": 160,
+   "w": 160,
+   "h": 107,
    "file": "img/rebar/max-40-cutting-thumb.webp",
-   "bytes": 3948
+   "bytes": 3936
   }
  },
  "max-40-bending": {
-  "alt": "Bending a rebar on the MAX 40 bending disc",
+  "alt": "MAX 40 bending a rebar on the bending disc",
   "variants": [
    {
+    "w": 1200,
+    "h": 801,
+    "file": "img/rebar/max-40-bending-1200.webp",
+    "bytes": 48450
+   },
+   {
     "w": 800,
-    "h": 880,
+    "h": 534,
     "file": "img/rebar/max-40-bending-800.webp",
-    "bytes": 42022
+    "bytes": 28204
    },
    {
     "w": 480,
-    "h": 528,
+    "h": 320,
     "file": "img/rebar/max-40-bending-480.webp",
-    "bytes": 21690
+    "bytes": 14202
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 145,
-   "h": 160,
+   "w": 160,
+   "h": 107,
    "file": "img/rebar/max-40-bending-thumb.webp",
-   "bytes": 3506
+   "bytes": 2714
   }
  },
  "sls-12": {
@@ -4725,6 +4743,66 @@
    "h": 90,
    "file": "img/rebar/video-RB9W4DQ9Mp4-thumb.webp",
    "bytes": 4278
+  }
+ },
+ "max-40-two-bars": {
+  "alt": "MAX 40 bending two bars at once",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/rebar/max-40-two-bars-1200.webp",
+    "bytes": 67724
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/rebar/max-40-two-bars-800.webp",
+    "bytes": 38364
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/rebar/max-40-two-bars-480.webp",
+    "bytes": 18132
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/rebar/max-40-two-bars-thumb.webp",
+   "bytes": 2944
+  }
+ },
+ "max-40-tooling": {
+  "alt": "MAX 40 standard bending pins, rollers and sleeves",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/rebar/max-40-tooling-1200.webp",
+    "bytes": 84884
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/rebar/max-40-tooling-800.webp",
+    "bytes": 41200
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/rebar/max-40-tooling-480.webp",
+    "bytes": 17596
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/rebar/max-40-tooling-thumb.webp",
+   "bytes": 3122
   }
  }
 }

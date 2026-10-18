@@ -333,22 +333,21 @@
   "trim": false
  },
  "max-40": {
-  "src": "/home/claude/novotech-src/gms2026/cutouts/p11-115-cut.png",
+  "src": "/home/claude/gms-site/dl/689c46789a3eb9a943567121_max40_gms_kombine_demir_kesme_bukme_makinasi.webp",
   "alt": "GMS MAX 40 combined rebar cutting and bending machine",
   "trim": true
  },
  "max-40-side": {
-  "src": "/home/claude/novotech-src/gms2026/cutouts/p11-119-cut.png",
-  "alt": "MAX 40 cutting unit side",
-  "trim": true
+  "src": "/home/claude/gms-site/dl/67e2d7190fa2326debb8ff77_Max_40_kombine_machine-2.avif",
+  "alt": "MAX 40 cutting unit on the side of the machine"
  },
  "max-40-cutting": {
-  "src": "/home/claude/novotech-src/gms2026/ntimg/i-011-113.png",
-  "alt": "MAX 40 cutting unit"
+  "src": "/home/claude/gms-site/dl/67e2d71965e46090e7a4d117_Max_40_kombine_machine_1-1.avif",
+  "alt": "MAX 40 cutting unit with a rebar in the blades"
  },
  "max-40-bending": {
-  "src": "/home/claude/novotech-src/gms2026/ntimg/i-011-114.png",
-  "alt": "Bending a rebar on the MAX 40 bending disc"
+  "src": "/home/claude/gms-site/dl/67e2d7198bf869d3e0d58df7_Max_40_kombine_machine.avif",
+  "alt": "MAX 40 bending a rebar on the bending disc"
  },
  "sls-12": {
   "src": "/home/claude/gms-site/dl/sls12_gms_otomatik_etriye_bukme_makinasi.webp",
@@ -853,5 +852,13 @@
   "alt": "Video thumbnail",
   "trim": false,
   "quality": 72
+ },
+ "max-40-two-bars": {
+  "src": "/home/claude/gms-site/dl/67e2d719cd8a36932cd93ee7_Max_40_kombine_machine_1.avif",
+  "alt": "MAX 40 bending two bars at once"
+ },
+ "max-40-tooling": {
+  "src": "/home/claude/gms-site/dl/67e2d7196c575db7566320a3_Max_40_kombine_machine-1.avif",
+  "alt": "MAX 40 standard bending pins, rollers and sleeves"
  }
 }
