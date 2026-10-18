@@ -107,7 +107,7 @@ small { font-size: .85em; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 32px; align-items: center; padding: 36px 0 28px; }
 .crumbs ol { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: 15px; color: var(--steel); }
 .crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--mist); }
-.crumbs a { color: var(--steel); text-decoration: none; }
+.crumbs a { color: var(--steel); text-decoration: none; display: inline-block; padding: 4px 0; }
 .crumbs a:hover { color: var(--orange-ink); text-decoration: underline; }
 .lead { font-size: 19px; max-width: 60ch; color: var(--charcoal-2); }
 .hero-points { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
@@ -272,7 +272,7 @@ small { font-size: .85em; }
 .family-card-link { margin-top: 6px; font-weight: 600; }
 .spec-table-range td { white-space: normal; }
 .spec-table-range tbody th small { font-weight: 400; color: var(--steel); display: block; }
-.spec-table-range tbody th a { color: var(--charcoal); font-weight: 700; }
+.spec-table-range tbody th a { color: var(--charcoal); font-weight: 700; display: inline-block; padding: 3px 0; }
 .related { padding: 30px 0 0; }
 .related-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; }
 .related-list a { font-family: var(--cond); font-weight: 600; font-size: 20px; color: var(--charcoal); }
@@ -282,7 +282,7 @@ small { font-size: .85em; }
 .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 28px; }
 .footer-brand, .footer-title { font-family: var(--cond); font-weight: 600; font-size: 21px; color: #fff; margin-bottom: 8px; }
 .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
-.site-footer a { color: #fff; text-decoration: none; }
+.site-footer a { color: #fff; text-decoration: none; display: inline-block; padding: 3px 0; }
 .site-footer a:hover { color: var(--orange); text-decoration: underline; }
 .footer-bottom { border-top: 1px solid #45474B; margin-top: 26px; padding-top: 14px; font-size: 14px; color: #B5B8BC; }
 
