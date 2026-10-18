@@ -11,6 +11,28 @@
     a.href = "mailto:" + e; a.textContent = e; EMAIL = EMAIL || e;
   });
 
+  /* ---------- "Find a machine" assistant: panel opens on demand, script loaded once ---------- */
+  var aiPanel = d.getElementById("ai-panel");
+  if (aiPanel) {
+    var aiLoaded = false, lastFocus = null;
+    function aiOpen() {
+      lastFocus = d.activeElement;
+      aiPanel.hidden = false; d.body.classList.add("ai-locked");
+      d.querySelectorAll(".ai-open").forEach(function (b) { b.setAttribute("aria-expanded", "true"); });
+      if (!aiLoaded) { aiLoaded = true; var sc = d.createElement("script"); sc.src = aiPanel.dataset.ai; sc.defer = true; d.body.appendChild(sc); }
+      else { var q = d.getElementById("ai-q"); if (q) q.focus(); }
+    }
+    function aiClose() {
+      aiPanel.hidden = true; d.body.classList.remove("ai-locked");
+      d.querySelectorAll(".ai-open").forEach(function (b) { b.setAttribute("aria-expanded", "false"); });
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    d.querySelectorAll(".ai-open").forEach(function (b) { b.addEventListener("click", aiOpen); });
+    aiPanel.querySelectorAll("[data-ai-close]").forEach(function (b) { b.addEventListener("click", aiClose); });
+    d.addEventListener("keydown", function (e) { if (e.key === "Escape" && !aiPanel.hidden) aiClose(); });
+    if (location.hash === "#find-a-machine") aiOpen();
+  }
+
   /* ---------- mobile navigation ---------- */
   var toggle = d.querySelector(".nav-toggle");
   var menu = d.getElementById("nav-menu");

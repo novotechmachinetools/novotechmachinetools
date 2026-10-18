@@ -10600,9 +10600,9 @@
   "variants": [
    {
     "w": 480,
-    "h": 506,
+    "h": 504,
     "file": "img/bandsaw/bk-hero-manual-480.webp",
-    "bytes": 33706
+    "bytes": 42342
    }
   ],
   "alpha": true,
@@ -10610,7 +10610,7 @@
    "w": 152,
    "h": 160,
    "file": "img/bandsaw/bk-hero-manual-thumb.webp",
-   "bytes": 6974
+   "bytes": 8278
   }
  },
  "bk-hero-semi": {
@@ -10618,15 +10618,15 @@
   "variants": [
    {
     "w": 800,
-    "h": 542,
+    "h": 541,
     "file": "img/bandsaw/bk-hero-semi-800.webp",
-    "bytes": 44622
+    "bytes": 62960
    },
    {
     "w": 480,
     "h": 325,
     "file": "img/bandsaw/bk-hero-semi-480.webp",
-    "bytes": 25702
+    "bytes": 33982
    }
   ],
   "alpha": true,
@@ -10634,7 +10634,7 @@
    "w": 160,
    "h": 108,
    "file": "img/bandsaw/bk-hero-semi-thumb.webp",
-   "bytes": 6678
+   "bytes": 8002
   }
  },
  "bk-hero-auto": {
@@ -10642,23 +10642,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 568,
+    "h": 566,
     "file": "img/bandsaw/bk-hero-auto-800.webp",
-    "bytes": 50064
+    "bytes": 59264
    },
    {
     "w": 480,
-    "h": 341,
+    "h": 340,
     "file": "img/bandsaw/bk-hero-auto-480.webp",
-    "bytes": 25728
+    "bytes": 29546
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 114,
+   "h": 113,
    "file": "img/bandsaw/bk-hero-auto-thumb.webp",
-   "bytes": 5932
+   "bytes": 6448
   }
  },
  "bk-hero-dc": {
@@ -10666,17 +10666,17 @@
   "variants": [
    {
     "w": 480,
-    "h": 302,
+    "h": 442,
     "file": "img/bandsaw/bk-hero-dc-480.webp",
-    "bytes": 18058
+    "bytes": 37766
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 101,
+   "h": 147,
    "file": "img/bandsaw/bk-hero-dc-thumb.webp",
-   "bytes": 4790
+   "bytes": 7666
   }
  },
  "bk-hero-hub": {
@@ -10684,17 +10684,17 @@
   "variants": [
    {
     "w": 480,
-    "h": 294,
+    "h": 340,
     "file": "img/bandsaw/bk-hero-hub-480.webp",
-    "bytes": 16260
+    "bytes": 24764
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 98,
+   "h": 113,
    "file": "img/bandsaw/bk-hero-hub-thumb.webp",
-   "bytes": 4314
+   "bytes": 6080
   }
  },
  "video-1jyMWbLef94": {
@@ -11830,17 +11830,17 @@
   "variants": [
    {
     "w": 480,
-    "h": 559,
+    "h": 558,
     "file": "img/bandsaw/bk-bms-230dg-1-cut-480.webp",
-    "bytes": 30120
+    "bytes": 38068
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 137,
+   "w": 138,
    "h": 160,
    "file": "img/bandsaw/bk-bms-230dg-1-cut-thumb.webp",
-   "bytes": 6184
+   "bytes": 6928
   }
  },
  "bk-bmsy-320g-1-cut": {
@@ -11850,7 +11850,7 @@
     "w": 480,
     "h": 447,
     "file": "img/bandsaw/bk-bmsy-320g-1-cut-480.webp",
-    "bytes": 32462
+    "bytes": 37962
    }
   ],
   "alpha": true,
@@ -11858,7 +11858,7 @@
    "w": 160,
    "h": 149,
    "file": "img/bandsaw/bk-bmsy-320g-1-cut-thumb.webp",
-   "bytes": 7438
+   "bytes": 8170
   }
  },
  "bk-bmsy-350m-1-cut": {
@@ -11866,23 +11866,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 603,
+    "h": 601,
     "file": "img/bandsaw/bk-bmsy-350m-1-cut-800.webp",
-    "bytes": 52032
+    "bytes": 62182
    },
    {
     "w": 480,
-    "h": 362,
+    "h": 361,
     "file": "img/bandsaw/bk-bmsy-350m-1-cut-480.webp",
-    "bytes": 26786
+    "bytes": 31448
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 121,
+   "h": 120,
    "file": "img/bandsaw/bk-bmsy-350m-1-cut-thumb.webp",
-   "bytes": 6234
+   "bytes": 6940
   }
  },
  "bk-bmso-320e-1-cut": {
@@ -11890,9 +11890,9 @@
   "variants": [
    {
     "w": 480,
-    "h": 304,
+    "h": 302,
     "file": "img/bandsaw/bk-bmso-320e-1-cut-480.webp",
-    "bytes": 20152
+    "bytes": 25574
    }
   ],
   "alpha": true,
@@ -11900,7 +11900,7 @@
    "w": 160,
    "h": 101,
    "file": "img/bandsaw/bk-bmso-320e-1-cut-thumb.webp",
-   "bytes": 5146
+   "bytes": 6026
   }
  },
  "bk-bmso-350ga-1-cut": {
@@ -11908,15 +11908,15 @@
   "variants": [
    {
     "w": 800,
-    "h": 686,
+    "h": 685,
     "file": "img/bandsaw/bk-bmso-350ga-1-cut-800.webp",
-    "bytes": 56492
+    "bytes": 75926
    },
    {
     "w": 480,
     "h": 411,
     "file": "img/bandsaw/bk-bmso-350ga-1-cut-480.webp",
-    "bytes": 28208
+    "bytes": 37468
    }
   ],
   "alpha": true,
@@ -11924,7 +11924,7 @@
    "w": 160,
    "h": 137,
    "file": "img/bandsaw/bk-bmso-350ga-1-cut-thumb.webp",
-   "bytes": 6558
+   "bytes": 8456
   }
  },
  "bk-bmsy-460c-1-cut": {
@@ -11932,9 +11932,9 @@
   "variants": [
    {
     "w": 480,
-    "h": 308,
+    "h": 309,
     "file": "img/bandsaw/bk-bmsy-460c-1-cut-480.webp",
-    "bytes": 19100
+    "bytes": 29010
    }
   ],
   "alpha": true,
@@ -11942,7 +11942,7 @@
    "w": 160,
    "h": 103,
    "file": "img/bandsaw/bk-bmsy-460c-1-cut-thumb.webp",
-   "bytes": 5080
+   "bytes": 6924
   }
  },
  "bk-bmso-440cgs-1-cut": {
@@ -11950,9 +11950,9 @@
   "variants": [
    {
     "w": 480,
-    "h": 303,
+    "h": 304,
     "file": "img/bandsaw/bk-bmso-440cgs-1-cut-480.webp",
-    "bytes": 20678
+    "bytes": 29296
    }
   ],
   "alpha": true,
@@ -11960,286 +11960,286 @@
    "w": 160,
    "h": 101,
    "file": "img/bandsaw/bk-bmso-440cgs-1-cut-thumb.webp",
-   "bytes": 5478
+   "bytes": 6834
   }
  },
- "nf-m250-1": {
-  "alt": "NovoFab NF-M 250 manual pivot band saw, 10-inch",
+ "nf-m10-1": {
+  "alt": "NovoFab NF-M 10 manual pivot band saw, 10-inch",
   "variants": [
    {
     "w": 800,
     "h": 675,
-    "file": "img/bandsaw/nf-m250-1-800.webp",
-    "bytes": 68566
+    "file": "img/bandsaw/nf-m10-1-800.webp",
+    "bytes": 30706
    },
    {
     "w": 480,
     "h": 405,
-    "file": "img/bandsaw/nf-m250-1-480.webp",
-    "bytes": 38066
+    "file": "img/bandsaw/nf-m10-1-480.webp",
+    "bytes": 18578
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 135,
-   "file": "img/bandsaw/nf-m250-1-thumb.webp",
-   "bytes": 9118
+   "file": "img/bandsaw/nf-m10-1-thumb.webp",
+   "bytes": 4006
   }
  },
- "nf-m250s-1": {
-  "alt": "NovoFab NF-M 250 S manual band saw with swivel bow",
+ "nf-m10s-1": {
+  "alt": "NovoFab NF-M 10 S manual band saw with swivel bow",
   "variants": [
    {
     "w": 800,
     "h": 701,
-    "file": "img/bandsaw/nf-m250s-1-800.webp",
-    "bytes": 51220
+    "file": "img/bandsaw/nf-m10s-1-800.webp",
+    "bytes": 30052
    },
    {
     "w": 480,
     "h": 420,
-    "file": "img/bandsaw/nf-m250s-1-480.webp",
-    "bytes": 29814
+    "file": "img/bandsaw/nf-m10s-1-480.webp",
+    "bytes": 18078
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 140,
-   "file": "img/bandsaw/nf-m250s-1-thumb.webp",
-   "bytes": 7652
+   "file": "img/bandsaw/nf-m10s-1-thumb.webp",
+   "bytes": 4060
   }
  },
- "nf-m260-1": {
-  "alt": "NovoFab NF-M 260 manual band saw with hydraulic down-feed",
+ "nf-m10d-1": {
+  "alt": "NovoFab NF-M 10 D manual band saw with hydraulic down-feed control",
   "variants": [
    {
     "w": 800,
     "h": 571,
-    "file": "img/bandsaw/nf-m260-1-800.webp",
-    "bytes": 43676
+    "file": "img/bandsaw/nf-m10d-1-800.webp",
+    "bytes": 27642
    },
    {
     "w": 480,
     "h": 343,
-    "file": "img/bandsaw/nf-m260-1-480.webp",
-    "bytes": 24928
+    "file": "img/bandsaw/nf-m10d-1-480.webp",
+    "bytes": 16170
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 114,
-   "file": "img/bandsaw/nf-m260-1-thumb.webp",
-   "bytes": 6072
+   "file": "img/bandsaw/nf-m10d-1-thumb.webp",
+   "bytes": 3448
   }
  },
- "nf-m260t-1": {
-  "alt": "NovoFab NF-M 260 T twin-mitre manual band saw",
+ "nf-m10t-1": {
+  "alt": "NovoFab NF-M 10 T twin-mitre manual band saw",
   "variants": [
    {
     "w": 800,
     "h": 595,
-    "file": "img/bandsaw/nf-m260t-1-800.webp",
-    "bytes": 44778
+    "file": "img/bandsaw/nf-m10t-1-800.webp",
+    "bytes": 28266
    },
    {
     "w": 480,
     "h": 357,
-    "file": "img/bandsaw/nf-m260t-1-480.webp",
-    "bytes": 25752
+    "file": "img/bandsaw/nf-m10t-1-480.webp",
+    "bytes": 16842
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 119,
-   "file": "img/bandsaw/nf-m260t-1-thumb.webp",
-   "bytes": 6252
+   "file": "img/bandsaw/nf-m10t-1-thumb.webp",
+   "bytes": 3580
   }
  },
- "nf-m400-1": {
-  "alt": "NovoFab NF-M 400 manual band saw, \u00d8400 mm",
+ "nf-m16-1": {
+  "alt": "NovoFab NF-M 16 manual band saw, 15-3/4-inch",
   "variants": [
    {
     "w": 800,
     "h": 615,
-    "file": "img/bandsaw/nf-m400-1-800.webp",
-    "bytes": 54870
+    "file": "img/bandsaw/nf-m16-1-800.webp",
+    "bytes": 34240
    },
    {
     "w": 480,
     "h": 369,
-    "file": "img/bandsaw/nf-m400-1-480.webp",
-    "bytes": 32206
+    "file": "img/bandsaw/nf-m16-1-480.webp",
+    "bytes": 20504
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 123,
-   "file": "img/bandsaw/nf-m400-1-thumb.webp",
-   "bytes": 7696
+   "file": "img/bandsaw/nf-m16-1-thumb.webp",
+   "bytes": 4408
   }
  },
- "nf-h250s-1": {
-  "alt": "NovoFab NF-H 250 S hydraulic semi-automatic band saw",
+ "nf-h10s-1": {
+  "alt": "NovoFab NF-H 10 S hydraulic semi-automatic band saw",
   "variants": [
    {
     "w": 800,
     "h": 741,
-    "file": "img/bandsaw/nf-h250s-1-800.webp",
-    "bytes": 71232
+    "file": "img/bandsaw/nf-h10s-1-800.webp",
+    "bytes": 37492
    },
    {
     "w": 480,
     "h": 444,
-    "file": "img/bandsaw/nf-h250s-1-480.webp",
-    "bytes": 40596
+    "file": "img/bandsaw/nf-h10s-1-480.webp",
+    "bytes": 21990
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 148,
-   "file": "img/bandsaw/nf-h250s-1-thumb.webp",
-   "bytes": 9918
+   "file": "img/bandsaw/nf-h10s-1-thumb.webp",
+   "bytes": 4708
   }
  },
- "nf-h260t-1": {
-  "alt": "NovoFab NF-H 260 T hydraulic twin-mitre band saw",
+ "nf-h10t-1": {
+  "alt": "NovoFab NF-H 10 T hydraulic twin-mitre band saw",
   "variants": [
    {
     "w": 800,
     "h": 527,
-    "file": "img/bandsaw/nf-h260t-1-800.webp",
-    "bytes": 46988
+    "file": "img/bandsaw/nf-h10t-1-800.webp",
+    "bytes": 28284
    },
    {
     "w": 480,
     "h": 316,
-    "file": "img/bandsaw/nf-h260t-1-480.webp",
-    "bytes": 26568
+    "file": "img/bandsaw/nf-h10t-1-480.webp",
+    "bytes": 16356
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 105,
-   "file": "img/bandsaw/nf-h260t-1-thumb.webp",
-   "bytes": 6284
+   "file": "img/bandsaw/nf-h10t-1-thumb.webp",
+   "bytes": 3308
   }
  },
- "nf-h330-1": {
-  "alt": "NovoFab NF-H 330 twin-mitre hydraulic band saw",
+ "nf-h13-1": {
+  "alt": "NovoFab NF-H 13 twin-mitre hydraulic band saw, 13-inch",
   "variants": [
    {
     "w": 800,
     "h": 819,
-    "file": "img/bandsaw/nf-h330-1-800.webp",
-    "bytes": 68752
+    "file": "img/bandsaw/nf-h13-1-800.webp",
+    "bytes": 41560
    },
    {
     "w": 480,
     "h": 492,
-    "file": "img/bandsaw/nf-h330-1-480.webp",
-    "bytes": 37630
+    "file": "img/bandsaw/nf-h13-1-480.webp",
+    "bytes": 23472
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 156,
    "h": 160,
-   "file": "img/bandsaw/nf-h330-1-thumb.webp",
-   "bytes": 8122
+   "file": "img/bandsaw/nf-h13-1-thumb.webp",
+   "bytes": 4292
   }
  },
- "nf-h330c-1": {
-  "alt": "NovoFab NF-H 330 C hydraulic band saw with movable control panel",
+ "nf-h13c-1": {
+  "alt": "NovoFab NF-H 13 C hydraulic band saw with movable control panel",
   "variants": [
    {
     "w": 1200,
     "h": 889,
-    "file": "img/bandsaw/nf-h330c-1-1200.webp",
-    "bytes": 80674
+    "file": "img/bandsaw/nf-h13c-1-1200.webp",
+    "bytes": 55534
    },
    {
     "w": 800,
     "h": 593,
-    "file": "img/bandsaw/nf-h330c-1-800.webp",
-    "bytes": 48510
+    "file": "img/bandsaw/nf-h13c-1-800.webp",
+    "bytes": 32914
    },
    {
     "w": 480,
     "h": 356,
-    "file": "img/bandsaw/nf-h330c-1-480.webp",
-    "bytes": 26134
+    "file": "img/bandsaw/nf-h13c-1-480.webp",
+    "bytes": 16650
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 119,
-   "file": "img/bandsaw/nf-h330c-1-thumb.webp",
-   "bytes": 6252
+   "file": "img/bandsaw/nf-h13c-1-thumb.webp",
+   "bytes": 3352
   }
  },
- "nf-h400-1": {
-  "alt": "NovoFab NF-H 400 hydraulic band saw, \u00d8400 mm",
+ "nf-h16-1": {
+  "alt": "NovoFab NF-H 16 hydraulic band saw, 15-3/4-inch",
   "variants": [
    {
     "w": 800,
     "h": 590,
-    "file": "img/bandsaw/nf-h400-1-800.webp",
-    "bytes": 53710
+    "file": "img/bandsaw/nf-h16-1-800.webp",
+    "bytes": 33512
    },
    {
     "w": 480,
     "h": 354,
-    "file": "img/bandsaw/nf-h400-1-480.webp",
-    "bytes": 30736
+    "file": "img/bandsaw/nf-h16-1-480.webp",
+    "bytes": 19788
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 118,
-   "file": "img/bandsaw/nf-h400-1-thumb.webp",
-   "bytes": 7302
+   "file": "img/bandsaw/nf-h16-1-thumb.webp",
+   "bytes": 4108
   }
  },
- "nf-h300sc-1": {
-  "alt": "NovoFab NF-H 300 SC single-column band saw with touch screen",
+ "nf-h12sc-1": {
+  "alt": "NovoFab NF-H 12 SC single-column band saw with touch screen",
   "variants": [
    {
     "w": 800,
     "h": 783,
-    "file": "img/bandsaw/nf-h300sc-1-800.webp",
-    "bytes": 49742
+    "file": "img/bandsaw/nf-h12sc-1-800.webp",
+    "bytes": 31432
    },
    {
     "w": 480,
     "h": 470,
-    "file": "img/bandsaw/nf-h300sc-1-480.webp",
-    "bytes": 28082
+    "file": "img/bandsaw/nf-h12sc-1-480.webp",
+    "bytes": 18308
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 157,
-   "file": "img/bandsaw/nf-h300sc-1-thumb.webp",
-   "bytes": 7564
+   "file": "img/bandsaw/nf-h12sc-1-thumb.webp",
+   "bytes": 4164
   }
  },
- "nf-h300sc-2": {
-  "alt": "NF-H 300 SC \u2014 hydraulic jaw clamping vise",
+ "nf-h12sc-2": {
+  "alt": "NF-H 12 SC \u2014 hydraulic jaw clamping vise",
   "variants": [
    {
     "w": 480,
     "h": 383,
-    "file": "img/bandsaw/nf-h300sc-2-480.webp",
+    "file": "img/bandsaw/nf-h12sc-2-480.webp",
     "bytes": 15112
    }
   ],
@@ -12247,17 +12247,17 @@
   "thumb": {
    "w": 160,
    "h": 128,
-   "file": "img/bandsaw/nf-h300sc-2-thumb.webp",
+   "file": "img/bandsaw/nf-h12sc-2-thumb.webp",
    "bytes": 3892
   }
  },
- "nf-h300sc-3": {
-  "alt": "NF-H 300 SC \u2014 PLC with finger-touch screen",
+ "nf-h12sc-3": {
+  "alt": "NF-H 12 SC \u2014 PLC with finger-touch screen",
   "variants": [
    {
     "w": 480,
     "h": 343,
-    "file": "img/bandsaw/nf-h300sc-3-480.webp",
+    "file": "img/bandsaw/nf-h12sc-3-480.webp",
     "bytes": 11078
    }
   ],
@@ -12265,17 +12265,17 @@
   "thumb": {
    "w": 160,
    "h": 114,
-   "file": "img/bandsaw/nf-h300sc-3-thumb.webp",
+   "file": "img/bandsaw/nf-h12sc-3-thumb.webp",
    "bytes": 2886
   }
  },
- "nf-h300sc-4": {
-  "alt": "NF-H 300 SC \u2014 chip box and coolant tank",
+ "nf-h12sc-4": {
+  "alt": "NF-H 12 SC \u2014 chip box and coolant tank",
   "variants": [
    {
     "w": 480,
     "h": 351,
-    "file": "img/bandsaw/nf-h300sc-4-480.webp",
+    "file": "img/bandsaw/nf-h12sc-4-480.webp",
     "bytes": 5526
    }
   ],
@@ -12283,53 +12283,53 @@
   "thumb": {
    "w": 160,
    "h": 117,
-   "file": "img/bandsaw/nf-h300sc-4-thumb.webp",
+   "file": "img/bandsaw/nf-h12sc-4-thumb.webp",
    "bytes": 1576
   }
  },
- "nf-h460-1": {
-  "alt": "NovoFab NF-H 460 swivel-head band saw, \u00d8460 mm",
+ "nf-h18-1": {
+  "alt": "NovoFab NF-H 18 swivel-head band saw, 18-inch",
   "variants": [
    {
     "w": 1200,
     "h": 959,
-    "file": "img/bandsaw/nf-h460-1-1200.webp",
-    "bytes": 92510
+    "file": "img/bandsaw/nf-h18-1-1200.webp",
+    "bytes": 67644
    },
    {
     "w": 800,
     "h": 639,
-    "file": "img/bandsaw/nf-h460-1-800.webp",
-    "bytes": 56822
+    "file": "img/bandsaw/nf-h18-1-800.webp",
+    "bytes": 40642
    },
    {
     "w": 480,
     "h": 384,
-    "file": "img/bandsaw/nf-h460-1-480.webp",
-    "bytes": 30452
+    "file": "img/bandsaw/nf-h18-1-480.webp",
+    "bytes": 19592
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 128,
-   "file": "img/bandsaw/nf-h460-1-thumb.webp",
-   "bytes": 6908
+   "file": "img/bandsaw/nf-h18-1-thumb.webp",
+   "bytes": 3658
   }
  },
- "nf-h460-2": {
-  "alt": "NF-H 460 \u2014 control panel with blade speed and feed controls",
+ "nf-h18-2": {
+  "alt": "NF-H 18 \u2014 control panel with blade speed and feed controls",
   "variants": [
    {
     "w": 800,
     "h": 476,
-    "file": "img/bandsaw/nf-h460-2-800.webp",
+    "file": "img/bandsaw/nf-h18-2-800.webp",
     "bytes": 21380
    },
    {
     "w": 480,
     "h": 285,
-    "file": "img/bandsaw/nf-h460-2-480.webp",
+    "file": "img/bandsaw/nf-h18-2-480.webp",
     "bytes": 12512
    }
   ],
@@ -12337,29 +12337,29 @@
   "thumb": {
    "w": 160,
    "h": 95,
-   "file": "img/bandsaw/nf-h460-2-thumb.webp",
+   "file": "img/bandsaw/nf-h18-2-thumb.webp",
    "bytes": 2376
   }
  },
- "nf-a300-1": {
-  "alt": "NovoFab NF-A 300 automatic band saw with roller feed",
+ "nf-a12-1": {
+  "alt": "NovoFab NF-A 12 automatic band saw with roller feed",
   "variants": [
    {
     "w": 1200,
     "h": 1028,
-    "file": "img/bandsaw/nf-a300-1-1200.webp",
+    "file": "img/bandsaw/nf-a12-1-1200.webp",
     "bytes": 78928
    },
    {
     "w": 800,
     "h": 686,
-    "file": "img/bandsaw/nf-a300-1-800.webp",
+    "file": "img/bandsaw/nf-a12-1-800.webp",
     "bytes": 41826
    },
    {
     "w": 480,
     "h": 411,
-    "file": "img/bandsaw/nf-a300-1-480.webp",
+    "file": "img/bandsaw/nf-a12-1-480.webp",
     "bytes": 19758
    }
   ],
@@ -12367,23 +12367,23 @@
   "thumb": {
    "w": 160,
    "h": 137,
-   "file": "img/bandsaw/nf-a300-1-thumb.webp",
+   "file": "img/bandsaw/nf-a12-1-thumb.webp",
    "bytes": 3578
   }
  },
- "nf-a300-2": {
-  "alt": "NF-A 300 \u2014 control panel with piece counter",
+ "nf-a12-2": {
+  "alt": "NF-A 12 \u2014 control panel with piece counter",
   "variants": [
    {
     "w": 800,
     "h": 550,
-    "file": "img/bandsaw/nf-a300-2-800.webp",
+    "file": "img/bandsaw/nf-a12-2-800.webp",
     "bytes": 39070
    },
    {
     "w": 480,
     "h": 330,
-    "file": "img/bandsaw/nf-a300-2-480.webp",
+    "file": "img/bandsaw/nf-a12-2-480.webp",
     "bytes": 21142
    }
   ],
@@ -12391,23 +12391,23 @@
   "thumb": {
    "w": 160,
    "h": 110,
-   "file": "img/bandsaw/nf-a300-2-thumb.webp",
+   "file": "img/bandsaw/nf-a12-2-thumb.webp",
    "bytes": 3434
   }
  },
- "nf-a300-3": {
-  "alt": "NF-A 300 \u2014 powered roller feed and hydraulic vise",
+ "nf-a12-3": {
+  "alt": "NF-A 12 \u2014 powered roller feed and hydraulic vise",
   "variants": [
    {
     "w": 800,
     "h": 549,
-    "file": "img/bandsaw/nf-a300-3-800.webp",
+    "file": "img/bandsaw/nf-a12-3-800.webp",
     "bytes": 45944
    },
    {
     "w": 480,
     "h": 329,
-    "file": "img/bandsaw/nf-a300-3-480.webp",
+    "file": "img/bandsaw/nf-a12-3-480.webp",
     "bytes": 25652
    }
   ],
@@ -12415,29 +12415,29 @@
   "thumb": {
    "w": 160,
    "h": 110,
-   "file": "img/bandsaw/nf-a300-3-thumb.webp",
+   "file": "img/bandsaw/nf-a12-3-thumb.webp",
    "bytes": 4242
   }
  },
- "nf-a300t-1": {
-  "alt": "NovoFab NF-A 300 T automatic mitre band saw, 0\u00b0\u201360\u00b0",
+ "nf-a12t-1": {
+  "alt": "NovoFab NF-A 12 T automatic mitre band saw, 0\u00b0\u201360\u00b0",
   "variants": [
    {
     "w": 1200,
     "h": 1178,
-    "file": "img/bandsaw/nf-a300t-1-1200.webp",
+    "file": "img/bandsaw/nf-a12t-1-1200.webp",
     "bytes": 56922
    },
    {
     "w": 800,
     "h": 785,
-    "file": "img/bandsaw/nf-a300t-1-800.webp",
+    "file": "img/bandsaw/nf-a12t-1-800.webp",
     "bytes": 34678
    },
    {
     "w": 480,
     "h": 471,
-    "file": "img/bandsaw/nf-a300t-1-480.webp",
+    "file": "img/bandsaw/nf-a12t-1-480.webp",
     "bytes": 17602
    }
   ],
@@ -12445,29 +12445,29 @@
   "thumb": {
    "w": 160,
    "h": 157,
-   "file": "img/bandsaw/nf-a300t-1-thumb.webp",
+   "file": "img/bandsaw/nf-a12t-1-thumb.webp",
    "bytes": 3558
   }
  },
- "nf-a300t-2": {
-  "alt": "NF-A 300 T \u2014 swivelling mitre table",
+ "nf-a12t-2": {
+  "alt": "NF-A 12 T \u2014 swivelling mitre table",
   "variants": [
    {
     "w": 1200,
     "h": 947,
-    "file": "img/bandsaw/nf-a300t-2-1200.webp",
+    "file": "img/bandsaw/nf-a12t-2-1200.webp",
     "bytes": 101088
    },
    {
     "w": 800,
     "h": 631,
-    "file": "img/bandsaw/nf-a300t-2-800.webp",
+    "file": "img/bandsaw/nf-a12t-2-800.webp",
     "bytes": 62868
    },
    {
     "w": 480,
     "h": 379,
-    "file": "img/bandsaw/nf-a300t-2-480.webp",
+    "file": "img/bandsaw/nf-a12t-2-480.webp",
     "bytes": 32156
    }
   ],
@@ -12475,47 +12475,47 @@
   "thumb": {
    "w": 160,
    "h": 126,
-   "file": "img/bandsaw/nf-a300t-2-thumb.webp",
+   "file": "img/bandsaw/nf-a12t-2-thumb.webp",
    "bytes": 4860
   }
  },
- "nf-a300sc-1": {
-  "alt": "NovoFab NF-A 300 SC single-column automatic band saw",
+ "nf-a12sc-1": {
+  "alt": "NovoFab NF-A 12 SC single-column automatic band saw",
   "variants": [
    {
     "w": 1200,
     "h": 979,
-    "file": "img/bandsaw/nf-a300sc-1-1200.webp",
-    "bytes": 63776
+    "file": "img/bandsaw/nf-a12sc-1-1200.webp",
+    "bytes": 47174
    },
    {
     "w": 800,
     "h": 653,
-    "file": "img/bandsaw/nf-a300sc-1-800.webp",
-    "bytes": 40966
+    "file": "img/bandsaw/nf-a12sc-1-800.webp",
+    "bytes": 30068
    },
    {
     "w": 480,
     "h": 392,
-    "file": "img/bandsaw/nf-a300sc-1-480.webp",
-    "bytes": 23370
+    "file": "img/bandsaw/nf-a12sc-1-480.webp",
+    "bytes": 17398
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 131,
-   "file": "img/bandsaw/nf-a300sc-1-thumb.webp",
-   "bytes": 5680
+   "file": "img/bandsaw/nf-a12sc-1-thumb.webp",
+   "bytes": 3396
   }
  },
- "nf-a300sc-2": {
-  "alt": "NF-A 300 SC \u2014 automatic chip conveyor",
+ "nf-a12sc-2": {
+  "alt": "NF-A 12 SC \u2014 automatic chip conveyor",
   "variants": [
    {
     "w": 480,
     "h": 390,
-    "file": "img/bandsaw/nf-a300sc-2-480.webp",
+    "file": "img/bandsaw/nf-a12sc-2-480.webp",
     "bytes": 18136
    }
   ],
@@ -12523,17 +12523,17 @@
   "thumb": {
    "w": 160,
    "h": 130,
-   "file": "img/bandsaw/nf-a300sc-2-thumb.webp",
+   "file": "img/bandsaw/nf-a12sc-2-thumb.webp",
    "bytes": 4564
   }
  },
- "nf-a300sc-3": {
-  "alt": "NF-A 300 SC \u2014 shuttle vise for automatic feeding",
+ "nf-a12sc-3": {
+  "alt": "NF-A 12 SC \u2014 shuttle vise for automatic feeding",
   "variants": [
    {
     "w": 462,
     "h": 405,
-    "file": "img/bandsaw/nf-a300sc-3-462.webp",
+    "file": "img/bandsaw/nf-a12sc-3-462.webp",
     "bytes": 19558
    }
   ],
@@ -12541,17 +12541,17 @@
   "thumb": {
    "w": 160,
    "h": 140,
-   "file": "img/bandsaw/nf-a300sc-3-thumb.webp",
+   "file": "img/bandsaw/nf-a12sc-3-thumb.webp",
    "bytes": 5164
   }
  },
- "nf-a300sc-4": {
-  "alt": "NF-A 300 SC \u2014 batch clamping device",
+ "nf-a12sc-4": {
+  "alt": "NF-A 12 SC \u2014 batch clamping device",
   "variants": [
    {
     "w": 380,
     "h": 405,
-    "file": "img/bandsaw/nf-a300sc-4-380.webp",
+    "file": "img/bandsaw/nf-a12sc-4-380.webp",
     "bytes": 16570
    }
   ],
@@ -12559,143 +12559,143 @@
   "thumb": {
    "w": 150,
    "h": 160,
-   "file": "img/bandsaw/nf-a300sc-4-thumb.webp",
+   "file": "img/bandsaw/nf-a12sc-4-thumb.webp",
    "bytes": 5592
   }
  },
- "nf-a330-1": {
-  "alt": "NovoFab NF-A 330 automatic twin-mitre band saw with 6 m material stand",
+ "nf-a13-1": {
+  "alt": "NovoFab NF-A 13 automatic twin-mitre band saw with 20 ft material stand",
   "variants": [
    {
     "w": 1200,
     "h": 654,
-    "file": "img/bandsaw/nf-a330-1-1200.webp",
-    "bytes": 63892
+    "file": "img/bandsaw/nf-a13-1-1200.webp",
+    "bytes": 38150
    },
    {
     "w": 800,
     "h": 436,
-    "file": "img/bandsaw/nf-a330-1-800.webp",
-    "bytes": 41014
+    "file": "img/bandsaw/nf-a13-1-800.webp",
+    "bytes": 24876
    },
    {
     "w": 480,
     "h": 261,
-    "file": "img/bandsaw/nf-a330-1-480.webp",
-    "bytes": 22536
+    "file": "img/bandsaw/nf-a13-1-480.webp",
+    "bytes": 13918
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 87,
-   "file": "img/bandsaw/nf-a330-1-thumb.webp",
-   "bytes": 5656
+   "file": "img/bandsaw/nf-a13-1-thumb.webp",
+   "bytes": 2620
   }
  },
- "nf-a330-2": {
-  "alt": "NF-A 330 \u2014 feeder with shuttle vise",
+ "nf-a13-2": {
+  "alt": "NF-A 13 \u2014 feeder with shuttle vise",
   "variants": [
    {
     "w": 480,
     "h": 325,
-    "file": "img/bandsaw/nf-a330-2-480.webp",
-    "bytes": 26060
+    "file": "img/bandsaw/nf-a13-2-480.webp",
+    "bytes": 18560
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 108,
-   "file": "img/bandsaw/nf-a330-2-thumb.webp",
-   "bytes": 6678
+   "file": "img/bandsaw/nf-a13-2-thumb.webp",
+   "bytes": 4724
   }
  },
- "nf-a330-3": {
-  "alt": "NF-A 330 \u2014 PLC control panel",
+ "nf-a13-3": {
+  "alt": "NF-A 13 \u2014 PLC control panel",
   "variants": [
    {
     "w": 480,
     "h": 325,
-    "file": "img/bandsaw/nf-a330-3-480.webp",
-    "bytes": 17218
+    "file": "img/bandsaw/nf-a13-3-480.webp",
+    "bytes": 9682
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 108,
-   "file": "img/bandsaw/nf-a330-3-thumb.webp",
-   "bytes": 4554
+   "file": "img/bandsaw/nf-a13-3-thumb.webp",
+   "bytes": 2642
   }
  },
- "nf-a350-1": {
-  "alt": "NovoFab NF-A 350 / NF-A 415 CNC automatic band saw",
+ "nf-a14-1": {
+  "alt": "NovoFab NF-A 14 / NF-A 16 CNC automatic band saw",
   "variants": [
    {
     "w": 1200,
     "h": 1099,
-    "file": "img/bandsaw/nf-a350-1-1200.webp",
-    "bytes": 112658
+    "file": "img/bandsaw/nf-a14-1-1200.webp",
+    "bytes": 61118
    },
    {
     "w": 800,
     "h": 733,
-    "file": "img/bandsaw/nf-a350-1-800.webp",
-    "bytes": 70574
+    "file": "img/bandsaw/nf-a14-1-800.webp",
+    "bytes": 39156
    },
    {
     "w": 480,
     "h": 440,
-    "file": "img/bandsaw/nf-a350-1-480.webp",
-    "bytes": 36986
+    "file": "img/bandsaw/nf-a14-1-480.webp",
+    "bytes": 20756
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 147,
-   "file": "img/bandsaw/nf-a350-1-thumb.webp",
-   "bytes": 8320
+   "file": "img/bandsaw/nf-a14-1-thumb.webp",
+   "bytes": 3600
   }
  },
- "nf-a460-1": {
-  "alt": "NovoFab NF-A 460 NC automatic band saw, \u00d8460 mm",
+ "nf-a18-1": {
+  "alt": "NovoFab NF-A 18 NC automatic band saw, 18-inch",
   "variants": [
    {
     "w": 1200,
     "h": 922,
-    "file": "img/bandsaw/nf-a460-1-1200.webp",
-    "bytes": 77582
+    "file": "img/bandsaw/nf-a18-1-1200.webp",
+    "bytes": 54682
    },
    {
     "w": 800,
     "h": 614,
-    "file": "img/bandsaw/nf-a460-1-800.webp",
-    "bytes": 49442
+    "file": "img/bandsaw/nf-a18-1-800.webp",
+    "bytes": 35162
    },
    {
     "w": 480,
     "h": 369,
-    "file": "img/bandsaw/nf-a460-1-480.webp",
-    "bytes": 25918
+    "file": "img/bandsaw/nf-a18-1-480.webp",
+    "bytes": 18168
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 123,
-   "file": "img/bandsaw/nf-a460-1-thumb.webp",
-   "bytes": 5900
+   "file": "img/bandsaw/nf-a18-1-thumb.webp",
+   "bytes": 3154
   }
  },
- "nf-a460-2": {
-  "alt": "NF-A 460 \u2014 feeder roller table",
+ "nf-a18-2": {
+  "alt": "NF-A 18 \u2014 feeder roller table",
   "variants": [
    {
     "w": 480,
     "h": 286,
-    "file": "img/bandsaw/nf-a460-2-480.webp",
+    "file": "img/bandsaw/nf-a18-2-480.webp",
     "bytes": 12044
    }
   ],
@@ -12703,107 +12703,107 @@
   "thumb": {
    "w": 160,
    "h": 95,
-   "file": "img/bandsaw/nf-a460-2-thumb.webp",
+   "file": "img/bandsaw/nf-a18-2-thumb.webp",
    "bytes": 3036
   }
  },
- "nf-a600-1": {
-  "alt": "NovoFab NF-A 600 CNC automatic band saw, \u00d8600 mm",
+ "nf-a24-1": {
+  "alt": "NovoFab NF-A 24 CNC automatic band saw, 23-5/8-inch",
   "variants": [
    {
     "w": 1200,
     "h": 846,
-    "file": "img/bandsaw/nf-a600-1-1200.webp",
-    "bytes": 72502
+    "file": "img/bandsaw/nf-a24-1-1200.webp",
+    "bytes": 50222
    },
    {
     "w": 800,
     "h": 564,
-    "file": "img/bandsaw/nf-a600-1-800.webp",
-    "bytes": 46058
+    "file": "img/bandsaw/nf-a24-1-800.webp",
+    "bytes": 33032
    },
    {
     "w": 480,
     "h": 338,
-    "file": "img/bandsaw/nf-a600-1-480.webp",
-    "bytes": 25644
+    "file": "img/bandsaw/nf-a24-1-480.webp",
+    "bytes": 18026
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 113,
-   "file": "img/bandsaw/nf-a600-1-thumb.webp",
-   "bytes": 6148
+   "file": "img/bandsaw/nf-a24-1-thumb.webp",
+   "bytes": 3430
   }
  },
- "nf-dc280-1": {
-  "alt": "NovoFab NF-DC 280 double column band saw",
+ "nf-dc11-1": {
+  "alt": "NovoFab NF-DC 11 double column band saw, 11-inch",
   "variants": [
    {
     "w": 1200,
     "h": 1222,
-    "file": "img/bandsaw/nf-dc280-1-1200.webp",
-    "bytes": 82356
+    "file": "img/bandsaw/nf-dc11-1-1200.webp",
+    "bytes": 50036
    },
    {
     "w": 800,
     "h": 815,
-    "file": "img/bandsaw/nf-dc280-1-800.webp",
-    "bytes": 52878
+    "file": "img/bandsaw/nf-dc11-1-800.webp",
+    "bytes": 31822
    },
    {
     "w": 480,
     "h": 489,
-    "file": "img/bandsaw/nf-dc280-1-480.webp",
-    "bytes": 29154
+    "file": "img/bandsaw/nf-dc11-1-480.webp",
+    "bytes": 18262
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 157,
    "h": 160,
-   "file": "img/bandsaw/nf-dc280-1-thumb.webp",
-   "bytes": 7222
+   "file": "img/bandsaw/nf-dc11-1-thumb.webp",
+   "bytes": 3850
   }
  },
- "nf-dc280t-1": {
-  "alt": "NovoFab NF-DC 280 T double column mitre band saw",
+ "nf-dc11t-1": {
+  "alt": "NovoFab NF-DC 11 T double column mitre band saw",
   "variants": [
    {
     "w": 1200,
     "h": 1081,
-    "file": "img/bandsaw/nf-dc280t-1-1200.webp",
-    "bytes": 79350
+    "file": "img/bandsaw/nf-dc11t-1-1200.webp",
+    "bytes": 44618
    },
    {
     "w": 800,
     "h": 721,
-    "file": "img/bandsaw/nf-dc280t-1-800.webp",
-    "bytes": 50608
+    "file": "img/bandsaw/nf-dc11t-1-800.webp",
+    "bytes": 28278
    },
    {
     "w": 480,
     "h": 432,
-    "file": "img/bandsaw/nf-dc280t-1-480.webp",
-    "bytes": 27626
+    "file": "img/bandsaw/nf-dc11t-1-480.webp",
+    "bytes": 16040
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 144,
-   "file": "img/bandsaw/nf-dc280t-1-thumb.webp",
-   "bytes": 6936
+   "file": "img/bandsaw/nf-dc11t-1-thumb.webp",
+   "bytes": 3434
   }
  },
- "nf-dc280t-2": {
-  "alt": "NF-DC 280 T \u2014 twin-column head with hydraulic down-feed",
+ "nf-dc11t-2": {
+  "alt": "NF-DC 11 T \u2014 twin-column head with hydraulic down-feed",
   "variants": [
    {
     "w": 400,
     "h": 300,
-    "file": "img/bandsaw/nf-dc280t-2-400.webp",
+    "file": "img/bandsaw/nf-dc11t-2-400.webp",
     "bytes": 11706
    }
   ],
@@ -12811,17 +12811,17 @@
   "thumb": {
    "w": 160,
    "h": 120,
-   "file": "img/bandsaw/nf-dc280t-2-thumb.webp",
+   "file": "img/bandsaw/nf-dc11t-2-thumb.webp",
    "bytes": 3856
   }
  },
- "nf-dc280t-3": {
-  "alt": "NF-DC 280 T \u2014 swivel table for 0\u00b0\u201345\u00b0 mitre cuts",
+ "nf-dc11t-3": {
+  "alt": "NF-DC 11 T \u2014 swivel table for 0\u00b0\u201345\u00b0 mitre cuts",
   "variants": [
    {
     "w": 400,
     "h": 300,
-    "file": "img/bandsaw/nf-dc280t-3-400.webp",
+    "file": "img/bandsaw/nf-dc11t-3-400.webp",
     "bytes": 9718
    }
   ],
@@ -12829,89 +12829,89 @@
   "thumb": {
    "w": 160,
    "h": 120,
-   "file": "img/bandsaw/nf-dc280t-3-thumb.webp",
+   "file": "img/bandsaw/nf-dc11t-3-thumb.webp",
    "bytes": 3300
   }
  },
- "nf-dc280a-1": {
-  "alt": "NovoFab NF-DC 280 A automatic double column band saw",
+ "nf-dc11a-1": {
+  "alt": "NovoFab NF-DC 11 A automatic double column band saw",
   "variants": [
    {
     "w": 1200,
     "h": 1170,
-    "file": "img/bandsaw/nf-dc280a-1-1200.webp",
-    "bytes": 89604
+    "file": "img/bandsaw/nf-dc11a-1-1200.webp",
+    "bytes": 60470
    },
    {
     "w": 800,
     "h": 780,
-    "file": "img/bandsaw/nf-dc280a-1-800.webp",
-    "bytes": 57608
+    "file": "img/bandsaw/nf-dc11a-1-800.webp",
+    "bytes": 39032
    },
    {
     "w": 480,
     "h": 468,
-    "file": "img/bandsaw/nf-dc280a-1-480.webp",
-    "bytes": 32084
+    "file": "img/bandsaw/nf-dc11a-1-480.webp",
+    "bytes": 21882
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 156,
-   "file": "img/bandsaw/nf-dc280a-1-thumb.webp",
-   "bytes": 7628
+   "file": "img/bandsaw/nf-dc11a-1-thumb.webp",
+   "bytes": 4290
   }
  },
- "nf-dc280av-1": {
-  "alt": "NovoFab NF-DC 280 AV automatic double column band saw with variable speed",
+ "nf-dc11av-1": {
+  "alt": "NovoFab NF-DC 11 AV automatic double column band saw with variable speed",
   "variants": [
    {
     "w": 1200,
     "h": 1052,
-    "file": "img/bandsaw/nf-dc280av-1-1200.webp",
-    "bytes": 52980
+    "file": "img/bandsaw/nf-dc11av-1-1200.webp",
+    "bytes": 53030
    },
    {
     "w": 800,
     "h": 701,
-    "file": "img/bandsaw/nf-dc280av-1-800.webp",
-    "bytes": 32486
+    "file": "img/bandsaw/nf-dc11av-1-800.webp",
+    "bytes": 32452
    },
    {
     "w": 480,
     "h": 421,
-    "file": "img/bandsaw/nf-dc280av-1-480.webp",
-    "bytes": 17344
+    "file": "img/bandsaw/nf-dc11av-1-480.webp",
+    "bytes": 17376
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
    "h": 140,
-   "file": "img/bandsaw/nf-dc280av-1-thumb.webp",
-   "bytes": 3856
+   "file": "img/bandsaw/nf-dc11av-1-thumb.webp",
+   "bytes": 3858
   }
  },
- "nf-dc280av-2": {
-  "alt": "NF-DC 280 AV \u2014 stepless blade speed control",
+ "nf-dc11av-2": {
+  "alt": "NF-DC 11 AV \u2014 stepless blade speed control",
   "variants": [
    {
     "w": 1200,
     "h": 837,
-    "file": "img/bandsaw/nf-dc280av-2-1200.webp",
+    "file": "img/bandsaw/nf-dc11av-2-1200.webp",
     "bytes": 26846
    },
    {
     "w": 800,
     "h": 558,
-    "file": "img/bandsaw/nf-dc280av-2-800.webp",
+    "file": "img/bandsaw/nf-dc11av-2-800.webp",
     "bytes": 16048
    },
    {
     "w": 480,
     "h": 335,
-    "file": "img/bandsaw/nf-dc280av-2-480.webp",
+    "file": "img/bandsaw/nf-dc11av-2-480.webp",
     "bytes": 9056
    }
   ],
@@ -12919,29 +12919,29 @@
   "thumb": {
    "w": 160,
    "h": 112,
-   "file": "img/bandsaw/nf-dc280av-2-thumb.webp",
+   "file": "img/bandsaw/nf-dc11av-2-thumb.webp",
    "bytes": 1966
   }
  },
- "nf-dc280av-3": {
-  "alt": "NF-DC 280 AV \u2014 automatic chip conveyor",
+ "nf-dc11av-3": {
+  "alt": "NF-DC 11 AV \u2014 automatic chip conveyor",
   "variants": [
    {
     "w": 1200,
     "h": 833,
-    "file": "img/bandsaw/nf-dc280av-3-1200.webp",
+    "file": "img/bandsaw/nf-dc11av-3-1200.webp",
     "bytes": 45698
    },
    {
     "w": 800,
     "h": 555,
-    "file": "img/bandsaw/nf-dc280av-3-800.webp",
+    "file": "img/bandsaw/nf-dc11av-3-800.webp",
     "bytes": 27994
    },
    {
     "w": 480,
     "h": 333,
-    "file": "img/bandsaw/nf-dc280av-3-480.webp",
+    "file": "img/bandsaw/nf-dc11av-3-480.webp",
     "bytes": 14638
    }
   ],
@@ -12949,29 +12949,29 @@
   "thumb": {
    "w": 160,
    "h": 111,
-   "file": "img/bandsaw/nf-dc280av-3-thumb.webp",
+   "file": "img/bandsaw/nf-dc11av-3-thumb.webp",
    "bytes": 2628
   }
  },
- "nf-dc280av-4": {
-  "alt": "NF-DC 280 AV \u2014 new hydraulic vise design",
+ "nf-dc11av-4": {
+  "alt": "NF-DC 11 AV \u2014 new hydraulic vise design",
   "variants": [
    {
     "w": 1200,
     "h": 831,
-    "file": "img/bandsaw/nf-dc280av-4-1200.webp",
+    "file": "img/bandsaw/nf-dc11av-4-1200.webp",
     "bytes": 51520
    },
    {
     "w": 800,
     "h": 554,
-    "file": "img/bandsaw/nf-dc280av-4-800.webp",
+    "file": "img/bandsaw/nf-dc11av-4-800.webp",
     "bytes": 32228
    },
    {
     "w": 480,
     "h": 332,
-    "file": "img/bandsaw/nf-dc280av-4-480.webp",
+    "file": "img/bandsaw/nf-dc11av-4-480.webp",
     "bytes": 17650
    }
   ],
@@ -12979,77 +12979,77 @@
   "thumb": {
    "w": 160,
    "h": 111,
-   "file": "img/bandsaw/nf-dc280av-4-thumb.webp",
+   "file": "img/bandsaw/nf-dc11av-4-thumb.webp",
    "bytes": 3332
   }
  },
- "nf-dc280-stand": {
-  "alt": "Roller support stand for NF-DC 280 saws",
+ "nf-dc11-stand": {
+  "alt": "Roller support stand for NF-DC 11 saws",
   "variants": [
    {
     "w": 1200,
     "h": 1284,
-    "file": "img/bandsaw/nf-dc280-stand-1200.webp",
-    "bytes": 62742
+    "file": "img/bandsaw/nf-dc11-stand-1200.webp",
+    "bytes": 37538
    },
    {
     "w": 800,
     "h": 856,
-    "file": "img/bandsaw/nf-dc280-stand-800.webp",
-    "bytes": 39684
+    "file": "img/bandsaw/nf-dc11-stand-800.webp",
+    "bytes": 24262
    },
    {
     "w": 480,
     "h": 514,
-    "file": "img/bandsaw/nf-dc280-stand-480.webp",
-    "bytes": 22946
+    "file": "img/bandsaw/nf-dc11-stand-480.webp",
+    "bytes": 14488
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 150,
    "h": 160,
-   "file": "img/bandsaw/nf-dc280-stand-thumb.webp",
-   "bytes": 6412
+   "file": "img/bandsaw/nf-dc11-stand-thumb.webp",
+   "bytes": 3628
   }
  },
- "nf-dc350-1": {
-  "alt": "NovoFab NF-DC 350 / NF-DC 400 gear-driven double column band saw",
+ "nf-dc14-1": {
+  "alt": "NovoFab NF-DC 14 / NF-DC 16 gear-driven double column band saw",
   "variants": [
    {
     "w": 1200,
     "h": 981,
-    "file": "img/bandsaw/nf-dc350-1-1200.webp",
-    "bytes": 56584
+    "file": "img/bandsaw/nf-dc14-1-1200.webp",
+    "bytes": 38586
    },
    {
     "w": 800,
     "h": 654,
-    "file": "img/bandsaw/nf-dc350-1-800.webp",
-    "bytes": 36746
+    "file": "img/bandsaw/nf-dc14-1-800.webp",
+    "bytes": 25436
    },
    {
     "w": 480,
     "h": 392,
-    "file": "img/bandsaw/nf-dc350-1-480.webp",
-    "bytes": 21028
+    "file": "img/bandsaw/nf-dc14-1-480.webp",
+    "bytes": 14754
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 131,
-   "file": "img/bandsaw/nf-dc350-1-thumb.webp",
-   "bytes": 5526
+   "file": "img/bandsaw/nf-dc14-1-thumb.webp",
+   "bytes": 3176
   }
  },
- "nf-dc350-2": {
-  "alt": "NF-DC 350 \u2014 hydraulic clamping vise",
+ "nf-dc14-2": {
+  "alt": "NF-DC 14 \u2014 hydraulic clamping vise",
   "variants": [
    {
     "w": 480,
     "h": 253,
-    "file": "img/bandsaw/nf-dc350-2-480.webp",
+    "file": "img/bandsaw/nf-dc14-2-480.webp",
     "bytes": 8088
    }
   ],
@@ -13057,17 +13057,17 @@
   "thumb": {
    "w": 160,
    "h": 84,
-   "file": "img/bandsaw/nf-dc350-2-thumb.webp",
+   "file": "img/bandsaw/nf-dc14-2-thumb.webp",
    "bytes": 1884
   }
  },
- "nf-dc350-3": {
-  "alt": "NF-DC 350 \u2014 work table and material stand",
+ "nf-dc14-3": {
+  "alt": "NF-DC 14 \u2014 work table and material stand",
   "variants": [
    {
     "w": 480,
     "h": 253,
-    "file": "img/bandsaw/nf-dc350-3-480.webp",
+    "file": "img/bandsaw/nf-dc14-3-480.webp",
     "bytes": 10038
    }
   ],
@@ -13075,89 +13075,89 @@
   "thumb": {
    "w": 160,
    "h": 84,
-   "file": "img/bandsaw/nf-dc350-3-thumb.webp",
+   "file": "img/bandsaw/nf-dc14-3-thumb.webp",
    "bytes": 2506
   }
  },
- "nf-dc500-1": {
-  "alt": "NovoFab NF-DC 500 gantry double column band saw, \u00d8500 mm",
+ "nf-dc20-1": {
+  "alt": "NovoFab NF-DC 20 gantry double column band saw, 19-3/4-inch",
   "variants": [
    {
     "w": 1200,
     "h": 798,
-    "file": "img/bandsaw/nf-dc500-1-1200.webp",
-    "bytes": 35022
+    "file": "img/bandsaw/nf-dc20-1-1200.webp",
+    "bytes": 35020
    },
    {
     "w": 800,
     "h": 532,
-    "file": "img/bandsaw/nf-dc500-1-800.webp",
-    "bytes": 21088
+    "file": "img/bandsaw/nf-dc20-1-800.webp",
+    "bytes": 21064
    },
    {
     "w": 480,
     "h": 319,
-    "file": "img/bandsaw/nf-dc500-1-480.webp",
-    "bytes": 10530
+    "file": "img/bandsaw/nf-dc20-1-480.webp",
+    "bytes": 10524
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
    "h": 106,
-   "file": "img/bandsaw/nf-dc500-1-thumb.webp",
-   "bytes": 2402
+   "file": "img/bandsaw/nf-dc20-1-thumb.webp",
+   "bytes": 2400
   }
  },
- "nf-dc600-1": {
-  "alt": "NovoFab NF-DC 600 gantry double column band saw, \u00d8600 mm",
+ "nf-dc24-1": {
+  "alt": "NovoFab NF-DC 24 gantry double column band saw, 23-5/8-inch",
   "variants": [
    {
     "w": 1200,
     "h": 708,
-    "file": "img/bandsaw/nf-dc600-1-1200.webp",
-    "bytes": 44926
+    "file": "img/bandsaw/nf-dc24-1-1200.webp",
+    "bytes": 44930
    },
    {
     "w": 800,
     "h": 472,
-    "file": "img/bandsaw/nf-dc600-1-800.webp",
-    "bytes": 26784
+    "file": "img/bandsaw/nf-dc24-1-800.webp",
+    "bytes": 26782
    },
    {
     "w": 480,
     "h": 283,
-    "file": "img/bandsaw/nf-dc600-1-480.webp",
-    "bytes": 13550
+    "file": "img/bandsaw/nf-dc24-1-480.webp",
+    "bytes": 13508
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
    "h": 94,
-   "file": "img/bandsaw/nf-dc600-1-thumb.webp",
+   "file": "img/bandsaw/nf-dc24-1-thumb.webp",
    "bytes": 2804
   }
  },
- "nf-dc600-2": {
-  "alt": "NF-DC 600 \u2014 chain-driven powered roller table",
+ "nf-dc24-2": {
+  "alt": "NF-DC 24 \u2014 chain-driven powered roller table",
   "variants": [
    {
     "w": 1200,
     "h": 777,
-    "file": "img/bandsaw/nf-dc600-2-1200.webp",
+    "file": "img/bandsaw/nf-dc24-2-1200.webp",
     "bytes": 75938
    },
    {
     "w": 800,
     "h": 518,
-    "file": "img/bandsaw/nf-dc600-2-800.webp",
+    "file": "img/bandsaw/nf-dc24-2-800.webp",
     "bytes": 48792
    },
    {
     "w": 480,
     "h": 311,
-    "file": "img/bandsaw/nf-dc600-2-480.webp",
+    "file": "img/bandsaw/nf-dc24-2-480.webp",
     "bytes": 28246
    }
   ],
@@ -13165,8 +13165,314 @@
   "thumb": {
    "w": 160,
    "h": 104,
-   "file": "img/bandsaw/nf-dc600-2-thumb.webp",
+   "file": "img/bandsaw/nf-dc24-2-thumb.webp",
    "bytes": 4982
+  }
+ },
+ "nf-m16-1-cut": {
+  "alt": "NovoFab NF-M 16 manual band saw, 15-3/4-inch",
+  "variants": [
+   {
+    "w": 800,
+    "h": 615,
+    "file": "img/bandsaw/nf-m16-1-cut-800.webp",
+    "bytes": 87508
+   },
+   {
+    "w": 480,
+    "h": 369,
+    "file": "img/bandsaw/nf-m16-1-cut-480.webp",
+    "bytes": 48182
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/bandsaw/nf-m16-1-cut-thumb.webp",
+   "bytes": 10480
+  }
+ },
+ "nf-m10t-1-cut": {
+  "alt": "NovoFab NF-M 10 T twin-mitre manual band saw",
+  "variants": [
+   {
+    "w": 800,
+    "h": 595,
+    "file": "img/bandsaw/nf-m10t-1-cut-800.webp",
+    "bytes": 66704
+   },
+   {
+    "w": 480,
+    "h": 357,
+    "file": "img/bandsaw/nf-m10t-1-cut-480.webp",
+    "bytes": 36458
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/bandsaw/nf-m10t-1-cut-thumb.webp",
+   "bytes": 8088
+  }
+ },
+ "nf-h18-1-cut": {
+  "alt": "NovoFab NF-H 18 swivel-head band saw, 18-inch",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 959,
+    "file": "img/bandsaw/nf-h18-1-cut-1200.webp",
+    "bytes": 135848
+   },
+   {
+    "w": 800,
+    "h": 639,
+    "file": "img/bandsaw/nf-h18-1-cut-800.webp",
+    "bytes": 81092
+   },
+   {
+    "w": 480,
+    "h": 384,
+    "file": "img/bandsaw/nf-h18-1-cut-480.webp",
+    "bytes": 41046
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 128,
+   "file": "img/bandsaw/nf-h18-1-cut-thumb.webp",
+   "bytes": 8552
+  }
+ },
+ "nf-h16-1-cut": {
+  "alt": "NovoFab NF-H 16 hydraulic band saw, 15-3/4-inch",
+  "variants": [
+   {
+    "w": 800,
+    "h": 590,
+    "file": "img/bandsaw/nf-h16-1-cut-800.webp",
+    "bytes": 86928
+   },
+   {
+    "w": 480,
+    "h": 354,
+    "file": "img/bandsaw/nf-h16-1-cut-480.webp",
+    "bytes": 46886
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 118,
+   "file": "img/bandsaw/nf-h16-1-cut-thumb.webp",
+   "bytes": 9954
+  }
+ },
+ "nf-h12sc-1-cut": {
+  "alt": "NovoFab NF-H 12 SC single-column band saw with touch screen",
+  "variants": [
+   {
+    "w": 800,
+    "h": 783,
+    "file": "img/bandsaw/nf-h12sc-1-cut-800.webp",
+    "bytes": 65084
+   },
+   {
+    "w": 480,
+    "h": 470,
+    "file": "img/bandsaw/nf-h12sc-1-cut-480.webp",
+    "bytes": 37170
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 157,
+   "file": "img/bandsaw/nf-h12sc-1-cut-thumb.webp",
+   "bytes": 9020
+  }
+ },
+ "nf-a12sc-1-cut": {
+  "alt": "NovoFab NF-A 12 SC single-column automatic band saw",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 979,
+    "file": "img/bandsaw/nf-a12sc-1-cut-1200.webp",
+    "bytes": 99798
+   },
+   {
+    "w": 800,
+    "h": 653,
+    "file": "img/bandsaw/nf-a12sc-1-cut-800.webp",
+    "bytes": 62636
+   },
+   {
+    "w": 480,
+    "h": 392,
+    "file": "img/bandsaw/nf-a12sc-1-cut-480.webp",
+    "bytes": 34718
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 131,
+   "file": "img/bandsaw/nf-a12sc-1-cut-thumb.webp",
+   "bytes": 7682
+  }
+ },
+ "nf-a18-1-cut": {
+  "alt": "NovoFab NF-A 18 NC automatic band saw, 18-inch",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 922,
+    "file": "img/bandsaw/nf-a18-1-cut-1200.webp",
+    "bytes": 116916
+   },
+   {
+    "w": 800,
+    "h": 614,
+    "file": "img/bandsaw/nf-a18-1-cut-800.webp",
+    "bytes": 71470
+   },
+   {
+    "w": 480,
+    "h": 369,
+    "file": "img/bandsaw/nf-a18-1-cut-480.webp",
+    "bytes": 37078
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/bandsaw/nf-a18-1-cut-thumb.webp",
+   "bytes": 7418
+  }
+ },
+ "nf-a13-1-cut": {
+  "alt": "NovoFab NF-A 13 automatic twin-mitre band saw with 20 ft material stand",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 654,
+    "file": "img/bandsaw/nf-a13-1-cut-1200.webp",
+    "bytes": 94694
+   },
+   {
+    "w": 800,
+    "h": 436,
+    "file": "img/bandsaw/nf-a13-1-cut-800.webp",
+    "bytes": 58912
+   },
+   {
+    "w": 480,
+    "h": 261,
+    "file": "img/bandsaw/nf-a13-1-cut-480.webp",
+    "bytes": 31402
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 87,
+   "file": "img/bandsaw/nf-a13-1-cut-thumb.webp",
+   "bytes": 6628
+  }
+ },
+ "nf-dc11a-1-cut": {
+  "alt": "NovoFab NF-DC 11 A automatic double column band saw",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1170,
+    "file": "img/bandsaw/nf-dc11a-1-cut-1200.webp",
+    "bytes": 118336
+   },
+   {
+    "w": 800,
+    "h": 780,
+    "file": "img/bandsaw/nf-dc11a-1-cut-800.webp",
+    "bytes": 75254
+   },
+   {
+    "w": 480,
+    "h": 468,
+    "file": "img/bandsaw/nf-dc11a-1-cut-480.webp",
+    "bytes": 41416
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 156,
+   "file": "img/bandsaw/nf-dc11a-1-cut-thumb.webp",
+   "bytes": 8698
+  }
+ },
+ "nf-dc14-1-cut": {
+  "alt": "NovoFab NF-DC 14 / NF-DC 16 gear-driven double column band saw",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 981,
+    "file": "img/bandsaw/nf-dc14-1-cut-1200.webp",
+    "bytes": 90602
+   },
+   {
+    "w": 800,
+    "h": 654,
+    "file": "img/bandsaw/nf-dc14-1-cut-800.webp",
+    "bytes": 58182
+   },
+   {
+    "w": 480,
+    "h": 392,
+    "file": "img/bandsaw/nf-dc14-1-cut-480.webp",
+    "bytes": 32668
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 131,
+   "file": "img/bandsaw/nf-dc14-1-cut-thumb.webp",
+   "bytes": 7884
+  }
+ },
+ "nf-dc11-1-cut": {
+  "alt": "NovoFab NF-DC 11 double column band saw, 11-inch",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1222,
+    "file": "img/bandsaw/nf-dc11-1-cut-1200.webp",
+    "bytes": 122462
+   },
+   {
+    "w": 800,
+    "h": 815,
+    "file": "img/bandsaw/nf-dc11-1-cut-800.webp",
+    "bytes": 80244
+   },
+   {
+    "w": 480,
+    "h": 489,
+    "file": "img/bandsaw/nf-dc11-1-cut-480.webp",
+    "bytes": 43552
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 157,
+   "h": 160,
+   "file": "img/bandsaw/nf-dc11-1-cut-thumb.webp",
+   "bytes": 9570
   }
  }
 }

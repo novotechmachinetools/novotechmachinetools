@@ -394,12 +394,13 @@ small { font-size: .85em; }
   .hero-minis { display: none; }
   .jump-list { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
   .family-grid, .videos-grid, .quote-grid, .agents-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
-  .subpage-grid { grid-template-columns: 1fr; }
+  .subpage-grid, .line-block .subpage-grid { grid-template-columns: 1fr 1fr; }
   .family-cards { grid-template-columns: 1fr 1fr; }
   .why-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
+  .subpage-grid, .line-block .subpage-grid { grid-template-columns: 1fr; }
   body { font-size: 16px; }
   .header-contact .phone { font-size: 18px; }
   .why-grid, .footer-grid, .quote-form { grid-template-columns: 1fr; }
@@ -418,3 +419,80 @@ small { font-size: .85em; }
   .spec-table { min-width: 0; font-size: 12px; }
   a { color: inherit; text-decoration: none; }
 }
+/* ---------- band saw hub: premium (Bekamak) and value (NovoFab) line blocks ---------- */
+.line-block { padding-top: 30px; }
+.line-block .subpage-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.line-block .subpage-art { height: 200px; }
+.line-block .subpage-body { padding: 12px 14px 16px; }
+.line-block .subpage-body p { font-size: 15px; }
+.line-head { margin-bottom: 16px; padding: 18px 20px 14px; border: 1px solid var(--line); border-left: 6px solid var(--charcoal); background: var(--white); }
+.line-head .line-badge { margin-bottom: 8px; }
+.line-head .group-lead { margin: 0 0 8px; max-width: 80ch; }
+.line-title { font-size: 34px; margin: 0 0 6px; }
+.line-links { margin: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
+.btn-small { font-size: 16px; padding: 7px 14px; }
+.line-value .line-head { border-left-color: var(--orange); background: #FFF7EE; }
+.line-value .line-title { font-family: var(--cond); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--orange-ink); }
+.line-value .subpage-card { border-top-color: var(--orange); background: #FFFCF8; }
+.line-value .subpage-body h3 { font-family: var(--cond); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; font-size: 24px; }
+.line-premium .subpage-card { border-top-color: var(--charcoal); }
+.line-premium .subpage-body h3 { font-size: 26px; }
+.subpage-body h3 { margin-bottom: 6px; }
+.subpage-body h3 a { color: var(--charcoal); text-decoration: none; }
+.subpage-body h3 a:hover { color: var(--orange-deep); }
+.subpage-art.is-cutout { background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); }
+.group-cards.line-value .group-head h2 { font-family: var(--cond); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--orange-ink); }
+.group-cards.line-value .family-card { border-color: #F2C08A; background: #FFFCF8; }
+.line-chip { display: inline-block; vertical-align: middle; font-family: var(--cond); font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--charcoal); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; margin-right: 8px; }
+.line-chip.line-novofab { color: var(--orange-ink); border-color: var(--orange); background: #FFF7EE; }
+.range-line { margin-top: 18px; }
+.range-title { font-size: 24px; margin: 0 0 10px; }
+.range-line.line-value .range-title { text-transform: uppercase; letter-spacing: .03em; color: var(--orange-ink); }
+.range-line.line-value .spec-table thead th { background: var(--orange-ink); }
+.section-nav a.section-nav-alt { border-color: var(--orange); color: var(--orange-ink); background: #FFF7EE; }
+.related-alt .line-chip { margin-bottom: 6px; }
+.related-cards .related-body .line-chip { width: max-content; }
+@media (max-width: 700px) { .line-title { font-size: 28px; } .line-head { padding: 14px 14px 12px; } }
+
+/* ---------- "Find a machine" AI assistant ---------- */
+.ai-open { display: inline-flex; align-items: center; gap: 8px; font-family: var(--cond); font-weight: 600; font-size: 18px; color: var(--charcoal); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px 7px 11px; cursor: pointer; line-height: 1; white-space: nowrap; }
+.ai-open:hover, .ai-open:focus-visible { border-color: var(--orange); color: var(--orange-ink); background: #FFF7EE; }
+.ai-open svg { flex: none; }
+.ai-panel { position: fixed; inset: 0; z-index: 90; display: flex; align-items: flex-start; justify-content: center; padding: 6vh 16px 16px; }
+.ai-panel[hidden] { display: none; }
+.ai-backdrop { position: absolute; inset: 0; background: rgba(31, 32, 34, .55); }
+.ai-dialog { position: relative; width: min(760px, 100%); max-height: 88vh; display: flex; flex-direction: column; background: var(--white); border-radius: 12px; box-shadow: 0 24px 60px rgba(0, 0, 0, .35); overflow: hidden; }
+.ai-head { display: flex; align-items: flex-start; gap: 16px; padding: 18px 20px 12px; border-bottom: 1px solid var(--line-soft); background: var(--paper); }
+.ai-head h2 { font-size: 26px; margin: 0 0 4px; }
+.ai-head p { margin: 0; font-size: 15px; color: var(--charcoal-2); }
+.ai-close { margin-left: auto; flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--white); font-size: 24px; line-height: 1; cursor: pointer; color: var(--charcoal); }
+.ai-close:hover { border-color: var(--orange); color: var(--orange-ink); }
+.ai-log { flex: 1 1 auto; overflow-y: auto; padding: 14px 20px; display: flex; flex-direction: column; gap: 12px; min-height: 120px; }
+.ai-log:empty { min-height: 0; padding: 0; }
+.ai-msg { max-width: 92%; padding: 10px 14px; border-radius: 12px; font-size: 16px; line-height: 1.5; }
+.ai-msg p { margin: 0 0 8px; } .ai-msg p:last-child { margin-bottom: 0; } .ai-msg ul { margin: 6px 0 8px; padding-left: 20px; }
+.ai-user { align-self: flex-end; background: var(--charcoal); color: #fff; border-bottom-right-radius: 4px; }
+.ai-assistant { align-self: flex-start; background: var(--paper); border-bottom-left-radius: 4px; }
+.ai-thinking { color: var(--steel); font-style: italic; }
+.ai-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.ai-card { display: flex; gap: 12px; align-items: center; padding: 10px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--charcoal); background: var(--white); }
+.ai-card:hover { border-color: var(--orange); box-shadow: 0 4px 14px rgba(0, 0, 0, .08); }
+.ai-card img { width: 96px; height: 72px; object-fit: contain; flex: none; background: #fff; }
+.ai-card-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ai-card-line { font-family: var(--cond); font-weight: 700; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--steel); }
+.ai-card strong { font-family: var(--cond); font-weight: 700; font-size: 19px; line-height: 1.1; }
+.ai-card-fam, .ai-card-cap { font-size: 13.5px; color: var(--charcoal-2); }
+.ai-card-go { font-size: 13.5px; font-weight: 600; color: var(--orange-ink); margin-top: 2px; }
+.ai-form { display: flex; gap: 10px; padding: 12px 20px 4px; align-items: stretch; }
+.ai-form textarea { flex: 1 1 auto; resize: none; font: inherit; font-size: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; min-height: 48px; }
+.ai-form textarea:focus { outline: 2px solid var(--orange); outline-offset: 1px; border-color: var(--orange); }
+.ai-form .btn { align-self: stretch; }
+.ai-suggest { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 20px 4px; }
+.ai-suggest[hidden] { display: none; }
+.ai-suggest button { font: inherit; font-size: 14px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); color: var(--charcoal); cursor: pointer; }
+.ai-suggest button:hover { border-color: var(--orange); color: var(--orange-ink); }
+.ai-foot { margin: 6px 0 0; padding: 8px 20px 14px; font-size: 13px; color: var(--steel); }
+body.ai-locked { overflow: hidden; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 960px) { .ai-open span { display: none; } .ai-open { padding: 8px; border-radius: 50%; } }
+@media (max-width: 600px) { .ai-panel { padding: 0; align-items: stretch; } .ai-dialog { max-height: none; height: 100%; border-radius: 0; } .ai-cards { grid-template-columns: 1fr; } .ai-head h2 { font-size: 22px; } }

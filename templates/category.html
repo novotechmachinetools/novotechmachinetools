@@ -24,10 +24,11 @@
       {% if page.brand %}<p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
       {% elif page.hero_brand_line %}<p class="hero-brand">{{ page.hero_brand_line }}</p>{% endif %}
       {% if page.section %}
-      <nav class="section-nav" aria-label="Rebar machinery pages">
+      <nav class="section-nav" aria-label="{{ page.section.label }} pages">
         <span class="section-nav-label">{{ page.section.label }}:</span>
         {% for s in page.section.pages %}<a href="{{ s.href }}"{% if s.current %} aria-current="page"{% endif %}>{{ s.label }}</a>{% endfor %}
         <a href="{{ page.section.hub.href }}" class="section-nav-hub">{{ page.section.hub.label }}</a>
+        {% if page.section.alt %}<a href="{{ page.section.alt.href }}" class="section-nav-alt line-{{ page.section.alt.brand }}">{{ page.section.alt.line_label }} {{ page.section.alt.label|lower }} saws →</a>{% endif %}
       </nav>
       {% endif %}
     </div>
@@ -150,13 +151,16 @@
 
 {% if page.related_pages or page.section %}
 <section class="related wrap" aria-labelledby="related-title">
-  <h2 id="related-title">More rebar machinery from NovoTech</h2>
+  <h2 id="related-title">{{ page.section.related_title if page.section and page.section.related_title else ('More ' ~ page.section.line_name ~ ' band saws from NovoTech' if page.section and page.section.line_name else 'More rebar machinery from NovoTech') }}</h2>
   {% if page.section %}
   <ul class="related-cards">
     {% for s in page.section.pages if not s.current %}
-    <li><a href="{{ s.href }}">{% if s.image %}<span class="related-art{{ ' is-cutout' if s.image.alpha else '' }}"><img src="{{ s.image.small }}" srcset="{{ s.image.srcset }}" sizes="(max-width: 600px) 92vw, 380px" width="{{ s.image.w }}" height="{{ s.image.h }}" alt="{{ s.image.alt }}" loading="lazy" decoding="async"></span>{% endif %}<span class="related-body"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></span></a></li>
+    <li><a href="{{ s.href }}">{% if s.image %}<span class="related-art{{ ' is-cutout' if s.image.alpha else '' }}"><img src="{{ s.image.small }}" srcset="{{ s.image.srcset }}" sizes="(max-width: 600px) 92vw, 380px" width="{{ s.image.w }}" height="{{ s.image.h }}" alt="{{ s.image.alt }}" loading="lazy" decoding="async"></span>{% endif %}<span class="related-body"><strong>{{ (page.section.line_name ~ ' ' ~ s.label|lower ~ ' band saws') if page.section.line_name else s.label }}</strong><span>{{ s.blurb }}</span></span></a></li>
     {% endfor %}
-    <li><a href="{{ page.section.hub.href }}">{% if page.section.hub.image %}<span class="related-art{{ ' is-cutout' if page.section.hub.image.alpha else '' }}"><img src="{{ page.section.hub.image.small }}" srcset="{{ page.section.hub.image.srcset }}" sizes="(max-width: 600px) 92vw, 380px" width="{{ page.section.hub.image.w }}" height="{{ page.section.hub.image.h }}" alt="{{ page.section.hub.image.alt }}" loading="lazy" decoding="async"></span>{% endif %}<span class="related-body"><strong>{{ page.section.hub.label }}</strong><span>Every GMS rebar bender, cutter and automatic line NovoTech supplies, with the capacity table for the whole range.</span></span></a></li>
+    {% if page.section.alt %}{% set s = page.section.alt %}
+    <li class="related-alt line-{{ s.brand }}"><a href="{{ s.href }}">{% if s.image %}<span class="related-art{{ ' is-cutout' if s.image.alpha else '' }}"><img src="{{ s.image.small }}" srcset="{{ s.image.srcset }}" sizes="(max-width: 600px) 92vw, 380px" width="{{ s.image.w }}" height="{{ s.image.h }}" alt="{{ s.image.alt }}" loading="lazy" decoding="async"></span>{% endif %}<span class="related-body"><span class="line-chip line-{{ s.brand }}">{{ site.brands[s.brand].line }}</span><strong>{{ s.line_label }} {{ s.label|lower }} band saws</strong><span>{{ s.blurb }}</span></span></a></li>
+    {% endif %}
+    <li><a href="{{ page.section.hub.href }}">{% if page.section.hub.image %}<span class="related-art{{ ' is-cutout' if page.section.hub.image.alpha else '' }}"><img src="{{ page.section.hub.image.small }}" srcset="{{ page.section.hub.image.srcset }}" sizes="(max-width: 600px) 92vw, 380px" width="{{ page.section.hub.image.w }}" height="{{ page.section.hub.image.h }}" alt="{{ page.section.hub.image.alt }}" loading="lazy" decoding="async"></span>{% endif %}<span class="related-body"><strong>{{ page.section.hub.label }}</strong><span>{{ page.section.hub.blurb or 'Every GMS rebar bender, cutter and automatic line NovoTech supplies, with the capacity table for the whole range.' }}</span></span></a></li>
   </ul>
   {% endif %}
   {% if page.related_pages %}

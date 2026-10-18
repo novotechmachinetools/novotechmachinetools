@@ -36,6 +36,33 @@
   </div>
 </section>
 
+{% if page.lines %}
+{% for ln in page.lines %}{% set br = site.brands[ln.brand] %}
+<section class="wrap subpages line-block line-{{ ln.id }}" id="{{ ln.id }}-line" aria-labelledby="{{ ln.id }}-line-title">
+  <header class="line-head">
+    <div class="line-badge line-{{ ln.brand }}">
+      {% if br.logo %}{% set lg = img(br.logo) %}<img src="{{ lg.src }}" width="{{ lg.w }}" height="{{ lg.h }}" alt="{{ br.name }}" loading="lazy" decoding="async">{% endif %}
+      <span class="line-name">{{ ln.label }}</span>
+    </div>
+    <h2 id="{{ ln.id }}-line-title" class="line-title">{{ ln.name }} band saws</h2>
+    <p class="group-lead">{{ ln.blurb }}</p>
+    <p class="line-links"><a class="btn btn-ghost btn-small" href="{{ ln.pdf.file }}" download>{{ ln.pdf.label }} <small>({{ ln.pdf.size }})</small></a> <a class="arrow" href="#range-{{ ln.id }}">{{ ln.name }} capacity table</a></p>
+  </header>
+  <ul class="subpage-grid">
+    {% for sp in ln.subpages %}{% set im = img(sp.image) %}
+    <li class="subpage-card">
+      <a href="{{ sp.href }}" class="subpage-art{{ ' is-cutout' if im.alpha else '' }}"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 700px) 92vw, 360px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></a>
+      <div class="subpage-body">
+        <h3><a href="{{ sp.href }}">{{ sp.title }}</a></h3>
+        <p>{{ sp.blurb }}</p>
+        <p class="subpage-count">{{ sp.families|length }} machine famil{{ 'y' if sp.families|length == 1 else 'ies' }} · <a class="arrow" href="{{ sp.href }}">specifications and photos</a></p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% else %}
 <section class="wrap subpages" aria-label="Rebar machinery pages">
   <ul class="subpage-grid">
     {% for sp in page.subpages %}{% set im = img(sp.image) %}
@@ -50,12 +77,14 @@
     {% endfor %}
   </ul>
 </section>
+{% endif %}
 
 <div class="wrap page-body">
 {% for sp in page.subpages %}
-<section class="group group-cards" id="{{ sp.slug }}-overview" aria-labelledby="{{ sp.slug }}-overview-title">
+<section class="group group-cards{{ ' line-' ~ sp.line if sp.line else '' }}" id="{{ sp.slug }}-overview" aria-labelledby="{{ sp.slug }}-overview-title">
   <header class="group-head">
     <h2 id="{{ sp.slug }}-overview-title">{{ sp.title }}</h2>
+    <p class="group-lead"><a class="arrow" href="{{ sp.href }}">All specifications, photos and videos</a></p>
   </header>
   <ul class="family-cards">
     {% for f in sp.families %}
@@ -80,6 +109,32 @@
 </section>
 {% endfor %}
 
+{% if page.lines %}
+<section class="group" id="range-at-a-glance" aria-labelledby="range-title">
+  <header class="group-head">
+    <h2 id="range-title">The range at a glance</h2>
+    <p class="group-lead">{{ page.range_lead }}</p>
+  </header>
+  {% for ln in page.lines %}
+  <div class="specs range-line line-{{ ln.id }}" id="range-{{ ln.id }}">
+    <h3 class="range-title"><span class="line-chip line-{{ ln.brand }}">{{ ln.label }}</span> {{ ln.name }} band saws — capacity at 0°</h3>
+    <section class="table-scroll" tabindex="0" aria-label="{{ ln.name }} band saws at a glance">
+      <table class="spec-table spec-table-range">
+        <caption>{{ ln.name }} band saws supplied by NovoTech — capacity at 0°</caption>
+        <thead><tr><th scope="col" class="label-col">Model</th><th scope="col">Type</th><th scope="col">Round at 0°</th><th scope="col">Rectangular at 0°</th><th scope="col">Main motor</th><th scope="col">Weight</th></tr></thead>
+        <tbody>
+          {% for r in ln.range_rows %}
+          <tr><th scope="row"><a href="{{ r.href }}">{{ r.model }}</a><small>{{ r.family }}</small></th><td>{{ r.kind }}</td><td>{{ r.round }}</td><td>{{ r.rect }}</td><td>{{ r.motor }}</td><td>{{ r.weight }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </div>
+  {% endfor %}
+  <p class="table-note">{{ page.range_note or site.steel_note }}</p>
+</section>
+</div>
+{% else %}
 <section class="group" id="range-at-a-glance" aria-labelledby="range-title">
   <header class="group-head">
     <h2 id="range-title">The range at a glance</h2>
@@ -111,6 +166,7 @@
   </div>
 </section>
 </div>
+{% endif %}
 
 <section class="why" aria-labelledby="why-title">
   <div class="wrap">

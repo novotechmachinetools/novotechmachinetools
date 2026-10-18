@@ -25,7 +25,7 @@ function respond(bool $ok, string $msg, int $code = 200): void {
         $title = $ok ? 'Thank you' : 'Something went wrong';
         echo "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta name=\"robots\" content=\"noindex\"><title>$title — NovoTech Machine Tools</title>"
            . "<body style=\"font-family:Arial,sans-serif;max-width:40em;margin:3em auto;padding:0 1em;line-height:1.5\"><h1>$title</h1><p>" . htmlspecialchars($msg, ENT_QUOTES, 'UTF-8') . "</p>"
-           . "<p><a href=\"javascript:history.back()\">Go back</a> · <a href=\"index.html\">NovoTech home</a></p></body></html>";
+           . "<p><a href=\"javascript:history.back()\">Go back</a> · <a href=\"/\">NovoTech home</a></p></body></html>";
     }
     exit;
 }

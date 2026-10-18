@@ -17,20 +17,20 @@
   "bekamak-bmso-cgs",
   "bekamak-bmso-xs",
   "bekamak-bmsy-heavy",
-  "novofab-nf-m250",
-  "novofab-nf-m400",
-  "novofab-nf-h250",
-  "novofab-nf-h330",
-  "novofab-nf-h400",
-  "novofab-nf-h300sc",
-  "novofab-nf-h460",
-  "novofab-nf-a300",
-  "novofab-nf-a300sc",
-  "novofab-nf-a330",
+  "novofab-nf-m10",
+  "novofab-nf-m16",
+  "novofab-nf-h10",
+  "novofab-nf-h13",
+  "novofab-nf-h16",
+  "novofab-nf-h12sc",
+  "novofab-nf-h18",
+  "novofab-nf-a12",
+  "novofab-nf-a12sc",
+  "novofab-nf-a13",
   "novofab-nf-a-cnc",
-  "novofab-nf-dc280",
-  "novofab-nf-dc350",
-  "novofab-nf-dc500"
+  "novofab-nf-dc11",
+  "novofab-nf-dc14",
+  "novofab-nf-dc20"
  ],
  "families": {
   "bekamak-bms-dg": {
@@ -57,12 +57,12 @@
    ],
    "images": [
     "bk-bms-270dg-1",
-    "bk-bms-270dg-2",
     "bk-bms-270dg-3",
-    "bk-bms-270dg-4",
-    "bk-bms-230dg-1",
     "bk-bms-230dg-2",
     "bk-bms-230dg-3",
+    "bk-bms-270dg-2",
+    "bk-bms-270dg-4",
+    "bk-bms-230dg-1",
     "bk-bms-230dg-4"
    ],
    "videos": [
@@ -235,13 +235,13 @@
     "bk-bmsy-440dgh-2",
     "bk-bmsy-360dgh-eco-1",
     "bk-bmsy-360dgh-eco-2",
-    "bk-bmsy-320dgh-1",
     "bk-bmsy-320dgh-2",
     "bk-bmsy-320dgh-3",
-    "bk-bmsy-270dg-1",
     "bk-bmsy-270dgh-1",
-    "bk-bmsy-270dg-2",
     "bk-bmsy-270dgh-2",
+    "bk-bmsy-320dgh-1",
+    "bk-bmsy-270dg-1",
+    "bk-bmsy-270dg-2",
     "bk-bmsy-270dg-3",
     "bk-bmsy-270dgh-3",
     "bk-bmsy-270dg-4"
@@ -985,10 +985,10 @@
    "images": [
     "bk-bmsy-350m-1",
     "bk-bmsy-350m-2",
-    "bk-bmsy-350m-3",
     "bk-bmsy-320l-1",
-    "bk-bmsy-320l-2",
     "bk-bmsy-320-1",
+    "bk-bmsy-350m-3",
+    "bk-bmsy-320l-2",
     "bk-bmsy-320-2"
    ],
    "videos": [
@@ -1226,11 +1226,11 @@
     "Hydraulic Vise"
    ],
    "images": [
-    "bk-bmso-320l-1",
     "bk-bmso-320l-2",
     "bk-bmso-320-1",
     "bk-bmso-230-1",
     "bk-bmso-230-2",
+    "bk-bmso-320l-1",
     "bk-bmso-230-3",
     "bk-bmso-230-4"
    ],
@@ -1420,9 +1420,9 @@
    "images": [
     "bk-bmso-320e-1",
     "bk-bmso-320e-2",
-    "bk-bmso-320e-3",
     "bk-bmso-320e-4",
-    "bk-bmso-320e-5"
+    "bk-bmso-320e-5",
+    "bk-bmso-320e-3"
    ],
    "videos": [
     {
@@ -1677,11 +1677,11 @@
     "Hydraulic Top Clamping"
    ],
    "images": [
+    "bk-bmso-320gs-3",
     "bk-bmso-320gs-1",
     "bk-bmso-320gls-1",
     "bk-bmso-320gs-2",
     "bk-bmso-320gls-2",
-    "bk-bmso-320gs-3",
     "bk-bmso-320gls-3"
    ],
    "videos": [
@@ -1963,7 +1963,6 @@
    "images": [
     "bk-bmsy-1020c-1",
     "bk-bmsy-1020c-2",
-    "bk-bmsy-1020c-3",
     "bk-bmsy-825c-1",
     "bk-bmsy-810c-1",
     "bk-bmsy-810c-2",
@@ -1974,7 +1973,8 @@
     "bk-bmsy-560c-4",
     "bk-bmsy-460c-1",
     "bk-bmsy-460c-2",
-    "bk-bmsy-460c-3"
+    "bk-bmsy-460c-3",
+    "bk-bmsy-1020c-3"
    ],
    "videos": [
     {
@@ -2318,15 +2318,15 @@
    "images": [
     "bk-bmsy-810cgh-1",
     "bk-bmsy-810cgh-2",
-    "bk-bmsy-810cgh-3",
-    "bk-bmsy-540cgh-1",
     "bk-bmsy-540cgh-2",
     "bk-bmsy-540cgh-3",
     "bk-bmsy-440cgh-1",
-    "bk-bmsy-440cgh-2",
-    "bk-bmsy-440cgh-3",
     "bk-bmsy-325cgh-1",
     "bk-bmsy-325cgh-2",
+    "bk-bmsy-810cgh-3",
+    "bk-bmsy-540cgh-1",
+    "bk-bmsy-440cgh-2",
+    "bk-bmsy-440cgh-3",
     "bk-bmsy-325cgh-3"
    ],
    "videos": [
@@ -2611,18 +2611,18 @@
    ],
    "images": [
     "bk-bmsy-750dg-1",
-    "bk-bmsy-750dg-2",
-    "bk-bmsy-750dg-3",
     "bk-bmsy-750dg-4",
     "bk-bmsy-750dg-5",
     "bk-bmsy-650dg-1",
-    "bk-bmsy-650dg-2",
     "bk-bmsy-650dg-3",
     "bk-bmsy-650dg-4",
     "bk-bmsy-650dg-5",
     "bk-bmsy-560dg-1",
     "bk-bmsy-560dg-2",
     "bk-bmsy-560dg-3",
+    "bk-bmsy-750dg-2",
+    "bk-bmsy-750dg-3",
+    "bk-bmsy-650dg-2",
     "bk-bmsy-560dg-4"
    ],
    "videos": [
@@ -3251,20 +3251,20 @@
     "Hexagonal Vise"
    ],
    "images": [
-    "bk-bmso-1110cs-1",
     "bk-bmso-1110cs-2",
     "bk-bmso-1110cs-3",
     "bk-bmso-820cs-1",
     "bk-bmso-820cs-2",
     "bk-bmso-820cs-3",
     "bk-bmso-820cs-4",
-    "bk-bmso-820cs-5",
     "bk-bmso-820cs-6",
     "bk-bmso-820cs-7",
     "bk-bmso-570cs-1",
     "bk-bmso-570cs-2",
     "bk-bmso-570cs-3",
-    "bk-bmso-570cs-4"
+    "bk-bmso-570cs-4",
+    "bk-bmso-1110cs-1",
+    "bk-bmso-820cs-5"
    ],
    "videos": [
     {
@@ -3530,9 +3530,7 @@
     "Chip Conveyor Motor"
    ],
    "images": [
-    "bk-bmso-540cgs-1",
     "bk-bmso-540cgs-2",
-    "bk-bmso-540cgs-3",
     "bk-bmso-540cgs-4",
     "bk-bmso-540cgs-5",
     "bk-bmso-440cgs-1",
@@ -3541,8 +3539,10 @@
     "bk-bmso-440cdgs-2",
     "bk-bmso-440cgs-3",
     "bk-bmso-440cdgs-3",
-    "bk-bmso-325cgs-1",
     "bk-bmso-325cgs-2",
+    "bk-bmso-540cgs-1",
+    "bk-bmso-540cgs-3",
+    "bk-bmso-325cgs-1",
     "bk-bmso-325cgs-3"
    ],
    "videos": [
@@ -3848,7 +3848,6 @@
    ],
    "images": [
     "bk-bmso-825xs-1",
-    "bk-bmso-825xs-2",
     "bk-bmso-825xs-3",
     "bk-bmso-825xs-4",
     "bk-bmso-825xs-5",
@@ -3857,9 +3856,10 @@
     "bk-bmso-660xs-3",
     "bk-bmso-660xs-4",
     "bk-bmso-660xs-5",
-    "bk-bmso-660xs-6",
     "bk-bmso-570xs-1",
     "bk-bmso-570xs-2",
+    "bk-bmso-825xs-2",
+    "bk-bmso-660xs-6",
     "bk-bmso-570xs-3"
    ],
    "videos": [
@@ -4092,20 +4092,20 @@
     "Laser Line Pointer"
    ],
    "images": [
-    "bk-bmsy-1515c-1",
     "bk-bmsy-1515c-2",
     "bk-bmsy-1515c-3",
     "bk-bmsy-1313c-1",
-    "bk-bmsy-1313c-2",
     "bk-bmsy-1110c-1",
     "bk-bmsy-1113c-1",
     "bk-bmsy-1110c-2",
-    "bk-bmsy-1113c-2",
     "bk-bmsy-1110c-3",
-    "bk-bmsy-1110c-4",
     "bk-bmsy-1122c-1",
     "bk-bmsy-1122c-2",
-    "bk-bmsy-1122c-3"
+    "bk-bmsy-1122c-3",
+    "bk-bmsy-1515c-1",
+    "bk-bmsy-1313c-2",
+    "bk-bmsy-1113c-2",
+    "bk-bmsy-1110c-4"
    ],
    "videos": [
     {
@@ -4299,21 +4299,21 @@
     ]
    }
   },
-  "novofab-nf-m250": {
-   "id": "novofab-nf-m250",
+  "novofab-nf-m10": {
+   "id": "novofab-nf-m10",
    "brand": "novofab",
    "line": "value",
    "group": "manual",
-   "name": "NF-M 250 series manual pivot band saws",
-   "short": "NF-M 250 manual saws",
-   "models_label": "NF-M 250 · NF-M 250 S · NF-M 260 · NF-M 260 T",
-   "summary": "Four 10-inch gravity-feed pivot saws for the maintenance shop and light fabrication. The bow descends on a hydraulic damper with adjustable feed, a four-speed belt drive matches blade speed to the material, and every model ships with a coolant system and a repeat-cut stop rod. Pick the mitre arrangement you need: mitre vise (NF-M 250), swivel bow 45°–90° (NF-M 250 S), larger-capacity frame (NF-M 260) or a twin-mitre bow that swings 60° both ways (NF-M 260 T).",
+   "name": "NF-M 10 series manual pivot band saws, 10″",
+   "short": "NF-M 10 manual saws",
+   "models_label": "NF-M 10 · NF-M 10 S · NF-M 10 D · NF-M 10 T",
+   "summary": "Four 10-inch gravity-feed pivot saws for the maintenance shop and light fabrication. The bow descends on a hydraulic damper with adjustable feed, a four-speed belt drive matches blade speed to the material, and every model ships with a coolant system and a repeat-cut stop rod. Pick the mitre arrangement you need: mitre vise (NF-M 10), swivel bow 45°–90° (NF-M 10 S), a larger frame with hydraulic down-feed control (NF-M 10 D) or a twin-mitre bow that swings 60° both ways (NF-M 10 T).",
    "features": [
     "Descent controlled by a hydraulic cylinder — adjustable, repeatable feed pressure",
-    "Four blade speeds on a belt drive (up to 130 m/min on the NF-M 260 / 260 T)",
-    "27 × 0.9 mm bi-metal blade, coolant pump and stop rod included",
-    "NF-M 250 S: bow swivels 45°–90° for mitre cuts without moving the stock",
-    "NF-M 260 T: bow swivels both ways — 45° left and right, 60° right",
+    "Four blade speeds on a belt drive (up to 427 ft/min on the NF-M 10 D / 10 T)",
+    "1-1/8″ × 0.035″ bi-metal blade, coolant pump and stop rod included",
+    "NF-M 10 S: bow swivels 45°–90° for mitre cuts without moving the stock",
+    "NF-M 10 T: bow swivels both ways — 45° left and right, 60° right",
     "2 HP (1.5 kW) three-phase motor; 600 V with CSA-approved panel"
    ],
    "optional": [
@@ -4321,10 +4321,10 @@
     "Extra blades"
    ],
    "images": [
-    "nf-m250-1",
-    "nf-m250s-1",
-    "nf-m260-1",
-    "nf-m260t-1"
+    "nf-m10-1",
+    "nf-m10s-1",
+    "nf-m10d-1",
+    "nf-m10t-1"
    ],
    "videos": [],
    "specs": {
@@ -4332,7 +4332,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-M 250",
+      "name": "NF-M 10",
       "capacity_mm": {
        "0": {
         "round": 254,
@@ -4373,7 +4373,7 @@
       "notes": "Angle cuts via the mitre vise (the frame does not swivel)."
      },
      {
-      "name": "NF-M 250 S",
+      "name": "NF-M 10 S",
       "capacity_mm": {
        "0": {
         "round": 254,
@@ -4414,7 +4414,7 @@
       "notes": ""
      },
      {
-      "name": "NF-M 260",
+      "name": "NF-M 10 D",
       "capacity_mm": {
        "0": {
         "round": 260,
@@ -4455,7 +4455,7 @@
       "notes": ""
      },
      {
-      "name": "NF-M 260 T",
+      "name": "NF-M 10 T",
       "capacity_mm": {
        "0": {
         "round": 260,
@@ -4514,28 +4514,28 @@
     ]
    }
   },
-  "novofab-nf-m400": {
-   "id": "novofab-nf-m400",
+  "novofab-nf-m16": {
+   "id": "novofab-nf-m16",
    "brand": "novofab",
    "line": "value",
    "group": "manual",
-   "name": "NF-M 400 manual band saw, Ø400 mm",
-   "short": "NF-M 400",
-   "models_label": "NF-M 400",
-   "summary": "A big 15¾-inch pivot saw with a gear-driven two-speed motor and sintered-carbide blade guides, for shops that cut heavy sections but do not need an automatic cycle. The bow swivels for mitre cuts up to 60°, the sliding vise has a quick clamp for fast workpiece changes, and the heavy welded base keeps the cut square on 550 × 360 mm stock.",
+   "name": "NF-M 16 manual band saw, 15-3/4″",
+   "short": "NF-M 16",
+   "models_label": "NF-M 16",
+   "summary": "A big 15¾-inch pivot saw with a gear-driven two-speed motor and sintered-carbide blade guides, for shops that cut heavy sections but do not need an automatic cycle. The bow swivels for mitre cuts up to 60°, the sliding vise has a quick clamp for fast workpiece changes, and the heavy welded base keeps the cut square on 21-3/4″ × 14-1/4″ stock.",
    "features": [
-    "Ø400 mm round / 550 × 360 mm rectangular at 0°; mitre cuts up to 60°",
-    "Gear-driven two-speed motor, 2.2/2.8 kW — no belts to tension",
+    "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; mitre cuts up to 60°",
+    "Gear-driven two-speed motor, 3/3.8 HP (2.2/2.8 kW) — no belts to tension",
     "Blade guides with sintered-carbide inserts for straight cuts in series production",
     "Sliding vise with quick clamp; powerful coolant pump",
-    "34 × 1.1 × 4405 mm blade"
+    "1-3/8″ × 0.043″ × 173-1/2″ blade"
    ],
    "optional": [
     "Roller stand with length stop",
-    "Hydraulic version — see NF-H 400"
+    "Hydraulic version — see NF-H 16"
    ],
    "images": [
-    "nf-m400-1"
+    "nf-m16-1"
    ],
    "videos": [],
    "specs": {
@@ -4543,7 +4543,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-M 400",
+      "name": "NF-M 16",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -4593,19 +4593,19 @@
     ]
    }
   },
-  "novofab-nf-h250": {
-   "id": "novofab-nf-h250",
+  "novofab-nf-h10": {
+   "id": "novofab-nf-h10",
    "brand": "novofab",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 250 series hydraulic band saws",
-   "short": "NF-H 250 hydraulic saws",
-   "models_label": "NF-H 250 S · NF-H 260 T",
-   "summary": "The hydraulic versions of the 10-inch pivot saws: a hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts automatically at the end of the cut and the machine shuts off — the operator only loads, clamps and starts. The NF-H 250 S adds a hydraulic clamping vise and a swivel bow for 45° mitres; the NF-H 260 T swings both ways for 45°/60° cuts and comes with a movable control panel.",
+   "name": "NF-H 10 series hydraulic band saws, 10″",
+   "short": "NF-H 10 hydraulic saws",
+   "models_label": "NF-H 10 S · NF-H 10 T",
+   "summary": "The hydraulic versions of the 10-inch pivot saws: a hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts automatically at the end of the cut and the machine shuts off — the operator only loads, clamps and starts. The NF-H 10 S adds a hydraulic clamping vise and a swivel bow for 45° mitres; the NF-H 10 T swings both ways for 45°/60° cuts and comes with a movable control panel.",
    "features": [
     "Hydraulic descent with variable feed speed; automatic bow return and shut-off",
-    "NF-H 250 S: hydraulic clamping vise, swivel bow 45°–90°, manual or auto-cut cycle",
-    "NF-H 260 T: twin-mitre bow (45° left, 45°/60° right), quick-clamp vise, movable control panel",
+    "NF-H 10 S: hydraulic clamping vise, swivel bow 45°–90°, manual or auto-cut cycle",
+    "NF-H 10 T: twin-mitre bow (45° left, 45°/60° right), quick-clamp vise, movable control panel",
     "Four-speed belt drive, 2 HP (1.5 kW) three-phase motor",
     "Coolant system and stop rod included"
    ],
@@ -4613,8 +4613,8 @@
     "Roller stand with length stop"
    ],
    "images": [
-    "nf-h250s-1",
-    "nf-h260t-1"
+    "nf-h10s-1",
+    "nf-h10t-1"
    ],
    "videos": [],
    "specs": {
@@ -4622,7 +4622,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 250 S",
+      "name": "NF-H 10 S",
       "capacity_mm": {
        "0": {
         "round": 254,
@@ -4664,7 +4664,7 @@
       "notes": ""
      },
      {
-      "name": "NF-H 260 T",
+      "name": "NF-H 10 T",
       "capacity_mm": {
        "0": {
         "round": 260,
@@ -4724,21 +4724,21 @@
     ]
    }
   },
-  "novofab-nf-h330": {
-   "id": "novofab-nf-h330",
+  "novofab-nf-h13": {
+   "id": "novofab-nf-h13",
    "brand": "novofab",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 330 twin-mitre hydraulic band saws",
-   "short": "NF-H 330 saws",
-   "models_label": "NF-H 330 · NF-H 330 C",
-   "summary": "A 13-inch gear-driven semi-automatic saw whose bow swivels both ways — 45° left and right, 60° right — with a quick lock at every angle. Hydraulic vise, hydraulic descent and a two-speed gear motor make it the workhorse for structural steel, tube and profile cutting. The NF-H 330 C is the same machine with a movable control panel on an arm. PLC control and servo feed can be added to turn it into an automatic.",
+   "name": "NF-H 13 twin-mitre hydraulic band saws, 13″",
+   "short": "NF-H 13 saws",
+   "models_label": "NF-H 13 · NF-H 13 C",
+   "summary": "A 13-inch gear-driven semi-automatic saw whose bow swivels both ways — 45° left and right, 60° right — with a quick lock at every angle. Hydraulic vise, hydraulic descent and a two-speed gear motor make it the workhorse for structural steel, tube and profile cutting. The NF-H 13 C is the same machine with a movable control panel on an arm. PLC control and servo feed can be added to turn it into an automatic.",
    "features": [
-    "Ø330 mm round / 460 × 250 mm at 0°; Ø305 mm at 45° both sides, Ø205 mm at 60°",
+    "Ø13″ (330 mm) round / 18″ × 9-7/8″ at 0°; Ø12″ at 45° both sides, Ø8″ at 60°",
     "Hydraulic clamping vise and hydraulic bow descent",
     "Bow swivels left and right with quick lock",
-    "Gear drive, two-speed 1.5/2.2 kW motor (48/96 m/min at 60 Hz)",
-    "NF-H 330 C: movable control panel"
+    "Gear drive, two-speed 2/3 HP (1.5/2.2 kW) motor — 157/315 ft/min at 60 Hz",
+    "NF-H 13 C: movable control panel"
    ],
    "optional": [
     "PLC control",
@@ -4746,8 +4746,8 @@
     "Roller stands"
    ],
    "images": [
-    "nf-h330-1",
-    "nf-h330c-1"
+    "nf-h13-1",
+    "nf-h13c-1"
    ],
    "videos": [],
    "specs": {
@@ -4755,7 +4755,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 330",
+      "name": "NF-H 13",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -4812,7 +4812,7 @@
       "notes": ""
      },
      {
-      "name": "NF-H 330 C",
+      "name": "NF-H 13 C",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -4872,27 +4872,27 @@
     ]
    }
   },
-  "novofab-nf-h400": {
-   "id": "novofab-nf-h400",
+  "novofab-nf-h16": {
+   "id": "novofab-nf-h16",
    "brand": "novofab",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 400 hydraulic band saw, Ø400 mm",
-   "short": "NF-H 400",
-   "models_label": "NF-H 400",
-   "summary": "The hydraulic version of the NF-M 400: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 550 × 360 mm.",
+   "name": "NF-H 16 hydraulic band saw, 15-3/4″",
+   "short": "NF-H 16",
+   "models_label": "NF-H 16",
+   "summary": "The hydraulic version of the NF-M 16: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 21-3/4″ × 14-1/4″.",
    "features": [
-    "Ø400 mm round / 550 × 360 mm rectangular at 0°; mitre cuts up to 60°",
+    "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; mitre cuts up to 60°",
     "Automatic bow descent and return on a hydraulic cylinder",
-    "Gear-driven two-speed motor, 2.2/2.8 kW",
+    "Gear-driven two-speed motor, 3/3.8 HP (2.2/2.8 kW)",
     "Sintered-carbide blade guides, quick-clamp sliding vise",
-    "Powerful coolant pump; 34 × 1.1 × 4405 mm blade"
+    "Powerful coolant pump; 1-3/8″ × 0.043″ × 173-1/2″ blade"
    ],
    "optional": [
     "Roller stand with length stop"
    ],
    "images": [
-    "nf-h400-1"
+    "nf-h16-1"
    ],
    "videos": [],
    "specs": {
@@ -4900,7 +4900,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 400",
+      "name": "NF-H 16",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -4950,31 +4950,31 @@
     ]
    }
   },
-  "novofab-nf-h300sc": {
-   "id": "novofab-nf-h300sc",
+  "novofab-nf-h12sc": {
+   "id": "novofab-nf-h12sc",
    "brand": "novofab",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 300 SC single-column band saw with touch screen",
-   "short": "NF-H 300 SC",
-   "models_label": "NF-H 300 SC",
-   "summary": "A single-column saw for straight cuts up to Ø300 mm / 500 × 300 mm with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the NF-A 300 SC.",
+   "name": "NF-H 12 SC single-column band saw with touch screen",
+   "short": "NF-H 12 SC",
+   "models_label": "NF-H 12 SC",
+   "summary": "A single-column saw for straight cuts up to Ø11-3/4″ / 19-3/4″ × 11-3/4″ with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the NF-A 12 SC.",
    "features": [
-    "Ø300 mm round / 500 × 300 mm rectangular (straight cut)",
+    "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
     "PLC control with graphical finger-touch screen; work light",
     "Hydraulic jaw clamping vise, variable hydraulic down-feed",
     "Blade overload protection; bearing + carbide double guides",
-    "Four blade speeds, 3 kW motor, 34 × 1.1 × 4180 mm blade"
+    "Four blade speeds, 4 HP (3 kW) motor, 1-3/8″ × 0.043″ × 164-1/2″ blade"
    ],
    "optional": [
     "Roller stands",
-    "Automatic feeding — see NF-A 300 SC"
+    "Automatic feeding — see NF-A 12 SC"
    ],
    "images": [
-    "nf-h300sc-1",
-    "nf-h300sc-2",
-    "nf-h300sc-3",
-    "nf-h300sc-4"
+    "nf-h12sc-1",
+    "nf-h12sc-2",
+    "nf-h12sc-3",
+    "nf-h12sc-4"
    ],
    "videos": [],
    "specs": {
@@ -4982,7 +4982,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 300 SC",
+      "name": "NF-H 12 SC",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5019,29 +5019,29 @@
     ]
    }
   },
-  "novofab-nf-h460": {
-   "id": "novofab-nf-h460",
+  "novofab-nf-h18": {
+   "id": "novofab-nf-h18",
    "brand": "novofab",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 460 hydraulic band saw, Ø460 mm",
-   "short": "NF-H 460",
-   "models_label": "NF-H 460",
-   "summary": "An 18-inch swivel-head saw with automatic cutting and manual feeding: hydraulic vise, variable-frequency drive for stepless blade speed, a digital read-out for the feed position and a movable control panel. The bow swivels 45° to both sides and 60° to the right, and the gear-driven 5.5 kW motor handles 650 × 350 mm sections. Same frame as the automatic NF-A 460 without the feeder.",
+   "name": "NF-H 18 hydraulic swivel-head band saw, 18″",
+   "short": "NF-H 18",
+   "models_label": "NF-H 18",
+   "summary": "An 18-inch swivel-head saw with automatic cutting and manual feeding: hydraulic vise, variable-frequency drive for stepless blade speed, a digital read-out for the feed position and a movable control panel. The bow swivels 45° to both sides and 60° to the right, and the gear-driven 7.4 HP motor handles 25-1/2″ × 13-3/4″ sections. Same frame as the automatic NF-A 18 without the feeder.",
    "features": [
-    "Ø460 mm round / 650 × 350 mm at 0°; Ø460 mm at 45° both sides, Ø310 mm at 60°",
+    "Ø18″ (460 mm) round / 25-1/2″ × 13-3/4″ at 0°; Ø18″ at 45° both sides, Ø12-1/4″ at 60°",
     "Automatic cutting cycle; material fed by hand on the roller table",
     "Hydraulic clamping vise, digital read-out of the feed position",
-    "Variable blade speed 0–95 m/min (inverter); 5.5 kW gear-driven motor",
-    "Movable control panel; 41 × 1.3 × 5220 mm blade"
+    "Variable blade speed 0–312 ft/min (inverter); 7.4 HP (5.5 kW) gear-driven motor",
+    "Movable control panel; 1-5/8″ × 0.051″ × 205-1/2″ blade"
    ],
    "optional": [
     "Roller conveyors",
-    "Automatic feeding — see NF-A 460"
+    "Automatic feeding — see NF-A 18"
    ],
    "images": [
-    "nf-h460-1",
-    "nf-h460-2"
+    "nf-h18-1",
+    "nf-h18-2"
    ],
    "videos": [],
    "specs": {
@@ -5049,7 +5049,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 460",
+      "name": "NF-H 18",
       "capacity_mm": {
        "0": {
         "round": 460,
@@ -5109,32 +5109,32 @@
     ]
    }
   },
-  "novofab-nf-a300": {
-   "id": "novofab-nf-a300",
+  "novofab-nf-a12": {
+   "id": "novofab-nf-a12",
    "brand": "novofab",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 300 automatic band saws with roller feed",
-   "short": "NF-A 300 automatic saws",
-   "models_label": "NF-A 300 · NF-A 300 T",
-   "summary": "Compact automatic saws for batch cutting of bar, tube and profile up to Ø300 mm: a powered roller feed advances the stock, the hydraulic vise clamps, the bow cuts and returns, and the cycle repeats for the programmed count. Stepless blade speed from an inverter, gear drive and a 3 HP motor. The NF-A 300 T adds an automatic mitre head for angle cuts of 30°, 45° and 60°.",
+   "name": "NF-A 12 automatic band saws with roller feed, 11-3/4″",
+   "short": "NF-A 12 automatic saws",
+   "models_label": "NF-A 12 · NF-A 12 T",
+   "summary": "Compact automatic saws for batch cutting of bar, tube and profile up to Ø11-3/4″: a powered roller feed advances the stock, the hydraulic vise clamps, the bow cuts and returns, and the cycle repeats for the programmed count. Stepless blade speed from an inverter, gear drive and a 3 HP motor. The NF-A 12 T adds an automatic mitre head for angle cuts of 30°, 45° and 60°.",
    "features": [
-    "Ø300 mm round / 370 × 280 mm rectangular at 0°",
+    "Ø11-3/4″ (300 mm) round / 14-1/2″ × 11″ rectangular at 0°",
     "Roller feeding with automatic cycle; piece counter",
-    "Hydraulic clamping vise; inverter-driven blade speed 0–113 m/min",
-    "Gear drive, 2.2 kW main motor, 0.25 kW feed motor",
-    "NF-A 300 T: mitre cutting 0°–60° (Ø280 mm at 30°, Ø230 mm at 45°, Ø130 mm at 60°)"
+    "Hydraulic clamping vise; inverter-driven blade speed 0–371 ft/min",
+    "Gear drive, 3 HP (2.2 kW) main motor, 0.3 HP feed motor",
+    "NF-A 12 T: mitre cutting 0°–60° (Ø11″ at 30°, Ø9″ at 45°, Ø5-1/8″ at 60°)"
    ],
    "optional": [
     "Roller conveyors",
     "Extra blades"
    ],
    "images": [
-    "nf-a300-1",
-    "nf-a300-2",
-    "nf-a300-3",
-    "nf-a300t-1",
-    "nf-a300t-2"
+    "nf-a12-1",
+    "nf-a12-2",
+    "nf-a12-3",
+    "nf-a12t-1",
+    "nf-a12t-2"
    ],
    "videos": [],
    "specs": {
@@ -5142,7 +5142,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 300",
+      "name": "NF-A 12",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5177,7 +5177,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 300 T",
+      "name": "NF-A 12 T",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5238,30 +5238,30 @@
     ]
    }
   },
-  "novofab-nf-a300sc": {
-   "id": "novofab-nf-a300sc",
+  "novofab-nf-a12sc": {
+   "id": "novofab-nf-a12sc",
    "brand": "novofab",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 300 SC single-column automatic band saw",
-   "short": "NF-A 300 SC",
-   "models_label": "NF-A 300 SC",
-   "summary": "The automatic version of the single-column saw: a hydraulic shuttle vise feeds up to 500 mm per stroke, a batch clamping device holds bundles, and an automatic chip conveyor clears the swarf. PLC control with touch screen, hydraulic jaw vise, variable hydraulic down-feed, rapid descent until the blade touches the work and blade overload protection.",
+   "name": "NF-A 12 SC single-column automatic band saw",
+   "short": "NF-A 12 SC",
+   "models_label": "NF-A 12 SC",
+   "summary": "The automatic version of the single-column saw: a hydraulic shuttle vise feeds up to 19-3/4″ (500 mm) per stroke, a batch clamping device holds bundles, and an automatic chip conveyor clears the swarf. PLC control with touch screen, hydraulic jaw vise, variable hydraulic down-feed, rapid descent until the blade touches the work and blade overload protection.",
    "features": [
-    "Ø300 mm round / 500 × 300 mm rectangular (straight cut)",
-    "Hydraulic shuttle-vise feeding, up to 500 mm per stroke; batch clamping device",
+    "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
+    "Hydraulic shuttle-vise feeding, up to 19-3/4″ per stroke; batch clamping device",
     "PLC with finger-touch screen; rapid approach, then controlled feed",
     "Automatic chip conveyor, work light, coolant system",
-    "Four blade speeds, 3 kW motor, 34 × 1.1 × 4180 mm blade"
+    "Four blade speeds, 4 HP (3 kW) motor, 1-3/8″ × 0.043″ × 164-1/2″ blade"
    ],
    "optional": [
     "Roller conveyors"
    ],
    "images": [
-    "nf-a300sc-1",
-    "nf-a300sc-2",
-    "nf-a300sc-3",
-    "nf-a300sc-4"
+    "nf-a12sc-1",
+    "nf-a12sc-2",
+    "nf-a12sc-3",
+    "nf-a12sc-4"
    ],
    "videos": [],
    "specs": {
@@ -5269,7 +5269,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 300 SC",
+      "name": "NF-A 12 SC",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5308,30 +5308,30 @@
     ]
    }
   },
-  "novofab-nf-a330": {
-   "id": "novofab-nf-a330",
+  "novofab-nf-a13": {
+   "id": "novofab-nf-a13",
    "brand": "novofab",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 330 automatic twin-mitre band saw with 6 m stand",
-   "short": "NF-A 330",
-   "models_label": "NF-A 330",
-   "summary": "The automatic version of the NF-H 330: PLC-controlled feeding and clamping with a shuttle vise (500 mm per stroke), feed length selectable in metric or inch, and a 6 m material stand (3 m feed, 3 m return) delivered with the machine. The bow still swivels to both sides for mitre cuts, and a guard net protects the operator. Gear drive with a two-speed motor; blade 34 × 1.1 × 3960 mm.",
+   "name": "NF-A 13 automatic twin-mitre band saw with 20 ft stand",
+   "short": "NF-A 13",
+   "models_label": "NF-A 13",
+   "summary": "The automatic version of the NF-H 13: PLC-controlled feeding and clamping with a shuttle vise (19-3/4″ per stroke), feed length selectable in inches or millimetres, and a 20 ft (6 m) material stand — 10 ft feed and 10 ft return — delivered with the machine. The bow still swivels to both sides for mitre cuts, and a guard net protects the operator. Gear drive with a two-speed motor.",
    "features": [
-    "Ø330 mm round / 460 × 250 mm at 0°; Ø305 mm at 45° both sides, Ø205 mm at 60°",
-    "Automatic feeding and clamping, max. 500 mm per stroke; standard PLC",
-    "6 m material stand included (feeder width 460 mm, height 850 mm)",
+    "Ø13″ (330 mm) round / 18″ × 9-7/8″ at 0°; Ø12″ at 45° both sides, Ø8″ at 60°",
+    "Automatic feeding and clamping, max. 19-3/4″ (500 mm) per stroke; standard PLC",
+    "20 ft material stand included (feeder width 18″, height 33-1/2″)",
     "Bow swivels left and right; safety guard net",
-    "Gear drive, 1.5/2.2 kW two-speed motor"
+    "Gear drive, 2/3 HP (1.5/2.2 kW) two-speed motor"
    ],
    "optional": [
     "Extra stands and supports",
     "Servo motor (variable blade speed)"
    ],
    "images": [
-    "nf-a330-1",
-    "nf-a330-2",
-    "nf-a330-3"
+    "nf-a13-1",
+    "nf-a13-2",
+    "nf-a13-3"
    ],
    "videos": [],
    "specs": {
@@ -5339,7 +5339,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 330",
+      "name": "NF-A 13",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -5405,25 +5405,25 @@
    "brand": "novofab",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 350–600 CNC automatic band saws",
+   "name": "NF-A 14 to NF-A 24 CNC automatic band saws",
    "short": "NF-A CNC saws",
-   "models_label": "NF-A 350 · NF-A 415 · NF-A 460 · NF-A 600",
-   "summary": "Production saws with CNC feeding and cutting: a servo-driven feeder positions the stock, hydraulic vises clamp it, the servo blade drive sets a stepless cutting speed and the PLC runs the batch. The NF-A 350 and NF-A 415 have an automatic rotary bow (45°) and chip extraction; the NF-A 460 feeds up to 650 mm per stroke with a linear scale on the feed and a swivelling control panel; the NF-A 600 cuts 850 × 600 mm sections with a hydraulic feeder as standard.",
+   "models_label": "NF-A 14 · NF-A 16 · NF-A 18 · NF-A 24",
+   "summary": "Production saws with CNC feeding and cutting: a servo-driven feeder positions the stock, hydraulic vises clamp it, the servo blade drive sets a stepless cutting speed and the PLC runs the batch. The NF-A 14 and NF-A 16 have an automatic rotary bow (45°) and chip extraction; the NF-A 18 feeds up to 25-1/2″ per stroke with a linear scale on the feed and a swivelling control panel; the NF-A 24 cuts 33-1/2″ × 23-5/8″ sections with a hydraulic feeder as standard.",
    "features": [
-    "Round capacity from Ø350 mm to Ø600 mm; mitre cuts to 45° (NF-A 460: 60°)",
+    "Round capacity from Ø13-3/4″ (350 mm) to Ø23-5/8″ (600 mm); mitre cuts to 45° (NF-A 18: 60°)",
     "CNC / PLC automatic feeding and clamping, hydraulic vises",
-    "Servo motor for stepless blade speed; industrial gearbox (NF-A 460)",
-    "Feed per stroke: 500 mm (NF-A 350/415), 650 mm (NF-A 460), 600 mm (NF-A 600)",
+    "Servo motor for stepless blade speed; industrial gearbox (NF-A 18)",
+    "Feed per stroke: 19-3/4″ (NF-A 14/16), 25-1/2″ (NF-A 18), 23-5/8″ (NF-A 24)",
     "Work light, chip extraction and coolant system included"
    ],
    "optional": [
     "Material supports and roller conveyors"
    ],
    "images": [
-    "nf-a350-1",
-    "nf-a460-1",
-    "nf-a460-2",
-    "nf-a600-1"
+    "nf-a14-1",
+    "nf-a18-1",
+    "nf-a18-2",
+    "nf-a24-1"
    ],
    "videos": [],
    "specs": {
@@ -5431,7 +5431,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 350",
+      "name": "NF-A 14",
       "capacity_mm": {
        "0": {
         "round": 350,
@@ -5474,7 +5474,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 415",
+      "name": "NF-A 16",
       "capacity_mm": {
        "0": {
         "round": 415,
@@ -5517,7 +5517,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 460",
+      "name": "NF-A 18",
       "capacity_mm": {
        "0": {
         "round": 460,
@@ -5568,7 +5568,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 600",
+      "name": "NF-A 24",
       "capacity_mm": {
        "0": {
         "round": 600,
@@ -5613,38 +5613,38 @@
     ]
    }
   },
-  "novofab-nf-dc280": {
-   "id": "novofab-nf-dc280",
+  "novofab-nf-dc11": {
+   "id": "novofab-nf-dc11",
    "brand": "novofab",
    "line": "value",
    "group": "double-column",
-   "name": "NF-DC 280 series double column band saws",
-   "short": "NF-DC 280 saws",
-   "models_label": "NF-DC 280 · NF-DC 280 T · NF-DC 280 A · NF-DC 280 AV",
-   "summary": "Twin-column saws for Ø280 mm / 280 × 280 mm stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (NF-DC 280), the mitre version that cuts at 30° and 45° (NF-DC 280 T), the automatic with a 3-position shuttle vise (NF-DC 280 A) or the automatic with stepless blade speed, chip conveyor and the new vise design (NF-DC 280 AV).",
+   "name": "NF-DC 11 series double column band saws, 11″",
+   "short": "NF-DC 11 saws",
+   "models_label": "NF-DC 11 · NF-DC 11 T · NF-DC 11 A · NF-DC 11 AV",
+   "summary": "Twin-column saws for Ø11″ / 11″ × 11″ stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (NF-DC 11), the mitre version that cuts at 30° and 45° (NF-DC 11 T), the automatic with a 3-position shuttle vise (NF-DC 11 A) or the automatic with stepless blade speed, chip conveyor and the new vise design (NF-DC 11 AV).",
    "features": [
-    "Ø280 mm round / 280 × 280 mm square; NF-DC 280 T: Ø260 mm at 30°, Ø170 mm at 45°",
+    "Ø11″ (280 mm) round / 11″ × 11″ square; NF-DC 11 T: Ø10-1/4″ at 30°, Ø6-3/4″ at 45°",
     "Double column — vertical, rigid bow travel",
     "Hydraulic variable down-feed, hydraulic clamping, auto shut-off",
-    "NF-DC 280 A / AV: automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
-    "NF-DC 280 AV: variable blade speed 0–61 m/min, automatic chip conveyor",
-    "Belt drive, 3 kW motor; work light, coolant and material stand included"
+    "NF-DC 11 A / AV: automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
+    "NF-DC 11 AV: variable blade speed 0–200 ft/min, automatic chip conveyor",
+    "Belt drive, 4 HP (3 kW) motor; work light, coolant and material stand included"
    ],
    "optional": [
     "Roller stand",
     "Extra blades"
    ],
    "images": [
-    "nf-dc280-1",
-    "nf-dc280t-1",
-    "nf-dc280t-2",
-    "nf-dc280t-3",
-    "nf-dc280a-1",
-    "nf-dc280av-1",
-    "nf-dc280av-2",
-    "nf-dc280av-3",
-    "nf-dc280av-4",
-    "nf-dc280-stand"
+    "nf-dc11-1",
+    "nf-dc11t-1",
+    "nf-dc11t-2",
+    "nf-dc11t-3",
+    "nf-dc11a-1",
+    "nf-dc11av-1",
+    "nf-dc11av-2",
+    "nf-dc11av-3",
+    "nf-dc11av-4",
+    "nf-dc11-stand"
    ],
    "videos": [],
    "specs": {
@@ -5652,7 +5652,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-DC 280",
+      "name": "NF-DC 11",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5690,7 +5690,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 280 T",
+      "name": "NF-DC 11 T",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5745,7 +5745,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 280 A",
+      "name": "NF-DC 11 A",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5783,7 +5783,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 280 AV",
+      "name": "NF-DC 11 AV",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5824,20 +5824,20 @@
     ]
    }
   },
-  "novofab-nf-dc350": {
-   "id": "novofab-nf-dc350",
+  "novofab-nf-dc14": {
+   "id": "novofab-nf-dc14",
    "brand": "novofab",
    "line": "value",
    "group": "double-column",
-   "name": "NF-DC 350 and NF-DC 400 gear-driven double column saws",
-   "short": "NF-DC 350 / 400",
-   "models_label": "NF-DC 350 · NF-DC 400",
-   "summary": "Heavier twin-column saws with a gear-driven two-speed motor, hydraulic blade tensioning and hydraulic clamping. Vertical lifting on two columns keeps the blade square in Ø350 mm and Ø400 mm solids; the cutting feed is hydraulically controlled and stepless. A three-position hydraulic clamping vise for bundles is optional.",
+   "name": "NF-DC 14 and NF-DC 16 gear-driven double column saws",
+   "short": "NF-DC 14 / 16",
+   "models_label": "NF-DC 14 · NF-DC 16",
+   "summary": "Heavier twin-column saws with a gear-driven two-speed motor, hydraulic blade tensioning and hydraulic clamping. Vertical lifting on two columns keeps the blade square in Ø13-3/4″ and Ø15-3/4″ solids; the cutting feed is hydraulically controlled and stepless. A three-position hydraulic clamping vise for bundles is optional.",
    "features": [
-    "NF-DC 350: Ø350 mm / 350 × 350 mm · NF-DC 400: Ø400 mm / 400 × 400 mm",
+    "NF-DC 14: Ø13-3/4″ / 13-3/4″ × 13-3/4″ · NF-DC 16: Ø15-3/4″ / 15-3/4″ × 15-3/4″",
     "Double column structure, vertical lifting, high stability",
     "Hydraulic variable down-feed, hydraulic clamping, hydraulic blade tensioning",
-    "Gear drive with two-speed motor (2.2/2.8 kW or 3.0/4.0 kW)",
+    "Gear drive with two-speed motor (3/3.8 HP or 4/5.4 HP)",
     "Work light, coolant pump and material stand included"
    ],
    "optional": [
@@ -5845,9 +5845,9 @@
     "Roller stands"
    ],
    "images": [
-    "nf-dc350-1",
-    "nf-dc350-2",
-    "nf-dc350-3"
+    "nf-dc14-1",
+    "nf-dc14-2",
+    "nf-dc14-3"
    ],
    "videos": [],
    "specs": {
@@ -5855,7 +5855,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-DC 350",
+      "name": "NF-DC 14",
       "capacity_mm": {
        "0": {
         "round": 350,
@@ -5892,7 +5892,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 400",
+      "name": "NF-DC 16",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -5931,20 +5931,20 @@
     ]
    }
   },
-  "novofab-nf-dc500": {
-   "id": "novofab-nf-dc500",
+  "novofab-nf-dc20": {
+   "id": "novofab-nf-dc20",
    "brand": "novofab",
    "line": "value",
    "group": "double-column",
-   "name": "NF-DC 500 and NF-DC 600 gantry double column saws",
-   "short": "NF-DC 500 / 600",
-   "models_label": "NF-DC 500 · NF-DC 600",
-   "summary": "Gantry-type double column saws for heavy plate, blocks, bundles and large tube: Ø500 mm / 700 × 500 mm on the NF-DC 500 and Ø600 mm / 1200 × 600 mm on the NF-DC 600. Hydraulic clamping, stepless blade speed and a powered roller table; the NF-DC 600 adds hydraulic blade tensioning and an 11 kW motor for the 67 mm blade.",
+   "name": "NF-DC 20 and NF-DC 24 gantry double column saws",
+   "short": "NF-DC 20 / 24",
+   "models_label": "NF-DC 20 · NF-DC 24",
+   "summary": "Gantry-type double column saws for heavy plate, blocks, bundles and large tube: Ø19-3/4″ / 27-1/2″ × 19-3/4″ on the NF-DC 20 and Ø23-5/8″ / 47-1/4″ × 23-5/8″ on the NF-DC 24. Hydraulic clamping, stepless blade speed and a powered roller table; the NF-DC 24 adds hydraulic blade tensioning and a 15 HP motor for the 2-5/8″ blade.",
    "features": [
-    "NF-DC 500: Ø500 mm / 700 × 500 mm · NF-DC 600: Ø600 mm / 1200 × 600 mm",
+    "NF-DC 20: Ø19-3/4″ / 27-1/2″ × 19-3/4″ · NF-DC 24: Ø23-5/8″ / 47-1/4″ × 23-5/8″",
     "Double column gantry structure for batch sawing of tubes, bars, profiles and plates",
-    "Hydraulic clamping; variable blade speed (40–80 and 20–80 m/min)",
-    "NF-DC 500: 5.5 kW, 41 × 1.3 mm blade · NF-DC 600: 11 kW, 67 × 1.3 × 8800 mm blade, hydraulic tensioning",
+    "Hydraulic clamping; variable blade speed (131–262 and 66–262 ft/min)",
+    "NF-DC 20: 7.4 HP, 1-5/8″ × 0.051″ blade · NF-DC 24: 15 HP, 2-5/8″ × 0.051″ × 346-1/2″ blade, hydraulic tensioning",
     "Powered roller table with chain drive"
    ],
    "optional": [
@@ -5952,9 +5952,9 @@
     "Bundle clamping"
    ],
    "images": [
-    "nf-dc500-1",
-    "nf-dc600-1",
-    "nf-dc600-2"
+    "nf-dc20-1",
+    "nf-dc24-1",
+    "nf-dc24-2"
    ],
    "videos": [],
    "specs": {
@@ -5962,7 +5962,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-DC 500",
+      "name": "NF-DC 20",
       "capacity_mm": {
        "0": {
         "round": 500,
@@ -5996,7 +5996,7 @@
       "notes": "Blade length not printed in the catalogue."
      },
      {
-      "name": "NF-DC 600",
+      "name": "NF-DC 24",
       "capacity_mm": {
        "0": {
         "round": 600,

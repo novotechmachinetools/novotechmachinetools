@@ -2947,340 +2947,417 @@
   "trim": true,
   "quality": 84
  },
- "nf-m250-1": {
-  "src": "tools/src-images/novofab/nf-m250-1.png",
-  "alt": "NovoFab NF-M 250 manual pivot band saw, 10-inch",
+ "nf-m10-1": {
+  "src": "tools/src-images/novofab/nf-m10-1.png",
+  "alt": "NovoFab NF-M 10 manual pivot band saw, 10-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-m250s-1": {
-  "src": "tools/src-images/novofab/nf-m250s-1.png",
-  "alt": "NovoFab NF-M 250 S manual band saw with swivel bow",
+ "nf-m10s-1": {
+  "src": "tools/src-images/novofab/nf-m10s-1.png",
+  "alt": "NovoFab NF-M 10 S manual band saw with swivel bow",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-m260-1": {
-  "src": "tools/src-images/novofab/nf-m260-1.png",
-  "alt": "NovoFab NF-M 260 manual band saw with hydraulic down-feed",
+ "nf-m10d-1": {
+  "src": "tools/src-images/novofab/nf-m10d-1.png",
+  "alt": "NovoFab NF-M 10 D manual band saw with hydraulic down-feed control",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-m260t-1": {
-  "src": "tools/src-images/novofab/nf-m260t-1.png",
-  "alt": "NovoFab NF-M 260 T twin-mitre manual band saw",
+ "nf-m10t-1": {
+  "src": "tools/src-images/novofab/nf-m10t-1.png",
+  "alt": "NovoFab NF-M 10 T twin-mitre manual band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-m400-1": {
-  "src": "tools/src-images/novofab/nf-m400-1.png",
-  "alt": "NovoFab NF-M 400 manual band saw, \u00d8400 mm",
+ "nf-m16-1": {
+  "src": "tools/src-images/novofab/nf-m16-1.png",
+  "alt": "NovoFab NF-M 16 manual band saw, 15-3/4-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h250s-1": {
-  "src": "tools/src-images/novofab/nf-h250s-1.png",
-  "alt": "NovoFab NF-H 250 S hydraulic semi-automatic band saw",
+ "nf-h10s-1": {
+  "src": "tools/src-images/novofab/nf-h10s-1.png",
+  "alt": "NovoFab NF-H 10 S hydraulic semi-automatic band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h260t-1": {
-  "src": "tools/src-images/novofab/nf-h260t-1.png",
-  "alt": "NovoFab NF-H 260 T hydraulic twin-mitre band saw",
+ "nf-h10t-1": {
+  "src": "tools/src-images/novofab/nf-h10t-1.png",
+  "alt": "NovoFab NF-H 10 T hydraulic twin-mitre band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h330-1": {
-  "src": "tools/src-images/novofab/nf-h330-1.png",
-  "alt": "NovoFab NF-H 330 twin-mitre hydraulic band saw",
+ "nf-h13-1": {
+  "src": "tools/src-images/novofab/nf-h13-1.png",
+  "alt": "NovoFab NF-H 13 twin-mitre hydraulic band saw, 13-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h330c-1": {
-  "src": "tools/src-images/novofab/nf-h330c-1.png",
-  "alt": "NovoFab NF-H 330 C hydraulic band saw with movable control panel",
+ "nf-h13c-1": {
+  "src": "tools/src-images/novofab/nf-h13c-1.png",
+  "alt": "NovoFab NF-H 13 C hydraulic band saw with movable control panel",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h400-1": {
-  "src": "tools/src-images/novofab/nf-h400-1.png",
-  "alt": "NovoFab NF-H 400 hydraulic band saw, \u00d8400 mm",
+ "nf-h16-1": {
+  "src": "tools/src-images/novofab/nf-h16-1.png",
+  "alt": "NovoFab NF-H 16 hydraulic band saw, 15-3/4-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h300sc-1": {
-  "src": "tools/src-images/novofab/nf-h300sc-1.png",
-  "alt": "NovoFab NF-H 300 SC single-column band saw with touch screen",
+ "nf-h12sc-1": {
+  "src": "tools/src-images/novofab/nf-h12sc-1.png",
+  "alt": "NovoFab NF-H 12 SC single-column band saw with touch screen",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h300sc-2": {
-  "src": "tools/src-images/novofab/nf-h300sc-2.png",
-  "alt": "NF-H 300 SC \u2014 hydraulic jaw clamping vise",
+ "nf-h12sc-2": {
+  "src": "tools/src-images/novofab/nf-h12sc-2.png",
+  "alt": "NF-H 12 SC \u2014 hydraulic jaw clamping vise",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h300sc-3": {
-  "src": "tools/src-images/novofab/nf-h300sc-3.png",
-  "alt": "NF-H 300 SC \u2014 PLC with finger-touch screen",
+ "nf-h12sc-3": {
+  "src": "tools/src-images/novofab/nf-h12sc-3.png",
+  "alt": "NF-H 12 SC \u2014 PLC with finger-touch screen",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h300sc-4": {
-  "src": "tools/src-images/novofab/nf-h300sc-4.png",
-  "alt": "NF-H 300 SC \u2014 chip box and coolant tank",
+ "nf-h12sc-4": {
+  "src": "tools/src-images/novofab/nf-h12sc-4.png",
+  "alt": "NF-H 12 SC \u2014 chip box and coolant tank",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h460-1": {
-  "src": "tools/src-images/novofab/nf-h460-1.png",
-  "alt": "NovoFab NF-H 460 swivel-head band saw, \u00d8460 mm",
+ "nf-h18-1": {
+  "src": "tools/src-images/novofab/nf-h18-1.png",
+  "alt": "NovoFab NF-H 18 swivel-head band saw, 18-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-h460-2": {
-  "src": "tools/src-images/novofab/nf-h460-2.png",
-  "alt": "NF-H 460 \u2014 control panel with blade speed and feed controls",
+ "nf-h18-2": {
+  "src": "tools/src-images/novofab/nf-h18-2.png",
+  "alt": "NF-H 18 \u2014 control panel with blade speed and feed controls",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300-1": {
-  "src": "tools/src-images/novofab/nf-a300-1.png",
-  "alt": "NovoFab NF-A 300 automatic band saw with roller feed",
+ "nf-a12-1": {
+  "src": "tools/src-images/novofab/nf-a12-1.png",
+  "alt": "NovoFab NF-A 12 automatic band saw with roller feed",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300-2": {
-  "src": "tools/src-images/novofab/nf-a300-2.png",
-  "alt": "NF-A 300 \u2014 control panel with piece counter",
+ "nf-a12-2": {
+  "src": "tools/src-images/novofab/nf-a12-2.png",
+  "alt": "NF-A 12 \u2014 control panel with piece counter",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300-3": {
-  "src": "tools/src-images/novofab/nf-a300-3.png",
-  "alt": "NF-A 300 \u2014 powered roller feed and hydraulic vise",
+ "nf-a12-3": {
+  "src": "tools/src-images/novofab/nf-a12-3.png",
+  "alt": "NF-A 12 \u2014 powered roller feed and hydraulic vise",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300t-1": {
-  "src": "tools/src-images/novofab/nf-a300t-1.png",
-  "alt": "NovoFab NF-A 300 T automatic mitre band saw, 0\u00b0\u201360\u00b0",
+ "nf-a12t-1": {
+  "src": "tools/src-images/novofab/nf-a12t-1.png",
+  "alt": "NovoFab NF-A 12 T automatic mitre band saw, 0\u00b0\u201360\u00b0",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300t-2": {
-  "src": "tools/src-images/novofab/nf-a300t-2.png",
-  "alt": "NF-A 300 T \u2014 swivelling mitre table",
+ "nf-a12t-2": {
+  "src": "tools/src-images/novofab/nf-a12t-2.png",
+  "alt": "NF-A 12 T \u2014 swivelling mitre table",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300sc-1": {
-  "src": "tools/src-images/novofab/nf-a300sc-1.png",
-  "alt": "NovoFab NF-A 300 SC single-column automatic band saw",
+ "nf-a12sc-1": {
+  "src": "tools/src-images/novofab/nf-a12sc-1.png",
+  "alt": "NovoFab NF-A 12 SC single-column automatic band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300sc-2": {
-  "src": "tools/src-images/novofab/nf-a300sc-2.png",
-  "alt": "NF-A 300 SC \u2014 automatic chip conveyor",
+ "nf-a12sc-2": {
+  "src": "tools/src-images/novofab/nf-a12sc-2.png",
+  "alt": "NF-A 12 SC \u2014 automatic chip conveyor",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300sc-3": {
-  "src": "tools/src-images/novofab/nf-a300sc-3.png",
-  "alt": "NF-A 300 SC \u2014 shuttle vise for automatic feeding",
+ "nf-a12sc-3": {
+  "src": "tools/src-images/novofab/nf-a12sc-3.png",
+  "alt": "NF-A 12 SC \u2014 shuttle vise for automatic feeding",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a300sc-4": {
-  "src": "tools/src-images/novofab/nf-a300sc-4.png",
-  "alt": "NF-A 300 SC \u2014 batch clamping device",
+ "nf-a12sc-4": {
+  "src": "tools/src-images/novofab/nf-a12sc-4.png",
+  "alt": "NF-A 12 SC \u2014 batch clamping device",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a330-1": {
-  "src": "tools/src-images/novofab/nf-a330-1.png",
-  "alt": "NovoFab NF-A 330 automatic twin-mitre band saw with 6 m material stand",
+ "nf-a13-1": {
+  "src": "tools/src-images/novofab/nf-a13-1.png",
+  "alt": "NovoFab NF-A 13 automatic twin-mitre band saw with 20 ft material stand",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a330-2": {
-  "src": "tools/src-images/novofab/nf-a330-2.png",
-  "alt": "NF-A 330 \u2014 feeder with shuttle vise",
+ "nf-a13-2": {
+  "src": "tools/src-images/novofab/nf-a13-2.png",
+  "alt": "NF-A 13 \u2014 feeder with shuttle vise",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a330-3": {
-  "src": "tools/src-images/novofab/nf-a330-3.png",
-  "alt": "NF-A 330 \u2014 PLC control panel",
+ "nf-a13-3": {
+  "src": "tools/src-images/novofab/nf-a13-3.png",
+  "alt": "NF-A 13 \u2014 PLC control panel",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a350-1": {
-  "src": "tools/src-images/novofab/nf-a350-1.png",
-  "alt": "NovoFab NF-A 350 / NF-A 415 CNC automatic band saw",
+ "nf-a14-1": {
+  "src": "tools/src-images/novofab/nf-a14-1.png",
+  "alt": "NovoFab NF-A 14 / NF-A 16 CNC automatic band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a460-1": {
-  "src": "tools/src-images/novofab/nf-a460-1.png",
-  "alt": "NovoFab NF-A 460 NC automatic band saw, \u00d8460 mm",
+ "nf-a18-1": {
+  "src": "tools/src-images/novofab/nf-a18-1.png",
+  "alt": "NovoFab NF-A 18 NC automatic band saw, 18-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a460-2": {
-  "src": "tools/src-images/novofab/nf-a460-2.png",
-  "alt": "NF-A 460 \u2014 feeder roller table",
+ "nf-a18-2": {
+  "src": "tools/src-images/novofab/nf-a18-2.png",
+  "alt": "NF-A 18 \u2014 feeder roller table",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-a600-1": {
-  "src": "tools/src-images/novofab/nf-a600-1.png",
-  "alt": "NovoFab NF-A 600 CNC automatic band saw, \u00d8600 mm",
+ "nf-a24-1": {
+  "src": "tools/src-images/novofab/nf-a24-1.png",
+  "alt": "NovoFab NF-A 24 CNC automatic band saw, 23-5/8-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280-1": {
-  "src": "tools/src-images/novofab/nf-dc280-1.png",
-  "alt": "NovoFab NF-DC 280 double column band saw",
+ "nf-dc11-1": {
+  "src": "tools/src-images/novofab/nf-dc11-1.png",
+  "alt": "NovoFab NF-DC 11 double column band saw, 11-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280t-1": {
-  "src": "tools/src-images/novofab/nf-dc280t-1.png",
-  "alt": "NovoFab NF-DC 280 T double column mitre band saw",
+ "nf-dc11t-1": {
+  "src": "tools/src-images/novofab/nf-dc11t-1.png",
+  "alt": "NovoFab NF-DC 11 T double column mitre band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280t-2": {
-  "src": "tools/src-images/novofab/nf-dc280t-2.png",
-  "alt": "NF-DC 280 T \u2014 twin-column head with hydraulic down-feed",
+ "nf-dc11t-2": {
+  "src": "tools/src-images/novofab/nf-dc11t-2.png",
+  "alt": "NF-DC 11 T \u2014 twin-column head with hydraulic down-feed",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280t-3": {
-  "src": "tools/src-images/novofab/nf-dc280t-3.png",
-  "alt": "NF-DC 280 T \u2014 swivel table for 0\u00b0\u201345\u00b0 mitre cuts",
+ "nf-dc11t-3": {
+  "src": "tools/src-images/novofab/nf-dc11t-3.png",
+  "alt": "NF-DC 11 T \u2014 swivel table for 0\u00b0\u201345\u00b0 mitre cuts",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280a-1": {
-  "src": "tools/src-images/novofab/nf-dc280a-1.png",
-  "alt": "NovoFab NF-DC 280 A automatic double column band saw",
+ "nf-dc11a-1": {
+  "src": "tools/src-images/novofab/nf-dc11a-1.png",
+  "alt": "NovoFab NF-DC 11 A automatic double column band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280av-1": {
-  "src": "tools/src-images/novofab/nf-dc280av-1.png",
-  "alt": "NovoFab NF-DC 280 AV automatic double column band saw with variable speed",
+ "nf-dc11av-1": {
+  "src": "tools/src-images/novofab/nf-dc11av-1.png",
+  "alt": "NovoFab NF-DC 11 AV automatic double column band saw with variable speed",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280av-2": {
-  "src": "tools/src-images/novofab/nf-dc280av-2.png",
-  "alt": "NF-DC 280 AV \u2014 stepless blade speed control",
+ "nf-dc11av-2": {
+  "src": "tools/src-images/novofab/nf-dc11av-2.png",
+  "alt": "NF-DC 11 AV \u2014 stepless blade speed control",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280av-3": {
-  "src": "tools/src-images/novofab/nf-dc280av-3.png",
-  "alt": "NF-DC 280 AV \u2014 automatic chip conveyor",
+ "nf-dc11av-3": {
+  "src": "tools/src-images/novofab/nf-dc11av-3.png",
+  "alt": "NF-DC 11 AV \u2014 automatic chip conveyor",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280av-4": {
-  "src": "tools/src-images/novofab/nf-dc280av-4.png",
-  "alt": "NF-DC 280 AV \u2014 new hydraulic vise design",
+ "nf-dc11av-4": {
+  "src": "tools/src-images/novofab/nf-dc11av-4.png",
+  "alt": "NF-DC 11 AV \u2014 new hydraulic vise design",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc280-stand": {
-  "src": "tools/src-images/novofab/nf-dc280-stand.png",
-  "alt": "Roller support stand for NF-DC 280 saws",
+ "nf-dc11-stand": {
+  "src": "tools/src-images/novofab/nf-dc11-stand.png",
+  "alt": "Roller support stand for NF-DC 11 saws",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc350-1": {
-  "src": "tools/src-images/novofab/nf-dc350-1.png",
-  "alt": "NovoFab NF-DC 350 / NF-DC 400 gear-driven double column band saw",
+ "nf-dc14-1": {
+  "src": "tools/src-images/novofab/nf-dc14-1.png",
+  "alt": "NovoFab NF-DC 14 / NF-DC 16 gear-driven double column band saw",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc350-2": {
-  "src": "tools/src-images/novofab/nf-dc350-2.png",
-  "alt": "NF-DC 350 \u2014 hydraulic clamping vise",
+ "nf-dc14-2": {
+  "src": "tools/src-images/novofab/nf-dc14-2.png",
+  "alt": "NF-DC 14 \u2014 hydraulic clamping vise",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc350-3": {
-  "src": "tools/src-images/novofab/nf-dc350-3.png",
-  "alt": "NF-DC 350 \u2014 work table and material stand",
+ "nf-dc14-3": {
+  "src": "tools/src-images/novofab/nf-dc14-3.png",
+  "alt": "NF-DC 14 \u2014 work table and material stand",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc500-1": {
-  "src": "tools/src-images/novofab/nf-dc500-1.png",
-  "alt": "NovoFab NF-DC 500 gantry double column band saw, \u00d8500 mm",
+ "nf-dc20-1": {
+  "src": "tools/src-images/novofab/nf-dc20-1.png",
+  "alt": "NovoFab NF-DC 20 gantry double column band saw, 19-3/4-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc600-1": {
-  "src": "tools/src-images/novofab/nf-dc600-1.png",
-  "alt": "NovoFab NF-DC 600 gantry double column band saw, \u00d8600 mm",
+ "nf-dc24-1": {
+  "src": "tools/src-images/novofab/nf-dc24-1.png",
+  "alt": "NovoFab NF-DC 24 gantry double column band saw, 23-5/8-inch",
   "section": "bandsaw",
-  "trim": true,
+  "trim": false,
   "quality": 82
  },
- "nf-dc600-2": {
-  "src": "tools/src-images/novofab/nf-dc600-2.png",
-  "alt": "NF-DC 600 \u2014 chain-driven powered roller table",
+ "nf-dc24-2": {
+  "src": "tools/src-images/novofab/nf-dc24-2.png",
+  "alt": "NF-DC 24 \u2014 chain-driven powered roller table",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82
+ },
+ "nf-m16-1-cut": {
+  "src": "tools/src-images/cutouts/nf-m16-1-cut.png",
+  "alt": "NovoFab NF-M 16 manual band saw, 15-3/4-inch",
   "section": "bandsaw",
   "trim": true,
-  "quality": 82
+  "quality": 84
+ },
+ "nf-m10t-1-cut": {
+  "src": "tools/src-images/cutouts/nf-m10t-1-cut.png",
+  "alt": "NovoFab NF-M 10 T twin-mitre manual band saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-h18-1-cut": {
+  "src": "tools/src-images/cutouts/nf-h18-1-cut.png",
+  "alt": "NovoFab NF-H 18 swivel-head band saw, 18-inch",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-h16-1-cut": {
+  "src": "tools/src-images/cutouts/nf-h16-1-cut.png",
+  "alt": "NovoFab NF-H 16 hydraulic band saw, 15-3/4-inch",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-h12sc-1-cut": {
+  "src": "tools/src-images/cutouts/nf-h12sc-1-cut.png",
+  "alt": "NovoFab NF-H 12 SC single-column band saw with touch screen",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-a12sc-1-cut": {
+  "src": "tools/src-images/cutouts/nf-a12sc-1-cut.png",
+  "alt": "NovoFab NF-A 12 SC single-column automatic band saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-a18-1-cut": {
+  "src": "tools/src-images/cutouts/nf-a18-1-cut.png",
+  "alt": "NovoFab NF-A 18 NC automatic band saw, 18-inch",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-a13-1-cut": {
+  "src": "tools/src-images/cutouts/nf-a13-1-cut.png",
+  "alt": "NovoFab NF-A 13 automatic twin-mitre band saw with 20 ft material stand",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-dc11a-1-cut": {
+  "src": "tools/src-images/cutouts/nf-dc11a-1-cut.png",
+  "alt": "NovoFab NF-DC 11 A automatic double column band saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-dc14-1-cut": {
+  "src": "tools/src-images/cutouts/nf-dc14-1-cut.png",
+  "alt": "NovoFab NF-DC 14 / NF-DC 16 gear-driven double column band saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nf-dc11-1-cut": {
+  "src": "tools/src-images/cutouts/nf-dc11-1-cut.png",
+  "alt": "NovoFab NF-DC 11 double column band saw, 11-inch",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
  }
 }

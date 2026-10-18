@@ -1,0 +1,25 @@
+<div class="ai-panel" id="ai-panel" hidden{% if staging %} data-staging="1"{% endif %} data-page="{{ page.slug }}" data-ai="js/ai.js?v={{ ai_hash }}">
+  <div class="ai-backdrop" data-ai-close></div>
+  <div class="ai-dialog" role="dialog" aria-modal="true" aria-labelledby="ai-title">
+    <header class="ai-head">
+      <div>
+        <h2 id="ai-title">Find the right machine</h2>
+        <p>Describe what you cut or bend — size, material, how many pieces, angles — and the NovoTech assistant picks the matching machines from our catalogue.</p>
+      </div>
+      <button type="button" class="ai-close" data-ai-close aria-label="Close">×</button>
+    </header>
+    <div class="ai-log" id="ai-log" aria-live="polite"></div>
+    <form class="ai-form" id="ai-form">
+      <label class="sr-only" for="ai-q">Your question</label>
+      <textarea id="ai-q" rows="2" placeholder="e.g. I cut 6″ steel tube at 45° all day and want the saw to feed by itself" maxlength="1500" required></textarea>
+      <button type="submit" class="btn btn-primary">Ask</button>
+    </form>
+    <div class="ai-suggest" id="ai-suggest">
+      <button type="button">Automatic saw for 4″ tube with mitre cuts</button>
+      <button type="button">Rebar bender for 25M bars</button>
+      <button type="button">Budget band saw for a maintenance shop, 10″ round</button>
+      <button type="button">Double column saw for 16″ solid bar</button>
+    </div>
+    <p class="ai-foot">Answers are generated from NovoTech's catalogue and can contain mistakes — confirm capacities with us before ordering. <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a></p>
+  </div>
+</div>

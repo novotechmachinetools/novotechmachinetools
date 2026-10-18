@@ -344,7 +344,7 @@ def page_ld(page):
     for g in page.get("groups", []):
         for f in g["families"]:
             pos += 1
-            purl = (absurl(g["id"] + ".html") if page.get("subpages") else url) + "#" + f["id"]
+            purl = (absurl(g["id"]) if page.get("subpages") else url) + "#" + f["id"]
             gal = f.get("gallery") or []
             models = [m["name"] for m in (f.get("specs") or {}).get("models", [])] or [s.strip() for s in f.get("models_label", "").split("·") if s.strip()]
             fb = site.get("brands", {}).get(f.get("brand"), {}) or brand
@@ -494,6 +494,9 @@ def range_table(subpages):
     return rows
 
 
+PREPARED = []   # prepared page dicts (families resolved) — used for the AI assistant's catalogue
+
+
 def render_page(page):
     page = dict(page)
     if page.get("subpages"):  # hub: resolve each sub-page's families and derive groups for the quote form / structured data
@@ -501,12 +504,18 @@ def render_page(page):
             sp["families"] = [prepare_family(family(page, fid)) for fid in sp["families"]]
             sp["href"] = sp["slug"] + ".html"
         page["groups"] = [{"id": sp["slug"], "title": sp["title"], "families": sp["families"]} for sp in page["subpages"]]
+        if page.get("lines"):   # two product lines, each with its own sub-pages and range table
+            by_slug = {sp["slug"]: sp for sp in page["subpages"]}
+            for ln in page["lines"]:
+                ln["subpages"] = [by_slug[sp["slug"]] for sp in ln["subpages"]]
+                ln["range_rows"] = range_table(ln["subpages"])
+                ln["brand_info"] = site["brands"].get(ln["brand"], {})
         page["range_rows"] = range_table(page["subpages"])
     for g in page.get("groups", []):
         g["families"] = [prepare_family(family(page, f)) if isinstance(f, str) else f for f in g["families"]]
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
         page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
-    page["url"] = f"{site['domain']}/{page['slug']}.html"
+    page["url"] = f"{site['domain']}/{page['slug']}"      # clean URLs: pages are served without .html
     if page.get("article"):   # long-form guide kept from the old site (HTML fragment with <figure data-img> placeholders)
         art = open(os.path.join(ROOT, "content", "articles", page["article"]), encoding="utf-8").read()
         def fig(m):
@@ -518,8 +527,72 @@ def render_page(page):
         page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
     tpl = env.get_template(page.get("template", "page.html"))
     inline_css = None if ARTIFACT else open(os.path.join(DIST, "css", "site.css"), encoding="utf-8").read().replace("../fonts/", "fonts/")   # minified by main(); URLs re-based to the page
-    return tpl.render(page=page, ld_json=page_ld(page), build_ts=int(datetime.datetime.now().timestamp()), inline_css=inline_css,
-                      css_hash=asset_hash(os.path.join(ROOT, "src", "css", "site.css")), js_hash=asset_hash(os.path.join(ROOT, "src", "js", "site.js")))
+    html = tpl.render(page=page, ld_json=page_ld(page), build_ts=int(datetime.datetime.now().timestamp()), inline_css=inline_css,
+                      css_hash=asset_hash(os.path.join(ROOT, "src", "css", "site.css")), js_hash=asset_hash(os.path.join(ROOT, "src", "js", "site.js")),
+                      ai_hash=asset_hash(os.path.join(ROOT, "src", "js", "ai.js")))
+    PREPARED.append(page)
+    return clean_urls(html)
+
+
+def ai_catalogue(pages):
+    """Compact machine catalogue for the AI assistant (dist/ai/catalogue.json): one entry per family,
+    with the page it lives on, its models and their headline capacities in inches and mm."""
+    items = []
+    seen = set()
+    for page in pages:
+        if page.get("subpages"):
+            continue   # hubs repeat the families of their sub-pages
+        for g in page.get("groups", []):
+            for f in g["families"]:
+                if f["id"] in seen:
+                    continue
+                seen.add(f["id"])
+                spec = f.get("specs") or {}
+                models = []
+                for i, m in enumerate(spec.get("models", [])):
+                    entry = {"name": m["name"]}
+                    if spec.get("kind") == "bandsaw":
+                        r = bandsaw_round0(m)
+                        rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
+                        angles = [a for a in (m.get("capacity_mm") or {}) if a != "0"]
+                        entry["round_capacity"] = f"Ø{inch_frac(r)} ({r:g} mm)" if r else None
+                        entry["rectangular_capacity"] = f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)" if rect else None
+                        entry["miter_angles"] = [a.replace("+", "+") + "°" for a in angles] or None
+                        entry["motor"] = hp_range(m.get("main_motor_kw"))
+                        entry["blade_speed"] = rng(m.get("blade_speed_m_min"), lambda x: x * 3.2808, "ft/min", "m/min")
+                        if m.get("feed_length_mm"):
+                            entry["feed_per_stroke"] = f"{inch_frac(m['feed_length_mm'])} ({m['feed_length_mm']:g} mm)"
+                    else:
+                        mm = model_single(spec, i)
+                        if mm:
+                            entry["max_single_bar"] = dia(mm)
+                        cmm = model_single(spec, i, "cutting_capacity")
+                        if cmm:
+                            entry["cutting_capacity"] = dia(cmm)
+                        if m.get("kw") or m.get("kw_text"):
+                            entry["motor"] = m.get("kw_text") or f"{hp(m['kw'])} ({kw_str(m['kw'])})"
+                        if m.get("voltage"):
+                            entry["voltage"] = m["voltage"]
+                    models.append({k: v for k, v in entry.items() if v})
+                thumb = f["gallery"][0]["thumb"] if f.get("gallery") and f["gallery"][0].get("thumb") else (f["gallery"][0]["small"] if f.get("gallery") else None)
+                brand = site.get("brands", {}).get(f.get("brand"), {})
+                items.append({
+                    "id": f["id"], "name": f["name"], "short": f["short"], "models_label": f.get("models_label", ""),
+                    "brand": brand.get("name") or (page.get("brand") or {}).get("name", ""), "line": brand.get("line"),
+                    "category": g["title"], "page_title": page["h1"], "page": page["slug"], "href": f"{page['slug']}#{f['id']}",
+                    "headline": f.get("headline", ""), "summary": f.get("summary", ""), "features": f.get("features", [])[:7],
+                    "automation": f.get("group"), "models": models, "image": thumb,
+                })
+    return items
+
+
+def clean_urls(html):
+    """Internal page links without the .html extension (the server maps /page to page.html)."""
+    html = re.sub(r'href="([a-z0-9-]+)\.html(#[^"]*)?"', lambda m: f'href="{m.group(1)}{m.group(2) or ""}"', html)
+    html = re.sub(r'href="index"', 'href="./"', html)
+    dom = re.escape(site["domain"])
+    html = re.sub(dom + r'/([a-z0-9-]+)\.html(?=[#"\s<\\])', lambda m: f'{site["domain"]}/{m.group(1)}', html)
+    return html
 
 
 def artifact_fragment(html, page):
@@ -553,7 +626,7 @@ def main():
                 fp = os.path.join(DIST, "js", fn); src = open(fp, encoding="utf-8").read(); open(fp, "w", encoding="utf-8").write(rjsmin.jsmin(src))
     except ImportError:
         print("rcssmin/rjsmin not installed - shipping unminified CSS/JS")
-    for extra in ("robots.txt", "llms.txt", ".htaccess", "quote.php", "favicon.ico", "favicon.svg", "site.webmanifest"):
+    for extra in ("robots.txt", "llms.txt", ".htaccess", "quote.php", "ask.php", "ai-config.sample.php", "favicon.ico", "favicon.svg", "site.webmanifest"):
         s = os.path.join(ROOT, "src", "root", extra)
         if os.path.exists(s):
             shutil.copy(s, os.path.join(DIST, extra))
@@ -562,13 +635,27 @@ def main():
     loaded = [json.load(open(os.path.join(pdir, fn), encoding="utf-8")) for fn in sorted(os.listdir(pdir)) if fn.endswith(".json") and not fn.startswith("_")]
     # every page of a hub's section gets links to the hub and to its sibling pages (cross-linking the benders / cutters / lines pages)
     for hub in [p for p in loaded if p.get("subpages")]:
-        members = [{"href": sp["slug"] + ".html", "slug": sp["slug"], "label": sp.get("nav_label") or sp["title"], "blurb": sp.get("blurb", ""), "image": img(sp["image"]) if sp.get("image") else None} for sp in hub["subpages"]]
+        def member(sp):
+            return {"href": sp["slug"] + ".html", "slug": sp["slug"], "label": sp.get("nav_label") or sp["title"], "blurb": sp.get("blurb", ""), "image": img(sp["image"]) if sp.get("image") else None, "cat": sp.get("cat")}
+        groups = [{"label": None, "members": [member(sp) for sp in hub["subpages"]]}]
+        if hub.get("lines"):
+            groups = [{"label": ln.get("short") or ln["name"], "line": ln["id"], "brand": ln["brand"], "members": [member(sp) for sp in ln["subpages"]]} for ln in hub["lines"]]
+        hub_info = {"href": hub["slug"] + ".html", "label": hub.get("nav_label") or hub["h1"], "image": img(hub["hero_image"]) if hub.get("hero_image") else None, "blurb": hub.get("related_blurb", "")}
         for p in loaded:
-            if any(m["slug"] == p["slug"] for m in members):
-                p["section"] = {"hub": {"href": hub["slug"] + ".html", "label": hub.get("nav_label") or hub["h1"], "image": img(hub["hero_image"]) if hub.get("hero_image") else None}, "label": hub.get("section_label", "Rebar machinery"),
-                                "pages": [dict(m, current=(m["slug"] == p["slug"])) for m in members]}
-                covered = {m["href"] for m in members} | {hub["slug"] + ".html"}
-                p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these
+            for g in groups:
+                if any(m["slug"] == p["slug"] for m in g["members"]):
+                    me = next(m for m in g["members"] if m["slug"] == p["slug"])
+                    alt = None
+                    if len(groups) > 1:
+                        og = next(x for x in groups if x is not g)
+                        alt_m = next((m for m in og["members"] if m.get("cat") == me.get("cat")), None)
+                        alt = dict(alt_m, line_label=og["label"], line=og.get("line"), brand=og.get("brand")) if alt_m else None
+                    p["section"] = {"hub": hub_info, "label": (g["label"] + " band saws") if g.get("label") else hub.get("section_label", "Rebar machinery"),
+                                    "line": g.get("line"), "brand": g.get("brand"), "line_name": g.get("label"),
+                                    "pages": [dict(m, current=(m["slug"] == p["slug"])) for m in g["members"]], "alt": alt,
+                                    "related_title": hub.get("related_title_" + (g.get("line") or ""), None)}
+                    covered = {m["href"] for m in g["members"]} | {hub["slug"] + ".html"} | ({alt["href"]} if alt else set())
+                    p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these
     for page in loaded:
         html = render_page(page)
         if ARTIFACT:
@@ -577,9 +664,15 @@ def main():
         open(out, "w", encoding="utf-8").write(html)
         pages.append(page)
         print(f"wrote {out} ({len(html)//1024} KB)")
+    # AI assistant catalogue (read by ask.php on the server and by the search panel in the browser)
+    os.makedirs(os.path.join(DIST, "ai"), exist_ok=True)
+    cat = ai_catalogue(PREPARED)
+    json.dump({"generated": datetime.date.today().isoformat(), "site": site["domain"], "families": cat},
+              open(os.path.join(DIST, "ai", "catalogue.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    print(f"ai catalogue: {len(cat)} families, {os.path.getsize(os.path.join(DIST, 'ai', 'catalogue.json'))//1024} KB")
     # sitemap
     today = datetime.date.today().isoformat()
-    urls = "".join(f"  <url><loc>{site['domain']}/{p['slug']}.html</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{'0.9' if p.get('subpages') else '0.8'}</priority></url>\n" for p in pages)
+    urls = "".join(f"  <url><loc>{site['domain']}/{p['slug']}</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{'0.9' if p.get('subpages') else '0.8'}</priority></url>\n" for p in pages)
     open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
     if STAGING:
         open(os.path.join(DIST, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")

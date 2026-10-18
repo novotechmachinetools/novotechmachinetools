@@ -7,9 +7,18 @@ RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
+# ---- Clean URLs: /band-saw serves band-saw.html, and /band-saw.html redirects to /band-saw ----
+RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ $1.html [L]
+
 # ---- Old URLs that changed (add one line per moved page) ---------------------
-# Redirect 301 /old-page.html /new-page.html
-RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw.html
+# RedirectMatch 301 ^/old-page(\.html)?$ /new-page
+RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw
+RedirectMatch 301 ^/(manual|semi-automatic|automatic|double-column)-band-saws(\.html)?$ /band-saw
 
 # ---- Compression -------------------------------------------------------------
 <IfModule mod_brotli.c>
@@ -48,7 +57,7 @@ AddType image/webp .webp
 AddType application/manifest+json .webmanifest
 
 # ---- Error page --------------------------------------------------------------
-ErrorDocument 404 /page-not-found-404.html
+ErrorDocument 404 /page-not-found-404
 
 # ---- Keep the directory listing off ---------------------------------------------
 Options -Indexes
