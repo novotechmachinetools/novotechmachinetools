@@ -21,13 +21,20 @@
         <a class="btn btn-ghost" href="{{ page.catalogue_pdf.file }}" download>{{ page.catalogue_pdf.label }} <small>({{ page.catalogue_pdf.size }})</small></a>
       </div>
       <p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
+      {% if page.section %}
+      <nav class="section-nav" aria-label="Rebar machinery pages">
+        <span class="section-nav-label">Rebar machinery:</span>
+        {% for s in page.section.pages %}<a href="{{ s.href }}"{% if s.current %} aria-current="page"{% endif %}>{{ s.label }}</a>{% endfor %}
+        <a href="{{ page.section.hub.href }}" class="section-nav-hub">{{ page.section.hub.label }}</a>
+      </nav>
+      {% endif %}
     </div>
     <div class="hero-art" aria-hidden="true">
       <div class="hero-band"></div>
       <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, 520px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">
       {% if page.hero_image_secondary %}
       <div class="hero-minis">
-        {% for n in page.hero_image_secondary %}{% set m = img(n) %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="160px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async">{% endfor %}
+        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% endfor %}
       </div>
       {% endif %}
     </div>
@@ -132,12 +139,22 @@
 </section>
 {% endif %}
 
-{% if page.related_pages %}
+{% if page.related_pages or page.section %}
 <section class="related wrap" aria-labelledby="related-title">
   <h2 id="related-title">More rebar machinery from NovoTech</h2>
+  {% if page.section %}
+  <ul class="related-cards">
+    {% for s in page.section.pages if not s.current %}
+    <li><a href="{{ s.href }}"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></a></li>
+    {% endfor %}
+    <li><a href="{{ page.section.hub.href }}"><strong>{{ page.section.hub.label }}</strong><span>Every GMS rebar bender, cutter and automatic line NovoTech supplies, with the capacity table for the whole range.</span></a></li>
+  </ul>
+  {% endif %}
+  {% if page.related_pages %}
   <ul class="related-list">
     {% for r in page.related_pages %}<li><a class="arrow" href="{{ r.href }}">{{ r.label }}</a></li>{% endfor %}
   </ul>
+  {% endif %}
 </section>
 {% endif %}
 

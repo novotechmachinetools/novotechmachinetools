@@ -223,21 +223,21 @@
       "videos": [
         {
           "id": "YhbU43ypxRU",
-          "title": "GMS B series rebar bender bending stirrups — manual or automatic control",
+          "title": "GMS B 45 and B 36 rebar benders at work",
           "thumb": "video-YhbU43ypxRU",
-          "duration": "PT2M"
+          "duration": "PT3M10S"
         },
         {
-          "id": "oqIxmp7GZb8",
-          "title": "GMS B 45x1 rebar bending machine",
-          "thumb": "video-oqIxmp7GZb8",
-          "duration": "PT1M30S"
+          "id": "BQXPYz4z-nI",
+          "title": "GMS B 50 rebar bender",
+          "thumb": "video-BQXPYz4z-nI",
+          "duration": "PT1M5S"
         },
         {
-          "id": "sOSH9OmUp84",
-          "title": "GMS B 50 rebar bending machine",
-          "thumb": "video-sOSH9OmUp84",
-          "duration": "PT1M30S"
+          "id": "V8oJgSzeiq4",
+          "title": "GMS B 45x1 rebar bender — operating instructions",
+          "thumb": "video-V8oJgSzeiq4",
+          "duration": "PT7M19S"
         }
       ]
     },
@@ -438,7 +438,21 @@
         },
         "voltage": "600 V 3-phase (208/240/480 V on request)"
       },
-      "short": "BS long-table benders"
+      "short": "BS long-table benders",
+      "videos": [
+        {
+          "id": "GYY9MegnbJM",
+          "title": "GMS BS 60 long-table rebar bender",
+          "thumb": "video-GYY9MegnbJM",
+          "duration": "PT1M40S"
+        },
+        {
+          "id": "E9k845OzwUs",
+          "title": "GMS BS 60 bending Ø2-3/8″ (60 mm) bars",
+          "thumb": "video-E9k845OzwUs",
+          "duration": "PT42S"
+        }
+      ]
     },
     "Protable-rebar-bender-MG-BT-A-series": {
       "id": "Protable-rebar-bender-MG-BT-A-series",
@@ -644,16 +658,22 @@
       "short": "Portable benders",
       "videos": [
         {
-          "id": "JDsfbSoCdN0",
-          "title": "GMS BT 26 portable rebar bender on 110/220 V — stirrup bending",
-          "thumb": "video-JDsfbSoCdN0",
-          "duration": "PT2M10S"
+          "id": "eEpk-PF0ff8",
+          "title": "GMS BT 26 programmable portable rebar bender, 1″ (26 mm)",
+          "thumb": "video-eEpk-PF0ff8",
+          "duration": "PT1M52S"
         },
         {
-          "id": "qg05mD5T-fQ",
-          "title": "GMS MG 20 series portable bender — technical overview",
-          "thumb": "video-qg05mD5T-fQ",
-          "duration": "PT2M"
+          "id": "5g_xExgYSGU",
+          "title": "GMS BT 24x5 portable stirrup and rebar bender",
+          "thumb": "video-5g_xExgYSGU",
+          "duration": "PT1M42S"
+        },
+        {
+          "id": "_HkCb-D6VkM",
+          "title": "GMS MG 20B portable rebar bender",
+          "thumb": "video-_HkCb-D6VkM",
+          "duration": "PT1M7S"
         }
       ]
     },
@@ -770,7 +790,21 @@
         },
         "voltage": "600 V 3-phase (208/240/480 V on request)"
       },
-      "short": "Stirrup benders"
+      "short": "Stirrup benders",
+      "videos": [
+        {
+          "id": "4DaNA19hKas",
+          "title": "GMS SL 36 stirrup bender",
+          "thumb": "video-4DaNA19hKas",
+          "duration": "PT2M22S"
+        },
+        {
+          "id": "RGLE1betqNs",
+          "title": "GMS SL 30 stirrup bender",
+          "thumb": "video-RGLE1betqNs",
+          "duration": "PT59S"
+        }
+      ]
     },
     "spiral-benders": {
       "id": "spiral-benders",
@@ -948,7 +982,27 @@
       "short": "Spiral benders",
       "model_caps": {
         "AXIS 50S": "bends up to Ø2″ (50 mm) · spirals to Ø19-3/4″ (500 mm)"
-      }
+      },
+      "videos": [
+        {
+          "id": "CK7wVdTG_8I",
+          "title": "GMS SX 40 spiral bender — round column reinforcement",
+          "thumb": "video-CK7wVdTG_8I",
+          "duration": "PT33S"
+        },
+        {
+          "id": "iknDo3T3IOg",
+          "title": "GMS SX 36 helical rebar bender",
+          "thumb": "video-iknDo3T3IOg",
+          "duration": "PT42S"
+        },
+        {
+          "id": "HeqQhGr7vRo",
+          "title": "NC-controlled spiral bar bender for columns",
+          "thumb": "video-HeqQhGr7vRo",
+          "duration": "PT1M3S"
+        }
+      ]
     },
     "dowel-bar-benders": {
       "id": "dowel-bar-benders",
@@ -1034,7 +1088,15 @@
         "voltage": "600 V 3-phase (208/240/480 V on request)"
       },
       "short": "Dowel bar benders",
-      "headline": "Dowel bars to Ø1-3/8″ (36 mm)"
+      "headline": "Dowel bars to Ø1-3/8″ (36 mm)",
+      "videos": [
+        {
+          "id": "dxrBCMZ8cz0",
+          "title": "Portable starter-bar (dowel) bender bending Ø1-1/4″ (32 mm) in place",
+          "thumb": "video-dxrBCMZ8cz0",
+          "duration": "PT1M9S"
+        }
+      ]
     },
     "Hydraulic-rebar-cutter": {
       "id": "Hydraulic-rebar-cutter",
@@ -1334,15 +1396,27 @@
       "videos": [
         {
           "id": "eZI4hX-giPg",
-          "title": "GMS POWER 24 portable rebar cutter — 110/220 V single phase",
+          "title": "GMS hydraulic rebar cutters",
           "thumb": "video-eZI4hX-giPg",
-          "duration": "PT1M20S"
+          "duration": "PT1M56S"
         },
         {
-          "id": "RCWP9SOOCBI",
-          "title": "GMS POWER 24 portable rebar cutter — technical overview",
-          "thumb": "video-RCWP9SOOCBI",
-          "duration": "PT2M"
+          "id": "0L43B6f0Gio",
+          "title": "GMS H 45 hydraulic rebar cutter — Ø1-3/4″ (45 mm)",
+          "thumb": "video-0L43B6f0Gio",
+          "duration": "PT1M5S"
+        },
+        {
+          "id": "hrM0RQ0JHW8",
+          "title": "GMS POWER 24 portable rebar cutter on 120 V",
+          "thumb": "video-hrM0RQ0JHW8",
+          "duration": "PT55S"
+        },
+        {
+          "id": "MPkRy0OXaNQ",
+          "title": "GMS H series hydraulic cutter — operating instructions",
+          "thumb": "video-MPkRy0OXaNQ",
+          "duration": "PT1M47S"
         }
       ]
     },
@@ -1505,10 +1579,16 @@
       "short": "Mechanical cutters",
       "videos": [
         {
-          "id": "wg295qz5fs8",
-          "title": "GMS M 45 mechanical rebar cutting machine",
-          "thumb": "video-wg295qz5fs8",
-          "duration": "PT1M30S"
+          "id": "rfteBuATNug",
+          "title": "GMS M 45 high-speed mechanical rebar cutter",
+          "thumb": "video-rfteBuATNug",
+          "duration": "PT1M17S"
+        },
+        {
+          "id": "-J62v1f3fZs",
+          "title": "GMS M 55 mechanical rebar cutter — Ø2-1/8″ (55 mm)",
+          "thumb": "video--J62v1f3fZs",
+          "duration": "PT37S"
         }
       ]
     },
@@ -1631,10 +1711,10 @@
       "short": "Heavy-duty cutters",
       "videos": [
         {
-          "id": "7ir_epq-jXw",
+          "id": "gfP2kJLe-Nk",
           "title": "GMS SH 60 double-acting hydraulic rebar cutter",
-          "thumb": "video-7ir_epq-jXw",
-          "duration": "PT1M30S"
+          "thumb": "video-gfP2kJLe-Nk",
+          "duration": "PT42S"
         }
       ]
     },
@@ -1739,7 +1819,21 @@
         },
         "voltage": "600 V 3-phase (208/240/480 V on request)"
       },
-      "short": "MAX 40 bender-cutter"
+      "short": "MAX 40 bender-cutter",
+      "videos": [
+        {
+          "id": "bAnLNYtAOgk",
+          "title": "GMS MAX 40 combined rebar bender and cutter",
+          "thumb": "video-bAnLNYtAOgk",
+          "duration": "PT1M5S"
+        },
+        {
+          "id": "edOPPLQAqhY",
+          "title": "GMS MAX 40 — bending and cutting on one machine",
+          "thumb": "video-edOPPLQAqhY",
+          "duration": "PT1M27S"
+        }
+      ]
     },
     "automatic-stirrup-bender": {
       "id": "automatic-stirrup-bender",
@@ -1831,10 +1925,22 @@
       "headline": "1/4″–1/2″ (6–12 mm) coil · 2 strands",
       "videos": [
         {
-          "id": "4vKFCDajiNc",
-          "title": "GMS SLS 12 automatic stirrup bending machine",
-          "thumb": "video-4vKFCDajiNc",
-          "duration": "PT3M"
+          "id": "_d6hndF1ye8",
+          "title": "GMS SLS 12 CNC stirrup bender and cutter working from coil",
+          "thumb": "video-_d6hndF1ye8",
+          "duration": "PT2M42S"
+        },
+        {
+          "id": "MdQQPxsYJYQ",
+          "title": "GMS SLS 12 CNC rebar bender",
+          "thumb": "video-MdQQPxsYJYQ",
+          "duration": "PT1M46S"
+        },
+        {
+          "id": "oFbLDmRprfs",
+          "title": "GMS SLS 12 automatic stirrup bending and cutting from coil",
+          "thumb": "video-oFbLDmRprfs",
+          "duration": "PT1M34S"
         }
       ],
       "model_caps": {
@@ -2072,16 +2178,16 @@
       "headline": "Bars to Ø2-1/8″ (55 mm) · up to 35 bars at once",
       "videos": [
         {
-          "id": "LKfwHVH8VdA",
-          "title": "GMS rebar shear line and double bender in production",
-          "thumb": "video-LKfwHVH8VdA",
-          "duration": "PT1M20S"
+          "id": "l6q3ImmJhEE",
+          "title": "GMS MATRIX 55S automatic rebar shear line — Ø2-1/8″ (55 mm)",
+          "thumb": "video-l6q3ImmJhEE",
+          "duration": "PT50S"
         },
         {
-          "id": "CjwixzMJQXE",
-          "title": "GMS MATRIX 55S shear line and SYNCLONE 45S double bender — cut and bend",
-          "thumb": "video-CjwixzMJQXE",
-          "duration": "PT3M"
+          "id": "LKfwHVH8VdA",
+          "title": "GMS MATRIX 45 automatic rebar shearing line",
+          "thumb": "video-LKfwHVH8VdA",
+          "duration": "PT1M13S"
         }
       ],
       "model_caps": {
@@ -2221,10 +2327,16 @@
       "headline": "Bars to Ø1-5/8″ (42 mm) · 40 ft (12 m) long",
       "videos": [
         {
-          "id": "CjwixzMJQXE",
-          "title": "GMS SYNCLONE 45S double bender with MATRIX 55S shear line",
-          "thumb": "video-CjwixzMJQXE",
-          "duration": "PT3M"
+          "id": "EQ9TL3Iu7ZE",
+          "title": "GMS SYNCLONE 45S rebar double bending line",
+          "thumb": "video-EQ9TL3Iu7ZE",
+          "duration": "PT1M29S"
+        },
+        {
+          "id": "zIyYBoj05Pc",
+          "title": "GMS SYNCLONE 45S double bender in production",
+          "thumb": "video-zIyYBoj05Pc",
+          "duration": "PT1M30S"
         }
       ],
       "model_caps": {
@@ -2312,7 +2424,21 @@
         "HB 12x3": "bends mesh wire to Ø1/2″ (12 mm) · 9 ft 10 in wide",
         "HB 12x6": "bends mesh wire to Ø1/2″ (12 mm) · 19 ft 8 in wide",
         "MH 8C": "cuts mesh wire to Ø5/16″ (8 mm) · 9 ft 10 in wide"
-      }
+      },
+      "videos": [
+        {
+          "id": "LAKpCv_5U9M",
+          "title": "GMS HB 12 hydraulic mesh bender",
+          "thumb": "video-LAKpCv_5U9M",
+          "duration": "PT41S"
+        },
+        {
+          "id": "YbFnrMgUeYg",
+          "title": "GMS MH 8C wire mesh cutting machine",
+          "thumb": "video-YbFnrMgUeYg",
+          "duration": "PT1M52S"
+        }
+      ]
     }
   }
 }

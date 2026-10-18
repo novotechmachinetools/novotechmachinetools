@@ -45,7 +45,8 @@
     "dowel-bar-benders",
     "combined-bender-cutter",
     "mesh-benders-and-cutters"
-   ]
+   ],
+   "nav_label": "Rebar benders"
   },
   {
    "slug": "rebar-cutter",
@@ -56,7 +57,8 @@
     "Hydraulic-rebar-cutter",
     "mechanical-rebar-cutters",
     "heavy-duty-rebar-cutters"
-   ]
+   ],
+   "nav_label": "Rebar cutters"
   },
   {
    "slug": "automatic-rebar-processing-lines",
@@ -67,7 +69,8 @@
     "automatic-stirrup-bender",
     "automatic-bar-shearing-line-MATRIX-45",
     "Automatic-rebar-double-bender-ROBOBENDER-45S"
-   ]
+   ],
+   "nav_label": "Automatic CNC lines"
   }
  ],
  "faq": [
@@ -118,5 +121,6 @@
   "title": "GMS GöçMakSan factory introduction",
   "thumb": "video-iliNCOM3m08",
   "duration": "PT1M20S"
- }
+ },
+ "nav_label": "All rebar machines"
 }

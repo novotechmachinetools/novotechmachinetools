@@ -27,7 +27,7 @@
       <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, 520px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">
       {% if page.hero_image_secondary %}
       <div class="hero-minis">
-        {% for n in page.hero_image_secondary %}{% set m = img(n) %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="160px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async">{% endfor %}
+        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% endfor %}
       </div>
       {% endif %}
     </div>

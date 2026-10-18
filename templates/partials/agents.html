@@ -1,0 +1,17 @@
+<section class="agents" id="sales-agents" aria-labelledby="agents-title">
+  <div class="wrap agents-grid">
+    <div class="agents-copy">
+      <p class="agents-kicker">{{ site.agents.kicker }}</p>
+      <h2 id="agents-title">{{ site.agents.title }}</h2>
+      <p>{{ site.agents.text }}</p>
+      <ul class="agents-points">
+        {% for pt in site.agents.points %}<li>{{ pt }}</li>{% endfor %}
+      </ul>
+    </div>
+    <div class="agents-cta">
+      <a class="btn btn-primary" href="#reques-a-quote" data-machine="{{ site.agents.form_option }}">{{ site.agents.cta }}</a>
+      <a class="btn btn-ghost btn-light" href="tel:{{ site.phone_tel }}">Call {{ site.phone }}</a>
+      <p class="agents-note">Tell us your territory and the customers you serve — we reply within one business day.</p>
+    </div>
+  </div>
+</section>

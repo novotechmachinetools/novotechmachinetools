@@ -33,6 +33,7 @@
           <option value="">Choose a machine family…</option>
           {% for g in page.groups %}{% for f in g.families %}<option value="{{ f.name }}">{{ f.name }} — {{ f.models_label }}</option>{% endfor %}{% endfor %}
           <option value="Not sure — please advise">Not sure — please advise</option>
+          <option value="{{ site.agents.form_option }}">{{ site.agents.form_option }}</option>
         </select>
       </div>
       <div class="field field-wide">

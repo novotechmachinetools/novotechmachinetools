@@ -1,120 +1,120 @@
 {
- "slug": "automatic-rebar-processing-lines",
- "template": "category.html",
- "family_set": "rebar",
- "title": "Automatic Rebar Processing Lines | Shear Line, Double Bender, CNC Stirrup Bender | NovoTech",
- "artifact_title": "Automatic Rebar Processing Lines",
- "meta_description": "CNC rebar processing lines from GMS, installed and supported in Canada: SLS 12 automatic stirrup bender from coil, MATRIX 55 shear lines to Ø2-1/8″ and the SYNCLONE 45S servo double bender for bars to 40 ft.",
- "h1": "Automatic rebar processing lines",
- "intro": "PLC and servo-controlled lines for rebar shops and precast plants: the SLS 12 CNC stirrup bender that straightens, bends and cuts from coil, the MATRIX 55 and 55S shear lines that cut bundles to programmed lengths, and the SYNCLONE 45S double bender that bends both ends of a 40 ft bar in one cycle. Installed, commissioned and supported in Canada by NovoTech.",
- "hero_points": [
-  "Stirrups from 1/4″–1/2″ coil at 1250°/s with 50+ shapes pre-loaded",
-  "Shear lines cutting up to 35 bars at once, ± 1/8″ accuracy",
-  "Servo double bender for bars up to Ø1-5/8″ (42 mm) and 40 ft long"
- ],
- "hero_image": "sls-12",
- "hero_image_secondary": [
-  "synclone-45s",
-  "matrix-55s"
- ],
- "breadcrumb": [
-  {
-   "label": "Home",
-   "href": "index.html"
+  "slug": "automatic-rebar-processing-lines",
+  "template": "category.html",
+  "family_set": "rebar",
+  "title": "Automatic Rebar Processing Lines | Shear Line, Double Bender, CNC Stirrup Bender | NovoTech",
+  "artifact_title": "Automatic Rebar Processing Lines",
+  "meta_description": "CNC rebar processing lines from GMS, installed and supported in Canada: SLS 12 automatic stirrup bender from coil, MATRIX 55 shear lines to Ø2-1/8″ and the SYNCLONE 45S servo double bender for bars to 40 ft.",
+  "h1": "Automatic rebar processing lines",
+  "intro": "PLC and servo-controlled lines for rebar shops and precast plants: the SLS 12 CNC stirrup bender that straightens, bends and cuts from coil, the MATRIX 55 and 55S shear lines that cut bundles to programmed lengths, and the SYNCLONE 45S double bender that bends both ends of a 40 ft bar in one cycle. Installed, commissioned and supported in Canada by NovoTech.",
+  "hero_points": [
+    "Stirrups from 1/4″–1/2″ coil at 1250°/s with 50+ shapes pre-loaded",
+    "Shear lines cutting up to 35 bars at once, ± 1/8″ accuracy",
+    "Servo double bender for bars up to Ø1-5/8″ (42 mm) and 40 ft long"
+  ],
+  "hero_image": "sls-12",
+  "hero_image_secondary": [
+    "synclone-45s",
+    "matrix-55s"
+  ],
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "index.html"
+    },
+    {
+      "label": "Products",
+      "href": "products.html"
+    },
+    {
+      "label": "Rebar benders & cutters",
+      "href": "rebar-bender-and-cutter.html"
+    },
+    {
+      "label": "Automatic rebar processing lines"
+    }
+  ],
+  "groups": [
+    {
+      "id": "cnc-stirrup-bending",
+      "title": "CNC stirrup bender",
+      "lead": "Automatic stirrup production from coil: two strands at a time, 2D shapes, touch-screen programming and an optional robot for stacking.",
+      "families": [
+        "automatic-stirrup-bender"
+      ]
+    },
+    {
+      "id": "rebar-shear-lines",
+      "title": "Rebar shear lines",
+      "lead": "Hydraulic bundle shears with PLC length control, loading platforms and collecting bins.",
+      "families": [
+        "automatic-bar-shearing-line-MATRIX-45"
+      ]
+    },
+    {
+      "id": "double-benders",
+      "title": "Double benders",
+      "lead": "Two servo-driven bending heads that bend both ends of long bars in one cycle, fed from a 40 ft conveyor.",
+      "families": [
+        "Automatic-rebar-double-bender-ROBOBENDER-45S"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does a shear line replace in a rebar shop?",
+      "a": "A MATRIX 55 line cuts whole bundles to programmed lengths — up to 35 × Ø5/16″ or 11 × Ø1″ bars at once — and discharges them to bins, so one operator does the work of a cutting crew measuring and cutting bar by bar. The 55S version adds automatic bins and discharge to both sides, which GMS rates as eliminating 2–3 operators."
+    },
+    {
+      "q": "What coil sizes does the SLS 12 run?",
+      "a": "1/4″, 5/16″, 3/8″ and 1/2″ (6, 8, 10 and 12 mm) wire, processed two strands at a time, with length tolerance of ± 0.039–0.079 in and bending tolerance of ± 1°."
+    },
+    {
+      "q": "What power, air and floor space do the lines need?",
+      "a": "The SLS 12 needs about 67 × 197 in plus two decoilers of 83 × 85 in each, a compressor at 120–150 psi and 24 HP of servo and AC motors. The MATRIX 55 draws 21–25 HP total and the SYNCLONE 45S 34 HP; both are supplied for 600 V 3-phase, with 208, 240 or 480 V on request. Send us your floor plan and we will lay the line out for you."
+    },
+    {
+      "q": "Can the SYNCLONE 45S work as two separate benders?",
+      "a": "Yes. The stationary and the moving bender can each be used on its own for small shapes, or together as a double bender for bars up to 40 ft (12 m) long. The minimum distance between the two heads is 3.3 ft (1 m), less with bending tools."
+    },
+    {
+      "q": "Who installs and commissions the line in Canada?",
+      "a": "NovoTech installs, commissions and trains your operators on site, and keeps spare parts and technical support available in Canada. Remote connection for diagnostics is available on the MATRIX and SYNCLONE lines."
+    }
+  ],
+  "related_pages": [
+    {
+      "href": "rebar-bending-machines.html",
+      "label": "Rebar bending machines"
+    },
+    {
+      "href": "rebar-cutter.html",
+      "label": "Rebar cutting machines"
+    },
+    {
+      "href": "rebar-bender-and-cutter.html",
+      "label": "All rebar machinery"
+    }
+  ],
+  "brand": {
+    "name": "GMS GöçMakSan",
+    "country": "Turkey",
+    "since": 1960
   },
-  {
-   "label": "Products",
-   "href": "products.html"
+  "catalogue_pdf": {
+    "file": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+    "label": "Download the GMS rebar machinery catalogue",
+    "size": "PDF · 25 MB · imperial units"
   },
-  {
-   "label": "Rebar benders & cutters",
-   "href": "rebar-bender-and-cutter.html"
+  "related_article": {
+    "href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
+    "label": "Buying guide: how to choose a rebar bender or cutter"
   },
-  {
-   "label": "Automatic rebar processing lines"
-  }
- ],
- "groups": [
-  {
-   "id": "cnc-stirrup-bending",
-   "title": "CNC stirrup bender",
-   "lead": "Automatic stirrup production from coil: two strands at a time, 2D shapes, touch-screen programming and an optional robot for stacking.",
-   "families": [
-    "automatic-stirrup-bender"
-   ]
+  "intro_video": {
+    "id": "IVUCdw8t_AE",
+    "title": "GMS MATRIX 55S shear line and SYNCLONE 45S double bender — cut and bend in one line",
+    "thumb": "video-IVUCdw8t_AE",
+    "duration": "PT1M17S"
   },
-  {
-   "id": "rebar-shear-lines",
-   "title": "Rebar shear lines",
-   "lead": "Hydraulic bundle shears with PLC length control, loading platforms and collecting bins.",
-   "families": [
-    "automatic-bar-shearing-line-MATRIX-45"
-   ]
-  },
-  {
-   "id": "double-benders",
-   "title": "Double benders",
-   "lead": "Two servo-driven bending heads that bend both ends of long bars in one cycle, fed from a 40 ft conveyor.",
-   "families": [
-    "Automatic-rebar-double-bender-ROBOBENDER-45S"
-   ]
-  }
- ],
- "faq": [
-  {
-   "q": "What does a shear line replace in a rebar shop?",
-   "a": "A MATRIX 55 line cuts whole bundles to programmed lengths — up to 35 × Ø5/16″ or 11 × Ø1″ bars at once — and discharges them to bins, so one operator does the work of a cutting crew measuring and cutting bar by bar. The 55S version adds automatic bins and discharge to both sides, which GMS rates as eliminating 2–3 operators."
-  },
-  {
-   "q": "What coil sizes does the SLS 12 run?",
-   "a": "1/4″, 5/16″, 3/8″ and 1/2″ (6, 8, 10 and 12 mm) wire, processed two strands at a time, with length tolerance of ± 0.039–0.079 in and bending tolerance of ± 1°."
-  },
-  {
-   "q": "What power, air and floor space do the lines need?",
-   "a": "The SLS 12 needs about 67 × 197 in plus two decoilers of 83 × 85 in each, a compressor at 120–150 psi and 24 HP of servo and AC motors. The MATRIX 55 draws 21–25 HP total and the SYNCLONE 45S 34 HP; both are supplied for 600 V 3-phase, with 208, 240 or 480 V on request. Send us your floor plan and we will lay the line out for you."
-  },
-  {
-   "q": "Can the SYNCLONE 45S work as two separate benders?",
-   "a": "Yes. The stationary and the moving bender can each be used on its own for small shapes, or together as a double bender for bars up to 40 ft (12 m) long. The minimum distance between the two heads is 3.3 ft (1 m), less with bending tools."
-  },
-  {
-   "q": "Who installs and commissions the line in Canada?",
-   "a": "NovoTech installs, commissions and trains your operators on site, and keeps spare parts and technical support available in Canada. Remote connection for diagnostics is available on the MATRIX and SYNCLONE lines."
-  }
- ],
- "related_pages": [
-  {
-   "href": "rebar-bending-machines.html",
-   "label": "Rebar bending machines"
-  },
-  {
-   "href": "rebar-cutter.html",
-   "label": "Rebar cutting machines"
-  },
-  {
-   "href": "rebar-bender-and-cutter.html",
-   "label": "All rebar machinery"
-  }
- ],
- "brand": {
-  "name": "GMS GöçMakSan",
-  "country": "Turkey",
-  "since": 1960
- },
- "catalogue_pdf": {
-  "file": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
-  "label": "Download the GMS rebar machinery catalogue",
-  "size": "PDF · 25 MB · imperial units"
- },
- "related_article": {
-  "href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
-  "label": "Buying guide: how to choose a rebar bender or cutter"
- },
- "intro_video": {
-  "id": "LKfwHVH8VdA",
-  "title": "GMS rebar shear line and double bender in production",
-  "thumb": "video-LKfwHVH8VdA",
-  "duration": "PT1M20S"
- },
- "faq_title": "Questions we get asked about automatic rebar lines"
+  "faq_title": "Questions we get asked about automatic rebar lines"
 }

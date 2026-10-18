@@ -12,7 +12,7 @@
     <a class="gallery-link" href="{{ first.src }}" data-index="0">
       <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 560px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
     </a>
-    <figcaption><b class="cap-model">{{ first.cap1 }}</b><span class="cap-desc">{{ first.cap2 }}</span></figcaption>
+    <figcaption><span class="cap-desc">{{ first.cap2 }}</span><b class="cap-model">{{ first.cap1 }}</b></figcaption>
     {% if images|length > 1 %}
     <button type="button" class="gal-nav gal-prev" aria-label="Previous photo">‹</button>
     <button type="button" class="gal-nav gal-next" aria-label="Next photo">›</button>

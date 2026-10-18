@@ -187,5 +187,17 @@
   ],
   "voltage_note": "Three-phase machines are supplied for 600 V; 208 V, 240 V or 480 V 3-phase available on request.",
   "steel_note": "Capacities are the manufacturer's ratings for one or more bars at once in steel of 45, 65 and 85 kg/mm² tensile strength (≈ 64,000, 92,500 and 120,900 psi). For Canadian Grade 400W rebar (minimum tensile strength 540 MPa ≈ 55 kg/mm²) use the 65 kg/mm² column as a conservative guide. Bar-size equivalents (Canadian metric bars and US bar numbers) are given for the single-bar capacity.",
-  "staging_domain": "https://novotechmachinetools.github.io/novotechmachinetools"
+  "staging_domain": "https://novotechmachinetools.github.io/novotechmachinetools",
+  "agents": {
+    "title": "Sales agents wanted across Canada",
+    "kicker": "Represent NovoTech in your city or province",
+    "text": "NovoTech is appointing independent sales agents and dealers in cities and provinces across Canada — British Columbia, Alberta, Saskatchewan, Manitoba, Ontario outside the GTA, Quebec and Atlantic Canada. If you already call on steel fabricators, rebar shops, precast plants, HVAC shops or contractors, add a proven line of GMS, Dener and other metalworking machinery to what you offer.",
+    "points": [
+      "Open to individuals and companies with customers in metal fabrication or construction",
+      "Quotations, brochures, videos and demonstrations prepared by NovoTech for your customers",
+      "Installation, operator training, spare parts and technical support stay with NovoTech in Mississauga"
+    ],
+    "cta": "Apply to become an agent",
+    "form_option": "Becoming a NovoTech sales agent / dealer"
+  }
 }

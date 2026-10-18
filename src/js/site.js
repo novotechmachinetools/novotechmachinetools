@@ -82,7 +82,7 @@
     lbIndex = (i + lbItems.length) % lbItems.length;
     var it = lbItems[lbIndex];
     lbImg.src = it.src; lbImg.srcset = it.srcset || ""; lbImg.sizes = "92vw"; lbImg.alt = it.alt;
-    lbCap.textContent = ""; if (it.cap1) { var bb = d.createElement("b"); bb.textContent = it.cap1 + " — "; lbCap.appendChild(bb); } lbCap.appendChild(d.createTextNode(it.cap2 || it.alt));
+    lbCap.textContent = (it.cap2 || it.alt) + (it.cap1 ? " — " : ""); if (it.cap1) { var bb = d.createElement("b"); bb.textContent = it.cap1; lbCap.appendChild(bb); }
   }
   /* Horizontal swipe / drag detection shared by galleries and the lightbox */
   function onSwipe(el, cb) {
