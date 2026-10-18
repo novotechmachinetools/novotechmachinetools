@@ -13,13 +13,18 @@
       <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 560px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
     </a>
     <figcaption>{{ first.alt }}</figcaption>
+    {% if images|length > 1 %}
+    <button type="button" class="gal-nav gal-prev" aria-label="Previous photo">‹</button>
+    <button type="button" class="gal-nav gal-next" aria-label="Next photo">›</button>
+    <span class="gal-count" aria-live="polite"><span class="gal-index">1</span> / {{ images|length }}</span>
+    {% endif %}
   </figure>
   {% if images|length > 1 %}
   <ul class="gallery-thumbs" aria-label="More photos">
     {% for im in images %}
     <li>
       <a href="{{ im.src }}" class="thumb{{ ' is-cutout' if im.alpha else '' }}{{ ' is-current' if loop.first else '' }}" data-index="{{ loop.index0 }}" data-src="{{ im.src }}" data-srcset="{{ im.srcset }}" data-w="{{ im.w }}" data-h="{{ im.h }}" data-alt="{{ im.alt }}" aria-label="{{ im.alt }}">
-        <img src="{{ im.small }}" width="{{ im.w }}" height="{{ im.h }}" alt="" loading="lazy" decoding="async">
+        <img src="{{ im.thumb }}" width="{{ im.w }}" height="{{ im.h }}" alt="" loading="lazy" decoding="async">
       </a>
     </li>
     {% endfor %}
@@ -46,7 +51,7 @@
 <div class="cta-row cta-row-sm">
   <a class="btn btn-primary btn-sm" href="#reques-a-quote" data-machine="{{ f.name }}">Request a quote</a>
   <a class="btn btn-ghost btn-sm" href="{{ page.catalogue_pdf.file }}" download>Download PDF brochure</a>
-  {% if f.video %}<a class="btn btn-link btn-sm" href="#{{ f.id }}-video">Watch the video</a>{% endif %}
+  {% if f.videos %}<a class="btn btn-link btn-sm" href="#{{ f.id }}-video">Watch the video{{ 's' if f.videos|length > 1 else '' }}</a>{% endif %}
 </div>
 {%- endmacro %}
 

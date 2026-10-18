@@ -1,0 +1,124 @@
+{
+ "slug": "rebar-cutter",
+ "template": "category.html",
+ "family_set": "rebar",
+ "title": "Rebar Cutters | Hydraulic & Mechanical Rebar Cutting Machines Canada | NovoTech",
+ "artifact_title": "Rebar Cutting Machines",
+ "meta_description": "GMS rebar cutters in Canada: hydraulic H series to Ø2-1/8″ (55 mm), mechanical M series, heavy-duty SH 45/SH 60 to Ø2-3/8″ (60 mm) and the portable 110/220 V POWER 24. CSA panels, blades and parts in Mississauga.",
+ "h1": "Rebar cutting machines",
+ "intro": "Hydraulic and mechanical rebar cutters built by GMS in Turkey and supplied in Canada by NovoTech: the H series hydraulic cutters on cast-iron wheels for sites and shops, the fast M series mechanical cutters, the double-acting SH 45 and SH 60 for heavy bar, and the portable POWER 24 on single-phase power. Every model cuts two smaller bars at once.",
+ "hero_points": [
+  "Cut single bars up to Ø2-3/8″ (60 mm), or two bars at once",
+  "Hydraulic, mechanical and double-acting hydraulic cutters",
+  "Portable 110/220 V single-phase POWER 24"
+ ],
+ "hero_image": "h-45s",
+ "hero_image_secondary": [
+  "m-45",
+  "sh-60"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Rebar benders & cutters",
+   "href": "rebar-bender-and-cutter.html"
+  },
+  {
+   "label": "Rebar cutting machines"
+  }
+ ],
+ "groups": [
+  {
+   "id": "hydraulic-rebar-cutters-group",
+   "title": "Hydraulic rebar cutters",
+   "lead": "Single-acting hydraulic cutters with spring return — quiet, low power draw and easy to roll around the site on cast-iron wheels.",
+   "families": [
+    "Hydraulic-rebar-cutter"
+   ]
+  },
+  {
+   "id": "mechanical-rebar-cutters-group",
+   "title": "Mechanical rebar cutters",
+   "lead": "Flywheel-driven cutters with a 0.8-second cut, controlled by foot pedal and hand lever.",
+   "families": [
+    "mechanical-rebar-cutters"
+   ]
+  },
+  {
+   "id": "heavy-duty-rebar-cutters-group",
+   "title": "Heavy-duty hydraulic rebar cutters",
+   "lead": "Double-acting hydraulic cutting units for Ø1-5/8″ to Ø2-3/8″ bar, manual or automatic cycle.",
+   "families": [
+    "heavy-duty-rebar-cutters"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Hydraulic or mechanical rebar cutter — which one should I buy?",
+   "a": "A hydraulic H series cutter is quiet, needs less maintenance and can stop mid-stroke, which suits construction sites and general shops. A mechanical M series cutter cuts faster (0.8 s per cut) and suits a rebar shop cutting all day. For bar above Ø2″ (50 mm) or continuous heavy work choose the double-acting SH 45 or SH 60."
+  },
+  {
+   "q": "Can I run a rebar cutter on single-phase power?",
+   "a": "The portable POWER 24 has a built-in transformer and runs on 110 V or 220 V single-phase. The H, M and SH cutters are three-phase and are supplied for 600 V; 208 V, 240 V or 480 V are available on request."
+  },
+  {
+   "q": "What does the 45 / 65 / 85 kg/mm² cutting capacity mean?",
+   "a": "The three columns are the manufacturer's ratings for rebar of different tensile strengths: 45 kg/mm² (≈ 64,000 psi), 65 kg/mm² (≈ 92,500 psi) and 85 kg/mm² (≈ 120,900 psi). Canadian Grade 400W rebar has a minimum tensile strength of 540 MPa (≈ 55 kg/mm²), so the 65 kg/mm² column is a safe guide for everyday Canadian bar."
+  },
+  {
+   "q": "Are replacement cutting blades available in Canada?",
+   "a": "Yes. NovoTech stocks cutting blades, hydraulic parts and electrical components for GMS cutters in Mississauga, Ontario. Blades are reversible and can be turned to a fresh edge before replacement."
+  },
+  {
+   "q": "Is there a machine that both cuts and bends?",
+   "a": "Yes — the MAX 40 combined machine cuts up to Ø1-1/8″ (30 mm) and bends up to Ø1-3/8″ (36 mm). You will find it on the rebar bending machines page."
+  }
+ ],
+ "related_pages": [
+  {
+   "href": "rebar-bending-machines.html",
+   "label": "Rebar bending machines"
+  },
+  {
+   "href": "rebar-bending-machines.html#combined-bender-cutter",
+   "label": "MAX 40 combined bender and cutter"
+  },
+  {
+   "href": "automatic-rebar-processing-lines.html",
+   "label": "Automatic rebar processing lines"
+  },
+  {
+   "href": "rebar-bender-and-cutter.html",
+   "label": "All rebar machinery"
+  }
+ ],
+ "brand": {
+  "name": "GMS GöçMakSan",
+  "country": "Turkey",
+  "since": 1960
+ },
+ "catalogue_pdf": {
+  "file": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+  "label": "Download the GMS rebar machinery catalogue",
+  "size": "PDF · 25 MB · imperial units"
+ },
+ "related_article": {
+  "href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
+  "label": "Buying guide: how to choose a rebar bender or cutter"
+ },
+ "intro_video": {
+  "id": "iliNCOM3m08",
+  "title": "GMS GöçMakSan factory introduction",
+  "thumb": "video-iliNCOM3m08",
+  "duration": "PT1M20S"
+ },
+ "faq_title": "Questions we get asked about rebar cutters"
+}

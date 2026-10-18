@@ -7,6 +7,10 @@ and tools/image_manifest.json with the real dimensions of each variant (used by 
 """
 import json, os, sys
 from PIL import Image, ImageOps
+try:
+    import pillow_avif  # noqa: F401  (AVIF sources)
+except ImportError:
+    pass
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP = json.load(open(os.path.join(ROOT, "tools", "image_map.json")))
@@ -49,6 +53,10 @@ for name, spec in MAP.items():
     widths = [w for w in SIZES if w <= im.width] or [im.width]
     if im.width < SIZES[-1] and im.width not in widths:
         widths = [im.width]
+    # small square-ish thumbnail for gallery strips
+    t = im.copy(); t.thumbnail((160, 160), Image.LANCZOS)
+    tout = os.path.join(outdir, f"{name}-thumb.webp"); t.save(tout, "WEBP", quality=78, method=6)
+    thumb = {"w": t.width, "h": t.height, "file": f"img/{section}/{name}-thumb.webp", "bytes": os.path.getsize(tout)}
     for w in widths:
         if w == im.width:
             v = im.copy()
@@ -58,7 +66,7 @@ for name, spec in MAP.items():
         q = spec.get("quality", 82)
         v.save(out, "WEBP", quality=q, method=6)
         variants.append({"w": v.width, "h": v.height, "file": f"img/{section}/{name}-{w}.webp", "bytes": os.path.getsize(out)})
-    manifest[name] = {"alt": spec.get("alt", ""), "variants": variants, "alpha": has_alpha}
+    manifest[name] = {"alt": spec.get("alt", ""), "variants": variants, "alpha": has_alpha, "thumb": thumb}
     print(f"{name:34s} {im.width}x{im.height} -> " + ", ".join(f"{v['w']}w {v['bytes']//1024}KB" for v in variants))
 
 json.dump(manifest, open(os.path.join(ROOT, "tools", "image_manifest.json"), "w"), indent=1)

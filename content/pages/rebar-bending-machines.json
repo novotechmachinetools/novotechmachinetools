@@ -1,0 +1,139 @@
+{
+ "slug": "rebar-bending-machines",
+ "template": "category.html",
+ "family_set": "rebar",
+ "title": "Rebar Bending Machines | GMS Rebar Benders in Canada | NovoTech",
+ "artifact_title": "Rebar Bending Machines",
+ "meta_description": "GMS rebar bending machines in Canada: stationary B/BS benders to Ø2-3/8″ (60 mm), portable 110/220 V benders, stirrup, spiral and dowel bar benders. CSA panels, parts in Mississauga.",
+ "h1": "Rebar bending machines",
+ "intro": "Every GMS rebar bender NovoTech supplies in Canada: stationary B and BS series benders for the rebar shop, portable MG and BT benders for the job site, SL stirrup benders, SX and AXIS spiral benders, hydraulic dowel bar benders and the MAX 40 combined bender-cutter. All with programmable angles, left-and-right bending and a CSA-approved electrical panel.",
+ "hero_points": [
+  "Stationary benders from Ø1″ (26 mm) to Ø2-3/8″ (60 mm)",
+  "Portable 110/220 V single-phase benders for the site",
+  "Stirrup, spiral and dowel bar bending"
+ ],
+ "hero_image": "b-45x1",
+ "hero_image_secondary": [
+  "bt-26",
+  "sx-40"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Rebar benders & cutters",
+   "href": "rebar-bender-and-cutter.html"
+  },
+  {
+   "label": "Rebar bending machines"
+  }
+ ],
+ "groups": [
+  {
+   "id": "stationary-rebar-benders",
+   "title": "Stationary rebar benders",
+   "lead": "Shop benders on a planetary reducer drive. Program up to 9 angles, bend left and right, and make stirrups with the standard pins and rollers.",
+   "families": [
+    "Rebar-bending-machine-B-BS-MG-series",
+    "bs-series-long-table-benders"
+   ]
+  },
+  {
+   "id": "portable-rebar-benders-group",
+   "title": "Portable rebar benders",
+   "lead": "Single-phase benders light enough for a pickup truck: 110 V or 220 V with a built-in transformer, digital control optional.",
+   "families": [
+    "Protable-rebar-bender-MG-BT-A-series"
+   ]
+  },
+  {
+   "id": "stirrup-spiral-dowel-benders",
+   "title": "Stirrup, spiral and dowel bar benders",
+   "lead": "Purpose-built benders for repeat stirrups, continuous spirals for pile cages, and bending dowel bars in place.",
+   "families": [
+    "stirrup-benders",
+    "spiral-benders",
+    "dowel-bar-benders"
+   ]
+  },
+  {
+   "id": "combined-bending-and-cutting",
+   "title": "Combined rebar bender and cutter",
+   "lead": "One machine that cuts and bends — for small shops and sites that need both without two footprints.",
+   "families": [
+    "combined-bender-cutter"
+   ]
+  },
+  {
+   "id": "mesh-machines",
+   "title": "Mesh bending and cutting machines",
+   "lead": "Hydraulic benders and a mechanical cutter for welded reinforcement mesh up to 19 ft 8 in wide.",
+   "families": [
+    "mesh-benders-and-cutters"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which rebar bender do I need for 15M, 20M and 25M bars?",
+   "a": "A B 36 or BS 36 bends single bars up to 35M (#11) and two 20M bars at once in normal steel, and is the usual choice for a rebar shop running 10M to 25M. For site work on 10M–20M a portable BT 26 or MG 26 Junior on 110/220 V is enough. For 30M–45M bars choose a B 45x1, B 50 or the BS 50/BS 60."
+  },
+  {
+   "q": "Can I run a rebar bender on single-phase power?",
+   "a": "Yes — the portable MG 20B, MG 26 Junior, BT 24x5 and BT 26 have a built-in transformer and run on 110 V or 220 V single-phase. The stationary B, BS, SL and SX machines are three-phase and are supplied for 600 V; 208 V, 240 V or 480 V are available on request."
+  },
+  {
+   "q": "Can a standard rebar bender make stirrups?",
+   "a": "Yes. The B series and the portable BT benders make stirrups with the standard pins and rollers; an optional spiral stirrup attachment is available. For continuous stirrup production from straight bars use the SL 30 / SL 36, and from coil use the automatic SLS 12 on the automatic lines page."
+  },
+  {
+   "q": "What is the difference between the B series and the BS series?",
+   "a": "The BS series has a longer table and two bending sleeves, so it bends faster and handles longer, heavier bars — up to Ø2-3/8″ (60 mm) on the BS 60. The B series is more compact and covers Ø1″ to Ø2″ (26–50 mm)."
+  },
+  {
+   "q": "How many bends per shift can a stationary bender make?",
+   "a": "A B 45x1 bends about 1,100 pieces of rebar in an 8-hour shift with one operator, with the angle programmed and the machine cycling automatically."
+  }
+ ],
+ "related_pages": [
+  {
+   "href": "rebar-cutter.html",
+   "label": "Rebar cutting machines"
+  },
+  {
+   "href": "automatic-rebar-processing-lines.html",
+   "label": "Automatic rebar processing lines"
+  },
+  {
+   "href": "rebar-bender-and-cutter.html",
+   "label": "All rebar machinery"
+  }
+ ],
+ "brand": {
+  "name": "GMS GöçMakSan",
+  "country": "Turkey",
+  "since": 1960
+ },
+ "catalogue_pdf": {
+  "file": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+  "label": "Download the GMS rebar machinery catalogue",
+  "size": "PDF · 25 MB · imperial units"
+ },
+ "related_article": {
+  "href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
+  "label": "Buying guide: how to choose a rebar bender or cutter"
+ },
+ "intro_video": {
+  "id": "iliNCOM3m08",
+  "title": "GMS GöçMakSan factory introduction",
+  "thumb": "video-iliNCOM3m08",
+  "duration": "PT1M20S"
+ },
+ "faq_title": "Questions we get asked about rebar benders"
+}

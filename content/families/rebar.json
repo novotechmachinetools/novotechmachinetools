@@ -1,0 +1,2298 @@
+{
+ "order": [
+  "Rebar-bending-machine-B-BS-MG-series",
+  "bs-series-long-table-benders",
+  "Protable-rebar-bender-MG-BT-A-series",
+  "stirrup-benders",
+  "spiral-benders",
+  "dowel-bar-benders",
+  "Hydraulic-rebar-cutter",
+  "mechanical-rebar-cutters",
+  "heavy-duty-rebar-cutters",
+  "combined-bender-cutter",
+  "automatic-stirrup-bender",
+  "automatic-bar-shearing-line-MATRIX-45",
+  "Automatic-rebar-double-bender-ROBOBENDER-45S",
+  "mesh-benders-and-cutters"
+ ],
+ "families": {
+  "Rebar-bending-machine-B-BS-MG-series": {
+   "id": "Rebar-bending-machine-B-BS-MG-series",
+   "alt_ids": [
+    "b-series-rebar-benders"
+   ],
+   "name": "B series stationary rebar benders",
+   "models_label": "B 26 · B 36 · B 45x1 · B 50 · BD digital-control versions",
+   "summary": "The B series is the workhorse rebar bender for rebar shops, precast plants and steel-joist (OWSJ) fabricators: up to Ø2″ (50 mm) bars, or several smaller bars at once, with programmable angles.",
+   "features": [
+    "Planetary reducer drive — a B 45x1 bends about 1,100 pieces of rebar in an 8-hour shift",
+    "Program memory for 9 different bending angles; manual or automatic cycle",
+    "Bends left and right; adjustable bar stop and support rollers",
+    "Stirrup bending with the machine's standard pins and rollers; spiral stirrup attachment optional",
+    "BD series: same machines with a digital display control panel (BD 36 / BD 45 / BD 50)",
+    "600 V 3-phase with CSA-approved electrical panel, inverter drive and overload protection"
+   ],
+   "images": [
+    "b-45x1",
+    "b-36",
+    "b-26",
+    "b-50",
+    "b-bending-disc",
+    "b-multi-bend",
+    "b-50-bending",
+    "b-pins-rollers",
+    "b-bar-stop",
+    "tooling-set",
+    "csa-label"
+   ],
+   "specs": {
+    "kind": "bending",
+    "models": [
+     {
+      "name": "B 26",
+      "dims_cm": [
+       72,
+       77,
+       87
+      ],
+      "kw": 2.2,
+      "kg": 218
+     },
+     {
+      "name": "B 36",
+      "dims_cm": [
+       78,
+       87,
+       89
+      ],
+      "kw": 3,
+      "kg": 285
+     },
+     {
+      "name": "B 45x1",
+      "dims_cm": [
+       83,
+       111,
+       89
+      ],
+      "kw": 4,
+      "kg": 392
+     },
+     {
+      "name": "B 50",
+      "dims_cm": [
+       86,
+       119,
+       89
+      ],
+      "kw": 5.5,
+      "kg": 457
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        26,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        36,
+        1
+       ],
+       [
+        22,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        30,
+        2
+       ]
+      ],
+      [
+       [
+        50,
+        1
+       ],
+       [
+        32,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        24,
+        1
+       ],
+       [
+        14,
+        3
+       ]
+      ],
+      [
+       [
+        32,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ],
+      [
+       [
+        40,
+        1
+       ],
+       [
+        26,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        30,
+        2
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        22,
+        1
+       ],
+       [
+        12,
+        5
+       ]
+      ],
+      [
+       [
+        28,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        32,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ],
+      [
+       [
+        36,
+        1
+       ],
+       [
+        28,
+        2
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "short": "B series benders",
+   "videos": [
+    {
+     "id": "YhbU43ypxRU",
+     "title": "GMS B series rebar bender bending stirrups — manual or automatic control",
+     "thumb": "video-YhbU43ypxRU",
+     "duration": "PT2M"
+    },
+    {
+     "id": "oqIxmp7GZb8",
+     "title": "GMS B 45x1 rebar bending machine",
+     "thumb": "video-oqIxmp7GZb8",
+     "duration": "PT1M30S"
+    },
+    {
+     "id": "sOSH9OmUp84",
+     "title": "GMS B 50 rebar bending machine",
+     "thumb": "video-sOSH9OmUp84",
+     "duration": "PT1M30S"
+    }
+   ]
+  },
+  "bs-series-long-table-benders": {
+   "id": "bs-series-long-table-benders",
+   "name": "BS series long-table rebar benders",
+   "models_label": "BS 36 · BS 45 · BS 50 · BS 60 · BSD digital-control versions",
+   "summary": "Long-table benders with two bending sleeves for faster production and better support of long bars. The BS 60 is the largest stationary bender in the range, rated for Ø2-3/8″ (60 mm) bars.",
+   "features": [
+    "Fast bending with two bending sleeves; turns left and right",
+    "Long table supports long bars and multiple bends in one bar",
+    "Bending disc with pin holes for different radii; standard pins and rollers included",
+    "BSD series: digital display control panel option",
+    "600 V 3-phase with CSA-approved electrical panel"
+   ],
+   "images": [
+    "bs-50",
+    "bs-36",
+    "bs-45",
+    "bs-60",
+    "bs-disc-rollers",
+    "bs-two-sleeves",
+    "bs-multi-bend",
+    "bs-disc-holes",
+    "bs-tools"
+   ],
+   "specs": {
+    "kind": "bending",
+    "models": [
+     {
+      "name": "BS 36",
+      "dims_cm": [
+       83,
+       111,
+       90
+      ],
+      "kw": 3,
+      "kg": 350
+     },
+     {
+      "name": "BS 45",
+      "dims_cm": [
+       83,
+       122,
+       90
+      ],
+      "kw": 4,
+      "kg": 462
+     },
+     {
+      "name": "BS 50",
+      "dims_cm": [
+       88,
+       141,
+       90
+      ],
+      "kw": 5.5,
+      "kg": 585
+     },
+     {
+      "name": "BS 60",
+      "dims_cm": [
+       98,
+       154,
+       90
+      ],
+      "kw": 7.5,
+      "kg": 850
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        36,
+        1
+       ],
+       [
+        22,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        30,
+        2
+       ]
+      ],
+      [
+       [
+        50,
+        1
+       ],
+       [
+        32,
+        2
+       ]
+      ],
+      [
+       [
+        60,
+        1
+       ],
+       [
+        38,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        32,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ],
+      [
+       [
+        40,
+        1
+       ],
+       [
+        26,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        30,
+        2
+       ]
+      ],
+      [
+       [
+        55,
+        1
+       ],
+       [
+        34,
+        2
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        28,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        32,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ],
+      [
+       [
+        36,
+        1
+       ],
+       [
+        28,
+        2
+       ]
+      ],
+      [
+       [
+        50,
+        1
+       ],
+       [
+        30,
+        2
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "short": "BS long-table benders"
+  },
+  "Protable-rebar-bender-MG-BT-A-series": {
+   "id": "Protable-rebar-bender-MG-BT-A-series",
+   "alt_ids": [
+    "portable-rebar-benders"
+   ],
+   "name": "Portable rebar benders",
+   "models_label": "MG 20B · MG 26 Junior · BT 24x5 · BT 26",
+   "summary": "Lightweight benders that run on a single-phase outlet, for small construction jobs and site work. The BT models bend stirrups with a special stirrup pin and can be programmed through a PLC.",
+   "features": [
+    "Single-phase: built-in transformer runs the machine on 110 V or 220 V at the job site",
+    "Programmable bending angle (PLC); bends left and right, manual or automatic cycle",
+    "Stirrup bending feature with special stirrup pin (BT 24x5, BT 26)",
+    "Overload protection and motor speed adjustment through the inverter drive",
+    "Supplied with a stand for comfortable working height; easy to carry between sites",
+    "CSA-approved electrical panel; digital control panel optional"
+   ],
+   "images": [
+    "bt-26",
+    "bt-24x5",
+    "mg-20b",
+    "mg-26-junior",
+    "portable-bending",
+    "portable-disc",
+    "mg-20b-use",
+    "bt-24x5-panel",
+    "mg-20b-tools"
+   ],
+   "specs": {
+    "kind": "bending",
+    "models": [
+     {
+      "name": "MG 20B",
+      "dims_cm": [
+       49,
+       60,
+       32
+      ],
+      "kw": 1.5,
+      "kg": 95
+     },
+     {
+      "name": "MG 26 Junior",
+      "dims_cm": [
+       56,
+       58,
+       65
+      ],
+      "kw": 1.8,
+      "kg": 115
+     },
+     {
+      "name": "BT 24x5",
+      "dims_cm": [
+       63,
+       70,
+       62
+      ],
+      "kw": 1.5,
+      "kg": 145
+     },
+     {
+      "name": "BT 26",
+      "dims_cm": [
+       63,
+       70,
+       62
+      ],
+      "kw": 2.2,
+      "kg": 150
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        20,
+        1
+       ],
+       [
+        14,
+        2
+       ]
+      ],
+      [
+       [
+        26,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ],
+      [
+       [
+        24,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        26,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        18,
+        1
+       ],
+       [
+        12,
+        3
+       ]
+      ],
+      [
+       [
+        22,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        22,
+        1
+       ],
+       [
+        14,
+        2
+       ]
+      ],
+      [
+       [
+        22,
+        1
+       ],
+       [
+        14,
+        2
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        16,
+        1
+       ],
+       [
+        10,
+        4
+       ]
+      ],
+      [
+       [
+        20,
+        1
+       ],
+       [
+        12,
+        3
+       ]
+      ],
+      [
+       [
+        20,
+        1
+       ],
+       [
+        12,
+        3
+       ]
+      ],
+      [
+       [
+        20,
+        1
+       ],
+       [
+        12,
+        3
+       ]
+      ]
+     ]
+    },
+    "voltage": "110 / 220 V single-phase (built-in transformer)"
+   },
+   "short": "Portable benders",
+   "videos": [
+    {
+     "id": "JDsfbSoCdN0",
+     "title": "GMS BT 26 portable rebar bender on 110/220 V — stirrup bending",
+     "thumb": "video-JDsfbSoCdN0",
+     "duration": "PT2M10S"
+    },
+    {
+     "id": "qg05mD5T-fQ",
+     "title": "GMS MG 20 series portable bender — technical overview",
+     "thumb": "video-qg05mD5T-fQ",
+     "duration": "PT2M"
+    }
+   ]
+  },
+  "stirrup-benders": {
+   "id": "stirrup-benders",
+   "name": "SL series stirrup bending machines",
+   "models_label": "SL 30 · SL 36",
+   "summary": "Dedicated stirrup benders that repeat a stirrup automatically without re-adjusting the angles — the fastest way to produce ties and stirrups from straight bars.",
+   "features": [
+    "Repeats bends automatically without readjusting the angles",
+    "Powerful reducer; bending disc with stirrup pins and rollers",
+    "Easy to fix in place; foot pedal control",
+    "600 V 3-phase with CSA-approved electrical panel"
+   ],
+   "images": [
+    "sl-30",
+    "sl-36",
+    "sl-disc",
+    "sl-stirrup",
+    "sl-pin",
+    "sl-stirrup-2"
+   ],
+   "specs": {
+    "kind": "bending",
+    "models": [
+     {
+      "name": "SL 30",
+      "dims_cm": [
+       75,
+       76,
+       88
+      ],
+      "kw": 3,
+      "kg": 275
+     },
+     {
+      "name": "SL 36",
+      "dims_cm": [
+       78,
+       87,
+       89
+      ],
+      "kw": 3,
+      "kg": 340
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        30,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        36,
+        1
+       ],
+       [
+        18,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        24,
+        1
+       ],
+       [
+        14,
+        2
+       ]
+      ],
+      [
+       [
+        30,
+        1
+       ],
+       [
+        14,
+        2
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        22,
+        1
+       ],
+       [
+        12,
+        2
+       ]
+      ],
+      [
+       [
+        24,
+        1
+       ],
+       [
+        12,
+        2
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "short": "Stirrup benders"
+  },
+  "spiral-benders": {
+   "id": "spiral-benders",
+   "name": "SX series and AXIS 50S spiral bending machines",
+   "models_label": "SX 26 · SX 36 · SX 40 · AXIS 50S",
+   "summary": "Spiral benders form continuous rebar spirals for pile cages and columns from a minimum diameter of about 6-3/4″ (170 mm). The AXIS 50S adds servo-driven supporting conveyors and bends Ø2″ (50 mm) bar and flat bar.",
+   "features": [
+    "Spiral bending from min. 6-3/4″ (170 mm) up to any desired diameter",
+    "SX series: compact machines with bending rollers; motor 2–4 HP",
+    "AXIS 50S: 7.4 HP bending motor, two 4 HP roller motors and a 2 HP supporting-roller motor; supporting conveyors open to 64 × 110 in",
+    "AXIS 50S bends Ø2″ (50 mm) rebar, 2 × Ø1″ or 3 × Ø13/16″ at once, and flat bar up to 3-7/8″ × 3/8″ (100 × 10 mm)",
+    "600 V 3-phase with CSA-approved electrical panel"
+   ],
+   "images": [
+    "sx-40",
+    "sx-36",
+    "sx-26",
+    "axis-50s",
+    "axis-50s-front",
+    "axis-50s-closed",
+    "axis-rollers",
+    "sx-forming",
+    "sx-continuous",
+    "sx-spiral-cage",
+    "axis-cage"
+   ],
+   "specs": {
+    "kind": "bending",
+    "single_bar_only": true,
+    "models": [
+     {
+      "name": "SX 26",
+      "dims_cm": [
+       56,
+       77,
+       101
+      ],
+      "kw": 1.5,
+      "kg": 194,
+      "extra": {
+       "Motor speed": "1450 rpm",
+       "Minimum spiral diameter": "8-1/4″ (210 mm)"
+      }
+     },
+     {
+      "name": "SX 36",
+      "dims_cm": [
+       76,
+       105,
+       98
+      ],
+      "kw": 2.2,
+      "kg": 300,
+      "extra": {
+       "Motor speed": "1387 rpm",
+       "Minimum spiral diameter": "10-1/4″ (260 mm)"
+      }
+     },
+     {
+      "name": "SX 40",
+      "dims_cm": [
+       87,
+       119,
+       86
+      ],
+      "kw": 3,
+      "kg": 477,
+      "extra": {
+       "Motor speed": "1387 rpm",
+       "Minimum spiral diameter": "10-3/4″ (270 mm)"
+      }
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        22,
+        1
+       ]
+      ],
+      [
+       [
+        28,
+        1
+       ]
+      ],
+      [
+       [
+        32,
+        1
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        18,
+        1
+       ]
+      ],
+      [
+       [
+        24,
+        1
+       ]
+      ],
+      [
+       [
+        28,
+        1
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        18,
+        1
+       ]
+      ],
+      [
+       [
+        20,
+        1
+       ]
+      ],
+      [
+       [
+        26,
+        1
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "extra_table": {
+    "title": "AXIS 50S",
+    "rows": [
+     [
+      "Bending motor",
+      "7.4 HP (5.5 kW)"
+     ],
+     [
+      "Roller motors",
+      "2 × 4 HP (3 kW) + 2 HP (1.5 kW) supporting roller motor"
+     ],
+     [
+      "Dimensions W × L × H, conveyors closed",
+      "36 × 63 × 63 in (92 × 160 × 160 cm)"
+     ],
+     [
+      "Dimensions W × L × H, conveyors open",
+      "64 × 110 × 63 in (163 × 280 × 160 cm)"
+     ],
+     [
+      "Weight",
+      "2,513 lb (1,140 kg)"
+     ],
+     [
+      "Bending capacity, 45 kg/mm² steel",
+      "Ø2″ (50 mm) × 1 · Ø1-5/8″ (40 mm) × 1 · Ø1-1/4″ (32 mm) × 1 · Ø1″ (26 mm) × 2 · Ø13/16″ (20 mm) × 3"
+     ],
+     [
+      "Flat bar",
+      "3-1/8″ × 13/16″ (80 × 20 mm) · 3-7/8″ × 3/8″ (100 × 10 mm) · 2-3/8″ × 9/16″ (60 × 15 mm)"
+     ],
+     [
+      "Spiral diameters",
+      "Ø13/16″ (20 mm) bar → Ø11-3/4″ (300 mm) · Ø1-1/8″ (30 mm) → Ø14-1/4″ (360 mm) · Ø1-5/8″ (40 mm) → Ø19-3/4″ (500 mm)"
+     ]
+    ]
+   },
+   "short": "Spiral benders"
+  },
+  "dowel-bar-benders": {
+   "id": "dowel-bar-benders",
+   "name": "Portable hydraulic dowel bar benders",
+   "models_label": "A 40 · MG 26-32B",
+   "summary": "Hydraulic benders for bending dowel bars and starter bars in place — on slabs, walls and columns — without cutting them out.",
+   "features": [
+    "Bends dowel bars in place: A 40 up to Ø1-3/8″ (36 mm), MG 26-32B up to Ø1-1/4″ (32 mm)",
+    "Separate hydraulic power unit and light bending body connected by hose",
+    "3 HP (2.2 kW) motor; hydraulic tank 13 L (A 40) / 10 L (MG 26-32B)",
+    "CSA-approved electrical panel"
+   ],
+   "images": [
+    "a-40",
+    "mg-26-32b",
+    "mg-26-32b-use",
+    "dowel-head",
+    "dowel-in-place"
+   ],
+   "specs": {
+    "kind": "bending",
+    "single_bar_only": true,
+    "models": [
+     {
+      "name": "A 40",
+      "dims_text": "Unit 18 × 20 × 24 in (45 × 51.5 × 61 cm) · Body 11 × 27 × 9 in (27 × 68 × 22 cm)",
+      "kw": 2.2,
+      "kg_text": "Unit 99 lb (45 kg) · Body 185 lb (84 kg)",
+      "tank_l": 13
+     },
+     {
+      "name": "MG 26-32B",
+      "dims_text": "Unit 7 × 20 × 9 in (18 × 51 × 24 cm) · Body 9 × 17 × 24 in (24 × 44 × 62 cm)",
+      "kw": 2.2,
+      "kg_text": "Unit 56 lb (25.2 kg) · Body 97 lb (44 kg)",
+      "tank_l": 10
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        36,
+        1
+       ]
+      ],
+      [
+       [
+        32,
+        1
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        32,
+        1
+       ]
+      ],
+      [
+       [
+        30,
+        1
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        28,
+        1
+       ]
+      ],
+      [
+       [
+        28,
+        1
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "short": "Dowel bar benders",
+   "headline": "Dowel bars to Ø1-3/8″ (36 mm)"
+  },
+  "Hydraulic-rebar-cutter": {
+   "id": "Hydraulic-rebar-cutter",
+   "alt_ids": [
+    "hydraulic-rebar-cutters"
+   ],
+   "name": "H series hydraulic rebar cutters and POWER 24 portable cutter",
+   "models_label": "H 26 · H 36S · H 38S · H 45S · H 55 · POWER 24",
+   "summary": "Single-acting hydraulic cutters with spring return and cast-iron wheels — the standard rebar cutter for construction sites and small shops. The portable POWER 24 runs on 110/220 V single-phase.",
+   "features": [
+    "Hydraulic system with adjustable blade stopper; cuts in low pressure",
+    "Silent, safe and environmentally friendly; low power consumption",
+    "Joystick-type hydraulic valve needs little maintenance and has a long service life",
+    "Reinforced steel body; easy transport on cast-iron wheels",
+    "POWER 24: 198 lb (90 kg) portable cutter with transformer for 110 / 220 V single-phase",
+    "600 V 3-phase (H series) with CSA-approved electrical panel"
+   ],
+   "images": [
+    "h-45s",
+    "h-26",
+    "h-36s",
+    "h-38s",
+    "h-55",
+    "power-24",
+    "h-head",
+    "h-two-bars",
+    "h-bar-stop",
+    "h-blades",
+    "h-spares",
+    "power-24-cutting",
+    "power-24-lever",
+    "power-24-unit",
+    "power-24-bars"
+   ],
+   "specs": {
+    "kind": "cutting",
+    "models": [
+     {
+      "name": "H 26",
+      "dims_cm": [
+       54,
+       100,
+       78
+      ],
+      "kw": 2.2,
+      "kg": 120,
+      "tank_l": 7
+     },
+     {
+      "name": "H 36S",
+      "dims_cm": [
+       53,
+       105,
+       80
+      ],
+      "kw": 2.2,
+      "kg": 165,
+      "tank_l": 13
+     },
+     {
+      "name": "H 38S",
+      "dims_cm": [
+       61,
+       123,
+       80
+      ],
+      "kw": 3,
+      "kg": 273,
+      "tank_l": 17.5
+     },
+     {
+      "name": "H 45S",
+      "dims_cm": [
+       65,
+       136,
+       79
+      ],
+      "kw": 4,
+      "kg": 321,
+      "tank_l": 17.5
+     },
+     {
+      "name": "H 55",
+      "dims_cm": [
+       75,
+       154,
+       102
+      ],
+      "kw": 7.5,
+      "kg": 482,
+      "tank_l": 35
+     },
+     {
+      "name": "POWER 24",
+      "dims_cm": [
+       53,
+       79,
+       73
+      ],
+      "kw": 2.2,
+      "kg": 90,
+      "tank_l": 7,
+      "voltage": "110 / 220 V 1-ph"
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        26,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        30,
+        1
+       ],
+       [
+        22,
+        2
+       ]
+      ],
+      [
+       [
+        38,
+        1
+       ],
+       [
+        26,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        36,
+        2
+       ]
+      ],
+      [
+       [
+        55,
+        1
+       ],
+       [
+        32,
+        2
+       ]
+      ],
+      [
+       [
+        24,
+        1
+       ],
+       [
+        14,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        22,
+        1
+       ],
+       [
+        12,
+        2
+       ]
+      ],
+      [
+       [
+        26,
+        1
+       ],
+       [
+        18,
+        2
+       ]
+      ],
+      [
+       [
+        36,
+        1
+       ],
+       [
+        22,
+        2
+       ]
+      ],
+      [
+       [
+        42,
+        1
+       ],
+       [
+        30,
+        2
+       ]
+      ],
+      [
+       [
+        52,
+        1
+       ],
+       [
+        28,
+        2
+       ]
+      ],
+      [
+       [
+        20,
+        1
+       ],
+       [
+        10,
+        3
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        20,
+        1
+       ],
+       [
+        10,
+        2
+       ]
+      ],
+      [
+       [
+        22,
+        1
+       ],
+       [
+        16,
+        2
+       ]
+      ],
+      [
+       [
+        32,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ],
+      [
+       [
+        34,
+        1
+       ],
+       [
+        26,
+        2
+       ]
+      ],
+      [
+       [
+        42,
+        1
+       ],
+       [
+        26,
+        2
+       ]
+      ],
+      [
+       [
+        16,
+        1
+       ],
+       [
+        8,
+        4
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request); POWER 24: 110/220 V single-phase"
+   },
+   "short": "Hydraulic cutters",
+   "videos": [
+    {
+     "id": "eZI4hX-giPg",
+     "title": "GMS POWER 24 portable rebar cutter — 110/220 V single phase",
+     "thumb": "video-eZI4hX-giPg",
+     "duration": "PT1M20S"
+    },
+    {
+     "id": "RCWP9SOOCBI",
+     "title": "GMS POWER 24 portable rebar cutter — technical overview",
+     "thumb": "video-RCWP9SOOCBI",
+     "duration": "PT2M"
+    }
+   ]
+  },
+  "mechanical-rebar-cutters": {
+   "id": "mechanical-rebar-cutters",
+   "name": "M series mechanical rebar cutters",
+   "models_label": "M 36 · M 45 · M 55",
+   "summary": "Flywheel-driven mechanical cutters for high-volume cutting: one cut every 0.8 seconds, controlled by foot pedal or hand lever.",
+   "features": [
+    "Mechanical system — 0.8 s cutting time, high cutting performance",
+    "Foot pedal and hand lever control",
+    "4 HP (3 kW) motor on all three models; cast-iron wheels",
+    "600 V 3-phase with CSA-approved electrical panel"
+   ],
+   "images": [
+    "m-45",
+    "m-36",
+    "m-55",
+    "m-cutting",
+    "m-cutting-2",
+    "m-top",
+    "m-blades",
+    "m-pedal",
+    "m-lever"
+   ],
+   "specs": {
+    "kind": "cutting",
+    "models": [
+     {
+      "name": "M 36",
+      "dims_cm": [
+       54,
+       101,
+       79
+      ],
+      "kw": 3,
+      "kg": 325
+     },
+     {
+      "name": "M 45",
+      "dims_cm": [
+       51,
+       110,
+       85
+      ],
+      "kw": 3,
+      "kg": 435
+     },
+     {
+      "name": "M 55",
+      "dims_cm": [
+       66,
+       136,
+       94
+      ],
+      "kw": 3,
+      "kg": 675
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        36,
+        1
+       ],
+       [
+        24,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        36,
+        2
+       ]
+      ],
+      [
+       [
+        55,
+        1
+       ],
+       [
+        32,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        32,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ],
+      [
+       [
+        42,
+        1
+       ],
+       [
+        30,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        28,
+        2
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        28,
+        1
+       ],
+       [
+        18,
+        2
+       ]
+      ],
+      [
+       [
+        30,
+        1
+       ],
+       [
+        24,
+        2
+       ]
+      ],
+      [
+       [
+        36,
+        1
+       ],
+       [
+        24,
+        2
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "short": "Mechanical cutters",
+   "videos": [
+    {
+     "id": "wg295qz5fs8",
+     "title": "GMS M 45 mechanical rebar cutting machine",
+     "thumb": "video-wg295qz5fs8",
+     "duration": "PT1M30S"
+    }
+   ]
+  },
+  "heavy-duty-rebar-cutters": {
+   "id": "heavy-duty-rebar-cutters",
+   "name": "SH series double-acting hydraulic rebar cutters",
+   "models_label": "SH 45 · SH 60",
+   "summary": "Heavy-duty double-acting hydraulic cutters for rebar shops and precast plants: the SH 60 cuts a single Ø2-3/8″ (60 mm) bar or two Ø1-3/8″ (36 mm) bars at once.",
+   "features": [
+    "Double-acting hydraulic system with pressure gauge; high cutting performance",
+    "Controlled automatically or manually",
+    "Large hydraulic reservoir (105 L / 163 L) for continuous production",
+    "600 V 3-phase with CSA-approved electrical panel"
+   ],
+   "images": [
+    "sh-60",
+    "sh-45",
+    "sh-unit",
+    "sh-60-detail",
+    "sh-cut-end",
+    "sh-blades",
+    "sh-gauge"
+   ],
+   "specs": {
+    "kind": "cutting",
+    "models": [
+     {
+      "name": "SH 45",
+      "dims_cm": [
+       86,
+       132,
+       100
+      ],
+      "kw": 5.5,
+      "kg": 592,
+      "tank_l": 105
+     },
+     {
+      "name": "SH 60",
+      "dims_cm": [
+       70,
+       172,
+       114
+      ],
+      "kw": 7.5,
+      "kg": 960,
+      "tank_l": 163
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        42,
+        1
+       ],
+       [
+        38,
+        2
+       ]
+      ],
+      [
+       [
+        60,
+        1
+       ],
+       [
+        36,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        38,
+        1
+       ],
+       [
+        32,
+        2
+       ]
+      ],
+      [
+       [
+        50,
+        1
+       ],
+       [
+        28,
+        2
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        32,
+        1
+       ],
+       [
+        26,
+        2
+       ]
+      ],
+      [
+       [
+        45,
+        1
+       ],
+       [
+        26,
+        2
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "short": "Heavy-duty cutters",
+   "videos": [
+    {
+     "id": "7ir_epq-jXw",
+     "title": "GMS SH 60 double-acting hydraulic rebar cutter",
+     "thumb": "video-7ir_epq-jXw",
+     "duration": "PT1M30S"
+    }
+   ]
+  },
+  "combined-bender-cutter": {
+   "id": "combined-bender-cutter",
+   "name": "MAX 40 combined rebar cutting and bending machine",
+   "models_label": "MAX 40",
+   "summary": "Hydromechanical cutting unit on one side and a bending disc on the other: the MAX 40 cuts up to Ø1-1/8″ (30 mm) and bends up to Ø1-3/8″ (36 mm), with low energy consumption.",
+   "features": [
+    "Cutting and bending in one machine — hydraulic cutting unit, mechanical bending disc",
+    "Max. cutting capacity Ø1-1/8″ (30 mm); max. bending capacity Ø1-3/8″ (36 mm)",
+    "Separate 3 HP (2.2 kW) cutting motor and 4 HP (3 kW) bending motor",
+    "600 V 3-phase with CSA-approved electrical panel"
+   ],
+   "images": [
+    "max-40",
+    "max-40-side",
+    "max-40-cutting",
+    "max-40-bending"
+   ],
+   "specs": {
+    "kind": "bending",
+    "models": [
+     {
+      "name": "MAX 40",
+      "dims_cm": [
+       110,
+       98,
+       110
+      ],
+      "kw_text": "3 HP (2.2 kW) cutting · 4 HP (3 kW) bending",
+      "kg": 430,
+      "tank_l": 18,
+      "extra": {
+       "Motor speed": "1450 rpm"
+      }
+     }
+    ],
+    "capacity": {
+     "45": [
+      [
+       [
+        36,
+        1
+       ],
+       [
+        24,
+        2
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        32,
+        1
+       ],
+       [
+        20,
+        2
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        28,
+        1
+       ],
+       [
+        18,
+        2
+       ]
+      ]
+     ]
+    },
+    "cutting_capacity": {
+     "45": [
+      [
+       [
+        30,
+        1
+       ]
+      ]
+     ],
+     "65": [
+      [
+       [
+        28,
+        1
+       ]
+      ]
+     ],
+     "85": [
+      [
+       [
+        26,
+        1
+       ]
+      ]
+     ]
+    },
+    "voltage": "600 V 3-phase (208/240/480 V on request)"
+   },
+   "short": "MAX 40 bender-cutter"
+  },
+  "automatic-stirrup-bender": {
+   "id": "automatic-stirrup-bender",
+   "name": "SLS 12 automatic stirrup bending machine",
+   "models_label": "SLS 12 · SLS 12 Omnitron robotic cell",
+   "summary": "Straightens, bends and cuts stirrups and 2D shapes from 1/4″–1/2″ (6–12 mm) coil, two strands at a time, from a 15-inch touch-screen console with more than 50 pre-loaded shapes. The Omnitron version adds a robot that stacks the finished stirrups.",
+   "features": [
+    "Wire diameter 1/4″, 5/16″, 3/8″ and 1/2″ (#2–#4) — double-strand processing, 2D bending",
+    "15 HP feed servo, 5.4 HP bending servo, 4 HP cutting motor; feed speed 394 ft/min; bending speed 1250°/s",
+    "Length tolerance ± 0.039–0.079 in; bending tolerance ± 1°",
+    "Decoilers with brake system and swivel arms; heat-treated straightening wheels; gears made by GMS",
+    "More than 50 stirrup shapes pre-loaded, 100 more can be saved; 3 emergency stops; pneumatic door",
+    "SLS 12 Omnitron: robotic cell for automatic handling and stacking of finished stirrups"
+   ],
+   "images": [
+    "sls-12",
+    "sls-12-omnitron",
+    "sls-decoilers",
+    "sls-head",
+    "sls-bending",
+    "sls-stirrups",
+    "sls-panel",
+    "sls-shapes",
+    "sls-straightening",
+    "sls-omnitron-cell",
+    "sls-omnitron-handling",
+    "sls-omnitron-table",
+    "sls-omnitron-console"
+   ],
+   "extra_table": {
+    "title": "SLS 12 technical specifications",
+    "rows": [
+     [
+      "Wire diameter (two strands at once)",
+      "1/4″ · 5/16″ · 3/8″ · 1/2″ (6 · 8 · 10 · 12 mm) — US bar sizes #2 / #3 / #4"
+     ],
+     [
+      "Bending type",
+      "2D"
+     ],
+     [
+      "Driving (feed) servo motor",
+      "15 HP · 394 ft/min (120 m/min)"
+     ],
+     [
+      "Bending servo motor",
+      "5.4 HP · 1250°/s"
+     ],
+     [
+      "Cutting motor (AC)",
+      "4 HP"
+     ],
+     [
+      "Length tolerance",
+      "± 0.039–0.079 in (± 1–2 mm)"
+     ],
+     [
+      "Bending tolerance",
+      "± 1°"
+     ],
+     [
+      "Compressed air",
+      "Compressor required · 120–150 psi working pressure"
+     ],
+     [
+      "Control panel",
+      "15″ HMI touch screen · software in English (other languages on request)"
+     ],
+     [
+      "Machine dimensions W × L × H",
+      "67 × 197 × 92 in"
+     ],
+     [
+      "Decoiler dimensions W × L × H",
+      "83 × 85 × 91 in"
+     ],
+     [
+      "Machine weight / decoiler weight",
+      "6,614 lb / 2,205 lb (3,000 kg / 1,000 kg)"
+     ],
+     [
+      "HS code",
+      "8462 29 00"
+     ]
+    ]
+   },
+   "specs": null,
+   "short": "SLS 12 stirrup bender",
+   "headline": "1/4″–1/2″ (6–12 mm) coil · 2 strands",
+   "videos": [
+    {
+     "id": "4vKFCDajiNc",
+     "title": "GMS SLS 12 automatic stirrup bending machine",
+     "thumb": "video-4vKFCDajiNc",
+     "duration": "PT3M"
+    }
+   ]
+  },
+  "automatic-bar-shearing-line-MATRIX-45": {
+   "id": "automatic-bar-shearing-line-MATRIX-45",
+   "alt_ids": [
+    "rebar-shear-line"
+   ],
+   "name": "MATRIX 55 and MATRIX 55S automatic rebar shear lines",
+   "models_label": "MATRIX 55 · MATRIX 55S",
+   "summary": "PLC-controlled hydraulic shear lines that cut bars up to Ø2-1/8″ (55 mm), or bundles of up to 35 small bars, to programmed lengths from a 10.1-inch screen. The 55S adds a travelling cutting unit, automatic collecting bins, discharge to both sides and 3-storey loading platforms — eliminating 2–3 operators.",
+   "features": [
+    "Hydraulic cutting unit with 10 HP motor; cutting accuracy ± 0.118 in (± 3 mm)",
+    "PLC control with 10.1″ screen (touch screen on 55S); remote connection; barcode system optional",
+    "MATRIX 55: moving stopper on a servo motor, manual collecting bins, hydraulic discharge to one side",
+    "MATRIX 55S: travelling cutting unit on a 2 HP servo, automatic bins, pneumatic discharge to both sides of the outfeed conveyor, 3-storey loading platforms",
+    "Total power 21 HP (MATRIX 55) / 25 HP (MATRIX 55S); energy consumption 14.65 kWh",
+    "Cuts up to 35 × Ø5/16″ (8 mm), 24 × Ø1/2″ (12 mm), 11 × Ø1″ (26 mm), 5 × Ø1-5/8″ (40 mm) or 1 × Ø2-1/8″ (55 mm) at once in 45 kg/mm² steel"
+   ],
+   "images": [
+    "matrix-55s",
+    "matrix-55",
+    "matrix-line",
+    "matrix-55-infeed",
+    "matrix-55-cutting",
+    "matrix-55-panel",
+    "matrix-55-outfeed",
+    "matrix-55s-bins",
+    "matrix-platform",
+    "matrix-operator",
+    "matrix-bins",
+    "matrix-line-2",
+    "matrix-conveyor",
+    "matrix-sorting",
+    "matrix-screen",
+    "matrix-blades"
+   ],
+   "extra_table": {
+    "title": "MATRIX 55 / MATRIX 55S technical specifications",
+    "cols": [
+     "MATRIX 55",
+     "MATRIX 55S"
+    ],
+    "rows": [
+     [
+      "Hydraulic motor",
+      "10 HP",
+      "10 HP"
+     ],
+     [
+      "Loading roller motors",
+      "3 × 1.5 HP + 1 × 1 HP",
+      "3 × 1.5 HP + 1 × 1 HP"
+     ],
+     [
+      "Discharging roller motors",
+      "3 × 1.5 HP",
+      "3 × 1.5 HP"
+     ],
+     [
+      "Moving stopper servo motor",
+      "1 HP",
+      "—"
+     ],
+     [
+      "Cutting unit travel servo motor",
+      "—",
+      "2 HP"
+     ],
+     [
+      "Total power",
+      "21 HP",
+      "25 HP"
+     ],
+     [
+      "Energy consumption",
+      "14.65 kWh",
+      "14.65 kWh"
+     ],
+     [
+      "Control panel",
+      "10.1″ digital screen, PLC",
+      "10.1″ digital touch screen, PLC"
+     ],
+     [
+      "Remote control (remote connection)",
+      "Available",
+      "Available"
+     ],
+     [
+      "Collecting bins",
+      "Manual",
+      "Automatic"
+     ],
+     [
+      "Discharging",
+      "One side, hydraulic",
+      "Both sides of the outfeed conveyor, pneumatic"
+     ],
+     [
+      "3-storey loading platforms",
+      "—",
+      "Available"
+     ],
+     [
+      "Barcode system",
+      "Optional",
+      "Optional"
+     ],
+     [
+      "Cutting accuracy",
+      "± 0.118 in (± 3 mm)",
+      "± 0.118 in (± 3 mm)"
+     ],
+     [
+      "Hydraulic system pressure",
+      "3,630 psi (250 bar)",
+      "3,630 psi (250 bar)"
+     ],
+     [
+      "Pneumatic working pressure",
+      "—",
+      "120–150 psi"
+     ],
+     [
+      "Total weight",
+      "11,464 lb (5,200 kg)",
+      "37,479 lb (17,000 kg)"
+     ]
+    ]
+   },
+   "capacity_list": {
+    "title": "Cutting capacity — bars at once (MATRIX 55 and 55S)",
+    "head": [
+     "Bar Ø",
+     "Bar size (manufacturer)",
+     "45 kg/mm²",
+     "65 kg/mm²",
+     "85 kg/mm²"
+    ],
+    "rows": [
+     [
+      "Ø2-1/8″ (55 mm)",
+      "#14",
+      "1",
+      "1",
+      "1"
+     ],
+     [
+      "Ø1-5/8″ (40 mm)",
+      "#14",
+      "5",
+      "4",
+      "4"
+     ],
+     [
+      "Ø1-3/8″ (36 mm)",
+      "#11",
+      "6",
+      "5",
+      "5"
+     ],
+     [
+      "Ø1-1/4″ (32 mm)",
+      "#10",
+      "7",
+      "6",
+      "6"
+     ],
+     [
+      "Ø1-1/8″ (28 mm)",
+      "#9",
+      "8",
+      "7",
+      "7"
+     ],
+     [
+      "Ø1″ (26 mm)",
+      "#8",
+      "11",
+      "10",
+      "10"
+     ],
+     [
+      "Ø7/8″ (22 mm)",
+      "#7",
+      "13",
+      "12",
+      "12"
+     ],
+     [
+      "Ø13/16″ (20 mm)",
+      "#6",
+      "14",
+      "13",
+      "13"
+     ],
+     [
+      "Ø5/8″ (16 mm)",
+      "#5",
+      "18",
+      "18",
+      "18"
+     ],
+     [
+      "Ø1/2″ (12 mm)",
+      "#4",
+      "24",
+      "24",
+      "24"
+     ],
+     [
+      "Ø3/8″ (10 mm)",
+      "#3",
+      "30",
+      "30",
+      "30"
+     ],
+     [
+      "Ø5/16″ (8 mm)",
+      "#3",
+      "35",
+      "35",
+      "35"
+     ]
+    ]
+   },
+   "specs": null,
+   "short": "MATRIX shear lines",
+   "headline": "Bars to Ø2-1/8″ (55 mm) · up to 35 bars at once",
+   "videos": [
+    {
+     "id": "LKfwHVH8VdA",
+     "title": "GMS rebar shear line and double bender in production",
+     "thumb": "video-LKfwHVH8VdA",
+     "duration": "PT1M20S"
+    },
+    {
+     "id": "CjwixzMJQXE",
+     "title": "GMS MATRIX 55S shear line and SYNCLONE 45S double bender — cut and bend",
+     "thumb": "video-CjwixzMJQXE",
+     "duration": "PT3M"
+    }
+   ]
+  },
+  "Automatic-rebar-double-bender-ROBOBENDER-45S": {
+   "id": "Automatic-rebar-double-bender-ROBOBENDER-45S",
+   "alt_ids": [
+    "rebar-double-bender"
+   ],
+   "name": "SYNCLONE 45S servo-controlled double bender",
+   "models_label": "SYNCLONE 45S",
+   "summary": "Two bending heads — one stationary, one travelling on servo drive — bend both ends of bars up to Ø1-5/8″ (42 mm, #11) and up to 40 ft (12 m) long in one cycle. Works as a double bender or as two independent benders for small shapes.",
+   "features": [
+    "40 ft (12 m) feeding conveyor with adjustable roller speed; pneumatic automatic kick-off; manual feed into the benders",
+    "Two 10 HP bending servos, 2.7 HP travel servo, 5.4 HP hydraulic motor, 4 HP roller motor — 34 HP total; energy consumption 17.3 kWh",
+    "Minimum distance between benders 3.3 ft (1 m), less with bending tools; bending accuracy ± 0.197 in (± 5 mm)",
+    "Mandrels supplied: Ø2-3/4″ to Ø8-1/2″ (70, 80, 100, 110, 125, 145, 160, 180, 215 mm)",
+    "10.1″ digital panel saves and recalls bending shapes; barcode system with instant scanning optional; remote connection; 3 collecting bins",
+    "Bends 1 × Ø1-5/8″ (42 mm), 2 × Ø1-1/8″ (30 mm), 3 × Ø15/16″ (24 mm) or 4 × Ø13/16″ (20 mm) at once in 45 kg/mm² steel"
+   ],
+   "images": [
+    "synclone-45s",
+    "synclone-matrix",
+    "synclone-heads",
+    "synclone-2",
+    "synclone-3",
+    "synclone-4",
+    "synclone-5",
+    "synclone-6",
+    "synclone-7"
+   ],
+   "extra_table": {
+    "title": "SYNCLONE 45S technical specifications",
+    "rows": [
+     [
+      "Stationary bender servo motor",
+      "10 HP"
+     ],
+     [
+      "Moving bender servo motor",
+      "10 HP"
+     ],
+     [
+      "Travel servo motor",
+      "2.7 HP"
+     ],
+     [
+      "Hydraulic motor (AC)",
+      "5.4 HP"
+     ],
+     [
+      "Roller motor (AC)",
+      "4 HP"
+     ],
+     [
+      "Total power",
+      "34 HP · 17.3 kWh energy consumption"
+     ],
+     [
+      "Bending accuracy",
+      "± 0.197 in (± 5 mm)"
+     ],
+     [
+      "Hydraulic system pressure",
+      "2,610 psi (180 bar)"
+     ],
+     [
+      "Pneumatic working pressure",
+      "120–150 psi"
+     ],
+     [
+      "Collecting bins",
+      "3"
+     ],
+     [
+      "Remote control / barcode system",
+      "Available / optional"
+     ],
+     [
+      "Total weight",
+      "15,432 lb (7,000 kg)"
+     ]
+    ]
+   },
+   "capacity_list": {
+    "title": "Bending capacity — bars at once",
+    "head": [
+     "Bar Ø",
+     "Bar size (manufacturer)",
+     "45 kg/mm²",
+     "65 kg/mm²",
+     "85 kg/mm²"
+    ],
+    "rows": [
+     [
+      "Ø1-5/8″ (42 mm)",
+      "#14",
+      "1",
+      "1",
+      "—"
+     ],
+     [
+      "Ø1-3/8″ (36 mm)",
+      "#11",
+      "1",
+      "1",
+      "1"
+     ],
+     [
+      "Ø1-1/8″ (30 mm)",
+      "#10",
+      "2",
+      "2",
+      "1"
+     ],
+     [
+      "Ø15/16″ (24 mm)",
+      "#8",
+      "3",
+      "3",
+      "2"
+     ],
+     [
+      "Ø13/16″ (20 mm)",
+      "#6",
+      "4",
+      "4",
+      "3"
+     ]
+    ]
+   },
+   "specs": null,
+   "short": "SYNCLONE double bender",
+   "headline": "Bars to Ø1-5/8″ (42 mm) · 40 ft (12 m) long",
+   "videos": [
+    {
+     "id": "CjwixzMJQXE",
+     "title": "GMS SYNCLONE 45S double bender with MATRIX 55S shear line",
+     "thumb": "video-CjwixzMJQXE",
+     "duration": "PT3M"
+    }
+   ]
+  },
+  "mesh-benders-and-cutters": {
+   "id": "mesh-benders-and-cutters",
+   "name": "HB mesh benders and MH 8C mesh cutter",
+   "models_label": "HB 12x3 · HB 12x6 · MH 8C",
+   "summary": "The HB 12x3 and HB 12x6 bend welded mesh up to Ø1/2″ (12 mm) wire at 45°, 90° or 135° over a 9 ft 10 in or 19 ft 8 in working width; the MH 8C shears mesh up to Ø5/16″ (8 mm) in 7 seconds.",
+   "features": [
+    "HB 12x3 / HB 12x6: hydraulic mesh benders, bending angles 45°, 90° and 135°",
+    "Working width 9 ft 10 in (3 m); 19 ft 8 in (6 m) on the HB 12x6",
+    "MH 8C: mechanical mesh cutting machine, 9 ft 10 in (3 m) working width, cuts in 7 seconds",
+    "600 V 3-phase with CSA-approved electrical panel"
+   ],
+   "images": [
+    "hb-12x3",
+    "hb-12x6",
+    "mh-8c"
+   ],
+   "extra_table": {
+    "title": "Mesh machines technical specifications",
+    "cols": [
+     "HB 12x3",
+     "HB 12x6",
+     "MH 8C"
+    ],
+    "rows": [
+     [
+      "Working width",
+      "9 ft 10 in (3 m)",
+      "19 ft 8 in (6 m)",
+      "9 ft 10 in (3 m)"
+     ],
+     [
+      "Dimensions W × L × H",
+      "39 × 134 × 43 in (98 × 340 × 109 cm)",
+      "39 × 252 × 43 in (100 × 640 × 109 cm)",
+      "38 × 159 × 52 in (97 × 405 × 132 cm)"
+     ],
+     [
+      "Motor power",
+      "7.4 HP (5.5 kW)",
+      "10 HP (7.5 kW)",
+      "1.5 HP (1.1 kW)"
+     ],
+     [
+      "Weight",
+      "1,565 lb (710 kg)",
+      "2,756 lb (1,250 kg)",
+      "1,168 lb (530 kg)"
+     ],
+     [
+      "Hydraulic oil tank",
+      "36 L",
+      "36 L",
+      "—"
+     ],
+     [
+      "Capacity, 45 kg/mm² steel",
+      "Ø1/2″ (12 mm)",
+      "Ø1/2″ (12 mm)",
+      "Ø5/16″ (8 mm)"
+     ],
+     [
+      "Capacity, 65 kg/mm² steel",
+      "Ø3/8″ (10 mm)",
+      "Ø3/8″ (10 mm)",
+      "Ø5/16″ (8 mm)"
+     ],
+     [
+      "Capacity, 85 kg/mm² steel",
+      "Ø5/16″ (8 mm)",
+      "Ø5/16″ (8 mm)",
+      "Ø5/16″ (8 mm)"
+     ]
+    ]
+   },
+   "specs": null,
+   "short": "Mesh machines",
+   "headline": "Mesh wire to Ø1/2″ (12 mm) · 9 ft 10 in – 19 ft 8 in wide"
+  }
+ }
+}

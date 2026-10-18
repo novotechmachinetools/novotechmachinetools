@@ -130,6 +130,7 @@ def img(name):
         "w": largest["w"], "h": largest["h"],
         "srcset": ", ".join(f"{x['file']} {x['w']}w" for x in v),
         "small": v[0]["file"],
+        "thumb": (e.get("thumb") or v[0])["file"],
         "alpha": e["alpha"],
     }
 
@@ -194,10 +195,11 @@ def page_ld(page):
     for g in page.get("groups", []):
         for f in g["families"]:
             pos += 1
+            purl = (absurl(g["id"] + ".html") if page.get("subpages") else url) + "#" + f["id"]
             gal = f.get("gallery") or []
             models = [m["name"] for m in (f.get("specs") or {}).get("models", [])] or [s.strip() for s in f.get("models_label", "").split("·") if s.strip()]
             prod = {
-                "@type": "Product", "@id": url + "#" + f["id"], "url": url + "#" + f["id"],
+                "@type": "Product", "@id": purl, "url": purl,
                 "name": f["name"], "description": f["summary"],
                 "image": [absurl(i["src"]) for i in gal[:6]],
                 "brand": {"@type": "Brand", "name": brand.get("name", "")},
@@ -212,8 +214,8 @@ def page_ld(page):
     vids = []
     for g in page.get("groups", []):
         for f in g["families"]:
-            if f.get("video"):
-                vids.append((f["video"], url + "#" + f["id"] + "-video"))
+            for v in f.get("videos") or []:
+                vids.append((v, url + "#" + f["id"] + "-video"))
     if page.get("intro_video"):
         vids.append((page["intro_video"], url + "#GMS-introduction-video"))
     for v, vurl in vids:
@@ -230,13 +232,74 @@ def page_ld(page):
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
 
+FAMILY_SETS = {}
+for fn in os.listdir(os.path.join(ROOT, "content", "families")):
+    if fn.endswith(".json"):
+        FAMILY_SETS[fn[:-5]] = json.load(open(os.path.join(ROOT, "content", "families", fn), encoding="utf-8"))["families"]
+
+
+def family(page, fid):
+    """A deep copy of a family record from the page's family set."""
+    fs = FAMILY_SETS[page.get("family_set", "rebar")]
+    if fid not in fs:
+        raise SystemExit(f"unknown family {fid}")
+    return json.loads(json.dumps(fs[fid]))
+
+
+def max_single_bar(spec, grade="45"):
+    """Largest single-bar diameter (mm) across a family's models at the given steel grade."""
+    best = 0
+    for cells in spec["capacity"][grade]:
+        for mm, n in cells:
+            if n == 1 and mm > best:
+                best = mm
+    return best
+
+
+def prepare_family(f):
+    if f.get("specs"):
+        f["table"] = build_spec_table(f["specs"])
+        f["max_mm"] = max_single_bar(f["specs"])
+        kind = "Cuts" if f["specs"].get("kind") == "cutting" else "Bends"
+        f["headline"] = f.get("headline") or f"{kind} single bars to {dia(f['max_mm'])}"
+    f["gallery"] = [img(n) for n in f.get("images", [])]
+    f["card_image"] = f["gallery"][0] if f["gallery"] else None
+    return f
+
+
+def range_table(subpages):
+    """One row per model across the range: for the hub's 'at a glance' table."""
+    rows = []
+    for sp in subpages:
+        for f in sp["families"]:
+            spec = f.get("specs")
+            if not spec:
+                continue
+            for i, m in enumerate(spec["models"]):
+                def single(grade):
+                    for mm, n in spec["capacity"][grade][i]:
+                        if n == 1:
+                            return dia(mm)
+                    return "—"
+                rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "kind": "Cutter" if spec.get("kind") == "cutting" else "Bender",
+                             "cap45": single("45"), "cap65": single("65"), "motor": m.get("kw_text") or f"{hp(m['kw'])} ({kw_str(m['kw'])})",
+                             "weight": m.get("kg_text") or f"{lb(m['kg'])} ({m['kg']:g} kg)",
+                             "voltage": "110/220 V 1-phase" if "110" in (m.get("voltage") or "") else "600 V 3-phase"})
+    return rows
+
+
 def render_page(page):
     page = dict(page)
+    if page.get("subpages"):  # hub: resolve each sub-page's families and derive groups for the quote form / structured data
+        for sp in page["subpages"]:
+            sp["families"] = [prepare_family(family(page, fid)) for fid in sp["families"]]
+            sp["href"] = sp["slug"] + ".html"
+        page["groups"] = [{"id": sp["slug"], "title": sp["title"], "families": sp["families"]} for sp in page["subpages"]]
+        page["range_rows"] = range_table(page["subpages"])
     for g in page.get("groups", []):
-        for f in g["families"]:
-            if f.get("specs"):
-                f["table"] = build_spec_table(f["specs"])
-            f["gallery"] = [img(n) for n in f.get("images", [])]
+        g["families"] = [prepare_family(family(page, f)) if isinstance(f, str) else f for f in g["families"]]
+    if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
+        page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
     page["url"] = f"{site['domain']}/{page['slug']}.html"
     tpl = env.get_template(page.get("template", "page.html"))
     return tpl.render(page=page, ld_json=page_ld(page), build_ts=int(datetime.datetime.now().timestamp()),
@@ -259,11 +322,21 @@ def main():
     if os.path.exists(DIST):
         shutil.rmtree(DIST)
     os.makedirs(DIST)
-    # static assets
+    # static assets (CSS and JS are minified on the way)
     for sub in ("css", "js", "fonts", "img", "files"):
         s = os.path.join(ROOT, "src", sub)
         if os.path.isdir(s):
             shutil.copytree(s, os.path.join(DIST, sub))
+    try:
+        import rcssmin, rjsmin
+        for fn in os.listdir(os.path.join(DIST, "css")):
+            if fn.endswith(".css"):
+                fp = os.path.join(DIST, "css", fn); src = open(fp, encoding="utf-8").read(); open(fp, "w", encoding="utf-8").write(rcssmin.cssmin(src))
+        for fn in os.listdir(os.path.join(DIST, "js")):
+            if fn.endswith(".js"):
+                fp = os.path.join(DIST, "js", fn); src = open(fp, encoding="utf-8").read(); open(fp, "w", encoding="utf-8").write(rjsmin.jsmin(src))
+    except ImportError:
+        print("rcssmin/rjsmin not installed - shipping unminified CSS/JS")
     for extra in ("robots.txt", "llms.txt", ".htaccess", "quote.php", "favicon.ico", "favicon.svg", "site.webmanifest"):
         s = os.path.join(ROOT, "src", "root", extra)
         if os.path.exists(s):
@@ -271,7 +344,7 @@ def main():
     pages = []
     pdir = os.path.join(ROOT, "content", "pages")
     for fn in sorted(os.listdir(pdir)):
-        if not fn.endswith(".json"):
+        if not fn.endswith(".json") or fn.startswith("_"):
             continue
         page = json.load(open(os.path.join(pdir, fn), encoding="utf-8"))
         html = render_page(page)
@@ -283,7 +356,7 @@ def main():
         print(f"wrote {out} ({len(html)//1024} KB)")
     # sitemap
     today = datetime.date.today().isoformat()
-    urls = "".join(f"  <url><loc>{site['domain']}/{p['slug']}.html</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n" for p in pages)
+    urls = "".join(f"  <url><loc>{site['domain']}/{p['slug']}.html</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{'0.9' if p.get('subpages') else '0.8'}</priority></url>\n" for p in pages)
     open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
     if STAGING:
         open(os.path.join(DIST, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")

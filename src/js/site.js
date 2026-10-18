@@ -68,6 +68,7 @@
       if (e.key === "ArrowLeft") showLb(lbIndex - 1);
       if (e.key === "ArrowRight") showLb(lbIndex + 1);
     });
+    onSwipe(lightbox.querySelector(".lightbox-inner"), function (dir) { showLb(lbIndex + dir); });
   }
   function showLb(i) {
     if (!lbItems.length) return;
@@ -75,29 +76,59 @@
     var it = lbItems[lbIndex];
     lbImg.src = it.src; lbImg.srcset = it.srcset || ""; lbImg.sizes = "92vw"; lbImg.alt = it.alt; lbCap.textContent = it.alt;
   }
+  /* Horizontal swipe / drag detection shared by galleries and the lightbox */
+  function onSwipe(el, cb) {
+    var x0 = null, y0 = null, id = null;
+    el.addEventListener("pointerdown", function (e) { if (e.button !== undefined && e.button !== 0) return; x0 = e.clientX; y0 = e.clientY; id = e.pointerId; });
+    el.addEventListener("pointerup", function (e) {
+      if (x0 === null || e.pointerId !== id) return;
+      var dx = e.clientX - x0, dy = e.clientY - y0; x0 = null;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) { el._swiped = true; cb(dx < 0 ? 1 : -1); setTimeout(function () { el._swiped = false; }, 250); }
+    });
+    el.addEventListener("pointercancel", function () { x0 = null; });
+    el.addEventListener("dragstart", function (e) { e.preventDefault(); }); // links/images would otherwise start a native drag
+    el.style.touchAction = "pan-y";
+  }
+
   d.querySelectorAll(".gallery").forEach(function (g) {
     var main = g.querySelector(".gallery-main img");
     var link = g.querySelector(".gallery-main .gallery-link");
     var figure = g.querySelector(".gallery-main");
     var cap = g.querySelector(".gallery-main figcaption");
+    var counter = g.querySelector(".gal-index");
     var thumbs = Array.prototype.slice.call(g.querySelectorAll(".thumb"));
     var items = thumbs.length ? thumbs.map(function (t) {
       return { src: t.dataset.src, srcset: t.dataset.srcset, w: t.dataset.w, h: t.dataset.h, alt: t.dataset.alt, cutout: t.classList.contains("is-cutout") };
     }) : [{ src: main.currentSrc || main.src, srcset: main.srcset, w: main.width, h: main.height, alt: main.alt, cutout: figure.classList.contains("is-cutout") }];
     var index = 0;
     function show(i) {
-      index = i;
-      var it = items[i];
+      index = (i + items.length) % items.length;
+      var it = items[index];
       main.src = it.src; main.srcset = it.srcset || ""; main.width = it.w; main.height = it.h; main.alt = it.alt;
-      link.href = it.src; link.dataset.index = i;
+      link.href = it.src; link.dataset.index = index;
       cap.textContent = it.alt;
+      if (counter) counter.textContent = index + 1;
       figure.classList.toggle("is-cutout", !!it.cutout);
-      thumbs.forEach(function (t, j) { t.classList.toggle("is-current", j === i); });
+      thumbs.forEach(function (t, j) { t.classList.toggle("is-current", j === index); });
+      var cur = thumbs[index];
+      if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: "nearest", inline: "nearest" });
     }
     thumbs.forEach(function (t, i) {
       t.addEventListener("click", function (e) { e.preventDefault(); show(i); });
     });
+    var prev = g.querySelector(".gal-prev"), next = g.querySelector(".gal-next");
+    if (prev) prev.addEventListener("click", function () { show(index - 1); });
+    if (next) next.addEventListener("click", function () { show(index + 1); });
+    if (items.length > 1) {
+      onSwipe(figure, function (dir) { show(index + dir); });
+      figure.setAttribute("tabindex", "0");
+      figure.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowLeft") { e.preventDefault(); show(index - 1); }
+        if (e.key === "ArrowRight") { e.preventDefault(); show(index + 1); }
+      });
+    }
     link.addEventListener("click", function (e) {
+      if (figure._swiped) { e.preventDefault(); return; }
       if (!window.HTMLDialogElement) return; // old browsers: open the image itself
       e.preventDefault();
       ensureLightbox();
@@ -106,21 +137,45 @@
     });
   });
 
-  /* ---------- YouTube facades: load the player only on click ---------- */
-  d.querySelectorAll(".video[data-video]").forEach(function (v) {
-    var a = v.querySelector(".video-poster");
-    if (!a || PREVIEW) return; // in the preview the poster simply links to YouTube
-    a.addEventListener("click", function (e) {
+  /* ---------- YouTube players: poster first; when a video scrolls into view it autoplays muted,
+     when it scrolls away the player is removed again so only one player runs at a time ---------- */
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var saveData = navigator.connection && navigator.connection.saveData;
+  function makePlayer(v, muted) {
+    var f = d.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + v.dataset.video + "?autoplay=1&rel=0&modestbranding=1&playsinline=1" + (muted ? "&mute=1" : "");
+    f.title = v.dataset.title || "Video";
+    f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
+    f.setAttribute("allowfullscreen", "");
+    return f;
+  }
+  var videos = Array.prototype.slice.call(d.querySelectorAll(".video[data-video]"));
+  videos.forEach(function (v) {
+    var poster = v.querySelector(".video-poster");
+    if (!poster || PREVIEW) return; // in the preview the poster simply links to YouTube
+    v._poster = poster;
+    poster.addEventListener("click", function (e) {
       e.preventDefault();
-      var f = d.createElement("iframe");
-      f.src = "https://www.youtube-nocookie.com/embed/" + v.dataset.video + "?autoplay=1&rel=0&modestbranding=1";
-      f.title = v.dataset.title || "Video";
-      f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
-      f.setAttribute("allowfullscreen", "");
-      f.setAttribute("loading", "eager");
-      a.replaceWith(f);
+      var f = makePlayer(v, false);     // a click is a user gesture: play with sound
+      (v.querySelector("iframe") || poster).replaceWith(f);
+      v.dataset.userStarted = "1";
     });
   });
+  if (videos.length && "IntersectionObserver" in window && !reduceMotion && !saveData && !PREVIEW) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (!v._poster) return;
+        var frame = v.querySelector("iframe");
+        if (e.isIntersecting && e.intersectionRatio >= 0.5 && !frame) {
+          v.querySelector(".video-poster").replaceWith(makePlayer(v, true));   // autoplay, muted
+        } else if (!e.isIntersecting && frame && !v.dataset.userStarted) {
+          frame.replaceWith(v._poster);                                         // stop and free the player
+        }
+      });
+    }, { threshold: [0, 0.5] });
+    videos.forEach(function (v) { vio.observe(v); });
+  }
 
   /* ---------- "Request a quote" buttons pre-select the machine ---------- */
   var select = d.getElementById("q-machine");
