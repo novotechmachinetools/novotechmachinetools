@@ -100,7 +100,8 @@ small { font-size: .85em; }
 .sub-menu a { display: block; padding: 5px 8px; font-size: 16px; color: var(--ink); text-decoration: none; border-radius: var(--radius); }
 .sub-menu a:hover, .sub-menu a[aria-current="page"] { background: var(--orange-tint); color: var(--orange-ink); }
 .header-contact { display: flex; align-items: center; gap: 14px; }
-.header-contact .phone { font-family: var(--cond); font-weight: 600; font-size: 20px; color: var(--charcoal); text-decoration: none; white-space: nowrap; }
+.header-contact .phone { font-family: var(--cond); font-weight: 600; font-size: 20px; color: var(--charcoal); text-decoration: none; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+.flag-ca { flex: none; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .12); }
 
 /* ---------- hero ---------- */
 .hero { background: var(--paper); border-bottom: 1px solid var(--line-soft); overflow: hidden; }
