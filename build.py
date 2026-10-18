@@ -17,6 +17,9 @@ if ARTIFACT:
     DIST = os.path.join(ROOT, "dist-artifact")
 
 site = json.load(open(os.path.join(ROOT, "content", "site.json"), encoding="utf-8"))
+if STAGING:
+    # absolute URLs (canonical, og:url, og:image, structured data) point at the test host while testing
+    site["domain"] = site.get("staging_domain", site["domain"])
 manifest = json.load(open(os.path.join(ROOT, "tools", "image_manifest.json"), encoding="utf-8"))
 
 # ---------------------------------------------------------------- unit helpers

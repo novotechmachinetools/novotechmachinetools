@@ -12,50 +12,157 @@
     "postal": "L5T 2J5",
     "country": "Canada"
   },
-  "geo": {"lat": 43.6553, "lng": -79.6613},
+  "geo": {
+    "lat": 43.6553,
+    "lng": -79.6613
+  },
   "hours": "Mon–Fri 8:30–17:00",
   "founded_note": "Metalworking machinery supplier in Mississauga, Ontario — serving fabricators across Canada.",
   "youtube_channel": "https://www.youtube.com/@NovoTechMachineTools",
   "youtube_rebar_playlist": "https://www.youtube.com/playlist?list=PLgtouQi-TePskd87VBPL7EEoHJJ_yKnH5",
   "nav": [
-    {"label": "Products", "href": "products.html", "children": [
-      {"label": "Rebar benders & cutters", "href": "rebar-bender-and-cutter.html"},
-      {"label": "Press brakes", "href": "press-brake.html"},
-      {"label": "Laser cutters", "href": "laser-cutting-machine.html"},
-      {"label": "Shears", "href": "shear-cutting.html"},
-      {"label": "Ironworkers", "href": "iron-worker-punch.html"},
-      {"label": "Plate rollers", "href": "plate-roller-bender.html"},
-      {"label": "Angle rolls", "href": "pipe-profile-roll-bender.html"},
-      {"label": "Horizontal bandsaws", "href": "bekamak-pivot-band-saw.html"},
-      {"label": "Cold saws", "href": "cold-saw-carbide-saw-cutting.html"},
-      {"label": "Roofing & pan brakes", "href": "folder-sheet-metal-brake.html"},
-      {"label": "Horizontal press brakes", "href": "horizontal-press-brake.html"},
-      {"label": "Pipe benders", "href": "pipe-bender.html"},
-      {"label": "Hydraulic presses", "href": "hydraulic-press.html"},
-      {"label": "Plate bevelers", "href": "plate-beveler.html"},
-      {"label": "Circle shear & flanging", "href": "circular-cutting-shear-tank-dish-head-flanging.html"},
-      {"label": "Bead rollers", "href": "bead-roller-hvac-forming-pittsburgh-lock-former.html"},
-      {"label": "Lock formers", "href": "lock-former.html"},
-      {"label": "Metal deburring & finishing", "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"},
-      {"label": "Pipe polishing & sanding", "href": "pipe-polishing-deburring-grinding-brushing.html"},
-      {"label": "Pipe notchers", "href": "pipe-notcher.html"},
-      {"label": "Corner notchers", "href": "corner-notcher.html"},
-      {"label": "Aluminum & PVC saws", "href": "aluminum-and-pvc-upcut-saws.html"},
-      {"label": "Press brake tooling", "href": "press-brake-tooling-punch-and-die.html"}
-    ]},
-    {"label": "Brochures", "href": "brochures.html"},
-    {"label": "Articles", "href": "metal-fabricating-articles.html"},
-    {"label": "About us", "href": "about-us.html"},
-    {"label": "Contact", "href": "contact-us.html"}
+    {
+      "label": "Products",
+      "href": "products.html",
+      "children": [
+        {
+          "label": "Rebar benders & cutters",
+          "href": "rebar-bender-and-cutter.html"
+        },
+        {
+          "label": "Press brakes",
+          "href": "press-brake.html"
+        },
+        {
+          "label": "Laser cutters",
+          "href": "laser-cutting-machine.html"
+        },
+        {
+          "label": "Shears",
+          "href": "shear-cutting.html"
+        },
+        {
+          "label": "Ironworkers",
+          "href": "iron-worker-punch.html"
+        },
+        {
+          "label": "Plate rollers",
+          "href": "plate-roller-bender.html"
+        },
+        {
+          "label": "Angle rolls",
+          "href": "pipe-profile-roll-bender.html"
+        },
+        {
+          "label": "Horizontal bandsaws",
+          "href": "bekamak-pivot-band-saw.html"
+        },
+        {
+          "label": "Cold saws",
+          "href": "cold-saw-carbide-saw-cutting.html"
+        },
+        {
+          "label": "Roofing & pan brakes",
+          "href": "folder-sheet-metal-brake.html"
+        },
+        {
+          "label": "Horizontal press brakes",
+          "href": "horizontal-press-brake.html"
+        },
+        {
+          "label": "Pipe benders",
+          "href": "pipe-bender.html"
+        },
+        {
+          "label": "Hydraulic presses",
+          "href": "hydraulic-press.html"
+        },
+        {
+          "label": "Plate bevelers",
+          "href": "plate-beveler.html"
+        },
+        {
+          "label": "Circle shear & flanging",
+          "href": "circular-cutting-shear-tank-dish-head-flanging.html"
+        },
+        {
+          "label": "Bead rollers",
+          "href": "bead-roller-hvac-forming-pittsburgh-lock-former.html"
+        },
+        {
+          "label": "Lock formers",
+          "href": "lock-former.html"
+        },
+        {
+          "label": "Metal deburring & finishing",
+          "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
+        },
+        {
+          "label": "Pipe polishing & sanding",
+          "href": "pipe-polishing-deburring-grinding-brushing.html"
+        },
+        {
+          "label": "Pipe notchers",
+          "href": "pipe-notcher.html"
+        },
+        {
+          "label": "Corner notchers",
+          "href": "corner-notcher.html"
+        },
+        {
+          "label": "Aluminum & PVC saws",
+          "href": "aluminum-and-pvc-upcut-saws.html"
+        },
+        {
+          "label": "Press brake tooling",
+          "href": "press-brake-tooling-punch-and-die.html"
+        }
+      ]
+    },
+    {
+      "label": "Brochures",
+      "href": "brochures.html"
+    },
+    {
+      "label": "Articles",
+      "href": "metal-fabricating-articles.html"
+    },
+    {
+      "label": "About us",
+      "href": "about-us.html"
+    },
+    {
+      "label": "Contact",
+      "href": "contact-us.html"
+    }
   ],
   "standard_features": [
-    {"title": "CSA-approved electrical panel", "text": "Every machine ships with a CSA-approved panel, wired for Canadian voltage."},
-    {"title": "Parts and support in Canada", "text": "Spare parts and technical support readily available from Mississauga."},
-    {"title": "1-year warranty", "text": "Installation and training available."},
-    {"title": "Made in Turkey with European components", "text": "GMS has built rebar machinery in Ankara since 1960 and makes its own gears in-house."},
-    {"title": "7-day money-back guarantee", "text": "On in-stock machines."},
-    {"title": "Financing available", "text": "Order today with just 10% down — 0% down financing available."}
+    {
+      "title": "CSA-approved electrical panel",
+      "text": "Every machine ships with a CSA-approved panel, wired for Canadian voltage."
+    },
+    {
+      "title": "Parts and support in Canada",
+      "text": "Spare parts and technical support readily available from Mississauga."
+    },
+    {
+      "title": "1-year warranty",
+      "text": "Installation and training available."
+    },
+    {
+      "title": "Made in Turkey with European components",
+      "text": "GMS has built rebar machinery in Ankara since 1960 and makes its own gears in-house."
+    },
+    {
+      "title": "7-day money-back guarantee",
+      "text": "On in-stock machines."
+    },
+    {
+      "title": "Financing available",
+      "text": "Order today with just 10% down — 0% down financing available."
+    }
   ],
   "voltage_note": "Three-phase machines are supplied for 600 V; 208 V, 240 V or 480 V 3-phase available on request.",
-  "steel_note": "Capacities are the manufacturer's ratings for one or more bars at once in steel of 45, 65 and 85 kg/mm² tensile strength (≈ 64,000, 92,500 and 120,900 psi). For Canadian Grade 400W rebar (minimum tensile strength 540 MPa ≈ 55 kg/mm²) use the 65 kg/mm² column as a conservative guide. Bar-size equivalents (Canadian metric bars and US bar numbers) are given for the single-bar capacity."
+  "steel_note": "Capacities are the manufacturer's ratings for one or more bars at once in steel of 45, 65 and 85 kg/mm² tensile strength (≈ 64,000, 92,500 and 120,900 psi). For Canadian Grade 400W rebar (minimum tensile strength 540 MPa ≈ 55 kg/mm²) use the 65 kg/mm² column as a conservative guide. Bar-size equivalents (Canadian metric bars and US bar numbers) are given for the single-bar capacity.",
+  "staging_domain": "https://novotechmachinetools.github.io/novotechmachinetools"
 }

@@ -18,11 +18,16 @@
 <meta property="og:description" content="{{ page.meta_description }}">
 <meta property="og:url" content="{{ page.url }}">
 <meta property="og:locale" content="en_CA">
-{% if page.hero_image %}{% set og = img(page.hero_image) %}<meta property="og:image" content="{{ site.domain }}/{{ og.src }}">
-<meta property="og:image:width" content="{{ og.w }}">
-<meta property="og:image:height" content="{{ og.h }}">
-<meta property="og:image:alt" content="{{ og.alt }}">
-<meta name="twitter:card" content="summary_large_image">{% endif %}
+<meta property="og:image" content="{{ site.domain }}/img/social/{{ page.slug }}.jpg">
+<meta property="og:image:secure_url" content="{{ site.domain }}/img/social/{{ page.slug }}.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ page.h1 }} — NovoTech Machine Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.og_title or page.title }}">
+<meta name="twitter:description" content="{{ page.meta_description }}">
+<meta name="twitter:image" content="{{ site.domain }}/img/social/{{ page.slug }}.jpg">
 <link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 {% if page.hero_image %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, 520px">{% endif %}
