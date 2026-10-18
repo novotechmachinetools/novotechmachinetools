@@ -381,10 +381,10 @@ def main():
     loaded = [json.load(open(os.path.join(pdir, fn), encoding="utf-8")) for fn in sorted(os.listdir(pdir)) if fn.endswith(".json") and not fn.startswith("_")]
     # every page of a hub's section gets links to the hub and to its sibling pages (cross-linking the benders / cutters / lines pages)
     for hub in [p for p in loaded if p.get("subpages")]:
-        members = [{"href": sp["slug"] + ".html", "slug": sp["slug"], "label": sp.get("nav_label") or sp["title"], "blurb": sp.get("blurb", "")} for sp in hub["subpages"]]
+        members = [{"href": sp["slug"] + ".html", "slug": sp["slug"], "label": sp.get("nav_label") or sp["title"], "blurb": sp.get("blurb", ""), "image": img(sp["image"]) if sp.get("image") else None} for sp in hub["subpages"]]
         for p in loaded:
             if any(m["slug"] == p["slug"] for m in members):
-                p["section"] = {"hub": {"href": hub["slug"] + ".html", "label": hub.get("nav_label") or hub["h1"]},
+                p["section"] = {"hub": {"href": hub["slug"] + ".html", "label": hub.get("nav_label") or hub["h1"], "image": img(hub["hero_image"]) if hub.get("hero_image") else None},
                                 "pages": [dict(m, current=(m["slug"] == p["slug"])) for m in members]}
                 covered = {m["href"] for m in members} | {hub["slug"] + ".html"}
                 p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these

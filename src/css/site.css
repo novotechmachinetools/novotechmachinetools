@@ -293,11 +293,15 @@ small { font-size: .85em; }
 .section-nav a[aria-current="page"] { background: var(--charcoal); border-color: var(--charcoal); color: #fff; }
 .section-nav a.section-nav-hub { border-style: dashed; }
 .related-cards { list-style: none; margin: 0 0 18px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.related-cards a { display: block; height: 100%; padding: 16px 18px; border: 1px solid var(--line); border-left: 4px solid var(--orange); background: var(--white); color: var(--charcoal); text-decoration: none; border-radius: var(--radius); }
+.related-cards a { display: flex; flex-direction: column; height: 100%; border: 1px solid var(--line); border-top: 4px solid var(--orange); background: var(--white); color: var(--charcoal); text-decoration: none; border-radius: var(--radius); overflow: hidden; }
 .related-cards a:hover, .related-cards a:focus-visible { border-color: var(--orange); box-shadow: 0 6px 18px rgba(30, 30, 30, .08); }
+.related-art { display: flex; align-items: center; justify-content: center; height: 190px; padding: 14px; background: linear-gradient(180deg, #fff 0%, #f3f3f4 100%); border-bottom: 1px solid var(--line-soft); }
+.related-art img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.related-cards a:hover .related-art img { transform: scale(1.03); transition: transform .2s; }
+.related-body { display: block; padding: 14px 18px 18px; }
 .related-cards strong { display: block; font-family: var(--cond); font-size: 21px; font-weight: 600; margin-bottom: 6px; }
 .related-cards strong::after { content: " →"; color: var(--orange); }
-.related-cards span { display: block; font-size: 14.5px; color: var(--steel); line-height: 1.45; }
+.related-body > span { display: block; font-size: 14.5px; color: var(--steel); line-height: 1.45; }
 /* ---------- protected e-mail: the @ is drawn here, JS later swaps in the real mailto: link ---------- */
 .em { white-space: nowrap; }
 .em-at::before { content: "\0040"; }

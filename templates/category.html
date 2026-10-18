@@ -145,9 +145,9 @@
   {% if page.section %}
   <ul class="related-cards">
     {% for s in page.section.pages if not s.current %}
-    <li><a href="{{ s.href }}"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></a></li>
+    <li><a href="{{ s.href }}">{% if s.image %}<span class="related-art{{ ' is-cutout' if s.image.alpha else '' }}"><img src="{{ s.image.small }}" srcset="{{ s.image.srcset }}" sizes="(max-width: 600px) 92vw, 380px" width="{{ s.image.w }}" height="{{ s.image.h }}" alt="{{ s.image.alt }}" loading="lazy" decoding="async"></span>{% endif %}<span class="related-body"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></span></a></li>
     {% endfor %}
-    <li><a href="{{ page.section.hub.href }}"><strong>{{ page.section.hub.label }}</strong><span>Every GMS rebar bender, cutter and automatic line NovoTech supplies, with the capacity table for the whole range.</span></a></li>
+    <li><a href="{{ page.section.hub.href }}">{% if page.section.hub.image %}<span class="related-art{{ ' is-cutout' if page.section.hub.image.alpha else '' }}"><img src="{{ page.section.hub.image.small }}" srcset="{{ page.section.hub.image.srcset }}" sizes="(max-width: 600px) 92vw, 380px" width="{{ page.section.hub.image.w }}" height="{{ page.section.hub.image.h }}" alt="{{ page.section.hub.image.alt }}" loading="lazy" decoding="async"></span>{% endif %}<span class="related-body"><strong>{{ page.section.hub.label }}</strong><span>Every GMS rebar bender, cutter and automatic line NovoTech supplies, with the capacity table for the whole range.</span></span></a></li>
   </ul>
   {% endif %}
   {% if page.related_pages %}
