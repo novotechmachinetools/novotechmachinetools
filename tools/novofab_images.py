@@ -2,9 +2,10 @@
 """Prepare the NovoFab (value line) product photos.
 
 Source photos are the cut-outs extracted from the NovoTech sawing catalogue PDF
-(/home/claude/nf-src/cut/*.png, RGBA). For every photo: remove the OEM nameplates /
-model labels (inpainting), then mount a NovoFab nameplate with the perspective of the
-panel it sits on. Output: tools/src-images/novofab/<key>.png
+(/home/claude/nf-src/cut/*.png, RGBA). For every photo the OEM nameplates / model
+labels are removed (inpainting). The NovoFab nameplate overlay (tools/plate.py) is kept
+as an option but switched off (MOUNT_PLATES = False) — the photos are used as they are.
+Output: tools/src-images/novofab/<key>.png
 
     python3 tools/novofab_images.py            # all
     python3 tools/novofab_images.py nf-h330-1  # one key
@@ -20,6 +21,7 @@ from plate import apply_plate, face_quad, inpaint, rect_quad, render_plate  # no
 
 SRC = "/home/claude/nf-src/cut"
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tools", "src-images", "novofab")
+MOUNT_PLATES = False   # True = composite the NovoFab nameplate on each product photo
 
 R = lambda **k: ("rect", k)            # rect_quad(cx, cy, w, h, angle_deg)
 F = lambda face, uv: ("face", face, uv)  # face_quad(face, u0, u1, v0, v1)
@@ -74,7 +76,7 @@ JOBS = {
     "nf-a300sc-2": dict(src="p15-088"),
     "nf-a300sc-3": dict(src="p15-089"),
     "nf-a300sc-4": dict(src="p15-090"),
-    "nf-a330-1": dict(src="p33-220", clear=[(80, 775, 525, 860)], plate=R(cx=300, cy=520, w=90, h=56, angle_deg=0)),
+    "nf-a330-1": dict(src="p33-220", clear=[(70, 740, 540, 817)], plate=R(cx=300, cy=520, w=90, h=56, angle_deg=0)),
     "nf-a330-2": dict(src="p33-214"),
     "nf-a330-3": dict(src="p33-216", inpaint=[[(78, 38), (150, 38), (150, 63), (78, 63)]]),
     "nf-a350-1": dict(src="p34-224", plate=R(cx=1270, cy=1000, w=190, h=118, angle_deg=0)),
@@ -130,7 +132,7 @@ def process(key, job, plate):
         a = np.asarray(im).copy()
         a[y0:y1, x0:x1, 3] = 0
         im = Image.fromarray(a, "RGBA")
-    if job.get("plate"):
+    if MOUNT_PLATES and job.get("plate"):
         im = apply_plate(im, quad_of(job["plate"]), plate, soft=job.get("soft", 0.7))
     return im
 
@@ -138,7 +140,7 @@ def process(key, job, plate):
 def main():
     os.makedirs(OUT, exist_ok=True)
     keys = [k for k in sys.argv[1:] if not k.startswith("--")] or list(JOBS)
-    plate = render_plate("alu")
+    plate = render_plate("alu") if MOUNT_PLATES else None
     for k in keys:
         im = process(k, JOBS[k], plate)
         # keep RGB-only sources as RGB (smaller webp), cut-outs as RGBA
