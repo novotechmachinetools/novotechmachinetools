@@ -162,27 +162,33 @@
   "standard_features": [
     {
       "title": "CSA-approved electrical panel",
-      "text": "Every machine ships with a CSA-approved panel, wired for Canadian voltage."
+      "text": "Every machine ships with a CSA-approved panel, wired for Canadian voltage.",
+      "icon": "panel"
     },
     {
       "title": "Parts and support in Canada",
-      "text": "Spare parts and technical support readily available from Mississauga, Ontario, Canada."
+      "text": "Spare parts and technical support readily available from Mississauga, Ontario, Canada.",
+      "icon": "support"
     },
     {
       "title": "1-year warranty",
-      "text": "Installation and training available."
+      "text": "Installation and training available.",
+      "icon": "warranty"
     },
     {
       "title": "Made in Turkey with European components",
-      "text": "GMS has built rebar machinery in Ankara since 1960 and makes its own gears in-house."
+      "text": "GMS has built rebar machinery in Ankara since 1960 and makes its own gears in-house.",
+      "icon": "factory"
     },
     {
       "title": "7-day money-back guarantee",
-      "text": "On in-stock machines."
+      "text": "On in-stock machines.",
+      "icon": "moneyback"
     },
     {
       "title": "Financing available",
-      "text": "Order today with just 10% down — 0% down financing available."
+      "text": "Order today with just 10% down — 0% down financing available.",
+      "icon": "financing"
     }
   ],
   "voltage_note": "Three-phase machines are supplied for 600 V; 208 V, 240 V or 480 V 3-phase available on request.",

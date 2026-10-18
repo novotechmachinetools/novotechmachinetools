@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "partials/macros.html" import picture, gallery, video, spec_table, extra_table, capacity_list, cta_row with context %}
+{% from "partials/macros.html" import feature_icon, picture, gallery, video, spec_table, extra_table, capacity_list, cta_row with context %}
 
 {% block content %}
 {% set hero = img(page.hero_image) %}
@@ -104,7 +104,7 @@
     <h2 id="why-title">Included with every machine from NovoTech</h2>
     <ul class="why-grid">
       {% for s in site.standard_features %}
-      <li><strong>{{ s.title }}</strong><span>{{ s.text }}</span></li>
+      <li><span class="why-badge">{{ feature_icon(s.icon) }}</span><div><strong>{{ s.title }}</strong><span>{{ s.text }}</span></div></li>
       {% endfor %}
     </ul>
     <p class="why-note">{{ site.voltage_note }}</p>
