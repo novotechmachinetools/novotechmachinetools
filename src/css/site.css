@@ -219,10 +219,10 @@ small { font-size: .85em; }
 .why-grid { list-style: none; margin: 18px 0 10px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 28px; }
 .why-grid li { border-top: 3px solid var(--orange); padding-top: 14px; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; align-items: start; }
 .why-grid li > div { display: grid; gap: 3px; }
-.why-badge { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; background: var(--orange); color: var(--charcoal); box-shadow: 0 6px 16px rgba(0, 0, 0, .35); }
+.why-grid .why-badge { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; color: var(--orange); }
 .why-icon { display: block; }
 .why-grid strong { font-family: var(--cond); font-weight: 600; font-size: 22px; }
-.why-grid span { color: #D5D7DA; font-size: 16px; }
+.why-grid li > div > span { color: #D5D7DA; font-size: 16px; }
 .why-note { color: #C8CBCF; font-size: 15px; margin: 10px 0 0; }
 
 /* ---------- videos / faq ---------- */

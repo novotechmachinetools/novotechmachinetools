@@ -146,15 +146,15 @@
 </ul>
 {%- endmacro %}
 
-{# ---------- feature icons for the "Included with every machine" strip (original line icons, 24x24 grid) ---------- #}
+{# ---------- feature icons for the "Included with every machine" strip (Lucide icons, ISC/MIT licence — https://lucide.dev) ---------- #}
 {% set FEATURE_ICONS = {
-  "panel":     '<rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M13 6.5l-3.5 5.5h4L11 17.5"/><path d="M8 21.5v1M16 21.5v1" />',
-  "support":   '<circle cx="9.5" cy="14.5" r="4.2"/><circle cx="9.5" cy="14.5" r="1.3"/><path d="M9.5 8.3v2M9.5 18.7v2M3.3 14.5h2M13.7 14.5h2M5.1 10.1l1.4 1.4M12.5 17.5l1.4 1.4M5.1 18.9l1.4-1.4M12.5 11.5l1.4-1.4"/><path d="M15.2 9.8l5.3-5.3M18.3 2.8l2.9 2.9-1.6 1.6-2.9-2.9z"/>',
-  "warranty":  '<path d="M12 2.5l7.5 3v6c0 5-3.2 8.6-7.5 10-4.3-1.4-7.5-5-7.5-10v-6z"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8"/>',
-  "factory":   '<path d="M3 21V10l5.5 3.5V10l5.5 3.5V10l5.5 3.5V21z"/><path d="M3 21h18"/><path d="M6 3.5h3v6H6z"/><path d="M8 17h2M13 17h2M18 17h2"/>',
-  "moneyback": '<path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 3.5v4.5h-4.5"/><path d="M12 7.5v9"/><path d="M14.2 9.8c0-1-1-1.6-2.2-1.6s-2.2.6-2.2 1.5c0 2.1 4.4 1 4.4 3.2 0 1-1 1.6-2.2 1.6s-2.2-.6-2.2-1.6"/>',
-  "financing": '<rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 9.5h19"/><path d="M8 15.5l5-5"/><circle cx="8.3" cy="11.3" r=".9"/><circle cx="12.7" cy="15.2" r=".9"/>'
+  "panel": '<path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z" /> <path d="m2 22 3-3" /> <path d="M7.5 13.5 10 11" /> <path d="M10.5 16.5 13 14" /> <path d="m18 3-4 4h6l-4 4" />',
+  "support": '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />',
+  "warranty": '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" />',
+  "factory": '<path d="M12 16h.01" /> <path d="M16 16h.01" /> <path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" /> <path d="M8 16h.01" />',
+  "moneyback": '<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /> <path d="M12 18V6" />',
+  "financing": '<line x1="19" x2="5" y1="5" y2="19" /> <circle cx="6.5" cy="6.5" r="2.5" /> <circle cx="17.5" cy="17.5" r="2.5" />'
 } %}
 {% macro feature_icon(name) -%}
-<svg class="why-icon" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ FEATURE_ICONS[name] | safe }}</svg>
+<svg class="why-icon" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ FEATURE_ICONS[name] | safe }}</svg>
 {%- endmacro %}
