@@ -105,9 +105,10 @@ small { font-size: .85em; }
 /* ---------- hero ---------- */
 .hero { background: var(--paper); border-bottom: 1px solid var(--line-soft); overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 32px; align-items: center; padding: 36px 0 28px; }
-.crumbs ol { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: 15px; color: var(--steel); }
+.crumbs ol { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: 15px; color: var(--steel); align-items: center; }
+.crumbs li { display: inline-flex; align-items: center; }
 .crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--mist); }
-.crumbs a { color: var(--steel); text-decoration: none; display: inline-block; padding: 4px 0; }
+.crumbs a, .crumbs span { color: var(--steel); text-decoration: none; display: inline-block; padding: 4px 0; line-height: 1.3; }
 .crumbs a:hover { color: var(--orange-ink); text-decoration: underline; }
 .lead { font-size: 19px; max-width: 60ch; color: var(--charcoal-2); }
 .hero-points { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
