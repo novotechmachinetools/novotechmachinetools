@@ -34,8 +34,8 @@ VOLT_FAQ = {"q": "What voltage do these saws run on?",
 
 BK = {
     "manual": dict(
-        title="Bekamak Manual Band Saws (BMS Double-Miter) | NovoTech Canada",
-        meta="Bekamak BMS 230DG and 270DG manual gravity-feed band saws in Canada: double-miter heads to 60°, hydraulic descent control, Ø9″–10-5/8″ capacity. Specs in inches and mm, CSA panels, support in Mississauga.",
+        title="Bekamak Manual Band Saws — BMS Double-Miter Bandsaws | NovoTech",
+        meta="Bekamak BMS 230DG and 270DG manual metal cutting band saws (gravity-feed bandsaws) for sale in Canada: double-miter heads to 60°, hydraulic descent, Ø9″–10-5/8″. Specs in inches and mm, CSA panels, support in Mississauga.",
         h1="Bekamak manual band saws",
         intro="Gravity-feed pivot saws built by Bekamak in Turkey for maintenance shops, fabricators and anyone cutting a few pieces at a time: the operator positions the bar, closes the vise and lowers the bow; a hydraulic cylinder controls the descent and the double-miter head swivels both ways for angle cuts. Premium-line construction with CSA-approved panels and support from Mississauga.",
         points=["Hydraulic-damped gravity feed with adjustable cutting pressure", "Double-miter head: +60° right, −45° left", "Round capacities Ø9″ (230 mm) and Ø10-5/8″ (270 mm)"],
@@ -50,8 +50,8 @@ BK = {
             VOLT_FAQ,
         ]),
     "semi-automatic": dict(
-        title="Bekamak Semi-Automatic Band Saws (BMSY) | NovoTech Canada",
-        meta="Bekamak BMSY semi-automatic band saws in Canada: hydraulic vise, automatic bow return, single- and double-miter heads to 60°, Ø9″ to Ø17-3/8″ (230–440 mm). Specs in inches and mm, support in Mississauga.",
+        title="Bekamak Semi-Automatic Band Saws — BMSY Hydraulic Bandsaws | NovoTech",
+        meta="Bekamak BMSY semi-automatic metal cutting band saws (hydraulic bandsaws) for sale in Canada: hydraulic vise, automatic bow return, miter heads to 60°, Ø9″ to Ø17-3/8″ (230–440 mm). Specs in inches and mm.",
         h1="Bekamak semi-automatic band saws",
         intro="The workhorse of most fabrication shops: the operator loads the bar and presses start; the hydraulic vise clamps, the bow cuts at the set feed rate and lifts clear when the cut is done. Bekamak's BMSY pivot saws come with single- or double-miter heads for structural steel, inverter blade speed and hydro-mechanical blade tension — from Ø9″ to Ø17-3/8″ (230–440 mm).",
         points=["Hydraulic vise, automatic bow return, inverter blade speed", "Single- or double-miter heads to 60°; DGH models position the head hydraulically", "Round capacities from Ø9″ (230 mm) to Ø17-3/8″ (440 mm)"],
@@ -66,8 +66,8 @@ BK = {
             {"q": "Can these saws cut bundles?", "a": "Yes, with the optional hydraulic top clamping, which presses a bundle of tubes or bars down while the side vise holds it. Ask us about bundle sizes for the model you need."},
         ]),
     "automatic": dict(
-        title="Bekamak Automatic NC Band Saws (BMSO) | NovoTech Canada",
-        meta="Bekamak BMSO fully automatic band saws in Canada: roller-feed, encoder and servo shuttle-vise NC saws to Ø17-3/8″ (440 mm), automatic single- and double-miter models. Specs in inches and mm.",
+        title="Bekamak Automatic Band Saws — BMSO NC Bandsaws | NovoTech",
+        meta="Bekamak BMSO fully automatic metal cutting band saws (NC bandsaws) for sale in Canada: roller-feed, encoder and servo shuttle-vise saws to Ø17-3/8″ (440 mm), automatic miter models. Specs in inches and mm.",
         h1="Bekamak automatic band saws",
         intro="Set the length and the quantity, load the bar and walk away. Bekamak's BMSO saws feed the material — with driven rollers, an encoder-measured feed or a servo shuttle vise — clamp, cut and count until the job is done. From Ø9″ to Ø17-3/8″ (230–440 mm), including automatic single- and double-miter models with NC job lists.",
         points=["Roller feed, encoder feed or servo shuttle-vise feed", "NC job lists: length × quantity × angle", "Automatic single- and double-miter models"],
@@ -82,8 +82,8 @@ BK = {
             {"q": "Do automatic saws need a roller table?", "a": "A short infeed roller table is included on the BMSO E models; a 10 ft (3 m) manual or motorized roller table is optional on the others and is strongly recommended for bars longer than about 6 ft."},
         ]),
     "double-column": dict(
-        title="Bekamak Double Column Band Saws, Ø13″ to 59″ | NovoTech Canada",
-        meta="Bekamak double-column (twin-post) band saws in Canada from Ø13″ (330 mm) to 59″ (1500 mm): BMSY C semi-automatics, CGH and DG NC miter saws, BMSO CS / CGS servo-feed NC saws and the high-tech XS line. Specs in inches and mm.",
+        title="Bekamak Double Column Band Saws (Bandsaws), Ø13″–59″ | NovoTech",
+        meta="Bekamak double column metal cutting band saws (twin-column bandsaws) for sale in Canada, Ø13″ to 59″ (330–1500 mm): BMSY C semi-automatics, CGH / DG NC miter saws, BMSO CS / CGS servo NC saws and the XS line.",
         h1="Bekamak double-column band saws",
         intro="For heavy bar, billets, beams and bundles the bow runs between two hardened columns instead of pivoting, so the blade enters the material squarely and stays square through the cut. Bekamak builds semi-automatic and fully automatic versions, miter heads to 60°, servo feeding with NC job lists and the enclosed high-tech XS production saws — from Ø13″ to 59″ (330–1500 mm).",
         points=["Twin-column guidance for square cuts in heavy stock", "Semi-automatic, roller-feed and servo-feed NC models", "Round capacities from Ø13″ (330 mm) to 59″ (1500 mm)"],
@@ -101,8 +101,8 @@ BK = {
 
 NF = {
     "manual": dict(
-        title="Value Line Manual Band Saws, 10″ to 15-3/4″ (NT-M series) | NovoTech Canada",
-        meta="NovoTech value-line manual gravity-feed band saws in Canada: NT-M 10 series (mitre vise, swivel bow, hydraulic down-feed, twin-mitre) and the Ø15-3/4″ NT-M 16. Value line with CSA panels, parts and support in Mississauga.",
+        title="NovoTech Manual Band Saws — NT-M Bandsaws, 10″–16″ | Canada",
+        meta="NovoTech NT-M manual metal cutting band saws (gravity-feed bandsaws) for sale in Canada: NT-M 10 series with mitre vise, swivel bow, hydraulic down-feed or twin-mitre bow, and the 15-3/4″ NT-M 16. Value line, CSA panels, support in Mississauga.",
         h1="NovoTech manual band saws",
         intro="NovoTech's own value line of gravity-feed pivot saws: the bow descends on a hydraulic damper with adjustable feed pressure, a belt or gear drive gives several blade speeds, and every model ships with a coolant pump and a stop rod. Four 10-inch models cover mitre-vise, swivel-bow, hydraulic-damped and twin-mitre cutting; the NT-M 16 handles 15-3/4″ rounds with a gear drive and carbide guides.",
         points=["Hydraulic-damped descent with adjustable feed pressure", "Swivel and twin-mitre bows for angle cuts to 60°", "Round capacities from Ø10″ (254 mm) to Ø15-3/4″ (400 mm)"],
@@ -115,8 +115,8 @@ NF = {
             VOLT_FAQ,
         ]),
     "semi-automatic": dict(
-        title="Value Line Semi-Automatic Hydraulic Band Saws — NT-H 10 F & NT-H series | NovoTech Canada",
-        meta="NovoTech value-line semi-automatic band saws in Canada: NT-H 10 S/10 T hydraulic pivot saws, NT-H 13 twin-mitre, NT-H 16, NT-H 12 SC single-column with touch screen and the 18″ NT-H 18. Specs in inches and mm.",
+        title="NovoTech Semi-Automatic Band Saws — NT-H Hydraulic Bandsaws | Canada",
+        meta="NovoTech NT-H semi-automatic metal cutting band saws (hydraulic bandsaws) for sale in Canada: the full-hydraulic NT-H 10 F, NT-H 10 S / 10 T, NT-H 13 twin-mitre, NT-H 16, NT-H 12 SC single-column and the 18″ NT-H 18. Specs in inches and mm.",
         h1="NovoTech semi-automatic band saws",
         intro="Hydraulic saws for the production floor at value-line prices, led by our best seller — the NT-H 10 F, a 10-inch twin-mitre saw with hydraulic vise, hydraulic down-feed and hydraulic bow up-lift. A hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts and the machine stops at the end of the cut. From the 10-inch saws to the 18-inch NT-H 18 swivel-head saw, with a single-column touch-screen model (NT-H 12 SC) in between.",
         points=["NT-H 10 F: full-hydraulic 10″ twin-mitre saw — our most popular model", "Hydraulic descent, automatic bow return and shut-off on every model", "Round capacities from Ø9-7/8″ (250 mm) to Ø18″ (460 mm)"],
@@ -130,8 +130,8 @@ NF = {
             VOLT_FAQ,
         ]),
     "automatic": dict(
-        title="Value Line Automatic & CNC Band Saws, 11-3/4″ to 23-5/8″ (NT-A) | NovoTech Canada",
-        meta="NovoTech value-line automatic band saws in Canada: NT-A 12 roller-feed, NT-A 12 SC single-column, NT-A 13 twin-mitre with 20 ft stand and NT-A 14 to NT-A 24 CNC servo saws. Value line, specs in inches and mm.",
+        title="NovoTech Automatic Band Saws — NT-A CNC Bandsaws | Canada",
+        meta="NovoTech NT-A automatic metal cutting band saws (CNC bandsaws) for sale in Canada: NT-A 12 roller-feed, NT-A 12 SC single-column, NT-A 13 twin-mitre with 20 ft stand, NT-A 14 to NT-A 24 CNC servo saws. Specs in inches and mm.",
         h1="NovoTech automatic band saws",
         intro="Automatic saws that feed, clamp, cut and count by themselves — roller feeders on the compact NT-A 12, a hydraulic shuttle vise on the single-column NT-A 12 SC and the twin-mitre NT-A 13, and CNC servo feeding with stepless blade speed on the NT-A 14 to NT-A 24. Value-line pricing with CSA-approved panels, a 1-year warranty and support from Mississauga.",
         points=["Roller feed, shuttle vise or CNC servo feeding", "Piece counters and PLC job lists", "Round capacities from Ø11-3/4″ (300 mm) to Ø23-5/8″ (600 mm)"],
@@ -144,8 +144,8 @@ NF = {
             VOLT_FAQ,
         ]),
     "double-column": dict(
-        title="Value Line Double Column Band Saws, 11″ to 23-5/8″ (NT-DC) | NovoTech Canada",
-        meta="NovoTech value-line double-column band saws in Canada: NT-DC 11 series (manual feed, mitre, automatic and variable speed), gear-driven NT-DC 14 / 16 and NT-DC 20 / 24 gantry saws for plate and bundles. Specs in inches and mm.",
+        title="NovoTech Double Column Band Saws — NT-DC Bandsaws | Canada",
+        meta="NovoTech NT-DC double column metal cutting band saws (twin-column bandsaws) for sale in Canada: NT-DC 11 series, gear-driven NT-DC 14 / 16 and NT-DC 20 / 24 gantry saws for plate and bundles. Specs in inches and mm.",
         h1="NovoTech double-column band saws",
         intro="Twin-column saws at value-line prices: the bow travels vertically on two columns, so the cut stays square in solid bar, blocks and bundles. The NT-DC 11 series offers manual feed, a 45° mitre version and two automatics; the NT-DC 14 and 16 add gear drive and hydraulic blade tension; the NT-DC 20 and 24 are gantry saws for plate up to 47-1/4″ wide.",
         points=["Twin-column guidance for square cuts in heavy stock", "Hydraulic down-feed and clamping on every model; automatic feed on the NT-DC 11 A / AV", "Round capacities from Ø11″ (280 mm) to Ø23-5/8″ (600 mm)"],
@@ -157,6 +157,13 @@ NF = {
             {"q": "Can a value-line double-column saw cut miters?", "a": "The NT-DC 11 T swivels for cuts at 30° and 45° (Ø10-1/4″ and Ø6-3/4″). The other NT-DC models are straight-cut saws."},
             VOLT_FAQ,
         ]),
+}
+
+KW = {
+    "manual": " Searching for a manual metal bandsaw, a gravity-feed horizontal band saw for metal or a small band saw machine for the shop? These are the ones NovoTech stocks and supports.",
+    "semi-automatic": " If you are looking for a semi-automatic metal bandsaw, a hydraulic horizontal band saw for metal or an industrial band saw machine with a hydraulic vise, this is the page.",
+    "automatic": " For buyers searching for an automatic metal cutting bandsaw, a CNC band saw machine or an industrial horizontal band saw for metal with automatic feeding, these are the models NovoTech sells and supports in Canada.",
+    "double-column": " Known as double column, twin-column or dual column metal bandsaws, these horizontal band saw machines are the industrial choice for heavy solids, bundles and plate."
 }
 
 ORIGIN = {
@@ -176,6 +183,7 @@ BRAND = {
 
 def page(brand, cat, spec):
     b = BRAND[brand]
+    spec = dict(spec, intro=spec["intro"] + KW[cat])
     slug = f"{b['slug']}-{cat}-band-saws"
     other = "novotech" if brand == "bekamak" else "bekamak"
     p = {
@@ -227,6 +235,9 @@ def main():
     h = json.load(open(hp, encoding="utf-8"))
     h["lines"] = lines
     h["subpages"] = [sp for ln in lines for sp in ln["subpages"]]
+    h["title"] = "Metal Cutting Band Saws & Bandsaws for Sale in Canada | NovoTech"
+    h["meta_description"] = "Horizontal metal cutting band saws (bandsaws) for sale in Canada: manual, semi-automatic, automatic and double column band saw machines from Ø9″ to 59″ — Bekamak premium and NovoTech value line, specs in inches and mm, buying guide."
+    h["intro"] = "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga."
     h["hero_image"] = "bk-hero-auto-350ga"
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-h10f-1-cut"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)',
