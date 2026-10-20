@@ -38,7 +38,6 @@ MAX_W = 1400          # px, photos
 JPEG_Q = 85
 
 GROUPS = [
-    ("manual", "Manual band saws"),
     ("semi-automatic", "Semi-automatic band saws"),
     ("automatic", "Automatic band saws"),
     ("double-column", "Double column band saws"),
@@ -57,7 +56,7 @@ INCLUDED_ITEMS = [
     "Installation and training available",
 ]
 VOLTAGE_LINE = "Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase."
-COVER_PHOTOS = ["nt-a13-1", "nt-h13-1", "nt-m10t-1", "nt-dc24-1"]   # wide, tall, square-ish, wide
+COVER_PHOTOS = ["nt-a13-1", "nt-h13-1", "nt-h10f-1", "nt-dc24-1"]   # wide, tall, square-ish, wide
 
 PDF_TITLE = "NovoTech value line band saws — Catalogue 2026"
 PDF_AUTHOR = "NovoTech Machine Tools Inc."
@@ -194,7 +193,7 @@ def main():
     order = [k for k in data["order"] if fams_all[k].get("brand") == "novotech"]
     fams = [fams_all[k] for k in order]
     if len(fams) != 14:
-        print(f"warning: expected 14 value-line families, found {len(fams)}", file=sys.stderr)
+        print(f"warning: expected 13 value-line families, found {len(fams)}", file=sys.stderr)
 
     # page numbering: 1 cover, 2 range, 3.. products, last = services
     first_product_page = 3
@@ -394,7 +393,7 @@ def set_metadata(path):
     with pikepdf.open(path, allow_overwriting_input=True) as pdf:
         pdf.docinfo["/Title"] = PDF_TITLE
         pdf.docinfo["/Author"] = PDF_AUTHOR
-        pdf.docinfo["/Subject"] = "NovoTech value line metal cutting band saws — manual, semi-automatic, automatic and double column models, imperial specifications"
+        pdf.docinfo["/Subject"] = "NovoTech value line metal cutting band saws — semi-automatic, automatic and double column models, imperial specifications"
         pdf.docinfo["/Creator"] = PDF_AUTHOR
         pdf.docinfo["/Producer"] = PDF_AUTHOR
         pdf.docinfo["/Keywords"] = "NovoTech, value line, band saw, bandsaw, metal cutting, Canada"

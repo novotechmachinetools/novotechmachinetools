@@ -4,7 +4,6 @@
 Technical data transcribed from the manufacturer's catalogue (metric, as printed),
 cross-checked against NovoTech's imperial sawing catalogue. Model codes are NovoTech's own:
 NT-<series> <round capacity in inches at 0°> <variant>:
-    M  = manual pivot saw (gravity / hydraulic-damped descent, manual vise)
     H  = hydraulic semi-automatic (hydraulic descent + hydraulic vise, auto cycle)
     A  = automatic (NC / PLC feeding and cutting)
     DC = double column
@@ -37,57 +36,6 @@ GROSS = "Gross weight"
 
 FAMILIES = [
     # ================================================================ MANUAL
-    dict(id="novotech-nt-m10", group="manual",
-         name="NT-M 10 series manual pivot band saws, 10″",
-         short="NT-M 10 manual saws",
-         models_label="NT-M 10 · NT-M 10 S · NT-M 10 D · NT-M 10 T",
-         summary="Four 10-inch gravity-feed pivot saws for the maintenance shop and light fabrication. The bow descends on a hydraulic damper with adjustable feed, a four-speed belt drive matches blade speed to the material, and every model ships with a coolant system and a repeat-cut stop rod. Pick the mitre arrangement you need: mitre vise (NT-M 10), swivel bow 45°–90° (NT-M 10 S), a larger frame with hydraulic down-feed control (NT-M 10 D) or a twin-mitre bow that swings 60° both ways (NT-M 10 T).",
-         features=[
-             "Descent controlled by a hydraulic cylinder — adjustable, repeatable feed pressure",
-             "Four blade speeds on a belt drive (up to 427 ft/min on the NT-M 10 D / 10 T)",
-             "1-1/8″ × 0.035″ bi-metal blade, coolant pump and stop rod included",
-             "NT-M 10 S: bow swivels 45°–90° for mitre cuts without moving the stock",
-             "NT-M 10 T: bow swivels both ways — 45° left and right, 60° right",
-             "2 HP (1.5 kW) three-phase motor; 600 V with CSA-approved panel",
-         ],
-         optional=["Roller stand with length stop", "Extra blades"],
-         images=["nt-m10-1", "nt-m10s-1", "nt-m10d-1", "nt-m10t-1"],
-         videos=[],
-         models=[
-             model("NT-M 10", {"0": cap(254, [457, 127]), "+45": cap(150, [190, 150])},
-                   1.5, "35/60/88/115", [3280, 27, 0.9], 310,
-                   other={"Mitre cutting": "Mitre vise, 45°", "Drive": "V-belt, 4 speeds", PACK: "1820 × 830 × 1160 mm", GROSS: "392 kg"},
-                   notes="Angle cuts via the mitre vise (the frame does not swivel)."),
-             model("NT-M 10 S", {"0": cap(254, [406, 160]), "+45": cap(170, [190, 160])},
-                   1.5, "35/60/88/115", [3215, 27, 0.9], 340,
-                   other={"Mitre cutting": "Swivel bow, 45°–90°", "Drive": "V-belt, 4 speeds", PACK: "1820 × 780 × 1340 mm", GROSS: "440 kg"}),
-             model("NT-M 10 D", {"0": cap(260, [460, 125], 260), "+45": cap(230, [230, 220], 220)},
-                   1.5, "28/62/93/130", [3660, 27, 0.9], 320,
-                   other={"Mitre cutting": "Swivel bow, 45°", "Drive": "Belt, 4 speeds", PACK: "2130 × 870 × 1250 mm", GROSS: "440 kg"}),
-             model("NT-M 10 T", {"0": cap(260, [430, 260]), "+45": cap(260, [300, 200]), "+60": cap(155, [125, 125]), "-45": cap(260, [260, 130])},
-                   1.5, "28/62/93/130", [3660, 27, 0.9], 466,
-                   other={"Mitre cutting": "Swivel bow, 45° left / 45° and 60° right", "Drive": "Belt, 4 speeds", PACK: "2120 × 1080 × 1220 mm", GROSS: "520 kg"}),
-         ]),
-    dict(id="novotech-nt-m16", group="manual",
-         name="NT-M 16 manual band saw, 15-3/4″",
-         short="NT-M 16",
-         models_label="NT-M 16",
-         summary="A big 15¾-inch pivot saw with a gear-driven two-speed motor and sintered-carbide blade guides, for shops that cut heavy sections but do not need an automatic cycle. The bow swivels for mitre cuts up to 60°, the sliding vise has a quick clamp for fast workpiece changes, and the heavy welded base keeps the cut square on 21-3/4″ × 14-1/4″ stock.",
-         features=[
-             "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; mitre cuts up to 60°",
-             "Gear-driven two-speed motor, 3/3.8 HP (2.2/2.8 kW) — no belts to tension",
-             "Blade guides with sintered-carbide inserts for straight cuts in series production",
-             "Sliding vise with quick clamp; powerful coolant pump",
-             "1-3/8″ × 0.043″ × 173-1/2″ blade",
-         ],
-         optional=["Roller stand with length stop", "Hydraulic version — see NT-H 16"],
-         images=["nt-m16-1"],
-         videos=[],
-         models=[
-             model("NT-M 16", {"0": cap(400, [550, 360]), "+45": cap(340, [400, 340]), "+60": cap(150, [250, 200])},
-                   "2.2-2.8", "48/70", [4405, 34, 1.1], 580,
-                   other={"Drive": "Gear, 2 speeds", PACK: "2300 × 830 × 1580 mm", GROSS: "710 kg"}),
-         ]),
     # ================================================================ SEMI-AUTOMATIC
     dict(id="novotech-nt-h10f", group="semi-automatic",
          name="NT-H 10 F full-hydraulic twin-mitre band saw, 10″",
@@ -164,7 +112,7 @@ FAMILIES = [
          name="NT-H 16 hydraulic band saw, 15-3/4″",
          short="NT-H 16",
          models_label="NT-H 16",
-         summary="The hydraulic version of the NT-M 16: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 21-3/4″ × 14-1/4″.",
+         summary="A 15-3/4-inch pivot saw with hydraulic descent and return: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 21-3/4″ × 14-1/4″.",
          features=[
              "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; mitre cuts up to 60°",
              "Automatic bow descent and return on a hydraulic cylinder",

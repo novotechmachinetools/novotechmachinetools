@@ -11,7 +11,7 @@ PAGES = os.path.join(ROOT, "content", "pages")
 FAM = json.load(open(os.path.join(ROOT, "content", "families", "bandsaw.json"), encoding="utf-8"))
 
 PDF_BK = {"file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "label": "Bekamak band saw catalogue", "size": "PDF · 7.5 MB · imperial units"}
-PDF_NF = {"file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf", "label": "NovoTech value line band saw catalogue", "size": "PDF · 5.1 MB · imperial units"}
+PDF_NF = {"file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf", "label": "NovoTech value line band saw catalogue", "size": "PDF · 5.2 MB · imperial units"}
 PLAYLIST = "https://www.youtube.com/playlist?list=PLgtouQi-TePvLZjD0XkwpvL2pX1sAUuFG"
 GUIDE = {"href": "band-saw.html#buying-guide", "label": "Band saw buying guide: sizes, feeds, blades and troubleshooting"}
 CRUMB_BASE = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href": "products.html"}, {"label": "Metal cutting band saws", "href": "band-saw.html"}]
@@ -100,20 +100,6 @@ BK = {
 }
 
 NF = {
-    "manual": dict(
-        title="NovoTech Manual Band Saws — NT-M Bandsaws, 10″–16″ | Canada",
-        meta="NovoTech NT-M manual metal cutting band saws (gravity-feed bandsaws) for sale in Canada: NT-M 10 series with mitre vise, swivel bow, hydraulic down-feed or twin-mitre bow, and the 15-3/4″ NT-M 16. Value line, CSA panels, support in Mississauga.",
-        h1="NovoTech manual band saws",
-        intro="NovoTech's own value line of gravity-feed pivot saws: the bow descends on a hydraulic damper with adjustable feed pressure, a belt or gear drive gives several blade speeds, and every model ships with a coolant pump and a stop rod. Four 10-inch models cover mitre-vise, swivel-bow, hydraulic-damped and twin-mitre cutting; the NT-M 16 handles 15-3/4″ rounds with a gear drive and carbide guides.",
-        points=["Hydraulic-damped descent with adjustable feed pressure", "Swivel and twin-mitre bows for angle cuts to 60°", "Round capacities from Ø10″ (254 mm) to Ø15-3/4″ (400 mm)"],
-        hero="nt-m16-1-cut", minis=["nt-m10t-1-cut"],
-        lead="Ten- to sixteen-inch pivot saws with hydraulic descent control, belt or gear drive and mitre bows at a lower price — specified, stocked and supported by NovoTech.",
-        faq=[
-            {"q": "What is the difference between the NT-M 10, 10 S, 10 D and 10 T?", "a": "All four are 10-inch gravity-feed saws with the same 2 HP motor. The NT-M 10 cuts angles with a mitre vise, the NT-M 10 S has a bow that swivels 45°–90°, the NT-M 10 D has a larger frame (18″ wide stock) with hydraulic down-feed control, and the NT-M 10 T swivels both ways — 45° left and right, 60° right."},
-            {"q": "How does the value line differ from the Bekamak premium line?", "a": "Value-line saws are proven designs built to NovoTech's specification at a lower price; Bekamak saws are built in Turkey with European components and heavier construction. Both come with a CSA-approved electrical panel, a 1-year warranty and spare parts and technical support from Mississauga. Compare the Bekamak manual band saws."},
-            {"q": "When should I move up to a hydraulic (semi-automatic) saw?", "a": "When you cut more than a few dozen pieces a day, or when the operator is tied up holding the bow. The NT-H series clamps hydraulically, cuts at a preset feed and lifts the bow by itself — see the value line semi-automatic band saws."},
-            VOLT_FAQ,
-        ]),
     "semi-automatic": dict(
         title="NovoTech Semi-Automatic Band Saws — NT-H Hydraulic Bandsaws | Canada",
         meta="NovoTech NT-H semi-automatic metal cutting band saws (hydraulic bandsaws) for sale in Canada: the full-hydraulic NT-H 10 F, NT-H 10 S / 10 T, NT-H 13 twin-mitre, NT-H 16, NT-H 12 SC single-column and the 18″ NT-H 18. Specs in inches and mm.",
@@ -197,8 +183,8 @@ def page(brand, cat, spec):
         "line_key": b["key"],
         "origin_feature": ORIGIN[brand],
         "groups": [{"id": f"{b['slug']}-{cat}", "brand": b["key"], "title": f"{b['name']} {CAT_TITLE[cat].lower()}", "lead": spec["lead"], "families": fams(brand, cat)}],
-        "alt_line": {"href": f"{BRAND[other]['slug']}-{cat}-band-saws.html", "label": f"{BRAND[other]['name']} {CAT_TITLE[cat].lower()}",
-                     "line": BRAND[other]["line"], "brand": other},
+        "alt_line": ({"href": f"{BRAND[other]['slug']}-{cat}-band-saws.html", "label": f"{BRAND[other]['name']} {CAT_TITLE[cat].lower()}",
+                      "line": BRAND[other]["line"], "brand": other} if cat in (BK if other == "bekamak" else NF) else None),
         "faq_title": f"Questions we get asked about {b['name']} {CAT_TITLE[cat].lower()}",
         "faq": spec["faq"],
         "related_article": GUIDE,
@@ -222,6 +208,8 @@ def main():
         b = BRAND[brand]
         subpages = []
         for cat in CATS:
+            if cat not in specs:
+                continue
             p = page(brand, cat, specs[cat])
             json.dump(p, open(os.path.join(PAGES, p["slug"] + ".json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
             subpages.append({"slug": p["slug"], "title": f"{b['page_label']} {CAT_TITLE[cat].lower()}", "nav_label": CAT_SHORT[cat], "cat": cat, "line": b["line"],
@@ -241,8 +229,8 @@ def main():
     h["hero_image"] = "bk-hero-auto-350ga"
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-h10f-1-cut"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)',
-                        '<a href="#value-line">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm)',
-                        '<a href="#bekamak-manual-band-saws-overview">Manual</a>, <a href="#bekamak-semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#bekamak-automatic-band-saws-overview">automatic</a> and <a href="#bekamak-double-column-band-saws-overview">double-column</a> saws in each line',
+                        '<a href="#value-line">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column',
+                        '<a href="#bekamak-manual-band-saws-overview">Manual</a> (Bekamak), <a href="#bekamak-semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#bekamak-automatic-band-saws-overview">automatic</a> and <a href="#bekamak-double-column-band-saws-overview">double-column</a> saws',
                         '<a href="#buying-guide">Band saw buying guide</a>, blade selection and troubleshooting chart on this page']
     h["catalogue_pdfs"] = [PDF_BK, PDF_NF]
     h["range_lead"] = "Capacity at 0° for every model, one table per line. Each row links to the full specification table with miter capacities, blade sizes, motors and dimensions."

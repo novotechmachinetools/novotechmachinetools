@@ -10,8 +10,8 @@
  "intro": "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga.",
  "hero_points": [
   "<a href=\"#premium-line\">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)",
-  "<a href=\"#value-line\">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm)",
-  "<a href=\"#bekamak-manual-band-saws-overview\">Manual</a>, <a href=\"#bekamak-semi-automatic-band-saws-overview\">semi-automatic</a>, <a href=\"#bekamak-automatic-band-saws-overview\">automatic</a> and <a href=\"#bekamak-double-column-band-saws-overview\">double-column</a> saws in each line",
+  "<a href=\"#value-line\">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column",
+  "<a href=\"#bekamak-manual-band-saws-overview\">Manual</a> (Bekamak), <a href=\"#bekamak-semi-automatic-band-saws-overview\">semi-automatic</a>, <a href=\"#bekamak-automatic-band-saws-overview\">automatic</a> and <a href=\"#bekamak-double-column-band-saws-overview\">double-column</a> saws",
   "<a href=\"#buying-guide\">Band saw buying guide</a>, blade selection and troubleshooting chart on this page"
  ],
  "hero_image": "bk-hero-auto-350ga",
@@ -42,7 +42,7 @@
   {
    "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
    "label": "NovoTech value line band saw catalogue",
-   "size": "PDF · 5.1 MB · imperial units"
+   "size": "PDF · 5.2 MB · imperial units"
   }
  ],
  "subpages": [
@@ -105,19 +105,6 @@
     "bekamak-bmso-cgs",
     "bekamak-bmso-xs",
     "bekamak-bmsy-heavy"
-   ]
-  },
-  {
-   "slug": "novotech-manual-band-saws",
-   "title": "NovoTech manual band saws",
-   "nav_label": "Manual",
-   "cat": "manual",
-   "line": "value",
-   "image": "nt-m16-1-cut",
-   "blurb": "Ten- to sixteen-inch pivot saws with hydraulic descent control, belt or gear drive and mitre bows at a lower price — specified, stocked and supported by NovoTech.",
-   "families": [
-    "novotech-nt-m10",
-    "novotech-nt-m16"
    ]
   },
   {
@@ -308,23 +295,10 @@
    "pdf": {
     "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
     "label": "NovoTech value line band saw catalogue",
-    "size": "PDF · 5.1 MB · imperial units"
+    "size": "PDF · 5.2 MB · imperial units"
    },
    "blurb": "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, Ontario parts and support as every machine we sell.",
    "subpages": [
-    {
-     "slug": "novotech-manual-band-saws",
-     "title": "NovoTech manual band saws",
-     "nav_label": "Manual",
-     "cat": "manual",
-     "line": "value",
-     "image": "nt-m16-1-cut",
-     "blurb": "Ten- to sixteen-inch pivot saws with hydraulic descent control, belt or gear drive and mitre bows at a lower price — specified, stocked and supported by NovoTech.",
-     "families": [
-      "novotech-nt-m10",
-      "novotech-nt-m16"
-     ]
-    },
     {
      "slug": "novotech-semi-automatic-band-saws",
      "title": "NovoTech semi-automatic band saws",
