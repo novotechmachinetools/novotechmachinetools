@@ -11,7 +11,7 @@ PAGES = os.path.join(ROOT, "content", "pages")
 FAM = json.load(open(os.path.join(ROOT, "content", "families", "bandsaw.json"), encoding="utf-8"))
 
 PDF_BK = {"file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "label": "Bekamak band saw catalogue", "size": "PDF · 7.5 MB · imperial units"}
-PDF_NF = {"file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf", "label": "Value line band saw catalogue", "size": "PDF · 5.1 MB · imperial units"}
+PDF_NF = {"file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf", "label": "NovoTech value line band saw catalogue", "size": "PDF · 5.1 MB · imperial units"}
 PLAYLIST = "https://www.youtube.com/playlist?list=PLgtouQi-TePvLZjD0XkwpvL2pX1sAUuFG"
 GUIDE = {"href": "band-saw.html#buying-guide", "label": "Band saw buying guide: sizes, feeds, blades and troubleshooting"}
 CRUMB_BASE = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href": "products.html"}, {"label": "Metal cutting band saws", "href": "band-saw.html"}]

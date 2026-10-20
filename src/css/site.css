@@ -518,3 +518,8 @@ body.ai-locked { overflow: hidden; }
 .to-top:hover, .to-top:focus-visible { background: var(--orange-deep); color: #fff; }
 @media (max-width: 600px) { .to-top { right: 12px; bottom: 12px; width: 42px; height: 42px; } }
 @media print { .to-top { display: none; } }
+
+/* two catalogue downloads: stacked under the quote button, same width */
+.cta-stack { flex-direction: column; align-items: flex-start; gap: 10px; }
+.cta-downloads { display: grid; gap: 8px; }
+.cta-downloads .btn { justify-content: space-between; width: 100%; }

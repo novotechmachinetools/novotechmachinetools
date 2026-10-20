@@ -16,10 +16,12 @@
       <ul class="hero-points">
         {% for p in page.hero_points %}<li>{{ p|safe }}</li>{% endfor %}
       </ul>
-      <div class="cta-row">
+      <div class="cta-row{{ ' cta-stack' if (page.catalogue_pdfs or [])|length > 1 else '' }}">
         <a class="btn btn-primary" href="#reques-a-quote">Request a quote</a>
         {% if page.catalogue_pdf %}<a class="btn btn-ghost" href="{{ page.catalogue_pdf.file }}" download>{{ page.catalogue_pdf.label }} <small>({{ page.catalogue_pdf.size }})</small></a>{% endif %}
+        {% if (page.catalogue_pdfs or [])|length > 1 %}<div class="cta-downloads">{% endif %}
         {% for b in page.catalogue_pdfs or [] %}<a class="btn btn-ghost" href="{{ b.file }}" download>{{ b.label }} <small>({{ b.size }})</small></a>{% endfor %}
+        {% if (page.catalogue_pdfs or [])|length > 1 %}</div>{% endif %}
       </div>
       {% if page.brand %}<p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
       {% elif page.hero_brand_line %}<p class="hero-brand">{{ page.hero_brand_line }}</p>{% endif %}
