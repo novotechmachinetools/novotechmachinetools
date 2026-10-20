@@ -287,7 +287,19 @@ def img(name):
 
 # ---------------------------------------------------------------- jinja
 env = Environment(loader=FileSystemLoader(os.path.join(ROOT, "templates")), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
-env.globals.update(site=site, img=img, staging=STAGING, year=datetime.date.today().year, dia=dia, inch=inch, bar_sizes=bar_sizes)
+def nav_contains(item, slug):
+    """True when the page `slug` is this nav item or anywhere in its sub-tree."""
+    if (item.get("href") or "").split("#")[0] == slug + ".html":
+        return True
+    return any(nav_contains(c, slug) for c in item.get("children", []))
+
+
+def nav_is(item, slug):
+    return (item.get("href") or "").split("#")[0] == slug + ".html" and "#" not in (item.get("href") or "")
+
+
+env.globals.update(site=site, img=img, staging=STAGING, year=datetime.date.today().year, dia=dia, inch=inch, bar_sizes=bar_sizes,
+                   nav_contains=nav_contains, nav_is=nav_is)
 
 
 def asset_hash(path):

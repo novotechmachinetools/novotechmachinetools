@@ -48,12 +48,30 @@
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
       <ul id="nav-menu" class="nav-menu">
         {% for item in site.nav %}
-        <li class="{{ 'has-children' if item.children else '' }}{{ ' current' if page.slug + '.html' == item.href or (item.children and page.slug + '.html' in item.children|map(attribute='href')|list) else '' }}">
+        <li class="{{ 'has-children' if item.children else '' }}{{ ' current' if nav_contains(item, page.slug) else '' }}">
           <a href="{{ item.href }}">{{ item.label }}</a>
           {% if item.children %}
           <button type="button" class="sub-toggle" aria-expanded="false" aria-label="Show all products">▾</button>
           <ul class="sub-menu">
-            {% for c in item.children %}<li><a href="{{ c.href }}"{% if c.href == page.slug + '.html' %} aria-current="page"{% endif %}>{{ c.label }}</a></li>{% endfor %}
+            {% for c in item.children %}
+            <li class="{{ 'has-tree' if c.children else '' }}{{ ' open' if c.children and nav_contains(c, page.slug) else '' }}">
+              <a href="{{ c.href }}"{% if nav_is(c, page.slug) %} aria-current="page"{% endif %}>{{ c.label }}</a>
+              {% if c.children %}
+              <button type="button" class="tree-toggle" aria-expanded="{{ 'true' if nav_contains(c, page.slug) else 'false' }}" aria-label="Show {{ c.label }} pages">▾</button>
+              <ul class="tree">
+                {% for t in c.children %}
+                {% if t.children %}
+                <li class="tree-group"><a class="tree-head" href="{{ t.href }}">{{ t.label }}</a>
+                  <ul>{% for u in t.children %}<li><a href="{{ u.href }}"{% if nav_is(u, page.slug) %} aria-current="page"{% endif %}>{{ u.label }}</a></li>{% endfor %}</ul>
+                </li>
+                {% else %}
+                <li><a href="{{ t.href }}"{% if nav_is(t, page.slug) %} aria-current="page"{% endif %}>{{ t.label }}</a></li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
+            {% endfor %}
           </ul>
           {% endif %}
         </li>

@@ -41,8 +41,9 @@
       var open = menu.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
-    menu.querySelectorAll(".sub-toggle").forEach(function (b) {
-      b.addEventListener("click", function () {
+    menu.querySelectorAll(".sub-toggle, .tree-toggle").forEach(function (b) {
+      b.addEventListener("click", function (e) {
+        e.stopPropagation();
         var li = b.closest("li");
         var open = li.classList.toggle("open");
         b.setAttribute("aria-expanded", open ? "true" : "false");

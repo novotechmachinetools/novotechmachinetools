@@ -50,7 +50,21 @@
       "children": [
         {
           "label": "Rebar benders & cutters",
-          "href": "rebar-bender-and-cutter.html"
+          "href": "rebar-bender-and-cutter.html",
+          "children": [
+            {
+              "label": "Rebar benders",
+              "href": "rebar-bending-machines.html"
+            },
+            {
+              "label": "Rebar cutters",
+              "href": "rebar-cutter.html"
+            },
+            {
+              "label": "Automatic processing lines",
+              "href": "automatic-rebar-processing-lines.html"
+            }
+          ]
         },
         {
           "label": "Press brakes",
@@ -78,7 +92,53 @@
         },
         {
           "label": "Band saws",
-          "href": "band-saw.html"
+          "href": "band-saw.html",
+          "children": [
+            {
+              "label": "Bekamak · premium line",
+              "href": "band-saw.html#premium-line",
+              "children": [
+                {
+                  "label": "Manual",
+                  "href": "bekamak-manual-band-saws.html"
+                },
+                {
+                  "label": "Semi-automatic",
+                  "href": "bekamak-semi-automatic-band-saws.html"
+                },
+                {
+                  "label": "Fully automatic",
+                  "href": "bekamak-automatic-band-saws.html"
+                },
+                {
+                  "label": "Double column",
+                  "href": "bekamak-double-column-band-saws.html"
+                }
+              ]
+            },
+            {
+              "label": "NovoFab · value line",
+              "href": "band-saw.html#value-line",
+              "children": [
+                {
+                  "label": "Manual",
+                  "href": "novofab-manual-band-saws.html"
+                },
+                {
+                  "label": "Semi-automatic",
+                  "href": "novofab-semi-automatic-band-saws.html"
+                },
+                {
+                  "label": "Fully automatic",
+                  "href": "novofab-automatic-band-saws.html"
+                },
+                {
+                  "label": "Double column",
+                  "href": "novofab-double-column-band-saws.html"
+                }
+              ]
+            }
+          ]
         },
         {
           "label": "Cold saws",
