@@ -43,6 +43,9 @@ are always the full-size lightbox files, never the `_main` thumbnails.
 
 isitan.com/en product pages carry one 1366 px photo per model on a white background (crawled by
 `/home/claude/isitan/crawl.py` → `img/`), and the NovoTech İşitan catalogue holds the detail photos and
-some larger renders with alpha masks (`cut/`).  `tools/isitan_data.py` copies the chosen files into
-`tools/src-images/isitan/` (keys `is-…`) and writes the families and pages; the pipeline cuts the white
-photos out automatically.
+some larger renders with alpha masks (`cut/`).  `tools/isitan_data.py` runs one module per catalogue
+section (`tools/isitan_plate_rolls.py`, `isitan_beading.py`, `isitan_circle.py`, `isitan_pressbrake.py`,
+`isitan_tube_benders.py`, `isitan_pipe_end_saws.py`, all built on `tools/isitan_lib.py`): each module
+lists its photos (keys `is-…`, copied into `tools/src-images/isitan/`) and writes its families and pages;
+the pipeline cuts the white photos out automatically.  Social-share images (`tools/make_social.py`) use the
+same cut-out pipeline on the hero, so a white-background hero never appears as a white box on the orange band.

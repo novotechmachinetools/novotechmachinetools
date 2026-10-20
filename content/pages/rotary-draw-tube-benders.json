@@ -1,0 +1,126 @@
+{
+ "slug": "rotary-draw-tube-benders",
+ "template": "category.html",
+ "family_set": "tube-benders",
+ "title": "Rotary Draw Tube Benders — Compact Pipe Benders for Tube, Bar & Box Section | NovoTech Canada",
+ "artifact_title": "Rotary draw tube benders",
+ "meta_description": "İşitan BK rotary draw tube benders in Canada: compact non-mandrel pipe benders for 1/8″ to 2-1/2″ NPS pipe, Ø3″ steel tube, solid bar, flat bar and box section, touchscreen NC or one-touch control, one tooling set included. Specs in inches, CSA panels, parts in Mississauga, ON.",
+ "h1": "Rotary draw tube benders",
+ "intro": "Compact rotary draw benders without a mandrel — the pipe bender for handrail, gate, fence, furniture and repair shops. Four models from the 1 HP BK-42 for 1-1/4″ pipe to the BK 030 (76) for Ø3″ × 11 ga steel tube, bending gas pipe, steel and stainless tube, copper, solid round and square bar, flat bar both ways and box section with one included tooling set. Touchscreen NC (PLC) programming on the BK-42 and BK 030, one-touch control with two speeds on the BK-050 and the hydraulic BK-H 060 — all on rollers with a foot pedal and a CSA-approved panel.",
+ "hero_points": [
+  "1/8″ to 2-1/2″ NPS pipe · Ø3″ × 11 ga steel tube · CLR to 7.9″",
+  "Tube, pipe, solid bar, flat bar and box section — one tooling set included",
+  "Touchscreen NC (PLC) or one-touch control · foot pedal · on rollers"
+ ],
+ "hero_image": "is-bk-050",
+ "hero_image_secondary": [
+  "is-bk-42",
+  "is-bk-030"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Pipe & tube benders",
+   "href": "pipe-benders.html"
+  },
+  {
+   "label": "Rotary draw tube benders"
+  }
+ ],
+ "hero_brand_line": "İşitan machines are made in Turkey by İşitan Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "bk-group",
+   "title": "BK rotary draw benders",
+   "lead": "Four compact non-mandrel benders from 1 to 3 HP.",
+   "families": [
+    "isitan-bk"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Rotary draw or mandrel bender?",
+   "a": "A rotary draw bender clamps the tube to a bend die and draws it around; without an internal mandrel it suits thicker walls and radii of about 2× the diameter and up — handrail, gate, fence and furniture work. Thin-wall tube to a tight radius needs the mandrel support of an SFB bender. The BK capacity table lists the maximum tube, bar and box section for each model."
+  },
+  {
+   "q": "Which BK for stainless handrail?",
+   "a": "The BK-050 bends Ø2-3/8″ × 14 ga 304/316 stainless tube and the BK-H 060 Ø2-3/8″ × 12 ga — the common 1-1/2″ and 2″ handrail sizes with room to spare. The hydraulic BK-H 060 draws from one direction, which makes sequential bends on long rails easier."
+  },
+  {
+   "q": "Does it come with tooling?",
+   "a": "One set — bend die, clamp die and counter die — in the size you request is included. Additional sets for other diameters, square tube, flat bar and box section are quoted with the machine; tell us material, size, wall, CLR and angle."
+  },
+  {
+   "q": "What voltage do the benders run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on the BK-42 and other models with a small enough motor."
+  }
+ ],
+ "faq_title": "Questions we get asked about rotary draw tube benders",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+  "label": "Download the İşitan machinery catalogue",
+  "size": "PDF · 29 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in Turkey by İşitan",
+  "text": "İşitan has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."
+ },
+ "section_label": "Pipe & tube benders",
+ "related_pages": [
+  {
+   "href": "cnc-tube-benders.html",
+   "label": "CNC tube benders"
+  },
+  {
+   "href": "nc-tube-benders.html",
+   "label": "NC tube benders"
+  },
+  {
+   "href": "pipe-benders.html",
+   "label": "All pipe & tube benders"
+  },
+  {
+   "href": "tube-notchers-and-end-formers.html",
+   "label": "Tube notchers & end formers"
+  },
+  {
+   "href": "circular-cold-saws.html",
+   "label": "Circular cold saws"
+  }
+ ],
+ "related_title": "More sheet-metal machinery from NovoTech",
+ "section": {
+  "label": "Pipe & tube benders",
+  "hub": {
+   "href": "pipe-benders.html",
+   "label": "All pipe & tube benders",
+   "image": "is-sfb-38-cnc-a5",
+   "blurb": "Every İşitan tube and pipe bender NovoTech supplies, with the capacity table for the whole range."
+  },
+  "pages": [
+   {
+    "href": "cnc-tube-benders.html",
+    "label": "CNC benders",
+    "current": false
+   },
+   {
+    "href": "nc-tube-benders.html",
+    "label": "NC benders",
+    "current": false
+   },
+   {
+    "href": "rotary-draw-tube-benders.html",
+    "label": "Rotary draw",
+    "current": true
+   }
+  ]
+ }
+}

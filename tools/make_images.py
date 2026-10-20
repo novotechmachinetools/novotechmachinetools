@@ -21,7 +21,7 @@ except ImportError:
     pass
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from cutout2 import auto_cutout, is_white_background  # noqa: E402
+from cutout2 import auto_cutout, cutout, is_white_background  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP = json.load(open(os.path.join(ROOT, "tools", "image_map.json")))
@@ -89,9 +89,13 @@ for name, spec in MAP.items():
         if want is not None:
             white = bool(want)
         if white:
-            im = trim_alpha(auto_cutout(im, level))
+            if spec.get("cut_params"):          # hand-set thresholds for a photo the auto pass gets wrong (floor glow, cream covers)
+                im = trim_alpha(cutout(im, **spec["cut_params"]))
+                cut = "params"
+            else:
+                im = trim_alpha(auto_cutout(im, level))
+                cut = "auto"
             has_alpha = True
-            cut = "auto"
         elif spec.get("trim_white", True):
             im = trim_white(im)
     outdir = os.path.join(ROOT, "src", "img", section)

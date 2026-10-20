@@ -68,7 +68,17 @@
         },
         {
           "label": "Press brakes",
-          "href": "press-brake.html"
+          "href": "press-brake.html",
+          "children": [
+            {
+              "label": "Dener CNC press brakes",
+              "href": "press-brake.html"
+            },
+            {
+              "label": "Compact hydraulic press brakes",
+              "href": "compact-hydraulic-press-brakes.html"
+            }
+          ]
         },
         {
           "label": "Laser cutters",
@@ -156,7 +166,17 @@
         },
         {
           "label": "Cold saws",
-          "href": "cold-saw-carbide-saw-cutting.html"
+          "href": "cold-saw-carbide-saw-cutting.html",
+          "children": [
+            {
+              "label": "Automatic cold saws",
+              "href": "cold-saw-carbide-saw-cutting.html"
+            },
+            {
+              "label": "Circular cold saws",
+              "href": "circular-cold-saws.html"
+            }
+          ]
         },
         {
           "label": "Roofing & pan brakes",
@@ -167,8 +187,22 @@
           "href": "horizontal-press-brake.html"
         },
         {
-          "label": "Pipe benders",
-          "href": "pipe-bender.html"
+          "label": "Pipe & tube benders",
+          "href": "pipe-benders.html",
+          "children": [
+            {
+              "label": "CNC tube benders",
+              "href": "cnc-tube-benders.html"
+            },
+            {
+              "label": "NC tube benders",
+              "href": "nc-tube-benders.html"
+            },
+            {
+              "label": "Rotary draw tube benders",
+              "href": "rotary-draw-tube-benders.html"
+            }
+          ]
         },
         {
           "label": "Hydraulic presses",
@@ -179,12 +213,12 @@
           "href": "plate-beveler.html"
         },
         {
-          "label": "Circle shear & flanging",
-          "href": "circular-cutting-shear-tank-dish-head-flanging.html"
+          "label": "Circle cutters & lock seamers",
+          "href": "circle-cutters-and-seamers.html"
         },
         {
           "label": "Bead rollers",
-          "href": "bead-roller-hvac-forming-pittsburgh-lock-former.html"
+          "href": "bead-rollers.html"
         },
         {
           "label": "Lock formers",
@@ -199,8 +233,8 @@
           "href": "pipe-polishing-deburring-grinding-brushing.html"
         },
         {
-          "label": "Pipe notchers",
-          "href": "pipe-notcher.html"
+          "label": "Tube notchers & end formers",
+          "href": "tube-notchers-and-end-formers.html"
         },
         {
           "label": "Corner notchers",

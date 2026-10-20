@@ -1,0 +1,482 @@
+{
+ "order": [
+  "isitan-edgebender-cnc",
+  "isitan-edgebender-nc"
+ ],
+ "families": {
+  "isitan-edgebender-cnc": {
+   "id": "isitan-edgebender-cnc",
+   "name": "Edgebender 1240 CNC — 3-axis (Y1 + Y2 + X) CNC hydraulic press brake",
+   "short": "Edgebender 1240 CNC",
+   "models_label": "Edgebender 1240 CNC · 44 US tons × 4.2 ft",
+   "summary": "A compact 3-axis CNC press brake for the sheet-metal shop: 44 US tons over 4.2 ft with a Cybelec Cybtouch 12 touchscreen control, independently controlled Y1 and Y2 cylinders, a CNC X-axis backgauge on HIWIN linear guides and ball screws, and quick-release Promecam tool clamping. HAWE or Rexroth hydraulics, Siemens electrics with remote connection and a Leuze light guard with learning mode for different part shapes — the specification of a large press brake in a machine that fits beside a shear and a slip roll.",
+   "features": [
+    "Cybelec Cybtouch 12 CNC control; 3 axes Y1 + Y2 + X; GIVI magnetic linear scales",
+    "CNC X-axis backgauge on HIWIN linear guides with ball screws, 19.7″ travel; manual R axis; programmable retract",
+    "Quick-release Promecam top-tool clamping; standard top tools and bottom die for short-edge bends; manual crowning",
+    "Double-cylinder bending system; upper beam on fibre slide bearings; balancing spindle and eccentric bearings for parallelism",
+    "Two-speed operation (free fall, bending, return); hydraulic overload safety; HAWE or Rexroth hydraulic unit at the rear top",
+    "Siemens electrics with remote-connection service; Leuze front safety barrier with learning mode; side covers with safety switch; foot pedal; height-adjustable front support arms on linear slides"
+   ],
+   "optional": [
+    "Motorized crowning (cambering) system",
+    "Servo-motorized R axis; servo-motorized X axis; extended backgauge length and extra fingers",
+    "Special bending dies; extra front support arms",
+    "Special safety systems (DSP, Fiessler)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-eb-1240-cnc",
+    "is-eb-cnc-promecam-clamps",
+    "is-eb-cnc-backgauge",
+    "is-eb-cnc-promecam",
+    "is-eb-cnc-supports",
+    "is-eb-cnc-hydraulics",
+    "is-eb-cnc-lightguard",
+    "is-eb-cnc-panel"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Edgebender 1240 CNC",
+      "sub": "3 axes (Y1 + Y2 + X) · Cybelec Cybtouch 12",
+      "models": [
+       "EB 1240 CNC"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "44 US tons (40 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "4.2 ft · 50.0″ (1270 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between frames",
+        "sub": "",
+        "cells": [
+         "39.8″ (1010 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "11.6″ (295 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "16.1″ (410 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Y free-fall speed",
+        "sub": "",
+        "cells": [
+         "5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Y working speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Backgauge travel",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "X-axis motor",
+        "sub": "",
+        "cells": [
+         "0.7 HP (0.55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "81 × 60 × 89″ (2060 × 1520 × 2260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "5,181 lb (2,350 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EB 1240 CNC",
+      "glance": [
+       "44 US tons (40 t)",
+       "4.2 ft · 50″ (1270 mm)",
+       "Cybelec Cybtouch 12 CNC · 3 axes",
+       "19.7″ (500 mm)",
+       "5,181 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "working_length",
+     "control",
+     "backgauge_travel",
+     "weight"
+    ],
+    "caps": {
+     "EB 1240 CNC": "44 US tons × 4.2 ft · 3-axis CNC (Y1 + Y2 + X)"
+    },
+    "note": "Bending force in US tons (metric tons in brackets); bending capacity varies with the V-die opening and sheet length — check the bending chart. Dimensions are overall L × W × H."
+   },
+   "headline": "44 US tons (40 t) × 4.2 ft (1270 mm) · 3-axis CNC · Cybelec Cybtouch 12",
+   "group": "pressbrake",
+   "brand": "isitan"
+  },
+  "isitan-edgebender-nc": {
+   "id": "isitan-edgebender-nc",
+   "name": "Edgebender 1230 / 1540 / 2160 NC — 2-axis (Y + X) NC hydraulic press brakes",
+   "short": "Edgebender NC",
+   "models_label": "Edgebender 1230 NC · 1540 NC · 2160 NC",
+   "summary": "Two-axis NC press brakes from 33 to 66 US tons and 4.2 to 6.9 ft: the Y axis sets the bending angle through the NC control (motor-driven on the 1230, gearbox-driven on the 1540 and 2160) and a high-speed motorized X backgauge on linear guides positions the sheet to 0.008″. The NC stores 500 programs of 200 lines, calculates bending force and draws the tool, and every machine carries HAWE or Rexroth hydraulics, Siemens / Pizzato / Balluff electrics, a Leuze light guard and Promecam quick-release tool clamping — the compact press brake for ducting, enclosures, brackets and job-shop bending up to 8 ga.",
+   "features": [
+    "NC control storing 500 programs of 200 lines; tooling selection, drawing and bending-force calculation; save and load via USB",
+    "Motor-driven Y-axis angle setting via the NC; stroke-controlled angle with mechanical stop; tonnage set by pressure switch",
+    "High-speed motorized X backgauge on linear guides: 23.6″ travel, 0.008″ accuracy; sensitive programmable retract",
+    "Quick-release Promecam upper-tool clamping; manual crowning by wedges in the upper tool holders; standard upper and lower tools",
+    "Double-cylinder bending system; two-speed operation (free fall, slow bend, fast return); hydraulic overload safety",
+    "HAWE or Rexroth hydraulic unit; Siemens, Pizzato and Balluff electrics with remote service; Leuze front safety system with learning mode; CE-compliant safety foot pedal; floating-arm control panel; front support arms on linear slides"
+   ],
+   "optional": [
+    "Motorized R axis with precision movement; additional backgauge length and fingers",
+    "Manual or motorized crowning on the lower blade",
+    "Special bending dies; extra front support arm; special two-hand and foot-pedal control",
+    "Special safety systems (DSP, Fiessler)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-eb-2160",
+    "is-eb-1540",
+    "is-eb-1230",
+    "is-eb-nc-bending",
+    "is-eb-nc-backgauge",
+    "is-eb-nc-promecam",
+    "is-eb-nc-lightguard",
+    "is-eb-nc-torsion",
+    "is-eb-nc-ballscrew",
+    "is-eb-nc-yaxis",
+    "is-eb-nc-angle",
+    "is-eb-nc-screen",
+    "is-eb-nc-tooling-screen",
+    "is-eb-nc-interface",
+    "is-eb-nc-buttons"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Edgebender NC",
+      "sub": "2 axes (Y + X) · 3 models",
+      "models": [
+       "EB 1230 NC",
+       "EB 1540 NC",
+       "EB 2160 NC"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "44 US tons (40 t)",
+         "66 US tons (60 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending capacity",
+        "sub": "mild steel, full length",
+        "cells": [
+         "8 ga (4 mm)",
+         "8 ga (4 mm)",
+         "8 ga (4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "4.2 ft · 50.0″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "6.9 ft · 82.7″ (2100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between frames",
+        "sub": "",
+        "cells": [
+         "39.8″ (1010 mm)",
+         "49.6″ (1260 mm)",
+         "66.9″ (1700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Idle ram speed",
+        "sub": "",
+        "cells": [
+         "2.76 in/s (70 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.54 in/s (90 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "10.0″ (255 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "10.4″ (265 mm)",
+         "15.0″ (380 mm)",
+         "15.0″ (380 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table width",
+        "sub": "",
+        "cells": [
+         "5.1″ (130 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lower table height",
+        "sub": "",
+        "cells": [
+         "32.7″ (830 mm)",
+         "33.3″ (845 mm)",
+         "33.3″ (845 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Backgauge travel",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "X-axis motor",
+        "sub": "",
+        "cells": [
+         "0.7 HP (0.55 kW)",
+         "1 HP (0.75 kW)",
+         "1 HP (0.75 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Y-axis motor",
+        "sub": "",
+        "cells": [
+         "0.2 HP (0.18 kW)",
+         "0.5 HP (0.37 kW)",
+         "0.5 HP (0.37 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "R-axis motor (optional)",
+        "sub": "",
+        "cells": [
+         "0.3 HP (0.25 kW)",
+         "0.3 HP (0.25 kW)",
+         "0.3 HP (0.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "90 L",
+         "120 L",
+         "120 L"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 54 × 85″ (1750 × 1370 × 2160 mm)",
+         "79 × 63 × 88″ (2000 × 1600 × 2240 mm)",
+         "96 × 63 × 88″ (2440 × 1600 × 2240 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,748 lb (1,700 kg)",
+         "7,606 lb (3,450 kg)",
+         "9,568 lb (4,340 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EB 1230 NC",
+      "glance": [
+       "33 US tons (30 t)",
+       "4.2 ft · 50″ (1270 mm)",
+       "NC · 2 axes (Y + X)",
+       "19.7″ (500 mm)",
+       "3,748 lb"
+      ]
+     },
+     {
+      "name": "EB 1540 NC",
+      "glance": [
+       "44 US tons (40 t)",
+       "5.1 ft · 61″ (1550 mm)",
+       "NC · 2 axes (Y + X)",
+       "23.6″ (600 mm)",
+       "7,606 lb"
+      ]
+     },
+     {
+      "name": "EB 2160 NC",
+      "glance": [
+       "66 US tons (60 t)",
+       "6.9 ft · 82.7″ (2100 mm)",
+       "NC · 2 axes (Y + X)",
+       "23.6″ (600 mm)",
+       "9,568 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "working_length",
+     "control",
+     "backgauge_travel",
+     "weight"
+    ],
+    "caps": {
+     "EB 1230": "33 US tons × 4.2 ft · 2-axis NC",
+     "EB 1540": "44 US tons × 5.1 ft · 2-axis NC",
+     "EB 2160": "66 US tons × 6.9 ft · 2-axis NC",
+     "Edgebender 1230": "33 US tons × 4.2 ft · 2-axis NC",
+     "Edgebender 1540": "44 US tons × 5.1 ft · 2-axis NC",
+     "Edgebender 2160": "66 US tons × 6.9 ft · 2-axis NC"
+    },
+    "note": "Bending force in US tons (metric tons in brackets); bending capacity varies with the V-die opening and sheet length — check the bending chart. Dimensions are overall L × W × H."
+   },
+   "headline": "33–66 US tons (30–60 t) · 4.2–6.9 ft (1270–2100 mm) · 2-axis NC",
+   "group": "pressbrake",
+   "brand": "isitan"
+  }
+ }
+}

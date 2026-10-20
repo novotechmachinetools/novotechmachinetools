@@ -1,0 +1,131 @@
+{
+ "slug": "cnc-tube-benders",
+ "template": "category.html",
+ "family_set": "tube-benders",
+ "title": "CNC Tube Benders & CNC Pipe Bending Machines — Servo Mandrel Benders | NovoTech Canada",
+ "artifact_title": "CNC tube benders",
+ "meta_description": "İşitan SFB CNC tube benders in Canada: 3-axis and 5-axis servo CNC mandrel pipe bending machines from Ø1-1/2″ to Ø3-1/2″ × 8 ga, 21″ touchscreen CNC with 3D simulation, 190° bends, up to 13.1 ft feed. Specs in inches, CSA panels, parts in Mississauga, ON.",
+ "h1": "CNC tube benders",
+ "intro": "Servo-driven CNC mandrel benders for production tube and pipe bending: the SFB CNC/A3 in five sizes from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe, and the five-axis SFB CNC/A5 that adds servo roll-bending for large sweeps. A 21″ touchscreen CNC with 3D simulation, spring-back and hardness compensation and X-Y-Z to Y-B-C conversion turns a drawing into a multi-bend part — exhaust and chassis tube, handrails, seating and fitness frames, furniture. Hydraulic mandrel, collet and clamping, oil cooler and remote assistance on every machine, with CSA-approved panels and support from Mississauga, ON.",
+ "hero_points": [
+  "Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga mild steel tube · 190° · CLR to 9.8″",
+  "3 or 5 servo axes · ±0.1° rotation · 9.8 or 13.1 ft feed",
+  "21″ touchscreen CNC · 3D simulation · reports and remote assistance"
+ ],
+ "hero_image": "is-sfb-38-cnc-a5",
+ "hero_image_secondary": [
+  "is-sfb-90-cnc",
+  "is-sfb-51-cnc"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Pipe & tube benders",
+   "href": "pipe-benders.html"
+  },
+  {
+   "label": "CNC tube benders"
+  }
+ ],
+ "hero_brand_line": "İşitan machines are made in Turkey by İşitan Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "cnc-group",
+   "title": "SFB CNC mandrel benders",
+   "lead": "Five-axis A5 with servo roll bending, and the three-axis A3 production line-up.",
+   "families": [
+    "isitan-sfb-cnc-a5",
+    "isitan-sfb-cnc-a3"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "3-axis or 5-axis?",
+   "a": "Both have servo feed (Y), rotation (B) and bend (C). The A5 adds two servo roll-bending axes, so one machine can draw-bend tight radii around the mandrel and roll-bend large-radius sweeps — handrail returns, roll cages, furniture arcs — without changing machines or tooling. If every bend in your parts is a tight radius, the A3 does the job."
+  },
+  {
+   "q": "Does it bend without a mandrel too?",
+   "a": "Yes — every SFB CNC bends with or without the mandrel, selected in the program. Thick-wall tube and generous radii bend without; thin-wall tube and tight radii need the mandrel (and often a wiper die) to stop wrinkling and collapse."
+  },
+  {
+   "q": "Can I program from a drawing?",
+   "a": "The CNC takes X-Y-Z coordinates from the part drawing and converts them to Y-B-C bender data (feed, rotation, bend), simulates the sequence in 3D with collision warning, and estimates the tube length and cycle time before you bend the first part."
+  },
+  {
+   "q": "What do you need from me to quote tooling?",
+   "a": "Six things: material type, tube or profile size, wall thickness, the smallest centreline radius (CLR) you bend, the maximum bend angle and the maximum tube length. Every bender comes with one die set in the size you request; extra sets, ball mandrels and wiper dies are quoted from the same list."
+  },
+  {
+   "q": "What voltage do the benders run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on the BK-42 and other models with a small enough motor."
+  }
+ ],
+ "faq_title": "Questions we get asked about CNC tube benders",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+  "label": "Download the İşitan machinery catalogue",
+  "size": "PDF · 29 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in Turkey by İşitan",
+  "text": "İşitan has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."
+ },
+ "section_label": "Pipe & tube benders",
+ "related_pages": [
+  {
+   "href": "nc-tube-benders.html",
+   "label": "NC tube benders"
+  },
+  {
+   "href": "rotary-draw-tube-benders.html",
+   "label": "Rotary draw tube benders"
+  },
+  {
+   "href": "pipe-benders.html",
+   "label": "All pipe & tube benders"
+  },
+  {
+   "href": "tube-notchers-and-end-formers.html",
+   "label": "Tube notchers & end formers"
+  },
+  {
+   "href": "circular-cold-saws.html",
+   "label": "Circular cold saws"
+  }
+ ],
+ "related_title": "More sheet-metal machinery from NovoTech",
+ "section": {
+  "label": "Pipe & tube benders",
+  "hub": {
+   "href": "pipe-benders.html",
+   "label": "All pipe & tube benders",
+   "image": "is-sfb-38-cnc-a5",
+   "blurb": "Every İşitan tube and pipe bender NovoTech supplies, with the capacity table for the whole range."
+  },
+  "pages": [
+   {
+    "href": "cnc-tube-benders.html",
+    "label": "CNC benders",
+    "current": true
+   },
+   {
+    "href": "nc-tube-benders.html",
+    "label": "NC benders",
+    "current": false
+   },
+   {
+    "href": "rotary-draw-tube-benders.html",
+    "label": "Rotary draw",
+    "current": false
+   }
+  ]
+ }
+}

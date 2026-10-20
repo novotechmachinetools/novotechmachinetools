@@ -1,0 +1,757 @@
+{
+ "order": [
+  "isitan-hibks",
+  "isitan-ikm",
+  "isitan-ik"
+ ],
+ "families": {
+  "isitan-hibks": {
+   "id": "isitan-hibks",
+   "name": "HIBKS / IBKS hydraulic and motorized bead rollers",
+   "short": "HIBKS / IBKS heavy-duty",
+   "models_label": "HIBKS 4.0 · IBKS 4.0 · HIBKS 2.5 · IBKS 2.5",
+   "summary": "Heavy-duty beading and trimming machines for sheet up to 8 ga (4.0 models) or 12 ga (2.5 models): a welded steel frame, a gearbox motor with brake, foot-pedal control and shafts in tapered roller bearings. The HIBKS moves the top roll hydraulically — the bead is formed under constant pressure without the operator cranking — while the IBKS has a manual top-roll setting at a lower price. Four sets of standard rolls and the roll spanner key are included; the bottom roll and the sheet support adjust forward and backward for ducts, drums, tanks and HVAC fittings.",
+   "features": [
+    "Welded steel construction frame; complete with floor stand",
+    "HIBKS: hydraulic up/down top roll · IBKS: manual top-roll setting",
+    "Forward-backward adjustable bottom roll and sheet support",
+    "Special-steel shafts in tapered roller bearings; low-maintenance ball-bearing design",
+    "Gearbox motor with brake; foot-pedal control",
+    "4 sets of standard rolls (S1–S4) and roll spanner key included; built to EC safety directives (CE)"
+   ],
+   "optional": [
+    "Extra roll sets E1–E8; rolls for special jobs made to order",
+    "Digital readout (HIBKS)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-hibks-4",
+    "is-ibks-4",
+    "is-hibks-25",
+    "is-ibks-25",
+    "is-hibks-rolls-4",
+    "is-hibks-rolls-25"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HIBKS 4.0 · IBKS 4.0",
+      "sub": "sheet up to 8 ga · hydraulic / motorized",
+      "models": [
+       "HIBKS 4.0 · hydraulic",
+       "IBKS 4.0 · motorized"
+      ],
+      "rows": [
+       {
+        "label": "Shaft length",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Beading capacity",
+        "sub": "mild steel",
+        "cells": [
+         "8 ga (4 mm)",
+         "8 ga (4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "sub": "",
+        "cells": [
+         "4.96″ (126 mm)",
+         "4.96″ (126 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "10 rpm",
+         "10 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 + 1 HP (2.2 + 0.75 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "6 L",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 23 × 50″ (1730 × 580 × 1270 mm)",
+         "58 × 22 × 47″ (1470 × 560 × 1190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,213 lb (550 kg)",
+         "1,014 lb (460 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HIBKS 2.5 · IBKS 2.5",
+      "sub": "sheet up to 12 ga · hydraulic / motorized",
+      "models": [
+       "HIBKS 2.5 · hydraulic",
+       "IBKS 2.5 · motorized"
+      ],
+      "rows": [
+       {
+        "label": "Shaft length",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Beading capacity",
+        "sub": "mild steel",
+        "cells": [
+         "12 ga (2.5 mm)",
+         "12 ga (2.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "sub": "",
+        "cells": [
+         "3.78″ (96 mm)",
+         "3.78″ (96 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "13 rpm",
+         "13 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "2 + 0.75 HP (1.5 + 0.55 kW)",
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "6 L",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 23 × 50″ (1730 × 580 × 1270 mm)",
+         "58 × 22 × 47″ (1470 × 560 × 1190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "838 lb (380 kg)",
+         "705 lb (320 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HIBKS 4.0 · hydraulic",
+      "glance": [
+       "11.8″ (300 mm)",
+       "8 ga (4 mm)",
+       "4.96″ (126 mm)",
+       "7.9″ (200 mm)",
+       "3 + 1 HP"
+      ]
+     },
+     {
+      "name": "IBKS 4.0 · motorized",
+      "glance": [
+       "11.8″ (300 mm)",
+       "8 ga (4 mm)",
+       "4.96″ (126 mm)",
+       "7.9″ (200 mm)",
+       "3 HP"
+      ]
+     },
+     {
+      "name": "HIBKS 2.5 · hydraulic",
+      "glance": [
+       "9.8″ (250 mm)",
+       "12 ga (2.5 mm)",
+       "3.78″ (96 mm)",
+       "6.3″ (160 mm)",
+       "2 + 0.75 HP"
+      ]
+     },
+     {
+      "name": "IBKS 2.5 · motorized",
+      "glance": [
+       "9.8″ (250 mm)",
+       "12 ga (2.5 mm)",
+       "3.78″ (96 mm)",
+       "6.3″ (160 mm)",
+       "2 HP"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft_length",
+     "beading_capacity",
+     "roll_diameter",
+     "throat_depth",
+     "motor"
+    ],
+    "caps": {
+     "HIBKS 4.0": "beads up to 8 ga (4 mm) · 11.8″ shafts · hydraulic top roll",
+     "IBKS 4.0": "beads up to 8 ga (4 mm) · 11.8″ shafts · motorized",
+     "HIBKS 2.5": "beads up to 12 ga (2.5 mm) · 9.8″ shafts · hydraulic top roll",
+     "IBKS 2.5": "beads up to 12 ga (2.5 mm) · 9.8″ shafts · motorized"
+    },
+    "note": "Beading capacity is for mild steel; thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Beads sheet up to 8 ga (4 mm) · shafts 9.8″ and 11.8″ · hydraulic or motorized",
+   "group": "beading",
+   "brand": "isitan"
+  },
+  "isitan-ikm": {
+   "id": "isitan-ikm",
+   "name": "IBKS 1.8 / IKM / IKMP motorized and pneumatic bead rollers",
+   "short": "IKM / IKMP motorized",
+   "models_label": "IBKS 1.8 · IKM 1.2 · IKMP 1.2 · IKMP 1.2 P",
+   "summary": "Motorized bead rollers for 14–18 ga sheet, each complete with a floor stand and foot-pedal control. The IBKS 1.8 has a welded steel-plate frame with an 11″ throat and a gearbox motor with brake; the IKM 1.2 and IKMP 1.2 are cast-iron machines with 8 sets of standard rolls — the IKM with four pulley speeds, the IKMP 1.2 P with a pneumatic top shaft that closes the rolls at the press of the pedal for repeat work.",
+   "features": [
+    "IBKS 1.8: welded steel-plate frame, 11″ (280 mm) throat, 3 sets of standard rolls, easy to move around the shop",
+    "IKM 1.2: heavy-duty cast-iron frame, 8 sets of standard rolls, tooling cupboard, 4 working speeds (30 / 60 / 90 / 120 rpm)",
+    "IKMP 1.2 / 1.2 P: cast-iron frame, 8 sets of standard rolls, adjustable bottom roll; the P version with pneumatic top shaft",
+    "Forward-backward adjustable sheet support; special-steel roll shafts",
+    "Foot-pedal control; complete with floor stand; built to EC safety directives (CE)"
+   ],
+   "optional": [
+    "Extra roll sets; rolls for special jobs made to order",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-ibks-18",
+    "is-ikm-12",
+    "is-ikmp-12",
+    "is-ikmp-12p",
+    "is-ikm-rolls-std",
+    "is-ikm-rolls-extra"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "IBKS 1.8 · IKM 1.2",
+      "sub": "motorized bead rollers",
+      "models": [
+       "IBKS 1.8",
+       "IKM 1.2"
+      ],
+      "rows": [
+       {
+        "label": "Shaft length",
+        "sub": "",
+        "cells": [
+         "4.7″ (120 mm)",
+         "5.5″ (140 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Beading capacity",
+        "sub": "mild steel",
+        "cells": [
+         "14 ga (1.8 mm)",
+         "18 ga (1.2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "sub": "",
+        "cells": [
+         "3.23″ (82 mm)",
+         "2.44″ (62 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "11.0″ (280 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "48 rpm",
+         "30 / 60 / 90 / 120 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "1 HP (0.75 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "33 × 16 × 48″ (840 × 410 × 1220 mm)",
+         "35 × 18 × 53″ (890 × 460 × 1350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "309 lb (140 kg)",
+         "298 lb (135 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "IKMP 1.2 · IKMP 1.2 P",
+      "sub": "motorized · pneumatic top shaft",
+      "models": [
+       "IKMP 1.2",
+       "IKMP 1.2 P"
+      ],
+      "rows": [
+       {
+        "label": "Shaft length",
+        "sub": "",
+        "cells": [
+         "5.5″ (140 mm)",
+         "5.5″ (140 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Beading capacity",
+        "sub": "mild steel",
+        "cells": [
+         "18 ga (1.2 mm)",
+         "18 ga (1.2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "sub": "",
+        "cells": [
+         "2.44″ (62 mm)",
+         "2.44″ (62 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "32 rpm",
+         "32 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "1 HP (0.75 kW)",
+         "1 HP (0.75 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 18 × 53″ (990 × 460 × 1350 mm)",
+         "35 × 18 × 65″ (890 × 460 × 1650 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "287 lb (130 kg)",
+         "331 lb (150 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "IBKS 1.8",
+      "glance": [
+       "4.7″ (120 mm)",
+       "14 ga (1.8 mm)",
+       "3.23″ (82 mm)",
+       "11.0″ (280 mm)",
+       "2 HP"
+      ]
+     },
+     {
+      "name": "IKM 1.2",
+      "glance": [
+       "5.5″ (140 mm)",
+       "18 ga (1.2 mm)",
+       "2.44″ (62 mm)",
+       "3.9″ (100 mm)",
+       "1 HP"
+      ]
+     },
+     {
+      "name": "IKMP 1.2",
+      "glance": [
+       "5.5″ (140 mm)",
+       "18 ga (1.2 mm)",
+       "2.44″ (62 mm)",
+       "3.9″ (100 mm)",
+       "1 HP"
+      ]
+     },
+     {
+      "name": "IKMP 1.2 P",
+      "glance": [
+       "5.5″ (140 mm)",
+       "18 ga (1.2 mm)",
+       "2.44″ (62 mm)",
+       "3.9″ (100 mm)",
+       "1 HP"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft_length",
+     "beading_capacity",
+     "roll_diameter",
+     "throat_depth",
+     "motor"
+    ],
+    "caps": {
+     "IBKS 1.8": "beads up to 14 ga (1.8 mm) · 11″ throat · motorized",
+     "IKM 1.2": "beads up to 18 ga (1.2 mm) · 4 speeds · 8 roll sets",
+     "IKMP 1.2 P": "beads up to 18 ga (1.2 mm) · pneumatic top shaft",
+     "IKMP 1.2": "beads up to 18 ga (1.2 mm) · motorized on floor stand"
+    },
+    "note": "Beading capacity is for mild steel; thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Beads sheet up to 14 ga (1.8 mm) · motorized · pneumatic top shaft on the IKMP 1.2 P",
+   "group": "beading",
+   "brand": "isitan"
+  },
+  "isitan-ik": {
+   "id": "isitan-ik",
+   "name": "IK / IKS manual bead rollers and swagers",
+   "short": "IK / IKS manual",
+   "models_label": "IK 1.2 · IK 0.8 · IKS 1.3 · IKS 1.0",
+   "summary": "Hand-crank bead rollers (swagers) for the sheet-metal bench: the IK series on a heavy-duty cast-iron frame with 7 or 8 sets of standard rolls, the IKS series on a steel-plate frame with longer shafts and a deeper throat. Both have a forward-backward adjustable sheet support, an adjustable bottom roll and special-steel shafts, and are light enough to carry around the shop. Roll sets are interchangeable with the motorized IK-series machines.",
+   "features": [
+    "IK: heavy-duty cast-iron main frame; IK 1.2 with 8 and IK 0.8 with 7 sets of standard rolls and roll spanner key",
+    "IKS: steel-plate construction; IKS 1.3 with 8 roll sets (compatible with IK 1.2 rolls), IKS 1.0 with 7 (compatible with IK 0.8 rolls)",
+    "Forward-backward adjustable sheet support; adjustable bottom roll",
+    "Special-steel roll shafts; easy to carry around the shop"
+   ],
+   "optional": [
+    "Extra roll sets; rolls for special jobs made to order"
+   ],
+   "images": [
+    "is-ik-12",
+    "is-ik-08",
+    "is-iks-13",
+    "is-iks-10",
+    "is-ik-rolls-s1",
+    "is-ik-rolls-s7",
+    "is-ik-rolls-extra"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "IK 1.2 · IK 0.8",
+      "sub": "cast-iron frame",
+      "models": [
+       "IK 1.2",
+       "IK 0.8"
+      ],
+      "rows": [
+       {
+        "label": "Shaft length",
+        "sub": "",
+        "cells": [
+         "5.5″ (140 mm)",
+         "4.3″ (110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Beading capacity",
+        "sub": "mild steel",
+        "cells": [
+         "18 ga (1.2 mm)",
+         "22 ga (0.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "sub": "",
+        "cells": [
+         "2.44″ (62 mm)",
+         "2.20″ (56 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.1″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "22 × 9 × 20″ (560 × 230 × 510 mm)",
+         "15 × 7 × 15″ (380 × 180 × 380 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "110 lb (50 kg)",
+         "66 lb (30 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "IKS 1.3 · IKS 1.0",
+      "sub": "steel-plate frame",
+      "models": [
+       "IKS 1.3",
+       "IKS 1.0"
+      ],
+      "rows": [
+       {
+        "label": "Shaft length",
+        "sub": "",
+        "cells": [
+         "7.1″ (180 mm)",
+         "10.2″ (260 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Beading capacity",
+        "sub": "mild steel",
+        "cells": [
+         "18 ga (1.3 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "sub": "",
+        "cells": [
+         "2.44″ (62 mm)",
+         "2.20″ (56 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "9.1″ (230 mm)",
+         "6.3″ (160 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "20 × 12 × 20″ (510 × 300 × 510 mm)",
+         "20 × 10 × 20″ (510 × 250 × 510 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "110 lb (50 kg)",
+         "88 lb (40 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "IK 1.2",
+      "glance": [
+       "5.5″ (140 mm)",
+       "18 ga (1.2 mm)",
+       "2.44″ (62 mm)",
+       "3.9″ (100 mm)",
+       "manual"
+      ]
+     },
+     {
+      "name": "IK 0.8",
+      "glance": [
+       "4.3″ (110 mm)",
+       "22 ga (0.8 mm)",
+       "2.20″ (56 mm)",
+       "3.1″ (80 mm)",
+       "manual"
+      ]
+     },
+     {
+      "name": "IKS 1.3",
+      "glance": [
+       "7.1″ (180 mm)",
+       "18 ga (1.3 mm)",
+       "2.44″ (62 mm)",
+       "9.1″ (230 mm)",
+       "manual"
+      ]
+     },
+     {
+      "name": "IKS 1.0",
+      "glance": [
+       "10.2″ (260 mm)",
+       "20 ga (1 mm)",
+       "2.20″ (56 mm)",
+       "6.3″ (160 mm)",
+       "manual"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft_length",
+     "beading_capacity",
+     "roll_diameter",
+     "throat_depth",
+     "motor"
+    ],
+    "caps": {
+     "IK 1.2": "beads up to 18 ga (1.2 mm) · cast-iron frame · 8 roll sets",
+     "IK 0.8": "beads up to 22 ga (0.8 mm) · cast-iron frame · 7 roll sets",
+     "IKS 1.3": "beads up to 18 ga (1.3 mm) · 9.1″ throat · steel frame",
+     "IKS 1.0": "beads up to 20 ga (1 mm) · 10.2″ shafts · steel frame"
+    },
+    "note": "Beading capacity is for mild steel; thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Beads sheet up to 18 ga (1.3 mm) · hand crank · cast-iron or steel-plate frame",
+   "group": "beading",
+   "brand": "isitan"
+  }
+ }
+}

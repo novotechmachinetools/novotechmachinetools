@@ -74,3 +74,26 @@ Google Trends, Oct 2026, US (Canada volumes too low to compare long-tail terms):
 Rule: "plate roller(s)" is the primary term in titles and H1s, "slip roll(s)" for the light-gauge page,
 "plate rolling machine" and "plate bending rolls" once each in intros/meta, "sheet metal roller" and
 "slip roller" on the slip-roll page. "Roll bender" is reserved for the angle-roll pages.
+
+## Findings — bead rollers, circle shears, press brakes, tube benders, cold saws (İşitan pages)
+
+Google Trends, Oct 2026, US (5-year averages; Canada volumes too low for the long tail):
+
+| term | US avg | note |
+|---|---|---|
+| bead roller | ~31 | head term; "beading machine" ≈1 — use "beading machine" once per page only |
+| swager | ~24 | polluted by surnames — do not target |
+| circle shear | ~7 | "circle cutter" / "circle cutting machine" long tail; "lock seamer" below threshold |
+| pipe bender | ~57 | head term for the hub; "pipe bending machine", "exhaust pipe bender", "hydraulic pipe bender" rising related queries |
+| tube bender | ~40 | the trade term for mandrel/CNC machines — use on the spoke pages ("cnc tube bender", "mandrel bender" long tail) |
+| press brake | ~27 | head term; "sheet metal brake" ≈6 is the folder/pan-brake term — keep for the folder pages |
+| cold saw | ~10 | "metal chop saw" ≈6 as a secondary phrase; "circular cold saw" long tail |
+| tube notcher | ~2 | "pipe notcher" similar; both used in the title |
+
+Rules: hub = **pipe benders** (H1 "Pipe benders and tube bending machines"), spokes = **CNC tube benders**,
+**NC tube benders**, **rotary draw tube benders**, each repeating "pipe bender/bending machine" once in
+intro and meta. **Bead rollers** in title/H1 with "beading machine" as the secondary phrase. **Circle
+cutting machines** + "circle shears" in the title, "lock seamers" for the LS-13P. İşitan Edgebenders are
+**compact hydraulic press brakes** (the Dener page keeps the bare "press brake" head term). İşitan SFC
+saws are **circular cold saws** with "metal cutting saw" / "metal chop saw" once each in the intro; the
+Bekamak page keeps "automatic cold saws".

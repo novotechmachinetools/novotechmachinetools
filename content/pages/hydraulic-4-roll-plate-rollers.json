@@ -34,38 +34,7 @@
    "label": "Hydraulic 4-roll plate rollers"
   }
  ],
- "hero_brand_line": "İşitan plate rollers are made in Turkey by İşitan Makine — plate rolls and beading machines since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
- "section": {
-  "label": "Plate rollers & slip rolls",
-  "hub": {
-   "href": "plate-rollers.html",
-   "label": "All plate rollers & slip rolls",
-   "image": "is-4rhms-3100-250",
-   "blurb": "Every İşitan plate roller and slip roll NovoTech supplies, with the capacity table for the whole range."
-  },
-  "pages": [
-   {
-    "href": "hydraulic-4-roll-plate-rollers.html",
-    "label": "4-roll plate rollers",
-    "current": true
-   },
-   {
-    "href": "hydraulic-3-roll-plate-rollers.html",
-    "label": "Hydraulic 3-roll",
-    "current": false
-   },
-   {
-    "href": "motorized-plate-rollers.html",
-    "label": "Motorized 3-roll",
-    "current": false
-   },
-   {
-    "href": "slip-rolls.html",
-    "label": "Slip rolls",
-    "current": false
-   }
-  ]
- },
+ "hero_brand_line": "İşitan machines are made in Turkey by İşitan Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "4-roll-group",
@@ -100,6 +69,16 @@
   }
  ],
  "faq_title": "Questions we get asked about hydraulic 4-roll plate rollers",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+  "label": "Download the İşitan machinery catalogue",
+  "size": "PDF · 29 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in Turkey by İşitan",
+  "text": "İşitan has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."
+ },
+ "section_label": "Plate rollers & slip rolls",
  "related_pages": [
   {
    "href": "hydraulic-3-roll-plate-rollers.html",
@@ -118,18 +97,40 @@
    "label": "All plate rollers & slip rolls"
   }
  ],
- "catalogue_pdf": {
-  "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
-  "label": "Download the İşitan machinery catalogue",
-  "size": "PDF · 29 MB · imperial units"
+ "related_title": "More sheet-metal machinery from NovoTech",
+ "section": {
+  "label": "Plate rollers & slip rolls",
+  "hub": {
+   "href": "plate-rollers.html",
+   "label": "All plate rollers & slip rolls",
+   "image": "is-4rhms-3100-250",
+   "blurb": "Every İşitan plate roller and slip roll NovoTech supplies, with the capacity table for the whole range."
+  },
+  "pages": [
+   {
+    "href": "hydraulic-4-roll-plate-rollers.html",
+    "label": "4-roll plate rollers",
+    "current": true
+   },
+   {
+    "href": "hydraulic-3-roll-plate-rollers.html",
+    "label": "Hydraulic 3-roll",
+    "current": false
+   },
+   {
+    "href": "motorized-plate-rollers.html",
+    "label": "Motorized 3-roll",
+    "current": false
+   },
+   {
+    "href": "slip-rolls.html",
+    "label": "Slip rolls",
+    "current": false
+   }
+  ]
  },
  "related_article": {
   "href": "plate-rollers.html#buying-guide",
   "label": "Plate roller buying guide: 3-roll vs 4-roll, capacities, cones and controls"
- },
- "origin_feature": {
-  "title": "Made in Turkey by İşitan",
-  "text": "İşitan has built plate rolls in Bursa since 1959 — two factories, CE-certified machines with European components."
- },
- "section_label": "Plate rollers & slip rolls"
+ }
 }

@@ -9,6 +9,9 @@ band on the right carrying the product cut-out — the same "Forge" look as the 
 """
 import json, os, glob
 from PIL import Image, ImageDraw, ImageFont
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from cutout2 import auto_cutout, is_white_background  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1200, 630
@@ -21,8 +24,17 @@ os.makedirs(out_dir, exist_ok=True)
 
 
 def load_cutout(name):
-    src = imap[name]["src"]
-    im = Image.open(src)
+    """The hero as a full-resolution cut-out (never the white-background source photo as a white box —
+    the house rule for every product photo on a non-white surface)."""
+    spec = imap[name]
+    im = Image.open(os.path.join(ROOT, spec["src"]))
+    if im.mode == "RGBA" and im.getchannel("A").getextrema()[0] < 8:
+        pass                                            # already a cut-out
+    else:
+        im = im.convert("RGB")
+        white, level = is_white_background(im)
+        if spec.get("cutout") if spec.get("cutout") is not None else white:
+            im = auto_cutout(im, level)                 # full-resolution cut-out, same pipeline as make_images
     im = im.convert("RGBA")
     bbox = im.getchannel("A").point(lambda a: 255 if a > 8 else 0).getbbox()
     if bbox:

@@ -20,6 +20,10 @@ RewriteRule ^([^.]+)$ $1.html [L]
 RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw
 RedirectMatch 301 ^/plate-roller-bender(\.html)?$ /plate-rollers
 RedirectMatch 301 ^/plate-roller-buying-guide(\.html)?$ /plate-rollers#buying-guide
+RedirectMatch 301 ^/bead-roller-hvac-forming-pittsburgh-lock-former(\.html)?$ /bead-rollers
+RedirectMatch 301 ^/circular-cutting-shear-tank-dish-head-flanging(\.html)?$ /circle-cutters-and-seamers
+RedirectMatch 301 ^/pipe-bender(\.html)?$ /pipe-benders
+RedirectMatch 301 ^/pipe-notcher(\.html)?$ /tube-notchers-and-end-formers
 RedirectMatch 301 ^/(manual|semi-automatic|automatic|double-column)-band-saws(\.html)?$ /band-saw
 RedirectMatch 301 ^/novofab-manual-band-saws(\.html)?$ /band-saw
 RedirectMatch 301 ^/novotech-manual-band-saws(\.html)?$ /band-saw

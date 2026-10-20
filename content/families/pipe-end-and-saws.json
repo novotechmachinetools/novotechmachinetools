@@ -1,0 +1,802 @@
+{
+ "order": [
+  "isitan-pn",
+  "isitan-td-01",
+  "isitan-sff",
+  "isitan-sfc-350-vx",
+  "isitan-sfc-v"
+ ],
+ "families": {
+  "isitan-pn": {
+   "id": "isitan-pn",
+   "name": "PN 17/90 · PN 20/76 — motorized pipe notching machines",
+   "short": "PN tube notchers",
+   "models_label": "PN 17/90 · PN 20/76",
+   "summary": "Belt-sander tube notchers that cope a saddle on the end of a tube in seconds for welded handrail, roll-cage, furniture and frame joints. Ten dovetail drums from Ø3/4″ to 3″ are standard — pick the drum for the tube you are joining, clamp the workpiece in the moving clamp and notch square or at any angle up to 50°. The PN 17/90 takes tube from 11/16″ to 3-1/2″ OD on a 4 × 47″ belt; the PN 20/76 is the compact notcher with a movable clamp, 13/16″ to 3″ OD on a 4 × 79″ belt.",
+   "features": [
+    "10 dovetail drums standard: Ø3/4″, 13/16″, 1″, 1-1/4″, 1-1/2″, 1-5/8″, 1-7/8″, 2″, 2-3/8″, 3″ — quickly opens the right dovetail for each tube diameter",
+    "Fast clamping and release with the moving clamp; clamp moves left and right",
+    "Notching at any angle up to 50° with the movable clamp",
+    "PN 17/90: basic centering and easy belt adjustment, 4 × 47″ belt",
+    "PN 20/76: compact notcher with movable clamp, 4 × 79″ belt",
+    "3 HP motor; CE certified"
+   ],
+   "optional": [
+    "Special dovetail drums for other tube sizes",
+    "Sanding belts",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-pn-17-90",
+    "is-pn-20-76"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PN — motorized pipe notching machines",
+      "sub": "Belt-sander tube notchers · 10 dovetail drums standard",
+      "models": [
+       "PN 17/90",
+       "PN 20/76"
+      ],
+      "rows": [
+       {
+        "label": "Notching capacity",
+        "sub": "tube OD",
+        "cells": [
+         "11/16″ – 3-1/2″ (Ø17 – 90 mm)",
+         "13/16″ – 3″ (Ø20 – 76 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. notching angle",
+        "sub": "",
+        "cells": [
+         "50°",
+         "50°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sanding belt",
+        "sub": "",
+        "cells": [
+         "4 × 47″ (100 × 1200 mm)",
+         "4 × 79″ (100 × 2000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dovetail drums included",
+        "sub": "",
+        "cells": [
+         "10 · Ø3/4″, 13/16″, 1″, 1-1/4″, 1-1/2″, 1-5/8″, 1-7/8″, 2″, 2-3/8″, 3″",
+         "10 · Ø3/4″, 13/16″, 1″, 1-1/4″, 1-1/2″, 1-5/8″, 1-7/8″, 2″, 2-3/8″, 3″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "43 × 33 × 47″ (1100 × 850 × 1200 mm)",
+         "53 × 28 × 47″ (1350 × 700 × 1200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "375 lb (170 kg)",
+         "287 lb (130 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PN 17/90",
+      "glance": [
+       "Notches 11/16″ – 3-1/2″ OD",
+       "Up to 50° · 4 × 47″ belt",
+       "3 HP",
+       "375 lb"
+      ]
+     },
+     {
+      "name": "PN 20/76",
+      "glance": [
+       "Notches 13/16″ – 3″ OD",
+       "Up to 50° · 4 × 79″ belt · movable clamp",
+       "3 HP",
+       "287 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "detail",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "PN 17/90": "Notches 11/16″ – 3-1/2″ OD tube, up to 50°",
+     "PN 20/76": "Notches 13/16″ – 3″ OD tube, up to 50°"
+    },
+    "note": "Notching capacity is the tube outside diameter; dovetail drums for other sizes are optional. Dimensions are overall L × W × H."
+   },
+   "headline": "Tube 11/16″ to 3-1/2″ OD · notching to 50° · 10 dovetail drums included",
+   "group": "notch",
+   "brand": "isitan"
+  },
+  "isitan-td-01": {
+   "id": "isitan-td-01",
+   "name": "TD-01 — motorized tube-end deburring machine",
+   "short": "TD-01",
+   "models_label": "TD-01",
+   "summary": "A bench deburring machine with a Ø10″ × 4″ wire brush at 1,500 rpm that cleans the inside and outside of a tube end in one pass, up to Ø3-1/2″ — round, rectangular, oval and other profiles in stainless, mild steel or aluminum. Sits beside the cold saw or the bender and takes the burr off before welding or bending, at very low running cost.",
+   "features": [
+    "Inside and outside deburring up to Ø3-1/2″ in one pass",
+    "Wire brush Ø10″ × 4″ at 1,500 rpm — fast, easy deburring at high speed",
+    "Round, rectangular, oval and other profiles; stainless steel, mild steel, aluminum and more",
+    "Balanced, long-life construction; works alongside tube benders and saws",
+    "3 HP motor; low running cost, high productivity"
+   ],
+   "optional": [
+    "Replacement wire brushes",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-td-01"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TD-01 — motorized tube-end deburring machine",
+      "sub": "Wire-brush deburring inside and out",
+      "models": [
+       "TD-01"
+      ],
+      "rows": [
+       {
+        "label": "Deburring capacity",
+        "sub": "inside and outside",
+        "cells": [
+         "Up to Ø3-1/2″ (Ø90 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Wire brush",
+        "sub": "",
+        "cells": [
+         "Ø10″ × 4″ (Ø250 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Brush speed",
+        "sub": "",
+        "cells": [
+         "1,500 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Profiles",
+        "sub": "",
+        "cells": [
+         "Round, rectangular, oval and other tube"
+        ],
+        "key": false
+       },
+       {
+        "label": "Materials",
+        "sub": "",
+        "cells": [
+         "Stainless steel, mild steel, aluminum and more"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "18 × 18 × 14″ (450 × 450 × 350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "88 lb (40 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TD-01",
+      "glance": [
+       "Deburrs tube ends to Ø3-1/2″",
+       "Ø10″ × 4″ wire brush · 1,500 rpm",
+       "3 HP",
+       "88 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "detail",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "TD-01": "Wire-brush deburring of tube ends to Ø3-1/2″"
+    },
+    "note": "Dimensions are overall L × W × H."
+   },
+   "headline": "Tube ends to Ø3-1/2″ · inside and outside in one pass · Ø10″ wire brush",
+   "group": "notch",
+   "brand": "isitan"
+  },
+  "isitan-sff": {
+   "id": "isitan-sff",
+   "name": "SFF 90-1 · SFF 60-1 — single-station hydraulic pipe-end forming machines",
+   "short": "SFF end formers",
+   "models_label": "SFF 90-1 · SFF 60-1",
+   "summary": "Hydraulic end formers that expand or reduce (collapse) a tube end with one tooling set, for exhaust slip joints, handrail sleeves, telescoping tube and furniture connectors. The SFF 90-1 expands Ø1-3/8″ to 3-1/2″ and reduces down from Ø5/16″ in 14 ga mild steel with a 15 HP power unit; the SFF 60-1 covers tube to Ø2-3/8″ with 10 HP. An easy tool-changing system swaps the forming set in minutes.",
+   "features": [
+    "Expands or reduces (collapses) pipe ends in a single station",
+    "1 set of end-forming tooling in requested size; easy tool-changing system",
+    "Hydraulic power unit — 15 HP on the SFF 90-1, 10 HP on the SFF 60-1",
+    "Mobile foot pedal; CE certified"
+   ],
+   "optional": [
+    "Additional end-forming tooling sets",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sff-90-1",
+    "is-sff-60-1",
+    "is-sff-tooling"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFF — single-station hydraulic pipe-end forming machines",
+      "sub": "Expand or reduce tube ends · 1 tooling set included",
+      "models": [
+       "SFF 90-1",
+       "SFF 60-1"
+      ],
+      "rows": [
+       {
+        "label": "Expanding capacity",
+        "sub": "mild steel tube",
+        "cells": [
+         "Ø1-3/8″ – 3-1/2″ × 14 ga (Ø35 – 90 × 2 mm)",
+         "Ø1-3/8″ – 2-3/8″ × 14 ga (Ø35 – 60 × 2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Reducing capacity",
+        "sub": "mild steel tube",
+        "cells": [
+         "Ø5/16″ – 3-1/2″ × 14 ga (Ø8 – 90 × 2 mm)",
+         "Ø5/16″ – 2-3/8″ × 14 ga (Ø8 – 60 × 2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "51 × 28 × 45″ (1300 × 700 × 1150 mm)",
+         "51 × 28 × 45″ (1300 × 700 × 1150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,301 lb (590 kg)",
+         "992 lb (450 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFF 90-1",
+      "glance": [
+       "Expands Ø1-3/8″ – 3-1/2″ · reduces Ø5/16″ – 3-1/2″ × 14 ga",
+       "Single station · hydraulic · foot pedal",
+       "15 HP",
+       "1,301 lb"
+      ]
+     },
+     {
+      "name": "SFF 60-1",
+      "glance": [
+       "Expands Ø1-3/8″ – 2-3/8″ · reduces Ø5/16″ – 2-3/8″ × 14 ga",
+       "Single station · hydraulic · foot pedal",
+       "10 HP",
+       "992 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "detail",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "SFF 90-1": "Expands and reduces tube ends to Ø3-1/2″ × 14 ga",
+     "SFF 60-1": "Expands and reduces tube ends to Ø2-3/8″ × 14 ga"
+    },
+    "note": "Capacities are for mild steel tube at the wall thickness shown. Dimensions are overall L × W × H."
+   },
+   "headline": "Expand and reduce tube ends to Ø3-1/2″ × 14 ga · one tooling set included",
+   "group": "form",
+   "brand": "isitan"
+  },
+  "isitan-sfc-350-vx": {
+   "id": "isitan-sfc-350-vx",
+   "name": "SFC 350-VX — semi-automatic circular cold saw",
+   "short": "SFC 350-VX",
+   "models_label": "SFC 350-VX · 13-3/4″ blade",
+   "summary": "A semi-automatic cold saw for short batch runs: foot-switch actuation, hydro-pneumatic head descent with a cutting-speed regulator and head stroke set to the material, so the operator loads and the saw cuts. Heavy-duty double gearbox, cast-iron base, two blade speeds and mitre cuts 45° each way — Ø4-1/2″ round and 3-7/8″ square mild steel on a 13-3/4″ HSS blade, burr-free and ready to weld.",
+   "features": [
+    "Semi-automatic cycle: foot-switch actuation, hydro-pneumatic head descent with cutting-speed regulator; head stroke adjustable to material size",
+    "Heavy-duty double gearbox; cast-iron base; two blade speeds 45 / 80 rpm",
+    "Mitre cuts 45° right to 45° left; self-centering double split vise grips both sides of the material",
+    "Wet-type cold sawing for clean, burr-free cuts; coolant pump and tank",
+    "24 V control voltage; CSA-approved panel; air supply 85 psi (8.5 cfm)"
+   ],
+   "optional": [
+    "Saw blades for specific materials — TiN for medium-hard steel, TiCN for high-strength steel, TiAlN for stainless",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfc-350-vx"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFC circular cold saws",
+      "sub": "Cutting capacities at 90° / 45°",
+      "models": [
+       "SFC 350-VX"
+      ],
+      "rows": [
+       {
+        "label": "Blade Ø",
+        "sub": "",
+        "cells": [
+         "13-3/4″ (350 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round — 90° / 45°",
+        "sub": "mild steel",
+        "cells": [
+         "Ø4-1/2″ / Ø4-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 90°",
+        "sub": "",
+        "cells": [
+         "3-7/8″ × 3-7/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 45°",
+        "sub": "",
+        "cells": [
+         "3-1/2″ × 3-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 90°",
+        "sub": "",
+        "cells": [
+         "4-3/4″ × 3-1/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 45°",
+        "sub": "",
+        "cells": [
+         "3-1/2″ × 3-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mitre range",
+        "sub": "",
+        "cells": [
+         "0 – 45° left and right"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speeds",
+        "sub": "two-speed",
+        "cells": [
+         "45 / 80 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Saw motor",
+        "sub": "",
+        "cells": [
+         "2.4 – 3.0 HP (1.8 – 2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "incl. 0.08 HP coolant pump",
+        "cells": [
+         "7.8 HP (5.8 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "32 mm / 2 × Ø11 mm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "43 × 24 × 55″ (1100 × 600 × 1400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Net weight",
+        "sub": "",
+        "cells": [
+         "661 lb (300 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFC 350-VX",
+      "glance": [
+       "13-3/4″",
+       "Ø4-1/2″ · Ø4-3/8″ at 45°",
+       "3-7/8″",
+       "7.8 HP",
+       "661 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "installed_power",
+     "weight"
+    ],
+    "caps": {
+     "SFC 350-VX": "13-3/4″ blade · Ø4-1/2″ round · semi-automatic",
+     "SFC 315-VP": "12-1/2″ blade · Ø4-1/8″ round · pneumatic vise",
+     "SFC 275-VP": "10-3/4″ blade · Ø3-3/8″ round · pneumatic vise",
+     "SFC 315-V": "12-1/2″ blade · Ø4-1/8″ round · manual vise",
+     "SFC 275-V": "10-3/4″ blade · Ø3-3/8″ round · manual vise"
+    },
+    "note": "Cutting capacities are for mild steel at 90° and 45°. Wet-type cold sawing with the standard coolant pump; TiN, TiCN and TiAlN-coated HSS blades are available for medium-hard, high-strength and stainless steel. Air supply for the SFC 350-VX: 85 psi, 8.5 cfm."
+   },
+   "headline": "13-3/4″ blade · Ø4-1/2″ round · semi-automatic, 45 / 80 rpm",
+   "group": "semi",
+   "brand": "isitan"
+  },
+  "isitan-sfc-v": {
+   "id": "isitan-sfc-v",
+   "name": "SFC 275 / 315-VP · SFC 275 / 315-V — circular cold saws with pneumatic or manual vise",
+   "short": "SFC VP · V",
+   "models_label": "SFC 275-VP · 315-VP · 275-V · 315-V",
+   "summary": "Pull-down circular cold saws with a 10-3/4″ or 12-1/2″ blade, two speeds and mitre cuts 45° left and right: the VP models clamp with an air-operated vise, the V models with a manual vise. Low-voltage start/stop trigger in the handle, a robust double-hinged pivot, a double split vise that grips both sides of the cut and a large base for stability — the metal cutting saw for tube, bar and profile in the fabrication shop, with a clean, burr-free cut the band saw cannot match.",
+   "features": [
+    "SFC VP: air-operated material vise; SFC V: manually operated vise",
+    "Low-voltage start/stop trigger in the pull-down handle; robust double-hinged pivot",
+    "Mitre cuts 45° left and right; double split vise grips both sides of the material; self-centering vise optimizes the cutting position",
+    "Two blade speeds 45 / 90 rpm; wet-type cold sawing for burr-free cuts; coolant pump and tank",
+    "Large base for stability; 24 V control voltage; CSA-approved panel"
+   ],
+   "optional": [
+    "Saw blades for specific materials — TiN for medium-hard steel, TiCN for high-strength steel, TiAlN for stainless",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfc-315-vp",
+    "is-sfc-275-v"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFC circular cold saws",
+      "sub": "Cutting capacities at 90° / 45°",
+      "models": [
+       "SFC 275-VP",
+       "SFC 315-VP",
+       "SFC 275-V",
+       "SFC 315-V"
+      ],
+      "rows": [
+       {
+        "label": "Blade Ø",
+        "sub": "",
+        "cells": [
+         "10-3/4″ (275 mm)",
+         "12-1/2″ (315 mm)",
+         "10-3/4″ (275 mm)",
+         "12-1/2″ (315 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round — 90° / 45°",
+        "sub": "mild steel",
+        "cells": [
+         "Ø3-3/8″ / Ø2-3/4″",
+         "Ø4-1/8″ / Ø3-1/2″",
+         "Ø3-3/8″ / Ø2-3/4″",
+         "Ø4-1/8″ / Ø3-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 90°",
+        "sub": "",
+        "cells": [
+         "2-3/4″ × 2-3/4″",
+         "3-3/8″ × 3-3/8″",
+         "2-3/4″ × 2-3/4″",
+         "3-3/8″ × 3-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 45°",
+        "sub": "",
+        "cells": [
+         "2-3/8″ × 2-3/8″",
+         "3-1/8″ × 3-1/8″",
+         "2-3/8″ × 2-3/8″",
+         "3-1/8″ × 3-1/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 90°",
+        "sub": "",
+        "cells": [
+         "3-3/4″ × 2-3/8″",
+         "4-3/4″ × 2-3/8″",
+         "3-3/4″ × 2-3/8″",
+         "4-3/4″ × 2-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 45°",
+        "sub": "",
+        "cells": [
+         "2-3/4″ × 2-1/8″",
+         "3-1/2″ × 2-3/8″",
+         "2-3/4″ × 2-1/8″",
+         "3-1/2″ × 2-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mitre range",
+        "sub": "",
+        "cells": [
+         "0 – 45° left and right",
+         "0 – 45° left and right",
+         "0 – 45° left and right",
+         "0 – 45° left and right"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speeds",
+        "sub": "two-speed",
+        "cells": [
+         "45 / 90 rpm",
+         "45 / 90 rpm",
+         "45 / 90 rpm",
+         "45 / 90 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Saw motor",
+        "sub": "",
+        "cells": [
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)",
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)",
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)",
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "incl. 0.08 HP coolant pump",
+        "cells": [
+         "5.0 HP (3.7 kW)",
+         "6.3 HP (4.7 kW)",
+         "5.0 HP (3.7 kW)",
+         "6.3 HP (4.7 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "32 mm / 2 × Ø11 mm",
+         "32 mm / 2 × Ø11 mm",
+         "32 mm / 2 × Ø11 mm",
+         "32 mm / 2 × Ø11 mm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)",
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)",
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)",
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Net weight",
+        "sub": "",
+        "cells": [
+         "463 lb (210 kg)",
+         "441 lb (200 kg)",
+         "419 lb (190 kg)",
+         "441 lb (200 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFC 275-VP",
+      "glance": [
+       "10-3/4″",
+       "Ø3-3/8″ · Ø2-3/4″ at 45°",
+       "2-3/4″",
+       "5.0 HP",
+       "463 lb"
+      ]
+     },
+     {
+      "name": "SFC 315-VP",
+      "glance": [
+       "12-1/2″",
+       "Ø4-1/8″ · Ø3-1/2″ at 45°",
+       "3-3/8″",
+       "6.3 HP",
+       "441 lb"
+      ]
+     },
+     {
+      "name": "SFC 275-V",
+      "glance": [
+       "10-3/4″",
+       "Ø3-3/8″ · Ø2-3/4″ at 45°",
+       "2-3/4″",
+       "5.0 HP",
+       "419 lb"
+      ]
+     },
+     {
+      "name": "SFC 315-V",
+      "glance": [
+       "12-1/2″",
+       "Ø4-1/8″ · Ø3-1/2″ at 45°",
+       "3-3/8″",
+       "6.3 HP",
+       "441 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "installed_power",
+     "weight"
+    ],
+    "caps": {
+     "SFC 350-VX": "13-3/4″ blade · Ø4-1/2″ round · semi-automatic",
+     "SFC 315-VP": "12-1/2″ blade · Ø4-1/8″ round · pneumatic vise",
+     "SFC 275-VP": "10-3/4″ blade · Ø3-3/8″ round · pneumatic vise",
+     "SFC 315-V": "12-1/2″ blade · Ø4-1/8″ round · manual vise",
+     "SFC 275-V": "10-3/4″ blade · Ø3-3/8″ round · manual vise"
+    },
+    "note": "Cutting capacities are for mild steel at 90° and 45°. Wet-type cold sawing with the standard coolant pump; TiN, TiCN and TiAlN-coated HSS blades are available for medium-hard, high-strength and stainless steel."
+   },
+   "headline": "10-3/4″ and 12-1/2″ blades · Ø3-3/8″ and Ø4-1/8″ round · pneumatic or manual vise",
+   "group": "manual",
+   "brand": "isitan"
+  }
+ }
+}

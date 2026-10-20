@@ -1,0 +1,1551 @@
+{
+ "order": [
+  "isitan-sfb-cnc-a5",
+  "isitan-sfb-cnc-a3",
+  "isitan-sfb-nc-c",
+  "isitan-sfb-nc",
+  "isitan-sfb-32",
+  "isitan-sfb-38-nc-a",
+  "isitan-bk"
+ ],
+ "families": {
+  "isitan-sfb-cnc-a5": {
+   "id": "isitan-sfb-cnc-a5",
+   "name": "SFB CNC/A5 — 5-axis servo CNC mandrel tube benders",
+   "short": "SFB CNC/A5",
+   "models_label": "SFB 38-CNC/A5 · 51-CNC/A5 · 65-CNC/A5",
+   "summary": "Fully servo-driven CNC mandrel benders with five axes: servo feed (Y), rotation (B) and bend (C) plus two servo roll-bending axes, so the same machine draw-bends tight radii with the mandrel and roll-bends large sweeps without a tooling change. A mobile 21″ touchscreen CNC with 3D simulation, spring-back and hardness compensation, X-Y-Z to Y-B-C conversion and automatic job reports — for exhaust, chassis, seating and fitness-frame production in Ø1-1/2″ to Ø2-1/2″ tube.",
+   "features": [
+    "Servo-motorized feeding (Y), rotation (B) and bending (C) axes; two axes move together; rotation tolerance ±0.1°",
+    "Servo roll-bending axes for large-radius sweeps on the same machine",
+    "Mobile CNC control unit with 21″ TFT touchscreen; 3D bending simulation with collision warning; spring-back calculation; hardness compensation",
+    "X-Y-Z to Y-B-C conversion; tube-length and bending-time calculation; daily, weekly and monthly reports e-mailed automatically; remote assistance",
+    "Hydraulic clamping, mandrel, pressure die, linear slider and collet; bending with or without mandrel; manual and automatic operation",
+    "Safety plate behind the bending head; mobile foot pedal with emergency stop; electrical cabinet cooler; lockable panel with safety interlock; overload protection; 1 die set (3 pieces) in requested size"
+   ],
+   "optional": [
+    "Extra die sets; ball mandrel and wiper die",
+    "Extended mandrel length (up to 20 ft)",
+    "Automatic mandrel lubrication (SFB 51 / 65)",
+    "Hydraulic oil cooler and oil heater",
+    "Safety mat 30 × 39″ or 39 × 59″",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfb-38-cnc-a5",
+    "is-sfb-cnc-unit",
+    "is-sfb-cnc-screen",
+    "is-sfb-cnc-mandrel",
+    "is-sfb-cnc-head",
+    "is-sfb-cnc-cooler",
+    "is-sfb-cnc-part-sofa",
+    "is-sfb-cnc-part-fitness"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFB CNC/A5 — 5-axis",
+      "sub": "Y + B + C servo axes plus servo roll-bending axes",
+      "models": [
+       "SFB 38-CNC/A5",
+       "SFB 51-CNC/A5",
+       "SFB 65-CNC/A5"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ × 11 ga (Ø38 × 3 mm)",
+         "Ø2″ × 11 ga (Ø51 × 3 mm)",
+         "Ø2-1/2″ × 11 ga (Ø65 × 3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. bending radius (CLR)",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending angle",
+        "sub": "",
+        "cells": [
+         "190°",
+         "190°",
+         "190°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic pressure",
+        "sub": "",
+        "cells": [
+         "730 – 2,900 psi (50 – 200 bar)",
+         "730 – 2,900 psi (50 – 200 bar)",
+         "730 – 2,900 psi (50 – 200 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "9.8 ft · 118.1″ (3000 mm)",
+         "9.8 ft · 118.1″ (3000 mm)",
+         "9.8 ft · 118.1″ (3000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rotation tolerance",
+        "sub": "",
+        "cells": [
+         "±0.1°",
+         "±0.1°",
+         "±0.1°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "Adjustable",
+         "Adjustable",
+         "Adjustable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "20 HP (15 kW)",
+         "30 HP (22 kW)",
+         "30 HP (22 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "217 × 51 × 63″ (5500 × 1300 × 1600 mm)",
+         "250 × 55 × 63″ (6350 × 1400 × 1600 mm)",
+         "250 × 55 × 63″ (6350 × 1400 × 1600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,960 lb (2,250 kg)",
+         "8,267 lb (3,750 kg)",
+         "8,708 lb (3,950 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFB 38-CNC/A5",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "5-axis servo CNC · 21″ touchscreen",
+       "4,960 lb"
+      ]
+     },
+     {
+      "name": "SFB 51-CNC/A5",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "5-axis servo CNC · 21″ touchscreen",
+       "8,267 lb"
+      ]
+     },
+     {
+      "name": "SFB 65-CNC/A5",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "5-axis servo CNC · 21″ touchscreen",
+       "8,708 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "SFB 38-CNC/A5": "Ø1-1/2″ × 11 ga · 5-axis servo CNC",
+     "SFB 38-CNC": "Ø1-1/2″ × 11 ga · CNC mandrel bender"
+    },
+    "note": "Tube capacities are for mild steel tube, shown as outside diameter × wall (nearest gauge or fraction). CLR = centreline radius of the bend die. Working length is the maximum tube length fed into the bender with the standard mandrel rod. Dimensions are overall L × W × H."
+   },
+   "headline": "Ø1-1/2″ – Ø2-1/2″ × 11 ga · 5 servo axes · 21″ touchscreen CNC with 3D simulation",
+   "group": "cnc",
+   "brand": "isitan"
+  },
+  "isitan-sfb-cnc-a3": {
+   "id": "isitan-sfb-cnc-a3",
+   "name": "SFB CNC/A3 — 3-axis servo CNC mandrel tube & pipe benders",
+   "short": "SFB CNC/A3",
+   "models_label": "SFB 38 · 51 · 65 · 76 · 90-CNC/A3",
+   "summary": "The production CNC mandrel bender in five sizes from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe. Servo feed, rotation and bend axes on the 38, 51 and 65 (geared electric bending drive on the 76 and 90), the same 21″ touchscreen CNC with 3D simulation as the A5, hydraulic mandrel, collet and clamping, and a standard oil cooler for shift work. The CNC tube bender for multi-bend parts — handrails, exhaust and automotive tube, furniture and fabricated assemblies — with 9.8 or 13.1 ft of feed.",
+   "features": [
+    "Servo-motorized feeding (Y) and rotation (B) axes; servo bending axis on SFB 38 / 51 / 65, geared electric bending drive on SFB 76 / 90",
+    "Mobile CNC control unit with 21″ TFT touchscreen; 3D simulation; spring-back calculation; hardness compensation; all profile types (round, square, rectangular)",
+    "X-Y-Z to Y-B-C conversion; tube-length and cycle-time estimate; job reports over the local network; remote assistance",
+    "Hydraulic clamping, mandrel, pressure die, linear slider and collet; hydraulic oil cooler standard; automatic mandrel lubrication on SFB 38-CNC/A3",
+    "Bending with or without mandrel; manual and automatic operation; mobile foot pedal with emergency stop",
+    "Safety plate behind the bending head; electrical cabinet cooler; lockable panel with safety interlock; overload protection; 1 die set (3 pieces) in requested size"
+   ],
+   "optional": [
+    "Extra die sets; ball mandrel and wiper die",
+    "Extended mandrel length (up to 20 ft)",
+    "Automatic mandrel lubrication (SFB 51 / 65 / 76 / 90)",
+    "Hydraulic oil heater",
+    "Safety mat 30 × 39″ or 39 × 59″",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfb-90-cnc",
+    "is-sfb-76-cnc",
+    "is-sfb-51-cnc",
+    "is-sfb-38-cnc",
+    "is-sfb-38-cnc-rear"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFB CNC/A3 — 3-axis",
+      "sub": "Y + B + C servo axes",
+      "models": [
+       "SFB 38-CNC/A3",
+       "SFB 51-CNC/A3",
+       "SFB 65-CNC/A3",
+       "SFB 76-CNC/A3",
+       "SFB 90-CNC/A3"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ × 11 ga (Ø38 × 3 mm)",
+         "Ø2″ × 11 ga (Ø51 × 3 mm)",
+         "Ø2-1/2″ × 11 ga (Ø65 × 3 mm)",
+         "Ø3″ × 8 ga (Ø76 × 4 mm)",
+         "Ø3-1/2″ × 8 ga (Ø90 × 4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. bending radius (CLR)",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending angle",
+        "sub": "",
+        "cells": [
+         "190°",
+         "190°",
+         "190°",
+         "190°",
+         "190°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic pressure",
+        "sub": "",
+        "cells": [
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "9.8 ft · 118.1″ (3000 mm)",
+         "9.8 ft · 118.1″ (3000 mm)",
+         "9.8 ft · 118.1″ (3000 mm)",
+         "13.1 ft · 157.5″ (4000 mm)",
+         "13.1 ft · 157.5″ (4000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rotation tolerance",
+        "sub": "",
+        "cells": [
+         "±0.1°",
+         "±0.1°",
+         "±0.1°",
+         "±0.1°",
+         "±0.1°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "Adjustable",
+         "Adjustable",
+         "Adjustable",
+         "Adjustable",
+         "Adjustable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending drive",
+        "sub": "",
+        "cells": [
+         "Servo",
+         "Servo",
+         "Servo",
+         "Geared electric",
+         "Geared electric"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "14 HP (11 kW)",
+         "21 HP (15 kW)",
+         "21 HP (15 kW)",
+         "27 HP (20 kW)",
+         "34 HP (25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "177 × 47 × 59″ (4500 × 1200 × 1500 mm)",
+         "195 × 51 × 63″ (4950 × 1300 × 1600 mm)",
+         "195 × 51 × 63″ (4950 × 1300 × 1600 mm)",
+         "236 × 57 × 69″ (6000 × 1450 × 1750 mm)",
+         "236 × 57 × 69″ (6000 × 1450 × 1750 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,866 lb (1,300 kg)",
+         "3,858 lb (1,750 kg)",
+         "4,079 lb (1,850 kg)",
+         "6,945 lb (3,150 kg)",
+         "7,385 lb (3,350 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFB 38-CNC/A3",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "3-axis servo CNC · 21″ touchscreen",
+       "2,866 lb"
+      ]
+     },
+     {
+      "name": "SFB 51-CNC/A3",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "3-axis servo CNC · 21″ touchscreen",
+       "3,858 lb"
+      ]
+     },
+     {
+      "name": "SFB 65-CNC/A3",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "3-axis servo CNC · 21″ touchscreen",
+       "4,079 lb"
+      ]
+     },
+     {
+      "name": "SFB 76-CNC/A3",
+      "glance": [
+       "Ø3″ × 8 ga",
+       "9.8″ (250 mm)",
+       "13.1 ft",
+       "3-axis servo CNC · 21″ touchscreen",
+       "6,945 lb"
+      ]
+     },
+     {
+      "name": "SFB 90-CNC/A3",
+      "glance": [
+       "Ø3-1/2″ × 8 ga",
+       "9.8″ (250 mm)",
+       "13.1 ft",
+       "3-axis servo CNC · 21″ touchscreen",
+       "7,385 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "SFB 38-CNC/A3": "Ø1-1/2″ × 11 ga · 3-axis servo CNC",
+     "SFB 51-CNC/A3": "Ø2″ × 11 ga · 3-axis servo CNC",
+     "SFB 76-CNC/A3": "Ø3″ × 8 ga · 3-axis servo CNC",
+     "SFB 90-CNC/A3": "Ø3-1/2″ × 8 ga · 3-axis servo CNC",
+     "SFB 38-CNC": "Ø1-1/2″ × 11 ga · CNC mandrel bender",
+     "SFB 51-CNC": "Ø2″ × 11 ga · CNC mandrel bender",
+     "SFB 76-CNC": "Ø3″ × 8 ga · CNC mandrel bender",
+     "SFB 90-CNC": "Ø3-1/2″ × 8 ga · CNC mandrel bender"
+    },
+    "note": "Tube capacities are for mild steel tube, shown as outside diameter × wall (nearest gauge or fraction). CLR = centreline radius of the bend die. Working length is the maximum tube length fed into the bender with the standard mandrel rod. Dimensions are overall L × W × H."
+   },
+   "headline": "Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga · 3 servo axes · 9.8 / 13.1 ft feed",
+   "group": "cnc",
+   "brand": "isitan"
+  },
+  "isitan-sfb-nc-c": {
+   "id": "isitan-sfb-nc-c",
+   "name": "SFB NC/C — NC mandrel tube benders with servo-rotation carrier",
+   "short": "SFB NC/C",
+   "models_label": "SFB 38 · 51 · 65 · 76-NC/C",
+   "summary": "An NC mandrel bender with a carrier: the hydraulic collet holds the tube, a servo motor — the same as on the CNC models — rotates it between bends to very low tolerance, and the operator feeds to adjustable stops on the carrier slide while a screen on the carrier shows feed length and rotation angle. Faster and more repeatable than a standard NC bender for series production of furniture, lighting, metal accessories and handrail parts, at a fraction of the price of a CNC.",
+   "features": [
+    "NC carrier: servo-motorized rotation axis (B), hydraulic collet, manual feeding axis (Y) with adjustable stoppers, screen on the carrier",
+    "Five hydraulic cylinders: slider support, clamping, mandrel, pressure die and collet",
+    "NC control unit with 10″ touchscreen on a mobile panel; 100-program memory, 20 bends per program; working-status reports, error and warning messages",
+    "Electric bending axis (C) with reducer and brake motor for precise bends; bending angle measured by encoder; bending with or without mandrel",
+    "Mobile foot pedal with emergency stop; safety plate behind the bending head; overload protection; CE certified; 1 die set in requested size"
+   ],
+   "optional": [
+    "Motorized feeding (Y axis)",
+    "Extra die sets; ball mandrel; wiper die",
+    "Extended mandrel length (up to 20 ft)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfb-90-nc-c",
+    "is-sfb-51-nc-c",
+    "is-sfb-38-nc-c",
+    "is-sfb-nc-c-carrier",
+    "is-sfb-nc-c-servo"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFB NC/C — with carrier",
+      "sub": "Servo rotation axis and hydraulic collet on the carrier",
+      "models": [
+       "SFB 38-NC/C",
+       "SFB 51-NC/C",
+       "SFB 65-NC/C",
+       "SFB 76-NC/C"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ × 11 ga (Ø38 × 3 mm)",
+         "Ø2″ × 11 ga (Ø51 × 3 mm)",
+         "Ø2-1/2″ × 11 ga (Ø65 × 3 mm)",
+         "Ø3″ × 8 ga (Ø76 × 4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. bending radius (CLR)",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending angle",
+        "sub": "",
+        "cells": [
+         "190°",
+         "190°",
+         "190°",
+         "190°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic pressure",
+        "sub": "",
+        "cells": [
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "9.8 ft · 118.1″ (3000 mm)",
+         "9.8 ft · 118.1″ (3000 mm)",
+         "9.8 ft · 118.1″ (3000 mm)",
+         "13.1 ft · 157.5″ (4000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "Adjustable",
+         "Adjustable",
+         "Adjustable",
+         "Adjustable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.1 HP (5.3 kW)",
+         "12 HP (9 kW)",
+         "15 HP (11 kW)",
+         "22 HP (16.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "177 × 45 × 65″ (4500 × 1150 × 1650 mm)",
+         "191 × 59 × 73″ (4850 × 1500 × 1850 mm)",
+         "191 × 59 × 73″ (4850 × 1500 × 1850 mm)",
+         "236 × 63 × 73″ (6000 × 1600 × 1850 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,646 lb (1,200 kg)",
+         "3,638 lb (1,650 kg)",
+         "3,858 lb (1,750 kg)",
+         "6,614 lb (3,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFB 38-NC/C",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "NC · 10″ touchscreen · servo-rotation carrier",
+       "2,646 lb"
+      ]
+     },
+     {
+      "name": "SFB 51-NC/C",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "NC · 10″ touchscreen · servo-rotation carrier",
+       "3,638 lb"
+      ]
+     },
+     {
+      "name": "SFB 65-NC/C",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "NC · 10″ touchscreen · servo-rotation carrier",
+       "3,858 lb"
+      ]
+     },
+     {
+      "name": "SFB 76-NC/C",
+      "glance": [
+       "Ø3″ × 8 ga",
+       "9.8″ (250 mm)",
+       "13.1 ft",
+       "NC · 10″ touchscreen · servo-rotation carrier",
+       "6,614 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "SFB 90-NC/C": "Ø3-1/2″ × 8 ga · NC with servo-rotation carrier",
+     "SFB 51-NC/C": "Ø2″ × 11 ga · NC with servo-rotation carrier",
+     "SFB 38-NC/C": "Ø1-1/2″ × 11 ga · NC with servo-rotation carrier"
+    },
+    "note": "Tube capacities are for mild steel tube, shown as outside diameter × wall (nearest gauge or fraction). CLR = centreline radius of the bend die. Working length is the maximum tube length fed into the bender with the standard mandrel rod. Dimensions are overall L × W × H. The SFB 90-NC/C carrier model is built to order."
+   },
+   "headline": "Ø1-1/2″ × 11 ga to Ø3″ × 8 ga · servo rotation on carrier · 10″ touchscreen NC",
+   "group": "nc",
+   "brand": "isitan"
+  },
+  "isitan-sfb-nc": {
+   "id": "isitan-sfb-nc",
+   "name": "SFB NC — NC mandrel tube & pipe benders",
+   "short": "SFB NC",
+   "models_label": "SFB 38 · 51 · 65 · 76 · 90-NC",
+   "summary": "İşitan's best-selling mandrel bender: a 10″ touchscreen NC with 100 programs of 20 sequential bends, hydraulic mandrel, clamping and pressure die, an electric bending drive with brake motor and encoder angle measurement, and the longest feed in the range at 11.8 or 15.1 ft. Five sizes from Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga — the pipe bending machine for exhaust shops, handrail and fence fabricators, trailer and chassis builders and job shops bending with or without a mandrel.",
+   "features": [
+    "NC control unit with 10″ TFT touchscreen; 100-program memory, 20 sequential bends per program; working-status reports, error and warning messages",
+    "Electric bending drive with reducer (direct-drive reducer on 76 and 90 NC); brake motor for precise bends; bending angle measured by encoder",
+    "Four hydraulic cylinders: slider support, clamping, mandrel and pressure die; bending with or without mandrel",
+    "Gauge-distance bracket; mobile foot pedal with emergency stop; safety plate on the bending head",
+    "Lockable electrical panel with safety interlock; overload protection; 1 die set in requested size"
+   ],
+   "optional": [
+    "Manual carrier",
+    "Extra die sets in requested size; ball mandrel; wiper die",
+    "Extended mandrel length (up to 20 ft)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfb-90-nc",
+    "is-sfb-76-nc",
+    "is-sfb-65-nc",
+    "is-sfb-51-nc",
+    "is-sfb-38-nc",
+    "is-sfb-38-nc-carrier",
+    "is-sfb-nc-reducer",
+    "is-sfb-nc-collet"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFB NC",
+      "sub": "10″ touchscreen NC, hydraulic mandrel",
+      "models": [
+       "SFB 38-NC",
+       "SFB 51-NC",
+       "SFB 65-NC",
+       "SFB 76-NC",
+       "SFB 90-NC"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ × 11 ga (Ø38 × 3 mm)",
+         "Ø2″ × 11 ga (Ø51 × 3 mm)",
+         "Ø2-1/2″ × 11 ga (Ø65 × 3 mm)",
+         "Ø3″ × 8 ga (Ø76 × 4 mm)",
+         "Ø3-1/2″ × 8 ga (Ø90 × 4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. bending radius (CLR)",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending angle",
+        "sub": "",
+        "cells": [
+         "190°",
+         "190°",
+         "190°",
+         "190°",
+         "190°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic pressure",
+        "sub": "",
+        "cells": [
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "11.8 ft · 141.7″ (3600 mm)",
+         "11.8 ft · 141.7″ (3600 mm)",
+         "11.8 ft · 141.7″ (3600 mm)",
+         "15.1 ft · 181.1″ (4600 mm)",
+         "15.1 ft · 181.1″ (4600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "Adjustable",
+         "Adjustable",
+         "Adjustable",
+         "Adjustable",
+         "Adjustable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending drive",
+        "sub": "",
+        "cells": [
+         "Electric with reducer",
+         "Electric with reducer",
+         "Electric with reducer",
+         "Direct-drive reducer",
+         "Direct-drive reducer"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "40 L",
+         "70 L",
+         "70 L",
+         "100 L",
+         "100 L"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7 HP (5.2 kW)",
+         "11 HP (8 kW)",
+         "14 HP (10.5 kW)",
+         "20 HP (15 kW)",
+         "25 HP (18.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "177 × 45 × 55″ (4500 × 1150 × 1400 mm)",
+         "191 × 59 × 59″ (4850 × 1500 × 1500 mm)",
+         "191 × 59 × 59″ (4850 × 1500 × 1500 mm)",
+         "236 × 63 × 63″ (6000 × 1600 × 1600 mm)",
+         "236 × 63 × 63″ (6000 × 1600 × 1600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,205 lb (1,000 kg)",
+         "3,417 lb (1,550 kg)",
+         "3,527 lb (1,600 kg)",
+         "5,842 lb (2,650 kg)",
+         "6,283 lb (2,850 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFB 38-NC",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "11.8 ft",
+       "NC · 10″ touchscreen · 100 programs",
+       "2,205 lb"
+      ]
+     },
+     {
+      "name": "SFB 51-NC",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "11.8 ft",
+       "NC · 10″ touchscreen · 100 programs",
+       "3,417 lb"
+      ]
+     },
+     {
+      "name": "SFB 65-NC",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "11.8 ft",
+       "NC · 10″ touchscreen · 100 programs",
+       "3,527 lb"
+      ]
+     },
+     {
+      "name": "SFB 76-NC",
+      "glance": [
+       "Ø3″ × 8 ga",
+       "9.8″ (250 mm)",
+       "15.1 ft",
+       "NC · 10″ touchscreen · 100 programs",
+       "5,842 lb"
+      ]
+     },
+     {
+      "name": "SFB 90-NC",
+      "glance": [
+       "Ø3-1/2″ × 8 ga",
+       "9.8″ (250 mm)",
+       "15.1 ft",
+       "NC · 10″ touchscreen · 100 programs",
+       "6,283 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "SFB 90-NC": "Ø3-1/2″ × 8 ga · NC mandrel bender",
+     "SFB 76-NC": "Ø3″ × 8 ga · NC mandrel bender",
+     "SFB 65-NC": "Ø2-1/2″ × 11 ga · NC mandrel bender",
+     "SFB 51-NC": "Ø2″ × 11 ga · NC mandrel bender",
+     "SFB 38-NC": "Ø1-1/2″ × 11 ga · NC mandrel bender"
+    },
+    "note": "Tube capacities are for mild steel tube, shown as outside diameter × wall (nearest gauge or fraction). CLR = centreline radius of the bend die. Working length is the maximum tube length fed into the bender with the standard mandrel rod. Dimensions are overall L × W × H."
+   },
+   "headline": "Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga · 10″ touchscreen NC · 11.8 / 15.1 ft feed",
+   "group": "nc",
+   "brand": "isitan"
+  },
+  "isitan-sfb-32": {
+   "id": "isitan-sfb-32",
+   "name": "SFB 32-HD · SFB 32-M — compact mandrel tube benders",
+   "short": "SFB 32",
+   "models_label": "SFB 32-HD (PLC hydraulic) · SFB 32-M (motorized)",
+   "summary": "Compact mandrel benders for Ø1-1/4″ × 11 ga tube in a 91″ footprint: the SFB 32-HD with PLC control, 4.7″ touchscreen, 20 programs of 10 bends and hydraulic clamping, and the SFB 32-M, a motorized bender with manual clamping and angle scale. Both have a direct gear-drive reducer, brake motor, square attachment and support pulley — the entry point to mandrel bending for handrail, furniture and small-tube work.",
+   "features": [
+    "SFB 32-HD: PLC control with 4.7″ TFT touchscreen, 20-program memory with 10 sequential bends per program, hydraulic clamping, gauge-distance attachment, overload protection",
+    "SFB 32-M: motorized bending with manual clamping and manual angle scale, gauge-distance bracket",
+    "Bending system with special direct gear-drive reducer; brake motor for precise bends",
+    "Square attachment and support pulley; mobile foot pedal with emergency stop",
+    "Lockable electrical panel with safety interlock; CE certified; 1 die set in requested size"
+   ],
+   "optional": [
+    "Extra die sets in requested size",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfb-32-hd",
+    "is-sfb-32-m"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFB 32 — compact mandrel benders",
+      "sub": "PLC hydraulic and motorized",
+      "models": [
+       "SFB 32-HD",
+       "SFB 32-M"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/4″ × 11 ga (Ø32 × 3 mm)",
+         "Ø1-1/4″ × 11 ga (Ø32 × 3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. bending radius (CLR)",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending angle",
+        "sub": "",
+        "cells": [
+         "190°",
+         "190°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic pressure",
+        "sub": "",
+        "cells": [
+         "730 – 2,610 psi (50 – 180 bar)",
+         "— (motorized)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "6.9 ft · 82.7″ (2100 mm)",
+         "4.9 ft · 59.1″ (1500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "PLC with 4.7″ touchscreen · 20 programs",
+         "Manual angle scale · foot pedal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping",
+        "sub": "",
+        "cells": [
+         "Hydraulic",
+         "Manual"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5 HP (3.7 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "20 L",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "91 × 43 × 45″ (2300 × 1100 × 1150 mm)",
+         "91 × 43 × 45″ (2300 × 1100 × 1150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "794 lb (360 kg)",
+         "639 lb (290 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFB 32-HD",
+      "glance": [
+       "Ø1-1/4″ × 11 ga",
+       "9.8″ (250 mm)",
+       "6.9 ft",
+       "PLC · 4.7″ touchscreen · hydraulic clamping",
+       "794 lb"
+      ]
+     },
+     {
+      "name": "SFB 32-M",
+      "glance": [
+       "Ø1-1/4″ × 11 ga",
+       "9.8″ (250 mm)",
+       "4.9 ft",
+       "Motorized · manual clamping · foot pedal",
+       "639 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "SFB 32-HD": "Ø1-1/4″ × 11 ga · PLC hydraulic, 6.9 ft",
+     "SFB 32-M": "Ø1-1/4″ × 11 ga · motorized, 4.9 ft"
+    },
+    "note": "Tube capacities are for mild steel tube, shown as outside diameter × wall (nearest gauge or fraction). CLR = centreline radius of the bend die. Working length is the maximum tube length fed into the bender with the standard mandrel rod. Dimensions are overall L × W × H."
+   },
+   "headline": "Ø1-1/4″ × 11 ga · PLC hydraulic or motorized · 91″ footprint",
+   "group": "compact",
+   "brand": "isitan"
+  },
+  "isitan-sfb-38-nc-a": {
+   "id": "isitan-sfb-38-nc-a",
+   "name": "SFB 38-NC/A2 · SFB 38-NC/A — NC aluminum-profile bending machines",
+   "short": "SFB 38-NC/A",
+   "models_label": "SFB 38-NC/A2 (with carrier) · SFB 38-NC/A",
+   "summary": "NC benders built for aluminum window, door and frame profiles: special profile dies made to your section drawing, hydraulic support and clamping, a hydraulic tooling clamp and the 10″ touchscreen NC with 100 programs. The NC/A2 adds a carrier with rotation and feed for arched frames and repeat work. Special production — quoted with the profile drawing.",
+   "features": [
+    "1 special aluminum-profile bending die set in requested size; hydraulic tooling clamp",
+    "Mobile NC control unit with 10″ TFT touchscreen; 100-program memory, 20 bends per program; working-status reports, error and warning messages",
+    "Electric bending drive with reducer; bending angle measured by encoder; hydraulic support and clamping",
+    "Mobile foot pedal with emergency stop; safety plate behind the bending head; gauge-distance bracket",
+    "Lockable electrical panel with safety interlock; overload protection"
+   ],
+   "optional": [
+    "Additional profile die sets",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-sfb-38-nc-a2",
+    "is-sfb-38-nc-a"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFB 38-NC/A2 · NC/A — aluminum-profile benders",
+      "sub": "Special tooling for window, door and frame profiles",
+      "models": [
+       "SFB 38-NC/A2",
+       "SFB 38-NC/A"
+      ],
+      "rows": [
+       {
+        "label": "Profile capacity",
+        "sub": "",
+        "cells": [
+         "Aluminum window and door profiles — quoted per profile drawing",
+         "Aluminum window and door profiles — quoted per profile drawing"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. bending radius (CLR)",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending angle",
+        "sub": "",
+        "cells": [
+         "190°",
+         "190°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic pressure",
+        "sub": "",
+        "cells": [
+         "730 – 2,610 psi (50 – 180 bar)",
+         "730 – 2,610 psi (50 – 180 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "9.8 ft · 118.1″ (3000 mm)",
+         "9.8 ft · 118.1″ (3000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Carrier",
+        "sub": "",
+        "cells": [
+         "Yes — rotation and feed on carrier",
+         "No — standard feed"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "Adjustable",
+         "Adjustable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "9.4 HP (7 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "177 × 45 × 39″ (4500 × 1150 × 1000 mm)",
+         "177 × 45 × 53″ (4500 × 1150 × 1350 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFB 38-NC/A2",
+      "glance": [
+       "Aluminum profiles (per drawing)",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "NC · 10″ touchscreen · carrier",
+       "—"
+      ]
+     },
+     {
+      "name": "SFB 38-NC/A",
+      "glance": [
+       "Aluminum profiles (per drawing)",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "NC · 10″ touchscreen",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "SFB 38-NC/A2": "Aluminum-profile bender with carrier",
+     "SFB 38-NC/A": "Aluminum-profile bender"
+    },
+    "note": "Profile-bending dies are made to the customer's profile drawing; capacity depends on the profile section and alloy. Tube capacities are for mild steel tube, shown as outside diameter × wall (nearest gauge or fraction). CLR = centreline radius of the bend die. Working length is the maximum tube length fed into the bender with the standard mandrel rod. Dimensions are overall L × W × H."
+   },
+   "headline": "Aluminum window & door profiles · 10″ touchscreen NC · dies to your profile drawing",
+   "group": "compact",
+   "brand": "isitan"
+  },
+  "isitan-bk": {
+   "id": "isitan-bk",
+   "name": "BK series — rotary draw tube & profile benders (non-mandrel)",
+   "short": "BK series",
+   "models_label": "BK-42 · BK-050 · BK-H 060 · BK 030 (76)",
+   "summary": "Compact rotary draw benders for tube, pipe, solid bar, flat bar and box section — one tooling set included. The BK-42 and BK 030 (76) have touchscreen NC (PLC) programming with 20 programs of 10 bends, quick-change tooling and a digital angle display; the BK-050 and hydraulic BK-H 060 use a one-touch control any operator can program, with two bending speeds and a foot pedal. From 1-1/4″ NPS pipe on the BK-42 to Ø3″ × 11 ga steel tube on the BK 030 — the bench of handrail, gate, fence and furniture shops.",
+   "features": [
+    "BK-42 and BK 030 (76): touchscreen programming of bend angle, multilingual diagnostics, 20 programs of 10 lines with NC (PLC) control, quick-change tooling, sequential bends with high repeatability, digital display of bend angle",
+    "BK-050 and BK-H 060: one-touch control — any operator can program and store bend angles; two bending speeds; bend from the control panel or the foot pedal",
+    "BK-H 060: hydraulic, draws the tube from one direction for easier sequential bending; one-piece solid bronze counter-bend die, swiveling bend head, angle indicator, 0–210°",
+    "Foot-pedal control for hands-free operation; mobile on rollers with handle; compact design",
+    "1 tooling set (bend die, clamp die, counter die) in requested size; CE certified"
+   ],
+   "optional": [
+    "Additional tooling for other diameters and profiles",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-bk-050",
+    "is-bk-42",
+    "is-bk-h060",
+    "is-bk-030",
+    "is-bk-screen",
+    "is-bk-panel",
+    "is-bk-tooling",
+    "is-bk-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BK series — rotary draw benders (non-mandrel)",
+      "sub": "Machine data",
+      "models": [
+       "BK-42",
+       "BK-050",
+       "BK-H 060",
+       "BK 030 (76)"
+      ],
+      "rows": [
+       {
+        "label": "Tube capacity",
+        "sub": "pipe size, NPS",
+        "cells": [
+         "1/8″ – 1-1/4″",
+         "1/8″ – 2″",
+         "1/8″ – 2″",
+         "1/8″ – 2-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. bending radius (CLR)",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "Programmed",
+         "Programmed",
+         "0 – 210°",
+         "Programmed"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Touchscreen NC (PLC) · 20 programs",
+         "One-touch control · two speeds",
+         "One-touch control · two speeds · hydraulic",
+         "Touchscreen NC (PLC) · 20 programs"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "1 HP (0.75 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "25 L",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "22 × 18 × 41″ (560 × 460 × 1040 mm)",
+         "30 × 22 × 43″ (760 × 560 × 1090 mm)",
+         "30 × 22 × 43″ (760 × 560 × 1090 mm)",
+         "30 × 22 × 43″ (760 × 560 × 1090 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "243 lb (110 kg)",
+         "309 lb (140 kg)",
+         "311 lb (141 kg)",
+         "397 lb (180 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "BK series — maximum bending capacities",
+      "sub": "At maximum, with matching tooling · tube as OD × wall",
+      "models": [
+       "BK-42",
+       "BK-050",
+       "BK-H 060",
+       "BK 030 (76)"
+      ],
+      "rows": [
+       {
+        "label": "Gas pipe (Sch. 40)",
+        "sub": "",
+        "cells": [
+         "1-1/4″ NPS",
+         "2″ NPS",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Steel tube",
+        "sub": "",
+        "cells": [
+         "Ø1-5/8″ × 11 ga",
+         "Ø2-3/8″ × 11 ga",
+         "Ø2-3/8″ × 11 ga",
+         "Ø3″ × 11 ga"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stainless steel tube (304/316)",
+        "sub": "",
+        "cells": [
+         "Ø1-5/8″ × 14 ga",
+         "Ø2-3/8″ × 14 ga",
+         "Ø2-3/8″ × 12 ga",
+         "Ø2-3/4″ × 8 ga"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hard copper & aluminum tube",
+        "sub": "",
+        "cells": [
+         "Ø2-1/8″ × 14 ga",
+         "Ø2-1/2″ × 8 ga",
+         "Ø2-3/8″ × 3/16″",
+         "Ø3″ × 1/4″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Solid round bar",
+        "sub": "",
+        "cells": [
+         "Ø1-1/8″",
+         "Ø1-3/8″",
+         "Ø1-3/4″",
+         "Ø1-3/4″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Solid square / rectangular bar",
+        "sub": "",
+        "cells": [
+         "1/4″ × 1-5/8″",
+         "3/8″ × 2-3/8″",
+         "1-1/8″ × 2-3/8″",
+         "3/8″ × 3-1/2″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — hard way",
+        "sub": "",
+        "cells": [
+         "1-5/8″ × 1/2″",
+         "2-3/8″ × 5/8″",
+         "2-3/8″ × 5/8″",
+         "3″ × 9/16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — easy way",
+        "sub": "",
+        "cells": [
+         "1-5/8″ × 13/16″",
+         "2-3/8″ × 1-1/8″",
+         "2-3/8″ × 1-1/8″",
+         "3″ × 1-1/8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Box section",
+        "sub": "",
+        "cells": [
+         "1-5/8″ × 13/16″ × 12 ga",
+         "2-3/8″ × 1-1/8″ × 8 ga",
+         "2-3/8″ × 1-1/8″ × 8 ga",
+         "2-3/4″ × 1-5/8″ × 8 ga"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BK-42",
+      "glance": [
+       "Ø1-5/8″ × 11 ga steel tube · 1-1/4″ NPS",
+       "7.9″ (200 mm)",
+       "—",
+       "Touchscreen NC (PLC)",
+       "243 lb"
+      ]
+     },
+     {
+      "name": "BK-050",
+      "glance": [
+       "Ø2-3/8″ × 11 ga steel tube · 2″ NPS",
+       "7.9″ (200 mm)",
+       "—",
+       "One-touch · two speeds",
+       "309 lb"
+      ]
+     },
+     {
+      "name": "BK-H 060",
+      "glance": [
+       "Ø2-3/8″ × 11 ga steel tube",
+       "7.9″ (200 mm)",
+       "—",
+       "Hydraulic · one-touch · 0–210°",
+       "311 lb"
+      ]
+     },
+     {
+      "name": "BK 030 (76)",
+      "glance": [
+       "Ø3″ × 11 ga steel tube",
+       "7.9″ (200 mm)",
+       "—",
+       "Touchscreen NC (PLC)",
+       "397 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "BK-42": "Ø1-5/8″ × 11 ga steel tube · touchscreen NC",
+     "BK-050": "Ø2-3/8″ × 11 ga steel tube · one-touch control",
+     "BK-H 060": "Ø2-3/8″ × 11 ga · hydraulic, 0–210°",
+     "BK 030": "Ø3″ × 11 ga steel tube · touchscreen NC"
+    },
+    "note": "Rotary draw (non-mandrel) bending — tube is bent around a die without an internal mandrel, so wall thickness and CLR limits are tighter than on the SFB mandrel benders. Capacities are at maximum with matching tooling; one tooling set is included. Dimensions are overall L × W × H."
+   },
+   "headline": "1/8″ to 2-1/2″ NPS pipe · Ø3″ × 11 ga steel tube · touchscreen NC or one-touch control",
+   "group": "bk",
+   "brand": "isitan"
+  }
+ }
+}

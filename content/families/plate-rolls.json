@@ -15,7 +15,6 @@
  "families": {
   "isitan-4r-hms": {
    "id": "isitan-4r-hms",
-   "group": "4-roll",
    "name": "4R HMS hydraulic 4-roll plate rollers",
    "short": "4R HMS 4-roll",
    "models_label": "4R HMS 650x80 – 4R HMS 3100x250 · 36 models",
@@ -1217,11 +1216,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²), shown as two values where the manufacturer states them: at a minimum rolling diameter of 1.5× the top roll diameter / at 5× the top roll diameter. Thin sheet is given in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. 4R HMS 4100 models are available on request."
    },
    "headline": "Working lengths 2.1–10.2 ft (650–3100 mm) · rolls up to 1/2″ (12 mm)",
+   "group": "4-roll",
    "brand": "isitan"
   },
   "isitan-4r-corrugated": {
    "id": "isitan-4r-corrugated",
-   "group": "4-roll",
    "name": "4R OM / 4R HOM / 4RH corrugated sheet and special 4-roll machines",
    "short": "4R corrugated & special",
    "models_label": "4R OM · 4R HOM · 4RH 10x90",
@@ -1341,11 +1340,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. 4R OM and 4R HOM machines are built to order — ask for the data sheet of your profile."
    },
    "headline": "Corrugated sheet to 11 ga (3 mm) · widths to 6.7 ft (2050 mm) · special builds to order",
+   "group": "4-roll",
    "brand": "isitan"
   },
   "isitan-mrm-h": {
    "id": "isitan-mrm-h",
-   "group": "3-roll-hydraulic",
    "name": "MRM-H hydraulic asymmetrical 3-roll plate rollers",
    "short": "MRM-H hydraulic 3-roll",
    "models_label": "MRM-H 650x80 – MRM-H 3100x250 · 32 models",
@@ -2544,11 +2543,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²), shown as two values where the manufacturer states them: at a minimum rolling diameter of 1.5× the top roll diameter / at 5× the top roll diameter. Thin sheet is given in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
    },
    "headline": "Working lengths 2.1–10 ft (650–3100 mm) · rolls up to 1/2″ (12 mm)",
+   "group": "3-roll-hydraulic",
    "brand": "isitan"
   },
   "isitan-3r-hmd": {
    "id": "isitan-3r-hmd",
-   "group": "3-roll-hydraulic",
    "name": "3R HMD mechanical-hydraulic 3-roll plate rollers",
    "short": "3R HMD",
    "models_label": "3R HMD 1270x90 · 1550x90 · 2050x95",
@@ -2705,11 +2704,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
    },
    "headline": "Working lengths 4.2–6.7 ft (1270–2050 mm) · rolls up to 12 ga (2.5 mm)",
+   "group": "3-roll-hydraulic",
    "brand": "isitan"
   },
   "isitan-mrm-s": {
    "id": "isitan-mrm-s",
-   "group": "3-roll-motorized",
    "name": "MRM-S mechanical asymmetrical 3-roll plate rollers",
    "short": "MRM-S motorized 3-roll",
    "models_label": "MRM-S 1050x130 – MRM-S 3050x220 · 21 models",
@@ -3497,11 +3496,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Capacity pairs are as published by the manufacturer."
    },
    "headline": "Working lengths 3.4–10 ft (1050–3050 mm) · rolls up to 3/8″ (10 mm)",
+   "group": "3-roll-motorized",
    "brand": "isitan"
   },
   "isitan-irm": {
    "id": "isitan-irm",
-   "group": "3-roll-motorized",
    "name": "IRM mechanical asymmetrical 3-roll plate rollers",
    "short": "IRM motorized 3-roll",
    "models_label": "IRM 1050x110 – IRM 2550x140 · 10 models",
@@ -3848,11 +3847,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
    },
    "headline": "Working lengths 3.4–8.4 ft (1050–2550 mm) · rolls up to 3/16″ (5 mm)",
+   "group": "3-roll-motorized",
    "brand": "isitan"
   },
   "isitan-rm": {
    "id": "isitan-rm",
-   "group": "3-roll-motorized",
    "name": "RM motorized 3-roll asymmetrical plate rollers",
    "short": "RM motorized",
    "models_label": "RM 1050x90 · 1270x90 · 1550x90 · 2050x95",
@@ -4027,11 +4026,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
    },
    "headline": "Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 11 ga (3 mm)",
+   "group": "3-roll-motorized",
    "brand": "isitan"
   },
   "isitan-ir": {
    "id": "isitan-ir",
-   "group": "slip-rolls",
    "name": "IR motorized 3-roll slip rolls",
    "short": "IR motorized slip rolls",
    "models_label": "IR 1050x46 – IR 2050x75 · 10 models",
@@ -4359,11 +4358,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
    },
    "headline": "Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 14 ga (2 mm)",
+   "group": "slip-rolls",
    "brand": "isitan"
   },
   "isitan-r": {
    "id": "isitan-r",
-   "group": "slip-rolls",
    "name": "R manual 3-roll slip rolls — floor-standing and bench models",
    "short": "R manual slip rolls",
    "models_label": "R 610x46 – R 2050x75 · 13 models",
@@ -4763,11 +4762,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Manual machines carry the NovoTech warranty and support; electrical items do not apply."
    },
    "headline": "Working lengths 2–6.7 ft (610–2050 mm) · rolls up to 14 ga (2 mm)",
+   "group": "slip-rolls",
    "brand": "isitan"
   },
   "isitan-rs": {
    "id": "isitan-rs",
-   "group": "slip-rolls",
    "name": "RS manual 3-roll asymmetrical plate rollers",
    "short": "RS manual",
    "models_label": "RS 1050x90 · 1270x90 · 1550x90 · 2050x95",
@@ -4938,11 +4937,11 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Manual machines carry the NovoTech warranty and support; electrical items do not apply."
    },
    "headline": "Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 11 ga (3 mm)",
+   "group": "slip-rolls",
    "brand": "isitan"
   },
   "isitan-rst": {
    "id": "isitan-rst",
-   "group": "slip-rolls",
    "name": "RST / RST-M economical manual and motorized plate rollers",
    "short": "RST economical",
    "models_label": "RST 1270x86 · RST-M 1270x86 · RST 1550x86 · RST-M 1550x86",
@@ -5103,6 +5102,7 @@
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
    },
    "headline": "Working lengths 4.1–5.1 ft (1270–1550 mm) · rolls up to 12 ga (2.5 mm)",
+   "group": "slip-rolls",
    "brand": "isitan"
   }
  }

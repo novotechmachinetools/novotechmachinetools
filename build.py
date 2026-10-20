@@ -22,6 +22,7 @@ if STAGING:
     # absolute URLs (canonical, og:url, og:image, structured data) point at the test host while testing
     site["domain"] = site.get("staging_domain", site["domain"])
 manifest = json.load(open(os.path.join(ROOT, "tools", "image_manifest.json"), encoding="utf-8"))
+image_map = json.load(open(os.path.join(ROOT, "tools", "image_map.json"), encoding="utf-8"))   # alt text edits apply without re-encoding
 
 # ---------------------------------------------------------------- unit helpers
 # Inch equivalents for rebar diameters, following NovoTech's catalogue convention
@@ -276,7 +277,7 @@ def img(name):
     largest = v[-1]
     return {
         "name": name,
-        "alt": e["alt"],
+        "alt": image_map.get(name, {}).get("alt") or e["alt"],
         "src": largest["file"],
         "w": largest["w"], "h": largest["h"],
         "srcset": ", ".join(f"{x['file']} {x['w']}w" for x in v),

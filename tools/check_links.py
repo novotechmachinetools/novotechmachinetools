@@ -18,9 +18,9 @@ OLD_SITE = {
     "products", "about-us", "contact-us", "brochures", "metal-fabricating-articles", "privacy-policy",
     "press-brake", "laser-cutting-machine", "shear-cutting", "iron-worker-punch", "plate-roller-bender",
     "pipe-profile-roll-bender", "cold-saw-carbide-saw-cutting", "folder-sheet-metal-brake", "horizontal-press-brake",
-    "pipe-bender", "hydraulic-press", "plate-beveler", "circular-cutting-shear-tank-dish-head-flanging",
-    "bead-roller-hvac-forming-pittsburgh-lock-former", "lock-former", "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
-    "pipe-polishing-deburring-grinding-brushing", "pipe-notcher", "corner-notcher", "aluminum-and-pvc-upcut-saws",
+    "hydraulic-press", "plate-beveler",
+    "lock-former", "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+    "pipe-polishing-deburring-grinding-brushing", "corner-notcher", "aluminum-and-pvc-upcut-saws",
     "press-brake-tooling-punch-and-die", "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction",
 }
 

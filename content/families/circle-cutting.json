@@ -1,0 +1,397 @@
+{
+ "order": [
+  "isitan-idk",
+  "isitan-ls-13p"
+ ],
+ "families": {
+  "isitan-idk": {
+   "id": "isitan-idk",
+   "name": "IDK circle cutting machines — hydraulic, motorized and manual circle shears",
+   "short": "IDK circle cutters",
+   "models_label": "IDK-5 · IDK-3.5 · IDK-2 · IDK-1.8 · IDK-1",
+   "summary": "Circle cutting shears cut round blanks — and on the IDK-5, 3.5 and 2 also inside diameters (rings) — from sheet clamped at its centre and rotated between two circular blades. The IDK-5 is the production machine: hydraulic centre clamp, motorized cutting-diameter adjustment, discs up to 78.7″ in 3/16″ steel and an optional flanging attachment that turns the edge of the disc up to 3/8″ for tank heads. The IDK-3.5 adds a pneumatic clamp to a 47″ machine, the IDK-2 and IDK-1.8 are rigid cast-frame motorized cutters for 14 ga, and the IDK-1 is the hand-operated bench model.",
+   "features": [
+    "IDK-5: welded steel frame, hydraulic centre clamp, motorized cutting-diameter adjustment, inside-diameter cutting, mobile control panel",
+    "IDK-3.5: pneumatic centre clamp (116 psi air supply), motorized diameter adjustment, inside-diameter cutting",
+    "IDK-2: rigid cast frame, blades in bearings, foot pedal, inside-diameter cutting",
+    "IDK-1.8: rigid cast frame, blades in bronze bushings, foot pedal",
+    "Special-steel (1.2379) blades; shafts on conical bearings for long blade life; gearbox motor with brake",
+    "Built to EC safety directives (CE)"
+   ],
+   "optional": [
+    "IDK-5: flanging attachment for edge flanging up to 3/8″; digital readout",
+    "IDK-2: pneumatic sheet-centring device",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-idk-5",
+    "is-idk-35",
+    "is-idk-2",
+    "is-idk-18",
+    "is-idk-1",
+    "is-idk-5-clamp",
+    "is-idk-5-flanging"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "IDK series",
+      "sub": "5 models · circles Ø4.3″ – 78.7″",
+      "models": [
+       "IDK-5",
+       "IDK-3.5",
+       "IDK-2",
+       "IDK-1.8",
+       "IDK-1"
+      ],
+      "rows": [
+       {
+        "label": "Min. cutting Ø",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "7.9″ (200 mm)",
+         "4.7″ (120 mm)",
+         "4.3″ (110 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. cutting Ø",
+        "sub": "",
+        "cells": [
+         "78.7″ (2000 mm)",
+         "47.2″ (1200 mm)",
+         "39.4″ (1000 mm)",
+         "39.4″ (1000 mm)",
+         "39.4″ (1000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity",
+        "sub": "mild steel",
+        "cells": [
+         "3/16″ (5 mm)",
+         "10 ga (3.5 mm)",
+         "14 ga (2 mm)",
+         "14 ga (2 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting speed",
+        "sub": "",
+        "cells": [
+         "13 ft/min (4 m/min)",
+         "20 ft/min (6 m/min)",
+         "25 ft/min (7.5 m/min)",
+         "25 ft/min (7.5 m/min)",
+         "manual"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade material",
+        "sub": "",
+        "cells": [
+         "1.2379 tool steel",
+         "1.2379 tool steel",
+         "1.2379 tool steel",
+         "1.2379 tool steel",
+         "1.2379 tool steel"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 + 1 HP (2.2 + 0.75 kW)",
+         "3 HP (2.2 kW)",
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hump depth",
+        "sub": "",
+        "cells": [
+         "47.2″ (1200 mm)",
+         "29.5″ (750 mm)",
+         "27.6″ (700 mm)",
+         "24.0″ (610 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "9.8″ (250 mm)",
+         "11.0″ (280 mm)",
+         "8.5″ (215 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inside-diameter cutting",
+        "sub": "",
+        "cells": [
+         "Yes",
+         "Yes",
+         "Yes",
+         "No",
+         "No"
+        ],
+        "key": false
+       },
+       {
+        "label": "Centre clamp",
+        "sub": "",
+        "cells": [
+         "Hydraulic",
+         "Pneumatic (116 psi air)",
+         "Manual",
+         "Manual",
+         "Manual"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "118 × 30 × 55″ (3000 × 760 × 1400 mm)",
+         "79 × 24 × 55″ (2000 × 610 × 1400 mm)",
+         "55 × 16 × 51″ (1400 × 410 × 1300 mm)",
+         "59 × 16 × 51″ (1500 × 410 × 1300 mm)",
+         "47 × 8 × 18″ (1200 × 200 × 460 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,976 lb (1,350 kg)",
+         "1,653 lb (750 kg)",
+         "772 lb (350 kg)",
+         "529 lb (240 kg)",
+         "132 lb (60 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "IDK-5",
+      "glance": [
+       "9.8″ – 78.7″ (250–2000 mm)",
+       "3/16″ (5 mm)",
+       "Yes",
+       "3 + 1 HP",
+       "2,976 lb"
+      ]
+     },
+     {
+      "name": "IDK-3.5",
+      "glance": [
+       "7.9″ – 47.2″ (200–1200 mm)",
+       "10 ga (3.5 mm)",
+       "Yes",
+       "3 HP",
+       "1,653 lb"
+      ]
+     },
+     {
+      "name": "IDK-2",
+      "glance": [
+       "4.7″ – 39.4″ (120–1000 mm)",
+       "14 ga (2 mm)",
+       "Yes",
+       "1.5 HP",
+       "772 lb"
+      ]
+     },
+     {
+      "name": "IDK-1.8",
+      "glance": [
+       "4.3″ – 39.4″ (110–1000 mm)",
+       "14 ga (2 mm)",
+       "No",
+       "1.5 HP",
+       "529 lb"
+      ]
+     },
+     {
+      "name": "IDK-1",
+      "glance": [
+       "5.9″ – 39.4″ (150–1000 mm)",
+       "20 ga (1 mm)",
+       "No",
+       "manual",
+       "132 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "cutting_diameter",
+     "cutting_capacity",
+     "inside_diameter_cutting",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "IDK-5": "cuts discs to Ø78.7″ (2000 mm) in 3/16″ (5 mm) · hydraulic clamp",
+     "IDK-3.5": "cuts discs to Ø47.2″ (1200 mm) in 10 ga · pneumatic clamp",
+     "IDK-2": "cuts discs to Ø39.4″ (1000 mm) in 14 ga · heavy-duty cast frame",
+     "IDK-1.8": "cuts discs to Ø39.4″ (1000 mm) in 14 ga · foot pedal",
+     "IDK-1": "cuts discs to Ø39.4″ (1000 mm) in 20 ga · manual"
+    },
+    "note": "Cutting capacities are for mild steel; thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Discs Ø4.3″ – 78.7″ (110–2000 mm) · sheet to 3/16″ (5 mm) · inside-diameter cutting",
+   "group": "circle",
+   "brand": "isitan"
+  },
+  "isitan-ls-13p": {
+   "id": "isitan-ls-13p",
+   "name": "LS-13P pneumatic heavy-duty lock seaming machine",
+   "short": "LS-13P lock seamer",
+   "models_label": "LS-13P",
+   "summary": "A motorized lock seamer that closes the longitudinal lock seam of round ducts and pipes: a gearbox-driven pinching system with pneumatic pressing, hardened seaming rolls on a ball-bearing slide, and pinching and rotation controlled from the foot pedal. Seams up to 51″ long in 18 ga sheet on pipes of 3.9″ to 5.1″ diameter — the companion to the slip roll and the bead roller in the HVAC shop.",
+   "features": [
+    "Gearbox-driven pinching system; pneumatic pressing for easy operation",
+    "Pinching and rotation controlled by the standard foot pedal",
+    "Hardened seaming rolls; sliding system on ball bearings",
+    "Pneumatic system protected by air filter",
+    "Operator's manual"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-ls-13p",
+    "is-ls-13p-profile",
+    "is-ls-13p-seam"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "LS-13P",
+      "sub": "pneumatic heavy-duty lock seamer",
+      "models": [
+       "LS-13P"
+      ],
+      "rows": [
+       {
+        "label": "Seaming capacity",
+        "sub": "mild steel",
+        "cells": [
+         "18 ga (1.2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Seaming length",
+        "sub": "",
+        "cells": [
+         "4.3 ft · 51.2″ (1300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Seaming Ø (min – max)",
+        "sub": "",
+        "cells": [
+         "3.9″ – 5.1″ (100–130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure (pneumatic)",
+        "sub": "",
+        "cells": [
+         "120 psi (8 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "220 lbf (100 kgf)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "0.5 HP (0.37 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 35 × 65″ (1730 × 890 × 1650 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "661 lb (300 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "LS-13P",
+      "glance": [
+       "seams to 51.2″ (1300 mm)",
+       "18 ga (1.2 mm)",
+       "—",
+       "0.5 HP",
+       "661 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "cutting_diameter",
+     "cutting_capacity",
+     "inside_diameter_cutting",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "LS-13P": "closes lock seams to 18 ga (1.2 mm) · 51.2″ (1300 mm) long · Ø3.9–5.1″ pipe"
+    },
+    "note": "Seaming capacity is for mild steel; the metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "Lock seams to 51.2″ (1300 mm) in 18 ga (1.2 mm) · pipe Ø3.9–5.1″",
+   "group": "circle",
+   "brand": "isitan"
+  }
+ }
+}
