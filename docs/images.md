@@ -38,3 +38,11 @@ the Bekamak source folder downloads that set (`details.json`); `tools/bekamak_de
 to 14 per family after the machine views, control panel first, with cleaned-up captions
 (keys `bk-<family>-dNN`).  Re-run both when Bekamak adds a product.  The gallery photos themselves
 are always the full-size lightbox files, never the `_main` thumbnails.
+
+## İşitan photos
+
+isitan.com/en product pages carry one 1366 px photo per model on a white background (crawled by
+`/home/claude/isitan/crawl.py` → `img/`), and the NovoTech İşitan catalogue holds the detail photos and
+some larger renders with alpha masks (`cut/`).  `tools/isitan_data.py` copies the chosen files into
+`tools/src-images/isitan/` (keys `is-…`) and writes the families and pages; the pipeline cuts the white
+photos out automatically.

@@ -16829,5 +16829,1929 @@
    "file": "img/bandsaw/bk-bmsy-heavy-d14-thumb.webp",
    "bytes": 2768
   }
+ },
+ "guide-4-roll-sequence": {
+  "alt": "4-roll plate rolling sequence",
+  "variants": [
+   {
+    "w": 800,
+    "h": 227,
+    "file": "img/guide/guide-4-roll-sequence-800.webp",
+    "bytes": 12756
+   },
+   {
+    "w": 480,
+    "h": 136,
+    "file": "img/guide/guide-4-roll-sequence-480.webp",
+    "bytes": 6926
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 45,
+   "file": "img/guide/guide-4-roll-sequence-thumb.webp",
+   "bytes": 1584
+  }
+ },
+ "guide-double-pinch-sequence": {
+  "alt": "3-roll double-pinch rolling sequence",
+  "variants": [
+   {
+    "w": 800,
+    "h": 130,
+    "file": "img/guide/guide-double-pinch-sequence-800.webp",
+    "bytes": 8286
+   },
+   {
+    "w": 480,
+    "h": 78,
+    "file": "img/guide/guide-double-pinch-sequence-480.webp",
+    "bytes": 4554
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 26,
+   "file": "img/guide/guide-double-pinch-sequence-thumb.webp",
+   "bytes": 962
+  }
+ },
+ "guide-initial-pinch-sequence": {
+  "alt": "3-roll initial-pinch rolling sequence",
+  "variants": [
+   {
+    "w": 800,
+    "h": 141,
+    "file": "img/guide/guide-initial-pinch-sequence-800.webp",
+    "bytes": 7084
+   },
+   {
+    "w": 480,
+    "h": 84,
+    "file": "img/guide/guide-initial-pinch-sequence-480.webp",
+    "bytes": 3776
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 28,
+   "file": "img/guide/guide-initial-pinch-sequence-thumb.webp",
+   "bytes": 834
+  }
+ },
+ "guide-variable-geometry-sequence": {
+  "alt": "3-roll variable-geometry rolling sequence",
+  "variants": [
+   {
+    "w": 800,
+    "h": 121,
+    "file": "img/guide/guide-variable-geometry-sequence-800.webp",
+    "bytes": 8994
+   },
+   {
+    "w": 480,
+    "h": 72,
+    "file": "img/guide/guide-variable-geometry-sequence-480.webp",
+    "bytes": 4584
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 24,
+   "file": "img/guide/guide-variable-geometry-sequence-thumb.webp",
+   "bytes": 906
+  }
+ },
+ "guide-cone-bending": {
+  "alt": "Cone bending on a plate roller \u2014 blank layout and roll positions",
+  "variants": [
+   {
+    "w": 480,
+    "h": 247,
+    "file": "img/guide/guide-cone-bending-480.webp",
+    "bytes": 9332
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 82,
+   "file": "img/guide/guide-cone-bending-thumb.webp",
+   "bytes": 1832
+  }
+ },
+ "guide-rolls-crowning": {
+  "alt": "Roll crowning and the barrel / hourglass effects",
+  "variants": [
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/guide/guide-rolls-crowning-480.webp",
+    "bytes": 12294
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/guide/guide-rolls-crowning-thumb.webp",
+   "bytes": 2286
+  }
+ },
+ "is-4rhms-3100-250": {
+  "alt": "\u0130\u015fitan 4R HMS 3100x250 hydraulic 4-roll plate roller, 10.2 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 608,
+    "file": "img/forming/is-4rhms-3100-250-800.webp",
+    "bytes": 68096
+   },
+   {
+    "w": 480,
+    "h": 365,
+    "file": "img/forming/is-4rhms-3100-250-480.webp",
+    "bytes": 34864
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 122,
+   "file": "img/forming/is-4rhms-3100-250-thumb.webp",
+   "bytes": 7542
+  },
+  "cut": "auto"
+ },
+ "is-4rhms-2050-180": {
+  "alt": "\u0130\u015fitan 4R HMS 2050x180 hydraulic 4-roll plate roller with NC control and plate ejector",
+  "variants": [
+   {
+    "w": 800,
+    "h": 188,
+    "file": "img/forming/is-4rhms-2050-180-800.webp",
+    "bytes": 31210
+   },
+   {
+    "w": 480,
+    "h": 113,
+    "file": "img/forming/is-4rhms-2050-180-480.webp",
+    "bytes": 15906
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 38,
+   "file": "img/forming/is-4rhms-2050-180-thumb.webp",
+   "bytes": 3770
+  },
+  "cut": "auto"
+ },
+ "is-4rhms-1550-220": {
+  "alt": "\u0130\u015fitan 4R HMS 1550x220 4-roll plate roller with overhead crane and side supports",
+  "variants": [
+   {
+    "w": 800,
+    "h": 469,
+    "file": "img/forming/is-4rhms-1550-220-800.webp",
+    "bytes": 59186
+   },
+   {
+    "w": 480,
+    "h": 281,
+    "file": "img/forming/is-4rhms-1550-220-480.webp",
+    "bytes": 29266
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 94,
+   "file": "img/forming/is-4rhms-1550-220-thumb.webp",
+   "bytes": 6346
+  },
+  "cut": "auto"
+ },
+ "is-4rhms-1270-100": {
+  "alt": "\u0130\u015fitan 4R HMS 1270x100 4-roll plate roller with NC control, ejector and mechanical overhead crane",
+  "variants": [
+   {
+    "w": 800,
+    "h": 670,
+    "file": "img/forming/is-4rhms-1270-100-800.webp",
+    "bytes": 77868
+   },
+   {
+    "w": 480,
+    "h": 402,
+    "file": "img/forming/is-4rhms-1270-100-480.webp",
+    "bytes": 37126
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 134,
+   "file": "img/forming/is-4rhms-1270-100-thumb.webp",
+   "bytes": 7760
+  },
+  "cut": "auto"
+ },
+ "is-4rhms-2050-130": {
+  "alt": "\u0130\u015fitan 4R HMS 2050x130 4-roll plate roller \u2014 full automation with vacuum sheet feeder and ejector",
+  "variants": [
+   {
+    "w": 480,
+    "h": 470,
+    "file": "img/forming/is-4rhms-2050-130-480.webp",
+    "bytes": 48490
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 157,
+   "file": "img/forming/is-4rhms-2050-130-thumb.webp",
+   "bytes": 9892
+  },
+  "cut": "auto"
+ },
+ "is-4rhms-650-80": {
+  "alt": "\u0130\u015fitan 4R HMS 650x80 compact hydraulic 4-roll plate roller, 2.1 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 448,
+    "file": "img/forming/is-4rhms-650-80-800.webp",
+    "bytes": 67310
+   },
+   {
+    "w": 480,
+    "h": 269,
+    "file": "img/forming/is-4rhms-650-80-480.webp",
+    "bytes": 31958
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/forming/is-4rhms-650-80-thumb.webp",
+   "bytes": 6590
+  },
+  "cut": "auto"
+ },
+ "is-4rhms-automation-line": {
+  "alt": "4R HMS \u2014 full automation line with sheet feeder, NC control and part ejector",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1008,
+    "file": "img/forming/is-4rhms-automation-line-1200.webp",
+    "bytes": 194284
+   },
+   {
+    "w": 800,
+    "h": 672,
+    "file": "img/forming/is-4rhms-automation-line-800.webp",
+    "bytes": 109920
+   },
+   {
+    "w": 480,
+    "h": 403,
+    "file": "img/forming/is-4rhms-automation-line-480.webp",
+    "bytes": 50934
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 134,
+   "file": "img/forming/is-4rhms-automation-line-thumb.webp",
+   "bytes": 9856
+  }
+ },
+ "is-4rhms-ejector": {
+  "alt": "4R HMS \u2014 hydraulic plate ejector system",
+  "variants": [
+   {
+    "w": 480,
+    "h": 448,
+    "file": "img/forming/is-4rhms-ejector-480.webp",
+    "bytes": 31750
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/forming/is-4rhms-ejector-thumb.webp",
+   "bytes": 7110
+  }
+ },
+ "is-4rhms-safety-switch": {
+  "alt": "4R HMS \u2014 safety switch on the drop-end",
+  "variants": [
+   {
+    "w": 800,
+    "h": 420,
+    "file": "img/forming/is-4rhms-safety-switch-800.webp",
+    "bytes": 21484
+   },
+   {
+    "w": 480,
+    "h": 252,
+    "file": "img/forming/is-4rhms-safety-switch-480.webp",
+    "bytes": 12160
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 84,
+   "file": "img/forming/is-4rhms-safety-switch-thumb.webp",
+   "bytes": 2704
+  }
+ },
+ "is-4rhms-pressure": {
+  "alt": "4R HMS \u2014 pressure adjustment on the bottom roll",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1074,
+    "file": "img/forming/is-4rhms-pressure-1200.webp",
+    "bytes": 50288
+   },
+   {
+    "w": 800,
+    "h": 716,
+    "file": "img/forming/is-4rhms-pressure-800.webp",
+    "bytes": 31700
+   },
+   {
+    "w": 480,
+    "h": 429,
+    "file": "img/forming/is-4rhms-pressure-480.webp",
+    "bytes": 16232
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 143,
+   "file": "img/forming/is-4rhms-pressure-thumb.webp",
+   "bytes": 2476
+  }
+ },
+ "is-4rhms-cone": {
+  "alt": "4R HMS \u2014 standard cone-bending device",
+  "variants": [
+   {
+    "w": 800,
+    "h": 593,
+    "file": "img/forming/is-4rhms-cone-800.webp",
+    "bytes": 56946
+   },
+   {
+    "w": 480,
+    "h": 356,
+    "file": "img/forming/is-4rhms-cone-480.webp",
+    "bytes": 30198
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/forming/is-4rhms-cone-thumb.webp",
+   "bytes": 5782
+  }
+ },
+ "is-4rom-1550-220": {
+  "alt": "\u0130\u015fitan 4R OM 1550x220 4-roll corrugated sheet bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 660,
+    "file": "img/forming/is-4rom-1550-220-800.webp",
+    "bytes": 62574
+   },
+   {
+    "w": 480,
+    "h": 396,
+    "file": "img/forming/is-4rom-1550-220-480.webp",
+    "bytes": 31800
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 132,
+   "file": "img/forming/is-4rom-1550-220-thumb.webp",
+   "bytes": 6894
+  },
+  "cut": "auto"
+ },
+ "is-4rhom-corrugated": {
+  "alt": "\u0130\u015fitan 4R HOM corrugated sheet bending machine rolling galvanized sheet",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 490,
+    "file": "img/forming/is-4rhom-corrugated-1200.webp",
+    "bytes": 68580
+   },
+   {
+    "w": 800,
+    "h": 327,
+    "file": "img/forming/is-4rhom-corrugated-800.webp",
+    "bytes": 38906
+   },
+   {
+    "w": 480,
+    "h": 196,
+    "file": "img/forming/is-4rhom-corrugated-480.webp",
+    "bytes": 19416
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 65,
+   "file": "img/forming/is-4rhom-corrugated-thumb.webp",
+   "bytes": 4176
+  },
+  "cut": "auto"
+ },
+ "is-4rhom-1270-220": {
+  "alt": "\u0130\u015fitan 4R HOM 1270x220 special-production corrugated sheet bending machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 700,
+    "file": "img/forming/is-4rhom-1270-220-1200.webp",
+    "bytes": 112304
+   },
+   {
+    "w": 800,
+    "h": 466,
+    "file": "img/forming/is-4rhom-1270-220-800.webp",
+    "bytes": 66438
+   },
+   {
+    "w": 480,
+    "h": 280,
+    "file": "img/forming/is-4rhom-1270-220-480.webp",
+    "bytes": 31910
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 93,
+   "file": "img/forming/is-4rhom-1270-220-thumb.webp",
+   "bytes": 6048
+  }
+ },
+ "is-4rhom-2050-250": {
+  "alt": "\u0130\u015fitan 4R HOM 2050x250 4-roll corrugated sheet bending machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 749,
+    "file": "img/forming/is-4rhom-2050-250-800.webp",
+    "bytes": 88480
+   },
+   {
+    "w": 480,
+    "h": 449,
+    "file": "img/forming/is-4rhom-2050-250-480.webp",
+    "bytes": 44252
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 150,
+   "file": "img/forming/is-4rhom-2050-250-thumb.webp",
+   "bytes": 8226
+  }
+ },
+ "is-4rh-10x90": {
+  "alt": "\u0130\u015fitan 4RH 10x90 NC-controlled special sheet bending machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 598,
+    "file": "img/forming/is-4rh-10x90-1200.webp",
+    "bytes": 80278
+   },
+   {
+    "w": 800,
+    "h": 399,
+    "file": "img/forming/is-4rh-10x90-800.webp",
+    "bytes": 48156
+   },
+   {
+    "w": 480,
+    "h": 239,
+    "file": "img/forming/is-4rh-10x90-480.webp",
+    "bytes": 23530
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 80,
+   "file": "img/forming/is-4rh-10x90-thumb.webp",
+   "bytes": 5052
+  }
+ },
+ "is-4rom-rings": {
+  "alt": "4R OM 1550x220 with rolled corrugated rings",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 704,
+    "file": "img/forming/is-4rom-rings-1200.webp",
+    "bytes": 121144
+   },
+   {
+    "w": 800,
+    "h": 469,
+    "file": "img/forming/is-4rom-rings-800.webp",
+    "bytes": 69620
+   },
+   {
+    "w": 480,
+    "h": 282,
+    "file": "img/forming/is-4rom-rings-480.webp",
+    "bytes": 33956
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 94,
+   "file": "img/forming/is-4rom-rings-thumb.webp",
+   "bytes": 6664
+  }
+ },
+ "is-mrmh-3100-250": {
+  "alt": "\u0130\u015fitan MRM-H 3100x250 hydraulic 3-roll plate roller, 10 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 423,
+    "file": "img/forming/is-mrmh-3100-250-800.webp",
+    "bytes": 51070
+   },
+   {
+    "w": 480,
+    "h": 254,
+    "file": "img/forming/is-mrmh-3100-250-480.webp",
+    "bytes": 25994
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 85,
+   "file": "img/forming/is-mrmh-3100-250-thumb.webp",
+   "bytes": 5730
+  },
+  "cut": "auto"
+ },
+ "is-mrmh-2050-180": {
+  "alt": "\u0130\u015fitan MRM-H 2050x180 hydraulic 3-roll plate roller \u2014 motor + planetary reducer drive",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 541,
+    "file": "img/forming/is-mrmh-2050-180-1200.webp",
+    "bytes": 74462
+   },
+   {
+    "w": 800,
+    "h": 360,
+    "file": "img/forming/is-mrmh-2050-180-800.webp",
+    "bytes": 47546
+   },
+   {
+    "w": 480,
+    "h": 216,
+    "file": "img/forming/is-mrmh-2050-180-480.webp",
+    "bytes": 24034
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/forming/is-mrmh-2050-180-thumb.webp",
+   "bytes": 5404
+  },
+  "cut": "auto"
+ },
+ "is-mrmh-2550-180": {
+  "alt": "\u0130\u015fitan MRM-H 2550x180 hydraulic 3-roll plate roller, 8.4 ft",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 541,
+    "file": "img/forming/is-mrmh-2550-180-1200.webp",
+    "bytes": 74340
+   },
+   {
+    "w": 800,
+    "h": 360,
+    "file": "img/forming/is-mrmh-2550-180-800.webp",
+    "bytes": 47370
+   },
+   {
+    "w": 480,
+    "h": 216,
+    "file": "img/forming/is-mrmh-2550-180-480.webp",
+    "bytes": 24000
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/forming/is-mrmh-2550-180-thumb.webp",
+   "bytes": 5372
+  },
+  "cut": "auto"
+ },
+ "is-mrmh-1550-150": {
+  "alt": "\u0130\u015fitan MRM-H 1550x150 hydraulic 3-roll plate roller with digital readouts",
+  "variants": [
+   {
+    "w": 800,
+    "h": 276,
+    "file": "img/forming/is-mrmh-1550-150-800.webp",
+    "bytes": 34962
+   },
+   {
+    "w": 480,
+    "h": 166,
+    "file": "img/forming/is-mrmh-1550-150-480.webp",
+    "bytes": 17864
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 55,
+   "file": "img/forming/is-mrmh-1550-150-thumb.webp",
+   "bytes": 4142
+  },
+  "cut": "auto"
+ },
+ "is-mrmh-1270-180": {
+  "alt": "\u0130\u015fitan MRM-H 1270x180 hydraulic 3-roll plate roller, 4.2 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 361,
+    "file": "img/forming/is-mrmh-1270-180-800.webp",
+    "bytes": 46654
+   },
+   {
+    "w": 480,
+    "h": 216,
+    "file": "img/forming/is-mrmh-1270-180-480.webp",
+    "bytes": 23780
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/forming/is-mrmh-1270-180-thumb.webp",
+   "bytes": 5278
+  },
+  "cut": "auto"
+ },
+ "is-mrmh-1050-100": {
+  "alt": "\u0130\u015fitan MRM-H 1050x100 hydraulic 3-roll plate roller, 3.4 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 361,
+    "file": "img/forming/is-mrmh-1050-100-800.webp",
+    "bytes": 46720
+   },
+   {
+    "w": 480,
+    "h": 216,
+    "file": "img/forming/is-mrmh-1050-100-480.webp",
+    "bytes": 23734
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/forming/is-mrmh-1050-100-thumb.webp",
+   "bytes": 5254
+  },
+  "cut": "auto"
+ },
+ "is-mrmh-wire-grooves": {
+  "alt": "MRM-H \u2014 optional wire grooves on the roll ends",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 402,
+    "file": "img/forming/is-mrmh-wire-grooves-1200.webp",
+    "bytes": 62786
+   },
+   {
+    "w": 800,
+    "h": 268,
+    "file": "img/forming/is-mrmh-wire-grooves-800.webp",
+    "bytes": 37172
+   },
+   {
+    "w": 480,
+    "h": 161,
+    "file": "img/forming/is-mrmh-wire-grooves-480.webp",
+    "bytes": 17372
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 54,
+   "file": "img/forming/is-mrmh-wire-grooves-thumb.webp",
+   "bytes": 4050
+  }
+ },
+ "is-mrmh-drop-end": {
+  "alt": "MRM-H \u2014 hydraulic drop-end and roll-end detail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 522,
+    "file": "img/forming/is-mrmh-drop-end-1200.webp",
+    "bytes": 60916
+   },
+   {
+    "w": 800,
+    "h": 348,
+    "file": "img/forming/is-mrmh-drop-end-800.webp",
+    "bytes": 35128
+   },
+   {
+    "w": 480,
+    "h": 209,
+    "file": "img/forming/is-mrmh-drop-end-480.webp",
+    "bytes": 17792
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 70,
+   "file": "img/forming/is-mrmh-drop-end-thumb.webp",
+   "bytes": 3960
+  }
+ },
+ "is-3rhmd-1270-90": {
+  "alt": "\u0130\u015fitan 3R HMD 1270x90 mechanical-hydraulic 3-roll plate roller",
+  "variants": [
+   {
+    "w": 800,
+    "h": 466,
+    "file": "img/forming/is-3rhmd-1270-90-800.webp",
+    "bytes": 63418
+   },
+   {
+    "w": 480,
+    "h": 280,
+    "file": "img/forming/is-3rhmd-1270-90-480.webp",
+    "bytes": 31162
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 93,
+   "file": "img/forming/is-3rhmd-1270-90-thumb.webp",
+   "bytes": 6836
+  },
+  "cut": "auto"
+ },
+ "is-mrms-2050-190": {
+  "alt": "\u0130\u015fitan MRM-S 2050x190 motorized 3-roll plate roller, 6.7 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/forming/is-mrms-2050-190-800.webp",
+    "bytes": 44408
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/forming/is-mrms-2050-190-480.webp",
+    "bytes": 23056
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/forming/is-mrms-2050-190-thumb.webp",
+   "bytes": 5372
+  },
+  "cut": "auto"
+ },
+ "is-mrms-1050-150": {
+  "alt": "\u0130\u015fitan MRM-S 1050x150 motorized 3-roll plate roller, 3.4 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 434,
+    "file": "img/forming/is-mrms-1050-150-800.webp",
+    "bytes": 44388
+   },
+   {
+    "w": 480,
+    "h": 260,
+    "file": "img/forming/is-mrms-1050-150-480.webp",
+    "bytes": 23000
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 87,
+   "file": "img/forming/is-mrms-1050-150-thumb.webp",
+   "bytes": 5366
+  },
+  "cut": "auto"
+ },
+ "is-mrms-1550-150": {
+  "alt": "\u0130\u015fitan MRM-S 1550x150 motorized 3-roll plate roller, 5.1 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 434,
+    "file": "img/forming/is-mrms-1550-150-800.webp",
+    "bytes": 44486
+   },
+   {
+    "w": 480,
+    "h": 260,
+    "file": "img/forming/is-mrms-1550-150-480.webp",
+    "bytes": 23076
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 87,
+   "file": "img/forming/is-mrms-1550-150-thumb.webp",
+   "bytes": 5354
+  },
+  "cut": "auto"
+ },
+ "is-mrms-2550-190": {
+  "alt": "\u0130\u015fitan MRM-S 2550x190 motorized 3-roll plate roller, 8.4 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 458,
+    "file": "img/forming/is-mrms-2550-190-800.webp",
+    "bytes": 40698
+   },
+   {
+    "w": 480,
+    "h": 275,
+    "file": "img/forming/is-mrms-2550-190-480.webp",
+    "bytes": 21150
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 92,
+   "file": "img/forming/is-mrms-2550-190-thumb.webp",
+   "bytes": 4774
+  },
+  "cut": "auto"
+ },
+ "is-mrms-3050-190": {
+  "alt": "\u0130\u015fitan MRM-S 3050x190 motorized 3-roll plate roller, 10 ft",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 603,
+    "file": "img/forming/is-mrms-3050-190-1200.webp",
+    "bytes": 60162
+   },
+   {
+    "w": 800,
+    "h": 402,
+    "file": "img/forming/is-mrms-3050-190-800.webp",
+    "bytes": 38778
+   },
+   {
+    "w": 480,
+    "h": 241,
+    "file": "img/forming/is-mrms-3050-190-480.webp",
+    "bytes": 20084
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 80,
+   "file": "img/forming/is-mrms-3050-190-thumb.webp",
+   "bytes": 4576
+  },
+  "cut": "auto"
+ },
+ "is-mrms-composite": {
+  "alt": "\u0130\u015fitan MRM-S special model with segmented plastic-coated top roll for aluminum composite panels",
+  "variants": [
+   {
+    "w": 800,
+    "h": 349,
+    "file": "img/forming/is-mrms-composite-800.webp",
+    "bytes": 45378
+   },
+   {
+    "w": 480,
+    "h": 209,
+    "file": "img/forming/is-mrms-composite-480.webp",
+    "bytes": 22962
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 70,
+   "file": "img/forming/is-mrms-composite-thumb.webp",
+   "bytes": 5268
+  },
+  "cut": "auto"
+ },
+ "is-mrms-panel": {
+  "alt": "MRM-S \u2014 optional control panel with digital readout",
+  "variants": [
+   {
+    "w": 480,
+    "h": 472,
+    "file": "img/forming/is-mrms-panel-480.webp",
+    "bytes": 26628
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 157,
+   "file": "img/forming/is-mrms-panel-thumb.webp",
+   "bytes": 5414
+  }
+ },
+ "is-mrms-section-rolls": {
+  "alt": "MRM-S \u2014 optional extended roll shafts and section bending roll set",
+  "variants": [
+   {
+    "w": 480,
+    "h": 685,
+    "file": "img/forming/is-mrms-section-rolls-480.webp",
+    "bytes": 38282
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 112,
+   "h": 160,
+   "file": "img/forming/is-mrms-section-rolls-thumb.webp",
+   "bytes": 5064
+  }
+ },
+ "is-mrms-cone": {
+  "alt": "MRM-S \u2014 standard cone-bending device",
+  "variants": [
+   {
+    "w": 800,
+    "h": 658,
+    "file": "img/forming/is-mrms-cone-800.webp",
+    "bytes": 36896
+   },
+   {
+    "w": 480,
+    "h": 395,
+    "file": "img/forming/is-mrms-cone-480.webp",
+    "bytes": 19362
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 132,
+   "file": "img/forming/is-mrms-cone-thumb.webp",
+   "bytes": 4034
+  }
+ },
+ "is-mrms-drop-end": {
+  "alt": "MRM-S \u2014 manual drop-end with safety switch",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 896,
+    "file": "img/forming/is-mrms-drop-end-1200.webp",
+    "bytes": 85564
+   },
+   {
+    "w": 800,
+    "h": 597,
+    "file": "img/forming/is-mrms-drop-end-800.webp",
+    "bytes": 48852
+   },
+   {
+    "w": 480,
+    "h": 358,
+    "file": "img/forming/is-mrms-drop-end-480.webp",
+    "bytes": 24684
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/forming/is-mrms-drop-end-thumb.webp",
+   "bytes": 5472
+  }
+ },
+ "is-mrms-delrin": {
+  "alt": "MRM-S \u2014 segmented plastic (Delrin) top roll for composite panels",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 720,
+    "file": "img/forming/is-mrms-delrin-1200.webp",
+    "bytes": 67750
+   },
+   {
+    "w": 800,
+    "h": 480,
+    "file": "img/forming/is-mrms-delrin-800.webp",
+    "bytes": 40024
+   },
+   {
+    "w": 480,
+    "h": 288,
+    "file": "img/forming/is-mrms-delrin-480.webp",
+    "bytes": 19738
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 96,
+   "file": "img/forming/is-mrms-delrin-thumb.webp",
+   "bytes": 4370
+  }
+ },
+ "is-irm-1550-140": {
+  "alt": "\u0130\u015fitan IRM 1550x140 motorized 3-roll plate roller, 5.1 ft",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 610,
+    "file": "img/forming/is-irm-1550-140-1200.webp",
+    "bytes": 70556
+   },
+   {
+    "w": 800,
+    "h": 406,
+    "file": "img/forming/is-irm-1550-140-800.webp",
+    "bytes": 40254
+   },
+   {
+    "w": 480,
+    "h": 244,
+    "file": "img/forming/is-irm-1550-140-480.webp",
+    "bytes": 20166
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 81,
+   "file": "img/forming/is-irm-1550-140-thumb.webp",
+   "bytes": 4580
+  },
+  "cut": "auto"
+ },
+ "is-irm-1050-130": {
+  "alt": "\u0130\u015fitan IRM 1050x130 motorized 3-roll plate roller \u2014 compact cast-frame model",
+  "variants": [
+   {
+    "w": 800,
+    "h": 497,
+    "file": "img/forming/is-irm-1050-130-800.webp",
+    "bytes": 50754
+   },
+   {
+    "w": 480,
+    "h": 298,
+    "file": "img/forming/is-irm-1050-130-480.webp",
+    "bytes": 28868
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/forming/is-irm-1050-130-thumb.webp",
+   "bytes": 6784
+  },
+  "cut": "auto"
+ },
+ "is-irm-1270-140": {
+  "alt": "\u0130\u015fitan IRM 1270x140 motorized 3-roll plate roller, 4.2 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 381,
+    "file": "img/forming/is-irm-1270-140-800.webp",
+    "bytes": 35948
+   },
+   {
+    "w": 480,
+    "h": 228,
+    "file": "img/forming/is-irm-1270-140-480.webp",
+    "bytes": 18566
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 76,
+   "file": "img/forming/is-irm-1270-140-thumb.webp",
+   "bytes": 4420
+  },
+  "cut": "auto"
+ },
+ "is-irm-2050-130": {
+  "alt": "\u0130\u015fitan IRM 2050x130 motorized 3-roll plate roller, 6.7 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 335,
+    "file": "img/forming/is-irm-2050-130-800.webp",
+    "bytes": 45026
+   },
+   {
+    "w": 480,
+    "h": 201,
+    "file": "img/forming/is-irm-2050-130-480.webp",
+    "bytes": 22572
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 67,
+   "file": "img/forming/is-irm-2050-130-thumb.webp",
+   "bytes": 4902
+  },
+  "cut": "auto"
+ },
+ "is-irm-2550-130": {
+  "alt": "\u0130\u015fitan IRM 2550x140 motorized 3-roll plate roller, 8.4 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 338,
+    "file": "img/forming/is-irm-2550-130-800.webp",
+    "bytes": 42694
+   },
+   {
+    "w": 480,
+    "h": 203,
+    "file": "img/forming/is-irm-2550-130-480.webp",
+    "bytes": 21844
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 68,
+   "file": "img/forming/is-irm-2550-130-thumb.webp",
+   "bytes": 4900
+  },
+  "cut": "auto"
+ },
+ "is-irm-drop-end": {
+  "alt": "IRM \u2014 standard manual drop-end",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 739,
+    "file": "img/forming/is-irm-drop-end-1200.webp",
+    "bytes": 108916
+   },
+   {
+    "w": 800,
+    "h": 493,
+    "file": "img/forming/is-irm-drop-end-800.webp",
+    "bytes": 62290
+   },
+   {
+    "w": 480,
+    "h": 296,
+    "file": "img/forming/is-irm-drop-end-480.webp",
+    "bytes": 30168
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/forming/is-irm-drop-end-thumb.webp",
+   "bytes": 6634
+  }
+ },
+ "is-rm-1270-90": {
+  "alt": "\u0130\u015fitan RM 1270x90 motorized 3-roll plate roller with foot-pedal control",
+  "variants": [
+   {
+    "w": 800,
+    "h": 493,
+    "file": "img/forming/is-rm-1270-90-800.webp",
+    "bytes": 65116
+   },
+   {
+    "w": 480,
+    "h": 296,
+    "file": "img/forming/is-rm-1270-90-480.webp",
+    "bytes": 33544
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/forming/is-rm-1270-90-thumb.webp",
+   "bytes": 7690
+  },
+  "cut": "auto"
+ },
+ "is-rm-1050-90": {
+  "alt": "\u0130\u015fitan RM 1050x90 motorized 3-roll plate roller, 3.4 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 552,
+    "file": "img/forming/is-rm-1050-90-800.webp",
+    "bytes": 53810
+   },
+   {
+    "w": 480,
+    "h": 331,
+    "file": "img/forming/is-rm-1050-90-480.webp",
+    "bytes": 31362
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 110,
+   "file": "img/forming/is-rm-1050-90-thumb.webp",
+   "bytes": 7514
+  },
+  "cut": "auto"
+ },
+ "is-rm-1550-90": {
+  "alt": "\u0130\u015fitan RM 1550x90 motorized 3-roll plate roller, 5.1 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 447,
+    "file": "img/forming/is-rm-1550-90-800.webp",
+    "bytes": 55806
+   },
+   {
+    "w": 480,
+    "h": 268,
+    "file": "img/forming/is-rm-1550-90-480.webp",
+    "bytes": 29406
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 89,
+   "file": "img/forming/is-rm-1550-90-thumb.webp",
+   "bytes": 7000
+  },
+  "cut": "auto"
+ },
+ "is-rm-2050-95": {
+  "alt": "\u0130\u015fitan RM 2050x95 motorized 3-roll plate roller, 6.7 ft",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 532,
+    "file": "img/forming/is-rm-2050-95-1200.webp",
+    "bytes": 66168
+   },
+   {
+    "w": 800,
+    "h": 355,
+    "file": "img/forming/is-rm-2050-95-800.webp",
+    "bytes": 43134
+   },
+   {
+    "w": 480,
+    "h": 213,
+    "file": "img/forming/is-rm-2050-95-480.webp",
+    "bytes": 22620
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 71,
+   "file": "img/forming/is-rm-2050-95-thumb.webp",
+   "bytes": 5560
+  },
+  "cut": "auto"
+ },
+ "is-rm-drop-end": {
+  "alt": "RM \u2014 standard manual drop-end",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 894,
+    "file": "img/forming/is-rm-drop-end-1200.webp",
+    "bytes": 134948
+   },
+   {
+    "w": 800,
+    "h": 596,
+    "file": "img/forming/is-rm-drop-end-800.webp",
+    "bytes": 80068
+   },
+   {
+    "w": 480,
+    "h": 358,
+    "file": "img/forming/is-rm-drop-end-480.webp",
+    "bytes": 40158
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/forming/is-rm-drop-end-thumb.webp",
+   "bytes": 8736
+  },
+  "cut": "auto"
+ },
+ "is-rm-safety-switch": {
+  "alt": "RM \u2014 standard drop-end safety switch",
+  "variants": [
+   {
+    "w": 480,
+    "h": 341,
+    "file": "img/forming/is-rm-safety-switch-480.webp",
+    "bytes": 21702
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 114,
+   "file": "img/forming/is-rm-safety-switch-thumb.webp",
+   "bytes": 3966
+  }
+ },
+ "is-rs-1270-90": {
+  "alt": "\u0130\u015fitan RS 1270x90 manual 3-roll plate roller \u2014 hand-crank operation",
+  "variants": [
+   {
+    "w": 800,
+    "h": 591,
+    "file": "img/forming/is-rs-1270-90-800.webp",
+    "bytes": 63632
+   },
+   {
+    "w": 480,
+    "h": 354,
+    "file": "img/forming/is-rs-1270-90-480.webp",
+    "bytes": 33040
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 118,
+   "file": "img/forming/is-rs-1270-90-thumb.webp",
+   "bytes": 7702
+  },
+  "cut": "auto"
+ },
+ "is-rs-1050-90": {
+  "alt": "\u0130\u015fitan RS 1050x90 manual plate roller, 3.4 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 517,
+    "file": "img/forming/is-rs-1050-90-800.webp",
+    "bytes": 52012
+   },
+   {
+    "w": 480,
+    "h": 310,
+    "file": "img/forming/is-rs-1050-90-480.webp",
+    "bytes": 27592
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/forming/is-rs-1050-90-thumb.webp",
+   "bytes": 6968
+  },
+  "cut": "auto"
+ },
+ "is-rs-1550-90": {
+  "alt": "\u0130\u015fitan RS 1550x90 manual plate roller, 5.1 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 591,
+    "file": "img/forming/is-rs-1550-90-800.webp",
+    "bytes": 63682
+   },
+   {
+    "w": 480,
+    "h": 354,
+    "file": "img/forming/is-rs-1550-90-480.webp",
+    "bytes": 32896
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 118,
+   "file": "img/forming/is-rs-1550-90-thumb.webp",
+   "bytes": 7704
+  },
+  "cut": "auto"
+ },
+ "is-rs-2050-95": {
+  "alt": "\u0130\u015fitan RS 2050x95 manual plate roller, 6.7 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 493,
+    "file": "img/forming/is-rs-2050-95-800.webp",
+    "bytes": 57384
+   },
+   {
+    "w": 480,
+    "h": 296,
+    "file": "img/forming/is-rs-2050-95-480.webp",
+    "bytes": 30000
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/forming/is-rs-2050-95-thumb.webp",
+   "bytes": 6962
+  },
+  "cut": "auto"
+ },
+ "is-ir-1270-75": {
+  "alt": "\u0130\u015fitan IR 1270x75 motorized slip roll with foot pedal",
+  "variants": [
+   {
+    "w": 480,
+    "h": 409,
+    "file": "img/forming/is-ir-1270-75-480.webp",
+    "bytes": 56790
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 136,
+   "file": "img/forming/is-ir-1270-75-thumb.webp",
+   "bytes": 10962
+  },
+  "cut": "auto"
+ },
+ "is-ir-1050-56": {
+  "alt": "\u0130\u015fitan IR 1050x56 motorized slip roll \u2014 reinforced steel frame",
+  "variants": [
+   {
+    "w": 800,
+    "h": 575,
+    "file": "img/forming/is-ir-1050-56-800.webp",
+    "bytes": 56190
+   },
+   {
+    "w": 480,
+    "h": 345,
+    "file": "img/forming/is-ir-1050-56-480.webp",
+    "bytes": 30906
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 115,
+   "file": "img/forming/is-ir-1050-56-thumb.webp",
+   "bytes": 7600
+  },
+  "cut": "auto"
+ },
+ "is-ir-1550-75": {
+  "alt": "\u0130\u015fitan IR 1550x75 motorized slip roll, 5.1 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 642,
+    "file": "img/forming/is-ir-1550-75-800.webp",
+    "bytes": 78268
+   },
+   {
+    "w": 480,
+    "h": 385,
+    "file": "img/forming/is-ir-1550-75-480.webp",
+    "bytes": 40490
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 128,
+   "file": "img/forming/is-ir-1550-75-thumb.webp",
+   "bytes": 8284
+  },
+  "cut": "auto"
+ },
+ "is-ir-2050-75": {
+  "alt": "\u0130\u015fitan IR 2050x75 motorized slip roll, 6.7 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 642,
+    "file": "img/forming/is-ir-2050-75-800.webp",
+    "bytes": 78784
+   },
+   {
+    "w": 480,
+    "h": 385,
+    "file": "img/forming/is-ir-2050-75-480.webp",
+    "bytes": 40550
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 128,
+   "file": "img/forming/is-ir-2050-75-thumb.webp",
+   "bytes": 8298
+  },
+  "cut": "auto"
+ },
+ "is-ir-drop-end": {
+  "alt": "IR \u2014 standard manual drop-end",
+  "variants": [
+   {
+    "w": 480,
+    "h": 379,
+    "file": "img/forming/is-ir-drop-end-480.webp",
+    "bytes": 52878
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 126,
+   "file": "img/forming/is-ir-drop-end-thumb.webp",
+   "bytes": 9646
+  }
+ },
+ "is-ir-geared-lock": {
+  "alt": "IR \u2014 geared lock for quick back-roll adjustment",
+  "variants": [
+   {
+    "w": 480,
+    "h": 367,
+    "file": "img/forming/is-ir-geared-lock-480.webp",
+    "bytes": 39546
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 122,
+   "file": "img/forming/is-ir-geared-lock-thumb.webp",
+   "bytes": 7468
+  }
+ },
+ "is-ir-safety-switch": {
+  "alt": "IR \u2014 optional drop-end safety switch",
+  "variants": [
+   {
+    "w": 480,
+    "h": 345,
+    "file": "img/forming/is-ir-safety-switch-480.webp",
+    "bytes": 13242
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 115,
+   "file": "img/forming/is-ir-safety-switch-thumb.webp",
+   "bytes": 3074
+  }
+ },
+ "is-r-1050-56": {
+  "alt": "\u0130\u015fitan R 1050x56 manual slip roll on stand \u2014 hand-crank operation",
+  "variants": [
+   {
+    "w": 800,
+    "h": 615,
+    "file": "img/forming/is-r-1050-56-800.webp",
+    "bytes": 64302
+   },
+   {
+    "w": 480,
+    "h": 369,
+    "file": "img/forming/is-r-1050-56-480.webp",
+    "bytes": 35738
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/forming/is-r-1050-56-thumb.webp",
+   "bytes": 7842
+  },
+  "cut": "auto"
+ },
+ "is-r-1270-75": {
+  "alt": "\u0130\u015fitan R 1270x75 manual slip roll, 4.2 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 414,
+    "file": "img/forming/is-r-1270-75-800.webp",
+    "bytes": 35624
+   },
+   {
+    "w": 480,
+    "h": 249,
+    "file": "img/forming/is-r-1270-75-480.webp",
+    "bytes": 19478
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 83,
+   "file": "img/forming/is-r-1270-75-thumb.webp",
+   "bytes": 5196
+  },
+  "cut": "auto"
+ },
+ "is-r-1550-68": {
+  "alt": "\u0130\u015fitan R 1550x68 manual slip roll, 5.1 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 414,
+    "file": "img/forming/is-r-1550-68-800.webp",
+    "bytes": 35658
+   },
+   {
+    "w": 480,
+    "h": 249,
+    "file": "img/forming/is-r-1550-68-480.webp",
+    "bytes": 19486
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 83,
+   "file": "img/forming/is-r-1550-68-thumb.webp",
+   "bytes": 5206
+  },
+  "cut": "auto"
+ },
+ "is-r-2050-75": {
+  "alt": "\u0130\u015fitan R 2050x75 manual slip roll, 6.7 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 525,
+    "file": "img/forming/is-r-2050-75-800.webp",
+    "bytes": 63056
+   },
+   {
+    "w": 480,
+    "h": 315,
+    "file": "img/forming/is-r-2050-75-480.webp",
+    "bytes": 33122
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/forming/is-r-2050-75-thumb.webp",
+   "bytes": 7126
+  },
+  "cut": "auto"
+ },
+ "is-r-1270-46": {
+  "alt": "\u0130\u015fitan R 1270x46 bench slip roll with geared lock for quick back-roll adjustment",
+  "variants": [
+   {
+    "w": 800,
+    "h": 227,
+    "file": "img/forming/is-r-1270-46-800.webp",
+    "bytes": 37808
+   },
+   {
+    "w": 480,
+    "h": 136,
+    "file": "img/forming/is-r-1270-46-480.webp",
+    "bytes": 20454
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 45,
+   "file": "img/forming/is-r-1270-46-thumb.webp",
+   "bytes": 4316
+  },
+  "cut": "auto"
+ },
+ "is-r-610-46": {
+  "alt": "\u0130\u015fitan R 610x46 bench slip roll without stand, 2 ft",
+  "variants": [
+   {
+    "w": 480,
+    "h": 229,
+    "file": "img/forming/is-r-610-46-480.webp",
+    "bytes": 28960
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 76,
+   "file": "img/forming/is-r-610-46-thumb.webp",
+   "bytes": 5692
+  }
+ },
+ "is-r-pinch-lever": {
+  "alt": "R series \u2014 easy bottom-roll pinching lever",
+  "variants": [
+   {
+    "w": 470,
+    "h": 400,
+    "file": "img/forming/is-r-pinch-lever-470.webp",
+    "bytes": 12114
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 136,
+   "file": "img/forming/is-r-pinch-lever-thumb.webp",
+   "bytes": 3024
+  }
+ },
+ "is-r-wire-grooves": {
+  "alt": "R series \u2014 wire grooves as standard",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 333,
+    "file": "img/forming/is-r-wire-grooves-1200.webp",
+    "bytes": 77248
+   },
+   {
+    "w": 800,
+    "h": 222,
+    "file": "img/forming/is-r-wire-grooves-800.webp",
+    "bytes": 42780
+   },
+   {
+    "w": 480,
+    "h": 133,
+    "file": "img/forming/is-r-wire-grooves-480.webp",
+    "bytes": 19930
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 44,
+   "file": "img/forming/is-r-wire-grooves-thumb.webp",
+   "bytes": 4210
+  }
+ },
+ "is-rstm-1270-86": {
+  "alt": "\u0130\u015fitan RST-M 1270x86 motorized economical plate roller with foot pedal",
+  "variants": [
+   {
+    "w": 800,
+    "h": 614,
+    "file": "img/forming/is-rstm-1270-86-800.webp",
+    "bytes": 82132
+   },
+   {
+    "w": 480,
+    "h": 368,
+    "file": "img/forming/is-rstm-1270-86-480.webp",
+    "bytes": 42960
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/forming/is-rstm-1270-86-thumb.webp",
+   "bytes": 9492
+  },
+  "cut": "auto"
+ },
+ "is-rst-1270-86": {
+  "alt": "\u0130\u015fitan RST 1270x86 manual economical plate roller",
+  "variants": [
+   {
+    "w": 800,
+    "h": 511,
+    "file": "img/forming/is-rst-1270-86-800.webp",
+    "bytes": 60976
+   },
+   {
+    "w": 480,
+    "h": 307,
+    "file": "img/forming/is-rst-1270-86-480.webp",
+    "bytes": 32288
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 102,
+   "file": "img/forming/is-rst-1270-86-thumb.webp",
+   "bytes": 7216
+  },
+  "cut": "auto"
+ },
+ "is-rst-screws": {
+  "alt": "RST \u2014 manual up/down setting of the bottom and back rolls by screws",
+  "variants": [
+   {
+    "w": 800,
+    "h": 505,
+    "file": "img/forming/is-rst-screws-800.webp",
+    "bytes": 77126
+   },
+   {
+    "w": 480,
+    "h": 303,
+    "file": "img/forming/is-rst-screws-480.webp",
+    "bytes": 37366
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 101,
+   "file": "img/forming/is-rst-screws-thumb.webp",
+   "bytes": 7480
+  }
  }
 }

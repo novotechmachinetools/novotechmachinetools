@@ -18,6 +18,8 @@ RewriteRule ^([^.]+)$ $1.html [L]
 # ---- Old URLs that changed (add one line per moved page) ---------------------
 # RedirectMatch 301 ^/old-page(\.html)?$ /new-page
 RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw
+RedirectMatch 301 ^/plate-roller-bender(\.html)?$ /plate-rollers
+RedirectMatch 301 ^/plate-roller-buying-guide(\.html)?$ /plate-rollers#buying-guide
 RedirectMatch 301 ^/(manual|semi-automatic|automatic|double-column)-band-saws(\.html)?$ /band-saw
 RedirectMatch 301 ^/novofab-manual-band-saws(\.html)?$ /band-saw
 RedirectMatch 301 ^/novotech-manual-band-saws(\.html)?$ /band-saw

@@ -91,6 +91,34 @@
 </div>
 {%- endmacro %}
 
+{# ---------- generic spec tables (one family, several model groups); cells arrive finished from the data generator ---------- #}
+{% macro spec_tables(f) -%}
+<div class="specs" id="{{ f.id }}-specs">
+  {% for t in f.tables %}
+  <section class="table-scroll" tabindex="0" aria-label="{{ f.name }} — {{ t.title }} technical specifications">
+    <table class="spec-table">
+      <caption>{{ t.title }}{% if t.sub %} <small>{{ t.sub }}</small>{% endif %}</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="label-col">Model</th>
+          {% for m in t.models %}<th scope="col">{{ m }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in t.rows %}
+        <tr class="row-text{{ ' row-key' if r.key else '' }}">
+          <th scope="row">{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>
+          {% for c in r.cells %}<td>{{ c }}</td>{% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endfor %}
+  <p class="table-note">{{ f.specs.note }} {{ site.voltage_note }}</p>
+</div>
+{%- endmacro %}
+
 {# ---------- simple two-column (or multi-column) table ---------- #}
 {% macro extra_table(t) -%}
 <div class="specs">

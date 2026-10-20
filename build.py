@@ -459,7 +459,12 @@ def caption_for(f, alt):
 
 
 def prepare_family(f):
-    if f.get("specs") and f["specs"].get("kind") == "bandsaw":
+    if f.get("specs") and f["specs"].get("kind") == "table":
+        # generic spec kind: the data generator supplies finished tables (cells already "imperial (metric)")
+        f["tables"] = f["specs"]["tables"]
+        f["headline"] = f.get("headline") or f["specs"].get("headline", "")
+        f["model_caps"] = {**(f["specs"].get("caps") or {}), **(f.get("model_caps") or {})}
+    elif f.get("specs") and f["specs"].get("kind") == "bandsaw":
         f["table"] = build_bandsaw_table(f["specs"])
         rounds = [bandsaw_round0(m) for m in f["specs"]["models"]]
         f["max_mm"] = max(rounds) if rounds else 0
@@ -484,6 +489,11 @@ def range_table(subpages):
         for f in sp["families"]:
             spec = f.get("specs")
             if not spec:
+                continue
+            if spec.get("kind") == "table":
+                for m in spec["models"]:
+                    rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "kind": sp.get("nav_label") or sp["title"],
+                                 "cols": m.get("glance", []), "line": ""})
                 continue
             if spec.get("kind") == "bandsaw":
                 for m in spec["models"]:
@@ -515,6 +525,7 @@ def render_page(page):
     if page.get("subpages"):  # hub: resolve each sub-page's families and derive groups for the quote form / structured data
         for sp in page["subpages"]:
             sp["families"] = [prepare_family(family(page, fid)) for fid in sp["families"]]
+            sp["has_videos"] = any(f.get("videos") for f in sp["families"])
             sp["href"] = sp["slug"] + ".html"
         page["groups"] = [{"id": sp["slug"], "title": sp["title"], "families": sp["families"]} for sp in page["subpages"]]
         if page.get("lines"):   # two product lines, each with its own sub-pages and range table
@@ -569,7 +580,10 @@ def ai_catalogue(pages):
                 models = []
                 for i, m in enumerate(spec.get("models", [])):
                     entry = {"name": m["name"]}
-                    if spec.get("kind") == "bandsaw":
+                    if spec.get("kind") == "table":
+                        for k, v in zip(spec.get("glance_keys", []), m.get("glance", [])):
+                            entry[k] = v
+                    elif spec.get("kind") == "bandsaw":
                         r = bandsaw_round0(m)
                         rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
                         angles = [a for a in (m.get("capacity_mm") or {}) if a != "0"]

@@ -83,8 +83,26 @@
           "href": "iron-worker-punch.html"
         },
         {
-          "label": "Plate rollers",
-          "href": "plate-roller-bender.html"
+          "label": "Plate rollers & slip rolls",
+          "href": "plate-rollers.html",
+          "children": [
+            {
+              "label": "Hydraulic 4-roll plate rollers",
+              "href": "hydraulic-4-roll-plate-rollers.html"
+            },
+            {
+              "label": "Hydraulic 3-roll plate rollers",
+              "href": "hydraulic-3-roll-plate-rollers.html"
+            },
+            {
+              "label": "Motorized 3-roll plate rollers",
+              "href": "motorized-plate-rollers.html"
+            },
+            {
+              "label": "Slip rolls",
+              "href": "slip-rolls.html"
+            }
+          ]
         },
         {
           "label": "Angle rolls",

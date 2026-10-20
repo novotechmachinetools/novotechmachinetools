@@ -1,0 +1,131 @@
+{
+ "slug": "hydraulic-3-roll-plate-rollers",
+ "template": "category.html",
+ "family_set": "plate-rolls",
+ "title": "Hydraulic 3-Roll Plate Rollers — Initial-Pinch Plate Rolling Machines in Canada | NovoTech",
+ "artifact_title": "Hydraulic 3-roll plate rollers",
+ "meta_description": "İşitan MRM-H hydraulic 3-roll plate rollers in Canada: initial-pinch plate rolling machines from 2.1 ft to 10 ft, up to 1/2″ plate, hydraulic drop-end and digital readouts; 3R HMD joystick rolls. Specs in inches, CSA panels, parts in Mississauga, ON.",
+ "h1": "Hydraulic 3-roll plate rollers",
+ "intro": "Initial-pinch 3-roll plate rolling machines with hydraulic positioning of the back and bottom rolls and motor-driven rolls: the operator pinches the sheet, pre-bends the leading edge against the back roll, rolls the cylinder and opens the hydraulic drop-end to take it off. İşitan's MRM-H covers 2.1 ft to 10 ft and plate to 1/2″ with two digital readouts and cone bending as standard; the compact 3R HMD puts hydraulic back-roll positioning with a joystick on a cast-iron frame for ducting and light fabrication. Hydraulic plate rollers with CSA-approved panels, sold and supported from Mississauga, ON.",
+ "hero_points": [
+  "MRM-H: 32 models from 2.1 ft to 10 ft (650–3100 mm), up to 1/2″ (12 mm)",
+  "Hydraulic back and bottom rolls, hydraulic drop-end, 2 digital readouts",
+  "3R HMD: all-roll drive with hydraulic joystick back roll from 4.2 ft"
+ ],
+ "hero_image": "is-mrmh-3100-250",
+ "hero_image_secondary": [
+  "is-mrmh-2050-180",
+  "is-3rhmd-1270-90"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Plate rollers & slip rolls",
+   "href": "plate-rollers.html"
+  },
+  {
+   "label": "Hydraulic 3-roll plate rollers"
+  }
+ ],
+ "hero_brand_line": "İşitan plate rollers are made in Turkey by İşitan Makine — plate rolls and beading machines since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "section": {
+  "label": "Plate rollers & slip rolls",
+  "hub": {
+   "href": "plate-rollers.html",
+   "label": "All plate rollers & slip rolls",
+   "image": "is-4rhms-3100-250",
+   "blurb": "Every İşitan plate roller and slip roll NovoTech supplies, with the capacity table for the whole range."
+  },
+  "pages": [
+   {
+    "href": "hydraulic-4-roll-plate-rollers.html",
+    "label": "4-roll plate rollers",
+    "current": false
+   },
+   {
+    "href": "hydraulic-3-roll-plate-rollers.html",
+    "label": "Hydraulic 3-roll",
+    "current": true
+   },
+   {
+    "href": "motorized-plate-rollers.html",
+    "label": "Motorized 3-roll",
+    "current": false
+   },
+   {
+    "href": "slip-rolls.html",
+    "label": "Slip rolls",
+    "current": false
+   }
+  ]
+ },
+ "groups": [
+  {
+   "id": "3-roll-hydraulic-group",
+   "title": "Hydraulic 3-roll plate rollers",
+   "lead": "MRM-H initial-pinch plate rolls and the compact 3R HMD with hydraulic back-roll positioning.",
+   "families": [
+    "isitan-mrm-h",
+    "isitan-3r-hmd"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "How does an initial-pinch 3-roll plate roller work?",
+   "a": "The sheet is clamped (pinched) between the top and bottom roll, the back roll is raised to pre-bend the leading edge, the sheet is fed through and rolled to the radius set by the back roll, and the drop-end is opened to remove the cylinder. The trailing edge is pre-bent by turning the sheet around — the one extra step compared with a 4-roll machine."
+  },
+  {
+   "q": "MRM-H or MRM-S — hydraulic or mechanical?",
+   "a": "Both are initial-pinch rolls with the same roll sizes. The MRM-H moves its back and bottom rolls hydraulically and opens the drop-end hydraulically, which is faster, takes thicker plate at the same roll diameter and suits daily production; the MRM-S moves the back roll with a motor and opens the drop-end by hand at a lower price."
+  },
+  {
+   "q": "What thickness can the MRM-H roll?",
+   "a": "From 20 ga sheet on the 1270x80 up to 1/2″ plate on the 250 mm roll models — see the capacity tables, which give the thickness at 1.5× and at 5× the top roll diameter. Capacities are for mild steel; stainless and high-strength plate need the next roll size up."
+  },
+  {
+   "q": "What voltage do İşitan plate rollers run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual slip rolls have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about hydraulic 3-roll plate rollers",
+ "related_pages": [
+  {
+   "href": "hydraulic-4-roll-plate-rollers.html",
+   "label": "Hydraulic 4-roll plate rollers"
+  },
+  {
+   "href": "motorized-plate-rollers.html",
+   "label": "Motorized 3-roll plate rollers"
+  },
+  {
+   "href": "slip-rolls.html",
+   "label": "Slip rolls"
+  },
+  {
+   "href": "plate-rollers.html",
+   "label": "All plate rollers & slip rolls"
+  }
+ ],
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+  "label": "Download the İşitan machinery catalogue",
+  "size": "PDF · 29 MB · imperial units"
+ },
+ "related_article": {
+  "href": "plate-rollers.html#buying-guide",
+  "label": "Plate roller buying guide: 3-roll vs 4-roll, capacities, cones and controls"
+ },
+ "origin_feature": {
+  "title": "Made in Turkey by İşitan",
+  "text": "İşitan has built plate rolls in Bursa since 1959 — two factories, CE-certified machines with European components."
+ },
+ "section_label": "Plate rollers & slip rolls"
+}

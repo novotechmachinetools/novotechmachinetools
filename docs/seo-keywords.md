@@ -56,3 +56,21 @@ form, and spread the terms over the models instead of repeating one: **double-mi
 sellers (BS-315GF, BMS DG, BMSO 270DGS), **dual-miter** on the BMSY DG/DGH and BS-460G, **twin-miter**
 on the BMSY DG NC, **swivel-head miter** on the BS-460GB, **single-miter** where the head swivels one
 way. Body text may still say "miters to both sides".
+
+## Findings — plate rollers (İşitan pages)
+
+Google Trends, Oct 2026, US (Canada volumes too low to compare long-tail terms):
+
+| term (5 years) | US avg | note |
+|---|---|---|
+| plate roller | ~13 | head term; rising query "plate roller machine" |
+| slip roll | ~10 | the sheet-metal-shop term; related "slip roll machine", "slip roller" |
+| slip roller | ~6 | |
+| plate rolls | ~5 | |
+| sheet metal roller | ~3 | related "sheet metal roller bender" |
+| roll bender | ~2 | mostly tube/angle rolls — avoid for plate |
+| plate rolling machine / plate bending machine / sheet metal rolling machine | <1 | used in body text only; "nc plate bending machine" appears as a related query |
+
+Rule: "plate roller(s)" is the primary term in titles and H1s, "slip roll(s)" for the light-gauge page,
+"plate rolling machine" and "plate bending rolls" once each in intros/meta, "sheet metal roller" and
+"slip roller" on the slip-roll page. "Roll bender" is reserved for the angle-roll pages.

@@ -4317,5 +4317,544 @@
   "section": "bandsaw",
   "trim": false,
   "quality": 82
+ },
+ "guide-4-roll-sequence": {
+  "src": "tools/src-images/guide/guide-4-roll-sequence.webp",
+  "alt": "4-roll plate rolling sequence",
+  "section": "guide",
+  "trim": false,
+  "quality": 84
+ },
+ "guide-double-pinch-sequence": {
+  "src": "tools/src-images/guide/guide-double-pinch-sequence.webp",
+  "alt": "3-roll double-pinch rolling sequence",
+  "section": "guide",
+  "trim": false,
+  "quality": 84
+ },
+ "guide-initial-pinch-sequence": {
+  "src": "tools/src-images/guide/guide-initial-pinch-sequence.webp",
+  "alt": "3-roll initial-pinch rolling sequence",
+  "section": "guide",
+  "trim": false,
+  "quality": 84
+ },
+ "guide-variable-geometry-sequence": {
+  "src": "tools/src-images/guide/guide-variable-geometry-sequence.webp",
+  "alt": "3-roll variable-geometry rolling sequence",
+  "section": "guide",
+  "trim": false,
+  "quality": 84
+ },
+ "guide-cone-bending": {
+  "src": "tools/src-images/guide/guide-cone-bending.webp",
+  "alt": "Cone bending on a plate roller — blank layout and roll positions",
+  "section": "guide",
+  "trim": false,
+  "quality": 84
+ },
+ "guide-rolls-crowning": {
+  "src": "tools/src-images/guide/guide-rolls-crowning.webp",
+  "alt": "Roll crowning and the barrel / hourglass effects",
+  "section": "guide",
+  "trim": false,
+  "quality": 84
+ },
+ "is-4rhms-3100-250": {
+  "src": "tools/src-images/isitan/is-4rhms-3100-250.jpg",
+  "alt": "İşitan 4R HMS 3100x250 hydraulic 4-roll plate roller, 10.2 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhms-2050-180": {
+  "src": "tools/src-images/isitan/is-4rhms-2050-180.jpg",
+  "alt": "İşitan 4R HMS 2050x180 hydraulic 4-roll plate roller with NC control and plate ejector",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhms-1550-220": {
+  "src": "tools/src-images/isitan/is-4rhms-1550-220.jpg",
+  "alt": "İşitan 4R HMS 1550x220 4-roll plate roller with overhead crane and side supports",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhms-1270-100": {
+  "src": "tools/src-images/isitan/is-4rhms-1270-100.jpg",
+  "alt": "İşitan 4R HMS 1270x100 4-roll plate roller with NC control, ejector and mechanical overhead crane",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhms-2050-130": {
+  "src": "tools/src-images/isitan/is-4rhms-2050-130.jpg",
+  "alt": "İşitan 4R HMS 2050x130 4-roll plate roller — full automation with vacuum sheet feeder and ejector",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhms-650-80": {
+  "src": "tools/src-images/isitan/is-4rhms-650-80.jpg",
+  "alt": "İşitan 4R HMS 650x80 compact hydraulic 4-roll plate roller, 2.1 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhms-automation-line": {
+  "src": "tools/src-images/isitan/is-4rhms-automation-line.png",
+  "alt": "4R HMS — full automation line with sheet feeder, NC control and part ejector",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rhms-ejector": {
+  "src": "tools/src-images/isitan/is-4rhms-ejector.png",
+  "alt": "4R HMS — hydraulic plate ejector system",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rhms-safety-switch": {
+  "src": "tools/src-images/isitan/is-4rhms-safety-switch.png",
+  "alt": "4R HMS — safety switch on the drop-end",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rhms-pressure": {
+  "src": "tools/src-images/isitan/is-4rhms-pressure.png",
+  "alt": "4R HMS — pressure adjustment on the bottom roll",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rhms-cone": {
+  "src": "tools/src-images/isitan/is-4rhms-cone.png",
+  "alt": "4R HMS — standard cone-bending device",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rom-1550-220": {
+  "src": "tools/src-images/isitan/is-4rom-1550-220.jpg",
+  "alt": "İşitan 4R OM 1550x220 4-roll corrugated sheet bending machine",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhom-corrugated": {
+  "src": "tools/src-images/isitan/is-4rhom-corrugated.jpg",
+  "alt": "İşitan 4R HOM corrugated sheet bending machine rolling galvanized sheet",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-4rhom-1270-220": {
+  "src": "tools/src-images/isitan/is-4rhom-1270-220.png",
+  "alt": "İşitan 4R HOM 1270x220 special-production corrugated sheet bending machine",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rhom-2050-250": {
+  "src": "tools/src-images/isitan/is-4rhom-2050-250.png",
+  "alt": "İşitan 4R HOM 2050x250 4-roll corrugated sheet bending machine",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rh-10x90": {
+  "src": "tools/src-images/isitan/is-4rh-10x90.png",
+  "alt": "İşitan 4RH 10x90 NC-controlled special sheet bending machine",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-4rom-rings": {
+  "src": "tools/src-images/isitan/is-4rom-rings.png",
+  "alt": "4R OM 1550x220 with rolled corrugated rings",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-mrmh-3100-250": {
+  "src": "tools/src-images/isitan/is-mrmh-3100-250.jpg",
+  "alt": "İşitan MRM-H 3100x250 hydraulic 3-roll plate roller, 10 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrmh-2050-180": {
+  "src": "tools/src-images/isitan/is-mrmh-2050-180.jpg",
+  "alt": "İşitan MRM-H 2050x180 hydraulic 3-roll plate roller — motor + planetary reducer drive",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrmh-2550-180": {
+  "src": "tools/src-images/isitan/is-mrmh-2550-180.jpg",
+  "alt": "İşitan MRM-H 2550x180 hydraulic 3-roll plate roller, 8.4 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrmh-1550-150": {
+  "src": "tools/src-images/isitan/is-mrmh-1550-150.jpg",
+  "alt": "İşitan MRM-H 1550x150 hydraulic 3-roll plate roller with digital readouts",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrmh-1270-180": {
+  "src": "tools/src-images/isitan/is-mrmh-1270-180.jpg",
+  "alt": "İşitan MRM-H 1270x180 hydraulic 3-roll plate roller, 4.2 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrmh-1050-100": {
+  "src": "tools/src-images/isitan/is-mrmh-1050-100.jpg",
+  "alt": "İşitan MRM-H 1050x100 hydraulic 3-roll plate roller, 3.4 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrmh-wire-grooves": {
+  "src": "tools/src-images/isitan/is-mrmh-wire-grooves.png",
+  "alt": "MRM-H — optional wire grooves on the roll ends",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-mrmh-drop-end": {
+  "src": "tools/src-images/isitan/is-mrmh-drop-end.png",
+  "alt": "MRM-H — hydraulic drop-end and roll-end detail",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-3rhmd-1270-90": {
+  "src": "tools/src-images/isitan/is-3rhmd-1270-90.jpg",
+  "alt": "İşitan 3R HMD 1270x90 mechanical-hydraulic 3-roll plate roller",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrms-2050-190": {
+  "src": "tools/src-images/isitan/is-mrms-2050-190.jpg",
+  "alt": "İşitan MRM-S 2050x190 motorized 3-roll plate roller, 6.7 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrms-1050-150": {
+  "src": "tools/src-images/isitan/is-mrms-1050-150.jpg",
+  "alt": "İşitan MRM-S 1050x150 motorized 3-roll plate roller, 3.4 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrms-1550-150": {
+  "src": "tools/src-images/isitan/is-mrms-1550-150.jpg",
+  "alt": "İşitan MRM-S 1550x150 motorized 3-roll plate roller, 5.1 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrms-2550-190": {
+  "src": "tools/src-images/isitan/is-mrms-2550-190.jpg",
+  "alt": "İşitan MRM-S 2550x190 motorized 3-roll plate roller, 8.4 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrms-3050-190": {
+  "src": "tools/src-images/isitan/is-mrms-3050-190.jpg",
+  "alt": "İşitan MRM-S 3050x190 motorized 3-roll plate roller, 10 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrms-composite": {
+  "src": "tools/src-images/isitan/is-mrms-composite.jpg",
+  "alt": "İşitan MRM-S special model with segmented plastic-coated top roll for aluminum composite panels",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-mrms-panel": {
+  "src": "tools/src-images/isitan/is-mrms-panel.png",
+  "alt": "MRM-S — optional control panel with digital readout",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-mrms-section-rolls": {
+  "src": "tools/src-images/isitan/is-mrms-section-rolls.png",
+  "alt": "MRM-S — optional extended roll shafts and section bending roll set",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-mrms-cone": {
+  "src": "tools/src-images/isitan/is-mrms-cone.png",
+  "alt": "MRM-S — standard cone-bending device",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-mrms-drop-end": {
+  "src": "tools/src-images/isitan/is-mrms-drop-end.png",
+  "alt": "MRM-S — manual drop-end with safety switch",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-mrms-delrin": {
+  "src": "tools/src-images/isitan/is-mrms-delrin.png",
+  "alt": "MRM-S — segmented plastic (Delrin) top roll for composite panels",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-irm-1550-140": {
+  "src": "tools/src-images/isitan/is-irm-1550-140.jpg",
+  "alt": "İşitan IRM 1550x140 motorized 3-roll plate roller, 5.1 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-irm-1050-130": {
+  "src": "tools/src-images/isitan/is-irm-1050-130.jpg",
+  "alt": "İşitan IRM 1050x130 motorized 3-roll plate roller — compact cast-frame model",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-irm-1270-140": {
+  "src": "tools/src-images/isitan/is-irm-1270-140.jpg",
+  "alt": "İşitan IRM 1270x140 motorized 3-roll plate roller, 4.2 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-irm-2050-130": {
+  "src": "tools/src-images/isitan/is-irm-2050-130.jpg",
+  "alt": "İşitan IRM 2050x130 motorized 3-roll plate roller, 6.7 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-irm-2550-130": {
+  "src": "tools/src-images/isitan/is-irm-2550-130.jpg",
+  "alt": "İşitan IRM 2550x140 motorized 3-roll plate roller, 8.4 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-irm-drop-end": {
+  "src": "tools/src-images/isitan/is-irm-drop-end.png",
+  "alt": "IRM — standard manual drop-end",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-rm-1270-90": {
+  "src": "tools/src-images/isitan/is-rm-1270-90.jpg",
+  "alt": "İşitan RM 1270x90 motorized 3-roll plate roller with foot-pedal control",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rm-1050-90": {
+  "src": "tools/src-images/isitan/is-rm-1050-90.jpg",
+  "alt": "İşitan RM 1050x90 motorized 3-roll plate roller, 3.4 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rm-1550-90": {
+  "src": "tools/src-images/isitan/is-rm-1550-90.jpg",
+  "alt": "İşitan RM 1550x90 motorized 3-roll plate roller, 5.1 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rm-2050-95": {
+  "src": "tools/src-images/isitan/is-rm-2050-95.jpg",
+  "alt": "İşitan RM 2050x95 motorized 3-roll plate roller, 6.7 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rm-drop-end": {
+  "src": "tools/src-images/isitan/is-rm-drop-end.png",
+  "alt": "RM — standard manual drop-end",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-rm-safety-switch": {
+  "src": "tools/src-images/isitan/is-rm-safety-switch.png",
+  "alt": "RM — standard drop-end safety switch",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-rs-1270-90": {
+  "src": "tools/src-images/isitan/is-rs-1270-90.jpg",
+  "alt": "İşitan RS 1270x90 manual 3-roll plate roller — hand-crank operation",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rs-1050-90": {
+  "src": "tools/src-images/isitan/is-rs-1050-90.jpg",
+  "alt": "İşitan RS 1050x90 manual plate roller, 3.4 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rs-1550-90": {
+  "src": "tools/src-images/isitan/is-rs-1550-90.jpg",
+  "alt": "İşitan RS 1550x90 manual plate roller, 5.1 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rs-2050-95": {
+  "src": "tools/src-images/isitan/is-rs-2050-95.jpg",
+  "alt": "İşitan RS 2050x95 manual plate roller, 6.7 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-ir-1270-75": {
+  "src": "tools/src-images/isitan/is-ir-1270-75.jpg",
+  "alt": "İşitan IR 1270x75 motorized slip roll with foot pedal",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-ir-1050-56": {
+  "src": "tools/src-images/isitan/is-ir-1050-56.jpg",
+  "alt": "İşitan IR 1050x56 motorized slip roll — reinforced steel frame",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-ir-1550-75": {
+  "src": "tools/src-images/isitan/is-ir-1550-75.jpg",
+  "alt": "İşitan IR 1550x75 motorized slip roll, 5.1 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-ir-2050-75": {
+  "src": "tools/src-images/isitan/is-ir-2050-75.jpg",
+  "alt": "İşitan IR 2050x75 motorized slip roll, 6.7 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-ir-drop-end": {
+  "src": "tools/src-images/isitan/is-ir-drop-end.png",
+  "alt": "IR — standard manual drop-end",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-ir-geared-lock": {
+  "src": "tools/src-images/isitan/is-ir-geared-lock.png",
+  "alt": "IR — geared lock for quick back-roll adjustment",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-ir-safety-switch": {
+  "src": "tools/src-images/isitan/is-ir-safety-switch.png",
+  "alt": "IR — optional drop-end safety switch",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-r-1050-56": {
+  "src": "tools/src-images/isitan/is-r-1050-56.jpg",
+  "alt": "İşitan R 1050x56 manual slip roll on stand — hand-crank operation",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-r-1270-75": {
+  "src": "tools/src-images/isitan/is-r-1270-75.jpg",
+  "alt": "İşitan R 1270x75 manual slip roll, 4.2 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-r-1550-68": {
+  "src": "tools/src-images/isitan/is-r-1550-68.jpg",
+  "alt": "İşitan R 1550x68 manual slip roll, 5.1 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-r-2050-75": {
+  "src": "tools/src-images/isitan/is-r-2050-75.jpg",
+  "alt": "İşitan R 2050x75 manual slip roll, 6.7 ft",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-r-1270-46": {
+  "src": "tools/src-images/isitan/is-r-1270-46.jpg",
+  "alt": "İşitan R 1270x46 bench slip roll with geared lock for quick back-roll adjustment",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-r-610-46": {
+  "src": "tools/src-images/isitan/is-r-610-46.png",
+  "alt": "İşitan R 610x46 bench slip roll without stand, 2 ft",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-r-pinch-lever": {
+  "src": "tools/src-images/isitan/is-r-pinch-lever.png",
+  "alt": "R series — easy bottom-roll pinching lever",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-r-wire-grooves": {
+  "src": "tools/src-images/isitan/is-r-wire-grooves.png",
+  "alt": "R series — wire grooves as standard",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
+ },
+ "is-rstm-1270-86": {
+  "src": "tools/src-images/isitan/is-rstm-1270-86.jpg",
+  "alt": "İşitan RST-M 1270x86 motorized economical plate roller with foot pedal",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rst-1270-86": {
+  "src": "tools/src-images/isitan/is-rst-1270-86.jpg",
+  "alt": "İşitan RST 1270x86 manual economical plate roller",
+  "section": "forming",
+  "trim": false,
+  "quality": 82
+ },
+ "is-rst-screws": {
+  "src": "tools/src-images/isitan/is-rst-screws.png",
+  "alt": "RST — manual up/down setting of the bottom and back rolls by screws",
+  "section": "forming",
+  "trim": true,
+  "quality": 82
  }
 }

@@ -1,0 +1,5109 @@
+{
+ "order": [
+  "isitan-4r-hms",
+  "isitan-4r-corrugated",
+  "isitan-mrm-h",
+  "isitan-3r-hmd",
+  "isitan-mrm-s",
+  "isitan-irm",
+  "isitan-rm",
+  "isitan-ir",
+  "isitan-r",
+  "isitan-rs",
+  "isitan-rst"
+ ],
+ "families": {
+  "isitan-4r-hms": {
+   "id": "isitan-4r-hms",
+   "group": "4-roll",
+   "name": "4R HMS hydraulic 4-roll plate rollers",
+   "short": "4R HMS 4-roll",
+   "models_label": "4R HMS 650x80 – 4R HMS 3100x250 · 36 models",
+   "summary": "İşitan's main line of 4-roll plate rolling machines, from a 2.1 ft bench-size roll to 10.2 ft machines that roll 3/8″ plate. The pinch roll and both side rolls move on a pyramid-style linear path driven by hydraulic cylinders, while the top roll is powered by an electric motor through a planetary gearbox — so the sheet is pinched, pre-bent at both ends and rolled into a full cylinder without being removed from the machine. Cone bending, hydraulic drop-end and three digital readouts are standard; NC control with programmed roll positions, overhead crane and side supports turn it into a semi- or fully automatic production line.",
+   "features": [
+    "Pinch and side rolls moved linearly by hydraulic cylinders; top roll driven by motor and planetary gearbox, bottom roll through a cardan joint",
+    "Three digital readouts for easy roll positioning; mobile control panel",
+    "Hydraulic drop-end for easy removal of finished cylinders; hydraulic balancing system",
+    "Induction-hardened forged or rolled SAE 1050 (CK45) steel rolls; welded steel frames",
+    "Cone-bending device and overload protection standard",
+    "Remote technical support via Wi-Fi; built to EC safety directives (CE marked)"
+   ],
+   "optional": [
+    "NC control with remote assistance — teach mode, stored programs, 4 axes expandable to 7",
+    "Overhead crane and hydraulic side supports for large diameters",
+    "Vacuum sheet feeder and part ejector for full automation",
+    "Ground and polished rolls; two-speed or infinitely variable speed; hydraulic motor for rotation",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-4rhms-3100-250",
+    "is-4rhms-2050-180",
+    "is-4rhms-1550-220",
+    "is-4rhms-1270-100",
+    "is-4rhms-2050-130",
+    "is-4rhms-650-80",
+    "is-4rhms-automation-line",
+    "is-4rhms-ejector",
+    "is-4rhms-cone",
+    "is-4rhms-pressure",
+    "is-4rhms-safety-switch"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4R HMS 650 – 1050",
+      "sub": "2.1–3.4 ft · 4 models",
+      "models": [
+       "4R HMS 650x80",
+       "4R HMS 1050x80",
+       "4R HMS 1050x100",
+       "4R HMS 1050x130"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "2.1 ft · 25.6″ (650 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "12 ga / 11 ga (2.5 / 3 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "14 ga / 12 ga (2 / 2.5 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 10 ga (3 / 3.5 mm)",
+         "14 ga / 12 ga (2 / 2.5 mm)",
+         "12 ga / 10 ga (2.5 / 3.5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.15″ (80 mm)",
+         "3.94″ (100 mm)",
+         "5.12″ (130 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.15″ (80 mm)",
+         "3.54″ (90 mm)",
+         "5.12″ (130 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "4.7″ / 15.7″ (120 / 400 mm)",
+         "4.7″ / 15.7″ (120 / 400 mm)",
+         "5.9″ / 19.7″ (150 / 500 mm)",
+         "7.7″ / 25.6″ (195 / 650 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 + 1 HP (1.1 + 0.75 kW)",
+         "1.5 + 1 HP (1.1 + 0.75 kW)",
+         "1.5 + 1 HP (1.1 + 0.75 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)",
+         "21 ft/min (6.5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "15 L",
+         "15 L",
+         "15 L",
+         "40 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "77 × 37 × 38″ (1960 × 940 × 970 mm)",
+         "93 × 37 × 38″ (2360 × 940 × 970 mm)",
+         "93 × 45 × 38″ (2360 × 1140 × 970 mm)",
+         "109 × 45 × 43″ (2770 × 1140 × 1090 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "2,094 lb (950 kg)",
+         "2,535 lb (1,150 kg)",
+         "2,756 lb (1,250 kg)",
+         "4,519 lb (2,050 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "4R HMS 1270",
+      "sub": "4.2 ft · 6 models",
+      "models": [
+       "4R HMS 1270x80",
+       "4R HMS 1270x100",
+       "4R HMS 1270x130",
+       "4R HMS 1270x150",
+       "4R HMS 1270x180",
+       "4R HMS 1270x200"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "20 ga / 16 ga (1 / 1.5 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 5/16″ (5 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "14 ga / 11 ga (2 / 3 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.94″ (100 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.54″ (90 mm)",
+         "5.12″ (130 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "4.7″ / 15.7″ (120 / 400 mm)",
+         "5.9″ / 17.7″ (150 / 450 mm)",
+         "7.7″ / 25.6″ (195 / 650 mm)",
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+         "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "21 ft/min (6.5 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "15 L",
+         "15 L",
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "101 × 37 × 38″ (2570 × 940 × 970 mm)",
+         "105 × 41 × 38″ (2670 × 1040 × 970 mm)",
+         "114 × 45 × 44″ (2900 × 1140 × 1120 mm)",
+         "119 × 45 × 44″ (3020 × 1140 × 1120 mm)",
+         "121 × 53 × 51″ (3070 × 1350 × 1300 mm)",
+         "121 × 53 × 51″ (3070 × 1350 × 1300 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "2,756 lb (1,250 kg)",
+         "2,976 lb (1,350 kg)",
+         "4,740 lb (2,150 kg)",
+         "5,027 lb (2,280 kg)",
+         "5,952 lb (2,700 kg)",
+         "6,614 lb (3,000 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "4R HMS 1550",
+      "sub": "5.1 ft · 7 models",
+      "models": [
+       "4R HMS 1550x100",
+       "4R HMS 1550x130",
+       "4R HMS 1550x150",
+       "4R HMS 1550x180",
+       "4R HMS 1550x200",
+       "4R HMS 1550x220",
+       "4R HMS 1550x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "20 ga / 16 ga (1 / 1.5 mm)",
+         "12 ga / 10 ga (2.5 / 3.5 mm)",
+         "10 ga / 7 ga (3.5 / 4.5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "10 ga / 7 ga (3.5 / 4.5 mm)",
+         "7 ga / 1/4″ (4.5 / 6 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "3/8″ / 7/16″ (10 / 11 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 9/16″ (12 / 14 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "3.94″ (100 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "3.54″ (90 mm)",
+         "5.12″ (130 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "5.9″ / 17.7″ (150 / 450 mm)",
+         "7.7″ / 25.6″ (195 / 650 mm)",
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "21 ft/min (6.5 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "15 L",
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "112 × 37 × 38″ (2840 × 940 × 970 mm)",
+         "130 × 45 × 44″ (3300 × 1140 × 1120 mm)",
+         "130 × 45 × 44″ (3300 × 1140 × 1120 mm)",
+         "132 × 53 × 51″ (3350 × 1350 × 1300 mm)",
+         "132 × 53 × 51″ (3350 × 1350 × 1300 mm)",
+         "138 × 59 × 54″ (3510 × 1500 × 1370 mm)",
+         "138 × 59 × 54″ (3510 × 1500 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "3,307 lb (1,500 kg)",
+         "4,960 lb (2,250 kg)",
+         "5,225 lb (2,370 kg)",
+         "6,393 lb (2,900 kg)",
+         "7,165 lb (3,250 kg)",
+         "9,370 lb (4,250 kg)",
+         "10,251 lb (4,650 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "4R HMS 2050",
+      "sub": "6.7 ft · 6 models",
+      "models": [
+       "4R HMS 2050x130",
+       "4R HMS 2050x150",
+       "4R HMS 2050x180",
+       "4R HMS 2050x200",
+       "4R HMS 2050x220",
+       "4R HMS 2050x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 7/16″ (10 / 11 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "7.7″ / 25.6″ (195 / 650 mm)",
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "142 × 47 × 44″ (3610 × 1190 × 1120 mm)",
+         "142 × 47 × 44″ (3610 × 1190 × 1120 mm)",
+         "152 × 53 × 51″ (3860 × 1350 × 1300 mm)",
+         "152 × 56 × 51″ (3860 × 1420 × 1300 mm)",
+         "157 × 59 × 54″ (3990 × 1500 × 1370 mm)",
+         "157 × 59 × 54″ (3990 × 1500 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "4,982 lb (2,260 kg)",
+         "6,173 lb (2,800 kg)",
+         "7,275 lb (3,300 kg)",
+         "8,267 lb (3,750 kg)",
+         "10,582 lb (4,800 kg)",
+         "11,795 lb (5,350 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "4R HMS 2550",
+      "sub": "8.4 ft · 5 models",
+      "models": [
+       "4R HMS 2550x150",
+       "4R HMS 2550x180",
+       "4R HMS 2550x200",
+       "4R HMS 2550x220",
+       "4R HMS 2550x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "169 × 45 × 44″ (4290 × 1140 × 1120 mm)",
+         "171 × 53 × 51″ (4340 × 1350 × 1300 mm)",
+         "171 × 53 × 51″ (4340 × 1350 × 1300 mm)",
+         "177 × 59 × 54″ (4500 × 1500 × 1370 mm)",
+         "177 × 59 × 54″ (4500 × 1500 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "7,121 lb (3,230 kg)",
+         "8,157 lb (3,700 kg)",
+         "9,370 lb (4,250 kg)",
+         "11,905 lb (5,400 kg)",
+         "13,448 lb (6,100 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "4R HMS 3100",
+      "sub": "10.2 ft · 4 models",
+      "models": [
+       "4R HMS 3100x180",
+       "4R HMS 3100x200",
+       "4R HMS 3100x220",
+       "4R HMS 3100x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "10.2 ft · 122.0″ (3100 mm)",
+         "10.2 ft · 122.0″ (3100 mm)",
+         "10.2 ft · 122.0″ (3100 mm)",
+         "10.2 ft · 122.0″ (3100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "40 L",
+         "40 L",
+         "40 L",
+         "40 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "191 × 53 × 51″ (4850 × 1350 × 1300 mm)",
+         "191 × 53 × 51″ (4850 × 1350 × 1300 mm)",
+         "197 × 59 × 54″ (5000 × 1500 × 1370 mm)",
+         "197 × 59 × 54″ (5000 × 1500 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "9,039 lb (4,100 kg)",
+         "10,472 lb (4,750 kg)",
+         "13,228 lb (6,000 kg)",
+         "14,991 lb (6,800 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "4R HMS 650x80",
+      "glance": [
+       "2.1 ft · 25.6″ (650 mm)",
+       "11 ga / 10 ga (3 / 3.5 mm)",
+       "3.15″ (80 mm)",
+       "1.5 + 1 HP (1.1 + 0.75 kW)",
+       "2,094 lb (950 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1050x80",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "14 ga / 12 ga (2 / 2.5 mm)",
+       "3.15″ (80 mm)",
+       "1.5 + 1 HP (1.1 + 0.75 kW)",
+       "2,535 lb (1,150 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1050x100",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "12 ga / 10 ga (2.5 / 3.5 mm)",
+       "3.94″ (100 mm)",
+       "1.5 + 1 HP (1.1 + 0.75 kW)",
+       "2,756 lb (1,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1050x130",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,519 lb (2,050 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1270x80",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "16 ga / 14 ga (1.5 / 2 mm)",
+       "3.15″ (80 mm)",
+       "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+       "2,756 lb (1,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1270x100",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "14 ga / 11 ga (2 / 3 mm)",
+       "3.94″ (100 mm)",
+       "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+       "2,976 lb (1,350 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1270x130",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "8 ga / 3/16″ (4 / 5 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,740 lb (2,150 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1270x150",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "5,027 lb (2,280 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1270x180",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "5,952 lb (2,700 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1270x200",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "6,614 lb (3,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1550x100",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "16 ga / 14 ga (1.5 / 2 mm)",
+       "3.94″ (100 mm)",
+       "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1550x130",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "10 ga / 7 ga (3.5 / 4.5 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,960 lb (2,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1550x150",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "7 ga / 1/4″ (4.5 / 6 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "5,225 lb (2,370 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1550x180",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "6,393 lb (2,900 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1550x200",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "3/8″ / 7/16″ (10 / 11 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "7,165 lb (3,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1550x220",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "9,370 lb (4,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 1550x250",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "1/2″ / 9/16″ (12 / 14 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "10,251 lb (4,650 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2050x130",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,982 lb (2,260 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2050x150",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "6,173 lb (2,800 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2050x180",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "7,275 lb (3,300 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2050x200",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "8,267 lb (3,750 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2050x220",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "3/8″ / 7/16″ (10 / 11 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "10,582 lb (4,800 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2050x250",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "11,795 lb (5,350 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2550x150",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "7,121 lb (3,230 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2550x180",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "8,157 lb (3,700 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2550x200",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "9,370 lb (4,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2550x220",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "11,905 lb (5,400 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 2550x250",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "13,448 lb (6,100 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 3100x180",
+      "glance": [
+       "10.2 ft · 122.0″ (3100 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "9,039 lb (4,100 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 3100x200",
+      "glance": [
+       "10.2 ft · 122.0″ (3100 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "10,472 lb (4,750 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 3100x220",
+      "glance": [
+       "10.2 ft · 122.0″ (3100 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "13,228 lb (6,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HMS 3100x250",
+      "glance": [
+       "10.2 ft · 122.0″ (3100 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "14,991 lb (6,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "4R HMS 650x80": "rolls up to 10 ga (3.5 mm) × 2.1 ft",
+     "4R HMS 1050x80": "rolls up to 12 ga (2.5 mm) × 3.4 ft",
+     "4R HMS 1050x100": "rolls up to 10 ga (3.5 mm) × 3.4 ft",
+     "4R HMS 1050x130": "rolls up to 1/4″ (6 mm) × 3.4 ft",
+     "4R HMS 1270x80": "rolls up to 14 ga (2 mm) × 4.2 ft",
+     "4R HMS 1270x100": "rolls up to 11 ga (3 mm) × 4.2 ft",
+     "4R HMS 1270x130": "rolls up to 3/16″ (5 mm) × 4.2 ft",
+     "4R HMS 1270x150": "rolls up to 1/4″ (6 mm) × 4.2 ft",
+     "4R HMS 1270x180": "rolls up to 3/8″ (10 mm) × 4.2 ft",
+     "4R HMS 1270x200": "rolls up to 1/2″ (12 mm) × 4.2 ft",
+     "4R HMS 1550x100": "rolls up to 14 ga (2 mm) × 5.1 ft",
+     "4R HMS 1550x130": "rolls up to 7 ga (4.5 mm) × 5.1 ft",
+     "4R HMS 1550x150": "rolls up to 1/4″ (6 mm) × 5.1 ft",
+     "4R HMS 1550x180": "rolls up to 3/8″ (10 mm) × 5.1 ft",
+     "4R HMS 1550x200": "rolls up to 7/16″ (11 mm) × 5.1 ft",
+     "4R HMS 1550x220": "rolls up to 1/2″ (12 mm) × 5.1 ft",
+     "4R HMS 1550x250": "rolls up to 9/16″ (14 mm) × 5.1 ft",
+     "4R HMS 2050x130": "rolls up to 8 ga (4 mm) × 6.7 ft",
+     "4R HMS 2050x150": "rolls up to 1/4″ (6 mm) × 6.7 ft",
+     "4R HMS 2050x180": "rolls up to 5/16″ (8 mm) × 6.7 ft",
+     "4R HMS 2050x200": "rolls up to 3/8″ (10 mm) × 6.7 ft",
+     "4R HMS 2050x220": "rolls up to 7/16″ (11 mm) × 6.7 ft",
+     "4R HMS 2050x250": "rolls up to 1/2″ (12 mm) × 6.7 ft",
+     "4R HMS 2550x150": "rolls up to 8 ga (4 mm) × 8.4 ft",
+     "4R HMS 2550x180": "rolls up to 1/4″ (6 mm) × 8.4 ft",
+     "4R HMS 2550x200": "rolls up to 5/16″ (8 mm) × 8.4 ft",
+     "4R HMS 2550x220": "rolls up to 3/8″ (10 mm) × 8.4 ft",
+     "4R HMS 2550x250": "rolls up to 3/8″ (10 mm) × 8.4 ft",
+     "4R HMS 3100x180": "rolls up to 8 ga (4 mm) × 10.2 ft",
+     "4R HMS 3100x200": "rolls up to 1/4″ (6 mm) × 10.2 ft",
+     "4R HMS 3100x220": "rolls up to 5/16″ (8 mm) × 10.2 ft",
+     "4R HMS 3100x250": "rolls up to 3/8″ (10 mm) × 10.2 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²), shown as two values where the manufacturer states them: at a minimum rolling diameter of 1.5× the top roll diameter / at 5× the top roll diameter. Thin sheet is given in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. 4R HMS 4100 models are available on request."
+   },
+   "headline": "Working lengths 2.1–10.2 ft (650–3100 mm) · rolls up to 1/2″ (12 mm)",
+   "brand": "isitan"
+  },
+  "isitan-4r-corrugated": {
+   "id": "isitan-4r-corrugated",
+   "group": "4-roll",
+   "name": "4R OM / 4R HOM / 4RH corrugated sheet and special 4-roll machines",
+   "short": "4R corrugated & special",
+   "models_label": "4R OM · 4R HOM · 4RH 10x90",
+   "summary": "Purpose-built 4-roll machines for corrugated galvanized sheet up to 11 ga — the material of tanks, roofs and silos. The rolls carry a corrugation profile that can be custom made to the customer's sheet, with motor + reducer drive and motorized (4R OM, 4R HOM) or hydraulic (4RH) linear roll movement. İşitan also builds special plate rolls to order for widths, profiles and automation that the standard range does not cover.",
+   "features": [
+    "Rolls machined to the customer's corrugation profile",
+    "Motor + reducer drive; motorized or hydraulic linear roll movement",
+    "4RH 10x90: standard NC control, motor + planetary reducer and hydraulic linear movement",
+    "Built to EC safety directives (CE marked)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-4rom-1550-220",
+    "is-4rhom-corrugated",
+    "is-4rom-rings",
+    "is-4rhom-1270-220",
+    "is-4rhom-2050-250",
+    "is-4rh-10x90"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4RH 10x90",
+      "sub": "3.4 ft special sheet bending machine",
+      "models": [
+       "4RH 10x90 + Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "3.4 ft · 41.3″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity 12 ga on all",
+        "unit": "",
+        "cells": [
+         "models."
+        ]
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "3.54″ (90 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "15 ft/min (4.5 m/min)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "89 × 39 × 59″ (2260 × 990 × 1500 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "1,984 lb (900 kg)"
+        ]
+       },
+       {
+        "label": "1-year warranty readily available",
+        "unit": "in",
+        "cells": [
+         "Canada"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "4RH 10x90 + Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240",
+      "glance": [
+       "3.4 ft · 41.3″",
+       "—",
+       "3.54″ (90 mm)",
+       "3 HP (2.2 kW)",
+       "1,984 lb (900 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "4RH 10x90 + Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240": "3.4 ft working length"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. 4R OM and 4R HOM machines are built to order — ask for the data sheet of your profile."
+   },
+   "headline": "Corrugated sheet to 11 ga (3 mm) · widths to 6.7 ft (2050 mm) · special builds to order",
+   "brand": "isitan"
+  },
+  "isitan-mrm-h": {
+   "id": "isitan-mrm-h",
+   "group": "3-roll-hydraulic",
+   "name": "MRM-H hydraulic asymmetrical 3-roll plate rollers",
+   "short": "MRM-H hydraulic 3-roll",
+   "models_label": "MRM-H 650x80 – MRM-H 3100x250 · 32 models",
+   "summary": "Initial-pinch 3-roll plate rolls with hydraulic movement of the back and bottom rolls and motor-driven rolls through planetary gearboxes — the hydraulic version of the MRM-S. The sheet is pinched between the top and bottom roll, pre-bent against the back roll, then rolled; the back roll runs on ball bearings for thin-sheet work and a hydraulic drop-end releases the finished cylinder. Cone bending and two digital readouts are standard; NC control, overhead crane and side supports are available for larger diameters.",
+   "features": [
+    "Hydraulic movement of back and bottom rolls; motor-driven centralized rolls with planetary gearbox drive on two rolls",
+    "Hydraulic drop-end; mobile control panel with 2 digital readouts",
+    "Main motor with brake system for precise positioning",
+    "Cone bending and pre-bending; back roll on ball bearings for thin-sheet work",
+    "Certified SAE 1050 (CK45) forged steel rolls, hardened; welded steel main frames",
+    "Built to EC safety directives (CE marked)"
+   ],
+   "optional": [
+    "Overhead crane and hydraulic side supports for large diameters",
+    "Ground and polished rolls; wire grooves on roll ends",
+    "NC control",
+    "Two-speed operation or adjustable stepless speed; hydraulic motor drive",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-mrmh-3100-250",
+    "is-mrmh-2050-180",
+    "is-mrmh-2550-180",
+    "is-mrmh-1550-150",
+    "is-mrmh-1270-180",
+    "is-mrmh-1050-100",
+    "is-mrmh-drop-end",
+    "is-mrmh-wire-grooves"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MRM-H 650 – 1050",
+      "sub": "2.1–3.4 ft · 4 models",
+      "models": [
+       "MRM-H 650x80",
+       "MRM-H 1050x80",
+       "MRM-H 1050x100",
+       "MRM-H 1050x130"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "2.1 ft · 25.6″ (650 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "12 ga / 11 ga (2.5 / 3 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "14 ga / 12 ga (2 / 2.5 mm)",
+         "12 ga / 11 ga (2.5 / 3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 10 ga (3 / 3.5 mm)",
+         "14 ga / 12 ga (2 / 2.5 mm)",
+         "12 ga / 11 ga (2.5 / 3 mm)",
+         "11 ga / 3/16″ (3 / 5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.15″ (80 mm)",
+         "3.94″ (100 mm)",
+         "5.12″ (130 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.15″ (80 mm)",
+         "3.54″ (90 mm)",
+         "5.12″ (130 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "4.7″ / 15.7″ (120 / 400 mm)",
+         "4.7″ / 15.7″ (120 / 400 mm)",
+         "5.9″ / 19.7″ (150 / 500 mm)",
+         "7.7″ / 25.6″ (195 / 650 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 + 1 HP (1.1 + 0.75 kW)",
+         "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+         "1.5 + 1 HP (1.1 + 0.75 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)",
+         "21 ft/min (6.5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "15 L",
+         "15 L",
+         "15 L",
+         "25 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "77 × 30 × 38″ (1960 × 760 × 970 mm)",
+         "93 × 30 × 38″ (2360 × 760 × 970 mm)",
+         "93 × 30 × 38″ (2360 × 760 × 970 mm)",
+         "93 × 37 × 44″ (2360 × 940 × 1120 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "1,764 lb (800 kg)",
+         "2,028 lb (920 kg)",
+         "2,469 lb (1,120 kg)",
+         "3,792 lb (1,720 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-H 1270",
+      "sub": "4.2 ft · 6 models",
+      "models": [
+       "MRM-H 1270x80",
+       "MRM-H 1270x100",
+       "MRM-H 1270x130",
+       "MRM-H 1270x150",
+       "MRM-H 1270x180",
+       "MRM-H 1270x200"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "20 ga / 16 ga (1 / 1.5 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 5/16″ (5 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "14 ga / 11 ga (2 / 3 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.94″ (100 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "3.15″ (80 mm)",
+         "3.54″ (90 mm)",
+         "5.12″ (130 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "4.7″ / 15.7″ (120 / 400 mm)",
+         "5.9″ / 17.7″ (150 / 450 mm)",
+         "7.7″ / 25.6″ (195 / 650 mm)",
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+         "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 1.5 HP (4 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "21 ft/min (6.5 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "15 L",
+         "15 L",
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "101 × 30 × 38″ (2570 × 760 × 970 mm)",
+         "101 × 30 × 38″ (2570 × 760 × 970 mm)",
+         "119 × 37 × 44″ (3020 × 940 × 1120 mm)",
+         "119 × 37 × 44″ (3020 × 940 × 1120 mm)",
+         "121 × 43 × 51″ (3070 × 1090 × 1300 mm)",
+         "121 × 43 × 51″ (3070 × 1090 × 1300 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "2,094 lb (950 kg)",
+         "2,535 lb (1,150 kg)",
+         "3,858 lb (1,750 kg)",
+         "4,134 lb (1,875 kg)",
+         "4,630 lb (2,100 kg)",
+         "4,850 lb (2,200 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-H 1550",
+      "sub": "5.1 ft · 7 models",
+      "models": [
+       "MRM-H 1550x100",
+       "MRM-H 1550x130",
+       "MRM-H 1550x150",
+       "MRM-H 1550x180",
+       "MRM-H 1550x200",
+       "MRM-H 1550x220",
+       "MRM-H 1550x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "20 ga / 16 ga (1 / 1.5 mm)",
+         "12 ga / 10 ga (2.5 / 3.5 mm)",
+         "10 ga / 7 ga (3.5 / 4.5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "10 ga / 7 ga (3.5 / 4.5 mm)",
+         "7 ga / 1/4″ (4.5 / 6 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "3/8″ / 7/16″ (10 / 11 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 9/16″ (12 / 14 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "3.94″ (100 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "3.54″ (90 mm)",
+         "5.12″ (130 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "5.9″ / 17.7″ (150 / 450 mm)",
+         "7.7″ / 25.6″ (195 / 650 mm)",
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 1.5 HP (4 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "21 ft/min (6.5 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "15 L",
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "112 × 30 × 38″ (2840 × 760 × 970 mm)",
+         "130 × 37 × 44″ (3300 × 940 × 1120 mm)",
+         "130 × 37 × 44″ (3300 × 940 × 1120 mm)",
+         "132 × 43 × 51″ (3350 × 1090 × 1300 mm)",
+         "132 × 43 × 51″ (3350 × 1090 × 1300 mm)",
+         "138 × 47 × 54″ (3510 × 1190 × 1370 mm)",
+         "138 × 47 × 54″ (3510 × 1190 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "2,646 lb (1,200 kg)",
+         "4,079 lb (1,850 kg)",
+         "4,409 lb (2,000 kg)",
+         "5,093 lb (2,310 kg)",
+         "5,401 lb (2,450 kg)",
+         "7,165 lb (3,250 kg)",
+         "7,937 lb (3,600 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-H 2050",
+      "sub": "6.7 ft · 6 models",
+      "models": [
+       "MRM-H 2050x130",
+       "MRM-H 2050x150",
+       "MRM-H 2050x180",
+       "MRM-H 2050x200",
+       "MRM-H 2050x220",
+       "MRM-H 2050x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 7/16″ (10 / 11 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "7.7″ / 25.6″ (195 / 650 mm)",
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 1.5 HP (4 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "150 × 37 × 44″ (3810 × 940 × 1120 mm)",
+         "150 × 37 × 44″ (3810 × 940 × 1120 mm)",
+         "152 × 43 × 51″ (3860 × 1090 × 1300 mm)",
+         "152 × 43 × 51″ (3860 × 1090 × 1300 mm)",
+         "157 × 47 × 54″ (3990 × 1190 × 1370 mm)",
+         "157 × 47 × 54″ (3990 × 1190 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "4,519 lb (2,050 kg)",
+         "4,960 lb (2,250 kg)",
+         "5,930 lb (2,690 kg)",
+         "6,504 lb (2,950 kg)",
+         "8,267 lb (3,750 kg)",
+         "9,259 lb (4,200 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-H 2550",
+      "sub": "8.4 ft · 5 models",
+      "models": [
+       "MRM-H 2550x150",
+       "MRM-H 2550x180",
+       "MRM-H 2550x200",
+       "MRM-H 2550x220",
+       "MRM-H 2550x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "8.9″ / 29.5″ (225 / 750 mm)",
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 + 1.5 HP (2.2 + 1.1 kW)",
+         "5.4 + 1.5 HP (4 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "169 × 37 × 44″ (4290 × 940 × 1120 mm)",
+         "171 × 43 × 51″ (4340 × 1090 × 1300 mm)",
+         "171 × 43 × 51″ (4340 × 1090 × 1300 mm)",
+         "177 × 47 × 54″ (4500 × 1190 × 1370 mm)",
+         "177 × 47 × 54″ (4500 × 1190 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "5,512 lb (2,500 kg)",
+         "6,768 lb (3,070 kg)",
+         "7,606 lb (3,450 kg)",
+         "9,370 lb (4,250 kg)",
+         "10,582 lb (4,800 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-H 3100",
+      "sub": "10 ft · 4 models",
+      "models": [
+       "MRM-H 3100x180",
+       "MRM-H 3100x200",
+       "MRM-H 3100x220",
+       "MRM-H 3100x250"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "10 ft · 120.1″ (3100 mm)",
+         "10 ft · 120.1″ (3100 mm)",
+         "10 ft · 120.1″ (3100 mm)",
+         "10 ft · 120.1″ (3100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)",
+         "9.84″ (250 mm)"
+        ]
+       },
+       {
+        "label": "Side roll Ø",
+        "cells": [
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "10.6″ / 35.4″ (270 / 900 mm)",
+         "11.8″ / 39.4″ (300 / 1000 mm)",
+         "13.0″ / 43.3″ (330 / 1100 mm)",
+         "14.8″ / 49.2″ (375 / 1250 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "5.4 + 1.5 HP (4 + 1.1 kW)",
+         "5.4 + 2 HP (4 + 1.5 kW)",
+         "7.4 + 2 HP (5.5 + 1.5 kW)",
+         "10 + 2 HP (7.5 + 1.5 kW)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "20 ft/min (6 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "25 L",
+         "25 L",
+         "25 L",
+         "25 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "191 × 43 × 51″ (4850 × 1090 × 1300 mm)",
+         "191 × 43 × 51″ (4850 × 1090 × 1300 mm)",
+         "197 × 47 × 54″ (5000 × 1190 × 1370 mm)",
+         "197 × 47 × 54″ (5000 × 1190 × 1370 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "7,606 lb (3,450 kg)",
+         "8,708 lb (3,950 kg)",
+         "10,472 lb (4,750 kg)",
+         "11,905 lb (5,400 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MRM-H 650x80",
+      "glance": [
+       "2.1 ft · 25.6″ (650 mm)",
+       "11 ga / 10 ga (3 / 3.5 mm)",
+       "3.15″ (80 mm)",
+       "1.5 + 1 HP (1.1 + 0.75 kW)",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1050x80",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "14 ga / 12 ga (2 / 2.5 mm)",
+       "3.15″ (80 mm)",
+       "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+       "2,028 lb (920 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1050x100",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "12 ga / 11 ga (2.5 / 3 mm)",
+       "3.94″ (100 mm)",
+       "1.5 + 1 HP (1.1 + 0.75 kW)",
+       "2,469 lb (1,120 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1050x130",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "11 ga / 3/16″ (3 / 5 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "3,792 lb (1,720 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1270x80",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "16 ga / 14 ga (1.5 / 2 mm)",
+       "3.15″ (80 mm)",
+       "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+       "2,094 lb (950 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1270x100",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "14 ga / 11 ga (2 / 3 mm)",
+       "3.94″ (100 mm)",
+       "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+       "2,535 lb (1,150 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1270x130",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "8 ga / 3/16″ (4 / 5 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "3,858 lb (1,750 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1270x150",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,134 lb (1,875 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1270x180",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 1.5 HP (4 + 1.1 kW)",
+       "4,630 lb (2,100 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1270x200",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "4,850 lb (2,200 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1550x100",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "16 ga / 14 ga (1.5 / 2 mm)",
+       "3.94″ (100 mm)",
+       "1.5 + 1.5 HP (1.1 + 1.1 kW)",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1550x130",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "10 ga / 7 ga (3.5 / 4.5 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,079 lb (1,850 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1550x150",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "7 ga / 1/4″ (4.5 / 6 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,409 lb (2,000 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1550x180",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 1.5 HP (4 + 1.1 kW)",
+       "5,093 lb (2,310 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1550x200",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "3/8″ / 7/16″ (10 / 11 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "5,401 lb (2,450 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1550x220",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "7,165 lb (3,250 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 1550x250",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "1/2″ / 9/16″ (12 / 14 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "7,937 lb (3,600 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2050x130",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.12″ (130 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,519 lb (2,050 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2050x150",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "4,960 lb (2,250 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2050x180",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 1.5 HP (4 + 1.1 kW)",
+       "5,930 lb (2,690 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2050x200",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "6,504 lb (2,950 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2050x220",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "3/8″ / 7/16″ (10 / 11 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "8,267 lb (3,750 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2050x250",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "9,259 lb (4,200 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2550x150",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.91″ (150 mm)",
+       "3 + 1.5 HP (2.2 + 1.1 kW)",
+       "5,512 lb (2,500 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2550x180",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 1.5 HP (4 + 1.1 kW)",
+       "6,768 lb (3,070 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2550x200",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "7,606 lb (3,450 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2550x220",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "9,370 lb (4,250 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 2550x250",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "10,582 lb (4,800 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 3100x180",
+      "glance": [
+       "10 ft · 120.1″ (3100 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "7.09″ (180 mm)",
+       "5.4 + 1.5 HP (4 + 1.1 kW)",
+       "7,606 lb (3,450 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 3100x200",
+      "glance": [
+       "10 ft · 120.1″ (3100 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "7.87″ (200 mm)",
+       "5.4 + 2 HP (4 + 1.5 kW)",
+       "8,708 lb (3,950 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 3100x220",
+      "glance": [
+       "10 ft · 120.1″ (3100 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "8.66″ (220 mm)",
+       "7.4 + 2 HP (5.5 + 1.5 kW)",
+       "10,472 lb (4,750 kg)"
+      ]
+     },
+     {
+      "name": "MRM-H 3100x250",
+      "glance": [
+       "10 ft · 120.1″ (3100 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "9.84″ (250 mm)",
+       "10 + 2 HP (7.5 + 1.5 kW)",
+       "11,905 lb (5,400 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "MRM-H 650x80": "rolls up to 10 ga (3.5 mm) × 2.1 ft",
+     "MRM-H 1050x80": "rolls up to 12 ga (2.5 mm) × 3.4 ft",
+     "MRM-H 1050x100": "rolls up to 11 ga (3 mm) × 3.4 ft",
+     "MRM-H 1050x130": "rolls up to 3/16″ (5 mm) × 3.4 ft",
+     "MRM-H 1270x80": "rolls up to 14 ga (2 mm) × 4.2 ft",
+     "MRM-H 1270x100": "rolls up to 11 ga (3 mm) × 4.2 ft",
+     "MRM-H 1270x130": "rolls up to 3/16″ (5 mm) × 4.2 ft",
+     "MRM-H 1270x150": "rolls up to 1/4″ (6 mm) × 4.2 ft",
+     "MRM-H 1270x180": "rolls up to 3/8″ (10 mm) × 4.2 ft",
+     "MRM-H 1270x200": "rolls up to 1/2″ (12 mm) × 4.2 ft",
+     "MRM-H 1550x100": "rolls up to 14 ga (2 mm) × 5.1 ft",
+     "MRM-H 1550x130": "rolls up to 7 ga (4.5 mm) × 5.1 ft",
+     "MRM-H 1550x150": "rolls up to 1/4″ (6 mm) × 5.1 ft",
+     "MRM-H 1550x180": "rolls up to 3/8″ (10 mm) × 5.1 ft",
+     "MRM-H 1550x200": "rolls up to 7/16″ (11 mm) × 5.1 ft",
+     "MRM-H 1550x220": "rolls up to 1/2″ (12 mm) × 5.1 ft",
+     "MRM-H 1550x250": "rolls up to 9/16″ (14 mm) × 5.1 ft",
+     "MRM-H 2050x130": "rolls up to 8 ga (4 mm) × 6.7 ft",
+     "MRM-H 2050x150": "rolls up to 1/4″ (6 mm) × 6.7 ft",
+     "MRM-H 2050x180": "rolls up to 5/16″ (8 mm) × 6.7 ft",
+     "MRM-H 2050x200": "rolls up to 3/8″ (10 mm) × 6.7 ft",
+     "MRM-H 2050x220": "rolls up to 7/16″ (11 mm) × 6.7 ft",
+     "MRM-H 2050x250": "rolls up to 1/2″ (12 mm) × 6.7 ft",
+     "MRM-H 2550x150": "rolls up to 8 ga (4 mm) × 8.4 ft",
+     "MRM-H 2550x180": "rolls up to 1/4″ (6 mm) × 8.4 ft",
+     "MRM-H 2550x200": "rolls up to 5/16″ (8 mm) × 8.4 ft",
+     "MRM-H 2550x220": "rolls up to 3/8″ (10 mm) × 8.4 ft",
+     "MRM-H 2550x250": "rolls up to 3/8″ (10 mm) × 8.4 ft",
+     "MRM-H 3100x180": "rolls up to 8 ga (4 mm) × 10 ft",
+     "MRM-H 3100x200": "rolls up to 1/4″ (6 mm) × 10 ft",
+     "MRM-H 3100x220": "rolls up to 5/16″ (8 mm) × 10 ft",
+     "MRM-H 3100x250": "rolls up to 3/8″ (10 mm) × 10 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²), shown as two values where the manufacturer states them: at a minimum rolling diameter of 1.5× the top roll diameter / at 5× the top roll diameter. Thin sheet is given in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 2.1–10 ft (650–3100 mm) · rolls up to 1/2″ (12 mm)",
+   "brand": "isitan"
+  },
+  "isitan-3r-hmd": {
+   "id": "isitan-3r-hmd",
+   "group": "3-roll-hydraulic",
+   "name": "3R HMD mechanical-hydraulic 3-roll plate rollers",
+   "short": "3R HMD",
+   "models_label": "3R HMD 1270x90 · 1550x90 · 2050x95",
+   "summary": "A new compact series in which all three rolls are powered by one motor and planetary reducer, with a hydraulic piston moving the back roll: joystick positioning with a digital readout makes cone bending and repeat radii easy. Cast-iron frames, induction-hardened SAE 1050 rolls and wire grooves as standard — a step up from a slip roll for HVAC ducting, signage and light fabrication up to 12 ga.",
+   "features": [
+    "All three rolls driven by a single gearbox and gear system",
+    "Hydraulic back-roll piston with digital readout and joystick control",
+    "Cone bending with easy joystick positioning; manual drop-end",
+    "Certified SAE 1050 induction-hardened steel rolls with wire grooves Ø3/16″, 1/4″, 3/8″",
+    "Cast-iron main frames; mobile control panel with foot pedal; brake motor for precision bending",
+    "Built to EC safety directives (CE marked)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-3rhmd-1270-90"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "3R HMD",
+      "sub": "4.2–6.7 ft · 3 models",
+      "models": [
+       "3R HMD 1270x90",
+       "3R HMD 1550x90",
+       "3R HMD 2050x95"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "4.2 ft · 50.0″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "12 ga (2.5 mm)",
+         "14 ga (2 mm)",
+         "16 ga (1.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "3.54″ (90 mm)",
+         "3.54″ (90 mm)",
+         "3.74″ (95 mm)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "20 ft/min (6 m/min)",
+         "20 ft/min (6 m/min)",
+         "20 ft/min (6 m/min)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 + 1 HP (1.1 + 0.75 kW)",
+         "2 + 1 HP (1.5 + 0.75 kW)",
+         "2 + 1 HP (1.5 + 0.75 kW)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "cells": [
+         "6 L",
+         "6 L",
+         "6 L"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "93 × 28 × 30″ (2360 × 710 × 760 mm)",
+         "104 × 28 × 30″ (2640 × 710 × 760 mm)",
+         "120 × 28 × 30″ (3050 × 710 × 760 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "1,146 lb (520 kg)",
+         "1,279 lb (580 kg)",
+         "1,576 lb (715 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "3R HMD 1270x90",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "12 ga (2.5 mm)",
+       "3.54″ (90 mm)",
+       "1.5 + 1 HP (1.1 + 0.75 kW)",
+       "1,146 lb (520 kg)"
+      ]
+     },
+     {
+      "name": "3R HMD 1550x90",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "14 ga (2 mm)",
+       "3.54″ (90 mm)",
+       "2 + 1 HP (1.5 + 0.75 kW)",
+       "1,279 lb (580 kg)"
+      ]
+     },
+     {
+      "name": "3R HMD 2050x95",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "16 ga (1.5 mm)",
+       "3.74″ (95 mm)",
+       "2 + 1 HP (1.5 + 0.75 kW)",
+       "1,576 lb (715 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "3R HMD 1270x90": "rolls up to 12 ga (2.5 mm) × 4.2 ft",
+     "3R HMD 1550x90": "rolls up to 14 ga (2 mm) × 5.1 ft",
+     "3R HMD 2050x95": "rolls up to 16 ga (1.5 mm) × 6.7 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 4.2–6.7 ft (1270–2050 mm) · rolls up to 12 ga (2.5 mm)",
+   "brand": "isitan"
+  },
+  "isitan-mrm-s": {
+   "id": "isitan-mrm-s",
+   "group": "3-roll-motorized",
+   "name": "MRM-S mechanical asymmetrical 3-roll plate rollers",
+   "short": "MRM-S motorized 3-roll",
+   "models_label": "MRM-S 1050x130 – MRM-S 3050x220 · 21 models",
+   "summary": "Motorized initial-pinch plate rolls for light to medium-duty work up to 3/8″ plate: a planetary gearbox drives the rolls, the back roll moves linearly on a motorized adjustment and a manual drop-end with safety switch releases the finished cylinder. Ideal for aluminum forming, HVAC and ventilation ducting, signage panels, machine guards and sheet-metal enclosures. A special version carries a top roll of segmented hard-plastic (Delrin) rings for rolling aluminum composite panels (Alucobond / ACM) without marking the surface.",
+   "features": [
+    "Planetary gearbox drive on all models; precision rolling with brake motor",
+    "Motorized back-roll adjustment; manual drop-end top roll with safety switch",
+    "Cone-bending device, top-roll support system and central lubrication",
+    "High-tensile rolls in certified SAE 1050 (CK45) steel; fabricated welded-steel main frames",
+    "Mobile pendant control panel",
+    "Built to EC safety directives (CE certified)"
+   ],
+   "optional": [
+    "Digital readout (DRO) for the back roll; NC control",
+    "Induction-hardened rolls; variable stepless speed; motorized bottom roll",
+    "Extended roll shafts and profile & section bending roll set",
+    "Plastic-coated segmented top roll for Alucobond / ACM composite panels",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-mrms-2050-190",
+    "is-mrms-1050-150",
+    "is-mrms-1550-150",
+    "is-mrms-2550-190",
+    "is-mrms-3050-190",
+    "is-mrms-composite",
+    "is-mrms-delrin",
+    "is-mrms-panel",
+    "is-mrms-section-rolls",
+    "is-mrms-cone",
+    "is-mrms-drop-end"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MRM-S 1050",
+      "sub": "3.4 ft · 4 models",
+      "models": [
+       "MRM-S 1050x130",
+       "MRM-S 1050x150",
+       "MRM-S 1050x170",
+       "MRM-S 1050x190"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 1/4″ (6 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "1/4″ / 1/4″ (6 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 3/8″ (10 / 10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "6.69″ (170 mm)",
+         "7.48″ (190 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "7.7″ (195 mm)",
+         "8.9″ (225 mm)",
+         "10.0″ (255 mm)",
+         "11.2″ (285 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)"
+        ]
+       },
+       {
+        "label": "Back roll motor",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "108 × 26 × 40″ (2740 × 660 × 1020 mm)",
+         "108 × 27 × 41″ (2740 × 690 × 1040 mm)",
+         "112 × 28 × 41″ (2840 × 710 × 1040 mm)",
+         "126 × 37 × 51″ (3200 × 940 × 1300 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "2,646 lb (1,200 kg)",
+         "3,197 lb (1,450 kg)",
+         "3,527 lb (1,600 kg)",
+         "5,401 lb (2,450 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-S 1550",
+      "sub": "5.1 ft · 4 models",
+      "models": [
+       "MRM-S 1550x130",
+       "MRM-S 1550x150",
+       "MRM-S 1550x170",
+       "MRM-S 1550x190"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 1/4″ (6 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 1/4″ (6 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "6.69″ (170 mm)",
+         "7.48″ (190 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "7.7″ (195 mm)",
+         "8.9″ (225 mm)",
+         "10.0″ (255 mm)",
+         "11.2″ (285 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)"
+        ]
+       },
+       {
+        "label": "Back roll motor",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "128 × 26 × 40″ (3250 × 660 × 1020 mm)",
+         "128 × 27 × 41″ (3250 × 690 × 1040 mm)",
+         "132 × 28 × 41″ (3350 × 710 × 1040 mm)",
+         "146 × 37 × 51″ (3710 × 940 × 1300 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "3,086 lb (1,400 kg)",
+         "3,638 lb (1,650 kg)",
+         "4,079 lb (1,850 kg)",
+         "6,063 lb (2,750 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-S 2050",
+      "sub": "6.7 ft · 5 models",
+      "models": [
+       "MRM-S 2050x130",
+       "MRM-S 2050x150",
+       "MRM-S 2050x170",
+       "MRM-S 2050x190",
+       "MRM-S 2050x220"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 1/4″ (6 / 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 1/4″ (6 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.12″ (130 mm)",
+         "5.91″ (150 mm)",
+         "6.69″ (170 mm)",
+         "7.48″ (190 mm)",
+         "8.66″ (220 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "7.7″ (195 mm)",
+         "8.9″ (225 mm)",
+         "10.0″ (255 mm)",
+         "11.2″ (285 mm)",
+         "—"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)"
+        ]
+       },
+       {
+        "label": "Back roll motor",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)",
+         "3 HP (2.2 kW)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "148 × 26 × 40″ (3760 × 660 × 1020 mm)",
+         "148 × 27 × 41″ (3760 × 690 × 1040 mm)",
+         "152 × 28 × 41″ (3860 × 710 × 1040 mm)",
+         "165 × 37 × 51″ (4190 × 940 × 1300 mm)",
+         "165 × 45 × 55″ (4190 × 1140 × 1400 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "3,527 lb (1,600 kg)",
+         "4,156 lb (1,885 kg)",
+         "4,630 lb (2,100 kg)",
+         "6,834 lb (3,100 kg)",
+         "8,818 lb (4,000 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-S 2550",
+      "sub": "8.4 ft · 4 models",
+      "models": [
+       "MRM-S 2550x150",
+       "MRM-S 2550x180",
+       "MRM-S 2550x190",
+       "MRM-S 2550x220"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)",
+         "8.4 ft · 100.4″ (2550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 1/4″ (6 / 6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "5.91″ (150 mm)",
+         "7.09″ (180 mm)",
+         "7.48″ (190 mm)",
+         "8.66″ (220 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "8.9″ (225 mm)",
+         "10.6″ (270 mm)",
+         "11.2″ (285 mm)",
+         "13.0″ (330 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)"
+        ]
+       },
+       {
+        "label": "Back roll motor",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)",
+         "3 HP (2.2 kW)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "167 × 26 × 40″ (4240 × 660 × 1020 mm)",
+         "171 × 37 × 51″ (4340 × 940 × 1300 mm)",
+         "185 × 37 × 51″ (4700 × 940 × 1300 mm)",
+         "185 × 45 × 55″ (4700 × 1140 × 1400 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "4,740 lb (2,150 kg)",
+         "6,724 lb (3,050 kg)",
+         "7,496 lb (3,400 kg)",
+         "11,023 lb (5,000 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "MRM-S 3050",
+      "sub": "10 ft · 4 models",
+      "models": [
+       "MRM-S 3050x160",
+       "MRM-S 3050x190",
+       "MRM-S 3050x200",
+       "MRM-S 3050x220"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "10 ft · 120.1″ (3050 mm)",
+         "10 ft · 120.1″ (3050 mm)",
+         "10 ft · 120.1″ (3050 mm)",
+         "10 ft · 120.1″ (3050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pre-bending capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "cells": [
+         "6.30″ (160 mm)",
+         "7.48″ (190 mm)",
+         "7.87″ (200 mm)",
+         "8.66″ (220 mm)"
+        ]
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "at 1.5× / 5× top roll Ø",
+        "cells": [
+         "9.4″ (240 mm)",
+         "11.2″ (285 mm)",
+         "11.8″ (300 mm)",
+         "13.0″ (330 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)"
+        ]
+       },
+       {
+        "label": "Back roll motor",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)",
+         "3 HP (2.2 kW)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "191 × 28 × 41″ (4850 × 710 × 1040 mm)",
+         "205 × 37 × 51″ (5210 × 940 × 1300 mm)",
+         "205 × 37 × 51″ (5210 × 940 × 1300 mm)",
+         "205 × 45 × 55″ (5210 × 1140 × 1400 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "5,842 lb (2,650 kg)",
+         "8,267 lb (3,750 kg)",
+         "8,818 lb (4,000 kg)",
+         "13,228 lb (6,000 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MRM-S 1050x130",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "1/4″ / 1/4″ (6 / 6 mm)",
+       "5.12″ (130 mm)",
+       "3 HP (2.2 kW)",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 1050x150",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "5.91″ (150 mm)",
+       "3 HP (2.2 kW)",
+       "3,197 lb (1,450 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 1050x170",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "6.69″ (170 mm)",
+       "5.4 HP (4 kW)",
+       "3,527 lb (1,600 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 1050x190",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "3/8″ / 3/8″ (10 / 10 mm)",
+       "7.48″ (190 mm)",
+       "5.4 HP (4 kW)",
+       "5,401 lb (2,450 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 1550x130",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "5.12″ (130 mm)",
+       "3 HP (2.2 kW)",
+       "3,086 lb (1,400 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 1550x150",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "1/4″ / 1/4″ (6 / 6 mm)",
+       "5.91″ (150 mm)",
+       "3 HP (2.2 kW)",
+       "3,638 lb (1,650 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 1550x170",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "6.69″ (170 mm)",
+       "5.4 HP (4 kW)",
+       "4,079 lb (1,850 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 1550x190",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "7.48″ (190 mm)",
+       "5.4 HP (4 kW)",
+       "6,063 lb (2,750 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2050x130",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.12″ (130 mm)",
+       "3 HP (2.2 kW)",
+       "3,527 lb (1,600 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2050x150",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "8 ga / 3/16″ (4 / 5 mm)",
+       "5.91″ (150 mm)",
+       "3 HP (2.2 kW)",
+       "4,156 lb (1,885 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2050x170",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "6.69″ (170 mm)",
+       "5.4 HP (4 kW)",
+       "4,630 lb (2,100 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2050x190",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "1/4″ / 1/4″ (6 / 6 mm)",
+       "7.48″ (190 mm)",
+       "5.4 HP (4 kW)",
+       "6,834 lb (3,100 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2050x220",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "8.66″ (220 mm)",
+       "5.4 HP (4 kW)",
+       "8,818 lb (4,000 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2550x150",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.91″ (150 mm)",
+       "3 HP (2.2 kW)",
+       "4,740 lb (2,150 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2550x180",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "8 ga / 3/16″ (4 / 5 mm)",
+       "7.09″ (180 mm)",
+       "5.4 HP (4 kW)",
+       "6,724 lb (3,050 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2550x190",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "7.48″ (190 mm)",
+       "5.4 HP (4 kW)",
+       "7,496 lb (3,400 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 2550x220",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "1/4″ / 1/4″ (6 / 6 mm)",
+       "8.66″ (220 mm)",
+       "5.4 HP (4 kW)",
+       "11,023 lb (5,000 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 3050x160",
+      "glance": [
+       "10 ft · 120.1″ (3050 mm)",
+       "14 ga / 11 ga (2 / 3 mm)",
+       "6.30″ (160 mm)",
+       "3 HP (2.2 kW)",
+       "5,842 lb (2,650 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 3050x190",
+      "glance": [
+       "10 ft · 120.1″ (3050 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "7.48″ (190 mm)",
+       "5.4 HP (4 kW)",
+       "8,267 lb (3,750 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 3050x200",
+      "glance": [
+       "10 ft · 120.1″ (3050 mm)",
+       "8 ga / 3/16″ (4 / 5 mm)",
+       "7.87″ (200 mm)",
+       "5.4 HP (4 kW)",
+       "8,818 lb (4,000 kg)"
+      ]
+     },
+     {
+      "name": "MRM-S 3050x220",
+      "glance": [
+       "10 ft · 120.1″ (3050 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "8.66″ (220 mm)",
+       "5.4 HP (4 kW)",
+       "13,228 lb (6,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "MRM-S 1050x130": "rolls up to 1/4″ (6 mm) × 3.4 ft",
+     "MRM-S 1050x150": "rolls up to 5/16″ (8 mm) × 3.4 ft",
+     "MRM-S 1050x170": "rolls up to 3/8″ (10 mm) × 3.4 ft",
+     "MRM-S 1050x190": "rolls up to 3/8″ (10 mm) × 3.4 ft",
+     "MRM-S 1550x130": "rolls up to 1/4″ (6 mm) × 5.1 ft",
+     "MRM-S 1550x150": "rolls up to 1/4″ (6 mm) × 5.1 ft",
+     "MRM-S 1550x170": "rolls up to 5/16″ (8 mm) × 5.1 ft",
+     "MRM-S 1550x190": "rolls up to 3/8″ (10 mm) × 5.1 ft",
+     "MRM-S 2050x130": "rolls up to 8 ga (4 mm) × 6.7 ft",
+     "MRM-S 2050x150": "rolls up to 3/16″ (5 mm) × 6.7 ft",
+     "MRM-S 2050x170": "rolls up to 1/4″ (6 mm) × 6.7 ft",
+     "MRM-S 2050x190": "rolls up to 1/4″ (6 mm) × 6.7 ft",
+     "MRM-S 2050x220": "rolls up to 5/16″ (8 mm) × 6.7 ft",
+     "MRM-S 2550x150": "rolls up to 8 ga (4 mm) × 8.4 ft",
+     "MRM-S 2550x180": "rolls up to 3/16″ (5 mm) × 8.4 ft",
+     "MRM-S 2550x190": "rolls up to 1/4″ (6 mm) × 8.4 ft",
+     "MRM-S 2550x220": "rolls up to 1/4″ (6 mm) × 8.4 ft",
+     "MRM-S 3050x160": "rolls up to 11 ga (3 mm) × 10 ft",
+     "MRM-S 3050x190": "rolls up to 8 ga (4 mm) × 10 ft",
+     "MRM-S 3050x200": "rolls up to 3/16″ (5 mm) × 10 ft",
+     "MRM-S 3050x220": "rolls up to 1/4″ (6 mm) × 10 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Capacity pairs are as published by the manufacturer."
+   },
+   "headline": "Working lengths 3.4–10 ft (1050–3050 mm) · rolls up to 3/8″ (10 mm)",
+   "brand": "isitan"
+  },
+  "isitan-irm": {
+   "id": "isitan-irm",
+   "group": "3-roll-motorized",
+   "name": "IRM mechanical asymmetrical 3-roll plate rollers",
+   "short": "IRM motorized 3-roll",
+   "models_label": "IRM 1050x110 – IRM 2550x140 · 10 models",
+   "summary": "Value-priced motorized plate rolls, a favourite of small workshops: top and bottom rolls driven by a single gearbox and gear system, spheroidal cast-iron frames, wire grooves at the roll ends and a cone-bending device, with a mobile control panel and foot pedal. Designed for light to medium work up to 3/16″ — aluminum forming, HVAC ducting, signage panels and sheet-metal enclosures.",
+   "features": [
+    "Top and bottom rolls driven by a single gearbox and gear system",
+    "Certified SAE 1050 steel rolls with high tensile strength; spheroidal cast-iron frames",
+    "Mobile control panel with foot pedal; precision bending with brake motor",
+    "Cone-bending device, manual drop-end, top-roll support with bearing",
+    "Wire grooves at the roll ends; IRM 2550x140 with motorized back roll as standard",
+    "Built to EC safety directives (CE certified)"
+   ],
+   "optional": [
+    "Motorized back-roll adjustment with digital readout",
+    "Induction-hardened rolls; adjustable stepless speed",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-irm-1550-140",
+    "is-irm-1050-130",
+    "is-irm-1270-140",
+    "is-irm-2050-130",
+    "is-irm-2550-130",
+    "is-irm-drop-end"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "IRM 1050 – 1550",
+      "sub": "3.4–5.1 ft · 5 models",
+      "models": [
+       "IRM 1050x110",
+       "IRM 1050x130",
+       "IRM 1270x120",
+       "IRM 1270x140",
+       "IRM 1550x110"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "8 ga (4 mm)",
+         "3/16″ (5 mm)",
+         "8 ga (4 mm)",
+         "3/16″ (5 mm)",
+         "11 ga (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "4.33″ (110 mm)",
+         "5.12″ (130 mm)",
+         "4.72″ (120 mm)",
+         "5.51″ (140 mm)",
+         "4.33″ (110 mm)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "10 ft/min (3 m/min)",
+         "11 ft/min (3.5 m/min)",
+         "10 ft/min (3 m/min)",
+         "11 ft/min (3.5 m/min)",
+         "10 ft/min (3 m/min)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "87 × 30 × 39″ (2210 × 760 × 990 mm)",
+         "87 × 30 × 39″ (2210 × 760 × 990 mm)",
+         "98 × 33 × 39″ (2490 × 840 × 990 mm)",
+         "97 × 30 × 39″ (2460 × 760 × 990 mm)",
+         "106 × 30 × 39″ (2690 × 760 × 990 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "2,183 lb (990 kg)",
+         "2,646 lb (1,200 kg)",
+         "2,381 lb (1,080 kg)",
+         "2,976 lb (1,350 kg)",
+         "2,646 lb (1,200 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "IRM 1550 – 2550",
+      "sub": "5.1–8.4 ft · 5 models",
+      "models": [
+       "IRM 1550x140",
+       "IRM 2050x110",
+       "IRM 2050x130",
+       "IRM 2050x140",
+       "IRM 2550x140"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "5.1 ft · 61.0″ (1550 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "6.7 ft · 80.7″ (2050 mm)",
+         "8.4 ft · 100.4″ (2550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "8 ga (4 mm)",
+         "14 ga (2 mm)",
+         "11 ga (3 mm)",
+         "8 ga (4 mm)",
+         "12 ga (2.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "5.51″ (140 mm)",
+         "4.33″ (110 mm)",
+         "5.12″ (130 mm)",
+         "5.51″ (140 mm)",
+         "5.51″ (140 mm)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "11 ft/min (3.5 m/min)",
+         "10 ft/min (3 m/min)",
+         "11 ft/min (3.5 m/min)",
+         "11 ft/min (3.5 m/min)",
+         "11 ft/min (3.5 m/min)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 + 1 HP (2.2 + 0.75 kW)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)",
+         "3/16″, 1/4″, 3/8″, 1/2″ (4, 6, 10, 12 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "106 × 30 × 39″ (2690 × 760 × 990 mm)",
+         "126 × 30 × 39″ (3200 × 760 × 990 mm)",
+         "126 × 30 × 39″ (3200 × 760 × 990 mm)",
+         "126 × 30 × 39″ (3200 × 760 × 990 mm)",
+         "146 × 30 × 39″ (3710 × 760 × 990 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "3,131 lb (1,420 kg)",
+         "3,042 lb (1,380 kg)",
+         "3,307 lb (1,500 kg)",
+         "3,638 lb (1,650 kg)",
+         "4,079 lb (1,850 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "IRM 1050x110",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "8 ga (4 mm)",
+       "4.33″ (110 mm)",
+       "3 HP (2.2 kW)",
+       "2,183 lb (990 kg)"
+      ]
+     },
+     {
+      "name": "IRM 1050x130",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "3/16″ (5 mm)",
+       "5.12″ (130 mm)",
+       "3 HP (2.2 kW)",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "IRM 1270x120",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "8 ga (4 mm)",
+       "4.72″ (120 mm)",
+       "3 HP (2.2 kW)",
+       "2,381 lb (1,080 kg)"
+      ]
+     },
+     {
+      "name": "IRM 1270x140",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "3/16″ (5 mm)",
+       "5.51″ (140 mm)",
+       "3 HP (2.2 kW)",
+       "2,976 lb (1,350 kg)"
+      ]
+     },
+     {
+      "name": "IRM 1550x110",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "11 ga (3 mm)",
+       "4.33″ (110 mm)",
+       "3 HP (2.2 kW)",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "IRM 1550x140",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "8 ga (4 mm)",
+       "5.51″ (140 mm)",
+       "3 HP (2.2 kW)",
+       "3,131 lb (1,420 kg)"
+      ]
+     },
+     {
+      "name": "IRM 2050x110",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "14 ga (2 mm)",
+       "4.33″ (110 mm)",
+       "3 HP (2.2 kW)",
+       "3,042 lb (1,380 kg)"
+      ]
+     },
+     {
+      "name": "IRM 2050x130",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "11 ga (3 mm)",
+       "5.12″ (130 mm)",
+       "3 HP (2.2 kW)",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "IRM 2050x140",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "8 ga (4 mm)",
+       "5.51″ (140 mm)",
+       "3 HP (2.2 kW)",
+       "3,638 lb (1,650 kg)"
+      ]
+     },
+     {
+      "name": "IRM 2550x140",
+      "glance": [
+       "8.4 ft · 100.4″ (2550 mm)",
+       "12 ga (2.5 mm)",
+       "5.51″ (140 mm)",
+       "3 + 1 HP (2.2 + 0.75 kW)",
+       "4,079 lb (1,850 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "IRM 1050x110": "rolls up to 8 ga (4 mm) × 3.4 ft",
+     "IRM 1050x130": "rolls up to 3/16″ (5 mm) × 3.4 ft",
+     "IRM 1270x120": "rolls up to 8 ga (4 mm) × 4.2 ft",
+     "IRM 1270x140": "rolls up to 3/16″ (5 mm) × 4.2 ft",
+     "IRM 1550x110": "rolls up to 11 ga (3 mm) × 5.1 ft",
+     "IRM 1550x140": "rolls up to 8 ga (4 mm) × 5.1 ft",
+     "IRM 2050x110": "rolls up to 14 ga (2 mm) × 6.7 ft",
+     "IRM 2050x130": "rolls up to 11 ga (3 mm) × 6.7 ft",
+     "IRM 2050x140": "rolls up to 8 ga (4 mm) × 6.7 ft",
+     "IRM 2550x140": "rolls up to 12 ga (2.5 mm) × 8.4 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 3.4–8.4 ft (1050–2550 mm) · rolls up to 3/16″ (5 mm)",
+   "brand": "isitan"
+  },
+  "isitan-rm": {
+   "id": "isitan-rm",
+   "group": "3-roll-motorized",
+   "name": "RM motorized 3-roll asymmetrical plate rollers",
+   "short": "RM motorized",
+   "models_label": "RM 1050x90 · 1270x90 · 1550x90 · 2050x95",
+   "summary": "Motorized 3-roll plate rolls on a reinforced steel frame with a single gearbox and chain/gear drive, foot-pedal control and a brake motor for precise stops. Rolls up to 11 ga, with wire grooves and a cone-bending device as standard — the motorized sister of the RS manual roll for ducting, cylinders and light sheet-metal work.",
+   "features": [
+    "Top and bottom rolls driven by a single gearbox and chain/gear system",
+    "Certified SAE 1050 steel rolls; reinforced steel main frame",
+    "Mobile control panel with foot pedal; precision bending with brake motor",
+    "Cone-bending device, manual drop-end and wire grooves at the roll ends",
+    "Built to EC safety directives (CE)"
+   ],
+   "optional": [
+    "Motorized back-roll adjustment with digital readout",
+    "Induction-hardened or coated rolls; variable speed",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-rm-1270-90",
+    "is-rm-1050-90",
+    "is-rm-1550-90",
+    "is-rm-2050-95",
+    "is-rm-drop-end",
+    "is-rm-safety-switch"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "RM — motorized",
+      "sub": "3.4–6.7 ft · 4 models",
+      "models": [
+       "RM 1050x90",
+       "RM 1270x90",
+       "RM 1550x90",
+       "RM 2050x95"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "3.4 ft · 41.3″ (1050 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "11 ga (3 mm)",
+         "12 ga (2.5 mm)",
+         "14 ga (2 mm)",
+         "16 ga (1.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "3.54″ (90 mm)",
+         "3.54″ (90 mm)",
+         "3.54″ (90 mm)",
+         "3.74″ (95 mm)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "20 ft/min (6 m/min)",
+         "20 ft/min (6 m/min)",
+         "20 ft/min (6 m/min)",
+         "20 ft/min (6 m/min)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "64 × 28 × 47″ (1630 × 710 × 1190 mm)",
+         "73 × 28 × 47″ (1850 × 710 × 1190 mm)",
+         "84 × 28 × 47″ (2130 × 710 × 1190 mm)",
+         "104 × 28 × 47″ (2640 × 710 × 1190 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "1,014 lb (460 kg)",
+         "1,146 lb (520 kg)",
+         "1,279 lb (580 kg)",
+         "1,576 lb (715 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "RM 1050x90",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "11 ga (3 mm)",
+       "3.54″ (90 mm)",
+       "1.5 HP (1.1 kW)",
+       "1,014 lb (460 kg)"
+      ]
+     },
+     {
+      "name": "RM 1270x90",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "12 ga (2.5 mm)",
+       "3.54″ (90 mm)",
+       "1.5 HP (1.1 kW)",
+       "1,146 lb (520 kg)"
+      ]
+     },
+     {
+      "name": "RM 1550x90",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "14 ga (2 mm)",
+       "3.54″ (90 mm)",
+       "2 HP (1.5 kW)",
+       "1,279 lb (580 kg)"
+      ]
+     },
+     {
+      "name": "RM 2050x95",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "16 ga (1.5 mm)",
+       "3.74″ (95 mm)",
+       "2 HP (1.5 kW)",
+       "1,576 lb (715 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "RM 1050x90": "rolls up to 11 ga (3 mm) × 3.4 ft",
+     "RM 1270x90": "rolls up to 12 ga (2.5 mm) × 4.2 ft",
+     "RM 1550x90": "rolls up to 14 ga (2 mm) × 5.1 ft",
+     "RM 2050x95": "rolls up to 16 ga (1.5 mm) × 6.7 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 11 ga (3 mm)",
+   "brand": "isitan"
+  },
+  "isitan-ir": {
+   "id": "isitan-ir",
+   "group": "slip-rolls",
+   "name": "IR motorized 3-roll slip rolls",
+   "short": "IR motorized slip rolls",
+   "models_label": "IR 1050x46 – IR 2050x75 · 10 models",
+   "summary": "Motorized slip rolls with foot-pedal control for sheet up to 14 ga: top and bottom rolls driven by a single gearbox and chain/gear system, a reinforced steel frame, manual drop-end and wire grooves at the roll ends. A geared lock gives quick back-roll adjustment and a brake motor stops the rolls exactly where the operator wants them — the everyday roll of HVAC and sheet-metal shops.",
+   "features": [
+    "Top and bottom rolls driven by a single gearbox and chain/gear system",
+    "Certified SAE 1050 steel rolls with high tensile strength; steel frame",
+    "Mobile control panel with foot pedal; precision bending with brake motor",
+    "Manual drop-end; geared lock for quick back-roll adjustment",
+    "Wire grooves at the roll ends",
+    "Built to EC safety directives (CE certified)"
+   ],
+   "optional": [
+    "Induction-hardened rolls",
+    "Drop-end safety switch",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-ir-1270-75",
+    "is-ir-1050-56",
+    "is-ir-1550-75",
+    "is-ir-2050-75",
+    "is-ir-geared-lock",
+    "is-ir-drop-end",
+    "is-ir-safety-switch"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "IR 1050 – 1270",
+      "sub": "3.4–4.2 ft · 5 models",
+      "models": [
+       "IR 1050x46",
+       "IR 1050x56",
+       "IR 1050x68",
+       "IR 1050x75",
+       "IR 1270x56"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "4.2 ft · 50.0″ (1270 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "20 ga (1 mm)",
+         "18 ga (1.2 mm)",
+         "16 ga (1.5 mm)",
+         "14 ga (2 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "1.81″ (46 mm)",
+         "2.20″ (56 mm)",
+         "2.68″ (68 mm)",
+         "2.95″ (75 mm)",
+         "2.20″ (56 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "1 HP (0.75 kW)",
+         "1 HP (0.75 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)",
+         "1 HP (0.75 kW)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "59 × 28 × 44″ (1500 × 710 × 1120 mm)",
+         "59 × 28 × 44″ (1500 × 710 × 1120 mm)",
+         "63 × 28 × 46″ (1600 × 710 × 1170 mm)",
+         "63 × 28 × 46″ (1600 × 710 × 1170 mm)",
+         "69 × 28 × 44″ (1750 × 710 × 1120 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "463 lb (210 kg)",
+         "529 lb (240 kg)",
+         "750 lb (340 kg)",
+         "849 lb (385 kg)",
+         "661 lb (300 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "IR 1270 – 2050",
+      "sub": "4.2–6.7 ft · 5 models",
+      "models": [
+       "IR 1270x68",
+       "IR 1270x75",
+       "IR 1550x68",
+       "IR 1550x75",
+       "IR 2050x75"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "18 ga (1.2 mm)",
+         "16 ga (1.5 mm)",
+         "20 ga (1 mm)",
+         "18 ga (1.2 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "2.68″ (68 mm)",
+         "2.95″ (75 mm)",
+         "2.68″ (68 mm)",
+         "2.95″ (75 mm)",
+         "2.95″ (75 mm)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "72 × 28 × 46″ (1830 × 710 × 1170 mm)",
+         "72 × 28 × 46″ (1830 × 710 × 1170 mm)",
+         "83 × 28 × 46″ (2110 × 710 × 1170 mm)",
+         "83 × 28 × 46″ (2110 × 710 × 1170 mm)",
+         "103 × 28 × 46″ (2620 × 710 × 1170 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "827 lb (375 kg)",
+         "794 lb (360 kg)",
+         "882 lb (400 kg)",
+         "948 lb (430 kg)",
+         "1,301 lb (590 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "IR 1050x46",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "20 ga (1 mm)",
+       "1.81″ (46 mm)",
+       "1 HP (0.75 kW)",
+       "463 lb (210 kg)"
+      ]
+     },
+     {
+      "name": "IR 1050x56",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "18 ga (1.2 mm)",
+       "2.20″ (56 mm)",
+       "1 HP (0.75 kW)",
+       "529 lb (240 kg)"
+      ]
+     },
+     {
+      "name": "IR 1050x68",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "16 ga (1.5 mm)",
+       "2.68″ (68 mm)",
+       "2 HP (1.5 kW)",
+       "750 lb (340 kg)"
+      ]
+     },
+     {
+      "name": "IR 1050x75",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "14 ga (2 mm)",
+       "2.95″ (75 mm)",
+       "2 HP (1.5 kW)",
+       "849 lb (385 kg)"
+      ]
+     },
+     {
+      "name": "IR 1270x56",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "20 ga (1 mm)",
+       "2.20″ (56 mm)",
+       "1 HP (0.75 kW)",
+       "661 lb (300 kg)"
+      ]
+     },
+     {
+      "name": "IR 1270x68",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "18 ga (1.2 mm)",
+       "2.68″ (68 mm)",
+       "2 HP (1.5 kW)",
+       "827 lb (375 kg)"
+      ]
+     },
+     {
+      "name": "IR 1270x75",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "16 ga (1.5 mm)",
+       "2.95″ (75 mm)",
+       "2 HP (1.5 kW)",
+       "794 lb (360 kg)"
+      ]
+     },
+     {
+      "name": "IR 1550x68",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "20 ga (1 mm)",
+       "2.68″ (68 mm)",
+       "2 HP (1.5 kW)",
+       "882 lb (400 kg)"
+      ]
+     },
+     {
+      "name": "IR 1550x75",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "18 ga (1.2 mm)",
+       "2.95″ (75 mm)",
+       "2 HP (1.5 kW)",
+       "948 lb (430 kg)"
+      ]
+     },
+     {
+      "name": "IR 2050x75",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "20 ga (1 mm)",
+       "2.95″ (75 mm)",
+       "2 HP (1.5 kW)",
+       "1,301 lb (590 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "IR 1050x46": "rolls up to 20 ga (1 mm) × 3.4 ft",
+     "IR 1050x56": "rolls up to 18 ga (1.2 mm) × 3.4 ft",
+     "IR 1050x68": "rolls up to 16 ga (1.5 mm) × 3.4 ft",
+     "IR 1050x75": "rolls up to 14 ga (2 mm) × 3.4 ft",
+     "IR 1270x56": "rolls up to 20 ga (1 mm) × 4.2 ft",
+     "IR 1270x68": "rolls up to 18 ga (1.2 mm) × 4.2 ft",
+     "IR 1270x75": "rolls up to 16 ga (1.5 mm) × 4.2 ft",
+     "IR 1550x68": "rolls up to 20 ga (1 mm) × 5.1 ft",
+     "IR 1550x75": "rolls up to 18 ga (1.2 mm) × 5.1 ft",
+     "IR 2050x75": "rolls up to 20 ga (1 mm) × 6.7 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 14 ga (2 mm)",
+   "brand": "isitan"
+  },
+  "isitan-r": {
+   "id": "isitan-r",
+   "group": "slip-rolls",
+   "name": "R manual 3-roll slip rolls — floor-standing and bench models",
+   "short": "R manual slip rolls",
+   "models_label": "R 610x46 – R 2050x75 · 13 models",
+   "summary": "Hand-crank slip rolls from a 2 ft bench roll to a 6.7 ft floor-standing machine: certified SAE 1050 steel rolls, a steel frame on the 68 and 75 mm roll models, manual drop-end and wire grooves at the roll ends. An easy bottom-roll pinching lever sets the sheet thickness; bench models are supplied without a stand for mounting on a workbench.",
+   "features": [
+    "Certified SAE 1050 steel rolls with high tensile strength",
+    "Steel frame (68 and 75 mm roll models); bench models without stand",
+    "Manual drop-end; easy bottom-roll pinching lever",
+    "Wire grooves at the roll ends as standard",
+    "R 1270x46 bench roll with geared lock for quick back-roll adjustment"
+   ],
+   "optional": [
+    "Induction-hardened rolls"
+   ],
+   "images": [
+    "is-r-1050-56",
+    "is-r-1270-75",
+    "is-r-1550-68",
+    "is-r-2050-75",
+    "is-r-1270-46",
+    "is-r-610-46",
+    "is-r-pinch-lever",
+    "is-r-wire-grooves"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "R 1050 – 1270 · floor-standing",
+      "sub": "3.4–4.2 ft · 5 models",
+      "models": [
+       "R 1050x46",
+       "R 1050x56",
+       "R 1050x68",
+       "R 1050x75",
+       "R 1270x56"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "3.4 ft · 41.3″ (1050 mm)",
+         "4.2 ft · 50.0″ (1270 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "20 ga (1 mm)",
+         "18 ga (1.2 mm)",
+         "16 ga (1.5 mm)",
+         "14 ga (2 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "1.81″ (46 mm)",
+         "2.20″ (56 mm)",
+         "2.68″ (68 mm)",
+         "2.95″ (75 mm)",
+         "2.20″ (56 mm)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "55 × 28 × 44″ (1400 × 710 × 1120 mm)",
+         "55 × 28 × 44″ (1400 × 710 × 1120 mm)",
+         "76 × 28 × 46″ (1930 × 710 × 1170 mm)",
+         "76 × 28 × 46″ (1930 × 710 × 1170 mm)",
+         "69 × 28 × 44″ (1750 × 710 × 1120 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "353 lb (160 kg)",
+         "408 lb (185 kg)",
+         "617 lb (280 kg)",
+         "573 lb (260 kg)",
+         "507 lb (230 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "R 1270 – 2050 · floor-standing",
+      "sub": "4.2–6.7 ft · 5 models",
+      "models": [
+       "R 1270x68",
+       "R 1270x75",
+       "R 1550x68",
+       "R 1550x75",
+       "R 2050x75"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "4.2 ft · 50.0″ (1270 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "18 ga (1.2 mm)",
+         "16 ga (1.5 mm)",
+         "20 ga (1 mm)",
+         "18 ga (1.2 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "2.68″ (68 mm)",
+         "2.95″ (75 mm)",
+         "2.68″ (68 mm)",
+         "2.95″ (75 mm)",
+         "2.95″ (75 mm)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "85 × 28 × 46″ (2160 × 710 × 1170 mm)",
+         "85 × 28 × 46″ (2160 × 710 × 1170 mm)",
+         "96 × 28 × 46″ (2440 × 710 × 1170 mm)",
+         "96 × 28 × 46″ (2440 × 710 × 1170 mm)",
+         "115 × 28 × 46″ (2920 × 710 × 1170 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "683 lb (310 kg)",
+         "728 lb (330 kg)",
+         "772 lb (350 kg)",
+         "805 lb (365 kg)",
+         "1,157 lb (525 kg)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "R bench models · without stand",
+      "sub": "2–4.2 ft · 3 models",
+      "models": [
+       "R 610x46",
+       "R 1050x46",
+       "R 1270x46"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "2 ft · 23.6″ (610 mm)",
+         "3.3 ft · 39.4″ (1050 mm)",
+         "4.2 ft · 50.0″ (1270 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "18 ga (1.2 mm)",
+         "20 ga (1 mm)",
+         "22 ga (0.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "1.81″ (46 mm)",
+         "1.81″ (46 mm)",
+         "1.81″ (46 mm)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "35 × 20 × 16″ (890 × 510 × 410 mm)",
+         "55 × 20 × 16″ (1400 × 510 × 410 mm)",
+         "64 × 20 × 16″ (1630 × 510 × 410 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "198 lb (90 kg)",
+         "265 lb (120 kg)",
+         "331 lb (150 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "R 1050x46",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "20 ga (1 mm)",
+       "1.81″ (46 mm)",
+       "—",
+       "353 lb (160 kg)"
+      ]
+     },
+     {
+      "name": "R 1050x56",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "18 ga (1.2 mm)",
+       "2.20″ (56 mm)",
+       "—",
+       "408 lb (185 kg)"
+      ]
+     },
+     {
+      "name": "R 1050x68",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "16 ga (1.5 mm)",
+       "2.68″ (68 mm)",
+       "—",
+       "617 lb (280 kg)"
+      ]
+     },
+     {
+      "name": "R 1050x75",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "14 ga (2 mm)",
+       "2.95″ (75 mm)",
+       "—",
+       "573 lb (260 kg)"
+      ]
+     },
+     {
+      "name": "R 1270x56",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "20 ga (1 mm)",
+       "2.20″ (56 mm)",
+       "—",
+       "507 lb (230 kg)"
+      ]
+     },
+     {
+      "name": "R 1270x68",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "18 ga (1.2 mm)",
+       "2.68″ (68 mm)",
+       "—",
+       "683 lb (310 kg)"
+      ]
+     },
+     {
+      "name": "R 1270x75",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "16 ga (1.5 mm)",
+       "2.95″ (75 mm)",
+       "—",
+       "728 lb (330 kg)"
+      ]
+     },
+     {
+      "name": "R 1550x68",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "20 ga (1 mm)",
+       "2.68″ (68 mm)",
+       "—",
+       "772 lb (350 kg)"
+      ]
+     },
+     {
+      "name": "R 1550x75",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "18 ga (1.2 mm)",
+       "2.95″ (75 mm)",
+       "—",
+       "805 lb (365 kg)"
+      ]
+     },
+     {
+      "name": "R 2050x75",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "20 ga (1 mm)",
+       "2.95″ (75 mm)",
+       "—",
+       "1,157 lb (525 kg)"
+      ]
+     },
+     {
+      "name": "R 610x46",
+      "glance": [
+       "2 ft · 23.6″ (610 mm)",
+       "18 ga (1.2 mm)",
+       "1.81″ (46 mm)",
+       "—",
+       "198 lb (90 kg)"
+      ]
+     },
+     {
+      "name": "R 1050x46",
+      "glance": [
+       "3.3 ft · 39.4″ (1050 mm)",
+       "20 ga (1 mm)",
+       "1.81″ (46 mm)",
+       "—",
+       "265 lb (120 kg)"
+      ]
+     },
+     {
+      "name": "R 1270x46",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "22 ga (0.8 mm)",
+       "1.81″ (46 mm)",
+       "—",
+       "331 lb (150 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "R 1050x46": "rolls up to 20 ga (1 mm) × 3.3 ft",
+     "R 1050x56": "rolls up to 18 ga (1.2 mm) × 3.4 ft",
+     "R 1050x68": "rolls up to 16 ga (1.5 mm) × 3.4 ft",
+     "R 1050x75": "rolls up to 14 ga (2 mm) × 3.4 ft",
+     "R 1270x56": "rolls up to 20 ga (1 mm) × 4.2 ft",
+     "R 1270x68": "rolls up to 18 ga (1.2 mm) × 4.2 ft",
+     "R 1270x75": "rolls up to 16 ga (1.5 mm) × 4.2 ft",
+     "R 1550x68": "rolls up to 20 ga (1 mm) × 5.1 ft",
+     "R 1550x75": "rolls up to 18 ga (1.2 mm) × 5.1 ft",
+     "R 2050x75": "rolls up to 20 ga (1 mm) × 6.7 ft",
+     "R 610x46": "rolls up to 18 ga (1.2 mm) × 2 ft",
+     "R 1270x46": "rolls up to 22 ga (0.8 mm) × 4.2 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Manual machines carry the NovoTech warranty and support; electrical items do not apply."
+   },
+   "headline": "Working lengths 2–6.7 ft (610–2050 mm) · rolls up to 14 ga (2 mm)",
+   "brand": "isitan"
+  },
+  "isitan-rs": {
+   "id": "isitan-rs",
+   "group": "slip-rolls",
+   "name": "RS manual 3-roll asymmetrical plate rollers",
+   "short": "RS manual",
+   "models_label": "RS 1050x90 · 1270x90 · 1550x90 · 2050x95",
+   "summary": "The manual version of the RM: the same reinforced steel frame, certified SAE 1050 rolls, cone-bending device and wire grooves, turned by a hand crank instead of a motor. Rolls up to 11 ga on the shortest model — a sturdy, no-electrics roll for shops that bend a few cylinders a day.",
+   "features": [
+    "Hand-crank operation; reinforced steel main frame",
+    "Certified SAE 1050 steel rolls with high tensile strength",
+    "Cone-bending device, manual drop-end and wire grooves at the roll ends",
+    "Built to EC safety directives (CE)"
+   ],
+   "optional": [
+    "Induction-hardened or coated rolls",
+    "Fully enclosed sheet covers"
+   ],
+   "images": [
+    "is-rs-1270-90",
+    "is-rs-1050-90",
+    "is-rs-1550-90",
+    "is-rs-2050-95"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "RS — manual",
+      "sub": "3.4–6.7 ft · 4 models",
+      "models": [
+       "RS 1050x90",
+       "RS 1270x90",
+       "RS 1550x90",
+       "RS 2050x95"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "3.4 ft · 41.3″ (1050 mm)",
+         "4.2 ft · 50.0″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "6.7 ft · 80.7″ (2050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "11 ga (3 mm)",
+         "12 ga (2.5 mm)",
+         "14 ga (2 mm)",
+         "16 ga (1.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "3.54″ (90 mm)",
+         "3.54″ (90 mm)",
+         "3.54″ (90 mm)",
+         "3.74″ (95 mm)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "— HP (— kW)",
+         "— HP (— kW)",
+         "— HP (— kW)",
+         "— HP (— kW)"
+        ]
+       },
+       {
+        "label": "Wire grooves Ø",
+        "cells": [
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
+         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "82 × 28 × 49″ (2080 × 710 × 1240 mm)",
+         "91 × 28 × 49″ (2310 × 710 × 1240 mm)",
+         "102 × 28 × 49″ (2590 × 710 × 1240 mm)",
+         "121 × 28 × 49″ (3070 × 710 × 1240 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "904 lb (410 kg)",
+         "926 lb (420 kg)",
+         "1,235 lb (560 kg)",
+         "1,433 lb (650 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "RS 1050x90",
+      "glance": [
+       "3.4 ft · 41.3″ (1050 mm)",
+       "11 ga (3 mm)",
+       "3.54″ (90 mm)",
+       "— HP (— kW)",
+       "904 lb (410 kg)"
+      ]
+     },
+     {
+      "name": "RS 1270x90",
+      "glance": [
+       "4.2 ft · 50.0″ (1270 mm)",
+       "12 ga (2.5 mm)",
+       "3.54″ (90 mm)",
+       "— HP (— kW)",
+       "926 lb (420 kg)"
+      ]
+     },
+     {
+      "name": "RS 1550x90",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "14 ga (2 mm)",
+       "3.54″ (90 mm)",
+       "— HP (— kW)",
+       "1,235 lb (560 kg)"
+      ]
+     },
+     {
+      "name": "RS 2050x95",
+      "glance": [
+       "6.7 ft · 80.7″ (2050 mm)",
+       "16 ga (1.5 mm)",
+       "3.74″ (95 mm)",
+       "— HP (— kW)",
+       "1,433 lb (650 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "RS 1050x90": "rolls up to 11 ga (3 mm) × 3.4 ft",
+     "RS 1270x90": "rolls up to 12 ga (2.5 mm) × 4.2 ft",
+     "RS 1550x90": "rolls up to 14 ga (2 mm) × 5.1 ft",
+     "RS 2050x95": "rolls up to 16 ga (1.5 mm) × 6.7 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Manual machines carry the NovoTech warranty and support; electrical items do not apply."
+   },
+   "headline": "Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 11 ga (3 mm)",
+   "brand": "isitan"
+  },
+  "isitan-rst": {
+   "id": "isitan-rst",
+   "group": "slip-rolls",
+   "name": "RST / RST-M economical manual and motorized plate rollers",
+   "short": "RST economical",
+   "models_label": "RST 1270x86 · RST-M 1270x86 · RST 1550x86 · RST-M 1550x86",
+   "summary": "Reinforced, value-priced plate rolls for light work up to 12 ga — ventilation ducting, signage panels, machine guards and sheet-metal parts. Cast main frames, a manual drop-end top roll and back and bottom rolls adjusted up and down by screws on both sides; the RST-M adds a geared motor with electrical box and foot pedal.",
+   "features": [
+    "Cast main frames; certified SAE 1050 steel rolls",
+    "Manual drop-end top roll",
+    "Back and bottom rolls adjusted up/down by screws on both sides",
+    "Motor- (RST-M) or hand-driven centre rolls; foot-pedal control on the RST-M"
+   ],
+   "optional": [
+    "Hardened rolls",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "is-rstm-1270-86",
+    "is-rst-1270-86",
+    "is-rst-screws"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "RST · RST-M",
+      "sub": "4.1–5.1 ft · 4 models",
+      "models": [
+       "RST 1270x86",
+       "RST-M 1270x86",
+       "RST 1550x86",
+       "RST-M 1550x86"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "cells": [
+         "4.1 ft · 49.2″ (1270 mm)",
+         "4.1 ft · 49.2″ (1270 mm)",
+         "5.1 ft · 61.0″ (1550 mm)",
+         "5.1 ft · 61.0″ (1550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "",
+        "cells": [
+         "12 ga (2.5 mm)",
+         "12 ga (2.5 mm)",
+         "14 ga (2 mm)",
+         "14 ga (2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roll Ø",
+        "cells": [
+         "3.39″ (86 mm)",
+         "3.39″ (86 mm)",
+         "3.39″ (86 mm)",
+         "3.39″ (86 mm)"
+        ]
+       },
+       {
+        "label": "Rolling speed",
+        "cells": [
+         "—",
+         "39 ft/min (12 m/min)",
+         "—",
+         "39 ft/min (12 m/min)"
+        ]
+       },
+       {
+        "label": "Motor power",
+        "cells": [
+         "— HP (— kW)",
+         "2 HP (1.5 kW)",
+         "— HP (— kW)",
+         "2 HP (1.5 kW)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "cells": [
+         "90 × 28 × 49″ (2290 × 710 × 1240 mm)",
+         "73 × 28 × 49″ (1850 × 710 × 1240 mm)",
+         "83 × 28 × 49″ (2110 × 710 × 1240 mm)",
+         "98 × 28 × 49″ (2490 × 710 × 1240 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "cells": [
+         "937 lb (425 kg)",
+         "926 lb (420 kg)",
+         "1,014 lb (460 kg)",
+         "1,146 lb (520 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "RST 1270x86",
+      "glance": [
+       "4.1 ft · 49.2″ (1270 mm)",
+       "12 ga (2.5 mm)",
+       "3.39″ (86 mm)",
+       "— HP (— kW)",
+       "937 lb (425 kg)"
+      ]
+     },
+     {
+      "name": "RST-M 1270x86",
+      "glance": [
+       "4.1 ft · 49.2″ (1270 mm)",
+       "12 ga (2.5 mm)",
+       "3.39″ (86 mm)",
+       "2 HP (1.5 kW)",
+       "926 lb (420 kg)"
+      ]
+     },
+     {
+      "name": "RST 1550x86",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "14 ga (2 mm)",
+       "3.39″ (86 mm)",
+       "— HP (— kW)",
+       "1,014 lb (460 kg)"
+      ]
+     },
+     {
+      "name": "RST-M 1550x86",
+      "glance": [
+       "5.1 ft · 61.0″ (1550 mm)",
+       "14 ga (2 mm)",
+       "3.39″ (86 mm)",
+       "2 HP (1.5 kW)",
+       "1,146 lb (520 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "RST 1270x86": "rolls up to 12 ga (2.5 mm) × 4.1 ft",
+     "RST-M 1270x86": "rolls up to 12 ga (2.5 mm) × 4.1 ft",
+     "RST 1550x86": "rolls up to 14 ga (2 mm) × 5.1 ft",
+     "RST-M 1550x86": "rolls up to 14 ga (2 mm) × 5.1 ft"
+    },
+    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 4.1–5.1 ft (1270–1550 mm) · rolls up to 12 ga (2.5 mm)",
+   "brand": "isitan"
+  }
+ }
+}

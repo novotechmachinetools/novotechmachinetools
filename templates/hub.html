@@ -66,14 +66,14 @@
 {% endfor %}
 {% else %}
 <section class="wrap subpages" aria-label="Rebar machinery pages">
-  <ul class="subpage-grid">
+  <ul class="subpage-grid{{ ' is-4' if page.subpages|length == 4 else '' }}">
     {% for sp in page.subpages %}{% set im = img(sp.image) %}
     <li class="subpage-card">
       <a href="{{ sp.href }}" class="subpage-art"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 700px) 92vw, 360px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></a>
       <div class="subpage-body">
         <h2><a href="{{ sp.href }}">{{ sp.title }}</a></h2>
         <p>{{ sp.blurb }}</p>
-        <p class="subpage-count">{{ sp.families|length }} machine famil{{ 'y' if sp.families|length == 1 else 'ies' }} · <a class="arrow" href="{{ sp.href }}">specifications, photos and videos</a></p>
+        <p class="subpage-count">{{ sp.families|length }} machine famil{{ 'y' if sp.families|length == 1 else 'ies' }} · <a class="arrow" href="{{ sp.href }}">specifications{{ ', photos and videos' if sp.has_videos else ' and photos' }}</a></p>
       </div>
     </li>
     {% endfor %}
@@ -86,7 +86,7 @@
 <section class="group group-cards{{ ' line-' ~ sp.line if sp.line else '' }}" id="{{ sp.slug }}-overview" aria-labelledby="{{ sp.slug }}-overview-title">
   <header class="group-head">
     <h2 id="{{ sp.slug }}-overview-title">{{ sp.cards_title or (sp.title ~ ' line-up') }}</h2>
-    <p class="group-lead"><a class="arrow" href="{{ sp.href }}">All specifications, photos and videos</a></p>
+    <p class="group-lead"><a class="arrow" href="{{ sp.href }}">All specifications{{ ', photos and videos' if sp.has_videos else ' and photos' }}</a></p>
   </header>
   <ul class="family-cards">
     {% for f in sp.families %}
@@ -164,7 +164,15 @@
   <div class="specs">
     <section class="table-scroll" tabindex="0" aria-label="All models at a glance">
       <table class="spec-table spec-table-range">
-        {% if page.range_kind == 'bandsaw' %}
+        {% if page.range_kind == 'table' %}
+        <caption>{{ page.range_caption }}</caption>
+        <thead><tr><th scope="col" class="label-col">Model</th><th scope="col">Type</th>{% for c in page.range_cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for r in page.range_rows %}
+          <tr><th scope="row"><a href="{{ r.href }}">{{ r.model }}</a><small>{{ r.family }}</small></th><td>{{ r.kind }}</td>{% for c in r.cols %}<td>{{ c }}</td>{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+        {% elif page.range_kind == 'bandsaw' %}
         <caption>{{ page.range_caption or 'Band saws supplied by NovoTech — capacity at 0°' }}</caption>
         <thead><tr><th scope="col" class="label-col">Model</th><th scope="col">Line</th><th scope="col">Type</th><th scope="col">Round at 0°</th><th scope="col">Rectangular at 0°</th><th scope="col">Main motor</th><th scope="col">Weight</th></tr></thead>
         <tbody>
