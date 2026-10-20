@@ -10229,54 +10229,6 @@
    "bytes": 8002
   }
  },
- "bk-hero-auto": {
-  "alt": "Bekamak BMSO 350GA automatic miter band saw",
-  "variants": [
-   {
-    "w": 800,
-    "h": 685,
-    "file": "img/bandsaw/bk-hero-auto-800.webp",
-    "bytes": 75926
-   },
-   {
-    "w": 480,
-    "h": 411,
-    "file": "img/bandsaw/bk-hero-auto-480.webp",
-    "bytes": 37468
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 137,
-   "file": "img/bandsaw/bk-hero-auto-thumb.webp",
-   "bytes": 8456
-  }
- },
- "bk-hero-dc": {
-  "alt": "Bekamak BMSO 570CS fully automatic double-column band saw",
-  "variants": [
-   {
-    "w": 800,
-    "h": 507,
-    "file": "img/bandsaw/bk-hero-dc-800.webp",
-    "bytes": 50594
-   },
-   {
-    "w": 480,
-    "h": 304,
-    "file": "img/bandsaw/bk-hero-dc-480.webp",
-    "bytes": 26078
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 101,
-   "file": "img/bandsaw/bk-hero-dc-thumb.webp",
-   "bytes": 6048
-  }
- },
  "bk-hero-hub": {
   "alt": "Bekamak BMSO 570XS high-tech double-column band saw",
   "variants": [
@@ -13389,6 +13341,54 @@
    "h": 90,
    "file": "img/rebar/video-obbCib0YB24-thumb.webp",
    "bytes": 2390
+  }
+ },
+ "bk-hero-auto-350ga": {
+  "alt": "Bekamak BMSO 350GA automatic miter band saw",
+  "variants": [
+   {
+    "w": 800,
+    "h": 685,
+    "file": "img/bandsaw/bk-hero-auto-350ga-800.webp",
+    "bytes": 75926
+   },
+   {
+    "w": 480,
+    "h": 411,
+    "file": "img/bandsaw/bk-hero-auto-350ga-480.webp",
+    "bytes": 37468
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 137,
+   "file": "img/bandsaw/bk-hero-auto-350ga-thumb.webp",
+   "bytes": 8456
+  }
+ },
+ "bk-hero-dc-570cs": {
+  "alt": "Bekamak BMSO 570CS fully automatic double-column band saw",
+  "variants": [
+   {
+    "w": 800,
+    "h": 507,
+    "file": "img/bandsaw/bk-hero-dc-570cs-800.webp",
+    "bytes": 50594
+   },
+   {
+    "w": 480,
+    "h": 304,
+    "file": "img/bandsaw/bk-hero-dc-570cs-480.webp",
+    "bytes": 26078
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 101,
+   "file": "img/bandsaw/bk-hero-dc-570cs-thumb.webp",
+   "bytes": 6048
   }
  }
 }

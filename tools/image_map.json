@@ -2590,20 +2590,6 @@
   "trim": true,
   "quality": 84
  },
- "bk-hero-auto": {
-  "src": "tools/src-images/cutouts/bk-hero-auto.png",
-  "alt": "Bekamak BMSO 350GA automatic miter band saw",
-  "section": "bandsaw",
-  "trim": true,
-  "quality": 84
- },
- "bk-hero-dc": {
-  "src": "tools/src-images/cutouts/bk-hero-dc.png",
-  "alt": "Bekamak BMSO 570CS fully automatic double-column band saw",
-  "section": "bandsaw",
-  "trim": true,
-  "quality": 84
- },
  "bk-hero-hub": {
   "src": "tools/src-images/cutouts/bk-hero-hub.png",
   "alt": "Bekamak BMSO 570XS high-tech double-column band saw",
@@ -3425,5 +3411,19 @@
   "alt": "Video thumbnail",
   "trim": false,
   "quality": 72
+ },
+ "bk-hero-auto-350ga": {
+  "src": "tools/src-images/cutouts/bk-hero-auto-350ga.png",
+  "alt": "Bekamak BMSO 350GA automatic miter band saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "bk-hero-dc-570cs": {
+  "src": "tools/src-images/cutouts/bk-hero-dc-570cs.png",
+  "alt": "Bekamak BMSO 570CS fully automatic double-column band saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
  }
 }

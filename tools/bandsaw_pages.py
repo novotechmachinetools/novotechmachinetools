@@ -71,7 +71,7 @@ BK = {
         h1="Bekamak automatic band saws",
         intro="Set the length and the quantity, load the bar and walk away. Bekamak's BMSO saws feed the material — with driven rollers, an encoder-measured feed or a servo shuttle vise — clamp, cut and count until the job is done. From Ø9″ to Ø17-3/8″ (230–440 mm), including automatic single- and double-miter models with NC job lists.",
         points=["Roller feed, encoder feed or servo shuttle-vise feed", "NC job lists: length × quantity × angle", "Automatic single- and double-miter models"],
-        hero="bk-hero-auto", minis=["bk-bmso-320e-1-cut", "bk-bmso-320gs-3-cut"],
+        hero="bk-hero-auto-350ga", minis=["bk-bmso-320e-1-cut", "bk-bmso-320gs-3-cut"],
         lead="Roller-feed automatics for simple repeat cutting, encoder and servo versions for length accuracy, and automatic miter saws for angled parts.",
         video={"id": "80A2SoXkzDU", "title": "Bekamak BMSO 320GS NC automatic bundling and mitering band saw", "thumb": "video-80A2SoXkzDU", "duration": "PT1M56S"},
         video_text="The Bekamak BMSO 320GS feeding, mitering and bundle-cutting under NC control.",
@@ -87,7 +87,7 @@ BK = {
         h1="Bekamak double-column band saws",
         intro="For heavy bar, billets, beams and bundles the bow runs between two hardened columns instead of pivoting, so the blade enters the material squarely and stays square through the cut. Bekamak builds semi-automatic and fully automatic versions, miter heads to 60°, servo feeding with NC job lists and the enclosed high-tech XS production saws — from Ø13″ to 59″ (330–1500 mm).",
         points=["Twin-column guidance for square cuts in heavy stock", "Semi-automatic, roller-feed and servo-feed NC models", "Round capacities from Ø13″ (330 mm) to 59″ (1500 mm)"],
-        hero="bk-hero-dc", minis=["bk-bmsy-460c-1-cut", "bk-bmso-440cgs-1-cut"],
+        hero="bk-hero-dc-570cs", minis=["bk-bmsy-460c-1-cut", "bk-bmso-440cgs-1-cut"],
         lead="From the BMSY C semi-automatics to servo-feed CS NC production saws and the enclosed XS line.",
         video={"id": "MbLsI9PqLjI", "title": "Bekamak BMSO 570CS fully automatic 22″ double-column band saw with servo feeder", "thumb": "video-MbLsI9PqLjI", "duration": "PT2M2S"},
         video_text="A Bekamak BMSO 570CS servo-feed double-column saw in production.",
@@ -227,7 +227,7 @@ def main():
     h = json.load(open(hp, encoding="utf-8"))
     h["lines"] = lines
     h["subpages"] = [sp for ln in lines for sp in ln["subpages"]]
-    h["hero_image"] = "bk-hero-auto"
+    h["hero_image"] = "bk-hero-auto-350ga"
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-h10f-1-cut"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)',
                         '<a href="#value-line">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm)',
