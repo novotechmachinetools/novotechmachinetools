@@ -53,7 +53,9 @@ INCLUDED_ITEMS = [
     "7-day money-back guarantee (in-stock machines only)",
     "Spare parts & technical support readily available from Mississauga, Ontario",
     "Order today with just 10% down — 0% down financing available",
-    "Installation and training available",
+    "Installation and training available across Canada",
+    "Shipping across Canada from Mississauga, ON",
+    "Remote troubleshooting and technical support by video call",
 ]
 VOLTAGE_LINE = "Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase."
 COVER_PHOTOS = ["nt-a13-1", "nt-h13-1", "nt-h10f-1", "nt-dc24-1"]   # wide, tall, square-ish, wide
@@ -92,13 +94,13 @@ def prepare_logo(src, name, out_dir, max_w):
     return "img/" + name
 
 
-MODEL_RE = re.compile(r"NT-[A-Z]+ \d+(?: [A-Z]+)?")
+MODEL_RE = re.compile(r"(?:BS-?\d{3,4}(?:x\d{3})?[A-Z]*(?:-JC)?|TBK-\d{4}[A-Z]?(?: \(improved\))?|TGK-\d{4}|GZ\d{4}/\d+)")
 
 
 def caption(key):
     """Thumbnail caption from the site's image manifest alt text: the model code for a photo of a
-    model variant ('NovoTech NT-M 10 S manual band saw ...' -> 'NT-M 10 S'), the detail for a
-    detail photo ('NT-H 12 SC — hydraulic jaw clamping vise' -> 'Hydraulic jaw clamping vise')."""
+    model variant ('NovoTech BS-460G-JC twin-mitre band saw ...' -> 'BS-460G-JC'), the detail for a
+    detail photo ('BS-5030 — hydraulic jaw clamping vise' -> 'Hydraulic jaw clamping vise')."""
     alt = (manifest.get(key) or {}).get("alt", "")
     if alt.startswith("NovoTech "):
         m = MODEL_RE.search(alt)

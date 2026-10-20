@@ -17,19 +17,18 @@
   "bekamak-bmso-cgs",
   "bekamak-bmso-xs",
   "bekamak-bmsy-heavy",
-  "novotech-nt-h10f",
-  "novotech-nt-h10",
-  "novotech-nt-h13",
-  "novotech-nt-h16",
-  "novotech-nt-h12sc",
-  "novotech-nt-h18",
-  "novotech-nt-a12",
-  "novotech-nt-a12sc",
-  "novotech-nt-a13",
-  "novotech-nt-a-cnc",
-  "novotech-nt-dc11",
-  "novotech-nt-dc14",
-  "novotech-nt-dc20"
+  "novotech-bs-315gf",
+  "novotech-bs-460g",
+  "novotech-bs-2114th",
+  "novotech-bs-5030",
+  "novotech-bs-650ga",
+  "novotech-bs300x370",
+  "novotech-bs-5040",
+  "novotech-bs-460gb",
+  "novotech-bs-cnc",
+  "novotech-tbk-4228",
+  "novotech-tgk-4235",
+  "novotech-gz4250"
  ],
  "families": {
   "bekamak-bms-dg": {
@@ -207,8 +206,8 @@
    "brand": "bekamak",
    "line": "premium",
    "group": "semi-automatic",
-   "name": "BMSY DG / DGH semi-automatic double-miter band saws",
-   "short": "BMSY DG/DGH double-miter",
+   "name": "BMSY DG / DGH semi-automatic dual-miter band saws",
+   "short": "BMSY DG/DGH dual-miter",
    "models_label": "BMSY 230DG · BMSY 230DGH · BMSY 270DG · BMSY 270DGH · BMSY 320DGH · BMSY 360DGH · BMSY 360DGH ECO · BMSY 440DGH",
    "summary": "The most popular Bekamak pivot saws: hydraulic vise and automatic bow lift after every cut, with the head swivelling both ways for miters — right to 60°, left to 45°. DGH versions add hydraulic head positioning. Sizes from Ø9″ (230 mm) to Ø17-3/8″ (440 mm).",
    "features": [
@@ -1399,13 +1398,13 @@
    "brand": "bekamak",
    "line": "premium",
    "group": "automatic",
-   "name": "BMSO E automatic band saws with encoder feed",
-   "short": "BMSO E encoder-feed",
+   "name": "BMSO E automatic band saws with encoder feed and NC controller",
+   "short": "BMSO E encoder-feed NC",
    "models_label": "BMSO 230E · BMSO 320E · BMSO 350E",
-   "summary": "Roller-feed automatic saws with an encoder measuring the fed length for accurate repeat cuts, Ø9″ (230 mm) to Ø13-3/4″ (350 mm).",
+   "summary": "Roller-feed automatic saws with an encoder measuring the fed length and an NC controller for programmed lengths and quantities — accurate repeat cuts from Ø9″ (230 mm) to Ø13-3/4″ (350 mm).",
    "features": [
     "Encoder-controlled roller feed for precise length",
-    "Automatic cycle with piece counter",
+    "NC controller: programmed length and quantity, automatic cycle with piece counter",
     "Hydraulic vise; heavy-duty gearbox; 4 ft (1.2 m) roller table standard",
     "Inverter blade speed 15–120 m/min; blade brush; coolant pump",
     "Options: hydraulic blade tension, chip conveyor, microspray"
@@ -1553,12 +1552,12 @@
    "brand": "bekamak",
    "line": "premium",
    "group": "automatic",
-   "name": "BMSO 350GA automatic single-miter band saw",
+   "name": "BMSO 350GA automatic single-miter band saw with encoder feed and NC controller",
    "short": "BMSO 350GA",
    "models_label": "BMSO 350GA",
-   "summary": "Roller-feed automatic saw that also miters to one side up to 60° — automatic repeat cutting of angled structural parts up to Ø13-3/4″ (350 mm).",
+   "summary": "Automatic saw with encoder-measured feed and an NC controller that also miters to one side up to 60° — programmed repeat cutting of angled structural parts up to Ø13-3/4″ (350 mm).",
    "features": [
-    "Automatic roller feed with hydraulic feed vise",
+    "Encoder-measured roller feed with hydraulic feed vise; NC controller for length and quantity",
     "Single miter 0°–60° with hydraulic head rotation",
     "Inverter blade speed, hydro-mechanical blade tension",
     "Blade brush, coolant pump, chip conveyor motor",
@@ -1817,12 +1816,12 @@
    "brand": "bekamak",
    "line": "premium",
    "group": "automatic",
-   "name": "BMSO 270DGS servo-feed double-miter band saw",
+   "name": "BMSO 270DGS motorized-feed double-miter band saw",
    "short": "BMSO 270DGS",
    "models_label": "BMSO 270DGS",
-   "summary": "Compact NC automatic saw that feeds with a servo shuttle vise and miters both ways — automatic production of angled parts up to Ø10-5/8″ (270 mm).",
+   "summary": "Compact NC automatic saw that feeds with a motorized shuttle vise and miters both ways — automatic production of angled parts up to Ø10-5/8″ (270 mm).",
    "features": [
-    "Servo shuttle-vise feeding, NC programmable lengths and quantities",
+    "Motorized shuttle-vise feeding, NC programmable lengths and quantities",
     "Double miter +60° / −45° with hydraulic head rotation",
     "Hydraulic vise, inverter blade speed",
     "Hydraulic blade tension, blade brush, coolant pump"
@@ -1960,9 +1959,9 @@
     "Multiple Segments"
    ],
    "images": [
+    "bk-bmsy-825c-1",
     "bk-bmsy-1020c-1",
     "bk-bmsy-1020c-2",
-    "bk-bmsy-825c-1",
     "bk-bmsy-810c-1",
     "bk-bmsy-810c-2",
     "bk-bmsy-810c-3",
@@ -2315,11 +2314,11 @@
     "3 Mt Material Roller Table"
    ],
    "images": [
+    "bk-bmsy-440cgh-1",
     "bk-bmsy-810cgh-1",
     "bk-bmsy-810cgh-2",
     "bk-bmsy-540cgh-2",
     "bk-bmsy-540cgh-3",
-    "bk-bmsy-440cgh-1",
     "bk-bmsy-325cgh-1",
     "bk-bmsy-325cgh-2",
     "bk-bmsy-810cgh-3",
@@ -2588,8 +2587,8 @@
    "brand": "bekamak",
    "line": "premium",
    "group": "double-column",
-   "name": "BMSY DG NC semi-automatic double-miter double-column band saws",
-   "short": "BMSY DG NC double-miter",
+   "name": "BMSY DG NC semi-automatic twin-miter double-column band saws",
+   "short": "BMSY DG NC twin-miter",
    "models_label": "BMSY 360CDGH · BMSY 440CDGH · BMSY 560DG · BMSY 650DG · BMSY 750DG",
    "summary": "Heavy double-column miter saws whose head swivels both ways under NC control — the operator enters the angle and the saw positions itself. Ø14-1/8″ (360 mm) to Ø29-1/2″ (750 mm).",
    "features": [
@@ -3044,8 +3043,8 @@
     "Laser Line Pointer"
    ],
    "images": [
-    "bk-bmso-825c-1",
     "bk-bmso-825c-2",
+    "bk-bmso-825c-1",
     "bk-bmso-560c-1",
     "bk-bmso-560c-2",
     "bk-bmso-460c-1",
@@ -3250,9 +3249,9 @@
     "Hexagonal Vise"
    ],
    "images": [
+    "bk-bmso-820cs-1",
     "bk-bmso-1110cs-2",
     "bk-bmso-1110cs-3",
-    "bk-bmso-820cs-1",
     "bk-bmso-820cs-2",
     "bk-bmso-820cs-3",
     "bk-bmso-820cs-4",
@@ -3846,6 +3845,7 @@
     "Height Adjustable Control Panel"
    ],
    "images": [
+    "bk-bmso-570xs-1",
     "bk-bmso-825xs-1",
     "bk-bmso-825xs-3",
     "bk-bmso-825xs-4",
@@ -3855,7 +3855,6 @@
     "bk-bmso-660xs-3",
     "bk-bmso-660xs-4",
     "bk-bmso-660xs-5",
-    "bk-bmso-570xs-1",
     "bk-bmso-570xs-2",
     "bk-bmso-825xs-2",
     "bk-bmso-660xs-6",
@@ -4298,25 +4297,24 @@
     ]
    }
   },
-  "novotech-nt-h10f": {
-   "id": "novotech-nt-h10f",
+  "novotech-bs-315gf": {
+   "id": "novotech-bs-315gf",
    "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NT-H 10 F full-hydraulic twin-mitre band saw, 10″",
-   "short": "NT-H 10 F",
-   "models_label": "NT-H 10 F",
-   "summary": "Our most popular value-line saw: a 10-inch gear-driven semi-automatic with everything hydraulic — the vise clamps hydraulically, the bow descends on a hydraulic cylinder at a dialled-in feed rate and lifts itself hydraulically at the end of the cut. The bow swivels to both sides for 30°, 45° and 60° mitres with fast angle stops, the two-speed motor drives a high-capacity band through a gearbox, and an inverter option gives stepless blade speed. One operator loads, clamps and starts; the saw does the rest.",
+   "name": "BS-315GF full-hydraulic double-miter band saw, 10″",
+   "short": "BS-315GF",
+   "models_label": "BS-315GF",
+   "summary": "Our most popular value-line saw: a 10-inch gear-driven semi-automatic with everything hydraulic — the vise clamps hydraulically, the bow descends on a hydraulic cylinder at a dialled-in feed rate and lifts itself hydraulically at the end of the cut. The bow swivels to both sides for 30°, 45° and 60° miters with fast angle stops, the gear-driven motor runs the band at a variable blade speed set on the VFD inverter drive. One operator loads, clamps and starts; the saw does the rest.",
    "features": [
     "Ø9-7/8″ (250 mm) round / 12-1/2″ × 7-1/2″ at 0°; Ø9″ at 45° both sides, Ø5-7/8″ at 60°",
     "Hydraulic clamping vise, hydraulic down-feed with variable feed rate and hydraulic bow up-lift",
     "Swivels left and right with fast angle stops at 30°, 45° and 60°",
-    "Gear-driven two-speed 1/1.5 HP motor (157/315 ft/min at 60 Hz); inverter drive optional",
+    "Gear-driven 1/1.5 HP motor — variable blade speed by VFD inverter drive, up to 262 ft/min (80 m/min)",
     "Bow pivots on adjustable tapered bearings — no backlash; electro-mechanical blade tensioner with microswitch",
     "Safety guards on the flywheel casing and blade; electric coolant system; 1-1/8″ × 0.035″ × 111-1/4″ blade"
    ],
    "optional": [
-    "Inverter drive (stepless blade speed)",
     "Roller stand with length stop",
     "Extra blades"
    ],
@@ -4328,19 +4326,19 @@
    "videos": [
     {
      "id": "jX-yVggdD-U",
-     "title": "NovoTech NT-H 10 F 10″ semi-automatic double-mitre band saw with inverter drive, hydraulic up-lift and hydraulic vise",
+     "title": "NovoTech BS-315GF 10″ semi-automatic double-miter band saw with inverter drive, hydraulic up-lift and hydraulic vise",
      "thumb": "video-jX-yVggdD-U",
      "duration": "PT4M2S"
     },
     {
      "id": "-mHWeLoh_mo",
-     "title": "NT-H 10 F 10″ semi-automatic swivel band saw — hydraulic up-lift and down-feed, mitre cuts both sides",
+     "title": "BS-315GF 10″ semi-automatic swivel band saw — hydraulic up-lift and down-feed, miter cuts both sides",
      "thumb": "video-_mHWeLoh_mo",
      "duration": "PT1M18S"
     },
     {
      "id": "obbCib0YB24",
-     "title": "NT-H 10 F 10″ double-mitre semi-automatic band saw with hydraulic vise",
+     "title": "BS-315GF 10″ double-miter semi-automatic band saw with hydraulic vise",
      "thumb": "video-obbCib0YB24",
      "duration": "PT1M1S"
     }
@@ -4350,7 +4348,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-H 10 F",
+      "name": "BS-315GF",
       "capacity_mm": {
        "0": {
         "round": 250,
@@ -4388,7 +4386,7 @@
       "main_motor_kw": "0.75-1.1",
       "hydraulic_motor_kw": null,
       "coolant_pump_kw": null,
-      "blade_speed_m_min": "40/80",
+      "blade_speed_m_min": "Variable, VFD inverter drive — up to 262 ft/min (80 m/min)",
       "band_mm": [
        2825,
        27,
@@ -4401,8 +4399,8 @@
       "other": {
        "Vise": "Hydraulic",
        "Bow lift": "Hydraulic",
-       "Mitre cutting": "Swivel bow, 45° left / 30°, 45° and 60° right",
-       "Drive": "Gear, 2 speeds",
+       "Miter cutting": "Swivel bow, 45° left / 30°, 45° and 60° right",
+       "Drive": "Gear, variable blade speed by VFD inverter drive",
        "Packing size": "1630 × 900 × 1550 mm",
        "Gross weight": "515 kg"
       },
@@ -4411,156 +4409,24 @@
     ]
    }
   },
-  "novotech-nt-h10": {
-   "id": "novotech-nt-h10",
+  "novotech-bs-460g": {
+   "id": "novotech-bs-460g",
    "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NT-H 10 series hydraulic band saws, 10″",
-   "short": "NT-H 10 hydraulic saws",
-   "models_label": "NT-H 10 S · NT-H 10 T",
-   "summary": "The hydraulic versions of the 10-inch pivot saws: a hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts automatically at the end of the cut and the machine shuts off — the operator only loads, clamps and starts. The NT-H 10 S adds a hydraulic clamping vise and a swivel bow for 45° mitres; the NT-H 10 T swings both ways for 45°/60° cuts and comes with a movable control panel.",
-   "features": [
-    "Hydraulic descent with variable feed speed; automatic bow return and shut-off",
-    "NT-H 10 S: hydraulic clamping vise, swivel bow 45°–90°, manual or auto-cut cycle",
-    "NT-H 10 T: twin-mitre bow (45° left, 45°/60° right), quick-clamp vise, movable control panel",
-    "Four-speed belt drive, 2 HP (1.5 kW) three-phase motor",
-    "Coolant system and stop rod included"
-   ],
-   "optional": [
-    "Roller stand with length stop"
-   ],
-   "images": [
-    "nt-h10s-1",
-    "nt-h10t-1"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "bandsaw",
-    "voltage": "600 V 3-phase (208/240/480 V on request)",
-    "models": [
-     {
-      "name": "NT-H 10 S",
-      "capacity_mm": {
-       "0": {
-        "round": 254,
-        "rect": [
-         406,
-         160
-        ],
-        "square": null
-       },
-       "+45": {
-        "round": 170,
-        "rect": [
-         190,
-         160
-        ],
-        "square": null
-       }
-      },
-      "main_motor_kw": 1.5,
-      "hydraulic_motor_kw": null,
-      "coolant_pump_kw": null,
-      "blade_speed_m_min": "35/60/88/115",
-      "band_mm": [
-       3215,
-       27,
-       0.9
-      ],
-      "working_height_mm": null,
-      "weight_kg": 420,
-      "dims_mm": null,
-      "feed_length_mm": null,
-      "other": {
-       "Mitre cutting": "Swivel bow, 45°–90°",
-       "Vise": "Hydraulic",
-       "Drive": "V-belt, 4 speeds",
-       "Packing size": "1890 × 780 × 1430 mm",
-       "Gross weight": "533 kg"
-      },
-      "notes": ""
-     },
-     {
-      "name": "NT-H 10 T",
-      "capacity_mm": {
-       "0": {
-        "round": 260,
-        "rect": [
-         430,
-         260
-        ],
-        "square": null
-       },
-       "+45": {
-        "round": 260,
-        "rect": [
-         300,
-         200
-        ],
-        "square": null
-       },
-       "+60": {
-        "round": 155,
-        "rect": [
-         125,
-         125
-        ],
-        "square": null
-       },
-       "-45": {
-        "round": 260,
-        "rect": [
-         260,
-         130
-        ],
-        "square": null
-       }
-      },
-      "main_motor_kw": 1.5,
-      "hydraulic_motor_kw": null,
-      "coolant_pump_kw": null,
-      "blade_speed_m_min": "28/62/93/130",
-      "band_mm": [
-       3660,
-       27,
-       0.9
-      ],
-      "working_height_mm": null,
-      "weight_kg": 515,
-      "dims_mm": null,
-      "feed_length_mm": null,
-      "other": {
-       "Mitre cutting": "Swivel bow, 45° left / 45° and 60° right",
-       "Vise": "Quick-clamp, manual",
-       "Drive": "Belt, 4 speeds",
-       "Packing size": "2120 × 1310 × 1220 mm",
-       "Gross weight": "653 kg"
-      },
-      "notes": ""
-     }
-    ]
-   }
-  },
-  "novotech-nt-h13": {
-   "id": "novotech-nt-h13",
-   "brand": "novotech",
-   "line": "value",
-   "group": "semi-automatic",
-   "name": "NT-H 13 twin-mitre hydraulic band saws, 13″",
-   "short": "NT-H 13 saws",
-   "models_label": "NT-H 13 · NT-H 13 C",
-   "summary": "A 13-inch gear-driven semi-automatic saw whose bow swivels both ways — 45° left and right, 60° right — with a quick lock at every angle. Hydraulic vise, hydraulic descent and a two-speed gear motor make it the workhorse for structural steel, tube and profile cutting. The NT-H 13 C is the same machine with a movable control panel on an arm. PLC control and servo feed can be added to turn it into an automatic.",
+   "name": "BS-460G dual-miter hydraulic band saws, 13″",
+   "short": "BS-460G saws",
+   "models_label": "BS-460G · BS-460G-JC",
+   "summary": "A 13-inch gear-driven semi-automatic saw whose bow swivels both ways — 45° left and right, 60° right — with a quick lock at every angle. Hydraulic vise, hydraulic descent and a gear-driven motor with variable blade speed by VFD inverter drive make it the workhorse for structural steel, tube and profile cutting. The BS-460G-JC is the same machine with a movable control panel on an arm. PLC control and servo feed can be added to turn it into an automatic.",
    "features": [
     "Ø13″ (330 mm) round / 18″ × 9-7/8″ at 0°; Ø12″ at 45° both sides, Ø8″ at 60°",
     "Hydraulic clamping vise and hydraulic bow descent",
     "Bow swivels left and right with quick lock",
-    "Gear drive, two-speed 2/3 HP (1.5/2.2 kW) motor — 157/315 ft/min at 60 Hz",
-    "NT-H 13 C: movable control panel"
+    "Gear drive, 2/3 HP (1.5/2.2 kW) motor — variable blade speed by VFD inverter drive, up to 315 ft/min (96 m/min)",
+    "BS-460G-JC: movable control panel"
    ],
    "optional": [
     "PLC control",
-    "Servo motor (variable blade speed)",
     "Roller stands"
    ],
    "images": [
@@ -4573,7 +4439,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-H 13",
+      "name": "BS-460G",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -4611,7 +4477,7 @@
       "main_motor_kw": "1.5-2.2",
       "hydraulic_motor_kw": null,
       "coolant_pump_kw": null,
-      "blade_speed_m_min": "48/96",
+      "blade_speed_m_min": "Variable, VFD inverter drive — up to 315 ft/min (96 m/min)",
       "band_mm": [
        3960,
        27,
@@ -4623,14 +4489,14 @@
       "feed_length_mm": null,
       "other": {
        "Vise": "Hydraulic",
-       "Drive": "Gear, 2 speeds",
+       "Drive": "Gear, variable blade speed by VFD inverter drive",
        "Packing size": "2300 × 1050 × 1630 mm",
        "Gross weight": "1060 kg"
       },
       "notes": ""
      },
      {
-      "name": "NT-H 13 C",
+      "name": "BS-460G-JC",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -4668,7 +4534,7 @@
       "main_motor_kw": "1.5-2.2",
       "hydraulic_motor_kw": null,
       "coolant_pump_kw": null,
-      "blade_speed_m_min": "48/96",
+      "blade_speed_m_min": "Variable, VFD inverter drive — up to 315 ft/min (96 m/min)",
       "band_mm": [
        3960,
        27,
@@ -4680,7 +4546,7 @@
       "feed_length_mm": null,
       "other": {
        "Vise": "Hydraulic",
-       "Drive": "Gear, 2 speeds",
+       "Drive": "Gear, variable blade speed by VFD inverter drive",
        "Control panel": "Movable, on arm",
        "Packing size": "2300 × 1050 × 1630 mm",
        "Gross weight": "1060 kg"
@@ -4690,19 +4556,19 @@
     ]
    }
   },
-  "novotech-nt-h16": {
-   "id": "novotech-nt-h16",
+  "novotech-bs-2114th": {
+   "id": "novotech-bs-2114th",
    "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NT-H 16 hydraulic band saw, 15-3/4″",
-   "short": "NT-H 16",
-   "models_label": "NT-H 16",
-   "summary": "A 15-3/4-inch pivot saw with hydraulic descent and return: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 21-3/4″ × 14-1/4″.",
+   "name": "BS-2114TH hydraulic band saw, 15-3/4″",
+   "short": "BS-2114TH",
+   "models_label": "BS-2114TH",
+   "summary": "A 15-3/4-inch pivot saw with hydraulic descent and return: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven motor with variable blade speed by VFD inverter drive, sintered-carbide guides, quick-clamp sliding vise and miter cuts up to 60° on stock up to 21-3/4″ × 14-1/4″.",
    "features": [
-    "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; mitre cuts up to 60°",
+    "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; miter cuts up to 60°",
     "Automatic bow descent and return on a hydraulic cylinder",
-    "Gear-driven two-speed motor, 3/3.8 HP (2.2/2.8 kW)",
+    "Gear-driven 3/3.8 HP (2.2/2.8 kW) motor — variable blade speed by VFD inverter drive, up to 230 ft/min (70 m/min)",
     "Sintered-carbide blade guides, quick-clamp sliding vise",
     "Powerful coolant pump; 1-3/8″ × 0.043″ × 173-1/2″ blade"
    ],
@@ -4718,7 +4584,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-H 16",
+      "name": "BS-2114TH",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -4748,7 +4614,7 @@
       "main_motor_kw": "2.2-2.8",
       "hydraulic_motor_kw": null,
       "coolant_pump_kw": null,
-      "blade_speed_m_min": "48/70",
+      "blade_speed_m_min": "Variable, VFD inverter drive — up to 230 ft/min (70 m/min)",
       "band_mm": [
        4405,
        34,
@@ -4759,7 +4625,7 @@
       "dims_mm": null,
       "feed_length_mm": null,
       "other": {
-       "Drive": "Gear, 2 speeds",
+       "Drive": "Gear, variable blade speed by VFD inverter drive",
        "Packing size": "2300 × 830 × 1580 mm",
        "Gross weight": "760 kg"
       },
@@ -4768,15 +4634,15 @@
     ]
    }
   },
-  "novotech-nt-h12sc": {
-   "id": "novotech-nt-h12sc",
+  "novotech-bs-5030": {
+   "id": "novotech-bs-5030",
    "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NT-H 12 SC single-column band saw with touch screen",
-   "short": "NT-H 12 SC",
-   "models_label": "NT-H 12 SC",
-   "summary": "A single-column saw for straight cuts up to Ø11-3/4″ / 19-3/4″ × 11-3/4″ with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the NT-A 12 SC.",
+   "name": "BS-5030 single-column band saw with touch screen",
+   "short": "BS-5030",
+   "models_label": "BS-5030",
+   "summary": "A single-column saw for straight cuts up to Ø11-3/4″ / 19-3/4″ × 11-3/4″ with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the BS-5040.",
    "features": [
     "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
     "PLC control with graphical finger-touch screen; work light",
@@ -4786,7 +4652,7 @@
    ],
    "optional": [
     "Roller stands",
-    "Automatic feeding — see NT-A 12 SC"
+    "Automatic feeding — see BS-5040"
    ],
    "images": [
     "nt-h12sc-1",
@@ -4800,7 +4666,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-H 12 SC",
+      "name": "BS-5030",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -4837,15 +4703,15 @@
     ]
    }
   },
-  "novotech-nt-h18": {
-   "id": "novotech-nt-h18",
+  "novotech-bs-650ga": {
+   "id": "novotech-bs-650ga",
    "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NT-H 18 hydraulic swivel-head band saw, 18″",
-   "short": "NT-H 18",
-   "models_label": "NT-H 18",
-   "summary": "An 18-inch swivel-head saw with automatic cutting and manual feeding: hydraulic vise, variable-frequency drive for stepless blade speed, a digital read-out for the feed position and a movable control panel. The bow swivels 45° to both sides and 60° to the right, and the gear-driven 7.4 HP motor handles 25-1/2″ × 13-3/4″ sections. Same frame as the automatic NT-A 18 without the feeder.",
+   "name": "BS-650GA hydraulic swivel-head band saw, 18″",
+   "short": "BS-650GA",
+   "models_label": "BS-650GA",
+   "summary": "An 18-inch swivel-head saw with automatic cutting and manual feeding: hydraulic vise, variable-frequency drive for stepless blade speed, a digital read-out for the feed position and a movable control panel. The bow swivels 45° to both sides and 60° to the right, and the gear-driven 7.4 HP motor handles 25-1/2″ × 13-3/4″ sections. Same frame as the automatic BS-650G without the feeder.",
    "features": [
     "Ø18″ (460 mm) round / 25-1/2″ × 13-3/4″ at 0°; Ø18″ at 45° both sides, Ø12-1/4″ at 60°",
     "Automatic cutting cycle; material fed by hand on the roller table",
@@ -4855,7 +4721,7 @@
    ],
    "optional": [
     "Roller conveyors",
-    "Automatic feeding — see NT-A 18"
+    "Automatic feeding — see BS-650G"
    ],
    "images": [
     "nt-h18-1",
@@ -4867,7 +4733,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-H 18",
+      "name": "BS-650GA",
       "capacity_mm": {
        "0": {
         "round": 460,
@@ -4927,21 +4793,21 @@
     ]
    }
   },
-  "novotech-nt-a12": {
-   "id": "novotech-nt-a12",
+  "novotech-bs300x370": {
+   "id": "novotech-bs300x370",
    "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NT-A 12 automatic band saws with roller feed, 11-3/4″",
-   "short": "NT-A 12 automatic saws",
-   "models_label": "NT-A 12 · NT-A 12 T",
-   "summary": "Compact automatic saws for batch cutting of bar, tube and profile up to Ø11-3/4″: a powered roller feed advances the stock, the hydraulic vise clamps, the bow cuts and returns, and the cycle repeats for the programmed count. Stepless blade speed from an inverter, gear drive and a 3 HP motor. The NT-A 12 T adds an automatic mitre head for angle cuts of 30°, 45° and 60°.",
+   "name": "BS300x370 automatic band saws with roller feed, 11-3/4″",
+   "short": "BS300x370 automatic saws",
+   "models_label": "BS300x370 · BS300x370H",
+   "summary": "Compact automatic saws for batch cutting of bar, tube and profile up to Ø11-3/4″: a powered roller feed advances the stock, the hydraulic vise clamps, the bow cuts and returns, and the cycle repeats for the programmed count. Stepless blade speed from an inverter, gear drive and a 3 HP motor. The BS300x370H adds an automatic miter head for angle cuts of 30°, 45° and 60°.",
    "features": [
     "Ø11-3/4″ (300 mm) round / 14-1/2″ × 11″ rectangular at 0°",
     "Roller feeding with automatic cycle; piece counter",
     "Hydraulic clamping vise; inverter-driven blade speed 0–371 ft/min",
     "Gear drive, 3 HP (2.2 kW) main motor, 0.3 HP feed motor",
-    "NT-A 12 T: mitre cutting 0°–60° (Ø11″ at 30°, Ø9″ at 45°, Ø5-1/8″ at 60°)"
+    "BS300x370H: miter cutting 0°–60° (Ø11″ at 30°, Ø9″ at 45°, Ø5-1/8″ at 60°)"
    ],
    "optional": [
     "Roller conveyors",
@@ -4960,7 +4826,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-A 12",
+      "name": "BS300x370",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -4995,7 +4861,7 @@
       "notes": ""
      },
      {
-      "name": "NT-A 12 T",
+      "name": "BS300x370H",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5056,14 +4922,14 @@
     ]
    }
   },
-  "novotech-nt-a12sc": {
-   "id": "novotech-nt-a12sc",
+  "novotech-bs-5040": {
+   "id": "novotech-bs-5040",
    "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NT-A 12 SC single-column automatic band saw",
-   "short": "NT-A 12 SC",
-   "models_label": "NT-A 12 SC",
+   "name": "BS-5040 single-column automatic band saw",
+   "short": "BS-5040",
+   "models_label": "BS-5040",
    "summary": "The automatic version of the single-column saw: a hydraulic shuttle vise feeds up to 19-3/4″ (500 mm) per stroke, a batch clamping device holds bundles, and an automatic chip conveyor clears the swarf. PLC control with touch screen, hydraulic jaw vise, variable hydraulic down-feed, rapid descent until the blade touches the work and blade overload protection.",
    "features": [
     "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
@@ -5087,7 +4953,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-A 12 SC",
+      "name": "BS-5040",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5126,21 +4992,21 @@
     ]
    }
   },
-  "novotech-nt-a13": {
-   "id": "novotech-nt-a13",
+  "novotech-bs-460gb": {
+   "id": "novotech-bs-460gb",
    "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NT-A 13 automatic twin-mitre band saw with 20 ft stand",
-   "short": "NT-A 13",
-   "models_label": "NT-A 13",
-   "summary": "The automatic version of the NT-H 13: PLC-controlled feeding and clamping with a shuttle vise (19-3/4″ per stroke), feed length selectable in inches or millimetres, and a 20 ft (6 m) material stand — 10 ft feed and 10 ft return — delivered with the machine. The bow still swivels to both sides for mitre cuts, and a guard net protects the operator. Gear drive with a two-speed motor.",
+   "name": "BS-460GB automatic swivel-head miter band saw with 20 ft stand",
+   "short": "BS-460GB",
+   "models_label": "BS-460GB",
+   "summary": "The automatic version of the BS-460G: PLC-controlled feeding and clamping with a shuttle vise (19-3/4″ per stroke), feed length selectable in inches or millimetres, and a 20 ft (6 m) material stand — 10 ft feed and 10 ft return — delivered with the machine. The bow still swivels to both sides for miter cuts, and a guard net protects the operator. Gear drive with variable blade speed by VFD inverter drive.",
    "features": [
     "Ø13″ (330 mm) round / 18″ × 9-7/8″ at 0°; Ø12″ at 45° both sides, Ø8″ at 60°",
     "Automatic feeding and clamping, max. 19-3/4″ (500 mm) per stroke; standard PLC",
     "20 ft material stand included (feeder width 18″, height 33-1/2″)",
     "Bow swivels left and right; safety guard net",
-    "Gear drive, 2/3 HP (1.5/2.2 kW) two-speed motor"
+    "Gear drive, 2/3 HP (1.5/2.2 kW) motor — variable blade speed by VFD inverter drive"
    ],
    "optional": [
     "Extra stands and supports",
@@ -5157,7 +5023,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-A 13",
+      "name": "BS-460GB",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -5195,7 +5061,7 @@
       "main_motor_kw": "1.5-2.2",
       "hydraulic_motor_kw": null,
       "coolant_pump_kw": null,
-      "blade_speed_m_min": "48/96",
+      "blade_speed_m_min": "Variable, VFD inverter drive — up to 315 ft/min (96 m/min)",
       "band_mm": [
        3960,
        34,
@@ -5209,7 +5075,7 @@
        "Feeding": "Shuttle vise, PLC",
        "Feed length per stroke": "500 mm",
        "Vise": "Hydraulic",
-       "Drive": "Gear, 2 speeds",
+       "Drive": "Gear, variable blade speed by VFD inverter drive",
        "Packing size": "2500 × 2300 × 1630 mm",
        "Gross weight": "1655 kg"
       },
@@ -5218,20 +5084,20 @@
     ]
    }
   },
-  "novotech-nt-a-cnc": {
-   "id": "novotech-nt-a-cnc",
+  "novotech-bs-cnc": {
+   "id": "novotech-bs-cnc",
    "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NT-A 14 to NT-A 24 CNC automatic band saws",
-   "short": "NT-A CNC saws",
-   "models_label": "NT-A 14 · NT-A 16 · NT-A 18 · NT-A 24",
-   "summary": "Production saws with CNC feeding and cutting: a servo-driven feeder positions the stock, hydraulic vises clamp it, the servo blade drive sets a stepless cutting speed and the PLC runs the batch. The NT-A 14 and NT-A 16 have an automatic rotary bow (45°) and chip extraction; the NT-A 18 feeds up to 25-1/2″ per stroke with a linear scale on the feed and a swivelling control panel; the NT-A 24 cuts 33-1/2″ × 23-5/8″ sections with a hydraulic feeder as standard.",
+   "name": "BS-500G to BS-850G CNC automatic band saws",
+   "short": "BS-500G–850G CNC saws",
+   "models_label": "BS-500G · BS-500GT · BS-650G · BS-850G",
+   "summary": "Production saws with CNC feeding and cutting: a servo-driven feeder positions the stock, hydraulic vises clamp it, the servo blade drive sets a stepless cutting speed and the PLC runs the batch. The BS-500G and BS-500GT have an automatic rotary bow (45°) and chip extraction; the BS-650G feeds up to 25-1/2″ per stroke with a linear scale on the feed and a swivelling control panel; the BS-850G cuts 33-1/2″ × 23-5/8″ sections with a hydraulic feeder as standard.",
    "features": [
-    "Round capacity from Ø13-3/4″ (350 mm) to Ø23-5/8″ (600 mm); mitre cuts to 45° (NT-A 18: 60°)",
+    "Round capacity from Ø13-3/4″ (350 mm) to Ø23-5/8″ (600 mm); miter cuts to 45° (BS-650G: 60°)",
     "CNC / PLC automatic feeding and clamping, hydraulic vises",
-    "Servo motor for stepless blade speed; industrial gearbox (NT-A 18)",
-    "Feed per stroke: 19-3/4″ (NT-A 14/16), 25-1/2″ (NT-A 18), 23-5/8″ (NT-A 24)",
+    "Servo motor for stepless blade speed; industrial gearbox (BS-650G)",
+    "Feed per stroke: 19-3/4″ (BS-500G/500GT), 25-1/2″ (BS-650G), 23-5/8″ (BS-850G)",
     "Work light, chip extraction and coolant system included"
    ],
    "optional": [
@@ -5249,7 +5115,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-A 14",
+      "name": "BS-500G",
       "capacity_mm": {
        "0": {
         "round": 350,
@@ -5292,7 +5158,7 @@
       "notes": ""
      },
      {
-      "name": "NT-A 16",
+      "name": "BS-500GT",
       "capacity_mm": {
        "0": {
         "round": 415,
@@ -5335,7 +5201,7 @@
       "notes": ""
      },
      {
-      "name": "NT-A 18",
+      "name": "BS-650G",
       "capacity_mm": {
        "0": {
         "round": 460,
@@ -5386,7 +5252,7 @@
       "notes": ""
      },
      {
-      "name": "NT-A 24",
+      "name": "BS-850G",
       "capacity_mm": {
        "0": {
         "round": 600,
@@ -5431,21 +5297,21 @@
     ]
    }
   },
-  "novotech-nt-dc11": {
-   "id": "novotech-nt-dc11",
+  "novotech-tbk-4228": {
+   "id": "novotech-tbk-4228",
    "brand": "novotech",
    "line": "value",
    "group": "double-column",
-   "name": "NT-DC 11 series double column band saws, 11″",
-   "short": "NT-DC 11 saws",
-   "models_label": "NT-DC 11 · NT-DC 11 T · NT-DC 11 A · NT-DC 11 AV",
-   "summary": "Twin-column saws for Ø11″ / 11″ × 11″ stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (NT-DC 11), the mitre version that cuts at 30° and 45° (NT-DC 11 T), the automatic with a 3-position shuttle vise (NT-DC 11 A) or the automatic with stepless blade speed, chip conveyor and the new vise design (NT-DC 11 AV).",
+   "name": "TBK-4228 series double column band saws, 11″",
+   "short": "TBK-4228 saws",
+   "models_label": "TBK-4228 · TBK-4228A · TBK-4228B · TBK-4228B (improved)",
+   "summary": "Twin-column saws for Ø11″ / 11″ × 11″ stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (TBK-4228), the miter version that cuts at 30° and 45° (TBK-4228A), the automatic with a 3-position shuttle vise (TBK-4228B) or the automatic with stepless blade speed, chip conveyor and the new vise design (TBK-4228B (improved)).",
    "features": [
-    "Ø11″ (280 mm) round / 11″ × 11″ square; NT-DC 11 T: Ø10-1/4″ at 30°, Ø6-3/4″ at 45°",
+    "Ø11″ (280 mm) round / 11″ × 11″ square; TBK-4228A: Ø10-1/4″ at 30°, Ø6-3/4″ at 45°",
     "Double column — vertical, rigid bow travel",
     "Hydraulic variable down-feed, hydraulic clamping, auto shut-off",
-    "NT-DC 11 A / AV: automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
-    "NT-DC 11 AV: variable blade speed 0–200 ft/min, automatic chip conveyor",
+    "TBK-4228B / 4228B (improved): automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
+    "TBK-4228B (improved): variable blade speed 0–200 ft/min, automatic chip conveyor",
     "Belt drive, 4 HP (3 kW) motor; work light, coolant and material stand included"
    ],
    "optional": [
@@ -5459,7 +5325,6 @@
     "nt-dc11t-3",
     "nt-dc11a-1",
     "nt-dc11av-1",
-    "nt-dc11av-2",
     "nt-dc11av-3",
     "nt-dc11av-4",
     "nt-dc11-stand"
@@ -5470,7 +5335,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-DC 11",
+      "name": "TBK-4228",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5508,7 +5373,7 @@
       "notes": ""
      },
      {
-      "name": "NT-DC 11 T",
+      "name": "TBK-4228A",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5554,7 +5419,7 @@
       "feed_length_mm": null,
       "other": {
        "Feeding": "Manual",
-       "Mitre cutting": "0°–45°",
+       "Miter cutting": "0°–45°",
        "Vise": "Hydraulic",
        "Blade tensioning": "Mechanical",
        "Drive": "V-belt, 3 speeds",
@@ -5563,7 +5428,7 @@
       "notes": ""
      },
      {
-      "name": "NT-DC 11 A",
+      "name": "TBK-4228B",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5601,7 +5466,7 @@
       "notes": ""
      },
      {
-      "name": "NT-DC 11 AV",
+      "name": "TBK-4228B (improved)",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5642,20 +5507,20 @@
     ]
    }
   },
-  "novotech-nt-dc14": {
-   "id": "novotech-nt-dc14",
+  "novotech-tgk-4235": {
+   "id": "novotech-tgk-4235",
    "brand": "novotech",
    "line": "value",
    "group": "double-column",
-   "name": "NT-DC 14 and NT-DC 16 gear-driven double column saws",
-   "short": "NT-DC 14 / 16",
-   "models_label": "NT-DC 14 · NT-DC 16",
-   "summary": "Heavier twin-column saws with a gear-driven two-speed motor, hydraulic blade tensioning and hydraulic clamping. Vertical lifting on two columns keeps the blade square in Ø13-3/4″ and Ø15-3/4″ solids; the cutting feed is hydraulically controlled and stepless. A three-position hydraulic clamping vise for bundles is optional.",
+   "name": "TGK-4235 and TGK-4240 gear-driven double column saws",
+   "short": "TGK-4235 / 4240",
+   "models_label": "TGK-4235 · TGK-4240",
+   "summary": "Heavier twin-column saws with a gear-driven motor and variable blade speed by VFD inverter drive, hydraulic blade tensioning and hydraulic clamping. Vertical lifting on two columns keeps the blade square in Ø13-3/4″ and Ø15-3/4″ solids; the cutting feed is hydraulically controlled and stepless. A three-position hydraulic clamping vise for bundles is optional.",
    "features": [
-    "NT-DC 14: Ø13-3/4″ / 13-3/4″ × 13-3/4″ · NT-DC 16: Ø15-3/4″ / 15-3/4″ × 15-3/4″",
+    "TGK-4235: Ø13-3/4″ / 13-3/4″ × 13-3/4″ · TGK-4240: Ø15-3/4″ / 15-3/4″ × 15-3/4″",
     "Double column structure, vertical lifting, high stability",
     "Hydraulic variable down-feed, hydraulic clamping, hydraulic blade tensioning",
-    "Gear drive with two-speed motor (3/3.8 HP or 4/5.4 HP)",
+    "Gear drive, 3/3.8 HP or 4/5.4 HP motor — variable blade speed by VFD inverter drive",
     "Work light, coolant pump and material stand included"
    ],
    "optional": [
@@ -5673,7 +5538,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-DC 14",
+      "name": "TGK-4235",
       "capacity_mm": {
        "0": {
         "round": 350,
@@ -5687,7 +5552,7 @@
       "main_motor_kw": "2.2-2.8",
       "hydraulic_motor_kw": 0.55,
       "coolant_pump_kw": 0.04,
-      "blade_speed_m_min": "45/69",
+      "blade_speed_m_min": "Variable, VFD inverter drive — up to 226 ft/min (69 m/min)",
       "band_mm": [
        4115,
        34,
@@ -5704,13 +5569,13 @@
       "other": {
        "Vise": "Hydraulic",
        "Blade tensioning": "Hydraulic",
-       "Drive": "Gear, 2 speeds",
+       "Drive": "Gear, variable blade speed by VFD inverter drive",
        "Gross weight": "990 kg"
       },
       "notes": ""
      },
      {
-      "name": "NT-DC 16",
+      "name": "TGK-4240",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -5724,7 +5589,7 @@
       "main_motor_kw": "3.0-4.0",
       "hydraulic_motor_kw": 0.75,
       "coolant_pump_kw": 0.9,
-      "blade_speed_m_min": "36/56",
+      "blade_speed_m_min": "Variable, VFD inverter drive — up to 184 ft/min (56 m/min)",
       "band_mm": [
        5000,
        41,
@@ -5741,7 +5606,7 @@
       "other": {
        "Vise": "Hydraulic",
        "Blade tensioning": "Hydraulic",
-       "Drive": "Gear, 2 speeds",
+       "Drive": "Gear, variable blade speed by VFD inverter drive",
        "Gross weight": "1585 kg"
       },
       "notes": ""
@@ -5749,20 +5614,20 @@
     ]
    }
   },
-  "novotech-nt-dc20": {
-   "id": "novotech-nt-dc20",
+  "novotech-gz4250": {
+   "id": "novotech-gz4250",
    "brand": "novotech",
    "line": "value",
    "group": "double-column",
-   "name": "NT-DC 20 and NT-DC 24 gantry double column saws",
-   "short": "NT-DC 20 / 24",
-   "models_label": "NT-DC 20 · NT-DC 24",
-   "summary": "Gantry-type double column saws for heavy plate, blocks, bundles and large tube: Ø19-3/4″ / 27-1/2″ × 19-3/4″ on the NT-DC 20 and Ø23-5/8″ / 47-1/4″ × 23-5/8″ on the NT-DC 24. Hydraulic clamping, stepless blade speed and a powered roller table; the NT-DC 24 adds hydraulic blade tensioning and a 15 HP motor for the 2-5/8″ blade.",
+   "name": "GZ4250/70 and GZ4260/120 gantry double column saws",
+   "short": "GZ4250/70 / GZ4260/120",
+   "models_label": "GZ4250/70 · GZ4260/120",
+   "summary": "Gantry-type double column saws for heavy plate, blocks, bundles and large tube: Ø19-3/4″ / 27-1/2″ × 19-3/4″ on the GZ4250/70 and Ø23-5/8″ / 47-1/4″ × 23-5/8″ on the GZ4260/120. Hydraulic clamping, stepless blade speed and a powered roller table; the GZ4260/120 adds hydraulic blade tensioning and a 15 HP motor for the 2-5/8″ blade.",
    "features": [
-    "NT-DC 20: Ø19-3/4″ / 27-1/2″ × 19-3/4″ · NT-DC 24: Ø23-5/8″ / 47-1/4″ × 23-5/8″",
+    "GZ4250/70: Ø19-3/4″ / 27-1/2″ × 19-3/4″ · GZ4260/120: Ø23-5/8″ / 47-1/4″ × 23-5/8″",
     "Double column gantry structure for batch sawing of tubes, bars, profiles and plates",
     "Hydraulic clamping; variable blade speed (131–262 and 66–262 ft/min)",
-    "NT-DC 20: 7.4 HP, 1-5/8″ × 0.051″ blade · NT-DC 24: 15 HP, 2-5/8″ × 0.051″ × 346-1/2″ blade, hydraulic tensioning",
+    "GZ4250/70: 7.4 HP, 1-5/8″ × 0.051″ blade · GZ4260/120: 15 HP, 2-5/8″ × 0.051″ × 346-1/2″ blade, hydraulic tensioning",
     "Powered roller table with chain drive"
    ],
    "optional": [
@@ -5780,7 +5645,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NT-DC 20",
+      "name": "GZ4250/70",
       "capacity_mm": {
        "0": {
         "round": 500,
@@ -5814,7 +5679,7 @@
       "notes": "Blade length not printed in the catalogue."
      },
      {
-      "name": "NT-DC 24",
+      "name": "GZ4260/120",
       "capacity_mm": {
        "0": {
         "round": 600,

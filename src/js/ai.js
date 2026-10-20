@@ -1,4 +1,4 @@
-/* NovoTech machine finder — loaded on demand when the "Find a machine" panel opens.
+/* NovoTech machine finder — loaded on demand when the "AI machine finder" panel opens.
    1. Instant keyword search over ai/catalogue.json (works everywhere, no server needed).
    2. Conversational answers from ask.php (Anthropic API on the server) with product cards. */
 (function () {

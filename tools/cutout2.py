@@ -15,7 +15,59 @@ import numpy as np
 from PIL import Image
 
 
-def cutout(im, border_thr=232, hole_thr=247, hole_area=200, neutral=16, keep_alpha=True, margin=6, shadow_thr=None):
+def is_white_background(im, thr=228, neutral=18, ring_frac=0.012):
+    """Does this photo sit on a plain white studio background?  Judged from a thin ring along the
+    border: most of it must be near-white and neutral, and at least three corners white.  Returns
+    (yes, level) where level is the median brightness of the white border — the thresholds of
+    cutout() are set relative to it.  Photos with a real scene (factory floor, showroom) come back
+    False; a studio photo whose machine touches the frame can be forced with "cutout": true in
+    tools/image_map.json."""
+    a = np.asarray(im.convert("RGB")).astype(np.int16)
+    H, W = a.shape[:2]
+    r = max(2, int(round(min(H, W) * ring_frac)))
+    mn, mx = a.min(-1), a.max(-1)
+    white = (mn >= thr) & ((mx - mn) <= neutral)
+    ring = np.zeros((H, W), bool)
+    ring[:r] = True; ring[-r:] = True; ring[:, :r] = True; ring[:, -r:] = True
+    frac = float(white[ring].mean())
+    level = int(np.median(mn[ring & white])) if (ring & white).any() else 255
+    corners = sum(float(white[ys, xs].mean()) >= 0.7 for ys, xs in [
+        (slice(0, r), slice(0, r)), (slice(0, r), slice(-r, None)),
+        (slice(-r, None), slice(0, r)), (slice(-r, None), slice(-r, None))])
+    return (frac >= 0.6 and corners >= 3), level
+
+
+def light_edge_fraction(rgba):
+    """Share of the cut-out's edge pixels (inside, next to the transparent area) that are light and
+    neutral.  Dark or coloured machines score near 0; a machine with white / cream covers that the
+    normal thresholds have started to eat scores well above 0.05."""
+    a = np.asarray(rgba.convert("RGBA")).astype(np.int16)
+    al, rgb = a[..., 3], a[..., :3]
+    opaque, transp = (al > 200), (al < 30).astype(np.uint8)
+    band = opaque & (cv2.dilate(transp, np.ones((9, 9), np.uint8)) > 0)
+    if not band.any():
+        return 0.0
+    mn, mx = rgb.min(-1), rgb.max(-1)
+    light = (mn >= 210) & ((mx - mn) <= 20)
+    return float(light[band].mean())
+
+
+def auto_cutout(im, level=255, shadow_thr=205, light_limit=0.05):
+    """Cut-out with thresholds relative to the measured background brightness; the floor shadow
+    is kept as translucent black so the machine still 'stands' on a coloured background.
+    Machines with white or cream covers are detected after a first pass (light_edge_fraction) and
+    cut again with strict thresholds that only remove the real background (background within
+    4 levels of pure white), so the covers keep their edges."""
+    res = cutout(im, border_thr=min(232, level - 8), hole_thr=min(247, level + 4), hole_area=200, shadow_thr=shadow_thr)
+    if light_edge_fraction(res) > light_limit:
+        res = cutout(im, border_thr=level - 4, hole_thr=level - 1, hole_area=400, neutral=12, shadow_thr=None,
+                     edge_hi=level - 2, edge_lo=level - 14, band_light=level - 6)
+        res.info["strict"] = True
+    return res
+
+
+def cutout(im, border_thr=232, hole_thr=247, hole_area=200, neutral=16, keep_alpha=True, margin=6, shadow_thr=None,
+           edge_hi=252.0, edge_lo=190.0, band_light=200):
     rgba = im.convert("RGBA")
     arr = np.asarray(rgba).astype(np.float32)
     rgb, a0 = arr[..., :3], arr[..., 3]
@@ -53,10 +105,10 @@ def cutout(im, border_thr=232, hole_thr=247, hole_area=200, neutral=16, keep_alp
     # --- soft edge in a band around the hard edge
     k = np.ones((5, 5), np.uint8)
     band = (cv2.dilate(bg.astype(np.uint8), k) > 0) & (cv2.erode(bg.astype(np.uint8), k) == 0) & ~bg
-    light_neutral = neutral_mask & (mn > 200)
+    light_neutral = neutral_mask & (mn > band_light)
     shadow |= band & light_neutral          # light grey edge pixels are background + shadow, not machine
     edge = band & ~shadow
-    alpha[edge] = np.clip((252.0 - mn[edge]) / (252.0 - 190.0), 0, 1)
+    alpha[edge] = np.clip((edge_hi - mn[edge]) / (edge_hi - edge_lo), 0, 1)
     alpha[shadow] = np.clip((255.0 - mn[shadow]) / 255.0 * 1.15, 0, 1)
     alpha = cv2.GaussianBlur(alpha, (0, 0), 0.5)
     alpha = np.clip(alpha, 0, 1)

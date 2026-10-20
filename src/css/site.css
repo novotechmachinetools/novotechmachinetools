@@ -229,7 +229,7 @@ small { font-size: .85em; }
 /* ---------- why / standard features ---------- */
 .why { background: var(--charcoal); color: #fff; padding: 46px 0 36px; margin-top: 30px; }
 .why h2 { color: #fff; }
-.why-grid { list-style: none; margin: 18px 0 10px; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 24px; }
+.why-grid { list-style: none; margin: 18px 0 10px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 28px; }
 .why-grid li { border-top: 3px solid var(--orange); padding-top: 14px; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; align-items: start; }
 .why-grid li > div { display: grid; gap: 3px; }
 .why-grid .why-badge { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; color: var(--orange); }
@@ -313,6 +313,8 @@ small { font-size: .85em; }
 .guide-section p, .guide-section li { max-width: 78ch; }
 .guide-figure { margin: 18px 0; }
 .guide-figure img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.guide-figure.is-cutout { background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.guide-figure.is-cutout img { border: 0; display: block; margin: 0 auto; max-height: 460px; width: auto; }
 .guide-table th[scope="row"] { font-weight: 600; }
 /* ---------- premium / value line badges ---------- */
 .line-badge { display: inline-flex; align-items: center; gap: 12px; padding: 6px 14px 6px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); margin-bottom: 12px; }

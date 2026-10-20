@@ -35,3 +35,24 @@ Rising related queries: horizontal metal bandsaw, metal cutting band saw, drill 
   "band saw for metal" and "band saw machine"; H1 stays short.
 * FAQ on the hub: "Band saw or bandsaw?" so AI assistants and Google see both forms as the same.
 * Capacity, blade, HP and model numbers in inches first, mm in brackets (Canadian buyers search both).
+
+## Findings — miter wording (saws that swivel to both sides)
+
+Google Trends, Oct 2026. The long-tail phrases ("double miter band saw", "twin miter band saw",
+"dual miter band saw") are below Trends' reporting threshold in Canada and the US, so the broad
+modifiers were compared instead:
+
+| term (5 years) | Canada | worldwide | note |
+|---|---|---|---|
+| miter saw | ~75 | — | US spelling edges out "mitre" even in Canada (BC, Ontario, Quebec "miter"; Alberta, Manitoba "mitre") |
+| mitre saw | ~70 | — | |
+| dual miter saw | — | high | "dual miter" ≈ "double miter"; both dominated by woodworking (dual-bevel) traffic |
+| double miter saw | — | high | the usual term in the metal-cutting trade (Bekamak, Cosen, Hyd-Mech, Kalamazoo) |
+| twin miter / twin mitre saw | — | ~0 | UK usage only |
+| swivel head band saw | — | low but steady | the US term for pivot saws that cut angles (Jet, Baileigh) |
+
+Rule: use **miter** as the primary spelling with a single "(mitre)" mention per page for the Canadian
+form, and spread the terms over the models instead of repeating one: **double-miter** on the best
+sellers (BS-315GF, BMS DG, BMSO 270DGS), **dual-miter** on the BMSY DG/DGH and BS-460G, **twin-miter**
+on the BMSY DG NC, **swivel-head miter** on the BS-460GB, **single-miter** where the head swivels one
+way. Body text may still say "miters to both sides".

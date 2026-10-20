@@ -11,7 +11,7 @@
     a.href = "mailto:" + e; a.textContent = e; EMAIL = EMAIL || e;
   });
 
-  /* ---------- "Find a machine" assistant: panel opens on demand, script loaded once ---------- */
+  /* ---------- "AI machine finder" assistant: panel opens on demand, script loaded once ---------- */
   var aiPanel = d.getElementById("ai-panel");
   if (aiPanel) {
     var aiLoaded = false, lastFocus = null;

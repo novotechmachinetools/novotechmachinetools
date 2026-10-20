@@ -7,6 +7,7 @@
 Content lives in content/, templates in templates/, static assets in src/.
 """
 import json, os, re, shutil, sys, datetime, hashlib
+import html as html_mod
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -535,9 +536,11 @@ def render_page(page):
         art = open(os.path.join(ROOT, "content", "articles", page["article"]), encoding="utf-8").read()
         def fig(m):
             im = img(m.group(1))
-            return (f'<figure class="guide-figure"><img src="{im["small"]}" srcset="{im["srcset"]}" sizes="(max-width: 700px) 92vw, 760px" '
-                    f'width="{im["w"]}" height="{im["h"]}" alt="{im["alt"]}" loading="lazy" decoding="async"></figure>')
-        art = re.sub(r'<figure class="guide-figure" data-img="([^"]+)"></figure>', fig, art)
+            alt = html_mod.escape(m.group(2)) if m.group(2) else im["alt"]
+            cls = "guide-figure is-cutout" if im.get("alpha") else "guide-figure"
+            return (f'<figure class="{cls}"><img src="{im["small"]}" srcset="{im["srcset"]}" sizes="(max-width: 700px) 92vw, 760px" '
+                    f'width="{im["w"]}" height="{im["h"]}" alt="{alt}" loading="lazy" decoding="async"></figure>')
+        art = re.sub(r'<figure class="guide-figure" data-img="([^"]+)"(?: data-alt="([^"]*)")?></figure>', fig, art)
         page["article_html"] = art
         page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
     tpl = env.get_template(page.get("template", "page.html"))
