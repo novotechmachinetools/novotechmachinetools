@@ -4,7 +4,7 @@
 {% block content %}
 {% set hero = img(page.hero_image) %}
 <section class="hero">
-  <div class="wrap hero-grid">
+  <div class="wrap hero-grid{{ ' has-large-hero' if page.hero_large else '' }}">
     <div class="hero-copy">
       <nav class="crumbs" aria-label="Breadcrumb">
         <ol>
@@ -34,9 +34,9 @@
       </nav>
       {% endif %}
     </div>
-    <div class="hero-art" aria-hidden="true">
+    <div class="hero-art{{ ' is-large' if page.hero_large else '' }}" aria-hidden="true">
       <div class="hero-band"></div>
-      <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, 520px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">
+      <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, {{ 620 if page.hero_large else 520 }}px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">
       {% if page.hero_image_secondary %}
       <div class="hero-minis">
         {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% endfor %}

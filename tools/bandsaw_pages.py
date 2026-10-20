@@ -154,8 +154,8 @@ KW = {
 }
 
 ORIGIN = {
-    "bekamak": {"title": "Made in Turkey by Bekamak", "text": "Bekamak has built band saws in Turkey since 1990 with European components — the premium line of our range."},
-    "novotech": {"title": "Manufactured in China to North American standards", "text": "NovoTech's own brand: built to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, Ontario parts and support as every machine we sell."},
+    "bekamak": {"title": "Made in Turkey by Bekamak", "text": "Bekamak has built band saws in Turkey since 1990 with European components — our premium line."},
+    "novotech": {"title": "Built in China to North American standards", "text": "NovoTech's own brand — same CSA panel, warranty and Mississauga, ON support as every machine we sell."},
 }
 
 BRAND = {
@@ -237,7 +237,7 @@ def main():
     h["range_lead"] = "Capacity at 0° for every model, one table per line. Each row links to the full specification table with miter capacities, blade sizes, motors and dimensions."
     h["section_label"] = "Band saws"
     h["related_blurb"] = "Both lines side by side: every Bekamak and NovoTech value-line band saw, the capacity tables and the band saw buying guide."
-    h["origin_feature"] = {"title": "Two lines, one standard of support", "text": "Bekamak saws are made in Turkey with European components; value-line saws are manufactured in China to North American standards and sold under the NovoTech name."}
+    h["origin_feature"] = {"title": "Two lines, one standard of support", "text": "Bekamak saws are built in Turkey with European components; value-line saws in China to North American standards."}
     json.dump(h, open(hp, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print("pages:", [sp["slug"] for ln in lines for sp in ln["subpages"]])
 
