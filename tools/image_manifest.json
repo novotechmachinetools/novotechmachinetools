@@ -568,29 +568,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 800,
+    "h": 578,
     "file": "img/rebar/portable-disc-1200.webp",
-    "bytes": 36658
+    "bytes": 37376
    },
    {
     "w": 800,
-    "h": 534,
+    "h": 386,
     "file": "img/rebar/portable-disc-800.webp",
-    "bytes": 20328
+    "bytes": 20456
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 231,
     "file": "img/rebar/portable-disc-480.webp",
-    "bytes": 9754
+    "bytes": 9962
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 77,
    "file": "img/rebar/portable-disc-thumb.webp",
-   "bytes": 1944
+   "bytes": 1964
   }
  },
  "portable-bending": {
@@ -628,29 +628,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 800,
+    "h": 781,
     "file": "img/rebar/bt-24x5-panel-1200.webp",
-    "bytes": 81168
+    "bytes": 81198
    },
    {
     "w": 800,
-    "h": 534,
+    "h": 520,
     "file": "img/rebar/bt-24x5-panel-800.webp",
-    "bytes": 41552
+    "bytes": 41482
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 312,
     "file": "img/rebar/bt-24x5-panel-480.webp",
-    "bytes": 17862
+    "bytes": 17934
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 104,
    "file": "img/rebar/bt-24x5-panel-thumb.webp",
-   "bytes": 2770
+   "bytes": 2820
   }
  },
  "sl-30": {
@@ -1113,24 +1113,18 @@
   "alt": "GMS A 40 portable hydraulic dowel bar bender",
   "variants": [
    {
-    "w": 800,
-    "h": 1135,
-    "file": "img/rebar/a-40-800.webp",
-    "bytes": 90306
-   },
-   {
     "w": 480,
-    "h": 681,
+    "h": 675,
     "file": "img/rebar/a-40-480.webp",
-    "bytes": 47078
+    "bytes": 61236
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 113,
+   "w": 114,
    "h": 160,
    "file": "img/rebar/a-40-thumb.webp",
-   "bytes": 6692
+   "bytes": 8880
   }
  },
  "mg-26-32b": {
@@ -1186,23 +1180,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 902,
+    "h": 854,
     "file": "img/rebar/dowel-head-800.webp",
-    "bytes": 42510
+    "bytes": 42912
    },
    {
     "w": 480,
-    "h": 541,
+    "h": 512,
     "file": "img/rebar/dowel-head-480.webp",
-    "bytes": 22074
+    "bytes": 22308
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 142,
+   "w": 150,
    "h": 160,
    "file": "img/rebar/dowel-head-thumb.webp",
-   "bytes": 3404
+   "bytes": 3720
   }
  },
  "dowel-in-place": {
@@ -1804,29 +1798,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 801,
+    "h": 1218,
     "file": "img/rebar/sh-gauge-1200.webp",
-    "bytes": 36926
+    "bytes": 77112
    },
    {
     "w": 800,
-    "h": 534,
+    "h": 812,
     "file": "img/rebar/sh-gauge-800.webp",
-    "bytes": 20680
+    "bytes": 42014
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 487,
     "file": "img/rebar/sh-gauge-480.webp",
-    "bytes": 10008
+    "bytes": 20242
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
-   "h": 107,
+   "w": 158,
+   "h": 160,
    "file": "img/rebar/sh-gauge-thumb.webp",
-   "bytes": 1874
+   "bytes": 3794
   }
  },
  "max-40": {
@@ -2344,29 +2338,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 801,
+    "h": 845,
     "file": "img/rebar/matrix-55-outfeed-1200.webp",
-    "bytes": 73894
+    "bytes": 78978
    },
    {
     "w": 800,
-    "h": 534,
+    "h": 563,
     "file": "img/rebar/matrix-55-outfeed-800.webp",
-    "bytes": 41618
+    "bytes": 45452
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 338,
     "file": "img/rebar/matrix-55-outfeed-480.webp",
-    "bytes": 19266
+    "bytes": 21054
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 113,
    "file": "img/rebar/matrix-55-outfeed-thumb.webp",
-   "bytes": 3136
+   "bytes": 3392
   }
  },
  "matrix-55s": {
@@ -2580,7 +2574,7 @@
   }
  },
  "hb-12x3": {
-  "alt": "GMS HB 12x3 hydraulic mesh bending machine",
+  "alt": "GMS HB 12x3 hydraulic mesh bender \u2014 the HB 12x6 shares the same design with a 19 ft 8 in table",
   "variants": [
    {
     "w": 1200,
@@ -2842,29 +2836,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 800,
+    "h": 619,
     "file": "img/rebar/mg-20b-use-1200.webp",
-    "bytes": 31806
+    "bytes": 32166
    },
    {
     "w": 800,
-    "h": 534,
+    "h": 413,
     "file": "img/rebar/mg-20b-use-800.webp",
-    "bytes": 18524
+    "bytes": 18396
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 248,
     "file": "img/rebar/mg-20b-use-480.webp",
-    "bytes": 9194
+    "bytes": 9458
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 83,
    "file": "img/rebar/mg-20b-use-thumb.webp",
-   "bytes": 2156
+   "bytes": 2248
   }
  },
  "mg-20b-tools": {
@@ -3682,29 +3676,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 801,
+    "h": 760,
     "file": "img/rebar/synclone-7-1200.webp",
-    "bytes": 50686
+    "bytes": 50476
    },
    {
     "w": 800,
-    "h": 534,
+    "h": 507,
     "file": "img/rebar/synclone-7-800.webp",
-    "bytes": 28766
+    "bytes": 28400
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 304,
     "file": "img/rebar/synclone-7-480.webp",
-    "bytes": 13720
+    "bytes": 13686
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 101,
    "file": "img/rebar/synclone-7-thumb.webp",
-   "bytes": 2490
+   "bytes": 2552
   }
  },
  "video-YhbU43ypxRU": {
@@ -4612,29 +4606,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 1036,
+    "h": 1019,
     "file": "img/rebar/spiral-bending-attachment-1200.webp",
-    "bytes": 53622
+    "bytes": 54054
    },
    {
     "w": 800,
-    "h": 691,
+    "h": 680,
     "file": "img/rebar/spiral-bending-attachment-800.webp",
-    "bytes": 32298
+    "bytes": 32540
    },
    {
     "w": 480,
-    "h": 414,
+    "h": 408,
     "file": "img/rebar/spiral-bending-attachment-480.webp",
-    "bytes": 16470
+    "bytes": 16556
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 138,
+   "h": 136,
    "file": "img/rebar/spiral-bending-attachment-thumb.webp",
-   "bytes": 3226
+   "bytes": 3238
   }
  },
  "video-JDsfbSoCdN0": {
@@ -4793,268 +4787,166 @@
    "bytes": 3930
   }
  },
- "bekamak-logo": {
-  "alt": "Bekamak",
-  "variants": [
-   {
-    "w": 354,
-    "h": 59,
-    "file": "img/site/bekamak-logo-354.webp",
-    "bytes": 2970
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 27,
-   "file": "img/site/bekamak-logo-thumb.webp",
-   "bytes": 2192
-  }
- },
- "novofab-logo": {
-  "alt": "NovoFab Machinery",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 404,
-    "file": "img/site/novofab-logo-1200.webp",
-    "bytes": 65716
-   },
-   {
-    "w": 800,
-    "h": 269,
-    "file": "img/site/novofab-logo-800.webp",
-    "bytes": 43624
-   },
-   {
-    "w": 480,
-    "h": 162,
-    "file": "img/site/novofab-logo-480.webp",
-    "bytes": 25812
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 54,
-   "file": "img/site/novofab-logo-thumb.webp",
-   "bytes": 6350
-  }
- },
  "bk-bms-230dg-1": {
   "alt": "Bekamak BMS 230DG band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-230dg-1-800.webp",
-    "bytes": 16480
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 557,
     "file": "img/bandsaw/bk-bms-230dg-1-480.webp",
-    "bytes": 8080
+    "bytes": 14814
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 138,
    "h": 160,
    "file": "img/bandsaw/bk-bms-230dg-1-thumb.webp",
-   "bytes": 1676
+   "bytes": 2470
   }
  },
  "bk-bms-230dg-2": {
   "alt": "Bekamak BMS 230DG band saw \u2014 photo 2 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-230dg-2-800.webp",
-    "bytes": 22676
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 465,
     "file": "img/bandsaw/bk-bms-230dg-2-480.webp",
-    "bytes": 11146
+    "bytes": 17274
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 155,
    "file": "img/bandsaw/bk-bms-230dg-2-thumb.webp",
-   "bytes": 2068
+   "bytes": 3324
   }
  },
  "bk-bms-230dg-3": {
   "alt": "Bekamak BMS 230DG band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-230dg-3-800.webp",
-    "bytes": 22846
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 363,
     "file": "img/bandsaw/bk-bms-230dg-3-480.webp",
-    "bytes": 10962
+    "bytes": 16080
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 121,
    "file": "img/bandsaw/bk-bms-230dg-3-thumb.webp",
-   "bytes": 2140
+   "bytes": 2986
   }
  },
  "bk-bms-230dg-4": {
   "alt": "Bekamak BMS 230DG band saw \u2014 photo 4 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-230dg-4-800.webp",
-    "bytes": 16216
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 420,
     "file": "img/bandsaw/bk-bms-230dg-4-480.webp",
-    "bytes": 7958
+    "bytes": 14512
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 140,
    "file": "img/bandsaw/bk-bms-230dg-4-thumb.webp",
-   "bytes": 1572
+   "bytes": 2914
   }
  },
  "bk-bms-270dg-1": {
   "alt": "Bekamak BMS 270DG band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-270dg-1-800.webp",
-    "bytes": 24174
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 506,
     "file": "img/bandsaw/bk-bms-270dg-1-480.webp",
-    "bytes": 11640
+    "bytes": 18378
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 152,
    "h": 160,
    "file": "img/bandsaw/bk-bms-270dg-1-thumb.webp",
-   "bytes": 2222
+   "bytes": 3160
   }
  },
  "bk-bms-270dg-2": {
   "alt": "Bekamak BMS 270DG band saw \u2014 photo 2 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-270dg-2-800.webp",
-    "bytes": 19402
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 548,
     "file": "img/bandsaw/bk-bms-270dg-2-480.webp",
-    "bytes": 9248
+    "bytes": 16068
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 140,
    "h": 160,
    "file": "img/bandsaw/bk-bms-270dg-2-thumb.webp",
-   "bytes": 1950
+   "bytes": 2740
   }
  },
  "bk-bms-270dg-3": {
   "alt": "Bekamak BMS 270DG band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-270dg-3-800.webp",
-    "bytes": 23920
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 445,
     "file": "img/bandsaw/bk-bms-270dg-3-480.webp",
-    "bytes": 12408
+    "bytes": 17330
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 148,
    "file": "img/bandsaw/bk-bms-270dg-3-thumb.webp",
-   "bytes": 2466
+   "bytes": 3480
   }
  },
  "bk-bms-270dg-4": {
   "alt": "Bekamak BMS 270DG band saw \u2014 photo 4 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bms-270dg-4-800.webp",
-    "bytes": 15432
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 522,
     "file": "img/bandsaw/bk-bms-270dg-4-480.webp",
-    "bytes": 8110
+    "bytes": 13422
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 147,
    "h": 160,
    "file": "img/bandsaw/bk-bms-270dg-4-thumb.webp",
-   "bytes": 1764
+   "bytes": 2808
   }
  },
  "bk-bmsy-230dg-1": {
   "alt": "Bekamak BMSY 230DG band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-230dg-1-800.webp",
-    "bytes": 13674
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 426,
     "file": "img/bandsaw/bk-bmsy-230dg-1-480.webp",
-    "bytes": 6912
+    "bytes": 13518
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 142,
    "file": "img/bandsaw/bk-bmsy-230dg-1-thumb.webp",
-   "bytes": 1406
+   "bytes": 2920
   }
  },
  "bk-bmsy-230dg-2": {
@@ -5062,23 +4954,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 516,
     "file": "img/bandsaw/bk-bmsy-230dg-2-800.webp",
-    "bytes": 24156
+    "bytes": 27540
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 310,
     "file": "img/bandsaw/bk-bmsy-230dg-2-480.webp",
-    "bytes": 11570
+    "bytes": 12862
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 103,
    "file": "img/bandsaw/bk-bmsy-230dg-2-thumb.webp",
-   "bytes": 2222
+   "bytes": 2486
   }
  },
  "bk-bmsy-230dgh-1": {
@@ -5086,183 +4978,141 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 574,
     "file": "img/bandsaw/bk-bmsy-230dgh-1-800.webp",
-    "bytes": 25248
+    "bytes": 31804
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 344,
     "file": "img/bandsaw/bk-bmsy-230dgh-1-480.webp",
-    "bytes": 12818
+    "bytes": 16342
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 115,
    "file": "img/bandsaw/bk-bmsy-230dgh-1-thumb.webp",
-   "bytes": 2654
+   "bytes": 3322
   }
  },
  "bk-bmsy-230dgh-2": {
   "alt": "Bekamak BMSY 230DGH band saw \u2014 photo 2 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-230dgh-2-800.webp",
-    "bytes": 17622
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 349,
     "file": "img/bandsaw/bk-bmsy-230dgh-2-480.webp",
-    "bytes": 8708
+    "bytes": 12296
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 116,
    "file": "img/bandsaw/bk-bmsy-230dgh-2-thumb.webp",
-   "bytes": 1916
+   "bytes": 2670
   }
  },
  "bk-bmsy-230dgh-3": {
   "alt": "Bekamak BMSY 230DGH band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-230dgh-3-800.webp",
-    "bytes": 16722
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 447,
     "file": "img/bandsaw/bk-bmsy-230dgh-3-480.webp",
-    "bytes": 8576
+    "bytes": 13372
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 149,
    "file": "img/bandsaw/bk-bmsy-230dgh-3-thumb.webp",
-   "bytes": 1924
+   "bytes": 2994
   }
  },
  "bk-bmsy-230dgh-4": {
   "alt": "Bekamak BMSY 230DGH band saw \u2014 photo 4 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-230dgh-4-800.webp",
-    "bytes": 22618
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 437,
     "file": "img/bandsaw/bk-bmsy-230dgh-4-480.webp",
-    "bytes": 11220
+    "bytes": 17602
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 146,
    "file": "img/bandsaw/bk-bmsy-230dgh-4-thumb.webp",
-   "bytes": 2146
+   "bytes": 3416
   }
  },
  "bk-bmsy-270dg-1": {
   "alt": "Bekamak BMSY 270DG band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-270dg-1-800.webp",
-    "bytes": 14810
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 534,
     "file": "img/bandsaw/bk-bmsy-270dg-1-480.webp",
-    "bytes": 7604
+    "bytes": 12812
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 144,
    "h": 160,
    "file": "img/bandsaw/bk-bmsy-270dg-1-thumb.webp",
-   "bytes": 1656
+   "bytes": 2416
   }
  },
  "bk-bmsy-270dg-2": {
   "alt": "Bekamak BMSY 270DG band saw \u2014 photo 2 of 6",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-270dg-2-800.webp",
-    "bytes": 20794
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 513,
     "file": "img/bandsaw/bk-bmsy-270dg-2-480.webp",
-    "bytes": 10254
+    "bytes": 17942
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 150,
    "h": 160,
    "file": "img/bandsaw/bk-bmsy-270dg-2-thumb.webp",
-   "bytes": 1968
+   "bytes": 3160
   }
  },
  "bk-bmsy-270dg-3": {
   "alt": "Bekamak BMSY 270DG band saw \u2014 photo 3 of 6",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-270dg-3-800.webp",
-    "bytes": 23872
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 425,
     "file": "img/bandsaw/bk-bmsy-270dg-3-480.webp",
-    "bytes": 11630
+    "bytes": 18226
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 142,
    "file": "img/bandsaw/bk-bmsy-270dg-3-thumb.webp",
-   "bytes": 2280
+   "bytes": 3514
   }
  },
  "bk-bmsy-270dg-4": {
   "alt": "Bekamak BMSY 270DG band saw \u2014 photo 4 of 6",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-270dg-4-800.webp",
-    "bytes": 14644
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 479,
     "file": "img/bandsaw/bk-bmsy-270dg-4-480.webp",
-    "bytes": 7042
+    "bytes": 13164
    }
   ],
   "alpha": false,
@@ -5270,31 +5120,25 @@
    "w": 160,
    "h": 160,
    "file": "img/bandsaw/bk-bmsy-270dg-4-thumb.webp",
-   "bytes": 1518
+   "bytes": 2804
   }
  },
  "bk-bmsy-270dg-5": {
   "alt": "Bekamak BMSY 270DG band saw \u2014 photo 5 of 6",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-270dg-5-800.webp",
-    "bytes": 31104
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 539,
     "file": "img/bandsaw/bk-bmsy-270dg-5-480.webp",
-    "bytes": 14616
+    "bytes": 22934
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 142,
    "h": 160,
    "file": "img/bandsaw/bk-bmsy-270dg-5-thumb.webp",
-   "bytes": 2672
+   "bytes": 3530
   }
  },
  "bk-bmsy-270dg-6": {
@@ -5326,23 +5170,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 587,
     "file": "img/bandsaw/bk-bmsy-270dgh-1-800.webp",
-    "bytes": 24476
+    "bytes": 30642
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 352,
     "file": "img/bandsaw/bk-bmsy-270dgh-1-480.webp",
-    "bytes": 11898
+    "bytes": 15248
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 117,
    "file": "img/bandsaw/bk-bmsy-270dgh-1-thumb.webp",
-   "bytes": 2330
+   "bytes": 3022
   }
  },
  "bk-bmsy-270dgh-2": {
@@ -5350,119 +5194,95 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 674,
     "file": "img/bandsaw/bk-bmsy-270dgh-2-800.webp",
-    "bytes": 25970
+    "bytes": 30096
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 404,
     "file": "img/bandsaw/bk-bmsy-270dgh-2-480.webp",
-    "bytes": 12694
+    "bytes": 14286
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 135,
    "file": "img/bandsaw/bk-bmsy-270dgh-2-thumb.webp",
-   "bytes": 2410
+   "bytes": 2774
   }
  },
  "bk-bmsy-270dgh-3": {
   "alt": "Bekamak BMSY 270DGH band saw \u2014 photo 3 of 3",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-270dgh-3-800.webp",
-    "bytes": 18982
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 429,
     "file": "img/bandsaw/bk-bmsy-270dgh-3-480.webp",
-    "bytes": 9524
+    "bytes": 13774
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 143,
    "file": "img/bandsaw/bk-bmsy-270dgh-3-thumb.webp",
-   "bytes": 2134
+   "bytes": 3016
   }
  },
  "bk-bmsy-320dgh-1": {
   "alt": "Bekamak BMSY 320DGH band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmsy-320dgh-1-800.webp",
-    "bytes": 17568
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 344,
     "file": "img/bandsaw/bk-bmsy-320dgh-1-480.webp",
-    "bytes": 8518
+    "bytes": 14584
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 115,
    "file": "img/bandsaw/bk-bmsy-320dgh-1-thumb.webp",
-   "bytes": 1574
+   "bytes": 2660
   }
  },
  "bk-bmsy-320dgh-2": {
   "alt": "Bekamak BMSY 320DGH band saw \u2014 photo 2 of 3",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmsy-320dgh-2-800.webp",
-    "bytes": 19788
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 353,
     "file": "img/bandsaw/bk-bmsy-320dgh-2-480.webp",
-    "bytes": 10140
+    "bytes": 14930
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 118,
    "file": "img/bandsaw/bk-bmsy-320dgh-2-thumb.webp",
-   "bytes": 2180
+   "bytes": 3196
   }
  },
  "bk-bmsy-320dgh-3": {
   "alt": "Bekamak BMSY 320DGH band saw \u2014 photo 3 of 3",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmsy-320dgh-3-800.webp",
-    "bytes": 23378
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 395,
     "file": "img/bandsaw/bk-bmsy-320dgh-3-480.webp",
-    "bytes": 12008
+    "bytes": 16378
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 132,
    "file": "img/bandsaw/bk-bmsy-320dgh-3-thumb.webp",
-   "bytes": 2636
+   "bytes": 3682
   }
  },
  "bk-bmsy-360dgh-eco-1": {
@@ -5470,23 +5290,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 537,
+    "h": 551,
     "file": "img/bandsaw/bk-bmsy-360dgh-eco-1-800.webp",
-    "bytes": 21916
+    "bytes": 24876
    },
    {
     "w": 480,
-    "h": 322,
+    "h": 331,
     "file": "img/bandsaw/bk-bmsy-360dgh-eco-1-480.webp",
-    "bytes": 11674
+    "bytes": 13412
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 110,
    "file": "img/bandsaw/bk-bmsy-360dgh-eco-1-thumb.webp",
-   "bytes": 2702
+   "bytes": 3062
   }
  },
  "bk-bmsy-360dgh-eco-2": {
@@ -5494,23 +5314,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 537,
+    "h": 542,
     "file": "img/bandsaw/bk-bmsy-360dgh-eco-2-800.webp",
-    "bytes": 20610
+    "bytes": 23618
    },
    {
     "w": 480,
-    "h": 322,
+    "h": 325,
     "file": "img/bandsaw/bk-bmsy-360dgh-eco-2-480.webp",
-    "bytes": 10888
+    "bytes": 12730
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 108,
    "file": "img/bandsaw/bk-bmsy-360dgh-eco-2-thumb.webp",
-   "bytes": 2394
+   "bytes": 2956
   }
  },
  "bk-bmsy-440dgh-1": {
@@ -5518,23 +5338,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 537,
+    "h": 550,
     "file": "img/bandsaw/bk-bmsy-440dgh-1-800.webp",
-    "bytes": 19824
+    "bytes": 23402
    },
    {
     "w": 480,
-    "h": 322,
+    "h": 330,
     "file": "img/bandsaw/bk-bmsy-440dgh-1-480.webp",
-    "bytes": 10808
+    "bytes": 12890
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 110,
    "file": "img/bandsaw/bk-bmsy-440dgh-1-thumb.webp",
-   "bytes": 2480
+   "bytes": 3108
   }
  },
  "bk-bmsy-440dgh-2": {
@@ -5542,167 +5362,131 @@
   "variants": [
    {
     "w": 800,
-    "h": 537,
+    "h": 548,
     "file": "img/bandsaw/bk-bmsy-440dgh-2-800.webp",
-    "bytes": 20968
+    "bytes": 24292
    },
    {
     "w": 480,
-    "h": 322,
+    "h": 329,
     "file": "img/bandsaw/bk-bmsy-440dgh-2-480.webp",
-    "bytes": 11128
+    "bytes": 13218
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 110,
    "file": "img/bandsaw/bk-bmsy-440dgh-2-thumb.webp",
-   "bytes": 2494
+   "bytes": 2918
   }
  },
  "bk-bmsy-320g-1": {
   "alt": "Bekamak BMSY 320G band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-320g-1-800.webp",
-    "bytes": 24234
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 449,
     "file": "img/bandsaw/bk-bmsy-320g-1-480.webp",
-    "bytes": 11922
+    "bytes": 18804
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 150,
    "file": "img/bandsaw/bk-bmsy-320g-1-thumb.webp",
-   "bytes": 2550
+   "bytes": 3834
   }
  },
  "bk-bmsy-320g-2": {
   "alt": "Bekamak BMSY 320G band saw \u2014 photo 2 of 2",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-320g-2-800.webp",
-    "bytes": 26644
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 484,
     "file": "img/bandsaw/bk-bmsy-320g-2-480.webp",
-    "bytes": 11998
+    "bytes": 22254
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 159,
    "h": 160,
    "file": "img/bandsaw/bk-bmsy-320g-2-thumb.webp",
-   "bytes": 2120
+   "bytes": 3800
   }
  },
  "bk-bmsy-320gl-1": {
   "alt": "Bekamak BMSY 320GL band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-320gl-1-800.webp",
-    "bytes": 19998
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 407,
     "file": "img/bandsaw/bk-bmsy-320gl-1-480.webp",
-    "bytes": 10088
+    "bytes": 15548
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 136,
    "file": "img/bandsaw/bk-bmsy-320gl-1-thumb.webp",
-   "bytes": 2138
+   "bytes": 3218
   }
  },
  "bk-bmsy-320gl-2": {
   "alt": "Bekamak BMSY 320GL band saw \u2014 photo 2 of 2",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-320gl-2-800.webp",
-    "bytes": 22262
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 419,
     "file": "img/bandsaw/bk-bmsy-320gl-2-480.webp",
-    "bytes": 10814
+    "bytes": 18088
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 140,
    "file": "img/bandsaw/bk-bmsy-320gl-2-thumb.webp",
-   "bytes": 1948
+   "bytes": 3312
   }
  },
  "bk-bmsy-320-1": {
   "alt": "Bekamak BMSY 320 band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-320-1-800.webp",
-    "bytes": 27068
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 439,
     "file": "img/bandsaw/bk-bmsy-320-1-480.webp",
-    "bytes": 13942
+    "bytes": 19956
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 146,
    "file": "img/bandsaw/bk-bmsy-320-1-thumb.webp",
-   "bytes": 2676
+   "bytes": 3950
   }
  },
  "bk-bmsy-320-2": {
   "alt": "Bekamak BMSY 320 band saw \u2014 photo 2 of 2",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmsy-320-2-800.webp",
-    "bytes": 25512
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 430,
     "file": "img/bandsaw/bk-bmsy-320-2-480.webp",
-    "bytes": 12618
+    "bytes": 18014
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 143,
    "file": "img/bandsaw/bk-bmsy-320-2-thumb.webp",
-   "bytes": 2170
+   "bytes": 3094
   }
  },
  "bk-bmsy-320l-1": {
@@ -5710,23 +5494,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 564,
     "file": "img/bandsaw/bk-bmsy-320l-1-800.webp",
-    "bytes": 28350
+    "bytes": 36672
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 338,
     "file": "img/bandsaw/bk-bmsy-320l-1-480.webp",
-    "bytes": 13822
+    "bytes": 17756
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 113,
    "file": "img/bandsaw/bk-bmsy-320l-1-thumb.webp",
-   "bytes": 2758
+   "bytes": 3514
   }
  },
  "bk-bmsy-320l-2": {
@@ -5734,23 +5518,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 547,
     "file": "img/bandsaw/bk-bmsy-320l-2-800.webp",
-    "bytes": 22970
+    "bytes": 29106
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 328,
     "file": "img/bandsaw/bk-bmsy-320l-2-480.webp",
-    "bytes": 10992
+    "bytes": 13632
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 109,
    "file": "img/bandsaw/bk-bmsy-320l-2-thumb.webp",
-   "bytes": 2030
+   "bytes": 2576
   }
  },
  "bk-bmsy-350m-1": {
@@ -5758,23 +5542,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 610,
     "file": "img/bandsaw/bk-bmsy-350m-1-800.webp",
-    "bytes": 27652
+    "bytes": 32054
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 366,
     "file": "img/bandsaw/bk-bmsy-350m-1-480.webp",
-    "bytes": 13634
+    "bytes": 15616
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 122,
    "file": "img/bandsaw/bk-bmsy-350m-1-thumb.webp",
-   "bytes": 2702
+   "bytes": 3152
   }
  },
  "bk-bmsy-350m-2": {
@@ -5782,23 +5566,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 544,
     "file": "img/bandsaw/bk-bmsy-350m-2-800.webp",
-    "bytes": 29008
+    "bytes": 31824
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 326,
     "file": "img/bandsaw/bk-bmsy-350m-2-480.webp",
-    "bytes": 14764
+    "bytes": 15770
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 109,
    "file": "img/bandsaw/bk-bmsy-350m-2-thumb.webp",
-   "bytes": 2996
+   "bytes": 3316
   }
  },
  "bk-bmsy-350m-3": {
@@ -5806,149 +5590,119 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 561,
     "file": "img/bandsaw/bk-bmsy-350m-3-800.webp",
-    "bytes": 26202
+    "bytes": 28076
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 337,
     "file": "img/bandsaw/bk-bmsy-350m-3-480.webp",
-    "bytes": 12534
+    "bytes": 13304
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 112,
    "file": "img/bandsaw/bk-bmsy-350m-3-thumb.webp",
-   "bytes": 2302
+   "bytes": 2410
   }
  },
  "bk-bmso-230-1": {
   "alt": "Bekamak BMSO 230 band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-230-1-800.webp",
-    "bytes": 22434
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 463,
     "file": "img/bandsaw/bk-bmso-230-1-480.webp",
-    "bytes": 10760
+    "bytes": 22800
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 154,
    "file": "img/bandsaw/bk-bmso-230-1-thumb.webp",
-   "bytes": 1984
+   "bytes": 4156
   }
  },
  "bk-bmso-230-2": {
   "alt": "Bekamak BMSO 230 band saw \u2014 photo 2 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-230-2-800.webp",
-    "bytes": 21126
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 461,
     "file": "img/bandsaw/bk-bmso-230-2-480.webp",
-    "bytes": 9936
+    "bytes": 25136
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 154,
    "file": "img/bandsaw/bk-bmso-230-2-thumb.webp",
-   "bytes": 1750
+   "bytes": 4430
   }
  },
  "bk-bmso-230-3": {
   "alt": "Bekamak BMSO 230 band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-230-3-800.webp",
-    "bytes": 15712
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 419,
     "file": "img/bandsaw/bk-bmso-230-3-480.webp",
-    "bytes": 7730
+    "bytes": 16002
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 140,
    "file": "img/bandsaw/bk-bmso-230-3-thumb.webp",
-   "bytes": 1542
+   "bytes": 3228
   }
  },
  "bk-bmso-230-4": {
   "alt": "Bekamak BMSO 230 band saw \u2014 photo 4 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-230-4-800.webp",
-    "bytes": 20154
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 393,
     "file": "img/bandsaw/bk-bmso-230-4-480.webp",
-    "bytes": 9704
+    "bytes": 19642
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 131,
    "file": "img/bandsaw/bk-bmso-230-4-thumb.webp",
-   "bytes": 1868
+   "bytes": 3662
   }
  },
  "bk-bmso-320-1": {
   "alt": "Bekamak BMSO 320 band saw",
   "variants": [
    {
-    "w": 1200,
-    "h": 801,
-    "file": "img/bandsaw/bk-bmso-320-1-1200.webp",
-    "bytes": 42090
-   },
-   {
     "w": 800,
-    "h": 534,
+    "h": 680,
     "file": "img/bandsaw/bk-bmso-320-1-800.webp",
-    "bytes": 22796
+    "bytes": 43608
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 408,
     "file": "img/bandsaw/bk-bmso-320-1-480.webp",
-    "bytes": 10914
+    "bytes": 20480
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 136,
    "file": "img/bandsaw/bk-bmso-320-1-thumb.webp",
-   "bytes": 2206
+   "bytes": 3916
   }
  },
  "bk-bmso-320l-1": {
@@ -5956,23 +5710,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 626,
     "file": "img/bandsaw/bk-bmso-320l-1-800.webp",
-    "bytes": 28460
+    "bytes": 36438
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 376,
     "file": "img/bandsaw/bk-bmso-320l-1-480.webp",
-    "bytes": 13180
+    "bytes": 17112
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 125,
    "file": "img/bandsaw/bk-bmso-320l-1-thumb.webp",
-   "bytes": 2354
+   "bytes": 3048
   }
  },
  "bk-bmso-320l-2": {
@@ -5980,71 +5734,59 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 625,
     "file": "img/bandsaw/bk-bmso-320l-2-800.webp",
-    "bytes": 28012
+    "bytes": 38342
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 375,
     "file": "img/bandsaw/bk-bmso-320l-2-480.webp",
-    "bytes": 13544
+    "bytes": 18328
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 125,
    "file": "img/bandsaw/bk-bmso-320l-2-thumb.webp",
-   "bytes": 2644
+   "bytes": 3560
   }
  },
  "bk-bmso-320e-1": {
   "alt": "Bekamak BMSO 320E band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-320e-1-800.webp",
-    "bytes": 16952
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 309,
     "file": "img/bandsaw/bk-bmso-320e-1-480.webp",
-    "bytes": 8842
+    "bytes": 12080
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 103,
    "file": "img/bandsaw/bk-bmso-320e-1-thumb.webp",
-   "bytes": 1886
+   "bytes": 2590
   }
  },
  "bk-bmso-320e-2": {
   "alt": "Bekamak BMSO 320E band saw \u2014 photo 2 of 5",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-320e-2-800.webp",
-    "bytes": 16424
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 359,
     "file": "img/bandsaw/bk-bmso-320e-2-480.webp",
-    "bytes": 8430
+    "bytes": 13354
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 120,
    "file": "img/bandsaw/bk-bmso-320e-2-thumb.webp",
-   "bytes": 1804
+   "bytes": 2804
   }
  },
  "bk-bmso-320e-3": {
@@ -6052,191 +5794,155 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 605,
     "file": "img/bandsaw/bk-bmso-320e-3-800.webp",
-    "bytes": 23766
+    "bytes": 31476
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 363,
     "file": "img/bandsaw/bk-bmso-320e-3-480.webp",
-    "bytes": 11426
+    "bytes": 15304
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 121,
    "file": "img/bandsaw/bk-bmso-320e-3-thumb.webp",
-   "bytes": 2064
+   "bytes": 2806
   }
  },
  "bk-bmso-320e-4": {
   "alt": "Bekamak BMSO 320E band saw \u2014 photo 4 of 5",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-320e-4-800.webp",
-    "bytes": 18162
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 424,
     "file": "img/bandsaw/bk-bmso-320e-4-480.webp",
-    "bytes": 8904
+    "bytes": 15762
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 141,
    "file": "img/bandsaw/bk-bmso-320e-4-thumb.webp",
-   "bytes": 1806
+   "bytes": 3172
   }
  },
  "bk-bmso-320e-5": {
   "alt": "Bekamak BMSO 320E band saw \u2014 photo 5 of 5",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-320e-5-800.webp",
-    "bytes": 19444
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 361,
     "file": "img/bandsaw/bk-bmso-320e-5-480.webp",
-    "bytes": 10062
+    "bytes": 14906
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 120,
    "file": "img/bandsaw/bk-bmso-320e-5-thumb.webp",
-   "bytes": 2132
+   "bytes": 3218
   }
  },
  "bk-bmso-350ga-1": {
   "alt": "Bekamak BMSO 350GA band saw",
   "variants": [
    {
-    "w": 1200,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-350ga-1-1200.webp",
-    "bytes": 37408
-   },
-   {
     "w": 800,
-    "h": 533,
+    "h": 690,
     "file": "img/bandsaw/bk-bmso-350ga-1-800.webp",
-    "bytes": 20712
+    "bytes": 36016
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 414,
     "file": "img/bandsaw/bk-bmso-350ga-1-480.webp",
-    "bytes": 10714
+    "bytes": 17212
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 138,
    "file": "img/bandsaw/bk-bmso-350ga-1-thumb.webp",
-   "bytes": 2290
+   "bytes": 3754
   }
  },
  "bk-bmso-350ga-2": {
   "alt": "Bekamak BMSO 350GA band saw \u2014 photo 2 of 4",
   "variants": [
    {
-    "w": 1200,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-350ga-2-1200.webp",
-    "bytes": 34968
-   },
-   {
     "w": 800,
-    "h": 533,
+    "h": 735,
     "file": "img/bandsaw/bk-bmso-350ga-2-800.webp",
-    "bytes": 20094
+    "bytes": 35350
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 441,
     "file": "img/bandsaw/bk-bmso-350ga-2-480.webp",
-    "bytes": 9952
+    "bytes": 17546
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 147,
    "file": "img/bandsaw/bk-bmso-350ga-2-thumb.webp",
-   "bytes": 1990
+   "bytes": 3462
   }
  },
  "bk-bmso-350ga-3": {
   "alt": "Bekamak BMSO 350GA band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 1200,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-350ga-3-1200.webp",
-    "bytes": 35892
-   },
-   {
     "w": 800,
-    "h": 533,
+    "h": 824,
     "file": "img/bandsaw/bk-bmso-350ga-3-800.webp",
-    "bytes": 20406
+    "bytes": 47792
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 494,
     "file": "img/bandsaw/bk-bmso-350ga-3-480.webp",
-    "bytes": 10510
+    "bytes": 22770
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
-   "h": 107,
+   "w": 155,
+   "h": 160,
    "file": "img/bandsaw/bk-bmso-350ga-3-thumb.webp",
-   "bytes": 2156
+   "bytes": 4514
   }
  },
  "bk-bmso-350ga-4": {
   "alt": "Bekamak BMSO 350GA band saw \u2014 photo 4 of 4",
   "variants": [
    {
-    "w": 1200,
-    "h": 800,
-    "file": "img/bandsaw/bk-bmso-350ga-4-1200.webp",
-    "bytes": 25376
-   },
-   {
     "w": 800,
-    "h": 533,
+    "h": 668,
     "file": "img/bandsaw/bk-bmso-350ga-4-800.webp",
-    "bytes": 14370
+    "bytes": 34642
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 401,
     "file": "img/bandsaw/bk-bmso-350ga-4-480.webp",
-    "bytes": 7030
+    "bytes": 16424
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 134,
    "file": "img/bandsaw/bk-bmso-350ga-4-thumb.webp",
-   "bytes": 1280
+   "bytes": 3222
   }
  },
  "bk-bmso-320gs-1": {
@@ -6244,23 +5950,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 576,
     "file": "img/bandsaw/bk-bmso-320gs-1-800.webp",
-    "bytes": 24910
+    "bytes": 29670
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 345,
     "file": "img/bandsaw/bk-bmso-320gs-1-480.webp",
-    "bytes": 11738
+    "bytes": 13950
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 115,
    "file": "img/bandsaw/bk-bmso-320gs-1-thumb.webp",
-   "bytes": 2082
+   "bytes": 2546
   }
  },
  "bk-bmso-320gs-2": {
@@ -6268,23 +5974,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 576,
     "file": "img/bandsaw/bk-bmso-320gs-2-800.webp",
-    "bytes": 22566
+    "bytes": 26228
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 346,
     "file": "img/bandsaw/bk-bmso-320gs-2-480.webp",
-    "bytes": 10646
+    "bytes": 12254
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 115,
    "file": "img/bandsaw/bk-bmso-320gs-2-thumb.webp",
-   "bytes": 2244
+   "bytes": 2512
   }
  },
  "bk-bmso-320gs-3": {
@@ -6292,23 +5998,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 579,
     "file": "img/bandsaw/bk-bmso-320gs-3-800.webp",
-    "bytes": 28696
+    "bytes": 32022
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 347,
     "file": "img/bandsaw/bk-bmso-320gs-3-480.webp",
-    "bytes": 13902
+    "bytes": 15438
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 116,
    "file": "img/bandsaw/bk-bmso-320gs-3-thumb.webp",
-   "bytes": 2788
+   "bytes": 3084
   }
  },
  "bk-bmso-320gls-1": {
@@ -6316,23 +6022,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 568,
     "file": "img/bandsaw/bk-bmso-320gls-1-800.webp",
-    "bytes": 29504
+    "bytes": 31934
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 341,
     "file": "img/bandsaw/bk-bmso-320gls-1-480.webp",
-    "bytes": 13286
+    "bytes": 14522
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 114,
    "file": "img/bandsaw/bk-bmso-320gls-1-thumb.webp",
-   "bytes": 2418
+   "bytes": 2678
   }
  },
  "bk-bmso-320gls-2": {
@@ -6340,23 +6046,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 456,
     "file": "img/bandsaw/bk-bmso-320gls-2-800.webp",
-    "bytes": 18728
+    "bytes": 22854
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 274,
     "file": "img/bandsaw/bk-bmso-320gls-2-480.webp",
-    "bytes": 8662
+    "bytes": 10836
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 91,
    "file": "img/bandsaw/bk-bmso-320gls-2-thumb.webp",
-   "bytes": 1796
+   "bytes": 2246
   }
  },
  "bk-bmso-320gls-3": {
@@ -6364,23 +6070,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 468,
     "file": "img/bandsaw/bk-bmso-320gls-3-800.webp",
-    "bytes": 23618
+    "bytes": 24586
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 281,
     "file": "img/bandsaw/bk-bmso-320gls-3-480.webp",
-    "bytes": 11120
+    "bytes": 11698
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 94,
    "file": "img/bandsaw/bk-bmso-320gls-3-thumb.webp",
-   "bytes": 2144
+   "bytes": 2288
   }
  },
  "bk-bmso-270dgs-1": {
@@ -6436,23 +6142,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 538,
     "file": "img/bandsaw/bk-bmsy-330c-1-800.webp",
-    "bytes": 34642
+    "bytes": 40428
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 323,
     "file": "img/bandsaw/bk-bmsy-330c-1-480.webp",
-    "bytes": 14654
+    "bytes": 16916
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 108,
    "file": "img/bandsaw/bk-bmsy-330c-1-thumb.webp",
-   "bytes": 2748
+   "bytes": 3194
   }
  },
  "bk-bmsy-330c-2": {
@@ -6460,23 +6166,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 504,
     "file": "img/bandsaw/bk-bmsy-330c-2-800.webp",
-    "bytes": 21974
+    "bytes": 24410
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 302,
     "file": "img/bandsaw/bk-bmsy-330c-2-480.webp",
-    "bytes": 10930
+    "bytes": 12298
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 101,
    "file": "img/bandsaw/bk-bmsy-330c-2-thumb.webp",
-   "bytes": 2330
+   "bytes": 2592
   }
  },
  "bk-bmsy-460c-1": {
@@ -6748,23 +6454,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 600,
+    "h": 512,
     "file": "img/bandsaw/bk-bmsy-825c-1-800.webp",
-    "bytes": 25472
+    "bytes": 25512
    },
    {
     "w": 480,
-    "h": 360,
+    "h": 308,
     "file": "img/bandsaw/bk-bmsy-825c-1-480.webp",
-    "bytes": 13048
+    "bytes": 13140
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 120,
+   "h": 103,
    "file": "img/bandsaw/bk-bmsy-825c-1-thumb.webp",
-   "bytes": 2830
+   "bytes": 2800
   }
  },
  "bk-bmsy-1020c-1": {
@@ -6844,23 +6550,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 497,
     "file": "img/bandsaw/bk-bmsy-325cgh-1-800.webp",
-    "bytes": 27734
+    "bytes": 29578
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 298,
     "file": "img/bandsaw/bk-bmsy-325cgh-1-480.webp",
-    "bytes": 13416
+    "bytes": 14468
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 99,
    "file": "img/bandsaw/bk-bmsy-325cgh-1-thumb.webp",
-   "bytes": 2904
+   "bytes": 3008
   }
  },
  "bk-bmsy-325cgh-2": {
@@ -6868,23 +6574,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 509,
     "file": "img/bandsaw/bk-bmsy-325cgh-2-800.webp",
-    "bytes": 27012
+    "bytes": 30936
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 306,
     "file": "img/bandsaw/bk-bmsy-325cgh-2-480.webp",
-    "bytes": 13166
+    "bytes": 14950
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 102,
    "file": "img/bandsaw/bk-bmsy-325cgh-2-thumb.webp",
-   "bytes": 2726
+   "bytes": 3136
   }
  },
  "bk-bmsy-325cgh-3": {
@@ -6892,23 +6598,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 554,
     "file": "img/bandsaw/bk-bmsy-325cgh-3-800.webp",
-    "bytes": 34420
+    "bytes": 39704
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 332,
     "file": "img/bandsaw/bk-bmsy-325cgh-3-480.webp",
-    "bytes": 15516
+    "bytes": 18184
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 111,
    "file": "img/bandsaw/bk-bmsy-325cgh-3-thumb.webp",
-   "bytes": 2886
+   "bytes": 3318
   }
  },
  "bk-bmsy-440cgh-1": {
@@ -6916,23 +6622,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 537,
     "file": "img/bandsaw/bk-bmsy-440cgh-1-800.webp",
-    "bytes": 23390
+    "bytes": 26948
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 322,
     "file": "img/bandsaw/bk-bmsy-440cgh-1-480.webp",
-    "bytes": 12014
+    "bytes": 14040
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 107,
    "file": "img/bandsaw/bk-bmsy-440cgh-1-thumb.webp",
-   "bytes": 2626
+   "bytes": 3164
   }
  },
  "bk-bmsy-440cgh-2": {
@@ -6940,23 +6646,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 417,
     "file": "img/bandsaw/bk-bmsy-440cgh-2-800.webp",
-    "bytes": 21422
+    "bytes": 21624
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 250,
     "file": "img/bandsaw/bk-bmsy-440cgh-2-480.webp",
-    "bytes": 10344
+    "bytes": 10536
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 83,
    "file": "img/bandsaw/bk-bmsy-440cgh-2-thumb.webp",
-   "bytes": 1890
+   "bytes": 1968
   }
  },
  "bk-bmsy-440cgh-3": {
@@ -6964,23 +6670,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 800,
+    "h": 747,
     "file": "img/bandsaw/bk-bmsy-440cgh-3-800.webp",
-    "bytes": 37422
+    "bytes": 48284
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 448,
     "file": "img/bandsaw/bk-bmsy-440cgh-3-480.webp",
-    "bytes": 17456
+    "bytes": 22520
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 149,
    "file": "img/bandsaw/bk-bmsy-440cgh-3-thumb.webp",
-   "bytes": 3194
+   "bytes": 4124
   }
  },
  "bk-bmsy-540cgh-1": {
@@ -7216,23 +6922,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 379,
     "file": "img/bandsaw/bk-bmsy-560dg-1-800.webp",
-    "bytes": 18196
+    "bytes": 18240
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 227,
     "file": "img/bandsaw/bk-bmsy-560dg-1-480.webp",
-    "bytes": 9712
+    "bytes": 9960
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 76,
    "file": "img/bandsaw/bk-bmsy-560dg-1-thumb.webp",
-   "bytes": 2092
+   "bytes": 2180
   }
  },
  "bk-bmsy-560dg-2": {
@@ -7240,23 +6946,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 568,
     "file": "img/bandsaw/bk-bmsy-560dg-2-800.webp",
-    "bytes": 21368
+    "bytes": 24126
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 341,
     "file": "img/bandsaw/bk-bmsy-560dg-2-480.webp",
-    "bytes": 11204
+    "bytes": 12510
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 114,
    "file": "img/bandsaw/bk-bmsy-560dg-2-thumb.webp",
-   "bytes": 2466
+   "bytes": 2648
   }
  },
  "bk-bmsy-560dg-3": {
@@ -7264,23 +6970,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 624,
     "file": "img/bandsaw/bk-bmsy-560dg-3-800.webp",
-    "bytes": 23682
+    "bytes": 28794
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 374,
     "file": "img/bandsaw/bk-bmsy-560dg-3-480.webp",
-    "bytes": 12600
+    "bytes": 15500
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 125,
    "file": "img/bandsaw/bk-bmsy-560dg-3-thumb.webp",
-   "bytes": 2700
+   "bytes": 3270
   }
  },
  "bk-bmsy-560dg-4": {
@@ -7288,23 +6994,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 482,
     "file": "img/bandsaw/bk-bmsy-560dg-4-800.webp",
-    "bytes": 26556
+    "bytes": 26290
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 289,
     "file": "img/bandsaw/bk-bmsy-560dg-4-480.webp",
-    "bytes": 13442
+    "bytes": 13500
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 96,
    "file": "img/bandsaw/bk-bmsy-560dg-4-thumb.webp",
-   "bytes": 2822
+   "bytes": 2816
   }
  },
  "bk-bmsy-650dg-1": {
@@ -7312,23 +7018,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 433,
     "file": "img/bandsaw/bk-bmsy-650dg-1-800.webp",
-    "bytes": 22824
+    "bytes": 26194
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 260,
     "file": "img/bandsaw/bk-bmsy-650dg-1-480.webp",
-    "bytes": 11168
+    "bytes": 12754
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 87,
    "file": "img/bandsaw/bk-bmsy-650dg-1-thumb.webp",
-   "bytes": 2312
+   "bytes": 2666
   }
  },
  "bk-bmsy-650dg-2": {
@@ -7336,23 +7042,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 421,
     "file": "img/bandsaw/bk-bmsy-650dg-2-800.webp",
-    "bytes": 22598
+    "bytes": 23472
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 253,
     "file": "img/bandsaw/bk-bmsy-650dg-2-480.webp",
-    "bytes": 10978
+    "bytes": 11108
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 84,
    "file": "img/bandsaw/bk-bmsy-650dg-2-thumb.webp",
-   "bytes": 2352
+   "bytes": 2418
   }
  },
  "bk-bmsy-650dg-3": {
@@ -7360,23 +7066,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 458,
     "file": "img/bandsaw/bk-bmsy-650dg-3-800.webp",
-    "bytes": 23172
+    "bytes": 24992
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 275,
     "file": "img/bandsaw/bk-bmsy-650dg-3-480.webp",
-    "bytes": 11754
+    "bytes": 12548
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 92,
    "file": "img/bandsaw/bk-bmsy-650dg-3-thumb.webp",
-   "bytes": 2550
+   "bytes": 2720
   }
  },
  "bk-bmsy-650dg-4": {
@@ -7384,23 +7090,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 500,
     "file": "img/bandsaw/bk-bmsy-650dg-4-800.webp",
-    "bytes": 21362
+    "bytes": 28042
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 300,
     "file": "img/bandsaw/bk-bmsy-650dg-4-480.webp",
-    "bytes": 10560
+    "bytes": 13712
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 100,
    "file": "img/bandsaw/bk-bmsy-650dg-4-thumb.webp",
-   "bytes": 2208
+   "bytes": 2856
   }
  },
  "bk-bmsy-650dg-5": {
@@ -7408,23 +7114,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 560,
     "file": "img/bandsaw/bk-bmsy-650dg-5-800.webp",
-    "bytes": 22798
+    "bytes": 29024
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 336,
     "file": "img/bandsaw/bk-bmsy-650dg-5-480.webp",
-    "bytes": 11090
+    "bytes": 14006
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 112,
    "file": "img/bandsaw/bk-bmsy-650dg-5-thumb.webp",
-   "bytes": 2216
+   "bytes": 2888
   }
  },
  "bk-bmsy-750dg-1": {
@@ -7552,95 +7258,77 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 544,
     "file": "img/bandsaw/bk-bmso-330c-1-800.webp",
-    "bytes": 24762
+    "bytes": 29370
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 326,
     "file": "img/bandsaw/bk-bmso-330c-1-480.webp",
-    "bytes": 12102
+    "bytes": 14174
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 109,
    "file": "img/bandsaw/bk-bmso-330c-1-thumb.webp",
-   "bytes": 2430
+   "bytes": 2874
   }
  },
  "bk-bmso-330c-2": {
   "alt": "Bekamak BMSO 330C band saw \u2014 photo 2 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 594,
-    "file": "img/bandsaw/bk-bmso-330c-2-800.webp",
-    "bytes": 26902
-   },
-   {
     "w": 480,
-    "h": 357,
+    "h": 441,
     "file": "img/bandsaw/bk-bmso-330c-2-480.webp",
-    "bytes": 13098
+    "bytes": 20350
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 147,
    "file": "img/bandsaw/bk-bmso-330c-2-thumb.webp",
-   "bytes": 2608
+   "bytes": 3992
   }
  },
  "bk-bmso-330c-3": {
   "alt": "Bekamak BMSO 330C band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 594,
-    "file": "img/bandsaw/bk-bmso-330c-3-800.webp",
-    "bytes": 26078
-   },
-   {
     "w": 480,
-    "h": 357,
+    "h": 462,
     "file": "img/bandsaw/bk-bmso-330c-3-480.webp",
-    "bytes": 12748
+    "bytes": 19904
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 154,
    "file": "img/bandsaw/bk-bmso-330c-3-thumb.webp",
-   "bytes": 2496
+   "bytes": 3866
   }
  },
  "bk-bmso-330c-4": {
   "alt": "Bekamak BMSO 330C band saw \u2014 photo 4 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 594,
-    "file": "img/bandsaw/bk-bmso-330c-4-800.webp",
-    "bytes": 26750
-   },
-   {
     "w": 480,
-    "h": 357,
+    "h": 383,
     "file": "img/bandsaw/bk-bmso-330c-4-480.webp",
-    "bytes": 12516
+    "bytes": 20092
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 128,
    "file": "img/bandsaw/bk-bmso-330c-4-thumb.webp",
-   "bytes": 2146
+   "bytes": 3514
   }
  },
  "bk-bmso-460c-1": {
@@ -7648,23 +7336,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 553,
     "file": "img/bandsaw/bk-bmso-460c-1-800.webp",
-    "bytes": 25630
+    "bytes": 27520
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 332,
     "file": "img/bandsaw/bk-bmso-460c-1-480.webp",
-    "bytes": 12862
+    "bytes": 13708
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 111,
    "file": "img/bandsaw/bk-bmso-460c-1-thumb.webp",
-   "bytes": 2870
+   "bytes": 3154
   }
  },
  "bk-bmso-460c-2": {
@@ -7672,23 +7360,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 529,
     "file": "img/bandsaw/bk-bmso-460c-2-800.webp",
-    "bytes": 31418
+    "bytes": 33636
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 318,
     "file": "img/bandsaw/bk-bmso-460c-2-480.webp",
-    "bytes": 14934
+    "bytes": 16066
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 106,
    "file": "img/bandsaw/bk-bmso-460c-2-thumb.webp",
-   "bytes": 2878
+   "bytes": 3094
   }
  },
  "bk-bmso-560c-1": {
@@ -7696,23 +7384,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 538,
     "file": "img/bandsaw/bk-bmso-560c-1-800.webp",
-    "bytes": 20852
+    "bytes": 24382
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 323,
     "file": "img/bandsaw/bk-bmso-560c-1-480.webp",
-    "bytes": 10194
+    "bytes": 11862
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 108,
    "file": "img/bandsaw/bk-bmso-560c-1-thumb.webp",
-   "bytes": 2208
+   "bytes": 2630
   }
  },
  "bk-bmso-560c-2": {
@@ -7720,23 +7408,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 563,
     "file": "img/bandsaw/bk-bmso-560c-2-800.webp",
-    "bytes": 24540
+    "bytes": 25386
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 338,
     "file": "img/bandsaw/bk-bmso-560c-2-480.webp",
-    "bytes": 11670
+    "bytes": 12060
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 113,
    "file": "img/bandsaw/bk-bmso-560c-2-thumb.webp",
-   "bytes": 2424
+   "bytes": 2578
   }
  },
  "bk-bmso-825c-1": {
@@ -7744,23 +7432,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 496,
     "file": "img/bandsaw/bk-bmso-825c-1-800.webp",
-    "bytes": 25870
+    "bytes": 29116
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 298,
     "file": "img/bandsaw/bk-bmso-825c-1-480.webp",
-    "bytes": 12090
+    "bytes": 13686
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 99,
    "file": "img/bandsaw/bk-bmso-825c-1-thumb.webp",
-   "bytes": 2392
+   "bytes": 2634
   }
  },
  "bk-bmso-825c-2": {
@@ -7768,23 +7456,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 475,
     "file": "img/bandsaw/bk-bmso-825c-2-800.webp",
-    "bytes": 19274
+    "bytes": 20558
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 285,
     "file": "img/bandsaw/bk-bmso-825c-2-480.webp",
-    "bytes": 9782
+    "bytes": 10826
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 95,
    "file": "img/bandsaw/bk-bmso-825c-2-thumb.webp",
-   "bytes": 2266
+   "bytes": 2512
   }
  },
  "bk-bmso-330cs-1": {
@@ -7887,72 +7575,54 @@
   "alt": "Bekamak BMSO 420CS band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-420cs-1-800.webp",
-    "bytes": 16068
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 434,
     "file": "img/bandsaw/bk-bmso-420cs-1-480.webp",
-    "bytes": 8016
+    "bytes": 16026
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 145,
    "file": "img/bandsaw/bk-bmso-420cs-1-thumb.webp",
-   "bytes": 1722
+   "bytes": 3514
   }
  },
  "bk-bmso-420cs-2": {
   "alt": "Bekamak BMSO 420CS band saw \u2014 photo 2 of 2",
   "variants": [
    {
-    "w": 800,
-    "h": 530,
-    "file": "img/bandsaw/bk-bmso-420cs-2-800.webp",
-    "bytes": 15774
-   },
-   {
     "w": 480,
-    "h": 318,
+    "h": 356,
     "file": "img/bandsaw/bk-bmso-420cs-2-480.webp",
-    "bytes": 8330
+    "bytes": 12132
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 106,
+   "h": 119,
    "file": "img/bandsaw/bk-bmso-420cs-2-thumb.webp",
-   "bytes": 1806
+   "bytes": 2670
   }
  },
  "bk-bmso-560cs-1": {
   "alt": "Bekamak BMSO 560CS band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-560cs-1-800.webp",
-    "bytes": 16756
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 307,
     "file": "img/bandsaw/bk-bmso-560cs-1-480.webp",
-    "bytes": 8716
+    "bytes": 12142
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 102,
    "file": "img/bandsaw/bk-bmso-560cs-1-thumb.webp",
-   "bytes": 2016
+   "bytes": 2708
   }
  },
  "bk-bmso-560cs-2": {
@@ -7960,71 +7630,59 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 539,
     "file": "img/bandsaw/bk-bmso-560cs-2-800.webp",
-    "bytes": 17766
+    "bytes": 22944
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 323,
     "file": "img/bandsaw/bk-bmso-560cs-2-480.webp",
-    "bytes": 8914
+    "bytes": 11548
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 108,
    "file": "img/bandsaw/bk-bmso-560cs-2-thumb.webp",
-   "bytes": 1760
+   "bytes": 2286
   }
  },
  "bk-bmso-560cs-3": {
   "alt": "Bekamak BMSO 560CS band saw \u2014 photo 3 of 7",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-560cs-3-800.webp",
-    "bytes": 18104
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 364,
     "file": "img/bandsaw/bk-bmso-560cs-3-480.webp",
-    "bytes": 9066
+    "bytes": 14284
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 121,
    "file": "img/bandsaw/bk-bmso-560cs-3-thumb.webp",
-   "bytes": 1898
+   "bytes": 2960
   }
  },
  "bk-bmso-560cs-4": {
   "alt": "Bekamak BMSO 560CS band saw \u2014 photo 4 of 7",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-560cs-4-800.webp",
-    "bytes": 22318
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 407,
     "file": "img/bandsaw/bk-bmso-560cs-4-480.webp",
-    "bytes": 10966
+    "bytes": 18530
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 136,
    "file": "img/bandsaw/bk-bmso-560cs-4-thumb.webp",
-   "bytes": 2122
+   "bytes": 3540
   }
  },
  "bk-bmso-560cs-5": {
@@ -8032,23 +7690,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 610,
     "file": "img/bandsaw/bk-bmso-560cs-5-800.webp",
-    "bytes": 23720
+    "bytes": 30758
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 366,
     "file": "img/bandsaw/bk-bmso-560cs-5-480.webp",
-    "bytes": 11380
+    "bytes": 14924
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 122,
    "file": "img/bandsaw/bk-bmso-560cs-5-thumb.webp",
-   "bytes": 2440
+   "bytes": 2934
   }
  },
  "bk-bmso-560cs-6": {
@@ -8056,23 +7714,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 502,
     "file": "img/bandsaw/bk-bmso-560cs-6-800.webp",
-    "bytes": 28834
+    "bytes": 30184
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 301,
     "file": "img/bandsaw/bk-bmso-560cs-6-480.webp",
-    "bytes": 13000
+    "bytes": 14068
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 100,
    "file": "img/bandsaw/bk-bmso-560cs-6-thumb.webp",
-   "bytes": 2460
+   "bytes": 2570
   }
  },
  "bk-bmso-560cs-7": {
@@ -8080,23 +7738,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 532,
     "file": "img/bandsaw/bk-bmso-560cs-7-800.webp",
-    "bytes": 33404
+    "bytes": 35808
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 319,
     "file": "img/bandsaw/bk-bmso-560cs-7-480.webp",
-    "bytes": 16142
+    "bytes": 17402
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 106,
    "file": "img/bandsaw/bk-bmso-560cs-7-thumb.webp",
-   "bytes": 2946
+   "bytes": 2984
   }
  },
  "bk-bmso-570cs-1": {
@@ -8104,23 +7762,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 519,
     "file": "img/bandsaw/bk-bmso-570cs-1-800.webp",
-    "bytes": 25818
+    "bytes": 27466
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 311,
     "file": "img/bandsaw/bk-bmso-570cs-1-480.webp",
-    "bytes": 12678
+    "bytes": 13548
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 104,
    "file": "img/bandsaw/bk-bmso-570cs-1-thumb.webp",
-   "bytes": 2754
+   "bytes": 2928
   }
  },
  "bk-bmso-570cs-2": {
@@ -8128,47 +7786,41 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 523,
     "file": "img/bandsaw/bk-bmso-570cs-2-800.webp",
-    "bytes": 23532
+    "bytes": 26258
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 314,
     "file": "img/bandsaw/bk-bmso-570cs-2-480.webp",
-    "bytes": 11662
+    "bytes": 13008
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 105,
    "file": "img/bandsaw/bk-bmso-570cs-2-thumb.webp",
-   "bytes": 2526
+   "bytes": 2892
   }
  },
  "bk-bmso-570cs-3": {
   "alt": "Bekamak BMSO 570CS band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 594,
-    "file": "img/bandsaw/bk-bmso-570cs-3-800.webp",
-    "bytes": 28806
-   },
-   {
     "w": 480,
-    "h": 357,
+    "h": 378,
     "file": "img/bandsaw/bk-bmso-570cs-3-480.webp",
-    "bytes": 12528
+    "bytes": 18228
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 126,
    "file": "img/bandsaw/bk-bmso-570cs-3-thumb.webp",
-   "bytes": 2252
+   "bytes": 3198
   }
  },
  "bk-bmso-570cs-4": {
@@ -8176,47 +7828,41 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 631,
     "file": "img/bandsaw/bk-bmso-570cs-4-800.webp",
-    "bytes": 24596
+    "bytes": 33144
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 378,
     "file": "img/bandsaw/bk-bmso-570cs-4-480.webp",
-    "bytes": 11058
+    "bytes": 15030
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 126,
    "file": "img/bandsaw/bk-bmso-570cs-4-thumb.webp",
-   "bytes": 2044
+   "bytes": 2792
   }
  },
  "bk-bmso-820cs-1": {
   "alt": "Bekamak BMSO 820CS band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-820cs-1-800.webp",
-    "bytes": 14690
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 326,
     "file": "img/bandsaw/bk-bmso-820cs-1-480.webp",
-    "bytes": 7570
+    "bytes": 11442
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 109,
    "file": "img/bandsaw/bk-bmso-820cs-1-thumb.webp",
-   "bytes": 1742
+   "bytes": 2656
   }
  },
  "bk-bmso-820cs-2": {
@@ -8224,95 +7870,77 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 531,
     "file": "img/bandsaw/bk-bmso-820cs-2-800.webp",
-    "bytes": 16452
+    "bytes": 23156
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 319,
     "file": "img/bandsaw/bk-bmso-820cs-2-480.webp",
-    "bytes": 8800
+    "bytes": 11632
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 106,
    "file": "img/bandsaw/bk-bmso-820cs-2-thumb.webp",
-   "bytes": 2020
+   "bytes": 2636
   }
  },
  "bk-bmso-820cs-3": {
   "alt": "Bekamak BMSO 820CS band saw \u2014 photo 3 of 7",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-820cs-3-800.webp",
-    "bytes": 16642
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 507,
     "file": "img/bandsaw/bk-bmso-820cs-3-480.webp",
-    "bytes": 8808
+    "bytes": 17150
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
-   "h": 107,
+   "w": 151,
+   "h": 160,
    "file": "img/bandsaw/bk-bmso-820cs-3-thumb.webp",
-   "bytes": 1890
+   "bytes": 3646
   }
  },
  "bk-bmso-820cs-4": {
   "alt": "Bekamak BMSO 820CS band saw \u2014 photo 4 of 7",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-820cs-4-800.webp",
-    "bytes": 16478
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 486,
     "file": "img/bandsaw/bk-bmso-820cs-4-480.webp",
-    "bytes": 8500
+    "bytes": 16604
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
-   "h": 107,
+   "w": 158,
+   "h": 160,
    "file": "img/bandsaw/bk-bmso-820cs-4-thumb.webp",
-   "bytes": 1816
+   "bytes": 3740
   }
  },
  "bk-bmso-820cs-5": {
   "alt": "Bekamak BMSO 820CS band saw \u2014 photo 5 of 7",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-820cs-5-800.webp",
-    "bytes": 15358
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 409,
     "file": "img/bandsaw/bk-bmso-820cs-5-480.webp",
-    "bytes": 7590
+    "bytes": 12044
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 136,
    "file": "img/bandsaw/bk-bmso-820cs-5-thumb.webp",
-   "bytes": 1480
+   "bytes": 2438
   }
  },
  "bk-bmso-820cs-6": {
@@ -8320,23 +7948,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 508,
     "file": "img/bandsaw/bk-bmso-820cs-6-800.webp",
-    "bytes": 28260
+    "bytes": 28836
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 305,
     "file": "img/bandsaw/bk-bmso-820cs-6-480.webp",
-    "bytes": 14312
+    "bytes": 14370
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 102,
    "file": "img/bandsaw/bk-bmso-820cs-6-thumb.webp",
-   "bytes": 2886
+   "bytes": 2910
   }
  },
  "bk-bmso-820cs-7": {
@@ -8440,23 +8068,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 542,
     "file": "img/bandsaw/bk-bmso-325cgs-1-800.webp",
-    "bytes": 25714
+    "bytes": 33530
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 325,
     "file": "img/bandsaw/bk-bmso-325cgs-1-480.webp",
-    "bytes": 12212
+    "bytes": 15844
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 108,
    "file": "img/bandsaw/bk-bmso-325cgs-1-thumb.webp",
-   "bytes": 2174
+   "bytes": 2850
   }
  },
  "bk-bmso-325cgs-2": {
@@ -8464,23 +8092,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 587,
     "file": "img/bandsaw/bk-bmso-325cgs-2-800.webp",
-    "bytes": 26886
+    "bytes": 29164
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 352,
     "file": "img/bandsaw/bk-bmso-325cgs-2-480.webp",
-    "bytes": 13142
+    "bytes": 14580
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 117,
    "file": "img/bandsaw/bk-bmso-325cgs-2-thumb.webp",
-   "bytes": 2736
+   "bytes": 2926
   }
  },
  "bk-bmso-325cgs-3": {
@@ -8488,23 +8116,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 545,
     "file": "img/bandsaw/bk-bmso-325cgs-3-800.webp",
-    "bytes": 31384
+    "bytes": 35130
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 327,
     "file": "img/bandsaw/bk-bmso-325cgs-3-480.webp",
-    "bytes": 14684
+    "bytes": 16802
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 109,
    "file": "img/bandsaw/bk-bmso-325cgs-3-thumb.webp",
-   "bytes": 2600
+   "bytes": 3012
   }
  },
  "bk-bmso-325cgs-4": {
@@ -8512,23 +8140,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 540,
     "file": "img/bandsaw/bk-bmso-325cgs-4-800.webp",
-    "bytes": 21260
+    "bytes": 26614
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 324,
     "file": "img/bandsaw/bk-bmso-325cgs-4-480.webp",
-    "bytes": 10408
+    "bytes": 13254
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 108,
    "file": "img/bandsaw/bk-bmso-325cgs-4-thumb.webp",
-   "bytes": 1948
+   "bytes": 2498
   }
  },
  "bk-bmso-440cgs-1": {
@@ -8608,23 +8236,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 518,
     "file": "img/bandsaw/bk-bmso-540cgs-1-800.webp",
-    "bytes": 18718
+    "bytes": 19206
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 311,
     "file": "img/bandsaw/bk-bmso-540cgs-1-480.webp",
-    "bytes": 11096
+    "bytes": 11538
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 104,
    "file": "img/bandsaw/bk-bmso-540cgs-1-thumb.webp",
-   "bytes": 2426
+   "bytes": 2524
   }
  },
  "bk-bmso-540cgs-2": {
@@ -8632,23 +8260,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 508,
     "file": "img/bandsaw/bk-bmso-540cgs-2-800.webp",
-    "bytes": 27566
+    "bytes": 29226
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 305,
     "file": "img/bandsaw/bk-bmso-540cgs-2-480.webp",
-    "bytes": 13220
+    "bytes": 13944
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 102,
    "file": "img/bandsaw/bk-bmso-540cgs-2-thumb.webp",
-   "bytes": 2764
+   "bytes": 3028
   }
  },
  "bk-bmso-540cgs-3": {
@@ -8656,23 +8284,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 532,
     "file": "img/bandsaw/bk-bmso-540cgs-3-800.webp",
-    "bytes": 29834
+    "bytes": 31104
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 319,
     "file": "img/bandsaw/bk-bmso-540cgs-3-480.webp",
-    "bytes": 14276
+    "bytes": 14782
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 106,
    "file": "img/bandsaw/bk-bmso-540cgs-3-thumb.webp",
-   "bytes": 2738
+   "bytes": 2822
   }
  },
  "bk-bmso-540cgs-4": {
@@ -8680,23 +8308,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 557,
     "file": "img/bandsaw/bk-bmso-540cgs-4-800.webp",
-    "bytes": 27904
+    "bytes": 29186
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 334,
     "file": "img/bandsaw/bk-bmso-540cgs-4-480.webp",
-    "bytes": 13124
+    "bytes": 13916
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 111,
    "file": "img/bandsaw/bk-bmso-540cgs-4-thumb.webp",
-   "bytes": 2796
+   "bytes": 2998
   }
  },
  "bk-bmso-540cgs-5": {
@@ -8704,23 +8332,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 563,
     "file": "img/bandsaw/bk-bmso-540cgs-5-800.webp",
-    "bytes": 24454
+    "bytes": 25356
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 338,
     "file": "img/bandsaw/bk-bmso-540cgs-5-480.webp",
-    "bytes": 12488
+    "bytes": 13182
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 113,
    "file": "img/bandsaw/bk-bmso-540cgs-5-thumb.webp",
-   "bytes": 2504
+   "bytes": 2652
   }
  },
  "bk-bmso-440cdgs-1": {
@@ -8800,23 +8428,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 484,
     "file": "img/bandsaw/bk-bmso-335xs-1-800.webp",
-    "bytes": 27292
+    "bytes": 27290
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 290,
     "file": "img/bandsaw/bk-bmso-335xs-1-480.webp",
-    "bytes": 13404
+    "bytes": 13466
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 97,
    "file": "img/bandsaw/bk-bmso-335xs-1-thumb.webp",
-   "bytes": 2362
+   "bytes": 2354
   }
  },
  "bk-bmso-335xs-2": {
@@ -8896,71 +8524,59 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 527,
     "file": "img/bandsaw/bk-bmso-420xs-1-800.webp",
-    "bytes": 11804
+    "bytes": 14070
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 316,
     "file": "img/bandsaw/bk-bmso-420xs-1-480.webp",
-    "bytes": 5890
+    "bytes": 7222
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 105,
    "file": "img/bandsaw/bk-bmso-420xs-1-thumb.webp",
-   "bytes": 1452
+   "bytes": 1700
   }
  },
  "bk-bmso-420xs-2": {
   "alt": "Bekamak BMSO 420XS band saw \u2014 photo 2 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-420xs-2-800.webp",
-    "bytes": 13534
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 347,
     "file": "img/bandsaw/bk-bmso-420xs-2-480.webp",
-    "bytes": 7050
+    "bytes": 10604
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 116,
    "file": "img/bandsaw/bk-bmso-420xs-2-thumb.webp",
-   "bytes": 1576
+   "bytes": 2406
   }
  },
  "bk-bmso-420xs-3": {
   "alt": "Bekamak BMSO 420XS band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-420xs-3-800.webp",
-    "bytes": 14476
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 350,
     "file": "img/bandsaw/bk-bmso-420xs-3-480.webp",
-    "bytes": 7456
+    "bytes": 10474
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 117,
    "file": "img/bandsaw/bk-bmso-420xs-3-thumb.webp",
-   "bytes": 1604
+   "bytes": 2206
   }
  },
  "bk-bmso-420xs-4": {
@@ -8968,23 +8584,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 580,
     "file": "img/bandsaw/bk-bmso-420xs-4-800.webp",
-    "bytes": 11364
+    "bytes": 14962
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 348,
     "file": "img/bandsaw/bk-bmso-420xs-4-480.webp",
-    "bytes": 6096
+    "bytes": 7728
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 116,
    "file": "img/bandsaw/bk-bmso-420xs-4-thumb.webp",
-   "bytes": 1398
+   "bytes": 1722
   }
  },
  "bk-bmso-570xs-1": {
@@ -8992,23 +8608,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 566,
+    "h": 500,
     "file": "img/bandsaw/bk-bmso-570xs-1-800.webp",
-    "bytes": 13924
+    "bytes": 18574
    },
    {
     "w": 480,
-    "h": 339,
+    "h": 300,
     "file": "img/bandsaw/bk-bmso-570xs-1-480.webp",
-    "bytes": 7012
+    "bytes": 9092
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 113,
+   "h": 100,
    "file": "img/bandsaw/bk-bmso-570xs-1-thumb.webp",
-   "bytes": 1688
+   "bytes": 2066
   }
  },
  "bk-bmso-570xs-2": {
@@ -9016,71 +8632,59 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 553,
     "file": "img/bandsaw/bk-bmso-570xs-2-800.webp",
-    "bytes": 16638
+    "bytes": 20822
    },
    {
     "w": 480,
-    "h": 321,
+    "h": 332,
     "file": "img/bandsaw/bk-bmso-570xs-2-480.webp",
-    "bytes": 8466
+    "bytes": 10564
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 111,
    "file": "img/bandsaw/bk-bmso-570xs-2-thumb.webp",
-   "bytes": 1946
+   "bytes": 2334
   }
  },
  "bk-bmso-570xs-3": {
   "alt": "Bekamak BMSO 570XS band saw \u2014 photo 3 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-570xs-3-800.webp",
-    "bytes": 11232
-   },
-   {
     "w": 480,
-    "h": 321,
+    "h": 344,
     "file": "img/bandsaw/bk-bmso-570xs-3-480.webp",
-    "bytes": 5668
+    "bytes": 8296
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 115,
    "file": "img/bandsaw/bk-bmso-570xs-3-thumb.webp",
-   "bytes": 1240
+   "bytes": 1750
   }
  },
  "bk-bmso-570xs-4": {
   "alt": "Bekamak BMSO 570XS band saw \u2014 photo 4 of 4",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-570xs-4-800.webp",
-    "bytes": 15696
-   },
-   {
     "w": 480,
-    "h": 321,
+    "h": 415,
     "file": "img/bandsaw/bk-bmso-570xs-4-480.webp",
-    "bytes": 7776
+    "bytes": 11632
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 138,
    "file": "img/bandsaw/bk-bmso-570xs-4-thumb.webp",
-   "bytes": 1924
+   "bytes": 2676
   }
  },
  "bk-bmso-660xs-1": {
@@ -9088,23 +8692,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 402,
     "file": "img/bandsaw/bk-bmso-660xs-1-800.webp",
-    "bytes": 15090
+    "bytes": 15416
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 241,
     "file": "img/bandsaw/bk-bmso-660xs-1-480.webp",
-    "bytes": 7810
+    "bytes": 8226
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 80,
    "file": "img/bandsaw/bk-bmso-660xs-1-thumb.webp",
-   "bytes": 1812
+   "bytes": 1836
   }
  },
  "bk-bmso-660xs-2": {
@@ -9112,71 +8716,59 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 408,
     "file": "img/bandsaw/bk-bmso-660xs-2-800.webp",
-    "bytes": 15016
+    "bytes": 15436
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 245,
     "file": "img/bandsaw/bk-bmso-660xs-2-480.webp",
-    "bytes": 7836
+    "bytes": 8260
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 82,
    "file": "img/bandsaw/bk-bmso-660xs-2-thumb.webp",
-   "bytes": 1802
+   "bytes": 1888
   }
  },
  "bk-bmso-660xs-3": {
   "alt": "Bekamak BMSO 660XS band saw \u2014 photo 3 of 6",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-660xs-3-800.webp",
-    "bytes": 16158
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 351,
     "file": "img/bandsaw/bk-bmso-660xs-3-480.webp",
-    "bytes": 8234
+    "bytes": 12262
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 117,
    "file": "img/bandsaw/bk-bmso-660xs-3-thumb.webp",
-   "bytes": 1844
+   "bytes": 2672
   }
  },
  "bk-bmso-660xs-4": {
   "alt": "Bekamak BMSO 660XS band saw \u2014 photo 4 of 6",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-660xs-4-800.webp",
-    "bytes": 15834
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 354,
     "file": "img/bandsaw/bk-bmso-660xs-4-480.webp",
-    "bytes": 8064
+    "bytes": 12068
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 118,
    "file": "img/bandsaw/bk-bmso-660xs-4-thumb.webp",
-   "bytes": 1792
+   "bytes": 2726
   }
  },
  "bk-bmso-660xs-5": {
@@ -9184,23 +8776,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 524,
     "file": "img/bandsaw/bk-bmso-660xs-5-800.webp",
-    "bytes": 31064
+    "bytes": 31640
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 315,
     "file": "img/bandsaw/bk-bmso-660xs-5-480.webp",
-    "bytes": 15614
+    "bytes": 15626
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 105,
    "file": "img/bandsaw/bk-bmso-660xs-5-thumb.webp",
-   "bytes": 2946
+   "bytes": 2864
   }
  },
  "bk-bmso-660xs-6": {
@@ -9208,47 +8800,41 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 420,
     "file": "img/bandsaw/bk-bmso-660xs-6-800.webp",
-    "bytes": 15622
+    "bytes": 16880
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 252,
     "file": "img/bandsaw/bk-bmso-660xs-6-480.webp",
-    "bytes": 7904
+    "bytes": 8716
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 84,
    "file": "img/bandsaw/bk-bmso-660xs-6-thumb.webp",
-   "bytes": 1678
+   "bytes": 1916
   }
  },
  "bk-bmso-825xs-1": {
   "alt": "Bekamak BMSO 825XS band saw",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-825xs-1-800.webp",
-    "bytes": 14290
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 345,
     "file": "img/bandsaw/bk-bmso-825xs-1-480.webp",
-    "bytes": 7438
+    "bytes": 11410
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 115,
    "file": "img/bandsaw/bk-bmso-825xs-1-thumb.webp",
-   "bytes": 1654
+   "bytes": 2450
   }
  },
  "bk-bmso-825xs-2": {
@@ -9286,71 +8872,59 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 572,
     "file": "img/bandsaw/bk-bmso-825xs-3-800.webp",
-    "bytes": 19376
+    "bytes": 22218
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 343,
     "file": "img/bandsaw/bk-bmso-825xs-3-480.webp",
-    "bytes": 10238
+    "bytes": 11610
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 114,
    "file": "img/bandsaw/bk-bmso-825xs-3-thumb.webp",
-   "bytes": 2302
+   "bytes": 2652
   }
  },
  "bk-bmso-825xs-4": {
   "alt": "Bekamak BMSO 825XS band saw \u2014 photo 4 of 5",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-825xs-4-800.webp",
-    "bytes": 17578
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 412,
     "file": "img/bandsaw/bk-bmso-825xs-4-480.webp",
-    "bytes": 9108
+    "bytes": 15506
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 137,
    "file": "img/bandsaw/bk-bmso-825xs-4-thumb.webp",
-   "bytes": 1982
+   "bytes": 3458
   }
  },
  "bk-bmso-825xs-5": {
   "alt": "Bekamak BMSO 825XS band saw \u2014 photo 5 of 5",
   "variants": [
    {
-    "w": 800,
-    "h": 534,
-    "file": "img/bandsaw/bk-bmso-825xs-5-800.webp",
-    "bytes": 18298
-   },
-   {
     "w": 480,
-    "h": 320,
+    "h": 415,
     "file": "img/bandsaw/bk-bmso-825xs-5-480.webp",
-    "bytes": 9452
+    "bytes": 16228
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 138,
    "file": "img/bandsaw/bk-bmso-825xs-5-thumb.webp",
-   "bytes": 2044
+   "bytes": 3610
   }
  },
  "bk-bmsy-1110c-1": {
@@ -9454,23 +9028,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 496,
     "file": "img/bandsaw/bk-bmsy-1113c-1-800.webp",
-    "bytes": 18626
+    "bytes": 20266
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 298,
     "file": "img/bandsaw/bk-bmsy-1113c-1-480.webp",
-    "bytes": 9474
+    "bytes": 10300
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 99,
    "file": "img/bandsaw/bk-bmsy-1113c-1-thumb.webp",
-   "bytes": 2102
+   "bytes": 2238
   }
  },
  "bk-bmsy-1113c-2": {
@@ -9478,23 +9052,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 593,
+    "h": 490,
     "file": "img/bandsaw/bk-bmsy-1113c-2-800.webp",
-    "bytes": 22302
+    "bytes": 23878
    },
    {
     "w": 480,
-    "h": 356,
+    "h": 294,
     "file": "img/bandsaw/bk-bmsy-1113c-2-480.webp",
-    "bytes": 10720
+    "bytes": 11148
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 98,
    "file": "img/bandsaw/bk-bmsy-1113c-2-thumb.webp",
-   "bytes": 2096
+   "bytes": 2086
   }
  },
  "bk-bmsy-1122c-1": {
@@ -9502,23 +9076,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 398,
     "file": "img/bandsaw/bk-bmsy-1122c-1-800.webp",
-    "bytes": 23176
+    "bytes": 23470
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 239,
     "file": "img/bandsaw/bk-bmsy-1122c-1-480.webp",
-    "bytes": 11622
+    "bytes": 11670
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 80,
    "file": "img/bandsaw/bk-bmsy-1122c-1-thumb.webp",
-   "bytes": 2396
+   "bytes": 2530
   }
  },
  "bk-bmsy-1122c-2": {
@@ -9574,23 +9148,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 451,
     "file": "img/bandsaw/bk-bmsy-1122c-4-800.webp",
-    "bytes": 25668
+    "bytes": 26550
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 271,
     "file": "img/bandsaw/bk-bmsy-1122c-4-480.webp",
-    "bytes": 13236
+    "bytes": 13508
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 90,
    "file": "img/bandsaw/bk-bmsy-1122c-4-thumb.webp",
-   "bytes": 2722
+   "bytes": 2782
   }
  },
  "bk-bmsy-1122c-5": {
@@ -9622,23 +9196,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 531,
     "file": "img/bandsaw/bk-bmsy-1313c-1-800.webp",
-    "bytes": 22114
+    "bytes": 22682
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 318,
     "file": "img/bandsaw/bk-bmsy-1313c-1-480.webp",
-    "bytes": 11020
+    "bytes": 11046
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 106,
    "file": "img/bandsaw/bk-bmsy-1313c-1-thumb.webp",
-   "bytes": 2358
+   "bytes": 2494
   }
  },
  "bk-bmsy-1313c-2": {
@@ -9646,23 +9220,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 539,
     "file": "img/bandsaw/bk-bmsy-1313c-2-800.webp",
-    "bytes": 25918
+    "bytes": 29136
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 323,
     "file": "img/bandsaw/bk-bmsy-1313c-2-480.webp",
-    "bytes": 11794
+    "bytes": 13512
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 108,
    "file": "img/bandsaw/bk-bmsy-1313c-2-thumb.webp",
-   "bytes": 2100
+   "bytes": 2450
   }
  },
  "bk-bmsy-1515c-1": {
@@ -9670,15 +9244,15 @@
   "variants": [
    {
     "w": 800,
-    "h": 539,
+    "h": 540,
     "file": "img/bandsaw/bk-bmsy-1515c-1-800.webp",
-    "bytes": 29764
+    "bytes": 31494
    },
    {
     "w": 480,
-    "h": 323,
+    "h": 324,
     "file": "img/bandsaw/bk-bmsy-1515c-1-480.webp",
-    "bytes": 13692
+    "bytes": 14292
    }
   ],
   "alpha": false,
@@ -9686,7 +9260,7 @@
    "w": 160,
    "h": 108,
    "file": "img/bandsaw/bk-bmsy-1515c-1-thumb.webp",
-   "bytes": 2734
+   "bytes": 2758
   }
  },
  "bk-bmsy-1515c-2": {
@@ -9694,23 +9268,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 447,
     "file": "img/bandsaw/bk-bmsy-1515c-2-800.webp",
-    "bytes": 25674
+    "bytes": 29152
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 268,
     "file": "img/bandsaw/bk-bmsy-1515c-2-480.webp",
-    "bytes": 14268
+    "bytes": 16388
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 89,
    "file": "img/bandsaw/bk-bmsy-1515c-2-thumb.webp",
-   "bytes": 2848
+   "bytes": 3332
   }
  },
  "bk-bmsy-1515c-3": {
@@ -9718,23 +9292,41 @@
   "variants": [
    {
     "w": 800,
-    "h": 594,
+    "h": 498,
     "file": "img/bandsaw/bk-bmsy-1515c-3-800.webp",
-    "bytes": 23634
+    "bytes": 23326
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 299,
     "file": "img/bandsaw/bk-bmsy-1515c-3-480.webp",
-    "bytes": 11672
+    "bytes": 11484
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 100,
    "file": "img/bandsaw/bk-bmsy-1515c-3-thumb.webp",
-   "bytes": 2478
+   "bytes": 2512
+  }
+ },
+ "bekamak-logo": {
+  "alt": "Bekamak",
+  "variants": [
+   {
+    "w": 354,
+    "h": 59,
+    "file": "img/site/bekamak-logo-354.webp",
+    "bytes": 2970
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 27,
+   "file": "img/site/bekamak-logo-thumb.webp",
+   "bytes": 2192
   }
  },
  "guide-metal-cutting-band-saw-22": {
@@ -10638,45 +10230,51 @@
   }
  },
  "bk-hero-auto": {
-  "alt": "Bekamak BMSO 320GS automatic servo-feed miter band saw",
+  "alt": "Bekamak BMSO 350GA automatic miter band saw",
   "variants": [
    {
     "w": 800,
-    "h": 566,
+    "h": 685,
     "file": "img/bandsaw/bk-hero-auto-800.webp",
-    "bytes": 59264
+    "bytes": 75926
    },
    {
     "w": 480,
-    "h": 340,
+    "h": 411,
     "file": "img/bandsaw/bk-hero-auto-480.webp",
-    "bytes": 29546
+    "bytes": 37468
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 113,
+   "h": 137,
    "file": "img/bandsaw/bk-hero-auto-thumb.webp",
-   "bytes": 6448
+   "bytes": 8456
   }
  },
  "bk-hero-dc": {
-  "alt": "Bekamak BMSO 560CS fully automatic double-column band saw",
+  "alt": "Bekamak BMSO 570CS fully automatic double-column band saw",
   "variants": [
    {
+    "w": 800,
+    "h": 507,
+    "file": "img/bandsaw/bk-hero-dc-800.webp",
+    "bytes": 50594
+   },
+   {
     "w": 480,
-    "h": 442,
+    "h": 304,
     "file": "img/bandsaw/bk-hero-dc-480.webp",
-    "bytes": 37766
+    "bytes": 26078
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 147,
+   "h": 101,
    "file": "img/bandsaw/bk-hero-dc-thumb.webp",
-   "bytes": 7666
+   "bytes": 6048
   }
  },
  "bk-hero-hub": {
@@ -11963,19 +11561,19 @@
    "bytes": 6834
   }
  },
- "nf-m10-1": {
-  "alt": "NovoFab NF-M 10 manual pivot band saw, 10-inch",
+ "nt-m10-1": {
+  "alt": "NovoTech NT-M 10 manual pivot band saw, 10-inch",
   "variants": [
    {
     "w": 800,
     "h": 675,
-    "file": "img/bandsaw/nf-m10-1-800.webp",
+    "file": "img/bandsaw/nt-m10-1-800.webp",
     "bytes": 30706
    },
    {
     "w": 480,
     "h": 405,
-    "file": "img/bandsaw/nf-m10-1-480.webp",
+    "file": "img/bandsaw/nt-m10-1-480.webp",
     "bytes": 18578
    }
   ],
@@ -11983,23 +11581,23 @@
   "thumb": {
    "w": 160,
    "h": 135,
-   "file": "img/bandsaw/nf-m10-1-thumb.webp",
+   "file": "img/bandsaw/nt-m10-1-thumb.webp",
    "bytes": 4006
   }
  },
- "nf-m10s-1": {
-  "alt": "NovoFab NF-M 10 S manual band saw with swivel bow",
+ "nt-m10s-1": {
+  "alt": "NovoTech NT-M 10 S manual band saw with swivel bow",
   "variants": [
    {
     "w": 800,
     "h": 701,
-    "file": "img/bandsaw/nf-m10s-1-800.webp",
+    "file": "img/bandsaw/nt-m10s-1-800.webp",
     "bytes": 30052
    },
    {
     "w": 480,
     "h": 420,
-    "file": "img/bandsaw/nf-m10s-1-480.webp",
+    "file": "img/bandsaw/nt-m10s-1-480.webp",
     "bytes": 18078
    }
   ],
@@ -12007,23 +11605,23 @@
   "thumb": {
    "w": 160,
    "h": 140,
-   "file": "img/bandsaw/nf-m10s-1-thumb.webp",
+   "file": "img/bandsaw/nt-m10s-1-thumb.webp",
    "bytes": 4060
   }
  },
- "nf-m10d-1": {
-  "alt": "NovoFab NF-M 10 D manual band saw with hydraulic down-feed control",
+ "nt-m10d-1": {
+  "alt": "NovoTech NT-M 10 D manual band saw with hydraulic down-feed control",
   "variants": [
    {
     "w": 800,
     "h": 571,
-    "file": "img/bandsaw/nf-m10d-1-800.webp",
+    "file": "img/bandsaw/nt-m10d-1-800.webp",
     "bytes": 27642
    },
    {
     "w": 480,
     "h": 343,
-    "file": "img/bandsaw/nf-m10d-1-480.webp",
+    "file": "img/bandsaw/nt-m10d-1-480.webp",
     "bytes": 16170
    }
   ],
@@ -12031,23 +11629,23 @@
   "thumb": {
    "w": 160,
    "h": 114,
-   "file": "img/bandsaw/nf-m10d-1-thumb.webp",
+   "file": "img/bandsaw/nt-m10d-1-thumb.webp",
    "bytes": 3448
   }
  },
- "nf-m10t-1": {
-  "alt": "NovoFab NF-M 10 T twin-mitre manual band saw",
+ "nt-m10t-1": {
+  "alt": "NovoTech NT-M 10 T twin-mitre manual band saw",
   "variants": [
    {
     "w": 800,
     "h": 595,
-    "file": "img/bandsaw/nf-m10t-1-800.webp",
+    "file": "img/bandsaw/nt-m10t-1-800.webp",
     "bytes": 28266
    },
    {
     "w": 480,
     "h": 357,
-    "file": "img/bandsaw/nf-m10t-1-480.webp",
+    "file": "img/bandsaw/nt-m10t-1-480.webp",
     "bytes": 16842
    }
   ],
@@ -12055,23 +11653,23 @@
   "thumb": {
    "w": 160,
    "h": 119,
-   "file": "img/bandsaw/nf-m10t-1-thumb.webp",
+   "file": "img/bandsaw/nt-m10t-1-thumb.webp",
    "bytes": 3580
   }
  },
- "nf-m16-1": {
-  "alt": "NovoFab NF-M 16 manual band saw, 15-3/4-inch",
+ "nt-m16-1": {
+  "alt": "NovoTech NT-M 16 manual band saw, 15-3/4-inch",
   "variants": [
    {
     "w": 800,
     "h": 615,
-    "file": "img/bandsaw/nf-m16-1-800.webp",
+    "file": "img/bandsaw/nt-m16-1-800.webp",
     "bytes": 34240
    },
    {
     "w": 480,
     "h": 369,
-    "file": "img/bandsaw/nf-m16-1-480.webp",
+    "file": "img/bandsaw/nt-m16-1-480.webp",
     "bytes": 20504
    }
   ],
@@ -12079,23 +11677,23 @@
   "thumb": {
    "w": 160,
    "h": 123,
-   "file": "img/bandsaw/nf-m16-1-thumb.webp",
+   "file": "img/bandsaw/nt-m16-1-thumb.webp",
    "bytes": 4408
   }
  },
- "nf-h10s-1": {
-  "alt": "NovoFab NF-H 10 S hydraulic semi-automatic band saw",
+ "nt-h10s-1": {
+  "alt": "NovoTech NT-H 10 S hydraulic semi-automatic band saw",
   "variants": [
    {
     "w": 800,
     "h": 741,
-    "file": "img/bandsaw/nf-h10s-1-800.webp",
+    "file": "img/bandsaw/nt-h10s-1-800.webp",
     "bytes": 37492
    },
    {
     "w": 480,
     "h": 444,
-    "file": "img/bandsaw/nf-h10s-1-480.webp",
+    "file": "img/bandsaw/nt-h10s-1-480.webp",
     "bytes": 21990
    }
   ],
@@ -12103,23 +11701,23 @@
   "thumb": {
    "w": 160,
    "h": 148,
-   "file": "img/bandsaw/nf-h10s-1-thumb.webp",
+   "file": "img/bandsaw/nt-h10s-1-thumb.webp",
    "bytes": 4708
   }
  },
- "nf-h10t-1": {
-  "alt": "NovoFab NF-H 10 T hydraulic twin-mitre band saw",
+ "nt-h10t-1": {
+  "alt": "NovoTech NT-H 10 T hydraulic twin-mitre band saw",
   "variants": [
    {
     "w": 800,
     "h": 527,
-    "file": "img/bandsaw/nf-h10t-1-800.webp",
+    "file": "img/bandsaw/nt-h10t-1-800.webp",
     "bytes": 28284
    },
    {
     "w": 480,
     "h": 316,
-    "file": "img/bandsaw/nf-h10t-1-480.webp",
+    "file": "img/bandsaw/nt-h10t-1-480.webp",
     "bytes": 16356
    }
   ],
@@ -12127,23 +11725,23 @@
   "thumb": {
    "w": 160,
    "h": 105,
-   "file": "img/bandsaw/nf-h10t-1-thumb.webp",
+   "file": "img/bandsaw/nt-h10t-1-thumb.webp",
    "bytes": 3308
   }
  },
- "nf-h13-1": {
-  "alt": "NovoFab NF-H 13 twin-mitre hydraulic band saw, 13-inch",
+ "nt-h13-1": {
+  "alt": "NovoTech NT-H 13 twin-mitre hydraulic band saw, 13-inch",
   "variants": [
    {
     "w": 800,
     "h": 819,
-    "file": "img/bandsaw/nf-h13-1-800.webp",
+    "file": "img/bandsaw/nt-h13-1-800.webp",
     "bytes": 41560
    },
    {
     "w": 480,
     "h": 492,
-    "file": "img/bandsaw/nf-h13-1-480.webp",
+    "file": "img/bandsaw/nt-h13-1-480.webp",
     "bytes": 23472
    }
   ],
@@ -12151,29 +11749,29 @@
   "thumb": {
    "w": 156,
    "h": 160,
-   "file": "img/bandsaw/nf-h13-1-thumb.webp",
+   "file": "img/bandsaw/nt-h13-1-thumb.webp",
    "bytes": 4292
   }
  },
- "nf-h13c-1": {
-  "alt": "NovoFab NF-H 13 C hydraulic band saw with movable control panel",
+ "nt-h13c-1": {
+  "alt": "NovoTech NT-H 13 C hydraulic band saw with movable control panel",
   "variants": [
    {
     "w": 1200,
     "h": 889,
-    "file": "img/bandsaw/nf-h13c-1-1200.webp",
+    "file": "img/bandsaw/nt-h13c-1-1200.webp",
     "bytes": 55534
    },
    {
     "w": 800,
     "h": 593,
-    "file": "img/bandsaw/nf-h13c-1-800.webp",
+    "file": "img/bandsaw/nt-h13c-1-800.webp",
     "bytes": 32914
    },
    {
     "w": 480,
     "h": 356,
-    "file": "img/bandsaw/nf-h13c-1-480.webp",
+    "file": "img/bandsaw/nt-h13c-1-480.webp",
     "bytes": 16650
    }
   ],
@@ -12181,23 +11779,23 @@
   "thumb": {
    "w": 160,
    "h": 119,
-   "file": "img/bandsaw/nf-h13c-1-thumb.webp",
+   "file": "img/bandsaw/nt-h13c-1-thumb.webp",
    "bytes": 3352
   }
  },
- "nf-h16-1": {
-  "alt": "NovoFab NF-H 16 hydraulic band saw, 15-3/4-inch",
+ "nt-h16-1": {
+  "alt": "NovoTech NT-H 16 hydraulic band saw, 15-3/4-inch",
   "variants": [
    {
     "w": 800,
     "h": 590,
-    "file": "img/bandsaw/nf-h16-1-800.webp",
+    "file": "img/bandsaw/nt-h16-1-800.webp",
     "bytes": 33512
    },
    {
     "w": 480,
     "h": 354,
-    "file": "img/bandsaw/nf-h16-1-480.webp",
+    "file": "img/bandsaw/nt-h16-1-480.webp",
     "bytes": 19788
    }
   ],
@@ -12205,23 +11803,23 @@
   "thumb": {
    "w": 160,
    "h": 118,
-   "file": "img/bandsaw/nf-h16-1-thumb.webp",
+   "file": "img/bandsaw/nt-h16-1-thumb.webp",
    "bytes": 4108
   }
  },
- "nf-h12sc-1": {
-  "alt": "NovoFab NF-H 12 SC single-column band saw with touch screen",
+ "nt-h12sc-1": {
+  "alt": "NovoTech NT-H 12 SC single-column band saw with touch screen",
   "variants": [
    {
     "w": 800,
     "h": 783,
-    "file": "img/bandsaw/nf-h12sc-1-800.webp",
+    "file": "img/bandsaw/nt-h12sc-1-800.webp",
     "bytes": 31432
    },
    {
     "w": 480,
     "h": 470,
-    "file": "img/bandsaw/nf-h12sc-1-480.webp",
+    "file": "img/bandsaw/nt-h12sc-1-480.webp",
     "bytes": 18308
    }
   ],
@@ -12229,17 +11827,17 @@
   "thumb": {
    "w": 160,
    "h": 157,
-   "file": "img/bandsaw/nf-h12sc-1-thumb.webp",
+   "file": "img/bandsaw/nt-h12sc-1-thumb.webp",
    "bytes": 4164
   }
  },
- "nf-h12sc-2": {
-  "alt": "NF-H 12 SC \u2014 hydraulic jaw clamping vise",
+ "nt-h12sc-2": {
+  "alt": "NT-H 12 SC \u2014 hydraulic jaw clamping vise",
   "variants": [
    {
     "w": 480,
     "h": 383,
-    "file": "img/bandsaw/nf-h12sc-2-480.webp",
+    "file": "img/bandsaw/nt-h12sc-2-480.webp",
     "bytes": 15112
    }
   ],
@@ -12247,17 +11845,17 @@
   "thumb": {
    "w": 160,
    "h": 128,
-   "file": "img/bandsaw/nf-h12sc-2-thumb.webp",
+   "file": "img/bandsaw/nt-h12sc-2-thumb.webp",
    "bytes": 3892
   }
  },
- "nf-h12sc-3": {
-  "alt": "NF-H 12 SC \u2014 PLC with finger-touch screen",
+ "nt-h12sc-3": {
+  "alt": "NT-H 12 SC \u2014 PLC with finger-touch screen",
   "variants": [
    {
     "w": 480,
     "h": 343,
-    "file": "img/bandsaw/nf-h12sc-3-480.webp",
+    "file": "img/bandsaw/nt-h12sc-3-480.webp",
     "bytes": 11078
    }
   ],
@@ -12265,17 +11863,17 @@
   "thumb": {
    "w": 160,
    "h": 114,
-   "file": "img/bandsaw/nf-h12sc-3-thumb.webp",
+   "file": "img/bandsaw/nt-h12sc-3-thumb.webp",
    "bytes": 2886
   }
  },
- "nf-h12sc-4": {
-  "alt": "NF-H 12 SC \u2014 chip box and coolant tank",
+ "nt-h12sc-4": {
+  "alt": "NT-H 12 SC \u2014 chip box and coolant tank",
   "variants": [
    {
     "w": 480,
     "h": 351,
-    "file": "img/bandsaw/nf-h12sc-4-480.webp",
+    "file": "img/bandsaw/nt-h12sc-4-480.webp",
     "bytes": 5526
    }
   ],
@@ -12283,29 +11881,29 @@
   "thumb": {
    "w": 160,
    "h": 117,
-   "file": "img/bandsaw/nf-h12sc-4-thumb.webp",
+   "file": "img/bandsaw/nt-h12sc-4-thumb.webp",
    "bytes": 1576
   }
  },
- "nf-h18-1": {
-  "alt": "NovoFab NF-H 18 swivel-head band saw, 18-inch",
+ "nt-h18-1": {
+  "alt": "NovoTech NT-H 18 swivel-head band saw, 18-inch",
   "variants": [
    {
     "w": 1200,
     "h": 959,
-    "file": "img/bandsaw/nf-h18-1-1200.webp",
+    "file": "img/bandsaw/nt-h18-1-1200.webp",
     "bytes": 67644
    },
    {
     "w": 800,
     "h": 639,
-    "file": "img/bandsaw/nf-h18-1-800.webp",
+    "file": "img/bandsaw/nt-h18-1-800.webp",
     "bytes": 40642
    },
    {
     "w": 480,
     "h": 384,
-    "file": "img/bandsaw/nf-h18-1-480.webp",
+    "file": "img/bandsaw/nt-h18-1-480.webp",
     "bytes": 19592
    }
   ],
@@ -12313,23 +11911,23 @@
   "thumb": {
    "w": 160,
    "h": 128,
-   "file": "img/bandsaw/nf-h18-1-thumb.webp",
+   "file": "img/bandsaw/nt-h18-1-thumb.webp",
    "bytes": 3658
   }
  },
- "nf-h18-2": {
-  "alt": "NF-H 18 \u2014 control panel with blade speed and feed controls",
+ "nt-h18-2": {
+  "alt": "NT-H 18 \u2014 control panel with blade speed and feed controls",
   "variants": [
    {
     "w": 800,
     "h": 476,
-    "file": "img/bandsaw/nf-h18-2-800.webp",
+    "file": "img/bandsaw/nt-h18-2-800.webp",
     "bytes": 21380
    },
    {
     "w": 480,
     "h": 285,
-    "file": "img/bandsaw/nf-h18-2-480.webp",
+    "file": "img/bandsaw/nt-h18-2-480.webp",
     "bytes": 12512
    }
   ],
@@ -12337,29 +11935,29 @@
   "thumb": {
    "w": 160,
    "h": 95,
-   "file": "img/bandsaw/nf-h18-2-thumb.webp",
+   "file": "img/bandsaw/nt-h18-2-thumb.webp",
    "bytes": 2376
   }
  },
- "nf-a12-1": {
-  "alt": "NovoFab NF-A 12 automatic band saw with roller feed",
+ "nt-a12-1": {
+  "alt": "NovoTech NT-A 12 automatic band saw with roller feed",
   "variants": [
    {
     "w": 1200,
     "h": 1028,
-    "file": "img/bandsaw/nf-a12-1-1200.webp",
+    "file": "img/bandsaw/nt-a12-1-1200.webp",
     "bytes": 78928
    },
    {
     "w": 800,
     "h": 686,
-    "file": "img/bandsaw/nf-a12-1-800.webp",
+    "file": "img/bandsaw/nt-a12-1-800.webp",
     "bytes": 41826
    },
    {
     "w": 480,
     "h": 411,
-    "file": "img/bandsaw/nf-a12-1-480.webp",
+    "file": "img/bandsaw/nt-a12-1-480.webp",
     "bytes": 19758
    }
   ],
@@ -12367,23 +11965,23 @@
   "thumb": {
    "w": 160,
    "h": 137,
-   "file": "img/bandsaw/nf-a12-1-thumb.webp",
+   "file": "img/bandsaw/nt-a12-1-thumb.webp",
    "bytes": 3578
   }
  },
- "nf-a12-2": {
-  "alt": "NF-A 12 \u2014 control panel with piece counter",
+ "nt-a12-2": {
+  "alt": "NT-A 12 \u2014 control panel with piece counter",
   "variants": [
    {
     "w": 800,
     "h": 550,
-    "file": "img/bandsaw/nf-a12-2-800.webp",
+    "file": "img/bandsaw/nt-a12-2-800.webp",
     "bytes": 39070
    },
    {
     "w": 480,
     "h": 330,
-    "file": "img/bandsaw/nf-a12-2-480.webp",
+    "file": "img/bandsaw/nt-a12-2-480.webp",
     "bytes": 21142
    }
   ],
@@ -12391,23 +11989,23 @@
   "thumb": {
    "w": 160,
    "h": 110,
-   "file": "img/bandsaw/nf-a12-2-thumb.webp",
+   "file": "img/bandsaw/nt-a12-2-thumb.webp",
    "bytes": 3434
   }
  },
- "nf-a12-3": {
-  "alt": "NF-A 12 \u2014 powered roller feed and hydraulic vise",
+ "nt-a12-3": {
+  "alt": "NT-A 12 \u2014 powered roller feed and hydraulic vise",
   "variants": [
    {
     "w": 800,
     "h": 549,
-    "file": "img/bandsaw/nf-a12-3-800.webp",
+    "file": "img/bandsaw/nt-a12-3-800.webp",
     "bytes": 45944
    },
    {
     "w": 480,
     "h": 329,
-    "file": "img/bandsaw/nf-a12-3-480.webp",
+    "file": "img/bandsaw/nt-a12-3-480.webp",
     "bytes": 25652
    }
   ],
@@ -12415,29 +12013,29 @@
   "thumb": {
    "w": 160,
    "h": 110,
-   "file": "img/bandsaw/nf-a12-3-thumb.webp",
+   "file": "img/bandsaw/nt-a12-3-thumb.webp",
    "bytes": 4242
   }
  },
- "nf-a12t-1": {
-  "alt": "NovoFab NF-A 12 T automatic mitre band saw, 0\u00b0\u201360\u00b0",
+ "nt-a12t-1": {
+  "alt": "NovoTech NT-A 12 T automatic mitre band saw, 0\u00b0\u201360\u00b0",
   "variants": [
    {
     "w": 1200,
     "h": 1178,
-    "file": "img/bandsaw/nf-a12t-1-1200.webp",
+    "file": "img/bandsaw/nt-a12t-1-1200.webp",
     "bytes": 56922
    },
    {
     "w": 800,
     "h": 785,
-    "file": "img/bandsaw/nf-a12t-1-800.webp",
+    "file": "img/bandsaw/nt-a12t-1-800.webp",
     "bytes": 34678
    },
    {
     "w": 480,
     "h": 471,
-    "file": "img/bandsaw/nf-a12t-1-480.webp",
+    "file": "img/bandsaw/nt-a12t-1-480.webp",
     "bytes": 17602
    }
   ],
@@ -12445,29 +12043,29 @@
   "thumb": {
    "w": 160,
    "h": 157,
-   "file": "img/bandsaw/nf-a12t-1-thumb.webp",
+   "file": "img/bandsaw/nt-a12t-1-thumb.webp",
    "bytes": 3558
   }
  },
- "nf-a12t-2": {
-  "alt": "NF-A 12 T \u2014 swivelling mitre table",
+ "nt-a12t-2": {
+  "alt": "NT-A 12 T \u2014 swivelling mitre table",
   "variants": [
    {
     "w": 1200,
     "h": 947,
-    "file": "img/bandsaw/nf-a12t-2-1200.webp",
+    "file": "img/bandsaw/nt-a12t-2-1200.webp",
     "bytes": 101088
    },
    {
     "w": 800,
     "h": 631,
-    "file": "img/bandsaw/nf-a12t-2-800.webp",
+    "file": "img/bandsaw/nt-a12t-2-800.webp",
     "bytes": 62868
    },
    {
     "w": 480,
     "h": 379,
-    "file": "img/bandsaw/nf-a12t-2-480.webp",
+    "file": "img/bandsaw/nt-a12t-2-480.webp",
     "bytes": 32156
    }
   ],
@@ -12475,29 +12073,29 @@
   "thumb": {
    "w": 160,
    "h": 126,
-   "file": "img/bandsaw/nf-a12t-2-thumb.webp",
+   "file": "img/bandsaw/nt-a12t-2-thumb.webp",
    "bytes": 4860
   }
  },
- "nf-a12sc-1": {
-  "alt": "NovoFab NF-A 12 SC single-column automatic band saw",
+ "nt-a12sc-1": {
+  "alt": "NovoTech NT-A 12 SC single-column automatic band saw",
   "variants": [
    {
     "w": 1200,
     "h": 979,
-    "file": "img/bandsaw/nf-a12sc-1-1200.webp",
+    "file": "img/bandsaw/nt-a12sc-1-1200.webp",
     "bytes": 47174
    },
    {
     "w": 800,
     "h": 653,
-    "file": "img/bandsaw/nf-a12sc-1-800.webp",
+    "file": "img/bandsaw/nt-a12sc-1-800.webp",
     "bytes": 30068
    },
    {
     "w": 480,
     "h": 392,
-    "file": "img/bandsaw/nf-a12sc-1-480.webp",
+    "file": "img/bandsaw/nt-a12sc-1-480.webp",
     "bytes": 17398
    }
   ],
@@ -12505,17 +12103,17 @@
   "thumb": {
    "w": 160,
    "h": 131,
-   "file": "img/bandsaw/nf-a12sc-1-thumb.webp",
+   "file": "img/bandsaw/nt-a12sc-1-thumb.webp",
    "bytes": 3396
   }
  },
- "nf-a12sc-2": {
-  "alt": "NF-A 12 SC \u2014 automatic chip conveyor",
+ "nt-a12sc-2": {
+  "alt": "NT-A 12 SC \u2014 automatic chip conveyor",
   "variants": [
    {
     "w": 480,
     "h": 390,
-    "file": "img/bandsaw/nf-a12sc-2-480.webp",
+    "file": "img/bandsaw/nt-a12sc-2-480.webp",
     "bytes": 18136
    }
   ],
@@ -12523,17 +12121,17 @@
   "thumb": {
    "w": 160,
    "h": 130,
-   "file": "img/bandsaw/nf-a12sc-2-thumb.webp",
+   "file": "img/bandsaw/nt-a12sc-2-thumb.webp",
    "bytes": 4564
   }
  },
- "nf-a12sc-3": {
-  "alt": "NF-A 12 SC \u2014 shuttle vise for automatic feeding",
+ "nt-a12sc-3": {
+  "alt": "NT-A 12 SC \u2014 shuttle vise for automatic feeding",
   "variants": [
    {
     "w": 462,
     "h": 405,
-    "file": "img/bandsaw/nf-a12sc-3-462.webp",
+    "file": "img/bandsaw/nt-a12sc-3-462.webp",
     "bytes": 19558
    }
   ],
@@ -12541,17 +12139,17 @@
   "thumb": {
    "w": 160,
    "h": 140,
-   "file": "img/bandsaw/nf-a12sc-3-thumb.webp",
+   "file": "img/bandsaw/nt-a12sc-3-thumb.webp",
    "bytes": 5164
   }
  },
- "nf-a12sc-4": {
-  "alt": "NF-A 12 SC \u2014 batch clamping device",
+ "nt-a12sc-4": {
+  "alt": "NT-A 12 SC \u2014 batch clamping device",
   "variants": [
    {
     "w": 380,
     "h": 405,
-    "file": "img/bandsaw/nf-a12sc-4-380.webp",
+    "file": "img/bandsaw/nt-a12sc-4-380.webp",
     "bytes": 16570
    }
   ],
@@ -12559,29 +12157,29 @@
   "thumb": {
    "w": 150,
    "h": 160,
-   "file": "img/bandsaw/nf-a12sc-4-thumb.webp",
+   "file": "img/bandsaw/nt-a12sc-4-thumb.webp",
    "bytes": 5592
   }
  },
- "nf-a13-1": {
-  "alt": "NovoFab NF-A 13 automatic twin-mitre band saw with 20 ft material stand",
+ "nt-a13-1": {
+  "alt": "NovoTech NT-A 13 automatic twin-mitre band saw with 20 ft material stand",
   "variants": [
    {
     "w": 1200,
     "h": 654,
-    "file": "img/bandsaw/nf-a13-1-1200.webp",
+    "file": "img/bandsaw/nt-a13-1-1200.webp",
     "bytes": 38150
    },
    {
     "w": 800,
     "h": 436,
-    "file": "img/bandsaw/nf-a13-1-800.webp",
+    "file": "img/bandsaw/nt-a13-1-800.webp",
     "bytes": 24876
    },
    {
     "w": 480,
     "h": 261,
-    "file": "img/bandsaw/nf-a13-1-480.webp",
+    "file": "img/bandsaw/nt-a13-1-480.webp",
     "bytes": 13918
    }
   ],
@@ -12589,17 +12187,17 @@
   "thumb": {
    "w": 160,
    "h": 87,
-   "file": "img/bandsaw/nf-a13-1-thumb.webp",
+   "file": "img/bandsaw/nt-a13-1-thumb.webp",
    "bytes": 2620
   }
  },
- "nf-a13-2": {
-  "alt": "NF-A 13 \u2014 feeder with shuttle vise",
+ "nt-a13-2": {
+  "alt": "NT-A 13 \u2014 feeder with shuttle vise",
   "variants": [
    {
     "w": 480,
     "h": 325,
-    "file": "img/bandsaw/nf-a13-2-480.webp",
+    "file": "img/bandsaw/nt-a13-2-480.webp",
     "bytes": 18560
    }
   ],
@@ -12607,17 +12205,17 @@
   "thumb": {
    "w": 160,
    "h": 108,
-   "file": "img/bandsaw/nf-a13-2-thumb.webp",
+   "file": "img/bandsaw/nt-a13-2-thumb.webp",
    "bytes": 4724
   }
  },
- "nf-a13-3": {
-  "alt": "NF-A 13 \u2014 PLC control panel",
+ "nt-a13-3": {
+  "alt": "NT-A 13 \u2014 PLC control panel",
   "variants": [
    {
     "w": 480,
     "h": 325,
-    "file": "img/bandsaw/nf-a13-3-480.webp",
+    "file": "img/bandsaw/nt-a13-3-480.webp",
     "bytes": 9682
    }
   ],
@@ -12625,29 +12223,29 @@
   "thumb": {
    "w": 160,
    "h": 108,
-   "file": "img/bandsaw/nf-a13-3-thumb.webp",
+   "file": "img/bandsaw/nt-a13-3-thumb.webp",
    "bytes": 2642
   }
  },
- "nf-a14-1": {
-  "alt": "NovoFab NF-A 14 / NF-A 16 CNC automatic band saw",
+ "nt-a14-1": {
+  "alt": "NovoTech NT-A 14 / NT-A 16 CNC automatic band saw",
   "variants": [
    {
     "w": 1200,
     "h": 1099,
-    "file": "img/bandsaw/nf-a14-1-1200.webp",
+    "file": "img/bandsaw/nt-a14-1-1200.webp",
     "bytes": 61118
    },
    {
     "w": 800,
     "h": 733,
-    "file": "img/bandsaw/nf-a14-1-800.webp",
+    "file": "img/bandsaw/nt-a14-1-800.webp",
     "bytes": 39156
    },
    {
     "w": 480,
     "h": 440,
-    "file": "img/bandsaw/nf-a14-1-480.webp",
+    "file": "img/bandsaw/nt-a14-1-480.webp",
     "bytes": 20756
    }
   ],
@@ -12655,29 +12253,29 @@
   "thumb": {
    "w": 160,
    "h": 147,
-   "file": "img/bandsaw/nf-a14-1-thumb.webp",
+   "file": "img/bandsaw/nt-a14-1-thumb.webp",
    "bytes": 3600
   }
  },
- "nf-a18-1": {
-  "alt": "NovoFab NF-A 18 NC automatic band saw, 18-inch",
+ "nt-a18-1": {
+  "alt": "NovoTech NT-A 18 NC automatic band saw, 18-inch",
   "variants": [
    {
     "w": 1200,
     "h": 922,
-    "file": "img/bandsaw/nf-a18-1-1200.webp",
+    "file": "img/bandsaw/nt-a18-1-1200.webp",
     "bytes": 54682
    },
    {
     "w": 800,
     "h": 614,
-    "file": "img/bandsaw/nf-a18-1-800.webp",
+    "file": "img/bandsaw/nt-a18-1-800.webp",
     "bytes": 35162
    },
    {
     "w": 480,
     "h": 369,
-    "file": "img/bandsaw/nf-a18-1-480.webp",
+    "file": "img/bandsaw/nt-a18-1-480.webp",
     "bytes": 18168
    }
   ],
@@ -12685,17 +12283,17 @@
   "thumb": {
    "w": 160,
    "h": 123,
-   "file": "img/bandsaw/nf-a18-1-thumb.webp",
+   "file": "img/bandsaw/nt-a18-1-thumb.webp",
    "bytes": 3154
   }
  },
- "nf-a18-2": {
-  "alt": "NF-A 18 \u2014 feeder roller table",
+ "nt-a18-2": {
+  "alt": "NT-A 18 \u2014 feeder roller table",
   "variants": [
    {
     "w": 480,
     "h": 286,
-    "file": "img/bandsaw/nf-a18-2-480.webp",
+    "file": "img/bandsaw/nt-a18-2-480.webp",
     "bytes": 12044
    }
   ],
@@ -12703,29 +12301,29 @@
   "thumb": {
    "w": 160,
    "h": 95,
-   "file": "img/bandsaw/nf-a18-2-thumb.webp",
+   "file": "img/bandsaw/nt-a18-2-thumb.webp",
    "bytes": 3036
   }
  },
- "nf-a24-1": {
-  "alt": "NovoFab NF-A 24 CNC automatic band saw, 23-5/8-inch",
+ "nt-a24-1": {
+  "alt": "NovoTech NT-A 24 CNC automatic band saw, 23-5/8-inch",
   "variants": [
    {
     "w": 1200,
     "h": 846,
-    "file": "img/bandsaw/nf-a24-1-1200.webp",
+    "file": "img/bandsaw/nt-a24-1-1200.webp",
     "bytes": 50222
    },
    {
     "w": 800,
     "h": 564,
-    "file": "img/bandsaw/nf-a24-1-800.webp",
+    "file": "img/bandsaw/nt-a24-1-800.webp",
     "bytes": 33032
    },
    {
     "w": 480,
     "h": 338,
-    "file": "img/bandsaw/nf-a24-1-480.webp",
+    "file": "img/bandsaw/nt-a24-1-480.webp",
     "bytes": 18026
    }
   ],
@@ -12733,29 +12331,29 @@
   "thumb": {
    "w": 160,
    "h": 113,
-   "file": "img/bandsaw/nf-a24-1-thumb.webp",
+   "file": "img/bandsaw/nt-a24-1-thumb.webp",
    "bytes": 3430
   }
  },
- "nf-dc11-1": {
-  "alt": "NovoFab NF-DC 11 double column band saw, 11-inch",
+ "nt-dc11-1": {
+  "alt": "NovoTech NT-DC 11 double column band saw, 11-inch",
   "variants": [
    {
     "w": 1200,
     "h": 1222,
-    "file": "img/bandsaw/nf-dc11-1-1200.webp",
+    "file": "img/bandsaw/nt-dc11-1-1200.webp",
     "bytes": 50036
    },
    {
     "w": 800,
     "h": 815,
-    "file": "img/bandsaw/nf-dc11-1-800.webp",
+    "file": "img/bandsaw/nt-dc11-1-800.webp",
     "bytes": 31822
    },
    {
     "w": 480,
     "h": 489,
-    "file": "img/bandsaw/nf-dc11-1-480.webp",
+    "file": "img/bandsaw/nt-dc11-1-480.webp",
     "bytes": 18262
    }
   ],
@@ -12763,29 +12361,29 @@
   "thumb": {
    "w": 157,
    "h": 160,
-   "file": "img/bandsaw/nf-dc11-1-thumb.webp",
+   "file": "img/bandsaw/nt-dc11-1-thumb.webp",
    "bytes": 3850
   }
  },
- "nf-dc11t-1": {
-  "alt": "NovoFab NF-DC 11 T double column mitre band saw",
+ "nt-dc11t-1": {
+  "alt": "NovoTech NT-DC 11 T double column mitre band saw",
   "variants": [
    {
     "w": 1200,
     "h": 1081,
-    "file": "img/bandsaw/nf-dc11t-1-1200.webp",
+    "file": "img/bandsaw/nt-dc11t-1-1200.webp",
     "bytes": 44618
    },
    {
     "w": 800,
     "h": 721,
-    "file": "img/bandsaw/nf-dc11t-1-800.webp",
+    "file": "img/bandsaw/nt-dc11t-1-800.webp",
     "bytes": 28278
    },
    {
     "w": 480,
     "h": 432,
-    "file": "img/bandsaw/nf-dc11t-1-480.webp",
+    "file": "img/bandsaw/nt-dc11t-1-480.webp",
     "bytes": 16040
    }
   ],
@@ -12793,17 +12391,17 @@
   "thumb": {
    "w": 160,
    "h": 144,
-   "file": "img/bandsaw/nf-dc11t-1-thumb.webp",
+   "file": "img/bandsaw/nt-dc11t-1-thumb.webp",
    "bytes": 3434
   }
  },
- "nf-dc11t-2": {
-  "alt": "NF-DC 11 T \u2014 twin-column head with hydraulic down-feed",
+ "nt-dc11t-2": {
+  "alt": "NT-DC 11 T \u2014 twin-column head with hydraulic down-feed",
   "variants": [
    {
     "w": 400,
     "h": 300,
-    "file": "img/bandsaw/nf-dc11t-2-400.webp",
+    "file": "img/bandsaw/nt-dc11t-2-400.webp",
     "bytes": 11706
    }
   ],
@@ -12811,17 +12409,17 @@
   "thumb": {
    "w": 160,
    "h": 120,
-   "file": "img/bandsaw/nf-dc11t-2-thumb.webp",
+   "file": "img/bandsaw/nt-dc11t-2-thumb.webp",
    "bytes": 3856
   }
  },
- "nf-dc11t-3": {
-  "alt": "NF-DC 11 T \u2014 swivel table for 0\u00b0\u201345\u00b0 mitre cuts",
+ "nt-dc11t-3": {
+  "alt": "NT-DC 11 T \u2014 swivel table for 0\u00b0\u201345\u00b0 mitre cuts",
   "variants": [
    {
     "w": 400,
     "h": 300,
-    "file": "img/bandsaw/nf-dc11t-3-400.webp",
+    "file": "img/bandsaw/nt-dc11t-3-400.webp",
     "bytes": 9718
    }
   ],
@@ -12829,29 +12427,29 @@
   "thumb": {
    "w": 160,
    "h": 120,
-   "file": "img/bandsaw/nf-dc11t-3-thumb.webp",
+   "file": "img/bandsaw/nt-dc11t-3-thumb.webp",
    "bytes": 3300
   }
  },
- "nf-dc11a-1": {
-  "alt": "NovoFab NF-DC 11 A automatic double column band saw",
+ "nt-dc11a-1": {
+  "alt": "NovoTech NT-DC 11 A automatic double column band saw",
   "variants": [
    {
     "w": 1200,
     "h": 1170,
-    "file": "img/bandsaw/nf-dc11a-1-1200.webp",
+    "file": "img/bandsaw/nt-dc11a-1-1200.webp",
     "bytes": 60470
    },
    {
     "w": 800,
     "h": 780,
-    "file": "img/bandsaw/nf-dc11a-1-800.webp",
+    "file": "img/bandsaw/nt-dc11a-1-800.webp",
     "bytes": 39032
    },
    {
     "w": 480,
     "h": 468,
-    "file": "img/bandsaw/nf-dc11a-1-480.webp",
+    "file": "img/bandsaw/nt-dc11a-1-480.webp",
     "bytes": 21882
    }
   ],
@@ -12859,29 +12457,29 @@
   "thumb": {
    "w": 160,
    "h": 156,
-   "file": "img/bandsaw/nf-dc11a-1-thumb.webp",
+   "file": "img/bandsaw/nt-dc11a-1-thumb.webp",
    "bytes": 4290
   }
  },
- "nf-dc11av-1": {
-  "alt": "NovoFab NF-DC 11 AV automatic double column band saw with variable speed",
+ "nt-dc11av-1": {
+  "alt": "NovoTech NT-DC 11 AV automatic double column band saw with variable speed",
   "variants": [
    {
     "w": 1200,
     "h": 1052,
-    "file": "img/bandsaw/nf-dc11av-1-1200.webp",
+    "file": "img/bandsaw/nt-dc11av-1-1200.webp",
     "bytes": 53030
    },
    {
     "w": 800,
     "h": 701,
-    "file": "img/bandsaw/nf-dc11av-1-800.webp",
+    "file": "img/bandsaw/nt-dc11av-1-800.webp",
     "bytes": 32452
    },
    {
     "w": 480,
     "h": 421,
-    "file": "img/bandsaw/nf-dc11av-1-480.webp",
+    "file": "img/bandsaw/nt-dc11av-1-480.webp",
     "bytes": 17376
    }
   ],
@@ -12889,59 +12487,53 @@
   "thumb": {
    "w": 160,
    "h": 140,
-   "file": "img/bandsaw/nf-dc11av-1-thumb.webp",
+   "file": "img/bandsaw/nt-dc11av-1-thumb.webp",
    "bytes": 3858
   }
  },
- "nf-dc11av-2": {
-  "alt": "NF-DC 11 AV \u2014 stepless blade speed control",
+ "nt-dc11av-2": {
+  "alt": "NT-DC 11 AV \u2014 stepless blade speed control",
   "variants": [
    {
-    "w": 1200,
-    "h": 837,
-    "file": "img/bandsaw/nf-dc11av-2-1200.webp",
-    "bytes": 26846
-   },
-   {
     "w": 800,
-    "h": 558,
-    "file": "img/bandsaw/nf-dc11av-2-800.webp",
-    "bytes": 16048
+    "h": 595,
+    "file": "img/bandsaw/nt-dc11av-2-800.webp",
+    "bytes": 17306
    },
    {
     "w": 480,
-    "h": 335,
-    "file": "img/bandsaw/nf-dc11av-2-480.webp",
-    "bytes": 9056
+    "h": 357,
+    "file": "img/bandsaw/nt-dc11av-2-480.webp",
+    "bytes": 9628
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 112,
-   "file": "img/bandsaw/nf-dc11av-2-thumb.webp",
-   "bytes": 1966
+   "h": 119,
+   "file": "img/bandsaw/nt-dc11av-2-thumb.webp",
+   "bytes": 2110
   }
  },
- "nf-dc11av-3": {
-  "alt": "NF-DC 11 AV \u2014 automatic chip conveyor",
+ "nt-dc11av-3": {
+  "alt": "NT-DC 11 AV \u2014 automatic chip conveyor",
   "variants": [
    {
     "w": 1200,
     "h": 833,
-    "file": "img/bandsaw/nf-dc11av-3-1200.webp",
+    "file": "img/bandsaw/nt-dc11av-3-1200.webp",
     "bytes": 45698
    },
    {
     "w": 800,
     "h": 555,
-    "file": "img/bandsaw/nf-dc11av-3-800.webp",
+    "file": "img/bandsaw/nt-dc11av-3-800.webp",
     "bytes": 27994
    },
    {
     "w": 480,
     "h": 333,
-    "file": "img/bandsaw/nf-dc11av-3-480.webp",
+    "file": "img/bandsaw/nt-dc11av-3-480.webp",
     "bytes": 14638
    }
   ],
@@ -12949,29 +12541,29 @@
   "thumb": {
    "w": 160,
    "h": 111,
-   "file": "img/bandsaw/nf-dc11av-3-thumb.webp",
+   "file": "img/bandsaw/nt-dc11av-3-thumb.webp",
    "bytes": 2628
   }
  },
- "nf-dc11av-4": {
-  "alt": "NF-DC 11 AV \u2014 new hydraulic vise design",
+ "nt-dc11av-4": {
+  "alt": "NT-DC 11 AV \u2014 new hydraulic vise design",
   "variants": [
    {
     "w": 1200,
     "h": 831,
-    "file": "img/bandsaw/nf-dc11av-4-1200.webp",
+    "file": "img/bandsaw/nt-dc11av-4-1200.webp",
     "bytes": 51520
    },
    {
     "w": 800,
     "h": 554,
-    "file": "img/bandsaw/nf-dc11av-4-800.webp",
+    "file": "img/bandsaw/nt-dc11av-4-800.webp",
     "bytes": 32228
    },
    {
     "w": 480,
     "h": 332,
-    "file": "img/bandsaw/nf-dc11av-4-480.webp",
+    "file": "img/bandsaw/nt-dc11av-4-480.webp",
     "bytes": 17650
    }
   ],
@@ -12979,29 +12571,29 @@
   "thumb": {
    "w": 160,
    "h": 111,
-   "file": "img/bandsaw/nf-dc11av-4-thumb.webp",
+   "file": "img/bandsaw/nt-dc11av-4-thumb.webp",
    "bytes": 3332
   }
  },
- "nf-dc11-stand": {
-  "alt": "Roller support stand for NF-DC 11 saws",
+ "nt-dc11-stand": {
+  "alt": "Roller support stand for NT-DC 11 saws",
   "variants": [
    {
     "w": 1200,
     "h": 1284,
-    "file": "img/bandsaw/nf-dc11-stand-1200.webp",
+    "file": "img/bandsaw/nt-dc11-stand-1200.webp",
     "bytes": 37538
    },
    {
     "w": 800,
     "h": 856,
-    "file": "img/bandsaw/nf-dc11-stand-800.webp",
+    "file": "img/bandsaw/nt-dc11-stand-800.webp",
     "bytes": 24262
    },
    {
     "w": 480,
     "h": 514,
-    "file": "img/bandsaw/nf-dc11-stand-480.webp",
+    "file": "img/bandsaw/nt-dc11-stand-480.webp",
     "bytes": 14488
    }
   ],
@@ -13009,29 +12601,29 @@
   "thumb": {
    "w": 150,
    "h": 160,
-   "file": "img/bandsaw/nf-dc11-stand-thumb.webp",
+   "file": "img/bandsaw/nt-dc11-stand-thumb.webp",
    "bytes": 3628
   }
  },
- "nf-dc14-1": {
-  "alt": "NovoFab NF-DC 14 / NF-DC 16 gear-driven double column band saw",
+ "nt-dc14-1": {
+  "alt": "NovoTech NT-DC 14 / NT-DC 16 gear-driven double column band saw",
   "variants": [
    {
     "w": 1200,
     "h": 981,
-    "file": "img/bandsaw/nf-dc14-1-1200.webp",
+    "file": "img/bandsaw/nt-dc14-1-1200.webp",
     "bytes": 38586
    },
    {
     "w": 800,
     "h": 654,
-    "file": "img/bandsaw/nf-dc14-1-800.webp",
+    "file": "img/bandsaw/nt-dc14-1-800.webp",
     "bytes": 25436
    },
    {
     "w": 480,
     "h": 392,
-    "file": "img/bandsaw/nf-dc14-1-480.webp",
+    "file": "img/bandsaw/nt-dc14-1-480.webp",
     "bytes": 14754
    }
   ],
@@ -13039,17 +12631,17 @@
   "thumb": {
    "w": 160,
    "h": 131,
-   "file": "img/bandsaw/nf-dc14-1-thumb.webp",
+   "file": "img/bandsaw/nt-dc14-1-thumb.webp",
    "bytes": 3176
   }
  },
- "nf-dc14-2": {
-  "alt": "NF-DC 14 \u2014 hydraulic clamping vise",
+ "nt-dc14-2": {
+  "alt": "NT-DC 14 \u2014 hydraulic clamping vise",
   "variants": [
    {
     "w": 480,
     "h": 253,
-    "file": "img/bandsaw/nf-dc14-2-480.webp",
+    "file": "img/bandsaw/nt-dc14-2-480.webp",
     "bytes": 8088
    }
   ],
@@ -13057,17 +12649,17 @@
   "thumb": {
    "w": 160,
    "h": 84,
-   "file": "img/bandsaw/nf-dc14-2-thumb.webp",
+   "file": "img/bandsaw/nt-dc14-2-thumb.webp",
    "bytes": 1884
   }
  },
- "nf-dc14-3": {
-  "alt": "NF-DC 14 \u2014 work table and material stand",
+ "nt-dc14-3": {
+  "alt": "NT-DC 14 \u2014 work table and material stand",
   "variants": [
    {
     "w": 480,
     "h": 253,
-    "file": "img/bandsaw/nf-dc14-3-480.webp",
+    "file": "img/bandsaw/nt-dc14-3-480.webp",
     "bytes": 10038
    }
   ],
@@ -13075,29 +12667,29 @@
   "thumb": {
    "w": 160,
    "h": 84,
-   "file": "img/bandsaw/nf-dc14-3-thumb.webp",
+   "file": "img/bandsaw/nt-dc14-3-thumb.webp",
    "bytes": 2506
   }
  },
- "nf-dc20-1": {
-  "alt": "NovoFab NF-DC 20 gantry double column band saw, 19-3/4-inch",
+ "nt-dc20-1": {
+  "alt": "NovoTech NT-DC 20 gantry double column band saw, 19-3/4-inch",
   "variants": [
    {
     "w": 1200,
     "h": 798,
-    "file": "img/bandsaw/nf-dc20-1-1200.webp",
+    "file": "img/bandsaw/nt-dc20-1-1200.webp",
     "bytes": 35020
    },
    {
     "w": 800,
     "h": 532,
-    "file": "img/bandsaw/nf-dc20-1-800.webp",
+    "file": "img/bandsaw/nt-dc20-1-800.webp",
     "bytes": 21064
    },
    {
     "w": 480,
     "h": 319,
-    "file": "img/bandsaw/nf-dc20-1-480.webp",
+    "file": "img/bandsaw/nt-dc20-1-480.webp",
     "bytes": 10524
    }
   ],
@@ -13105,29 +12697,29 @@
   "thumb": {
    "w": 160,
    "h": 106,
-   "file": "img/bandsaw/nf-dc20-1-thumb.webp",
+   "file": "img/bandsaw/nt-dc20-1-thumb.webp",
    "bytes": 2400
   }
  },
- "nf-dc24-1": {
-  "alt": "NovoFab NF-DC 24 gantry double column band saw, 23-5/8-inch",
+ "nt-dc24-1": {
+  "alt": "NovoTech NT-DC 24 gantry double column band saw, 23-5/8-inch",
   "variants": [
    {
     "w": 1200,
     "h": 708,
-    "file": "img/bandsaw/nf-dc24-1-1200.webp",
+    "file": "img/bandsaw/nt-dc24-1-1200.webp",
     "bytes": 44930
    },
    {
     "w": 800,
     "h": 472,
-    "file": "img/bandsaw/nf-dc24-1-800.webp",
+    "file": "img/bandsaw/nt-dc24-1-800.webp",
     "bytes": 26782
    },
    {
     "w": 480,
     "h": 283,
-    "file": "img/bandsaw/nf-dc24-1-480.webp",
+    "file": "img/bandsaw/nt-dc24-1-480.webp",
     "bytes": 13508
    }
   ],
@@ -13135,29 +12727,29 @@
   "thumb": {
    "w": 160,
    "h": 94,
-   "file": "img/bandsaw/nf-dc24-1-thumb.webp",
+   "file": "img/bandsaw/nt-dc24-1-thumb.webp",
    "bytes": 2804
   }
  },
- "nf-dc24-2": {
-  "alt": "NF-DC 24 \u2014 chain-driven powered roller table",
+ "nt-dc24-2": {
+  "alt": "NT-DC 24 \u2014 chain-driven powered roller table",
   "variants": [
    {
     "w": 1200,
     "h": 777,
-    "file": "img/bandsaw/nf-dc24-2-1200.webp",
+    "file": "img/bandsaw/nt-dc24-2-1200.webp",
     "bytes": 75938
    },
    {
     "w": 800,
     "h": 518,
-    "file": "img/bandsaw/nf-dc24-2-800.webp",
+    "file": "img/bandsaw/nt-dc24-2-800.webp",
     "bytes": 48792
    },
    {
     "w": 480,
     "h": 311,
-    "file": "img/bandsaw/nf-dc24-2-480.webp",
+    "file": "img/bandsaw/nt-dc24-2-480.webp",
     "bytes": 28246
    }
   ],
@@ -13165,23 +12757,23 @@
   "thumb": {
    "w": 160,
    "h": 104,
-   "file": "img/bandsaw/nf-dc24-2-thumb.webp",
+   "file": "img/bandsaw/nt-dc24-2-thumb.webp",
    "bytes": 4982
   }
  },
- "nf-m16-1-cut": {
-  "alt": "NovoFab NF-M 16 manual band saw, 15-3/4-inch",
+ "nt-m16-1-cut": {
+  "alt": "NovoTech NT-M 16 manual band saw, 15-3/4-inch",
   "variants": [
    {
     "w": 800,
     "h": 615,
-    "file": "img/bandsaw/nf-m16-1-cut-800.webp",
+    "file": "img/bandsaw/nt-m16-1-cut-800.webp",
     "bytes": 87508
    },
    {
     "w": 480,
     "h": 369,
-    "file": "img/bandsaw/nf-m16-1-cut-480.webp",
+    "file": "img/bandsaw/nt-m16-1-cut-480.webp",
     "bytes": 48182
    }
   ],
@@ -13189,23 +12781,23 @@
   "thumb": {
    "w": 160,
    "h": 123,
-   "file": "img/bandsaw/nf-m16-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-m16-1-cut-thumb.webp",
    "bytes": 10480
   }
  },
- "nf-m10t-1-cut": {
-  "alt": "NovoFab NF-M 10 T twin-mitre manual band saw",
+ "nt-m10t-1-cut": {
+  "alt": "NovoTech NT-M 10 T twin-mitre manual band saw",
   "variants": [
    {
     "w": 800,
     "h": 595,
-    "file": "img/bandsaw/nf-m10t-1-cut-800.webp",
+    "file": "img/bandsaw/nt-m10t-1-cut-800.webp",
     "bytes": 66704
    },
    {
     "w": 480,
     "h": 357,
-    "file": "img/bandsaw/nf-m10t-1-cut-480.webp",
+    "file": "img/bandsaw/nt-m10t-1-cut-480.webp",
     "bytes": 36458
    }
   ],
@@ -13213,29 +12805,29 @@
   "thumb": {
    "w": 160,
    "h": 119,
-   "file": "img/bandsaw/nf-m10t-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-m10t-1-cut-thumb.webp",
    "bytes": 8088
   }
  },
- "nf-h18-1-cut": {
-  "alt": "NovoFab NF-H 18 swivel-head band saw, 18-inch",
+ "nt-h18-1-cut": {
+  "alt": "NovoTech NT-H 18 swivel-head band saw, 18-inch",
   "variants": [
    {
     "w": 1200,
     "h": 959,
-    "file": "img/bandsaw/nf-h18-1-cut-1200.webp",
+    "file": "img/bandsaw/nt-h18-1-cut-1200.webp",
     "bytes": 135848
    },
    {
     "w": 800,
     "h": 639,
-    "file": "img/bandsaw/nf-h18-1-cut-800.webp",
+    "file": "img/bandsaw/nt-h18-1-cut-800.webp",
     "bytes": 81092
    },
    {
     "w": 480,
     "h": 384,
-    "file": "img/bandsaw/nf-h18-1-cut-480.webp",
+    "file": "img/bandsaw/nt-h18-1-cut-480.webp",
     "bytes": 41046
    }
   ],
@@ -13243,23 +12835,23 @@
   "thumb": {
    "w": 160,
    "h": 128,
-   "file": "img/bandsaw/nf-h18-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-h18-1-cut-thumb.webp",
    "bytes": 8552
   }
  },
- "nf-h16-1-cut": {
-  "alt": "NovoFab NF-H 16 hydraulic band saw, 15-3/4-inch",
+ "nt-h16-1-cut": {
+  "alt": "NovoTech NT-H 16 hydraulic band saw, 15-3/4-inch",
   "variants": [
    {
     "w": 800,
     "h": 590,
-    "file": "img/bandsaw/nf-h16-1-cut-800.webp",
+    "file": "img/bandsaw/nt-h16-1-cut-800.webp",
     "bytes": 86928
    },
    {
     "w": 480,
     "h": 354,
-    "file": "img/bandsaw/nf-h16-1-cut-480.webp",
+    "file": "img/bandsaw/nt-h16-1-cut-480.webp",
     "bytes": 46886
    }
   ],
@@ -13267,23 +12859,23 @@
   "thumb": {
    "w": 160,
    "h": 118,
-   "file": "img/bandsaw/nf-h16-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-h16-1-cut-thumb.webp",
    "bytes": 9954
   }
  },
- "nf-h12sc-1-cut": {
-  "alt": "NovoFab NF-H 12 SC single-column band saw with touch screen",
+ "nt-h12sc-1-cut": {
+  "alt": "NovoTech NT-H 12 SC single-column band saw with touch screen",
   "variants": [
    {
     "w": 800,
     "h": 783,
-    "file": "img/bandsaw/nf-h12sc-1-cut-800.webp",
+    "file": "img/bandsaw/nt-h12sc-1-cut-800.webp",
     "bytes": 65084
    },
    {
     "w": 480,
     "h": 470,
-    "file": "img/bandsaw/nf-h12sc-1-cut-480.webp",
+    "file": "img/bandsaw/nt-h12sc-1-cut-480.webp",
     "bytes": 37170
    }
   ],
@@ -13291,29 +12883,29 @@
   "thumb": {
    "w": 160,
    "h": 157,
-   "file": "img/bandsaw/nf-h12sc-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-h12sc-1-cut-thumb.webp",
    "bytes": 9020
   }
  },
- "nf-a12sc-1-cut": {
-  "alt": "NovoFab NF-A 12 SC single-column automatic band saw",
+ "nt-a12sc-1-cut": {
+  "alt": "NovoTech NT-A 12 SC single-column automatic band saw",
   "variants": [
    {
     "w": 1200,
     "h": 979,
-    "file": "img/bandsaw/nf-a12sc-1-cut-1200.webp",
+    "file": "img/bandsaw/nt-a12sc-1-cut-1200.webp",
     "bytes": 99798
    },
    {
     "w": 800,
     "h": 653,
-    "file": "img/bandsaw/nf-a12sc-1-cut-800.webp",
+    "file": "img/bandsaw/nt-a12sc-1-cut-800.webp",
     "bytes": 62636
    },
    {
     "w": 480,
     "h": 392,
-    "file": "img/bandsaw/nf-a12sc-1-cut-480.webp",
+    "file": "img/bandsaw/nt-a12sc-1-cut-480.webp",
     "bytes": 34718
    }
   ],
@@ -13321,29 +12913,29 @@
   "thumb": {
    "w": 160,
    "h": 131,
-   "file": "img/bandsaw/nf-a12sc-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-a12sc-1-cut-thumb.webp",
    "bytes": 7682
   }
  },
- "nf-a18-1-cut": {
-  "alt": "NovoFab NF-A 18 NC automatic band saw, 18-inch",
+ "nt-a18-1-cut": {
+  "alt": "NovoTech NT-A 18 NC automatic band saw, 18-inch",
   "variants": [
    {
     "w": 1200,
     "h": 922,
-    "file": "img/bandsaw/nf-a18-1-cut-1200.webp",
+    "file": "img/bandsaw/nt-a18-1-cut-1200.webp",
     "bytes": 116916
    },
    {
     "w": 800,
     "h": 614,
-    "file": "img/bandsaw/nf-a18-1-cut-800.webp",
+    "file": "img/bandsaw/nt-a18-1-cut-800.webp",
     "bytes": 71470
    },
    {
     "w": 480,
     "h": 369,
-    "file": "img/bandsaw/nf-a18-1-cut-480.webp",
+    "file": "img/bandsaw/nt-a18-1-cut-480.webp",
     "bytes": 37078
    }
   ],
@@ -13351,29 +12943,29 @@
   "thumb": {
    "w": 160,
    "h": 123,
-   "file": "img/bandsaw/nf-a18-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-a18-1-cut-thumb.webp",
    "bytes": 7418
   }
  },
- "nf-a13-1-cut": {
-  "alt": "NovoFab NF-A 13 automatic twin-mitre band saw with 20 ft material stand",
+ "nt-a13-1-cut": {
+  "alt": "NovoTech NT-A 13 automatic twin-mitre band saw with 20 ft material stand",
   "variants": [
    {
     "w": 1200,
     "h": 654,
-    "file": "img/bandsaw/nf-a13-1-cut-1200.webp",
+    "file": "img/bandsaw/nt-a13-1-cut-1200.webp",
     "bytes": 94694
    },
    {
     "w": 800,
     "h": 436,
-    "file": "img/bandsaw/nf-a13-1-cut-800.webp",
+    "file": "img/bandsaw/nt-a13-1-cut-800.webp",
     "bytes": 58912
    },
    {
     "w": 480,
     "h": 261,
-    "file": "img/bandsaw/nf-a13-1-cut-480.webp",
+    "file": "img/bandsaw/nt-a13-1-cut-480.webp",
     "bytes": 31402
    }
   ],
@@ -13381,29 +12973,29 @@
   "thumb": {
    "w": 160,
    "h": 87,
-   "file": "img/bandsaw/nf-a13-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-a13-1-cut-thumb.webp",
    "bytes": 6628
   }
  },
- "nf-dc11a-1-cut": {
-  "alt": "NovoFab NF-DC 11 A automatic double column band saw",
+ "nt-dc11a-1-cut": {
+  "alt": "NovoTech NT-DC 11 A automatic double column band saw",
   "variants": [
    {
     "w": 1200,
     "h": 1170,
-    "file": "img/bandsaw/nf-dc11a-1-cut-1200.webp",
+    "file": "img/bandsaw/nt-dc11a-1-cut-1200.webp",
     "bytes": 118336
    },
    {
     "w": 800,
     "h": 780,
-    "file": "img/bandsaw/nf-dc11a-1-cut-800.webp",
+    "file": "img/bandsaw/nt-dc11a-1-cut-800.webp",
     "bytes": 75254
    },
    {
     "w": 480,
     "h": 468,
-    "file": "img/bandsaw/nf-dc11a-1-cut-480.webp",
+    "file": "img/bandsaw/nt-dc11a-1-cut-480.webp",
     "bytes": 41416
    }
   ],
@@ -13411,29 +13003,29 @@
   "thumb": {
    "w": 160,
    "h": 156,
-   "file": "img/bandsaw/nf-dc11a-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-dc11a-1-cut-thumb.webp",
    "bytes": 8698
   }
  },
- "nf-dc14-1-cut": {
-  "alt": "NovoFab NF-DC 14 / NF-DC 16 gear-driven double column band saw",
+ "nt-dc14-1-cut": {
+  "alt": "NovoTech NT-DC 14 / NT-DC 16 gear-driven double column band saw",
   "variants": [
    {
     "w": 1200,
     "h": 981,
-    "file": "img/bandsaw/nf-dc14-1-cut-1200.webp",
+    "file": "img/bandsaw/nt-dc14-1-cut-1200.webp",
     "bytes": 90602
    },
    {
     "w": 800,
     "h": 654,
-    "file": "img/bandsaw/nf-dc14-1-cut-800.webp",
+    "file": "img/bandsaw/nt-dc14-1-cut-800.webp",
     "bytes": 58182
    },
    {
     "w": 480,
     "h": 392,
-    "file": "img/bandsaw/nf-dc14-1-cut-480.webp",
+    "file": "img/bandsaw/nt-dc14-1-cut-480.webp",
     "bytes": 32668
    }
   ],
@@ -13441,29 +13033,29 @@
   "thumb": {
    "w": 160,
    "h": 131,
-   "file": "img/bandsaw/nf-dc14-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-dc14-1-cut-thumb.webp",
    "bytes": 7884
   }
  },
- "nf-dc11-1-cut": {
-  "alt": "NovoFab NF-DC 11 double column band saw, 11-inch",
+ "nt-dc11-1-cut": {
+  "alt": "NovoTech NT-DC 11 double column band saw, 11-inch",
   "variants": [
    {
     "w": 1200,
     "h": 1222,
-    "file": "img/bandsaw/nf-dc11-1-cut-1200.webp",
+    "file": "img/bandsaw/nt-dc11-1-cut-1200.webp",
     "bytes": 122462
    },
    {
     "w": 800,
     "h": 815,
-    "file": "img/bandsaw/nf-dc11-1-cut-800.webp",
+    "file": "img/bandsaw/nt-dc11-1-cut-800.webp",
     "bytes": 80244
    },
    {
     "w": 480,
     "h": 489,
-    "file": "img/bandsaw/nf-dc11-1-cut-480.webp",
+    "file": "img/bandsaw/nt-dc11-1-cut-480.webp",
     "bytes": 43552
    }
   ],
@@ -13471,8 +13063,332 @@
   "thumb": {
    "w": 157,
    "h": 160,
-   "file": "img/bandsaw/nf-dc11-1-cut-thumb.webp",
+   "file": "img/bandsaw/nt-dc11-1-cut-thumb.webp",
    "bytes": 9570
+  }
+ },
+ "a-40-head": {
+  "alt": "A 40 bending head with rollers bending a dowel bar",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/rebar/a-40-head-1200.webp",
+    "bytes": 49356
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/rebar/a-40-head-800.webp",
+    "bytes": 27204
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/rebar/a-40-head-480.webp",
+    "bytes": 12416
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/rebar/a-40-head-thumb.webp",
+   "bytes": 2252
+  }
+ },
+ "a-40-site": {
+  "alt": "A 40 hydraulic bending head bending protruding rebar on site",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/rebar/a-40-site-1200.webp",
+    "bytes": 50332
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/rebar/a-40-site-800.webp",
+    "bytes": 32530
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/rebar/a-40-site-480.webp",
+    "bytes": 18540
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/rebar/a-40-site-thumb.webp",
+   "bytes": 3582
+  }
+ },
+ "mg-26-32b-front": {
+  "alt": "GMS MG 26-32B portable dowel bar bender with hydraulic power unit",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1230,
+    "file": "img/rebar/mg-26-32b-front-800.webp",
+    "bytes": 109578
+   },
+   {
+    "w": 480,
+    "h": 738,
+    "file": "img/rebar/mg-26-32b-front-480.webp",
+    "bytes": 55320
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 104,
+   "h": 160,
+   "file": "img/rebar/mg-26-32b-front-thumb.webp",
+   "bytes": 6778
+  }
+ },
+ "mg-26-32b-hand": {
+  "alt": "MG 26-32B hand-held bending head carried by the operator",
+  "variants": [
+   {
+    "w": 800,
+    "h": 880,
+    "file": "img/rebar/mg-26-32b-hand-800.webp",
+    "bytes": 48090
+   },
+   {
+    "w": 480,
+    "h": 528,
+    "file": "img/rebar/mg-26-32b-hand-480.webp",
+    "bytes": 22752
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 145,
+   "h": 160,
+   "file": "img/rebar/mg-26-32b-hand-thumb.webp",
+   "bytes": 3782
+  }
+ },
+ "bk-bmso-320gs-3-cut": {
+  "alt": "Bekamak BMSO 320GS band saw",
+  "variants": [
+   {
+    "w": 800,
+    "h": 571,
+    "file": "img/bandsaw/bk-bmso-320gs-3-cut-800.webp",
+    "bytes": 65812
+   },
+   {
+    "w": 480,
+    "h": 343,
+    "file": "img/bandsaw/bk-bmso-320gs-3-cut-480.webp",
+    "bytes": 33092
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 114,
+   "file": "img/bandsaw/bk-bmso-320gs-3-cut-thumb.webp",
+   "bytes": 7120
+  }
+ },
+ "nt-h10f-1": {
+  "alt": "NovoTech NT-H 10 F full-hydraulic twin-mitre band saw, 10-inch",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1091,
+    "file": "img/bandsaw/nt-h10f-1-1200.webp",
+    "bytes": 70098
+   },
+   {
+    "w": 800,
+    "h": 727,
+    "file": "img/bandsaw/nt-h10f-1-800.webp",
+    "bytes": 37564
+   },
+   {
+    "w": 480,
+    "h": 436,
+    "file": "img/bandsaw/nt-h10f-1-480.webp",
+    "bytes": 16072
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 145,
+   "file": "img/bandsaw/nt-h10f-1-thumb.webp",
+   "bytes": 3120
+  }
+ },
+ "nt-h10f-2": {
+  "alt": "NT-H 10 F \u2014 control panel with hydraulic vise, up/down and cycle controls",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 614,
+    "file": "img/bandsaw/nt-h10f-2-1200.webp",
+    "bytes": 66094
+   },
+   {
+    "w": 800,
+    "h": 410,
+    "file": "img/bandsaw/nt-h10f-2-800.webp",
+    "bytes": 39718
+   },
+   {
+    "w": 480,
+    "h": 246,
+    "file": "img/bandsaw/nt-h10f-2-480.webp",
+    "bytes": 17970
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 82,
+   "file": "img/bandsaw/nt-h10f-2-thumb.webp",
+   "bytes": 2488
+  }
+ },
+ "nt-h10f-3": {
+  "alt": "NT-H 10 F \u2014 finger-touch key panel",
+  "variants": [
+   {
+    "w": 800,
+    "h": 489,
+    "file": "img/bandsaw/nt-h10f-3-800.webp",
+    "bytes": 22110
+   },
+   {
+    "w": 480,
+    "h": 294,
+    "file": "img/bandsaw/nt-h10f-3-480.webp",
+    "bytes": 12814
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 98,
+   "file": "img/bandsaw/nt-h10f-3-thumb.webp",
+   "bytes": 2728
+  }
+ },
+ "nt-h10f-1-cut": {
+  "alt": "NovoTech NT-H 10 F full-hydraulic twin-mitre band saw",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1091,
+    "file": "img/bandsaw/nt-h10f-1-cut-1200.webp",
+    "bytes": 130772
+   },
+   {
+    "w": 800,
+    "h": 727,
+    "file": "img/bandsaw/nt-h10f-1-cut-800.webp",
+    "bytes": 73898
+   },
+   {
+    "w": 480,
+    "h": 436,
+    "file": "img/bandsaw/nt-h10f-1-cut-480.webp",
+    "bytes": 36248
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 145,
+   "file": "img/bandsaw/nt-h10f-1-cut-thumb.webp",
+   "bytes": 7762
+  }
+ },
+ "video-jX-yVggdD-U": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/rebar/video-jX-yVggdD-U-480.webp",
+    "bytes": 17290
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/rebar/video-jX-yVggdD-U-thumb.webp",
+   "bytes": 4154
+  }
+ },
+ "video-_mHWeLoh_mo": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/rebar/video-_mHWeLoh_mo-1200.webp",
+    "bytes": 26574
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/rebar/video-_mHWeLoh_mo-800.webp",
+    "bytes": 16022
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/rebar/video-_mHWeLoh_mo-480.webp",
+    "bytes": 8284
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/rebar/video-_mHWeLoh_mo-thumb.webp",
+   "bytes": 2146
+  }
+ },
+ "video-obbCib0YB24": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/rebar/video-obbCib0YB24-1200.webp",
+    "bytes": 28260
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/rebar/video-obbCib0YB24-800.webp",
+    "bytes": 17470
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/rebar/video-obbCib0YB24-480.webp",
+    "bytes": 9082
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/rebar/video-obbCib0YB24-thumb.webp",
+   "bytes": 2390
   }
  }
 }

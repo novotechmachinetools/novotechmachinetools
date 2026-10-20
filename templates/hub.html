@@ -14,7 +14,7 @@
       <h1>{{ page.h1 }}</h1>
       <p class="lead">{{ page.intro }}</p>
       <ul class="hero-points">
-        {% for p in page.hero_points %}<li>{{ p }}</li>{% endfor %}
+        {% for p in page.hero_points %}<li>{{ p|safe }}</li>{% endfor %}
       </ul>
       <div class="cta-row">
         <a class="btn btn-primary" href="#reques-a-quote">Request a quote</a>
@@ -83,7 +83,7 @@
 {% for sp in page.subpages %}
 <section class="group group-cards{{ ' line-' ~ sp.line if sp.line else '' }}" id="{{ sp.slug }}-overview" aria-labelledby="{{ sp.slug }}-overview-title">
   <header class="group-head">
-    <h2 id="{{ sp.slug }}-overview-title">{{ sp.title }}</h2>
+    <h2 id="{{ sp.slug }}-overview-title">{{ sp.cards_title or (sp.title ~ ' line-up') }}</h2>
     <p class="group-lead"><a class="arrow" href="{{ sp.href }}">All specifications, photos and videos</a></p>
   </header>
   <ul class="family-cards">
@@ -140,6 +140,25 @@
     <h2 id="range-title">The range at a glance</h2>
     <p class="group-lead">{{ page.range_lead or 'Single-bar capacity for every stationary and portable model. Each row links to the full specification table with multi-bar capacities and dimensions.' }}</p>
   </header>
+  {% if page.range_groups %}
+  {% for rg in page.range_groups %}
+  <div class="specs range-line" id="range-{{ rg.id }}">
+    <h3 class="range-title">{{ rg.title }}</h3>
+    <section class="table-scroll" tabindex="0" aria-label="{{ rg.title }}">
+      <table class="spec-table spec-table-range">
+        <caption>{{ rg.caption }}</caption>
+        <thead><tr><th scope="col" class="label-col">Model</th><th scope="col">Max bar · 45 kg/mm²</th><th scope="col">Max bar · 65 kg/mm²</th><th scope="col">Motor</th><th scope="col">Weight</th><th scope="col">Power</th></tr></thead>
+        <tbody>
+          {% for r in rg.rows %}
+          <tr><th scope="row"><a href="{{ r.href }}">{{ r.model }}</a><small>{{ r.family }}</small></th><td>{{ r.cap45 }}</td><td>{{ r.cap65 }}</td><td>{{ r.motor }}</td><td>{{ r.weight }}</td><td>{{ r.voltage }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </div>
+  {% endfor %}
+  <p class="table-note">{{ page.range_note or site.steel_note }}</p>
+  {% else %}
   <div class="specs">
     <section class="table-scroll" tabindex="0" aria-label="All models at a glance">
       <table class="spec-table spec-table-range">
@@ -164,6 +183,7 @@
     </section>
     <p class="table-note">{{ page.range_note or site.steel_note }}</p>
   </div>
+  {% endif %}
 </section>
 </div>
 {% endif %}
@@ -172,8 +192,8 @@
   <div class="wrap">
     <h2 id="why-title">Included with every machine from NovoTech</h2>
     <ul class="why-grid">
-      {% for s in site.standard_features %}
-      <li><span class="why-badge">{{ feature_icon(s.icon) }}</span><div><strong>{{ s.title }}</strong><span>{{ s.text }}</span></div></li>
+      {% for s in site.standard_features %}{% if s.id == 'origin' and page.origin_feature %}{% set s = page.origin_feature %}{% endif %}
+      <li><span class="why-badge">{{ feature_icon(s.icon or 'factory') }}</span><div><strong>{{ s.title }}</strong><span>{{ s.text }}</span></div></li>
       {% endfor %}
     </ul>
     <p class="why-note">{{ site.voltage_note }}</p>

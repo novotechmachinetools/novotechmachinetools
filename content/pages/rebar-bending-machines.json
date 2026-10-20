@@ -2,10 +2,10 @@
  "slug": "rebar-bending-machines",
  "template": "category.html",
  "family_set": "rebar",
- "title": "Rebar Bending Machines | GMS Rebar Benders in Canada | NovoTech",
- "artifact_title": "Rebar Bending Machines",
+ "title": "Rebar Benders | GMS Rebar Benders in Canada | NovoTech",
+ "artifact_title": "Rebar Benders",
  "meta_description": "GMS rebar benders in Canada: B and BS benders to Ø2-3/8″ (60 mm), portable 110 V benders, stirrup, spiral and dowel bar benders. Specs in inches, CSA panels, parts in Mississauga.",
- "h1": "Rebar bending machines",
+ "h1": "Rebar benders",
  "intro": "Every GMS rebar bender NovoTech supplies in Canada: stationary B and BS series benders for the rebar shop, portable MG and BT benders for the job site, SL stirrup benders, SX and AXIS spiral benders, hydraulic dowel bar benders and the MAX 40 combined bender-cutter. All with programmable angles, left-and-right bending and a CSA-approved electrical panel.",
  "hero_points": [
   "Stationary benders from Ø1″ (26 mm) to Ø2-3/8″ (60 mm)",
@@ -31,10 +31,18 @@
    "href": "rebar-bender-and-cutter.html"
   },
   {
-   "label": "Rebar bending machines"
+   "label": "Rebar benders"
   }
  ],
  "groups": [
+  {
+   "id": "portable-rebar-benders-group",
+   "title": "Portable rebar benders",
+   "lead": "Single-phase benders light enough for a pickup truck: 110 V or 220 V with a built-in transformer, digital control optional.",
+   "families": [
+    "Protable-rebar-bender-MG-BT-A-series"
+   ]
+  },
   {
    "id": "stationary-rebar-benders",
    "title": "Stationary rebar benders",
@@ -42,14 +50,6 @@
    "families": [
     "Rebar-bending-machine-B-BS-MG-series",
     "bs-series-long-table-benders"
-   ]
-  },
-  {
-   "id": "portable-rebar-benders-group",
-   "title": "Portable rebar benders",
-   "lead": "Single-phase benders light enough for a pickup truck: 110 V or 220 V with a built-in transformer, digital control optional.",
-   "families": [
-    "Protable-rebar-bender-MG-BT-A-series"
    ]
   },
   {
@@ -104,7 +104,7 @@
  "related_pages": [
   {
    "href": "rebar-cutter.html",
-   "label": "Rebar cutting machines"
+   "label": "Rebar cutters"
   },
   {
    "href": "automatic-rebar-processing-lines.html",

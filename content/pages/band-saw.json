@@ -4,20 +4,20 @@
  "family_set": "bandsaw",
  "nav_label": "All band saws",
  "artifact_title": "Metal Cutting Band Saws",
- "title": "Metal Cutting Band Saws in Canada | Bekamak Premium & NovoFab Value | NovoTech",
- "meta_description": "Horizontal metal cutting band saws in Canada in two lines — premium Bekamak (Turkey) and NovoTech's own NovoFab Machinery value line: manual, semi-automatic, automatic and double-column saws from Ø9″ to 59″, capacity tables and a band saw buying guide.",
+ "title": "Metal Cutting Band Saws in Canada | Bekamak Premium & NovoTech Value Line",
+ "meta_description": "Horizontal metal cutting band saws in Canada in two lines — premium Bekamak (Turkey) and NovoTech's own value line: manual, semi-automatic, automatic and double-column saws from Ø9″ to 59″, capacity tables and a band saw buying guide.",
  "h1": "Metal cutting band saws",
- "intro": "Horizontal band saws for steel fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own NovoFab Machinery value line. Each line has its own pages for manual gravity-feed saws, semi-automatic saws with hydraulic vise, fully automatic NC saws with powered feeding, and double-column saws for heavy bar and bundles — every machine with a CSA-approved panel, spare parts and technical support from Mississauga.",
+ "intro": "Horizontal band saws for steel fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Each line has its own pages for manual gravity-feed saws, semi-automatic saws with hydraulic vise, fully automatic NC saws with powered feeding, and double-column saws for heavy bar and bundles — every machine with a CSA-approved panel, spare parts and technical support from Mississauga.",
  "hero_points": [
-  "Premium line: Bekamak, Ø9″ to 59″ (230–1500 mm)",
-  "Value line: NovoFab Machinery, Ø10″ to 23-5/8″ (254–600 mm)",
-  "Manual, semi-automatic, automatic and double-column saws in each line",
-  "Band saw buying guide, blade selection and troubleshooting chart on this page"
+  "<a href=\"#premium-line\">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)",
+  "<a href=\"#value-line\">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm)",
+  "<a href=\"#bekamak-manual-band-saws-overview\">Manual</a>, <a href=\"#bekamak-semi-automatic-band-saws-overview\">semi-automatic</a>, <a href=\"#bekamak-automatic-band-saws-overview\">automatic</a> and <a href=\"#bekamak-double-column-band-saws-overview\">double-column</a> saws in each line",
+  "<a href=\"#buying-guide\">Band saw buying guide</a>, blade selection and troubleshooting chart on this page"
  ],
- "hero_image": "bk-hero-hub",
+ "hero_image": "bk-hero-auto",
  "hero_image_secondary": [
-  "bk-hero-semi",
-  "nf-dc11a-1-cut"
+  "bk-hero-hub",
+  "nt-h10f-1-cut"
  ],
  "breadcrumb": [
   {
@@ -32,7 +32,7 @@
    "label": "Metal cutting band saws"
   }
  ],
- "hero_brand_line": "Bekamak band saws are made in Turkey; NovoFab Machinery is NovoTech's own value line. Every machine is sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "Bekamak band saws are made in Turkey; the value line carries the NovoTech name. Every machine is sold, installed and supported in Canada by NovoTech.",
  "catalogue_pdfs": [
   {
    "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
@@ -40,9 +40,9 @@
    "size": "PDF · 7.5 MB · imperial units"
   },
   {
-   "file": "files/NovoFab-Band-Saws-Catalogue-2026.pdf",
-   "label": "NovoFab band saw catalogue",
-   "size": "PDF · 4.7 MB · imperial units"
+   "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
+   "label": "Value line band saw catalogue",
+   "size": "PDF · 5.1 MB · imperial units"
   }
  ],
  "subpages": [
@@ -108,61 +108,62 @@
    ]
   },
   {
-   "slug": "novofab-manual-band-saws",
-   "title": "NovoFab manual band saws",
+   "slug": "novotech-manual-band-saws",
+   "title": "NovoTech manual band saws",
    "nav_label": "Manual",
    "cat": "manual",
    "line": "value",
-   "image": "nf-m16-1-cut",
+   "image": "nt-m16-1-cut",
    "blurb": "Ten- to sixteen-inch pivot saws with hydraulic descent control, belt or gear drive and mitre bows at a lower price — specified, stocked and supported by NovoTech.",
    "families": [
-    "novofab-nf-m10",
-    "novofab-nf-m16"
+    "novotech-nt-m10",
+    "novotech-nt-m16"
    ]
   },
   {
-   "slug": "novofab-semi-automatic-band-saws",
-   "title": "NovoFab semi-automatic band saws",
+   "slug": "novotech-semi-automatic-band-saws",
+   "title": "NovoTech semi-automatic band saws",
    "nav_label": "Semi-automatic",
    "cat": "semi-automatic",
    "line": "value",
-   "image": "nf-h18-1-cut",
+   "image": "nt-h10f-1-cut",
    "blurb": "Hydraulic descent, hydraulic vises and automatic bow return from Ø10″ to Ø18″ (254–460 mm), including a single-column saw with touch screen.",
    "families": [
-    "novofab-nf-h10",
-    "novofab-nf-h13",
-    "novofab-nf-h16",
-    "novofab-nf-h12sc",
-    "novofab-nf-h18"
+    "novotech-nt-h10f",
+    "novotech-nt-h10",
+    "novotech-nt-h13",
+    "novotech-nt-h16",
+    "novotech-nt-h12sc",
+    "novotech-nt-h18"
    ]
   },
   {
-   "slug": "novofab-automatic-band-saws",
-   "title": "NovoFab automatic band saws",
+   "slug": "novotech-automatic-band-saws",
+   "title": "NovoTech automatic band saws",
    "nav_label": "Automatic",
    "cat": "automatic",
    "line": "value",
-   "image": "nf-a12sc-1-cut",
+   "image": "nt-a12sc-1-cut",
    "blurb": "Roller-feed, shuttle-vise and CNC servo automatics from Ø11-3/4″ to Ø23-5/8″ (300–600 mm): feed, clamp, cut and count without an operator at the saw.",
    "families": [
-    "novofab-nf-a12",
-    "novofab-nf-a12sc",
-    "novofab-nf-a13",
-    "novofab-nf-a-cnc"
+    "novotech-nt-a12",
+    "novotech-nt-a12sc",
+    "novotech-nt-a13",
+    "novotech-nt-a-cnc"
    ]
   },
   {
-   "slug": "novofab-double-column-band-saws",
-   "title": "NovoFab double-column band saws",
+   "slug": "novotech-double-column-band-saws",
+   "title": "NovoTech double-column band saws",
    "nav_label": "Double-column",
    "cat": "double-column",
    "line": "value",
-   "image": "nf-dc11a-1-cut",
+   "image": "nt-dc11a-1-cut",
    "blurb": "Twin-column saws from Ø11″ to Ø23-5/8″ (280–600 mm): hydraulic semi-automatics, a mitre version, automatics with shuttle vise and gantry saws for plate and bundles.",
    "families": [
-    "novofab-nf-dc11",
-    "novofab-nf-dc14",
-    "novofab-nf-dc20"
+    "novotech-nt-dc11",
+    "novotech-nt-dc14",
+    "novotech-nt-dc20"
    ]
   }
  ],
@@ -187,11 +188,11 @@
  "faq": [
   {
    "q": "What is the difference between the Premium and Value lines?",
-   "a": "Premium-line saws are built by Bekamak in Turkey with European components and the heaviest construction in their class. Value-line saws carry NovoTech's own NovoFab Machinery brand: proven designs built to our specification at a lower price. Each line has its own pages on this site so you can compare like with like. Both lines come with a CSA-approved electrical panel, a 1-year warranty and spare parts and technical support from Mississauga."
+   "a": "Premium-line saws are built by Bekamak in Turkey with European components and the heaviest construction in their class. Value-line saws carry the NovoTech name: proven designs built to our specification at a lower price. Each line has its own pages on this site so you can compare like with like. Both lines come with a CSA-approved electrical panel, a 1-year warranty and spare parts and technical support from Mississauga."
   },
   {
    "q": "How do I choose the size of a band saw?",
-   "a": "Start with the largest round or rectangular stock you cut regularly and add about 1–2 in (25–50 mm) of clearance. Bekamak model numbers give the round capacity in millimetres (BMSY 440 = 440 mm) and NovoFab model numbers give it in inches (NF-H 18 = 18″). Then decide how much automation you need — manual, semi-automatic or automatic — and whether you cut miters. The buying guide on this page walks through each choice."
+   "a": "Start with the largest round or rectangular stock you cut regularly and add about 1–2 in (25–50 mm) of clearance. Bekamak model numbers give the round capacity in millimetres (BMSY 440 = 440 mm) and NovoTech value-line model numbers give it in inches (NT-H 18 = 18″). Then decide how much automation you need — manual, semi-automatic or automatic — and whether you cut miters. The buying guide on this page walks through each choice."
   },
   {
    "q": "Which saws can cut bundles of tube or bar?",
@@ -296,77 +297,82 @@
   },
   {
    "id": "value",
-   "brand": "novofab",
+   "brand": "novotech",
    "label": "Value line",
-   "name": "NovoFab Machinery",
-   "short": "NovoFab",
+   "name": "NovoTech",
+   "short": "NovoTech",
    "pdf": {
-    "file": "files/NovoFab-Band-Saws-Catalogue-2026.pdf",
-    "label": "NovoFab band saw catalogue",
-    "size": "PDF · 4.7 MB · imperial units"
+    "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
+    "label": "Value line band saw catalogue",
+    "size": "PDF · 5.1 MB · imperial units"
    },
-   "blurb": "NovoTech's own brand: proven designs built to our specification at a lower price, with the same CSA-approved panel, 1-year warranty and Mississauga parts and support as every machine we sell.",
+   "blurb": "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, Ontario parts and support as every machine we sell.",
    "subpages": [
     {
-     "slug": "novofab-manual-band-saws",
-     "title": "NovoFab manual band saws",
+     "slug": "novotech-manual-band-saws",
+     "title": "NovoTech manual band saws",
      "nav_label": "Manual",
      "cat": "manual",
      "line": "value",
-     "image": "nf-m16-1-cut",
+     "image": "nt-m16-1-cut",
      "blurb": "Ten- to sixteen-inch pivot saws with hydraulic descent control, belt or gear drive and mitre bows at a lower price — specified, stocked and supported by NovoTech.",
      "families": [
-      "novofab-nf-m10",
-      "novofab-nf-m16"
+      "novotech-nt-m10",
+      "novotech-nt-m16"
      ]
     },
     {
-     "slug": "novofab-semi-automatic-band-saws",
-     "title": "NovoFab semi-automatic band saws",
+     "slug": "novotech-semi-automatic-band-saws",
+     "title": "NovoTech semi-automatic band saws",
      "nav_label": "Semi-automatic",
      "cat": "semi-automatic",
      "line": "value",
-     "image": "nf-h18-1-cut",
+     "image": "nt-h10f-1-cut",
      "blurb": "Hydraulic descent, hydraulic vises and automatic bow return from Ø10″ to Ø18″ (254–460 mm), including a single-column saw with touch screen.",
      "families": [
-      "novofab-nf-h10",
-      "novofab-nf-h13",
-      "novofab-nf-h16",
-      "novofab-nf-h12sc",
-      "novofab-nf-h18"
+      "novotech-nt-h10f",
+      "novotech-nt-h10",
+      "novotech-nt-h13",
+      "novotech-nt-h16",
+      "novotech-nt-h12sc",
+      "novotech-nt-h18"
      ]
     },
     {
-     "slug": "novofab-automatic-band-saws",
-     "title": "NovoFab automatic band saws",
+     "slug": "novotech-automatic-band-saws",
+     "title": "NovoTech automatic band saws",
      "nav_label": "Automatic",
      "cat": "automatic",
      "line": "value",
-     "image": "nf-a12sc-1-cut",
+     "image": "nt-a12sc-1-cut",
      "blurb": "Roller-feed, shuttle-vise and CNC servo automatics from Ø11-3/4″ to Ø23-5/8″ (300–600 mm): feed, clamp, cut and count without an operator at the saw.",
      "families": [
-      "novofab-nf-a12",
-      "novofab-nf-a12sc",
-      "novofab-nf-a13",
-      "novofab-nf-a-cnc"
+      "novotech-nt-a12",
+      "novotech-nt-a12sc",
+      "novotech-nt-a13",
+      "novotech-nt-a-cnc"
      ]
     },
     {
-     "slug": "novofab-double-column-band-saws",
-     "title": "NovoFab double-column band saws",
+     "slug": "novotech-double-column-band-saws",
+     "title": "NovoTech double-column band saws",
      "nav_label": "Double-column",
      "cat": "double-column",
      "line": "value",
-     "image": "nf-dc11a-1-cut",
+     "image": "nt-dc11a-1-cut",
      "blurb": "Twin-column saws from Ø11″ to Ø23-5/8″ (280–600 mm): hydraulic semi-automatics, a mitre version, automatics with shuttle vise and gantry saws for plate and bundles.",
      "families": [
-      "novofab-nf-dc11",
-      "novofab-nf-dc14",
-      "novofab-nf-dc20"
+      "novotech-nt-dc11",
+      "novotech-nt-dc14",
+      "novotech-nt-dc20"
      ]
     }
    ]
   }
  ],
- "related_blurb": "Both lines side by side: every Bekamak and NovoFab band saw, the capacity tables and the band saw buying guide."
+ "related_blurb": "Both lines side by side: every Bekamak and NovoTech value-line band saw, the capacity tables and the band saw buying guide.",
+ "origin_feature": {
+  "title": "Two lines, one standard of support",
+  "text": "Bekamak saws are made in Turkey with European components; value-line saws are manufactured in China to North American standards and sold under the NovoTech name."
+ }
 }

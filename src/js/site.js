@@ -33,6 +33,18 @@
     if (location.hash === "#find-a-machine") aiOpen();
   }
 
+  /* ---------- back-to-top button: appears after one screen of scrolling ---------- */
+  var toTop = d.querySelector(".to-top");
+  if (toTop) {
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function () { toTop.classList.toggle("is-visible", window.scrollY > window.innerHeight * 0.8); ticking = false; });
+    }
+    window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+    toTop.addEventListener("click", function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+  }
+
   /* ---------- mobile navigation ---------- */
   var toggle = d.querySelector(".nav-toggle");
   var menu = d.getElementById("nav-menu");

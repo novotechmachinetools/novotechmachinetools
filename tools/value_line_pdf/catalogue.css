@@ -1,0 +1,304 @@
+/* NovoTech band saw catalogue — print stylesheet (Letter, zero page margins).
+   __FONTS__ is replaced with the file:// path of tools/fonts by make_catalogue.py. */
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; src: url("__FONTS__/barlow-condensed-latin-700-normal.ttf") format("truetype"); }
+@font-face { font-family: "Barlow"; font-weight: 400; font-style: normal; src: url("__FONTS__/barlow-latin-400-normal.ttf") format("truetype"); }
+@font-face { font-family: "Barlow"; font-weight: 500; font-style: normal; src: url("__FONTS__/barlow-latin-500-normal.ttf") format("truetype"); }
+
+:root {
+  --orange: #F28A1F;
+  --ink: #1F2022;
+  --light: #F3F3F3;
+  --mid: #6B6E73;
+  --line: #E2E3E5;
+  --side: 0.45in;
+  --check: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M2.2 8.6l3.6 3.6L13.8 3.6' fill='none' stroke='%23F28A1F' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #fff; }
+body {
+  font-family: "Barlow", Arial, sans-serif;
+  font-weight: 400;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  font-size: 9pt;
+}
+h1, h2, h3, .cond { font-family: "Barlow Condensed", "Barlow", sans-serif; font-weight: 700; }
+p { margin: 0; }
+img { display: block; }
+
+.page {
+  width: 8.5in; height: 11in;
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+  page-break-after: always; break-after: page;
+  background: #fff;
+}
+.page:last-child { page-break-after: auto; break-after: auto; }
+
+/* ------------------------------------------------------------ header */
+.hdr {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex; align-items: center;
+  height: 0.66in;
+  margin: 0 0 0.12in var(--side);
+  padding-right: 2.6in;
+  border-bottom: 1px solid var(--line);
+}
+.hdr-logo { height: 0.42in; width: auto; margin-right: 0.2in; }
+.hdr .t1 { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 15pt; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1; }
+.hdr .t2 { font-weight: 500; font-size: 6.6pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mid); margin-top: 3pt; }
+.hdr-band {
+  position: absolute; right: 0; top: 0.15in;
+  background: var(--orange); color: #fff;
+  font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 10.5pt; letter-spacing: 0.1em; text-transform: uppercase;
+  height: 0.34in; line-height: 0.34in; padding: 0 var(--side) 0 0.32in;
+  border-radius: 4px 0 0 4px;
+}
+
+/* ------------------------------------------------------------ section strip */
+.section-strip {
+  flex: 0 0 auto;
+  display: flex; align-items: baseline; gap: 0.14in;
+  background: var(--ink); color: #fff;
+  margin: 0 var(--side) 0.11in;
+  padding: 0.045in 0.18in 0.055in;
+}
+.section-strip .num { color: var(--orange); font-size: 14.5pt; }
+.section-strip .name { font-size: 14.5pt; text-transform: uppercase; letter-spacing: 0.04em; }
+.section-strip .desc { margin-left: auto; font-size: 7.2pt; letter-spacing: 0.06em; text-transform: uppercase; color: #CFCFD2; }
+
+/* ------------------------------------------------------------ content */
+.content { flex: 0 0 auto; padding: 0 var(--side); }
+.eyebrow { color: var(--orange); font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9.5pt; letter-spacing: 0.15em; text-transform: uppercase; line-height: 1.1; }
+h1 { font-size: 21.5pt; line-height: 1.02; text-transform: uppercase; margin: 0.03in 0 0.085in; letter-spacing: 0.005em; }
+.cols { display: flex; gap: 0.26in; margin-bottom: 0.09in; align-items: flex-start; }
+.left { flex: 1 1 0; min-width: 0; }
+.right { flex: 0 0 3.15in; }
+.summary { font-size: 9pt; line-height: 1.38; margin-bottom: 0.09in; }
+ul.features { list-style: none; margin: 0; padding: 0; }
+ul.features li {
+  position: relative; padding-left: 0.22in; margin-bottom: 0.03in;
+  font-size: 8.8pt; line-height: 1.28;
+}
+ul.features li::before, .incl li::before, .svc li::before {
+  content: ""; position: absolute; left: 0; top: 0.02in; width: 0.14in; height: 0.14in;
+  background: var(--check) no-repeat center / contain;
+}
+.optional { margin-top: 0.06in; font-size: 8.5pt; line-height: 1.35; }
+.optional b { color: var(--orange); font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 8.5pt; letter-spacing: 0.12em; text-transform: uppercase; margin-right: 0.06in; }
+figure { margin: 0; }
+figure.main { height: 2.15in; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+figure.main img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.thumbs { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0 0.08in; margin-top: 0.08in; }
+.thumb img { width: 100%; height: 0.8in; object-fit: contain; background: #fff; border: 1px solid var(--line); }
+.thumb figcaption {
+  font-size: 6.3pt; line-height: 1.2; color: var(--mid); text-align: center; margin-top: 2pt;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+/* families with one or two models have short tables: larger photos */
+.m1 figure.main, .m2 figure.main { height: 2.3in; }
+.m1 .thumb img, .m2 .thumb img { height: 0.95in; }
+.m1.t3 .thumbs, .m1.t4 .thumbs, .m2.t3 .thumbs, .m2.t4 .thumbs { grid-auto-flow: row; grid-template-columns: 1fr 1fr; gap: 0.06in 0.1in; }
+.m4 .spec td { padding-left: 4pt; padding-right: 4pt; }
+.m1 .thumb figcaption, .m2 .thumb figcaption { font-size: 6.8pt; }
+.m1 .summary, .m2 .summary { font-size: 9.4pt; line-height: 1.42; }
+.m1 ul.features li, .m2 ul.features li { font-size: 9.2pt; line-height: 1.32; margin-bottom: 0.04in; }
+.m1 table.spec { font-size: 9pt; }
+.m1 .spec td { padding: 3pt 6pt; }
+.m2 table.spec { font-size: 8.6pt; }
+.m2 .spec td { padding: 2.6pt 6pt; }
+.m1 .spec col.lab, .m2 .spec col.lab { width: 2.05in; }
+.m3 table.spec { font-size: 8.2pt; }
+
+/* spec table */
+table.spec { width: 100%; border-collapse: collapse; font-size: 8pt; line-height: 1.15; table-layout: fixed; }
+.spec th {
+  background: var(--ink); color: #fff;
+  font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9pt; letter-spacing: 0.06em;
+  text-align: center; padding: 3pt 5pt; vertical-align: middle;
+}
+.spec th.lab { background: var(--orange); text-align: left; }
+.spec col.lab { width: 1.7in; }
+.spec td { padding: 1.8pt 5pt; vertical-align: top; text-align: center; border-bottom: 1px solid #fff; }
+.spec tbody tr:nth-child(even) td { background: var(--light); }
+.spec td.lab { text-align: left; font-weight: 500; }
+.spec tr.grp td { background: #fff !important; color: var(--orange); font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 8.5pt; letter-spacing: 0.1em; text-transform: uppercase; padding-top: 2pt; padding-bottom: 0.5pt; border-bottom: 1px solid var(--orange); }
+.spec .met { color: var(--mid); }
+.spec .imp, .spec .met { display: inline-block; }
+.spec .met { margin-left: 3pt; }
+.note { font-size: 7.4pt; color: var(--mid); font-style: italic; margin-top: 0.05in; line-height: 1.3; }
+
+/* fit levels: applied by make_catalogue.py when a page overflows (table type never below 7.5 pt) */
+.fit-1 figure.main { height: 1.95in; }
+.fit-1.m1 figure.main, .fit-1.m2 figure.main { height: 2.1in; }
+.fit-1 .thumb img { height: 0.72in; }
+.fit-1.t3 .thumbs, .fit-1.t4 .thumbs { grid-auto-flow: column; grid-template-columns: none; gap: 0 0.08in; }
+.fit-1.m1 .thumb img, .fit-1.m2 .thumb img { height: 0.85in; }
+.fit-1 .summary { font-size: 8.7pt; line-height: 1.34; }
+.fit-1 ul.features li { font-size: 8.5pt; line-height: 1.25; margin-bottom: 0.025in; }
+.fit-1 table.spec { font-size: 7.8pt; }
+.fit-1 .spec td { padding: 1.6pt 4pt; }
+.fit-1 h1 { font-size: 21pt; }
+.fit-2 figure.main { height: 1.8in; }
+.fit-2.m1 figure.main, .fit-2.m2 figure.main { height: 1.9in; }
+.fit-2 .thumb img { height: 0.65in; }
+.fit-2.m1 .thumb img, .fit-2.m2 .thumb img { height: 0.75in; }
+.fit-2 .summary { font-size: 8.4pt; line-height: 1.3; margin-bottom: 0.07in; }
+.fit-2 ul.features li { font-size: 8.2pt; line-height: 1.22; }
+.fit-2 table.spec { font-size: 7.5pt; line-height: 1.12; }
+.fit-2 .spec td { padding: 1.3pt 4pt; }
+.fit-2 .hdr { height: 0.62in; margin-bottom: 0.1in; }
+.fit-2 .incl ul { padding-top: 0.05in; padding-bottom: 0.05in; }
+.fit-3 figure.main { height: 1.65in; }
+.fit-3 .thumb img { height: 0.58in; }
+.fit-3 .thumb figcaption { display: none; }
+.fit-3 .summary { font-size: 8.2pt; }
+.fit-3 ul.features li { font-size: 8pt; line-height: 1.2; }
+.fit-3 .spec td { padding: 1.1pt 3.5pt; }
+.fit-3 .section-strip { padding-top: 0.04in; padding-bottom: 0.05in; }
+.fit-3 .cols { margin-bottom: 0.07in; }
+.fit-3 .company { padding-bottom: 0.1in; }
+/* roomy pages step down from their larger base instead of jumping to the tight sizes */
+.fit-1.m1 table.spec { font-size: 8.6pt; }
+.fit-1.m1 .spec td { padding: 2.5pt 6pt; }
+.fit-1.m2 table.spec { font-size: 8.3pt; }
+.fit-1.m2 .spec td { padding: 2.2pt 5pt; }
+.fit-2.m1 table.spec { font-size: 8.2pt; line-height: 1.15; }
+.fit-2.m1 .spec td { padding: 2pt 6pt; }
+.fit-2.m2 table.spec { font-size: 8pt; line-height: 1.15; }
+.fit-2.m2 .spec td { padding: 1.8pt 5pt; }
+.fit-3.m1 table.spec, .fit-3.m2 table.spec { font-size: 7.8pt; }
+.fit-4 .thumbs { display: none; }
+.fit-4 .cols { margin-bottom: 0.06in; }
+.fit-5 .summary { display: none; }
+
+/* ------------------------------------------------------------ footer */
+footer { flex: 0 0 auto; margin-top: auto; }
+.incl {
+  display: flex; align-items: stretch;
+  margin: 0 var(--side) 0.075in;
+  background: var(--light);
+}
+.incl .lab {
+  flex: 0 0 1.3in;
+  background: var(--ink); color: #fff;
+  font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9pt; line-height: 1.15; letter-spacing: 0.07em; text-transform: uppercase;
+  padding: 0.07in 0.12in; display: flex; align-items: center;
+}
+.incl ul {
+  flex: 1 1 auto; list-style: none; margin: 0; padding: 0.055in 0.12in;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.03in 0.12in;
+}
+.incl li { position: relative; padding-left: 0.2in; font-size: 7.2pt; line-height: 1.25; }
+.incl li::before { top: 0.012in; width: 0.13in; height: 0.13in; }
+.company {
+  display: flex; align-items: center; gap: 0.16in;
+  padding: 0.06in var(--side) 0.13in;
+  border-top: 2px solid var(--orange);
+  margin: 0;
+}
+.company img { height: 0.36in; width: auto; }
+.company .txt { font-size: 7pt; line-height: 1.4; color: var(--mid); }
+.company .txt b { display: block; color: var(--ink); font-weight: 500; font-size: 7.8pt; }
+.company .pn { margin-left: auto; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 17pt; color: var(--orange); }
+
+/* ------------------------------------------------------------ cover */
+.cover .top { display: flex; align-items: flex-start; padding: 0.42in var(--side) 0; }
+.cover .top img { width: 3.1in; height: auto; }
+.cover .tab {
+  position: absolute; right: 0; top: 0.55in;
+  background: var(--ink); color: #fff;
+  font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 10.5pt; letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 0.11in var(--side) 0.11in 0.34in; border-radius: 4px 0 0 4px;
+}
+.cover .titles { padding: 0.38in var(--side) 0; }
+.cover .eyebrow { font-size: 10.5pt; }
+.cover h1 { font-size: 54pt; line-height: 0.94; margin: 0.08in 0 0; letter-spacing: 0.01em; }
+.cover .rule { width: 1.15in; height: 5px; background: var(--orange); margin: 0.14in 0 0.11in; }
+.cover h2 { font-size: 26pt; line-height: 1; color: var(--orange); text-transform: uppercase; letter-spacing: 0.05em; margin: 0; }
+.cover .sub { font-weight: 500; font-size: 11.5pt; color: var(--mid); margin-top: 0.09in; letter-spacing: 0.01em; }
+.cover .collage {
+  display: grid; grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: 2in 2in;
+  gap: 0.12in; padding: 0.28in var(--side) 0;
+}
+.cover .collage figure { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.cover .collage figure img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.cover .collage .c1 { grid-column: 1 / 3; }
+.cover .collage .c4 { grid-column: 2 / 4; }
+.cover .accent { position: absolute; right: 0; top: 4.75in; width: 0.2in; height: 2.6in; background: var(--orange); border-radius: 3px 0 0 3px; }
+.cover .props {
+  margin-top: auto;
+  background: var(--ink); color: #fff;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.2in;
+  padding: 0.2in var(--side) 0.22in;
+}
+.cover .props .k { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 18pt; line-height: 1; color: var(--orange); text-transform: uppercase; }
+.cover .props .v { font-weight: 500; font-size: 6.8pt; letter-spacing: 0.12em; text-transform: uppercase; color: #D6D7DA; margin-top: 4pt; line-height: 1.4; }
+.cover .company { border-top: 0; padding-top: 0.12in; padding-bottom: 0.28in; }
+.cover.fit-1 .collage { grid-template-rows: 1.8in 1.8in; }
+.cover.fit-1 h1 { font-size: 50pt; }
+.cover.fit-2 .collage { grid-template-rows: 1.65in 1.65in; }
+.cover.fit-2 .top img { width: 2.8in; }
+
+/* ------------------------------------------------------------ range page */
+.range .intro { display: flex; gap: 0.3in; margin-bottom: 0.12in; align-items: flex-start; }
+.range .intro p { flex: 1 1 0; font-size: 8.8pt; line-height: 1.4; }
+.range .toc { flex: 0 0 2.7in; background: var(--light); padding: 0.09in 0.14in 0.1in; }
+.range .toc h3 { margin: 0 0 0.03in; font-size: 10pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); }
+.range .toc div { display: flex; font-size: 8pt; line-height: 1.45; }
+.range .toc div span:first-child { flex: 1 1 auto; }
+.range .toc div span:last-child { font-weight: 500; white-space: nowrap; }
+table.range-t { width: 100%; border-collapse: collapse; font-size: 7.9pt; line-height: 1.15; table-layout: fixed; }
+.range-t col.c-model { width: 1.0in; }
+.range-t col.c-type { width: 0.95in; }
+.range-t col.c-round { width: 1.45in; }
+.range-t col.c-rect { width: 1.95in; }
+.range-t col.c-motor { width: 1.45in; }
+.range-t col.c-page { width: 0.8in; }
+.range-t th {
+  background: var(--ink); color: #fff; text-align: left;
+  font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9pt; letter-spacing: 0.06em;
+  padding: 3pt 6pt;
+}
+.range-t th:first-child { background: var(--orange); }
+.range-t td { padding: 1.9pt 6pt; border-bottom: 1px solid var(--line); vertical-align: top; }
+.range-t td.model { font-weight: 500; white-space: nowrap; }
+.range-t td.pg, .range-t th.pg { text-align: right; }
+.range-t td.pg { font-weight: 500; color: var(--orange); }
+.range-t tr.grp td {
+  padding-top: 4.5pt; padding-bottom: 2pt;
+  font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9.3pt; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink); border-bottom: 1.5px solid var(--orange); background: #fff;
+}
+.range-t tr.grp td { vertical-align: baseline; }
+.range-t tr.grp td.pg { color: var(--mid); font-family: "Barlow", sans-serif; font-weight: 500; font-size: 7.2pt; letter-spacing: 0.06em; text-transform: uppercase; }
+.range.fit-1 table.range-t { font-size: 7.6pt; }
+.range.fit-1 .range-t td { padding: 1.5pt 6pt; }
+.range.fit-1 .intro p { font-size: 8.4pt; }
+.range.fit-2 .range-t td { padding: 1.2pt 6pt; }
+.range.fit-2 table.range-t { font-size: 7.5pt; line-height: 1.1; }
+
+/* ------------------------------------------------------------ services (last) page */
+.services .lead { font-size: 10.5pt; line-height: 1.45; margin: 0.06in 0 0.2in; max-width: 6.6in; }
+ul.svc { list-style: none; margin: 0 0 0.16in; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.1in 0.3in; }
+ul.svc li { position: relative; padding: 0.1in 0.14in 0.1in 0.46in; background: var(--light); font-size: 10.5pt; line-height: 1.35; font-weight: 500; min-height: 0.62in; display: flex; align-items: center; }
+ul.svc li::before { left: 0.14in; top: 50%; margin-top: -0.09in; width: 0.18in; height: 0.18in; }
+.services .volt { font-size: 9.5pt; color: var(--ink); margin-bottom: 0.3in; }
+.services .volt b { font-weight: 500; }
+.contact { display: flex; gap: 0.35in; align-items: flex-start; padding-top: 0.2in; border-top: 2px solid var(--orange); }
+.contact img { width: 2.4in; height: auto; margin-top: 0.05in; }
+.contact .addr { font-size: 10pt; line-height: 1.5; }
+.contact .addr b { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 15pt; letter-spacing: 0.02em; display: block; margin-bottom: 0.03in; }
+.contact .url { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 22pt; color: var(--orange); margin: 0.06in 0 0.02in; letter-spacing: 0.01em; }
+.contact .how { font-size: 8.6pt; color: var(--mid); margin-top: 0.1in; line-height: 1.45; max-width: 3.9in; }
+.brandnote { display: flex; align-items: center; gap: 0.22in; margin-top: 0.4in; padding: 0.16in 0.2in; background: var(--light); }
+.brandnote img { height: 0.5in; width: auto; }
+.brandnote p { font-size: 9.2pt; line-height: 1.45; color: var(--ink); }
+.services .fine { font-size: 8pt; color: var(--mid); margin-top: 0.2in; }
+.services.fit-1 .brandnote { margin-top: 0.15in; }
+.services.fit-1 ul.svc li { min-height: 0.42in; font-size: 9.5pt; }
+.services.fit-2 .contact .how { display: none; }

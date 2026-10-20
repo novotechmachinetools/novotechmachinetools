@@ -21,6 +21,24 @@ if "--only" in sys.argv:
 mpath = os.path.join(ROOT, "tools", "image_manifest.json")
 manifest = json.load(open(mpath)) if (only and os.path.exists(mpath)) else {}
 
+def trim_white(im, thr=236, pad=0.025):
+    """Crop the white studio margin around a photo so the machine fills the frame (keeps a small
+    margin). Only near-white rows/columns at the edges are removed; photos without a white border
+    come back unchanged."""
+    if im.mode != "RGB":
+        return im
+    g = im.convert("L")
+    bbox = g.point(lambda v: 0 if v >= thr else 255).getbbox()
+    if not bbox:
+        return im
+    l, t, r, b = bbox
+    px = round(max(r - l, b - t) * pad)
+    box = (max(0, l - px), max(0, t - px), min(im.width, r + px), min(im.height, b + px))
+    if box[2] - box[0] < im.width * 0.35 or box[3] - box[1] < im.height * 0.35:
+        return im   # something odd (mostly white image) — leave it
+    return im.crop(box)
+
+
 def trim_alpha(im, pad=12):
     """Crop a transparent cut-out to its content box, leaving a small margin."""
     if im.mode != "RGBA":
@@ -46,6 +64,8 @@ for name, spec in MAP.items():
         im = trim_alpha(im)
     if spec.get("crop"):
         im = im.crop(tuple(spec["crop"]))
+    if spec.get("trim_white", True) and not has_alpha and spec.get("section", "rebar") != "guide" and not name.startswith("video-"):
+        im = trim_white(im)
     section = spec.get("section", "rebar")
     outdir = os.path.join(ROOT, "src", "img", section)
     os.makedirs(outdir, exist_ok=True)

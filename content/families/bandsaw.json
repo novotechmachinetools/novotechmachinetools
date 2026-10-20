@@ -17,20 +17,21 @@
   "bekamak-bmso-cgs",
   "bekamak-bmso-xs",
   "bekamak-bmsy-heavy",
-  "novofab-nf-m10",
-  "novofab-nf-m16",
-  "novofab-nf-h10",
-  "novofab-nf-h13",
-  "novofab-nf-h16",
-  "novofab-nf-h12sc",
-  "novofab-nf-h18",
-  "novofab-nf-a12",
-  "novofab-nf-a12sc",
-  "novofab-nf-a13",
-  "novofab-nf-a-cnc",
-  "novofab-nf-dc11",
-  "novofab-nf-dc14",
-  "novofab-nf-dc20"
+  "novotech-nt-m10",
+  "novotech-nt-m16",
+  "novotech-nt-h10f",
+  "novotech-nt-h10",
+  "novotech-nt-h13",
+  "novotech-nt-h16",
+  "novotech-nt-h12sc",
+  "novotech-nt-h18",
+  "novotech-nt-a12",
+  "novotech-nt-a12sc",
+  "novotech-nt-a13",
+  "novotech-nt-a-cnc",
+  "novotech-nt-dc11",
+  "novotech-nt-dc14",
+  "novotech-nt-dc20"
  ],
  "families": {
   "bekamak-bms-dg": {
@@ -4299,21 +4300,21 @@
     ]
    }
   },
-  "novofab-nf-m10": {
-   "id": "novofab-nf-m10",
-   "brand": "novofab",
+  "novotech-nt-m10": {
+   "id": "novotech-nt-m10",
+   "brand": "novotech",
    "line": "value",
    "group": "manual",
-   "name": "NF-M 10 series manual pivot band saws, 10″",
-   "short": "NF-M 10 manual saws",
-   "models_label": "NF-M 10 · NF-M 10 S · NF-M 10 D · NF-M 10 T",
-   "summary": "Four 10-inch gravity-feed pivot saws for the maintenance shop and light fabrication. The bow descends on a hydraulic damper with adjustable feed, a four-speed belt drive matches blade speed to the material, and every model ships with a coolant system and a repeat-cut stop rod. Pick the mitre arrangement you need: mitre vise (NF-M 10), swivel bow 45°–90° (NF-M 10 S), a larger frame with hydraulic down-feed control (NF-M 10 D) or a twin-mitre bow that swings 60° both ways (NF-M 10 T).",
+   "name": "NT-M 10 series manual pivot band saws, 10″",
+   "short": "NT-M 10 manual saws",
+   "models_label": "NT-M 10 · NT-M 10 S · NT-M 10 D · NT-M 10 T",
+   "summary": "Four 10-inch gravity-feed pivot saws for the maintenance shop and light fabrication. The bow descends on a hydraulic damper with adjustable feed, a four-speed belt drive matches blade speed to the material, and every model ships with a coolant system and a repeat-cut stop rod. Pick the mitre arrangement you need: mitre vise (NT-M 10), swivel bow 45°–90° (NT-M 10 S), a larger frame with hydraulic down-feed control (NT-M 10 D) or a twin-mitre bow that swings 60° both ways (NT-M 10 T).",
    "features": [
     "Descent controlled by a hydraulic cylinder — adjustable, repeatable feed pressure",
-    "Four blade speeds on a belt drive (up to 427 ft/min on the NF-M 10 D / 10 T)",
+    "Four blade speeds on a belt drive (up to 427 ft/min on the NT-M 10 D / 10 T)",
     "1-1/8″ × 0.035″ bi-metal blade, coolant pump and stop rod included",
-    "NF-M 10 S: bow swivels 45°–90° for mitre cuts without moving the stock",
-    "NF-M 10 T: bow swivels both ways — 45° left and right, 60° right",
+    "NT-M 10 S: bow swivels 45°–90° for mitre cuts without moving the stock",
+    "NT-M 10 T: bow swivels both ways — 45° left and right, 60° right",
     "2 HP (1.5 kW) three-phase motor; 600 V with CSA-approved panel"
    ],
    "optional": [
@@ -4321,10 +4322,10 @@
     "Extra blades"
    ],
    "images": [
-    "nf-m10-1",
-    "nf-m10s-1",
-    "nf-m10d-1",
-    "nf-m10t-1"
+    "nt-m10-1",
+    "nt-m10s-1",
+    "nt-m10d-1",
+    "nt-m10t-1"
    ],
    "videos": [],
    "specs": {
@@ -4332,7 +4333,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-M 10",
+      "name": "NT-M 10",
       "capacity_mm": {
        "0": {
         "round": 254,
@@ -4373,7 +4374,7 @@
       "notes": "Angle cuts via the mitre vise (the frame does not swivel)."
      },
      {
-      "name": "NF-M 10 S",
+      "name": "NT-M 10 S",
       "capacity_mm": {
        "0": {
         "round": 254,
@@ -4414,7 +4415,7 @@
       "notes": ""
      },
      {
-      "name": "NF-M 10 D",
+      "name": "NT-M 10 D",
       "capacity_mm": {
        "0": {
         "round": 260,
@@ -4455,7 +4456,7 @@
       "notes": ""
      },
      {
-      "name": "NF-M 10 T",
+      "name": "NT-M 10 T",
       "capacity_mm": {
        "0": {
         "round": 260,
@@ -4514,14 +4515,14 @@
     ]
    }
   },
-  "novofab-nf-m16": {
-   "id": "novofab-nf-m16",
-   "brand": "novofab",
+  "novotech-nt-m16": {
+   "id": "novotech-nt-m16",
+   "brand": "novotech",
    "line": "value",
    "group": "manual",
-   "name": "NF-M 16 manual band saw, 15-3/4″",
-   "short": "NF-M 16",
-   "models_label": "NF-M 16",
+   "name": "NT-M 16 manual band saw, 15-3/4″",
+   "short": "NT-M 16",
+   "models_label": "NT-M 16",
    "summary": "A big 15¾-inch pivot saw with a gear-driven two-speed motor and sintered-carbide blade guides, for shops that cut heavy sections but do not need an automatic cycle. The bow swivels for mitre cuts up to 60°, the sliding vise has a quick clamp for fast workpiece changes, and the heavy welded base keeps the cut square on 21-3/4″ × 14-1/4″ stock.",
    "features": [
     "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; mitre cuts up to 60°",
@@ -4532,10 +4533,10 @@
    ],
    "optional": [
     "Roller stand with length stop",
-    "Hydraulic version — see NF-H 16"
+    "Hydraulic version — see NT-H 16"
    ],
    "images": [
-    "nf-m16-1"
+    "nt-m16-1"
    ],
    "videos": [],
    "specs": {
@@ -4543,7 +4544,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-M 16",
+      "name": "NT-M 16",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -4593,19 +4594,132 @@
     ]
    }
   },
-  "novofab-nf-h10": {
-   "id": "novofab-nf-h10",
-   "brand": "novofab",
+  "novotech-nt-h10f": {
+   "id": "novotech-nt-h10f",
+   "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 10 series hydraulic band saws, 10″",
-   "short": "NF-H 10 hydraulic saws",
-   "models_label": "NF-H 10 S · NF-H 10 T",
-   "summary": "The hydraulic versions of the 10-inch pivot saws: a hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts automatically at the end of the cut and the machine shuts off — the operator only loads, clamps and starts. The NF-H 10 S adds a hydraulic clamping vise and a swivel bow for 45° mitres; the NF-H 10 T swings both ways for 45°/60° cuts and comes with a movable control panel.",
+   "name": "NT-H 10 F full-hydraulic twin-mitre band saw, 10″",
+   "short": "NT-H 10 F",
+   "models_label": "NT-H 10 F",
+   "summary": "Our most popular value-line saw: a 10-inch gear-driven semi-automatic with everything hydraulic — the vise clamps hydraulically, the bow descends on a hydraulic cylinder at a dialled-in feed rate and lifts itself hydraulically at the end of the cut. The bow swivels to both sides for 30°, 45° and 60° mitres with fast angle stops, the two-speed motor drives a high-capacity band through a gearbox, and an inverter option gives stepless blade speed. One operator loads, clamps and starts; the saw does the rest.",
+   "features": [
+    "Ø9-7/8″ (250 mm) round / 12-1/2″ × 7-1/2″ at 0°; Ø9″ at 45° both sides, Ø5-7/8″ at 60°",
+    "Hydraulic clamping vise, hydraulic down-feed with variable feed rate and hydraulic bow up-lift",
+    "Swivels left and right with fast angle stops at 30°, 45° and 60°",
+    "Gear-driven two-speed 1/1.5 HP motor (157/315 ft/min at 60 Hz); inverter drive optional",
+    "Bow pivots on adjustable tapered bearings — no backlash; electro-mechanical blade tensioner with microswitch",
+    "Safety guards on the flywheel casing and blade; electric coolant system; 1-1/8″ × 0.035″ × 111-1/4″ blade"
+   ],
+   "optional": [
+    "Inverter drive (stepless blade speed)",
+    "Roller stand with length stop",
+    "Extra blades"
+   ],
+   "images": [
+    "nt-h10f-1",
+    "nt-h10f-2",
+    "nt-h10f-3"
+   ],
+   "videos": [
+    {
+     "id": "jX-yVggdD-U",
+     "title": "NovoTech NT-H 10 F 10″ semi-automatic double-mitre band saw with inverter drive, hydraulic up-lift and hydraulic vise",
+     "thumb": "video-jX-yVggdD-U",
+     "duration": "PT4M2S"
+    },
+    {
+     "id": "-mHWeLoh_mo",
+     "title": "NT-H 10 F 10″ semi-automatic swivel band saw — hydraulic up-lift and down-feed, mitre cuts both sides",
+     "thumb": "video-_mHWeLoh_mo",
+     "duration": "PT1M18S"
+    },
+    {
+     "id": "obbCib0YB24",
+     "title": "NT-H 10 F 10″ double-mitre semi-automatic band saw with hydraulic vise",
+     "thumb": "video-obbCib0YB24",
+     "duration": "PT1M1S"
+    }
+   ],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "NT-H 10 F",
+      "capacity_mm": {
+       "0": {
+        "round": 250,
+        "rect": [
+         315,
+         190
+        ],
+        "square": null
+       },
+       "+45": {
+        "round": 230,
+        "rect": [
+         210,
+         190
+        ],
+        "square": null
+       },
+       "-45": {
+        "round": 230,
+        "rect": [
+         210,
+         190
+        ],
+        "square": null
+       },
+       "+60": {
+        "round": 150,
+        "rect": [
+         130,
+         150
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": "0.75-1.1",
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "40/80",
+      "band_mm": [
+       2825,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 400,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic",
+       "Bow lift": "Hydraulic",
+       "Mitre cutting": "Swivel bow, 45° left / 30°, 45° and 60° right",
+       "Drive": "Gear, 2 speeds",
+       "Packing size": "1630 × 900 × 1550 mm",
+       "Gross weight": "515 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novotech-nt-h10": {
+   "id": "novotech-nt-h10",
+   "brand": "novotech",
+   "line": "value",
+   "group": "semi-automatic",
+   "name": "NT-H 10 series hydraulic band saws, 10″",
+   "short": "NT-H 10 hydraulic saws",
+   "models_label": "NT-H 10 S · NT-H 10 T",
+   "summary": "The hydraulic versions of the 10-inch pivot saws: a hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts automatically at the end of the cut and the machine shuts off — the operator only loads, clamps and starts. The NT-H 10 S adds a hydraulic clamping vise and a swivel bow for 45° mitres; the NT-H 10 T swings both ways for 45°/60° cuts and comes with a movable control panel.",
    "features": [
     "Hydraulic descent with variable feed speed; automatic bow return and shut-off",
-    "NF-H 10 S: hydraulic clamping vise, swivel bow 45°–90°, manual or auto-cut cycle",
-    "NF-H 10 T: twin-mitre bow (45° left, 45°/60° right), quick-clamp vise, movable control panel",
+    "NT-H 10 S: hydraulic clamping vise, swivel bow 45°–90°, manual or auto-cut cycle",
+    "NT-H 10 T: twin-mitre bow (45° left, 45°/60° right), quick-clamp vise, movable control panel",
     "Four-speed belt drive, 2 HP (1.5 kW) three-phase motor",
     "Coolant system and stop rod included"
    ],
@@ -4613,8 +4727,8 @@
     "Roller stand with length stop"
    ],
    "images": [
-    "nf-h10s-1",
-    "nf-h10t-1"
+    "nt-h10s-1",
+    "nt-h10t-1"
    ],
    "videos": [],
    "specs": {
@@ -4622,7 +4736,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 10 S",
+      "name": "NT-H 10 S",
       "capacity_mm": {
        "0": {
         "round": 254,
@@ -4664,7 +4778,7 @@
       "notes": ""
      },
      {
-      "name": "NF-H 10 T",
+      "name": "NT-H 10 T",
       "capacity_mm": {
        "0": {
         "round": 260,
@@ -4724,21 +4838,21 @@
     ]
    }
   },
-  "novofab-nf-h13": {
-   "id": "novofab-nf-h13",
-   "brand": "novofab",
+  "novotech-nt-h13": {
+   "id": "novotech-nt-h13",
+   "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 13 twin-mitre hydraulic band saws, 13″",
-   "short": "NF-H 13 saws",
-   "models_label": "NF-H 13 · NF-H 13 C",
-   "summary": "A 13-inch gear-driven semi-automatic saw whose bow swivels both ways — 45° left and right, 60° right — with a quick lock at every angle. Hydraulic vise, hydraulic descent and a two-speed gear motor make it the workhorse for structural steel, tube and profile cutting. The NF-H 13 C is the same machine with a movable control panel on an arm. PLC control and servo feed can be added to turn it into an automatic.",
+   "name": "NT-H 13 twin-mitre hydraulic band saws, 13″",
+   "short": "NT-H 13 saws",
+   "models_label": "NT-H 13 · NT-H 13 C",
+   "summary": "A 13-inch gear-driven semi-automatic saw whose bow swivels both ways — 45° left and right, 60° right — with a quick lock at every angle. Hydraulic vise, hydraulic descent and a two-speed gear motor make it the workhorse for structural steel, tube and profile cutting. The NT-H 13 C is the same machine with a movable control panel on an arm. PLC control and servo feed can be added to turn it into an automatic.",
    "features": [
     "Ø13″ (330 mm) round / 18″ × 9-7/8″ at 0°; Ø12″ at 45° both sides, Ø8″ at 60°",
     "Hydraulic clamping vise and hydraulic bow descent",
     "Bow swivels left and right with quick lock",
     "Gear drive, two-speed 2/3 HP (1.5/2.2 kW) motor — 157/315 ft/min at 60 Hz",
-    "NF-H 13 C: movable control panel"
+    "NT-H 13 C: movable control panel"
    ],
    "optional": [
     "PLC control",
@@ -4746,8 +4860,8 @@
     "Roller stands"
    ],
    "images": [
-    "nf-h13-1",
-    "nf-h13c-1"
+    "nt-h13-1",
+    "nt-h13c-1"
    ],
    "videos": [],
    "specs": {
@@ -4755,7 +4869,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 13",
+      "name": "NT-H 13",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -4812,7 +4926,7 @@
       "notes": ""
      },
      {
-      "name": "NF-H 13 C",
+      "name": "NT-H 13 C",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -4872,15 +4986,15 @@
     ]
    }
   },
-  "novofab-nf-h16": {
-   "id": "novofab-nf-h16",
-   "brand": "novofab",
+  "novotech-nt-h16": {
+   "id": "novotech-nt-h16",
+   "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 16 hydraulic band saw, 15-3/4″",
-   "short": "NF-H 16",
-   "models_label": "NF-H 16",
-   "summary": "The hydraulic version of the NF-M 16: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 21-3/4″ × 14-1/4″.",
+   "name": "NT-H 16 hydraulic band saw, 15-3/4″",
+   "short": "NT-H 16",
+   "models_label": "NT-H 16",
+   "summary": "The hydraulic version of the NT-M 16: the saw frame descends and rises automatically, so one operator can clamp, start and walk away. Gear-driven two-speed motor, sintered-carbide guides, quick-clamp sliding vise and mitre cuts up to 60° on stock up to 21-3/4″ × 14-1/4″.",
    "features": [
     "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; mitre cuts up to 60°",
     "Automatic bow descent and return on a hydraulic cylinder",
@@ -4892,7 +5006,7 @@
     "Roller stand with length stop"
    ],
    "images": [
-    "nf-h16-1"
+    "nt-h16-1"
    ],
    "videos": [],
    "specs": {
@@ -4900,7 +5014,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 16",
+      "name": "NT-H 16",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -4950,15 +5064,15 @@
     ]
    }
   },
-  "novofab-nf-h12sc": {
-   "id": "novofab-nf-h12sc",
-   "brand": "novofab",
+  "novotech-nt-h12sc": {
+   "id": "novotech-nt-h12sc",
+   "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 12 SC single-column band saw with touch screen",
-   "short": "NF-H 12 SC",
-   "models_label": "NF-H 12 SC",
-   "summary": "A single-column saw for straight cuts up to Ø11-3/4″ / 19-3/4″ × 11-3/4″ with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the NF-A 12 SC.",
+   "name": "NT-H 12 SC single-column band saw with touch screen",
+   "short": "NT-H 12 SC",
+   "models_label": "NT-H 12 SC",
+   "summary": "A single-column saw for straight cuts up to Ø11-3/4″ / 19-3/4″ × 11-3/4″ with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the NT-A 12 SC.",
    "features": [
     "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
     "PLC control with graphical finger-touch screen; work light",
@@ -4968,13 +5082,13 @@
    ],
    "optional": [
     "Roller stands",
-    "Automatic feeding — see NF-A 12 SC"
+    "Automatic feeding — see NT-A 12 SC"
    ],
    "images": [
-    "nf-h12sc-1",
-    "nf-h12sc-2",
-    "nf-h12sc-3",
-    "nf-h12sc-4"
+    "nt-h12sc-1",
+    "nt-h12sc-2",
+    "nt-h12sc-3",
+    "nt-h12sc-4"
    ],
    "videos": [],
    "specs": {
@@ -4982,7 +5096,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 12 SC",
+      "name": "NT-H 12 SC",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5019,15 +5133,15 @@
     ]
    }
   },
-  "novofab-nf-h18": {
-   "id": "novofab-nf-h18",
-   "brand": "novofab",
+  "novotech-nt-h18": {
+   "id": "novotech-nt-h18",
+   "brand": "novotech",
    "line": "value",
    "group": "semi-automatic",
-   "name": "NF-H 18 hydraulic swivel-head band saw, 18″",
-   "short": "NF-H 18",
-   "models_label": "NF-H 18",
-   "summary": "An 18-inch swivel-head saw with automatic cutting and manual feeding: hydraulic vise, variable-frequency drive for stepless blade speed, a digital read-out for the feed position and a movable control panel. The bow swivels 45° to both sides and 60° to the right, and the gear-driven 7.4 HP motor handles 25-1/2″ × 13-3/4″ sections. Same frame as the automatic NF-A 18 without the feeder.",
+   "name": "NT-H 18 hydraulic swivel-head band saw, 18″",
+   "short": "NT-H 18",
+   "models_label": "NT-H 18",
+   "summary": "An 18-inch swivel-head saw with automatic cutting and manual feeding: hydraulic vise, variable-frequency drive for stepless blade speed, a digital read-out for the feed position and a movable control panel. The bow swivels 45° to both sides and 60° to the right, and the gear-driven 7.4 HP motor handles 25-1/2″ × 13-3/4″ sections. Same frame as the automatic NT-A 18 without the feeder.",
    "features": [
     "Ø18″ (460 mm) round / 25-1/2″ × 13-3/4″ at 0°; Ø18″ at 45° both sides, Ø12-1/4″ at 60°",
     "Automatic cutting cycle; material fed by hand on the roller table",
@@ -5037,11 +5151,11 @@
    ],
    "optional": [
     "Roller conveyors",
-    "Automatic feeding — see NF-A 18"
+    "Automatic feeding — see NT-A 18"
    ],
    "images": [
-    "nf-h18-1",
-    "nf-h18-2"
+    "nt-h18-1",
+    "nt-h18-2"
    ],
    "videos": [],
    "specs": {
@@ -5049,7 +5163,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-H 18",
+      "name": "NT-H 18",
       "capacity_mm": {
        "0": {
         "round": 460,
@@ -5109,32 +5223,32 @@
     ]
    }
   },
-  "novofab-nf-a12": {
-   "id": "novofab-nf-a12",
-   "brand": "novofab",
+  "novotech-nt-a12": {
+   "id": "novotech-nt-a12",
+   "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 12 automatic band saws with roller feed, 11-3/4″",
-   "short": "NF-A 12 automatic saws",
-   "models_label": "NF-A 12 · NF-A 12 T",
-   "summary": "Compact automatic saws for batch cutting of bar, tube and profile up to Ø11-3/4″: a powered roller feed advances the stock, the hydraulic vise clamps, the bow cuts and returns, and the cycle repeats for the programmed count. Stepless blade speed from an inverter, gear drive and a 3 HP motor. The NF-A 12 T adds an automatic mitre head for angle cuts of 30°, 45° and 60°.",
+   "name": "NT-A 12 automatic band saws with roller feed, 11-3/4″",
+   "short": "NT-A 12 automatic saws",
+   "models_label": "NT-A 12 · NT-A 12 T",
+   "summary": "Compact automatic saws for batch cutting of bar, tube and profile up to Ø11-3/4″: a powered roller feed advances the stock, the hydraulic vise clamps, the bow cuts and returns, and the cycle repeats for the programmed count. Stepless blade speed from an inverter, gear drive and a 3 HP motor. The NT-A 12 T adds an automatic mitre head for angle cuts of 30°, 45° and 60°.",
    "features": [
     "Ø11-3/4″ (300 mm) round / 14-1/2″ × 11″ rectangular at 0°",
     "Roller feeding with automatic cycle; piece counter",
     "Hydraulic clamping vise; inverter-driven blade speed 0–371 ft/min",
     "Gear drive, 3 HP (2.2 kW) main motor, 0.3 HP feed motor",
-    "NF-A 12 T: mitre cutting 0°–60° (Ø11″ at 30°, Ø9″ at 45°, Ø5-1/8″ at 60°)"
+    "NT-A 12 T: mitre cutting 0°–60° (Ø11″ at 30°, Ø9″ at 45°, Ø5-1/8″ at 60°)"
    ],
    "optional": [
     "Roller conveyors",
     "Extra blades"
    ],
    "images": [
-    "nf-a12-1",
-    "nf-a12-2",
-    "nf-a12-3",
-    "nf-a12t-1",
-    "nf-a12t-2"
+    "nt-a12-1",
+    "nt-a12-2",
+    "nt-a12-3",
+    "nt-a12t-1",
+    "nt-a12t-2"
    ],
    "videos": [],
    "specs": {
@@ -5142,7 +5256,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 12",
+      "name": "NT-A 12",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5177,7 +5291,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 12 T",
+      "name": "NT-A 12 T",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5238,14 +5352,14 @@
     ]
    }
   },
-  "novofab-nf-a12sc": {
-   "id": "novofab-nf-a12sc",
-   "brand": "novofab",
+  "novotech-nt-a12sc": {
+   "id": "novotech-nt-a12sc",
+   "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 12 SC single-column automatic band saw",
-   "short": "NF-A 12 SC",
-   "models_label": "NF-A 12 SC",
+   "name": "NT-A 12 SC single-column automatic band saw",
+   "short": "NT-A 12 SC",
+   "models_label": "NT-A 12 SC",
    "summary": "The automatic version of the single-column saw: a hydraulic shuttle vise feeds up to 19-3/4″ (500 mm) per stroke, a batch clamping device holds bundles, and an automatic chip conveyor clears the swarf. PLC control with touch screen, hydraulic jaw vise, variable hydraulic down-feed, rapid descent until the blade touches the work and blade overload protection.",
    "features": [
     "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
@@ -5258,10 +5372,10 @@
     "Roller conveyors"
    ],
    "images": [
-    "nf-a12sc-1",
-    "nf-a12sc-2",
-    "nf-a12sc-3",
-    "nf-a12sc-4"
+    "nt-a12sc-1",
+    "nt-a12sc-2",
+    "nt-a12sc-3",
+    "nt-a12sc-4"
    ],
    "videos": [],
    "specs": {
@@ -5269,7 +5383,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 12 SC",
+      "name": "NT-A 12 SC",
       "capacity_mm": {
        "0": {
         "round": 300,
@@ -5308,15 +5422,15 @@
     ]
    }
   },
-  "novofab-nf-a13": {
-   "id": "novofab-nf-a13",
-   "brand": "novofab",
+  "novotech-nt-a13": {
+   "id": "novotech-nt-a13",
+   "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 13 automatic twin-mitre band saw with 20 ft stand",
-   "short": "NF-A 13",
-   "models_label": "NF-A 13",
-   "summary": "The automatic version of the NF-H 13: PLC-controlled feeding and clamping with a shuttle vise (19-3/4″ per stroke), feed length selectable in inches or millimetres, and a 20 ft (6 m) material stand — 10 ft feed and 10 ft return — delivered with the machine. The bow still swivels to both sides for mitre cuts, and a guard net protects the operator. Gear drive with a two-speed motor.",
+   "name": "NT-A 13 automatic twin-mitre band saw with 20 ft stand",
+   "short": "NT-A 13",
+   "models_label": "NT-A 13",
+   "summary": "The automatic version of the NT-H 13: PLC-controlled feeding and clamping with a shuttle vise (19-3/4″ per stroke), feed length selectable in inches or millimetres, and a 20 ft (6 m) material stand — 10 ft feed and 10 ft return — delivered with the machine. The bow still swivels to both sides for mitre cuts, and a guard net protects the operator. Gear drive with a two-speed motor.",
    "features": [
     "Ø13″ (330 mm) round / 18″ × 9-7/8″ at 0°; Ø12″ at 45° both sides, Ø8″ at 60°",
     "Automatic feeding and clamping, max. 19-3/4″ (500 mm) per stroke; standard PLC",
@@ -5329,9 +5443,9 @@
     "Servo motor (variable blade speed)"
    ],
    "images": [
-    "nf-a13-1",
-    "nf-a13-2",
-    "nf-a13-3"
+    "nt-a13-1",
+    "nt-a13-2",
+    "nt-a13-3"
    ],
    "videos": [],
    "specs": {
@@ -5339,7 +5453,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 13",
+      "name": "NT-A 13",
       "capacity_mm": {
        "0": {
         "round": 330,
@@ -5400,30 +5514,30 @@
     ]
    }
   },
-  "novofab-nf-a-cnc": {
-   "id": "novofab-nf-a-cnc",
-   "brand": "novofab",
+  "novotech-nt-a-cnc": {
+   "id": "novotech-nt-a-cnc",
+   "brand": "novotech",
    "line": "value",
    "group": "automatic",
-   "name": "NF-A 14 to NF-A 24 CNC automatic band saws",
-   "short": "NF-A CNC saws",
-   "models_label": "NF-A 14 · NF-A 16 · NF-A 18 · NF-A 24",
-   "summary": "Production saws with CNC feeding and cutting: a servo-driven feeder positions the stock, hydraulic vises clamp it, the servo blade drive sets a stepless cutting speed and the PLC runs the batch. The NF-A 14 and NF-A 16 have an automatic rotary bow (45°) and chip extraction; the NF-A 18 feeds up to 25-1/2″ per stroke with a linear scale on the feed and a swivelling control panel; the NF-A 24 cuts 33-1/2″ × 23-5/8″ sections with a hydraulic feeder as standard.",
+   "name": "NT-A 14 to NT-A 24 CNC automatic band saws",
+   "short": "NT-A CNC saws",
+   "models_label": "NT-A 14 · NT-A 16 · NT-A 18 · NT-A 24",
+   "summary": "Production saws with CNC feeding and cutting: a servo-driven feeder positions the stock, hydraulic vises clamp it, the servo blade drive sets a stepless cutting speed and the PLC runs the batch. The NT-A 14 and NT-A 16 have an automatic rotary bow (45°) and chip extraction; the NT-A 18 feeds up to 25-1/2″ per stroke with a linear scale on the feed and a swivelling control panel; the NT-A 24 cuts 33-1/2″ × 23-5/8″ sections with a hydraulic feeder as standard.",
    "features": [
-    "Round capacity from Ø13-3/4″ (350 mm) to Ø23-5/8″ (600 mm); mitre cuts to 45° (NF-A 18: 60°)",
+    "Round capacity from Ø13-3/4″ (350 mm) to Ø23-5/8″ (600 mm); mitre cuts to 45° (NT-A 18: 60°)",
     "CNC / PLC automatic feeding and clamping, hydraulic vises",
-    "Servo motor for stepless blade speed; industrial gearbox (NF-A 18)",
-    "Feed per stroke: 19-3/4″ (NF-A 14/16), 25-1/2″ (NF-A 18), 23-5/8″ (NF-A 24)",
+    "Servo motor for stepless blade speed; industrial gearbox (NT-A 18)",
+    "Feed per stroke: 19-3/4″ (NT-A 14/16), 25-1/2″ (NT-A 18), 23-5/8″ (NT-A 24)",
     "Work light, chip extraction and coolant system included"
    ],
    "optional": [
     "Material supports and roller conveyors"
    ],
    "images": [
-    "nf-a14-1",
-    "nf-a18-1",
-    "nf-a18-2",
-    "nf-a24-1"
+    "nt-a14-1",
+    "nt-a18-1",
+    "nt-a18-2",
+    "nt-a24-1"
    ],
    "videos": [],
    "specs": {
@@ -5431,7 +5545,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-A 14",
+      "name": "NT-A 14",
       "capacity_mm": {
        "0": {
         "round": 350,
@@ -5474,7 +5588,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 16",
+      "name": "NT-A 16",
       "capacity_mm": {
        "0": {
         "round": 415,
@@ -5517,7 +5631,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 18",
+      "name": "NT-A 18",
       "capacity_mm": {
        "0": {
         "round": 460,
@@ -5568,7 +5682,7 @@
       "notes": ""
      },
      {
-      "name": "NF-A 24",
+      "name": "NT-A 24",
       "capacity_mm": {
        "0": {
         "round": 600,
@@ -5613,21 +5727,21 @@
     ]
    }
   },
-  "novofab-nf-dc11": {
-   "id": "novofab-nf-dc11",
-   "brand": "novofab",
+  "novotech-nt-dc11": {
+   "id": "novotech-nt-dc11",
+   "brand": "novotech",
    "line": "value",
    "group": "double-column",
-   "name": "NF-DC 11 series double column band saws, 11″",
-   "short": "NF-DC 11 saws",
-   "models_label": "NF-DC 11 · NF-DC 11 T · NF-DC 11 A · NF-DC 11 AV",
-   "summary": "Twin-column saws for Ø11″ / 11″ × 11″ stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (NF-DC 11), the mitre version that cuts at 30° and 45° (NF-DC 11 T), the automatic with a 3-position shuttle vise (NF-DC 11 A) or the automatic with stepless blade speed, chip conveyor and the new vise design (NF-DC 11 AV).",
+   "name": "NT-DC 11 series double column band saws, 11″",
+   "short": "NT-DC 11 saws",
+   "models_label": "NT-DC 11 · NT-DC 11 T · NT-DC 11 A · NT-DC 11 AV",
+   "summary": "Twin-column saws for Ø11″ / 11″ × 11″ stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (NT-DC 11), the mitre version that cuts at 30° and 45° (NT-DC 11 T), the automatic with a 3-position shuttle vise (NT-DC 11 A) or the automatic with stepless blade speed, chip conveyor and the new vise design (NT-DC 11 AV).",
    "features": [
-    "Ø11″ (280 mm) round / 11″ × 11″ square; NF-DC 11 T: Ø10-1/4″ at 30°, Ø6-3/4″ at 45°",
+    "Ø11″ (280 mm) round / 11″ × 11″ square; NT-DC 11 T: Ø10-1/4″ at 30°, Ø6-3/4″ at 45°",
     "Double column — vertical, rigid bow travel",
     "Hydraulic variable down-feed, hydraulic clamping, auto shut-off",
-    "NF-DC 11 A / AV: automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
-    "NF-DC 11 AV: variable blade speed 0–200 ft/min, automatic chip conveyor",
+    "NT-DC 11 A / AV: automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
+    "NT-DC 11 AV: variable blade speed 0–200 ft/min, automatic chip conveyor",
     "Belt drive, 4 HP (3 kW) motor; work light, coolant and material stand included"
    ],
    "optional": [
@@ -5635,16 +5749,16 @@
     "Extra blades"
    ],
    "images": [
-    "nf-dc11-1",
-    "nf-dc11t-1",
-    "nf-dc11t-2",
-    "nf-dc11t-3",
-    "nf-dc11a-1",
-    "nf-dc11av-1",
-    "nf-dc11av-2",
-    "nf-dc11av-3",
-    "nf-dc11av-4",
-    "nf-dc11-stand"
+    "nt-dc11-1",
+    "nt-dc11t-1",
+    "nt-dc11t-2",
+    "nt-dc11t-3",
+    "nt-dc11a-1",
+    "nt-dc11av-1",
+    "nt-dc11av-2",
+    "nt-dc11av-3",
+    "nt-dc11av-4",
+    "nt-dc11-stand"
    ],
    "videos": [],
    "specs": {
@@ -5652,7 +5766,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-DC 11",
+      "name": "NT-DC 11",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5690,7 +5804,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 11 T",
+      "name": "NT-DC 11 T",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5745,7 +5859,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 11 A",
+      "name": "NT-DC 11 A",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5783,7 +5897,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 11 AV",
+      "name": "NT-DC 11 AV",
       "capacity_mm": {
        "0": {
         "round": 280,
@@ -5824,17 +5938,17 @@
     ]
    }
   },
-  "novofab-nf-dc14": {
-   "id": "novofab-nf-dc14",
-   "brand": "novofab",
+  "novotech-nt-dc14": {
+   "id": "novotech-nt-dc14",
+   "brand": "novotech",
    "line": "value",
    "group": "double-column",
-   "name": "NF-DC 14 and NF-DC 16 gear-driven double column saws",
-   "short": "NF-DC 14 / 16",
-   "models_label": "NF-DC 14 · NF-DC 16",
+   "name": "NT-DC 14 and NT-DC 16 gear-driven double column saws",
+   "short": "NT-DC 14 / 16",
+   "models_label": "NT-DC 14 · NT-DC 16",
    "summary": "Heavier twin-column saws with a gear-driven two-speed motor, hydraulic blade tensioning and hydraulic clamping. Vertical lifting on two columns keeps the blade square in Ø13-3/4″ and Ø15-3/4″ solids; the cutting feed is hydraulically controlled and stepless. A three-position hydraulic clamping vise for bundles is optional.",
    "features": [
-    "NF-DC 14: Ø13-3/4″ / 13-3/4″ × 13-3/4″ · NF-DC 16: Ø15-3/4″ / 15-3/4″ × 15-3/4″",
+    "NT-DC 14: Ø13-3/4″ / 13-3/4″ × 13-3/4″ · NT-DC 16: Ø15-3/4″ / 15-3/4″ × 15-3/4″",
     "Double column structure, vertical lifting, high stability",
     "Hydraulic variable down-feed, hydraulic clamping, hydraulic blade tensioning",
     "Gear drive with two-speed motor (3/3.8 HP or 4/5.4 HP)",
@@ -5845,9 +5959,9 @@
     "Roller stands"
    ],
    "images": [
-    "nf-dc14-1",
-    "nf-dc14-2",
-    "nf-dc14-3"
+    "nt-dc14-1",
+    "nt-dc14-2",
+    "nt-dc14-3"
    ],
    "videos": [],
    "specs": {
@@ -5855,7 +5969,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-DC 14",
+      "name": "NT-DC 14",
       "capacity_mm": {
        "0": {
         "round": 350,
@@ -5892,7 +6006,7 @@
       "notes": ""
      },
      {
-      "name": "NF-DC 16",
+      "name": "NT-DC 16",
       "capacity_mm": {
        "0": {
         "round": 400,
@@ -5931,20 +6045,20 @@
     ]
    }
   },
-  "novofab-nf-dc20": {
-   "id": "novofab-nf-dc20",
-   "brand": "novofab",
+  "novotech-nt-dc20": {
+   "id": "novotech-nt-dc20",
+   "brand": "novotech",
    "line": "value",
    "group": "double-column",
-   "name": "NF-DC 20 and NF-DC 24 gantry double column saws",
-   "short": "NF-DC 20 / 24",
-   "models_label": "NF-DC 20 · NF-DC 24",
-   "summary": "Gantry-type double column saws for heavy plate, blocks, bundles and large tube: Ø19-3/4″ / 27-1/2″ × 19-3/4″ on the NF-DC 20 and Ø23-5/8″ / 47-1/4″ × 23-5/8″ on the NF-DC 24. Hydraulic clamping, stepless blade speed and a powered roller table; the NF-DC 24 adds hydraulic blade tensioning and a 15 HP motor for the 2-5/8″ blade.",
+   "name": "NT-DC 20 and NT-DC 24 gantry double column saws",
+   "short": "NT-DC 20 / 24",
+   "models_label": "NT-DC 20 · NT-DC 24",
+   "summary": "Gantry-type double column saws for heavy plate, blocks, bundles and large tube: Ø19-3/4″ / 27-1/2″ × 19-3/4″ on the NT-DC 20 and Ø23-5/8″ / 47-1/4″ × 23-5/8″ on the NT-DC 24. Hydraulic clamping, stepless blade speed and a powered roller table; the NT-DC 24 adds hydraulic blade tensioning and a 15 HP motor for the 2-5/8″ blade.",
    "features": [
-    "NF-DC 20: Ø19-3/4″ / 27-1/2″ × 19-3/4″ · NF-DC 24: Ø23-5/8″ / 47-1/4″ × 23-5/8″",
+    "NT-DC 20: Ø19-3/4″ / 27-1/2″ × 19-3/4″ · NT-DC 24: Ø23-5/8″ / 47-1/4″ × 23-5/8″",
     "Double column gantry structure for batch sawing of tubes, bars, profiles and plates",
     "Hydraulic clamping; variable blade speed (131–262 and 66–262 ft/min)",
-    "NF-DC 20: 7.4 HP, 1-5/8″ × 0.051″ blade · NF-DC 24: 15 HP, 2-5/8″ × 0.051″ × 346-1/2″ blade, hydraulic tensioning",
+    "NT-DC 20: 7.4 HP, 1-5/8″ × 0.051″ blade · NT-DC 24: 15 HP, 2-5/8″ × 0.051″ × 346-1/2″ blade, hydraulic tensioning",
     "Powered roller table with chain drive"
    ],
    "optional": [
@@ -5952,9 +6066,9 @@
     "Bundle clamping"
    ],
    "images": [
-    "nf-dc20-1",
-    "nf-dc24-1",
-    "nf-dc24-2"
+    "nt-dc20-1",
+    "nt-dc24-1",
+    "nt-dc24-2"
    ],
    "videos": [],
    "specs": {
@@ -5962,7 +6076,7 @@
     "voltage": "600 V 3-phase (208/240/480 V on request)",
     "models": [
      {
-      "name": "NF-DC 20",
+      "name": "NT-DC 20",
       "capacity_mm": {
        "0": {
         "round": 500,
@@ -5996,7 +6110,7 @@
       "notes": "Blade length not printed in the catalogue."
      },
      {
-      "name": "NF-DC 24",
+      "name": "NT-DC 24",
       "capacity_mm": {
        "0": {
         "round": 600,

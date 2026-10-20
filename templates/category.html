@@ -14,7 +14,7 @@
       <h1>{{ page.h1 }}</h1>
       <p class="lead">{{ page.intro }}</p>
       <ul class="hero-points">
-        {% for p in page.hero_points %}<li>{{ p }}</li>{% endfor %}
+        {% for p in page.hero_points %}<li>{{ p|safe }}</li>{% endfor %}
       </ul>
       <div class="cta-row">
         <a class="btn btn-primary" href="#reques-a-quote">Request a quote</a>
@@ -113,8 +113,8 @@
   <div class="wrap">
     <h2 id="why-title">Included with every machine from NovoTech</h2>
     <ul class="why-grid">
-      {% for s in site.standard_features %}
-      <li><span class="why-badge">{{ feature_icon(s.icon) }}</span><div><strong>{{ s.title }}</strong><span>{{ s.text }}</span></div></li>
+      {% for s in site.standard_features %}{% if s.id == 'origin' and page.origin_feature %}{% set s = page.origin_feature %}{% endif %}
+      <li><span class="why-badge">{{ feature_icon(s.icon or 'factory') }}</span><div><strong>{{ s.title }}</strong><span>{{ s.text }}</span></div></li>
       {% endfor %}
     </ul>
     <p class="why-note">{{ site.voltage_note }}</p>

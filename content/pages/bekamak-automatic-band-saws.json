@@ -15,7 +15,7 @@
  "hero_image": "bk-hero-auto",
  "hero_image_secondary": [
   "bk-bmso-320e-1-cut",
-  "bk-bmso-350ga-1-cut"
+  "bk-bmso-320gs-3-cut"
  ],
  "breadcrumb": [
   {
@@ -43,6 +43,10 @@
   }
  ],
  "line_key": "bekamak",
+ "origin_feature": {
+  "title": "Made in Turkey by Bekamak",
+  "text": "Bekamak has built band saws in Turkey since 1990 with European components — the premium line of our range."
+ },
  "groups": [
   {
    "id": "bekamak-automatic",
@@ -59,10 +63,10 @@
   }
  ],
  "alt_line": {
-  "href": "novofab-automatic-band-saws.html",
-  "label": "NovoFab Machinery automatic band saws",
+  "href": "novotech-automatic-band-saws.html",
+  "label": "NovoTech automatic band saws",
   "line": "value",
-  "brand": "novofab"
+  "brand": "novotech"
  },
  "faq_title": "Questions we get asked about Bekamak automatic band saws",
  "faq": [

@@ -6,7 +6,7 @@
  "artifact_title": "Rebar Benders & Cutters",
  "meta_description": "Rebar benders and rebar cutters in Canada — GMS stationary and portable benders, hydraulic cutters, stirrup and spiral benders. CSA panels, parts in Mississauga.",
  "h1": "Rebar benders and rebar cutters",
- "intro": "Stationary and portable rebar bending machines, hydraulic and mechanical rebar cutters, stirrup and spiral benders, and fully automatic shear lines — built by GöçMakSan (GMS) in Turkey since 1960, supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, Ontario.",
+ "intro": "Stationary and portable rebar benders, hydraulic and mechanical rebar cutters, stirrup and spiral benders, and fully automatic shear lines — built by GöçMakSan (GMS) in Turkey since 1960, supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, Ontario.",
  "hero_points": [
   "Bend up to Ø2-3/8″ (60 mm) · cut up to Ø2-3/8″ (60 mm)",
   "Portable 110/220 V single-phase units for the job site",
@@ -33,13 +33,13 @@
  "subpages": [
   {
    "slug": "rebar-bending-machines",
-   "title": "Rebar bending machines",
+   "title": "Rebar benders",
    "image": "b-45x1",
    "blurb": "Stationary B and BS benders to Ø2-3/8″ (60 mm), portable 110/220 V benders, stirrup, spiral and dowel bar benders, and the MAX 40 bender-cutter.",
    "families": [
+    "Protable-rebar-bender-MG-BT-A-series",
     "Rebar-bending-machine-B-BS-MG-series",
     "bs-series-long-table-benders",
-    "Protable-rebar-bender-MG-BT-A-series",
     "stirrup-benders",
     "spiral-benders",
     "dowel-bar-benders",
@@ -50,7 +50,7 @@
   },
   {
    "slug": "rebar-cutter",
-   "title": "Rebar cutting machines",
+   "title": "Rebar cutters",
    "image": "h-45s",
    "blurb": "Hydraulic H series, mechanical M series and double-acting SH cutters to Ø2-3/8″ (60 mm), plus the portable single-phase POWER 24.",
    "families": [
@@ -123,5 +123,20 @@
   "duration": "PT1M20S"
  },
  "nav_label": "All rebar machines",
- "section_label": "Rebar machinery"
+ "section_label": "Rebar machinery",
+ "range_lead": "Single-bar capacity for every stationary and portable model, benders and cutters in their own tables. Each row links to the full specification table with multi-bar capacities and dimensions.",
+ "range_groups": [
+  {
+   "id": "benders",
+   "kind": "Bender",
+   "title": "Rebar benders — single-bar capacity",
+   "caption": "GMS rebar benders supplied by NovoTech — single-bar capacity"
+  },
+  {
+   "id": "cutters",
+   "kind": "Cutter",
+   "title": "Rebar cutters — single-bar capacity",
+   "caption": "GMS rebar cutters supplied by NovoTech — single-bar capacity"
+  }
+ ]
 }

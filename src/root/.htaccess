@@ -19,6 +19,7 @@ RewriteRule ^([^.]+)$ $1.html [L]
 # RedirectMatch 301 ^/old-page(\.html)?$ /new-page
 RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw
 RedirectMatch 301 ^/(manual|semi-automatic|automatic|double-column)-band-saws(\.html)?$ /band-saw
+RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
 
 # ---- Compression -------------------------------------------------------------
 <IfModule mod_brotli.c>

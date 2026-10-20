@@ -488,7 +488,7 @@ def range_table(subpages):
                 for m in spec["models"]:
                     r = bandsaw_round0(m)
                     rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
-                    rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "line": "Premium · Bekamak" if f.get("line") == "premium" else "Value · NovoFab",
+                    rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "line": "Premium · Bekamak" if f.get("line") == "premium" else "Value · NovoTech",
                                  "kind": sp.get("nav_label") or sp["title"], "round": f"Ø{inch_frac(r)} ({r:g} mm)" if r else "—",
                                  "rect": f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)" if rect else "—",
                                  "motor": hp_range(m.get("main_motor_kw")), "weight": f"{lb(m['weight_kg'])} ({m['weight_kg']:g} kg)" if m.get("weight_kg") else "—"})
@@ -523,6 +523,9 @@ def render_page(page):
                 ln["range_rows"] = range_table(ln["subpages"])
                 ln["brand_info"] = site["brands"].get(ln["brand"], {})
         page["range_rows"] = range_table(page["subpages"])
+        if page.get("range_groups"):   # e.g. rebar hub: benders and cutters in separate tables
+            for rg in page["range_groups"]:
+                rg["rows"] = [row for row in page["range_rows"] if row.get("kind") == rg["kind"]]
     for g in page.get("groups", []):
         g["families"] = [prepare_family(family(page, f)) if isinstance(f, str) else f for f in g["families"]]
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
@@ -604,7 +607,30 @@ def clean_urls(html):
     html = re.sub(r'href="index"', 'href="./"', html)
     dom = re.escape(site["domain"])
     html = re.sub(dom + r'/([a-z0-9-]+)\.html(?=[#"\s<\\])', lambda m: f'{site["domain"]}/{m.group(1)}', html)
-    return html
+    return external_links_new_tab(html)
+
+
+def external_links_new_tab(html):
+    """Every link to another website opens in a new tab (target=_blank + rel=noopener)."""
+    own = {re.sub(r"^https?://", "", site["domain"]).lower(), "novotechmachinetools.com", "www.novotechmachinetools.com"}
+    def fix(m):
+        tag = m.group(0)
+        href = re.search(r'href="(https?://[^"/]+)', tag)
+        if not href:
+            return tag
+        host = re.sub(r"^https?://", "", href.group(1)).lower()
+        if host in own or 'target=' in tag:
+            return tag
+        rel = re.search(r'rel="([^"]*)"', tag)
+        if rel:
+            vals = rel.group(1).split()
+            if "noopener" not in vals:
+                vals.append("noopener")
+            tag = tag.replace(rel.group(0), 'rel="' + " ".join(vals) + '"')
+        else:
+            tag = tag[:-1] + ' rel="noopener">'
+        return tag[:-1] + ' target="_blank">'
+    return re.sub(r'<a\s[^>]*href="https?://[^"]*"[^>]*>', fix, html)
 
 
 def artifact_fragment(html, page):

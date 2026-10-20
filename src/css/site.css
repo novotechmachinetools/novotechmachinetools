@@ -229,13 +229,13 @@ small { font-size: .85em; }
 /* ---------- why / standard features ---------- */
 .why { background: var(--charcoal); color: #fff; padding: 46px 0 36px; margin-top: 30px; }
 .why h2 { color: #fff; }
-.why-grid { list-style: none; margin: 18px 0 10px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 28px; }
+.why-grid { list-style: none; margin: 18px 0 10px; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 24px; }
 .why-grid li { border-top: 3px solid var(--orange); padding-top: 14px; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; align-items: start; }
 .why-grid li > div { display: grid; gap: 3px; }
 .why-grid .why-badge { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; color: var(--orange); }
 .why-icon { display: block; }
-.why-grid strong { font-family: var(--cond); font-weight: 600; font-size: 22px; }
-.why-grid li > div > span { color: #D5D7DA; font-size: 16px; }
+.why-grid strong { font-family: var(--cond); font-weight: 600; font-size: 21px; line-height: 1.1; }
+.why-grid li > div > span { color: #D5D7DA; font-size: 15.5px; }
 .why-note { color: #C8CBCF; font-size: 15px; margin: 10px 0 0; }
 
 /* ---------- videos / faq ---------- */
@@ -319,10 +319,10 @@ small { font-size: .85em; }
 .line-badge img { height: 28px; width: auto; }
 .line-badge .line-name { font-family: var(--cond); font-weight: 700; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--charcoal); padding-left: 12px; border-left: 1px solid var(--line); }
 .line-bekamak .line-name { color: var(--charcoal); }
-.line-novofab .line-name { color: var(--orange-ink); }
+.line-novotech .line-name { color: var(--orange-ink); }
 .group-tagline { color: var(--steel); font-size: 15px; margin: 6px 0 0; }
 .card-line { display: inline-block; font-family: var(--cond); font-weight: 700; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; color: var(--charcoal); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; margin-bottom: 8px; }
-.card-line.line-novofab { color: var(--orange-ink); border-color: var(--orange); }
+.card-line.line-novotech { color: var(--orange-ink); border-color: var(--orange); }
 /* ---------- section switcher: benders / cutters / automatic lines ---------- */
 .section-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
 .section-nav-label { font-family: var(--cond); font-weight: 600; font-size: 15px; letter-spacing: .02em; text-transform: uppercase; color: var(--steel); margin-right: 2px; }
@@ -386,6 +386,7 @@ small { font-size: .85em; }
 /* ---------- responsive ---------- */
 @media (max-width: 1100px) {
   .sub-menu { width: 600px; columns: 2; }
+  .why-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 960px) {
   :root { --header-h: 64px; }
@@ -433,7 +434,7 @@ small { font-size: .85em; }
   .spec-table { min-width: 0; font-size: 12px; }
   a { color: inherit; text-decoration: none; }
 }
-/* ---------- band saw hub: premium (Bekamak) and value (NovoFab) line blocks ---------- */
+/* ---------- band saw hub: premium (Bekamak) and value (NovoTech) line blocks ---------- */
 .line-block { padding-top: 30px; }
 .line-block .subpage-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .line-block .subpage-art { height: 200px; }
@@ -458,7 +459,7 @@ small { font-size: .85em; }
 .group-cards.line-value .group-head h2 { font-family: var(--cond); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--orange-ink); }
 .group-cards.line-value .family-card { border-color: #F2C08A; background: #FFFCF8; }
 .line-chip { display: inline-block; vertical-align: middle; font-family: var(--cond); font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--charcoal); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; margin-right: 8px; }
-.line-chip.line-novofab { color: var(--orange-ink); border-color: var(--orange); background: #FFF7EE; }
+.line-chip.line-novotech { color: var(--orange-ink); border-color: var(--orange); background: #FFF7EE; }
 .range-line { margin-top: 18px; }
 .range-title { font-size: 24px; margin: 0 0 10px; }
 .range-line.line-value .range-title { text-transform: uppercase; letter-spacing: .03em; color: var(--orange-ink); }
@@ -510,3 +511,10 @@ body.ai-locked { overflow: hidden; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 @media (max-width: 960px) { .ai-open span { display: none; } .ai-open { padding: 8px; border-radius: 50%; } }
 @media (max-width: 600px) { .ai-panel { padding: 0; align-items: stretch; } .ai-dialog { max-height: none; height: 100%; border-radius: 0; } .ai-cards { grid-template-columns: 1fr; } .ai-head h2 { font-size: 22px; } }
+
+/* ---------- back-to-top ---------- */
+.to-top { position: fixed; right: 18px; bottom: 18px; z-index: 80; width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--orange); color: #fff; box-shadow: 0 6px 18px rgba(0, 0, 0, .25); opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .2s, transform .2s, visibility .2s; }
+.to-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover, .to-top:focus-visible { background: var(--orange-deep); color: #fff; }
+@media (max-width: 600px) { .to-top { right: 12px; bottom: 12px; width: 42px; height: 42px; } }
+@media print { .to-top { display: none; } }

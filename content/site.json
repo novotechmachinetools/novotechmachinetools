@@ -117,24 +117,24 @@
               ]
             },
             {
-              "label": "NovoFab · value line",
+              "label": "NovoTech · value line",
               "href": "band-saw.html#value-line",
               "children": [
                 {
                   "label": "Manual",
-                  "href": "novofab-manual-band-saws.html"
+                  "href": "novotech-manual-band-saws.html"
                 },
                 {
                   "label": "Semi-automatic",
-                  "href": "novofab-semi-automatic-band-saws.html"
+                  "href": "novotech-semi-automatic-band-saws.html"
                 },
                 {
                   "label": "Fully automatic",
-                  "href": "novofab-automatic-band-saws.html"
+                  "href": "novotech-automatic-band-saws.html"
                 },
                 {
                   "label": "Double column",
-                  "href": "novofab-double-column-band-saws.html"
+                  "href": "novotech-double-column-band-saws.html"
                 }
               ]
             }
@@ -231,14 +231,25 @@
       "icon": "support"
     },
     {
+      "title": "Shipping across Canada",
+      "text": "Delivered to every province and territory — from our Mississauga warehouse to your shop floor, with freight arranged by NovoTech.",
+      "icon": "truck"
+    },
+    {
       "title": "1-year warranty",
-      "text": "Installation and training available.",
+      "text": "On every new machine we sell.",
       "icon": "warranty"
     },
     {
       "title": "Made in Turkey with European components",
       "text": "GMS has built rebar machinery in Ankara since 1960 and makes its own gears in-house.",
-      "icon": "factory"
+      "icon": "factory",
+      "id": "origin"
+    },
+    {
+      "title": "Installation and training",
+      "text": "Available anywhere in Canada — our technicians commission the machine and train your operators.",
+      "icon": "training"
     },
     {
       "title": "7-day money-back guarantee",
@@ -287,17 +298,17 @@
         "size": "PDF · 7.5 MB · imperial units"
       }
     },
-    "novofab": {
-      "name": "NovoFab Machinery",
+    "novotech": {
+      "name": "NovoTech",
       "country": "Canada",
       "country_code": "CA",
       "line": "Value line",
-      "logo": "novofab-logo",
-      "tagline": "NovoTech's own value brand — machines built to our specification, CSA-approved panels, parts and support from Mississauga",
+      "logo": "novotech-logo",
+      "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, Ontario parts and support as every machine we sell",
       "pdf": {
-        "file": "files/NovoFab-Band-Saws-Catalogue-2026.pdf",
-        "label": "NovoFab band saw catalogue",
-        "size": "PDF · 4.7 MB · imperial units"
+        "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
+        "label": "Value line band saw catalogue",
+        "size": "PDF · 5.1 MB · imperial units"
       }
     }
   }
