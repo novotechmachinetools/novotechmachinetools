@@ -41,7 +41,7 @@ BK = {
         intro="Gravity-feed pivot saws built by Bekamak in Turkey for maintenance shops, fabricators and anyone cutting a few pieces at a time: the operator positions the bar, closes the vise and lowers the bow; a hydraulic cylinder controls the descent and the double-miter head swivels both ways for angle cuts. Premium-line construction with CSA-approved panels and support from Mississauga, ON.",
         points=["Hydraulic-damped gravity feed with adjustable cutting pressure", "Double-miter head: +60° right, −45° left", "Round capacities Ø9″ (230 mm) and Ø10-5/8″ (270 mm)"],
         hero="bk-hero-manual", minis=["bk-bms-230dg-1-cut"],
-        lead="European-style pivot saws with heavy castings, two-speed motors and hydraulic descent control.",
+        lead="European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control.",
         video=FACTORY_VIDEO,
         video_text="A tour of the Bekamak plant in Turkey, where the premium-line band saws on this page are engineered and built.",
         faq=[
