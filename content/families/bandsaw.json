@@ -39,11 +39,11 @@
    "name": "BMS DG manual double-miter band saws",
    "short": "BMS manual saws",
    "models_label": "BMS 230DG · BMS 270DG",
-   "summary": "Gravity-feed pivot band saws for the maintenance shop and light fabrication: the operator swings the bow, a hydraulic cylinder controls the descent and the head swivels both ways for miter cuts up to 60°. Two-speed motor, mechanical blade tensioner with microswitch, electric coolant system.",
+   "summary": "Gravity-feed pivot band saws for the maintenance shop and light fabrication: the operator swings the bow, a hydraulic cylinder controls the descent and the head swivels both ways for miter cuts up to 60°. Variable-speed motor (two speeds standard, stepless with the inverter option), mechanical blade tensioner with microswitch, electric coolant system.",
    "features": [
     "Bow swivels left and right: miter cuts to +60° / −45°",
     "Hydraulic cylinder for controlled, adjustable descent",
-    "Two-speed motor (BMS 270DG: 15–120 m/min with inverter option)",
+    "Variable-speed motor: two speeds standard, stepless 15–120 m/min with the inverter option on the BMS 270DG",
     "Manual vise with quick-approach; cutting-length stop",
     "Safety switches on the wheel cover and blade guard",
     "Electric coolant pump and blade brush"
@@ -61,7 +61,21 @@
     "bk-bms-270dg-2",
     "bk-bms-270dg-4",
     "bk-bms-230dg-1",
-    "bk-bms-230dg-4"
+    "bk-bms-230dg-4",
+    "bk-bms-dg-d01",
+    "bk-bms-dg-d02",
+    "bk-bms-dg-d03",
+    "bk-bms-dg-d04",
+    "bk-bms-dg-d05",
+    "bk-bms-dg-d06",
+    "bk-bms-dg-d07",
+    "bk-bms-dg-d08",
+    "bk-bms-dg-d09",
+    "bk-bms-dg-d10",
+    "bk-bms-dg-d11",
+    "bk-bms-dg-d12",
+    "bk-bms-dg-d13",
+    "bk-bms-dg-d14"
    ],
    "videos": [
     {
@@ -242,7 +256,21 @@
     "bk-bmsy-270dg-2",
     "bk-bmsy-270dg-3",
     "bk-bmsy-270dgh-3",
-    "bk-bmsy-270dg-4"
+    "bk-bmsy-270dg-4",
+    "bk-bmsy-dgh-d01",
+    "bk-bmsy-dgh-d02",
+    "bk-bmsy-dgh-d03",
+    "bk-bmsy-dgh-d04",
+    "bk-bmsy-dgh-d05",
+    "bk-bmsy-dgh-d06",
+    "bk-bmsy-dgh-d07",
+    "bk-bmsy-dgh-d08",
+    "bk-bmsy-dgh-d09",
+    "bk-bmsy-dgh-d10",
+    "bk-bmsy-dgh-d11",
+    "bk-bmsy-dgh-d12",
+    "bk-bmsy-dgh-d13",
+    "bk-bmsy-dgh-d14"
    ],
    "videos": [
     {
@@ -828,7 +856,21 @@
     "bk-bmsy-320g-1",
     "bk-bmsy-320gl-1",
     "bk-bmsy-320g-2",
-    "bk-bmsy-320gl-2"
+    "bk-bmsy-320gl-2",
+    "bk-bmsy-g-d01",
+    "bk-bmsy-g-d02",
+    "bk-bmsy-g-d03",
+    "bk-bmsy-g-d04",
+    "bk-bmsy-g-d05",
+    "bk-bmsy-g-d06",
+    "bk-bmsy-g-d07",
+    "bk-bmsy-g-d08",
+    "bk-bmsy-g-d09",
+    "bk-bmsy-g-d10",
+    "bk-bmsy-g-d11",
+    "bk-bmsy-g-d12",
+    "bk-bmsy-g-d13",
+    "bk-bmsy-g-d14"
    ],
    "videos": [],
    "specs": {
@@ -987,7 +1029,21 @@
     "bk-bmsy-320-1",
     "bk-bmsy-350m-3",
     "bk-bmsy-320l-2",
-    "bk-bmsy-320-2"
+    "bk-bmsy-320-2",
+    "bk-bmsy-straight-d01",
+    "bk-bmsy-straight-d02",
+    "bk-bmsy-straight-d03",
+    "bk-bmsy-straight-d04",
+    "bk-bmsy-straight-d05",
+    "bk-bmsy-straight-d06",
+    "bk-bmsy-straight-d07",
+    "bk-bmsy-straight-d08",
+    "bk-bmsy-straight-d09",
+    "bk-bmsy-straight-d10",
+    "bk-bmsy-straight-d11",
+    "bk-bmsy-straight-d12",
+    "bk-bmsy-straight-d13",
+    "bk-bmsy-straight-d14"
    ],
    "videos": [
     {
@@ -1230,7 +1286,21 @@
     "bk-bmso-230-2",
     "bk-bmso-320l-1",
     "bk-bmso-230-3",
-    "bk-bmso-230-4"
+    "bk-bmso-230-4",
+    "bk-bmso-roller-d01",
+    "bk-bmso-roller-d02",
+    "bk-bmso-roller-d03",
+    "bk-bmso-roller-d04",
+    "bk-bmso-roller-d05",
+    "bk-bmso-roller-d06",
+    "bk-bmso-roller-d07",
+    "bk-bmso-roller-d08",
+    "bk-bmso-roller-d09",
+    "bk-bmso-roller-d10",
+    "bk-bmso-roller-d11",
+    "bk-bmso-roller-d12",
+    "bk-bmso-roller-d13",
+    "bk-bmso-roller-d14"
    ],
    "videos": [
     {
@@ -1420,7 +1490,14 @@
     "bk-bmso-320e-2",
     "bk-bmso-320e-4",
     "bk-bmso-320e-5",
-    "bk-bmso-320e-3"
+    "bk-bmso-320e-3",
+    "bk-bmso-e-d01",
+    "bk-bmso-e-d02",
+    "bk-bmso-e-d03",
+    "bk-bmso-e-d04",
+    "bk-bmso-e-d05",
+    "bk-bmso-e-d06",
+    "bk-bmso-e-d07"
    ],
    "videos": [
     {
@@ -1972,7 +2049,21 @@
     "bk-bmsy-460c-1",
     "bk-bmsy-460c-2",
     "bk-bmsy-460c-3",
-    "bk-bmsy-1020c-3"
+    "bk-bmsy-1020c-3",
+    "bk-bmsy-c-d01",
+    "bk-bmsy-c-d02",
+    "bk-bmsy-c-d03",
+    "bk-bmsy-c-d04",
+    "bk-bmsy-c-d05",
+    "bk-bmsy-c-d06",
+    "bk-bmsy-c-d07",
+    "bk-bmsy-c-d08",
+    "bk-bmsy-c-d09",
+    "bk-bmsy-c-d10",
+    "bk-bmsy-c-d11",
+    "bk-bmsy-c-d12",
+    "bk-bmsy-c-d13",
+    "bk-bmsy-c-d14"
    ],
    "videos": [
     {
@@ -2325,7 +2416,21 @@
     "bk-bmsy-540cgh-1",
     "bk-bmsy-440cgh-2",
     "bk-bmsy-440cgh-3",
-    "bk-bmsy-325cgh-3"
+    "bk-bmsy-325cgh-3",
+    "bk-bmsy-cgh-d01",
+    "bk-bmsy-cgh-d02",
+    "bk-bmsy-cgh-d03",
+    "bk-bmsy-cgh-d04",
+    "bk-bmsy-cgh-d05",
+    "bk-bmsy-cgh-d06",
+    "bk-bmsy-cgh-d07",
+    "bk-bmsy-cgh-d08",
+    "bk-bmsy-cgh-d09",
+    "bk-bmsy-cgh-d10",
+    "bk-bmsy-cgh-d11",
+    "bk-bmsy-cgh-d12",
+    "bk-bmsy-cgh-d13",
+    "bk-bmsy-cgh-d14"
    ],
    "videos": [
     {
@@ -2621,7 +2726,21 @@
     "bk-bmsy-750dg-2",
     "bk-bmsy-750dg-3",
     "bk-bmsy-650dg-2",
-    "bk-bmsy-560dg-4"
+    "bk-bmsy-560dg-4",
+    "bk-bmsy-dg-nc-d01",
+    "bk-bmsy-dg-nc-d02",
+    "bk-bmsy-dg-nc-d03",
+    "bk-bmsy-dg-nc-d04",
+    "bk-bmsy-dg-nc-d05",
+    "bk-bmsy-dg-nc-d06",
+    "bk-bmsy-dg-nc-d07",
+    "bk-bmsy-dg-nc-d08",
+    "bk-bmsy-dg-nc-d09",
+    "bk-bmsy-dg-nc-d10",
+    "bk-bmsy-dg-nc-d11",
+    "bk-bmsy-dg-nc-d12",
+    "bk-bmsy-dg-nc-d13",
+    "bk-bmsy-dg-nc-d14"
    ],
    "videos": [
     {
@@ -3052,7 +3171,21 @@
     "bk-bmso-330c-1",
     "bk-bmso-330c-2",
     "bk-bmso-330c-3",
-    "bk-bmso-330c-4"
+    "bk-bmso-330c-4",
+    "bk-bmso-c-d01",
+    "bk-bmso-c-d02",
+    "bk-bmso-c-d03",
+    "bk-bmso-c-d04",
+    "bk-bmso-c-d05",
+    "bk-bmso-c-d06",
+    "bk-bmso-c-d07",
+    "bk-bmso-c-d08",
+    "bk-bmso-c-d09",
+    "bk-bmso-c-d10",
+    "bk-bmso-c-d11",
+    "bk-bmso-c-d12",
+    "bk-bmso-c-d13",
+    "bk-bmso-c-d14"
    ],
    "videos": [
     {
@@ -3262,7 +3395,21 @@
     "bk-bmso-570cs-3",
     "bk-bmso-570cs-4",
     "bk-bmso-1110cs-1",
-    "bk-bmso-820cs-5"
+    "bk-bmso-820cs-5",
+    "bk-bmso-cs-d01",
+    "bk-bmso-cs-d02",
+    "bk-bmso-cs-d03",
+    "bk-bmso-cs-d04",
+    "bk-bmso-cs-d05",
+    "bk-bmso-cs-d06",
+    "bk-bmso-cs-d07",
+    "bk-bmso-cs-d08",
+    "bk-bmso-cs-d09",
+    "bk-bmso-cs-d10",
+    "bk-bmso-cs-d11",
+    "bk-bmso-cs-d12",
+    "bk-bmso-cs-d13",
+    "bk-bmso-cs-d14"
    ],
    "videos": [
     {
@@ -3541,7 +3688,12 @@
     "bk-bmso-540cgs-1",
     "bk-bmso-540cgs-3",
     "bk-bmso-325cgs-1",
-    "bk-bmso-325cgs-3"
+    "bk-bmso-325cgs-3",
+    "bk-bmso-cgs-d01",
+    "bk-bmso-cgs-d02",
+    "bk-bmso-cgs-d03",
+    "bk-bmso-cgs-d04",
+    "bk-bmso-cgs-d05"
    ],
    "videos": [
     {
@@ -4103,7 +4255,21 @@
     "bk-bmsy-1515c-1",
     "bk-bmsy-1313c-2",
     "bk-bmsy-1113c-2",
-    "bk-bmsy-1110c-4"
+    "bk-bmsy-1110c-4",
+    "bk-bmsy-heavy-d01",
+    "bk-bmsy-heavy-d02",
+    "bk-bmsy-heavy-d03",
+    "bk-bmsy-heavy-d04",
+    "bk-bmsy-heavy-d05",
+    "bk-bmsy-heavy-d06",
+    "bk-bmsy-heavy-d07",
+    "bk-bmsy-heavy-d08",
+    "bk-bmsy-heavy-d09",
+    "bk-bmsy-heavy-d10",
+    "bk-bmsy-heavy-d11",
+    "bk-bmsy-heavy-d12",
+    "bk-bmsy-heavy-d13",
+    "bk-bmsy-heavy-d14"
    ],
    "videos": [
     {

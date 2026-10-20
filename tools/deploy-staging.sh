@@ -5,6 +5,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 build.py --staging >/dev/null
+python3 tools/check_links.py            # refuse to deploy with broken internal links
 cat > dist/index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0; url=band-saw"><title>NovoTech — test site</title></head>

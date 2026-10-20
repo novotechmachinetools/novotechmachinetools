@@ -29,3 +29,12 @@ by the image pipeline where possible (`tools/make_images.py`), so a new photo on
 Sources of the originals stay outside the repository (`/home/claude/bekamak`, `/home/claude/gms-site`,
 `/home/claude/nf-src`); the repository keeps only the prepared PNG cut-outs under
 `tools/src-images/` and the generated WebP files under `src/img/`.
+
+## Bekamak detail photos
+
+bekamak.com shows four photos per product, but the lightbox behind the photo holds the full set
+(control panel, vise, gearbox, blade tension, roller tables …) at full size.  `crawl_details.py` in
+the Bekamak source folder downloads that set (`details.json`); `tools/bekamak_details.py` attaches up
+to 14 per family after the machine views, control panel first, with cleaned-up captions
+(keys `bk-<family>-dNN`).  Re-run both when Bekamak adds a product.  The gallery photos themselves
+are always the full-size lightbox files, never the `_main` thumbnails.
