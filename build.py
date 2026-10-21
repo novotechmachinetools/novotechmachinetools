@@ -480,29 +480,48 @@ def prepare_family(f):
     for im in f["gallery"]:
         im["cap1"], im["cap2"] = caption_for(f, im["alt"])
     f["card_image"] = f["gallery"][0] if f["gallery"] else None
-    f["feature_panels"] = feature_panels(f)
+    f["gallery"] += feature_gallery(f)
     return f
 
 
-def feature_panels(f):
-    """Standard / optional features per model (bekamak.com), models with identical lists share one tab."""
-    panels = []
+def feature_gallery(f):
+    """The Standard / Optional Feature photos from bekamak.com, appended to the family gallery after the
+    machine views: one entry per photo, captioned with the feature and — when it is not standard on
+    every model — which models have it as standard and which as an option."""
+    # "all models" = the models bekamak.com has feature lists for (catalogue-only models are not counted)
+    all_models = [mf["model"] for mf in f.get("model_features") or []]
+    order, info, status = [], {}, {}
+    # the caption describes the FEATURE (which models have it standard / optional), gathered over every
+    # photo of that feature — bekamak.com often shows a different photo of the same part for each model
     for mf in f.get("model_features") or []:
-        sig = json.dumps([mf["standard"], mf["optional"]], sort_keys=True)
-        for p in panels:
-            if p["sig"] == sig:
-                p["models"].append(mf["model"]); break
+        for kind in ("standard", "optional"):
+            for it in mf[kind]:
+                st = status.setdefault(it["title"].lower(), {"standard": [], "optional": []})
+                if mf["model"] not in st[kind]:
+                    st[kind].append(mf["model"])
+                key = it.get("image")
+                if key and key not in info:
+                    info[key] = it["title"]
+                    order.append(key)
+    out = []
+    # standard (on at least one model) first, then option-only photos
+    for key in sorted(order, key=lambda k: (0 if status[info[k].lower()]["standard"] else 1, order.index(k))):
+        title = info[key]
+        im = img(key)
+        std = [m for m in all_models if m in status[title.lower()]["standard"]]
+        opt = [m for m in all_models if m in status[title.lower()]["optional"] and m not in std]
+        if std and not opt and set(std) >= set(all_models):
+            cap2, cap1 = title, "Standard on all models"
+        elif std and not opt:
+            cap2, cap1 = title, "Standard on " + " · ".join(std)
+        elif opt and not std:
+            cap2, cap1 = f"{title} (optional)", "Optional on " + (" · ".join(opt) if set(opt) < set(all_models) else "all models")
         else:
-            panels.append({"sig": sig, "models": [mf["model"]],
-                           "standard": [{"title": it["title"], "img": img(it["image"]) if it.get("image") else None} for it in mf["standard"]],
-                           "optional": [{"title": it["title"], "img": img(it["image"]) if it.get("image") else None} for it in mf["optional"]]})
-    if not panels:
-        return []
-    n_models = len(f.get("model_features") or [])
-    for p in panels:
-        p["label"] = "All models" if len(panels) == 1 and n_models > 1 else " · ".join(p["models"])
-        del p["sig"]
-    return panels
+            cap2, cap1 = f"{title} (optional on some models)", "Standard on " + " · ".join(std) + " — optional on " + " · ".join(opt)
+        im["alt"] = f"Bekamak {f['short']} — {cap2[0].lower() + cap2[1:]}"
+        im["cap1"], im["cap2"] = cap1, cap2
+        out.append(im)
+    return out
 
 
 def range_table(subpages):

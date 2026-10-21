@@ -20,7 +20,7 @@
     <figcaption><span class="cap-desc">{{ first.cap2 }}</span><b class="cap-model">{{ first.cap1 }}</b></figcaption>
   </figure>
   {% if images|length > 1 %}
-  <ul class="gallery-thumbs" role="list" aria-label="More photos">
+  <ul class="gallery-thumbs{{ ' is-collapsed' if images|length > 12 else '' }}" role="list" aria-label="More photos">
     {% for im in images %}
     <li>
       <a href="{{ im.src }}" class="thumb{{ ' is-cutout' if im.alpha else '' }}{{ ' is-current' if loop.first else '' }}" data-index="{{ loop.index0 }}" data-src="{{ im.src }}" data-srcset="{{ im.srcset }}" data-w="{{ im.w }}" data-h="{{ im.h }}" data-alt="{{ im.alt }}" data-cap1="{{ im.cap1 }}" data-cap2="{{ im.cap2 }}" aria-label="{{ im.alt }}" title="{{ im.cap1 }}">
@@ -29,6 +29,9 @@
     </li>
     {% endfor %}
   </ul>
+  {% if images|length > 12 %}
+  <button type="button" class="gal-more" aria-expanded="false">Show all {{ images|length }} photos</button>
+  {% endif %}
   {% endif %}
 </div>
 {% endif %}
@@ -190,42 +193,4 @@
 } %}
 {% macro feature_icon(name) -%}
 <svg class="why-icon" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ FEATURE_ICONS[name] | safe }}</svg>
-{%- endmacro %}
-
-{# ---------- Standard / Optional features per model (bekamak.com tabs) ---------- #}
-{% macro feature_tabs(f) -%}
-{% set panels = f.feature_panels %}
-<div class="feature-tabs" id="{{ f.id }}-features" data-tabs>
-  <h4 class="feature-tabs-title">Standard and optional features{% if panels|length > 1 %} <small>by model</small>{% endif %}</h4>
-  {% if panels|length > 1 %}
-  <div class="tabs" role="tablist" aria-label="{{ f.name }} — features by model">
-    {% for p in panels %}
-    <button type="button" class="tab{{ ' is-active' if loop.first else '' }}" role="tab" id="{{ f.id }}-ft{{ loop.index }}" aria-controls="{{ f.id }}-fp{{ loop.index }}" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ p.label }}</button>
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% for p in panels %}
-  <div class="tab-panel{{ ' is-active' if loop.first else '' }}" role="tabpanel" id="{{ f.id }}-fp{{ loop.index }}"{% if panels|length > 1 %} aria-labelledby="{{ f.id }}-ft{{ loop.index }}"{% endif %}>
-    {% set pi = loop.index %}
-    {% for kind, label in [("standard", "Standard features"), ("optional", "Optional features")] %}
-    {% if p[kind] %}
-    <h5 class="feature-kind feature-kind-{{ kind }}">{{ label }}{% if panels|length == 1 and p.models|length > 1 %}{% elif panels|length > 1 %} <span>{{ p.label }}</span>{% endif %}</h5>
-    <ul class="feature-tiles" role="list" data-lightbox="{{ f.id }}-{{ pi }}-{{ kind }}">
-      {% for it in p[kind] %}
-      <li class="feature-tile{{ '' if it.img else ' no-photo' }}">
-        {% if it.img %}
-        {% set cap = it.title ~ (' (optional)' if kind == 'optional' else '') %}
-        <a class="feature-link" href="{{ it.img.src }}" data-src="{{ it.img.src }}" data-srcset="{{ it.img.srcset }}" data-alt="{{ it.img.alt }}{{ ' (optional)' if kind == 'optional' else '' }}" data-cap2="{{ cap }}" data-cap1="{{ p.label if p.label != 'All models' else f.models_label }}" aria-label="{{ cap }} — larger photo">
-          <img src="{{ it.img.small }}" srcset="{{ it.img.srcset }}" sizes="(max-width: 600px) 46vw, (max-width: 1000px) 30vw, 220px" width="{{ it.img.w }}" height="{{ it.img.h }}" alt="{{ it.img.alt }}" loading="lazy" decoding="async">
-        </a>
-        {% endif %}
-        <span class="feature-cap">{{ it.title }}{% if kind == 'optional' %} <em class="feature-opt">(optional)</em>{% endif %}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    {% endfor %}
-  </div>
-  {% endfor %}
-</div>
 {%- endmacro %}

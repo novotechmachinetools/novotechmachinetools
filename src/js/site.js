@@ -153,7 +153,21 @@
       if (counter) counter.textContent = index + 1;
       figure.classList.toggle("is-cutout", !!it.cutout);
       thumbs.forEach(function (t, j) { t.classList.toggle("is-current", j === index); });
+      if (thumbs[index] && !thumbs[index].offsetParent) expandThumbs();   // stepping onto a hidden thumbnail reveals the rest
       // never call scrollIntoView here: it scrolls the whole page when the thumbnails are below the fold
+    }
+    var thumbList = g.querySelector(".gallery-thumbs"), more = g.querySelector(".gal-more");
+    function expandThumbs() {
+      if (!thumbList || !thumbList.classList.contains("is-collapsed")) return;
+      thumbList.classList.remove("is-collapsed");
+      if (more) { more.classList.add("is-open"); more.setAttribute("aria-expanded", "true"); more.textContent = "Show fewer photos"; }
+    }
+    if (more) {
+      more.addEventListener("click", function () {
+        if (thumbList.classList.contains("is-collapsed")) { expandThumbs(); return; }
+        thumbList.classList.add("is-collapsed"); more.classList.remove("is-open"); more.setAttribute("aria-expanded", "false");
+        more.textContent = "Show all " + thumbs.length + " photos";
+      });
     }
     thumbs.forEach(function (t, i) {
       t.addEventListener("click", function (e) { e.preventDefault(); show(i); });
@@ -176,38 +190,6 @@
       ensureLightbox();
       lbItems = items; showLb(index);
       lightbox.showModal();
-    });
-  });
-
-  /* ---------- feature tabs (standard / optional features per model) + lightbox on the photo tiles ---------- */
-  d.querySelectorAll(".feature-tabs[data-tabs]").forEach(function (box) {
-    var tabs = Array.prototype.slice.call(box.querySelectorAll(".tab[role=tab]"));
-    var panels = Array.prototype.slice.call(box.querySelectorAll(".tab-panel"));
-    if (tabs.length > 1) {
-      function activate(i) {
-        tabs.forEach(function (t, j) { t.classList.toggle("is-active", j === i); t.setAttribute("aria-selected", j === i ? "true" : "false"); t.tabIndex = j === i ? 0 : -1; });
-        panels.forEach(function (p, j) { p.classList.toggle("is-active", j === i); if (j === i) p.removeAttribute("hidden"); else p.setAttribute("hidden", ""); });
-      }
-      tabs.forEach(function (t, i) {
-        t.addEventListener("click", function () { activate(i); });
-        t.addEventListener("keydown", function (e) {
-          if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); var n = (i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length; activate(n); tabs[n].focus(); }
-        });
-      });
-      activate(0);
-    }
-    box.querySelectorAll(".feature-tiles").forEach(function (list) {
-      var links = Array.prototype.slice.call(list.querySelectorAll(".feature-link"));
-      var items = links.map(function (a) { return { src: a.dataset.src, srcset: a.dataset.srcset, alt: a.dataset.alt, cap1: a.dataset.cap1, cap2: a.dataset.cap2 }; });
-      links.forEach(function (a, i) {
-        a.addEventListener("click", function (e) {
-          if (!window.HTMLDialogElement) return;
-          e.preventDefault();
-          ensureLightbox();
-          lbItems = items; showLb(i);
-          lightbox.showModal();
-        });
-      });
     });
   });
 

@@ -131,6 +131,31 @@ def front_views_first(keys, imap, thr=0.06):
     return [k for k, y in scored if y >= thr] + [k for k, y in scored if y < thr]
 
 
+def duplicate_map():
+    """bekamak.com uploads the same picture under several file names (one per product); a perceptual
+    hash maps every file to one canonical file so a family gallery shows each picture once."""
+    path = os.path.join(BK, "dup_map.json")
+    if os.path.exists(path):
+        return json.load(open(path))
+    import glob
+    def dhash(f, size=12):
+        im = Image.open(f).convert("L").resize((size + 1, size), Image.LANCZOS)
+        a = np.asarray(im).astype(int)
+        return (a[:, 1:] > a[:, :-1]).flatten()
+    files = sorted(glob.glob(os.path.join(BK, "img", "details", "*.jpg")))
+    names = [os.path.basename(f) for f in files]
+    hashes = np.array([dhash(f) for f in files])
+    canon, reps = {}, []
+    for i, n in enumerate(names):
+        for r in reps:
+            if (hashes[i] != hashes[r]).sum() <= 8:
+                canon[n] = names[r]; break
+        else:
+            reps.append(i); canon[n] = n
+    json.dump(canon, open(path, "w"), indent=0)
+    return canon
+
+
 def image_key(file):
     stem = os.path.splitext(file)[0].replace("bekamak_", "").replace("_", "-")
     if re.fullmatch(r"[0-9a-f]{32}", stem):
@@ -140,6 +165,7 @@ def image_key(file):
 
 def main():
     products = json.load(open(os.path.join(BK, "products.json"), encoding="utf-8"))
+    dups = duplicate_map()
     exact, relaxed = slug_index(products)
     fam_path = os.path.join(ROOT, "content", "families", "bandsaw.json")
     data = json.load(open(fam_path, encoding="utf-8"))
@@ -170,13 +196,14 @@ def main():
                         continue
                     seen.add(title.lower())
                     key = None
-                    if it["file"] and os.path.exists(os.path.join(BK, "img", "details", it["file"])):
-                        key = image_key(it["file"])
+                    file = dups.get(it["file"], it["file"]) if it["file"] else None
+                    if file and os.path.exists(os.path.join(BK, "img", "details", file)):
+                        key = image_key(file)
                         if key in seen_imgs:
                             continue
                         seen_imgs.add(key)
                         if key not in imap:
-                            imap[key] = {"src": os.path.join(BK, "img", "details", it["file"]),
+                            imap[key] = {"src": os.path.join(BK, "img", "details", file),
                                          "alt": f"Bekamak {m['name']} — {title[0].lower() + title[1:] if title[1:2].islower() else title}",
                                          "section": "bandsaw", "trim": False, "quality": 82}
                             new_keys.append(key)

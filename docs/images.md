@@ -40,8 +40,11 @@ feature lists and the Technical Details table (`products.json`).  Then:
 - `tools/bekamak_features.py` attaches the two feature lists to every model of every Bekamak family
   (`model_features` in `content/families/bandsaw.json`, photos registered as `bk-det-<file>` and shared
   between models) and orders each gallery front views first (yellow covers) then the grey back — the
-  gallery holds the machine views only; the feature photos appear under the feature they illustrate
-  (`feature_tabs` macro: one tab per model, models with identical lists share a tab).
+  feature photos follow the machine views in the same gallery (`feature_gallery` in build.py), each
+  captioned with the feature and which models have it standard / optional ("(optional)" in the caption
+  whenever it is not standard on every model); identical pictures uploaded under several file names are
+  shown once (`dup_map.json`, perceptual hash).  Galleries longer than two rows of thumbnails collapse
+  behind a "Show all N photos" button (NovoTech, Oct 2026).
 - `tools/bekamak_specs.py` completes the spec tables from the website: every miter angle the site lists
   (0, ±30, ±45, ±60) for round / rectangular / square stock, plus motor, blade, weight and size rows the
   catalogue left empty.  Obvious typos on the site (an angle capacity larger than the straight cut) are
