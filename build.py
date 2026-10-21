@@ -500,7 +500,9 @@ def feature_gallery(f):
                 if mf["model"] not in st[kind]:
                     st[kind].append(mf["model"])
                 key = it.get("image")
-                if key and key not in info:
+                # one photo per feature and family: bekamak.com shows the same part again for every model
+                # (four "hydraulic vise" photos, four "safety switch" photos …), which reads as repetition
+                if key and key not in info and it["title"].lower() not in {t.lower() for t in info.values()}:
                     info[key] = it["title"]
                     order.append(key)
     out = []

@@ -153,7 +153,8 @@
       if (counter) counter.textContent = index + 1;
       figure.classList.toggle("is-cutout", !!it.cutout);
       thumbs.forEach(function (t, j) { t.classList.toggle("is-current", j === index); });
-      if (thumbs[index] && !thumbs[index].offsetParent) expandThumbs();   // stepping onto a hidden thumbnail reveals the rest
+      // the thumbnail strip stays collapsed while the arrows step through hidden photos: only the
+      // "Show all photos" button expands it (NovoTech, Oct 2026)
       // never call scrollIntoView here: it scrolls the whole page when the thumbnails are below the fold
     }
     var thumbList = g.querySelector(".gallery-thumbs"), more = g.querySelector(".gal-more");
