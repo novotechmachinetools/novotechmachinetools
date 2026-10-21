@@ -35,7 +35,7 @@ VOLT_FAQ = {"q": "What voltage do these saws run on?",
 
 BK = {
     "manual": dict(
-        title="Manual Metal Band Saws — Double-Miter Bandsaws by Bekamak | NovoTech",
+        title="Manual Metal Band Saws — Double-Miter Gravity-Feed Bandsaws | NovoTech",
         meta="Manual metal cutting band saws (gravity-feed bandsaws) for sale in Canada — Bekamak BMS 230DG and 270DG: double-miter heads to 60°, hydraulic descent, Ø9″–10-5/8″. Specs in inches and mm, CSA panels, support in Mississauga, ON.",
         h1="Bekamak manual band saws",
         intro="Gravity-feed pivot saws built by Bekamak in Turkey for maintenance shops, fabricators and anyone cutting a few pieces at a time: the operator positions the bar, closes the vise and lowers the bow; a hydraulic cylinder controls the descent and the double-miter head swivels both ways for angle cuts. Premium-line construction with CSA-approved panels and support from Mississauga, ON.",
@@ -51,7 +51,7 @@ BK = {
             VOLT_FAQ,
         ]),
     "semi-automatic": dict(
-        title="Semi-Automatic Metal Band Saws — Miter Bandsaws by Bekamak | NovoTech",
+        title="Semi-Automatic Metal Band Saws — Hydraulic Miter Bandsaws | NovoTech",
         meta="Semi-automatic metal cutting band saws (hydraulic miter bandsaws) for sale in Canada — Bekamak BMSY series: hydraulic vise, automatic bow return, miter heads to 60°, Ø9″ to Ø17-3/8″ (230–440 mm). Specs in inches and mm.",
         h1="Bekamak semi-automatic band saws",
         intro="The workhorse of most fabrication shops: the operator loads the bar and presses start; the hydraulic vise clamps, the bow cuts at the set feed rate and lifts clear when the cut is done. Bekamak's BMSY pivot saws come with single- or double-miter heads for structural steel, inverter blade speed and hydro-mechanical blade tension — from Ø9″ to Ø17-3/8″ (230–440 mm).",
@@ -67,7 +67,7 @@ BK = {
             {"q": "Can these saws cut bundles?", "a": "Yes, with the optional hydraulic top clamping, which presses a bundle of tubes or bars down while the side vise holds it. Ask us about bundle sizes for the model you need."},
         ]),
     "automatic": dict(
-        title="Automatic Band Saws — Auto-Feed NC Bandsaws by Bekamak | NovoTech",
+        title="Automatic Band Saws — Auto-Feed NC Bandsaws for Metal | NovoTech",
         meta="Automatic feed metal cutting band saws (NC bandsaws) for sale in Canada — Bekamak BMSO series: roller-feed, encoder and servo shuttle-vise saws to Ø17-3/8″ (440 mm), automatic miter models. Specs in inches and mm.",
         h1="Bekamak automatic band saws",
         intro="Set the length and the quantity, load the bar and walk away. Bekamak's BMSO saws feed the material — with driven rollers, an encoder-measured feed or a servo shuttle vise — clamp, cut and count until the job is done. From Ø9″ to Ø17-3/8″ (230–440 mm), including automatic single- and double-miter models with NC job lists.",
@@ -83,7 +83,7 @@ BK = {
             {"q": "Do automatic saws need a roller table?", "a": "A short infeed roller table is included on the BMSO E models; a 10 ft (3 m) manual or motorized roller table is optional on the others and is strongly recommended for bars longer than about 6 ft."},
         ]),
     "double-column": dict(
-        title="Double Column Band Saws — Industrial Bandsaws by Bekamak | NovoTech",
+        title="Double Column Band Saws — Heavy-Duty Industrial Bandsaws | NovoTech",
         meta="Double column metal cutting band saws (heavy-duty industrial bandsaws) for sale in Canada, Ø13″ to 59″ (330–1500 mm) — Bekamak: BMSY C semi-automatics, CGH / DG NC miter saws, BMSO CS / CGS servo NC saws and the XS line.",
         h1="Bekamak double-column band saws",
         intro="For heavy bar, billets, beams and bundles the bow runs between two hardened columns instead of pivoting, so the blade enters the material squarely and stays square through the cut. Bekamak builds semi-automatic and fully automatic versions, miter heads to 60°, servo feeding with NC job lists and the enclosed high-tech XS production saws — from Ø13″ to 59″ (330–1500 mm).",
