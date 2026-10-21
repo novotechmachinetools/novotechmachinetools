@@ -27,6 +27,13 @@ Rising related queries: horizontal metal bandsaw, metal cutting band saw, drill 
 
 ## How the pages use it
 
+* Titles start with the category keyword, never with a brand: "Bekamak" is barely searched in Canada,
+  so it goes at the end of the title ("… by Bekamak") and into the meta / H1 / intro, where the few
+  brand searches still find it.  The Bekamak and NovoTech-line pages of the same category are given
+  different angles so they don't compete for one phrase: Bekamak = miter / NC / industrial, NovoTech
+  line = affordable / value-line / automatic feed / twin-column.  Titles ≤ 70 characters, the
+  decisive words in the first 60 (NovoTech, Oct 2026).
+
 * Title: primary phrase with the two-word form + the one-word form in brackets, e.g.
   "Metal Cutting Band Saws & Bandsaws in Canada".
 * Meta: "band saw(s)", "bandsaw", "metal cutting", "horizontal", "for sale in Canada", the type
