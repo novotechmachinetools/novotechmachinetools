@@ -161,6 +161,7 @@ def main():
                 continue
             p = products[slug]
             entry = {"model": m["name"], "slug": slug, "standard": [], "optional": []}
+            seen_imgs = set()      # one tile per photo and per caption within a model (bekamak.com repeats some)
             for kind in ("standard", "optional"):
                 seen = set()
                 for it in p[kind]:
@@ -171,6 +172,9 @@ def main():
                     key = None
                     if it["file"] and os.path.exists(os.path.join(BK, "img", "details", it["file"])):
                         key = image_key(it["file"])
+                        if key in seen_imgs:
+                            continue
+                        seen_imgs.add(key)
                         if key not in imap:
                             imap[key] = {"src": os.path.join(BK, "img", "details", it["file"]),
                                          "alt": f"Bekamak {m['name']} — {title[0].lower() + title[1:] if title[1:2].islower() else title}",
