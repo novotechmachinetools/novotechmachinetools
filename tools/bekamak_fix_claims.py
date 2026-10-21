@@ -155,7 +155,7 @@ def main():
     json.dump(data, open(fam_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(dp, "w", encoding="utf-8").write(src)
     # page texts: generator + generated pages
-    for path in [os.path.join(ROOT, "tools", "bandsaw_pages.py")] + [os.path.join(ROOT, "content", "pages", n) for n in ("bekamak-semi-automatic-band-saws.json", "band-saw.json", "bekamak-manual-band-saws.json")]:
+    for path in [os.path.join(ROOT, "tools", "bandsaw_pages.py")] + [os.path.join(ROOT, "content", "pages", n) for n in ("semi-automatic-band-saws.json", "band-saw.json", "manual-band-saws.json")]:
         s = open(path, encoding="utf-8").read()
         for old, new in PAGE_TEXT.items():
             s = s.replace(old, new).replace(json.dumps(old, ensure_ascii=False)[1:-1], json.dumps(new, ensure_ascii=False)[1:-1])

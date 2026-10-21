@@ -168,10 +168,24 @@ BRAND = {
 }
 
 
+# URL slugs carry no brand (NovoTech, Oct 2026): a page's content or supplier may change later and the
+# URL must keep its ranking.  Each slug is the category's own search phrase; the value-line pages take
+# the next-best phrase for the same category so the two lines never share a URL keyword.
+SLUGS = {
+    ("bekamak", "manual"): "manual-band-saws",
+    ("bekamak", "semi-automatic"): "semi-automatic-band-saws",
+    ("bekamak", "automatic"): "automatic-band-saws",
+    ("bekamak", "double-column"): "double-column-band-saws",
+    ("novotech", "semi-automatic"): "affordable-semi-automatic-band-saws",
+    ("novotech", "automatic"): "automatic-feed-band-saws",
+    ("novotech", "double-column"): "twin-column-band-saws",
+}
+
+
 def page(brand, cat, spec):
     b = BRAND[brand]
     spec = dict(spec, intro=spec["intro"] + KW[cat])
-    slug = f"{b['slug']}-{cat}-band-saws"
+    slug = SLUGS[(brand, cat)]
     other = "novotech" if brand == "bekamak" else "bekamak"
     p = {
         "slug": slug, "template": "category.html", "family_set": "bandsaw",
@@ -184,7 +198,7 @@ def page(brand, cat, spec):
         "line_key": b["key"],
         "origin_feature": ORIGIN[brand],
         "groups": [{"id": f"{b['slug']}-{cat}", "brand": b["key"], "title": f"{b['name']} {CAT_TITLE[cat].lower()}", "lead": spec["lead"], "families": fams(brand, cat)}],
-        "alt_line": ({"href": f"{BRAND[other]['slug']}-{cat}-band-saws.html", "label": f"{BRAND[other]['name']} {CAT_TITLE[cat].lower()}",
+        "alt_line": ({"href": f"{SLUGS[(other, cat)]}.html", "label": f"{BRAND[other]['name']} {CAT_TITLE[cat].lower()}",
                       "line": BRAND[other]["line"], "brand": other} if cat in (BK if other == "bekamak" else NF) else None),
         "faq_title": f"Questions we get asked about {b['name']} {CAT_TITLE[cat].lower()}",
         "faq": spec["faq"],
@@ -200,7 +214,8 @@ def page(brand, cat, spec):
 
 
 def main():
-    for old in ("manual-band-saws", "semi-automatic-band-saws", "automatic-band-saws", "double-column-band-saws"):
+    for old in ("manual-band-saws", "semi-automatic-band-saws", "automatic-band-saws", "double-column-band-saws",
+                "affordable-semi-automatic-band-saws", "automatic-feed-band-saws", "twin-column-band-saws"):
         fp = os.path.join(PAGES, old + ".json")
         if os.path.exists(fp):
             os.remove(fp)
@@ -231,7 +246,7 @@ def main():
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-h10f-1-cut"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)',
                         '<a href="#value-line">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column',
-                        '<a href="#bekamak-manual-band-saws-overview">Manual</a> (Bekamak), <a href="#bekamak-semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#bekamak-automatic-band-saws-overview">automatic</a> and <a href="#bekamak-double-column-band-saws-overview">double-column</a> saws',
+                        '<a href="#manual-band-saws-overview">Manual</a> (Bekamak), <a href="#semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#automatic-band-saws-overview">automatic</a> and <a href="#double-column-band-saws-overview">double-column</a> saws',
                         '<a href="#buying-guide">Band saw buying guide</a>, blade selection and troubleshooting chart on this page']
     h["catalogue_pdfs"] = [PDF_BK, PDF_NF]
     h["range_lead"] = "Capacity at 0° for every model, one table per line. Each row links to the full specification table with miter capacities, blade sizes, motors and dimensions."

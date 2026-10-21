@@ -11,7 +11,7 @@
  "hero_points": [
   "<a href=\"#premium-line\">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)",
   "<a href=\"#value-line\">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column",
-  "<a href=\"#bekamak-manual-band-saws-overview\">Manual</a> (Bekamak), <a href=\"#bekamak-semi-automatic-band-saws-overview\">semi-automatic</a>, <a href=\"#bekamak-automatic-band-saws-overview\">automatic</a> and <a href=\"#bekamak-double-column-band-saws-overview\">double-column</a> saws",
+  "<a href=\"#manual-band-saws-overview\">Manual</a> (Bekamak), <a href=\"#semi-automatic-band-saws-overview\">semi-automatic</a>, <a href=\"#automatic-band-saws-overview\">automatic</a> and <a href=\"#double-column-band-saws-overview\">double-column</a> saws",
   "<a href=\"#buying-guide\">Band saw buying guide</a>, blade selection and troubleshooting chart on this page"
  ],
  "hero_image": "bk-hero-auto-350ga",
@@ -47,7 +47,7 @@
  ],
  "subpages": [
   {
-   "slug": "bekamak-manual-band-saws",
+   "slug": "manual-band-saws",
    "title": "Bekamak manual band saws",
    "nav_label": "Manual",
    "cat": "manual",
@@ -59,7 +59,7 @@
    ]
   },
   {
-   "slug": "bekamak-semi-automatic-band-saws",
+   "slug": "semi-automatic-band-saws",
    "title": "Bekamak semi-automatic band saws",
    "nav_label": "Semi-automatic",
    "cat": "semi-automatic",
@@ -73,7 +73,7 @@
    ]
   },
   {
-   "slug": "bekamak-automatic-band-saws",
+   "slug": "automatic-band-saws",
    "title": "Bekamak automatic band saws",
    "nav_label": "Automatic",
    "cat": "automatic",
@@ -89,7 +89,7 @@
    ]
   },
   {
-   "slug": "bekamak-double-column-band-saws",
+   "slug": "double-column-band-saws",
    "title": "Bekamak double-column band saws",
    "nav_label": "Double-column",
    "cat": "double-column",
@@ -108,7 +108,7 @@
    ]
   },
   {
-   "slug": "novotech-semi-automatic-band-saws",
+   "slug": "affordable-semi-automatic-band-saws",
    "title": "NovoTech semi-automatic band saws",
    "nav_label": "Semi-automatic",
    "cat": "semi-automatic",
@@ -124,7 +124,7 @@
    ]
   },
   {
-   "slug": "novotech-automatic-band-saws",
+   "slug": "automatic-feed-band-saws",
    "title": "NovoTech automatic band saws",
    "nav_label": "Automatic",
    "cat": "automatic",
@@ -139,7 +139,7 @@
    ]
   },
   {
-   "slug": "novotech-double-column-band-saws",
+   "slug": "twin-column-band-saws",
    "title": "NovoTech double-column band saws",
    "nav_label": "Double-column",
    "cat": "double-column",
@@ -223,7 +223,7 @@
    "blurb": "Built in Turkey since 1990 with European components and the heaviest construction in their class — the saws we recommend for production and heavy sections.",
    "subpages": [
     {
-     "slug": "bekamak-manual-band-saws",
+     "slug": "manual-band-saws",
      "title": "Bekamak manual band saws",
      "nav_label": "Manual",
      "cat": "manual",
@@ -235,7 +235,7 @@
      ]
     },
     {
-     "slug": "bekamak-semi-automatic-band-saws",
+     "slug": "semi-automatic-band-saws",
      "title": "Bekamak semi-automatic band saws",
      "nav_label": "Semi-automatic",
      "cat": "semi-automatic",
@@ -249,7 +249,7 @@
      ]
     },
     {
-     "slug": "bekamak-automatic-band-saws",
+     "slug": "automatic-band-saws",
      "title": "Bekamak automatic band saws",
      "nav_label": "Automatic",
      "cat": "automatic",
@@ -265,7 +265,7 @@
      ]
     },
     {
-     "slug": "bekamak-double-column-band-saws",
+     "slug": "double-column-band-saws",
      "title": "Bekamak double-column band saws",
      "nav_label": "Double-column",
      "cat": "double-column",
@@ -299,7 +299,7 @@
    "blurb": "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, Ontario parts and support as every machine we sell.",
    "subpages": [
     {
-     "slug": "novotech-semi-automatic-band-saws",
+     "slug": "affordable-semi-automatic-band-saws",
      "title": "NovoTech semi-automatic band saws",
      "nav_label": "Semi-automatic",
      "cat": "semi-automatic",
@@ -315,7 +315,7 @@
      ]
     },
     {
-     "slug": "novotech-automatic-band-saws",
+     "slug": "automatic-feed-band-saws",
      "title": "NovoTech automatic band saws",
      "nav_label": "Automatic",
      "cat": "automatic",
@@ -330,7 +330,7 @@
      ]
     },
     {
-     "slug": "novotech-double-column-band-saws",
+     "slug": "twin-column-band-saws",
      "title": "NovoTech double-column band saws",
      "nav_label": "Double-column",
      "cat": "double-column",

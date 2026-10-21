@@ -31,7 +31,13 @@ Rising related queries: horizontal metal bandsaw, metal cutting band saw, drill 
   Canada): every title is built from the product's own names and the search variants with the most
   traffic — type (manual / semi-automatic / automatic / double column), "metal", "bandsaw(s)" +
   "band saw(s)", feed / miter wording — with "| NovoTech" as the only brand.  Supplier brands live in
-  the H1, meta description and body text.  The Bekamak and NovoTech-line pages of the same category are given
+  the H1, meta description and body text.
+* URL slugs carry no brand either (a page's supplier or content may change and the URL must keep its
+  ranking): the category's search phrase with the two-word spelling, e.g. /manual-band-saws,
+  /semi-automatic-band-saws, /automatic-band-saws, /double-column-band-saws; the value-line pages take
+  the next-best phrase for the same category (/affordable-semi-automatic-band-saws,
+  /automatic-feed-band-saws, /twin-column-band-saws).  Two-word "band-saws" in the slug because every
+  slug has a modifier, and with a modifier the two-word form is searched more (table above).  The Bekamak and NovoTech-line pages of the same category are given
   different angles so they don't compete for one phrase: Bekamak = miter / NC / industrial, NovoTech
   line = affordable / value-line / automatic feed / twin-column.  Titles ≤ 70 characters, the
   decisive words in the first 60 (NovoTech, Oct 2026).
