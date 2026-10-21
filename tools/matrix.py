@@ -1,7 +1,7 @@
 import asyncio, json
 from playwright.async_api import async_playwright
 BASE = "http://127.0.0.1:8765/"
-PAGES = ["rebar-bender-and-cutter", "rebar-bending-machines", "rebar-cutter", "automatic-rebar-processing-lines"]
+PAGES = ["rebar-bender-and-cutter", "rebar-bender", "rebar-cutter", "automatic-rebar-processing-lines"]
 DEVICES = [
   ("iPhone SE", 375, 667, 2, True), ("iPhone 14 Pro", 393, 852, 3, True), ("Galaxy S20", 360, 800, 3, True), ("Pixel 7", 412, 915, 2.6, True),
   ("iPad Mini", 768, 1024, 2, True), ("iPad Pro 11", 834, 1194, 2, True), ("iPad landscape", 1024, 768, 2, True),
@@ -48,7 +48,7 @@ async def main():
                 flag = "" if r["scrollW"] <= r["vw"] + 1 and not r["wide"] else "  <-- OVERFLOW"
                 print(f"{name:16s} {w:4d}x{h:<4d} {slug:34s} scrollW={r['scrollW']:4d} vw={r['vw']:4d} wide={len(r['wide'])} tiny={len(r['tiny'])} ovfText={r['overflowText']}{flag}")
                 if r["wide"] or r["tiny"]: print("     ", r["wide"], r["tiny"])
-                if slug == "rebar-bending-machines":
+                if slug == "rebar-bender":
                     await page.screenshot(path=f"tools/shots/mx-{w}x{h}-top.png")
             await ctx.close()
         await b.close()

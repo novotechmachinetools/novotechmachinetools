@@ -12,7 +12,7 @@ async def main():
         await page.locator(".subpages").screenshot(path="tools/shots/hub-subpages.png")
         await page.locator("#rebar-bending-machines-overview").screenshot(path="tools/shots/hub-cards.png")
         await page.locator("#range-at-a-glance").screenshot(path="tools/shots/hub-range.png")
-        for slug in ["rebar-cutter","automatic-rebar-processing-lines","rebar-bending-machines"]:
+        for slug in ["rebar-cutter","automatic-rebar-processing-lines","rebar-bender"]:
             await page.goto(BASE+slug+".html", wait_until="networkidle")
             await page.screenshot(path=f"tools/shots/{slug}-0.png")
             h = await page.evaluate("document.documentElement.scrollHeight")

@@ -112,3 +112,15 @@ cutting machines** + "circle shears" in the title, "lock seamers" for the LS-13P
 **compact hydraulic press brakes** (the Dener page keeps the bare "press brake" head term). İşitan SFC
 saws are **circular cold saws** with "metal cutting saw" / "metal chop saw" once each in the intro; the
 Bekamak page keeps "automatic cold saws".
+
+## Findings — rebar benders (Google Trends, Oct 2026, 5 years)
+
+| term | Canada | US | note |
+|---|---|---|---|
+| rebar bender | 3 | 51 | the search phrase; related rising: cordless / DeWalt / Metabo rebar bender (hand tools) |
+| rebar bending | 1 | 7 | generic; its top related queries are "rebar bending machine" and "rebar bender" |
+| rebar benders | 1 | 0 | |
+| rebar bending machine | 0 | 0 | below threshold on its own |
+
+Rule: the page URL is /rebar-bender (singular, like /rebar-cutter and the hub /rebar-bender-and-cutter);
+"rebar bending machine(s)" stays in the title and body as the secondary phrase.

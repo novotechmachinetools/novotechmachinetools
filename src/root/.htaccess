@@ -33,6 +33,7 @@ RedirectMatch 301 ^/(novofab|novotech)-semi-automatic-band-saws(\.html)?$ /affor
 RedirectMatch 301 ^/(novofab|novotech)-automatic-band-saws(\.html)?$ /automatic-feed-band-saws
 RedirectMatch 301 ^/(novofab|novotech)-double-column-band-saws(\.html)?$ /twin-column-band-saws
 RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
+RedirectMatch 301 ^/rebar-bending-machines(\.html)?$ /rebar-bender
 
 # ---- Compression -------------------------------------------------------------
 <IfModule mod_brotli.c>
