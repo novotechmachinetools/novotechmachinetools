@@ -22,7 +22,7 @@ CAT_SHORT = {"manual": "Manual", "semi-automatic": "Semi-automatic", "automatic"
 
 
 FACTORY_VIDEO = {"id": "6xEVXrP8h3k", "title": "Bekamak corporate introduction video", "thumb": "video-6xEVXrP8h3k", "duration": "PT3M4S"}
-FIRST = {"novotech-bs-315gf": 0}   # families pinned to the top of their group
+FIRST = {"novotech-bs-315gf": 0, "bekamak-bmso-ga": 0, "bekamak-bmso-gs": 2}   # rank within the group: 0 = top (BMSO 350GA = most popular automatic saw), 2 = after the others (320GS / GLS below the 270DGS)
 
 
 def fams(brand, cat):
@@ -55,15 +55,15 @@ BK = {
         meta="Bekamak BMSY semi-automatic metal cutting band saws (hydraulic bandsaws) for sale in Canada: hydraulic vise, automatic bow return, miter heads to 60°, Ø9″ to Ø17-3/8″ (230–440 mm). Specs in inches and mm.",
         h1="Bekamak semi-automatic band saws",
         intro="The workhorse of most fabrication shops: the operator loads the bar and presses start; the hydraulic vise clamps, the bow cuts at the set feed rate and lifts clear when the cut is done. Bekamak's BMSY pivot saws come with single- or double-miter heads for structural steel, inverter blade speed and hydro-mechanical blade tension — from Ø9″ to Ø17-3/8″ (230–440 mm).",
-        points=["Hydraulic vise, automatic bow return, inverter blade speed", "Single- or double-miter heads to 60°; DGH models position the head hydraulically", "Round capacities from Ø9″ (230 mm) to Ø17-3/8″ (440 mm)"],
-        hero="bk-hero-semi", minis=["bk-bmsy-320g-1-cut", "bk-bmsy-350m-1-cut"],
-        lead="Pivot-type saws with inverter blade speed, hydro-mechanical blade tension and hydraulic miter positioning on the DGH models.",
+        points=["Hydraulic vise, automatic bow return, inverter blade speed", "Single- or double-miter heads to 60°; DGH models add a hydraulic vise", "Round capacities from Ø9″ (230 mm) to Ø17-3/8″ (440 mm)"],
+        hero="bk-hero-semi", minis=["bk-bmsy-320g-1-cut", "bk-bmsy-270dgh-1-cut"],
+        lead="Pivot-type saws with inverter blade speed, hydro-mechanical blade tension and a hydraulic vise on the DGH models.",
         video=FACTORY_VIDEO,
         video_text="A tour of the Bekamak plant in Turkey, where the premium-line band saws on this page are engineered and built.",
         faq=[
             {"q": "What is the difference between a semi-automatic and a fully automatic band saw?", "a": "A semi-automatic saw makes one cut per start: it clamps, cuts and lifts the bow, then waits for the operator to feed the next piece. A fully automatic saw also feeds the material to length (by rollers or a shuttle vise) and repeats the cycle for the programmed quantity. See the Bekamak automatic band saws page."},
             {"q": "Single miter or double miter?", "a": "A single-miter head (BMSY 320G/GL) swivels to one side, so angled parts are cut by flipping the bar. A double-miter head (BMSY DG/DGH) swivels both ways — +60° right, −45° left — which saves handling on frames and trusses with opposite angles."},
-            {"q": "What does the DGH suffix mean?", "a": "DGH models position the saw head hydraulically for miter angles instead of by hand, and include hydraulic head lifting — useful on the larger 320–440 mm machines where the bow is heavy."},
+            {"q": "What does the DGH suffix mean?", "a": "DGH models have a hydraulic vise — the DG versions clamp the material by hand. The rest of the saw is the same: double-miter head swung by hand on the angle scale, hydraulic feed cylinder and automatic bow return."},
             {"q": "Can these saws cut bundles?", "a": "Yes, with the optional hydraulic top clamping, which presses a bundle of tubes or bars down while the side vise holds it. Ask us about bundle sizes for the model you need."},
         ]),
     "automatic": dict(
@@ -71,14 +71,14 @@ BK = {
         meta="Bekamak BMSO fully automatic metal cutting band saws (NC bandsaws) for sale in Canada: roller-feed, encoder and servo shuttle-vise saws to Ø17-3/8″ (440 mm), automatic miter models. Specs in inches and mm.",
         h1="Bekamak automatic band saws",
         intro="Set the length and the quantity, load the bar and walk away. Bekamak's BMSO saws feed the material — with driven rollers, an encoder-measured feed or a servo shuttle vise — clamp, cut and count until the job is done. From Ø9″ to Ø17-3/8″ (230–440 mm), including automatic single- and double-miter models with NC job lists.",
-        points=["Roller feed, encoder feed or servo shuttle-vise feed", "NC job lists: length × quantity × angle", "Automatic single- and double-miter models"],
-        hero="bk-hero-auto-350ga", minis=["bk-bmso-320e-1-cut", "bk-bmso-320gs-3-cut"],
+        points=["Roller feed, encoder feed or servo shuttle-vise feed", "NC job lists: length × quantity", "Automatic single- and double-miter models"],
+        hero="bk-hero-auto-350ga", minis=["bk-bmso-270dgs-1", "bk-bmso-320gs-3-cut"],
         lead="Roller-feed automatics for simple repeat cutting, encoder and servo versions for length accuracy, and automatic miter saws for angled parts.",
         video=FACTORY_VIDEO,
         video_text="A tour of the Bekamak plant in Turkey, where the premium-line band saws on this page are engineered and built.",
         faq=[
             {"q": "Roller feed or shuttle vise — which is better?", "a": "Roller feed (BMSO 230–440, BMSO E) is simple and fast for bar and tube in straight cuts; the encoder versions measure the fed length for better accuracy. A shuttle vise — servo-driven on the BMSO GS/GLS and all CS/CGS double-column saws, motorized on the compact 270DGS — grips the bar and moves it to the programmed length, giving ±0.1 mm repeatability on the servo models and reliable feeding of bundles and short remnants."},
-            {"q": "How many lengths can I program?", "a": "The NC control on the servo-feed models stores a job list of several length-and-quantity pairs (and the miter angle on GS/DGS models), so one bar can be cut into different parts without re-programming."},
+            {"q": "How many lengths can I program?", "a": "The NC control on the servo-feed models stores a job list of several length-and-quantity pairs, so one bar can be cut into different parts without re-programming."},
             {"q": "What happens at the end of the bar?", "a": "The saw stops when the remaining length is shorter than the next part or the feed vise reaches its limit, and the counter shows how many pieces were cut. Remnant length depends on the model — typically 3–6 in (80–150 mm)."},
             {"q": "Do automatic saws need a roller table?", "a": "A short infeed roller table is included on the BMSO E models; a 10 ft (3 m) manual or motorized roller table is optional on the others and is strongly recommended for bars longer than about 6 ft."},
         ]),
@@ -88,7 +88,7 @@ BK = {
         h1="Bekamak double-column band saws",
         intro="For heavy bar, billets, beams and bundles the bow runs between two hardened columns instead of pivoting, so the blade enters the material squarely and stays square through the cut. Bekamak builds semi-automatic and fully automatic versions, miter heads to 60°, servo feeding with NC job lists and the enclosed high-tech XS production saws — from Ø13″ to 59″ (330–1500 mm).",
         points=["Twin-column guidance for square cuts in heavy stock", "Semi-automatic, roller-feed and servo-feed NC models", "Round capacities from Ø13″ (330 mm) to 59″ (1500 mm)"],
-        hero="bk-hero-dc-570cs", minis=["bk-bmsy-460c-1-cut", "bk-bmso-440cgs-1-cut"],
+        hero="bk-hero-dc-570cs", minis=["bk-bmsy-460c-1-cut", "bk-bmso-570xs-1-cut"],
         lead="From the BMSY C semi-automatics to servo-feed CS NC production saws and the enclosed XS line.",
         video=FACTORY_VIDEO,
         video_text="A tour of the Bekamak plant in Turkey, where the premium-line band saws on this page are engineered and built.",

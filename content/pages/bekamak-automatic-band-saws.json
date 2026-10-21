@@ -9,12 +9,12 @@
  "intro": "Set the length and the quantity, load the bar and walk away. Bekamak's BMSO saws feed the material — with driven rollers, an encoder-measured feed or a servo shuttle vise — clamp, cut and count until the job is done. From Ø9″ to Ø17-3/8″ (230–440 mm), including automatic single- and double-miter models with NC job lists. For buyers searching for an automatic metal cutting bandsaw, a CNC band saw machine or an industrial horizontal band saw for metal with automatic feeding, these are the models NovoTech sells and supports in Canada.",
  "hero_points": [
   "Roller feed, encoder feed or servo shuttle-vise feed",
-  "NC job lists: length × quantity × angle",
+  "NC job lists: length × quantity",
   "Automatic single- and double-miter models"
  ],
  "hero_image": "bk-hero-auto-350ga",
  "hero_image_secondary": [
-  "bk-bmso-320e-1-cut",
+  "bk-bmso-270dgs-1",
   "bk-bmso-320gs-3-cut"
  ],
  "breadcrumb": [
@@ -54,11 +54,11 @@
    "title": "Bekamak automatic band saws",
    "lead": "Roller-feed automatics for simple repeat cutting, encoder and servo versions for length accuracy, and automatic miter saws for angled parts.",
    "families": [
+    "bekamak-bmso-ga",
     "bekamak-bmso-roller",
     "bekamak-bmso-e",
-    "bekamak-bmso-ga",
-    "bekamak-bmso-gs",
-    "bekamak-bmso-dgs"
+    "bekamak-bmso-dgs",
+    "bekamak-bmso-gs"
    ]
   }
  ],
@@ -76,7 +76,7 @@
   },
   {
    "q": "How many lengths can I program?",
-   "a": "The NC control on the servo-feed models stores a job list of several length-and-quantity pairs (and the miter angle on GS/DGS models), so one bar can be cut into different parts without re-programming."
+   "a": "The NC control on the servo-feed models stores a job list of several length-and-quantity pairs, so one bar can be cut into different parts without re-programming."
   },
   {
    "q": "What happens at the end of the bar?",

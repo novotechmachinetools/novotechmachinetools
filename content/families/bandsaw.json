@@ -43,10 +43,11 @@
    "features": [
     "Bow swivels left and right: miter cuts to +60° / −45°",
     "Hydraulic cylinder for controlled, adjustable descent",
-    "Variable-speed motor: two speeds standard, stepless 15–120 m/min with the inverter option on the BMS 270DG",
+    "Variable blade speed: two-speed motor on the BMS 230DG (inverter optional), stepless 15–120 m/min inverter standard on the BMS 270DG",
     "Manual vise with quick-approach; cutting-length stop",
     "Safety switches on the wheel cover and blade guard",
-    "Electric coolant pump and blade brush"
+    "Electric coolant pump and blade brush",
+    "Options: 10 ft (3 m) roller table, micro-spray lubrication"
    ],
    "optional": [
     "3 Mt Material Roller Table",
@@ -61,21 +62,7 @@
     "bk-bms-270dg-2",
     "bk-bms-270dg-4",
     "bk-bms-230dg-1",
-    "bk-bms-230dg-4",
-    "bk-bms-dg-d01",
-    "bk-bms-dg-d02",
-    "bk-bms-dg-d03",
-    "bk-bms-dg-d04",
-    "bk-bms-dg-d05",
-    "bk-bms-dg-d06",
-    "bk-bms-dg-d07",
-    "bk-bms-dg-d08",
-    "bk-bms-dg-d09",
-    "bk-bms-dg-d10",
-    "bk-bms-dg-d11",
-    "bk-bms-dg-d12",
-    "bk-bms-dg-d13",
-    "bk-bms-dg-d14"
+    "bk-bms-230dg-4"
    ],
    "videos": [
     {
@@ -106,7 +93,7 @@
        "0": {
         "round": 230,
         "rect": [
-         320,
+         310,
          130
         ],
         "square": 230
@@ -115,7 +102,7 @@
         "round": 210,
         "rect": [
          210,
-         160
+         100
         ],
         "square": 190
        },
@@ -130,10 +117,26 @@
        "-45": {
         "round": 180,
         "rect": [
-         230,
-         90
+         200,
+         80
         ],
         "square": 150
+       },
+       "+30": {
+        "round": 230,
+        "rect": [
+         260,
+         120
+        ],
+        "square": 230
+       },
+       "-30": {
+        "round": 230,
+        "rect": [
+         260,
+         110
+        ],
+        "square": 200
        }
       },
       "main_motor_kw": "1.0-1.3",
@@ -168,12 +171,12 @@
         "square": 270
        },
        "+45": {
-        "round": 240,
+        "round": 230,
         "rect": [
-         220,
-         180
+         230,
+         150
         ],
-        "square": 180
+        "square": 170
        },
        "+60": {
         "round": 150,
@@ -184,12 +187,28 @@
         "square": 100
        },
        "-45": {
-        "round": 200,
+        "round": 190,
         "rect": [
          200,
-         150
+         100
         ],
-        "square": 170
+        "square": 160
+       },
+       "+30": {
+        "round": 270,
+        "rect": [
+         300,
+         140
+        ],
+        "square": 250
+       },
+       "-30": {
+        "round": 260,
+        "rect": [
+         290,
+         100
+        ],
+        "square": 220
        }
       },
       "main_motor_kw": 1.5,
@@ -213,7 +232,121 @@
       "notes": "No hydraulic motor row is printed (manual machine)."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMS 230DG",
+     "slug": "bms-230-dg",
+     "standard": [
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-317656"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-01-21-174073"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-21-447955"
+      },
+      {
+       "title": "Vise",
+       "image": "bk-det-2013-01-21-26530"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-01-21-428523"
+      },
+      {
+       "title": "Material length stop rod",
+       "image": "bk-det-2012-11-12-349623"
+      },
+      {
+       "title": "Motor",
+       "image": "bk-det-2012-11-12-313104"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2012-11-12-695644"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2012-10-12-450125"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-326"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-11-12-180258"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2012-10-12-901310"
+      }
+     ]
+    },
+    {
+     "model": "BMS 270DG",
+     "slug": "bms-270-dg",
+     "standard": [
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-03-05-699356"
+      },
+      {
+       "title": "Vise",
+       "image": "bk-det-2013-03-05-784171"
+      },
+      {
+       "title": "Gearbox",
+       "image": "bk-det-2013-03-05-488604"
+      },
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-106733"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-01-28-473900"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-28-587401"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2012-10-11-377069"
+      },
+      {
+       "title": "Material length stop rod",
+       "image": "bk-det-2012-10-11-422348"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-425ceeaa2c33"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-15fe7d1751e8"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-02-13-184884"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2013-01-11-747644"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmsy-dgh": {
    "id": "bekamak-bmsy-dgh",
@@ -223,14 +356,15 @@
    "name": "BMSY DG / DGH semi-automatic dual-miter band saws",
    "short": "BMSY DG/DGH dual-miter",
    "models_label": "BMSY 230DG · BMSY 230DGH · BMSY 270DG · BMSY 270DGH · BMSY 320DGH · BMSY 360DGH · BMSY 360DGH ECO · BMSY 440DGH",
-   "summary": "The most popular Bekamak pivot saws: hydraulic vise and automatic bow lift after every cut, with the head swivelling both ways for miters — right to 60°, left to 45°. DGH versions add hydraulic head positioning. Sizes from Ø9″ (230 mm) to Ø17-3/8″ (440 mm).",
+   "summary": "The most popular Bekamak pivot saws: automatic bow lift after every cut, with the head swivelling both ways for miters — right to 60°, left to 45°. DGH versions have a hydraulic vise; the DG versions clamp by hand. Sizes from Ø9″ (230 mm) to Ø17-3/8″ (440 mm).",
    "features": [
-    "Semi-automatic cycle: hydraulic vise closes, bow descends at the set feed and returns after the cut",
-    "Double miter: +60° right and −45° left (angle scale with fast stops at 30°/45°/60°)",
-    "Inverter drive for stepless blade speed 15–120 m/min",
+    "Semi-automatic cycle: the bow descends at the set feed and returns after the cut; hydraulic vise on the DGH models (manual vise on the 230DG / 270DG)",
+    "Double miter: +60° right and −45° left, head swung by hand on the angle scale",
+    "Inverter drive for stepless blade speed 15–120 m/min (standard from the 270 up; optional on the 230DG / 230DGH)",
     "Hydro-mechanical blade tension with safety switch; blade brush; coolant pump",
-    "Sensitive-pressure feed control and height-adjustment switch",
-    "Heavy-duty gearbox; control panel on an arm"
+    "Bow height-adjustment switch; cutting-pressure control on the 440DGH",
+    "Heavy-duty gearbox from the 270 up; control panel",
+    "Options: 10 ft (3 m) roller table, micro-spray lubrication; hydraulic top clamp, laser line pointer and motorized roller table on the 440DGH"
    ],
    "optional": [
     "3 Mt Material Roller Table",
@@ -251,26 +385,12 @@
     "bk-bmsy-320dgh-3",
     "bk-bmsy-270dgh-1",
     "bk-bmsy-270dgh-2",
-    "bk-bmsy-320dgh-1",
-    "bk-bmsy-270dg-1",
     "bk-bmsy-270dg-2",
     "bk-bmsy-270dg-3",
+    "bk-bmsy-320dgh-1",
+    "bk-bmsy-270dg-1",
     "bk-bmsy-270dgh-3",
-    "bk-bmsy-270dg-4",
-    "bk-bmsy-dgh-d01",
-    "bk-bmsy-dgh-d02",
-    "bk-bmsy-dgh-d03",
-    "bk-bmsy-dgh-d04",
-    "bk-bmsy-dgh-d05",
-    "bk-bmsy-dgh-d06",
-    "bk-bmsy-dgh-d07",
-    "bk-bmsy-dgh-d08",
-    "bk-bmsy-dgh-d09",
-    "bk-bmsy-dgh-d10",
-    "bk-bmsy-dgh-d11",
-    "bk-bmsy-dgh-d12",
-    "bk-bmsy-dgh-d13",
-    "bk-bmsy-dgh-d14"
+    "bk-bmsy-270dg-4"
    ],
    "videos": [
     {
@@ -301,7 +421,7 @@
        "0": {
         "round": 230,
         "rect": [
-         320,
+         310,
          130
         ],
         "square": 230
@@ -309,8 +429,8 @@
        "+45": {
         "round": 210,
         "rect": [
-         230,
-         160
+         210,
+         100
         ],
         "square": 190
        },
@@ -325,10 +445,26 @@
        "-45": {
         "round": 180,
         "rect": [
-         230,
-         90
+         200,
+         80
         ],
         "square": 150
+       },
+       "+30": {
+        "round": 230,
+        "rect": [
+         260,
+         120
+        ],
+        "square": 230
+       },
+       "-30": {
+        "round": 230,
+        "rect": [
+         260,
+         110
+        ],
+        "square": 200
        }
       },
       "main_motor_kw": "1.0-1.3",
@@ -356,7 +492,7 @@
        "0": {
         "round": 230,
         "rect": [
-         320,
+         310,
          130
         ],
         "square": 230
@@ -364,8 +500,8 @@
        "+45": {
         "round": 210,
         "rect": [
-         230,
-         160
+         210,
+         100
         ],
         "square": 190
        },
@@ -380,10 +516,26 @@
        "-45": {
         "round": 180,
         "rect": [
-         230,
-         160
+         200,
+         80
         ],
         "square": 150
+       },
+       "+30": {
+        "round": 230,
+        "rect": [
+         260,
+         120
+        ],
+        "square": 230
+       },
+       "-30": {
+        "round": 230,
+        "rect": [
+         260,
+         110
+        ],
+        "square": 200
        }
       },
       "main_motor_kw": "1.0-1.3",
@@ -417,12 +569,12 @@
         "square": 270
        },
        "+45": {
-        "round": 180,
+        "round": 230,
         "rect": [
-         220,
-         180
+         230,
+         150
         ],
-        "square": 180
+        "square": 170
        },
        "+60": {
         "round": 150,
@@ -433,12 +585,28 @@
         "square": 100
        },
        "-45": {
-        "round": 200,
+        "round": 190,
         "rect": [
          200,
-         150
+         100
         ],
-        "square": 170
+        "square": 160
+       },
+       "+30": {
+        "round": 270,
+        "rect": [
+         300,
+         140
+        ],
+        "square": 250
+       },
+       "-30": {
+        "round": 260,
+        "rect": [
+         290,
+         100
+        ],
+        "square": 220
        }
       },
       "main_motor_kw": 1.5,
@@ -473,12 +641,12 @@
         "square": 270
        },
        "+45": {
-        "round": 240,
+        "round": 230,
         "rect": [
-         220,
-         180
+         230,
+         150
         ],
-        "square": 180
+        "square": 170
        },
        "+60": {
         "round": 150,
@@ -489,12 +657,28 @@
         "square": 100
        },
        "-45": {
-        "round": 200,
+        "round": 190,
         "rect": [
          200,
-         150
+         100
         ],
-        "square": 170
+        "square": 160
+       },
+       "+30": {
+        "round": 270,
+        "rect": [
+         300,
+         140
+        ],
+        "square": 250
+       },
+       "-30": {
+        "round": 260,
+        "rect": [
+         290,
+         100
+        ],
+        "square": 220
        }
       },
       "main_motor_kw": 1.5,
@@ -761,50 +945,50 @@
        "+30": {
         "round": 440,
         "rect": [
-         440,
-         500
+         500,
+         440
         ],
         "square": 440
        },
        "+45": {
         "round": 410,
         "rect": [
-         440,
-         410
+         410,
+         440
         ],
         "square": 410
        },
        "+60": {
         "round": 320,
         "rect": [
-         440,
-         250
+         250,
+         440
         ],
-        "square": 270
+        "square": 250
        },
        "-30": {
         "round": 440,
         "rect": [
-         440,
-         500
+         500,
+         440
         ],
         "square": 440
        },
        "-45": {
         "round": 410,
         "rect": [
-         440,
-         410
+         410,
+         440
         ],
         "square": 410
        },
        "-60": {
         "round": 320,
         "rect": [
-         440,
-         280
+         285,
+         440
         ],
-        "square": 280
+        "square": 285
        }
       },
       "main_motor_kw": 3,
@@ -828,7 +1012,381 @@
       "notes": "Rectangle capacities for this model are printed with 440 first (e.g. '440 x 610 mm'), i.e. apparently height x width, unlike every other model on these pages (e.g. BMSY 440 on p. 15 prints '610x440'). Values kept exactly as printed."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSY 230DG",
+     "slug": "bmsy-230dg",
+     "standard": [
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-675332"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-01-25-923779"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-01-25-254290"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-01-25-405649"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-11-884091"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2012-11-12-644997"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2012-11-12-736258"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2012-11-12-93162"
+      },
+      {
+       "title": "Feeding vise",
+       "image": "bk-det-2012-11-12-54290"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-02-13-343181"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-01-25-552471"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-11-12-242550"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 230DGH",
+     "slug": "bmsy-230dgh",
+     "standard": [
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-418156"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-01-25-457239"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-11-792431"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-01-11-635998"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-01-11-79567"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-01-11-314301"
+      },
+      {
+       "title": "Control pedal stand",
+       "image": "bk-det-2013-01-11-729393"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-01-11-899479"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2012-11-12-732988"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2012-11-12-984286"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-288"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-opt-289"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-11-12-353686"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 270DG",
+     "slug": "bmsy-270dg",
+     "standard": [
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-313536"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-01-21-365592"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-21-673768"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-01-21-785663"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-01-21-27522"
+      },
+      {
+       "title": "Vise",
+       "image": "bk-det-2013-01-21-214072"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-01-21-61333"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-01-21-748290"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-01-21-691566"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-01-21-120962"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2012-11-12-366378"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-02-13-259723"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2013-01-11-624853"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 270DGH",
+     "slug": "bmsy-270dgh",
+     "standard": [
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-781112"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-01-24-708679"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-01-24-526874"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-01-24-894227"
+      },
+      {
+       "title": "Foot pedal",
+       "image": "bk-det-2013-01-24-622236"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-01-24-637163"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-01-24-751374"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2013-01-24-761061"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-01-24-178190"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-01-21-222448"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-21-999633"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-01-21-469587"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-02-13-737151"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-11-12-42705"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 360DGH ECO",
+     "slug": "bmsy-360dg-eco",
+     "standard": [
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1017"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1018"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1019"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1021"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1022"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1023"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1024"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1026"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-521d1bf53cfc"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1028"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-446"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-449"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 440DGH",
+     "slug": "bmsy-440dgh",
+     "standard": [
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-2013-02-04-844814"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-2013-01-16-649030"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-01-16-480653"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-16-991047"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-01-16-826255"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-01-16-222224"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-01-16-85840"
+      },
+      {
+       "title": "Vibration damping cylinder",
+       "image": "bk-det-2013-01-16-811817"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-01-16-142889"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-01-16-80454"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2012-11-07-717285"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-205152b20ae0"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-585"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-297"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-298"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-299"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-300"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmsy-g": {
    "id": "bekamak-bmsy-g",
@@ -856,21 +1414,7 @@
     "bk-bmsy-320g-1",
     "bk-bmsy-320gl-1",
     "bk-bmsy-320g-2",
-    "bk-bmsy-320gl-2",
-    "bk-bmsy-g-d01",
-    "bk-bmsy-g-d02",
-    "bk-bmsy-g-d03",
-    "bk-bmsy-g-d04",
-    "bk-bmsy-g-d05",
-    "bk-bmsy-g-d06",
-    "bk-bmsy-g-d07",
-    "bk-bmsy-g-d08",
-    "bk-bmsy-g-d09",
-    "bk-bmsy-g-d10",
-    "bk-bmsy-g-d11",
-    "bk-bmsy-g-d12",
-    "bk-bmsy-g-d13",
-    "bk-bmsy-g-d14"
+    "bk-bmsy-320gl-2"
    ],
    "videos": [],
    "specs": {
@@ -896,28 +1440,28 @@
         "square": 300
        },
        "+30": {
-        "round": 300,
+        "round": 320,
         "rect": [
-         300,
-         200
+         320,
+         290
         ],
-        "square": 250
+        "square": 300
        },
        "+45": {
         "round": 260,
         "rect": [
-         250,
+         260,
          180
         ],
-        "square": 180
+        "square": 230
        },
        "+60": {
-        "round": 160,
+        "round": 180,
         "rect": [
          150,
-         150
+         140
         ],
-        "square": 150
+        "square": 140
        }
       },
       "main_motor_kw": 1.5,
@@ -967,12 +1511,12 @@
         "square": 320
        },
        "+60": {
-        "round": 280,
+        "round": 250,
         "rect": [
-         280,
-         280
+         320,
+         170
         ],
-        "square": 280
+        "square": 210
        }
       },
       "main_motor_kw": 2.2,
@@ -995,7 +1539,153 @@
       "other": {}
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSY 320G",
+     "slug": "bmsy-320g",
+     "standard": [
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-02-16-160083"
+      },
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-2013-02-15-327751"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-02-15-177377"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-02-15-55141"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2013-02-15-371332"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-02-15-420527"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-02-15-184136"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-02-15-795265"
+      },
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-728922"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2012-12-28-306026"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2012-12-28-878694"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-2012-12-28-222865"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2012-11-16-394463"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-316"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-317"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-320"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 320GL",
+     "slug": "bmsy-320gl",
+     "standard": [
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-03-01-404970"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-03-01-102528"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-02-16-790433"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-02-15-652114"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2013-02-15-232297"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-02-15-382230"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-02-15-941837"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-02-15-730029"
+      },
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-2013-02-15-656740"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-2013-02-04-430924"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2012-12-28-162609"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-2012-12-28-665325"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2012-11-16-799218"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-321"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-322"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-325"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmsy-straight": {
    "id": "bekamak-bmsy-straight",
@@ -1029,21 +1719,7 @@
     "bk-bmsy-320-1",
     "bk-bmsy-350m-3",
     "bk-bmsy-320l-2",
-    "bk-bmsy-320-2",
-    "bk-bmsy-straight-d01",
-    "bk-bmsy-straight-d02",
-    "bk-bmsy-straight-d03",
-    "bk-bmsy-straight-d04",
-    "bk-bmsy-straight-d05",
-    "bk-bmsy-straight-d06",
-    "bk-bmsy-straight-d07",
-    "bk-bmsy-straight-d08",
-    "bk-bmsy-straight-d09",
-    "bk-bmsy-straight-d10",
-    "bk-bmsy-straight-d11",
-    "bk-bmsy-straight-d12",
-    "bk-bmsy-straight-d13",
-    "bk-bmsy-straight-d14"
+    "bk-bmsy-320-2"
    ],
    "videos": [
     {
@@ -1139,12 +1815,12 @@
       "name": "BMSY 320L",
       "capacity_mm": {
        "0": {
-        "round": 330,
+        "round": 320,
         "rect": [
          610,
-         310
+         320
         ],
-        "square": 330
+        "square": 320
        },
        "+45": {
         "round": 320,
@@ -1180,8 +1856,8 @@
        "0": {
         "round": 350,
         "rect": [
-         570,
-         260
+         530,
+         350
         ],
         "square": 350
        },
@@ -1253,7 +1929,237 @@
       "other": {}
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSY 320",
+     "slug": "bmsy-320",
+     "standard": [
+      {
+       "title": "Roller table",
+       "image": "bk-det-d8bf22892d91"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1403"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-ee6a363ab421"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-0fbf8d47e202"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-68ae4bc159fd"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-c16bf1bdc252"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-e29d85f3a210"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-06d82afbf49d"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1404"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-fe68aadfe7e7"
+      },
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2012-11-23-990094"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-de5f0eca5521"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-258"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-259"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-262"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-263"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-opt-264"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 320L",
+     "slug": "bmsy-320l",
+     "standard": [
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1426"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1423"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-4ff799adba71"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-02-11-105861"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-02-11-533651"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-02-11-44906"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-02-11-536129"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-4a4d0db36aef"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-2013-02-04-180348"
+      },
+      {
+       "title": "Roller table",
+       "image": "bk-det-88f61214b1f7"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2d621ef4d04e"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1405"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-265"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-269"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-270"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-opt-271"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-374"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 350M",
+     "slug": "bmsy-350m",
+     "standard": [
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-2013-02-04-235203"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-d6d22178f2f3"
+      },
+      {
+       "title": "Roller table",
+       "image": "bk-det-296f87fa6f9b"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-333032882303"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-e53d9be7681a"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-7d5d1ca4a151"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-ca186984eb0f"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-11d301d02c55"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-3d9409980000"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-b8e32c8006e5"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-7157b1bab5e1"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-b5c1713da007"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-278"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-279"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-283"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-opt-284"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-408"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-roller": {
    "id": "bekamak-bmso-roller",
@@ -1265,11 +2171,11 @@
    "models_label": "BMSO 230 · BMSO 320 · BMSO 320L · BMSO 440",
    "summary": "Fully automatic pivot saws with roller material feed: set the length and quantity and the machine feeds, clamps, cuts and counts. Ø9″ (230 mm) to Ø17-3/8″ (440 mm), 24″ (610 mm) wide on the 320L.",
    "features": [
-    "Automatic feeding by driven rollers with hydraulic feed vise",
+    "Automatic feeding by driven rollers; hydraulic vise on the 320 / 320L",
     "Piece counter and length setting on the control panel",
-    "Hydraulic vise and automatic bow return; inverter blade speed",
-    "Hydro-mechanical blade tension, blade brush, coolant pump",
-    "Options: hydraulic blade tension, chip conveyor, microspray, 10 ft roller table"
+    "Automatic bow return; inverter blade speed (standard on the 320 / 320L, optional on the BMSO 230)",
+    "Hydro-mechanical blade tension, blade brush, coolant pump, mechanical top clamp, 4 ft (1.2 m) roller table",
+    "Options: hydraulic blade tension and chip conveyor (320 / 320L), micro-spray lubrication, 10 ft (3 m) roller table"
    ],
    "optional": [
     "3 Mt Material Roller Table",
@@ -1284,23 +2190,9 @@
     "bk-bmso-320-1",
     "bk-bmso-230-1",
     "bk-bmso-230-2",
-    "bk-bmso-320l-1",
-    "bk-bmso-230-3",
     "bk-bmso-230-4",
-    "bk-bmso-roller-d01",
-    "bk-bmso-roller-d02",
-    "bk-bmso-roller-d03",
-    "bk-bmso-roller-d04",
-    "bk-bmso-roller-d05",
-    "bk-bmso-roller-d06",
-    "bk-bmso-roller-d07",
-    "bk-bmso-roller-d08",
-    "bk-bmso-roller-d09",
-    "bk-bmso-roller-d10",
-    "bk-bmso-roller-d11",
-    "bk-bmso-roller-d12",
-    "bk-bmso-roller-d13",
-    "bk-bmso-roller-d14"
+    "bk-bmso-320l-1",
+    "bk-bmso-230-3"
    ],
    "videos": [
     {
@@ -1314,12 +2206,6 @@
      "title": "Bekamak BMSO 320L fully automatic straight-cutting band saw",
      "thumb": "video-u5HpQSlLgCY",
      "duration": "PT1M44S"
-    },
-    {
-     "id": "AX6sg7E_MKA",
-     "title": "Bekamak BMSO 320H fully automatic straight bundle-cutting band saw",
-     "thumb": "video-AX6sg7E_MKA",
-     "duration": "PT57S"
     }
    ],
    "specs": {
@@ -1365,9 +2251,9 @@
         "round": 320,
         "rect": [
          320,
-         300
+         320
         ],
-        "square": 300
+        "square": 320
        }
       },
       "main_motor_kw": 2.2,
@@ -1388,15 +2274,15 @@
       ],
       "feed_length_mm": null,
       "other": {
-       "Chip Conveyor Motor": "0.25 kW",
-       "Feed Motor": "0.25 kW"
+       "Feed Motor": "0.25 kW",
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       }
      },
      {
       "name": "BMSO 320L",
       "capacity_mm": {
        "0": {
-        "round": 330,
+        "round": 320,
         "rect": [
          500,
          320
@@ -1461,7 +2347,225 @@
       "notes": "This model prints 'Drive Motor 0,55 kW' where the other BMSO models print 'Feed Motor 0,25 kW'."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 230",
+     "slug": "bmso-230",
+     "standard": [
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-02-14-624371"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2013-02-14-256844"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-02-14-66010"
+      },
+      {
+       "title": "Mechanical top clamp",
+       "image": "bk-det-2013-02-14-614006"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-02-14-608889"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2013-02-14-830532"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-02-14-96331"
+      },
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-761492"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-3c7bafb4fb2f"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2012-11-13-686530"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-205"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-opt-206"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-11-13-186445"
+      }
+     ]
+    },
+    {
+     "model": "BMSO 320",
+     "slug": "bmso-320",
+     "standard": [
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-2525a224f8f6"
+      },
+      {
+       "title": "Material length stop rod",
+       "image": "bk-det-2013-03-21-896729"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1415"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-03-21-364521"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-03-21-415135"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1416"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1413"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1417"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-03-21-113563"
+      },
+      {
+       "title": "Mechanical top clamp",
+       "image": "bk-det-std-1418"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1419"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-std-1420"
+      },
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-441303"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-212"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-213"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-214"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-216"
+      }
+     ]
+    },
+    {
+     "model": "BMSO 320L",
+     "slug": "bmso-320-l",
+     "standard": [
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1427"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-03-28-344219"
+      },
+      {
+       "title": "Mechanical top clamp",
+       "image": "bk-det-2013-03-28-671935"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-03-21-896220"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-03-21-631525"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-03-21-558946"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-03-21-287720"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-2013-03-21-513629"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-2013-02-04-869577"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-2012-12-29-297086"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-4ff9df236231"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1428"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-878160f8eff5"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-217"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-218"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-220"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-221"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-opt-373"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-e": {
    "id": "bekamak-bmso-e",
@@ -1490,14 +2594,7 @@
     "bk-bmso-320e-2",
     "bk-bmso-320e-4",
     "bk-bmso-320e-5",
-    "bk-bmso-320e-3",
-    "bk-bmso-e-d01",
-    "bk-bmso-e-d02",
-    "bk-bmso-e-d03",
-    "bk-bmso-e-d04",
-    "bk-bmso-e-d05",
-    "bk-bmso-e-d06",
-    "bk-bmso-e-d07"
+    "bk-bmso-320e-3"
    ],
    "videos": [
     {
@@ -1560,7 +2657,7 @@
          320,
          320
         ],
-        "square": 300
+        "square": 320
        }
       },
       "main_motor_kw": 2.2,
@@ -1622,7 +2719,81 @@
       }
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 320E",
+     "slug": "bmso-320e",
+     "standard": [
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-2525a224f8f6"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-03-21-364521"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-03-21-415135"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-03-21-113563"
+      },
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-2013-02-04-441303"
+      },
+      {
+       "title": "Blade brush",
+       "image": null
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": null
+      },
+      {
+       "title": "Safety switch",
+       "image": null
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": null
+      },
+      {
+       "title": "Mechanical top clamp",
+       "image": null
+      },
+      {
+       "title": "Coolant pump",
+       "image": null
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-12-29-695466"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-d39ac814cd4c"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-550e2ce57d24"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2012-10-10-961024"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-ga": {
    "id": "bekamak-bmso-ga",
@@ -1635,10 +2806,10 @@
    "summary": "Automatic saw with encoder-measured feed and an NC controller that also miters to one side up to 60° — programmed repeat cutting of angled structural parts up to Ø13-3/4″ (350 mm).",
    "features": [
     "Encoder-measured roller feed with hydraulic feed vise; NC controller for length and quantity",
-    "Single miter 0°–60° with hydraulic head rotation",
-    "Inverter blade speed, hydro-mechanical blade tension",
-    "Blade brush, coolant pump, chip conveyor motor",
-    "Options: hydraulic top clamping, microspray, 10 ft roller table"
+    "Single miter 0°–60°: the head is swung by hand and locked at the set angle",
+    "Inverter blade speed, hydro-mechanical blade tension, heavy-duty gearbox",
+    "Blade brush, coolant pump, mechanical top clamp, 4 ft (1.2 m) roller table standard",
+    "Options: chip conveyor, micro-spray lubrication, 10 ft (3 m) roller table"
    ],
    "optional": [
     "Microspray Device",
@@ -1697,7 +2868,7 @@
         "round": 320,
         "rect": [
          260,
-         360
+         350
         ],
         "square": 280
        }
@@ -1726,7 +2897,77 @@
       "notes": "As printed: +30° square capacity (350 mm) exceeds the +30° round capacity (320 mm); +45° rectangular capacity is printed as 260x360 mm. The catalogue label 'Cutting Seeds' is a typo for Cutting Speeds."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 350GA",
+     "slug": "bmso-350ga",
+     "standard": [
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-std-1662"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1661"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1660"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1659"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1658"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1657"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1656"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1655"
+      },
+      {
+       "title": "Mechanical top clamp",
+       "image": "bk-det-std-1654"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1653"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-std-1652"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-std-1651"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-706"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-704"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-702"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-gs": {
    "id": "bekamak-bmso-gs",
@@ -1736,13 +2977,13 @@
    "name": "BMSO 320GS / 320GLS servo-feed single-miter band saws",
    "short": "BMSO GS servo",
    "models_label": "BMSO 320GS · BMSO 320GLS",
-   "summary": "NC automatic saws with servo-driven shuttle vise feeding and programmable miter angles (0° to 60°); the GLS bow takes 24″ (610 mm) wide material.",
+   "summary": "NC automatic saws with servo-driven shuttle vise feeding and a single-miter head to 60° (set by hand on the angle scale); the GLS bow takes 24″ (610 mm) wide material.",
    "features": [
     "Servo shuttle-vise feed with ball screw: ±0.1 mm length accuracy",
-    "NC control with multi-program job list (length × quantity × angle)",
-    "Hydraulic head rotation for single miter cuts",
-    "Hydraulic vise, inverter blade speed, hydraulic blade tension",
-    "Chip conveyor and roller table options"
+    "NC control with multi-program job list (length × quantity)",
+    "Single miter to 60°: the head is swung by hand on the angle scale",
+    "Hydraulic vise, inverter blade speed, hydro-mechanical blade tension",
+    "Options: hydraulic top clamp, hydraulic blade tension, multi-segment vise jaws, micro-spray lubrication, 10 ft (3 m) roller table"
    ],
    "optional": [
     "Multiple Segments",
@@ -1784,7 +3025,7 @@
        "-30": {
         "round": 320,
         "rect": [
-         320,
+         300,
          250
         ],
         "square": 280
@@ -1792,7 +3033,7 @@
        "-45": {
         "round": 260,
         "rect": [
-         320,
+         250,
          190
         ],
         "square": 220
@@ -1800,7 +3041,7 @@
        "-60": {
         "round": 170,
         "rect": [
-         200,
+         160,
          120
         ],
         "square": 150
@@ -1842,15 +3083,15 @@
        "-60": {
         "round": 260,
         "rect": [
-         260,
-         220
+         210,
+         210
         ],
-        "square": 220
+        "square": 210
        },
        "-45": {
         "round": 320,
         "rect": [
-         360,
+         340,
          320
         ],
         "square": 320
@@ -1858,7 +3099,7 @@
        "-30": {
         "round": 320,
         "rect": [
-         510,
+         500,
          320
         ],
         "square": 320
@@ -1886,7 +3127,169 @@
       "notes": "Angle rows are printed in the order 0°, -60°, -45°, -30° and are reproduced in that order. No servo motor rating is printed for this model. As printed, the -45° capacity (320 round / 360x320) is larger than the -60° capacity (260 / 260x220) and the GLS weight (2060 kg) is lower than the GS (2310 kg)."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 320GS",
+     "slug": "bmso-320-gs-nc",
+     "standard": [
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": "bk-det-std-1519"
+      },
+      {
+       "title": "Rear-opening vise",
+       "image": "bk-det-std-1518"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-std-1517"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1516"
+      },
+      {
+       "title": "Feeding vise",
+       "image": "bk-det-std-1515"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1514"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1513"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1512"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1511"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1510"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1509"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1508"
+      },
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-std-1507"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-opt-674"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-673"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-672"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-671"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-670"
+      }
+     ]
+    },
+    {
+     "model": "BMSO 320GLS",
+     "slug": "bmso-320-gls-nc",
+     "standard": [
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-std-1490"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1489"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1488"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1487"
+      },
+      {
+       "title": "Bow height adjustment switch",
+       "image": "bk-det-std-1486"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1485"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1484"
+      },
+      {
+       "title": "Feeding vise",
+       "image": "bk-det-std-1483"
+      },
+      {
+       "title": "Rear-opening vise",
+       "image": "bk-det-std-1482"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1481"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1480"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1479"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-std-1478"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-663"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-662"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-661"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-660"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-opt-659"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-dgs": {
    "id": "bekamak-bmso-dgs",
@@ -1898,10 +3301,10 @@
    "models_label": "BMSO 270DGS",
    "summary": "Compact NC automatic saw that feeds with a motorized shuttle vise and miters both ways — automatic production of angled parts up to Ø10-5/8″ (270 mm).",
    "features": [
-    "Motorized shuttle-vise feeding, NC programmable lengths and quantities",
-    "Double miter +60° / −45° with hydraulic head rotation",
-    "Hydraulic vise, inverter blade speed",
-    "Hydraulic blade tension, blade brush, coolant pump"
+    "Motorized shuttle-vise feeding (39″ / 1000 mm stroke); touch-screen control with a 10-step program",
+    "Double miter +60° / −45°, head swung by hand",
+    "Hydraulic vise, hydro-mechanical blade tension, coolant pump",
+    "Options: hydraulic top clamp, micro-spray lubrication, 10 ft (3 m) roller table"
    ],
    "optional": [
     "Hydraulic Top Clamping",
@@ -1943,18 +3346,18 @@
        "+30": {
         "round": 270,
         "rect": [
-         270,
-         250
+         300,
+         150
         ],
         "square": 270
        },
        "+45": {
-        "round": 250,
+        "round": 230,
         "rect": [
          230,
-         180
+         150
         ],
-        "square": 180
+        "square": 170
        },
        "+60": {
         "round": 150,
@@ -1968,17 +3371,17 @@
         "round": 260,
         "rect": [
          270,
-         180
+         140
         ],
         "square": 220
        },
        "-45": {
-        "round": 200,
+        "round": 190,
         "rect": [
-         210,
-         100
+         200,
+         110
         ],
-        "square": 170
+        "square": 160
        }
       },
       "main_motor_kw": 1.5,
@@ -2005,7 +3408,61 @@
       "notes": "No -60° capacity is printed (tabulated miter range is +60° to -45°)."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 270DGS",
+     "slug": "bmso-270dgs",
+     "standard": [
+      {
+       "title": "Hydraulic vise",
+       "image": null
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": null
+      },
+      {
+       "title": "Band saw blade 27 mm (1.06″) wide",
+       "image": null
+      },
+      {
+       "title": "Feeding vise, 39″ (1000 mm) stroke",
+       "image": null
+      },
+      {
+       "title": "1 program with 10 steps",
+       "image": null
+      },
+      {
+       "title": "Safety switch",
+       "image": null
+      },
+      {
+       "title": "Coolant pump",
+       "image": null
+      },
+      {
+       "title": "Touch-screen control panel",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": null
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmsy-c": {
    "id": "bekamak-bmsy-c",
@@ -2049,21 +3506,7 @@
     "bk-bmsy-460c-1",
     "bk-bmsy-460c-2",
     "bk-bmsy-460c-3",
-    "bk-bmsy-1020c-3",
-    "bk-bmsy-c-d01",
-    "bk-bmsy-c-d02",
-    "bk-bmsy-c-d03",
-    "bk-bmsy-c-d04",
-    "bk-bmsy-c-d05",
-    "bk-bmsy-c-d06",
-    "bk-bmsy-c-d07",
-    "bk-bmsy-c-d08",
-    "bk-bmsy-c-d09",
-    "bk-bmsy-c-d10",
-    "bk-bmsy-c-d11",
-    "bk-bmsy-c-d12",
-    "bk-bmsy-c-d13",
-    "bk-bmsy-c-d14"
+    "bk-bmsy-1020c-3"
    ],
    "videos": [
     {
@@ -2217,15 +3660,15 @@
         "round": 560,
         "rect": [
          750,
-         560
+         550
         ],
-        "square": 560
+        "square": 550
        },
        "+45": {
         "round": 400,
         "rect": [
          400,
-         560
+         550
         ],
         "square": 400
        }
@@ -2259,7 +3702,7 @@
          850,
          790
         ],
-        "square": 790
+        "square": 810
        },
        "+45": {
         "round": 480,
@@ -2371,12 +3814,538 @@
       "feed_length_mm": null,
       "feed_type": null,
       "other": {
-       "Chip Conveyor Motor": "0.25 kW"
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       },
       "notes": "Weight printed as '6700 Kg'."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSY 330C",
+     "slug": "bmsy-330c",
+     "standard": [
+      {
+       "title": "2° inclined blade",
+       "image": "bk-det-std-1630"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-std-1600"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-1599"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1598"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1597"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1595"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1596"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1594"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-std-1593"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1591"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1588"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1589"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-std-1586"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1585"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-std-1584"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-691"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-690"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-689"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-688"
+      },
+      {
+       "title": "Split vise",
+       "image": null
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSY 460C",
+     "slug": "bmsy-460c",
+     "standard": [
+      {
+       "title": "2° inclined blade",
+       "image": "bk-det-std-1632"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1458"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-a92d653a284a"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-828510"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-f0617777be44"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-7454e88e92c1"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-fc1186579c71"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-a3462d56b9ff"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-fff1c21337bf"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-2012-12-29-691706"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-c54f4ad50247"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-1f3e1dfc8180"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1461"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-ed5986b31fa0"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-640"
+      },
+      {
+       "title": "High vise jaws",
+       "image": "bk-det-opt-110"
+      },
+      {
+       "title": "Second vise",
+       "image": "bk-det-opt-639"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-ccebdb79f389"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-114"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-115"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-117"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-641"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-opt-121"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-643"
+      },
+      {
+       "title": "Split vise",
+       "image": "bk-det-opt-410"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-642"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 560C",
+     "slug": "bmsy-560c",
+     "standard": [
+      {
+       "title": "2° inclined blade",
+       "image": "bk-det-std-1633"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-757300"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-826cd9f18216"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2012-12-28-604700"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-d262211ebacc"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-55d77db21b73"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-e89d725ca276"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-b2d84e813a29"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-8fb013b185e3"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-1aa2639b65f0"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-5db7a6667d2a"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-fe427b856688"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-404eb8555e5a"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-b3ddd3818999"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Split vise",
+       "image": "bk-det-opt-652"
+      },
+      {
+       "title": "Second vise",
+       "image": "bk-det-opt-650"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-opt-124"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-125"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-126"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-645"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-129"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-130"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-opt-132"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-646"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-647"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 810C",
+     "slug": "bmsy-810c",
+     "standard": [
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1434"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-652121"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-std-1433"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1437"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-be9fd129e983"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1438"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-std-1441"
+      },
+      {
+       "title": "Chip brush",
+       "image": "bk-det-std-1439"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1442"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-std-1443"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1444"
+      },
+      {
+       "title": "2° inclined head",
+       "image": null
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": null
+      },
+      {
+       "title": "Coolant pump (boron oil)",
+       "image": null
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Double vise",
+       "image": "bk-det-opt-624"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-615"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-opt-616"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-618"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-opt-628"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-619"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-620"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-623"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-622"
+      },
+      {
+       "title": "Split vise",
+       "image": "bk-det-opt-625"
+      },
+      {
+       "title": "High vise jaws",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSY 1020C",
+     "slug": "bmsy-1020c",
+     "standard": [
+      {
+       "title": "Control panel",
+       "image": "bk-det-0b5d58c0c50a"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-6f6a74710db7"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-a80076eddde1"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-79c5dd82aa1c"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-679ecc4396e4"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-f8c8b5c9f71a"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-801cb066b9da"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-89536e862c79"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-3c59f4421b17"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-9dcea5a5baef"
+      },
+      {
+       "title": "Infeed and outfeed rollers",
+       "image": "bk-det-cae648af9a50"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-e5335a558d08"
+      },
+      {
+       "title": "Band saw blade 54 mm (2.13″) wide",
+       "image": "bk-det-67f6e373e09c"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-eb4532fcb2f1"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-c989820a619c"
+      },
+      {
+       "title": "2° inclined blade",
+       "image": "bk-det-e5476c9a215b"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-5b52f5316281"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-6820ee142ce9"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-06b4e3c6028c"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-45718da58ce3"
+      },
+      {
+       "title": "Split vise",
+       "image": null
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmsy-cgh": {
    "id": "bekamak-bmsy-cgh",
@@ -2388,11 +4357,11 @@
    "models_label": "BMSY 325CGH · BMSY 440CGH · BMSY 540CGH · BMSY 810CGH",
    "summary": "Double-column rigidity with a head that rotates up to 60° for miter cuts on beams and heavy sections, from Ø12-3/4″ (325 mm) to Ø31-7/8″ (810 mm).",
    "features": [
-    "Hydraulic head rotation 0°–60° with angle display",
+    "Single miter 0°–60°: the head is swung by hand on the angle scale; digital angle display and hydraulic angle clamping on the 540CGH / 810CGH",
     "Twin-column bow guidance; hydraulic vise; automatic bow return",
-    "Inverter blade speed, hydraulic blade tension",
-    "Blade brush, coolant pump, chip conveyor option",
-    "Options: hydraulic top clamping, roller tables, laser line"
+    "Inverter blade speed, hydro-mechanical blade tension, 3° inclined blade, optical bow height adjustment",
+    "Blade brush, coolant pump, cutting-pressure control",
+    "Options: hydraulic top clamp, hydraulic blade tension, chip conveyor, laser line pointer, micro-spray lubrication, 10 ft (3 m) roller tables (plain or motorized)"
    ],
    "optional": [
     "Microspray Device",
@@ -2416,21 +4385,7 @@
     "bk-bmsy-540cgh-1",
     "bk-bmsy-440cgh-2",
     "bk-bmsy-440cgh-3",
-    "bk-bmsy-325cgh-3",
-    "bk-bmsy-cgh-d01",
-    "bk-bmsy-cgh-d02",
-    "bk-bmsy-cgh-d03",
-    "bk-bmsy-cgh-d04",
-    "bk-bmsy-cgh-d05",
-    "bk-bmsy-cgh-d06",
-    "bk-bmsy-cgh-d07",
-    "bk-bmsy-cgh-d08",
-    "bk-bmsy-cgh-d09",
-    "bk-bmsy-cgh-d10",
-    "bk-bmsy-cgh-d11",
-    "bk-bmsy-cgh-d12",
-    "bk-bmsy-cgh-d13",
-    "bk-bmsy-cgh-d14"
+    "bk-bmsy-325cgh-3"
    ],
    "videos": [
     {
@@ -2461,7 +4416,7 @@
        "0": {
         "round": 325,
         "rect": [
-         440,
+         400,
          320
         ],
         "square": 320
@@ -2469,24 +4424,24 @@
        "+30": {
         "round": 325,
         "rect": [
-         360,
+         340,
          320
         ],
         "square": 320
        },
        "+45": {
-        "round": 305,
+        "round": 280,
         "rect": [
-         270,
+         240,
          320
         ],
-        "square": 270
+        "square": 260
        },
        "+60": {
         "round": 180,
         "rect": [
          180,
-         240
+         220
         ],
         "square": 180
        }
@@ -2516,7 +4471,7 @@
       "name": "BMSY 440CGH",
       "capacity_mm": {
        "0": {
-        "round": 450,
+        "round": 440,
         "rect": [
          695,
          425
@@ -2524,7 +4479,7 @@
         "square": 425
        },
        "+30": {
-        "round": 450,
+        "round": 440,
         "rect": [
          560,
          425
@@ -2532,10 +4487,10 @@
         "square": 425
        },
        "+45": {
-        "round": 430,
+        "round": 440,
         "rect": [
-         430,
-         425
+         425,
+         430
         ],
         "square": 425
        },
@@ -2567,7 +4522,7 @@
       "feed_length_mm": null,
       "feed_type": null,
       "other": {
-       "Chip Conveyor Motor": "0.25 kW"
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       },
       "notes": "Printed 0° round capacity is 450 mm (model name suggests 440). +60° prints rectangle 260x425 mm but square 290 mm (square wider than the rectangle width) - reproduced as printed."
      },
@@ -2594,7 +4549,7 @@
         "round": 510,
         "rect": [
          450,
-         540
+         510
         ],
         "square": 450
        },
@@ -2649,8 +4604,8 @@
        "+45": {
         "round": 600,
         "rect": [
-         750,
-         600
+         600,
+         750
         ],
         "square": 600
        },
@@ -2685,7 +4640,393 @@
       "notes": "0° prints rectangle 910x750 mm but square 770 mm (square taller than the rectangle height) - reproduced as printed."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSY 325CGH",
+     "slug": "bmsy-325cgh",
+     "standard": [
+      {
+       "title": "Linear guides",
+       "image": "bk-det-765f24f2c147"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-2013-02-04-525171"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-2013-02-04-651943"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-a398ece0b3f2"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-44ec454a6b74"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-5ded63f031be"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-cf315fb74043"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-499d1747483c"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-2012-11-19-134731"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-b94de93deacf"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-c107c9d98976"
+      },
+      {
+       "title": "2° inclined blade",
+       "image": "bk-det-9afa5d47ace7"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-f22e1f779195"
+      },
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-ea0a0e5ac8d4"
+      },
+      {
+       "title": "Hydraulic clamping",
+       "image": "bk-det-50debf14f2fb"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-7bc7d0382c73"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-171"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-172"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-173"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-175"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-176"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-174"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-390"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 440CGH",
+     "slug": "bmsy-440cgh",
+     "standard": [
+      {
+       "title": "Linear guides",
+       "image": "bk-det-cc3b3cde525d"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-0a3ba53713e9"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-763b08545fc8"
+      },
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-52d65f7f1b3b"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-ff7f8e1f36c2"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-a2a7b762b457"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-79f81f757397"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-789355"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-e26067c824e8"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-e36bfbdb364e"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-645560a7c86b"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-308674ccebd1"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-1b3487159311"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-796f67b57933"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-184"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-185"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-186"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-187"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-188"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-2012-11-21-558069"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-364d142b9585"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 540CGH",
+     "slug": "bmsy-540cgh",
+     "standard": [
+      {
+       "title": "Digital angle display",
+       "image": "bk-det-2013-04-03-598706"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-cdc6065ee88b"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-2013-02-04-26324"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-2013-02-04-452302"
+      },
+      {
+       "title": "Hydraulic clamping for angle cuts",
+       "image": "bk-det-2013-02-04-223811"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-02-04-352862"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-145194"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2012-12-31-581746"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2012-12-31-492085"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2012-12-31-56555"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-7fab12425c26"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-3f25c9ff8123"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-a7da1a33eb58"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-1850b4b3c2c4"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-39e521e5c036"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-191"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-192"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-2013-03-13-509020"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-2013-01-11-718366"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-01-09-687769"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-12-31-896746"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-2012-11-21-958976"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 810CGH",
+     "slug": "bmsy-810cgh",
+     "standard": [
+      {
+       "title": "Digital miter adjustment",
+       "image": "bk-det-124411b3f766"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-712928"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2013-02-01-700599"
+      },
+      {
+       "title": "Hydraulic clamping for angle cuts",
+       "image": "bk-det-2013-02-01-955977"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-02-01-859269"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-6c0e4abb3e04"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-02-01-802023"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-2e26edb26045"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-2013-02-01-246771"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-2013-02-01-148588"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-02-01-387449"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-02-01-89372"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-19fa6532d3d9"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-2013-02-01-605070"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-11-615615"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-198"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-199"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-2013-01-11-453208"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-201"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-2013-01-10-108656"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-01-09-199175"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-204"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmsy-dg-nc": {
    "id": "bekamak-bmsy-dg-nc",
@@ -2695,12 +5036,12 @@
    "name": "BMSY DG NC semi-automatic twin-miter double-column band saws",
    "short": "BMSY DG NC twin-miter",
    "models_label": "BMSY 360CDGH · BMSY 440CDGH · BMSY 560DG · BMSY 650DG · BMSY 750DG",
-   "summary": "Heavy double-column miter saws whose head swivels both ways under NC control — the operator enters the angle and the saw positions itself. Ø14-1/8″ (360 mm) to Ø29-1/2″ (750 mm).",
+   "summary": "Heavy double-column miter saws whose head swivels both ways; on the 650DG and 750DG NC versions the operator enters the angle and the saw positions itself. Ø14-1/8″ (360 mm) to Ø29-1/2″ (750 mm).",
    "features": [
-    "NC-controlled head rotation to both sides (+60° / −45° on most sizes)",
+    "Double-miter head: NC-controlled rotation on the 650DG / 750DG NC, hand-swung turntable on the 440CDGH / 560DG",
     "Twin-column guidance, hydraulic vise, automatic bow return",
-    "Inverter blade speed, hydraulic blade tension",
-    "Chip conveyor and roller table options"
+    "Inverter blade speed; hydraulic blade tension on the 650DG / 750DG, hydro-mechanical on the 440CDGH / 560DG",
+    "Chip conveyor standard on the 650DG / 750DG (optional on the 560DG); options: hydraulic top clamp, laser line pointer, micro-spray lubrication, 10 ft (3 m) roller tables"
    ],
    "optional": [
     "Hydraulic Blade Tension",
@@ -2723,24 +5064,10 @@
     "bk-bmsy-560dg-1",
     "bk-bmsy-560dg-2",
     "bk-bmsy-560dg-3",
-    "bk-bmsy-750dg-2",
-    "bk-bmsy-750dg-3",
     "bk-bmsy-650dg-2",
     "bk-bmsy-560dg-4",
-    "bk-bmsy-dg-nc-d01",
-    "bk-bmsy-dg-nc-d02",
-    "bk-bmsy-dg-nc-d03",
-    "bk-bmsy-dg-nc-d04",
-    "bk-bmsy-dg-nc-d05",
-    "bk-bmsy-dg-nc-d06",
-    "bk-bmsy-dg-nc-d07",
-    "bk-bmsy-dg-nc-d08",
-    "bk-bmsy-dg-nc-d09",
-    "bk-bmsy-dg-nc-d10",
-    "bk-bmsy-dg-nc-d11",
-    "bk-bmsy-dg-nc-d12",
-    "bk-bmsy-dg-nc-d13",
-    "bk-bmsy-dg-nc-d14"
+    "bk-bmsy-750dg-2",
+    "bk-bmsy-750dg-3"
    ],
    "videos": [
     {
@@ -2909,7 +5236,7 @@
        "0": {
         "round": 560,
         "rect": [
-         850,
+         810,
          530
         ],
         "square": 540
@@ -2917,7 +5244,7 @@
        "+30": {
         "round": 560,
         "rect": [
-         670,
+         660,
          540
         ],
         "square": 540
@@ -2931,17 +5258,17 @@
         "square": 520
        },
        "-60": {
-        "round": 340,
+        "round": 330,
         "rect": [
-         340,
-         520
+         330,
+         540
         ],
-        "square": 340
+        "square": 330
        },
        "-30": {
         "round": 560,
         "rect": [
-         670,
+         660,
          540
         ],
         "square": 540
@@ -3057,7 +5384,7 @@
       "name": "BMSY 750DG",
       "capacity_mm": {
        "0": {
-        "round": 700,
+        "round": 750,
         "rect": [
          1300,
          750
@@ -3073,7 +5400,7 @@
         "square": 750
        },
        "+45": {
-        "round": 700,
+        "round": 750,
         "rect": [
          850,
          750
@@ -3097,12 +5424,20 @@
         "square": 750
        },
        "-45": {
-        "round": 800,
+        "round": 750,
         "rect": [
          850,
          750
         ],
         "square": 750
+       },
+       "+60": {
+        "round": 570,
+        "rect": [
+         570,
+         750
+        ],
+        "square": 570
        }
       },
       "main_motor_kw": 11,
@@ -3131,7 +5466,381 @@
       "notes": "The 60-degree row is printed as '-60 deg'; key kept as printed. Round capacity is printed as 700 mm at 0 deg but 800 mm at +/-30 and -45 deg, exactly as in the catalogue."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSY 440CDGH",
+     "slug": "bmsy-440cdgh",
+     "standard": [
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-67a8523a6435"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-59f97fc717e4"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-38e3014d5e6e"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-1626febeea7a"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-5c83215ce40f"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-54af4fb519ef"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-820e73296fc3"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-862bfbce09a6"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-00b815baa2fa"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-bcf88c8d094d"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-397368c5d8ba"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-dcc02d262a28"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-06754cb83ca3"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-75babf0ac865"
+      },
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-0137bf468d4d"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-09c35ba38e33"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-73b2be05cfd7"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-68a1425ba75b"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-5d29a7ad244b"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-fee0a17272a0"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-ba8e6cb71ed0"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 560DG",
+     "slug": "bmsy-560-dg",
+     "standard": [
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1061"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1062"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1063"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1064"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-std-1065"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-1066"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1068"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1069"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-ae1a37227b35"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-std-1071"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-std-1072"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1073"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1074"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-std-1075"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1076"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-465"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-35cffc5a94bf"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-dddb64f6917d"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-007516118786"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-a9aa36e44b42"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-76b77645ea9b"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-fdbd5316a43b"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 650DG",
+     "slug": "bmsy-650-dg-nc",
+     "standard": [
+      {
+       "title": "Band saw blade 54 mm (2.13″) wide",
+       "image": "bk-det-cde36275e388"
+      },
+      {
+       "title": "Turntable",
+       "image": "bk-det-f6162ef73460"
+      },
+      {
+       "title": "Safety rope sensor",
+       "image": "bk-det-69dfbed20f7f"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-3b6a2ae32097"
+      },
+      {
+       "title": "Motorized swarf brush",
+       "image": "bk-det-375f6726fdac"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-496c5e5d4f0f"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-36179d29c1af"
+      },
+      {
+       "title": "NC rotation table",
+       "image": "bk-det-5531ad442409"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-546e9026d32e"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-1af3ccc50dc9"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-f652a0718b1a"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-aba0292b39a8"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-d17f0a650bbf"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-c5bca1f9ca24"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-2b3b4f457d05"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-e24e7245cac8"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-5ac4d7300620"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-39643d92a8f4"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-0610698ec392"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-d4b15771f6a9"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-52a6fc003ec3"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table for 45° / 60° cuts",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSY 750DG",
+     "slug": "bmsy-750-dg-nc",
+     "standard": [
+      {
+       "title": "Safety rope sensor",
+       "image": "bk-det-8acb7c697195"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-9c78d013385e"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-1cdb7bfb0256"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-a969f308f7f9"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-895f42a749a1"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-a70475cd4feb"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-08fa938452c5"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-595cea8ac507"
+      },
+      {
+       "title": "Motorized swarf brush",
+       "image": "bk-det-5ba6f13c1be4"
+      },
+      {
+       "title": "NC rotation table",
+       "image": "bk-det-fa3330fc210b"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-90ecb1a07fed"
+      },
+      {
+       "title": "Band saw blade 54 mm (2.13″) wide",
+       "image": "bk-det-89058a61f879"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-0586e04c0546"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-acb434db0ce3"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-d82e4b5025d0"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-b1126205344b"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-68b0e0d2e0c7"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-0e805ff47829"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-f18ab695fd83"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-2b46585edfc9"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-c": {
    "id": "bekamak-bmso-c",
@@ -3146,8 +5855,8 @@
     "Automatic roller feed with hydraulic feed vise",
     "Piece counter and length setting",
     "Twin-column guidance, hydraulic vise, inverter blade speed",
-    "Hydraulic blade tension, blade brush, coolant pump",
-    "Chip conveyor, hydraulic top clamping and roller tables optional"
+    "Hydro-mechanical blade tension, blade brush, coolant pump, 4 ft (1.2 m) roller table",
+    "Options: hydraulic blade tension, chip conveyor, split vise (330C), laser line pointer, micro-spray lubrication, 10 ft (3 m) roller tables"
    ],
    "optional": [
     "Split Vice",
@@ -3171,21 +5880,7 @@
     "bk-bmso-330c-1",
     "bk-bmso-330c-2",
     "bk-bmso-330c-3",
-    "bk-bmso-330c-4",
-    "bk-bmso-c-d01",
-    "bk-bmso-c-d02",
-    "bk-bmso-c-d03",
-    "bk-bmso-c-d04",
-    "bk-bmso-c-d05",
-    "bk-bmso-c-d06",
-    "bk-bmso-c-d07",
-    "bk-bmso-c-d08",
-    "bk-bmso-c-d09",
-    "bk-bmso-c-d10",
-    "bk-bmso-c-d11",
-    "bk-bmso-c-d12",
-    "bk-bmso-c-d13",
-    "bk-bmso-c-d14"
+    "bk-bmso-330c-4"
    ],
    "videos": [
     {
@@ -3276,7 +5971,7 @@
       "feed_type": "roller feed",
       "other": {
        "Feed Motor": "0.25 kW",
-       "Chip Conveyor Motor": "0.25 kW"
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       }
      },
      {
@@ -3311,7 +6006,7 @@
       "feed_type": "roller feed",
       "other": {
        "Feed Motor": "0.55 kW",
-       "Chip Conveyor Motor": "0.25 kW"
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       }
      },
      {
@@ -3351,7 +6046,281 @@
       "notes": "Table headed 'BMSO 825C' but the p24 model list says 'BMSO 810C'. Printed 0° round capacity is 900 mm (not 825), rectangle 900x790 mm, square 790 mm. Band printed as '8400 x 41 x 1,3 mm' (41 mm wide, unlike the 54 mm band of the BMSY 825C). Cutting speed printed 20 - 100 m/min. Weight printed as '3500 Kg'. This table uses decimal points (1.5 / 0.55 / 0.12 / 0.25 kW) where the others use commas. Reproduced as printed - confirm with Bekamak."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 330C",
+     "slug": "bmso-330C",
+     "standard": [
+      {
+       "title": "2° inclined blade",
+       "image": "bk-det-std-1758"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-std-1757"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-1756"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": null
+      },
+      {
+       "title": "Safety switch",
+       "image": null
+      },
+      {
+       "title": "Blade brush",
+       "image": null
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": null
+      },
+      {
+       "title": "Linear guides",
+       "image": null
+      },
+      {
+       "title": "Material length stop",
+       "image": null
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": null
+      },
+      {
+       "title": "Control panel",
+       "image": null
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": null
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": null
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": null
+      },
+      {
+       "title": "Coolant pump",
+       "image": null
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Split vise",
+       "image": null
+      },
+      {
+       "title": "Chip conveyor",
+       "image": null
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": null
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 460C",
+     "slug": "bmso-460c",
+     "standard": [
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-std-105"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1445"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1446"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-108"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1447"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-112"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-113"
+      },
+      {
+       "title": "Mechanical top clamp",
+       "image": "bk-det-2012-12-28-715025"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-std-115"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-std-116"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1448"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-std-117"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-118"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-119"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-120"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-631"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-629"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-632"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-630"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 560C",
+     "slug": "bmso-560c",
+     "standard": [
+      {
+       "title": "Linear guides",
+       "image": "bk-det-5497e78a9f71"
+      },
+      {
+       "title": "Mechanical top clamp",
+       "image": "bk-det-d5fdd181d390"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-d63886daf45f"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-704894"
+      },
+      {
+       "title": "Material length stop",
+       "image": "bk-det-e5e17a8d7950"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-932adbd194ff"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-e40f2f3c5ca8"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-bf640a9029f5"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-f778468d1a00"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-c9cc72ff0f34"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-e79ca77bc3c1"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-3cf260e09c3f"
+      },
+      {
+       "title": "4 ft (1.2 m) roller table",
+       "image": "bk-det-513b18e53858"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-7901af29bcee"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-6a28be390014"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-2013-04-16-715791"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-2013-04-16-245653"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-2013-02-04-908371"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-01-09-826396"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-12-29-167088"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": null
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-cs": {
    "id": "bekamak-bmso-cs",
@@ -3365,9 +6334,9 @@
    "features": [
     "Servo shuttle-vise feed on ball screw; multi-program PLC touch screen",
     "Twin-column guidance; hydraulic vise on feed and cutting side",
-    "Inverter blade speed; hydraulic blade tension; blade deviation monitoring",
-    "Chip conveyor, blade brush, coolant pump",
-    "Options: hydraulic top clamping, bundle clamping, roller tables"
+    "Inverter blade speed; blade-slippage sensor; hydro-mechanical blade tension (hydraulic blade tension standard on the 570CS / 820CS, optional below)",
+    "Chip conveyor on most sizes, blade brush, coolant pump",
+    "Options: hydraulic top clamp, multi-segment (bundle) vise jaws, hexagonal vise jaws, micro-spray lubrication, 15 kW (20 HP) main motor, roller tables"
    ],
    "optional": [
     "Hydraulic Blade Tension",
@@ -3395,21 +6364,7 @@
     "bk-bmso-570cs-3",
     "bk-bmso-570cs-4",
     "bk-bmso-1110cs-1",
-    "bk-bmso-820cs-5",
-    "bk-bmso-cs-d01",
-    "bk-bmso-cs-d02",
-    "bk-bmso-cs-d03",
-    "bk-bmso-cs-d04",
-    "bk-bmso-cs-d05",
-    "bk-bmso-cs-d06",
-    "bk-bmso-cs-d07",
-    "bk-bmso-cs-d08",
-    "bk-bmso-cs-d09",
-    "bk-bmso-cs-d10",
-    "bk-bmso-cs-d11",
-    "bk-bmso-cs-d12",
-    "bk-bmso-cs-d13",
-    "bk-bmso-cs-d14"
+    "bk-bmso-820cs-5"
    ],
    "videos": [
     {
@@ -3647,7 +6602,405 @@
       "notes": "Only round and square capacities are printed (no rectangular value). No feeder servo motor rating is printed for this model. The extra weight rows (pull table, stand weights) are printed as-is in the table."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 330CS",
+     "slug": "bmso-330cs-nc_DWXGR",
+     "standard": [
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-std-1213"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1214"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1215"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-std-1627"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1216"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-1217"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1218"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1222"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1225"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-std-1226"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-std-1227"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1228"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-528"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-2013-01-04-976230"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-530"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2012-11-15-719890"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-532"
+      }
+     ]
+    },
+    {
+     "model": "BMSO 420CS",
+     "slug": "bmso-420-cs-nc",
+     "standard": [
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": null
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": null
+      },
+      {
+       "title": "Blade brush",
+       "image": null
+      },
+      {
+       "title": "Chip conveyor",
+       "image": null
+      },
+      {
+       "title": "Safety switch",
+       "image": null
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": null
+      },
+      {
+       "title": "Linear guides",
+       "image": null
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": null
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": null
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": null
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": null
+      },
+      {
+       "title": "Coolant pump",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic blade tension",
+       "image": null
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": null
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 560CS",
+     "slug": "bmso-560cs-nc",
+     "standard": [
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1327"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1328"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-1329"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1330"
+      },
+      {
+       "title": "Planetary gearbox",
+       "image": "bk-det-std-1335"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1336"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-cb7cf5bfb8c1"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1338"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1339"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1340"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-630340"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-std-1462"
+      },
+      {
+       "title": "2° inclined blade",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-569"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-2013-02-13-140699"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-01-09-826787"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-573"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-574"
+      }
+     ]
+    },
+    {
+     "model": "BMSO 570CS",
+     "slug": "bmso-570cs",
+     "standard": [
+      {
+       "title": "Manual central lubrication",
+       "image": "bk-det-std-1567"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-1559"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-std-1565"
+      },
+      {
+       "title": "Hydraulic split vise",
+       "image": "bk-det-std-1564"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1563"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1558"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-std-1562"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1561"
+      },
+      {
+       "title": "Band saw blade 54 mm (2.13″) wide",
+       "image": "bk-det-std-1560"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1556"
+      },
+      {
+       "title": "LED work light",
+       "image": "bk-det-std-1553"
+      },
+      {
+       "title": "Optical rapid approach",
+       "image": "bk-det-std-1552"
+      },
+      {
+       "title": "Hydraulic blade tension with slippage sensor",
+       "image": "bk-det-std-1551"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1550"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Pallet-type chip conveyor",
+       "image": "bk-det-opt-686"
+      },
+      {
+       "title": "Cutting speed display",
+       "image": "bk-det-opt-685"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-684"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-683"
+      },
+      {
+       "title": "15 kW (20 HP) main motor",
+       "image": "bk-det-opt-682"
+      },
+      {
+       "title": "Blade deflection control",
+       "image": null
+      },
+      {
+       "title": "Hexagonal vise jaws",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 820CS",
+     "slug": "bmso-820cs-nc",
+     "standard": [
+      {
+       "title": "2° inclined blade",
+       "image": "bk-det-std-1525"
+      },
+      {
+       "title": "Movable arm",
+       "image": "bk-det-std-1526"
+      },
+      {
+       "title": "Bow safety switch",
+       "image": "bk-det-std-1537"
+      },
+      {
+       "title": "Hydraulic split vise",
+       "image": "bk-det-std-1527"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-std-1529"
+      },
+      {
+       "title": "Omron control panel",
+       "image": "bk-det-std-1530"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-std-1531"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-std-1539"
+      },
+      {
+       "title": "Chip brush",
+       "image": "bk-det-std-1538"
+      },
+      {
+       "title": "Gearbox",
+       "image": "bk-det-std-1536"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1535"
+      },
+      {
+       "title": "Cover safety switch",
+       "image": "bk-det-std-1533"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1532"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-46c3f78b316b"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-933af9259088"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-352af4d02524"
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-cgs": {
    "id": "bekamak-bmso-cgs",
@@ -3657,12 +7010,13 @@
    "name": "BMSO CGS / CDGS NC automatic miter double-column band saws",
    "short": "BMSO CGS/CDGS miter NC",
    "models_label": "BMSO 325CGS · BMSO 440CGS · BMSO 540CGS · BMSO 440CDGS",
-   "summary": "Servo-feed automatic double-column saws with NC-controlled miter rotation — single miter on the CGS, both sides on the CDGS — for unattended cutting of angled parts up to Ø21-1/4″ (540 mm).",
+   "summary": "Servo-feed automatic double-column saws with a miter head and digital angle display — single miter on the CGS, both sides on the CDGS — for unattended cutting of angled parts up to Ø21-1/4″ (540 mm).",
    "features": [
     "Servo shuttle-vise feeding with NC job programming",
-    "NC head rotation: 0°–60° (CGS) or +60° / −45° (CDGS)",
+    "Miter head 0°–60° (CGS) or +60° / −45° (CDGS), swung by hand with digital angle display; hydraulic angle clamping on the 440CGS / 540CGS",
     "Twin-column guidance, hydraulic vise, inverter blade speed",
-    "Hydraulic blade tension, chip conveyor, blade brush, coolant pump"
+    "Hydro-mechanical blade tension, blade brush, coolant pump, 3° inclined blade",
+    "Options: hydraulic blade tension, hydraulic top clamp, chip conveyor, laser line pointer, micro-spray lubrication, 10 ft (3 m) roller table"
    ],
    "optional": [
     "Microspray Device",
@@ -3688,12 +7042,7 @@
     "bk-bmso-540cgs-1",
     "bk-bmso-540cgs-3",
     "bk-bmso-325cgs-1",
-    "bk-bmso-325cgs-3",
-    "bk-bmso-cgs-d01",
-    "bk-bmso-cgs-d02",
-    "bk-bmso-cgs-d03",
-    "bk-bmso-cgs-d04",
-    "bk-bmso-cgs-d05"
+    "bk-bmso-325cgs-3"
    ],
    "videos": [
     {
@@ -3743,7 +7092,7 @@
          260,
          325
         ],
-        "square": 265
+        "square": 260
        },
        "+60": {
         "round": 190,
@@ -3751,7 +7100,7 @@
          140,
          325
         ],
-        "square": 190
+        "square": 140
        }
       },
       "main_motor_kw": 2.2,
@@ -3796,12 +7145,12 @@
         "square": 440
        },
        "+45": {
-        "round": 430,
+        "round": 440,
         "rect": [
          400,
          440
         ],
-        "square": 430
+        "square": 400
        },
        "+60": {
         "round": 310,
@@ -3809,7 +7158,7 @@
          245,
          440
         ],
-        "square": 260
+        "square": 245
        }
       },
       "main_motor_kw": 4,
@@ -3906,7 +7255,7 @@
        "+30": {
         "round": 440,
         "rect": [
-         605,
+         550,
          440
         ],
         "square": 440
@@ -3914,7 +7263,7 @@
        "+45": {
         "round": 440,
         "rect": [
-         495,
+         460,
          440
         ],
         "square": 440
@@ -3923,25 +7272,25 @@
         "round": 325,
         "rect": [
          325,
-         440
+         350
         ],
         "square": 325
        },
        "-30": {
         "round": 440,
         "rect": [
-         545,
+         540,
          440
         ],
         "square": 440
        },
        "-45": {
-        "round": 425,
+        "round": 440,
         "rect": [
-         425,
+         440,
          440
         ],
-        "square": 425
+        "square": 440
        }
       },
       "main_motor_kw": 4,
@@ -3968,7 +7317,324 @@
       "notes": "Hydraulic drive is labelled 'Hydraulic Motor'."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 325CGS",
+     "slug": "bmso-325cgs-nc",
+     "standard": [
+      {
+       "title": "Digital angle display",
+       "image": "bk-det-std-1650"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1649"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-std-1635"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1648"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-std-1638"
+      },
+      {
+       "title": "Angle adjustment scale",
+       "image": "bk-det-std-1637"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1639"
+      },
+      {
+       "title": "Band saw blade 34 mm (1.34″) wide",
+       "image": "bk-det-std-1647"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1646"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1640"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1645"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1644"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-std-1643"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1642"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": null
+      },
+      {
+       "title": "Coolant pump",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-701"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-opt-700"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-699"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-698"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-opt-697"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-696"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-695"
+      }
+     ]
+    },
+    {
+     "model": "BMSO 440CGS",
+     "slug": "bmso-440-cgs",
+     "standard": [
+      {
+       "title": "Digital angle display",
+       "image": "bk-det-std-1505"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1504"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1503"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-std-1502"
+      },
+      {
+       "title": "Hydraulic clamping for angle cuts",
+       "image": "bk-det-std-1501"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1500"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-std-1499"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1498"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1497"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-std-1496"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1495"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1494"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-std-1493"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1492"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1491"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-668"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-667"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-666"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-665"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-664"
+      },
+      {
+       "title": "Chip conveyor motor",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 540CGS",
+     "slug": "bmsy-540cgs",
+     "standard": [
+      {
+       "title": "Digital angle display",
+       "image": "bk-det-std-1463"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1464"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1465"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-std-1466"
+      },
+      {
+       "title": "Hydraulic clamping for angle cuts",
+       "image": "bk-det-std-1467"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-std-1468"
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": "bk-det-2013-02-04-145194"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-std-1470"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1471"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2012-12-31-56555"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1473"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-std-1474"
+      },
+      {
+       "title": "3° inclined blade",
+       "image": "bk-det-std-1475"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-std-1476"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-std-1477"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-2013-04-03-323350"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-opt-654"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-2013-03-13-509020"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-2013-01-09-687769"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-12-31-896746"
+      },
+      {
+       "title": "Chip conveyor motor",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 440CDGS",
+     "slug": "bmso-440cdgs",
+     "standard": [],
+     "optional": [
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": null
+      },
+      {
+       "title": "Laser line pointer",
+       "image": null
+      },
+      {
+       "title": "Chip conveyor motor",
+       "image": null
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmso-xs": {
    "id": "bekamak-bmso-xs",
@@ -3983,7 +7649,8 @@
     "Servo-driven bow feed and servo shuttle-vise material feed",
     "CNC control with cutting database and remote diagnostics",
     "Enclosed cabin design, carbide-blade capable, high blade speeds",
-    "Hydraulic vises on both sides, hydraulic blade tension, chip conveyor"
+    "Hydraulic vises on both sides, hydraulic blade tension, LED work light",
+    "Options: pallet-type chip conveyor, hydraulic top clamp, hexagonal vise jaws, 15 kW (20 HP) main motor, micro-spray lubrication"
    ],
    "optional": [
     "Hexagonal Vices",
@@ -4006,8 +7673,8 @@
     "bk-bmso-660xs-2",
     "bk-bmso-660xs-3",
     "bk-bmso-660xs-4",
-    "bk-bmso-660xs-5",
     "bk-bmso-570xs-2",
+    "bk-bmso-660xs-5",
     "bk-bmso-825xs-2",
     "bk-bmso-660xs-6",
     "bk-bmso-570xs-3"
@@ -4062,8 +7729,8 @@
       "other": {
        "Feeder Servo Motor": "2 kW",
        "Bow Servo Motor": "1.5 kW",
-       "Chip Conveyor Motor": "0.25 kW",
-       "Stroke": "1300 mm"
+       "Stroke": "1300 mm",
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       },
       "notes": "A 'Stroke 1300 mm' row is printed (probably the feeder stroke, but the catalogue does not say), so it is kept in 'other' rather than feed_length_mm. Rectangular capacity is printed as 335x500 mm."
      },
@@ -4100,7 +7767,7 @@
       "other": {
        "Feeder Servo Motor": "1.5 kW",
        "Bow Servo Motor": "1.5 kW",
-       "Chip Conveyor Motor": "0.25 kW"
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       }
      },
      {
@@ -4134,9 +7801,9 @@
       "feed_length_mm": null,
       "feed_type": "servo feed",
       "other": {
-       "Chip Conveyor Motor": "0.25 kW",
        "Feeder Servo Motor": "2 kW",
-       "Bow Servo Motor": "1.5 kW"
+       "Bow Servo Motor": "1.5 kW",
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       }
      },
      {
@@ -4148,12 +7815,12 @@
          660,
          660
         ],
-        "square": null
+        "square": 660
        }
       },
       "main_motor_kw": 7.5,
       "hydraulic_motor_kw": 2.2,
-      "coolant_pump_kw": null,
+      "coolant_pump_kw": 0.12,
       "blade_speed_m_min": "15-120",
       "band_mm": [
        7925,
@@ -4206,14 +7873,411 @@
       "feed_length_mm": null,
       "feed_type": "servo feed",
       "other": {
-       "Chip Conveyor Motor": "0.25 kW",
        "Feeder Servo Motor": "2 kW",
-       "Bow Servo Motor": "2 kW"
+       "Bow Servo Motor": "2 kW",
+       "Chip Conveyor Motor (optional)": "0.25 kW"
       },
       "notes": "Square capacity is printed as '825x825 mm'; stored as 825."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSO 335XS",
+     "slug": "bmso-335xs",
+     "standard": [],
+     "optional": [
+      {
+       "title": "Hexagonal vise jaws",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      },
+      {
+       "title": "Pallet-type chip conveyor",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 420XS",
+     "slug": "bmso-420xs-kabinli",
+     "standard": [
+      {
+       "title": "Warning lamp",
+       "image": null
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": null
+      },
+      {
+       "title": "Cleaning hose",
+       "image": null
+      },
+      {
+       "title": "Touch-screen control panel",
+       "image": null
+      },
+      {
+       "title": "Servo motor",
+       "image": null
+      },
+      {
+       "title": "Split vise",
+       "image": null
+      },
+      {
+       "title": "Bow pull plates",
+       "image": null
+      },
+      {
+       "title": "Bow clamping cylinder",
+       "image": null
+      },
+      {
+       "title": "Bow servo drive",
+       "image": null
+      },
+      {
+       "title": "Hydraulic tension release button",
+       "image": null
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": null
+      },
+      {
+       "title": "Safety switch",
+       "image": null
+      },
+      {
+       "title": "Band saw blade 41 mm (1.61″) wide",
+       "image": null
+      },
+      {
+       "title": "Linear guides",
+       "image": null
+      },
+      {
+       "title": "Hydraulic vise cylinder",
+       "image": null
+      },
+      {
+       "title": "Blade deflection control",
+       "image": null
+      },
+      {
+       "title": "Hydraulic carbide blade guides",
+       "image": null
+      },
+      {
+       "title": "Motorized swarf brush",
+       "image": null
+      },
+      {
+       "title": "Optical rapid approach",
+       "image": null
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": null
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": null
+      },
+      {
+       "title": "LED work light",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-719"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-718"
+      },
+      {
+       "title": "Pallet-type chip conveyor",
+       "image": null
+      },
+      {
+       "title": "Hexagonal vise jaws",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 570XS",
+     "slug": "bmso-570xs-cnc-kabinli",
+     "standard": [
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1686"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-std-1685"
+      },
+      {
+       "title": "Band saw blade 54 mm (2.13″) wide",
+       "image": "bk-det-std-1684"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1683"
+      },
+      {
+       "title": "Hydraulic vise cylinder",
+       "image": "bk-det-std-1682"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-std-1681"
+      },
+      {
+       "title": "Blade deflection control",
+       "image": "bk-det-std-1680"
+      },
+      {
+       "title": "Automatic lubrication",
+       "image": "bk-det-std-1679"
+      },
+      {
+       "title": "CNC smart cutting: parameters controlled for optimum cutting",
+       "image": "bk-det-std-1678"
+      },
+      {
+       "title": "Hydraulic carbide blade guides",
+       "image": "bk-det-std-1677"
+      },
+      {
+       "title": "Motorized swarf brush",
+       "image": "bk-det-std-1676"
+      },
+      {
+       "title": "Optical rapid approach",
+       "image": "bk-det-std-1675"
+      },
+      {
+       "title": "Hydraulic blade tension with stud control",
+       "image": "bk-det-std-1674"
+      },
+      {
+       "title": "Lever-type control panel",
+       "image": "bk-det-std-1673"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1672"
+      },
+      {
+       "title": "LED work light",
+       "image": "bk-det-std-1671"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Pallet-type chip conveyor",
+       "image": "bk-det-opt-712"
+      },
+      {
+       "title": "Tilt adjustment lever",
+       "image": "bk-det-opt-711"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-710"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-709"
+      },
+      {
+       "title": "Hexagonal vise jaws",
+       "image": "bk-det-opt-708"
+      },
+      {
+       "title": "15 kW (20 HP) main motor",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 660XS",
+     "slug": "bmso-660xs",
+     "standard": [
+      {
+       "title": "LED work light",
+       "image": null
+      },
+      {
+       "title": "Band saw blade 67 mm (2.64″) wide",
+       "image": null
+      },
+      {
+       "title": "Linear guides",
+       "image": null
+      },
+      {
+       "title": "Hydraulic vise cylinder",
+       "image": null
+      },
+      {
+       "title": "Blade deflection control",
+       "image": null
+      },
+      {
+       "title": "Manual central lubrication",
+       "image": null
+      },
+      {
+       "title": "CNC smart cutting: parameters controlled for optimum cutting",
+       "image": null
+      },
+      {
+       "title": "Hydraulic carbide blade guides",
+       "image": null
+      },
+      {
+       "title": "Motorized swarf brush",
+       "image": null
+      },
+      {
+       "title": "Optical rapid approach",
+       "image": null
+      },
+      {
+       "title": "Hydraulic blade tension with stud control",
+       "image": null
+      },
+      {
+       "title": "Lever-type control panel",
+       "image": null
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "15 kW (20 HP) main motor",
+       "image": null
+      },
+      {
+       "title": "Pallet-type chip conveyor",
+       "image": null
+      },
+      {
+       "title": "Tilt adjustment lever",
+       "image": null
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      },
+      {
+       "title": "Hexagonal vise jaws",
+       "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 825XS",
+     "slug": "bmso-825xs",
+     "standard": [
+      {
+       "title": "LED work light",
+       "image": null
+      },
+      {
+       "title": "Band saw blade 67 mm (2.64″) wide",
+       "image": null
+      },
+      {
+       "title": "Linear guides",
+       "image": null
+      },
+      {
+       "title": "Hydraulic vise cylinder",
+       "image": null
+      },
+      {
+       "title": "Blade deflection control",
+       "image": null
+      },
+      {
+       "title": "Manual central lubrication",
+       "image": null
+      },
+      {
+       "title": "CNC smart cutting: parameters controlled for optimum cutting",
+       "image": null
+      },
+      {
+       "title": "Hydraulic carbide blade guides",
+       "image": null
+      },
+      {
+       "title": "Motorized swarf brush",
+       "image": null
+      },
+      {
+       "title": "Optical rapid approach",
+       "image": null
+      },
+      {
+       "title": "Hydraulic blade tension with stud control",
+       "image": null
+      },
+      {
+       "title": "Lever-type control panel",
+       "image": null
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "Pallet-type chip conveyor",
+       "image": null
+      },
+      {
+       "title": "Height adjustable control panel",
+       "image": null
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      },
+      {
+       "title": "Hexagonal vise jaws",
+       "image": null
+      }
+     ]
+    }
+   ]
   },
   "bekamak-bmsy-heavy": {
    "id": "bekamak-bmsy-heavy",
@@ -4228,7 +8292,8 @@
     "Capacities from Ø43-3/4″ (1110 mm) to 59″ × 59″ (1500 × 1500 mm)",
     "Twin-column guidance with hydraulic vise and automatic bow return",
     "Heavy-duty gearbox and high-power main motor; inverter blade speed",
-    "Hydraulic blade tension, chip conveyor, blade brush, coolant pumps"
+    "Hydraulic blade tension, chip conveyor, motorized swarf brush",
+    "Options: second vise (standard on the 1515C), hydraulic top clamp, laser line pointer, micro-spray lubrication, 10–13 ft (3–4 m) motorized roller tables"
    ],
    "optional": [
     "Second Vice",
@@ -4255,21 +8320,7 @@
     "bk-bmsy-1515c-1",
     "bk-bmsy-1313c-2",
     "bk-bmsy-1113c-2",
-    "bk-bmsy-1110c-4",
-    "bk-bmsy-heavy-d01",
-    "bk-bmsy-heavy-d02",
-    "bk-bmsy-heavy-d03",
-    "bk-bmsy-heavy-d04",
-    "bk-bmsy-heavy-d05",
-    "bk-bmsy-heavy-d06",
-    "bk-bmsy-heavy-d07",
-    "bk-bmsy-heavy-d08",
-    "bk-bmsy-heavy-d09",
-    "bk-bmsy-heavy-d10",
-    "bk-bmsy-heavy-d11",
-    "bk-bmsy-heavy-d12",
-    "bk-bmsy-heavy-d13",
-    "bk-bmsy-heavy-d14"
+    "bk-bmsy-1110c-4"
    ],
    "videos": [
     {
@@ -4430,7 +8481,7 @@
        "0": {
         "round": 1500,
         "rect": [
-         1510,
+         1500,
          1500
         ],
         "square": 1500
@@ -4461,7 +8512,337 @@
       "notes": "Coolant pump is printed as '2 x 0.20 kw' (two pumps); coolant_pump_kw holds the per-pump rating 0.2 and the literal is kept in 'other'."
      }
     ]
-   }
+   },
+   "model_features": [
+    {
+     "model": "BMSY 1110C",
+     "slug": "bmsy-1110c",
+     "standard": [
+      {
+       "title": "Band saw blade 67 mm (2.64″) wide",
+       "image": "bk-det-2013-02-04-235428"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-2013-01-24-641205"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-24-742983"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-2013-01-24-627742"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-2013-01-24-338464"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-01-24-139248"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-2013-01-24-795463"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-2013-01-24-522843"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-01-24-620208"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-2ab5d3874e4c"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-2013-01-24-373854"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-2013-01-24-88067"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2012-12-08-428003"
+      },
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-2012-12-08-416433"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Second vise",
+       "image": "bk-det-2013-01-24-439047"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-9aaa11e10963"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-1dd01879fd6b"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-12-29-627859"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-2012-11-14-829243"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-2012-11-13-300361"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 1113C",
+     "slug": "bmsy-1113c",
+     "standard": [
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-bddd0a64d734"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-4f6e823db5e3"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-fd3398677060"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-d11c60087d30"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-d22f4cbddbef"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-74940cae8235"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-8e3709103de8"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-d5b614df8b48"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-e3fdbb24be80"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-57012bb29ed5"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-7859654b53db"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-906373d3fe60"
+      },
+      {
+       "title": "Band saw blade 67 mm (2.64″) wide",
+       "image": "bk-det-74d51488b76e"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Second vise",
+       "image": "bk-det-opt-420"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-421"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-422"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-opt-423"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-opt-424"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-opt-425"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 1122C",
+     "slug": "bmsy-1122c",
+     "standard": [
+      {
+       "title": "Hydraulic vise",
+       "image": "bk-det-bddd0a64d734"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-4f6e823db5e3"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-fd3398677060"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-d11c60087d30"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-d22f4cbddbef"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-74940cae8235"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-8e3709103de8"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-d5b614df8b48"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-e3fdbb24be80"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-57012bb29ed5"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-7859654b53db"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-906373d3fe60"
+      },
+      {
+       "title": "Band saw blade 67 mm (2.64″) wide",
+       "image": "bk-det-74d51488b76e"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Second vise",
+       "image": "bk-det-53280087e691"
+      },
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-564"
+      },
+      {
+       "title": "13 ft (4 m) motorized roller table",
+       "image": "bk-det-opt-565"
+      },
+      {
+       "title": "Laser line pointer",
+       "image": "bk-det-658695660bb2"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-b1a30d2a98f8"
+      }
+     ]
+    },
+    {
+     "model": "BMSY 1515C",
+     "slug": "bmsy-1515c",
+     "standard": [
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-std-1394"
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-std-1396"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-std-1397"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": "bk-det-a71c30f77b52"
+      },
+      {
+       "title": "Motorized swarf brush",
+       "image": "bk-det-26770dce5d15"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-414fdba55e40"
+      },
+      {
+       "title": "Second vise",
+       "image": "bk-det-9e0495e9a978"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-c1b46205e972"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-5cd55c33fffd"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-b6f419ee8ad2"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-std-1395"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-std-1398"
+      },
+      {
+       "title": "Band saw blade 80 mm (3.15″) wide",
+       "image": "bk-det-27ab958308a5"
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) motorized roller table",
+       "image": "bk-det-opt-439"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-opt-440"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      },
+      {
+       "title": "Laser line pointer",
+       "image": null
+      }
+     ]
+    }
+   ]
   },
   "novotech-bs-315gf": {
    "id": "novotech-bs-315gf",

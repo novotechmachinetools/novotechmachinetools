@@ -31,6 +31,9 @@ if "--only" in sys.argv:
     only = set(sys.argv[sys.argv.index("--only")+1].split(","))
 mpath = os.path.join(ROOT, "tools", "image_manifest.json")
 manifest = json.load(open(mpath)) if (only and os.path.exists(mpath)) else {}
+if "--manifest-out" in sys.argv:        # parallel runs: each chunk writes its own partial manifest, merged afterwards
+    mpath = sys.argv[sys.argv.index("--manifest-out") + 1]
+    manifest = {}
 
 def trim_white(im, thr=236, pad=0.025):
     """Crop the white studio margin around a photo so the machine fills the frame (keeps a small
@@ -106,7 +109,7 @@ for name, spec in MAP.items():
         widths = [im.width]
     # small square-ish thumbnail for gallery strips
     t = im.copy(); t.thumbnail((160, 160), Image.LANCZOS)
-    tout = os.path.join(outdir, f"{name}-thumb.webp"); t.save(tout, "WEBP", quality=78, method=6)
+    tout = os.path.join(outdir, f"{name}-thumb.webp"); t.save(tout, "WEBP", quality=78, method=4)
     thumb = {"w": t.width, "h": t.height, "file": f"img/{section}/{name}-thumb.webp", "bytes": os.path.getsize(tout)}
     for w in widths:
         if w == im.width:
@@ -115,12 +118,12 @@ for name, spec in MAP.items():
             v = im.resize((w, round(im.height * w / im.width)), Image.LANCZOS)
         out = os.path.join(outdir, f"{name}-{w}.webp")
         q = spec.get("quality", 82)
-        v.save(out, "WEBP", quality=q, method=6)
+        v.save(out, "WEBP", quality=q, method=4)   # method 6 is ~30x slower for ~5% smaller files
         variants.append({"w": v.width, "h": v.height, "file": f"img/{section}/{name}-{w}.webp", "bytes": os.path.getsize(out)})
     manifest[name] = {"alt": spec.get("alt", ""), "variants": variants, "alpha": has_alpha, "thumb": thumb}
     if cut:
         manifest[name]["cut"] = cut
     print(f"{name:34s} {im.width}x{im.height}{' cut' if cut else ''} -> " + ", ".join(f"{v['w']}w {v['bytes']//1024}KB" for v in variants))
 
-json.dump(manifest, open(os.path.join(ROOT, "tools", "image_manifest.json"), "w"), indent=1)
+json.dump(manifest, open(mpath, "w"), indent=1)
 print("manifest entries:", len(manifest))

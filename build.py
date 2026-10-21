@@ -480,7 +480,29 @@ def prepare_family(f):
     for im in f["gallery"]:
         im["cap1"], im["cap2"] = caption_for(f, im["alt"])
     f["card_image"] = f["gallery"][0] if f["gallery"] else None
+    f["feature_panels"] = feature_panels(f)
     return f
+
+
+def feature_panels(f):
+    """Standard / optional features per model (bekamak.com), models with identical lists share one tab."""
+    panels = []
+    for mf in f.get("model_features") or []:
+        sig = json.dumps([mf["standard"], mf["optional"]], sort_keys=True)
+        for p in panels:
+            if p["sig"] == sig:
+                p["models"].append(mf["model"]); break
+        else:
+            panels.append({"sig": sig, "models": [mf["model"]],
+                           "standard": [{"title": it["title"], "img": img(it["image"]) if it.get("image") else None} for it in mf["standard"]],
+                           "optional": [{"title": it["title"], "img": img(it["image"]) if it.get("image") else None} for it in mf["optional"]]})
+    if not panels:
+        return []
+    n_models = len(f.get("model_features") or [])
+    for p in panels:
+        p["label"] = "All models" if len(panels) == 1 and n_models > 1 else " · ".join(p["models"])
+        del p["sig"]
+    return panels
 
 
 def range_table(subpages):

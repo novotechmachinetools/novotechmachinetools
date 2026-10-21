@@ -52,22 +52,25 @@ def light_edge_fraction(rgba):
     return float(light[band].mean())
 
 
-def auto_cutout(im, level=255, shadow_thr=205, light_limit=0.05):
+def auto_cutout(im, level=255, shadow_thr=205, light_limit=0.05, drop_shadow=False):
     """Cut-out with thresholds relative to the measured background brightness; the floor shadow
     is kept as translucent black so the machine still 'stands' on a coloured background.
     Machines with white or cream covers are detected after a first pass (light_edge_fraction) and
     cut again with strict thresholds that only remove the real background (background within
     4 levels of pure white), so the covers keep their edges."""
-    res = cutout(im, border_thr=min(232, level - 8), hole_thr=min(247, level + 4), hole_area=200, shadow_thr=shadow_thr)
+    res = cutout(im, border_thr=min(232, level - 8), hole_thr=min(247, level + 4), hole_area=200, shadow_thr=shadow_thr,
+                 drop_shadow=drop_shadow)
     if light_edge_fraction(res) > light_limit:
         res = cutout(im, border_thr=level - 4, hole_thr=level - 1, hole_area=400, neutral=12, shadow_thr=None,
-                     edge_hi=level - 2, edge_lo=level - 14, band_light=level - 6)
+                     edge_hi=level - 2, edge_lo=level - 14, band_light=level - 6, drop_shadow=drop_shadow)
         res.info["strict"] = True
     return res
 
 
 def cutout(im, border_thr=232, hole_thr=247, hole_area=200, neutral=16, keep_alpha=True, margin=6, shadow_thr=None,
-           edge_hi=252.0, edge_lo=190.0, band_light=200):
+           edge_hi=252.0, edge_lo=190.0, band_light=200, drop_shadow=False):
+    """drop_shadow=True removes the photographed floor shadow completely (for heroes on the orange band,
+    which get a drawn shadow from tools/hero_shadow.py instead of the grey smear)."""
     rgba = im.convert("RGBA")
     arr = np.asarray(rgba).astype(np.float32)
     rgb, a0 = arr[..., :3], arr[..., 3]
@@ -109,7 +112,7 @@ def cutout(im, border_thr=232, hole_thr=247, hole_area=200, neutral=16, keep_alp
     shadow |= band & light_neutral          # light grey edge pixels are background + shadow, not machine
     edge = band & ~shadow
     alpha[edge] = np.clip((edge_hi - mn[edge]) / (edge_hi - edge_lo), 0, 1)
-    alpha[shadow] = np.clip((255.0 - mn[shadow]) / 255.0 * 1.15, 0, 1)
+    alpha[shadow] = 0.0 if drop_shadow else np.clip((255.0 - mn[shadow]) / 255.0 * 1.15, 0, 1)
     alpha = cv2.GaussianBlur(alpha, (0, 0), 0.5)
     alpha = np.clip(alpha, 0, 1)
     # --- colours: decontaminate machine edge pixels (remove the white mixed in); shadows become black

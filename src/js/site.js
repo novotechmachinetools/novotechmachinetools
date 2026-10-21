@@ -179,6 +179,38 @@
     });
   });
 
+  /* ---------- feature tabs (standard / optional features per model) + lightbox on the photo tiles ---------- */
+  d.querySelectorAll(".feature-tabs[data-tabs]").forEach(function (box) {
+    var tabs = Array.prototype.slice.call(box.querySelectorAll(".tab[role=tab]"));
+    var panels = Array.prototype.slice.call(box.querySelectorAll(".tab-panel"));
+    if (tabs.length > 1) {
+      function activate(i) {
+        tabs.forEach(function (t, j) { t.classList.toggle("is-active", j === i); t.setAttribute("aria-selected", j === i ? "true" : "false"); t.tabIndex = j === i ? 0 : -1; });
+        panels.forEach(function (p, j) { p.classList.toggle("is-active", j === i); if (j === i) p.removeAttribute("hidden"); else p.setAttribute("hidden", ""); });
+      }
+      tabs.forEach(function (t, i) {
+        t.addEventListener("click", function () { activate(i); });
+        t.addEventListener("keydown", function (e) {
+          if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); var n = (i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length; activate(n); tabs[n].focus(); }
+        });
+      });
+      activate(0);
+    }
+    box.querySelectorAll(".feature-tiles").forEach(function (list) {
+      var links = Array.prototype.slice.call(list.querySelectorAll(".feature-link"));
+      var items = links.map(function (a) { return { src: a.dataset.src, srcset: a.dataset.srcset, alt: a.dataset.alt, cap1: a.dataset.cap1, cap2: a.dataset.cap2 }; });
+      links.forEach(function (a, i) {
+        a.addEventListener("click", function (e) {
+          if (!window.HTMLDialogElement) return;
+          e.preventDefault();
+          ensureLightbox();
+          lbItems = items; showLb(i);
+          lightbox.showModal();
+        });
+      });
+    });
+  });
+
   /* ---------- YouTube players: poster first; when a video scrolls into view it autoplays muted,
      when it scrolls away the player is removed again so only one player runs at a time ---------- */
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

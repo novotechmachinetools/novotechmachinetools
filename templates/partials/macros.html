@@ -185,8 +185,47 @@
   "financing": '<line x1="19" x2="5" y1="5" y2="19" /> <circle cx="6.5" cy="6.5" r="2.5" /> <circle cx="17.5" cy="17.5" r="2.5" />',
   "truck": '<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" />',
   "training": '<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />',
-  "video": '<path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" /> <rect x="2" y="6" width="14" height="12" rx="2" />'
+  "video": '<path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" /> <rect x="2" y="6" width="14" height="12" rx="2" />',
+  "repeat": '<path d="m17 2 4 4-4 4" /> <path d="M3 11v-1a4 4 0 0 1 4-4h14" /> <path d="m7 22-4-4 4-4" /> <path d="M21 13v1a4 4 0 0 1-4 4H3" /> <path d="m9.5 15.5 5-5" /> <circle cx="9.5" cy="10.5" r=".6" /> <circle cx="14.5" cy="15.5" r=".6" />'
 } %}
 {% macro feature_icon(name) -%}
 <svg class="why-icon" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ FEATURE_ICONS[name] | safe }}</svg>
+{%- endmacro %}
+
+{# ---------- Standard / Optional features per model (bekamak.com tabs) ---------- #}
+{% macro feature_tabs(f) -%}
+{% set panels = f.feature_panels %}
+<div class="feature-tabs" id="{{ f.id }}-features" data-tabs>
+  <h4 class="feature-tabs-title">Standard and optional features{% if panels|length > 1 %} <small>by model</small>{% endif %}</h4>
+  {% if panels|length > 1 %}
+  <div class="tabs" role="tablist" aria-label="{{ f.name }} — features by model">
+    {% for p in panels %}
+    <button type="button" class="tab{{ ' is-active' if loop.first else '' }}" role="tab" id="{{ f.id }}-ft{{ loop.index }}" aria-controls="{{ f.id }}-fp{{ loop.index }}" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ p.label }}</button>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% for p in panels %}
+  <div class="tab-panel{{ ' is-active' if loop.first else '' }}" role="tabpanel" id="{{ f.id }}-fp{{ loop.index }}"{% if panels|length > 1 %} aria-labelledby="{{ f.id }}-ft{{ loop.index }}"{% endif %}>
+    {% set pi = loop.index %}
+    {% for kind, label in [("standard", "Standard features"), ("optional", "Optional features")] %}
+    {% if p[kind] %}
+    <h5 class="feature-kind feature-kind-{{ kind }}">{{ label }}{% if panels|length == 1 and p.models|length > 1 %}{% elif panels|length > 1 %} <span>{{ p.label }}</span>{% endif %}</h5>
+    <ul class="feature-tiles" role="list" data-lightbox="{{ f.id }}-{{ pi }}-{{ kind }}">
+      {% for it in p[kind] %}
+      <li class="feature-tile{{ '' if it.img else ' no-photo' }}">
+        {% if it.img %}
+        {% set cap = it.title ~ (' (optional)' if kind == 'optional' else '') %}
+        <a class="feature-link" href="{{ it.img.src }}" data-src="{{ it.img.src }}" data-srcset="{{ it.img.srcset }}" data-alt="{{ it.img.alt }}{{ ' (optional)' if kind == 'optional' else '' }}" data-cap2="{{ cap }}" data-cap1="{{ p.label if p.label != 'All models' else f.models_label }}" aria-label="{{ cap }} — larger photo">
+          <img src="{{ it.img.small }}" srcset="{{ it.img.srcset }}" sizes="(max-width: 600px) 46vw, (max-width: 1000px) 30vw, 220px" width="{{ it.img.w }}" height="{{ it.img.h }}" alt="{{ it.img.alt }}" loading="lazy" decoding="async">
+        </a>
+        {% endif %}
+        <span class="feature-cap">{{ it.title }}{% if kind == 'optional' %} <em class="feature-opt">(optional)</em>{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
 {%- endmacro %}

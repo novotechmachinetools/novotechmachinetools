@@ -30,14 +30,34 @@ Sources of the originals stay outside the repository (`/home/claude/bekamak`, `/
 `/home/claude/nf-src`); the repository keeps only the prepared PNG cut-outs under
 `tools/src-images/` and the generated WebP files under `src/img/`.
 
-## Bekamak detail photos
+## Bekamak photos, features and specs
 
-bekamak.com shows four photos per product, but the lightbox behind the photo holds the full set
-(control panel, vise, gearbox, blade tension, roller tables …) at full size.  `crawl_details.py` in
-the Bekamak source folder downloads that set (`details.json`); `tools/bekamak_details.py` attaches up
-to 14 per family after the machine views, control panel first, with cleaned-up captions
-(keys `bk-<family>-dNN`).  Re-run both when Bekamak adds a product.  The gallery photos themselves
-are always the full-size lightbox files, never the `_main` thumbnails.
+`tools/bekamak_crawl.py` crawls every product page on bekamak.com (English) into `/home/claude/bekamak/site/`:
+the four slider photos at full size (the files behind the popup links, 1000 px — never the `*_main.jpg`
+545 px thumbnails), the photo behind every Standard / Optional Feature caption (800–1200 px), both
+feature lists and the Technical Details table (`products.json`).  Then:
+
+- `tools/bekamak_features.py` attaches the two feature lists to every model of every Bekamak family
+  (`model_features` in `content/families/bandsaw.json`, photos registered as `bk-det-<file>` and shared
+  between models) and orders each gallery front views first (yellow covers) then the grey back — the
+  gallery holds the machine views only; the feature photos appear under the feature they illustrate
+  (`feature_tabs` macro: one tab per model, models with identical lists share a tab).
+- `tools/bekamak_specs.py` completes the spec tables from the website: every miter angle the site lists
+  (0, ±30, ±45, ±60) for round / rectangular / square stock, plus motor, blade, weight and size rows the
+  catalogue left empty.  Obvious typos on the site (an angle capacity larger than the straight cut) are
+  divided by ten and reported.
+- `python3 tools/make_images.py --only <keys>` with the keys the scripts print.
+
+Re-run all three when Bekamak adds or changes a product.  Models that exist only in the catalogue PDF
+(no product page) keep their catalogue data and get no feature tabs.
+
+## Hero cut-outs
+
+A photographed floor shadow looks like a grey smear on the orange hero band, so heroes (and the small
+cut-outs beside them) are made with `tools/hero_shadow.py`, not `hero_cutout.py`: the machine is cut out
+of the full-size photo with the whole floor shadow dropped, upscaled 2× for a clean edge, and gets a
+drawn shadow — a short dark contact shadow under the feet plus a soft ground shadow in a warm
+near-black.  `--no-shadow` for the small secondary cut-outs, which get a CSS drop-shadow instead.
 
 ## İşitan photos
 
