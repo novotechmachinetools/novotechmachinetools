@@ -172,6 +172,9 @@
     }
     thumbs.forEach(function (t, i) {
       t.addEventListener("click", function (e) { e.preventDefault(); show(i); });
+      // hovering a thumbnail swaps the main photo too (mouse only; touch screens tap)
+      t.addEventListener("mouseenter", function () { if (i !== index) show(i); });
+      t.addEventListener("focus", function () { if (i !== index) show(i); });
     });
     var prev = g.querySelector(".gal-prev"), next = g.querySelector(".gal-next");
     if (prev) prev.addEventListener("click", function () { show(index - 1); });
