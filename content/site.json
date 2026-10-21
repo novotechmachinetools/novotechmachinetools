@@ -306,13 +306,20 @@
     },
     {
       "title": "Shipping across Canada from Mississauga, ON",
-      "text": "Delivered to every province and territory, with the freight arranged by NovoTech.",
+      "text": "Delivered to every province and territory, with the freight arranged by NovoTech at competitive rates.",
       "icon": "truck"
     },
     {
-      "title": "Financing available",
-      "text": "Order today with just 10% down — 0% down financing available.",
+      "id": "financing",
+      "title": "Financing with 0% down",
+      "text": "Lease or finance the machine with 0% down and competitive rates through our financing partners — keep your cash working in the shop.",
       "icon": "financing"
+    },
+    {
+      "id": "terms",
+      "title": "Order today with 10% down",
+      "text": "Simple payment terms: 10% down payment to place your order, the remaining 90% before shipping.",
+      "icon": "receipt"
     },
     {
       "id": "loyalty",
