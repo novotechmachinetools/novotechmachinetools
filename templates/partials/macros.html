@@ -10,7 +10,7 @@
   {% set first = images[0] %}
   <figure class="gallery-main{{ ' is-cutout' if first.alpha else '' }}">
     <a class="gallery-link" href="{{ first.src }}" data-index="0">
-      <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 560px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
+      <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 740px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
     </a>
     {% if images|length > 1 %}
     <button type="button" class="gal-nav gal-prev" aria-label="Previous photo">‹</button>
