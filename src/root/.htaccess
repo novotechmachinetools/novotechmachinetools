@@ -24,9 +24,14 @@ RedirectMatch 301 ^/bead-roller-hvac-forming-pittsburgh-lock-former(\.html)?$ /b
 RedirectMatch 301 ^/circular-cutting-shear-tank-dish-head-flanging(\.html)?$ /circle-cutters-and-seamers
 RedirectMatch 301 ^/pipe-bender(\.html)?$ /pipe-benders
 RedirectMatch 301 ^/pipe-notcher(\.html)?$ /tube-notchers-and-end-formers
-RedirectMatch 301 ^/(manual|semi-automatic|automatic|double-column)-band-saws(\.html)?$ /band-saw
-RedirectMatch 301 ^/novofab-manual-band-saws(\.html)?$ /band-saw
-RedirectMatch 301 ^/novotech-manual-band-saws(\.html)?$ /band-saw
+# band saw sub-pages live at /manual-band-saws, /semi-automatic-band-saws, /automatic-band-saws and
+# /double-column-band-saws (Bekamak) and /affordable-semi-automatic-band-saws, /automatic-feed-band-saws,
+# /twin-column-band-saws (value line) — brand-free URLs, Oct 2026.  Earlier brand slugs redirect:
+RedirectMatch 301 ^/bekamak-(manual|semi-automatic|automatic|double-column)-band-saws(\.html)?$ /$1-band-saws
+RedirectMatch 301 ^/(novofab|novotech)-manual-band-saws(\.html)?$ /manual-band-saws
+RedirectMatch 301 ^/(novofab|novotech)-semi-automatic-band-saws(\.html)?$ /affordable-semi-automatic-band-saws
+RedirectMatch 301 ^/(novofab|novotech)-automatic-band-saws(\.html)?$ /automatic-feed-band-saws
+RedirectMatch 301 ^/(novofab|novotech)-double-column-band-saws(\.html)?$ /twin-column-band-saws
 RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
 
 # ---- Compression -------------------------------------------------------------
