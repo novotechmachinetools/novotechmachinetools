@@ -44,7 +44,7 @@ FAMILIES = [
              "Swivels left and right with fast angle stops at 30°, 45° and 60°",
              "Gear-driven 1/1.5 HP motor — variable blade speed by VFD inverter drive, up to 262 ft/min (80 m/min)",
              "Bow pivots on adjustable tapered bearings — no backlash; electro-mechanical blade tensioner with microswitch",
-             "Safety guards on the flywheel casing and blade; electric coolant system; 1-1/8″ × 0.035″ × 111-1/4″ blade",
+             "Safety guards on the flywheel casing and blade; electric coolant system; 1″ × .035″ × 111″ (27 × 0.9 × 2825 mm) blade",
          ],
          optional=["Roller stand with length stop", "Extra blades"],
          images=["nt-h10f-1", "nt-h10f-2", "nt-h10f-3"],

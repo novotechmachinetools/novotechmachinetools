@@ -72,3 +72,11 @@ section (`tools/isitan_plate_rolls.py`, `isitan_beading.py`, `isitan_circle.py`,
 lists its photos (keys `is-…`, copied into `tools/src-images/isitan/`) and writes its families and pages;
 the pipeline cuts the white photos out automatically.  Social-share images (`tools/make_social.py`) use the
 same cut-out pipeline on the hero, so a white-background hero never appears as a white box on the orange band.
+
+## Band saw blade sizes
+
+Blade width × thickness is written in North American nominal inch sizes, never converted millimetres
+(`BLADE_SIZES_IN` in build.py; NovoTech, Oct 2026): 27 × 0.9 mm = 1″ × .035″, 34 × 1.1 mm = 1-1/4″ × .042″,
+41 × 1.3 mm = 1-1/2″ × .050″, 54 × 1.6 mm = 2″ × .063″, 67 × 1.6 mm = 2-5/8″ × .063″, 80 × 1.6 mm = 3-1/8″ × .063″.
+Blade length converts normally (mm ÷ 25.4, nearest 1/2″).  The same names are used in the feature-photo
+captions ("Band saw blade 1″ × .035″ (27 × 0.9 mm)").

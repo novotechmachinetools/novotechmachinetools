@@ -84,7 +84,7 @@ EXTRA_TITLES = {  # more of bekamak.com's captions → clean English (lower-case
     "material limit shaft": "Material length stop", "mechanic top clamping": "Mechanical top clamp", "motorized saw blade brush": "Motorized swarf brush",
     "omron control panel": "Omron control panel", "powerful gearbox": "Heavy-duty gearbox", "planetary gearbox": "Planetary gearbox",
     "proximity switch for sensing blade slippage": "Blade slippage sensor (proximity switch)", "proximity switch for sensing blade slipping": "Blade slippage sensor (proximity switch)",
-    "saw blade 27": "Band saw blade 27 mm (1.06″) wide", "standing of the control pedal": "Control pedal stand",
+    "saw blade 27": "Band saw blade 1″ × .035″ (27 × 0.9 mm)", "standing of the control pedal": "Control pedal stand",
     "touch screen control panel": "Touch-screen control panel", "touch screen": "Touch-screen control panel", "warning lamp": "Warning lamp",
     "automatic lubrication": "Automatic lubrication", "manual central lubrication": "Manual central lubrication", "cleaning hose": "Cleaning hose",
     "movable arm": "Movable arm", "optical rapid approach": "Optical rapid approach", "safety rope sensor": "Safety rope sensor", "servo motor": "Servo motor",
@@ -103,6 +103,11 @@ def clean_title(t):
     m = re.match(r"^saw blade\s+(\d+)\s*mm$", t, re.I)
     if m:
         w = int(m.group(1))
+        # North American nominal blade sizes (width × thickness) for Bekamak's standard blade widths
+        nominal = {27: ("1″ × .035″", "27 × 0.9 mm"), 34: ("1-1/4″ × .042″", "34 × 1.1 mm"), 41: ("1-1/2″ × .050″", "41 × 1.3 mm"),
+                   54: ("2″ × .063″", "54 × 1.6 mm"), 67: ("2-5/8″ × .063″", "67 × 1.6 mm"), 80: ("3-1/8″ × .063″", "80 × 1.6 mm")}
+        if w in nominal:
+            return f"Band saw blade {nominal[w][0]} ({nominal[w][1]})"
         return f"Band saw blade {w} mm ({w / 25.4:.2f}″) wide"
     # generic tidy-ups: "3 Mt" → "10 ft (3 m)", Title Case → sentence case, acronyms kept
     t = re.sub(r"(\d+(?:[.,]\d+)?)\s*[Mm]t\b", lambda m: f"{round(float(m.group(1).replace(',', '.')) * 3.2808):g} ft ({m.group(1).replace(',', '.')} m)", t)

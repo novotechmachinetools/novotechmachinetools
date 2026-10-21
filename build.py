@@ -88,6 +88,32 @@ def dims(cm3):
 # ---------------------------------------------------------------- band saws
 from fractions import Fraction
 
+# Band saw blade width × thickness: North American blades are sold in nominal inch sizes, not converted
+# millimetres — a 27 × 0.9 mm blade is a 1″ × .035″ blade.  (NovoTech, Oct 2026; blade length converts
+# normally.)  Keyed by (width mm, thickness mm); unknown sizes fall back to a plain conversion.
+BLADE_SIZES_IN = {
+    (13, 0.65): "1/2 × .025", (20, 0.9): "3/4 × .035", (27, 0.9): "1 × .035", (34, 1.1): "1-1/4 × .042",
+    (34, 1.07): "1-1/4 × .042", (41, 1.3): "1-1/2 × .050", (41, 1.277): "1-1/2 × .050", (54, 1.27): "2 × .050",
+    (54, 1.3): "2 × .050", (54, 1.6): "2 × .063", (67, 1.3): "2-5/8 × .050", (67, 1.6): "2-5/8 × .063",
+    (80, 1.6): "3-1/8 × .063", (80, 1.3): "3-1/8 × .050",
+}
+
+
+def blade_size_in(w, t):
+    """'1 × .035 in' for a 27 × 0.9 mm blade; width values like '54/67' are converted part by part."""
+    if isinstance(w, str) and "/" in w:
+        parts = [blade_size_in(float(x), t).replace(" in", "") for x in w.split("/")]
+        return " / ".join(parts) + " in"
+    try:
+        key = (int(round(float(w))), round(float(t), 3))
+    except (TypeError, ValueError):
+        return f"{w} × {t} in"
+    for (kw, kt), name in BLADE_SIZES_IN.items():
+        if kw == key[0] and abs(kt - key[1]) < 0.06:
+            return name + " in"
+    return f"{inch_frac(float(w), 8).replace('″', '')} × {float(t) / 25.4:.3f} in"
+
+
 def inch_frac(mm, denom=8):
     """270 -> '10-5/8″' (nearest 1/denom inch)."""
     v = mm / 25.4
@@ -171,11 +197,9 @@ def build_bandsaw_table(spec):
         if not bd:
             return "—"
         L, W, T = bd
-        Wi = inch_frac(W, 8) if isinstance(W, (int, float)) else str(W)
-        Ti = f"{T / 25.4:.3f}" if isinstance(T, (int, float)) else str(T)
         if L is None:  # width × thickness only
-            return f"{Wi.replace('″', '')} × {Ti} in ({W} × {T} mm)"
-        return f"{inch_frac(L, 2).replace('″', '')} × {Wi.replace('″', '')} × {Ti} in ({L:g} × {W} × {T} mm)"
+            return f"{blade_size_in(W, T)} ({W} × {T} mm)"
+        return f"{inch_frac(L, 2).replace('″', '')} × {blade_size_in(W, T)} ({L:g} × {W} × {T} mm)"
     rows.append({"label": "Band blade L × W × T", "cells": [band(m) for m in models], "type": "text"})
     rows.append({"label": "Main motor", "cells": [hp_range(m.get("main_motor_kw")) for m in models], "type": "text"})
     if any(m.get("hydraulic_motor_kw") for m in models):
