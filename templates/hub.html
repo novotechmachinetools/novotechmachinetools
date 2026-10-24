@@ -99,7 +99,7 @@
       </a>
       {% endif %}
       <div class="family-card-body">
-        {% if f.brand and site.brands.get(f.brand) and site.brands[f.brand].line %}<span class="card-line line-{{ f.brand }}">{{ site.brands[f.brand].line }} · {{ site.brands[f.brand].name }}</span>{% endif %}
+        {% if f.brand and site.brands.get(f.brand) and site.brands[f.brand].line %}<span class="card-line line-{{ f.brand }}">{{ site.brands[f.brand].line }}{% if site.brands[f.brand].line != site.brands[f.brand].name %} · {{ site.brands[f.brand].name }}{% endif %}</span>{% endif %}
         <h3><a href="{{ sp.href }}#{{ f.id }}">{{ f.name }}</a></h3>
         <p class="models">{{ f.models_label }}</p>
         <p class="headline">{{ f.headline }}</p>

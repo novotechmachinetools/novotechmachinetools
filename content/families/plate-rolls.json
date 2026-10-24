@@ -10,7 +10,14 @@
   "isitan-ir",
   "isitan-r",
   "isitan-rs",
-  "isitan-rst"
+  "isitan-rst",
+  "sahinler-4r-hss",
+  "sahinler-4r-hsl",
+  "sahinler-4r-hs",
+  "sahinler-4rh",
+  "sahinler-4r-hc",
+  "sahinler-3r-uhs",
+  "sahinler-3r-hs"
  ],
  "families": {
   "isitan-4r-hms": {
@@ -5104,6 +5111,3777 @@
    "headline": "Working lengths 4.1–5.1 ft (1270–1550 mm) · rolls up to 12 ga (2.5 mm)",
    "group": "slip-rolls",
    "brand": "isitan"
+  },
+  "sahinler-4r-hss": {
+   "id": "sahinler-4r-hss",
+   "brand": "sahinler",
+   "name": "4R HSS hydraulic heavy-duty 4-roll plate rolls",
+   "short": "4R HSS heavy-duty 4-roll",
+   "models_label": "4R HSS 20-280 – 4R HSS 60-620 · 42 models · 6.7 to 20 ft",
+   "summary": "Şahinler's heavy-duty 4-roll plate bending machines for wind-tower, shipyard, pressure-vessel and pipeline work: 42 models from 6.7 ft to 20 ft that roll plate up to 3-3/8″ thick. The pinch roll and both side rolls travel on a pyramid linear path on hydraulic cylinders, so the cylinders put all their force into the plate; the top roll is driven by motor and planetary gearbox with two speeds. Three digital readouts, hydraulic roll balancing, a cone-bending device and a hydraulic tilting drop-end are standard; NC or CNC control (ESA, Italy), overhead crane, side supports and a plate ejector turn the machine into a wheel-rim or shell production line.",
+   "features": [
+    "Pinch and side rolls move on a pyramid linear path with hydraulic cylinders; linear guide system puts the full cylinder force into the plate",
+    "Top roll driven by motor and planetary gearbox, two-speed operation; overload protection",
+    "Three digital readouts for easy roll positioning; mobile control panel",
+    "Hydraulic roll balancing on Ø11″ – 18.1″ rolls, electronic balancing on Ø19.7″ – 26.8″ rolls; central lubrication (automatic on the large rolls)",
+    "Hydraulic tilting drop-end for easy removal of finished parts; cone-bending device",
+    "SAE 1050 (CK45-50) forged or hot-rolled, induction-hardened and polished rolls; welded steel frames; CE marked"
+   ],
+   "optional": [
+    "Automation with NC or CNC control (ESA, Italy)",
+    "Overhead crane and hydraulic side supports for large diameters",
+    "Hydraulic plate ejector for series production",
+    "Ground rolls for special jobs; infinitely variable speed",
+    "Electronic roll balancing for parallel roll movement",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor",
+    "Accumulator system for rotating welded parts and welding safety system"
+   ],
+   "images": [
+    "sh-4rhss-30-380-nc",
+    "sh-4rhss-heavy",
+    "sh-4rhss-crane",
+    "sh-4rhss-side-supports",
+    "sh-4rhss-dro",
+    "sh-4rhss-cone"
+   ],
+   "videos": [
+    {
+     "id": "TbSq2XpE5Zk",
+     "title": "4R HSS 30-350 NC heavy-duty plate roll with side supports and overhead support",
+     "duration": "PT0M57S",
+     "thumb": "video-TbSq2XpE5Zk"
+    },
+    {
+     "id": "SpK80ozB2eQ",
+     "title": "4R HSS 40-550 plate roll — 13.5 ft",
+     "duration": "PT4M1S",
+     "thumb": "video-SpK80ozB2eQ"
+    },
+    {
+     "id": "pr9M1AlSgso",
+     "title": "4R HSS 60-400 — 20 ft 4-roll plate roll with NC control",
+     "duration": "PT3M18S",
+     "thumb": "video-pr9M1AlSgso"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4R HSS 20 · 6.7 ft",
+      "sub": "working length 80.7″ · 8 models",
+      "models": [
+       "4R HSS 20-280",
+       "4R HSS 20-320",
+       "4R HSS 20-350",
+       "4R HSS 20-380",
+       "4R HSS 20-400",
+       "4R HSS 20-460",
+       "4R HSS 20-500",
+       "4R HSS 20-550"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)",
+         "1-1/8″ / 1-3/8″ (30 / 35 mm)",
+         "1-3/8″ / 1-5/8″ (35 / 40 mm)",
+         "1-5/8″ / 1-3/4″ (40 / 45 mm)",
+         "1-3/4″ / 2″ (45 / 50 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)",
+         "1-1/8″ / 1-5/8″ (30 / 40 mm)",
+         "1-3/8″ / 1-3/4″ (35 / 45 mm)",
+         "1-5/8″ / 2″ (40 / 50 mm)",
+         "1-3/4″ / 2-1/8″ (45 / 55 mm)",
+         "2″ / 2-3/8″ (50 / 60 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "11″ (280 mm)",
+         "12.6″ (320 mm)",
+         "13.8″ (350 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "18.1″ (460 mm)",
+         "19.7″ (500 mm)",
+         "21.7″ (550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)",
+         "9.4″ (240 mm)",
+         "10.2″ (260 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "22 HP (16.5 kW)",
+         "27 HP (20 kW)",
+         "32 HP (23.5 kW)",
+         "42 HP (31.5 kW)",
+         "52 HP (38.5 kW)",
+         "52 HP (38.5 kW)",
+         "84 HP (63 kW)",
+         "94 HP (70 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "171 × 67 × 73″ (4,350 × 1,700 × 1,850 mm)",
+         "171 × 71 × 77″ (4,350 × 1,800 × 1,950 mm)",
+         "171 × 75 × 77″ (4,350 × 1,900 × 1,950 mm)",
+         "191 × 89 × 93″ (4,850 × 2,250 × 2,350 mm)",
+         "191 × 89 × 93″ (4,850 × 2,250 × 2,350 mm)",
+         "191 × 91 × 93″ (4,850 × 2,300 × 2,350 mm)",
+         "219 × 110 × 114″ (5,550 × 2,800 × 2,900 mm)",
+         "224 × 114 × 116″ (5,700 × 2,900 × 2,950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "18,850 lb (8,550 kg)",
+         "23,149 lb (10,500 kg)",
+         "25,353 lb (11,500 kg)",
+         "32,298 lb (14,650 kg)",
+         "36,376 lb (16,500 kg)",
+         "43,652 lb (19,800 kg)",
+         "73,855 lb (33,500 kg)",
+         "88,185 lb (40,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HSS 25 · 8.4 ft",
+      "sub": "working length 100.4″ · 8 models",
+      "models": [
+       "4R HSS 25-280",
+       "4R HSS 25-320",
+       "4R HSS 25-350",
+       "4R HSS 25-380",
+       "4R HSS 25-400",
+       "4R HSS 25-460",
+       "4R HSS 25-500",
+       "4R HSS 25-550"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)",
+         "1-1/8″ / 1-3/8″ (30 / 35 mm)",
+         "1-3/8″ / 1-5/8″ (35 / 40 mm)",
+         "1-5/8″ / 1-3/4″ (40 / 45 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)",
+         "1-1/8″ / 1-5/8″ (30 / 40 mm)",
+         "1-3/8″ / 1-3/4″ (35 / 45 mm)",
+         "1-5/8″ / 2″ (40 / 50 mm)",
+         "1-3/4″ / 2-1/8″ (45 / 55 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "11″ (280 mm)",
+         "12.6″ (320 mm)",
+         "13.8″ (350 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "18.1″ (460 mm)",
+         "19.7″ (500 mm)",
+         "21.7″ (550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)",
+         "9.4″ (240 mm)",
+         "10.2″ (260 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "22 HP (16.5 kW)",
+         "27 HP (20 kW)",
+         "32 HP (23.5 kW)",
+         "42 HP (31.5 kW)",
+         "52 HP (38.5 kW)",
+         "52 HP (38.5 kW)",
+         "84 HP (63 kW)",
+         "94 HP (70 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "191 × 67 × 73″ (4,850 × 1,700 × 1,850 mm)",
+         "191 × 71 × 77″ (4,850 × 1,800 × 1,950 mm)",
+         "191 × 75 × 77″ (4,850 × 1,900 × 1,950 mm)",
+         "211 × 89 × 93″ (5,350 × 2,250 × 2,350 mm)",
+         "211 × 89 × 93″ (5,350 × 2,250 × 2,350 mm)",
+         "211 × 91 × 93″ (5,350 × 2,300 × 2,350 mm)",
+         "238 × 110 × 114″ (6,050 × 2,800 × 2,900 mm)",
+         "244 × 114 × 116″ (6,200 × 2,900 × 2,950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "21,275 lb (9,650 kg)",
+         "25,574 lb (11,600 kg)",
+         "28,219 lb (12,800 kg)",
+         "36,861 lb (16,720 kg)",
+         "39,242 lb (17,800 kg)",
+         "49,384 lb (22,400 kg)",
+         "79,366 lb (36,000 kg)",
+         "95,901 lb (43,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HSS 30 · 10.2 ft",
+      "sub": "working length 122″ · models 280 – 460",
+      "models": [
+       "4R HSS 30-280",
+       "4R HSS 30-320",
+       "4R HSS 30-350",
+       "4R HSS 30-380",
+       "4R HSS 30-400",
+       "4R HSS 30-460"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)",
+         "1-1/8″ / 1-5/8″ (30 / 40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "11″ (280 mm)",
+         "12.6″ (320 mm)",
+         "13.8″ (350 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "18.1″ (460 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)",
+         "9.4″ (240 mm)",
+         "10.2″ (260 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "15″ (380 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "22 HP (16.5 kW)",
+         "27 HP (20 kW)",
+         "32 HP (23.5 kW)",
+         "42 HP (31.5 kW)",
+         "52 HP (38.5 kW)",
+         "52 HP (38.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "211 × 67 × 73″ (5,350 × 1,700 × 1,850 mm)",
+         "211 × 71 × 77″ (5,350 × 1,800 × 1,950 mm)",
+         "211 × 75 × 77″ (5,350 × 1,900 × 1,950 mm)",
+         "230 × 89 × 93″ (5,850 × 2,250 × 2,350 mm)",
+         "230 × 89 × 93″ (5,850 × 2,250 × 2,350 mm)",
+         "230 × 91 × 93″ (5,850 × 2,300 × 2,350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "23,369 lb (10,600 kg)",
+         "28,109 lb (12,750 kg)",
+         "31,857 lb (14,450 kg)",
+         "42,329 lb (19,200 kg)",
+         "44,533 lb (20,200 kg)",
+         "55,336 lb (25,100 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HSS 30 · 10.2 ft (cont.)",
+      "sub": "working length 122″ · models 500 – 680",
+      "models": [
+       "4R HSS 30-500",
+       "4R HSS 30-550",
+       "4R HSS 30-580",
+       "4R HSS 30-620",
+       "4R HSS 30-680"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1-1/8″ / 1-3/8″ (30 / 35 mm)",
+         "1-3/8″ / 1-5/8″ (35 / 40 mm)",
+         "1-5/8″ / 1-3/4″ (40 / 45 mm)",
+         "2″ / 2-3/8″ (50 / 60 mm)",
+         "2-3/8″ / 2-3/4″ (60 / 70 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1-3/8″ / 1-3/4″ (35 / 45 mm)",
+         "1-5/8″ / 2″ (40 / 50 mm)",
+         "1-3/4″ / 2-3/8″ (45 / 60 mm)",
+         "2-3/8″ / 2-3/4″ (60 / 70 mm)",
+         "2-3/4″ / 3-3/8″ (70 / 85 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)",
+         "21.7″ (550 mm)",
+         "22.8″ (580 mm)",
+         "24.4″ (620 mm)",
+         "26.8″ (680 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)",
+         "18.9″ (480 mm)",
+         "20.5″ (520 mm)",
+         "22.8″ (580 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "84 HP (63 kW)",
+         "94 HP (70 kW)",
+         "98 HP (73 kW)",
+         "165 HP (123 kW)",
+         "201 HP (150 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 3.3 – 13",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "260 × 110 × 114″ (6,600 × 2,800 × 2,900 mm)",
+         "266 × 114 × 116″ (6,750 × 2,900 × 2,950 mm)",
+         "266 × 116 × 116″ (6,750 × 2,950 × 2,950 mm)",
+         "283 × 128 × 128″ (7,200 × 3,250 × 3,250 mm)",
+         "303 × 138 × 142″ (7,700 × 3,500 × 3,600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "84,878 lb (38,500 kg)",
+         "103,617 lb (47,000 kg)",
+         "110,231 lb (50,000 kg)",
+         "136,687 lb (62,000 kg)",
+         "181,881 lb (82,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HSS 40 · 13.5 ft",
+      "sub": "working length 161.4″ · 8 models",
+      "models": [
+       "4R HSS 40-280",
+       "4R HSS 40-320",
+       "4R HSS 40-350",
+       "4R HSS 40-380",
+       "4R HSS 40-400",
+       "4R HSS 40-460",
+       "4R HSS 40-500",
+       "4R HSS 40-550"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-3/8″ (25 / 35 mm)",
+         "1-1/8″ / 1-5/8″ (30 / 40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "11″ (280 mm)",
+         "12.6″ (320 mm)",
+         "13.8″ (350 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "18.1″ (460 mm)",
+         "19.7″ (500 mm)",
+         "21.7″ (550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)",
+         "9.4″ (240 mm)",
+         "10.2″ (260 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "22 HP (16.5 kW)",
+         "27 HP (20 kW)",
+         "32 HP (23.5 kW)",
+         "42 HP (31.5 kW)",
+         "52 HP (38.5 kW)",
+         "52 HP (38.5 kW)",
+         "84 HP (63 kW)",
+         "94 HP (70 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "254 × 67 × 73″ (6,450 × 1,700 × 1,850 mm)",
+         "254 × 71 × 77″ (6,450 × 1,800 × 1,950 mm)",
+         "254 × 75 × 77″ (6,450 × 1,900 × 1,950 mm)",
+         "274 × 89 × 93″ (6,950 × 2,250 × 2,350 mm)",
+         "274 × 89 × 93″ (6,950 × 2,250 × 2,350 mm)",
+         "274 × 91 × 93″ (6,950 × 2,300 × 2,350 mm)",
+         "299 × 110 × 114″ (7,600 × 2,800 × 2,900 mm)",
+         "305 × 114 × 116″ (7,750 × 2,900 × 2,950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "28,660 lb (13,000 kg)",
+         "32,518 lb (14,750 kg)",
+         "37,809 lb (17,150 kg)",
+         "48,502 lb (22,000 kg)",
+         "51,809 lb (23,500 kg)",
+         "65,036 lb (29,500 kg)",
+         "95,901 lb (43,500 kg)",
+         "119,050 lb (54,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HSS 60 · 20 ft",
+      "sub": "working length 240.2″ · 7 models",
+      "models": [
+       "4R HSS 60-350",
+       "4R HSS 60-380",
+       "4R HSS 60-400",
+       "4R HSS 60-460",
+       "4R HSS 60-500",
+       "4R HSS 60-550",
+       "4R HSS 60-620"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.2″ (6,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 9/16″ (12 / 15 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)",
+         "13/16″ / 1″ (20 / 25 mm)",
+         "1″ / 1-1/8″ (25 / 30 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "13.8″ (350 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "18.1″ (460 mm)",
+         "19.7″ (500 mm)",
+         "21.7″ (550 mm)",
+         "24.4″ (620 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "10.2″ (260 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "15″ (380 mm)",
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)",
+         "20.5″ (520 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "32 HP (23.5 kW)",
+         "42 HP (31.5 kW)",
+         "52 HP (38.5 kW)",
+         "52 HP (38.5 kW)",
+         "84 HP (63 kW)",
+         "94 HP (70 kW)",
+         "165 HP (123 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)",
+         "3.3 – 13 ft/min (1 – 4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "333 × 75 × 77″ (8,450 × 1,900 × 1,950 mm)",
+         "352 × 89 × 93″ (8,950 × 2,250 × 2,350 mm)",
+         "352 × 89 × 93″ (8,950 × 2,250 × 2,350 mm)",
+         "352 × 91 × 93″ (8,950 × 2,300 × 2,350 mm)",
+         "378 × 100 × 93″ (9,600 × 2,550 × 2,350 mm)",
+         "384 × 114 × 114″ (9,750 × 2,900 × 2,900 mm)",
+         "402 × 128 × 128″ (10,200 × 3,250 × 3,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "52,911 lb (24,000 kg)",
+         "62,281 lb (28,250 kg)",
+         "66,139 lb (30,000 kg)",
+         "88,185 lb (40,000 kg)",
+         "148,812 lb (67,500 kg)",
+         "154,324 lb (70,000 kg)",
+         "195,109 lb (88,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "4R HSS 20-280",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1/2″ / 5/8″ (12 / 16 mm)",
+       "11″ (280 mm)",
+       "22 HP (16.5 kW)",
+       "18,850 lb (8,550 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 20-320",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "5/8″ / 13/16″ (16 / 20 mm)",
+       "12.6″ (320 mm)",
+       "27 HP (20 kW)",
+       "23,149 lb (10,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 20-350",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "13/16″ / 1″ (20 / 25 mm)",
+       "13.8″ (350 mm)",
+       "32 HP (23.5 kW)",
+       "25,353 lb (11,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 20-380",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1″ / 1-1/8″ (25 / 30 mm)",
+       "15″ (380 mm)",
+       "42 HP (31.5 kW)",
+       "32,298 lb (14,650 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 20-400",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1-1/8″ / 1-3/8″ (30 / 35 mm)",
+       "15.7″ (400 mm)",
+       "52 HP (38.5 kW)",
+       "36,376 lb (16,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 20-460",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1-3/8″ / 1-5/8″ (35 / 40 mm)",
+       "18.1″ (460 mm)",
+       "52 HP (38.5 kW)",
+       "43,652 lb (19,800 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 20-500",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1-5/8″ / 1-3/4″ (40 / 45 mm)",
+       "19.7″ (500 mm)",
+       "84 HP (63 kW)",
+       "73,855 lb (33,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 20-550",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1-3/4″ / 2″ (45 / 50 mm)",
+       "21.7″ (550 mm)",
+       "94 HP (70 kW)",
+       "88,185 lb (40,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-280",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "11″ (280 mm)",
+       "22 HP (16.5 kW)",
+       "21,275 lb (9,650 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-320",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1/2″ / 5/8″ (12 / 16 mm)",
+       "12.6″ (320 mm)",
+       "27 HP (20 kW)",
+       "25,574 lb (11,600 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-350",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "5/8″ / 13/16″ (16 / 20 mm)",
+       "13.8″ (350 mm)",
+       "32 HP (23.5 kW)",
+       "28,219 lb (12,800 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-380",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "13/16″ / 1″ (20 / 25 mm)",
+       "15″ (380 mm)",
+       "42 HP (31.5 kW)",
+       "36,861 lb (16,720 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-400",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1″ / 1-1/8″ (25 / 30 mm)",
+       "15.7″ (400 mm)",
+       "52 HP (38.5 kW)",
+       "39,242 lb (17,800 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-460",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1-1/8″ / 1-3/8″ (30 / 35 mm)",
+       "18.1″ (460 mm)",
+       "52 HP (38.5 kW)",
+       "49,384 lb (22,400 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-500",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1-3/8″ / 1-5/8″ (35 / 40 mm)",
+       "19.7″ (500 mm)",
+       "84 HP (63 kW)",
+       "79,366 lb (36,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 25-550",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1-5/8″ / 1-3/4″ (40 / 45 mm)",
+       "21.7″ (550 mm)",
+       "94 HP (70 kW)",
+       "95,901 lb (43,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-280",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "11″ (280 mm)",
+       "22 HP (16.5 kW)",
+       "23,369 lb (10,600 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-320",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "12.6″ (320 mm)",
+       "27 HP (20 kW)",
+       "28,109 lb (12,750 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-350",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1/2″ / 5/8″ (12 / 16 mm)",
+       "13.8″ (350 mm)",
+       "32 HP (23.5 kW)",
+       "31,857 lb (14,450 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-380",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "5/8″ / 13/16″ (16 / 20 mm)",
+       "15″ (380 mm)",
+       "42 HP (31.5 kW)",
+       "42,329 lb (19,200 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-400",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "13/16″ / 1″ (20 / 25 mm)",
+       "15.7″ (400 mm)",
+       "52 HP (38.5 kW)",
+       "44,533 lb (20,200 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-460",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1″ / 1-1/8″ (25 / 30 mm)",
+       "18.1″ (460 mm)",
+       "52 HP (38.5 kW)",
+       "55,336 lb (25,100 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-500",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1-1/8″ / 1-3/8″ (30 / 35 mm)",
+       "19.7″ (500 mm)",
+       "84 HP (63 kW)",
+       "84,878 lb (38,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-550",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1-3/8″ / 1-5/8″ (35 / 40 mm)",
+       "21.7″ (550 mm)",
+       "94 HP (70 kW)",
+       "103,617 lb (47,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-580",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1-5/8″ / 1-3/4″ (40 / 45 mm)",
+       "22.8″ (580 mm)",
+       "98 HP (73 kW)",
+       "110,231 lb (50,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-620",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "2″ / 2-3/8″ (50 / 60 mm)",
+       "24.4″ (620 mm)",
+       "165 HP (123 kW)",
+       "136,687 lb (62,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 30-680",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "2-3/8″ / 2-3/4″ (60 / 70 mm)",
+       "26.8″ (680 mm)",
+       "201 HP (150 kW)",
+       "181,881 lb (82,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-280",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "11″ (280 mm)",
+       "22 HP (16.5 kW)",
+       "28,660 lb (13,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-320",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "12.6″ (320 mm)",
+       "27 HP (20 kW)",
+       "32,518 lb (14,750 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-350",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "13.8″ (350 mm)",
+       "32 HP (23.5 kW)",
+       "37,809 lb (17,150 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-380",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "15″ (380 mm)",
+       "42 HP (31.5 kW)",
+       "48,502 lb (22,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-400",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "1/2″ / 5/8″ (12 / 16 mm)",
+       "15.7″ (400 mm)",
+       "52 HP (38.5 kW)",
+       "51,809 lb (23,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-460",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "5/8″ / 13/16″ (16 / 20 mm)",
+       "18.1″ (460 mm)",
+       "52 HP (38.5 kW)",
+       "65,036 lb (29,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-500",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "13/16″ / 1″ (20 / 25 mm)",
+       "19.7″ (500 mm)",
+       "84 HP (63 kW)",
+       "95,901 lb (43,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 40-550",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "1″ / 1-1/8″ (25 / 30 mm)",
+       "21.7″ (550 mm)",
+       "94 HP (70 kW)",
+       "119,050 lb (54,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 60-350",
+      "glance": [
+       "20 ft · 240.2″ (6,100 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "13.8″ (350 mm)",
+       "32 HP (23.5 kW)",
+       "52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 60-380",
+      "glance": [
+       "20 ft · 240.2″ (6,100 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "15″ (380 mm)",
+       "42 HP (31.5 kW)",
+       "62,281 lb (28,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 60-400",
+      "glance": [
+       "20 ft · 240.2″ (6,100 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "15.7″ (400 mm)",
+       "52 HP (38.5 kW)",
+       "66,139 lb (30,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 60-460",
+      "glance": [
+       "20 ft · 240.2″ (6,100 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "18.1″ (460 mm)",
+       "52 HP (38.5 kW)",
+       "88,185 lb (40,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 60-500",
+      "glance": [
+       "20 ft · 240.2″ (6,100 mm)",
+       "1/2″ / 5/8″ (12 / 16 mm)",
+       "19.7″ (500 mm)",
+       "84 HP (63 kW)",
+       "148,812 lb (67,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 60-550",
+      "glance": [
+       "20 ft · 240.2″ (6,100 mm)",
+       "5/8″ / 13/16″ (16 / 20 mm)",
+       "21.7″ (550 mm)",
+       "94 HP (70 kW)",
+       "154,324 lb (70,000 kg)"
+      ]
+     },
+     {
+      "name": "4R HSS 60-620",
+      "glance": [
+       "20 ft · 240.2″ (6,100 mm)",
+       "13/16″ / 1″ (20 / 25 mm)",
+       "24.4″ (620 mm)",
+       "165 HP (123 kW)",
+       "195,109 lb (88,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "4R HSS 20-280": "rolls up to 5/8″ (16 mm) × 6.7 ft",
+     "4R HSS 20-320": "rolls up to 13/16″ (20 mm) × 6.7 ft",
+     "4R HSS 20-350": "rolls up to 1″ (25 mm) × 6.7 ft",
+     "4R HSS 20-380": "rolls up to 1-1/8″ (30 mm) × 6.7 ft",
+     "4R HSS 20-400": "rolls up to 1-3/8″ (35 mm) × 6.7 ft",
+     "4R HSS 20-460": "rolls up to 1-5/8″ (40 mm) × 6.7 ft",
+     "4R HSS 20-500": "rolls up to 1-3/4″ (45 mm) × 6.7 ft",
+     "4R HSS 20-550": "rolls up to 2″ (50 mm) × 6.7 ft",
+     "4R HSS 25-280": "rolls up to 1/2″ (12 mm) × 8.4 ft",
+     "4R HSS 25-320": "rolls up to 5/8″ (16 mm) × 8.4 ft",
+     "4R HSS 25-350": "rolls up to 13/16″ (20 mm) × 8.4 ft",
+     "4R HSS 25-380": "rolls up to 1″ (25 mm) × 8.4 ft",
+     "4R HSS 25-400": "rolls up to 1-1/8″ (30 mm) × 8.4 ft",
+     "4R HSS 25-460": "rolls up to 1-3/8″ (35 mm) × 8.4 ft",
+     "4R HSS 25-500": "rolls up to 1-5/8″ (40 mm) × 8.4 ft",
+     "4R HSS 25-550": "rolls up to 1-3/4″ (45 mm) × 8.4 ft",
+     "4R HSS 30-280": "rolls up to 3/8″ (10 mm) × 10.2 ft",
+     "4R HSS 30-320": "rolls up to 1/2″ (12 mm) × 10.2 ft",
+     "4R HSS 30-350": "rolls up to 5/8″ (16 mm) × 10.2 ft",
+     "4R HSS 30-380": "rolls up to 13/16″ (20 mm) × 10.2 ft",
+     "4R HSS 30-400": "rolls up to 1″ (25 mm) × 10.2 ft",
+     "4R HSS 30-460": "rolls up to 1-1/8″ (30 mm) × 10.2 ft",
+     "4R HSS 30-500": "rolls up to 1-3/8″ (35 mm) × 10.2 ft",
+     "4R HSS 30-550": "rolls up to 1-5/8″ (40 mm) × 10.2 ft",
+     "4R HSS 30-580": "rolls up to 1-3/4″ (45 mm) × 10.2 ft",
+     "4R HSS 30-620": "rolls up to 2-3/8″ (60 mm) × 10.2 ft",
+     "4R HSS 30-680": "rolls up to 2-3/4″ (70 mm) × 10.2 ft",
+     "4R HSS 40-280": "rolls up to 1/4″ (6 mm) × 13.5 ft",
+     "4R HSS 40-320": "rolls up to 5/16″ (8 mm) × 13.5 ft",
+     "4R HSS 40-350": "rolls up to 3/8″ (10 mm) × 13.5 ft",
+     "4R HSS 40-380": "rolls up to 1/2″ (12 mm) × 13.5 ft",
+     "4R HSS 40-400": "rolls up to 5/8″ (16 mm) × 13.5 ft",
+     "4R HSS 40-460": "rolls up to 13/16″ (20 mm) × 13.5 ft",
+     "4R HSS 40-500": "rolls up to 1″ (25 mm) × 13.5 ft",
+     "4R HSS 40-550": "rolls up to 1-1/8″ (30 mm) × 13.5 ft",
+     "4R HSS 60-350": "rolls up to 1/4″ (6 mm) × 20 ft",
+     "4R HSS 60-380": "rolls up to 5/16″ (8 mm) × 20 ft",
+     "4R HSS 60-400": "rolls up to 3/8″ (10 mm) × 20 ft",
+     "4R HSS 60-460": "rolls up to 1/2″ (12 mm) × 20 ft",
+     "4R HSS 60-500": "rolls up to 5/8″ (16 mm) × 20 ft",
+     "4R HSS 60-550": "rolls up to 13/16″ (20 mm) × 20 ft",
+     "4R HSS 60-620": "rolls up to 1″ (25 mm) × 20 ft"
+    },
+    "note": "Plate bending capacities are for mild steel with a yield strength of 37,700 psi (260 N/mm²), given at a minimum rolling diameter of 5× and of 1.5× the top roll diameter, without and with pre-bending. Capacities without pre-bending leave a flat end depending on diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 6.7 – 20 ft (2050 – 6100 mm) · rolls up to 3-3/8″ (85 mm) plate",
+   "group": "sahinler-4r"
+  },
+  "sahinler-4r-hsl": {
+   "id": "sahinler-4r-hsl",
+   "brand": "sahinler",
+   "name": "4R HS-L hydraulic 4-roll plate rolls — linear, wedge pinch",
+   "short": "4R HS-L linear 4-roll",
+   "models_label": "4R HS-L 10-100 – 4R HS-L 20-130 · 7 models · 3.4 to 6.7 ft",
+   "summary": "Compact 4-roll plate rolls with Ø3.9″ – 5.1″ rolls for light and medium plate and stainless steel. The bottom pinch roll rises on a hydraulic wedge system and the two side rolls work in double-pinch pyramid action, so both ends of the sheet are pre-bent in one pass; the top roll is driven by a hydraulic motor through a planetary gearbox and the bottom roll through a cardan joint. Three digital readouts, hydraulic drop-end, cone-bending device and two speeds are standard — the 4R HS-L is also the base of Şahinler's automatic wheel-rim body rolling line.",
+   "features": [
+    "Bottom pinch roll on a hydraulic wedge system; two side rolls with double-pinch pyramid action — double pre-bend in one pass",
+    "Top roll driven by hydraulic motor and planetary gearbox; bottom roll by cardan-joint system through gears",
+    "Three digital readouts; mobile control panel; central lubrication; overload protection",
+    "Hydraulic drop-end; cone-bending device; two-speed operation",
+    "SAE 1050 (CK45-50) induction-hardened and polished rolls; welded steel frames; CE marked"
+   ],
+   "optional": [
+    "Automation with NC or CNC control",
+    "Overhead crane and hydraulic side supports",
+    "Hydraulic plate ejector — automatic wheel-rim body rolling",
+    "Ground rolls; infinitely variable speed; electronic roll balancing",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-4rhs-30-190",
+    "sh-4rhs-20-260-crane"
+   ],
+   "videos": [
+    {
+     "id": "-WSHmos5adM",
+     "title": "4R HS-L 10-110 NC 4-roll plate roll with automatic loading table and part ejector",
+     "duration": "PT0M51S",
+     "thumb": "video--WSHmos5adM"
+    },
+    {
+     "id": "2TtFPY09kB8",
+     "title": "4R HS-L hydraulic 4-roll plate bending roll",
+     "duration": "PT1M43S",
+     "thumb": "video-2TtFPY09kB8"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4R HS-L · linear",
+      "sub": "Ø3.9″ – 5.1″ rolls · 3.4 – 6.7 ft · 7 models",
+      "models": [
+       "4R HS-L 10-100",
+       "4R HS-L 10-130",
+       "4R HS-L 12-100",
+       "4R HS-L 12-130",
+       "4R HS-L 15-100",
+       "4R HS-L 15-130",
+       "4R HS-L 20-130"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "4.2 ft · 50.0″ (1,270 mm)",
+         "4.2 ft · 50.0″ (1,270 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "12 ga / 11 ga (2.5 / 3 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "14 ga / 12 ga (2 / 2.5 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "12 ga / 10 ga (2.5 / 3.5 mm)",
+         "14 ga / 11 ga (2 / 3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 10 ga (3 / 3.5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "12 ga / 11 ga (2.5 / 3 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "14 ga / 12 ga (2 / 2.5 mm)",
+         "10 ga / 7 ga (3.5 / 4.5 mm)",
+         "11 ga / 8 ga (3 / 4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "5.1″ (130 mm)",
+         "3.9″ (100 mm)",
+         "5.1″ (130 mm)",
+         "3.9″ (100 mm)",
+         "5.1″ (130 mm)",
+         "5.1″ (130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "4.3″ (110 mm)",
+         "5.1″ (130 mm)",
+         "4.3″ (110 mm)",
+         "5.1″ (130 mm)",
+         "4.3″ (110 mm)",
+         "5.1″ (130 mm)",
+         "5.1″ (130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.25 kW)",
+         "4 HP (3 kW)",
+         "3 HP (2.25 kW)",
+         "4 HP (3 kW)",
+         "3 HP (2.25 kW)",
+         "4 HP (3 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "122 × 43 × 43″ (3,100 × 1,100 × 1,100 mm)",
+         "122 × 43 × 45″ (3,100 × 1,100 × 1,150 mm)",
+         "132 × 43 × 43″ (3,350 × 1,100 × 1,100 mm)",
+         "132 × 43 × 45″ (3,350 × 1,100 × 1,150 mm)",
+         "142 × 43 × 43″ (3,600 × 1,100 × 1,100 mm)",
+         "142 × 43 × 45″ (3,600 × 1,100 × 1,150 mm)",
+         "161 × 43 × 45″ (4,100 × 1,100 × 1,150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,431 lb (2,010 kg)",
+         "4,806 lb (2,180 kg)",
+         "4,850 lb (2,200 kg)",
+         "4,938 lb (2,240 kg)",
+         "4,960 lb (2,250 kg)",
+         "5,357 lb (2,430 kg)",
+         "5,952 lb (2,700 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "4R HS-L 10-100",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "12 ga / 11 ga (2.5 / 3 mm)",
+       "3.9″ (100 mm)",
+       "3 HP (2.25 kW)",
+       "4,431 lb (2,010 kg)"
+      ]
+     },
+     {
+      "name": "4R HS-L 10-130",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "8 ga / 3/16″ (4 / 5 mm)",
+       "5.1″ (130 mm)",
+       "4 HP (3 kW)",
+       "4,806 lb (2,180 kg)"
+      ]
+     },
+     {
+      "name": "4R HS-L 12-100",
+      "glance": [
+       "4.2 ft · 50.0″ (1,270 mm)",
+       "14 ga / 12 ga (2 / 2.5 mm)",
+       "3.9″ (100 mm)",
+       "3 HP (2.25 kW)",
+       "4,850 lb (2,200 kg)"
+      ]
+     },
+     {
+      "name": "4R HS-L 12-130",
+      "glance": [
+       "4.2 ft · 50.0″ (1,270 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.1″ (130 mm)",
+       "4 HP (3 kW)",
+       "4,938 lb (2,240 kg)"
+      ]
+     },
+     {
+      "name": "4R HS-L 15-100",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "16 ga / 14 ga (1.5 / 2 mm)",
+       "3.9″ (100 mm)",
+       "3 HP (2.25 kW)",
+       "4,960 lb (2,250 kg)"
+      ]
+     },
+     {
+      "name": "4R HS-L 15-130",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "12 ga / 10 ga (2.5 / 3.5 mm)",
+       "5.1″ (130 mm)",
+       "4 HP (3 kW)",
+       "5,357 lb (2,430 kg)"
+      ]
+     },
+     {
+      "name": "4R HS-L 20-130",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "14 ga / 11 ga (2 / 3 mm)",
+       "5.1″ (130 mm)",
+       "4 HP (3 kW)",
+       "5,952 lb (2,700 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "4R HS-L 10-100": "rolls up to 11 ga (3 mm) × 3.4 ft",
+     "4R HS-L 10-130": "rolls up to 3/16″ (5 mm) × 3.4 ft",
+     "4R HS-L 12-100": "rolls up to 12 ga (2.5 mm) × 4.2 ft",
+     "4R HS-L 12-130": "rolls up to 8 ga (4 mm) × 4.2 ft",
+     "4R HS-L 15-100": "rolls up to 14 ga (2 mm) × 5.1 ft",
+     "4R HS-L 15-130": "rolls up to 10 ga (3.5 mm) × 5.1 ft",
+     "4R HS-L 20-130": "rolls up to 11 ga (3 mm) × 6.7 ft"
+    },
+    "note": "Plate bending capacities are for mild steel with a yield strength of 37,700 psi (260 N/mm²), given at a minimum rolling diameter of 5× and of 1.5× the top roll diameter, without and with pre-bending. Capacities without pre-bending leave a flat end depending on diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 3.4 – 6.7 ft (1050 – 2050 mm) · rolls up to 5/16″ (8 mm)",
+   "group": "sahinler-4r"
+  },
+  "sahinler-4r-hs": {
+   "id": "sahinler-4r-hs",
+   "brand": "sahinler",
+   "name": "4R HS hydraulic 4-roll plate rolls — orbital",
+   "short": "4R HS orbital 4-roll",
+   "models_label": "4R HS 15-150 – 4R HS 40-260 · 22 models · 5.1 to 13.5 ft",
+   "summary": "Mid-range 4-roll plate bending machines with Ø5.9″ – 10.2″ rolls: the pinch and side rolls move on an orbital path with hydraulic cylinders, the top roll is driven by hydromotor and planetary gearbox and the bottom roll by gear and cardan system. Hydraulic balancing keeps the rolls parallel; three digital readouts, cone-bending device and two speeds are standard. From 5.1 ft to 13.5 ft and plate up to 1″ — the 4-roll machine of the general fabrication shop, available with NC or CNC control, overhead crane and side supports.",
+   "features": [
+    "Pinch and side rolls move on an orbital path with hydraulic cylinders; hydraulic balancing system",
+    "Top roll driven by hydromotor and planetary gearbox; bottom roll by gear and cardan system",
+    "Three digital readouts for easy roll positioning; mobile control panel; overload protection",
+    "Hydraulic drop-end; cone-bending device; two-speed operation",
+    "SAE 1050 (CK45-50) forged or hot-rolled, induction-hardened and polished rolls; welded steel frames; CE marked"
+   ],
+   "optional": [
+    "Automation with NC or CNC control (ESA, Italy)",
+    "Overhead crane and hydraulic side supports for large diameters",
+    "Hydraulic plate ejector for series production",
+    "Ground rolls for special jobs; infinitely variable speed",
+    "Electronic roll balancing for parallel roll movement",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-4rhs-25-245",
+    "sh-4rhs-cone-device"
+   ],
+   "videos": [
+    {
+     "id": "cLgF3gMPYNg",
+     "title": "4R HS 20-260 4-roll hydraulic plate bending roll",
+     "duration": "PT3M20S",
+     "thumb": "video-cLgF3gMPYNg"
+    },
+    {
+     "id": "cjPMo9s1Olo",
+     "title": "4R HS 20-245 4-roll plate roll with CNC control",
+     "duration": "PT2M44S",
+     "thumb": "video-cjPMo9s1Olo"
+    },
+    {
+     "id": "_2GhF396tTI",
+     "title": "4R HS 20-260 — conical bending",
+     "duration": "PT2M11S",
+     "thumb": "video-_2GhF396tTI"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4R HS 15 · 5.1 ft",
+      "sub": "working length 61″ · 5 models",
+      "models": [
+       "4R HS 15-150",
+       "4R HS 15-180",
+       "4R HS 15-200",
+       "4R HS 15-220",
+       "4R HS 15-245"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "10 ga / 7 ga (3.5 / 4.5 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "7 ga / 1/4″ (4.5 / 6 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "3/8″ / 7/16″ (10 / 11 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 9/16″ (12 / 15 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "7.1″ (180 mm)",
+         "7.9″ / 8.7″ (200 / 220 mm)",
+         "8.7″ (220 mm)",
+         "9.6″ (245 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "5.1″ (130 mm)",
+         "5.9″ (150 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "7.1″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 4.9 – 20",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "148 × 38 × 43″ (3,750 × 970 × 1,100 mm)",
+         "154 × 45 × 49″ (3,900 × 1,150 × 1,250 mm)",
+         "154 × 45 × 49″ (3,900 × 1,150 × 1,250 mm)",
+         "154 × 45 × 49″ (3,900 × 1,150 × 1,250 mm)",
+         "150 × 63 × 58″ (3,800 × 1,600 × 1,450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "5,809 lb (2,630 kg)",
+         "7,297 lb (3,310 kg)",
+         "7,716 lb (3,500 kg)",
+         "7,937 lb (3,600 kg)",
+         "10,803 lb (4,900 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HS 20 · 6.7 ft",
+      "sub": "working length 80.7″ · 6 models",
+      "models": [
+       "4R HS 20-150",
+       "4R HS 20-180",
+       "4R HS 20-200",
+       "4R HS 20-220",
+       "4R HS 20-245",
+       "4R HS 20-260"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 7/16″ (10 / 11 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "7.1″ (180 mm)",
+         "7.9″ / 8.7″ (200 / 220 mm)",
+         "8.7″ (220 mm)",
+         "9.6″ (245 mm)",
+         "10.2″ (260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "5.1″ (130 mm)",
+         "5.9″ (150 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "7.1″ (180 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "167 × 38 × 43″ (4,250 × 970 × 1,100 mm)",
+         "173 × 45 × 49″ (4,400 × 1,150 × 1,250 mm)",
+         "173 × 45 × 49″ (4,400 × 1,150 × 1,250 mm)",
+         "173 × 45 × 49″ (4,400 × 1,150 × 1,250 mm)",
+         "169 × 63 × 58″ (4,300 × 1,600 × 1,450 mm)",
+         "169 × 63 × 61″ (4,300 × 1,600 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,173 lb (2,800 kg)",
+         "8,300 lb (3,760 kg)",
+         "8,874 lb (4,030 kg)",
+         "8,995 lb (4,080 kg)",
+         "12,015 lb (5,450 kg)",
+         "13,448 lb (6,100 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HS 25 · 8.4 ft",
+      "sub": "working length 100.4″ · 5 models",
+      "models": [
+       "4R HS 25-180",
+       "4R HS 25-200",
+       "4R HS 25-220",
+       "4R HS 25-245",
+       "4R HS 25-260"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "7.1″ (180 mm)",
+         "7.9″ / 8.7″ (200 / 220 mm)",
+         "8.7″ (220 mm)",
+         "9.6″ (245 mm)",
+         "10.2″ (260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "7.1″ (180 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 4.9 – 20",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "193 × 45 × 49″ (4,900 × 1,150 × 1,250 mm)",
+         "193 × 45 × 49″ (4,900 × 1,150 × 1,250 mm)",
+         "193 × 45 × 49″ (4,900 × 1,150 × 1,250 mm)",
+         "189 × 63 × 58″ (4,800 × 1,600 × 1,450 mm)",
+         "189 × 63 × 61″ (4,800 × 1,600 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "8,598 lb (3,900 kg)",
+         "10,274 lb (4,660 kg)",
+         "10,141 lb (4,600 kg)",
+         "13,603 lb (6,170 kg)",
+         "14,991 lb (6,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HS 30 · 10.2 ft",
+      "sub": "working length 122″ · 5 models",
+      "models": [
+       "4R HS 30-180",
+       "4R HS 30-200",
+       "4R HS 30-220",
+       "4R HS 30-245",
+       "4R HS 30-260"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "14 ga / 11 ga (2 / 3 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "3/16″ / 1/4″ (5 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 3/16″ (3 / 5 mm)",
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "1/4″ / 3/8″ (6 / 10 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "7.1″ (180 mm)",
+         "7.9″ / 8.7″ (200 / 220 mm)",
+         "8.7″ (220 mm)",
+         "9.6″ (245 mm)",
+         "10.2″ (260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "7.1″ (180 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 4.9 – 20",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)",
+         "4.9 – 20 ft/min (1.5 – 6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "215 × 45 × 49″ (5,450 × 1,150 × 1,250 mm)",
+         "215 × 45 × 49″ (5,450 × 1,150 × 1,250 mm)",
+         "215 × 45 × 49″ (5,450 × 1,150 × 1,250 mm)",
+         "211 × 63 × 58″ (5,350 × 1,600 × 1,450 mm)",
+         "211 × 63 × 61″ (5,350 × 1,600 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "9,480 lb (4,300 kg)",
+         "11,211 lb (5,090 kg)",
+         "11,464 lb (5,200 kg)",
+         "15,102 lb (6,850 kg)",
+         "17,108 lb (7,760 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "4R HS 40 · 13.5 ft",
+      "sub": "working length 161.4″",
+      "models": [
+       "4R HS 40-260"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "13.5 ft · 161.4″ (4,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "11 ga / 8 ga (3 / 4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "8 ga / 1/4″ (4 / 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "10.2″ (260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 4.9 – 20"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "258 × 63 × 61″ (6,550 × 1,600 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "19,621 lb (8,900 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "4R HS 15-150",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "10 ga / 7 ga (3.5 / 4.5 mm)",
+       "5.9″ (150 mm)",
+       "5.4 HP (4 kW)",
+       "5,809 lb (2,630 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 15-180",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "7.1″ (180 mm)",
+       "7.4 HP (5.5 kW)",
+       "7,297 lb (3,310 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 15-200",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "7.9″ / 8.7″ (200 / 220 mm)",
+       "7.4 HP (5.5 kW)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 15-220",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "8.7″ (220 mm)",
+       "7.4 HP (5.5 kW)",
+       "7,937 lb (3,600 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 15-245",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "9.6″ (245 mm)",
+       "10 HP (7.5 kW)",
+       "10,803 lb (4,900 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 20-150",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.9″ (150 mm)",
+       "5.4 HP (4 kW)",
+       "6,173 lb (2,800 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 20-180",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "7.1″ (180 mm)",
+       "7.4 HP (5.5 kW)",
+       "8,300 lb (3,760 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 20-200",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "7.9″ / 8.7″ (200 / 220 mm)",
+       "7.4 HP (5.5 kW)",
+       "8,874 lb (4,030 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 20-220",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1/4″ / 3/8″ (6 / 10 mm)",
+       "8.7″ (220 mm)",
+       "7.4 HP (5.5 kW)",
+       "8,995 lb (4,080 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 20-245",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "9.6″ (245 mm)",
+       "10 HP (7.5 kW)",
+       "12,015 lb (5,450 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 20-260",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "10.2″ (260 mm)",
+       "10 HP (7.5 kW)",
+       "13,448 lb (6,100 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 25-180",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "7.1″ (180 mm)",
+       "7.4 HP (5.5 kW)",
+       "8,598 lb (3,900 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 25-200",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "7.9″ / 8.7″ (200 / 220 mm)",
+       "7.4 HP (5.5 kW)",
+       "10,274 lb (4,660 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 25-220",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "8.7″ (220 mm)",
+       "7.4 HP (5.5 kW)",
+       "10,141 lb (4,600 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 25-245",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "9.6″ (245 mm)",
+       "10 HP (7.5 kW)",
+       "13,603 lb (6,170 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 25-260",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "10.2″ (260 mm)",
+       "10 HP (7.5 kW)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 30-180",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "14 ga / 11 ga (2 / 3 mm)",
+       "7.1″ (180 mm)",
+       "7.4 HP (5.5 kW)",
+       "9,480 lb (4,300 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 30-200",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "7.9″ / 8.7″ (200 / 220 mm)",
+       "7.4 HP (5.5 kW)",
+       "11,211 lb (5,090 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 30-220",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "8.7″ (220 mm)",
+       "7.4 HP (5.5 kW)",
+       "11,464 lb (5,200 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 30-245",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "3/16″ / 1/4″ (5 / 6 mm)",
+       "9.6″ (245 mm)",
+       "10 HP (7.5 kW)",
+       "15,102 lb (6,850 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 30-260",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "10.2″ (260 mm)",
+       "10 HP (7.5 kW)",
+       "17,108 lb (7,760 kg)"
+      ]
+     },
+     {
+      "name": "4R HS 40-260",
+      "glance": [
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "10.2″ (260 mm)",
+       "10 HP (7.5 kW)",
+       "19,621 lb (8,900 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "4R HS 15-150": "rolls up to 7 ga (4.5 mm) × 5.1 ft",
+     "4R HS 15-180": "rolls up to 1/4″ (6 mm) × 5.1 ft",
+     "4R HS 15-200": "rolls up to 3/8″ (10 mm) × 5.1 ft",
+     "4R HS 15-220": "rolls up to 3/8″ (10 mm) × 5.1 ft",
+     "4R HS 15-245": "rolls up to 1/2″ (12 mm) × 5.1 ft",
+     "4R HS 20-150": "rolls up to 8 ga (4 mm) × 6.7 ft",
+     "4R HS 20-180": "rolls up to 1/4″ (6 mm) × 6.7 ft",
+     "4R HS 20-200": "rolls up to 5/16″ (8 mm) × 6.7 ft",
+     "4R HS 20-220": "rolls up to 3/8″ (10 mm) × 6.7 ft",
+     "4R HS 20-245": "rolls up to 3/8″ (10 mm) × 6.7 ft",
+     "4R HS 20-260": "rolls up to 1/2″ (12 mm) × 6.7 ft",
+     "4R HS 25-180": "rolls up to 8 ga (4 mm) × 8.4 ft",
+     "4R HS 25-200": "rolls up to 1/4″ (6 mm) × 8.4 ft",
+     "4R HS 25-220": "rolls up to 1/4″ (6 mm) × 8.4 ft",
+     "4R HS 25-245": "rolls up to 5/16″ (8 mm) × 8.4 ft",
+     "4R HS 25-260": "rolls up to 3/8″ (10 mm) × 8.4 ft",
+     "4R HS 30-180": "rolls up to 11 ga (3 mm) × 10.2 ft",
+     "4R HS 30-200": "rolls up to 8 ga (4 mm) × 10.2 ft",
+     "4R HS 30-220": "rolls up to 1/4″ (6 mm) × 10.2 ft",
+     "4R HS 30-245": "rolls up to 1/4″ (6 mm) × 10.2 ft",
+     "4R HS 30-260": "rolls up to 5/16″ (8 mm) × 10.2 ft",
+     "4R HS 40-260": "rolls up to 8 ga (4 mm) × 13.5 ft"
+    },
+    "note": "Plate bending capacities are for mild steel with a yield strength of 37,700 psi (260 N/mm²), given at a minimum rolling diameter of 5× and of 1.5× the top roll diameter, without and with pre-bending. Capacities without pre-bending leave a flat end depending on diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 5.1 – 13.5 ft (1550 – 4100 mm) · rolls up to 1″ (25 mm)",
+   "group": "sahinler-4r"
+  },
+  "sahinler-4rh": {
+   "id": "sahinler-4rh",
+   "brand": "sahinler",
+   "name": "4RH NC cassette-type hydraulic 4-roll plate rolls",
+   "short": "4RH cassette 4-roll",
+   "models_label": "4RH 10-60 – 4RH 15-130 · 7 models · 3.4 to 5.1 ft",
+   "summary": "Compact NC-controlled 4-roll machines for light plate, aluminum and stainless steel from 22 ga to 3/16″: all rolls move with one hydraulic cylinder through a cassette-type frame, the top roll is driven by planetary gearbox and the bottom and side rolls by gear system. NC control panel, feeding table and hydraulic drop-end are standard. The cassette design is also built as special mass-production systems for the automotive sector — elliptical and cylindrical shapes such as exhaust mufflers.",
+   "features": [
+    "NC control panel standard; mobile control panel",
+    "Rolls move with one hydraulic cylinder through a cassette-type frame",
+    "Top roll driven by planetary gearbox; bottom and side rolls by gear system",
+    "Feeding table; hydraulic drop-end for easy removal of finished parts",
+    "Welded steel frames; overload protection; CE marked",
+    "Special cassette systems for mass production of mufflers and similar cylindrical / elliptical parts"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-4rh-10-90-nc",
+    "sh-4rh-10-130-nc",
+    "sh-4rh-10-90-detail",
+    "sh-4rh-10-90-side"
+   ],
+   "videos": [
+    {
+     "id": "LBJZvmwwyNM",
+     "title": "4RH four-roll plate roll",
+     "duration": "PT1M55S",
+     "thumb": "video-LBJZvmwwyNM"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4RH · cassette type",
+      "sub": "3.4 – 5.1 ft · 7 models",
+      "models": [
+       "4RH 10-60",
+       "4RH 10-75",
+       "4RH 10-90",
+       "4RH 10-130",
+       "4RH 13-115",
+       "4RH 15-90",
+       "4RH 15-130"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "4.4 ft · 53.1″ (1,350 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "22 ga / 20 ga (0.8 / 1 mm)",
+         "20 ga / 16 ga (1 / 1.5 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "14 ga / 11 ga (2 / 3 mm)",
+         "20 ga / 16 ga (1 / 1.5 mm)",
+         "14 ga / 11 ga (2 / 3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "20 ga / 16 ga (1 / 1.5 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "14 ga / 12 ga (2 / 2.5 mm)",
+         "8 ga / 3/16″ (4 / 5 mm)",
+         "11 ga / 8 ga (3 / 4 mm)",
+         "16 ga / 14 ga (1.5 / 2 mm)",
+         "11 ga / 8 ga (3 / 4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top & bottom roll Ø",
+        "sub": "",
+        "cells": [
+         "2.4″ / 3.1″ (60 / 80 mm)",
+         "3″ / 3.1″ (75 / 80 mm)",
+         "3.5″ / 3.9″ (90 / 100 mm)",
+         "5.1″ / 5.1″ (130 / 130 mm)",
+         "4.5″ / 4.5″ (115 / 115 mm)",
+         "3.5″ / 3.9″ (90 / 100 mm)",
+         "5.1″ / 5.1″ (130 / 130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side roll Ø",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.9″ (100 mm)",
+         "4.3″ (110 mm)",
+         "4.5″ (115 mm)",
+         "3.9″ (100 mm)",
+         "4.3″ (110 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.25 kW)",
+         "3 HP (2.25 kW)",
+         "3 HP (2.25 kW)",
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "3 HP (2.25 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "15 ft/min (4.5 m/min)",
+         "15 ft/min (4.5 m/min)",
+         "15 ft/min (4.5 m/min)",
+         "15 ft/min (4.5 m/min)",
+         "15 ft/min (4.5 m/min)",
+         "15 ft/min (4.5 m/min)",
+         "16 ft/min (5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "104 × 33 × 42″ (2,650 × 840 × 1,050 mm)",
+         "104 × 33 × 42″ (2,650 × 840 × 1,050 mm)",
+         "104 × 33 × 43″ (2,650 × 840 × 1,100 mm)",
+         "104 × 35 × 47″ (2,650 × 890 × 1,200 mm)",
+         "110 × 33 × 43″ (2,800 × 840 × 1,100 mm)",
+         "124 × 33 × 43″ (3,150 × 840 × 1,100 mm)",
+         "124 × 35 × 47″ (3,150 × 890 × 1,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,086 lb (1,400 kg)",
+         "3,153 lb (1,430 kg)",
+         "3,197 lb (1,450 kg)",
+         "3,638 lb (1,650 kg)",
+         "3,858 lb (1,750 kg)",
+         "4,123 lb (1,870 kg)",
+         "4,817 lb (2,180 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "4RH 10-60",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "22 ga / 20 ga (0.8 / 1 mm)",
+       "2.4″ / 3.1″ (60 / 80 mm)",
+       "3 HP (2.25 kW)",
+       "3,086 lb (1,400 kg)"
+      ]
+     },
+     {
+      "name": "4RH 10-75",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "20 ga / 16 ga (1 / 1.5 mm)",
+       "3″ / 3.1″ (75 / 80 mm)",
+       "3 HP (2.25 kW)",
+       "3,153 lb (1,430 kg)"
+      ]
+     },
+     {
+      "name": "4RH 10-90",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "16 ga / 14 ga (1.5 / 2 mm)",
+       "3.5″ / 3.9″ (90 / 100 mm)",
+       "3 HP (2.25 kW)",
+       "3,197 lb (1,450 kg)"
+      ]
+     },
+     {
+      "name": "4RH 10-130",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "11 ga / 8 ga (3 / 4 mm)",
+       "5.1″ / 5.1″ (130 / 130 mm)",
+       "4 HP (3 kW)",
+       "3,638 lb (1,650 kg)"
+      ]
+     },
+     {
+      "name": "4RH 13-115",
+      "glance": [
+       "4.4 ft · 53.1″ (1,350 mm)",
+       "14 ga / 11 ga (2 / 3 mm)",
+       "4.5″ / 4.5″ (115 / 115 mm)",
+       "4 HP (3 kW)",
+       "3,858 lb (1,750 kg)"
+      ]
+     },
+     {
+      "name": "4RH 15-90",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "20 ga / 16 ga (1 / 1.5 mm)",
+       "3.5″ / 3.9″ (90 / 100 mm)",
+       "3 HP (2.25 kW)",
+       "4,123 lb (1,870 kg)"
+      ]
+     },
+     {
+      "name": "4RH 15-130",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "14 ga / 11 ga (2 / 3 mm)",
+       "5.1″ / 5.1″ (130 / 130 mm)",
+       "4 HP (3 kW)",
+       "4,817 lb (2,180 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "4RH 10-60": "rolls up to 20 ga (1 mm) × 3.4 ft",
+     "4RH 10-75": "rolls up to 16 ga (1.5 mm) × 3.4 ft",
+     "4RH 10-90": "rolls up to 14 ga (2 mm) × 3.4 ft",
+     "4RH 10-130": "rolls up to 8 ga (4 mm) × 3.4 ft",
+     "4RH 13-115": "rolls up to 11 ga (3 mm) × 4.4 ft",
+     "4RH 15-90": "rolls up to 16 ga (1.5 mm) × 5.1 ft",
+     "4RH 15-130": "rolls up to 11 ga (3 mm) × 5.1 ft"
+    },
+    "note": "Plate bending capacities are for mild steel with a yield strength of 37,700 psi (260 N/mm²), given at a minimum rolling diameter of 5× and of 1.5× the top roll diameter, without and with pre-bending. Capacities without pre-bending leave a flat end depending on diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 3.4 – 5.1 ft (1050 – 1550 mm) · sheet up to 3/16″ (5 mm) · NC control standard",
+   "group": "sahinler-4r"
+  },
+  "sahinler-4r-hc": {
+   "id": "sahinler-4r-hc",
+   "brand": "sahinler",
+   "name": "4R HC hydraulic 4-roll conical plate rolls",
+   "short": "4R HC conical 4-roll",
+   "models_label": "4R HC 10-155 · 10-185 · 15-185",
+   "summary": "Purpose-built cone rolling machines: four polished, cone-machined rolls driven by a gear system from a single planetary gearbox and hydromotor, with the pinch and side rolls on hydraulic cylinders. Five digital readouts set the roll positions for repeat cones in light plate, aluminum and stainless steel up to 8 ga — hoppers, funnels, reducers and lamp posts — with a hydraulic drop-end to release the finished cone.",
+   "features": [
+    "Special polished, cone-machined rolls — made for rolling cones",
+    "Four rolls driven by a gear system from a single planetary gearbox and hydromotor",
+    "Pinch and side rolls move with hydraulic cylinders; 5 digital readouts for easy roll positioning",
+    "Hydraulic drop-end; mobile control panel; manual central lubrication",
+    "SAE 1050 (CK45-50) induction-hardened and polished rolls; welded steel frames; overload protection"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-4rhc-10-155"
+   ],
+   "videos": [
+    {
+     "id": "ZbCcqb2ES9Y",
+     "title": "4R HC 10-155 cone plate rolling machine",
+     "duration": "PT5M39S",
+     "thumb": "video-ZbCcqb2ES9Y"
+    },
+    {
+     "id": "zh12gSVvWt4",
+     "title": "4R HC conical plate roll bending machine",
+     "duration": "PT2M23S",
+     "thumb": "video-zh12gSVvWt4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4R HC · conical",
+      "sub": "3.4 – 5.1 ft · 3 models",
+      "models": [
+       "4R HC 10-155",
+       "4R HC 10-185",
+       "4R HC 15-185"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "3.4 ft · 41.3″ (1,050 mm)",
+         "5.1 ft · 61.0″ (1,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity",
+        "sub": "mild steel",
+        "cells": [
+         "11 ga (3 mm)",
+         "8 ga (4 mm)",
+         "11 ga (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Largest roll Ø (cone end)",
+        "sub": "",
+        "cells": [
+         "6.1″ (155 mm)",
+         "7.3″ (185 mm)",
+         "7.3″ (185 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Smallest roll Ø (cone end)",
+        "sub": "",
+        "cells": [
+         "1.6″ (40 mm)",
+         "2.8″ (70 mm)",
+         "2.8″ (70 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. rolling Ø",
+        "sub": "",
+        "cells": [
+         "2.5″ (65 mm)",
+         "4.1″ (105 mm)",
+         "4.1″ (105 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "138 × 43 × 46″ (3,500 × 1,100 × 1,150 mm)",
+         "138 × 43 × 47″ (3,500 × 1,100 × 1,200 mm)",
+         "157 × 43 × 47″ (4,000 × 1,100 × 1,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,828 lb (2,190 kg)",
+         "5,478 lb (2,480 kg)",
+         "6,272 lb (2,840 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "4R HC 10-155",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "11 ga (3 mm)",
+       "6.1″ (155 mm)",
+       "5.4 HP (4 kW)",
+       "4,828 lb (2,190 kg)"
+      ]
+     },
+     {
+      "name": "4R HC 10-185",
+      "glance": [
+       "3.4 ft · 41.3″ (1,050 mm)",
+       "8 ga (4 mm)",
+       "7.3″ (185 mm)",
+       "7.4 HP (5.5 kW)",
+       "5,478 lb (2,480 kg)"
+      ]
+     },
+     {
+      "name": "4R HC 15-185",
+      "glance": [
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "11 ga (3 mm)",
+       "7.3″ (185 mm)",
+       "7.4 HP (5.5 kW)",
+       "6,272 lb (2,840 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "4R HC 10-155": "rolls up to 11 ga (3 mm) × 3.4 ft",
+     "4R HC 10-185": "rolls up to 8 ga (4 mm) × 3.4 ft",
+     "4R HC 15-185": "rolls up to 11 ga (3 mm) × 5.1 ft"
+    },
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 3.4 – 5.1 ft (1050 – 1550 mm) · cones in sheet to 8 ga (4 mm)",
+   "group": "sahinler-4r"
+  },
+  "sahinler-3r-uhs": {
+   "id": "sahinler-3r-uhs",
+   "brand": "sahinler",
+   "name": "3R UHS 3-roll hydraulic translating heavy-duty plate rolls",
+   "short": "3R UHS heavy-duty 3-roll",
+   "models_label": "3R UHS 30-450 – 3R UHS 30-680 · 6 models · 10.2 ft",
+   "summary": "Three-roll plate rolls of the translating type: the two bottom rolls move horizontally, which gives a low working height, a smaller foundation pit (none on the smaller models), the best pre-bending on every diameter and more plate thickness than equivalent 3- or 4-roll machines — up to 3-1/2″ on the 3R UHS 30-680. Reducing the side-roll distance improves pre-bending on small diameters, heavy cones are rolled in several strokes and the solid frame also works as a press for re-rolling and calibrating tubes. Hydraulic drop-end, brake system, cone-bending device and electronic roll balancing are standard.",
+   "features": [
+    "Horizontally moving bottom rolls — lower working height, smaller or no foundation pit, reduced overall dimensions",
+    "Best pre-bending on every required diameter; large working stroke; no need to tilt the top roll to remove finished tubes",
+    "Bends thicker plate than equivalent 3- or 4-roll machines; heavy cones produced in several strokes",
+    "Solid construction lets the machine work as a press brake for re-rolling and calibrating tubes",
+    "Two-speed operation; cone-bending device; electronic roll balancing; standard brake system; hydraulic drop-end",
+    "SAE 1050 (CK45-50) forged or hot-rolled, induction-hardened and polished rolls"
+   ],
+   "optional": [
+    "NC control system",
+    "Overhead crane and hydraulic side supports for large diameters",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-3ruhs-30-550"
+   ],
+   "videos": [
+    {
+     "id": "mU3ZumBNZ0I",
+     "title": "3R heavy-duty 3-roll plate bending roll, Ø500 mm rolls",
+     "duration": "PT16M15S",
+     "thumb": "video-mU3ZumBNZ0I"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "3R UHS 30 · 10.2 ft",
+      "sub": "working length 122″ · 6 models",
+      "models": [
+       "3R UHS 30-450",
+       "3R UHS 30-500",
+       "3R UHS 30-550",
+       "3R UHS 30-580",
+       "3R UHS 30-620",
+       "3R UHS 30-680"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1-1/8″ / 1-5/8″ (30 / 40 mm)",
+         "1-3/8″ / 1-3/4″ (35 / 45 mm)",
+         "1-5/8″ / 2″ (40 / 50 mm)",
+         "1-3/4″ / 2-3/8″ (45 / 60 mm)",
+         "2-1/8″ / 2-1/2″ (55 / 65 mm)",
+         "2-1/2″ / 3″ (65 / 75 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1-5/8″ / 2-1/8″ (40 / 55 mm)",
+         "1-3/4″ / 2-3/8″ (45 / 60 mm)",
+         "2″ / 2-1/2″ (50 / 65 mm)",
+         "2-3/8″ / 2-3/4″ (60 / 70 mm)",
+         "2-1/2″ / 3-1/8″ (65 / 80 mm)",
+         "3″ / 3-1/2″ (75 / 90 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top roll Ø",
+        "sub": "",
+        "cells": [
+         "17.7″ (450 mm)",
+         "19.7″ (500 mm)",
+         "21.7″ (550 mm)",
+         "22.8″ (580 mm)",
+         "24.4″ (620 mm)",
+         "26.8″ (680 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom rolls Ø",
+        "sub": "",
+        "cells": [
+         "16.5″ (420 mm)",
+         "18.1″ (460 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "22″ (560 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "70 HP (52 kW)",
+         "99 HP (73 kW)",
+         "99 HP (73 kW)",
+         "99 HP (73 kW)",
+         "227 HP (170 kW)",
+         "241 HP (180 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 16 ft/min (1.5 – 5 m/min)",
+         "4.9 – 13 ft/min (1.5 – 4 m/min)",
+         "4.9 – 13 ft/min (1.5 – 4 m/min)",
+         "4.9 – 13 ft/min (1.5 – 4 m/min)",
+         "4.9 – 13 ft/min (1.5 – 4 m/min)",
+         "4.9 – 13 ft/min (1.5 – 4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "262 × 110 × 87″ (6,650 × 2,800 × 2,200 mm)",
+         "293 × 122 × 104″ (7,450 × 3,100 × 2,650 mm)",
+         "299 × 132 × 106″ (7,600 × 3,350 × 2,700 mm)",
+         "315 × 150 × 112″ (8,000 × 3,800 × 2,850 mm)",
+         "354 × 173 × 118″ (9,000 × 4,400 × 3,000 mm)",
+         "362 × 177 × 118″ (9,200 × 4,500 × 3,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "55,116 lb (25,000 kg)",
+         "72,753 lb (33,000 kg)",
+         "99,208 lb (45,000 kg)",
+         "110,231 lb (50,000 kg)",
+         "143,300 lb (65,000 kg)",
+         "160,937 lb (73,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "3R UHS 30-450",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1-1/8″ / 1-5/8″ (30 / 40 mm)",
+       "17.7″ (450 mm)",
+       "70 HP (52 kW)",
+       "55,116 lb (25,000 kg)"
+      ]
+     },
+     {
+      "name": "3R UHS 30-500",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1-3/8″ / 1-3/4″ (35 / 45 mm)",
+       "19.7″ (500 mm)",
+       "99 HP (73 kW)",
+       "72,753 lb (33,000 kg)"
+      ]
+     },
+     {
+      "name": "3R UHS 30-550",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1-5/8″ / 2″ (40 / 50 mm)",
+       "21.7″ (550 mm)",
+       "99 HP (73 kW)",
+       "99,208 lb (45,000 kg)"
+      ]
+     },
+     {
+      "name": "3R UHS 30-580",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1-3/4″ / 2-3/8″ (45 / 60 mm)",
+       "22.8″ (580 mm)",
+       "99 HP (73 kW)",
+       "110,231 lb (50,000 kg)"
+      ]
+     },
+     {
+      "name": "3R UHS 30-620",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "2-1/8″ / 2-1/2″ (55 / 65 mm)",
+       "24.4″ (620 mm)",
+       "227 HP (170 kW)",
+       "143,300 lb (65,000 kg)"
+      ]
+     },
+     {
+      "name": "3R UHS 30-680",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "2-1/2″ / 3″ (65 / 75 mm)",
+       "26.8″ (680 mm)",
+       "241 HP (180 kW)",
+       "160,937 lb (73,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "3R UHS 30-450": "rolls up to 1-5/8″ (40 mm) × 10.2 ft",
+     "3R UHS 30-500": "rolls up to 1-3/4″ (45 mm) × 10.2 ft",
+     "3R UHS 30-550": "rolls up to 2″ (50 mm) × 10.2 ft",
+     "3R UHS 30-580": "rolls up to 2-3/8″ (60 mm) × 10.2 ft",
+     "3R UHS 30-620": "rolls up to 2-1/2″ (65 mm) × 10.2 ft",
+     "3R UHS 30-680": "rolls up to 3″ (75 mm) × 10.2 ft"
+    },
+    "note": "Plate bending capacities are for mild steel with a yield strength of 37,700 psi (260 N/mm²), given at a minimum rolling diameter of 5× and of 1.5× the top roll diameter, without and with pre-bending. Capacities without pre-bending leave a flat end depending on diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working length 10.2 ft (3100 mm) · rolls up to 3-1/2″ (90 mm) plate",
+   "group": "sahinler-3r"
+  },
+  "sahinler-3r-hs": {
+   "id": "sahinler-3r-hs",
+   "brand": "sahinler",
+   "name": "3R HS 3-roll hydraulic plate rolls",
+   "short": "3R HS hydraulic 3-roll",
+   "models_label": "3R HS 20-210 – 3R HS 30-280 · 12 models · 6.7 to 10.2 ft",
+   "summary": "Double-pinch 3-roll plate bending machines for light and medium plate, aluminum and stainless steel: the side rolls move on an orbital path with hydraulic cylinders, all three rolls are driven by a single planetary gearbox and gear system and hydraulic balancing keeps them parallel. Cone-bending device with ball bearing, hydraulic drop-end and extended roll shafts for profile and pipe bending rolls are standard — one machine rolls cylinders, cones and, with the optional roll set, angle and pipe.",
+   "features": [
+    "Side rolls move on an orbital path with hydraulic cylinders; hydraulic balancing for parallel roll movement",
+    "All 3 rolls driven by a single planetary gearbox and gear system",
+    "Cone-bending device with ball bearing; hydraulic drop-end",
+    "Extended shafts for profile and pipe bending rolls",
+    "Mobile control panel; overload protection",
+    "SAE 1050 (CK45-50) forged or hot-rolled, induction-hardened and polished rolls; welded steel frames; CE marked"
+   ],
+   "optional": [
+    "Profile bending roll set on the extended shafts",
+    "Overhead crane and hydraulic side supports for large diameters",
+    "Ground rolls; infinitely variable speed; electronic roll balancing",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-3rhs-20-210",
+    "sh-3rhs-detail",
+    "sh-3rhs-drop-end"
+   ],
+   "videos": [
+    {
+     "id": "mLIkH1npMO0",
+     "title": "3R HS 20-300 three-roll hydraulic plate bender",
+     "duration": "PT3M14S",
+     "thumb": "video-mLIkH1npMO0"
+    },
+    {
+     "id": "JjSbK3gadgk",
+     "title": "3R HS 25-300 three-roll plate roll — cylindrical and conical bending",
+     "duration": "PT5M5S",
+     "thumb": "video-JjSbK3gadgk"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "3R HS 20 · 6.7 ft",
+      "sub": "working length 80.7″ · 4 models",
+      "models": [
+       "3R HS 20-210",
+       "3R HS 20-240",
+       "3R HS 20-280",
+       "3R HS 20-300"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)",
+         "5/8″ / 13/16″ (16 / 20 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 9/16″ (12 / 15 mm)",
+         "5/8″ / 11/16″ (16 / 18 mm)",
+         "13/16″ / 7/8″ (20 / 22 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top roll Ø",
+        "sub": "",
+        "cells": [
+         "8.3″ (210 mm)",
+         "9.4″ (240 mm)",
+         "11″ (280 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom rolls Ø",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "8.7″ (220 mm)",
+         "10.2″ (260 mm)",
+         "11″ (280 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 16",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "134 × 47 × 51″ (3,400 × 1,200 × 1,300 mm)",
+         "134 × 51 × 57″ (3,400 × 1,300 × 1,450 mm)",
+         "161 × 55 × 61″ (4,100 × 1,400 × 1,550 mm)",
+         "161 × 59 × 61″ (4,100 × 1,500 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "9,039 lb (4,100 kg)",
+         "11,078 lb (5,020 kg)",
+         "15,102 lb (6,850 kg)",
+         "16,314 lb (7,400 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "3R HS 25 · 8.4 ft",
+      "sub": "working length 100.4″ · 4 models",
+      "models": [
+       "3R HS 25-210",
+       "3R HS 25-240",
+       "3R HS 25-280",
+       "3R HS 25-300"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 5/8″ (12 / 16 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 9/16″ (12 / 15 mm)",
+         "5/8″ / 11/16″ (16 / 18 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top roll Ø",
+        "sub": "",
+        "cells": [
+         "8.3″ (210 mm)",
+         "9.4″ (240 mm)",
+         "11″ (280 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom rolls Ø",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "8.7″ (220 mm)",
+         "10.2″ (260 mm)",
+         "11″ (280 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 16",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "154 × 47 × 51″ (3,900 × 1,200 × 1,300 mm)",
+         "154 × 51 × 57″ (3,900 × 1,300 × 1,450 mm)",
+         "181 × 55 × 61″ (4,600 × 1,400 × 1,550 mm)",
+         "181 × 59 × 61″ (4,600 × 1,500 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "10,075 lb (4,570 kg)",
+         "12,346 lb (5,600 kg)",
+         "17,020 lb (7,720 kg)",
+         "18,519 lb (8,400 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "3R HS 30 · 10.2 ft",
+      "sub": "working length 122″ · 4 models",
+      "models": [
+       "3R HS 30-210",
+       "3R HS 30-240",
+       "3R HS 30-280",
+       "3R HS 30-300"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)",
+         "10.2 ft · 122.0″ (3,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, with pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "8 ga / 1/4″ (4 / 6 mm)",
+         "1/4″ / 5/16″ (6 / 8 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling capacity, no pre-bend",
+        "sub": "at min. rolling Ø ≥ 1.5× / 5× top roll Ø",
+        "cells": [
+         "1/4″ / 1/4″ (6 / 6 mm)",
+         "5/16″ / 3/8″ (8 / 10 mm)",
+         "3/8″ / 1/2″ (10 / 12 mm)",
+         "1/2″ / 9/16″ (12 / 15 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top roll Ø",
+        "sub": "",
+        "cells": [
+         "8.3″ (210 mm)",
+         "9.4″ (240 mm)",
+         "11″ (280 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom rolls Ø",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "8.7″ (220 mm)",
+         "10.2″ (260 mm)",
+         "11″ (280 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "t/min 16",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)",
+         "16 ft/min (5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "175 × 47 × 51″ (4,450 × 1,200 × 1,300 mm)",
+         "175 × 51 × 57″ (4,450 × 1,300 × 1,450 mm)",
+         "203 × 55 × 61″ (5,150 × 1,400 × 1,550 mm)",
+         "203 × 59 × 61″ (5,150 × 1,500 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "11,475 lb (5,200 kg)",
+         "14,551 lb (6,600 kg)",
+         "18,453 lb (8,370 kg)",
+         "19,952 lb (9,050 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "3R HS 20-210",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "8.3″ (210 mm)",
+       "10 HP (7.5 kW)",
+       "9,039 lb (4,100 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 20-240",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "9.4″ (240 mm)",
+       "10 HP (7.5 kW)",
+       "11,078 lb (5,020 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 20-280",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "1/2″ / 5/8″ (12 / 16 mm)",
+       "11″ (280 mm)",
+       "10 HP (7.5 kW)",
+       "15,102 lb (6,850 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 20-300",
+      "glance": [
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "5/8″ / 13/16″ (16 / 20 mm)",
+       "11.8″ (300 mm)",
+       "15 HP (11 kW)",
+       "16,314 lb (7,400 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 25-210",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "8.3″ (210 mm)",
+       "10 HP (7.5 kW)",
+       "10,075 lb (4,570 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 25-240",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "9.4″ (240 mm)",
+       "10 HP (7.5 kW)",
+       "12,346 lb (5,600 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 25-280",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "11″ (280 mm)",
+       "10 HP (7.5 kW)",
+       "17,020 lb (7,720 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 25-300",
+      "glance": [
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "1/2″ / 5/8″ (12 / 16 mm)",
+       "11.8″ (300 mm)",
+       "15 HP (11 kW)",
+       "18,519 lb (8,400 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 30-210",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "8 ga / 1/4″ (4 / 6 mm)",
+       "8.3″ (210 mm)",
+       "10 HP (7.5 kW)",
+       "11,475 lb (5,200 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 30-240",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "1/4″ / 5/16″ (6 / 8 mm)",
+       "9.4″ (240 mm)",
+       "10 HP (7.5 kW)",
+       "14,551 lb (6,600 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 30-280",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "5/16″ / 3/8″ (8 / 10 mm)",
+       "11″ (280 mm)",
+       "10 HP (7.5 kW)",
+       "18,453 lb (8,370 kg)"
+      ]
+     },
+     {
+      "name": "3R HS 30-300",
+      "glance": [
+       "10.2 ft · 122.0″ (3,100 mm)",
+       "3/8″ / 1/2″ (10 / 12 mm)",
+       "11.8″ (300 mm)",
+       "15 HP (11 kW)",
+       "19,952 lb (9,050 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "rolling_capacity",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "3R HS 20-210": "rolls up to 3/8″ (10 mm) × 6.7 ft",
+     "3R HS 20-240": "rolls up to 1/2″ (12 mm) × 6.7 ft",
+     "3R HS 20-280": "rolls up to 5/8″ (16 mm) × 6.7 ft",
+     "3R HS 20-300": "rolls up to 13/16″ (20 mm) × 6.7 ft",
+     "3R HS 25-210": "rolls up to 5/16″ (8 mm) × 8.4 ft",
+     "3R HS 25-240": "rolls up to 3/8″ (10 mm) × 8.4 ft",
+     "3R HS 25-280": "rolls up to 1/2″ (12 mm) × 8.4 ft",
+     "3R HS 25-300": "rolls up to 5/8″ (16 mm) × 8.4 ft",
+     "3R HS 30-210": "rolls up to 1/4″ (6 mm) × 10.2 ft",
+     "3R HS 30-240": "rolls up to 5/16″ (8 mm) × 10.2 ft",
+     "3R HS 30-280": "rolls up to 3/8″ (10 mm) × 10.2 ft",
+     "3R HS 30-300": "rolls up to 1/2″ (12 mm) × 10.2 ft"
+    },
+    "note": "Plate bending capacities are for mild steel with a yield strength of 37,700 psi (260 N/mm²), given at a minimum rolling diameter of 5× and of 1.5× the top roll diameter, without and with pre-bending. Capacities without pre-bending leave a flat end depending on diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Working lengths 6.7 – 10.2 ft (2050 – 3100 mm) · rolls up to 1-1/8″ (30 mm)",
+   "group": "sahinler-3r"
   }
  }
 }

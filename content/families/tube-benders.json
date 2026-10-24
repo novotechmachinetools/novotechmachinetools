@@ -6,7 +6,8 @@
   "isitan-sfb-nc",
   "isitan-sfb-32",
   "isitan-sfb-38-nc-a",
-  "isitan-bk"
+  "isitan-bk",
+  "sahinler-spb"
  ],
  "families": {
   "isitan-sfb-cnc-a5": {
@@ -1546,6 +1547,194 @@
    "headline": "1/8″ to 2-1/2″ NPS pipe · Ø3″ × 11 ga steel tube · touchscreen NC or one-touch control",
    "group": "bk",
    "brand": "isitan"
+  },
+  "sahinler-spb": {
+   "id": "sahinler-spb",
+   "brand": "sahinler",
+   "name": "SPB 60 · SPB 76 NC pipe draw benders",
+   "short": "SPB 60 · SPB 76",
+   "models_label": "SPB 60 (Ø2-3/8″) · SPB 76 (Ø3″)",
+   "summary": "Rotary draw benders with an NC control screen and 500-program memory for handrail, furniture, fitness equipment and exhaust work. The SPB 60 bends pipe up to Ø2-3/8″ × 8 ga, the SPB 76 up to Ø3″ × 11 ga, at a minimum radius of 3× the tube diameter; a holder attachment supports the tube while it is clamped, free holes take special tooling and one set of pipe-bending tooling is included. Infinitely variable speed, thermal overload protection and emergency stop.",
+   "features": [
+    "NC control screen with 500-program internal memory",
+    "SPB 60: pipe to Ø2-3/8″ × 8 ga; SPB 76: pipe to Ø3″ × 11 ga; minimum bending radius 3 × tube Ø",
+    "Holder attachment supports the tube while clamped; free holes for mounting special tools",
+    "1 set of pipe bending tooling included; infinitely variable speed",
+    "Welded steel construction frame; thermal overload / power reset; emergency stop"
+   ],
+   "optional": [
+    "Pipe, tube, section or bar tooling sets to required size",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-spb76",
+    "sh-spb60",
+    "sh-spb-handrail"
+   ],
+   "videos": [
+    {
+     "id": "bNLJxsDqr4U",
+     "title": "SPB 76 pipe bender with NC controller",
+     "duration": "PT0M37S",
+     "thumb": "video-bNLJxsDqr4U"
+    },
+    {
+     "id": "Jbw-7lCxxqE",
+     "title": "SPB 76 pipe draw bender",
+     "duration": "PT0M27S",
+     "thumb": "video-Jbw-7lCxxqE"
+    },
+    {
+     "id": "GBahTNVoke4",
+     "title": "SPB 60 pipe draw bender",
+     "duration": "PT1M29S",
+     "thumb": "video-GBahTNVoke4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SPB 60 · SPB 76",
+      "sub": "NC pipe draw benders",
+      "models": [
+       "SPB 60",
+       "SPB 76"
+      ],
+      "rows": [
+       {
+        "label": "Mild steel tube",
+        "sub": "max. capacity",
+        "cells": [
+         "Ø2-3/8″ × 11 ga (60 × 3 mm)",
+         "Ø3″ × 10 ga (76 × 3.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Boiler tube",
+        "sub": "",
+        "cells": [
+         "Ø2-3/8″ × 12 ga (60 × 2.5 mm)",
+         "Ø3″ × 11 ga (76 × 3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Aluminum tube",
+        "sub": "",
+        "cells": [
+         "Ø2-3/8″ × 8 ga (60 × 4 mm)",
+         "Ø3″ × 1/4″ (76 × 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar, mild steel",
+        "sub": "",
+        "cells": [
+         "Ø1-5/8″ (40 mm)",
+         "Ø1-3/4″ (45 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube, mild steel",
+        "sub": "",
+        "cells": [
+         "□1-5/8″ × 8 ga (40 × 4 mm)",
+         "□1-5/8″ × 3/16″ (40 × 5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. bending radius",
+        "sub": "",
+        "cells": [
+         "R2.4″ (Ø5/8″ × 8 ga)",
+         "R3″ (Ø5/8″ × 11 ga)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending radius",
+        "sub": "",
+        "cells": [
+         "R5.9″ (Ø2-3/8″ × 10 ga)",
+         "R8.7″ (Ø3″ × 10 ga)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working speed",
+        "sub": "",
+        "cells": [
+         "0 – 4.5 rpm",
+         "0 – 4 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.25 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "33 × 30 × 47″ (840 × 760 × 1,200 mm)",
+         "37 × 33 × 49″ (940 × 840 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "728 lb (330 kg)",
+         "1,102 lb (500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SPB 60",
+      "glance": [
+       "Ø2-3/8″ × 11 ga (60 × 3 mm)",
+       "R2.4″ (Ø5/8″ × 8 ga)",
+       "3 HP (2.25 kW)",
+       "728 lb (330 kg)"
+      ]
+     },
+     {
+      "name": "SPB 76",
+      "glance": [
+       "Ø3″ × 10 ga (76 × 3.5 mm)",
+       "R3″ (Ø5/8″ × 11 ga)",
+       "4 HP (3 kW)",
+       "1,102 lb (500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "radius",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Pipe to Ø3″ × 10 ga (76 × 3.5 mm) · NC control with 500 programs · 1 tooling set included",
+   "group": "sahinler-draw"
   }
  }
 }

@@ -1,0 +1,102 @@
+{
+ "slug": "ironworker-machines",
+ "template": "category.html",
+ "family_set": "sahinler",
+ "title": "Hydraulic Ironworker Machines 44–193 Ton | NovoTech",
+ "artifact_title": "Hydraulic ironworker machines",
+ "meta_description": "Hydraulic ironworkers from 44 to 193 US tons that punch, shear bar, angle and flat and notch: single-piston HKM 40–65, double-piston HKM 55–175 for 2 operators.",
+ "h1": "Hydraulic ironworker machines",
+ "intro": "A hydraulic ironworker (also sold as a steelworker or universal punch and shear) puts the five jobs of the structural shop on one machine: punching, round and square bar shear, angle shear at 90° and 45°, flat-bar and sheet shear and rectangular notching, each with its own station and LED light. Şahinler's HKM range runs from the 44 US ton HKM 40 to the 193 US ton HKM 175 in two designs: single-piston machines in which one cylinder serves every station — compact and economical — and double-piston machines with two cylinders and two foot pedals so two operators punch and shear at the same time. Punches to Ø1-1/2″ are standard on every model; large-hole, section punching, beam and tee blades, V-notching, press-brake and keyway tools are optional. Sold with a CSA-approved panel and installed, tooled and supported from Mississauga, ON.",
+ "hero_points": [
+  "Single-piston HKM 40 · 45 · 60 · 65 V — 44 to 72 US tons, 4 – 5 work stations",
+  "Double-piston HKM 55 · 65 · 85 · 115 · 175 — 61 to 193 US tons, two operators at once",
+  "Angle to L 7-7/8 × 7-7/8 × 13/16″, flat bar to 15 × 1-1/8″, holes to Ø2-1/4″ in 7/8″ plate"
+ ],
+ "hero_image": "sh-hkm115",
+ "hero_image_secondary": [
+  "sh-hkm60",
+  "sh-hkm175"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Hydraulic ironworker machines"
+  }
+ ],
+ "hero_brand_line": "Şahinler machines are made in Turkey by Şahinler Metal — metal-forming machinery since 1976, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "sahinler-iron-group",
+   "title": "HKM hydraulic ironworkers",
+   "lead": "Single-piston and double-piston steelworkers from 44 to 193 US tons, with the punching, shearing and notching capacities of every model.",
+   "brand": "sahinler",
+   "families": [
+    "sahinler-hkm-single",
+    "sahinler-hkm-double"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Single-piston or double-piston ironworker?",
+   "a": "A single-piston machine (HKM 40 – 65 V) uses one hydraulic cylinder for all stations, so one operator works one station at a time — the right choice for a fabrication shop that punches a few holes and cuts a few angles per job. A double-piston machine (HKM 55 – 175) has two cylinders and two foot pedals, so one operator can punch while another shears or notches: twice the output from one machine, plus an electrical back gauge as standard."
+  },
+  {
+   "q": "What size ironworker do I need?",
+   "a": "Size it by the thickest material you punch and the largest angle you shear. The punching capacity is quoted as a hole diameter × thickness at the machine's tonnage — a 66 US ton HKM 60 punches Ø1-1/8″ through 9/16″ plate and shears L 4-3/4 × 4-3/4 × 1/2″ angle; the HKM 115 punches Ø1-3/8″ × 1″ and shears L 5-7/8 × 5-7/8 × 5/8″. Tell us your plate thickness, largest angle and flat bar and we will point to the model on the capacity table."
+  },
+  {
+   "q": "What tooling comes with the machine?",
+   "a": "A Ø7/8″ punch and die (Ø1″ on the HKM 115), the round and square bar blade set, the angle blade set, the flat-bar shear blades and — except on the HKM 40 — the rectangular notching blade set. Punches and dies to Ø1-1/2″ in any diameter, oblong or square are stocked in Mississauga; large-hole punching sets go to Ø4-7/8″ with the optional tool."
+  },
+  {
+   "q": "Can an ironworker cut channel, I-beam and tee?",
+   "a": "Yes, with the optional section blades on the shear station — UPN and IPN sections up to 11-3/4 × 4-7/8″ and tee to 5-7/8 × 9/16″ on the HKM 175 — and the section punching tools punch the flanges and webs of IPN, UPN, flat bar and angle."
+  },
+  {
+   "q": "Ironworker or band saw for cutting angle?",
+   "a": "An ironworker shears a 4″ angle in one stroke and a few seconds, with no blade to wear and no chips; the cut is square with a slight deformation at the edge. A band saw takes a minute per cut but leaves a clean, mitre-capable cut on any section. Shops that cut hundreds of angles and flats a day keep both: the ironworker for brackets, clips and base plates, the saw for mitres and beams."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about ironworkers",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Sahinler-Catalogue-2027.pdf",
+  "label": "Download the Şahinler machinery catalogue",
+  "size": "PDF · 28 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in Turkey by Şahinler",
+  "text": "Şahinler Metal has built metal-forming machinery in Bursa since 1976 — CE-certified machines with European hydraulic and electrical components, exported to more than 60 countries."
+ },
+ "section_label": "Ironworkers & punching",
+ "related_pages": [
+  {
+   "href": "hydraulic-punching-machines.html",
+   "label": "Hydraulic punching machines"
+  },
+  {
+   "href": "angle-rolls.html",
+   "label": "Angle rolls & section benders"
+  },
+  {
+   "href": "corner-notcher.html",
+   "label": "Corner notchers"
+  },
+  {
+   "href": "band-saw.html",
+   "label": "Band saws"
+  }
+ ],
+ "related_title": "More cutting and punching machinery from NovoTech"
+}

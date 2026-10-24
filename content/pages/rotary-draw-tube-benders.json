@@ -4,18 +4,18 @@
  "family_set": "tube-benders",
  "title": "Rotary Draw Tube Benders — Compact Pipe Benders | NovoTech",
  "artifact_title": "Rotary draw tube benders",
- "meta_description": "Compact non-mandrel benders for 1/8″ to 2-1/2″ pipe, Ø3″ steel tube, solid bar, flat bar and box section. Touchscreen NC or one-touch control, tooling included.",
+ "meta_description": "Compact non-mandrel benders for 1/8″ to 2-1/2″ pipe, Ø3″ steel tube, solid bar, flat bar and box section: İşitan BK with touchscreen NC and Şahinler SPB with 500-program NC.",
  "h1": "Rotary draw tube benders",
- "intro": "A rotary draw bender clamps the tube to a rotating bend die and draws it around the die radius without an internal mandrel — the simplest machine for handrail, gate and furniture bends in tube, pipe and bar. İşitan's BK series is that bender for handrail, gate, fence, furniture and repair shops: four models from the 1 HP BK-42 for 1-1/4″ pipe to the BK 030 (76) for Ø3″ × 11 ga steel tube, bending gas pipe, steel and stainless tube, copper, solid round and square bar, flat bar both ways and box section with one included tooling set. Touchscreen NC (PLC) programming on the BK-42 and BK 030, one-touch control with two speeds on the BK-050 and the hydraulic BK-H 060 — all on rollers with a foot pedal and a CSA-approved panel.",
+ "intro": "A rotary draw bender clamps the tube to a rotating bend die and draws it around the die radius without an internal mandrel — the simplest machine for handrail, gate and furniture bends in tube, pipe and bar. İşitan's BK series is that bender for handrail, gate, fence, furniture and repair shops: four models from the 1 HP BK-42 for 1-1/4″ pipe to the BK 030 (76) for Ø3″ × 11 ga steel tube, bending gas pipe, steel and stainless tube, copper, solid round and square bar, flat bar both ways and box section with one included tooling set. Touchscreen NC (PLC) programming on the BK-42 and BK 030, one-touch control with two speeds on the BK-050 and the hydraulic BK-H 060. Şahinler's SPB 60 and SPB 76 add NC draw benders with a 500-program memory for Ø2-3/8″ and Ø3″ pipe. All on rollers with a foot pedal and a CSA-approved panel.",
  "hero_points": [
   "1/8″ to 2-1/2″ NPS pipe · Ø3″ × 11 ga steel tube · CLR to 7.9″",
   "Tube, pipe, solid bar, flat bar and box section — one tooling set included",
-  "Touchscreen NC (PLC) or one-touch control · foot pedal · on rollers"
+  "Touchscreen NC (PLC), one-touch control or 500-program NC (SPB) · foot pedal · on rollers"
  ],
  "hero_image": "is-bk-050",
  "hero_image_secondary": [
   "is-bk-42",
-  "is-bk-030"
+  "sh-spb76"
  ],
  "breadcrumb": [
   {
@@ -34,14 +34,24 @@
    "label": "Rotary draw tube benders"
   }
  ],
- "hero_brand_line": "İşitan machines are made in Turkey by İşitan Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "İşitan BK and Şahinler SPB benders are made in Turkey — İşitan Makine since 1959, Şahinler Metal since 1976 — with European components. Sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "bk-group",
-   "title": "BK rotary draw benders",
+   "title": "İşitan BK rotary draw benders",
    "lead": "Four compact non-mandrel benders from 1 to 3 HP.",
+   "brand": "isitan",
    "families": [
     "isitan-bk"
+   ]
+  },
+  {
+   "id": "sahinler-draw-group",
+   "title": "Şahinler SPB pipe draw benders",
+   "lead": "NC-controlled rotary draw benders for pipe to Ø3″ with a 500-program memory.",
+   "brand": "sahinler",
+   "families": [
+    "sahinler-spb"
    ]
   }
  ],
@@ -64,14 +74,10 @@
   }
  ],
  "faq_title": "Questions we get asked about rotary draw tube benders",
- "catalogue_pdf": {
-  "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
-  "label": "Download the İşitan machinery catalogue",
-  "size": "PDF · 29 MB · imperial units"
- },
+ "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey by İşitan",
-  "text": "İşitan has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."
+  "title": "Made in Turkey by İşitan and Şahinler",
+  "text": "İşitan has built sheet-metal machinery in Bursa since 1959 and Şahinler Metal bending machinery since 1976 — CE-certified machines with European components."
  },
  "section_label": "Pipe & tube benders",
  "related_pages": [
@@ -126,5 +132,17 @@
     "current": true
    }
   ]
- }
+ },
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+   "label": "Download the İşitan machinery catalogue",
+   "size": "PDF · 29 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Sahinler-Catalogue-2027.pdf",
+   "label": "Download the Şahinler machinery catalogue",
+   "size": "PDF · 28 MB · imperial units"
+  }
+ ]
 }

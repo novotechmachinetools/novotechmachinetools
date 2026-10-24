@@ -1,5 +1,7 @@
 """İşitan section: circle cutting machines and lock seamer (catalogue pages 32–34) — one category page."""
 from isitan_lib import *  # noqa: F401,F403
+from sahinler_families import CIRCLE_FAMILIES  # Şahinler SDK / EFM tank-head machines below the İşitan group
+from sahinler_lib import PDF as PDF_SH
 
 SET = "circle-cutting"
 SECTION = "Circle cutters & seamers"
@@ -99,23 +101,31 @@ FAMILIES = [
 ]
 
 PAGE = dict(
-    title="Circle Shears, Circle Cutters & Lock Seamers | NovoTech",
-    meta="Circle shear machines cutting discs and rings to Ø78.7″ in 3/16″ plate, inside-diameter cutting and flanging, plus a pneumatic lock seamer. Parts in Canada.",
-    h1="Circle cutting machines and lock seamers",
-    intro="Circle cutting machines (circle shears, circle cutters) cut round blanks and rings from sheet for tank heads, fan housings, flanges, lids and gaskets, and with the flanging attachment turn the edge of the disc for dished heads. İşitan's IDK series runs from the hand-operated IDK-1 to the hydraulic IDK-5 cutting 78.7″ discs in 3/16″ steel; the LS-13P lock seaming machine closes the longitudinal seam of round ducts. Sold with CSA-approved panels and supported from Mississauga, ON.",
-    points=["IDK-5: discs to Ø78.7″ (2000 mm) in 3/16″ steel, hydraulic clamp, flanging option", "Motorized IDK-3.5 / 2 / 1.8 and manual IDK-1 for 10–20 ga", "LS-13P pneumatic lock seamer — 51″ seams in 18 ga"],
-    hero="is-idk-5", minis=["is-idk-2", "is-ls-13p"],
-    groups=[("circle", "Circle cutters and lock seamer line-up", "Five circle cutting shears from manual to hydraulic, and the pneumatic lock seaming machine.")],
+    title="Circle Shears, Flanging Machines & Lock Seamers | NovoTech",
+    meta="Circle shears cutting discs and rings to Ø78.7″ in 3/16″ plate, tank-head cutting and flanging machines for dished and elliptical heads to Ø15 ft, and a pneumatic lock seamer.",
+    h1="Circle cutting machines, flanging machines and lock seamers",
+    intro="Circle cutting machines (circle shears, circle cutters) cut round blanks and rings from sheet for tank heads, fan housings, flanges, lids and gaskets; a flanging machine then turns the edge of the disc up for a dished or flat tank head. İşitan's IDK series runs from the hand-operated IDK-1 to the hydraulic IDK-5 cutting 78.7″ discs in 3/16″ steel, and the LS-13P lock seaming machine closes the longitudinal seam of round ducts. Şahinler's SDK 6 and SDK 8 cut and flange dished heads up to Ø15 ft in 5/16″ plate on the same head, and the EFM 6 does the same for elliptical heads. Sold with CSA-approved panels and supported from Mississauga, ON.",
+    points=["IDK-5: discs to Ø78.7″ (2000 mm) in 3/16″ steel, hydraulic clamp, flanging option", "SDK 6 / SDK 8: cut and flange tank heads Ø21.7″ to Ø15 ft in 5/16″ plate; EFM 6 for elliptical heads", "LS-13P pneumatic lock seamer — 51″ seams in 18 ga"],
+    hero="is-idk-5", minis=["sh-sdk8", "is-ls-13p"],
+    groups=[("circle", "İşitan circle cutters and lock seamer", "Five circle cutting shears from manual to hydraulic, and the pneumatic lock seaming machine.", "isitan"),
+            ("sahinler-circle", "Şahinler tank-head cutting and flanging machines", "SDK 6 and SDK 8 circular cutting and flanging machines to Ø15 ft, and the EFM 6 elliptical machine.", "sahinler")],
     faq=[{"q": "How does a circle cutting machine work?", "a": "The sheet is clamped at its centre on a spindle and turned by hand or motor while two rotary blades shear a circle at the radius set on the arm. On the IDK-5, 3.5 and 2 a second pass at a smaller radius cuts the inside diameter, leaving a ring; the blank can then be flanged on the IDK-5's optional attachment."},
          {"q": "What size and thickness can be cut?", "a": "From Ø4.3″ up to Ø78.7″ (2 m) depending on the model, in mild steel from 20 ga on the manual IDK-1 to 3/16″ on the hydraulic IDK-5. Stainless steel reduces the capacity by roughly one gauge; ask us for the model that suits your material."},
          {"q": "Hydraulic, pneumatic or manual clamp?", "a": "The centre clamp holds the sheet on the spindle while it rotates. The IDK-5 clamps hydraulically and the IDK-3.5 pneumatically (116 psi shop air) — fast and consistent for production; the IDK-2, 1.8 and 1 clamp by hand screw, which is fine for a few parts at a time."},
+         {"q": "How does a tank-head flanging machine work?", "a": "The plate disc is clamped on the part carrier and rotated while a top and bottom flanging roll, driven through planetary gearboxes, turn its edge up to the radius of the roll set — R1″ as supplied, other radii optional. On the SDK 6 and SDK 8 the same head first cuts the disc from the square plate with rotary blades, so a dished or flat head is cut and flanged without moving it; hydraulic lateral supports hold large heads and the LCD touchscreen runs the cycle."},
          {"q": "What does the LS-13P lock seamer do?", "a": "After a sheet is rolled into a pipe on a slip roll with a Pittsburgh or snap lock profile, the LS-13P closes the longitudinal seam: the pneumatic rolls pinch the lock over the full 51″ length while the pipe is rotated with the foot pedal, giving a tight, straight seam on 3.9–5.1″ ducts in 18 ga."},
          VOLT_FAQ_GENERIC],
 )
 
 
+ALL_FAMILIES = FAMILIES + CIRCLE_FAMILIES
+
+
 def build():
-    write_families(SET, FAMILIES)
-    write_category(SLUG, PAGE, FAMILIES, SET, SECTION,
-                   extra={"nav_label": "Circle cutters & seamers", "related_pages": [{"href": "bead-rollers.html", "label": "Bead rollers"}, {"href": "slip-rolls.html", "label": "Slip rolls"}, {"href": "plate-rollers.html", "label": "Plate rollers & slip rolls"}]})
+    write_families(SET, ALL_FAMILIES)
+    write_category(SLUG, PAGE, ALL_FAMILIES, SET, SECTION,
+                   extra={"nav_label": "Circle cutters & flangers", "catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_SH],
+                          "hero_brand_line": "İşitan circle cutters and Şahinler flanging machines are made in Turkey — İşitan Makine since 1959, Şahinler Metal since 1976 — with European components. Sold, installed and supported in Canada by NovoTech.",
+                          "origin_feature": {"title": "Made in Turkey by İşitan and Şahinler", "text": "İşitan has built sheet-metal machinery in Bursa since 1959 and Şahinler Metal tank-head machinery since 1976 — CE-certified machines with European components."},
+                          "related_pages": [{"href": "hydraulic-4-roll-plate-rollers.html", "label": "Hydraulic 4-roll plate rollers"}, {"href": "bead-rollers.html", "label": "Bead rollers"}, {"href": "slip-rolls.html", "label": "Slip rolls"}, {"href": "plate-rollers.html", "label": "Plate rollers & slip rolls"}]})
     return IMAGES

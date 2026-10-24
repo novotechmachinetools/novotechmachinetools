@@ -1,0 +1,5905 @@
+{
+ "order": [
+  "sahinler-pk",
+  "sahinler-hpk-40",
+  "sahinler-hpk-50-60",
+  "sahinler-hpk-65-80",
+  "sahinler-hpk-100-120",
+  "sahinler-hpk-dp",
+  "sahinler-tc-42",
+  "sahinler-hkm-single",
+  "sahinler-hkm-double",
+  "sahinler-hpm",
+  "sahinler-hpm-dp",
+  "sahinler-hpm-cnc",
+  "sahinler-hpm-nc-line",
+  "sahinler-dpm",
+  "sahinler-dpm-k",
+  "sahinler-at",
+  "sahinler-ap",
+  "sahinler-dk-s",
+  "sahinler-hnm-fixed",
+  "sahinler-hnm-variable",
+  "sahinler-bt-114-s"
+ ],
+ "families": {
+  "sahinler-pk": {
+   "id": "sahinler-pk",
+   "brand": "sahinler",
+   "name": "PK 30 · PK 35 motorized section and pipe benders",
+   "short": "PK 30 · PK 35",
+   "models_label": "PK 30 · PK 35 · Ø1.18″ and 1.97″ shafts",
+   "summary": "Compact motorized angle rolls for flat bar, angle, square bar, tube and pipe — the first roll bender of the railing, furniture and ornamental shop. The PK 30 drives its two bottom rolls by gear directly from the gearbox with an idle top roll and a two-speed motor; the PK 35 drives two rolls through a hardened gear train, runs horizontally or vertically and takes a bar-twist or C & S scroll-forming attachment. Hardened rolls on hardened and ground special-steel shafts, adjustable guide rolls and a standard roll set are included; pipe, angle and special profile rolls are optional.",
+   "features": [
+    "PK 30: two bottom rolls driven by gear system directly from the gearbox, idle top roll, two-speed motor",
+    "PK 35: two rolls direct-driven by gear system, roll shafts in bearings, horizontal and vertical working position",
+    "Hardened rolls; roll shafts of special steel, hardened and ground; steel frame",
+    "Standard rolls and adjustable guide rolls included"
+   ],
+   "optional": [
+    "Pipe / tube bending rolls; angle bending rolls; special profile rolls",
+    "Digital readout; special lateral angle guides",
+    "Bar-twist attachment and C & S forming attachment (PK 35); two-speed motor (PK 35)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-pk35",
+    "sh-pk30",
+    "sh-pk35-b"
+   ],
+   "videos": [
+    {
+     "id": "WjqJVURbZ6U",
+     "title": "PK 35 angle roll — 2″ tube",
+     "duration": "PT1M36S",
+     "thumb": "video-WjqJVURbZ6U"
+    },
+    {
+     "id": "4IdFAbpuV8s",
+     "title": "PK 30 ring roller",
+     "duration": "PT0M27S",
+     "thumb": "video-4IdFAbpuV8s"
+    },
+    {
+     "id": "ID81kR5uI8E",
+     "title": "PK 35 mechanical ring roller",
+     "duration": "PT2M49S",
+     "thumb": "video-ID81kR5uI8E"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PK 30 · PK 35",
+      "sub": "motorized section & pipe benders",
+      "models": [
+       "PK 30",
+       "PK 35"
+      ],
+      "rows": [
+       {
+        "label": "Roll shaft Ø",
+        "sub": "",
+        "cells": [
+         "1.18″ (30 mm)",
+         "1.97″ (50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top roll Ø",
+        "sub": "",
+        "cells": [
+         "5.8″ (148 mm)",
+         "6.1″ (155 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom rolls Ø",
+        "sub": "",
+        "cells": [
+         "4.6″ (118 mm)",
+         "6.1″ (155 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "6.6 – 13 ft/min (2 – 4 m/min)",
+         "15 ft/min (4.5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "0.9 – 1.1 HP (0.7 – 0.85 kW)",
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "24 × 28 × 53″ (610 × 710 × 1,350 mm)",
+         "39 × 30 × 55″ (990 × 760 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "474 lb (215 kg)",
+         "882 lb (400 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "PK 30 · PK 35 — section bending capacities",
+      "sub": "largest section → minimum rolling diameter (outside)",
+      "models": [
+       "PK 30",
+       "PK 35"
+      ],
+      "rows": [
+       {
+        "label": "Flat bar — easy way",
+        "sub": "standard rolls",
+        "cells": [
+         "2 × 3/8″ → Ø71″ · 13/16 × 1/4″ → Ø12″",
+         "2-3/8 × 3/8″ → Ø20″ · 1-5/8 × 3/8″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — hard way",
+        "sub": "standard rolls",
+        "cells": [
+         "3-1/8 × 9/16″* → Ø28″ · 1-1/8 × 1/4″ → Ø16″",
+         "3-7/8 × 9/16″* → Ø18″ · 2-3/8 × 3/8″ → Ø14″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square bar",
+        "sub": "standard rolls",
+        "cells": [
+         "1-1/8 × 1-1/8″ → Ø35″ · 3/8 × 3/8″ → Ø8″",
+         "1-3/8 × 1-3/8″ → Ø35″ · 13/16 × 13/16″ → Ø12″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø1-1/8″ → Ø35″ · Ø3/8″ → Ø8″",
+         "Ø1-3/8″ → Ø24″ · Ø1-1/8″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round tube",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø2-3/8″ × 16 ga → Ø39″ · Ø1″ × 16 ga → Ø24″",
+         "Ø2-3/4″ × 14 ga → Ø39″ · Ø1-1/8″ × 14 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pipe (NPS)",
+        "sub": "optional rolls",
+        "cells": [
+         "NPS 1-1/2 × .114″ → Ø24″ · NPS 1/4 × .071″ → Ø12″",
+         "NPS 2 × .114″ → Ø39″ · NPS 1 × .091″ → Ø14″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular tube",
+        "sub": "optional rolls",
+        "cells": [
+         "2 × 1-1/8″ × 11 ga → Ø47″ · 1-5/8 × 13/16″ × 14 ga → Ø31″",
+         "2-3/4 × 1-1/8″ × 14 ga → Ø47″ · 2 × 1-5/8″ × 11 ga → Ø47″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "optional rolls",
+        "cells": [
+         "□1-5/8″ × 11 ga → Ø47″ · □1-1/8″ × 14 ga → Ø31″",
+         "□2″ × 11 ga → Ø67″ · □1-5/8″ × 11 ga → Ø24″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg out",
+        "sub": "optional rolls",
+        "cells": [
+         "L 1-5/8 × 1-5/8 × 3/16″ → Ø24″ · L 1-1/8 × 1-1/8 × 3/16″ → Ø12″",
+         "L 2 × 2 × 3/16″ → Ø31″ · L 1-5/8 × 1-5/8 × 3/16″ → Ø24″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg in",
+        "sub": "optional rolls",
+        "cells": [
+         "L 1-3/8 × 1-3/8 × 3/16″ → Ø24″ · L 1-1/8 × 1-1/8 × 3/16″ → Ø16″",
+         "L 2 × 2 × 1/4″ → Ø39″ · L 1-1/8 × 1-1/8 × 1/8″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2 × 1/4″ → Ø24″ · T 13/16 × 1/8″ → Ø16″",
+         "T 2-3/8 × 1/4″* → Ø28″ · T 1-1/8 × 3/16″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem in",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2 × 1/4″ → Ø24″ · T 13/16 × 1/8″ → Ø16″",
+         "T 2-3/8 × 1/4″* → Ø31″ · T 1-1/8 × 3/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — flange out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2 × 1/4″ → Ø24″ · T 13/16 × 1/8″ → Ø16″",
+         "T 2-3/8 × 1/4″ → Ø28″ · T 1-1/8 × 3/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges out",
+        "sub": "optional rolls*",
+        "cells": [
+         "—",
+         "UPN 80 (3-1/8″) → Ø39″ · UPN 30 (1-1/8″) → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges in",
+        "sub": "standard rolls*",
+        "cells": [
+         "—",
+         "UPN 80 (3-1/8″) → Ø47″ · UPN 30 (1-1/8″) → Ø31″"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PK 30",
+      "glance": [
+       "1.18″ (30 mm)",
+       "5.8″ (148 mm)",
+       "0.9 – 1.1 HP (0.7 – 0.85 kW)",
+       "474 lb (215 kg)"
+      ]
+     },
+     {
+      "name": "PK 35",
+      "glance": [
+       "1.97″ (50 mm)",
+       "6.1″ (155 mm)",
+       "2 HP (1.5 kW)",
+       "882 lb (400 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. Capacity chart: each cell gives the largest section the machine rolls and, after the arrow, the minimum rolling diameter (outside) for it; a second value is a smaller section with its tighter minimum diameter. 'Standard rolls' profiles are rolled with the rolls supplied; 'optional rolls' need the matching roll set. * a special spacer may be needed · ** only with the beam-bending attachment. Beam sizes are European UPN / IPN / HEA / HEB designations with the nominal depth in inches. Based on 37,700 psi (260 N/mm²) yield-strength material; sizes are converted from the manufacturer's metric chart."
+   },
+   "headline": "Flat bar to 2-3/8 × 3/8″ · square bar to 1-3/8″ · pipe to NPS 2 · angle to L 2 × 2 × 1/4″",
+   "group": "sahinler-angle"
+  },
+  "sahinler-hpk-40": {
+   "id": "sahinler-hpk-40",
+   "brand": "sahinler",
+   "name": "HPK 40 hydraulic section and pipe bender",
+   "short": "HPK 40",
+   "models_label": "HPK 40 · Ø1.38″ shafts · 2 HP",
+   "summary": "The smallest hydraulic angle roll in the range, on a stable cast-steel frame: motor-driven rolls, hydraulic up/down bottom rolls with two digital readouts, horizontal and vertical working position and lateral side supports. Made for tight inner radii — rings from flat bar, small-diameter tube and angle — with NC control, spiral-bending crane and pipe rolls as options.",
+   "features": [
+    "Stable cast-steel frame; rolls motor-driven; special hardened and polished rolls",
+    "Bottom rolls hydraulic up/down with two digital readouts",
+    "Horizontal and vertical working position; lateral side supports",
+    "Brake motor for precision bending; mobile control panel"
+   ],
+   "optional": [
+    "NC control",
+    "Spiral bending crane",
+    "Pipe / tube bending rolls; special profile rolls",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpk40",
+    "sh-hpk40-coil"
+   ],
+   "videos": [
+    {
+     "id": "JGPsDq7ph8A",
+     "title": "HPK 40 angle roll — rolling tight rings",
+     "duration": "PT0M37S",
+     "thumb": "video-JGPsDq7ph8A"
+    },
+    {
+     "id": "baJdE0W_Puk",
+     "title": "HPK 40 roll bender — small inner radius",
+     "duration": "PT2M6S",
+     "thumb": "video-baJdE0W_Puk"
+    },
+    {
+     "id": "2wLeLjYmBKo",
+     "title": "HPK 40 hydraulic profile bending roll",
+     "duration": "PT2M6S",
+     "thumb": "video-2wLeLjYmBKo"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPK 40",
+      "sub": "hydraulic section & pipe bender",
+      "models": [
+       "HPK 40"
+      ],
+      "rows": [
+       {
+        "label": "Top roll shaft Ø",
+        "sub": "",
+        "cells": [
+         "1.38″ (35 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom roll shafts Ø",
+        "sub": "",
+        "cells": [
+         "1.38″ (35 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Standard roll Ø",
+        "sub": "",
+        "cells": [
+         "5.4″ (137 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "23 ft/min (7 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "41 × 28 × 49″ (1,050 × 710 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "915 lb (415 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HPK 40 — section bending capacities",
+      "sub": "largest section → minimum rolling diameter (outside)",
+      "models": [
+       "HPK 40"
+      ],
+      "rows": [
+       {
+        "label": "Flat bar — easy way",
+        "sub": "standard rolls",
+        "cells": [
+         "1-3/8 × 5/16″ → Ø12″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — hard way",
+        "sub": "standard rolls",
+        "cells": [
+         "2 × 1/2″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square bar",
+        "sub": "standard rolls",
+        "cells": [
+         "11/16 × 11/16″ → Ø10″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø7/8″ → Ø8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round tube",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø1-5/8″ × 16 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pipe (NPS)",
+        "sub": "optional rolls",
+        "cells": [
+         "NPS 1 × .091″ → Ø18″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular tube",
+        "sub": "optional rolls",
+        "cells": [
+         "1-1/8 × 9/16″ × 12 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "optional rolls",
+        "cells": [
+         "□1″ × 14 ga → Ø18″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg out",
+        "sub": "optional rolls",
+        "cells": [
+         "L 1-3/8 × 1-3/8 × 3/16″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg in",
+        "sub": "optional rolls",
+        "cells": [
+         "L 1-1/8 × 1-1/8 × 3/16″ → Ø22″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 1-1/8 × 1-1/8 × 3/16″ → Ø12″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem in",
+        "sub": "standard rolls",
+        "cells": [
+         "T 1-3/8 × 1-3/8 × 3/16″ → Ø14″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — flange out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 1-3/8 × 1-3/8 × 3/16″ → Ø12″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges out",
+        "sub": "optional rolls*",
+        "cells": [
+         "UPN 40×20 (1-5/8 × 13/16″) → Ø14″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges in",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 35×18 (1-3/8 × 11/16″) → Ø20″"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPK 40",
+      "glance": [
+       "1.38″ (35 mm)",
+       "5.4″ (137 mm)",
+       "2 HP (1.5 kW)",
+       "915 lb (415 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. Capacity chart: each cell gives the largest section the machine rolls and, after the arrow, the minimum rolling diameter (outside) for it; a second value is a smaller section with its tighter minimum diameter. 'Standard rolls' profiles are rolled with the rolls supplied; 'optional rolls' need the matching roll set. * a special spacer may be needed · ** only with the beam-bending attachment. Beam sizes are European UPN / IPN / HEA / HEB designations with the nominal depth in inches. Based on 37,700 psi (260 N/mm²) yield-strength material; sizes are converted from the manufacturer's metric chart."
+   },
+   "headline": "Flat bar to 2 × 1/2″ · square bar to 11/16″ · pipe to NPS 1 · angle to L 1-3/8 × 1-3/8 × 3/16″",
+   "group": "sahinler-angle"
+  },
+  "sahinler-hpk-50-60": {
+   "id": "sahinler-hpk-50-60",
+   "brand": "sahinler",
+   "name": "HPK 50 · HPK 60 hydraulic section and pipe benders",
+   "short": "HPK 50 · HPK 60",
+   "models_label": "HPK 50 (9 US tons) · HPK 60 (18 US tons)",
+   "summary": "The most popular Şahinler angle rolls in Canada: welded steel frame, all three rolls motor-driven with a brake motor for precise stops, hydraulic up/down top roll and horizontal or vertical working position. The HPK 50 bends with 9 US tons of hydraulic force — angle to L 2 × 2 × 1/4″, pipe to NPS 2; the HPK 60 with 18 US tons takes L 2-3/4 × 2-3/4 × 1/4″ angle, NPS 3 pipe and 2-3/4″ square tube. Digital readout, NC control, lateral angle guides, stairway attachment and Delrin rolls for aluminum and stainless are the usual options.",
+   "features": [
+    "Steel welded construction frame; all 3 rolls motor-driven; hardened shafts of special steel",
+    "Top roll hydraulic up/down; 9 / 18 US tons hydraulic force",
+    "Horizontal and vertical working position; standard rolls and guide rolls",
+    "Brake motor for precision bending; mobile control panel"
+   ],
+   "optional": [
+    "Pipe / tube bending rolls; profile rolls; angle bending rolls",
+    "Digital readout; NC control",
+    "Lateral angle guides; stairway bending attachment",
+    "Special Delrin rolls for aluminum and stainless steel",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpk60",
+    "sh-hpk50"
+   ],
+   "videos": [
+    {
+     "id": "gQlXmbOJOwk",
+     "title": "HPK 60 angle roll — 3″ pipe",
+     "duration": "PT1M38S",
+     "thumb": "video-gQlXmbOJOwk"
+    },
+    {
+     "id": "f1cJ_Z2jkWM",
+     "title": "HPK 60 angle roll with digital readout",
+     "duration": "PT0M32S",
+     "thumb": "video-f1cJ_Z2jkWM"
+    },
+    {
+     "id": "0VJxlVlf3UI",
+     "title": "Angle iron rolling on the HPK 50",
+     "duration": "PT1M3S",
+     "thumb": "video-0VJxlVlf3UI"
+    },
+    {
+     "id": "ouH4xfmGyZY",
+     "title": "HPK 60 NC angle roll",
+     "duration": "PT0M45S",
+     "thumb": "video-ouH4xfmGyZY"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPK 50 · HPK 60",
+      "sub": "hydraulic section & pipe benders",
+      "models": [
+       "HPK 50",
+       "HPK 60"
+      ],
+      "rows": [
+       {
+        "label": "Roll shaft Ø",
+        "sub": "",
+        "cells": [
+         "1.97″ (50 mm)",
+         "2.36″ (60 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top roll Ø",
+        "sub": "",
+        "cells": [
+         "7.6″ (192 mm)",
+         "8.5″ (215 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom rolls Ø",
+        "sub": "",
+        "cells": [
+         "6.4″ (162 mm)",
+         "8.5″ (215 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic force",
+        "sub": "",
+        "cells": [
+         "9 US tons (8 t)",
+         "18 US tons (16 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "15 ft/min (4.5 m/min)",
+         "13 ft/min (4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "3 HP (2.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 30 × 63″ (990 × 760 × 1,600 mm)",
+         "59 × 35 × 67″ (1,500 × 890 × 1,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,124 lb (510 kg)",
+         "2,006 lb (910 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HPK 50 · HPK 60 — section bending capacities",
+      "sub": "largest section → minimum rolling diameter (outside)",
+      "models": [
+       "HPK 50",
+       "HPK 60"
+      ],
+      "rows": [
+       {
+        "label": "Flat bar — easy way",
+        "sub": "standard rolls",
+        "cells": [
+         "2-3/8 × 3/8″* → Ø24″ · 13/16 × 3/8″ → Ø12″",
+         "3-1/8 × 13/16″ → Ø47″ · 1-5/8 × 3/8″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — hard way",
+        "sub": "standard rolls",
+        "cells": [
+         "3-1/8 × 9/16″* → Ø24″ · 2 × 3/8″ → Ø12″",
+         "4-3/4 × 1″* → Ø24″ · 2 × 3/8″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square bar",
+        "sub": "standard rolls",
+        "cells": [
+         "1-3/8 × 1-3/8″ → Ø24″ · 9/16 × 9/16″ → Ø12″",
+         "2 × 2″ → Ø31″ · 13/16 × 13/16″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø1-3/8″ → Ø24″ · Ø13/16″ → Ø12″",
+         "Ø2″ → Ø31″ · Ø13/16″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round tube",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø2-3/4″ × 14 ga → Ø47″ · Ø1″ × 16 ga → Ø16″",
+         "Ø3-7/8″ × 14 ga → Ø63″ · Ø2-3/8″ × 14 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pipe (NPS)",
+        "sub": "optional rolls",
+        "cells": [
+         "NPS 2 × .114″ → Ø39″ · NPS 1/2 × .091″ → Ø12″",
+         "NPS 3 × .126″ → Ø63″ · NPS 1 × .102″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular tube",
+        "sub": "optional rolls",
+        "cells": [
+         "2-3/4 × 1-1/8″ × 11 ga → Ø59″ · 1-1/8 × 9/16″ × 14 ga → Ø16″",
+         "3-1/8 × 1-5/8″ × 11 ga → Ø55″ · 1-5/8 × 13/16″ × 14 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "optional rolls",
+        "cells": [
+         "□2″ × 11 ga → Ø63″ · □13/16″ × 14 ga → Ø16″",
+         "□2-3/4″ × 11 ga → Ø63″ · □1-5/8″ × 14 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg out",
+        "sub": "optional rolls",
+        "cells": [
+         "L 2 × 2 × 1/4″ → Ø24″ · L 1-1/8 × 1-1/8 × 1/8″ → Ø16″",
+         "L 2-3/4 × 2-3/4 × 1/4″ → Ø39″ · L 1-5/8 × 1-5/8 × 3/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg in",
+        "sub": "optional rolls",
+        "cells": [
+         "L 2 × 2 × 1/4″ → Ø35″ · L 1-1/8 × 1-1/8 × 1/8″ → Ø24″",
+         "L 2-3/4 × 2-3/4 × 1/4″ → Ø47″ · L 1-5/8 × 1-5/8 × 3/16″ → Ø24″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2-3/8 × 1/4″* → Ø24″ · T 1-1/8 × 3/16″ → Ø16″",
+         "T 3-1/8 × 3/8″* → Ø39″ · T 1-5/8 × 3/16″* → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem in",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2-3/8 × 1/4″* → Ø28″ · T 1-1/8 × 3/16″ → Ø16″",
+         "T 3-1/8 × 3/8″* → Ø47″ · T 1-5/8 × 3/16″* → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — flange out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2-3/8 × 1/4″ → Ø28″ · T 1-1/8 × 3/16″ → Ø16″",
+         "T 3-1/8 × 3/8″ → Ø39″ · T 1-5/8 × 3/16″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges out",
+        "sub": "optional rolls*",
+        "cells": [
+         "UPN 80 (3-1/8″)* → Ø31″ · UPN 30 (1-1/8″) → Ø16″",
+         "UPN 100 (3-7/8″) → Ø31″ · UPN 60 (2-3/8″) → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges in",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 80 (3-1/8″)* → Ø47″ · UPN 30 (1-1/8″) → Ø24″",
+         "UPN 100 (3-7/8″) → Ø47″ · UPN 60 (2-3/8″) → Ø24″"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPK 50",
+      "glance": [
+       "1.97″ (50 mm)",
+       "7.6″ (192 mm)",
+       "2 HP (1.5 kW)",
+       "1,124 lb (510 kg)"
+      ]
+     },
+     {
+      "name": "HPK 60",
+      "glance": [
+       "2.36″ (60 mm)",
+       "8.5″ (215 mm)",
+       "3 HP (2.25 kW)",
+       "2,006 lb (910 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. Capacity chart: each cell gives the largest section the machine rolls and, after the arrow, the minimum rolling diameter (outside) for it; a second value is a smaller section with its tighter minimum diameter. 'Standard rolls' profiles are rolled with the rolls supplied; 'optional rolls' need the matching roll set. * a special spacer may be needed · ** only with the beam-bending attachment. Beam sizes are European UPN / IPN / HEA / HEB designations with the nominal depth in inches. Based on 37,700 psi (260 N/mm²) yield-strength material; sizes are converted from the manufacturer's metric chart."
+   },
+   "headline": "Angle to L 2-3/4 × 2-3/4 × 1/4″ · pipe to NPS 3 · square tube to 2-3/4″ · flat bar to 4-3/4 × 1″",
+   "group": "sahinler-angle"
+  },
+  "sahinler-hpk-65-80": {
+   "id": "sahinler-hpk-65-80",
+   "brand": "sahinler",
+   "name": "HPK 65 · HPK 80 hydraulic section and pipe benders",
+   "short": "HPK 65 · HPK 80",
+   "models_label": "HPK 65 · HPK 80 · Ø2.36″ and 3.15″ top shafts",
+   "summary": "Double-pinch angle rolls with hydraulic bottom rolls and two digital readouts: all three rolls are driven, the shafts are hardened and ground high-tensile special steel and the machine works horizontally or vertically. The HPK 65 rolls L 2-3/8 × 2-3/8 × 1/4″ angle and NPS 2 pipe; the HPK 80 goes to L 3-1/8 × 3-1/8 × 5/16″, NPS 3 pipe and UPN 140 channel. 2-axis hydraulic lateral guide rolls, NC control and a spiral-rolling crane are optional.",
+   "features": [
+    "Steel welded construction frame; all 3 rolls driven",
+    "Hardened and ground high-tensile special-steel shafts; hardened and ground rolls",
+    "Bottom rolls hydraulic up/down; 2 digital readouts",
+    "Horizontal and vertical working position; brake motor; mobile control panel"
+   ],
+   "optional": [
+    "Pipe, tube and profile bending rolls",
+    "2-axis hydraulic lateral guide rolls",
+    "Automation with NC control",
+    "Crane system for spiral rolling",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpk80",
+    "sh-hpk65",
+    "sh-hpk65-horizontal",
+    "sh-hpk-guide-detail",
+    "sh-hpk-console"
+   ],
+   "videos": [
+    {
+     "id": "r-EPaVtz0sA",
+     "title": "HPK 65 profile rolling machine with digital readout",
+     "duration": "PT0M38S",
+     "thumb": "video-r-EPaVtz0sA"
+    },
+    {
+     "id": "_ZMcJ7YJmTg",
+     "title": "HPK 80 NC roll bender — pipe",
+     "duration": "PT0M34S",
+     "thumb": "video-_ZMcJ7YJmTg"
+    },
+    {
+     "id": "l8r_5GLfvhw",
+     "title": "HPK 80 NC angle roll",
+     "duration": "PT0M41S",
+     "thumb": "video-l8r_5GLfvhw"
+    },
+    {
+     "id": "0FxGiDxlHBQ",
+     "title": "HPK 65 hydraulic profile bending machine",
+     "duration": "PT3M37S",
+     "thumb": "video-0FxGiDxlHBQ"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPK 65 · HPK 80",
+      "sub": "hydraulic section & pipe benders",
+      "models": [
+       "HPK 65",
+       "HPK 80"
+      ],
+      "rows": [
+       {
+        "label": "Top roll shaft Ø",
+        "sub": "",
+        "cells": [
+         "2.36″ (60 mm)",
+         "3.15″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom roll shafts Ø",
+        "sub": "",
+        "cells": [
+         "1.97″ (50 mm)",
+         "2.76″ (70 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Standard roll Ø",
+        "sub": "",
+        "cells": [
+         "7.1″ (180 mm)",
+         "9.6″ (245 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "20 ft/min (6 m/min)",
+         "23 ft/min (7 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5 HP (3.75 kW)",
+         "6.4 HP (4.75 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "47 × 33 × 47″ (1,200 × 840 × 1,200 mm)",
+         "59 × 39 × 55″ (1,500 × 990 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,161 lb (980 kg)",
+         "3,627 lb (1,645 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HPK 65 · HPK 80 — section bending capacities",
+      "sub": "largest section → minimum rolling diameter (outside)",
+      "models": [
+       "HPK 65",
+       "HPK 80"
+      ],
+      "rows": [
+       {
+        "label": "Flat bar — easy way",
+        "sub": "standard rolls",
+        "cells": [
+         "2-3/8 × 3/8″ → Ø20″ · 13/16 × 3/16″ → Ø10″",
+         "3-7/8 × 13/16″* → Ø79″ · 3-1/8 × 13/16″ → Ø31″ · 1-1/8 × 3/8″ → Ø12″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — hard way",
+        "sub": "standard rolls",
+        "cells": [
+         "3-1/8 × 13/16″ → Ø20″ · 2 × 3/16″ → Ø10″",
+         "4-7/8 × 1″ → Ø24″ · 2-3/8 × 3/16″ → Ø12″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square bar",
+        "sub": "standard rolls",
+        "cells": [
+         "1-1/4 × 1-1/4″ → Ø16″ · 1/2 × 1/2″ → Ø10″",
+         "1-3/4 × 1-3/4″ → Ø20″ · 9/16 × 9/16″ → Ø15″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø1-3/8″ → Ø14″ · Ø3/8″ → Ø10″",
+         "Ø2″ → Ø20″ · Ø9/16″ → Ø15″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round tube",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø2-3/8″ × 14 ga → Ø24″ · Ø9/16″ × 16 ga → Ø8″",
+         "Ø3-7/8″ × 12 ga → Ø47″ · Ø9/16″ × 20 ga → Ø15″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pipe (NPS)",
+        "sub": "optional rolls",
+        "cells": [
+         "NPS 2 × .154″ → Ø16″ · NPS 1/2 × .109″ → Ø8″",
+         "NPS 3 × .216″ → Ø31″ · NPS 1/2 × .109″ → Ø15″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular tube",
+        "sub": "optional rolls",
+        "cells": [
+         "2 × 1″ × 11 ga → Ø18″ · 13/16 × 9/16″ × 14 ga → Ø10″",
+         "3-1/8 × 1″ × 11 ga → Ø31″ · 1 × 9/16″ × 14 ga → Ø14″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "optional rolls",
+        "cells": [
+         "□1-3/4″ × 11 ga → Ø24″ · □13/16″ × 14 ga → Ø12″",
+         "□2-3/4″ × 11 ga → Ø51″ · □1″ × 14 ga → Ø14″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg out",
+        "sub": "optional rolls",
+        "cells": [
+         "L 2-3/8 × 2-3/8 × 1/4″ → Ø26″ · L 1-1/8 × 1-1/8 × 3/16″ → Ø14″",
+         "L 3-1/8 × 3-1/8 × 5/16″ → Ø31″ · L 1-1/8 × 1-1/8 × 1/8″ → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg in",
+        "sub": "optional rolls",
+        "cells": [
+         "L 2 × 2 × 3/16″ → Ø22″ · L 1-1/8 × 1-1/8 × 3/16″ → Ø14″",
+         "L 2-3/4 × 2-3/4 × 1/4″ → Ø28″ · L 1-1/8 × 1-1/8 × 1/8″ → Ø18″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2-3/8 × 1/4″ → Ø22″ · T 13/16 × 1/8″ → Ø10″",
+         "T 3-1/8 × 3/8″ → Ø31″ · T 1 × 1/8″ → Ø18″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem in",
+        "sub": "standard rolls",
+        "cells": [
+         "T 2 × 1/4″ → Ø20″ · T 13/16 × 1/8″ → Ø10″",
+         "T 2-3/4 × 5/16″ → Ø31″ · T 1 × 1/8″ → Ø11″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — flange out",
+        "sub": "optional rolls",
+        "cells": [
+         "T 2-3/8 × 1/4″ → Ø20″ · T 13/16 × 1/8″ → Ø10″",
+         "T 3-1/8 × 3/8″ → Ø31″ · T 1-1/8 × 3/16″ → Ø11″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges out",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 80 (3-1/8″) → Ø24″ · UPN 30 (1-1/8″) → Ø10″",
+         "UPN 140 (5-1/2″) → Ø63″ · UPN 120 (4-3/4″) → Ø35″ · UPN 100 (3-7/8″) → Ø31″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges in",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 65 (2-1/2″) → Ø24″ · UPN 30 (1-1/8″) → Ø10″",
+         "UPN 140 (5-1/2″) → Ø63″ · UPN 120 (4-3/4″) → Ø39″ · UPN 100 (3-7/8″) → Ø31″"
+        ],
+        "key": false
+       },
+       {
+        "label": "I-beam — hard way",
+        "sub": "standard rolls*",
+        "cells": [
+         "IPN 80 (3-1/8″) → Ø24″",
+         "IPN 120 (4-3/4″) → Ø24″ · IPN 80 (3-1/8″) → Ø16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "H-beam — hard way",
+        "sub": "standard rolls*",
+        "cells": [
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "I-beam — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "H-beam — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "—",
+         "—"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPK 65",
+      "glance": [
+       "2.36″ (60 mm)",
+       "7.1″ (180 mm)",
+       "5 HP (3.75 kW)",
+       "2,161 lb (980 kg)"
+      ]
+     },
+     {
+      "name": "HPK 80",
+      "glance": [
+       "3.15″ (80 mm)",
+       "9.6″ (245 mm)",
+       "6.4 HP (4.75 kW)",
+       "3,627 lb (1,645 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. Capacity chart: each cell gives the largest section the machine rolls and, after the arrow, the minimum rolling diameter (outside) for it; a second value is a smaller section with its tighter minimum diameter. 'Standard rolls' profiles are rolled with the rolls supplied; 'optional rolls' need the matching roll set. * a special spacer may be needed · ** only with the beam-bending attachment. Beam sizes are European UPN / IPN / HEA / HEB designations with the nominal depth in inches. Based on 37,700 psi (260 N/mm²) yield-strength material; sizes are converted from the manufacturer's metric chart."
+   },
+   "headline": "Angle to L 3-1/8 × 3-1/8 × 5/16″ · pipe to NPS 3 · channel to UPN 140 · flat bar to 4-7/8 × 1″",
+   "group": "sahinler-angle"
+  },
+  "sahinler-hpk-100-120": {
+   "id": "sahinler-hpk-100-120",
+   "brand": "sahinler",
+   "name": "HPK 100 · HPK 120 hydraulic section and pipe benders",
+   "short": "HPK 100 · HPK 120",
+   "models_label": "HPK 100 (10 HP) · HPK 120 (20 HP, hydraulic guides standard)",
+   "summary": "Heavy angle rolls for the structural and tank shop. The HPK 100 drives its three rolls from a single gearbox and hydromotor on Ø3.94″ shafts and rolls L 3-7/8 × 3-7/8 × 1/2″ angle, NPS 4 pipe and IPN 180 beams; the HPK 120 gives each roll its own planetary gearbox and hydromotor, has hydraulic lateral angle guides and infinitely variable speed as standard, and rolls NPS 5 pipe, UPN 220 channel and 4-3/4 × 1-5/8″ rectangular tube. Both work horizontally and vertically; 3-axis hydraulic guides, NC control, spiral crane and the half-pipe bending attachment are optional.",
+   "features": [
+    "HPK 100: single gearbox with hydromotor drives 3 rolls by gear system; HPK 120: each roll driven by its own planetary gearbox and hydromotor",
+    "Hardened and ground high-tensile special-steel shafts; hardened standard rolls",
+    "Bottom rolls hydraulic up/down; 2 digital readouts",
+    "HPK 120: hydraulic lateral angle guide rolls and infinitely variable speed standard",
+    "Horizontal and vertical working position; mobile control panel"
+   ],
+   "optional": [
+    "Pipe, tube and profile bending rolls; IPN / UPN beam attachments",
+    "3-axis hydraulic lateral guide rollers",
+    "Infinitely variable speed (HPK 100)",
+    "Automation with NC control",
+    "Crane system for spiral rolling",
+    "Half-pipe bending attachment",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpk100",
+    "sh-hpk120nc",
+    "sh-hpk100-rolls",
+    "sh-hpk100-guide",
+    "sh-hpk100-handwheel",
+    "sh-hpk100-horizontal",
+    "sh-hpk120-panel",
+    "sh-hpk-halfpipe"
+   ],
+   "videos": [
+    {
+     "id": "eGdImYgyjZ8",
+     "title": "HPK 100 angle roll — 5″",
+     "duration": "PT1M36S",
+     "thumb": "video-eGdImYgyjZ8"
+    },
+    {
+     "id": "M2nYe99jzBM",
+     "title": "HPK 100 NC double-pinch angle roll",
+     "duration": "PT0M55S",
+     "thumb": "video-M2nYe99jzBM"
+    },
+    {
+     "id": "2HHkR7Ld9fE",
+     "title": "HPK 100 NC roll bender",
+     "duration": "PT0M55S",
+     "thumb": "video-2HHkR7Ld9fE"
+    },
+    {
+     "id": "HK-GhfJwcjI",
+     "title": "HPK 120 corrugated profile (guard rail) roll bender",
+     "duration": "PT2M41S",
+     "thumb": "video-HK-GhfJwcjI"
+    },
+    {
+     "id": "PY_GMtb1i-4",
+     "title": "HPK 120 U-beam roll bender",
+     "duration": "PT2M14S",
+     "thumb": "video-PY_GMtb1i-4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPK 100 · HPK 120",
+      "sub": "hydraulic section & pipe benders",
+      "models": [
+       "HPK 100",
+       "HPK 120"
+      ],
+      "rows": [
+       {
+        "label": "Roll shaft Ø",
+        "sub": "",
+        "cells": [
+         "3.94″ (100 mm)",
+         "4.72″ (120 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Standard roll Ø",
+        "sub": "",
+        "cells": [
+         "12.4″ (315 mm)",
+         "15.4″ (390 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "23 ft/min (7 m/min)",
+         "6.6 – 25 ft/min (2 – 7.5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "20 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "79 × 57 × 67″ (2,000 × 1,450 × 1,700 mm)",
+         "79 × 65 × 75″ (2,000 × 1,650 × 1,900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,055 lb (3,200 kg)",
+         "9,811 lb (4,450 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HPK 100 · HPK 120 — section bending capacities",
+      "sub": "largest section → minimum rolling diameter (outside)",
+      "models": [
+       "HPK 100",
+       "HPK 120"
+      ],
+      "rows": [
+       {
+        "label": "Flat bar — easy way",
+        "sub": "standard rolls",
+        "cells": [
+         "3-7/8 × 13/16″ → Ø31″ · 1-1/8 × 3/8″ → Ø16″",
+         "4-7/8 × 1″ → Ø47″ · 1-1/8 × 3/8″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — hard way",
+        "sub": "standard rolls",
+        "cells": [
+         "7-7/8 × 1-1/8″ → Ø47″ · 6-1/4 × 1-3/8″ → Ø31″ · 3-1/8 × 3/16″ → Ø16″",
+         "7-7/8 × 2″ → Ø39″ · 3-7/8 × 3/8″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square bar",
+        "sub": "standard rolls",
+        "cells": [
+         "2-3/8 × 2-3/8″ → Ø30″ · 9/16 × 9/16″ → Ø16″",
+         "2-1/2 × 2-1/2″ → Ø30″ · 13/16 × 13/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø3″ → Ø31″ · Ø9/16″ → Ø18″",
+         "Ø3-1/8″ → Ø33″ · Ø13/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round tube",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø4-7/8″ × 12 ga → Ø55″ · Ø9/16″ × 20 ga → Ø18″",
+         "Ø6-1/4″ × 8 ga → Ø110″ · Ø5-1/2″ × 11 ga → Ø59″ · Ø2″ × 14 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pipe (NPS)",
+        "sub": "optional rolls",
+        "cells": [
+         "NPS 4 × .177″ → Ø98″ · NPS 1/2 × .109″ → Ø18″",
+         "NPS 5 × .250″ → Ø59″ · NPS 3/4 × .113″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular tube",
+        "sub": "optional rolls",
+        "cells": [
+         "3-7/8 × 1-5/8″ × 8 ga → Ø51″ · 1 × 9/16″ × 14 ga → Ø18″",
+         "4-3/4 × 1-5/8″ × 8 ga → Ø71″ · 1-1/8 × 13/16″ × 11 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "optional rolls",
+        "cells": [
+         "□3-1/8″ × 3/16″ → Ø59″ · □1″ × 14 ga → Ø18″",
+         "□3-1/2″ × 3/16″ → Ø71″ · □1-1/8″ × 11 ga → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg out",
+        "sub": "optional rolls",
+        "cells": [
+         "L 3-7/8 × 3-7/8 × 1/2″ → Ø39″ · L 1-5/8 × 1-5/8 × 3/16″ → Ø28″",
+         "L 4-3/4 × 4-3/4 × 1/2″ → Ø47″ · L 1-5/8 × 1-5/8 × 3/16″ → Ø24″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg in",
+        "sub": "optional rolls",
+        "cells": [
+         "L 3-7/8 × 3-7/8 × 3/8″ → Ø59″ · L 1-5/8 × 1-5/8 × 3/16″ → Ø22″",
+         "L 3-7/8 × 3-7/8 × 3/8″ → Ø47″ · L 1-5/8 × 1-5/8 × 3/16″ → Ø24″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 3-7/8 × 7/16″ → Ø39″ · T 1-1/8 × 3/16″ → Ø16″",
+         "T 3-7/8 × 7/16″ → Ø31″ · T 1-1/8 × 3/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem in",
+        "sub": "standard rolls",
+        "cells": [
+         "T 3-1/2 × 3/8″ → Ø39″ · T 1-1/8 × 3/16″ → Ø16″",
+         "T 3-7/8 × 7/16″ → Ø39″ · T 1-1/8 × 3/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — flange out",
+        "sub": "optional rolls",
+        "cells": [
+         "T 3-7/8 × 7/16″ → Ø39″ · T 1-1/8 × 3/16″ → Ø16″",
+         "T 3-7/8 × 7/16″ → Ø31″ · T 1-1/8 × 3/16″ → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges out",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 180 (7-1/8″) → Ø35″ · UPN 30 (1-1/8″) → Ø16″",
+         "UPN 220 (8-5/8″) → Ø39″ · UPN 180 (7-1/8″) → Ø31″ · UPN 40 (1-5/8″) → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges in",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 180 (7-1/8″) → Ø39″ · UPN 30 (1-1/8″) → Ø16″",
+         "UPN 220 (8-5/8″) → Ø47″ · UPN 180 (7-1/8″) → Ø35″ · UPN 40 (1-5/8″) → Ø24″"
+        ],
+        "key": false
+       },
+       {
+        "label": "I-beam — hard way",
+        "sub": "standard rolls*",
+        "cells": [
+         "IPN 180 (7-1/8″) → Ø39″ · IPN 80 (3-1/8″) → Ø16″",
+         "IPN 220 (8-5/8″) → Ø39″ · IPN 80 (3-1/8″) → Ø20″"
+        ],
+        "key": false
+       },
+       {
+        "label": "H-beam — hard way",
+        "sub": "standard rolls*",
+        "cells": [
+         "HEA 120 (4-3/4″) → Ø39″ · HEB 100 (3-7/8″) → Ø47″",
+         "HEA 140 (5-1/2″) → Ø47″ · HEB 120 (4-3/4″) → Ø47″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "—",
+         "UPN 120 (4-3/4″) → Ø32.8 ft · UPN 100 (3-7/8″) → Ø24.6 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "I-beam — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "—",
+         "IPN 160 (6-1/4″) → Ø16.4 ft · IPN 140 (5-1/2″) → Ø13.1 ft · IPN 100 (3-7/8″) → Ø79″"
+        ],
+        "key": false
+       },
+       {
+        "label": "H-beam — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "—",
+         "HEA 120 (4-3/4″) → Ø13.1 ft · HEB 100 (3-7/8″) → Ø63″"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPK 100",
+      "glance": [
+       "3.94″ (100 mm)",
+       "12.4″ (315 mm)",
+       "10 HP (7.5 kW)",
+       "7,055 lb (3,200 kg)"
+      ]
+     },
+     {
+      "name": "HPK 120",
+      "glance": [
+       "4.72″ (120 mm)",
+       "15.4″ (390 mm)",
+       "20 HP (15 kW)",
+       "9,811 lb (4,450 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. Capacity chart: each cell gives the largest section the machine rolls and, after the arrow, the minimum rolling diameter (outside) for it; a second value is a smaller section with its tighter minimum diameter. 'Standard rolls' profiles are rolled with the rolls supplied; 'optional rolls' need the matching roll set. * a special spacer may be needed · ** only with the beam-bending attachment. Beam sizes are European UPN / IPN / HEA / HEB designations with the nominal depth in inches. Based on 37,700 psi (260 N/mm²) yield-strength material; sizes are converted from the manufacturer's metric chart."
+   },
+   "headline": "Angle to L 4-3/4 × 4-3/4 × 1/2″ · pipe to NPS 5 · channel to UPN 220 · beams to IPN 220 / HEB 120",
+   "group": "sahinler-angle"
+  },
+  "sahinler-hpk-dp": {
+   "id": "sahinler-hpk-dp",
+   "brand": "sahinler",
+   "name": "HPK 160 – 360 DP heavy-duty hydraulic section and beam benders",
+   "short": "HPK DP heavy-duty",
+   "models_label": "HPK 160 DP · 180 DP · 200 DP · 240 DP · 300 DP · 360 DP",
+   "summary": "Heavy-duty double-pinch section benders in which each of the three rolls is driven by its own planetary gearbox and hydromotor, on shafts from Ø6.3″ to Ø14.2″. Built for structural beams and heavy sections — from UPN 280 channel, IPN 300 and HEB 180 beams on the HPK 160 DP up to UPN 600, IPN 600 and HEB 600 on the HPK 360 DP, pipe to NPS 16 and angle to L 7-7/8 × 7-7/8 × 1-1/8″. Hydraulic lateral angle guide rolls, two-speed working and two digital readouts are standard; NC control and HEB / IPN / UPN beam attachments are optional.",
+   "features": [
+    "Each of the 3 rolls driven by its own planetary gearbox and hydromotor",
+    "Hardened and ground high-tensile special-steel shafts; hardened standard rolls",
+    "Hydraulic lateral angle guide rolls; lateral rolls hydraulic up/down",
+    "Two-speed working system; 2 digital readouts standard",
+    "Horizontal working position; steel construction welded frame"
+   ],
+   "optional": [
+    "All types of pipe, tube and profile rolls; HEB / IPN / UPN beam attachments",
+    "Automation with NC control",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpk160dp",
+    "sh-hpk240dp",
+    "sh-hpkdp-top",
+    "sh-ipn-attachment"
+   ],
+   "videos": [
+    {
+     "id": "Q4s3okCn65Q",
+     "title": "HPK 300 heavy-duty structural section bending roll",
+     "duration": "PT1M51S",
+     "thumb": "video-Q4s3okCn65Q"
+    },
+    {
+     "id": "U0bTM5_YK9g",
+     "title": "HPK 160 hydraulic ring roller — angle and pipe",
+     "duration": "PT2M20S",
+     "thumb": "video-U0bTM5_YK9g"
+    },
+    {
+     "id": "wZJmGplhR6Y",
+     "title": "HPK 180 H-beam bender",
+     "duration": "PT2M26S",
+     "thumb": "video-wZJmGplhR6Y"
+    },
+    {
+     "id": "k3qj4i1u0_w",
+     "title": "HPK 200 marine T-profile roll bender",
+     "duration": "PT14M16S",
+     "thumb": "video-k3qj4i1u0_w"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPK DP",
+      "sub": "heavy-duty section & beam benders",
+      "models": [
+       "HPK 160 DP",
+       "HPK 180 DP",
+       "HPK 200 DP",
+       "HPK 240 DP",
+       "HPK 300 DP",
+       "HPK 360 DP"
+      ],
+      "rows": [
+       {
+        "label": "Roll shaft Ø",
+        "sub": "",
+        "cells": [
+         "6.3″ (160 mm)",
+         "7.09″ (180 mm)",
+         "7.87″ (200 mm)",
+         "9.45″ (240 mm)",
+         "11.81″ (300 mm)",
+         "14.17″ (360 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Standard roll Ø",
+        "sub": "",
+        "cells": [
+         "18.9″ (480 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "24.4″ (620 mm)",
+         "29.9″ (760 mm)",
+         "31.5″ (800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "9.8 – 20 ft/min (3 – 6 m/min)",
+         "9.8 – 20 ft/min (3 – 6 m/min)",
+         "6.6 – 16 ft/min (2 – 5 m/min)",
+         "6.6 – 13 ft/min (2 – 4 m/min)",
+         "6.6 – 13 ft/min (2 – 4 m/min)",
+         "6.6 – 13 ft/min (2 – 4 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "30 HP (22 kW)",
+         "40 HP (30 kW)",
+         "40 HP (30 kW)",
+         "63 HP (47 kW)",
+         "98 HP (73 kW)",
+         "103 HP (77 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "98 × 87 × 91″ (2,500 × 2,200 × 2,300 mm)",
+         "109 × 91 × 106″ (2,750 × 2,300 × 2,700 mm)",
+         "118 × 91 × 122″ (3,000 × 2,300 × 3,100 mm)",
+         "122 × 94 × 126″ (3,100 × 2,400 × 3,200 mm)",
+         "197 × 167 × 148″ (5,000 × 4,250 × 3,750 mm)",
+         "197 × 167 × 148″ (5,000 × 4,250 × 3,750 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "21,605 lb (9,800 kg)",
+         "31,747 lb (14,400 kg)",
+         "36,376 lb (16,500 kg)",
+         "43,652 lb (19,800 kg)",
+         "84,878 lb (38,500 kg)",
+         "121,254 lb (55,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HPK DP — section and beam bending capacities",
+      "sub": "largest section → minimum rolling diameter (outside)",
+      "models": [
+       "HPK 160 DP",
+       "HPK 180 DP",
+       "HPK 200 DP",
+       "HPK 240 DP",
+       "HPK 300 DP",
+       "HPK 360 DP"
+      ],
+      "rows": [
+       {
+        "label": "Flat bar — easy way",
+        "sub": "standard rolls",
+        "cells": [
+         "5-7/8 × 1-3/8″ → Ø98″",
+         "7-1/8 × 1-1/8″ → Ø98″",
+         "7-7/8 × 2″ → Ø11.5 ft",
+         "7-7/8 × 2-3/4″ → Ø12.5 ft",
+         "9-7/8 × 3-7/8″ → Ø118″",
+         "11-3/4 × 3-7/8″ → Ø118″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar — hard way",
+        "sub": "standard rolls",
+        "cells": [
+         "10-3/4 × 2″ → Ø59″",
+         "11 × 2-3/8″ → Ø79″",
+         "13-3/4 × 3-1/8″ → Ø98″",
+         "15 × 3-1/8″ → Ø98″",
+         "19-3/4 × 3-7/8″ → Ø98″",
+         "21-3/4 × 4-3/4″ → Ø118″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square bar",
+        "sub": "standard rolls",
+        "cells": [
+         "3-1/2 × 3-1/2″ → Ø59″",
+         "4-3/8 × 4-3/8″ → Ø79″",
+         "4-3/4 × 4-3/4″ → Ø118″",
+         "5-1/8 × 5-1/8″ → Ø98″",
+         "7-1/8 × 7-1/8″ → Ø98″",
+         "7-7/8 × 7-7/8″ → Ø118″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø3-1/2″ → Ø71″",
+         "Ø4-3/8″ → Ø79″",
+         "Ø4-3/4″ → Ø118″",
+         "Ø5-7/8″ → Ø118″",
+         "Ø7-7/8″ → Ø16.4 ft",
+         "Ø8-7/8″ → Ø19.7 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round tube",
+        "sub": "optional rolls",
+        "cells": [
+         "Ø5-7/8″ × 8 ga → Ø19.7 ft",
+         "Ø8-5/8″ × 8 ga → Ø26.2 ft",
+         "Ø10-3/4″ × 1/4″ → Ø32.8 ft",
+         "Ø11-3/4″ × 1/4″ → Ø29.5 ft",
+         "Ø13-3/4″ × 1/4″ → Ø32.8 ft",
+         "Ø18-3/4″ × 5/16″ → Ø49.2 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pipe (NPS)",
+        "sub": "optional rolls",
+        "cells": [
+         "NPS 6 × .280″ → Ø11.5 ft",
+         "NPS 8 × .322″ → Ø13.1 ft",
+         "NPS 9 × .248″ → Ø13.1 ft",
+         "NPS 10 × .365″ → Ø16.4 ft",
+         "NPS 12 × .562″ → Ø26.2 ft",
+         "NPS 16 × .500″ → Ø39.4 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular tube",
+        "sub": "optional rolls",
+        "cells": [
+         "5-7/8 × 2″ × 3/16″ → Ø14.8 ft",
+         "7-7/8 × 3-7/8″ × 5/16″ → Ø16.4 ft",
+         "8-5/8 × 3-1/8″ × 1/4″ → Ø23 ft",
+         "11-3/4 × 3-7/8″ × 3/8″ → Ø26.2 ft",
+         "15-3/4 × 7-7/8″ × 3/8″ → Ø32.8 ft",
+         "19-3/4 × 9-7/8″ × 9/16″ —"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "optional rolls",
+        "cells": [
+         "□4-3/4″ × 1/4″ → Ø13.1 ft",
+         "□5-7/8″ × 5/16″ → Ø14.8 ft",
+         "□7-1/8″ × 3/8″ → Ø18 ft",
+         "□7-7/8″ × 3/8″ → Ø19.7 ft",
+         "□10-1/4″ × 9/16″ → Ø26.2 ft",
+         "□11-3/4″ × 9/16″ → Ø32.8 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg out",
+        "sub": "optional rolls",
+        "cells": [
+         "L 5-7/8 × 5-7/8 × 11/16″ → Ø13.1 ft",
+         "L 6-1/4 × 6-1/4 × 9/16″ → Ø98″",
+         "L 7-1/8 × 7-1/8 × 5/8″ → Ø118″",
+         "L 7-7/8 × 7-7/8 × 13/16″ → Ø118″",
+         "L 7-7/8 × 7-7/8 × 1-1/8″ → Ø13.1 ft",
+         "L 7-7/8 × 7-7/8 × 1-1/8″ → Ø13.1 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle — leg in",
+        "sub": "optional rolls",
+        "cells": [
+         "L 5-1/2 × 5-1/2 × 9/16″ → Ø16.4 ft",
+         "L 5-7/8 × 5-7/8 × 11/16″ → Ø13.1 ft",
+         "L 6-1/4 × 6-1/4 × 9/16″ → Ø19.7 ft",
+         "L 7-1/8 × 7-1/8 × 11/16″ → Ø19.7 ft",
+         "L 7-7/8 × 7-7/8 × 13/16″ → Ø19.7 ft",
+         "L 7-7/8 × 7-7/8 × 1-1/8″ → Ø23 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem out",
+        "sub": "standard rolls",
+        "cells": [
+         "T 5-7/8 × 9/16″ → Ø79″",
+         "T 6-1/4 × 13/16″ → Ø98″",
+         "T 7-7/8 × 13/16″ → Ø11.5 ft",
+         "T 7-7/8 × 1-1/8″ → Ø118″",
+         "T 9-1/2 × 1-1/8″ → Ø118″",
+         "T 9-7/8 × 1″* → Ø13.1 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — stem in",
+        "sub": "standard rolls",
+        "cells": [
+         "T 5-1/8 × 9/16″ → Ø98″",
+         "T 5-7/8 × 13/16″ → Ø118″",
+         "T 7-7/8 × 13/16″ → Ø11.5 ft",
+         "T 7-7/8 × 13/16″ → Ø11.5 ft",
+         "T 8-5/8 × 7/8″ → Ø13.1 ft",
+         "T 9-7/8 × 1″* → Ø16.4 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee — flange out",
+        "sub": "optional rolls",
+        "cells": [
+         "T 5-7/8 × 9/16″ → Ø79″",
+         "T 6-1/4 × 13/16″ → Ø98″",
+         "T 7-1/8 × 3/8″ → Ø19.7 ft",
+         "T 7-1/8 × 11/16″ → Ø19.7 ft",
+         "T 7-7/8 × 13/16″ → Ø19.7 ft",
+         "T 7-7/8 × 1-1/8″ → Ø19.7 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges out",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 280 → Ø79″",
+         "UPN 350 → Ø98″",
+         "UPN 380 → Ø118″",
+         "UPN 450 → Ø118″",
+         "UPN 550 → Ø11.5 ft",
+         "UPN 600 → Ø13.1 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — flanges in",
+        "sub": "standard rolls*",
+        "cells": [
+         "UPN 280 → Ø118″",
+         "UPN 350 → Ø118″",
+         "UPN 380 → Ø11.5 ft",
+         "UPN 450 → Ø11.5 ft",
+         "UPN 550 → Ø13.1 ft",
+         "UPN 600 → Ø14.8 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "I-beam — hard way",
+        "sub": "standard rolls*",
+        "cells": [
+         "IPN 300 → Ø118″",
+         "IPN 360 → Ø118″",
+         "IPN 360 → Ø11.5 ft",
+         "IPN 450 → Ø11.5 ft",
+         "IPN 550 → Ø13.1 ft",
+         "IPN 600 → Ø16.4 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "H-beam — hard way",
+        "sub": "standard rolls*",
+        "cells": [
+         "HEB 180 → Ø118″",
+         "HEB 200 → Ø98″",
+         "HEB 240 → Ø118″",
+         "HEB 300 → Ø13.1 ft",
+         "HEB 500 → Ø16.4 ft",
+         "HEB 600 → Ø19.7 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "UPN 180 → Ø32.8 ft",
+         "UPN 220 → Ø32.8 ft",
+         "UPN 260 → Ø39.4 ft",
+         "UPN 300 → Ø39.4 ft",
+         "UPN 340 → Ø49.2 ft",
+         "UPN 400 → Ø65.6 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "I-beam — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "IPN 180 → Ø14.8 ft",
+         "IPN 220 → Ø16.4 ft",
+         "IPN 260 → Ø32.8 ft",
+         "IPN 300 → Ø39.4 ft",
+         "IPN 360 → Ø32.8 ft",
+         "IPN 400 → Ø65.6 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "H-beam — easy way",
+        "sub": "optional rolls**",
+        "cells": [
+         "HEA 160 → Ø19.7 ft · HEB 120 → Ø13.1 ft",
+         "HEB 160 → Ø16.4 ft",
+         "HEB 180 → Ø19.7 ft",
+         "HEB 200 → Ø23 ft",
+         "HEB 280 → Ø32.8 ft",
+         "HEB 340 → Ø39.4 ft"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPK 160 DP",
+      "glance": [
+       "6.3″ (160 mm)",
+       "18.9″ (480 mm)",
+       "30 HP (22 kW)",
+       "21,605 lb (9,800 kg)"
+      ]
+     },
+     {
+      "name": "HPK 180 DP",
+      "glance": [
+       "7.09″ (180 mm)",
+       "22.8″ (580 mm)",
+       "40 HP (30 kW)",
+       "31,747 lb (14,400 kg)"
+      ]
+     },
+     {
+      "name": "HPK 200 DP",
+      "glance": [
+       "7.87″ (200 mm)",
+       "22.8″ (580 mm)",
+       "40 HP (30 kW)",
+       "36,376 lb (16,500 kg)"
+      ]
+     },
+     {
+      "name": "HPK 240 DP",
+      "glance": [
+       "9.45″ (240 mm)",
+       "24.4″ (620 mm)",
+       "63 HP (47 kW)",
+       "43,652 lb (19,800 kg)"
+      ]
+     },
+     {
+      "name": "HPK 300 DP",
+      "glance": [
+       "11.81″ (300 mm)",
+       "29.9″ (760 mm)",
+       "98 HP (73 kW)",
+       "84,878 lb (38,500 kg)"
+      ]
+     },
+     {
+      "name": "HPK 360 DP",
+      "glance": [
+       "14.17″ (360 mm)",
+       "31.5″ (800 mm)",
+       "103 HP (77 kW)",
+       "121,254 lb (55,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H. Capacity chart: each cell gives the largest section the machine rolls and, after the arrow, the minimum rolling diameter (outside) for it; a second value is a smaller section with its tighter minimum diameter. 'Standard rolls' profiles are rolled with the rolls supplied; 'optional rolls' need the matching roll set. * a special spacer may be needed · ** only with the beam-bending attachment. Beam sizes are European UPN / IPN / HEA / HEB designations with the nominal depth in inches. Based on 37,700 psi (260 N/mm²) yield-strength material; sizes are converted from the manufacturer's metric chart."
+   },
+   "headline": "Beams to HEB 600 · channel to UPN 600 · pipe to NPS 16 · angle to L 7-7/8 × 7-7/8 × 1-1/8″",
+   "group": "sahinler-angle"
+  },
+  "sahinler-tc-42": {
+   "id": "sahinler-tc-42",
+   "brand": "sahinler",
+   "name": "TC-42 NC tube coiling machine",
+   "short": "TC-42 NC coiler",
+   "models_label": "TC-42 NC · Ø2.56″ shafts · 10 HP",
+   "summary": "An NC-controlled coil rolling machine for heating coils, heat-exchanger and tank jackets: it rolls variable-pitch spiral coils with straight elbows at the start and finish in a single pass by automation. Three rolls driven by one gearbox and hydromotor, hydraulic lateral supports with rollers, hydraulic top support, infinitely variable speed and a material support stand are standard; tube from 12 ga wall.",
+   "features": [
+    "NC control panel standard — variable-pitch coils with elbows at start and finish in one pass",
+    "Single gearbox with hydromotor drives 3 rolls; rolls hardened and ground in the bore",
+    "Hydraulic lateral supports with roller; manual lateral supports; hydraulic top support",
+    "Infinitely variable speed; bottom rolls hydraulic up/down; material support stand"
+   ],
+   "optional": [
+    "Pipe, tube and profile bending rolls",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-tc42",
+    "sh-tc42-coil"
+   ],
+   "videos": [
+    {
+     "id": "QhEGGGOO4ug",
+     "title": "TC 42 NC tube coil rolling machine",
+     "duration": "PT0M41S",
+     "thumb": "video-QhEGGGOO4ug"
+    },
+    {
+     "id": "S_Irw3iNxd8",
+     "title": "TC 42 NC pipe coiling machine",
+     "duration": "PT2M45S",
+     "thumb": "video-S_Irw3iNxd8"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TC-42 NC",
+      "sub": "tube coiling machine",
+      "models": [
+       "TC-42 NC"
+      ],
+      "rows": [
+       {
+        "label": "Top roll shaft Ø",
+        "sub": "",
+        "cells": [
+         "2.56″ (65 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom roll shafts Ø",
+        "sub": "",
+        "cells": [
+         "2.56″ (65 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Standard roll Ø",
+        "sub": "",
+        "cells": [
+         "6.5″ (165 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. tube wall",
+        "sub": "",
+        "cells": [
+         "12 ga (2.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolling speed",
+        "sub": "",
+        "cells": [
+         "16 ft/min (5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "131 × 83 × 55″ (3,350 × 2,100 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,724 lb (3,050 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TC-42 NC",
+      "glance": [
+       "2.56″ (65 mm)",
+       "6.5″ (165 mm)",
+       "10 HP (7.5 kW)",
+       "6,724 lb (3,050 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shaft",
+     "roll_diameter",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Spiral and variable-pitch tube coils · tube wall from 12 ga · NC control standard",
+   "group": "sahinler-coil"
+  },
+  "sahinler-hkm-single": {
+   "id": "sahinler-hkm-single",
+   "brand": "sahinler",
+   "name": "HKM 40 · 45 · 60 · 65 V single-piston hydraulic ironworkers",
+   "short": "HKM single-piston",
+   "models_label": "HKM 40 (44 US tons) · HKM 45 (50) · HKM 60 (66) · HKM 65 V (72)",
+   "summary": "Hydraulic steelworkers in which one cylinder serves every work station — compact and economical for the shop that punches, shears and notches one job at a time. Punching, round and square bar shear, angle shear at 90° and 45°, flat-bar shear and (except on the HKM 40) a rectangular notching station, all with LED lighting, central lubrication and adjustable piston stroke. The HKM 65 V puts the piston vertical for vertical punching and cutting. A Ø7/8″ punch and die and the standard blade sets are included.",
+   "features": [
+    "One hydraulic cylinder serves all work stations: punching, round and square bar shear, angle shear 90° / 45°, flat-bar shear, U-notching (not on HKM 40)",
+    "Adjustable piston stroke for higher productivity; central lubrication; LED lighting on all stations",
+    "Ø7/8″ punch & die and standard punching tools; round and square bar blade set; angle blade set; U-notching blade set",
+    "HKM 65 V: vertical piston layout for vertical punching and cutting; spot lubrication",
+    "Punches up to Ø1-1/2″ as standard — punches and dies change quickly, special punches at short notice"
+   ],
+   "optional": [
+    "Large-hole punching tool — Ø1-1/2″ (5/16″ thick) up to Ø4-3/8″ (1/8″ thick)",
+    "Section punching tools for IPN, UPN, flat bar and angle",
+    "Section blades for UPN, IPN and T; V-notching blade",
+    "Press-brake tool on the punching station; hydraulic stripper",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hkm60",
+    "sh-hkm40",
+    "sh-hkm65v",
+    "sh-hkm40-rear",
+    "sh-hkm-tool-punches",
+    "sh-hkm-tool-notch"
+   ],
+   "videos": [
+    {
+     "id": "Ih_g56w46tU",
+     "title": "HKM 60 ironworker machine",
+     "duration": "PT2M9S",
+     "thumb": "video-Ih_g56w46tU"
+    },
+    {
+     "id": "jtzBulD29sQ",
+     "title": "HKM 40 (44 US ton) hydraulic ironworker",
+     "duration": "PT0M27S",
+     "thumb": "video-jtzBulD29sQ"
+    },
+    {
+     "id": "7i0384bLxF0",
+     "title": "HKM 60 (66 US ton) hydraulic ironworker",
+     "duration": "PT0M43S",
+     "thumb": "video-7i0384bLxF0"
+    },
+    {
+     "id": "n-OjAP38XNA",
+     "title": "HKM 65 V single-piston vertical ironworker",
+     "duration": "PT2M48S",
+     "thumb": "video-n-OjAP38XNA"
+    },
+    {
+     "id": "MQrQtCYScJY",
+     "title": "Angle iron miter cutting on the HKM 60",
+     "duration": "PT1M3S",
+     "thumb": "video-MQrQtCYScJY"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HKM single piston",
+      "sub": "HKM 40 · 45 · 60 · 65 V",
+      "models": [
+       "HKM 40",
+       "HKM 45",
+       "HKM 60",
+       "HKM 65 V"
+      ],
+      "rows": [
+       {
+        "label": "Punching, max. thickness",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø13/16 × 9/16″",
+         "Ø7/8 × 9/16″",
+         "Ø1-1/8 × 9/16″",
+         "Ø7/8 × 13/16″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Punching, larger hole",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø1-1/8 × 3/8″",
+         "Ø1-1/2 × 5/16″*",
+         "Ø1-1/2 × 7/16″*",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching, max. Ø",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø1-1/2 × 5/16″*",
+         "Ø3-7/8 × 1/8″**",
+         "Ø4-3/8 × 1/8″**",
+         "Ø1-1/2 × 7/16″*"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching force",
+        "sub": "",
+        "cells": [
+         "44 US tons (40 t)",
+         "50 US tons (45 t)",
+         "66 US tons (60 t)",
+         "72 US tons (65 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "1.2″ (30 mm)",
+         "2.1″ (55 mm)",
+         "2.2″ (55 mm)",
+         "1.6″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "at 0.8″ stroke",
+        "cells": [
+         "20",
+         "25",
+         "25",
+         "22 (5/8″ stroke)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "6.7″ (170 mm)",
+         "8.7″ (220 mm)",
+         "8.7″ (220 mm)",
+         "9.4″ (240 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bar shear — round · square",
+        "sub": "",
+        "cells": [
+         "Ø1-1/8″ · □1″",
+         "Ø1-3/8″ · □1-1/8″",
+         "Ø1-5/8″ · □1-3/8″",
+         "Ø1-5/8″ · □1-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Angle shear 90°",
+        "sub": "",
+        "cells": [
+         "3-1/8 × 3-1/8 × 5/16″",
+         "3-7/8 × 3-7/8 × 3/8″",
+         "4-3/4 × 4-3/4 × 1/2″",
+         "3-7/8 × 3-7/8 × 3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Angle shear 45°",
+        "sub": "",
+        "cells": [
+         "2 × 1/4″",
+         "2-3/4 × 1/4″",
+         "3-1/8 × 5/16″",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat-bar shear",
+        "sub": "width × thickness",
+        "cells": [
+         "7-7/8″ × 1/2″",
+         "7-7/8″ × 9/16″",
+         "7-7/8″ × 13/16″",
+         "13-3/4″ × 9/16″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Flat-bar shear, wide",
+        "sub": "width × thickness",
+        "cells": [
+         "11-3/4″ × 1/4″",
+         "11-3/4″ × 1/2″",
+         "11-3/4″ × 9/16″",
+         "9-7/8″ × 3/4″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade length",
+        "sub": "",
+        "cells": [
+         "13.9″ (355 mm)",
+         "12.5″ (320 mm)",
+         "12.5″ (320 mm)",
+         "13.9″ (355 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Notching — thickness",
+        "sub": "",
+        "cells": [
+         "—",
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "5/16″ (8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Notch width × depth",
+        "sub": "",
+        "cells": [
+         "—",
+         "1.7 × 3.9″ (40 × 100 mm)",
+         "1.7 × 3.9″ (40 × 100 mm)",
+         "2 × 3.5″ (50 × 90 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional UPN / IPN blades",
+        "sub": "",
+        "cells": [
+         "3 × 1-1/2″",
+         "3-1/8 × 1-3/4″",
+         "3-1/8 × 1-3/4″",
+         "3-7/8 × 2″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional Tee blades",
+        "sub": "",
+        "cells": [
+         "1-3/8 × 3/16″",
+         "1-5/8 × 3/16″",
+         "3-1/8 × 3/8″",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional V-notching blade",
+        "sub": "",
+        "cells": [
+         "—",
+         "3-7/8 × 3-7/8 × 5/16″",
+         "3-7/8 × 3-7/8 × 3/8″",
+         "3-1/2 × 3-1/2 × 5/16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional press-brake tool — bar",
+        "sub": "",
+        "cells": [
+         "—",
+         "3-7/8″ × 1/2″",
+         "3-7/8″ × 1/2″",
+         "4-3/8″ × 5/16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional press-brake tool — sheet",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "9-7/8″ × 1/4″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "43 × 33 × 60″ (1,100 × 840 × 1,500 mm)",
+         "59 × 37 × 66″ (1,500 × 940 × 1,700 mm)",
+         "60 × 37 × 70″ (1,500 × 940 × 1,800 mm)",
+         "46 × 37 × 76″ (1,150 × 940 × 1,950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,279 lb (580 kg)",
+         "3,086 lb (1,400 kg)",
+         "3,175 lb (1,440 kg)",
+         "2,679 lb (1,215 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HKM 40",
+      "glance": [
+       "Ø13/16 × 9/16″",
+       "3-1/8 × 3-1/8 × 5/16″",
+       "7-7/8″ × 1/2″",
+       "44 US tons (40 t)",
+       "1,279 lb (580 kg)"
+      ]
+     },
+     {
+      "name": "HKM 45",
+      "glance": [
+       "Ø7/8 × 9/16″",
+       "3-7/8 × 3-7/8 × 3/8″",
+       "7-7/8″ × 9/16″",
+       "50 US tons (45 t)",
+       "3,086 lb (1,400 kg)"
+      ]
+     },
+     {
+      "name": "HKM 60",
+      "glance": [
+       "Ø1-1/8 × 9/16″",
+       "4-3/4 × 4-3/4 × 1/2″",
+       "7-7/8″ × 13/16″",
+       "66 US tons (60 t)",
+       "3,175 lb (1,440 kg)"
+      ]
+     },
+     {
+      "name": "HKM 65 V",
+      "glance": [
+       "Ø7/8 × 13/16″",
+       "3-7/8 × 3-7/8 × 3/8″",
+       "13-3/4″ × 9/16″",
+       "72 US tons (65 t)",
+       "2,679 lb (1,215 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "punching",
+     "angle",
+     "flat_bar",
+     "force",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel of 65,000 psi (450 N/mm²) tensile strength; thickness in gauge / common fraction. * with a special tool · ** with the optional large-hole punching tool. Dimensions are overall L × W × H. All models punch Ø1/4″ up to Ø1-1/2″ as standard."
+   },
+   "headline": "44 – 72 US tons · punch to Ø1-1/8 × 9/16″ · angle to L 4-3/4 × 4-3/4 × 1/2″ · 4 – 5 work stations",
+   "group": "sahinler-iron"
+  },
+  "sahinler-hkm-double": {
+   "id": "sahinler-hkm-double",
+   "brand": "sahinler",
+   "name": "HKM 55 · 65 · 85 · 115 · 175 double-piston hydraulic ironworkers",
+   "short": "HKM double-piston",
+   "models_label": "HKM 55 (61 US tons) · 65 (72) · 85 (94) · 115 (127) · 175 (193)",
+   "summary": "Two separate hydraulic cylinders and two foot pedals, so two operators work at the same time — one punching, the other shearing angle, bar or flat, or notching. Electrical back gauge, adjustable piston stroke, central lubrication and LED lighting on every station; the HKM 115 comes with a Ø1″ punch and die and the HKM 175 with an oil cooling system. From 61 to 193 US tons: angle to L 7-7/8 × 7-7/8 × 13/16″, flat bar to 15 × 1-1/8″, round bar to Ø2-1/2″ and holes to Ø2-1/4″ in 7/8″ plate on the HKM 175.",
+   "features": [
+    "2 separate hydraulic cylinders and foot pedals — 2 operators work at the same time",
+    "Electrical back gauge; adjustable piston stroke; central lubrication; LED lighting on all work stations",
+    "Punching, round and square bar shear, angle shear 90° / 45°, flat-bar shear and U-notching stations; Ø1″ punch & die on HKM 115",
+    "Oil cooling system on the HKM 175",
+    "Ideal for cutting all ranges of angle, I-beam and U-section with the optional section blades"
+   ],
+   "optional": [
+    "Large-hole punching tool — up to Ø4-7/8″ × 3/16″",
+    "Section punching tools for IPN, UPN, flat bar and angle; section blades for UPN, IPN and T",
+    "V-notching blade; press-brake tool; hydraulic stripper",
+    "NC feeding table on the punching station",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hkm115",
+    "sh-hkm85",
+    "sh-hkm65",
+    "sh-hkm55",
+    "sh-hkm175",
+    "sh-hkm175-operators",
+    "sh-hkm175-backgauge",
+    "sh-hkm115-detail",
+    "sh-hkm-lube",
+    "sh-hkm-tool-brake",
+    "sh-hkm-tool-stripper",
+    "sh-hkm-tool-radius"
+   ],
+   "videos": [
+    {
+     "id": "wY5bTK1XnnE",
+     "title": "HKM 60, HKM 85 and HKM 115 hydraulic ironworkers — walk-around",
+     "duration": "PT1M47S",
+     "thumb": "video-wY5bTK1XnnE"
+    },
+    {
+     "id": "Tt33aBsxH-4",
+     "title": "HKM 115 ironworker machine",
+     "duration": "PT2M5S",
+     "thumb": "video-Tt33aBsxH-4"
+    },
+    {
+     "id": "tVxDdnI7tEI",
+     "title": "HKM 85 (94 US ton) hydraulic ironworker",
+     "duration": "PT1M1S",
+     "thumb": "video-tVxDdnI7tEI"
+    },
+    {
+     "id": "nSbf4Dwcoog",
+     "title": "HKM 65 (72 US ton) hydraulic ironworker",
+     "duration": "PT1M13S",
+     "thumb": "video-nSbf4Dwcoog"
+    },
+    {
+     "id": "jd5xdM5LENs",
+     "title": "HKM 175 hydraulic ironworker — all functions",
+     "duration": "PT2M5S",
+     "thumb": "video-jd5xdM5LENs"
+    },
+    {
+     "id": "Qaj7a7gDubg",
+     "title": "HKM 115 NC steelworker — keyway punching",
+     "duration": "PT2M55S",
+     "thumb": "video-Qaj7a7gDubg"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HKM double piston",
+      "sub": "HKM 55 · 65 · 85 · 115 · 175",
+      "models": [
+       "HKM 55",
+       "HKM 65",
+       "HKM 85",
+       "HKM 115",
+       "HKM 175"
+      ],
+      "rows": [
+       {
+        "label": "Punching, max. thickness",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø13/16 × 13/16″",
+         "Ø1 × 13/16″",
+         "Ø1-1/4 × 13/16″*",
+         "Ø1-3/8 × 1″",
+         "Ø1-5/8 × 1-1/4″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Punching, larger hole",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø1-5/8 × 3/8″**",
+         "Ø2-1/8 × 3/8″**",
+         "Ø2-1/8 × 1/2″**",
+         "Ø2-1/8 × 5/8″*",
+         "Ø2-1/4 × 7/8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching, max. Ø",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø3-7/8 × 1/8″**",
+         "Ø4-3/8 × 1/8″**",
+         "Ø4-3/8 × 3/16″**",
+         "Ø4-3/8 × 3/16″**",
+         "Ø4-7/8 × 3/16″**"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching force",
+        "sub": "",
+        "cells": [
+         "61 US tons (55 t)",
+         "72 US tons (65 t)",
+         "94 US tons (85 t)",
+         "127 US tons (115 t)",
+         "193 US tons (175 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "2.4″ (60 mm)",
+         "2.2″ (55 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "at 0.8″ stroke",
+        "cells": [
+         "25",
+         "25",
+         "25",
+         "25",
+         "22"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "12″ (305 mm)",
+         "12″ (305 mm)",
+         "14″ (355 mm)",
+         "14″ (355 mm)",
+         "24.6″ (625 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bar shear — round · square",
+        "sub": "",
+        "cells": [
+         "Ø1-5/8″ · □1-5/8″",
+         "Ø1-3/4″ · □1-3/4″",
+         "Ø2″ · □2″",
+         "Ø2-1/8″ · □2″",
+         "Ø2-1/2″ · □2-1/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Angle shear 90°",
+        "sub": "",
+        "cells": [
+         "4-3/4 × 4-3/4 × 1/2″",
+         "4-3/4 × 4-3/4 × 1/2″",
+         "5-7/8 × 5-7/8 × 9/16″",
+         "5-7/8 × 5-7/8 × 5/8″",
+         "7-7/8 × 7-7/8 × 13/16″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Angle shear 45°",
+        "sub": "",
+        "cells": [
+         "2-3/4 × 3/8″",
+         "2-3/4 × 3/8″",
+         "3-1/8 × 5/16″",
+         "3-1/8 × 3/8″",
+         "3-1/8 × 3/8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat-bar shear",
+        "sub": "width × thickness",
+        "cells": [
+         "7-7/8″ × 13/16″",
+         "11-3/4″ × 13/16″",
+         "15″ × 13/16″",
+         "15″ × 1″",
+         "15″ × 1-1/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Flat-bar shear, wide",
+        "sub": "width × thickness",
+        "cells": [
+         "11-3/4″ × 9/16″",
+         "14-3/4″ × 9/16″",
+         "19″ × 9/16″",
+         "23-1/2″ × 9/16″",
+         "23-1/2″ × 13/16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade length",
+        "sub": "",
+        "cells": [
+         "15″ (380 mm)",
+         "15″ (380 mm)",
+         "19″ (485 mm)",
+         "24″ (610 mm)",
+         "24″ (610 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Notching — thickness",
+        "sub": "",
+        "cells": [
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (12 mm)",
+         "1/2″ (12 mm)",
+         "5/8″ (16 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Notch width × depth",
+        "sub": "",
+        "cells": [
+         "1.8 × 3.5″ (50 × 90 mm)",
+         "1.8 × 3.5″ (50 × 90 mm)",
+         "2 × 3.9″ (50 × 100 mm)",
+         "2.4 × 3.9″ (60 × 100 mm)",
+         "2.4 × 3.9″ (60 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional UPN / IPN blades",
+        "sub": "",
+        "cells": [
+         "4-3/4 × 2-1/4″",
+         "4-3/4 × 2-1/4″",
+         "6-1/4 × 2-7/8″",
+         "7-7/8 × 3-1/2″",
+         "11-3/4 × 4-7/8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional Tee blades",
+        "sub": "",
+        "cells": [
+         "3-1/8 × 3/8″",
+         "3-1/2 × 7/16″",
+         "3-7/8 × 7/16″",
+         "4-3/4 × 1/2″",
+         "5-7/8 × 9/16″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional V-notching blade",
+        "sub": "",
+        "cells": [
+         "3-7/8 × 3-7/8 × 3/8″",
+         "3-7/8 × 3-7/8 × 3/8″",
+         "3-7/8 × 3-7/8 × 1/2″",
+         "3-7/8 × 3-7/8 × 1/2″",
+         "3-7/8 × 3-7/8 × 5/8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional press-brake tool — bar",
+        "sub": "",
+        "cells": [
+         "9-7/8″ × 1/2″",
+         "9-7/8″ × 9/16″",
+         "9-7/8″ × 13/16″",
+         "9-7/8″ × 7/8″",
+         "9-7/8″ × 1″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional press-brake tool — sheet",
+        "sub": "",
+        "cells": [
+         "19-3/4″ × 11 ga",
+         "19-3/4″ × 11 ga",
+         "19-3/4″ × 8 ga",
+         "27-1/2″ × 11 ga",
+         "27-1/2″ × 8 ga"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "67 × 37 × 74″ (1,700 × 940 × 1,900 mm)",
+         "68 × 37 × 74″ (1,750 × 940 × 1,900 mm)",
+         "76 × 37 × 80″ (1,950 × 940 × 2,050 mm)",
+         "80 × 37 × 86″ (2,050 × 940 × 2,200 mm)",
+         "107 × 45 × 90″ (2,700 × 1,150 × 2,300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,417 lb (1,550 kg)",
+         "3,494 lb (1,585 kg)",
+         "5,115 lb (2,320 kg)",
+         "6,482 lb (2,940 kg)",
+         "13,228 lb (6,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HKM 55",
+      "glance": [
+       "Ø13/16 × 13/16″",
+       "4-3/4 × 4-3/4 × 1/2″",
+       "7-7/8″ × 13/16″",
+       "61 US tons (55 t)",
+       "3,417 lb (1,550 kg)"
+      ]
+     },
+     {
+      "name": "HKM 65",
+      "glance": [
+       "Ø1 × 13/16″",
+       "4-3/4 × 4-3/4 × 1/2″",
+       "11-3/4″ × 13/16″",
+       "72 US tons (65 t)",
+       "3,494 lb (1,585 kg)"
+      ]
+     },
+     {
+      "name": "HKM 85",
+      "glance": [
+       "Ø1-1/4 × 13/16″*",
+       "5-7/8 × 5-7/8 × 9/16″",
+       "15″ × 13/16″",
+       "94 US tons (85 t)",
+       "5,115 lb (2,320 kg)"
+      ]
+     },
+     {
+      "name": "HKM 115",
+      "glance": [
+       "Ø1-3/8 × 1″",
+       "5-7/8 × 5-7/8 × 5/8″",
+       "15″ × 1″",
+       "127 US tons (115 t)",
+       "6,482 lb (2,940 kg)"
+      ]
+     },
+     {
+      "name": "HKM 175",
+      "glance": [
+       "Ø1-5/8 × 1-1/4″",
+       "7-7/8 × 7-7/8 × 13/16″",
+       "15″ × 1-1/8″",
+       "193 US tons (175 t)",
+       "13,228 lb (6,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "punching",
+     "angle",
+     "flat_bar",
+     "force",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel of 65,000 psi (450 N/mm²) tensile strength; thickness in gauge / common fraction. * with a special tool · ** with the optional large-hole punching tool. Dimensions are overall L × W × H. All models punch Ø1/4″ up to Ø1-1/2″ as standard."
+   },
+   "headline": "61 – 193 US tons · two operators at once · angle to L 7-7/8 × 7-7/8 × 13/16″ · holes to Ø2-1/4″ × 7/8″",
+   "group": "sahinler-iron"
+  },
+  "sahinler-hpm": {
+   "id": "sahinler-hpm",
+   "brand": "sahinler",
+   "name": "HPM 30 – 175 hydraulic punching machines",
+   "short": "HPM punching machines",
+   "models_label": "HPM 30 (33 US tons) · 40 · 65 · 85 · 115 · 175 (193 US tons)",
+   "summary": "Single-station hydraulic punches for holes and shapes from Ø1/4″ up to Ø2-1/4″ in plate to 1-1/4″ thick: the HPM 30 and 40 are the compact punches with an 11.8″ throat, the HPM 65 to 175 have a 24.6″ throat for punching deep into plate, angle and flat bar. A punch holder, a Ø7/8″ (HPM 65 / 85) or Ø1″ (HPM 115 / 175) punch and die, LED light and C-spanner are included; punches and dies interchange with the HKM steelworkers. A hydraulic stripper, press-brake tool and NC table system are optional.",
+   "features": [
+    "Punch & die Ø7/8″ (HPM 65 / 85) or Ø1″ (HPM 115 / 175) included; punch holder; C-spanner",
+    "LED light on the work station",
+    "Throat depth 11.8″ (HPM 30 / 40) or 24.6″ (HPM 65 – 175)",
+    "Punches and dies interchangeable with the HKM steelworkers — special tools on request"
+   ],
+   "optional": [
+    "Punching tools from Ø1/4″ up to Ø2-1/4″ (max. 1-1/4″ thick); special tools",
+    "Hydraulic stripper",
+    "Press-brake tool",
+    "NC table system",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpm65",
+    "sh-hpm30",
+    "sh-hpm115",
+    "sh-hpm-station",
+    "sh-hpm-punch"
+   ],
+   "videos": [
+    {
+     "id": "sXaJHhUVtnE",
+     "title": "HPM 40 Ton punching machine",
+     "duration": "PT0M24S",
+     "thumb": "video-sXaJHhUVtnE"
+    },
+    {
+     "id": "PAxfpuBlUlY",
+     "title": "HPM 65 (72 US ton) hydraulic plate punching machine",
+     "duration": "PT0M48S",
+     "thumb": "video-PAxfpuBlUlY"
+    },
+    {
+     "id": "TNc_jYos-VA",
+     "title": "HPM 115 hydraulic punching machine",
+     "duration": "PT1M37S",
+     "thumb": "video-TNc_jYos-VA"
+    },
+    {
+     "id": "v9mC9fqcVcE",
+     "title": "HPM 115 hydraulic punching machine — tools",
+     "duration": "PT1M58S",
+     "thumb": "video-v9mC9fqcVcE"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPM",
+      "sub": "hydraulic punching machines · 6 models",
+      "models": [
+       "HPM 30",
+       "HPM 40",
+       "HPM 65",
+       "HPM 85",
+       "HPM 115",
+       "HPM 175"
+      ],
+      "rows": [
+       {
+        "label": "Punching, max. thickness",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø7/8 × 3/8″",
+         "Ø13/16 × 9/16″",
+         "Ø1 × 13/16″",
+         "Ø1-1/4 × 13/16″*",
+         "Ø1-3/8 × 1″",
+         "Ø1-5/8 × 1-1/4″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Punching, larger hole",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø1-1/8 × 1/4″",
+         "Ø1-1/8 × 3/8″",
+         "Ø2-1/4 × 3/8″**",
+         "Ø2-1/4 × 1/2″**",
+         "Ø2-1/8 × 5/8″*",
+         "Ø2-1/4 × 7/8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching, max. Ø",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø1-1/2 × 3/16″*",
+         "Ø1-1/2 × 5/16″*",
+         "Ø4-3/8 × 1/8″**",
+         "Ø4-3/8 × 3/16″**",
+         "Ø4-3/8 × 3/16″**",
+         "Ø4-7/8 × 3/16″**"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "44 US tons (40 t)",
+         "72 US tons (65 t)",
+         "94 US tons (85 t)",
+         "127 US tons (115 t)",
+         "193 US tons (175 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "1.8″ (45 mm)",
+         "1.8″ (45 mm)",
+         "2.2″ (55 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "at 0.8″ stroke",
+        "cells": [
+         "23",
+         "22",
+         "22",
+         "21",
+         "21",
+         "21"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "24.6″ (625 mm)",
+         "24.6″ (625 mm)",
+         "24.6″ (625 mm)",
+         "24.6″ (625 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "cells": [
+         "40.9″ (1040 mm)",
+         "40.9″ (1040 mm)",
+         "37.4″ (950 mm)",
+         "37.4″ (950 mm)",
+         "37.4″ (950 mm)",
+         "37.4″ (950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional press-brake tool — bar",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "9-7/8″ × 9/16″",
+         "9-7/8″ × 13/16″",
+         "9-7/8″ × 7/8″",
+         "9-7/8″ × 1″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Optional press-brake tool — sheet",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "19-3/4″ × 11 ga",
+         "19-3/4″ × 11 ga",
+         "27-1/2″ × 11 ga",
+         "27-1/2″ × 8 ga"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "46 × 35 × 67″ (1,150 × 890 × 1,700 mm)",
+         "46 × 35 × 67″ (1,150 × 890 × 1,700 mm)",
+         "64 × 35 × 71″ (1,650 × 890 × 1,800 mm)",
+         "73 × 37 × 76″ (1,850 × 940 × 1,950 mm)",
+         "79 × 37 × 78″ (2,000 × 940 × 2,000 mm)",
+         "83 × 39 × 83″ (2,100 × 990 × 2,100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,653 lb (750 kg)",
+         "1,653 lb (750 kg)",
+         "5,258 lb (2,380 kg)",
+         "7,066 lb (3,210 kg)",
+         "8,289 lb (3,760 kg)",
+         "11,464 lb (5,200 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPM 30",
+      "glance": [
+       "Ø7/8 × 3/8″",
+       "11.8″ (300 mm)",
+       "33 US tons (30 t)",
+       "1,653 lb (750 kg)"
+      ]
+     },
+     {
+      "name": "HPM 40",
+      "glance": [
+       "Ø13/16 × 9/16″",
+       "11.8″ (300 mm)",
+       "44 US tons (40 t)",
+       "1,653 lb (750 kg)"
+      ]
+     },
+     {
+      "name": "HPM 65",
+      "glance": [
+       "Ø1 × 13/16″",
+       "24.6″ (625 mm)",
+       "72 US tons (65 t)",
+       "5,258 lb (2,380 kg)"
+      ]
+     },
+     {
+      "name": "HPM 85",
+      "glance": [
+       "Ø1-1/4 × 13/16″*",
+       "24.6″ (625 mm)",
+       "94 US tons (85 t)",
+       "7,066 lb (3,210 kg)"
+      ]
+     },
+     {
+      "name": "HPM 115",
+      "glance": [
+       "Ø1-3/8 × 1″",
+       "24.6″ (625 mm)",
+       "127 US tons (115 t)",
+       "8,289 lb (3,760 kg)"
+      ]
+     },
+     {
+      "name": "HPM 175",
+      "glance": [
+       "Ø1-5/8 × 1-1/4″",
+       "24.6″ (625 mm)",
+       "193 US tons (175 t)",
+       "11,464 lb (5,200 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "punching",
+     "throat",
+     "force",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel of 65,000 psi (450 N/mm²) tensile strength; thickness in gauge / common fraction. * with a special tool · ** with the optional large-hole punching tool. Dimensions are overall L × W × H. All models punch Ø1/4″ up to Ø1-1/2″ as standard."
+   },
+   "headline": "33 – 193 US tons · holes Ø1/4″ to Ø2-1/4″ · plate to 1-1/4″ · throat 11.8″ / 24.6″",
+   "group": "sahinler-punch"
+  },
+  "sahinler-hpm-dp": {
+   "id": "sahinler-hpm-dp",
+   "brand": "sahinler",
+   "name": "HPM 65 – 175 DP double-head hydraulic punching machines",
+   "short": "HPM DP double-head",
+   "models_label": "HPM 65 DP · 85 DP · 115 DP · 175 DP · 2 × 72 to 2 × 193 US tons",
+   "summary": "Two punching heads on one frame with double motor and double foot-pedal control: two operators punch at the same time, or two different tools stay set up for the same part. Each head has the capacity of the single HPM of the same size — 2 × 72 to 2 × 193 US tons, holes to Ø2-1/4″ — with a hydraulic stripper as the usual option.",
+   "features": [
+    "Two punching heads, double motor and double foot-pedal control",
+    "Each head with the full capacity of the single-head HPM; punch holders and punch & die included",
+    "Two operators at once, or two tools set up for the same part",
+    "LED lights on the work stations"
+   ],
+   "optional": [
+    "Hydraulic stripper",
+    "Punching tools Ø1/4″ – Ø2-1/4″; special tools",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpm85dp"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPM DP",
+      "sub": "double-head punching machines",
+      "models": [
+       "HPM 65 DP",
+       "HPM 85 DP",
+       "HPM 115 DP",
+       "HPM 175 DP"
+      ],
+      "rows": [
+       {
+        "label": "Punching force",
+        "sub": "",
+        "cells": [
+         "2 × 72 US tons (2 × 65 t)",
+         "2 × 94 US tons (2 × 85 t)",
+         "2 × 127 US tons (2 × 115 t)",
+         "2 × 193 US tons (2 × 175 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "79 × 35 × 71″ (2,000 × 890 × 1,800 mm)",
+         "89 × 37 × 76″ (2,250 × 940 × 1,950 mm)",
+         "89 × 37 × 78″ (2,250 × 940 × 2,000 mm)",
+         "110 × 43 × 85″ (2,800 × 1,100 × 2,150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,099 lb (3,220 kg)",
+         "8,157 lb (3,700 kg)",
+         "10,251 lb (4,650 kg)",
+         "14,881 lb (6,750 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPM 65 DP",
+      "glance": [
+       "2 × 72 US tons (2 × 65 t)",
+       "79 × 35 × 71″ (2,000 × 890 × 1,800 mm)",
+       "7,099 lb (3,220 kg)"
+      ]
+     },
+     {
+      "name": "HPM 85 DP",
+      "glance": [
+       "2 × 94 US tons (2 × 85 t)",
+       "89 × 37 × 76″ (2,250 × 940 × 1,950 mm)",
+       "8,157 lb (3,700 kg)"
+      ]
+     },
+     {
+      "name": "HPM 115 DP",
+      "glance": [
+       "2 × 127 US tons (2 × 115 t)",
+       "89 × 37 × 78″ (2,250 × 940 × 2,000 mm)",
+       "10,251 lb (4,650 kg)"
+      ]
+     },
+     {
+      "name": "HPM 175 DP",
+      "glance": [
+       "2 × 193 US tons (2 × 175 t)",
+       "110 × 43 × 85″ (2,800 × 1,100 × 2,150 mm)",
+       "14,881 lb (6,750 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "dimensions",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel of 65,000 psi (450 N/mm²) tensile strength; thickness in gauge / common fraction. * with a special tool · ** with the optional large-hole punching tool. Dimensions are overall L × W × H. All models punch Ø1/4″ up to Ø1-1/2″ as standard. Punching capacities per head as the HPM of the same size."
+   },
+   "headline": "2 × 72 to 2 × 193 US tons · two operators at once",
+   "group": "sahinler-punch"
+  },
+  "sahinler-hpm-cnc": {
+   "id": "sahinler-hpm-cnc",
+   "brand": "sahinler",
+   "name": "HPM 85 · 115 · 175 CNC punching machines",
+   "short": "HPM CNC",
+   "models_label": "HPM 85 CNC · 115 CNC · 175 CNC · Siemens control",
+   "summary": "The HPM punch on a 120 × 20″ CNC table (X 63″ / Y 23.6″ travel, 550 lb carriage load) with Siemens control: ideal for bolted steel-construction work where every hole must match — base plates, gussets, splice plates and flat bar from 14 ga to 1″ thick at ±0.004″ positioning accuracy. Material is held in hydraulic clamps on a divisible table, the axes run at 79 ft/min (98 ft/min on two axes) and the free software takes manual (MDI) punching or CAM programs with a 1-3/4″ minimum edge distance. A 3-head punching unit is optional on the 115 and 175.",
+   "features": [
+    "CNC table 120 × 20″ · X 63″ / Y 23.6″ travel · 550 lb max. carriage load; divisible separate table with hydraulic clamps",
+    "Material 14 ga to 1″ thick; positioning accuracy ±0.004″; 79 ft/min on one axis, 98 ft/min on two axes",
+    "Mobile CNC control panel (Siemens); free software — manual punching (MDI) and CAM program entry; min. 1-3/4″ edge distance",
+    "Punch & die Ø7/8″ (HPM 85) or Ø1″ (HPM 115 / 175); punch holder; automatic lubrication system; LED light; C-spanner"
+   ],
+   "optional": [
+    "3-head punching unit (HPM 115 / 175 CNC)",
+    "Punching tools Ø1/4″ – Ø2-1/4″; special tools",
+    "Hydraulic stripper",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpm115cnc"
+   ],
+   "videos": [
+    {
+     "id": "FsofcerO5nU",
+     "title": "HPM 115 CNC punching machine",
+     "duration": "PT2M52S",
+     "thumb": "video-FsofcerO5nU"
+    },
+    {
+     "id": "QRqZVK4bQzA",
+     "title": "HPM 115 CNC hydraulic punching machine",
+     "duration": "PT3M14S",
+     "thumb": "video-QRqZVK4bQzA"
+    },
+    {
+     "id": "7z2Ypj10HOQ",
+     "title": "HPM 115 CNC punch with triple punching head",
+     "duration": "PT1M7S",
+     "thumb": "video-7z2Ypj10HOQ"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPM CNC",
+      "sub": "CNC punching machines",
+      "models": [
+       "HPM 85 CNC",
+       "HPM 115 CNC",
+       "HPM 175 CNC"
+      ],
+      "rows": [
+       {
+        "label": "Punching force",
+        "sub": "",
+        "cells": [
+         "94 US tons (85 t)",
+         "127 US tons (115 t)",
+         "193 US tons (175 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Punching, max. thickness",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø1-1/4 × 13/16″*",
+         "Ø1-3/8 × 1″",
+         "Ø1-5/8 × 1-1/4″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Punching, max. Ø",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø4-3/8 × 3/16″**",
+         "Ø4-3/8 × 3/16″**",
+         "Ø4-7/8 × 3/16″**"
+        ],
+        "key": false
+       },
+       {
+        "label": "CNC table",
+        "sub": "",
+        "cells": [
+         "120 × 20″ (3050 × 500 mm)",
+         "120 × 20″ (3050 × 500 mm)",
+         "120 × 20″ (3050 × 500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axis travel X / Y",
+        "sub": "",
+        "cells": [
+         "63″ / 23.6″ (1600 / 600 mm)",
+         "63″ / 23.6″ (1600 / 600 mm)",
+         "63″ / 23.6″ (1600 / 600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Material thickness",
+        "sub": "",
+        "cells": [
+         "14 ga – 1″ (2 – 25 mm)",
+         "14 ga – 1″ (2 – 25 mm)",
+         "14 ga – 1″ (2 – 25 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.004″ (±0.1 mm)",
+         "±0.004″ (±0.1 mm)",
+         "±0.004″ (±0.1 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axis speed",
+        "sub": "one axis / two axes",
+        "cells": [
+         "79 / 98 ft/min (24 / 30 m/min)",
+         "79 / 98 ft/min (24 / 30 m/min)",
+         "79 / 98 ft/min (24 / 30 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. carriage load",
+        "sub": "",
+        "cells": [
+         "550 lb (250 kg)",
+         "550 lb (250 kg)",
+         "550 lb (250 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "24.6″ (625 mm)",
+         "24.6″ (625 mm)",
+         "24.6″ (625 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "punch",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPM 85 CNC",
+      "glance": [
+       "Ø1-1/4 × 13/16″*",
+       "24.6″ (625 mm)",
+       "94 US tons (85 t)",
+       "—"
+      ]
+     },
+     {
+      "name": "HPM 115 CNC",
+      "glance": [
+       "Ø1-3/8 × 1″",
+       "24.6″ (625 mm)",
+       "127 US tons (115 t)",
+       "—"
+      ]
+     },
+     {
+      "name": "HPM 175 CNC",
+      "glance": [
+       "Ø1-5/8 × 1-1/4″",
+       "24.6″ (625 mm)",
+       "193 US tons (175 t)",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "punching",
+     "throat",
+     "force",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel of 65,000 psi (450 N/mm²) tensile strength; thickness in gauge / common fraction. * with a special tool · ** with the optional large-hole punching tool. Dimensions are overall L × W × H. All models punch Ø1/4″ up to Ø1-1/2″ as standard."
+   },
+   "headline": "94 – 193 US tons · 120 × 20″ CNC table · ±0.004″ · 14 ga to 1″ plate",
+   "group": "sahinler-punch"
+  },
+  "sahinler-hpm-nc-line": {
+   "id": "sahinler-hpm-nc-line",
+   "brand": "sahinler",
+   "name": "HPM / HKM 65 – 175 NC punching and cutting lines",
+   "short": "HPM / HKM NC lines",
+   "models_label": "HPM 65 · 85 · 115 · 175 NC · HKM 65 · 85 · 115 · 175 NC",
+   "summary": "Special punching and cutting lines for angles, flat bar, IPN and UPN sections: an HPM punch or HKM steelworker with a 307 × 31″ NC table, a 201 × 16″ loading table, X travel of 244″ and mechanical holders and feeders. The NC control copies the hole pattern along the bar — clean holes up to Ø2-1/4″ in 7/8″ material, 14 ga to 13/16″ thick at ±0.004″ — with free software, manual punching and a copy system, programmed by technical values. On the HKM NC the shear station cuts the punched bar to length.",
+   "features": [
+    "NC table 307 × 31″ · loading table 201 × 16″ · X travel 244″; mechanical holders and feeders; roller conveyor",
+    "Punching of angles, flat bar, IPN and UPN sections: holes up to Ø2-1/4″ in 7/8″ material, copied by NC",
+    "Material 14 ga – 13/16″ thick; positioning accuracy ±0.004″",
+    "Mobile NC control panel; free software — manual punching and copy system, program by technical values",
+    "Punch & die Ø7/8″ (65 / 85) or Ø1″ (115 / 175); punch holder; divisible separate table with manual adjustment clamps; LED light"
+   ],
+   "optional": [
+    "Angle punching tooling; section tools",
+    "Hydraulic stripper",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hpm85nc"
+   ],
+   "videos": [
+    {
+     "id": "0Wy-gydiyQg",
+     "title": "HPM 85 NC programmable hydraulic punch",
+     "duration": "PT2M36S",
+     "thumb": "video-0Wy-gydiyQg"
+    },
+    {
+     "id": "tQkcc2WAlWc",
+     "title": "HKM 115 NC hydraulic ironworker with material feeder on the punching station",
+     "duration": "PT0M29S",
+     "thumb": "video-tQkcc2WAlWc"
+    },
+    {
+     "id": "eWnYKhe64l4",
+     "title": "Robotic punching cell with the HPM",
+     "duration": "PT4M26S",
+     "thumb": "video-eWnYKhe64l4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPM / HKM NC lines",
+      "sub": "punching & cutting lines with feeding system",
+      "models": [
+       "HPM / HKM 65 NC",
+       "HPM / HKM 85 NC",
+       "HPM / HKM 115 NC",
+       "HPM / HKM 175 NC"
+      ],
+      "rows": [
+       {
+        "label": "Punching force",
+        "sub": "",
+        "cells": [
+         "72 US tons (65 t)",
+         "94 US tons (85 t)",
+         "127 US tons (115 t)",
+         "193 US tons (175 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Punching, max. thickness",
+        "sub": "Ø × thickness",
+        "cells": [
+         "Ø1 × 13/16″",
+         "Ø1-1/4 × 13/16″*",
+         "Ø1-3/8 × 1″",
+         "Ø1-5/8 × 1-1/4″"
+        ],
+        "key": true
+       },
+       {
+        "label": "NC table",
+        "sub": "",
+        "cells": [
+         "307 × 31″ (7800 × 800 mm)",
+         "307 × 31″ (7800 × 800 mm)",
+         "307 × 31″ (7800 × 800 mm)",
+         "307 × 31″ (7800 × 800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loading table",
+        "sub": "",
+        "cells": [
+         "201 × 16″ (5100 × 400 mm)",
+         "201 × 16″ (5100 × 400 mm)",
+         "201 × 16″ (5100 × 400 mm)",
+         "201 × 16″ (5100 × 400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "X travel",
+        "sub": "",
+        "cells": [
+         "244″ (6200 mm)",
+         "244″ (6200 mm)",
+         "244″ (6200 mm)",
+         "244″ (6200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Material thickness",
+        "sub": "",
+        "cells": [
+         "14 ga – 13/16″ (2 – 20 mm)",
+         "14 ga – 13/16″ (2 – 20 mm)",
+         "14 ga – 13/16″ (2 – 20 mm)",
+         "14 ga – 13/16″ (2 – 20 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.004″ (±0.1 mm)",
+         "±0.004″ (±0.1 mm)",
+         "±0.004″ (±0.1 mm)",
+         "±0.004″ (±0.1 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPM / HKM 65 NC",
+      "glance": [
+       "72 US tons (65 t)",
+       "Ø1 × 13/16″",
+       "307 × 31″ (7800 × 800 mm)"
+      ]
+     },
+     {
+      "name": "HPM / HKM 85 NC",
+      "glance": [
+       "94 US tons (85 t)",
+       "Ø1-1/4 × 13/16″*",
+       "307 × 31″ (7800 × 800 mm)"
+      ]
+     },
+     {
+      "name": "HPM / HKM 115 NC",
+      "glance": [
+       "127 US tons (115 t)",
+       "Ø1-3/8 × 1″",
+       "307 × 31″ (7800 × 800 mm)"
+      ]
+     },
+     {
+      "name": "HPM / HKM 175 NC",
+      "glance": [
+       "193 US tons (175 t)",
+       "Ø1-5/8 × 1-1/4″",
+       "307 × 31″ (7800 × 800 mm)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "punching",
+     "table"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel of 65,000 psi (450 N/mm²) tensile strength; thickness in gauge / common fraction. * with a special tool · ** with the optional large-hole punching tool. Dimensions are overall L × W × H. All models punch Ø1/4″ up to Ø1-1/2″ as standard."
+   },
+   "headline": "72 – 193 US tons · 307 × 31″ NC table · angles, flat bar, IPN and UPN · ±0.004″",
+   "group": "sahinler-punch"
+  },
+  "sahinler-dpm": {
+   "id": "sahinler-dpm",
+   "brand": "sahinler",
+   "name": "DPM hydraulic shop presses, 33 – 220 US tons",
+   "short": "DPM shop presses",
+   "models_label": "DPM 775-30 – DPM 1570-200 · 9 models",
+   "summary": "H-frame hydraulic shop presses from 33 to 220 US tons on a welded steel frame: two-speed joystick control, a pressure gauge and relief valve against overload, height-adjustable bottom tables with a table up/down attachment and a pair of V-blocks. The cylinder stops at any position for straightening, pressing bearings and bushings, bending and assembly work; a hand pump, foot pedal and limit switch are optional. Model numbers give the working width in mm and the force in metric tons — a DPM 1040-60 is 40.9″ between the columns at 66 US tons.",
+   "features": [
+    "Steel construction welded frame; stops at any position",
+    "Two-speed joystick control; pressure gauge; relief valve against overload",
+    "Height-adjustable bottom tables with table up/down movement attachment",
+    "A pair of V-blocks included; easy to operate"
+   ],
+   "optional": [
+    "Hand pump",
+    "Foot-pedal control",
+    "Limit switch + foot pedal",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-dpm",
+    "sh-dpm200"
+   ],
+   "videos": [
+    {
+     "id": "C9UMkUAX9io",
+     "title": "DPM 1040 × 60 Ton hydraulic shop press",
+     "duration": "PT2M40S",
+     "thumb": "video-C9UMkUAX9io"
+    },
+    {
+     "id": "KZV6tOhQ-6E",
+     "title": "DPM 1570 × 150 hydraulic shop press — double speed",
+     "duration": "PT2M40S",
+     "thumb": "video-KZV6tOhQ-6E"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DPM 30 – 100",
+      "sub": "33 – 110 US tons",
+      "models": [
+       "DPM 775-30",
+       "DPM 1040-60",
+       "DPM 1040-80",
+       "DPM 1070-100",
+       "DPM 1570-100"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "66 US tons (60 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "110 US tons (100 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "3,540 psi (245 bar)",
+         "3,420 psi (235 bar)",
+         "3,700 psi (255 bar)",
+         "3,810 psi (265 bar)",
+         "3,810 psi (265 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cylinder Ø (bore × rod)",
+        "sub": "",
+        "cells": [
+         "4.9″ × 3.1″ (125 × 80 mm)",
+         "7.1″ × 4.7″ (180 × 120 mm)",
+         "7.9″ × 4.7″ (200 × 120 mm)",
+         "8.7″ × 6.3″ (220 × 160 mm)",
+         "8.7″ × 6.3″ (220 × 160 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance / working / return speed",
+        "sub": "",
+        "cells": [
+         "0.28 / 0.20 / 0.39 in/s (7 / 5 / 10 mm/s)",
+         "0.31 / 0.16 / 0.39 in/s (8 / 4 / 10 mm/s)",
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bed-hole spacing (A)",
+        "sub": "",
+        "cells": [
+         "6.5″ (165 mm)",
+         "6.5″ (165 mm)",
+         "6.5″ (165 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working width (B)",
+        "sub": "between the columns",
+        "cells": [
+         "30.5″ (775 mm)",
+         "40.9″ (1040 mm)",
+         "40.9″ (1040 mm)",
+         "42.1″ (1070 mm)",
+         "61.8″ (1570 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Depth (C)",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "10.2″ (260 mm)",
+         "10.2″ (260 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "59 × 28 × 80″ (1,500 × 710 × 2,050 mm)",
+         "71 × 28 × 83″ (1,800 × 710 × 2,100 mm)",
+         "71 × 30 × 83″ (1,800 × 760 × 2,100 mm)",
+         "83 × 39 × 90″ (2,100 × 990 × 2,300 mm)",
+         "103 × 39 × 90″ (2,600 × 990 × 2,300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "926 lb (420 kg)",
+         "1,764 lb (800 kg)",
+         "1,841 lb (835 kg)",
+         "3,131 lb (1,420 kg)",
+         "3,483 lb (1,580 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "DPM 150 – 200",
+      "sub": "165 – 220 US tons",
+      "models": [
+       "DPM 1070-150",
+       "DPM 1570-150",
+       "DPM 1070-200",
+       "DPM 1570-200"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "165 US tons (150 t)",
+         "165 US tons (150 t)",
+         "220 US tons (200 t)",
+         "220 US tons (200 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "3,540 psi (245 bar)",
+         "3,540 psi (245 bar)",
+         "4,100 psi (285 bar)",
+         "4,100 psi (285 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cylinder Ø (bore × rod)",
+        "sub": "",
+        "cells": [
+         "11″ × 7.9″ (280 × 200 mm)",
+         "11″ × 7.9″ (280 × 200 mm)",
+         "11.8″ × 8.3″ (300 × 210 mm)",
+         "11.8″ × 8.3″ (300 × 210 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance / working / return speed",
+        "sub": "",
+        "cells": [
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "— / 0.26 / 0.79 in/s (— / 7 / 20 mm/s)",
+         "— / 0.26 / 0.79 in/s (— / 7 / 20 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bed-hole spacing (A)",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working width (B)",
+        "sub": "between the columns",
+        "cells": [
+         "42.1″ (1070 mm)",
+         "61.8″ (1570 mm)",
+         "42.1″ (1070 mm)",
+         "61.8″ (1570 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Depth (C)",
+        "sub": "",
+        "cells": [
+         "11.4″ (290 mm)",
+         "11.4″ (290 mm)",
+         "17.3″ (440 mm)",
+         "17.3″ (440 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "20 HP (15 kW)",
+         "20 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "83 × 39 × 92″ (2,100 × 990 × 2,350 mm)",
+         "103 × 39 × 92″ (2,600 × 990 × 2,350 mm)",
+         "71 × 65 × 113″ (1,800 × 1,650 × 2,850 mm)",
+         "91 × 65 × 113″ (2,300 × 1,650 × 2,850 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,189 lb (1,900 kg)",
+         "4,850 lb (2,200 kg)",
+         "8,929 lb (4,050 kg)",
+         "9,921 lb (4,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DPM 775-30",
+      "glance": [
+       "33 US tons (30 t)",
+       "7.9″ (200 mm)",
+       "30.5″ (775 mm)",
+       "4 HP (3 kW)",
+       "926 lb (420 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1040-60",
+      "glance": [
+       "66 US tons (60 t)",
+       "9.8″ (250 mm)",
+       "40.9″ (1040 mm)",
+       "5.4 HP (4 kW)",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1040-80",
+      "glance": [
+       "88 US tons (80 t)",
+       "9.8″ (250 mm)",
+       "40.9″ (1040 mm)",
+       "5.4 HP (4 kW)",
+       "1,841 lb (835 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1070-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "42.1″ (1070 mm)",
+       "7.4 HP (5.5 kW)",
+       "3,131 lb (1,420 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1570-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "61.8″ (1570 mm)",
+       "7.4 HP (5.5 kW)",
+       "3,483 lb (1,580 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1070-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "42.1″ (1070 mm)",
+       "15 HP (11 kW)",
+       "4,189 lb (1,900 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1570-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "61.8″ (1570 mm)",
+       "15 HP (11 kW)",
+       "4,850 lb (2,200 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1070-200",
+      "glance": [
+       "220 US tons (200 t)",
+       "11.8″ (300 mm)",
+       "42.1″ (1070 mm)",
+       "20 HP (15 kW)",
+       "8,929 lb (4,050 kg)"
+      ]
+     },
+     {
+      "name": "DPM 1570-200",
+      "glance": [
+       "220 US tons (200 t)",
+       "11.8″ (300 mm)",
+       "61.8″ (1570 mm)",
+       "20 HP (15 kW)",
+       "9,921 lb (4,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "stroke",
+     "width",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions are overall L × W × H; working width is the clear width between the columns. Metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "33 – 220 US tons (30 – 200 t) · working widths 30.5″ to 61.8″ · two-speed joystick control",
+   "group": "sahinler-press"
+  },
+  "sahinler-dpm-k": {
+   "id": "sahinler-dpm-k",
+   "brand": "sahinler",
+   "name": "DPM-K · DK hydraulic shop presses with mobile cylinder",
+   "short": "DPM-K · DK mobile cylinder",
+   "models_label": "DPM-K 775-30 – DPM-K 1570-150 · DK 1570-100 – DK 1900-200",
+   "summary": "The DPM press with a cylinder head that travels across the frame — geared movement by hand wheel — so the ram is positioned over the work instead of the work under the ram: long shafts, frames and plates are straightened without re-clamping. DPM-K from 33 to 165 US tons with the same two-speed joystick control, pressure gauge and relief valve, height-adjustable tables and V-blocks as the DPM; the DK series adds a wider 61.8″ – 74.8″ frame from 110 to 220 US tons.",
+   "features": [
+    "Cylinder head travels across the frame — geared movement by hand wheel",
+    "Steel construction welded frame; stops at any position",
+    "Two-speed joystick control (except 220 US ton model); pressure gauge; relief valve against overload",
+    "Height-adjustable bottom tables with up/down attachment; a pair of V-blocks included"
+   ],
+   "optional": [
+    "Hand pump",
+    "Foot-pedal control",
+    "Limit switch + foot pedal",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-dpmk",
+    "sh-dk"
+   ],
+   "videos": [
+    {
+     "id": "IaLQHL62RHQ",
+     "title": "DPM-K and DK hydraulic shop press with sliding cylinder",
+     "duration": "PT2M54S",
+     "thumb": "video-IaLQHL62RHQ"
+    },
+    {
+     "id": "aQx2zab_GHM",
+     "title": "DPM-K 1040 × 80 Ton workshop press",
+     "duration": "PT0M58S",
+     "thumb": "video-aQx2zab_GHM"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DPM-K 30 – 100",
+      "sub": "33 – 110 US tons",
+      "models": [
+       "DPM-K 775-30",
+       "DPM-K 1040-60",
+       "DPM-K 1040-80",
+       "DPM-K 1070-100"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "66 US tons (60 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "3,540 psi (245 bar)",
+         "3,420 psi (235 bar)",
+         "3,700 psi (255 bar)",
+         "3,810 psi (265 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cylinder Ø (bore × rod)",
+        "sub": "",
+        "cells": [
+         "4.9″ × 3.1″ (125 × 80 mm)",
+         "7.1″ × 4.7″ (180 × 120 mm)",
+         "7.9″ × 4.7″ (200 × 120 mm)",
+         "8.7″ × 6.3″ (220 × 160 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance / working / return speed",
+        "sub": "",
+        "cells": [
+         "0.30 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.31 / 0.16 / 0.39 in/s (8 / 4 / 10 mm/s)",
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bed-hole spacing (A)",
+        "sub": "",
+        "cells": [
+         "6.5″ (165 mm)",
+         "6.5″ (165 mm)",
+         "6.5″ (165 mm)",
+         "7.5″ (190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working width (B)",
+        "sub": "between the columns",
+        "cells": [
+         "30.5″ (775 mm)",
+         "40.9″ (1040 mm)",
+         "40.9″ (1040 mm)",
+         "42.1″ (1070 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Depth (C)",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "10.2″ (260 mm)",
+         "10.2″ (260 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "59 × 28 × 80″ (1,500 × 710 × 2,050 mm)",
+         "71 × 28 × 83″ (1,800 × 710 × 2,100 mm)",
+         "71 × 30 × 83″ (1,800 × 760 × 2,100 mm)",
+         "83 × 39 × 96″ (2,100 × 990 × 2,450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "926 lb (420 kg)",
+         "1,764 lb (800 kg)",
+         "1,841 lb (835 kg)",
+         "3,307 lb (1,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "DPM-K 100 – 150",
+      "sub": "110 – 165 US tons",
+      "models": [
+       "DPM-K 1570-100",
+       "DPM-K 1070-150",
+       "DPM-K 1570-150"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "165 US tons (150 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "3,810 psi (265 bar)",
+         "3,540 psi (245 bar)",
+         "3,540 psi (245 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cylinder Ø (bore × rod)",
+        "sub": "",
+        "cells": [
+         "8.7″ × 6.3″ (220 × 160 mm)",
+         "11″ × 7.9″ (280 × 200 mm)",
+         "11″ × 7.9″ (280 × 200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance / working / return speed",
+        "sub": "",
+        "cells": [
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bed-hole spacing (A)",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working width (B)",
+        "sub": "between the columns",
+        "cells": [
+         "61.8″ (1570 mm)",
+         "42.1″ (1070 mm)",
+         "61.8″ (1570 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Depth (C)",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "11.4″ (290 mm)",
+         "11.4″ (290 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "103 × 39 × 96″ (2,600 × 990 × 2,450 mm)",
+         "83 × 39 × 98″ (2,100 × 990 × 2,500 mm)",
+         "103 × 39 × 98″ (2,600 × 990 × 2,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,715 lb (1,685 kg)",
+         "4,123 lb (1,870 kg)",
+         "5,071 lb (2,300 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "DK 100 – 200",
+      "sub": "110 – 220 US tons · 61.8″ – 74.8″ wide",
+      "models": [
+       "DK 1570-100",
+       "DK 1570-150",
+       "DK 1900-200"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "220 US tons (200 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "3,810 psi (265 bar)",
+         "3,540 psi (245 bar)",
+         "4,100 psi (285 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cylinder Ø (bore × rod)",
+        "sub": "",
+        "cells": [
+         "8.7″ × 6.3″ (220 × 160 mm)",
+         "11″ × 7.9″ (280 × 200 mm)",
+         "11.8″ × 8.3″ (300 × 210 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance / working / return speed",
+        "sub": "",
+        "cells": [
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "— / 0.26 / 0.79 in/s (— / 7 / 20 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bed-hole spacing (A)",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working width (B)",
+        "sub": "between the columns",
+        "cells": [
+         "61.8″ (1570 mm)",
+         "61.8″ (1570 mm)",
+         "74.8″ (1900 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Depth (C)",
+        "sub": "",
+        "cells": [
+         "12.4″ (315 mm)",
+         "14.2″ (360 mm)",
+         "17.3″ (440 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "15 HP (11 kW)",
+         "20 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "103 × 39 × 103″ (2,600 × 990 × 2,600 mm)",
+         "103 × 39 × 103″ (2,600 × 990 × 2,600 mm)",
+         "104 × 66 × 113″ (2,650 × 1,700 × 2,850 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,946 lb (1,790 kg)",
+         "5,291 lb (2,400 kg)",
+         "10,582 lb (4,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DPM-K 775-30",
+      "glance": [
+       "33 US tons (30 t)",
+       "7.9″ (200 mm)",
+       "30.5″ (775 mm)",
+       "4 HP (3 kW)",
+       "926 lb (420 kg)"
+      ]
+     },
+     {
+      "name": "DPM-K 1040-60",
+      "glance": [
+       "66 US tons (60 t)",
+       "9.8″ (250 mm)",
+       "40.9″ (1040 mm)",
+       "5.4 HP (4 kW)",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "DPM-K 1040-80",
+      "glance": [
+       "88 US tons (80 t)",
+       "9.8″ (250 mm)",
+       "40.9″ (1040 mm)",
+       "5.4 HP (4 kW)",
+       "1,841 lb (835 kg)"
+      ]
+     },
+     {
+      "name": "DPM-K 1070-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "42.1″ (1070 mm)",
+       "7.4 HP (5.5 kW)",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "DPM-K 1570-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "61.8″ (1570 mm)",
+       "7.4 HP (5.5 kW)",
+       "3,715 lb (1,685 kg)"
+      ]
+     },
+     {
+      "name": "DPM-K 1070-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "42.1″ (1070 mm)",
+       "15 HP (11 kW)",
+       "4,123 lb (1,870 kg)"
+      ]
+     },
+     {
+      "name": "DPM-K 1570-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "61.8″ (1570 mm)",
+       "15 HP (11 kW)",
+       "5,071 lb (2,300 kg)"
+      ]
+     },
+     {
+      "name": "DK 1570-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "61.8″ (1570 mm)",
+       "7.4 HP (5.5 kW)",
+       "3,946 lb (1,790 kg)"
+      ]
+     },
+     {
+      "name": "DK 1570-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "61.8″ (1570 mm)",
+       "15 HP (11 kW)",
+       "5,291 lb (2,400 kg)"
+      ]
+     },
+     {
+      "name": "DK 1900-200",
+      "glance": [
+       "220 US tons (200 t)",
+       "11.8″ (300 mm)",
+       "74.8″ (1900 mm)",
+       "20 HP (15 kW)",
+       "10,582 lb (4,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "stroke",
+     "width",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions are overall L × W × H; working width is the clear width between the columns. Metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "33 – 220 US tons · cylinder travels across the frame · working widths 30.5″ to 74.8″",
+   "group": "sahinler-press"
+  },
+  "sahinler-at": {
+   "id": "sahinler-at",
+   "brand": "sahinler",
+   "name": "AT universal T-slot hydraulic presses, 110 – 165 US tons",
+   "short": "AT T-slot presses",
+   "models_label": "AT 1020-100 · 1520-100 · 1020-150 · 1520-150",
+   "summary": "Hydraulic presses with T-slot top and bottom tables for die work — forming, blanking, coining and assembly tooling bolted straight to the tables. Two guide cylinders, one each side, keep the ram square; stepless stroke adjustment by limit switch, adjustable pressure valve, pressure gauge, height-adjustable bottom table with up/down attachment and two-hand control. 110 or 165 US tons with 40.2″ or 59.8″ between the columns and 24″ – 26.8″ daylight.",
+   "features": [
+    "T-slot top and bottom tables for die work; table centre hole Ø3.9″",
+    "Two guide cylinders, one each side; stepless stroke adjustment (limit switch)",
+    "Adjustable pressure valve; pressure gauge; two-hand control",
+    "Height-adjustable bottom table with table up/down movement attachment; steel construction welded frame"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-at"
+   ],
+   "videos": [
+    {
+     "id": "A0-KkaGnAaM",
+     "title": "AT hydraulic shop press with T-slot table",
+     "duration": "PT2M14S",
+     "thumb": "video-A0-KkaGnAaM"
+    },
+    {
+     "id": "CDDqTYn6SU0",
+     "title": "AT-S 1520 × 150 Ton straight-side hydraulic press with heated platen",
+     "duration": "PT3M10S",
+     "thumb": "video-CDDqTYn6SU0"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "AT",
+      "sub": "universal T-slot hydraulic presses",
+      "models": [
+       "AT 1020-100",
+       "AT 1520-100",
+       "AT 1020-150",
+       "AT 1520-150"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "165 US tons (150 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "3,810 psi (265 bar)",
+         "3,810 psi (265 bar)",
+         "3,540 psi (245 bar)",
+         "3,540 psi (245 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight (table to table)",
+        "sub": "",
+        "cells": [
+         "26.8″ (680 mm)",
+         "26.8″ (680 mm)",
+         "24″ (610 mm)",
+         "24″ (610 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance / working / return speed",
+        "sub": "",
+        "cells": [
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.31 / 0.20 / 0.39 in/s (8 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom table",
+        "sub": "",
+        "cells": [
+         "19.7 × 40.2″ (500 × 1,000 mm)",
+         "19.7 × 59.8″ (500 × 1,500 mm)",
+         "23.6 × 40.2″ (600 × 1,000 mm)",
+         "23.6 × 59.8″ (600 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table centre-hole Ø",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bed-hole spacing (A)",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working width (B)",
+        "sub": "between the columns",
+        "cells": [
+         "40.2″ (1020 mm)",
+         "59.8″ (1520 mm)",
+         "40.2″ (1020 mm)",
+         "59.8″ (1520 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "83 × 39 × 93″ (2,100 × 990 × 2,350 mm)",
+         "103 × 39 × 93″ (2,600 × 990 × 2,350 mm)",
+         "83 × 39 × 96″ (2,100 × 990 × 2,450 mm)",
+         "103 × 39 × 96″ (2,600 × 990 × 2,450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,376 lb (1,985 kg)",
+         "5,214 lb (2,370 kg)",
+         "5,732 lb (2,600 kg)",
+         "7,055 lb (3,200 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "AT 1020-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "40.2″ (1020 mm)",
+       "10 HP (7.5 kW)",
+       "4,376 lb (1,985 kg)"
+      ]
+     },
+     {
+      "name": "AT 1520-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "59.8″ (1520 mm)",
+       "10 HP (7.5 kW)",
+       "5,214 lb (2,370 kg)"
+      ]
+     },
+     {
+      "name": "AT 1020-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "40.2″ (1020 mm)",
+       "15 HP (11 kW)",
+       "5,732 lb (2,600 kg)"
+      ]
+     },
+     {
+      "name": "AT 1520-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "59.8″ (1520 mm)",
+       "15 HP (11 kW)",
+       "7,055 lb (3,200 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "stroke",
+     "width",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions are overall L × W × H; working width is the clear width between the columns. Metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "110 – 165 US tons · T-slot tables 19.7 × 40.2″ to 23.6 × 59.8″ · daylight to 26.8″",
+   "group": "sahinler-press"
+  },
+  "sahinler-ap": {
+   "id": "sahinler-ap",
+   "brand": "sahinler",
+   "name": "AP garage-type hydraulic press brakes, 110 – 165 US tons",
+   "short": "AP press brakes",
+   "models_label": "AP 1020-100 · 1520-100 · 1020-150 · 1520-150",
+   "summary": "A hydraulic press fitted with press-brake tooling for heavy plate in short lengths: a 5-face prism bottom die and hardened blades bend 1/4″ (100 t) or 3/8″ (150 t) mild steel over 40.2″ or 59.8″, with a T-slot bottom table for other tooling. Stepless stroke adjustment, adjustable pressure valve, pressure gauge, height-adjustable bottom attachment, a large workspace for big sheets and two-hand control — the affordable press brake of the repair and trailer shop, with a 29.5″ or 39.4″ manual back gauge as an option.",
+   "features": [
+    "Hardened blades; 5-face prism bottom die; bottom table with T-slot",
+    "Bends 1/4″ (110 US tons) or 3/8″ (165 US tons) mild steel",
+    "Stepless stroke adjustment; adjustable pressure valve; pressure gauge",
+    "Height-adjustable bottom attachment; large workspace for big sheets; two-hand control"
+   ],
+   "optional": [
+    "29.5″ (750 mm) or 39.4″ (1000 mm) manual back gauge",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-ap"
+   ],
+   "videos": [
+    {
+     "id": "3NVkGji2fEY",
+     "title": "AP hydraulic shop press brake — affordable press brake for small shops",
+     "duration": "PT2M9S",
+     "thumb": "video-3NVkGji2fEY"
+    },
+    {
+     "id": "WVxN1BFnKsk",
+     "title": "AP hydraulic press with special tooling",
+     "duration": "PT3M14S",
+     "thumb": "video-WVxN1BFnKsk"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "AP",
+      "sub": "garage-type hydraulic press brakes",
+      "models": [
+       "AP 1020-100",
+       "AP 1520-100",
+       "AP 1020-150",
+       "AP 1520-150"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "165 US tons (150 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "3,810 psi (265 bar)",
+         "3,810 psi (265 bar)",
+         "3,540 psi (245 bar)",
+         "3,540 psi (245 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending capacity",
+        "sub": "mild steel",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Advance / working / return speed",
+        "sub": "",
+        "cells": [
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)",
+         "0.35 / 0.20 / 0.39 in/s (9 / 5 / 10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bottom table",
+        "sub": "",
+        "cells": [
+         "19.7 × 40.2″ (500 × 1,000 mm)",
+         "19.7 × 59.8″ (500 × 1,500 mm)",
+         "23.6 × 40.2″ (600 × 1,000 mm)",
+         "23.6 × 59.8″ (600 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table centre-hole Ø",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bed-hole spacing (A)",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working width (B)",
+        "sub": "between the columns",
+        "cells": [
+         "40.2″ (1020 mm)",
+         "59.8″ (1520 mm)",
+         "40.2″ (1020 mm)",
+         "59.8″ (1520 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "83 × 39 × 89″ (2,100 × 990 × 2,250 mm)",
+         "103 × 39 × 89″ (2,600 × 990 × 2,250 mm)",
+         "83 × 39 × 95″ (2,100 × 990 × 2,400 mm)",
+         "103 × 39 × 95″ (2,600 × 990 × 2,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,586 lb (2,080 kg)",
+         "5,512 lb (2,500 kg)",
+         "5,291 lb (2,400 kg)",
+         "7,385 lb (3,350 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "AP 1020-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "40.2″ (1020 mm)",
+       "10 HP (7.5 kW)",
+       "4,586 lb (2,080 kg)"
+      ]
+     },
+     {
+      "name": "AP 1520-100",
+      "glance": [
+       "110 US tons (100 t)",
+       "11.8″ (300 mm)",
+       "59.8″ (1520 mm)",
+       "10 HP (7.5 kW)",
+       "5,512 lb (2,500 kg)"
+      ]
+     },
+     {
+      "name": "AP 1020-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "40.2″ (1020 mm)",
+       "15 HP (11 kW)",
+       "5,291 lb (2,400 kg)"
+      ]
+     },
+     {
+      "name": "AP 1520-150",
+      "glance": [
+       "165 US tons (150 t)",
+       "11.8″ (300 mm)",
+       "59.8″ (1520 mm)",
+       "15 HP (11 kW)",
+       "7,385 lb (3,350 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "stroke",
+     "width",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions are overall L × W × H; working width is the clear width between the columns. Metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "110 – 165 US tons · bends 1/4″ – 3/8″ plate · 40.2″ and 59.8″ wide",
+   "group": "sahinler-press"
+  },
+  "sahinler-dk-s": {
+   "id": "sahinler-dk-s",
+   "brand": "sahinler",
+   "name": "DK-S 3-axis moving straightening presses, 220 – 441 US tons",
+   "short": "DK-S straightening presses",
+   "models_label": "DK-S 200/2550 · 300/2550 · 400/2550",
+   "summary": "Gantry presses whose cylinder moves on X, Y and Z axes by motorized gear drive, so a large plate, beam, profile or round bar lies still on the bed while the ram is brought to each point that needs straightening. Pendant control, press safety cage, pressure gauge and stops at any position are standard on all three sizes — 220, 331 and 441 US tons with an 11.8″ stroke; a work table, material lifting system, remote control, cylinder-stroke readout, LED lights and bridges in other widths are optional.",
+   "features": [
+    "X-Y-Z axis movement of the cylinder, motorized by gear drive",
+    "For straightening large plates and profiles, beams and round steel",
+    "Pendant-style control panel; press safety cage; pressure gauge; stops at any position",
+    "Steel welded frame; very easy to operate"
+   ],
+   "optional": [
+    "Table; material lifting system",
+    "Remote control; digital readout for cylinder stroke",
+    "Bridge and work-table options in different widths; side-tank arrangement; LED lights",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-dks400",
+    "sh-dks200",
+    "sh-dks-remote"
+   ],
+   "videos": [
+    {
+     "id": "0IGVfYrBiA8",
+     "title": "DK-S 400 Ton 3-axis moving hydraulic straightening press",
+     "duration": "PT2M7S",
+     "thumb": "video-0IGVfYrBiA8"
+    },
+    {
+     "id": "l0pVqb4BCdA",
+     "title": "DK-S 200 × 2500 3-axis plate straightening press",
+     "duration": "PT2M41S",
+     "thumb": "video-l0pVqb4BCdA"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DK-S",
+      "sub": "3-axis moving straightening presses",
+      "models": [
+       "DK-S 200/2550",
+       "DK-S 300/2550",
+       "DK-S 400/2550"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "220 US tons (200 t)",
+         "331 US tons (300 t)",
+         "441 US tons (400 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "4,100 psi (285 bar)",
+         "4,280 psi (295 bar)",
+         "4,190 psi (290 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cylinder Ø",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "14.2″ (360 mm)",
+         "16.5″ (420 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "0.59 in/s (15 mm/s)",
+         "0.63 in/s (16 mm/s)",
+         "0.47 in/s (12 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working speed",
+        "sub": "",
+        "cells": [
+         "0.20 in/s (5 mm/s)",
+         "0.20 in/s (5 mm/s)",
+         "0.16 in/s (4 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "20 HP (15 kW)",
+         "30 HP (22 kW)",
+         "30 HP (22 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "31,195 lb (14,150 kg)",
+         "37,831 lb (17,160 kg)",
+         "46,297 lb (21,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DK-S 200/2550",
+      "glance": [
+       "220 US tons (200 t)",
+       "11.8″ (300 mm)",
+       "20 HP (15 kW)",
+       "31,195 lb (14,150 kg)"
+      ]
+     },
+     {
+      "name": "DK-S 300/2550",
+      "glance": [
+       "331 US tons (300 t)",
+       "11.8″ (300 mm)",
+       "30 HP (22 kW)",
+       "37,831 lb (17,160 kg)"
+      ]
+     },
+     {
+      "name": "DK-S 400/2550",
+      "glance": [
+       "441 US tons (400 t)",
+       "11.8″ (300 mm)",
+       "30 HP (22 kW)",
+       "46,297 lb (21,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions are overall L × W × H; working width is the clear width between the columns. Metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "220 – 441 US tons · cylinder moves on 3 axes over a 100″ bed · 11.8″ stroke",
+   "group": "sahinler-press"
+  },
+  "sahinler-hnm-fixed": {
+   "id": "sahinler-hnm-fixed",
+   "brand": "sahinler",
+   "name": "HNM 4F · HNM 6F fixed-angle hydraulic corner notchers",
+   "short": "HNM 4F · 6F",
+   "models_label": "HNM 4F (3/16″) · HNM 6F (1/4″) · fixed 90°",
+   "summary": "Compact hydraulic notchers that cut a 90° corner out of sheet in one stroke — the box, pan and enclosure corner before it goes to the press brake. Fixed 90° angle with high notching speed (20 – 25 cuts per minute), foot-pedal control and a small footprint: the HNM 4F cuts 3/16″ mild steel or 14 ga stainless on a 7.8″ blade, the HNM 6F 1/4″ mild steel or 11 ga stainless on a 9.8″ blade.",
+   "features": [
+    "Fixed 90° notching angle with high notching speed — 20 / 25 cuts per minute",
+    "Compact structure, small footprint and convenient operation",
+    "Foot-pedal control",
+    "HNM 4F: 3/16″ mild steel · 7.8 × 7.8″ blades; HNM 6F: 1/4″ mild steel · 9.8 × 9.8″ blades"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hnm6f"
+   ],
+   "videos": [
+    {
+     "id": "LuQHD5rFh3A",
+     "title": "HNM-6 1/4″ corner notcher",
+     "duration": "PT4M7S",
+     "thumb": "video-LuQHD5rFh3A"
+    },
+    {
+     "id": "ADZj0MzeK7w",
+     "title": "HNM 4 hydraulic corner notcher",
+     "duration": "PT1M5S",
+     "thumb": "video-ADZj0MzeK7w"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HNM",
+      "sub": "hydraulic corner notchers",
+      "models": [
+       "HNM 4F",
+       "HNM 6F",
+       "HNM 6V"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity — mild steel",
+        "sub": "",
+        "cells": [
+         "3/16″",
+         "1/4″",
+         "1/4″ – 8 ga"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity — stainless steel",
+        "sub": "",
+        "cells": [
+         "14 ga",
+         "11 ga",
+         "11 ga – 14 ga"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "90° fixed",
+         "90° fixed",
+         "30° – 140° variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "27.6 × 27.2″ (700 × 690 mm)",
+         "31.9 × 29.5″ (810 × 750 mm)",
+         "35.4 × 39.4″ (900 × 1,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade length",
+        "sub": "",
+        "cells": [
+         "7.8 × 7.8″ (200 × 200 mm)",
+         "9.8 × 9.8″ (250 × 250 mm)",
+         "7.9 × 7.9″ (200 × 200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. cuts per minute",
+        "sub": "",
+        "cells": [
+         "20",
+         "25",
+         "30"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. working pressure",
+        "sub": "",
+        "cells": [
+         "1,740 psi (120 bar)",
+         "1,740 psi (120 bar)",
+         "2,900 psi (200 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Oil tank",
+        "sub": "",
+        "cells": [
+         "80 L (21 US gal)",
+         "80 L (21 US gal)",
+         "80 L (21 US gal)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "5.4 HP (4 kW)",
+         "5.4 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "35 × 37 × 44″ (890 × 940 × 1,100 mm)",
+         "37 × 31 × 44″ (940 × 790 × 1,100 mm)",
+         "35 × 45 × 49″ (890 × 1,150 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,213 lb (550 kg)",
+         "1,290 lb (585 kg)",
+         "2,535 lb (1,150 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HNM 4F",
+      "glance": [
+       "3/16″",
+       "90° fixed",
+       "7.8 × 7.8″ (200 × 200 mm)",
+       "4 HP (3 kW)",
+       "1,213 lb (550 kg)"
+      ]
+     },
+     {
+      "name": "HNM 6F",
+      "glance": [
+       "1/4″",
+       "90° fixed",
+       "9.8 × 9.8″ (250 × 250 mm)",
+       "5.4 HP (4 kW)",
+       "1,290 lb (585 kg)"
+      ]
+     },
+     {
+      "name": "HNM 6V",
+      "glance": [
+       "1/4″ – 8 ga",
+       "30° – 140° variable",
+       "7.9 × 7.9″ (200 × 200 mm)",
+       "5.4 HP (4 kW)",
+       "2,535 lb (1,150 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "angle",
+     "blade",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "3/16″ and 1/4″ mild steel · fixed 90° · 7.8″ and 9.8″ blades · 20 – 25 cuts/min",
+   "group": "sahinler-notch"
+  },
+  "sahinler-hnm-variable": {
+   "id": "sahinler-hnm-variable",
+   "brand": "sahinler",
+   "name": "HNM 6V variable-angle hydraulic corner notcher",
+   "short": "HNM 6V variable angle",
+   "models_label": "HNM 6V · 30° – 140° · 1/4″",
+   "summary": "A variable-angle notcher on a statically and dynamically rigid steel table and top beam: the blades swing from 30° to 140° for V-notches, hoppers, cones and ducting corners, and the blade gap adjusts automatically so no realignment is needed between sheet thicknesses. Four hydraulic hold-down cylinders give repeatable cuts up to 1/4″ mild steel (11 ga stainless) at 30 cuts per minute, with a T-slot top table for precise, repeatable positioning and foot-pedal control.",
+   "features": [
+    "Variable notching angle 30° – 140°",
+    "Strong frame with statically and dynamically rigid steel table and top beam; T-slot top table for precise cuts",
+    "Automatic blade-gap adjustment — no realignment for different sheet thicknesses",
+    "4 hydraulic hold-down cylinders for repeatable cutting; foot-pedal control; max. 1/4″ cutting capacity"
+   ],
+   "optional": [
+    "Punching attachment (HNM 6 VP: notching and punching on one machine)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-hnm6v"
+   ],
+   "videos": [
+    {
+     "id": "JVWQf5gMtfY",
+     "title": "HNM-6A 1/4″ variable-angle corner notcher and punching machine",
+     "duration": "PT2M0S",
+     "thumb": "video-JVWQf5gMtfY"
+    },
+    {
+     "id": "nwNGB5PgXoo",
+     "title": "HNM 6 VP variable-angle corner notcher + punch",
+     "duration": "PT1M35S",
+     "thumb": "video-nwNGB5PgXoo"
+    },
+    {
+     "id": "m2QTUJ1ovq0",
+     "title": "2-in-1 corner notcher and punch (variable angle): HNM 6 VP",
+     "duration": "PT3M25S",
+     "thumb": "video-m2QTUJ1ovq0"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [],
+    "models": [
+     {
+      "name": "HNM 6V",
+      "glance": [
+       "1/4″ – 8 ga",
+       "30° – 140° variable",
+       "7.9 × 7.9″ (200 × 200 mm)",
+       "5.4 HP (4 kW)",
+       "2,535 lb (1,150 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "angle",
+     "blade",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Specifications in the HNM table above."
+   },
+   "headline": "1/4″ mild steel · 30° – 140° variable angle · 4 hydraulic hold-downs · 30 cuts/min",
+   "group": "sahinler-notch"
+  },
+  "sahinler-bt-114-s": {
+   "id": "sahinler-bt-114-s",
+   "brand": "sahinler",
+   "name": "BT 114-S automatic pipe polishing and sanding machine",
+   "short": "BT 114-S",
+   "models_label": "BT 114-S · Ø3/8″ to Ø4-1/2″ · 6.4 HP",
+   "summary": "A belt sander for round pipe and square tube that feeds the material itself: an automatic pipe feeder with its own motor pushes straight or bent tube (up to a 45° bend) through two 37 × 2″ abrasive belts, so the operator does not turn or hold the material. Feeding speed and belt speed are both inverter-variable, the belt is changed through an opening cover and a holder is provided for manual feeding. Finishing, satin-brushing and rust removal on Ø3/8″ to Ø4-1/2″ — handrail, furniture and architectural stainless.",
+   "features": [
+    "Automatic pipe feeder with separate motor — delivers material without operator intervention; no need to turn the material",
+    "Pipe / tube Ø3/8″ – Ø4-1/2″ (10 – 114 mm); polishes bent pipe and tube up to a 45° bend",
+    "Variable feeding speed and variable sanding-belt speed by inverter drive",
+    "2 abrasive belts 37 × 2″ included; opening cover for belt changes and cleaning",
+    "Manual pipe-clamping adjustment; fixing attachment for the motor; holder for manual feeding"
+   ],
+   "optional": [
+    "Abrasive belts in other grits",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-bt114s",
+    "sh-bt114s-rail",
+    "sh-bt114s-tube"
+   ],
+   "videos": [
+    {
+     "id": "j8vE5Dmc4QI",
+     "title": "BT 114-S pipe sander — pipe polishing machine",
+     "duration": "PT1M12S",
+     "thumb": "video-j8vE5Dmc4QI"
+    },
+    {
+     "id": "zd5Zhu82wPo",
+     "title": "BT 114-S square tube sanding and polishing machine",
+     "duration": "PT2M35S",
+     "thumb": "video-zd5Zhu82wPo"
+    },
+    {
+     "id": "kotI1chSYnY",
+     "title": "Curved pipe polishing on the BT 114-S",
+     "duration": "PT3M14S",
+     "thumb": "video-kotI1chSYnY"
+    },
+    {
+     "id": "6SVmTnY_4rs",
+     "title": "BT 114-S — diameter adjustment",
+     "duration": "PT1M37S",
+     "thumb": "video-6SVmTnY_4rs"
+    },
+    {
+     "id": "o23ZQEoAvzU",
+     "title": "BT 114-S automatic pipe sander with feeder",
+     "duration": "PT1M56S",
+     "thumb": "video-o23ZQEoAvzU"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BT 114-S",
+      "sub": "automatic pipe polishing & sanding machine",
+      "models": [
+       "BT 114-S"
+      ],
+      "rows": [
+       {
+        "label": "Working capacity",
+        "sub": "pipe / tube OD",
+        "cells": [
+         "Ø3/8″ – Ø4-1/2″ (10 – 114 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive-belt motors",
+        "sub": "",
+        "cells": [
+         "4 + 2 HP (3 + 1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed-wheel motor",
+        "sub": "",
+        "cells": [
+         "0.3 HP (0.24 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total motor power",
+        "sub": "",
+        "cells": [
+         "6.4 HP (4.75 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt size",
+        "sub": "2 belts included",
+        "cells": [
+         "37 × 2″ (940 × 50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feeding speed",
+        "sub": "variable, inverter drive",
+        "cells": [
+         "9.8 – 72 ft/min (3 – 22 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sanding-belt speed",
+        "sub": "",
+        "cells": [
+         "Variable, inverter drive"
+        ],
+        "key": false
+       },
+       {
+        "label": "Automatic pipe feeder",
+        "sub": "",
+        "cells": [
+         "Standard"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 30 × 59″ (990 × 760 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "approx.",
+        "cells": [
+         "617 lb (280 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BT 114-S",
+      "glance": [
+       "Ø3/8″ – Ø4-1/2″ (10 – 114 mm)",
+       "37 × 2″ (940 × 50 mm)",
+       "6.4 HP (4.75 kW)",
+       "617 lb (280 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "belt",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Pipe and tube Ø3/8″ to Ø4-1/2″ (10 – 114 mm) · automatic feeder · 2 belts 37 × 2″",
+   "group": "sahinler-polish"
+  }
+ }
+}

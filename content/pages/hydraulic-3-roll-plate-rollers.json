@@ -2,19 +2,19 @@
  "slug": "hydraulic-3-roll-plate-rollers",
  "template": "category.html",
  "family_set": "plate-rolls",
- "title": "Hydraulic 3-Roll Plate Rollers — Initial Pinch | NovoTech",
+ "title": "Hydraulic 3-Roll Plate Rollers, 2 to 10 ft | NovoTech",
  "artifact_title": "Hydraulic 3-roll plate rollers",
- "meta_description": "Initial-pinch hydraulic 3-roll plate rollers from 2.1 to 10 ft, up to 1/2″ plate, with drop-end and digital readouts. CSA panels, parts in Mississauga, ON.",
+ "meta_description": "Initial-pinch and double-pinch hydraulic 3-roll plate rollers from 2.1 to 10.2 ft, plate up to 3-1/2″, with drop-end and digital readouts. CSA panels, parts in Mississauga, ON.",
  "h1": "Hydraulic 3-roll plate rollers",
- "intro": "Initial-pinch 3-roll plate rolling machines with hydraulic positioning of the back and bottom rolls and motor-driven rolls: the operator pinches the sheet, pre-bends the leading edge against the back roll, rolls the cylinder and opens the hydraulic drop-end to take it off. İşitan's MRM-H covers 2.1 ft to 10 ft and plate to 1/2″ with two digital readouts and cone bending as standard; the compact 3R HMD puts hydraulic back-roll positioning with a joystick on a cast-iron frame for ducting and light fabrication. Hydraulic plate rollers with CSA-approved panels, sold and supported from Mississauga, ON.",
+ "intro": "Three-roll plate rolling machines with hydraulic roll positioning and motor-driven rolls: the operator pinches the sheet, pre-bends the leading edge, rolls the cylinder and opens the hydraulic drop-end to take it off. İşitan's initial-pinch MRM-H covers 2.1 ft to 10 ft and plate to 1/2″ with two digital readouts and cone bending as standard, and the compact 3R HMD puts hydraulic back-roll positioning with a joystick on a cast-iron frame; Şahinler's double-pinch 3R HS rolls plate to 1-1/8″ with extended shafts for profile rolls, and the translating-type 3R UHS takes plate to 3-1/2″ on 10.2 ft. Hydraulic plate rollers with CSA-approved panels, sold and supported from Mississauga, ON.",
  "hero_points": [
-  "MRM-H: 32 models from 2.1 ft to 10 ft (650–3100 mm), up to 1/2″ (12 mm)",
-  "Hydraulic back and bottom rolls, hydraulic drop-end, 2 digital readouts",
-  "3R HMD: all-roll drive with hydraulic joystick back roll from 4.2 ft"
+  "İşitan MRM-H: 32 models from 2.1 ft to 10 ft (650–3100 mm), up to 1/2″ (12 mm)",
+  "Şahinler 3R HS double-pinch to 1-1/8″ (30 mm) and 3R UHS heavy-duty to 3-1/2″ (90 mm)",
+  "Hydraulic drop-end, digital readouts and cone bending on every model"
  ],
  "hero_image": "is-mrmh-3100-250",
  "hero_image_secondary": [
-  "is-mrmh-2050-180",
+  "sh-3ruhs-30-550",
   "is-3rhmd-1270-90"
  ],
  "breadcrumb": [
@@ -34,15 +34,26 @@
    "label": "Hydraulic 3-roll plate rollers"
   }
  ],
- "hero_brand_line": "İşitan machines are made in Turkey by İşitan Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "İşitan and Şahinler plate rolls are made in Turkey — İşitan Makine since 1959, Şahinler Metal since 1976 — with European components. Sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "3-roll-hydraulic-group",
-   "title": "Hydraulic 3-roll plate rollers",
+   "title": "İşitan hydraulic 3-roll plate rollers",
    "lead": "MRM-H initial-pinch plate rolls and the compact 3R HMD with hydraulic back-roll positioning.",
+   "brand": "isitan",
    "families": [
     "isitan-mrm-h",
     "isitan-3r-hmd"
+   ]
+  },
+  {
+   "id": "sahinler-3r-group",
+   "title": "Şahinler hydraulic 3-roll plate rolls",
+   "lead": "3R UHS translating heavy-duty rolls to 3-1/2″ plate and the double-pinch 3R HS.",
+   "brand": "sahinler",
+   "families": [
+    "sahinler-3r-uhs",
+    "sahinler-3r-hs"
    ]
   }
  ],
@@ -65,14 +76,10 @@
   }
  ],
  "faq_title": "Questions we get asked about hydraulic 3-roll plate rollers",
- "catalogue_pdf": {
-  "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
-  "label": "Download the İşitan machinery catalogue",
-  "size": "PDF · 29 MB · imperial units"
- },
+ "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey by İşitan",
-  "text": "İşitan has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."
+  "title": "Made in Turkey by İşitan and Şahinler",
+  "text": "İşitan has built sheet-metal machinery in Bursa since 1959 and Şahinler Metal plate rolls since 1976 — CE-certified machines with European hydraulic and electrical components."
  },
  "section_label": "Plate rollers & slip rolls",
  "related_pages": [
@@ -100,7 +107,7 @@
    "href": "plate-rollers.html",
    "label": "All plate rollers & slip rolls",
    "image": "is-4rhms-3100-250",
-   "blurb": "Every İşitan plate roller and slip roll NovoTech supplies, with the capacity table for the whole range."
+   "blurb": "Every İşitan and Şahinler plate roller and slip roll NovoTech supplies, with the capacity table for the whole range."
   },
   "pages": [
    {
@@ -128,5 +135,17 @@
  "related_article": {
   "href": "plate-rollers.html#buying-guide",
   "label": "Plate roller buying guide: 3-roll vs 4-roll, capacities, cones and controls"
- }
+ },
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+   "label": "Download the İşitan machinery catalogue",
+   "size": "PDF · 29 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Sahinler-Catalogue-2027.pdf",
+   "label": "Download the Şahinler machinery catalogue",
+   "size": "PDF · 28 MB · imperial units"
+  }
+ ]
 }

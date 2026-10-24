@@ -16,11 +16,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
 OLD_SITE = {
     "products", "about-us", "contact-us", "brochures", "metal-fabricating-articles", "privacy-policy",
-    "press-brake", "laser-cutting-machine", "shear-cutting", "iron-worker-punch", "plate-roller-bender",
-    "pipe-profile-roll-bender", "folder-sheet-metal-brake", "horizontal-press-brake",
-    "hydraulic-press", "plate-beveler",
+    "press-brake", "laser-cutting-machine", "shear-cutting", "plate-roller-bender",
+    "folder-sheet-metal-brake", "horizontal-press-brake",
+    "plate-beveler",
     "lock-former", "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
-    "pipe-polishing-deburring-grinding-brushing", "corner-notcher", "aluminum-and-pvc-upcut-saws",
+    "aluminum-and-pvc-upcut-saws",
     "press-brake-tooling-punch-and-die", "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction",
 }
 

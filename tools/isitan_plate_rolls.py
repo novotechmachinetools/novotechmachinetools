@@ -1,5 +1,7 @@
 """İşitan section: plate rollers and slip rolls (catalogue pages 4–27)."""
 from isitan_lib import *  # noqa: F401,F403
+import sahinler_plate_rolls as SH  # Şahinler families appended below the İşitan groups on the 4-roll and 3-roll pages
+from sahinler_lib import BRAND_LINE as SH_BRAND_LINE, PDF as PDF_SH
 
 SET = "plate-rolls"
 SECTION = "Plate rollers & slip rolls"
@@ -289,26 +291,28 @@ VOLT_FAQ = {"q": "What voltage do İşitan plate rollers run on?",
 
 PAGES = {
     "hydraulic-4-roll-plate-rollers": dict(
-        title="Hydraulic 4-Roll Plate Rollers & Rolling Machines | NovoTech",
-        meta="Hydraulic 4-roll plate rolling machines from 2.1 to 10.2 ft, up to 1/2″ plate, with NC control and automation. CSA panels, parts in Mississauga, ON.",
+        title="Hydraulic 4-Roll Plate Rollers, 2 to 20 ft | NovoTech",
+        meta="Hydraulic 4-roll plate rolling machines from 2.1 to 20 ft and plate up to 3-3/8″, with NC / CNC control, cone rolls and automation. CSA panels, parts in Mississauga, ON.",
         h1="Hydraulic 4-roll plate rollers",
-        intro="Four-roll plate rolling machines pinch the sheet between the top and bottom roll and bend it with two side rolls, so the plate is pre-bent at both ends and rolled into a full cylinder in one pass without flipping it. İşitan's 4R HMS hydraulic plate rollers run from a 2.1 ft bench-size roll to 10.2 ft machines for 3/8″ plate, with NC control, overhead crane and sheet feeder for production work; the 4R OM and 4R HOM roll corrugated galvanized sheet for tanks, roofs and silos. Every 4 roll plate roller is sold with a CSA-approved panel and supported from Mississauga, ON.",
-        points=["36 models from 2.1 ft to 10.2 ft (650–3100 mm)", "Rolls up to 1/2″ (12 mm) plate; pre-bends both ends in one pass", "NC control, overhead crane, sheet feeder and ejector for automation"],
-        hero="is-4rhms-3100-250", minis=["is-4rhms-2050-180", "is-4rom-1550-220"],
-        groups=[("4-roll", "Hydraulic 4-roll plate rollers", "The 4R HMS range with hydraulic roll positioning and motor-driven rolls, plus the corrugated-sheet and special-build 4-roll machines.")],
+        intro="Four-roll plate rolling machines pinch the sheet between the top and bottom roll and bend it with two side rolls, so the plate is pre-bent at both ends and rolled into a full cylinder in one pass without flipping it. Two Turkish makers cover the whole range: İşitan's 4R HMS hydraulic plate rollers run from a 2.1 ft bench-size roll to 10.2 ft machines for 3/8″ plate, with NC control, overhead crane and sheet feeder for production work, and the 4R OM and 4R HOM roll corrugated galvanized sheet; Şahinler's 4R HS-L, 4R HS and heavy-duty 4R HSS go on to 20 ft and 3-3/8″ plate for wind towers, vessels and shipyards, with the NC cassette-type 4RH and the 4R HC cone roll beside them. Every 4 roll plate roller is sold with a CSA-approved panel and supported from Mississauga, ON.",
+        points=["İşitan 4R HMS: 36 models from 2.1 ft to 10.2 ft (650–3100 mm), up to 1/2″ (12 mm)", "Şahinler 4R HSS: 6.7 to 20 ft (2050–6100 mm), plate to 3-3/8″ (85 mm); 4R HS-L / 4R HS to 1″", "NC / CNC control, overhead crane, side supports, sheet feeder and ejector for automation"],
+        hero="is-4rhms-3100-250", minis=["sh-4rhss-30-380-nc", "is-4rom-1550-220"],
+        groups=[("4-roll", "İşitan hydraulic 4-roll plate rollers", "The 4R HMS range with hydraulic roll positioning and motor-driven rolls, plus the corrugated-sheet and special-build 4-roll machines.", "isitan"),
+                SH.GROUPS[SH.P4]],
         faq=[{"q": "3-roll or 4-roll plate roller — which one do I need?", "a": "A 4-roll machine holds the sheet pinched between the top and bottom roll while the side rolls pre-bend and roll it, so both ends are pre-bent without turning the plate around and the operator never loses alignment — the better choice for production, thin or polished material and cones. A 3-roll initial-pinch machine does the same job with one more handling step at a lower price, which is why most job shops start with an MRM-H or MRM-S."},
              {"q": "What does \"capacity at 1.5× / 5× top roll Ø\" mean?", "a": "Plate rolls are rated for a given diameter: the thicker the plate, the larger the minimum cylinder it can form. The manufacturer states two figures — the thickness the machine rolls into a tight cylinder of 1.5 times the top roll diameter, and the thickness it rolls at 5 times the top roll diameter. Tell us your plate thickness and the smallest diameter you make and we will size the machine from the capacity chart."},
              {"q": "Can a 4R HMS roll cones?", "a": "Yes — a cone-bending device is standard on every 4R HMS, and the NC control stores the roll positions for repeat cones. Hydraulic side supports and the overhead crane keep large cones and thin material in shape while rolling."},
              {"q": "How automatic can a plate roller be?", "a": "With the NC control the operator programs the roll positions once; the machine then bends to the stored program. Adding the vacuum sheet feeder, the hydraulic overhead crane and the part ejector turns the 4R HMS into a full automation line where the operator only loads blanks and removes finished cylinders at the welding station."},
              VOLT_FAQ]),
     "hydraulic-3-roll-plate-rollers": dict(
-        title="Hydraulic 3-Roll Plate Rollers — Initial Pinch | NovoTech",
-        meta="Initial-pinch hydraulic 3-roll plate rollers from 2.1 to 10 ft, up to 1/2″ plate, with drop-end and digital readouts. CSA panels, parts in Mississauga, ON.",
+        title="Hydraulic 3-Roll Plate Rollers, 2 to 10 ft | NovoTech",
+        meta="Initial-pinch and double-pinch hydraulic 3-roll plate rollers from 2.1 to 10.2 ft, plate up to 3-1/2″, with drop-end and digital readouts. CSA panels, parts in Mississauga, ON.",
         h1="Hydraulic 3-roll plate rollers",
-        intro="Initial-pinch 3-roll plate rolling machines with hydraulic positioning of the back and bottom rolls and motor-driven rolls: the operator pinches the sheet, pre-bends the leading edge against the back roll, rolls the cylinder and opens the hydraulic drop-end to take it off. İşitan's MRM-H covers 2.1 ft to 10 ft and plate to 1/2″ with two digital readouts and cone bending as standard; the compact 3R HMD puts hydraulic back-roll positioning with a joystick on a cast-iron frame for ducting and light fabrication. Hydraulic plate rollers with CSA-approved panels, sold and supported from Mississauga, ON.",
-        points=["MRM-H: 32 models from 2.1 ft to 10 ft (650–3100 mm), up to 1/2″ (12 mm)", "Hydraulic back and bottom rolls, hydraulic drop-end, 2 digital readouts", "3R HMD: all-roll drive with hydraulic joystick back roll from 4.2 ft"],
-        hero="is-mrmh-3100-250", minis=["is-mrmh-2050-180", "is-3rhmd-1270-90"],
-        groups=[("3-roll-hydraulic", "Hydraulic 3-roll plate rollers", "MRM-H initial-pinch plate rolls and the compact 3R HMD with hydraulic back-roll positioning.")],
+        intro="Three-roll plate rolling machines with hydraulic roll positioning and motor-driven rolls: the operator pinches the sheet, pre-bends the leading edge, rolls the cylinder and opens the hydraulic drop-end to take it off. İşitan's initial-pinch MRM-H covers 2.1 ft to 10 ft and plate to 1/2″ with two digital readouts and cone bending as standard, and the compact 3R HMD puts hydraulic back-roll positioning with a joystick on a cast-iron frame; Şahinler's double-pinch 3R HS rolls plate to 1-1/8″ with extended shafts for profile rolls, and the translating-type 3R UHS takes plate to 3-1/2″ on 10.2 ft. Hydraulic plate rollers with CSA-approved panels, sold and supported from Mississauga, ON.",
+        points=["İşitan MRM-H: 32 models from 2.1 ft to 10 ft (650–3100 mm), up to 1/2″ (12 mm)", "Şahinler 3R HS double-pinch to 1-1/8″ (30 mm) and 3R UHS heavy-duty to 3-1/2″ (90 mm)", "Hydraulic drop-end, digital readouts and cone bending on every model"],
+        hero="is-mrmh-3100-250", minis=["sh-3ruhs-30-550", "is-3rhmd-1270-90"],
+        groups=[("3-roll-hydraulic", "İşitan hydraulic 3-roll plate rollers", "MRM-H initial-pinch plate rolls and the compact 3R HMD with hydraulic back-roll positioning.", "isitan"),
+                SH.GROUPS[SH.P3]],
         faq=[{"q": "How does an initial-pinch 3-roll plate roller work?", "a": "The sheet is clamped (pinched) between the top and bottom roll, the back roll is raised to pre-bend the leading edge, the sheet is fed through and rolled to the radius set by the back roll, and the drop-end is opened to remove the cylinder. The trailing edge is pre-bent by turning the sheet around — the one extra step compared with a 4-roll machine."},
              {"q": "MRM-H or MRM-S — hydraulic or mechanical?", "a": "Both are initial-pinch rolls with the same roll sizes. The MRM-H moves its back and bottom rolls hydraulically and opens the drop-end hydraulically, which is faster, takes thicker plate at the same roll diameter and suits daily production; the MRM-S moves the back roll with a motor and opens the drop-end by hand at a lower price."},
              {"q": "What thickness can the MRM-H roll?", "a": "From 20 ga sheet on the 1270x80 up to 1/2″ plate on the 250 mm roll models — see the capacity tables, which give the thickness at 1.5× and at 5× the top roll diameter. Capacities are for mild steel; stainless and high-strength plate need the next roll size up."},
@@ -340,10 +344,10 @@ PAGES = {
 }
 HUB_PAGE = dict(
     title="Plate Rollers & Plate Rolling Machines in Canada | NovoTech",
-    meta="Every plate roller and slip roll we sell in Canada: hydraulic 4-roll and 3-roll plate rolling machines, motorized rolls and manual slip rollers, 2 to 10 ft.",
+    meta="Every plate roller and slip roll we sell in Canada: hydraulic 4-roll and 3-roll plate rolling machines to 20 ft and 3-3/8″ plate, motorized rolls and manual slip rollers.",
     h1="Plate rollers and slip rolls",
-    intro="A plate roller (plate rolling machine) bends flat plate or sheet into cylinders and cones by passing it between three or four rolls; a slip roll is the light-gauge version whose top roll slips open to remove the part. Every İşitan plate roller and slip roll NovoTech sells in Canada: hydraulic 4-roll plate rolling machines with NC control for production, hydraulic and motorized 3-roll plate rollers for the fabrication shop, and manual and motorized slip rolls for HVAC and sheet-metal work — from a 2 ft bench slip roll to 10.2 ft machines that roll 1/2″ plate. Built in Turkey by İşitan since 1959, supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, ON. Looking for a plate roller machine, sheet metal roller, slip roller or plate bending rolls? These are the ones we stock and service.",
-    points=["<a href=\"hydraulic-4-roll-plate-rollers\">Hydraulic 4-roll plate rollers</a> — 2.1 to 10.2 ft, up to 1/2″ plate, NC and automation",
+    intro="A plate roller (plate rolling machine) bends flat plate or sheet into cylinders and cones by passing it between three or four rolls; a slip roll is the light-gauge version whose top roll slips open to remove the part. Every İşitan and Şahinler plate roller and slip roll NovoTech sells in Canada: hydraulic 4-roll plate rolling machines with NC control for production, hydraulic and motorized 3-roll plate rollers for the fabrication shop, and manual and motorized slip rolls for HVAC and sheet-metal work — from a 2 ft bench slip roll to 20 ft heavy-duty machines that roll 3-3/8″ plate. Built in Turkey by İşitan (since 1959) and Şahinler (since 1976), supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, ON. Looking for a plate roller machine, sheet metal roller, slip roller or plate bending rolls? These are the ones we stock and service.",
+    points=["<a href=\"hydraulic-4-roll-plate-rollers\">Hydraulic 4-roll plate rollers</a> — 2.1 to 20 ft, up to 3-3/8″ plate, NC / CNC and automation",
             "<a href=\"hydraulic-3-roll-plate-rollers\">Hydraulic</a> and <a href=\"motorized-plate-rollers\">motorized 3-roll plate rollers</a> — initial pinch, cone bending",
             "<a href=\"slip-rolls\">Slip rolls</a> — manual and motorized, 2 to 6.7 ft, wire grooves standard"],
     hero="is-4rhms-3100-250", minis=["is-mrms-2050-190", "is-r-1050-56"],
@@ -354,12 +358,12 @@ HUB_PAGE = dict(
          VOLT_FAQ],
     range_lead="Working length, rolling capacity, top roll diameter, motor and weight for every model. Each row links to the full specification table of its series.",
     range_cols=["Working length", "Rolling capacity", "Top roll Ø", "Motor", "Weight"],
-    range_caption="İşitan plate rollers and slip rolls supplied by NovoTech — capacities for mild steel",
+    range_caption="İşitan and Şahinler plate rollers and slip rolls supplied by NovoTech — capacities for mild steel",
     range_note="Rolling capacity is for mild steel (34,100 psi yield); where two values are given they apply at 1.5× / 5× the top roll diameter. Manual machines have no motor.",
 )
 SUBPAGE_META = {
-    "hydraulic-4-roll-plate-rollers": ("Hydraulic 4-roll plate rollers", "is-4rhms-2050-180", "4R HMS from 2.1 ft to 10.2 ft with NC control and automation, plus corrugated-sheet and special 4-roll machines.", "4-roll plate rollers"),
-    "hydraulic-3-roll-plate-rollers": ("Hydraulic 3-roll plate rollers", "is-mrmh-2050-180", "MRM-H initial-pinch plate rolls to 10 ft and 1/2″ plate, and the compact 3R HMD with joystick back-roll control.", "Hydraulic 3-roll"),
+    "hydraulic-4-roll-plate-rollers": ("Hydraulic 4-roll plate rollers", "is-4rhms-2050-180", "İşitan 4R HMS from 2.1 ft to 10.2 ft with NC control and automation, corrugated-sheet machines, and Şahinler 4R HS-L, 4R HS, heavy-duty 4R HSS to 20 ft, 4RH and 4R HC cone rolls.", "4-roll plate rollers"),
+    "hydraulic-3-roll-plate-rollers": ("Hydraulic 3-roll plate rollers", "is-mrmh-2050-180", "İşitan MRM-H initial-pinch rolls to 10 ft and 1/2″ plate and the 3R HMD, plus Şahinler double-pinch 3R HS and translating 3R UHS heavy-duty rolls to 3-1/2″.", "Hydraulic 3-roll"),
     "motorized-plate-rollers": ("Motorized 3-roll plate rollers", "is-mrms-2050-190", "MRM-S, IRM and RM mechanical plate rolls from 3.4 ft to 10 ft — the shop's everyday rolls, with a composite-panel version.", "Motorized 3-roll"),
     "slip-rolls": ("Slip rolls", "is-ir-1270-75", "Manual R and RS, motorized IR and economical RST slip rolls from 2 ft bench models to 6.7 ft.", "Slip rolls"),
 }
@@ -368,14 +372,20 @@ ORDER = ["hydraulic-4-roll-plate-rollers", "hydraulic-3-roll-plate-rollers", "mo
 
 
 
+ALL_FAMILIES = FAMILIES + SH.FAMILIES
+SHARED = {"catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_SH],
+          "hero_brand_line": "İşitan and Şahinler plate rolls are made in Turkey — İşitan Makine since 1959, Şahinler Metal since 1976 — with European components. Sold, installed and supported in Canada by NovoTech.",
+          "origin_feature": {"title": "Made in Turkey by İşitan and Şahinler", "text": "İşitan has built sheet-metal machinery in Bursa since 1959 and Şahinler Metal plate rolls since 1976 — CE-certified machines with European hydraulic and electrical components."}}
+
+
 def build():
-    write_families(SET, FAMILIES)
+    write_families(SET, ALL_FAMILIES)
     sib = [(s, SUBPAGE_META[s][3], SUBPAGE_META[s][0]) for s in ORDER]
-    hub = {"slug": HUB, "label": "All plate rollers & slip rolls", "image": "is-4rhms-3100-250", "blurb": "Every İşitan plate roller and slip roll NovoTech supplies, with the capacity table for the whole range."}
+    hub = {"slug": HUB, "label": "All plate rollers & slip rolls", "image": "is-4rhms-3100-250", "blurb": "Every İşitan and Şahinler plate roller and slip roll NovoTech supplies, with the capacity table for the whole range."}
     for slug in ORDER:
-        write_category(slug, PAGES[slug], FAMILIES, SET, SECTION, hub=hub, siblings=sib, guide=GUIDE)
+        write_category(slug, PAGES[slug], ALL_FAMILIES, SET, SECTION, hub=hub, siblings=sib, guide=GUIDE, extra=SHARED if slug in (SH.P4, SH.P3) else None)
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Plate Rollers & Slip Rolls", "faq_title": "Questions we get asked about plate rollers", "nav_label": "All plate rollers & slip rolls", "related_blurb": hub["blurb"]},
-              FAMILIES, SET, SECTION, [(s, SUBPAGE_META[s][0], SUBPAGE_META[s][1], SUBPAGE_META[s][2], SUBPAGE_META[s][3]) for s in ORDER],
+              ALL_FAMILIES, SET, SECTION, [(s, SUBPAGE_META[s][0], SUBPAGE_META[s][1], SUBPAGE_META[s][2], SUBPAGE_META[s][3]) for s in ORDER],
               extra={"article": "plate-roller-guide.html", "article_id": "buying-guide", "article_title": "Plate roller buying guide",
                      "article_intro": "What we explain to customers before they buy a plate roller: 3-roll and 4-roll machines, initial-pinch and double-pinch, how capacity is rated, cone bending, crowning, controls and automation. Written by NovoTech's technicians from years of installing plate rolls in Canada."})
     return IMAGES

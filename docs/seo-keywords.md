@@ -147,3 +147,22 @@ Rules confirmed by the data: titles 50–60 characters with the product term fir
 ≤160 characters that do not restate the title; one self-contained definition sentence ("A pipe bender … ") opens every
 intro for AI answers; the visible "page updated" date and `datePublished` / `dateModified` in the WebPage schema come
 from the git history of each page.
+
+## Findings — Şahinler pages (Search Console export + Ubersuggest Canada, Oct 24 2026)
+
+Keyword tools were exhausted before the Şahinler titles were set (Ubersuggest 3 reports/day, Ahrefs plan, Semrush units),
+so the decisions rest on the Search Console export of the old site and the Canada volumes pulled earlier the same day.
+
+| page / topic | what the old site ranked for | decision |
+|---|---|---|
+| pipe-profile-roll-bender.html (92,504 impr) | "tube roller" 5,245 · "pipe roller" 4,383 · "roll bender" 1,332 · "angle roll" 1,234; Canada: tube roller 110 | new slug `angle-rolls` (301 from the old URL), title **Angle Rolls, Tube Rollers & Section Benders**; "roll bender", "ring roller", "profile bender" in the definition sentence; one capacity chart per model |
+| iron-worker-punch.html (16,385 impr) | "ironworker machine" 1,472 · "hydraulic ironworker machine" 1,130; Canada: ironworker machine 210 | slug `ironworker-machines` (301), title **Hydraulic Ironworker Machines 44–193 Ton**; "steelworker" (Şahinler's word) kept in the intro |
+| — (punching machines had no page) | "punching machine" long tail | new page `hydraulic-punching-machines`, title **Hydraulic Punching Machines, 33 to 193 Ton**; nav child of Ironworkers |
+| hydraulic-press.html (49,066 impr) | "hydraulic shop press" 2,869; Canada: hydraulic shop press 210, hydraulic press machine 260, h frame hydraulic press 140 ("hydraulic press" 4,400 is mostly entertainment) | slug kept, title **Hydraulic Presses 33–441 Ton — Shop & H-Frame**; "shop press", "H-frame press", "hydraulic press machine" in the intro; Hidroliksan production presses to follow below |
+| corner-notcher.html (17,198 impr) | "corner notcher" 986 · "hydraulic corner notcher" 550 · "sheet metal corner notcher" 360 | slug kept, title **Hydraulic Corner Notchers, Fixed & Variable Angle** |
+| pipe-polishing-deburring-grinding-brushing.html (95,467 impr — the old site's biggest page) | "pipe sander" 4,220 · "pipe polisher" 3,123 · "pipe polishing machine" 2,809 (pos 8); Canada: pipe sander 70 | slug `pipe-sanding-polishing-machines` (301), title **Pipe Sanders & Pipe Polishing Machines**; Gecam / Eurofintec machines to be added to the same page |
+| circular-cutting page | "flanging machine" 10 (Canada) | title → **Circle Shears, Flanging Machines & Lock Seamers** with the Şahinler SDK / EFM group below İşitan |
+| shared plate-roll pages | — | Şahinler groups appended below İşitan on `hydraulic-4-roll-plate-rollers` (title now "…, 2 to 20 ft") and `hydraulic-3-roll-plate-rollers`; SPB on `rotary-draw-tube-benders` |
+
+Old Şahinler brochure URLs (`/files/…SAHINLER…pdf`, HKM, HPK, DPM, HNM, BT-114 …) 301 to the new catalogue PDF or the
+rebuilt page (`src/root/.htaccess`).

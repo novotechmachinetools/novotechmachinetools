@@ -10839,5 +10839,1326 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "sh-4rhss-30-380-nc": {
+  "src": "tools/src-images/sahinler/sh-4rhss-30-380-nc.png",
+  "alt": "Şahinler 4R HSS 30-380 NC hydraulic heavy-duty 4-roll plate roll, 10 ft, with the NC console",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-4rhss-heavy": {
+  "src": "tools/src-images/sahinler/sh-4rhss-heavy.jpg",
+  "alt": "4R HSS heavy-duty 4-roll plate roll with hydraulic drop-end and mobile control console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-4rhss-crane": {
+  "src": "tools/src-images/sahinler/sh-4rhss-crane.png",
+  "alt": "4R HSS — optional overhead crane for large diameters",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-4rhss-side-supports": {
+  "src": "tools/src-images/sahinler/sh-4rhss-side-supports.png",
+  "alt": "4R HSS — optional hydraulic side supports and overhead crane",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-4rhss-dro": {
+  "src": "tools/src-images/sahinler/sh-4rhss-dro.jpg",
+  "alt": "4R HSS — three digital readouts on the mobile control panel",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-4rhss-cone": {
+  "src": "tools/src-images/sahinler/sh-4rhss-cone.jpg",
+  "alt": "4R HSS — cone-bending device on the roll end",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-4rhs-25-245": {
+  "src": "tools/src-images/sahinler/sh-4rhs-25-245.jpg",
+  "alt": "Şahinler 4R HS 25-245 hydraulic 4-roll plate roll, 8.4 ft, with the mobile control console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-4rhs-30-190": {
+  "src": "tools/src-images/sahinler/sh-4rhs-30-190.png",
+  "alt": "4R HS 30-190 hydraulic 4-roll plate roll, 10 ft",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-4rhs-20-260-crane": {
+  "src": "tools/src-images/sahinler/sh-4rhs-20-260-crane.jpg",
+  "alt": "4R HS 20-260 with the optional overhead crane and side supports",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-4rhs-cone-device": {
+  "src": "tools/src-images/sahinler/sh-4rhs-cone-device.jpg",
+  "alt": "4R HS — cone-bending device",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-4rh-10-90-nc": {
+  "src": "tools/src-images/sahinler/sh-4rh-10-90-nc.jpg",
+  "alt": "Şahinler 4RH 10-90 NC cassette-type hydraulic 4-roll plate roll with NC console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-4rh-10-90-detail": {
+  "src": "tools/src-images/sahinler/sh-4rh-10-90-detail.jpg",
+  "alt": "4RH — the four rolls move in a cassette-type frame; hydraulic drop-end and feeding table",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-4rh-10-90-side": {
+  "src": "tools/src-images/sahinler/sh-4rh-10-90-side.jpg",
+  "alt": "4RH 10-90 NC — feeding table and drop-end side",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-4rh-10-130-nc": {
+  "src": "tools/src-images/sahinler/sh-4rh-10-130-nc.jpg",
+  "alt": "4RH 10-130 NC with the NC control console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-3ruhs-30-550": {
+  "src": "tools/src-images/sahinler/sh-3ruhs-30-550.jpg",
+  "alt": "Şahinler 3R UHS 30-550 hydraulic translating heavy-duty 3-roll plate roll, 10 ft",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-3rhs-20-210": {
+  "src": "tools/src-images/sahinler/sh-3rhs-20-210.jpg",
+  "alt": "Şahinler 3R HS 20-210 hydraulic 3-roll plate roll, 6.7 ft, with the mobile control console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-3rhs-detail": {
+  "src": "tools/src-images/sahinler/sh-3rhs-detail.jpg",
+  "alt": "3R HS — hydraulic drop-end and roll ends with extended shafts",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-3rhs-drop-end": {
+  "src": "tools/src-images/sahinler/sh-3rhs-drop-end.jpg",
+  "alt": "3R HS — drop-end side with the hydraulic system and pressure gauges",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-4rhc-10-155": {
+  "src": "tools/src-images/sahinler/sh-4rhc-10-155.png",
+  "alt": "Şahinler 4R HC 10-155 hydraulic 4-roll conical plate roll with cone-machined rolls",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-bt114s": {
+  "src": "tools/src-images/sahinler/sh-bt114s.png",
+  "alt": "Şahinler BT 114-S automatic pipe polishing and sanding machine with the mobile control pendant",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-bt114s-rail": {
+  "src": "tools/src-images/sahinler/sh-bt114s-rail.jpg",
+  "alt": "Stainless handrail tube polished on the BT 114-S",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-tube": {
+  "src": "tools/src-images/sahinler/sh-bt114s-tube.png",
+  "alt": "BT 114-S — satin-finished stainless tube",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-sdk6-b": {
+  "src": "tools/src-images/sahinler/sh-sdk6-b.jpg",
+  "alt": "Şahinler SDK 6 circular cutting and flanging machine — part carrier, flanging head and control box",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-sdk-rolls": {
+  "src": "tools/src-images/sahinler/sh-sdk-rolls.jpg",
+  "alt": "SDK — top and bottom flanging rolls",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-sdk-control": {
+  "src": "tools/src-images/sahinler/sh-sdk-control.jpg",
+  "alt": "SDK — control box with touchscreen and pendant",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-spb60": {
+  "src": "tools/src-images/sahinler/sh-spb60.png",
+  "alt": "Şahinler SPB 60 NC pipe draw bender",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-spb76": {
+  "src": "tools/src-images/sahinler/sh-spb76.png",
+  "alt": "Şahinler SPB 76 NC pipe draw bender with a bent tube in the tooling",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-spb-handrail": {
+  "src": "tools/src-images/sahinler/sh-spb-handrail.png",
+  "alt": "SPB — stainless handrail bent on the SPB 60",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-pk30": {
+  "src": "tools/src-images/sahinler/sh-pk30.png",
+  "alt": "Şahinler PK 30 motorized section and pipe bender",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-pk35": {
+  "src": "tools/src-images/sahinler/sh-pk35.png",
+  "alt": "Şahinler PK 35 motorized section and pipe bender",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-pk35-b": {
+  "src": "tools/src-images/sahinler/sh-pk35-b.jpg",
+  "alt": "PK 35 with the foot pedal and the adjustable guide rolls",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk40": {
+  "src": "tools/src-images/sahinler/sh-hpk40.png",
+  "alt": "Şahinler HPK 40 hydraulic section and pipe bender with the mobile control panel",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hpk40-coil": {
+  "src": "tools/src-images/sahinler/sh-hpk40-coil.jpg",
+  "alt": "HPK 40 — spiral bending with the optional crane",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-hpk50": {
+  "src": "tools/src-images/sahinler/sh-hpk50.jpg",
+  "alt": "Şahinler HPK 50 hydraulic section and pipe bender, 8 t hydraulic force",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk60": {
+  "src": "tools/src-images/sahinler/sh-hpk60.jpg",
+  "alt": "Şahinler HPK 60 hydraulic section and pipe bender, 16 t hydraulic force",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk65": {
+  "src": "tools/src-images/sahinler/sh-hpk65.jpg",
+  "alt": "Şahinler HPK 65 hydraulic section and pipe bender with the control console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk80": {
+  "src": "tools/src-images/sahinler/sh-hpk80.jpg",
+  "alt": "Şahinler HPK 80 hydraulic section and pipe bender with the control console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk65-horizontal": {
+  "src": "tools/src-images/sahinler/sh-hpk65-horizontal.jpg",
+  "alt": "HPK 65 in the horizontal working position",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk-guide-detail": {
+  "src": "tools/src-images/sahinler/sh-hpk-guide-detail.jpg",
+  "alt": "HPK — hydraulic lateral guide roll with scale",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk-console": {
+  "src": "tools/src-images/sahinler/sh-hpk-console.jpg",
+  "alt": "HPK — mobile control console with two digital readouts",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk100": {
+  "src": "tools/src-images/sahinler/sh-hpk100.jpg",
+  "alt": "Şahinler HPK 100 hydraulic section and pipe bender with the control console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk100-rolls": {
+  "src": "tools/src-images/sahinler/sh-hpk100-rolls.jpg",
+  "alt": "HPK 100 — three driven rolls and hydraulic lateral guides",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk100-guide": {
+  "src": "tools/src-images/sahinler/sh-hpk100-guide.jpg",
+  "alt": "HPK 100 — hydraulic lateral guide roll",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk100-handwheel": {
+  "src": "tools/src-images/sahinler/sh-hpk100-handwheel.jpg",
+  "alt": "HPK 100 — manual lateral guide and hand wheel",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk100-horizontal": {
+  "src": "tools/src-images/sahinler/sh-hpk100-horizontal.jpg",
+  "alt": "HPK 100 in the horizontal working position",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk120nc": {
+  "src": "tools/src-images/sahinler/sh-hpk120nc.jpg",
+  "alt": "Şahinler HPK 120 NC hydraulic section and pipe bender with hydraulic lateral guides and NC console",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk120-panel": {
+  "src": "tools/src-images/sahinler/sh-hpk120-panel.jpg",
+  "alt": "HPK 120 — hydraulic speed and pressure adjustment valves",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk160dp": {
+  "src": "tools/src-images/sahinler/sh-hpk160dp.png",
+  "alt": "Şahinler HPK 160 DP NC heavy-duty section and beam bender with the NC console",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hpk240dp": {
+  "src": "tools/src-images/sahinler/sh-hpk240dp.png",
+  "alt": "Şahinler HPK 240 DP heavy-duty section and beam bender",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hpkdp-top": {
+  "src": "tools/src-images/sahinler/sh-hpkdp-top.jpg",
+  "alt": "HPK DP — rolls and hydraulic lateral guide rolls seen from above",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpk-halfpipe": {
+  "src": "tools/src-images/sahinler/sh-hpk-halfpipe.jpg",
+  "alt": "HPK — optional half-pipe bending attachment",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-ipn-attachment": {
+  "src": "tools/src-images/sahinler/sh-ipn-attachment.png",
+  "alt": "HPK DP — IPN / UPN beam bending attachment",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-tc42": {
+  "src": "tools/src-images/sahinler/sh-tc42.jpg",
+  "alt": "Şahinler TC-42 NC tube coiling machine rolling a spiral coil between the hydraulic lateral supports",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-tc42-coil": {
+  "src": "tools/src-images/sahinler/sh-tc42-coil.png",
+  "alt": "TC-42 NC — variable-pitch spiral coil",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hkm40": {
+  "src": "tools/src-images/sahinler/sh-hkm40.jpg",
+  "alt": "Şahinler HKM 40 single-piston hydraulic steelworker, 44 US tons",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm40-rear": {
+  "src": "tools/src-images/sahinler/sh-hkm40-rear.jpg",
+  "alt": "HKM 40 — bar shear and angle shear side",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm60": {
+  "src": "tools/src-images/sahinler/sh-hkm60.jpg",
+  "alt": "Şahinler HKM 60 single-piston hydraulic steelworker with five work stations",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm65v": {
+  "src": "tools/src-images/sahinler/sh-hkm65v.png",
+  "alt": "Şahinler HKM 65 V vertical single-piston steelworker",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hkm55": {
+  "src": "tools/src-images/sahinler/sh-hkm55.jpg",
+  "alt": "Şahinler HKM 55 double-piston hydraulic steelworker with two foot pedals",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm65": {
+  "src": "tools/src-images/sahinler/sh-hkm65.jpg",
+  "alt": "Şahinler HKM 65 double-piston hydraulic steelworker, 72 US tons",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm85": {
+  "src": "tools/src-images/sahinler/sh-hkm85.jpg",
+  "alt": "Şahinler HKM 85 double-piston hydraulic steelworker, 94 US tons",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm-lube": {
+  "src": "tools/src-images/sahinler/sh-hkm-lube.jpg",
+  "alt": "HKM — central lubrication pump",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm115": {
+  "src": "tools/src-images/sahinler/sh-hkm115.jpg",
+  "alt": "Şahinler HKM 115 double-piston hydraulic steelworker, 127 US tons",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm115-detail": {
+  "src": "tools/src-images/sahinler/sh-hkm115-detail.jpg",
+  "alt": "HKM 115 — punching station and angle shear with LED lighting",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm175": {
+  "src": "tools/src-images/sahinler/sh-hkm175.jpg",
+  "alt": "Şahinler HKM 175 double-piston hydraulic steelworker, 193 US tons",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm175-operators": {
+  "src": "tools/src-images/sahinler/sh-hkm175-operators.jpg",
+  "alt": "HKM 175 — two operators working at the same time on the punching and shearing stations",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm175-backgauge": {
+  "src": "tools/src-images/sahinler/sh-hkm175-backgauge.jpg",
+  "alt": "HKM 175 — electrical back gauge on the shear station",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm-tool-brake": {
+  "src": "tools/src-images/sahinler/sh-hkm-tool-brake.jpg",
+  "alt": "HKM optional press-brake tool",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm-tool-stripper": {
+  "src": "tools/src-images/sahinler/sh-hkm-tool-stripper.jpg",
+  "alt": "HKM optional hydraulic stripper",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm-tool-notch": {
+  "src": "tools/src-images/sahinler/sh-hkm-tool-notch.png",
+  "alt": "HKM rectangular notching tool",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hkm-tool-radius": {
+  "src": "tools/src-images/sahinler/sh-hkm-tool-radius.jpg",
+  "alt": "HKM flat-bar radius tool",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hkm-tool-punches": {
+  "src": "tools/src-images/sahinler/sh-hkm-tool-punches.jpg",
+  "alt": "HKM punches and dies",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpm65": {
+  "src": "tools/src-images/sahinler/sh-hpm65.jpg",
+  "alt": "Şahinler HPM 65 hydraulic punching machine, 72 US tons",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpm-station": {
+  "src": "tools/src-images/sahinler/sh-hpm-station.jpg",
+  "alt": "HPM — punching station with stripper and table",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpm-punch": {
+  "src": "tools/src-images/sahinler/sh-hpm-punch.jpg",
+  "alt": "HPM — punch and die",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpm30": {
+  "src": "tools/src-images/sahinler/sh-hpm30.png",
+  "alt": "Şahinler HPM 30 hydraulic punching machine",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hpm115": {
+  "src": "tools/src-images/sahinler/sh-hpm115.jpg",
+  "alt": "Şahinler HPM 115 hydraulic punching machine, 127 US tons",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hpm85dp": {
+  "src": "tools/src-images/sahinler/sh-hpm85dp.png",
+  "alt": "Şahinler HPM 85 DP double-head hydraulic punching machine",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hpm85nc": {
+  "src": "tools/src-images/sahinler/sh-hpm85nc.png",
+  "alt": "Şahinler HPM 85 NC punching line with NC table and control console",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-hpm115cnc": {
+  "src": "tools/src-images/sahinler/sh-hpm115cnc.png",
+  "alt": "Şahinler HPM 115 CNC punching machine with CNC table and Siemens control",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-sdk6": {
+  "src": "tools/src-images/sahinler/sh-sdk6.png",
+  "alt": "Şahinler SDK 6 circular sheet cutting and flanging machine, Ø12.5 ft",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-sdk8": {
+  "src": "tools/src-images/sahinler/sh-sdk8.png",
+  "alt": "Şahinler SDK 8 circular sheet cutting and flanging machine, Ø15 ft",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-sdk8-head": {
+  "src": "tools/src-images/sahinler/sh-sdk8-head.jpg",
+  "alt": "SDK 8 — flanging head, part carrier and control panel",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-sdk8-lcd": {
+  "src": "tools/src-images/sahinler/sh-sdk8-lcd.jpg",
+  "alt": "SDK — LCD touchscreen operator panel",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-efm6": {
+  "src": "tools/src-images/sahinler/sh-efm6.jpg",
+  "alt": "Şahinler EFM 6 elliptical cutting and flanging machine",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-efm-vacuum": {
+  "src": "tools/src-images/sahinler/sh-efm-vacuum.jpg",
+  "alt": "EFM 6 — flanging head with the optional vacuum system",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-dks200": {
+  "src": "tools/src-images/sahinler/sh-dks200.jpg",
+  "alt": "Şahinler DK-S 200 3-axis moving straightening press with safety rails",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-dks400": {
+  "src": "tools/src-images/sahinler/sh-dks400.png",
+  "alt": "Şahinler DK-S 400 3-axis moving straightening press, 441 US tons",
+  "section": "sahinler",
+  "trim": true,
+  "quality": 82
+ },
+ "sh-dks-remote": {
+  "src": "tools/src-images/sahinler/sh-dks-remote.jpg",
+  "alt": "DK-S — optional remote control",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-dpm": {
+  "src": "tools/src-images/sahinler/sh-dpm.jpg",
+  "alt": "Şahinler DPM hydraulic shop press",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-dpmk": {
+  "src": "tools/src-images/sahinler/sh-dpmk.jpg",
+  "alt": "Şahinler DPM-K hydraulic shop press with mobile cylinder",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-dk": {
+  "src": "tools/src-images/sahinler/sh-dk.jpg",
+  "alt": "Şahinler DK hydraulic shop press with mobile cylinder and hand wheel",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-dpm200": {
+  "src": "tools/src-images/sahinler/sh-dpm200.jpg",
+  "alt": "Şahinler DPM 200 t hydraulic shop press",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-at": {
+  "src": "tools/src-images/sahinler/sh-at.jpg",
+  "alt": "Şahinler AT universal T-slot hydraulic press",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-ap": {
+  "src": "tools/src-images/sahinler/sh-ap.jpg",
+  "alt": "Şahinler AP garage-type hydraulic press brake",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hnm6v": {
+  "src": "tools/src-images/sahinler/sh-hnm6v.jpg",
+  "alt": "Şahinler HNM 6V variable-angle hydraulic corner notcher",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "sh-hnm6f": {
+  "src": "tools/src-images/sahinler/sh-hnm6f.jpg",
+  "alt": "Şahinler HNM 6F fixed 90° hydraulic corner notcher",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82
+ },
+ "video-WjqJVURbZ6U": {
+  "src": "/home/claude/gms-site/yt/WjqJVURbZ6U.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-4IdFAbpuV8s": {
+  "src": "/home/claude/gms-site/yt/4IdFAbpuV8s.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ID81kR5uI8E": {
+  "src": "/home/claude/gms-site/yt/ID81kR5uI8E.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-JGPsDq7ph8A": {
+  "src": "/home/claude/gms-site/yt/JGPsDq7ph8A.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-baJdE0W_Puk": {
+  "src": "/home/claude/gms-site/yt/baJdE0W_Puk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-2wLeLjYmBKo": {
+  "src": "/home/claude/gms-site/yt/2wLeLjYmBKo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-gQlXmbOJOwk": {
+  "src": "/home/claude/gms-site/yt/gQlXmbOJOwk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-f1cJ_Z2jkWM": {
+  "src": "/home/claude/gms-site/yt/f1cJ_Z2jkWM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-0VJxlVlf3UI": {
+  "src": "/home/claude/gms-site/yt/0VJxlVlf3UI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ouH4xfmGyZY": {
+  "src": "/home/claude/gms-site/yt/ouH4xfmGyZY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-r-EPaVtz0sA": {
+  "src": "/home/claude/gms-site/yt/r-EPaVtz0sA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-_ZMcJ7YJmTg": {
+  "src": "/home/claude/gms-site/yt/_ZMcJ7YJmTg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-l8r_5GLfvhw": {
+  "src": "/home/claude/gms-site/yt/l8r_5GLfvhw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-0FxGiDxlHBQ": {
+  "src": "/home/claude/gms-site/yt/0FxGiDxlHBQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-eGdImYgyjZ8": {
+  "src": "/home/claude/gms-site/yt/eGdImYgyjZ8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-M2nYe99jzBM": {
+  "src": "/home/claude/gms-site/yt/M2nYe99jzBM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-2HHkR7Ld9fE": {
+  "src": "/home/claude/gms-site/yt/2HHkR7Ld9fE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-HK-GhfJwcjI": {
+  "src": "/home/claude/gms-site/yt/HK-GhfJwcjI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-PY_GMtb1i-4": {
+  "src": "/home/claude/gms-site/yt/PY_GMtb1i-4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Q4s3okCn65Q": {
+  "src": "/home/claude/gms-site/yt/Q4s3okCn65Q.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-U0bTM5_YK9g": {
+  "src": "/home/claude/gms-site/yt/U0bTM5_YK9g.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-wZJmGplhR6Y": {
+  "src": "/home/claude/gms-site/yt/wZJmGplhR6Y.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-k3qj4i1u0_w": {
+  "src": "/home/claude/gms-site/yt/k3qj4i1u0_w.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-QhEGGGOO4ug": {
+  "src": "/home/claude/gms-site/yt/QhEGGGOO4ug.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-S_Irw3iNxd8": {
+  "src": "/home/claude/gms-site/yt/S_Irw3iNxd8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Ih_g56w46tU": {
+  "src": "/home/claude/gms-site/yt/Ih_g56w46tU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-jtzBulD29sQ": {
+  "src": "/home/claude/gms-site/yt/jtzBulD29sQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-7i0384bLxF0": {
+  "src": "/home/claude/gms-site/yt/7i0384bLxF0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-n-OjAP38XNA": {
+  "src": "/home/claude/gms-site/yt/n-OjAP38XNA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-MQrQtCYScJY": {
+  "src": "/home/claude/gms-site/yt/MQrQtCYScJY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-wY5bTK1XnnE": {
+  "src": "/home/claude/gms-site/yt/wY5bTK1XnnE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Tt33aBsxH-4": {
+  "src": "/home/claude/gms-site/yt/Tt33aBsxH-4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-tVxDdnI7tEI": {
+  "src": "/home/claude/gms-site/yt/tVxDdnI7tEI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-nSbf4Dwcoog": {
+  "src": "/home/claude/gms-site/yt/nSbf4Dwcoog.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-jd5xdM5LENs": {
+  "src": "/home/claude/gms-site/yt/jd5xdM5LENs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Qaj7a7gDubg": {
+  "src": "/home/claude/gms-site/yt/Qaj7a7gDubg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-sXaJHhUVtnE": {
+  "src": "/home/claude/gms-site/yt/sXaJHhUVtnE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-PAxfpuBlUlY": {
+  "src": "/home/claude/gms-site/yt/PAxfpuBlUlY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-TNc_jYos-VA": {
+  "src": "/home/claude/gms-site/yt/TNc_jYos-VA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-v9mC9fqcVcE": {
+  "src": "/home/claude/gms-site/yt/v9mC9fqcVcE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-FsofcerO5nU": {
+  "src": "/home/claude/gms-site/yt/FsofcerO5nU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-QRqZVK4bQzA": {
+  "src": "/home/claude/gms-site/yt/QRqZVK4bQzA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-7z2Ypj10HOQ": {
+  "src": "/home/claude/gms-site/yt/7z2Ypj10HOQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-0Wy-gydiyQg": {
+  "src": "/home/claude/gms-site/yt/0Wy-gydiyQg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-tQkcc2WAlWc": {
+  "src": "/home/claude/gms-site/yt/tQkcc2WAlWc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-eWnYKhe64l4": {
+  "src": "/home/claude/gms-site/yt/eWnYKhe64l4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-C9UMkUAX9io": {
+  "src": "/home/claude/gms-site/yt/C9UMkUAX9io.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-KZV6tOhQ-6E": {
+  "src": "/home/claude/gms-site/yt/KZV6tOhQ-6E.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-IaLQHL62RHQ": {
+  "src": "/home/claude/gms-site/yt/IaLQHL62RHQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-aQx2zab_GHM": {
+  "src": "/home/claude/gms-site/yt/aQx2zab_GHM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-A0-KkaGnAaM": {
+  "src": "/home/claude/gms-site/yt/A0-KkaGnAaM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-CDDqTYn6SU0": {
+  "src": "/home/claude/gms-site/yt/CDDqTYn6SU0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-3NVkGji2fEY": {
+  "src": "/home/claude/gms-site/yt/3NVkGji2fEY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-WVxN1BFnKsk": {
+  "src": "/home/claude/gms-site/yt/WVxN1BFnKsk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-0IGVfYrBiA8": {
+  "src": "/home/claude/gms-site/yt/0IGVfYrBiA8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-l0pVqb4BCdA": {
+  "src": "/home/claude/gms-site/yt/l0pVqb4BCdA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-LuQHD5rFh3A": {
+  "src": "/home/claude/gms-site/yt/LuQHD5rFh3A.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ADZj0MzeK7w": {
+  "src": "/home/claude/gms-site/yt/ADZj0MzeK7w.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-JVWQf5gMtfY": {
+  "src": "/home/claude/gms-site/yt/JVWQf5gMtfY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-nwNGB5PgXoo": {
+  "src": "/home/claude/gms-site/yt/nwNGB5PgXoo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-m2QTUJ1ovq0": {
+  "src": "/home/claude/gms-site/yt/m2QTUJ1ovq0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-j8vE5Dmc4QI": {
+  "src": "/home/claude/gms-site/yt/j8vE5Dmc4QI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-zd5Zhu82wPo": {
+  "src": "/home/claude/gms-site/yt/zd5Zhu82wPo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-kotI1chSYnY": {
+  "src": "/home/claude/gms-site/yt/kotI1chSYnY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-6SVmTnY_4rs": {
+  "src": "/home/claude/gms-site/yt/6SVmTnY_4rs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-o23ZQEoAvzU": {
+  "src": "/home/claude/gms-site/yt/o23ZQEoAvzU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-TbSq2XpE5Zk": {
+  "src": "/home/claude/gms-site/yt/TbSq2XpE5Zk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-SpK80ozB2eQ": {
+  "src": "/home/claude/gms-site/yt/SpK80ozB2eQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-pr9M1AlSgso": {
+  "src": "/home/claude/gms-site/yt/pr9M1AlSgso.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video--WSHmos5adM": {
+  "src": "/home/claude/gms-site/yt/-WSHmos5adM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-2TtFPY09kB8": {
+  "src": "/home/claude/gms-site/yt/2TtFPY09kB8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-cLgF3gMPYNg": {
+  "src": "/home/claude/gms-site/yt/cLgF3gMPYNg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-cjPMo9s1Olo": {
+  "src": "/home/claude/gms-site/yt/cjPMo9s1Olo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-_2GhF396tTI": {
+  "src": "/home/claude/gms-site/yt/_2GhF396tTI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-LBJZvmwwyNM": {
+  "src": "/home/claude/gms-site/yt/LBJZvmwwyNM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ZbCcqb2ES9Y": {
+  "src": "/home/claude/gms-site/yt/ZbCcqb2ES9Y.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-zh12gSVvWt4": {
+  "src": "/home/claude/gms-site/yt/zh12gSVvWt4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-mU3ZumBNZ0I": {
+  "src": "/home/claude/gms-site/yt/mU3ZumBNZ0I.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-mLIkH1npMO0": {
+  "src": "/home/claude/gms-site/yt/mLIkH1npMO0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-JjSbK3gadgk": {
+  "src": "/home/claude/gms-site/yt/JjSbK3gadgk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-bNLJxsDqr4U": {
+  "src": "/home/claude/gms-site/yt/bNLJxsDqr4U.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Jbw-7lCxxqE": {
+  "src": "/home/claude/gms-site/yt/Jbw-7lCxxqE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-GBahTNVoke4": {
+  "src": "/home/claude/gms-site/yt/GBahTNVoke4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-RgQYKfC1lDU": {
+  "src": "/home/claude/gms-site/yt/RgQYKfC1lDU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-s5NHZ7ylf80": {
+  "src": "/home/claude/gms-site/yt/s5NHZ7ylf80.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-rFdDnjtZ5zs": {
+  "src": "/home/claude/gms-site/yt/rFdDnjtZ5zs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-3_6at2kbAGo": {
+  "src": "/home/claude/gms-site/yt/3_6at2kbAGo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-UDAOTlZ0Is8": {
+  "src": "/home/claude/gms-site/yt/UDAOTlZ0Is8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-g-YYZHvy-1g": {
+  "src": "/home/claude/gms-site/yt/g-YYZHvy-1g.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-KfXlPsGZF10": {
+  "src": "/home/claude/gms-site/yt/KfXlPsGZF10.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

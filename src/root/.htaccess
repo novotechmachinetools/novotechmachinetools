@@ -24,6 +24,9 @@ RedirectMatch 301 ^/bead-roller-hvac-forming-pittsburgh-lock-former(\.html)?$ /b
 RedirectMatch 301 ^/circular-cutting-shear-tank-dish-head-flanging(\.html)?$ /circle-cutters-and-seamers
 RedirectMatch 301 ^/pipe-bender(\.html)?$ /pipe-benders
 RedirectMatch 301 ^/tube-notchers-and-end-formers(\.html)?$ /pipe-notcher
+RedirectMatch 301 ^/iron-worker-punch(\.html)?$ /ironworker-machines
+RedirectMatch 301 ^/pipe-profile-roll-bender(\.html)?$ /angle-rolls
+RedirectMatch 301 ^/pipe-polishing-deburring-grinding-brushing(\.html)?$ /pipe-sanding-polishing-machines
 # band saw sub-pages live at /manual-band-saws, /semi-automatic-band-saws, /automatic-band-saws and
 # /double-column-band-saws (Bekamak) and /affordable-semi-automatic-band-saws, /automatic-feed-band-saws,
 # /twin-column-band-saws (value line) — brand-free URLs, Oct 2026.  Earlier brand slugs redirect:
@@ -65,12 +68,31 @@ Redirect 301 "/files/IRM---3R-HMD-RM-pinch-roll-machine-ISITAN---MADE-IN-TURKEY-
 Redirect 301 "/files/MRM-S-plate-rolling-machine-ISITAN---MADE-IN-TURKEY.pdf" "/motorized-plate-rollers"
 Redirect 301 "/files/slip-roll-HRM-RM-IR-R-RS.pdf" "/slip-rolls"
 Redirect 301 "/files/3RHMD-RM-IR-slip-roll-machine-ISITAN---MADE-IN-TURKEY.pdf" "/slip-rolls"
-Redirect 301 "/files/4RHSS-4RHS-4RHSL-3RHSS-plate-roller-brochure-SAHINLER---MADE-IN-TURKEY.pdf" "/plate-rollers"
-Redirect 301 "/files/4RHSS---4RHS---4RHL--4RH---4RC---3RHS-plate-rollers---SAHINLER---MADE-IN-TURKEY-s.pdf" "/plate-rollers"
+Redirect 301 "/files/4RHSS-4RHS-4RHSL-3RHSS-plate-roller-brochure-SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/4RHSS---4RHS---4RHL--4RH---4RC---3RHS-plate-rollers---SAHINLER---MADE-IN-TURKEY-s.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
 Redirect 301 "/files/Hydraulic-4-rolls-plate-roller-4RHSS-4RHS-4RM.pdf" "/hydraulic-4-roll-plate-rollers"
 Redirect 301 "/files/3-rolls-hydraulic-plate-rolling-machine-3RUHS-3RHSS-3RHS.pdf" "/hydraulic-3-roll-plate-rollers"
 Redirect 301 "/files/4-rolls-conic-plate-roller-4RHC.pdf" "/hydraulic-4-roll-plate-rollers"
 Redirect 301 "/files/plate-roll-bender-4RM-4RH-4RHM.pdf" "/plate-rollers"
+Redirect 301 "/files/SAHINLER-Hydraulic-press-general-catalog.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/SAHINLER-ironworker---plate-roller---angle-roller---flanging-brochure.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/HKM-ironworker-machine-brochure-SAHINLER----capacity-chart---MADE-IN-TURKEY-s.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/Hydraulic-Iron-worker-HKM.pdf" "/ironworker-machines"
+Redirect 301 "/files/Hydrauli-ring-roller-HPK-3RHPK.pdf" "/angle-rolls"
+Redirect 301 "/files/4-rolls-roll-bender-4RHPK.pdf" "/angle-rolls"
+Redirect 301 "/files/SDK-and-EFM-circular-cutting-shear-and-tank-head-flanging-machine-SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/HPM-hydraulic-punching-machine---SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/Universal-hydraulic-press-AT-AP.pdf" "/hydraulic-press"
+Redirect 301 "/files/HPK-4RHPK-PK-angle-roll---roll-bender-SAHINLER---MADE-IN-TURKEY-s.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/HNM-corner-notcher.pdf" "/corner-notcher"
+Redirect 301 "/files/Double-pinch-roll-bender-HPK.pdf" "/angle-rolls"
+Redirect 301 "/files/heavy-duty-roll-bender-double-HPK.pdf" "/angle-rolls"
+Redirect 301 "/files/BT-114-s-pipe-polishing-machine---pipe-sanding-machine---SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/Combo-notching-and-punching-machine--Variable-angle--HNM6-VP.pdf" "/corner-notcher"
+Redirect 301 "/files/TC-42-tube-coil-rolling-machine-SAHINLER---MADE-IN-TURKEY.pdf" "/angle-rolls"
+Redirect 301 "/files/Hydraulic-workshop-press-DPM-DK-DPMK-DP.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/Sheet-metal-corner-notcher--Variable-angle--HNM6V.pdf" "/corner-notcher"
+Redirect 301 "/files/Hydrauli-multi-functional-punch-shear-notcher--HPS-40.pdf" "/ironworker-machines"
 RedirectMatch 301 ^/rebar-bending-machines(\.html)?$ /rebar-bender
 
 # ---- Compression -------------------------------------------------------------

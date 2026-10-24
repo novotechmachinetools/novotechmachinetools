@@ -1,5 +1,7 @@
 """İşitan section: tube & pipe benders (catalogue pages 40–49) — hub `pipe-benders` with three category pages."""
 from isitan_lib import *  # noqa: F401,F403
+from sahinler_families import SPB_FAMILIES  # Şahinler SPB draw benders below the İşitan BK group
+from sahinler_lib import PDF as PDF_SH
 
 SET = "tube-benders"
 SECTION = "Pipe & tube benders"
@@ -378,12 +380,13 @@ PAGES = {
     ),
     P_BK: dict(
         title="Rotary Draw Tube Benders — Compact Pipe Benders | NovoTech",
-        meta="Compact non-mandrel benders for 1/8″ to 2-1/2″ pipe, Ø3″ steel tube, solid bar, flat bar and box section. Touchscreen NC or one-touch control, tooling included.",
+        meta="Compact non-mandrel benders for 1/8″ to 2-1/2″ pipe, Ø3″ steel tube, solid bar, flat bar and box section: İşitan BK with touchscreen NC and Şahinler SPB with 500-program NC.",
         h1="Rotary draw tube benders",
-        intro="A rotary draw bender clamps the tube to a rotating bend die and draws it around the die radius without an internal mandrel — the simplest machine for handrail, gate and furniture bends in tube, pipe and bar. İşitan's BK series is that bender for handrail, gate, fence, furniture and repair shops: four models from the 1 HP BK-42 for 1-1/4″ pipe to the BK 030 (76) for Ø3″ × 11 ga steel tube, bending gas pipe, steel and stainless tube, copper, solid round and square bar, flat bar both ways and box section with one included tooling set. Touchscreen NC (PLC) programming on the BK-42 and BK 030, one-touch control with two speeds on the BK-050 and the hydraulic BK-H 060 — all on rollers with a foot pedal and a CSA-approved panel.",
-        points=["1/8″ to 2-1/2″ NPS pipe · Ø3″ × 11 ga steel tube · CLR to 7.9″", "Tube, pipe, solid bar, flat bar and box section — one tooling set included", "Touchscreen NC (PLC) or one-touch control · foot pedal · on rollers"],
-        hero="is-bk-050", minis=["is-bk-42", "is-bk-030"],
-        groups=[("bk", "BK rotary draw benders", "Four compact non-mandrel benders from 1 to 3 HP.")],
+        intro="A rotary draw bender clamps the tube to a rotating bend die and draws it around the die radius without an internal mandrel — the simplest machine for handrail, gate and furniture bends in tube, pipe and bar. İşitan's BK series is that bender for handrail, gate, fence, furniture and repair shops: four models from the 1 HP BK-42 for 1-1/4″ pipe to the BK 030 (76) for Ø3″ × 11 ga steel tube, bending gas pipe, steel and stainless tube, copper, solid round and square bar, flat bar both ways and box section with one included tooling set. Touchscreen NC (PLC) programming on the BK-42 and BK 030, one-touch control with two speeds on the BK-050 and the hydraulic BK-H 060. Şahinler's SPB 60 and SPB 76 add NC draw benders with a 500-program memory for Ø2-3/8″ and Ø3″ pipe. All on rollers with a foot pedal and a CSA-approved panel.",
+        points=["1/8″ to 2-1/2″ NPS pipe · Ø3″ × 11 ga steel tube · CLR to 7.9″", "Tube, pipe, solid bar, flat bar and box section — one tooling set included", "Touchscreen NC (PLC), one-touch control or 500-program NC (SPB) · foot pedal · on rollers"],
+        hero="is-bk-050", minis=["is-bk-42", "sh-spb76"],
+        groups=[("bk", "İşitan BK rotary draw benders", "Four compact non-mandrel benders from 1 to 3 HP.", "isitan"),
+                ("sahinler-draw", "Şahinler SPB pipe draw benders", "NC-controlled rotary draw benders for pipe to Ø3″ with a 500-program memory.", "sahinler")],
         faq=[{"q": "Rotary draw or mandrel bender?", "a": "A rotary draw bender clamps the tube to a bend die and draws it around; without an internal mandrel it suits thicker walls and radii of about 2× the diameter and up — handrail, gate, fence and furniture work. Thin-wall tube to a tight radius needs the mandrel support of an SFB bender. The BK capacity table lists the maximum tube, bar and box section for each model."},
              {"q": "Which BK for stainless handrail?", "a": "The BK-050 bends Ø2-3/8″ × 14 ga 304/316 stainless tube and the BK-H 060 Ø2-3/8″ × 12 ga — the common 1-1/2″ and 2″ handrail sizes with room to spare. The hydraulic BK-H 060 draws from one direction, which makes sequential bends on long rails easier."},
              {"q": "Does it come with tooling?", "a": "One set — bend die, clamp die and counter die — in the size you request is included. Additional sets for other diameters, square tube, flat bar and box section are quoted with the machine; tell us material, size, wall, CLR and angle."},
@@ -413,19 +416,25 @@ HUB_PAGE = dict(
 SUBPAGE_META = {
     P_CNC: ("CNC tube benders", "is-sfb-90-cnc", "SFB CNC/A3 and CNC/A5 servo mandrel benders from Ø1-1/2″ to Ø3-1/2″ with 21″ touchscreen CNC and 3D simulation.", "CNC benders"),
     P_NC: ("NC tube benders", "is-sfb-90-nc", "SFB NC and NC/C hydraulic mandrel benders with 10″ touchscreen NC, compact SFB 32 benders and aluminum-profile benders.", "NC benders"),
-    P_BK: ("Rotary draw tube benders", "is-bk-050", "BK series compact non-mandrel benders for pipe to 2-1/2″ NPS, steel tube, bar and box section — touchscreen NC or one-touch control.", "Rotary draw"),
+    P_BK: ("Rotary draw tube benders", "is-bk-050", "İşitan BK compact non-mandrel benders for pipe to 2-1/2″ NPS, steel tube, bar and box section, and Şahinler SPB NC draw benders to Ø3″ pipe.", "Rotary draw"),
 }
 ORDER = [P_CNC, P_NC, P_BK]
 
 
+ALL_FAMILIES = FAMILIES + SPB_FAMILIES
+
+
 def build():
-    write_families(SET, FAMILIES)
+    write_families(SET, ALL_FAMILIES)
     sib = [(s, SUBPAGE_META[s][3], SUBPAGE_META[s][0]) for s in ORDER]
     hub = {"slug": HUB, "label": "All pipe & tube benders", "image": "is-sfb-38-cnc-a5", "blurb": "Every İşitan tube and pipe bender NovoTech supplies, with the capacity table for the whole range."}
     related = [{"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "tube-end-forming-machines.html", "label": "Tube end forming machines"}, {"href": "circular-cold-saws.html", "label": "Circular cold saws"}]
+    shared = {"catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_SH],
+              "hero_brand_line": "İşitan BK and Şahinler SPB benders are made in Turkey — İşitan Makine since 1959, Şahinler Metal since 1976 — with European components. Sold, installed and supported in Canada by NovoTech.",
+              "origin_feature": {"title": "Made in Turkey by İşitan and Şahinler", "text": "İşitan has built sheet-metal machinery in Bursa since 1959 and Şahinler Metal bending machinery since 1976 — CE-certified machines with European components."}}
     for slug in ORDER:
-        write_category(slug, {**PAGES[slug], "related_pages": related}, FAMILIES, SET, SECTION, hub=hub, siblings=sib)
+        write_category(slug, {**PAGES[slug], "related_pages": related}, ALL_FAMILIES, SET, SECTION, hub=hub, siblings=sib, extra=shared if slug == P_BK else None)
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Pipe Benders & Tube Bending Machines", "faq_title": "Questions we get asked about pipe benders", "nav_label": "All pipe & tube benders", "related_blurb": hub["blurb"]},
-              FAMILIES, SET, SECTION, [(s, SUBPAGE_META[s][0], SUBPAGE_META[s][1], SUBPAGE_META[s][2], SUBPAGE_META[s][3]) for s in ORDER],
+              ALL_FAMILIES, SET, SECTION, [(s, SUBPAGE_META[s][0], SUBPAGE_META[s][1], SUBPAGE_META[s][2], SUBPAGE_META[s][3]) for s in ORDER],
               extra={"related_pages": [{"href": f"{s}.html", "label": SUBPAGE_META[s][0]} for s in ORDER] + related})
     return IMAGES

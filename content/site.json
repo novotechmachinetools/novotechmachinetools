@@ -90,7 +90,17 @@
     },
     {
      "label": "Ironworkers",
-     "href": "iron-worker-punch.html"
+     "href": "ironworker-machines.html",
+     "children": [
+      {
+       "label": "Hydraulic ironworkers",
+       "href": "ironworker-machines.html"
+      },
+      {
+       "label": "Hydraulic punching machines",
+       "href": "hydraulic-punching-machines.html"
+      }
+     ]
     },
     {
      "label": "Plate rollers & slip rolls",
@@ -116,7 +126,7 @@
     },
     {
      "label": "Angle rolls",
-     "href": "pipe-profile-roll-bender.html"
+     "href": "angle-rolls.html"
     },
     {
      "label": "Band saws",
@@ -217,7 +227,7 @@
      "href": "plate-beveler.html"
     },
     {
-     "label": "Circle cutters & lock seamers",
+     "label": "Circle cutters & flanging",
      "href": "circle-cutters-and-seamers.html"
     },
     {
@@ -234,7 +244,7 @@
     },
     {
      "label": "Pipe polishing & sanding",
-     "href": "pipe-polishing-deburring-grinding-brushing.html"
+     "href": "pipe-sanding-polishing-machines.html"
     },
     {
      "label": "Tube notchers",
@@ -395,6 +405,20 @@
     "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
     "label": "İşitan machinery catalogue",
     "size": "PDF · 29 MB · imperial units"
+   },
+   "line": "İşitan"
+  },
+  "sahinler": {
+   "name": "Şahinler",
+   "manufacturer": "Şahinler Metal",
+   "country": "Turkey",
+   "country_code": "TR",
+   "line": "Şahinler",
+   "tagline": "Made in Turkey since 1976 — Şahinler Metal plate rolls, angle rolls, ironworkers and presses sold, installed and supported in Canada by NovoTech",
+   "pdf": {
+    "file": "files/NovoTech-Sahinler-Catalogue-2027.pdf",
+    "label": "Şahinler machinery catalogue",
+    "size": "PDF · 28 MB · imperial units"
    }
   }
  }

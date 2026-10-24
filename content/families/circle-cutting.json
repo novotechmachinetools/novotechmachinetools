@@ -1,7 +1,9 @@
 {
  "order": [
   "isitan-idk",
-  "isitan-ls-13p"
+  "isitan-ls-13p",
+  "sahinler-sdk",
+  "sahinler-efm"
  ],
  "families": {
   "isitan-idk": {
@@ -392,6 +394,375 @@
    "headline": "Lock seams to 51.2″ (1300 mm) in 18 ga (1.2 mm) · pipe Ø3.9–5.1″",
    "group": "circle",
    "brand": "isitan"
+  },
+  "sahinler-sdk": {
+   "id": "sahinler-sdk",
+   "brand": "sahinler",
+   "name": "SDK 6 · SDK 8 circular sheet cutting and flanging machines",
+   "short": "SDK 6 · SDK 8",
+   "models_label": "SDK 6 (Ø12.5 ft) · SDK 8 (Ø15 ft)",
+   "summary": "Tank-head machines that cut a circle from plate and flange its edge on the same head: dished and flat heads from Ø21.7″ up to Ø12.5 ft (SDK 6) or Ø15 ft (SDK 8) in mild steel to 1/4″ – 5/16″ and stainless to 8 ga – 3/16″. The flanging rolls are driven through planetary gearboxes by electric motor (SDK 6) or hydromotor (SDK 8), the part carrier has two speeds and hydraulic up/down adjustment, hydraulic lateral supports hold the plate and an LCD touchscreen runs the cycle. One set of R1″ flanging rolls and one set of cutting blades are included; a Japanese-hat (top-hat) attachment, small-diameter attachment and stainless blade set are optional.",
+   "features": [
+    "Cut and flange dished and flat heads up to Ø15 ft on the same head",
+    "Bottom and top flanging rolls driven by hydromotor (SDK 8) or electric motor (SDK 6) through planetary gearbox",
+    "Two-speed part carrier, hydraulic up/down; hydraulic-cylinder lateral supports",
+    "LCD touchscreen operator panel",
+    "One set of flanging rolls (R1″) and one set of cutting blades included"
+   ],
+   "optional": [
+    "Flanging rolls in other radii",
+    "Japanese-hat (top-hat) attachment",
+    "Small-Ø cutting / flanging attachment (Ø15.7″ – 17.7″)",
+    "Blade set for cutting stainless steel",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-sdk8",
+    "sh-sdk6",
+    "sh-sdk6-b",
+    "sh-sdk8-head",
+    "sh-sdk-rolls",
+    "sh-sdk-control",
+    "sh-sdk8-lcd"
+   ],
+   "videos": [
+    {
+     "id": "RgQYKfC1lDU",
+     "title": "SDK 8 tank head flanging and circle cutting machine",
+     "duration": "PT1M5S",
+     "thumb": "video-RgQYKfC1lDU"
+    },
+    {
+     "id": "s5NHZ7ylf80",
+     "title": "SDK 8 tank dish end circular cutting and flanging machine",
+     "duration": "PT1M9S",
+     "thumb": "video-s5NHZ7ylf80"
+    },
+    {
+     "id": "rFdDnjtZ5zs",
+     "title": "SDK 6 circular cutting shear and flanging machine",
+     "duration": "PT4M15S",
+     "thumb": "video-rFdDnjtZ5zs"
+    },
+    {
+     "id": "3_6at2kbAGo",
+     "title": "SDK 8 — conical flanging of a tank head",
+     "duration": "PT1M39S",
+     "thumb": "video-3_6at2kbAGo"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SDK 6 · SDK 8",
+      "sub": "circular sheet cutting & flanging machines",
+      "models": [
+       "SDK 6",
+       "SDK 8"
+      ],
+      "rows": [
+       {
+        "label": "Max. flanging plate Ø",
+        "sub": "",
+        "cells": [
+         "149.6″ (3800 mm)",
+         "177.2″ (4500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Min. flanging plate Ø",
+        "sub": "",
+        "cells": [
+         "21.7″ (550 mm)",
+         "28.3″ (720 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. flanging Ø with small-Ø attachment",
+        "sub": "optional",
+        "cells": [
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. cutting plate Ø",
+        "sub": "",
+        "cells": [
+         "151.6″ (3850 mm)",
+         "179.1″ (4550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Min. cutting plate Ø",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm)",
+         "31.1″ (790 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. cutting Ø with small-Ø attachment",
+        "sub": "optional",
+        "cells": [
+         "15.7″ (400 mm)",
+         "24.4″ (620 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. flanging height (optional rolls)",
+        "sub": "height (flange radius)",
+        "cells": [
+         "3.3 ″ (R2.8″) · 1.4 ″ (R1.0)″)",
+         "3.7 ″ (R3.1″) · 1.4 ″ (R1.0)″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flanging radius",
+        "sub": "min. – max.",
+        "cells": [
+         "R0.4″ – R2.8″",
+         "R0.4″ – R3.1″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. plate thickness — mild steel",
+        "sub": "",
+        "cells": [
+         "1/4″ (6 mm)",
+         "5/16″ (8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. plate thickness — stainless 304 / 316",
+        "sub": "",
+        "cells": [
+         "8 ga (4 mm)",
+         "3/16″ (5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "12 HP (9 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "169 × 43 × 85″ (4,300 × 1,100 × 2,150 mm)",
+         "193 × 67 × 106″ (4,900 × 1,700 × 2,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,504 lb (2,950 kg)",
+         "10,031 lb (4,550 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SDK 6",
+      "glance": [
+       "149.6″ (3800 mm)",
+       "1/4″ (6 mm)",
+       "12 HP (9 kW)",
+       "6,504 lb (2,950 kg)"
+      ]
+     },
+     {
+      "name": "SDK 8",
+      "glance": [
+       "177.2″ (4500 mm)",
+       "5/16″ (8 mm)",
+       "15 HP (11 kW)",
+       "10,031 lb (4,550 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "max_dia",
+     "thickness",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Mild-steel capacities are for 37,000 psi (26 kg/mm²) yield strength. Dimensions are overall L × W × H; metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "Heads Ø21.7″ to Ø15 ft (0.55 – 4.5 m) · plate to 5/16″ (8 mm) · cut and flange on one head",
+   "group": "sahinler-circle"
+  },
+  "sahinler-efm": {
+   "id": "sahinler-efm",
+   "brand": "sahinler",
+   "name": "EFM 6 elliptical cutting and flanging machine",
+   "short": "EFM 6",
+   "models_label": "EFM 6 · Ø29.5″ to Ø118″",
+   "summary": "For round and elliptical tank heads: the flanging head tilts 90° to both sides and follows a moving, changeable bottom template, so flat, crowned and elliptical bottoms are cut and flanged on the same head. Plate from 11 ga to 1/4″ mild steel (14 ga to 8 ga stainless) up to Ø118″; one set of R3/8″ flanging rolls, one set of cutting blades and one copy template are included, with a vacuum system optional for holding thin heads.",
+   "features": [
+    "Flanging head tilts 90° to both sides for elliptical flanging",
+    "Moving, changeable bottom template for flat and elliptical sheets; copy template (1 pc.)",
+    "Round and elliptical flanging and cutting on the same head; flanges flat, crowned and elliptical bottoms",
+    "Planetary gearbox and gear system drive",
+    "One set of flanging rolls (R3/8″) and one set of cutting blades included"
+   ],
+   "optional": [
+    "Vacuum system",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-efm6",
+    "sh-efm-vacuum"
+   ],
+   "videos": [
+    {
+     "id": "UDAOTlZ0Is8",
+     "title": "EFM 6 oval tank head shear cutting and flanging machine",
+     "duration": "PT0M50S",
+     "thumb": "video-UDAOTlZ0Is8"
+    },
+    {
+     "id": "g-YYZHvy-1g",
+     "title": "EFM 6 tank dish elliptical cutting and flanging machine",
+     "duration": "PT2M19S",
+     "thumb": "video-g-YYZHvy-1g"
+    },
+    {
+     "id": "KfXlPsGZF10",
+     "title": "EFM 6 elliptical tank head cutting shear and flanging machine",
+     "duration": "PT2M19S",
+     "thumb": "video-KfXlPsGZF10"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "EFM 6",
+      "sub": "elliptical cutting & flanging machine",
+      "models": [
+       "EFM 6"
+      ],
+      "rows": [
+       {
+        "label": "Max. plate cutting Ø",
+        "sub": "",
+        "cells": [
+         "118.1″ (3000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Min. plate cutting Ø",
+        "sub": "",
+        "cells": [
+         "29.5″ (750 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. flanging height",
+        "sub": "",
+        "cells": [
+         "1.6″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. flanging radius",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Plate thickness — mild steel",
+        "sub": "",
+        "cells": [
+         "11 ga – 1/4″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Plate thickness — stainless 304 / 316",
+        "sub": "",
+        "cells": [
+         "14 ga – 8 ga"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "220 × 53 × 62″ (5,600 × 1,350 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,453 lb (2,020 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EFM 6",
+      "glance": [
+       "118.1″ (3000 mm)",
+       "11 ga – 1/4″",
+       "10 HP (7.5 kW)",
+       "4,453 lb (2,020 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "max_dia",
+     "thickness",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Mild-steel capacities are for 37,000 psi (26 kg/mm²) yield strength. Dimensions are overall L × W × H; metric values in brackets are the manufacturer's nominal figures."
+   },
+   "headline": "Round and elliptical heads Ø29.5″ to Ø118″ (0.75 – 3 m) · plate 11 ga to 1/4″",
+   "group": "sahinler-circle"
   }
  }
 }

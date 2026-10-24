@@ -108,3 +108,27 @@ drops (the silver fan cover, the length-stop rod lying across dropped floor).  I
 these frames (white bow on white wall, other machines behind); rembg's own SAM wrapper mis-scales the
 prompts, which is why the tool drives the ONNX models itself.  The BS-315GF `nt-bs315gf-v1..v4` cut-outs
 come from `IMG_1150.mov` this way.
+
+## Şahinler photos — supplier logos removed (LaMa inpainting)
+
+NovoTech's rule for Şahinler machines: the manufacturer's logo plates and stickers are erased from every
+photo (the machines are sold under NovoTech's warranty and support), with the machine itself untouched.
+
+- Sources (outside the repository): the hi-res studio photos from the supplier's Drive
+  (`/home/claude/sahinler/photos/dekupaj/`, white background, 5000–7000 px), the catalogue cut-outs
+  (`/home/claude/sahinler/photos/cat/`, PNG with alpha) and page crops of the original catalogue
+  (`/home/claude/sahinler/orig/img/`).
+- `tools/sahinler_photos.py` lists every photo (`PHOTOS`: source, the logo boxes in source pixels,
+  optional crop, alt text, `cutout=False` for scene photos) and exports the cleaned files to
+  `tools/src-images/sahinler/<key>.png|.jpg` at 2600 px.  `python3 tools/sahinler_photos.py [keys]`
+  exports; `--check [keys]` writes a contact sheet with the boxes drawn for review.
+- Logo removal is `tools/delogo.py` → mode `"lama"`: the rough box is grown by 6 %, merged with the
+  detected logo plate (`find_plate`) and filled by the LaMa inpainting model
+  (`tools/lama_inpaint.py`, weights `/home/claude/models/lama/big-lama.pt` — big-lama.pt from the
+  simple-lama-inpainting release, run with torch.jit on CPU, ~7 s per box).  The older strip / Poisson
+  modes are kept for flat panels but LaMa is what every Şahinler photo uses.
+- The exported files are then ordinary sources for the pipeline: JPGs on white are cut out by BiRefNet,
+  PNGs keep their alpha; `tools/sahinler_pages.py` registers them in `image_map.json` (section
+  `sahinler`) from the same `PHOTOS` list, so a photo is described once.
+- Verified visually: `BT-114-S.png` is the BT 114-S polisher (the Drive `p69-…` photos are of the SDK
+  flanging machine and are used there); `A26A9019.png` is the TC-42 coiling a tube.
