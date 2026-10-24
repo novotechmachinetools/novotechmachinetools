@@ -33,6 +33,42 @@ RedirectMatch 301 ^/(novofab|novotech)-semi-automatic-band-saws(\.html)?$ /affor
 RedirectMatch 301 ^/(novofab|novotech)-automatic-band-saws(\.html)?$ /automatic-feed-band-saws
 RedirectMatch 301 ^/(novofab|novotech)-double-column-band-saws(\.html)?$ /twin-column-band-saws
 RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
+
+# Old-site PDF brochures that earn search traffic (Search Console, Jun 2025 – Oct 2026) → the rebuilt page or the new catalogue.
+# PDFs of product lines not rebuilt yet stay where they are on the host until their pages exist.
+Redirect 301 "/files/ISITAN-GENERAL-CATALOG-plate-roller--profile-roller---press-brake---notcher---bead-roller---Circular-shear-.pdf" "/files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf"
+Redirect 301 "/files/CNC-mandrel-pipe-bender.pdf" "/cnc-tube-benders"
+Redirect 301 "/files/SFB-NC-mandrel-tube-bender-ISITAN---MADE-IN-TURKEY.pdf" "/nc-tube-benders"
+Redirect 301 "/files/NC-hydraulic-mandrel-tube-bending-machine.pdf" "/nc-tube-benders"
+Redirect 301 "/files/mandrel-pipe-bender---pipe-end-forming---tube-draw-bender-SAHINLER-FORM-METAL.pdf" "/pipe-benders"
+Redirect 301 "/files/SPB---BK-pipe-draw-bender-SAHINLER---ISITAN---MADE-IN-TURKEY-s.pdf" "/rotary-draw-tube-benders"
+Redirect 301 "/files/SPB---BK-pipe-draw-bender-SAHINLER---ISITAN---MADE-IN-TURKEY.pdf" "/rotary-draw-tube-benders"
+Redirect 301 "/files/EdgeBender-press-brake-ISITAN---MADE-IN-TURKEY.pdf" "/compact-hydraulic-press-brakes"
+Redirect 301 "/files/NC-press-brake-EdgeBender-brochure-ISITAN.pdf" "/compact-hydraulic-press-brakes"
+Redirect 301 "/files/Power-bead-roller-IBKS-IKMP-HIBKS.pdf" "/bead-rollers"
+Redirect 301 "/files/HIBKS-,-IBKS-,-IKMP-bead-roller-ISITAN---MADE-IN-TURKEY.pdf" "/bead-rollers"
+Redirect 301 "/files/Manual-bead-roller-IK-IKS-IKD.pdf" "/bead-rollers"
+Redirect 301 "/files/circular-cutting-shear-IDK.pdf" "/circle-cutters-and-seamers"
+Redirect 301 "/files/IDK-circular-cutting-shear-ISITAN---MADE-IN-TURKEY.pdf" "/circle-cutters-and-seamers"
+Redirect 301 "/files/LS-duct-seam-closing-machine-ISITAN---MADE-IN-TURKEY.pdf" "/circle-cutters-and-seamers"
+Redirect 301 "/files/Seam-closing-machine-LS.pdf" "/circle-cutters-and-seamers"
+Redirect 301 "/files/PN-pipe-and-tube-notcher.pdf" "/tube-notchers-and-end-formers"
+Redirect 301 "/files/PN-pipe-notching-machine---tube-notching-machine-ISITAN---MADE-IN-TURKEY.pdf" "/tube-notchers-and-end-formers"
+Redirect 301 "/files/Hydraulic-plate-bending-machine-3-rolls-MRMH.pdf" "/hydraulic-3-roll-plate-rollers"
+Redirect 301 "/files/plate-bending-roll-4RHMS.pdf" "/hydraulic-4-roll-plate-rollers"
+Redirect 301 "/files/4-rolls--hydraulic-plate-roller-4RHMD.pdf" "/hydraulic-4-roll-plate-rollers"
+Redirect 301 "/files/3-rolls-plate-roller-IRM.pdf" "/motorized-plate-rollers"
+Redirect 301 "/files/IRM-pinch-roll-machine-ISITAN---MADE-IN-TURKEY.pdf" "/motorized-plate-rollers"
+Redirect 301 "/files/IRM---3R-HMD-RM-pinch-roll-machine-ISITAN---MADE-IN-TURKEY-s.pdf" "/motorized-plate-rollers"
+Redirect 301 "/files/MRM-S-plate-rolling-machine-ISITAN---MADE-IN-TURKEY.pdf" "/motorized-plate-rollers"
+Redirect 301 "/files/slip-roll-HRM-RM-IR-R-RS.pdf" "/slip-rolls"
+Redirect 301 "/files/3RHMD-RM-IR-slip-roll-machine-ISITAN---MADE-IN-TURKEY.pdf" "/slip-rolls"
+Redirect 301 "/files/4RHSS-4RHS-4RHSL-3RHSS-plate-roller-brochure-SAHINLER---MADE-IN-TURKEY.pdf" "/plate-rollers"
+Redirect 301 "/files/4RHSS---4RHS---4RHL--4RH---4RC---3RHS-plate-rollers---SAHINLER---MADE-IN-TURKEY-s.pdf" "/plate-rollers"
+Redirect 301 "/files/Hydraulic-4-rolls-plate-roller-4RHSS-4RHS-4RM.pdf" "/hydraulic-4-roll-plate-rollers"
+Redirect 301 "/files/3-rolls-hydraulic-plate-rolling-machine-3RUHS-3RHSS-3RHS.pdf" "/hydraulic-3-roll-plate-rollers"
+Redirect 301 "/files/4-rolls-conic-plate-roller-4RHC.pdf" "/hydraulic-4-roll-plate-rollers"
+Redirect 301 "/files/plate-roll-bender-4RM-4RH-4RHM.pdf" "/plate-rollers"
 RedirectMatch 301 ^/rebar-bending-machines(\.html)?$ /rebar-bender
 
 # ---- Compression -------------------------------------------------------------

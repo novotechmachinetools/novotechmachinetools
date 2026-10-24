@@ -138,6 +138,7 @@ small { font-size: .85em; }
 .hero-points li { padding-left: 22px; position: relative; font-weight: 500; }
 .hero-points li::before { content: ""; position: absolute; left: 0; top: .55em; width: 12px; height: 4px; background: var(--orange); }
 .hero-brand { font-size: 15px; color: var(--steel); max-width: 60ch; margin-top: 4px; }
+.hero-updated { font-size: 13px; color: var(--steel); margin-top: 6px; }
 .hero-art { position: relative; display: grid; justify-items: center; gap: 14px; padding-top: 10px; }
 .hero-band { position: absolute; top: 6%; right: -40%; left: 12%; height: 74%; background: var(--orange); clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%); z-index: 0; }
 .hero-main { position: relative; z-index: 1; width: min(100%, 680px); filter: drop-shadow(0 18px 24px rgba(30, 30, 30, .28)); }

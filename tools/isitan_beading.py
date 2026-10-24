@@ -170,8 +170,8 @@ FAMILIES = [
 ]
 
 PAGE = dict(
-    title="Bead Rollers & Beading Machines — Hydraulic, Motorized & Manual | NovoTech Canada",
-    meta="İşitan bead rollers in Canada: hydraulic and motorized beading machines for sheet up to 8 ga, motorized bead rollers with pneumatic top shaft, manual bead rollers / swagers with cast-iron frames. Roll sets included, CSA panels, parts in Mississauga, ON.",
+    title="Bead Roller Machines for Sheet Metal & HVAC | NovoTech",
+    meta="Hydraulic, motorized and manual bead roller machines for sheet to 8 ga, with beading, swaging and flanging roll sets. CSA panels, parts in Mississauga, ON.",
     h1="Bead rollers and beading machines",
     intro="Bead rollers — also called beading machines, rotary machines or swagers — form stiffening beads, wired edges, flanges, crimps and seams in sheet metal for HVAC ducts, drums, tanks, buckets and architectural work. İşitan builds them from the IK hand-crank bead roller on a cast-iron frame to the HIBKS 4.0, whose hydraulic top roll beads 8 ga steel under constant pressure. Every machine comes with its sets of standard rolls; motorized models have a CSA-approved panel and all are supported from Mississauga, ON.",
     points=["Hydraulic HIBKS and motorized IBKS for sheet to 8 ga (4 mm)", "Motorized IKM / IKMP with 4 speeds or pneumatic top shaft", "Manual IK / IKS swagers — 4 to 10″ shafts, 7–8 roll sets included"],

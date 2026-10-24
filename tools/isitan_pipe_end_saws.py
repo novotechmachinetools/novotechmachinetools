@@ -182,10 +182,10 @@ FAMILIES = [
 
 PAGES = {
     P_END: dict(
-        title="Tube Notchers, Pipe End Formers & Tube Deburring Machines | NovoTech Canada",
-        meta="İşitan tube notchers, pipe-end forming and deburring machines in Canada: PN belt-sander pipe notchers for 11/16″ to 3-1/2″ OD tube to 50°, SFF hydraulic end formers that expand and reduce tube ends to Ø3-1/2″, and the TD-01 wire-brush deburring machine. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="Tube & Pipe Notchers, End Formers & Deburring | NovoTech",
+        meta="Belt-sander tube notchers for 11/16″ to 3-1/2″ pipe at any angle to 50°, hydraulic end formers that expand or reduce tube ends to Ø3-1/2″, plus deburring.",
         h1="Tube notchers, end formers and deburring machines",
-        intro="The machines that finish a tube end: PN belt-sander tube notchers that cope a saddle for welded handrail, cage and frame joints at any angle to 50° with ten dovetail drums included; SFF single-station hydraulic end formers that expand or reduce tube ends to Ø3-1/2″ for exhaust slip joints and sleeves; and the TD-01 wire-brush deburring machine that cleans inside and out in one pass. They sit beside the cold saw and the tube bender and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
+        intro="A tube notcher (pipe notcher or coping machine) grinds a saddle-shaped notch into the end of a tube so it fits tightly against the tube it joins; an end former expands or reduces the tube end so two tubes slip together. The machines that finish a tube end: PN belt-sander tube notchers that cope a saddle for welded handrail, cage and frame joints at any angle to 50° with ten dovetail drums included; SFF single-station hydraulic end formers that expand or reduce tube ends to Ø3-1/2″ for exhaust slip joints and sleeves; and the TD-01 wire-brush deburring machine that cleans inside and out in one pass. They sit beside the cold saw and the tube bender and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
         points=["Pipe notchers — tube 11/16″ to 3-1/2″ OD, notching to 50°, 10 dovetail drums standard", "Hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga", "TD-01 deburring — inside and outside to Ø3-1/2″ in one pass"],
         hero="is-pn-17-90", minis=["is-sff-90-1", "is-td-01"],
         groups=[("notch", "Tube notchers and deburring", "PN belt-sander notchers and the TD-01 wire-brush deburring machine."),
@@ -197,10 +197,10 @@ PAGES = {
         faq_title="Questions we get asked about tube notchers and end formers",
     ),
     P_SAW: dict(
-        title="Circular Cold Saws — Manual & Semi-Automatic Metal Cutting Saws for Tube and Bar | NovoTech Canada",
-        meta="İşitan SFC circular cold saws in Canada: 10-3/4″, 12-1/2″ and 13-3/4″ blade metal cutting saws with manual, pneumatic or semi-automatic vise, round to Ø4-1/2″, mitre 45° both ways, two speeds, wet cutting. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="Circular Cold Saws — Manual & Semi-Automatic | NovoTech",
+        meta="Wet-cutting circular cold saws for metal, 10-3/4″ to 13-3/4″ blades: manual or pneumatic vise or semi-automatic cycle, round to Ø4-1/2″, mitre 45° both ways.",
         h1="Circular cold saws",
-        intro="Wet-type circular cold saws for burr-free cuts in tube, bar and profile: the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head for short batch runs. Two blade speeds, mitre cuts 45° left and right, a double split vise that grips both sides of the cut and a low-voltage trigger in the handle — the metal chop saw that leaves a square, cool, weld-ready end instead of an abrasive burr. HSS blades with TiN, TiCN and TiAlN coatings for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON. For automatic production cold saws see our Bekamak range.",
+        intro="A circular cold saw cuts metal with a slow-turning, coolant-flooded HSS blade (45–90 rpm) instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Wet-type circular cold saws for burr-free cuts in tube, bar and profile: the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head for short batch runs. Two blade speeds, mitre cuts 45° left and right, a double split vise that grips both sides of the cut and a low-voltage trigger in the handle — the metal chop saw that leaves a square, cool, weld-ready end instead of an abrasive burr. HSS blades with TiN, TiCN and TiAlN coatings for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON. For automatic production cold saws see our Bekamak range.",
         points=["Round to Ø4-1/2″ · square to 3-7/8″ · rectangular to 4-3/4″ × 3-1/8″ mild steel", "10-3/4″, 12-1/2″ and 13-3/4″ HSS blades · two speeds · mitre 45° both ways", "Manual vise, pneumatic vise or semi-automatic cycle"],
         hero="is-sfc-350-vx", minis=["is-sfc-315-vp", "is-sfc-275-v"],
         groups=[("semi", "Semi-automatic cold saw", "The SFC 350-VX with foot-switch cycle and hydro-pneumatic head descent."),

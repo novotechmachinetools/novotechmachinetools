@@ -134,10 +134,10 @@ FAMILIES = [
 ]
 
 PAGE = dict(
-    title="Compact Hydraulic Press Brakes — 33 to 66 Ton NC & CNC Press Brakes | NovoTech Canada",
-    meta="İşitan Edgebender compact hydraulic press brakes in Canada: 33–66 US ton NC press brakes from 4.2 to 6.9 ft and the 44-ton 3-axis CNC Edgebender 1240 with Cybelec control, Promecam tooling, Leuze light guard. Specs in inches, CSA panels, parts in Mississauga, ON.",
+    title="Small Hydraulic Press Brakes, 33–66 Ton NC & CNC | NovoTech",
+    meta="Small hydraulic press brakes: 33, 44 and 66 ton NC models from 4.2 to 6.9 ft and a 44-ton 3-axis CNC with Cybelec control and Promecam tooling. Parts in Canada.",
     h1="Compact hydraulic press brakes",
-    intro="Small hydraulic press brakes for the sheet-metal shop: İşitan's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger CNC press brakes see our Dener range.",
+    intro="A compact hydraulic press brake bends sheet metal between a punch and a V-die under hydraulic force — here 33 to 66 US tons over 4.2 to 6.9 ft, the size that fits a sheet-metal shop rather than a steel-fabrication plant. İşitan's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger CNC press brakes see our Dener range.",
     points=["33, 44 and 66 US tons · 4.2, 5.1 and 6.9 ft (1270–2100 mm)", "2-axis NC or 3-axis CNC (Y1 + Y2 + X) with Cybelec control", "Promecam tooling, HAWE / Rexroth hydraulics, Leuze light guard"],
     hero="is-eb-1240-cnc", minis=["is-eb-2160", "is-eb-1230"],
     groups=[("pressbrake", "Edgebender press brakes line-up", "The 3-axis CNC Edgebender 1240 and the 2-axis NC 1230, 1540 and 2160.")],

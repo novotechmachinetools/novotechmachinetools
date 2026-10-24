@@ -25,6 +25,7 @@
       </div>
       {% if page.brand %}<p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
       {% elif page.hero_brand_line %}<p class="hero-brand">{{ page.hero_brand_line }}</p>{% endif %}
+      <p class="hero-updated">Specifications checked against the manufacturer's current catalogue · page updated <time datetime="{{ page.date_modified }}">{{ page.updated_label }}</time></p>
       {% if page.section %}
       <nav class="section-nav" aria-label="{{ page.section.label }} pages">
         <span class="section-nav-label">{{ page.section.label }}:</span>

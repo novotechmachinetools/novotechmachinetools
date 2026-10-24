@@ -124,3 +124,26 @@ Bekamak page keeps "automatic cold saws".
 
 Rule: the page URL is /rebar-bender (singular, like /rebar-cutter and the hub /rebar-bender-and-cutter);
 "rebar bending machine(s)" stays in the title and body as the secondary phrase.
+
+## Findings — Search Console export (Jun 2025 – Oct 2026) and Ubersuggest (Canada), Oct 2026
+
+The 16-month Search Console export of the old site (kept outside the public repo) and three Ubersuggest
+lookups for Canada. Impressions are the old site's own; volumes are monthly Canada searches.
+
+| page / topic | what the old site ranked for | decision |
+|---|---|---|
+| pipe-bender.html (136,080 impressions, pos 37) | "mandrel bender" 3,633 · "pipe bending machine" 3,302 · "tube bending machine" 2,596 · "cnc mandrel bender" 2,087 · "nc mandrel pipe bender" 1,110 (pos 14) · "exhaust pipe bender" 1,065 (pos 23). Canada volumes: pipe bender 1,600, tube bender 1,300 (both dominated by hand tools), hydraulic tube bender 390, mandrel bender 110 | hub title **Pipe Benders & Mandrel Tube Bending Machines**; spokes **CNC Mandrel Tube & Pipe Benders**, **NC Mandrel Pipe Benders — Hydraulic Tube Benders**, **Rotary Draw Tube Benders — Compact Pipe Benders**; "exhaust pipe bender" in the NC intro/FAQ |
+| bead-roller… (7,565 impr, pos 19) | "bead roller machine" 1,924 (pos 10.6) · "bead rolling machine" 242; Canada: bead roller 590 | title **Bead Roller Machines for Sheet Metal & HVAC**; "beading machine" once in the H1 line |
+| circular-cutting-shear… (3,510 impr, pos 19) | "circle shear machine" 211 (pos 8.8) · "circle shear" 187 (pos 10.9) · "circular shearing machine" 280 | title **Circle Shears, Circle Cutters & Lock Seamers** |
+| press-brake.html (12,813 impr) | "hydraulic press brake canada" 348 (pos 15) · "manual hydraulic press brake" 98; Canada: press brake 1,000, press brake machine 480, hydraulic press brake 320, cnc press brake 210, plus "small / mini / 4 foot hydraulic press brake" long tail | İşitan Edgebenders titled **Small Hydraulic Press Brakes, 33–66 Ton NC & CNC** (H1 keeps "compact"); the Dener page keeps the bare head term |
+| cold-saw-carbide-saw-cutting.html (39,942 impr, pos 35) | "cold saws" 2,134 · "cold saw" 1,837 · "cold saw machine" 483 · "circular cold saw" 360; Canada: cold saw 260 | İşitan SFC page **Circular Cold Saws — Manual & Semi-Automatic**; the Bekamak page keeps "automatic cold saws" |
+| pipe-notcher.html (13,760 impr, pos 38) | "tube notchers" 1,174 · "pipe notcher" 994 · "pipe notching machine" 716 · "tube coping machine" 410; Canada: tube notcher 320 | title **Tube & Pipe Notchers, End Formers & Deburring**; "coping machine" in the definition sentence |
+| plate-roller-bender.html + buying guide (123,000 impr) | "plate roller" 5,678 · "plate rolling machine" 4,072 · "tube roller" 5,245 (angle rolls — not these pages); Canada: plate roller only 110 | hub title **Plate Rollers & Plate Rolling Machines in Canada**; both phrases in the H1 line |
+
+Old PDF brochures rank on their own (ISITAN general catalogue 62 clicks at pos 9.7, CNC-mandrel-pipe-bender.pdf 66 clicks
+at pos 14) — `.htaccess` now 301s the İşitan ones to the rebuilt pages or the new catalogue PDF.
+
+Rules confirmed by the data: titles 50–60 characters with the product term first and "| NovoTech" last; descriptions
+≤160 characters that do not restate the title; one self-contained definition sentence ("A pipe bender … ") opens every
+intro for AI answers; the visible "page updated" date and `datePublished` / `dateModified` in the WebPage schema come
+from the git history of each page.

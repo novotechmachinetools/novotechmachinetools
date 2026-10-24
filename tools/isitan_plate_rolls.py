@@ -289,8 +289,8 @@ VOLT_FAQ = {"q": "What voltage do İşitan plate rollers run on?",
 
 PAGES = {
     "hydraulic-4-roll-plate-rollers": dict(
-        title="Hydraulic 4-Roll Plate Rollers — 4 Roll Plate Rolling Machines in Canada | NovoTech",
-        meta="İşitan 4-roll plate rollers for sale in Canada: hydraulic 4 roll plate rolling machines from 2.1 ft to 10.2 ft, up to 1/2″ plate, NC control and full automation, corrugated sheet rolls. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="Hydraulic 4-Roll Plate Rollers & Rolling Machines | NovoTech",
+        meta="Hydraulic 4-roll plate rolling machines from 2.1 to 10.2 ft, up to 1/2″ plate, with NC control and automation. CSA panels, parts in Mississauga, ON.",
         h1="Hydraulic 4-roll plate rollers",
         intro="Four-roll plate rolling machines pinch the sheet between the top and bottom roll and bend it with two side rolls, so the plate is pre-bent at both ends and rolled into a full cylinder in one pass without flipping it. İşitan's 4R HMS hydraulic plate rollers run from a 2.1 ft bench-size roll to 10.2 ft machines for 3/8″ plate, with NC control, overhead crane and sheet feeder for production work; the 4R OM and 4R HOM roll corrugated galvanized sheet for tanks, roofs and silos. Every 4 roll plate roller is sold with a CSA-approved panel and supported from Mississauga, ON.",
         points=["36 models from 2.1 ft to 10.2 ft (650–3100 mm)", "Rolls up to 1/2″ (12 mm) plate; pre-bends both ends in one pass", "NC control, overhead crane, sheet feeder and ejector for automation"],
@@ -302,8 +302,8 @@ PAGES = {
              {"q": "How automatic can a plate roller be?", "a": "With the NC control the operator programs the roll positions once; the machine then bends to the stored program. Adding the vacuum sheet feeder, the hydraulic overhead crane and the part ejector turns the 4R HMS into a full automation line where the operator only loads blanks and removes finished cylinders at the welding station."},
              VOLT_FAQ]),
     "hydraulic-3-roll-plate-rollers": dict(
-        title="Hydraulic 3-Roll Plate Rollers — Initial-Pinch Plate Rolling Machines in Canada | NovoTech",
-        meta="İşitan MRM-H hydraulic 3-roll plate rollers in Canada: initial-pinch plate rolling machines from 2.1 ft to 10 ft, up to 1/2″ plate, hydraulic drop-end and digital readouts; 3R HMD joystick rolls. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="Hydraulic 3-Roll Plate Rollers — Initial Pinch | NovoTech",
+        meta="Initial-pinch hydraulic 3-roll plate rollers from 2.1 to 10 ft, up to 1/2″ plate, with drop-end and digital readouts. CSA panels, parts in Mississauga, ON.",
         h1="Hydraulic 3-roll plate rollers",
         intro="Initial-pinch 3-roll plate rolling machines with hydraulic positioning of the back and bottom rolls and motor-driven rolls: the operator pinches the sheet, pre-bends the leading edge against the back roll, rolls the cylinder and opens the hydraulic drop-end to take it off. İşitan's MRM-H covers 2.1 ft to 10 ft and plate to 1/2″ with two digital readouts and cone bending as standard; the compact 3R HMD puts hydraulic back-roll positioning with a joystick on a cast-iron frame for ducting and light fabrication. Hydraulic plate rollers with CSA-approved panels, sold and supported from Mississauga, ON.",
         points=["MRM-H: 32 models from 2.1 ft to 10 ft (650–3100 mm), up to 1/2″ (12 mm)", "Hydraulic back and bottom rolls, hydraulic drop-end, 2 digital readouts", "3R HMD: all-roll drive with hydraulic joystick back roll from 4.2 ft"],
@@ -314,8 +314,8 @@ PAGES = {
              {"q": "What thickness can the MRM-H roll?", "a": "From 20 ga sheet on the 1270x80 up to 1/2″ plate on the 250 mm roll models — see the capacity tables, which give the thickness at 1.5× and at 5× the top roll diameter. Capacities are for mild steel; stainless and high-strength plate need the next roll size up."},
              VOLT_FAQ]),
     "motorized-plate-rollers": dict(
-        title="Motorized 3-Roll Plate Rollers — Mechanical Plate Rolling Machines in Canada | NovoTech",
-        meta="İşitan motorized plate rollers in Canada: MRM-S, IRM and RM mechanical 3-roll plate rolling machines from 3.4 ft to 10 ft, up to 3/8″ plate, cone bending, composite-panel rolls. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="Motorized 3-Roll Plate Rollers & Plate Rolls | NovoTech",
+        meta="Mechanical 3-roll plate rolling machines from 3.4 to 10 ft, up to 3/8″ plate, cone bending and composite-panel rolls. CSA panels, parts in Mississauga, ON.",
         h1="Motorized 3-roll plate rollers",
         intro="Mechanical plate rolling machines for aluminum, HVAC ducting, signage panels, machine guards and sheet-metal enclosures: a planetary gearbox or gear train drives the rolls, the back roll is adjusted by motor or hand wheel and a manual drop-end releases the cylinder. The MRM-S rolls up to 3/8″ plate on working lengths to 10 ft and has a composite-panel version with a Delrin-coated top roll; the IRM and RM are the value-priced motorized plate rollers small workshops ask for. All with CSA-approved panels, parts and support from Mississauga, ON.",
         points=["MRM-S: 21 models to 10 ft (3050 mm) and 3/8″ (10 mm) plate", "IRM and RM: value-priced motorized rolls from 3.4 ft, up to 3/16″", "Cone bending, wire grooves and brake motor standard"],
@@ -326,8 +326,8 @@ PAGES = {
              {"q": "Do motorized plate rollers bend cones?", "a": "Every MRM-S, IRM and RM has a cone-bending device: one end of the top roll is lowered so the sheet travels faster on the wide end. The optional digital readout on the back roll makes repeat cones easier."},
              VOLT_FAQ]),
     "slip-rolls": dict(
-        title="Slip Rolls — Manual & Motorized Sheet Metal Slip Rollers in Canada | NovoTech",
-        meta="İşitan slip rolls in Canada: manual hand-crank slip rollers from 2 ft bench models to 6.7 ft, motorized IR slip rolls with foot pedal, RS and RST economical plate rolls. Sheet to 14 ga, wire grooves standard, parts in Mississauga, ON.",
+        title="Sheet Metal Slip Rolls — Manual & Motorized | NovoTech",
+        meta="Manual and motorized slip rolls from 2 ft bench models to 6.7 ft, sheet to 14 ga, wire grooves standard. In stock with parts and service in Mississauga, ON.",
         h1="Slip rolls — manual and motorized sheet metal rollers",
         intro="Slip rollers for HVAC, sign, ducting and general sheet-metal shops: three rolls, a drop-end to slip the finished cylinder off and wire grooves at the roll ends for wired edges. İşitan's R series is the hand-crank slip roll — 2 ft bench models to 6.7 ft floor-standing machines up to 14 ga — the IR adds a motor, foot pedal and brake for daily use, and the RS and RST are the reinforced economical rolls. Sold with CSA-approved panels on motorized models and supported from Mississauga, ON.",
         points=["Manual R series: bench and floor models from 2 ft to 6.7 ft", "Motorized IR series with foot pedal, up to 14 ga (2 mm)", "Wire grooves, manual drop-end and SAE 1050 rolls on every model"],
@@ -339,10 +339,10 @@ PAGES = {
              VOLT_FAQ]),
 }
 HUB_PAGE = dict(
-    title="Plate Rollers & Slip Rolls for Sale in Canada — Plate Rolling Machines | NovoTech",
-    meta="Plate rollers and slip rolls in Canada: İşitan hydraulic 4-roll and 3-roll plate rolling machines, motorized plate rollers and manual slip rollers from 2 ft to 10 ft, sheet to 1/2″ plate. Specs in inches, CSA panels, parts and service in Mississauga, ON.",
+    title="Plate Rollers & Plate Rolling Machines in Canada | NovoTech",
+    meta="Every plate roller and slip roll we sell in Canada: hydraulic 4-roll and 3-roll plate rolling machines, motorized rolls and manual slip rollers, 2 to 10 ft.",
     h1="Plate rollers and slip rolls",
-    intro="Every İşitan plate roller and slip roll NovoTech sells in Canada: hydraulic 4-roll plate rolling machines with NC control for production, hydraulic and motorized 3-roll plate rollers for the fabrication shop, and manual and motorized slip rolls for HVAC and sheet-metal work — from a 2 ft bench slip roll to 10.2 ft machines that roll 1/2″ plate. Built in Turkey by İşitan since 1959, supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, ON. Looking for a plate roller machine, sheet metal roller, slip roller or plate bending rolls? These are the ones we stock and service.",
+    intro="A plate roller (plate rolling machine) bends flat plate or sheet into cylinders and cones by passing it between three or four rolls; a slip roll is the light-gauge version whose top roll slips open to remove the part. Every İşitan plate roller and slip roll NovoTech sells in Canada: hydraulic 4-roll plate rolling machines with NC control for production, hydraulic and motorized 3-roll plate rollers for the fabrication shop, and manual and motorized slip rolls for HVAC and sheet-metal work — from a 2 ft bench slip roll to 10.2 ft machines that roll 1/2″ plate. Built in Turkey by İşitan since 1959, supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, ON. Looking for a plate roller machine, sheet metal roller, slip roller or plate bending rolls? These are the ones we stock and service.",
     points=["<a href=\"hydraulic-4-roll-plate-rollers\">Hydraulic 4-roll plate rollers</a> — 2.1 to 10.2 ft, up to 1/2″ plate, NC and automation",
             "<a href=\"hydraulic-3-roll-plate-rollers\">Hydraulic</a> and <a href=\"motorized-plate-rollers\">motorized 3-roll plate rollers</a> — initial pinch, cone bending",
             "<a href=\"slip-rolls\">Slip rolls</a> — manual and motorized, 2 to 6.7 ft, wire grooves standard"],

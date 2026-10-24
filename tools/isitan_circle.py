@@ -99,8 +99,8 @@ FAMILIES = [
 ]
 
 PAGE = dict(
-    title="Circle Cutting Machines & Lock Seamers — Circle Shears for Sheet Metal | NovoTech Canada",
-    meta="İşitan circle cutting machines in Canada: hydraulic IDK-5 circle shear cutting discs to 78.7″ in 3/16″ with flanging attachment, motorized and manual circle cutters, LS-13P pneumatic lock seaming machine. CSA panels, parts in Mississauga, ON.",
+    title="Circle Shears, Circle Cutters & Lock Seamers | NovoTech",
+    meta="Circle shear machines cutting discs and rings to Ø78.7″ in 3/16″ plate, inside-diameter cutting and flanging, plus a pneumatic lock seamer. Parts in Canada.",
     h1="Circle cutting machines and lock seamers",
     intro="Circle cutting machines (circle shears, circle cutters) cut round blanks and rings from sheet for tank heads, fan housings, flanges, lids and gaskets, and with the flanging attachment turn the edge of the disc for dished heads. İşitan's IDK series runs from the hand-operated IDK-1 to the hydraulic IDK-5 cutting 78.7″ discs in 3/16″ steel; the LS-13P lock seaming machine closes the longitudinal seam of round ducts. Sold with CSA-approved panels and supported from Mississauga, ON.",
     points=["IDK-5: discs to Ø78.7″ (2000 mm) in 3/16″ steel, hydraulic clamp, flanging option", "Motorized IDK-3.5 / 2 / 1.8 and manual IDK-1 for 10–20 ga", "LS-13P pneumatic lock seamer — 51″ seams in 18 ga"],

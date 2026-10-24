@@ -350,10 +350,10 @@ TOOLING_FAQ = {"q": "What do you need from me to quote tooling?",
 
 PAGES = {
     P_CNC: dict(
-        title="CNC Tube Benders & CNC Pipe Bending Machines — Servo Mandrel Benders | NovoTech Canada",
-        meta="İşitan SFB CNC tube benders in Canada: 3-axis and 5-axis servo CNC mandrel pipe bending machines from Ø1-1/2″ to Ø3-1/2″ × 8 ga, 21″ touchscreen CNC with 3D simulation, 190° bends, up to 13.1 ft feed. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="CNC Mandrel Tube & Pipe Benders, 3 and 5 Axis | NovoTech",
+        meta="Servo CNC mandrel benders from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe: 21″ touchscreen with 3D simulation, 190° bends, 13.1 ft feed. Parts and service in Canada.",
         h1="CNC tube benders",
-        intro="Servo-driven CNC mandrel benders for production tube and pipe bending: the SFB CNC/A3 in five sizes from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe, and the five-axis SFB CNC/A5 that adds servo roll-bending for large sweeps. A 21″ touchscreen CNC with 3D simulation, spring-back and hardness compensation and X-Y-Z to Y-B-C conversion turns a drawing into a multi-bend part — exhaust and chassis tube, handrails, seating and fitness frames, furniture. Hydraulic mandrel, collet and clamping, oil cooler and remote assistance on every machine, with CSA-approved panels and support from Mississauga, ON.",
+        intro="A CNC tube bender drives the feed, rotation and bend axes with servo motors from a program, so multi-bend parts come off the machine identical without the operator positioning the tube between bends. Servo-driven CNC mandrel benders for production tube and pipe bending: the SFB CNC/A3 in five sizes from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe, and the five-axis SFB CNC/A5 that adds servo roll-bending for large sweeps. A 21″ touchscreen CNC with 3D simulation, spring-back and hardness compensation and X-Y-Z to Y-B-C conversion turns a drawing into a multi-bend part — exhaust and chassis tube, handrails, seating and fitness frames, furniture. Hydraulic mandrel, collet and clamping, oil cooler and remote assistance on every machine, with CSA-approved panels and support from Mississauga, ON.",
         points=["Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga mild steel tube · 190° · CLR to 9.8″", "3 or 5 servo axes · ±0.1° rotation · 9.8 or 13.1 ft feed", "21″ touchscreen CNC · 3D simulation · reports and remote assistance"],
         hero="is-sfb-38-cnc-a5", minis=["is-sfb-90-cnc", "is-sfb-51-cnc"],
         groups=[("cnc", "SFB CNC mandrel benders", "Five-axis A5 with servo roll bending, and the three-axis A3 production line-up.")],
@@ -363,10 +363,10 @@ PAGES = {
              TOOLING_FAQ, VOLT_FAQ],
     ),
     P_NC: dict(
-        title="NC Tube Benders & Hydraulic Mandrel Pipe Benders — Ø1-1/4″ to Ø3-1/2″ | NovoTech Canada",
-        meta="İşitan SFB NC mandrel tube benders in Canada: 10″ touchscreen NC pipe bending machines from Ø1-1/2″ to Ø3-1/2″ × 8 ga, NC/C carrier models with servo rotation, compact SFB 32 benders and aluminum-profile benders. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="NC Mandrel Pipe Benders — Hydraulic Tube Benders | NovoTech",
+        meta="Hydraulic NC mandrel benders from Ø1-1/4″ to Ø3-1/2″ pipe with 10″ touchscreen, servo-rotation carrier models, compact and aluminum-profile benders.",
         h1="NC tube benders",
-        intro="Hydraulic mandrel benders with a 10″ touchscreen NC: the SFB NC line in five sizes from Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga with 100 programs of 20 bends, the SFB NC/C with a servo-rotation carrier and hydraulic collet for series production, the compact SFB 32 benders for Ø1-1/4″ tube, and NC aluminum-profile benders for window and door frames. The pipe bender most exhaust, handrail, furniture and fabrication shops in Canada actually need — mandrel bending with programmed angles, without the price of a full CNC.",
+        intro="An NC tube bender is a hydraulic mandrel bender whose bend angles are stored in a numeric control: the operator feeds and rotates the tube to a stop and the machine bends each angle to the programmed value. Hydraulic mandrel benders with a 10″ touchscreen NC: the SFB NC line in five sizes from Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga with 100 programs of 20 bends, the SFB NC/C with a servo-rotation carrier and hydraulic collet for series production, the compact SFB 32 benders for Ø1-1/4″ tube, and NC aluminum-profile benders for window and door frames. The pipe bender most exhaust, handrail, furniture and fabrication shops in Canada actually need — mandrel bending with programmed angles, without the price of a full CNC.",
         points=["Ø1-1/4″ × 11 ga to Ø3-1/2″ × 8 ga mild steel tube · 190° · CLR to 9.8″", "10″ touchscreen NC · 100 programs × 20 bends · encoder angle measurement", "Hydraulic mandrel, clamping and pressure die · up to 15.1 ft feed"],
         hero="is-sfb-90-nc", minis=["is-sfb-51-nc-c", "is-sfb-32-hd"],
         groups=[("nc", "SFB NC mandrel benders", "The standard SFB NC and the NC/C with servo-rotation carrier."),
@@ -377,10 +377,10 @@ PAGES = {
              TOOLING_FAQ, VOLT_FAQ],
     ),
     P_BK: dict(
-        title="Rotary Draw Tube Benders — Compact Pipe Benders for Tube, Bar & Box Section | NovoTech Canada",
-        meta="İşitan BK rotary draw tube benders in Canada: compact non-mandrel pipe benders for 1/8″ to 2-1/2″ NPS pipe, Ø3″ steel tube, solid bar, flat bar and box section, touchscreen NC or one-touch control, one tooling set included. Specs in inches, CSA panels, parts in Mississauga, ON.",
+        title="Rotary Draw Tube Benders — Compact Pipe Benders | NovoTech",
+        meta="Compact non-mandrel benders for 1/8″ to 2-1/2″ pipe, Ø3″ steel tube, solid bar, flat bar and box section. Touchscreen NC or one-touch control, tooling included.",
         h1="Rotary draw tube benders",
-        intro="Compact rotary draw benders without a mandrel — the pipe bender for handrail, gate, fence, furniture and repair shops. Four models from the 1 HP BK-42 for 1-1/4″ pipe to the BK 030 (76) for Ø3″ × 11 ga steel tube, bending gas pipe, steel and stainless tube, copper, solid round and square bar, flat bar both ways and box section with one included tooling set. Touchscreen NC (PLC) programming on the BK-42 and BK 030, one-touch control with two speeds on the BK-050 and the hydraulic BK-H 060 — all on rollers with a foot pedal and a CSA-approved panel.",
+        intro="A rotary draw bender clamps the tube to a rotating bend die and draws it around the die radius without an internal mandrel — the simplest machine for handrail, gate and furniture bends in tube, pipe and bar. İşitan's BK series is that bender for handrail, gate, fence, furniture and repair shops: four models from the 1 HP BK-42 for 1-1/4″ pipe to the BK 030 (76) for Ø3″ × 11 ga steel tube, bending gas pipe, steel and stainless tube, copper, solid round and square bar, flat bar both ways and box section with one included tooling set. Touchscreen NC (PLC) programming on the BK-42 and BK 030, one-touch control with two speeds on the BK-050 and the hydraulic BK-H 060 — all on rollers with a foot pedal and a CSA-approved panel.",
         points=["1/8″ to 2-1/2″ NPS pipe · Ø3″ × 11 ga steel tube · CLR to 7.9″", "Tube, pipe, solid bar, flat bar and box section — one tooling set included", "Touchscreen NC (PLC) or one-touch control · foot pedal · on rollers"],
         hero="is-bk-050", minis=["is-bk-42", "is-bk-030"],
         groups=[("bk", "BK rotary draw benders", "Four compact non-mandrel benders from 1 to 3 HP.")],
@@ -392,10 +392,10 @@ PAGES = {
 }
 
 HUB_PAGE = dict(
-    title="Pipe Benders & Tube Bending Machines for Sale in Canada — CNC, NC & Rotary Draw | NovoTech",
-    meta="Pipe benders and tube bending machines in Canada: İşitan CNC and NC mandrel tube benders from Ø1-1/4″ to Ø3-1/2″ pipe, compact rotary draw benders for tube, bar and box section, and aluminum-profile benders. Capacity table in inches, CSA panels, parts and service in Mississauga, ON.",
+    title="Pipe Benders & Mandrel Tube Bending Machines | NovoTech",
+    meta="CNC and NC mandrel pipe benders to Ø3-1/2″ and compact rotary draw tube benders, sold and serviced across Canada. Capacity table in inches for every model.",
     h1="Pipe benders and tube bending machines",
-    intro="Every İşitan tube and pipe bender NovoTech sells in Canada: servo CNC mandrel benders with 3D simulation for production, NC hydraulic mandrel benders with a 10″ touchscreen for exhaust, handrail and furniture shops, compact SFB 32 and aluminum-profile benders, and BK rotary draw benders for pipe, bar and box section — from a 1 HP bench bender to a 34 HP CNC pipe bending machine for Ø3-1/2″ × 8 ga. Built in Turkey by İşitan since 1959, supplied with CSA-approved panels, one tooling set and installation, and supported from NovoTech's warehouse in Mississauga, ON. Looking for a mandrel bender, exhaust pipe bender, hydraulic pipe bender or CNC tube bender? These are the ones we stock and service.",
+    intro="A pipe bender or tube bending machine draws a tube around a bend die to a set angle; a mandrel bender adds an internal mandrel so thin-wall tube bends to a tight radius without wrinkling or collapsing. Every İşitan tube and pipe bender NovoTech sells in Canada: servo CNC mandrel benders with 3D simulation for production, NC hydraulic mandrel benders with a 10″ touchscreen for exhaust, handrail and furniture shops, compact SFB 32 and aluminum-profile benders, and BK rotary draw benders for pipe, bar and box section — from a 1 HP bench bender to a 34 HP CNC pipe bending machine for Ø3-1/2″ × 8 ga. Built in Turkey by İşitan since 1959, supplied with CSA-approved panels, one tooling set and installation, and supported from NovoTech's warehouse in Mississauga, ON. Looking for a mandrel bender, exhaust pipe bender, hydraulic pipe bender or CNC tube bender? These are the ones we stock and service.",
     points=[f"<a href=\"{P_CNC}\">CNC tube benders</a> — 3- and 5-axis servo mandrel benders, Ø1-1/2″ to Ø3-1/2″",
             f"<a href=\"{P_NC}\">NC tube benders</a> — hydraulic mandrel benders with 10″ touchscreen, Ø1-1/4″ to Ø3-1/2″",
             f"<a href=\"{P_BK}\">Rotary draw benders</a> — compact non-mandrel benders for pipe, bar and box section"],

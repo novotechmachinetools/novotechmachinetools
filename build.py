@@ -357,6 +357,28 @@ def organization_ld():
     }
 
 
+_DATE_CACHE = {}
+
+
+def page_dates(slug):
+    """(datePublished, dateModified) of a page from the git history of its content file — the first and last commit
+    that touched it — so the structured data and the visible 'updated' line carry a real date, not the build date."""
+    if slug in _DATE_CACHE:
+        return _DATE_CACHE[slug]
+    import subprocess
+    path = os.path.join("content", "pages", slug + ".json")
+    today = datetime.date.today().isoformat()
+    try:
+        out = subprocess.run(["git", "log", "--follow", "--format=%cs", "--", path], cwd=ROOT, capture_output=True, text=True, timeout=20).stdout.split()
+        pub, mod = (out[-1], out[0]) if out else (today, today)
+        if subprocess.run(["git", "status", "--porcelain", "--", path], cwd=ROOT, capture_output=True, text=True, timeout=20).stdout.strip():
+            mod = today                                          # uncommitted edits: modified now
+    except Exception:
+        pub, mod = today, today
+    _DATE_CACHE[slug] = (pub, mod)
+    return pub, mod
+
+
 def page_ld(page):
     """Structured data for a product-category page: WebPage, BreadcrumbList, ItemList of Products, VideoObjects, FAQPage."""
     url = page["url"]
@@ -371,6 +393,7 @@ def page_ld(page):
     graph.append({
         "@type": "WebPage", "@id": url, "url": url, "name": page["title"], "description": page["meta_description"],
         "inLanguage": "en-CA", "isPartOf": {"@id": site["domain"] + "/#website"},
+        "datePublished": page["date_published"], "dateModified": page["date_modified"],
         "about": {"@id": url + "#products"}, "breadcrumb": {"@id": url + "#breadcrumb"},
         **({"primaryImageOfPage": {"@type": "ImageObject", "url": absurl(hero["src"]), "width": hero["w"], "height": hero["h"]}} if hero else {}),
         "publisher": {"@id": site["domain"] + "/#organization"},
@@ -394,7 +417,9 @@ def page_ld(page):
                 **({"manufacturer": {"@type": "Organization", "name": fb["manufacturer"], "address": {"@type": "PostalAddress", "addressCountry": fb.get("country_code", "TR")}}} if fb.get("manufacturer") else {}),
                 "category": g["title"],
                 "model": models,
-                "additionalProperty": [{"@type": "PropertyValue", "name": "Standard equipment", "value": "CSA-approved electrical panel; 1-year warranty; spare parts and technical support in Canada"}],
+                **({"countryOfOrigin": {"@type": "Country", "name": fb["country"]}} if fb.get("country") else {}),
+                "additionalProperty": ([{"@type": "PropertyValue", "name": "Capacity", "value": f["headline"]}] if f.get("headline") else [])
+                + [{"@type": "PropertyValue", "name": "Standard equipment", "value": "CSA-approved electrical panel; 1-year warranty; spare parts and technical support in Canada"}],
             }
             products.append(prod)
     graph.append({"@type": "ItemList", "@id": url + "#products", "name": page["h1"], "numberOfItems": len(products), "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": p} for i, p in enumerate(products)]})
@@ -611,6 +636,8 @@ def render_page(page):
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
         page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
     page["url"] = f"{site['domain']}/{page['slug']}"      # clean URLs: pages are served without .html
+    page["date_published"], page["date_modified"] = page_dates(page["slug"])
+    page["updated_label"] = datetime.date.fromisoformat(page["date_modified"]).strftime("%B %Y")
     if page.get("article"):   # long-form guide kept from the old site (HTML fragment with <figure data-img> placeholders)
         art = open(os.path.join(ROOT, "content", "articles", page["article"]), encoding="utf-8").read()
         def fig(m):
