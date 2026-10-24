@@ -241,6 +241,7 @@ def manual_spec(tables, glance_keys, glance, caps, note):
 BRAND_LINE = "İşitan machines are made in Turkey by İşitan Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech."
 ORIGIN = {"title": "Made in Turkey by İşitan", "text": "İşitan has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."}
 PDF = {"file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf", "label": "Download the İşitan machinery catalogue", "size": "PDF · 29 MB · imperial units"}
+PDF_BK = {"file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "label": "Bekamak saw catalogue", "size": "PDF · 7.5 MB · imperial units"}
 VOLT_FAQ_GENERIC = {"q": "What voltage do these machines run on?",
                     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."}
 CRUMBS = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href": "products.html"}]
@@ -281,7 +282,7 @@ def write_families(set_name, families):
     for f in families:
         d = {k: v for k, v in f.items() if k not in ("page", "group")}
         d["group"] = f.get("group", "")
-        d["brand"] = "isitan"
+        d["brand"] = f.get("brand", "isitan")
         fam[f["id"]] = d
     write_json(os.path.join(ROOT, "content", "families", f"{set_name}.json"), {"order": [f["id"] for f in families], "families": fam})
 
@@ -289,7 +290,8 @@ def write_families(set_name, families):
 def write_category(slug, p, families, set_name, section_label, *, hub=None, siblings=None, guide=None, extra=None):
     """A category page (category.html).  p: dict(title, meta, h1, intro, points, hero, minis, groups=[(gid,title,lead)], faq).
     hub: {"slug","label","image","blurb"} when the page belongs to a hub; siblings: [(slug, nav_label, label)]."""
-    groups = [{"id": f"{gid}-group", "title": title, "lead": lead, "families": [f["id"] for f in families if f["group"] == gid]} for gid, title, lead in p["groups"]]
+    groups = [{"id": f"{g[0]}-group", "title": g[1], "lead": g[2], **({"brand": g[3]} if len(g) > 3 else {}),
+               "families": [f["id"] for f in families if f["group"] == g[0]]} for g in p["groups"]]
     crumbs = CRUMBS + ([{"label": section_label, "href": f"{hub['slug']}.html"}] if hub else []) + [{"label": p["h1"]}]
     page = {
         "slug": slug, "template": "category.html", "family_set": set_name,

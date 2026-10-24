@@ -219,16 +219,21 @@ def build_bandsaw_table(spec):
             extras.setdefault(k, {})[m["name"]] = v
     late = {k: v for k, v in extras.items() if re.search(r"weight|packing", k, re.I)}
 
+    def num(t):
+        """'1,5' (European decimal) -> 1.5; '40,000' (thousands separator) -> 40000."""
+        t = t.replace(",", "") if re.fullmatch(r"\d{1,3}(,\d{3})+", t) else t.replace(",", ".")
+        return float(t)
+
     def conv(v):
         mm = re.match(r"^\s*([\d.,]+)\s*kW", str(v))
         if mm:
-            return hp_range(mm.group(1).replace(",", "."))
+            return hp_range(str(num(mm.group(1))))
         mm = re.match(r"^\s*([\d.,]+)\s*kg\s*$", str(v))
         if mm:
-            x = float(mm.group(1).replace(",", ".")); return f"{lb(x)} ({x:g} kg)"
+            x = num(mm.group(1)); return f"{lb(x)} ({x:,.10g} kg)"
         mm = re.match(r"^\s*([\d.,]+)\s*mm\s*$", str(v))
         if mm:
-            x = float(mm.group(1).replace(",", ".")); return f"{inch_frac(x)} ({x:g} mm)"
+            x = num(mm.group(1)); return f"{inch_frac(x)} ({x:g} mm)"
         # '2300 × 830 × 1580 mm' (possibly several, separated by commas) -> inches + mm
         def dims3(mt):
             d = [float(t) for t in mt.group(1).replace("×", "x").split("x")]
@@ -243,7 +248,7 @@ def build_bandsaw_table(spec):
         rows.append({"label": k, "cells": [conv(vals[m["name"]]) if m["name"] in vals else "—" for m in models], "type": "text"})
     if any(m.get("working_height_mm") for m in models):
         rows.append({"label": "Working height", "cells": [f"{inch_frac(m['working_height_mm'], 2)} ({m['working_height_mm']:g} mm)" if m.get("working_height_mm") else "—" for m in models], "type": "text"})
-    rows.append({"label": "Weight", "cells": [f"{lb(m['weight_kg'])} ({m['weight_kg']:g} kg)" if m.get("weight_kg") else "—" for m in models], "type": "text"})
+    rows.append({"label": "Weight", "cells": [f"{lb(m['weight_kg'])} ({m['weight_kg']:,.10g} kg)" if m.get("weight_kg") else "—" for m in models], "type": "text"})
     for k, vals in late.items():
         rows.append({"label": k, "cells": [conv(vals[m["name"]]) if m["name"] in vals else "—" for m in models], "type": "text"})
     def dims_mm(d):
@@ -293,7 +298,7 @@ def build_spec_table(spec):
             extras.setdefault(k, {})[m["name"]] = v
     for k, vals in extras.items():
         rows.append({"label": k, "cells": [vals.get(m["name"], "—") for m in models], "type": "text"})
-    rows.append({"label": "Weight", "cells": [m.get("kg_text") or f"{lb(m['kg'])} ({m['kg']:g} kg)" for m in models], "type": "text"})
+    rows.append({"label": "Weight", "cells": [m.get("kg_text") or f"{lb(m['kg'])} ({m['kg']:,.10g} kg)" for m in models], "type": "text"})
     rows.append({"label": "Dimensions W × L × H", "cells": [m.get("dims_text") or dims(m["dims_cm"]) for m in models], "type": "text"})
     rows.append({"label": "Voltage", "cells": [m.get("voltage") or spec.get("voltage", "") for m in models], "type": "text"})
     return {"models": names, "rows": rows}
@@ -604,7 +609,7 @@ def range_table(subpages):
                     rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "line": "Premium · Bekamak" if f.get("line") == "premium" else "Value · NovoTech",
                                  "kind": sp.get("nav_label") or sp["title"], "round": f"Ø{inch_cap(m, r)} ({r:g} mm)" if r else "—",
                                  "rect": f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)" if rect else "—",
-                                 "motor": hp_range(m.get("main_motor_kw")), "weight": f"{lb(m['weight_kg'])} ({m['weight_kg']:g} kg)" if m.get("weight_kg") else "—"})
+                                 "motor": hp_range(m.get("main_motor_kw")), "weight": f"{lb(m['weight_kg'])} ({m['weight_kg']:,.10g} kg)" if m.get("weight_kg") else "—"})
                 continue
             for i, m in enumerate(spec["models"]):
                 def single(grade):
@@ -614,7 +619,7 @@ def range_table(subpages):
                     return "—"
                 rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "kind": "Cutter" if spec.get("kind") == "cutting" else "Bender",
                              "cap45": single("45"), "cap65": single("65"), "motor": m.get("kw_text") or f"{hp(m['kw'])} ({kw_str(m['kw'])})",
-                             "weight": m.get("kg_text") or f"{lb(m['kg'])} ({m['kg']:g} kg)",
+                             "weight": m.get("kg_text") or f"{lb(m['kg'])} ({m['kg']:,.10g} kg)",
                              "voltage": "110/220 V 1-phase" if "110" in (m.get("voltage") or "") else "600 V 3-phase"})
     return rows
 

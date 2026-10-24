@@ -4,7 +4,9 @@
   "isitan-td-01",
   "isitan-sff",
   "isitan-sfc-350-vx",
-  "isitan-sfc-v"
+  "isitan-sfc-v",
+  "bekamak-bmdo-xs",
+  "bekamak-bmdo-cs"
  ],
  "families": {
   "isitan-pn": {
@@ -797,6 +799,566 @@
    "headline": "10-3/4″ and 12-1/2″ blades · Ø3-3/8″ and Ø4-1/8″ round · pneumatic or manual vise",
    "group": "manual",
    "brand": "isitan"
+  },
+  "bekamak-bmdo-xs": {
+   "id": "bekamak-bmdo-xs",
+   "brand": "bekamak",
+   "name": "BMDO 75XS · 100XS · 130XS · 150XS — automatic TCT carbide circular saws, Ø3-1/8″ to Ø6-1/4″",
+   "short": "BMDO XS carbide saws",
+   "models_label": "BMDO 75XS · 100XS · 130XS · 150XS",
+   "summary": "High-speed carbide cold saws for mass production of cut-off pieces from solid steel and non-ferrous bar: a TCT circular blade at 130 – 920 ft/min, a servo saw-head feed and a servo material feed with a 31-1/2″ stroke, a hydraulic vise with top clamping, micro-spray lubrication and a 20 ft magazine loader. Load a bundle of bars, program the lengths and quantities on the control and the saw cuts unattended, to ±.004″, from Ø3-1/8″ bar on the BMDO 75XS up to Ø6-1/4″ on the BMDO 150XS. HSS blades fit the same machines for tube.",
+   "features": [
+    "TCT carbide circular blades Ø11-1/4″ to Ø18-1/8″ for high-speed cutting of solid bar; HSS blades for tube",
+    "Servo saw-head feed and AC-servo ball-screw material feed, 31-1/2″ (800 mm) stroke, lengths 3/8″ to 394″ — cuts to ±.004″",
+    "Hydraulic vise and hydraulic top clamping; heavy-duty gearbox; inverter-driven blade speed 130 – 655 ft/min (920 on the 75XS)",
+    "20 ft (6 m) magazine loader for 6 to 17 bars; chip conveyor; ILC micro-spray coolant; blade brush; cover safety switch",
+    "Options: 20 ft (6 m) material roller table, air filter"
+   ],
+   "optional": [
+    "20 ft (6 m) material roller table",
+    "Air filter",
+    "HSS circular blades for tube",
+    "208 / 240 / 480 V 3-phase"
+   ],
+   "images": [
+    "bk-bmdo-150xs-1",
+    "bk-bmdo-100xs-1",
+    "bk-bmdo-75xs-1",
+    "bk-bmdo-130xs-1",
+    "bk-bmdo-150xs-2",
+    "bk-bmdo-75xs-2",
+    "bk-bmdo-150xs-3",
+    "bk-bmdo-100xs-2",
+    "bk-bmdo-75xs-3"
+   ],
+   "videos": [
+    {
+     "id": "CV27CVffJ1s",
+     "title": "BMDO 100 XS high-speed carbide cold saw",
+     "duration": "PT2M",
+     "thumb": "video-CV27CVffJ1s"
+    },
+    {
+     "id": "OP3ktYgA7aw",
+     "title": "High-speed carbide saw BMDO 100XS",
+     "duration": "PT2M36S",
+     "thumb": "video-OP3ktYgA7aw"
+    },
+    {
+     "id": "_Gfo4BerI70",
+     "title": "High-speed carbide saw BMDO 100 XS CNC",
+     "duration": "PT1M27S",
+     "thumb": "video-_Gfo4BerI70"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BMDO XS — automatic TCT circular saws",
+      "sub": "Carbide (TCT) blades for solid bar · servo feeding · magazine loader",
+      "models": [
+       "BMDO 75XS",
+       "BMDO 100XS",
+       "BMDO 130XS",
+       "BMDO 150XS"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity — round",
+        "sub": "solid bar",
+        "cells": [
+         "Ø3/8″ – 3-1/8″ (10 – 80 mm)",
+         "Ø3/4″ – 4-1/8″ (20 – 105 mm)",
+         "Ø3/4″ – 5-1/8″ (20 – 130 mm)",
+         "Ø3/4″ – 6-1/4″ (20 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity — square",
+        "sub": "",
+        "cells": [
+         "3/8″ – 2″ (10 – 50 mm)",
+         "3/4″ – 2-3/4″ (20 – 70 mm)",
+         "3/4″ – 3-1/2″ (20 – 90 mm)",
+         "1-3/4″ – 4-3/8″ (45 – 110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade Ø × T",
+        "sub": "TCT carbide",
+        "cells": [
+         "Ø11-1/4″ × .079″ (285 × 2.0 mm)",
+         "Ø14-1/8″ × .102″ (360 × 2.6 mm)",
+         "Ø14-1/8″ / 16-3/4″ × .102″ (360 / 425 × 2.6 mm)",
+         "Ø18-1/8″ × .106″ (460 × 2.7 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "32 mm / 2-11-63, 2-12-90, 2-15-80",
+         "40 mm / 2-11-63, 2-12-90, 2-15-80",
+         "40 mm / 2-11-63, 2-12-90, 2-15-80",
+         "40 mm / 2-11-63, 2-12-90, 2-15-80"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speed",
+        "sub": "stepless",
+        "cells": [
+         "130 – 920 ft/min (40 – 280 m/min)",
+         "130 – 655 ft/min (40 – 200 m/min)",
+         "130 – 655 ft/min (40 – 200 m/min)",
+         "130 – 655 ft/min (40 – 200 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "20 HP (15 kW)",
+         "20 HP (15 kW)",
+         "20 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw-head feed / material feed",
+        "sub": "servo",
+        "cells": [
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)",
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)",
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)",
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant pump / chip conveyor",
+        "sub": "",
+        "cells": [
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "19.6 HP (14.6 kW)",
+         "29.7 HP (22.1 kW)",
+         "29.7 HP (22.1 kW)",
+         "29.7 HP (22.1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Material feed",
+        "sub": "AC servo and ball screw",
+        "cells": [
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)",
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)",
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)",
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Vise opening",
+        "sub": "",
+        "cells": [
+         "3-1/8″ (80 mm)",
+         "4-1/8″ (105 mm)",
+         "5-5/16″ (135 mm)",
+         "7-1/8″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "End-trim / remnant length",
+        "sub": "",
+        "cells": [
+         "3/8″ / 2-3/8″ (10 / 60 mm)",
+         "3/8″ / 2-3/8″ (10 / 60 mm)",
+         "3/8″ / 2-3/8″ (10 / 60 mm)",
+         "3/8″ / 2-3/8″ (10 / 60 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Magazine loader",
+        "sub": "bundle of 20 ft bars",
+        "cells": [
+         "17 × Ø3-1/8″ (80 mm) bars",
+         "10 × Ø4″ (100 mm) bars",
+         "7 × Ø5-1/8″ (130 mm) bars",
+         "6 × Ø6″ (150 mm) bars"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loader dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "221 × 65 × 49″ (5620 × 1660 × 1240 mm)",
+         "243 × 85 × 49″ (6175 × 2170 × 1245 mm)",
+         "243 × 73 × 50″ (6180 × 1860 × 1280 mm)",
+         "247 × 85 × 63″ (6280 × 2170 × 1600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Compressed air",
+        "sub": "",
+        "cells": [
+         "73 psi (5 bar), 8.7 cfm (245 l/min)",
+         "73 psi (5 bar), 8.7 cfm (245 l/min)",
+         "73 psi (5 bar), 8.7 cfm (245 l/min)",
+         "73 psi (5 bar), 8.7 cfm (245 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic tank / oil-mist tank",
+        "sub": "",
+        "cells": [
+         "18.5 gal / 0.4 gal (70 / 1.5 l)",
+         "18.5 gal / 0.4 gal (70 / 1.5 l)",
+         "18.5 gal / 0.4 gal (70 / 1.5 l)",
+         "18.5 gal / 0.4 gal (70 / 1.5 l)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions W × L × H",
+        "sub": "",
+        "cells": [
+         "121 × 105 × 101″ (3070 × 2675 × 2575 mm)",
+         "134 × 105 × 106″ (3400 × 2660 × 2680 mm)",
+         "134 × 105 × 106″ (3400 × 2660 × 2680 mm)",
+         "134 × 105 × 106″ (3400 × 2660 × 2680 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,768 lb (3,070 kg)",
+         "7,937 lb (3,600 kg)",
+         "8,014 lb (3,635 kg)",
+         "8,113 lb (3,680 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BMDO 75XS",
+      "glance": [
+       "Ø11-1/4″ TCT",
+       "Ø3/8″ – 3-1/8″",
+       "3/8″ – 2″",
+       "10 HP",
+       "6,768 lb"
+      ]
+     },
+     {
+      "name": "BMDO 100XS",
+      "glance": [
+       "Ø14-1/8″ TCT",
+       "Ø3/4″ – 4-1/8″",
+       "3/4″ – 2-3/4″",
+       "20 HP",
+       "7,937 lb"
+      ]
+     },
+     {
+      "name": "BMDO 130XS",
+      "glance": [
+       "Ø14-1/8″ / 16-3/4″ TCT",
+       "Ø3/4″ – 5-1/8″",
+       "3/4″ – 3-1/2″",
+       "20 HP",
+       "8,014 lb"
+      ]
+     },
+     {
+      "name": "BMDO 150XS",
+      "glance": [
+       "Ø18-1/8″ TCT",
+       "Ø3/4″ – 6-1/4″",
+       "1-3/4″ – 4-3/8″",
+       "20 HP",
+       "8,113 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "main_motor",
+     "weight"
+    ],
+    "caps": {
+     "BMDO 75XS": "Automatic TCT circular saw · solid bar to Ø3-1/8″",
+     "BMDO 100XS": "Automatic TCT circular saw · solid bar to Ø4-1/8″",
+     "BMDO 130XS": "Automatic TCT circular saw · solid bar to Ø5-1/8″",
+     "BMDO 150XS": "Automatic TCT circular saw · solid bar to Ø6-1/4″"
+    },
+    "note": "Capacities are for solid steel bar with a TCT blade; HSS blades for tube are available. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request)."
+   },
+   "headline": "Solid bar Ø3/8″ to Ø6-1/4″ (10 – 160 mm) · TCT blades · servo feed · magazine loader",
+   "group": "bekamak-circular"
+  },
+  "bekamak-bmdo-cs": {
+   "id": "bekamak-bmdo-cs",
+   "brand": "bekamak",
+   "name": "BMDO 80CS · 100CS — automatic HSS circular saws, Ø3-1/8″ and Ø4″",
+   "short": "BMDO CS HSS saws",
+   "models_label": "BMDO 80CS · BMDO 100CS",
+   "summary": "Automatic HSS cold saws for tube and bar up to Ø4″: a vertical-slide saw head with a cemented and ground helical-gear drive for a vibration-free cut, an inverter for stepless blade speed and electric servo feeding with a flexible gripper and floating carriage that holds ±.002 – .004″ per stroke even in bar that is not perfectly straight. Several cutting lengths per bar are programmed on the touch screen; safety covers enclose the cut.",
+   "features": [
+    "HSS circular blades Ø10-1/4″ to 14-1/8″; tube and solid bar Ø3/4″ to 3-1/8″ (80CS) or 4″ (100CS)",
+    "Vertical-slide saw head for rigidity; helical-gear head without worm screw — no play or vibration at the blade",
+    "Electric servo feeding with flexible gripper and floating carriage: ±.002 – .004″ (0.05 – 0.1 mm) per stroke; 19-3/4″ or 39-3/8″ feed stroke",
+    "Touch-screen control with several cutting lengths per bar; inverter blade speed 72 – 425 ft/min",
+    "Hydraulic vise, heavy-duty gearbox, blade brush, chip conveyor, safety covers and switch",
+    "Options: micro-spray coolant, 20 ft (6 m) feed roller table"
+   ],
+   "optional": [
+    "Micro-spray coolant",
+    "20 ft (6 m) feed roller table",
+    "208 / 240 / 480 V 3-phase"
+   ],
+   "images": [
+    "bk-bmdo-80cs-1",
+    "bk-bmdo-100cs-1",
+    "bk-bmdo-80cs-2",
+    "bk-bmdo-100cs-2",
+    "bk-bmdo-80cs-3"
+   ],
+   "videos": [
+    {
+     "id": "FDPXXawic4o",
+     "title": "High-speed carbide cold saw BMDO 80CS CNC",
+     "duration": "PT51S",
+     "thumb": "video-FDPXXawic4o"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BMDO CS — automatic HSS circular saws",
+      "sub": "HSS blades for tube and bar · servo gripper feed · touch-screen control",
+      "models": [
+       "BMDO 80CS",
+       "BMDO 100CS"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity — round",
+        "sub": "tube and solid bar",
+        "cells": [
+         "Ø3/4″ – 3-1/8″ (20 – 80 mm)",
+         "Ø3/4″ – 4″ (20 – 100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade Ø × T",
+        "sub": "HSS",
+        "cells": [
+         "Ø10-1/4″ – 13-3/4″ × .079 – .118″ (260 – 350 × 2.0 – 3.0 mm)",
+         "Ø10-1/4″ – 14-1/8″ × .079 – .118″ (260 – 360 × 2.0 – 3.0 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade speed",
+        "sub": "stepless, inverter",
+        "cells": [
+         "72 – 425 ft/min (22 – 130 m/min)",
+         "72 – 425 ft/min (22 – 130 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)",
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw-head servo / feeder servo",
+        "sub": "",
+        "cells": [
+         "2.7 HP / 1.3 HP (2 / 1 kW)",
+         "2.7 HP / 1.3 HP (2 / 1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic motor",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant pump / chip conveyor",
+        "sub": "",
+        "cells": [
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamp opening",
+        "sub": "",
+        "cells": [
+         "3-3/8″ (85 mm)",
+         "4-5/16″ (110 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed stroke",
+        "sub": "servo gripper feed",
+        "cells": [
+         "19-3/4″ (500 mm)",
+         "39-3/8″ (1000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed accuracy",
+        "sub": "",
+        "cells": [
+         "±.002 – .004″ (±0.05 – 0.1 mm) per stroke",
+         "±.002 – .004″ (±0.05 – 0.1 mm) per stroke"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loader (option)",
+        "sub": "6 m roller magazine",
+        "cells": [
+         "203 × 30 × 4″ (5150 × 750 × 110 mm)",
+         "203 × 30 × 4″ (5150 × 750 × 110 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "cells": [
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "63 × 67 × 83″ (1600 × 1700 × 2100 mm)",
+         "85 × 79 × 83″ (2150 × 2000 × 2100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,142 lb (1,425 kg)",
+         "3,968 lb (1,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BMDO 80CS",
+      "glance": [
+       "Ø10-1/4″ – 13-3/4″ HSS",
+       "Ø3/4″ – 3-1/8″",
+       "—",
+       "7.5 HP",
+       "3,142 lb"
+      ]
+     },
+     {
+      "name": "BMDO 100CS",
+      "glance": [
+       "Ø10-1/4″ – 14-1/8″ HSS",
+       "Ø3/4″ – 4″",
+       "—",
+       "7.5 HP",
+       "3,968 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "main_motor",
+     "weight"
+    ],
+    "caps": {
+     "BMDO 80CS": "Automatic HSS circular saw · tube and bar to Ø3-1/8″",
+     "BMDO 100CS": "Automatic HSS circular saw · tube and bar to Ø4″"
+    },
+    "note": "Capacities are for mild steel tube and bar with an HSS blade. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request)."
+   },
+   "headline": "Tube and bar Ø3/4″ to Ø4″ (20 – 100 mm) · HSS blades · servo gripper feed · touch screen",
+   "group": "bekamak-circular"
   }
  }
 }

@@ -1,393 +1,397 @@
 {
-  "name": "NovoTech Machine Tools Inc.",
-  "short_name": "NovoTech",
-  "domain": "https://novotechmachinetools.com",
-  "phone": "+1 647 526 5510",
-  "phone_tel": "+16475265510",
-  "email_user": "info",
-  "email_domain": "NovoTechMachineTools.com",
-  "address": {
-    "street": "1365 Mid-Way Blvd, Unit 26",
-    "city": "Mississauga",
-    "region": "ON",
-    "postal": "L5T 2J5",
-    "country": "Canada"
+ "name": "NovoTech Machine Tools Inc.",
+ "short_name": "NovoTech",
+ "domain": "https://novotechmachinetools.com",
+ "phone": "+1 647 526 5510",
+ "phone_tel": "+16475265510",
+ "email_user": "info",
+ "email_domain": "NovoTechMachineTools.com",
+ "address": {
+  "street": "1365 Mid-Way Blvd, Unit 26",
+  "city": "Mississauga",
+  "region": "ON",
+  "postal": "L5T 2J5",
+  "country": "Canada"
+ },
+ "geo": {
+  "lat": 43.6553,
+  "lng": -79.6613
+ },
+ "hours": "Mon–Fri 9:00–17:00",
+ "founded_note": "Metalworking machinery supplier in Mississauga, ON — serving fabricators across Canada.",
+ "youtube_channel": "https://www.youtube.com/@NovoTechMachineTools",
+ "youtube_rebar_playlist": "https://www.youtube.com/playlist?list=PLgtouQi-TePskd87VBPL7EEoHJJ_yKnH5",
+ "social": [
+  {
+   "name": "YouTube",
+   "icon": "youtube",
+   "url": "https://www.youtube.com/@NovoTechMachineTools"
   },
-  "geo": {
-    "lat": 43.6553,
-    "lng": -79.6613
+  {
+   "name": "LinkedIn",
+   "icon": "linkedin",
+   "url": "https://www.linkedin.com/company/novotech-machine-tools-inc/"
   },
-  "hours": "Mon–Fri 9:00–17:00",
-  "founded_note": "Metalworking machinery supplier in Mississauga, ON — serving fabricators across Canada.",
-  "youtube_channel": "https://www.youtube.com/@NovoTechMachineTools",
-  "youtube_rebar_playlist": "https://www.youtube.com/playlist?list=PLgtouQi-TePskd87VBPL7EEoHJJ_yKnH5",
-  "social": [
-    {
-      "name": "YouTube",
-      "icon": "youtube",
-      "url": "https://www.youtube.com/@NovoTechMachineTools"
-    },
-    {
-      "name": "LinkedIn",
-      "icon": "linkedin",
-      "url": "https://www.linkedin.com/company/novotech-machine-tools-inc/"
-    },
-    {
-      "name": "Facebook",
-      "icon": "facebook",
-      "url": "https://www.facebook.com/novotechmachinetoolscanada"
-    },
-    {
-      "name": "Instagram",
-      "icon": "instagram",
-      "url": "https://www.instagram.com/novotech_machinetools/"
-    }
-  ],
-  "nav": [
-    {
-      "label": "Products",
-      "href": "products.html",
-      "children": [
-        {
-          "label": "Rebar benders & cutters",
-          "href": "rebar-bender-and-cutter.html",
-          "children": [
-            {
-              "label": "Rebar benders",
-              "href": "rebar-bender.html"
-            },
-            {
-              "label": "Rebar cutters",
-              "href": "rebar-cutter.html"
-            },
-            {
-              "label": "Automatic processing lines",
-              "href": "automatic-rebar-processing-lines.html"
-            }
-          ]
-        },
-        {
-          "label": "Press brakes",
-          "href": "press-brake.html",
-          "children": [
-            {
-              "label": "Dener CNC press brakes",
-              "href": "press-brake.html"
-            },
-            {
-              "label": "Compact hydraulic press brakes",
-              "href": "compact-hydraulic-press-brakes.html"
-            }
-          ]
-        },
-        {
-          "label": "Laser cutters",
-          "href": "laser-cutting-machine.html"
-        },
-        {
-          "label": "Shears",
-          "href": "shear-cutting.html"
-        },
-        {
-          "label": "Ironworkers",
-          "href": "iron-worker-punch.html"
-        },
-        {
-          "label": "Plate rollers & slip rolls",
-          "href": "plate-rollers.html",
-          "children": [
-            {
-              "label": "Hydraulic 4-roll plate rollers",
-              "href": "hydraulic-4-roll-plate-rollers.html"
-            },
-            {
-              "label": "Hydraulic 3-roll plate rollers",
-              "href": "hydraulic-3-roll-plate-rollers.html"
-            },
-            {
-              "label": "Motorized 3-roll plate rollers",
-              "href": "motorized-plate-rollers.html"
-            },
-            {
-              "label": "Slip rolls",
-              "href": "slip-rolls.html"
-            }
-          ]
-        },
-        {
-          "label": "Angle rolls",
-          "href": "pipe-profile-roll-bender.html"
-        },
-        {
-          "label": "Band saws",
-          "href": "band-saw.html",
-          "children": [
-            {
-              "label": "Bekamak · premium line",
-              "href": "band-saw.html#premium-line",
-              "children": [
-                {
-                  "label": "Manual",
-                  "href": "manual-band-saws.html"
-                },
-                {
-                  "label": "Semi-automatic",
-                  "href": "semi-automatic-band-saws.html"
-                },
-                {
-                  "label": "Fully automatic",
-                  "href": "automatic-band-saws.html"
-                },
-                {
-                  "label": "Double column",
-                  "href": "double-column-band-saws.html"
-                }
-              ]
-            },
-            {
-              "label": "NovoTech · value line",
-              "href": "band-saw.html#value-line",
-              "children": [
-                {
-                  "label": "Semi-automatic",
-                  "href": "affordable-semi-automatic-band-saws.html"
-                },
-                {
-                  "label": "Fully automatic",
-                  "href": "automatic-feed-band-saws.html"
-                },
-                {
-                  "label": "Double column",
-                  "href": "twin-column-band-saws.html"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Cold saws",
-          "href": "cold-saw-carbide-saw-cutting.html",
-          "children": [
-            {
-              "label": "Automatic cold saws",
-              "href": "cold-saw-carbide-saw-cutting.html"
-            },
-            {
-              "label": "Circular cold saws",
-              "href": "circular-cold-saws.html"
-            }
-          ]
-        },
-        {
-          "label": "Roofing & pan brakes",
-          "href": "folder-sheet-metal-brake.html"
-        },
-        {
-          "label": "Horizontal press brakes",
-          "href": "horizontal-press-brake.html"
-        },
-        {
-          "label": "Pipe & tube benders",
-          "href": "pipe-benders.html",
-          "children": [
-            {
-              "label": "CNC tube benders",
-              "href": "cnc-tube-benders.html"
-            },
-            {
-              "label": "NC tube benders",
-              "href": "nc-tube-benders.html"
-            },
-            {
-              "label": "Rotary draw tube benders",
-              "href": "rotary-draw-tube-benders.html"
-            }
-          ]
-        },
-        {
-          "label": "Hydraulic presses",
-          "href": "hydraulic-press.html"
-        },
-        {
-          "label": "Plate bevelers",
-          "href": "plate-beveler.html"
-        },
-        {
-          "label": "Circle cutters & lock seamers",
-          "href": "circle-cutters-and-seamers.html"
-        },
-        {
-          "label": "Bead rollers",
-          "href": "bead-rollers.html"
-        },
-        {
-          "label": "Lock formers",
-          "href": "lock-former.html"
-        },
-        {
-          "label": "Metal deburring & finishing",
-          "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
-        },
-        {
-          "label": "Pipe polishing & sanding",
-          "href": "pipe-polishing-deburring-grinding-brushing.html"
-        },
-        {
-          "label": "Tube notchers & end formers",
-          "href": "tube-notchers-and-end-formers.html"
-        },
-        {
-          "label": "Corner notchers",
-          "href": "corner-notcher.html"
-        },
-        {
-          "label": "Aluminum & PVC saws",
-          "href": "aluminum-and-pvc-upcut-saws.html"
-        },
-        {
-          "label": "Press brake tooling",
-          "href": "press-brake-tooling-punch-and-die.html"
-        }
-      ]
-    },
-    {
-      "label": "Brochures",
-      "href": "brochures.html"
-    },
-    {
-      "label": "Articles",
-      "href": "metal-fabricating-articles.html"
-    },
-    {
-      "label": "About us",
-      "href": "about-us.html"
-    },
-    {
-      "label": "Contact",
-      "href": "contact-us.html"
-    }
-  ],
-  "standard_features": [
-    {
-      "title": "CSA-approved electrical panel",
-      "text": "Every machine ships with a CSA-approved panel, wired for Canadian voltage.",
-      "icon": "panel"
-    },
-    {
-      "title": "Parts and support in Canada",
-      "text": "Spare parts and technical support readily available from Mississauga, ON.",
-      "icon": "support"
-    },
-    {
-      "title": "7-day money-back guarantee",
-      "text": "Try the machine in your shop — full refund within 7 days on in-stock models.",
-      "icon": "moneyback"
-    },
-    {
-      "title": "1-year warranty",
-      "text": "On every new machine we sell, with parts and service from Mississauga, ON.",
-      "icon": "warranty"
-    },
-    {
-      "title": "Made in Turkey with European components",
-      "text": "GMS has built rebar machinery in Ankara since 1960 and makes its own gears in-house.",
-      "icon": "factory",
-      "id": "origin"
-    },
-    {
-      "title": "Installation and training",
-      "text": "Our technicians commission the machine and train your operators, anywhere in Canada — on request, at an additional charge.",
-      "icon": "training"
-    },
-    {
-      "title": "Remote troubleshooting by video call",
-      "text": "Our technicians diagnose faults and guide your operator through the fix over a video call.",
-      "icon": "video"
-    },
-    {
-      "title": "Shipping across Canada from Mississauga, ON",
-      "text": "Delivered to every province and territory, with the freight arranged by NovoTech at competitive rates.",
-      "icon": "truck"
-    },
-    {
-      "id": "financing",
-      "title": "Financing with 0% down",
-      "text": "Lease or finance the machine with 0% down and competitive rates through our financing partners — keep your cash working in the shop.",
-      "icon": "financing"
-    },
-    {
-      "id": "terms",
-      "title": "Order today with 10% down",
-      "text": "Simple payment terms: 10% down payment to place your order, the remaining 90% before shipping from our warehouse in Mississauga, ON.",
-      "icon": "receipt"
-    },
-    {
-      "id": "loyalty",
-      "title": "5% off your second machine",
-      "text": "Returning customers get 5% off their next machine from NovoTech — our thank-you for coming back.",
-      "icon": "repeat"
-    }
-  ],
-  "voltage_note": "Three-phase machines are supplied for 600 V; 208 V, 240 V or 480 V 3-phase available on request.",
-  "steel_note": "Capacities are the manufacturer's ratings for one or more bars at once in steel of 45, 65 and 85 kg/mm² tensile strength (≈ 64,000, 92,500 and 120,900 psi). For Canadian Grade 400W rebar (minimum tensile strength 540 MPa ≈ 55 kg/mm²) use the 65 kg/mm² column as a conservative guide. Bar-size equivalents (Canadian metric bars and US bar numbers) are given for the single-bar capacity.",
-  "staging_domain": "https://novotechmachinetools.github.io/novotechmachinetools",
-  "agents": {
-    "title": "Sales agents wanted across Canada",
-    "kicker": "Represent NovoTech in your city or province",
-    "text": "NovoTech is appointing independent sales agents and dealers in cities and provinces across Canada — British Columbia, Alberta, Saskatchewan, Manitoba, Ontario outside the GTA, Quebec and Atlantic Canada. If you already call on steel fabricators, rebar shops, precast plants, HVAC shops or contractors, add a proven line of GMS, Dener and other metalworking machinery to what you offer.",
-    "points": [
-      "Open to individuals and companies with customers in metal fabrication or construction",
-      "Quotations, brochures, videos and demonstrations prepared by NovoTech for your customers",
-      "Installation, operator training, spare parts and technical support stay with NovoTech in Mississauga, ON"
-    ],
-    "cta": "Apply to become an agent",
-    "form_option": "Becoming a NovoTech sales agent / dealer"
+  {
+   "name": "Facebook",
+   "icon": "facebook",
+   "url": "https://www.facebook.com/novotechmachinetoolscanada"
   },
-  "brands": {
-    "gms": {
-      "name": "GMS GöçMakSan",
-      "manufacturer": "GMS GöçMakSan",
-      "country": "Turkey",
-      "country_code": "TR"
-    },
-    "bekamak": {
-      "name": "Bekamak",
-      "manufacturer": "Bekamak Makina",
-      "country": "Turkey",
-      "country_code": "TR",
-      "line": "Premium line",
-      "logo": "bekamak-logo",
-      "tagline": "Made in Turkey since 1990 — Bekamak band saws sold, installed and supported in Canada by NovoTech",
-      "pdf": {
-        "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
-        "label": "Bekamak band saw catalogue",
-        "size": "PDF · 7.5 MB · imperial units"
-      }
-    },
-    "novotech": {
-      "name": "NovoTech",
-      "country": "Canada",
-      "country_code": "CA",
-      "line": "Value line",
-      "logo": "novotech-logo",
-      "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell",
-      "pdf": {
-        "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
-        "label": "NovoTech value line band saw catalogue",
-        "size": "PDF · 5 MB · imperial units"
-      }
-    },
-    "isitan": {
-      "name": "İşitan",
-      "manufacturer": "İşitan Makine",
-      "country": "Turkey",
-      "country_code": "TR",
-      "tagline": "Made in Turkey since 1959 — İşitan sheet-metal machinery sold, installed and supported in Canada by NovoTech",
-      "pdf": {
-        "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
-        "label": "İşitan machinery catalogue",
-        "size": "PDF · 29 MB · imperial units"
-      }
-    }
+  {
+   "name": "Instagram",
+   "icon": "instagram",
+   "url": "https://www.instagram.com/novotech_machinetools/"
   }
+ ],
+ "nav": [
+  {
+   "label": "Products",
+   "href": "products.html",
+   "children": [
+    {
+     "label": "Rebar benders & cutters",
+     "href": "rebar-bender-and-cutter.html",
+     "children": [
+      {
+       "label": "Rebar benders",
+       "href": "rebar-bender.html"
+      },
+      {
+       "label": "Rebar cutters",
+       "href": "rebar-cutter.html"
+      },
+      {
+       "label": "Automatic processing lines",
+       "href": "automatic-rebar-processing-lines.html"
+      }
+     ]
+    },
+    {
+     "label": "Press brakes",
+     "href": "press-brake.html",
+     "children": [
+      {
+       "label": "Dener CNC press brakes",
+       "href": "press-brake.html"
+      },
+      {
+       "label": "Compact hydraulic press brakes",
+       "href": "compact-hydraulic-press-brakes.html"
+      }
+     ]
+    },
+    {
+     "label": "Laser cutters",
+     "href": "laser-cutting-machine.html"
+    },
+    {
+     "label": "Shears",
+     "href": "shear-cutting.html"
+    },
+    {
+     "label": "Ironworkers",
+     "href": "iron-worker-punch.html"
+    },
+    {
+     "label": "Plate rollers & slip rolls",
+     "href": "plate-rollers.html",
+     "children": [
+      {
+       "label": "Hydraulic 4-roll plate rollers",
+       "href": "hydraulic-4-roll-plate-rollers.html"
+      },
+      {
+       "label": "Hydraulic 3-roll plate rollers",
+       "href": "hydraulic-3-roll-plate-rollers.html"
+      },
+      {
+       "label": "Motorized 3-roll plate rollers",
+       "href": "motorized-plate-rollers.html"
+      },
+      {
+       "label": "Slip rolls",
+       "href": "slip-rolls.html"
+      }
+     ]
+    },
+    {
+     "label": "Angle rolls",
+     "href": "pipe-profile-roll-bender.html"
+    },
+    {
+     "label": "Band saws",
+     "href": "band-saw.html",
+     "children": [
+      {
+       "label": "Bekamak · premium line",
+       "href": "band-saw.html#premium-line",
+       "children": [
+        {
+         "label": "Manual",
+         "href": "manual-band-saws.html"
+        },
+        {
+         "label": "Semi-automatic",
+         "href": "semi-automatic-band-saws.html"
+        },
+        {
+         "label": "Fully automatic",
+         "href": "automatic-band-saws.html"
+        },
+        {
+         "label": "Double column",
+         "href": "double-column-band-saws.html"
+        },
+        {
+         "label": "Vertical",
+         "href": "vertical-band-saws.html"
+        }
+       ]
+      },
+      {
+       "label": "NovoTech · value line",
+       "href": "band-saw.html#value-line",
+       "children": [
+        {
+         "label": "Semi-automatic",
+         "href": "affordable-semi-automatic-band-saws.html"
+        },
+        {
+         "label": "Fully automatic",
+         "href": "automatic-feed-band-saws.html"
+        },
+        {
+         "label": "Double column",
+         "href": "twin-column-band-saws.html"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Cold saws",
+     "href": "circular-cold-saws.html",
+     "children": [
+      {
+       "label": "İşitan circular cold saws",
+       "href": "circular-cold-saws.html#semi-group"
+      },
+      {
+       "label": "Bekamak automatic TCT & HSS saws",
+       "href": "circular-cold-saws.html#bekamak-circular-group"
+      }
+     ]
+    },
+    {
+     "label": "Roofing & pan brakes",
+     "href": "folder-sheet-metal-brake.html"
+    },
+    {
+     "label": "Horizontal press brakes",
+     "href": "horizontal-press-brake.html"
+    },
+    {
+     "label": "Pipe & tube benders",
+     "href": "pipe-benders.html",
+     "children": [
+      {
+       "label": "CNC tube benders",
+       "href": "cnc-tube-benders.html"
+      },
+      {
+       "label": "NC tube benders",
+       "href": "nc-tube-benders.html"
+      },
+      {
+       "label": "Rotary draw tube benders",
+       "href": "rotary-draw-tube-benders.html"
+      }
+     ]
+    },
+    {
+     "label": "Hydraulic presses",
+     "href": "hydraulic-press.html"
+    },
+    {
+     "label": "Plate bevelers",
+     "href": "plate-beveler.html"
+    },
+    {
+     "label": "Circle cutters & lock seamers",
+     "href": "circle-cutters-and-seamers.html"
+    },
+    {
+     "label": "Bead rollers",
+     "href": "bead-rollers.html"
+    },
+    {
+     "label": "Lock formers",
+     "href": "lock-former.html"
+    },
+    {
+     "label": "Metal deburring & finishing",
+     "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
+    },
+    {
+     "label": "Pipe polishing & sanding",
+     "href": "pipe-polishing-deburring-grinding-brushing.html"
+    },
+    {
+     "label": "Tube notchers & end formers",
+     "href": "tube-notchers-and-end-formers.html"
+    },
+    {
+     "label": "Corner notchers",
+     "href": "corner-notcher.html"
+    },
+    {
+     "label": "Aluminum & PVC saws",
+     "href": "aluminum-and-pvc-upcut-saws.html"
+    },
+    {
+     "label": "Press brake tooling",
+     "href": "press-brake-tooling-punch-and-die.html"
+    }
+   ]
+  },
+  {
+   "label": "Brochures",
+   "href": "brochures.html"
+  },
+  {
+   "label": "Articles",
+   "href": "metal-fabricating-articles.html"
+  },
+  {
+   "label": "About us",
+   "href": "about-us.html"
+  },
+  {
+   "label": "Contact",
+   "href": "contact-us.html"
+  }
+ ],
+ "standard_features": [
+  {
+   "title": "CSA-approved electrical panel",
+   "text": "Every machine ships with a CSA-approved panel, wired for Canadian voltage.",
+   "icon": "panel"
+  },
+  {
+   "title": "Parts and support in Canada",
+   "text": "Spare parts and technical support readily available from Mississauga, ON.",
+   "icon": "support"
+  },
+  {
+   "title": "7-day money-back guarantee",
+   "text": "Try the machine in your shop — full refund within 7 days on in-stock models.",
+   "icon": "moneyback"
+  },
+  {
+   "title": "1-year warranty",
+   "text": "On every new machine we sell, with parts and service from Mississauga, ON.",
+   "icon": "warranty"
+  },
+  {
+   "title": "Made in Turkey with European components",
+   "text": "GMS has built rebar machinery in Ankara since 1960 and makes its own gears in-house.",
+   "icon": "factory",
+   "id": "origin"
+  },
+  {
+   "title": "Installation and training",
+   "text": "Our technicians commission the machine and train your operators, anywhere in Canada — on request, at an additional charge.",
+   "icon": "training"
+  },
+  {
+   "title": "Remote troubleshooting by video call",
+   "text": "Our technicians diagnose faults and guide your operator through the fix over a video call.",
+   "icon": "video"
+  },
+  {
+   "title": "Shipping across Canada from Mississauga, ON",
+   "text": "Delivered to every province and territory, with the freight arranged by NovoTech at competitive rates.",
+   "icon": "truck"
+  },
+  {
+   "id": "financing",
+   "title": "Financing with 0% down",
+   "text": "Lease or finance the machine with 0% down and competitive rates through our financing partners — keep your cash working in the shop.",
+   "icon": "financing"
+  },
+  {
+   "id": "terms",
+   "title": "Order today with 10% down",
+   "text": "Simple payment terms: 10% down payment to place your order, the remaining 90% before shipping from our warehouse in Mississauga, ON.",
+   "icon": "receipt"
+  },
+  {
+   "id": "loyalty",
+   "title": "5% off your second machine",
+   "text": "Returning customers get 5% off their next machine from NovoTech — our thank-you for coming back.",
+   "icon": "repeat"
+  }
+ ],
+ "voltage_note": "Three-phase machines are supplied for 600 V; 208 V, 240 V or 480 V 3-phase available on request.",
+ "steel_note": "Capacities are the manufacturer's ratings for one or more bars at once in steel of 45, 65 and 85 kg/mm² tensile strength (≈ 64,000, 92,500 and 120,900 psi). For Canadian Grade 400W rebar (minimum tensile strength 540 MPa ≈ 55 kg/mm²) use the 65 kg/mm² column as a conservative guide. Bar-size equivalents (Canadian metric bars and US bar numbers) are given for the single-bar capacity.",
+ "staging_domain": "https://novotechmachinetools.github.io/novotechmachinetools",
+ "agents": {
+  "title": "Sales agents wanted across Canada",
+  "kicker": "Represent NovoTech in your city or province",
+  "text": "NovoTech is appointing independent sales agents and dealers in cities and provinces across Canada — British Columbia, Alberta, Saskatchewan, Manitoba, Ontario outside the GTA, Quebec and Atlantic Canada. If you already call on steel fabricators, rebar shops, precast plants, HVAC shops or contractors, add a proven line of GMS, Dener and other metalworking machinery to what you offer.",
+  "points": [
+   "Open to individuals and companies with customers in metal fabrication or construction",
+   "Quotations, brochures, videos and demonstrations prepared by NovoTech for your customers",
+   "Installation, operator training, spare parts and technical support stay with NovoTech in Mississauga, ON"
+  ],
+  "cta": "Apply to become an agent",
+  "form_option": "Becoming a NovoTech sales agent / dealer"
+ },
+ "brands": {
+  "gms": {
+   "name": "GMS GöçMakSan",
+   "manufacturer": "GMS GöçMakSan",
+   "country": "Turkey",
+   "country_code": "TR"
+  },
+  "bekamak": {
+   "name": "Bekamak",
+   "manufacturer": "Bekamak Makina",
+   "country": "Turkey",
+   "country_code": "TR",
+   "line": "Premium line",
+   "logo": "bekamak-logo",
+   "tagline": "Made in Turkey since 1990 — Bekamak saws sold, installed and supported in Canada by NovoTech",
+   "pdf": {
+    "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+    "label": "Bekamak band saw catalogue",
+    "size": "PDF · 7.5 MB · imperial units"
+   }
+  },
+  "novotech": {
+   "name": "NovoTech",
+   "country": "Canada",
+   "country_code": "CA",
+   "line": "Value line",
+   "logo": "novotech-logo",
+   "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell",
+   "pdf": {
+    "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
+    "label": "NovoTech value line band saw catalogue",
+    "size": "PDF · 5 MB · imperial units"
+   }
+  },
+  "isitan": {
+   "name": "İşitan",
+   "manufacturer": "İşitan Makine",
+   "country": "Turkey",
+   "country_code": "TR",
+   "tagline": "Made in Turkey since 1959 — İşitan sheet-metal machinery sold, installed and supported in Canada by NovoTech",
+   "pdf": {
+    "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+    "label": "İşitan machinery catalogue",
+    "size": "PDF · 29 MB · imperial units"
+   }
+  }
+ }
 }

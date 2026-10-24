@@ -1,6 +1,7 @@
 """İşitan section: pipe-end processing (PN notchers, TD deburring, SFF end formers; catalogue pages 50–51)
 and SFC circular cold saws (pages 52–53) — two category pages."""
 from isitan_lib import *  # noqa: F401,F403
+from bekamak_extra import CIRCULAR_FAMILIES, CIRCULAR_IMAGES  # noqa: E402  (Bekamak BMDO saws share the cold saw page)
 
 SET = "pipe-end-and-saws"
 SECTION = "Tube notchers, end formers & cold saws"
@@ -178,7 +179,7 @@ FAMILIES = [
          images=["is-sfc-315-vp", "is-sfc-275-v"],
          videos=[], specs=t_sfc_v(),
          headline="10-3/4″ and 12-1/2″ blades · Ø3-3/8″ and Ø4-1/8″ round · pneumatic or manual vise"),
-]
+] + [dict(f, page=P_SAW) for f in CIRCULAR_FAMILIES]
 
 PAGES = {
     P_END: dict(
@@ -197,15 +198,18 @@ PAGES = {
         faq_title="Questions we get asked about tube notchers and end formers",
     ),
     P_SAW: dict(
-        title="Circular Cold Saws — Manual & Semi-Automatic | NovoTech",
-        meta="Wet-cutting circular cold saws for metal, 10-3/4″ to 13-3/4″ blades: manual or pneumatic vise or semi-automatic cycle, round to Ø4-1/2″, mitre 45° both ways.",
-        h1="Circular cold saws",
-        intro="A circular cold saw cuts metal with a slow-turning, coolant-flooded HSS blade (45–90 rpm) instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Wet-type circular cold saws for burr-free cuts in tube, bar and profile: the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head for short batch runs. Two blade speeds, mitre cuts 45° left and right, a double split vise that grips both sides of the cut and a low-voltage trigger in the handle — the metal chop saw that leaves a square, cool, weld-ready end instead of an abrasive burr. HSS blades with TiN, TiCN and TiAlN coatings for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON. For automatic production cold saws see our Bekamak range.",
-        points=["Round to Ø4-1/2″ · square to 3-7/8″ · rectangular to 4-3/4″ × 3-1/8″ mild steel", "10-3/4″, 12-1/2″ and 13-3/4″ HSS blades · two speeds · mitre 45° both ways", "Manual vise, pneumatic vise or semi-automatic cycle"],
-        hero="is-sfc-350-vx", minis=["is-sfc-315-vp", "is-sfc-275-v"],
-        groups=[("semi", "Semi-automatic cold saw", "The SFC 350-VX with foot-switch cycle and hydro-pneumatic head descent."),
-                ("manual", "Pull-down cold saws", "SFC VP with pneumatic vise and SFC V with manual vise, 10-3/4″ and 12-1/2″ blades.")],
+        title="Cold Saws — Circular & CNC Carbide Cold Saws | NovoTech",
+        meta="Cold saw machines for metal from a 10-3/4″ manual circular saw to CNC carbide production saws: wet cutting, burr-free ends, tube and bar to Ø6-1/4″, servo feeding, loaders.",
+        h1="Cold saws — circular cold saws, manual to CNC carbide",
+        intro="A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Two families of cold saw machines: İşitan's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head — and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the İşitan saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON.",
+        points=["Manual and semi-automatic circular cold saws: round to Ø4-1/2″, mitre 45° both ways, 10-3/4″ – 13-3/4″ HSS blades", "Automatic carbide cold saws: solid bar Ø3/8″ – 6-1/4″ at up to 920 ft/min, servo feed, 20 ft magazine loader", "Automatic HSS cold saws: tube and bar to Ø4″, ±.004″ feed accuracy, several lengths per bar"],
+        hero="is-sfc-350-vx", minis=["bk-bmdo-150xs-1", "bk-bmdo-80cs-1"],
+        groups=[("semi", "İşitan semi-automatic cold saw", "The SFC 350-VX with foot-switch cycle and hydro-pneumatic head descent."),
+                ("manual", "İşitan pull-down cold saws", "SFC VP with pneumatic vise and SFC V with manual vise, 10-3/4″ and 12-1/2″ blades."),
+                ("bekamak-circular", "Bekamak automatic circular saws — TCT carbide and HSS", "Production cold saws that feed, cut and count by themselves: BMDO XS carbide saws for solid bar to Ø6-1/4″ and BMDO CS HSS saws for tube and bar to Ø4″.", "bekamak")],
         faq=[{"q": "Cold saw or abrasive chop saw?", "a": "An abrasive chop saw grinds through the steel at high speed, leaving a hot, burred, slightly bevelled end and sparks. A cold saw cuts with a slow HSS blade (45–90 rpm) under coolant, so the cut is square, cool to the touch, burr-free and ready to weld or fit — and the blade is resharpened dozens of times instead of thrown away."},
+             {"q": "TCT carbide or HSS cold saw?", "a": "A carbide (TCT) blade runs at 130–920 ft/min and is the fastest way to cut solid steel bar in production — the Bekamak BMDO XS saws are built around it, with servo feeding and a magazine loader for unattended runs. HSS blades run slower (22–130 ft/min on the BMDO CS) and are the choice for tube, thin walls and mixed work; the XS saws accept HSS blades for tube as well."},
+             {"q": "What does an automatic cold saw do by itself?", "a": "You load bars in the magazine (BMDO XS) or on the roller table (BMDO CS), program the lengths and quantities, and the saw feeds each bar with a servo gripper, clamps it hydraulically, cuts, counts and moves on to the next length — to ±.004″ on the CS and with a 60 mm remnant on the XS."},
              {"q": "Manual, pneumatic or semi-automatic?", "a": "The SFC V clamps with a hand vise — the simplest saw for occasional cuts. The SFC VP clamps with air at the pull of a lever, which saves time on every cut and holds short pieces better. The SFC 350-VX runs a semi-automatic cycle from a foot switch with a regulated head descent, for batches of the same part without an operator on the handle."},
              {"q": "Which blade do I need?", "a": "A standard HSS blade cuts mild steel and aluminum. For medium-hard steel we fit TiN-coated blades, TiCN for high-strength steel and TiAlN for stainless. The blade bore is 32 mm with two Ø11 mm pin holes on all SFC models, so blades are readily available in Canada."},
              VOLT_FAQ_GENERIC],
@@ -214,10 +218,24 @@ PAGES = {
 }
 
 
+def register_bekamak_images():
+    """bekamak.com photos of the BMDO saws → tools/image_map.json (white renders, cut out by the pipeline)."""
+    imap_path = os.path.join(ROOT, "tools", "image_map.json")
+    imap = json.load(open(imap_path, encoding="utf-8"))
+    for key, (fn, alt) in CIRCULAR_IMAGES.items():
+        imap[key] = {"src": os.path.join("/home/claude/bekamak/site/img", fn), "alt": alt, "section": "bandsaw", "trim": False, "quality": 82}
+    json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    return list(CIRCULAR_IMAGES)
+
+
 def build():
+    register_bekamak_images()
     write_families(SET, FAMILIES)
     related_end = [{"href": f"{P_SAW}.html", "label": "Circular cold saws"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "nc-tube-benders.html", "label": "NC tube benders"}]
-    related_saw = [{"href": f"{P_END}.html", "label": "Tube notchers & end formers"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "cold-saw-carbide-saw-cutting.html", "label": "Automatic cold saws"}, {"href": "band-saw.html", "label": "Band saws"}]
+    related_saw = [{"href": f"{P_END}.html", "label": "Tube notchers & end formers"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "band-saw.html", "label": "Band saws"}, {"href": "double-column-band-saws.html", "label": "Bekamak double-column band saws"}]
     write_category(P_END, {**PAGES[P_END], "related_pages": related_end, "related_title": "More tube machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Tube notchers & end formers"})
-    write_category(P_SAW, {**PAGES[P_SAW], "related_pages": related_saw, "related_title": "More cutting machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Circular cold saws"})
+    write_category(P_SAW, {**PAGES[P_SAW], "related_pages": related_saw, "related_title": "More cutting machinery from NovoTech"}, FAMILIES, SET, SECTION,
+                   extra={"nav_label": "Cold saws", "catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_BK],
+                          "hero_brand_line": "İşitan circular cold saws are made in Turkey by İşitan Makine; the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",
+                          "origin_feature": {"title": "Made in Turkey by İşitan and Bekamak", "text": "İşitan has built sheet-metal machinery in Bursa since 1959; Bekamak has built saws since 1990 — CE-certified machines with European components."}})
     return IMAGES

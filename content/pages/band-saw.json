@@ -5,13 +5,13 @@
  "nav_label": "All band saws",
  "artifact_title": "Metal Cutting Band Saws",
  "title": "Metal Cutting Band Saws & Bandsaws for Sale in Canada | NovoTech",
- "meta_description": "Horizontal metal cutting band saws from Ø9″ to 59″: manual, semi-automatic, automatic and double column machines in a premium and a value line, plus a guide.",
+ "meta_description": "Metal cutting band saws from Ø9″ to 87″: manual, semi-automatic, automatic, double column and vertical machines in a premium and a value line, plus a guide.",
  "h1": "Metal cutting band saws",
  "intro": "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga, ON.",
  "hero_points": [
-  "<a href=\"#premium-line\">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)",
+  "<a href=\"#premium-line\">Premium line: Bekamak</a>, Ø9″ to 87″ (230–2200 mm)",
   "<a href=\"#value-line\">Value line: NovoTech</a>, Ø10″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column",
-  "<a href=\"#manual-band-saws-overview\">Manual</a> (Bekamak), <a href=\"#semi-automatic-band-saws-overview\">semi-automatic</a>, <a href=\"#automatic-band-saws-overview\">automatic</a> and <a href=\"#double-column-band-saws-overview\">double-column</a> saws",
+  "<a href=\"#manual-band-saws-overview\">Manual</a> (Bekamak), <a href=\"#semi-automatic-band-saws-overview\">semi-automatic</a>, <a href=\"#automatic-band-saws-overview\">automatic</a>, <a href=\"#double-column-band-saws-overview\">double-column</a> and <a href=\"#vertical-band-saws-overview\">vertical</a> saws",
   "<a href=\"#buying-guide\">Band saw buying guide</a>, blade selection and troubleshooting chart on this page"
  ],
  "hero_image": "bk-hero-auto-350ga",
@@ -104,7 +104,23 @@
     "bekamak-bmso-cs",
     "bekamak-bmso-cgs",
     "bekamak-bmso-xs",
-    "bekamak-bmsy-heavy"
+    "bekamak-bmsy-heavy",
+    "bekamak-gantry-2200xs"
+   ]
+  },
+  {
+   "slug": "vertical-band-saws",
+   "title": "Bekamak vertical band saws",
+   "nav_label": "Vertical",
+   "cat": "vertical",
+   "line": "premium",
+   "image": "bk-bmsy-613vt-3",
+   "blurb": "Vertical blades for plate, blocks and billets: a tilting-frame miter saw, two block saws and an automatic plate saw.",
+   "families": [
+    "bekamak-bmsy-460vg",
+    "bekamak-bmsy-613vt",
+    "bekamak-vb-0814-8",
+    "bekamak-cross-0626vt"
    ]
   },
   {
@@ -180,7 +196,7 @@
   },
   {
    "q": "Band saw or bandsaw — is there a difference?",
-   "a": "No. Bandsaw (one word) and band saw (two words) are the same machine: a continuous toothed steel band running over two wheels. Horizontal metal cutting band saws — the machines on this page — cut bar, tube, profile and plate to length; vertical bandsaws are for contour work and woodworking. Google treats both spellings alike, and so do we."
+   "a": "No. Bandsaw (one word) and band saw (two words) are the same machine: a continuous toothed steel band running over two wheels. Horizontal metal cutting band saws — most of the machines on this page — cut bar, tube, profile and plate to length; <a href=\"vertical-band-saws\">vertical band saws</a> run the blade upright to slice plates and blocks. Google treats both spellings alike, and so do we."
   },
   {
    "q": "How do I choose the size of a band saw?",
@@ -282,7 +298,23 @@
       "bekamak-bmso-cs",
       "bekamak-bmso-cgs",
       "bekamak-bmso-xs",
-      "bekamak-bmsy-heavy"
+      "bekamak-bmsy-heavy",
+      "bekamak-gantry-2200xs"
+     ]
+    },
+    {
+     "slug": "vertical-band-saws",
+     "title": "Bekamak vertical band saws",
+     "nav_label": "Vertical",
+     "cat": "vertical",
+     "line": "premium",
+     "image": "bk-bmsy-613vt-3",
+     "blurb": "Vertical blades for plate, blocks and billets: a tilting-frame miter saw, two block saws and an automatic plate saw.",
+     "families": [
+      "bekamak-bmsy-460vg",
+      "bekamak-bmsy-613vt",
+      "bekamak-vb-0814-8",
+      "bekamak-cross-0626vt"
      ]
     }
    ]

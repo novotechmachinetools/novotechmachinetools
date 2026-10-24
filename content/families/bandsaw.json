@@ -17,6 +17,11 @@
   "bekamak-bmso-cgs",
   "bekamak-bmso-xs",
   "bekamak-bmsy-heavy",
+  "bekamak-gantry-2200xs",
+  "bekamak-bmsy-460vg",
+  "bekamak-bmsy-613vt",
+  "bekamak-vb-0814-8",
+  "bekamak-cross-0626vt",
   "novotech-bs-315gf",
   "novotech-bs-460g",
   "novotech-bs-2114th",
@@ -8841,6 +8846,459 @@
      ]
     }
    ]
+  },
+  "bekamak-gantry-2200xs": {
+   "id": "bekamak-gantry-2200xs",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "GANTRY 2200XS gantry band saw, 87″",
+   "short": "GANTRY 2200XS",
+   "models_label": "GANTRY 2200XS",
+   "summary": "The largest saw Bekamak builds: a gantry-type double-column band saw that takes rounds from Ø20″ to Ø87″ (500–2200 mm) and blocks up to 94-1/2″ × 87″ (2400 × 2200 mm), pieces up to 23 ft (7 m) long and 50,000 kg, and cuts them to length automatically. A 40 HP main motor drives a 3-1/8″ (80 mm) band at 50–260 ft/min, servo motors feed the bow and the material, and the MES production software optimises the cutting speed from sensors on the blade, logs every cut and controls the vises so a cut slab is released without tipping.",
+   "features": [
+    "Ø20″ – Ø87″ (500 – 2200 mm) rounds, 94-1/2″ × 87″ (2400 × 2200 mm) rectangles, up to 23 ft (7 m) and 50,000 kg on the table",
+    "Gantry double-column design; two 4 HP (3 kW) servo motors on the bow feed and two 2.7 HP (2 kW) on the material feed, with a 27-1/2 ft (8.4 m) feed stroke",
+    "40 HP (30 kW) main motor, 3-1/8″ × .063″ (80 × 1.6 mm) band, 50 – 260 ft/min (15 – 80 m/min) stepless",
+    "MES production-management software: cutting speed optimised from blade sensors, machine data monitored and reported",
+    "Safe unloading: the vises hold the cut piece so it cannot tip; hydraulic chip brush, spiral and bottom chip conveyors, coolant radiator"
+   ],
+   "optional": [],
+   "images": [
+    "bk-gantry-2200xs-1"
+   ],
+   "videos": [
+    {
+     "id": "d-fA0iRrYCs",
+     "title": "Biggest dual-column band saw from Bekamak: GANTRY 2200XS",
+     "duration": "PT2M29S",
+     "thumb": "video-d-fA0iRrYCs"
+    },
+    {
+     "id": "vQO2VaY0SPw",
+     "title": "87″ band saw GANTRY 2200XS",
+     "duration": "PT2M29S",
+     "thumb": "video-vQO2VaY0SPw"
+    }
+   ],
+   "headline": "Rounds Ø20″ to Ø87″ (500 – 2200 mm) · blocks 94-1/2″ × 87″ · 23 ft long · 50,000 kg",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "GANTRY 2200XS",
+      "capacity_mm": {
+       "0": {
+        "round": 2200,
+        "rect": [
+         2400,
+         2200
+        ],
+        "square": 2200
+       }
+      },
+      "main_motor_kw": 30,
+      "hydraulic_motor_kw": 11,
+      "coolant_pump_kw": 1.1,
+      "blade_speed_m_min": "15-80",
+      "band_mm": [
+       17940,
+       80,
+       1.6
+      ],
+      "working_height_mm": 935,
+      "weight_kg": 92140,
+      "dims_mm": [
+       15000,
+       9400,
+       6215
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Feed servo motors": "2 × 2.7 HP (2 × 2 kW)",
+       "Bow servo motors": "2 × 4 HP (2 × 3 kW)",
+       "Hydraulic coolant pump": "1,5 kW",
+       "Hydraulic chip-brush pump": "1,5 kW",
+       "Coolant fan": "0,55 kW",
+       "Chip conveyor motor": "0,55 kW",
+       "Spiral chip conveyor": "0,25 kW",
+       "Material feed stroke": "8400 mm",
+       "Material range": "Ø19-3/4″ – 87″ (500 – 2200 mm), up to 23 ft (7 m) long, 110,000 lb (50,000 kg)"
+      },
+      "notes": "",
+      "inch_labels": {
+       "2200": "87″"
+      }
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-460vg": {
+   "id": "bekamak-bmsy-460vg",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "vertical",
+   "subgroup": "semi",
+   "name": "BMSY 460VG semi-automatic double-miter vertical band saw, 18″",
+   "short": "BMSY 460VG",
+   "models_label": "BMSY 460VG",
+   "summary": "A vertical band saw with a tilting frame that swings 60° both ways, so the blade comes down square or at a miter on plate, blocks, beams and large profiles up to 28″ × 18″ (710 × 460 mm). Semi-automatic cycle with a hydraulic vise and automatic return, an inverter for stepless blade speed, hydro-mechanical blade tension and a 5° inclined blade for faster cuts through flats; a frame-rotation motor sets the angle from the panel.",
+   "features": [
+    "Double miter: the tilting frame rotates +60° / −60° under power; angle set on the control panel",
+    "Ø18″ (460 mm) round, 28″ × 18″ (710 × 460 mm) rectangular at 0°",
+    "Semi-automatic cycle: hydraulic vise, controlled cutting pressure, automatic bow return",
+    "Inverter blade speed 50 – 395 ft/min (15 – 120 m/min); 1-1/4″ (34 mm) band; hydro-mechanical blade tension with safety switch",
+    "Linear-way guidance, optical height adjustment, cutting-width adjustment lever, 5° inclined blade, blade brush, coolant pump, heavy-duty gearbox",
+    "Options: servo feeder, chip conveyor, hydraulic top clamping, micro-spray lubrication, laser line pointer"
+   ],
+   "optional": [
+    "Feeder Servo Motor",
+    "Chip Conveyor Motoru",
+    "Hydraulic Top Clamping",
+    "Microspray Device",
+    "Laser Line Pointer"
+   ],
+   "images": [
+    "bk-bmsy-460vg-1",
+    "bk-bmsy-460vg-3",
+    "bk-bmsy-460vg-4",
+    "bk-bmsy-460vg-2",
+    "bk-bmsy-460vg-5",
+    "bk-bmsy-460vg-6"
+   ],
+   "videos": [
+    {
+     "id": "w5-5lcb_gvA",
+     "title": "BMSY 460VG semi-automatic double-mitring tilting-frame vertical band saw",
+     "duration": "PT2M",
+     "thumb": "video-w5-5lcb_gvA"
+    }
+   ],
+   "headline": "Ø18″ (460 mm) round · 28″ × 18″ rectangular · tilting frame ±60°",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 460VG",
+      "capacity_mm": {
+       "0": {
+        "round": 460,
+        "rect": [
+         710,
+         460
+        ],
+        "square": 460
+       },
+       "+30": {
+        "round": 460,
+        "rect": [
+         590,
+         460
+        ],
+        "square": 460
+       },
+       "+45": {
+        "round": 460,
+        "rect": [
+         460,
+         460
+        ],
+        "square": 460
+       },
+       "+60": {
+        "round": 275,
+        "rect": [
+         460,
+         275
+        ],
+        "square": 275
+       },
+       "-30": {
+        "round": 460,
+        "rect": [
+         590,
+         460
+        ],
+        "square": 460
+       },
+       "-45": {
+        "round": 460,
+        "rect": [
+         480,
+         460
+        ],
+        "square": 460
+       },
+       "-60": {
+        "round": 325,
+        "rect": [
+         325,
+         325
+        ],
+        "square": 325
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6000,
+       34,
+       1.1
+      ],
+      "working_height_mm": 1160,
+      "weight_kg": 2800,
+      "dims_mm": [
+       3250,
+       2150,
+       2800
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Frame-rotation motor": "0,37 kW",
+       "Chip conveyor motor": "0,25 kW"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "bekamak-bmsy-613vt": {
+   "id": "bekamak-bmsy-613vt",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "vertical",
+   "subgroup": "semi",
+   "name": "BMSY 613VT vertical plate and block band saw, 23-5/8″",
+   "short": "BMSY 613VT",
+   "models_label": "BMSY 613VT",
+   "summary": "A vertical band saw for slicing rolled blocks and plates lengthwise: the vertical blade travels across the workpiece on a servo-driven cutting feed, so square or flat sections of any size up to 23-5/8″ × 23-5/8″ (600 × 600 mm) and 51″ (1300 mm) long come off a block in one pass. Hydraulic blade tension, planetary reducer and an inverter for stepless blade speed; an optional chip conveyor clears the swarf.",
+   "features": [
+    "23-5/8″ × 23-5/8″ (600 × 600 mm) section, cutting length up to 51″ (1300 mm) — long-cut method for blocks and plates",
+    "Servo cutting feed 0.1 – 999 mm/min on a 2 HP servo motor; 10 HP (7.5 kW) main motor",
+    "2-1/8″ × .063″ (54 × 1.6 mm) band, 50 – 395 ft/min (15 – 120 m/min) inverter blade speed",
+    "Hydraulic blade tension; planetary reducer; coolant pump",
+    "Option: chip conveyor"
+   ],
+   "optional": [
+    "Chip Conveyor"
+   ],
+   "images": [
+    "bk-bmsy-613vt-3",
+    "bk-bmsy-613vt-2",
+    "bk-bmsy-613vt-1",
+    "bk-bmsy-613vt-4",
+    "bk-bmsy-613vt-5"
+   ],
+   "videos": [
+    {
+     "id": "UL2sziRylX4",
+     "title": "613 VT vertical metal cutting band saw",
+     "duration": "PT1M50S",
+     "thumb": "video-UL2sziRylX4"
+    }
+   ],
+   "headline": "23-5/8″ × 23-5/8″ (600 × 600 mm) sections · cuts up to 51″ (1300 mm) long",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSY 613VT",
+      "capacity_mm": {
+       "0": {
+        "rect": [
+         600,
+         600
+        ],
+        "square": 600
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 1.1,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       6185,
+       54,
+       1.6
+      ],
+      "working_height_mm": 1314,
+      "weight_kg": 4470,
+      "dims_mm": [
+       3000,
+       1950,
+       3000
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Cutting-feed servo motor": "1,5 kW",
+       "Servo feed speed": ".004 – 39-3/8 in/min (0.1 – 999 mm/min)",
+       "Chip conveyor motor": "0,25 kW",
+       "Maximum cutting length": "1300 mm",
+       "Weight with chip conveyor": "4720 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "bekamak-vb-0814-8": {
+   "id": "bekamak-vb-0814-8",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "vertical",
+   "subgroup": "semi",
+   "name": "VB 0814-8 vertical block-cutting band saw, 32″ × 55″",
+   "short": "VB 0814-8",
+   "models_label": "VB 0814-8",
+   "summary": "A block-cutting machine for forging shops and steel service centres: blocks up to 32″ high and 55″ wide (820 × 1400 mm) weighing up to 40,000 kg sit on the table and the vertical blade slices them from the length, up to 26 ft (8 m) of cutting travel, each cut to length with high precision. A 20 HP main motor drives a 2-5/8″ (67 mm) band, and the MES production software optimises the cutting speed from blade sensors and reports the machine's working data.",
+   "features": [
+    "32″ × 55″ (820 × 1400 mm) block section; maximum cutting length 26 ft (8000 mm)",
+    "Table rated 40,000 kg; outer table 79″ (2000 mm), inner table 55″ (1400 mm)",
+    "20 HP (15 kW) main motor, 10 HP hydraulic unit; 2-5/8″ × .063″ (67 × 1.6 mm) band at 50 – 395 ft/min",
+    "MES production-management software: speed optimisation from blade sensors, monitoring and reporting",
+    "Chip conveyor and coolant system"
+   ],
+   "optional": [],
+   "images": [
+    "bk-vb-0814-8-1",
+    "bk-vb-0814-8-2"
+   ],
+   "videos": [
+    {
+     "id": "qGbmGP5CwRE",
+     "title": "32″ × 55″ vertical metal cutting band saw — plate sawing machine VB 0814-8",
+     "duration": "PT1M21S",
+     "thumb": "video-qGbmGP5CwRE"
+    }
+   ],
+   "headline": "Blocks 32″ × 55″ (820 × 1400 mm) · cutting length to 26 ft (8 m) · 40,000 kg",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "VB 0814-8",
+      "capacity_mm": {
+       "0": {
+        "rect": [
+         1400,
+         820
+        ]
+       }
+      },
+      "main_motor_kw": 15,
+      "hydraulic_motor_kw": 7.5,
+      "coolant_pump_kw": 0.2,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       8930,
+       67,
+       1.6
+      ],
+      "working_height_mm": 1785,
+      "weight_kg": 51000,
+      "dims_mm": [
+       12700,
+       4850,
+       4100
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Chip conveyor motor": "0,25 kW",
+       "Maximum cutting length": "8000 mm",
+       "Outer table": "2000 mm",
+       "Inner table": "1400 mm",
+       "Block weight on the table": "40,000 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "bekamak-cross-0626vt": {
+   "id": "bekamak-cross-0626vt",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "vertical",
+   "subgroup": "auto",
+   "name": "CROSS 0626VT fully automatic vertical plate band saw, 23-5/8″ × 102″",
+   "short": "CROSS 0626VT",
+   "models_label": "CROSS 0626VT",
+   "summary": "A fully automated plate band saw: the vertical blade moves parallel to the table and an automatic feed positions billets, plates and flat material up to 23-5/8″ thick and 102″ wide (600 × 2600 mm) for each cut. Built for hard-to-cut stock — tool steels, titanium, Hastelloy and Inconel — with a 10 HP main motor, 2-1/8″ (54 mm) band and hydraulic vises over the full 102″ width.",
+   "features": [
+    "23-5/8″ × 102″ (600 × 2600 mm) plate and billet capacity; vise capacity 15-3/4″ × 102″ (400 × 2600 mm)",
+    "Fully automatic: feeder motor and servo positioning, programmed lengths, minimum cut 3/4″ (20 mm) — 1-3/16″ (30 mm) in automatic mode",
+    "10 HP (7.5 kW) main motor; 2-1/8″ × .063″ (54 × 1.6 mm) band at 50 – 245 ft/min (15 – 75 m/min)",
+    "For tool steel, titanium, Hastelloy and Inconel; chip brush and chip conveyor; 1.5 HP coolant pump"
+   ],
+   "optional": [],
+   "images": [
+    "bk-cross-0626vt-1",
+    "bk-cross-0626vt-2",
+    "bk-cross-0626vt-3",
+    "bk-cross-0626vt-4",
+    "bk-cross-0626vt-5",
+    "bk-cross-0626vt-6",
+    "bk-cross-0626vt-7"
+   ],
+   "videos": [
+    {
+     "id": "SfTZWsSaZNU",
+     "title": "102″ × 23″ fully automatic vertical band saw machine CROSS 0626VT",
+     "duration": "PT54S",
+     "thumb": "video-SfTZWsSaZNU"
+    }
+   ],
+   "headline": "Plates and billets 23-5/8″ × 102″ (600 × 2600 mm) · automatic feed",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "CROSS 0626VT",
+      "capacity_mm": {
+       "0": {
+        "rect": [
+         2600,
+         600
+        ],
+        "square": 400
+       }
+      },
+      "main_motor_kw": 7.5,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 1.1,
+      "blade_speed_m_min": "15-75",
+      "band_mm": [
+       12035,
+       54,
+       1.6
+      ],
+      "working_height_mm": 1876,
+      "weight_kg": 33500,
+      "dims_mm": [
+       5920,
+       9972,
+       3870
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Feeder motor": "2 kW",
+       "Feed servo motor": "2 kW",
+       "Chip brush motor": "0,18 kW",
+       "Chip conveyor motor": "0,25 kW",
+       "Vise capacity": "400 × 2600 mm",
+       "Minimum cutting length": "20 mm (30 mm automatic)"
+      },
+      "notes": ""
+     }
+    ]
+   }
   },
   "novotech-bs-315gf": {
    "id": "novotech-bs-315gf",

@@ -67,7 +67,7 @@
     {% endif %}
     <h2 id="{{ g.id }}-title">{{ g.title }}</h2>
     {% if g.lead %}<p class="group-lead">{{ g.lead }}</p>{% endif %}
-    {% if g.brand %}<p class="group-tagline">{{ site.brands[g.brand].tagline }}</p>{% endif %}
+    {% if g.brand %}<p class="group-tagline">{{ g.tagline or site.brands[g.brand].tagline }}</p>{% endif %}
   </header>
 
   {% for f in g.families %}

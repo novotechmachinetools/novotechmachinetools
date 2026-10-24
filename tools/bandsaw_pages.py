@@ -16,9 +16,9 @@ PLAYLIST = "https://www.youtube.com/playlist?list=PLgtouQi-TePvLZjD0XkwpvL2pX1sA
 GUIDE = {"href": "band-saw.html#buying-guide", "label": "Band saw buying guide: sizes, feeds, blades and troubleshooting"}
 CRUMB_BASE = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href": "products.html"}, {"label": "Metal cutting band saws", "href": "band-saw.html"}]
 
-CATS = ["manual", "semi-automatic", "automatic", "double-column"]
-CAT_TITLE = {"manual": "Manual band saws", "semi-automatic": "Semi-automatic band saws", "automatic": "Automatic band saws", "double-column": "Double-column band saws"}
-CAT_SHORT = {"manual": "Manual", "semi-automatic": "Semi-automatic", "automatic": "Automatic", "double-column": "Double-column"}
+CATS = ["manual", "semi-automatic", "automatic", "double-column", "vertical"]
+CAT_TITLE = {"manual": "Manual band saws", "semi-automatic": "Semi-automatic band saws", "automatic": "Automatic band saws", "double-column": "Double-column band saws", "vertical": "Vertical band saws"}
+CAT_SHORT = {"manual": "Manual", "semi-automatic": "Semi-automatic", "automatic": "Automatic", "double-column": "Double-column", "vertical": "Vertical"}
 
 
 FACTORY_VIDEO = {"id": "6xEVXrP8h3k", "title": "Bekamak corporate introduction video", "thumb": "video-6xEVXrP8h3k", "duration": "PT3M4S"}
@@ -85,19 +85,39 @@ BK = {
         ]),
     "double-column": dict(
         title="Double Column Band Saws — Heavy-Duty Industrial Bandsaws | NovoTech",
-        meta="Heavy-duty double column band saws from Ø13″ to 59″ (330–1500 mm): BMSY C semi-automatics, CGH / DG NC miter saws, BMSO CS / CGS servo saws and the XS line.",
+        meta="Heavy-duty double column band saws from Ø13″ to 87″ (330–2200 mm): BMSY C semi-automatics, CGH / DG NC miter saws, BMSO CS / CGS servo saws, the XS line and the GANTRY 2200XS.",
         h1="Bekamak double-column band saws",
-        intro="For heavy bar, billets, beams and bundles the bow runs between two hardened columns instead of pivoting, so the blade enters the material squarely and stays square through the cut. Bekamak builds semi-automatic and fully automatic versions, miter heads to 60°, servo feeding with NC job lists and the enclosed high-tech XS production saws — from Ø13″ to 59″ (330–1500 mm).",
-        points=["Twin-column guidance for square cuts in heavy stock", "Semi-automatic, roller-feed and servo-feed NC models", "Round capacities from Ø13″ (330 mm) to 59″ (1500 mm)"],
+        intro="For heavy bar, billets, beams and bundles the bow runs between two hardened columns instead of pivoting, so the blade enters the material squarely and stays square through the cut. Bekamak builds semi-automatic and fully automatic versions, miter heads to 60°, servo feeding with NC job lists, the enclosed high-tech XS production saws and the gantry-type GANTRY 2200XS — from Ø13″ to Ø87″ (330–2200 mm).",
+        points=["Twin-column guidance for square cuts in heavy stock", "Semi-automatic, roller-feed and servo-feed NC models", "Round capacities from Ø13″ (330 mm) to Ø87″ (2200 mm) — the GANTRY 2200XS for 50,000 kg pieces"],
         hero="bk-hero-dc-570cs", minis=["bk-bmsy-460c-1-cut", "bk-bmso-570xs-1-cut"],
         lead="From the BMSY C semi-automatics to servo-feed CS NC production saws and the enclosed XS line.",
         video=FACTORY_VIDEO,
         video_text="A tour of the Bekamak plant in Turkey, where the premium-line band saws on this page are engineered and built.",
         faq=[
-            {"q": "Why choose a double-column saw over a pivot saw?", "a": "Rigidity and capacity. The bow is guided on two columns, so there is no side load on the blade — cuts stay square in large solids and the blade lasts longer. Double-column saws also reach capacities a pivot bow cannot: 330 mm up to 1500 mm on the Bekamak range."},
+            {"q": "Why choose a double-column saw over a pivot saw?", "a": "Rigidity and capacity. The bow is guided on two columns, so there is no side load on the blade — cuts stay square in large solids and the blade lasts longer. Double-column saws also reach capacities a pivot bow cannot: Ø13″ (330 mm) up to Ø87″ (2200 mm) on the Bekamak range, with the GANTRY 2200XS at the top."},
             {"q": "Can a double-column saw cut miters?", "a": "Yes — the BMSY CGH (single miter) and BMSY DG NC (double miter) swivel the whole bow assembly up to 60° under hydraulic or NC control, and the automatic CGS/CDGS NC models do the same with servo feeding."},
             {"q": "What is a split vise (SV)?", "a": "The SV versions of the BMSY C saws have a second vise jaw close to the blade, so short pieces and remnants are clamped on both sides of the cut — useful for cutting slices from blocks and billets."},
             {"q": "What is the XS line?", "a": "Bekamak's high-tech production saws: servo-driven bow feed and material feed, full enclosure and CNC control, designed for carbide blades, the fastest cycle times and unattended running."},
+            {"q": "How big is the GANTRY 2200XS?", "a": "It cuts rounds from Ø20″ to Ø87″ (500–2200 mm) and blocks up to 94-1/2″ × 87″, pieces up to 23 ft (7 m) long and 50,000 kg, on a gantry frame 49 ft long — a saw for forges, steel mills and service centres that cut ingots and large billets. Servo bow and material feed, a 40 HP main motor and MES production software are standard."},
+        ]),
+    "vertical": dict(
+        title="Vertical Band Saws for Metal — Plate & Block Saws | NovoTech",
+        meta="Bekamak vertical band saws for metal cutting: the tilting-frame BMSY 460VG, the BMSY 613VT and VB 0814-8 block saws and the fully automatic CROSS 0626VT plate saw.",
+        h1="Bekamak vertical band saws",
+        intro="A vertical band saw for metal cutting runs the blade vertically through the workpiece instead of swinging a bow down onto it, so plates, blocks and billets can be sliced along their length or cross-cut flat on a table. Bekamak builds four: the BMSY 460VG, a semi-automatic saw whose frame tilts 60° both ways for miter cuts in Ø18″ stock; the BMSY 613VT, which slices 23-5/8″ × 23-5/8″ sections up to 51″ long from blocks and plates on a servo cutting feed; the VB 0814-8 block-cutting machine for 32″ × 55″ blocks of 40,000 kg over a 26 ft cut; and the fully automatic CROSS 0626VT, which feeds and cuts plates up to 23-5/8″ × 102″ in tool steel, titanium and Inconel. CSA-approved panels, parts and support from Mississauga, ON.",
+        points=["Semi-automatic: BMSY 460VG tilting-frame miter saw, BMSY 613VT and VB 0814-8 block saws", "Fully automatic: CROSS 0626VT plate saw with automatic feed, 23-5/8″ × 102″", "Sections from Ø18″ (460 mm) to 32″ × 55″ blocks and 102″ wide plate"],
+        hero="bk-bmsy-613vt-3", minis=["bk-bmsy-460vg-1", "bk-cross-0626vt-1"],
+        lead="Vertical blades for plate, blocks and billets: a tilting-frame miter saw, two block saws and an automatic plate saw.",
+        subgroups=[("semi", "Bekamak semi-automatic vertical band saws", "The operator loads and clamps; the saw cuts on a controlled feed and stops — the BMSY 460VG with its tilting frame, the BMSY 613VT block saw and the VB 0814-8 block-cutting machine."),
+                   ("auto", "Bekamak fully automatic vertical band saws", "Automatic feeding and cutting from a program: the CROSS 0626VT plate saw.")],
+        video=FACTORY_VIDEO,
+        video_text="A tour of the Bekamak plant in Turkey, where the premium-line band saws on this page are engineered and built.",
+        faq=[
+            {"q": "When is a vertical band saw better than a horizontal one?", "a": "When the workpiece is a plate, slab or block rather than a bar: a horizontal saw clamps a bar and drops the bow through it, while a vertical saw passes the blade along a workpiece lying flat on a table — slicing a block into plates, trimming a slab or cutting a long plate to width. Tool steel, titanium and nickel alloys are usually cut this way."},
+            {"q": "What does the BMSY 460VG cut?", "a": "Round, square and rectangular stock up to Ø18″ / 28″ × 18″ (460 / 710 × 460 mm), straight or at a miter: the whole frame tilts up to 60° to either side under power, with the hydraulic vise and automatic return of a semi-automatic saw."},
+            {"q": "How long a cut can the block saws make?", "a": "The BMSY 613VT travels 51″ (1300 mm) along a 23-5/8″ × 23-5/8″ block; the VB 0814-8 has 26 ft (8 m) of cutting travel on a table rated 40,000 kg for blocks up to 32″ × 55″ (820 × 1400 mm)."},
+            {"q": "What is automatic on the CROSS 0626VT?", "a": "Feeding and cutting: a feeder and servo positioning move the plate to the programmed length for each cut, the vises clamp across the full 102″ (2600 mm) width and the blade cuts, piece after piece, down to a minimum cut of 1-3/16″ (30 mm) in automatic mode."},
+            VOLT_FAQ,
         ]),
 }
 
@@ -153,7 +173,8 @@ KW = {
     "manual": " Searching for a manual metal bandsaw, a gravity-feed horizontal band saw for metal or a small band saw machine for the shop? These are the ones NovoTech stocks and supports.",
     "semi-automatic": " If you are looking for a semi-automatic metal bandsaw, a hydraulic horizontal band saw for metal or an industrial band saw machine with a hydraulic vise, this is the page.",
     "automatic": " For buyers searching for an automatic metal cutting bandsaw, a CNC band saw machine or an industrial horizontal band saw for metal with automatic feeding, these are the models NovoTech sells and supports in Canada.",
-    "double-column": " Known as double column, twin-column or dual column metal bandsaws, these horizontal band saw machines are the industrial choice for heavy solids, bundles and plate."
+    "double-column": " Known as double column, twin-column or dual column metal bandsaws, these horizontal band saw machines are the industrial choice for heavy solids, bundles and plate.",
+    "vertical": " If you are looking for a vertical band saw for metal cutting, a vertical bandsaw for plate and blocks or a vertical metal cutting band saw with automatic feed, these are the machines NovoTech sells and supports in Canada.",
 }
 
 ORIGIN = {
@@ -179,6 +200,7 @@ SLUGS = {
     ("bekamak", "semi-automatic"): "semi-automatic-band-saws",
     ("bekamak", "automatic"): "automatic-band-saws",
     ("bekamak", "double-column"): "double-column-band-saws",
+    ("bekamak", "vertical"): "vertical-band-saws",
     ("novotech", "semi-automatic"): "affordable-semi-automatic-band-saws",
     ("novotech", "automatic"): "automatic-feed-band-saws",
     ("novotech", "double-column"): "twin-column-band-saws",
@@ -209,7 +231,7 @@ def page(brand, cat, spec):
         "faq": spec["faq"],
         "related_article": GUIDE,
         "youtube_playlist": PLAYLIST,
-        "related_pages": [{"href": "cold-saw-carbide-saw-cutting.html", "label": "Circular cold saws"}],
+        "related_pages": [{"href": "circular-cold-saws.html", "label": "Cold saws — circular, carbide and automatic"}],
     }
     if spec.get("video"):
         p["intro_video"] = spec["video"]
@@ -219,7 +241,7 @@ def page(brand, cat, spec):
 
 
 def main():
-    for old in ("manual-band-saws", "semi-automatic-band-saws", "automatic-band-saws", "double-column-band-saws",
+    for old in ("manual-band-saws", "semi-automatic-band-saws", "automatic-band-saws", "double-column-band-saws", "vertical-band-saws",
                 "affordable-semi-automatic-band-saws", "automatic-feed-band-saws", "twin-column-band-saws"):
         fp = os.path.join(PAGES, old + ".json")
         if os.path.exists(fp):
@@ -245,13 +267,13 @@ def main():
     h["lines"] = lines
     h["subpages"] = [sp for ln in lines for sp in ln["subpages"]]
     h["title"] = "Metal Cutting Band Saws & Bandsaws for Sale in Canada | NovoTech"
-    h["meta_description"] = "Horizontal metal cutting band saws from Ø9″ to 59″: manual, semi-automatic, automatic and double column machines in a premium and a value line, plus a guide."
+    h["meta_description"] = "Metal cutting band saws from Ø9″ to 87″: manual, semi-automatic, automatic, double column and vertical machines in a premium and a value line, plus a guide."
     h["intro"] = "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga, ON."
     h["hero_image"] = "bk-hero-auto-350ga"
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-bs315gf-1"]
-    h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)',
+    h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 87″ (230–2200 mm)',
                         '<a href="#value-line">Value line: NovoTech</a>, Ø10″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column',
-                        '<a href="#manual-band-saws-overview">Manual</a> (Bekamak), <a href="#semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#automatic-band-saws-overview">automatic</a> and <a href="#double-column-band-saws-overview">double-column</a> saws',
+                        '<a href="#manual-band-saws-overview">Manual</a> (Bekamak), <a href="#semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#automatic-band-saws-overview">automatic</a>, <a href="#double-column-band-saws-overview">double-column</a> and <a href="#vertical-band-saws-overview">vertical</a> saws',
                         '<a href="#buying-guide">Band saw buying guide</a>, blade selection and troubleshooting chart on this page']
     h["catalogue_pdfs"] = [PDF_BK, PDF_NF]
     h["range_lead"] = "Capacity at 0° for every model, one table per line. Each row links to the full specification table with miter capacities, blade sizes, motors and dimensions."

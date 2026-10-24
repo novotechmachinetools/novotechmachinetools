@@ -33,6 +33,8 @@ RedirectMatch 301 ^/(novofab|novotech)-semi-automatic-band-saws(\.html)?$ /affor
 RedirectMatch 301 ^/(novofab|novotech)-automatic-band-saws(\.html)?$ /automatic-feed-band-saws
 RedirectMatch 301 ^/(novofab|novotech)-double-column-band-saws(\.html)?$ /twin-column-band-saws
 RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
+# the old automatic cold saw page (Bekamak BMDO) now lives on the cold saw page, below the İşitan circular saws
+RedirectMatch 301 ^/cold-saw-carbide-saw-cutting(\.html)?$ /circular-cold-saws#bekamak-circular-group
 
 # Old-site PDF brochures that earn search traffic (Search Console, Jun 2025 – Oct 2026) → the rebuilt page or the new catalogue.
 # PDFs of product lines not rebuilt yet stay where they are on the host until their pages exist.

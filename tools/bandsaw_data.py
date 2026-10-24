@@ -3,6 +3,11 @@
 and register the website photos in tools/image_map.json (section "bandsaw").
 
     python3 -I tools/bandsaw_data.py
+
+CAUTION (Oct 2026): this is the FIRST pass only.  content/families/bandsaw.json has since been enriched by
+tools/bekamak_specs.py, bekamak_features.py, bekamak_details.py, bekamak_fix_claims.py, bekamak_extra_apply.py
+(gantry + vertical saws) and value_line_data.py — re-running this script wipes all of that.  Add or fix
+Bekamak families with tools/bekamak_extra_apply.py instead.
 """
 import json, os, re, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,7 +46,9 @@ FAMILIES = [
  dict(id="bekamak-bms-dg", group="manual", name="BMS DG manual double-miter band saws", short="BMS manual saws",
       models=["BMS 230DG", "BMS 270DG"],
       summary="Gravity-feed pivot band saws for the maintenance shop and light fabrication: the operator swings the bow, a hydraulic cylinder controls the descent and the head swivels both ways for miter cuts up to 60°. Two-speed motor, mechanical blade tensioner with microswitch, electric coolant system.",
-      features=["Bow swivels left and right: miter cuts to +60° / −45°", "Hydraulic cylinder for controlled, adjustable descent", "Variable blade speed: two-speed motor on the BMS 230DG (inverter optional), stepless 15–120 m/min inverter standard on the BMS 270DG", "Manual vise with quick-approach; cutting-length stop", "Safety switches on the wheel cover and blade guard", "Electric coolant pump and blade brush", "Options: 10 ft (3 m) roller table, micro-spray lubrication"],
+      features=["Bow swivels left and right: miter cuts to +60° / −45°", "Hydraulic cylinder for controlled, adjustable descent", "Variable blade speed: two-speed motor on the BMS 230DG (inverter optional), stepless 15–120 m/min inverter standard on the BMS 270DG", "Manual vise with quick-approach; cutting-length stop", "Safety switches on the wheel cover and blade guard", "Electric coolant pump and blade brush", "Options: 10 ft (3 m) roller table, micro-spray lubrication"]),
+ dict(id="bekamak-bmsy-dgh", group="semi-automatic", name="BMSY DG / DGH semi-automatic dual-miter band saws", short="BMSY DG/DGH dual-miter",
+      models=["BMSY 230DG", "BMSY 230DGH", "BMSY 270DG", "BMSY 270DGH", "BMSY 320DGH", "BMSY 360DGH", "BMSY 360DGH ECO", "BMSY 440DGH"],
       summary="The most popular Bekamak pivot saws: automatic bow lift after every cut, with the head swivelling both ways for miters — right to 60°, left to 45°. DGH versions have a hydraulic vise; the DG versions clamp by hand. Sizes from Ø9″ (230 mm) to Ø17-3/8″ (440 mm).",
       features=["Semi-automatic cycle: the bow descends at the set feed and returns after the cut; hydraulic vise on the DGH models (manual vise on the 230DG / 270DG)", "Double miter: +60° right and −45° left, head swung by hand on the angle scale", "Inverter drive for stepless blade speed 15–120 m/min (standard from the 270 up; optional on the 230DG / 230DGH)", "Hydro-mechanical blade tension with safety switch; blade brush; coolant pump", "Bow height-adjustment switch; cutting-pressure control on the 440DGH", "Heavy-duty gearbox from the 270 up; control panel", "Options: 10 ft (3 m) roller table, micro-spray lubrication; hydraulic top clamp, laser line pointer and motorized roller table on the 440DGH"]),
  dict(id="bekamak-bmsy-g", group="semi-automatic", name="BMSY 320G / 320GL semi-automatic single-miter band saws", short="BMSY 320G/GL",
