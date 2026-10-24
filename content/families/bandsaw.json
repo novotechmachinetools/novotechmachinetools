@@ -20,8 +20,8 @@
   "novotech-bs-315gf",
   "novotech-bs-460g",
   "novotech-bs-2114th",
-  "novotech-bs-5030",
   "novotech-bs-650ga",
+  "novotech-bs-5030",
   "novotech-bs300x370",
   "novotech-bs-5040",
   "novotech-bs-460gb",
@@ -9193,75 +9193,6 @@
     ]
    }
   },
-  "novotech-bs-5030": {
-   "id": "novotech-bs-5030",
-   "brand": "novotech",
-   "line": "value",
-   "group": "semi-automatic",
-   "name": "BS-5030 single-column band saw with touch screen",
-   "short": "BS-5030",
-   "models_label": "BS-5030",
-   "summary": "A single-column saw for straight cuts up to Ø11-3/4″ / 19-3/4″ × 11-3/4″ with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the BS-5040.",
-   "features": [
-    "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
-    "PLC control with graphical finger-touch screen; work light",
-    "Hydraulic jaw clamping vise, variable hydraulic down-feed",
-    "Blade overload protection; bearing + carbide double guides",
-    "Four blade speeds, 4 HP (3 kW) motor, 1-3/8″ × 0.043″ × 164-1/2″ blade"
-   ],
-   "optional": [
-    "Roller stands",
-    "Automatic feeding — see BS-5040"
-   ],
-   "images": [
-    "nt-h12sc-1",
-    "nt-h12sc-2",
-    "nt-h12sc-3",
-    "nt-h12sc-4"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "bandsaw",
-    "voltage": "600 V 3-phase (208/240/480 V on request)",
-    "models": [
-     {
-      "name": "BS-5030",
-      "capacity_mm": {
-       "0": {
-        "round": 300,
-        "rect": [
-         500,
-         300
-        ],
-        "square": null
-       }
-      },
-      "main_motor_kw": 3.0,
-      "hydraulic_motor_kw": null,
-      "coolant_pump_kw": null,
-      "blade_speed_m_min": "30/50/75/90",
-      "band_mm": [
-       4180,
-       34,
-       1.1
-      ],
-      "working_height_mm": null,
-      "weight_kg": 1085,
-      "dims_mm": null,
-      "feed_length_mm": null,
-      "other": {
-       "Vise": "Hydraulic jaw",
-       "Control": "PLC, touch screen",
-       "Max. hydraulic pressure": "2.2 MPa",
-       "Drive": "V-belt, 4 speeds",
-       "Packing size": "2270 × 1320 × 1710 mm",
-       "Gross weight": "1175 kg"
-      },
-      "notes": ""
-     }
-    ]
-   }
-  },
   "novotech-bs-650ga": {
    "id": "novotech-bs-650ga",
    "brand": "novotech",
@@ -9346,6 +9277,75 @@
        "Control panel": "Movable",
        "Packing size": "2950 × 1480 × 2120 mm",
        "Gross weight": "1880 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novotech-bs-5030": {
+   "id": "novotech-bs-5030",
+   "brand": "novotech",
+   "line": "value",
+   "group": "semi-automatic",
+   "name": "BS-5030 single-column band saw with touch screen",
+   "short": "BS-5030",
+   "models_label": "BS-5030",
+   "summary": "A single-column saw for straight cuts up to Ø11-3/4″ / 19-3/4″ × 11-3/4″ with a PLC and finger-touch screen, hydraulic jaw vise, variable hydraulic down-feed and blade overload protection. The column guides the bow vertically for square, repeatable cuts; bearing and carbide double guides extend blade life. Ideal as a production saw for bar and plate where a feeder is not needed — its automatic sister is the BS-5040.",
+   "features": [
+    "Ø11-3/4″ (300 mm) round / 19-3/4″ × 11-3/4″ rectangular (straight cut)",
+    "PLC control with graphical finger-touch screen; work light",
+    "Hydraulic jaw clamping vise, variable hydraulic down-feed",
+    "Blade overload protection; bearing + carbide double guides",
+    "Four blade speeds, 4 HP (3 kW) motor, 1-3/8″ × 0.043″ × 164-1/2″ blade"
+   ],
+   "optional": [
+    "Roller stands",
+    "Automatic feeding — see BS-5040"
+   ],
+   "images": [
+    "nt-h12sc-1",
+    "nt-h12sc-2",
+    "nt-h12sc-3",
+    "nt-h12sc-4"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "BS-5030",
+      "capacity_mm": {
+       "0": {
+        "round": 300,
+        "rect": [
+         500,
+         300
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "30/50/75/90",
+      "band_mm": [
+       4180,
+       34,
+       1.1
+      ],
+      "working_height_mm": null,
+      "weight_kg": 1085,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Vise": "Hydraulic jaw",
+       "Control": "PLC, touch screen",
+       "Max. hydraulic pressure": "2.2 MPa",
+       "Drive": "V-belt, 4 speeds",
+       "Packing size": "2270 × 1320 × 1710 mm",
+       "Gross weight": "1175 kg"
       },
       "notes": ""
      }
