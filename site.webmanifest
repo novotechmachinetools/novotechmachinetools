@@ -1,0 +1,12 @@
+{
+  "name": "NovoTech Machine Tools",
+  "short_name": "NovoTech",
+  "icons": [
+    {"src": "img/site/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "img/site/icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#2D2E30",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "start_url": "/"
+}
