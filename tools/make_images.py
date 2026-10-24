@@ -1,17 +1,24 @@
 """Build optimized WebP product images for the site from source photos.
 
-Usage: python3 tools/make_images.py [--only key,key]
+Usage: python3 tools/make_images.py [--only key,key] [--engine birefnet|threshold]
 Reads tools/image_map.json: { "<out-name>": {"src": "<path>", "alt": "...", "trim": true/false,
-                                             "cutout": true/false (optional override)} }
+                                             "cutout": true/false (optional override),
+                                             "orig": "<original photo>"  (cut it out again from this, ignoring a hand-made src),
+                                             "cut_size": 1024|1280, "cut_spec": "tools/cutout-specs/x.json", "upscale": 1.5} }
 Writes src/img/<section>/<out-name>-{1200,800,480}.webp (only sizes <= source width, always at least one)
 and tools/image_manifest.json with the real dimensions of each variant (used by the templates).
 
 House rule (docs/images.md): a product photo shot on a white studio background is never shown as a
 white rectangle on a coloured surface.  Every such photo is cut out automatically here (transparent
 WebP, floor shadow kept translucent) so the machine sits directly on the card / gallery background.
-Photos of real scenes (factory floor, showroom renders) stay rectangular unless a cut-out PNG is
-supplied as the source (tools/rembg_cutout.py makes those).  "cutout": true/false in image_map.json
-forces or prevents the automatic cut-out for one photo.
+Photos of real scenes (factory floor, showroom renders) stay rectangular unless "cutout": true is set or a
+cut-out PNG is supplied as the source.  "cutout": true/false in image_map.json forces or prevents the cut-out.
+
+Cut-out engine: BiRefNet (tools/birefnet_cut.py, cached in tools/cache/birefnet/) is the default — it keeps
+hoses, handles, white covers on white and clears neighbouring machines, walls and pallets; the old white-threshold
+cut (tools/cutout2.py) is kept as --engine threshold or "cutout": "threshold" per photo (fast, keeps the floor
+shadow of studio renders).  A photo with "orig" is cut again from that original every time, so hand-made
+cut-out PNGs are superseded without editing the map.
 """
 import json, os, sys
 from PIL import Image, ImageOps
@@ -26,6 +33,9 @@ from cutout2 import auto_cutout, cutout, is_white_background  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP = json.load(open(os.path.join(ROOT, "tools", "image_map.json")))
 SIZES = [1200, 800, 480]
+ENGINE = os.environ.get("CUTOUT_ENGINE", "birefnet")
+if "--engine" in sys.argv:
+    ENGINE = sys.argv[sys.argv.index("--engine") + 1]
 only = None
 if "--only" in sys.argv:
     only = set(sys.argv[sys.argv.index("--only")+1].split(","))
@@ -64,10 +74,17 @@ def trim_alpha(im, pad=12):
     l = max(0, l - pad); t = max(0, t - pad); r = min(im.width, r + pad); b = min(im.height, b + pad)
     return im.crop((l, t, r, b))
 
+def birefnet_cut(im, name, spec):
+    from birefnet_cut import cut_rgba  # noqa: E402  (torch import is slow; only when needed)
+    cs = spec.get("cut_spec")
+    cspec = json.load(open(os.path.join(ROOT, cs))) if cs else None
+    return cut_rgba(im, str(spec.get("cut_size", 1024)), spec=cspec, cache_key=name)
+
+
 for name, spec in MAP.items():
     if only and name not in only:
         continue
-    src = spec["src"]
+    src = spec.get("orig") if (spec.get("orig") and ENGINE == "birefnet") else spec["src"]
     if not os.path.isabs(src):
         src = os.path.join(ROOT, src)
     im = Image.open(src)
@@ -91,8 +108,12 @@ for name, spec in MAP.items():
         white, level = is_white_background(im)
         if want is not None:
             white = bool(want)
-        if white:
-            if spec.get("cut_params"):          # hand-set thresholds for a photo the auto pass gets wrong (floor glow, cream covers)
+        engine = spec.get("cutout") if spec.get("cutout") in ("birefnet", "threshold") else ENGINE
+        if white or spec.get("orig"):
+            if engine == "birefnet":
+                im = trim_alpha(birefnet_cut(im, name, spec))
+                cut = "birefnet"
+            elif spec.get("cut_params"):        # hand-set thresholds for a photo the auto pass gets wrong (floor glow, cream covers)
                 im = trim_alpha(cutout(im, **spec["cut_params"]))
                 cut = "params"
             else:
@@ -101,6 +122,8 @@ for name, spec in MAP.items():
             has_alpha = True
         elif spec.get("trim_white", True):
             im = trim_white(im)
+    if spec.get("upscale") and has_alpha:       # page heroes: a 1.5x Lanczos upscale so the 1200 px variant exists
+        f = float(spec["upscale"]); im = im.resize((round(im.width * f), round(im.height * f)), Image.LANCZOS)
     outdir = os.path.join(ROOT, "src", "img", section)
     os.makedirs(outdir, exist_ok=True)
     variants = []

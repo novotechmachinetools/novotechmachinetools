@@ -37600,114 +37600,119 @@
   "variants": [
    {
     "w": 1200,
-    "h": 1329,
+    "h": 1336,
     "file": "img/bandsaw/nt-bs315gf-hero-1200.webp",
-    "bytes": 150744
+    "bytes": 173428
    },
    {
     "w": 800,
-    "h": 886,
+    "h": 891,
     "file": "img/bandsaw/nt-bs315gf-hero-800.webp",
-    "bytes": 88226
+    "bytes": 104508
    },
    {
     "w": 480,
-    "h": 531,
+    "h": 535,
     "file": "img/bandsaw/nt-bs315gf-hero-480.webp",
-    "bytes": 44620
+    "bytes": 53268
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 145,
+   "w": 144,
    "h": 160,
    "file": "img/bandsaw/nt-bs315gf-hero-thumb.webp",
-   "bytes": 7736
-  }
+   "bytes": 8872
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-1": {
   "alt": "NovoTech BS-315GF 10\u2033 full-hydraulic double-miter band saw \u2014 front view with control panel",
   "variants": [
    {
     "w": 800,
-    "h": 886,
+    "h": 891,
     "file": "img/bandsaw/nt-bs315gf-1-800.webp",
-    "bytes": 79660
+    "bytes": 103448
    },
    {
     "w": 480,
-    "h": 531,
+    "h": 535,
     "file": "img/bandsaw/nt-bs315gf-1-480.webp",
-    "bytes": 42566
+    "bytes": 53082
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 145,
+   "w": 144,
    "h": 160,
    "file": "img/bandsaw/nt-bs315gf-1-thumb.webp",
-   "bytes": 7682
-  }
+   "bytes": 8890
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-2": {
   "alt": "BS-315GF \u2014 front view: hydraulic vise, swivel bow and saw-frame lock lever",
   "variants": [
    {
     "w": 800,
-    "h": 676,
+    "h": 748,
     "file": "img/bandsaw/nt-bs315gf-2-800.webp",
-    "bytes": 62352
+    "bytes": 96988
    },
    {
     "w": 480,
-    "h": 406,
+    "h": 449,
     "file": "img/bandsaw/nt-bs315gf-2-480.webp",
-    "bytes": 33678
+    "bytes": 50190
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 135,
+   "h": 150,
    "file": "img/bandsaw/nt-bs315gf-2-thumb.webp",
-   "bytes": 7162
-  }
+   "bytes": 10104
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-3": {
   "alt": "BS-315GF \u2014 operator side: control panel, feed-rate valve and blade-tension handwheel",
   "variants": [
    {
     "w": 480,
-    "h": 725,
+    "h": 739,
     "file": "img/bandsaw/nt-bs315gf-3-480.webp",
-    "bytes": 43686
+    "bytes": 62976
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 106,
+   "w": 104,
    "h": 160,
    "file": "img/bandsaw/nt-bs315gf-3-thumb.webp",
-   "bytes": 5544
-  }
+   "bytes": 7154
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-4": {
   "alt": "BS-315GF 10\u2033 semi-automatic band saw \u2014 bow raised, hydraulic cylinder and gear-driven motor",
   "variants": [
    {
     "w": 480,
-    "h": 538,
+    "h": 519,
     "file": "img/bandsaw/nt-bs315gf-4-480.webp",
-    "bytes": 37498
+    "bytes": 43454
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 143,
+   "w": 148,
    "h": 160,
    "file": "img/bandsaw/nt-bs315gf-4-thumb.webp",
-   "bytes": 7402
-  }
+   "bytes": 7954
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-d1": {
   "alt": "BS-315GF \u2014 hydraulic down-feed cylinder, hydraulic power unit with pressure gauge, and vise handwheel",
@@ -38092,39 +38097,46 @@
   "variants": [
    {
     "w": 800,
-    "h": 646,
+    "h": 649,
     "file": "img/bandsaw/nt-bs315gf-v1-800.webp",
-    "bytes": 79674
+    "bytes": 85320
    },
    {
     "w": 480,
-    "h": 387,
+    "h": 389,
     "file": "img/bandsaw/nt-bs315gf-v1-480.webp",
-    "bytes": 42572
+    "bytes": 45368
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 129,
+   "h": 130,
    "file": "img/bandsaw/nt-bs315gf-v1-thumb.webp",
-   "bytes": 9008
-  }
+   "bytes": 9328
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-v2": {
   "alt": "BS-315GF \u2014 right side: gear-driven blade motor, hydraulic hoses and length-stop rod",
   "variants": [
    {
+    "w": 1200,
+    "h": 1026,
+    "file": "img/bandsaw/nt-bs315gf-v2-1200.webp",
+    "bytes": 137994
+   },
+   {
     "w": 800,
     "h": 684,
     "file": "img/bandsaw/nt-bs315gf-v2-800.webp",
-    "bytes": 85764
+    "bytes": 90806
    },
    {
     "w": 480,
-    "h": 411,
+    "h": 410,
     "file": "img/bandsaw/nt-bs315gf-v2-480.webp",
-    "bytes": 47020
+    "bytes": 48264
    }
   ],
   "alpha": true,
@@ -38132,67 +38144,70 @@
    "w": 160,
    "h": 137,
    "file": "img/bandsaw/nt-bs315gf-v2-thumb.webp",
-   "bytes": 9806
-  }
+   "bytes": 9988
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-v3": {
   "alt": "BS-315GF \u2014 front-left view: swivel bow, hydraulic vise and push-button control panel",
   "variants": [
    {
     "w": 1200,
-    "h": 956,
+    "h": 966,
     "file": "img/bandsaw/nt-bs315gf-v3-1200.webp",
-    "bytes": 107032
+    "bytes": 133874
    },
    {
     "w": 800,
-    "h": 637,
+    "h": 644,
     "file": "img/bandsaw/nt-bs315gf-v3-800.webp",
-    "bytes": 67252
+    "bytes": 84794
    },
    {
     "w": 480,
-    "h": 382,
+    "h": 387,
     "file": "img/bandsaw/nt-bs315gf-v3-480.webp",
-    "bytes": 36724
+    "bytes": 46262
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 127,
+   "h": 129,
    "file": "img/bandsaw/nt-bs315gf-v3-thumb.webp",
-   "bytes": 8288
-  }
+   "bytes": 9772
+  },
+  "cut": "birefnet"
  },
  "nt-bs315gf-v4": {
   "alt": "BS-315GF \u2014 operator side: control panel, lockable main switch and the length-stop rod",
   "variants": [
    {
     "w": 1200,
-    "h": 957,
+    "h": 950,
     "file": "img/bandsaw/nt-bs315gf-v4-1200.webp",
-    "bytes": 123670
+    "bytes": 137142
    },
    {
     "w": 800,
-    "h": 638,
+    "h": 633,
     "file": "img/bandsaw/nt-bs315gf-v4-800.webp",
-    "bytes": 76534
+    "bytes": 86452
    },
    {
     "w": 480,
-    "h": 383,
+    "h": 380,
     "file": "img/bandsaw/nt-bs315gf-v4-480.webp",
-    "bytes": 41786
+    "bytes": 46380
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 128,
+   "h": 127,
    "file": "img/bandsaw/nt-bs315gf-v4-thumb.webp",
-   "bytes": 9012
-  }
+   "bytes": 9604
+  },
+  "cut": "birefnet"
  }
 }
