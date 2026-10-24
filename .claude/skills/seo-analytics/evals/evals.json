@@ -1,0 +1,52 @@
+{
+  "evals": [
+    {
+      "name": "trigger-gsc-bing-ga4-analysis",
+      "prompt": "Analyze my SEO data exports from Google Search Console, Bing Webmaster Tools, and GA4. I need a report on queries, landing pages, CTR, rankings, Organic Search quality, and conversion events.",
+      "expected": [
+        "Triggers seo-analytics",
+        "Treats existing CSV/JSON exports as the primary path",
+        "Includes GSC, Bing Webmaster Tools, GA4, Event Analysis, Event Recommendation, and SEO Actions",
+        "Does not introduce GEO analytics or AI visibility scoring"
+      ]
+    },
+    {
+      "name": "config-profile-local-overrides",
+      "prompt": "Use seo-analytics.config.yaml with profile blog-us and a private seo-analytics.local.yaml auth override. Dry-run the GSC and GA4 fetch plans before collecting data.",
+      "expected": [
+        "Reads config discovery rules",
+        "Uses --profile blog-us",
+        "Recognizes seo-analytics.local.* as private local override",
+        "Does not print or commit secrets",
+        "Runs dry-run before live fetch"
+      ]
+    },
+    {
+      "name": "event-recommendation-saas",
+      "prompt": "For a SaaS site, compare our GA4 Organic Search event inventory with configured conversions sign_up and trial_start, then recommend missing events.",
+      "expected": [
+        "Uses saas event recommendations",
+        "Distinguishes configured and observed, configured but not observed, candidate conversion event, important interaction, ignored/noise event, unexpected key event, and measurement gap",
+        "Keeps event identifiers in English snake_case"
+      ]
+    },
+    {
+      "name": "localization-english-default",
+      "prompt": "No language is configured. Produce a public seo-analytics report for an English market from GSC, Bing Webmaster Tools, and GA4 data.",
+      "expected": [
+        "Defaults to English when language is unclear",
+        "Separates report language from market.searchLanguage",
+        "Keeps source-defined labels such as eventName, CTR, Organic Search, and URL paths unchanged"
+      ]
+    },
+    {
+      "name": "localization-simplified-chinese",
+      "prompt": "language is zh-CN and market.searchLanguage is en. 用中文输出 SEO analytics 报告，但分析英文搜索查询意图。",
+      "expected": [
+        "Uses Simplified Chinese report sections",
+        "Analyzes English query intent according to market.searchLanguage",
+        "Keeps GSC/Bing/GA4 fields, queries, URLs, and event names unchanged"
+      ]
+    }
+  ]
+}
