@@ -49,7 +49,8 @@ FAMILIES = [
              "Safety guards on the flywheel casing and blade; electric coolant system; 1″ × .035″ × 111″ (27 × 0.9 × 2825 mm) blade",
          ],
          optional=["Roller stand with length stop", "Extra blades"],
-         images=["nt-bs315gf-1", "nt-bs315gf-2", "nt-bs315gf-3", "nt-bs315gf-4", "nt-bs315gf-d7", "nt-bs315gf-d1", "nt-bs315gf-d9", "nt-bs315gf-d8", "nt-bs315gf-d3",
+         images=["nt-bs315gf-1", "nt-bs315gf-v1", "nt-bs315gf-v2", "nt-bs315gf-v3", "nt-bs315gf-v4",
+                 "nt-bs315gf-2", "nt-bs315gf-3", "nt-bs315gf-4", "nt-bs315gf-d7", "nt-bs315gf-d1", "nt-bs315gf-d9", "nt-bs315gf-d8", "nt-bs315gf-d3",
                  "nt-bs315gf-d4", "nt-bs315gf-d6", "nt-bs315gf-d5", "nt-bs315gf-d2", "nt-bs315gf-d10"],
          videos=[
              {"id": "yylLY38qVrM", "title": "BS-315GF 10″ semi-automatic swivel band saw with hydraulic up-lift and down-feed — miter cuts both sides", "thumb": "video-yylLY38qVrM", "duration": "PT1M15S", "upload_date": "2026-10-07"},

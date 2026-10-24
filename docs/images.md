@@ -93,3 +93,18 @@ motor).  The rule is that only the machine itself is visible — no neighbouring
 wall anywhere in the cut-out.  Results are committed in `tools/src-images/cutouts/nt-<model>-N-cut.png`;
 the page hero is the 1.5× Lanczos upscale (`nt-<model>-hero.png`).  Detail photos (gauges, guides,
 switches) stay as photos with `"cutout": false`.
+
+### Video frames (showroom walk-around)
+
+Frames pulled from NovoTech's own videos (`ffmpeg -ss … -vf fps=6`, pick the sharpest by Laplacian variance)
+are cut out with `tools/sam_cut.py` — Segment Anything (SAM ViT-B, the ONNX pair rembg downloads for
+`new_session("sam")`) driven with box + point prompts, part by part, plus hand corrections in
+`tools/cutout-specs/sam/<photo>.json`: `zones` replace SAM inside a polygon by a plain luminance cut (hoses
+hanging in front of the white wall: keep only dark pixels, so the wall inside a hose loop goes away),
+`paths` keep thin parts the models drop (the clear coolant hose), `keep`/`drop` polygons fix the cabinet
+outline against a neighbouring machine of the same grey, `keep_final`/`paths_final` re-add a part after the
+drops (the silver fan cover, the length-stop rod lying across dropped floor).  Inspect the `-check.jpg`
+(machine on NovoTech orange) at 2–4× with a grid before accepting.  IS-Net/U²-Net alone are useless on
+these frames (white bow on white wall, other machines behind); rembg's own SAM wrapper mis-scales the
+prompts, which is why the tool drives the ONNX models itself.  The BS-315GF `nt-bs315gf-v1..v4` cut-outs
+come from `IMG_1150.mov` this way.

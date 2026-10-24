@@ -7,3 +7,5 @@ dist-artifact/
 tools/pub*.json
 src/root/ai-config.php
 ai-config.php
+*.emb*.npy
+*-check.jpg
