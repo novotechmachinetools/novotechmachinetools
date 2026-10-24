@@ -1,11 +1,13 @@
 """İşitan section: pipe-end processing (PN notchers, TD deburring, SFF end formers; catalogue pages 50–51)
-and SFC circular cold saws (pages 52–53) — two category pages."""
+and SFC circular cold saws (pages 52–53) — three category pages: tube notchers (old-site URL pipe-notcher kept),
+tube end forming machines, cold saws."""
 from isitan_lib import *  # noqa: F401,F403
 from bekamak_extra import CIRCULAR_FAMILIES, CIRCULAR_IMAGES  # noqa: E402  (Bekamak BMDO saws share the cold saw page)
 
 SET = "pipe-end-and-saws"
 SECTION = "Tube notchers, end formers & cold saws"
-P_END, P_SAW = "tube-notchers-and-end-formers", "circular-cold-saws"
+P_NOTCH, P_FORM, P_SAW = "pipe-notcher", "tube-end-forming-machines", "circular-cold-saws"
+P_END = P_NOTCH   # kept for older imports
 
 IMAGES = {
     "is-pn-17-90": ("img/ISITAN-PN-17-90.jpg", "İşitan PN 17/90 motorized belt-sander tube notcher, 11/16″ to 3-1/2″ OD"),
@@ -104,7 +106,7 @@ def t_sfc_v():
 
 
 FAMILIES = [
-    dict(id="isitan-pn", group="notch", page=P_END,
+    dict(id="isitan-pn", group="notch", page=P_NOTCH,
          name="PN 17/90 · PN 20/76 — motorized pipe notching machines",
          short="PN tube notchers",
          models_label="PN 17/90 · PN 20/76",
@@ -120,7 +122,7 @@ FAMILIES = [
          images=["is-pn-17-90", "is-pn-20-76"],
          videos=[], specs=t_pn(),
          headline="Tube 11/16″ to 3-1/2″ OD · notching to 50° · 10 dovetail drums included"),
-    dict(id="isitan-td-01", group="notch", page=P_END,
+    dict(id="isitan-td-01", group="deburr", page=P_NOTCH,
          name="TD-01 — motorized tube-end deburring machine",
          short="TD-01",
          models_label="TD-01",
@@ -134,7 +136,7 @@ FAMILIES = [
          images=["is-td-01"],
          videos=[], specs=t_td(),
          headline="Tube ends to Ø3-1/2″ · inside and outside in one pass · Ø10″ wire brush"),
-    dict(id="isitan-sff", group="form", page=P_END,
+    dict(id="isitan-sff", group="form", page=P_FORM,
          name="SFF 90-1 · SFF 60-1 — single-station hydraulic pipe-end forming machines",
          short="SFF end formers",
          models_label="SFF 90-1 · SFF 60-1",
@@ -182,20 +184,36 @@ FAMILIES = [
 ] + [dict(f, page=P_SAW) for f in CIRCULAR_FAMILIES]
 
 PAGES = {
-    P_END: dict(
-        title="Tube & Pipe Notchers, End Formers & Deburring | NovoTech",
-        meta="Belt-sander tube notchers for 11/16″ to 3-1/2″ pipe at any angle to 50°, hydraulic end formers that expand or reduce tube ends to Ø3-1/2″, plus deburring.",
-        h1="Tube notchers, end formers and deburring machines",
-        intro="A tube notcher (pipe notcher or coping machine) grinds a saddle-shaped notch into the end of a tube so it fits tightly against the tube it joins; an end former expands or reduces the tube end so two tubes slip together. The machines that finish a tube end: PN belt-sander tube notchers that cope a saddle for welded handrail, cage and frame joints at any angle to 50° with ten dovetail drums included; SFF single-station hydraulic end formers that expand or reduce tube ends to Ø3-1/2″ for exhaust slip joints and sleeves; and the TD-01 wire-brush deburring machine that cleans inside and out in one pass. They sit beside the cold saw and the tube bender and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
-        points=["Pipe notchers — tube 11/16″ to 3-1/2″ OD, notching to 50°, 10 dovetail drums standard", "Hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga", "TD-01 deburring — inside and outside to Ø3-1/2″ in one pass"],
-        hero="is-pn-17-90", minis=["is-sff-90-1", "is-td-01"],
-        groups=[("notch", "Tube notchers and deburring", "PN belt-sander notchers and the TD-01 wire-brush deburring machine."),
-                ("form", "Pipe-end forming", "SFF hydraulic end formers for expanding and reducing tube ends.")],
+    P_NOTCH: dict(
+        title="Tube Notchers & Pipe Notching Machines | NovoTech",
+        meta="Belt-sander tube and pipe notchers for tube 11/16″ to 3-1/2″ OD at any angle to 50°, ten dovetail drums included, plus the TD-01 tube-end deburring machine.",
+        h1="Tube notchers and pipe notching machines",
+        intro="A tube notcher (pipe notcher or coping machine) grinds a saddle-shaped notch into the end of a tube so it fits tightly against the tube it joins — the joint of every welded handrail, roll cage, trailer, gate and furniture frame. İşitan's PN belt-sander notchers cope that saddle in seconds, square or at any angle up to 50°, with ten dovetail drums from Ø3/4″ to 3″ included so the notch matches the mating tube; the TD-01 wire-brush deburring machine cleans the cut end inside and out in one pass before it goes to the notcher or the bender. Both sit beside the cold saw and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
+        points=["Pipe notchers — tube 11/16″ to 3-1/2″ OD, notching to 50°, 10 dovetail drums standard", "PN 17/90 with 4 × 47″ belt; compact PN 20/76 with movable clamp and 4 × 79″ belt", "TD-01 deburring — inside and outside to Ø3-1/2″ in one pass"],
+        hero="is-pn-17-90", minis=["is-pn-20-76", "is-td-01"],
+        groups=[("notch", "Tube notchers", "PN belt-sander pipe notching machines with ten dovetail drums included."),
+                ("deburr", "Tube-end deburring", "The TD-01 wire-brush machine that cleans the cut end inside and out before notching or bending.")],
         faq=[{"q": "What is a tube notcher for?", "a": "When one tube meets another in a T or at an angle — handrail posts, roll cages, furniture and bike frames, trailer and gate frames — the end has to be coped to the curve of the tube it joins so the weld closes without gaps. The PN notcher grinds that saddle on a sanding belt against a drum of the mating tube's diameter in seconds, square or at any angle to 50°."},
              {"q": "Which notcher — PN 17/90 or PN 20/76?", "a": "The PN 17/90 takes the larger range, 11/16″ to 3-1/2″ OD, on a 4 × 47″ belt with easy belt adjustment. The PN 20/76 is the compact notcher for 13/16″ to 3″ OD with a longer 4 × 79″ belt and a movable clamp. Both come with the same ten dovetail drums and 3 HP motor."},
-             {"q": "Expanding or reducing — what does the end former do?", "a": "An expander opens a tube end so the next tube slips inside (exhaust slip joints, telescoping handrail, sleeves); a reducer collapses the end to fit into the next tube. The SFF does both in one station with a hydraulic ram and interchangeable forming tools — one set is included, others are quoted to your tube size."},
+             {"q": "Belt notcher or hole-saw notcher?", "a": "A hole-saw notcher cuts the cope with a hole saw of the mating tube's diameter — slow, and the saw dulls on stainless. The PN grinds the cope on a sanding belt wrapped around a dovetail drum, so it is faster, works on any material and leaves a clean, square-to-weld edge; the drum is swapped in seconds for the next tube size."},
+             {"q": "Does the notcher deburr the tube as well?", "a": "No — the notcher shapes the cope. The TD-01 is the machine that removes the burr left by the saw: a Ø10″ wire brush cleans the inside and outside of the tube end in one pass, on round, square and rectangular tube to Ø3-1/2″, so the tube is ready to notch, bend or weld."},
              VOLT_FAQ_GENERIC],
-        faq_title="Questions we get asked about tube notchers and end formers",
+        faq_title="Questions we get asked about tube notchers",
+    ),
+    P_FORM: dict(
+        title="Tube End Forming Machines — Expand & Reduce | NovoTech",
+        meta="Hydraulic tube end formers that expand or reduce pipe ends to Ø3-1/2″ × 14 ga in one station — exhaust slip joints, sleeves, telescoping tube. Tooling included.",
+        h1="Tube end forming machines",
+        intro="A tube end former (pipe end forming machine) expands or reduces the end of a tube so two tubes slip together: an expanded end takes the next tube inside it, a reduced end fits into the next tube. İşitan's SFF single-station hydraulic end formers do both with one tooling set — the SFF 90-1 expands Ø1-3/8″ to 3-1/2″ and reduces down from Ø5/16″ in 14 ga mild steel with a 15 HP power unit, the SFF 60-1 covers tube to Ø2-3/8″ with 10 HP — for exhaust slip joints, handrail and fence sleeves, telescoping tube, furniture connectors and HVAC spigots. One forming set in the size you request is included and swaps in minutes; with CSA-approved panels and support from Mississauga, ON.",
+        points=["Hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga", "SFF 90-1 with 15 HP power unit; SFF 60-1 to Ø2-3/8″ with 10 HP", "One end-forming tooling set in your tube size included; easy tool change"],
+        hero="is-sff-90-1", minis=["is-sff-60-1", "is-sff-tooling"],
+        groups=[("form", "Tube end formers", "SFF hydraulic end forming machines for expanding and reducing tube ends in one station.")],
+        faq=[{"q": "Expanding or reducing — what does the end former do?", "a": "An expander opens a tube end so the next tube slips inside (exhaust slip joints, telescoping handrail, sleeves); a reducer collapses the end to fit into the next tube. The SFF does both in one station with a hydraulic ram and interchangeable forming tools — one set is included, others are quoted to your tube size."},
+             {"q": "What tube sizes and wall thickness can the SFF form?", "a": "The SFF 90-1 expands tube from Ø1-3/8″ to Ø3-1/2″ and reduces ends down to Ø5/16″, in mild steel up to 14 ga; the SFF 60-1 covers tube to Ø2-3/8″. Stainless and thicker walls are quoted case by case — send us the tube OD, wall and the finished end size you need."},
+             {"q": "How long does a tool change take?", "a": "A few minutes: the forming set is held in a quick-change holder on the ram and the clamp. Most customers keep one set per tube size and swap between batches."},
+             {"q": "Can the SFF do an exhaust slip joint?", "a": "Yes — that is its most common job: expand one end of the pipe so the next section slides in, or reduce it to slip into a muffler or flex pipe. Expansion depth and the finished diameter are set by the tooling."},
+             VOLT_FAQ_GENERIC],
+        faq_title="Questions we get asked about tube end formers",
     ),
     P_SAW: dict(
         title="Cold Saws — Circular & CNC Carbide Cold Saws | NovoTech",
@@ -231,9 +249,11 @@ def register_bekamak_images():
 def build():
     register_bekamak_images()
     write_families(SET, FAMILIES)
-    related_end = [{"href": f"{P_SAW}.html", "label": "Circular cold saws"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "nc-tube-benders.html", "label": "NC tube benders"}]
-    related_saw = [{"href": f"{P_END}.html", "label": "Tube notchers & end formers"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "band-saw.html", "label": "Band saws"}, {"href": "double-column-band-saws.html", "label": "Bekamak double-column band saws"}]
-    write_category(P_END, {**PAGES[P_END], "related_pages": related_end, "related_title": "More tube machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Tube notchers & end formers"})
+    related_notch = [{"href": f"{P_FORM}.html", "label": "Tube end forming machines"}, {"href": f"{P_SAW}.html", "label": "Circular cold saws"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "nc-tube-benders.html", "label": "NC tube benders"}]
+    related_form = [{"href": f"{P_NOTCH}.html", "label": "Tube notchers"}, {"href": f"{P_SAW}.html", "label": "Circular cold saws"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "rotary-draw-tube-benders.html", "label": "Rotary draw tube benders"}]
+    related_saw = [{"href": f"{P_NOTCH}.html", "label": "Tube notchers"}, {"href": f"{P_FORM}.html", "label": "Tube end forming machines"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "band-saw.html", "label": "Band saws"}, {"href": "double-column-band-saws.html", "label": "Bekamak double-column band saws"}]
+    write_category(P_NOTCH, {**PAGES[P_NOTCH], "related_pages": related_notch, "related_title": "More tube machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Tube notchers"})
+    write_category(P_FORM, {**PAGES[P_FORM], "related_pages": related_form, "related_title": "More tube machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Tube end formers"})
     write_category(P_SAW, {**PAGES[P_SAW], "related_pages": related_saw, "related_title": "More cutting machinery from NovoTech"}, FAMILIES, SET, SECTION,
                    extra={"nav_label": "Cold saws", "catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_BK],
                           "hero_brand_line": "İşitan circular cold saws are made in Turkey by İşitan Makine; the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",

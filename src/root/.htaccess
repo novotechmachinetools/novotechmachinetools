@@ -23,7 +23,7 @@ RedirectMatch 301 ^/plate-roller-buying-guide(\.html)?$ /plate-rollers#buying-gu
 RedirectMatch 301 ^/bead-roller-hvac-forming-pittsburgh-lock-former(\.html)?$ /bead-rollers
 RedirectMatch 301 ^/circular-cutting-shear-tank-dish-head-flanging(\.html)?$ /circle-cutters-and-seamers
 RedirectMatch 301 ^/pipe-bender(\.html)?$ /pipe-benders
-RedirectMatch 301 ^/pipe-notcher(\.html)?$ /tube-notchers-and-end-formers
+RedirectMatch 301 ^/tube-notchers-and-end-formers(\.html)?$ /pipe-notcher
 # band saw sub-pages live at /manual-band-saws, /semi-automatic-band-saws, /automatic-band-saws and
 # /double-column-band-saws (Bekamak) and /affordable-semi-automatic-band-saws, /automatic-feed-band-saws,
 # /twin-column-band-saws (value line) — brand-free URLs, Oct 2026.  Earlier brand slugs redirect:
@@ -54,8 +54,8 @@ Redirect 301 "/files/circular-cutting-shear-IDK.pdf" "/circle-cutters-and-seamer
 Redirect 301 "/files/IDK-circular-cutting-shear-ISITAN---MADE-IN-TURKEY.pdf" "/circle-cutters-and-seamers"
 Redirect 301 "/files/LS-duct-seam-closing-machine-ISITAN---MADE-IN-TURKEY.pdf" "/circle-cutters-and-seamers"
 Redirect 301 "/files/Seam-closing-machine-LS.pdf" "/circle-cutters-and-seamers"
-Redirect 301 "/files/PN-pipe-and-tube-notcher.pdf" "/tube-notchers-and-end-formers"
-Redirect 301 "/files/PN-pipe-notching-machine---tube-notching-machine-ISITAN---MADE-IN-TURKEY.pdf" "/tube-notchers-and-end-formers"
+Redirect 301 "/files/PN-pipe-and-tube-notcher.pdf" "/pipe-notcher"
+Redirect 301 "/files/PN-pipe-notching-machine---tube-notching-machine-ISITAN---MADE-IN-TURKEY.pdf" "/pipe-notcher"
 Redirect 301 "/files/Hydraulic-plate-bending-machine-3-rolls-MRMH.pdf" "/hydraulic-3-roll-plate-rollers"
 Redirect 301 "/files/plate-bending-roll-4RHMS.pdf" "/hydraulic-4-roll-plate-rollers"
 Redirect 301 "/files/4-rolls--hydraulic-plate-roller-4RHMD.pdf" "/hydraulic-4-roll-plate-rollers"

@@ -422,7 +422,7 @@ def build():
     write_families(SET, FAMILIES)
     sib = [(s, SUBPAGE_META[s][3], SUBPAGE_META[s][0]) for s in ORDER]
     hub = {"slug": HUB, "label": "All pipe & tube benders", "image": "is-sfb-38-cnc-a5", "blurb": "Every İşitan tube and pipe bender NovoTech supplies, with the capacity table for the whole range."}
-    related = [{"href": "tube-notchers-and-end-formers.html", "label": "Tube notchers & end formers"}, {"href": "circular-cold-saws.html", "label": "Circular cold saws"}]
+    related = [{"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "tube-end-forming-machines.html", "label": "Tube end forming machines"}, {"href": "circular-cold-saws.html", "label": "Circular cold saws"}]
     for slug in ORDER:
         write_category(slug, {**PAGES[slug], "related_pages": related}, FAMILIES, SET, SECTION, hub=hub, siblings=sib)
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Pipe Benders & Tube Bending Machines", "faq_title": "Questions we get asked about pipe benders", "nav_label": "All pipe & tube benders", "related_blurb": hub["blurb"]},
