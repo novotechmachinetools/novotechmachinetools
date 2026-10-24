@@ -34,6 +34,7 @@ FAMILIES = [
     # ================================================================ MANUAL
     # ================================================================ SEMI-AUTOMATIC
     dict(id="novotech-bs-315gf", group="semi-automatic",
+         voltage="240 V single-phase",          # the only supply this model is built for — no 3-phase or other-voltage option
          name="BS-315GF full-hydraulic double-miter band saw, 10″",
          short="BS-315GF",
          models_label="BS-315GF",
@@ -42,20 +43,21 @@ FAMILIES = [
              "Ø9-7/8″ (250 mm) round / 12-1/2″ × 7-1/2″ at 0°; Ø9″ at 45° both sides, Ø5-7/8″ at 60°",
              "Hydraulic clamping vise, hydraulic down-feed with variable feed rate and hydraulic bow up-lift",
              "Swivels left and right with fast angle stops at 30°, 45° and 60°",
-             "Gear-driven 1/1.5 HP motor — variable blade speed by VFD inverter drive, up to 262 ft/min (80 m/min)",
+             "Gear-driven 1.5 HP (1.1 kW) blade motor with variable blade speed by VFD inverter drive, up to 262 ft/min (80 m/min), and a separate 1 HP (0.75 kW) motor for the hydraulic pump",
              "Bow pivots on adjustable tapered bearings — no backlash; electro-mechanical blade tensioner with microswitch",
              "Safety guards on the flywheel casing and blade; electric coolant system; 1″ × .035″ × 111″ (27 × 0.9 × 2825 mm) blade",
          ],
          optional=["Roller stand with length stop", "Extra blades"],
-         images=["nt-h10f-1", "nt-h10f-2", "nt-h10f-3"],
+         images=["nt-bs315gf-1", "nt-bs315gf-2", "nt-bs315gf-3", "nt-bs315gf-4", "nt-bs315gf-d7", "nt-bs315gf-d1", "nt-bs315gf-d9", "nt-bs315gf-d8", "nt-bs315gf-d3",
+                 "nt-bs315gf-d4", "nt-bs315gf-d6", "nt-bs315gf-d5", "nt-bs315gf-d2", "nt-bs315gf-d10"],
          videos=[
-             {"id": "jX-yVggdD-U", "title": "NovoTech BS-315GF 10″ semi-automatic double-miter band saw with inverter drive, hydraulic up-lift and hydraulic vise", "thumb": "video-jX-yVggdD-U", "duration": "PT4M2S"},
-             {"id": "-mHWeLoh_mo", "title": "BS-315GF 10″ semi-automatic swivel band saw — hydraulic up-lift and down-feed, miter cuts both sides", "thumb": "video-_mHWeLoh_mo", "duration": "PT1M18S"},
+             {"id": "yylLY38qVrM", "title": "BS-315GF 10″ semi-automatic swivel band saw with hydraulic up-lift and down-feed — miter cuts both sides", "thumb": "video-yylLY38qVrM", "duration": "PT1M15S", "upload_date": "2026-10-07"},
+             {"id": "iwCyiXP3JRg", "title": "BS-315GF 10″ semi-automatic double-miter band saw with inverter drive, hydraulic up-lift and hydraulic vise", "thumb": "video-iwCyiXP3JRg", "duration": "PT3M1S", "upload_date": "2026-09-02"},
              {"id": "obbCib0YB24", "title": "BS-315GF 10″ double-miter semi-automatic band saw with hydraulic vise", "thumb": "video-obbCib0YB24", "duration": "PT1M1S"},
          ],
          models=[
              model("BS-315GF", {"0": cap(250, [315, 190]), "+45": cap(230, [210, 190]), "-45": cap(230, [210, 190]), "+60": cap(150, [130, 150])},
-                   "0.75-1.1", "Variable, VFD inverter drive — up to 262 ft/min (80 m/min)", [2825, 27, 0.9], 400,
+                   "1.1", "Variable, VFD inverter drive — up to 262 ft/min (80 m/min)", [2825, 27, 0.9], 400, hyd=0.75,
                    other={"Vise": "Hydraulic", "Bow lift": "Hydraulic", "Miter cutting": "Swivel bow, 45° left / 30°, 45° and 60° right", "Drive": "Gear, variable blade speed by VFD inverter drive", PACK: "1630 × 900 × 1550 mm", GROSS: "515 kg"}),
          ]),
     dict(id="novotech-bs-460g", group="semi-automatic",
@@ -325,7 +327,7 @@ def main():
             "name": f["name"], "short": f["short"], "models_label": f["models_label"],
             "summary": f["summary"], "features": f["features"], "optional": f["optional"],
             "images": f["images"], "videos": f["videos"],
-            "specs": {"kind": "bandsaw", "voltage": V, "models": f["models"]},
+            "specs": {"kind": "bandsaw", "voltage": f.get("voltage", V), "models": f["models"]},
         }
         fams[f["id"]] = rec
         order.append(f["id"])

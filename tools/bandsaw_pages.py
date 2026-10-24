@@ -107,7 +107,7 @@ NF = {
         h1="NovoTech semi-automatic band saws",
         intro="Hydraulic saws for the production floor at value-line prices, led by our best seller — the BS-315GF, a 10-inch double-miter (mitre) saw with hydraulic vise, hydraulic down-feed and hydraulic bow up-lift. A hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts and the machine stops at the end of the cut. From the 10-inch saws to the 18-inch BS-650GA swivel-head saw, with a single-column touch-screen model (BS-5030) in between.",
         points=["BS-315GF: full-hydraulic 10″ double-miter saw — our most popular model", "Hydraulic descent, automatic bow return and shut-off on every model", "Round capacities from Ø9-7/8″ (250 mm) to Ø18″ (460 mm)"],
-        hero="nt-h10f-1-cut", minis=["nt-h18-1-cut", "nt-h12sc-1-cut"],
+        hero="nt-bs315gf-hero", minis=["nt-h18-1-cut", "nt-h12sc-1-cut"],
         lead="Hydraulic descent, hydraulic vises and automatic bow return from Ø10″ to Ø18″ (254–460 mm), including a single-column saw with touch screen.",
         faq=[
             {"q": "What is the difference between a semi-automatic and a fully automatic band saw?", "a": "A semi-automatic saw makes one cut per start: it clamps, cuts and lifts the bow, then waits for the operator to feed the next piece. A fully automatic saw also feeds the material to length and repeats the cycle for the programmed quantity — see the value line automatic band saws."},
@@ -163,7 +163,7 @@ BRAND = {
                     brand_line="Bekamak band saws are made in Turkey by Bekamak Makina. Sold, installed and supported in Canada by NovoTech — the premium line of our band saw range.",
                     related_title="More Bekamak band saws from NovoTech"),
     "novotech": dict(key="novotech", slug="novotech", line="value", name="NovoTech", pdf=PDF_NF, page_label="NovoTech",
-                    brand_line="NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, Ontario parts and support as every machine we sell.",
+                    brand_line="NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell.",
                     related_title="More NovoTech value line band saws"),
 }
 
@@ -232,7 +232,7 @@ def main():
                              "image": p["hero_image"], "blurb": specs[cat]["lead"], "families": fams(brand, cat)})
         lines.append({"id": b["line"], "brand": b["key"], "label": f"{b['line'].title()} line", "name": b["name"], "short": b["page_label"], "pdf": b["pdf"],
                       "blurb": ("Built in Turkey since 1990 with European components and the heaviest construction in their class — the saws we recommend for production and heavy sections." if brand == "bekamak"
-                                else "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, Ontario parts and support as every machine we sell."),
+                                else "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell."),
                       "subpages": subpages})
     # ---- hub
     hp = os.path.join(PAGES, "band-saw.json")
@@ -243,7 +243,7 @@ def main():
     h["meta_description"] = "Horizontal metal cutting band saws (bandsaws) for sale in Canada: manual, semi-automatic, automatic and double column band saw machines from Ø9″ to 59″ — Bekamak premium and NovoTech value line, specs in inches and mm, buying guide."
     h["intro"] = "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga, ON."
     h["hero_image"] = "bk-hero-auto-350ga"
-    h["hero_image_secondary"] = ["bk-hero-hub", "nt-h10f-1-cut"]
+    h["hero_image_secondary"] = ["bk-hero-hub", "nt-bs315gf-1"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)',
                         '<a href="#value-line">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column',
                         '<a href="#manual-band-saws-overview">Manual</a> (Bekamak), <a href="#semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#automatic-band-saws-overview">automatic</a> and <a href="#double-column-band-saws-overview">double-column</a> saws',

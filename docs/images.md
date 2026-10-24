@@ -80,3 +80,13 @@ Blade width × thickness is written in North American nominal inch sizes, never 
 41 × 1.3 mm = 1-1/2″ × .050″, 54 × 1.6 mm = 2″ × .063″, 67 × 1.6 mm = 2-5/8″ × .063″, 80 × 1.6 mm = 3-1/8″ × .063″.
 Blade length converts normally (mm ÷ 25.4, nearest 1/2″).  The same names are used in the feature-photo
 captions ("Band saw blade 1″ × .035″ (27 × 0.9 mm)").
+
+## NovoTech's own photos (value line)
+
+Photos NovoTech takes of its own machines (warehouse / factory floor) live in `tools/src-images/novotech-photos/`
+with descriptive names (`bs-315gf-01-front-branded.jpg` …).  Full-machine shots are cut out with rembg
+(`tools/rembg_cutout.py` logic) and, because other machines stand behind them, finished with a hand-traced
+drop polygon above the bow and a keep polygon where rembg eats a dark part (the motor) — the cut-outs are
+committed in `tools/src-images/cutouts/nt-<model>-N-cut.png`; the page hero is the 1.5× Lanczos upscale
+(`nt-<model>-hero.png`).  Detail photos (gauges, guides, switches) stay as photos with `"cutout": false`.
+Pallet shots: the pallet is masked below the cabinet's bottom edge, never shown.

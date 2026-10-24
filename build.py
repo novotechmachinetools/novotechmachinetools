@@ -689,6 +689,8 @@ def ai_catalogue(pages):
                         entry["blade_speed"] = rng(m.get("blade_speed_m_min"), lambda x: x * 3.2808, "ft/min", "m/min")
                         if m.get("feed_length_mm"):
                             entry["feed_per_stroke"] = f"{inch_frac(m['feed_length_mm'])} ({m['feed_length_mm']:g} mm)"
+                        if spec.get("voltage"):
+                            entry["voltage"] = spec["voltage"]
                     else:
                         mm = model_single(spec, i)
                         if mm:
