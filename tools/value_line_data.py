@@ -20,10 +20,11 @@ def cap(round_, rect, square=None):
     return {"round": round_, "rect": rect, "square": square}
 
 
-def model(name, caps, motor, speed, band, weight, *, hyd=None, cool=None, wh=None, dims=None, feed=None, other=None, notes=""):
+def model(name, caps, motor, speed, band, weight, *, hyd=None, cool=None, wh=None, dims=None, feed=None, other=None, notes="", inch_labels=None):
     return {"name": name, "capacity_mm": caps, "main_motor_kw": motor, "hydraulic_motor_kw": hyd,
             "coolant_pump_kw": cool, "blade_speed_m_min": speed, "band_mm": band, "working_height_mm": wh,
-            "weight_kg": weight, "dims_mm": dims, "feed_length_mm": feed, "other": other or {}, "notes": notes}
+            "weight_kg": weight, "dims_mm": dims, "feed_length_mm": feed, "other": other or {}, "notes": notes,
+            **({"inch_labels": inch_labels} if inch_labels else {})}   # {"250": "10″"}: nominal trade size shown instead of the 1/8″ conversion
 
 
 V = "600 V 3-phase (208/240/480 V on request)"
@@ -40,7 +41,7 @@ FAMILIES = [
          models_label="BS-315GF",
          summary="Our most popular value-line saw: a 10-inch gear-driven semi-automatic with everything hydraulic — the vise clamps hydraulically, the bow descends on a hydraulic cylinder at a dialled-in feed rate and lifts itself hydraulically at the end of the cut. The bow swivels to both sides for 30°, 45° and 60° miters with fast angle stops, the gear-driven motor runs the band at a variable blade speed set on the VFD inverter drive. One operator loads, clamps and starts; the saw does the rest.",
          features=[
-             "Ø9-7/8″ (250 mm) round / 12-1/2″ × 7-1/2″ at 0°; Ø9″ at 45° both sides, Ø5-7/8″ at 60°",
+             "Ø10″ (250 mm) round / 12-1/2″ × 7-1/2″ at 0°; Ø9″ at 45° both sides, Ø5-7/8″ at 60°",
              "Hydraulic clamping vise, hydraulic down-feed with variable feed rate and hydraulic bow up-lift",
              "Swivels left and right with fast angle stops at 30°, 45° and 60°",
              "Gear-driven 1.5 HP (1.1 kW) blade motor with variable blade speed by VFD inverter drive, up to 262 ft/min (80 m/min), and a separate 1 HP (0.75 kW) motor for the hydraulic pump",
@@ -57,7 +58,7 @@ FAMILIES = [
          ],
          models=[
              model("BS-315GF", {"0": cap(250, [315, 190]), "+45": cap(230, [210, 190]), "-45": cap(230, [210, 190]), "+60": cap(150, [130, 150])},
-                   "1.1", "Variable, VFD inverter drive — up to 262 ft/min (80 m/min)", [2825, 27, 0.9], 400, hyd=0.75,
+                   "1.1", "Variable, VFD inverter drive — up to 262 ft/min (80 m/min)", [2825, 27, 0.9], 400, hyd=0.75, inch_labels={"250": "10″"},
                    other={"Vise": "Hydraulic", "Bow lift": "Hydraulic", "Miter cutting": "Swivel bow, 45° left / 30°, 45° and 60° right", "Drive": "Gear, variable blade speed by VFD inverter drive", PACK: "1630 × 900 × 1550 mm", GROSS: "515 kg"}),
          ]),
     dict(id="novotech-bs-460g", group="semi-automatic",

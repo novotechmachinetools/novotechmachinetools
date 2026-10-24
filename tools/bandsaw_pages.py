@@ -106,9 +106,9 @@ NF = {
         meta="Affordable semi-automatic metal cutting band saws (value-line hydraulic bandsaws) for sale in Canada: the full-hydraulic BS-315GF double-miter saw, BS-460G dual-miter, BS-2114TH, BS-5030 single-column and the 18″ BS-650GA. Specs in inches and mm.",
         h1="NovoTech semi-automatic band saws",
         intro="Hydraulic saws for the production floor at value-line prices, led by our best seller — the BS-315GF, a 10-inch double-miter (mitre) saw with hydraulic vise, hydraulic down-feed and hydraulic bow up-lift. A hydraulic cylinder lowers the bow at a dialled-in rate, the bow lifts and the machine stops at the end of the cut. From the 10-inch saws to the 18-inch BS-650GA swivel-head saw, with a single-column touch-screen model (BS-5030) in between.",
-        points=["BS-315GF: full-hydraulic 10″ double-miter saw — our most popular model", "Hydraulic descent, automatic bow return and shut-off on every model", "Round capacities from Ø9-7/8″ (250 mm) to Ø18″ (460 mm)"],
+        points=["BS-315GF: full-hydraulic 10″ double-miter saw — our most popular model", "Hydraulic descent, automatic bow return and shut-off on every model", "Round capacities from Ø10″ (250 mm) to Ø18″ (460 mm)"],
         hero="nt-bs315gf-hero", minis=["nt-h18-1-cut", "nt-h12sc-1-cut"],
-        lead="Hydraulic descent, hydraulic vises and automatic bow return from Ø10″ to Ø18″ (254–460 mm), including a single-column saw with touch screen.",
+        lead="Hydraulic descent, hydraulic vises and automatic bow return from Ø10″ to Ø18″ (250–460 mm), including a single-column saw with touch screen.",
         faq=[
             {"q": "What is the difference between a semi-automatic and a fully automatic band saw?", "a": "A semi-automatic saw makes one cut per start: it clamps, cuts and lifts the bow, then waits for the operator to feed the next piece. A fully automatic saw also feeds the material to length and repeats the cycle for the programmed quantity — see the value line automatic band saws."},
             {"q": "Which value-line saws cut miters on both sides?", "a": "The BS-315GF, BS-460G / 460G-JC and BS-650GA swivel to both sides (45° left and right, 60° right); the BS-2114TH cuts angles up to 60° on one side."},
@@ -245,7 +245,7 @@ def main():
     h["hero_image"] = "bk-hero-auto-350ga"
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-bs315gf-1"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 59″ (230–1500 mm)',
-                        '<a href="#value-line">Value line: NovoTech</a>, Ø9-7/8″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column',
+                        '<a href="#value-line">Value line: NovoTech</a>, Ø10″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column',
                         '<a href="#manual-band-saws-overview">Manual</a> (Bekamak), <a href="#semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#automatic-band-saws-overview">automatic</a> and <a href="#double-column-band-saws-overview">double-column</a> saws',
                         '<a href="#buying-guide">Band saw buying guide</a>, blade selection and troubleshooting chart on this page']
     h["catalogue_pdfs"] = [PDF_BK, PDF_NF]

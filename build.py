@@ -125,6 +125,13 @@ def inch_frac(mm, denom=8):
     return (f"{whole}-" if whole else "") + f"{fr.numerator}/{fr.denominator}″"
 
 
+def inch_cap(m, mm):
+    """Inch label of a capacity for model m: the model's nominal label when it defines one
+    ("inch_labels": {"250": "10″"} — the trade size the saw is sold as), else the exact 1/8″ conversion."""
+    lab = (m.get("inch_labels") or {}).get(f"{mm:g}")
+    return lab or inch_frac(mm)
+
+
 def rng(s, conv, unit_i, unit_m, nd=0):
     """'15-120' m/min -> '49–394 ft/min (15–120 m/min)'; single numbers too.
     Step speeds '35/60/88/115' -> '115/197/289/377 ft/min (35/60/88/115 m/min)'."""
@@ -188,7 +195,7 @@ def build_bandsaw_table(spec):
                 if key == "rect":
                     cells.append(f"{inch_frac(v[0])} × {inch_frac(v[1])} ({v[0]:g} × {v[1]:g} mm)")
                 else:
-                    cells.append(("Ø" if key == "round" else "") + f"{inch_frac(v)} ({v:g} mm)")
+                    cells.append(("Ø" if key == "round" else "") + f"{inch_cap(m, v)} ({v:g} mm)")
             if any_val:
                 rows.append({"label": f"Capacity {ang_label(a)} — {lab}", "cells": cells, "type": "text", "cap": key == "round" and a == "0"})
     rows.append({"label": "Blade speed", "cells": [rng(m.get("blade_speed_m_min"), lambda x: x * 3.2808, "ft/min", "m/min") for m in models], "type": "text"})
@@ -486,7 +493,7 @@ def caption_for(f, alt):
             r = bandsaw_round0(m)
             rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
             parts = []
-            if r: parts.append(f"cuts Ø{inch_frac(r)} ({r:g} mm) round")
+            if r: parts.append(f"cuts Ø{inch_cap(m, r)} ({r:g} mm) round")
             if rect: parts.append(f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)")
             caps[m["name"]] = " · ".join(parts)
     elif spec:
@@ -519,7 +526,9 @@ def prepare_family(f):
         rounds = [bandsaw_round0(m) for m in f["specs"]["models"]]
         f["max_mm"] = max(rounds) if rounds else 0
         lo = min(r for r in rounds if r) if any(rounds) else 0
-        f["headline"] = f.get("headline") or (f"Round capacity Ø{inch_frac(lo)} – Ø{inch_frac(f['max_mm'])} ({lo:g}–{f['max_mm']:g} mm)" if lo != f["max_mm"] else f"Round capacity Ø{inch_frac(f['max_mm'])} ({f['max_mm']:g} mm)")
+        m_lo = next((m for m in f["specs"]["models"] if bandsaw_round0(m) == lo), {})
+        m_hi = next((m for m in f["specs"]["models"] if bandsaw_round0(m) == f["max_mm"]), {})
+        f["headline"] = f.get("headline") or (f"Round capacity Ø{inch_cap(m_lo, lo)} – Ø{inch_cap(m_hi, f['max_mm'])} ({lo:g}–{f['max_mm']:g} mm)" if lo != f["max_mm"] else f"Round capacity Ø{inch_cap(m_hi, f['max_mm'])} ({f['max_mm']:g} mm)")
     elif f.get("specs"):
         f["table"] = build_spec_table(f["specs"])
         f["max_mm"] = max_single_bar(f["specs"])
@@ -593,7 +602,7 @@ def range_table(subpages):
                     r = bandsaw_round0(m)
                     rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
                     rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "line": "Premium · Bekamak" if f.get("line") == "premium" else "Value · NovoTech",
-                                 "kind": sp.get("nav_label") or sp["title"], "round": f"Ø{inch_frac(r)} ({r:g} mm)" if r else "—",
+                                 "kind": sp.get("nav_label") or sp["title"], "round": f"Ø{inch_cap(m, r)} ({r:g} mm)" if r else "—",
                                  "rect": f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)" if rect else "—",
                                  "motor": hp_range(m.get("main_motor_kw")), "weight": f"{lb(m['weight_kg'])} ({m['weight_kg']:g} kg)" if m.get("weight_kg") else "—"})
                 continue
@@ -682,7 +691,7 @@ def ai_catalogue(pages):
                         r = bandsaw_round0(m)
                         rect = ((m.get("capacity_mm") or {}).get("0") or {}).get("rect")
                         angles = [a for a in (m.get("capacity_mm") or {}) if a != "0"]
-                        entry["round_capacity"] = f"Ø{inch_frac(r)} ({r:g} mm)" if r else None
+                        entry["round_capacity"] = f"Ø{inch_cap(m, r)} ({r:g} mm)" if r else None
                         entry["rectangular_capacity"] = f"{inch_frac(rect[0])} × {inch_frac(rect[1])} ({rect[0]:g} × {rect[1]:g} mm)" if rect else None
                         entry["miter_angles"] = [a.replace("+", "+") + "°" for a in angles] or None
                         entry["motor"] = hp_range(m.get("main_motor_kw"))

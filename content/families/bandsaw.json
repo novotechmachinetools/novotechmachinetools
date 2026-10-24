@@ -8850,7 +8850,7 @@
    "models_label": "BS-315GF",
    "summary": "Our most popular value-line saw: a 10-inch gear-driven semi-automatic with everything hydraulic — the vise clamps hydraulically, the bow descends on a hydraulic cylinder at a dialled-in feed rate and lifts itself hydraulically at the end of the cut. The bow swivels to both sides for 30°, 45° and 60° miters with fast angle stops, the gear-driven motor runs the band at a variable blade speed set on the VFD inverter drive. One operator loads, clamps and starts; the saw does the rest.",
    "features": [
-    "Ø9-7/8″ (250 mm) round / 12-1/2″ × 7-1/2″ at 0°; Ø9″ at 45° both sides, Ø5-7/8″ at 60°",
+    "Ø10″ (250 mm) round / 12-1/2″ × 7-1/2″ at 0°; Ø9″ at 45° both sides, Ø5-7/8″ at 60°",
     "Hydraulic clamping vise, hydraulic down-feed with variable feed rate and hydraulic bow up-lift",
     "Swivels left and right with fast angle stops at 30°, 45° and 60°",
     "Gear-driven 1.5 HP (1.1 kW) blade motor with variable blade speed by VFD inverter drive, up to 262 ft/min (80 m/min), and a separate 1 HP (0.75 kW) motor for the hydraulic pump",
@@ -8960,7 +8960,10 @@
        "Packing size": "1630 × 900 × 1550 mm",
        "Gross weight": "515 kg"
       },
-      "notes": ""
+      "notes": "",
+      "inch_labels": {
+       "250": "10″"
+      }
      }
     ]
    }
