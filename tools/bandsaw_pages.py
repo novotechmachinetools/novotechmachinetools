@@ -122,7 +122,7 @@ NF = {
         h1="NovoTech automatic band saws",
         intro="Automatic saws that feed, clamp, cut and count by themselves — roller feeders on the compact BS300x370, a hydraulic shuttle vise on the single-column BS-5040 and the swivel-head BS-460GB that miters to both sides, the scissor-type BS-650G with NC feeding and 60° miters, and CNC servo feeding with stepless blade speed on the double column BS-500G, 500GT and 850G. Value-line pricing with CSA-approved panels, a 1-year warranty and support from Mississauga, ON.",
         points=["Roller feed, shuttle vise or CNC servo feeding", "Piece counters and PLC job lists", "Round capacities from Ø11-3/4″ (300 mm) to Ø23-5/8″ (600 mm)"],
-        hero="nt-a12sc-1-cut", minis=["nt-a18-1-cut", "nt-a13-1-cut"],
+        hero="nt-a12-1-cut", minis=["nt-a18-1-cut", "nt-a12sc-1-cut"],
         lead="Roller-feed, shuttle-vise and CNC servo automatics from Ø11-3/4″ to Ø23-5/8″ (300–600 mm): feed, clamp, cut and count without an operator at the saw.",
         faq=[
             {"q": "Roller feed or shuttle vise — which is better?", "a": "Roller feed (BS300x370) is simple and fast for bar and tube in straight cuts. A shuttle vise (BS-5040, BS-460GB) grips the bar and moves it a set distance per stroke, which is more accurate and handles bundles; the CNC saws (BS-500G to BS-850G) position the feeder with a servo motor for the best repeatability."},
