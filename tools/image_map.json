@@ -10346,7 +10346,8 @@
   "trim": true,
   "quality": 84,
   "orig": "tools/src-images/novotech-photos/bs-315gf-01-front-branded.jpg",
-  "cut_size": 1280
+  "cut_size": 1408,
+  "cut_spec": "tools/cutout-specs/birefnet/bs-315gf-01-front.json"
  },
  "nt-bs315gf-2": {
   "src": "tools/src-images/cutouts/nt-bs315gf-2-cut.png",
