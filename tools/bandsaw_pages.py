@@ -25,8 +25,9 @@ FACTORY_VIDEO = {"id": "6xEVXrP8h3k", "title": "Bekamak corporate introduction v
 FIRST = {"novotech-bs-315gf": 0, "bekamak-bmso-ga": 0, "bekamak-bmso-gs": 2}   # rank within the group: 0 = top (BMSO 350GA = most popular automatic saw), 2 = after the others (320GS / GLS below the 270DGS)
 
 
-def fams(brand, cat):
-    ks = [k for k in FAM["order"] if FAM["families"][k]["brand"] == brand and FAM["families"][k]["group"] == cat]
+def fams(brand, cat, sub=None):
+    ks = [k for k in FAM["order"] if FAM["families"][k]["brand"] == brand and FAM["families"][k]["group"] == cat
+          and (sub is None or FAM["families"][k].get("subgroup") == sub)]
     return sorted(ks, key=lambda k: (FIRST.get(k, 1), ks.index(k)))
 
 
@@ -118,30 +119,32 @@ NF = {
         ]),
     "automatic": dict(
         title="Automatic Feed Band Saws — Value-Line CNC Bandsaws | NovoTech",
-        meta="Value-line automatic feed band saws: BS300x370 roller-feed, BS-5040 single-column, BS-460GB swivel-head miter saw with 20 ft stand, BS-500G to BS-850G CNC saws.",
+        meta="Value-line automatic feed band saws: BS300x370 roller-feed, BS-460GB swivel-head miter saw with 20 ft stand, BS-650G scissor-type NC saw and the BS-5040 single-column saw.",
         h1="NovoTech automatic band saws",
-        intro="Automatic saws that feed, clamp, cut and count by themselves — roller feeders on the compact BS300x370, the swivel-head BS-460GB that miters to both sides, the scissor-type BS-650G with NC feeding and 60° miters, a hydraulic shuttle vise on the single-column BS-5040, and CNC servo feeding with stepless blade speed on the double column BS-500G, 500GT and 850G. Value-line pricing with CSA-approved panels, a 1-year warranty and support from Mississauga, ON.",
-        points=["Roller feed, shuttle vise or CNC servo feeding", "Piece counters and PLC job lists", "Round capacities from Ø11-3/4″ (300 mm) to Ø23-5/8″ (600 mm)"],
+        intro="Automatic saws that feed, clamp, cut and count by themselves — roller feeders on the compact BS300x370, the swivel-head BS-460GB that miters to both sides, the scissor-type BS-650G with NC feeding and 60° miters and a hydraulic shuttle vise on the single-column BS-5040; the CNC double column BS-500G, 500GT and 850G are on the double-column page. Value-line pricing with CSA-approved panels, a 1-year warranty and support from Mississauga, ON.",
+        points=["Roller feed, NC feeder or hydraulic shuttle vise", "Piece counters and PLC job lists", "Round capacities from Ø11-3/4″ (300 mm) to Ø18-1/8″ (460 mm)"],
         hero="nt-a12-1-hero", minis=["nt-a18-1-cut", "nt-a12sc-1-cut"],
         lead="Roller-feed, shuttle-vise and CNC servo automatics from Ø11-3/4″ to Ø23-5/8″ (300–600 mm): feed, clamp, cut and count without an operator at the saw.",
         faq=[
             {"q": "Roller feed or shuttle vise — which is better?", "a": "Roller feed (BS300x370) is simple and fast for bar and tube in straight cuts. A shuttle vise (BS-5040, BS-460GB) grips the bar and moves it a set distance per stroke, which is more accurate and handles bundles; the CNC saws (BS-500G to BS-850G) position the feeder with a servo motor for the best repeatability."},
-            {"q": "Which automatic models cut miters?", "a": "The BS300x370H (0°–60° miter head), the BS-460GB (bow swivels both sides), the scissor-type BS-650G (automatic swivel to 60° right) and the BS-500G and 500GT with an automatic rotary bow to 45°."},
+            {"q": "Which automatic models cut miters?", "a": "The BS300x370H (0°–60° miter head), the BS-460GB (bow swivels both sides) and the scissor-type BS-650G (automatic swivel to 60° right)."},
             {"q": "Do automatic saws need a roller table?", "a": "The BS-460GB ships with a 20 ft material stand; for the other models a roller conveyor is optional and strongly recommended for bars longer than about 6 ft."},
             VOLT_FAQ,
         ]),
     "double-column": dict(
         title="Twin-Column Band Saws — Value-Line Double Column Bandsaws | NovoTech",
-        meta="Value-line twin-column band saws: TBK-4228 series, gear-driven TGK-4235 / 4240 and GZ4250/70 / 24 gantry saws for plate and bundles. Specs in inches and mm.",
+        meta="Value-line twin-column band saws: semi-automatic TBK-4228, TGK and GZ gantry saws, automatic TBK-4228B (improved) and CNC BS-500G / 500GT / 850G. Specs in inches.",
         h1="NovoTech double-column band saws",
-        intro="Twin-column saws at value-line prices: the bow travels vertically on two columns, so the cut stays square in solid bar, blocks and bundles. The TBK-4228 series offers manual feed, a 45° miter (mitre) version and two automatics; the TGK-4235 and 4240 add gear drive and hydraulic blade tension; the GZ4250/70 and GZ4260/120 are gantry saws for plate up to 47-1/4″ wide.",
-        points=["Twin-column guidance for square cuts in heavy stock", "Hydraulic down-feed and clamping on every model; automatic feed on the TBK-4228B / 4228B (improved)", "Round capacities from Ø11″ (280 mm) to Ø23-5/8″ (600 mm)"],
-        hero="nt-dc11a-1-cut", minis=["nt-dc14-1-cut", "nt-dc11-1-cut"],
-        lead="Twin-column saws from Ø11″ to Ø23-5/8″ (280–600 mm): hydraulic semi-automatics, a miter version, automatics with shuttle vise and gantry saws for plate and bundles.",
+        intro="Twin-column saws at value-line prices: the bow travels vertically on two columns, so the cut stays square in solid bar, blocks and bundles. The TBK-4228 and the 45° miter (mitre) TBK-4228A are the semi-automatics, the TBK-4228B (improved) the automatic; the TGK-4235 and 4240 add gear drive and hydraulic blade tension; the BS-500G, 500GT and 850G are CNC production saws with servo feeding and stepless blade speed; the GZ4250/70 and GZ4260/120 are gantry saws for plate up to 47-1/4″ wide.",
+        points=["Twin-column guidance for square cuts in heavy stock", "Semi-automatic and fully automatic models listed separately, smallest to largest", "Round capacities from Ø11″ (280 mm) to Ø23-5/8″ (600 mm)"],
+        hero="nt-dc11av-1-cut", minis=["nt-dc14-1-cut", "nt-dc11-1-cut"],
+        lead="Twin-column saws from Ø11″ to Ø23-5/8″ (280–600 mm): hydraulic semi-automatics, a miter version, automatics with shuttle vise, CNC production saws and gantry saws for plate and bundles.",
+        subgroups=[("auto", "NovoTech fully automatic double-column band saws", "Automatic feeding, clamping and cutting from a program, from Ø11″ to Ø23-5/8″ (280–600 mm) — smallest to largest."),
+                   ("semi", "NovoTech semi-automatic double-column band saws", "Hydraulic down-feed and clamping with manual material feed, from Ø11″ to Ø23-5/8″ (280–600 mm) — smallest to largest.")],
         faq=[
             {"q": "Why choose a double-column saw over a pivot saw?", "a": "Rigidity and capacity. The bow is guided on two columns, so there is no side load on the blade — cuts stay square in large solids and the blade lasts longer. The GZ4250/70 and GZ4260/120 gantry saws also take plate and bundles a pivot bow cannot."},
-            {"q": "Which value-line double-column saws are automatic?", "a": "The TBK-4228B and TBK-4228B (improved) feed and cut automatically with a shuttle vise; the AV adds stepless blade speed and a chip conveyor. The TBK-4228, TBK-4228A, TGK-4235, TGK-4240, GZ4250/70 and GZ4260/120 are hydraulic semi-automatics with manual material feed."},
-            {"q": "Can a value-line double-column saw cut miters?", "a": "The TBK-4228A swivels for cuts at 30° and 45° (Ø10-1/4″ and Ø6-3/4″). The other value-line double-column models are straight-cut saws."},
+            {"q": "Which value-line double-column saws are automatic?", "a": "The TBK-4228B (improved) feeds and cuts automatically with a shuttle vise, stepless blade speed and a chip conveyor; the BS-500G, BS-500GT and BS-850G are CNC production saws with servo feeding, hydraulic vises and stepless blade speed. The TBK-4228, TBK-4228A, TGK-4235, TGK-4240, GZ4250/70 and GZ4260/120 are hydraulic semi-automatics with manual material feed."},
+            {"q": "Can a value-line double-column saw cut miters?", "a": "The TBK-4228A swivels for cuts at 30° and 45° (Ø10-1/4″ and Ø6-3/4″), and the CNC BS-500G and BS-500GT have an automatic rotary bow to 45°. The other value-line double-column models are straight-cut saws."},
             VOLT_FAQ,
         ]),
 }
@@ -197,7 +200,9 @@ def page(brand, cat, spec):
         "catalogue_pdfs": [b["pdf"]],
         "line_key": b["key"],
         "origin_feature": ORIGIN[brand],
-        "groups": [{"id": f"{b['slug']}-{cat}", "brand": b["key"], "title": f"{b['name']} {CAT_TITLE[cat].lower()}", "lead": spec["lead"], "families": fams(brand, cat)}],
+        "groups": ([{"id": f"{b['slug']}-{cat}-{sid}", "brand": b["key"], "title": title, "lead": lead, "families": fams(brand, cat, sid)} for sid, title, lead in spec["subgroups"]]
+                   if spec.get("subgroups") else
+                   [{"id": f"{b['slug']}-{cat}", "brand": b["key"], "title": f"{b['name']} {CAT_TITLE[cat].lower()}", "lead": spec["lead"], "families": fams(brand, cat)}]),
         "alt_line": ({"href": f"{SLUGS[(other, cat)]}.html", "label": f"{BRAND[other]['name']} {CAT_TITLE[cat].lower()}",
                       "line": BRAND[other]["line"], "brand": other} if cat in (BK if other == "bekamak" else NF) else None),
         "faq_title": f"Questions we get asked about {b['name']} {CAT_TITLE[cat].lower()}",

@@ -26,6 +26,7 @@
   "novotech-bs-460gb",
   "novotech-bs-650g",
   "novotech-bs-5040",
+  "novotech-tbk-4228b",
   "novotech-bs-cnc",
   "novotech-tbk-4228",
   "novotech-tgk-4235",
@@ -9727,11 +9728,86 @@
     ]
    }
   },
+  "novotech-tbk-4228b": {
+   "id": "novotech-tbk-4228b",
+   "brand": "novotech",
+   "line": "value",
+   "group": "double-column",
+   "subgroup": "auto",
+   "name": "TBK-4228B (improved) automatic double column band saw, 11″",
+   "short": "TBK-4228B (improved)",
+   "models_label": "TBK-4228B (improved)",
+   "summary": "The automatic version of the 11-inch twin-column saw, in its improved form: a hydraulic shuttle vise feeds the bar to a limit-switch stop, the three-position vise clamps single bars or bundles, the bow cuts and returns, and an automatic chip conveyor clears the swarf. Blade speed is stepless from an inverter, the redesigned hydraulic vise holds short remnants, and the PLC counts the pieces — load a bundle, set the length and count, and walk away.",
+   "features": [
+    "Ø11″ (280 mm) round / 11″ × 11″ square",
+    "Automatic feed and cut with a hydraulic shuttle vise; feed length set by limit switch; 3-position vise for bundle cutting",
+    "Variable blade speed 0–200 ft/min (0–61 m/min) by inverter",
+    "Automatic chip conveyor; new hydraulic vise design",
+    "Belt drive, 4 HP (3 kW) main motor and 0.7 HP (0.55 kW) hydraulic pump motor; work light, coolant and material stand included"
+   ],
+   "optional": [
+    "Roller stand",
+    "Extra blades"
+   ],
+   "images": [
+    "nt-dc11av-1",
+    "nt-dc11av-3",
+    "nt-dc11av-4",
+    "nt-dc11-stand"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "TBK-4228B (improved)",
+      "capacity_mm": {
+       "0": {
+        "round": 280,
+        "rect": [
+         280,
+         280
+        ],
+        "square": 280
+       }
+      },
+      "main_motor_kw": 3.0,
+      "hydraulic_motor_kw": 0.55,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "0-61",
+      "band_mm": [
+       3505,
+       27,
+       0.9
+      ],
+      "working_height_mm": null,
+      "weight_kg": 990,
+      "dims_mm": [
+       2250,
+       2010,
+       1640
+      ],
+      "feed_length_mm": null,
+      "other": {
+       "Feeding": "Automatic, hydraulic shuttle vise",
+       "Vise": "Hydraulic, new clamp design",
+       "Blade tensioning": "Mechanical",
+       "Drive": "V-belt, inverter",
+       "Chip conveyor": "Automatic",
+       "Gross weight": "1160 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
   "novotech-bs-cnc": {
    "id": "novotech-bs-cnc",
    "brand": "novotech",
    "line": "value",
-   "group": "automatic",
+   "group": "double-column",
+   "subgroup": "auto",
    "name": "BS-500G, BS-500GT and BS-850G CNC double column automatic band saws, 13-3/4″ to 23-5/8″",
    "short": "BS-500G / 500GT / 850G CNC saws",
    "models_label": "BS-500G 13-3/4″ · BS-500GT 16-3/8″ · BS-850G 23-5/8″",
@@ -9892,17 +9968,17 @@
    "brand": "novotech",
    "line": "value",
    "group": "double-column",
-   "name": "TBK-4228 series double column band saws, 11″",
-   "short": "TBK-4228 saws",
-   "models_label": "TBK-4228 · TBK-4228A · TBK-4228B · TBK-4228B (improved)",
-   "summary": "Twin-column saws for Ø11″ / 11″ × 11″ stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off on every model. Choose the base machine with hand-wheel feed (TBK-4228), the miter version that cuts at 30° and 45° (TBK-4228A), the automatic with a 3-position shuttle vise (TBK-4228B) or the automatic with stepless blade speed, chip conveyor and the new vise design (TBK-4228B (improved)).",
+   "subgroup": "semi",
+   "name": "TBK-4228 and TBK-4228A semi-automatic double column band saws, 11″",
+   "short": "TBK-4228 / 4228A",
+   "models_label": "TBK-4228 · TBK-4228A",
+   "summary": "Twin-column semi-automatic saws for Ø11″ / 11″ × 11″ stock: the bow travels vertically on two columns, so the cut stays square whatever the feed pressure. Hydraulic down-feed with variable speed, hydraulic clamping and automatic shut-off at the end of the cut; the operator positions the bar by hand. Choose the base machine (TBK-4228) or the miter version that swivels for cuts at 30° and 45° (TBK-4228A).",
    "features": [
     "Ø11″ (280 mm) round / 11″ × 11″ square; TBK-4228A: Ø10-1/4″ at 30°, Ø6-3/4″ at 45°",
     "Double column — vertical, rigid bow travel",
     "Hydraulic variable down-feed, hydraulic clamping, auto shut-off",
-    "TBK-4228B / 4228B (improved): automatic feed and cut, 3-position vise for bundle cutting, feed length by limit switch",
-    "TBK-4228B (improved): variable blade speed 0–200 ft/min, automatic chip conveyor",
-    "Belt drive, 4 HP (3 kW) motor; work light, coolant and material stand included"
+    "Belt drive with three blade speeds, 4 HP (3 kW) main motor and 0.7 HP (0.55 kW) hydraulic pump motor",
+    "Work light, coolant and material stand included"
    ],
    "optional": [
     "Roller stand",
@@ -9913,10 +9989,6 @@
     "nt-dc11t-1",
     "nt-dc11t-2",
     "nt-dc11t-3",
-    "nt-dc11a-1",
-    "nt-dc11av-1",
-    "nt-dc11av-3",
-    "nt-dc11av-4",
     "nt-dc11-stand"
    ],
    "videos": [],
@@ -10016,83 +10088,6 @@
        "Gross weight": "965 kg"
       },
       "notes": ""
-     },
-     {
-      "name": "TBK-4228B",
-      "capacity_mm": {
-       "0": {
-        "round": 280,
-        "rect": [
-         280,
-         280
-        ],
-        "square": 280
-       }
-      },
-      "main_motor_kw": 3.0,
-      "hydraulic_motor_kw": 0.55,
-      "coolant_pump_kw": null,
-      "blade_speed_m_min": "27/45/69",
-      "band_mm": [
-       3505,
-       27,
-       0.9
-      ],
-      "working_height_mm": null,
-      "weight_kg": 990,
-      "dims_mm": [
-       2250,
-       2010,
-       1640
-      ],
-      "feed_length_mm": null,
-      "other": {
-       "Feeding": "Automatic, 3-position shuttle vise",
-       "Vise": "Hydraulic",
-       "Blade tensioning": "Mechanical",
-       "Drive": "V-belt, 3 speeds",
-       "Gross weight": "1160 kg"
-      },
-      "notes": ""
-     },
-     {
-      "name": "TBK-4228B (improved)",
-      "capacity_mm": {
-       "0": {
-        "round": 280,
-        "rect": [
-         280,
-         280
-        ],
-        "square": 280
-       }
-      },
-      "main_motor_kw": 3.0,
-      "hydraulic_motor_kw": 0.55,
-      "coolant_pump_kw": null,
-      "blade_speed_m_min": "0-61",
-      "band_mm": [
-       3505,
-       27,
-       0.9
-      ],
-      "working_height_mm": null,
-      "weight_kg": 990,
-      "dims_mm": [
-       2250,
-       2010,
-       1640
-      ],
-      "feed_length_mm": null,
-      "other": {
-       "Feeding": "Automatic, shuttle vise",
-       "Vise": "Hydraulic, new clamp design",
-       "Blade tensioning": "Mechanical",
-       "Drive": "V-belt, inverter",
-       "Chip conveyor": "Automatic",
-       "Gross weight": "1160 kg"
-      },
-      "notes": ""
      }
     ]
    }
@@ -10102,6 +10097,7 @@
    "brand": "novotech",
    "line": "value",
    "group": "double-column",
+   "subgroup": "semi",
    "name": "TGK-4235 and TGK-4240 gear-driven double column saws, 13-3/4″ and 15-3/4″",
    "short": "TGK-4235 / 4240",
    "models_label": "TGK-4235 · TGK-4240",
@@ -10209,6 +10205,7 @@
    "brand": "novotech",
    "line": "value",
    "group": "double-column",
+   "subgroup": "semi",
    "name": "GZ4250/70 and GZ4260/120 gantry double column saws, 19-3/4″ and 23-5/8″",
    "short": "GZ4250/70 / GZ4260/120",
    "models_label": "GZ4250/70 · GZ4260/120",

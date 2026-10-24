@@ -2902,7 +2902,7 @@
  },
  "nt-dc11-1": {
   "src": "tools/src-images/cutouts/nt-dc11-1-cut.png",
-  "alt": "NovoTech TBK-4228 double column band saw, 11-inch",
+  "alt": "NovoTech TBK-4228 double column band saw, 11″",
   "section": "bandsaw",
   "trim": true,
   "quality": 82
@@ -2937,11 +2937,11 @@
   "quality": 82
  },
  "nt-dc11av-1": {
-  "src": "tools/src-images/value-line/nt-dc11av-1.png",
-  "alt": "NovoTech TBK-4228B (improved) automatic double column band saw with variable speed",
+  "src": "tools/src-images/cutouts/nt-dc11av-1-cut.png",
+  "alt": "NovoTech TBK-4228B (improved) automatic double column band saw with variable speed, 11″",
   "section": "bandsaw",
-  "trim": false,
-  "quality": 82
+  "trim": true,
+  "quality": 84
  },
  "nt-dc11av-3": {
   "src": "tools/src-images/value-line/nt-dc11av-3.png",
@@ -10432,6 +10432,13 @@
  "nt-a12-1-hero": {
   "src": "tools/src-images/cutouts/nt-a12-1-hero.png",
   "alt": "NovoTech BS300x370 automatic band saw with roller feed, 11-3/4″",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nt-dc11av-1-cut": {
+  "src": "tools/src-images/cutouts/nt-dc11av-1-cut.png",
+  "alt": "NovoTech TBK-4228B (improved) automatic double column band saw with variable speed, 11″",
   "section": "bandsaw",
   "trim": true,
   "quality": 84
