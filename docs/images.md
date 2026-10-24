@@ -84,9 +84,12 @@ captions ("Band saw blade 1″ × .035″ (27 × 0.9 mm)").
 ## NovoTech's own photos (value line)
 
 Photos NovoTech takes of its own machines (warehouse / factory floor) live in `tools/src-images/novotech-photos/`
-with descriptive names (`bs-315gf-01-front-branded.jpg` …).  Full-machine shots are cut out with rembg
-(`tools/rembg_cutout.py` logic) and, because other machines stand behind them, finished with a hand-traced
-drop polygon above the bow and a keep polygon where rembg eats a dark part (the motor) — the cut-outs are
-committed in `tools/src-images/cutouts/nt-<model>-N-cut.png`; the page hero is the 1.5× Lanczos upscale
-(`nt-<model>-hero.png`).  Detail photos (gauges, guides, switches) stay as photos with `"cutout": false`.
-Pallet shots: the pallet is masked below the cabinet's bottom edge, never shown.
+with descriptive names (`bs-315gf-01-front-branded.jpg` …).  Full-machine shots are cut out with
+`tools/trace_cutout.py`: rembg (IS-Net) plus hand-traced polygons in source pixel coordinates, kept in
+`tools/cutout-specs/<photo>.json` — `drop` polygons remove the machines standing behind (traced along the
+top edge of the bow at 2–4× zoom with `grid.py`-style grids), `hole` polygons open the bow window and the gap
+under the bow so nothing shows through, `keep` polygons rescue chrome parts rembg drops (gauge, handwheel,
+motor).  The rule is that only the machine itself is visible — no neighbouring machine, floor, pallet or
+wall anywhere in the cut-out.  Results are committed in `tools/src-images/cutouts/nt-<model>-N-cut.png`;
+the page hero is the 1.5× Lanczos upscale (`nt-<model>-hero.png`).  Detail photos (gauges, guides,
+switches) stay as photos with `"cutout": false`.
