@@ -10331,14 +10331,13 @@
   "quality": 82
  },
  "nt-bs315gf-hero": {
-  "src": "tools/src-images/cutouts/nt-bs315gf-hero.png",
+  "src": "tools/src-images/novotech-photos/bs-315gf-hero-user.png",
   "alt": "NovoTech BS-315GF 10″ full-hydraulic double-miter band saw",
   "section": "bandsaw",
   "trim": true,
   "quality": 84,
-  "orig": "tools/src-images/novotech-photos/bs-315gf-01-front-branded.jpg",
-  "cut_size": 1280,
-  "upscale": 1.5
+  "upscale": 1.6,
+  "cutout": false
  },
  "nt-bs315gf-1": {
   "src": "tools/src-images/cutouts/nt-bs315gf-1-cut.png",

@@ -37600,31 +37600,30 @@
   "variants": [
    {
     "w": 1200,
-    "h": 1336,
+    "h": 973,
     "file": "img/bandsaw/nt-bs315gf-hero-1200.webp",
-    "bytes": 173428
+    "bytes": 151678
    },
    {
     "w": 800,
-    "h": 891,
+    "h": 649,
     "file": "img/bandsaw/nt-bs315gf-hero-800.webp",
-    "bytes": 104508
+    "bytes": 91880
    },
    {
     "w": 480,
-    "h": 535,
+    "h": 389,
     "file": "img/bandsaw/nt-bs315gf-hero-480.webp",
-    "bytes": 53268
+    "bytes": 45800
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 144,
-   "h": 160,
+   "w": 160,
+   "h": 130,
    "file": "img/bandsaw/nt-bs315gf-hero-thumb.webp",
-   "bytes": 8872
-  },
-  "cut": "birefnet"
+   "bytes": 9220
+  }
  },
  "nt-bs315gf-1": {
   "alt": "NovoTech BS-315GF 10\u2033 full-hydraulic double-miter band saw \u2014 front view with control panel",
