@@ -232,10 +232,10 @@ FAMILIES = [
          ]),
     # ================================================================ DOUBLE COLUMN
     dict(id="novotech-tbk-4228b", group="double-column", subgroup="auto",
-         name="TBK-4228B (improved) automatic double column band saw, 11″",
-         short="TBK-4228B (improved)",
-         models_label="TBK-4228B (improved)",
-         summary="The automatic version of the 11-inch twin-column saw, in its improved form: a hydraulic shuttle vise feeds the bar to a limit-switch stop, the three-position vise clamps single bars or bundles, the bow cuts and returns, and an automatic chip conveyor clears the swarf. Blade speed is stepless from an inverter, the redesigned hydraulic vise holds short remnants, and the PLC counts the pieces — load a bundle, set the length and count, and walk away.",
+         name="TBK-4228B automatic double column band saw, 11″",
+         short="TBK-4228B",
+         models_label="TBK-4228B",
+         summary="The automatic version of the 11-inch twin-column saw: a hydraulic shuttle vise feeds the bar to a limit-switch stop, the three-position vise clamps single bars or bundles, the bow cuts and returns, and an automatic chip conveyor clears the swarf. Blade speed is stepless from an inverter, the redesigned hydraulic vise holds short remnants, and the PLC counts the pieces — load a bundle, set the length and count, and walk away.",
          features=[
              "Ø11″ (280 mm) round / 11″ × 11″ square",
              "Automatic feed and cut with a hydraulic shuttle vise; feed length set by limit switch; 3-position vise for bundle cutting",
@@ -247,7 +247,7 @@ FAMILIES = [
          images=["nt-dc11av-1", "nt-dc11av-3", "nt-dc11av-4", "nt-dc11-stand"],
          videos=[],
          models=[
-             model("TBK-4228B (improved)", {"0": cap(280, [280, 280], 280)},
+             model("TBK-4228B", {"0": cap(280, [280, 280], 280)},
                    3.0, "0-61", [3505, 27, 0.9], 990, hyd=0.55, dims=[2250, 2010, 1640],
                    other={"Feeding": "Automatic, hydraulic shuttle vise", "Vise": "Hydraulic, new clamp design", "Blade tensioning": "Mechanical", "Drive": "V-belt, inverter", "Chip conveyor": "Automatic", GROSS: "1160 kg"}),
          ]),
