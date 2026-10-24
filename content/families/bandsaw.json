@@ -8978,7 +8978,7 @@
     "Ø13″ (330 mm) round / 18″ × 9-7/8″ at 0°; Ø12″ at 45° both sides, Ø8″ at 60°",
     "Hydraulic clamping vise and hydraulic bow descent",
     "Bow swivels left and right with quick lock",
-    "Gear drive, 2/3 HP (1.5/2.2 kW) motor — variable blade speed by VFD inverter drive, up to 315 ft/min (96 m/min)",
+    "Gear-driven 3 HP (2.2 kW) blade motor with variable blade speed by VFD inverter drive, up to 315 ft/min (96 m/min), and a separate 2 HP (1.5 kW) motor for the hydraulic pump",
     "BS-460G-JC: movable control panel"
    ],
    "optional": [
@@ -9030,8 +9030,8 @@
         "square": null
        }
       },
-      "main_motor_kw": "1.5-2.2",
-      "hydraulic_motor_kw": null,
+      "main_motor_kw": "2.2",
+      "hydraulic_motor_kw": 1.5,
       "coolant_pump_kw": null,
       "blade_speed_m_min": "Variable, VFD inverter drive — up to 315 ft/min (96 m/min)",
       "band_mm": [
@@ -9087,8 +9087,8 @@
         "square": null
        }
       },
-      "main_motor_kw": "1.5-2.2",
-      "hydraulic_motor_kw": null,
+      "main_motor_kw": "2.2",
+      "hydraulic_motor_kw": 1.5,
       "coolant_pump_kw": null,
       "blade_speed_m_min": "Variable, VFD inverter drive — up to 315 ft/min (96 m/min)",
       "band_mm": [
@@ -9124,7 +9124,7 @@
    "features": [
     "Ø15-3/4″ (400 mm) round / 21-3/4″ × 14-1/4″ rectangular at 0°; miter cuts up to 60°",
     "Automatic bow descent and return on a hydraulic cylinder",
-    "Gear-driven 3/3.8 HP (2.2/2.8 kW) motor — variable blade speed by VFD inverter drive, up to 230 ft/min (70 m/min)",
+    "Gear-driven 3.8 HP (2.8 kW) blade motor with variable blade speed by VFD inverter drive, up to 230 ft/min (70 m/min), and a separate 3 HP (2.2 kW) motor for the hydraulic pump",
     "Sintered-carbide blade guides, quick-clamp sliding vise",
     "Powerful coolant pump; 1-3/8″ × 0.043″ × 173-1/2″ blade"
    ],
@@ -9167,8 +9167,8 @@
         "square": null
        }
       },
-      "main_motor_kw": "2.2-2.8",
-      "hydraulic_motor_kw": null,
+      "main_motor_kw": "2.8",
+      "hydraulic_motor_kw": 2.2,
       "coolant_pump_kw": null,
       "blade_speed_m_min": "Variable, VFD inverter drive — up to 230 ft/min (70 m/min)",
       "band_mm": [
@@ -9562,7 +9562,7 @@
     "Automatic feeding and clamping, max. 19-3/4″ (500 mm) per stroke; standard PLC",
     "20 ft material stand included (feeder width 18″, height 33-1/2″)",
     "Bow swivels left and right; safety guard net",
-    "Gear drive, 2/3 HP (1.5/2.2 kW) motor — variable blade speed by VFD inverter drive"
+    "Gear-driven 3 HP (2.2 kW) blade motor with variable blade speed by VFD inverter drive and a separate 2 HP (1.5 kW) motor for the hydraulic pump"
    ],
    "optional": [
     "Extra stands and supports",
@@ -9614,8 +9614,8 @@
         "square": null
        }
       },
-      "main_motor_kw": "1.5-2.2",
-      "hydraulic_motor_kw": null,
+      "main_motor_kw": "2.2",
+      "hydraulic_motor_kw": 1.5,
       "coolant_pump_kw": null,
       "blade_speed_m_min": "Variable, VFD inverter drive — up to 315 ft/min (96 m/min)",
       "band_mm": [
@@ -10076,7 +10076,7 @@
     "TGK-4235: Ø13-3/4″ / 13-3/4″ × 13-3/4″ · TGK-4240: Ø15-3/4″ / 15-3/4″ × 15-3/4″",
     "Double column structure, vertical lifting, high stability",
     "Hydraulic variable down-feed, hydraulic clamping, hydraulic blade tensioning",
-    "Gear drive, 3/3.8 HP or 4/5.4 HP motor — variable blade speed by VFD inverter drive",
+    "Gear-driven 3.8 HP (2.8 kW) or 5.4 HP (4 kW) blade motor with variable blade speed by VFD inverter drive; separate 0.7 HP / 1 HP hydraulic pump motor",
     "Work light, coolant pump and material stand included"
    ],
    "optional": [
@@ -10105,7 +10105,7 @@
         "square": 350
        }
       },
-      "main_motor_kw": "2.2-2.8",
+      "main_motor_kw": "2.8",
       "hydraulic_motor_kw": 0.55,
       "coolant_pump_kw": 0.04,
       "blade_speed_m_min": "Variable, VFD inverter drive — up to 226 ft/min (69 m/min)",
@@ -10142,7 +10142,7 @@
         "square": 400
        }
       },
-      "main_motor_kw": "3.0-4.0",
+      "main_motor_kw": "4.0",
       "hydraulic_motor_kw": 0.75,
       "coolant_pump_kw": 0.9,
       "blade_speed_m_min": "Variable, VFD inverter drive — up to 184 ft/min (56 m/min)",
