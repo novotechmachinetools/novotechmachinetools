@@ -13354,5 +13354,908 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "dn-xl-1": {
+  "src": "tools/src-images/dener/dn-xl-1.png",
+  "alt": "Dener XL hydraulic CNC press brake — front view with the ESA control on its swing arm",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-2": {
+  "src": "tools/src-images/dener/dn-xl-2.png",
+  "alt": "Dener XL hydraulic CNC press brake — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-3": {
+  "src": "tools/src-images/dener/dn-xl-3.png",
+  "alt": "Dener XL hydraulic press brake, long bed — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-control": {
+  "src": "tools/src-images/dener/dn-xl-control.png",
+  "alt": "Dener XL — ESA S875 W 21″ 3D CNC control on the swing arm",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xf-1": {
+  "src": "tools/src-images/dener/dn-xf-1.png",
+  "alt": "Dener XL 1560 / 2060 compact hydraulic press brake, 5 – 6.7 ft",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xf-2": {
+  "src": "tools/src-images/dener/dn-xf-2.png",
+  "alt": "Dener XL hydraulic press brake — front view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xf-3": {
+  "src": "tools/src-images/dener/dn-xf-3.png",
+  "alt": "Dener XL — control arm and front support",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-video-1": {
+  "src": "tools/src-images/dener/dn-xl-video-1.jpg",
+  "alt": "Dener XL 30175 — 10 ft × 193 US tons hydraulic press brake bending",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-video-2": {
+  "src": "tools/src-images/dener/dn-xl-video-2.jpg",
+  "alt": "Dener XL 30175 with 7-axis back gauge",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-backgauge": {
+  "src": "tools/src-images/dener/dn-xl-backgauge.jpg",
+  "alt": "Dener ATF 6-axis back gauge — X1, X2, R1, R2, Z1, Z2",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-follower": {
+  "src": "tools/src-images/dener/dn-xl-follower.jpg",
+  "alt": "CNC sheet follower supporting a large sheet during the bend",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xh-1": {
+  "src": "tools/src-images/dener/dn-xh-1.png",
+  "alt": "Dener XH hybrid press brake — servo-driven pump on the XL frame",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xh-2": {
+  "src": "tools/src-images/dener/dn-xh-2.png",
+  "alt": "Dener XH hybrid press brake — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xh-3": {
+  "src": "tools/src-images/dener/dn-xh-3.png",
+  "alt": "Dener XH hybrid — ESA 3D CNC control",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xh-4": {
+  "src": "tools/src-images/dener/dn-xh-4.png",
+  "alt": "Dener press brake — European-style segmented punch and die with hydraulic clamping",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xh-video": {
+  "src": "tools/src-images/dener/dn-xh-video.jpg",
+  "alt": "Dener hybrid press brake in production",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-1": {
+  "src": "tools/src-images/dener/dn-ddm-1.png",
+  "alt": "Dener DDM servo-electric CNC press brake — front view with ESA S875 W control",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-2": {
+  "src": "tools/src-images/dener/dn-ddm-2.png",
+  "alt": "Dener DDM servo-electric press brake — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-3": {
+  "src": "tools/src-images/dener/dn-ddm-3.png",
+  "alt": "Dener DDM servo-electric press brake, 13 ft — side view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-control": {
+  "src": "tools/src-images/dener/dn-ddm-control.png",
+  "alt": "Dener DDM — ESA S875 W 21″ 3D touchscreen control",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-video-1": {
+  "src": "tools/src-images/dener/dn-ddm-video-1.jpg",
+  "alt": "Dener DDM 15030 — 10 ft × 165 US tons servo-electric press brake",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-video-2": {
+  "src": "tools/src-images/dener/dn-ddm-video-2.jpg",
+  "alt": "Dener DDM 4015 servo-electric press brake bending",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-web-1": {
+  "src": "tools/src-images/dener/dn-ddm-web-1.png",
+  "alt": "Dener DDM 4015 servo-electric press brake in a KUKA robot bending cell",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-ddm-web-2": {
+  "src": "tools/src-images/dener/dn-ddm-web-2.jpg",
+  "alt": "Dener DDM 10030 servo-electric press brake with the back gauge — front view",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-dds-1": {
+  "src": "tools/src-images/dener/dn-dds-1.png",
+  "alt": "Dener DDS ball-screw electric press brake — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-dds-2": {
+  "src": "tools/src-images/dener/dn-dds-2.png",
+  "alt": "Dener DDS 2090 ball-screw press brake — compact front view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-dds-3": {
+  "src": "tools/src-images/dener/dn-dds-3.png",
+  "alt": "Dener DDS — ball-screw drive and back gauge",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-dds-4": {
+  "src": "tools/src-images/dener/dn-dds-4.png",
+  "alt": "Dener DDS — ESA S640 15″ control",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-dds-video": {
+  "src": "tools/src-images/dener/dn-dds-video.jpg",
+  "alt": "Dener DDS 4013 ball-screw press brake bending a bracket",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-bs-1": {
+  "src": "tools/src-images/dener/dn-bs-1.png",
+  "alt": "Dener BS hydraulic swing beam shear — front view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-bs-2": {
+  "src": "tools/src-images/dener/dn-bs-2.png",
+  "alt": "Dener BS hydraulic swing beam shear — three-quarter view with the NC control",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-bs-3": {
+  "src": "tools/src-images/dener/dn-bs-3.png",
+  "alt": "Dener BS swing beam shear — rear three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-das-1": {
+  "src": "tools/src-images/dener/dn-das-1.png",
+  "alt": "Dener DAS CNC hydraulic guillotine shear — front view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-das-2": {
+  "src": "tools/src-images/dener/dn-das-2.png",
+  "alt": "Dener DAS CNC guillotine shear with the ESA 630 control arm",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-das-3": {
+  "src": "tools/src-images/dener/dn-das-3.png",
+  "alt": "Dener DAS CNC guillotine shear — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-shear-video-1": {
+  "src": "tools/src-images/dener/dn-shear-video-1.jpg",
+  "alt": "Dener shear cutting plate — the sheet on the slider table",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-shear-video-2": {
+  "src": "tools/src-images/dener/dn-shear-video-2.jpg",
+  "alt": "Dener hydraulic guillotine shear in production",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-shear-web": {
+  "src": "tools/src-images/dener/dn-shear-web.jpg",
+  "alt": "Dener AS 3006 CNC hydraulic shear — 10 ft × 1/4″",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-1": {
+  "src": "tools/src-images/dener/dn-gfl-1.png",
+  "alt": "Dener GFL fiber laser cutting machine — closed cabin, front-left view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-2": {
+  "src": "tools/src-images/dener/dn-gfl-2.png",
+  "alt": "Dener GFL fiber laser — pallet changer with the second table out",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-3": {
+  "src": "tools/src-images/dener/dn-gfl-3.png",
+  "alt": "Dener GFL fiber laser cutting machine — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-4": {
+  "src": "tools/src-images/dener/dn-gfl-4.png",
+  "alt": "Dener GFL fiber laser with the pallet changer — right view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-5": {
+  "src": "tools/src-images/dener/dn-gfl-5.png",
+  "alt": "Dener GFL fiber laser — control side",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-control": {
+  "src": "tools/src-images/dener/dn-gfl-control.png",
+  "alt": "Dener GFL — CNC control and remote handset",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-video-1": {
+  "src": "tools/src-images/dener/dn-gfl-video-1.jpg",
+  "alt": "Dener fiber laser cutting head at work",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-video-2": {
+  "src": "tools/src-images/dener/dn-gfl-video-2.jpg",
+  "alt": "Dener 6 kW fiber laser cutting mild steel",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-laser-web": {
+  "src": "tools/src-images/dener/dn-laser-web.jpg",
+  "alt": "Dener fiber laser cutting machine on the shop floor",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-smart-1": {
+  "src": "tools/src-images/dener/dn-smart-1.png",
+  "alt": "Dener Smart Laser 6020 fiber laser cutting machine — closed type with exchange table",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-smart-2": {
+  "src": "tools/src-images/dener/dn-smart-2.png",
+  "alt": "Dener Smart fiber laser — exchange table out, rear view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-1": {
+  "src": "tools/src-images/dener/dn-tube-1.png",
+  "alt": "Dener E-FTL tube and profile fiber laser — chucks and following supports",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-2": {
+  "src": "tools/src-images/dener/dn-tube-2.png",
+  "alt": "Dener E-FTL tube laser with the automatic bundle loader",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-3": {
+  "src": "tools/src-images/dener/dn-tube-3.png",
+  "alt": "Dener E-FTL tube laser — loading side",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-4": {
+  "src": "tools/src-images/dener/dn-tube-4.png",
+  "alt": "Dener FTL tube and profile fiber laser, 12 m — full line",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-5": {
+  "src": "tools/src-images/dener/dn-tube-5.png",
+  "alt": "Dener FTL 12 m tube laser — loader and cutting cell",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-6": {
+  "src": "tools/src-images/dener/dn-tube-6.png",
+  "alt": "Dener FTL tube laser — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-7": {
+  "src": "tools/src-images/dener/dn-tube-7.png",
+  "alt": "Dener tube laser — bundle loader detail",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-panel-1": {
+  "src": "tools/src-images/dener/dn-panel-1.png",
+  "alt": "Dener CNC panel bender — three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-panel-2": {
+  "src": "tools/src-images/dener/dn-panel-2.png",
+  "alt": "Dener CNC panel bender — front view with the manipulator",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-panel-3": {
+  "src": "tools/src-images/dener/dn-panel-3.png",
+  "alt": "Dener CNC panel bender — right view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-panel-4": {
+  "src": "tools/src-images/dener/dn-panel-4.png",
+  "alt": "Dener CNC panel bender — left view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-panel-5": {
+  "src": "tools/src-images/dener/dn-panel-5.png",
+  "alt": "Dener panel bender — bending blades and blank-holder",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-panel-6": {
+  "src": "tools/src-images/dener/dn-panel-6.png",
+  "alt": "Dener panel bender — bending unit detail",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-panel-7": {
+  "src": "tools/src-images/dener/dn-panel-7.png",
+  "alt": "Dener CNC panel bender — rear three-quarter view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "video--tAymdJwXjU": {
+  "src": "/home/claude/gms-site/yt/-tAymdJwXjU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-0Cz5xYoNVec": {
+  "src": "/home/claude/gms-site/yt/0Cz5xYoNVec.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-0pvdG-DYO-E": {
+  "src": "/home/claude/gms-site/yt/0pvdG-DYO-E.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-2_Vz-v-rFqU": {
+  "src": "/home/claude/gms-site/yt/2_Vz-v-rFqU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-30squAhhy_o": {
+  "src": "/home/claude/gms-site/yt/30squAhhy_o.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-3zHK_2sp3U0": {
+  "src": "/home/claude/gms-site/yt/3zHK_2sp3U0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-4Yp6X9tP6J8": {
+  "src": "/home/claude/gms-site/yt/4Yp6X9tP6J8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-54vb6tx96aI": {
+  "src": "/home/claude/gms-site/yt/54vb6tx96aI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-6_UQ6NBUUO4": {
+  "src": "/home/claude/gms-site/yt/6_UQ6NBUUO4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-9J_m5e1Z7-M": {
+  "src": "/home/claude/gms-site/yt/9J_m5e1Z7-M.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-A1i_NljuVQo": {
+  "src": "/home/claude/gms-site/yt/A1i_NljuVQo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-AGifmIGQOso": {
+  "src": "/home/claude/gms-site/yt/AGifmIGQOso.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-BUFzeYAAE_Y": {
+  "src": "/home/claude/gms-site/yt/BUFzeYAAE_Y.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-C0mG6rJkHdU": {
+  "src": "/home/claude/gms-site/yt/C0mG6rJkHdU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-CFkFmrRCaFc": {
+  "src": "/home/claude/gms-site/yt/CFkFmrRCaFc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-EFTY5a-Ri1Q": {
+  "src": "/home/claude/gms-site/yt/EFTY5a-Ri1Q.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-FpHkRYeceyA": {
+  "src": "/home/claude/gms-site/yt/FpHkRYeceyA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-IGgudJFrO-I": {
+  "src": "/home/claude/gms-site/yt/IGgudJFrO-I.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-JVG9kw1nIGk": {
+  "src": "/home/claude/gms-site/yt/JVG9kw1nIGk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-KrQ5S2YMDlk": {
+  "src": "/home/claude/gms-site/yt/KrQ5S2YMDlk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-L9fTrifVFiA": {
+  "src": "/home/claude/gms-site/yt/L9fTrifVFiA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-LIDHOoM8Abk": {
+  "src": "/home/claude/gms-site/yt/LIDHOoM8Abk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-MkaKtgulHKw": {
+  "src": "/home/claude/gms-site/yt/MkaKtgulHKw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Msy6YHM5dIU": {
+  "src": "/home/claude/gms-site/yt/Msy6YHM5dIU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Myd9TVSUFj8": {
+  "src": "/home/claude/gms-site/yt/Myd9TVSUFj8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-NxTq4uw3n5k": {
+  "src": "/home/claude/gms-site/yt/NxTq4uw3n5k.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-P3ynLUu2VYU": {
+  "src": "/home/claude/gms-site/yt/P3ynLUu2VYU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-R5D3JCTN-Ww": {
+  "src": "/home/claude/gms-site/yt/R5D3JCTN-Ww.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-VGd39pN2zBM": {
+  "src": "/home/claude/gms-site/yt/VGd39pN2zBM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-VjuvZWb_O_g": {
+  "src": "/home/claude/gms-site/yt/VjuvZWb_O_g.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-WhowsXg9Z84": {
+  "src": "/home/claude/gms-site/yt/WhowsXg9Z84.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Ymz5qW36zTs": {
+  "src": "/home/claude/gms-site/yt/Ymz5qW36zTs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ZujRJUhckG4": {
+  "src": "/home/claude/gms-site/yt/ZujRJUhckG4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-_Aqyyfk97KI": {
+  "src": "/home/claude/gms-site/yt/_Aqyyfk97KI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-_f6ZcqTYmNg": {
+  "src": "/home/claude/gms-site/yt/_f6ZcqTYmNg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-_rdb1prKsxc": {
+  "src": "/home/claude/gms-site/yt/_rdb1prKsxc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-dXorm3f4fBY": {
+  "src": "/home/claude/gms-site/yt/dXorm3f4fBY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-da7UnOripzc": {
+  "src": "/home/claude/gms-site/yt/da7UnOripzc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-dla5MjevgT0": {
+  "src": "/home/claude/gms-site/yt/dla5MjevgT0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-dlmcihzfRuI": {
+  "src": "/home/claude/gms-site/yt/dlmcihzfRuI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-dsZ8f7BKP84": {
+  "src": "/home/claude/gms-site/yt/dsZ8f7BKP84.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-eQ7NqRHVSvM": {
+  "src": "/home/claude/gms-site/yt/eQ7NqRHVSvM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-fG6TQ8TseSo": {
+  "src": "/home/claude/gms-site/yt/fG6TQ8TseSo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-hnrRt3WFhqw": {
+  "src": "/home/claude/gms-site/yt/hnrRt3WFhqw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-jMqwk_yyCBo": {
+  "src": "/home/claude/gms-site/yt/jMqwk_yyCBo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-n4gFLrlC-es": {
+  "src": "/home/claude/gms-site/yt/n4gFLrlC-es.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-nKbuxZGSjdQ": {
+  "src": "/home/claude/gms-site/yt/nKbuxZGSjdQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-nlCZhY7olZ8": {
+  "src": "/home/claude/gms-site/yt/nlCZhY7olZ8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-oM9GCeSY9EI": {
+  "src": "/home/claude/gms-site/yt/oM9GCeSY9EI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-pRxr7CB2pDQ": {
+  "src": "/home/claude/gms-site/yt/pRxr7CB2pDQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-qLRQDobmnXQ": {
+  "src": "/home/claude/gms-site/yt/qLRQDobmnXQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-qUb8fUZr0A4": {
+  "src": "/home/claude/gms-site/yt/qUb8fUZr0A4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-sq1YPi0sQTU": {
+  "src": "/home/claude/gms-site/yt/sq1YPi0sQTU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-vIWys546tWY": {
+  "src": "/home/claude/gms-site/yt/vIWys546tWY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-wtCPgw_5GaY": {
+  "src": "/home/claude/gms-site/yt/wtCPgw_5GaY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-zDGupa7NevE": {
+  "src": "/home/claude/gms-site/yt/zDGupa7NevE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-zPexjUvz7jg": {
+  "src": "/home/claude/gms-site/yt/zPexjUvz7jg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

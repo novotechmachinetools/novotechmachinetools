@@ -71,7 +71,7 @@
      "href": "press-brake.html",
      "children": [
       {
-       "label": "Dener CNC press brakes",
+       "label": "CNC press brakes — hydraulic, hybrid, electric",
        "href": "press-brake.html"
       },
       {
@@ -81,8 +81,16 @@
      ]
     },
     {
-     "label": "Laser cutters",
+     "label": "Panel benders",
+     "href": "panel-bender.html"
+    },
+    {
+     "label": "Sheet laser cutters",
      "href": "laser-cutting-machine.html"
+    },
+    {
+     "label": "Tube laser cutters",
+     "href": "tube-laser-cutting-machine.html"
     },
     {
      "label": "Shears",
@@ -448,6 +456,14 @@
    "country_code": "DE",
    "line": "WIKUS",
    "tagline": "Made in Germany — WIKUS bimetal, carbide-tipped and coated band saw blades for metal cutting, welded to length and supported in Canada by NovoTech"
+  },
+  "dener": {
+   "name": "Dener",
+   "manufacturer": "Dener Makina",
+   "country": "Turkey",
+   "country_code": "TR",
+   "line": "Dener",
+   "tagline": "Made in Turkey since 1974 — Dener Makina press brakes, shears, sheet and tube fiber lasers and panel benders, with Dener Canada in Mississauga; sold, installed and supported in Canada by NovoTech"
   }
  }
 }

@@ -185,3 +185,10 @@ downloaded as one JSON; the photos (`/home/claude/wikus/img`, 1040 × 585 applic
 metal-cutting blades (DIAGRIT, TCGRIT, TCTYRE and the wood blades are left out), copies the photos to
 `tools/src-images/wikus/` (section `wikus`, `cutout: False` — they are scene photos) and the data sheets to
 `src/files/wikus/<slug>.pdf`, which the family "Download PDF brochure" button links to.
+
+## Dener (section `dener`, tools/dener_photos.py)
+
+Sources: Dener's 2026 product renders (`/home/claude/dener/render/`, PNG with a real alpha channel — no BiRefNet, `trim` only; downscaled
+to 2,800 px on export), frames from Dener's videos (`video/`) and Dener's website photos (`web/`), all staged from the user's laptop
+(`…\DENER\products pictures 2026\Ürünler Render`, `pictures from video`, `Ürünler`).  Dener is shown under its own brand, so the logo
+stays.  Keys `dn-*`; `tools/dener_keys.txt` is written by `tools/dener_pages.py`.

@@ -1,0 +1,106 @@
+{
+ "slug": "panel-bender",
+ "template": "category.html",
+ "family_set": "dener",
+ "title": "CNC Panel Bender, 79″ × 1/8″, 15 Servo Axes | NovoTech",
+ "artifact_title": "CNC panel bender — four-side bending of blanks to 79 × 49″ with no tooling changes",
+ "meta_description": "Automatic CNC panel bender sold and installed in Canada: folds all four sides of blanks to 79 × 49″ in one setup — 14 ga mild steel, 16 ga stainless, 1/8″ aluminum — 0.2 s per bend, 15 servo axes, no tooling changes.",
+ "h1": "CNC panel bender — four-side bending of blanks to 79 × 49″ with no tooling changes",
+ "intro": "A panel bender is the machine that replaces a press brake for boxes, doors, enclosures, panels and HVAC parts: the blank is clamped by a blank-holder and a bending blade folds the flange up or down, hems it or forms a box corner in 0.2 s, while the manipulator turns the part to bend the next side — all four sides in one setup, no tooling changes, no skilled operator. NovoTech sells the Dener panel bender in Canada: blanks to 78.7 × 49.2″ (2,000 × 1,250 mm), flanges to 6.7″, 14 ga mild steel, 16 ga stainless and 1/8″ aluminum, 15 servo axes with 0.001 mm positioning, 100 % electric at about 2.8 kW average draw. Automatic loading and unloading arms turn it into an unattended cell. Installed and supported from Mississauga, ON.",
+ "hero_points": [
+  "Blanks to 78.7 × 49.2″, flanges to 6.7″ (11.8″ on request), 1 mm minimum radius, boxes from 5.5 × 7.5″ inside",
+  "14 ga mild steel, 16 ga stainless, 1/8″ aluminum — 0.2 s per bend, 295 ft/min feeding",
+  "15 servo axes, 0.001 mm positioning, 100 % electric, about 50 dB; loading / unloading arms available"
+ ],
+ "hero_image": "dn-panel-1",
+ "hero_image_secondary": [
+  "dn-panel-2",
+  "dn-panel-5"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "CNC panel bender — four-side bending of blanks to 79 × 49″ with no tooling changes"
+  }
+ ],
+ "hero_brand_line": "Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries, Dener Canada in Mississauga. Sold, installed and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "panel-group",
+   "title": "CNC panel bender",
+   "lead": "Fully servo-driven four-side bending cell with a 3D control — one model, 79 × 49″ blanks.",
+   "brand": "dener",
+   "families": [
+    "dn-panel"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Panel bender or press brake?",
+   "a": "A press brake bends one line at a time and the operator handles the part between bends; a panel bender clamps the blank once and forms every side — up, down, hems, box corners — automatically, in 0.2 s per bend and with the same accuracy on the first and the thousandth part. For boxes, doors, cabinets, enclosures, appliance and HVAC panels in sheet to 14 ga it is five to ten times faster than a brake and needs no skilled operator or tooling changes. For plate, long single bends, deep boxes or small batches of unusual parts the press brake stays the better machine — most shops run both."
+  },
+  {
+   "q": "What sheet can it bend?",
+   "a": "Mild steel to 14 ga (2.0 mm), stainless to 16 ga (1.5 mm), aluminum to 1/8″ (3.0 mm); blanks to 78.7 × 49.2″ (2,000 × 1,250 mm) and flange heights to 6.7″ (170 mm), 11.8″ on request; minimum bend radius 1 mm, minimum four-side box 5.5 × 7.5″ inside. Pre-painted and film-covered sheet is bent without marking thanks to the brush table and blade geometry."
+  },
+  {
+   "q": "How is it programmed?",
+   "a": "From the 3D model or a DXF on the 3D control: the software unfolds the part, sets the bending sequence and simulates it, with automatic compensation for springback. A new part is programmed in minutes and runs without test bends; programs can be prepared offline on a PC."
+  },
+  {
+   "q": "Can it run unattended?",
+   "a": "With the optional loading and unloading arms the machine takes blanks from a stack and places finished parts on a pallet, so it runs lights-out behind a laser. The 15-axis servo drive and the 2.8 kW average consumption make it the cheapest machine on the floor to keep running."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about panel benders",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Dener-Panel-Bender-2026.pdf",
+  "label": "Download the panel bender brochure",
+  "size": "PDF · 1 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in Turkey by Dener Makina",
+  "text": "Dener has built sheet-metal machinery in Kayseri since 1974 — a 1.3 million m² campus, its own design awards (Good Design, European Product Design, Design Turkey) and offices in the USA, Canada, Germany and India."
+ },
+ "section_label": "Panel benders",
+ "related_pages": [
+  {
+   "href": "press-brake.html",
+   "label": "CNC press brakes"
+  },
+  {
+   "href": "laser-cutting-machine.html",
+   "label": "Sheet laser cutters"
+  },
+  {
+   "href": "shear-cutting.html",
+   "label": "Metal shears"
+  },
+  {
+   "href": "corner-notcher.html",
+   "label": "Corner notchers"
+  }
+ ],
+ "related_title": "More sheet-metal machinery from NovoTech",
+ "intro_video": {
+  "id": "A1i_NljuVQo",
+  "title": "DENER Group introduction video",
+  "thumb": "video-A1i_NljuVQo",
+  "duration": "PT2M52S"
+ },
+ "intro_video_heading": "Inside the factory — where the machines are built",
+ "intro_video_text": "A tour of Dener Makina in Kayseri, Turkey, where the press brakes, shears and fiber lasers on this page are designed and built.",
+ "nav_label": "Panel benders"
+}

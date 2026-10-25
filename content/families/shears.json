@@ -5,7 +5,9 @@
   "nt-shear-srgm-hfr",
   "nt-shear-srgm-fr",
   "nt-shear-srgm-hcl",
-  "nt-shear-srgm-cl"
+  "nt-shear-srgm-cl",
+  "dn-bs",
+  "dn-das"
  ],
  "families": {
   "nt-shear-srgm-h": {
@@ -1413,6 +1415,924 @@
     "size": "PDF · 2 MB · imperial units"
    },
    "group": "shear-line"
+  },
+  "dn-bs": {
+   "id": "dn-bs",
+   "brand": "dener",
+   "name": "BS / BSY hydraulic swing beam shears, 1/4″ – 5/8″ × 6.8 – 13.5 ft",
+   "short": "BS swing beam shears",
+   "models_label": "BSY 2006 – BS 4016 · 11 models",
+   "summary": "The hydraulic shear for plate from 1/4″ to 5/8″: a swing beam on two cylinders cuts the full length in one stroke, 8 to 22 strokes a minute, with an NC back gauge, hydraulic hold-downs and a welded frame that thousands of shops run every day. The light BSY 2006 – 3006 cut 1/4″ over 6.8 – 10 ft; the BS 3006 – 4016 go to 5/8″ (16 mm) mild steel over 10 and 13.5 ft. Single-point blade-gap adjustment, sheet slider table and squaring arm are standard.",
+   "features": [
+    "1/4″ to 5/8″ (6 – 16 mm) mild steel; 5/32″ to 15/32″ stainless; 5/16″ to 7/8″ aluminum",
+    "HT 071 NC control: back gauge, retract, stroke counter, 99 programs × 20 steps",
+    "Motorised ball-screw back gauge, 0.1 mm accuracy, 39.4″ (1,000 mm) stroke",
+    "Single-point manual blade-gap adjustment; cutting-length adjustment by timer",
+    "Hydraulic hold-downs; 1 m flip-up front guard; sheet support arms and squaring arm",
+    "Sheet slider table and back slider; remote foot pedal with emergency stop",
+    "Welded steel frame proven on thousands of machines",
+    "CSA-approved electrical panel, 600 V 3-phase standard"
+   ],
+   "optional": [
+    "Longer front support arms, 6.6 or 9.8 ft (2 / 3 m)",
+    "Pneumatic sheet support system",
+    "Motorised blade-clearance adjustment from a CNC control (ESA 630)",
+    "Shadow-line laser cutting line; light curtain",
+    "Hydraulic oil cooler",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-bs-2",
+    "dn-bs-1",
+    "dn-bs-3",
+    "dn-shear-video-2"
+   ],
+   "videos": [
+    {
+     "id": "dla5MjevgT0",
+     "title": "DENER BS 3006 — 10 ft × 1/4″ swing beam shear with NC control",
+     "duration": "PT0M26S",
+     "thumb": "video-dla5MjevgT0"
+    },
+    {
+     "id": "3zHK_2sp3U0",
+     "title": "DENER BS 3006 — 10 ft × 1/4″ hydraulic shear",
+     "duration": "PT0M53S",
+     "thumb": "video-3zHK_2sp3U0"
+    },
+    {
+     "id": "hnrRt3WFhqw",
+     "title": "DENER BS 3006 NC shear — 10 ft × 1/4″",
+     "duration": "PT0M31S",
+     "thumb": "video-hnrRt3WFhqw"
+    },
+    {
+     "id": "54vb6tx96aI",
+     "title": "NC / CNC hydraulic shears — DENER AS and BS series",
+     "duration": "PT1M26S",
+     "thumb": "video-54vb6tx96aI"
+    },
+    {
+     "id": "WhowsXg9Z84",
+     "title": "NC hydraulic shear with pneumatic sheet support",
+     "duration": "PT2M24S",
+     "thumb": "video-WhowsXg9Z84"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BS / BSY hydraulic swing beam shears",
+      "sub": "11 models · 1/4″ – 5/8″ × 6.8 – 13.5 ft",
+      "models": [
+       "BSY 2006",
+       "BSY 2606",
+       "BSY 3006",
+       "BS 3006",
+       "BS 4006",
+       "BS 3010",
+       "BS 4010",
+       "BS 3013",
+       "BS 4013",
+       "BS 3016",
+       "BS 4016"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "42 kg/mm² · 60,000 psi",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, stainless steel",
+        "sub": "70 kg/mm² · 100,000 psi",
+        "cells": [
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "9/32″ (7 mm)",
+         "9/32″ (7 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, aluminum",
+        "sub": "20 kg/mm²",
+        "cells": [
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "11/16″ (18 mm)",
+         "11/16″ (18 mm)",
+         "7/8″ (22 mm)",
+         "7/8″ (22 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "6.8 ft · 81.9″ (2,080 mm)",
+         "8.6 ft · 103.1″ (2,620 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "10 ft · 120.7″ (3,065 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "22",
+         "20",
+         "18",
+         "18",
+         "14",
+         "12",
+         "8",
+         "12",
+         "8",
+         "12",
+         "8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Swing beam angle",
+        "sub": "",
+        "cells": [
+         "1.39°",
+         "1.39°",
+         "1.39°",
+         "1.39°",
+         "1.33°",
+         "2°",
+         "2°",
+         "2.5°",
+         "2°",
+         "2.5°",
+         "2°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "79 US gal (300 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "111 × 143 × 73″ (2,830 × 3,640 × 1,860 mm)",
+         "133 × 144 × 73″ (3,380 × 3,645 × 1,860 mm)",
+         "153 × 138 × 69″ (3,880 × 3,495 × 1,750 mm)",
+         "153 × 146 × 85″ (3,880 × 3,700 × 2,150 mm)",
+         "195 × 145 × 84″ (4,955 × 3,695 × 2,140 mm)",
+         "154 × 148 × 96″ (3,900 × 3,770 × 2,430 mm)",
+         "195 × 151 × 95″ (4,950 × 3,830 × 2,415 mm)",
+         "154 × 151 × 99″ (3,920 × 3,840 × 2,520 mm)",
+         "196 × 151 × 99″ (4,970 × 3,840 × 2,508 mm)",
+         "155 × 152 × 98″ (3,940 × 3,865 × 2,500 mm)",
+         "196 × 152 × 99″ (4,970 × 3,865 × 2,508 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Width without front supports",
+        "sub": "",
+        "cells": [
+         "83.3″ (2,115 mm)",
+         "83.3″ (2,115 mm)",
+         "83.1″ (2,110 mm)",
+         "84.3″ (2,140 mm)",
+         "85.0″ (2,160 mm)",
+         "90.7″ (2,305 mm)",
+         "90.7″ (2,305 mm)",
+         "90.9″ (2,308 mm)",
+         "90.9″ (2,308 mm)",
+         "88.0″ (2,235 mm)",
+         "91.3″ (2,320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "10,582 lb (4,800 kg)",
+         "12,125 lb (5,500 kg)",
+         "14,330 lb (6,500 kg)",
+         "17,637 lb (8,000 kg)",
+         "22,928 lb (10,400 kg)",
+         "26,455 lb (12,000 kg)",
+         "33,069 lb (15,000 kg)",
+         "30,865 lb (14,000 kg)",
+         "37,148 lb (16,850 kg)",
+         "35,538 lb (16,120 kg)",
+         "40,565 lb (18,400 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BSY 2006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "6.8 ft · 81.9″ (2,080 mm)",
+       "22",
+       "14.8 HP (11 kW)",
+       "10,582 lb (4,800 kg)"
+      ]
+     },
+     {
+      "name": "BSY 2606",
+      "glance": [
+       "1/4″ (6 mm)",
+       "8.6 ft · 103.1″ (2,620 mm)",
+       "20",
+       "14.8 HP (11 kW)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "BSY 3006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "18",
+       "14.8 HP (11 kW)",
+       "14,330 lb (6,500 kg)"
+      ]
+     },
+     {
+      "name": "BS 3006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10 ft · 120.7″ (3,065 mm)",
+       "18",
+       "14.8 HP (11 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 4006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "14",
+       "14.8 HP (11 kW)",
+       "22,928 lb (10,400 kg)"
+      ]
+     },
+     {
+      "name": "BS 3010",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "12",
+       "29.5 HP (22 kW)",
+       "26,455 lb (12,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 4010",
+      "glance": [
+       "3/8″ (10 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "8",
+       "29.5 HP (22 kW)",
+       "33,069 lb (15,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 3013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "12",
+       "40.2 HP (30 kW)",
+       "30,865 lb (14,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 4013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "8",
+       "40.2 HP (30 kW)",
+       "37,148 lb (16,850 kg)"
+      ]
+     },
+     {
+      "name": "BS 3016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "12",
+       "40.2 HP (30 kW)",
+       "35,538 lb (16,120 kg)"
+      ]
+     },
+     {
+      "name": "BS 4016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "8",
+       "40.2 HP (30 kW)",
+       "40,565 lb (18,400 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are Dener's ratings over the full blade length for mild steel of 60,000 psi (42 kg/mm²), stainless of 100,000 psi (70 kg/mm²) and aluminum; the model number is the metric cutting length × capacity. Dimensions are overall L (along the blade) × W × H with the standard front supports."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf",
+    "label": "Download the hydraulic shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "shear-swing"
+  },
+  "dn-das": {
+   "id": "dn-das",
+   "brand": "dener",
+   "name": "DAS CNC hydraulic guillotine shears, 1/4″ – 3/4″ × 10 – 20 ft",
+   "short": "DAS CNC guillotine shears",
+   "models_label": "DAS 3006 – DAS 6020 · 13 models",
+   "summary": "The production shear: a guillotine beam on linear rollers with a variable cutting angle, so thin sheet is cut fast and flat at 0.5° and 3/4″ plate at 3° with less distortion. The ESA 630 CNC sets back gauge, blade gap and angle from the thickness and material the operator keys in; 16 – 33 hydraulic hold-downs, a 1 m ball-screw back gauge and the front photocell guard are standard. Thirteen models: 1/4″ to 3/4″ (6 – 20 mm) mild steel over 10, 13 and 20 ft, from 8,000 to 55,000 kg.",
+   "features": [
+    "1/4″ to 3/4″ (6 – 20 mm) mild steel, 5/32″ to 9/16″ stainless, over 10 – 20 ft; up to 25 cuts a minute",
+    "ESA 630 CNC control, 10″ touchscreen: back gauge, blade gap and cutting angle set by the control from the thickness and material; 100-step programs",
+    "Motorised ball-screw back gauge, 0.1 mm accuracy, 39.4″ (1,000 mm) stroke",
+    "Variable cutting angle and automatic blade-gap adjustment",
+    "Hydraulic hold-downs; front protection frame with photocell; sheet slider table and squaring arm",
+    "Remote foot pedal with emergency stop",
+    "Welded steel frame, cutting beam on rollers — rigid against torsion over the full length",
+    "CSA-approved electrical panel, 600 V 3-phase standard"
+   ],
+   "optional": [
+    "Longer front support arms, 6.6 or 9.8 ft (2 / 3 m)",
+    "Pneumatic sheet support system (return of the cut piece)",
+    "Shadow-line laser cutting line; light curtain",
+    "Hydraulic oil cooler",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-das-3",
+    "dn-das-1",
+    "dn-das-2",
+    "dn-shear-web",
+    "dn-shear-video-1"
+   ],
+   "videos": [
+    {
+     "id": "wtCPgw_5GaY",
+     "title": "DENER DAS 3006 — 10 ft × 1/4″ CNC hydraulic shear with pneumatic back support",
+     "duration": "PT0M39S",
+     "thumb": "video-wtCPgw_5GaY"
+    },
+    {
+     "id": "eQ7NqRHVSvM",
+     "title": "CNC hydraulic metal shear AS 3006 DENER",
+     "duration": "PT1M2S",
+     "thumb": "video-eQ7NqRHVSvM"
+    },
+    {
+     "id": "54vb6tx96aI",
+     "title": "NC / CNC hydraulic shears — DENER AS and BS series",
+     "duration": "PT1M26S",
+     "thumb": "video-54vb6tx96aI"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DAS CNC hydraulic guillotine shears",
+      "sub": "13 models · 1/4″ – 3/4″ × 10 – 20 ft",
+      "models": [
+       "DAS 3006",
+       "DAS 4006",
+       "DAS 3010",
+       "DAS 3013",
+       "DAS 4013",
+       "DAS 3016",
+       "DAS 4016",
+       "DAS 3020",
+       "DAS 4020",
+       "DAS 6006",
+       "DAS 6013",
+       "DAS 6016",
+       "DAS 6020"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "42 kg/mm² · 60,000 psi",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "1/4″ (6 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, stainless steel",
+        "sub": "70 kg/mm² · 100,000 psi",
+        "cells": [
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "9/32″ (7 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "9/16″ (14 mm)",
+         "9/16″ (14 mm)",
+         "5/32″ (4 mm)",
+         "11/32″ (9 mm)",
+         "15/32″ (12 mm)",
+         "9/16″ (14 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, aluminum",
+        "sub": "20 kg/mm²",
+        "cells": [
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "1/2″ (13 mm)",
+         "11/16″ (18 mm)",
+         "11/16″ (18 mm)",
+         "7/8″ (22 mm)",
+         "7/8″ (22 mm)",
+         "1″ (26 mm)",
+         "1″ (26 mm)",
+         "5/16″ (8 mm)",
+         "5/8″ (16 mm)",
+         "7/8″ (22 mm)",
+         "1″ (26 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.6″ (6,110 mm)",
+         "20.1 ft · 241.7″ (6,140 mm)",
+         "20.1 ft · 241.7″ (6,140 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "variable",
+        "cells": [
+         "0.5 – 2°",
+         "0.5 – 2°",
+         "0.5 – 2°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 2.5°",
+         "0.5 – 2.5°",
+         "0.5 – 2.5°",
+         "0.5 – 2.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hold-down cylinders",
+        "sub": "",
+        "cells": [
+         "16",
+         "22",
+         "16",
+         "16",
+         "22",
+         "16",
+         "22",
+         "16",
+         "22",
+         "33",
+         "31",
+         "31",
+         "31"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at min / max angle",
+        "cells": [
+         "25 / 12",
+         "20 / 10",
+         "22 / 10",
+         "16 / 7",
+         "15 / 6",
+         "14 / 6",
+         "13 / 5",
+         "12 / 5",
+         "11 / 4",
+         "18 / 6.5",
+         "11.5 / 5.3",
+         "6.1 / 3.9",
+         "6 / 3.5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "49.6 HP (37 kW)",
+         "14.8 HP (11 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "48 US gal (180 L)",
+         "48 US gal (180 L)",
+         "53 US gal (200 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "198 US gal (750 L)",
+         "198 US gal (750 L)",
+         "53 US gal (200 L)",
+         "106 US gal (400 L)",
+         "198 US gal (750 L)",
+         "198 US gal (750 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "154 × 133 × 85″ (3,900 × 3,380 × 2,165 mm)",
+         "194 × 133 × 88″ (4,940 × 3,380 × 2,225 mm)",
+         "154 × 135 × 90″ (3,920 × 3,440 × 2,290 mm)",
+         "154 × 139 × 102″ (3,900 × 3,520 × 2,590 mm)",
+         "193 × 138 × 104″ (4,900 × 3,500 × 2,650 mm)",
+         "154 × 144 × 104″ (3,900 × 3,650 × 2,635 mm)",
+         "195 × 144 × 106″ (4,950 × 3,660 × 2,700 mm)",
+         "156 × 148 × 104″ (3,950 × 3,750 × 2,650 mm)",
+         "199 × 148 × 108″ (5,050 × 3,755 × 2,740 mm)",
+         "277 × 157 × 102″ (7,035 × 4,000 × 2,580 mm)",
+         "279 × 160 × 107″ (7,090 × 4,055 × 2,730 mm)",
+         "283 × 173 × 109″ (7,200 × 4,400 × 2,780 mm)",
+         "283 × 175 × 109″ (7,200 × 4,450 × 2,780 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Width without front supports",
+        "sub": "",
+        "cells": [
+         "84.6″ (2,150 mm)",
+         "85.8″ (2,180 mm)",
+         "87.8″ (2,230 mm)",
+         "88.0″ (2,235 mm)",
+         "89.4″ (2,270 mm)",
+         "88.2″ (2,240 mm)",
+         "88.6″ (2,250 mm)",
+         "92.1″ (2,340 mm)",
+         "92.5″ (2,350 mm)",
+         "107.1″ (2,720 mm)",
+         "109.3″ (2,775 mm)",
+         "122.0″ (3,100 mm)",
+         "124.0″ (3,150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "17,637 lb (8,000 kg)",
+         "24,251 lb (11,000 kg)",
+         "22,046 lb (10,000 kg)",
+         "30,424 lb (13,800 kg)",
+         "36,817 lb (16,700 kg)",
+         "36,156 lb (16,400 kg)",
+         "47,399 lb (21,500 kg)",
+         "42,439 lb (19,250 kg)",
+         "62,832 lb (28,500 kg)",
+         "60,627 lb (27,500 kg)",
+         "82,673 lb (37,500 kg)",
+         "109,129 lb (49,500 kg)",
+         "121,254 lb (55,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DAS 3006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "25 / 12",
+       "14.8 HP (11 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "20 / 10",
+       "14.8 HP (11 kW)",
+       "24,251 lb (11,000 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3010",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "22 / 10",
+       "29.5 HP (22 kW)",
+       "22,046 lb (10,000 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "16 / 7",
+       "40.2 HP (30 kW)",
+       "30,424 lb (13,800 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "15 / 6",
+       "40.2 HP (30 kW)",
+       "36,817 lb (16,700 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "14 / 6",
+       "40.2 HP (30 kW)",
+       "36,156 lb (16,400 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "13 / 5",
+       "40.2 HP (30 kW)",
+       "47,399 lb (21,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3020",
+      "glance": [
+       "3/4″ (20 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "12 / 5",
+       "49.6 HP (37 kW)",
+       "42,439 lb (19,250 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4020",
+      "glance": [
+       "3/4″ (20 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "11 / 4",
+       "49.6 HP (37 kW)",
+       "62,832 lb (28,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "20 ft · 240.2″ (6,100 mm)",
+       "18 / 6.5",
+       "14.8 HP (11 kW)",
+       "60,627 lb (27,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "20 ft · 240.6″ (6,110 mm)",
+       "11.5 / 5.3",
+       "49.6 HP (37 kW)",
+       "82,673 lb (37,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "20.1 ft · 241.7″ (6,140 mm)",
+       "6.1 / 3.9",
+       "60.3 HP (45 kW)",
+       "109,129 lb (49,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6020",
+      "glance": [
+       "3/4″ (20 mm)",
+       "20.1 ft · 241.7″ (6,140 mm)",
+       "6 / 3.5",
+       "60.3 HP (45 kW)",
+       "121,254 lb (55,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are Dener's ratings over the full blade length for mild steel of 60,000 psi (42 kg/mm²), stainless of 100,000 psi (70 kg/mm²) and aluminum; the model number is the metric cutting length × capacity. Dimensions are overall L (along the blade) × W × H with the standard front supports."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf",
+    "label": "Download the hydraulic shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "shear-cnc"
   }
  }
 }

@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
 OLD_SITE = {
     "products", "about-us", "contact-us", "brochures", "metal-fabricating-articles", "privacy-policy",
-    "press-brake", "laser-cutting-machine", "plate-roller-bender",
+    "plate-roller-bender",
     "folder-sheet-metal-brake", "horizontal-press-brake",
     "plate-beveler",
     "lock-former", "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",

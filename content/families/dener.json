@@ -1,0 +1,3338 @@
+{
+ "order": [
+  "dn-xl-small",
+  "dn-xl-large",
+  "dn-xh",
+  "dn-ddm",
+  "dn-dds",
+  "dn-gfl",
+  "dn-smart-closed",
+  "dn-smart-semi",
+  "dn-smart-open",
+  "dn-eftl",
+  "dn-ftl",
+  "dn-panel"
+ ],
+ "families": {
+  "dn-xl-small": {
+   "id": "dn-xl-small",
+   "brand": "dener",
+   "name": "XL hydraulic CNC press brakes, 66 – 353 US tons × 5 – 10 ft",
+   "short": "XL hydraulic press brakes 5 – 10 ft",
+   "models_label": "XL 1560 – XL 30320 · 8 models",
+   "summary": "The Dener XL is the hydraulic press brake most Canadian shops buy from us: a stress-relieved monoblock frame, Hawe hydraulics at constant pressure, Y1-Y2 ram axes and an X back gauge on ball screw and linear guides, driven from a 15″ ESA S640 2D graphic control — the operator draws the part and the control works out the sequence, tonnage and back-gauge positions. Eight models from 66 US tons × 5 ft to 353 US tons × 10 ft, with European-style tooling, front supports and the full list of options from CNC crowning and 6-axis back gauges to angle measurement and robot cells.",
+   "features": [
+    "Monoblock welded frame, stress-relieved and machined in one setting; fixed upper table, 100 % free bending area between the housings",
+    "X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes",
+    "15″ ESA S640 2D graphic CNC control",
+    "European-style segmented punch and die with European-style holders",
+    "Hawe hydraulic system; constant pressure",
+    "Anti-panic foot pedal with emergency stop",
+    "Front support arms on linear rail",
+    "Side and rear safety guards",
+    "CSA-approved electrical panel, 600 V 3-phase standard"
+   ],
+   "optional": [
+    "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control",
+    "CE-certified light barrier (DSP laser finger protection)",
+    "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)",
+    "Manual or CNC motorised crowning",
+    "Automatic angle measurement (bending accuracy 0.05°)",
+    "Sheet follower support",
+    "Hydraulic oil cooler; electrical panel cooler; automatic lubrication",
+    "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
+    "Tandem configuration to 60 ft and 1,800 US tons",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-xl-1",
+    "dn-xl-2",
+    "dn-xf-1",
+    "dn-xl-video-1",
+    "dn-xl-backgauge",
+    "dn-xh-4",
+    "dn-xl-control"
+   ],
+   "videos": [
+    {
+     "id": "0pvdG-DYO-E",
+     "title": "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake",
+     "duration": "PT1M13S",
+     "thumb": "video-0pvdG-DYO-E"
+    },
+    {
+     "id": "CFkFmrRCaFc",
+     "title": "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake",
+     "duration": "PT1M0S",
+     "thumb": "video-CFkFmrRCaFc"
+    },
+    {
+     "id": "qUb8fUZr0A4",
+     "title": "DENER XL 5 ft × 160 ton press brake",
+     "duration": "PT0M36S",
+     "thumb": "video-qUb8fUZr0A4"
+    },
+    {
+     "id": "pRxr7CB2pDQ",
+     "title": "XL 13 ft × 220 ton with laser angle measurement and sheet follower",
+     "duration": "PT1M30S",
+     "thumb": "video-pRxr7CB2pDQ"
+    },
+    {
+     "id": "dXorm3f4fBY",
+     "title": "DENER XL 13 ft × 320 ton CNC hydraulic press brake",
+     "duration": "PT1M27S",
+     "thumb": "video-dXorm3f4fBY"
+    },
+    {
+     "id": "fG6TQ8TseSo",
+     "title": "Hydraulic press brake with ATF 6-axis back gauge",
+     "duration": "PT1M39S",
+     "thumb": "video-fG6TQ8TseSo"
+    },
+    {
+     "id": "BUFzeYAAE_Y",
+     "title": "Laser angle measurement system on the XL press brake",
+     "duration": "PT2M1S",
+     "thumb": "video-BUFzeYAAE_Y"
+    },
+    {
+     "id": "VGd39pN2zBM",
+     "title": "CNC press brake instruction with the ESA control",
+     "duration": "PT38M59S",
+     "thumb": "video-VGd39pN2zBM"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "XL hydraulic press brakes · 5 – 10 ft",
+      "sub": "8 models · 66 – 353 US tons",
+      "models": [
+       "XL 1560",
+       "XL 2060",
+       "XL 26100",
+       "XL 30100",
+       "XL 30135",
+       "XL 30175",
+       "XL 30220",
+       "XL 30320"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "66 US tons (60 t)",
+         "66 US tons (60 t)",
+         "110 US tons (100 t)",
+         "110 US tons (100 t)",
+         "149 US tons (135 t)",
+         "193 US tons (175 t)",
+         "243 US tons (220 t)",
+         "353 US tons (320 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "5.1 ft · 61.0″ (1,550 mm)",
+         "6.7 ft · 80.7″ (2,050 mm)",
+         "8.5 ft · 102.4″ (2,600 mm)",
+         "9.9 ft · 118.9″ (3,020 mm)",
+         "9.9 ft · 118.9″ (3,020 mm)",
+         "9.9 ft · 118.9″ (3,020 mm)",
+         "9.9 ft · 118.9″ (3,020 mm)",
+         "9.9 ft · 118.9″ (3,020 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between frames",
+        "sub": "",
+        "cells": [
+         "49.2″ (1,250 mm)",
+         "65.0″ (1,650 mm)",
+         "84.6″ (2,150 mm)",
+         "100.6″ (2,555 mm)",
+         "100.6″ (2,555 mm)",
+         "100.6″ (2,555 mm)",
+         "100.6″ (2,555 mm)",
+         "100.6″ (2,555 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)",
+         "8.7″ (220 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "12.6″ (320 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "16.1″ (410 mm)",
+         "16.1″ (410 mm)",
+         "20.9″ (530 mm)",
+         "20.9″ (530 mm)",
+         "21.7″ (550 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "25.6″ (650 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "7.09 in/s (180 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "4.92 in/s (125 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "4.72 in/s (120 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "35.4″ (900 mm)",
+         "35.4″ (900 mm)",
+         "35.4″ (900 mm)",
+         "35.4″ (900 mm)",
+         "35.4″ (900 mm)",
+         "35.4″ (900 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "20.1 HP (15 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "26 US gal (100 L)",
+         "26 US gal (100 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "106 US gal (400 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "96 × 87 × 94″ (2,445 × 2,200 × 2,390 mm)",
+         "112 × 87 × 94″ (2,845 × 2,200 × 2,390 mm)",
+         "131 × 89 × 109″ (3,320 × 2,260 × 2,780 mm)",
+         "147 × 89 × 109″ (3,725 × 2,260 × 2,780 mm)",
+         "147 × 90 × 112″ (3,745 × 2,280 × 2,835 mm)",
+         "147 × 90 × 119″ (3,745 × 2,280 × 3,030 mm)",
+         "147 × 90 × 120″ (3,745 × 2,290 × 3,055 mm)",
+         "149 × 90 × 122″ (3,785 × 2,290 × 3,100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Width without front supports",
+        "sub": "",
+        "cells": [
+         "64.4″ (1,635 mm)",
+         "64.4″ (1,635 mm)",
+         "67.3″ (1,710 mm)",
+         "66.5″ (1,690 mm)",
+         "67.7″ (1,720 mm)",
+         "67.7″ (1,720 mm)",
+         "67.7″ (1,720 mm)",
+         "69.1″ (1,755 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "9,480 lb (4,300 kg)",
+         "10,803 lb (4,900 kg)",
+         "16,976 lb (7,700 kg)",
+         "19,180 lb (8,700 kg)",
+         "21,164 lb (9,600 kg)",
+         "25,574 lb (11,600 kg)",
+         "26,015 lb (11,800 kg)",
+         "32,628 lb (14,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "XL 1560",
+      "glance": [
+       "66 US tons (60 t)",
+       "5.1 ft · 61.0″ (1,550 mm)",
+       "8.7″ (220 mm)",
+       "16.1″ (410 mm)",
+       "9,480 lb (4,300 kg)"
+      ]
+     },
+     {
+      "name": "XL 2060",
+      "glance": [
+       "66 US tons (60 t)",
+       "6.7 ft · 80.7″ (2,050 mm)",
+       "8.7″ (220 mm)",
+       "16.1″ (410 mm)",
+       "10,803 lb (4,900 kg)"
+      ]
+     },
+     {
+      "name": "XL 26100",
+      "glance": [
+       "110 US tons (100 t)",
+       "8.5 ft · 102.4″ (2,600 mm)",
+       "11.8″ (300 mm)",
+       "20.9″ (530 mm)",
+       "16,976 lb (7,700 kg)"
+      ]
+     },
+     {
+      "name": "XL 30100",
+      "glance": [
+       "110 US tons (100 t)",
+       "9.9 ft · 118.9″ (3,020 mm)",
+       "11.8″ (300 mm)",
+       "20.9″ (530 mm)",
+       "19,180 lb (8,700 kg)"
+      ]
+     },
+     {
+      "name": "XL 30135",
+      "glance": [
+       "149 US tons (135 t)",
+       "9.9 ft · 118.9″ (3,020 mm)",
+       "12.6″ (320 mm)",
+       "21.7″ (550 mm)",
+       "21,164 lb (9,600 kg)"
+      ]
+     },
+     {
+      "name": "XL 30175",
+      "glance": [
+       "193 US tons (175 t)",
+       "9.9 ft · 118.9″ (3,020 mm)",
+       "13.8″ (350 mm)",
+       "23.6″ (600 mm)",
+       "25,574 lb (11,600 kg)"
+      ]
+     },
+     {
+      "name": "XL 30220",
+      "glance": [
+       "243 US tons (220 t)",
+       "9.9 ft · 118.9″ (3,020 mm)",
+       "13.8″ (350 mm)",
+       "23.6″ (600 mm)",
+       "26,015 lb (11,800 kg)"
+      ]
+     },
+     {
+      "name": "XL 30320",
+      "glance": [
+       "353 US tons (320 t)",
+       "9.9 ft · 118.9″ (3,020 mm)",
+       "15.7″ (400 mm)",
+       "25.6″ (650 mm)",
+       "32,628 lb (14,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric bending length × metric tonnage. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic & hybrid press brake brochure",
+    "size": "PDF · 9 MB · imperial units"
+   },
+   "group": "pb-hydraulic"
+  },
+  "dn-xl-large": {
+   "id": "dn-xl-large",
+   "brand": "dener",
+   "name": "XL hydraulic CNC press brakes, 193 – 661 US tons × 12 – 20 ft",
+   "short": "XL hydraulic press brakes 12 – 20 ft",
+   "models_label": "XL 36175 – XL 60600 · 10 models",
+   "summary": "The same XL press brake in the long and heavy sizes: 12, 13 and 20 ft bending lengths from 193 to 661 US tons, with up to 26.8″ daylight, 17.7″ stroke and a 23.6″ throat on the 400 and 600-ton machines for deep boxes and large profiles. The 60600 sits in a pit. For longer work Dener builds tandem machines — two XLs on one control bending to 60 ft and 1,800 US tons, with sheet followers and automatic feeders.",
+   "features": [
+    "Monoblock frame to 661 US tons; 23.6″ (600 mm) throat on the 400 and 600 t machines",
+    "X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes",
+    "15″ ESA S640 2D graphic CNC control",
+    "European-style segmented punch and die with European-style holders",
+    "Hawe hydraulic system; constant pressure",
+    "Anti-panic foot pedal with emergency stop",
+    "Front support arms on linear rail",
+    "Side and rear safety guards",
+    "CSA-approved electrical panel, 600 V 3-phase standard"
+   ],
+   "optional": [
+    "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control",
+    "CE-certified light barrier (DSP laser finger protection)",
+    "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)",
+    "Manual or CNC motorised crowning",
+    "Automatic angle measurement (bending accuracy 0.05°)",
+    "Sheet follower support",
+    "Hydraulic oil cooler; electrical panel cooler; automatic lubrication",
+    "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
+    "Tandem configuration to 60 ft and 1,800 US tons",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-xl-3",
+    "dn-xf-2",
+    "dn-xl-video-2",
+    "dn-xl-follower",
+    "dn-xf-3"
+   ],
+   "videos": [
+    {
+     "id": "_rdb1prKsxc",
+     "title": "20 ft × 600 ton DENER Puma XL heavy-duty press brake",
+     "duration": "PT1M22S",
+     "thumb": "video-_rdb1prKsxc"
+    },
+    {
+     "id": "MkaKtgulHKw",
+     "title": "Heavy-duty CNC hydraulic press brake PUMA XL 20 ft × 600 ton with sheet follower",
+     "duration": "PT1M33S",
+     "thumb": "video-MkaKtgulHKw"
+    },
+    {
+     "id": "FpHkRYeceyA",
+     "title": "20 ft × 1,000 ton 9-axis CNC heavy-duty press brake",
+     "duration": "PT3M30S",
+     "thumb": "video-FpHkRYeceyA"
+    },
+    {
+     "id": "AGifmIGQOso",
+     "title": "DENER 60 ft × 1,800 ton tandem press brake with auto feeder",
+     "duration": "PT1M4S",
+     "thumb": "video-AGifmIGQOso"
+    },
+    {
+     "id": "jMqwk_yyCBo",
+     "title": "DENER 1,600 ton × 40 ft tandem press brake installation time-lapse",
+     "duration": "PT3M4S",
+     "thumb": "video-jMqwk_yyCBo"
+    },
+    {
+     "id": "dsZ8f7BKP84",
+     "title": "Tandem press brake PUMA XL 2 × 20 ft × 320 ton",
+     "duration": "PT1M4S",
+     "thumb": "video-dsZ8f7BKP84"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "XL hydraulic press brakes · 12 – 20 ft",
+      "sub": "10 models · 193 – 661 US tons",
+      "models": [
+       "XL 36175",
+       "XL 36220",
+       "XL 40175",
+       "XL 40220",
+       "XL 40320",
+       "XL 40400",
+       "XL 60220",
+       "XL 60320",
+       "XL 60400",
+       "XL 60600"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "193 US tons (175 t)",
+         "243 US tons (220 t)",
+         "193 US tons (175 t)",
+         "243 US tons (220 t)",
+         "353 US tons (320 t)",
+         "441 US tons (400 t)",
+         "243 US tons (220 t)",
+         "353 US tons (320 t)",
+         "441 US tons (400 t)",
+         "661 US tons (600 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "12 ft · 143.7″ (3,650 mm)",
+         "12 ft · 143.7″ (3,650 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between frames",
+        "sub": "",
+        "cells": [
+         "122.0″ (3,100 mm)",
+         "122.0″ (3,100 mm)",
+         "139.8″ (3,550 mm)",
+         "139.8″ (3,550 mm)",
+         "139.8″ (3,550 mm)",
+         "139.8″ (3,550 mm)",
+         "200.8″ (5,100 mm)",
+         "200.8″ (5,100 mm)",
+         "200.8″ (5,100 mm)",
+         "200.8″ (5,100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "23.6″ (600 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "26.8″ (680 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "23.6″ (600 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "5.91 in/s (150 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "4.92 in/s (125 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "2.36 in/s (60 mm/s)",
+         "2.36 in/s (60 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.31 in/s (8 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "2.36 in/s (60 mm/s)",
+         "2.36 in/s (60 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "43.1″ (1,095 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "43.1″ (1,095 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "79 US gal (300 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "159 US gal (600 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "169 × 90 × 119″ (4,290 × 2,290 × 3,030 mm)",
+         "169 × 90 × 120″ (4,290 × 2,290 × 3,055 mm)",
+         "187 × 90 × 119″ (4,740 × 2,290 × 3,030 mm)",
+         "187 × 90 × 120″ (4,740 × 2,290 × 3,050 mm)",
+         "188 × 90 × 122″ (4,780 × 2,290 × 3,100 mm)",
+         "197 × 109 × 140″ (5,000 × 2,770 × 3,560 mm)",
+         "269 × 91 × 119″ (6,825 × 2,300 × 3,010 mm)",
+         "270 × 90 × 122″ (6,865 × 2,280 × 3,110 mm)",
+         "272 × 109 × 142″ (6,905 × 2,780 × 3,615 mm)",
+         "281 × 129 × 154″ (7,145 × 3,275 × 3,910 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Width without front supports",
+        "sub": "",
+        "cells": [
+         "67.7″ (1,720 mm)",
+         "68.1″ (1,730 mm)",
+         "67.7″ (1,720 mm)",
+         "68.1″ (1,730 mm)",
+         "69.3″ (1,760 mm)",
+         "90.2″ (2,290 mm)",
+         "69.3″ (1,760 mm)",
+         "69.3″ (1,760 mm)",
+         "91.7″ (2,330 mm)",
+         "110.2″ (2,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "27,558 lb (12,500 kg)",
+         "27,999 lb (12,700 kg)",
+         "31,306 lb (14,200 kg)",
+         "31,526 lb (14,300 kg)",
+         "38,581 lb (17,500 kg)",
+         "55,115 lb (25,000 kg)",
+         "41,888 lb (19,000 kg)",
+         "50,927 lb (23,100 kg)",
+         "70,548 lb (32,000 kg)",
+         "113,979 lb (51,700 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "XL 36175",
+      "glance": [
+       "193 US tons (175 t)",
+       "12 ft · 143.7″ (3,650 mm)",
+       "13.8″ (350 mm)",
+       "23.6″ (600 mm)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "XL 36220",
+      "glance": [
+       "243 US tons (220 t)",
+       "12 ft · 143.7″ (3,650 mm)",
+       "13.8″ (350 mm)",
+       "23.6″ (600 mm)",
+       "27,999 lb (12,700 kg)"
+      ]
+     },
+     {
+      "name": "XL 40175",
+      "glance": [
+       "193 US tons (175 t)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "13.8″ (350 mm)",
+       "23.6″ (600 mm)",
+       "31,306 lb (14,200 kg)"
+      ]
+     },
+     {
+      "name": "XL 40220",
+      "glance": [
+       "243 US tons (220 t)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "13.8″ (350 mm)",
+       "23.6″ (600 mm)",
+       "31,526 lb (14,300 kg)"
+      ]
+     },
+     {
+      "name": "XL 40320",
+      "glance": [
+       "353 US tons (320 t)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "15.7″ (400 mm)",
+       "25.6″ (650 mm)",
+       "38,581 lb (17,500 kg)"
+      ]
+     },
+     {
+      "name": "XL 40400",
+      "glance": [
+       "441 US tons (400 t)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "15.7″ (400 mm)",
+       "25.6″ (650 mm)",
+       "55,115 lb (25,000 kg)"
+      ]
+     },
+     {
+      "name": "XL 60220",
+      "glance": [
+       "243 US tons (220 t)",
+       "19.8 ft · 238.2″ (6,050 mm)",
+       "13.8″ (350 mm)",
+       "23.6″ (600 mm)",
+       "41,888 lb (19,000 kg)"
+      ]
+     },
+     {
+      "name": "XL 60320",
+      "glance": [
+       "353 US tons (320 t)",
+       "19.8 ft · 238.2″ (6,050 mm)",
+       "13.8″ (350 mm)",
+       "25.6″ (650 mm)",
+       "50,927 lb (23,100 kg)"
+      ]
+     },
+     {
+      "name": "XL 60400",
+      "glance": [
+       "441 US tons (400 t)",
+       "19.8 ft · 238.2″ (6,050 mm)",
+       "15.7″ (400 mm)",
+       "25.6″ (650 mm)",
+       "70,548 lb (32,000 kg)"
+      ]
+     },
+     {
+      "name": "XL 60600",
+      "glance": [
+       "661 US tons (600 t)",
+       "19.8 ft · 238.2″ (6,050 mm)",
+       "17.7″ (450 mm)",
+       "26.8″ (680 mm)",
+       "113,979 lb (51,700 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric bending length × metric tonnage. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic & hybrid press brake brochure",
+    "size": "PDF · 9 MB · imperial units"
+   },
+   "group": "pb-hydraulic"
+  },
+  "dn-xh": {
+   "id": "dn-xh",
+   "brand": "dener",
+   "name": "XH hybrid press brakes, 66 – 441 US tons — servo pump on the XL frame",
+   "short": "XH hybrid press brakes",
+   "models_label": "SVP 60 – SVP 400 · 9 tonnage packages",
+   "summary": "The hybrid press brake is the XL with its AC motor and fixed-displacement pump replaced by a servo motor and inverter pump: the pump turns only when the ram moves, so the machine draws 42 – 58 % less energy, runs quieter, approaches and returns 17 – 75 % faster and starts and stops with the pedal. Same frame, cylinders, stroke, daylight and equipment as the XL of the same tonnage — the hybrid is an option on any XL to 13 ft, longer on request.",
+   "features": [
+    "Servo motor, drivers and inverter pump in the XL hydraulic circuit; single oil tank",
+    "Start/stop: the pump runs only while the ram moves",
+    "42 – 58 % energy saving and 17 – 75 % faster approach and return than the XL of the same tonnage",
+    "Less noise, less oil heating, lower maintenance",
+    "X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes",
+    "15″ ESA S640 2D graphic CNC control",
+    "European-style segmented punch and die with European-style holders",
+    "Hawe hydraulic system; constant pressure",
+    "Anti-panic foot pedal with emergency stop",
+    "Front support arms on linear rail",
+    "Side and rear safety guards",
+    "CSA-approved electrical panel, 600 V 3-phase standard"
+   ],
+   "optional": [
+    "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control",
+    "CE-certified light barrier (DSP laser finger protection)",
+    "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)",
+    "Manual or CNC motorised crowning",
+    "Automatic angle measurement (bending accuracy 0.05°)",
+    "Sheet follower support",
+    "Hydraulic oil cooler; electrical panel cooler; automatic lubrication",
+    "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
+    "Tandem configuration to 60 ft and 1,800 US tons",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-xh-1",
+    "dn-xh-2",
+    "dn-xh-video",
+    "dn-xh-3"
+   ],
+   "videos": [
+    {
+     "id": "vIWys546tWY",
+     "title": "DENER XL 10 ft × 220 ton hybrid CNC press brake",
+     "duration": "PT0M35S",
+     "thumb": "video-vIWys546tWY"
+    },
+    {
+     "id": "nKbuxZGSjdQ",
+     "title": "DENER XL 12 ft × 175 ton hybrid press brake",
+     "duration": "PT0M51S",
+     "thumb": "video-nKbuxZGSjdQ"
+    },
+    {
+     "id": "-tAymdJwXjU",
+     "title": "DENER XL 13 ft × 220 ton hybrid press brake",
+     "duration": "PT0M50S",
+     "thumb": "video--tAymdJwXjU"
+    },
+    {
+     "id": "Msy6YHM5dIU",
+     "title": "DENER hybrid press brake",
+     "duration": "PT1M1S",
+     "thumb": "video-Msy6YHM5dIU"
+    },
+    {
+     "id": "Ymz5qW36zTs",
+     "title": "DENER tandem 60 ft × 1,600 ton hybrid press brake with sheet following support",
+     "duration": "PT0M58S",
+     "thumb": "video-Ymz5qW36zTs"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "XH hybrid press brakes · SVP series",
+      "sub": "9 tonnage packages · 66 – 441 US tons · servo-driven pump on the XL frame",
+      "models": [
+       "SVP 60",
+       "SVP 80 XF",
+       "SVP 100",
+       "SVP 125 XF",
+       "SVP 135",
+       "SVP 175",
+       "SVP 220",
+       "SVP 320",
+       "SVP 400"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "66 US tons (60 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "138 US tons (125 t)",
+         "149 US tons (135 t)",
+         "193 US tons (175 t)",
+         "243 US tons (220 t)",
+         "353 US tons (320 t)",
+         "441 US tons (400 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "on request to 13 ft",
+        "cells": [
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request"
+        ],
+        "key": true
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "6.69 in/s (170 mm/s)",
+         "6.69 in/s (170 mm/s)",
+         "6.89 in/s (175 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "3.94 in/s (100 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "4.92 in/s (125 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.48 in/s (190 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "3.94 in/s (100 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor",
+        "sub": "",
+        "cells": [
+         "6.7 HP (5 kW)",
+         "11.7 HP (8.7 kW)",
+         "11.7 HP (8.7 kW)",
+         "14.5 HP (10.8 kW)",
+         "14.5 HP (10.8 kW)",
+         "17.7 HP (13.2 kW)",
+         "22.4 HP (16.7 kW)",
+         "28.7 HP (21.4 kW)",
+         "36.1 HP (26.9 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Energy saving vs. the XL hydraulic",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "about 45 %",
+         "—",
+         "about 42 %",
+         "about 45 %",
+         "about 51 %",
+         "about 55 %",
+         "about 58 %"
+        ],
+        "key": false
+       },
+       {
+        "label": "Frame, stroke, daylight",
+        "sub": "",
+        "cells": [
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SVP 60",
+      "glance": [
+       "66 US tons (60 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "4.72 in/s (120 mm/s)",
+       "6.7 HP (5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "SVP 80 XF",
+      "glance": [
+       "88 US tons (80 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "5.12 in/s (130 mm/s)",
+       "11.7 HP (8.7 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "SVP 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "7.87 in/s (200 mm/s)",
+       "11.7 HP (8.7 kW)",
+       "about 45 %"
+      ]
+     },
+     {
+      "name": "SVP 125 XF",
+      "glance": [
+       "138 US tons (125 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "4.72 in/s (120 mm/s)",
+       "14.5 HP (10.8 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "SVP 135",
+      "glance": [
+       "149 US tons (135 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "6.69 in/s (170 mm/s)",
+       "14.5 HP (10.8 kW)",
+       "about 42 %"
+      ]
+     },
+     {
+      "name": "SVP 175",
+      "glance": [
+       "193 US tons (175 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "6.69 in/s (170 mm/s)",
+       "17.7 HP (13.2 kW)",
+       "about 45 %"
+      ]
+     },
+     {
+      "name": "SVP 220",
+      "glance": [
+       "243 US tons (220 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "6.89 in/s (175 mm/s)",
+       "22.4 HP (16.7 kW)",
+       "about 51 %"
+      ]
+     },
+     {
+      "name": "SVP 320",
+      "glance": [
+       "353 US tons (320 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "5.12 in/s (130 mm/s)",
+       "28.7 HP (21.4 kW)",
+       "about 55 %"
+      ]
+     },
+     {
+      "name": "SVP 400",
+      "glance": [
+       "441 US tons (400 t)",
+       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+       "3.94 in/s (100 mm/s)",
+       "36.1 HP (26.9 kW)",
+       "about 58 %"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "The hybrid package replaces the XL's AC motor and fixed pump with a servo motor and inverter pump; tonnage packages up to 441 US tons (400 t) are available to 13 ft (4 m) bending length, longer machines on request. Frame, stroke, daylight, throat and dimensions are those of the XL press brake of the same tonnage and length."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic & hybrid press brake brochure",
+    "size": "PDF · 9 MB · imperial units"
+   },
+   "group": "pb-hybrid"
+  },
+  "dn-ddm": {
+   "id": "dn-ddm",
+   "brand": "dener",
+   "name": "DDM servo-electric CNC press brakes, 44 – 220 US tons × 5 – 13.4 ft",
+   "short": "DDM servo-electric press brakes",
+   "models_label": "DDM 4015 – DDM 20040 · 9 models",
+   "summary": "A full-electric press brake with no hydraulic oil: servo motors drive the ram through belts and pulleys, bending at 20 mm/s on every model — twice the speed of a hydraulic — with 0.01 mm ram repeatability and power drawn only while the ram moves. Nine models from 44 US tons × 5 ft to 220 US tons × 13.4 ft, all with the 21″ ESA S875 W 3D control, four axes (Y1, Y2, X, R) and European tooling as standard; robot cells, 6-axis back gauges and angle measurement as options. Quiet, clean and fast — the machine for a job shop that bends all day.",
+   "features": [
+    "Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability",
+    "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake",
+    "21″ ESA S875 W 3D CNC control",
+    "4 axes: Y1, Y2, X, R",
+    "European-type segmented punch and die clamping",
+    "Side and rear safety guards; anti-panic emergency-stop pedal",
+    "Electrical cabinet cooling; 380/600 V 3-phase, CSA-approved panel",
+    "Servo-electric drive — no hydraulic oil, start/stop energy use"
+   ],
+   "optional": [
+    "Delem DA-66S or DA-69S 3D control",
+    "X-R-Z1-Z2, X1-X2-R-Z1-Z2, ATF X1-X2-R1-R2-Z1-Z2 or X-Prime back gauge",
+    "Fiessler AKAS 2 M(P) safety barrier or DSP front laser safety",
+    "Manual or automatic crowning",
+    "CE-standard light barrier; sheet follower",
+    "Automatic angle measurement",
+    "Pneumatic or Wila mechanical / hydraulic clamping",
+    "Robot bending cell",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-ddm-2",
+    "dn-ddm-1",
+    "dn-ddm-3",
+    "dn-ddm-web-1",
+    "dn-ddm-video-1",
+    "dn-ddm-control"
+   ],
+   "videos": [
+    {
+     "id": "_Aqyyfk97KI",
+     "title": "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake",
+     "duration": "PT0M57S",
+     "thumb": "video-_Aqyyfk97KI"
+    },
+    {
+     "id": "dlmcihzfRuI",
+     "title": "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake",
+     "duration": "PT1M7S",
+     "thumb": "video-dlmcihzfRuI"
+    },
+    {
+     "id": "ZujRJUhckG4",
+     "title": "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake",
+     "duration": "PT0M51S",
+     "thumb": "video-ZujRJUhckG4"
+    },
+    {
+     "id": "da7UnOripzc",
+     "title": "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake",
+     "duration": "PT0M56S",
+     "thumb": "video-da7UnOripzc"
+    },
+    {
+     "id": "30squAhhy_o",
+     "title": "CNC hydraulic press brake vs. servo-electric press brake",
+     "duration": "PT2M32S",
+     "thumb": "video-30squAhhy_o"
+    },
+    {
+     "id": "qLRQDobmnXQ",
+     "title": "DENER DDM servo-electric press brake robot cell",
+     "duration": "PT0M54S",
+     "thumb": "video-qLRQDobmnXQ"
+    },
+    {
+     "id": "2_Vz-v-rFqU",
+     "title": "DDM electric press brake with Wila hydraulic clamping",
+     "duration": "PT0M38S",
+     "thumb": "video-2_Vz-v-rFqU"
+    },
+    {
+     "id": "IGgudJFrO-I",
+     "title": "DDM electric press brake bending demonstration",
+     "duration": "PT1M0S",
+     "thumb": "video-IGgudJFrO-I"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DDM servo-electric press brakes",
+      "sub": "9 models · 44 – 220 US tons · 5 – 13.4 ft",
+      "models": [
+       "DDM 4015",
+       "DDM 5020",
+       "DDM 6525",
+       "DDM 8025",
+       "DDM 10030",
+       "DDM 13030",
+       "DDM 15030",
+       "DDM 17535",
+       "DDM 20040"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "44 US tons (40 t)",
+         "55 US tons (50 t)",
+         "72 US tons (65 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "143 US tons (130 t)",
+         "165 US tons (150 t)",
+         "193 US tons (175 t)",
+         "220 US tons (200 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "5 ft · 60.2″ (1,530 mm)",
+         "6.7 ft · 80.3″ (2,040 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "10 ft · 120.1″ (3,050 mm)",
+         "10 ft · 120.1″ (3,050 mm)",
+         "10 ft · 120.1″ (3,050 mm)",
+         "11.7 ft · 140.6″ (3,570 mm)",
+         "13.4 ft · 160.6″ (4,080 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.35 in/s (85 mm/s)",
+         "2.95 in/s (75 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.35 in/s (85 mm/s)",
+         "2.95 in/s (75 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor power",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "16.8 HP (12.5 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "105 × 90 × 100″ (2,670 × 2,280 × 2,530 mm)",
+         "125 × 90 × 100″ (3,180 × 2,280 × 2,530 mm)",
+         "145 × 90 × 100″ (3,680 × 2,280 × 2,530 mm)",
+         "145 × 90 × 100″ (3,680 × 2,280 × 2,530 mm)",
+         "166 × 89 × 100″ (4,220 × 2,260 × 2,530 mm)",
+         "167 × 91 × 105″ (4,230 × 2,300 × 2,660 mm)",
+         "188 × 98 × 111″ (4,770 × 2,480 × 2,820 mm)",
+         "211 × 98 × 111″ (5,370 × 2,480 × 2,820 mm)",
+         "227 × 98 × 111″ (5,760 × 2,480 × 2,820 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "10,141 lb (4,600 kg)",
+         "11,464 lb (5,200 kg)",
+         "13,007 lb (5,900 kg)",
+         "13,228 lb (6,000 kg)",
+         "14,991 lb (6,800 kg)",
+         "18,298 lb (8,300 kg)",
+         "27,558 lb (12,500 kg)",
+         "30,865 lb (14,000 kg)",
+         "34,172 lb (15,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DDM 4015",
+      "glance": [
+       "44 US tons (40 t)",
+       "5 ft · 60.2″ (1,530 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "10,141 lb (4,600 kg)"
+      ]
+     },
+     {
+      "name": "DDM 5020",
+      "glance": [
+       "55 US tons (50 t)",
+       "6.7 ft · 80.3″ (2,040 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "11,464 lb (5,200 kg)"
+      ]
+     },
+     {
+      "name": "DDM 6525",
+      "glance": [
+       "72 US tons (65 t)",
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "13,007 lb (5,900 kg)"
+      ]
+     },
+     {
+      "name": "DDM 8025",
+      "glance": [
+       "88 US tons (80 t)",
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "13,228 lb (6,000 kg)"
+      ]
+     },
+     {
+      "name": "DDM 10030",
+      "glance": [
+       "110 US tons (100 t)",
+       "10 ft · 120.1″ (3,050 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "DDM 13030",
+      "glance": [
+       "143 US tons (130 t)",
+       "10 ft · 120.1″ (3,050 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "18,298 lb (8,300 kg)"
+      ]
+     },
+     {
+      "name": "DDM 15030",
+      "glance": [
+       "165 US tons (150 t)",
+       "10 ft · 120.1″ (3,050 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "DDM 17535",
+      "glance": [
+       "193 US tons (175 t)",
+       "11.7 ft · 140.6″ (3,570 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "30,865 lb (14,000 kg)"
+      ]
+     },
+     {
+      "name": "DDM 20040",
+      "glance": [
+       "220 US tons (200 t)",
+       "13.4 ft · 160.6″ (4,080 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "34,172 lb (15,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric tonnage × metric bending length. Servo-electric drive: no hydraulic oil, 20 mm/s bending speed on every model, power drawn only while the ram moves."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Servo-Press-Brakes-2026.pdf",
+    "label": "Download the servo-electric press brake brochure",
+    "size": "PDF · 14 MB · imperial units"
+   },
+   "group": "pb-servo"
+  },
+  "dn-dds": {
+   "id": "dn-dds",
+   "brand": "dener",
+   "name": "DDS ball-screw electric press brakes, 22 and 44 US tons × 3 – 4.3 ft",
+   "short": "DDS ball-screw press brakes",
+   "models_label": "DDS 2090 · DDS 4013 · 2 models",
+   "summary": "The small electric press brake: Lenze servo motors on ball screws move the ram — no oil, no cylinders — in a compact monoblock frame with a small throat for precise bends on brackets, boxes, enclosures and pans. 22 US tons × 3 ft or 44 US tons × 4.3 ft, 14.8″ daylight, the 15″ ESA S640 control and a 2-axis back gauge as standard, a 5-axis gauge, Wila clamping and a laser finger guard as options. Plugs into a standard panel and goes through a normal door.",
+   "features": [
+    "Ball-screw ram drive with Lenze servo technology; up to 50 % energy saving",
+    "Monoblock frame, small throat, 14.8″ daylight for box bending",
+    "15″ ESA S640 2D colour touchscreen CNC control",
+    "2-axis back gauge (X, R)",
+    "European-type punch and die clamping",
+    "Electrical cabinet cooling",
+    "Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders"
+   ],
+   "optional": [
+    "ESA 875 W CNC control; 5-axis back gauge (X, R, Z1, Z2, X-Prime) with ESA S660",
+    "Foldable, height-adjustable work table",
+    "Wila mechanical / hydraulic clamping; double-wedge adjustable European punch holder",
+    "Punches and dies",
+    "DSP-AP laser finger protection",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "dn-dds-1",
+    "dn-dds-2",
+    "dn-dds-video",
+    "dn-dds-3",
+    "dn-dds-4"
+   ],
+   "videos": [
+    {
+     "id": "JVG9kw1nIGk",
+     "title": "DENER DDS 4 ft × 30 ton ball-screw electric press brake",
+     "duration": "PT1M8S",
+     "thumb": "video-JVG9kw1nIGk"
+    },
+    {
+     "id": "R5D3JCTN-Ww",
+     "title": "Small press brake — DDS 4013 ball-screw press brake",
+     "duration": "PT2M41S",
+     "thumb": "video-R5D3JCTN-Ww"
+    },
+    {
+     "id": "Myd9TVSUFj8",
+     "title": "DENER DDS 2050 — 1.6 ft × 20 ton ball-screw servo-electric press brake",
+     "duration": "PT0M38S",
+     "thumb": "video-Myd9TVSUFj8"
+    },
+    {
+     "id": "sq1YPi0sQTU",
+     "title": "Bending a water-sealed pan on the DDS ball-screw press brake",
+     "duration": "PT1M38S",
+     "thumb": "video-sq1YPi0sQTU"
+    },
+    {
+     "id": "nlCZhY7olZ8",
+     "title": "DDS 4013 — 100 % electric ball-screw press brake",
+     "duration": "PT0M30S",
+     "thumb": "video-nlCZhY7olZ8"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DDS ball-screw electric press brakes",
+      "sub": "2 models · 22 and 44 US tons · 3 – 4.3 ft",
+      "models": [
+       "DDS 4013",
+       "DDS 2090"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "44 US tons (40 t)",
+         "22 US tons (20 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "4.3 ft · 51.2″ (1,300 mm)",
+         "3 ft · 35.4″ (900 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "14.8″ (376 mm)",
+         "14.8″ (376 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor power",
+        "sub": "",
+        "cells": [
+         "2 × 5.1 HP (2 × 3.8 kW)",
+         "5.1 HP (3.8 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions W × D × H",
+        "sub": "",
+        "cells": [
+         "95.9 × 74.0 × 91.3″ (2,436 × 1,880 × 2,319 mm)",
+         "69.3 × 50.4 × 86.2″ (1,760 × 1,280 × 2,189 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,496 lb (3,400 kg)",
+         "4,409 lb (2,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DDS 4013",
+      "glance": [
+       "44 US tons (40 t)",
+       "4.3 ft · 51.2″ (1,300 mm)",
+       "5.9″ (150 mm)",
+       "14.8″ (376 mm)",
+       "7,496 lb (3,400 kg)"
+      ]
+     },
+     {
+      "name": "DDS 2090",
+      "glance": [
+       "22 US tons (20 t)",
+       "3 ft · 35.4″ (900 mm)",
+       "5.9″ (150 mm)",
+       "14.8″ (376 mm)",
+       "4,409 lb (2,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets). Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders; a compact machine for small parts, boxes and brackets."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Servo-Press-Brakes-2026.pdf",
+    "label": "Download the servo-electric press brake brochure",
+    "size": "PDF · 14 MB · imperial units"
+   },
+   "group": "pb-servo"
+  },
+  "dn-gfl": {
+   "id": "dn-gfl",
+   "brand": "dener",
+   "name": "GFL fiber laser cutting machines, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
+   "short": "GFL fiber lasers",
+   "models_label": "GFL 3015 · 4020 · 6020 · 3 – 40 kW",
+   "summary": "The GFL is Dener's production sheet laser: a gantry on a stress-relieved frame accelerating at 1.5 G to 394 ft/min, with a pallet changer so the next sheet is loaded while the first is cut. Three table sizes — 5 × 10, 6.6 × 13 and 6.6 × 20 ft — with fiber sources from 3 to 40 kW, a Precitec autofocus head, nesting software and production reports on the control, and the pneumatic extraction and scrap boxes that keep the floor clean. The machine for a job shop that cuts all day.",
+   "features": [
+    "1.5 G acceleration, 394 ft/min (120 m/min) axis speed, ±0.03 mm positioning",
+    "3 to 40 kW fiber sources; 6 kW cuts 3/4″ mild steel, 12 kW 1″",
+    "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
+    "Stress-relieved welded frame; space-frame bridge for high acceleration",
+    "Exchange table / pallet changer so loading overlaps cutting",
+    "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
+    "CNC control with nesting software, cutting database and production reports; remote diagnostics",
+    "Laser-safe viewing glass; CE safety",
+    "Chiller, air/nitrogen/oxygen assist-gas system",
+    "CSA-approved electrical panel; 600 V with transformer"
+   ],
+   "optional": [
+    "Automatic loading / unloading tower",
+    "Sheet storage automation",
+    "Bevel cutting head",
+    "Film-removal and marking functions",
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-gfl-3",
+    "dn-gfl-2",
+    "dn-gfl-1",
+    "dn-gfl-video-1",
+    "dn-gfl-video-2",
+    "dn-gfl-control"
+   ],
+   "videos": [
+    {
+     "id": "P3ynLUu2VYU",
+     "title": "DENER GFL 10 × 5 ft 6 kW laser cutting machine",
+     "duration": "PT0M58S",
+     "thumb": "video-P3ynLUu2VYU"
+    },
+    {
+     "id": "VjuvZWb_O_g",
+     "title": "DENER GFL laser cutting machine",
+     "duration": "PT0M45S",
+     "thumb": "video-VjuvZWb_O_g"
+    },
+    {
+     "id": "0Cz5xYoNVec",
+     "title": "DENER GFL laser cutting machine",
+     "duration": "PT2M3S",
+     "thumb": "video-0Cz5xYoNVec"
+    },
+    {
+     "id": "NxTq4uw3n5k",
+     "title": "DENER GFL laser cutting machine",
+     "duration": "PT0M26S",
+     "thumb": "video-NxTq4uw3n5k"
+    },
+    {
+     "id": "L9fTrifVFiA",
+     "title": "DENER 6 kW / 4 kW / 2 kW fiber laser cutting comparison",
+     "duration": "PT3M3S",
+     "thumb": "video-L9fTrifVFiA"
+    },
+    {
+     "id": "C0mG6rJkHdU",
+     "title": "6 kW fiber laser cutting 15 mm mild steel",
+     "duration": "PT1M2S",
+     "thumb": "video-C0mG6rJkHdU"
+    },
+    {
+     "id": "EFTY5a-Ri1Q",
+     "title": "Intelligent air cutting — a smarter solution beyond traditional air cutting",
+     "duration": "PT4M16S",
+     "thumb": "video-EFTY5a-Ri1Q"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "GFL fiber laser cutting machines",
+      "sub": "3 table sizes · 3 – 40 kW · pallet changer",
+      "models": [
+       "GFL 3015",
+       "GFL 4020",
+       "GFL 6020"
+      ],
+      "rows": [
+       {
+        "label": "Working area L × W",
+        "sub": "nominal",
+        "cells": [
+         "9.8 ft × 4.9 ft · 118 × 59″ (3,000 × 1,500 mm)",
+         "13.1 ft × 6.6 ft · 157 × 79″ (4,000 × 2,000 mm)",
+         "19.7 ft × 6.6 ft · 236 × 79″ (6,000 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Worktable",
+        "sub": "",
+        "cells": [
+         "pallet changer, 2 tables",
+         "pallet changer, 2 tables",
+         "pallet changer, 2 tables"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source power",
+        "sub": "options",
+        "cells": [
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. axis speed",
+        "sub": "",
+        "cells": [
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.5 G",
+         "1.5 G",
+         "1.5 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z-axis stroke",
+        "sub": "",
+        "cells": [
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Voltage",
+        "sub": "",
+        "cells": [
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "GFL 3015",
+      "glance": [
+       "9.8 ft × 4.9 ft · 118 × 59″ (3,000 × 1,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "394 ft/min (120 m/min)",
+       "1.5 G",
+       "pallet changer, 2 tables"
+      ]
+     },
+     {
+      "name": "GFL 4020",
+      "glance": [
+       "13.1 ft × 6.6 ft · 157 × 79″ (4,000 × 2,000 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "394 ft/min (120 m/min)",
+       "1.5 G",
+       "pallet changer, 2 tables"
+      ]
+     },
+     {
+      "name": "GFL 6020",
+      "glance": [
+       "19.7 ft × 6.6 ft · 236 × 79″ (6,000 × 2,000 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "394 ft/min (120 m/min)",
+       "1.5 G",
+       "pallet changer, 2 tables"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_area",
+     "power",
+     "speed",
+     "accel",
+     "worktable"
+    ],
+    "caps": {},
+    "note": "The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us for the cutting chart for your material."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
+    "label": "Download the fiber laser brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "laser-gfl"
+  },
+  "dn-smart-closed": {
+   "id": "dn-smart-closed",
+   "brand": "dener",
+   "name": "Smart closed-type fiber lasers with double table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
+   "short": "Smart closed-type lasers",
+   "models_label": "Smart 3015 – 12526 · 6 table sizes · 3 – 40 kW",
+   "summary": "The Smart series is the value sheet laser from the same factory: a fully enclosed cabin with laser-safe glass, a double exchange table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting area, control and remote handset.",
+   "features": [
+    "Closed cabin with laser-safe viewing glass; double exchange table",
+    "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning",
+    "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
+    "Stress-relieved welded frame; space-frame bridge for high acceleration",
+    "Exchange table / pallet changer so loading overlaps cutting",
+    "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
+    "CNC control with nesting software, cutting database and production reports; remote diagnostics",
+    "Laser-safe viewing glass; CE safety",
+    "Chiller, air/nitrogen/oxygen assist-gas system",
+    "CSA-approved electrical panel; 600 V with transformer"
+   ],
+   "optional": [
+    "Automatic loading / unloading tower",
+    "Sheet storage automation",
+    "Bevel cutting head",
+    "Film-removal and marking functions",
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-smart-1",
+    "dn-smart-2",
+    "dn-laser-web"
+   ],
+   "videos": [
+    {
+     "id": "4Yp6X9tP6J8",
+     "title": "DENER SMART series laser cutting machine",
+     "duration": "PT1M11S",
+     "thumb": "video-4Yp6X9tP6J8"
+    },
+    {
+     "id": "zDGupa7NevE",
+     "title": "Dener fiber laser cutting machine",
+     "duration": "PT1M19S",
+     "thumb": "video-zDGupa7NevE"
+    },
+    {
+     "id": "9J_m5e1Z7-M",
+     "title": "Fiber laser FL 6020 6 kW — new features for high speed and performance",
+     "duration": "PT2M53S",
+     "thumb": "video-9J_m5e1Z7-M"
+    },
+    {
+     "id": "oM9GCeSY9EI",
+     "title": "Very fast fiber laser cut steel by Dener",
+     "duration": "PT1M10S",
+     "thumb": "video-oM9GCeSY9EI"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Smart closed-type fiber lasers · double table",
+      "sub": "6 table sizes · 3 – 40 kW",
+      "models": [
+       "Smart 3015",
+       "Smart 4020",
+       "Smart 6020",
+       "Smart 6025",
+       "Smart 8025",
+       "Smart 12526"
+      ],
+      "rows": [
+       {
+        "label": "Working area L × W",
+        "sub": "nominal",
+        "cells": [
+         "9.8 ft × 4.9 ft · 118 × 59″ (3,000 × 1,500 mm)",
+         "13.1 ft × 6.6 ft · 157 × 79″ (4,000 × 2,000 mm)",
+         "19.7 ft × 6.6 ft · 236 × 79″ (6,000 × 2,000 mm)",
+         "19.7 ft × 8.2 ft · 236 × 98″ (6,000 × 2,500 mm)",
+         "26.2 ft × 8.2 ft · 315 × 98″ (8,000 × 2,500 mm)",
+         "41 ft × 8.5 ft · 492 × 102″ (12,500 × 2,600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Worktable",
+        "sub": "",
+        "cells": [
+         "double exchange table",
+         "double exchange table",
+         "double exchange table",
+         "double exchange table",
+         "double exchange table",
+         "double exchange table"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source power",
+        "sub": "options",
+        "cells": [
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. axis speed",
+        "sub": "",
+        "cells": [
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G",
+         "1 G",
+         "1 G",
+         "1 G",
+         "1 G",
+         "1 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Voltage",
+        "sub": "",
+        "cells": [
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Smart 3015",
+      "glance": [
+       "9.8 ft × 4.9 ft · 118 × 59″ (3,000 × 1,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "459 ft/min (140 m/min)",
+       "1 G",
+       "double exchange table"
+      ]
+     },
+     {
+      "name": "Smart 4020",
+      "glance": [
+       "13.1 ft × 6.6 ft · 157 × 79″ (4,000 × 2,000 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "459 ft/min (140 m/min)",
+       "1 G",
+       "double exchange table"
+      ]
+     },
+     {
+      "name": "Smart 6020",
+      "glance": [
+       "19.7 ft × 6.6 ft · 236 × 79″ (6,000 × 2,000 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "459 ft/min (140 m/min)",
+       "1 G",
+       "double exchange table"
+      ]
+     },
+     {
+      "name": "Smart 6025",
+      "glance": [
+       "19.7 ft × 8.2 ft · 236 × 98″ (6,000 × 2,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "459 ft/min (140 m/min)",
+       "1 G",
+       "double exchange table"
+      ]
+     },
+     {
+      "name": "Smart 8025",
+      "glance": [
+       "26.2 ft × 8.2 ft · 315 × 98″ (8,000 × 2,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "459 ft/min (140 m/min)",
+       "1 G",
+       "double exchange table"
+      ]
+     },
+     {
+      "name": "Smart 12526",
+      "glance": [
+       "41 ft × 8.5 ft · 492 × 102″ (12,500 × 2,600 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "459 ft/min (140 m/min)",
+       "1 G",
+       "double exchange table"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_area",
+     "power",
+     "speed",
+     "accel",
+     "worktable"
+    ],
+    "caps": {},
+    "note": "The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us for the cutting chart for your material."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
+    "label": "Download the fiber laser brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "laser-smart"
+  },
+  "dn-smart-semi": {
+   "id": "dn-smart-semi",
+   "brand": "dener",
+   "name": "Smart semi-closed fiber lasers with single table, 8.2 × 20 to 13 × 82 ft, 3 – 40 kW",
+   "short": "Smart semi-closed lasers",
+   "models_label": "Smart 6025 – 25040 · 7 table sizes · 3 – 40 kW",
+   "summary": "The large-format Smart: a single table from 8.2 × 20 ft to 13 × 82 ft under a semi-closed cabin, for long plates, beams and parts that do not fit a standard sheet. ±0.01 mm positioning, 246 ft/min and 3 to 40 kW sources — the 20 – 40 kW machines cut 1-1/2″ plate and thicker.",
+   "features": [
+    "Single table to 13 × 82 ft (4 × 25 m) under a semi-closed cabin",
+    "±0.01 mm positioning, 246 ft/min (75 m/min), 0.6 G",
+    "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
+    "Stress-relieved welded frame; space-frame bridge for high acceleration",
+    "Exchange table / pallet changer so loading overlaps cutting",
+    "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
+    "CNC control with nesting software, cutting database and production reports; remote diagnostics",
+    "Laser-safe viewing glass; CE safety",
+    "Chiller, air/nitrogen/oxygen assist-gas system",
+    "CSA-approved electrical panel; 600 V with transformer"
+   ],
+   "optional": [
+    "Automatic loading / unloading tower",
+    "Sheet storage automation",
+    "Bevel cutting head",
+    "Film-removal and marking functions",
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-smart-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Smart semi-closed fiber lasers · single table",
+      "sub": "7 table sizes · 3 – 40 kW",
+      "models": [
+       "Smart 6025",
+       "Smart 8025",
+       "Smart 12525",
+       "Smart 14035",
+       "Smart 16045",
+       "Smart 25031",
+       "Smart 25040"
+      ],
+      "rows": [
+       {
+        "label": "Working area L × W",
+        "sub": "nominal",
+        "cells": [
+         "19.7 ft × 8.2 ft · 236 × 98″ (6,000 × 2,500 mm)",
+         "26.2 ft × 8.2 ft · 315 × 98″ (8,000 × 2,500 mm)",
+         "41 ft × 8.2 ft · 492 × 98″ (12,500 × 2,500 mm)",
+         "45.9 ft × 11.5 ft · 551 × 138″ (14,000 × 3,500 mm)",
+         "52.5 ft × 14.8 ft · 630 × 177″ (16,000 × 4,500 mm)",
+         "82 ft × 10.2 ft · 984 × 122″ (25,000 × 3,100 mm)",
+         "82 ft × 13.1 ft · 984 × 157″ (25,000 × 4,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Worktable",
+        "sub": "",
+        "cells": [
+         "single table, semi-closed cabin",
+         "single table, semi-closed cabin",
+         "single table, semi-closed cabin",
+         "single table, semi-closed cabin",
+         "single table, semi-closed cabin",
+         "single table, semi-closed cabin",
+         "single table, semi-closed cabin"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source power",
+        "sub": "options",
+        "cells": [
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW",
+         "3 / 6 / 12 / 20 / 30 / 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.01 mm (±0.0004″)",
+         "±0.01 mm (±0.0004″)",
+         "±0.01 mm (±0.0004″)",
+         "±0.01 mm (±0.0004″)",
+         "±0.01 mm (±0.0004″)",
+         "±0.01 mm (±0.0004″)",
+         "±0.01 mm (±0.0004″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. axis speed",
+        "sub": "",
+        "cells": [
+         "246 ft/min (75 m/min)",
+         "246 ft/min (75 m/min)",
+         "246 ft/min (75 m/min)",
+         "246 ft/min (75 m/min)",
+         "246 ft/min (75 m/min)",
+         "246 ft/min (75 m/min)",
+         "246 ft/min (75 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "0.6 G",
+         "0.6 G",
+         "0.6 G",
+         "0.6 G",
+         "0.6 G",
+         "0.6 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Voltage",
+        "sub": "",
+        "cells": [
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Smart 6025",
+      "glance": [
+       "19.7 ft × 8.2 ft · 236 × 98″ (6,000 × 2,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "246 ft/min (75 m/min)",
+       "0.6 G",
+       "single table, semi-closed cabin"
+      ]
+     },
+     {
+      "name": "Smart 8025",
+      "glance": [
+       "26.2 ft × 8.2 ft · 315 × 98″ (8,000 × 2,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "246 ft/min (75 m/min)",
+       "0.6 G",
+       "single table, semi-closed cabin"
+      ]
+     },
+     {
+      "name": "Smart 12525",
+      "glance": [
+       "41 ft × 8.2 ft · 492 × 98″ (12,500 × 2,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "246 ft/min (75 m/min)",
+       "0.6 G",
+       "single table, semi-closed cabin"
+      ]
+     },
+     {
+      "name": "Smart 14035",
+      "glance": [
+       "45.9 ft × 11.5 ft · 551 × 138″ (14,000 × 3,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "246 ft/min (75 m/min)",
+       "0.6 G",
+       "single table, semi-closed cabin"
+      ]
+     },
+     {
+      "name": "Smart 16045",
+      "glance": [
+       "52.5 ft × 14.8 ft · 630 × 177″ (16,000 × 4,500 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "246 ft/min (75 m/min)",
+       "0.6 G",
+       "single table, semi-closed cabin"
+      ]
+     },
+     {
+      "name": "Smart 25031",
+      "glance": [
+       "82 ft × 10.2 ft · 984 × 122″ (25,000 × 3,100 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "246 ft/min (75 m/min)",
+       "0.6 G",
+       "single table, semi-closed cabin"
+      ]
+     },
+     {
+      "name": "Smart 25040",
+      "glance": [
+       "82 ft × 13.1 ft · 984 × 157″ (25,000 × 4,000 mm)",
+       "3 / 6 / 12 / 20 / 30 / 40 kW",
+       "246 ft/min (75 m/min)",
+       "0.6 G",
+       "single table, semi-closed cabin"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_area",
+     "power",
+     "speed",
+     "accel",
+     "worktable"
+    ],
+    "caps": {},
+    "note": "The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us for the cutting chart for your material."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
+    "label": "Download the fiber laser brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "laser-smart"
+  },
+  "dn-smart-open": {
+   "id": "dn-smart-open",
+   "brand": "dener",
+   "name": "Smart open-type fiber lasers, 5 × 10 to 6.6 × 20 ft, 3 – 6 kW",
+   "short": "Smart open-type lasers",
+   "models_label": "Smart 3015 · 4020 · 6020 · 3 – 6 kW",
+   "summary": "The entry sheet laser: an open single-table machine with a 3 or 6 kW source, 361 ft/min at 1 G, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft. Maximum access to the table for odd sheets and manual loading; the lowest-cost way into fiber laser cutting from a builder that also makes the 40 kW machines.",
+   "features": [
+    "Open single table — full access for loading; 3 or 6 kW source",
+    "1 G acceleration, 361 ft/min (110 m/min), ±0.03 mm positioning",
+    "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
+    "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
+    "CNC control with nesting software, cutting database and production reports; remote diagnostics",
+    "Laser-safe viewing glass; CE safety",
+    "Chiller, air/nitrogen/oxygen assist-gas system",
+    "CSA-approved electrical panel; 600 V with transformer"
+   ],
+   "optional": [
+    "Automatic loading / unloading tower",
+    "Sheet storage automation",
+    "Bevel cutting head",
+    "Film-removal and marking functions",
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-smart-1"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Smart open-type fiber lasers · single table",
+      "sub": "3 table sizes · 3 – 6 kW",
+      "models": [
+       "Smart 3015",
+       "Smart 4020",
+       "Smart 6020"
+      ],
+      "rows": [
+       {
+        "label": "Working area L × W",
+        "sub": "nominal",
+        "cells": [
+         "9.8 ft × 4.9 ft · 118 × 59″ (3,000 × 1,500 mm)",
+         "13.1 ft × 6.6 ft · 157 × 79″ (4,000 × 2,000 mm)",
+         "19.7 ft × 6.6 ft · 236 × 79″ (6,000 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Worktable",
+        "sub": "",
+        "cells": [
+         "single table, open",
+         "single table, open",
+         "single table, open"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source power",
+        "sub": "options",
+        "cells": [
+         "3 / 6 kW",
+         "3 / 6 kW",
+         "3 / 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)",
+         "±0.03 mm (±0.0012″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. axis speed",
+        "sub": "",
+        "cells": [
+         "361 ft/min (110 m/min)",
+         "361 ft/min (110 m/min)",
+         "361 ft/min (110 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G",
+         "1 G",
+         "1 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Voltage",
+        "sub": "",
+        "cells": [
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Smart 3015",
+      "glance": [
+       "9.8 ft × 4.9 ft · 118 × 59″ (3,000 × 1,500 mm)",
+       "3 / 6 kW",
+       "361 ft/min (110 m/min)",
+       "1 G",
+       "single table, open"
+      ]
+     },
+     {
+      "name": "Smart 4020",
+      "glance": [
+       "13.1 ft × 6.6 ft · 157 × 79″ (4,000 × 2,000 mm)",
+       "3 / 6 kW",
+       "361 ft/min (110 m/min)",
+       "1 G",
+       "single table, open"
+      ]
+     },
+     {
+      "name": "Smart 6020",
+      "glance": [
+       "19.7 ft × 6.6 ft · 236 × 79″ (6,000 × 2,000 mm)",
+       "3 / 6 kW",
+       "361 ft/min (110 m/min)",
+       "1 G",
+       "single table, open"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_area",
+     "power",
+     "speed",
+     "accel",
+     "worktable"
+    ],
+    "caps": {},
+    "note": "The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us for the cutting chart for your material."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
+    "label": "Download the fiber laser brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "laser-smart"
+  },
+  "dn-eftl": {
+   "id": "dn-eftl",
+   "brand": "dener",
+   "name": "E-FTL tube and profile laser cutters, Ø0.3″ – 13.8″, 3 – 20 kW",
+   "short": "E-FTL tube lasers",
+   "models_label": "E-FTL 120 · 180 · 250 · 350",
+   "summary": "The fast tube laser: servo axes accelerating at 1 G move the chucks at up to 394 ft/min, cutting round, square, rectangular and open profiles from Ø0.3″ to 13.8″ in 7, 9 or 12 m lengths with ±0.05 mm repeatability. Four chuck sizes and 3 to 20 kW sources, with the bundle loader, following supports and tube nesting software that turn a bar of tube into finished parts without an operator at the machine.",
+   "features": [
+    "Ø0.3 – 13.8″ (8 – 350 mm) round and profile; 1 G, 394 ft/min (120 m/min)",
+    "Tube length to 39.4 ft (12 m) with automatic bundle loader",
+    "Fiber laser source 3 – 20 kW, autofocus cutting head",
+    "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
+    "Automatic loader for bundles; tube supports that follow the cut; unloading table",
+    "CNC with tube nesting and import of STEP / IGES files; cutting database",
+    "Fume extraction through the tube; chip and slug collection",
+    "CE safety enclosure",
+    "CSA-approved electrical panel; 600 V with transformer"
+   ],
+   "optional": [
+    "Bevel (3D) cutting head",
+    "Longer loading and unloading, 29.5 and 39.4 ft (9 / 12 m)",
+    "Seam detection; tapping and drilling attachments",
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-tube-2",
+    "dn-tube-1",
+    "dn-tube-3"
+   ],
+   "videos": [
+    {
+     "id": "n4gFLrlC-es",
+     "title": "DENER E-FTL tube laser cutting machine with auto loader",
+     "duration": "PT0M31S",
+     "thumb": "video-n4gFLrlC-es"
+    },
+    {
+     "id": "6_UQ6NBUUO4",
+     "title": "DENER E-FTL tube laser cutting machine",
+     "duration": "PT0M36S",
+     "thumb": "video-6_UQ6NBUUO4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "E-FTL tube and profile fiber lasers",
+      "sub": "4 chuck sizes · Ø0.3″ – 13.8″ · 3 – 20 kW · 1 G",
+      "models": [
+       "E-FTL 120",
+       "E-FTL 180",
+       "E-FTL 250",
+       "E-FTL 350"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "round",
+        "cells": [
+         "Ø0.3 – 4.7″ (Ø8 – 120 mm)",
+         "Ø0.4 – 7.1″ (Ø10 – 180 mm)",
+         "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
+         "Ø1.2 – 13.8″ (Ø30 – 350 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile size",
+        "sub": "square / rectangular",
+        "cells": [
+         "0.3 – 4.7″ (8 – 120 mm)",
+         "0.4 – 7.1″ (10 – 180 mm)",
+         "0.6 – 9.8″ (15 – 250 mm)",
+         "1.2 – 13.8″ (30 – 350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source power",
+        "sub": "options",
+        "cells": [
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube length and weight",
+        "sub": "",
+        "cells": [
+         "23 ft, 265 lb (7 m, 120 kg)",
+         "23 ft, 529 lb (7 m, 240 kg)",
+         "23 ft, 661 lb · 29.5 ft, 970 lb · 39.4 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)",
+         "23 ft, 1,323 lb · 29.5 ft, 2,646 lb · 39.4 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "262 ft/min (80 m/min)",
+         "177 ft/min (54 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G",
+         "1 G",
+         "1 G",
+         "1 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability",
+        "sub": "",
+        "cells": [
+         "±0.05 mm (±0.002″)",
+         "±0.05 mm (±0.002″)",
+         "±0.05 mm (±0.002″)",
+         "±0.05 mm (±0.002″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Voltage",
+        "sub": "",
+        "cells": [
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "E-FTL 120",
+      "glance": [
+       "Ø0.3 – 4.7″ (Ø8 – 120 mm)",
+       "0.3 – 4.7″ (8 – 120 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "394 ft/min (120 m/min)",
+       "23 ft, 265 lb (7 m, 120 kg)"
+      ]
+     },
+     {
+      "name": "E-FTL 180",
+      "glance": [
+       "Ø0.4 – 7.1″ (Ø10 – 180 mm)",
+       "0.4 – 7.1″ (10 – 180 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "394 ft/min (120 m/min)",
+       "23 ft, 529 lb (7 m, 240 kg)"
+      ]
+     },
+     {
+      "name": "E-FTL 250",
+      "glance": [
+       "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
+       "0.6 – 9.8″ (15 – 250 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "262 ft/min (80 m/min)",
+       "23 ft, 661 lb · 29.5 ft, 970 lb · 39.4 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)"
+      ]
+     },
+     {
+      "name": "E-FTL 350",
+      "glance": [
+       "Ø1.2 – 13.8″ (Ø30 – 350 mm)",
+       "1.2 – 13.8″ (30 – 350 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "177 ft/min (54 m/min)",
+       "23 ft, 1,323 lb · 29.5 ft, 2,646 lb · 39.4 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube",
+     "profile",
+     "power",
+     "speed",
+     "length"
+    ],
+    "caps": {},
+    "note": "Chuck size is the model number (250 = Ø250 mm); every chuck size is available with any of the listed laser sources. Loading length and bundle loader to suit the tube length; ask us for the cutting chart for your tube wall and material."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Tube-Lasers-2026.pdf",
+    "label": "Download the tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "tube-eftl"
+  },
+  "dn-ftl": {
+   "id": "dn-ftl",
+   "brand": "dener",
+   "name": "FTL tube and profile laser cutters, Ø0.6″ – 25.2″, 3 – 20 kW",
+   "short": "FTL tube lasers",
+   "models_label": "FTL 250 · 350 · 500 · 640",
+   "summary": "The heavy tube laser: four chuck sizes from Ø250 to Ø640 mm for structural tube, pipe and beams to 25.2″ across and 12 m long, up to 2,600 kg per bar on the 640 chuck and 12,000 kg on the long-bed 250 version. 3 to 20 kW sources cut wall thicknesses to 1″; the 5-axis head cuts bevels and weld preparations. For steel-construction, trailer, agricultural and equipment builders.",
+   "features": [
+    "Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 39.4 ft (12 m) and 5,732 lb",
+    "3 to 20 kW sources; 5-axis bevel head",
+    "Fiber laser source 3 – 20 kW, autofocus cutting head",
+    "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
+    "Automatic loader for bundles; tube supports that follow the cut; unloading table",
+    "CNC with tube nesting and import of STEP / IGES files; cutting database",
+    "Fume extraction through the tube; chip and slug collection",
+    "CE safety enclosure",
+    "CSA-approved electrical panel; 600 V with transformer"
+   ],
+   "optional": [
+    "Bevel (3D) cutting head",
+    "Longer loading and unloading, 29.5 and 39.4 ft (9 / 12 m)",
+    "Seam detection; tapping and drilling attachments",
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-tube-6",
+    "dn-tube-4",
+    "dn-tube-5",
+    "dn-tube-7"
+   ],
+   "videos": [
+    {
+     "id": "zPexjUvz7jg",
+     "title": "DENER FTL tube laser cutting machine",
+     "duration": "PT1M47S",
+     "thumb": "video-zPexjUvz7jg"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "FTL tube and profile fiber lasers",
+      "sub": "4 chuck sizes · Ø0.6″ – 25.2″ · 3 – 20 kW",
+      "models": [
+       "FTL 250",
+       "FTL 350",
+       "FTL 500",
+       "FTL 640"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "round",
+        "cells": [
+         "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
+         "Ø1.2 – 13.8″ (Ø30 – 350 mm)",
+         "Ø1.2 – 19.7″ (Ø30 – 500 mm)",
+         "Ø4.7 – 25.2″ (Ø120 – 640 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile size",
+        "sub": "square / rectangular",
+        "cells": [
+         "0.6 – 9.8″ (15 – 250 mm)",
+         "1.2 – 13.8″ (30 – 350 mm)",
+         "1.2 – 19.7″ (30 – 500 mm)",
+         "4.7 – 25.2″ (120 – 640 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source power",
+        "sub": "options",
+        "cells": [
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube length and weight",
+        "sub": "",
+        "cells": [
+         "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)",
+         "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)",
+         "39.4 ft, 4,630 lb (12 m, 2,100 kg)",
+         "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "262 ft/min (80 m/min)",
+         "177 ft/min (54 m/min)",
+         "82 ft/min (25 m/min)",
+         "82 ft/min (25 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "0.6 G",
+         "0.6 G",
+         "0.6 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability",
+        "sub": "",
+        "cells": [
+         "±0.05 mm (±0.002″)",
+         "±0.05 mm (±0.002″)",
+         "±0.1 mm (±0.004″)",
+         "±0.1 mm (±0.004″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Voltage",
+        "sub": "",
+        "cells": [
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "FTL 250",
+      "glance": [
+       "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
+       "0.6 – 9.8″ (15 – 250 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "262 ft/min (80 m/min)",
+       "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)"
+      ]
+     },
+     {
+      "name": "FTL 350",
+      "glance": [
+       "Ø1.2 – 13.8″ (Ø30 – 350 mm)",
+       "1.2 – 13.8″ (30 – 350 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "177 ft/min (54 m/min)",
+       "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)"
+      ]
+     },
+     {
+      "name": "FTL 500",
+      "glance": [
+       "Ø1.2 – 19.7″ (Ø30 – 500 mm)",
+       "1.2 – 19.7″ (30 – 500 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "82 ft/min (25 m/min)",
+       "39.4 ft, 4,630 lb (12 m, 2,100 kg)"
+      ]
+     },
+     {
+      "name": "FTL 640",
+      "glance": [
+       "Ø4.7 – 25.2″ (Ø120 – 640 mm)",
+       "4.7 – 25.2″ (120 – 640 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "82 ft/min (25 m/min)",
+       "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube",
+     "profile",
+     "power",
+     "speed",
+     "length"
+    ],
+    "caps": {},
+    "note": "Chuck size is the model number (250 = Ø250 mm); every chuck size is available with any of the listed laser sources. Loading length and bundle loader to suit the tube length; ask us for the cutting chart for your tube wall and material."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Tube-Lasers-2026.pdf",
+    "label": "Download the tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "tube-ftl"
+  },
+  "dn-panel": {
+   "id": "dn-panel",
+   "brand": "dener",
+   "name": "CNC panel bender, 79″ × 49″ blanks, 14 ga mild steel — 15 servo axes",
+   "short": "CNC panel bender",
+   "models_label": "DB 2017 · 1 model",
+   "summary": "A panel bender folds all four sides of a blank — up, down, hems, boxes — in one setup, holding the sheet with a blank-holder while the bending blades form each flange in 0.2 s; the manipulator rotates the part between sides. No tooling changes, no operator skill, 1 mm radius bends and ±0.001 mm positioning on 15 servo axes: enclosures, doors, panels, HVAC and appliance parts that would take a press brake a dozen handlings. 100 % electric, 2.8 kW average draw, 50 dB. Automatic loading and unloading arms are available.",
+   "features": [
+    "Four-side bending of blanks to 78.7 × 49.2″ (2,000 × 1,250 mm) in one setup; flanges to 6.7″ (11.8″ on request)",
+    "15 servo axes, 0.001 mm positioning, 0.2 s per bend, 295 ft/min feeding",
+    "14 ga mild steel, 16 ga stainless, 1/8″ aluminum; 1 mm minimum radius",
+    "High-strength cast frame; servo manipulator with brush table and pressing arm",
+    "3D CNC with offline programming, 3D simulation and bending compensation",
+    "100 % electric — no hydraulics; about 2.8 kW average consumption, 50 dB",
+    "CE safety; CSA-approved electrical panel"
+   ],
+   "optional": [
+    "Automatic loading and unloading arms",
+    "Longer bending widths; 300 mm bending height",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "dn-panel-1",
+    "dn-panel-2",
+    "dn-panel-3",
+    "dn-panel-7",
+    "dn-panel-5",
+    "dn-panel-6"
+   ],
+   "videos": [
+    {
+     "id": "KrQ5S2YMDlk",
+     "title": "DENER CNC panel bender",
+     "duration": "PT0M40S",
+     "thumb": "video-KrQ5S2YMDlk"
+    },
+    {
+     "id": "_f6ZcqTYmNg",
+     "title": "DENER CNC panel bender with auto loading and unloading arms",
+     "duration": "PT0M40S",
+     "thumb": "video-_f6ZcqTYmNg"
+    },
+    {
+     "id": "LIDHOoM8Abk",
+     "title": "DENER panel bender",
+     "duration": "PT0M52S",
+     "thumb": "video-LIDHOoM8Abk"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CNC panel bender",
+      "sub": "1 model · 79″ × 49″ blank · 1/8″ aluminum, 14 ga mild steel, 16 ga stainless",
+      "models": [
+       "Panel bender DB 2017"
+      ],
+      "rows": [
+       {
+        "label": "Max. bending width",
+        "sub": "",
+        "cells": [
+         "78.7″ (2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. blank size L × W",
+        "sub": "",
+        "cells": [
+         "78.7 × 49.2″ (2,000 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending height",
+        "sub": "",
+        "cells": [
+         "6.7″ (170 mm) · 11.8″ (300 mm) on request"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, mild steel",
+        "sub": "410 N/mm²",
+        "cells": [
+         "14 ga (2.0 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, stainless steel",
+        "sub": "515 N/mm²",
+        "cells": [
+         "16 ga (1.5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, aluminum",
+        "sub": "265 N/mm²",
+        "cells": [
+         "1/8″ (3.0 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. bend radius",
+        "sub": "",
+        "cells": [
+         "0.04″ (1 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. four-side box, inside",
+        "sub": "",
+        "cells": [
+         "5.5 × 7.5″ (140 × 190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. two-side box, inside",
+        "sub": "",
+        "cells": [
+         "5.5″ (140 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.2 s per bend"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feeding speed",
+        "sub": "",
+        "cells": [
+         "295 ft/min (90 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "0.001 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo axes",
+        "sub": "",
+        "cells": [
+         "15"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed / average power",
+        "sub": "",
+        "cells": [
+         "106 HP (79 kW) installed · about 2.8 kW average"
+        ],
+        "key": false
+       },
+       {
+        "label": "Noise",
+        "sub": "",
+        "cells": [
+         "about 50 dB"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "201 × 104 × 130″ (5,100 × 2,650 × 3,300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "about 35,000 lb (16 t)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Panel bender DB 2017",
+      "glance": [
+       "78.7″ (2,000 mm)",
+       "14 ga (2.0 mm)",
+       "6.7″ (170 mm) · 11.8″ (300 mm) on request",
+       "0.2 s per bend",
+       "about 35,000 lb (16 t)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_width",
+     "thickness",
+     "bending_height",
+     "speed",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are Dener's ratings for the stated tensile strengths; longer bending widths and a 300 mm bending height on request."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Panel-Bender-2026.pdf",
+    "label": "Download the panel bender brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "panel"
+  }
+ }
+}

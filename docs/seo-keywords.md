@@ -168,3 +168,12 @@ so the decisions rest on the Search Console export of the old site and the Canad
 
 Old Şahinler brochure URLs (`/files/…SAHINLER…pdf`, HKM, HPK, DPM, HNM, BT-114 …) 301 to the new catalogue PDF or the
 rebuilt page (`src/root/.htaccess`).
+
+## Dener pages (Oct 2026)
+
+GSC (Queries.csv): "horizontal press brake" 1,782 impr., "dener press brake" 603, "electric press brake" 452, "hydraulic press brake canada" 348,
+"servo electric press brake" 279; "laser cutting machines" 520, "fiber laser cutting machine" 349, "dener fibre laser" 308; shears: "metal shear
+machine" 4,216, "metal shearing machine" 3,408, "hydraulic metal shear machine" 1,514, "hydraulic shear cutter" 1,268, "plate shearing machine" 1,431.
+Titles: press-brake "Hydraulic & Electric CNC Press Brakes, 22–661 Tons | NovoTech"; laser-cutting-machine "Fiber Laser Cutting Machines for Sheet
+Metal, 3–40 kW | NovoTech"; tube-laser-cutting-machine "Tube Laser Cutting Machines, Ø0.3″ to 25″ Tube & Profile | NovoTech"; panel-bender
+"CNC Panel Bender, 79″ × 1/8″, 15 Servo Axes | NovoTech"; shear-cutting retitled "Metal Shear Machines — Mechanical & Hydraulic to 3/4″ | NovoTech".
