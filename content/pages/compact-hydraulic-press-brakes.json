@@ -6,7 +6,7 @@
  "artifact_title": "Compact hydraulic press brakes",
  "meta_description": "Small hydraulic press brakes: 33, 44 and 66 ton NC models from 4.2 to 6.9 ft and a 44-ton 3-axis CNC with Cybelec control and Promecam tooling. Parts in Canada.",
  "h1": "Compact hydraulic press brakes",
- "intro": "A compact hydraulic press brake bends sheet metal between a punch and a V-die under hydraulic force — here 33 to 66 US tons over 4.2 to 6.9 ft, the size that fits a sheet-metal shop rather than a steel-fabrication plant. İşitan's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger CNC press brakes see our Dener range.",
+ "intro": "A compact hydraulic press brake bends sheet metal between a punch and a V-die under hydraulic force — here 33 to 66 US tons over 4.2 to 6.9 ft, the size that fits a sheet-metal shop rather than a steel-fabrication plant. İşitan's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger machines see the Dener CNC press brakes and NovoTech's value-line CNC press brakes.",
  "hero_points": [
   "33, 44 and 66 US tons · 4.2, 5.1 and 6.9 ft (1270–2100 mm)",
   "2-axis NC or 3-axis CNC (Y1 + Y2 + X) with Cybelec control",
@@ -25,6 +25,10 @@
   {
    "label": "Products",
    "href": "products.html"
+  },
+  {
+   "label": "Compact press brakes",
+   "href": "press-brake.html"
   },
   {
    "label": "Compact hydraulic press brakes"
@@ -77,8 +81,16 @@
  "section_label": "Compact press brakes",
  "related_pages": [
   {
-   "href": "press-brake.html",
+   "href": "dener-cnc-press-brakes.html",
    "label": "Dener CNC press brakes"
+  },
+  {
+   "href": "novotech-cnc-press-brakes.html",
+   "label": "NovoTech CNC press brakes"
+  },
+  {
+   "href": "press-brake.html",
+   "label": "All press brakes"
   },
   {
    "href": "press-brake-tooling-punch-and-die.html",
@@ -90,6 +102,32 @@
   }
  ],
  "related_title": "More bending machinery from NovoTech",
+ "section": {
+  "label": "Compact press brakes",
+  "hub": {
+   "href": "press-brake.html",
+   "label": "All press brakes",
+   "image": "dn-xl-1",
+   "blurb": "Every press brake NovoTech sells — Dener, NovoTech value line and İşitan — on one page, with the capacity table for the whole range."
+  },
+  "pages": [
+   {
+    "href": "dener-cnc-press-brakes.html",
+    "label": "Dener CNC press brakes",
+    "current": false
+   },
+   {
+    "href": "novotech-cnc-press-brakes.html",
+    "label": "NovoTech CNC press brakes",
+    "current": false
+   },
+   {
+    "href": "compact-hydraulic-press-brakes.html",
+    "label": "Compact hydraulic press brakes",
+    "current": true
+   }
+  ]
+ },
  "intro_video": {
   "id": "XMn6YkPPOig",
   "title": "İşitan company introduction video",
@@ -98,5 +136,5 @@
  },
  "intro_video_heading": "Inside the factory — where the machines are built",
  "intro_video_text": "A tour of the İşitan plant in Bursa, Turkey, where the sheet-metal and tube machinery on these pages has been built since 1959.",
- "nav_label": "Compact press brakes"
+ "nav_label": "Compact hydraulic press brakes"
 }

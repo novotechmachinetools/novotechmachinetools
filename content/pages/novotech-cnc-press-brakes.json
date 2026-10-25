@@ -1,0 +1,197 @@
+{
+ "slug": "novotech-cnc-press-brakes",
+ "template": "category.html",
+ "family_set": "value-sheet",
+ "title": "NovoTech CNC Press Brakes, Hydraulic & Electric · Value Line",
+ "artifact_title": "NovoTech CNC press brakes — hydraulic and electric · value line, 3 to 1,323 US tons",
+ "meta_description": "NovoTech's own CNC press brakes sold in Canada: hydraulic CNC 55 – 331 US tons with Delem control, heavy-duty and tandem to 1,323 tons, NC brakes from 33 tons, servo-electric 3 – 176 tons.",
+ "h1": "NovoTech CNC press brakes — hydraulic and electric · value line, 3 to 1,323 US tons",
+ "intro": "These are NovoTech's own press brakes — the value line: built in China to our specification with Delem controls, Hawe and Rexroth hydraulics, Estun servos and Schneider electrics, inspected before they ship and sold under NovoTech's name at a price a small shop can justify. Three families on one page: the hydraulic CNC press brakes from 55 to 331 US tons over 4 to 20 ft, with heavy-duty and tandem machines to 1,323 tons and 26 ft; the NC torsion-bar brakes from 33 to 441 tons for shops that bend the same parts every day; and the electric servo press brakes — no hydraulic oil, ball-screw drive, ±0.01 mm — from 11 to 176 US tons, plus 3 to 12 ton bench machines. For the Turkish-built premium machines see the Dener CNC press brakes; for the compact 4 – 7 ft shop brakes see the İşitan page. Every machine is installed and supported from Mississauga, ON, with a CSA-approved panel and a 1-year warranty.",
+ "hero_points": [
+  "Hydraulic CNC: Delem DA-53T, Hawe servo valves, servo back gauge, 4+1 axes — 55 – 331 US tons × 4 – 20 ft; heavy-duty to 1,323 tons",
+  "Electric: servo motors, belts and ball screws, ±0.01 mm, 70 % less energy — 11 – 176 US tons × 20″ – 10.5 ft, 3 – 12 t bench",
+  "NC torsion-bar brakes with Estun E21 control — 33 – 441 tons × 5 – 20 ft; robot bending cells on hydraulic and electric"
+ ],
+ "hero_image": "vl-wad-1",
+ "hero_image_secondary": [
+  "vl-wadg-1",
+  "vl-nc-1"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Press brakes",
+   "href": "press-brake.html"
+  },
+  {
+   "label": "NovoTech CNC press brakes — hydraulic and electric · value line, 3 to 1,323 US tons"
+  }
+ ],
+ "hero_brand_line": "NovoTech's own value line: manufactured in China to high North American quality standards, with Delem, Estun, Hawe, Rexroth and Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell.",
+ "groups": [
+  {
+   "id": "pb-cnc-group",
+   "title": "Hydraulic CNC press brakes",
+   "lead": "Electro-hydraulic servo synchronisation, Delem control and a servo back gauge — the full CNC package from 55 to 1,323 US tons.",
+   "brand": "novotech",
+   "families": [
+    "vl-wad-small",
+    "vl-wad-large",
+    "vl-wad-heavy"
+   ]
+  },
+  {
+   "id": "pb-electric-group",
+   "title": "Electric servo press brakes",
+   "lead": "Ball-screw servo drive from 3 to 176 US tons — the clean, quiet, accurate brake for sheet work.",
+   "brand": "novotech",
+   "families": [
+    "vl-wadg",
+    "vl-wadg-mini"
+   ]
+  },
+  {
+   "id": "pb-nc-group",
+   "title": "NC hydraulic press brakes — torsion bar",
+   "lead": "The simple machine: torsion-bar synchronised ram, mechanical stops and an Estun NC control for the back gauge and depth.",
+   "brand": "novotech",
+   "families": [
+    "vl-nc-small",
+    "vl-nc-large"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Hydraulic, electric or NC — which press brake do I need?",
+   "a": "Hydraulic CNC is the all-rounder: full tonnage over the whole stroke, the lowest price per ton above about 150 tons and the right machine for 3/8″ and 1/2″ plate. Electric wins on accuracy, speed on thin material, energy and cleanliness — ±0.01 mm from the first part, bending speeds to 30 mm/s, about 70 % less power, no oil — and is usually the better buy for a shop bending 16 ga to 1/4″ sheet all day: enclosures, brackets, HVAC, electrical. The NC torsion-bar brake is the budget machine for a shop that bends the same parts from the same stock every day: rigid, cheap to maintain, a third less than the CNC. Tell us your material mix and we quote the right one."
+  },
+  {
+   "q": "CNC or NC press brake — what is the difference?",
+   "a": "An NC press brake positions the back gauge and the ram depth from a stored program, but the two cylinders are kept in step by a torsion bar and the depth is set by mechanical stops: accurate enough for brackets, boxes, channels and roofing in one material. A CNC press brake measures the ram on linear scales and corrects it through servo valves, calculates the bend from the drawing, crowns the bed automatically and changes material and thickness in the program — the machine for mixed work, tight angles and multi-bend parts."
+  },
+  {
+   "q": "How does the value line differ from the Dener press brakes?",
+   "a": "The architecture is the same — monoblock frame, Hawe servo valves, linear scales, servo back gauge, Delem control, European tooling — and both are installed and supported by the same NovoTech technicians in Mississauga. The Dener XL is built in Turkey on a heavier frame with a longer options list (ESA controls, 6-axis ATF gauge, hybrid drive, 20 ft and 661 tons in the catalogue) and carries the Dener name and Dener Canada parts; the value-line machine is built in China to our specification, sold under NovoTech's name and inspected before it ships, at about two-thirds of the price. Both come with the CSA panel and the same warranty."
+  },
+  {
+   "q": "How much tonnage do I need?",
+   "a": "Air bending mild steel with the standard V = 8 × thickness die takes roughly 8 US tons per foot for 16 ga, 15 tons per foot for 1/8″, 30 for 3/16″, 55 for 1/4″ and 130 tons per foot for 1/2″; stainless needs about 50 % more, aluminum about half. A 10 ft × 1/4″ job is therefore a 110 – 135 ton machine, 10 ft × 3/8″ a 220 – 250 ton machine and 13 ft × 1/2″ a 400 ton machine. Tell us the thickest and longest bend you make and we size the brake and the tooling."
+  },
+  {
+   "q": "How does the electric ball-screw drive work?",
+   "a": "Two servo motors (three on the 160 t) on top of the frame drive lead ball screws through timing belts; the screws move the ram, and magnetic scales on each side feed the position back to the control so the two sides stay in step to 0.01 mm. Because the screws hold position without power, the ram can dwell at the bottom for coining or hemming with no energy drawn. The screws are preloaded and lubricated automatically; there is nothing to bleed or change. The 3 – 12 ton bench machines are the same drive in a cabinet that plugs into a wall outlet."
+  },
+  {
+   "q": "Which control comes with the machine?",
+   "a": "The Delem DA-53T: a 10″ touchscreen numerical control for Y1, Y2, X and R (plus the V crowning axis on the hydraulic brakes from 110 t) that stores programs with the angle, depth and gauge positions and runs in inches or millimetres. The DA-58T adds a 15″ screen with 2D graphic programming and automatic bend sequencing, the DA-66T a 17″ screen with 3D part view, and the DA-69T full 3D programming and simulation; ESA S875 and Cybelec controls are available too. All of them import DXF files and take offline programs from Delem's Profile software. The NC brakes carry the Estun E21."
+  },
+  {
+   "q": "What tooling fits?",
+   "a": "European-style (Promecam / Amada) segmented punches and dies with quick clamps are standard and a sectioned punch set with a 2-V die is in the crate; Wila hydraulic clamping, double-sided quick clamps and Rolleri pneumatic clamps are options, and American-style tooling can be fitted with an adapter. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools — and sizes it to your machine."
+  },
+  {
+   "q": "What safety equipment is included?",
+   "a": "Side guards, an enclosed rear guard, interlocked doors and an anti-panic foot pedal with emergency stop are standard. DSP laser finger protection (EN 12622 CAT 4 / SIL 3), which watches the zone under the punch and stops the ram if a finger enters it, and light curtains are options we recommend for every CNC machine; in Ontario the machine also needs the pre-start health and safety review, which we prepare the documentation for."
+  },
+  {
+   "q": "Can the press brake be automated?",
+   "a": "Yes — the 40 and 50 ton electric machines and the 110 – 220 ton hydraulic brakes are sold as complete robot bending cells with an Estun robot, gripper, loading table and unloading stack, and every CNC model has the robot interface; CNC sheet followers support large blanks through the bend on the hydraulic machines."
+  },
+  {
+   "q": "Do you deliver, install and service in Canada?",
+   "a": "Yes. Machines are inspected before they leave the factory, shipped to Mississauga, unloaded, levelled, commissioned and the operators trained by NovoTech; parts for the Delem, Hawe, Rexroth, Estun and Schneider components are standard items and the machine-specific parts are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about the NovoTech press brakes",
+ "catalogue_pdf": null,
+ "origin_feature": {
+  "title": "Built in China to North American standards",
+  "text": "NovoTech's own brand — European controls and hydraulics, inspected before shipping, same CSA panel, warranty and Mississauga, ON support as every machine we sell."
+ },
+ "section_label": "Press brakes",
+ "related_pages": [
+  {
+   "href": "dener-cnc-press-brakes.html",
+   "label": "Dener CNC press brakes"
+  },
+  {
+   "href": "compact-hydraulic-press-brakes.html",
+   "label": "Compact hydraulic press brakes"
+  },
+  {
+   "href": "press-brake.html",
+   "label": "All press brakes"
+  },
+  {
+   "href": "press-brake-tooling-punch-and-die.html",
+   "label": "Press brake tooling"
+  },
+  {
+   "href": "hydraulic-shearing-machine.html",
+   "label": "Hydraulic shears"
+  },
+  {
+   "href": "panel-bender.html",
+   "label": "CNC panel benders"
+  },
+  {
+   "href": "v-grooving-machine.html",
+   "label": "V-grooving machines"
+  }
+ ],
+ "related_title": "More bending and cutting machinery from NovoTech",
+ "section": {
+  "label": "Press brakes",
+  "hub": {
+   "href": "press-brake.html",
+   "label": "All press brakes",
+   "image": "dn-xl-1",
+   "blurb": "Every press brake NovoTech sells — Dener, NovoTech value line and İşitan — on one page, with the capacity table for the whole range."
+  },
+  "pages": [
+   {
+    "href": "dener-cnc-press-brakes.html",
+    "label": "Dener CNC press brakes",
+    "current": false
+   },
+   {
+    "href": "novotech-cnc-press-brakes.html",
+    "label": "NovoTech CNC press brakes",
+    "current": true
+   },
+   {
+    "href": "compact-hydraulic-press-brakes.html",
+    "label": "Compact hydraulic press brakes",
+    "current": false
+   }
+  ]
+ },
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null,
+ "nav_label": "NovoTech CNC press brakes",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+   "label": "Download the hydraulic press brake brochure",
+   "size": "PDF · 2 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
+   "label": "Download the electric press brake brochure",
+   "size": "PDF · 1 MB · imperial units"
+  }
+ ]
+}

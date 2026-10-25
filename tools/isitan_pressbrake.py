@@ -137,7 +137,7 @@ PAGE = dict(
     title="Small Hydraulic Press Brakes, 33–66 Ton NC & CNC | NovoTech",
     meta="Small hydraulic press brakes: 33, 44 and 66 ton NC models from 4.2 to 6.9 ft and a 44-ton 3-axis CNC with Cybelec control and Promecam tooling. Parts in Canada.",
     h1="Compact hydraulic press brakes",
-    intro="A compact hydraulic press brake bends sheet metal between a punch and a V-die under hydraulic force — here 33 to 66 US tons over 4.2 to 6.9 ft, the size that fits a sheet-metal shop rather than a steel-fabrication plant. İşitan's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger CNC press brakes see our Dener range.",
+    intro="A compact hydraulic press brake bends sheet metal between a punch and a V-die under hydraulic force — here 33 to 66 US tons over 4.2 to 6.9 ft, the size that fits a sheet-metal shop rather than a steel-fabrication plant. İşitan's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger machines see the Dener CNC press brakes and NovoTech's value-line CNC press brakes.",
     points=["33, 44 and 66 US tons · 4.2, 5.1 and 6.9 ft (1270–2100 mm)", "2-axis NC or 3-axis CNC (Y1 + Y2 + X) with Cybelec control", "Promecam tooling, HAWE / Rexroth hydraulics, Leuze light guard"],
     hero="is-eb-1240-cnc", minis=["is-eb-2160", "is-eb-1230"],
     groups=[("pressbrake", "Edgebender press brakes line-up", "The 3-axis CNC Edgebender 1240 and the 2-axis NC 1230, 1540 and 2160.")],
@@ -151,6 +151,8 @@ PAGE = dict(
 
 def build():
     write_families(SET, FAMILIES)
-    write_category(SLUG, PAGE, FAMILIES, SET, SECTION,
-                   extra={"nav_label": "Compact press brakes", "related_title": "More bending machinery from NovoTech", "related_pages": [{"href": "press-brake.html", "label": "Dener CNC press brakes"}, {"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "bead-rollers.html", "label": "Bead rollers"}]})
+    import press_brake_nav as PBN
+    write_category(SLUG, {**PAGE, "related_pages": [{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "bead-rollers.html", "label": "Bead rollers"}]},
+                   FAMILIES, SET, SECTION, hub=PBN.hub(), siblings=PBN.siblings(),
+                   extra={"nav_label": "Compact hydraulic press brakes", "related_title": "More bending machinery from NovoTech"})
     return IMAGES

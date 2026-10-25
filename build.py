@@ -589,8 +589,9 @@ def feature_gallery(f):
     return out
 
 
-def range_table(subpages):
-    """One row per model across the range: for the hub's 'at a glance' table."""
+def range_table(subpages, pick=None):
+    """One row per model across the range: for the hub's 'at a glance' table.  `pick` (page.range_pick) names the glance keys
+    to show, in order, so families whose glance columns differ (İşitan Edgebender vs Dener XL) still line up under one header."""
     rows = []
     for sp in subpages:
         for f in sp["families"]:
@@ -598,9 +599,12 @@ def range_table(subpages):
             if not spec:
                 continue
             if spec.get("kind") == "table":
+                gk = spec.get("glance_keys", [])
                 for m in spec["models"]:
+                    g = m.get("glance", [])
+                    cols = [g[gk.index(k)] if k in gk and gk.index(k) < len(g) and g[gk.index(k)] else "—" for k in pick] if pick else g
                     rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "kind": sp.get("nav_label") or sp["title"],
-                                 "cols": m.get("glance", []), "line": ""})
+                                 "cols": cols, "line": ""})
                 continue
             if spec.get("kind") == "bandsaw":
                 for m in spec["models"]:
@@ -641,7 +645,7 @@ def render_page(page):
                 ln["subpages"] = [by_slug[sp["slug"]] for sp in ln["subpages"]]
                 ln["range_rows"] = range_table(ln["subpages"])
                 ln["brand_info"] = site["brands"].get(ln["brand"], {})
-        page["range_rows"] = range_table(page["subpages"])
+        page["range_rows"] = range_table(page["subpages"], page.get("range_pick"))
         if page.get("range_groups"):   # e.g. rebar hub: benders and cutters in separate tables
             for rg in page["range_groups"]:
                 rg["rows"] = [row for row in page["range_rows"] if row.get("kind") == rg["kind"]]

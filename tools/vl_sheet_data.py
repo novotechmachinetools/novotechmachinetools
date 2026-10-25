@@ -5,15 +5,15 @@ website tables and the quotations NovoTech received (see /home/claude/value-shee
 site.  Model numbers are the supplier's: tonnage × bending length (press brakes), thickness × length (shears), length × width
 (V-grooving), bend width (panel benders), tonnage (ironworker).
 
-Pages fed from here: hydraulic-press-brake (WAD CNC, heavy-duty WAD, WC67K/E NC), electric-press-brake (WADG), hydraulic-
+Pages fed from here: novotech-cnc-press-brakes (WAD CNC, heavy-duty WAD, WC67K/E NC, WADG electric), hydraulic-
 shearing-machine (QC12K swing beam, Q11K guillotine), v-grooving-machine (horizontal, vertical); the panel benders are
 appended to panel-bender.html (tools/dener_pages.py) and the ironworker to ironworker-machines.html (tools/sahinler_pages.py).
 """
 from dener_data import inch, feet, length, tons, hp, speed, weight, dims, gal, mmin, table, spec, vids, CAPS  # noqa: F401
 
 BRAND = "novotech"
-P_HPB = "hydraulic-press-brake"
-P_EPB = "electric-press-brake"
+P_PB = "novotech-cnc-press-brakes"       # hydraulic CNC, NC and electric on one page (Oct 2026: the two pages were merged)
+P_HPB = P_EPB = P_PB
 P_SHEAR = "hydraulic-shearing-machine"
 P_VG = "v-grooving-machine"
 P_PANEL = "panel-bender"
@@ -624,7 +624,7 @@ SHEAR_FAMILIES = [
                  "a light-barrier front guard are standard.",
          features=["5/32″ to 3/4″ (4 – 20 mm) mild steel; stainless about 60 % of that thickness"] + QC_STD,
          optional=QC_OPT,
-         images=["vl-qc12k-1", "vl-qc12k-2", "vl-qc12k-rear", "vl-sh-backgauge", "vl-sh-holddowns", "vl-sh-holddowns-2", "vl-sh-e21s", "vl-sh-blade", "vl-sh-roller", "vl-sh-photo-1", "vl-sh-photo-2", "vl-sh-photo-3"],
+         images=["vl-qc12k-1", "vl-qc12k-2", "vl-qc12k-rear", "vl-sh-backgauge", "vl-sh-holddowns", "vl-sh-holddowns-2", "vl-sh-e21s", "vl-sh-roller", "vl-sh-photo-1", "vl-sh-photo-2", "vl-sh-photo-3"],
          videos=[],      # the channel's swing beam shear video was filmed at the supplier's factory with its logo in view
          specs=spec([T_QC_S, T_QC_M, T_QC_L], SH_GK, SH_G_FROM_QC, NOTE_SH)),
     dict(id="vl-q11k", group="sh-guillotine", page=P_SHEAR, brand=BRAND,
@@ -682,7 +682,7 @@ PANEL_FAMILIES = [
                  "165 × 47″. Nine models from 63″ to 165″ bend width, with robot loading as an option.",
          features=["Nine sizes, 63 – 165″ (1,600 – 4,200 mm) bend width; MH models take 55″-deep blanks"] + PN_STD_M,
          optional=PN_OPT,
-         images=["vl-pbm-1", "vl-pb-robot-cell", "vl-pb-loading", "vl-pb-unit", "vl-pb-blades", "vl-pb-clamp", "vl-pb-manipulator", "vl-pb-frame", "vl-pb-parts", "vl-pb-parts-2"],
+         images=["vl-pbm-1", "vl-pbm-bending", "vl-pbm-bend", "vl-pbm-holder", "vl-pb-blades", "vl-pb-frame", "vl-pbm-profiles"],
          videos=[],
          specs=spec([T_PBM], PN_GK, PN_G_FROM, NOTE_PN)),
     dict(id="vl-pba", group="panel-value", page=P_PANEL, brand=BRAND,
@@ -694,7 +694,7 @@ PANEL_FAMILIES = [
                  "26 – 28 servo axes, ± 0.1 mm thickness detection, 0.2 s per bend; the same capacities as the PB-M. Four sizes from 64″ to 126″.",
          features=["Four sizes, 64 – 126″ (1,630 – 3,200 mm) bend width; minimum four-side box 14.6 × 7.1″"] + PN_STD_A,
          optional=PN_OPT,
-         images=["vl-pba-1", "vl-pb-operator", "vl-pb-tools", "vl-pb-tool-diagram", "vl-pb-parts-3"],
+         images=["vl-pba-1", "vl-pb-robot-cell", "vl-pb-unit", "vl-pba-head", "vl-pb-tools", "vl-pb-operator", "vl-pb-tool-diagram"],
          videos=[],
          specs=spec([T_PBA], PN_GK, PN_G_FROM, NOTE_PN)),
 ]

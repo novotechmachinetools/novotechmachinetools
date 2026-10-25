@@ -18,6 +18,7 @@ import dener_photos as PH
 import vl_sheet_data as VL   # NovoTech value-line panel benders below the Dener machine on panel-bender.html
 import senfeng_data as SF    # Senfeng lasers, tube lasers and panel benders: the value line below Dener, under the Senfeng brand
 import senfeng_pages as SFP
+import press_brake_nav as PBN
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "dener"
@@ -49,16 +50,17 @@ def pdf(file, label):
 
 
 PAGE_PB = dict(
-    title="CNC Press Brakes, Hydraulic & Electric, 22–661 Tons | NovoTech",
-    meta="Dener CNC press brakes sold in Canada: XL hydraulic to 661 US tons × 20 ft, XH hybrid servo-pump brakes, DDM and DDS servo-electric brakes from 22 tons.",
-    h1="CNC press brakes — hydraulic, hybrid, servo-electric and ball-screw",
+    title="Dener CNC Press Brakes, 22–661 Tons | NovoTech",
+    meta="Dener CNC press brakes sold in Canada: XL hydraulic to 661 US tons × 20 ft, XH hybrid servo-pump brakes, DDM and DDS servo-electric brakes from 22 tons — made in Turkey.",
+    h1="Dener CNC press brakes — hydraulic, hybrid, servo-electric and ball-screw",
     intro="A press brake bends sheet and plate between a punch and a V-die; the CNC positions the back gauge and controls the ram depth, "
           "crowning and angle, so the operator loads the sheet and presses the pedal. NovoTech sells Dener press brakes in Canada — the "
           "XL hydraulic press brake in 18 models from 66 to 661 US tons and 5 to 20 ft, the XH hybrid that puts a servo pump on the same "
           "frame for 42 – 58 % less energy, the DDM servo-electric press brake with no hydraulic oil from 44 to 220 US tons, and the DDS "
           "ball-screw press brake from 22 US tons for small parts. ESA S640 / S875 or Delem DA-66S / 69S controls, European-style tooling, "
-          "back gauges to 6 axes, crowning, angle measurement, sheet followers and robot cells. For a small shop there is also the İşitan "
-          "compact hydraulic press brake. Installed and supported from Mississauga, ON, with a CSA-approved panel and Dener Canada parts.",
+          "back gauges to 6 axes, crowning, angle measurement, sheet followers and robot cells. This is the premium line; NovoTech's own "
+          "value-line CNC press brakes and the İşitan compact press brakes have pages of their own. Installed and supported from Mississauga, "
+          "ON, with a CSA-approved panel and Dener Canada parts.",
     points=["XL hydraulic: 18 models, 66 – 661 US tons × 5 – 20 ft; tandem to 60 ft and 1,800 tons",
             "XH hybrid: servo pump on the XL frame — 42 – 58 % less energy, faster approach and return",
             "DDM servo-electric 44 – 220 tons and DDS ball-screw 22 / 44 tons — no hydraulic oil"],
@@ -82,10 +84,9 @@ PAGE_PB = dict(
           "a": "Yes. Machines ship from Kayseri to Mississauga; we unload, level, commission and train your operators, and Dener Canada stocks parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about press brakes",
-    related_pages=[{"href": "hydraulic-press-brake.html", "label": "Value-line hydraulic press brakes"}, {"href": "electric-press-brake.html", "label": "Value-line electric press brakes"},
-                   {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"},
-                   {"href": "panel-bender.html", "label": "CNC panel benders"}, {"href": "shear-cutting.html", "label": "Metal shears"},
-                   {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}, {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
+    related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
+                   {"href": "shear-cutting.html", "label": "Metal shears"}, {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"},
+                   {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
     related_title="More bending and cutting machinery from NovoTech",
 )
 
@@ -125,7 +126,7 @@ PAGE_LASER = dict(
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about fiber laser cutting machines",
     related_pages=[{"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"}, {"href": "laser-welding-machine.html", "label": "Laser welding & cladding"},
-                   {"href": "press-brake.html", "label": "CNC press brakes"}, {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring after laser cutting"},
+                   {"href": "press-brake.html", "label": "Press brakes"}, {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring after laser cutting"},
                    {"href": "shear-cutting.html", "label": "Metal shears"}, {"href": "panel-bender.html", "label": "CNC panel bender"}],
     related_title="Machinery that works alongside a laser",
 )
@@ -200,7 +201,7 @@ PAGE_PANEL = dict(
           "a": "With the optional loading and unloading arms the machine takes blanks from a stack and places finished parts on a pallet, so it runs lights-out behind a laser. The 15-axis servo drive and the 2.8 kW average consumption make it the cheapest machine on the floor to keep running."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about panel benders",
-    related_pages=[{"href": "press-brake.html", "label": "CNC press brakes"}, {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"},
+    related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"},
                    {"href": "shear-cutting.html", "label": "Metal shears"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
     related_title="More sheet-metal machinery from NovoTech",
 )
@@ -256,7 +257,8 @@ def build():
     LASER_LINE = ("Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga); Senfeng Laser builds the value line in "
                   "Jinan, China (since 2004, CE / FDA / ETL, Senfeng Laser USA). Both sold, installed and supported in Canada by NovoTech.")
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **INTRO_VIDEO}
-    write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", extra={**common, "nav_label": "CNC press brakes", "catalogue_pdf": None, "catalogue_pdfs": [pdf_pb, pdf_servo]})
+    write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", hub=PBN.hub(), siblings=PBN.siblings(),
+                   extra={**common, "nav_label": "Dener CNC press brakes", "catalogue_pdf": None, "catalogue_pdfs": [pdf_pb, pdf_servo]})
     write_category(D.P_LASER, PAGE_LASER, fams, SET, "Sheet laser cutters", extra={**common, "nav_label": "Sheet laser cutters", "catalogue_pdf": None, "catalogue_pdfs": [pdf_laser, pdf_sf_laser], "hero_brand_line": LASER_LINE})
     write_category(D.P_TUBE, PAGE_TUBE, fams, SET, "Tube laser cutters", extra={**common, "nav_label": "Tube laser cutters", "catalogue_pdf": None, "catalogue_pdfs": [pdf_tube, pdf_sf_tube], "hero_brand_line": LASER_LINE})
     write_category(D.P_PANEL, PAGE_PANEL, fams, SET, "Panel benders", extra={**common, "nav_label": "Panel benders", "catalogue_pdf": None, "catalogue_pdfs": [pdf_panel, pdf_sf_panel, pdf_vl_panel],

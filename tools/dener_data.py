@@ -6,12 +6,12 @@ Metric data from Dener's 2026 brochures (HYDRAULIC_EN, SERVO_EN, SHEARING_EN, SM
 Model numbers are Dener's: metric bending length × metric tonnage (hydraulic / servo), cutting length × capacity (shears),
 table size (lasers).
 
-Pages fed from here: press-brake (hydraulic XL, hybrid XH, servo-electric DDM, ball-screw DDS), shear-cutting (DAS CNC
+Pages fed from here: dener-cnc-press-brakes (hydraulic XL, hybrid XH, servo-electric DDM, ball-screw DDS), shear-cutting (DAS CNC
 guillotine, BS / BSY swing beam — appended after the SRGM groups), laser-cutting-machine (GFL + Smart sheet lasers),
 tube-laser-cutting-machine (FTL, E-FTL) and panel-bender.
 """
 BRAND = "dener"
-P_PB = "press-brake"
+P_PB = "dener-cnc-press-brakes"      # under the press-brake hub (Oct 2026); press-brake.html is the hub of the three press-brake pages
 P_SHEAR = "shear-cutting"
 P_LASER = "laser-cutting-machine"
 P_TUBE = "tube-laser-cutting-machine"
@@ -261,7 +261,7 @@ PB_FAMILIES = [
          videos=vids(("vIWys546tWY", "DENER XL 10 ft × 220 ton hybrid CNC press brake"), ("nKbuxZGSjdQ", "DENER XL 12 ft × 175 ton hybrid press brake"),
                      ("-tAymdJwXjU", "DENER XL 13 ft × 220 ton hybrid press brake"), ("Msy6YHM5dIU", "DENER hybrid press brake"),
                      ("Ymz5qW36zTs", "DENER tandem 60 ft × 1,600 ton hybrid press brake with sheet following support")),
-         specs=spec([T_XH], PB_GK, ["Bending force", "Bending length", "Approach speed", "Servo motor", "Energy saving vs. the XL hydraulic"], NOTE_XH)),
+         specs=spec([T_XH], ["bending_force", "bending_length", "approach_speed", "servo_motor", "energy_saving"], ["Bending force", "Bending length", "Approach speed", "Servo motor", "Energy saving vs. the XL hydraulic"], NOTE_XH)),
     dict(id="dn-ddm", group="pb-servo", page=P_PB, brand=BRAND,
          name="DDM servo-electric CNC press brakes, 44 – 220 US tons × 5 – 13.4 ft",
          short="DDM servo-electric press brakes",

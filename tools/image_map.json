@@ -14610,14 +14610,6 @@
   "quality": 82,
   "cutout": false
  },
- "vl-sh-blade": {
-  "src": "tools/src-images/value-sheet/vl-sh-blade.png",
-  "alt": "Four-edge rectangular blades — turn the blade for a fresh edge",
-  "section": "value-sheet",
-  "trim": true,
-  "quality": 82,
-  "cutout": false
- },
  "vl-sh-roller": {
   "src": "tools/src-images/value-sheet/vl-sh-roller.jpg",
   "alt": "Roller sheet support in the front table",
@@ -14963,24 +14955,24 @@
   "cutout": false
  },
  "vl-pbm-1": {
-  "src": "tools/src-images/value-sheet/vl-pbm-1.jpg",
-  "alt": "NovoTech PB-M2500 CNC panel bender — press-arm type, 98″ bend width, with the control console",
-  "section": "value-sheet",
-  "trim": false,
-  "quality": 82,
-  "cutout": true
- },
- "vl-pba-1": {
-  "src": "tools/src-images/value-sheet/vl-pba-1.png",
-  "alt": "NovoTech PB-A1400 CNC panel bender with automatic tool change — 55″ bend width",
+  "src": "tools/src-images/value-sheet/vl-pbm-1.png",
+  "alt": "NovoTech PB-M press-arm CNC panel bender — the press arm feeds and turns the blank, 63 – 165″ bend widths",
   "section": "value-sheet",
   "trim": true,
   "quality": 82,
   "cutout": false
  },
+ "vl-pba-1": {
+  "src": "tools/src-images/value-sheet/vl-pba-1.jpg",
+  "alt": "NovoTech PB-A CNC panel bender with automatic tool change — tool magazine on top, 98″ bend width",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
  "vl-pb-robot-cell": {
   "src": "tools/src-images/value-sheet/vl-pb-robot-cell.jpg",
-  "alt": "PB-M2500 panel bender loaded and unloaded by two robots",
+  "alt": "PB-A panel bender loaded and unloaded by two robots",
   "section": "value-sheet",
   "trim": false,
   "quality": 82,
@@ -14991,14 +14983,6 @@
   "alt": "Operator at the tool magazine of the automatic tool-change panel bender",
   "section": "value-sheet",
   "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "vl-pb-loading": {
-  "src": "tools/src-images/value-sheet/vl-pb-loading.png",
-  "alt": "Panel bender with a robot loading cell and sheet supports",
-  "section": "value-sheet",
-  "trim": true,
   "quality": 82,
   "cutout": false
  },
@@ -15026,49 +15010,9 @@
   "quality": 82,
   "cutout": false
  },
- "vl-pb-clamp": {
-  "src": "tools/src-images/value-sheet/vl-pb-clamp.png",
-  "alt": "Blank-holder cylinder of the panel bender",
-  "section": "value-sheet",
-  "trim": true,
-  "quality": 82,
-  "cutout": false
- },
- "vl-pb-manipulator": {
-  "src": "tools/src-images/value-sheet/vl-pb-manipulator.png",
-  "alt": "Sheet manipulator with suction cups and rotation",
-  "section": "value-sheet",
-  "trim": true,
-  "quality": 82,
-  "cutout": false
- },
  "vl-pb-frame": {
   "src": "tools/src-images/value-sheet/vl-pb-frame.png",
-  "alt": "Welded, stress-relieved frame of the panel bender",
-  "section": "value-sheet",
-  "trim": true,
-  "quality": 82,
-  "cutout": false
- },
- "vl-pb-parts": {
-  "src": "tools/src-images/value-sheet/vl-pb-parts.png",
-  "alt": "Panels with hems and box corners bent on the panel bender",
-  "section": "value-sheet",
-  "trim": true,
-  "quality": 82,
-  "cutout": false
- },
- "vl-pb-parts-2": {
-  "src": "tools/src-images/value-sheet/vl-pb-parts-2.png",
-  "alt": "Trays, enclosures and brackets from the panel bender",
-  "section": "value-sheet",
-  "trim": true,
-  "quality": 82,
-  "cutout": false
- },
- "vl-pb-parts-3": {
-  "src": "tools/src-images/value-sheet/vl-pb-parts-3.png",
-  "alt": "Perforated enclosure bent on four sides",
+  "alt": "High-grade cast body of the PB-M panel bender",
   "section": "value-sheet",
   "trim": true,
   "quality": 82,
@@ -15121,20 +15065,20 @@
   "cutout": true
  },
  "sf-h-loader": {
-  "src": "tools/src-images/senfeng/sf-h-loader.png",
-  "alt": "H4 fiber laser with the optional loading and unloading arm",
+  "src": "tools/src-images/senfeng/sf-h-loader.jpg",
+  "alt": "SF3015H with the automatic loading and unloading gantry",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-h-line": {
   "src": "tools/src-images/senfeng/sf-h-line.jpg",
-  "alt": "Space-saver H series lasers in a line with a shared storage tower",
+  "alt": "Automated laser line — gantry loader and sorting robot behind the laser",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-h5": {
   "src": "tools/src-images/senfeng/sf-h5.jpg",
@@ -15143,30 +15087,6 @@
   "trim": false,
   "quality": 82,
   "cutout": true
- },
- "sf-h-container": {
-  "src": "tools/src-images/senfeng/sf-h-container.jpg",
-  "alt": "The compact H series ships in one container without teardown",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-h-head": {
-  "src": "tools/src-images/senfeng/sf-h-head.jpg",
-  "alt": "Cutting head with the 7.9″ (200 mm) Z-axis travel for thick plate",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-h-bevel": {
-  "src": "tools/src-images/senfeng/sf-h-bevel.jpg",
-  "alt": "Optional 45° bevel cutting head",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
  },
  "sf-np-1": {
   "src": "tools/src-images/senfeng/sf-np-1.png",
@@ -15202,15 +15122,7 @@
  },
  "sf-np-scene": {
   "src": "tools/src-images/senfeng/sf-np-scene.jpg",
-  "alt": "NP series laser cutting a sheet",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-np-container": {
-  "src": "tools/src-images/senfeng/sf-np-container.jpg",
-  "alt": "Six 3015NP machines fit in one 40 ft container",
+  "alt": "NP series open-type laser on the shop floor",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
@@ -15352,30 +15264,6 @@
   "quality": 82,
   "cutout": true
  },
- "sf-r-curtain": {
-  "src": "tools/src-images/senfeng/sf-r-curtain.jpg",
-  "alt": "R series — protective curtain and the beam with its protective chamber",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-r-bevel": {
-  "src": "tools/src-images/senfeng/sf-r-bevel.jpg",
-  "alt": "Bevel cutting in one step — K, V, X and Y weld preparations",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-r-dust": {
-  "src": "tools/src-images/senfeng/sf-r-dust.jpg",
-  "alt": "Blow-suction dust collection under the slat table",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
  "sf-r-cut": {
   "src": "tools/src-images/senfeng/sf-r-cut.jpg",
   "alt": "R series laser cutting 4″ (100 mm) plate",
@@ -15481,10 +15369,10 @@
   "cutout": false
  },
  "sf-coil-scene": {
-  "src": "tools/src-images/senfeng/sf-coil-scene.jpg",
-  "alt": "Coil-fed laser line — the leveller feeding the cutting table",
+  "src": "tools/src-images/senfeng/sf-coil-scene.png",
+  "alt": "Coil-fed laser line — decoiler, leveller, laser and sorting robot",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
   "cutout": false
  },
@@ -15497,28 +15385,28 @@
   "cutout": false
  },
  "sf-t-2": {
-  "src": "tools/src-images/senfeng/sf-t-2.jpg",
-  "alt": "Senfeng SF7524T two-chuck tube laser for 24.6 ft tubes with the safety fence",
+  "src": "tools/src-images/senfeng/sf-t-2.png",
+  "alt": "Senfeng SF6024T two-chuck tube laser — side view along the 20 ft bed",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-t-3": {
-  "src": "tools/src-images/senfeng/sf-t-3.jpg",
+  "src": "tools/src-images/senfeng/sf-t-3.png",
   "alt": "T series tube laser with the optional automatic bundle loader",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-t-4": {
-  "src": "tools/src-images/senfeng/sf-t-4.jpg",
+  "src": "tools/src-images/senfeng/sf-t-4.png",
   "alt": "T series tube laser — loader and unloading conveyor",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-t-head": {
   "src": "tools/src-images/senfeng/sf-t-head.jpg",
@@ -15592,30 +15480,6 @@
   "quality": 82,
   "cutout": true
  },
- "sf-plus-bevel": {
-  "src": "tools/src-images/senfeng/sf-plus-bevel.jpg",
-  "alt": "45° bevel cutting head on the GPLUS",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-plus-small": {
-  "src": "tools/src-images/senfeng/sf-plus-small.jpg",
-  "alt": "Cutting small tubes at high speed — minimum Ø0.6″",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-plus-chuck": {
-  "src": "tools/src-images/senfeng/sf-plus-chuck.jpg",
-  "alt": "Self-centering pneumatic chuck of the PLUS series",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
  "sf-plus-parts-1": {
   "src": "tools/src-images/senfeng/sf-plus-parts-1.jpg",
   "alt": "Bevel-cut square tubes joined without a gap",
@@ -15673,8 +15537,8 @@
   "cutout": false
  },
  "sf-nt-chucks": {
-  "src": "tools/src-images/senfeng/sf-nt-chucks.png",
-  "alt": "The three chucks of the NT series — the middle chuck feeds the last piece so there is no tailing",
+  "src": "tools/src-images/senfeng/sf-nt-chucks.jpg",
+  "alt": "Cutting a square tube in the chuck — sparks at the cut",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
@@ -15682,15 +15546,7 @@
  },
  "sf-ht-tube": {
   "src": "tools/src-images/senfeng/sf-ht-tube.jpg",
-  "alt": "Four-chuck tube laser carrying a heavy large-diameter tube",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "sf-ht-bevel": {
-  "src": "tools/src-images/senfeng/sf-ht-bevel.jpg",
-  "alt": "45° bevel cutting on heavy tube",
+  "alt": "Heavy-wall tube held in the chuck under the cutting head",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
@@ -15729,12 +15585,12 @@
   "cutout": false
  },
  "sf-hwm-2": {
-  "src": "tools/src-images/senfeng/sf-hwm-2.jpg",
-  "alt": "HWM series laser welder with the wire feeder on top",
+  "src": "tools/src-images/senfeng/sf-hwm-2.png",
+  "alt": "HWM series laser welder with the wire feeder",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-hw-1": {
   "src": "tools/src-images/senfeng/sf-hw-1.png",
@@ -15778,7 +15634,7 @@
  },
  "sf-hw-safety": {
   "src": "tools/src-images/senfeng/sf-hw-safety.jpg",
-  "alt": "Operator protection for laser welding — CE face shield, laser-resistant clothing and gloves",
+  "alt": "Operator in laser-resistant clothing, gloves and face shield welding with the handheld gun",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
@@ -15786,11 +15642,11 @@
  },
  "sf-hw-booth": {
   "src": "tools/src-images/senfeng/sf-hw-booth.jpg",
-  "alt": "Optional laser welding booth with protective glass",
+  "alt": "Senfeng's laser welding centre — handheld and robotic welding stations",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-rw-1": {
   "src": "tools/src-images/senfeng/sf-rw-1.png",
@@ -15809,20 +15665,20 @@
   "cutout": true
  },
  "sf-rw-positioner": {
-  "src": "tools/src-images/senfeng/sf-rw-positioner.jpg",
-  "alt": "Horizontal positioner for welding tanks and tubes",
+  "src": "tools/src-images/senfeng/sf-rw-positioner.png",
+  "alt": "Robotic laser welding cell with the horizontal positioner for tanks and tubes",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-rw-cell": {
-  "src": "tools/src-images/senfeng/sf-rw-cell.jpg",
-  "alt": "Robotic welding cell with safety fencing — 7-axis configuration",
+  "src": "tools/src-images/senfeng/sf-rw-cell.png",
+  "alt": "Fully enclosed robotic laser welding workstation",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-rmw-1": {
   "src": "tools/src-images/senfeng/sf-rmw-1.jpg",
@@ -15831,14 +15687,6 @@
   "trim": false,
   "quality": 82,
   "cutout": true
- },
- "sf-rmw-weld": {
-  "src": "tools/src-images/senfeng/sf-rmw-weld.png",
-  "alt": "Robotic arc welding on a 3D fixture table",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
  },
  "sf-cmw-1": {
   "src": "tools/src-images/senfeng/sf-cmw-1.jpg",
@@ -15855,14 +15703,6 @@
   "trim": false,
   "quality": 82,
   "cutout": true
- },
- "sf-cmw-weld": {
-  "src": "tools/src-images/senfeng/sf-cmw-weld.png",
-  "alt": "Collaborative arc welding on the 3D flexible table",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
  },
  "sf-weld-samples": {
   "src": "tools/src-images/senfeng/sf-weld-samples.jpg",
@@ -15918,7 +15758,7 @@
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sf-clad-bore": {
   "src": "tools/src-images/senfeng/sf-clad-bore.jpg",
@@ -15926,7 +15766,7 @@
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sf-bdc-1": {
   "src": "tools/src-images/senfeng/sf-bdc-1.png",
@@ -15937,12 +15777,12 @@
   "cutout": false
  },
  "sf-bdc-2": {
-  "src": "tools/src-images/senfeng/sf-bdc-2.jpg",
-  "alt": "BDC series panel bender — three-quarter view from the manipulator side",
+  "src": "tools/src-images/senfeng/sf-bdc-2.png",
+  "alt": "Senfeng BDC2000 panel bender — three-quarter view with the control cabinet",
   "section": "senfeng",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-bdc-3": {
   "src": "tools/src-images/senfeng/sf-bdc-3.jpg",
@@ -15950,7 +15790,7 @@
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-bdc-suction": {
   "src": "tools/src-images/senfeng/sf-bdc-suction.jpg",
@@ -15970,19 +15810,19 @@
  },
  "sf-bdc-robot-2": {
   "src": "tools/src-images/senfeng/sf-bdc-robot-2.jpg",
-  "alt": "Robot loading cell of the BDC panel bender — rear view",
+  "alt": "BDC2000 panel bender in production — the operator at the control",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-bdc-tool": {
   "src": "tools/src-images/senfeng/sf-bdc-tool.jpg",
-  "alt": "Optional auxiliary bending tool of the BDC",
+  "alt": "Bending blades and blank-holder of the BDC panel bender",
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": false
  },
  "sf-bdc-clamps": {
   "src": "tools/src-images/senfeng/sf-bdc-clamps.jpg",
@@ -15991,14 +15831,6 @@
   "trim": false,
   "quality": 82,
   "cutout": true
- },
- "sf-bdc-blades": {
-  "src": "tools/src-images/senfeng/sf-bdc-blades.jpg",
-  "alt": "Bending blades and blank-holder of the panel bender",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
  },
  "sf-bdc-bends": {
   "src": "tools/src-images/senfeng/sf-bdc-bends.jpg",
@@ -16030,6 +15862,46 @@
   "section": "site",
   "trim": false,
   "quality": 90,
+  "cutout": false
+ },
+ "vl-pbm-bend": {
+  "src": "tools/src-images/value-sheet/vl-pbm-bend.jpg",
+  "alt": "PB-M bending unit forming a flange — upper and lower blades and the blank-holder",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pbm-holder": {
+  "src": "tools/src-images/value-sheet/vl-pbm-holder.jpg",
+  "alt": "Blank-holder and bending blade of the PB-M over the ball-transfer table",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pbm-bending": {
+  "src": "tools/src-images/value-sheet/vl-pbm-bending.jpg",
+  "alt": "PB-M press arm holding the blank in the bending unit",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pbm-profiles": {
+  "src": "tools/src-images/value-sheet/vl-pbm-profiles.png",
+  "alt": "Profiles, hems and channels bent on the PB-M",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pba-head": {
+  "src": "tools/src-images/value-sheet/vl-pba-head.jpg",
+  "alt": "Automatic tool changer of the PB-A placing a tool segment",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
   "cutout": false
  }
 }

@@ -1246,9 +1246,9 @@
     "glance_keys": [
      "bending_force",
      "bending_length",
-     "stroke",
-     "daylight",
-     "weight"
+     "approach_speed",
+     "servo_motor",
+     "energy_saving"
     ],
     "caps": {},
     "note": "The hybrid package replaces the XL's AC motor and fixed pump with a servo motor and inverter pump; tonnage packages up to 441 US tons (400 t) are available to 13 ft (4 m) bending length, longer machines on request. Frame, stroke, daylight, throat and dimensions are those of the XL press brake of the same tonnage and length."
@@ -3372,15 +3372,12 @@
    ],
    "images": [
     "vl-pbm-1",
-    "vl-pb-robot-cell",
-    "vl-pb-loading",
-    "vl-pb-unit",
+    "vl-pbm-bending",
+    "vl-pbm-bend",
+    "vl-pbm-holder",
     "vl-pb-blades",
-    "vl-pb-clamp",
-    "vl-pb-manipulator",
     "vl-pb-frame",
-    "vl-pb-parts",
-    "vl-pb-parts-2"
+    "vl-pbm-profiles"
    ],
    "videos": [],
    "specs": {
@@ -3794,10 +3791,12 @@
    ],
    "images": [
     "vl-pba-1",
-    "vl-pb-operator",
+    "vl-pb-robot-cell",
+    "vl-pb-unit",
+    "vl-pba-head",
     "vl-pb-tools",
-    "vl-pb-tool-diagram",
-    "vl-pb-parts-3"
+    "vl-pb-operator",
+    "vl-pb-tool-diagram"
    ],
    "videos": [],
    "specs": {
@@ -4388,8 +4387,7 @@
     "sf-np-2",
     "sf-np-3",
     "sf-np-4",
-    "sf-np-scene",
-    "sf-np-container"
+    "sf-np-scene"
    ],
    "videos": [],
    "specs": {
@@ -4592,10 +4590,7 @@
     "sf-h-tower",
     "sf-h-loader",
     "sf-h-line",
-    "sf-h5",
-    "sf-h-head",
-    "sf-h-bevel",
-    "sf-h-container"
+    "sf-h5"
    ],
    "videos": [],
    "specs": {
@@ -5260,10 +5255,7 @@
     "sf-tx-2",
     "sf-txp",
     "sf-r-cut",
-    "sf-r-bevel",
-    "sf-tx-flame",
-    "sf-r-curtain",
-    "sf-r-dust"
+    "sf-tx-flame"
    ],
    "videos": [],
    "specs": {
@@ -6686,9 +6678,6 @@
     "sf-gplus-1",
     "sf-gt-1",
     "sf-gt-2",
-    "sf-plus-bevel",
-    "sf-plus-small",
-    "sf-plus-chuck",
     "sf-plus-parts-1",
     "sf-plus-parts-2",
     "sf-plus-parts-3"
@@ -7037,7 +7026,6 @@
     "sf-ch-1",
     "sf-nt-chucks",
     "sf-ht-tube",
-    "sf-ht-bevel",
     "sf-ch-scan",
     "sf-ch-render"
    ],
@@ -7712,7 +7700,6 @@
     "sf-bdc-robot-2",
     "sf-bdc-tool",
     "sf-bdc-clamps",
-    "sf-bdc-blades",
     "sf-bdc-bends",
     "sf-bdc-parts",
     "sf-bdc-parts-2"

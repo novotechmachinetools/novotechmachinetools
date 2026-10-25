@@ -55852,43 +55852,18 @@
   }
  },
  "vl-pbm-1": {
-  "alt": "NovoTech PB-M2500 CNC panel bender \u2014 press-arm type, 98\u2033 bend width, with the control console",
-  "variants": [
-   {
-    "w": 800,
-    "h": 555,
-    "file": "img/value-sheet/vl-pbm-1-800.webp",
-    "bytes": 43158
-   },
-   {
-    "w": 480,
-    "h": 333,
-    "file": "img/value-sheet/vl-pbm-1-480.webp",
-    "bytes": 21320
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 111,
-   "file": "img/value-sheet/vl-pbm-1-thumb.webp",
-   "bytes": 5680
-  },
-  "cut": "birefnet"
- },
- "vl-pba-1": {
-  "alt": "NovoTech PB-A1400 CNC panel bender with automatic tool change \u2014 55\u2033 bend width",
+  "alt": "NovoTech PB-M press-arm CNC panel bender \u2014 the press arm feeds and turns the blank, 63 \u2013 165\u2033 bend widths",
   "variants": [
    {
     "w": 800,
     "h": 645,
-    "file": "img/value-sheet/vl-pba-1-800.webp",
+    "file": "img/value-sheet/vl-pbm-1-800.webp",
     "bytes": 76630
    },
    {
     "w": 480,
     "h": 387,
-    "file": "img/value-sheet/vl-pba-1-480.webp",
+    "file": "img/value-sheet/vl-pbm-1-480.webp",
     "bytes": 33426
    }
   ],
@@ -55896,9 +55871,34 @@
   "thumb": {
    "w": 160,
    "h": 129,
-   "file": "img/value-sheet/vl-pba-1-thumb.webp",
+   "file": "img/value-sheet/vl-pbm-1-thumb.webp",
    "bytes": 7036
   }
+ },
+ "vl-pba-1": {
+  "alt": "NovoTech PB-A CNC panel bender with automatic tool change \u2014 tool magazine on top, 98\u2033 bend width",
+  "variants": [
+   {
+    "w": 800,
+    "h": 555,
+    "file": "img/value-sheet/vl-pba-1-800.webp",
+    "bytes": 43158
+   },
+   {
+    "w": 480,
+    "h": 333,
+    "file": "img/value-sheet/vl-pba-1-480.webp",
+    "bytes": 21320
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 111,
+   "file": "img/value-sheet/vl-pba-1-thumb.webp",
+   "bytes": 5680
+  },
+  "cut": "birefnet"
  },
  "vl-pb-robot-cell": {
   "alt": "PB-M2500 panel bender loaded and unloaded by two robots",
@@ -56378,75 +56378,115 @@
   "alt": "H4 fiber laser with the optional loading / unloading tower and sheet storage",
   "variants": [
    {
+    "w": 1200,
+    "h": 616,
+    "file": "img/senfeng/sf-h-tower-1200.webp",
+    "bytes": 117382
+   },
+   {
+    "w": 800,
+    "h": 410,
+    "file": "img/senfeng/sf-h-tower-800.webp",
+    "bytes": 74238
+   },
+   {
     "w": 480,
-    "h": 249,
+    "h": 246,
     "file": "img/senfeng/sf-h-tower-480.webp",
-    "bytes": 37226
+    "bytes": 39162
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 83,
+   "h": 82,
    "file": "img/senfeng/sf-h-tower-thumb.webp",
-   "bytes": 8142
+   "bytes": 8262
   },
   "cut": "birefnet"
  },
  "sf-h-loader": {
-  "alt": "H4 fiber laser with the optional loading and unloading arm",
+  "alt": "SF3015H with the automatic loading and unloading gantry",
   "variants": [
    {
+    "w": 1200,
+    "h": 626,
+    "file": "img/senfeng/sf-h-loader-1200.webp",
+    "bytes": 51328
+   },
+   {
+    "w": 800,
+    "h": 417,
+    "file": "img/senfeng/sf-h-loader-800.webp",
+    "bytes": 29328
+   },
+   {
     "w": 480,
-    "h": 312,
+    "h": 250,
     "file": "img/senfeng/sf-h-loader-480.webp",
-    "bytes": 24486
+    "bytes": 14378
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 104,
+   "h": 83,
    "file": "img/senfeng/sf-h-loader-thumb.webp",
-   "bytes": 6368
-  },
-  "cut": "birefnet"
+   "bytes": 2678
+  }
  },
  "sf-h-line": {
-  "alt": "Space-saver H series lasers in a line with a shared storage tower",
+  "alt": "Automated laser line \u2014 gantry loader and sorting robot behind the laser",
   "variants": [
    {
+    "w": 1200,
+    "h": 799,
+    "file": "img/senfeng/sf-h-line-1200.webp",
+    "bytes": 116726
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/senfeng/sf-h-line-800.webp",
+    "bytes": 69368
+   },
+   {
     "w": 480,
-    "h": 252,
+    "h": 319,
     "file": "img/senfeng/sf-h-line-480.webp",
-    "bytes": 37478
+    "bytes": 34646
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 84,
+   "h": 106,
    "file": "img/senfeng/sf-h-line-thumb.webp",
-   "bytes": 8116
-  },
-  "cut": "birefnet"
+   "bytes": 5604
+  }
  },
  "sf-h5": {
   "alt": "SF3015H5 heavy-load fiber laser for 40 \u2013 80 kW sources",
   "variants": [
    {
+    "w": 800,
+    "h": 377,
+    "file": "img/senfeng/sf-h5-800.webp",
+    "bytes": 24166
+   },
+   {
     "w": 480,
-    "h": 230,
+    "h": 226,
     "file": "img/senfeng/sf-h5-480.webp",
-    "bytes": 14376
+    "bytes": 13886
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 77,
+   "h": 75,
    "file": "img/senfeng/sf-h5-thumb.webp",
-   "bytes": 3824
+   "bytes": 3862
   },
   "cut": "birefnet"
  },
@@ -56556,18 +56596,24 @@
   "alt": "NP series open-type laser \u2014 the table seen from the loading side",
   "variants": [
    {
+    "w": 800,
+    "h": 509,
+    "file": "img/senfeng/sf-np-2-800.webp",
+    "bytes": 50834
+   },
+   {
     "w": 480,
-    "h": 310,
+    "h": 305,
     "file": "img/senfeng/sf-np-2-480.webp",
-    "bytes": 26476
+    "bytes": 27628
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 103,
+   "h": 102,
    "file": "img/senfeng/sf-np-2-thumb.webp",
-   "bytes": 6102
+   "bytes": 6284
   },
   "cut": "birefnet"
  },
@@ -56575,18 +56621,24 @@
   "alt": "NP series laser with the optional servo swing-arm loading manipulator",
   "variants": [
    {
+    "w": 800,
+    "h": 580,
+    "file": "img/senfeng/sf-np-3-800.webp",
+    "bytes": 53804
+   },
+   {
     "w": 480,
-    "h": 351,
+    "h": 348,
     "file": "img/senfeng/sf-np-3-480.webp",
-    "bytes": 28762
+    "bytes": 29642
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 117,
+   "h": 116,
    "file": "img/senfeng/sf-np-3-thumb.webp",
-   "bytes": 6946
+   "bytes": 7192
   },
   "cut": "birefnet"
  },
@@ -56594,37 +56646,61 @@
   "alt": "NP series laser with the optional loading and unloading unit",
   "variants": [
    {
+    "w": 1200,
+    "h": 413,
+    "file": "img/senfeng/sf-np-4-1200.webp",
+    "bytes": 66158
+   },
+   {
+    "w": 800,
+    "h": 276,
+    "file": "img/senfeng/sf-np-4-800.webp",
+    "bytes": 40088
+   },
+   {
     "w": 480,
-    "h": 174,
+    "h": 165,
     "file": "img/senfeng/sf-np-4-480.webp",
-    "bytes": 20924
+    "bytes": 21062
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 58,
+   "h": 55,
    "file": "img/senfeng/sf-np-4-thumb.webp",
-   "bytes": 4852
+   "bytes": 4982
   },
   "cut": "birefnet"
  },
  "sf-np-scene": {
-  "alt": "NP series laser cutting a sheet",
+  "alt": "NP series open-type laser on the shop floor",
   "variants": [
    {
+    "w": 1200,
+    "h": 1697,
+    "file": "img/senfeng/sf-np-scene-1200.webp",
+    "bytes": 161250
+   },
+   {
+    "w": 800,
+    "h": 1131,
+    "file": "img/senfeng/sf-np-scene-800.webp",
+    "bytes": 98932
+   },
+   {
     "w": 480,
-    "h": 271,
+    "h": 679,
     "file": "img/senfeng/sf-np-scene-480.webp",
-    "bytes": 12134
+    "bytes": 49872
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
-   "h": 90,
+   "w": 113,
+   "h": 160,
    "file": "img/senfeng/sf-np-scene-thumb.webp",
-   "bytes": 2202
+   "bytes": 4196
   }
  },
  "sf-np-container": {
@@ -56668,18 +56744,30 @@
   "alt": "Senfeng SF1530G enclosed fiber laser \u2014 5 \u00d7 10 ft, 1.5 \u2013 4 kW",
   "variants": [
    {
+    "w": 1200,
+    "h": 617,
+    "file": "img/senfeng/sf-1530g-1200.webp",
+    "bytes": 51858
+   },
+   {
+    "w": 800,
+    "h": 411,
+    "file": "img/senfeng/sf-1530g-800.webp",
+    "bytes": 30366
+   },
+   {
     "w": 480,
-    "h": 231,
+    "h": 247,
     "file": "img/senfeng/sf-1530g-480.webp",
-    "bytes": 15972
+    "bytes": 16196
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 77,
+   "h": 82,
    "file": "img/senfeng/sf-1530g-thumb.webp",
-   "bytes": 4208
+   "bytes": 4296
   },
   "cut": "birefnet"
  },
@@ -56687,18 +56775,30 @@
   "alt": "Senfeng SF1530N enclosed fiber laser with pull-out single table \u2014 5 \u00d7 10 ft, 1.5 \u2013 12 kW",
   "variants": [
    {
+    "w": 1200,
+    "h": 681,
+    "file": "img/senfeng/sf-1530n-1200.webp",
+    "bytes": 36586
+   },
+   {
+    "w": 800,
+    "h": 454,
+    "file": "img/senfeng/sf-1530n-800.webp",
+    "bytes": 22586
+   },
+   {
     "w": 480,
-    "h": 276,
+    "h": 272,
     "file": "img/senfeng/sf-1530n-480.webp",
-    "bytes": 12110
+    "bytes": 12088
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 92,
+   "h": 91,
    "file": "img/senfeng/sf-1530n-thumb.webp",
-   "bytes": 3374
+   "bytes": 3328
   },
   "cut": "birefnet"
  },
@@ -56706,10 +56806,16 @@
   "alt": "SF1530N \u2014 the single table pulled out for loading",
   "variants": [
    {
+    "w": 800,
+    "h": 647,
+    "file": "img/senfeng/sf-1530n-table-800.webp",
+    "bytes": 53972
+   },
+   {
     "w": 480,
     "h": 388,
     "file": "img/senfeng/sf-1530n-table-480.webp",
-    "bytes": 30870
+    "bytes": 30318
    }
   ],
   "alpha": true,
@@ -56717,7 +56823,7 @@
    "w": 160,
    "h": 129,
    "file": "img/senfeng/sf-1530n-table-thumb.webp",
-   "bytes": 6480
+   "bytes": 6472
   },
   "cut": "birefnet"
  },
@@ -56725,18 +56831,24 @@
   "alt": "Senfeng SF1530NP fully enclosed compact fiber laser with electric lifting door \u2014 5 \u00d7 10 ft, 1.5 \u2013 6 kW",
   "variants": [
    {
+    "w": 800,
+    "h": 393,
+    "file": "img/senfeng/sf-1530np-800.webp",
+    "bytes": 15944
+   },
+   {
     "w": 480,
-    "h": 243,
+    "h": 236,
     "file": "img/senfeng/sf-1530np-480.webp",
-    "bytes": 8024
+    "bytes": 8540
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 81,
+   "h": 79,
    "file": "img/senfeng/sf-1530np-thumb.webp",
-   "bytes": 2540
+   "bytes": 2216
   },
   "cut": "birefnet"
  },
@@ -56744,18 +56856,24 @@
   "alt": "SF1530NP \u2014 pull-out platform with integrated leg supports",
   "variants": [
    {
+    "w": 800,
+    "h": 448,
+    "file": "img/senfeng/sf-1530np-2-800.webp",
+    "bytes": 30160
+   },
+   {
     "w": 480,
-    "h": 275,
+    "h": 269,
     "file": "img/senfeng/sf-1530np-2-480.webp",
-    "bytes": 16356
+    "bytes": 16976
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 92,
+   "h": 90,
    "file": "img/senfeng/sf-1530np-2-thumb.webp",
-   "bytes": 4520
+   "bytes": 4584
   },
   "cut": "birefnet"
  },
@@ -56763,16 +56881,22 @@
   "alt": "SF1530NP \u2014 autofocus cutting head over the slat table",
   "variants": [
    {
+    "w": 1200,
+    "h": 780,
+    "file": "img/senfeng/sf-1530np-head-1200.webp",
+    "bytes": 39164
+   },
+   {
     "w": 800,
     "h": 520,
     "file": "img/senfeng/sf-1530np-head-800.webp",
-    "bytes": 23538
+    "bytes": 23666
    },
    {
     "w": 480,
     "h": 312,
     "file": "img/senfeng/sf-1530np-head-480.webp",
-    "bytes": 12650
+    "bytes": 12820
    }
   ],
   "alpha": false,
@@ -56780,17 +56904,17 @@
    "w": 160,
    "h": 104,
    "file": "img/senfeng/sf-1530np-head-thumb.webp",
-   "bytes": 2594
+   "bytes": 2520
   }
  },
  "sf-sfp": {
   "alt": "Senfeng SFP600 high-precision fiber laser for small parts \u2014 24 \u00d7 24\u2033 table",
   "variants": [
    {
-    "w": 352,
-    "h": 370,
-    "file": "img/senfeng/sf-sfp-352.webp",
-    "bytes": 11324
+    "w": 480,
+    "h": 505,
+    "file": "img/senfeng/sf-sfp-480.webp",
+    "bytes": 18436
    }
   ],
   "alpha": true,
@@ -56798,7 +56922,7 @@
    "w": 152,
    "h": 160,
    "file": "img/senfeng/sf-sfp-thumb.webp",
-   "bytes": 4508
+   "bytes": 4698
   },
   "cut": "birefnet"
  },
@@ -56806,18 +56930,30 @@
   "alt": "Senfeng SF3015HM enclosed sheet and tube fiber laser \u2014 5 \u00d7 10 ft table plus \u00d88.6\u2033 \u00d7 20 ft tube attachment",
   "variants": [
    {
+    "w": 1200,
+    "h": 419,
+    "file": "img/senfeng/sf-hm-1-1200.webp",
+    "bytes": 29024
+   },
+   {
+    "w": 800,
+    "h": 279,
+    "file": "img/senfeng/sf-hm-1-800.webp",
+    "bytes": 17886
+   },
+   {
     "w": 480,
-    "h": 178,
+    "h": 168,
     "file": "img/senfeng/sf-hm-1-480.webp",
-    "bytes": 10992
+    "bytes": 9862
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 59,
+   "h": 56,
    "file": "img/senfeng/sf-hm-1-thumb.webp",
-   "bytes": 2812
+   "bytes": 2774
   },
   "cut": "birefnet"
  },
@@ -56825,18 +56961,30 @@
   "alt": "SF3015HM \u2014 the tube attachment on the side of the enclosure",
   "variants": [
    {
+    "w": 1200,
+    "h": 318,
+    "file": "img/senfeng/sf-hm-2-1200.webp",
+    "bytes": 29994
+   },
+   {
+    "w": 800,
+    "h": 212,
+    "file": "img/senfeng/sf-hm-2-800.webp",
+    "bytes": 18664
+   },
+   {
     "w": 480,
-    "h": 133,
+    "h": 127,
     "file": "img/senfeng/sf-hm-2-480.webp",
-    "bytes": 9944
+    "bytes": 9980
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 44,
+   "h": 42,
    "file": "img/senfeng/sf-hm-2-thumb.webp",
-   "bytes": 2796
+   "bytes": 2840
   },
   "cut": "birefnet"
  },
@@ -56844,18 +56992,30 @@
   "alt": "SF3015HM \u2014 rear view with the tube support",
   "variants": [
    {
+    "w": 1200,
+    "h": 349,
+    "file": "img/senfeng/sf-hm-3-1200.webp",
+    "bytes": 29536
+   },
+   {
+    "w": 800,
+    "h": 233,
+    "file": "img/senfeng/sf-hm-3-800.webp",
+    "bytes": 18098
+   },
+   {
     "w": 480,
-    "h": 147,
+    "h": 140,
     "file": "img/senfeng/sf-hm-3-480.webp",
-    "bytes": 9470
+    "bytes": 9740
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 49,
+   "h": 47,
    "file": "img/senfeng/sf-hm-3-thumb.webp",
-   "bytes": 2498
+   "bytes": 2604
   },
   "cut": "birefnet"
  },
@@ -56863,18 +57023,30 @@
   "alt": "Sheet and tube laser \u2014 enclosure doors open",
   "variants": [
    {
+    "w": 1200,
+    "h": 425,
+    "file": "img/senfeng/sf-hm-4-1200.webp",
+    "bytes": 29174
+   },
+   {
+    "w": 800,
+    "h": 283,
+    "file": "img/senfeng/sf-hm-4-800.webp",
+    "bytes": 18180
+   },
+   {
     "w": 480,
-    "h": 180,
+    "h": 170,
     "file": "img/senfeng/sf-hm-4-480.webp",
-    "bytes": 10272
+    "bytes": 9906
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 60,
+   "h": 57,
    "file": "img/senfeng/sf-hm-4-thumb.webp",
-   "bytes": 2884
+   "bytes": 2656
   },
   "cut": "birefnet"
  },
@@ -56882,18 +57054,30 @@
   "alt": "Senfeng R series ultra-large plate laser \u2014 10 ft wide table to 164 ft long, 6 \u2013 60 kW",
   "variants": [
    {
+    "w": 1200,
+    "h": 298,
+    "file": "img/senfeng/sf-r-1-1200.webp",
+    "bytes": 42134
+   },
+   {
+    "w": 800,
+    "h": 199,
+    "file": "img/senfeng/sf-r-1-800.webp",
+    "bytes": 25854
+   },
+   {
     "w": 480,
-    "h": 126,
+    "h": 119,
     "file": "img/senfeng/sf-r-1-480.webp",
-    "bytes": 13324
+    "bytes": 14100
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 42,
+   "h": 40,
    "file": "img/senfeng/sf-r-1-thumb.webp",
-   "bytes": 3662
+   "bytes": 3554
   },
   "cut": "birefnet"
  },
@@ -56901,18 +57085,30 @@
   "alt": "R series plate laser \u2014 gantry over the long table",
   "variants": [
    {
+    "w": 1200,
+    "h": 394,
+    "file": "img/senfeng/sf-r-2-1200.webp",
+    "bytes": 45050
+   },
+   {
+    "w": 800,
+    "h": 262,
+    "file": "img/senfeng/sf-r-2-800.webp",
+    "bytes": 27502
+   },
+   {
     "w": 480,
-    "h": 163,
+    "h": 157,
     "file": "img/senfeng/sf-r-2-480.webp",
-    "bytes": 14226
+    "bytes": 14870
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 54,
+   "h": 52,
    "file": "img/senfeng/sf-r-2-thumb.webp",
-   "bytes": 3706
+   "bytes": 3546
   },
   "cut": "birefnet"
  },
@@ -56920,18 +57116,30 @@
   "alt": "Senfeng TX series plate laser with \u00b145\u00b0 bevel head \u2014 10 \u00d7 20 ft to 10 \u00d7 164 ft",
   "variants": [
    {
+    "w": 1200,
+    "h": 485,
+    "file": "img/senfeng/sf-tx-1-1200.webp",
+    "bytes": 54896
+   },
+   {
+    "w": 800,
+    "h": 323,
+    "file": "img/senfeng/sf-tx-1-800.webp",
+    "bytes": 34876
+   },
+   {
     "w": 480,
-    "h": 199,
+    "h": 194,
     "file": "img/senfeng/sf-tx-1-480.webp",
-    "bytes": 19384
+    "bytes": 19390
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 66,
+   "h": 65,
    "file": "img/senfeng/sf-tx-1-thumb.webp",
-   "bytes": 4574
+   "bytes": 4650
   },
   "cut": "birefnet"
  },
@@ -56939,18 +57147,30 @@
   "alt": "TX series bevel plate laser \u2014 three-quarter view",
   "variants": [
    {
+    "w": 1200,
+    "h": 419,
+    "file": "img/senfeng/sf-tx-2-1200.webp",
+    "bytes": 44838
+   },
+   {
+    "w": 800,
+    "h": 279,
+    "file": "img/senfeng/sf-tx-2-800.webp",
+    "bytes": 27506
+   },
+   {
     "w": 480,
-    "h": 173,
+    "h": 168,
     "file": "img/senfeng/sf-tx-2-480.webp",
-    "bytes": 15702
+    "bytes": 15230
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 58,
+   "h": 56,
    "file": "img/senfeng/sf-tx-2-thumb.webp",
-   "bytes": 3860
+   "bytes": 3718
   },
   "cut": "birefnet"
  },
@@ -56958,18 +57178,24 @@
   "alt": "Senfeng SF12030TXP laser and flame hybrid plate cutter \u2014 20 kW laser plus oxy-fuel to 4\u2033",
   "variants": [
    {
+    "w": 800,
+    "h": 204,
+    "file": "img/senfeng/sf-txp-800.webp",
+    "bytes": 27700
+   },
+   {
     "w": 480,
-    "h": 131,
+    "h": 123,
     "file": "img/senfeng/sf-txp-480.webp",
-    "bytes": 14210
+    "bytes": 15304
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 44,
+   "h": 41,
    "file": "img/senfeng/sf-txp-thumb.webp",
-   "bytes": 3602
+   "bytes": 3800
   },
   "cut": "birefnet"
  },
@@ -57109,18 +57335,24 @@
   "alt": "Senfeng SF3015TD five-axis 3D fiber laser \u2014 5 \u00d7 10 ft travel, 3 \u2013 20 kW",
   "variants": [
    {
+    "w": 800,
+    "h": 448,
+    "file": "img/senfeng/sf-3d-1-800.webp",
+    "bytes": 20520
+   },
+   {
     "w": 480,
-    "h": 275,
+    "h": 269,
     "file": "img/senfeng/sf-3d-1-480.webp",
-    "bytes": 11482
+    "bytes": 10774
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 92,
+   "h": 90,
    "file": "img/senfeng/sf-3d-1-thumb.webp",
-   "bytes": 3378
+   "bytes": 3036
   },
   "cut": "birefnet"
  },
@@ -57128,10 +57360,16 @@
   "alt": "SF3015TD \u2014 the enclosed five-axis cell",
   "variants": [
    {
+    "w": 800,
+    "h": 673,
+    "file": "img/senfeng/sf-3d-2-800.webp",
+    "bytes": 41660
+   },
+   {
     "w": 480,
-    "h": 405,
+    "h": 404,
     "file": "img/senfeng/sf-3d-2-480.webp",
-    "bytes": 23160
+    "bytes": 23240
    }
   ],
   "alpha": true,
@@ -57139,7 +57377,7 @@
    "w": 160,
    "h": 135,
    "file": "img/senfeng/sf-3d-2-thumb.webp",
-   "bytes": 5924
+   "bytes": 5928
   },
   "cut": "birefnet"
  },
@@ -57404,27 +57642,33 @@
   }
  },
  "sf-coil-scene": {
-  "alt": "Coil-fed laser line \u2014 the leveller feeding the cutting table",
+  "alt": "Coil-fed laser line \u2014 decoiler, leveller, laser and sorting robot",
   "variants": [
    {
+    "w": 1200,
+    "h": 279,
+    "file": "img/senfeng/sf-coil-scene-1200.webp",
+    "bytes": 51098
+   },
+   {
     "w": 800,
-    "h": 520,
+    "h": 186,
     "file": "img/senfeng/sf-coil-scene-800.webp",
-    "bytes": 9282
+    "bytes": 32864
    },
    {
     "w": 480,
-    "h": 312,
+    "h": 112,
     "file": "img/senfeng/sf-coil-scene-480.webp",
-    "bytes": 4752
+    "bytes": 18232
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 104,
+   "h": 37,
    "file": "img/senfeng/sf-coil-scene-thumb.webp",
-   "bytes": 1070
+   "bytes": 4356
   }
  },
  "sf-t-1": {
@@ -57458,61 +57702,88 @@
   }
  },
  "sf-t-2": {
-  "alt": "Senfeng SF7524T two-chuck tube laser for 24.6 ft tubes with the safety fence",
+  "alt": "Senfeng SF6024T two-chuck tube laser \u2014 side view along the 20 ft bed",
   "variants": [
    {
+    "w": 1200,
+    "h": 288,
+    "file": "img/senfeng/sf-t-2-1200.webp",
+    "bytes": 30654
+   },
+   {
+    "w": 800,
+    "h": 192,
+    "file": "img/senfeng/sf-t-2-800.webp",
+    "bytes": 19450
+   },
+   {
     "w": 480,
-    "h": 203,
+    "h": 115,
     "file": "img/senfeng/sf-t-2-480.webp",
-    "bytes": 25226
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 68,
-   "file": "img/senfeng/sf-t-2-thumb.webp",
-   "bytes": 5162
-  },
-  "cut": "birefnet"
- },
- "sf-t-3": {
-  "alt": "T series tube laser with the optional automatic bundle loader",
-  "variants": [
-   {
-    "w": 480,
-    "h": 132,
-    "file": "img/senfeng/sf-t-3-480.webp",
-    "bytes": 23940
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 44,
-   "file": "img/senfeng/sf-t-3-thumb.webp",
-   "bytes": 5112
-  },
-  "cut": "birefnet"
- },
- "sf-t-4": {
-  "alt": "T series tube laser \u2014 loader and unloading conveyor",
-  "variants": [
-   {
-    "w": 480,
-    "h": 113,
-    "file": "img/senfeng/sf-t-4-480.webp",
-    "bytes": 23756
+    "bytes": 10502
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
    "h": 38,
+   "file": "img/senfeng/sf-t-2-thumb.webp",
+   "bytes": 2834
+  }
+ },
+ "sf-t-3": {
+  "alt": "T series tube laser with the optional automatic bundle loader",
+  "variants": [
+   {
+    "w": 800,
+    "h": 271,
+    "file": "img/senfeng/sf-t-3-800.webp",
+    "bytes": 36744
+   },
+   {
+    "w": 480,
+    "h": 163,
+    "file": "img/senfeng/sf-t-3-480.webp",
+    "bytes": 19796
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 54,
+   "file": "img/senfeng/sf-t-3-thumb.webp",
+   "bytes": 4670
+  }
+ },
+ "sf-t-4": {
+  "alt": "T series tube laser \u2014 loader and unloading conveyor",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 276,
+    "file": "img/senfeng/sf-t-4-1200.webp",
+    "bytes": 44320
+   },
+   {
+    "w": 800,
+    "h": 184,
+    "file": "img/senfeng/sf-t-4-800.webp",
+    "bytes": 27360
+   },
+   {
+    "w": 480,
+    "h": 111,
+    "file": "img/senfeng/sf-t-4-480.webp",
+    "bytes": 14398
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 37,
    "file": "img/senfeng/sf-t-4-thumb.webp",
-   "bytes": 5192
-  },
-  "cut": "birefnet"
+   "bytes": 3260
+  }
  },
  "sf-t-head": {
   "alt": "Tube laser cutting head with the following support",
@@ -57758,18 +58029,30 @@
   "alt": "Senfeng SF6035GT bevel tube laser \u2014 \u00d83.1 \u2013 14.1\u2033",
   "variants": [
    {
+    "w": 1200,
+    "h": 296,
+    "file": "img/senfeng/sf-gt-2-1200.webp",
+    "bytes": 60612
+   },
+   {
+    "w": 800,
+    "h": 197,
+    "file": "img/senfeng/sf-gt-2-800.webp",
+    "bytes": 37608
+   },
+   {
     "w": 480,
-    "h": 125,
+    "h": 118,
     "file": "img/senfeng/sf-gt-2-480.webp",
-    "bytes": 21516
+    "bytes": 19766
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 42,
+   "h": 39,
    "file": "img/senfeng/sf-gt-2-thumb.webp",
-   "bytes": 4938
+   "bytes": 4378
   },
   "cut": "birefnet"
  },
@@ -57837,10 +58120,10 @@
   "alt": "Bevel-cut square tubes joined without a gap",
   "variants": [
    {
-    "w": 322,
-    "h": 284,
-    "file": "img/senfeng/sf-plus-parts-1-322.webp",
-    "bytes": 6274
+    "w": 480,
+    "h": 424,
+    "file": "img/senfeng/sf-plus-parts-1-480.webp",
+    "bytes": 9390
    }
   ],
   "alpha": false,
@@ -57848,17 +58131,17 @@
    "w": 160,
    "h": 141,
    "file": "img/senfeng/sf-plus-parts-1-thumb.webp",
-   "bytes": 1922
+   "bytes": 1770
   }
  },
  "sf-plus-parts-2": {
   "alt": "Rectangular tube with laser-cut holes and bevelled ends",
   "variants": [
    {
-    "w": 383,
-    "h": 262,
-    "file": "img/senfeng/sf-plus-parts-2-383.webp",
-    "bytes": 6442
+    "w": 480,
+    "h": 328,
+    "file": "img/senfeng/sf-plus-parts-2-480.webp",
+    "bytes": 6966
    }
   ],
   "alpha": false,
@@ -57866,17 +58149,23 @@
    "w": 160,
    "h": 109,
    "file": "img/senfeng/sf-plus-parts-2-thumb.webp",
-   "bytes": 1550
+   "bytes": 1402
   }
  },
  "sf-plus-parts-3": {
   "alt": "Round tube with a 45\u00b0 bevel cut",
   "variants": [
    {
+    "w": 800,
+    "h": 600,
+    "file": "img/senfeng/sf-plus-parts-3-800.webp",
+    "bytes": 6920
+   },
+   {
     "w": 480,
     "h": 360,
     "file": "img/senfeng/sf-plus-parts-3-480.webp",
-    "bytes": 4240
+    "bytes": 3302
    }
   ],
   "alpha": false,
@@ -57884,7 +58173,7 @@
    "w": 160,
    "h": 120,
    "file": "img/senfeng/sf-plus-parts-3-thumb.webp",
-   "bytes": 608
+   "bytes": 584
   }
  },
  "sf-nt-1": {
@@ -58008,45 +58297,63 @@
   }
  },
  "sf-nt-chucks": {
-  "alt": "The three chucks of the NT series \u2014 the middle chuck feeds the last piece so there is no tailing",
+  "alt": "Cutting a square tube in the chuck \u2014 sparks at the cut",
   "variants": [
    {
-    "w": 480,
-    "h": 281,
-    "file": "img/senfeng/sf-nt-chucks-480.webp",
-    "bytes": 23444
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 94,
-   "file": "img/senfeng/sf-nt-chucks-thumb.webp",
-   "bytes": 4400
-  }
- },
- "sf-ht-tube": {
-  "alt": "Four-chuck tube laser carrying a heavy large-diameter tube",
-  "variants": [
+    "w": 1200,
+    "h": 636,
+    "file": "img/senfeng/sf-nt-chucks-1200.webp",
+    "bytes": 66190
+   },
    {
     "w": 800,
-    "h": 282,
-    "file": "img/senfeng/sf-ht-tube-800.webp",
-    "bytes": 30188
+    "h": 424,
+    "file": "img/senfeng/sf-nt-chucks-800.webp",
+    "bytes": 39064
    },
    {
     "w": 480,
-    "h": 169,
-    "file": "img/senfeng/sf-ht-tube-480.webp",
-    "bytes": 14816
+    "h": 255,
+    "file": "img/senfeng/sf-nt-chucks-480.webp",
+    "bytes": 20058
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 56,
+   "h": 85,
+   "file": "img/senfeng/sf-nt-chucks-thumb.webp",
+   "bytes": 3670
+  }
+ },
+ "sf-ht-tube": {
+  "alt": "Heavy-wall tube held in the chuck under the cutting head",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 636,
+    "file": "img/senfeng/sf-ht-tube-1200.webp",
+    "bytes": 66190
+   },
+   {
+    "w": 800,
+    "h": 424,
+    "file": "img/senfeng/sf-ht-tube-800.webp",
+    "bytes": 39064
+   },
+   {
+    "w": 480,
+    "h": 255,
+    "file": "img/senfeng/sf-ht-tube-480.webp",
+    "bytes": 20058
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 85,
    "file": "img/senfeng/sf-ht-tube-thumb.webp",
-   "bytes": 2308
+   "bytes": 3670
   }
  },
  "sf-ht-bevel": {
@@ -58077,16 +58384,22 @@
   "alt": "Optional visual scanning of the H-beam before cutting",
   "variants": [
    {
+    "w": 1200,
+    "h": 780,
+    "file": "img/senfeng/sf-ch-scan-1200.webp",
+    "bytes": 78912
+   },
+   {
     "w": 800,
     "h": 520,
     "file": "img/senfeng/sf-ch-scan-800.webp",
-    "bytes": 53552
+    "bytes": 46230
    },
    {
     "w": 480,
     "h": 312,
     "file": "img/senfeng/sf-ch-scan-480.webp",
-    "bytes": 23390
+    "bytes": 21298
    }
   ],
   "alpha": false,
@@ -58094,17 +58407,23 @@
    "w": 160,
    "h": 104,
    "file": "img/senfeng/sf-ch-scan-thumb.webp",
-   "bytes": 3558
+   "bytes": 3378
   }
  },
  "sf-ch-render": {
   "alt": "H-beam laser line \u2014 the gantry cutting a beam",
   "variants": [
    {
+    "w": 800,
+    "h": 452,
+    "file": "img/senfeng/sf-ch-render-800.webp",
+    "bytes": 20528
+   },
+   {
     "w": 480,
     "h": 271,
     "file": "img/senfeng/sf-ch-render-480.webp",
-    "bytes": 10974
+    "bytes": 11138
    }
   ],
   "alpha": false,
@@ -58112,7 +58431,7 @@
    "w": 160,
    "h": 90,
    "file": "img/senfeng/sf-ch-render-thumb.webp",
-   "bytes": 2238
+   "bytes": 2242
   }
  },
  "sf-hwm-1": {
@@ -58164,23 +58483,28 @@
   }
  },
  "sf-hwm-2": {
-  "alt": "HWM series laser welder with the wire feeder on top",
+  "alt": "HWM series laser welder with the wire feeder",
   "variants": [
    {
-    "w": 418,
-    "h": 417,
-    "file": "img/senfeng/sf-hwm-2-418.webp",
-    "bytes": 22154
+    "w": 800,
+    "h": 733,
+    "file": "img/senfeng/sf-hwm-2-800.webp",
+    "bytes": 41072
+   },
+   {
+    "w": 480,
+    "h": 440,
+    "file": "img/senfeng/sf-hwm-2-480.webp",
+    "bytes": 22382
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 147,
    "file": "img/senfeng/sf-hwm-2-thumb.webp",
-   "bytes": 6866
-  },
-  "cut": "birefnet"
+   "bytes": 5788
+  }
  },
  "sf-hw-1": {
   "alt": "Senfeng S series portable air-cooled laser welder with wire feeder \u2014 0.8 \u2013 1.5 kW",
@@ -58315,47 +58639,64 @@
   }
  },
  "sf-hw-safety": {
-  "alt": "Operator protection for laser welding \u2014 CE face shield, laser-resistant clothing and gloves",
+  "alt": "Operator in laser-resistant clothing, gloves and face shield welding with the handheld gun",
   "variants": [
    {
+    "w": 1200,
+    "h": 2136,
+    "file": "img/senfeng/sf-hw-safety-1200.webp",
+    "bytes": 126634
+   },
+   {
     "w": 800,
-    "h": 520,
+    "h": 1424,
     "file": "img/senfeng/sf-hw-safety-800.webp",
-    "bytes": 38454
+    "bytes": 73068
    },
    {
     "w": 480,
-    "h": 312,
+    "h": 854,
     "file": "img/senfeng/sf-hw-safety-480.webp",
-    "bytes": 21972
+    "bytes": 36990
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 90,
+   "h": 160,
+   "file": "img/senfeng/sf-hw-safety-thumb.webp",
+   "bytes": 3408
+  }
+ },
+ "sf-hw-booth": {
+  "alt": "Senfeng's laser welding centre \u2014 handheld and robotic welding stations",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/senfeng/sf-hw-booth-1200.webp",
+    "bytes": 96490
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/senfeng/sf-hw-booth-800.webp",
+    "bytes": 53992
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/senfeng/sf-hw-booth-480.webp",
+    "bytes": 25700
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 104,
-   "file": "img/senfeng/sf-hw-safety-thumb.webp",
-   "bytes": 4688
-  }
- },
- "sf-hw-booth": {
-  "alt": "Optional laser welding booth with protective glass",
-  "variants": [
-   {
-    "w": 359,
-    "h": 406,
-    "file": "img/senfeng/sf-hw-booth-359.webp",
-    "bytes": 15398
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 141,
-   "h": 160,
+   "h": 90,
    "file": "img/senfeng/sf-hw-booth-thumb.webp",
-   "bytes": 5026
-  },
-  "cut": "birefnet"
+   "bytes": 4436
+  }
  },
  "sf-rw-1": {
   "alt": "Senfeng RW series robotic fiber laser welding cell \u2014 6-axis robot with a 1.5 \u2013 20 kW source",
@@ -58379,75 +58720,97 @@
   "alt": "RW series robot laser welder with positioner",
   "variants": [
    {
+    "w": 800,
+    "h": 731,
+    "file": "img/senfeng/sf-rw-2-800.webp",
+    "bytes": 117228
+   },
+   {
     "w": 480,
-    "h": 440,
+    "h": 439,
     "file": "img/senfeng/sf-rw-2-480.webp",
-    "bytes": 63900
+    "bytes": 63176
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 147,
+   "h": 146,
    "file": "img/senfeng/sf-rw-2-thumb.webp",
-   "bytes": 13406
+   "bytes": 12638
   },
   "cut": "birefnet"
  },
  "sf-rw-positioner": {
-  "alt": "Horizontal positioner for welding tanks and tubes",
+  "alt": "Robotic laser welding cell with the horizontal positioner for tanks and tubes",
   "variants": [
    {
-    "w": 480,
-    "h": 191,
-    "file": "img/senfeng/sf-rw-positioner-480.webp",
-    "bytes": 24372
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 64,
-   "file": "img/senfeng/sf-rw-positioner-thumb.webp",
-   "bytes": 5852
-  },
-  "cut": "birefnet"
- },
- "sf-rw-cell": {
-  "alt": "Robotic welding cell with safety fencing \u2014 7-axis configuration",
-  "variants": [
+    "w": 1200,
+    "h": 556,
+    "file": "img/senfeng/sf-rw-positioner-1200.webp",
+    "bytes": 78798
+   },
    {
-    "w": 480,
-    "h": 346,
-    "file": "img/senfeng/sf-rw-cell-480.webp",
-    "bytes": 46026
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 115,
-   "file": "img/senfeng/sf-rw-cell-thumb.webp",
-   "bytes": 9000
-  },
-  "cut": "birefnet"
- },
- "sf-rmw-1": {
-  "alt": "Senfeng RMW series teaching-free robotic arc welding machine \u2014 500 A MIG/MAG",
-  "variants": [
+    "w": 800,
+    "h": 371,
+    "file": "img/senfeng/sf-rw-positioner-800.webp",
+    "bytes": 47672
+   },
    {
     "w": 480,
     "h": 222,
-    "file": "img/senfeng/sf-rmw-1-480.webp",
-    "bytes": 20794
+    "file": "img/senfeng/sf-rw-positioner-480.webp",
+    "bytes": 24304
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
    "h": 74,
+   "file": "img/senfeng/sf-rw-positioner-thumb.webp",
+   "bytes": 5534
+  }
+ },
+ "sf-rw-cell": {
+  "alt": "Fully enclosed robotic laser welding workstation",
+  "variants": [
+   {
+    "w": 480,
+    "h": 337,
+    "file": "img/senfeng/sf-rw-cell-480.webp",
+    "bytes": 15406
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 112,
+   "file": "img/senfeng/sf-rw-cell-thumb.webp",
+   "bytes": 3934
+  }
+ },
+ "sf-rmw-1": {
+  "alt": "Senfeng RMW series teaching-free robotic arc welding machine \u2014 500 A MIG/MAG",
+  "variants": [
+   {
+    "w": 800,
+    "h": 362,
+    "file": "img/senfeng/sf-rmw-1-800.webp",
+    "bytes": 36652
+   },
+   {
+    "w": 480,
+    "h": 217,
+    "file": "img/senfeng/sf-rmw-1-480.webp",
+    "bytes": 19872
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 72,
    "file": "img/senfeng/sf-rmw-1-thumb.webp",
-   "bytes": 4718
+   "bytes": 4748
   },
   "cut": "birefnet"
  },
@@ -58473,10 +58836,10 @@
   "alt": "Senfeng CMW series collaborative robotic arc welder on a mobile cart \u2014 350 / 500 A",
   "variants": [
    {
-    "w": 381,
-    "h": 430,
-    "file": "img/senfeng/sf-cmw-1-381.webp",
-    "bytes": 33570
+    "w": 480,
+    "h": 541,
+    "file": "img/senfeng/sf-cmw-1-480.webp",
+    "bytes": 48166
    }
   ],
   "alpha": true,
@@ -58484,7 +58847,7 @@
    "w": 142,
    "h": 160,
    "file": "img/senfeng/sf-cmw-1-thumb.webp",
-   "bytes": 9068
+   "bytes": 9354
   },
   "cut": "birefnet"
  },
@@ -58492,18 +58855,18 @@
   "alt": "CMW collaborative welder \u2014 the cobot arm and torch",
   "variants": [
    {
-    "w": 292,
-    "h": 462,
-    "file": "img/senfeng/sf-cmw-2-292.webp",
-    "bytes": 23764
+    "w": 480,
+    "h": 770,
+    "file": "img/senfeng/sf-cmw-2-480.webp",
+    "bytes": 46858
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 101,
+   "w": 100,
    "h": 160,
    "file": "img/senfeng/sf-cmw-2-thumb.webp",
-   "bytes": 6564
+   "bytes": 6530
   },
   "cut": "birefnet"
  },
@@ -58553,18 +58916,30 @@
   "alt": "Senfeng SFR6063 robot laser cladding machine \u2014 6 / 12 kW, workpieces to 20 ft and 15 t",
   "variants": [
    {
+    "w": 1200,
+    "h": 339,
+    "file": "img/senfeng/sf-clad-1-1200.webp",
+    "bytes": 24412
+   },
+   {
+    "w": 800,
+    "h": 226,
+    "file": "img/senfeng/sf-clad-1-800.webp",
+    "bytes": 15066
+   },
+   {
     "w": 480,
-    "h": 144,
+    "h": 136,
     "file": "img/senfeng/sf-clad-1-480.webp",
-    "bytes": 8532
+    "bytes": 8720
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 48,
+   "h": 45,
    "file": "img/senfeng/sf-clad-1-thumb.webp",
-   "bytes": 2696
+   "bytes": 2556
   },
   "cut": "birefnet"
  },
@@ -58572,18 +58947,24 @@
   "alt": "Senfeng SFHS3050 laser cladding machine for shafts to 10 ft",
   "variants": [
    {
+    "w": 800,
+    "h": 347,
+    "file": "img/senfeng/sf-clad-2-800.webp",
+    "bytes": 22482
+   },
+   {
     "w": 480,
-    "h": 215,
+    "h": 208,
     "file": "img/senfeng/sf-clad-2-480.webp",
-    "bytes": 12572
+    "bytes": 12050
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 72,
+   "h": 69,
    "file": "img/senfeng/sf-clad-2-thumb.webp",
-   "bytes": 3416
+   "bytes": 3342
   },
   "cut": "birefnet"
  },
@@ -58591,18 +58972,24 @@
   "alt": "Senfeng SFMR02 portable laser cladding system for on-site repair",
   "variants": [
    {
-    "w": 478,
-    "h": 406,
-    "file": "img/senfeng/sf-clad-3-478.webp",
-    "bytes": 23046
+    "w": 800,
+    "h": 675,
+    "file": "img/senfeng/sf-clad-3-800.webp",
+    "bytes": 49260
+   },
+   {
+    "w": 480,
+    "h": 405,
+    "file": "img/senfeng/sf-clad-3-480.webp",
+    "bytes": 27668
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 136,
+   "h": 135,
    "file": "img/senfeng/sf-clad-3-thumb.webp",
-   "bytes": 6348
+   "bytes": 6460
   },
   "cut": "birefnet"
  },
@@ -58610,18 +58997,18 @@
   "alt": "KUKA / FANUC robot of the cladding cell",
   "variants": [
    {
-    "w": 273,
-    "h": 377,
-    "file": "img/senfeng/sf-clad-robot-273.webp",
-    "bytes": 12612
+    "w": 480,
+    "h": 670,
+    "file": "img/senfeng/sf-clad-robot-480.webp",
+    "bytes": 27510
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 116,
+   "w": 115,
    "h": 160,
    "file": "img/senfeng/sf-clad-robot-thumb.webp",
-   "bytes": 5216
+   "bytes": 5416
   },
   "cut": "birefnet"
  },
@@ -58629,18 +59016,18 @@
   "alt": "Dual-axis positioner for cladding",
   "variants": [
    {
-    "w": 317,
-    "h": 304,
-    "file": "img/senfeng/sf-clad-positioner-317.webp",
-    "bytes": 16216
+    "w": 480,
+    "h": 456,
+    "file": "img/senfeng/sf-clad-positioner-480.webp",
+    "bytes": 29486
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 153,
+   "h": 152,
    "file": "img/senfeng/sf-clad-positioner-thumb.webp",
-   "bytes": 8288
+   "bytes": 8586
   },
   "cut": "birefnet"
  },
@@ -58648,49 +59035,51 @@
   "alt": "High-speed laser cladding head with powder feed",
   "variants": [
    {
-    "w": 800,
-    "h": 520,
-    "file": "img/senfeng/sf-clad-head-800.webp",
-    "bytes": 7960
-   },
-   {
-    "w": 480,
-    "h": 312,
-    "file": "img/senfeng/sf-clad-head-480.webp",
-    "bytes": 4178
+    "w": 344,
+    "h": 722,
+    "file": "img/senfeng/sf-clad-head-344.webp",
+    "bytes": 20470
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 104,
+   "w": 76,
+   "h": 160,
    "file": "img/senfeng/sf-clad-head-thumb.webp",
-   "bytes": 806
-  }
+   "bytes": 4074
+  },
+  "cut": "birefnet"
  },
  "sf-clad-bore": {
   "alt": "Inner-bore cladding head",
   "variants": [
    {
+    "w": 1200,
+    "h": 247,
+    "file": "img/senfeng/sf-clad-bore-1200.webp",
+    "bytes": 27290
+   },
+   {
     "w": 800,
-    "h": 520,
+    "h": 165,
     "file": "img/senfeng/sf-clad-bore-800.webp",
-    "bytes": 8674
+    "bytes": 17008
    },
    {
     "w": 480,
-    "h": 312,
+    "h": 99,
     "file": "img/senfeng/sf-clad-bore-480.webp",
-    "bytes": 4446
+    "bytes": 10122
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 104,
+   "h": 33,
    "file": "img/senfeng/sf-clad-bore-thumb.webp",
-   "bytes": 796
-  }
+   "bytes": 2566
+  },
+  "cut": "birefnet"
  },
  "sf-bdc-1": {
   "alt": "Senfeng BDC2000 push-down automatic panel bender \u2014 79\u2033 bend width, 13 servo axes",
@@ -58717,59 +59106,81 @@
   }
  },
  "sf-bdc-2": {
-  "alt": "BDC series panel bender \u2014 three-quarter view from the manipulator side",
+  "alt": "Senfeng BDC2000 panel bender \u2014 three-quarter view with the control cabinet",
   "variants": [
    {
+    "w": 800,
+    "h": 680,
+    "file": "img/senfeng/sf-bdc-2-800.webp",
+    "bytes": 41662
+   },
+   {
     "w": 480,
-    "h": 294,
+    "h": 408,
     "file": "img/senfeng/sf-bdc-2-480.webp",
-    "bytes": 19240
+    "bytes": 21308
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 98,
+   "h": 136,
    "file": "img/senfeng/sf-bdc-2-thumb.webp",
-   "bytes": 4794
-  },
-  "cut": "birefnet"
+   "bytes": 5750
+  }
  },
  "sf-bdc-3": {
   "alt": "Senfeng BDC2500 push-down panel bender \u2014 98\u2033 bend width",
   "variants": [
    {
-    "w": 478,
-    "h": 334,
-    "file": "img/senfeng/sf-bdc-3-478.webp",
-    "bytes": 16648
+    "w": 1200,
+    "h": 1076,
+    "file": "img/senfeng/sf-bdc-3-1200.webp",
+    "bytes": 60554
+   },
+   {
+    "w": 800,
+    "h": 718,
+    "file": "img/senfeng/sf-bdc-3-800.webp",
+    "bytes": 34238
+   },
+   {
+    "w": 480,
+    "h": 431,
+    "file": "img/senfeng/sf-bdc-3-480.webp",
+    "bytes": 15812
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 112,
+   "h": 144,
    "file": "img/senfeng/sf-bdc-3-thumb.webp",
-   "bytes": 4740
-  },
-  "cut": "birefnet"
+   "bytes": 2742
+  }
  },
  "sf-bdc-suction": {
   "alt": "Senfeng BDC1500 suction-cup panel bender \u2014 59\u2033 bend width, 10 axes",
   "variants": [
    {
-    "w": 473,
-    "h": 382,
-    "file": "img/senfeng/sf-bdc-suction-473.webp",
-    "bytes": 19874
+    "w": 800,
+    "h": 639,
+    "file": "img/senfeng/sf-bdc-suction-800.webp",
+    "bytes": 42582
+   },
+   {
+    "w": 480,
+    "h": 383,
+    "file": "img/senfeng/sf-bdc-suction-480.webp",
+    "bytes": 22508
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 129,
+   "h": 128,
    "file": "img/senfeng/sf-bdc-suction-thumb.webp",
-   "bytes": 5572
+   "bytes": 5822
   },
   "cut": "birefnet"
  },
@@ -58777,81 +59188,121 @@
   "alt": "BDC panel bender with robot loading and unloading",
   "variants": [
    {
+    "w": 1200,
+    "h": 341,
+    "file": "img/senfeng/sf-bdc-robot-1200.webp",
+    "bytes": 80736
+   },
+   {
+    "w": 800,
+    "h": 228,
+    "file": "img/senfeng/sf-bdc-robot-800.webp",
+    "bytes": 49640
+   },
+   {
     "w": 480,
-    "h": 143,
+    "h": 137,
     "file": "img/senfeng/sf-bdc-robot-480.webp",
-    "bytes": 26198
+    "bytes": 25462
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 48,
+   "h": 46,
    "file": "img/senfeng/sf-bdc-robot-thumb.webp",
-   "bytes": 5712
+   "bytes": 5698
   },
   "cut": "birefnet"
  },
  "sf-bdc-robot-2": {
-  "alt": "Robot loading cell of the BDC panel bender \u2014 rear view",
+  "alt": "BDC2000 panel bender in production \u2014 the operator at the control",
   "variants": [
    {
+    "w": 1200,
+    "h": 675,
+    "file": "img/senfeng/sf-bdc-robot-2-1200.webp",
+    "bytes": 97728
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/senfeng/sf-bdc-robot-2-800.webp",
+    "bytes": 51616
+   },
+   {
     "w": 480,
-    "h": 155,
+    "h": 270,
     "file": "img/senfeng/sf-bdc-robot-2-480.webp",
-    "bytes": 29878
+    "bytes": 23820
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 52,
+   "h": 90,
    "file": "img/senfeng/sf-bdc-robot-2-thumb.webp",
-   "bytes": 6214
-  },
-  "cut": "birefnet"
+   "bytes": 3848
+  }
  },
  "sf-bdc-tool": {
-  "alt": "Optional auxiliary bending tool of the BDC",
+  "alt": "Bending blades and blank-holder of the BDC panel bender",
   "variants": [
    {
+    "w": 1200,
+    "h": 542,
+    "file": "img/senfeng/sf-bdc-tool-1200.webp",
+    "bytes": 45008
+   },
+   {
+    "w": 800,
+    "h": 361,
+    "file": "img/senfeng/sf-bdc-tool-800.webp",
+    "bytes": 25272
+   },
+   {
     "w": 480,
-    "h": 215,
+    "h": 217,
     "file": "img/senfeng/sf-bdc-tool-480.webp",
-    "bytes": 18158
+    "bytes": 12604
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
    "h": 72,
    "file": "img/senfeng/sf-bdc-tool-thumb.webp",
-   "bytes": 4596
-  },
-  "cut": "birefnet"
+   "bytes": 2394
+  }
  },
  "sf-bdc-clamps": {
   "alt": "Optional clamps of the BDC panel bender",
   "variants": [
    {
+    "w": 1200,
+    "h": 787,
+    "file": "img/senfeng/sf-bdc-clamps-1200.webp",
+    "bytes": 66514
+   },
+   {
     "w": 800,
-    "h": 520,
+    "h": 525,
     "file": "img/senfeng/sf-bdc-clamps-800.webp",
-    "bytes": 38022
+    "bytes": 40048
    },
    {
     "w": 480,
-    "h": 312,
+    "h": 315,
     "file": "img/senfeng/sf-bdc-clamps-480.webp",
-    "bytes": 23494
+    "bytes": 21942
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 104,
+   "h": 105,
    "file": "img/senfeng/sf-bdc-clamps-thumb.webp",
-   "bytes": 5702
+   "bytes": 5424
   },
   "cut": "birefnet"
  },
@@ -58877,10 +59328,22 @@
   "alt": "Bend up, bend down, press the edge and bend arc",
   "variants": [
    {
+    "w": 1200,
+    "h": 763,
+    "file": "img/senfeng/sf-bdc-bends-1200.webp",
+    "bytes": 22642
+   },
+   {
+    "w": 800,
+    "h": 509,
+    "file": "img/senfeng/sf-bdc-bends-800.webp",
+    "bytes": 14168
+   },
+   {
     "w": 480,
     "h": 305,
     "file": "img/senfeng/sf-bdc-bends-480.webp",
-    "bytes": 7770
+    "bytes": 8024
    }
   ],
   "alpha": false,
@@ -58888,17 +59351,29 @@
    "w": 160,
    "h": 102,
    "file": "img/senfeng/sf-bdc-bends-thumb.webp",
-   "bytes": 2184
+   "bytes": 2200
   }
  },
  "sf-bdc-parts": {
   "alt": "Panels, boxes and hems bent on the BDC",
   "variants": [
    {
+    "w": 1200,
+    "h": 674,
+    "file": "img/senfeng/sf-bdc-parts-1200.webp",
+    "bytes": 28116
+   },
+   {
+    "w": 800,
+    "h": 449,
+    "file": "img/senfeng/sf-bdc-parts-800.webp",
+    "bytes": 17638
+   },
+   {
     "w": 480,
     "h": 270,
     "file": "img/senfeng/sf-bdc-parts-480.webp",
-    "bytes": 10686
+    "bytes": 9806
    }
   ],
   "alpha": false,
@@ -58906,7 +59381,7 @@
    "w": 160,
    "h": 90,
    "file": "img/senfeng/sf-bdc-parts-thumb.webp",
-   "bytes": 2122
+   "bytes": 2066
   }
  },
  "sf-bdc-parts-2": {
@@ -58916,19 +59391,19 @@
     "w": 1200,
     "h": 674,
     "file": "img/senfeng/sf-bdc-parts-2-1200.webp",
-    "bytes": 27302
+    "bytes": 22124
    },
    {
     "w": 800,
     "h": 449,
     "file": "img/senfeng/sf-bdc-parts-2-800.webp",
-    "bytes": 14760
+    "bytes": 13726
    },
    {
     "w": 480,
     "h": 270,
     "file": "img/senfeng/sf-bdc-parts-2-480.webp",
-    "bytes": 7830
+    "bytes": 7642
    }
   ],
   "alpha": false,
@@ -58936,7 +59411,7 @@
    "w": 160,
    "h": 90,
    "file": "img/senfeng/sf-bdc-parts-2-thumb.webp",
-   "bytes": 2096
+   "bytes": 2086
   }
  },
  "senfeng-logo": {
@@ -58961,6 +59436,156 @@
    "h": 51,
    "file": "img/site/senfeng-logo-thumb.webp",
    "bytes": 1304
+  }
+ },
+ "vl-pbm-bend": {
+  "alt": "PB-M bending unit forming a flange \u2014 upper and lower blades and the blank-holder",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 799,
+    "file": "img/value-sheet/vl-pbm-bend-1200.webp",
+    "bytes": 109274
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/value-sheet/vl-pbm-bend-800.webp",
+    "bytes": 64454
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-pbm-bend-480.webp",
+    "bytes": 26622
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-pbm-bend-thumb.webp",
+   "bytes": 4098
+  }
+ },
+ "vl-pbm-holder": {
+  "alt": "Blank-holder and bending blade of the PB-M over the ball-transfer table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 799,
+    "file": "img/value-sheet/vl-pbm-holder-1200.webp",
+    "bytes": 61460
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/value-sheet/vl-pbm-holder-800.webp",
+    "bytes": 34916
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-pbm-holder-480.webp",
+    "bytes": 16480
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-pbm-holder-thumb.webp",
+   "bytes": 3004
+  }
+ },
+ "vl-pbm-bending": {
+  "alt": "PB-M press arm holding the blank in the bending unit",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-sheet/vl-pbm-bending-1200.webp",
+    "bytes": 61620
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-sheet/vl-pbm-bending-800.webp",
+    "bytes": 36990
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-sheet/vl-pbm-bending-480.webp",
+    "bytes": 18840
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-sheet/vl-pbm-bending-thumb.webp",
+   "bytes": 3690
+  }
+ },
+ "vl-pbm-profiles": {
+  "alt": "Profiles, hems and channels bent on the PB-M",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 654,
+    "file": "img/value-sheet/vl-pbm-profiles-1200.webp",
+    "bytes": 131136
+   },
+   {
+    "w": 800,
+    "h": 436,
+    "file": "img/value-sheet/vl-pbm-profiles-800.webp",
+    "bytes": 71690
+   },
+   {
+    "w": 480,
+    "h": 262,
+    "file": "img/value-sheet/vl-pbm-profiles-480.webp",
+    "bytes": 36894
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 87,
+   "file": "img/value-sheet/vl-pbm-profiles-thumb.webp",
+   "bytes": 9310
+  }
+ },
+ "vl-pba-head": {
+  "alt": "Automatic tool changer of the PB-A placing a tool segment",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 799,
+    "file": "img/value-sheet/vl-pba-head-1200.webp",
+    "bytes": 94804
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/value-sheet/vl-pba-head-800.webp",
+    "bytes": 54638
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-pba-head-480.webp",
+    "bytes": 26078
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-pba-head-thumb.webp",
+   "bytes": 4710
   }
  }
 }

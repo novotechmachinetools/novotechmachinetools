@@ -97,7 +97,6 @@ PHOTOS = {
     "vl-sh-holddowns": R("02_w1600-1.webp", "Hydraulic hold-down cylinders along the cutting line", cutout=False),
     "vl-sh-holddowns-2": R("06_w1600-3-1.webp", "Hold-downs and blade gap seen from the operator side", cutout=False),
     "vl-sh-e21s": R("03_w1600.webp", "Estun E21S and E200PS NC shear controls — back gauge, cutting angle and blade clearance", cutout=False),
-    "vl-sh-blade": R("03_w1600-2.webp", "Four-edge rectangular blades — turn the blade for a fresh edge", cutout=False),
     "vl-sh-roller": R("11_w1600-1-1.webp", "Roller sheet support in the front table", cutout=False),
     "vl-sh-photo-1": H(SH_S + "DSC02656.JPG", "Swing beam shear — hydraulic cylinder and back gauge drive"),
     "vl-sh-photo-2": H(SH_S + "DSC02658.JPG", "Swing beam shear — main motor and pump on top of the oil tank"),
@@ -149,20 +148,22 @@ PHOTOS = {
     "vl-vg-parts": R("%E6%A0%B7%E6%9C%BA02_w1600-1.webp", "Grooved and bent stainless sample — zero-radius corner", cutout=False),
     "vl-vg-parts-2": R("%E6%A0%B7%E6%9C%BA03_w1600-1.webp", "Octagonal column bent from a V-grooved sheet", cutout=False),
     # ---------------------------------------------------------------- panel benders (PB-M, PB-A)
-    "vl-pbm-1": R("PB-M-16.9_w1600.webp", "NovoTech PB-M2500 CNC panel bender — press-arm type, 98″ bend width, with the control console", boxes=[(455, 205, 545, 260)], cutout=True),
-    "vl-pba-1": R("pb-p_w1600.webp", "NovoTech PB-A1400 CNC panel bender with automatic tool change — 55″ bend width", boxes=[(305, 270, 370, 330), (770, 160, 845, 235)]),
-    "vl-pb-robot-cell": R("%E5%9C%B0%E6%8E%A5_w1600.webp", "PB-M2500 panel bender loaded and unloaded by two robots", boxes=[(510, 150, 605, 210)], crop=(0, 60, 1600, 1065), cutout=False),
+    # PB-M = press-arm type (the tall cabinet with the swinging press arm, the supplier's "P" render); PB-A = automatic tool
+    # change (the machine with the tool-magazine columns on top, the "PC" render) — the supplier's file names are the other
+    # way round, which is how the two were swapped at first (fixed Oct 2026).
+    "vl-pbm-1": R("pb-p_w1600.webp", "NovoTech PB-M press-arm CNC panel bender — the press arm feeds and turns the blank, 63 – 165″ bend widths", boxes=[(305, 270, 370, 330), (770, 160, 845, 235)]),
+    "vl-pbm-bend": R("01_w1600-5.webp", "PB-M bending unit forming a flange — upper and lower blades and the blank-holder", cutout=False),
+    "vl-pbm-holder": R("03_w1600-2.webp", "Blank-holder and bending blade of the PB-M over the ball-transfer table", cutout=False),
+    "vl-pbm-bending": R("%E6%8A%98%E5%BC%AF_w1600.webp", "PB-M press arm holding the blank in the bending unit", cutout=False),
+    "vl-pbm-profiles": R("06_w1600-3.webp", "Profiles, hems and channels bent on the PB-M", cutout=False),
+    "vl-pba-1": R("PB-M-16.9_w1600.webp", "NovoTech PB-A CNC panel bender with automatic tool change — tool magazine on top, 98″ bend width", boxes=[(455, 205, 545, 260)], cutout=True),
+    "vl-pba-head": R("%E5%AE%9A%E8%BD%B4_w1600-1.webp", "Automatic tool changer of the PB-A placing a tool segment", cutout=False),
+    "vl-pb-robot-cell": R("%E5%9C%B0%E6%8E%A5_w1600.webp", "PB-A panel bender loaded and unloaded by two robots", boxes=[(510, 150, 605, 210)], crop=(0, 60, 1600, 1065), cutout=False),
     "vl-pb-operator": R("05_w1600-23.webp", "Operator at the tool magazine of the automatic tool-change panel bender", boxes=[(920, 170, 1080, 245)], cutout=False),
-    "vl-pb-loading": R("03_w1600-5.webp", "Panel bender with a robot loading cell and sheet supports"),
     "vl-pb-unit": R("01_w1600-32.webp", "Bending unit — upper and lower blades, blank-holder and the sheet manipulator", cutout=False),
     "vl-pb-tools": R("%E7%BB%B4%E6%8A%A4_w1600_2.webp", "Automatic tool-change magazine of the PB-A", cutout=False),
     "vl-pb-blades": R("02_w1600-4.webp", "Bending blades forming a flange upward", cutout=False),
-    "vl-pb-clamp": R("04_w1600-2-1.webp", "Blank-holder cylinder of the panel bender", cutout=False),
-    "vl-pb-manipulator": R("03_w1600-32.webp", "Sheet manipulator with suction cups and rotation", cutout=False),
-    "vl-pb-frame": R("05_w1600-5.webp", "Welded, stress-relieved frame of the panel bender", cutout=False),
-    "vl-pb-parts": R("08_w1600-4.webp", "Panels with hems and box corners bent on the panel bender", cutout=False),
-    "vl-pb-parts-2": R("06_w1600-7.webp", "Trays, enclosures and brackets from the panel bender", cutout=False),
-    "vl-pb-parts-3": R("11_w1600-2.webp", "Perforated enclosure bent on four sides", cutout=False),
+    "vl-pb-frame": R("05_w1600-5.webp", "High-grade cast body of the PB-M panel bender", cutout=False),
     "vl-pb-tool-diagram": R("26-28_w1600-1.webp", "Tool-change diagram of the PB-A bending unit", cutout=False),
 }
 

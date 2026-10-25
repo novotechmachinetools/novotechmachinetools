@@ -211,3 +211,21 @@ Senfeng is sold under its own brand (the value line of the laser section), so th
 `np.clip((a - 110) * 4, 0, 255)` — no BiRefNet), the website renders on studio backgrounds (`img/`, `R()` → BiRefNet) and the
 website photos and diagrams (`W()`, kept as photos).  The brand badge logo `senfeng-logo` is a crop of the leaflet cover block
 (section `site`).  Keys `sf-*`; `tools/senfeng_keys.txt` is written by `tools/senfeng_pages.py`.
+
+### Senfeng photo quality pass (Oct 2026)
+
+Neither Senfeng site publishes large product photos (sfcnclaser.com serves 600 × 340, senfenglaser.com 600 × 390; only the
+marketing banners are 1,742 px), so the brochures are the sole high-resolution source.  Twenty more brochure renders / photos
+replaced 800 px website images (tube lasers, chucks, BDC renders, welding photos, automation line), fourteen tiny or
+caption-covered website graphics were dropped, and the remaining 800 px renders are doubled with Real-ESRGAN x2
+(tools/esrgan.py, weights /home/claude/models/esrgan/, 80 % network + 20 % bicubic to soften edge halos) after the navy
+caption pills ("Optional", "Robot", …) are found by colour and filled with LaMa (`delabel=True` / `up=True` in
+tools/senfeng_photos.py).
+
+### Value-line panel benders — photos corrected (Oct 2026)
+
+The supplier's file names are swapped: `pb-p_w1600.webp` (the PB1400P render with the press arm) is the PB-M, and
+`PB-M-16.9_w1600.webp` (PB2500PC with the tool-magazine columns) is the PB-A.  The PB-M gallery had also borrowed photos
+from the supplier's press-brake and shear pages (robot cell, sheet follower, hold-down, bent parts) — replaced with the
+PB-M page's own photos (bending unit, blank-holder, press arm, cast body, profiles); the same blank-holder photo had been used
+as a "shear blade" on the value-line shear page and was removed there.

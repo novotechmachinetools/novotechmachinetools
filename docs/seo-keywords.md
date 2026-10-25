@@ -197,3 +197,21 @@ New page laser-welding-machine "Laser Welding Machines, Handheld & Robotic | Nov
 and were retitled within 60 characters: laser-cutting-machine "Fiber Laser Cutting Machines, 1.5–80 kW | NovoTech", tube-laser-cutting-machine
 "Tube Laser Cutting Machines, Ø0.3″ to 25″ | NovoTech", panel-bender "CNC Panel Benders, 47–165″ Wide, 0.2 s per Bend | NovoTech",
 press-brake "CNC Press Brakes, Hydraulic & Electric, 22–661 Tons | NovoTech"; metas cut to ≤160 characters.
+
+## Press-brake section restructured into a hub (Oct 2026)
+
+User decision (25 Oct): keep the Dener CNC page as it is, merge the two value-line pages into one "NovoTech CNC press brakes ·
+value line" page, keep the İşitan compact page, and put a hub over the three like the rebar hub.  URLs: press-brake.html = hub
+(the old site's press-brake.html had 12,813 impressions and ranked 15 for "hydraulic press brake canada", so the generic URL
+keeps the generic intent: "press brake" 1,000/mo CA, "press brake machine" 480, "hydraulic press brake" 320, "cnc press brake"
+210); dener-cnc-press-brakes.html ("dener press brake" had 603 impressions — a real brand query); novotech-cnc-press-brakes.html
+(hydraulic + electric + NC; title "NovoTech CNC Press Brakes, Hydraulic & Electric · Value Line" — the brand leads, so no
+"| NovoTech" suffix); compact-hydraulic-press-brakes.html unchanged.  hydraulic-press-brake and electric-press-brake redirect
+(.htaccess) to the NovoTech page.  Generators: tools/press_brake_nav.py (shared section nav), tools/press_brake_hub.py (run after
+dener_pages, vl_sheet_pages, isitan_data); build.py `range_pick` lets a hub table pick glance columns by key so families with
+different glance columns line up.
+
+Rule agreed with the user for the other sections: up to about 4 families on one page is fine (panel benders, V-grooving); above
+~6 families / 6,000 words, hub + one page per line — one clear target per URL for Google, and a single-line page that AI engines
+cite more precisely for brand/model questions while the hub answers the comparison questions.  Next: sheet and tube lasers
+(Dener / Senfeng), then shears (Dener / NovoTech premium (Saymak) / NovoTech value / TTMC as NovoTech).

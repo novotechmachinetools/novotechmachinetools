@@ -71,7 +71,7 @@ PAGE_WELD = dict(
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about laser welders",
     related_pages=[{"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}, {"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"},
-                   {"href": "press-brake.html", "label": "CNC press brakes"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
+                   {"href": "press-brake.html", "label": "Press brakes"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
                    {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring and edge rounding"}],
     related_title="Machinery that works alongside a laser welder",
 )
