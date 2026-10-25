@@ -56,6 +56,10 @@ PHOTOS = {
     "wt-tubiroll": R(33, 116, "Wecotech Tubiroll-2R automatic beading and flanging machine with light curtain"),
     "wt-tubiroll-diagram": R(33, 123, "Tubiroll-2R — two rolls bead or flange the tube end", False),
     "wt-tubiroll-part": R(33, 117, "Beaded duct end made on the Tubiroll-2R", False),
+    "wt-spiralmatic": R(35, 126, "Wecotech Spiralmatic-Flex strip-wound flexible hose machine with coil unwinder"),
+    "wt-spiralmatic-table": R(35, 127, "Spiralmatic-Flex — optional 3,000 mm roller table", False),
+    "wt-spiralmatic-hose": R(35, 129, "Flexible strip-wound metal hose made on the Spiralmatic-Flex", False),
+    "wt-spiralmatic-hose2": R(35, 133, "Strip-wound hose from the Spiralmatic-Flex", False),
     # Traditional line
     "wt-tubimatic-c160": R(41, 170, "Wecotech Tubimatic C 160 UNO end former for commercially available C-tools"),
     "wt-tubimatic-c80tre": R(39, 150, "Tubimatic C 80 TRE with three C-tool stations", False),

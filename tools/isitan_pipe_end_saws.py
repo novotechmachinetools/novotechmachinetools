@@ -150,7 +150,7 @@ FAMILIES = [
                    "Hydraulic power unit — 15 HP on the SFF 90-1, 10 HP on the SFF 60-1", "Mobile foot pedal; CE certified"],
          optional=["Additional end-forming tooling sets", VOLT],
          images=["is-sff-90-1", "is-sff-60-1", "is-sff-tooling"],
-         videos=[], specs=t_sff(),
+         videos=wecotech_data.vids(("QjR0oYrLpRs", "SFF 90 hydraulic pipe end forming machine — expander and shrinker"), ("wj2MHDKj9tk", "SFF 60 pipe end forming machine")), specs=t_sff(),
          headline="Expand and reduce tube ends to Ø3-1/2″ × 14 ga · one tooling set included"),
     dict(id="isitan-sfc-350-vx", group="semi", page=P_SAW,
          name="SFC 350-VX — semi-automatic circular cold saw",

@@ -5,7 +5,7 @@ Metric data transcribed from the Wecotech tube-end-forming catalogue (English, 2
 pages 8 – 63) and shown as imperial (metric).  The catalogue's four lines are kept as groups: Easy (compact entry-level
 expanders / reducers), Universal (modular production machines), Traditional (for the C and IO tooling that is standard
 in the exhaust trade) and Weco (the CNC inner / outer formers); the tube cutting, shearing and deburring machines that
-share the end-forming cell are a fifth group.  The Spiralmatic-Flex strip-wound hose machine is left out.
+share the end-forming cell are a fifth group.  The Spiralmatic-Flex strip-wound hose machine sits in the Universal line.
 """
 P_FORM = "tube-end-forming-machines"
 BRAND = "wecotech"
@@ -156,6 +156,12 @@ TUBIROLL = table("Tubiroll-2R", "Automatic beading and flanging machine", ["Tubi
     ("Lifting force", "—", True), ("Mean cycle time", "~8 s (10 mm bead on Ø200 mm)", True), ("Hydraulic tank", gal(63), False), ("Roll drive", "0 – " + gpm(20) + " at " + psi(140), False),
     ("Motor power", hp(5.5), False), ("Compressed air", "87 psi (6 bar)", False), ("Dimensions L × W × H", dims(1250, 880, 2600), False), ("Weight", weight(500), False)])
 
+SPIRALMATIC = table("Spiralmatic-Flex", "Strip-wound flexible hose machine", ["Spiralmatic-Flex"], [
+    ("Tube diameter", "hose " + dia(50, 200), True), ("Max forming length", "—", True), ("Strip thickness", inch(0.4, 3), False), ("Strip width", inch(50), False),
+    ("Strip speed", "82 ft/min (25 m/min)", False), ("Lifting force", "—", True), ("Mean cycle time", "continuous winding", True),
+    ("Hemming and seaming units", "7 stations each, pitch angle adjustable; hydraulic lifting cylinders on the seaming rollers", False), ("Motor power", "2 × " + hp(4), False),
+    ("Dimensions L × W × H", dims(3300, 1100, 1750), False), ("Weight", weight(1800), False)])
+
 # ----------------------------------------------------------------------------------------------- Traditional line
 TUBIMATIC_C = table("Tubimatic C", "For commercially available C-tools", ["Tubimatic C 80 UNO", "Tubimatic C 80 TRE", "Tubimatic C 160 UNO"], [
     ("Tube diameter", [dia(20, 80) + " expand · " + dia(10, 80) + " reduce", dia(20, 80) + " expand · " + dia(10, 80) + " reduce", dia(20, 160) + " expand · " + dia(10, 160) + " reduce"], True),
@@ -232,6 +238,11 @@ ROTOBRUSH = table("Rotobrush", "Tube end deburring machine", ["Rotobrush"], [
     ("Dimensions L × W × H", dims(1050, 700, 1520), False), ("Weight", weight(300), False)])
 
 
+def vids(*ids_titles):
+    from sahinler_lib import vids as _vids      # NovoTech's own channel: id, title, duration → video dict with thumb
+    return _vids(*ids_titles)
+
+
 def fam(id_, group, name, short, models_label, summary, features, optional, images, tables, videos=()):
     return dict(id=id_, group=group, page=P_FORM, brand=BRAND, name=name, short=short, models_label=models_label, summary=summary,
                 features=features, optional=optional, images=images, videos=list(videos), specs=spec(tables))
@@ -248,7 +259,7 @@ FAMILIES = [
         ["Expansion and calibration of tube ends Ø3/4″ – 23.6″ (20 – 600 mm), wall to 5/32″ (4 mm)", "21 US tons (19 t) lifting force · 3.9″ (100 mm) axial stroke · ~2 s cycle",
          "Exclusive cone expansion unit with quick-change flange for the basic tool", "Hardened Ø8.3″ (210 mm) tube supporting table"] + CTRL_EASY,
         OPT_EASY_CTRL + ["5.9″ (150 mm) axial stroke with Ø26 mm expansion per stroke", "Horizontal version", "Ø18.9″ (480 mm) steel supporting table", "Slot punching unit", VOLT_OPT],
-        ["wt-tubex", "wt-tubex-horizontal", "wt-tubex-table", "wt-tubex-part"], [TUBEX]),
+        ["wt-tubex", "wt-tubex-horizontal", "wt-tubex-table", "wt-tubex-part"], [TUBEX], videos=vids(("UZLQXynn70s", "Tubex tube end expander"), ("AM66tl7B3Yo", "Tubex expanding and pressing"))),
     fam("wt-tubin", "wt-easy", "Tubin compact tube end reducers, Ø3/8″ to 7.5″", "Tubin reducer", "Tubin 150 · Tubin 200",
         "The Tubin reduces (impands) tube ends with collet-type top jaws closed by a cone: Ø3/8″ to 5.5″ on the Tubin 150, to 7.5″ "
         "on the Tubin 200, up to 0.55″ reduction per stroke on 5/32″ wall. The same compact vertical housing, 21 US ton hydraulic "
@@ -257,7 +268,7 @@ FAMILIES = [
         ["Reduction and calibration Ø3/8″ – 5.5″ (10 – 140 mm) or Ø3/8″ – 7.5″ (10 – 190 mm), wall to 5/32″ (4 mm)", "21 US tons (19 t) · 3.9″ (100 mm) stroke · ~4 s cycle",
          "Compact impanding unit with tool holder for the top jaws"] + CTRL_EASY,
         OPT_EASY_CTRL + ["Horizontal version", VOLT_OPT],
-        ["wt-tubin", "wt-tubin-horizontal", "wt-tubin-part"], [TUBIN]),
+        ["wt-tubin", "wt-tubin-horizontal", "wt-tubin-part"], [TUBIN], videos=vids(("vjVnj08CB_g", "Tubin tube end reducer"))),
     fam("wt-tubepress", "wt-easy", "Tubepress tube straightening press, Ø3/4″ to 6.3″", "Tubepress", "Tubepress · Ø20 – 160 mm",
         "Bent and welded tubes go out of round; the Tubepress presses them round again between a tool housing and an adjustable "
         "depth stop so the end former's tool fits and the joint seals. Ø3/4″ to 6.3″ tube, 21 US tons on a 5.9″ stroke, about two "
@@ -274,7 +285,7 @@ FAMILIES = [
         ["Slots and holes in tube ends from Ø3/4″ (20 mm), wall to 5/32″ (4 mm)", "10 US tons (9 t) · 1/2″ (13 mm) punch stroke · ~0.3 s per punch",
          "Punch and die interface (tooling to the part); adjustable punching length by stop plate", "Compact housing with the electrics and hydraulics built in; foot switch"],
         ["Special electrical connection; fan in the control cabinet", VOLT_OPT],
-        ["wt-tubepunch", "wt-tubepunch-unit", "wt-tubepunch-part"], [TUBEPUNCH]),
+        ["wt-tubepunch", "wt-tubepunch-unit", "wt-tubepunch-part"], [TUBEPUNCH], videos=vids(("PB9W3SniXDk", "IO forming and 8-fold punching combined"))),
     # Universal line
     fam("wt-tubex-u", "wt-universal", "Tubex-U universal production expander, from Ø3/4″", "Tubex-U", "Tubex-U · from Ø20 mm",
         "The all-purpose production expander: a modular HW-Flex housing with the hydraulic unit bolted on, 26 US tons on a 5.9″ "
@@ -292,7 +303,7 @@ FAMILIES = [
         ["Reduction Ø3/8″ – 5.5″ (10 – 140 mm) or Ø3/8″ – 7.5″ (10 – 190 mm), wall to 5/16″ (8 mm)", "26 US tons (24 t) · 5.9″ (150 mm) stroke · Ø0.83″ (21 mm) reduction per stroke · ~3 s",
          "Impanding unit on the HW-Flex universal housing; vertical working position"] + CTRL_U,
         OPT_U_CTRL + ["Ø120 mm piston, 37 US tons (34 t), or Ø160 mm piston, 66 US tons (60 t)", "Forming length 7.9″ (200 mm); horizontal version", "Central lubrication (SKF) with air service unit (Festo)", VOLT_OPT],
-        ["wt-tubin-u", "wt-tubin-u-horizontal", "wt-tubin-u-part"], [TUBIN_U]),
+        ["wt-tubin-u", "wt-tubin-u-horizontal", "wt-tubin-u-part"], [TUBIN_U], videos=vids(("fdBzBNVtMkY", "Tubin-U production reducer"))),
     fam("wt-tubax-u", "wt-universal", "Tubax-U axial forming machines with tube clamping, Ø3/8″ to 11.8″", "Tubax-U", "Tubax-U 200 · Tubax-U 300",
         "A horizontal axial former that clamps the tube in jaws and pushes a forming tool into the end: beads, flares, collars and "
         "reductions on tube to Ø7.9″ (variant 200) or Ø11.8″ (variant 300), with 26 or 37 US tons on the forming axis and 37 or 75 "
@@ -303,7 +314,7 @@ FAMILIES = [
          "Forming unit and clamping unit each with a tool interface; safety cover; horizontal working position", "Forward and return stroke adjustable by hand wheel"] + CTRL_U[1:],
         ["Workpiece and hours counters, remote maintenance, digital I/O and Profisafe, oil monitors", "Oil / air or oil / water heat exchanger; 15 HP (11 kW) power increase",
          "Two-hand station on a free-standing console; lubricant saving system", VOLT_OPT],
-        ["wt-tubax-u", "wt-tubax-u-300", "wt-tubax-u-diagram", "wt-tubax-u-part"], [TUBAX_U]),
+        ["wt-tubax-u", "wt-tubax-u-300", "wt-tubax-u-diagram", "wt-tubax-u-part"], [TUBAX_U], videos=vids(("gKUZYwb4TbY", "Tubax-U axial forming"))),
     fam("wt-tubax-rotary", "wt-universal", "Tubax-Rotary Electra servo rotary forming machines, Ø1.6″ to 15.7″", "Tubax-Rotary Electra", "Tubax-Rotary 200 · Tubax-Rotary 400",
         "A rotating forming tool is moved axially against the clamped tube by servo motors and gears: mirror-smooth sealing faces "
         "below Ra 0.2, roll collars, beads and flanges formed with high, precisely applied force. Tube Ø1.6″ to 7.9″ with 5.9″ "
@@ -313,7 +324,7 @@ FAMILIES = [
          "Servo motor and gear on the rolling unit and on the clamping unit; surface quality < Ra 0.2", "Axial stroke 5.9″ / 11.8″ (150 / 300 mm) · clamping stroke 5.9″ (150 mm) · ~10 / ~20 s",
          "Central lubrication (SKF) with air service unit (Festo); horizontal working position; HW-Flex housing"],
         ["Workpiece and hours counters, remote maintenance, program key switch, digital I/O and Profisafe", "LED status light; two-hand console; safety light curtain for short tubes; air-conditioned cabinet", VOLT_OPT],
-        ["wt-tubax-rotary", "wt-tubax-rotary-400", "wt-tubax-rotary-diagram", "wt-tubax-rotary-part"], [TUBAX_ROTARY]),
+        ["wt-tubax-rotary", "wt-tubax-rotary-400", "wt-tubax-rotary-diagram", "wt-tubax-rotary-part"], [TUBAX_ROTARY], videos=vids(("2bfMV1pC4U8", "Tubax-Rotary 200 Electra rolling"), ("AgcIvvgyU8k", "Wecomatic IO-S 400 with Tubax-Rotary Electra 400"))),
     fam("wt-tubax-multi", "wt-universal", "Tubax-Multi Electra multi-station forming centre, Ø3/8″ to 6.3″", "Tubax-Multi Electra", "Tubax-Multi · Ø10 – 160 mm",
         "Five axial mandrels or milling heads on a servo tool changer form the tube end in one clamping: expand, reduce, bead and "
         "machine without re-handling the part. 40 US tons on an 11.8″ axial stroke and 40 US tons of clamping, tube Ø3/8″ to 6.3″, "
@@ -321,7 +332,7 @@ FAMILIES = [
         ["Five exchangeable axial mandrels or milling heads on a servo-driven tool changer", "Tube Ø3/8″ – 6.3″ (10 – 160 mm), clamping length to 7.1″ (180 mm)",
          "Axial stroke 11.8″ (300 mm) · 40 US tons (36 t); clamping stroke 3.9″ (100 mm) · 40 US tons", "HW-Flex housing with tube clamping unit and tooling interface; horizontal working position"],
         ["Milling station with spindle, tool mount and motor", "Rolling station with radial movement, rolling spindle and drives", "Additional forming station; chip conveyor; drip pan", "LED status light; two-hand console; air-conditioned cabinet", VOLT_OPT],
-        ["wt-tubax-multi", "wt-tubax-multi-part", "wt-tubax-multi-part2"], [TUBAX_MULTI]),
+        ["wt-tubax-multi", "wt-tubax-multi-part", "wt-tubax-multi-part2"], [TUBAX_MULTI], videos=vids(("9bs7p3XdY_k", "Tubax-Multi Electra"))),
     fam("wt-tubiroll", "wt-universal", "Tubiroll-2R automatic beading and flanging machines, Ø1.6″ to 39.4″", "Tubiroll-2R", "Tubiroll-2R 600 · Tubiroll-2R 1000",
         "A fully automatic beading machine for thin-wall tube and duct: two rolls bead or flange tube from Ø1.6″ to 23.6″ (variant "
         "600) or 39.4″ (variant 1000) in 0.08″ wall, beading depth to 0.6″, with hydraulic roll drive, adjustable feed and a safety "
@@ -331,7 +342,17 @@ FAMILIES = [
          "Hydraulic roll drive and feed, each manually adjustable; pneumatic service unit (Festo); Siemens PLC with rapid / feed potentiometers"],
         ["Static driving-roll support for long tubes; pneumatic centring and blocking supports for tube to 1,000 mm long and Ø1,400 mm", "Rolling length increased to 7.9″ (200 mm)",
          "Oil / air or oil / water heat exchanger; drip pan with foot plate", VOLT_OPT],
-        ["wt-tubiroll", "wt-tubiroll-diagram", "wt-tubiroll-part"], [TUBIROLL]),
+        ["wt-tubiroll", "wt-tubiroll-diagram", "wt-tubiroll-part"], [TUBIROLL], videos=vids(("bM7thm2Lq20", "Tubiroll-2R beading machine"))),
+    fam("wt-spiralmatic", "wt-universal", "Spiralmatic-Flex strip-wound flexible hose machine, Ø2″ to 7.9″", "Spiralmatic-Flex", "Spiralmatic-Flex · Ø50 – 200 mm",
+        "Winds and seams flexible strip-wound metal hose — the corrugated exhaust, ventilation and chimney flex — from coil: a winding unit "
+        "with height-adjustable carriage sets the hose diameter from Ø2″ to 7.9″, a seven-station hemming unit folds the 2″ strip and a "
+        "seven-station seaming unit with hydraulic rollers locks the seam at 82 ft/min. Coil unwinder with hand brake, strip lubrication "
+        "and adjustable strip entrance on the HW-Flex housing; a 3,000 mm roller table and a laser trimming device are options.",
+        ["Flexible strip-wound hose Ø2″ – 7.9″ (50 – 200 mm) from 0.016″ (0.4 mm) strip, 2″ (50 mm) wide, at 82 ft/min (25 m/min)",
+         "Hemming unit and seaming unit of seven stations each with pitch-angle adjustment; free-wheel decoupling of the seaming unit", "Winding unit with height-adjustable carriage and hollow-shaft interface for the winding mandrel",
+         "Hydraulic unit with seven individually controlled stations for the seaming rollers; coil unwinder with hand brake; strip lubrication", "Siemens PLC with 4″ touchscreen and speed-differential potentiometer"],
+        ["7″ touchscreen, counters, remote maintenance, Profisafe, coolant monitor", "Roller table 3,000 mm; laser trimming device with pneumatic ejector", "Central lubrication; pneumatic unwinding brake; LED status light", VOLT_OPT],
+        ["wt-spiralmatic", "wt-spiralmatic-table", "wt-spiralmatic-hose", "wt-spiralmatic-hose2"], [SPIRALMATIC], videos=vids(("lpqRGu6D8jc", "Spiralmatic Flex"))),
     # Traditional line
     fam("wt-tubimatic-c", "wt-traditional", "Tubimatic C end formers for standard C-tools, Ø3/8″ to 6.3″", "Tubimatic C", "C 80 UNO · C 80 TRE · C 160 UNO",
         "Expanders and reducers built around the commercially available C-tools of the exhaust and tube trade, so existing "
@@ -344,7 +365,7 @@ FAMILIES = [
          "Horizontal working position; forward and return stroke on a hand wheel (C 80 UNO)", "C 80 TRE and C 160 UNO on the HW-Flex housing with 4″ touchscreen, macro programming and 200 programs"],
         ["Option DUE (2 tool holders) and TRE (3 tool holders) on the UNO machines; left / right / alternate forming selection", "Ø120 mm piston, 37 US tons (34 t) on the C 80 TRE; crane for tool change on the C 160",
          "Tubimatic-AX manufacturing head; slot punching unit", "7″ touchscreen, USB, remote maintenance, Profisafe; heat exchangers; 15 HP power increase", VOLT_OPT],
-        ["wt-tubimatic-c160", "wt-tubimatic-c80tre", "wt-tubimatic-c80uno", "wt-tubimatic-c-diagram", "wt-tubimatic-c-part"], [TUBIMATIC_C]),
+        ["wt-tubimatic-c160", "wt-tubimatic-c80tre", "wt-tubimatic-c80uno", "wt-tubimatic-c-diagram", "wt-tubimatic-c-part"], [TUBIMATIC_C], videos=vids(("yhqAVTbgRks", "Tubimatic C 80 DUE"), ("fCILtMmtW3c", "Tubimatic C 80 DUE programmable"))),
     fam("wt-tubimatic-io80", "wt-traditional", "Tubimatic IO 80 inner / outer end formers for standard IO-tools, Ø3/8″ to 3.1″", "Tubimatic IO 80", "IO 80 · IO 80 Electra · IO-US 80 Electra",
         "Production end formers with inner and outer tools that take the IO tooling already in the shop: the inner tool expands "
         "while the outer tool closes on the tube, so flares, double flares, beads and reductions are formed in one stroke with "
@@ -355,7 +376,7 @@ FAMILIES = [
          "Inner stroke 3.1″ (80 mm), outer stroke 3.1″ (80 mm, 110 mm to the tool-change position); 26 – 27 US tons inner and outer", "HW-Flex housing, safety cover on the tool, horizontal working position; 4″ touchscreen with macro programming"],
         ["Option DUE: two separate forming units", "200 alphanumerical programs, counters, remote maintenance, Profisafe, lubricant and oil monitors", "IO 80: 37 US ton (34 t) inner and outer force, proportional valves, heat exchangers, 15 HP power increase",
          "Drip pan under the forming unit; central lubrication (SKF / Festo) on the IO 80", VOLT_OPT],
-        ["wt-tubimatic-io80", "wt-tubimatic-io80-electra", "wt-tubimatic-ious80", "wt-tubimatic-io-diagram", "wt-tubimatic-io-part"], [TUBIMATIC_IO80]),
+        ["wt-tubimatic-io80", "wt-tubimatic-io80-electra", "wt-tubimatic-ious80", "wt-tubimatic-io-diagram", "wt-tubimatic-io-part"], [TUBIMATIC_IO80], videos=vids(("o7vyBqrQsxk", "Tubimatic IO 80 Electra"), ("ufduRg-u5ao", "Tubimatic IO-US 80 Electra"), ("NnzDYdWuBKY", "Tubimatic IO-US axial forming"), ("xVXU0Qkr00U", "Tubimatic IO-US oval reduction"), ("-PmQNa17_AQ", "Batch production on the Tubimatic"))),
     fam("wt-tubimatic-io160", "wt-traditional", "Tubimatic IO 160 inner / outer end formers for standard IO-tools, Ø3/8″ to 6.3″", "Tubimatic IO 160", "IO 160 · IO 160 Electra · IO-US 160 Electra",
         "The larger IO former: tube to Ø6.3″, 3.9″ forming length, 5.9″ inner and outer strokes and 37 US tons on both tools, with "
         "the same commercially available IO tooling. The hydraulic IO 160 takes wall to 5/16″ with a 15 HP power unit; the "
@@ -364,7 +385,7 @@ FAMILIES = [
         ["Compatible with commercially available IO-tools; inner and outer forming in one stroke", "Expansion Ø3/4″ – 6.3″ (20 – 160 mm), reduction Ø3/8″ – 6.3″ (10 – 160 mm)",
          "Inner and outer strokes 5.9″ (150 mm); 37 US tons (34 t) inner and outer; ~3 – 5 s cycle", "HW-Flex housing, safety cover on the tool, horizontal working position; touchscreen with macro programming"],
         ["Option DUE: two separate forming units; crane for tool change", "IO 160: power-regulated pump with proportional valves, heat exchangers", "Counters, remote maintenance, Profisafe, lubricant and oil monitors; air-conditioned cabinet", VOLT_OPT],
-        ["wt-tubimatic-io160", "wt-tubimatic-io160-electra", "wt-tubimatic-ious160", "wt-tubimatic-io160-diagram", "wt-tubimatic-io160-part"], [TUBIMATIC_IO160]),
+        ["wt-tubimatic-io160", "wt-tubimatic-io160-electra", "wt-tubimatic-ious160", "wt-tubimatic-io160-diagram", "wt-tubimatic-io160-part"], [TUBIMATIC_IO160], videos=vids(("6YL3H-D8-Bg", "Tubimatic IO 160 bicone forming"), ("MU1f1OTpU9k", "Tubimatic IO 160 Electra expanding"), ("6EyvMLDbj7o", "Tubimatic IO 160 Electra reducing"), ("TDC8dDh6gF8", "Tubimatic IO 160 high speed, high power square expanding"), ("-hY8y-_2Q80", "Tubimatic IO-US 160 Electra"), ("qkEoALNkNME", "Tubimatic IO-US 160 with Tubepunch"), ("6CnFhqsJqA4", "Automated processes on the Tubimatic IO-US"))),
     # Weco line
     fam("wt-tubex-io-s", "wt-weco", "Tubex IO-S combined inner / outer tube end formers, Ø3/4″ to 23.6″", "Tubex IO-S", "Tubex IO-S 200 · 400 · 600",
         "The combined former for high degrees of forming: an inner expansion mandrel and 8, 16 or 24 radial outer pistons work "
@@ -377,7 +398,7 @@ FAMILIES = [
          "Expansion, reduction, beading, flaring, flanging and embossing in every position on round and shaped tube", "Vertical working position; HW-Flex housing with the hydraulic unit bolted on"],
         ["12″ colour touchscreen, 200 alphanumerical programs, counters, remote maintenance, Profisafe, oil monitors", "HV head for horizontal and vertical working; force increase on the inner and outer tool",
          "Safety guard with light curtain and mode selector; mechanically synchronised outer tools; bayonet quick-change for the cone", "Heat exchangers; 15 HP power increase; drip pan; central lubrication", VOLT_OPT],
-        ["wt-tubex-io-s", "wt-tubex-io-s-guard", "wt-tubex-io-s-diagram", "wt-tubex-io-s-part"], [TUBEX_IOS]),
+        ["wt-tubex-io-s", "wt-tubex-io-s-guard", "wt-tubex-io-s-diagram", "wt-tubex-io-s-part"], [TUBEX_IOS], videos=vids(("pJdVW99rkyY", "Tubex IO-S 200 — shock absorber"), ("-SlgcxWwOPs", "Tubex IO-S 200 — V bead"), ("xpPsnW_LYPk", "Tubex IO-S 200 — sphere"), ("PNGfvKXFdhc", "Tubex IO-S 200 — exhaust pipe calibrating"), ("eXFIygwl5Q4", "Tubex IO-S 200 — oval"), ("Is7NtGNsfwA", "Tubex IO-S 200 — end cap"), ("bcEB68sW0P8", "Tubex IO-S 600 double head"))),
     fam("wt-wecomatic-200", "wt-weco", "Wecomatic IO-S 200 CNC radial forming machine, Ø3/4″ to 7.9″", "Wecomatic IO-S 200", "Wecomatic IO-S 200",
         "The flagship radial forming concept: CNC-controlled inner and outer tools with a programmable rotation of the inner tool "
         "in 10° steps, so the hardest forming tasks — multi-step expansions and reductions, beads, flares and flanges on exhaust "
@@ -388,7 +409,7 @@ FAMILIES = [
          "Separate low- and high-voltage cabinets; lubricant, oil level / temperature and filter monitors standard; vertical working position"],
         ["Pressure increase to 300 bar (up to +40 % force); HV head for horizontal and vertical working", "Force increase on the inner and outer tool; safety guard with light curtain",
          "Touchscreen on pivot arm; work-place lighting; LED status light; remote maintenance, Profisafe", VOLT_OPT],
-        ["wt-wecomatic-200", "wt-wecomatic-200-side", "wt-wecomatic-200-part"], [WECOMATIC_200]),
+        ["wt-wecomatic-200", "wt-wecomatic-200-side", "wt-wecomatic-200-part"], [WECOMATIC_200], videos=vids(("oW2llrkpsHI", "Wecomatic IO-S 200 — V beading"), ("5eX5iyaDxV4", "Wecomatic IO-S 200 — tulip"), ("U9Igfkriexs", "Wecomatic IO-S 200 — press fitting V"), ("gvP5TjbV180", "Wecomatic IO-S 200 — reducing and bending"), ("jVguuN7TJIo", "Wecomatic IO-S 200 — expanding with integrated marking"), ("tb4mq3zf6Os", "Wecomatic IO-S 200 — sphere"), ("fBtUZ4qq-DM", "Wecomatic IO-S 200 — short tube bending"), ("ZKq4S8k0NZA", "Various forming on the Wecomatic"))),
     fam("wt-wecomatic-speed", "wt-weco", "Wecomatic IO-S Speed and High Speed CNC radial formers, Ø3/4″ to 23.6″", "Wecomatic IO-S Speed", "Speed 200 · 400 · 600 · High Speed 200 · 400 · 600",
         "The same CNC inner / outer forming with programmable inner-tool rotation, in three diameter variants to Ø23.6″ and two "
         "power levels: Speed with two 15 HP pumps is about 30 % faster than the IO-S 200, High Speed with three pumps about 60 % — "
@@ -399,7 +420,7 @@ FAMILIES = [
          "Quick-change tool flanges, synchronised outer tools, separate low- and high-voltage cabinets; vertical working position"],
         ["Pressure increase to 300 bar (up to +40 % force); High Power force increase on inner and outer tool", "HV head for horizontal and vertical working; safety guard with light curtain and mode selector",
          "Touchscreen on pivot arm; LED status light; remote maintenance, Profisafe, air-conditioned cabinet", VOLT_OPT],
-        ["wt-wecomatic-speed", "wt-wecomatic-highspeed", "wt-wecomatic-400", "wt-wecomatic-diagram", "wt-wecomatic-part"], [WECOMATIC_SPEED, WECOMATIC_HIGH]),
+        ["wt-wecomatic-speed", "wt-wecomatic-highspeed", "wt-wecomatic-400", "wt-wecomatic-diagram", "wt-wecomatic-part"], [WECOMATIC_SPEED, WECOMATIC_HIGH], videos=vids(("nIP6jMVVZq4", "Wecomatic IO-S 400 Speed High Power — Euro 6 / China 6 parts"), ("ZEcSolFbB9k", "Wecomatic IO-S 400 — V bead expanding"), ("MKr1nnRqdkM", "Wecomatic IO-S 400 — catalytic converter housing"), ("1xgFi2E2ctE", "Wecomatic IO-S 200 High Speed — sphere forming"), ("bLvY5hZcExA", "Wecomatic IO-S 1200 × 200 High Speed"))),
     fam("wt-flanging-cell", "wt-weco", "Flanging cell for bellows, T-pieces and bent parts, Ø3.1″ to 15.7″", "Flanging cell", "Flanging cell · Ø80 – 400 mm",
         "A rotating-head cell for flanging and beading parts that cannot be formed in a static tool: T-pieces, bends and unstable "
         "workpieces such as bellows are held by eight pressure-controlled hydraulic clamps and flange supports while the rotating "
@@ -421,7 +442,7 @@ FAMILIES = [
          "Burr-free cut without lubricant or coolant; shearing inserts resharpened; inner tool rotation 0 – 180°", "Electric inner cutting unit, 11 US tons (10 t); pneumatic outer blade, 1.2″ (30 mm) stroke; ~10 s cycle",
          "7″ colour touchscreen, USB, 200 alphanumerical programs; quick-change interfaces for inner and outer tool; scrap exit; central lubrication"],
         ["Tube rod cutting with programmable electric tube stop; insertion slide (electric); supporting table with guiding nut", "Two-hand station on a free-standing console; counters, remote maintenance, Profisafe; air-conditioned cabinet", VOLT_OPT],
-        ["wt-tubecut", "wt-tubecut-notable", "wt-tubecut-diagram", "wt-tubecut-part"], [TUBECUT]),
+        ["wt-tubecut", "wt-tubecut-notable", "wt-tubecut-diagram", "wt-tubecut-part"], [TUBECUT], videos=vids(("8glqyUN6YuI", "Tubecut IO-S — oval cutting"), ("IXH9bl5-dsg", "Tubecut IO-S with integrated tube stop"), ("4SCocdlxsmQ", "Tubecut with Rotobrush"))),
     fam("wt-tubeshear", "wt-cutting", "Tubeshear for straight and bent tubes, Ø3/4″ to 6.3″", "Tubeshear", "Tubeshear · Ø20 – 160 mm",
         "Cuts tube quickly, cleanly and cheaply in series production: a scoring knife and a chopping knife shear straight, "
         "curved and serpentine tube laid flat on a table that adjusts to the tube diameter — cutting tubes into lengths, trimming "
@@ -431,7 +452,7 @@ FAMILIES = [
          "Scoring knife 6 US tons, 0 – 8 ft/min · chopping knife 12 US tons, 0 – 20 ft/min · ~13 s on Ø80 mm", "Torsion-resistant machined frame; height-adjustable lifting table (removable); horizontal working position",
          "15 HP (11 kW) power unit with 5 – 60 L/min variable flow; central lubrication for the cutting oil"],
         ["Oil / air or oil / water heat exchanger; oil sump; drip pan with foot plate", "Separate workpiece and hours counters; digital I/O, Profisafe, oil and filter monitors", VOLT_OPT],
-        ["wt-tubeshear", "wt-tubeshear-process", "wt-tubeshear-part"], [TUBESHEAR]),
+        ["wt-tubeshear", "wt-tubeshear-process", "wt-tubeshear-part"], [TUBESHEAR], videos=vids(("xoiQEzHDXdE", "Tubeshear"))),
     fam("wt-rotobrush", "wt-cutting", "Rotobrush tube end deburring machine, Ø3/4″ to 6.3″", "Rotobrush", "Rotobrush · Ø20 – 160 mm",
         "Clean, fast deburring of cut tube ends before forming: a 5.5 HP wire brush on a linear adjustment of 0 – 3″ and a rotating "
         "frame that moves the tube centre ±6° eccentrically, so the whole inner and outer edge is brushed in about 3 s. "
@@ -439,5 +460,5 @@ FAMILIES = [
         ["Deburring of tube ends Ø3/4″ – 6.3″ (20 – 160 mm) in ~3 s", "5.5 HP (4 kW) brush motor; wire brush linear adjustment 0 – 3″ (75 mm); 1/3 HP rotating frame, ±6° eccentric",
          "Format-dependent exchangeable safety plates; HW-Flex housing"],
         ["Suction device; separate hours counter; fan in the control cabinet", VOLT_OPT],
-        ["wt-rotobrush", "wt-rotobrush-head", "wt-rotobrush-part"], [ROTOBRUSH]),
+        ["wt-rotobrush", "wt-rotobrush-head", "wt-rotobrush-part"], [ROTOBRUSH], videos=vids(("nDiOKeqX9S0", "Rotobrush tube end deburring"))),
 ]

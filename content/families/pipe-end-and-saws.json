@@ -17,6 +17,7 @@
   "wt-tubax-rotary",
   "wt-tubax-multi",
   "wt-tubiroll",
+  "wt-spiralmatic",
   "wt-tubimatic-c",
   "wt-tubimatic-io80",
   "wt-tubimatic-io160",
@@ -311,7 +312,20 @@
     "is-sff-60-1",
     "is-sff-tooling"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "QjR0oYrLpRs",
+     "title": "SFF 90 hydraulic pipe end forming machine — expander and shrinker",
+     "duration": "PT0M32S",
+     "thumb": "video-QjR0oYrLpRs"
+    },
+    {
+     "id": "wj2MHDKj9tk",
+     "title": "SFF 60 pipe end forming machine",
+     "duration": "PT0M26S",
+     "thumb": "video-wj2MHDKj9tk"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -1412,7 +1426,20 @@
     "wt-tubex-table",
     "wt-tubex-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "UZLQXynn70s",
+     "title": "Tubex tube end expander",
+     "duration": "PT3M9S",
+     "thumb": "video-UZLQXynn70s"
+    },
+    {
+     "id": "AM66tl7B3Yo",
+     "title": "Tubex expanding and pressing",
+     "duration": "PT1M0S",
+     "thumb": "video-AM66tl7B3Yo"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -1594,7 +1621,14 @@
     "wt-tubin-horizontal",
     "wt-tubin-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "vjVnj08CB_g",
+     "title": "Tubin tube end reducer",
+     "duration": "PT1M3S",
+     "thumb": "video-vjVnj08CB_g"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -1951,7 +1985,14 @@
     "wt-tubepunch-unit",
     "wt-tubepunch-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "PB9W3SniXDk",
+     "title": "IO forming and 8-fold punching combined",
+     "duration": "PT1M0S",
+     "thumb": "video-PB9W3SniXDk"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -2315,7 +2356,14 @@
     "wt-tubin-u-horizontal",
     "wt-tubin-u-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "fdBzBNVtMkY",
+     "title": "Tubin-U production reducer",
+     "duration": "PT1M30S",
+     "thumb": "video-fdBzBNVtMkY"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -2522,7 +2570,14 @@
     "wt-tubax-u-diagram",
     "wt-tubax-u-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "gKUZYwb4TbY",
+     "title": "Tubax-U axial forming",
+     "duration": "PT1M5S",
+     "thumb": "video-gKUZYwb4TbY"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -2735,7 +2790,20 @@
     "wt-tubax-rotary-diagram",
     "wt-tubax-rotary-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "2bfMV1pC4U8",
+     "title": "Tubax-Rotary 200 Electra rolling",
+     "duration": "PT0M29S",
+     "thumb": "video-2bfMV1pC4U8"
+    },
+    {
+     "id": "AgcIvvgyU8k",
+     "title": "Wecomatic IO-S 400 with Tubax-Rotary Electra 400",
+     "duration": "PT1M40S",
+     "thumb": "video-AgcIvvgyU8k"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -2913,7 +2981,14 @@
     "wt-tubax-multi-part",
     "wt-tubax-multi-part2"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "9bs7p3XdY_k",
+     "title": "Tubax-Multi Electra",
+     "duration": "PT0M33S",
+     "thumb": "video-9bs7p3XdY_k"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -3068,7 +3143,14 @@
     "wt-tubiroll-diagram",
     "wt-tubiroll-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "bM7thm2Lq20",
+     "title": "Tubiroll-2R beading machine",
+     "duration": "PT0M40S",
+     "thumb": "video-bM7thm2Lq20"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -3248,6 +3330,170 @@
    },
    "group": "wt-universal"
   },
+  "wt-spiralmatic": {
+   "id": "wt-spiralmatic",
+   "brand": "wecotech",
+   "name": "Spiralmatic-Flex strip-wound flexible hose machine, Ø2″ to 7.9″",
+   "short": "Spiralmatic-Flex",
+   "models_label": "Spiralmatic-Flex · Ø50 – 200 mm",
+   "summary": "Winds and seams flexible strip-wound metal hose — the corrugated exhaust, ventilation and chimney flex — from coil: a winding unit with height-adjustable carriage sets the hose diameter from Ø2″ to 7.9″, a seven-station hemming unit folds the 2″ strip and a seven-station seaming unit with hydraulic rollers locks the seam at 82 ft/min. Coil unwinder with hand brake, strip lubrication and adjustable strip entrance on the HW-Flex housing; a 3,000 mm roller table and a laser trimming device are options.",
+   "features": [
+    "Flexible strip-wound hose Ø2″ – 7.9″ (50 – 200 mm) from 0.016″ (0.4 mm) strip, 2″ (50 mm) wide, at 82 ft/min (25 m/min)",
+    "Hemming unit and seaming unit of seven stations each with pitch-angle adjustment; free-wheel decoupling of the seaming unit",
+    "Winding unit with height-adjustable carriage and hollow-shaft interface for the winding mandrel",
+    "Hydraulic unit with seven individually controlled stations for the seaming rollers; coil unwinder with hand brake; strip lubrication",
+    "Siemens PLC with 4″ touchscreen and speed-differential potentiometer"
+   ],
+   "optional": [
+    "7″ touchscreen, counters, remote maintenance, Profisafe, coolant monitor",
+    "Roller table 3,000 mm; laser trimming device with pneumatic ejector",
+    "Central lubrication; pneumatic unwinding brake; LED status light",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-spiralmatic",
+    "wt-spiralmatic-table",
+    "wt-spiralmatic-hose",
+    "wt-spiralmatic-hose2"
+   ],
+   "videos": [
+    {
+     "id": "lpqRGu6D8jc",
+     "title": "Spiralmatic Flex",
+     "duration": "PT1M8S",
+     "thumb": "video-lpqRGu6D8jc"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Spiralmatic-Flex",
+      "sub": "Strip-wound flexible hose machine",
+      "models": [
+       "Spiralmatic-Flex"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "hose Ø2 – 7.9″ (50 – 200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strip thickness",
+        "sub": "",
+        "cells": [
+         "0.016″ (0.4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strip width",
+        "sub": "",
+        "cells": [
+         "2″ (50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strip speed",
+        "sub": "",
+        "cells": [
+         "82 ft/min (25 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "continuous winding"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hemming and seaming units",
+        "sub": "",
+        "cells": [
+         "7 stations each, pitch angle adjustable; hydraulic lifting cylinders on the seaming rollers"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "2 × 5.5 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "130 × 43 × 69″ (3,300 × 1,100 × 1,750 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,968 lb (1,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Spiralmatic-Flex",
+      "glance": [
+       "hose Ø2 – 7.9″ (50 – 200 mm)",
+       "—",
+       "—",
+       "continuous winding",
+       "3,968 lb (1,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-universal"
+  },
   "wt-tubimatic-c": {
    "id": "wt-tubimatic-c",
    "brand": "wecotech",
@@ -3275,7 +3521,20 @@
     "wt-tubimatic-c-diagram",
     "wt-tubimatic-c-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "yhqAVTbgRks",
+     "title": "Tubimatic C 80 DUE",
+     "duration": "PT3M16S",
+     "thumb": "video-yhqAVTbgRks"
+    },
+    {
+     "id": "fCILtMmtW3c",
+     "title": "Tubimatic C 80 DUE programmable",
+     "duration": "PT1M34S",
+     "thumb": "video-fCILtMmtW3c"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -3517,7 +3776,38 @@
     "wt-tubimatic-io-diagram",
     "wt-tubimatic-io-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "o7vyBqrQsxk",
+     "title": "Tubimatic IO 80 Electra",
+     "duration": "PT0M55S",
+     "thumb": "video-o7vyBqrQsxk"
+    },
+    {
+     "id": "ufduRg-u5ao",
+     "title": "Tubimatic IO-US 80 Electra",
+     "duration": "PT1M22S",
+     "thumb": "video-ufduRg-u5ao"
+    },
+    {
+     "id": "NnzDYdWuBKY",
+     "title": "Tubimatic IO-US axial forming",
+     "duration": "PT0M33S",
+     "thumb": "video-NnzDYdWuBKY"
+    },
+    {
+     "id": "xVXU0Qkr00U",
+     "title": "Tubimatic IO-US oval reduction",
+     "duration": "PT0M39S",
+     "thumb": "video-xVXU0Qkr00U"
+    },
+    {
+     "id": "-PmQNa17_AQ",
+     "title": "Batch production on the Tubimatic",
+     "duration": "PT3M1S",
+     "thumb": "video--PmQNa17_AQ"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -3728,7 +4018,50 @@
     "wt-tubimatic-io160-diagram",
     "wt-tubimatic-io160-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "6YL3H-D8-Bg",
+     "title": "Tubimatic IO 160 bicone forming",
+     "duration": "PT2M28S",
+     "thumb": "video-6YL3H-D8-Bg"
+    },
+    {
+     "id": "MU1f1OTpU9k",
+     "title": "Tubimatic IO 160 Electra expanding",
+     "duration": "PT1M2S",
+     "thumb": "video-MU1f1OTpU9k"
+    },
+    {
+     "id": "6EyvMLDbj7o",
+     "title": "Tubimatic IO 160 Electra reducing",
+     "duration": "PT1M4S",
+     "thumb": "video-6EyvMLDbj7o"
+    },
+    {
+     "id": "TDC8dDh6gF8",
+     "title": "Tubimatic IO 160 high speed, high power square expanding",
+     "duration": "PT2M21S",
+     "thumb": "video-TDC8dDh6gF8"
+    },
+    {
+     "id": "-hY8y-_2Q80",
+     "title": "Tubimatic IO-US 160 Electra",
+     "duration": "PT1M5S",
+     "thumb": "video--hY8y-_2Q80"
+    },
+    {
+     "id": "qkEoALNkNME",
+     "title": "Tubimatic IO-US 160 with Tubepunch",
+     "duration": "PT0M42S",
+     "thumb": "video-qkEoALNkNME"
+    },
+    {
+     "id": "6CnFhqsJqA4",
+     "title": "Automated processes on the Tubimatic IO-US",
+     "duration": "PT1M31S",
+     "thumb": "video-6CnFhqsJqA4"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -3939,7 +4272,50 @@
     "wt-tubex-io-s-diagram",
     "wt-tubex-io-s-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "pJdVW99rkyY",
+     "title": "Tubex IO-S 200 — shock absorber",
+     "duration": "PT2M48S",
+     "thumb": "video-pJdVW99rkyY"
+    },
+    {
+     "id": "-SlgcxWwOPs",
+     "title": "Tubex IO-S 200 — V bead",
+     "duration": "PT2M8S",
+     "thumb": "video--SlgcxWwOPs"
+    },
+    {
+     "id": "xpPsnW_LYPk",
+     "title": "Tubex IO-S 200 — sphere",
+     "duration": "PT1M36S",
+     "thumb": "video-xpPsnW_LYPk"
+    },
+    {
+     "id": "PNGfvKXFdhc",
+     "title": "Tubex IO-S 200 — exhaust pipe calibrating",
+     "duration": "PT1M19S",
+     "thumb": "video-PNGfvKXFdhc"
+    },
+    {
+     "id": "eXFIygwl5Q4",
+     "title": "Tubex IO-S 200 — oval",
+     "duration": "PT0M47S",
+     "thumb": "video-eXFIygwl5Q4"
+    },
+    {
+     "id": "Is7NtGNsfwA",
+     "title": "Tubex IO-S 200 — end cap",
+     "duration": "PT0M58S",
+     "thumb": "video-Is7NtGNsfwA"
+    },
+    {
+     "id": "bcEB68sW0P8",
+     "title": "Tubex IO-S 600 double head",
+     "duration": "PT1M49S",
+     "thumb": "video-bcEB68sW0P8"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -4188,7 +4564,56 @@
     "wt-wecomatic-200-side",
     "wt-wecomatic-200-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "oW2llrkpsHI",
+     "title": "Wecomatic IO-S 200 — V beading",
+     "duration": "PT1M20S",
+     "thumb": "video-oW2llrkpsHI"
+    },
+    {
+     "id": "5eX5iyaDxV4",
+     "title": "Wecomatic IO-S 200 — tulip",
+     "duration": "PT0M55S",
+     "thumb": "video-5eX5iyaDxV4"
+    },
+    {
+     "id": "U9Igfkriexs",
+     "title": "Wecomatic IO-S 200 — press fitting V",
+     "duration": "PT0M42S",
+     "thumb": "video-U9Igfkriexs"
+    },
+    {
+     "id": "gvP5TjbV180",
+     "title": "Wecomatic IO-S 200 — reducing and bending",
+     "duration": "PT0M45S",
+     "thumb": "video-gvP5TjbV180"
+    },
+    {
+     "id": "jVguuN7TJIo",
+     "title": "Wecomatic IO-S 200 — expanding with integrated marking",
+     "duration": "PT0M46S",
+     "thumb": "video-jVguuN7TJIo"
+    },
+    {
+     "id": "tb4mq3zf6Os",
+     "title": "Wecomatic IO-S 200 — sphere",
+     "duration": "PT0M29S",
+     "thumb": "video-tb4mq3zf6Os"
+    },
+    {
+     "id": "fBtUZ4qq-DM",
+     "title": "Wecomatic IO-S 200 — short tube bending",
+     "duration": "PT0M27S",
+     "thumb": "video-fBtUZ4qq-DM"
+    },
+    {
+     "id": "ZKq4S8k0NZA",
+     "title": "Various forming on the Wecomatic",
+     "duration": "PT2M24S",
+     "thumb": "video-ZKq4S8k0NZA"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -4393,7 +4818,38 @@
     "wt-wecomatic-diagram",
     "wt-wecomatic-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "nIP6jMVVZq4",
+     "title": "Wecomatic IO-S 400 Speed High Power — Euro 6 / China 6 parts",
+     "duration": "PT4M2S",
+     "thumb": "video-nIP6jMVVZq4"
+    },
+    {
+     "id": "ZEcSolFbB9k",
+     "title": "Wecomatic IO-S 400 — V bead expanding",
+     "duration": "PT2M57S",
+     "thumb": "video-ZEcSolFbB9k"
+    },
+    {
+     "id": "MKr1nnRqdkM",
+     "title": "Wecomatic IO-S 400 — catalytic converter housing",
+     "duration": "PT0M29S",
+     "thumb": "video-MKr1nnRqdkM"
+    },
+    {
+     "id": "1xgFi2E2ctE",
+     "title": "Wecomatic IO-S 200 High Speed — sphere forming",
+     "duration": "PT0M33S",
+     "thumb": "video-1xgFi2E2ctE"
+    },
+    {
+     "id": "bLvY5hZcExA",
+     "title": "Wecomatic IO-S 1200 × 200 High Speed",
+     "duration": "PT0M40S",
+     "thumb": "video-bLvY5hZcExA"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -5026,7 +5482,26 @@
     "wt-tubecut-diagram",
     "wt-tubecut-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "8glqyUN6YuI",
+     "title": "Tubecut IO-S — oval cutting",
+     "duration": "PT1M0S",
+     "thumb": "video-8glqyUN6YuI"
+    },
+    {
+     "id": "IXH9bl5-dsg",
+     "title": "Tubecut IO-S with integrated tube stop",
+     "duration": "PT0M35S",
+     "thumb": "video-IXH9bl5-dsg"
+    },
+    {
+     "id": "4SCocdlxsmQ",
+     "title": "Tubecut with Rotobrush",
+     "duration": "PT1M12S",
+     "thumb": "video-4SCocdlxsmQ"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -5196,7 +5671,14 @@
     "wt-tubeshear-process",
     "wt-tubeshear-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "xoiQEzHDXdE",
+     "title": "Tubeshear",
+     "duration": "PT1M3S",
+     "thumb": "video-xoiQEzHDXdE"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -5356,7 +5838,14 @@
     "wt-rotobrush-head",
     "wt-rotobrush-part"
    ],
-   "videos": [],
+   "videos": [
+    {
+     "id": "nDiOKeqX9S0",
+     "title": "Rotobrush tube end deburring",
+     "duration": "PT0M42S",
+     "thumb": "video-nDiOKeqX9S0"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [

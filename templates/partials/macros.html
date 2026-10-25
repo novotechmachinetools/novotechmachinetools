@@ -118,7 +118,7 @@
     </table>
   </section>
   {% endfor %}
-  <p class="table-note">{{ f.specs.note }} {{ site.voltage_note }}</p>
+  <p class="table-note">{{ f.specs.note }}{% if not f.specs.no_voltage %} {{ site.voltage_note }}{% endif %}</p>
 </div>
 {%- endmacro %}
 

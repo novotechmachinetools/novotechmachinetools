@@ -175,3 +175,13 @@ Wecotech is shown under its own name (Swiss), so nothing is erased.  `pdfimages 
 `tools/wecotech_photos.py` maps 73 keys (`wt-*`) to those files and copies them to `tools/src-images/wecotech/`.  The 20
 hero renders are cut out by BiRefNet; the parts (grey studio background), tool diagrams and option crops are registered with
 `cutout: False`.  `tools/isitan_pipe_end_saws.py` registers them (section `wecotech`) when `tools/isitan_data.py` runs.
+
+## WIKUS band saw blades (wikus.de product pages)
+
+`tools/wikus/products.json` is the scrape of the 43 band-saw-blade product pages of wikus.de/en (text blocks, the
+dimension and tooth-pitch tables, image and data-sheet names), made in the built-in browser with `fetch` + `DOMParser` and
+downloaded as one JSON; the photos (`/home/claude/wikus/img`, 1040 × 585 application photos) and WIKUS data sheets
+(`/home/claude/wikus/pdf`) came down with it.  `tools/wikus_pages.py` parses the blocks into families for the 35
+metal-cutting blades (DIAGRIT, TCGRIT, TCTYRE and the wood blades are left out), copies the photos to
+`tools/src-images/wikus/` (section `wikus`, `cutout: False` — they are scene photos) and the data sheets to
+`src/files/wikus/<slug>.pdf`, which the family "Download PDF brochure" button links to.

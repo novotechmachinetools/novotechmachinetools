@@ -1,0 +1,176 @@
+{
+ "slug": "band-saw-blades",
+ "template": "category.html",
+ "family_set": "band-saw-blades",
+ "title": "Band Saw Blades for Metal — Bimetal & Carbide | NovoTech",
+ "artifact_title": "Band saw blades for metal cutting — bimetal, carbide-tipped and CBN",
+ "meta_description": "WIKUS metal-cutting band saw blades welded to length in Canada: M42 and X3000 bimetal, carbide-tipped and coated carbide, CBN for hardened steel — 1/2″ to 4″ wide, all tooth pitches.",
+ "h1": "Band saw blades for metal cutting — bimetal, carbide-tipped and CBN",
+ "intro": "A band saw blade is the one consumable that decides what a band saw machine can do: the right cutting material, tooth form and tooth pitch cut faster, straighter and longer than the wrong one on any saw. NovoTech supplies WIKUS band saw blades — made in Germany by the world's largest band saw blade maker — welded to the length of your machine in Canada: M42 bimetal blades from the economical PRIMAR through the MARATHON, PROFLEX, SKALAR and SELEKTA GS, the coated PREMIUM versions and the X3000® blades for difficult alloys; carbide-tipped blades from the entry-level TAURUS and MARADUR to the FUTURA family for solid steel, the NE blades for aluminum and copper and the specialists for hardened parts; coated carbide blades for production; and CUBOGRIT® CBN blades that cut hardened HSS and tool steel above 55 HRC. Widths from 1/2″ to 4″ in every tooth pitch, for Bekamak, NovoTech value-line and any other horizontal or vertical band saw. Blade selection and pitch advice from Mississauga, ON.",
+ "hero_points": [
+  "Bimetal M42 and X3000® blades, 1/2″ to 4″ wide — profiles, bundles and solid material to 145,000 psi",
+  "Carbide-tipped and coated carbide blades for production sawing of solid steel, stainless, titanium and aluminum",
+  "CBN-coated CUBOGRIT® blades for hardened steel above 55 HRC; every blade welded to your machine's length in Canada"
+ ],
+ "hero_image": "wk-marathon-m42",
+ "hero_image_secondary": [
+  "wk-futura",
+  "wk-proflex-m42"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Band saw blades for metal cutting — bimetal, carbide-tipped and CBN"
+  }
+ ],
+ "hero_brand_line": "WIKUS band saw blades are made in Germany by WIKUS-Sägenfabrik, Spangenberg — the world's largest producer of band saw blades. Sold, welded to length and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "bimetal-m42-group",
+   "title": "Bimetal band saw blades — M42",
+   "lead": "The workhorses of the saw shop: an M42 high-speed-steel cutting edge welded to a spring-steel back, from the economical PRIMAR to the SKALAR and SELEKTA GS production blades — profiles and solid material to 1,000 N/mm² (145,000 psi).",
+   "brand": "wikus",
+   "families": [
+    "wk-primar-m42",
+    "wk-marathon-m42",
+    "wk-marathon-sw-m42",
+    "wk-proflex-m42",
+    "wk-proflex-sw-m42",
+    "wk-skalar-m42",
+    "wk-selekta-gs-m42"
+   ]
+  },
+  {
+   "id": "bimetal-premium-group",
+   "title": "Bimetal band saw blades — M42 with hard coating",
+   "lead": "The PREMIUM versions: the same M42 blades with a hard coating on the teeth for the highest cutting rates and blade life on profiles and solid material.",
+   "brand": "wikus",
+   "families": [
+    "wk-proflex-premium-m42",
+    "wk-proflex-premium-sw-m42",
+    "wk-skalar-premium-m42"
+   ]
+  },
+  {
+   "id": "bimetal-x3000-group",
+   "title": "Bimetal band saw blades — X3000®",
+   "lead": "WIKUS's own X3000® cutting material: higher hardness and toughness than M42 for difficult-to-machine materials and special alloys.",
+   "brand": "wikus",
+   "families": [
+    "wk-marathon-x3000",
+    "wk-skalar-x3000",
+    "wk-selekta-gs-x3000"
+   ]
+  },
+  {
+   "id": "carbide-group",
+   "title": "Carbide-tipped band saw blades",
+   "lead": "Carbide teeth on an alloyed spring-steel back for production sawing of solid material: from the entry-level TAURUS and MARADUR to the FUTURA family, the NE blades for non-ferrous metals and the specialists for hardened and case-hardened parts.",
+   "brand": "wikus",
+   "families": [
+    "wk-taurus",
+    "wk-maradur",
+    "wk-duroset",
+    "wk-ecodur",
+    "wk-duroset-ne",
+    "wk-futura",
+    "wk-futura-va",
+    "wk-futura-718",
+    "wk-futura-ne",
+    "wk-futura-ne-rs",
+    "wk-futura-sn",
+    "wk-tct"
+   ]
+  },
+  {
+   "id": "carbide-premium-group",
+   "title": "Carbide-tipped band saw blades with hard coating",
+   "lead": "Coated carbide teeth for the highest performance when the saw is the bottleneck: the PREMIUM versions of TAURUS, DUROSET and FUTURA, the PROFIDUR for profiles and the ARION FG for large solid material.",
+   "brand": "wikus",
+   "families": [
+    "wk-taurus-premium",
+    "wk-duroset-premium",
+    "wk-futura-premium",
+    "wk-profidur",
+    "wk-futura-premium-va",
+    "wk-arion-fg",
+    "wk-futura-premium-sn"
+   ]
+  },
+  {
+   "id": "cbn-group",
+   "title": "CBN-coated band saw blades for hardened steel",
+   "lead": "CUBOGRIT® blades with a cubic boron nitride grit edge: cutting hardened HSS, tool steels above 55 HRC, stellite and chilled castings that no toothed blade can cut.",
+   "brand": "wikus",
+   "families": [
+    "wk-cubogrit-k",
+    "wk-cubogrit-s",
+    "wk-cubogrit-u"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Bimetal or carbide — which band saw blade do I need?",
+   "a": "A bimetal blade (M42 high-speed-steel teeth on a spring-steel back) is the right blade for a fabrication shop: structural profiles, tube, bundles and solid bar up to about 145,000 psi, mixed materials, on any band saw. A carbide-tipped blade cuts solid material two to three times faster and lasts longer, but it wants a rigid saw with enough motor power and band tension — the Bekamak production saws and most saws with a carbide package. The TAURUS and MARADUR are made to run on saws without a carbide package, so they are the first step up; stainless, titanium and nickel alloys call for the FUTURA VA and 718; aluminum and copper for the NE blades; hardened steel for the FUTURA SN or the CBN-coated CUBOGRIT."
+  },
+  {
+   "q": "How do I choose the tooth pitch?",
+   "a": "By the contact length — the width of material the blade is in at any moment: 4 to 12 teeth should be in the cut. Thin-wall tube and small profiles need a fine pitch (10–14 TPI), bar of 2 to 4 inches a 3–4 or 2–3 TPI blade, and large solid material 1.4–2 TPI and coarser. A variable pitch (for example 3–4 TPI) runs quieter and resists vibration on profiles and bundles; a constant pitch is used on uniform solid material. Each blade's table on this page lists the pitches available in every width and the contact length each pitch is meant for."
+  },
+  {
+   "q": "What do the product levels mean?",
+   "a": "WIKUS grades its blades: level 1 is the economical entry blade (PRIMAR, TAURUS, MARADUR), level 2 the universal production blade (MARATHON, PROFLEX, DUROSET, ECODUR), level 3 the high-performance blade for the highest cutting rates and blade life (SKALAR, SELEKTA GS, FUTURA) and level S the specialists for one job — hardened parts (FUTURA SN), large solid material (ARION FG), thin-walled tube (TCT)."
+  },
+  {
+   "q": "Which blade width and length fits my saw?",
+   "a": "The width and thickness are set by the saw's wheels and guides — 1″ × 0.035″ on most 10″ to 13″ shop saws, 1-1/4″ × 0.042″ and 1-1/2″ × 0.050″ on the mid-size automatic saws, 2″ to 3-1/8″ on the double-column production saws. The length is the loop length of your machine; we weld the blade to it from coil. Send the saw make and model and we look it up."
+  },
+  {
+   "q": "Can carbide blades run on my saw?",
+   "a": "On the Bekamak BMSO and BMSY automatic saws, the double-column saws and any saw with a carbide package (high band tension, rigid guides, enough motor power) — yes, any of the carbide blades on this page. On a lighter saw, use the TAURUS or MARADUR, which are set and ground to run without the carbide package, or stay with a level 3 bimetal blade such as the SKALAR M42."
+  },
+  {
+   "q": "What is the X3000® cutting material?",
+   "a": "A WIKUS high-speed steel with higher hardness and toughness than M42, used on the MARATHON, SKALAR and SELEKTA GS X3000 blades for difficult-to-machine materials and special alloys — stainless, nickel and titanium alloys, high-strength steels — where an M42 edge dulls early but a carbide blade is not justified."
+  },
+  {
+   "q": "Do you stock blades and weld them in Canada?",
+   "a": "Yes — the common widths are stocked as coil in Mississauga and welded and annealed to your length; the complete WIKUS program is available to order. Tell us the saw, the materials you cut and the sizes, and we propose the blade and the pitch — and we are happy to run a test blade on a difficult job."
+  }
+ ],
+ "faq_title": "Questions we get asked about band saw blades",
+ "catalogue_pdf": null,
+ "origin_feature": {
+  "title": "Made in Germany by WIKUS",
+  "text": "WIKUS has made band saw blades in Spangenberg, Germany since 1958 — bimetal, carbide-tipped and coated blades for metal cutting, developed in its own Technical Competence Center and cut and welded to length by its partners worldwide."
+ },
+ "section_label": "Band saw blades",
+ "related_pages": [
+  {
+   "href": "band-saw.html",
+   "label": "Metal cutting band saws"
+  },
+  {
+   "href": "double-column-band-saws.html",
+   "label": "Bekamak double-column band saws"
+  },
+  {
+   "href": "automatic-band-saws.html",
+   "label": "Bekamak automatic band saws"
+  },
+  {
+   "href": "circular-cold-saws.html",
+   "label": "Circular cold saws"
+  }
+ ],
+ "related_title": "Band saws from NovoTech",
+ "nav_label": "Band saw blades"
+}
