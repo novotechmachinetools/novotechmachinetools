@@ -132,3 +132,12 @@ photo (the machines are sold under NovoTech's warranty and support), with the ma
   `sahinler`) from the same `PHOTOS` list, so a photo is described once.
 - Verified visually: `BT-114-S.png` is the BT 114-S polisher (the Drive `p69-…` photos are of the SDK
   flanging machine and are used there); `A26A9019.png` is the TC-42 coiling a tube.
+
+## NovoTech premium-line production presses (Hidroliksan photos)
+
+The production presses are sold as NovoTech's premium line, so the maker's "HiDROLiKSAN" lettering (and "HALİM USTA") is
+erased from every photo and the maker is not named on the site.  `tools/hidroliksan_photos.py` holds the hand-boxed logo
+positions per photo (located on grid views — tesseract and template matching both proved unreliable on these) and
+exports LaMa-filled copies to `tools/src-images/hidroliksan/`; sources are the supplier's 2026 catalogue photos staged
+from the laptop (`/home/claude/hidroliksan/catalogue/`).  Model designations painted on the machines (e.g. "SMC 2500")
+are kept.

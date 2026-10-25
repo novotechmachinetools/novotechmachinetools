@@ -1,0 +1,21 @@
+{
+ "title": "Production hydraulic presses",
+ "subtitle": "H-frame, column and C-frame presses to 3,307 US tons · deep drawing · SMC hot plate · straightening",
+ "cover_line": "NovoTech premium line · made in Turkey · sold & serviced in Canada by NovoTech",
+ "range_label": "Production hydraulic presses",
+ "about_for": "production hydraulic presses",
+ "about_kicker": "NovoTech premium line · made in Turkey",
+ "about_title": "Production presses built to your die",
+ "about_text": ["The presses in this catalogue are NovoTech's premium line of production hydraulic presses: built in Turkey by a press maker with five decades of hydraulic press manufacturing, on welded and machined monoblock frames with chrome-plated hardened cylinders, European hydraulics and Siemens S7 controls, and CE-certified.",
+                "Every series is made in standard sizes and to the customer's requirement — table size, stroke, daylight, tonnage, die cushion, heated platens, quick die change and die loading — from a 33 US ton C-frame to 3,307 US ton H-frame presses. Each press is delivered with a CSA-approved panel, a 1-year warranty and spare parts and technical support from NovoTech in Mississauga, Ontario."],
+ "country": "Turkey",
+ "single_phase": false,
+ "year": "2026",
+ "family_sets": ["sahinler"],
+ "families": ["nt-press-hdd", "nt-press-hsa", "nt-press-hcfp", "nt-press-cfss", "nt-press-cfs", "nt-press-cfdd", "nt-press-hhrp", "nt-press-hsps", "nt-press-hdt"],
+ "groups": [{"title": "H-frame and column presses", "families": ["nt-press-hdd", "nt-press-hsa", "nt-press-hcfp"]},
+            {"title": "C-frame presses", "families": ["nt-press-cfss", "nt-press-cfs", "nt-press-cfdd"]},
+            {"title": "Hot plate, straightening and Eco presses", "families": ["nt-press-hhrp", "nt-press-hsps", "nt-press-hdt"]}],
+ "cover_photos": ["hk-cfss", "hk-hdd", "hk-hsps"],
+ "out": "src/files/NovoTech-Production-Hydraulic-Presses-2026.pdf"
+}

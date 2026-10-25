@@ -18,6 +18,15 @@
   "sahinler-at",
   "sahinler-ap",
   "sahinler-dk-s",
+  "nt-press-hdd",
+  "nt-press-hsa",
+  "nt-press-hcfp",
+  "nt-press-cfss",
+  "nt-press-cfs",
+  "nt-press-cfdd",
+  "nt-press-hhrp",
+  "nt-press-hsps",
+  "nt-press-hdt",
   "sahinler-hnm-fixed",
   "sahinler-hnm-variable",
   "sahinler-bt-114-s"
@@ -5458,6 +5467,2341 @@
    },
    "headline": "220 – 441 US tons · cylinder moves on 3 axes over a 100″ bed · 11.8″ stroke",
    "group": "sahinler-press"
+  },
+  "nt-press-hdd": {
+   "id": "nt-press-hdd",
+   "brand": "novotech-premium",
+   "name": "HDD H-frame double action deep drawing presses, 110 – 661 US tons",
+   "short": "HDD deep drawing",
+   "models_label": "HDD 100 – HDD 600 · to HDD 3000 built to order",
+   "summary": "Double action deep drawing presses on a welded, machined monoblock H-frame: a main cylinder and a die cushion in the lower table draw cups, pans, housings and tank ends in one stroke, and the ejector in the table lifts the finished part out. Standard sizes from 110 to 661 US tons with 39.4″ stroke and daylight; larger presses to 3,307 US tons and custom table sizes are built to order, with the die supplied by the press maker if required. Siemens S7 PLC with HMI touchscreen, remote access, light barriers and two-hand control are standard.",
+   "features": [
+    "Double action: main cylinder plus die cushion (44 – 276 US tons) with 11.8″ cushion stroke",
+    "Welded and machined monoblock steel frame; precision-machined frame and T-slotted working table",
+    "Chrome-plated and hardened cylinder; automatic lubrication for the guides",
+    "Hydraulic block to EN standards; adjustable speed and pressure; load check valve",
+    "Siemens S7 PLC with HMI touchscreen and remote access via internet",
+    "Front and rear light barriers, two-hand control, reset and emergency-stop buttons; CE certificate",
+    "Air cooling or heat exchanger for the hydraulic oil"
+   ],
+   "optional": [
+    "Quick die change system",
+    "Die, built and supplied with the press",
+    "Ejector cylinder in the lower table",
+    "Die loading system or other die installation solutions",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-hdd",
+    "hk-hdd-2",
+    "hk-hdd-3"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HDD",
+      "sub": "H-frame double action deep drawing presses",
+      "models": [
+       "HDD 100",
+       "HDD 200",
+       "HDD 300",
+       "HDD 400",
+       "HDD 500",
+       "HDD 600"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "220 US tons (200 t)",
+         "331 US tons (300 t)",
+         "441 US tons (400 t)",
+         "551 US tons (500 t)",
+         "661 US tons (600 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "47.2 × 39.4″ (1,200 × 1,000 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "66.9 × 59.1″ (1,700 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Die cushion force",
+        "sub": "",
+        "cells": [
+         "44 US tons (40 t)",
+         "on request",
+         "143 US tons (130 t)",
+         "165 US tons (150 t)",
+         "220 US tons (200 t)",
+         "276 US tons (250 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Die cushion stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "28 cc/rev",
+         "45 cc/rev",
+         "71 cc/rev",
+         "100 cc/rev",
+         "100 cc/rev",
+         "140 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)",
+         "25 HP (18.5 kW)",
+         "40 HP (30 kW)",
+         "50 HP (37 kW)",
+         "50 HP (37 kW)",
+         "74 HP (55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "4.33 in/s (110 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.12 – 0.63 in/s (3 – 16 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.2 – 0.59 in/s (5 – 15 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "9.84 in/s (250 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "102 × 130 × 181″ (2,600 × 3,300 × 4,600 mm)",
+         "106 × 130 × 197″ (2,700 × 3,300 × 5,000 mm)",
+         "110 × 138 × 213″ (2,800 × 3,500 × 5,400 mm)",
+         "110 × 142 × 244″ (2,800 × 3,600 × 6,200 mm)",
+         "122 × 146 × 256″ (3,100 × 3,700 × 6,500 mm)",
+         "130 × 165 × 264″ (3,300 × 4,200 × 6,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "19,842 lb (9,000 kg)",
+         "24,251 lb (11,000 kg)",
+         "35,274 lb (16,000 kg)",
+         "50,706 lb (23,000 kg)",
+         "61,729 lb (28,000 kg)",
+         "88,185 lb (40,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HDD 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "15 HP (11 kW)",
+       "19,842 lb (9,000 kg)"
+      ]
+     },
+     {
+      "name": "HDD 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "25 HP (18.5 kW)",
+       "24,251 lb (11,000 kg)"
+      ]
+     },
+     {
+      "name": "HDD 300",
+      "glance": [
+       "331 US tons (300 t)",
+       "47.2 × 39.4″ (1,200 × 1,000 mm)",
+       "39.4″ (1,000 mm)",
+       "40 HP (30 kW)",
+       "35,274 lb (16,000 kg)"
+      ]
+     },
+     {
+      "name": "HDD 400",
+      "glance": [
+       "441 US tons (400 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "50,706 lb (23,000 kg)"
+      ]
+     },
+     {
+      "name": "HDD 500",
+      "glance": [
+       "551 US tons (500 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "61,729 lb (28,000 kg)"
+      ]
+     },
+     {
+      "name": "HDD 600",
+      "glance": [
+       "661 US tons (600 t)",
+       "66.9 × 59.1″ (1,700 × 1,500 mm)",
+       "39.4″ (1,000 mm)",
+       "74 HP (55 kW)",
+       "88,185 lb (40,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "110 – 661 US tons standard (to 3,307 to order) · 39.4″ stroke · die cushion to 331 US tons",
+   "group": "novotech-production"
+  },
+  "nt-press-hsa": {
+   "id": "nt-press-hsa",
+   "brand": "novotech-premium",
+   "name": "HSA H-frame single action presses, 110 – 661 US tons",
+   "short": "HSA single action",
+   "models_label": "HSA 100 – HSA 600 · to HSA 3000 built to order",
+   "summary": "The general-purpose production press: a single-action H-frame for bending, forming, hole punching, cutting and straightening with whatever die is bolted to its T-slotted tables. Standard sizes from 110 to 661 US tons with 39.4″ stroke and daylight, built to 3,307 US tons and to the customer's table size on request. Chrome-plated hardened cylinder, automatic guide lubrication, adjustable speed and pressure, safety PLC with light barriers and a Siemens HMI with remote access.",
+   "features": [
+    "Single action press for bending, forming, punching, cutting and straightening dies",
+    "Safety PLC",
+    "Welded and machined monoblock steel frame; precision-machined frame and T-slotted working table",
+    "Chrome-plated and hardened cylinder; automatic lubrication for the guides",
+    "Hydraulic block to EN standards; adjustable speed and pressure; load check valve",
+    "Siemens S7 PLC with HMI touchscreen and remote access via internet",
+    "Front and rear light barriers, two-hand control, reset and emergency-stop buttons; CE certificate",
+    "Air cooling or heat exchanger for the hydraulic oil"
+   ],
+   "optional": [
+    "Quick die change system",
+    "Die, built and supplied with the press",
+    "Ejector cylinder in the lower table",
+    "Die loading devices or other die installation solutions",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-hsa",
+    "hk-hsa-3",
+    "hk-hsa-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HSA",
+      "sub": "H-frame single action presses",
+      "models": [
+       "HSA 100",
+       "HSA 200",
+       "HSA 300",
+       "HSA 400",
+       "HSA 500",
+       "HSA 600"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "220 US tons (200 t)",
+         "331 US tons (300 t)",
+         "441 US tons (400 t)",
+         "551 US tons (500 t)",
+         "661 US tons (600 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "47.2 × 39.4″ (1,200 × 1,000 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "66.9 × 59.1″ (1,700 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "28 cc/rev",
+         "45 cc/rev",
+         "71 cc/rev",
+         "100 cc/rev",
+         "100 cc/rev",
+         "140 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)",
+         "25 HP (18.5 kW)",
+         "40 HP (30 kW)",
+         "50 HP (37 kW)",
+         "50 HP (37 kW)",
+         "74 HP (55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "4.33 in/s (110 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.12 – 0.63 in/s (3 – 16 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.2 – 0.59 in/s (5 – 15 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "9.84 in/s (250 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "102 × 130 × 181″ (2,600 × 3,300 × 4,600 mm)",
+         "106 × 130 × 197″ (2,700 × 3,300 × 5,000 mm)",
+         "110 × 138 × 213″ (2,800 × 3,500 × 5,400 mm)",
+         "110 × 142 × 244″ (2,800 × 3,600 × 6,200 mm)",
+         "122 × 146 × 256″ (3,100 × 3,700 × 6,500 mm)",
+         "130 × 165 × 264″ (3,300 × 4,200 × 6,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "16,535 lb (7,500 kg)",
+         "19,842 lb (9,000 kg)",
+         "27,558 lb (12,500 kg)",
+         "42,990 lb (19,500 kg)",
+         "52,911 lb (24,000 kg)",
+         "66,139 lb (30,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HSA 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "15 HP (11 kW)",
+       "16,535 lb (7,500 kg)"
+      ]
+     },
+     {
+      "name": "HSA 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "25 HP (18.5 kW)",
+       "19,842 lb (9,000 kg)"
+      ]
+     },
+     {
+      "name": "HSA 300",
+      "glance": [
+       "331 US tons (300 t)",
+       "47.2 × 39.4″ (1,200 × 1,000 mm)",
+       "39.4″ (1,000 mm)",
+       "40 HP (30 kW)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "HSA 400",
+      "glance": [
+       "441 US tons (400 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "42,990 lb (19,500 kg)"
+      ]
+     },
+     {
+      "name": "HSA 500",
+      "glance": [
+       "551 US tons (500 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "HSA 600",
+      "glance": [
+       "661 US tons (600 t)",
+       "66.9 × 59.1″ (1,700 × 1,500 mm)",
+       "39.4″ (1,000 mm)",
+       "74 HP (55 kW)",
+       "66,139 lb (30,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "110 – 661 US tons standard (to 3,307 to order) · 39.4″ stroke and daylight · T-slotted tables",
+   "group": "novotech-production"
+  },
+  "nt-press-hcfp": {
+   "id": "nt-press-hcfp",
+   "brand": "novotech-premium",
+   "name": "HCFP column frame single / double action presses, 110 – 1,102 US tons",
+   "short": "HCFP column frame",
+   "models_label": "HCFP 100 – HCFP 600 · HCFP 1000 built to order",
+   "summary": "Four-column presses with the same hydraulics, Siemens control and safety equipment as the H-frame range, for shops that need access to the die from all four sides or a die-cushion option on a column frame. Standard sizes from 110 to 661 US tons with 39.4″ stroke; the 1,102 US ton HCFP 1000 and custom table sizes are built to order, and die support arms or a die loading system are available for heavy tooling.",
+   "features": [
+    "Column (four-post) frame, open on all sides; single or double action",
+    "Central lubrication for the guides; safety PLC",
+    "Welded and machined monoblock steel frame; precision-machined frame and T-slotted working table",
+    "Hydraulic block to EN standards; adjustable speed and pressure; load check valve",
+    "Siemens S7 PLC with HMI touchscreen and remote access via internet",
+    "Front and rear light barriers, two-hand control, reset and emergency-stop buttons; CE certificate",
+    "Air cooling or heat exchanger for the hydraulic oil"
+   ],
+   "optional": [
+    "Quick die change system",
+    "Die, built and supplied with the press",
+    "Ejector cylinder in the lower table",
+    "Die cushion on all models",
+    "Die support arms; die loading system",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-hcfp",
+    "hk-hcfp-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HCFP",
+      "sub": "column frame single / double action presses",
+      "models": [
+       "HCFP 100",
+       "HCFP 200",
+       "HCFP 300",
+       "HCFP 400",
+       "HCFP 500",
+       "HCFP 600"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "220 US tons (200 t)",
+         "331 US tons (300 t)",
+         "441 US tons (400 t)",
+         "551 US tons (500 t)",
+         "661 US tons (600 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "47.2 × 39.4″ (1,200 × 1,000 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "66.9 × 59.1″ (1,700 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "28 cc/rev",
+         "45 cc/rev",
+         "71 cc/rev",
+         "100 cc/rev",
+         "100 cc/rev",
+         "140 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)",
+         "25 HP (18.5 kW)",
+         "40 HP (30 kW)",
+         "50 HP (37 kW)",
+         "50 HP (37 kW)",
+         "74 HP (55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "4.33 in/s (110 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.12 – 0.63 in/s (3 – 16 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.2 – 0.59 in/s (5 – 15 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "9.84 in/s (250 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "102 × 138 × 181″ (2,600 × 3,500 × 4,600 mm)",
+         "106 × 130 × 197″ (2,700 × 3,300 × 5,000 mm)",
+         "110 × 138 × 213″ (2,800 × 3,500 × 5,400 mm)",
+         "110 × 142 × 244″ (2,800 × 3,600 × 6,200 mm)",
+         "122 × 146 × 256″ (3,100 × 3,700 × 6,500 mm)",
+         "130 × 165 × 264″ (3,300 × 4,200 × 6,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "17,637 lb (8,000 kg)",
+         "22,046 lb (10,000 kg)",
+         "29,762 lb (13,500 kg)",
+         "46,297 lb (21,000 kg)",
+         "57,320 lb (26,000 kg)",
+         "70,548 lb (32,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HCFP 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "15 HP (11 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     },
+     {
+      "name": "HCFP 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "25 HP (18.5 kW)",
+       "22,046 lb (10,000 kg)"
+      ]
+     },
+     {
+      "name": "HCFP 300",
+      "glance": [
+       "331 US tons (300 t)",
+       "47.2 × 39.4″ (1,200 × 1,000 mm)",
+       "39.4″ (1,000 mm)",
+       "40 HP (30 kW)",
+       "29,762 lb (13,500 kg)"
+      ]
+     },
+     {
+      "name": "HCFP 400",
+      "glance": [
+       "441 US tons (400 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "46,297 lb (21,000 kg)"
+      ]
+     },
+     {
+      "name": "HCFP 500",
+      "glance": [
+       "551 US tons (500 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "57,320 lb (26,000 kg)"
+      ]
+     },
+     {
+      "name": "HCFP 600",
+      "glance": [
+       "661 US tons (600 t)",
+       "66.9 × 59.1″ (1,700 × 1,500 mm)",
+       "39.4″ (1,000 mm)",
+       "74 HP (55 kW)",
+       "70,548 lb (32,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "110 – 661 US tons standard (1,102 to order) · four-column frame · die cushion optional",
+   "group": "novotech-production"
+  },
+  "nt-press-cfss": {
+   "id": "nt-press-cfss",
+   "brand": "novotech-premium",
+   "name": "CFSS enclosed C-frame single action presses, 33 – 276 US tons",
+   "short": "CFSS enclosed C-frame",
+   "models_label": "CFSS 30 · 60 · 100 · 150 · 200 · 250",
+   "summary": "C-frame presses with the work area enclosed by guards and a light barrier, for bending, punching, cutting and straightening with smaller dies: the frame is open on three sides so dies are mounted and removed easily, and the press takes up less floor space than an H-frame. From 33 to 276 US tons with 15.7″ stroke, 11″ – 14.6″ throat, Siemens S7 PLC with HMI touchscreen and remote access; an ejector cylinder and speed adjustment are optional.",
+   "features": [
+    "Enclosed work area with light barrier and safety PLC; frame open on three sides for quick die changes",
+    "Throat depth 11″ to 14.6″; 15.7″ stroke",
+    "Welded and machined monoblock steel frame; precision-machined frame and T-slotted working table",
+    "Hydraulic block to EN standards; adjustable speed and pressure; load check valve",
+    "Siemens S7 PLC with HMI touchscreen and remote access via internet",
+    "Air cooling or heat exchanger for the hydraulic oil"
+   ],
+   "optional": [
+    "Ejector cylinder",
+    "Speed adjustment",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-cfss",
+    "hk-cfss-2",
+    "hk-cfss-3",
+    "hk-cfss-4"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CFSS",
+      "sub": "enclosed C-frame single action presses",
+      "models": [
+       "CFSS 30",
+       "CFSS 60",
+       "CFSS 100",
+       "CFSS 150",
+       "CFSS 200",
+       "CFSS 250"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "66 US tons (60 t)",
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "220 US tons (200 t)",
+         "276 US tons (250 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "19.7 × 19.7″ (500 × 500 mm)",
+         "23.6 × 19.7″ (600 × 500 mm)",
+         "31.5 × 19.7″ (800 × 500 mm)",
+         "39.4 × 23.6″ (1,000 × 600 mm)",
+         "39.4 × 23.6″ (1,000 × 600 mm)",
+         "43.3 × 23.6″ (1,100 × 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "11″ (280 mm)",
+         "12.2″ (310 mm)",
+         "12.2″ (310 mm)",
+         "14.2″ (360 mm)",
+         "14.6″ (370 mm)",
+         "14.6″ (370 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "16 cc/rev",
+         "19 cc/rev",
+         "19 cc/rev",
+         "45 cc/rev",
+         "45 cc/rev",
+         "45 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "25 HP (18.5 kW)",
+         "25 HP (18.5 kW)",
+         "25 HP (18.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "5.91 in/s (150 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.2 – 0.59 in/s (5 – 15 mm/s)",
+         "0.2 – 0.47 in/s (5 – 12 mm/s)",
+         "0.2 – 0.39 in/s (5 – 10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "6.3 in/s (160 mm/s)",
+         "7.09 in/s (180 mm/s)",
+         "7.09 in/s (180 mm/s)",
+         "7.09 in/s (180 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "71 × 55 × 102″ (1,800 × 1,400 × 2,600 mm)",
+         "75 × 55 × 102″ (1,900 × 1,400 × 2,600 mm)",
+         "75 × 67 × 115″ (1,900 × 1,700 × 2,900 mm)",
+         "94 × 75 × 138″ (2,400 × 1,900 × 3,500 mm)",
+         "94 × 75 × 146″ (2,400 × 1,900 × 3,700 mm)",
+         "94 × 79 × 154″ (2,400 × 2,000 × 3,900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,614 lb (3,000 kg)",
+         "7,716 lb (3,500 kg)",
+         "12,125 lb (5,500 kg)",
+         "26,455 lb (12,000 kg)",
+         "31,967 lb (14,500 kg)",
+         "34,172 lb (15,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CFSS 30",
+      "glance": [
+       "33 US tons (30 t)",
+       "19.7 × 19.7″ (500 × 500 mm)",
+       "15.7″ (400 mm)",
+       "10 HP (7.5 kW)",
+       "6,614 lb (3,000 kg)"
+      ]
+     },
+     {
+      "name": "CFSS 60",
+      "glance": [
+       "66 US tons (60 t)",
+       "23.6 × 19.7″ (600 × 500 mm)",
+       "15.7″ (400 mm)",
+       "15 HP (11 kW)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "CFSS 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "31.5 × 19.7″ (800 × 500 mm)",
+       "15.7″ (400 mm)",
+       "15 HP (11 kW)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "CFSS 150",
+      "glance": [
+       "165 US tons (150 t)",
+       "39.4 × 23.6″ (1,000 × 600 mm)",
+       "15.7″ (400 mm)",
+       "25 HP (18.5 kW)",
+       "26,455 lb (12,000 kg)"
+      ]
+     },
+     {
+      "name": "CFSS 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 23.6″ (1,000 × 600 mm)",
+       "15.7″ (400 mm)",
+       "25 HP (18.5 kW)",
+       "31,967 lb (14,500 kg)"
+      ]
+     },
+     {
+      "name": "CFSS 250",
+      "glance": [
+       "276 US tons (250 t)",
+       "43.3 × 23.6″ (1,100 × 600 mm)",
+       "15.7″ (400 mm)",
+       "25 HP (18.5 kW)",
+       "34,172 lb (15,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "33 – 276 US tons · 15.7″ stroke · throat 11″ – 14.6″ · enclosed work area",
+   "group": "novotech-production"
+  },
+  "nt-press-cfs": {
+   "id": "nt-press-cfs",
+   "brand": "novotech-premium",
+   "name": "CFS C-frame single action presses, 33 – 276 US tons",
+   "short": "CFS C-frame",
+   "models_label": "CFS 30 · 60 · 100 · 150 · 200 · 250",
+   "summary": "The simpler C-frame press: the same welded monoblock frame, chrome-plated cylinder and T-slotted table as the CFSS with a pressure transmitter, light barrier, two-hand control and emergency stop, and the HMI touchscreen as an option. A manual production press for bending, punching and straightening with small dies, from 33 to 276 US tons.",
+   "features": [
+    "C-frame open on three sides; T-slotted working table",
+    "Pressure transmitter; light barrier; two-hand button control; emergency stop; CE certificate",
+    "Welded and machined monoblock steel frame; chrome-plated and hardened cylinder; hydraulic block to EN standards"
+   ],
+   "optional": [
+    "HMI touchscreen control panel",
+    "Air cooling for the hydraulic oil",
+    "Quick die change system; die; ejector",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-cfs"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CFS",
+      "sub": "C-frame single action presses",
+      "models": [
+       "CFS 30",
+       "CFS 60",
+       "CFS 100",
+       "CFS 150",
+       "CFS 200",
+       "CFS 250"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "66 US tons (60 t)",
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "220 US tons (200 t)",
+         "276 US tons (250 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "19.7 × 19.7″ (500 × 500 mm)",
+         "23.6 × 19.7″ (600 × 500 mm)",
+         "31.5 × 19.7″ (800 × 500 mm)",
+         "31.5 × 23.6″ (800 × 600 mm)",
+         "35.4 × 23.6″ (900 × 600 mm)",
+         "39.4 × 23.6″ (1,000 × 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "9 cc/rev",
+         "12+6 cc/rev",
+         "20+9 cc/rev",
+         "33+9 cc/rev",
+         "32+16 cc/rev",
+         "44+16 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW)",
+         "4 HP (3 kW)",
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.35 in/s (9 mm/s)",
+         "0.35 in/s (9 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.16 in/s (4 mm/s)",
+         "0.16 in/s (4 mm/s)",
+         "0.12 in/s (3 mm/s)",
+         "0.12 in/s (3 mm/s)",
+         "0.12 in/s (3 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "0.67 in/s (17 mm/s)",
+         "0.83 in/s (21 mm/s)",
+         "0.71 in/s (18 mm/s)",
+         "0.83 in/s (21 mm/s)",
+         "0.71 in/s (18 mm/s)",
+         "0.71 in/s (18 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "59 × 55 × 91″ (1,500 × 1,400 × 2,300 mm)",
+         "59 × 55 × 91″ (1,500 × 1,400 × 2,300 mm)",
+         "67 × 59 × 106″ (1,700 × 1,500 × 2,700 mm)",
+         "67 × 63 × 114″ (1,700 × 1,600 × 2,900 mm)",
+         "75 × 67 × 114″ (1,900 × 1,700 × 2,900 mm)",
+         "79 × 63 × 114″ (2,000 × 1,600 × 2,900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "5,512 lb (2,500 kg)",
+         "7,716 lb (3,500 kg)",
+         "11,023 lb (5,000 kg)",
+         "22,046 lb (10,000 kg)",
+         "28,660 lb (13,000 kg)",
+         "30,865 lb (14,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CFS 30",
+      "glance": [
+       "33 US tons (30 t)",
+       "19.7 × 19.7″ (500 × 500 mm)",
+       "15.7″ (400 mm)",
+       "5.4 HP (4 kW)",
+       "5,512 lb (2,500 kg)"
+      ]
+     },
+     {
+      "name": "CFS 60",
+      "glance": [
+       "66 US tons (60 t)",
+       "23.6 × 19.7″ (600 × 500 mm)",
+       "15.7″ (400 mm)",
+       "4 HP (3 kW)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "CFS 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "31.5 × 19.7″ (800 × 500 mm)",
+       "15.7″ (400 mm)",
+       "5.4 HP (4 kW)",
+       "11,023 lb (5,000 kg)"
+      ]
+     },
+     {
+      "name": "CFS 150",
+      "glance": [
+       "165 US tons (150 t)",
+       "31.5 × 23.6″ (800 × 600 mm)",
+       "15.7″ (400 mm)",
+       "7.4 HP (5.5 kW)",
+       "22,046 lb (10,000 kg)"
+      ]
+     },
+     {
+      "name": "CFS 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "35.4 × 23.6″ (900 × 600 mm)",
+       "15.7″ (400 mm)",
+       "15 HP (11 kW)",
+       "28,660 lb (13,000 kg)"
+      ]
+     },
+     {
+      "name": "CFS 250",
+      "glance": [
+       "276 US tons (250 t)",
+       "39.4 × 23.6″ (1,000 × 600 mm)",
+       "15.7″ (400 mm)",
+       "15 HP (11 kW)",
+       "30,865 lb (14,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "33 – 276 US tons · 15.7″ stroke · 19.7″ daylight · two-hand control",
+   "group": "novotech-production"
+  },
+  "nt-press-cfdd": {
+   "id": "nt-press-cfdd",
+   "brand": "novotech-premium",
+   "name": "CFDD C-frame deep drawing presses, 33 – 276 US tons",
+   "short": "CFDD deep drawing",
+   "models_label": "CFDD 30 · 60 · 100 · 150 · 200 · 250",
+   "summary": "Deep drawing on a C-frame: a die cushion of 11 to 110 US tons with 5.9″ stroke in the lower table and an ejector that lifts the drawn part out, for small dies where a C-frame saves floor space. Table sizes are limited by the C-shaped frame — beyond them the HDD H-frame press takes over. 33 to 276 US tons, 15.7″ stroke, 23.6″ daylight, Siemens S7 PLC with HMI touchscreen and remote access.",
+   "features": [
+    "Die cushion 11 – 110 US tons with 5.9″ stroke; ejector in the lower table",
+    "C-frame open on three sides; throat 11″ – 14.6″",
+    "Pressure transmitter; light barrier; safety PLC",
+    "Welded and machined monoblock steel frame; precision-machined frame and T-slotted working table",
+    "Hydraulic block to EN standards; adjustable speed and pressure; load check valve",
+    "Siemens S7 PLC with HMI touchscreen and remote access via internet",
+    "Air cooling or heat exchanger for the hydraulic oil"
+   ],
+   "optional": [
+    "Quick die change system",
+    "Die, built and supplied with the press",
+    "Ejector cylinder in the lower table",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-cfdd",
+    "hk-cfdd-100"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CFDD",
+      "sub": "C-frame deep drawing presses",
+      "models": [
+       "CFDD 30",
+       "CFDD 60",
+       "CFDD 100",
+       "CFDD 150",
+       "CFDD 200",
+       "CFDD 250"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "66 US tons (60 t)",
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "220 US tons (200 t)",
+         "276 US tons (250 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "19.7 × 19.7″ (500 × 500 mm)",
+         "23.6 × 19.7″ (600 × 500 mm)",
+         "31.5 × 19.7″ (800 × 500 mm)",
+         "39.4 × 23.6″ (1,000 × 600 mm)",
+         "39.4 × 23.6″ (1,000 × 600 mm)",
+         "43.3 × 23.6″ (1,100 × 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "11″ (280 mm)",
+         "12.2″ (310 mm)",
+         "12.2″ (310 mm)",
+         "14.2″ (360 mm)",
+         "14.6″ (370 mm)",
+         "14.6″ (370 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Die cushion force",
+        "sub": "",
+        "cells": [
+         "11 US tons (10 t)",
+         "22 US tons (20 t)",
+         "44 US tons (40 t)",
+         "55 US tons (50 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Die cushion stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "16 cc/rev",
+         "19 cc/rev",
+         "19 cc/rev",
+         "45 cc/rev",
+         "45 cc/rev",
+         "45 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "25 HP (18.5 kW)",
+         "25 HP (18.5 kW)",
+         "25 HP (18.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "5.91 in/s (150 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.2 – 0.59 in/s (5 – 15 mm/s)",
+         "0.2 – 0.47 in/s (5 – 12 mm/s)",
+         "0.2 – 0.39 in/s (5 – 10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "6.3 in/s (160 mm/s)",
+         "7.09 in/s (180 mm/s)",
+         "7.09 in/s (180 mm/s)",
+         "7.09 in/s (180 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "71 × 55 × 102″ (1,800 × 1,400 × 2,600 mm)",
+         "75 × 55 × 102″ (1,900 × 1,400 × 2,600 mm)",
+         "75 × 67 × 115″ (1,900 × 1,700 × 2,900 mm)",
+         "94 × 75 × 138″ (2,400 × 1,900 × 3,500 mm)",
+         "94 × 75 × 146″ (2,400 × 1,900 × 3,700 mm)",
+         "94 × 79 × 154″ (2,400 × 2,000 × 3,900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,614 lb (3,000 kg)",
+         "9,921 lb (4,500 kg)",
+         "14,330 lb (6,500 kg)",
+         "28,660 lb (13,000 kg)",
+         "34,172 lb (15,500 kg)",
+         "36,376 lb (16,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CFDD 30",
+      "glance": [
+       "33 US tons (30 t)",
+       "19.7 × 19.7″ (500 × 500 mm)",
+       "15.7″ (400 mm)",
+       "10 HP (7.5 kW)",
+       "6,614 lb (3,000 kg)"
+      ]
+     },
+     {
+      "name": "CFDD 60",
+      "glance": [
+       "66 US tons (60 t)",
+       "23.6 × 19.7″ (600 × 500 mm)",
+       "15.7″ (400 mm)",
+       "15 HP (11 kW)",
+       "9,921 lb (4,500 kg)"
+      ]
+     },
+     {
+      "name": "CFDD 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "31.5 × 19.7″ (800 × 500 mm)",
+       "15.7″ (400 mm)",
+       "15 HP (11 kW)",
+       "14,330 lb (6,500 kg)"
+      ]
+     },
+     {
+      "name": "CFDD 150",
+      "glance": [
+       "165 US tons (150 t)",
+       "39.4 × 23.6″ (1,000 × 600 mm)",
+       "15.7″ (400 mm)",
+       "25 HP (18.5 kW)",
+       "28,660 lb (13,000 kg)"
+      ]
+     },
+     {
+      "name": "CFDD 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 23.6″ (1,000 × 600 mm)",
+       "15.7″ (400 mm)",
+       "25 HP (18.5 kW)",
+       "34,172 lb (15,500 kg)"
+      ]
+     },
+     {
+      "name": "CFDD 250",
+      "glance": [
+       "276 US tons (250 t)",
+       "43.3 × 23.6″ (1,100 × 600 mm)",
+       "15.7″ (400 mm)",
+       "25 HP (18.5 kW)",
+       "36,376 lb (16,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "33 – 276 US tons · die cushion 11 – 110 US tons · 15.7″ stroke · 23.6″ daylight",
+   "group": "novotech-production"
+  },
+  "nt-press-hhrp": {
+   "id": "nt-press-hhrp",
+   "brand": "novotech-premium",
+   "name": "SMC / HHRP composite moulding and hot plate presses, 110 – 661 US tons",
+   "short": "SMC / HHRP hot plate",
+   "models_label": "HHRP 100 – HHRP 600 · to HHRP 3000 built to order",
+   "summary": "H-frame presses with heated (or cold) platens for SMC / BMC composite moulding, rubber, laminates and every part that needs heat and pressure together. Insulation between the heated platens and the frame is standard, the press software is written for the customer's moulding cycle and the press is built in the size and capacity required — standard sizes from 110 to 661 US tons, to 3,307 US tons on request. Safety light curtains, T-slotted platens, Siemens S7 PLC and HMI with remote access.",
+   "features": [
+    "Hot or cold T-slotted platens with insulation between plates and frame",
+    "Press software written for the customer's moulding process",
+    "Safety light curtains and safety PLC",
+    "Welded and machined monoblock steel frame; precision-machined frame and T-slotted working table",
+    "Chrome-plated and hardened cylinder; automatic lubrication for the guides",
+    "Hydraulic block to EN standards; adjustable speed and pressure; load check valve",
+    "Siemens S7 PLC with HMI touchscreen and remote access via internet",
+    "Front and rear light barriers, two-hand control, reset and emergency-stop buttons; CE certificate",
+    "Air cooling or heat exchanger for the hydraulic oil"
+   ],
+   "optional": [
+    "Quick die change system",
+    "Die, built and supplied with the press",
+    "Ejector cylinder in the lower table",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-smc",
+    "hk-smc-2",
+    "hk-smc-2500",
+    "hk-smc-detail",
+    "hk-smc-detail-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HHRP",
+      "sub": "SMC & hot plate hydraulic presses",
+      "models": [
+       "HHRP 100",
+       "HHRP 200",
+       "HHRP 300",
+       "HHRP 400",
+       "HHRP 500",
+       "HHRP 600"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "220 US tons (200 t)",
+         "331 US tons (300 t)",
+         "441 US tons (400 t)",
+         "551 US tons (500 t)",
+         "661 US tons (600 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "39.4 × 31.5″ (1,000 × 800 mm)",
+         "47.2 × 39.4″ (1,200 × 1,000 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "59.1 × 47.2″ (1,500 × 1,200 mm)",
+         "66.9 × 59.1″ (1,700 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "28 cc/rev",
+         "45 cc/rev",
+         "71 cc/rev",
+         "100 cc/rev",
+         "100 cc/rev",
+         "140 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)",
+         "25 HP (18.5 kW)",
+         "40 HP (30 kW)",
+         "50 HP (37 kW)",
+         "50 HP (37 kW)",
+         "74 HP (55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "4.33 in/s (110 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.12 – 0.63 in/s (3 – 16 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.59 in/s (3 – 15 mm/s)",
+         "0.12 – 0.47 in/s (3 – 12 mm/s)",
+         "0.2 – 0.59 in/s (5 – 15 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "9.84 in/s (250 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "102 × 130 × 181″ (2,600 × 3,300 × 4,600 mm)",
+         "106 × 130 × 197″ (2,700 × 3,300 × 5,000 mm)",
+         "110 × 138 × 213″ (2,800 × 3,500 × 5,400 mm)",
+         "110 × 142 × 244″ (2,800 × 3,600 × 6,200 mm)",
+         "122 × 146 × 256″ (3,100 × 3,700 × 6,500 mm)",
+         "130 × 165 × 264″ (3,300 × 4,200 × 6,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "16,535 lb (7,500 kg)",
+         "19,842 lb (9,000 kg)",
+         "27,558 lb (12,500 kg)",
+         "42,990 lb (19,500 kg)",
+         "52,911 lb (24,000 kg)",
+         "66,139 lb (30,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HHRP 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "15 HP (11 kW)",
+       "16,535 lb (7,500 kg)"
+      ]
+     },
+     {
+      "name": "HHRP 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 31.5″ (1,000 × 800 mm)",
+       "39.4″ (1,000 mm)",
+       "25 HP (18.5 kW)",
+       "19,842 lb (9,000 kg)"
+      ]
+     },
+     {
+      "name": "HHRP 300",
+      "glance": [
+       "331 US tons (300 t)",
+       "47.2 × 39.4″ (1,200 × 1,000 mm)",
+       "39.4″ (1,000 mm)",
+       "40 HP (30 kW)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "HHRP 400",
+      "glance": [
+       "441 US tons (400 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "42,990 lb (19,500 kg)"
+      ]
+     },
+     {
+      "name": "HHRP 500",
+      "glance": [
+       "551 US tons (500 t)",
+       "59.1 × 47.2″ (1,500 × 1,200 mm)",
+       "39.4″ (1,000 mm)",
+       "50 HP (37 kW)",
+       "52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "HHRP 600",
+      "glance": [
+       "661 US tons (600 t)",
+       "66.9 × 59.1″ (1,700 × 1,500 mm)",
+       "39.4″ (1,000 mm)",
+       "74 HP (55 kW)",
+       "66,139 lb (30,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "110 – 661 US tons standard (to 3,307 to order) · heated platens · composite, rubber and laminate moulding",
+   "group": "novotech-production"
+  },
+  "nt-press-hsps": {
+   "id": "nt-press-hsps",
+   "brand": "novotech-premium",
+   "name": "HSPS hydraulic portal straightening presses, 110 – 441 US tons",
+   "short": "HSPS portal straightening",
+   "models_label": "HSPS 100 · 200 · 300 · 400",
+   "summary": "Gantry (portal) presses for straightening long beams, plates, pipes and shafts: the cylinder travels along the gantry on a rack drive and the gantry along the bed, so the press works in three axes from a pendant and the workpiece stays on the threaded-hole table. Built in the size and tonnage requested — standard beds from 39.4 × 78.7″ to 59.1 × 137.8″ — with a safety rope, pressure transmitter and optional radio remote control.",
+   "features": [
+    "X, Y, Z axes by pendant control; rack drive for the gantry travel",
+    "Working table with threaded holes; chrome-plated and hardened cylinder",
+    "Pressure transmitter; safety rope; reset and emergency-stop buttons; CE certificate",
+    "Welded and machined monoblock steel frame; hydraulic block to EN standards"
+   ],
+   "optional": [
+    "Radio remote control",
+    "Safety rails and fencing",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-hsps",
+    "hk-hsps-300",
+    "hk-hsps-100",
+    "hk-hsps-detail"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HSPS",
+      "sub": "hydraulic portal straightening presses",
+      "models": [
+       "HSPS 100",
+       "HSPS 200",
+       "HSPS 300",
+       "HSPS 400"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "220 US tons (200 t)",
+         "331 US tons (300 t)",
+         "441 US tons (400 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "39.4 × 78.7″ (1,000 × 2,000 mm)",
+         "39.4 × 98.4″ (1,000 × 2,500 mm)",
+         "59.1 × 118.1″ (1,500 × 3,000 mm)",
+         "59.1 × 137.8″ (1,500 × 3,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "19.7″ (500 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "19.7″ (500 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "15 cc/rev",
+         "17 cc/rev",
+         "40 cc/rev",
+         "66 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "15 HP (11 kW)",
+         "25 HP (18.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "0.24 in/s (6 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.24 in/s (6 mm/s)",
+         "0.28 in/s (7 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "0.47 in/s (12 mm/s)",
+         "0.55 in/s (14 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.55 in/s (14 mm/s)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HSPS 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "39.4 × 78.7″ (1,000 × 2,000 mm)",
+       "15.7″ (400 mm)",
+       "7.4 HP (5.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "HSPS 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 98.4″ (1,000 × 2,500 mm)",
+       "15.7″ (400 mm)",
+       "7.4 HP (5.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "HSPS 300",
+      "glance": [
+       "331 US tons (300 t)",
+       "59.1 × 118.1″ (1,500 × 3,000 mm)",
+       "19.7″ (500 mm)",
+       "15 HP (11 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "HSPS 400",
+      "glance": [
+       "441 US tons (400 t)",
+       "59.1 × 137.8″ (1,500 × 3,500 mm)",
+       "23.6″ (600 mm)",
+       "25 HP (18.5 kW)",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "110 – 441 US tons · beds to 59.1 × 137.8″ · cylinder moves on 3 axes",
+   "group": "novotech-production"
+  },
+  "nt-press-hdt": {
+   "id": "nt-press-hdt",
+   "brand": "novotech-premium",
+   "name": "HDT H-frame hydraulic presses — Eco model, 110 – 276 US tons",
+   "short": "HDT Eco H-frame",
+   "models_label": "HDT 100 · 150 · 200 · 250",
+   "summary": "A workshop-type H-frame press built to production standards: welded, machined monoblock frame, T-slotted table, chrome-plated hardened cylinder, pressure transmitter and two-hand control, at a lower price than the HSA. 110 to 276 US tons with 15.7″ stroke and 23.6″ daylight, for the repair, maintenance and small fabrication shop; quick die change, ejector, radio remote and oil cooling are optional.",
+   "features": [
+    "T-slotted working table; 15.7″ stroke, 23.6″ daylight",
+    "Pressure transmitter; two-hand button control; emergency stop; CE certificate",
+    "Welded and machined monoblock steel frame; chrome-plated and hardened cylinder; hydraulic block to EN standards"
+   ],
+   "optional": [
+    "Quick die change system; die; ejector",
+    "Radio remote control",
+    "Air cooling or heat exchanger for the hydraulic oil",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "hk-hdt"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HDT",
+      "sub": "H-frame hydraulic presses — Eco model",
+      "models": [
+       "HDT 100",
+       "HDT 150",
+       "HDT 200",
+       "HDT 250"
+      ],
+      "rows": [
+       {
+        "label": "Press force",
+        "sub": "",
+        "cells": [
+         "110 US tons (100 t)",
+         "165 US tons (150 t)",
+         "220 US tons (200 t)",
+         "276 US tons (250 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table size",
+        "sub": "",
+        "cells": [
+         "31.5 × 23.6″ (800 × 600 mm)",
+         "39.4 × 23.6″ (1,000 × 600 mm)",
+         "39.4 × 23.6″ (1,000 × 600 mm)",
+         "59.1 × 23.6″ (1,500 × 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cylinder Ø",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)",
+         "10.6″ (270 mm)",
+         "12.6″ (320 mm)",
+         "14.2″ (360 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump displacement",
+        "sub": "",
+        "cells": [
+         "15 cc/rev",
+         "22 cc/rev",
+         "34 cc/rev",
+         "45 cc/rev"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "20 HP (15 kW)",
+         "25 HP (18.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Advance speed",
+        "sub": "",
+        "cells": [
+         "0.24 in/s (6 mm/s)",
+         "0.24 in/s (6 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pressing speed",
+        "sub": "",
+        "cells": [
+         "0.24 in/s (6 mm/s)",
+         "0.24 in/s (6 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "0.47 in/s (12 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.55 in/s (14 mm/s)",
+         "0.55 in/s (14 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "59 × 94 × 106″ (1,500 × 2,400 × 2,700 mm)",
+         "59 × 102 × 106″ (1,500 × 2,600 × 2,700 mm)",
+         "59 × 102 × 110″ (1,500 × 2,600 × 2,800 mm)",
+         "67 × 106 × 110″ (1,700 × 2,700 × 2,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,614 lb (3,000 kg)",
+         "9,921 lb (4,500 kg)",
+         "14,330 lb (6,500 kg)",
+         "17,637 lb (8,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HDT 100",
+      "glance": [
+       "110 US tons (100 t)",
+       "31.5 × 23.6″ (800 × 600 mm)",
+       "15.7″ (400 mm)",
+       "7.4 HP (5.5 kW)",
+       "6,614 lb (3,000 kg)"
+      ]
+     },
+     {
+      "name": "HDT 150",
+      "glance": [
+       "165 US tons (150 t)",
+       "39.4 × 23.6″ (1,000 × 600 mm)",
+       "15.7″ (400 mm)",
+       "10 HP (7.5 kW)",
+       "9,921 lb (4,500 kg)"
+      ]
+     },
+     {
+      "name": "HDT 200",
+      "glance": [
+       "220 US tons (200 t)",
+       "39.4 × 23.6″ (1,000 × 600 mm)",
+       "15.7″ (400 mm)",
+       "20 HP (15 kW)",
+       "14,330 lb (6,500 kg)"
+      ]
+     },
+     {
+      "name": "HDT 250",
+      "glance": [
+       "276 US tons (250 t)",
+       "59.1 × 23.6″ (1,500 × 600 mm)",
+       "15.7″ (400 mm)",
+       "25 HP (18.5 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "table",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Standard sizes shown; every series is also built to the customer's table size, stroke, daylight and tonnage. Larger models to 3,000 metric tons (3,307 US tons) are built to order. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L × W × H."
+   },
+   "headline": "110 – 276 US tons · 15.7″ stroke · 23.6″ daylight · T-slotted table",
+   "group": "novotech-production"
   },
   "sahinler-hnm-fixed": {
    "id": "sahinler-hnm-fixed",

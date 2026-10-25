@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ spec.title }} — NovoTech</title>
+<style>
+@font-face { font-family: "Barlow"; font-weight: 400; src: url("{{ fonts }}/barlow-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 500; src: url("{{ fonts }}/barlow-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 600; src: url("{{ fonts }}/barlow-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 700; src: url("{{ fonts }}/barlow-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 500; src: url("{{ fonts }}/barlow-condensed-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 600; src: url("{{ fonts }}/barlow-condensed-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; src: url("{{ fonts }}/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 400; src: url("{{ fonts }}/barlow-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA; }
+@font-face { font-family: "Barlow"; font-weight: 600; src: url("{{ fonts }}/barlow-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA; }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; src: url("{{ fonts }}/barlow-condensed-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA; }
+@page { size: 8.5in 11in; margin: 0; }
+:root { --orange: #f0820f; --orange-ink: #d96f00; --charcoal: #24262b; --steel: #5b6068; --line: #d9dce1; --paper: #f4f5f7; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Barlow", Arial, sans-serif; color: var(--charcoal); font-size: 9.6pt; line-height: 1.38; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { position: relative; width: 8.5in; height: 11in; overflow: hidden; page-break-after: always; break-after: page; background: #fff; }
+.page:last-child { page-break-after: auto; }
+h1, h2, h3, h4 { font-family: "Barlow Condensed", "Barlow", sans-serif; margin: 0; line-height: 1.05; }
+.cond { font-family: "Barlow Condensed", sans-serif; }
+.kicker { font-family: "Barlow Condensed", sans-serif; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: 8.5pt; color: var(--orange-ink); }
+/* header band */
+.band { position: absolute; left: 0; right: 0; top: 0; height: .62in; background: var(--charcoal); color: #fff; padding: .13in .45in 0 .45in; }
+.band .t1 { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 12pt; letter-spacing: .08em; text-transform: uppercase; }
+.band .t2 { font-size: 7pt; letter-spacing: .14em; text-transform: uppercase; color: #b9bdc6; margin-top: 2pt; }
+.band .tab { position: absolute; right: .45in; top: .17in; background: var(--orange); color: #fff; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 8.5pt; letter-spacing: .12em; text-transform: uppercase; padding: 4pt 14pt; transform: skewX(-14deg); }
+.band .tab span { display: inline-block; transform: skewX(14deg); }
+/* footer */
+.foot { position: absolute; left: .45in; right: .45in; bottom: .28in; border-top: 2.2pt solid var(--orange); padding-top: 6pt; display: flex; align-items: center; gap: 10pt; font-size: 7.2pt; color: var(--steel); }
+.foot img { height: .34in; width: auto; }
+.foot .addr b { color: var(--charcoal); font-size: 7.6pt; }
+.foot .num { margin-left: auto; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 16pt; color: var(--orange); }
+.body { position: absolute; left: .45in; right: .45in; top: .85in; bottom: .95in; }
+/* cover */
+.cover .top { position: absolute; left: 0; right: 0; top: 0; height: 5.1in; background: var(--charcoal); color: #fff; padding: .5in .55in 0 .55in; }
+.cover .logo { position: absolute; left: .55in; top: .45in; height: .62in; }
+.cover .tag { position: absolute; right: .55in; top: .62in; background: var(--orange); color: #fff; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9.5pt; letter-spacing: .14em; text-transform: uppercase; padding: 5pt 16pt; transform: skewX(-14deg); }
+.cover .tag span { display: inline-block; transform: skewX(14deg); }
+.cover .line { position: absolute; left: .55in; top: 1.55in; font-size: 8pt; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); font-weight: 600; }
+.cover h1 { position: absolute; left: .55in; top: 1.85in; font-size: 44pt; font-weight: 700; text-transform: uppercase; letter-spacing: .01em; max-width: 7.2in; }
+.cover h1 small { display: block; font-size: 17pt; font-weight: 500; letter-spacing: .06em; color: #c9ccd3; margin-top: 10pt; }
+.cover .rule { position: absolute; left: .55in; top: 4.45in; width: 1.3in; height: 4pt; background: var(--orange); }
+.cover .photos { position: absolute; left: .3in; right: .3in; top: 5.2in; height: 4.35in; display: flex; align-items: flex-end; justify-content: center; gap: .25in; background: linear-gradient(180deg, #fff 0%, #eef0f3 100%); }
+.cover .photos img { max-height: 4in; max-width: 2.6in; width: auto; object-fit: contain; }
+.cover .photos img.big { max-height: 4.2in; max-width: 3.3in; }
+.cover .stats { position: absolute; left: 0; right: 0; bottom: 0; height: 1.05in; background: var(--charcoal); color: #fff; display: flex; align-items: center; padding: 0 .55in; }
+.cover .stats div { flex: 1; border-left: 1pt solid #4a4e57; padding-left: 14pt; }
+.cover .stats div:first-child { border: 0; padding-left: 0; }
+.cover .stats b { display: block; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 18pt; color: var(--orange); }
+.cover .stats span { font-size: 7pt; letter-spacing: .14em; text-transform: uppercase; color: #b9bdc6; }
+/* contents / about */
+h2.title { font-size: 26pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 10pt; }
+h2.title::after { content: ""; display: block; width: .9in; height: 3.5pt; background: var(--orange); margin-top: 7pt; }
+.toc h3 { font-size: 11pt; text-transform: uppercase; letter-spacing: .08em; color: var(--charcoal); margin: 14pt 0 6pt; padding-bottom: 3pt; border-bottom: 1pt solid var(--line); }
+.toc .row { display: flex; align-items: baseline; gap: 6pt; padding: 3pt 0; font-size: 9.4pt; }
+.toc .row .dots { flex: 1; border-bottom: 1pt dotted #b9bdc6; transform: translateY(-3pt); }
+.toc .row .pg { font-family: "Barlow Condensed", sans-serif; font-weight: 700; color: var(--orange-ink); font-size: 11pt; }
+.toc .row .ser { color: var(--steel); font-size: 8pt; }
+.about p { max-width: 6.9in; font-size: 10pt; }
+.included { border: 1pt solid var(--line); background: var(--paper); display: flex; gap: 12pt; padding: 9pt 12pt; font-size: 7.4pt; margin-top: 10pt; }
+.included .lbl { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9pt; letter-spacing: .08em; text-transform: uppercase; width: 1.1in; flex: none; line-height: 1.15; }
+.included ul { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 12pt; flex: 1; }
+.included li { break-inside: avoid; padding-left: 11pt; position: relative; margin-bottom: 3pt; }
+.included li::before { content: "✓"; position: absolute; left: 0; color: var(--orange-ink); font-weight: 700; }
+.included li small { display: block; color: var(--steel); }
+/* family page */
+.fam .kicker { margin-top: 2pt; }
+.fam h2 { font-size: 21pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 8pt; }
+.fam .photos { display: flex; gap: 10pt; height: 3.55in; margin-bottom: 9pt; }
+.fam .hero { flex: 1.6; border: 1pt solid var(--line); background: linear-gradient(180deg, #fff 0%, #eef0f3 100%); position: relative; display: flex; align-items: center; justify-content: center; padding: 8pt; }
+.fam .hero img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.fam .hero .model { position: absolute; left: 0; bottom: 0; background: var(--charcoal); color: #fff; font-family: "Barlow Condensed", sans-serif; font-size: 8pt; letter-spacing: .1em; text-transform: uppercase; padding: 3pt 10pt; }
+.fam .hero .model b { color: var(--orange); margin-right: 6pt; }
+.fam .side { flex: 1; display: flex; flex-direction: column; gap: 8pt; }
+.fam .mini { flex: 1; border: 1pt solid var(--line); background: #fff; display: flex; align-items: center; justify-content: center; padding: 6pt; position: relative; min-height: 0; }
+.fam .mini img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.fam .mini span { position: absolute; left: 6pt; bottom: 4pt; font-size: 6.8pt; color: var(--steel); background: rgba(255,255,255,.85); padding: 1pt 4pt; }
+.fam .summary { font-size: 9.3pt; max-width: 7.6in; }
+.fam .cols { display: flex; gap: 18pt; margin-top: 8pt; }
+.fam .cols > div { flex: 1; }
+.fam h3 { font-size: 10.5pt; letter-spacing: .08em; text-transform: uppercase; margin: 6pt 0 4pt; }
+.fam ul { margin: 0; padding: 0; list-style: none; font-size: 8.6pt; }
+.fam li { padding-left: 12pt; position: relative; margin-bottom: 2.5pt; }
+.fam li::before { content: "✓"; position: absolute; left: 0; color: var(--orange-ink); font-weight: 700; }
+.fam ul.opt li::before { content: "+"; }
+.fam .headline { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 10.5pt; color: var(--orange-ink); margin-bottom: 6pt; }
+/* spec page */
+.spec h2 { font-size: 21pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 8pt; }
+.spec h3 { font-size: 10.5pt; letter-spacing: .08em; text-transform: uppercase; margin: 10pt 0 2pt; }
+.spec .sub { font-size: 8pt; color: var(--steel); margin-bottom: 4pt; }
+table { border-collapse: collapse; width: 100%; font-size: 7.4pt; margin-bottom: 8pt; }
+th, td { border-bottom: .6pt solid var(--line); padding: 3pt 5pt; text-align: left; vertical-align: top; }
+thead th { background: var(--charcoal); color: #fff; font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 8pt; letter-spacing: .04em; border: 0; }
+thead th:first-child { background: var(--orange); }
+tbody th { font-weight: 600; width: 1.55in; background: var(--paper); }
+tbody th small { display: block; font-weight: 400; color: var(--steel); font-size: 6.6pt; }
+tr.key td { font-weight: 600; }
+table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; }
+.note { font-size: 7pt; color: var(--steel); margin-top: 4pt; }
+.volt { font-size: 7.6pt; margin-top: 6pt; }
+/* back */
+.back .top { position: absolute; left: 0; right: 0; top: 0; height: 4.4in; background: var(--charcoal); color: #fff; padding: .7in .6in; }
+.back h2 { font-size: 34pt; font-weight: 700; text-transform: uppercase; }
+.back .top p { font-size: 11pt; color: #c9ccd3; max-width: 6in; }
+.back .contact { position: absolute; left: .6in; right: .6in; top: 5in; display: flex; gap: 24pt; }
+.back .contact div { flex: 1; }
+.back .contact b { display: block; font-family: "Barlow Condensed", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--orange-ink); font-size: 9pt; margin-bottom: 4pt; }
+.back .contact span { font-size: 11pt; display: block; }
+.back .fine { position: absolute; left: .6in; right: .6in; bottom: 1in; font-size: 7.4pt; color: var(--steel); }
+.back .logo { position: absolute; right: .6in; bottom: 1.6in; height: .8in; }
+</style>
+</head>
+<body>
+
+{# ---------------------------------------------------------------- cover #}
+<section class="page cover">
+  <div class="top">
+    <img class="logo" src="{{ logo.src }}" alt="NovoTech">
+    <div class="tag"><span>Product catalogue {{ year }}</span></div>
+    <div class="line">{{ spec.cover_line }}</div>
+    <h1>{{ spec.title }}<small>{{ spec.subtitle }}</small></h1>
+    <div class="rule"></div>
+  </div>
+  <div class="photos">{% for im in cover_imgs if im %}<img class="{{ 'big' if loop.index == 2 else '' }}" src="{{ im.src }}" alt="">{% endfor %}</div>
+  <div class="stats">
+    <div><b>{{ spec.country }}</b><span>Made in {{ spec.country }}</span></div>
+    <div><b>{{ families|length }}</b><span>machine families</span></div>
+    <div><b>1-year</b><span>warranty</span></div>
+    <div><b>Canada</b><span>parts & technical support</span></div>
+  </div>
+</section>
+
+{# ---------------------------------------------------------------- contents #}
+<section class="page">
+  <div class="band"><div class="t1">Contents</div><div class="t2">NovoTech Machine Tools Inc. · {{ spec.range_label }}</div><div class="tab"><span>Contents</span></div></div>
+  <div class="body toc">
+    <div class="kicker">{{ spec.range_label }}</div>
+    <h2 class="title">Contents</h2>
+    {% for g in groups %}
+    <h3>{{ g.title }}</h3>
+    {% for f in g.families %}
+    <div class="row"><span>{{ f.name }}</span><span class="ser">{{ f.models_label }}</span><span class="dots"></span><span class="pg">{{ '%02d' % f.page }}</span></div>
+    {% endfor %}
+    {% endfor %}
+    <p class="note" style="margin-top:14pt">Specifications subject to change without notice. Imperial values are converted from the manufacturer's metric data and rounded: thin sheet in gauge (ga), plate and capacities in common fractions (1/2, 1/4, 1/8, 1/16); metric values in brackets are the manufacturer's nominal figures. Model numbers are manufacturer designations. Photos may show optional equipment.</p>
+  </div>
+  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">02</div></div>
+</section>
+
+{# ---------------------------------------------------------------- about #}
+<section class="page">
+  <div class="band"><div class="t1">About</div><div class="t2">NovoTech Machine Tools Inc.</div><div class="tab"><span>About</span></div></div>
+  <div class="body about">
+    <div class="kicker">About NovoTech</div>
+    <h2 class="title">Your Canadian source for {{ spec.about_for }}</h2>
+    <p>Sales, installation, parts and technical support across Canada.</p>
+    <p><b>NovoTech Machine Tools Inc.</b> supplies metalworking and fabrication machinery to job shops, fabricators, maintenance departments and manufacturers across Canada from our base in Mississauga, Ontario. Every machine in this catalogue is sold and supported locally by NovoTech — with spare parts and technical support readily available in Canada.</p>
+    <div class="included"><div class="lbl">Included with every NovoTech machine</div><ul>{% for t, s in included %}<li>{{ t.format(country=spec.country) }}{% if s %}<small>{{ s }}</small>{% endif %}</li>{% endfor %}</ul></div>
+    <div class="kicker" style="margin-top:22pt">{{ spec.about_kicker }}</div>
+    <h2 class="title">{{ spec.about_title }}</h2>
+    {% for p in spec.about_text %}<p>{{ p }}</p>{% endfor %}
+    {% if spec.about_photo %}{% set ap = spec.about_photo|img %}{% if ap %}<div style="margin-top:14pt;border:1pt solid var(--line);height:2.9in;display:flex;align-items:center;justify-content:center;background:#fff"><img src="{{ ap.src }}" style="max-height:100%;max-width:100%;object-fit:contain" alt=""></div>{% endif %}{% endif %}
+  </div>
+  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">03</div></div>
+</section>
+
+{# ---------------------------------------------------------------- families #}
+{% for f in families %}
+<section class="page fam">
+  <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ f.name }}</div><div class="tab"><span>{{ f.series }} series</span></div></div>
+  <div class="body">
+    <div class="kicker">{{ f.models_label }}</div>
+    <h2>{{ f.name }}</h2>
+    <div class="photos">
+      <div class="hero">{% if f.hero %}<img src="{{ f.hero.src }}" alt="">{% endif %}<div class="model"><b>Model</b>{{ f.series }} · {{ f.hero.alt if f.hero else '' }}</div></div>
+      {% if f.minis %}<div class="side">{% for m in f.minis if m %}<div class="mini"><img src="{{ m.src }}" alt=""><span>{{ f.mini_alts[loop.index0] }}</span></div>{% endfor %}</div>{% endif %}
+    </div>
+    <div class="headline">{{ f.headline }}</div>
+    <p class="summary">{{ f.summary }}</p>
+    <div class="cols">
+      <div><h3>Standard features</h3><ul>{% for x in f.features %}<li>{{ x }}</li>{% endfor %}</ul></div>
+      <div><h3>Optional equipment</h3><ul class="opt">{% for x in f.optional %}<li>{{ x }}</li>{% endfor %}</ul></div>
+    </div>
+  </div>
+  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % f.page }}</div></div>
+</section>
+{% for tables in f.spec_pages %}
+<section class="page spec">
+  <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ f.name }}</div><div class="tab"><span>Specifications</span></div></div>
+  <div class="body">
+    <div class="kicker">Technical specifications{% if f.spec_pages|length > 1 %} · {{ loop.index }} / {{ f.spec_pages|length }}{% endif %}</div>
+    <h2>{{ f.name }}</h2>
+    {% for t in tables %}
+    <h3>{{ t.title }}</h3>{% if t.sub %}<div class="sub">{{ t.sub }}</div>{% endif %}
+    <table class="{{ 'n7' if t.models|length > 6 else '' }}">
+      <thead><tr><th>Model</th>{% for m in t.models %}<th>{{ m }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for r in t.rows %}<tr class="{{ 'key' if r.key else '' }}"><th>{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>{% for c in r.cells %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table>
+    {% endfor %}
+    {% if loop.last %}<p class="note">{{ f.specs.note }}</p><p class="volt">Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase{{ ', or 240 V single-phase on models with a small enough motor' if spec.single_phase else '' }}.</p>
+    <div class="included"><div class="lbl">Included with every NovoTech machine</div><ul>{% for t_, s in included %}<li>{{ t_.format(country=spec.country) }}{% if s %}<small>{{ s }}</small>{% endif %}</li>{% endfor %}</ul></div>{% endif %}
+  </div>
+  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % (f.page + loop.index) }}</div></div>
+</section>
+{% endfor %}
+{% endfor %}
+
+{# ---------------------------------------------------------------- back cover #}
+<section class="page back">
+  <div class="top">
+    <h2>Let's find the right machine for your shop.</h2>
+    <p>Call or visit us for quotes, tooling, demonstrations, installation and service. In-stock machines ship fast from our Mississauga location.</p>
+  </div>
+  <div class="contact">
+    <div><b>Phone</b><span>{{ site.phone }}</span></div>
+    <div><b>Web & email</b><span>NovoTechMachineTools.com</span><span>info@NovoTechMachineTools.com</span></div>
+    <div><b>Address</b><span>{{ site.address.street }}</span><span>{{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}</span></div>
+  </div>
+  <img class="logo" src="{{ logo.src }}" alt="NovoTech">
+  <p class="fine">Specifications subject to change without notice. Imperial values are converted from manufacturer metric data and rounded: thin sheet in gauge (ga), plate and capacities in common fractions (1/2, 1/4, 1/8, 1/16). Model numbers are manufacturer designations. Photos may show optional equipment. 7-day money-back guarantee on in-stock machines only; financing available.</p>
+</section>
+</body>
+</html>

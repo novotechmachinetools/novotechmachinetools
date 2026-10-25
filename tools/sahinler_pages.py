@@ -13,9 +13,10 @@ import os
 from isitan_lib import CRUMBS, VOLT_FAQ_GENERIC, lower_keep_acronyms, write_json  # noqa: F401
 from sahinler_families import *  # noqa: F401,F403
 import sahinler_plate_rolls
+import hidroliksan_data  # NovoTech premium-line production presses below the Şahinler group on hydraulic-press.html
 
 SET = "sahinler"
-FAMILIES = ANGLE_FAMILIES + IRON_FAMILIES + PUNCH_FAMILIES + PRESS_FAMILIES + NOTCH_FAMILIES + POLISH_FAMILIES
+FAMILIES = ANGLE_FAMILIES + IRON_FAMILIES + PUNCH_FAMILIES + PRESS_FAMILIES + hidroliksan_data.FAMILIES + NOTCH_FAMILIES + POLISH_FAMILIES
 SECTION = {P_ANGLE: "Angle rolls", P_IRON: "Ironworkers & punching", P_PUNCH: "Ironworkers & punching", P_PRESS: "Hydraulic presses", P_NOTCH: "Corner notchers", P_POLISH: "Pipe polishing & sanding"}
 
 PAGES = {
@@ -75,18 +76,23 @@ PAGES = {
         related_title="More cutting and punching machinery from NovoTech",
     ),
     P_PRESS: dict(
-        title="Hydraulic Presses 33–441 Ton — Shop & H-Frame | NovoTech",
-        meta="Hydraulic shop and H-frame presses from 33 to 441 US tons: DPM shop presses, mobile-cylinder DPM-K / DK, T-slot die presses, press brakes and straighteners.",
-        h1="Hydraulic presses — shop presses, H-frame and straightening presses",
-        intro="A hydraulic shop press (H-frame press) straightens shafts and frames, presses bearings, bushings and pins in and out, bends and forms plate and does the assembly work of every repair, machine and fabrication shop. Şahinler builds the hydraulic press machines NovoTech stocks in Mississauga, from small to large: the DPM shop presses from 33 to 220 US tons with two-speed joystick control, the DPM-K and DK presses whose cylinder travels across the frame on a hand wheel, the AT universal presses with T-slot tables for die work, the AP garage-type press brakes that bend 1/4″ – 3/8″ plate with press-brake tooling, and the DK-S 3-axis moving straightening presses from 220 to 441 US tons for large plates, beams and bar. All with pressure gauge, relief valve and height-adjustable tables, a CSA-approved panel and parts and service in Canada.",
-        points=["DPM shop presses 33 – 220 US tons · DPM-K / DK with cylinder that travels across the frame", "AT T-slot die presses and AP garage press brakes, 110 – 165 US tons", "DK-S 3-axis moving straightening presses, 220 – 441 US tons"],
-        hero="sh-dpm", minis=["sh-at", "sh-dks400"],
-        groups=[("sahinler-press", "Şahinler hydraulic presses", "DPM shop presses first, then the mobile-cylinder DPM-K / DK, the T-slot AT, the AP press brake and the DK-S straightening presses — small to large.", "sahinler")],
+        title="Hydraulic Presses, Shop to Production 3,307 Ton | NovoTech",
+        meta="Hydraulic shop presses from 33 US tons and production presses to 3,307 US tons: H-frame, column, C-frame, deep drawing, SMC hot plate and straightening presses.",
+        h1="Hydraulic presses — shop presses, H-frame, C-frame and production presses",
+        intro="A hydraulic press machine does the pressing, forming, drawing and straightening work of every repair shop, fabricator and production plant: a hydraulic shop press (H-frame press) presses bearings and pins, straightens shafts and bends plate, and a production press runs a die — forming, deep drawing, blanking, moulding — cycle after cycle under PLC control. Both lines are on this page, small to large. Şahinler's workshop presses come first: DPM shop presses from 33 to 220 US tons with two-speed joystick control, the DPM-K and DK with a cylinder that travels across the frame, the AT T-slot die presses, the AP garage press brake and the DK-S 3-axis straightening presses to 441 US tons. Below them, NovoTech's premium line of production hydraulic presses, built in Turkey with European components: HSA single action and HDD double action deep drawing H-frame presses to 3,307 US tons, HCFP column presses, CFS, CFSS and CFDD C-frame presses, SMC / HHRP hot plate presses for composites and rubber, HSPS portal straightening presses and the HDT Eco H-frame. Every press with a CSA-approved panel, pressure gauge and relief valve, parts and service in Canada.",
+        points=["Şahinler shop presses 33 – 441 US tons: DPM, mobile-cylinder DPM-K / DK, T-slot AT, AP press brake, DK-S straightening", "NovoTech premium line production presses: H-frame, column and C-frame to 3,307 US tons, deep drawing with die cushion, hot plate SMC presses", "Siemens PLC, HMI touchscreen and light barriers on the production line; two-speed joystick control on the shop presses"],
+        hero="sh-dpm", minis=["hk-hdd", "sh-dks400"],
+        groups=[("sahinler-press", "Şahinler hydraulic shop presses", "DPM shop presses first, then the mobile-cylinder DPM-K / DK, the T-slot AT, the AP press brake and the DK-S straightening presses — small to large.", "sahinler"),
+                ("novotech-production", "Production hydraulic presses — NovoTech premium line", "Built in Turkey to NovoTech's specification: H-frame single and double action presses to 3,307 US tons, column presses, C-frame and C-frame deep drawing presses, SMC hot plate presses, portal straightening presses and the HDT Eco H-frame — small to large.", "novotech-premium")],
         faq=[{"q": "What tonnage shop press do I need?", "a": "Most truck, equipment and fabrication shops run a 66 – 110 US ton press (DPM 1040-60 to DPM 1570-100): enough for pressing bearings and bushings, straightening shafts to Ø3″ and bending flat bar. Go to 165 – 220 US tons for large bearings, track pins, heavy shafts and forming plate; the DK-S straightening presses from 220 to 441 US tons are for plates, beams and bar that need a moving ram."},
              {"q": "What do the model numbers mean — DPM 1040-60?", "a": "The first number is the clear working width between the columns in millimetres (1040 mm = 40.9″) and the second the press force in metric tons (60 t = 66 US tons). A 1570-100 press is 61.8″ wide at 110 US tons."},
              {"q": "Why a mobile (sliding) cylinder?", "a": "On the DPM-K and DK the cylinder head travels across the frame on a hand wheel, so the ram comes to the work — a long shaft, a frame rail or a plate stays clamped while you straighten it point by point instead of shifting the part under a fixed ram. The DK series adds a wider 61.8″ – 74.8″ frame."},
              {"q": "Can a shop press bend plate?", "a": "The AP garage-type press brake is a hydraulic press delivered with a 5-face prism bottom die and hardened top blade for bending 1/4″ (110 US tons) or 3/8″ (165 US tons) mild steel over 40″ or 60″ — the economical way to bend brackets and short plate without a full press brake. The AT press has T-slot tables for bolting your own forming, blanking and coining dies."},
              {"q": "Hand pump, foot pedal or two-hand control?", "a": "The DPM and DPM-K presses come with two-speed joystick control; a hand pump for fine pressing, a foot pedal and a limit switch that stops the stroke at a set height are options. The AT and AP presses are two-hand controlled with stepless stroke adjustment by limit switch, as die and bending work requires."},
+             {"q": "Shop press or production press?", "a": "A shop press is operated by hand — joystick or two-hand buttons — for one part at a time: pressing, straightening, bending. A production press runs a die under PLC control with programmed speeds, pressures, dwell and return, light barriers instead of guards, automatic lubrication and remote diagnostics, for thousands of cycles a shift. The NovoTech premium line starts at 33 US tons with the CFS C-frame and goes to 3,307 US tons on the H-frame presses."},
+             {"q": "Single action or double action — what is a die cushion?", "a": "A single action press has one ram. A double action (deep drawing) press adds a die cushion in the lower table — a second cylinder that holds the blank holder with its own programmed force — so a flat blank can be drawn into a deep cup, pan or housing without wrinkling. The HDD H-frame and CFDD C-frame presses have the cushion built in; it is an option on the HCFP column press."},
+             {"q": "H-frame, column or C-frame?", "a": "An H-frame (straight-side) press is the stiffest and takes the largest tables and tonnages — the choice for deep drawing and big dies. A column (four-post) press is open on all sides for die access and automation. A C-frame press is open on three sides, so small dies go in and out quickly and the press takes less floor space; its table size is limited because the C deflects, which is why the C-frame range stops at 276 US tons."},
+             {"q": "Can the press be built to my die?", "a": "Yes — every series of the premium line is built to order in the table size, stroke, daylight and tonnage the die needs, from a 33 US ton C-frame to a 3,307 US ton H-frame, with quick die change, die loading arms, ejector, heated platens or a die cushion as required. Send us the die drawing and the cycle you need and we quote the press around it."},
              VOLT_FAQ_GENERIC],
         faq_title="Questions we get asked about hydraulic presses",
         related_pages=[{"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
@@ -137,24 +143,32 @@ def load_photos():
     return m.PHOTOS
 
 
+def load_module(name):
+    spec = importlib.util.spec_from_file_location(name, os.path.join(ROOT, "tools", name + ".py"))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    return m
+
+
 def register_images():
-    """Every exported Şahinler photo → tools/image_map.json (section 'sahinler'); the keys are written to tools/sahinler_keys.txt."""
-    photos = load_photos()
+    """Every exported Şahinler / premium-line photo → tools/image_map.json (sections 'sahinler', 'hidroliksan');
+    the keys are written to tools/sahinler_keys.txt."""
     imap_path = os.path.join(ROOT, "tools", "image_map.json")
     imap = json.load(open(imap_path, encoding="utf-8"))
-    d = os.path.join(ROOT, "tools", "src-images", "sahinler")
     keys = []
-    for key, p in photos.items():
-        f = [x for x in os.listdir(d) if x.startswith(key + ".")]
-        if not f:
-            print("!! missing export for", key)
-            continue
-        ext = os.path.splitext(f[0])[1]
-        e = {"src": f"tools/src-images/sahinler/{key}{ext}", "alt": p["alt"], "section": "sahinler", "trim": ext == ".png", "quality": 82}
-        if p.get("cutout") is False:
-            e["cutout"] = False
-        imap[key] = e
-        keys.append(key)
+    for section, photos in (("sahinler", load_photos()), ("hidroliksan", load_module("hidroliksan_photos").PHOTOS)):
+        d = os.path.join(ROOT, "tools", "src-images", section)
+        for key, p in photos.items():
+            f = [x for x in os.listdir(d) if x.startswith(key + ".")]
+            if not f:
+                print("!! missing export for", key)
+                continue
+            ext = os.path.splitext(f[0])[1]
+            e = {"src": f"tools/src-images/{section}/{key}{ext}", "alt": p["alt"], "section": section, "trim": ext == ".png", "quality": 82}
+            if p.get("cutout") is False:
+                e["cutout"] = False
+            imap[key] = e
+            keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "sahinler_keys.txt"), "w").write(",".join(keys))
     return keys
@@ -169,7 +183,11 @@ def build():
     from isitan_lib import write_category
     write_families_set()
     for slug, p in PAGES.items():
-        write_category(slug, p, FAMILIES, SET, SECTION[slug], extra=EXTRA)
+        extra = dict(EXTRA)
+        if slug == P_PRESS:
+            extra.update({"hero_brand_line": "Şahinler shop presses are made in Turkey by Şahinler Metal; the NovoTech premium-line production presses are built in Turkey with European components to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
+                          "origin_feature": {"title": "Made in Turkey", "text": "Şahinler Metal has built shop presses in Bursa since 1976; the NovoTech premium-line production presses come from a Turkish press builder with 50 years of hydraulic press manufacturing, CE-certified with Siemens controls and European hydraulics."}})
+        write_category(slug, p, FAMILIES, SET, SECTION[slug], extra=extra)
     keys = register_images()
     used = {k for f in FAMILIES + sahinler_plate_rolls.FAMILIES + SPB_FAMILIES + CIRCLE_FAMILIES for k in f["images"]} | {p["hero"] for p in PAGES.values()} | {m for p in PAGES.values() for m in p["minis"]}
     unused = sorted(set(keys) - used)
