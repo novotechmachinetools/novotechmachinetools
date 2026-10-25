@@ -10,7 +10,7 @@ import importlib.util
 import json
 import os
 
-from isitan_lib import CRUMBS, VOLT_FAQ_GENERIC, lower_keep_acronyms, write_json  # noqa: F401
+from isitan_lib import CRUMBS, SAHINLER_INTRO_VIDEO, VOLT_FAQ_GENERIC, lower_keep_acronyms, write_json  # noqa: F401
 from sahinler_families import *  # noqa: F401,F403
 import sahinler_plate_rolls
 import hidroliksan_data  # NovoTech premium-line production presses below the Şahinler group on hydraulic-press.html
@@ -194,7 +194,7 @@ def build():
     from isitan_lib import write_category
     write_families_set()
     for slug, p in PAGES.items():
-        extra = dict(EXTRA)
+        extra = dict(EXTRA, **SAHINLER_INTRO_VIDEO)
         if slug == P_PRESS:
             extra.update({"catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_PROD]})
             extra.update({"hero_brand_line": "Şahinler shop presses are made in Turkey by Şahinler Metal; the NovoTech premium-line production presses are built in Turkey with European components to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",

@@ -257,6 +257,13 @@ PDF_BK = {"file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "label"
 VOLT_FAQ_GENERIC = {"q": "What voltage do these machines run on?",
                     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."}
 CRUMBS = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href": "products.html"}]
+# "Inside the factory" section on every İşitan-led page (NovoTech's own channel)
+ISITAN_INTRO_VIDEO = {"intro_video": {"id": "XMn6YkPPOig", "title": "İşitan company introduction video", "thumb": "video-XMn6YkPPOig", "duration": "PT3M55S"},
+                      "intro_video_heading": "Inside the factory — where the machines are built",
+                      "intro_video_text": "A tour of the İşitan plant in Bursa, Turkey, where the sheet-metal and tube machinery on these pages has been built since 1959."}
+SAHINLER_INTRO_VIDEO = {"intro_video": {"id": "nqgpctYOsyk", "title": "Şahinler Metal introduction video", "thumb": "video-nqgpctYOsyk", "duration": "PT4M29S"},
+                        "intro_video_heading": "Inside the factory — where the machines are built",
+                        "intro_video_text": "A tour of Şahinler Metal in Bursa, Turkey — plate rolls, angle rolls, ironworkers and presses built there since 1976."}
 
 
 def lower_keep_acronyms(text):
@@ -321,6 +328,7 @@ def write_category(slug, p, families, set_name, section_label, *, hub=None, sibl
         page["related_pages"] = [{"href": f"{s}.html", "label": lab} for s, _, lab in siblings if s != slug] + [{"href": f"{hub['slug']}.html", "label": hub["label"]}] + p.get("related_pages", [])
     if guide:
         page["related_article"] = guide
+    page.update(ISITAN_INTRO_VIDEO)
     if extra:
         page.update(extra)
     write_json(os.path.join(ROOT, "content", "pages", f"{slug}.json"), page)
@@ -340,6 +348,7 @@ def write_hub(slug, h, families, set_name, section_label, subpages, *, extra=Non
         "related_blurb": h.get("related_blurb", ""),
         "related_pages": [{"href": f"{s}.html", "label": t} for s, t, _, _, _ in subpages],
     }
+    page.update(ISITAN_INTRO_VIDEO)
     if extra:
         page.update(extra)
     write_json(os.path.join(ROOT, "content", "pages", f"{slug}.json"), page)
