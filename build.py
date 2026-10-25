@@ -600,9 +600,16 @@ def range_table(subpages, pick=None):
                 continue
             if spec.get("kind") == "table":
                 gk = spec.get("glance_keys", [])
+
+                def cell(g, k):
+                    """one picked column: k is a glance key or a list of alternative keys (Dener 'working_area' = Senfeng 'area')"""
+                    for key in ([k] if isinstance(k, str) else k):
+                        if key in gk and gk.index(key) < len(g) and g[gk.index(key)]:
+                            return g[gk.index(key)]
+                    return "—"
                 for m in spec["models"]:
                     g = m.get("glance", [])
-                    cols = [g[gk.index(k)] if k in gk and gk.index(k) < len(g) and g[gk.index(k)] else "—" for k in pick] if pick else g
+                    cols = [cell(g, k) for k in pick] if pick else g
                     rows.append({"model": m["name"], "family": f["short"], "href": f"{sp['slug']}.html#{f['id']}", "kind": sp.get("nav_label") or sp["title"],
                                  "cols": cols, "line": ""})
                 continue

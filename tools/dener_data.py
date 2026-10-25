@@ -7,14 +7,14 @@ Model numbers are Dener's: metric bending length × metric tonnage (hydraulic / 
 table size (lasers).
 
 Pages fed from here: dener-cnc-press-brakes (hydraulic XL, hybrid XH, servo-electric DDM, ball-screw DDS), shear-cutting (DAS CNC
-guillotine, BS / BSY swing beam — appended after the SRGM groups), laser-cutting-machine (GFL + Smart sheet lasers),
-tube-laser-cutting-machine (FTL, E-FTL) and panel-bender.
+guillotine, BS / BSY swing beam — appended after the SRGM groups), dener-fiber-lasers (GFL + Smart sheet lasers, under the
+laser-cutting-machine hub), dener-tube-lasers (FTL, E-FTL, under the tube-laser-cutting-machine hub) and panel-bender.
 """
 BRAND = "dener"
 P_PB = "dener-cnc-press-brakes"      # under the press-brake hub (Oct 2026); press-brake.html is the hub of the three press-brake pages
 P_SHEAR = "shear-cutting"
-P_LASER = "laser-cutting-machine"
-P_TUBE = "tube-laser-cutting-machine"
+P_LASER = "dener-fiber-lasers"
+P_TUBE = "dener-tube-lasers"
 P_PANEL = "panel-bender"
 
 US_PER_T = 1.10231

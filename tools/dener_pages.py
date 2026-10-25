@@ -18,6 +18,7 @@ import dener_photos as PH
 import vl_sheet_data as VL   # NovoTech value-line panel benders below the Dener machine on panel-bender.html
 import senfeng_data as SF    # Senfeng lasers, tube lasers and panel benders: the value line below Dener, under the Senfeng brand
 import senfeng_pages as SFP
+import laser_nav as LN
 import press_brake_nav as PBN
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,7 +52,7 @@ def pdf(file, label):
 
 PAGE_PB = dict(
     title="Dener CNC Press Brakes, 22–661 Tons | NovoTech",
-    meta="Dener CNC press brakes sold in Canada: XL hydraulic to 661 US tons × 20 ft, XH hybrid servo-pump brakes, DDM and DDS servo-electric brakes from 22 tons — made in Turkey.",
+    meta="XL hydraulic CNC press brakes to 661 US tons × 20 ft, XH hybrid servo-pump brakes, DDM / DDS servo-electric brakes from 22 tons. Made in Turkey; sold in Canada.",
     h1="Dener CNC press brakes — hydraulic, hybrid, servo-electric and ball-screw",
     intro="A press brake bends sheet and plate between a punch and a V-die; the CNC positions the back gauge and controls the ram depth, "
           "crowning and angle, so the operator loads the sheet and presses the pedal. NovoTech sells Dener press brakes in Canada — the "
@@ -91,82 +92,75 @@ PAGE_PB = dict(
 )
 
 PAGE_LASER = dict(
-    title="Fiber Laser Cutting Machines, 1.5–80 kW | NovoTech",
-    meta="Sheet metal fiber lasers sold in Canada: Dener GFL and Smart lasers, 3 – 40 kW, and the Senfeng value line from 4 × 4 ft machines to 60 kW plate gantries.",
-    h1="Sheet metal fiber laser cutting machines — 4 × 4 ft to 10 × 164 ft, 1.5 to 80 kW",
-    intro="A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″, stainless and aluminum "
-          "to 1″ and more with the high-power sources — at speeds no plasma or punch can match, with a clean edge and no tooling. NovoTech sells "
-          "Dener fiber lasers in Canada: the GFL production laser with a 1.5 G gantry and pallet changer in 5 × 10, 6.6 × 13 and 6.6 × 20 ft, "
-          "and the Smart series — closed-type with double table in six sizes to 41 ft, semi-closed single table to 13 × 82 ft, and the open-type "
-          "entry machine — all with IPG, Raycus or nLIGHT sources from 3 to 40 kW, Precitec autofocus heads and nesting software. Loading "
-          "towers, sheet storage and bevel heads are available. Below the Dener machines is the Senfeng value line, sold under its own brand: "
-          "compact enclosed lasers from 4 × 4 ft, the NP open-type machine, the H series with pallet changer to 80 kW, sheet-and-tube "
-          "combination lasers, plate gantries to 10 × 164 ft with bevel heads, 3D lasers and coil-fed lines. Installed and supported from Mississauga, ON.",
-    points=["Dener GFL: 1.5 G, 394 ft/min, pallet changer — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart closed, semi-closed and open lasers to 13 × 82 ft",
-            "Senfeng value line: compact 4 × 4 and 5 × 10 ft lasers from 1.5 kW, NP open-type to 12 kW, H series with pallet changer to 80 kW",
-            "Senfeng sheet + tube combos, R / TX plate gantries to 10 × 164 ft with ±45° bevel, 3D lasers, coil-fed lines; automation for every model"],
+    title="Dener Fiber Laser Cutting Machines, 3–40 kW | NovoTech",
+    meta="GFL production lasers with 1.5 G gantry and pallet changer, 5 × 10 to 6.6 × 20 ft; Smart series closed, semi-closed to 13 × 82 ft and open-type. Made in Turkey.",
+    h1="Dener fiber lasers — GFL production lasers and the Smart series, 5 × 10 to 13 × 82 ft, 3 to 40 kW",
+    intro="Dener's sheet lasers are the premium line of NovoTech's laser section: built in Kayseri, Turkey, on stress-relieved frames with IPG, "
+          "Raycus or nLIGHT sources, Precitec autofocus heads and nesting software, and backed by Dener Canada parts in Mississauga. The GFL is "
+          "the production machine — a space-frame gantry rated for 1.5 G and 394 ft/min, a pallet changer that loads the next sheet while the "
+          "first is cut, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft with 3 to 40 kW. The Smart series comes from the same factory at a lower price: "
+          "the closed-type with laser-safe cabin and double exchange table in six sizes to a 41 ft bed, the semi-closed single-table machines "
+          "from 8.2 × 20 to 13 × 82 ft for long plate, and the open-type 3 – 6 kW entry laser. Loading towers, sheet storage, bevel heads and "
+          "air-cutting packages are available for all of them. A 6 kW machine cuts 3/4″ mild steel; 12 kW cuts 1″, 20 – 40 kW 1-1/2″ and beyond. "
+          "Installed, trained and supported from Mississauga, ON.",
+    points=["GFL: 1.5 G, 394 ft/min, ±0.03 mm, pallet changer — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
+            "Smart closed-type: double table, 1 G, 459 ft/min, six sizes to 8.5 × 41 ft; semi-closed single table to 13 × 82 ft",
+            "Smart open-type: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft — the lowest-priced Dener laser; towers, storage and bevel heads optional"],
     hero="dn-gfl-3", minis=["dn-smart-1", "dn-gfl-2"],
     groups=[("laser-gfl", "GFL production fiber lasers", "Dener's premium sheet laser: 1.5 G, pallet changer, 3 – 40 kW — built for a job shop that cuts all day.", BRAND),
-            ("laser-smart", "Smart fiber lasers", "The economy line from the same factory: closed, semi-closed and open machines in table sizes to 13 × 82 ft.", BRAND),
-            ("laser-senfeng", "Senfeng fiber lasers — the value line", "Senfeng's own-brand lasers from Jinan: the lowest-priced way into fiber cutting, and a range that reaches 80 kW, 10 × 164 ft plate and coil-fed lines.", SF.BRAND)],
-    faq=[{"q": "What laser power do I need?",
-          "a": "Power sets the thickness and the speed. As a guide for mild steel: 3 kW cuts 1/2″, 6 kW 3/4″ (and 1/4″ at over 300 in/min), 12 kW 1″, 20 kW 1-1/4″ and 30 – 40 kW 1-1/2″ and beyond; stainless and aluminum run about 20 – 30 % thinner at the same power, with nitrogen or air assist. Most Canadian job shops buying today choose 6 or 12 kW: thick enough for structural work, fast enough to pay for the machine on thin sheet. Tell us your material mix and we run the cutting chart for you."},
-         {"q": "GFL or Smart — what is the difference?",
+            ("laser-smart", "Smart fiber lasers", "The economy line from the same factory: closed, semi-closed and open machines in table sizes to 13 × 82 ft.", BRAND)],
+    faq=[{"q": "GFL or Smart — what is the difference?",
           "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a pallet changer and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a double exchange table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."},
-         {"q": "Dener or Senfeng?",
-          "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, Dener Canada parts in Mississauga and the longer life at high duty. Senfeng is the value line: a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, at a price that puts a 12 kW laser within reach of a small shop — and with a range Dener does not cover: 4 × 4 ft compact machines, sheet-and-tube combos, 60 kW plate gantries, 3D and coil-fed lasers. Both are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote both so you can compare."},
-         {"q": "Which table size?",
-          "a": "The model number is the nominal working area in centimetres: 3015 = 10 × 5 ft (3,000 × 1,500 mm) — a standard 4 × 8 or 5 × 10 sheet; 4020 = 13 × 6.6 ft; 6020 = 20 × 6.6 ft for 6 × 20 plate; 6025 and 8025 = 20 and 26 ft × 8.2 ft; 12526 = 41 × 8.5 ft. The 5 × 10 machine is the Canadian standard; buy the 6020 if you cut 20 ft plate or want to nest several sheets without reloading."},
-         {"q": "What about assist gas and fume extraction?",
-          "a": "Oxygen gives the fastest cut and an oxide edge on mild steel; nitrogen a clean, paint-ready edge on all metals; compressed air at 16 bar replaces nitrogen on sheet to about 1/4″ and cuts the gas bill to near zero — the intelligent air-cutting package is an option. The machines have pneumatic extraction compartments under the table and connect to a dust collector, which we can supply."},
-         {"q": "Can the laser be automated?",
-          "a": "Yes — a loading / unloading tower that feeds the pallet changer, sheet storage with several shelves for lights-out production, part sorting, and bevel heads for weld preparation. The GFL and the closed-type Smart are prepared for the tower; ask us for the automation layout."},
+         {"q": "Which Smart — closed, semi-closed or open?",
+          "a": "Closed-type when you cut all day: the double exchange table keeps the laser cutting while you load, and the cabin keeps fumes and the beam inside. Semi-closed when the parts are long — 20 to 82 ft single tables for beams, ship sections and plate that no standard laser takes. Open-type when the budget comes first and the sheets are loaded by hand or forklift from any side: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft, the lowest-priced Dener laser."},
+         {"q": "What is in a Dener laser as standard?",
+          "a": "An IPG, Raycus or nLIGHT fiber source, a Precitec or Raytools autofocus cutting head with capacitive height sensing and collision protection, a stress-relieved welded frame, pneumatic fume-extraction compartments under the table and scrap boxes on wheels, a chiller, a CNC with nesting software, cutting database and production reports, and a remote handset. Cutting gas regulators, dust collector connections and the CSA-approved panel with a 600 V transformer are included in the NovoTech package."},
+         {"q": "What can be added later?",
+          "a": "A loading / unloading tower that feeds the pallet changer, sheet storage with several shelves for lights-out production, part sorting, a bevel head for weld preparation, a marking head, and the intelligent air-cutting package that replaces nitrogen on sheet to about 1/4″. The GFL and the closed-type Smart are prepared for the tower from the factory."},
+         {"q": "How does Dener compare with the Senfeng value line?",
+          "a": "Dener is the premium line — heavier frame rated for 1.5 G, Precitec heads, IPG / nLIGHT sources, longer life at high duty and Dener Canada parts in Mississauga. Senfeng builds its own sources and heads and sells for less, with a range Dener does not cover (4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, coil-fed lines). The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."},
          {"q": "What does the machine need on site?",
-          "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas, a dust collector and a compressed-air supply for air cutting. A 6 kW 3015 draws about 30 kW in total. Delivery, installation and operator training are done by NovoTech from Mississauga."},
+          "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas — oxygen for mild steel, nitrogen or compressed air for stainless and aluminum — a dust collector and a compressed-air supply. A 6 kW GFL 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with the pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga."},
          VOLT_FAQ_GENERIC],
-    faq_title="Questions we get asked about fiber laser cutting machines",
-    related_pages=[{"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"}, {"href": "laser-welding-machine.html", "label": "Laser welding & cladding"},
-                   {"href": "press-brake.html", "label": "Press brakes"}, {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring after laser cutting"},
+    faq_title="Questions we get asked about Dener fiber lasers",
+    related_pages=[{"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}, {"href": "dener-cnc-press-brakes.html", "label": "Dener CNC press brakes"},
+                   {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring after laser cutting"},
                    {"href": "shear-cutting.html", "label": "Metal shears"}, {"href": "panel-bender.html", "label": "CNC panel bender"}],
     related_title="Machinery that works alongside a laser",
 )
 
 PAGE_TUBE = dict(
-    title="Tube Laser Cutting Machines, Ø0.3″ to 25″ | NovoTech",
-    meta="Tube and profile fiber lasers sold in Canada: Dener E-FTL and FTL to Ø25″ and 12 m bars, and the Senfeng value line from Ø0.5″ to four-chuck 49 ft machines.",
-    h1="Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 1.5 to 20 kW",
-    intro="A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one "
-          "pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells Dener tube lasers in Canada: the E-FTL "
-          "with servo chucks accelerating at 1 G for tube from Ø0.3″ to 13.8″, and the heavy FTL for structural tube and pipe to Ø25.2″ and "
-          "12 m bars weighing up to 2,600 kg. Both load from a bundle automatically, support the tube as it is cut, nest parts along the bar "
-          "and unload finished pieces; 3 to 20 kW sources, bevel heads for weld preparations. For trailer, railing, furniture, agricultural, "
-          "HVAC and steel-construction work. Below the Dener machines is the Senfeng value line under its own brand: two-chuck T and PLUS "
-          "machines from Ø0.5″ and 1.5 kW, bevel-cutting GT, zero-tailing NT and the three- and four-chuck ST / HT lasers to Ø25″ and 49 ft. "
-          "Installed and supported from Mississauga, ON.",
-    points=["Dener E-FTL: Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm; FTL: Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb",
-            "Senfeng value line: T and PLUS two-chuck lasers Ø0.5″ – 14″, 20 – 39 ft, 1.5 – 6 kW; GT with 45° bevel head",
-            "Senfeng NT zero-tailing, ST / HT heavy-duty to Ø25″, 6,600 lb and 49 ft; H-beam profile line; bundle loaders for all"],
+    title="Dener Tube Laser Cutting Machines, Ø0.3–25″ | NovoTech",
+    meta="E-FTL tube lasers with 1 G servo chucks for Ø0.3″ to 13.8″; heavy FTL for pipe, tube and beams to Ø25.2″ and 12 m bars. Bundle loaders, bevel heads, 3 – 20 kW.",
+    h1="Dener tube lasers — E-FTL and FTL, Ø0.3″ to 25.2″, bars to 39.4 ft, 3 to 20 kW",
+    intro="Dener's tube lasers are the premium line of NovoTech's tube laser section: built in Kayseri, Turkey, with servo chucks, Precitec "
+          "heads and 3 to 20 kW sources, and backed by Dener Canada parts in Mississauga. The E-FTL is the fast machine for the sizes most "
+          "fabricators use — railings, frames, furniture, trailers, exhaust: four chuck sizes from Ø0.3″ to 13.8″, servo axes accelerating at "
+          "1 G to 394 ft/min and ±0.05 mm repeatability on 7, 9 or 12 m bars. The FTL is built for weight: structural tube, pipe and beams to "
+          "Ø25.2″ and 12 m bars of 2,600 kg — 12,000 kg on the long-bed 250 — with ±0.1 mm on the large chucks and a 5-axis bevel head for weld "
+          "preparations. Both load from a bundle automatically, support the tube as it is cut, nest parts along the bar from STEP / IGES models "
+          "and unload finished pieces. Installed, trained and supported from Mississauga, ON.",
+    points=["E-FTL 120 / 180 / 250 / 350: Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm, bars to 39.4 ft",
+            "FTL 250 / 350 / 500 / 640: Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb (12,000 kg on the long-bed 250), 5-axis bevel head",
+            "3 – 20 kW sources, bundle loaders, following supports, STEP / IGES tube nesting; made in Turkey, Dener Canada parts in Mississauga"],
     hero="dn-tube-2", minis=["dn-tube-6", "dn-tube-1"],
     groups=[("tube-eftl", "E-FTL tube lasers", "The fast tube laser for Ø0.3″ to 13.8″: 1 G servo axes, 394 ft/min, four chuck sizes.", BRAND),
-            ("tube-ftl", "FTL heavy tube lasers", "For structural tube, pipe and profile to Ø25.2″ and 12 m bars of 2,600 kg.", BRAND),
-            ("tube-senfeng", "Senfeng tube lasers — the value line", "Senfeng's own-brand tube lasers from Jinan: 30 models from the Ø0.5″ two-chuck T series to four-chuck machines for Ø25″ tube and H-beams.", SF.BRAND)],
-    faq=[{"q": "What can a tube laser cut?",
-          "a": "Round, square, rectangular, oval and open profiles — angle, channel, flat bar — in mild steel, stainless, aluminum, copper and brass, from the chuck's minimum to its maximum size, in wall thicknesses to about 1/2″ (12 kW) or 3/4″ (20 kW). Holes, slots, copes for tube-to-tube joints, tabs and notches for folding, engraving — anything you can draw on the surface of the profile. The 5-axis head adds bevels for weld preparation."},
-         {"q": "E-FTL or FTL?",
+            ("tube-ftl", "FTL heavy tube lasers", "For structural tube, pipe and profile to Ø25.2″ and 12 m bars of 2,600 kg.", BRAND)],
+    faq=[{"q": "E-FTL or FTL?",
           "a": "The E-FTL is the fast machine for the sizes most fabricators use — railings, frames, furniture, trailers, exhaust — Ø0.3″ to 13.8″, accelerating at 1 G and running 394 ft/min on the small chucks. The FTL is built for weight: structural tube and pipe to Ø25.2″ and 12 m bars of 2,600 kg, with ±0.1 mm repeatability on the large chucks. Both take the same 3 – 20 kW sources and bundle loaders."},
-         {"q": "Dener or Senfeng?",
-          "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, Dener Canada parts in Mississauga. Senfeng's tube lasers are the value line: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser and cuts the railings, frames and furniture tube most shops run, and the range goes where few others do — zero-tailing three-chuck machines, four-chuck machines for 49 ft stock, Ø25″ pipe and the H-beam profile line. We quote both so you can compare."},
-         {"q": "How is the tube loaded?",
-          "a": "From a bundle: the automatic loader separates one bar, measures it and feeds it to the rear chuck; the front chuck and following supports hold the bar as it is cut; finished parts drop onto the unloading table or conveyor and the remnant is ejected. One operator runs the machine while loading the next bundle. Loading lengths of 7, 9 and 12 m."},
-         {"q": "What about software?",
-          "a": "The CNC imports STEP / IGES solid models of the tube parts, unfolds them onto the profile, nests them along the bar to use the remnant and writes the program — with the cutting database for the material and the seam detection to orient welded tube. Offline programming on a PC is standard."},
+         {"q": "Which chuck size?",
+          "a": "The number is the largest round tube in millimetres: E-FTL 120 takes Ø0.3 – 4.7″, 180 to 7.1″, 250 to 9.8″ and 350 to 13.8″; FTL 250, 350, 500 and 640 take Ø0.6″ to 9.8, 13.8, 19.7 and 25.2″. Square and rectangular tube is limited by the diagonal, so a 350 chuck takes about 9.8″ square. Buy the chuck for the largest tube you cut regularly — a smaller chuck is faster and holds thin tube better — and the bar length (7, 9 or 12 m) for the stock you buy."},
+         {"q": "Can it cut bevels and weld preparations?",
+          "a": "Yes — the 5-axis head on the FTL (optional on the E-FTL) tilts to ±45° so mitred corners, chamfers and weld preparations are cut in the same pass as the holes and copes; the tube arrives at the welding table ready to fit. The seam detector orients welded tube so the seam sits where the drawing puts it."},
+         {"q": "How does Dener compare with the Senfeng value line?",
+          "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, Dener Canada parts in Mississauga. Senfeng's tube lasers are the value line: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser, and the range goes to zero-tailing three-chuck and four-chuck machines for 49 ft stock. The comparison and the capacity table for both lines are on the tube laser cutters overview."},
          {"q": "Floor space and power?",
-          "a": "A 7 m machine needs about 20 m (65 ft) of length including the loader and unloader; a 12 m machine about 30 m. 600 V 3-phase with the supplied transformer or 480 V, a chiller (included), assist gas and a dust collector. We lay the machine out for your building before you order."},
+          "a": "A 7 m E-FTL needs about 20 m (65 ft) of length including the loader and unloader; a 12 m FTL about 30 m. 600 V 3-phase with the supplied transformer or 480 V, a chiller (included), assist gas and a dust collector. We lay the machine out for your building before you order."},
          VOLT_FAQ_GENERIC],
-    faq_title="Questions we get asked about tube lasers",
-    related_pages=[{"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}, {"href": "laser-welding-machine.html", "label": "Laser welding & cladding"},
-                   {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "pipe-notcher.html", "label": "Tube notchers"},
-                   {"href": "tube-end-forming-machines.html", "label": "Tube end formers"}, {"href": "band-saw.html", "label": "Band saws"}],
+    faq_title="Questions we get asked about Dener tube lasers",
+    related_pages=[{"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"},
+                   {"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "tube-end-forming-machines.html", "label": "Tube end formers"},
+                   {"href": "band-saw.html", "label": "Band saws"}],
     related_title="More tube machinery from NovoTech",
 )
 
@@ -254,13 +248,13 @@ def build():
     fams += [dict(f, pdf=pdf_sf_tube) for f in SF.TUBE_FAMILIES]
     fams += [dict(f, pdf=pdf_sf_panel) for f in SF.PANEL_FAMILIES]
     write_families(SET, fams)
-    LASER_LINE = ("Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga); Senfeng Laser builds the value line in "
-                  "Jinan, China (since 2004, CE / FDA / ETL, Senfeng Laser USA). Both sold, installed and supported in Canada by NovoTech.")
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **INTRO_VIDEO}
     write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", hub=PBN.hub(), siblings=PBN.siblings(),
                    extra={**common, "nav_label": "Dener CNC press brakes", "catalogue_pdf": None, "catalogue_pdfs": [pdf_pb, pdf_servo]})
-    write_category(D.P_LASER, PAGE_LASER, fams, SET, "Sheet laser cutters", extra={**common, "nav_label": "Sheet laser cutters", "catalogue_pdf": None, "catalogue_pdfs": [pdf_laser, pdf_sf_laser], "hero_brand_line": LASER_LINE})
-    write_category(D.P_TUBE, PAGE_TUBE, fams, SET, "Tube laser cutters", extra={**common, "nav_label": "Tube laser cutters", "catalogue_pdf": None, "catalogue_pdfs": [pdf_tube, pdf_sf_tube], "hero_brand_line": LASER_LINE})
+    write_category(D.P_LASER, PAGE_LASER, fams, SET, LN.SECTIONS["sheet"]["section"], hub=LN.hub("sheet"), siblings=LN.siblings("sheet"),
+                   extra={**common, "nav_label": "Dener fiber lasers", "catalogue_pdf": pdf_laser})
+    write_category(D.P_TUBE, PAGE_TUBE, fams, SET, LN.SECTIONS["tube"]["section"], hub=LN.hub("tube"), siblings=LN.siblings("tube"),
+                   extra={**common, "nav_label": "Dener tube lasers", "catalogue_pdf": pdf_tube})
     write_category(D.P_PANEL, PAGE_PANEL, fams, SET, "Panel benders", extra={**common, "nav_label": "Panel benders", "catalogue_pdf": None, "catalogue_pdfs": [pdf_panel, pdf_sf_panel, pdf_vl_panel],
                                                                                 "hero_brand_line": "The Dener panel bender is made in Turkey by Dener Makina; the BDC machines by Senfeng Laser in Jinan, China; the PB-M and PB-A carry the NovoTech name — built in China to North American standards. All sold, installed and supported in Canada by NovoTech."})
     keys = register_images()
@@ -276,7 +270,7 @@ def build():
         raise SystemExit(f"image keys without a photo: {missing}")
     vids = sorted({v["id"] for f in fams + D.SHEAR_FAMILIES for v in f["videos"] if f["id"] not in {x["id"] for x in VL.PANEL_FAMILIES + SF.ALL}} | {INTRO_VIDEO["intro_video"]["id"]})
     open(os.path.join(ROOT, "tools", "dener_vids.txt"), "w").write(" ".join(vids))
-    print(f"dener: {len(fams)} families on 4 pages + {len(D.SHEAR_FAMILIES)} shear families · images: {len(keys)} · videos: {len(vids)}")
+    print(f"dener: {len(fams)} families on 4 Dener pages (+ Senfeng families for the Senfeng pages) + {len(D.SHEAR_FAMILIES)} shear families · images: {len(keys)} · videos: {len(vids)}")
 
 
 if __name__ == "__main__":

@@ -226,3 +226,23 @@ title "Hydraulic Shop Presses, H-Frame, 33–441 Tons | NovoTech" (was "Hydrauli
 h1 "Hydraulic shop presses — H-frame, mobile-cylinder, T-slot and straightening presses, 33 to 441 US tons", intro led by
 the shop press; the production presses stay as the second group with their own anchor (#novotech-production-group), now
 also a child in the main menu ("Hydraulic presses" → shop presses / production presses).
+
+## Laser hubs (Oct 25) — task #28
+
+Sheet and tube lasers each became a hub + one page per line, per the section rule (the shared sheet page carried 11
+families / ~10,000 words; the tube page 5 families / 40 Senfeng models):
+- laser-cutting-machine.html (hub, slug kept — GSC "laser cutting machines" 520 impr, "laser cutting machine" 240,
+  "fiber laser cutting machine" 349; CA volume "fiber laser cutting machine" 170, SD 12) → title "Fiber Laser Cutting
+  Machines, 1.5–80 kW, Canada | NovoTech"; subpages dener-fiber-lasers ("Dener Fiber Laser Cutting Machines, 3–40 kW |
+  NovoTech" — GSC "dener fibre laser" 308 impr, "dener laser" 143) and senfeng-fiber-lasers ("Senfeng Fiber Laser Cutting
+  Machines, 1.5–80 kW | NovoTech").
+- tube-laser-cutting-machine.html (hub, slug kept; CA "tube laser cutting machine" 90, SD 10) → "Tube Laser Cutting
+  Machines, Ø0.3″ to 25″, Canada | NovoTech"; subpages dener-tube-lasers and senfeng-tube-lasers.
+The buying FAQs (which line, power guide, table size, single vs double table, gas, automation, site) sit on the hubs; the
+line pages carry the product FAQs (GFL vs Smart, closed / semi / open, chuck size, T vs PLUS, zero-tailing, ST / HT …) with a
+one-line cross-reference to the hub, so no FAQ text is duplicated.  Range tables: build.py range_table() now takes a list of
+alternative glance keys per column (Dener "working_area" = Senfeng "area", "tube" = "round"), "—" where a family has no
+such column.  Generators: tools/laser_nav.py (sections), tools/dener_pages.py (Dener pages), tools/senfeng_pages.py (Senfeng
+pages, families from the dener set), tools/laser_hub.py (hubs → sets sheet-lasers / tube-lasers).  Keyword tools were all
+exhausted today (Ubersuggest 3/3 reports, Semrush API units, Ahrefs plan), so the titles rest on the GSC export and the CA
+volumes gathered on Oct 24.

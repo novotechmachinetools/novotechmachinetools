@@ -94,11 +94,31 @@
     },
     {
      "label": "Sheet laser cutters",
-     "href": "laser-cutting-machine.html"
+     "href": "laser-cutting-machine.html",
+     "children": [
+      {
+       "label": "Dener fiber lasers · premium line",
+       "href": "dener-fiber-lasers.html"
+      },
+      {
+       "label": "Senfeng fiber lasers · value line",
+       "href": "senfeng-fiber-lasers.html"
+      }
+     ]
     },
     {
      "label": "Tube laser cutters",
-     "href": "tube-laser-cutting-machine.html"
+     "href": "tube-laser-cutting-machine.html",
+     "children": [
+      {
+       "label": "Dener tube lasers · premium line",
+       "href": "dener-tube-lasers.html"
+      },
+      {
+       "label": "Senfeng tube lasers · value line",
+       "href": "senfeng-tube-lasers.html"
+      }
+     ]
     },
     {
      "label": "Laser welding & cladding",

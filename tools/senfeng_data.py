@@ -6,16 +6,17 @@ leaflets and the model numbers (3015 = 3,000 × 1,500 mm working area; 6024 = 6 
 like the rest of the site.  The range is condensed — one family per machine type, every model of the type in its table.
 Excluded on NovoTech's instruction: press brakes, CNC lathes and machining centres.
 
-Pages fed from here: laser-cutting-machine (sheet lasers, sheet + tube combo, large-format plate, 3D, coil-fed — appended
-after the Dener groups by tools/dener_pages.py), tube-laser-cutting-machine (two-chuck, high-speed / bevel, heavy-duty),
-panel-bender (BDC) and laser-welding-machine (handheld, robotic, cladding — tools/senfeng_pages.py).
+Pages fed from here: senfeng-fiber-lasers (sheet lasers, sheet + tube combo, large-format plate, 3D, coil-fed — under the
+laser-cutting-machine hub) and senfeng-tube-lasers (two-chuck, high-speed / bevel, heavy-duty — under the tube-laser-cutting-machine
+hub), both written by tools/senfeng_pages.py from the 'dener' family set; panel-bender (BDC, appended after the Dener group by
+tools/dener_pages.py) and laser-welding-machine (handheld, robotic, cladding — tools/senfeng_pages.py).
 """
 import re
 from dener_data import inch, feet, length, tons, hp, speed, weight, dims, gal, mmin, table, spec, vids  # noqa: F401
 
 BRAND = "senfeng"
-P_LASER = "laser-cutting-machine"
-P_TUBE = "tube-laser-cutting-machine"
+P_LASER = "senfeng-fiber-lasers"
+P_TUBE = "senfeng-tube-lasers"
 P_PANEL = "panel-bender"
 P_WELD = "laser-welding-machine"
 
