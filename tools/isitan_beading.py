@@ -1,4 +1,4 @@
-"""İşitan section: bead rollers / beading machines (catalogue pages 28–31) — one category page."""
+"""ISITAN section: bead rollers / beading machines (catalogue pages 28–31) — one category page."""
 from isitan_lib import *  # noqa: F401,F403
 
 SET = "beading"
@@ -6,16 +6,16 @@ SECTION = "Bead rollers"
 SLUG = "bead-rollers"
 
 IMAGES = {
-    "is-hibks-4": ("img/ISITAN-HIBKS-4.jpg", "İşitan HIBKS 4.0 hydraulic bead roller for sheet up to 8 ga"),
-    "is-ibks-4": ("img/ISITAN-IBKS-4.jpg", "İşitan IBKS 4.0 motorized bead roller with manual top-roll setting"),
-    "is-hibks-25": ("img/ISITAN-HIBKS-25.jpg", "İşitan HIBKS 2.5 hydraulic bead roller for sheet up to 12 ga"),
-    "is-ibks-25": ("img/ISITAN-IBKS-25.jpg", "İşitan IBKS 2.5 motorized bead roller"),
+    "is-hibks-4": ("img/ISITAN-HIBKS-4.jpg", "ISITAN HIBKS 4.0 hydraulic bead roller for sheet up to 8 ga"),
+    "is-ibks-4": ("img/ISITAN-IBKS-4.jpg", "ISITAN IBKS 4.0 motorized bead roller with manual top-roll setting"),
+    "is-hibks-25": ("img/ISITAN-HIBKS-25.jpg", "ISITAN HIBKS 2.5 hydraulic bead roller for sheet up to 12 ga"),
+    "is-ibks-25": ("img/ISITAN-IBKS-25.jpg", "ISITAN IBKS 2.5 motorized bead roller"),
     "is-hibks-rolls-4": ("cut/p28-155.png", "HIBKS / IBKS 4.0 — standard roll sets S1–S4 and extra roll sets E1–E8"),
     "is-hibks-rolls-25": ("cut/p29-162.png", "HIBKS / IBKS 2.5 — standard roll sets S1–S4 and extra roll sets E1–E8"),
-    "is-ibks-18": ("img/ISITAN-IBKS-18.jpg", "İşitan IBKS 1.8 motorized bead roller — 3 sets of standard rolls"),
-    "is-ikm-12": ("img/ISITAN-IKM-12.jpg", "İşitan IKM 1.2 motorized bead roller with 8 sets of standard rolls"),
-    "is-ikmp-12": ("img/ISITAN-IKMP-12.jpg", "İşitan IKMP 1.2 motorized bead roller on floor stand"),
-    "is-ikmp-12p": ("img/ISITAN-IKMP-12P.jpg", "İşitan IKMP 1.2 P bead roller with pneumatic top shaft"),
+    "is-ibks-18": ("img/ISITAN-IBKS-18.jpg", "ISITAN IBKS 1.8 motorized bead roller — 3 sets of standard rolls"),
+    "is-ikm-12": ("img/ISITAN-IKM-12.jpg", "ISITAN IKM 1.2 motorized bead roller with 8 sets of standard rolls"),
+    "is-ikmp-12": ("img/ISITAN-IKMP-12.jpg", "ISITAN IKMP 1.2 motorized bead roller on floor stand"),
+    "is-ikmp-12p": ("img/ISITAN-IKMP-12P.jpg", "ISITAN IKMP 1.2 P bead roller with pneumatic top shaft"),
     "is-ikm-rolls-extra": ("cut/p30-173.png", "Extra roll sets for IKMP and IKM bead rollers"),
     "is-ikm-rolls-std": ("cut/p30-174.png", "Standard roll sets for IKMP and IKM bead rollers"),
 }
@@ -125,12 +125,12 @@ PAGE = dict(
     title="Bead Roller Machines for Sheet Metal & HVAC | NovoTech",
     meta="Hydraulic and motorized bead roller machines for sheet to 8 ga — HIBKS, IBKS, IKM and IKMP with beading, swaging and flanging roll sets. CSA panels, parts in Mississauga, ON.",
     h1="Bead rollers and beading machines",
-    intro="Bead rollers — also called beading machines, rotary machines or swagers — form stiffening beads, wired edges, flanges, crimps and seams in sheet metal for HVAC ducts, drums, tanks, buckets and architectural work. İşitan builds them motorized and hydraulic — from the IKM and IKMP cast-iron bead rollers with foot-pedal control to the HIBKS 4.0, whose hydraulic top roll beads 8 ga steel under constant pressure. Every machine comes with its sets of standard rolls, a CSA-approved panel and support from Mississauga, ON.",
+    intro="Bead rollers — also called beading machines, rotary machines or swagers — form stiffening beads, wired edges, flanges, crimps and seams in sheet metal for HVAC ducts, drums, tanks, buckets and architectural work. ISITAN builds them motorized and hydraulic — from the IKM and IKMP cast-iron bead rollers with foot-pedal control to the HIBKS 4.0, whose hydraulic top roll beads 8 ga steel under constant pressure. Every machine comes with its sets of standard rolls, a CSA-approved panel and support from Mississauga, ON.",
     points=["Hydraulic HIBKS and motorized IBKS for sheet to 8 ga (4 mm)", "Motorized IKM / IKMP with 4 speeds or pneumatic top shaft", "Standard roll sets (4 to 8 per machine) and the roll spanner key included; extra sets made to order"],
     hero="is-hibks-4", minis=["is-ikmp-12p", "is-ibks-18"],
     groups=[("beading", "Bead rollers line-up", "From the IKM motorized bead roller to the hydraulic HIBKS 4.0 — all with standard roll sets included.", "isitan")],
     faq=[{"q": "Bead roller, beading machine, rotary machine or swager — what is the difference?", "a": "They are the same machine under different names: two shaft-mounted rolls that form a profile in sheet metal as it is turned through them. \"Bead roller\" is the common North American term, \"swager\" the older sheet-metal trade word, \"rotary machine\" the HVAC term. The roll sets decide what it does — beading, wiring, crimping, flanging, burring or trimming."},
-         {"q": "Which rolls are included?", "a": "Every İşitan bead roller ships with its standard roll sets — 4 sets (S1–S4) on the HIBKS / IBKS 4.0 and 2.5, 3 on the IBKS 1.8, 8 sets on the IKM 1.2 and IKMP 1.2 — plus the roll spanner key. Extra sets (E1–E8) and rolls for special jobs are made to order; tell us the profile you need."},
+         {"q": "Which rolls are included?", "a": "Every ISITAN bead roller ships with its standard roll sets — 4 sets (S1–S4) on the HIBKS / IBKS 4.0 and 2.5, 3 on the IBKS 1.8, 8 sets on the IKM 1.2 and IKMP 1.2 — plus the roll spanner key. Extra sets (E1–E8) and rolls for special jobs are made to order; tell us the profile you need."},
          {"q": "Hydraulic or motorized top roll?", "a": "On the IBKS the operator sets the gap between the rolls by hand and the motor turns them. On the HIBKS the top roll is moved hydraulically, so the pressure stays constant through the bead and deep beads in 8 ga steel are formed in one pass with the foot pedal — the choice for production work and heavier sheet."},
          {"q": "What is throat depth?", "a": "The distance from the rolls to the frame: it sets how far from the sheet edge a bead can be formed. The IBKS 1.8 has an 11″ throat for beads deep into a panel; the HIBKS / IBKS 4.0 7.9″."},
          {"q": "What voltage do bead rollers run on?", "a": "Motorized models are supplied for 600 V 3-phase with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request and 240 V single-phase on the 1–2 HP models."}],
@@ -140,5 +140,5 @@ PAGE = dict(
 def build():
     write_families(SET, FAMILIES)
     write_category(SLUG, PAGE, FAMILIES, SET, SECTION,
-                   extra={"nav_label": "Bead rollers", "related_pages": [{"href": "circle-cutters-and-seamers.html", "label": "Circle cutters & lock seamers"}, {"href": "slip-rolls.html", "label": "Slip rolls"}, {"href": "plate-rollers.html", "label": "Plate rollers & slip rolls"}]})
+                   extra={"nav_label": "Bead rollers", "related_pages": [{"href": "circle-cutters-and-seamers.html", "label": "Circle cutters & lock seamers"}, {"href": "plate-rollers.html", "label": "Plate rollers & slip rolls"}]})
     return IMAGES

@@ -13,7 +13,7 @@ SUBPAGES = [
     ("novotech-cnc-press-brakes", "NovoTech CNC press brakes — hydraulic and electric · value line", "vl-wad-1",
      "NovoTech's own brand, built in China to our specification with Delem, Hawe and Estun: hydraulic CNC brakes 55 – 331 tons, heavy-duty to 1,323 tons, electric servo brakes 3 – 176 tons and NC torsion-bar brakes from 33 tons.",
      "NovoTech CNC press brakes", "value"),
-    ("compact-hydraulic-press-brakes", "Compact hydraulic press brakes — İşitan Edgebender, 33 to 66 tons", "is-eb-1240-cnc",
+    ("compact-hydraulic-press-brakes", "Compact hydraulic press brakes — ISITAN Edgebender, 33 to 66 tons", "is-eb-1240-cnc",
      "The press brake for a sheet-metal shop rather than a steel-fabrication plant: 4.2 to 6.9 ft, 33 to 66 US tons, 2-axis NC or 3-axis CNC with Cybelec control, made in Turkey.",
      "Compact hydraulic press brakes", ""),
 ]
@@ -21,7 +21,7 @@ SUBPAGES = [
 
 def hub():
     return {"slug": HUB, "label": "All press brakes", "image": "dn-xl-1",
-            "blurb": "Every press brake NovoTech sells — Dener, NovoTech value line and İşitan — on one page, with the capacity table for the whole range."}
+            "blurb": "Every press brake NovoTech sells — Dener, NovoTech value line and ISITAN — on one page, with the capacity table for the whole range."}
 
 
 def siblings():

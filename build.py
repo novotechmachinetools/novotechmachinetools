@@ -591,7 +591,7 @@ def feature_gallery(f):
 
 def range_table(subpages, pick=None):
     """One row per model across the range: for the hub's 'at a glance' table.  `pick` (page.range_pick) names the glance keys
-    to show, in order, so families whose glance columns differ (İşitan Edgebender vs Dener XL) still line up under one header."""
+    to show, in order, so families whose glance columns differ (ISITAN Edgebender vs Dener XL) still line up under one header."""
     rows = []
     for sp in subpages:
         for f in sp["families"]:

@@ -1,4 +1,4 @@
-"""İşitan section: Edgebender compact hydraulic press brakes (catalogue pages 35–39) — one category page."""
+"""ISITAN section: Edgebender compact hydraulic press brakes (catalogue pages 35–39) — one category page."""
 from isitan_lib import *  # noqa: F401,F403
 
 SET = "edgebender"
@@ -6,7 +6,7 @@ SECTION = "Compact press brakes"
 SLUG = "compact-hydraulic-press-brakes"
 
 IMAGES = {
-    "is-eb-1240-cnc": ("cut/p35-222.png", "İşitan Edgebender 1240 CNC 3-axis hydraulic press brake, 44 US tons × 4.2 ft"),
+    "is-eb-1240-cnc": ("cut/p35-222.png", "ISITAN Edgebender 1240 CNC 3-axis hydraulic press brake, 44 US tons × 4.2 ft"),
     "is-eb-cnc-promecam-clamps": ("cut/p35-219.png", "Edgebender 1240 CNC — quick-release Promecam top-tool clamping"),
     "is-eb-cnc-backgauge": ("cut/p35-215.png", "Edgebender 1240 CNC — CNC X-axis backgauge fingers on HIWIN linear guides"),
     "is-eb-cnc-hydraulics": ("cut/p35-217.png", "Edgebender — HAWE / Rexroth hydraulic valves and pressure gauge"),
@@ -15,11 +15,11 @@ IMAGES = {
     "is-eb-cnc-lightguard": ("cut/p36-228.png", "Edgebender 1240 CNC — Leuze front safety light guard"),
     "is-eb-cnc-panel": ("cut/p39-262.png", "Edgebender — Siemens electrical panel"),
     # the EB photos sit on a soft grey floor glow that the auto pass keeps as a white blob — hand-set thresholds remove it
-    "is-eb-2160": ("img/EB2160.jpg", "İşitan Edgebender 2160 NC 2-axis hydraulic press brake, 66 US tons × 6.9 ft",
+    "is-eb-2160": ("img/EB2160.jpg", "ISITAN Edgebender 2160 NC 2-axis hydraulic press brake, 66 US tons × 6.9 ft",
                    {"cut_params": {"border_thr": 226, "neutral": 4, "hole_thr": 250, "hole_area": 400, "shadow_thr": None, "edge_hi": 250, "edge_lo": 215, "band_light": 225}}),
-    "is-eb-1540": ("img/EB1540.jpg", "İşitan Edgebender 1540 NC hydraulic press brake, 44 US tons × 5.1 ft",
+    "is-eb-1540": ("img/EB1540.jpg", "ISITAN Edgebender 1540 NC hydraulic press brake, 44 US tons × 5.1 ft",
                    {"cut_params": {"border_thr": 240, "neutral": 6, "hole_thr": 250, "hole_area": 400, "shadow_thr": None, "edge_hi": 252, "edge_lo": 225, "band_light": 238}}),
-    "is-eb-1230": ("cut/p37-234.png", "İşitan Edgebender 1230 NC 2-axis hydraulic press brake, 33 US tons × 4.2 ft"),
+    "is-eb-1230": ("cut/p37-234.png", "ISITAN Edgebender 1230 NC 2-axis hydraulic press brake, 33 US tons × 4.2 ft"),
     "is-eb-nc-bending": ("cut/p37-236.png", "Edgebender NC — bending a sheet behind the Leuze light guard"),
     "is-eb-nc-backgauge": ("cut/p37-238.png", "Edgebender NC — motorized X backgauge fingers on linear guides"),
     "is-eb-nc-promecam": ("cut/p37-239.png", "Edgebender 1540 / 2160 — Promecam quick-release tool clamps"),
@@ -137,7 +137,7 @@ PAGE = dict(
     title="Small Hydraulic Press Brakes, 33–66 Ton NC & CNC | NovoTech",
     meta="Small hydraulic press brakes: 33, 44 and 66 ton NC models from 4.2 to 6.9 ft and a 44-ton 3-axis CNC with Cybelec control and Promecam tooling. Parts in Canada.",
     h1="Compact hydraulic press brakes",
-    intro="A compact hydraulic press brake bends sheet metal between a punch and a V-die under hydraulic force — here 33 to 66 US tons over 4.2 to 6.9 ft, the size that fits a sheet-metal shop rather than a steel-fabrication plant. İşitan's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger machines see the Dener CNC press brakes and NovoTech's value-line CNC press brakes.",
+    intro="A compact hydraulic press brake bends sheet metal between a punch and a V-die under hydraulic force — here 33 to 66 US tons over 4.2 to 6.9 ft, the size that fits a sheet-metal shop rather than a steel-fabrication plant. ISITAN's Edgebender range bends up to 8 ga over 4.2 to 6.9 ft with 33 to 66 US tons — the press brake for HVAC fittings, enclosures, brackets, signage and job-shop work where a 100-ton machine is more than you need. The NC models set the angle and backgauge from a stored program; the Edgebender 1240 CNC adds independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 touchscreen. European hydraulics, electrics and safety light guards on every machine, with CSA-approved panels and support from Mississauga, ON. For larger machines see the Dener CNC press brakes and NovoTech's value-line CNC press brakes.",
     points=["33, 44 and 66 US tons · 4.2, 5.1 and 6.9 ft (1270–2100 mm)", "2-axis NC or 3-axis CNC (Y1 + Y2 + X) with Cybelec control", "Promecam tooling, HAWE / Rexroth hydraulics, Leuze light guard"],
     hero="is-eb-1240-cnc", minis=["is-eb-2160", "is-eb-1230"],
     groups=[("pressbrake", "Edgebender press brakes line-up", "The 3-axis CNC Edgebender 1240 and the 2-axis NC 1230, 1540 and 2160.")],

@@ -1,5 +1,5 @@
-"""Şahinler plate rolls — families appended to the İşitan hydraulic 4-roll and 3-roll pages (catalogue pages 3–21).
-Imported by tools/isitan_plate_rolls.py; the İşitan families stay on top of each page, Şahinler groups below."""
+"""NovoTech premium line plate rolls — families appended to the ISITAN hydraulic 4-roll and 3-roll pages (catalogue pages 3–21).
+Imported by tools/isitan_plate_rolls.py; the ISITAN families stay on top of each page, premium-line groups below."""
 from sahinler_lib import *  # noqa: F401,F403
 
 SET = "plate-rolls"
@@ -62,7 +62,7 @@ FAMILIES = [
          name="4R HSS hydraulic heavy-duty 4-roll plate rolls",
          short="4R HSS heavy-duty 4-roll",
          models_label="4R HSS 20-280 – 4R HSS 60-620 · 42 models · 6.7 to 20 ft",
-         summary="Şahinler's heavy-duty 4-roll plate bending machines for wind-tower, shipyard, pressure-vessel and pipeline work: "
+         summary="The heavy-duty 4-roll plate bending machines for wind-tower, shipyard, pressure-vessel and pipeline work: "
                  "42 models from 6.7 ft to 20 ft that roll plate up to 3-3/8″ thick. The pinch roll and both side rolls travel on a "
                  "pyramid linear path on hydraulic cylinders, so the cylinders put all their force into the plate; the top roll is driven "
                  "by motor and planetary gearbox with two speeds. Three digital readouts, hydraulic roll balancing, a cone-bending device "
@@ -87,7 +87,7 @@ FAMILIES = [
                  "roll rises on a hydraulic wedge system and the two side rolls work in double-pinch pyramid action, so both ends of the "
                  "sheet are pre-bent in one pass; the top roll is driven by a hydraulic motor through a planetary gearbox and the bottom "
                  "roll through a cardan joint. Three digital readouts, hydraulic drop-end, cone-bending device and two speeds are "
-                 "standard — the 4R HS-L is also the base of Şahinler's automatic wheel-rim body rolling line.",
+                 "standard — the 4R HS-L is also the base of the automatic wheel-rim body rolling line.",
          features=["Bottom pinch roll on a hydraulic wedge system; two side rolls with double-pinch pyramid action — double pre-bend in one pass",
                    "Top roll driven by hydraulic motor and planetary gearbox; bottom roll by cardan-joint system through gears",
                    "Three digital readouts; mobile control panel; central lubrication; overload protection",
@@ -193,6 +193,6 @@ FAMILIES = [
 ]
 
 GROUPS = {
-    P4: ("sahinler-4r", "Şahinler hydraulic 4-roll plate rolls", "Heavy-duty 4R HSS to 20 ft and 3-3/8″ plate, linear 4R HS-L, orbital 4R HS, NC cassette-type 4RH and the 4R HC cone roll.", "sahinler"),
-    P3: ("sahinler-3r", "Şahinler hydraulic 3-roll plate rolls", "3R UHS translating heavy-duty rolls to 3-1/2″ plate and the double-pinch 3R HS.", "sahinler"),
+    P4: ("sahinler-4r", "NovoTech premium line hydraulic 4-roll plate rolls", "Heavy-duty 4R HSS to 20 ft and 3-3/8″ plate, linear 4R HS-L, orbital 4R HS, NC cassette-type 4RH and the 4R HC cone roll.", "sahinler"),
+    P3: ("sahinler-3r", "NovoTech premium line hydraulic 3-roll plate rolls", "3R UHS translating heavy-duty rolls to 3-1/2″ plate and the double-pinch 3R HS.", "sahinler"),
 }

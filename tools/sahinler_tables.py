@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse the specification tables of the NovoTech Şahinler catalogue (imperial) into /home/claude/sahinler/tables.json.
+"""Parse the specification tables of the NovoTech NovoTech premium line catalogue (imperial) into /home/claude/sahinler/tables.json.
 
     python3 tools/sahinler_tables.py            # all pages
     python3 tools/sahinler_tables.py 6 7        # print the tables of those pages (1-based)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""İşitan data library: unit conversions, table builders and page writers shared by tools/isitan_data.py.
+"""ISITAN data library: unit conversions, table builders and page writers shared by tools/isitan_data.py.
 
 Sources (outside the repository):
   /home/claude/isitan/tables.json   spec tables parsed from the NovoTech catalogue (parse_tables.py, imperial)
@@ -250,20 +250,18 @@ def manual_spec(tables, glance_keys, glance, caps, note):
     return {"kind": "table", "tables": tables, "models": models, "glance_keys": glance_keys, "caps": caps, "note": note}
 
 
-BRAND_LINE = "İşitan machines are made in Turkey by İşitan Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech."
-ORIGIN = {"title": "Made in Turkey by İşitan", "text": "İşitan has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."}
-PDF = {"file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf", "label": "Download the İşitan machinery catalogue", "size": "PDF · 29 MB · imperial units"}
+BRAND_LINE = "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech."
+ORIGIN = {"title": "Made in Turkey by ISITAN", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."}
+PDF = {"file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf", "label": "Download the ISITAN machinery catalogue", "size": "PDF · 29 MB · imperial units"}
 PDF_BK = {"file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "label": "Bekamak saw catalogue", "size": "PDF · 7.5 MB · imperial units"}
 VOLT_FAQ_GENERIC = {"q": "What voltage do these machines run on?",
                     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."}
 CRUMBS = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href": "products.html"}]
-# "Inside the factory" section on every İşitan-led page (NovoTech's own channel)
-ISITAN_INTRO_VIDEO = {"intro_video": {"id": "XMn6YkPPOig", "title": "İşitan company introduction video", "thumb": "video-XMn6YkPPOig", "duration": "PT3M55S"},
+# "Inside the factory" section on every ISITAN-led page (NovoTech's own channel)
+ISITAN_INTRO_VIDEO = {"intro_video": {"id": "XMn6YkPPOig", "title": "ISITAN company introduction video", "thumb": "video-XMn6YkPPOig", "duration": "PT3M55S"},
                       "intro_video_heading": "Inside the factory — where the machines are built",
-                      "intro_video_text": "A tour of the İşitan plant in Bursa, Turkey, where the sheet-metal and tube machinery on these pages has been built since 1959."}
-SAHINLER_INTRO_VIDEO = {"intro_video": {"id": "nqgpctYOsyk", "title": "Şahinler Metal introduction video", "thumb": "video-nqgpctYOsyk", "duration": "PT4M29S"},
-                        "intro_video_heading": "Inside the factory — where the machines are built",
-                        "intro_video_text": "A tour of Şahinler Metal in Bursa, Turkey — plate rolls, angle rolls, ironworkers and presses built there since 1976."}
+                      "intro_video_text": "A tour of the ISITAN plant in Bursa, Turkey, where the sheet-metal and tube machinery on these pages has been built since 1959."}
+SAHINLER_INTRO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}   # the supplier's factory tour carried its brand (Oct 2026)
 
 
 def lower_keep_acronyms(text):

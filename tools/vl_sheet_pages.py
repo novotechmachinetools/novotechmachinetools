@@ -57,7 +57,7 @@ PAGE_PB = dict(
           "can justify. Three families on one page: the hydraulic CNC press brakes from 55 to 331 US tons over 4 to 20 ft, with heavy-duty and "
           "tandem machines to 1,323 tons and 26 ft; the NC torsion-bar brakes from 33 to 441 tons for shops that bend the same parts every day; and "
           "the electric servo press brakes — no hydraulic oil, ball-screw drive, ±0.01 mm — from 11 to 176 US tons, plus 3 to 12 ton bench "
-          "machines. For the Turkish-built premium machines see the Dener CNC press brakes; for the compact 4 – 7 ft shop brakes see the İşitan "
+          "machines. For the Turkish-built premium machines see the Dener CNC press brakes; for the compact 4 – 7 ft shop brakes see the ISITAN "
           "page. Every machine is installed and supported from Mississauga, ON, with a CSA-approved panel and a 1-year warranty.",
     points=["Hydraulic CNC: Delem DA-53T, Hawe servo valves, servo back gauge, 4+1 axes — 55 – 331 US tons × 4 – 20 ft; heavy-duty to 1,323 tons",
             "Electric: servo motors, belts and ball screws, ±0.01 mm, 70 % less energy — 11 – 176 US tons × 20″ – 10.5 ft, 3 – 12 t bench",

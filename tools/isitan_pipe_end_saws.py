@@ -1,4 +1,4 @@
-"""İşitan section: pipe-end processing (PN notchers, TD deburring, SFF end formers; catalogue pages 50–51)
+"""ISITAN section: pipe-end processing (PN notchers, TD deburring, SFF end formers; catalogue pages 50–51)
 and SFC circular cold saws (pages 52–53) — three category pages: tube notchers (old-site URL pipe-notcher kept),
 tube end forming machines, cold saws."""
 from isitan_lib import *  # noqa: F401,F403
@@ -12,15 +12,15 @@ P_NOTCH, P_FORM, P_SAW = "pipe-notcher", "tube-end-forming-machines", "circular-
 P_END = P_NOTCH   # kept for older imports
 
 IMAGES = {
-    "is-pn-17-90": ("img/ISITAN-PN-17-90.jpg", "İşitan PN 17/90 motorized belt-sander tube notcher, 11/16″ to 3-1/2″ OD"),
-    "is-pn-20-76": ("img/ISITAN-PN20-76.jpg", "İşitan PN 20/76 compact tube notcher with movable clamp, 13/16″ to 3″ OD"),
-    "is-td-01": ("img/ISITAN-TD-01.jpg", "İşitan TD-01 motorized tube-end deburring machine, inside and outside to Ø3-1/2″"),
-    "is-sff-90-1": ("img/ISITAN-SFF-90.jpg", "İşitan SFF 90-1 single-station hydraulic pipe-end former, expand and reduce to Ø3-1/2″"),
-    "is-sff-60-1": ("img/ISITAN-SFF-60-2.jpg", "İşitan SFF 60-1 single-station hydraulic pipe-end former, expand and reduce to Ø2-3/8″"),
+    "is-pn-17-90": ("img/ISITAN-PN-17-90.jpg", "ISITAN PN 17/90 motorized belt-sander tube notcher, 11/16″ to 3-1/2″ OD"),
+    "is-pn-20-76": ("img/ISITAN-PN20-76.jpg", "ISITAN PN 20/76 compact tube notcher with movable clamp, 13/16″ to 3″ OD"),
+    "is-td-01": ("img/ISITAN-TD-01.jpg", "ISITAN TD-01 motorized tube-end deburring machine, inside and outside to Ø3-1/2″"),
+    "is-sff-90-1": ("img/ISITAN-SFF-90.jpg", "ISITAN SFF 90-1 single-station hydraulic pipe-end former, expand and reduce to Ø3-1/2″"),
+    "is-sff-60-1": ("img/ISITAN-SFF-60-2.jpg", "ISITAN SFF 60-1 single-station hydraulic pipe-end former, expand and reduce to Ø2-3/8″"),
     "is-sff-tooling": ("cut/p51-386.png", "SFF end former — easy tool-changing system with the end-forming tooling set"),
-    "is-sfc-350-vx": ("img/VX-350.jpg", "İşitan SFC 350-VX semi-automatic circular cold saw, 13-3/4″ blade, Ø4-1/2″ round"),
-    "is-sfc-315-vp": ("cut/p52-392.png", "İşitan SFC 315-VP circular cold saw with pneumatic vise, 12-1/2″ blade"),
-    "is-sfc-275-v": ("cut/p52-394.png", "İşitan SFC 275-V manual circular cold saw, 10-3/4″ blade, Ø3-3/8″ round"),
+    "is-sfc-350-vx": ("img/VX-350.jpg", "ISITAN SFC 350-VX semi-automatic circular cold saw, 13-3/4″ blade, Ø4-1/2″ round"),
+    "is-sfc-315-vp": ("cut/p52-392.png", "ISITAN SFC 315-VP circular cold saw with pneumatic vise, 12-1/2″ blade"),
+    "is-sfc-275-v": ("cut/p52-394.png", "ISITAN SFC 275-V manual circular cold saw, 10-3/4″ blade, Ø3-3/8″ round"),
 }
 
 GK_END = ["capacity", "detail", "motor", "weight"]
@@ -190,7 +190,7 @@ PAGES = {
         title="Tube Notchers & Pipe Notching Machines | NovoTech",
         meta="Belt-sander tube and pipe notchers for tube 11/16″ to 3-1/2″ OD at any angle to 50°, ten dovetail drums included, plus the TD-01 tube-end deburring machine.",
         h1="Tube notchers and pipe notching machines",
-        intro="A tube notcher (pipe notcher or coping machine) grinds a saddle-shaped notch into the end of a tube so it fits tightly against the tube it joins — the joint of every welded handrail, roll cage, trailer, gate and furniture frame. İşitan's PN belt-sander notchers cope that saddle in seconds, square or at any angle up to 50°, with ten dovetail drums from Ø3/4″ to 3″ included so the notch matches the mating tube; the TD-01 wire-brush deburring machine cleans the cut end inside and out in one pass before it goes to the notcher or the bender. Both sit beside the cold saw and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
+        intro="A tube notcher (pipe notcher or coping machine) grinds a saddle-shaped notch into the end of a tube so it fits tightly against the tube it joins — the joint of every welded handrail, roll cage, trailer, gate and furniture frame. ISITAN's PN belt-sander notchers cope that saddle in seconds, square or at any angle up to 50°, with ten dovetail drums from Ø3/4″ to 3″ included so the notch matches the mating tube; the TD-01 wire-brush deburring machine cleans the cut end inside and out in one pass before it goes to the notcher or the bender. Both sit beside the cold saw and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
         points=["Pipe notchers — tube 11/16″ to 3-1/2″ OD, notching to 50°, 10 dovetail drums standard", "PN 17/90 with 4 × 47″ belt; compact PN 20/76 with movable clamp and 4 × 79″ belt", "TD-01 deburring — inside and outside to Ø3-1/2″ in one pass"],
         hero="is-pn-17-90", minis=["is-pn-20-76", "is-td-01"],
         groups=[("notch", "Tube notchers", "PN belt-sander pipe notching machines with ten dovetail drums included."),
@@ -209,7 +209,7 @@ PAGES = {
         intro="A tube end former (pipe end forming machine) expands or reduces the end of a tube so two tubes slip together, "
               "and the production versions bead, flare, flange, calibrate and emboss the end as well — the machines behind exhaust "
               "systems, ventilation and chimney tube, shock absorbers, handrail and furniture connectors. Two ranges on this page, "
-              "small to large. İşitan's SFF single-station hydraulic end formers expand and reduce tube to Ø3-1/2″ × 14 ga with one "
+              "small to large. ISITAN's SFF single-station hydraulic end formers expand and reduce tube to Ø3-1/2″ × 14 ga with one "
               "tooling set, for the fabrication shop. Wecotech's Swiss tube end forming machines cover series production: the Easy "
               "line of compact expanders, reducers, a straightening press and a punching unit; the Universal line of modular "
               "production machines — expanders, reducers, axial and servo rotary formers, a multi-station forming centre and an "
@@ -217,24 +217,24 @@ PAGES = {
               "exhaust trade; the Weco line of CNC inner / outer formers with programmable tool rotation for tube to Ø23.6″ and a "
               "flanging cell for bellows; and the shearing cutters, tube shear and deburring machine that complete an end-forming "
               "cell. Siemens controls, Bosch Rexroth hydraulics or servo drives, CSA-approved panels and support from Mississauga, ON.",
-        points=["İşitan SFF hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga, tooling set included",
+        points=["ISITAN SFF hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga, tooling set included",
                 "Wecotech compact expanders and reducers from Ø3/8″ to Ø23.6″, 21 – 26 US tons, 2 – 4 s cycles, touchscreen programming",
                 "Wecotech CNC inner / outer formers to Ø23.6″ with 8 – 24 radial pistons, Tubimatic machines for standard C and IO tools, beading, flanging, shearing and deburring"],
         hero="wt-wecomatic-200", minis=["is-sff-90-1", "wt-tubex"],
-        groups=[("form", "İşitan hydraulic tube end formers", "SFF single-station end forming machines for expanding and reducing tube ends with one tooling set.", "isitan"),
+        groups=[("form", "ISITAN hydraulic tube end formers", "SFF single-station end forming machines for expanding and reducing tube ends with one tooling set.", "isitan"),
                 ("wt-easy", "Wecotech Easy line — compact expanders, reducers and auxiliaries", "Entry-level machines with the electrics and hydraulics in one compact housing: the Tubex expander, Tubin reducers, the Tubepress straightening press and the Tubepunch slot punching unit.", "wecotech"),
                 ("wt-universal", "Wecotech Universal line — modular production machines", "The HW-Flex housing with touchscreen programming and a choice of options: Tubex-U and Tubin-U, the Tubax axial and rotary formers, the Tubax-Multi forming centre and the Tubiroll-2R beading machine — small to large.", "wecotech"),
                 ("wt-traditional", "Wecotech Traditional line — for standard C and IO tooling", "Production end formers that take the commercially available C-tools and IO-tools of the exhaust trade, hydraulic or servo-electric (Electra), with one to three tool stations.", "wecotech"),
                 ("wt-weco", "Wecotech Weco line — CNC inner / outer tube end formers", "The flagship machines: an inner mandrel and 8 to 24 radial outer pistons under CNC control, with programmable inner-tool rotation on the Wecomatic, for tube to Ø23.6″; plus the flanging cell for bellows and T-pieces.", "wecotech"),
                 ("wt-cutting", "Wecotech tube cutting and deburring", "The shearing cutter, tube shear and deburring machine that cut and prepare the tube before and after forming.", "wecotech")],
-        faq=[{"q": "Expanding or reducing — what does the end former do?", "a": "An expander opens a tube end so the next tube slips inside (exhaust slip joints, telescoping handrail, sleeves); a reducer collapses the end to fit into the next tube. The İşitan SFF does both in one station with a hydraulic ram and interchangeable forming tools; the Wecotech Tubex and Tubex-U expand with a cone-driven segmented tool, the Tubin and Tubin-U reduce with collet-type top jaws, and the Tubimatic and Weco-line machines do both — and bead, flare and flange — with inner and outer tools."},
+        faq=[{"q": "Expanding or reducing — what does the end former do?", "a": "An expander opens a tube end so the next tube slips inside (exhaust slip joints, telescoping handrail, sleeves); a reducer collapses the end to fit into the next tube. The ISITAN SFF does both in one station with a hydraulic ram and interchangeable forming tools; the Wecotech Tubex and Tubex-U expand with a cone-driven segmented tool, the Tubin and Tubin-U reduce with collet-type top jaws, and the Tubimatic and Weco-line machines do both — and bead, flare and flange — with inner and outer tools."},
              {"q": "What is an inner / outer (IO) tube end former?", "a": "A machine with two tools that work on the tube end at the same time: an inner mandrel or expansion tool inside the tube and an outer tool — closing jaws or, on the Weco line, 8 to 24 radial pistons — around it. Between them the end is expanded, reduced, beaded, flared, flanged or embossed to a defined shape in one stroke, in any position on round or shaped tube. The Tubimatic IO machines take the commercially available IO-tools; the Tubex IO-S and Wecomatic run Wecotech's own tooling under CNC."},
              {"q": "Which Wecotech line do I need?", "a": "The Easy line is for a shop that forms a few hundred ends a day beside a bender or saw: compact, foot-switch operated, 21 US tons. The Universal line is the modular production machine with touchscreen programming, 26 US tons and the options that a production cell needs — heat exchangers, remote maintenance, Profisafe, horizontal version. The Traditional line is the choice when you already own C or IO tooling. The Weco line is for complex, multi-step forming of exhaust, ventilation and chimney parts at 10 – 40 s a cycle, programmed on the machine."},
              {"q": "What tube sizes and wall thickness can the SFF form?", "a": "The SFF 90-1 expands tube from Ø1-3/8″ to Ø3-1/2″ and reduces ends down to Ø5/16″, in mild steel up to 14 ga; the SFF 60-1 covers tube to Ø2-3/8″. Stainless and thicker walls are quoted case by case — send us the tube OD, wall and the finished end size you need."},
              {"q": "Hydraulic or Electra?", "a": "Wecotech builds the Tubimatic IO, Tubax-Rotary, Tubax-Multi and Tubecut as Electra versions with Bosch Rexroth servo drives instead of a hydraulic power unit: no oil, no heat exchanger, lower energy use and quieter running, with the forming force and position under direct servo control. The hydraulic versions keep the higher force reserve (37 US tons on the IO 160) and the lower price."},
              {"q": "How long does a tool change take?", "a": "A few minutes on every machine on this page: the SFF holds its forming set in a quick-change holder; the Wecotech machines have quick-change flanges for the basic tool and the mandrel and quick-change interfaces for the outer jaws, and the Tubimatic C 80 TRE carries three tool stations so three forming steps run without a change at all."},
              {"q": "Can the end former do an exhaust slip joint?", "a": "Yes — that is the most common job: expand one end of the pipe so the next section slides in, or reduce it to slip into a muffler or flex pipe, then bead it for the clamp. The SFF does the expansion and reduction; a Tubimatic IO or Wecomatic adds the bead, flare and calibration in the same stroke."},
-             {"q": "Where are these machines made and how are they supported?", "a": "The SFF is built by İşitan in Bursa, Turkey; the Wecotech machines by Wecotech AG in Switzerland, a 60-person company whose customers include 3M, ABB, Akrapovič and American Axle. NovoTech sells, installs and supports both in Canada from Mississauga, ON, with CSA-approved panels, remote maintenance on the Wecotech controls and tooling to your tube size."},
+             {"q": "Where are these machines made and how are they supported?", "a": "The SFF is built by ISITAN in Bursa, Turkey; the Wecotech machines by Wecotech AG in Switzerland, a 60-person company whose customers include 3M, ABB, Akrapovič and American Axle. NovoTech sells, installs and supports both in Canada from Mississauga, ON, with CSA-approved panels, remote maintenance on the Wecotech controls and tooling to your tube size."},
              VOLT_FAQ_GENERIC],
         faq_title="Questions we get asked about tube end formers",
     ),
@@ -242,11 +242,11 @@ PAGES = {
         title="Cold Saws — Circular & CNC Carbide Cold Saws | NovoTech",
         meta="Cold saw machines for metal from a 10-3/4″ manual circular saw to CNC carbide production saws: wet cutting, burr-free ends, tube and bar to Ø6-1/4″, servo feeding, loaders.",
         h1="Cold saws — circular cold saws, manual to CNC carbide",
-        intro="A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Two families of cold saw machines: İşitan's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head — and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the İşitan saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON.",
+        intro="A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Two families of cold saw machines: ISITAN's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head — and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the ISITAN saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON.",
         points=["Manual and semi-automatic circular cold saws: round to Ø4-1/2″, mitre 45° both ways, 10-3/4″ – 13-3/4″ HSS blades", "Automatic carbide cold saws: solid bar Ø3/8″ – 6-1/4″ at up to 920 ft/min, servo feed, 20 ft magazine loader", "Automatic HSS cold saws: tube and bar to Ø4″, ±.004″ feed accuracy, several lengths per bar"],
         hero="is-sfc-350-vx", minis=["bk-bmdo-150xs-1", "bk-bmdo-80cs-1"],
-        groups=[("semi", "İşitan semi-automatic cold saw", "The SFC 350-VX with foot-switch cycle and hydro-pneumatic head descent."),
-                ("manual", "İşitan pull-down cold saws", "SFC VP with pneumatic vise and SFC V with manual vise, 10-3/4″ and 12-1/2″ blades."),
+        groups=[("semi", "ISITAN semi-automatic cold saw", "The SFC 350-VX with foot-switch cycle and hydro-pneumatic head descent."),
+                ("manual", "ISITAN pull-down cold saws", "SFC VP with pneumatic vise and SFC V with manual vise, 10-3/4″ and 12-1/2″ blades."),
                 ("bekamak-circular", "Bekamak automatic circular saws — TCT carbide and HSS", "Production cold saws that feed, cut and count by themselves: BMDO XS carbide saws for solid bar to Ø6-1/4″ and BMDO CS HSS saws for tube and bar to Ø4″.", "bekamak")],
         faq=[{"q": "Cold saw or abrasive chop saw?", "a": "An abrasive chop saw grinds through the steel at high speed, leaving a hot, burred, slightly bevelled end and sparks. A cold saw cuts with a slow HSS blade (45–90 rpm) under coolant, so the cut is square, cool to the touch, burr-free and ready to weld or fit — and the blade is resharpened dozens of times instead of thrown away."},
              {"q": "TCT carbide or HSS cold saw?", "a": "A carbide (TCT) blade runs at 130–920 ft/min and is the fastest way to cut solid steel bar in production — the Bekamak BMDO XS saws are built around it, with servo feeding and a magazine loader for unattended runs. HSS blades run slower (22–130 ft/min on the BMDO CS) and are the choice for tube, thin walls and mixed work; the XS saws accept HSS blades for tube as well."},
@@ -311,10 +311,10 @@ def build():
     write_category(P_NOTCH, {**PAGES[P_NOTCH], "related_pages": related_notch, "related_title": "More tube machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Tube notchers"})
     write_category(P_FORM, {**PAGES[P_FORM], "related_pages": related_form, "related_title": "More tube machinery from NovoTech"}, FAMILIES + WT_FAMILIES, SET, SECTION,
                    extra={"nav_label": "Tube end formers", "catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_WT],
-                          "hero_brand_line": "İşitan end formers are made in Turkey by İşitan Makine; the Wecotech machines in Switzerland by Wecotech AG. All sold, installed and supported in Canada by NovoTech.",
-                          "origin_feature": {"title": "Made in Turkey and Switzerland", "text": "İşitan has built sheet-metal and tube machinery in Bursa since 1959; Wecotech AG builds tube end forming machines in Switzerland for the exhaust, ventilation and automotive industries — Siemens controls, Bosch Rexroth hydraulics and servo drives, CE-certified."}})
+                          "hero_brand_line": "ISITAN end formers are made in Turkey by ISITAN Makine; the Wecotech machines in Switzerland by Wecotech AG. All sold, installed and supported in Canada by NovoTech.",
+                          "origin_feature": {"title": "Made in Turkey and Switzerland", "text": "ISITAN has built sheet-metal and tube machinery in Bursa since 1959; Wecotech AG builds tube end forming machines in Switzerland for the exhaust, ventilation and automotive industries — Siemens controls, Bosch Rexroth hydraulics and servo drives, CE-certified."}})
     write_category(P_SAW, {**PAGES[P_SAW], "related_pages": related_saw, "related_title": "More cutting machinery from NovoTech"}, FAMILIES, SET, SECTION,
                    extra={"nav_label": "Cold saws", "catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_BK],
-                          "hero_brand_line": "İşitan circular cold saws are made in Turkey by İşitan Makine; the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",
-                          "origin_feature": {"title": "Made in Turkey by İşitan and Bekamak", "text": "İşitan has built sheet-metal machinery in Bursa since 1959; Bekamak has built saws since 1990 — CE-certified machines with European components."}})
+                          "hero_brand_line": "ISITAN circular cold saws are made in Turkey by ISITAN Makine; the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",
+                          "origin_feature": {"title": "Made in Turkey by ISITAN and Bekamak", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959; Bekamak has built saws since 1990 — CE-certified machines with European components."}})
     return IMAGES

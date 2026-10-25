@@ -37,6 +37,9 @@ RedirectMatch 301 ^/(novofab|novotech)-automatic-band-saws(\.html)?$ /automatic-
 RedirectMatch 301 ^/(novofab|novotech)-double-column-band-saws(\.html)?$ /twin-column-band-saws
 RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
 # the old automatic cold saw page (Bekamak BMDO) now lives on the cold saw page, below the İşitan circular saws
+RedirectMatch 301 ^/hydraulic-press-brake(\.html)?$ /novotech-cnc-press-brakes
+RedirectMatch 301 ^/electric-press-brake(\.html)?$ /novotech-cnc-press-brakes
+RedirectMatch 301 ^/slip-rolls(\.html)?$ /plate-rollers
 RedirectMatch 301 ^/cold-saw-carbide-saw-cutting(\.html)?$ /circular-cold-saws#bekamak-circular-group
 
 # Old-site PDF brochures that earn search traffic (Search Console, Jun 2025 – Oct 2026) → the rebuilt page or the new catalogue.
@@ -66,31 +69,31 @@ Redirect 301 "/files/3-rolls-plate-roller-IRM.pdf" "/motorized-plate-rollers"
 Redirect 301 "/files/IRM-pinch-roll-machine-ISITAN---MADE-IN-TURKEY.pdf" "/motorized-plate-rollers"
 Redirect 301 "/files/IRM---3R-HMD-RM-pinch-roll-machine-ISITAN---MADE-IN-TURKEY-s.pdf" "/motorized-plate-rollers"
 Redirect 301 "/files/MRM-S-plate-rolling-machine-ISITAN---MADE-IN-TURKEY.pdf" "/motorized-plate-rollers"
-Redirect 301 "/files/slip-roll-HRM-RM-IR-R-RS.pdf" "/slip-rolls"
-Redirect 301 "/files/3RHMD-RM-IR-slip-roll-machine-ISITAN---MADE-IN-TURKEY.pdf" "/slip-rolls"
-Redirect 301 "/files/4RHSS-4RHS-4RHSL-3RHSS-plate-roller-brochure-SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
-Redirect 301 "/files/4RHSS---4RHS---4RHL--4RH---4RC---3RHS-plate-rollers---SAHINLER---MADE-IN-TURKEY-s.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/slip-roll-HRM-RM-IR-R-RS.pdf" "/plate-rollers"
+Redirect 301 "/files/3RHMD-RM-IR-slip-roll-machine-ISITAN---MADE-IN-TURKEY.pdf" "/plate-rollers"
+Redirect 301 "/files/4RHSS-4RHS-4RHSL-3RHSS-plate-roller-brochure-SAHINLER---MADE-IN-TURKEY.pdf" "/hydraulic-4-roll-plate-rollers"
+Redirect 301 "/files/4RHSS---4RHS---4RHL--4RH---4RC---3RHS-plate-rollers---SAHINLER---MADE-IN-TURKEY-s.pdf" "/hydraulic-4-roll-plate-rollers"
 Redirect 301 "/files/Hydraulic-4-rolls-plate-roller-4RHSS-4RHS-4RM.pdf" "/hydraulic-4-roll-plate-rollers"
 Redirect 301 "/files/3-rolls-hydraulic-plate-rolling-machine-3RUHS-3RHSS-3RHS.pdf" "/hydraulic-3-roll-plate-rollers"
 Redirect 301 "/files/4-rolls-conic-plate-roller-4RHC.pdf" "/hydraulic-4-roll-plate-rollers"
 Redirect 301 "/files/plate-roll-bender-4RM-4RH-4RHM.pdf" "/plate-rollers"
-Redirect 301 "/files/SAHINLER-Hydraulic-press-general-catalog.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
-Redirect 301 "/files/SAHINLER-ironworker---plate-roller---angle-roller---flanging-brochure.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
-Redirect 301 "/files/HKM-ironworker-machine-brochure-SAHINLER----capacity-chart---MADE-IN-TURKEY-s.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/SAHINLER-Hydraulic-press-general-catalog.pdf" "/hydraulic-press"
+Redirect 301 "/files/SAHINLER-ironworker---plate-roller---angle-roller---flanging-brochure.pdf" "/ironworker-machines"
+Redirect 301 "/files/HKM-ironworker-machine-brochure-SAHINLER----capacity-chart---MADE-IN-TURKEY-s.pdf" "/ironworker-machines"
 Redirect 301 "/files/Hydraulic-Iron-worker-HKM.pdf" "/ironworker-machines"
 Redirect 301 "/files/Hydrauli-ring-roller-HPK-3RHPK.pdf" "/angle-rolls"
 Redirect 301 "/files/4-rolls-roll-bender-4RHPK.pdf" "/angle-rolls"
-Redirect 301 "/files/SDK-and-EFM-circular-cutting-shear-and-tank-head-flanging-machine-SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
-Redirect 301 "/files/HPM-hydraulic-punching-machine---SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/SDK-and-EFM-circular-cutting-shear-and-tank-head-flanging-machine-SAHINLER---MADE-IN-TURKEY.pdf" "/circle-cutters-and-seamers"
+Redirect 301 "/files/HPM-hydraulic-punching-machine---SAHINLER---MADE-IN-TURKEY.pdf" "/hydraulic-punching-machines"
 Redirect 301 "/files/Universal-hydraulic-press-AT-AP.pdf" "/hydraulic-press"
-Redirect 301 "/files/HPK-4RHPK-PK-angle-roll---roll-bender-SAHINLER---MADE-IN-TURKEY-s.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/HPK-4RHPK-PK-angle-roll---roll-bender-SAHINLER---MADE-IN-TURKEY-s.pdf" "/angle-rolls"
 Redirect 301 "/files/HNM-corner-notcher.pdf" "/corner-notcher"
 Redirect 301 "/files/Double-pinch-roll-bender-HPK.pdf" "/angle-rolls"
 Redirect 301 "/files/heavy-duty-roll-bender-double-HPK.pdf" "/angle-rolls"
-Redirect 301 "/files/BT-114-s-pipe-polishing-machine---pipe-sanding-machine---SAHINLER---MADE-IN-TURKEY.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/BT-114-s-pipe-polishing-machine---pipe-sanding-machine---SAHINLER---MADE-IN-TURKEY.pdf" "/pipe-sanding-polishing-machines"
 Redirect 301 "/files/Combo-notching-and-punching-machine--Variable-angle--HNM6-VP.pdf" "/corner-notcher"
 Redirect 301 "/files/TC-42-tube-coil-rolling-machine-SAHINLER---MADE-IN-TURKEY.pdf" "/angle-rolls"
-Redirect 301 "/files/Hydraulic-workshop-press-DPM-DK-DPMK-DP.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
+Redirect 301 "/files/Hydraulic-workshop-press-DPM-DK-DPMK-DP.pdf" "/hydraulic-press"
 Redirect 301 "/files/Sheet-metal-corner-notcher--Variable-angle--HNM6V.pdf" "/corner-notcher"
 Redirect 301 "/files/Hydrauli-multi-functional-punch-shear-notcher--HPS-40.pdf" "/ironworker-machines"
 # old shear pages / brochures → the shears page and the NovoTech guillotine shears brochure

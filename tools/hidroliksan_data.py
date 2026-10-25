@@ -1,7 +1,7 @@
 """Hidroliksan production presses — sold as NovoTech's premium line of production hydraulic presses (made in Turkey).
 The supplier's name is not used on the site; the data comes from the imperial NovoTech brochure text
 (/home/claude/hidroliksan/novotech-2026.txt, extracted from NovoTech_Hidroliksan_Hydraulic_Presses_2026.pdf).
-Families are appended below the Şahinler group on hydraulic-press.html (tools/sahinler_pages.py)."""
+Families are appended below the premium-line group on hydraulic-press.html (tools/sahinler_pages.py)."""
 import re
 
 from sahinler_lib import dims, inch, ins, motor, tons, weight  # noqa: F401

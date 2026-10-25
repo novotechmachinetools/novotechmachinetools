@@ -1,4 +1,4 @@
-"""Generate every İşitan family set and page from the catalogue data in /home/claude/isitan.
+"""Generate every ISITAN family set and page from the catalogue data in /home/claude/isitan.
 
     python3 tools/isitan_data.py          # writes content/families/*.json, content/pages/*.json, image_map entries, tools/isitan_keys.txt
     python3 tools/make_images.py --only $(cat tools/isitan_keys.txt)

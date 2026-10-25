@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Wecotech (Switzerland) tube end forming machines — families for tube-end-forming-machines.html, below the İşitan SFF.
+"""Wecotech (Switzerland) tube end forming machines — families for tube-end-forming-machines.html, below the ISITAN SFF.
 
 Metric data transcribed from the Wecotech tube-end-forming catalogue (English, 20 May 2022; /home/claude/wecotech/cat.pdf,
 pages 8 – 63) and shown as imperial (metric).  The catalogue's four lines are kept as groups: Easy (compact entry-level

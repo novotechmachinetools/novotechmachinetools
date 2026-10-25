@@ -59,7 +59,7 @@ PAGE_PB = dict(
           "frame for 42 – 58 % less energy, the DDM servo-electric press brake with no hydraulic oil from 44 to 220 US tons, and the DDS "
           "ball-screw press brake from 22 US tons for small parts. ESA S640 / S875 or Delem DA-66S / 69S controls, European-style tooling, "
           "back gauges to 6 axes, crowning, angle measurement, sheet followers and robot cells. This is the premium line; NovoTech's own "
-          "value-line CNC press brakes and the İşitan compact press brakes have pages of their own. Installed and supported from Mississauga, "
+          "value-line CNC press brakes and the ISITAN compact press brakes have pages of their own. Installed and supported from Mississauga, "
           "ON, with a CSA-approved panel and Dener Canada parts.",
     points=["XL hydraulic: 18 models, 66 – 661 US tons × 5 – 20 ft; tandem to 60 ft and 1,800 tons",
             "XH hybrid: servo pump on the XL frame — 42 – 58 % less energy, faster approach and return",

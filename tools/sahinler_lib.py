@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Şahinler data library: unit conversions and table builders over the parsed NovoTech Şahinler catalogue.
+"""NovoTech premium line data library: unit conversions and table builders over the parsed NovoTech NovoTech premium line catalogue.
 
 Sources (outside the repository):
   /home/claude/sahinler/tables.json        spec tables + capacity charts parsed from the imperial NovoTech catalogue
@@ -9,7 +9,7 @@ Sources (outside the repository):
 
 Catalogue cells are imperial; every converter returns 'imperial (metric)'.  Thin sheet in gauge and plate in common
 fractions map back to the manufacturer's nominal metric capacities (FRAC_MM); roll, shaft, throat and table dimensions are
-rounded to 5 mm, machine dimensions to 50 mm, weights to 5/10 kg and motors to the kW sizes Şahinler uses.
+rounded to 5 mm, machine dimensions to 50 mm, weights to 5/10 kg and motors to the kW sizes NovoTech premium line uses.
 """
 import json
 import os
@@ -241,9 +241,9 @@ NOTE_ROLLS = ("Plate bending capacities are for mild steel with a yield strength
               "diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H.")
 NOTE_SIMPLE = "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
 VOLT = "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
-BRAND_LINE = "Şahinler machines are made in Turkey by Şahinler Metal — metal-forming machinery since 1976, with European components. Sold, installed and supported in Canada by NovoTech."
-ORIGIN = {"title": "Made in Turkey by Şahinler", "text": "Şahinler Metal has built metal-forming machinery in Bursa since 1976 — CE-certified machines with European hydraulic and electrical components, exported to more than 60 countries."}
-PDF = {"file": "files/NovoTech-Sahinler-Catalogue-2027.pdf", "label": "Download the Şahinler machinery catalogue", "size": "PDF · 28 MB · imperial units"}
+BRAND_LINE = "NovoTech premium line — machines built in Turkey to NovoTech's specification with European hydraulic and electrical components, sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON."
+ORIGIN = {"title": "NovoTech premium line — made in Turkey", "text": "Built in Turkey to NovoTech's specification by a CE-certified metal-forming plant with European hydraulic and electrical components; inspected before shipping, with the same CSA panel, warranty and Mississauga, ON support as every machine we sell."}
+PDF = None   # the supplier's catalogue carried its brand; NovoTech-format brochures per section are generated instead (tools/brochure)
 
 
 def vid(i, title, dur):
