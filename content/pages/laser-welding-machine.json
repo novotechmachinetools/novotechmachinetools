@@ -1,0 +1,131 @@
+{
+ "slug": "laser-welding-machine",
+ "template": "category.html",
+ "family_set": "senfeng",
+ "title": "Laser Welding Machines, Handheld & Robotic | NovoTech",
+ "artifact_title": "Laser welding machines — handheld welders from 0.8 kW, robotic cells to 20 kW, laser cladding",
+ "meta_description": "Senfeng laser welders sold in Canada: portable air-cooled and handheld welders to 3 kW, robotic laser welding cells to 20 kW, cobot MIG welders, laser cladding.",
+ "h1": "Laser welding machines — handheld welders from 0.8 kW, robotic cells to 20 kW, laser cladding",
+ "intro": "A fiber laser welder joins stainless, aluminum, galvanized and mild steel sheet with a narrow, deep seam at five times the speed of TIG, with almost no heat distortion and no grinding afterwards; handheld, it takes a day to learn, and on a robot it runs the same weld all shift. NovoTech sells Senfeng laser welding equipment in Canada: the portable air-cooled S series at 0.8 to 1.5 kW on wheels, the HWM handheld welders at 1.5 to 3 kW with wire feed for joints to 9/32″, robotic laser welding cells from 1.5 to 20 kW with positioners and tracks, teaching-free and collaborative MIG robots, and the laser cladding machines that rebuild shafts, rolls and bores with a metallurgically bonded wear layer. Senfeng makes its own sources and heads in Jinan, China; CE / FDA / ETL certified. Installed and supported from Mississauga, ON.",
+ "hero_points": [
+  "Handheld: S series 0.8 – 1.5 kW air-cooled, 99 – 121 lb · HWM 1.5 – 3 kW, welds to 9/32″, 4-in-1 head",
+  "Robotic: RW laser cells 1.5 – 20 kW · RMW teaching-free and CMW cobot MIG welders 350 / 500 A",
+  "Cladding: 6 / 12 kW robot cells, lathe-type machines to 20 ft and a portable system for on-site repair"
+ ],
+ "hero_image": "sf-hwm-1",
+ "hero_image_secondary": [
+  "sf-rw-1",
+  "sf-clad-1"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Laser welding machines — handheld welders from 0.8 kW, robotic cells to 20 kW, laser cladding"
+  }
+ ],
+ "hero_brand_line": "Senfeng Laser builds fiber laser cutting, welding and cladding machines in Jinan, China — 20 years, 15,000 machines a year, CE / FDA / ETL certified, with Senfeng Laser USA. Sold, installed and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "weld-handheld-group",
+   "title": "Handheld laser welders",
+   "lead": "The portable S series and the HWM series — one gun that welds, cleans, cuts and seam-welds.",
+   "brand": "senfeng",
+   "families": [
+    "sf-handheld"
+   ]
+  },
+  {
+   "id": "weld-robot-group",
+   "title": "Robotic welding",
+   "lead": "Laser welding cells on 6-axis robots, and MIG robots that program themselves or are hand-guided.",
+   "brand": "senfeng",
+   "families": [
+    "sf-robot-weld"
+   ]
+  },
+  {
+   "id": "weld-cladding-group",
+   "title": "Laser cladding",
+   "lead": "Wear and corrosion layers on shafts, rolls, cylinders and bores — in the cell, on the lathe or on site.",
+   "brand": "senfeng",
+   "families": [
+    "sf-cladding"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "What can a handheld laser welder do that TIG cannot?",
+   "a": "Speed and heat. A 1.5 kW laser welds 16 ga stainless at 10 – 15 in/min with a seam that needs no grinding, puts a fraction of the heat into the part — thin sheet, boxes, cabinets and railings stay flat — and welds dissimilar thicknesses, galvanized and aluminum that TIG struggles with. An operator who has never welded produces clean seams after a day of training. It does not replace MIG on heavy plate: the 3 kW HWM welds 9/32″ mild steel in a single pass and the robotic 6 – 20 kW cells go to 9/16″."
+  },
+  {
+   "q": "S series or HWM — which handheld welder?",
+   "a": "The S series is the portable machine: 0.8, 1.2 or 1.5 kW, air-cooled with no chiller, 99 – 121 lb on wheels and a 220 V single-phase plug — for a shop that moves it between jobs or takes it on site. The HWM is the production welder: 1.5, 2 or 3 kW with a water chiller, a 33 ft cable, a wire feeder and the 4-in-1 head that welds, cleans the weld, cuts sheet and seam-welds — for a station that welds all day and for joints to 9/32″."
+  },
+  {
+   "q": "Is it safe to use in a shop?",
+   "a": "A class 4 laser needs a controlled area: the welders ship with a CE face shield, laser-resistant gloves and clothing, and the gun fires only with the safety clamp on the workpiece. We recommend the welding booth with laser-protective glass for a fixed station, and fume extraction as for any welding. Operator training is part of the installation."
+  },
+  {
+   "q": "When does a robot make sense?",
+   "a": "When the same joint is welded hundreds of times a day: tanks, frames, boxes, exhaust, furniture. The RW laser cells run 1.5 to 20 kW on a 6-axis robot with a positioner so the seam is always in position; the CMW cobot is the simplest entry — a 350 or 500 A MIG torch on a collaborative arm, programmed by guiding it by hand over the part, on a cart you wheel to the job; the RMW scans the part with a camera and writes its own program, for batches of one."
+  },
+  {
+   "q": "What is laser cladding used for?",
+   "a": "Repairing and hardening: worn shafts, hydraulic cylinder rods, rolls, valve seats, pump housings and dies get a new wear- or corrosion-resistant surface — stainless, nickel, cobalt or carbide alloys from powder — fused to the base metal with a thin heat-affected zone, far stronger than thermal spray and with less distortion than overlay welding. Layers to 25/64″ (10 mm), machined afterwards. Mining, oil and gas, hydro, pulp and paper and steel mills are the usual customers."
+  },
+  {
+   "q": "What does the machine need on site?",
+   "a": "The S series plugs into a 220 V outlet; the HWM, robots and cladding machines run on 3-phase — we supply the transformer for 600 V. Shielding gas (argon or nitrogen), compressed air for the cutting and cleaning modes, a fume extractor, and for the cladding machines a powder supply. Delivery, installation and training by NovoTech from Mississauga."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about laser welders",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Senfeng-Laser-Welding-Cladding-2026.pdf",
+  "label": "Download the laser welding & cladding brochure",
+  "size": "PDF · 1 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in China by Senfeng Laser",
+  "text": "Senfeng has built fiber laser machines in Jinan since 2004 — a 1.8 million ft² campus, its own laser sources and cutting heads, 20 overseas branches and a USA warehouse — with NovoTech's CSA panel, warranty and Mississauga, ON support."
+ },
+ "section_label": "Laser welding",
+ "related_pages": [
+  {
+   "href": "laser-cutting-machine.html",
+   "label": "Sheet laser cutters"
+  },
+  {
+   "href": "tube-laser-cutting-machine.html",
+   "label": "Tube laser cutters"
+  },
+  {
+   "href": "press-brake.html",
+   "label": "CNC press brakes"
+  },
+  {
+   "href": "panel-bender.html",
+   "label": "CNC panel benders"
+  },
+  {
+   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
+   "label": "Deburring and edge rounding"
+  }
+ ],
+ "related_title": "Machinery that works alongside a laser welder",
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null,
+ "nav_label": "Laser welding & cladding"
+}

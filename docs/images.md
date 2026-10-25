@@ -202,3 +202,12 @@ way.  Sources (outside the repository): the supplier's website renders (`/home/c
 real alpha channel → `trim` only) and the hi-res factory photos staged from the user's laptop (`/home/claude/value-sheet-src/hires/`, kept as detail photos).  Renders on an opaque white background go through BiRefNet like any white photo
 (`cutout=True`); flood-filling the white leaked into the white machine bodies, so that path (`white_alpha`) is kept only for
 the one render where it worked (`vl-wadg-1`).  Keys `vl-*`; `tools/vl_sheet_keys.txt` is written by `tools/vl_sheet_pages.py`.
+
+## Senfeng (section `senfeng`, tools/senfeng_photos.py)
+
+Senfeng is sold under its own brand (the value line of the laser section), so the logo stays.  Sources (outside the repository,
+`/home/claude/senfeng/`): the high-resolution renders inside Senfeng's series leaflets (`pdfimg/<leaflet>/`, extracted with
+`pdfimages -png`; each render comes with its soft mask, which `M()` turns into the alpha channel after dropping the floor shadow —
+`np.clip((a - 110) * 4, 0, 255)` — no BiRefNet), the website renders on studio backgrounds (`img/`, `R()` → BiRefNet) and the
+website photos and diagrams (`W()`, kept as photos).  The brand badge logo `senfeng-logo` is a crop of the leaflet cover block
+(section `site`).  Keys `sf-*`; `tools/senfeng_keys.txt` is written by `tools/senfeng_pages.py`.

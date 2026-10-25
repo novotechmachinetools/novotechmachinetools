@@ -105,6 +105,10 @@
      "href": "tube-laser-cutting-machine.html"
     },
     {
+     "label": "Laser welding & cladding",
+     "href": "laser-welding-machine.html"
+    },
+    {
      "label": "Shears",
      "href": "shear-cutting.html",
      "children": [
@@ -486,6 +490,20 @@
    "country_code": "TR",
    "line": "Dener",
    "tagline": "Made in Turkey since 1974 — Dener Makina press brakes, shears, sheet and tube fiber lasers and panel benders, with Dener Canada in Mississauga; sold, installed and supported in Canada by NovoTech"
+  },
+  "senfeng": {
+   "name": "Senfeng",
+   "manufacturer": "Senfeng Laser",
+   "country": "China",
+   "country_code": "CN",
+   "line": "Value line",
+   "logo": "senfeng-logo",
+   "tagline": "Made in China since 2004 — Senfeng Laser fiber laser cutting, welding and cladding machines and panel benders, CE / FDA / ETL certified; sold, installed and supported in Canada by NovoTech",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Senfeng fiber laser brochure",
+    "size": "PDF · imperial units"
+   }
   }
  }
 }

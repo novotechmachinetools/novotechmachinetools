@@ -1,0 +1,814 @@
+{
+ "order": [
+  "sf-handheld",
+  "sf-robot-weld",
+  "sf-cladding"
+ ],
+ "families": {
+  "sf-handheld": {
+   "id": "sf-handheld",
+   "brand": "senfeng",
+   "name": "Handheld laser welders, 0.8 – 3 kW — portable air-cooled S series and HWM series",
+   "short": "Handheld laser welders",
+   "models_label": "SF3S · SF4S · SF5S · SF1500HWM · SF2000HWM · SF3000HWM",
+   "summary": "A handheld laser welder replaces TIG on stainless, aluminum, galvanized and carbon steel sheet: a 1.5 lb gun, a seam five times faster than TIG, almost no heat distortion and no grinding afterwards — an operator learns it in a day. The S series is the portable one: 0.8 to 1.5 kW, air-cooled, 99 to 121 lb on wheels, plugged into a 220 V outlet. The HWM series brings 1.5 to 3 kW with a water chiller and a wire feeder for welds to 9/32″, and a 4-in-1 head that welds, cleans, cuts and seam-welds. CE face shield, protective clothing and an optional welding booth come with it.",
+   "features": [
+    "S series: 0.8 / 1.2 / 1.5 kW air-cooled, 99 – 121 lb; HWM: 1.5 / 2 / 3 kW, welds to 9/32″, wire feeder",
+    "1.5 lb (0.7 kg) welding gun with wire feed; 16 – 33 ft cable",
+    "Self-developed laser source and 4-in-1 welding head (weld, clean, cut, seam)",
+    "Safety: CE face shield, laser-resistant clothing and gloves supplied; optional booth with protective glass",
+    "CE / FDA certified; S series 220 V single-phase, HWM 3-phase"
+   ],
+   "optional": [
+    "Laser welding booth",
+    "Robot + handheld combination (robot CRP-RH18-20 with the same source)",
+    "Cleaning head; extra wire feeder"
+   ],
+   "images": [
+    "sf-hwm-1",
+    "sf-hw-1",
+    "sf-hwm-gun",
+    "sf-hw-gun",
+    "sf-hwm-2",
+    "sf-hw-weld",
+    "sf-hwm-weld",
+    "sf-hwm-weld-2",
+    "sf-hw-safety",
+    "sf-hw-booth",
+    "sf-weld-samples"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "S series portable air-cooled laser welders",
+      "sub": "3 models · 0.8 – 1.5 kW · 99 – 121 lb",
+      "models": [
+       "SF3S",
+       "SF4S",
+       "SF5S"
+      ],
+      "rows": [
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "0.8 kW",
+         "1.2 kW",
+         "1.5 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cooling",
+        "sub": "",
+        "cells": [
+         "air-cooled — no chiller",
+         "air-cooled — no chiller",
+         "air-cooled — no chiller"
+        ],
+        "key": false
+       },
+       {
+        "label": "Wavelength",
+        "sub": "",
+        "cells": [
+         "1,080 ± 10 nm",
+         "1,080 ± 10 nm",
+         "1,080 ± 10 nm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Filler wire",
+        "sub": "",
+        "cells": [
+         "0.03 – 0.06″ (0.8 – 1.6 mm)",
+         "0.03 – 0.06″ (0.8 – 1.6 mm)",
+         "0.03 – 0.06″ (0.8 – 1.6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding gun",
+        "sub": "",
+        "cells": [
+         "under 1.5 lb (0.7 kg)",
+         "under 1.5 lb (0.7 kg)",
+         "under 1.5 lb (0.7 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Gun cable",
+        "sub": "",
+        "cells": [
+         "16.4 ft (5 m)",
+         "23 ft (7 m)",
+         "23 ft (7 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "",
+        "cells": [
+         "99 lb (45 kg)",
+         "110 lb (50 kg)",
+         "121 lb (55 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "26.4 × 13.2 × 23.2″ (670 × 335 × 590 mm)",
+         "26.4 × 13.2 × 23.2″ (670 × 335 × 590 mm)",
+         "26.4 × 13.2 × 23.2″ (670 × 335 × 590 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "220 V single-phase",
+         "220 V single-phase",
+         "220 V single-phase"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HWM series handheld laser welders",
+      "sub": "3 models · 1.5 – 3 kW · welds to 9/32″",
+      "models": [
+       "SF1500HWM",
+       "SF2000HWM",
+       "SF3000HWM"
+      ],
+      "rows": [
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 kW",
+         "2 kW",
+         "3 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding thickness",
+        "sub": "",
+        "cells": [
+         "to 5/32″ (4 mm)",
+         "to 3/16″ (5 mm)",
+         "to 9/32″ (7 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Wavelength",
+        "sub": "",
+        "cells": [
+         "1,080 ± 10 nm",
+         "1,080 ± 10 nm",
+         "1,080 ± 10 nm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Filler wire",
+        "sub": "",
+        "cells": [
+         "0.03 – 0.06″ (0.8 – 1.6 mm)",
+         "0.03 – 0.06″ (0.8 – 1.6 mm)",
+         "0.03 – 0.08″ (0.8 – 2 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding gun",
+        "sub": "",
+        "cells": [
+         "under 1.5 lb (0.7 kg) · 4-in-1 head: weld, clean, cut, seam",
+         "under 1.5 lb (0.7 kg) · 4-in-1 head: weld, clean, cut, seam",
+         "under 1.5 lb (0.7 kg) · 4-in-1 head: weld, clean, cut, seam"
+        ],
+        "key": false
+       },
+       {
+        "label": "Gun cable",
+        "sub": "",
+        "cells": [
+         "32.8 ft (10 m)",
+         "32.8 ft (10 m)",
+         "32.8 ft (10 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "",
+        "cells": [
+         "485 lb (220 kg)",
+         "485 lb (220 kg)",
+         "584 lb (265 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "37.6 × 28.2 × 42.5″ (954 × 715 × 1,080 mm)",
+         "37.6 × 28.2 × 42.5″ (954 × 715 × 1,080 mm)",
+         "47.6 × 28.2 × 42.5″ (1,210 × 715 × 1,080 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available",
+         "208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available",
+         "208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF3S",
+      "glance": [
+       "0.8 kW",
+       "",
+       "under 1.5 lb (0.7 kg)",
+       "99 lb (45 kg)",
+       "220 V single-phase"
+      ]
+     },
+     {
+      "name": "SF4S",
+      "glance": [
+       "1.2 kW",
+       "",
+       "under 1.5 lb (0.7 kg)",
+       "110 lb (50 kg)",
+       "220 V single-phase"
+      ]
+     },
+     {
+      "name": "SF5S",
+      "glance": [
+       "1.5 kW",
+       "",
+       "under 1.5 lb (0.7 kg)",
+       "121 lb (55 kg)",
+       "220 V single-phase"
+      ]
+     },
+     {
+      "name": "SF1500HWM",
+      "glance": [
+       "1.5 kW",
+       "to 5/32″ (4 mm)",
+       "under 1.5 lb (0.7 kg) · 4-in-1 head: weld, clean, cut, seam",
+       "485 lb (220 kg)",
+       "208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+      ]
+     },
+     {
+      "name": "SF2000HWM",
+      "glance": [
+       "2 kW",
+       "to 3/16″ (5 mm)",
+       "under 1.5 lb (0.7 kg) · 4-in-1 head: weld, clean, cut, seam",
+       "485 lb (220 kg)",
+       "208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+      ]
+     },
+     {
+      "name": "SF3000HWM",
+      "glance": [
+       "3 kW",
+       "to 9/32″ (7 mm)",
+       "under 1.5 lb (0.7 kg) · 4-in-1 head: weld, clean, cut, seam",
+       "584 lb (265 kg)",
+       "208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "power",
+     "thickness",
+     "gun",
+     "weight",
+     "supply"
+    ],
+    "caps": {},
+    "note": "Welding thickness is for a square butt weld in mild steel; stainless and aluminum run about 70 % of it."
+   },
+   "series": "S · HWM",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Laser-Welding-Cladding-2026.pdf",
+    "label": "Download the laser welding & cladding brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "weld-handheld"
+  },
+  "sf-robot-weld": {
+   "id": "sf-robot-weld",
+   "brand": "senfeng",
+   "name": "Robotic laser welding cells, 1.5 – 20 kW, and robotic arc welders",
+   "short": "Robotic welding",
+   "models_label": "SF1500RW – SF20000RW · SF-500RMW · 350CMW · 500CMW",
+   "summary": "The RW series puts a fiber laser on a 6-axis robot with 72″ reach: 1.5 to 20 kW for sheet to 9/16″, with horizontal or dual-axis positioners for tanks and tubes and 7 to 9-axis cells on a linear track. For MIG/MAG the RMW is a teaching-free robot that scans the part and programs the weld itself, and the CMW is a collaborative robot on a mobile cart with a 59 × 59″ 3D fixture table — 350 or 500 A, programmed by hand-guiding, moved to the job on wheels.",
+   "features": [
+    "RW: 6-axis robot, 1.5 – 20 kW, welds to 9/16″ (14 mm); positioners and linear tracks",
+    "RMW: teaching-free 500 A MIG/MAG; CMW: cobot 350 / 500 A on a cart with 3D fixture table",
+    "Safety fencing, light curtains and fume extraction interfaces; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Horizontal or dual-axis positioner",
+    "7 – 9 axis cells with linear track",
+    "Second welding station; fume extraction"
+   ],
+   "images": [
+    "sf-rw-1",
+    "sf-rw-2",
+    "sf-rw-positioner",
+    "sf-rw-cell",
+    "sf-rmw-1",
+    "sf-rmw-weld",
+    "sf-cmw-1",
+    "sf-cmw-2",
+    "sf-cmw-weld"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "RW series robotic laser welding cells",
+      "sub": "6 models · 1.5 – 20 kW · 6-axis robot",
+      "models": [
+       "SF1500RW",
+       "SF2000RW",
+       "SF3000RW",
+       "SF6000RW",
+       "SF12000RW",
+       "SF20000RW"
+      ],
+      "rows": [
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 kW",
+         "2 kW",
+         "3 kW",
+         "6 kW",
+         "12 kW",
+         "20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding thickness",
+        "sub": "",
+        "cells": [
+         "to 0.12″ (3 mm)",
+         "to 0.16″ (4 mm)",
+         "to 0.24″ (6 mm)",
+         "to 0.28″ (7 mm)",
+         "to 0.39″ (10 mm)",
+         "to 0.55″ (14 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding head",
+        "sub": "",
+        "cells": [
+         "to 2.2 kg · wire feeder",
+         "to 2.2 kg · wire feeder",
+         "to 2.2 kg · wire feeder",
+         "to 8 kg · wire feeder",
+         "to 8 kg · wire feeder",
+         "to 8 kg · wire feeder"
+        ],
+        "key": false
+       },
+       {
+        "label": "Robot",
+        "sub": "",
+        "cells": [
+         "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+         "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+         "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+         "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+         "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+         "6 axes · 72″ (1,830 mm) reach · 25 kg payload"
+        ],
+        "key": false
+       },
+       {
+        "label": "Fiber length",
+        "sub": "",
+        "cells": [
+         "32.8 ft (10 m)",
+         "32.8 ft (10 m)",
+         "65.6 ft (20 m)",
+         "65.6 ft (20 m)",
+         "65.6 ft (20 m)",
+         "65.6 ft (20 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Options",
+        "sub": "",
+        "cells": [
+         "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing",
+         "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing",
+         "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing",
+         "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing",
+         "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing",
+         "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Robotic arc welding machines",
+      "sub": "3 models · 350 – 500 A MIG/MAG",
+      "models": [
+       "SF-500RMW",
+       "350CMW",
+       "500CMW"
+      ],
+      "rows": [
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "teaching-free robotic welder — scans the part and programs itself",
+         "collaborative cobot welder on a mobile cart",
+         "collaborative cobot welder on a mobile cart"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding source",
+        "sub": "",
+        "cells": [
+         "500 A MIG/MAG, water-cooled torch",
+         "350 A, air-cooled torch",
+         "500 A, water-cooled torch"
+        ],
+        "key": false
+       },
+       {
+        "label": "Robot",
+        "sub": "",
+        "cells": [
+         "6 axes · 83″ (2,116 mm) reach · 6 kg",
+         "cobot · 53″ (1,350 mm) reach · 3 – 20 kg",
+         "cobot · 53″ (1,350 mm) reach · 3 – 20 kg"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.003″ (±0.08 mm)",
+         "±0.001″ (±0.03 mm)",
+         "±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding table",
+        "sub": "",
+        "cells": [
+         "3D fixture table (custom)",
+         "59 × 59 × 26″ 3D flexible table",
+         "59 × 59 × 26″ 3D flexible table"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "—",
+         "16.5 kVA",
+         "27 kVA"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF1500RW",
+      "glance": [
+       "1.5 kW",
+       "to 0.12″ (3 mm)",
+       "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+       "32.8 ft (10 m)",
+       "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing"
+      ]
+     },
+     {
+      "name": "SF2000RW",
+      "glance": [
+       "2 kW",
+       "to 0.16″ (4 mm)",
+       "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+       "32.8 ft (10 m)",
+       "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing"
+      ]
+     },
+     {
+      "name": "SF3000RW",
+      "glance": [
+       "3 kW",
+       "to 0.24″ (6 mm)",
+       "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+       "65.6 ft (20 m)",
+       "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing"
+      ]
+     },
+     {
+      "name": "SF6000RW",
+      "glance": [
+       "6 kW",
+       "to 0.28″ (7 mm)",
+       "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+       "65.6 ft (20 m)",
+       "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing"
+      ]
+     },
+     {
+      "name": "SF12000RW",
+      "glance": [
+       "12 kW",
+       "to 0.39″ (10 mm)",
+       "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+       "65.6 ft (20 m)",
+       "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing"
+      ]
+     },
+     {
+      "name": "SF20000RW",
+      "glance": [
+       "20 kW",
+       "to 0.55″ (14 mm)",
+       "6 axes · 72″ (1,830 mm) reach · 25 kg payload",
+       "65.6 ft (20 m)",
+       "horizontal or dual-axis positioner, 7 – 9 axis cell with linear track, safety fencing"
+      ]
+     },
+     {
+      "name": "SF-500RMW",
+      "glance": [
+       "",
+       "",
+       "6 axes · 83″ (2,116 mm) reach · 6 kg",
+       "",
+       ""
+      ]
+     },
+     {
+      "name": "350CMW",
+      "glance": [
+       "",
+       "",
+       "cobot · 53″ (1,350 mm) reach · 3 – 20 kg",
+       "",
+       ""
+      ]
+     },
+     {
+      "name": "500CMW",
+      "glance": [
+       "",
+       "",
+       "cobot · 53″ (1,350 mm) reach · 3 – 20 kg",
+       "",
+       ""
+      ]
+     }
+    ],
+    "glance_keys": [
+     "power",
+     "thickness",
+     "robot",
+     "fiber",
+     "options"
+    ],
+    "caps": {},
+    "note": "Robot reach and payload as listed; the RW cell is sized to the part at order."
+   },
+   "series": "RW · RMW · CMW",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Laser-Welding-Cladding-2026.pdf",
+    "label": "Download the laser welding & cladding brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "weld-robot"
+  },
+  "sf-cladding": {
+   "id": "sf-cladding",
+   "brand": "senfeng",
+   "name": "Laser cladding machines, 6 / 12 kW — shafts, rolls, bores and on-site repair",
+   "short": "Laser cladding",
+   "models_label": "SFR6063 · SFHS3050 · SFHS6050 · SFMR02",
+   "summary": "Laser cladding lays a metallurgically bonded wear or corrosion layer — up to 25/64″ thick — onto shafts, rolls, hydraulic cylinders, valves and dies with far less heat than overlay welding and far better bonding than spraying. The SFR6063 robot cell handles workpieces to 20 ft and 15 t on its table; the SFHS3050 and 6050 are lathe-type machines for shafts to 10 and 20 ft; the SFMR02 is the portable system that goes to the machine for on-site repair. All with Senfeng's high-speed cladding head, dual-cylinder powder feeder and an inner-bore head as an option.",
+   "features": [
+    "6 or 12 kW; high-speed cladding head; dual-cylinder pneumatic powder feeder, 20 – 300 µm, to 150 g/min",
+    "KUKA / FANUC robot (SFR, SFMR) or lathe bed with Ø19.7″ three-jaw chuck (SFHS)",
+    "Coatings to 25/64″ (10 mm) with metallurgical bonding and small heat-affected zone; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Inner-bore cladding head",
+    "Dual-axis positioner",
+    "Powder recovery and fume extraction"
+   ],
+   "images": [
+    "sf-clad-1",
+    "sf-clad-2",
+    "sf-clad-3",
+    "sf-clad-robot",
+    "sf-clad-positioner",
+    "sf-clad-head",
+    "sf-clad-bore"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Laser cladding machines",
+      "sub": "4 models · 6 / 12 kW · shafts, rolls, bores, on-site repair",
+      "models": [
+       "SFR6063",
+       "SFHS3050",
+       "SFHS6050",
+       "SFMR02"
+      ],
+      "rows": [
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "robot cell with KUKA / FANUC robot",
+         "lathe-type machine",
+         "lathe-type machine",
+         "portable robot system for on-site repair"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 / 12 kW",
+         "6 / 12 kW",
+         "6 / 12 kW",
+         "6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. workpiece length",
+        "sub": "",
+        "cells": [
+         "236″ (6,000 mm)",
+         "118″ (3,000 mm)",
+         "236″ (6,000 mm)",
+         "robot reach 71″ (1,813 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. swing · clamping Ø",
+        "sub": "",
+        "cells": [
+         "Ø59 · Ø25″",
+         "Ø31.5 · Ø31.5″",
+         "Ø31.5 · Ø31.5″",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "33,000 lb (15 t)",
+         "4,400 lb (2 t)",
+         "4,400 lb (2 t)",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Powder feeder",
+        "sub": "",
+        "cells": [
+         "dual-cylinder pneumatic feeder, 20 – 300 µm powder, to 150 g/min",
+         "dual-cylinder pneumatic feeder, 20 – 300 µm powder, to 150 g/min",
+         "dual-cylinder pneumatic feeder, 20 – 300 µm powder, to 150 g/min",
+         "dual-cylinder pneumatic feeder, 20 – 300 µm powder, to 150 g/min"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cladding head",
+        "sub": "",
+        "cells": [
+         "high-speed cladding head; inner-bore head optional",
+         "high-speed cladding head; inner-bore head optional",
+         "high-speed cladding head; inner-bore head optional",
+         "high-speed cladding head; inner-bore head optional"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFR6063",
+      "glance": [
+       "robot cell with KUKA / FANUC robot",
+       "6 / 12 kW",
+       "236″ (6,000 mm)",
+       "33,000 lb (15 t)",
+       "high-speed cladding head; inner-bore head optional"
+      ]
+     },
+     {
+      "name": "SFHS3050",
+      "glance": [
+       "lathe-type machine",
+       "6 / 12 kW",
+       "118″ (3,000 mm)",
+       "4,400 lb (2 t)",
+       "high-speed cladding head; inner-bore head optional"
+      ]
+     },
+     {
+      "name": "SFHS6050",
+      "glance": [
+       "lathe-type machine",
+       "6 / 12 kW",
+       "236″ (6,000 mm)",
+       "4,400 lb (2 t)",
+       "high-speed cladding head; inner-bore head optional"
+      ]
+     },
+     {
+      "name": "SFMR02",
+      "glance": [
+       "portable robot system for on-site repair",
+       "6 kW",
+       "robot reach 71″ (1,813 mm)",
+       "—",
+       "high-speed cladding head; inner-bore head optional"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "type",
+     "power",
+     "length",
+     "load",
+     "head"
+    ],
+    "caps": {},
+    "note": "Workpiece sizes are the machine limits; cladding rates depend on the powder and layer thickness."
+   },
+   "series": "SFR · SFHS · SFMR",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Laser-Welding-Cladding-2026.pdf",
+    "label": "Download the laser welding & cladding brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "weld-cladding"
+  }
+ }
+}

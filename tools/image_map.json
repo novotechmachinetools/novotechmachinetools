@@ -15095,5 +15095,941 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "sf-h-1": {
+  "src": "tools/src-images/senfeng/sf-h-1.png",
+  "alt": "Senfeng SF3015H4 enclosed fiber laser cutting machine with pallet changer — 5 × 10 ft, 6 – 30 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-2": {
+  "src": "tools/src-images/senfeng/sf-h-2.png",
+  "alt": "Senfeng SF3015H space-saver enclosed fiber laser — 5 × 10 ft, 1.5 – 12 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-tower": {
+  "src": "tools/src-images/senfeng/sf-h-tower.png",
+  "alt": "H4 fiber laser with the optional loading / unloading tower and sheet storage",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-h-loader": {
+  "src": "tools/src-images/senfeng/sf-h-loader.png",
+  "alt": "H4 fiber laser with the optional loading and unloading arm",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-h-line": {
+  "src": "tools/src-images/senfeng/sf-h-line.jpg",
+  "alt": "Space-saver H series lasers in a line with a shared storage tower",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-h5": {
+  "src": "tools/src-images/senfeng/sf-h5.jpg",
+  "alt": "SF3015H5 heavy-load fiber laser for 40 – 80 kW sources",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-h-container": {
+  "src": "tools/src-images/senfeng/sf-h-container.jpg",
+  "alt": "The compact H series ships in one container without teardown",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-head": {
+  "src": "tools/src-images/senfeng/sf-h-head.jpg",
+  "alt": "Cutting head with the 7.9″ (200 mm) Z-axis travel for thick plate",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-bevel": {
+  "src": "tools/src-images/senfeng/sf-h-bevel.jpg",
+  "alt": "Optional 45° bevel cutting head",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-np-1": {
+  "src": "tools/src-images/senfeng/sf-np-1.png",
+  "alt": "Senfeng SF3015NP open-type single-table fiber laser — 5 × 10 ft, 3 – 12 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-np-2": {
+  "src": "tools/src-images/senfeng/sf-np-2.jpg",
+  "alt": "NP series open-type laser — the table seen from the loading side",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-np-3": {
+  "src": "tools/src-images/senfeng/sf-np-3.jpg",
+  "alt": "NP series laser with the optional servo swing-arm loading manipulator",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-np-4": {
+  "src": "tools/src-images/senfeng/sf-np-4.jpg",
+  "alt": "NP series laser with the optional loading and unloading unit",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-np-scene": {
+  "src": "tools/src-images/senfeng/sf-np-scene.jpg",
+  "alt": "NP series laser cutting a sheet",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-np-container": {
+  "src": "tools/src-images/senfeng/sf-np-container.jpg",
+  "alt": "Six 3015NP machines fit in one 40 ft container",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1313g": {
+  "src": "tools/src-images/senfeng/sf-1313g.jpg",
+  "alt": "Senfeng SF1313G compact fiber laser — 4 × 4 ft table, 1.5 – 3 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530g": {
+  "src": "tools/src-images/senfeng/sf-1530g.jpg",
+  "alt": "Senfeng SF1530G enclosed fiber laser — 5 × 10 ft, 1.5 – 4 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530n": {
+  "src": "tools/src-images/senfeng/sf-1530n.jpg",
+  "alt": "Senfeng SF1530N enclosed fiber laser with pull-out single table — 5 × 10 ft, 1.5 – 12 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530n-table": {
+  "src": "tools/src-images/senfeng/sf-1530n-table.jpg",
+  "alt": "SF1530N — the single table pulled out for loading",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530np": {
+  "src": "tools/src-images/senfeng/sf-1530np.jpg",
+  "alt": "Senfeng SF1530NP fully enclosed compact fiber laser with electric lifting door — 5 × 10 ft, 1.5 – 6 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530np-2": {
+  "src": "tools/src-images/senfeng/sf-1530np-2.jpg",
+  "alt": "SF1530NP — pull-out platform with integrated leg supports",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530np-head": {
+  "src": "tools/src-images/senfeng/sf-1530np-head.jpg",
+  "alt": "SF1530NP — autofocus cutting head over the slat table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-sfp": {
+  "src": "tools/src-images/senfeng/sf-sfp.jpg",
+  "alt": "Senfeng SFP600 high-precision fiber laser for small parts — 24 × 24″ table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-hm-1": {
+  "src": "tools/src-images/senfeng/sf-hm-1.jpg",
+  "alt": "Senfeng SF3015HM enclosed sheet and tube fiber laser — 5 × 10 ft table plus Ø8.6″ × 20 ft tube attachment",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-hm-2": {
+  "src": "tools/src-images/senfeng/sf-hm-2.jpg",
+  "alt": "SF3015HM — the tube attachment on the side of the enclosure",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-hm-3": {
+  "src": "tools/src-images/senfeng/sf-hm-3.jpg",
+  "alt": "SF3015HM — rear view with the tube support",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-hm-4": {
+  "src": "tools/src-images/senfeng/sf-hm-4.jpg",
+  "alt": "Sheet and tube laser — enclosure doors open",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-r-1": {
+  "src": "tools/src-images/senfeng/sf-r-1.jpg",
+  "alt": "Senfeng R series ultra-large plate laser — 10 ft wide table to 164 ft long, 6 – 60 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-r-2": {
+  "src": "tools/src-images/senfeng/sf-r-2.jpg",
+  "alt": "R series plate laser — gantry over the long table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-tx-1": {
+  "src": "tools/src-images/senfeng/sf-tx-1.jpg",
+  "alt": "Senfeng TX series plate laser with ±45° bevel head — 10 × 20 ft to 10 × 164 ft",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-tx-2": {
+  "src": "tools/src-images/senfeng/sf-tx-2.jpg",
+  "alt": "TX series bevel plate laser — three-quarter view",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-txp": {
+  "src": "tools/src-images/senfeng/sf-txp.jpg",
+  "alt": "Senfeng SF12030TXP laser and flame hybrid plate cutter — 20 kW laser plus oxy-fuel to 4″",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-r-curtain": {
+  "src": "tools/src-images/senfeng/sf-r-curtain.jpg",
+  "alt": "R series — protective curtain and the beam with its protective chamber",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-r-bevel": {
+  "src": "tools/src-images/senfeng/sf-r-bevel.jpg",
+  "alt": "Bevel cutting in one step — K, V, X and Y weld preparations",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-r-dust": {
+  "src": "tools/src-images/senfeng/sf-r-dust.jpg",
+  "alt": "Blow-suction dust collection under the slat table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-r-cut": {
+  "src": "tools/src-images/senfeng/sf-r-cut.jpg",
+  "alt": "R series laser cutting 4″ (100 mm) plate",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-tx-flame": {
+  "src": "tools/src-images/senfeng/sf-tx-flame.jpg",
+  "alt": "TXP — laser and flame hybrid cutting of 4″ carbon steel plate with bevels",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-3d-1": {
+  "src": "tools/src-images/senfeng/sf-3d-1.jpg",
+  "alt": "Senfeng SF3015TD five-axis 3D fiber laser — 5 × 10 ft travel, 3 – 20 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-3d-2": {
+  "src": "tools/src-images/senfeng/sf-3d-2.jpg",
+  "alt": "SF3015TD — the enclosed five-axis cell",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-3d-head": {
+  "src": "tools/src-images/senfeng/sf-3d-head.jpg",
+  "alt": "Five-axis head trimming a formed part",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-3d-cut": {
+  "src": "tools/src-images/senfeng/sf-3d-cut.jpg",
+  "alt": "3D laser cutting a hot-stamped automotive part",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-rc-1": {
+  "src": "tools/src-images/senfeng/sf-rc-1.jpg",
+  "alt": "Senfeng RC series robot fiber laser cutting cell — 6-axis robot with a 1.5 – 6 kW source",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-rc-2": {
+  "src": "tools/src-images/senfeng/sf-rc-2.jpg",
+  "alt": "RC series robot laser cutting system",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-1": {
+  "src": "tools/src-images/senfeng/sf-coil-1.png",
+  "alt": "Senfeng SF1503CH coil-fed fiber laser cutting line — decoiler, leveller and 5 × 10 ft laser, 3 – 6 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-2": {
+  "src": "tools/src-images/senfeng/sf-coil-2.png",
+  "alt": "Senfeng SF2012CH coil-fed laser line for 5/16″ – 9/16″ (8 – 14 mm) coil, 12 – 80 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-3": {
+  "src": "tools/src-images/senfeng/sf-coil-3.png",
+  "alt": "Senfeng SF15015C open-type thin-sheet coil-fed laser — 0.031 – 0.047″ coil",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-top": {
+  "src": "tools/src-images/senfeng/sf-coil-top.png",
+  "alt": "Senfeng TOP series automated line — coil, laser cutting, robot sorting, panel bending and welding",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-parts": {
+  "src": "tools/src-images/senfeng/sf-coil-parts.jpg",
+  "alt": "Parts cut straight from coil",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-scene": {
+  "src": "tools/src-images/senfeng/sf-coil-scene.jpg",
+  "alt": "Coil-fed laser line — the leveller feeding the cutting table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-1": {
+  "src": "tools/src-images/senfeng/sf-t-1.png",
+  "alt": "Senfeng SF6024T two-chuck tube fiber laser — Ø0.7 – 9″ tube, 20 ft, 1.5 – 6 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-2": {
+  "src": "tools/src-images/senfeng/sf-t-2.jpg",
+  "alt": "Senfeng SF7524T two-chuck tube laser for 24.6 ft tubes with the safety fence",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-t-3": {
+  "src": "tools/src-images/senfeng/sf-t-3.jpg",
+  "alt": "T series tube laser with the optional automatic bundle loader",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-t-4": {
+  "src": "tools/src-images/senfeng/sf-t-4.jpg",
+  "alt": "T series tube laser — loader and unloading conveyor",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-t-head": {
+  "src": "tools/src-images/senfeng/sf-t-head.jpg",
+  "alt": "Tube laser cutting head with the following support",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-chuck": {
+  "src": "tools/src-images/senfeng/sf-t-chuck.jpg",
+  "alt": "Pneumatic chuck and cutting head on a round tube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-cutting": {
+  "src": "tools/src-images/senfeng/sf-t-cutting.jpg",
+  "alt": "Tube laser cutting a perforated square tube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-profiles": {
+  "src": "tools/src-images/senfeng/sf-t-profiles.jpg",
+  "alt": "Round, square, rectangular, angle and channel profiles cut on the tube laser",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-thickness": {
+  "src": "tools/src-images/senfeng/sf-t-thickness.jpg",
+  "alt": "Tube wall thickness capacity by laser power — stainless, carbon steel, aluminum",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-1": {
+  "src": "tools/src-images/senfeng/sf-plus-1.png",
+  "alt": "Senfeng SF6024PLUS high-speed tube laser — Ø0.7 – 9.4″, 20 ft, 3 – 6 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-gplus-1": {
+  "src": "tools/src-images/senfeng/sf-gplus-1.png",
+  "alt": "Senfeng SF6012GPLUS bevel tube laser — Ø0.6 – 4.7″ at 240 rpm",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-gt-1": {
+  "src": "tools/src-images/senfeng/sf-gt-1.png",
+  "alt": "Senfeng SF6024GT bevel tube laser with loader — Ø2.3 – 9″, 45° bevels",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-gt-2": {
+  "src": "tools/src-images/senfeng/sf-gt-2.jpg",
+  "alt": "Senfeng SF6035GT bevel tube laser — Ø3.1 – 14.1″",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-plus-bevel": {
+  "src": "tools/src-images/senfeng/sf-plus-bevel.jpg",
+  "alt": "45° bevel cutting head on the GPLUS",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-small": {
+  "src": "tools/src-images/senfeng/sf-plus-small.jpg",
+  "alt": "Cutting small tubes at high speed — minimum Ø0.6″",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-chuck": {
+  "src": "tools/src-images/senfeng/sf-plus-chuck.jpg",
+  "alt": "Self-centering pneumatic chuck of the PLUS series",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-parts-1": {
+  "src": "tools/src-images/senfeng/sf-plus-parts-1.jpg",
+  "alt": "Bevel-cut square tubes joined without a gap",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-parts-2": {
+  "src": "tools/src-images/senfeng/sf-plus-parts-2.jpg",
+  "alt": "Rectangular tube with laser-cut holes and bevelled ends",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-parts-3": {
+  "src": "tools/src-images/senfeng/sf-plus-parts-3.jpg",
+  "alt": "Round tube with a 45° bevel cut",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-nt-1": {
+  "src": "tools/src-images/senfeng/sf-nt-1.png",
+  "alt": "Senfeng SF6035NT three-chuck zero-tailing tube laser — Ø0.7 – 14″, 20 ft, 3 – 12 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-st-1": {
+  "src": "tools/src-images/senfeng/sf-st-1.png",
+  "alt": "Senfeng ST series three-chuck heavy-duty tube laser — Ø1.9 – 25″, 29 – 39 ft, 6 – 20 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-ht-1": {
+  "src": "tools/src-images/senfeng/sf-ht-1.png",
+  "alt": "Senfeng HT series four-chuck tube laser — Ø1.9 – 25″, 39 – 49 ft tubes to 6,600 lb",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-ch-1": {
+  "src": "tools/src-images/senfeng/sf-ch-1.png",
+  "alt": "Senfeng SF1500CH profile laser line for H-beams, channels and angles — 12 – 30 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-nt-chucks": {
+  "src": "tools/src-images/senfeng/sf-nt-chucks.png",
+  "alt": "The three chucks of the NT series — the middle chuck feeds the last piece so there is no tailing",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-ht-tube": {
+  "src": "tools/src-images/senfeng/sf-ht-tube.jpg",
+  "alt": "Four-chuck tube laser carrying a heavy large-diameter tube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-ht-bevel": {
+  "src": "tools/src-images/senfeng/sf-ht-bevel.jpg",
+  "alt": "45° bevel cutting on heavy tube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-ch-scan": {
+  "src": "tools/src-images/senfeng/sf-ch-scan.jpg",
+  "alt": "Optional visual scanning of the H-beam before cutting",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-ch-render": {
+  "src": "tools/src-images/senfeng/sf-ch-render.jpg",
+  "alt": "H-beam laser line — the gantry cutting a beam",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hwm-1": {
+  "src": "tools/src-images/senfeng/sf-hwm-1.png",
+  "alt": "Senfeng HWM series handheld fiber laser welder — 1.5, 2 or 3 kW, welds to 9/32″",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hwm-gun": {
+  "src": "tools/src-images/senfeng/sf-hwm-gun.png",
+  "alt": "Handheld laser welding gun — under 1.5 lb, wire feeder and air-cooled head",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hwm-2": {
+  "src": "tools/src-images/senfeng/sf-hwm-2.jpg",
+  "alt": "HWM series laser welder with the wire feeder on top",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-hw-1": {
+  "src": "tools/src-images/senfeng/sf-hw-1.png",
+  "alt": "Senfeng S series portable air-cooled laser welder with wire feeder — 0.8 – 1.5 kW",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hw-gun": {
+  "src": "tools/src-images/senfeng/sf-hw-gun.png",
+  "alt": "S series air-cooled welding gun",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hw-weld": {
+  "src": "tools/src-images/senfeng/sf-hw-weld.jpg",
+  "alt": "Handheld laser welding a stainless corner — no filler, no grinding",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hwm-weld": {
+  "src": "tools/src-images/senfeng/sf-hwm-weld.jpg",
+  "alt": "Handheld laser welding with filler wire",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hwm-weld-2": {
+  "src": "tools/src-images/senfeng/sf-hwm-weld-2.jpg",
+  "alt": "Handheld laser welding a stainless sheet",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hw-safety": {
+  "src": "tools/src-images/senfeng/sf-hw-safety.jpg",
+  "alt": "Operator protection for laser welding — CE face shield, laser-resistant clothing and gloves",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hw-booth": {
+  "src": "tools/src-images/senfeng/sf-hw-booth.jpg",
+  "alt": "Optional laser welding booth with protective glass",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-rw-1": {
+  "src": "tools/src-images/senfeng/sf-rw-1.png",
+  "alt": "Senfeng RW series robotic fiber laser welding cell — 6-axis robot with a 1.5 – 20 kW source",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-rw-2": {
+  "src": "tools/src-images/senfeng/sf-rw-2.jpg",
+  "alt": "RW series robot laser welder with positioner",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-rw-positioner": {
+  "src": "tools/src-images/senfeng/sf-rw-positioner.jpg",
+  "alt": "Horizontal positioner for welding tanks and tubes",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-rw-cell": {
+  "src": "tools/src-images/senfeng/sf-rw-cell.jpg",
+  "alt": "Robotic welding cell with safety fencing — 7-axis configuration",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-rmw-1": {
+  "src": "tools/src-images/senfeng/sf-rmw-1.jpg",
+  "alt": "Senfeng RMW series teaching-free robotic arc welding machine — 500 A MIG/MAG",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-rmw-weld": {
+  "src": "tools/src-images/senfeng/sf-rmw-weld.png",
+  "alt": "Robotic arc welding on a 3D fixture table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-cmw-1": {
+  "src": "tools/src-images/senfeng/sf-cmw-1.jpg",
+  "alt": "Senfeng CMW series collaborative robotic arc welder on a mobile cart — 350 / 500 A",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-cmw-2": {
+  "src": "tools/src-images/senfeng/sf-cmw-2.jpg",
+  "alt": "CMW collaborative welder — the cobot arm and torch",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-cmw-weld": {
+  "src": "tools/src-images/senfeng/sf-cmw-weld.png",
+  "alt": "Collaborative arc welding on the 3D flexible table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-weld-samples": {
+  "src": "tools/src-images/senfeng/sf-weld-samples.jpg",
+  "alt": "Laser-welded seams on stainless, aluminum and carbon steel",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-clad-1": {
+  "src": "tools/src-images/senfeng/sf-clad-1.jpg",
+  "alt": "Senfeng SFR6063 robot laser cladding machine — 6 / 12 kW, workpieces to 20 ft and 15 t",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-clad-2": {
+  "src": "tools/src-images/senfeng/sf-clad-2.jpg",
+  "alt": "Senfeng SFHS3050 laser cladding machine for shafts to 10 ft",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-clad-3": {
+  "src": "tools/src-images/senfeng/sf-clad-3.jpg",
+  "alt": "Senfeng SFMR02 portable laser cladding system for on-site repair",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-clad-robot": {
+  "src": "tools/src-images/senfeng/sf-clad-robot.jpg",
+  "alt": "KUKA / FANUC robot of the cladding cell",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-clad-positioner": {
+  "src": "tools/src-images/senfeng/sf-clad-positioner.jpg",
+  "alt": "Dual-axis positioner for cladding",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-clad-head": {
+  "src": "tools/src-images/senfeng/sf-clad-head.jpg",
+  "alt": "High-speed laser cladding head with powder feed",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-clad-bore": {
+  "src": "tools/src-images/senfeng/sf-clad-bore.jpg",
+  "alt": "Inner-bore cladding head",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-bdc-1": {
+  "src": "tools/src-images/senfeng/sf-bdc-1.png",
+  "alt": "Senfeng BDC2000 push-down automatic panel bender — 79″ bend width, 13 servo axes",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-bdc-2": {
+  "src": "tools/src-images/senfeng/sf-bdc-2.jpg",
+  "alt": "BDC series panel bender — three-quarter view from the manipulator side",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-bdc-3": {
+  "src": "tools/src-images/senfeng/sf-bdc-3.jpg",
+  "alt": "Senfeng BDC2500 push-down panel bender — 98″ bend width",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-bdc-suction": {
+  "src": "tools/src-images/senfeng/sf-bdc-suction.jpg",
+  "alt": "Senfeng BDC1500 suction-cup panel bender — 59″ bend width, 10 axes",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-bdc-robot": {
+  "src": "tools/src-images/senfeng/sf-bdc-robot.jpg",
+  "alt": "BDC panel bender with robot loading and unloading",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-bdc-robot-2": {
+  "src": "tools/src-images/senfeng/sf-bdc-robot-2.jpg",
+  "alt": "Robot loading cell of the BDC panel bender — rear view",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-bdc-tool": {
+  "src": "tools/src-images/senfeng/sf-bdc-tool.jpg",
+  "alt": "Optional auxiliary bending tool of the BDC",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-bdc-clamps": {
+  "src": "tools/src-images/senfeng/sf-bdc-clamps.jpg",
+  "alt": "Optional clamps of the BDC panel bender",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-bdc-blades": {
+  "src": "tools/src-images/senfeng/sf-bdc-blades.jpg",
+  "alt": "Bending blades and blank-holder of the panel bender",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-bdc-bends": {
+  "src": "tools/src-images/senfeng/sf-bdc-bends.jpg",
+  "alt": "Bend up, bend down, press the edge and bend arc",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-bdc-parts": {
+  "src": "tools/src-images/senfeng/sf-bdc-parts.jpg",
+  "alt": "Panels, boxes and hems bent on the BDC",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-bdc-parts-2": {
+  "src": "tools/src-images/senfeng/sf-bdc-parts-2.jpg",
+  "alt": "Door panel bent on the suction-cup panel bender",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "senfeng-logo": {
+  "src": "tools/src-images/senfeng-logo.png",
+  "alt": "Senfeng",
+  "section": "site",
+  "trim": false,
+  "quality": 90,
+  "cutout": false
  }
 }

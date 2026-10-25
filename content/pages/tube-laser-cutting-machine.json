@@ -2,15 +2,15 @@
  "slug": "tube-laser-cutting-machine",
  "template": "category.html",
  "family_set": "dener",
- "title": "Tube Laser Cutting Machines, Ø0.3″ to 25″ Tube & Profile | NovoTech",
- "artifact_title": "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 3 to 20 kW",
- "meta_description": "Tube and profile fiber laser cutting machines sold and installed in Canada: E-FTL at 1 G for Ø0.3″ – 13.8″ and FTL to Ø25″ and 12 m bars, 3 to 20 kW, bundle loaders and bevel heads.",
- "h1": "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 3 to 20 kW",
- "intro": "A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells Dener tube lasers in Canada: the E-FTL with servo chucks accelerating at 1 G for tube from Ø0.3″ to 13.8″, and the heavy FTL for structural tube and pipe to Ø25.2″ and 12 m bars weighing up to 2,600 kg. Both load from a bundle automatically, support the tube as it is cut, nest parts along the bar and unload finished pieces; 3 to 20 kW sources, bevel heads for weld preparations. For trailer, railing, furniture, agricultural, HVAC and steel-construction work. Installed and supported from Mississauga, ON.",
+ "title": "Tube Laser Cutting Machines, Ø0.3″ to 25″ | NovoTech",
+ "artifact_title": "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 1.5 to 20 kW",
+ "meta_description": "Tube and profile fiber lasers sold in Canada: Dener E-FTL and FTL to Ø25″ and 12 m bars, and the Senfeng value line from Ø0.5″ to four-chuck 49 ft machines.",
+ "h1": "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 1.5 to 20 kW",
+ "intro": "A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells Dener tube lasers in Canada: the E-FTL with servo chucks accelerating at 1 G for tube from Ø0.3″ to 13.8″, and the heavy FTL for structural tube and pipe to Ø25.2″ and 12 m bars weighing up to 2,600 kg. Both load from a bundle automatically, support the tube as it is cut, nest parts along the bar and unload finished pieces; 3 to 20 kW sources, bevel heads for weld preparations. For trailer, railing, furniture, agricultural, HVAC and steel-construction work. Below the Dener machines is the Senfeng value line under its own brand: two-chuck T and PLUS machines from Ø0.5″ and 1.5 kW, bevel-cutting GT, zero-tailing NT and the three- and four-chuck ST / HT lasers to Ø25″ and 49 ft. Installed and supported from Mississauga, ON.",
  "hero_points": [
-  "E-FTL: Ø0.3″ – 13.8″ (8 – 350 mm), 1 G, 394 ft/min, ±0.05 mm — four chuck sizes",
-  "FTL: Ø0.6″ – 25.2″ (15 – 640 mm), bars to 39.4 ft and 5,732 lb — four chuck sizes",
-  "3 – 20 kW sources, automatic bundle loader, following supports, 3D bevel head"
+  "Dener E-FTL: Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm; FTL: Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb",
+  "Senfeng value line: T and PLUS two-chuck lasers Ø0.5″ – 14″, 20 – 39 ft, 1.5 – 6 kW; GT with 45° bevel head",
+  "Senfeng NT zero-tailing, ST / HT heavy-duty to Ø25″, 6,600 lb and 49 ft; H-beam profile line; bundle loaders for all"
  ],
  "hero_image": "dn-tube-2",
  "hero_image_secondary": [
@@ -27,10 +27,10 @@
    "href": "products.html"
   },
   {
-   "label": "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 3 to 20 kW"
+   "label": "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 1.5 to 20 kW"
   }
  ],
- "hero_brand_line": "Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries, Dener Canada in Mississauga. Sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga); Senfeng Laser builds the value line in Jinan, China (since 2004, CE / FDA / ETL, Senfeng Laser USA). Both sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "tube-eftl-group",
@@ -49,6 +49,17 @@
    "families": [
     "dn-ftl"
    ]
+  },
+  {
+   "id": "tube-senfeng-group",
+   "title": "Senfeng tube lasers — the value line",
+   "lead": "Senfeng's own-brand tube lasers from Jinan: 30 models from the Ø0.5″ two-chuck T series to four-chuck machines for Ø25″ tube and H-beams.",
+   "brand": "senfeng",
+   "families": [
+    "sf-t",
+    "sf-plus",
+    "sf-heavy"
+   ]
   }
  ],
  "faq": [
@@ -59,6 +70,10 @@
   {
    "q": "E-FTL or FTL?",
    "a": "The E-FTL is the fast machine for the sizes most fabricators use — railings, frames, furniture, trailers, exhaust — Ø0.3″ to 13.8″, accelerating at 1 G and running 394 ft/min on the small chucks. The FTL is built for weight: structural tube and pipe to Ø25.2″ and 12 m bars of 2,600 kg, with ±0.1 mm repeatability on the large chucks. Both take the same 3 – 20 kW sources and bundle loaders."
+  },
+  {
+   "q": "Dener or Senfeng?",
+   "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, Dener Canada parts in Mississauga. Senfeng's tube lasers are the value line: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser and cuts the railings, frames and furniture tube most shops run, and the range goes where few others do — zero-tailing three-chuck machines, four-chuck machines for 49 ft stock, Ø25″ pipe and the H-beam profile line. We quote both so you can compare."
   },
   {
    "q": "How is the tube loaded?",
@@ -78,11 +93,7 @@
   }
  ],
  "faq_title": "Questions we get asked about tube lasers",
- "catalogue_pdf": {
-  "file": "files/NovoTech-Dener-Tube-Lasers-2026.pdf",
-  "label": "Download the tube laser brochure",
-  "size": "PDF · 1 MB · imperial units"
- },
+ "catalogue_pdf": null,
  "origin_feature": {
   "title": "Made in Turkey by Dener Makina",
   "text": "Dener has built sheet-metal machinery in Kayseri since 1974 — a 1.3 million m² campus, its own design awards (Good Design, European Product Design, Design Turkey) and offices in the USA, Canada, Germany and India."
@@ -92,6 +103,10 @@
   {
    "href": "laser-cutting-machine.html",
    "label": "Sheet laser cutters"
+  },
+  {
+   "href": "laser-welding-machine.html",
+   "label": "Laser welding & cladding"
   },
   {
    "href": "pipe-benders.html",
@@ -119,5 +134,17 @@
  },
  "intro_video_heading": "Inside the factory — where the machines are built",
  "intro_video_text": "A tour of Dener Makina in Kayseri, Turkey, where the press brakes, shears and fiber lasers on this page are designed and built.",
- "nav_label": "Tube laser cutters"
+ "nav_label": "Tube laser cutters",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Dener-Tube-Lasers-2026.pdf",
+   "label": "Download the tube laser brochure",
+   "size": "PDF · 1 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Senfeng-Tube-Lasers-2026.pdf",
+   "label": "Download the Senfeng tube laser brochure",
+   "size": "PDF · 1 MB · imperial units"
+  }
+ ]
 }

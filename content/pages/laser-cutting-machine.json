@@ -2,15 +2,15 @@
  "slug": "laser-cutting-machine",
  "template": "category.html",
  "family_set": "dener",
- "title": "Fiber Laser Cutting Machines for Sheet Metal, 3–40 kW | NovoTech",
- "artifact_title": "Sheet metal fiber laser cutting machines — 5 × 10 ft to 13 × 82 ft, 3 to 40 kW",
- "meta_description": "Sheet metal fiber laser cutting machines sold and installed in Canada: GFL production lasers with pallet changer and Smart closed, semi-closed and open lasers, 5 × 10 ft to 13 × 82 ft tables, 3 to 40 kW sources.",
- "h1": "Sheet metal fiber laser cutting machines — 5 × 10 ft to 13 × 82 ft, 3 to 40 kW",
- "intro": "A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″, stainless and aluminum to 1″ and more with the high-power sources — at speeds no plasma or punch can match, with a clean edge and no tooling. NovoTech sells Dener fiber lasers in Canada: the GFL production laser with a 1.5 G gantry and pallet changer in 5 × 10, 6.6 × 13 and 6.6 × 20 ft, and the Smart series — closed-type with double table in six sizes to 41 ft, semi-closed single table to 13 × 82 ft, and the open-type entry machine — all with IPG, Raycus or nLIGHT sources from 3 to 40 kW, Precitec autofocus heads and nesting software. Loading towers, sheet storage and bevel heads are available. Installed and supported from Mississauga, ON.",
+ "title": "Fiber Laser Cutting Machines, 1.5–80 kW | NovoTech",
+ "artifact_title": "Sheet metal fiber laser cutting machines — 4 × 4 ft to 10 × 164 ft, 1.5 to 80 kW",
+ "meta_description": "Sheet metal fiber lasers sold in Canada: Dener GFL and Smart lasers, 3 – 40 kW, and the Senfeng value line from 4 × 4 ft machines to 60 kW plate gantries.",
+ "h1": "Sheet metal fiber laser cutting machines — 4 × 4 ft to 10 × 164 ft, 1.5 to 80 kW",
+ "intro": "A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″, stainless and aluminum to 1″ and more with the high-power sources — at speeds no plasma or punch can match, with a clean edge and no tooling. NovoTech sells Dener fiber lasers in Canada: the GFL production laser with a 1.5 G gantry and pallet changer in 5 × 10, 6.6 × 13 and 6.6 × 20 ft, and the Smart series — closed-type with double table in six sizes to 41 ft, semi-closed single table to 13 × 82 ft, and the open-type entry machine — all with IPG, Raycus or nLIGHT sources from 3 to 40 kW, Precitec autofocus heads and nesting software. Loading towers, sheet storage and bevel heads are available. Below the Dener machines is the Senfeng value line, sold under its own brand: compact enclosed lasers from 4 × 4 ft, the NP open-type machine, the H series with pallet changer to 80 kW, sheet-and-tube combination lasers, plate gantries to 10 × 164 ft with bevel heads, 3D lasers and coil-fed lines. Installed and supported from Mississauga, ON.",
  "hero_points": [
-  "GFL: 1.5 G, 394 ft/min, pallet changer — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
-  "Smart closed-type with double table in 6 sizes to 8.5 × 41 ft; semi-closed single table to 13 × 82 ft",
-  "Smart open-type 3 – 6 kW entry machine; automation towers and storage for every model"
+  "Dener GFL: 1.5 G, 394 ft/min, pallet changer — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart closed, semi-closed and open lasers to 13 × 82 ft",
+  "Senfeng value line: compact 4 × 4 and 5 × 10 ft lasers from 1.5 kW, NP open-type to 12 kW, H series with pallet changer to 80 kW",
+  "Senfeng sheet + tube combos, R / TX plate gantries to 10 × 164 ft with ±45° bevel, 3D lasers, coil-fed lines; automation for every model"
  ],
  "hero_image": "dn-gfl-3",
  "hero_image_secondary": [
@@ -27,10 +27,10 @@
    "href": "products.html"
   },
   {
-   "label": "Sheet metal fiber laser cutting machines — 5 × 10 ft to 13 × 82 ft, 3 to 40 kW"
+   "label": "Sheet metal fiber laser cutting machines — 4 × 4 ft to 10 × 164 ft, 1.5 to 80 kW"
   }
  ],
- "hero_brand_line": "Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries, Dener Canada in Mississauga. Sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga); Senfeng Laser builds the value line in Jinan, China (since 2004, CE / FDA / ETL, Senfeng Laser USA). Both sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "laser-gfl-group",
@@ -44,12 +44,27 @@
   {
    "id": "laser-smart-group",
    "title": "Smart fiber lasers",
-   "lead": "The value line from the same factory: closed, semi-closed and open machines in table sizes to 13 × 82 ft.",
+   "lead": "The economy line from the same factory: closed, semi-closed and open machines in table sizes to 13 × 82 ft.",
    "brand": "dener",
    "families": [
     "dn-smart-closed",
     "dn-smart-semi",
     "dn-smart-open"
+   ]
+  },
+  {
+   "id": "laser-senfeng-group",
+   "title": "Senfeng fiber lasers — the value line",
+   "lead": "Senfeng's own-brand lasers from Jinan: the lowest-priced way into fiber cutting, and a range that reaches 80 kW, 10 × 164 ft plate and coil-fed lines.",
+   "brand": "senfeng",
+   "families": [
+    "sf-compact",
+    "sf-np",
+    "sf-h",
+    "sf-hm",
+    "sf-r",
+    "sf-3d",
+    "sf-coil"
    ]
   }
  ],
@@ -61,6 +76,10 @@
   {
    "q": "GFL or Smart — what is the difference?",
    "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a pallet changer and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a double exchange table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."
+  },
+  {
+   "q": "Dener or Senfeng?",
+   "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, Dener Canada parts in Mississauga and the longer life at high duty. Senfeng is the value line: a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, at a price that puts a 12 kW laser within reach of a small shop — and with a range Dener does not cover: 4 × 4 ft compact machines, sheet-and-tube combos, 60 kW plate gantries, 3D and coil-fed lasers. Both are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote both so you can compare."
   },
   {
    "q": "Which table size?",
@@ -84,11 +103,7 @@
   }
  ],
  "faq_title": "Questions we get asked about fiber laser cutting machines",
- "catalogue_pdf": {
-  "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
-  "label": "Download the fiber laser brochure",
-  "size": "PDF · 5 MB · imperial units"
- },
+ "catalogue_pdf": null,
  "origin_feature": {
   "title": "Made in Turkey by Dener Makina",
   "text": "Dener has built sheet-metal machinery in Kayseri since 1974 — a 1.3 million m² campus, its own design awards (Good Design, European Product Design, Design Turkey) and offices in the USA, Canada, Germany and India."
@@ -98,6 +113,10 @@
   {
    "href": "tube-laser-cutting-machine.html",
    "label": "Tube laser cutters"
+  },
+  {
+   "href": "laser-welding-machine.html",
+   "label": "Laser welding & cladding"
   },
   {
    "href": "press-brake.html",
@@ -125,5 +144,17 @@
  },
  "intro_video_heading": "Inside the factory — where the machines are built",
  "intro_video_text": "A tour of Dener Makina in Kayseri, Turkey, where the press brakes, shears and fiber lasers on this page are designed and built.",
- "nav_label": "Sheet laser cutters"
+ "nav_label": "Sheet laser cutters",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
+   "label": "Download the fiber laser brochure",
+   "size": "PDF · 5 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+   "label": "Download the Senfeng fiber laser brochure",
+   "size": "PDF · 1 MB · imperial units"
+  }
+ ]
 }

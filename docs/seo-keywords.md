@@ -188,3 +188,12 @@ Titles: hydraulic-press-brake "Hydraulic Press Brakes, CNC & NC, 33–1,323 Tons
 Drive, 3–176 Tons | NovoTech"; hydraulic-shearing-machine "Hydraulic Shearing Machines to 1-9/16″ × 26 ft | NovoTech"; v-grooving-machine
 "V-Grooving Machines, CNC Horizontal & Vertical | NovoTech"; panel-bender retitled "CNC Panel Benders, 63–165″ Wide, 0.2 s per Bend | NovoTech";
 ironworker-machines "Hydraulic Ironworker Machines, 44 to 276 Ton | NovoTech".
+
+## Senfeng (laser section value line) and the laser welding page
+
+Ubersuggest CA (Oct 2026): "laser welding machine" 1,300/mo (SD 29), "handheld laser welder" 260, "laser welding machine price" 170,
+"industrial laser welding machine" 110, "portable laser welding machine" 110, "laser welding machine canada" 70, "laser cladding machine" 20.
+New page laser-welding-machine "Laser Welding Machines, Handheld & Robotic | NovoTech".  The Dener laser pages gained the Senfeng groups
+and were retitled within 60 characters: laser-cutting-machine "Fiber Laser Cutting Machines, 1.5–80 kW | NovoTech", tube-laser-cutting-machine
+"Tube Laser Cutting Machines, Ø0.3″ to 25″ | NovoTech", panel-bender "CNC Panel Benders, 47–165″ Wide, 0.2 s per Bend | NovoTech",
+press-brake "CNC Press Brakes, Hydraulic & Electric, 22–661 Tons | NovoTech"; metas cut to ≤160 characters.

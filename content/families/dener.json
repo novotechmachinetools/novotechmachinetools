@@ -13,7 +13,18 @@
   "dn-ftl",
   "dn-panel",
   "vl-pbm",
-  "vl-pba"
+  "vl-pba",
+  "sf-compact",
+  "sf-np",
+  "sf-h",
+  "sf-hm",
+  "sf-r",
+  "sf-3d",
+  "sf-coil",
+  "sf-t",
+  "sf-plus",
+  "sf-heavy",
+  "sf-bdc"
  ],
  "families": {
   "dn-xl-small": {
@@ -4039,6 +4050,4010 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "panel-value"
+  },
+  "sf-compact": {
+   "id": "sf-compact",
+   "brand": "senfeng",
+   "name": "Compact enclosed sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
+   "short": "Compact sheet lasers",
+   "models_label": "SF1313G · SF1530G · SF1530N · SF1530NP · SFP600 – 1250",
+   "summary": "The entry into fiber laser cutting: single-table enclosed machines that ship in one container, plug in and cut the day they arrive. The SF1313G is a 4 × 4 ft machine for small parts; the SF1530G, SF1530N and the fully enclosed SF1530NP with its electric lifting door take a 5 × 10 ft sheet with 1.5 to 12 kW sources — enough for 3/4″ mild steel at 6 kW. The pull-out table loads from the front with a forklift; the integrated source and cabinet keep the footprint under 200 × 90″. For jewellery, electronics and precision small parts the SFP series adds 24 to 49″ square tables with ±0.005 mm repeatability.",
+   "features": [
+    "1.5 – 12 kW; 4 × 4 or 5 × 10 ft single table; 262 – 328 ft/min; 1,100 kg table load",
+    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
+    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
+    "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
+    "Zoned negative-pressure dust extraction under the table; double air ducts; water chiller included",
+    "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Loading / unloading unit, servo swing-arm loader or storage tower",
+    "Automatic pallet changer (NP) and bevel head (R / TX)",
+    "Dust collector and compressor sized to the machine",
+    "Higher laser power at order; nitrogen generator",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-1530np",
+    "sf-1530n",
+    "sf-1530g",
+    "sf-1313g",
+    "sf-1530n-table",
+    "sf-1530np-2",
+    "sf-1530np-head",
+    "sf-sfp"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Compact enclosed sheet lasers",
+      "sub": "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW",
+      "models": [
+       "SF1313G",
+       "SF1530G",
+       "SF1530N",
+       "SF1530NP"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "51 × 51″ (1,300 × 1,300 mm)",
+         "120 × 60″ (3,000 × 1,500 mm)",
+         "120 × 60″ (3,000 × 1,500 mm)",
+         "119 × 59″ (3,000 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 3 kW",
+         "1.5 – 4 kW",
+         "1.5 – 12 kW",
+         "1.5 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "enclosed, 4 × 4 ft, single table",
+         "enclosed, single table",
+         "enclosed, pull-out single table",
+         "fully enclosed, electric lifting door, integrated source"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "262 ft/min (80 m/min)",
+         "262 ft/min (80 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G",
+         "1 G",
+         "1 G",
+         "1 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "485 lb (220 kg)",
+         "1,543 lb (700 kg)",
+         "2,425 lb (1,100 kg)",
+         "2,425 lb (1,100 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "118 × 85 × 79″ (3,000 × 2,160 × 2,010 mm)",
+         "191 × 159 × 82″ (4,850 × 4,040 × 2,080 mm)",
+         "197 × 91 × 81″ (5,000 × 2,310 × 2,060 mm)",
+         "194 × 88 × 91″ (4,920 × 2,220 × 2,320 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "High-precision small-part lasers",
+      "sub": "3 models · 24 – 49″ square tables · 1.5 – 3 kW",
+      "models": [
+       "SFP600",
+       "SFP1010",
+       "SFP1250"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "23.6 × 23.6″ (600 × 600 mm)",
+         "39.4 × 39.4″ (1,000 × 1,000 mm)",
+         "49.2 × 49.2″ (1,250 × 1,250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 3 kW",
+         "1.5 – 3 kW",
+         "1.5 – 3 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.0008″ (±0.02 mm)",
+         "±0.0012″ (±0.03 mm)",
+         "±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.0002″ (±0.005 mm)",
+         "±0.0002″ (±0.005 mm)",
+         "±0.0002″ (±0.005 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)",
+         "94 × 82 × 75″ (2,400 × 2,090 × 1,900 mm)",
+         "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,086 lb (1,400 kg)",
+         "6,614 lb (3,000 kg)",
+         "7,716 lb (3,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF1313G",
+      "glance": [
+       "51 × 51″ (1,300 × 1,300 mm)",
+       "1.5 – 3 kW",
+       "262 ft/min (80 m/min)",
+       "485 lb (220 kg)",
+       "118 × 85 × 79″ (3,000 × 2,160 × 2,010 mm)"
+      ]
+     },
+     {
+      "name": "SF1530G",
+      "glance": [
+       "120 × 60″ (3,000 × 1,500 mm)",
+       "1.5 – 4 kW",
+       "262 ft/min (80 m/min)",
+       "1,543 lb (700 kg)",
+       "191 × 159 × 82″ (4,850 × 4,040 × 2,080 mm)"
+      ]
+     },
+     {
+      "name": "SF1530N",
+      "glance": [
+       "120 × 60″ (3,000 × 1,500 mm)",
+       "1.5 – 12 kW",
+       "328 ft/min (100 m/min)",
+       "2,425 lb (1,100 kg)",
+       "197 × 91 × 81″ (5,000 × 2,310 × 2,060 mm)"
+      ]
+     },
+     {
+      "name": "SF1530NP",
+      "glance": [
+       "119 × 59″ (3,000 × 1,500 mm)",
+       "1.5 – 6 kW",
+       "328 ft/min (100 m/min)",
+       "2,425 lb (1,100 kg)",
+       "194 × 88 × 91″ (4,920 × 2,220 × 2,320 mm)"
+      ]
+     },
+     {
+      "name": "SFP600",
+      "glance": [
+       "23.6 × 23.6″ (600 × 600 mm)",
+       "1.5 – 3 kW",
+       "",
+       "",
+       "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)"
+      ]
+     },
+     {
+      "name": "SFP1010",
+      "glance": [
+       "39.4 × 39.4″ (1,000 × 1,000 mm)",
+       "1.5 – 3 kW",
+       "",
+       "",
+       "94 × 82 × 75″ (2,400 × 2,090 × 1,900 mm)"
+      ]
+     },
+     {
+      "name": "SFP1250",
+      "glance": [
+       "49.2 × 49.2″ (1,250 × 1,250 mm)",
+       "1.5 – 3 kW",
+       "",
+       "",
+       "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "load",
+     "dims"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "G · N · NP · SFP",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Download the Senfeng fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-senfeng"
+  },
+  "sf-np": {
+   "id": "sf-np",
+   "brand": "senfeng",
+   "name": "NP open-type single-table sheet lasers, 5 × 10 to 6.6 × 20 ft, 3 – 12 kW",
+   "short": "NP open-type lasers",
+   "models_label": "SF3015NP – SF6020NP · 5 models",
+   "summary": "The open-type laser for the shop that wants a 10 or 20 ft table without an enclosure: full visibility of the cut, loading from three sides over ball-transfer units, a built-in source and cabinet, and double ventilation ducts that keep the open machine clean. Five table sizes from 5 × 10 to 6.6 × 20 ft, 3 to 12 kW, 394 ft/min and 1.2 G; six 3015NP machines fit in one 40 ft container, which is why it is the lowest-priced 12 kW laser in Senfeng's range. The intelligent air-cutting package cuts sheet to 3/8″ on compressed air.",
+   "features": [
+    "3 – 12 kW; 5 × 10 to 6.6 × 20 ft; 394 ft/min, 1.2 G; 2,400 – 6,200 lb table load",
+    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
+    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
+    "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
+    "Zoned negative-pressure dust extraction under the table; double air ducts; water chiller included",
+    "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Loading / unloading unit, servo swing-arm loader or storage tower",
+    "Automatic pallet changer (NP) and bevel head (R / TX)",
+    "Dust collector and compressor sized to the machine",
+    "Higher laser power at order; nitrogen generator",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-np-1",
+    "sf-np-2",
+    "sf-np-3",
+    "sf-np-4",
+    "sf-np-scene",
+    "sf-np-container"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "NP open-type single-table sheet lasers",
+      "sub": "5 models · 5 × 10 to 6.6 × 20 ft · 3 – 12 kW",
+      "models": [
+       "SF3015NP",
+       "SF4015NP",
+       "SF4020NP",
+       "SF6015NP",
+       "SF6020NP"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "120 × 60″ (3,000 × 1,500 mm)",
+         "159 × 60″ (4,000 × 1,500 mm)",
+         "159 × 80″ (4,000 × 2,000 mm)",
+         "238 × 60″ (6,000 × 1,500 mm)",
+         "238 × 80″ (6,000 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "3 – 12 kW",
+         "3 – 12 kW",
+         "3 – 12 kW",
+         "3 – 12 kW",
+         "3 – 12 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.2 G",
+         "1.2 G",
+         "1.2 G",
+         "1.2 G",
+         "1.2 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "2,425 lb (1,100 kg)",
+         "3,086 lb (1,400 kg)",
+         "4,189 lb (1,900 kg)",
+         "4,630 lb (2,100 kg)",
+         "6,173 lb (2,800 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "177 × 114 × 83″ (4,500 × 2,900 × 2,100 mm)",
+         "216 × 114 × 83″ (5,500 × 2,900 × 2,100 mm)",
+         "216 × 134 × 75″ (5,500 × 3,400 × 1,900 mm)",
+         "319 × 114 × 75″ (8,100 × 2,900 × 1,900 mm)",
+         "319 × 134 × 75″ (8,100 × 3,400 × 1,900 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF3015NP",
+      "glance": [
+       "120 × 60″ (3,000 × 1,500 mm)",
+       "3 – 12 kW",
+       "394 ft/min (120 m/min)",
+       "2,425 lb (1,100 kg)",
+       "177 × 114 × 83″ (4,500 × 2,900 × 2,100 mm)"
+      ]
+     },
+     {
+      "name": "SF4015NP",
+      "glance": [
+       "159 × 60″ (4,000 × 1,500 mm)",
+       "3 – 12 kW",
+       "394 ft/min (120 m/min)",
+       "3,086 lb (1,400 kg)",
+       "216 × 114 × 83″ (5,500 × 2,900 × 2,100 mm)"
+      ]
+     },
+     {
+      "name": "SF4020NP",
+      "glance": [
+       "159 × 80″ (4,000 × 2,000 mm)",
+       "3 – 12 kW",
+       "394 ft/min (120 m/min)",
+       "4,189 lb (1,900 kg)",
+       "216 × 134 × 75″ (5,500 × 3,400 × 1,900 mm)"
+      ]
+     },
+     {
+      "name": "SF6015NP",
+      "glance": [
+       "238 × 60″ (6,000 × 1,500 mm)",
+       "3 – 12 kW",
+       "394 ft/min (120 m/min)",
+       "4,630 lb (2,100 kg)",
+       "319 × 114 × 75″ (8,100 × 2,900 × 1,900 mm)"
+      ]
+     },
+     {
+      "name": "SF6020NP",
+      "glance": [
+       "238 × 80″ (6,000 × 2,000 mm)",
+       "3 – 12 kW",
+       "394 ft/min (120 m/min)",
+       "6,173 lb (2,800 kg)",
+       "319 × 134 × 75″ (8,100 × 3,400 × 1,900 mm)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "load",
+     "dims"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "NP",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Download the Senfeng fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-senfeng"
+  },
+  "sf-h": {
+   "id": "sf-h",
+   "brand": "senfeng",
+   "name": "H series enclosed sheet lasers with pallet changer, 5 × 10 to 8.3 × 40 ft, 1.5 – 80 kW",
+   "short": "H series production lasers",
+   "models_label": "SF3015H – SF12025H · HC, H4 and H5 · 14 models",
+   "summary": "Senfeng's production laser: a fully enclosed cabin, a double pallet changer that swaps tables in 20 seconds and a thermally isolated hollow bed with graphite protection for high-power cutting. Three builds on the same platform — the HC space saver with 1.5 to 12 kW in a 19 m² footprint, the fourth-generation H4 with 6 to 30 kW, 656 ft/min and 2 G on tables to 8.3 × 40 ft, and the H5 heavy-load machine with hydraulic table lifts to 30 t for 40 to 80 kW sources and 2″ plate. CE / FDA / ETL certified, with loading towers, sheet storage and loading arms as options.",
+   "features": [
+    "Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2 G",
+    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
+    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
+    "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
+    "Zoned negative-pressure dust extraction under the table; double air ducts; water chiller included",
+    "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Loading / unloading unit, servo swing-arm loader or storage tower",
+    "Automatic pallet changer (NP) and bevel head (R / TX)",
+    "Dust collector and compressor sized to the machine",
+    "Higher laser power at order; nitrogen generator",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-h-1",
+    "sf-h-2",
+    "sf-h-tower",
+    "sf-h-loader",
+    "sf-h-line",
+    "sf-h5",
+    "sf-h-head",
+    "sf-h-bevel",
+    "sf-h-container"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "H series space-saver enclosed lasers · 1.5 – 12 kW",
+      "sub": "5 models · 5 × 10 to 6.6 × 20 ft · pallet changer",
+      "models": [
+       "SF3015H",
+       "SF4015H",
+       "SF4020H",
+       "SF6015H",
+       "SF6020H"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "120 × 60″ (3,000 × 1,500 mm)",
+         "159 × 60″ (4,000 × 1,500 mm)",
+         "159 × 80″ (4,000 × 2,000 mm)",
+         "238 × 60″ (6,000 × 1,500 mm)",
+         "238 × 80″ (6,000 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 12 kW",
+         "1.5 – 12 kW",
+         "1.5 – 12 kW",
+         "1.5 – 12 kW",
+         "1.5 – 12 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "426 ft/min (130 m/min)",
+         "426 ft/min (130 m/min)",
+         "426 ft/min (130 m/min)",
+         "426 ft/min (130 m/min)",
+         "426 ft/min (130 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.2 G",
+         "1.2 G",
+         "1.2 G",
+         "1.2 G",
+         "1.2 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "2,425 lb (1,100 kg)",
+         "3,307 lb (1,500 kg)",
+         "4,189 lb (1,900 kg)",
+         "4,850 lb (2,200 kg)",
+         "6,393 lb (2,900 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "27.9 × 7.4 × 7.1 ft (8.5 × 2.3 × 2.2 m)",
+         "35.8 × 7.4 × 7.2 ft (10.9 × 2.3 × 2.2 m)",
+         "36.2 × 10.6 × 7.4 ft (11.0 × 3.2 × 2.3 m)",
+         "48.3 × 7.4 × 7.2 ft (14.7 × 2.3 × 2.2 m)",
+         "48.8 × 10.6 × 7.4 ft (14.9 × 3.2 × 2.3 m)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "H4 series high-power enclosed lasers · 6 – 30 kW",
+      "sub": "6 models · 5 × 10 to 8.3 × 40 ft · pallet changer, 2 G",
+      "models": [
+       "SF3015H",
+       "SF4020H",
+       "SF6020H",
+       "SF6025H",
+       "SF8025H",
+       "SF12025H"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "121 × 60″ (3,000 × 1,500 mm)",
+         "161 × 80″ (4,000 × 2,000 mm)",
+         "20 × 6.7 ft (6,000 × 2,000 mm)",
+         "20 × 8.3 ft (6,000 × 2,500 mm)",
+         "26.6 × 8.3 ft (8,000 × 2,500 mm)",
+         "39.7 × 8.3 ft (12,000 × 2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 – 30 kW",
+         "6 – 30 kW",
+         "6 – 30 kW",
+         "6 – 30 kW",
+         "6 – 30 kW",
+         "6 – 30 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "2 G",
+         "2 G",
+         "2 G",
+         "2 G",
+         "2 G",
+         "2 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "6,614 lb (3,000 kg)",
+         "11,023 lb (5,000 kg)",
+         "16,645 lb (7,550 kg)",
+         "19,842 lb (9,000 kg)",
+         "26,455 lb (12,000 kg)",
+         "41,579 lb (18,860 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "332 × 89 × 92″ (8,440 × 2,270 × 2,340 mm)",
+         "425 × 125 × 95″ (10,790 × 3,180 × 2,410 mm)",
+         "590 × 125 × 95″ (14,980 × 3,180 × 2,410 mm)",
+         "580 × 149 × 95″ (14,730 × 3,780 × 2,410 mm)",
+         "743 × 149 × 95″ (18,870 × 3,780 × 2,410 mm)",
+         "1093 × 149 × 95″ (27,770 × 3,780 × 2,410 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "H5 heavy-load lasers · 12 – 80 kW",
+      "sub": "3 models · hydraulic table lift to 30 t · 2″ plate",
+      "models": [
+       "SF3015H5",
+       "SF4020H5",
+       "SF6025H5"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "120 × 60″ (3,000 × 1,500 mm)",
+         "159 × 80″ (4,000 × 2,000 mm)",
+         "238 × 100″ (6,000 × 2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "12 – 30 kW",
+         "40 – 80 kW",
+         "12 – 30 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic table lift",
+        "sub": "",
+        "cells": [
+         "44,092 lb (20,000 kg)",
+         "66,139 lb (30,000 kg)",
+         "66,139 lb (30,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28.1 × 9.4 × 7.8 ft (8.6 × 2.9 × 2.4 m)",
+         "35.2 × 11.1 × 7.8 ft (10.7 × 3.4 × 2.4 m)",
+         "49.5 × 12.7 × 7.8 ft (15.1 × 3.9 × 2.4 m)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF3015H",
+      "glance": [
+       "120 × 60″ (3,000 × 1,500 mm)",
+       "1.5 – 12 kW",
+       "426 ft/min (130 m/min)",
+       "2,425 lb (1,100 kg)",
+       "27.9 × 7.4 × 7.1 ft (8.5 × 2.3 × 2.2 m)"
+      ]
+     },
+     {
+      "name": "SF4015H",
+      "glance": [
+       "159 × 60″ (4,000 × 1,500 mm)",
+       "1.5 – 12 kW",
+       "426 ft/min (130 m/min)",
+       "3,307 lb (1,500 kg)",
+       "35.8 × 7.4 × 7.2 ft (10.9 × 2.3 × 2.2 m)"
+      ]
+     },
+     {
+      "name": "SF4020H",
+      "glance": [
+       "159 × 80″ (4,000 × 2,000 mm)",
+       "1.5 – 12 kW",
+       "426 ft/min (130 m/min)",
+       "4,189 lb (1,900 kg)",
+       "36.2 × 10.6 × 7.4 ft (11.0 × 3.2 × 2.3 m)"
+      ]
+     },
+     {
+      "name": "SF6015H",
+      "glance": [
+       "238 × 60″ (6,000 × 1,500 mm)",
+       "1.5 – 12 kW",
+       "426 ft/min (130 m/min)",
+       "4,850 lb (2,200 kg)",
+       "48.3 × 7.4 × 7.2 ft (14.7 × 2.3 × 2.2 m)"
+      ]
+     },
+     {
+      "name": "SF6020H",
+      "glance": [
+       "238 × 80″ (6,000 × 2,000 mm)",
+       "1.5 – 12 kW",
+       "426 ft/min (130 m/min)",
+       "6,393 lb (2,900 kg)",
+       "48.8 × 10.6 × 7.4 ft (14.9 × 3.2 × 2.3 m)"
+      ]
+     },
+     {
+      "name": "SF3015H",
+      "glance": [
+       "121 × 60″ (3,000 × 1,500 mm)",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "6,614 lb (3,000 kg)",
+       "332 × 89 × 92″ (8,440 × 2,270 × 2,340 mm)"
+      ]
+     },
+     {
+      "name": "SF4020H",
+      "glance": [
+       "161 × 80″ (4,000 × 2,000 mm)",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "11,023 lb (5,000 kg)",
+       "425 × 125 × 95″ (10,790 × 3,180 × 2,410 mm)"
+      ]
+     },
+     {
+      "name": "SF6020H",
+      "glance": [
+       "20 × 6.7 ft (6,000 × 2,000 mm)",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "16,645 lb (7,550 kg)",
+       "590 × 125 × 95″ (14,980 × 3,180 × 2,410 mm)"
+      ]
+     },
+     {
+      "name": "SF6025H",
+      "glance": [
+       "20 × 8.3 ft (6,000 × 2,500 mm)",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "19,842 lb (9,000 kg)",
+       "580 × 149 × 95″ (14,730 × 3,780 × 2,410 mm)"
+      ]
+     },
+     {
+      "name": "SF8025H",
+      "glance": [
+       "26.6 × 8.3 ft (8,000 × 2,500 mm)",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "26,455 lb (12,000 kg)",
+       "743 × 149 × 95″ (18,870 × 3,780 × 2,410 mm)"
+      ]
+     },
+     {
+      "name": "SF12025H",
+      "glance": [
+       "39.7 × 8.3 ft (12,000 × 2,500 mm)",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "41,579 lb (18,860 kg)",
+       "1093 × 149 × 95″ (27,770 × 3,780 × 2,410 mm)"
+      ]
+     },
+     {
+      "name": "SF3015H5",
+      "glance": [
+       "120 × 60″ (3,000 × 1,500 mm)",
+       "12 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "",
+       "28.1 × 9.4 × 7.8 ft (8.6 × 2.9 × 2.4 m)"
+      ]
+     },
+     {
+      "name": "SF4020H5",
+      "glance": [
+       "159 × 80″ (4,000 × 2,000 mm)",
+       "40 – 80 kW",
+       "656 ft/min (200 m/min)",
+       "",
+       "35.2 × 11.1 × 7.8 ft (10.7 × 3.4 × 2.4 m)"
+      ]
+     },
+     {
+      "name": "SF6025H5",
+      "glance": [
+       "238 × 100″ (6,000 × 2,500 mm)",
+       "12 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "",
+       "49.5 × 12.7 × 7.8 ft (15.1 × 3.9 × 2.4 m)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "load",
+     "dims"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "H",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Download the Senfeng fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-senfeng"
+  },
+  "sf-hm": {
+   "id": "sf-hm",
+   "brand": "senfeng",
+   "name": "HM sheet and tube combination lasers, 5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 6 – 30 kW",
+   "short": "Sheet + tube combo lasers",
+   "models_label": "SF3015HM – SF6025HM · 4 models",
+   "summary": "One machine for sheet and tube: the enclosed H series laser with pallet changer and, on the side, a rotary chuck and tube supports for round, square and rectangular tube from Ø0.7 to 8.6″ and up to 20 ft long. The same 6 to 30 kW source and cutting head serve both; switching takes the time to load the tube. Four sheet sizes from 5 × 10 to 8.3 × 20 ft.",
+   "features": [
+    "Sheet 5 × 10 to 8.3 × 20 ft with pallet changer; tube Ø0.7 – 8.6″ × 20 ft; 6 – 30 kW; 656 ft/min",
+    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
+    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
+    "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
+    "Zoned negative-pressure dust extraction under the table; double air ducts; water chiller included",
+    "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Loading / unloading unit, servo swing-arm loader or storage tower",
+    "Automatic pallet changer (NP) and bevel head (R / TX)",
+    "Dust collector and compressor sized to the machine",
+    "Higher laser power at order; nitrogen generator",
+    "Custom voltage transformer",
+    "Tube bundle loader"
+   ],
+   "images": [
+    "sf-hm-1",
+    "sf-hm-2",
+    "sf-hm-3",
+    "sf-hm-4"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HM sheet and tube combination lasers",
+      "sub": "4 models · 5 × 10 to 8.3 × 20 ft sheet · Ø0.7 – 8.6″ × 20 ft tube · 6 – 30 kW",
+      "models": [
+       "SF3015HM",
+       "SF4020HM",
+       "SF6020HM",
+       "SF6025HM"
+      ],
+      "rows": [
+       {
+        "label": "Sheet working area",
+        "sub": "",
+        "cells": [
+         "120 × 60″ (3,000 × 1,500 mm)",
+         "159 × 80″ (4,000 × 2,000 mm)",
+         "238 × 80″ (6,000 × 2,000 mm)",
+         "20 × 8.3 ft (6,000 × 2,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.7 – 8.6″ (Ø18 – 218 mm)",
+         "Ø0.7 – 8.6″ (Ø18 – 218 mm)",
+         "Ø0.7 – 8.6″ (Ø18 – 218 mm)",
+         "Ø0.7 – 8.6″ (Ø18 – 218 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. tube length",
+        "sub": "",
+        "cells": [
+         "19.7 ft (6,000 mm)",
+         "19.7 ft (6,000 mm)",
+         "19.7 ft (6,000 mm)",
+         "19.7 ft (6,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 – 30 kW",
+         "6 – 30 kW",
+         "6 – 30 kW",
+         "6 – 30 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)",
+         "656 ft/min (200 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "6,614 lb (3,000 kg)",
+         "11,023 lb (5,000 kg)",
+         "16,645 lb (7,550 kg)",
+         "19,842 lb (9,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "30.3 × 11.4 × 7.7 ft (9.2 × 3.5 × 2.3 m)",
+         "35.3 × 14.1 × 7.9 ft (10.8 × 4.3 × 2.4 m)",
+         "49.1 × 14.1 × 7.9 ft (15.0 × 4.3 × 2.4 m)",
+         "48.6 × 16 × 7.9 ft (14.8 × 4.9 × 2.4 m)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF3015HM",
+      "glance": [
+       "",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "6,614 lb (3,000 kg)",
+       "30.3 × 11.4 × 7.7 ft (9.2 × 3.5 × 2.3 m)"
+      ]
+     },
+     {
+      "name": "SF4020HM",
+      "glance": [
+       "",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "11,023 lb (5,000 kg)",
+       "35.3 × 14.1 × 7.9 ft (10.8 × 4.3 × 2.4 m)"
+      ]
+     },
+     {
+      "name": "SF6020HM",
+      "glance": [
+       "",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "16,645 lb (7,550 kg)",
+       "49.1 × 14.1 × 7.9 ft (15.0 × 4.3 × 2.4 m)"
+      ]
+     },
+     {
+      "name": "SF6025HM",
+      "glance": [
+       "",
+       "6 – 30 kW",
+       "656 ft/min (200 m/min)",
+       "19,842 lb (9,000 kg)",
+       "48.6 × 16 × 7.9 ft (14.8 × 4.9 × 2.4 m)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "load",
+     "dims"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "HM",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Download the Senfeng fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-senfeng"
+  },
+  "sf-r": {
+   "id": "sf-r",
+   "brand": "senfeng",
+   "name": "R / TX ultra-large plate lasers, 10 × 20 to 10 × 164 ft, 6 – 60 kW, ±45° bevel",
+   "short": "Large-format plate lasers",
+   "models_label": "SF6030R – SF50030R · SF6030TX – SF50030TX · SF12030TXP · 16 models",
+   "summary": "For shipyards, structural steel, heavy equipment and bridge fabrication: gantry lasers with 10 and 13 ft wide tables from 20 to 164 ft long that replace plasma and flame cutting of plate to 2″ and beyond with 6 to 60 kW sources. The R series cuts straight; the TX adds a ±45° bevel head for weld preparation in one pass; the TXP combines a 20 kW laser with an oxy-fuel torch for plate to 4″ on the same table. Protective curtains, blow-suction dust collection under the slats and a beam with a protective chamber are standard.",
+   "features": [
+    "10 × 20 to 10 × 164 ft tables; 6 – 60 kW; ±45° bevel (TX); laser + flame (TXP); 328 – 394 ft/min",
+    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
+    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
+    "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
+    "Zoned negative-pressure dust extraction under the table; double air ducts; water chiller included",
+    "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Loading / unloading unit, servo swing-arm loader or storage tower",
+    "Automatic pallet changer (NP) and bevel head (R / TX)",
+    "Dust collector and compressor sized to the machine",
+    "Higher laser power at order; nitrogen generator",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-r-1",
+    "sf-tx-1",
+    "sf-r-2",
+    "sf-tx-2",
+    "sf-txp",
+    "sf-r-cut",
+    "sf-r-bevel",
+    "sf-tx-flame",
+    "sf-r-curtain",
+    "sf-r-dust"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "R series ultra-large plate lasers",
+      "sub": "8 models · 10 × 20 to 10 × 164 ft · 6 – 60 kW",
+      "models": [
+       "SF6030R",
+       "SF8030R",
+       "SF12030R",
+       "SF14030R",
+       "SF24040R",
+       "SF30040R",
+       "SF36030R",
+       "SF50030R"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "236 × 118″ (6,000 × 3,000 mm)",
+         "26.2 × 9.8 ft (8,000 × 3,000 mm)",
+         "39.4 × 9.8 ft (12,000 × 3,000 mm)",
+         "45.9 × 9.8 ft (14,000 × 3,000 mm)",
+         "78.7 × 13.1 ft (24,000 × 4,000 mm)",
+         "98.4 × 13.1 ft (30,000 × 4,000 mm)",
+         "118.1 × 9.8 ft (36,000 × 3,000 mm)",
+         "164 × 9.8 ft (50,000 × 3,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)",
+         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.002″ (±0.05 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "31,184 lb (14,140 kg)",
+         "41,570 lb (18,860 kg)",
+         "62,355 lb (28,280 kg)",
+         "72,741 lb (32,990 kg)",
+         "166,156 lb (75,370 kg)",
+         "103,620 lb (47,000 kg)",
+         "186,982 lb (84,810 kg)",
+         "259,036 lb (117,500 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "27.4 × 15.6 × 6.4 ft (8.4 × 4.8 × 2.0 m)",
+         "35 × 15.6 × 6.4 ft (10.7 × 4.8 × 2.0 m)",
+         "51.3 × 15.6 × 6.4 ft (15.6 × 4.8 × 2.0 m)",
+         "58.5 × 15.6 × 6.4 ft (17.8 × 4.8 × 2.0 m)",
+         "98 × 15.6 × 6.4 ft (29.9 × 4.8 × 2.0 m)",
+         "121.3 × 15.6 × 6.4 ft (37.0 × 4.8 × 2.0 m)",
+         "149.3 × 15.6 × 6.4 ft (45.5 × 4.8 × 2.0 m)",
+         "206.7 × 15.6 × 6.4 ft (63.0 × 4.8 × 2.0 m)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "TX series bevel plate lasers · ±45°",
+      "sub": "7 models · 10 × 20 to 10 × 164 ft · 12 – 60 kW",
+      "models": [
+       "SF6030TX",
+       "SF8040TX",
+       "SF12030TX",
+       "SF14030TX",
+       "SF30040TX",
+       "SF36030TX",
+       "SF50030TX"
+      ],
+      "rows": [
+       {
+        "label": "Working area, straight cut",
+        "sub": "",
+        "cells": [
+         "236 × 118″ (6,000 × 3,000 mm)",
+         "26.2 × 13.1 ft (8,000 × 4,000 mm)",
+         "39.4 × 9.8 ft (12,000 × 3,000 mm)",
+         "45.9 × 9.8 ft (14,000 × 3,000 mm)",
+         "98.4 × 13.1 ft (30,000 × 4,000 mm)",
+         "118.1 × 9.8 ft (36,000 × 3,000 mm)",
+         "164 × 9.8 ft (50,000 × 3,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working area, bevel cut",
+        "sub": "",
+        "cells": [
+         "212 × 79″ (6,000 × 3,000 mm)",
+         "24.3 × 9.8 ft (8,000 × 4,000 mm)",
+         "37.4 × 6.6 ft (12,000 × 3,000 mm)",
+         "44 × 6.6 ft (14,000 × 3,000 mm)",
+         "96.5 × 9.8 ft (30,000 × 4,000 mm)",
+         "116.1 × 6.6 ft (36,000 × 3,000 mm)",
+         "162.1 × 6.6 ft (50,000 × 3,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bevel angle",
+        "sub": "",
+        "cells": [
+         "±45°",
+         "±45°",
+         "±45°",
+         "±45°",
+         "±45°",
+         "±45°",
+         "±45°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "31,184 lb (14,140 kg)",
+         "55,334 lb (25,100 kg)",
+         "62,355 lb (28,280 kg)",
+         "72,741 lb (32,990 kg)",
+         "207,235 lb (94,000 kg)",
+         "186,982 lb (84,810 kg)",
+         "259,036 lb (117,500 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "27.4 × 15.6 × 6.4 ft (8.4 × 4.8 × 2.0 m)",
+         "35 × 18.8 × 6.4 ft (10.7 × 5.7 × 2.0 m)",
+         "51.3 × 15.6 × 6.4 ft (15.6 × 4.8 × 2.0 m)",
+         "58.5 × 15.6 × 6.4 ft (17.8 × 4.8 × 2.0 m)",
+         "121.1 × 18.8 × 6.4 ft (36.9 × 5.7 × 2.0 m)",
+         "149.3 × 15.6 × 6.4 ft (45.5 × 4.8 × 2.0 m)",
+         "206.7 × 15.6 × 6.4 ft (63.0 × 4.8 × 2.0 m)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "TXP laser and flame hybrid plate cutter",
+      "sub": "1 model · 10 × 39 ft · 20 kW laser + oxy-fuel bevel torch",
+      "models": [
+       "SF12030TXP"
+      ],
+      "rows": [
+       {
+        "label": "Working area, straight cut",
+        "sub": "",
+        "cells": [
+         "39.4 × 9.8 ft (12,000 × 3,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working area, bevel cut",
+        "sub": "",
+        "cells": [
+         "37.4 × 6.6 ft (11,400 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flame cutting",
+        "sub": "",
+        "cells": [
+         "oxy-fuel torch for plate to 4″ (100 mm) with bevels"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "0.8 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "62,355 lb (28,280 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "51.3 × 15.6 × 6.4 ft (15.6 × 4.8 × 2.0 m)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF6030R",
+      "glance": [
+       "236 × 118″ (6,000 × 3,000 mm)",
+       "6 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "31,184 lb (14,140 kg)",
+       "27.4 × 15.6 × 6.4 ft (8.4 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF8030R",
+      "glance": [
+       "26.2 × 9.8 ft (8,000 × 3,000 mm)",
+       "6 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "41,570 lb (18,860 kg)",
+       "35 × 15.6 × 6.4 ft (10.7 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF12030R",
+      "glance": [
+       "39.4 × 9.8 ft (12,000 × 3,000 mm)",
+       "6 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "62,355 lb (28,280 kg)",
+       "51.3 × 15.6 × 6.4 ft (15.6 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF14030R",
+      "glance": [
+       "45.9 × 9.8 ft (14,000 × 3,000 mm)",
+       "6 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "72,741 lb (32,990 kg)",
+       "58.5 × 15.6 × 6.4 ft (17.8 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF24040R",
+      "glance": [
+       "78.7 × 13.1 ft (24,000 × 4,000 mm)",
+       "6 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "166,156 lb (75,370 kg)",
+       "98 × 15.6 × 6.4 ft (29.9 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF30040R",
+      "glance": [
+       "98.4 × 13.1 ft (30,000 × 4,000 mm)",
+       "6 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "103,620 lb (47,000 kg)",
+       "121.3 × 15.6 × 6.4 ft (37.0 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF36030R",
+      "glance": [
+       "118.1 × 9.8 ft (36,000 × 3,000 mm)",
+       "12 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "186,982 lb (84,810 kg)",
+       "149.3 × 15.6 × 6.4 ft (45.5 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF50030R",
+      "glance": [
+       "164 × 9.8 ft (50,000 × 3,000 mm)",
+       "12 – 60 kW",
+       "394 ft/min (120 m/min)",
+       "259,036 lb (117,500 kg)",
+       "206.7 × 15.6 × 6.4 ft (63.0 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF6030TX",
+      "glance": [
+       "",
+       "12 – 60 kW",
+       "328 ft/min (100 m/min)",
+       "31,184 lb (14,140 kg)",
+       "27.4 × 15.6 × 6.4 ft (8.4 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF8040TX",
+      "glance": [
+       "",
+       "12 – 60 kW",
+       "328 ft/min (100 m/min)",
+       "55,334 lb (25,100 kg)",
+       "35 × 18.8 × 6.4 ft (10.7 × 5.7 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF12030TX",
+      "glance": [
+       "",
+       "12 – 60 kW",
+       "328 ft/min (100 m/min)",
+       "62,355 lb (28,280 kg)",
+       "51.3 × 15.6 × 6.4 ft (15.6 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF14030TX",
+      "glance": [
+       "",
+       "12 – 60 kW",
+       "328 ft/min (100 m/min)",
+       "72,741 lb (32,990 kg)",
+       "58.5 × 15.6 × 6.4 ft (17.8 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF30040TX",
+      "glance": [
+       "",
+       "12 – 60 kW",
+       "328 ft/min (100 m/min)",
+       "207,235 lb (94,000 kg)",
+       "121.1 × 18.8 × 6.4 ft (36.9 × 5.7 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF36030TX",
+      "glance": [
+       "",
+       "12 – 60 kW",
+       "328 ft/min (100 m/min)",
+       "186,982 lb (84,810 kg)",
+       "149.3 × 15.6 × 6.4 ft (45.5 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF50030TX",
+      "glance": [
+       "",
+       "12 – 60 kW",
+       "328 ft/min (100 m/min)",
+       "259,036 lb (117,500 kg)",
+       "206.7 × 15.6 × 6.4 ft (63.0 × 4.8 × 2.0 m)"
+      ]
+     },
+     {
+      "name": "SF12030TXP",
+      "glance": [
+       "",
+       "20 kW",
+       "328 ft/min (100 m/min)",
+       "62,355 lb (28,280 kg)",
+       "51.3 × 15.6 × 6.4 ft (15.6 × 4.8 × 2.0 m)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "load",
+     "dims"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "R · TX · TXP",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Download the Senfeng fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-senfeng"
+  },
+  "sf-3d": {
+   "id": "sf-3d",
+   "brand": "senfeng",
+   "name": "3D laser cutting — five-axis SF3015TD and RC robot cells, 1.5 – 20 kW",
+   "short": "3D laser cutting",
+   "models_label": "SF3015TD · SF1500RC – SF6000RC",
+   "summary": "Trimming and piercing formed parts: the SF3015TD five-axis machine moves a 3 to 20 kW head over a 5 × 10 ft envelope with ±135° A and endless C rotation at 328 ft/min for automotive, hot-stamping and pressing work; the RC series puts a 1.5 to 6 kW fiber head on a 6-axis robot with 72″ reach for parts to 0.2″ thick — the economical 3D cell for brackets, covers and tube assemblies.",
+   "features": [
+    "Five-axis gantry 5 × 10 ft envelope, 3 – 20 kW, air-cooled head; robot cells 1.5 – 6 kW with 72″ reach",
+    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
+    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance"
+   ],
+   "optional": [
+    "Rotary tables and fixtures",
+    "Second robot station",
+    "Safety enclosure with light curtains"
+   ],
+   "images": [
+    "sf-3d-1",
+    "sf-3d-2",
+    "sf-rc-1",
+    "sf-rc-2",
+    "sf-3d-head",
+    "sf-3d-cut"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SF3015TD five-axis 3D laser",
+      "sub": "1 model · 5 × 10 ft travel · 3 – 20 kW",
+      "models": [
+       "SF3015TD"
+      ],
+      "rows": [
+       {
+        "label": "Travel X × Y",
+        "sub": "",
+        "cells": [
+         "118 × 59″ (3,000 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "3 – 20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "A axis · C axis",
+        "sub": "",
+        "cells": [
+         "±135° · n × 361°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.004″ (±0.1 mm) · repeat ±0.002″ (±0.05 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cooling",
+        "sub": "",
+        "cells": [
+         "air-cooled head"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "19.6 × 9.1 × 9 ft (6.0 × 2.8 × 2.7 m)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "RC series robot laser cutting cells",
+      "sub": "4 models · 6-axis robot · 1.5 – 6 kW",
+      "models": [
+       "SF1500RC",
+       "SF2000RC",
+       "SF3000RC",
+       "SF6000RC"
+      ],
+      "rows": [
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 kW",
+         "2 kW",
+         "3 kW",
+         "6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting thickness",
+        "sub": "",
+        "cells": [
+         "to 0.1″ (3 mm)",
+         "to 0.1″ (3 mm)",
+         "to 0.2″ (5 mm)",
+         "to 0.2″ (5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Robot",
+        "sub": "",
+        "cells": [
+         "6 axes · 72.9″ (1,850 mm) reach · repeat ±0.0008″",
+         "6 axes · 72.9″ (1,850 mm) reach · repeat ±0.0008″",
+         "6 axes · 72.9″ (1,850 mm) reach · repeat ±0.0008″",
+         "6 axes · 72.9″ (1,850 mm) reach · repeat ±0.0008″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Fiber length",
+        "sub": "",
+        "cells": [
+         "32.8 ft (10 m)",
+         "32.8 ft (10 m)",
+         "65.6 ft (20 m)",
+         "65.6 ft (20 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Robot weight",
+        "sub": "",
+        "cells": [
+         "463 lb (210 kg)",
+         "463 lb (210 kg)",
+         "463 lb (210 kg)",
+         "463 lb (210 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF3015TD",
+      "glance": [
+       "118 × 59″ (3,000 × 1,500 mm)",
+       "3 – 20 kW",
+       "328 ft/min (100 m/min)",
+       "±135° · n × 361°",
+       "19.6 × 9.1 × 9 ft (6.0 × 2.8 × 2.7 m)"
+      ]
+     },
+     {
+      "name": "SF1500RC",
+      "glance": [
+       "",
+       "1.5 kW",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "name": "SF2000RC",
+      "glance": [
+       "",
+       "2 kW",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "name": "SF3000RC",
+      "glance": [
+       "",
+       "3 kW",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "name": "SF6000RC",
+      "glance": [
+       "",
+       "6 kW",
+       "",
+       "",
+       ""
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "axes",
+     "dims"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "TD · RC",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Download the Senfeng fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-senfeng"
+  },
+  "sf-coil": {
+   "id": "sf-coil",
+   "brand": "senfeng",
+   "name": "Coil-fed laser cutting lines, 0.03″ sheet to 9/16″ plate, 1.5 – 80 kW",
+   "short": "Coil-fed laser lines",
+   "models_label": "SF15015C · SF1503CH · SF2012CH · TOP line",
+   "summary": "Cut straight from the coil: a decoiler, straightener and leveller feed the sheet onto the laser table so there is no sheet handling, no offcuts and no limit on part length. The SF15015C runs thin coil (0.031 – 0.047″) through an open-type laser; the SF1503CH takes coil to 1/8″ and 16.5 tons on a 5 × 10 ft machine; the SF2012CH levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW. The TOP line adds robot sorting, panel bending and welding for a complete coil-to-part cell.",
+   "features": [
+    "Decoiler, leveller and laser on one control; coil to 22 US tons; feeding to 49 ft/min; 1.5 – 80 kW",
+    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
+    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance"
+   ],
+   "optional": [
+    "Robot sorting and stacking",
+    "Panel bender and welding stations (TOP line)",
+    "Stereo pallet racks"
+   ],
+   "images": [
+    "sf-coil-1",
+    "sf-coil-2",
+    "sf-coil-3",
+    "sf-coil-top",
+    "sf-coil-scene",
+    "sf-coil-parts"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Coil-fed laser cutting lines",
+      "sub": "3 lines · thin sheet to 9/16″ plate",
+      "models": [
+       "SF15015C",
+       "SF1503CH",
+       "SF2012CH"
+      ],
+      "rows": [
+       {
+        "label": "Coil thickness",
+        "sub": "",
+        "cells": [
+         "0.031 – 0.047″ (0.8 – 1.2 mm)",
+         "to 1/8″ (3 mm)",
+         "5/16″ – 9/16″ (8 – 14 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sheet width",
+        "sub": "",
+        "cells": [
+         "31.4 – 59″ (800 – 1,500 mm)",
+         "to 59″ (1,500 mm)",
+         "to 78.7″ (2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting area",
+        "sub": "",
+        "cells": [
+         "open-type 5 × 10 ft laser",
+         "118 × 59″ (3,000 × 1,500 mm)",
+         "157 × 79″ (4,000 × 2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 6 kW",
+         "3 – 6 kW",
+         "12 – 80 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coil inside Ø · max. outside Ø",
+        "sub": "",
+        "cells": [
+         "20 / 24″ · 59″",
+         "20″ · 55″",
+         "24 / 30″ · 71″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. coil weight",
+        "sub": "",
+        "cells": [
+         "3 – 15 t",
+         "16.5 US tons (15 t)",
+         "22 US tons (20 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. feeding speed",
+        "sub": "",
+        "cells": [
+         "49 ft/min (15 m/min)",
+         "49 ft/min (15 m/min)",
+         "33 ft/min (10 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Levelling accuracy",
+        "sub": "",
+        "cells": [
+         "±0.08″ per ft²",
+         "±0.00007 in/ft²",
+         "±0.0002 in/ft²"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "—",
+         "±0.00006 in/ft · repeat ±0.0008″",
+         "±0.002″ · repeat ±0.0008″"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF15015C",
+      "glance": [
+       "0.031 – 0.047″ (0.8 – 1.2 mm)",
+       "31.4 – 59″ (800 – 1,500 mm)",
+       "1.5 – 6 kW",
+       "3 – 15 t",
+       "49 ft/min (15 m/min)"
+      ]
+     },
+     {
+      "name": "SF1503CH",
+      "glance": [
+       "to 1/8″ (3 mm)",
+       "to 59″ (1,500 mm)",
+       "3 – 6 kW",
+       "16.5 US tons (15 t)",
+       "49 ft/min (15 m/min)"
+      ]
+     },
+     {
+      "name": "SF2012CH",
+      "glance": [
+       "5/16″ – 9/16″ (8 – 14 mm)",
+       "to 78.7″ (2,000 mm)",
+       "12 – 80 kW",
+       "22 US tons (20 t)",
+       "33 ft/min (10 m/min)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "thickness",
+     "width",
+     "power",
+     "coil",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "C · CH",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+    "label": "Download the Senfeng fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-senfeng"
+  },
+  "sf-t": {
+   "id": "sf-t",
+   "brand": "senfeng",
+   "name": "T series two-chuck tube lasers, Ø0.5 – 14″, 20 – 39 ft, 1.5 – 6 kW",
+   "short": "T series tube lasers",
+   "models_label": "SF6012T – SF12035T · SF7012T – SF7524T · 15 models",
+   "summary": "The tube laser most shops start with: two pneumatic self-centring chucks, following supports, a 1.5 to 6 kW source and a CNC with tube nesting that imports 3D files, cutting round, square, rectangular and profile tube to 14″ and 39 ft. Fifteen models in two bed lengths — the 7 m / 7.5 m beds take 23 and 24.6 ft stock, the 6, 9 and 12 m beds 20, 29.5 and 39 ft — with chucks for Ø4.7, 6.6, 9 and 14″. An automatic bundle loader and an unloading conveyor turn it into an unattended cell.",
+   "features": [
+    "Ø0.5 – 14.1″ round, □0.5 – 14.1″ square; 20 – 39 ft; 1.5 – 6 kW; to 492 ft/min, 180 rpm",
+    "Pneumatic self-centring chucks; following supports along the bed; automatic tube length measuring",
+    "Fiber laser source 1.5 – 20 kW with autofocus head; bus-based CNC with tube nesting software and 3D import",
+    "Safety fencing and light curtains; chip and part collection",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Automatic bundle loader and unloading conveyor",
+    "45° bevel head (GPLUS / GT, ST / HT)",
+    "Higher laser power; nitrogen generator; dust collector",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-t-1",
+    "sf-t-2",
+    "sf-t-3",
+    "sf-t-4",
+    "sf-t-head",
+    "sf-t-chuck",
+    "sf-t-cutting",
+    "sf-t-profiles",
+    "sf-t-thickness"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "T series two-chuck tube lasers · 20 – 39 ft",
+      "sub": "7 models · Ø0.5 – 14.1″ · 1.5 – 6 kW",
+      "models": [
+       "SF6012T",
+       "SF6016T",
+       "SF6024T",
+       "SF6035T",
+       "SF9024T",
+       "SF9035T",
+       "SF12035T"
+      ],
+      "rows": [
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "3.3 – 21.3 ft (1 – 6.5 m)",
+         "3.3 – 21.3 ft (1 – 6.5 m)",
+         "6.6 – 21.3 ft (2 – 6.5 m)",
+         "6.6 – 20.3 ft (2 – 6.2 m)",
+         "6.6 – 29.5 ft (2 – 9 m)",
+         "6.6 – 29.5 ft (2 – 9 m)",
+         "6.6 – 39.4 ft (2 – 12 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.5 – 4.7″ (Ø13 – 119 mm)",
+         "Ø0.5 – 6.6″ (Ø13 – 168 mm)",
+         "Ø0.7 – 9″ (Ø18 – 229 mm)",
+         "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+         "Ø0.7 – 9″ (Ø18 – 229 mm)",
+         "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+         "Ø1.9 – 13.7″ (Ø48 – 348 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "",
+        "cells": [
+         "□0.5 – 4.7″ (□13 – 119 mm)",
+         "□0.5 – 6.6″ (□13 – 168 mm)",
+         "□0.7 – 9″ (□18 – 229 mm)",
+         "□0.7 – 14.1″ (□18 – 358 mm)",
+         "□0.7 – 9″ (□18 – 229 mm)",
+         "□0.7 – 14.1″ (□18 – 358 mm)",
+         "□1.9 – 13.7″ (□48 – 348 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 3 kW",
+         "1.5 – 3 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "",
+        "cells": [
+         "265 lb (120 kg)",
+         "353 lb (160 kg)",
+         "573 lb (260 kg)",
+         "1,102 lb (500 kg)",
+         "573 lb (260 kg)",
+         "1,102 lb (500 kg)",
+         "1,102 lb (500 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "492 ft/min (150 m/min)",
+         "361 ft/min (110 m/min)",
+         "328 ft/min (100 m/min)",
+         "197 ft/min (60 m/min)",
+         "328 ft/min (100 m/min)",
+         "197 ft/min (60 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. chuck speed",
+        "sub": "",
+        "cells": [
+         "180 rpm",
+         "140 rpm",
+         "100 rpm",
+         "60 rpm",
+         "100 rpm",
+         "60 rpm",
+         "60 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "358 × 71 × 83″ (9,100 × 1,800 × 2,100 mm)",
+         "358 × 71 × 83″ (9,100 × 1,800 × 2,100 mm)",
+         "375 × 77 × 87″ (9,530 × 1,950 × 2,200 mm)",
+         "374 × 81 × 100″ (9,500 × 2,050 × 2,550 mm)",
+         "493 × 77 × 87″ (12,530 × 1,950 × 2,200 mm)",
+         "485 × 81 × 100″ (12,320 × 2,050 × 2,550 mm)",
+         "604 × 81 × 100″ (15,330 × 2,050 × 2,550 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "T series two-chuck tube lasers · 23 – 24.6 ft",
+      "sub": "8 models · Ø0.6 – 9.1″ · 1.5 – 6 kW",
+      "models": [
+       "SF7012T",
+       "SF7016T",
+       "SF7020T",
+       "SF7024T",
+       "SF7512T",
+       "SF7516T",
+       "SF7520T",
+       "SF7524T"
+      ],
+      "rows": [
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "3.3 – 23 ft (1 – 7 m)",
+         "3.3 – 23 ft (1 – 7 m)",
+         "6.6 – 23 ft (2 – 7 m)",
+         "6.6 – 23 ft (2 – 7 m)",
+         "3.3 – 24.6 ft (1 – 7.5 m)",
+         "3.3 – 24.6 ft (1 – 7.5 m)",
+         "6.6 – 24.6 ft (2 – 7.5 m)",
+         "6.6 – 24.6 ft (2 – 7.5 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.59 – 4.72″ (Ø15 – 120 mm)",
+         "Ø0.59 – 6.69″ (Ø15 – 170 mm)",
+         "Ø0.79 – 8.66″ (Ø20 – 220 mm)",
+         "Ø0.79 – 9.06″ (Ø20 – 230 mm)",
+         "Ø0.59 – 4.72″ (Ø15 – 120 mm)",
+         "Ø0.59 – 6.69″ (Ø15 – 170 mm)",
+         "Ø0.79 – 8.66″ (Ø20 – 220 mm)",
+         "Ø0.79 – 9.06″ (Ø20 – 230 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "",
+        "cells": [
+         "□0.59 – 4.72″ (□15 – 120 mm)",
+         "□0.59 – 6.69″ (□15 – 170 mm)",
+         "□0.79 – 5.91″ (□20 – 150 mm)",
+         "□0.79 – 9.06″ (□20 – 230 mm)",
+         "□0.59 – 4.72″ (□15 – 120 mm)",
+         "□0.59 – 6.69″ (□15 – 170 mm)",
+         "□0.79 – 5.91″ (□20 – 150 mm)",
+         "□0.79 – 9.06″ (□20 – 230 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 3 kW",
+         "1.5 – 3 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW",
+         "1.5 – 3 kW",
+         "1.5 – 3 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "",
+        "cells": [
+         "265 lb (120 kg)",
+         "353 lb (160 kg)",
+         "441 lb (200 kg)",
+         "573 lb (260 kg)",
+         "265 lb (120 kg)",
+         "353 lb (160 kg)",
+         "441 lb (200 kg)",
+         "573 lb (260 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "492 ft/min (150 m/min)",
+         "361 ft/min (110 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "492 ft/min (150 m/min)",
+         "361 ft/min (110 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. chuck speed",
+        "sub": "",
+        "cells": [
+         "180 rpm",
+         "140 rpm",
+         "100 rpm",
+         "100 rpm",
+         "180 rpm",
+         "140 rpm",
+         "100 rpm",
+         "100 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "33.1 × 5.9 × 6.9 ft (10.1 × 1.8 × 2.1 m)",
+         "33.1 × 5.9 × 6.9 ft (10.1 × 1.8 × 2.1 m)",
+         "34.5 × 6.4 × 7.2 ft (10.5 × 2.0 × 2.2 m)",
+         "34.5 × 6.4 × 7.2 ft (10.5 × 2.0 × 2.2 m)",
+         "34.8 × 5.9 × 6.9 ft (10.6 × 1.8 × 2.1 m)",
+         "34.8 × 5.9 × 6.9 ft (10.6 × 1.8 × 2.1 m)",
+         "36.2 × 6.4 × 7.2 ft (11.0 × 2.0 × 2.2 m)",
+         "36.2 × 6.4 × 7.2 ft (11.0 × 2.0 × 2.2 m)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF6012T",
+      "glance": [
+       "3.3 – 21.3 ft (1 – 6.5 m)",
+       "Ø0.5 – 4.7″ (Ø13 – 119 mm)",
+       "1.5 – 3 kW",
+       "265 lb (120 kg)",
+       "492 ft/min (150 m/min)"
+      ]
+     },
+     {
+      "name": "SF6016T",
+      "glance": [
+       "3.3 – 21.3 ft (1 – 6.5 m)",
+       "Ø0.5 – 6.6″ (Ø13 – 168 mm)",
+       "1.5 – 3 kW",
+       "353 lb (160 kg)",
+       "361 ft/min (110 m/min)"
+      ]
+     },
+     {
+      "name": "SF6024T",
+      "glance": [
+       "6.6 – 21.3 ft (2 – 6.5 m)",
+       "Ø0.7 – 9″ (Ø18 – 229 mm)",
+       "1.5 – 6 kW",
+       "573 lb (260 kg)",
+       "328 ft/min (100 m/min)"
+      ]
+     },
+     {
+      "name": "SF6035T",
+      "glance": [
+       "6.6 – 20.3 ft (2 – 6.2 m)",
+       "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+       "1.5 – 6 kW",
+       "1,102 lb (500 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF9024T",
+      "glance": [
+       "6.6 – 29.5 ft (2 – 9 m)",
+       "Ø0.7 – 9″ (Ø18 – 229 mm)",
+       "1.5 – 6 kW",
+       "573 lb (260 kg)",
+       "328 ft/min (100 m/min)"
+      ]
+     },
+     {
+      "name": "SF9035T",
+      "glance": [
+       "6.6 – 29.5 ft (2 – 9 m)",
+       "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+       "1.5 – 6 kW",
+       "1,102 lb (500 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF12035T",
+      "glance": [
+       "6.6 – 39.4 ft (2 – 12 m)",
+       "Ø1.9 – 13.7″ (Ø48 – 348 mm)",
+       "1.5 – 6 kW",
+       "1,102 lb (500 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF7012T",
+      "glance": [
+       "3.3 – 23 ft (1 – 7 m)",
+       "Ø0.59 – 4.72″ (Ø15 – 120 mm)",
+       "1.5 – 3 kW",
+       "265 lb (120 kg)",
+       "492 ft/min (150 m/min)"
+      ]
+     },
+     {
+      "name": "SF7016T",
+      "glance": [
+       "3.3 – 23 ft (1 – 7 m)",
+       "Ø0.59 – 6.69″ (Ø15 – 170 mm)",
+       "1.5 – 3 kW",
+       "353 lb (160 kg)",
+       "361 ft/min (110 m/min)"
+      ]
+     },
+     {
+      "name": "SF7020T",
+      "glance": [
+       "6.6 – 23 ft (2 – 7 m)",
+       "Ø0.79 – 8.66″ (Ø20 – 220 mm)",
+       "1.5 – 6 kW",
+       "441 lb (200 kg)",
+       "328 ft/min (100 m/min)"
+      ]
+     },
+     {
+      "name": "SF7024T",
+      "glance": [
+       "6.6 – 23 ft (2 – 7 m)",
+       "Ø0.79 – 9.06″ (Ø20 – 230 mm)",
+       "1.5 – 6 kW",
+       "573 lb (260 kg)",
+       "328 ft/min (100 m/min)"
+      ]
+     },
+     {
+      "name": "SF7512T",
+      "glance": [
+       "3.3 – 24.6 ft (1 – 7.5 m)",
+       "Ø0.59 – 4.72″ (Ø15 – 120 mm)",
+       "1.5 – 3 kW",
+       "265 lb (120 kg)",
+       "492 ft/min (150 m/min)"
+      ]
+     },
+     {
+      "name": "SF7516T",
+      "glance": [
+       "3.3 – 24.6 ft (1 – 7.5 m)",
+       "Ø0.59 – 6.69″ (Ø15 – 170 mm)",
+       "1.5 – 3 kW",
+       "353 lb (160 kg)",
+       "361 ft/min (110 m/min)"
+      ]
+     },
+     {
+      "name": "SF7520T",
+      "glance": [
+       "6.6 – 24.6 ft (2 – 7.5 m)",
+       "Ø0.79 – 8.66″ (Ø20 – 220 mm)",
+       "1.5 – 6 kW",
+       "441 lb (200 kg)",
+       "328 ft/min (100 m/min)"
+      ]
+     },
+     {
+      "name": "SF7524T",
+      "glance": [
+       "6.6 – 24.6 ft (2 – 7.5 m)",
+       "Ø0.79 – 9.06″ (Ø20 – 230 mm)",
+       "1.5 – 6 kW",
+       "573 lb (260 kg)",
+       "328 ft/min (100 m/min)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "length",
+     "round",
+     "power",
+     "load",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "T",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Tube-Lasers-2026.pdf",
+    "label": "Download the Senfeng tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "tube-senfeng"
+  },
+  "sf-plus": {
+   "id": "sf-plus",
+   "brand": "senfeng",
+   "name": "PLUS high-speed and GPLUS / GT bevel-cutting tube lasers, Ø0.5 – 14″, 20 – 23 ft",
+   "short": "High-speed & bevel tube lasers",
+   "models_label": "SF6012PLUS – SF7012PLUS · SF6012GPLUS · SF6024GT · SF6035GT · 7 models",
+   "summary": "The PLUS series is built for speed on small and medium tube: 394 to 492 ft/min, 180 rpm chucks and a 3 to 6 kW source for furniture, fitness equipment and racking. The GPLUS and GT machines add a 45° bevel head that cuts weld preparations and mitred corners on all four sides of the tube — the GPLUS for Ø0.6 to 4.7″ at 240 rpm, the GT for Ø2.3 to 14.1″ with a bundle loader.",
+   "features": [
+    "PLUS: Ø0.5 – 9.4″, to 492 ft/min; GPLUS / GT: ±45° bevel, Ø0.6 – 14.1″; 1.5 – 6 kW",
+    "Pneumatic self-centring chucks; following supports along the bed; automatic tube length measuring",
+    "Fiber laser source 1.5 – 20 kW with autofocus head; bus-based CNC with tube nesting software and 3D import",
+    "Safety fencing and light curtains; chip and part collection",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Automatic bundle loader and unloading conveyor",
+    "45° bevel head (GPLUS / GT, ST / HT)",
+    "Higher laser power; nitrogen generator; dust collector",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-plus-1",
+    "sf-gplus-1",
+    "sf-gt-1",
+    "sf-gt-2",
+    "sf-plus-bevel",
+    "sf-plus-small",
+    "sf-plus-chuck",
+    "sf-plus-parts-1",
+    "sf-plus-parts-2",
+    "sf-plus-parts-3"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PLUS series high-speed tube lasers",
+      "sub": "4 models · Ø0.5 – 9.4″ · 20 – 23 ft · 3 – 6 kW",
+      "models": [
+       "SF6012PLUS",
+       "SF6016PLUS",
+       "SF6024PLUS",
+       "SF7012PLUS"
+      ],
+      "rows": [
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "3.3 – 21.3 ft (1 – 6.5 m)",
+         "3.3 – 21.3 ft (1 – 6.5 m)",
+         "3.3 – 21.3 ft (1 – 6.5 m)",
+         "3.3 – 23 ft (1 – 7 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.5 – 4.7″ (Ø13 – 119 mm)",
+         "Ø0.5 – 6.6″ (Ø13 – 168 mm)",
+         "Ø0.7 – 9.4″ (Ø18 – 239 mm)",
+         "Ø0.5 – 4.7″ (Ø13 – 119 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "",
+        "cells": [
+         "□0.5 – 4.7″ (□13 – 119 mm)",
+         "□0.5 – 6.6″ (□13 – 168 mm)",
+         "□0.7 – 9.4″ (□18 – 239 mm)",
+         "□0.5 – 4.7″ (□13 – 119 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "3 – 6 kW",
+         "3 – 6 kW",
+         "3 – 6 kW",
+         "3 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "",
+        "cells": [
+         "265 lb (120 kg)",
+         "331 lb (150 kg)",
+         "661 lb (300 kg)",
+         "265 lb (120 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "394 ft/min (120 m/min)",
+         "394 ft/min (120 m/min)",
+         "492 ft/min (150 m/min)",
+         "394 ft/min (120 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. chuck speed",
+        "sub": "",
+        "cells": [
+         "180 rpm",
+         "180 rpm",
+         "90 rpm",
+         "180 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "29.8 × 7.3 × 7.5 ft (9.1 × 2.2 × 2.3 m)",
+         "29.8 × 7.3 × 7.5 ft (9.1 × 2.2 × 2.3 m)",
+         "30.5 × 10.1 × 8.2 ft (9.3 × 3.1 × 2.5 m)",
+         "31.4 × 7.3 × 7.5 ft (9.6 × 2.2 × 2.3 m)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "GPLUS / GT bevel-cutting tube lasers · 45°",
+      "sub": "3 models · Ø0.6 – 14.1″ · 20 ft · 1.5 – 6 kW",
+      "models": [
+       "SF6012GPLUS",
+       "SF6024GT",
+       "SF6035GT"
+      ],
+      "rows": [
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "3.3 – 21.3 ft (1 – 6.5 m)",
+         "6.6 – 21.3 ft (2 – 6.5 m)",
+         "6.6 – 21 ft (2 – 6.4 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.6 – 4.7″ (Ø15 – 119 mm)",
+         "Ø2.3 – 9″ (Ø58 – 229 mm)",
+         "Ø3.1 – 14.1″ (Ø79 – 358 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "",
+        "cells": [
+         "□0.6 – 4.7″ (□15 – 119 mm)",
+         "□2.3 – 9″ (□58 – 229 mm)",
+         "□3.1 – 14.1″ (□79 – 358 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 3 kW",
+         "3 – 6 kW",
+         "3 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "",
+        "cells": [
+         "265 lb (120 kg)",
+         "573 lb (260 kg)",
+         "1,102 lb (500 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "492 ft/min (150 m/min)",
+         "328 ft/min (100 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. chuck speed",
+        "sub": "",
+        "cells": [
+         "240 rpm",
+         "100 rpm",
+         "60 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "358 × 88 × 91″ (9,100 × 2,230 × 2,300 mm)",
+         "402 × 90 × 100″ (10,200 × 2,280 × 2,530 mm)",
+         "401 × 89 × 100″ (10,180 × 2,260 × 2,530 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bevel cutting",
+        "sub": "",
+        "cells": [
+         "±45° on all four sides",
+         "±45° on all four sides",
+         "±45° on all four sides"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF6012PLUS",
+      "glance": [
+       "3.3 – 21.3 ft (1 – 6.5 m)",
+       "Ø0.5 – 4.7″ (Ø13 – 119 mm)",
+       "3 – 6 kW",
+       "265 lb (120 kg)",
+       "394 ft/min (120 m/min)"
+      ]
+     },
+     {
+      "name": "SF6016PLUS",
+      "glance": [
+       "3.3 – 21.3 ft (1 – 6.5 m)",
+       "Ø0.5 – 6.6″ (Ø13 – 168 mm)",
+       "3 – 6 kW",
+       "331 lb (150 kg)",
+       "394 ft/min (120 m/min)"
+      ]
+     },
+     {
+      "name": "SF6024PLUS",
+      "glance": [
+       "3.3 – 21.3 ft (1 – 6.5 m)",
+       "Ø0.7 – 9.4″ (Ø18 – 239 mm)",
+       "3 – 6 kW",
+       "661 lb (300 kg)",
+       "492 ft/min (150 m/min)"
+      ]
+     },
+     {
+      "name": "SF7012PLUS",
+      "glance": [
+       "3.3 – 23 ft (1 – 7 m)",
+       "Ø0.5 – 4.7″ (Ø13 – 119 mm)",
+       "3 – 6 kW",
+       "265 lb (120 kg)",
+       "394 ft/min (120 m/min)"
+      ]
+     },
+     {
+      "name": "SF6012GPLUS",
+      "glance": [
+       "3.3 – 21.3 ft (1 – 6.5 m)",
+       "Ø0.6 – 4.7″ (Ø15 – 119 mm)",
+       "1.5 – 3 kW",
+       "265 lb (120 kg)",
+       "492 ft/min (150 m/min)"
+      ]
+     },
+     {
+      "name": "SF6024GT",
+      "glance": [
+       "6.6 – 21.3 ft (2 – 6.5 m)",
+       "Ø2.3 – 9″ (Ø58 – 229 mm)",
+       "3 – 6 kW",
+       "573 lb (260 kg)",
+       "328 ft/min (100 m/min)"
+      ]
+     },
+     {
+      "name": "SF6035GT",
+      "glance": [
+       "6.6 – 21 ft (2 – 6.4 m)",
+       "Ø3.1 – 14.1″ (Ø79 – 358 mm)",
+       "3 – 6 kW",
+       "1,102 lb (500 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "length",
+     "round",
+     "power",
+     "load",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "PLUS · GT",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Tube-Lasers-2026.pdf",
+    "label": "Download the Senfeng tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "tube-senfeng"
+  },
+  "sf-heavy": {
+   "id": "sf-heavy",
+   "brand": "senfeng",
+   "name": "NT / ST / HT three- and four-chuck tube lasers to Ø25″ and 49 ft, and the SF1500CH profile line",
+   "short": "Heavy-duty tube lasers",
+   "models_label": "SF6024NT – SF12035NT · SF9035ST – SF12065ST · SF12035HT – SF15056HT · SF1500CH · 18 models",
+   "summary": "For long and heavy tube: the NT series puts a third chuck in the middle so the last piece is cut without a tail — zero waste on 20 to 39 ft stock to Ø14″. The ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over 29 to 49 ft with 6 to 20 kW sources, bevel heads and automatic loaders, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for H-beams to 39 × 16 ft section, channels and angles, with visual scanning of each beam before cutting.",
+   "features": [
+    "NT: zero-tailing, Ø0.7 – 14.1″; ST / HT: Ø1.9 – 25.1″, 6 – 20 kW, to 6,600 lb; CH: H-beams to 1.9″ web",
+    "Pneumatic self-centring chucks; following supports along the bed; automatic tube length measuring",
+    "Fiber laser source 1.5 – 20 kW with autofocus head; bus-based CNC with tube nesting software and 3D import",
+    "Safety fencing and light curtains; chip and part collection",
+    "CE, FDA and ETL certified; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Automatic bundle loader and unloading conveyor",
+    "45° bevel head (GPLUS / GT, ST / HT)",
+    "Higher laser power; nitrogen generator; dust collector",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-nt-1",
+    "sf-st-1",
+    "sf-ht-1",
+    "sf-ch-1",
+    "sf-nt-chucks",
+    "sf-ht-tube",
+    "sf-ht-bevel",
+    "sf-ch-scan",
+    "sf-ch-render"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "NT series three-chuck zero-tailing tube lasers",
+      "sub": "5 models · Ø0.7 – 14.1″ · 20 – 39 ft · 3 – 12 kW",
+      "models": [
+       "SF6024NT",
+       "SF6035NT",
+       "SF9024NT",
+       "SF9035NT",
+       "SF12035NT"
+      ],
+      "rows": [
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "9.8 – 21.3 ft (3 – 6.5 m)",
+         "9.8 – 20.3 ft (3 – 6.2 m)",
+         "9.8 – 29.5 ft (3 – 9 m)",
+         "9.8 – 29.5 ft (3 – 9 m)",
+         "9.8 – 39.4 ft (3 – 12 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.7 – 9″ (Ø18 – 229 mm)",
+         "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+         "Ø0.7 – 9″ (Ø18 – 229 mm)",
+         "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+         "Ø1.9 – 14.1″ (Ø48 – 358 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "",
+        "cells": [
+         "□0.7 – 9″ (□18 – 229 mm)",
+         "□0.7 – 14.1″ (□18 – 358 mm)",
+         "□0.7 – 9″ (□18 – 229 mm)",
+         "□0.7 – 14.1″ (□18 – 358 mm)",
+         "□1.9 – 14.1″ (□48 – 358 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "3 – 12 kW",
+         "3 – 6 kW",
+         "3 – 6 kW",
+         "3 – 6 kW",
+         "3 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "",
+        "cells": [
+         "573 lb (260 kg)",
+         "1,543 lb (700 kg)",
+         "573 lb (260 kg)",
+         "1,543 lb (700 kg)",
+         "1,543 lb (700 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "246 ft/min (75 m/min)",
+         "197 ft/min (60 m/min)",
+         "246 ft/min (75 m/min)",
+         "197 ft/min (60 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. chuck speed",
+        "sub": "",
+        "cells": [
+         "100 rpm",
+         "60 rpm",
+         "100 rpm",
+         "60 rpm",
+         "60 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "543 × 108 × 124″ (13,800 × 2,750 × 3,150 mm)",
+         "543 × 108 × 132″ (13,800 × 2,750 × 3,350 mm)",
+         "663 × 108 × 124″ (16,850 × 2,750 × 3,150 mm)",
+         "663 × 108 × 132″ (16,850 × 2,750 × 3,350 mm)",
+         "780 × 108 × 132″ (19,800 × 2,750 × 3,350 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "ST series three-chuck heavy-duty tube lasers",
+      "sub": "7 models · Ø1.9 – 25.1″ · 29 – 39 ft · 6 – 20 kW",
+      "models": [
+       "SF9035ST",
+       "SF9050ST",
+       "SF9056ST",
+       "SF12035ST",
+       "SF12050ST",
+       "SF12056ST",
+       "SF12065ST"
+      ],
+      "rows": [
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "19.6 – 29.5 ft (6 – 9 m)",
+         "19.6 – 29.5 ft (6 – 9 m)",
+         "19.6 – 29.5 ft (6 – 9 m)",
+         "19.6 – 39.4 ft (6 – 12 m)",
+         "19.6 – 39.4 ft (6 – 12 m)",
+         "19.6 – 39.4 ft (6 – 12 m)",
+         "19.6 – 39.4 ft (6 – 12 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
+         "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
+         "Ø1.9 – 22″ (Ø48 – 559 mm)",
+         "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
+         "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
+         "Ø1.9 – 22″ (Ø48 – 559 mm)",
+         "Ø1.9 – 25.1″ (Ø48 – 638 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "",
+        "cells": [
+         "□1.9 – 14.1″ (□48 – 358 mm)",
+         "□1.9 – 19.6″ (□48 – 498 mm)",
+         "□1.9 – 15.7″ (□48 – 399 mm)",
+         "□1.9 – 14.1″ (□48 – 358 mm)",
+         "□1.9 – 19.6″ (□48 – 498 mm)",
+         "□1.9 – 15.7″ (□48 – 399 mm)",
+         "□1.9 – 25.1″ (□48 – 638 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "",
+        "cells": [
+         "2,205 lb (1,000 kg)",
+         "4,409 lb (2,000 kg)",
+         "3,968 lb (1,800 kg)",
+         "2,205 lb (1,000 kg)",
+         "4,409 lb (2,000 kg)",
+         "3,968 lb (1,800 kg)",
+         "6,614 lb (3,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "197 ft/min (60 m/min)",
+         "131 ft/min (40 m/min)",
+         "98 ft/min (30 m/min)",
+         "197 ft/min (60 m/min)",
+         "131 ft/min (40 m/min)",
+         "98 ft/min (30 m/min)",
+         "98 ft/min (30 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. chuck speed",
+        "sub": "",
+        "cells": [
+         "60 rpm",
+         "40 rpm",
+         "30 rpm",
+         "60 rpm",
+         "40 rpm",
+         "30 rpm",
+         "30 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "60.7 × 21.3 × 14.7 ft (18.5 × 6.5 × 4.5 m)",
+         "62.3 × 23.6 × 13.7 ft (19.0 × 7.2 × 4.2 m)",
+         "62.3 × 23.6 × 13.7 ft (19.0 × 7.2 × 4.2 m)",
+         "70.5 × 21.3 × 14.7 ft (21.5 × 6.5 × 4.5 m)",
+         "72.1 × 23.6 × 13.7 ft (22.0 × 7.2 × 4.2 m)",
+         "72.1 × 23.6 × 13.7 ft (22.0 × 7.2 × 4.2 m)",
+         "72.1 × 23.6 × 13.7 ft (22.0 × 7.2 × 4.2 m)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "HT series four-chuck tube lasers",
+      "sub": "5 models · Ø1.9 – 25.1″ · 39 – 49 ft · 6 – 20 kW",
+      "models": [
+       "SF12035HT",
+       "SF12050HT",
+       "SF12056HT",
+       "SF12065HT",
+       "SF15056HT"
+      ],
+      "rows": [
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "19.6 – 39.4 ft (6 – 12 m)",
+         "19.6 – 39.4 ft (6 – 12 m)",
+         "19.6 – 39.4 ft (6 – 12 m)",
+         "19.6 – 39.4 ft (6 – 12 m)",
+         "19.6 – 49.2 ft (6 – 15 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
+         "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
+         "Ø1.9 – 22″ (Ø48 – 559 mm)",
+         "Ø1.9 – 25.1″ (Ø48 – 638 mm)",
+         "Ø1.9 – 22″ (Ø48 – 559 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "",
+        "cells": [
+         "□1.9 – 14.1″ (□48 – 358 mm)",
+         "□1.9 – 19.6″ (□48 – 498 mm)",
+         "□1.9 – 15.7″ (□48 – 399 mm)",
+         "□1.9 – 25.1″ (□48 – 638 mm)",
+         "□1.9 – 15.7″ (□48 – 399 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW",
+         "6 – 20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "",
+        "cells": [
+         "2,646 lb (1,200 kg)",
+         "4,409 lb (2,000 kg)",
+         "3,968 lb (1,800 kg)",
+         "6,614 lb (3,000 kg)",
+         "3,968 lb (1,800 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "197 ft/min (60 m/min)",
+         "131 ft/min (40 m/min)",
+         "98 ft/min (30 m/min)",
+         "98 ft/min (30 m/min)",
+         "98 ft/min (30 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. chuck speed",
+        "sub": "",
+        "cells": [
+         "60 rpm",
+         "40 rpm",
+         "30 rpm",
+         "30 rpm",
+         "30 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.001″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "93.5 × 21.3 × 14.7 ft (28.5 × 6.5 × 4.5 m)",
+         "95.1 × 23.6 × 13.7 ft (29.0 × 7.2 × 4.2 m)",
+         "95.1 × 23.6 × 13.7 ft (29.0 × 7.2 × 4.2 m)",
+         "95.1 × 23.6 × 13.7 ft (29.0 × 7.2 × 4.2 m)",
+         "118.1 × 23.6 × 13.7 ft (36.0 × 7.2 × 4.2 m)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "SF1500CH profile laser line for structural steel",
+      "sub": "1 model · H-beams to 39 × 16 ft section, channels, angles · 12 – 30 kW",
+      "models": [
+       "SF1500CH"
+      ],
+      "rows": [
+       {
+        "label": "Max. H-beam width · height",
+        "sub": "",
+        "cells": [
+         "472″ (12,000 mm) · 197″ (5,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness",
+        "sub": "",
+        "cells": [
+         "1.9″ (48 mm) straight · 1.3″ (32 mm) flange bevel"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "12 – 30 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.004″ (±0.1 mm) · repeat ±0.002″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "164 ft/min (50 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Features",
+        "sub": "",
+        "cells": [
+         "visual scanning of the beam, flange and web cutting, bevels, marking"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF6024NT",
+      "glance": [
+       "9.8 – 21.3 ft (3 – 6.5 m)",
+       "Ø0.7 – 9″ (Ø18 – 229 mm)",
+       "3 – 12 kW",
+       "573 lb (260 kg)",
+       "246 ft/min (75 m/min)"
+      ]
+     },
+     {
+      "name": "SF6035NT",
+      "glance": [
+       "9.8 – 20.3 ft (3 – 6.2 m)",
+       "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+       "3 – 6 kW",
+       "1,543 lb (700 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF9024NT",
+      "glance": [
+       "9.8 – 29.5 ft (3 – 9 m)",
+       "Ø0.7 – 9″ (Ø18 – 229 mm)",
+       "3 – 6 kW",
+       "573 lb (260 kg)",
+       "246 ft/min (75 m/min)"
+      ]
+     },
+     {
+      "name": "SF9035NT",
+      "glance": [
+       "9.8 – 29.5 ft (3 – 9 m)",
+       "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
+       "3 – 6 kW",
+       "1,543 lb (700 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF12035NT",
+      "glance": [
+       "9.8 – 39.4 ft (3 – 12 m)",
+       "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
+       "3 – 6 kW",
+       "1,543 lb (700 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF9035ST",
+      "glance": [
+       "19.6 – 29.5 ft (6 – 9 m)",
+       "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
+       "6 – 20 kW",
+       "2,205 lb (1,000 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF9050ST",
+      "glance": [
+       "19.6 – 29.5 ft (6 – 9 m)",
+       "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
+       "6 – 20 kW",
+       "4,409 lb (2,000 kg)",
+       "131 ft/min (40 m/min)"
+      ]
+     },
+     {
+      "name": "SF9056ST",
+      "glance": [
+       "19.6 – 29.5 ft (6 – 9 m)",
+       "Ø1.9 – 22″ (Ø48 – 559 mm)",
+       "6 – 20 kW",
+       "3,968 lb (1,800 kg)",
+       "98 ft/min (30 m/min)"
+      ]
+     },
+     {
+      "name": "SF12035ST",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
+       "6 – 20 kW",
+       "2,205 lb (1,000 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF12050ST",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
+       "6 – 20 kW",
+       "4,409 lb (2,000 kg)",
+       "131 ft/min (40 m/min)"
+      ]
+     },
+     {
+      "name": "SF12056ST",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 22″ (Ø48 – 559 mm)",
+       "6 – 20 kW",
+       "3,968 lb (1,800 kg)",
+       "98 ft/min (30 m/min)"
+      ]
+     },
+     {
+      "name": "SF12065ST",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 25.1″ (Ø48 – 638 mm)",
+       "6 – 20 kW",
+       "6,614 lb (3,000 kg)",
+       "98 ft/min (30 m/min)"
+      ]
+     },
+     {
+      "name": "SF12035HT",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
+       "6 – 20 kW",
+       "2,646 lb (1,200 kg)",
+       "197 ft/min (60 m/min)"
+      ]
+     },
+     {
+      "name": "SF12050HT",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
+       "6 – 20 kW",
+       "4,409 lb (2,000 kg)",
+       "131 ft/min (40 m/min)"
+      ]
+     },
+     {
+      "name": "SF12056HT",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 22″ (Ø48 – 559 mm)",
+       "6 – 20 kW",
+       "3,968 lb (1,800 kg)",
+       "98 ft/min (30 m/min)"
+      ]
+     },
+     {
+      "name": "SF12065HT",
+      "glance": [
+       "19.6 – 39.4 ft (6 – 12 m)",
+       "Ø1.9 – 25.1″ (Ø48 – 638 mm)",
+       "6 – 20 kW",
+       "6,614 lb (3,000 kg)",
+       "98 ft/min (30 m/min)"
+      ]
+     },
+     {
+      "name": "SF15056HT",
+      "glance": [
+       "19.6 – 49.2 ft (6 – 15 m)",
+       "Ø1.9 – 22″ (Ø48 – 559 mm)",
+       "6 – 20 kW",
+       "3,968 lb (1,800 kg)",
+       "98 ft/min (30 m/min)"
+      ]
+     },
+     {
+      "name": "SF1500CH",
+      "glance": [
+       "",
+       "",
+       "12 – 30 kW",
+       "",
+       ""
+      ]
+     }
+    ],
+    "glance_keys": [
+     "length",
+     "round",
+     "power",
+     "load",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "NT · ST · HT · CH",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Tube-Lasers-2026.pdf",
+    "label": "Download the Senfeng tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "tube-senfeng"
+  },
+  "sf-bdc": {
+   "id": "sf-bdc",
+   "brand": "senfeng",
+   "name": "BDC automatic panel benders, 47 – 126″ bend width — Senfeng",
+   "short": "BDC panel benders",
+   "models_label": "BDC1500 – BDC3200 push-down · BDC1200 / 1500 suction-cup · 6 models",
+   "summary": "Senfeng's panel benders: the push-down BDC series with 13 to 16 servo axes bends mild steel to 14 ga, stainless to 16 ga and aluminum to 3/32″ at 0.2 s per bend over 59 to 126″, with a 7.9″ bending height (11.8″ optional) and a sheet manipulator that turns the blank for all four sides; the suction-cup BDC1200 and 1500 are the light machines for door and appliance panels to 20 ga. Robot loading and unloading cells are available on the 1500 to 2500.",
+   "features": [
+    "0.2 s per bend; 14 ga mild steel; 59 – 126″ (push-down) or 47 – 59″ (suction-cup); auxiliary tools and clamps optional",
+    "Bus-based CNC with offline programming; automatic thickness compensation",
+    "Safety fencing and light curtains; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "6-axis robot loading / unloading cell (BDC1500 – 2500)",
+    "Auxiliary bending tool and clamps",
+    "300 mm bending height"
+   ],
+   "images": [
+    "sf-bdc-1",
+    "sf-bdc-2",
+    "sf-bdc-3",
+    "sf-bdc-suction",
+    "sf-bdc-robot",
+    "sf-bdc-robot-2",
+    "sf-bdc-tool",
+    "sf-bdc-clamps",
+    "sf-bdc-blades",
+    "sf-bdc-bends",
+    "sf-bdc-parts",
+    "sf-bdc-parts-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BDC push-down automatic panel benders",
+      "sub": "4 models · 59 – 126″ bend width · 14 ga mild steel",
+      "models": [
+       "BDC1500",
+       "BDC2000",
+       "BDC2500",
+       "BDC3200"
+      ],
+      "rows": [
+       {
+        "label": "Max. bending width",
+        "sub": "",
+        "cells": [
+         "59.1″ (1,500 mm)",
+         "78.7″ (2,000 mm)",
+         "98.4″ (2,500 mm)",
+         "126.0″ (3,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. blank size L × W",
+        "sub": "",
+        "cells": [
+         "59 × 49″ (1,500 × 1,250 mm)",
+         "79 × 49″ (2,000 × 1,250 mm)",
+         "98 × 49″ (2,500 × 1,250 mm)",
+         "126 × 49″ (3,200 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending height",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 11.8″ (300 mm) optional",
+         "7.9″ (200 mm) · 11.8″ (300 mm) optional",
+         "7.9″ (200 mm) · 11.8″ (300 mm) optional",
+         "7.9″ (200 mm) · 11.8″ (300 mm) optional"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, stainless steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, aluminum",
+        "sub": "",
+        "cells": [
+         "3/32″ (2.5 mm)",
+         "3/32″ (2.5 mm)",
+         "3/32″ (2.5 mm)",
+         "3/32″ (2.5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. thickness",
+        "sub": "",
+        "cells": [
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo axes",
+        "sub": "",
+        "cells": [
+         "13",
+         "13",
+         "13",
+         "16"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "45.9 HP (34.2 kW)",
+         "48.9 HP (36.5 kW)",
+         "87.2 HP (65 kW)",
+         "107.3 HP (80 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "173 × 78 × 108″ (4,390 × 1,980 × 2,740 mm)",
+         "196 × 106 × 116″ (4,980 × 2,690 × 2,950 mm)",
+         "224 × 125 × 120″ (5,690 × 3,180 × 3,050 mm)",
+         "259 × 157 × 129″ (6,580 × 3,990 × 3,280 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "28,660 lb (13,000 kg)",
+         "37,479 lb (17,000 kg)",
+         "48,502 lb (22,000 kg)",
+         "55,115 lb (25,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "BDC suction-cup panel benders",
+      "sub": "2 models · 47 – 59″ bend width · thin sheet",
+      "models": [
+       "BDC1200",
+       "BDC1500"
+      ],
+      "rows": [
+       {
+        "label": "Max. bending width",
+        "sub": "",
+        "cells": [
+         "47.2″ (1,200 mm)",
+         "59.1″ (1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. blank size L × W",
+        "sub": "",
+        "cells": [
+         "47 × 47″ (1,200 × 1,200 mm)",
+         "59 × 49″ (1,500 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending height",
+        "sub": "",
+        "cells": [
+         "6.7″ (170 mm)",
+         "6.7″ (170 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, mild steel",
+        "sub": "",
+        "cells": [
+         "20 ga (1.0 mm)",
+         "20 ga (1.0 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, stainless steel",
+        "sub": "",
+        "cells": [
+         "22 ga (0.8 mm)",
+         "22 ga (0.8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, aluminum",
+        "sub": "",
+        "cells": [
+         "0.05″ (1.3 mm)",
+         "0.05″ (1.3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.2 s per bend",
+         "0.2 s per bend"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo axes",
+        "sub": "",
+        "cells": [
+         "10",
+         "10"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "40.2 HP (30 kW)",
+         "52.3 HP (39 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "12.1 × 5.9 × 9.8 ft (3.7 × 1.8 × 3.0 m)",
+         "13.1 × 6.5 × 10 ft (4.0 × 2.0 × 3.0 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "19,842 lb (9,000 kg)",
+         "26,455 lb (12,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BDC1500",
+      "glance": [
+       "59.1″ (1,500 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm) · 11.8″ (300 mm) optional",
+       "0.2 s per bend",
+       "28,660 lb (13,000 kg)"
+      ]
+     },
+     {
+      "name": "BDC2000",
+      "glance": [
+       "78.7″ (2,000 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm) · 11.8″ (300 mm) optional",
+       "0.2 s per bend",
+       "37,479 lb (17,000 kg)"
+      ]
+     },
+     {
+      "name": "BDC2500",
+      "glance": [
+       "98.4″ (2,500 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm) · 11.8″ (300 mm) optional",
+       "0.2 s per bend",
+       "48,502 lb (22,000 kg)"
+      ]
+     },
+     {
+      "name": "BDC3200",
+      "glance": [
+       "126.0″ (3,200 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm) · 11.8″ (300 mm) optional",
+       "0.2 s per bend",
+       "55,115 lb (25,000 kg)"
+      ]
+     },
+     {
+      "name": "BDC1200",
+      "glance": [
+       "47.2″ (1,200 mm)",
+       "20 ga (1.0 mm)",
+       "6.7″ (170 mm)",
+       "0.2 s per bend",
+       "19,842 lb (9,000 kg)"
+      ]
+     },
+     {
+      "name": "BDC1500",
+      "glance": [
+       "59.1″ (1,500 mm)",
+       "20 ga (1.0 mm)",
+       "6.7″ (170 mm)",
+       "0.2 s per bend",
+       "26,455 lb (12,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_width",
+     "thickness",
+     "bending_height",
+     "speed",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are Senfeng's ratings; the model number is the metric bending width."
+   },
+   "series": "BDC",
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-Panel-Benders-2026.pdf",
+    "label": "Download the Senfeng panel bender brochure",
+    "size": "PDF · 0 MB · imperial units"
+   },
+   "group": "panel-senfeng"
   }
  }
 }
