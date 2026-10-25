@@ -12725,19 +12725,19 @@
   }
  },
  "is-4rhms-3100-250": {
-  "alt": "\u0130\u015fitan 4R HMS 3100x250 hydraulic 4-roll plate roller, 10.2 ft",
+  "alt": "ISITAN 4R HMS 3100x250 hydraulic 4-roll plate roller, 10.2 ft",
   "variants": [
    {
     "w": 800,
-    "h": 608,
+    "h": 612,
     "file": "img/forming/is-4rhms-3100-250-800.webp",
-    "bytes": 68096
+    "bytes": 66080
    },
    {
     "w": 480,
-    "h": 365,
+    "h": 367,
     "file": "img/forming/is-4rhms-3100-250-480.webp",
-    "bytes": 34864
+    "bytes": 35110
    }
   ],
   "alpha": true,
@@ -12745,49 +12745,55 @@
    "w": 160,
    "h": 122,
    "file": "img/forming/is-4rhms-3100-250-thumb.webp",
-   "bytes": 7542
+   "bytes": 7760
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhms-2050-180": {
-  "alt": "\u0130\u015fitan 4R HMS 2050x180 hydraulic 4-roll plate roller with NC control and plate ejector",
+  "alt": "ISITAN 4R HMS 2050x180 hydraulic 4-roll plate roller with NC control and plate ejector",
   "variants": [
    {
+    "w": 1200,
+    "h": 293,
+    "file": "img/forming/is-4rhms-2050-180-1200.webp",
+    "bytes": 52870
+   },
+   {
     "w": 800,
-    "h": 188,
+    "h": 195,
     "file": "img/forming/is-4rhms-2050-180-800.webp",
-    "bytes": 31210
+    "bytes": 33564
    },
    {
     "w": 480,
-    "h": 113,
+    "h": 117,
     "file": "img/forming/is-4rhms-2050-180-480.webp",
-    "bytes": 15906
+    "bytes": 16904
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 38,
+   "h": 39,
    "file": "img/forming/is-4rhms-2050-180-thumb.webp",
-   "bytes": 3770
+   "bytes": 3778
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhms-1550-220": {
-  "alt": "\u0130\u015fitan 4R HMS 1550x220 4-roll plate roller with overhead crane and side supports",
+  "alt": "ISITAN 4R HMS 1550x220 4-roll plate roller with overhead crane and side supports",
   "variants": [
    {
     "w": 800,
-    "h": 469,
+    "h": 470,
     "file": "img/forming/is-4rhms-1550-220-800.webp",
-    "bytes": 59186
+    "bytes": 60932
    },
    {
     "w": 480,
-    "h": 281,
+    "h": 282,
     "file": "img/forming/is-4rhms-1550-220-480.webp",
-    "bytes": 29266
+    "bytes": 30814
    }
   ],
   "alpha": true,
@@ -12795,24 +12801,24 @@
    "w": 160,
    "h": 94,
    "file": "img/forming/is-4rhms-1550-220-thumb.webp",
-   "bytes": 6346
+   "bytes": 7146
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhms-1270-100": {
-  "alt": "\u0130\u015fitan 4R HMS 1270x100 4-roll plate roller with NC control, ejector and mechanical overhead crane",
+  "alt": "ISITAN 4R HMS 1270x100 4-roll plate roller with NC control, ejector and mechanical overhead crane",
   "variants": [
    {
     "w": 800,
-    "h": 670,
+    "h": 669,
     "file": "img/forming/is-4rhms-1270-100-800.webp",
-    "bytes": 77868
+    "bytes": 74318
    },
    {
     "w": 480,
     "h": 402,
     "file": "img/forming/is-4rhms-1270-100-480.webp",
-    "bytes": 37126
+    "bytes": 37896
    }
   ],
   "alpha": true,
@@ -12820,18 +12826,18 @@
    "w": 160,
    "h": 134,
    "file": "img/forming/is-4rhms-1270-100-thumb.webp",
-   "bytes": 7760
+   "bytes": 8020
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhms-2050-130": {
-  "alt": "\u0130\u015fitan 4R HMS 2050x130 4-roll plate roller \u2014 full automation with vacuum sheet feeder and ejector",
+  "alt": "ISITAN 4R HMS 2050x130 4-roll plate roller \u2014 full automation with vacuum sheet feeder and ejector",
   "variants": [
    {
     "w": 480,
-    "h": 470,
+    "h": 472,
     "file": "img/forming/is-4rhms-2050-130-480.webp",
-    "bytes": 48490
+    "bytes": 50856
    }
   ],
   "alpha": true,
@@ -12839,24 +12845,24 @@
    "w": 160,
    "h": 157,
    "file": "img/forming/is-4rhms-2050-130-thumb.webp",
-   "bytes": 9892
+   "bytes": 10544
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhms-650-80": {
-  "alt": "\u0130\u015fitan 4R HMS 650x80 compact hydraulic 4-roll plate roller, 2.1 ft",
+  "alt": "ISITAN 4R HMS 650x80 compact hydraulic 4-roll plate roller, 2.1 ft",
   "variants": [
    {
     "w": 800,
-    "h": 448,
+    "h": 449,
     "file": "img/forming/is-4rhms-650-80-800.webp",
-    "bytes": 67310
+    "bytes": 67196
    },
    {
     "w": 480,
     "h": 269,
     "file": "img/forming/is-4rhms-650-80-480.webp",
-    "bytes": 31958
+    "bytes": 33298
    }
   ],
   "alpha": true,
@@ -12864,9 +12870,9 @@
    "w": 160,
    "h": 90,
    "file": "img/forming/is-4rhms-650-80-thumb.webp",
-   "bytes": 6590
+   "bytes": 7160
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhms-automation-line": {
   "alt": "4R HMS \u2014 full automation line with sheet feeder, NC control and part ejector",
@@ -12875,19 +12881,19 @@
     "w": 1200,
     "h": 1008,
     "file": "img/forming/is-4rhms-automation-line-1200.webp",
-    "bytes": 194284
+    "bytes": 199912
    },
    {
     "w": 800,
     "h": 672,
     "file": "img/forming/is-4rhms-automation-line-800.webp",
-    "bytes": 109920
+    "bytes": 113962
    },
    {
     "w": 480,
     "h": 403,
     "file": "img/forming/is-4rhms-automation-line-480.webp",
-    "bytes": 50934
+    "bytes": 53742
    }
   ],
   "alpha": true,
@@ -12895,7 +12901,7 @@
    "w": 160,
    "h": 134,
    "file": "img/forming/is-4rhms-automation-line-thumb.webp",
-   "bytes": 9856
+   "bytes": 10008
   }
  },
  "is-4rhms-ejector": {
@@ -12905,7 +12911,7 @@
     "w": 480,
     "h": 448,
     "file": "img/forming/is-4rhms-ejector-480.webp",
-    "bytes": 31750
+    "bytes": 32586
    }
   ],
   "alpha": true,
@@ -12913,7 +12919,7 @@
    "w": 160,
    "h": 149,
    "file": "img/forming/is-4rhms-ejector-thumb.webp",
-   "bytes": 7110
+   "bytes": 7374
   }
  },
  "is-4rhms-safety-switch": {
@@ -12923,13 +12929,13 @@
     "w": 800,
     "h": 420,
     "file": "img/forming/is-4rhms-safety-switch-800.webp",
-    "bytes": 21484
+    "bytes": 21802
    },
    {
     "w": 480,
     "h": 252,
     "file": "img/forming/is-4rhms-safety-switch-480.webp",
-    "bytes": 12160
+    "bytes": 12472
    }
   ],
   "alpha": false,
@@ -12937,7 +12943,7 @@
    "w": 160,
    "h": 84,
    "file": "img/forming/is-4rhms-safety-switch-thumb.webp",
-   "bytes": 2704
+   "bytes": 2850
   }
  },
  "is-4rhms-pressure": {
@@ -12947,19 +12953,19 @@
     "w": 1200,
     "h": 1074,
     "file": "img/forming/is-4rhms-pressure-1200.webp",
-    "bytes": 50288
+    "bytes": 51672
    },
    {
     "w": 800,
     "h": 716,
     "file": "img/forming/is-4rhms-pressure-800.webp",
-    "bytes": 31700
+    "bytes": 33436
    },
    {
     "w": 480,
     "h": 429,
     "file": "img/forming/is-4rhms-pressure-480.webp",
-    "bytes": 16232
+    "bytes": 17046
    }
   ],
   "alpha": false,
@@ -12967,7 +12973,7 @@
    "w": 160,
    "h": 143,
    "file": "img/forming/is-4rhms-pressure-thumb.webp",
-   "bytes": 2476
+   "bytes": 2590
   }
  },
  "is-4rhms-cone": {
@@ -12977,13 +12983,13 @@
     "w": 800,
     "h": 593,
     "file": "img/forming/is-4rhms-cone-800.webp",
-    "bytes": 56946
+    "bytes": 58646
    },
    {
     "w": 480,
     "h": 356,
     "file": "img/forming/is-4rhms-cone-480.webp",
-    "bytes": 30198
+    "bytes": 31610
    }
   ],
   "alpha": true,
@@ -12991,85 +12997,79 @@
    "w": 160,
    "h": 119,
    "file": "img/forming/is-4rhms-cone-thumb.webp",
-   "bytes": 5782
+   "bytes": 5978
   }
  },
  "is-4rom-1550-220": {
-  "alt": "\u0130\u015fitan 4R OM 1550x220 4-roll corrugated sheet bending machine",
+  "alt": "ISITAN 4R OM 1550x220 4-roll corrugated sheet bending machine",
   "variants": [
    {
     "w": 800,
-    "h": 660,
+    "h": 665,
     "file": "img/forming/is-4rom-1550-220-800.webp",
-    "bytes": 62574
+    "bytes": 60212
    },
    {
     "w": 480,
-    "h": 396,
+    "h": 399,
     "file": "img/forming/is-4rom-1550-220-480.webp",
-    "bytes": 31800
+    "bytes": 32000
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 132,
+   "h": 133,
    "file": "img/forming/is-4rom-1550-220-thumb.webp",
-   "bytes": 6894
+   "bytes": 6886
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhom-corrugated": {
-  "alt": "\u0130\u015fitan 4R HOM corrugated sheet bending machine rolling galvanized sheet",
+  "alt": "ISITAN 4R HOM corrugated sheet bending machine rolling galvanized sheet",
   "variants": [
    {
-    "w": 1200,
-    "h": 490,
-    "file": "img/forming/is-4rhom-corrugated-1200.webp",
-    "bytes": 68580
-   },
-   {
     "w": 800,
-    "h": 327,
+    "h": 332,
     "file": "img/forming/is-4rhom-corrugated-800.webp",
-    "bytes": 38906
+    "bytes": 51650
    },
    {
     "w": 480,
-    "h": 196,
+    "h": 199,
     "file": "img/forming/is-4rhom-corrugated-480.webp",
-    "bytes": 19416
+    "bytes": 26382
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 65,
+   "h": 66,
    "file": "img/forming/is-4rhom-corrugated-thumb.webp",
-   "bytes": 4176
+   "bytes": 5698
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-4rhom-1270-220": {
-  "alt": "\u0130\u015fitan 4R HOM 1270x220 special-production corrugated sheet bending machine",
+  "alt": "ISITAN 4R HOM 1270x220 special-production corrugated sheet bending machine",
   "variants": [
    {
     "w": 1200,
     "h": 700,
     "file": "img/forming/is-4rhom-1270-220-1200.webp",
-    "bytes": 112304
+    "bytes": 115486
    },
    {
     "w": 800,
     "h": 466,
     "file": "img/forming/is-4rhom-1270-220-800.webp",
-    "bytes": 66438
+    "bytes": 69216
    },
    {
     "w": 480,
     "h": 280,
     "file": "img/forming/is-4rhom-1270-220-480.webp",
-    "bytes": 31910
+    "bytes": 33402
    }
   ],
   "alpha": true,
@@ -13077,23 +13077,23 @@
    "w": 160,
    "h": 93,
    "file": "img/forming/is-4rhom-1270-220-thumb.webp",
-   "bytes": 6048
+   "bytes": 6448
   }
  },
  "is-4rhom-2050-250": {
-  "alt": "\u0130\u015fitan 4R HOM 2050x250 4-roll corrugated sheet bending machine",
+  "alt": "ISITAN 4R HOM 2050x250 4-roll corrugated sheet bending machine",
   "variants": [
    {
     "w": 800,
     "h": 749,
     "file": "img/forming/is-4rhom-2050-250-800.webp",
-    "bytes": 88480
+    "bytes": 91442
    },
    {
     "w": 480,
     "h": 449,
     "file": "img/forming/is-4rhom-2050-250-480.webp",
-    "bytes": 44252
+    "bytes": 46536
    }
   ],
   "alpha": true,
@@ -13101,29 +13101,29 @@
    "w": 160,
    "h": 150,
    "file": "img/forming/is-4rhom-2050-250-thumb.webp",
-   "bytes": 8226
+   "bytes": 8750
   }
  },
  "is-4rh-10x90": {
-  "alt": "\u0130\u015fitan 4RH 10x90 NC-controlled special sheet bending machine",
+  "alt": "ISITAN 4RH 10x90 NC-controlled special sheet bending machine",
   "variants": [
    {
     "w": 1200,
     "h": 598,
     "file": "img/forming/is-4rh-10x90-1200.webp",
-    "bytes": 80278
+    "bytes": 82714
    },
    {
     "w": 800,
     "h": 399,
     "file": "img/forming/is-4rh-10x90-800.webp",
-    "bytes": 48156
+    "bytes": 49632
    },
    {
     "w": 480,
     "h": 239,
     "file": "img/forming/is-4rh-10x90-480.webp",
-    "bytes": 23530
+    "bytes": 24142
    }
   ],
   "alpha": true,
@@ -13131,7 +13131,7 @@
    "w": 160,
    "h": 80,
    "file": "img/forming/is-4rh-10x90-thumb.webp",
-   "bytes": 5052
+   "bytes": 5132
   }
  },
  "is-4rom-rings": {
@@ -13141,19 +13141,19 @@
     "w": 1200,
     "h": 704,
     "file": "img/forming/is-4rom-rings-1200.webp",
-    "bytes": 121144
+    "bytes": 124782
    },
    {
     "w": 800,
     "h": 469,
     "file": "img/forming/is-4rom-rings-800.webp",
-    "bytes": 69620
+    "bytes": 72992
    },
    {
     "w": 480,
     "h": 282,
     "file": "img/forming/is-4rom-rings-480.webp",
-    "bytes": 33956
+    "bytes": 34854
    }
   ],
   "alpha": true,
@@ -13161,23 +13161,29 @@
    "w": 160,
    "h": 94,
    "file": "img/forming/is-4rom-rings-thumb.webp",
-   "bytes": 6664
+   "bytes": 6782
   }
  },
  "is-mrmh-3100-250": {
-  "alt": "\u0130\u015fitan MRM-H 3100x250 hydraulic 3-roll plate roller, 10 ft",
+  "alt": "ISITAN MRM-H 3100x250 hydraulic 3-roll plate roller, 10 ft",
   "variants": [
    {
+    "w": 1200,
+    "h": 640,
+    "file": "img/forming/is-mrmh-3100-250-1200.webp",
+    "bytes": 87326
+   },
+   {
     "w": 800,
-    "h": 423,
+    "h": 427,
     "file": "img/forming/is-mrmh-3100-250-800.webp",
-    "bytes": 51070
+    "bytes": 51464
    },
    {
     "w": 480,
-    "h": 254,
+    "h": 256,
     "file": "img/forming/is-mrmh-3100-250-480.webp",
-    "bytes": 25994
+    "bytes": 26496
    }
   ],
   "alpha": true,
@@ -13185,86 +13191,92 @@
    "w": 160,
    "h": 85,
    "file": "img/forming/is-mrmh-3100-250-thumb.webp",
-   "bytes": 5730
+   "bytes": 5914
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrmh-2050-180": {
-  "alt": "\u0130\u015fitan MRM-H 2050x180 hydraulic 3-roll plate roller \u2014 motor + planetary reducer drive",
+  "alt": "ISITAN MRM-H 2050x180 hydraulic 3-roll plate roller \u2014 motor + planetary reducer drive",
   "variants": [
    {
     "w": 1200,
-    "h": 541,
+    "h": 547,
     "file": "img/forming/is-mrmh-2050-180-1200.webp",
-    "bytes": 74462
+    "bytes": 77774
    },
    {
     "w": 800,
-    "h": 360,
+    "h": 365,
     "file": "img/forming/is-mrmh-2050-180-800.webp",
-    "bytes": 47546
+    "bytes": 47764
    },
    {
     "w": 480,
-    "h": 216,
+    "h": 219,
     "file": "img/forming/is-mrmh-2050-180-480.webp",
-    "bytes": 24034
+    "bytes": 24658
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 72,
+   "h": 73,
    "file": "img/forming/is-mrmh-2050-180-thumb.webp",
-   "bytes": 5404
+   "bytes": 5838
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrmh-2550-180": {
-  "alt": "\u0130\u015fitan MRM-H 2550x180 hydraulic 3-roll plate roller, 8.4 ft",
+  "alt": "ISITAN MRM-H 2550x180 hydraulic 3-roll plate roller, 8.4 ft",
   "variants": [
    {
     "w": 1200,
-    "h": 541,
+    "h": 547,
     "file": "img/forming/is-mrmh-2550-180-1200.webp",
-    "bytes": 74340
+    "bytes": 78264
    },
    {
     "w": 800,
-    "h": 360,
+    "h": 365,
     "file": "img/forming/is-mrmh-2550-180-800.webp",
-    "bytes": 47370
+    "bytes": 47774
    },
    {
     "w": 480,
-    "h": 216,
+    "h": 219,
     "file": "img/forming/is-mrmh-2550-180-480.webp",
-    "bytes": 24000
+    "bytes": 24782
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 72,
+   "h": 73,
    "file": "img/forming/is-mrmh-2550-180-thumb.webp",
-   "bytes": 5372
+   "bytes": 5780
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrmh-1550-150": {
-  "alt": "\u0130\u015fitan MRM-H 1550x150 hydraulic 3-roll plate roller with digital readouts",
+  "alt": "ISITAN MRM-H 1550x150 hydraulic 3-roll plate roller with digital readouts",
   "variants": [
    {
+    "w": 1200,
+    "h": 416,
+    "file": "img/forming/is-mrmh-1550-150-1200.webp",
+    "bytes": 59890
+   },
+   {
     "w": 800,
-    "h": 276,
+    "h": 277,
     "file": "img/forming/is-mrmh-1550-150-800.webp",
-    "bytes": 34962
+    "bytes": 35514
    },
    {
     "w": 480,
     "h": 166,
     "file": "img/forming/is-mrmh-1550-150-480.webp",
-    "bytes": 17864
+    "bytes": 18942
    }
   ],
   "alpha": true,
@@ -13272,59 +13284,59 @@
    "w": 160,
    "h": 55,
    "file": "img/forming/is-mrmh-1550-150-thumb.webp",
-   "bytes": 4142
+   "bytes": 4456
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrmh-1270-180": {
-  "alt": "\u0130\u015fitan MRM-H 1270x180 hydraulic 3-roll plate roller, 4.2 ft",
+  "alt": "ISITAN MRM-H 1270x180 hydraulic 3-roll plate roller, 4.2 ft",
   "variants": [
    {
     "w": 800,
-    "h": 361,
+    "h": 368,
     "file": "img/forming/is-mrmh-1270-180-800.webp",
-    "bytes": 46654
+    "bytes": 45254
    },
    {
     "w": 480,
-    "h": 216,
+    "h": 221,
     "file": "img/forming/is-mrmh-1270-180-480.webp",
-    "bytes": 23780
+    "bytes": 23950
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 72,
+   "h": 74,
    "file": "img/forming/is-mrmh-1270-180-thumb.webp",
-   "bytes": 5278
+   "bytes": 5546
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrmh-1050-100": {
-  "alt": "\u0130\u015fitan MRM-H 1050x100 hydraulic 3-roll plate roller, 3.4 ft",
+  "alt": "ISITAN MRM-H 1050x100 hydraulic 3-roll plate roller, 3.4 ft",
   "variants": [
    {
     "w": 800,
-    "h": 361,
+    "h": 367,
     "file": "img/forming/is-mrmh-1050-100-800.webp",
-    "bytes": 46720
+    "bytes": 44980
    },
    {
     "w": 480,
-    "h": 216,
+    "h": 220,
     "file": "img/forming/is-mrmh-1050-100-480.webp",
-    "bytes": 23734
+    "bytes": 23764
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 72,
+   "h": 73,
    "file": "img/forming/is-mrmh-1050-100-thumb.webp",
-   "bytes": 5254
+   "bytes": 5532
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrmh-wire-grooves": {
   "alt": "MRM-H \u2014 optional wire grooves on the roll ends",
@@ -13333,19 +13345,19 @@
     "w": 1200,
     "h": 402,
     "file": "img/forming/is-mrmh-wire-grooves-1200.webp",
-    "bytes": 62786
+    "bytes": 65398
    },
    {
     "w": 800,
     "h": 268,
     "file": "img/forming/is-mrmh-wire-grooves-800.webp",
-    "bytes": 37172
+    "bytes": 38976
    },
    {
     "w": 480,
     "h": 161,
     "file": "img/forming/is-mrmh-wire-grooves-480.webp",
-    "bytes": 17372
+    "bytes": 18552
    }
   ],
   "alpha": true,
@@ -13353,7 +13365,7 @@
    "w": 160,
    "h": 54,
    "file": "img/forming/is-mrmh-wire-grooves-thumb.webp",
-   "bytes": 4050
+   "bytes": 4284
   }
  },
  "is-mrmh-drop-end": {
@@ -13363,19 +13375,19 @@
     "w": 1200,
     "h": 522,
     "file": "img/forming/is-mrmh-drop-end-1200.webp",
-    "bytes": 60916
+    "bytes": 62896
    },
    {
     "w": 800,
     "h": 348,
     "file": "img/forming/is-mrmh-drop-end-800.webp",
-    "bytes": 35128
+    "bytes": 36878
    },
    {
     "w": 480,
     "h": 209,
     "file": "img/forming/is-mrmh-drop-end-480.webp",
-    "bytes": 17792
+    "bytes": 18766
    }
   ],
   "alpha": true,
@@ -13383,48 +13395,48 @@
    "w": 160,
    "h": 70,
    "file": "img/forming/is-mrmh-drop-end-thumb.webp",
-   "bytes": 3960
+   "bytes": 4016
   }
  },
  "is-3rhmd-1270-90": {
-  "alt": "\u0130\u015fitan 3R HMD 1270x90 mechanical-hydraulic 3-roll plate roller",
+  "alt": "ISITAN 3R HMD 1270x90 mechanical-hydraulic 3-roll plate roller",
   "variants": [
    {
     "w": 800,
-    "h": 466,
+    "h": 469,
     "file": "img/forming/is-3rhmd-1270-90-800.webp",
-    "bytes": 63418
+    "bytes": 60998
    },
    {
     "w": 480,
-    "h": 280,
+    "h": 281,
     "file": "img/forming/is-3rhmd-1270-90-480.webp",
-    "bytes": 31162
+    "bytes": 30976
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 93,
+   "h": 94,
    "file": "img/forming/is-3rhmd-1270-90-thumb.webp",
-   "bytes": 6836
+   "bytes": 6912
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrms-2050-190": {
-  "alt": "\u0130\u015fitan MRM-S 2050x190 motorized 3-roll plate roller, 6.7 ft",
+  "alt": "ISITAN MRM-S 2050x190 motorized 3-roll plate roller, 6.7 ft",
   "variants": [
    {
     "w": 800,
-    "h": 533,
+    "h": 537,
     "file": "img/forming/is-mrms-2050-190-800.webp",
-    "bytes": 44408
+    "bytes": 43788
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 322,
     "file": "img/forming/is-mrms-2050-190-480.webp",
-    "bytes": 23056
+    "bytes": 23490
    }
   ],
   "alpha": true,
@@ -13432,140 +13444,146 @@
    "w": 160,
    "h": 107,
    "file": "img/forming/is-mrms-2050-190-thumb.webp",
-   "bytes": 5372
+   "bytes": 5800
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrms-1050-150": {
-  "alt": "\u0130\u015fitan MRM-S 1050x150 motorized 3-roll plate roller, 3.4 ft",
+  "alt": "ISITAN MRM-S 1050x150 motorized 3-roll plate roller, 3.4 ft",
   "variants": [
    {
     "w": 800,
-    "h": 434,
+    "h": 440,
     "file": "img/forming/is-mrms-1050-150-800.webp",
-    "bytes": 44388
+    "bytes": 42940
    },
    {
     "w": 480,
-    "h": 260,
+    "h": 264,
     "file": "img/forming/is-mrms-1050-150-480.webp",
-    "bytes": 23000
+    "bytes": 23758
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 87,
+   "h": 88,
    "file": "img/forming/is-mrms-1050-150-thumb.webp",
-   "bytes": 5366
+   "bytes": 5682
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrms-1550-150": {
-  "alt": "\u0130\u015fitan MRM-S 1550x150 motorized 3-roll plate roller, 5.1 ft",
+  "alt": "ISITAN MRM-S 1550x150 motorized 3-roll plate roller, 5.1 ft",
   "variants": [
    {
     "w": 800,
-    "h": 434,
+    "h": 440,
     "file": "img/forming/is-mrms-1550-150-800.webp",
-    "bytes": 44486
+    "bytes": 43022
    },
    {
     "w": 480,
-    "h": 260,
+    "h": 264,
     "file": "img/forming/is-mrms-1550-150-480.webp",
-    "bytes": 23076
+    "bytes": 23854
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 87,
+   "h": 88,
    "file": "img/forming/is-mrms-1550-150-thumb.webp",
-   "bytes": 5354
+   "bytes": 5540
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrms-2550-190": {
-  "alt": "\u0130\u015fitan MRM-S 2550x190 motorized 3-roll plate roller, 8.4 ft",
+  "alt": "ISITAN MRM-S 2550x190 motorized 3-roll plate roller, 8.4 ft",
   "variants": [
    {
     "w": 800,
-    "h": 458,
+    "h": 463,
     "file": "img/forming/is-mrms-2550-190-800.webp",
-    "bytes": 40698
+    "bytes": 38964
    },
    {
     "w": 480,
-    "h": 275,
+    "h": 278,
     "file": "img/forming/is-mrms-2550-190-480.webp",
-    "bytes": 21150
+    "bytes": 21164
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 92,
+   "h": 93,
    "file": "img/forming/is-mrms-2550-190-thumb.webp",
-   "bytes": 4774
+   "bytes": 5190
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrms-3050-190": {
-  "alt": "\u0130\u015fitan MRM-S 3050x190 motorized 3-roll plate roller, 10 ft",
+  "alt": "ISITAN MRM-S 3050x190 motorized 3-roll plate roller, 10 ft",
   "variants": [
    {
     "w": 1200,
-    "h": 603,
+    "h": 610,
     "file": "img/forming/is-mrms-3050-190-1200.webp",
-    "bytes": 60162
+    "bytes": 60686
    },
    {
     "w": 800,
-    "h": 402,
+    "h": 407,
     "file": "img/forming/is-mrms-3050-190-800.webp",
-    "bytes": 38778
+    "bytes": 38142
    },
    {
     "w": 480,
-    "h": 241,
+    "h": 244,
     "file": "img/forming/is-mrms-3050-190-480.webp",
-    "bytes": 20084
+    "bytes": 20166
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 80,
+   "h": 81,
    "file": "img/forming/is-mrms-3050-190-thumb.webp",
-   "bytes": 4576
+   "bytes": 4900
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrms-composite": {
-  "alt": "\u0130\u015fitan MRM-S special model with segmented plastic-coated top roll for aluminum composite panels",
+  "alt": "ISITAN MRM-S special model with segmented plastic-coated top roll for aluminum composite panels",
   "variants": [
    {
+    "w": 1200,
+    "h": 530,
+    "file": "img/forming/is-mrms-composite-1200.webp",
+    "bytes": 65108
+   },
+   {
     "w": 800,
-    "h": 349,
+    "h": 353,
     "file": "img/forming/is-mrms-composite-800.webp",
-    "bytes": 45378
+    "bytes": 41896
    },
    {
     "w": 480,
-    "h": 209,
+    "h": 212,
     "file": "img/forming/is-mrms-composite-480.webp",
-    "bytes": 22962
+    "bytes": 22424
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 70,
+   "h": 71,
    "file": "img/forming/is-mrms-composite-thumb.webp",
-   "bytes": 5268
+   "bytes": 5426
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-mrms-panel": {
   "alt": "MRM-S \u2014 optional control panel with digital readout",
@@ -13574,7 +13592,7 @@
     "w": 480,
     "h": 472,
     "file": "img/forming/is-mrms-panel-480.webp",
-    "bytes": 26628
+    "bytes": 27256
    }
   ],
   "alpha": true,
@@ -13582,7 +13600,7 @@
    "w": 160,
    "h": 157,
    "file": "img/forming/is-mrms-panel-thumb.webp",
-   "bytes": 5414
+   "bytes": 5680
   }
  },
  "is-mrms-section-rolls": {
@@ -13592,7 +13610,7 @@
     "w": 480,
     "h": 685,
     "file": "img/forming/is-mrms-section-rolls-480.webp",
-    "bytes": 38282
+    "bytes": 39548
    }
   ],
   "alpha": true,
@@ -13600,7 +13618,7 @@
    "w": 112,
    "h": 160,
    "file": "img/forming/is-mrms-section-rolls-thumb.webp",
-   "bytes": 5064
+   "bytes": 5270
   }
  },
  "is-mrms-cone": {
@@ -13610,13 +13628,13 @@
     "w": 800,
     "h": 658,
     "file": "img/forming/is-mrms-cone-800.webp",
-    "bytes": 36896
+    "bytes": 37734
    },
    {
     "w": 480,
     "h": 395,
     "file": "img/forming/is-mrms-cone-480.webp",
-    "bytes": 19362
+    "bytes": 20234
    }
   ],
   "alpha": true,
@@ -13624,7 +13642,7 @@
    "w": 160,
    "h": 132,
    "file": "img/forming/is-mrms-cone-thumb.webp",
-   "bytes": 4034
+   "bytes": 4236
   }
  },
  "is-mrms-drop-end": {
@@ -13634,19 +13652,19 @@
     "w": 1200,
     "h": 896,
     "file": "img/forming/is-mrms-drop-end-1200.webp",
-    "bytes": 85564
+    "bytes": 88312
    },
    {
     "w": 800,
     "h": 597,
     "file": "img/forming/is-mrms-drop-end-800.webp",
-    "bytes": 48852
+    "bytes": 50976
    },
    {
     "w": 480,
     "h": 358,
     "file": "img/forming/is-mrms-drop-end-480.webp",
-    "bytes": 24684
+    "bytes": 25894
    }
   ],
   "alpha": true,
@@ -13654,7 +13672,7 @@
    "w": 160,
    "h": 119,
    "file": "img/forming/is-mrms-drop-end-thumb.webp",
-   "bytes": 5472
+   "bytes": 5816
   }
  },
  "is-mrms-delrin": {
@@ -13664,19 +13682,19 @@
     "w": 1200,
     "h": 720,
     "file": "img/forming/is-mrms-delrin-1200.webp",
-    "bytes": 67750
+    "bytes": 69434
    },
    {
     "w": 800,
     "h": 480,
     "file": "img/forming/is-mrms-delrin-800.webp",
-    "bytes": 40024
+    "bytes": 41800
    },
    {
     "w": 480,
     "h": 288,
     "file": "img/forming/is-mrms-delrin-480.webp",
-    "bytes": 19738
+    "bytes": 20924
    }
   ],
   "alpha": true,
@@ -13684,129 +13702,129 @@
    "w": 160,
    "h": 96,
    "file": "img/forming/is-mrms-delrin-thumb.webp",
-   "bytes": 4370
+   "bytes": 4612
   }
  },
  "is-irm-1550-140": {
-  "alt": "\u0130\u015fitan IRM 1550x140 motorized 3-roll plate roller, 5.1 ft",
+  "alt": "ISITAN IRM 1550x140 motorized 3-roll plate roller, 5.1 ft",
   "variants": [
    {
     "w": 1200,
-    "h": 610,
+    "h": 622,
     "file": "img/forming/is-irm-1550-140-1200.webp",
-    "bytes": 70556
+    "bytes": 87872
    },
    {
     "w": 800,
-    "h": 406,
+    "h": 415,
     "file": "img/forming/is-irm-1550-140-800.webp",
-    "bytes": 40254
+    "bytes": 53066
    },
    {
     "w": 480,
-    "h": 244,
+    "h": 249,
     "file": "img/forming/is-irm-1550-140-480.webp",
-    "bytes": 20166
+    "bytes": 26964
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 81,
+   "h": 83,
    "file": "img/forming/is-irm-1550-140-thumb.webp",
-   "bytes": 4580
+   "bytes": 6180
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-irm-1050-130": {
-  "alt": "\u0130\u015fitan IRM 1050x130 motorized 3-roll plate roller \u2014 compact cast-frame model",
+  "alt": "ISITAN IRM 1050x130 motorized 3-roll plate roller \u2014 compact cast-frame model",
   "variants": [
    {
     "w": 800,
-    "h": 497,
+    "h": 500,
     "file": "img/forming/is-irm-1050-130-800.webp",
-    "bytes": 50754
+    "bytes": 52784
    },
    {
     "w": 480,
-    "h": 298,
+    "h": 300,
     "file": "img/forming/is-irm-1050-130-480.webp",
-    "bytes": 28868
+    "bytes": 29482
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 99,
+   "h": 100,
    "file": "img/forming/is-irm-1050-130-thumb.webp",
-   "bytes": 6784
+   "bytes": 6992
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-irm-1270-140": {
-  "alt": "\u0130\u015fitan IRM 1270x140 motorized 3-roll plate roller, 4.2 ft",
+  "alt": "ISITAN IRM 1270x140 motorized 3-roll plate roller, 4.2 ft",
   "variants": [
    {
     "w": 800,
-    "h": 381,
+    "h": 425,
     "file": "img/forming/is-irm-1270-140-800.webp",
-    "bytes": 35948
+    "bytes": 50796
    },
    {
     "w": 480,
-    "h": 228,
+    "h": 255,
     "file": "img/forming/is-irm-1270-140-480.webp",
-    "bytes": 18566
+    "bytes": 27266
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 76,
+   "h": 85,
    "file": "img/forming/is-irm-1270-140-thumb.webp",
-   "bytes": 4420
+   "bytes": 6314
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-irm-2050-130": {
-  "alt": "\u0130\u015fitan IRM 2050x130 motorized 3-roll plate roller, 6.7 ft",
+  "alt": "ISITAN IRM 2050x130 motorized 3-roll plate roller, 6.7 ft",
   "variants": [
    {
     "w": 800,
-    "h": 335,
+    "h": 341,
     "file": "img/forming/is-irm-2050-130-800.webp",
-    "bytes": 45026
+    "bytes": 45922
    },
    {
     "w": 480,
-    "h": 201,
+    "h": 204,
     "file": "img/forming/is-irm-2050-130-480.webp",
-    "bytes": 22572
+    "bytes": 23520
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 67,
+   "h": 68,
    "file": "img/forming/is-irm-2050-130-thumb.webp",
-   "bytes": 4902
+   "bytes": 5430
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-irm-2550-130": {
-  "alt": "\u0130\u015fitan IRM 2550x140 motorized 3-roll plate roller, 8.4 ft",
+  "alt": "ISITAN IRM 2550x140 motorized 3-roll plate roller, 8.4 ft",
   "variants": [
    {
     "w": 800,
-    "h": 338,
+    "h": 340,
     "file": "img/forming/is-irm-2550-130-800.webp",
-    "bytes": 42694
+    "bytes": 43950
    },
    {
     "w": 480,
-    "h": 203,
+    "h": 204,
     "file": "img/forming/is-irm-2550-130-480.webp",
-    "bytes": 21844
+    "bytes": 23122
    }
   ],
   "alpha": true,
@@ -13814,9 +13832,9 @@
    "w": 160,
    "h": 68,
    "file": "img/forming/is-irm-2550-130-thumb.webp",
-   "bytes": 4900
+   "bytes": 5486
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-irm-drop-end": {
   "alt": "IRM \u2014 standard manual drop-end",
@@ -13825,19 +13843,19 @@
     "w": 1200,
     "h": 739,
     "file": "img/forming/is-irm-drop-end-1200.webp",
-    "bytes": 108916
+    "bytes": 111908
    },
    {
     "w": 800,
     "h": 493,
     "file": "img/forming/is-irm-drop-end-800.webp",
-    "bytes": 62290
+    "bytes": 65290
    },
    {
     "w": 480,
     "h": 296,
     "file": "img/forming/is-irm-drop-end-480.webp",
-    "bytes": 30168
+    "bytes": 31850
    }
   ],
   "alpha": true,
@@ -13845,23 +13863,23 @@
    "w": 160,
    "h": 99,
    "file": "img/forming/is-irm-drop-end-thumb.webp",
-   "bytes": 6634
+   "bytes": 7236
   }
  },
  "is-rm-1270-90": {
-  "alt": "\u0130\u015fitan RM 1270x90 motorized 3-roll plate roller with foot-pedal control",
+  "alt": "ISITAN RM 1270x90 motorized 3-roll plate roller with foot-pedal control",
   "variants": [
    {
     "w": 800,
-    "h": 493,
+    "h": 496,
     "file": "img/forming/is-rm-1270-90-800.webp",
-    "bytes": 65116
+    "bytes": 57766
    },
    {
     "w": 480,
-    "h": 296,
+    "h": 297,
     "file": "img/forming/is-rm-1270-90-480.webp",
-    "bytes": 33544
+    "bytes": 31364
    }
   ],
   "alpha": true,
@@ -13869,121 +13887,121 @@
    "w": 160,
    "h": 99,
    "file": "img/forming/is-rm-1270-90-thumb.webp",
-   "bytes": 7690
+   "bytes": 7588
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-rm-1050-90": {
-  "alt": "\u0130\u015fitan RM 1050x90 motorized 3-roll plate roller, 3.4 ft",
+  "alt": "ISITAN RM 1050x90 motorized 3-roll plate roller, 3.4 ft",
   "variants": [
    {
     "w": 800,
-    "h": 552,
+    "h": 559,
     "file": "img/forming/is-rm-1050-90-800.webp",
-    "bytes": 53810
+    "bytes": 57966
    },
    {
     "w": 480,
-    "h": 331,
+    "h": 335,
     "file": "img/forming/is-rm-1050-90-480.webp",
-    "bytes": 31362
+    "bytes": 32634
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 110,
+   "h": 112,
    "file": "img/forming/is-rm-1050-90-thumb.webp",
-   "bytes": 7514
+   "bytes": 7878
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-rm-1550-90": {
-  "alt": "\u0130\u015fitan RM 1550x90 motorized 3-roll plate roller, 5.1 ft",
+  "alt": "ISITAN RM 1550x90 motorized 3-roll plate roller, 5.1 ft",
   "variants": [
    {
     "w": 800,
-    "h": 447,
+    "h": 457,
     "file": "img/forming/is-rm-1550-90-800.webp",
-    "bytes": 55806
+    "bytes": 50352
    },
    {
     "w": 480,
-    "h": 268,
+    "h": 274,
     "file": "img/forming/is-rm-1550-90-480.webp",
-    "bytes": 29406
+    "bytes": 27706
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 89,
+   "h": 91,
    "file": "img/forming/is-rm-1550-90-thumb.webp",
-   "bytes": 7000
+   "bytes": 6952
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-rm-2050-95": {
-  "alt": "\u0130\u015fitan RM 2050x95 motorized 3-roll plate roller, 6.7 ft",
+  "alt": "ISITAN RM 2050x95 motorized 3-roll plate roller, 6.7 ft",
   "variants": [
    {
     "w": 1200,
-    "h": 532,
+    "h": 540,
     "file": "img/forming/is-rm-2050-95-1200.webp",
-    "bytes": 66168
+    "bytes": 71546
    },
    {
     "w": 800,
-    "h": 355,
+    "h": 360,
     "file": "img/forming/is-rm-2050-95-800.webp",
-    "bytes": 43134
+    "bytes": 45998
    },
    {
     "w": 480,
-    "h": 213,
+    "h": 216,
     "file": "img/forming/is-rm-2050-95-480.webp",
-    "bytes": 22620
+    "bytes": 25244
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 71,
+   "h": 72,
    "file": "img/forming/is-rm-2050-95-thumb.webp",
-   "bytes": 5560
+   "bytes": 6048
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-rm-drop-end": {
   "alt": "RM \u2014 standard manual drop-end",
   "variants": [
    {
     "w": 1200,
-    "h": 894,
+    "h": 887,
     "file": "img/forming/is-rm-drop-end-1200.webp",
-    "bytes": 134948
+    "bytes": 103142
    },
    {
     "w": 800,
-    "h": 596,
+    "h": 591,
     "file": "img/forming/is-rm-drop-end-800.webp",
-    "bytes": 80068
+    "bytes": 69762
    },
    {
     "w": 480,
-    "h": 358,
+    "h": 355,
     "file": "img/forming/is-rm-drop-end-480.webp",
-    "bytes": 40158
+    "bytes": 36898
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 118,
    "file": "img/forming/is-rm-drop-end-thumb.webp",
-   "bytes": 8736
+   "bytes": 8912
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-rm-safety-switch": {
   "alt": "RM \u2014 standard drop-end safety switch",
@@ -13992,7 +14010,7 @@
     "w": 480,
     "h": 341,
     "file": "img/forming/is-rm-safety-switch-480.webp",
-    "bytes": 21702
+    "bytes": 22202
    }
   ],
   "alpha": true,
@@ -14000,7 +14018,7 @@
    "w": 160,
    "h": 114,
    "file": "img/forming/is-rm-safety-switch-thumb.webp",
-   "bytes": 3966
+   "bytes": 4208
   }
  },
  "is-ir-1270-75": {
@@ -14201,63 +14219,63 @@
   }
  },
  "is-hibks-4": {
-  "alt": "\u0130\u015fitan HIBKS 4.0 hydraulic bead roller for sheet up to 8 ga",
+  "alt": "ISITAN HIBKS 4.0 hydraulic bead roller for sheet up to 8 ga",
   "variants": [
    {
     "w": 800,
-    "h": 680,
+    "h": 683,
     "file": "img/forming/is-hibks-4-800.webp",
-    "bytes": 44556
+    "bytes": 50308
    },
    {
     "w": 480,
-    "h": 408,
+    "h": 410,
     "file": "img/forming/is-hibks-4-480.webp",
-    "bytes": 25356
+    "bytes": 27062
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 136,
+   "h": 137,
    "file": "img/forming/is-hibks-4-thumb.webp",
-   "bytes": 6600
+   "bytes": 7282
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ibks-4": {
-  "alt": "\u0130\u015fitan IBKS 4.0 motorized bead roller with manual top-roll setting",
+  "alt": "ISITAN IBKS 4.0 motorized bead roller with manual top-roll setting",
   "variants": [
    {
     "w": 800,
-    "h": 603,
+    "h": 608,
     "file": "img/forming/is-ibks-4-800.webp",
-    "bytes": 56168
+    "bytes": 62172
    },
    {
     "w": 480,
-    "h": 362,
+    "h": 365,
     "file": "img/forming/is-ibks-4-480.webp",
-    "bytes": 27944
+    "bytes": 29924
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 121,
+   "h": 122,
    "file": "img/forming/is-ibks-4-thumb.webp",
-   "bytes": 6976
+   "bytes": 7112
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-hibks-25": {
-  "alt": "\u0130\u015fitan HIBKS 2.5 hydraulic bead roller for sheet up to 12 ga",
+  "alt": "ISITAN HIBKS 2.5 hydraulic bead roller for sheet up to 12 ga",
   "variants": [
    {
     "w": 480,
     "h": 477,
     "file": "img/forming/is-hibks-25-480.webp",
-    "bytes": 41950
+    "bytes": 39232
    }
   ],
   "alpha": true,
@@ -14265,24 +14283,24 @@
    "w": 160,
    "h": 159,
    "file": "img/forming/is-hibks-25-thumb.webp",
-   "bytes": 9708
+   "bytes": 9316
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ibks-25": {
-  "alt": "\u0130\u015fitan IBKS 2.5 motorized bead roller",
+  "alt": "ISITAN IBKS 2.5 motorized bead roller",
   "variants": [
    {
     "w": 800,
-    "h": 610,
+    "h": 612,
     "file": "img/forming/is-ibks-25-800.webp",
-    "bytes": 49872
+    "bytes": 54628
    },
    {
     "w": 480,
-    "h": 366,
+    "h": 367,
     "file": "img/forming/is-ibks-25-480.webp",
-    "bytes": 24534
+    "bytes": 26556
    }
   ],
   "alpha": true,
@@ -14290,80 +14308,80 @@
    "w": 160,
    "h": 122,
    "file": "img/forming/is-ibks-25-thumb.webp",
-   "bytes": 6108
+   "bytes": 6482
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-hibks-rolls-4": {
   "alt": "HIBKS / IBKS 4.0 \u2014 standard roll sets S1\u2013S4 and extra roll sets E1\u2013E8",
   "variants": [
    {
     "w": 1200,
-    "h": 847,
+    "h": 857,
     "file": "img/forming/is-hibks-rolls-4-1200.webp",
-    "bytes": 196742
+    "bytes": 186110
    },
    {
     "w": 800,
-    "h": 565,
+    "h": 572,
     "file": "img/forming/is-hibks-rolls-4-800.webp",
-    "bytes": 111456
+    "bytes": 109800
    },
    {
     "w": 480,
-    "h": 339,
+    "h": 343,
     "file": "img/forming/is-hibks-rolls-4-480.webp",
-    "bytes": 54322
+    "bytes": 51700
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 113,
+   "h": 114,
    "file": "img/forming/is-hibks-rolls-4-thumb.webp",
-   "bytes": 12784
+   "bytes": 11468
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-hibks-rolls-25": {
   "alt": "HIBKS / IBKS 2.5 \u2014 standard roll sets S1\u2013S4 and extra roll sets E1\u2013E8",
   "variants": [
    {
     "w": 1200,
-    "h": 803,
+    "h": 809,
     "file": "img/forming/is-hibks-rolls-25-1200.webp",
-    "bytes": 169736
+    "bytes": 155776
    },
    {
     "w": 800,
-    "h": 535,
+    "h": 539,
     "file": "img/forming/is-hibks-rolls-25-800.webp",
-    "bytes": 97586
+    "bytes": 95136
    },
    {
     "w": 480,
-    "h": 321,
+    "h": 324,
     "file": "img/forming/is-hibks-rolls-25-480.webp",
-    "bytes": 49806
+    "bytes": 48474
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 108,
    "file": "img/forming/is-hibks-rolls-25-thumb.webp",
-   "bytes": 11512
+   "bytes": 11138
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ibks-18": {
-  "alt": "\u0130\u015fitan IBKS 1.8 motorized bead roller \u2014 3 sets of standard rolls",
+  "alt": "ISITAN IBKS 1.8 motorized bead roller \u2014 3 sets of standard rolls",
   "variants": [
    {
     "w": 480,
-    "h": 474,
+    "h": 473,
     "file": "img/forming/is-ibks-18-480.webp",
-    "bytes": 29320
+    "bytes": 28524
    }
   ],
   "alpha": true,
@@ -14371,141 +14389,135 @@
    "w": 160,
    "h": 158,
    "file": "img/forming/is-ibks-18-thumb.webp",
-   "bytes": 7464
+   "bytes": 7488
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ikm-12": {
-  "alt": "\u0130\u015fitan IKM 1.2 motorized bead roller with 8 sets of standard rolls",
+  "alt": "ISITAN IKM 1.2 motorized bead roller with 8 sets of standard rolls",
   "variants": [
    {
-    "w": 463,
-    "h": 738,
-    "file": "img/forming/is-ikm-12-463.webp",
-    "bytes": 24818
+    "w": 418,
+    "h": 718,
+    "file": "img/forming/is-ikm-12-418.webp",
+    "bytes": 24290
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 100,
+   "w": 93,
    "h": 160,
    "file": "img/forming/is-ikm-12-thumb.webp",
-   "bytes": 3836
+   "bytes": 4084
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ikmp-12": {
-  "alt": "\u0130\u015fitan IKMP 1.2 motorized bead roller on floor stand",
+  "alt": "ISITAN IKMP 1.2 motorized bead roller on floor stand",
   "variants": [
    {
     "w": 480,
-    "h": 595,
+    "h": 588,
     "file": "img/forming/is-ikmp-12-480.webp",
-    "bytes": 43452
+    "bytes": 39744
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 129,
+   "w": 131,
    "h": 160,
    "file": "img/forming/is-ikmp-12-thumb.webp",
-   "bytes": 7566
+   "bytes": 7616
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ikmp-12p": {
-  "alt": "\u0130\u015fitan IKMP 1.2 P bead roller with pneumatic top shaft",
+  "alt": "ISITAN IKMP 1.2 P bead roller with pneumatic top shaft",
   "variants": [
    {
     "w": 480,
-    "h": 666,
+    "h": 663,
     "file": "img/forming/is-ikmp-12p-480.webp",
-    "bytes": 41128
+    "bytes": 45394
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 115,
+   "w": 116,
    "h": 160,
    "file": "img/forming/is-ikmp-12p-thumb.webp",
-   "bytes": 6898
+   "bytes": 7292
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ikm-rolls-extra": {
   "alt": "Extra roll sets for IKMP and IKM bead rollers",
   "variants": [
    {
-    "w": 800,
-    "h": 581,
-    "file": "img/forming/is-ikm-rolls-extra-800.webp",
-    "bytes": 111066
-   },
-   {
     "w": 480,
-    "h": 349,
+    "h": 359,
     "file": "img/forming/is-ikm-rolls-extra-480.webp",
-    "bytes": 59758
+    "bytes": 42396
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 116,
+   "h": 120,
    "file": "img/forming/is-ikm-rolls-extra-thumb.webp",
-   "bytes": 12566
+   "bytes": 9774
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ikm-rolls-std": {
   "alt": "Standard roll sets for IKMP and IKM bead rollers",
   "variants": [
    {
     "w": 480,
-    "h": 346,
+    "h": 348,
     "file": "img/forming/is-ikm-rolls-std-480.webp",
-    "bytes": 32968
+    "bytes": 39182
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 115,
+   "h": 116,
    "file": "img/forming/is-ikm-rolls-std-thumb.webp",
-   "bytes": 8142
+   "bytes": 10202
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-idk-5": {
-  "alt": "\u0130\u015fitan IDK-5 hydraulic circle cutting and flanging machine \u2014 discs up to 78.7\u2033 in 3/16\u2033 sheet",
+  "alt": "ISITAN IDK-5 hydraulic circle cutting and flanging machine \u2014 discs up to 78.7\u2033 in 3/16\u2033 sheet",
   "variants": [
    {
     "w": 1200,
-    "h": 606,
+    "h": 567,
     "file": "img/forming/is-idk-5-1200.webp",
-    "bytes": 77662
+    "bytes": 92564
    },
    {
     "w": 800,
-    "h": 404,
+    "h": 378,
     "file": "img/forming/is-idk-5-800.webp",
-    "bytes": 46514
+    "bytes": 55876
    },
    {
     "w": 480,
-    "h": 243,
+    "h": 227,
     "file": "img/forming/is-idk-5-480.webp",
-    "bytes": 24060
+    "bytes": 28598
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 81,
+   "h": 76,
    "file": "img/forming/is-idk-5-thumb.webp",
-   "bytes": 5734
+   "bytes": 6530
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-idk-5-clamp": {
   "alt": "IDK-5 \u2014 hydraulic clamping and cutting system",
@@ -14514,7 +14526,7 @@
     "w": 480,
     "h": 373,
     "file": "img/forming/is-idk-5-clamp-480.webp",
-    "bytes": 16224
+    "bytes": 16752
    }
   ],
   "alpha": true,
@@ -14522,7 +14534,7 @@
    "w": 160,
    "h": 124,
    "file": "img/forming/is-idk-5-clamp-thumb.webp",
-   "bytes": 3770
+   "bytes": 3900
   }
  },
  "is-idk-5-flanging": {
@@ -14532,7 +14544,7 @@
     "w": 480,
     "h": 393,
     "file": "img/forming/is-idk-5-flanging-480.webp",
-    "bytes": 21828
+    "bytes": 22492
    }
   ],
   "alpha": false,
@@ -14540,92 +14552,92 @@
    "w": 160,
    "h": 131,
    "file": "img/forming/is-idk-5-flanging-thumb.webp",
-   "bytes": 4790
+   "bytes": 5024
   }
  },
  "is-idk-35": {
-  "alt": "\u0130\u015fitan IDK-3.5 motorized circle cutting shear with pneumatic centre clamp",
+  "alt": "ISITAN IDK-3.5 motorized circle cutting shear with pneumatic centre clamp",
   "variants": [
    {
     "w": 800,
-    "h": 632,
+    "h": 568,
     "file": "img/forming/is-idk-35-800.webp",
-    "bytes": 73376
+    "bytes": 72710
    },
    {
     "w": 480,
-    "h": 379,
+    "h": 341,
     "file": "img/forming/is-idk-35-480.webp",
-    "bytes": 35680
+    "bytes": 37706
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 126,
+   "h": 114,
    "file": "img/forming/is-idk-35-thumb.webp",
-   "bytes": 7910
+   "bytes": 8594
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-idk-2": {
-  "alt": "\u0130\u015fitan IDK-2 heavy-duty motorized circle cutting machine",
+  "alt": "ISITAN IDK-2 heavy-duty motorized circle cutting machine",
   "variants": [
    {
     "w": 800,
-    "h": 487,
+    "h": 474,
     "file": "img/forming/is-idk-2-800.webp",
-    "bytes": 59242
+    "bytes": 58640
    },
    {
     "w": 480,
-    "h": 292,
+    "h": 284,
     "file": "img/forming/is-idk-2-480.webp",
-    "bytes": 30766
+    "bytes": 31206
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 97,
+   "h": 95,
    "file": "img/forming/is-idk-2-thumb.webp",
-   "bytes": 7108
+   "bytes": 7488
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-idk-18": {
-  "alt": "\u0130\u015fitan IDK-1.8 motorized circle cutter with foot pedal",
+  "alt": "ISITAN IDK-1.8 motorized circle cutter with foot pedal",
   "variants": [
    {
     "w": 480,
-    "h": 459,
+    "h": 454,
     "file": "img/forming/is-idk-18-480.webp",
-    "bytes": 39278
+    "bytes": 39768
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 153,
+   "h": 151,
    "file": "img/forming/is-idk-18-thumb.webp",
-   "bytes": 8924
+   "bytes": 8996
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ls-13p": {
-  "alt": "\u0130\u015fitan LS-13P pneumatic heavy-duty lock seaming machine",
+  "alt": "ISITAN LS-13P pneumatic heavy-duty lock seaming machine",
   "variants": [
    {
     "w": 800,
     "h": 873,
     "file": "img/forming/is-ls-13p-800.webp",
-    "bytes": 84286
+    "bytes": 87438
    },
    {
     "w": 480,
     "h": 524,
     "file": "img/forming/is-ls-13p-480.webp",
-    "bytes": 41398
+    "bytes": 43804
    }
   ],
   "alpha": true,
@@ -14633,7 +14645,7 @@
    "w": 147,
    "h": 160,
    "file": "img/forming/is-ls-13p-thumb.webp",
-   "bytes": 7538
+   "bytes": 8028
   }
  },
  "is-ls-13p-profile": {
@@ -14641,19 +14653,19 @@
   "variants": [
    {
     "w": 480,
-    "h": 377,
+    "h": 382,
     "file": "img/forming/is-ls-13p-profile-480.webp",
-    "bytes": 29030
+    "bytes": 23340
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 126,
+   "h": 127,
    "file": "img/forming/is-ls-13p-profile-thumb.webp",
-   "bytes": 6654
+   "bytes": 5684
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-ls-13p-seam": {
   "alt": "LS-13P \u2014 finished lock seam",
@@ -14662,7 +14674,7 @@
     "w": 480,
     "h": 361,
     "file": "img/forming/is-ls-13p-seam-480.webp",
-    "bytes": 5942
+    "bytes": 6084
    }
   ],
   "alpha": false,
@@ -14670,29 +14682,29 @@
    "w": 160,
    "h": 120,
    "file": "img/forming/is-ls-13p-seam-thumb.webp",
-   "bytes": 1246
+   "bytes": 1320
   }
  },
  "is-eb-1240-cnc": {
-  "alt": "\u0130\u015fitan Edgebender 1240 CNC 3-axis hydraulic press brake, 44 US tons \u00d7 4.2 ft",
+  "alt": "ISITAN Edgebender 1240 CNC 3-axis hydraulic press brake, 44 US tons \u00d7 4.2 ft",
   "variants": [
    {
     "w": 1200,
     "h": 1161,
     "file": "img/forming/is-eb-1240-cnc-1200.webp",
-    "bytes": 128052
+    "bytes": 133352
    },
    {
     "w": 800,
     "h": 774,
     "file": "img/forming/is-eb-1240-cnc-800.webp",
-    "bytes": 73318
+    "bytes": 76690
    },
    {
     "w": 480,
     "h": 464,
     "file": "img/forming/is-eb-1240-cnc-480.webp",
-    "bytes": 35846
+    "bytes": 37730
    }
   ],
   "alpha": true,
@@ -14700,7 +14712,7 @@
    "w": 160,
    "h": 155,
    "file": "img/forming/is-eb-1240-cnc-thumb.webp",
-   "bytes": 8316
+   "bytes": 8830
   }
  },
  "is-eb-cnc-backgauge": {
@@ -14710,7 +14722,7 @@
     "w": 480,
     "h": 321,
     "file": "img/forming/is-eb-cnc-backgauge-480.webp",
-    "bytes": 16790
+    "bytes": 17470
    }
   ],
   "alpha": true,
@@ -14718,7 +14730,7 @@
    "w": 160,
    "h": 107,
    "file": "img/forming/is-eb-cnc-backgauge-thumb.webp",
-   "bytes": 3540
+   "bytes": 3756
   }
  },
  "is-eb-cnc-hydraulics": {
@@ -14728,7 +14740,7 @@
     "w": 480,
     "h": 320,
     "file": "img/forming/is-eb-cnc-hydraulics-480.webp",
-    "bytes": 20336
+    "bytes": 21212
    }
   ],
   "alpha": true,
@@ -14736,7 +14748,7 @@
    "w": 160,
    "h": 107,
    "file": "img/forming/is-eb-cnc-hydraulics-thumb.webp",
-   "bytes": 4346
+   "bytes": 4442
   }
  },
  "is-eb-cnc-promecam": {
@@ -14746,7 +14758,7 @@
     "w": 480,
     "h": 320,
     "file": "img/forming/is-eb-cnc-promecam-480.webp",
-    "bytes": 12026
+    "bytes": 12418
    }
   ],
   "alpha": true,
@@ -14754,7 +14766,7 @@
    "w": 160,
    "h": 107,
    "file": "img/forming/is-eb-cnc-promecam-thumb.webp",
-   "bytes": 2814
+   "bytes": 2914
   }
  },
  "is-eb-cnc-supports": {
@@ -14762,64 +14774,64 @@
   "variants": [
    {
     "w": 480,
-    "h": 587,
+    "h": 326,
     "file": "img/forming/is-eb-cnc-supports-480.webp",
-    "bytes": 34428
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 131,
-   "h": 160,
-   "file": "img/forming/is-eb-cnc-supports-thumb.webp",
-   "bytes": 5394
-  }
- },
- "is-eb-2160": {
-  "alt": "\u0130\u015fitan Edgebender 2160 NC 2-axis hydraulic press brake, 66 US tons \u00d7 6.9 ft",
-  "variants": [
-   {
-    "w": 800,
-    "h": 686,
-    "file": "img/forming/is-eb-2160-800.webp",
-    "bytes": 64952
-   },
-   {
-    "w": 480,
-    "h": 412,
-    "file": "img/forming/is-eb-2160-480.webp",
-    "bytes": 36242
+    "bytes": 19072
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 137,
+   "h": 109,
+   "file": "img/forming/is-eb-cnc-supports-thumb.webp",
+   "bytes": 4100
+  }
+ },
+ "is-eb-2160": {
+  "alt": "ISITAN Edgebender 2160 NC 2-axis hydraulic press brake, 66 US tons \u00d7 6.9 ft",
+  "variants": [
+   {
+    "w": 800,
+    "h": 689,
+    "file": "img/forming/is-eb-2160-800.webp",
+    "bytes": 67080
+   },
+   {
+    "w": 480,
+    "h": 413,
+    "file": "img/forming/is-eb-2160-480.webp",
+    "bytes": 35090
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 138,
    "file": "img/forming/is-eb-2160-thumb.webp",
-   "bytes": 7666
+   "bytes": 8088
   },
-  "cut": "params"
+  "cut": "birefnet"
  },
  "is-eb-1230": {
-  "alt": "\u0130\u015fitan Edgebender 1230 NC 2-axis hydraulic press brake, 33 US tons \u00d7 4.2 ft",
+  "alt": "ISITAN Edgebender 1230 NC 2-axis hydraulic press brake, 33 US tons \u00d7 4.2 ft",
   "variants": [
    {
     "w": 1200,
     "h": 1475,
     "file": "img/forming/is-eb-1230-1200.webp",
-    "bytes": 137558
+    "bytes": 142262
    },
    {
     "w": 800,
     "h": 984,
     "file": "img/forming/is-eb-1230-800.webp",
-    "bytes": 82274
+    "bytes": 85874
    },
    {
     "w": 480,
     "h": 590,
     "file": "img/forming/is-eb-1230-480.webp",
-    "bytes": 41196
+    "bytes": 43544
    }
   ],
   "alpha": true,
@@ -14827,74 +14839,68 @@
    "w": 130,
    "h": 160,
    "file": "img/forming/is-eb-1230-thumb.webp",
-   "bytes": 6744
+   "bytes": 7150
   }
  },
  "is-eb-1540": {
-  "alt": "\u0130\u015fitan Edgebender 1540 NC hydraulic press brake, 44 US tons \u00d7 5.1 ft",
+  "alt": "ISITAN Edgebender 1540 NC hydraulic press brake, 44 US tons \u00d7 5.1 ft",
   "variants": [
    {
     "w": 480,
-    "h": 464,
+    "h": 460,
     "file": "img/forming/is-eb-1540-480.webp",
-    "bytes": 36794
+    "bytes": 33724
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 155,
+   "h": 153,
    "file": "img/forming/is-eb-1540-thumb.webp",
-   "bytes": 7828
+   "bytes": 7736
   },
-  "cut": "params"
+  "cut": "birefnet"
  },
  "is-eb-nc-bending": {
   "alt": "Edgebender NC \u2014 bending a sheet behind the Leuze light guard",
   "variants": [
    {
-    "w": 1200,
-    "h": 1475,
-    "file": "img/forming/is-eb-nc-bending-1200.webp",
-    "bytes": 137558
-   },
-   {
-    "w": 800,
-    "h": 984,
-    "file": "img/forming/is-eb-nc-bending-800.webp",
-    "bytes": 82274
-   },
-   {
-    "w": 480,
-    "h": 590,
-    "file": "img/forming/is-eb-nc-bending-480.webp",
-    "bytes": 41196
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 130,
-   "h": 160,
-   "file": "img/forming/is-eb-nc-bending-thumb.webp",
-   "bytes": 6744
-  }
- },
- "is-eb-nc-backgauge": {
-  "alt": "Edgebender NC \u2014 motorized X backgauge fingers on linear guides",
-  "variants": [
-   {
     "w": 480,
     "h": 289,
-    "file": "img/forming/is-eb-nc-backgauge-480.webp",
-    "bytes": 26320
+    "file": "img/forming/is-eb-nc-bending-480.webp",
+    "bytes": 27400
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
    "h": 96,
+   "file": "img/forming/is-eb-nc-bending-thumb.webp",
+   "bytes": 5340
+  }
+ },
+ "is-eb-nc-backgauge": {
+  "alt": "Edgebender NC \u2014 motorized X backgauge fingers on linear guides",
+  "variants": [
+   {
+    "w": 800,
+    "h": 550,
+    "file": "img/forming/is-eb-nc-backgauge-800.webp",
+    "bytes": 37172
+   },
+   {
+    "w": 480,
+    "h": 330,
+    "file": "img/forming/is-eb-nc-backgauge-480.webp",
+    "bytes": 22144
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 110,
    "file": "img/forming/is-eb-nc-backgauge-thumb.webp",
-   "bytes": 5154
+   "bytes": 4060
   }
  },
  "is-eb-nc-promecam": {
@@ -14904,7 +14910,7 @@
     "w": 480,
     "h": 306,
     "file": "img/forming/is-eb-nc-promecam-480.webp",
-    "bytes": 16736
+    "bytes": 17474
    }
   ],
   "alpha": false,
@@ -14912,7 +14918,7 @@
    "w": 160,
    "h": 102,
    "file": "img/forming/is-eb-nc-promecam-thumb.webp",
-   "bytes": 3582
+   "bytes": 3772
   }
  },
  "is-eb-nc-lightguard": {
@@ -14922,7 +14928,7 @@
     "w": 480,
     "h": 380,
     "file": "img/forming/is-eb-nc-lightguard-480.webp",
-    "bytes": 28034
+    "bytes": 28848
    }
   ],
   "alpha": true,
@@ -14930,7 +14936,7 @@
    "w": 160,
    "h": 127,
    "file": "img/forming/is-eb-nc-lightguard-thumb.webp",
-   "bytes": 5456
+   "bytes": 5702
   }
  },
  "is-eb-nc-torsion": {
@@ -14940,7 +14946,7 @@
     "w": 480,
     "h": 386,
     "file": "img/forming/is-eb-nc-torsion-480.webp",
-    "bytes": 9646
+    "bytes": 9956
    }
   ],
   "alpha": false,
@@ -14948,7 +14954,7 @@
    "w": 160,
    "h": 129,
    "file": "img/forming/is-eb-nc-torsion-thumb.webp",
-   "bytes": 2094
+   "bytes": 2216
   }
  },
  "is-eb-nc-ballscrew": {
@@ -14958,7 +14964,7 @@
     "w": 480,
     "h": 411,
     "file": "img/forming/is-eb-nc-ballscrew-480.webp",
-    "bytes": 24606
+    "bytes": 25242
    }
   ],
   "alpha": true,
@@ -14966,7 +14972,7 @@
    "w": 160,
    "h": 137,
    "file": "img/forming/is-eb-nc-ballscrew-thumb.webp",
-   "bytes": 4844
+   "bytes": 5094
   }
  },
  "is-eb-nc-screen": {
@@ -14976,7 +14982,7 @@
     "w": 480,
     "h": 284,
     "file": "img/forming/is-eb-nc-screen-480.webp",
-    "bytes": 16242
+    "bytes": 16760
    }
   ],
   "alpha": false,
@@ -14984,7 +14990,7 @@
    "w": 160,
    "h": 95,
    "file": "img/forming/is-eb-nc-screen-thumb.webp",
-   "bytes": 2594
+   "bytes": 2706
   }
  },
  "is-eb-nc-tooling-screen": {
@@ -14994,13 +15000,13 @@
     "w": 800,
     "h": 437,
     "file": "img/forming/is-eb-nc-tooling-screen-800.webp",
-    "bytes": 17792
+    "bytes": 18374
    },
    {
     "w": 480,
     "h": 262,
     "file": "img/forming/is-eb-nc-tooling-screen-480.webp",
-    "bytes": 10352
+    "bytes": 10672
    }
   ],
   "alpha": false,
@@ -15008,7 +15014,7 @@
    "w": 160,
    "h": 87,
    "file": "img/forming/is-eb-nc-tooling-screen-thumb.webp",
-   "bytes": 1802
+   "bytes": 1888
   }
  },
  "is-eb-nc-yaxis": {
@@ -15018,7 +15024,7 @@
     "w": 480,
     "h": 378,
     "file": "img/forming/is-eb-nc-yaxis-480.webp",
-    "bytes": 12500
+    "bytes": 13084
    }
   ],
   "alpha": true,
@@ -15026,7 +15032,7 @@
    "w": 160,
    "h": 126,
    "file": "img/forming/is-eb-nc-yaxis-thumb.webp",
-   "bytes": 2778
+   "bytes": 2882
   }
  },
  "is-eb-nc-angle": {
@@ -15036,7 +15042,7 @@
     "w": 480,
     "h": 393,
     "file": "img/forming/is-eb-nc-angle-480.webp",
-    "bytes": 35312
+    "bytes": 36144
    }
   ],
   "alpha": true,
@@ -15044,7 +15050,7 @@
    "w": 160,
    "h": 131,
    "file": "img/forming/is-eb-nc-angle-thumb.webp",
-   "bytes": 6816
+   "bytes": 6946
   }
  },
  "is-eb-nc-interface": {
@@ -15054,7 +15060,7 @@
     "w": 480,
     "h": 327,
     "file": "img/forming/is-eb-nc-interface-480.webp",
-    "bytes": 11216
+    "bytes": 11602
    }
   ],
   "alpha": false,
@@ -15062,29 +15068,29 @@
    "w": 160,
    "h": 109,
    "file": "img/forming/is-eb-nc-interface-thumb.webp",
-   "bytes": 2336
+   "bytes": 2448
   }
  },
  "is-sfb-38-cnc-a5": {
-  "alt": "\u0130\u015fitan SFB 38-CNC/A5 5-axis servo CNC mandrel tube bender with 21\u2033 touchscreen control",
+  "alt": "ISITAN SFB 38-CNC/A5 5-axis servo CNC mandrel tube bender with 21\u2033 touchscreen control",
   "variants": [
    {
     "w": 1200,
     "h": 669,
     "file": "img/forming/is-sfb-38-cnc-a5-1200.webp",
-    "bytes": 143830
+    "bytes": 148676
    },
    {
     "w": 800,
     "h": 446,
     "file": "img/forming/is-sfb-38-cnc-a5-800.webp",
-    "bytes": 81106
+    "bytes": 85790
    },
    {
     "w": 480,
     "h": 268,
     "file": "img/forming/is-sfb-38-cnc-a5-480.webp",
-    "bytes": 38532
+    "bytes": 39614
    }
   ],
   "alpha": true,
@@ -15092,133 +15098,133 @@
    "w": 160,
    "h": 89,
    "file": "img/forming/is-sfb-38-cnc-a5-thumb.webp",
-   "bytes": 7914
+   "bytes": 8052
   }
  },
  "is-sfb-38-cnc": {
-  "alt": "\u0130\u015fitan SFB 38-CNC/A3 CNC mandrel tube bender, \u00d81-1/2\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 38-CNC/A3 CNC mandrel tube bender, \u00d81-1/2\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 315,
+    "h": 320,
     "file": "img/forming/is-sfb-38-cnc-800.webp",
-    "bytes": 42422
+    "bytes": 45244
    },
    {
     "w": 480,
-    "h": 189,
+    "h": 192,
     "file": "img/forming/is-sfb-38-cnc-480.webp",
-    "bytes": 21724
+    "bytes": 22920
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 63,
+   "h": 64,
    "file": "img/forming/is-sfb-38-cnc-thumb.webp",
-   "bytes": 4928
+   "bytes": 5176
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-38-cnc-rear": {
-  "alt": "\u0130\u015fitan SFB 38-CNC \u2014 bending head, servo rotation and feed axes",
+  "alt": "ISITAN SFB 38-CNC \u2014 bending head, servo rotation and feed axes",
   "variants": [
    {
     "w": 800,
-    "h": 449,
+    "h": 454,
     "file": "img/forming/is-sfb-38-cnc-rear-800.webp",
-    "bytes": 65178
+    "bytes": 71942
    },
    {
     "w": 480,
-    "h": 270,
+    "h": 272,
     "file": "img/forming/is-sfb-38-cnc-rear-480.webp",
-    "bytes": 33932
+    "bytes": 36930
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 90,
+   "h": 91,
    "file": "img/forming/is-sfb-38-cnc-rear-thumb.webp",
-   "bytes": 7426
+   "bytes": 8058
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-51-cnc": {
-  "alt": "\u0130\u015fitan SFB 51-CNC/A3 CNC mandrel tube bender, \u00d82\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 51-CNC/A3 CNC mandrel tube bender, \u00d82\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 390,
+    "h": 395,
     "file": "img/forming/is-sfb-51-cnc-800.webp",
-    "bytes": 61528
+    "bytes": 64974
    },
    {
     "w": 480,
-    "h": 234,
+    "h": 237,
     "file": "img/forming/is-sfb-51-cnc-480.webp",
-    "bytes": 31128
+    "bytes": 33476
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 78,
+   "h": 79,
    "file": "img/forming/is-sfb-51-cnc-thumb.webp",
-   "bytes": 6684
+   "bytes": 6982
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-76-cnc": {
-  "alt": "\u0130\u015fitan SFB 76-CNC/A3 CNC mandrel pipe bender, \u00d83\u2033 \u00d7 8 ga",
+  "alt": "ISITAN SFB 76-CNC/A3 CNC mandrel pipe bender, \u00d83\u2033 \u00d7 8 ga",
   "variants": [
    {
     "w": 800,
-    "h": 328,
+    "h": 333,
     "file": "img/forming/is-sfb-76-cnc-800.webp",
-    "bytes": 49008
+    "bytes": 51164
    },
    {
     "w": 480,
-    "h": 197,
+    "h": 200,
     "file": "img/forming/is-sfb-76-cnc-480.webp",
-    "bytes": 25018
+    "bytes": 26582
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 66,
+   "h": 67,
    "file": "img/forming/is-sfb-76-cnc-thumb.webp",
-   "bytes": 5426
+   "bytes": 5592
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-90-cnc": {
-  "alt": "\u0130\u015fitan SFB 90-CNC/A3 CNC mandrel pipe bender, \u00d83-1/2\u2033 \u00d7 8 ga",
+  "alt": "ISITAN SFB 90-CNC/A3 CNC mandrel pipe bender, \u00d83-1/2\u2033 \u00d7 8 ga",
   "variants": [
    {
     "w": 800,
-    "h": 368,
+    "h": 373,
     "file": "img/forming/is-sfb-90-cnc-800.webp",
-    "bytes": 54706
+    "bytes": 57718
    },
    {
     "w": 480,
-    "h": 221,
+    "h": 224,
     "file": "img/forming/is-sfb-90-cnc-480.webp",
-    "bytes": 27408
+    "bytes": 29446
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 74,
+   "h": 75,
    "file": "img/forming/is-sfb-90-cnc-thumb.webp",
-   "bytes": 5826
+   "bytes": 5998
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-cnc-unit": {
   "alt": "SFB 38-CNC with the mobile 21\u2033 touchscreen CNC control unit",
@@ -15227,19 +15233,19 @@
     "w": 1200,
     "h": 534,
     "file": "img/forming/is-sfb-cnc-unit-1200.webp",
-    "bytes": 118064
+    "bytes": 121582
    },
    {
     "w": 800,
     "h": 356,
     "file": "img/forming/is-sfb-cnc-unit-800.webp",
-    "bytes": 64364
+    "bytes": 67220
    },
    {
     "w": 480,
     "h": 214,
     "file": "img/forming/is-sfb-cnc-unit-480.webp",
-    "bytes": 30468
+    "bytes": 30984
    }
   ],
   "alpha": true,
@@ -15247,7 +15253,7 @@
    "w": 160,
    "h": 71,
    "file": "img/forming/is-sfb-cnc-unit-thumb.webp",
-   "bytes": 6342
+   "bytes": 6406
   }
  },
  "is-sfb-cnc-screen": {
@@ -15257,7 +15263,7 @@
     "w": 480,
     "h": 270,
     "file": "img/forming/is-sfb-cnc-screen-480.webp",
-    "bytes": 9200
+    "bytes": 9462
    }
   ],
   "alpha": false,
@@ -15265,7 +15271,7 @@
    "w": 160,
    "h": 90,
    "file": "img/forming/is-sfb-cnc-screen-thumb.webp",
-   "bytes": 1944
+   "bytes": 2002
   }
  },
  "is-sfb-cnc-head": {
@@ -15275,7 +15281,7 @@
     "w": 480,
     "h": 323,
     "file": "img/forming/is-sfb-cnc-head-480.webp",
-    "bytes": 42880
+    "bytes": 44192
    }
   ],
   "alpha": true,
@@ -15283,7 +15289,7 @@
    "w": 160,
    "h": 108,
    "file": "img/forming/is-sfb-cnc-head-thumb.webp",
-   "bytes": 7964
+   "bytes": 8130
   }
  },
  "is-sfb-cnc-mandrel": {
@@ -15293,7 +15299,7 @@
     "w": 480,
     "h": 269,
     "file": "img/forming/is-sfb-cnc-mandrel-480.webp",
-    "bytes": 17436
+    "bytes": 17970
    }
   ],
   "alpha": true,
@@ -15301,7 +15307,7 @@
    "w": 160,
    "h": 90,
    "file": "img/forming/is-sfb-cnc-mandrel-thumb.webp",
-   "bytes": 3500
+   "bytes": 3624
   }
  },
  "is-sfb-cnc-cooler": {
@@ -15311,7 +15317,7 @@
     "w": 480,
     "h": 320,
     "file": "img/forming/is-sfb-cnc-cooler-480.webp",
-    "bytes": 26550
+    "bytes": 27106
    }
   ],
   "alpha": true,
@@ -15319,7 +15325,7 @@
    "w": 160,
    "h": 107,
    "file": "img/forming/is-sfb-cnc-cooler-thumb.webp",
-   "bytes": 5640
+   "bytes": 5934
   }
  },
  "is-sfb-cnc-part-sofa": {
@@ -15329,7 +15335,7 @@
     "w": 462,
     "h": 340,
     "file": "img/forming/is-sfb-cnc-part-sofa-462.webp",
-    "bytes": 40762
+    "bytes": 42444
    }
   ],
   "alpha": true,
@@ -15337,7 +15343,7 @@
    "w": 160,
    "h": 118,
    "file": "img/forming/is-sfb-cnc-part-sofa-thumb.webp",
-   "bytes": 8500
+   "bytes": 8822
   }
  },
  "is-sfb-cnc-part-fitness": {
@@ -15347,7 +15353,7 @@
     "w": 480,
     "h": 321,
     "file": "img/forming/is-sfb-cnc-part-fitness-480.webp",
-    "bytes": 38034
+    "bytes": 39256
    }
   ],
   "alpha": true,
@@ -15355,79 +15361,79 @@
    "w": 160,
    "h": 107,
    "file": "img/forming/is-sfb-cnc-part-fitness-thumb.webp",
-   "bytes": 6956
+   "bytes": 7036
   }
  },
  "is-sfb-90-nc-c": {
-  "alt": "\u0130\u015fitan SFB 90-NC/C NC mandrel pipe bender with servo-rotation carrier, \u00d83-1/2\u2033 \u00d7 8 ga",
+  "alt": "ISITAN SFB 90-NC/C NC mandrel pipe bender with servo-rotation carrier, \u00d83-1/2\u2033 \u00d7 8 ga",
   "variants": [
    {
     "w": 800,
-    "h": 335,
+    "h": 340,
     "file": "img/forming/is-sfb-90-nc-c-800.webp",
-    "bytes": 39814
+    "bytes": 46626
    },
    {
     "w": 480,
-    "h": 201,
+    "h": 204,
     "file": "img/forming/is-sfb-90-nc-c-480.webp",
-    "bytes": 20832
+    "bytes": 23542
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 67,
+   "h": 68,
    "file": "img/forming/is-sfb-90-nc-c-thumb.webp",
-   "bytes": 4512
+   "bytes": 5106
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-51-nc-c": {
-  "alt": "\u0130\u015fitan SFB 51-NC/C NC mandrel tube bender with carrier, \u00d82\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 51-NC/C NC mandrel tube bender with carrier, \u00d82\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 355,
+    "h": 359,
     "file": "img/forming/is-sfb-51-nc-c-800.webp",
-    "bytes": 43156
+    "bytes": 48284
    },
    {
     "w": 480,
-    "h": 213,
+    "h": 215,
     "file": "img/forming/is-sfb-51-nc-c-480.webp",
-    "bytes": 21968
+    "bytes": 24524
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 71,
+   "h": 72,
    "file": "img/forming/is-sfb-51-nc-c-thumb.webp",
-   "bytes": 4984
+   "bytes": 5654
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-38-nc-c": {
-  "alt": "\u0130\u015fitan SFB 38-NC/C NC mandrel tube bender with carrier, \u00d81-1/2\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 38-NC/C NC mandrel tube bender with carrier, \u00d81-1/2\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 1200,
     "h": 394,
     "file": "img/forming/is-sfb-38-nc-c-1200.webp",
-    "bytes": 61570
+    "bytes": 62972
    },
    {
     "w": 800,
     "h": 262,
     "file": "img/forming/is-sfb-38-nc-c-800.webp",
-    "bytes": 35034
+    "bytes": 35786
    },
    {
     "w": 480,
     "h": 157,
     "file": "img/forming/is-sfb-38-nc-c-480.webp",
-    "bytes": 18224
+    "bytes": 18472
    }
   ],
   "alpha": true,
@@ -15435,7 +15441,7 @@
    "w": 160,
    "h": 52,
    "file": "img/forming/is-sfb-38-nc-c-thumb.webp",
-   "bytes": 4132
+   "bytes": 4390
   }
  },
  "is-sfb-nc-c-carrier": {
@@ -15445,7 +15451,7 @@
     "w": 480,
     "h": 278,
     "file": "img/forming/is-sfb-nc-c-carrier-480.webp",
-    "bytes": 23806
+    "bytes": 24412
    }
   ],
   "alpha": true,
@@ -15453,7 +15459,7 @@
    "w": 160,
    "h": 93,
    "file": "img/forming/is-sfb-nc-c-carrier-thumb.webp",
-   "bytes": 4728
+   "bytes": 4860
   }
  },
  "is-sfb-nc-c-servo": {
@@ -15463,7 +15469,7 @@
     "w": 480,
     "h": 280,
     "file": "img/forming/is-sfb-nc-c-servo-480.webp",
-    "bytes": 25050
+    "bytes": 26064
    }
   ],
   "alpha": true,
@@ -15471,48 +15477,48 @@
    "w": 160,
    "h": 93,
    "file": "img/forming/is-sfb-nc-c-servo-thumb.webp",
-   "bytes": 4590
+   "bytes": 4684
   }
  },
  "is-sfb-90-nc": {
-  "alt": "\u0130\u015fitan SFB 90-NC NC mandrel pipe bender, \u00d83-1/2\u2033 \u00d7 8 ga",
+  "alt": "ISITAN SFB 90-NC NC mandrel pipe bender, \u00d83-1/2\u2033 \u00d7 8 ga",
   "variants": [
    {
     "w": 800,
-    "h": 503,
+    "h": 500,
     "file": "img/forming/is-sfb-90-nc-800.webp",
-    "bytes": 68476
+    "bytes": 67160
    },
    {
     "w": 480,
-    "h": 302,
+    "h": 300,
     "file": "img/forming/is-sfb-90-nc-480.webp",
-    "bytes": 34084
+    "bytes": 34950
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 101,
+   "h": 100,
    "file": "img/forming/is-sfb-90-nc-thumb.webp",
-   "bytes": 7518
+   "bytes": 8148
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-76-nc": {
-  "alt": "\u0130\u015fitan SFB 76-NC NC mandrel pipe bender, \u00d83\u2033 \u00d7 8 ga",
+  "alt": "ISITAN SFB 76-NC NC mandrel pipe bender, \u00d83\u2033 \u00d7 8 ga",
   "variants": [
    {
     "w": 800,
     "h": 500,
     "file": "img/forming/is-sfb-76-nc-800.webp",
-    "bytes": 64838
+    "bytes": 68206
    },
    {
     "w": 480,
     "h": 300,
     "file": "img/forming/is-sfb-76-nc-480.webp",
-    "bytes": 32810
+    "bytes": 35350
    }
   ],
   "alpha": true,
@@ -15520,109 +15526,109 @@
    "w": 160,
    "h": 100,
    "file": "img/forming/is-sfb-76-nc-thumb.webp",
-   "bytes": 7322
+   "bytes": 8206
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-65-nc": {
-  "alt": "\u0130\u015fitan SFB 65-NC NC mandrel tube bender, \u00d82-1/2\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 65-NC NC mandrel tube bender, \u00d82-1/2\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 355,
+    "h": 363,
     "file": "img/forming/is-sfb-65-nc-800.webp",
-    "bytes": 50676
+    "bytes": 51172
    },
    {
     "w": 480,
-    "h": 213,
+    "h": 218,
     "file": "img/forming/is-sfb-65-nc-480.webp",
-    "bytes": 26512
+    "bytes": 26672
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 71,
+   "h": 73,
    "file": "img/forming/is-sfb-65-nc-thumb.webp",
-   "bytes": 5948
+   "bytes": 6156
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-51-nc": {
-  "alt": "\u0130\u015fitan SFB 51-NC NC mandrel tube bender, \u00d82\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 51-NC NC mandrel tube bender, \u00d82\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 442,
+    "h": 446,
     "file": "img/forming/is-sfb-51-nc-800.webp",
-    "bytes": 56080
+    "bytes": 60706
    },
    {
     "w": 480,
-    "h": 265,
+    "h": 267,
     "file": "img/forming/is-sfb-51-nc-480.webp",
-    "bytes": 28732
+    "bytes": 31428
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 88,
+   "h": 89,
    "file": "img/forming/is-sfb-51-nc-thumb.webp",
-   "bytes": 6428
+   "bytes": 6802
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-38-nc": {
-  "alt": "\u0130\u015fitan SFB 38-NC NC mandrel tube bender, \u00d81-1/2\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 38-NC NC mandrel tube bender, \u00d81-1/2\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 375,
+    "h": 380,
     "file": "img/forming/is-sfb-38-nc-800.webp",
-    "bytes": 60324
+    "bytes": 61940
    },
    {
     "w": 480,
-    "h": 225,
+    "h": 228,
     "file": "img/forming/is-sfb-38-nc-480.webp",
-    "bytes": 31092
+    "bytes": 32266
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 75,
+   "h": 76,
    "file": "img/forming/is-sfb-38-nc-thumb.webp",
-   "bytes": 6920
+   "bytes": 7290
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-38-nc-carrier": {
-  "alt": "\u0130\u015fitan SFB 38-NC with the optional manual carrier",
+  "alt": "ISITAN SFB 38-NC with the optional manual carrier",
   "variants": [
    {
     "w": 800,
-    "h": 267,
+    "h": 273,
     "file": "img/forming/is-sfb-38-nc-carrier-800.webp",
-    "bytes": 41298
+    "bytes": 42720
    },
    {
     "w": 480,
-    "h": 160,
+    "h": 164,
     "file": "img/forming/is-sfb-38-nc-carrier-480.webp",
-    "bytes": 20938
+    "bytes": 22014
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 53,
+   "h": 55,
    "file": "img/forming/is-sfb-38-nc-carrier-thumb.webp",
-   "bytes": 4684
+   "bytes": 4946
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-nc-reducer": {
   "alt": "SFB 65-NC \u2014 electric bending drive with reducer and 10\u2033 touchscreen NC",
@@ -15631,19 +15637,19 @@
     "w": 1200,
     "h": 938,
     "file": "img/forming/is-sfb-nc-reducer-1200.webp",
-    "bytes": 153488
+    "bytes": 157966
    },
    {
     "w": 800,
     "h": 625,
     "file": "img/forming/is-sfb-nc-reducer-800.webp",
-    "bytes": 86064
+    "bytes": 89626
    },
    {
     "w": 480,
     "h": 375,
     "file": "img/forming/is-sfb-nc-reducer-480.webp",
-    "bytes": 40534
+    "bytes": 41930
    }
   ],
   "alpha": true,
@@ -15651,7 +15657,7 @@
    "w": 160,
    "h": 125,
    "file": "img/forming/is-sfb-nc-reducer-thumb.webp",
-   "bytes": 8298
+   "bytes": 8416
   }
  },
  "is-sfb-nc-collet": {
@@ -15661,19 +15667,19 @@
     "w": 1200,
     "h": 742,
     "file": "img/forming/is-sfb-nc-collet-1200.webp",
-    "bytes": 124700
+    "bytes": 128816
    },
    {
     "w": 800,
     "h": 494,
     "file": "img/forming/is-sfb-nc-collet-800.webp",
-    "bytes": 69352
+    "bytes": 72438
    },
    {
     "w": 480,
     "h": 297,
     "file": "img/forming/is-sfb-nc-collet-480.webp",
-    "bytes": 33382
+    "bytes": 35060
    }
   ],
   "alpha": true,
@@ -15681,79 +15687,79 @@
    "w": 160,
    "h": 99,
    "file": "img/forming/is-sfb-nc-collet-thumb.webp",
-   "bytes": 7214
+   "bytes": 7328
   }
  },
  "is-sfb-32-hd": {
-  "alt": "\u0130\u015fitan SFB 32-HD compact PLC hydraulic mandrel tube bender, \u00d81-1/4\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 32-HD compact PLC hydraulic mandrel tube bender, \u00d81-1/4\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 441,
+    "h": 445,
     "file": "img/forming/is-sfb-32-hd-800.webp",
-    "bytes": 64344
+    "bytes": 69366
    },
    {
     "w": 480,
-    "h": 265,
+    "h": 267,
     "file": "img/forming/is-sfb-32-hd-480.webp",
-    "bytes": 34482
+    "bytes": 36410
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 88,
+   "h": 89,
    "file": "img/forming/is-sfb-32-hd-thumb.webp",
-   "bytes": 7816
+   "bytes": 8404
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-32-m": {
-  "alt": "\u0130\u015fitan SFB 32-M compact motorized mandrel tube bender, \u00d81-1/4\u2033 \u00d7 11 ga",
+  "alt": "ISITAN SFB 32-M compact motorized mandrel tube bender, \u00d81-1/4\u2033 \u00d7 11 ga",
   "variants": [
    {
     "w": 800,
-    "h": 422,
+    "h": 428,
     "file": "img/forming/is-sfb-32-m-800.webp",
-    "bytes": 46368
+    "bytes": 49084
    },
    {
     "w": 480,
-    "h": 253,
+    "h": 257,
     "file": "img/forming/is-sfb-32-m-480.webp",
-    "bytes": 24894
+    "bytes": 26108
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 85,
+   "h": 86,
    "file": "img/forming/is-sfb-32-m-thumb.webp",
-   "bytes": 6264
+   "bytes": 6692
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfb-38-nc-a2": {
-  "alt": "\u0130\u015fitan SFB 38-NC/A2 NC aluminum-profile bender with carrier",
+  "alt": "ISITAN SFB 38-NC/A2 NC aluminum-profile bender with carrier",
   "variants": [
    {
     "w": 1200,
     "h": 553,
     "file": "img/forming/is-sfb-38-nc-a2-1200.webp",
-    "bytes": 91204
+    "bytes": 94368
    },
    {
     "w": 800,
     "h": 369,
     "file": "img/forming/is-sfb-38-nc-a2-800.webp",
-    "bytes": 50786
+    "bytes": 53186
    },
    {
     "w": 480,
     "h": 221,
     "file": "img/forming/is-sfb-38-nc-a2-480.webp",
-    "bytes": 24338
+    "bytes": 24996
    }
   ],
   "alpha": true,
@@ -15761,103 +15767,103 @@
    "w": 160,
    "h": 74,
    "file": "img/forming/is-sfb-38-nc-a2-thumb.webp",
-   "bytes": 5464
+   "bytes": 5540
   }
  },
  "is-sfb-38-nc-a": {
-  "alt": "\u0130\u015fitan SFB 38-NC/A NC aluminum-profile bender for window and door frames",
+  "alt": "ISITAN SFB 38-NC/A NC aluminum-profile bender for window and door frames",
   "variants": [
    {
     "w": 480,
-    "h": 444,
+    "h": 446,
     "file": "img/forming/is-sfb-38-nc-a-480.webp",
-    "bytes": 50172
+    "bytes": 55120
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 148,
+   "h": 149,
    "file": "img/forming/is-sfb-38-nc-a-thumb.webp",
-   "bytes": 11220
+   "bytes": 11794
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-bk-050": {
-  "alt": "\u0130\u015fitan BK-050 rotary draw tube bender, \u00d82-3/8\u2033 \u00d7 11 ga steel tube, NC touchscreen",
+  "alt": "ISITAN BK-050 rotary draw tube bender, \u00d82-3/8\u2033 \u00d7 11 ga steel tube, NC touchscreen",
   "variants": [
    {
     "w": 480,
-    "h": 640,
+    "h": 636,
     "file": "img/forming/is-bk-050-480.webp",
-    "bytes": 34658
+    "bytes": 39154
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 120,
+   "w": 121,
    "h": 160,
    "file": "img/forming/is-bk-050-thumb.webp",
-   "bytes": 6220
+   "bytes": 6768
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-bk-42": {
-  "alt": "\u0130\u015fitan BK-42 rotary draw tube bender, \u00d81-5/8\u2033 \u00d7 11 ga steel tube",
+  "alt": "ISITAN BK-42 rotary draw tube bender, \u00d81-5/8\u2033 \u00d7 11 ga steel tube",
   "variants": [
    {
-    "w": 472,
-    "h": 663,
-    "file": "img/forming/is-bk-42-472.webp",
-    "bytes": 29454
+    "w": 480,
+    "h": 667,
+    "file": "img/forming/is-bk-42-480.webp",
+    "bytes": 34488
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 114,
+   "w": 115,
    "h": 160,
    "file": "img/forming/is-bk-42-thumb.webp",
-   "bytes": 5426
+   "bytes": 5602
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-bk-h060": {
-  "alt": "\u0130\u015fitan BK-H 060 hydraulic rotary draw tube bender, 0\u2013210\u00b0",
+  "alt": "ISITAN BK-H 060 hydraulic rotary draw tube bender, 0\u2013210\u00b0",
   "variants": [
    {
-    "w": 419,
-    "h": 672,
-    "file": "img/forming/is-bk-h060-419.webp",
-    "bytes": 27542
+    "w": 432,
+    "h": 685,
+    "file": "img/forming/is-bk-h060-432.webp",
+    "bytes": 33386
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 100,
+   "w": 101,
    "h": 160,
    "file": "img/forming/is-bk-h060-thumb.webp",
-   "bytes": 5076
+   "bytes": 5564
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-bk-030": {
-  "alt": "\u0130\u015fitan BK 030 (76) rotary draw pipe bender, \u00d83\u2033 \u00d7 11 ga steel tube",
+  "alt": "ISITAN BK 030 (76) rotary draw pipe bender, \u00d83\u2033 \u00d7 11 ga steel tube",
   "variants": [
    {
-    "w": 423,
-    "h": 657,
-    "file": "img/forming/is-bk-030-423.webp",
-    "bytes": 32602
+    "w": 437,
+    "h": 669,
+    "file": "img/forming/is-bk-030-437.webp",
+    "bytes": 38160
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 103,
+   "w": 105,
    "h": 160,
    "file": "img/forming/is-bk-030-thumb.webp",
-   "bytes": 6160
+   "bytes": 6542
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-bk-screen": {
   "alt": "BK series \u2014 touchscreen with manual, program, auto and parameter modes",
@@ -15866,7 +15872,7 @@
     "w": 480,
     "h": 275,
     "file": "img/forming/is-bk-screen-480.webp",
-    "bytes": 6708
+    "bytes": 6902
    }
   ],
   "alpha": false,
@@ -15874,7 +15880,7 @@
    "w": 160,
    "h": 92,
    "file": "img/forming/is-bk-screen-thumb.webp",
-   "bytes": 1524
+   "bytes": 1568
   }
  },
  "is-bk-panel": {
@@ -15884,7 +15890,7 @@
     "w": 480,
     "h": 374,
     "file": "img/forming/is-bk-panel-480.webp",
-    "bytes": 16786
+    "bytes": 17052
    }
   ],
   "alpha": true,
@@ -15892,7 +15898,7 @@
    "w": 160,
    "h": 125,
    "file": "img/forming/is-bk-panel-thumb.webp",
-   "bytes": 3608
+   "bytes": 3818
   }
  },
  "is-bk-tooling": {
@@ -15902,7 +15908,7 @@
     "w": 480,
     "h": 264,
     "file": "img/forming/is-bk-tooling-480.webp",
-    "bytes": 33690
+    "bytes": 34920
    }
   ],
   "alpha": true,
@@ -15910,7 +15916,7 @@
    "w": 160,
    "h": 88,
    "file": "img/forming/is-bk-tooling-thumb.webp",
-   "bytes": 6418
+   "bytes": 6516
   }
  },
  "is-bk-mandrel-tooling": {
@@ -15920,7 +15926,7 @@
     "w": 480,
     "h": 252,
     "file": "img/forming/is-bk-mandrel-tooling-480.webp",
-    "bytes": 26234
+    "bytes": 27268
    }
   ],
   "alpha": true,
@@ -15928,7 +15934,7 @@
    "w": 160,
    "h": 84,
    "file": "img/forming/is-bk-mandrel-tooling-thumb.webp",
-   "bytes": 4800
+   "bytes": 4878
   }
  },
  "is-bk-mandrel-tooling-nc": {
@@ -15938,7 +15944,7 @@
     "w": 450,
     "h": 382,
     "file": "img/forming/is-bk-mandrel-tooling-nc-450.webp",
-    "bytes": 37066
+    "bytes": 38156
    }
   ],
   "alpha": true,
@@ -15946,7 +15952,7 @@
    "w": 160,
    "h": 136,
    "file": "img/forming/is-bk-mandrel-tooling-nc-thumb.webp",
-   "bytes": 7552
+   "bytes": 7732
   }
  },
  "is-bk-part": {
@@ -15956,7 +15962,7 @@
     "w": 470,
     "h": 322,
     "file": "img/forming/is-bk-part-470.webp",
-    "bytes": 29198
+    "bytes": 30402
    }
   ],
   "alpha": true,
@@ -15964,36 +15970,36 @@
    "w": 160,
    "h": 110,
    "file": "img/forming/is-bk-part-thumb.webp",
-   "bytes": 6540
+   "bytes": 6624
   }
  },
  "is-pn-17-90": {
-  "alt": "\u0130\u015fitan PN 17/90 motorized belt-sander tube notcher, 11/16\u2033 to 3-1/2\u2033 OD",
+  "alt": "ISITAN PN 17/90 motorized belt-sander tube notcher, 11/16\u2033 to 3-1/2\u2033 OD",
   "variants": [
    {
     "w": 480,
-    "h": 563,
+    "h": 557,
     "file": "img/forming/is-pn-17-90-480.webp",
-    "bytes": 36764
+    "bytes": 31808
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 137,
+   "w": 138,
    "h": 160,
    "file": "img/forming/is-pn-17-90-thumb.webp",
-   "bytes": 6794
+   "bytes": 6550
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-pn-20-76": {
-  "alt": "\u0130\u015fitan PN 20/76 compact tube notcher with movable clamp, 13/16\u2033 to 3\u2033 OD",
+  "alt": "ISITAN PN 20/76 compact tube notcher with movable clamp, 13/16\u2033 to 3\u2033 OD",
   "variants": [
    {
     "w": 480,
-    "h": 577,
+    "h": 575,
     "file": "img/forming/is-pn-20-76-480.webp",
-    "bytes": 37350
+    "bytes": 36480
    }
   ],
   "alpha": true,
@@ -16001,18 +16007,24 @@
    "w": 133,
    "h": 160,
    "file": "img/forming/is-pn-20-76-thumb.webp",
-   "bytes": 6754
+   "bytes": 6666
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-td-01": {
-  "alt": "\u0130\u015fitan TD-01 motorized tube-end deburring machine, inside and outside to \u00d83-1/2\u2033",
+  "alt": "ISITAN TD-01 motorized tube-end deburring machine, inside and outside to \u00d83-1/2\u2033",
   "variants": [
    {
+    "w": 800,
+    "h": 650,
+    "file": "img/forming/is-td-01-800.webp",
+    "bytes": 49322
+   },
+   {
     "w": 480,
-    "h": 389,
+    "h": 390,
     "file": "img/forming/is-td-01-480.webp",
-    "bytes": 23590
+    "bytes": 25500
    }
   ],
   "alpha": true,
@@ -16020,47 +16032,47 @@
    "w": 160,
    "h": 130,
    "file": "img/forming/is-td-01-thumb.webp",
-   "bytes": 5084
+   "bytes": 5686
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sff-90-1": {
-  "alt": "\u0130\u015fitan SFF 90-1 single-station hydraulic pipe-end former, expand and reduce to \u00d83-1/2\u2033",
+  "alt": "ISITAN SFF 90-1 single-station hydraulic pipe-end former, expand and reduce to \u00d83-1/2\u2033",
   "variants": [
    {
-    "w": 459,
-    "h": 672,
-    "file": "img/forming/is-sff-90-1-459.webp",
-    "bytes": 47596
+    "w": 474,
+    "h": 685,
+    "file": "img/forming/is-sff-90-1-474.webp",
+    "bytes": 48236
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 109,
+   "w": 111,
    "h": 160,
    "file": "img/forming/is-sff-90-1-thumb.webp",
-   "bytes": 6830
+   "bytes": 6832
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sff-60-1": {
-  "alt": "\u0130\u015fitan SFF 60-1 single-station hydraulic pipe-end former, expand and reduce to \u00d82-3/8\u2033",
+  "alt": "ISITAN SFF 60-1 single-station hydraulic pipe-end former, expand and reduce to \u00d82-3/8\u2033",
   "variants": [
    {
     "w": 480,
-    "h": 409,
+    "h": 410,
     "file": "img/forming/is-sff-60-1-480.webp",
-    "bytes": 35176
+    "bytes": 35452
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 136,
+   "h": 137,
    "file": "img/forming/is-sff-60-1-thumb.webp",
-   "bytes": 7630
+   "bytes": 7830
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sff-tooling": {
   "alt": "SFF end former \u2014 easy tool-changing system with the end-forming tooling set",
@@ -16069,7 +16081,7 @@
     "w": 480,
     "h": 375,
     "file": "img/forming/is-sff-tooling-480.webp",
-    "bytes": 27624
+    "bytes": 28470
    }
   ],
   "alpha": true,
@@ -16077,17 +16089,17 @@
    "w": 160,
    "h": 125,
    "file": "img/forming/is-sff-tooling-thumb.webp",
-   "bytes": 5924
+   "bytes": 6130
   }
  },
  "is-sfc-350-vx": {
-  "alt": "\u0130\u015fitan SFC 350-VX semi-automatic circular cold saw, 13-3/4\u2033 blade, \u00d84-1/2\u2033 round",
+  "alt": "ISITAN SFC 350-VX semi-automatic circular cold saw, 13-3/4\u2033 blade, \u00d84-1/2\u2033 round",
   "variants": [
    {
     "w": 480,
-    "h": 610,
+    "h": 608,
     "file": "img/forming/is-sfc-350-vx-480.webp",
-    "bytes": 44648
+    "bytes": 49078
    }
   ],
   "alpha": true,
@@ -16095,18 +16107,18 @@
    "w": 126,
    "h": 160,
    "file": "img/forming/is-sfc-350-vx-thumb.webp",
-   "bytes": 7526
+   "bytes": 8118
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "is-sfc-315-vp": {
-  "alt": "\u0130\u015fitan SFC 315-VP circular cold saw with pneumatic vise, 12-1/2\u2033 blade",
+  "alt": "ISITAN SFC 315-VP circular cold saw with pneumatic vise, 12-1/2\u2033 blade",
   "variants": [
    {
     "w": 480,
     "h": 1147,
     "file": "img/forming/is-sfc-315-vp-480.webp",
-    "bytes": 72206
+    "bytes": 74050
    }
   ],
   "alpha": true,
@@ -16114,7 +16126,7 @@
    "w": 67,
    "h": 160,
    "file": "img/forming/is-sfc-315-vp-thumb.webp",
-   "bytes": 4612
+   "bytes": 4692
   }
  },
  "is-eb-cnc-promecam-clamps": {
@@ -16124,13 +16136,13 @@
     "w": 800,
     "h": 516,
     "file": "img/forming/is-eb-cnc-promecam-clamps-800.webp",
-    "bytes": 22614
+    "bytes": 23000
    },
    {
     "w": 480,
     "h": 309,
     "file": "img/forming/is-eb-cnc-promecam-clamps-480.webp",
-    "bytes": 13170
+    "bytes": 13582
    }
   ],
   "alpha": false,
@@ -16138,7 +16150,7 @@
    "w": 160,
    "h": 103,
    "file": "img/forming/is-eb-cnc-promecam-clamps-thumb.webp",
-   "bytes": 2712
+   "bytes": 2844
   }
  },
  "is-eb-cnc-lightguard": {
@@ -16148,7 +16160,7 @@
     "w": 480,
     "h": 587,
     "file": "img/forming/is-eb-cnc-lightguard-480.webp",
-    "bytes": 34428
+    "bytes": 35854
    }
   ],
   "alpha": true,
@@ -16156,7 +16168,7 @@
    "w": 131,
    "h": 160,
    "file": "img/forming/is-eb-cnc-lightguard-thumb.webp",
-   "bytes": 5394
+   "bytes": 5508
   }
  },
  "is-eb-cnc-panel": {
@@ -16166,7 +16178,7 @@
     "w": 480,
     "h": 411,
     "file": "img/forming/is-eb-cnc-panel-480.webp",
-    "bytes": 37198
+    "bytes": 38094
    }
   ],
   "alpha": false,
@@ -16174,7 +16186,7 @@
    "w": 160,
    "h": 137,
    "file": "img/forming/is-eb-cnc-panel-thumb.webp",
-   "bytes": 6902
+   "bytes": 7176
   }
  },
  "is-eb-nc-buttons": {
@@ -16184,7 +16196,7 @@
     "w": 480,
     "h": 393,
     "file": "img/forming/is-eb-nc-buttons-480.webp",
-    "bytes": 15480
+    "bytes": 15888
    }
   ],
   "alpha": false,
@@ -16192,17 +16204,17 @@
    "w": 160,
    "h": 131,
    "file": "img/forming/is-eb-nc-buttons-thumb.webp",
-   "bytes": 2872
+   "bytes": 3026
   }
  },
  "is-sfc-275-v": {
-  "alt": "\u0130\u015fitan SFC 275-V manual circular cold saw, 10-3/4\u2033 blade, \u00d83-3/8\u2033 round",
+  "alt": "ISITAN SFC 275-V manual circular cold saw, 10-3/4\u2033 blade, \u00d83-3/8\u2033 round",
   "variants": [
    {
     "w": 480,
     "h": 983,
     "file": "img/forming/is-sfc-275-v-480.webp",
-    "bytes": 59272
+    "bytes": 60404
    }
   ],
   "alpha": true,
@@ -16210,7 +16222,7 @@
    "w": 78,
    "h": 160,
    "file": "img/forming/is-sfc-275-v-thumb.webp",
-   "bytes": 4822
+   "bytes": 4890
   }
  },
  "bk-det-2013-02-04-317656": {
@@ -38793,7 +38805,7 @@
   }
  },
  "sh-4rhss-30-380-nc": {
-  "alt": "\u015eahinler 4R HSS 30-380 NC hydraulic heavy-duty 4-roll plate roll, 10 ft, with the NC console",
+  "alt": "4R HSS 30-380 NC hydraulic heavy-duty 4-roll plate roll, 10 ft, with the NC console",
   "variants": [
    {
     "w": 1200,
@@ -38974,7 +38986,7 @@
   }
  },
  "sh-4rhs-25-245": {
-  "alt": "\u015eahinler 4R HS 25-245 hydraulic 4-roll plate roll, 8.4 ft, with the mobile control console",
+  "alt": "4R HS 25-245 hydraulic 4-roll plate roll, 8.4 ft, with the mobile control console",
   "variants": [
    {
     "w": 1200,
@@ -39096,7 +39108,7 @@
   }
  },
  "sh-4rh-10-90-nc": {
-  "alt": "\u015eahinler 4RH 10-90 NC cassette-type hydraulic 4-roll plate roll with NC console",
+  "alt": "4RH 10-90 NC cassette-type hydraulic 4-roll plate roll with NC console",
   "variants": [
    {
     "w": 1200,
@@ -39220,37 +39232,38 @@
   "cut": "birefnet"
  },
  "sh-3ruhs-30-550": {
-  "alt": "\u015eahinler 3R UHS 30-550 hydraulic translating heavy-duty 3-roll plate roll, 10 ft",
+  "alt": "3R UHS 30-550 hydraulic translating heavy-duty 3-roll plate roll, 10 ft",
   "variants": [
    {
     "w": 1200,
-    "h": 584,
+    "h": 567,
     "file": "img/sahinler/sh-3ruhs-30-550-1200.webp",
-    "bytes": 38822
+    "bytes": 64582
    },
    {
     "w": 800,
-    "h": 389,
+    "h": 378,
     "file": "img/sahinler/sh-3ruhs-30-550-800.webp",
-    "bytes": 21962
+    "bytes": 39996
    },
    {
     "w": 480,
-    "h": 234,
+    "h": 227,
     "file": "img/sahinler/sh-3ruhs-30-550-480.webp",
-    "bytes": 10852
+    "bytes": 20816
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 78,
+   "h": 76,
    "file": "img/sahinler/sh-3ruhs-30-550-thumb.webp",
-   "bytes": 2048
-  }
+   "bytes": 4920
+  },
+  "cut": "birefnet"
  },
  "sh-3rhs-20-210": {
-  "alt": "\u015eahinler 3R HS 20-210 hydraulic 3-roll plate roll, 6.7 ft, with the mobile control console",
+  "alt": "3R HS 20-210 hydraulic 3-roll plate roll, 6.7 ft, with the mobile control console",
   "variants": [
    {
     "w": 1200,
@@ -39343,7 +39356,7 @@
   "cut": "birefnet"
  },
  "sh-4rhc-10-155": {
-  "alt": "\u015eahinler 4R HC 10-155 hydraulic 4-roll conical plate roll with cone-machined rolls",
+  "alt": "4R HC 10-155 hydraulic 4-roll conical plate roll with cone-machined rolls",
   "variants": [
    {
     "w": 1200,
@@ -39373,7 +39386,7 @@
   }
  },
  "sh-bt114s": {
-  "alt": "\u015eahinler BT 114-S automatic pipe polishing and sanding machine with the mobile control pendant",
+  "alt": "BT 114-S automatic pipe polishing and sanding machine with the mobile control pendant",
   "variants": [
    {
     "w": 1200,
@@ -39463,7 +39476,7 @@
   }
  },
  "sh-sdk6-b": {
-  "alt": "\u015eahinler SDK 6 circular cutting and flanging machine \u2014 part carrier, flanging head and control box",
+  "alt": "SDK 6 circular cutting and flanging machine \u2014 part carrier, flanging head and control box",
   "variants": [
    {
     "w": 1200,
@@ -39554,7 +39567,7 @@
   }
  },
  "sh-spb60": {
-  "alt": "\u015eahinler SPB 60 NC pipe draw bender",
+  "alt": "SPB 60 NC pipe draw bender",
   "variants": [
    {
     "w": 1200,
@@ -39584,7 +39597,7 @@
   }
  },
  "sh-spb76": {
-  "alt": "\u015eahinler SPB 76 NC pipe draw bender with a bent tube in the tooling",
+  "alt": "SPB 76 NC pipe draw bender with a bent tube in the tooling",
   "variants": [
    {
     "w": 800,
@@ -39638,7 +39651,7 @@
   }
  },
  "sh-pk30": {
-  "alt": "\u015eahinler PK 30 motorized section and pipe bender",
+  "alt": "PK 30 motorized section and pipe bender",
   "variants": [
    {
     "w": 1200,
@@ -39668,7 +39681,7 @@
   }
  },
  "sh-pk35": {
-  "alt": "\u015eahinler PK 35 motorized section and pipe bender",
+  "alt": "PK 35 motorized section and pipe bender",
   "variants": [
    {
     "w": 1200,
@@ -39729,7 +39742,7 @@
   "cut": "birefnet"
  },
  "sh-hpk40": {
-  "alt": "\u015eahinler HPK 40 hydraulic section and pipe bender with the mobile control panel",
+  "alt": "HPK 40 hydraulic section and pipe bender with the mobile control panel",
   "variants": [
    {
     "w": 1200,
@@ -39789,7 +39802,7 @@
   }
  },
  "sh-hpk50": {
-  "alt": "\u015eahinler HPK 50 hydraulic section and pipe bender, 8 t hydraulic force",
+  "alt": "HPK 50 hydraulic section and pipe bender, 8 t hydraulic force",
   "variants": [
    {
     "w": 800,
@@ -39814,7 +39827,7 @@
   "cut": "birefnet"
  },
  "sh-hpk60": {
-  "alt": "\u015eahinler HPK 60 hydraulic section and pipe bender, 16 t hydraulic force",
+  "alt": "HPK 60 hydraulic section and pipe bender, 16 t hydraulic force",
   "variants": [
    {
     "w": 1200,
@@ -39845,7 +39858,7 @@
   "cut": "birefnet"
  },
  "sh-hpk65": {
-  "alt": "\u015eahinler HPK 65 hydraulic section and pipe bender with the control console",
+  "alt": "HPK 65 hydraulic section and pipe bender with the control console",
   "variants": [
    {
     "w": 1200,
@@ -39876,7 +39889,7 @@
   "cut": "birefnet"
  },
  "sh-hpk80": {
-  "alt": "\u015eahinler HPK 80 hydraulic section and pipe bender with the control console",
+  "alt": "HPK 80 hydraulic section and pipe bender with the control console",
   "variants": [
    {
     "w": 1200,
@@ -39993,7 +40006,7 @@
   "cut": "birefnet"
  },
  "sh-hpk100": {
-  "alt": "\u015eahinler HPK 100 hydraulic section and pipe bender with the control console",
+  "alt": "HPK 100 hydraulic section and pipe bender with the control console",
   "variants": [
    {
     "w": 1200,
@@ -40146,7 +40159,7 @@
   "cut": "birefnet"
  },
  "sh-hpk120nc": {
-  "alt": "\u015eahinler HPK 120 NC hydraulic section and pipe bender with hydraulic lateral guides and NC console",
+  "alt": "HPK 120 NC hydraulic section and pipe bender with hydraulic lateral guides and NC console",
   "variants": [
    {
     "w": 1200,
@@ -40202,7 +40215,7 @@
   "cut": "birefnet"
  },
  "sh-hpk160dp": {
-  "alt": "\u015eahinler HPK 160 DP NC heavy-duty section and beam bender with the NC console",
+  "alt": "HPK 160 DP NC heavy-duty section and beam bender with the NC console",
   "variants": [
    {
     "w": 1200,
@@ -40232,7 +40245,7 @@
   }
  },
  "sh-hpk240dp": {
-  "alt": "\u015eahinler HPK 240 DP heavy-duty section and beam bender",
+  "alt": "HPK 240 DP heavy-duty section and beam bender",
   "variants": [
    {
     "w": 1200,
@@ -40352,7 +40365,7 @@
   }
  },
  "sh-tc42": {
-  "alt": "\u015eahinler TC-42 NC tube coiling machine rolling a spiral coil between the hydraulic lateral supports",
+  "alt": "TC-42 NC tube coiling machine rolling a spiral coil between the hydraulic lateral supports",
   "variants": [
    {
     "w": 1200,
@@ -40412,7 +40425,7 @@
   }
  },
  "sh-hkm40": {
-  "alt": "\u015eahinler HKM 40 single-piston hydraulic steelworker, 44 US tons",
+  "alt": "HKM 40 single-piston hydraulic steelworker, 44 US tons",
   "variants": [
    {
     "w": 1200,
@@ -40474,7 +40487,7 @@
   "cut": "birefnet"
  },
  "sh-hkm60": {
-  "alt": "\u015eahinler HKM 60 single-piston hydraulic steelworker with five work stations",
+  "alt": "HKM 60 single-piston hydraulic steelworker with five work stations",
   "variants": [
    {
     "w": 800,
@@ -40499,7 +40512,7 @@
   "cut": "birefnet"
  },
  "sh-hkm65v": {
-  "alt": "\u015eahinler HKM 65 V vertical single-piston steelworker",
+  "alt": "HKM 65 V vertical single-piston steelworker",
   "variants": [
    {
     "w": 1200,
@@ -40529,7 +40542,7 @@
   }
  },
  "sh-hkm55": {
-  "alt": "\u015eahinler HKM 55 double-piston hydraulic steelworker with two foot pedals",
+  "alt": "HKM 55 double-piston hydraulic steelworker with two foot pedals",
   "variants": [
    {
     "w": 1200,
@@ -40560,7 +40573,7 @@
   "cut": "birefnet"
  },
  "sh-hkm65": {
-  "alt": "\u015eahinler HKM 65 double-piston hydraulic steelworker, 72 US tons",
+  "alt": "HKM 65 double-piston hydraulic steelworker, 72 US tons",
   "variants": [
    {
     "w": 1200,
@@ -40591,7 +40604,7 @@
   "cut": "birefnet"
  },
  "sh-hkm85": {
-  "alt": "\u015eahinler HKM 85 double-piston hydraulic steelworker, 94 US tons",
+  "alt": "HKM 85 double-piston hydraulic steelworker, 94 US tons",
   "variants": [
    {
     "w": 1200,
@@ -40652,7 +40665,7 @@
   }
  },
  "sh-hkm115": {
-  "alt": "\u015eahinler HKM 115 double-piston hydraulic steelworker, 127 US tons",
+  "alt": "HKM 115 double-piston hydraulic steelworker, 127 US tons",
   "variants": [
    {
     "w": 1200,
@@ -40714,7 +40727,7 @@
   "cut": "birefnet"
  },
  "sh-hkm175": {
-  "alt": "\u015eahinler HKM 175 double-piston hydraulic steelworker, 193 US tons",
+  "alt": "HKM 175 double-piston hydraulic steelworker, 193 US tons",
   "variants": [
    {
     "w": 1200,
@@ -40926,7 +40939,7 @@
   }
  },
  "sh-hpm65": {
-  "alt": "\u015eahinler HPM 65 hydraulic punching machine, 72 US tons",
+  "alt": "HPM 65 hydraulic punching machine, 72 US tons",
   "variants": [
    {
     "w": 1200,
@@ -41018,7 +41031,7 @@
   "cut": "birefnet"
  },
  "sh-hpm30": {
-  "alt": "\u015eahinler HPM 30 hydraulic punching machine",
+  "alt": "HPM 30 hydraulic punching machine",
   "variants": [
    {
     "w": 480,
@@ -41036,7 +41049,7 @@
   }
  },
  "sh-hpm115": {
-  "alt": "\u015eahinler HPM 115 hydraulic punching machine, 127 US tons",
+  "alt": "HPM 115 hydraulic punching machine, 127 US tons",
   "variants": [
    {
     "w": 1200,
@@ -41067,7 +41080,7 @@
   "cut": "birefnet"
  },
  "sh-hpm85dp": {
-  "alt": "\u015eahinler HPM 85 DP double-head hydraulic punching machine",
+  "alt": "HPM 85 DP double-head hydraulic punching machine",
   "variants": [
    {
     "w": 1200,
@@ -41097,7 +41110,7 @@
   }
  },
  "sh-hpm85nc": {
-  "alt": "\u015eahinler HPM 85 NC punching line with NC table and control console",
+  "alt": "HPM 85 NC punching line with NC table and control console",
   "variants": [
    {
     "w": 1200,
@@ -41127,7 +41140,7 @@
   }
  },
  "sh-hpm115cnc": {
-  "alt": "\u015eahinler HPM 115 CNC punching machine with CNC table and Siemens control",
+  "alt": "HPM 115 CNC punching machine with CNC table and Siemens control",
   "variants": [
    {
     "w": 1200,
@@ -41157,7 +41170,7 @@
   }
  },
  "sh-sdk6": {
-  "alt": "\u015eahinler SDK 6 circular sheet cutting and flanging machine, \u00d812.5 ft",
+  "alt": "SDK 6 circular sheet cutting and flanging machine, \u00d812.5 ft",
   "variants": [
    {
     "w": 1200,
@@ -41187,7 +41200,7 @@
   }
  },
  "sh-sdk8": {
-  "alt": "\u015eahinler SDK 8 circular sheet cutting and flanging machine, \u00d815 ft",
+  "alt": "SDK 8 circular sheet cutting and flanging machine, \u00d815 ft",
   "variants": [
    {
     "w": 1200,
@@ -41221,30 +41234,31 @@
   "variants": [
    {
     "w": 1200,
-    "h": 1226,
+    "h": 1177,
     "file": "img/sahinler/sh-sdk8-head-1200.webp",
-    "bytes": 67030
+    "bytes": 124504
    },
    {
     "w": 800,
-    "h": 817,
+    "h": 785,
     "file": "img/sahinler/sh-sdk8-head-800.webp",
-    "bytes": 37122
+    "bytes": 74190
    },
    {
     "w": 480,
-    "h": 490,
+    "h": 471,
     "file": "img/sahinler/sh-sdk8-head-480.webp",
-    "bytes": 18164
+    "bytes": 38468
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 157,
-   "h": 160,
+   "w": 160,
+   "h": 157,
    "file": "img/sahinler/sh-sdk8-head-thumb.webp",
-   "bytes": 3378
-  }
+   "bytes": 8470
+  },
+  "cut": "birefnet"
  },
  "sh-sdk8-lcd": {
   "alt": "SDK \u2014 LCD touchscreen operator panel",
@@ -41277,34 +41291,35 @@
   }
  },
  "sh-efm6": {
-  "alt": "\u015eahinler EFM 6 elliptical cutting and flanging machine",
+  "alt": "EFM 6 elliptical cutting and flanging machine",
   "variants": [
    {
     "w": 1200,
-    "h": 1270,
+    "h": 894,
     "file": "img/sahinler/sh-efm6-1200.webp",
-    "bytes": 71868
+    "bytes": 149572
    },
    {
     "w": 800,
-    "h": 847,
+    "h": 596,
     "file": "img/sahinler/sh-efm6-800.webp",
-    "bytes": 44016
+    "bytes": 95100
    },
    {
     "w": 480,
-    "h": 508,
+    "h": 358,
     "file": "img/sahinler/sh-efm6-480.webp",
-    "bytes": 22466
+    "bytes": 50122
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 151,
-   "h": 160,
+   "w": 160,
+   "h": 119,
    "file": "img/sahinler/sh-efm6-thumb.webp",
-   "bytes": 3638
-  }
+   "bytes": 10548
+  },
+  "cut": "birefnet"
  },
  "sh-efm-vacuum": {
   "alt": "EFM 6 \u2014 flanging head with the optional vacuum system",
@@ -41337,7 +41352,7 @@
   }
  },
  "sh-dks200": {
-  "alt": "\u015eahinler DK-S 200 3-axis moving straightening press with safety rails",
+  "alt": "DK-S 200 3-axis moving straightening press with safety rails",
   "variants": [
    {
     "w": 1200,
@@ -41368,7 +41383,7 @@
   "cut": "birefnet"
  },
  "sh-dks400": {
-  "alt": "\u015eahinler DK-S 400 3-axis moving straightening press, 441 US tons",
+  "alt": "DK-S 400 3-axis moving straightening press, 441 US tons",
   "variants": [
    {
     "w": 1200,
@@ -41428,238 +41443,228 @@
   }
  },
  "sh-dpm": {
-  "alt": "\u015eahinler DPM hydraulic shop press",
+  "alt": "DPM hydraulic shop press",
   "variants": [
    {
     "w": 1200,
-    "h": 1092,
+    "h": 1160,
     "file": "img/sahinler/sh-dpm-1200.webp",
-    "bytes": 48186
+    "bytes": 112748
    },
    {
     "w": 800,
-    "h": 728,
+    "h": 773,
     "file": "img/sahinler/sh-dpm-800.webp",
-    "bytes": 23072
+    "bytes": 62754
    },
    {
     "w": 480,
-    "h": 437,
+    "h": 464,
     "file": "img/sahinler/sh-dpm-480.webp",
-    "bytes": 9820
+    "bytes": 30730
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 146,
+   "h": 155,
    "file": "img/sahinler/sh-dpm-thumb.webp",
-   "bytes": 2016
-  }
+   "bytes": 7880
+  },
+  "cut": "birefnet"
  },
  "sh-dpmk": {
-  "alt": "\u015eahinler DPM-K hydraulic shop press with mobile cylinder",
+  "alt": "DPM-K hydraulic shop press with mobile cylinder",
   "variants": [
    {
-    "w": 1200,
-    "h": 1330,
-    "file": "img/sahinler/sh-dpmk-1200.webp",
-    "bytes": 40004
-   },
-   {
     "w": 800,
-    "h": 887,
+    "h": 1003,
     "file": "img/sahinler/sh-dpmk-800.webp",
-    "bytes": 23320
+    "bytes": 74314
    },
    {
     "w": 480,
-    "h": 532,
+    "h": 602,
     "file": "img/sahinler/sh-dpmk-480.webp",
-    "bytes": 12226
+    "bytes": 40102
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 144,
+   "w": 128,
    "h": 160,
    "file": "img/sahinler/sh-dpmk-thumb.webp",
-   "bytes": 2402
-  }
+   "bytes": 8098
+  },
+  "cut": "birefnet"
  },
  "sh-dk": {
-  "alt": "\u015eahinler DK hydraulic shop press with mobile cylinder and hand wheel",
+  "alt": "DK hydraulic shop press with mobile cylinder and hand wheel",
   "variants": [
    {
     "w": 1200,
-    "h": 1147,
+    "h": 1296,
     "file": "img/sahinler/sh-dk-1200.webp",
-    "bytes": 32650
+    "bytes": 103862
    },
    {
     "w": 800,
-    "h": 765,
+    "h": 864,
     "file": "img/sahinler/sh-dk-800.webp",
-    "bytes": 18478
+    "bytes": 62568
    },
    {
     "w": 480,
-    "h": 459,
+    "h": 519,
     "file": "img/sahinler/sh-dk-480.webp",
-    "bytes": 8942
+    "bytes": 33434
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 153,
+   "w": 148,
+   "h": 160,
    "file": "img/sahinler/sh-dk-thumb.webp",
-   "bytes": 2036
-  }
+   "bytes": 8166
+  },
+  "cut": "birefnet"
  },
  "sh-dpm200": {
-  "alt": "\u015eahinler DPM 200 t hydraulic shop press",
+  "alt": "DPM 200 t hydraulic shop press",
   "variants": [
    {
-    "w": 1200,
-    "h": 1484,
-    "file": "img/sahinler/sh-dpm200-1200.webp",
-    "bytes": 44736
-   },
-   {
     "w": 800,
-    "h": 989,
+    "h": 1149,
     "file": "img/sahinler/sh-dpm200-800.webp",
-    "bytes": 26282
+    "bytes": 92144
    },
    {
     "w": 480,
-    "h": 594,
+    "h": 690,
     "file": "img/sahinler/sh-dpm200-480.webp",
-    "bytes": 13794
+    "bytes": 51212
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 129,
+   "w": 111,
    "h": 160,
    "file": "img/sahinler/sh-dpm200-thumb.webp",
-   "bytes": 2238
-  }
+   "bytes": 7724
+  },
+  "cut": "birefnet"
  },
  "sh-at": {
-  "alt": "\u015eahinler AT universal T-slot hydraulic press",
+  "alt": "AT universal T-slot hydraulic press",
   "variants": [
    {
     "w": 800,
-    "h": 1097,
+    "h": 1253,
     "file": "img/sahinler/sh-at-800.webp",
-    "bytes": 46908
+    "bytes": 106176
    },
    {
     "w": 480,
-    "h": 658,
+    "h": 752,
     "file": "img/sahinler/sh-at-480.webp",
-    "bytes": 20838
+    "bytes": 51614
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 117,
+   "w": 102,
    "h": 160,
    "file": "img/sahinler/sh-at-thumb.webp",
-   "bytes": 2808
-  }
+   "bytes": 6864
+  },
+  "cut": "birefnet"
  },
  "sh-ap": {
-  "alt": "\u015eahinler AP garage-type hydraulic press brake",
+  "alt": "AP garage-type hydraulic press brake",
   "variants": [
    {
     "w": 1200,
-    "h": 1392,
+    "h": 1347,
     "file": "img/sahinler/sh-ap-1200.webp",
-    "bytes": 74440
+    "bytes": 145706
    },
    {
     "w": 800,
-    "h": 928,
+    "h": 898,
     "file": "img/sahinler/sh-ap-800.webp",
-    "bytes": 39514
+    "bytes": 83714
    },
    {
     "w": 480,
-    "h": 557,
+    "h": 539,
     "file": "img/sahinler/sh-ap-480.webp",
-    "bytes": 18400
+    "bytes": 43138
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 138,
+   "w": 143,
    "h": 160,
    "file": "img/sahinler/sh-ap-thumb.webp",
-   "bytes": 3316
-  }
+   "bytes": 9172
+  },
+  "cut": "birefnet"
  },
  "sh-hnm6v": {
-  "alt": "\u015eahinler HNM 6V variable-angle hydraulic corner notcher",
+  "alt": "HNM 6V variable-angle hydraulic corner notcher",
   "variants": [
    {
     "w": 1200,
-    "h": 1147,
+    "h": 1137,
     "file": "img/sahinler/sh-hnm6v-1200.webp",
-    "bytes": 53412
+    "bytes": 120380
    },
    {
     "w": 800,
-    "h": 764,
+    "h": 758,
     "file": "img/sahinler/sh-hnm6v-800.webp",
-    "bytes": 28684
+    "bytes": 68186
    },
    {
     "w": 480,
-    "h": 459,
+    "h": 455,
     "file": "img/sahinler/sh-hnm6v-480.webp",
-    "bytes": 13266
+    "bytes": 35552
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 153,
+   "h": 152,
    "file": "img/sahinler/sh-hnm6v-thumb.webp",
-   "bytes": 2456
-  }
+   "bytes": 8278
+  },
+  "cut": "birefnet"
  },
  "sh-hnm6f": {
-  "alt": "\u015eahinler HNM 6F fixed 90\u00b0 hydraulic corner notcher",
+  "alt": "HNM 6F fixed 90\u00b0 hydraulic corner notcher",
   "variants": [
    {
-    "w": 1200,
-    "h": 1106,
-    "file": "img/sahinler/sh-hnm6f-1200.webp",
-    "bytes": 51242
-   },
-   {
     "w": 800,
-    "h": 737,
+    "h": 780,
     "file": "img/sahinler/sh-hnm6f-800.webp",
-    "bytes": 29416
+    "bytes": 63188
    },
    {
     "w": 480,
-    "h": 442,
+    "h": 468,
     "file": "img/sahinler/sh-hnm6f-480.webp",
-    "bytes": 13808
+    "bytes": 33872
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 147,
+   "h": 156,
    "file": "img/sahinler/sh-hnm6f-thumb.webp",
-   "bytes": 2522
-  }
+   "bytes": 7864
+  },
+  "cut": "birefnet"
  },
  "video-WjqJVURbZ6U": {
   "alt": "Video thumbnail",
@@ -59586,6 +59591,330 @@
    "h": 107,
    "file": "img/value-sheet/vl-pba-head-thumb.webp",
    "bytes": 4710
+  }
+ },
+ "sh-bt114s-showroom": {
+  "alt": "BT 114-S pipe polishing machine in the NovoTech showroom with the control pendant and foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-showroom-1200.webp",
+    "bytes": 114030
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-showroom-800.webp",
+    "bytes": 65564
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-showroom-480.webp",
+    "bytes": 32626
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-showroom-thumb.webp",
+   "bytes": 3864
+  }
+ },
+ "sh-bt114s-head": {
+  "alt": "BT 114-S \u2014 the polishing head: drive rolls, hand-wheel feed adjustment and the belt guard",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-head-1200.webp",
+    "bytes": 83812
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-head-800.webp",
+    "bytes": 47200
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-head-480.webp",
+    "bytes": 23178
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-head-thumb.webp",
+   "bytes": 3210
+  }
+ },
+ "sh-bt114s-front": {
+  "alt": "BT 114-S seen from the infeed side \u2014 two sets of drive rolls either side of the belt",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-front-1200.webp",
+    "bytes": 145468
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-front-800.webp",
+    "bytes": 73962
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-front-480.webp",
+    "bytes": 30668
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-front-thumb.webp",
+   "bytes": 3534
+  }
+ },
+ "sh-bt114s-pendant": {
+  "alt": "Mobile control pendant with start / stop, speed and feed controls, and the foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-pendant-1200.webp",
+    "bytes": 111736
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-pendant-800.webp",
+    "bytes": 61328
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-pendant-480.webp",
+    "bytes": 29428
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-pendant-thumb.webp",
+   "bytes": 3794
+  }
+ },
+ "sh-bt114s-square": {
+  "alt": "Square stainless tube polished on the BT 114-S",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-square-1200.webp",
+    "bytes": 79518
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-square-800.webp",
+    "bytes": 45012
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-square-480.webp",
+    "bytes": 24178
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-square-thumb.webp",
+   "bytes": 4328
+  }
+ },
+ "sh-bt114s-belt": {
+  "alt": "Abrasive belt on the contact wheel \u2014 the tube is fed between the drive rolls",
+  "variants": [
+   {
+    "w": 800,
+    "h": 779,
+    "file": "img/sahinler/sh-bt114s-belt-800.webp",
+    "bytes": 51806
+   },
+   {
+    "w": 480,
+    "h": 468,
+    "file": "img/sahinler/sh-bt114s-belt-480.webp",
+    "bytes": 24146
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 156,
+   "file": "img/sahinler/sh-bt114s-belt-thumb.webp",
+   "bytes": 3724
+  }
+ },
+ "sh-bt114s-rolls": {
+  "alt": "Geared motor and drive rolls of the feed unit with the angle scale",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-rolls-1200.webp",
+    "bytes": 88034
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-rolls-800.webp",
+    "bytes": 46062
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-rolls-480.webp",
+    "bytes": 20872
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-rolls-thumb.webp",
+   "bytes": 2864
+  }
+ },
+ "sh-bt114s-wheel": {
+  "alt": "Belt tensioning spring, angle scale and the rubber drive rolls",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-wheel-1200.webp",
+    "bytes": 164778
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-wheel-800.webp",
+    "bytes": 90422
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-wheel-480.webp",
+    "bytes": 39330
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-wheel-thumb.webp",
+   "bytes": 4172
+  }
+ },
+ "sh-bt114s-belt-2": {
+  "alt": "Belt path over the contact wheel with the drive rolls in front",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/sahinler/sh-bt114s-belt-2-1200.webp",
+    "bytes": 139194
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/sahinler/sh-bt114s-belt-2-800.webp",
+    "bytes": 83762
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/sahinler/sh-bt114s-belt-2-480.webp",
+    "bytes": 43394
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-belt-2-thumb.webp",
+   "bytes": 5340
+  }
+ },
+ "sh-bt114s-top": {
+  "alt": "BT 114-S from above \u2014 belt, contact wheel and the two feed units",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1230,
+    "file": "img/sahinler/sh-bt114s-top-1200.webp",
+    "bytes": 123322
+   },
+   {
+    "w": 800,
+    "h": 820,
+    "file": "img/sahinler/sh-bt114s-top-800.webp",
+    "bytes": 67288
+   },
+   {
+    "w": 480,
+    "h": 492,
+    "file": "img/sahinler/sh-bt114s-top-480.webp",
+    "bytes": 31210
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 156,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-top-thumb.webp",
+   "bytes": 5224
+  }
+ },
+ "isitan-logo": {
+  "alt": "ISITAN",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 314,
+    "file": "img/site/isitan-logo-1200.webp",
+    "bytes": 64910
+   },
+   {
+    "w": 800,
+    "h": 210,
+    "file": "img/site/isitan-logo-800.webp",
+    "bytes": 41412
+   },
+   {
+    "w": 480,
+    "h": 126,
+    "file": "img/site/isitan-logo-480.webp",
+    "bytes": 22214
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 42,
+   "file": "img/site/isitan-logo-thumb.webp",
+   "bytes": 5066
   }
  }
 }

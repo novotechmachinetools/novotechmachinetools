@@ -182,8 +182,8 @@ def register_images():
                 continue
             ext = os.path.splitext(f[0])[1]
             e = {"src": f"tools/src-images/{section}/{key}{ext}", "alt": p["alt"], "section": section, "trim": ext == ".png", "quality": 82}
-            if p.get("cutout") is False:
-                e["cutout"] = False
+            if p.get("cutout") is not None:      # True forces BiRefNet on photos with a grey studio background (shop presses)
+                e["cutout"] = bool(p["cutout"])
             imap[key] = e
             keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)

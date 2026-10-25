@@ -10799,7 +10799,8 @@
   "alt": "3R UHS 30-550 hydraulic translating heavy-duty 3-roll plate roll, 10 ft",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-3rhs-20-210": {
   "src": "tools/src-images/sahinler/sh-3rhs-20-210.jpg",
@@ -11281,7 +11282,8 @@
   "alt": "SDK 8 — flanging head, part carrier and control panel",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-sdk8-lcd": {
   "src": "tools/src-images/sahinler/sh-sdk8-lcd.jpg",
@@ -11296,7 +11298,8 @@
   "alt": "EFM 6 elliptical cutting and flanging machine",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-efm-vacuum": {
   "src": "tools/src-images/sahinler/sh-efm-vacuum.jpg",
@@ -11333,56 +11336,64 @@
   "alt": "DPM hydraulic shop press",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-dpmk": {
   "src": "tools/src-images/sahinler/sh-dpmk.jpg",
   "alt": "DPM-K hydraulic shop press with mobile cylinder",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-dk": {
   "src": "tools/src-images/sahinler/sh-dk.jpg",
   "alt": "DK hydraulic shop press with mobile cylinder and hand wheel",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-dpm200": {
   "src": "tools/src-images/sahinler/sh-dpm200.jpg",
   "alt": "DPM 200 t hydraulic shop press",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-at": {
   "src": "tools/src-images/sahinler/sh-at.jpg",
   "alt": "AT universal T-slot hydraulic press",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-ap": {
   "src": "tools/src-images/sahinler/sh-ap.jpg",
   "alt": "AP garage-type hydraulic press brake",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-hnm6v": {
   "src": "tools/src-images/sahinler/sh-hnm6v.jpg",
   "alt": "HNM 6V variable-angle hydraulic corner notcher",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "sh-hnm6f": {
   "src": "tools/src-images/sahinler/sh-hnm6f.jpg",
   "alt": "HNM 6F fixed 90° hydraulic corner notcher",
   "section": "sahinler",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cutout": true
  },
  "video-WjqJVURbZ6U": {
   "src": "/home/claude/gms-site/yt/WjqJVURbZ6U.jpg",
@@ -15902,6 +15913,94 @@
   "section": "value-sheet",
   "trim": false,
   "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-showroom": {
+  "src": "tools/src-images/sahinler/sh-bt114s-showroom.jpg",
+  "alt": "BT 114-S pipe polishing machine in the NovoTech showroom with the control pendant and foot pedal",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-head": {
+  "src": "tools/src-images/sahinler/sh-bt114s-head.jpg",
+  "alt": "BT 114-S — the polishing head: drive rolls, hand-wheel feed adjustment and the belt guard",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-front": {
+  "src": "tools/src-images/sahinler/sh-bt114s-front.jpg",
+  "alt": "BT 114-S seen from the infeed side — two sets of drive rolls either side of the belt",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-pendant": {
+  "src": "tools/src-images/sahinler/sh-bt114s-pendant.jpg",
+  "alt": "Mobile control pendant with start / stop, speed and feed controls, and the foot pedal",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-square": {
+  "src": "tools/src-images/sahinler/sh-bt114s-square.jpg",
+  "alt": "Square stainless tube polished on the BT 114-S",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-belt": {
+  "src": "tools/src-images/sahinler/sh-bt114s-belt.jpg",
+  "alt": "Abrasive belt on the contact wheel — the tube is fed between the drive rolls",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-rolls": {
+  "src": "tools/src-images/sahinler/sh-bt114s-rolls.jpg",
+  "alt": "Geared motor and drive rolls of the feed unit with the angle scale",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-wheel": {
+  "src": "tools/src-images/sahinler/sh-bt114s-wheel.jpg",
+  "alt": "Belt tensioning spring, angle scale and the rubber drive rolls",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-belt-2": {
+  "src": "tools/src-images/sahinler/sh-bt114s-belt-2.jpg",
+  "alt": "Belt path over the contact wheel with the drive rolls in front",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sh-bt114s-top": {
+  "src": "tools/src-images/sahinler/sh-bt114s-top.jpg",
+  "alt": "BT 114-S from above — belt, contact wheel and the two feed units",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "isitan-logo": {
+  "src": "tools/src-images/isitan-logo.png",
+  "alt": "ISITAN",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
   "cutout": false
  }
 }

@@ -30,6 +30,7 @@ DST = os.path.join(ROOT, "tools", "src-images", "sahinler")
 D = "/home/claude/sahinler/photos/dekupaj/"
 C = "/home/claude/sahinler/photos/cat/"
 P = "/home/claude/sahinler/orig/img/"
+B = "/home/claude/sahinler/photos/bt114s/"   # NovoTech showroom photos (Oct 2026)
 MAX_SIDE = 2600
 
 A = "lama"
@@ -69,6 +70,19 @@ PHOTOS = {
     "sh-bt114s": dict(src=C + "BT-114-S.png", alt="BT 114-S automatic pipe polishing and sanding machine with the mobile control pendant"),
     "sh-bt114s-rail": dict(src=C + "bt114-s-pipes.png", cutout=False, alt="Stainless handrail tube polished on the BT 114-S"),
     "sh-bt114s-tube": dict(src=C + "BT-114-uygulama.png", cutout=False, alt="BT 114-S — satin-finished stainless tube"),
+    # NovoTech's own showroom photos of the BT 114-S (Mississauga, Oct 2026) — the supplier's badges and nameplate inpainted
+    "sh-bt114s-showroom": dict(src=B + "showroom.jpg", cutout=False, boxes=[(680, 1290, 910, 1380, A), (1050, 860, 1180, 1010, A), (1420, 680, 1630, 820, A)],
+                               alt="BT 114-S pipe polishing machine in the NovoTech showroom with the control pendant and foot pedal"),
+    "sh-bt114s-head": dict(src=B + "head.jpg", cutout=False, alt="BT 114-S — the polishing head: drive rolls, hand-wheel feed adjustment and the belt guard"),
+    "sh-bt114s-front": dict(src=B + "front.jpg", cutout=False, boxes=[(735, 1560, 1140, 1810, A)], alt="BT 114-S seen from the infeed side — two sets of drive rolls either side of the belt"),
+    "sh-bt114s-pendant": dict(src=B + "pendant.jpg", cutout=False, boxes=[(460, 90, 700, 220, A), (295, 420, 430, 760, A), (0, 1290, 140, 1430, A)],
+                              alt="Mobile control pendant with start / stop, speed and feed controls, and the foot pedal"),
+    "sh-bt114s-square": dict(src=B + "square-tube.jpg", cutout=False, alt="Square stainless tube polished on the BT 114-S"),
+    "sh-bt114s-belt": dict(src=B + "belt.jpg", cutout=False, alt="Abrasive belt on the contact wheel — the tube is fed between the drive rolls"),
+    "sh-bt114s-rolls": dict(src=B + "rolls.jpg", cutout=False, alt="Geared motor and drive rolls of the feed unit with the angle scale"),
+    "sh-bt114s-wheel": dict(src=B + "wheel.jpg", cutout=False, alt="Belt tensioning spring, angle scale and the rubber drive rolls"),
+    "sh-bt114s-belt-2": dict(src=B + "belt-2.jpg", cutout=False, boxes=[(480, 2280, 830, 2576, A)], alt="Belt path over the contact wheel with the drive rolls in front"),
+    "sh-bt114s-top": dict(src=B + "top.jpg", cutout=False, crop=(0, 0, 1932, 1980), alt="BT 114-S from above — belt, contact wheel and the two feed units"),
     # the p69 photos are of the SDK circle cutting & flanging machine (verified visually)
     "sh-sdk6-b": dict(src=D + "p69-8Q9A5018.jpg", boxes=[(4995, 945, 5270, 1095, A)], alt="SDK 6 circular cutting and flanging machine — part carrier, flanging head and control box"),
     "sh-sdk-rolls": dict(src=D + "p69-20230306-15144-.jpg", alt="SDK — top and bottom flanging rolls"),

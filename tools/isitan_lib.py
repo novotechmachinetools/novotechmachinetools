@@ -291,6 +291,8 @@ def register_images(images, keys_out):
             shutil.copy(full, dst)
         imap[key] = {"src": f"tools/src-images/isitan/{key}{ext}", "alt": alt, "section": "forming", "trim": ext == ".png", "quality": 82, **opts}
         keys.append(key)
+    imap["isitan-logo"] = {"src": "tools/src-images/isitan-logo.png", "alt": "ISITAN", "section": "site", "trim": True, "quality": 90, "cutout": False}
+    keys.append("isitan-logo")
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", keys_out), "w").write(",".join(keys))
     return keys

@@ -1,7 +1,6 @@
 {
  "order": [
   "isitan-pn",
-  "isitan-td-01",
   "isitan-sff",
   "isitan-sfc-350-vx",
   "isitan-sfc-v",
@@ -165,130 +164,6 @@
    },
    "headline": "Tube 11/16″ to 3-1/2″ OD · notching to 50° · 10 dovetail drums included",
    "group": "notch",
-   "brand": "isitan"
-  },
-  "isitan-td-01": {
-   "id": "isitan-td-01",
-   "name": "TD-01 — motorized tube-end deburring machine",
-   "short": "TD-01",
-   "models_label": "TD-01",
-   "summary": "A bench deburring machine with a Ø10″ × 4″ wire brush at 1,500 rpm that cleans the inside and outside of a tube end in one pass, up to Ø3-1/2″ — round, rectangular, oval and other profiles in stainless, mild steel or aluminum. Sits beside the cold saw or the bender and takes the burr off before welding or bending, at very low running cost.",
-   "features": [
-    "Inside and outside deburring up to Ø3-1/2″ in one pass",
-    "Wire brush Ø10″ × 4″ at 1,500 rpm — fast, easy deburring at high speed",
-    "Round, rectangular, oval and other profiles; stainless steel, mild steel, aluminum and more",
-    "Balanced, long-life construction; works alongside tube benders and saws",
-    "3 HP motor; low running cost, high productivity"
-   ],
-   "optional": [
-    "Replacement wire brushes",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
-   ],
-   "images": [
-    "is-td-01"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "TD-01 — motorized tube-end deburring machine",
-      "sub": "Wire-brush deburring inside and out",
-      "models": [
-       "TD-01"
-      ],
-      "rows": [
-       {
-        "label": "Deburring capacity",
-        "sub": "inside and outside",
-        "cells": [
-         "Up to Ø3-1/2″ (Ø90 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Wire brush",
-        "sub": "",
-        "cells": [
-         "Ø10″ × 4″ (Ø250 × 100 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Brush speed",
-        "sub": "",
-        "cells": [
-         "1,500 rpm"
-        ],
-        "key": false
-       },
-       {
-        "label": "Profiles",
-        "sub": "",
-        "cells": [
-         "Round, rectangular, oval and other tube"
-        ],
-        "key": false
-       },
-       {
-        "label": "Materials",
-        "sub": "",
-        "cells": [
-         "Stainless steel, mild steel, aluminum and more"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor power",
-        "sub": "",
-        "cells": [
-         "3 HP (2.2 kW)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "sub": "",
-        "cells": [
-         "18 × 18 × 14″ (450 × 450 × 350 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "88 lb (40 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "TD-01",
-      "glance": [
-       "Deburrs tube ends to Ø3-1/2″",
-       "Ø10″ × 4″ wire brush · 1,500 rpm",
-       "3 HP",
-       "88 lb"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "detail",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "TD-01": "Wire-brush deburring of tube ends to Ø3-1/2″"
-    },
-    "note": "Dimensions are overall L × W × H."
-   },
-   "headline": "Tube ends to Ø3-1/2″ · inside and outside in one pass · Ø10″ wire brush",
-   "group": "deburr",
    "brand": "isitan"
   },
   "isitan-sff": {

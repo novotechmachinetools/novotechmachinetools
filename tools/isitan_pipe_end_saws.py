@@ -1,4 +1,4 @@
-"""ISITAN section: pipe-end processing (PN notchers, TD deburring, SFF end formers; catalogue pages 50–51)
+"""ISITAN section: pipe-end processing (PN notchers, SFF end formers; catalogue pages 50–51)
 and SFC circular cold saws (pages 52–53) — three category pages: tube notchers (old-site URL pipe-notcher kept),
 tube end forming machines, cold saws."""
 from isitan_lib import *  # noqa: F401,F403
@@ -14,7 +14,6 @@ P_END = P_NOTCH   # kept for older imports
 IMAGES = {
     "is-pn-17-90": ("img/ISITAN-PN-17-90.jpg", "ISITAN PN 17/90 motorized belt-sander tube notcher, 11/16″ to 3-1/2″ OD"),
     "is-pn-20-76": ("img/ISITAN-PN20-76.jpg", "ISITAN PN 20/76 compact tube notcher with movable clamp, 13/16″ to 3″ OD"),
-    "is-td-01": ("img/ISITAN-TD-01.jpg", "ISITAN TD-01 motorized tube-end deburring machine, inside and outside to Ø3-1/2″"),
     "is-sff-90-1": ("img/ISITAN-SFF-90.jpg", "ISITAN SFF 90-1 single-station hydraulic pipe-end former, expand and reduce to Ø3-1/2″"),
     "is-sff-60-1": ("img/ISITAN-SFF-60-2.jpg", "ISITAN SFF 60-1 single-station hydraulic pipe-end former, expand and reduce to Ø2-3/8″"),
     "is-sff-tooling": ("cut/p51-386.png", "SFF end former — easy tool-changing system with the end-forming tooling set"),
@@ -41,22 +40,6 @@ def t_pn():
               "PN 20/76": ["Notches 13/16″ – 3″ OD", "Up to 50° · 4 × 79″ belt · movable clamp", "3 HP", "287 lb"]}
     caps = {"PN 17/90": "Notches 11/16″ – 3-1/2″ OD tube, up to 50°", "PN 20/76": "Notches 13/16″ – 3″ OD tube, up to 50°"}
     return manual_spec([t], GK_END, glance, caps, "Notching capacity is the tube outside diameter; dovetail drums for other sizes are optional. Dimensions are overall L × W × H.")
-
-
-def t_td():
-    t = manual_table("TD-01 — motorized tube-end deburring machine", "Wire-brush deburring inside and out", ["TD-01"], [
-        ("Deburring capacity", "inside and outside", ["Up to Ø3-1/2″ (Ø90 mm)"]),
-        ("Wire brush", ["Ø10″ × 4″ (Ø250 × 100 mm)"]),
-        ("Brush speed", ["1,500 rpm"]),
-        ("Profiles", ["Round, rectangular, oval and other tube"]),
-        ("Materials", ["Stainless steel, mild steel, aluminum and more"]),
-        ("Motor power", ["3 HP (2.2 kW)"]),
-        ("Dimensions L × W × H", ["18 × 18 × 14″ (450 × 450 × 350 mm)"]),
-        ("Weight", ["88 lb (40 kg)"]),
-    ], key_labels=("Deburring capacity",))
-    glance = {"TD-01": ["Deburrs tube ends to Ø3-1/2″", "Ø10″ × 4″ wire brush · 1,500 rpm", "3 HP", "88 lb"]}
-    caps = {"TD-01": "Wire-brush deburring of tube ends to Ø3-1/2″"}
-    return manual_spec([t], GK_END, glance, caps, "Dimensions are overall L × W × H.")
 
 
 def t_sff():
@@ -124,20 +107,6 @@ FAMILIES = [
          images=["is-pn-17-90", "is-pn-20-76"],
          videos=[], specs=t_pn(),
          headline="Tube 11/16″ to 3-1/2″ OD · notching to 50° · 10 dovetail drums included"),
-    dict(id="isitan-td-01", group="deburr", page=P_NOTCH,
-         name="TD-01 — motorized tube-end deburring machine",
-         short="TD-01",
-         models_label="TD-01",
-         summary="A bench deburring machine with a Ø10″ × 4″ wire brush at 1,500 rpm that cleans the inside and outside of a tube "
-                 "end in one pass, up to Ø3-1/2″ — round, rectangular, oval and other profiles in stainless, mild steel or "
-                 "aluminum. Sits beside the cold saw or the bender and takes the burr off before welding or bending, at very "
-                 "low running cost.",
-         features=["Inside and outside deburring up to Ø3-1/2″ in one pass", "Wire brush Ø10″ × 4″ at 1,500 rpm — fast, easy deburring at high speed",
-                   "Round, rectangular, oval and other profiles; stainless steel, mild steel, aluminum and more", "Balanced, long-life construction; works alongside tube benders and saws", "3 HP motor; low running cost, high productivity"],
-         optional=["Replacement wire brushes", VOLT],
-         images=["is-td-01"],
-         videos=[], specs=t_td(),
-         headline="Tube ends to Ø3-1/2″ · inside and outside in one pass · Ø10″ wire brush"),
     dict(id="isitan-sff", group="form", page=P_FORM,
          name="SFF 90-1 · SFF 60-1 — single-station hydraulic pipe-end forming machines",
          short="SFF end formers",
@@ -188,17 +157,15 @@ FAMILIES = [
 PAGES = {
     P_NOTCH: dict(
         title="Tube Notchers & Pipe Notching Machines | NovoTech",
-        meta="Belt-sander tube and pipe notchers for tube 11/16″ to 3-1/2″ OD at any angle to 50°, ten dovetail drums included, plus the TD-01 tube-end deburring machine.",
+        meta="Belt-sander tube and pipe notchers for tube 11/16″ to 3-1/2″ OD at any angle to 50°, ten dovetail drums included.",
         h1="Tube notchers and pipe notching machines",
-        intro="A tube notcher (pipe notcher or coping machine) grinds a saddle-shaped notch into the end of a tube so it fits tightly against the tube it joins — the joint of every welded handrail, roll cage, trailer, gate and furniture frame. ISITAN's PN belt-sander notchers cope that saddle in seconds, square or at any angle up to 50°, with ten dovetail drums from Ø3/4″ to 3″ included so the notch matches the mating tube; the TD-01 wire-brush deburring machine cleans the cut end inside and out in one pass before it goes to the notcher or the bender. Both sit beside the cold saw and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
-        points=["Pipe notchers — tube 11/16″ to 3-1/2″ OD, notching to 50°, 10 dovetail drums standard", "PN 17/90 with 4 × 47″ belt; compact PN 20/76 with movable clamp and 4 × 79″ belt", "TD-01 deburring — inside and outside to Ø3-1/2″ in one pass"],
-        hero="is-pn-17-90", minis=["is-pn-20-76", "is-td-01"],
-        groups=[("notch", "Tube notchers", "PN belt-sander pipe notching machines with ten dovetail drums included."),
-                ("deburr", "Tube-end deburring", "The TD-01 wire-brush machine that cleans the cut end inside and out before notching or bending.")],
+        intro="A tube notcher (pipe notcher or coping machine) grinds a saddle-shaped notch into the end of a tube so it fits tightly against the tube it joins — the joint of every welded handrail, roll cage, trailer, gate and furniture frame. ISITAN's PN belt-sander notchers cope that saddle in seconds, square or at any angle up to 50°, with ten dovetail drums from Ø3/4″ to 3″ included so the notch matches the mating tube. Both sit beside the cold saw and take the hand grinding out of tube fabrication — with CSA-approved panels and support from Mississauga, ON.",
+        points=["Pipe notchers — tube 11/16″ to 3-1/2″ OD, notching to 50°, 10 dovetail drums standard", "PN 17/90 with 4 × 47″ belt; compact PN 20/76 with movable clamp and 4 × 79″ belt"],
+        hero="is-pn-17-90", minis=["is-pn-20-76"],
+        groups=[("notch", "Tube notchers", "PN belt-sander pipe notching machines with ten dovetail drums included.")],
         faq=[{"q": "What is a tube notcher for?", "a": "When one tube meets another in a T or at an angle — handrail posts, roll cages, furniture and bike frames, trailer and gate frames — the end has to be coped to the curve of the tube it joins so the weld closes without gaps. The PN notcher grinds that saddle on a sanding belt against a drum of the mating tube's diameter in seconds, square or at any angle to 50°."},
              {"q": "Which notcher — PN 17/90 or PN 20/76?", "a": "The PN 17/90 takes the larger range, 11/16″ to 3-1/2″ OD, on a 4 × 47″ belt with easy belt adjustment. The PN 20/76 is the compact notcher for 13/16″ to 3″ OD with a longer 4 × 79″ belt and a movable clamp. Both come with the same ten dovetail drums and 3 HP motor."},
              {"q": "Belt notcher or hole-saw notcher?", "a": "A hole-saw notcher cuts the cope with a hole saw of the mating tube's diameter — slow, and the saw dulls on stainless. The PN grinds the cope on a sanding belt wrapped around a dovetail drum, so it is faster, works on any material and leaves a clean, square-to-weld edge; the drum is swapped in seconds for the next tube size."},
-             {"q": "Does the notcher deburr the tube as well?", "a": "No — the notcher shapes the cope. The TD-01 is the machine that removes the burr left by the saw: a Ø10″ wire brush cleans the inside and outside of the tube end in one pass, on round, square and rectangular tube to Ø3-1/2″, so the tube is ready to notch, bend or weld."},
              VOLT_FAQ_GENERIC],
         faq_title="Questions we get asked about tube notchers",
     ),
@@ -221,7 +188,7 @@ PAGES = {
                 "Wecotech compact expanders and reducers from Ø3/8″ to Ø23.6″, 21 – 26 US tons, 2 – 4 s cycles, touchscreen programming",
                 "Wecotech CNC inner / outer formers to Ø23.6″ with 8 – 24 radial pistons, Tubimatic machines for standard C and IO tools, beading, flanging, shearing and deburring"],
         hero="wt-wecomatic-200", minis=["is-sff-90-1", "wt-tubex"],
-        groups=[("form", "ISITAN hydraulic tube end formers", "SFF single-station end forming machines for expanding and reducing tube ends with one tooling set.", "isitan"),
+        groups=[("form", "ISITAN premium line — hydraulic tube end formers", "SFF single-station end forming machines for expanding and reducing tube ends with one tooling set.", "isitan"),
                 ("wt-easy", "Wecotech Easy line — compact expanders, reducers and auxiliaries", "Entry-level machines with the electrics and hydraulics in one compact housing: the Tubex expander, Tubin reducers, the Tubepress straightening press and the Tubepunch slot punching unit.", "wecotech"),
                 ("wt-universal", "Wecotech Universal line — modular production machines", "The HW-Flex housing with touchscreen programming and a choice of options: Tubex-U and Tubin-U, the Tubax axial and rotary formers, the Tubax-Multi forming centre and the Tubiroll-2R beading machine — small to large.", "wecotech"),
                 ("wt-traditional", "Wecotech Traditional line — for standard C and IO tooling", "Production end formers that take the commercially available C-tools and IO-tools of the exhaust trade, hydraulic or servo-electric (Electra), with one to three tool stations.", "wecotech"),
@@ -245,8 +212,8 @@ PAGES = {
         intro="A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Two families of cold saw machines: ISITAN's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head — and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the ISITAN saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON.",
         points=["Manual and semi-automatic circular cold saws: round to Ø4-1/2″, mitre 45° both ways, 10-3/4″ – 13-3/4″ HSS blades", "Automatic carbide cold saws: solid bar Ø3/8″ – 6-1/4″ at up to 920 ft/min, servo feed, 20 ft magazine loader", "Automatic HSS cold saws: tube and bar to Ø4″, ±.004″ feed accuracy, several lengths per bar"],
         hero="is-sfc-350-vx", minis=["bk-bmdo-150xs-1", "bk-bmdo-80cs-1"],
-        groups=[("semi", "ISITAN semi-automatic cold saw", "The SFC 350-VX with foot-switch cycle and hydro-pneumatic head descent."),
-                ("manual", "ISITAN pull-down cold saws", "SFC VP with pneumatic vise and SFC V with manual vise, 10-3/4″ and 12-1/2″ blades."),
+        groups=[("semi", "ISITAN premium line — semi-automatic cold saw", "The SFC 350-VX with foot-switch cycle and hydro-pneumatic head descent."),
+                ("manual", "ISITAN premium line — pull-down cold saws", "SFC VP with pneumatic vise and SFC V with manual vise, 10-3/4″ and 12-1/2″ blades."),
                 ("bekamak-circular", "Bekamak automatic circular saws — TCT carbide and HSS", "Production cold saws that feed, cut and count by themselves: BMDO XS carbide saws for solid bar to Ø6-1/4″ and BMDO CS HSS saws for tube and bar to Ø4″.", "bekamak")],
         faq=[{"q": "Cold saw or abrasive chop saw?", "a": "An abrasive chop saw grinds through the steel at high speed, leaving a hot, burred, slightly bevelled end and sparks. A cold saw cuts with a slow HSS blade (45–90 rpm) under coolant, so the cut is square, cool to the touch, burr-free and ready to weld or fit — and the blade is resharpened dozens of times instead of thrown away."},
              {"q": "TCT carbide or HSS cold saw?", "a": "A carbide (TCT) blade runs at 130–920 ft/min and is the fastest way to cut solid steel bar in production — the Bekamak BMDO XS saws are built around it, with servo feeding and a magazine loader for unattended runs. HSS blades run slower (22–130 ft/min on the BMDO CS) and are the choice for tube, thin walls and mixed work; the XS saws accept HSS blades for tube as well."},

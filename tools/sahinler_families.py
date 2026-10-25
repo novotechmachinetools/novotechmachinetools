@@ -612,7 +612,7 @@ POLISH_FAMILIES = [
                    "Pipe / tube Ø3/8″ – Ø4-1/2″ (10 – 114 mm); polishes bent pipe and tube up to a 45° bend", "Variable feeding speed and variable sanding-belt speed by inverter drive",
                    "2 abrasive belts 37 × 2″ included; opening cover for belt changes and cleaning", "Manual pipe-clamping adjustment; fixing attachment for the motor; holder for manual feeding"],
          optional=["Abrasive belts in other grits", VOLT],
-         images=["sh-bt114s", "sh-bt114s-rail", "sh-bt114s-tube"],
+         images=["sh-bt114s", "sh-bt114s-showroom", "sh-bt114s-head", "sh-bt114s-front", "sh-bt114s-top", "sh-bt114s-belt", "sh-bt114s-square", "sh-bt114s-rolls", "sh-bt114s-wheel", "sh-bt114s-belt-2", "sh-bt114s-pendant", "sh-bt114s-rail", "sh-bt114s-tube"],
          videos=vids(("j8vE5Dmc4QI", "BT 114-S pipe sander — pipe polishing machine"), ("zd5Zhu82wPo", "BT 114-S square tube sanding and polishing machine"), ("kotI1chSYnY", "Curved pipe polishing on the BT 114-S"), ("6SVmTnY_4rs", "BT 114-S — diameter adjustment"), ("o23ZQEoAvzU", "BT 114-S automatic pipe sander with feeder")),
          specs=simple_spec([{"title": "BT 114-S", "sub": "automatic pipe polishing & sanding machine", "models": ["BT 114-S"], "rows": [
              {"label": "Working capacity", "sub": "pipe / tube OD", "cells": ["Ø3/8″ – Ø4-1/2″ (10 – 114 mm)"], "key": True},

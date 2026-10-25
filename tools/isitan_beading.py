@@ -18,6 +18,9 @@ IMAGES = {
     "is-ikmp-12p": ("img/ISITAN-IKMP-12P.jpg", "ISITAN IKMP 1.2 P bead roller with pneumatic top shaft"),
     "is-ikm-rolls-extra": ("cut/p30-173.png", "Extra roll sets for IKMP and IKM bead rollers"),
     "is-ikm-rolls-std": ("cut/p30-174.png", "Standard roll sets for IKMP and IKM bead rollers"),
+    "is-ls-13p": ("cut/p34-207.png", "ISITAN LS-13P pneumatic heavy-duty lock seaming machine"),
+    "is-ls-13p-profile": ("cut/p34-209.png", "LS-13P — lock-seam profile"),
+    "is-ls-13p-seam": ("cut/p34-210.png", "LS-13P — finished lock seam"),
 }
 
 NOTE = "Beading capacity is for mild steel; thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
@@ -86,6 +89,23 @@ def t_motorized():
     return manual_spec([t1, t2], GK, glance, caps, NOTE)
 
 
+def t_ls():
+    t = manual_table("LS-13P", "pneumatic heavy-duty lock seamer", ["LS-13P"], [
+        ("Seaming capacity", "mild steel", ["18 ga (1.2 mm)"]),
+        ("Seaming length", ["4.3 ft · 51.2″ (1300 mm)"]),
+        ("Seaming Ø (min – max)", ["3.9″ – 5.1″ (100–130 mm)"]),
+        ("Working pressure (pneumatic)", ["120 psi (8 bar)"]),
+        ("Press force", ["220 lbf (100 kgf)"]),
+        ("Motor power", ["0.5 HP (0.37 kW)"]),
+        ("Dimensions L × W × H", ["68 × 35 × 65″ (1730 × 890 × 1650 mm)"]),
+        ("Weight", ["661 lb (300 kg)"]),
+    ], key_labels=("Seaming capacity", "Seaming length"))
+    glance = {"LS-13P": ["seams to 51.2″ (1300 mm)", "18 ga (1.2 mm)", "—", "—", "0.5 HP"]}
+    caps = {"LS-13P": "closes lock seams to 18 ga (1.2 mm) · 51.2″ (1300 mm) long · Ø3.9–5.1″ pipe"}
+    return manual_spec([t], GK, glance, caps,
+                       "Seaming capacity is for mild steel; the metric values in brackets are the manufacturer's nominal figures.")
+
+
 FAMILIES = [
     dict(id="isitan-hibks", group="beading", page=SLUG,
          name="HIBKS / IBKS hydraulic and motorized bead rollers",
@@ -119,16 +139,31 @@ FAMILIES = [
          images=["is-ibks-18", "is-ikm-12", "is-ikmp-12", "is-ikmp-12p", "is-ikm-rolls-std", "is-ikm-rolls-extra"],
          videos=[], specs=t_motorized(),
          headline="Beads sheet up to 14 ga (1.8 mm) · motorized · pneumatic top shaft on the IKMP 1.2 P"),
+    dict(id="isitan-ls-13p", group="seamer", page=SLUG,
+         name="LS-13P pneumatic heavy-duty lock seaming machine",
+         short="LS-13P lock seamer",
+         models_label="LS-13P",
+         summary="A motorized lock seamer that closes the longitudinal lock seam of round ducts and pipes: a gearbox-driven pinching system "
+                 "with pneumatic pressing, hardened seaming rolls on a ball-bearing slide, and pinching and rotation controlled from the "
+                 "foot pedal. Seams up to 51″ long in 18 ga sheet on pipes of 3.9″ to 5.1″ diameter — the companion to the slip roll and "
+                 "the bead roller in the HVAC shop.",
+         features=["Gearbox-driven pinching system; pneumatic pressing for easy operation", "Pinching and rotation controlled by the standard foot pedal",
+                   "Hardened seaming rolls; sliding system on ball bearings", "Pneumatic system protected by air filter", "Operator's manual"],
+         optional=[VOLT],
+         images=["is-ls-13p", "is-ls-13p-profile", "is-ls-13p-seam"],
+         videos=[], specs=t_ls(),
+         headline="Lock seams to 51.2″ (1300 mm) in 18 ga (1.2 mm) · pipe Ø3.9–5.1″"),
 ]
 
 PAGE = dict(
-    title="Bead Roller Machines for Sheet Metal & HVAC | NovoTech",
-    meta="Hydraulic and motorized bead roller machines for sheet to 8 ga — HIBKS, IBKS, IKM and IKMP with beading, swaging and flanging roll sets. CSA panels, parts in Mississauga, ON.",
-    h1="Bead rollers and beading machines",
+    title="Bead Rollers & Lock Seamer for Sheet Metal & HVAC | NovoTech",
+    meta="Hydraulic and motorized bead roller machines for sheet to 8 ga — HIBKS, IBKS, IKM and IKMP with beading, swaging and flanging roll sets — and the LS-13P pneumatic lock seamer.",
+    h1="Bead rollers, beading machines and the lock seamer",
     intro="Bead rollers — also called beading machines, rotary machines or swagers — form stiffening beads, wired edges, flanges, crimps and seams in sheet metal for HVAC ducts, drums, tanks, buckets and architectural work. ISITAN builds them motorized and hydraulic — from the IKM and IKMP cast-iron bead rollers with foot-pedal control to the HIBKS 4.0, whose hydraulic top roll beads 8 ga steel under constant pressure. Every machine comes with its sets of standard rolls, a CSA-approved panel and support from Mississauga, ON.",
-    points=["Hydraulic HIBKS and motorized IBKS for sheet to 8 ga (4 mm)", "Motorized IKM / IKMP with 4 speeds or pneumatic top shaft", "Standard roll sets (4 to 8 per machine) and the roll spanner key included; extra sets made to order"],
+    points=["Hydraulic HIBKS and motorized IBKS for sheet to 8 ga (4 mm)", "Motorized IKM / IKMP with 4 speeds or pneumatic top shaft", "LS-13P lock seamer: closes Pittsburgh and snap-lock seams to 51″ on Ø3.9 – 5.1″ ducts in 18 ga", "Standard roll sets (4 to 8 per machine) and the roll spanner key included; extra sets made to order"],
     hero="is-hibks-4", minis=["is-ikmp-12p", "is-ibks-18"],
-    groups=[("beading", "Bead rollers line-up", "From the IKM motorized bead roller to the hydraulic HIBKS 4.0 — all with standard roll sets included.", "isitan")],
+    groups=[("beading", "Bead rollers line-up", "From the IKM motorized bead roller to the hydraulic HIBKS 4.0 — all with standard roll sets included.", "isitan"),
+            ("seamer", "Lock seamer", "The LS-13P pneumatic lock seaming machine that closes the longitudinal seam of round ducts after the bead roller.", "isitan")],
     faq=[{"q": "Bead roller, beading machine, rotary machine or swager — what is the difference?", "a": "They are the same machine under different names: two shaft-mounted rolls that form a profile in sheet metal as it is turned through them. \"Bead roller\" is the common North American term, \"swager\" the older sheet-metal trade word, \"rotary machine\" the HVAC term. The roll sets decide what it does — beading, wiring, crimping, flanging, burring or trimming."},
          {"q": "Which rolls are included?", "a": "Every ISITAN bead roller ships with its standard roll sets — 4 sets (S1–S4) on the HIBKS / IBKS 4.0 and 2.5, 3 on the IBKS 1.8, 8 sets on the IKM 1.2 and IKMP 1.2 — plus the roll spanner key. Extra sets (E1–E8) and rolls for special jobs are made to order; tell us the profile you need."},
          {"q": "Hydraulic or motorized top roll?", "a": "On the IBKS the operator sets the gap between the rolls by hand and the motor turns them. On the HIBKS the top roll is moved hydraulically, so the pressure stays constant through the bead and deep beads in 8 ga steel are formed in one pass with the foot pedal — the choice for production work and heavier sheet."},
