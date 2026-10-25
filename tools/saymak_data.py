@@ -92,8 +92,9 @@ def span(data):
     return f"{feet(data[0][2])} – {feet(data[-1][2])}"
 
 
-def vids(*ids):
-    return [{"id": i, "title": t} for i, t in ids]
+def vids(*ids_titles):
+    from sahinler_lib import vids as _vids      # NovoTech's own channel: id, title, duration → video dict with thumb
+    return _vids(*ids_titles)
 
 
 STD_SRGM = ["NC-controlled back gauge with 29.5″ (750 mm) stroke", "Squaring arm with T-slot, stopper and ruler", "Front sheet holding arms; finger protection guard",
@@ -131,7 +132,7 @@ FAMILIES = [
          features=["1/8″ (3 mm) mild steel; 12 ga on the 2560; 35 strokes per minute"] + STD_H,
          optional=OPT_H,
          images=["sm-srgm-h", "sm-srgm-h-panel", "sm-srgm-h-rear", "sm-srgm-h-gauge"],
-         videos=[],   # the SRGM videos on NovoTech's channel show the maker's logo — left off while the line is sold as NovoTech premium
+         videos=[],
          specs=spec([table(SRGM_H, "SRGM-H", "Light type direct-gear motorised guillotines")])),
     dict(id="nt-shear-srgm", group="shear-standard", page=P_SHEAR, brand=BRAND,
          name=f"SRGM mechanical guillotine shears, 1/4″ × {span(SRGM)}",
@@ -144,7 +145,7 @@ FAMILIES = [
          features=["1/4″ (6 mm) mild steel on the 1100 and 1360, 3/16″ to 5/32″ on the 1560 – 3200, 1/8″ on the 4200; 31 strokes per minute"] + STD_SRGM,
          optional=OPT_SRGM,
          images=["sm-srgm", "sm-srgm-table", "sm-srgm-rear", "sm-elgo-p40t"],
-         videos=[],   # the SRGM videos on NovoTech's channel show the maker's logo — left off while the line is sold as NovoTech premium
+         videos=vids(("MQNV9oMWMNQ", "SRGM mechanical shear"), ("6gRA2_DOkFs", "SRGM 1360 mechanical shear")),
          specs=spec([table(SRGM, "SRGM", "Direct-gear motorised guillotines")])),
     dict(id="nt-shear-srgm-hfr", group="shear-return", page=P_SHEAR, brand=BRAND,
          name=f"SRGM-HFR light type guillotine shears with return-to-sender, 1/8″ × {span(SRGM_HFR)}",
@@ -156,7 +157,7 @@ FAMILIES = [
          features=["1/8″ (3 mm) mild steel; 12 ga on the 2520; 35 strokes per minute"] + STD_FR,
          optional=OPT_FR,
          images=["sm-srgm-hfr", "sm-srgm-hfr-blade", "sm-srgm-fr-rear"],
-         videos=[],   # the SRGM videos on NovoTech's channel show the maker's logo — left off while the line is sold as NovoTech premium
+         videos=vids(("hF92ADE0DMA", "SRGM HFR guillotine shear with return-to-front and return-to-rear")),
          specs=spec([table(SRGM_HFR, "SRGM-HFR", "Light type direct-gear motorised guillotines with return-to-sender")])),
     dict(id="nt-shear-srgm-fr", group="shear-return", page=P_SHEAR, brand=BRAND,
          name=f"SRGM-FR mechanical guillotine shears with return-to-sender, 1/4″ × {span(SRGM_FR)}",
@@ -168,7 +169,7 @@ FAMILIES = [
          features=["1/4″ (6 mm) mild steel on the 1100 and 1360, 3/16″ to 5/32″ on the 1560 – 3200, 1/8″ on the 4200; 31 strokes per minute"] + STD_FR,
          optional=OPT_FR,
          images=["sm-srgm-fr", "sm-srgm-fr-panel", "sm-srgm-fr-rear", "sm-srgm-fr-open"],
-         videos=[],   # the SRGM videos on NovoTech's channel show the maker's logo — left off while the line is sold as NovoTech premium
+         videos=vids(("Cc6JwtRAidg", "SRGM FR guillotine shear with return-to-front and return-to-rear"), ("5Kv4G4OqOy4", "SRGM FR NC mechanical shear")),
          specs=spec([table(SRGM_FR, "SRGM-FR", "Direct-gear motorised guillotines with return-to-sender")])),
     dict(id="nt-shear-srgm-hcl", group="shear-line", page=P_SHEAR, brand=BRAND,
          name=f"SRGM-HCL light type shears for cut-to-length lines, 1/8″ × {span(SRGM_HCL)}",
