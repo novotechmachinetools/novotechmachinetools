@@ -18,13 +18,6 @@ IMAGES = {
     "is-ikmp-12p": ("img/ISITAN-IKMP-12P.jpg", "İşitan IKMP 1.2 P bead roller with pneumatic top shaft"),
     "is-ikm-rolls-extra": ("cut/p30-173.png", "Extra roll sets for IKMP and IKM bead rollers"),
     "is-ikm-rolls-std": ("cut/p30-174.png", "Standard roll sets for IKMP and IKM bead rollers"),
-    "is-ik-12": ("img/ISITAN-IK-12.jpg", "İşitan IK 1.2 manual bead roller (swager) — cast-iron frame, 8 sets of rolls"),
-    "is-ik-08": ("img/ISITAN-IK-083.jpg", "İşitan IK 0.8 manual bead roller — cast-iron frame, 7 sets of rolls"),
-    "is-iks-13": ("img/ISITAN-IKS-M-13.jpg", "İşitan IKS 1.3 manual bead roller — steel-plate frame"),
-    "is-iks-10": ("img/ISITAN-IKS-10.jpg", "İşitan IKS 1.0 manual bead roller — steel-plate frame"),
-    "is-ik-rolls-extra": ("cut/p31-185.png", "Extra roll sets for IK / IKMP 1.2 bead rollers"),
-    "is-ik-rolls-s1": ("cut/p31-186.png", "Standard roll sets S1–S5 for IK 0.8 and IK 1.2"),
-    "is-ik-rolls-s7": ("cut/p31-187.png", "Standard roll sets S7–S8 for IK 0.8 and IK 1.2"),
 }
 
 NOTE = "Beading capacity is for mild steel; thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
@@ -93,32 +86,6 @@ def t_motorized():
     return manual_spec([t1, t2], GK, glance, caps, NOTE)
 
 
-def t_manual():
-    t1 = manual_table("IK 1.2 · IK 0.8", "cast-iron frame", ["IK 1.2", "IK 0.8"], [
-        ("Shaft length", ["5.5″ (140 mm)", "4.3″ (110 mm)"]),
-        ("Beading capacity", "mild steel", ["18 ga (1.2 mm)", "22 ga (0.8 mm)"]),
-        ("Roll Ø", ["2.44″ (62 mm)", "2.20″ (56 mm)"]),
-        ("Throat depth", ["3.9″ (100 mm)", "3.1″ (80 mm)"]),
-        ("Dimensions L × W × H", ["22 × 9 × 20″ (560 × 230 × 510 mm)", "15 × 7 × 15″ (380 × 180 × 380 mm)"]),
-        ("Weight", ["110 lb (50 kg)", "66 lb (30 kg)"]),
-    ], key_labels=("Beading capacity", "Shaft length"))
-    t2 = manual_table("IKS 1.3 · IKS 1.0", "steel-plate frame", ["IKS 1.3", "IKS 1.0"], [
-        ("Shaft length", ["7.1″ (180 mm)", "10.2″ (260 mm)"]),
-        ("Beading capacity", "mild steel", ["18 ga (1.3 mm)", "20 ga (1 mm)"]),
-        ("Roll Ø", ["2.44″ (62 mm)", "2.20″ (56 mm)"]),
-        ("Throat depth", ["9.1″ (230 mm)", "6.3″ (160 mm)"]),
-        ("Dimensions L × W × H", ["20 × 12 × 20″ (510 × 300 × 510 mm)", "20 × 10 × 20″ (510 × 250 × 510 mm)"]),
-        ("Weight", ["110 lb (50 kg)", "88 lb (40 kg)"]),
-    ], key_labels=("Beading capacity", "Shaft length"))
-    glance = {"IK 1.2": ["5.5″ (140 mm)", "18 ga (1.2 mm)", "2.44″ (62 mm)", "3.9″ (100 mm)", "manual"],
-              "IK 0.8": ["4.3″ (110 mm)", "22 ga (0.8 mm)", "2.20″ (56 mm)", "3.1″ (80 mm)", "manual"],
-              "IKS 1.3": ["7.1″ (180 mm)", "18 ga (1.3 mm)", "2.44″ (62 mm)", "9.1″ (230 mm)", "manual"],
-              "IKS 1.0": ["10.2″ (260 mm)", "20 ga (1 mm)", "2.20″ (56 mm)", "6.3″ (160 mm)", "manual"]}
-    caps = {"IK 1.2": "beads up to 18 ga (1.2 mm) · cast-iron frame · 8 roll sets", "IK 0.8": "beads up to 22 ga (0.8 mm) · cast-iron frame · 7 roll sets",
-            "IKS 1.3": "beads up to 18 ga (1.3 mm) · 9.1″ throat · steel frame", "IKS 1.0": "beads up to 20 ga (1 mm) · 10.2″ shafts · steel frame"}
-    return manual_spec([t1, t2], GK, glance, caps, NOTE)
-
-
 FAMILIES = [
     dict(id="isitan-hibks", group="beading", page=SLUG,
          name="HIBKS / IBKS hydraulic and motorized bead rollers",
@@ -152,36 +119,21 @@ FAMILIES = [
          images=["is-ibks-18", "is-ikm-12", "is-ikmp-12", "is-ikmp-12p", "is-ikm-rolls-std", "is-ikm-rolls-extra"],
          videos=[], specs=t_motorized(),
          headline="Beads sheet up to 14 ga (1.8 mm) · motorized · pneumatic top shaft on the IKMP 1.2 P"),
-    dict(id="isitan-ik", group="beading", page=SLUG,
-         name="IK / IKS manual bead rollers and swagers",
-         short="IK / IKS manual",
-         models_label="IK 1.2 · IK 0.8 · IKS 1.3 · IKS 1.0",
-         summary="Hand-crank bead rollers (swagers) for the sheet-metal bench: the IK series on a heavy-duty cast-iron frame with 7 or 8 sets "
-                 "of standard rolls, the IKS series on a steel-plate frame with longer shafts and a deeper throat. Both have a "
-                 "forward-backward adjustable sheet support, an adjustable bottom roll and special-steel shafts, and are light enough "
-                 "to carry around the shop. Roll sets are interchangeable with the motorized IK-series machines.",
-         features=["IK: heavy-duty cast-iron main frame; IK 1.2 with 8 and IK 0.8 with 7 sets of standard rolls and roll spanner key",
-                   "IKS: steel-plate construction; IKS 1.3 with 8 roll sets (compatible with IK 1.2 rolls), IKS 1.0 with 7 (compatible with IK 0.8 rolls)",
-                   "Forward-backward adjustable sheet support; adjustable bottom roll", "Special-steel roll shafts; easy to carry around the shop"],
-         optional=["Extra roll sets; rolls for special jobs made to order"],
-         images=["is-ik-12", "is-ik-08", "is-iks-13", "is-iks-10", "is-ik-rolls-s1", "is-ik-rolls-s7", "is-ik-rolls-extra"],
-         videos=[], specs=t_manual(),
-         headline="Beads sheet up to 18 ga (1.3 mm) · hand crank · cast-iron or steel-plate frame"),
 ]
 
 PAGE = dict(
     title="Bead Roller Machines for Sheet Metal & HVAC | NovoTech",
-    meta="Hydraulic, motorized and manual bead roller machines for sheet to 8 ga, with beading, swaging and flanging roll sets. CSA panels, parts in Mississauga, ON.",
+    meta="Hydraulic and motorized bead roller machines for sheet to 8 ga — HIBKS, IBKS, IKM and IKMP with beading, swaging and flanging roll sets. CSA panels, parts in Mississauga, ON.",
     h1="Bead rollers and beading machines",
-    intro="Bead rollers — also called beading machines, rotary machines or swagers — form stiffening beads, wired edges, flanges, crimps and seams in sheet metal for HVAC ducts, drums, tanks, buckets and architectural work. İşitan builds them from the IK hand-crank bead roller on a cast-iron frame to the HIBKS 4.0, whose hydraulic top roll beads 8 ga steel under constant pressure. Every machine comes with its sets of standard rolls; motorized models have a CSA-approved panel and all are supported from Mississauga, ON.",
-    points=["Hydraulic HIBKS and motorized IBKS for sheet to 8 ga (4 mm)", "Motorized IKM / IKMP with 4 speeds or pneumatic top shaft", "Manual IK / IKS swagers — 4 to 10″ shafts, 7–8 roll sets included"],
-    hero="is-hibks-4", minis=["is-ikmp-12p", "is-ik-12"],
-    groups=[("beading", "Bead rollers line-up", "From the hand-crank IK to the hydraulic HIBKS 4.0 — all with standard roll sets included.")],
-    faq=[{"q": "Bead roller, beading machine, rotary machine or swager — what is the difference?", "a": "They are the same machine under different names: two shaft-mounted rolls that form a profile in sheet metal as it is turned through them. \"Bead roller\" is the common North American term, \"swager\" the older sheet-metal trade word for the hand-crank version, \"rotary machine\" the HVAC term. The roll sets decide what it does — beading, wiring, crimping, flanging, burring or trimming."},
-         {"q": "Which rolls are included?", "a": "Every İşitan bead roller ships with its standard roll sets — 4 sets (S1–S4) on the HIBKS / IBKS 4.0 and 2.5, 8 sets on the IKM 1.2, IKMP 1.2 and IK 1.2, 7 sets on the IK 0.8 and IKS 1.0 — plus the roll spanner key. Extra sets (E1–E8) and rolls for special jobs are made to order; tell us the profile you need."},
+    intro="Bead rollers — also called beading machines, rotary machines or swagers — form stiffening beads, wired edges, flanges, crimps and seams in sheet metal for HVAC ducts, drums, tanks, buckets and architectural work. İşitan builds them motorized and hydraulic — from the IKM and IKMP cast-iron bead rollers with foot-pedal control to the HIBKS 4.0, whose hydraulic top roll beads 8 ga steel under constant pressure. Every machine comes with its sets of standard rolls, a CSA-approved panel and support from Mississauga, ON.",
+    points=["Hydraulic HIBKS and motorized IBKS for sheet to 8 ga (4 mm)", "Motorized IKM / IKMP with 4 speeds or pneumatic top shaft", "Standard roll sets (4 to 8 per machine) and the roll spanner key included; extra sets made to order"],
+    hero="is-hibks-4", minis=["is-ikmp-12p", "is-ibks-18"],
+    groups=[("beading", "Bead rollers line-up", "From the IKM motorized bead roller to the hydraulic HIBKS 4.0 — all with standard roll sets included.", "isitan")],
+    faq=[{"q": "Bead roller, beading machine, rotary machine or swager — what is the difference?", "a": "They are the same machine under different names: two shaft-mounted rolls that form a profile in sheet metal as it is turned through them. \"Bead roller\" is the common North American term, \"swager\" the older sheet-metal trade word, \"rotary machine\" the HVAC term. The roll sets decide what it does — beading, wiring, crimping, flanging, burring or trimming."},
+         {"q": "Which rolls are included?", "a": "Every İşitan bead roller ships with its standard roll sets — 4 sets (S1–S4) on the HIBKS / IBKS 4.0 and 2.5, 3 on the IBKS 1.8, 8 sets on the IKM 1.2 and IKMP 1.2 — plus the roll spanner key. Extra sets (E1–E8) and rolls for special jobs are made to order; tell us the profile you need."},
          {"q": "Hydraulic or motorized top roll?", "a": "On the IBKS the operator sets the gap between the rolls by hand and the motor turns them. On the HIBKS the top roll is moved hydraulically, so the pressure stays constant through the bead and deep beads in 8 ga steel are formed in one pass with the foot pedal — the choice for production work and heavier sheet."},
-         {"q": "What is throat depth?", "a": "The distance from the rolls to the frame: it sets how far from the sheet edge a bead can be formed. The IBKS 1.8 has an 11″ throat for beads deep into a panel; the HIBKS / IBKS 4.0 7.9″, the IKS 1.3 9.1″ and the small IK 0.8 3.1″."},
-         {"q": "What voltage do bead rollers run on?", "a": "Motorized models are supplied for 600 V 3-phase with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request and 240 V single-phase on the 1–2 HP models. The IK and IKS are hand-operated and need no power."}],
+         {"q": "What is throat depth?", "a": "The distance from the rolls to the frame: it sets how far from the sheet edge a bead can be formed. The IBKS 1.8 has an 11″ throat for beads deep into a panel; the HIBKS / IBKS 4.0 7.9″."},
+         {"q": "What voltage do bead rollers run on?", "a": "Motorized models are supplied for 600 V 3-phase with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request and 240 V single-phase on the 1–2 HP models."}],
 )
 
 

@@ -3569,34 +3569,6 @@
   "trim": true,
   "quality": 82
  },
- "is-rs-1270-90": {
-  "src": "tools/src-images/isitan/is-rs-1270-90.jpg",
-  "alt": "İşitan RS 1270x90 manual 3-roll plate roller — hand-crank operation",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-rs-1050-90": {
-  "src": "tools/src-images/isitan/is-rs-1050-90.jpg",
-  "alt": "İşitan RS 1050x90 manual plate roller, 3.4 ft",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-rs-1550-90": {
-  "src": "tools/src-images/isitan/is-rs-1550-90.jpg",
-  "alt": "İşitan RS 1550x90 manual plate roller, 5.1 ft",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-rs-2050-95": {
-  "src": "tools/src-images/isitan/is-rs-2050-95.jpg",
-  "alt": "İşitan RS 2050x95 manual plate roller, 6.7 ft",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
  "is-ir-1270-75": {
   "src": "tools/src-images/isitan/is-ir-1270-75.jpg",
   "alt": "İşitan IR 1270x75 motorized slip roll with foot pedal",
@@ -3646,62 +3618,6 @@
   "trim": true,
   "quality": 82
  },
- "is-r-1050-56": {
-  "src": "tools/src-images/isitan/is-r-1050-56.jpg",
-  "alt": "İşitan R 1050x56 manual slip roll on stand — hand-crank operation",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-r-1270-75": {
-  "src": "tools/src-images/isitan/is-r-1270-75.jpg",
-  "alt": "İşitan R 1270x75 manual slip roll, 4.2 ft",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-r-1550-68": {
-  "src": "tools/src-images/isitan/is-r-1550-68.jpg",
-  "alt": "İşitan R 1550x68 manual slip roll, 5.1 ft",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-r-2050-75": {
-  "src": "tools/src-images/isitan/is-r-2050-75.jpg",
-  "alt": "İşitan R 2050x75 manual slip roll, 6.7 ft",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-r-1270-46": {
-  "src": "tools/src-images/isitan/is-r-1270-46.jpg",
-  "alt": "İşitan R 1270x46 bench slip roll with geared lock for quick back-roll adjustment",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-r-610-46": {
-  "src": "tools/src-images/isitan/is-r-610-46.png",
-  "alt": "İşitan R 610x46 bench slip roll without stand, 2 ft",
-  "section": "forming",
-  "trim": true,
-  "quality": 82
- },
- "is-r-pinch-lever": {
-  "src": "tools/src-images/isitan/is-r-pinch-lever.png",
-  "alt": "R series — easy bottom-roll pinching lever",
-  "section": "forming",
-  "trim": true,
-  "quality": 82
- },
- "is-r-wire-grooves": {
-  "src": "tools/src-images/isitan/is-r-wire-grooves.png",
-  "alt": "R series — wire grooves as standard",
-  "section": "forming",
-  "trim": true,
-  "quality": 82
- },
  "is-rstm-1270-86": {
   "src": "tools/src-images/isitan/is-rstm-1270-86.jpg",
   "alt": "İşitan RST-M 1270x86 motorized economical plate roller with foot pedal",
@@ -3709,16 +3625,9 @@
   "trim": false,
   "quality": 82
  },
- "is-rst-1270-86": {
-  "src": "tools/src-images/isitan/is-rst-1270-86.jpg",
-  "alt": "İşitan RST 1270x86 manual economical plate roller",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
  "is-rst-screws": {
   "src": "tools/src-images/isitan/is-rst-screws.png",
-  "alt": "RST — manual up/down setting of the bottom and back rolls by screws",
+  "alt": "RST-M — up/down setting of the bottom and back rolls by screws",
   "section": "forming",
   "trim": true,
   "quality": 82
@@ -3807,55 +3716,6 @@
   "trim": true,
   "quality": 82
  },
- "is-ik-12": {
-  "src": "tools/src-images/isitan/is-ik-12.jpg",
-  "alt": "İşitan IK 1.2 manual bead roller (swager) — cast-iron frame, 8 sets of rolls",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-ik-08": {
-  "src": "tools/src-images/isitan/is-ik-08.jpg",
-  "alt": "İşitan IK 0.8 manual bead roller — cast-iron frame, 7 sets of rolls",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-iks-13": {
-  "src": "tools/src-images/isitan/is-iks-13.jpg",
-  "alt": "İşitan IKS 1.3 manual bead roller — steel-plate frame",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-iks-10": {
-  "src": "tools/src-images/isitan/is-iks-10.jpg",
-  "alt": "İşitan IKS 1.0 manual bead roller — steel-plate frame",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-ik-rolls-extra": {
-  "src": "tools/src-images/isitan/is-ik-rolls-extra.png",
-  "alt": "Extra roll sets for IK / IKMP 1.2 bead rollers",
-  "section": "forming",
-  "trim": true,
-  "quality": 82
- },
- "is-ik-rolls-s1": {
-  "src": "tools/src-images/isitan/is-ik-rolls-s1.png",
-  "alt": "Standard roll sets S1–S5 for IK 0.8 and IK 1.2",
-  "section": "forming",
-  "trim": true,
-  "quality": 82
- },
- "is-ik-rolls-s7": {
-  "src": "tools/src-images/isitan/is-ik-rolls-s7.png",
-  "alt": "Standard roll sets S7–S8 for IK 0.8 and IK 1.2",
-  "section": "forming",
-  "trim": true,
-  "quality": 82
- },
  "is-idk-5": {
   "src": "tools/src-images/isitan/is-idk-5.jpg",
   "alt": "İşitan IDK-5 hydraulic circle cutting and flanging machine — discs up to 78.7″ in 3/16″ sheet",
@@ -3894,13 +3754,6 @@
  "is-idk-18": {
   "src": "tools/src-images/isitan/is-idk-18.jpg",
   "alt": "İşitan IDK-1.8 motorized circle cutter with foot pedal",
-  "section": "forming",
-  "trim": false,
-  "quality": 82
- },
- "is-idk-1": {
-  "src": "tools/src-images/isitan/is-idk-1.jpg",
-  "alt": "İşitan IDK-1 manual circle cutting machine",
   "section": "forming",
   "trim": false,
   "quality": 82

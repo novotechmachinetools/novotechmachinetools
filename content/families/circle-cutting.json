@@ -8,10 +8,10 @@
  "families": {
   "isitan-idk": {
    "id": "isitan-idk",
-   "name": "IDK circle cutting machines — hydraulic, motorized and manual circle shears",
+   "name": "IDK circle cutting machines — hydraulic and motorized circle shears",
    "short": "IDK circle cutters",
-   "models_label": "IDK-5 · IDK-3.5 · IDK-2 · IDK-1.8 · IDK-1",
-   "summary": "Circle cutting shears cut round blanks — and on the IDK-5, 3.5 and 2 also inside diameters (rings) — from sheet clamped at its centre and rotated between two circular blades. The IDK-5 is the production machine: hydraulic centre clamp, motorized cutting-diameter adjustment, discs up to 78.7″ in 3/16″ steel and an optional flanging attachment that turns the edge of the disc up to 3/8″ for tank heads. The IDK-3.5 adds a pneumatic clamp to a 47″ machine, the IDK-2 and IDK-1.8 are rigid cast-frame motorized cutters for 14 ga, and the IDK-1 is the hand-operated bench model.",
+   "models_label": "IDK-5 · IDK-3.5 · IDK-2 · IDK-1.8",
+   "summary": "Circle cutting shears cut round blanks — and on the IDK-5, 3.5 and 2 also inside diameters (rings) — from sheet clamped at its centre and rotated between two circular blades. The IDK-5 is the production machine: hydraulic centre clamp, motorized cutting-diameter adjustment, discs up to 78.7″ in 3/16″ steel and an optional flanging attachment that turns the edge of the disc up to 3/8″ for tank heads. The IDK-3.5 adds a pneumatic clamp to a 47″ machine, the IDK-2 and IDK-1.8 are rigid cast-frame motorized cutters for 14 ga sheet with foot-pedal control.",
    "features": [
     "IDK-5: welded steel frame, hydraulic centre clamp, motorized cutting-diameter adjustment, inside-diameter cutting, mobile control panel",
     "IDK-3.5: pneumatic centre clamp (116 psi air supply), motorized diameter adjustment, inside-diameter cutting",
@@ -30,7 +30,6 @@
     "is-idk-35",
     "is-idk-2",
     "is-idk-18",
-    "is-idk-1",
     "is-idk-5-clamp",
     "is-idk-5-flanging"
    ],
@@ -40,13 +39,12 @@
     "tables": [
      {
       "title": "IDK series",
-      "sub": "5 models · circles Ø4.3″ – 78.7″",
+      "sub": "4 models · circles Ø4.3″ – 78.7″",
       "models": [
        "IDK-5",
        "IDK-3.5",
        "IDK-2",
-       "IDK-1.8",
-       "IDK-1"
+       "IDK-1.8"
       ],
       "rows": [
        {
@@ -56,8 +54,7 @@
          "9.8″ (250 mm)",
          "7.9″ (200 mm)",
          "4.7″ (120 mm)",
-         "4.3″ (110 mm)",
-         "5.9″ (150 mm)"
+         "4.3″ (110 mm)"
         ],
         "key": false
        },
@@ -67,7 +64,6 @@
         "cells": [
          "78.7″ (2000 mm)",
          "47.2″ (1200 mm)",
-         "39.4″ (1000 mm)",
          "39.4″ (1000 mm)",
          "39.4″ (1000 mm)"
         ],
@@ -80,8 +76,7 @@
          "3/16″ (5 mm)",
          "10 ga (3.5 mm)",
          "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "20 ga (1 mm)"
+         "14 ga (2 mm)"
         ],
         "key": true
        },
@@ -92,8 +87,7 @@
          "13 ft/min (4 m/min)",
          "20 ft/min (6 m/min)",
          "25 ft/min (7.5 m/min)",
-         "25 ft/min (7.5 m/min)",
-         "manual"
+         "25 ft/min (7.5 m/min)"
         ],
         "key": false
        },
@@ -101,7 +95,6 @@
         "label": "Blade material",
         "sub": "",
         "cells": [
-         "1.2379 tool steel",
          "1.2379 tool steel",
          "1.2379 tool steel",
          "1.2379 tool steel",
@@ -116,8 +109,7 @@
          "3 + 1 HP (2.2 + 0.75 kW)",
          "3 HP (2.2 kW)",
          "1.5 HP (1.1 kW)",
-         "1.5 HP (1.1 kW)",
-         "—"
+         "1.5 HP (1.1 kW)"
         ],
         "key": false
        },
@@ -128,8 +120,7 @@
          "47.2″ (1200 mm)",
          "29.5″ (750 mm)",
          "27.6″ (700 mm)",
-         "24.0″ (610 mm)",
-         "23.6″ (600 mm)"
+         "24.0″ (610 mm)"
         ],
         "key": false
        },
@@ -140,8 +131,7 @@
          "11.8″ (300 mm)",
          "9.8″ (250 mm)",
          "11.0″ (280 mm)",
-         "8.5″ (215 mm)",
-         "7.9″ (200 mm)"
+         "8.5″ (215 mm)"
         ],
         "key": false
        },
@@ -152,7 +142,6 @@
          "Yes",
          "Yes",
          "Yes",
-         "No",
          "No"
         ],
         "key": false
@@ -163,7 +152,6 @@
         "cells": [
          "Hydraulic",
          "Pneumatic (116 psi air)",
-         "Manual",
          "Manual",
          "Manual"
         ],
@@ -176,8 +164,7 @@
          "118 × 30 × 55″ (3000 × 760 × 1400 mm)",
          "79 × 24 × 55″ (2000 × 610 × 1400 mm)",
          "55 × 16 × 51″ (1400 × 410 × 1300 mm)",
-         "59 × 16 × 51″ (1500 × 410 × 1300 mm)",
-         "47 × 8 × 18″ (1200 × 200 × 460 mm)"
+         "59 × 16 × 51″ (1500 × 410 × 1300 mm)"
         ],
         "key": false
        },
@@ -188,8 +175,7 @@
          "2,976 lb (1,350 kg)",
          "1,653 lb (750 kg)",
          "772 lb (350 kg)",
-         "529 lb (240 kg)",
-         "132 lb (60 kg)"
+         "529 lb (240 kg)"
         ],
         "key": false
        }
@@ -236,16 +222,6 @@
        "1.5 HP",
        "529 lb"
       ]
-     },
-     {
-      "name": "IDK-1",
-      "glance": [
-       "5.9″ – 39.4″ (150–1000 mm)",
-       "20 ga (1 mm)",
-       "No",
-       "manual",
-       "132 lb"
-      ]
      }
     ],
     "glance_keys": [
@@ -259,8 +235,7 @@
      "IDK-5": "cuts discs to Ø78.7″ (2000 mm) in 3/16″ (5 mm) · hydraulic clamp",
      "IDK-3.5": "cuts discs to Ø47.2″ (1200 mm) in 10 ga · pneumatic clamp",
      "IDK-2": "cuts discs to Ø39.4″ (1000 mm) in 14 ga · heavy-duty cast frame",
-     "IDK-1.8": "cuts discs to Ø39.4″ (1000 mm) in 14 ga · foot pedal",
-     "IDK-1": "cuts discs to Ø39.4″ (1000 mm) in 20 ga · manual"
+     "IDK-1.8": "cuts discs to Ø39.4″ (1000 mm) in 14 ga · foot pedal"
     },
     "note": "Cutting capacities are for mild steel; thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."
    },

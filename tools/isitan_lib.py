@@ -209,6 +209,18 @@ def spec(table_refs, note):
     return {"kind": "table", "tables": tables, "models": models, "glance_keys": GLANCE_KEYS, "caps": c, "note": note}
 
 
+def drop_models(sp, keep):
+    """Remove the model columns of a table spec for which keep(name) is false — e.g. the hand-operated models of a series."""
+    for t in sp["tables"]:
+        idx = [i for i, m in enumerate(t["models"]) if keep(m)]
+        t["models"] = [t["models"][i] for i in idx]
+        for r in t["rows"]:
+            r["cells"] = [r["cells"][i] for i in idx if i < len(r["cells"])]
+    sp["models"] = [m for m in sp["models"] if keep(m["name"])]
+    sp["caps"] = {k: v for k, v in sp.get("caps", {}).items() if keep(k)}
+    return sp
+
+
 NOTE_ROLLS = ("Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²), shown as two values where the manufacturer "
               "states them: at a minimum rolling diameter of 1.5× the top roll diameter / at 5× the top roll diameter. Thin sheet is "
               "given in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H.")

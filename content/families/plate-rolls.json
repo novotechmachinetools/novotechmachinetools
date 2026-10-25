@@ -8,8 +8,6 @@
   "isitan-irm",
   "isitan-rm",
   "isitan-ir",
-  "isitan-r",
-  "isitan-rs",
   "isitan-rst",
   "sahinler-4r-hss",
   "sahinler-4r-hsl",
@@ -3862,7 +3860,7 @@
    "name": "RM motorized 3-roll asymmetrical plate rollers",
    "short": "RM motorized",
    "models_label": "RM 1050x90 · 1270x90 · 1550x90 · 2050x95",
-   "summary": "Motorized 3-roll plate rolls on a reinforced steel frame with a single gearbox and chain/gear drive, foot-pedal control and a brake motor for precise stops. Rolls up to 11 ga, with wire grooves and a cone-bending device as standard — the motorized sister of the RS manual roll for ducting, cylinders and light sheet-metal work.",
+   "summary": "Motorized 3-roll plate rolls on a reinforced steel frame with a single gearbox and chain/gear drive, foot-pedal control and a brake motor for precise stops. Rolls up to 11 ga, with wire grooves and a cone-bending device as standard — the value-priced motorized roll for ducting, cylinders and light sheet-metal work.",
    "features": [
     "Top and bottom rolls driven by a single gearbox and chain/gear system",
     "Certified SAE 1050 steel rolls; reinforced steel main frame",
@@ -4368,596 +4366,17 @@
    "group": "slip-rolls",
    "brand": "isitan"
   },
-  "isitan-r": {
-   "id": "isitan-r",
-   "name": "R manual 3-roll slip rolls — floor-standing and bench models",
-   "short": "R manual slip rolls",
-   "models_label": "R 610x46 – R 2050x75 · 13 models",
-   "summary": "Hand-crank slip rolls from a 2 ft bench roll to a 6.7 ft floor-standing machine: certified SAE 1050 steel rolls, a steel frame on the 68 and 75 mm roll models, manual drop-end and wire grooves at the roll ends. An easy bottom-roll pinching lever sets the sheet thickness; bench models are supplied without a stand for mounting on a workbench.",
-   "features": [
-    "Certified SAE 1050 steel rolls with high tensile strength",
-    "Steel frame (68 and 75 mm roll models); bench models without stand",
-    "Manual drop-end; easy bottom-roll pinching lever",
-    "Wire grooves at the roll ends as standard",
-    "R 1270x46 bench roll with geared lock for quick back-roll adjustment"
-   ],
-   "optional": [
-    "Induction-hardened rolls"
-   ],
-   "images": [
-    "is-r-1050-56",
-    "is-r-1270-75",
-    "is-r-1550-68",
-    "is-r-2050-75",
-    "is-r-1270-46",
-    "is-r-610-46",
-    "is-r-pinch-lever",
-    "is-r-wire-grooves"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "R 1050 – 1270 · floor-standing",
-      "sub": "3.4–4.2 ft · 5 models",
-      "models": [
-       "R 1050x46",
-       "R 1050x56",
-       "R 1050x68",
-       "R 1050x75",
-       "R 1270x56"
-      ],
-      "rows": [
-       {
-        "label": "Working length",
-        "cells": [
-         "3.4 ft · 41.3″ (1050 mm)",
-         "3.4 ft · 41.3″ (1050 mm)",
-         "3.4 ft · 41.3″ (1050 mm)",
-         "3.4 ft · 41.3″ (1050 mm)",
-         "4.2 ft · 50.0″ (1270 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Rolling capacity",
-        "sub": "",
-        "cells": [
-         "20 ga (1 mm)",
-         "18 ga (1.2 mm)",
-         "16 ga (1.5 mm)",
-         "14 ga (2 mm)",
-         "20 ga (1 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Roll Ø",
-        "cells": [
-         "1.81″ (46 mm)",
-         "2.20″ (56 mm)",
-         "2.68″ (68 mm)",
-         "2.95″ (75 mm)",
-         "2.20″ (56 mm)"
-        ]
-       },
-       {
-        "label": "Wire grooves Ø",
-        "cells": [
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
-        ]
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "cells": [
-         "55 × 28 × 44″ (1400 × 710 × 1120 mm)",
-         "55 × 28 × 44″ (1400 × 710 × 1120 mm)",
-         "76 × 28 × 46″ (1930 × 710 × 1170 mm)",
-         "76 × 28 × 46″ (1930 × 710 × 1170 mm)",
-         "69 × 28 × 44″ (1750 × 710 × 1120 mm)"
-        ]
-       },
-       {
-        "label": "Weight",
-        "cells": [
-         "353 lb (160 kg)",
-         "408 lb (185 kg)",
-         "617 lb (280 kg)",
-         "573 lb (260 kg)",
-         "507 lb (230 kg)"
-        ]
-       }
-      ]
-     },
-     {
-      "title": "R 1270 – 2050 · floor-standing",
-      "sub": "4.2–6.7 ft · 5 models",
-      "models": [
-       "R 1270x68",
-       "R 1270x75",
-       "R 1550x68",
-       "R 1550x75",
-       "R 2050x75"
-      ],
-      "rows": [
-       {
-        "label": "Working length",
-        "cells": [
-         "4.2 ft · 50.0″ (1270 mm)",
-         "4.2 ft · 50.0″ (1270 mm)",
-         "5.1 ft · 61.0″ (1550 mm)",
-         "5.1 ft · 61.0″ (1550 mm)",
-         "6.7 ft · 80.7″ (2050 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Rolling capacity",
-        "sub": "",
-        "cells": [
-         "18 ga (1.2 mm)",
-         "16 ga (1.5 mm)",
-         "20 ga (1 mm)",
-         "18 ga (1.2 mm)",
-         "20 ga (1 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Roll Ø",
-        "cells": [
-         "2.68″ (68 mm)",
-         "2.95″ (75 mm)",
-         "2.68″ (68 mm)",
-         "2.95″ (75 mm)",
-         "2.95″ (75 mm)"
-        ]
-       },
-       {
-        "label": "Wire grooves Ø",
-        "cells": [
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
-        ]
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "cells": [
-         "85 × 28 × 46″ (2160 × 710 × 1170 mm)",
-         "85 × 28 × 46″ (2160 × 710 × 1170 mm)",
-         "96 × 28 × 46″ (2440 × 710 × 1170 mm)",
-         "96 × 28 × 46″ (2440 × 710 × 1170 mm)",
-         "115 × 28 × 46″ (2920 × 710 × 1170 mm)"
-        ]
-       },
-       {
-        "label": "Weight",
-        "cells": [
-         "683 lb (310 kg)",
-         "728 lb (330 kg)",
-         "772 lb (350 kg)",
-         "805 lb (365 kg)",
-         "1,157 lb (525 kg)"
-        ]
-       }
-      ]
-     },
-     {
-      "title": "R bench models · without stand",
-      "sub": "2–4.2 ft · 3 models",
-      "models": [
-       "R 610x46",
-       "R 1050x46",
-       "R 1270x46"
-      ],
-      "rows": [
-       {
-        "label": "Working length",
-        "cells": [
-         "2 ft · 23.6″ (610 mm)",
-         "3.3 ft · 39.4″ (1050 mm)",
-         "4.2 ft · 50.0″ (1270 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Rolling capacity",
-        "sub": "",
-        "cells": [
-         "18 ga (1.2 mm)",
-         "20 ga (1 mm)",
-         "22 ga (0.8 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Roll Ø",
-        "cells": [
-         "1.81″ (46 mm)",
-         "1.81″ (46 mm)",
-         "1.81″ (46 mm)"
-        ]
-       },
-       {
-        "label": "Wire grooves Ø",
-        "cells": [
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
-        ]
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "cells": [
-         "35 × 20 × 16″ (890 × 510 × 410 mm)",
-         "55 × 20 × 16″ (1400 × 510 × 410 mm)",
-         "64 × 20 × 16″ (1630 × 510 × 410 mm)"
-        ]
-       },
-       {
-        "label": "Weight",
-        "cells": [
-         "198 lb (90 kg)",
-         "265 lb (120 kg)",
-         "331 lb (150 kg)"
-        ]
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "R 1050x46",
-      "glance": [
-       "3.4 ft · 41.3″ (1050 mm)",
-       "20 ga (1 mm)",
-       "1.81″ (46 mm)",
-       "—",
-       "353 lb (160 kg)"
-      ]
-     },
-     {
-      "name": "R 1050x56",
-      "glance": [
-       "3.4 ft · 41.3″ (1050 mm)",
-       "18 ga (1.2 mm)",
-       "2.20″ (56 mm)",
-       "—",
-       "408 lb (185 kg)"
-      ]
-     },
-     {
-      "name": "R 1050x68",
-      "glance": [
-       "3.4 ft · 41.3″ (1050 mm)",
-       "16 ga (1.5 mm)",
-       "2.68″ (68 mm)",
-       "—",
-       "617 lb (280 kg)"
-      ]
-     },
-     {
-      "name": "R 1050x75",
-      "glance": [
-       "3.4 ft · 41.3″ (1050 mm)",
-       "14 ga (2 mm)",
-       "2.95″ (75 mm)",
-       "—",
-       "573 lb (260 kg)"
-      ]
-     },
-     {
-      "name": "R 1270x56",
-      "glance": [
-       "4.2 ft · 50.0″ (1270 mm)",
-       "20 ga (1 mm)",
-       "2.20″ (56 mm)",
-       "—",
-       "507 lb (230 kg)"
-      ]
-     },
-     {
-      "name": "R 1270x68",
-      "glance": [
-       "4.2 ft · 50.0″ (1270 mm)",
-       "18 ga (1.2 mm)",
-       "2.68″ (68 mm)",
-       "—",
-       "683 lb (310 kg)"
-      ]
-     },
-     {
-      "name": "R 1270x75",
-      "glance": [
-       "4.2 ft · 50.0″ (1270 mm)",
-       "16 ga (1.5 mm)",
-       "2.95″ (75 mm)",
-       "—",
-       "728 lb (330 kg)"
-      ]
-     },
-     {
-      "name": "R 1550x68",
-      "glance": [
-       "5.1 ft · 61.0″ (1550 mm)",
-       "20 ga (1 mm)",
-       "2.68″ (68 mm)",
-       "—",
-       "772 lb (350 kg)"
-      ]
-     },
-     {
-      "name": "R 1550x75",
-      "glance": [
-       "5.1 ft · 61.0″ (1550 mm)",
-       "18 ga (1.2 mm)",
-       "2.95″ (75 mm)",
-       "—",
-       "805 lb (365 kg)"
-      ]
-     },
-     {
-      "name": "R 2050x75",
-      "glance": [
-       "6.7 ft · 80.7″ (2050 mm)",
-       "20 ga (1 mm)",
-       "2.95″ (75 mm)",
-       "—",
-       "1,157 lb (525 kg)"
-      ]
-     },
-     {
-      "name": "R 610x46",
-      "glance": [
-       "2 ft · 23.6″ (610 mm)",
-       "18 ga (1.2 mm)",
-       "1.81″ (46 mm)",
-       "—",
-       "198 lb (90 kg)"
-      ]
-     },
-     {
-      "name": "R 1050x46",
-      "glance": [
-       "3.3 ft · 39.4″ (1050 mm)",
-       "20 ga (1 mm)",
-       "1.81″ (46 mm)",
-       "—",
-       "265 lb (120 kg)"
-      ]
-     },
-     {
-      "name": "R 1270x46",
-      "glance": [
-       "4.2 ft · 50.0″ (1270 mm)",
-       "22 ga (0.8 mm)",
-       "1.81″ (46 mm)",
-       "—",
-       "331 lb (150 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "working_length",
-     "rolling_capacity",
-     "roll_diameter",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "R 1050x46": "rolls up to 20 ga (1 mm) × 3.3 ft",
-     "R 1050x56": "rolls up to 18 ga (1.2 mm) × 3.4 ft",
-     "R 1050x68": "rolls up to 16 ga (1.5 mm) × 3.4 ft",
-     "R 1050x75": "rolls up to 14 ga (2 mm) × 3.4 ft",
-     "R 1270x56": "rolls up to 20 ga (1 mm) × 4.2 ft",
-     "R 1270x68": "rolls up to 18 ga (1.2 mm) × 4.2 ft",
-     "R 1270x75": "rolls up to 16 ga (1.5 mm) × 4.2 ft",
-     "R 1550x68": "rolls up to 20 ga (1 mm) × 5.1 ft",
-     "R 1550x75": "rolls up to 18 ga (1.2 mm) × 5.1 ft",
-     "R 2050x75": "rolls up to 20 ga (1 mm) × 6.7 ft",
-     "R 610x46": "rolls up to 18 ga (1.2 mm) × 2 ft",
-     "R 1270x46": "rolls up to 22 ga (0.8 mm) × 4.2 ft"
-    },
-    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Manual machines carry the NovoTech warranty and support; electrical items do not apply."
-   },
-   "headline": "Working lengths 2–6.7 ft (610–2050 mm) · rolls up to 14 ga (2 mm)",
-   "group": "slip-rolls",
-   "brand": "isitan"
-  },
-  "isitan-rs": {
-   "id": "isitan-rs",
-   "name": "RS manual 3-roll asymmetrical plate rollers",
-   "short": "RS manual",
-   "models_label": "RS 1050x90 · 1270x90 · 1550x90 · 2050x95",
-   "summary": "The manual version of the RM: the same reinforced steel frame, certified SAE 1050 rolls, cone-bending device and wire grooves, turned by a hand crank instead of a motor. Rolls up to 11 ga on the shortest model — a sturdy, no-electrics roll for shops that bend a few cylinders a day.",
-   "features": [
-    "Hand-crank operation; reinforced steel main frame",
-    "Certified SAE 1050 steel rolls with high tensile strength",
-    "Cone-bending device, manual drop-end and wire grooves at the roll ends",
-    "Built to EC safety directives (CE)"
-   ],
-   "optional": [
-    "Induction-hardened or coated rolls",
-    "Fully enclosed sheet covers"
-   ],
-   "images": [
-    "is-rs-1270-90",
-    "is-rs-1050-90",
-    "is-rs-1550-90",
-    "is-rs-2050-95"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "RS — manual",
-      "sub": "3.4–6.7 ft · 4 models",
-      "models": [
-       "RS 1050x90",
-       "RS 1270x90",
-       "RS 1550x90",
-       "RS 2050x95"
-      ],
-      "rows": [
-       {
-        "label": "Working length",
-        "cells": [
-         "3.4 ft · 41.3″ (1050 mm)",
-         "4.2 ft · 50.0″ (1270 mm)",
-         "5.1 ft · 61.0″ (1550 mm)",
-         "6.7 ft · 80.7″ (2050 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Rolling capacity",
-        "sub": "",
-        "cells": [
-         "11 ga (3 mm)",
-         "12 ga (2.5 mm)",
-         "14 ga (2 mm)",
-         "16 ga (1.5 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Roll Ø",
-        "cells": [
-         "3.54″ (90 mm)",
-         "3.54″ (90 mm)",
-         "3.54″ (90 mm)",
-         "3.74″ (95 mm)"
-        ]
-       },
-       {
-        "label": "Rolling speed",
-        "cells": [
-         "—",
-         "—",
-         "—",
-         "—"
-        ]
-       },
-       {
-        "label": "Motor power",
-        "cells": [
-         "— HP (— kW)",
-         "— HP (— kW)",
-         "— HP (— kW)",
-         "— HP (— kW)"
-        ]
-       },
-       {
-        "label": "Wire grooves Ø",
-        "cells": [
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)",
-         "3/16″, 1/4″, 3/8″ (4, 6, 10 mm)"
-        ]
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "cells": [
-         "82 × 28 × 49″ (2080 × 710 × 1240 mm)",
-         "91 × 28 × 49″ (2310 × 710 × 1240 mm)",
-         "102 × 28 × 49″ (2590 × 710 × 1240 mm)",
-         "121 × 28 × 49″ (3070 × 710 × 1240 mm)"
-        ]
-       },
-       {
-        "label": "Weight",
-        "cells": [
-         "904 lb (410 kg)",
-         "926 lb (420 kg)",
-         "1,235 lb (560 kg)",
-         "1,433 lb (650 kg)"
-        ]
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "RS 1050x90",
-      "glance": [
-       "3.4 ft · 41.3″ (1050 mm)",
-       "11 ga (3 mm)",
-       "3.54″ (90 mm)",
-       "— HP (— kW)",
-       "904 lb (410 kg)"
-      ]
-     },
-     {
-      "name": "RS 1270x90",
-      "glance": [
-       "4.2 ft · 50.0″ (1270 mm)",
-       "12 ga (2.5 mm)",
-       "3.54″ (90 mm)",
-       "— HP (— kW)",
-       "926 lb (420 kg)"
-      ]
-     },
-     {
-      "name": "RS 1550x90",
-      "glance": [
-       "5.1 ft · 61.0″ (1550 mm)",
-       "14 ga (2 mm)",
-       "3.54″ (90 mm)",
-       "— HP (— kW)",
-       "1,235 lb (560 kg)"
-      ]
-     },
-     {
-      "name": "RS 2050x95",
-      "glance": [
-       "6.7 ft · 80.7″ (2050 mm)",
-       "16 ga (1.5 mm)",
-       "3.74″ (95 mm)",
-       "— HP (— kW)",
-       "1,433 lb (650 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "working_length",
-     "rolling_capacity",
-     "roll_diameter",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "RS 1050x90": "rolls up to 11 ga (3 mm) × 3.4 ft",
-     "RS 1270x90": "rolls up to 12 ga (2.5 mm) × 4.2 ft",
-     "RS 1550x90": "rolls up to 14 ga (2 mm) × 5.1 ft",
-     "RS 2050x95": "rolls up to 16 ga (1.5 mm) × 6.7 ft"
-    },
-    "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. Manual machines carry the NovoTech warranty and support; electrical items do not apply."
-   },
-   "headline": "Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 11 ga (3 mm)",
-   "group": "slip-rolls",
-   "brand": "isitan"
-  },
   "isitan-rst": {
    "id": "isitan-rst",
-   "name": "RST / RST-M economical manual and motorized plate rollers",
-   "short": "RST economical",
-   "models_label": "RST 1270x86 · RST-M 1270x86 · RST 1550x86 · RST-M 1550x86",
-   "summary": "Reinforced, value-priced plate rolls for light work up to 12 ga — ventilation ducting, signage panels, machine guards and sheet-metal parts. Cast main frames, a manual drop-end top roll and back and bottom rolls adjusted up and down by screws on both sides; the RST-M adds a geared motor with electrical box and foot pedal.",
+   "name": "RST-M economical motorized plate rollers",
+   "short": "RST-M economical",
+   "models_label": "RST-M 1270x86 · RST-M 1550x86",
+   "summary": "Reinforced, value-priced motorized plate rolls for light work up to 12 ga — ventilation ducting, signage panels, machine guards and sheet-metal parts. Cast main frames, a geared motor with electrical box and foot pedal, a manual drop-end top roll and back and bottom rolls adjusted up and down by screws on both sides.",
    "features": [
     "Cast main frames; certified SAE 1050 steel rolls",
+    "Geared motor with electrical box and foot-pedal control",
     "Manual drop-end top roll",
-    "Back and bottom rolls adjusted up/down by screws on both sides",
-    "Motor- (RST-M) or hand-driven centre rolls; foot-pedal control on the RST-M"
+    "Back and bottom rolls adjusted up/down by screws on both sides"
    ],
    "optional": [
     "Hardened rolls",
@@ -4965,7 +4384,6 @@
    ],
    "images": [
     "is-rstm-1270-86",
-    "is-rst-1270-86",
     "is-rst-screws"
    ],
    "videos": [],
@@ -4973,12 +4391,10 @@
     "kind": "table",
     "tables": [
      {
-      "title": "RST · RST-M",
-      "sub": "4.1–5.1 ft · 4 models",
+      "title": "RST-M",
+      "sub": "4.1–5.1 ft · 2 models",
       "models": [
-       "RST 1270x86",
        "RST-M 1270x86",
-       "RST 1550x86",
        "RST-M 1550x86"
       ],
       "rows": [
@@ -4986,8 +4402,6 @@
         "label": "Working length",
         "cells": [
          "4.1 ft · 49.2″ (1270 mm)",
-         "4.1 ft · 49.2″ (1270 mm)",
-         "5.1 ft · 61.0″ (1550 mm)",
          "5.1 ft · 61.0″ (1550 mm)"
         ],
         "key": true
@@ -4997,8 +4411,6 @@
         "sub": "",
         "cells": [
          "12 ga (2.5 mm)",
-         "12 ga (2.5 mm)",
-         "14 ga (2 mm)",
          "14 ga (2 mm)"
         ],
         "key": true
@@ -5007,44 +4419,34 @@
         "label": "Roll Ø",
         "cells": [
          "3.39″ (86 mm)",
-         "3.39″ (86 mm)",
-         "3.39″ (86 mm)",
          "3.39″ (86 mm)"
         ]
        },
        {
         "label": "Rolling speed",
         "cells": [
-         "—",
          "39 ft/min (12 m/min)",
-         "—",
          "39 ft/min (12 m/min)"
         ]
        },
        {
         "label": "Motor power",
         "cells": [
-         "— HP (— kW)",
          "2 HP (1.5 kW)",
-         "— HP (— kW)",
          "2 HP (1.5 kW)"
         ]
        },
        {
         "label": "Dimensions L × W × H",
         "cells": [
-         "90 × 28 × 49″ (2290 × 710 × 1240 mm)",
          "73 × 28 × 49″ (1850 × 710 × 1240 mm)",
-         "83 × 28 × 49″ (2110 × 710 × 1240 mm)",
          "98 × 28 × 49″ (2490 × 710 × 1240 mm)"
         ]
        },
        {
         "label": "Weight",
         "cells": [
-         "937 lb (425 kg)",
          "926 lb (420 kg)",
-         "1,014 lb (460 kg)",
          "1,146 lb (520 kg)"
         ]
        }
@@ -5053,16 +4455,6 @@
     ],
     "models": [
      {
-      "name": "RST 1270x86",
-      "glance": [
-       "4.1 ft · 49.2″ (1270 mm)",
-       "12 ga (2.5 mm)",
-       "3.39″ (86 mm)",
-       "— HP (— kW)",
-       "937 lb (425 kg)"
-      ]
-     },
-     {
       "name": "RST-M 1270x86",
       "glance": [
        "4.1 ft · 49.2″ (1270 mm)",
@@ -5070,16 +4462,6 @@
        "3.39″ (86 mm)",
        "2 HP (1.5 kW)",
        "926 lb (420 kg)"
-      ]
-     },
-     {
-      "name": "RST 1550x86",
-      "glance": [
-       "5.1 ft · 61.0″ (1550 mm)",
-       "14 ga (2 mm)",
-       "3.39″ (86 mm)",
-       "— HP (— kW)",
-       "1,014 lb (460 kg)"
       ]
      },
      {
@@ -5101,9 +4483,7 @@
      "weight"
     ],
     "caps": {
-     "RST 1270x86": "rolls up to 12 ga (2.5 mm) × 4.1 ft",
      "RST-M 1270x86": "rolls up to 12 ga (2.5 mm) × 4.1 ft",
-     "RST 1550x86": "rolls up to 14 ga (2 mm) × 5.1 ft",
      "RST-M 1550x86": "rolls up to 14 ga (2 mm) × 5.1 ft"
     },
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H."

@@ -64,10 +64,6 @@ IMAGES = {
     "is-rm-2050-95": ("img/ISITAN-RM-2050-95.jpg", "İşitan RM 2050x95 motorized 3-roll plate roller, 6.7 ft"),
     "is-rm-drop-end": ("cut/p20-105.png", "RM — standard manual drop-end"),
     "is-rm-safety-switch": ("cut/p20-106.png", "RM — standard drop-end safety switch"),
-    "is-rs-1270-90": ("img/ISITAN-RS1270-90-1.jpg", "İşitan RS 1270x90 manual 3-roll plate roller — hand-crank operation"),
-    "is-rs-1050-90": ("img/ISITAN-RS1050-90.jpg", "İşitan RS 1050x90 manual plate roller, 3.4 ft"),
-    "is-rs-1550-90": ("img/ISITAN-RS1550-90-1.jpg", "İşitan RS 1550x90 manual plate roller, 5.1 ft"),
-    "is-rs-2050-95": ("img/ISITAN-RS2050-95-1.jpg", "İşitan RS 2050x95 manual plate roller, 6.7 ft"),
     # IR
     "is-ir-1270-75": ("img/ISITAN-IR1270-75.jpg", "İşitan IR 1270x75 motorized slip roll with foot pedal"),
     "is-ir-1050-56": ("img/ISITAN-IR1050-56-1.jpg", "İşitan IR 1050x56 motorized slip roll — reinforced steel frame"),
@@ -77,18 +73,9 @@ IMAGES = {
     "is-ir-geared-lock": ("cut/p22-120.png", "IR — geared lock for quick back-roll adjustment"),
     "is-ir-safety-switch": ("cut/p22-122.png", "IR — optional drop-end safety switch"),
     # R
-    "is-r-1050-56": ("img/ISITAN-R-1050-56-1.jpg", "İşitan R 1050x56 manual slip roll on stand — hand-crank operation"),
-    "is-r-1270-75": ("img/ISITAN-R-1270-75.jpg", "İşitan R 1270x75 manual slip roll, 4.2 ft"),
-    "is-r-1550-68": ("img/ISITAN-R-1550-68-1.jpg", "İşitan R 1550x68 manual slip roll, 5.1 ft"),
-    "is-r-2050-75": ("img/ISITAN-R-2050-75.jpg", "İşitan R 2050x75 manual slip roll, 6.7 ft"),
-    "is-r-1270-46": ("img/ISITAN-R-1270-46-1.jpg", "İşitan R 1270x46 bench slip roll with geared lock for quick back-roll adjustment"),
-    "is-r-610-46": ("cut/p24-132.png", "İşitan R 610x46 bench slip roll without stand, 2 ft"),
-    "is-r-pinch-lever": ("cut/p24-131.png", "R series — easy bottom-roll pinching lever"),
-    "is-r-wire-grooves": ("cut/p24-134.png", "R series — wire grooves as standard"),
     # RST
     "is-rstm-1270-86": ("img/ISITAN-RST-M-1270-86.jpg", "İşitan RST-M 1270x86 motorized economical plate roller with foot pedal"),
-    "is-rst-1270-86": ("img/ISITAN-RST-1270-86-1.jpg", "İşitan RST 1270x86 manual economical plate roller"),
-    "is-rst-screws": ("cut/p26-142.png", "RST — manual up/down setting of the bottom and back rolls by screws"),
+    "is-rst-screws": ("cut/p26-142.png", "RST-M — up/down setting of the bottom and back rolls by screws"),
 }
 
 # ------------------------------------------------------------------ families
@@ -211,7 +198,7 @@ FAMILIES = [
          models_label="RM 1050x90 · 1270x90 · 1550x90 · 2050x95",
          summary="Motorized 3-roll plate rolls on a reinforced steel frame with a single gearbox and chain/gear drive, foot-pedal control "
                  "and a brake motor for precise stops. Rolls up to 11 ga, with wire grooves and a cone-bending device as standard — "
-                 "the motorized sister of the RS manual roll for ducting, cylinders and light sheet-metal work.",
+                 "the value-priced motorized roll for ducting, cylinders and light sheet-metal work.",
          features=["Top and bottom rolls driven by a single gearbox and chain/gear system", "Certified SAE 1050 steel rolls; reinforced steel main frame",
                    "Mobile control panel with foot pedal; precision bending with brake motor", "Cone-bending device, manual drop-end and wire grooves at the roll ends",
                    "Built to EC safety directives (CE)"],
@@ -236,50 +223,19 @@ FAMILIES = [
          videos=[],
          specs=spec([(23, 0, "IR 1050 – 1270", "3.4–4.2 ft · 5 models"), (23, 1, "IR 1270 – 2050", "4.2–6.7 ft · 5 models")], NOTE_SIMPLE),
          headline="Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 14 ga (2 mm)"),
-    dict(id="isitan-r", group="slip-rolls", page="slip-rolls",
-         name="R manual 3-roll slip rolls — floor-standing and bench models",
-         short="R manual slip rolls",
-         models_label="R 610x46 – R 2050x75 · 13 models",
-         summary="Hand-crank slip rolls from a 2 ft bench roll to a 6.7 ft floor-standing machine: certified SAE 1050 steel rolls, "
-                 "a steel frame on the 68 and 75 mm roll models, manual drop-end and wire grooves at the roll ends. An easy "
-                 "bottom-roll pinching lever sets the sheet thickness; bench models are supplied without a stand for mounting on a "
-                 "workbench.",
-         features=["Certified SAE 1050 steel rolls with high tensile strength", "Steel frame (68 and 75 mm roll models); bench models without stand",
-                   "Manual drop-end; easy bottom-roll pinching lever", "Wire grooves at the roll ends as standard",
-                   "R 1270x46 bench roll with geared lock for quick back-roll adjustment"],
-         optional=["Induction-hardened rolls"],
-         images=["is-r-1050-56", "is-r-1270-75", "is-r-1550-68", "is-r-2050-75", "is-r-1270-46", "is-r-610-46", "is-r-pinch-lever", "is-r-wire-grooves"],
-         videos=[],
-         specs=spec([(25, 0, "R 1050 – 1270 · floor-standing", "3.4–4.2 ft · 5 models"), (25, 1, "R 1270 – 2050 · floor-standing", "4.2–6.7 ft · 5 models"),
-                     (25, 2, "R bench models · without stand", "2–4.2 ft · 3 models")], NOTE_SIMPLE + " Manual machines carry the NovoTech warranty and support; electrical items do not apply."),
-         headline="Working lengths 2–6.7 ft (610–2050 mm) · rolls up to 14 ga (2 mm)"),
-    dict(id="isitan-rs", group="slip-rolls", page="slip-rolls",
-         name="RS manual 3-roll asymmetrical plate rollers",
-         short="RS manual",
-         models_label="RS 1050x90 · 1270x90 · 1550x90 · 2050x95",
-         summary="The manual version of the RM: the same reinforced steel frame, certified SAE 1050 rolls, cone-bending device and "
-                 "wire grooves, turned by a hand crank instead of a motor. Rolls up to 11 ga on the shortest model — a sturdy, "
-                 "no-electrics roll for shops that bend a few cylinders a day.",
-         features=["Hand-crank operation; reinforced steel main frame", "Certified SAE 1050 steel rolls with high tensile strength",
-                   "Cone-bending device, manual drop-end and wire grooves at the roll ends", "Built to EC safety directives (CE)"],
-         optional=["Induction-hardened or coated rolls", "Fully enclosed sheet covers"],
-         images=["is-rs-1270-90", "is-rs-1050-90", "is-rs-1550-90", "is-rs-2050-95"],
-         videos=[],
-         specs=spec([(21, 1, "RS — manual", "3.4–6.7 ft · 4 models")], NOTE_SIMPLE + " Manual machines carry the NovoTech warranty and support; electrical items do not apply."),
-         headline="Working lengths 3.4–6.7 ft (1050–2050 mm) · rolls up to 11 ga (3 mm)"),
     dict(id="isitan-rst", group="slip-rolls", page="slip-rolls",
-         name="RST / RST-M economical manual and motorized plate rollers",
-         short="RST economical",
-         models_label="RST 1270x86 · RST-M 1270x86 · RST 1550x86 · RST-M 1550x86",
-         summary="Reinforced, value-priced plate rolls for light work up to 12 ga — ventilation ducting, signage panels, machine guards "
-                 "and sheet-metal parts. Cast main frames, a manual drop-end top roll and back and bottom rolls adjusted up and down by "
-                 "screws on both sides; the RST-M adds a geared motor with electrical box and foot pedal.",
-         features=["Cast main frames; certified SAE 1050 steel rolls", "Manual drop-end top roll", "Back and bottom rolls adjusted up/down by screws on both sides",
-                   "Motor- (RST-M) or hand-driven centre rolls; foot-pedal control on the RST-M"],
+         name="RST-M economical motorized plate rollers",
+         short="RST-M economical",
+         models_label="RST-M 1270x86 · RST-M 1550x86",
+         summary="Reinforced, value-priced motorized plate rolls for light work up to 12 ga — ventilation ducting, signage panels, machine guards "
+                 "and sheet-metal parts. Cast main frames, a geared motor with electrical box and foot pedal, a manual drop-end top roll and "
+                 "back and bottom rolls adjusted up and down by screws on both sides.",
+         features=["Cast main frames; certified SAE 1050 steel rolls", "Geared motor with electrical box and foot-pedal control", "Manual drop-end top roll",
+                   "Back and bottom rolls adjusted up/down by screws on both sides"],
          optional=["Hardened rolls", VOLT],
-         images=["is-rstm-1270-86", "is-rst-1270-86", "is-rst-screws"],
+         images=["is-rstm-1270-86", "is-rst-screws"],
          videos=[],
-         specs=spec([(26, 0, "RST · RST-M", "4.1–5.1 ft · 4 models")], NOTE_SIMPLE),
+         specs=drop_models(spec([(26, 0, "RST-M", "4.1–5.1 ft · 2 models")], NOTE_SIMPLE), lambda m: "RST-M" in m),
          headline="Working lengths 4.1–5.1 ft (1270–1550 mm) · rolls up to 12 ga (2.5 mm)"),
 ]
 
@@ -287,7 +243,7 @@ FAMILIES = [
 HUB = "plate-rollers"
 GUIDE = {"href": "plate-rollers.html#buying-guide", "label": "Plate roller buying guide: 3-roll vs 4-roll, capacities, cones and controls"}
 VOLT_FAQ = {"q": "What voltage do İşitan plate rollers run on?",
-            "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual slip rolls have no electrics."}
+            "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor."}
 
 PAGES = {
     "hydraulic-4-roll-plate-rollers": dict(
@@ -330,42 +286,42 @@ PAGES = {
              {"q": "Do motorized plate rollers bend cones?", "a": "Every MRM-S, IRM and RM has a cone-bending device: one end of the top roll is lowered so the sheet travels faster on the wide end. The optional digital readout on the back roll makes repeat cones easier."},
              VOLT_FAQ]),
     "slip-rolls": dict(
-        title="Sheet Metal Slip Rolls — Manual & Motorized | NovoTech",
-        meta="Manual and motorized slip rolls from 2 ft bench models to 6.7 ft, sheet to 14 ga, wire grooves standard. In stock with parts and service in Mississauga, ON.",
-        h1="Slip rolls — manual and motorized sheet metal rollers",
-        intro="Slip rollers for HVAC, sign, ducting and general sheet-metal shops: three rolls, a drop-end to slip the finished cylinder off and wire grooves at the roll ends for wired edges. İşitan's R series is the hand-crank slip roll — 2 ft bench models to 6.7 ft floor-standing machines up to 14 ga — the IR adds a motor, foot pedal and brake for daily use, and the RS and RST are the reinforced economical rolls. Sold with CSA-approved panels on motorized models and supported from Mississauga, ON.",
-        points=["Manual R series: bench and floor models from 2 ft to 6.7 ft", "Motorized IR series with foot pedal, up to 14 ga (2 mm)", "Wire grooves, manual drop-end and SAE 1050 rolls on every model"],
-        hero="is-ir-1270-75", minis=["is-r-1050-56", "is-rst-1270-86"],
-        groups=[("slip-rolls", "Slip rolls and economical plate rollers", "Motorized IR, manual R and RS, and the economical RST — the light-gauge rolls of the sheet-metal shop.")],
+        title="Motorized Slip Rolls for Sheet Metal, 3.4 to 6.7 ft | NovoTech",
+        meta="Motorized slip rolls with foot pedal and brake motor from 3.4 to 6.7 ft, sheet to 14 ga, wire grooves standard, plus the economical RST-M. In stock with parts and service in Mississauga, ON.",
+        h1="Slip rolls — motorized sheet metal rollers",
+        intro="Slip rollers for HVAC, sign, ducting and general sheet-metal shops: three rolls, a drop-end to slip the finished cylinder off and wire grooves at the roll ends for wired edges. İşitan's IR series is the motorized slip roll — 3.4 ft to 6.7 ft floor-standing machines up to 14 ga, with foot pedal and brake motor for daily use — and the RST-M is the reinforced economical motorized roll. Sold with CSA-approved panels and supported from Mississauga, ON.",
+        points=["Motorized IR series with foot pedal and brake motor, 3.4 to 6.7 ft, up to 14 ga (2 mm)", "RST-M economical motorized rolls, 4.1 and 5.1 ft, up to 12 ga", "Wire grooves, manual drop-end and SAE 1050 rolls on every model"],
+        hero="is-ir-1270-75", minis=["is-ir-1050-56", "is-rstm-1270-86"],
+        groups=[("slip-rolls", "Motorized slip rolls and economical plate rollers", "The IR motorized slip rolls and the economical RST-M — the light-gauge rolls of the sheet-metal shop.", "isitan")],
         faq=[{"q": "What is the difference between a slip roll and a plate roller?", "a": "They work the same way — three rolls that pinch and bend the sheet — but a slip roll is built for thin sheet (up to about 14 ga) and the top roll \"slips\" out of its bearing so the finished cylinder can be removed; its wire grooves also form wired edges. Plate rollers have larger rolls, heavier frames and powered or hydraulic roll positioning for plate from 11 ga up to 1/2″ and beyond."},
-             {"q": "Manual or motorized slip roll?", "a": "A hand-crank R or RS roll is enough for occasional cylinders and short lengths; once you roll ducting daily or work with 5 ft and longer sheets, the IR motorized roll with foot pedal and brake motor pays for itself in time and consistent diameters."},
+             {"q": "IR or RST-M?", "a": "The IR is the daily-use slip roll: both rolls driven through a gearbox, a brake motor that stops the rolls exactly where the operator wants them, a geared lock for quick back-roll adjustment and ten sizes from 3.4 to 6.7 ft. The RST-M is the value-priced roll for light ducting and signage work in 12 ga and thinner, with the back and bottom rolls set by screws."},
              {"q": "What do the wire grooves do?", "a": "The grooves at the end of the rolls (3/16″, 1/4″ and 3/8″ on most models) close a hemmed edge around a wire to make a stiff, safe wired edge on ducts, buckets and tanks."},
              VOLT_FAQ]),
 }
 HUB_PAGE = dict(
     title="Plate Rollers & Plate Rolling Machines in Canada | NovoTech",
-    meta="Every plate roller and slip roll we sell in Canada: hydraulic 4-roll and 3-roll plate rolling machines to 20 ft and 3-3/8″ plate, motorized rolls and manual slip rollers.",
+    meta="Every plate roller and slip roll we sell in Canada: hydraulic 4-roll and 3-roll plate rolling machines to 20 ft and 3-3/8″ plate, motorized plate rolls and motorized slip rollers.",
     h1="Plate rollers and slip rolls",
-    intro="A plate roller (plate rolling machine) bends flat plate or sheet into cylinders and cones by passing it between three or four rolls; a slip roll is the light-gauge version whose top roll slips open to remove the part. Every İşitan and Şahinler plate roller and slip roll NovoTech sells in Canada: hydraulic 4-roll plate rolling machines with NC control for production, hydraulic and motorized 3-roll plate rollers for the fabrication shop, and manual and motorized slip rolls for HVAC and sheet-metal work — from a 2 ft bench slip roll to 20 ft heavy-duty machines that roll 3-3/8″ plate. Built in Turkey by İşitan (since 1959) and Şahinler (since 1976), supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, ON. Looking for a plate roller machine, sheet metal roller, slip roller or plate bending rolls? These are the ones we stock and service.",
+    intro="A plate roller (plate rolling machine) bends flat plate or sheet into cylinders and cones by passing it between three or four rolls; a slip roll is the light-gauge version whose top roll slips open to remove the part. Every İşitan and Şahinler plate roller and slip roll NovoTech sells in Canada: hydraulic 4-roll plate rolling machines with NC control for production, hydraulic and motorized 3-roll plate rollers for the fabrication shop, and motorized slip rolls for HVAC and sheet-metal work — from a 3.4 ft slip roll to 20 ft heavy-duty machines that roll 3-3/8″ plate. Built in Turkey by İşitan (since 1959) and Şahinler (since 1976), supplied with CSA-approved panels and supported from NovoTech's warehouse in Mississauga, ON. Looking for a plate roller machine, sheet metal roller, slip roller or plate bending rolls? These are the ones we stock and service.",
     points=["<a href=\"hydraulic-4-roll-plate-rollers\">Hydraulic 4-roll plate rollers</a> — 2.1 to 20 ft, up to 3-3/8″ plate, NC / CNC and automation",
             "<a href=\"hydraulic-3-roll-plate-rollers\">Hydraulic</a> and <a href=\"motorized-plate-rollers\">motorized 3-roll plate rollers</a> — initial pinch, cone bending",
-            "<a href=\"slip-rolls\">Slip rolls</a> — manual and motorized, 2 to 6.7 ft, wire grooves standard"],
-    hero="is-4rhms-3100-250", minis=["is-mrms-2050-190", "is-r-1050-56"],
+            "<a href=\"slip-rolls\">Slip rolls</a> — motorized, 3.4 to 6.7 ft, wire grooves standard"],
+    hero="is-4rhms-3100-250", minis=["is-mrms-2050-190", "is-ir-1270-75"],
     faq=[{"q": "Plate roller, plate roll, slip roll, bending rolls — are these the same machine?", "a": "Largely yes. \"Plate roller\", \"plate rolling machine\" and \"plate bending rolls\" all describe the three- or four-roll machine that rolls flat plate into cylinders and cones; \"slip roll\" or \"sheet metal roller\" is the light-gauge version for sheet up to about 14 ga, whose top roll slips open to remove the part. We use the manufacturer's terms on each page so you can match them to the capacity tables."},
          {"q": "How do I choose the size of a plate roller?", "a": "Three numbers: the longest cylinder you roll (working length), the thickest plate you roll at that length, and the smallest diameter you need. Plate rolls are rated at 1.5× and 5× the top roll diameter — a machine that rolls 1/4″ plate into a 20″ cylinder will not roll 1/4″ into a 10″ cylinder. Send us those three numbers and we will point to the models on the capacity tables."},
-         {"q": "Which plate rollers does NovoTech keep in stock?", "a": "We stock the popular MRM-S motorized rolls and the IR and R slip rolls in Mississauga, ON, and bring 4R HMS and MRM-H hydraulic machines in to order with their options. In-stock machines carry the 7-day money-back guarantee."},
+         {"q": "Which plate rollers does NovoTech keep in stock?", "a": "We stock the popular MRM-S motorized rolls and the IR slip rolls in Mississauga, ON, and bring 4R HMS and MRM-H hydraulic machines in to order with their options. In-stock machines carry the 7-day money-back guarantee."},
          {"q": "Do you install plate rollers and train operators?", "a": "Yes — our technicians commission the machine anywhere in Canada, level it, check the roll parallelism and train your operators on pre-bending, cones and the NC control where fitted."},
          VOLT_FAQ],
     range_lead="Working length, rolling capacity, top roll diameter, motor and weight for every model. Each row links to the full specification table of its series.",
     range_cols=["Working length", "Rolling capacity", "Top roll Ø", "Motor", "Weight"],
     range_caption="İşitan and Şahinler plate rollers and slip rolls supplied by NovoTech — capacities for mild steel",
-    range_note="Rolling capacity is for mild steel (34,100 psi yield); where two values are given they apply at 1.5× / 5× the top roll diameter. Manual machines have no motor.",
+    range_note="Rolling capacity is for mild steel (34,100 psi yield); where two values are given they apply at 1.5× / 5× the top roll diameter.",
 )
 SUBPAGE_META = {
     "hydraulic-4-roll-plate-rollers": ("Hydraulic 4-roll plate rollers", "is-4rhms-2050-180", "İşitan 4R HMS from 2.1 ft to 10.2 ft with NC control and automation, corrugated-sheet machines, and Şahinler 4R HS-L, 4R HS, heavy-duty 4R HSS to 20 ft, 4RH and 4R HC cone rolls.", "4-roll plate rollers"),
     "hydraulic-3-roll-plate-rollers": ("Hydraulic 3-roll plate rollers", "is-mrmh-2050-180", "İşitan MRM-H initial-pinch rolls to 10 ft and 1/2″ plate and the 3R HMD, plus Şahinler double-pinch 3R HS and translating 3R UHS heavy-duty rolls to 3-1/2″.", "Hydraulic 3-roll"),
     "motorized-plate-rollers": ("Motorized 3-roll plate rollers", "is-mrms-2050-190", "MRM-S, IRM and RM mechanical plate rolls from 3.4 ft to 10 ft — the shop's everyday rolls, with a composite-panel version.", "Motorized 3-roll"),
-    "slip-rolls": ("Slip rolls", "is-ir-1270-75", "Manual R and RS, motorized IR and economical RST slip rolls from 2 ft bench models to 6.7 ft.", "Slip rolls"),
+    "slip-rolls": ("Slip rolls", "is-ir-1270-75", "Motorized IR slip rolls from 3.4 to 6.7 ft and the economical RST-M.", "Slip rolls"),
 }
 ORDER = ["hydraulic-4-roll-plate-rollers", "hydraulic-3-roll-plate-rollers", "motorized-plate-rollers", "slip-rolls"]
 
