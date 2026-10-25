@@ -108,7 +108,7 @@ ANGLE_FAMILIES = [
          optional=["Pipe / tube bending rolls; profile rolls; angle bending rolls", "Digital readout; NC control", "Lateral angle guides; stairway bending attachment",
                    "Special Delrin rolls for aluminum and stainless steel", VOLT],
          images=["sh-hpk60", "sh-hpk50"],
-         videos=vids(("gQlXmbOJOwk", "HPK 60 angle roll — 3″ pipe"), ("f1cJ_Z2jkWM", "HPK 60 angle roll with digital readout"), ("ouH4xfmGyZY", "HPK 60 NC angle roll")),
+         videos=vids(("gQlXmbOJOwk", "HPK 60 angle roll — 3″ pipe"), ("f1cJ_Z2jkWM", "HPK 60 angle roll with digital readout"), ("0VJxlVlf3UI", "Angle iron rolling on the HPK 50"), ("ouH4xfmGyZY", "HPK 60 NC angle roll")),
          specs=bender_spec([bender_table(26, "HPK 50 · HPK 60", "hydraulic section & pipe benders", ["Roll shaft Ø"], ["Top roll Ø", "Bottom rolls Ø"])],
                            [(32, ["HPK 50", "HPK 60"], "HPK 50 · HPK 60 — section bending capacities")]),
          headline="Angle to L 2-3/4 × 2-3/4 × 1/4″ · pipe to NPS 3 · square tube to 2-3/4″ · flat bar to 4-3/4 × 1″"),
@@ -283,7 +283,7 @@ IRON_FAMILIES = [
          optional=["Large-hole punching tool — up to Ø4-7/8″ × 3/16″", "Section punching tools for IPN, UPN, flat bar and angle; section blades for UPN, IPN and T", "V-notching blade; press-brake tool; hydraulic stripper",
                    "NC feeding table on the punching station", VOLT],
          images=["sh-hkm115", "sh-hkm85", "sh-hkm65", "sh-hkm55", "sh-hkm175", "sh-hkm175-operators", "sh-hkm175-backgauge", "sh-hkm115-detail", "sh-hkm-lube", "sh-hkm-tool-brake", "sh-hkm-tool-stripper", "sh-hkm-tool-radius"],
-         videos=vids(("Tt33aBsxH-4", "HKM 115 ironworker machine"), ("tVxDdnI7tEI", "HKM 85 (94 US ton) hydraulic ironworker"), ("nSbf4Dwcoog", "HKM 65 (72 US ton) hydraulic ironworker"), ("jd5xdM5LENs", "HKM 175 hydraulic ironworker — all functions"), ("Qaj7a7gDubg", "HKM 115 NC steelworker — keyway punching")),
+         videos=vids(("wY5bTK1XnnE", "HKM 60, HKM 85 and HKM 115 hydraulic ironworkers — walk-around"), ("Tt33aBsxH-4", "HKM 115 ironworker machine"), ("tVxDdnI7tEI", "HKM 85 (94 US ton) hydraulic ironworker"), ("nSbf4Dwcoog", "HKM 65 (72 US ton) hydraulic ironworker"), ("jd5xdM5LENs", "HKM 175 hydraulic ironworker — all functions"), ("Qaj7a7gDubg", "HKM 115 NC steelworker — keyway punching")),
          specs=simple_spec([hkm_table(40, "HKM double piston", "HKM 55 · 65 · 85 · 115 · 175")], GK_IRON, ["Punching, max. thickness", "Angle shear 90°", "Flat-bar shear", "Punching force", "Weight"], NOTE_IRON),
          headline="61 – 193 US tons · two operators at once · angle to L 7-7/8 × 7-7/8 × 13/16″ · holes to Ø2-1/4″ × 7/8″"),
 ]
@@ -386,7 +386,7 @@ PUNCH_FAMILIES = [
                    "Mobile NC control panel; free software — manual punching and copy system, program by technical values", "Punch & die Ø7/8″ (65 / 85) or Ø1″ (115 / 175); punch holder; divisible separate table with manual adjustment clamps; LED light"],
          optional=["Angle punching tooling; section tools", "Hydraulic stripper", VOLT],
          images=["sh-hpm85nc"],
-         videos=vids(("0Wy-gydiyQg", "HPM 85 NC programmable hydraulic punch"), ("tQkcc2WAlWc", "HKM 115 NC hydraulic ironworker with material feeder on the punching station"), ),
+         videos=vids(("0Wy-gydiyQg", "HPM 85 NC programmable hydraulic punch"), ("tQkcc2WAlWc", "HKM 115 NC hydraulic ironworker with material feeder on the punching station"), ("eWnYKhe64l4", "Robotic punching cell with the HPM")),
          specs=simple_spec([{"title": "HPM / HKM NC lines", "sub": "punching & cutting lines with feeding system", "models": ["HPM / HKM 65 NC", "HPM / HKM 85 NC", "HPM / HKM 115 NC", "HPM / HKM 175 NC"], "rows": [
              {"label": "Punching force", "sub": "", "cells": [tons(65, 72), tons(85, 94), tons(115, 127), tons(175, 193)], "key": True},
              {"label": "Punching, max. thickness", "sub": "Ø × thickness", "cells": ["Ø1 × 13/16″", "Ø1-1/4 × 13/16″*", "Ø1-3/8 × 1″", "Ø1-5/8 × 1-1/4″"], "key": True},
@@ -613,7 +613,7 @@ POLISH_FAMILIES = [
                    "2 abrasive belts 37 × 2″ included; opening cover for belt changes and cleaning", "Manual pipe-clamping adjustment; fixing attachment for the motor; holder for manual feeding"],
          optional=["Abrasive belts in other grits", VOLT],
          images=["sh-bt114s", "sh-bt114s-rail", "sh-bt114s-tube"],
-         videos=vids(("j8vE5Dmc4QI", "BT 114-S pipe sander — pipe polishing machine"), ("kotI1chSYnY", "Curved pipe polishing on the BT 114-S"), ("6SVmTnY_4rs", "BT 114-S — diameter adjustment"), ("o23ZQEoAvzU", "BT 114-S automatic pipe sander with feeder")),
+         videos=vids(("j8vE5Dmc4QI", "BT 114-S pipe sander — pipe polishing machine"), ("zd5Zhu82wPo", "BT 114-S square tube sanding and polishing machine"), ("kotI1chSYnY", "Curved pipe polishing on the BT 114-S"), ("6SVmTnY_4rs", "BT 114-S — diameter adjustment"), ("o23ZQEoAvzU", "BT 114-S automatic pipe sander with feeder")),
          specs=simple_spec([{"title": "BT 114-S", "sub": "automatic pipe polishing & sanding machine", "models": ["BT 114-S"], "rows": [
              {"label": "Working capacity", "sub": "pipe / tube OD", "cells": ["Ø3/8″ – Ø4-1/2″ (10 – 114 mm)"], "key": True},
              {"label": "Abrasive-belt motors", "sub": "", "cells": [motor("4.0 + 2.0")], "key": False},

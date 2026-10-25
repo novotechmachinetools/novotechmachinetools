@@ -261,7 +261,9 @@ CRUMBS = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href":
 ISITAN_INTRO_VIDEO = {"intro_video": {"id": "XMn6YkPPOig", "title": "ISITAN company introduction video", "thumb": "video-XMn6YkPPOig", "duration": "PT3M55S"},
                       "intro_video_heading": "Inside the factory — where the machines are built",
                       "intro_video_text": "A tour of the ISITAN plant in Bursa, Turkey, where the sheet-metal and tube machinery on these pages has been built since 1959."}
-SAHINLER_INTRO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}   # the supplier's factory tour carried its brand (Oct 2026)
+SAHINLER_INTRO_VIDEO = {"intro_video": {"id": "nqgpctYOsyk", "title": "Factory introduction video", "thumb": "video-nqgpctYOsyk", "duration": "PT4M29S"},
+                        "intro_video_heading": "Inside the factory — where the machines are built",
+                        "intro_video_text": "A tour of the plant in Bursa, Turkey, where the premium-line plate rolls, angle rolls, ironworkers and presses are built."}
 
 
 def lower_keep_acronyms(text):
