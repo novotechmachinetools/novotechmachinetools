@@ -246,3 +246,21 @@ such column.  Generators: tools/laser_nav.py (sections), tools/dener_pages.py (D
 pages, families from the dener set), tools/laser_hub.py (hubs → sets sheet-lasers / tube-lasers).  Keyword tools were all
 exhausted today (Ubersuggest 3/3 reports, Semrush API units, Ahrefs plan), so the titles rest on the GSC export and the CA
 volumes gathered on Oct 24.
+
+## Shear hub (Oct 25) — task #29
+
+shear-cutting.html (slug kept — GSC "metal shear machine" 4,216 impr, "shear machine" 2,368, "shearing machine" 1,709) is now
+the hub over four line pages, per the user's instruction (one page each for Dener, ADH, Saymak and TTMC, the last two sold
+under the NovoTech name):
+- dener-shears — "Dener Hydraulic Shears, 1/4″ to 3/4″ × 20 ft | NovoTech" (BS / BSY + DAS; families stay in the 'shears'
+  set written by tools/saymak_pages.py, the page is written by tools/dener_pages.py)
+- novotech-mechanical-shears — "NovoTech Mechanical Shears, 1/8″ & 1/4″ · Premium Line" (Saymak SRGM; brand leads, so no
+  "| NovoTech" suffix)
+- hydraulic-shearing-machine (slug kept) — "NovoTech Hydraulic Shears, 5/32″ to 1-9/16″ · Value Line" (ADH QC12K / Q11K)
+- sheet-metal-shears (new) — "NovoTech Sheet Metal Shears, 16 ga to 3/8″ · Value Line" (TTMC PS / HQ01 / THS / HQ11 / Q11 /
+  Q11 NC / Q11 mechanical, 31 models; tools/ttmc_data.py, ttmc_photos.py, ttmc_pages.py).  The TTMC QC11Y / QC12Y ranges were
+  left out on purpose — they are the same machines as the ADH QC12K / Q11K already on the value-line hydraulic page.
+Hub title "Metal Shear Machines, 16 ga to 1-9/16″ Plate | NovoTech"; the general FAQs (which line, mechanical vs hydraulic,
+swing beam vs guillotine, capacity, length, back gauge, safety / PSR) moved to the hub, the line pages keep their product FAQs
+with a one-line pointer.  Range table: 156 rows, one per model, picked by the shared glance keys capacity / length / strokes /
+motor / weight.  Generators run in this order: saymak_pages → dener_pages → vl_sheet_pages → ttmc_pages → shear_hub.

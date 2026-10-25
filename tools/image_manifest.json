@@ -59944,5 +59944,659 @@
    "bytes": 8530
   },
   "cut": "birefnet"
+ },
+ "tt-ps": {
+  "alt": "PS-1.5x1320 pneumatic shear, 52\u2033 \u00d7 16 ga, with front gauge arms and the mobile foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 760,
+    "file": "img/shears/tt-ps-1200.webp",
+    "bytes": 76130
+   },
+   {
+    "w": 800,
+    "h": 507,
+    "file": "img/shears/tt-ps-800.webp",
+    "bytes": 50194
+   },
+   {
+    "w": 480,
+    "h": 304,
+    "file": "img/shears/tt-ps-480.webp",
+    "bytes": 26696
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 101,
+   "file": "img/shears/tt-ps-thumb.webp",
+   "bytes": 6298
+  },
+  "cut": "birefnet"
+ },
+ "tt-ps-gauge": {
+  "alt": "Back gauge with indicator on the pneumatic shear",
+  "variants": [
+   {
+    "w": 480,
+    "h": 309,
+    "file": "img/shears/tt-ps-gauge-480.webp",
+    "bytes": 13264
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/shears/tt-ps-gauge-thumb.webp",
+   "bytes": 3336
+  }
+ },
+ "tt-ps-control": {
+  "alt": "Pneumatic control unit \u2014 filter, regulator and lubricator",
+  "variants": [
+   {
+    "w": 480,
+    "h": 315,
+    "file": "img/shears/tt-ps-control-480.webp",
+    "bytes": 13212
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/shears/tt-ps-control-thumb.webp",
+   "bytes": 2932
+  }
+ },
+ "tt-ps-cylinder": {
+  "alt": "Pneumatic cylinder driving the cutting beam",
+  "variants": [
+   {
+    "w": 480,
+    "h": 408,
+    "file": "img/shears/tt-ps-cylinder-480.webp",
+    "bytes": 13118
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 136,
+   "file": "img/shears/tt-ps-cylinder-thumb.webp",
+   "bytes": 3426
+  }
+ },
+ "tt-ths": {
+  "alt": "THS-1320X4 hydraulic shear, 52\u2033 \u00d7 8 ga, with front gauge arms and the mobile foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 802,
+    "file": "img/shears/tt-ths-1200.webp",
+    "bytes": 59110
+   },
+   {
+    "w": 800,
+    "h": 535,
+    "file": "img/shears/tt-ths-800.webp",
+    "bytes": 37476
+   },
+   {
+    "w": 480,
+    "h": 321,
+    "file": "img/shears/tt-ths-480.webp",
+    "bytes": 20824
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/shears/tt-ths-thumb.webp",
+   "bytes": 5410
+  },
+  "cut": "birefnet"
+ },
+ "tt-ths-gauge": {
+  "alt": "Hand-wheel back gauge of the THS hydraulic shear",
+  "variants": [
+   {
+    "w": 480,
+    "h": 296,
+    "file": "img/shears/tt-ths-gauge-480.webp",
+    "bytes": 12224
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/shears/tt-ths-gauge-thumb.webp",
+   "bytes": 3056
+  }
+ },
+ "tt-q11a": {
+  "alt": "Q11-3x1250A electric shear with light curtain, pneumatic sheet catcher and the mobile foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 793,
+    "file": "img/shears/tt-q11a-1200.webp",
+    "bytes": 75076
+   },
+   {
+    "w": 800,
+    "h": 528,
+    "file": "img/shears/tt-q11a-800.webp",
+    "bytes": 48686
+   },
+   {
+    "w": 480,
+    "h": 317,
+    "file": "img/shears/tt-q11a-480.webp",
+    "bytes": 26800
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/shears/tt-q11a-thumb.webp",
+   "bytes": 6402
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11a-rear": {
+  "alt": "Q11-3x1250A from the rear \u2014 light curtain and sheet catcher",
+  "variants": [
+   {
+    "w": 480,
+    "h": 366,
+    "file": "img/shears/tt-q11a-rear-480.webp",
+    "bytes": 37640
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 122,
+   "file": "img/shears/tt-q11a-rear-thumb.webp",
+   "bytes": 8516
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11": {
+  "alt": "Q11-3x2050 electric shear, 81\u2033 \u00d7 1/8\u2033, with front gauge arms and the foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 716,
+    "file": "img/shears/tt-q11-1200.webp",
+    "bytes": 55048
+   },
+   {
+    "w": 800,
+    "h": 478,
+    "file": "img/shears/tt-q11-800.webp",
+    "bytes": 37686
+   },
+   {
+    "w": 480,
+    "h": 287,
+    "file": "img/shears/tt-q11-480.webp",
+    "bytes": 21464
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 96,
+   "file": "img/shears/tt-q11-thumb.webp",
+   "bytes": 5378
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11-gauge": {
+  "alt": "Manual back gauge with millimetre counter",
+  "variants": [
+   {
+    "w": 480,
+    "h": 377,
+    "file": "img/shears/tt-q11-gauge-480.webp",
+    "bytes": 14418
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 126,
+   "file": "img/shears/tt-q11-gauge-thumb.webp",
+   "bytes": 3826
+  }
+ },
+ "tt-q11-stop": {
+  "alt": "Bench angle stop on the shear table",
+  "variants": [
+   {
+    "w": 480,
+    "h": 357,
+    "file": "img/shears/tt-q11-stop-480.webp",
+    "bytes": 12462
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/shears/tt-q11-stop-thumb.webp",
+   "bytes": 2958
+  }
+ },
+ "tt-q11nc": {
+  "alt": "Q11-2x2550NC electric shear with PLC control and motorised back gauge, 100\u2033 \u00d7 14 ga",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 743,
+    "file": "img/shears/tt-q11nc-1200.webp",
+    "bytes": 59510
+   },
+   {
+    "w": 800,
+    "h": 495,
+    "file": "img/shears/tt-q11nc-800.webp",
+    "bytes": 39338
+   },
+   {
+    "w": 480,
+    "h": 297,
+    "file": "img/shears/tt-q11nc-480.webp",
+    "bytes": 21764
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/shears/tt-q11nc-thumb.webp",
+   "bytes": 5208
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11nc-rear": {
+  "alt": "Q11-2x2550NC from the rear \u2014 interlocked rear guard and pneumatic sheet catcher",
+  "variants": [
+   {
+    "w": 480,
+    "h": 342,
+    "file": "img/shears/tt-q11nc-rear-480.webp",
+    "bytes": 27186
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 114,
+   "file": "img/shears/tt-q11nc-rear-thumb.webp",
+   "bytes": 6284
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11nc-screen": {
+  "alt": "Touch-screen PLC control of the NC shear",
+  "variants": [
+   {
+    "w": 399,
+    "h": 380,
+    "file": "img/shears/tt-q11nc-screen-399.webp",
+    "bytes": 11032
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 152,
+   "file": "img/shears/tt-q11nc-screen-thumb.webp",
+   "bytes": 3120
+  }
+ },
+ "tt-q11nc-light": {
+  "alt": "Cutting line lighting over the blade",
+  "variants": [
+   {
+    "w": 454,
+    "h": 384,
+    "file": "img/shears/tt-q11nc-light-454.webp",
+    "bytes": 12254
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 135,
+   "file": "img/shears/tt-q11nc-light-thumb.webp",
+   "bytes": 2986
+  }
+ },
+ "tt-q11nc-balls": {
+  "alt": "Sheet hold-downs with rolling balls",
+  "variants": [
+   {
+    "w": 400,
+    "h": 370,
+    "file": "img/shears/tt-q11nc-balls-400.webp",
+    "bytes": 7484
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 148,
+   "file": "img/shears/tt-q11nc-balls-thumb.webp",
+   "bytes": 2472
+  }
+ },
+ "tt-q11nc-gauge": {
+  "alt": "Motorised back gauge with manual fine adjustment",
+  "variants": [
+   {
+    "w": 424,
+    "h": 367,
+    "file": "img/shears/tt-q11nc-gauge-424.webp",
+    "bytes": 14496
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 138,
+   "file": "img/shears/tt-q11nc-gauge-thumb.webp",
+   "bytes": 4120
+  }
+ },
+ "tt-q11-4x2000": {
+  "alt": "Q11-4x2000 mechanical shear, 79\u2033 \u00d7 5/32\u2033, with the foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 527,
+    "file": "img/shears/tt-q11-4x2000-1200.webp",
+    "bytes": 52696
+   },
+   {
+    "w": 800,
+    "h": 351,
+    "file": "img/shears/tt-q11-4x2000-800.webp",
+    "bytes": 33616
+   },
+   {
+    "w": 480,
+    "h": 211,
+    "file": "img/shears/tt-q11-4x2000-480.webp",
+    "bytes": 18770
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 70,
+   "file": "img/shears/tt-q11-4x2000-thumb.webp",
+   "bytes": 4654
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11-3x1300": {
+  "alt": "Q11-3x1300 mechanical shear, 51\u2033 \u00d7 1/8\u2033",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 678,
+    "file": "img/shears/tt-q11-3x1300-1200.webp",
+    "bytes": 74694
+   },
+   {
+    "w": 800,
+    "h": 452,
+    "file": "img/shears/tt-q11-3x1300-800.webp",
+    "bytes": 46866
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/shears/tt-q11-3x1300-480.webp",
+    "bytes": 26416
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/shears/tt-q11-3x1300-thumb.webp",
+   "bytes": 6704
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11-6x2000": {
+  "alt": "Q11-6x2000 mechanical shear, 79\u2033 \u00d7 1/4\u2033, with hold-down cylinders",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 730,
+    "file": "img/shears/tt-q11-6x2000-1200.webp",
+    "bytes": 71432
+   },
+   {
+    "w": 800,
+    "h": 487,
+    "file": "img/shears/tt-q11-6x2000-800.webp",
+    "bytes": 48122
+   },
+   {
+    "w": 480,
+    "h": 292,
+    "file": "img/shears/tt-q11-6x2000-480.webp",
+    "bytes": 26502
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 97,
+   "file": "img/shears/tt-q11-6x2000-thumb.webp",
+   "bytes": 6446
+  },
+  "cut": "birefnet"
+ },
+ "tt-hq01": {
+  "alt": "HQ01-2x1320B hydraulic shear, 52\u2033 \u00d7 14 ga, with rear guard and the foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 866,
+    "file": "img/shears/tt-hq01-1200.webp",
+    "bytes": 70540
+   },
+   {
+    "w": 800,
+    "h": 577,
+    "file": "img/shears/tt-hq01-800.webp",
+    "bytes": 45106
+   },
+   {
+    "w": 480,
+    "h": 346,
+    "file": "img/shears/tt-hq01-480.webp",
+    "bytes": 24298
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 115,
+   "file": "img/shears/tt-hq01-thumb.webp",
+   "bytes": 5498
+  },
+  "cut": "birefnet"
+ },
+ "tt-hq01-photocell": {
+  "alt": "Optional photoelectric rear protection",
+  "variants": [
+   {
+    "w": 480,
+    "h": 364,
+    "file": "img/shears/tt-hq01-photocell-480.webp",
+    "bytes": 19402
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 121,
+   "file": "img/shears/tt-hq01-photocell-thumb.webp",
+   "bytes": 4350
+  }
+ },
+ "tt-hq01-gauge": {
+  "alt": "Adjustable back gauge with scale",
+  "variants": [
+   {
+    "w": 480,
+    "h": 363,
+    "file": "img/shears/tt-hq01-gauge-480.webp",
+    "bytes": 12194
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 121,
+   "file": "img/shears/tt-hq01-gauge-thumb.webp",
+   "bytes": 2890
+  }
+ },
+ "tt-hq01-switch": {
+  "alt": "Control panel \u2014 automatic and single-stroke switching",
+  "variants": [
+   {
+    "w": 480,
+    "h": 363,
+    "file": "img/shears/tt-hq01-switch-480.webp",
+    "bytes": 16794
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 121,
+   "file": "img/shears/tt-hq01-switch-thumb.webp",
+   "bytes": 2406
+  }
+ },
+ "tt-hq11": {
+  "alt": "HQ11-4.5x2000 hydraulic shear, 79\u2033 \u00d7 3/16\u2033, with hold-downs and the mobile foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 799,
+    "file": "img/shears/tt-hq11-1200.webp",
+    "bytes": 68688
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/shears/tt-hq11-800.webp",
+    "bytes": 45520
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/shears/tt-hq11-480.webp",
+    "bytes": 25794
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/shears/tt-hq11-thumb.webp",
+   "bytes": 6200
+  },
+  "cut": "birefnet"
+ },
+ "tt-hq11-table": {
+  "alt": "Ball-transfer table of the HQ11 shear",
+  "variants": [
+   {
+    "w": 480,
+    "h": 380,
+    "file": "img/shears/tt-hq11-table-480.webp",
+    "bytes": 11038
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/shears/tt-hq11-table-thumb.webp",
+   "bytes": 2894
+  }
+ },
+ "tt-hq11-egauge": {
+  "alt": "Electric back gauge drive",
+  "variants": [
+   {
+    "w": 480,
+    "h": 383,
+    "file": "img/shears/tt-hq11-egauge-480.webp",
+    "bytes": 10702
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 128,
+   "file": "img/shears/tt-hq11-egauge-thumb.webp",
+   "bytes": 2790
+  }
+ },
+ "tt-hq11-mgauge": {
+  "alt": "Manual back gauge with hand wheel",
+  "variants": [
+   {
+    "w": 480,
+    "h": 380,
+    "file": "img/shears/tt-hq11-mgauge-480.webp",
+    "bytes": 13964
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/shears/tt-hq11-mgauge-thumb.webp",
+   "bytes": 3488
+  }
+ },
+ "tt-hq11-pump": {
+  "alt": "Lubrication pump",
+  "variants": [
+   {
+    "w": 480,
+    "h": 388,
+    "file": "img/shears/tt-hq11-pump-480.webp",
+    "bytes": 11266
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 129,
+   "file": "img/shears/tt-hq11-pump-thumb.webp",
+   "bytes": 2796
+  }
  }
 }

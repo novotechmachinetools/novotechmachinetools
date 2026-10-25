@@ -2,11 +2,11 @@
  "slug": "hydraulic-shearing-machine",
  "template": "category.html",
  "family_set": "value-sheet",
- "title": "Hydraulic Shearing Machines to 1-9/16″ × 26 ft | NovoTech",
- "artifact_title": "Hydraulic shearing machines — swing beam to 3/4″, guillotine to 1-9/16″ plate",
- "meta_description": "Value-line hydraulic metal shears sold in Canada: swing beam shears 5/32″–3/4″ and variable-rake guillotine shears 1/4″–1-9/16″, 8–26 ft, Estun NC control.",
- "h1": "Hydraulic shearing machines — swing beam to 3/4″, guillotine to 1-9/16″ plate",
- "intro": "A hydraulic shear cuts sheet and plate to size in one stroke between a fixed lower blade and a moving upper blade; the back gauge sets the width, hydraulic hold-downs keep the sheet flat and the control counts the strokes. NovoTech's value-line hydraulic shears are our own brand, built in China with Estun controls, Rexroth hydraulics and Siemens motors: the swing beam shears from 5/32″ to 3/4″ over 8 to 20 ft — the rugged everyday plate shear — and the guillotine shears with a variable rake angle from 1/4″ to 1-9/16″ over 8 to 26 ft for production and thick plate. For the Turkish-built Dener shears and the Saymak mechanical shears see the shears page. Installed and supported from Mississauga, ON, with a CSA-approved panel.",
+ "title": "NovoTech Hydraulic Shears, 5/32″ to 1-9/16″ · Value Line",
+ "artifact_title": "NovoTech hydraulic shears — QC12K swing beam to 3/4″, Q11K guillotine to 1-9/16″ plate, the value line",
+ "meta_description": "QC12K swing beam shears 5/32″ – 3/4″ × 8 – 20 ft and Q11K variable-rake guillotine shears 1/4″ – 1-9/16″ × 8 – 26 ft with Estun NC control, 66 models.",
+ "h1": "NovoTech hydraulic shears — QC12K swing beam to 3/4″, Q11K guillotine to 1-9/16″ plate, the value line",
+ "intro": "A hydraulic shear cuts sheet and plate to size in one stroke between a fixed lower blade and a moving upper blade; the back gauge sets the width, hydraulic hold-downs keep the sheet flat and the control counts the strokes. NovoTech's value-line hydraulic shears are our own brand, built in China with Estun controls, Rexroth hydraulics and Siemens motors: the swing beam shears from 5/32″ to 3/4″ over 8 to 20 ft — the rugged everyday plate shear — and the guillotine shears with a variable rake angle from 1/4″ to 1-9/16″ over 8 to 26 ft for production and thick plate. The Dener premium plate shears, the premium-line mechanical shears and the value-line sheet metal shears have their own pages, and the shears overview puts every line in one table. Installed and supported from Mississauga, ON, with a CSA-approved panel.",
  "hero_points": [
   "Swing beam: 32 models, 5/32″ – 3/4″ × 8 – 20 ft, Estun E21S control, motorised back gauge",
   "Guillotine: 34 models, 1/4″ – 1-9/16″ × 8 – 26 ft, variable rake angle and blade gap from the control",
@@ -27,7 +27,11 @@
    "href": "products.html"
   },
   {
-   "label": "Hydraulic shearing machines — swing beam to 3/4″, guillotine to 1-9/16″ plate"
+   "label": "Shears",
+   "href": "shear-cutting.html"
+  },
+  {
+   "label": "NovoTech hydraulic shears — QC12K swing beam to 3/4″, Q11K guillotine to 1-9/16″ plate, the value line"
   }
  ],
  "hero_brand_line": "NovoTech's own value line: manufactured in China to high North American quality standards, with Delem, Estun, Hawe, Rexroth and Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell.",
@@ -70,7 +74,7 @@
   },
   {
    "q": "How does the value line compare with the Dener shears?",
-   "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and Dener Canada parts; the value-line shears are built in China to our specification with Estun controls and Rexroth valves, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft."
+   "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and Dener Canada parts; the value-line shears are built in China to our specification with Estun controls and Rexroth valves, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."
   },
   {
    "q": "What voltage do these machines run on?",
@@ -80,7 +84,7 @@
  "faq_title": "Questions we get asked about hydraulic shears",
  "catalogue_pdf": {
   "file": "files/NovoTech-Hydraulic-Shearing-Machines-2026.pdf",
-  "label": "Download the hydraulic shear brochure",
+  "label": "Download the value-line hydraulic shears brochure",
   "size": "PDF · 1 MB · imperial units"
  },
  "origin_feature": {
@@ -90,8 +94,20 @@
  "section_label": "Shears",
  "related_pages": [
   {
+   "href": "dener-shears.html",
+   "label": "Dener hydraulic shears"
+  },
+  {
+   "href": "novotech-mechanical-shears.html",
+   "label": "NovoTech mechanical guillotine shears"
+  },
+  {
+   "href": "sheet-metal-shears.html",
+   "label": "NovoTech sheet metal shears"
+  },
+  {
    "href": "shear-cutting.html",
-   "label": "Dener and Saymak shears"
+   "label": "All shears"
   },
   {
    "href": "novotech-cnc-press-brakes.html",
@@ -111,8 +127,39 @@
   }
  ],
  "related_title": "More cutting machinery from NovoTech",
+ "section": {
+  "label": "Shears",
+  "hub": {
+   "href": "shear-cutting.html",
+   "label": "All shears",
+   "image": "sm-srgm",
+   "blurb": "Every metal shear NovoTech sells — Dener, NovoTech premium and value lines — on one page, with the capacity table for the whole range."
+  },
+  "pages": [
+   {
+    "href": "dener-shears.html",
+    "label": "Dener hydraulic shears",
+    "current": false
+   },
+   {
+    "href": "novotech-mechanical-shears.html",
+    "label": "NovoTech mechanical shears",
+    "current": false
+   },
+   {
+    "href": "hydraulic-shearing-machine.html",
+    "label": "NovoTech hydraulic shears",
+    "current": true
+   },
+   {
+    "href": "sheet-metal-shears.html",
+    "label": "NovoTech sheet metal shears",
+    "current": false
+   }
+  ]
+ },
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null,
- "nav_label": "Hydraulic shears · value line"
+ "nav_label": "NovoTech hydraulic shears"
 }

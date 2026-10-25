@@ -6,13 +6,13 @@ Metric data from Dener's 2026 brochures (HYDRAULIC_EN, SERVO_EN, SHEARING_EN, SM
 Model numbers are Dener's: metric bending length × metric tonnage (hydraulic / servo), cutting length × capacity (shears),
 table size (lasers).
 
-Pages fed from here: dener-cnc-press-brakes (hydraulic XL, hybrid XH, servo-electric DDM, ball-screw DDS), shear-cutting (DAS CNC
-guillotine, BS / BSY swing beam — appended after the SRGM groups), dener-fiber-lasers (GFL + Smart sheet lasers, under the
+Pages fed from here: dener-cnc-press-brakes (hydraulic XL, hybrid XH, servo-electric DDM, ball-screw DDS), dener-shears (DAS CNC
+guillotine, BS / BSY swing beam — under the shear-cutting hub; the family set 'shears' is written by tools/saymak_pages.py), dener-fiber-lasers (GFL + Smart sheet lasers, under the
 laser-cutting-machine hub), dener-tube-lasers (FTL, E-FTL, under the tube-laser-cutting-machine hub) and panel-bender.
 """
 BRAND = "dener"
 P_PB = "dener-cnc-press-brakes"      # under the press-brake hub (Oct 2026); press-brake.html is the hub of the three press-brake pages
-P_SHEAR = "shear-cutting"
+P_SHEAR = "dener-shears"
 P_LASER = "dener-fiber-lasers"
 P_TUBE = "dener-tube-lasers"
 P_PANEL = "panel-bender"

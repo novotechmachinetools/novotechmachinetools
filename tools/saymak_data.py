@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Direct-gear motorised guillotine shears — NovoTech premium line, made in Turkey (shear-cutting.html).
+"""Direct-gear motorised guillotine shears — NovoTech premium line, made in Turkey (novotech-mechanical-shears.html, under the shear-cutting hub).
 
 Metric data from the maker's 2025 catalogue, pages 8 – 21 (SRGM, SRGM-H, SRGM-FR, SRGM-HFR, SRGM-CL, SRGM-HCL), shown as
 imperial (metric) like the rest of the site.  Columns per model: capacity mm, max shearing length mm, strokes/min, kW,
 table height mm, table width mm, overall width (depth) mm, length (along the blade) mm, height mm, kg.
 """
-P_SHEAR = "shear-cutting"
+P_SHEAR = "novotech-mechanical-shears"
 BRAND = "novotech-premium"
 PREMIUM = "NovoTech premium line"
 

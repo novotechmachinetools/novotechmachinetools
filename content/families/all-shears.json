@@ -1,0 +1,5607 @@
+{
+ "order": [
+  "dn-bs",
+  "dn-das",
+  "nt-shear-srgm-h",
+  "nt-shear-srgm",
+  "nt-shear-srgm-hfr",
+  "nt-shear-srgm-fr",
+  "nt-shear-srgm-hcl",
+  "nt-shear-srgm-cl",
+  "vl-qc12k",
+  "vl-q11k",
+  "tt-ps",
+  "tt-hq01",
+  "tt-ths",
+  "tt-hq11",
+  "tt-q11",
+  "tt-q11nc",
+  "tt-q11-mech"
+ ],
+ "families": {
+  "dn-bs": {
+   "id": "dn-bs",
+   "brand": "dener",
+   "name": "BS / BSY hydraulic swing beam shears, 1/4″ – 5/8″ × 6.8 – 13.5 ft",
+   "short": "BS swing beam shears",
+   "models_label": "BSY 2006 – BS 4016 · 11 models",
+   "summary": "The hydraulic shear for plate from 1/4″ to 5/8″: a swing beam on two cylinders cuts the full length in one stroke, 8 to 22 strokes a minute, with an NC back gauge, hydraulic hold-downs and a welded frame that thousands of shops run every day. The light BSY 2006 – 3006 cut 1/4″ over 6.8 – 10 ft; the BS 3006 – 4016 go to 5/8″ (16 mm) mild steel over 10 and 13.5 ft. Single-point blade-gap adjustment, sheet slider table and squaring arm are standard.",
+   "features": [
+    "1/4″ to 5/8″ (6 – 16 mm) mild steel; 5/32″ to 15/32″ stainless; 5/16″ to 7/8″ aluminum",
+    "HT 071 NC control: back gauge, retract, stroke counter, 99 programs × 20 steps",
+    "Motorised ball-screw back gauge, 0.1 mm accuracy, 39.4″ (1,000 mm) stroke",
+    "Single-point manual blade-gap adjustment; cutting-length adjustment by timer",
+    "Hydraulic hold-downs; 1 m flip-up front guard; sheet support arms and squaring arm",
+    "Sheet slider table and back slider; remote foot pedal with emergency stop",
+    "Welded steel frame proven on thousands of machines",
+    "CSA-approved electrical panel, 600 V 3-phase standard"
+   ],
+   "optional": [
+    "Longer front support arms, 6.6 or 9.8 ft (2 / 3 m)",
+    "Pneumatic sheet support system",
+    "Motorised blade-clearance adjustment from a CNC control (ESA 630)",
+    "Shadow-line laser cutting line; light curtain",
+    "Hydraulic oil cooler",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-bs-2",
+    "dn-bs-1",
+    "dn-bs-3",
+    "dn-shear-video-2"
+   ],
+   "videos": [
+    {
+     "id": "dla5MjevgT0",
+     "title": "DENER BS 3006 — 10 ft × 1/4″ swing beam shear with NC control",
+     "duration": "PT0M26S",
+     "thumb": "video-dla5MjevgT0"
+    },
+    {
+     "id": "3zHK_2sp3U0",
+     "title": "DENER BS 3006 — 10 ft × 1/4″ hydraulic shear",
+     "duration": "PT0M53S",
+     "thumb": "video-3zHK_2sp3U0"
+    },
+    {
+     "id": "hnrRt3WFhqw",
+     "title": "DENER BS 3006 NC shear — 10 ft × 1/4″",
+     "duration": "PT0M31S",
+     "thumb": "video-hnrRt3WFhqw"
+    },
+    {
+     "id": "54vb6tx96aI",
+     "title": "NC / CNC hydraulic shears — DENER AS and BS series",
+     "duration": "PT1M26S",
+     "thumb": "video-54vb6tx96aI"
+    },
+    {
+     "id": "WhowsXg9Z84",
+     "title": "NC hydraulic shear with pneumatic sheet support",
+     "duration": "PT2M24S",
+     "thumb": "video-WhowsXg9Z84"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BS / BSY hydraulic swing beam shears",
+      "sub": "11 models · 1/4″ – 5/8″ × 6.8 – 13.5 ft",
+      "models": [
+       "BSY 2006",
+       "BSY 2606",
+       "BSY 3006",
+       "BS 3006",
+       "BS 4006",
+       "BS 3010",
+       "BS 4010",
+       "BS 3013",
+       "BS 4013",
+       "BS 3016",
+       "BS 4016"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "42 kg/mm² · 60,000 psi",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, stainless steel",
+        "sub": "70 kg/mm² · 100,000 psi",
+        "cells": [
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "9/32″ (7 mm)",
+         "9/32″ (7 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, aluminum",
+        "sub": "20 kg/mm²",
+        "cells": [
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "11/16″ (18 mm)",
+         "11/16″ (18 mm)",
+         "7/8″ (22 mm)",
+         "7/8″ (22 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "6.8 ft · 81.9″ (2,080 mm)",
+         "8.6 ft · 103.1″ (2,620 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "10 ft · 120.7″ (3,065 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)",
+         "10.1 ft · 120.9″ (3,070 mm)",
+         "13.5 ft · 161.8″ (4,110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "22",
+         "20",
+         "18",
+         "18",
+         "14",
+         "12",
+         "8",
+         "12",
+         "8",
+         "12",
+         "8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Swing beam angle",
+        "sub": "",
+        "cells": [
+         "1.39°",
+         "1.39°",
+         "1.39°",
+         "1.39°",
+         "1.33°",
+         "2°",
+         "2°",
+         "2.5°",
+         "2°",
+         "2.5°",
+         "2°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "53 US gal (200 L)",
+         "79 US gal (300 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "111 × 143 × 73″ (2,830 × 3,640 × 1,860 mm)",
+         "133 × 144 × 73″ (3,380 × 3,645 × 1,860 mm)",
+         "153 × 138 × 69″ (3,880 × 3,495 × 1,750 mm)",
+         "153 × 146 × 85″ (3,880 × 3,700 × 2,150 mm)",
+         "195 × 145 × 84″ (4,955 × 3,695 × 2,140 mm)",
+         "154 × 148 × 96″ (3,900 × 3,770 × 2,430 mm)",
+         "195 × 151 × 95″ (4,950 × 3,830 × 2,415 mm)",
+         "154 × 151 × 99″ (3,920 × 3,840 × 2,520 mm)",
+         "196 × 151 × 99″ (4,970 × 3,840 × 2,508 mm)",
+         "155 × 152 × 98″ (3,940 × 3,865 × 2,500 mm)",
+         "196 × 152 × 99″ (4,970 × 3,865 × 2,508 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Width without front supports",
+        "sub": "",
+        "cells": [
+         "83.3″ (2,115 mm)",
+         "83.3″ (2,115 mm)",
+         "83.1″ (2,110 mm)",
+         "84.3″ (2,140 mm)",
+         "85.0″ (2,160 mm)",
+         "90.7″ (2,305 mm)",
+         "90.7″ (2,305 mm)",
+         "90.9″ (2,308 mm)",
+         "90.9″ (2,308 mm)",
+         "88.0″ (2,235 mm)",
+         "91.3″ (2,320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "10,582 lb (4,800 kg)",
+         "12,125 lb (5,500 kg)",
+         "14,330 lb (6,500 kg)",
+         "17,637 lb (8,000 kg)",
+         "22,928 lb (10,400 kg)",
+         "26,455 lb (12,000 kg)",
+         "33,069 lb (15,000 kg)",
+         "30,865 lb (14,000 kg)",
+         "37,148 lb (16,850 kg)",
+         "35,538 lb (16,120 kg)",
+         "40,565 lb (18,400 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BSY 2006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "6.8 ft · 81.9″ (2,080 mm)",
+       "22",
+       "14.8 HP (11 kW)",
+       "10,582 lb (4,800 kg)"
+      ]
+     },
+     {
+      "name": "BSY 2606",
+      "glance": [
+       "1/4″ (6 mm)",
+       "8.6 ft · 103.1″ (2,620 mm)",
+       "20",
+       "14.8 HP (11 kW)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "BSY 3006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "18",
+       "14.8 HP (11 kW)",
+       "14,330 lb (6,500 kg)"
+      ]
+     },
+     {
+      "name": "BS 3006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10 ft · 120.7″ (3,065 mm)",
+       "18",
+       "14.8 HP (11 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 4006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "14",
+       "14.8 HP (11 kW)",
+       "22,928 lb (10,400 kg)"
+      ]
+     },
+     {
+      "name": "BS 3010",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "12",
+       "29.5 HP (22 kW)",
+       "26,455 lb (12,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 4010",
+      "glance": [
+       "3/8″ (10 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "8",
+       "29.5 HP (22 kW)",
+       "33,069 lb (15,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 3013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "12",
+       "40.2 HP (30 kW)",
+       "30,865 lb (14,000 kg)"
+      ]
+     },
+     {
+      "name": "BS 4013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "8",
+       "40.2 HP (30 kW)",
+       "37,148 lb (16,850 kg)"
+      ]
+     },
+     {
+      "name": "BS 3016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.1 ft · 120.9″ (3,070 mm)",
+       "12",
+       "40.2 HP (30 kW)",
+       "35,538 lb (16,120 kg)"
+      ]
+     },
+     {
+      "name": "BS 4016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.5 ft · 161.8″ (4,110 mm)",
+       "8",
+       "40.2 HP (30 kW)",
+       "40,565 lb (18,400 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are Dener's ratings over the full blade length for mild steel of 60,000 psi (42 kg/mm²), stainless of 100,000 psi (70 kg/mm²) and aluminum; the model number is the metric cutting length × capacity. Dimensions are overall L (along the blade) × W × H with the standard front supports."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf",
+    "label": "Download the Dener hydraulic shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "shear-swing"
+  },
+  "dn-das": {
+   "id": "dn-das",
+   "brand": "dener",
+   "name": "DAS CNC hydraulic guillotine shears, 1/4″ – 3/4″ × 10 – 20 ft",
+   "short": "DAS CNC guillotine shears",
+   "models_label": "DAS 3006 – DAS 6020 · 13 models",
+   "summary": "The production shear: a guillotine beam on linear rollers with a variable cutting angle, so thin sheet is cut fast and flat at 0.5° and 3/4″ plate at 3° with less distortion. The ESA 630 CNC sets back gauge, blade gap and angle from the thickness and material the operator keys in; 16 – 33 hydraulic hold-downs, a 1 m ball-screw back gauge and the front photocell guard are standard. Thirteen models: 1/4″ to 3/4″ (6 – 20 mm) mild steel over 10, 13 and 20 ft, from 8,000 to 55,000 kg.",
+   "features": [
+    "1/4″ to 3/4″ (6 – 20 mm) mild steel, 5/32″ to 9/16″ stainless, over 10 – 20 ft; up to 25 cuts a minute",
+    "ESA 630 CNC control, 10″ touchscreen: back gauge, blade gap and cutting angle set by the control from the thickness and material; 100-step programs",
+    "Motorised ball-screw back gauge, 0.1 mm accuracy, 39.4″ (1,000 mm) stroke",
+    "Variable cutting angle and automatic blade-gap adjustment",
+    "Hydraulic hold-downs; front protection frame with photocell; sheet slider table and squaring arm",
+    "Remote foot pedal with emergency stop",
+    "Welded steel frame, cutting beam on rollers — rigid against torsion over the full length",
+    "CSA-approved electrical panel, 600 V 3-phase standard"
+   ],
+   "optional": [
+    "Longer front support arms, 6.6 or 9.8 ft (2 / 3 m)",
+    "Pneumatic sheet support system (return of the cut piece)",
+    "Shadow-line laser cutting line; light curtain",
+    "Hydraulic oil cooler",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-das-3",
+    "dn-das-1",
+    "dn-das-2",
+    "dn-shear-web",
+    "dn-shear-video-1"
+   ],
+   "videos": [
+    {
+     "id": "wtCPgw_5GaY",
+     "title": "DENER DAS 3006 — 10 ft × 1/4″ CNC hydraulic shear with pneumatic back support",
+     "duration": "PT0M39S",
+     "thumb": "video-wtCPgw_5GaY"
+    },
+    {
+     "id": "eQ7NqRHVSvM",
+     "title": "CNC hydraulic metal shear AS 3006 DENER",
+     "duration": "PT1M2S",
+     "thumb": "video-eQ7NqRHVSvM"
+    },
+    {
+     "id": "54vb6tx96aI",
+     "title": "NC / CNC hydraulic shears — DENER AS and BS series",
+     "duration": "PT1M26S",
+     "thumb": "video-54vb6tx96aI"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DAS CNC hydraulic guillotine shears",
+      "sub": "13 models · 1/4″ – 3/4″ × 10 – 20 ft",
+      "models": [
+       "DAS 3006",
+       "DAS 4006",
+       "DAS 3010",
+       "DAS 3013",
+       "DAS 4013",
+       "DAS 3016",
+       "DAS 4016",
+       "DAS 3020",
+       "DAS 4020",
+       "DAS 6006",
+       "DAS 6013",
+       "DAS 6016",
+       "DAS 6020"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "42 kg/mm² · 60,000 psi",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "1/4″ (6 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, stainless steel",
+        "sub": "70 kg/mm² · 100,000 psi",
+        "cells": [
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "9/32″ (7 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "9/16″ (14 mm)",
+         "9/16″ (14 mm)",
+         "5/32″ (4 mm)",
+         "11/32″ (9 mm)",
+         "15/32″ (12 mm)",
+         "9/16″ (14 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity, aluminum",
+        "sub": "20 kg/mm²",
+        "cells": [
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "1/2″ (13 mm)",
+         "11/16″ (18 mm)",
+         "11/16″ (18 mm)",
+         "7/8″ (22 mm)",
+         "7/8″ (22 mm)",
+         "1″ (26 mm)",
+         "1″ (26 mm)",
+         "5/16″ (8 mm)",
+         "5/8″ (16 mm)",
+         "7/8″ (22 mm)",
+         "1″ (26 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "10.1 ft · 121.3″ (3,080 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "20 ft · 240.2″ (6,100 mm)",
+         "20 ft · 240.6″ (6,110 mm)",
+         "20.1 ft · 241.7″ (6,140 mm)",
+         "20.1 ft · 241.7″ (6,140 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "variable",
+        "cells": [
+         "0.5 – 2°",
+         "0.5 – 2°",
+         "0.5 – 2°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 3°",
+         "0.5 – 2.5°",
+         "0.5 – 2.5°",
+         "0.5 – 2.5°",
+         "0.5 – 2.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hold-down cylinders",
+        "sub": "",
+        "cells": [
+         "16",
+         "22",
+         "16",
+         "16",
+         "22",
+         "16",
+         "22",
+         "16",
+         "22",
+         "33",
+         "31",
+         "31",
+         "31"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at min / max angle",
+        "cells": [
+         "25 / 12",
+         "20 / 10",
+         "22 / 10",
+         "16 / 7",
+         "15 / 6",
+         "14 / 6",
+         "13 / 5",
+         "12 / 5",
+         "11 / 4",
+         "18 / 6.5",
+         "11.5 / 5.3",
+         "6.1 / 3.9",
+         "6 / 3.5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "49.6 HP (37 kW)",
+         "14.8 HP (11 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "48 US gal (180 L)",
+         "48 US gal (180 L)",
+         "53 US gal (200 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "198 US gal (750 L)",
+         "198 US gal (750 L)",
+         "53 US gal (200 L)",
+         "106 US gal (400 L)",
+         "198 US gal (750 L)",
+         "198 US gal (750 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "154 × 133 × 85″ (3,900 × 3,380 × 2,165 mm)",
+         "194 × 133 × 88″ (4,940 × 3,380 × 2,225 mm)",
+         "154 × 135 × 90″ (3,920 × 3,440 × 2,290 mm)",
+         "154 × 139 × 102″ (3,900 × 3,520 × 2,590 mm)",
+         "193 × 138 × 104″ (4,900 × 3,500 × 2,650 mm)",
+         "154 × 144 × 104″ (3,900 × 3,650 × 2,635 mm)",
+         "195 × 144 × 106″ (4,950 × 3,660 × 2,700 mm)",
+         "156 × 148 × 104″ (3,950 × 3,750 × 2,650 mm)",
+         "199 × 148 × 108″ (5,050 × 3,755 × 2,740 mm)",
+         "277 × 157 × 102″ (7,035 × 4,000 × 2,580 mm)",
+         "279 × 160 × 107″ (7,090 × 4,055 × 2,730 mm)",
+         "283 × 173 × 109″ (7,200 × 4,400 × 2,780 mm)",
+         "283 × 175 × 109″ (7,200 × 4,450 × 2,780 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Width without front supports",
+        "sub": "",
+        "cells": [
+         "84.6″ (2,150 mm)",
+         "85.8″ (2,180 mm)",
+         "87.8″ (2,230 mm)",
+         "88.0″ (2,235 mm)",
+         "89.4″ (2,270 mm)",
+         "88.2″ (2,240 mm)",
+         "88.6″ (2,250 mm)",
+         "92.1″ (2,340 mm)",
+         "92.5″ (2,350 mm)",
+         "107.1″ (2,720 mm)",
+         "109.3″ (2,775 mm)",
+         "122.0″ (3,100 mm)",
+         "124.0″ (3,150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "17,637 lb (8,000 kg)",
+         "24,251 lb (11,000 kg)",
+         "22,046 lb (10,000 kg)",
+         "30,424 lb (13,800 kg)",
+         "36,817 lb (16,700 kg)",
+         "36,156 lb (16,400 kg)",
+         "47,399 lb (21,500 kg)",
+         "42,439 lb (19,250 kg)",
+         "62,832 lb (28,500 kg)",
+         "60,627 lb (27,500 kg)",
+         "82,673 lb (37,500 kg)",
+         "109,129 lb (49,500 kg)",
+         "121,254 lb (55,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DAS 3006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "25 / 12",
+       "14.8 HP (11 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "20 / 10",
+       "14.8 HP (11 kW)",
+       "24,251 lb (11,000 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3010",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "22 / 10",
+       "29.5 HP (22 kW)",
+       "22,046 lb (10,000 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "16 / 7",
+       "40.2 HP (30 kW)",
+       "30,424 lb (13,800 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "15 / 6",
+       "40.2 HP (30 kW)",
+       "36,817 lb (16,700 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "14 / 6",
+       "40.2 HP (30 kW)",
+       "36,156 lb (16,400 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "13 / 5",
+       "40.2 HP (30 kW)",
+       "47,399 lb (21,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 3020",
+      "glance": [
+       "3/4″ (20 mm)",
+       "10.1 ft · 121.3″ (3,080 mm)",
+       "12 / 5",
+       "49.6 HP (37 kW)",
+       "42,439 lb (19,250 kg)"
+      ]
+     },
+     {
+      "name": "DAS 4020",
+      "glance": [
+       "3/4″ (20 mm)",
+       "13.3 ft · 159.4″ (4,050 mm)",
+       "11 / 4",
+       "49.6 HP (37 kW)",
+       "62,832 lb (28,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6006",
+      "glance": [
+       "1/4″ (6 mm)",
+       "20 ft · 240.2″ (6,100 mm)",
+       "18 / 6.5",
+       "14.8 HP (11 kW)",
+       "60,627 lb (27,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6013",
+      "glance": [
+       "1/2″ (13 mm)",
+       "20 ft · 240.6″ (6,110 mm)",
+       "11.5 / 5.3",
+       "49.6 HP (37 kW)",
+       "82,673 lb (37,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6016",
+      "glance": [
+       "5/8″ (16 mm)",
+       "20.1 ft · 241.7″ (6,140 mm)",
+       "6.1 / 3.9",
+       "60.3 HP (45 kW)",
+       "109,129 lb (49,500 kg)"
+      ]
+     },
+     {
+      "name": "DAS 6020",
+      "glance": [
+       "3/4″ (20 mm)",
+       "20.1 ft · 241.7″ (6,140 mm)",
+       "6 / 3.5",
+       "60.3 HP (45 kW)",
+       "121,254 lb (55,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are Dener's ratings over the full blade length for mild steel of 60,000 psi (42 kg/mm²), stainless of 100,000 psi (70 kg/mm²) and aluminum; the model number is the metric cutting length × capacity. Dimensions are overall L (along the blade) × W × H with the standard front supports."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf",
+    "label": "Download the Dener hydraulic shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "shear-cnc"
+  },
+  "nt-shear-srgm-h": {
+   "id": "nt-shear-srgm-h",
+   "brand": "novotech-premium",
+   "name": "SRGM-H light type mechanical guillotine shears, 1/8″ × 3.6 ft – 10 ft",
+   "short": "SRGM-H light shears",
+   "models_label": "SRGM-H 1100 – SRGM-H 3060 · 6 models",
+   "summary": "The light-type direct-gear guillotine for sheet-metal shops, HVAC and signage: 1/8″ (3 mm) mild steel over 43″ to 10 ft in 35 strokes a minute from a 4 to 10 HP motor, with a manual back gauge, squaring arm, front holding arms and photocell rear guard as standard. The same welded frame, teflon slideways and four-edged blades as the SRGM, in a lighter machine from 2,425 lb. An NC back gauge, pneumatic sheet support and a touch-screen control are options.",
+   "features": [
+    "1/8″ (3 mm) mild steel; 12 ga on the 2560; 35 strokes per minute",
+    "Manual back gauge with 29.5″ (750 mm) stroke",
+    "Squaring arm with ruler; front sheet holding arms; finger protection guard",
+    "Rear protection cages with photocell",
+    "Cutting line illumination with shadow wire",
+    "Foot pedal and cutting counter",
+    "Mechanical sheet clamping; high-carbon, high-chrome two-edged top and four-edged bottom blades"
+   ],
+   "optional": [
+    "NC-controlled back gauge with 29.5″ or 39.4″ (750 / 1,000 mm) stroke",
+    "Pneumatic sheet support with return-to-rear",
+    "Rear protection cages with light barrier",
+    "0 – 180° angular cutting device",
+    "ELGO P40T or FUJI Monitouch touch-screen NC control",
+    "Longer squaring arm and front holding arms to 118″ (3,000 mm)",
+    "Front-operated manual back gauge with ball screw",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "sm-srgm-h",
+    "sm-srgm-h-panel",
+    "sm-srgm-h-rear",
+    "sm-srgm-h-gauge"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SRGM-H",
+      "sub": "Light type direct-gear motorised guillotines",
+      "models": [
+       "SRGM-H 1100",
+       "SRGM-H 1360",
+       "SRGM-H 1560",
+       "SRGM-H 2060",
+       "SRGM-H 2560",
+       "SRGM-H 3060"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "12 ga (2.5 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "43.3″ (1,100 mm)",
+         "53.5″ (1,360 mm)",
+         "61.4″ (1,560 mm)",
+         "81.1″ (2,060 mm)",
+         "100.8″ (2,560 mm)",
+         "120.5″ (3,060 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table width",
+        "sub": "",
+        "cells": [
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "17.9″ (455 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 83 × 50″ (1,720 × 2,100 × 1,260 mm)",
+         "76 × 83 × 50″ (1,920 × 2,100 × 1,260 mm)",
+         "83 × 83 × 50″ (2,100 × 2,100 × 1,260 mm)",
+         "104 × 83 × 50″ (2,650 × 2,100 × 1,260 mm)",
+         "124 × 83 × 50″ (3,150 × 2,100 × 1,260 mm)",
+         "144 × 83 × 50″ (3,650 × 2,100 × 1,260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,425 lb (1,100 kg)",
+         "2,756 lb (1,250 kg)",
+         "3,307 lb (1,500 kg)",
+         "3,858 lb (1,750 kg)",
+         "4,299 lb (1,950 kg)",
+         "6,614 lb (3,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SRGM-H 1100",
+      "glance": [
+       "1/8″ (3 mm)",
+       "43.3″ (1,100 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "2,425 lb (1,100 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-H 1360",
+      "glance": [
+       "1/8″ (3 mm)",
+       "53.5″ (1,360 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "2,756 lb (1,250 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-H 1560",
+      "glance": [
+       "1/8″ (3 mm)",
+       "61.4″ (1,560 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-H 2060",
+      "glance": [
+       "1/8″ (3 mm)",
+       "81.1″ (2,060 mm)",
+       "35 strokes/min",
+       "5.5 HP (4 kW)",
+       "3,858 lb (1,750 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-H 2560",
+      "glance": [
+       "12 ga (2.5 mm)",
+       "100.8″ (2,560 mm)",
+       "35 strokes/min",
+       "5.5 HP (4 kW)",
+       "4,299 lb (1,950 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-H 3060",
+      "glance": [
+       "1/8″ (3 mm)",
+       "120.5″ (3,060 mm)",
+       "35 strokes/min",
+       "10 HP (7.5 kW)",
+       "6,614 lb (3,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L (along the blade) × W × H."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
+    "label": "Download the mechanical guillotine shears brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "shear-standard"
+  },
+  "nt-shear-srgm": {
+   "id": "nt-shear-srgm",
+   "brand": "novotech-premium",
+   "name": "SRGM mechanical guillotine shears, 1/4″ × 3.6 ft – 13.8 ft",
+   "short": "SRGM shears",
+   "models_label": "SRGM 1100 – SRGM 4200 · 8 models",
+   "summary": "The standard direct-gear motorised guillotine: a 10 or 15 HP motor drives the cutting beam through a gearbox — no hydraulics, no flywheel clutch — for 31 clean strokes a minute in 1/4″ (6 mm) mild steel over 43″ to 1/8″ over 13.8 ft. Welded steel frame, cutting beam in teflon slideways, blade gap set from the front, mechanical hold-downs and an NC back gauge with 29.5″ stroke, squaring arm, ball-transfer table, shadow-line light and photocell rear guard as standard.",
+   "features": [
+    "1/4″ (6 mm) mild steel on the 1100 and 1360, 3/16″ to 5/32″ on the 1560 – 3200, 1/8″ on the 4200; 31 strokes per minute",
+    "NC-controlled back gauge with 29.5″ (750 mm) stroke",
+    "Squaring arm with T-slot, stopper and ruler",
+    "Front sheet holding arms; finger protection guard",
+    "Rear protection cages with photocell",
+    "Table with ball transfers; cutting line illumination with shadow wire",
+    "Foot pedal and cutting counter",
+    "Easy blade-gap adjustment from the front; mechanical sheet clamping",
+    "High-carbon, high-chrome blades: two-edged top blade, four-edged bottom blade"
+   ],
+   "optional": [
+    "NC back gauge with 39.4″ (1,000 mm) stroke",
+    "Pneumatic sheet support with return-to-rear",
+    "Rear protection cages with light barrier",
+    "0 – 180° angular cutting device",
+    "ELGO P40T or FUJI Monitouch touch-screen NC control",
+    "Longer squaring arm and front holding arms to 118″ (3,000 mm)",
+    "Front-operated manual back gauge with ball screw",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "sm-srgm",
+    "sm-srgm-table",
+    "sm-srgm-rear",
+    "sm-elgo-p40t"
+   ],
+   "videos": [
+    {
+     "id": "MQNV9oMWMNQ",
+     "title": "SRGM mechanical shear",
+     "duration": "PT2M43S",
+     "thumb": "video-MQNV9oMWMNQ"
+    },
+    {
+     "id": "6gRA2_DOkFs",
+     "title": "SRGM 1360 mechanical shear",
+     "duration": "PT0M28S",
+     "thumb": "video-6gRA2_DOkFs"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SRGM",
+      "sub": "Direct-gear motorised guillotines",
+      "models": [
+       "SRGM 1100",
+       "SRGM 1360",
+       "SRGM 1560",
+       "SRGM 2060",
+       "SRGM 2560",
+       "SRGM 3060",
+       "SRGM 3200",
+       "SRGM 4200"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/16″ (5 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "43.3″ (1,100 mm)",
+         "53.5″ (1,360 mm)",
+         "61.4″ (1,560 mm)",
+         "81.1″ (2,060 mm)",
+         "100.8″ (2,560 mm)",
+         "120.5″ (3,060 mm)",
+         "126.0″ (3,200 mm)",
+         "165.4″ (4,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table width",
+        "sub": "",
+        "cells": [
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 89 × 55″ (1,750 × 2,250 × 1,400 mm)",
+         "81 × 89 × 55″ (2,050 × 2,250 × 1,400 mm)",
+         "89 × 89 × 55″ (2,250 × 2,250 × 1,400 mm)",
+         "106 × 89 × 55″ (2,700 × 2,250 × 1,400 mm)",
+         "126 × 89 × 55″ (3,200 × 2,250 × 1,400 mm)",
+         "146 × 89 × 55″ (3,700 × 2,250 × 1,400 mm)",
+         "169 × 89 × 55″ (4,300 × 2,250 × 1,400 mm)",
+         "209 × 89 × 55″ (5,300 × 2,250 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,409 lb (2,000 kg)",
+         "5,071 lb (2,300 kg)",
+         "5,512 lb (2,500 kg)",
+         "6,614 lb (3,000 kg)",
+         "7,716 lb (3,500 kg)",
+         "8,818 lb (4,000 kg)",
+         "9,700 lb (4,400 kg)",
+         "11,684 lb (5,300 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SRGM 1100",
+      "glance": [
+       "1/4″ (6 mm)",
+       "43.3″ (1,100 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "4,409 lb (2,000 kg)"
+      ]
+     },
+     {
+      "name": "SRGM 1360",
+      "glance": [
+       "1/4″ (6 mm)",
+       "53.5″ (1,360 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "5,071 lb (2,300 kg)"
+      ]
+     },
+     {
+      "name": "SRGM 1560",
+      "glance": [
+       "3/16″ (5 mm)",
+       "61.4″ (1,560 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "5,512 lb (2,500 kg)"
+      ]
+     },
+     {
+      "name": "SRGM 2060",
+      "glance": [
+       "5/32″ (4 mm)",
+       "81.1″ (2,060 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "6,614 lb (3,000 kg)"
+      ]
+     },
+     {
+      "name": "SRGM 2560",
+      "glance": [
+       "5/32″ (4 mm)",
+       "100.8″ (2,560 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "SRGM 3060",
+      "glance": [
+       "5/32″ (4 mm)",
+       "120.5″ (3,060 mm)",
+       "31 strokes/min",
+       "15 HP (11 kW)",
+       "8,818 lb (4,000 kg)"
+      ]
+     },
+     {
+      "name": "SRGM 3200",
+      "glance": [
+       "5/32″ (4 mm)",
+       "126.0″ (3,200 mm)",
+       "31 strokes/min",
+       "15 HP (11 kW)",
+       "9,700 lb (4,400 kg)"
+      ]
+     },
+     {
+      "name": "SRGM 4200",
+      "glance": [
+       "1/8″ (3 mm)",
+       "165.4″ (4,200 mm)",
+       "31 strokes/min",
+       "15 HP (11 kW)",
+       "11,684 lb (5,300 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L (along the blade) × W × H."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
+    "label": "Download the mechanical guillotine shears brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "shear-standard"
+  },
+  "nt-shear-srgm-hfr": {
+   "id": "nt-shear-srgm-hfr",
+   "brand": "novotech-premium",
+   "name": "SRGM-HFR light type guillotine shears with return-to-sender, 1/8″ × 4.3 ft – 9.9 ft",
+   "short": "SRGM-HFR shears",
+   "models_label": "SRGM-HFR 1320 – SRGM-HFR 3020 · 5 models",
+   "summary": "The light-type shear with the return-to-sender sheet support: after the cut the strip is carried back to the front of the machine, so one operator cuts blanks and strips without walking round to the rear. 1/8″ (3 mm) mild steel over 4.3 to 9.9 ft, 35 strokes a minute, NC back gauge with 29.5″ stroke as standard; pneumatic return-to-sender and return-to-rear optional.",
+   "features": [
+    "1/8″ (3 mm) mild steel; 12 ga on the 2520; 35 strokes per minute",
+    "NC-controlled back gauge with 29.5″ (750 mm) stroke",
+    "Manual return-to-sender: the cut piece comes back to the operator",
+    "Squaring arm with T-slot, stopper and ruler",
+    "Front sheet holding arms; finger protection guard",
+    "Rear protection cages with photocell",
+    "Table with ball transfers; cutting line illumination with shadow wire",
+    "Foot pedal and cutting counter",
+    "Easy blade-gap adjustment from the front; mechanical sheet clamping"
+   ],
+   "optional": [
+    "NC back gauge with 39.4″ (1,000 mm) stroke",
+    "Pneumatic sheet support with return-to-sender and return-to-rear",
+    "Rear protection cages with light barrier",
+    "0 – 180° angular cutting device",
+    "ELGO P40T or FUJI Monitouch touch-screen NC control",
+    "Longer squaring arm and front holding arms to 118″ (3,000 mm)",
+    "Front-operated manual back gauge with ball screw",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "sm-srgm-hfr",
+    "sm-srgm-hfr-blade",
+    "sm-srgm-fr-rear"
+   ],
+   "videos": [
+    {
+     "id": "hF92ADE0DMA",
+     "title": "SRGM HFR guillotine shear with return-to-front and return-to-rear",
+     "duration": "PT3M0S",
+     "thumb": "video-hF92ADE0DMA"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SRGM-HFR",
+      "sub": "Light type direct-gear motorised guillotines with return-to-sender",
+      "models": [
+       "SRGM-HFR 1320",
+       "SRGM-HFR 1520",
+       "SRGM-HFR 2020",
+       "SRGM-HFR 2520",
+       "SRGM-HFR 3020"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "12 ga (2.5 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "52.0″ (1,320 mm)",
+         "59.8″ (1,520 mm)",
+         "79.5″ (2,020 mm)",
+         "99.2″ (2,520 mm)",
+         "118.9″ (3,020 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table width",
+        "sub": "",
+        "cells": [
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "17.9″ (455 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "76 × 83 × 52″ (1,920 × 2,100 × 1,330 mm)",
+         "83 × 83 × 52″ (2,100 × 2,100 × 1,330 mm)",
+         "104 × 83 × 52″ (2,650 × 2,100 × 1,330 mm)",
+         "124 × 83 × 52″ (3,150 × 2,100 × 1,330 mm)",
+         "144 × 83 × 52″ (3,650 × 2,100 × 1,330 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,086 lb (1,400 kg)",
+         "3,748 lb (1,700 kg)",
+         "4,409 lb (2,000 kg)",
+         "4,850 lb (2,200 kg)",
+         "6,834 lb (3,100 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SRGM-HFR 1320",
+      "glance": [
+       "1/8″ (3 mm)",
+       "52.0″ (1,320 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "3,086 lb (1,400 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-HFR 1520",
+      "glance": [
+       "1/8″ (3 mm)",
+       "59.8″ (1,520 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "3,748 lb (1,700 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-HFR 2020",
+      "glance": [
+       "1/8″ (3 mm)",
+       "79.5″ (2,020 mm)",
+       "35 strokes/min",
+       "5.5 HP (4 kW)",
+       "4,409 lb (2,000 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-HFR 2520",
+      "glance": [
+       "12 ga (2.5 mm)",
+       "99.2″ (2,520 mm)",
+       "35 strokes/min",
+       "5.5 HP (4 kW)",
+       "4,850 lb (2,200 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-HFR 3020",
+      "glance": [
+       "1/8″ (3 mm)",
+       "118.9″ (3,020 mm)",
+       "35 strokes/min",
+       "10 HP (7.5 kW)",
+       "6,834 lb (3,100 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L (along the blade) × W × H."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
+    "label": "Download the mechanical guillotine shears brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "shear-return"
+  },
+  "nt-shear-srgm-fr": {
+   "id": "nt-shear-srgm-fr",
+   "brand": "novotech-premium",
+   "name": "SRGM-FR mechanical guillotine shears with return-to-sender, 1/4″ × 3.6 ft – 13.8 ft",
+   "short": "SRGM-FR shears",
+   "models_label": "SRGM-FR 1100 – SRGM-FR 4200 · 8 models",
+   "summary": "The SRGM with the return-to-sender sheet support behind the blade: the cut piece is returned to the operator at the front, the off-cut drops to the rear — blanking and strip cutting by one person. Same 1/4″ (6 mm) capacity, 31 strokes a minute, NC back gauge, squaring arm and ball-transfer table as the SRGM, with the table 3″ higher for the return conveyor.",
+   "features": [
+    "1/4″ (6 mm) mild steel on the 1100 and 1360, 3/16″ to 5/32″ on the 1560 – 3200, 1/8″ on the 4200; 31 strokes per minute",
+    "NC-controlled back gauge with 29.5″ (750 mm) stroke",
+    "Manual return-to-sender: the cut piece comes back to the operator",
+    "Squaring arm with T-slot, stopper and ruler",
+    "Front sheet holding arms; finger protection guard",
+    "Rear protection cages with photocell",
+    "Table with ball transfers; cutting line illumination with shadow wire",
+    "Foot pedal and cutting counter",
+    "Easy blade-gap adjustment from the front; mechanical sheet clamping"
+   ],
+   "optional": [
+    "NC back gauge with 39.4″ (1,000 mm) stroke",
+    "Pneumatic sheet support with return-to-sender and return-to-rear",
+    "Rear protection cages with light barrier",
+    "0 – 180° angular cutting device",
+    "ELGO P40T or FUJI Monitouch touch-screen NC control",
+    "Longer squaring arm and front holding arms to 118″ (3,000 mm)",
+    "Front-operated manual back gauge with ball screw",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "sm-srgm-fr",
+    "sm-srgm-fr-panel",
+    "sm-srgm-fr-rear",
+    "sm-srgm-fr-open"
+   ],
+   "videos": [
+    {
+     "id": "Cc6JwtRAidg",
+     "title": "SRGM FR guillotine shear with return-to-front and return-to-rear",
+     "duration": "PT2M49S",
+     "thumb": "video-Cc6JwtRAidg"
+    },
+    {
+     "id": "5Kv4G4OqOy4",
+     "title": "SRGM FR NC mechanical shear",
+     "duration": "PT4M3S",
+     "thumb": "video-5Kv4G4OqOy4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SRGM-FR",
+      "sub": "Direct-gear motorised guillotines with return-to-sender",
+      "models": [
+       "SRGM-FR 1100",
+       "SRGM-FR 1360",
+       "SRGM-FR 1560",
+       "SRGM-FR 2060",
+       "SRGM-FR 2560",
+       "SRGM-FR 3060",
+       "SRGM-FR 3200",
+       "SRGM-FR 4200"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/16″ (5 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "43.3″ (1,100 mm)",
+         "53.5″ (1,360 mm)",
+         "61.4″ (1,560 mm)",
+         "81.1″ (2,060 mm)",
+         "100.8″ (2,560 mm)",
+         "120.5″ (3,060 mm)",
+         "126.0″ (3,200 mm)",
+         "165.4″ (4,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table width",
+        "sub": "",
+        "cells": [
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 89 × 55″ (1,750 × 2,250 × 1,400 mm)",
+         "81 × 89 × 55″ (2,050 × 2,250 × 1,400 mm)",
+         "89 × 89 × 55″ (2,250 × 2,250 × 1,400 mm)",
+         "106 × 89 × 55″ (2,700 × 2,250 × 1,400 mm)",
+         "126 × 89 × 55″ (3,200 × 2,250 × 1,400 mm)",
+         "146 × 89 × 55″ (3,700 × 2,250 × 1,400 mm)",
+         "169 × 89 × 55″ (4,300 × 2,250 × 1,400 mm)",
+         "209 × 89 × 55″ (5,300 × 2,250 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,519 lb (2,050 kg)",
+         "5,181 lb (2,350 kg)",
+         "5,622 lb (2,550 kg)",
+         "6,834 lb (3,100 kg)",
+         "7,937 lb (3,600 kg)",
+         "9,039 lb (4,100 kg)",
+         "9,921 lb (4,500 kg)",
+         "11,905 lb (5,400 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SRGM-FR 1100",
+      "glance": [
+       "1/4″ (6 mm)",
+       "43.3″ (1,100 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "4,519 lb (2,050 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-FR 1360",
+      "glance": [
+       "1/4″ (6 mm)",
+       "53.5″ (1,360 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "5,181 lb (2,350 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-FR 1560",
+      "glance": [
+       "3/16″ (5 mm)",
+       "61.4″ (1,560 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "5,622 lb (2,550 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-FR 2060",
+      "glance": [
+       "5/32″ (4 mm)",
+       "81.1″ (2,060 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "6,834 lb (3,100 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-FR 2560",
+      "glance": [
+       "5/32″ (4 mm)",
+       "100.8″ (2,560 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "7,937 lb (3,600 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-FR 3060",
+      "glance": [
+       "5/32″ (4 mm)",
+       "120.5″ (3,060 mm)",
+       "31 strokes/min",
+       "15 HP (11 kW)",
+       "9,039 lb (4,100 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-FR 3200",
+      "glance": [
+       "5/32″ (4 mm)",
+       "126.0″ (3,200 mm)",
+       "31 strokes/min",
+       "15 HP (11 kW)",
+       "9,921 lb (4,500 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-FR 4200",
+      "glance": [
+       "1/8″ (3 mm)",
+       "165.4″ (4,200 mm)",
+       "31 strokes/min",
+       "15 HP (11 kW)",
+       "11,905 lb (5,400 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L (along the blade) × W × H."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
+    "label": "Download the mechanical guillotine shears brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "shear-return"
+  },
+  "nt-shear-srgm-hcl": {
+   "id": "nt-shear-srgm-hcl",
+   "brand": "novotech-premium",
+   "name": "SRGM-HCL light type shears for cut-to-length lines, 1/8″ × 3.6 ft – 6.8 ft",
+   "short": "SRGM-HCL line shears",
+   "models_label": "SRGM-HCL 1100 – SRGM-HCL 2060 · 4 models",
+   "summary": "The light-type guillotine built into a decoiler, straightener and feeder line: open at the rear so the coil strip runs straight through, 1/8″ (3 mm) mild steel over 43″ to 6.8 ft at 35 strokes a minute, with the line's control or an optional electrical cabinet of its own. From 2,315 lb.",
+   "features": [
+    "1/8″ (3 mm) mild steel; 35 strokes per minute; 51″ (1,300 mm) deep",
+    "Built to be integrated into a cut-to-length line: the sheet feeds straight through from the rear",
+    "Squaring arm with T-slot, stopper and ruler",
+    "Front sheet holding arms; finger protection guard",
+    "Table with ball transfers; cutting line illumination with shadow wire",
+    "Mechanical sheet clamping; high-carbon, high-chrome two-edged top and four-edged bottom blades"
+   ],
+   "optional": [
+    "Electrical cabinet (when the shear is not run from the line control)",
+    "Rear protection cages with photocell or light barrier",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "sm-srgm-hcl",
+    "sm-srgm-hcl-rear"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SRGM-HCL",
+      "sub": "Light type direct-gear motorised guillotines for cut-to-length lines",
+      "models": [
+       "SRGM-HCL 1100",
+       "SRGM-HCL 1360",
+       "SRGM-HCL 1560",
+       "SRGM-HCL 2060"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "43.3″ (1,100 mm)",
+         "53.5″ (1,360 mm)",
+         "61.4″ (1,560 mm)",
+         "81.1″ (2,060 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min",
+         "35 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "5.5 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)",
+         "31.9″ (810 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table width",
+        "sub": "",
+        "cells": [
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)",
+         "15.4″ (390 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 51 × 50″ (1,720 × 1,300 × 1,260 mm)",
+         "76 × 51 × 50″ (1,920 × 1,300 × 1,260 mm)",
+         "83 × 51 × 50″ (2,100 × 1,300 × 1,260 mm)",
+         "104 × 51 × 50″ (2,650 × 1,300 × 1,260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,315 lb (1,050 kg)",
+         "2,646 lb (1,200 kg)",
+         "3,197 lb (1,450 kg)",
+         "3,748 lb (1,700 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SRGM-HCL 1100",
+      "glance": [
+       "1/8″ (3 mm)",
+       "43.3″ (1,100 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "2,315 lb (1,050 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-HCL 1360",
+      "glance": [
+       "1/8″ (3 mm)",
+       "53.5″ (1,360 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-HCL 1560",
+      "glance": [
+       "1/8″ (3 mm)",
+       "61.4″ (1,560 mm)",
+       "35 strokes/min",
+       "4 HP (3 kW)",
+       "3,197 lb (1,450 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-HCL 2060",
+      "glance": [
+       "1/8″ (3 mm)",
+       "81.1″ (2,060 mm)",
+       "35 strokes/min",
+       "5.5 HP (4 kW)",
+       "3,748 lb (1,700 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L (along the blade) × W × H."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
+    "label": "Download the mechanical guillotine shears brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "shear-line"
+  },
+  "nt-shear-srgm-cl": {
+   "id": "nt-shear-srgm-cl",
+   "brand": "novotech-premium",
+   "name": "SRGM-CL mechanical shears for cut-to-length lines, 1/4″ × 3.6 ft – 6.8 ft",
+   "short": "SRGM-CL line shears",
+   "models_label": "SRGM-CL 1100 – SRGM-CL 2060 · 4 models",
+   "summary": "The SRGM for coil lines: the same 10 HP direct-gear drive, 1/4″ (6 mm) capacity and 31 strokes a minute in a frame only 49″ deep that the straightened strip feeds through from the rear, cut to length by the line control. Squaring arm, front holding arms, ball-transfer table and shadow-line light as standard; electrical cabinet and rear guards optional.",
+   "features": [
+    "1/4″ (6 mm) mild steel on the 1100 and 1360, 3/16″ on the 1560, 5/32″ on the 2060; 31 strokes per minute; 49″ (1,250 mm) deep",
+    "Built to be integrated into a cut-to-length line: the sheet feeds straight through from the rear",
+    "Squaring arm with T-slot, stopper and ruler",
+    "Front sheet holding arms; finger protection guard",
+    "Table with ball transfers; cutting line illumination with shadow wire",
+    "Mechanical sheet clamping; high-carbon, high-chrome two-edged top and four-edged bottom blades"
+   ],
+   "optional": [
+    "Electrical cabinet (when the shear is not run from the line control)",
+    "Rear protection cages with photocell or light barrier",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "sm-srgm-cl"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SRGM-CL",
+      "sub": "Direct-gear motorised guillotines for cut-to-length lines",
+      "models": [
+       "SRGM-CL 1100",
+       "SRGM-CL 1360",
+       "SRGM-CL 1560",
+       "SRGM-CL 2060"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "3/16″ (5 mm)",
+         "5/32″ (4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "43.3″ (1,100 mm)",
+         "53.5″ (1,360 mm)",
+         "61.4″ (1,560 mm)",
+         "81.1″ (2,060 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min",
+         "31 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table width",
+        "sub": "",
+        "cells": [
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)",
+         "17.9″ (455 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 49 × 55″ (1,750 × 1,250 × 1,400 mm)",
+         "81 × 49 × 55″ (2,050 × 1,250 × 1,400 mm)",
+         "89 × 49 × 55″ (2,250 × 1,250 × 1,400 mm)",
+         "106 × 49 × 55″ (2,700 × 1,250 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,189 lb (1,900 kg)",
+         "4,850 lb (2,200 kg)",
+         "5,291 lb (2,400 kg)",
+         "6,393 lb (2,900 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SRGM-CL 1100",
+      "glance": [
+       "1/4″ (6 mm)",
+       "43.3″ (1,100 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "4,189 lb (1,900 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-CL 1360",
+      "glance": [
+       "1/4″ (6 mm)",
+       "53.5″ (1,360 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "4,850 lb (2,200 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-CL 1560",
+      "glance": [
+       "3/16″ (5 mm)",
+       "61.4″ (1,560 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "5,291 lb (2,400 kg)"
+      ]
+     },
+     {
+      "name": "SRGM-CL 2060",
+      "glance": [
+       "5/32″ (4 mm)",
+       "81.1″ (2,060 mm)",
+       "31 strokes/min",
+       "10 HP (7.5 kW)",
+       "6,393 lb (2,900 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. Metric values in brackets are the manufacturer's nominal figures; dimensions are overall L (along the blade) × W × H."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
+    "label": "Download the mechanical guillotine shears brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "shear-line"
+  },
+  "vl-qc12k": {
+   "id": "vl-qc12k",
+   "brand": "novotech",
+   "name": "Hydraulic swing beam shears, 5/32″ – 3/4″ × 8 – 20 ft",
+   "short": "Swing beam shears",
+   "models_label": "QC12K-4×2500 – QC12K-20×4000 · 32 models",
+   "summary": "The hydraulic shear most shops buy: a swing beam on two cylinders cuts the full length in one stroke, the Estun E21S control positions the motorised back gauge and sets the cutting angle, and hydraulic hold-downs keep the sheet flat. Thirty-two models from 5/32″ × 8 ft to 3/4″ × 13 ft; the 1/4″ × 8 ft and 1/4″ × 10 ft machines (QC12K-6×2500 and 6×3200) are the sizes we quote most, with 17 strokes a minute, a 7.5 kW motor and 25.6″ of back gauge. Ball-transfer front tables, shadow-line light, squaring arm and a light-barrier front guard are standard.",
+   "features": [
+    "5/32″ to 3/4″ (4 – 20 mm) mild steel; stainless about 60 % of that thickness",
+    "Estun E21S NC control: motorised back gauge, cutting-angle and blade-gap setting, stroke counter, 40 programs × 25 steps, inches or millimetres",
+    "Swing beam on two cylinders with accumulator return; Rexroth hydraulic valve block with pressure gauge and overload protection",
+    "Motorised back gauge on ball screws, 0.8 – 25.6″ (20 – 650 mm), 31.5″ (800 mm) on 13 ft and up, with support fingers and retract",
+    "Hydraulic hold-downs every 100 mm; four-edge rectangular blades; manual single-point blade-gap adjustment",
+    "Shadow-line light, ball-transfer front tables, squaring arm, front guard with light barrier, rear safety barrier",
+    "Siemens or Wannan main motor; Schneider electrics; NOK seals",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Estun E200PS or Delem DAC-360T control with programmable blade gap",
+    "Pneumatic sheet support (return of the cut piece)",
+    "Longer front support arms; roller tables",
+    "Hydraulic oil cooler; automatic lubrication",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-qc12k-1",
+    "vl-qc12k-2",
+    "vl-qc12k-rear",
+    "vl-sh-backgauge",
+    "vl-sh-holddowns",
+    "vl-sh-holddowns-2",
+    "vl-sh-e21s",
+    "vl-sh-roller",
+    "vl-sh-photo-1",
+    "vl-sh-photo-2",
+    "vl-sh-photo-3"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Swing beam shears · 5/32″ and 1/4″",
+      "sub": "10 models · 8 – 20 ft",
+      "models": [
+       "QC12K-4×2500",
+       "QC12K-4×3200",
+       "QC12K-4×4000",
+       "QC12K-4×5000",
+       "QC12K-4×6000",
+       "QC12K-6×2500",
+       "QC12K-6×3200",
+       "QC12K-6×4000",
+       "QC12K-6×5000",
+       "QC12K-6×6000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "33",
+         "26",
+         "23",
+         "16",
+         "12",
+         "17",
+         "17",
+         "15",
+         "11",
+         "8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "2°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "20.1 HP (15 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "37 US gal (140 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "85 US gal (320 L)",
+         "116 US gal (440 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "85 US gal (320 L)",
+         "116 US gal (440 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "119 × 62 × 68″ (3,035 × 1,570 × 1,720 mm)",
+         "148 × 65 × 73″ (3,750 × 1,640 × 1,850 mm)",
+         "179 × 75 × 75″ (4,550 × 1,900 × 1,900 mm)",
+         "224 × 75 × 79″ (5,700 × 1,900 × 2,000 mm)",
+         "256 × 97 × 89″ (6,500 × 2,460 × 2,250 mm)",
+         "120 × 65 × 75″ (3,050 × 1,650 × 1,900 mm)",
+         "148 × 65 × 75″ (3,750 × 1,650 × 1,900 mm)",
+         "179 × 79 × 79″ (4,550 × 2,000 × 2,000 mm)",
+         "224 × 96 × 91″ (5,700 × 2,450 × 2,300 mm)",
+         "258 × 97 × 98″ (6,550 × 2,470 × 2,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,716 lb (3,500 kg)",
+         "12,125 lb (5,500 kg)",
+         "16,535 lb (7,500 kg)",
+         "18,739 lb (8,500 kg)",
+         "37,479 lb (17,000 kg)",
+         "12,125 lb (5,500 kg)",
+         "14,330 lb (6,500 kg)",
+         "18,078 lb (8,200 kg)",
+         "27,778 lb (12,600 kg)",
+         "42,990 lb (19,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Swing beam shears · 5/16″ to 15/32″",
+      "sub": "14 models · 8 – 20 ft",
+      "models": [
+       "QC12K-8×2500",
+       "QC12K-8×3200",
+       "QC12K-8×4000",
+       "QC12K-8×5000",
+       "QC12K-8×6000",
+       "QC12K-10×2500",
+       "QC12K-10×3200",
+       "QC12K-10×4000",
+       "QC12K-10×6000",
+       "QC12K-12×2500",
+       "QC12K-12×3200",
+       "QC12K-12×4000",
+       "QC12K-12×5000",
+       "QC12K-12×6000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "13",
+         "13",
+         "12",
+         "10",
+         "9",
+         "13",
+         "13",
+         "9",
+         "6",
+         "12",
+         "10",
+         "8",
+         "6",
+         "5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "2°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "2°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "2°",
+         "2°",
+         "1.75°",
+         "2°",
+         "2°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "20.1 HP (15 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "85 US gal (320 L)",
+         "116 US gal (440 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "106 US gal (400 L)",
+         "116 US gal (440 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "116 US gal (440 L)",
+         "116 US gal (440 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "120 × 65 × 75″ (3,060 × 1,650 × 1,900 mm)",
+         "148 × 65 × 75″ (3,760 × 1,650 × 1,900 mm)",
+         "180 × 77 × 76″ (4,560 × 1,960 × 1,920 mm)",
+         "220 × 93 × 86″ (5,600 × 2,360 × 2,180 mm)",
+         "260 × 96 × 98″ (6,600 × 2,450 × 2,500 mm)",
+         "120 × 79 × 76″ (3,050 × 2,000 × 1,920 mm)",
+         "150 × 79 × 76″ (3,800 × 2,000 × 1,920 mm)",
+         "185 × 83 × 87″ (4,700 × 2,100 × 2,200 mm)",
+         "260 × 83 × 91″ (6,600 × 2,100 × 2,300 mm)",
+         "125 × 85 × 86″ (3,170 × 2,150 × 2,180 mm)",
+         "150 × 85 × 86″ (3,800 × 2,150 × 2,180 mm)",
+         "185 × 90 × 87″ (4,700 × 2,280 × 2,200 mm)",
+         "228 × 96 × 94″ (5,800 × 2,450 × 2,400 mm)",
+         "260 × 102 × 106″ (6,600 × 2,600 × 2,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "12,787 lb (5,800 kg)",
+         "14,991 lb (6,800 kg)",
+         "19,401 lb (8,800 kg)",
+         "28,219 lb (12,800 kg)",
+         "47,399 lb (21,500 kg)",
+         "15,432 lb (7,000 kg)",
+         "18,739 lb (8,500 kg)",
+         "26,015 lb (11,800 kg)",
+         "60,627 lb (27,500 kg)",
+         "21,605 lb (9,800 kg)",
+         "25,353 lb (11,500 kg)",
+         "30,424 lb (13,800 kg)",
+         "41,888 lb (19,000 kg)",
+         "68,343 lb (31,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Swing beam shears · 5/8″ and 3/4″",
+      "sub": "8 models · 8 – 20 ft",
+      "models": [
+       "QC12K-16×2500",
+       "QC12K-16×3200",
+       "QC12K-16×4000",
+       "QC12K-16×5000",
+       "QC12K-16×6000",
+       "QC12K-20×2500",
+       "QC12K-20×3200",
+       "QC12K-20×4000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "13",
+         "10",
+         "9",
+         "7",
+         "5",
+         "8",
+         "7",
+         "5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "2.5°",
+         "2°",
+         "1.75°",
+         "2.5°",
+         "2.5°",
+         "2.5°",
+         "2.5°",
+         "2.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "159 US gal (600 L)",
+         "159 US gal (600 L)",
+         "159 US gal (600 L)",
+         "132 US gal (500 L)",
+         "132 US gal (500 L)",
+         "145 US gal (550 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "128 × 91 × 87″ (3,250 × 2,300 × 2,200 mm)",
+         "152 × 91 × 86″ (3,870 × 2,300 × 2,180 mm)",
+         "185 × 101 × 87″ (4,700 × 2,575 × 2,200 mm)",
+         "232 × 102 × 106″ (5,900 × 2,600 × 2,700 mm)",
+         "260 × 106 × 114″ (6,600 × 2,700 × 2,900 mm)",
+         "130 × 102 × 91″ (3,300 × 2,580 × 2,300 mm)",
+         "163 × 102 × 98″ (4,150 × 2,600 × 2,500 mm)",
+         "191 × 102 × 110″ (4,850 × 2,600 × 2,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "24,251 lb (11,000 kg)",
+         "27,778 lb (12,600 kg)",
+         "37,479 lb (17,000 kg)",
+         "52,911 lb (24,000 kg)",
+         "81,130 lb (36,800 kg)",
+         "31,526 lb (14,300 kg)",
+         "35,274 lb (16,000 kg)",
+         "50,706 lb (23,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "QC12K-4×2500",
+      "glance": [
+       "5/32″ (4 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "33",
+       "10.1 HP (7.5 kW)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×3200",
+      "glance": [
+       "5/32″ (4 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "26",
+       "10.1 HP (7.5 kW)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×4000",
+      "glance": [
+       "5/32″ (4 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "23",
+       "10.1 HP (7.5 kW)",
+       "16,535 lb (7,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×5000",
+      "glance": [
+       "5/32″ (4 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "16",
+       "10.1 HP (7.5 kW)",
+       "18,739 lb (8,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×6000",
+      "glance": [
+       "5/32″ (4 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "12",
+       "20.1 HP (15 kW)",
+       "37,479 lb (17,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×2500",
+      "glance": [
+       "1/4″ (6 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "17",
+       "10.1 HP (7.5 kW)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×3200",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "17",
+       "10.1 HP (7.5 kW)",
+       "14,330 lb (6,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×4000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "15",
+       "10.1 HP (7.5 kW)",
+       "18,078 lb (8,200 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×5000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "11",
+       "20.1 HP (15 kW)",
+       "27,778 lb (12,600 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×6000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "8",
+       "20.1 HP (15 kW)",
+       "42,990 lb (19,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×2500",
+      "glance": [
+       "5/16″ (8 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13",
+       "14.8 HP (11 kW)",
+       "12,787 lb (5,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×3200",
+      "glance": [
+       "5/16″ (8 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "13",
+       "14.8 HP (11 kW)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×4000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12",
+       "20.1 HP (15 kW)",
+       "19,401 lb (8,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×5000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "10",
+       "24.8 HP (18.5 kW)",
+       "28,219 lb (12,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×6000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "9",
+       "24.8 HP (18.5 kW)",
+       "47,399 lb (21,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×2500",
+      "glance": [
+       "3/8″ (10 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13",
+       "20.1 HP (15 kW)",
+       "15,432 lb (7,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×3200",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "13",
+       "20.1 HP (15 kW)",
+       "18,739 lb (8,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×4000",
+      "glance": [
+       "3/8″ (10 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9",
+       "29.5 HP (22 kW)",
+       "26,015 lb (11,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×6000",
+      "glance": [
+       "3/8″ (10 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "6",
+       "29.5 HP (22 kW)",
+       "60,627 lb (27,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×2500",
+      "glance": [
+       "15/32″ (12 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "12",
+       "29.5 HP (22 kW)",
+       "21,605 lb (9,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×3200",
+      "glance": [
+       "15/32″ (12 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "10",
+       "29.5 HP (22 kW)",
+       "25,353 lb (11,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×4000",
+      "glance": [
+       "15/32″ (12 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "8",
+       "29.5 HP (22 kW)",
+       "30,424 lb (13,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×5000",
+      "glance": [
+       "15/32″ (12 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "6",
+       "40.2 HP (30 kW)",
+       "41,888 lb (19,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×6000",
+      "glance": [
+       "15/32″ (12 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "5",
+       "40.2 HP (30 kW)",
+       "68,343 lb (31,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×2500",
+      "glance": [
+       "5/8″ (16 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13",
+       "29.5 HP (22 kW)",
+       "24,251 lb (11,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×3200",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "10",
+       "29.5 HP (22 kW)",
+       "27,778 lb (12,600 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×4000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9",
+       "29.5 HP (22 kW)",
+       "37,479 lb (17,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×5000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7",
+       "40.2 HP (30 kW)",
+       "52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×6000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "5",
+       "40.2 HP (30 kW)",
+       "81,130 lb (36,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-20×2500",
+      "glance": [
+       "3/4″ (20 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "8",
+       "40.2 HP (30 kW)",
+       "31,526 lb (14,300 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-20×3200",
+      "glance": [
+       "3/4″ (20 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7",
+       "40.2 HP (30 kW)",
+       "35,274 lb (16,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-20×4000",
+      "glance": [
+       "3/4″ (20 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "5",
+       "40.2 HP (30 kW)",
+       "50,706 lb (23,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the supplier's ratings over the full blade length for mild steel of up to 65,000 psi (450 N/mm²); stainless steel runs about 60 % of the mild-steel thickness, aluminum about 150 %. The model number is the metric thickness × cutting length. Dimensions are overall L (along the blade) × W × H; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Shearing-Machines-2026.pdf",
+    "label": "Download the value-line hydraulic shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-swing"
+  },
+  "vl-q11k": {
+   "id": "vl-q11k",
+   "brand": "novotech",
+   "name": "Hydraulic guillotine shears, 1/4″ – 1-9/16″ × 8 – 26 ft, variable rake angle",
+   "short": "Guillotine shears",
+   "models_label": "Q11K-6×2500 – Q11K-40×2500 · 34 models",
+   "summary": "The production shear: a guillotine beam on linear rollers with a rake angle the control sets between 0.5° and 4°, so thin sheet is cut fast and flat and 1″ plate is cut at the high angle with less twist and less force. The blade gap is adjusted from the Estun E21S control as well, with the back gauge and the stroke length. Thirty-four models from 1/4″ × 8 ft to 1-9/16″ × 8 ft and 5/8″ × 26 ft, with 7.5 to 55 kW motors and twin pumps on the 20 mm × 20 ft machine.",
+   "features": [
+    "1/4″ to 1-9/16″ (6 – 40 mm) mild steel over 8 – 26 ft; up to 25 cuts a minute",
+    "Estun E21S NC control: motorised back gauge, variable rake angle and blade gap set from the control, stroke counter, inches or millimetres",
+    "Guillotine beam on linear rollers with a variable rake angle — thin sheet cut fast and flat at 0.5°, thick plate at the high angle with less distortion",
+    "Motorised ball-screw back gauge to 31.5″ (800 mm), 39.4″ (1,000 mm) on the large machines, with sheet support",
+    "Hydraulic hold-downs; four-edge blades; Rexroth valve block with overload protection; accumulator return",
+    "Shadow-line light, ball-transfer front tables, squaring arm, front guard with light barrier, rear safety barrier",
+    "Siemens or Wannan main motor; Schneider electrics",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DAC-360T or Estun E200PS control",
+    "Pneumatic sheet support; conveyor for cut strips",
+    "Longer front support arms; roller tables",
+    "Hydraulic oil cooler",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-q11k-1",
+    "vl-q11k-rear",
+    "vl-q11k-rear-2",
+    "vl-q11k-controls",
+    "vl-q11k-valve",
+    "vl-q11k-measure",
+    "vl-q11k-feed",
+    "vl-q11k-rexroth",
+    "vl-q11k-holddown",
+    "vl-g-photo-1",
+    "vl-g-photo-2",
+    "vl-g-photo-3",
+    "vl-g-photo-4",
+    "vl-g-photo-5"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Guillotine shears · 1/4″ and 5/16″",
+      "sub": "10 models · 8 – 20 ft",
+      "models": [
+       "Q11K-6×2500",
+       "Q11K-6×3200",
+       "Q11K-6×4000",
+       "Q11K-6×5000",
+       "Q11K-6×6000",
+       "Q11K-8×2500",
+       "Q11K-8×3200",
+       "Q11K-8×4000",
+       "Q11K-8×5000",
+       "Q11K-8×6000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at max / min angle",
+        "cells": [
+         "16 – 25",
+         "14 – 20",
+         "12 – 17",
+         "8 – 14",
+         "7 – 12",
+         "13 – 20",
+         "11 – 18",
+         "9 – 16",
+         "8 – 15",
+         "7 – 14"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rake angle",
+        "sub": "variable",
+        "cells": [
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "90 US gal (340 L)",
+         "90 US gal (340 L)",
+         "90 US gal (340 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "90 US gal (340 L)",
+         "92 US gal (350 L)",
+         "153 US gal (580 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "126 × 77 × 81″ (3,200 × 1,950 × 2,050 mm)",
+         "154 × 77 × 82″ (3,900 × 1,950 × 2,075 mm)",
+         "183 × 79 × 83″ (4,640 × 2,000 × 2,100 mm)",
+         "228 × 83 × 94″ (5,780 × 2,100 × 2,380 mm)",
+         "266 × 87 × 98″ (6,750 × 2,200 × 2,500 mm)",
+         "124 × 78 × 81″ (3,150 × 1,970 × 2,055 mm)",
+         "152 × 81 × 83″ (3,850 × 2,050 × 2,100 mm)",
+         "183 × 83 × 94″ (4,650 × 2,100 × 2,400 mm)",
+         "224 × 77 × 102″ (5,700 × 1,950 × 2,600 mm)",
+         "266 × 89 × 103″ (6,750 × 2,250 × 2,615 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "12,566 lb (5,700 kg)",
+         "14,550 lb (6,600 kg)",
+         "17,416 lb (7,900 kg)",
+         "30,865 lb (14,000 kg)",
+         "40,785 lb (18,500 kg)",
+         "13,669 lb (6,200 kg)",
+         "16,314 lb (7,400 kg)",
+         "22,928 lb (10,400 kg)",
+         "34,172 lb (15,500 kg)",
+         "44,092 lb (20,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Guillotine shears · 3/8″ to 5/8″",
+      "sub": "13 models · 8 – 26 ft",
+      "models": [
+       "Q11K-10×3200",
+       "Q11K-10×4000",
+       "Q11K-13×2500",
+       "Q11K-13×3200",
+       "Q11K-13×4000",
+       "Q11K-13×5000",
+       "Q11K-13×6000",
+       "Q11K-16×2500",
+       "Q11K-16×3200",
+       "Q11K-16×4000",
+       "Q11K-16×5000",
+       "Q11K-16×6000",
+       "Q11K-16×8000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "26.2 ft · 315.0″ (8,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at max / min angle",
+        "cells": [
+         "9 – 16",
+         "10 – 16",
+         "10 – 20",
+         "9 – 18",
+         "8 – 16",
+         "7 – 14",
+         "6 – 12",
+         "9 – 18",
+         "8 – 17",
+         "7 – 15",
+         "5 – 11",
+         "6 – 11",
+         "4 – 8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rake angle",
+        "sub": "variable",
+        "cells": [
+         "0.5° – 2.5°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "20.1 HP (15 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "49.6 HP (37 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "79 US gal (300 L)",
+         "107 US gal (405 L)",
+         "107 US gal (405 L)",
+         "107 US gal (405 L)",
+         "107 US gal (405 L)",
+         "133 US gal (505 L)",
+         "269 US gal (1020 L)",
+         "125 US gal (475 L)",
+         "125 US gal (475 L)",
+         "157 US gal (595 L)",
+         "157 US gal (595 L)",
+         "269 US gal (1020 L)",
+         "544 US gal (2060 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "152 × 68 × 88″ (3,850 × 1,720 × 2,242 mm)",
+         "184 × 75 × 92″ (4,680 × 1,895 × 2,335 mm)",
+         "128 × 77 × 83″ (3,250 × 1,950 × 2,110 mm)",
+         "154 × 81 × 91″ (3,900 × 2,070 × 2,315 mm)",
+         "189 × 85 × 97″ (4,800 × 2,150 × 2,460 mm)",
+         "228 × 89 × 110″ (5,800 × 2,270 × 2,800 mm)",
+         "274 × 96 × 120″ (6,950 × 2,450 × 3,050 mm)",
+         "129 × 80 × 89″ (3,280 × 2,020 × 2,270 mm)",
+         "156 × 85 × 96″ (3,950 × 2,150 × 2,450 mm)",
+         "189 × 84 × 100″ (4,800 × 2,130 × 2,550 mm)",
+         "229 × 92 × 109″ (5,810 × 2,330 × 2,780 mm)",
+         "276 × 98 × 118″ (7,000 × 2,500 × 3,000 mm)",
+         "356 × 125 × 138″ (9,050 × 3,180 × 3,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "18,519 lb (8,400 kg)",
+         "26,676 lb (12,100 kg)",
+         "16,755 lb (7,600 kg)",
+         "22,708 lb (10,300 kg)",
+         "29,762 lb (13,500 kg)",
+         "48,502 lb (22,000 kg)",
+         "59,525 lb (27,000 kg)",
+         "20,503 lb (9,300 kg)",
+         "26,896 lb (12,200 kg)",
+         "33,069 lb (15,000 kg)",
+         "49,604 lb (22,500 kg)",
+         "71,650 lb (32,500 kg)",
+         "136,686 lb (62,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Guillotine shears · 3/4″ to 1-9/16″",
+      "sub": "11 models · 8 – 20 ft",
+      "models": [
+       "Q11K-20×2500",
+       "Q11K-20×3200",
+       "Q11K-20×4000",
+       "Q11K-20×6000",
+       "Q11K-25×2500",
+       "Q11K-25×3200",
+       "Q11K-25×4000",
+       "Q11K-30×2500",
+       "Q11K-30×3200",
+       "Q11K-30×4000",
+       "Q11K-40×2500"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "1″ (25 mm)",
+         "1″ (25 mm)",
+         "1″ (25 mm)",
+         "1-3/16″ (30 mm)",
+         "1-3/16″ (30 mm)",
+         "1-3/16″ (30 mm)",
+         "1-9/16″ (40 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at max / min angle",
+        "cells": [
+         "7 – 16",
+         "6 – 15",
+         "6 – 14",
+         "5 – 11",
+         "5 – 14",
+         "5 – 10",
+         "5 – 8",
+         "5 – 12",
+         "4 – 10",
+         "3 – 7",
+         "4 – 8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rake angle",
+        "sub": "variable",
+        "cells": [
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3.5°",
+         "0.5° – 3.5°",
+         "0.5° – 3.5°",
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3.5°",
+         "0.5° – 4°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "2 × 40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)",
+         "73.8 HP (55 kW)",
+         "73.8 HP (55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "135 US gal (510 L)",
+         "135 US gal (510 L)",
+         "169 US gal (640 L)",
+         "396 US gal (1500 L)",
+         "198 US gal (750 L)",
+         "217 US gal (820 L)",
+         "317 US gal (1200 L)",
+         "206 US gal (780 L)",
+         "264 US gal (1000 L)",
+         "370 US gal (1400 L)",
+         "362 US gal (1370 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "126 × 87 × 99″ (3,200 × 2,220 × 2,520 mm)",
+         "156 × 85 × 102″ (3,950 × 2,150 × 2,600 mm)",
+         "187 × 94 × 114″ (4,750 × 2,400 × 2,900 mm)",
+         "276 × 112 × 132″ (7,000 × 2,850 × 3,350 mm)",
+         "129 × 79 × 104″ (3,270 × 2,000 × 2,650 mm)",
+         "156 × 87 × 105″ (3,970 × 2,200 × 2,670 mm)",
+         "193 × 110 × 126″ (4,900 × 2,800 × 3,190 mm)",
+         "136 × 98 × 114″ (3,450 × 2,500 × 2,900 mm)",
+         "163 × 106 × 112″ (4,150 × 2,700 × 2,850 mm)",
+         "205 × 102 × 132″ (5,200 × 2,600 × 3,350 mm)",
+         "157 × 116 × 124″ (4,000 × 2,950 × 3,150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "27,558 lb (12,500 kg)",
+         "31,085 lb (14,100 kg)",
+         "45,636 lb (20,700 kg)",
+         "97,003 lb (44,000 kg)",
+         "33,069 lb (15,000 kg)",
+         "40,785 lb (18,500 kg)",
+         "57,320 lb (26,000 kg)",
+         "47,399 lb (21,500 kg)",
+         "59,525 lb (27,000 kg)",
+         "77,162 lb (35,000 kg)",
+         "80,469 lb (36,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Q11K-6×2500",
+      "glance": [
+       "1/4″ (6 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "16 – 25",
+       "10.1 HP (7.5 kW)",
+       "12,566 lb (5,700 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×3200",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "14 – 20",
+       "10.1 HP (7.5 kW)",
+       "14,550 lb (6,600 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×4000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12 – 17",
+       "10.1 HP (7.5 kW)",
+       "17,416 lb (7,900 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×5000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "8 – 14",
+       "14.8 HP (11 kW)",
+       "30,865 lb (14,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×6000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7 – 12",
+       "14.8 HP (11 kW)",
+       "40,785 lb (18,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×2500",
+      "glance": [
+       "5/16″ (8 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13 – 20",
+       "14.8 HP (11 kW)",
+       "13,669 lb (6,200 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×3200",
+      "glance": [
+       "5/16″ (8 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "11 – 18",
+       "14.8 HP (11 kW)",
+       "16,314 lb (7,400 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×4000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9 – 16",
+       "20.1 HP (15 kW)",
+       "22,928 lb (10,400 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×5000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "8 – 15",
+       "20.1 HP (15 kW)",
+       "34,172 lb (15,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×6000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7 – 14",
+       "20.1 HP (15 kW)",
+       "44,092 lb (20,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-10×3200",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9 – 16",
+       "20.1 HP (15 kW)",
+       "18,519 lb (8,400 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-10×4000",
+      "glance": [
+       "3/8″ (10 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "10 – 16",
+       "29.5 HP (22 kW)",
+       "26,676 lb (12,100 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×2500",
+      "glance": [
+       "1/2″ (13 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "10 – 20",
+       "29.5 HP (22 kW)",
+       "16,755 lb (7,600 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×3200",
+      "glance": [
+       "1/2″ (13 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9 – 18",
+       "29.5 HP (22 kW)",
+       "22,708 lb (10,300 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×4000",
+      "glance": [
+       "1/2″ (13 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "8 – 16",
+       "29.5 HP (22 kW)",
+       "29,762 lb (13,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×5000",
+      "glance": [
+       "1/2″ (13 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7 – 14",
+       "29.5 HP (22 kW)",
+       "48,502 lb (22,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×6000",
+      "glance": [
+       "1/2″ (13 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "6 – 12",
+       "49.6 HP (37 kW)",
+       "59,525 lb (27,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×2500",
+      "glance": [
+       "5/8″ (16 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "9 – 18",
+       "29.5 HP (22 kW)",
+       "20,503 lb (9,300 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×3200",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "8 – 17",
+       "29.5 HP (22 kW)",
+       "26,896 lb (12,200 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×4000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "7 – 15",
+       "29.5 HP (22 kW)",
+       "33,069 lb (15,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×5000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "5 – 11",
+       "40.2 HP (30 kW)",
+       "49,604 lb (22,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×6000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "6 – 11",
+       "49.6 HP (37 kW)",
+       "71,650 lb (32,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×8000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "4 – 8",
+       "60.3 HP (45 kW)",
+       "136,686 lb (62,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×2500",
+      "glance": [
+       "3/4″ (20 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "7 – 16",
+       "40.2 HP (30 kW)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×3200",
+      "glance": [
+       "3/4″ (20 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "6 – 15",
+       "40.2 HP (30 kW)",
+       "31,085 lb (14,100 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×4000",
+      "glance": [
+       "3/4″ (20 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "6 – 14",
+       "49.6 HP (37 kW)",
+       "45,636 lb (20,700 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×6000",
+      "glance": [
+       "3/4″ (20 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "5 – 11",
+       "2 × 40.2 HP (30 kW)",
+       "97,003 lb (44,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-25×2500",
+      "glance": [
+       "1″ (25 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "5 – 14",
+       "49.6 HP (37 kW)",
+       "33,069 lb (15,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-25×3200",
+      "glance": [
+       "1″ (25 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "5 – 10",
+       "49.6 HP (37 kW)",
+       "40,785 lb (18,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-25×4000",
+      "glance": [
+       "1″ (25 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "5 – 8",
+       "60.3 HP (45 kW)",
+       "57,320 lb (26,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-30×2500",
+      "glance": [
+       "1-3/16″ (30 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "5 – 12",
+       "60.3 HP (45 kW)",
+       "47,399 lb (21,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-30×3200",
+      "glance": [
+       "1-3/16″ (30 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "4 – 10",
+       "60.3 HP (45 kW)",
+       "59,525 lb (27,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-30×4000",
+      "glance": [
+       "1-3/16″ (30 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "3 – 7",
+       "73.8 HP (55 kW)",
+       "77,162 lb (35,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-40×2500",
+      "glance": [
+       "1-9/16″ (40 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "4 – 8",
+       "73.8 HP (55 kW)",
+       "80,469 lb (36,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the supplier's ratings over the full blade length for mild steel of up to 65,000 psi (450 N/mm²); stainless steel runs about 60 % of the mild-steel thickness, aluminum about 150 %. The model number is the metric thickness × cutting length. Dimensions are overall L (along the blade) × W × H; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Shearing-Machines-2026.pdf",
+    "label": "Download the value-line hydraulic shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-guillotine"
+  },
+  "tt-ps": {
+   "id": "tt-ps",
+   "brand": "novotech",
+   "name": "PS pneumatic shear, 16 ga × 52″",
+   "short": "PS pneumatic shear",
+   "models_label": "PS-1.5x1320 · 1 model",
+   "summary": "The shear for a shop that already has compressed air: a pneumatic cylinder drives the cutting beam through 16 ga (1.5 mm) mild steel over 52″ at 40 strokes a minute, with no motor, no hydraulics and nothing to warm up. A low cutting angle cuts narrow strips without twisting; the bed and beam are aligned at the factory for accuracy; front and back gauges with fine adjustment, a mobile 24 V foot pedal and a complete pneumatic control set are standard. 1,257 lb, runs on 85 – 100 psi shop air.",
+   "features": [
+    "16 ga (1.5 mm) mild steel × 52″ (1,320 mm); 40 strokes per minute on 85 – 100 psi shop air",
+    "Pneumatic cylinder drive with filter, regulator and lubricator",
+    "Low cutting angle for narrow strips without twist; factory-aligned bed and beam",
+    "Back gauge 29.5″ (750 mm) with indicator; front gauge 21″ (535 mm)",
+    "Mobile 24 V foot pedal switch"
+   ],
+   "optional": [
+    "Photoelectric rear protection",
+    "Sheet support arms"
+   ],
+   "images": [
+    "tt-ps",
+    "tt-ps-gauge",
+    "tt-ps-control",
+    "tt-ps-cylinder"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PS",
+      "sub": "Pneumatic shear",
+      "models": [
+       "PS-1.5x1320"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing width",
+        "sub": "",
+        "cells": [
+         "52.0″ (1,320 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "40 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "29.5″ (750 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Front gauge",
+        "sub": "",
+        "cells": [
+         "21.1″ (535 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air pressure",
+        "sub": "",
+        "cells": [
+         "85 – 100 psi (0.6 – 0.7 MPa)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption per stroke",
+        "sub": "",
+        "cells": [
+         "1.4 CFM"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 30 × 48″ (175 × 75 × 123 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,257 lb (570 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PS-1.5x1320",
+      "glance": [
+       "16 ga (1.5 mm)",
+       "52.0″ (1,320 mm)",
+       "40 strokes/min",
+       "85 – 100 psi (0.6 – 0.7 MPa)",
+       "1,257 lb (570 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-light"
+  },
+  "tt-hq01": {
+   "id": "tt-hq01",
+   "brand": "novotech",
+   "name": "HQ01 light hydraulic shears, 16 – 14 ga × 52 – 98″",
+   "short": "HQ01 light hydraulic shears",
+   "models_label": "HQ01-2x1320B · HQ01-1.6x2500B · 2 models",
+   "summary": "The light hydraulic shear for HVAC, ductwork and signage: a 3 HP power pack and one cylinder cut 14 ga (2 mm) over 52″ or 16 ga over 98″ with hydraulic control, a roving foot pedal, an adjustable back gauge for repeatable widths and front sheet supports with a squaring guide. A fenced rear guard is standard; photoelectric protection is optional. From 1,213 lb — the lowest-priced powered shear in the range.",
+   "features": [
+    "14 ga (2 mm) × 52″ or 16 ga (1.6 mm) × 98″ mild steel; 3 HP hydraulic power pack",
+    "Adjustable back gauge, 31.5″ (800 mm) travel, for precise repeatability",
+    "Roving foot pedal control; automatic and single-stroke switching",
+    "Front sheet supports and squaring guide; rear guard fence",
+    "Work table height 34.6″ (880 mm)"
+   ],
+   "optional": [
+    "Photoelectric rear protection",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tt-hq01",
+    "tt-hq01-gauge",
+    "tt-hq01-switch",
+    "tt-hq01-photocell"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HQ01",
+      "sub": "Light hydraulic shears",
+      "models": [
+       "HQ01-2x1320B",
+       "HQ01-1.6x2500B"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm)",
+         "16 ga (1.6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "52.0″ (1,320 mm)",
+         "98.4″ (2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work table height",
+        "sub": "",
+        "cells": [
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "78 × 36 × 56″ (198 × 92 × 143 cm)",
+         "124 × 39 × 56″ (314 × 99 × 143 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,213 lb (550 kg)",
+         "2,513 lb (1,140 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HQ01-2x1320B",
+      "glance": [
+       "14 ga (2 mm)",
+       "52.0″ (1,320 mm)",
+       "—",
+       "3 HP (2.2 kW)",
+       "1,213 lb (550 kg)"
+      ]
+     },
+     {
+      "name": "HQ01-1.6x2500B",
+      "glance": [
+       "16 ga (1.6 mm)",
+       "98.4″ (2,500 mm)",
+       "—",
+       "3 HP (2.2 kW)",
+       "2,513 lb (1,140 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-light"
+  },
+  "tt-ths": {
+   "id": "tt-ths",
+   "brand": "novotech",
+   "name": "THS hydraulic shears, 12 ga – 5/32″ × 52 – 120″",
+   "short": "THS hydraulic shears",
+   "models_label": "THS-1320X2.5 – THS-3050X4 · 6 models",
+   "summary": "The steel-welded hydraulic shear for precision shearing of mild steel: 12 ga (2.5 mm) over 52″ on the 1320X2.5, and 5/32″ (4 mm) over 52″ to 120″ on the X4 models, 13 to 20 strokes a minute from a 3 to 7.5 HP power pack. Front gauge arms and a back gauge, both with fine adjustment, a mobile 24 V foot pedal and high-chromium two-edged blades that are turned for a second life are standard. From 1,411 to 6,393 lb.",
+   "features": [
+    "12 ga (2.5 mm) or 5/32″ (4 mm) mild steel × 52 – 120″ (1,320 – 3,048 mm); 13 – 20 strokes per minute",
+    "Back gauge 25.6″ (650 mm) and front gauge 23.6″ (600 mm), both with fine adjustment",
+    "Mobile 24 V foot pedal switch with emergency stop",
+    "Front gauge arms with squaring guide and back gauge, both with fine adjustment",
+    "High-chromium blades with two cutting edges — turn the blade for a second life",
+    "Steel-welded frame; hydraulic hold-downs ahead of the blade",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Photoelectric rear protection",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tt-ths",
+    "tt-ths-gauge"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "THS",
+      "sub": "Hydraulic shears with front and back gauges",
+      "models": [
+       "THS-1320X2.5",
+       "THS-1320X4",
+       "THS-1520X4",
+       "THS-2030X4",
+       "THS-2540X4",
+       "THS-3050X4"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "12 ga (2.5 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing width",
+        "sub": "",
+        "cells": [
+         "52.0″ (1,320 mm)",
+         "52.0″ (1,320 mm)",
+         "59.8″ (1,520 mm)",
+         "80.0″ (2,032 mm)",
+         "100.0″ (2,540 mm)",
+         "120.0″ (3,048 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "20 strokes/min",
+         "15 strokes/min",
+         "15 strokes/min",
+         "15 strokes/min",
+         "13 strokes/min",
+         "13 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)",
+         "7.5 HP (5.5 kW)",
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Front gauge",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 33 × 51″ (173 × 83 × 130 cm)",
+         "79 × 41 × 62″ (201 × 104 × 158 cm)",
+         "88 × 41 × 63″ (223 × 104 × 160 cm)",
+         "107 × 41 × 63″ (273 × 104 × 160 cm)",
+         "128 × 44 × 67″ (326 × 113 × 170 cm)",
+         "148 × 44 × 67″ (377 × 113 × 170 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,411 lb (640 kg)",
+         "2,800 lb (1,270 kg)",
+         "3,197 lb (1,450 kg)",
+         "3,748 lb (1,700 kg)",
+         "5,710 lb (2,590 kg)",
+         "6,393 lb (2,900 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "THS-1320X2.5",
+      "glance": [
+       "12 ga (2.5 mm)",
+       "52.0″ (1,320 mm)",
+       "20 strokes/min",
+       "3 HP (2.2 kW)",
+       "1,411 lb (640 kg)"
+      ]
+     },
+     {
+      "name": "THS-1320X4",
+      "glance": [
+       "5/32″ (4 mm)",
+       "52.0″ (1,320 mm)",
+       "15 strokes/min",
+       "5.5 HP (4 kW)",
+       "2,800 lb (1,270 kg)"
+      ]
+     },
+     {
+      "name": "THS-1520X4",
+      "glance": [
+       "5/32″ (4 mm)",
+       "59.8″ (1,520 mm)",
+       "15 strokes/min",
+       "5.5 HP (4 kW)",
+       "3,197 lb (1,450 kg)"
+      ]
+     },
+     {
+      "name": "THS-2030X4",
+      "glance": [
+       "5/32″ (4 mm)",
+       "80.0″ (2,032 mm)",
+       "15 strokes/min",
+       "5.5 HP (4 kW)",
+       "3,748 lb (1,700 kg)"
+      ]
+     },
+     {
+      "name": "THS-2540X4",
+      "glance": [
+       "5/32″ (4 mm)",
+       "100.0″ (2,540 mm)",
+       "13 strokes/min",
+       "7.5 HP (5.5 kW)",
+       "5,710 lb (2,590 kg)"
+      ]
+     },
+     {
+      "name": "THS-3050X4",
+      "glance": [
+       "5/32″ (4 mm)",
+       "120.0″ (3,048 mm)",
+       "13 strokes/min",
+       "7.5 HP (5.5 kW)",
+       "6,393 lb (2,900 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-hydraulic"
+  },
+  "tt-hq11": {
+   "id": "tt-hq11",
+   "brand": "novotech",
+   "name": "HQ11 hydraulic shears, 5/32″ – 1/4″ × 51 – 120″",
+   "short": "HQ11 hydraulic shears",
+   "models_label": "HQ11-6.5x1300 – HQ11-6.5x3050 · 4 models",
+   "summary": "The hydraulic shear for sheet and non-ferrous sheet metal in a production shop: 1/4″ (6.5 mm) over 51″ and 120″, 3/16″ over 79″ and 5/32″ over 98″, 12 to 20 strokes a minute from 7.5 to 20 HP. Blade clearance is set by a quick-set device, the cutting angle can be adjusted, and the low cutting angle and shearing direction keep bowing and twist to a minimum. Ball-transfer table, hold-downs, lubrication pump and a mobile foot pedal are standard; the 1300 and 3050 come with an electric back gauge, the 2000 and 2500 with a manual one; an NC back gauge is optional. 5,445 to 13,437 lb.",
+   "features": [
+    "5/32″ to 1/4″ (4 – 6.5 mm) mild steel × 51 – 120″ (1,300 – 3,050 mm); 12 – 20 strokes per minute",
+    "Quick-set blade clearance and adjustable cutting angle (1.7 – 2.5°)",
+    "Ball-transfer table; hydraulic hold-downs; lubrication pump",
+    "Back gauge 24.8″ (630 mm) manual or electric; 36.2″ (920 mm) electric on the 3050",
+    "Mobile 24 V foot pedal switch with emergency stop",
+    "High-chromium blades with two cutting edges — turn the blade for a second life",
+    "Steel-welded frame; hydraulic hold-downs ahead of the blade",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Photoelectric rear protection",
+    "Electric back gauge (HQ11)",
+    "NC back gauge control (HQ11)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tt-hq11",
+    "tt-hq11-table",
+    "tt-hq11-egauge",
+    "tt-hq11-mgauge",
+    "tt-hq11-pump"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HQ11",
+      "sub": "Hydraulic shears with quick-set blade clearance",
+      "models": [
+       "HQ11-6.5x1300",
+       "HQ11-4.5x2000",
+       "HQ11-4x2500",
+       "HQ11-6.5x3050"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/4″ (6.5 mm)",
+         "3/16″ (4.5 mm)",
+         "5/32″ (4 mm)",
+         "1/4″ (6.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing width",
+        "sub": "",
+        "cells": [
+         "51.2″ (1,300 mm)",
+         "78.7″ (2,000 mm)",
+         "98.4″ (2,500 mm)",
+         "120.1″ (3,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Shearing angle",
+        "sub": "",
+        "cells": [
+         "2.5°",
+         "2°",
+         "1.7°",
+         "2°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "20 strokes/min",
+         "18 strokes/min",
+         "16 strokes/min",
+         "12 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "10 HP (7.5 kW)",
+         "20 HP (15 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "24.8″ (630 mm), electric",
+         "24.8″ (630 mm), manual",
+         "24.8″ (630 mm), manual",
+         "36.2″ (920 mm), electric"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "85 × 69 × 71″ (215 × 175 × 181 cm)",
+         "112 × 46 × 73″ (285 × 116 × 185 cm)",
+         "132 × 46 × 73″ (335 × 116 × 185 cm)",
+         "163 × 83 × 75″ (413 × 210 × 190 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "5,445 lb (2,470 kg)",
+         "6,393 lb (2,900 kg)",
+         "7,341 lb (3,330 kg)",
+         "13,437 lb (6,095 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HQ11-6.5x1300",
+      "glance": [
+       "1/4″ (6.5 mm)",
+       "51.2″ (1,300 mm)",
+       "20 strokes/min",
+       "7.5 HP (5.5 kW)",
+       "5,445 lb (2,470 kg)"
+      ]
+     },
+     {
+      "name": "HQ11-4.5x2000",
+      "glance": [
+       "3/16″ (4.5 mm)",
+       "78.7″ (2,000 mm)",
+       "18 strokes/min",
+       "10 HP (7.5 kW)",
+       "6,393 lb (2,900 kg)"
+      ]
+     },
+     {
+      "name": "HQ11-4x2500",
+      "glance": [
+       "5/32″ (4 mm)",
+       "98.4″ (2,500 mm)",
+       "16 strokes/min",
+       "10 HP (7.5 kW)",
+       "7,341 lb (3,330 kg)"
+      ]
+     },
+     {
+      "name": "HQ11-6.5x3050",
+      "glance": [
+       "1/4″ (6.5 mm)",
+       "120.1″ (3,050 mm)",
+       "12 strokes/min",
+       "20 HP (15 kW)",
+       "13,437 lb (6,095 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-hydraulic"
+  },
+  "tt-q11": {
+   "id": "tt-q11",
+   "brand": "novotech",
+   "name": "Q11 electric shears, 14 ga – 5/32″ × 49 – 81″",
+   "short": "Q11 electric shears",
+   "models_label": "Q11-3x1250 – Q11-3x1250A · 5 models",
+   "summary": "The electric shear for the sheet-metal shop: a 4 or 5.5 HP motor drives the beam through a gearbox for 28 to 30 strokes a minute in 1/8″ (3 mm) mild steel over 49″ or 81″, 14 ga over 81″ and 5/32″ over 49″ — no hydraulics, nothing to warm up. A manual back gauge with millimetre counter, a bench angle stop, cutting line lighting, an automatic rubber-coated hold-down and a mobile foot switch are standard; the Q11-3x1250A adds a light-curtain rear guard and a pneumatic sheet catcher. From 1,874 lb.",
+   "features": [
+    "14 ga to 5/32″ (2 – 4 mm) mild steel × 49 – 81″ (1,250 – 2,050 mm); 28 – 30 strokes per minute",
+    "Q11-3x1250A: light-curtain back safety system, pneumatic sheet catcher, front sheet pallet for stacking",
+    "Manual back gauge with millimetre counter, 24.8″ (630 mm) travel",
+    "Mobile 24 V foot switch; bench angle stop; cutting line lighting",
+    "Automatic rubber-coated sheet hold-down",
+    "Two-sided shear blades",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Electric back gauge (except Q11-2x2050 and Q11-3x1250A)",
+    "Light curtain rear guard and pneumatic sheet catcher (standard on the A model)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tt-q11a",
+    "tt-q11",
+    "tt-q11a-rear",
+    "tt-q11-gauge",
+    "tt-q11-stop"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Q11",
+      "sub": "Electric shears with manual back gauge",
+      "models": [
+       "Q11-3x1250",
+       "Q11-2x2050",
+       "Q11-3x2050",
+       "Q11-4x1250",
+       "Q11-3x1250A"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "14 ga (2 mm)",
+         "1/8″ (3 mm)",
+         "5/32″ (4 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing width",
+        "sub": "",
+        "cells": [
+         "49.2″ (1,250 mm)",
+         "80.7″ (2,050 mm)",
+         "80.7″ (2,050 mm)",
+         "49.2″ (1,250 mm)",
+         "49.2″ (1,250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Shearing angle",
+        "sub": "",
+        "cells": [
+         "2°",
+         "2°",
+         "2°",
+         "2.4°",
+         "2°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "30 strokes/min",
+         "30 strokes/min",
+         "30 strokes/min",
+         "30 strokes/min",
+         "28 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "24.8″ (630 mm)",
+         "24.8″ (630 mm)",
+         "24.8″ (630 mm)",
+         "24.8″ (630 mm)",
+         "25.0″ (635 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "72 × 41 × 52″ (184 × 103 × 131 cm)",
+         "105 × 46 × 58″ (266 × 116 × 147 cm)",
+         "105 × 46 × 58″ (266 × 116 × 147 cm)",
+         "74 × 45 × 57″ (187 × 115 × 145 cm)",
+         "72 × 46 × 52″ (184 × 117 × 133 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,874 lb (850 kg)",
+         "2,998 lb (1,360 kg)",
+         "3,351 lb (1,520 kg)",
+         "2,612 lb (1,185 kg)",
+         "2,161 lb (980 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Q11-3x1250",
+      "glance": [
+       "1/8″ (3 mm)",
+       "49.2″ (1,250 mm)",
+       "30 strokes/min",
+       "4 HP (3 kW)",
+       "1,874 lb (850 kg)"
+      ]
+     },
+     {
+      "name": "Q11-2x2050",
+      "glance": [
+       "14 ga (2 mm)",
+       "80.7″ (2,050 mm)",
+       "30 strokes/min",
+       "4 HP (3 kW)",
+       "2,998 lb (1,360 kg)"
+      ]
+     },
+     {
+      "name": "Q11-3x2050",
+      "glance": [
+       "1/8″ (3 mm)",
+       "80.7″ (2,050 mm)",
+       "30 strokes/min",
+       "5.5 HP (4 kW)",
+       "3,351 lb (1,520 kg)"
+      ]
+     },
+     {
+      "name": "Q11-4x1250",
+      "glance": [
+       "5/32″ (4 mm)",
+       "49.2″ (1,250 mm)",
+       "30 strokes/min",
+       "5.5 HP (4 kW)",
+       "2,612 lb (1,185 kg)"
+      ]
+     },
+     {
+      "name": "Q11-3x1250A",
+      "glance": [
+       "1/8″ (3 mm)",
+       "49.2″ (1,250 mm)",
+       "28 strokes/min",
+       "5.5 HP (4 kW)",
+       "2,161 lb (980 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-electric"
+  },
+  "tt-q11nc": {
+   "id": "tt-q11nc",
+   "brand": "novotech",
+   "name": "Q11 NC electric shears with PLC control, 14 ga – 5/32″ × 51 – 100″",
+   "short": "Q11 NC electric shears",
+   "models_label": "Q11-4x1300NC · Q11-2x2550NC · Q11-4x2550NC · 3 models",
+   "summary": "The electric shear with a PLC: a graphical touch-screen control, a motorised back gauge with manual fine adjustment, cutting line lighting, sheet hold-downs with rolling balls, an interlocked rear guard and a pneumatic sheet catcher — 5/32″ (4 mm) over 51″ or 100″, 14 ga over 100″, 30 strokes a minute from 5.5 or 10 HP. The two-sided blades are turned for a second edge. 2,987 to 5,512 lb.",
+   "features": [
+    "14 ga to 5/32″ (2 – 4 mm) mild steel × 51 – 100″ (1,300 – 2,550 mm); 30 strokes per minute; cutting angle 1.6 – 2.4°",
+    "PLC control with graphical touch-screen; motorised back gauge with manual fine adjustment",
+    "Cutting line lighting; mobile 24 V foot switch",
+    "Rear guarding with interlock; sheet hold-downs with rolling balls",
+    "Pneumatic sheet catcher",
+    "Two-sided shear blades",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Front sheet pallet for stacking",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tt-q11nc",
+    "tt-q11nc-rear",
+    "tt-q11nc-screen",
+    "tt-q11nc-gauge",
+    "tt-q11nc-balls",
+    "tt-q11nc-light"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Q11 NC",
+      "sub": "Electric shears with PLC control and motorised back gauge",
+      "models": [
+       "Q11-4x1300NC",
+       "Q11-2x2550NC",
+       "Q11-4x2550NC"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "5/32″ (4 mm)",
+         "14 ga (2 mm)",
+         "5/32″ (4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing width",
+        "sub": "",
+        "cells": [
+         "51.2″ (1,300 mm)",
+         "100.4″ (2,550 mm)",
+         "100.4″ (2,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Shearing angle",
+        "sub": "",
+        "cells": [
+         "2.4°",
+         "1.6°",
+         "1.8°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "30 strokes/min",
+         "30 strokes/min",
+         "30 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "24.8″ (630 mm)",
+         "24.8″ (630 mm)",
+         "24.8″ (630 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "75 × 46 × 57″ (191 × 116 × 145 cm)",
+         "126 × 46 × 58″ (320 × 116 × 148 cm)",
+         "128 × 46 × 61″ (325 × 116 × 155 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,987 lb (1,355 kg)",
+         "4,189 lb (1,900 kg)",
+         "5,512 lb (2,500 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Q11-4x1300NC",
+      "glance": [
+       "5/32″ (4 mm)",
+       "51.2″ (1,300 mm)",
+       "30 strokes/min",
+       "5.5 HP (4 kW)",
+       "2,987 lb (1,355 kg)"
+      ]
+     },
+     {
+      "name": "Q11-2x2550NC",
+      "glance": [
+       "14 ga (2 mm)",
+       "100.4″ (2,550 mm)",
+       "30 strokes/min",
+       "5.5 HP (4 kW)",
+       "4,189 lb (1,900 kg)"
+      ]
+     },
+     {
+      "name": "Q11-4x2550NC",
+      "glance": [
+       "5/32″ (4 mm)",
+       "100.4″ (2,550 mm)",
+       "30 strokes/min",
+       "10 HP (7.5 kW)",
+       "5,512 lb (2,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-electric"
+  },
+  "tt-q11-mech": {
+   "id": "tt-q11-mech",
+   "brand": "novotech",
+   "name": "Q11 mechanical shears, 1/8″ – 3/8″ × 39 – 98″",
+   "short": "Q11 mechanical shears",
+   "models_label": "Q11-3x1300 – Q11-10x1500 · 10 models",
+   "summary": "The classic flywheel shear for medium and thick steel: a 4 to 20 HP motor spins a flywheel and the clutch makes one stroke per pedal press, 45 to 55 strokes a minute — the fastest shears in the range. Ten models from 1/8″ (3 mm) over 51″ to 1/4″ over 98″ and 3/8″ (10 mm) over 39″ and 59″, with a back gauge with fine adjustment, mechanical hold-downs and long-life blades, on a simple welded construction with low energy consumption. 2,976 to 14,991 lb.",
+   "features": [
+    "1/8″ to 3/8″ (3 – 10 mm) mild steel × 39 – 98″ (1,000 – 2,500 mm); 45 – 55 strokes per minute",
+    "Flywheel and clutch drive — one stroke per pedal press, 45 to 55 strokes a minute",
+    "Back gauge with fine adjustment, 13.8″ or 19.7″ (350 / 500 mm) travel",
+    "Mechanical hold-downs; long-life high-quality blades",
+    "Simple, rugged construction for medium and thick steel",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Rear guard with photocell",
+    "Front sheet support arms",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tt-q11-6x2000",
+    "tt-q11-4x2000",
+    "tt-q11-3x1300"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Q11 mechanical",
+      "sub": "Flywheel shears for medium and thick steel",
+      "models": [
+       "Q11-3x1300",
+       "Q11-3x1500",
+       "Q11-4x2000",
+       "Q11-4x2500",
+       "Q11-6x2000",
+       "Q11-6x2500",
+       "Q11-8x2000",
+       "Q11-8x2500",
+       "Q11-10x1000",
+       "Q11-10x1500"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing width",
+        "sub": "",
+        "cells": [
+         "51.2″ (1,300 mm)",
+         "59.1″ (1,500 mm)",
+         "78.7″ (2,000 mm)",
+         "98.4″ (2,500 mm)",
+         "78.7″ (2,000 mm)",
+         "98.4″ (2,500 mm)",
+         "78.7″ (2,000 mm)",
+         "98.4″ (2,500 mm)",
+         "39.4″ (1,000 mm)",
+         "59.1″ (1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Shearing angle",
+        "sub": "",
+        "cells": [
+         "2°",
+         "2°",
+         "2°",
+         "2°",
+         "2°",
+         "2°",
+         "2°",
+         "2°",
+         "3°",
+         "3°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "55 strokes/min",
+         "55 strokes/min",
+         "45 strokes/min",
+         "45 strokes/min",
+         "50 strokes/min",
+         "50 strokes/min",
+         "50 strokes/min",
+         "50 strokes/min",
+         "50 strokes/min",
+         "50 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "7.5 HP (5.5 kW)",
+         "7.5 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)",
+         "20 HP (15 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "87 × 52 × 57″ (220 × 132 × 145 cm)",
+         "94 × 51 × 57″ (240 × 130 × 144 cm)",
+         "125 × 59 × 59″ (318 × 151 × 149 cm)",
+         "146 × 59 × 59″ (370 × 151 × 149 cm)",
+         "129 × 67 × 72″ (328 × 170 × 182 cm)",
+         "149 × 67 × 72″ (378 × 170 × 182 cm)",
+         "132 × 69 × 72″ (335 × 175 × 182 cm)",
+         "154 × 89 × 96″ (390 × 227 × 244 cm)",
+         "94 × 69 × 72″ (240 × 175 × 182 cm)",
+         "114 × 69 × 72″ (290 × 175 × 182 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,976 lb (1,350 kg)",
+         "3,307 lb (1,500 kg)",
+         "6,614 lb (3,000 kg)",
+         "7,937 lb (3,600 kg)",
+         "8,664 lb (3,930 kg)",
+         "11,464 lb (5,200 kg)",
+         "9,921 lb (4,500 kg)",
+         "14,991 lb (6,800 kg)",
+         "7,716 lb (3,500 kg)",
+         "8,818 lb (4,000 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Q11-3x1300",
+      "glance": [
+       "1/8″ (3 mm)",
+       "51.2″ (1,300 mm)",
+       "55 strokes/min",
+       "4 HP (3 kW)",
+       "2,976 lb (1,350 kg)"
+      ]
+     },
+     {
+      "name": "Q11-3x1500",
+      "glance": [
+       "1/8″ (3 mm)",
+       "59.1″ (1,500 mm)",
+       "55 strokes/min",
+       "4 HP (3 kW)",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11-4x2000",
+      "glance": [
+       "5/32″ (4 mm)",
+       "78.7″ (2,000 mm)",
+       "45 strokes/min",
+       "7.5 HP (5.5 kW)",
+       "6,614 lb (3,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11-4x2500",
+      "glance": [
+       "5/32″ (4 mm)",
+       "98.4″ (2,500 mm)",
+       "45 strokes/min",
+       "7.5 HP (5.5 kW)",
+       "7,937 lb (3,600 kg)"
+      ]
+     },
+     {
+      "name": "Q11-6x2000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "78.7″ (2,000 mm)",
+       "50 strokes/min",
+       "10 HP (7.5 kW)",
+       "8,664 lb (3,930 kg)"
+      ]
+     },
+     {
+      "name": "Q11-6x2500",
+      "glance": [
+       "1/4″ (6 mm)",
+       "98.4″ (2,500 mm)",
+       "50 strokes/min",
+       "15 HP (11 kW)",
+       "11,464 lb (5,200 kg)"
+      ]
+     },
+     {
+      "name": "Q11-8x2000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "78.7″ (2,000 mm)",
+       "50 strokes/min",
+       "15 HP (11 kW)",
+       "9,921 lb (4,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11-8x2500",
+      "glance": [
+       "5/16″ (8 mm)",
+       "98.4″ (2,500 mm)",
+       "50 strokes/min",
+       "15 HP (11 kW)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "Q11-10x1000",
+      "glance": [
+       "3/8″ (10 mm)",
+       "39.4″ (1,000 mm)",
+       "50 strokes/min",
+       "15 HP (11 kW)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11-10x1500",
+      "glance": [
+       "3/8″ (10 mm)",
+       "59.1″ (1,500 mm)",
+       "50 strokes/min",
+       "20 HP (15 kW)",
+       "8,818 lb (4,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-mechanical"
+  }
+ }
+}

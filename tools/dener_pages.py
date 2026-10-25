@@ -20,6 +20,7 @@ import senfeng_data as SF    # Senfeng lasers, tube lasers and panel benders: th
 import senfeng_pages as SFP
 import laser_nav as LN
 import press_brake_nav as PBN
+import shear_nav as SN
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "dener"
@@ -164,6 +165,40 @@ PAGE_TUBE = dict(
     related_title="More tube machinery from NovoTech",
 )
 
+PAGE_SHEAR = dict(
+    title="Dener Hydraulic Shears, 1/4″ to 3/4″ × 20 ft | NovoTech",
+    meta="BS / BSY hydraulic swing beam shears with NC back gauge, 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotines with variable angle, 1/4″ – 3/4″ × 10 – 20 ft.",
+    h1="Dener hydraulic shears — BS / BSY swing beam to 5/8″ and DAS CNC guillotine to 3/4″ × 20 ft",
+    intro="Dener's shears are the premium plate shears of NovoTech's shear section: built in Kayseri, Turkey, with Rexroth or Hoerbiger hydraulics, "
+          "ESA or Delem controls and Dener Canada parts in Mississauga. The BS / BSY swing beam shears are the rugged everyday plate shear: a beam "
+          "on two bearings swung through the cut by two cylinders, 8 to 22 strokes a minute, with an NC back gauge, hydraulic hold-downs and "
+          "single-point blade-gap adjustment — the light BSY 2006 – 3006 for 1/4″ over 6.8 to 10 ft and the BS 3006 – 4016 to 5/8″ (16 mm) over "
+          "10 and 13.5 ft. The DAS CNC guillotines are the production machines: a beam on linear rollers with a variable cutting angle, so thin "
+          "sheet is cut fast and flat at 0.5° and 3/4″ plate at 3° with less distortion, back gauge, blade gap and angle set by the ESA 630 CNC "
+          "from the thickness and material keyed in — 1/4″ to 3/4″ over 10, 13 and 20 ft. Installed, trained and supported from Mississauga, ON.",
+    points=["BS / BSY swing beam: 11 models, 1/4″ – 5/8″ × 6.8 – 13.5 ft, 8 – 22 strokes/min, NC back gauge, hydraulic hold-downs",
+            "DAS CNC guillotine: 13 models, 1/4″ – 3/4″ × 10 – 20 ft, variable cutting angle, ESA 630 CNC, 1 m ball-screw back gauge",
+            "Made in Turkey by Dener Makina; Dener Canada parts in Mississauga; CSA-approved panel, 600 V standard"],
+    hero="dn-das-1", minis=["dn-bs-2", "dn-das-3"],
+    groups=[("shear-swing", "BS / BSY hydraulic swing beam shears", "Plate from 1/4″ to 5/8″: two cylinders swing the beam through the cut, NC back gauge, 8 – 22 strokes a minute.", BRAND),
+            ("shear-cnc", "DAS CNC hydraulic guillotine shears", "The production plate shear to 3/4″ × 20 ft: variable cutting angle, blade gap and back gauge set by the CNC.", BRAND)],
+    faq=[{"q": "BS or DAS — swing beam or guillotine?",
+          "a": "On the BS the beam pivots on two bearings and the cylinders swing it through the cut — few parts, a low price and a rake angle fixed by the design, which is fine for plate from 1/4″ to 5/8″. The DAS carries the beam straight down on linear rollers with a variable rake angle, so the same machine cuts thin sheet flat and fast at 0.5° and 3/4″ plate at 3° with less twist, and the CNC sets the blade gap and the back gauge from the thickness keyed in. For a plate shop cutting mostly 3/8″ and up, the BS; for a job shop that cuts everything from 16 ga to 3/4″, the DAS."},
+         {"q": "Which control?",
+          "a": "The BS / BSY come with an NC control for the back gauge and the stroke counter; the DAS with the ESA 630 CNC — back gauge, blade gap, cutting angle and stroke length programmed per material, with a parts memory and a 1 m ball-screw back gauge with retract. Delem controls are available on request."},
+         {"q": "What is standard on a Dener shear?",
+          "a": "Hydraulic hold-downs (16 – 33 on the DAS), a squaring arm with scale, front support arms, a ball-transfer table, a shadow-line light, a photocell rear guard, a front finger guard, high-carbon high-chrome four-edged blades and the CSA-approved panel with a 600 V transformer. Pneumatic sheet supports with return-to-front, conveyors and longer arms are options."},
+         {"q": "How do the Dener shears compare with the NovoTech value line?",
+          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, the 1 m back gauge and Dener Canada parts; the NovoTech value-line shears are built in China with Estun controls at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
+         {"q": "Floor space and power?",
+          "a": "A 10 ft shear needs about 16 × 10 ft of floor with the back gauge travel; a 20 ft DAS about 27 × 12 ft. 600 V 3-phase with the supplied transformer or 480 V; the motors run from 15 to 60 HP. We lay the machine out for your building before you order."},
+         VOLT_FAQ_GENERIC],
+    faq_title="Questions we get asked about Dener shears",
+    related_pages=[{"href": "dener-cnc-press-brakes.html", "label": "Dener CNC press brakes"}, {"href": "dener-fiber-lasers.html", "label": "Dener fiber lasers"},
+                   {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
+    related_title="More cutting machinery from NovoTech",
+)
+
 PAGE_PANEL = dict(
     title="CNC Panel Benders, 47–165″ Wide, 0.2 s per Bend | NovoTech",
     meta="CNC panel benders sold in Canada: the Dener 79″ machine, Senfeng BDC push-down and suction-cup benders 47 – 126″, NovoTech value-line PB-M and PB-A to 165″.",
@@ -255,12 +290,15 @@ def build():
                    extra={**common, "nav_label": "Dener fiber lasers", "catalogue_pdf": pdf_laser})
     write_category(D.P_TUBE, PAGE_TUBE, fams, SET, LN.SECTIONS["tube"]["section"], hub=LN.hub("tube"), siblings=LN.siblings("tube"),
                    extra={**common, "nav_label": "Dener tube lasers", "catalogue_pdf": pdf_tube})
+    pdf_shear = pdf(PDF_SHEAR_FILE, "Download the Dener hydraulic shears brochure")
+    write_category(D.P_SHEAR, PAGE_SHEAR, [dict(f, pdf=pdf_shear) for f in D.SHEAR_FAMILIES], "shears", SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
+                   extra={**common, "nav_label": "Dener hydraulic shears", "catalogue_pdf": pdf_shear})
     write_category(D.P_PANEL, PAGE_PANEL, fams, SET, "Panel benders", extra={**common, "nav_label": "Panel benders", "catalogue_pdf": None, "catalogue_pdfs": [pdf_panel, pdf_sf_panel, pdf_vl_panel],
                                                                                 "hero_brand_line": "The Dener panel bender is made in Turkey by Dener Makina; the BDC machines by Senfeng Laser in Jinan, China; the PB-M and PB-A carry the NovoTech name — built in China to North American standards. All sold, installed and supported in Canada by NovoTech."})
     keys = register_images()
     vl_keys = {k for f in VL.PANEL_FAMILIES + SF.ALL for k in f["images"]}
     used = {k for f in fams + D.SHEAR_FAMILIES for k in f["images"]} - vl_keys
-    for p in (PAGE_PB, PAGE_LASER, PAGE_TUBE, PAGE_PANEL):
+    for p in (PAGE_PB, PAGE_LASER, PAGE_TUBE, PAGE_PANEL, PAGE_SHEAR):
         used |= {p["hero"]} | set(p["minis"])
     unused = sorted(set(keys) - used)
     if unused:

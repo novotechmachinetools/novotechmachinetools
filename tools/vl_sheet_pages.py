@@ -17,6 +17,7 @@ from isitan_lib import VOLT_FAQ_GENERIC, write_category, write_families  # noqa:
 import vl_sheet_data as D
 import vl_sheet_photos as PH
 import press_brake_nav as PBN
+import shear_nav as SN
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "value-sheet"
@@ -94,15 +95,16 @@ PAGE_PB = dict(
 )
 
 PAGE_SHEAR = dict(
-    title="Hydraulic Shearing Machines to 1-9/16″ × 26 ft | NovoTech",
-    meta="Value-line hydraulic metal shears sold in Canada: swing beam shears 5/32″–3/4″ and variable-rake guillotine shears 1/4″–1-9/16″, 8–26 ft, Estun NC control.",
-    h1="Hydraulic shearing machines — swing beam to 3/4″, guillotine to 1-9/16″ plate",
+    title="NovoTech Hydraulic Shears, 5/32″ to 1-9/16″ · Value Line",
+    meta="QC12K swing beam shears 5/32″ – 3/4″ × 8 – 20 ft and Q11K variable-rake guillotine shears 1/4″ – 1-9/16″ × 8 – 26 ft with Estun NC control, 66 models.",
+    h1="NovoTech hydraulic shears — QC12K swing beam to 3/4″, Q11K guillotine to 1-9/16″ plate, the value line",
     intro="A hydraulic shear cuts sheet and plate to size in one stroke between a fixed lower blade and a moving upper blade; the back gauge sets the "
           "width, hydraulic hold-downs keep the sheet flat and the control counts the strokes. NovoTech's value-line hydraulic shears are our own "
           "brand, built in China with Estun controls, Rexroth hydraulics and Siemens motors: the swing beam shears from 5/32″ to 3/4″ over 8 to "
           "20 ft — the rugged everyday plate shear — and the guillotine shears with a variable rake angle from 1/4″ to 1-9/16″ over 8 to 26 ft for "
-          "production and thick plate. For the Turkish-built Dener shears and the Saymak mechanical shears see the shears page. Installed and "
-          "supported from Mississauga, ON, with a CSA-approved panel.",
+          "production and thick plate. The Dener premium plate shears, the premium-line mechanical shears and the value-line sheet metal shears "
+          "have their own pages, and the shears overview puts every line in one table. Installed and supported from Mississauga, ON, with a "
+          "CSA-approved panel.",
     points=["Swing beam: 32 models, 5/32″ – 3/4″ × 8 – 20 ft, Estun E21S control, motorised back gauge",
             "Guillotine: 34 models, 1/4″ – 1-9/16″ × 8 – 26 ft, variable rake angle and blade gap from the control",
             "Hydraulic hold-downs, ball-transfer tables, shadow line, light-barrier guards — all standard"],
@@ -118,10 +120,10 @@ PAGE_SHEAR = dict(
          {"q": "How is the sheet supported?",
           "a": "Ball-transfer front tables, a squaring arm with scale and front support arms are standard; the back gauge carries support fingers and the cut strip drops onto the rear slide. A pneumatic sheet support that holds the piece during the cut and returns it to the front, a conveyor for strips and longer front arms are options for thin, large or finished sheet."},
          {"q": "How does the value line compare with the Dener shears?",
-          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and Dener Canada parts; the value-line shears are built in China to our specification with Estun controls and Rexroth valves, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft."},
+          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and Dener Canada parts; the value-line shears are built in China to our specification with Estun controls and Rexroth valves, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about hydraulic shears",
-    related_pages=[{"href": "shear-cutting.html", "label": "Dener and Saymak shears"}, {"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes"},
+    related_pages=[{"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes"},
                    {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "corner-notcher.html", "label": "Corner notchers"},
                    {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}],
     related_title="More cutting machinery from NovoTech",
@@ -180,7 +182,7 @@ def register_images():
 def build():
     pdf_hpb = pdf(PDF_HPB, "Download the hydraulic press brake brochure")
     pdf_epb = pdf(PDF_EPB, "Download the electric press brake brochure")
-    pdf_shear = pdf(PDF_SHEAR, "Download the hydraulic shear brochure")
+    pdf_shear = pdf(PDF_SHEAR, "Download the value-line hydraulic shears brochure")
     pdf_vg = pdf(PDF_VG, "Download the V-grooving machine brochure")
     fams = [dict(f, pdf=pdf_hpb) for f in D.HPB_FAMILIES] + [dict(f, pdf=pdf_epb) for f in D.EPB_FAMILIES]
     fams += [dict(f, pdf=pdf_shear) for f in D.SHEAR_FAMILIES] + [dict(f, pdf=pdf_vg) for f in D.VG_FAMILIES]
@@ -188,7 +190,8 @@ def build():
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN}
     write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", hub=PBN.hub(), siblings=PBN.siblings(),
                    extra={**common, **NO_VIDEO, "nav_label": "NovoTech CNC press brakes", "catalogue_pdf": None, "catalogue_pdfs": [pdf_hpb, pdf_epb]})
-    write_category(D.P_SHEAR, PAGE_SHEAR, fams, SET, "Shears", extra={**common, **NO_VIDEO, "nav_label": "Hydraulic shears · value line", "catalogue_pdf": pdf_shear})
+    write_category(D.P_SHEAR, PAGE_SHEAR, fams, SET, SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
+                   extra={**common, **NO_VIDEO, "nav_label": "NovoTech hydraulic shears", "catalogue_pdf": pdf_shear})
     write_category(D.P_VG, PAGE_VG, fams, SET, "V-grooving machines", extra={**common, **NO_VIDEO, "nav_label": "V-grooving machines", "catalogue_pdf": pdf_vg})
     keys = register_images()
     used = {k for f in D.ALL for k in f["images"]}

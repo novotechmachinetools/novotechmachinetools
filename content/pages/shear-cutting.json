@@ -1,21 +1,22 @@
 {
  "slug": "shear-cutting",
- "template": "category.html",
- "family_set": "shears",
- "title": "Metal Shear Machines — Mechanical & Hydraulic to 3/4″ | NovoTech",
- "artifact_title": "Metal shear machines — mechanical shears to 1/4″, hydraulic shears to 3/4″ plate",
- "meta_description": "Sheet metal shearing machines sold and installed in Canada: direct-gear mechanical shears for 1/8″ and 1/4″ to 13.8 ft, hydraulic swing beam shears to 5/8″ and CNC guillotine shears to 3/4″ × 20 ft. Made in Turkey.",
- "h1": "Metal shear machines — mechanical shears to 1/4″, hydraulic shears to 3/4″ plate",
- "intro": "A metal shear (sheet metal shearing machine, guillotine shear, shear cutter) cuts plate and sheet to size in one stroke between a fixed bottom blade and a top blade on the moving beam — the first machine in every sheet-metal, HVAC, signage and fabrication shop, before the press brake. NovoTech's premium-line shears are direct-gear motorised guillotines: a 4 to 15 HP motor drives the cutting beam through a gearbox and crank, with no hydraulic system to leak or warm up and no flywheel clutch to wear, for 31 to 35 strokes a minute. Six series, small to large: the light-type SRGM-H for 1/8″ (3 mm) mild steel and the SRGM for 1/4″ (6 mm) from 43″ to 13.8 ft; the SRGM-HFR and SRGM-FR with a return-to-sender sheet support that brings the cut piece back to the operator; and the SRGM-HCL and SRGM-CL built into cut-to-length coil lines. Welded steel frame, cutting beam in teflon slideways, high-carbon high-chrome blades with two and four cutting edges, front blade-gap adjustment, NC back gauge, shadow-line light and photocell guards. For plate from 1/4″ to 3/4″ there are the Dener hydraulic shears: the BS / BSY swing beam shears with NC back gauge to 5/8″ × 13.5 ft and the DAS CNC guillotines with variable cutting angle to 3/4″ × 20 ft. All supplied with a CSA-approved panel, installed and supported from Mississauga, ON.",
+ "template": "hub.html",
+ "family_set": "all-shears",
+ "nav_label": "All shears",
+ "title": "Metal Shear Machines, 16 ga to 1-9/16″ Plate | NovoTech",
+ "artifact_title": "Metal Shears",
+ "meta_description": "Every metal shear sold by NovoTech in Canada: Dener hydraulic shears, NovoTech mechanical shears, value-line hydraulic plate shears and sheet metal shears.",
+ "h1": "Metal shear machines — sheet metal shears, mechanical guillotines and hydraulic plate shears, 16 ga to 1-9/16″",
+ "intro": "A metal shear (sheet metal shearing machine, guillotine shear, shear cutter) cuts plate and sheet to size in one stroke between a fixed bottom blade and a top blade on the moving beam — the first machine in every sheet-metal, HVAC, signage and fabrication shop, before the press brake. NovoTech sells four lines of shears in Canada, each on its own page: the Dener hydraulic shears — the premium plate shears made in Turkey, BS / BSY swing beam to 5/8″ and the DAS CNC guillotine to 3/4″ × 20 ft; NovoTech's premium-line mechanical shears — direct-gear SRGM guillotines, 1/8″ and 1/4″ to 13.8 ft, built in Turkey; NovoTech's value-line hydraulic shears — QC12K swing beam and Q11K guillotine from 5/32″ to 1-9/16″ and 26 ft, built in China with Estun controls; and NovoTech's value-line sheet metal shears — pneumatic, light hydraulic, electric and flywheel mechanical shears from 16 ga to 3/8″ for the sheet-metal shop. Below, each line in brief and every model in one table of capacity, length, strokes, motor and weight; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts from Mississauga, ON.",
  "hero_points": [
-  "SRGM-H light type, 1/8″ × 3.6 – 10 ft, 35 strokes/min · SRGM standard, 1/4″ × 3.6 – 13.8 ft, 31 strokes/min",
-  "SRGM-HFR / SRGM-FR with return-to-sender: the cut blank comes back to the front, off-cuts drop to the rear",
-  "Hydraulic BS / BSY swing beam shears, 1/4″ – 5/8″ × 6.8 – 13.5 ft · DAS CNC guillotines with variable angle, 1/4″ – 3/4″ × 10 – 20 ft"
+  "Dener premium line: BS / BSY hydraulic swing beam 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotine with variable angle 1/4″ – 3/4″ × 10 – 20 ft",
+  "NovoTech premium line: SRGM direct-gear mechanical shears 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min, return-to-sender versions",
+  "NovoTech value line: QC12K / Q11K hydraulic plate shears 5/32″ – 1-9/16″ × 8 – 26 ft; sheet metal shears 16 ga – 3/8″ × 39 – 120″"
  ],
  "hero_image": "sm-srgm",
  "hero_image_secondary": [
-  "sm-srgm-fr",
-  "sm-srgm-h"
+  "dn-das-1",
+  "vl-qc12k-1"
  ],
  "breadcrumb": [
   {
@@ -27,96 +28,116 @@
    "href": "products.html"
   },
   {
-   "label": "Metal shear machines — mechanical shears to 1/4″, hydraulic shears to 3/4″ plate"
+   "label": "Shears"
   }
  ],
- "hero_brand_line": "The SRGM guillotine shears are NovoTech's premium line: built in Turkey with European components to NovoTech's specification, and sold, installed and supported in Canada by NovoTech.",
- "groups": [
+ "hero_brand_line": "Dener Makina builds the premium hydraulic shears in Kayseri, Turkey; the premium-line mechanical shears are built in Turkey and the value-line shears in China, all to NovoTech's specification. Every line sold, installed and supported in Canada by NovoTech.",
+ "subpages": [
   {
-   "id": "shear-standard-group",
-   "title": "Direct-gear mechanical guillotine shears",
-   "lead": "The light-type SRGM-H for 1/8″ sheet and the standard SRGM for 1/4″ plate, 43″ to 13.8 ft — the cutting beam driven through a gearbox, no hydraulics.",
-   "brand": "novotech-premium",
+   "slug": "dener-shears",
+   "title": "Dener hydraulic shears — BS / BSY swing beam and DAS CNC guillotine, 1/4″ to 3/4″",
+   "image": "dn-das-1",
+   "blurb": "The premium line, made in Turkey: BS / BSY hydraulic swing beam shears with NC back gauge, 1/4″ to 5/8″ over 6.8 to 13.5 ft, and the DAS CNC guillotine shears with variable cutting angle, 1/4″ to 3/4″ over 10 to 20 ft, with Dener Canada parts in Mississauga.",
+   "families": [
+    "dn-bs",
+    "dn-das"
+   ],
+   "nav_label": "Dener hydraulic shears",
+   "line": "premium",
+   "cards_title": "Dener hydraulic shears — the line-up"
+  },
+  {
+   "slug": "novotech-mechanical-shears",
+   "title": "NovoTech mechanical guillotine shears — direct-gear SRGM, 1/8″ and 1/4″ · premium line",
+   "image": "sm-srgm",
+   "blurb": "NovoTech's premium-line mechanical shears, built in Turkey: a motor and gearbox drive the beam — no hydraulics, no flywheel clutch — for 31 to 35 strokes a minute in 1/8″ sheet to 10 ft and 1/4″ plate to 13.8 ft, with return-to-sender and cut-to-length versions.",
    "families": [
     "nt-shear-srgm-h",
-    "nt-shear-srgm"
-   ]
-  },
-  {
-   "id": "shear-return-group",
-   "title": "Guillotine shears with return-to-sender",
-   "lead": "The same two machines with a sheet support behind the blade that returns the cut piece to the operator — blanks and strips cut by one person.",
-   "brand": "novotech-premium",
-   "families": [
+    "nt-shear-srgm",
     "nt-shear-srgm-hfr",
-    "nt-shear-srgm-fr"
-   ]
-  },
-  {
-   "id": "shear-line-group",
-   "title": "Shears for cut-to-length lines",
-   "lead": "Open at the rear for the strip from a decoiler and straightener, cut to length by the line control.",
-   "brand": "novotech-premium",
-   "families": [
+    "nt-shear-srgm-fr",
     "nt-shear-srgm-hcl",
     "nt-shear-srgm-cl"
-   ]
+   ],
+   "nav_label": "NovoTech mechanical shears",
+   "line": "premium",
+   "cards_title": "NovoTech mechanical guillotine shears — the line-up"
   },
   {
-   "id": "shear-swing-group",
-   "title": "Hydraulic swing beam shears",
-   "lead": "Plate from 1/4″ to 5/8″: two cylinders swing the beam through the cut, NC back gauge, 8 – 22 strokes a minute.",
-   "brand": "dener",
+   "slug": "hydraulic-shearing-machine",
+   "title": "NovoTech hydraulic shears — QC12K swing beam and Q11K guillotine, 5/32″ to 1-9/16″ · value line",
+   "image": "vl-qc12k-1",
+   "blurb": "NovoTech's own value-line plate shears, built in China with Estun controls and Rexroth hydraulics: QC12K swing beam shears from 5/32″ to 3/4″ over 8 to 20 ft and Q11K variable-rake guillotines from 1/4″ to 1-9/16″ over 8 to 26 ft.",
    "families": [
-    "dn-bs"
-   ]
+    "vl-qc12k",
+    "vl-q11k"
+   ],
+   "nav_label": "NovoTech hydraulic shears",
+   "line": "value",
+   "cards_title": "NovoTech hydraulic shears — the line-up"
   },
   {
-   "id": "shear-cnc-group",
-   "title": "CNC hydraulic guillotine shears",
-   "lead": "The production plate shear to 3/4″ × 20 ft: variable cutting angle, blade gap and back gauge set by the CNC.",
-   "brand": "dener",
+   "slug": "sheet-metal-shears",
+   "title": "NovoTech sheet metal shears — pneumatic, hydraulic, electric and mechanical, 16 ga to 3/8″ · value line",
+   "image": "tt-q11a",
+   "blurb": "The value-line shears for the sheet-metal shop, built in China to NovoTech's specification: a pneumatic shear for 16 ga, light and production hydraulic shears to 1/4″, electric shears with manual or NC back gauge, and flywheel mechanical shears to 3/8″.",
    "families": [
-    "dn-das"
-   ]
+    "tt-ps",
+    "tt-hq01",
+    "tt-ths",
+    "tt-hq11",
+    "tt-q11",
+    "tt-q11nc",
+    "tt-q11-mech"
+   ],
+   "nav_label": "NovoTech sheet metal shears",
+   "line": "value",
+   "cards_title": "NovoTech sheet metal shears — the line-up"
   }
  ],
+ "range_kind": "table",
+ "range_cols": [
+  "Capacity (mild steel)",
+  "Shearing length",
+  "Strokes / min",
+  "Motor",
+  "Weight"
+ ],
+ "range_lead": "Every shear model NovoTech sells, in one table: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification table on the line's page.",
+ "range_caption": "Metal shears supplied by NovoTech — Dener, NovoTech premium line and NovoTech value line",
+ "range_note": "Capacities are the manufacturers' ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208, 240 and 480 V on request.",
  "faq": [
   {
+   "q": "Which line of shear should I buy?",
+   "a": "By the material and the hours. For sheet to 1/4″ in a sheet-metal, HVAC or signage shop, the NovoTech sheet metal shears are the lowest-priced powered machines — pneumatic, hydraulic or electric, 39″ to 120″ — and the premium SRGM mechanical shears are the step up for a shop that shears all day: direct-gear drive, 31 – 35 strokes a minute, NC back gauge and photocell guard as standard. For plate from 5/32″ to 1-9/16″ the hydraulic shears take over: NovoTech's value-line QC12K swing beam and Q11K guillotine in the widest range of sizes, or the Dener BS and DAS — the premium plate shears, Turkish-built with the ESA CNC and Dener Canada parts in Mississauga. All four lines are installed and supported by the same NovoTech technicians; we quote across lines so you can compare."
+  },
+  {
    "q": "Mechanical or hydraulic shear — which is better?",
-   "a": "For sheet to 1/4″ a direct-gear mechanical shear is the faster and simpler machine: 31 – 35 strokes a minute from a motor and gearbox, no hydraulic power pack, no oil to heat up, no valves or seals to service, and the same cut quality on the first and the thousandth stroke. Hydraulic shears earn their price from 3/8″ plate upwards, where the beam needs tonnage rather than speed: the BS swing beam shear is the simple, rugged plate shear to 5/8″, and the DAS CNC guillotine adds a variable cutting angle — thin sheet cut fast and flat at 0.5°, 3/4″ plate at 3° with less distortion — with blade gap and back gauge set by the control from the thickness you key in."
+   "a": "For sheet to 1/4″ a mechanical shear is the faster and simpler machine: 30 – 55 strokes a minute from a motor and gearbox or flywheel, no hydraulic power pack, no oil to heat up, no valves or seals to service, and the same cut quality on the first and the thousandth stroke. Hydraulic shears earn their price from 3/8″ plate upwards, where the beam needs tonnage rather than speed — and in the light sizes a small hydraulic shear is the quietest, lowest-priced way to cut 14 ga to 5/32″ a few times an hour."
   },
   {
    "q": "Swing beam or guillotine?",
-   "a": "On a swing beam shear the beam pivots on two bearings and the cylinders swing it through the cut — few parts, a low price and a rake angle fixed by the design, which is fine for plate. A guillotine shear carries the beam straight down on rollers with a variable rake angle, so the same machine cuts thin sheet flat and fast at a small angle and thick plate at a steeper one; it also keeps the blade gap set automatically. For a plate shop cutting mostly 3/8″ and up, the BS; for a job shop that cuts everything from 16 ga to 3/4″, the DAS."
-  },
-  {
-   "q": "What does direct-gear mean?",
-   "a": "The motor drives the cutting beam through a gearbox and crank directly — there is no flywheel and clutch between them, as on an older mechanical shear. The beam makes one stroke per pedal press, stops at top dead centre and cannot repeat a stroke on its own; the motor runs only while the beam cycles, which also makes the machine quiet and economical."
+   "a": "On a swing beam shear the beam pivots on two bearings and the cylinders swing it through the cut — few parts, a low price and a rake angle fixed by the design, which is fine for plate. A guillotine shear carries the beam straight down on rollers with a variable rake angle, so the same machine cuts thin sheet flat and fast at a small angle and thick plate at a steeper one; it also keeps the blade gap set automatically. For a plate shop cutting mostly 3/8″ and up, a swing beam shear (Dener BS, NovoTech QC12K); for a job shop that cuts everything from 16 ga to 3/4″ and beyond, a guillotine (Dener DAS, NovoTech Q11K)."
   },
   {
    "q": "How is the capacity rated, and what about stainless and aluminum?",
-   "a": "Capacities are the maker's ratings for mild steel over the full blade length: 1/4″ (6 mm) on the SRGM 1100 and 1360, 3/16″ on the 1560, 5/32″ on the 2060 – 3200 and 1/8″ on the 4200; 1/8″ (3 mm) on the SRGM-H range. Stainless steel is harder to shear, so count on about 60 % of the mild-steel thickness — 14 ga stainless on a 1/8″ machine, 11 ga on a 1/4″ machine; aluminum cuts to the full rated thickness and more."
+   "a": "Capacities are the makers' ratings for mild steel (about 65,000 psi) over the full blade length. Stainless steel is harder to shear, so count on about 60 % of the mild-steel thickness — 14 ga stainless on a 1/8″ machine, 11 ga on a 1/4″ machine, 3/8″ on a 5/8″ machine; aluminum cuts to the full rated thickness and about 50 % more. Tell us your thickest material and we size the shear with a margin."
   },
   {
-   "q": "Which length do I need — 4 ft, 5 ft, 8 ft, 10 ft?",
-   "a": "The model number is the maximum shearing length in millimetres: 1100 = 43″, 1360 = 53.5″ (a 4 × 8 sheet cut across), 1560 = 61″ (5 ft), 2060 = 81″ (6.8 ft), 2560 = 101″ (8.4 ft, a 4 × 8 sheet lengthwise), 3060 = 10 ft, 3200 = 10.5 ft, 4200 = 13.8 ft. Most sheet-metal shops run a 2560 or 3060 so a full sheet is cut both ways; HVAC and signage shops are well served by the 1360 – 2060."
+   "q": "Which length do I need?",
+   "a": "The model number is the maximum shearing length in millimetres: 1250 – 1360 = 49 – 53.5″ (a 4 × 8 sheet cut across), 1500 – 1560 = 5 ft, 2000 – 2060 = 6.6 – 6.8 ft, 2500 – 2560 = 8.2 – 8.4 ft (a 4 × 8 sheet lengthwise), 3000 – 3200 = 10 – 10.5 ft (5 × 10 sheet), 4000 = 13 ft, 6000 = 20 ft plate. Most sheet-metal shops run an 8 or 10 ft machine so a full sheet is cut both ways; HVAC and signage shops are well served by 52 – 81″; plate shops buy 10 to 20 ft."
   },
   {
    "q": "What is the back gauge, and is it NC?",
-   "a": "The back gauge is the stop behind the blade that sets the width of the cut strip. The SRGM, SRGM-FR and SRGM-HFR come with an NC-controlled back gauge with 29.5″ stroke — the operator keys in the dimension on the controller and the gauge moves there; a 39.4″ stroke, the ELGO P40T or FUJI Monitouch touch-screen control and a front-operated manual gauge with ball screw are options. The SRGM-H has a manual back gauge as standard and the NC gauge as an option."
+   "a": "The back gauge is the stop behind the blade that sets the width of the cut strip. The value-line sheet metal shears have a manual gauge with counter, an electric gauge or a PLC-positioned gauge depending on the model; the SRGM and the hydraulic plate shears come with an NC back gauge — the operator keys in the dimension and the gauge moves there — and the Dener DAS with a 1 m ball-screw gauge set by the CNC together with the blade gap and the cutting angle."
   },
   {
-   "q": "What does return-to-sender do?",
-   "a": "On the FR and HFR series a sheet support behind the blade tilts after the cut and carries the cut piece back under the blade to the front of the machine, while off-cuts fall to the rear. One operator cuts blanks and strips without walking round the machine or needing a helper at the back — the biggest time saver on a shear that cuts small parts all day. The standard version is manual; the pneumatic version adds return-to-rear for scrap."
+   "q": "What about safety and the Ontario pre-start review?",
+   "a": "Finger guards along the blade, rear guard fences or photocells / light curtains, an anti-repeat single-stroke control and a mobile foot pedal with emergency stop are standard or available on every line; we recommend the photocell or light-curtain rear guard on every powered shear. In Ontario a new shear needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."
   },
   {
-   "q": "How long do the blades last, and can they be turned?",
-   "a": "The blades are high-carbon, high-chrome tool steel: the top blade has two cutting edges and the bottom blade four, so each is turned to a fresh edge before it needs regrinding. The blade gap is set from the front of the machine to the sheet thickness, which keeps the edges sharp and the cut burr-free. Replacement blades are stocked in Mississauga."
-  },
-  {
-   "q": "Can it cut at an angle?",
-   "a": "Yes — the optional 0 – 180° angular cutting device on the table positions the sheet for mitre and trapezoid cuts against the squaring arm; the standard squaring arm has a T-slot, a stopper and a ruler for square cuts."
+   "q": "Do you deliver, install and service in Canada?",
+   "a": "Yes — every shear is shipped to Mississauga, unloaded, levelled, commissioned and the operators trained by NovoTech; blades and parts for all four lines are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request) and a 1-year warranty."
   },
   {
    "q": "What voltage do these machines run on?",
@@ -126,22 +147,19 @@
  "faq_title": "Questions we get asked about metal shears",
  "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey",
-  "text": "NovoTech's premium-line shears come from a Turkish builder that has made guillotine shears and sheet-metal machinery for more than 40 years — CE-certified, with European motors, gearboxes and electrical components."
+  "title": "Four lines, one supplier",
+  "text": "Premium Dener and NovoTech mechanical shears from Turkey, NovoTech value-line hydraulic and sheet metal shears from China — every one with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON."
  },
  "section_label": "Shears",
+ "related_blurb": "Every metal shear NovoTech sells — Dener, NovoTech premium and value lines — on one page, with the capacity table for the whole range.",
  "related_pages": [
-  {
-   "href": "hydraulic-shearing-machine.html",
-   "label": "Value-line hydraulic shears to 1-9/16″"
-  },
   {
    "href": "press-brake.html",
    "label": "Press brakes"
   },
   {
-   "href": "compact-hydraulic-press-brakes.html",
-   "label": "Compact hydraulic press brakes"
+   "href": "laser-cutting-machine.html",
+   "label": "Sheet laser cutters"
   },
   {
    "href": "corner-notcher.html",
@@ -154,27 +172,43 @@
   {
    "href": "ironworker-machines.html",
    "label": "Hydraulic ironworkers"
+  },
+  {
+   "href": "plate-rollers.html",
+   "label": "Plate rollers"
   }
  ],
- "related_title": "More sheet-metal cutting and forming machinery from NovoTech",
- "intro_video": {
-  "id": "XMn6YkPPOig",
-  "title": "ISITAN company introduction video",
-  "thumb": "video-XMn6YkPPOig",
-  "duration": "PT3M55S"
- },
- "intro_video_heading": "Inside the factory — where the machines are built",
- "intro_video_text": "A tour of the ISITAN plant in Bursa, Turkey, where the sheet-metal and tube machinery on these pages has been built since 1959.",
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null,
  "catalogue_pdfs": [
   {
+   "file": "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf",
+   "label": "Download the Dener hydraulic shears brochure",
+   "size": "PDF · 1 MB · imperial units"
+  },
+  {
    "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
-   "label": "Download the guillotine shears brochure",
+   "label": "Download the mechanical guillotine shears brochure",
    "size": "PDF · 2 MB · imperial units"
   },
   {
-   "file": "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf",
-   "label": "Download the hydraulic shears brochure",
+   "file": "files/NovoTech-Hydraulic-Shearing-Machines-2026.pdf",
+   "label": "Download the value-line hydraulic shears brochure",
+   "size": "PDF · 1 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+   "label": "Download the sheet metal shears brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ]
+ ],
+ "range_pick": [
+  "capacity",
+  "length",
+  "strokes",
+  "motor",
+  "weight"
+ ],
+ "related_title": "More sheet-metal cutting and forming machinery from NovoTech"
 }

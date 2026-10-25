@@ -16010,5 +16010,237 @@
   "trim": false,
   "quality": 82,
   "cutout": true
+ },
+ "tt-ps": {
+  "src": "tools/src-images/ttmc/tt-ps.jpg",
+  "alt": "PS-1.5x1320 pneumatic shear, 52″ × 16 ga, with front gauge arms and the mobile foot pedal",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-ps-gauge": {
+  "src": "tools/src-images/ttmc/tt-ps-gauge.jpg",
+  "alt": "Back gauge with indicator on the pneumatic shear",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-ps-control": {
+  "src": "tools/src-images/ttmc/tt-ps-control.jpg",
+  "alt": "Pneumatic control unit — filter, regulator and lubricator",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-ps-cylinder": {
+  "src": "tools/src-images/ttmc/tt-ps-cylinder.jpg",
+  "alt": "Pneumatic cylinder driving the cutting beam",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-ths": {
+  "src": "tools/src-images/ttmc/tt-ths.jpg",
+  "alt": "THS-1320X4 hydraulic shear, 52″ × 8 ga, with front gauge arms and the mobile foot pedal",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-ths-gauge": {
+  "src": "tools/src-images/ttmc/tt-ths-gauge.jpg",
+  "alt": "Hand-wheel back gauge of the THS hydraulic shear",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-q11a": {
+  "src": "tools/src-images/ttmc/tt-q11a.jpg",
+  "alt": "Q11-3x1250A electric shear with light curtain, pneumatic sheet catcher and the mobile foot pedal",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-q11a-rear": {
+  "src": "tools/src-images/ttmc/tt-q11a-rear.jpg",
+  "alt": "Q11-3x1250A from the rear — light curtain and sheet catcher",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-q11": {
+  "src": "tools/src-images/ttmc/tt-q11.jpg",
+  "alt": "Q11-3x2050 electric shear, 81″ × 1/8″, with front gauge arms and the foot pedal",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-q11-gauge": {
+  "src": "tools/src-images/ttmc/tt-q11-gauge.jpg",
+  "alt": "Manual back gauge with millimetre counter",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-q11-stop": {
+  "src": "tools/src-images/ttmc/tt-q11-stop.jpg",
+  "alt": "Bench angle stop on the shear table",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-q11nc": {
+  "src": "tools/src-images/ttmc/tt-q11nc.jpg",
+  "alt": "Q11-2x2550NC electric shear with PLC control and motorised back gauge, 100″ × 14 ga",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-q11nc-rear": {
+  "src": "tools/src-images/ttmc/tt-q11nc-rear.jpg",
+  "alt": "Q11-2x2550NC from the rear — interlocked rear guard and pneumatic sheet catcher",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-q11nc-screen": {
+  "src": "tools/src-images/ttmc/tt-q11nc-screen.jpg",
+  "alt": "Touch-screen PLC control of the NC shear",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-q11nc-light": {
+  "src": "tools/src-images/ttmc/tt-q11nc-light.jpg",
+  "alt": "Cutting line lighting over the blade",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-q11nc-balls": {
+  "src": "tools/src-images/ttmc/tt-q11nc-balls.jpg",
+  "alt": "Sheet hold-downs with rolling balls",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-q11nc-gauge": {
+  "src": "tools/src-images/ttmc/tt-q11nc-gauge.jpg",
+  "alt": "Motorised back gauge with manual fine adjustment",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-q11-4x2000": {
+  "src": "tools/src-images/ttmc/tt-q11-4x2000.jpg",
+  "alt": "Q11-4x2000 mechanical shear, 79″ × 5/32″, with the foot pedal",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-q11-3x1300": {
+  "src": "tools/src-images/ttmc/tt-q11-3x1300.jpg",
+  "alt": "Q11-3x1300 mechanical shear, 51″ × 1/8″",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-q11-6x2000": {
+  "src": "tools/src-images/ttmc/tt-q11-6x2000.jpg",
+  "alt": "Q11-6x2000 mechanical shear, 79″ × 1/4″, with hold-down cylinders",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-hq01": {
+  "src": "tools/src-images/ttmc/tt-hq01.jpg",
+  "alt": "HQ01-2x1320B hydraulic shear, 52″ × 14 ga, with rear guard and the foot pedal",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-hq01-photocell": {
+  "src": "tools/src-images/ttmc/tt-hq01-photocell.jpg",
+  "alt": "Optional photoelectric rear protection",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-hq01-gauge": {
+  "src": "tools/src-images/ttmc/tt-hq01-gauge.jpg",
+  "alt": "Adjustable back gauge with scale",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-hq01-switch": {
+  "src": "tools/src-images/ttmc/tt-hq01-switch.jpg",
+  "alt": "Control panel — automatic and single-stroke switching",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-hq11": {
+  "src": "tools/src-images/ttmc/tt-hq11.jpg",
+  "alt": "HQ11-4.5x2000 hydraulic shear, 79″ × 3/16″, with hold-downs and the mobile foot pedal",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tt-hq11-table": {
+  "src": "tools/src-images/ttmc/tt-hq11-table.jpg",
+  "alt": "Ball-transfer table of the HQ11 shear",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-hq11-egauge": {
+  "src": "tools/src-images/ttmc/tt-hq11-egauge.jpg",
+  "alt": "Electric back gauge drive",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-hq11-mgauge": {
+  "src": "tools/src-images/ttmc/tt-hq11-mgauge.jpg",
+  "alt": "Manual back gauge with hand wheel",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tt-hq11-pump": {
+  "src": "tools/src-images/ttmc/tt-hq11-pump.jpg",
+  "alt": "Lubrication pump",
+  "section": "shears",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
  }
 }

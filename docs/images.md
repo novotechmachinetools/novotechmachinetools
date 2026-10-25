@@ -239,3 +239,12 @@ BiRefNet cut-out — first in the gallery.  For the showroom shot the machine st
 as part of the machine; `sahinler_photos.fill_floor()` paints the pallet with the floor colour first (polygon with machine
 parts kept by polygon / darkness / greyness) so the cut-out drops it.  Silica-gel bags on the tables were inpainted
 (`front`) or cropped off (`rolls`); the neighbouring red machine and a hose were cropped off (`square`).
+
+### TTMC catalogue photos (Oct 25)
+
+The TTMC Vol. 23 catalogue is a PDF of full-page JPEG rasters (1240 × 1683 px, ~150 dpi) with the "WWW.TTMC.CN" watermark on a
+separate layer, so `pdfimages -png` returns clean pages (kept outside the repo in /home/claude/ttmc/img/).  tools/ttmc_photos.py
+crops each machine and detail photo from the page, paints the printed model names / bullet text white where it overlaps the
+crop, upscales every crop 2x with Real-ESRGAN (tools/esrgan.py) and writes tools/src-images/ttmc/; the machine photos are cut
+out by BiRefNet in make_images, the detail photos stay rectangular.  Nothing on the machines carries the supplier's logo (only
+the model plates), so no inpainting was needed.
