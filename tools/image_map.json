@@ -12505,5 +12505,569 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "wt-tubex": {
+  "src": "tools/src-images/wecotech/wt-tubex.jpg",
+  "alt": "Wecotech Tubex compact tube end expander — vertical hydraulic unit with foot switch",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubex-horizontal": {
+  "src": "tools/src-images/wecotech/wt-tubex-horizontal.jpg",
+  "alt": "Tubex — optional horizontal version",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubex-table": {
+  "src": "tools/src-images/wecotech/wt-tubex-table.jpg",
+  "alt": "Tubex — optional Ø480 mm steel supporting table",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubex-part": {
+  "src": "tools/src-images/wecotech/wt-tubex-part.jpg",
+  "alt": "Expanded and calibrated tube end made on the Tubex",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubin": {
+  "src": "tools/src-images/wecotech/wt-tubin.jpg",
+  "alt": "Wecotech Tubin compact tube end reducer (impander)",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubin-horizontal": {
+  "src": "tools/src-images/wecotech/wt-tubin-horizontal.jpg",
+  "alt": "Tubin — optional horizontal version",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubin-part": {
+  "src": "tools/src-images/wecotech/wt-tubin-part.jpg",
+  "alt": "Reduced tube end made on the Tubin",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubepunch": {
+  "src": "tools/src-images/wecotech/wt-tubepunch.jpg",
+  "alt": "Wecotech Tubepunch tube end punching unit",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubepunch-unit": {
+  "src": "tools/src-images/wecotech/wt-tubepunch-unit.jpg",
+  "alt": "Tubepunch — punching unit with punch and die interface",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubepunch-part": {
+  "src": "tools/src-images/wecotech/wt-tubepunch-part.jpg",
+  "alt": "Slotted tube end made on the Tubepunch",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubepress": {
+  "src": "tools/src-images/wecotech/wt-tubepress.jpg",
+  "alt": "Wecotech Tubepress tube straightening press",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubepress-process": {
+  "src": "tools/src-images/wecotech/wt-tubepress-process.jpg",
+  "alt": "Tubepress — the bent tube is pressed round again before forming",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubepress-part": {
+  "src": "tools/src-images/wecotech/wt-tubepress-part.jpg",
+  "alt": "Tube end calibrated round after bending",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubex-u": {
+  "src": "tools/src-images/wecotech/wt-tubex-u.jpg",
+  "alt": "Wecotech Tubex-U universal production expander with touchscreen on pivot arm",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubex-u-horizontal": {
+  "src": "tools/src-images/wecotech/wt-tubex-u-horizontal.jpg",
+  "alt": "Tubex-U — optional horizontal version",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubex-u-part": {
+  "src": "tools/src-images/wecotech/wt-tubex-u-part.jpg",
+  "alt": "Expanded tube end made on the Tubex-U",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubin-u": {
+  "src": "tools/src-images/wecotech/wt-tubin-u.jpg",
+  "alt": "Wecotech Tubin-U universal production reducer",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubin-u-horizontal": {
+  "src": "tools/src-images/wecotech/wt-tubin-u-horizontal.jpg",
+  "alt": "Tubin-U — optional horizontal version",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubin-u-part": {
+  "src": "tools/src-images/wecotech/wt-tubin-u-part.jpg",
+  "alt": "Reduced tube end made on the Tubin-U",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-u": {
+  "src": "tools/src-images/wecotech/wt-tubax-u.jpg",
+  "alt": "Wecotech Tubax-U axial forming machine with tube clamping",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubax-u-300": {
+  "src": "tools/src-images/wecotech/wt-tubax-u-300.jpg",
+  "alt": "Tubax-U variant 300 with the larger clamping unit",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-u-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubax-u-diagram.jpg",
+  "alt": "Tubax-U — clamping and moulding jaws hold the tube while the axial tool forms the end",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-u-part": {
+  "src": "tools/src-images/wecotech/wt-tubax-u-part.jpg",
+  "alt": "Axially formed tube end with collar made on the Tubax-U",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-rotary": {
+  "src": "tools/src-images/wecotech/wt-tubax-rotary.jpg",
+  "alt": "Wecotech Tubax-Rotary Electra servo-electric rotary forming machine",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubax-rotary-400": {
+  "src": "tools/src-images/wecotech/wt-tubax-rotary-400.jpg",
+  "alt": "Tubax-Rotary Electra variant 400 for tube to Ø400 mm",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-rotary-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubax-rotary-diagram.jpg",
+  "alt": "Tubax-Rotary — the rotating forming head moves axially against the clamped tube",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-rotary-part": {
+  "src": "tools/src-images/wecotech/wt-tubax-rotary-part.jpg",
+  "alt": "Rolled collar with sealing face made on the Tubax-Rotary",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-multi": {
+  "src": "tools/src-images/wecotech/wt-tubax-multi.jpg",
+  "alt": "Wecotech Tubax-Multi Electra multi-station forming centre with servo tool changer",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubax-multi-part": {
+  "src": "tools/src-images/wecotech/wt-tubax-multi-part.jpg",
+  "alt": "Press-fit copper elbow formed on the Tubax-Multi",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubax-multi-part2": {
+  "src": "tools/src-images/wecotech/wt-tubax-multi-part2.jpg",
+  "alt": "Tube with formed ends from the Tubax-Multi",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubiroll": {
+  "src": "tools/src-images/wecotech/wt-tubiroll.jpg",
+  "alt": "Wecotech Tubiroll-2R automatic beading and flanging machine with light curtain",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubiroll-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubiroll-diagram.jpg",
+  "alt": "Tubiroll-2R — two rolls bead or flange the tube end",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubiroll-part": {
+  "src": "tools/src-images/wecotech/wt-tubiroll-part.jpg",
+  "alt": "Beaded duct end made on the Tubiroll-2R",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-c160": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-c160.jpg",
+  "alt": "Wecotech Tubimatic C 160 UNO end former for commercially available C-tools",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubimatic-c80tre": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-c80tre.jpg",
+  "alt": "Tubimatic C 80 TRE with three C-tool stations",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-c80uno": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-c80uno.jpg",
+  "alt": "Tubimatic C 80 UNO compact end former",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-c-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-c-diagram.jpg",
+  "alt": "Tubimatic C — expansion, impanding and C-IO combination tool sets",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-c-part": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-c-part.jpg",
+  "alt": "Flared and expanded tube end made with a C-tool",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-io80": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io80.jpg",
+  "alt": "Wecotech Tubimatic IO 80 inner / outer tool end former",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubimatic-io80-electra": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io80-electra.jpg",
+  "alt": "Tubimatic IO 80 Electra — servo-electric version",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-ious80": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-ious80.jpg",
+  "alt": "Tubimatic IO-US 80 Electra with swivelling forming unit",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-io-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io-diagram.jpg",
+  "alt": "Tubimatic IO — inner and outer tools form the tube end in one stroke",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-io-part": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io-part.jpg",
+  "alt": "Double-flared tube end made with IO-tools",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-io160": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io160.jpg",
+  "alt": "Wecotech Tubimatic IO 160 inner / outer tool end former for tube to Ø160 mm",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubimatic-io160-electra": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io160-electra.jpg",
+  "alt": "Tubimatic IO 160 Electra — servo-electric version",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-ious160": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-ious160.jpg",
+  "alt": "Tubimatic IO-US 160 Electra with swivelling forming unit",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-io160-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io160-diagram.jpg",
+  "alt": "Tubimatic IO 160 — inner / outer forming of a bent tube end",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubimatic-io160-part": {
+  "src": "tools/src-images/wecotech/wt-tubimatic-io160-part.jpg",
+  "alt": "Bent tube with calibrated end from the Tubimatic IO 160",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubex-io-s": {
+  "src": "tools/src-images/wecotech/wt-tubex-io-s.jpg",
+  "alt": "Wecotech Tubex IO-S combined inner / outer tube end former",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubex-io-s-guard": {
+  "src": "tools/src-images/wecotech/wt-tubex-io-s-guard.jpg",
+  "alt": "Tubex IO-S — optional safety guard with light curtain",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubex-io-s-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubex-io-s-diagram.jpg",
+  "alt": "Tubex IO-S — inner mandrel and radial outer jaws around the tube",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubex-io-s-part": {
+  "src": "tools/src-images/wecotech/wt-tubex-io-s-part.jpg",
+  "alt": "Beaded and flanged tube end made on the Tubex IO-S",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-wecomatic-200": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-200.jpg",
+  "alt": "Wecotech Wecomatic IO-S 200 CNC radial forming machine with light-curtain guard",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-wecomatic-200-side": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-200-side.jpg",
+  "alt": "Wecomatic IO-S — version operated from the side",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-wecomatic-200-part": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-200-part.jpg",
+  "alt": "Multi-step formed exhaust tube end made on the Wecomatic",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-wecomatic-speed": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-speed.jpg",
+  "alt": "Wecotech Wecomatic IO-S Speed CNC radial forming machine",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-wecomatic-highspeed": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-highspeed.jpg",
+  "alt": "Wecomatic IO-S High Speed with three hydraulic pumps",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-wecomatic-400": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-400.jpg",
+  "alt": "Wecomatic IO-S variant 400 for tube to Ø400 mm",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-wecomatic-diagram": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-diagram.jpg",
+  "alt": "Wecomatic IO-S — inner tool, outer top jaws and expansion mandrel",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-wecomatic-part": {
+  "src": "tools/src-images/wecotech/wt-wecomatic-part.jpg",
+  "alt": "Beaded tube end made on the Wecomatic IO-S",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-flanging-cell": {
+  "src": "tools/src-images/wecotech/wt-flanging-cell.jpg",
+  "alt": "Wecotech flanging cell with rotating head for bellows and T-pieces",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-flanging-cell-bellows": {
+  "src": "tools/src-images/wecotech/wt-flanging-cell-bellows.jpg",
+  "alt": "Bellows flanged directly onto the flange in the flanging cell",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-flanging-cell-step": {
+  "src": "tools/src-images/wecotech/wt-flanging-cell-step.jpg",
+  "alt": "Flanging cell — the part is held by eight hydraulic clamps while the head rolls the flange",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubecut": {
+  "src": "tools/src-images/wecotech/wt-tubecut.jpg",
+  "alt": "Wecotech Tubecut IO-S 160 Electra tube shearing cutter",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubecut-notable": {
+  "src": "tools/src-images/wecotech/wt-tubecut-notable.jpg",
+  "alt": "Tubecut IO-S 160 — version without the supporting table",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubecut-diagram": {
+  "src": "tools/src-images/wecotech/wt-tubecut-diagram.jpg",
+  "alt": "Tubecut IO-S — the tube is clamped and sheared between inner and outer tools",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubecut-part": {
+  "src": "tools/src-images/wecotech/wt-tubecut-part.jpg",
+  "alt": "Burr-free sheared copper elbows from the Tubecut",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubeshear": {
+  "src": "tools/src-images/wecotech/wt-tubeshear.jpg",
+  "alt": "Wecotech Tubeshear with the height-adjustable working table",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-tubeshear-process": {
+  "src": "tools/src-images/wecotech/wt-tubeshear-process.jpg",
+  "alt": "Tubeshear — scoring knife and chopping knife",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-tubeshear-part": {
+  "src": "tools/src-images/wecotech/wt-tubeshear-part.jpg",
+  "alt": "Bent tube cut on the Tubeshear",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-rotobrush": {
+  "src": "tools/src-images/wecotech/wt-rotobrush.jpg",
+  "alt": "Wecotech Rotobrush tube end deburring machine",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82
+ },
+ "wt-rotobrush-head": {
+  "src": "tools/src-images/wecotech/wt-rotobrush-head.jpg",
+  "alt": "Rotobrush — wire brush head with rotating frame",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "wt-rotobrush-part": {
+  "src": "tools/src-images/wecotech/wt-rotobrush-part.jpg",
+  "alt": "Deburred tube end from the Rotobrush",
+  "section": "wecotech",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
  }
 }

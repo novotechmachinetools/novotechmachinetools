@@ -167,3 +167,11 @@ brochure around 2–5 MB; the logo stays PNG for the dark cover.  Specs so far: 
 `src/files/NovoTech-Production-Hydraulic-Presses-2026.pdf`, `guillotine-shears.json` →
 `src/files/NovoTech-Guillotine-Shears-2026.pdf`; the family's `pdf` entry (set by the page module) is what the
 "Download PDF brochure" button links to.
+
+## Wecotech tube end forming (catalogue extracts)
+
+Wecotech is shown under its own name (Swiss), so nothing is erased.  `pdfimages -j -p -f 8 -l 63` on the 2022 catalogue
+(`/home/claude/wecotech/cat.pdf`) gives the machine renders (1,100 – 2,300 px on white) and the sample-part photos;
+`tools/wecotech_photos.py` maps 73 keys (`wt-*`) to those files and copies them to `tools/src-images/wecotech/`.  The 20
+hero renders are cut out by BiRefNet; the parts (grey studio background), tool diagrams and option crops are registered with
+`cutout: False`.  `tools/isitan_pipe_end_saws.py` registers them (section `wecotech`) when `tools/isitan_data.py` runs.

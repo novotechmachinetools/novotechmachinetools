@@ -3,6 +3,8 @@ and SFC circular cold saws (pages 52–53) — three category pages: tube notche
 tube end forming machines, cold saws."""
 from isitan_lib import *  # noqa: F401,F403
 from bekamak_extra import CIRCULAR_FAMILIES, CIRCULAR_IMAGES  # noqa: E402  (Bekamak BMDO saws share the cold saw page)
+import wecotech_data  # Wecotech (Switzerland) tube end formers share the tube end forming page
+import importlib.util
 
 SET = "pipe-end-and-saws"
 SECTION = "Tube notchers, end formers & cold saws"
@@ -201,17 +203,38 @@ PAGES = {
         faq_title="Questions we get asked about tube notchers",
     ),
     P_FORM: dict(
-        title="Tube End Forming Machines — Expand & Reduce | NovoTech",
-        meta="Hydraulic tube end formers that expand or reduce pipe ends to Ø3-1/2″ × 14 ga in one station — exhaust slip joints, sleeves, telescoping tube. Tooling included.",
-        h1="Tube end forming machines",
-        intro="A tube end former (pipe end forming machine) expands or reduces the end of a tube so two tubes slip together: an expanded end takes the next tube inside it, a reduced end fits into the next tube. İşitan's SFF single-station hydraulic end formers do both with one tooling set — the SFF 90-1 expands Ø1-3/8″ to 3-1/2″ and reduces down from Ø5/16″ in 14 ga mild steel with a 15 HP power unit, the SFF 60-1 covers tube to Ø2-3/8″ with 10 HP — for exhaust slip joints, handrail and fence sleeves, telescoping tube, furniture connectors and HVAC spigots. One forming set in the size you request is included and swaps in minutes; with CSA-approved panels and support from Mississauga, ON.",
-        points=["Hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga", "SFF 90-1 with 15 HP power unit; SFF 60-1 to Ø2-3/8″ with 10 HP", "One end-forming tooling set in your tube size included; easy tool change"],
-        hero="is-sff-90-1", minis=["is-sff-60-1", "is-sff-tooling"],
-        groups=[("form", "Tube end formers", "SFF hydraulic end forming machines for expanding and reducing tube ends in one station.")],
-        faq=[{"q": "Expanding or reducing — what does the end former do?", "a": "An expander opens a tube end so the next tube slips inside (exhaust slip joints, telescoping handrail, sleeves); a reducer collapses the end to fit into the next tube. The SFF does both in one station with a hydraulic ram and interchangeable forming tools — one set is included, others are quoted to your tube size."},
+        title="Tube End Forming Machines — Expand, Reduce, Bead | NovoTech",
+        meta="Tube end formers from a Ø3-1/2″ hydraulic expander-reducer to Swiss CNC inner / outer machines for Ø23.6″: expanding, reducing, beading, flaring, flanging; tube cutting and deburring.",
+        h1="Tube end forming machines — expanding, reducing, beading and flanging",
+        intro="A tube end former (pipe end forming machine) expands or reduces the end of a tube so two tubes slip together, "
+              "and the production versions bead, flare, flange, calibrate and emboss the end as well — the machines behind exhaust "
+              "systems, ventilation and chimney tube, shock absorbers, handrail and furniture connectors. Two ranges on this page, "
+              "small to large. İşitan's SFF single-station hydraulic end formers expand and reduce tube to Ø3-1/2″ × 14 ga with one "
+              "tooling set, for the fabrication shop. Wecotech's Swiss tube end forming machines cover series production: the Easy "
+              "line of compact expanders, reducers, a straightening press and a punching unit; the Universal line of modular "
+              "production machines — expanders, reducers, axial and servo rotary formers, a multi-station forming centre and an "
+              "automatic beading machine to Ø39.4″; the Traditional line built for the C and IO tooling that is standard in the "
+              "exhaust trade; the Weco line of CNC inner / outer formers with programmable tool rotation for tube to Ø23.6″ and a "
+              "flanging cell for bellows; and the shearing cutters, tube shear and deburring machine that complete an end-forming "
+              "cell. Siemens controls, Bosch Rexroth hydraulics or servo drives, CSA-approved panels and support from Mississauga, ON.",
+        points=["İşitan SFF hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga, tooling set included",
+                "Wecotech compact expanders and reducers from Ø3/8″ to Ø23.6″, 21 – 26 US tons, 2 – 4 s cycles, touchscreen programming",
+                "Wecotech CNC inner / outer formers to Ø23.6″ with 8 – 24 radial pistons, Tubimatic machines for standard C and IO tools, beading, flanging, shearing and deburring"],
+        hero="wt-wecomatic-200", minis=["is-sff-90-1", "wt-tubex"],
+        groups=[("form", "İşitan hydraulic tube end formers", "SFF single-station end forming machines for expanding and reducing tube ends with one tooling set.", "isitan"),
+                ("wt-easy", "Wecotech Easy line — compact expanders, reducers and auxiliaries", "Entry-level machines with the electrics and hydraulics in one compact housing: the Tubex expander, Tubin reducers, the Tubepress straightening press and the Tubepunch slot punching unit.", "wecotech"),
+                ("wt-universal", "Wecotech Universal line — modular production machines", "The HW-Flex housing with touchscreen programming and a choice of options: Tubex-U and Tubin-U, the Tubax axial and rotary formers, the Tubax-Multi forming centre and the Tubiroll-2R beading machine — small to large.", "wecotech"),
+                ("wt-traditional", "Wecotech Traditional line — for standard C and IO tooling", "Production end formers that take the commercially available C-tools and IO-tools of the exhaust trade, hydraulic or servo-electric (Electra), with one to three tool stations.", "wecotech"),
+                ("wt-weco", "Wecotech Weco line — CNC inner / outer tube end formers", "The flagship machines: an inner mandrel and 8 to 24 radial outer pistons under CNC control, with programmable inner-tool rotation on the Wecomatic, for tube to Ø23.6″; plus the flanging cell for bellows and T-pieces.", "wecotech"),
+                ("wt-cutting", "Wecotech tube cutting and deburring", "The shearing cutter, tube shear and deburring machine that cut and prepare the tube before and after forming.", "wecotech")],
+        faq=[{"q": "Expanding or reducing — what does the end former do?", "a": "An expander opens a tube end so the next tube slips inside (exhaust slip joints, telescoping handrail, sleeves); a reducer collapses the end to fit into the next tube. The İşitan SFF does both in one station with a hydraulic ram and interchangeable forming tools; the Wecotech Tubex and Tubex-U expand with a cone-driven segmented tool, the Tubin and Tubin-U reduce with collet-type top jaws, and the Tubimatic and Weco-line machines do both — and bead, flare and flange — with inner and outer tools."},
+             {"q": "What is an inner / outer (IO) tube end former?", "a": "A machine with two tools that work on the tube end at the same time: an inner mandrel or expansion tool inside the tube and an outer tool — closing jaws or, on the Weco line, 8 to 24 radial pistons — around it. Between them the end is expanded, reduced, beaded, flared, flanged or embossed to a defined shape in one stroke, in any position on round or shaped tube. The Tubimatic IO machines take the commercially available IO-tools; the Tubex IO-S and Wecomatic run Wecotech's own tooling under CNC."},
+             {"q": "Which Wecotech line do I need?", "a": "The Easy line is for a shop that forms a few hundred ends a day beside a bender or saw: compact, foot-switch operated, 21 US tons. The Universal line is the modular production machine with touchscreen programming, 26 US tons and the options that a production cell needs — heat exchangers, remote maintenance, Profisafe, horizontal version. The Traditional line is the choice when you already own C or IO tooling. The Weco line is for complex, multi-step forming of exhaust, ventilation and chimney parts at 10 – 40 s a cycle, programmed on the machine."},
              {"q": "What tube sizes and wall thickness can the SFF form?", "a": "The SFF 90-1 expands tube from Ø1-3/8″ to Ø3-1/2″ and reduces ends down to Ø5/16″, in mild steel up to 14 ga; the SFF 60-1 covers tube to Ø2-3/8″. Stainless and thicker walls are quoted case by case — send us the tube OD, wall and the finished end size you need."},
-             {"q": "How long does a tool change take?", "a": "A few minutes: the forming set is held in a quick-change holder on the ram and the clamp. Most customers keep one set per tube size and swap between batches."},
-             {"q": "Can the SFF do an exhaust slip joint?", "a": "Yes — that is its most common job: expand one end of the pipe so the next section slides in, or reduce it to slip into a muffler or flex pipe. Expansion depth and the finished diameter are set by the tooling."},
+             {"q": "Hydraulic or Electra?", "a": "Wecotech builds the Tubimatic IO, Tubax-Rotary, Tubax-Multi and Tubecut as Electra versions with Bosch Rexroth servo drives instead of a hydraulic power unit: no oil, no heat exchanger, lower energy use and quieter running, with the forming force and position under direct servo control. The hydraulic versions keep the higher force reserve (37 US tons on the IO 160) and the lower price."},
+             {"q": "How long does a tool change take?", "a": "A few minutes on every machine on this page: the SFF holds its forming set in a quick-change holder; the Wecotech machines have quick-change flanges for the basic tool and the mandrel and quick-change interfaces for the outer jaws, and the Tubimatic C 80 TRE carries three tool stations so three forming steps run without a change at all."},
+             {"q": "Can the end former do an exhaust slip joint?", "a": "Yes — that is the most common job: expand one end of the pipe so the next section slides in, or reduce it to slip into a muffler or flex pipe, then bead it for the clamp. The SFF does the expansion and reduction; a Tubimatic IO or Wecomatic adds the bead, flare and calibration in the same stroke."},
+             {"q": "Where are these machines made and how are they supported?", "a": "The SFF is built by İşitan in Bursa, Turkey; the Wecotech machines by Wecotech AG in Switzerland, a 60-person company whose customers include 3M, ABB, Akrapovič and American Axle. NovoTech sells, installs and supports both in Canada from Mississauga, ON, with CSA-approved panels, remote maintenance on the Wecotech controls and tooling to your tube size."},
              VOLT_FAQ_GENERIC],
         faq_title="Questions we get asked about tube end formers",
     ),
@@ -246,14 +269,50 @@ def register_bekamak_images():
     return list(CIRCULAR_IMAGES)
 
 
+def register_wecotech_images():
+    """tools/src-images/wecotech/<key>.jpg (copied by tools/wecotech_photos.py) → tools/image_map.json, section 'wecotech'."""
+    spec = importlib.util.spec_from_file_location("wecotech_photos", os.path.join(ROOT, "tools", "wecotech_photos.py"))
+    m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+    imap_path = os.path.join(ROOT, "tools", "image_map.json")
+    imap = json.load(open(imap_path, encoding="utf-8"))
+    keys = []
+    for key, p in m.PHOTOS.items():
+        f = os.path.join(ROOT, "tools", "src-images", "wecotech", key + ".jpg")
+        if not os.path.exists(f):
+            print("!! missing export for", key); continue
+        e = {"src": f"tools/src-images/wecotech/{key}.jpg", "alt": p["alt"], "section": "wecotech", "trim": False, "quality": 82}
+        if p.get("cutout") is False:
+            e["cutout"] = False
+        imap[key] = e
+        keys.append(key)
+    json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    open(os.path.join(ROOT, "tools", "wecotech_keys.txt"), "w").write(",".join(keys))
+    return keys
+
+
+PDF_WT_FILE = "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf"
+
+
+def pdf_wt():
+    f = os.path.join(ROOT, "src", PDF_WT_FILE)
+    size = f"PDF · {os.path.getsize(f) / 1e6:.0f} MB · imperial units" if os.path.exists(f) else "PDF · imperial units"
+    return {"file": PDF_WT_FILE, "label": "Download the Wecotech tube end forming brochure", "size": size}
+
+
 def build():
     register_bekamak_images()
-    write_families(SET, FAMILIES)
+    register_wecotech_images()
+    PDF_WT = pdf_wt()
+    WT_FAMILIES = [dict(f, pdf=PDF_WT) for f in wecotech_data.FAMILIES]
+    write_families(SET, FAMILIES + WT_FAMILIES)
     related_notch = [{"href": f"{P_FORM}.html", "label": "Tube end forming machines"}, {"href": f"{P_SAW}.html", "label": "Circular cold saws"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "nc-tube-benders.html", "label": "NC tube benders"}]
     related_form = [{"href": f"{P_NOTCH}.html", "label": "Tube notchers"}, {"href": f"{P_SAW}.html", "label": "Circular cold saws"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "rotary-draw-tube-benders.html", "label": "Rotary draw tube benders"}]
     related_saw = [{"href": f"{P_NOTCH}.html", "label": "Tube notchers"}, {"href": f"{P_FORM}.html", "label": "Tube end forming machines"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "band-saw.html", "label": "Band saws"}, {"href": "double-column-band-saws.html", "label": "Bekamak double-column band saws"}]
     write_category(P_NOTCH, {**PAGES[P_NOTCH], "related_pages": related_notch, "related_title": "More tube machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Tube notchers"})
-    write_category(P_FORM, {**PAGES[P_FORM], "related_pages": related_form, "related_title": "More tube machinery from NovoTech"}, FAMILIES, SET, SECTION, extra={"nav_label": "Tube end formers"})
+    write_category(P_FORM, {**PAGES[P_FORM], "related_pages": related_form, "related_title": "More tube machinery from NovoTech"}, FAMILIES + WT_FAMILIES, SET, SECTION,
+                   extra={"nav_label": "Tube end formers", "catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_WT],
+                          "hero_brand_line": "İşitan end formers are made in Turkey by İşitan Makine; the Wecotech machines in Switzerland by Wecotech AG. All sold, installed and supported in Canada by NovoTech.",
+                          "origin_feature": {"title": "Made in Turkey and Switzerland", "text": "İşitan has built sheet-metal and tube machinery in Bursa since 1959; Wecotech AG builds tube end forming machines in Switzerland for the exhaust, ventilation and automotive industries — Siemens controls, Bosch Rexroth hydraulics and servo drives, CE-certified."}})
     write_category(P_SAW, {**PAGES[P_SAW], "related_pages": related_saw, "related_title": "More cutting machinery from NovoTech"}, FAMILIES, SET, SECTION,
                    extra={"nav_label": "Cold saws", "catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_BK],
                           "hero_brand_line": "İşitan circular cold saws are made in Turkey by İşitan Makine; the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",

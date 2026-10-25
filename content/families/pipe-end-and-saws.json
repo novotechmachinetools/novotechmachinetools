@@ -6,7 +6,27 @@
   "isitan-sfc-350-vx",
   "isitan-sfc-v",
   "bekamak-bmdo-xs",
-  "bekamak-bmdo-cs"
+  "bekamak-bmdo-cs",
+  "wt-tubex",
+  "wt-tubin",
+  "wt-tubepress",
+  "wt-tubepunch",
+  "wt-tubex-u",
+  "wt-tubin-u",
+  "wt-tubax-u",
+  "wt-tubax-rotary",
+  "wt-tubax-multi",
+  "wt-tubiroll",
+  "wt-tubimatic-c",
+  "wt-tubimatic-io80",
+  "wt-tubimatic-io160",
+  "wt-tubex-io-s",
+  "wt-wecomatic-200",
+  "wt-wecomatic-speed",
+  "wt-flanging-cell",
+  "wt-tubecut",
+  "wt-tubeshear",
+  "wt-rotobrush"
  ],
  "families": {
   "isitan-pn": {
@@ -1359,6 +1379,4097 @@
    },
    "headline": "Tube and bar Ø3/4″ to Ø4″ (20 – 100 mm) · HSS blades · servo gripper feed · touch screen",
    "group": "bekamak-circular"
+  },
+  "wt-tubex": {
+   "id": "wt-tubex",
+   "brand": "wecotech",
+   "name": "Tubex compact tube end expander, Ø3/4″ to 23.6″",
+   "short": "Tubex expander",
+   "models_label": "Tubex · Ø20 – 600 mm",
+   "summary": "The entry-level expander: a vertical hydraulic unit in a compact housing that expands, sizes and calibrates tube ends from Ø3/4″ to Ø23.6″ with a cone-driven segmented tool — 2.2 US tons of lifting force on a 3.9″ stroke, about two seconds a cycle. Rings and tubes are expanded, calibrated round after bending or welding with an oval tool, and joined. A basic expansion tool covers Ø20 – 70 mm; plastic top jaws take the range to Ø600 mm. Touchscreen programming, a longer stroke, a horizontal version and a slot punching unit are options.",
+   "features": [
+    "Expansion and calibration of tube ends Ø3/4″ – 23.6″ (20 – 600 mm), wall to 5/32″ (4 mm)",
+    "21 US tons (19 t) lifting force · 3.9″ (100 mm) axial stroke · ~2 s cycle",
+    "Exclusive cone expansion unit with quick-change flange for the basic tool",
+    "Hardened Ø8.3″ (210 mm) tube supporting table",
+    "Siemens PLC; set-up mode (forming stroke while the foot switch is pressed) and production mode (one tap starts the cycle)",
+    "Pre-selectable number of forming and calibrating steps",
+    "Forward and return stroke set on a hand wheel with scale",
+    "Compact housing with the electrics and hydraulics built in",
+    "Bosch Rexroth 24 V valves; energy-saving feature; safety foot switch"
+   ],
+   "optional": [
+    "4″ colour touchscreen with position sensor: macro programming, 200 numerical programs, log-in levels, workpiece and hours counters, offset",
+    "5.9″ (150 mm) axial stroke with Ø26 mm expansion per stroke",
+    "Horizontal version",
+    "Ø18.9″ (480 mm) steel supporting table",
+    "Slot punching unit",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubex",
+    "wt-tubex-horizontal",
+    "wt-tubex-table",
+    "wt-tubex-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubex",
+      "sub": "Compact tube end expander",
+      "models": [
+       "Tubex"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 23.6″ (20 – 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm) (150 mm optional)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm) · piston Ø100 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "21 US tons (19 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Expansion per stroke (5° cone)",
+        "sub": "",
+        "cells": [
+         "Ø max 0.67″ (17 mm) (Ø26 mm with the 150 mm stroke)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~2 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "13 US gal (50 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "3.4 gpm (13 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "3,480 psi (240 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (horizontal version optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "45 × 21 × 35″ (1,140 × 530 × 880 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "882 lb (400 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubex",
+      "glance": [
+       "Ø0.8 – 23.6″ (20 – 600 mm)",
+       "3.9″ (100 mm) (150 mm optional)",
+       "21 US tons (19 t)",
+       "~2 s",
+       "882 lb (400 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-easy"
+  },
+  "wt-tubin": {
+   "id": "wt-tubin",
+   "brand": "wecotech",
+   "name": "Tubin compact tube end reducers, Ø3/8″ to 7.5″",
+   "short": "Tubin reducer",
+   "models_label": "Tubin 150 · Tubin 200",
+   "summary": "The Tubin reduces (impands) tube ends with collet-type top jaws closed by a cone: Ø3/8″ to 5.5″ on the Tubin 150, to 7.5″ on the Tubin 200, up to 0.55″ reduction per stroke on 5/32″ wall. The same compact vertical housing, 21 US ton hydraulic unit and foot-switch control as the Tubex; calibration of bent or welded ends and ring and tube joining are its other jobs. Touchscreen control and a horizontal version are optional.",
+   "features": [
+    "Reduction and calibration Ø3/8″ – 5.5″ (10 – 140 mm) or Ø3/8″ – 7.5″ (10 – 190 mm), wall to 5/32″ (4 mm)",
+    "21 US tons (19 t) · 3.9″ (100 mm) stroke · ~4 s cycle",
+    "Compact impanding unit with tool holder for the top jaws",
+    "Siemens PLC; set-up mode (forming stroke while the foot switch is pressed) and production mode (one tap starts the cycle)",
+    "Pre-selectable number of forming and calibrating steps",
+    "Forward and return stroke set on a hand wheel with scale",
+    "Compact housing with the electrics and hydraulics built in",
+    "Bosch Rexroth 24 V valves; energy-saving feature; safety foot switch"
+   ],
+   "optional": [
+    "4″ colour touchscreen with position sensor: macro programming, 200 numerical programs, log-in levels, workpiece and hours counters, offset",
+    "Horizontal version",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubin",
+    "wt-tubin-horizontal",
+    "wt-tubin-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubin",
+      "sub": "Compact tube end reducer (impander)",
+      "models": [
+       "Tubin 150",
+       "Tubin 200"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 5.5″ (10 – 140 mm)",
+         "Ø0.4 – 7.5″ (10 – 190 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm) · piston Ø100 mm",
+         "3.9″ (100 mm) · piston Ø100 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "21 US tons (19 t)",
+         "21 US tons (19 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Reduction per stroke",
+        "sub": "",
+        "cells": [
+         "Ø max 0.55″ (14 mm)",
+         "Ø max 0.55″ (14 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~4 s",
+         "~4 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "13 US gal (50 L)",
+         "13 US gal (50 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "3.4 gpm (13 L/min)",
+         "3.4 gpm (13 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "3,480 psi (240 bar)",
+         "3,480 psi (240 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (horizontal version optional)",
+         "vertical (horizontal version optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "37 × 22 × 34″ (930 × 570 × 870 mm)",
+         "37 × 22 × 34″ (930 × 570 × 870 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "992 lb (450 kg)",
+         "992 lb (450 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubin 150",
+      "glance": [
+       "Ø0.4 – 5.5″ (10 – 140 mm)",
+       "3.9″ (100 mm)",
+       "21 US tons (19 t)",
+       "~4 s",
+       "992 lb (450 kg)"
+      ]
+     },
+     {
+      "name": "Tubin 200",
+      "glance": [
+       "Ø0.4 – 7.5″ (10 – 190 mm)",
+       "3.9″ (100 mm)",
+       "21 US tons (19 t)",
+       "~4 s",
+       "992 lb (450 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-easy"
+  },
+  "wt-tubepress": {
+   "id": "wt-tubepress",
+   "brand": "wecotech",
+   "name": "Tubepress tube straightening press, Ø3/4″ to 6.3″",
+   "short": "Tubepress",
+   "models_label": "Tubepress · Ø20 – 160 mm",
+   "summary": "Bent and welded tubes go out of round; the Tubepress presses them round again between a tool housing and an adjustable depth stop so the end former's tool fits and the joint seals. Ø3/4″ to 6.3″ tube, 21 US tons on a 5.9″ stroke, about two seconds a cycle, in a compact housing with the hydraulics built in.",
+   "features": [
+    "Straightening of non-round tube Ø3/4″ – 6.3″ (20 – 160 mm) after bending or welding",
+    "21 US tons (19 t) · 5.9″ (150 mm) stroke · ~2 s cycle",
+    "Tool housing with adjustable depth stop",
+    "Forward and return stroke set on a hand wheel with scale",
+    "Compact housing with the electrics and hydraulics built in",
+    "Bosch Rexroth 24 V valves; energy-saving feature; safety foot switch"
+   ],
+   "optional": [
+    "Special electrical connection; fan in the control cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubepress",
+    "wt-tubepress-process",
+    "wt-tubepress-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubepress",
+      "sub": "Tube straightening press",
+      "models": [
+       "Tubepress"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 6.3″ (20 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "adjustable depth stop"
+        ],
+        "key": true
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm) · piston Ø100 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "21 US tons (19 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~2 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "13 US gal (50 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "3.4 gpm (13 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "3,480 psi (240 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "30 × 22 × 53″ (750 × 550 × 1,350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "573 lb (260 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubepress",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm)",
+       "adjustable depth stop",
+       "21 US tons (19 t)",
+       "~2 s",
+       "573 lb (260 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-easy"
+  },
+  "wt-tubepunch": {
+   "id": "wt-tubepunch",
+   "brand": "wecotech",
+   "name": "Tubepunch tube end punching unit, from Ø3/4″",
+   "short": "Tubepunch",
+   "models_label": "Tubepunch · from Ø20 mm",
+   "summary": "A compact horizontal punching unit for tube ends: single or multiple slots — straight, Torca, parallel or perpendicular to the axis — and round holes around the circumference, with a punch-and-die interface for tooling made to the part. 10 US tons on a 1/2″ punch stroke in 0.3 s, with an adjustable stop plate for the punching length; built as the auxiliary machine beside an expander or reducer.",
+   "features": [
+    "Slots and holes in tube ends from Ø3/4″ (20 mm), wall to 5/32″ (4 mm)",
+    "10 US tons (9 t) · 1/2″ (13 mm) punch stroke · ~0.3 s per punch",
+    "Punch and die interface (tooling to the part); adjustable punching length by stop plate",
+    "Compact housing with the electrics and hydraulics built in; foot switch"
+   ],
+   "optional": [
+    "Special electrical connection; fan in the control cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubepunch",
+    "wt-tubepunch-unit",
+    "wt-tubepunch-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubepunch",
+      "sub": "Tube end punching unit",
+      "models": [
+       "Tubepunch"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "from 0.8″ (20 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punch stroke",
+        "sub": "",
+        "cells": [
+         "0.51″ (13 mm) · piston Ø70 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "10 US tons (9 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~0.3 s per punch"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "13 US gal (50 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "3.4 gpm (13 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "3,480 psi (240 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 20 × 47″ (700 × 500 × 1,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "661 lb (300 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubepunch",
+      "glance": [
+       "from 0.8″ (20 mm)",
+       "—",
+       "10 US tons (9 t)",
+       "~0.3 s per punch",
+       "661 lb (300 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-easy"
+  },
+  "wt-tubex-u": {
+   "id": "wt-tubex-u",
+   "brand": "wecotech",
+   "name": "Tubex-U universal production expander, from Ø3/4″",
+   "short": "Tubex-U",
+   "models_label": "Tubex-U · from Ø20 mm",
+   "summary": "The all-purpose production expander: a modular HW-Flex housing with the hydraulic unit bolted on, 26 US tons on a 5.9″ stroke (37 US tons with the Ø120 piston), expansion tools in 100 to 400 mm lengths for wall to 5/16″ and a quick-change interface for the mandrel. A 4″ touchscreen on a pivot arm with macro programming and 2,000 program memory is standard; 7″ touchscreen, remote maintenance, heat exchangers, the 15 HP pump and a horizontal version are options.",
+   "features": [
+    "Expansion from Ø3/4″ (20 mm), supporting table to Ø19.7″ (500 mm), wall to 5/16″ (8 mm)",
+    "26 US tons (24 t) · 5.9″ (150 mm) stroke · Ø1.42″ (36 mm) expansion per stroke · ~3 s",
+    "Standard tool lengths 3.9 / 5.9 / 7.9 / 11.8 / 15.7″ (100 – 400 mm)",
+    "Quick-change flange for the basic tool and quick-change interface for the expansion mandrel",
+    "Hardened tube supporting table; vertical working position",
+    "Siemens PLC with 4″ colour touchscreen on a pivot arm and position sensor: macro programming, set-up / manual / production modes, log-in levels, workpiece and hours counters, offset",
+    "HW-Flex universal housing with the hydraulic unit bolted on and room in the electrical cabinet",
+    "Bosch Rexroth 24 V valves; energy-saving feature; safety foot switch"
+   ],
+   "optional": [
+    "7″ colour touchscreen, 200 alphanumerical programs, USB program transfer, remote maintenance module, program protection key switch",
+    "Digital I/O and Profisafe interfaces; lubricant, oil level / temperature and filter monitors",
+    "Oil / air or oil / water heat exchanger; 15 HP (11 kW) power increase with 25 L/min pump",
+    "Air-conditioned control cabinet; individually labelled cables; special electrical connection",
+    "Ø120 mm piston, 37 US tons (34 t)",
+    "Horizontal version; Ø39.4″ (1,000 mm) supporting table",
+    "Central lubrication (SKF) with air service unit (Festo); bayonet quick-change for the cone",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubex-u",
+    "wt-tubex-u-horizontal",
+    "wt-tubex-u-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubex-U",
+      "sub": "Universal production expander",
+      "models": [
+       "Tubex-U"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "from 0.8″ (20 mm) · supporting table to Ø19.7″ (500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "100 / 150 / 200 / 300 / 400 mm standard tool lengths (3.9 – 15.7″)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.31″ (8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm) · piston Ø100 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "26 US tons (24 t) · 37 US tons (34 t) with the Ø120 piston option"
+        ],
+        "key": true
+       },
+       {
+        "label": "Expansion per stroke (7° cone)",
+        "sub": "",
+        "cells": [
+         "Ø max 1.42″ (36 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~3 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "17 US gal (63 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "4.2 gpm (16 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "4,350 psi (300 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (horizontal version optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "47 × 34 × 37″ (1,200 × 875 × 950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,323 lb (600 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubex-U",
+      "glance": [
+       "from 0.8″ (20 mm) · supporting table to Ø19.7″ (500 mm)",
+       "100 / 150 / 200 / 300 / 400 mm standard tool lengths (3.9 – 15.7″)",
+       "26 US tons (24 t) · 37 US tons (34 t) with the Ø120 piston option",
+       "~3 s",
+       "1,323 lb (600 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-universal"
+  },
+  "wt-tubin-u": {
+   "id": "wt-tubin-u",
+   "brand": "wecotech",
+   "name": "Tubin-U universal production reducers, Ø3/8″ to 7.5″",
+   "short": "Tubin-U",
+   "models_label": "Tubin-U 150 · Tubin-U 200",
+   "summary": "The production impander in the same HW-Flex housing as the Tubex-U: Ø3/8″ to 5.5″ or 7.5″ tube reduced up to 0.83″ per stroke on wall to 5/16″, 26 US tons on a 5.9″ stroke, three-second cycles, touchscreen macro programming. Ø120 and Ø160 pistons (37 and 66 US tons), a 7.9″ forming length and a horizontal version are options.",
+   "features": [
+    "Reduction Ø3/8″ – 5.5″ (10 – 140 mm) or Ø3/8″ – 7.5″ (10 – 190 mm), wall to 5/16″ (8 mm)",
+    "26 US tons (24 t) · 5.9″ (150 mm) stroke · Ø0.83″ (21 mm) reduction per stroke · ~3 s",
+    "Impanding unit on the HW-Flex universal housing; vertical working position",
+    "Siemens PLC with 4″ colour touchscreen on a pivot arm and position sensor: macro programming, set-up / manual / production modes, log-in levels, workpiece and hours counters, offset",
+    "HW-Flex universal housing with the hydraulic unit bolted on and room in the electrical cabinet",
+    "Bosch Rexroth 24 V valves; energy-saving feature; safety foot switch"
+   ],
+   "optional": [
+    "7″ colour touchscreen, 200 alphanumerical programs, USB program transfer, remote maintenance module, program protection key switch",
+    "Digital I/O and Profisafe interfaces; lubricant, oil level / temperature and filter monitors",
+    "Oil / air or oil / water heat exchanger; 15 HP (11 kW) power increase with 25 L/min pump",
+    "Air-conditioned control cabinet; individually labelled cables; special electrical connection",
+    "Ø120 mm piston, 37 US tons (34 t), or Ø160 mm piston, 66 US tons (60 t)",
+    "Forming length 7.9″ (200 mm); horizontal version",
+    "Central lubrication (SKF) with air service unit (Festo)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubin-u",
+    "wt-tubin-u-horizontal",
+    "wt-tubin-u-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubin-U",
+      "sub": "Universal production reducer (impander)",
+      "models": [
+       "Tubin-U 150",
+       "Tubin-U 200"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 5.5″ (10 – 140 mm)",
+         "Ø0.4 – 7.5″ (10 – 190 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm) (200 mm optional)",
+         "3.9″ (100 mm) (200 mm optional)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.31″ (8 mm)",
+         "0.31″ (8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm) · piston Ø100 mm",
+         "5.9″ (150 mm) · piston Ø100 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "26 US tons (24 t) · 34 or 60 t pistons optional",
+         "26 US tons (24 t) · 34 or 60 t pistons optional"
+        ],
+        "key": true
+       },
+       {
+        "label": "Reduction per stroke",
+        "sub": "",
+        "cells": [
+         "Ø max 0.83″ (21 mm)",
+         "Ø max 0.83″ (21 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~3 s",
+         "~3 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "17 US gal (63 L)",
+         "17 US gal (63 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "4.2 gpm (16 L/min)",
+         "4.2 gpm (16 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "4,350 psi (300 bar)",
+         "4,350 psi (300 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)",
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (horizontal version optional)",
+         "vertical (horizontal version optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "47 × 34 × 37″ (1,200 × 875 × 950 mm)",
+         "47 × 34 × 37″ (1,200 × 875 × 950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,433 lb (650 kg)",
+         "1,433 lb (650 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubin-U 150",
+      "glance": [
+       "Ø0.4 – 5.5″ (10 – 140 mm)",
+       "3.9″ (100 mm) (200 mm optional)",
+       "26 US tons (24 t) · 34 or 60 t pistons optional",
+       "~3 s",
+       "1,433 lb (650 kg)"
+      ]
+     },
+     {
+      "name": "Tubin-U 200",
+      "glance": [
+       "Ø0.4 – 7.5″ (10 – 190 mm)",
+       "3.9″ (100 mm) (200 mm optional)",
+       "26 US tons (24 t) · 34 or 60 t pistons optional",
+       "~3 s",
+       "1,433 lb (650 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-universal"
+  },
+  "wt-tubax-u": {
+   "id": "wt-tubax-u",
+   "brand": "wecotech",
+   "name": "Tubax-U axial forming machines with tube clamping, Ø3/8″ to 11.8″",
+   "short": "Tubax-U",
+   "models_label": "Tubax-U 200 · Tubax-U 300",
+   "summary": "A horizontal axial former that clamps the tube in jaws and pushes a forming tool into the end: beads, flares, collars and reductions on tube to Ø7.9″ (variant 200) or Ø11.8″ (variant 300), with 26 or 37 US tons on the forming axis and 37 or 75 US tons of clamping. Built for all-purpose series production on the HW-Flex housing with a safety cover and hand-wheel stroke adjustment.",
+   "features": [
+    "Axial forming on clamped tube Ø3/8″ – 7.9″ (10 – 200 mm) or Ø3/8″ – 11.8″ (10 – 300 mm), wall to 5/32″ (4 mm)",
+    "Forming 26 / 37 US tons on a 5.9″ (150 mm) stroke · clamping 37 / 75 US tons on a 3.9″ (100 mm) stroke · ~5 / ~8 s",
+    "Forming unit and clamping unit each with a tool interface; safety cover; horizontal working position",
+    "Forward and return stroke adjustable by hand wheel",
+    "HW-Flex universal housing with the hydraulic unit bolted on and room in the electrical cabinet",
+    "Bosch Rexroth 24 V valves; energy-saving feature; safety foot switch"
+   ],
+   "optional": [
+    "Workpiece and hours counters, remote maintenance, digital I/O and Profisafe, oil monitors",
+    "Oil / air or oil / water heat exchanger; 15 HP (11 kW) power increase",
+    "Two-hand station on a free-standing console; lubricant saving system",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubax-u",
+    "wt-tubax-u-300",
+    "wt-tubax-u-diagram",
+    "wt-tubax-u-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubax-U",
+      "sub": "Axial forming machine with tube clamping",
+      "models": [
+       "Tubax-U 200",
+       "Tubax-U 300"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 7.9″ (10 – 200 mm)",
+         "Ø0.4 – 11.8″ (10 – 300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max clamping length",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "26 US tons (24 t) (Ø100 piston)",
+         "37 US tons (34 t) (Ø120 piston)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Clamping stroke / force",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm) · 37 US tons (34 t)",
+         "3.9″ (100 mm) · 75 US tons (68 t) (2 × Ø120)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~5 s",
+         "~8 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "17 US gal (63 L)",
+         "17 US gal (63 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "4.2 gpm (16 L/min)",
+         "4.2 gpm (16 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "4,350 psi (300 bar)",
+         "4,350 psi (300 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)",
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal",
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "47 × 34 × 55″ (1,200 × 875 × 1,400 mm)",
+         "47 × 34 × 55″ (1,200 × 875 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,323 lb (600 kg)",
+         "1,323 lb (600 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubax-U 200",
+      "glance": [
+       "Ø0.4 – 7.9″ (10 – 200 mm)",
+       "3.9″ (100 mm)",
+       "26 US tons (24 t) (Ø100 piston)",
+       "~5 s",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "Tubax-U 300",
+      "glance": [
+       "Ø0.4 – 11.8″ (10 – 300 mm)",
+       "7.9″ (200 mm)",
+       "37 US tons (34 t) (Ø120 piston)",
+       "~8 s",
+       "1,323 lb (600 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-universal"
+  },
+  "wt-tubax-rotary": {
+   "id": "wt-tubax-rotary",
+   "brand": "wecotech",
+   "name": "Tubax-Rotary Electra servo rotary forming machines, Ø1.6″ to 15.7″",
+   "short": "Tubax-Rotary Electra",
+   "models_label": "Tubax-Rotary 200 · Tubax-Rotary 400",
+   "summary": "A rotating forming tool is moved axially against the clamped tube by servo motors and gears: mirror-smooth sealing faces below Ra 0.2, roll collars, beads and flanges formed with high, precisely applied force. Tube Ø1.6″ to 7.9″ with 5.9″ axial stroke on the 200, Ø1.6″ to 15.7″ with 11.8″ stroke on the 400; all-electric, with central lubrication and tooling holders for rolling head and clamping jaws.",
+   "features": [
+    "Rotary forming of sealing faces, collars, beads and flanges on tube Ø1.6″ – 7.9″ (40 – 200 mm) or Ø1.6″ – 15.7″ (40 – 400 mm)",
+    "Servo motor and gear on the rolling unit and on the clamping unit; surface quality < Ra 0.2",
+    "Axial stroke 5.9″ / 11.8″ (150 / 300 mm) · clamping stroke 5.9″ (150 mm) · ~10 / ~20 s",
+    "Central lubrication (SKF) with air service unit (Festo); horizontal working position; HW-Flex housing"
+   ],
+   "optional": [
+    "Workpiece and hours counters, remote maintenance, program key switch, digital I/O and Profisafe",
+    "LED status light; two-hand console; safety light curtain for short tubes; air-conditioned cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubax-rotary",
+    "wt-tubax-rotary-400",
+    "wt-tubax-rotary-diagram",
+    "wt-tubax-rotary-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubax-Rotary Electra",
+      "sub": "Servo-electric rotary forming machine",
+      "models": [
+       "Tubax-Rotary 200",
+       "Tubax-Rotary 400"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø1.6 – 7.9″ (40 – 200 mm)",
+         "Ø1.6 – 15.7″ (40 – 400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max clamping length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "servo-electric axial and clamping drives",
+         "servo-electric axial and clamping drives"
+        ],
+        "key": true
+       },
+       {
+        "label": "Surface quality",
+        "sub": "",
+        "cells": [
+         "< Ra 0.2 on sealing faces",
+         "< Ra 0.2 on sealing faces"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~10 s",
+         "~20 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal",
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "71 × 22 × 74″ (1,800 × 550 × 1,880 mm)",
+         "71 × 22 × 74″ (1,800 × 550 × 1,880 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,307 lb (1,500 kg)",
+         "3,307 lb (1,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubax-Rotary 200",
+      "glance": [
+       "Ø1.6 – 7.9″ (40 – 200 mm)",
+       "—",
+       "servo-electric axial and clamping drives",
+       "~10 s",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "Tubax-Rotary 400",
+      "glance": [
+       "Ø1.6 – 15.7″ (40 – 400 mm)",
+       "—",
+       "servo-electric axial and clamping drives",
+       "~20 s",
+       "3,307 lb (1,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-universal"
+  },
+  "wt-tubax-multi": {
+   "id": "wt-tubax-multi",
+   "brand": "wecotech",
+   "name": "Tubax-Multi Electra multi-station forming centre, Ø3/8″ to 6.3″",
+   "short": "Tubax-Multi Electra",
+   "models_label": "Tubax-Multi · Ø10 – 160 mm",
+   "summary": "Five axial mandrels or milling heads on a servo tool changer form the tube end in one clamping: expand, reduce, bead and machine without re-handling the part. 40 US tons on an 11.8″ axial stroke and 40 US tons of clamping, tube Ø3/8″ to 6.3″, clamping length to 7.1″. Milling, rolling (radial) and forming stations are configured to the part family.",
+   "features": [
+    "Five exchangeable axial mandrels or milling heads on a servo-driven tool changer",
+    "Tube Ø3/8″ – 6.3″ (10 – 160 mm), clamping length to 7.1″ (180 mm)",
+    "Axial stroke 11.8″ (300 mm) · 40 US tons (36 t); clamping stroke 3.9″ (100 mm) · 40 US tons",
+    "HW-Flex housing with tube clamping unit and tooling interface; horizontal working position"
+   ],
+   "optional": [
+    "Milling station with spindle, tool mount and motor",
+    "Rolling station with radial movement, rolling spindle and drives",
+    "Additional forming station; chip conveyor; drip pan",
+    "LED status light; two-hand console; air-conditioned cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubax-multi",
+    "wt-tubax-multi-part",
+    "wt-tubax-multi-part2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubax-Multi Electra",
+      "sub": "Multi-station axial forming centre",
+      "models": [
+       "Tubax-Multi"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 6.3″ (10 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max clamping length",
+        "sub": "",
+        "cells": [
+         "7.1″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke / force",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm) · 40 US tons (36 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping stroke / force",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm) · 40 US tons (36 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "40 US tons (36 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tool stations",
+        "sub": "",
+        "cells": [
+         "5 axial mandrels or milling heads on a servo tool changer"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~40 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "79 × 87 × 83″ (2,000 × 2,200 × 2,100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "8,818 lb (4,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubax-Multi",
+      "glance": [
+       "Ø0.4 – 6.3″ (10 – 160 mm)",
+       "—",
+       "40 US tons (36 t)",
+       "~40 s",
+       "8,818 lb (4,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-universal"
+  },
+  "wt-tubiroll": {
+   "id": "wt-tubiroll",
+   "brand": "wecotech",
+   "name": "Tubiroll-2R automatic beading and flanging machines, Ø1.6″ to 39.4″",
+   "short": "Tubiroll-2R",
+   "models_label": "Tubiroll-2R 600 · Tubiroll-2R 1000",
+   "summary": "A fully automatic beading machine for thin-wall tube and duct: two rolls bead or flange tube from Ø1.6″ to 23.6″ (variant 600) or 39.4″ (variant 1000) in 0.08″ wall, beading depth to 0.6″, with hydraulic roll drive, adjustable feed and a safety guard with light curtain. The operator loads and unloads while the machine cycles — about 8 s for a 10 mm bead on Ø200 mm.",
+   "features": [
+    "Beading and flanging of tube Ø1.6″ – 23.6″ (40 – 600 mm) or Ø1.6″ – 39.4″ (40 – 1,000 mm), wall to 0.08″ (2 mm)",
+    "Rolling length 3.9″ (100 mm), beading depth to 0.6″ (15 mm); peripheral speed 0 – 246 ft/min",
+    "Hollow tool holder for the forming rolls; safety guard with light curtain",
+    "Hydraulic roll drive and feed, each manually adjustable; pneumatic service unit (Festo); Siemens PLC with rapid / feed potentiometers"
+   ],
+   "optional": [
+    "Static driving-roll support for long tubes; pneumatic centring and blocking supports for tube to 1,000 mm long and Ø1,400 mm",
+    "Rolling length increased to 7.9″ (200 mm)",
+    "Oil / air or oil / water heat exchanger; drip pan with foot plate",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubiroll",
+    "wt-tubiroll-diagram",
+    "wt-tubiroll-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubiroll-2R",
+      "sub": "Automatic beading and flanging machine",
+      "models": [
+       "Tubiroll-2R 600",
+       "Tubiroll-2R 1000"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø1.6 – 23.6″ (40 – 600 mm)",
+         "Ø1.6 – 39.4″ (40 – 1000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm) rolling length (200 mm optional)",
+         "3.9″ (100 mm) rolling length (200 mm optional)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.079″ (2 mm)",
+         "0.079″ (2 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max beading depth",
+        "sub": "",
+        "cells": [
+         "0.59″ (15 mm)",
+         "0.59″ (15 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Peripheral speed",
+        "sub": "",
+        "cells": [
+         "0 – 246 ft/min (0 – 75 m/min)",
+         "0 – 246 ft/min (0 – 75 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roller feed",
+        "sub": "",
+        "cells": [
+         "0 – 0.12 in/s (3 mm/s) · rapid 0.47 in/s (12 mm/s)",
+         "0 – 0.12 in/s (3 mm/s) · rapid 0.47 in/s (12 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "—",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~8 s (10 mm bead on Ø200 mm)",
+         "~8 s (10 mm bead on Ø200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "17 US gal (63 L)",
+         "17 US gal (63 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll drive",
+        "sub": "",
+        "cells": [
+         "0 – 5.3 gpm (20 L/min) at 2,030 psi (140 bar)",
+         "0 – 5.3 gpm (20 L/min) at 2,030 psi (140 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)",
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Compressed air",
+        "sub": "",
+        "cells": [
+         "87 psi (6 bar)",
+         "87 psi (6 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "49 × 35 × 102″ (1,250 × 880 × 2,600 mm)",
+         "49 × 35 × 102″ (1,250 × 880 × 2,600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,102 lb (500 kg)",
+         "1,102 lb (500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubiroll-2R 600",
+      "glance": [
+       "Ø1.6 – 23.6″ (40 – 600 mm)",
+       "3.9″ (100 mm) rolling length (200 mm optional)",
+       "—",
+       "~8 s (10 mm bead on Ø200 mm)",
+       "1,102 lb (500 kg)"
+      ]
+     },
+     {
+      "name": "Tubiroll-2R 1000",
+      "glance": [
+       "Ø1.6 – 39.4″ (40 – 1000 mm)",
+       "3.9″ (100 mm) rolling length (200 mm optional)",
+       "—",
+       "~8 s (10 mm bead on Ø200 mm)",
+       "1,102 lb (500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-universal"
+  },
+  "wt-tubimatic-c": {
+   "id": "wt-tubimatic-c",
+   "brand": "wecotech",
+   "name": "Tubimatic C end formers for standard C-tools, Ø3/8″ to 6.3″",
+   "short": "Tubimatic C",
+   "models_label": "C 80 UNO · C 80 TRE · C 160 UNO",
+   "summary": "Expanders and reducers built around the commercially available C-tools of the exhaust and tube trade, so existing tooling carries over: the compact C 80 UNO with one tool station for Ø3/4″ – 3.1″ expansion and Ø3/8″ – 3.1″ reduction, the C 80 TRE with three stations and 26 US tons for three forming steps without a tool change, and the C 160 UNO for tube to Ø6.3″ with 37 US tons and a 5.9″ stroke. Horizontal working position; second and third tool holders, a slot punching unit and the Tubimatic-AX head are options.",
+   "features": [
+    "Compatible with commercially available C-tools; expansion Ø3/4″ – 3.1″ / 6.3″, reduction Ø3/8″ – 3.1″ / 6.3″",
+    "C 80 UNO: 1 station, 21 US tons, 3.1″ + 0.8″ free stroke · C 80 TRE: 3 stations, 26 US tons · C 160 UNO: 1 station, 37 US tons, 5.9″ stroke",
+    "Horizontal working position; forward and return stroke on a hand wheel (C 80 UNO)",
+    "C 80 TRE and C 160 UNO on the HW-Flex housing with 4″ touchscreen, macro programming and 200 programs"
+   ],
+   "optional": [
+    "Option DUE (2 tool holders) and TRE (3 tool holders) on the UNO machines; left / right / alternate forming selection",
+    "Ø120 mm piston, 37 US tons (34 t) on the C 80 TRE; crane for tool change on the C 160",
+    "Tubimatic-AX manufacturing head; slot punching unit",
+    "7″ touchscreen, USB, remote maintenance, Profisafe; heat exchangers; 15 HP power increase",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubimatic-c160",
+    "wt-tubimatic-c80tre",
+    "wt-tubimatic-c80uno",
+    "wt-tubimatic-c-diagram",
+    "wt-tubimatic-c-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubimatic C",
+      "sub": "For commercially available C-tools",
+      "models": [
+       "Tubimatic C 80 UNO",
+       "Tubimatic C 80 TRE",
+       "Tubimatic C 160 UNO"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+         "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+         "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.5″ (90 mm)",
+         "3.5″ (90 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)",
+         "0.31″ (8 mm)",
+         "0.31″ (8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axial stroke",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm) working + 0.8″ (20 mm) free",
+         "3.1″ (80 mm) working + 0.8″ (20 mm) free",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "21 US tons (19 t)",
+         "26 US tons (24 t)",
+         "37 US tons (34 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Expansion / reduction per stroke",
+        "sub": "",
+        "cells": [
+         "Ø ~0.28″ (7 mm)",
+         "Ø ~0.28″ (7 mm)",
+         "Ø 1.02″ (26 mm) / Ø 0.63″ (16 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool stations",
+        "sub": "",
+        "cells": [
+         "1 C-tool holder (2 with option DUE)",
+         "3 C-tool holders",
+         "1 C-tool holder (2 or 3 optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~4 s",
+         "~3 s",
+         "~3 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "13 US gal (50 L)",
+         "17 US gal (63 L)",
+         "17 US gal (63 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "3.4 gpm (13 L/min)",
+         "4.2 gpm (16 L/min)",
+         "5.3 gpm (20 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "3,480 psi (240 bar)",
+         "4,350 psi (300 bar)",
+         "4,350 psi (300 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)",
+         "7.5 HP (5.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal",
+         "horizontal",
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "27 × 20 × 53″ (680 × 520 × 1,350 mm)",
+         "36 × 48 × 57″ (920 × 1,210 × 1,450 mm)",
+         "36 × 39 × 59″ (920 × 1,000 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "992 lb (450 kg)",
+         "1,323 lb (600 kg)",
+         "1,102 lb (500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubimatic C 80 UNO",
+      "glance": [
+       "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+       "3.5″ (90 mm)",
+       "21 US tons (19 t)",
+       "~4 s",
+       "992 lb (450 kg)"
+      ]
+     },
+     {
+      "name": "Tubimatic C 80 TRE",
+      "glance": [
+       "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+       "3.5″ (90 mm)",
+       "26 US tons (24 t)",
+       "~3 s",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "Tubimatic C 160 UNO",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce",
+       "3.9″ (100 mm)",
+       "37 US tons (34 t)",
+       "~3 s",
+       "1,102 lb (500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-traditional"
+  },
+  "wt-tubimatic-io80": {
+   "id": "wt-tubimatic-io80",
+   "brand": "wecotech",
+   "name": "Tubimatic IO 80 inner / outer end formers for standard IO-tools, Ø3/8″ to 3.1″",
+   "short": "Tubimatic IO 80",
+   "models_label": "IO 80 · IO 80 Electra · IO-US 80 Electra",
+   "summary": "Production end formers with inner and outer tools that take the IO tooling already in the shop: the inner tool expands while the outer tool closes on the tube, so flares, double flares, beads and reductions are formed in one stroke with a quick set-up. Tube Ø3/4″ – 3.1″ expansion and Ø3/8″ – 3.1″ reduction, 3.1″ forming length, 27 US tons inner and outer. The IO 80 is hydraulic; the Electra versions are servo-electric with a 10 HP Bosch Rexroth drive, and the IO-US Electra adds a swivelling forming unit for automated cells.",
+   "features": [
+    "Compatible with commercially available IO-tools; inner and outer forming in one stroke",
+    "Expansion Ø3/4″ – 3.1″ (20 – 80 mm), reduction Ø3/8″ – 3.1″ (10 – 80 mm), wall to 5/32″ (4 mm)",
+    "Inner stroke 3.1″ (80 mm), outer stroke 3.1″ (80 mm, 110 mm to the tool-change position); 26 – 27 US tons inner and outer",
+    "HW-Flex housing, safety cover on the tool, horizontal working position; 4″ touchscreen with macro programming"
+   ],
+   "optional": [
+    "Option DUE: two separate forming units",
+    "200 alphanumerical programs, counters, remote maintenance, Profisafe, lubricant and oil monitors",
+    "IO 80: 37 US ton (34 t) inner and outer force, proportional valves, heat exchangers, 15 HP power increase",
+    "Drip pan under the forming unit; central lubrication (SKF / Festo) on the IO 80",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubimatic-io80",
+    "wt-tubimatic-io80-electra",
+    "wt-tubimatic-ious80",
+    "wt-tubimatic-io-diagram",
+    "wt-tubimatic-io-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubimatic IO 80",
+      "sub": "Inner / outer tool end formers for commercially available IO-tools",
+      "models": [
+       "Tubimatic IO 80",
+       "Tubimatic IO 80 Electra",
+       "Tubimatic IO-US 80 Electra"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+         "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+         "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner axial stroke",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outer axial stroke",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm) (110 mm to the tool-change position)",
+         "3.1″ (80 mm) (110 mm to the tool-change position)",
+         "3.1″ (80 mm) (110 mm to the tool-change position)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "26 US tons (24 t) inner and outer",
+         "28 US tons (25 t) inner and outer",
+         "28 US tons (25 t) inner and outer"
+        ],
+        "key": true
+       },
+       {
+        "label": "Expansion / reduction per stroke",
+        "sub": "",
+        "cells": [
+         "Ø ~0.55″ (14 mm) / Ø ~0.39″ (10 mm)",
+         "Ø ~0.55″ (14 mm) / Ø ~0.39″ (10 mm)",
+         "Ø ~0.55″ (14 mm) / Ø ~0.39″ (10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "hydraulic: 17 US gal (63 L), 5.3 gpm (20 L/min), 4,350 psi (300 bar), 10 HP (7.5 kW)",
+         "servo-electric, Bosch Rexroth 10 HP (7.5 kW)",
+         "servo-electric, Bosch Rexroth 10 HP (7.5 kW); swivelling forming unit"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~3 s",
+         "~5 s",
+         "~3 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal",
+         "horizontal",
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "49 × 31 × 49″ (1,250 × 800 × 1,250 mm)",
+         "59 × 24 × 47″ (1,500 × 600 × 1,200 mm)",
+         "59 × 24 × 59″ (1,500 × 600 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,323 lb (600 kg)",
+         "1,323 lb (600 kg)",
+         "2,205 lb (1,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubimatic IO 80",
+      "glance": [
+       "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+       "3.1″ (80 mm)",
+       "26 US tons (24 t) inner and outer",
+       "~3 s",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "Tubimatic IO 80 Electra",
+      "glance": [
+       "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+       "3.1″ (80 mm)",
+       "28 US tons (25 t) inner and outer",
+       "~5 s",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "Tubimatic IO-US 80 Electra",
+      "glance": [
+       "Ø0.8 – 3.1″ (20 – 80 mm) expand · Ø0.4 – 3.1″ (10 – 80 mm) reduce",
+       "3.1″ (80 mm)",
+       "28 US tons (25 t) inner and outer",
+       "~3 s",
+       "2,205 lb (1,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-traditional"
+  },
+  "wt-tubimatic-io160": {
+   "id": "wt-tubimatic-io160",
+   "brand": "wecotech",
+   "name": "Tubimatic IO 160 inner / outer end formers for standard IO-tools, Ø3/8″ to 6.3″",
+   "short": "Tubimatic IO 160",
+   "models_label": "IO 160 · IO 160 Electra · IO-US 160 Electra",
+   "summary": "The larger IO former: tube to Ø6.3″, 3.9″ forming length, 5.9″ inner and outer strokes and 37 US tons on both tools, with the same commercially available IO tooling. The hydraulic IO 160 takes wall to 5/16″ with a 15 HP power unit; the Electra versions run a 15 HP servo drive without hydraulics, and the IO-US Electra swivels the forming unit for integration in an automated line. A crane for tool change and a second forming unit (option DUE) are available.",
+   "features": [
+    "Compatible with commercially available IO-tools; inner and outer forming in one stroke",
+    "Expansion Ø3/4″ – 6.3″ (20 – 160 mm), reduction Ø3/8″ – 6.3″ (10 – 160 mm)",
+    "Inner and outer strokes 5.9″ (150 mm); 37 US tons (34 t) inner and outer; ~3 – 5 s cycle",
+    "HW-Flex housing, safety cover on the tool, horizontal working position; touchscreen with macro programming"
+   ],
+   "optional": [
+    "Option DUE: two separate forming units; crane for tool change",
+    "IO 160: power-regulated pump with proportional valves, heat exchangers",
+    "Counters, remote maintenance, Profisafe, lubricant and oil monitors; air-conditioned cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubimatic-io160",
+    "wt-tubimatic-io160-electra",
+    "wt-tubimatic-ious160",
+    "wt-tubimatic-io160-diagram",
+    "wt-tubimatic-io160-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubimatic IO 160",
+      "sub": "Inner / outer tool end formers for commercially available IO-tools",
+      "models": [
+       "Tubimatic IO 160",
+       "Tubimatic IO 160 Electra",
+       "Tubimatic IO-US 160 Electra"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce",
+         "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce",
+         "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.31″ (8 mm)",
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outer axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "37 US tons (34 t) inner and outer",
+         "37 US tons (34 t) inner and outer",
+         "37 US tons (34 t) inner and outer"
+        ],
+        "key": true
+       },
+       {
+        "label": "Expansion / reduction per stroke",
+        "sub": "",
+        "cells": [
+         "Ø ~0.55″ (14 mm) / Ø ~0.39″ (10 mm)",
+         "Ø ~0.55″ (14 mm) / Ø ~0.39″ (10 mm)",
+         "Ø ~0.55″ (14 mm) / Ø ~0.39″ (10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "hydraulic: 26 US gal (100 L), 6.6 gpm (25 L/min), 4,350 psi (300 bar), 15 HP (11 kW)",
+         "servo-electric, Bosch Rexroth 15 HP (11 kW)",
+         "servo-electric, Bosch Rexroth 15 HP (11 kW); swivelling forming unit"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~3 s",
+         "~5 s",
+         "~5 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal",
+         "horizontal",
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "75 × 31 × 47″ (1,900 × 800 × 1,200 mm)",
+         "98 × 24 × 47″ (2,500 × 600 × 1,200 mm)",
+         "91 × 31 × 61″ (2,300 × 800 × 1,550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,646 lb (1,200 kg)",
+         "2,646 lb (1,200 kg)",
+         "2,646 lb (1,200 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubimatic IO 160",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce",
+       "3.9″ (100 mm)",
+       "37 US tons (34 t) inner and outer",
+       "~3 s",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "Tubimatic IO 160 Electra",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce",
+       "3.9″ (100 mm)",
+       "37 US tons (34 t) inner and outer",
+       "~5 s",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "Tubimatic IO-US 160 Electra",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm) expand · Ø0.4 – 6.3″ (10 – 160 mm) reduce",
+       "3.9″ (100 mm)",
+       "37 US tons (34 t) inner and outer",
+       "~5 s",
+       "2,646 lb (1,200 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-traditional"
+  },
+  "wt-tubex-io-s": {
+   "id": "wt-tubex-io-s",
+   "brand": "wecotech",
+   "name": "Tubex IO-S combined inner / outer tube end formers, Ø3/4″ to 23.6″",
+   "short": "Tubex IO-S",
+   "models_label": "Tubex IO-S 200 · 400 · 600",
+   "summary": "The combined former for high degrees of forming: an inner expansion mandrel and 8, 16 or 24 radial outer pistons work together, so expansion, reduction, beading, flaring, flanging and embossing are formed in any position on round and shaped tube — exhaust components, ventilation parts, chimney elements. Three variants from Ø7.9″ to Ø23.6″ with 26, 37 or 67 US tons on the inner tool and 12 US tons on each outer piston; 12″ touchscreen, HV head for horizontal and vertical working and a light-curtain guard are options.",
+   "features": [
+    "Inner / outer forming on tube Ø3/4″ – 7.9″, 15.7″ or 23.6″ (20 – 200 / 400 / 600 mm), wall to 5/32″ (4 mm)",
+    "Inner tool 26 / 37 / 67 US tons with Ø1.42″ or 1.93″ forming stroke; outer tool Ø2.36″ radial stroke with 8 / 16 / 24 pistons of 12 US tons",
+    "Expansion, reduction, beading, flaring, flanging and embossing in every position on round and shaped tube",
+    "Vertical working position; HW-Flex housing with the hydraulic unit bolted on"
+   ],
+   "optional": [
+    "12″ colour touchscreen, 200 alphanumerical programs, counters, remote maintenance, Profisafe, oil monitors",
+    "HV head for horizontal and vertical working; force increase on the inner and outer tool",
+    "Safety guard with light curtain and mode selector; mechanically synchronised outer tools; bayonet quick-change for the cone",
+    "Heat exchangers; 15 HP power increase; drip pan; central lubrication",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubex-io-s",
+    "wt-tubex-io-s-guard",
+    "wt-tubex-io-s-diagram",
+    "wt-tubex-io-s-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubex IO-S",
+      "sub": "Combined inner / outer tube end former",
+      "models": [
+       "Tubex IO-S 200",
+       "Tubex IO-S 400",
+       "Tubex IO-S 600"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 7.9″ (20 – 200 mm)",
+         "Ø0.8 – 15.7″ (20 – 400 mm)",
+         "Ø0.8 – 23.6″ (20 – 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "26 US tons (24 t) inner (Ø100)",
+         "37 US tons (34 t) inner (Ø120)",
+         "67 US tons (61 t) inner (Ø160)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Inner tool forming stroke",
+        "sub": "",
+        "cells": [
+         "Ø max 1.42″ (36 mm)",
+         "Ø max 1.93″ (49 mm)",
+         "Ø max 1.93″ (49 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outer tool radial stroke / force",
+        "sub": "",
+        "cells": [
+         "Ø max 2.36″ (60 mm) · 8 × 12 US tons (11 t)",
+         "Ø max 2.36″ (60 mm) · 16 × 12 US tons (11 t)",
+         "Ø max 2.36″ (60 mm) · 24 × 12 US tons (11 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool interface inner / outer",
+        "sub": "",
+        "cells": [
+         "Ø150 / Ø280 mm",
+         "Ø190 / Ø480 mm",
+         "Ø270 / Ø680 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~30 s",
+         "~35 s",
+         "~40 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "17 US gal (63 L)",
+         "26 US gal (100 L)",
+         "26 US gal (100 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "5.3 gpm (20 L/min)",
+         "6.6 gpm (25 L/min)",
+         "6.6 gpm (25 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "4,350 psi (300 bar)",
+         "4,350 psi (300 bar)",
+         "4,350 psi (300 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (HV head for horizontal and vertical optional)",
+         "vertical (HV head for horizontal and vertical optional)",
+         "vertical (HV head for horizontal and vertical optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "63 × 33 × 43″ (1,600 × 850 × 1,100 mm) (variant 200)",
+         "63 × 33 × 43″ (1,600 × 850 × 1,100 mm) (variant 200)",
+         "63 × 33 × 43″ (1,600 × 850 × 1,100 mm) (variant 200)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,874 lb (850 kg) (variant 200)",
+         "1,874 lb (850 kg) (variant 200)",
+         "1,874 lb (850 kg) (variant 200)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubex IO-S 200",
+      "glance": [
+       "Ø0.8 – 7.9″ (20 – 200 mm)",
+       "3.9″ (100 mm)",
+       "26 US tons (24 t) inner (Ø100)",
+       "~30 s",
+       "1,874 lb (850 kg) (variant 200)"
+      ]
+     },
+     {
+      "name": "Tubex IO-S 400",
+      "glance": [
+       "Ø0.8 – 15.7″ (20 – 400 mm)",
+       "3.9″ (100 mm)",
+       "37 US tons (34 t) inner (Ø120)",
+       "~35 s",
+       "1,874 lb (850 kg) (variant 200)"
+      ]
+     },
+     {
+      "name": "Tubex IO-S 600",
+      "glance": [
+       "Ø0.8 – 23.6″ (20 – 600 mm)",
+       "3.9″ (100 mm)",
+       "67 US tons (61 t) inner (Ø160)",
+       "~40 s",
+       "1,874 lb (850 kg) (variant 200)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-weco"
+  },
+  "wt-wecomatic-200": {
+   "id": "wt-wecomatic-200",
+   "brand": "wecotech",
+   "name": "Wecomatic IO-S 200 CNC radial forming machine, Ø3/4″ to 7.9″",
+   "short": "Wecomatic IO-S 200",
+   "models_label": "Wecomatic IO-S 200",
+   "summary": "The flagship radial forming concept: CNC-controlled inner and outer tools with a programmable rotation of the inner tool in 10° steps, so the hardest forming tasks — multi-step expansions and reductions, beads, flares and flanges on exhaust and ventilation parts to Ø7.9″ — are programmed on the machine and run in about 15 s. Free-programmable CNC axes, a 287-litre power unit with heat exchanger, quick-change tool flanges and mechanically synchronised outer tools.",
+   "features": [
+    "CNC inner / outer forming on tube Ø3/4″ – 7.9″ (20 – 200 mm), wall to 5/32″ (4 mm); inner tool rotation programmable in 10° steps to 67.5°",
+    "Inner tool 20 US tons (18 t) with Ø1.42″ forming stroke; 8 outer pistons of 10 US tons with Ø2.36″ radial stroke",
+    "Quick-change flange for basic tool and mandrel; quick-change interface for the outer top jaws; synchronised outer tools",
+    "Separate low- and high-voltage cabinets; lubricant, oil level / temperature and filter monitors standard; vertical working position"
+   ],
+   "optional": [
+    "Pressure increase to 300 bar (up to +40 % force); HV head for horizontal and vertical working",
+    "Force increase on the inner and outer tool; safety guard with light curtain",
+    "Touchscreen on pivot arm; work-place lighting; LED status light; remote maintenance, Profisafe",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-wecomatic-200",
+    "wt-wecomatic-200-side",
+    "wt-wecomatic-200-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Wecomatic IO-S 200",
+      "sub": "CNC radial forming machine",
+      "models": [
+       "Wecomatic IO-S 200"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 7.9″ (20 – 200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "20 US tons (18 t) inner (Ø100)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Inner tool forming stroke",
+        "sub": "",
+        "cells": [
+         "Ø max 1.42″ (36 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outer tool radial stroke / force",
+        "sub": "",
+        "cells": [
+         "Ø max 2.36″ (60 mm) · 8 × 10 US tons (9 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool interface inner / outer",
+        "sub": "",
+        "cells": [
+         "Ø150 / Ø280 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner tool rotation",
+        "sub": "",
+        "cells": [
+         "programmable in 10° steps to 67.5° against the outer tool"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~15 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "73 US gal (275 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "max 17.2 gpm (65 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "2,320 / 3,190 psi (160 / 220 bar) (300 bar optional, +40 % force)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (HV head optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "83 × 43 × 71″ (2,100 × 1,100 × 1,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,307 lb (1,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Wecomatic IO-S 200",
+      "glance": [
+       "Ø0.8 – 7.9″ (20 – 200 mm)",
+       "3.9″ (100 mm)",
+       "20 US tons (18 t) inner (Ø100)",
+       "~15 s",
+       "3,307 lb (1,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-weco"
+  },
+  "wt-wecomatic-speed": {
+   "id": "wt-wecomatic-speed",
+   "brand": "wecotech",
+   "name": "Wecomatic IO-S Speed and High Speed CNC radial formers, Ø3/4″ to 23.6″",
+   "short": "Wecomatic IO-S Speed",
+   "models_label": "Speed 200 · 400 · 600 · High Speed 200 · 400 · 600",
+   "summary": "The same CNC inner / outer forming with programmable inner-tool rotation, in three diameter variants to Ø23.6″ and two power levels: Speed with two 15 HP pumps is about 30 % faster than the IO-S 200, High Speed with three pumps about 60 % — 10 to 16 s cycles on the largest parts. 20, 28 or 50 US tons on the inner tool, 8 to 24 outer pistons, 300 bar force increase and the HV head as options.",
+   "features": [
+    "CNC inner / outer forming on tube Ø3/4″ – 7.9″, 15.7″ or 23.6″ (20 – 200 / 400 / 600 mm); inner tool rotation in 10° steps to 67.5°",
+    "Inner tool 20 / 28 / 50 US tons; 8 / 16 / 24 outer pistons of 10 US tons; Ø1.42″ – 1.93″ forming stroke",
+    "Speed: 2 × 15 HP, 96 US gal power unit · High Speed: 3 × 15 HP, 140 US gal; oil / air heat exchanger",
+    "Quick-change tool flanges, synchronised outer tools, separate low- and high-voltage cabinets; vertical working position"
+   ],
+   "optional": [
+    "Pressure increase to 300 bar (up to +40 % force); High Power force increase on inner and outer tool",
+    "HV head for horizontal and vertical working; safety guard with light curtain and mode selector",
+    "Touchscreen on pivot arm; LED status light; remote maintenance, Profisafe, air-conditioned cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-wecomatic-speed",
+    "wt-wecomatic-highspeed",
+    "wt-wecomatic-400",
+    "wt-wecomatic-diagram",
+    "wt-wecomatic-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Wecomatic IO-S Speed",
+      "sub": "CNC radial forming machines, about 30 % faster",
+      "models": [
+       "IO-S Speed 200",
+       "IO-S Speed 400",
+       "IO-S Speed 600"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 7.9″ (20 – 200 mm)",
+         "Ø0.8 – 15.7″ (20 – 400 mm)",
+         "Ø0.8 – 23.6″ (20 – 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "20 US tons (18 t) inner (Ø100)",
+         "28 US tons (25 t) inner (Ø120)",
+         "50 US tons (45 t) inner (Ø160)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Inner tool forming stroke",
+        "sub": "",
+        "cells": [
+         "Ø max 1.42″ (36 mm)",
+         "Ø max 1.93″ (49 mm)",
+         "Ø max 1.93″ (49 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outer tool radial stroke / force",
+        "sub": "",
+        "cells": [
+         "Ø max 2.36″ (60 mm) · 8 × 10 US tons (9 t)",
+         "Ø max 2.36″ (60 mm) · 16 × 10 US tons (9 t)",
+         "Ø max 2.36″ (60 mm) · 24 × 10 US tons (9 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool interface inner / outer",
+        "sub": "",
+        "cells": [
+         "Ø150 / Ø280 mm",
+         "Ø190 / Ø480 mm",
+         "Ø270 / Ø680 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner tool rotation",
+        "sub": "",
+        "cells": [
+         "programmable in 10° steps to 67.5° against the outer tool",
+         "programmable in 10° steps to 67.5° against the outer tool",
+         "programmable in 10° steps to 67.5° against the outer tool"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~12 s",
+         "~15 s",
+         "~16 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "96 US gal (365 L)",
+         "96 US gal (365 L)",
+         "96 US gal (365 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "max 34.3 gpm (130 L/min)",
+         "max 34.3 gpm (130 L/min)",
+         "max 34.3 gpm (130 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "2,320 / 3,190 psi (160 / 220 bar) (300 bar optional)",
+         "2,320 / 3,190 psi (160 / 220 bar) (300 bar optional)",
+         "2,320 / 3,190 psi (160 / 220 bar) (300 bar optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "2 × 15 HP (2 × 11 kW)",
+         "2 × 15 HP (2 × 11 kW)",
+         "2 × 15 HP (2 × 11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (HV head optional)",
+         "vertical (HV head optional)",
+         "vertical (HV head optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "98 × 43 × 71″ (2,500 × 1,100 × 1,800 mm)",
+         "98 × 43 × 71″ (2,500 × 1,100 × 1,800 mm)",
+         "98 × 43 × 71″ (2,500 × 1,100 × 1,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,748 lb (1,700 kg)",
+         "3,748 lb (1,700 kg)",
+         "3,748 lb (1,700 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Wecomatic IO-S High Speed",
+      "sub": "CNC radial forming machines, about 60 % faster",
+      "models": [
+       "IO-S High Speed 200",
+       "IO-S High Speed 400",
+       "IO-S High Speed 600"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 7.9″ (20 – 200 mm)",
+         "Ø0.8 – 15.7″ (20 – 400 mm)",
+         "Ø0.8 – 23.6″ (20 – 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)",
+         "0.16″ (4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner axial stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "20 US tons (18 t) inner (Ø100)",
+         "28 US tons (25 t) inner (Ø120)",
+         "50 US tons (45 t) inner (Ø160)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Inner tool forming stroke",
+        "sub": "",
+        "cells": [
+         "Ø max 1.42″ (36 mm)",
+         "Ø max 1.93″ (49 mm)",
+         "Ø max 1.93″ (49 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outer tool radial stroke / force",
+        "sub": "",
+        "cells": [
+         "Ø max 2.36″ (60 mm) · 8 × 10 US tons (9 t)",
+         "Ø max 2.36″ (60 mm) · 16 × 10 US tons (9 t)",
+         "Ø max 2.36″ (60 mm) · 24 × 10 US tons (9 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool interface inner / outer",
+        "sub": "",
+        "cells": [
+         "Ø150 / Ø280 mm",
+         "Ø190 / Ø480 mm",
+         "Ø270 / Ø680 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner tool rotation",
+        "sub": "",
+        "cells": [
+         "programmable in 10° steps to 67.5° against the outer tool",
+         "programmable in 10° steps to 67.5° against the outer tool",
+         "programmable in 10° steps to 67.5° against the outer tool"
+        ],
+        "key": false
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~10 s",
+         "~12 s",
+         "~13 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "140 US gal (530 L)",
+         "140 US gal (530 L)",
+         "140 US gal (530 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "max 48.9 gpm (185 L/min)",
+         "max 48.9 gpm (185 L/min)",
+         "max 48.9 gpm (185 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "2,320 / 3,190 psi (160 / 220 bar) (300 bar optional)",
+         "2,320 / 3,190 psi (160 / 220 bar) (300 bar optional)",
+         "2,320 / 3,190 psi (160 / 220 bar) (300 bar optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 × 15 HP (3 × 11 kW)",
+         "3 × 15 HP (3 × 11 kW)",
+         "3 × 15 HP (3 × 11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "vertical (HV head optional)",
+         "vertical (HV head optional)",
+         "vertical (HV head optional)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "114 × 43 × 71″ (2,900 × 1,100 × 1,800 mm)",
+         "114 × 43 × 71″ (2,900 × 1,100 × 1,800 mm)",
+         "114 × 43 × 71″ (2,900 × 1,100 × 1,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,189 lb (1,900 kg)",
+         "4,189 lb (1,900 kg)",
+         "4,189 lb (1,900 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "IO-S Speed 200",
+      "glance": [
+       "Ø0.8 – 7.9″ (20 – 200 mm)",
+       "3.9″ (100 mm)",
+       "20 US tons (18 t) inner (Ø100)",
+       "~12 s",
+       "3,748 lb (1,700 kg)"
+      ]
+     },
+     {
+      "name": "IO-S Speed 400",
+      "glance": [
+       "Ø0.8 – 15.7″ (20 – 400 mm)",
+       "3.9″ (100 mm)",
+       "28 US tons (25 t) inner (Ø120)",
+       "~15 s",
+       "3,748 lb (1,700 kg)"
+      ]
+     },
+     {
+      "name": "IO-S Speed 600",
+      "glance": [
+       "Ø0.8 – 23.6″ (20 – 600 mm)",
+       "3.9″ (100 mm)",
+       "50 US tons (45 t) inner (Ø160)",
+       "~16 s",
+       "3,748 lb (1,700 kg)"
+      ]
+     },
+     {
+      "name": "IO-S High Speed 200",
+      "glance": [
+       "Ø0.8 – 7.9″ (20 – 200 mm)",
+       "3.9″ (100 mm)",
+       "20 US tons (18 t) inner (Ø100)",
+       "~10 s",
+       "4,189 lb (1,900 kg)"
+      ]
+     },
+     {
+      "name": "IO-S High Speed 400",
+      "glance": [
+       "Ø0.8 – 15.7″ (20 – 400 mm)",
+       "3.9″ (100 mm)",
+       "28 US tons (25 t) inner (Ø120)",
+       "~12 s",
+       "4,189 lb (1,900 kg)"
+      ]
+     },
+     {
+      "name": "IO-S High Speed 600",
+      "glance": [
+       "Ø0.8 – 23.6″ (20 – 600 mm)",
+       "3.9″ (100 mm)",
+       "50 US tons (45 t) inner (Ø160)",
+       "~13 s",
+       "4,189 lb (1,900 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-weco"
+  },
+  "wt-flanging-cell": {
+   "id": "wt-flanging-cell",
+   "brand": "wecotech",
+   "name": "Flanging cell for bellows, T-pieces and bent parts, Ø3.1″ to 15.7″",
+   "short": "Flanging cell",
+   "models_label": "Flanging cell · Ø80 – 400 mm",
+   "summary": "A rotating-head cell for flanging and beading parts that cannot be formed in a static tool: T-pieces, bends and unstable workpieces such as bellows are held by eight pressure-controlled hydraulic clamps and flange supports while the rotating forming head rolls the flange — bellows can be flanged directly onto the flange with additional clamping. Clamping, rotation and forming are run from a menu-driven CNC program with short set-up; Ø3.1″ – 15.7″ tube in 0.012 – 0.094″ wall.",
+   "features": [
+    "Flanging and beading of bellows, T-pieces and bent parts Ø3.1″ – 15.7″ (80 – 400 mm), wall 0.012 – 0.094″ (0.3 – 2.4 mm)",
+    "Rotation unit with integrated axial and radial axes: electric rotating drive, hydraulic path-controlled radial and axial drives",
+    "8 hydraulic clamps and 8 removable flange supports, positions set independently of the workpiece; inner clamping cylinder",
+    "Flanging diameter set-up electrically path-controlled; safety guard with light curtain; menu-driven CNC"
+   ],
+   "optional": [
+    "Forming unit extension for Ø11.8″ – 27.6″ (300 – 700 mm) tube and Ø31.5″ (800 mm) flanges",
+    "NC axial roller drive, absolute flanging-height set-up, radial roller position set-up, measurement display",
+    "Remote maintenance, Profisafe, oil monitors; heat exchangers; touchscreen on pivot arm",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-flanging-cell",
+    "wt-flanging-cell-bellows",
+    "wt-flanging-cell-step"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Flanging cell",
+      "sub": "Rotating-head flanging and beading cell",
+      "models": [
+       "Flanging cell"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø3.1 – 15.7″ (80 – 400 mm) (300 – 700 mm extension optional)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.012 – 0.094″ (0.3 – 2.4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping",
+        "sub": "",
+        "cells": [
+         "8 hydraulic clamps, pressure controlled; 8 removable flange supports"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~30 s for Ø110 mm, handling excluded"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "26 US gal (100 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "6.6 gpm (25 L/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "4,350 psi (300 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "67 × 43 × 71″ (1,700 × 1,100 × 1,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,850 lb (2,200 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Flanging cell",
+      "glance": [
+       "Ø3.1 – 15.7″ (80 – 400 mm) (300 – 700 mm extension optional)",
+       "—",
+       "—",
+       "~30 s for Ø110 mm, handling excluded",
+       "4,850 lb (2,200 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-weco"
+  },
+  "wt-tubecut": {
+   "id": "wt-tubecut",
+   "brand": "wecotech",
+   "name": "Tubecut IO-S 160 Electra tube shearing cutter, Ø3/4″ to 6.3″",
+   "short": "Tubecut IO-S 160",
+   "models_label": "Tubecut IO-S 160 Electra",
+   "summary": "Tube cut by shearing between an inner and an outer tool instead of sawing: burr-free, without lubricant or emulsion, in about 10 s, with resharpenable shearing inserts and the inner tool rotating up to 180° against the outer tool for round and shaped tube to Ø6.3″ in 1/8″ wall. Electric inner unit, pneumatic outer unit, HW-Flex housing with scrap exit and a 7″ touchscreen with free-programmable cutting software — for cutting tube from the bar or trimming after forming.",
+   "features": [
+    "Shear cutting of round and shaped tube Ø3/4″ – 6.3″ (20 – 160 mm), wall to 1/8″ (3 mm); cut-off length to 7.9″ or 15.7″ (200 / 400 mm)",
+    "Burr-free cut without lubricant or coolant; shearing inserts resharpened; inner tool rotation 0 – 180°",
+    "Electric inner cutting unit, 11 US tons (10 t); pneumatic outer blade, 1.2″ (30 mm) stroke; ~10 s cycle",
+    "7″ colour touchscreen, USB, 200 alphanumerical programs; quick-change interfaces for inner and outer tool; scrap exit; central lubrication"
+   ],
+   "optional": [
+    "Tube rod cutting with programmable electric tube stop; insertion slide (electric); supporting table with guiding nut",
+    "Two-hand station on a free-standing console; counters, remote maintenance, Profisafe; air-conditioned cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubecut",
+    "wt-tubecut-notable",
+    "wt-tubecut-diagram",
+    "wt-tubecut-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubecut IO-S 160 Electra",
+      "sub": "Inner / outer shearing tube cutter",
+      "models": [
+       "Tubecut IO-S 160"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 6.3″ (20 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max cut-off length",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) or 15.7″ (400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.12″ (3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner axial stroke",
+        "sub": "",
+        "cells": [
+         "2″ (50 mm) electric · 11 US tons (10 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outer blade stroke",
+        "sub": "",
+        "cells": [
+         "1.2″ (30 mm) pneumatic"
+        ],
+        "key": false
+       },
+       {
+        "label": "Inner tool rotation",
+        "sub": "",
+        "cells": [
+         "0 – 180° against the outer tool"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "11 US tons (10 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~10 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "electric inner unit, pneumatic outer unit — no hydraulics, no coolant"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working position",
+        "sub": "",
+        "cells": [
+         "horizontal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 24 × 69″ (1,760 × 620 × 1,740 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,653 lb (750 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubecut IO-S 160",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm)",
+       "—",
+       "11 US tons (10 t)",
+       "~10 s",
+       "1,653 lb (750 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-cutting"
+  },
+  "wt-tubeshear": {
+   "id": "wt-tubeshear",
+   "brand": "wecotech",
+   "name": "Tubeshear for straight and bent tubes, Ø3/4″ to 6.3″",
+   "short": "Tubeshear",
+   "models_label": "Tubeshear · Ø20 – 160 mm",
+   "summary": "Cuts tube quickly, cleanly and cheaply in series production: a scoring knife and a chopping knife shear straight, curved and serpentine tube laid flat on a table that adjusts to the tube diameter — cutting tubes into lengths, trimming bent parts or parting single pieces. A torsion-resistant machined frame takes the 12 US ton chopping force; the shear also works without the table for maximum clearance left and right of the jaws.",
+   "features": [
+    "Shear cutting of straight, curved and serpentine tube Ø3/4″ – 6.3″ (20 – 160 mm), wall to 1/8″ (3 mm); 1/8″ (3.2 mm) cutting width",
+    "Scoring knife 6 US tons, 0 – 8 ft/min · chopping knife 12 US tons, 0 – 20 ft/min · ~13 s on Ø80 mm",
+    "Torsion-resistant machined frame; height-adjustable lifting table (removable); horizontal working position",
+    "15 HP (11 kW) power unit with 5 – 60 L/min variable flow; central lubrication for the cutting oil"
+   ],
+   "optional": [
+    "Oil / air or oil / water heat exchanger; oil sump; drip pan with foot plate",
+    "Separate workpiece and hours counters; digital I/O, Profisafe, oil and filter monitors",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-tubeshear",
+    "wt-tubeshear-process",
+    "wt-tubeshear-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Tubeshear",
+      "sub": "Tube shear for straight and bent tubes",
+      "models": [
+       "Tubeshear"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 6.3″ (20 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max tube wall thickness",
+        "sub": "",
+        "cells": [
+         "0.12″ (3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting width",
+        "sub": "",
+        "cells": [
+         "0.13″ (3.2 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting speed",
+        "sub": "",
+        "cells": [
+         "scoring knife 0 – 8 ft/min (0 – 2.5 m/min) · chopping knife 0 – 20 ft/min (0 – 6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "scoring 6 US tons (5.5 t) · chopping 12 US tons (11 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~13 s cut on Ø80 mm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic tank",
+        "sub": "",
+        "cells": [
+         "26 US gal (100 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump flow",
+        "sub": "",
+        "cells": [
+         "5 – 60 L/min (1.3 – 15.9 gpm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working pressure",
+        "sub": "",
+        "cells": [
+         "4,350 psi (300 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "15 HP (11 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "118 × 89 × 58″ (3,000 × 2,250 × 1,470 mm) with the working table · 65 × 41 × 58″ (1,650 × 1,050 × 1,470 mm) without"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Tubeshear",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm)",
+       "—",
+       "scoring 6 US tons (5.5 t) · chopping 12 US tons (11 t)",
+       "~13 s cut on Ø80 mm",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-cutting"
+  },
+  "wt-rotobrush": {
+   "id": "wt-rotobrush",
+   "brand": "wecotech",
+   "name": "Rotobrush tube end deburring machine, Ø3/4″ to 6.3″",
+   "short": "Rotobrush",
+   "models_label": "Rotobrush · Ø20 – 160 mm",
+   "summary": "Clean, fast deburring of cut tube ends before forming: a 5.5 HP wire brush on a linear adjustment of 0 – 3″ and a rotating frame that moves the tube centre ±6° eccentrically, so the whole inner and outer edge is brushed in about 3 s. Format-dependent safety plates on the HW-Flex housing; a suction device is optional.",
+   "features": [
+    "Deburring of tube ends Ø3/4″ – 6.3″ (20 – 160 mm) in ~3 s",
+    "5.5 HP (4 kW) brush motor; wire brush linear adjustment 0 – 3″ (75 mm); 1/3 HP rotating frame, ±6° eccentric",
+    "Format-dependent exchangeable safety plates; HW-Flex housing"
+   ],
+   "optional": [
+    "Suction device; separate hours counter; fan in the control cabinet",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "wt-rotobrush",
+    "wt-rotobrush-head",
+    "wt-rotobrush-part"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Rotobrush",
+      "sub": "Tube end deburring machine",
+      "models": [
+       "Rotobrush"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 6.3″ (20 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max forming length",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Wire brush adjustment",
+        "sub": "",
+        "cells": [
+         "0 – 3″ (75 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tube centre offset",
+        "sub": "",
+        "cells": [
+         "±6° eccentric"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lifting force",
+        "sub": "",
+        "cells": [
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mean cycle time",
+        "sub": "",
+        "cells": [
+         "~3 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW) brush · 1/3 HP (0.25 kW) rotating frame"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "41 × 28 × 60″ (1,050 × 700 × 1,520 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "661 lb (300 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Rotobrush",
+      "glance": [
+       "Ø0.8 – 6.3″ (20 – 160 mm)",
+       "—",
+       "—",
+       "~3 s",
+       "661 lb (300 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube_diameter",
+     "forming_length",
+     "force",
+     "cycle",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Working ranges marked by the maker as tool-dependent are given for the standard tooling; the forming length, the expansion or reduction per stroke and the cycle time change with the tool. Metric values in brackets are the manufacturer's nominal figures; dimensions are L × W × H. Machines are built for 400 V 50 Hz and are supplied for the Canadian supply voltage with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+    "label": "Download the Wecotech tube end forming brochure",
+    "size": "PDF · 5 MB · imperial units"
+   },
+   "group": "wt-cutting"
   }
  }
 }

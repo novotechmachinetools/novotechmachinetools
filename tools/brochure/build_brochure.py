@@ -70,7 +70,7 @@ def layout(families, no_inline):
     for f in families:
         tables = list(f["specs"]["tables"])
         f["inline_table"] = None
-        if tables and f["id"] not in no_inline and table_weight(tables[0]) <= 13:
+        if tables and f["id"] not in no_inline and table_weight(tables[0]) <= 20:
             f["inline_table"] = tables.pop(0)
         f["spec_pages"] = paginate_tables(tables)
 
