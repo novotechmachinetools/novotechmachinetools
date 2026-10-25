@@ -23,7 +23,7 @@ from delogo import delogo  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = "/home/claude/hidroliksan/catalogue/"
 WORK = "/home/claude/hidroliksan/work/"
-OUT = os.path.join(ROOT, "tools", "src-images", "hidroliksan")
+OUT = os.path.join(ROOT, "tools", "src-images", "premium-presses")
 MAX_SIDE = 2600
 OCR_SIDE = 3000
 A = "lama"

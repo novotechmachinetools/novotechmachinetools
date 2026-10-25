@@ -1,0 +1,21 @@
+{
+ "title": "Guillotine shears",
+ "subtitle": "Direct-gear mechanical shears · 1/8″ and 1/4″ · 43″ to 13.8 ft · return-to-sender · cut-to-length lines",
+ "cover_line": "NovoTech premium line · made in Turkey · sold & serviced in Canada by NovoTech",
+ "range_label": "Guillotine shears",
+ "about_for": "guillotine shears",
+ "about_kicker": "NovoTech premium line · made in Turkey",
+ "about_title": "Direct-gear shears: speed without hydraulics",
+ "about_text": ["The shears in this catalogue are NovoTech's premium line of direct-gear motorised guillotines, built in Turkey by a maker with more than 40 years of sheet-metal machinery behind it: a 4 to 15 HP motor drives the cutting beam through a gearbox and crank — no hydraulic power pack, no flywheel clutch — for 31 to 35 clean strokes a minute, on a welded steel frame with the beam running in teflon slideways and high-carbon, high-chrome blades with two and four cutting edges.",
+                "Six series cover the sheet-metal shop: the light-type SRGM-H for 1/8″ (3 mm) and the SRGM for 1/4″ (6 mm) from 43″ to 13.8 ft, the SRGM-HFR and SRGM-FR with a return-to-sender support that brings the cut piece back to the operator, and the SRGM-HCL and SRGM-CL built into cut-to-length coil lines. Every shear is delivered with a CSA-approved panel, a 1-year warranty and spare parts, blades and technical support from NovoTech in Mississauga, Ontario."],
+ "country": "Turkey",
+ "single_phase": false,
+ "year": "2026",
+ "family_sets": ["shears"],
+ "families": ["nt-shear-srgm-h", "nt-shear-srgm", "nt-shear-srgm-hfr", "nt-shear-srgm-fr", "nt-shear-srgm-hcl", "nt-shear-srgm-cl"],
+ "groups": [{"title": "Direct-gear mechanical guillotine shears", "families": ["nt-shear-srgm-h", "nt-shear-srgm"]},
+            {"title": "Guillotine shears with return-to-sender", "families": ["nt-shear-srgm-hfr", "nt-shear-srgm-fr"]},
+            {"title": "Shears for cut-to-length lines", "families": ["nt-shear-srgm-hcl", "nt-shear-srgm-cl"]}],
+ "cover_photos": ["sm-srgm", "sm-srgm-fr", "sm-srgm-h"],
+ "out": "src/files/NovoTech-Guillotine-Shears-2026.pdf"
+}

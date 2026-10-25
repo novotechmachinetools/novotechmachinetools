@@ -93,6 +93,15 @@ Redirect 301 "/files/TC-42-tube-coil-rolling-machine-SAHINLER---MADE-IN-TURKEY.p
 Redirect 301 "/files/Hydraulic-workshop-press-DPM-DK-DPMK-DP.pdf" "/files/NovoTech-Sahinler-Catalogue-2027.pdf"
 Redirect 301 "/files/Sheet-metal-corner-notcher--Variable-angle--HNM6V.pdf" "/corner-notcher"
 Redirect 301 "/files/Hydrauli-multi-functional-punch-shear-notcher--HPS-40.pdf" "/ironworker-machines"
+# old shear pages / brochures → the shears page and the NovoTech guillotine shears brochure
+Redirect 301 "/files/SAYMAK-mechanical-shear-cutting-machine.pdf" "/files/NovoTech-Guillotine-Shears-2026.pdf"
+Redirect 301 "/files/LRGM-and-SRGM-shear-cutting-machine.pdf" "/files/NovoTech-Guillotine-Shears-2026.pdf"
+Redirect 301 "/files/ERGM-and-HRGM-shearing-machine-brochure.pdf" "/shear-cutting"
+Redirect 301 "/files/hydraulic-shearing-machine-DENER---MADE-IN-TURKEY.pdf" "/shear-cutting"
+Redirect 301 "/files/Flywheel-type-mechanical-metal-shear-EMGA.pdf" "/shear-cutting"
+Redirect 301 "/files/Arm-guillotine-shear-DKM-CKM-KMW-KM-HM.pdf" "/shear-cutting"
+Redirect 301 "/files/Foot-sheet-metal-shear-PPS.pdf" "/shear-cutting"
+Redirect 301 "/files/Throatless-shear-IMS-TMS.pdf" "/shear-cutting"
 RedirectMatch 301 ^/rebar-bending-machines(\.html)?$ /rebar-bender
 
 # ---- Compression -------------------------------------------------------------

@@ -45,7 +45,7 @@ h1, h2, h3, h4 { font-family: "Barlow Condensed", "Barlow", sans-serif; margin: 
 .cover h1 { position: absolute; left: .55in; top: 1.85in; font-size: 44pt; font-weight: 700; text-transform: uppercase; letter-spacing: .01em; max-width: 7.2in; }
 .cover h1 small { display: block; font-size: 17pt; font-weight: 500; letter-spacing: .06em; color: #c9ccd3; margin-top: 10pt; }
 .cover .rule { position: absolute; left: .55in; top: 4.45in; width: 1.3in; height: 4pt; background: var(--orange); }
-.cover .photos { position: absolute; left: .3in; right: .3in; top: 5.2in; height: 4.35in; display: flex; align-items: flex-end; justify-content: center; gap: .25in; background: linear-gradient(180deg, #fff 0%, #eef0f3 100%); }
+.cover .photos { position: absolute; left: .3in; right: .3in; top: 5.2in; height: 4.35in; display: flex; align-items: flex-end; justify-content: center; gap: .25in; background: #fff; border-bottom: 1pt solid var(--line); }
 .cover .photos img { max-height: 4in; max-width: 2.6in; width: auto; object-fit: contain; }
 .cover .photos img.big { max-height: 4.2in; max-width: 3.3in; }
 .cover .stats { position: absolute; left: 0; right: 0; bottom: 0; height: 1.05in; background: var(--charcoal); color: #fff; display: flex; align-items: center; padding: 0 .55in; }
@@ -72,7 +72,7 @@ h2.title::after { content: ""; display: block; width: .9in; height: 3.5pt; backg
 .fam .kicker { margin-top: 2pt; }
 .fam h2 { font-size: 21pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 8pt; }
 .fam .photos { display: flex; gap: 10pt; height: 3.55in; margin-bottom: 9pt; }
-.fam .hero { flex: 1.6; border: 1pt solid var(--line); background: linear-gradient(180deg, #fff 0%, #eef0f3 100%); position: relative; display: flex; align-items: center; justify-content: center; padding: 8pt; }
+.fam .hero { flex: 1.6; border: 1pt solid var(--line); background: #fff; position: relative; display: flex; align-items: center; justify-content: center; padding: 8pt; }
 .fam .hero img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .fam .hero .model { position: absolute; left: 0; bottom: 0; background: var(--charcoal); color: #fff; font-family: "Barlow Condensed", sans-serif; font-size: 8pt; letter-spacing: .1em; text-transform: uppercase; padding: 3pt 10pt; }
 .fam .hero .model b { color: var(--orange); margin-right: 6pt; }
@@ -88,6 +88,19 @@ h2.title::after { content: ""; display: block; width: .9in; height: 3.5pt; backg
 .fam li { padding-left: 12pt; position: relative; margin-bottom: 2.5pt; }
 .fam li::before { content: "✓"; position: absolute; left: 0; color: var(--orange-ink); font-weight: 700; }
 .fam ul.opt li::before { content: "+"; }
+.fam h3.tbl { margin-top: 10pt; }
+.fam.inl .photos { height: 2.45in; margin-bottom: 6pt; }
+.fam.inl h2 { margin-bottom: 4pt; }
+.fam.inl .cols { margin-top: 4pt; }
+.fam.inl .sub { display: none; }
+.fam.inl h3.tbl { margin-top: 7pt; margin-bottom: 3pt; }
+.fam.inl table { margin-bottom: 3pt; }
+.fam.inl th, .fam.inl td { padding: 2pt 4pt; }
+.fam.inl .note, .fam.inl .volt { margin-top: 2pt; }
+.fam.inl .summary { font-size: 8.8pt; }
+.fam.inl ul { font-size: 8.2pt; }
+.fam.inl li { margin-bottom: 1.5pt; }
+.fam .sub { font-size: 8pt; color: var(--steel); margin-bottom: 4pt; }
 .fam .headline { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 10.5pt; color: var(--orange-ink); margin-bottom: 6pt; }
 /* spec page */
 .spec h2 { font-size: 21pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 8pt; }
@@ -171,7 +184,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
 
 {# ---------------------------------------------------------------- families #}
 {% for f in families %}
-<section class="page fam">
+<section class="page fam{{ " inl" if f.inline_table else "" }}" data-fam="{{ f.id }}">
   <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ f.name }}</div><div class="tab"><span>{{ f.series }} series</span></div></div>
   <div class="body">
     <div class="kicker">{{ f.models_label }}</div>
@@ -186,6 +199,14 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
       <div><h3>Standard features</h3><ul>{% for x in f.features %}<li>{{ x }}</li>{% endfor %}</ul></div>
       <div><h3>Optional equipment</h3><ul class="opt">{% for x in f.optional %}<li>{{ x }}</li>{% endfor %}</ul></div>
     </div>
+    {% if f.inline_table %}{% set t = f.inline_table %}
+    <h3 class="tbl">{{ t.title }} — technical specifications</h3>{% if t.sub %}<div class="sub">{{ t.sub }}</div>{% endif %}
+    <table class="{{ 'n7' if t.models|length > 6 else '' }}">
+      <thead><tr><th>Model</th>{% for m in t.models %}<th>{{ m }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for r in t.rows %}<tr class="{{ 'key' if r.key else '' }}"><th>{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>{% for c in r.cells %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table>
+    {% if not f.spec_pages %}<p class="note">{{ f.specs.note }}</p><p class="volt">Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase{{ ', or 240 V single-phase on models with a small enough motor' if spec.single_phase else '' }}.</p>{% endif %}
+    {% endif %}
   </div>
   <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % f.page }}</div></div>
 </section>

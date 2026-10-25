@@ -16,7 +16,18 @@ import sahinler_plate_rolls
 import hidroliksan_data  # NovoTech premium-line production presses below the Şahinler group on hydraulic-press.html
 
 SET = "sahinler"
-FAMILIES = ANGLE_FAMILIES + IRON_FAMILIES + PUNCH_FAMILIES + PRESS_FAMILIES + hidroliksan_data.FAMILIES + NOTCH_FAMILIES + POLISH_FAMILIES
+PDF_PROD_FILE = "files/NovoTech-Production-Hydraulic-Presses-2026.pdf"
+
+
+def pdf_prod():
+    f = os.path.join(ROOT, "src", PDF_PROD_FILE)
+    size = f"PDF · {os.path.getsize(f) / 1e6:.0f} MB · imperial units" if os.path.exists(f) else "PDF · imperial units"
+    return {"file": PDF_PROD_FILE, "label": "Download the production hydraulic presses brochure", "size": size}
+
+
+PDF_PROD = pdf_prod()
+PREMIUM_FAMILIES = [dict(f, pdf=PDF_PROD) for f in hidroliksan_data.FAMILIES]   # their brochure button: the NovoTech production-press brochure
+FAMILIES = ANGLE_FAMILIES + IRON_FAMILIES + PUNCH_FAMILIES + PRESS_FAMILIES + PREMIUM_FAMILIES + NOTCH_FAMILIES + POLISH_FAMILIES
 SECTION = {P_ANGLE: "Angle rolls", P_IRON: "Ironworkers & punching", P_PUNCH: "Ironworkers & punching", P_PRESS: "Hydraulic presses", P_NOTCH: "Corner notchers", P_POLISH: "Pipe polishing & sanding"}
 
 PAGES = {
@@ -151,12 +162,12 @@ def load_module(name):
 
 
 def register_images():
-    """Every exported Şahinler / premium-line photo → tools/image_map.json (sections 'sahinler', 'hidroliksan');
+    """Every exported Şahinler / premium-line photo → tools/image_map.json (sections 'sahinler', 'premium-presses');
     the keys are written to tools/sahinler_keys.txt."""
     imap_path = os.path.join(ROOT, "tools", "image_map.json")
     imap = json.load(open(imap_path, encoding="utf-8"))
     keys = []
-    for section, photos in (("sahinler", load_photos()), ("hidroliksan", load_module("hidroliksan_photos").PHOTOS)):
+    for section, photos in (("sahinler", load_photos()), ("premium-presses", load_module("hidroliksan_photos").PHOTOS)):
         d = os.path.join(ROOT, "tools", "src-images", section)
         for key, p in photos.items():
             f = [x for x in os.listdir(d) if x.startswith(key + ".")]
@@ -185,6 +196,7 @@ def build():
     for slug, p in PAGES.items():
         extra = dict(EXTRA)
         if slug == P_PRESS:
+            extra.update({"catalogue_pdf": None, "catalogue_pdfs": [PDF, PDF_PROD]})
             extra.update({"hero_brand_line": "Şahinler shop presses are made in Turkey by Şahinler Metal; the NovoTech premium-line production presses are built in Turkey with European components to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
                           "origin_feature": {"title": "Made in Turkey", "text": "Şahinler Metal has built shop presses in Bursa since 1976; the NovoTech premium-line production presses come from a Turkish press builder with 50 years of hydraulic press manufacturing, CE-certified with Siemens controls and European hydraulics."}})
         write_category(slug, p, FAMILIES, SET, SECTION[slug], extra=extra)

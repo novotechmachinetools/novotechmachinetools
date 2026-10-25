@@ -138,6 +138,32 @@ photo (the machines are sold under NovoTech's warranty and support), with the ma
 The production presses are sold as NovoTech's premium line, so the maker's "HiDROLiKSAN" lettering (and "HALİM USTA") is
 erased from every photo and the maker is not named on the site.  `tools/hidroliksan_photos.py` holds the hand-boxed logo
 positions per photo (located on grid views — tesseract and template matching both proved unreliable on these) and
-exports LaMa-filled copies to `tools/src-images/hidroliksan/`; sources are the supplier's 2026 catalogue photos staged
+exports LaMa-filled copies to `tools/src-images/premium-presses/` (site section `premium-presses` — the maker's name stays out of every public path); sources are the supplier's 2026 catalogue photos staged
 from the laptop (`/home/claude/hidroliksan/catalogue/`).  Model designations painted on the machines (e.g. "SMC 2500")
 are kept.
+
+## NovoTech premium-line guillotine shears (Saymak photos)
+
+The SRGM direct-gear shears are sold as NovoTech's premium line (made in Turkey), so the maker's "SAY-MAK" lettering, the
+badge sticker beside it and the logo on the control screen are erased from every photo; the model designations painted
+on the beam ("SRGM 2560 x 4") stay.  Sources: the 2025 catalogue (`/home/claude/saymak/cat.pdf` — page extracts in
+`img/`, and 300-dpi page crops `img/cl-hero.png`, `img/hcl-hero.png` for the two renders that are not extractable as
+images) and the per-model gallery PNGs of the maker's site, downloaded through the built-in browser as one base64 JSON
+(`/home/claude/saymak/web/`, 1280 × 960 real cut-outs with alpha).  `tools/saymak_photos.py` holds the hand boxes and
+exports to `tools/src-images/saymak/` — JPGs for the catalogue heroes (BiRefNet cuts them out), PNGs with the original
+alpha for the gallery shots (the logo is inpainted on the photo composited over white, then the alpha is put back);
+`tools/saymak_pages.py` registers them (section `shears`).  The two smaller catalogue heroes (FR, HFR) carry
+`upscale: 1.5` so a 1200 px variant exists.
+
+## Brochures generated from the site data (`tools/brochure/`)
+
+`python3 tools/brochure/build_brochure.py tools/brochure/specs/<name>.json` renders a Letter-size PDF catalogue
+(Playwright / Chromium) from a family set: cover, contents, about, one page per family (photo band, model tag, summary,
+standard / optional equipment) and the specification tables, in the NovoTech catalogue style.  A short first table is
+placed on the family page itself when it fits — the page is rendered, measured, and families whose content would run into
+the footer get a separate specifications page on a second pass (`no_inline` in the spec forces that).  Photos are the
+site's 1200 px variants flattened over white and embedded as JPEG (`tools/brochure/out/img/`), which keeps a 20-page
+brochure around 2–5 MB; the logo stays PNG for the dark cover.  Specs so far: `production-presses.json` →
+`src/files/NovoTech-Production-Hydraulic-Presses-2026.pdf`, `guillotine-shears.json` →
+`src/files/NovoTech-Guillotine-Shears-2026.pdf`; the family's `pdf` entry (set by the page module) is what the
+"Download PDF brochure" button links to.
