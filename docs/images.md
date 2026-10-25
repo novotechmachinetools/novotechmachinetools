@@ -229,3 +229,13 @@ The supplier's file names are swapped: `pb-p_w1600.webp` (the PB1400P render wit
 from the supplier's press-brake and shear pages (robot cell, sheet follower, hold-down, bent parts) — replaced with the
 PB-M page's own photos (bending unit, blank-holder, press arm, cast body, profiles); the same blank-holder photo had been used
 as a "shear blade" on the value-line shear page and was removed there.
+
+### BT 114-S showroom photos (Oct 25)
+
+The user's 12 showroom photos of the BT 114-S (`/home/claude/sahinler/photos/bt114s/`, not in the repo) and the 629 px
+studio photo `render.png` are all **cut out** — the user's rule: a photo they supply is cut out like any other, never used
+as a rectangle.  `sh-bt114s-photo` = the studio photo: supplier badge inpainted (LaMa), Real-ESRGAN x2 (629 → 1258 px),
+BiRefNet cut-out — first in the gallery.  For the showroom shot the machine stood on a wooden pallet, which BiRefNet keeps
+as part of the machine; `sahinler_photos.fill_floor()` paints the pallet with the floor colour first (polygon with machine
+parts kept by polygon / darkness / greyness) so the cut-out drops it.  Silica-gel bags on the tables were inpainted
+(`front`) or cropped off (`rolls`); the neighbouring red machine and a hose were cropped off (`square`).

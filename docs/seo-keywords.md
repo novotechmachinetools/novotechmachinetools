@@ -215,3 +215,14 @@ Rule agreed with the user for the other sections: up to about 4 families on one 
 ~6 families / 6,000 words, hub + one page per line — one clear target per URL for Google, and a single-line page that AI engines
 cite more precisely for brand/model questions while the hub answers the comparison questions.  Next: sheet and tube lasers
 (Dener / Senfeng), then shears (Dener / NovoTech premium (Saymak) / NovoTech value / TTMC as NovoTech).
+
+## Hydraulic presses — one page, shop presses first (Oct 25)
+
+The user asked whether the shop presses (5 families) and the production presses (9 families) should be split with a hub.
+Decision: keep one page, because the production presses have no search demand of their own ("deep drawing press",
+"C-frame press", "H-frame production press" are all near zero in Canada) and both lines sell under the same NovoTech
+premium-line name — a split would only make a thin second page.  Instead the page was re-pointed at the term with demand:
+title "Hydraulic Shop Presses, H-Frame, 33–441 Tons | NovoTech" (was "Hydraulic Presses, Shop to Production 3,307 Ton"),
+h1 "Hydraulic shop presses — H-frame, mobile-cylinder, T-slot and straightening presses, 33 to 441 US tons", intro led by
+the shop press; the production presses stay as the second group with their own anchor (#novotech-production-group), now
+also a child in the main menu ("Hydraulic presses" → shop presses / production presses).

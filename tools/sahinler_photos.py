@@ -71,18 +71,32 @@ PHOTOS = {
     "sh-bt114s-rail": dict(src=C + "bt114-s-pipes.png", cutout=False, alt="Stainless handrail tube polished on the BT 114-S"),
     "sh-bt114s-tube": dict(src=C + "BT-114-uygulama.png", cutout=False, alt="BT 114-S — satin-finished stainless tube"),
     # NovoTech's own showroom photos of the BT 114-S (Mississauga, Oct 2026) — the supplier's badges and nameplate inpainted
-    "sh-bt114s-showroom": dict(src=B + "showroom.jpg", cutout=False, boxes=[(680, 1290, 910, 1380, A), (1050, 860, 1180, 1010, A), (1420, 680, 1630, 820, A)],
+    "sh-bt114s-photo": dict(src=B + "render.png", boxes=[(112, 272, 203, 314, A)], up=True, cutout=True,
+                            alt="BT 114-S pipe polishing machine with the belt head, feed unit and the mobile control pendant"),
+    "sh-bt114s-showroom": dict(src=B + "showroom.jpg", cutout=True,
+                               floor=dict(poly=[(60, 1560), (300, 1470), (440, 1410), (1440, 1375), (1440, 1400), (1580, 1400), (1610, 1740), (1160, 2010), (940, 2240), (660, 2300), (80, 1750)],
+                                          keep=[[(430, 1290), (1105, 1290), (1105, 1795), (435, 1512)], [(595, 1585), (668, 1585), (668, 1652), (595, 1652)],
+                                                [(998, 1830), (1068, 1830), (1068, 1897), (998, 1897)], [(1160, 1895), (1600, 1895), (1600, 2400), (1160, 2400)]],
+                                          keep_dark=[([(1200, 1380), (1580, 1380), (1580, 1760), (1490, 1960), (1200, 1960)], 70)],
+                                          keep_gray=[([(1220, 1510), (1310, 1510), (1310, 1610), (1220, 1610)], 45)]), boxes=[(680, 1290, 910, 1380, A), (1050, 860, 1180, 1010, A), (1420, 680, 1630, 820, A)],
                                alt="BT 114-S pipe polishing machine in the NovoTech showroom with the control pendant and foot pedal"),
-    "sh-bt114s-head": dict(src=B + "head.jpg", cutout=False, alt="BT 114-S — the polishing head: drive rolls, hand-wheel feed adjustment and the belt guard"),
-    "sh-bt114s-front": dict(src=B + "front.jpg", cutout=False, boxes=[(735, 1560, 1140, 1810, A)], alt="BT 114-S seen from the infeed side — two sets of drive rolls either side of the belt"),
-    "sh-bt114s-pendant": dict(src=B + "pendant.jpg", cutout=False, boxes=[(460, 90, 700, 220, A), (295, 420, 430, 760, A), (0, 1290, 140, 1430, A)],
+    "sh-bt114s-head": dict(src=B + "head.jpg", cutout=True, alt="BT 114-S — the polishing head: drive rolls, hand-wheel feed adjustment and the belt guard"),
+    "sh-bt114s-front": dict(src=B + "front.jpg", cutout=True, boxes=[(735, 1560, 1140, 1810, A), (1680, 1320, 1932, 1520, A)], alt="BT 114-S seen from the infeed side — two sets of drive rolls either side of the belt"),
+    "sh-bt114s-pendant": dict(src=B + "pendant.jpg", cutout=True, boxes=[(460, 90, 700, 220, A), (295, 420, 430, 760, A), (0, 1290, 140, 1430, A)],
                               alt="Mobile control pendant with start / stop, speed and feed controls, and the foot pedal"),
-    "sh-bt114s-square": dict(src=B + "square-tube.jpg", cutout=False, alt="Square stainless tube polished on the BT 114-S"),
-    "sh-bt114s-belt": dict(src=B + "belt.jpg", cutout=False, alt="Abrasive belt on the contact wheel — the tube is fed between the drive rolls"),
-    "sh-bt114s-rolls": dict(src=B + "rolls.jpg", cutout=False, alt="Geared motor and drive rolls of the feed unit with the angle scale"),
-    "sh-bt114s-wheel": dict(src=B + "wheel.jpg", cutout=False, alt="Belt tensioning spring, angle scale and the rubber drive rolls"),
-    "sh-bt114s-belt-2": dict(src=B + "belt-2.jpg", cutout=False, boxes=[(480, 2280, 830, 2576, A)], alt="Belt path over the contact wheel with the drive rolls in front"),
-    "sh-bt114s-top": dict(src=B + "top.jpg", cutout=False, crop=(0, 0, 1932, 1980), alt="BT 114-S from above — belt, contact wheel and the two feed units"),
+    "sh-bt114s-square": dict(src=B + "square-tube.jpg", cutout=True, crop=(0, 0, 1800, 2080),
+                             floor=dict(poly=[(1850, 1200), (1850, 2080), (1595, 2080)], color=(160, 160, 160)),   # paints out the red machine next door
+                             floor2=[dict(poly=[(390, 0), (770, 0), (770, 175), (420, 180)], color=(160, 160, 160)),   # wall between motor and guard
+                                     dict(poly=[(1290, 0), (1800, 0), (1800, 290), (1740, 250), (1640, 180), (1540, 110), (1440, 50)], color=(160, 160, 160)),   # window above the guard
+                                     dict(poly=[(0, 0), (90, 0), (90, 40), (0, 60)], color=(160, 160, 160))],
+                             erase=[[(1850, 1200), (1850, 2080), (1595, 2080)], [(390, 0), (770, 0), (770, 175), (420, 180)],
+                                    [(1290, 0), (1800, 0), (1800, 290), (1740, 250), (1640, 180), (1540, 110), (1440, 50)], [(0, 0), (90, 0), (90, 40), (0, 60)]],
+                             alt="Square stainless tube polished on the BT 114-S"),
+    "sh-bt114s-belt": dict(src=B + "belt.jpg", cutout=True, alt="Abrasive belt on the contact wheel — the tube is fed between the drive rolls"),
+    "sh-bt114s-rolls": dict(src=B + "rolls.jpg", cutout=True, crop=(0, 0, 1932, 2470), alt="Geared motor and drive rolls of the feed unit with the angle scale"),
+    "sh-bt114s-wheel": dict(src=B + "wheel.jpg", cutout=True, alt="Belt tensioning spring, angle scale and the rubber drive rolls"),
+    "sh-bt114s-belt-2": dict(src=B + "belt-2.jpg", cutout=True, boxes=[(480, 2280, 830, 2576, A)], alt="Belt path over the contact wheel with the drive rolls in front"),
+    "sh-bt114s-top": dict(src=B + "top.jpg", cutout=True, crop=(0, 0, 1932, 1980), alt="BT 114-S from above — belt, contact wheel and the two feed units"),
     # the p69 photos are of the SDK circle cutting & flanging machine (verified visually)
     "sh-sdk6-b": dict(src=D + "p69-8Q9A5018.jpg", boxes=[(4995, 945, 5270, 1095, A)], alt="SDK 6 circular cutting and flanging machine — part carrier, flanging head and control box"),
     "sh-sdk-rolls": dict(src=D + "p69-20230306-15144-.jpg", alt="SDK — top and bottom flanging rolls"),
@@ -189,14 +203,65 @@ PHOTOS = {
 }
 
 
+def fill_floor(im, poly, keep=(), keep_dark=(), keep_gray=(), ref=(1600, 1900), color=None, noise=2.5, open_px=(7, 15), min_area=4000):
+    """Paint the floor colour over a pallet (or anything else on the floor) that BiRefNet would otherwise keep with the
+    machine: every pixel inside `poly` becomes the floor colour of its row (median of the columns `ref`, plus noise),
+    except the `keep` polygons (machine parts), the thick dark structures inside the `keep_dark` polygons (a pendant
+    pole, a hose: value <= vmax, morphologically opened and bigger than `min_area`) and the grey pixels inside the
+    `keep_gray` polygons (saturation <= smax).  The cut-out then drops the painted area as floor."""
+    import numpy as np
+    from PIL import ImageDraw, ImageFilter
+    from scipy import ndimage
+    rgb = np.asarray(im.convert("RGB")).astype(np.float32)
+    hsv = np.asarray(im.convert("HSV")).astype(int); sat, val = hsv[..., 1], hsv[..., 2]
+
+    def P(pts):
+        m = Image.new("L", im.size, 0); ImageDraw.Draw(m).polygon(pts, fill=255); return np.asarray(m) > 0
+    fill = P(poly)
+    for k in keep:
+        fill &= ~P(k)
+    for k, vmax in keep_dark:
+        dm = np.asarray(Image.fromarray(((val <= vmax) * 255).astype(np.uint8)).filter(ImageFilter.MinFilter(open_px[0])).filter(ImageFilter.MaxFilter(open_px[1]))) > 0
+        dm &= P(k)
+        lab, n = ndimage.label(dm); sizes = ndimage.sum(dm, lab, range(1, n + 1))
+        fill &= ~np.isin(lab, [i + 1 for i, a in enumerate(sizes) if a >= min_area])
+    for k, smax in keep_gray:
+        gm = np.asarray(Image.fromarray(((sat <= smax) * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(5))) > 0
+        fill &= ~(P(k) & gm)
+    rowcol = np.median(rgb[:, ref[0]:ref[1], :], axis=1) if color is None else np.tile(np.array(color, np.float32), (rgb.shape[0], 1))
+    out = rgb.copy(); ys, xs = np.nonzero(fill)
+    out[ys, xs] = np.clip(rowcol[ys] + np.random.normal(0, noise, (len(ys), 3)), 0, 255)
+    res = Image.fromarray(out.astype(np.uint8))
+    if im.mode == "RGBA":
+        res.putalpha(im.getchannel("A"))
+    return res
+
+
 def process(key, spec):
     im = Image.open(spec["src"])
     im = im.convert("RGBA") if im.mode in ("RGBA", "LA", "P") else im.convert("RGB")
     if spec.get("crop"):
         im = im.crop(spec["crop"])
+    if spec.get("floor"):
+        im = fill_floor(im, **spec["floor"])
+    for f in spec.get("floor2") or []:
+        im = fill_floor(im, **f)
     boxes = spec.get("boxes") or []
     if boxes:
         im = delogo(im, boxes)
+    if spec.get("up"):   # small web/catalogue render: Real-ESRGAN x2 before the cut-out
+        from esrgan import upscale
+        im = upscale(im)
+    if spec.get("erase"):   # close-up that fills the frame: BiRefNet keeps everything, so cut here and clear the polygons by hand
+        import numpy as np
+        from PIL import ImageDraw
+        from birefnet_cut import cut_rgba
+        im = cut_rgba(im, cache_key=key)
+        a = Image.fromarray(np.asarray(im.getchannel("A")).copy())
+        d = ImageDraw.Draw(a)
+        for poly in spec["erase"]:
+            d.polygon(poly, fill=0)
+        im.putalpha(a)
     s = MAX_SIDE / max(im.size)
     if s < 1:
         im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)

@@ -250,7 +250,17 @@
     },
     {
      "label": "Hydraulic presses",
-     "href": "hydraulic-press.html"
+     "href": "hydraulic-press.html",
+     "children": [
+      {
+       "label": "Hydraulic shop presses · premium line",
+       "href": "hydraulic-press.html"
+      },
+      {
+       "label": "Production hydraulic presses · premium line",
+       "href": "hydraulic-press.html#novotech-production-group"
+      }
+     ]
     },
     {
      "label": "Plate bevelers",

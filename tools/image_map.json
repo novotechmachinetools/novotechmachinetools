@@ -15921,7 +15921,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-head": {
   "src": "tools/src-images/sahinler/sh-bt114s-head.jpg",
@@ -15929,7 +15929,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-front": {
   "src": "tools/src-images/sahinler/sh-bt114s-front.jpg",
@@ -15937,7 +15937,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-pendant": {
   "src": "tools/src-images/sahinler/sh-bt114s-pendant.jpg",
@@ -15945,15 +15945,15 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-square": {
-  "src": "tools/src-images/sahinler/sh-bt114s-square.jpg",
+  "src": "tools/src-images/sahinler/sh-bt114s-square.png",
   "alt": "Square stainless tube polished on the BT 114-S",
   "section": "sahinler",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-belt": {
   "src": "tools/src-images/sahinler/sh-bt114s-belt.jpg",
@@ -15961,7 +15961,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-rolls": {
   "src": "tools/src-images/sahinler/sh-bt114s-rolls.jpg",
@@ -15969,7 +15969,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-wheel": {
   "src": "tools/src-images/sahinler/sh-bt114s-wheel.jpg",
@@ -15977,7 +15977,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-belt-2": {
   "src": "tools/src-images/sahinler/sh-bt114s-belt-2.jpg",
@@ -15985,7 +15985,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "sh-bt114s-top": {
   "src": "tools/src-images/sahinler/sh-bt114s-top.jpg",
@@ -15993,7 +15993,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": true
  },
  "isitan-logo": {
   "src": "tools/src-images/isitan-logo.png",
@@ -16002,5 +16002,13 @@
   "trim": true,
   "quality": 90,
   "cutout": false
+ },
+ "sh-bt114s-photo": {
+  "src": "tools/src-images/sahinler/sh-bt114s-photo.jpg",
+  "alt": "BT 114-S pipe polishing machine with the belt head, feed unit and the mobile control pendant",
+  "section": "sahinler",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
  }
 }

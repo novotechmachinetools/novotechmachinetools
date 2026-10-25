@@ -59598,149 +59598,147 @@
   "variants": [
    {
     "w": 1200,
-    "h": 1600,
+    "h": 1711,
     "file": "img/sahinler/sh-bt114s-showroom-1200.webp",
-    "bytes": 114030
+    "bytes": 204914
    },
    {
     "w": 800,
-    "h": 1067,
+    "h": 1141,
     "file": "img/sahinler/sh-bt114s-showroom-800.webp",
-    "bytes": 65564
+    "bytes": 118134
    },
    {
     "w": 480,
-    "h": 640,
+    "h": 685,
     "file": "img/sahinler/sh-bt114s-showroom-480.webp",
-    "bytes": 32626
+    "bytes": 61266
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 120,
+   "w": 112,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-showroom-thumb.webp",
-   "bytes": 3864
-  }
+   "bytes": 8322
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-head": {
   "alt": "BT 114-S \u2014 the polishing head: drive rolls, hand-wheel feed adjustment and the belt guard",
   "variants": [
    {
     "w": 1200,
-    "h": 1600,
+    "h": 1556,
     "file": "img/sahinler/sh-bt114s-head-1200.webp",
-    "bytes": 83812
+    "bytes": 121192
    },
    {
     "w": 800,
-    "h": 1067,
+    "h": 1037,
     "file": "img/sahinler/sh-bt114s-head-800.webp",
-    "bytes": 47200
+    "bytes": 69640
    },
    {
     "w": 480,
-    "h": 640,
+    "h": 622,
     "file": "img/sahinler/sh-bt114s-head-480.webp",
-    "bytes": 23178
+    "bytes": 36288
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 120,
+   "w": 123,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-head-thumb.webp",
-   "bytes": 3210
-  }
+   "bytes": 5880
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-front": {
   "alt": "BT 114-S seen from the infeed side \u2014 two sets of drive rolls either side of the belt",
   "variants": [
    {
     "w": 1200,
-    "h": 1600,
+    "h": 1474,
     "file": "img/sahinler/sh-bt114s-front-1200.webp",
-    "bytes": 145468
+    "bytes": 160626
    },
    {
     "w": 800,
-    "h": 1067,
+    "h": 983,
     "file": "img/sahinler/sh-bt114s-front-800.webp",
-    "bytes": 73962
+    "bytes": 84846
    },
    {
     "w": 480,
-    "h": 640,
+    "h": 590,
     "file": "img/sahinler/sh-bt114s-front-480.webp",
-    "bytes": 30668
+    "bytes": 38170
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 120,
+   "w": 130,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-front-thumb.webp",
-   "bytes": 3534
-  }
+   "bytes": 6258
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-pendant": {
   "alt": "Mobile control pendant with start / stop, speed and feed controls, and the foot pedal",
   "variants": [
    {
-    "w": 1200,
-    "h": 1600,
-    "file": "img/sahinler/sh-bt114s-pendant-1200.webp",
-    "bytes": 111736
-   },
-   {
     "w": 800,
-    "h": 1067,
+    "h": 1810,
     "file": "img/sahinler/sh-bt114s-pendant-800.webp",
-    "bytes": 61328
+    "bytes": 92672
    },
    {
     "w": 480,
-    "h": 640,
+    "h": 1086,
     "file": "img/sahinler/sh-bt114s-pendant-480.webp",
-    "bytes": 29428
+    "bytes": 46528
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 120,
+   "w": 71,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-pendant-thumb.webp",
-   "bytes": 3794
-  }
+   "bytes": 3872
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-square": {
   "alt": "Square stainless tube polished on the BT 114-S",
   "variants": [
    {
     "w": 1200,
-    "h": 1600,
+    "h": 1387,
     "file": "img/sahinler/sh-bt114s-square-1200.webp",
-    "bytes": 79518
+    "bytes": 116012
    },
    {
     "w": 800,
-    "h": 1067,
+    "h": 924,
     "file": "img/sahinler/sh-bt114s-square-800.webp",
-    "bytes": 45012
+    "bytes": 67162
    },
    {
     "w": 480,
-    "h": 640,
+    "h": 555,
     "file": "img/sahinler/sh-bt114s-square-480.webp",
-    "bytes": 24178
+    "bytes": 35914
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 120,
+   "w": 138,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-square-thumb.webp",
-   "bytes": 4328
+   "bytes": 7704
   }
  },
  "sh-bt114s-belt": {
@@ -59750,52 +59748,54 @@
     "w": 800,
     "h": 779,
     "file": "img/sahinler/sh-bt114s-belt-800.webp",
-    "bytes": 51806
+    "bytes": 92640
    },
    {
     "w": 480,
     "h": 468,
     "file": "img/sahinler/sh-bt114s-belt-480.webp",
-    "bytes": 24146
+    "bytes": 44464
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
    "h": 156,
    "file": "img/sahinler/sh-bt114s-belt-thumb.webp",
-   "bytes": 3724
-  }
+   "bytes": 8190
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-rolls": {
   "alt": "Geared motor and drive rolls of the feed unit with the angle scale",
   "variants": [
    {
     "w": 1200,
-    "h": 1600,
+    "h": 1534,
     "file": "img/sahinler/sh-bt114s-rolls-1200.webp",
-    "bytes": 88034
+    "bytes": 126750
    },
    {
     "w": 800,
-    "h": 1067,
+    "h": 1023,
     "file": "img/sahinler/sh-bt114s-rolls-800.webp",
-    "bytes": 46062
+    "bytes": 69374
    },
    {
     "w": 480,
-    "h": 640,
+    "h": 614,
     "file": "img/sahinler/sh-bt114s-rolls-480.webp",
-    "bytes": 20872
+    "bytes": 34556
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 120,
+   "w": 125,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-rolls-thumb.webp",
-   "bytes": 2864
-  }
+   "bytes": 5850
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-wheel": {
   "alt": "Belt tensioning spring, angle scale and the rubber drive rolls",
@@ -59804,28 +59804,29 @@
     "w": 1200,
     "h": 1600,
     "file": "img/sahinler/sh-bt114s-wheel-1200.webp",
-    "bytes": 164778
+    "bytes": 234078
    },
    {
     "w": 800,
     "h": 1067,
     "file": "img/sahinler/sh-bt114s-wheel-800.webp",
-    "bytes": 90422
+    "bytes": 129840
    },
    {
     "w": 480,
     "h": 640,
     "file": "img/sahinler/sh-bt114s-wheel-480.webp",
-    "bytes": 39330
+    "bytes": 58694
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 120,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-wheel-thumb.webp",
-   "bytes": 4172
-  }
+   "bytes": 7748
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-belt-2": {
   "alt": "Belt path over the contact wheel with the drive rolls in front",
@@ -59834,58 +59835,60 @@
     "w": 1200,
     "h": 1600,
     "file": "img/sahinler/sh-bt114s-belt-2-1200.webp",
-    "bytes": 139194
+    "bytes": 209904
    },
    {
     "w": 800,
     "h": 1067,
     "file": "img/sahinler/sh-bt114s-belt-2-800.webp",
-    "bytes": 83762
+    "bytes": 122678
    },
    {
     "w": 480,
     "h": 640,
     "file": "img/sahinler/sh-bt114s-belt-2-480.webp",
-    "bytes": 43394
+    "bytes": 62356
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 120,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-belt-2-thumb.webp",
-   "bytes": 5340
-  }
+   "bytes": 8542
+  },
+  "cut": "birefnet"
  },
  "sh-bt114s-top": {
   "alt": "BT 114-S from above \u2014 belt, contact wheel and the two feed units",
   "variants": [
    {
     "w": 1200,
-    "h": 1230,
+    "h": 1348,
     "file": "img/sahinler/sh-bt114s-top-1200.webp",
-    "bytes": 123322
+    "bytes": 162952
    },
    {
     "w": 800,
-    "h": 820,
+    "h": 899,
     "file": "img/sahinler/sh-bt114s-top-800.webp",
-    "bytes": 67288
+    "bytes": 92200
    },
    {
     "w": 480,
-    "h": 492,
+    "h": 539,
     "file": "img/sahinler/sh-bt114s-top-480.webp",
-    "bytes": 31210
+    "bytes": 45082
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 156,
+   "w": 142,
    "h": 160,
    "file": "img/sahinler/sh-bt114s-top-thumb.webp",
-   "bytes": 5224
-  }
+   "bytes": 7956
+  },
+  "cut": "birefnet"
  },
  "isitan-logo": {
   "alt": "ISITAN",
@@ -59916,5 +59919,30 @@
    "file": "img/site/isitan-logo-thumb.webp",
    "bytes": 5066
   }
+ },
+ "sh-bt114s-photo": {
+  "alt": "BT 114-S pipe polishing machine with the belt head, feed unit and the mobile control pendant",
+  "variants": [
+   {
+    "w": 800,
+    "h": 881,
+    "file": "img/sahinler/sh-bt114s-photo-800.webp",
+    "bytes": 65846
+   },
+   {
+    "w": 480,
+    "h": 528,
+    "file": "img/sahinler/sh-bt114s-photo-480.webp",
+    "bytes": 36800
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 145,
+   "h": 160,
+   "file": "img/sahinler/sh-bt114s-photo-thumb.webp",
+   "bytes": 8530
+  },
+  "cut": "birefnet"
  }
 }
