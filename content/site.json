@@ -71,18 +71,30 @@
      "href": "press-brake.html",
      "children": [
       {
-       "label": "CNC press brakes — hydraulic, hybrid, electric",
+       "label": "Dener CNC press brakes — hydraulic, hybrid, electric",
        "href": "press-brake.html"
       },
       {
        "label": "Compact hydraulic press brakes",
        "href": "compact-hydraulic-press-brakes.html"
+      },
+      {
+       "label": "Hydraulic press brakes · value line",
+       "href": "hydraulic-press-brake.html"
+      },
+      {
+       "label": "Electric press brakes · value line",
+       "href": "electric-press-brake.html"
       }
      ]
     },
     {
      "label": "Panel benders",
      "href": "panel-bender.html"
+    },
+    {
+     "label": "V-grooving machines",
+     "href": "v-grooving-machine.html"
     },
     {
      "label": "Sheet laser cutters",
@@ -94,7 +106,17 @@
     },
     {
      "label": "Shears",
-     "href": "shear-cutting.html"
+     "href": "shear-cutting.html",
+     "children": [
+      {
+       "label": "Dener & Saymak shears",
+       "href": "shear-cutting.html"
+      },
+      {
+       "label": "Hydraulic shears · value line",
+       "href": "hydraulic-shearing-machine.html"
+      }
+     ]
     },
     {
      "label": "Ironworkers",

@@ -177,3 +177,14 @@ machine" 4,216, "metal shearing machine" 3,408, "hydraulic metal shear machine" 
 Titles: press-brake "Hydraulic & Electric CNC Press Brakes, 22–661 Tons | NovoTech"; laser-cutting-machine "Fiber Laser Cutting Machines for Sheet
 Metal, 3–40 kW | NovoTech"; tube-laser-cutting-machine "Tube Laser Cutting Machines, Ø0.3″ to 25″ Tube & Profile | NovoTech"; panel-bender
 "CNC Panel Bender, 79″ × 1/8″, 15 Servo Axes | NovoTech"; shear-cutting retitled "Metal Shear Machines — Mechanical & Hydraulic to 3/4″ | NovoTech".
+
+## Value-line sheet-metal pages (Oct 2026)
+
+GSC: "electric press brake" 452 impr. (pos. 68), "electric press brakes" 310, "servo electric press brake" 279, "hydraulic press brake canada" 348,
+"hydraulic press brake" 323, "hydraulic metal shear machine" 1,514, "hydraulic shear cutter" 1,268, "hydraulic shear machine" 1,034,
+"metal guillotine shear" 828, "ironworker machine" 1,472, "hydraulic ironworker machine" 1,130; V-grooving and panel bender: no impressions yet
+(the old site had no page).  Ubersuggest CA: "cnc press brake" 210/mo, "hydraulic press brake" 320, "hydraulic shear" 140, "ironworker machine" 210.
+Titles: hydraulic-press-brake "Hydraulic Press Brakes, CNC & NC, 33–1,323 Tons | NovoTech"; electric-press-brake "Electric Press Brakes, Servo
+Drive, 3–176 Tons | NovoTech"; hydraulic-shearing-machine "Hydraulic Shearing Machines to 1-9/16″ × 26 ft | NovoTech"; v-grooving-machine
+"V-Grooving Machines, CNC Horizontal & Vertical | NovoTech"; panel-bender retitled "CNC Panel Benders, 63–165″ Wide, 0.2 s per Bend | NovoTech";
+ironworker-machines "Hydraulic Ironworker Machines, 44 to 276 Ton | NovoTech".

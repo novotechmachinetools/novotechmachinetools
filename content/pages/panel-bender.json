@@ -2,15 +2,15 @@
  "slug": "panel-bender",
  "template": "category.html",
  "family_set": "dener",
- "title": "CNC Panel Bender, 79″ × 1/8″, 15 Servo Axes | NovoTech",
- "artifact_title": "CNC panel bender — four-side bending of blanks to 79 × 49″ with no tooling changes",
- "meta_description": "Automatic CNC panel bender sold and installed in Canada: folds all four sides of blanks to 79 × 49″ in one setup — 14 ga mild steel, 16 ga stainless, 1/8″ aluminum — 0.2 s per bend, 15 servo axes, no tooling changes.",
- "h1": "CNC panel bender — four-side bending of blanks to 79 × 49″ with no tooling changes",
- "intro": "A panel bender is the machine that replaces a press brake for boxes, doors, enclosures, panels and HVAC parts: the blank is clamped by a blank-holder and a bending blade folds the flange up or down, hems it or forms a box corner in 0.2 s, while the manipulator turns the part to bend the next side — all four sides in one setup, no tooling changes, no skilled operator. NovoTech sells the Dener panel bender in Canada: blanks to 78.7 × 49.2″ (2,000 × 1,250 mm), flanges to 6.7″, 14 ga mild steel, 16 ga stainless and 1/8″ aluminum, 15 servo axes with 0.001 mm positioning, 100 % electric at about 2.8 kW average draw. Automatic loading and unloading arms turn it into an unattended cell. Installed and supported from Mississauga, ON.",
+ "title": "CNC Panel Benders, 63–165″ Wide, 0.2 s per Bend | NovoTech",
+ "artifact_title": "CNC panel benders — four-side bending with no tooling changes, 63 to 165″ bend width",
+ "meta_description": "CNC panel benders sold in Canada: the Dener 79″ machine and NovoTech's value-line PB-M and PB-A, 63–165″, with automatic tool change — four sides, 0.2 s a bend.",
+ "h1": "CNC panel benders — four-side bending with no tooling changes, 63 to 165″ bend width",
+ "intro": "A panel bender is the machine that replaces a press brake for boxes, doors, enclosures, panels and HVAC parts: the blank is clamped by a blank-holder and a bending blade folds the flange up or down, hems it or forms a box corner in 0.2 s, while the manipulator turns the part to bend the next side — all four sides in one setup, no tooling changes, no skilled operator. NovoTech sells the Dener panel bender in Canada: blanks to 78.7 × 49.2″ (2,000 × 1,250 mm), flanges to 6.7″, 14 ga mild steel, 16 ga stainless and 1/8″ aluminum, 15 servo axes with 0.001 mm positioning, 100 % electric at about 2.8 kW average draw. Automatic loading and unloading arms turn it into an unattended cell. Below it is NovoTech's own value line: the PB-M press-arm panel benders in nine sizes from 63 to 165″ and the PB-A with automatic tool change in four sizes to 126″, built in China to our specification with the same 0.2 s bends and 14 ga capacity. All installed and supported from Mississauga, ON.",
  "hero_points": [
   "Blanks to 78.7 × 49.2″, flanges to 6.7″ (11.8″ on request), 1 mm minimum radius, boxes from 5.5 × 7.5″ inside",
   "14 ga mild steel, 16 ga stainless, 1/8″ aluminum — 0.2 s per bend, 295 ft/min feeding",
-  "15 servo axes, 0.001 mm positioning, 100 % electric, about 50 dB; loading / unloading arms available"
+  "Value line: PB-M 63 – 165″ in nine sizes, PB-A with 0.5 s automatic tool change to 126″; robot loading cells"
  ],
  "hero_image": "dn-panel-1",
  "hero_image_secondary": [
@@ -27,18 +27,28 @@
    "href": "products.html"
   },
   {
-   "label": "CNC panel bender — four-side bending of blanks to 79 × 49″ with no tooling changes"
+   "label": "CNC panel benders — four-side bending with no tooling changes, 63 to 165″ bend width"
   }
  ],
- "hero_brand_line": "Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries, Dener Canada in Mississauga. Sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "The Dener panel bender is made in Turkey by Dener Makina; the PB-M and PB-A carry the NovoTech name — built in China to North American standards. All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "panel-group",
-   "title": "CNC panel bender",
-   "lead": "Fully servo-driven four-side bending cell with a 3D control — one model, 79 × 49″ blanks.",
+   "title": "Dener CNC panel bender",
+   "lead": "Fully servo-driven four-side bending cell with a 3D control — one model, 79 × 49″ blanks, made in Turkey.",
    "brand": "dener",
    "families": [
     "dn-panel"
+   ]
+  },
+  {
+   "id": "panel-value-group",
+   "title": "NovoTech value-line panel benders",
+   "lead": "The PB-M press-arm machines in nine sizes and the PB-A with automatic tool change — 63 to 165″ bend width at a value-line price.",
+   "brand": "novotech",
+   "families": [
+    "vl-pbm",
+    "vl-pba"
    ]
   }
  ],
@@ -65,11 +75,7 @@
   }
  ],
  "faq_title": "Questions we get asked about panel benders",
- "catalogue_pdf": {
-  "file": "files/NovoTech-Dener-Panel-Bender-2026.pdf",
-  "label": "Download the panel bender brochure",
-  "size": "PDF · 1 MB · imperial units"
- },
+ "catalogue_pdf": null,
  "origin_feature": {
   "title": "Made in Turkey by Dener Makina",
   "text": "Dener has built sheet-metal machinery in Kayseri since 1974 — a 1.3 million m² campus, its own design awards (Good Design, European Product Design, Design Turkey) and offices in the USA, Canada, Germany and India."
@@ -102,5 +108,17 @@
  },
  "intro_video_heading": "Inside the factory — where the machines are built",
  "intro_video_text": "A tour of Dener Makina in Kayseri, Turkey, where the press brakes, shears and fiber lasers on this page are designed and built.",
- "nav_label": "Panel benders"
+ "nav_label": "Panel benders",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Dener-Panel-Bender-2026.pdf",
+   "label": "Download the panel bender brochure",
+   "size": "PDF · 1 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Panel-Benders-Value-Line-2026.pdf",
+   "label": "Download the value-line panel bender brochure",
+   "size": "PDF · 1 MB · imperial units"
+  }
+ ]
 }

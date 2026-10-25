@@ -1,0 +1,114 @@
+{
+ "slug": "v-grooving-machine",
+ "template": "category.html",
+ "family_set": "value-sheet",
+ "title": "V-Grooving Machines, CNC Horizontal & Vertical | NovoTech",
+ "artifact_title": "CNC V-grooving machines — horizontal to 20 ft, vertical to 1/4″ plate",
+ "meta_description": "CNC V-grooving machines sold in Canada: horizontal 10.5–20 ft tables for sheet to 5/32″, vertical to 13 ft for plate to 1/4″ — sharp zero-radius bends.",
+ "h1": "CNC V-grooving machines — horizontal to 20 ft, vertical to 1/4″ plate",
+ "intro": "A V-grooving machine (sheet grooving or slotting machine) planes a V-shaped channel along the bend line of a sheet, leaving a thin web; the sheet then folds to a sharp, zero-radius outside corner with no springback and no cracking or orange-peel of the finish — the way stainless elevator and door panels, column cladding, signage, appliance fronts and architectural trim are made, and the way thick sheet is bent on a small press brake. NovoTech sells its own value-line CNC V-grooving machines in Canada: the horizontal machines lay the sheet flat on a 10.5 to 20 ft table, the vertical machines stand it against a fixed beam in half the floor space and groove plate to 1/4″. Four-tool servo heads on ball screws, ± 0.01 mm, Taiwan CNC and servos, hydraulic clamping that does not mark the sheet. Installed and supported from Mississauga, ON, with a CSA-approved panel.",
+ "hero_points": [
+  "Horizontal: 7 sizes, 10.5 – 20 ft × 49 – 59″, sheet 0.016″ – 5/32″, four-tool head at 295 ft/min",
+  "Vertical: 4 sizes, 10.5 – 13 ft × 49 – 59″, plate to 1/4″, rear feeding, half the footprint",
+  "± 0.01 mm positioning, 0.001 mm resolution; hydraulic blank holder; CNC with touchscreen"
+ ],
+ "hero_image": "vl-vg-h-1",
+ "hero_image_secondary": [
+  "vl-vg-v-1",
+  "vl-vg-corner"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "CNC V-grooving machines — horizontal to 20 ft, vertical to 1/4″ plate"
+  }
+ ],
+ "hero_brand_line": "NovoTech's own value line: manufactured in China to high North American quality standards, with Delem, Estun, Hawe, Rexroth and Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell.",
+ "groups": [
+  {
+   "id": "vg-h-group",
+   "title": "Horizontal CNC V-grooving machines",
+   "lead": "The sheet lies flat on the table: the longest sheets, the four-tool head and the fastest grooving.",
+   "brand": "novotech",
+   "families": [
+    "vl-vg-h"
+   ]
+  },
+  {
+   "id": "vg-v-group",
+   "title": "Vertical CNC V-grooving machines",
+   "lead": "The sheet stands against the beam: half the floor space, no bed sag, plate to 1/4″.",
+   "brand": "novotech",
+   "families": [
+    "vl-vg-v"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is V-grooving for?",
+   "a": "Three things. Sharp corners: a press brake leaves an inside radius about equal to the thickness, a grooved sheet folds to a radius near zero, which is what architects, elevator and furniture makers want in stainless and aluminum. Finish: the groove removes most of the thickness so the outer skin bends without stretching — no cracking, no orange peel, no marking of brushed or mirror stainless and pre-painted sheet. Force: a grooved 1/4″ plate bends on a 40-ton brake, and long panels bend by hand on a folder."
+  },
+  {
+   "q": "Horizontal or vertical machine?",
+   "a": "The horizontal machine lays the sheet on a table with pneumatic clamps along the edge and the head travels the length — the machine for long panels (to 20 ft), thin sheet and the highest speed, and the one most sign and cladding shops buy. The vertical machine clamps the sheet upright against a fixed beam and feeds it from the rear: the bed cannot deflect, it grooves plate to 1/4″ and it takes half the floor space, at the cost of the 13 ft maximum length."
+  },
+  {
+   "q": "What sheet can it groove?",
+   "a": "Stainless, mild steel, aluminum, copper and brass from 0.016″ to 5/32″ on the horizontal machines and to 1/4″ on the vertical; sheet widths of 49 or 59″ and lengths of 10.5, 13, 16 and 20 ft. The groove depth is programmed in the control — typically 60 – 70 % of the thickness for a 90° bend — with the first groove no closer than 5/16″ to the edge."
+  },
+  {
+   "q": "How is it programmed?",
+   "a": "On the touchscreen CNC: enter the sheet thickness, the groove positions (or a pitch and count), the depth and the number of passes, and the machine runs the sheet automatically; the four-tool head takes the groove in several light cuts for a clean V. Programs are stored and recalled; the control runs in inches or millimetres."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about V-grooving machines",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-V-Grooving-Machines-2026.pdf",
+  "label": "Download the V-grooving machine brochure",
+  "size": "PDF · 1 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Built in China to North American standards",
+  "text": "NovoTech's own brand — European controls and hydraulics, inspected before shipping, same CSA panel, warranty and Mississauga, ON support as every machine we sell."
+ },
+ "section_label": "V-grooving machines",
+ "related_pages": [
+  {
+   "href": "hydraulic-press-brake.html",
+   "label": "Hydraulic press brakes"
+  },
+  {
+   "href": "panel-bender.html",
+   "label": "CNC panel benders"
+  },
+  {
+   "href": "folder-sheet-metal-brake.html",
+   "label": "Roofing & pan brakes"
+  },
+  {
+   "href": "hydraulic-shearing-machine.html",
+   "label": "Hydraulic shears"
+  },
+  {
+   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
+   "label": "Deburring & finishing"
+  }
+ ],
+ "related_title": "More sheet-metal machinery from NovoTech",
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null,
+ "nav_label": "V-grooving machines"
+}

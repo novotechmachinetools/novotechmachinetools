@@ -1,0 +1,6228 @@
+{
+ "order": [
+  "vl-wad-small",
+  "vl-wad-large",
+  "vl-wad-heavy",
+  "vl-nc-small",
+  "vl-nc-large",
+  "vl-wadg",
+  "vl-wadg-mini",
+  "vl-qc12k",
+  "vl-q11k",
+  "vl-vg-h",
+  "vl-vg-v"
+ ],
+ "families": {
+  "vl-wad-small": {
+   "id": "vl-wad-small",
+   "brand": "novotech",
+   "name": "CNC hydraulic press brakes, 55 – 149 US tons × 4 – 13.5 ft",
+   "short": "CNC press brakes 50 – 135 t",
+   "models_label": "WAD-50T/1300 – WAD-135T/4100 · 9 models",
+   "summary": "The value-line CNC press brake: electro-hydraulic servo synchronisation with Hawe valves and linear scales, a servo-driven pump that only runs while the ram moves, a Delem DA-53T control and a servo back gauge on ball screws — the same architecture as the European machines, built to a price that lets a small shop own a real CNC brake. Nine models from 55 US tons × 4 ft to 149 US tons × 13.5 ft; the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for, with the DA-53T or DA-58T and 4+1 axes. Delem DA-66T / 69T 3D controls, 6-axis back gauges, DSP laser protection, sheet followers and Wila clamping are options.",
+   "features": [
+    "Mild steel to 1/4″ over 10 ft on the 110 t, 5/16″ on the 135 t (V = 8 × thickness)",
+    "Delem DA-53T 2D touchscreen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
+    "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
+    "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
+    "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
+    "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
+    "European-style quick clamps and a segmented 2-V die with sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+    "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DA-58T (15″ 2D), DA-66T (17″ 2D + 3D view) or DA-69T (3D) control; ESA S875, Cybelec options",
+    "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
+    "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains",
+    "CNC sheet follower supports",
+    "Wila hydraulic clamping; double-sided quick clamps; Rolleri pneumatic clamps",
+    "Automatic angle measurement",
+    "Hydraulic oil cooler; automatic lubrication",
+    "Tandem machines on one control; robot bending cells",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-wad-1",
+    "vl-wad-2",
+    "vl-wade-1",
+    "vl-pb-da53",
+    "vl-pb-backgauge",
+    "vl-pb-clamps",
+    "vl-pb-quickclamp",
+    "vl-pb-cylinders",
+    "vl-pb-fingers",
+    "vl-pb-servo-bg",
+    "vl-pb-crowning",
+    "vl-pb-dsp"
+   ],
+   "videos": [
+    {
+     "id": "KyNWOyaBKDM",
+     "title": "How to align press brake dies",
+     "duration": "PT4M34S",
+     "thumb": "video-KyNWOyaBKDM"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CNC hydraulic press brakes · 4 – 13.5 ft",
+      "sub": "9 models · 55 – 149 US tons",
+      "models": [
+       "WAD-50T/1300",
+       "WAD-50T/1600",
+       "WAD-70T/2000",
+       "WAD-70T/2500",
+       "WAD-80T/2500",
+       "WAD-110T/3200",
+       "WAD-110T/4100",
+       "WAD-135T/3200",
+       "WAD-135T/4100"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "55 US tons (50 t)",
+         "55 US tons (50 t)",
+         "77 US tons (70 t)",
+         "77 US tons (70 t)",
+         "88 US tons (80 t)",
+         "121 US tons (110 t)",
+         "121 US tons (110 t)",
+         "149 US tons (135 t)",
+         "149 US tons (135 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "4.3 ft · 51.2″ (1,300 mm)",
+         "5.2 ft · 63.0″ (1,600 mm)",
+         "6.6 ft · 78.7″ (2,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "44.1″ (1,120 mm)",
+         "51.2″ (1,300 mm)",
+         "63.0″ (1,600 mm)",
+         "80.7″ (2,050 mm)",
+         "80.7″ (2,050 mm)",
+         "106.3″ (2,700 mm)",
+         "141.7″ (3,600 mm)",
+         "106.3″ (2,700 mm)",
+         "141.7″ (3,600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "8.66 in/s (220 mm/s)",
+         "8.66 in/s (220 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.51 in/s (13 mm/s)",
+         "0.71 in/s (18 mm/s)",
+         "0.51 in/s (13 mm/s)",
+         "0.59 in/s (15 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.47 in/s (12 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "5.71 in/s (145 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 15.75 in/s (400 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 15.75 in/s (400 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo main motor",
+        "sub": "",
+        "cells": [
+         "5.9 HP (4.4 kW)",
+         "5.9 HP (4.4 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "11.7 HP (8.7 kW)",
+         "14.5 HP (10.8 kW)",
+         "14.5 HP (10.8 kW)",
+         "14.5 HP (10.8 kW)",
+         "14.5 HP (10.8 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "34 US gal (130 L)",
+         "34 US gal (130 L)",
+         "34 US gal (130 L)",
+         "34 US gal (130 L)",
+         "45 US gal (170 L)",
+         "45 US gal (170 L)",
+         "45 US gal (170 L)",
+         "45 US gal (170 L)",
+         "45 US gal (170 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 59 × 92″ (1,750 × 1,500 × 2,330 mm)",
+         "85 × 59 × 92″ (2,150 × 1,500 × 2,330 mm)",
+         "94 × 63 × 94″ (2,400 × 1,600 × 2,400 mm)",
+         "122 × 63 × 94″ (3,100 × 1,600 × 2,400 mm)",
+         "122 × 63 × 97″ (3,100 × 1,600 × 2,460 mm)",
+         "148 × 87 × 106″ (3,750 × 2,202 × 2,700 mm)",
+         "185 × 71 × 106″ (4,700 × 1,800 × 2,700 mm)",
+         "150 × 71 × 106″ (3,800 × 1,800 × 2,700 mm)",
+         "185 × 71 × 106″ (4,700 × 1,800 × 2,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,716 lb (3,500 kg)",
+         "7,716 lb (3,500 kg)",
+         "9,259 lb (4,200 kg)",
+         "9,700 lb (4,400 kg)",
+         "12,346 lb (5,600 kg)",
+         "16,535 lb (7,500 kg)",
+         "19,180 lb (8,700 kg)",
+         "18,298 lb (8,300 kg)",
+         "23,149 lb (10,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WAD-50T/1300",
+      "glance": [
+       "55 US tons (50 t)",
+       "4.3 ft · 51.2″ (1,300 mm)",
+       "5.9″ (150 mm)",
+       "18.1″ (460 mm)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-50T/1600",
+      "glance": [
+       "55 US tons (50 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "5.9″ (150 mm)",
+       "18.1″ (460 mm)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-70T/2000",
+      "glance": [
+       "77 US tons (70 t)",
+       "6.6 ft · 78.7″ (2,000 mm)",
+       "5.9″ (150 mm)",
+       "18.1″ (460 mm)",
+       "9,259 lb (4,200 kg)"
+      ]
+     },
+     {
+      "name": "WAD-70T/2500",
+      "glance": [
+       "77 US tons (70 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "5.9″ (150 mm)",
+       "18.1″ (460 mm)",
+       "9,700 lb (4,400 kg)"
+      ]
+     },
+     {
+      "name": "WAD-80T/2500",
+      "glance": [
+       "88 US tons (80 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "5.9″ (150 mm)",
+       "18.1″ (460 mm)",
+       "12,346 lb (5,600 kg)"
+      ]
+     },
+     {
+      "name": "WAD-110T/3200",
+      "glance": [
+       "121 US tons (110 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "16,535 lb (7,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-110T/4100",
+      "glance": [
+       "121 US tons (110 t)",
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "19,180 lb (8,700 kg)"
+      ]
+     },
+     {
+      "name": "WAD-135T/3200",
+      "glance": [
+       "149 US tons (135 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "18,298 lb (8,300 kg)"
+      ]
+     },
+     {
+      "name": "WAD-135T/4100",
+      "glance": [
+       "149 US tons (135 t)",
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "23,149 lb (10,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic press brake brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "pb-cnc"
+  },
+  "vl-wad-large": {
+   "id": "vl-wad-large",
+   "brand": "novotech",
+   "name": "CNC hydraulic press brakes, 187 – 331 US tons × 10 – 20 ft",
+   "short": "CNC press brakes 170 – 300 t",
+   "models_label": "WAD-170T/3200 – WAD-300T/6000 · 16 models",
+   "summary": "The same CNC press brake from 170 to 300 t: 10, 13.5, 16 and 20 ft bending lengths, 17.7 – 19.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.4″ daylight for deep boxes, with 25 – 40 cc pumps and 13 – 21 kW servo main motors. The 220 t × 13 ft and 250 t × 13 ft machines bend 3/8″ plate the full length; the 300 t × 20 ft bends 1/2″ over 13 ft. Delem DA-53T standard, 4+1 axes with CNC crowning.",
+   "features": [
+    "Mild steel to 3/8″ over 13 ft on the 220 t, 1/2″ over 13 ft on the 300 t (V = 8 × thickness)",
+    "Delem DA-53T 2D touchscreen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
+    "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
+    "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
+    "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
+    "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
+    "European-style quick clamps and a segmented 2-V die with sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+    "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DA-58T (15″ 2D), DA-66T (17″ 2D + 3D view) or DA-69T (3D) control; ESA S875, Cybelec options",
+    "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
+    "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains",
+    "CNC sheet follower supports",
+    "Wila hydraulic clamping; double-sided quick clamps; Rolleri pneumatic clamps",
+    "Automatic angle measurement",
+    "Hydraulic oil cooler; automatic lubrication",
+    "Tandem machines on one control; robot bending cells",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-wad-robot",
+    "vl-pb-da58",
+    "vl-pb-da66",
+    "vl-pb-hydclamp",
+    "vl-pb-clamp-open",
+    "vl-pb-follower-detail"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CNC hydraulic press brakes · 170 – 220 t",
+      "sub": "8 models · 187 – 243 US tons · 10 – 20 ft",
+      "models": [
+       "WAD-170T/3200",
+       "WAD-170T/4100",
+       "WAD-170T/5000",
+       "WAD-170T/6000",
+       "WAD-220T/3200",
+       "WAD-220T/4100",
+       "WAD-220T/5000",
+       "WAD-220T/6000"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "187 US tons (170 t)",
+         "187 US tons (170 t)",
+         "187 US tons (170 t)",
+         "187 US tons (170 t)",
+         "243 US tons (220 t)",
+         "243 US tons (220 t)",
+         "243 US tons (220 t)",
+         "243 US tons (220 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.5 ft · 161.4″ (4,100 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "106.3″ (2,700 mm)",
+         "141.7″ (3,600 mm)",
+         "157.5″ (4,000 mm)",
+         "189.0″ (4,800 mm)",
+         "102.4″ (2,600 mm)",
+         "141.7″ (3,600 mm)",
+         "157.5″ (4,000 mm)",
+         "189.0″ (4,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.35 in/s (9 mm/s)",
+         "0.35 in/s (9 mm/s)",
+         "0.35 in/s (9 mm/s)",
+         "0.35 in/s (9 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "4.13 in/s (105 mm/s)",
+         "4.13 in/s (105 mm/s)",
+         "4.13 in/s (105 mm/s)",
+         "4.13 in/s (105 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo main motor",
+        "sub": "",
+        "cells": [
+         "17.7 HP (13.2 kW)",
+         "17.7 HP (13.2 kW)",
+         "17.7 HP (13.2 kW)",
+         "17.7 HP (13.2 kW)",
+         "22.4 HP (16.7 kW)",
+         "22.4 HP (16.7 kW)",
+         "22.4 HP (16.7 kW)",
+         "22.4 HP (16.7 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "150 × 79 × 110″ (3,800 × 2,000 × 2,800 mm)",
+         "185 × 79 × 110″ (4,700 × 2,000 × 2,800 mm)",
+         "248 × 79 × 124″ (6,300 × 2,000 × 3,160 mm)",
+         "248 × 79 × 124″ (6,300 × 2,000 × 3,160 mm)",
+         "150 × 87 × 112″ (3,800 × 2,200 × 2,850 mm)",
+         "185 × 87 × 112″ (4,700 × 2,200 × 2,850 mm)",
+         "220 × 87 × 117″ (5,600 × 2,200 × 2,980 mm)",
+         "264 × 87 × 127″ (6,700 × 2,200 × 3,220 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "23,810 lb (10,800 kg)",
+         "27,558 lb (12,500 kg)",
+         "29,542 lb (13,400 kg)",
+         "42,990 lb (19,500 kg)",
+         "27,558 lb (12,500 kg)",
+         "32,187 lb (14,600 kg)",
+         "38,581 lb (17,500 kg)",
+         "45,195 lb (20,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "CNC hydraulic press brakes · 250 – 300 t",
+      "sub": "8 models · 276 – 331 US tons · 10 – 20 ft",
+      "models": [
+       "WAD-250T/3200",
+       "WAD-250T/4000",
+       "WAD-250T/5000",
+       "WAD-250T/6000",
+       "WAD-300T/3200",
+       "WAD-300T/4000",
+       "WAD-300T/5000",
+       "WAD-300T/6000"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "276 US tons (250 t)",
+         "276 US tons (250 t)",
+         "276 US tons (250 t)",
+         "276 US tons (250 t)",
+         "331 US tons (300 t)",
+         "331 US tons (300 t)",
+         "331 US tons (300 t)",
+         "331 US tons (300 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "102.4″ (2,600 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)",
+         "102.4″ (2,600 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "21.3″ (540 mm)",
+         "21.3″ (540 mm)",
+         "21.3″ (540 mm)",
+         "21.3″ (540 mm)",
+         "22.4″ (570 mm)",
+         "22.4″ (570 mm)",
+         "22.4″ (570 mm)",
+         "22.4″ (570 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.33 in/s (110 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo main motor",
+        "sub": "",
+        "cells": [
+         "22.4 HP (16.7 kW)",
+         "22.4 HP (16.7 kW)",
+         "22.4 HP (16.7 kW)",
+         "22.4 HP (16.7 kW)",
+         "28.7 HP (21.4 kW)",
+         "28.7 HP (21.4 kW)",
+         "28.7 HP (21.4 kW)",
+         "28.7 HP (21.4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "122 US gal (460 L)",
+         "122 US gal (460 L)",
+         "122 US gal (460 L)",
+         "122 US gal (460 L)",
+         "172 US gal (650 L)",
+         "172 US gal (650 L)",
+         "172 US gal (650 L)",
+         "172 US gal (650 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "150 × 87 × 123″ (3,800 × 2,200 × 3,120 mm)",
+         "181 × 87 × 124″ (4,600 × 2,200 × 3,150 mm)",
+         "220 × 85 × 124″ (5,600 × 2,150 × 3,150 mm)",
+         "248 × 85 × 124″ (6,300 × 2,150 × 3,150 mm)",
+         "138 × 89 × 126″ (3,500 × 2,250 × 3,200 mm)",
+         "169 × 98 × 134″ (4,300 × 2,500 × 3,400 mm)",
+         "209 × 98 × 134″ (5,300 × 2,500 × 3,400 mm)",
+         "248 × 98 × 134″ (6,300 × 2,500 × 3,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "36,376 lb (16,500 kg)",
+         "36,597 lb (16,600 kg)",
+         "45,195 lb (20,500 kg)",
+         "56,218 lb (25,500 kg)",
+         "41,447 lb (18,800 kg)",
+         "43,872 lb (19,900 kg)",
+         "57,982 lb (26,300 kg)",
+         "65,477 lb (29,700 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WAD-170T/3200",
+      "glance": [
+       "187 US tons (170 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "23,810 lb (10,800 kg)"
+      ]
+     },
+     {
+      "name": "WAD-170T/4100",
+      "glance": [
+       "187 US tons (170 t)",
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-170T/5000",
+      "glance": [
+       "187 US tons (170 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "29,542 lb (13,400 kg)"
+      ]
+     },
+     {
+      "name": "WAD-170T/6000",
+      "glance": [
+       "187 US tons (170 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "42,990 lb (19,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-220T/3200",
+      "glance": [
+       "243 US tons (220 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-220T/4100",
+      "glance": [
+       "243 US tons (220 t)",
+       "13.5 ft · 161.4″ (4,100 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "32,187 lb (14,600 kg)"
+      ]
+     },
+     {
+      "name": "WAD-220T/5000",
+      "glance": [
+       "243 US tons (220 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "38,581 lb (17,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-220T/6000",
+      "glance": [
+       "243 US tons (220 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "45,195 lb (20,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-250T/3200",
+      "glance": [
+       "276 US tons (250 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9.8″ (250 mm)",
+       "21.3″ (540 mm)",
+       "36,376 lb (16,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-250T/4000",
+      "glance": [
+       "276 US tons (250 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9.8″ (250 mm)",
+       "21.3″ (540 mm)",
+       "36,597 lb (16,600 kg)"
+      ]
+     },
+     {
+      "name": "WAD-250T/5000",
+      "glance": [
+       "276 US tons (250 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "9.8″ (250 mm)",
+       "21.3″ (540 mm)",
+       "45,195 lb (20,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-250T/6000",
+      "glance": [
+       "276 US tons (250 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "9.8″ (250 mm)",
+       "21.3″ (540 mm)",
+       "56,218 lb (25,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-300T/3200",
+      "glance": [
+       "331 US tons (300 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9.8″ (250 mm)",
+       "22.4″ (570 mm)",
+       "41,447 lb (18,800 kg)"
+      ]
+     },
+     {
+      "name": "WAD-300T/4000",
+      "glance": [
+       "331 US tons (300 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9.8″ (250 mm)",
+       "22.4″ (570 mm)",
+       "43,872 lb (19,900 kg)"
+      ]
+     },
+     {
+      "name": "WAD-300T/5000",
+      "glance": [
+       "331 US tons (300 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "9.8″ (250 mm)",
+       "22.4″ (570 mm)",
+       "57,982 lb (26,300 kg)"
+      ]
+     },
+     {
+      "name": "WAD-300T/6000",
+      "glance": [
+       "331 US tons (300 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "9.8″ (250 mm)",
+       "22.4″ (570 mm)",
+       "65,477 lb (29,700 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic press brake brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "pb-cnc"
+  },
+  "vl-wad-heavy": {
+   "id": "vl-wad-heavy",
+   "brand": "novotech",
+   "name": "Heavy-duty CNC press brakes, 441 – 1,323 US tons × 13 – 26 ft, and tandems",
+   "short": "Heavy-duty & tandem press brakes",
+   "models_label": "WAD-400T/4000 – WAD-1200T/8000 · 21 models · tandem to 60 ft",
+   "summary": "For plate work, poles, towers and long profiles: 400 to 1,200 t machines with 13, 16, 20, 23 and 26 ft beds, 23.6″ throats, strokes to 15.7″ and 36″ daylight, twin pumps and twin servo motors from 800 t up, and a 38.6″ (980 mm) back gauge stroke as standard. CNC sheet followers, extra-long front supports and tandem configurations — two machines on one control bending to 60 ft — are built to order; the 3,000 t × 30 ft machine in the photos shows how far the range goes.",
+   "features": [
+    "Twin cylinders and twin pumps from 800 t; 38.6″ (980 mm) X back gauge stroke; 11 – 15 ft bed widths",
+    "Delem DA-53T 2D touchscreen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
+    "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
+    "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
+    "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
+    "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
+    "European-style quick clamps and a segmented 2-V die with sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+    "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DA-58T (15″ 2D), DA-66T (17″ 2D + 3D view) or DA-69T (3D) control; ESA S875, Cybelec options",
+    "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
+    "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains",
+    "CNC sheet follower supports",
+    "Wila hydraulic clamping; double-sided quick clamps; Rolleri pneumatic clamps",
+    "Automatic angle measurement",
+    "Hydraulic oil cooler; automatic lubrication",
+    "Tandem machines on one control; robot bending cells",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase",
+    "Extra-long front supports and CNC sheet followers for plate",
+    "Tandem and tridem machines to 60 ft on one control"
+   ],
+   "images": [
+    "vl-wad-heavy",
+    "vl-wad-follower",
+    "vl-wad-tandem",
+    "vl-wad-tandem-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Heavy-duty CNC press brakes · 400 – 600 t",
+      "sub": "9 models · 441 – 661 US tons · 13 – 20 ft",
+      "models": [
+       "WAD-400T/4000",
+       "WAD-400T/5000",
+       "WAD-400T/6000",
+       "WAD-500T/4000",
+       "WAD-500T/5000",
+       "WAD-500T/6000",
+       "WAD-600T/4000",
+       "WAD-600T/5000",
+       "WAD-600T/6000"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "441 US tons (400 t)",
+         "441 US tons (400 t)",
+         "441 US tons (400 t)",
+         "551 US tons (500 t)",
+         "551 US tons (500 t)",
+         "551 US tons (500 t)",
+         "661 US tons (600 t)",
+         "661 US tons (600 t)",
+         "661 US tons (600 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "24.0″ (610 mm)",
+         "24.0″ (610 mm)",
+         "24.0″ (610 mm)",
+         "24.0″ (610 mm)",
+         "24.0″ (610 mm)",
+         "24.0″ (610 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.37 in/s (9.5 mm/s)",
+         "0.37 in/s (9.5 mm/s)",
+         "0.37 in/s (9.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "3.35 in/s (85 mm/s)",
+         "3.35 in/s (85 mm/s)",
+         "3.35 in/s (85 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 8.66 in/s (220 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 8.66 in/s (220 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo main motor",
+        "sub": "",
+        "cells": [
+         "36.1 HP (26.9 kW)",
+         "36.1 HP (26.9 kW)",
+         "36.1 HP (26.9 kW)",
+         "44.3 HP (33 kW)",
+         "44.3 HP (33 kW)",
+         "44.3 HP (33 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "211 US gal (800 L)",
+         "211 US gal (800 L)",
+         "211 US gal (800 L)",
+         "201 US gal (760 L)",
+         "201 US gal (760 L)",
+         "201 US gal (760 L)",
+         "277 US gal (1050 L)",
+         "277 US gal (1050 L)",
+         "277 US gal (1050 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "169 × 106 × 138″ (4,300 × 2,700 × 3,500 mm)",
+         "209 × 106 × 138″ (5,300 × 2,700 × 3,500 mm)",
+         "248 × 106 × 138″ (6,300 × 2,700 × 3,500 mm)",
+         "169 × 106 × 138″ (4,300 × 2,700 × 3,500 mm)",
+         "209 × 106 × 138″ (5,300 × 2,700 × 3,500 mm)",
+         "248 × 106 × 142″ (6,300 × 2,700 × 3,600 mm)",
+         "169 × 130 × 154″ (4,300 × 3,300 × 3,900 mm)",
+         "209 × 130 × 154″ (5,300 × 3,300 × 3,900 mm)",
+         "248 × 130 × 154″ (6,300 × 3,300 × 3,900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "54,675 lb (24,800 kg)",
+         "66,139 lb (30,000 kg)",
+         "78,264 lb (35,500 kg)",
+         "73,855 lb (33,500 kg)",
+         "79,807 lb (36,200 kg)",
+         "92,153 lb (41,800 kg)",
+         "95,019 lb (43,100 kg)",
+         "106,483 lb (48,300 kg)",
+         "123,900 lb (56,200 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Heavy-duty CNC press brakes · 800 – 1,200 t",
+      "sub": "12 models · 882 – 1,323 US tons · 13 – 26 ft · twin pumps",
+      "models": [
+       "WAD-800T/4000",
+       "WAD-800T/5000",
+       "WAD-800T/6000",
+       "WAD-800T/8000",
+       "WAD-1000T/5000",
+       "WAD-1000T/6000",
+       "WAD-1000T/7000",
+       "WAD-1000T/8000",
+       "WAD-1200T/5000",
+       "WAD-1200T/6000",
+       "WAD-1200T/7000",
+       "WAD-1200T/8000"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "882 US tons (800 t)",
+         "882 US tons (800 t)",
+         "882 US tons (800 t)",
+         "882 US tons (800 t)",
+         "1,102 US tons (1000 t)",
+         "1,102 US tons (1000 t)",
+         "1,102 US tons (1000 t)",
+         "1,102 US tons (1000 t)",
+         "1,323 US tons (1200 t)",
+         "1,323 US tons (1200 t)",
+         "1,323 US tons (1200 t)",
+         "1,323 US tons (1200 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "26.2 ft · 315.0″ (8,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "23 ft · 275.6″ (7,000 mm)",
+         "26.2 ft · 315.0″ (8,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "23 ft · 275.6″ (7,000 mm)",
+         "26.2 ft · 315.0″ (8,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "110.2″ (2,800 mm)",
+         "145.7″ (3,700 mm)",
+         "181.1″ (4,600 mm)",
+         "248.0″ (6,300 mm)",
+         "141.7″ (3,600 mm)",
+         "181.1″ (4,600 mm)",
+         "220.5″ (5,600 mm)",
+         "248.0″ (6,300 mm)",
+         "137.8″ (3,500 mm)",
+         "177.2″ (4,500 mm)",
+         "208.7″ (5,300 mm)",
+         "248.0″ (6,300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "3.54 in/s (90 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.15 in/s (80 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "38.6″ (980 mm) · 8.66 in/s (220 mm/s)",
+         "38.6″ (980 mm) · 8.66 in/s (220 mm/s)",
+         "38.6″ (980 mm) · 8.66 in/s (220 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)",
+         "38.6″ (980 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)",
+         "7.9″ (200 mm) · 1.57 in/s (40 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo main motor",
+        "sub": "",
+        "cells": [
+         "2 × 36.1 HP (26.9 kW)",
+         "2 × 36.1 HP (26.9 kW)",
+         "2 × 36.1 HP (26.9 kW)",
+         "2 × 36.1 HP (26.9 kW)",
+         "2 × 44.3 HP (33 kW)",
+         "2 × 44.3 HP (33 kW)",
+         "2 × 44.3 HP (33 kW)",
+         "2 × 44.3 HP (33 kW)",
+         "2 × 60.3 HP (45 kW)",
+         "2 × 60.3 HP (45 kW)",
+         "2 × 60.3 HP (45 kW)",
+         "2 × 60.3 HP (45 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "476 US gal (1800 L)",
+         "476 US gal (1800 L)",
+         "476 US gal (1800 L)",
+         "476 US gal (1800 L)",
+         "449 US gal (1700 L)",
+         "449 US gal (1700 L)",
+         "502 US gal (1900 L)",
+         "502 US gal (1900 L)",
+         "608 US gal (2300 L)",
+         "608 US gal (2300 L)",
+         "608 US gal (2300 L)",
+         "608 US gal (2300 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "167 × 138 × 161″ (4,250 × 3,500 × 4,100 mm)",
+         "209 × 142 × 174″ (5,300 × 3,600 × 4,420 mm)",
+         "248 × 142 × 169″ (6,300 × 3,600 × 4,300 mm)",
+         "327 × 142 × 177″ (8,300 × 3,600 × 4,500 mm)",
+         "207 × 174 × 168″ (5,260 × 4,410 × 4,260 mm)",
+         "246 × 174 × 176″ (6,260 × 4,410 × 4,460 mm)",
+         "288 × 174 × 184″ (7,310 × 4,410 × 4,680 mm)",
+         "327 × 174 × 196″ (8,300 × 4,410 × 4,980 mm)",
+         "208 × 182 × 168″ (5,280 × 4,620 × 4,260 mm)",
+         "247 × 182 × 180″ (6,280 × 4,620 × 4,560 mm)",
+         "287 × 182 × 191″ (7,280 × 4,620 × 4,860 mm)",
+         "326 × 182 × 199″ (8,280 × 4,620 × 5,060 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "125,663 lb (57,000 kg)",
+         "145,505 lb (66,000 kg)",
+         "163,142 lb (74,000 kg)",
+         "192,904 lb (87,500 kg)",
+         "171,960 lb (78,000 kg)",
+         "194,007 lb (88,000 kg)",
+         "211,644 lb (96,000 kg)",
+         "233,690 lb (106,000 kg)",
+         "213,848 lb (97,000 kg)",
+         "233,690 lb (106,000 kg)",
+         "249,122 lb (113,000 kg)",
+         "271,168 lb (123,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WAD-400T/4000",
+      "glance": [
+       "441 US tons (400 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "54,675 lb (24,800 kg)"
+      ]
+     },
+     {
+      "name": "WAD-400T/5000",
+      "glance": [
+       "441 US tons (400 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "66,139 lb (30,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-400T/6000",
+      "glance": [
+       "441 US tons (400 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "78,264 lb (35,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-500T/4000",
+      "glance": [
+       "551 US tons (500 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "73,855 lb (33,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-500T/5000",
+      "glance": [
+       "551 US tons (500 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "79,807 lb (36,200 kg)"
+      ]
+     },
+     {
+      "name": "WAD-500T/6000",
+      "glance": [
+       "551 US tons (500 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "92,153 lb (41,800 kg)"
+      ]
+     },
+     {
+      "name": "WAD-600T/4000",
+      "glance": [
+       "661 US tons (600 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12.6″ (320 mm)",
+       "25.6″ (650 mm)",
+       "95,019 lb (43,100 kg)"
+      ]
+     },
+     {
+      "name": "WAD-600T/5000",
+      "glance": [
+       "661 US tons (600 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "12.6″ (320 mm)",
+       "25.6″ (650 mm)",
+       "106,483 lb (48,300 kg)"
+      ]
+     },
+     {
+      "name": "WAD-600T/6000",
+      "glance": [
+       "661 US tons (600 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "12.6″ (320 mm)",
+       "25.6″ (650 mm)",
+       "123,900 lb (56,200 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/4000",
+      "glance": [
+       "882 US tons (800 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "125,663 lb (57,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/5000",
+      "glance": [
+       "882 US tons (800 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "145,505 lb (66,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/6000",
+      "glance": [
+       "882 US tons (800 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "163,142 lb (74,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/8000",
+      "glance": [
+       "882 US tons (800 t)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "192,904 lb (87,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/5000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "171,960 lb (78,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/6000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "194,007 lb (88,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/7000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "23 ft · 275.6″ (7,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "211,644 lb (96,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/8000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "233,690 lb (106,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/5000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "213,848 lb (97,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/6000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "233,690 lb (106,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/7000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "23 ft · 275.6″ (7,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "249,122 lb (113,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/8000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "271,168 lb (123,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic press brake brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "pb-cnc"
+  },
+  "vl-nc-small": {
+   "id": "vl-nc-small",
+   "brand": "novotech",
+   "name": "NC hydraulic press brakes, 33 – 138 US tons × 5 – 20 ft — torsion bar",
+   "short": "NC press brakes 30 – 125 t",
+   "models_label": "WC67K-30t/1600 – WC67K/E-125t/6000 · 13 models",
+   "summary": "The simplest press brake we sell: a torsion bar keeps the two ram cylinders in step mechanically, mechanical stops set the depth and an Estun E21 control positions the back gauge and the ram for 40 stored programs. No servo valves, no linear scales — nothing that needs a technician — which is why these machines run for decades in general fabrication shops bending brackets, boxes, channels and roofing. Thirteen models from 33 tons × 5 ft to 138 tons × 20 ft; the 100 t × 10 ft and 125 t × 13 ft are the standard sizes.",
+   "features": [
+    "Mild steel to 1/4″ over 10 ft on the 100 t, 5/16″ over 10 ft on the 125 t (V = 8 × thickness)",
+    "Estun E21 NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, stroke counter; inches or millimetres",
+    "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
+    "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
+    "Welded, stress-relieved monoblock frame machined in one setting; Rexroth-type hydraulic block; Schneider electrics",
+    "European-style quick clamps, segmented 2-V die and sectioned punch set; front support arms",
+    "Side and rear guards; foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Estun E300P / E310P NC control with R axis",
+    "Y-axis CNC upgrade (closed-loop ram) to the WAD series",
+    "DSP laser finger protection or light curtain",
+    "Sheet follower support; longer back gauge",
+    "Hydraulic oil cooler",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-nc-1",
+    "vl-nc-backgauge",
+    "vl-nc-torsion",
+    "vl-nc-bg-motor",
+    "vl-nc-photo-1",
+    "vl-nc-photo-2",
+    "vl-nc-photo-3"
+   ],
+   "videos": [
+    {
+     "id": "0imM4bArpBc",
+     "title": "5 ft × 50 ton hydraulic press brake with Estun E21 NC control",
+     "duration": "PT4M45S",
+     "thumb": "video-0imM4bArpBc"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "NC press brakes · 30 – 125 t",
+      "sub": "13 models · 33 – 138 US tons · 5 – 20 ft",
+      "models": [
+       "WC67K-30t/1600",
+       "WC67K/E-30t/2000",
+       "WC67K/E-40t/2500",
+       "WC67K-63t/2500",
+       "WC67K/E-80t/2500",
+       "WC67K/E-100t/2500",
+       "WC67K-100t/3200",
+       "WC67K-100t/4000",
+       "WC67K/E-125t/2500",
+       "WC67K-125t/3200",
+       "WC67K-125t/4000",
+       "WC67K/E-125t/5000",
+       "WC67K/E-125t/6000"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)",
+         "33 US tons (30 t)",
+         "44 US tons (40 t)",
+         "69 US tons (63 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "110 US tons (100 t)",
+         "110 US tons (100 t)",
+         "138 US tons (125 t)",
+         "138 US tons (125 t)",
+         "138 US tons (125 t)",
+         "138 US tons (125 t)",
+         "138 US tons (125 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "5.2 ft · 63.0″ (1,600 mm)",
+         "6.6 ft · 78.7″ (2,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "51.2″ (1,300 mm)",
+         "63.0″ (1,600 mm)",
+         "79.9″ (2,030 mm)",
+         "80.7″ (2,050 mm)",
+         "80.7″ (2,050 mm)",
+         "80.7″ (2,050 mm)",
+         "98.8″ (2,510 mm)",
+         "122.0″ (3,100 mm)",
+         "80.7″ (2,050 mm)",
+         "98.8″ (2,510 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)",
+         "16.5″ (420 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)",
+         "16.5″ (420 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.9″ (100 mm)",
+         "4.7″ (120 mm)",
+         "4.7″ (120 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "13.2″ (335 mm)",
+         "13.2″ (335 mm)",
+         "14.0″ (355 mm)",
+         "14.6″ (370 mm)",
+         "15.0″ (380 mm)",
+         "16.9″ (430 mm)",
+         "16.9″ (430 mm)",
+         "16.9″ (430 mm)",
+         "16.9″ (430 mm)",
+         "16.9″ (430 mm)",
+         "16.9″ (430 mm)",
+         "16.9″ (430 mm)",
+         "16.9″ (430 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.74 in/s (95 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "5.12 in/s (130 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.67 in/s (17 mm/s)",
+         "0.67 in/s (17 mm/s)",
+         "0.59 in/s (15 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.30 in/s (7.5 mm/s)",
+         "0.30 in/s (7.5 mm/s)",
+         "0.30 in/s (7.5 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "2.76 in/s (70 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "2.76 in/s (70 mm/s)",
+         "2.76 in/s (70 mm/s)",
+         "2.76 in/s (70 mm/s)",
+         "2.56 in/s (65 mm/s)",
+         "2.56 in/s (65 mm/s)",
+         "2.56 in/s (65 mm/s)",
+         "2.56 in/s (65 mm/s)",
+         "2.56 in/s (65 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "21 US gal (80 L)",
+         "26 US gal (100 L)",
+         "45 US gal (170 L)",
+         "45 US gal (170 L)",
+         "45 US gal (170 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "71 × 47 × 67″ (1,800 × 1,200 × 1,700 mm)",
+         "87 × 47 × 67″ (2,200 × 1,200 × 1,700 mm)",
+         "106 × 47 × 75″ (2,700 × 1,200 × 1,900 mm)",
+         "98 × 53 × 90″ (2,500 × 1,350 × 2,282 mm)",
+         "98 × 55 × 85″ (2,500 × 1,400 × 2,150 mm)",
+         "98 × 59 × 87″ (2,500 × 1,500 × 2,200 mm)",
+         "126 × 59 × 91″ (3,200 × 1,500 × 2,300 mm)",
+         "157 × 59 × 94″ (4,000 × 1,500 × 2,400 mm)",
+         "101 × 64 × 96″ (2,570 × 1,620 × 2,450 mm)",
+         "126 × 63 × 93″ (3,200 × 1,600 × 2,350 mm)",
+         "157 × 69 × 102″ (4,000 × 1,750 × 2,590 mm)",
+         "197 × 63 × 96″ (5,000 × 1,600 × 2,450 mm)",
+         "236 × 63 × 96″ (6,000 × 1,600 × 2,450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,630 lb (2,100 kg)",
+         "5,071 lb (2,300 kg)",
+         "7,055 lb (3,200 kg)",
+         "9,039 lb (4,100 kg)",
+         "10,141 lb (4,600 kg)",
+         "12,346 lb (5,600 kg)",
+         "14,771 lb (6,700 kg)",
+         "18,519 lb (8,400 kg)",
+         "13,889 lb (6,300 kg)",
+         "15,653 lb (7,100 kg)",
+         "19,842 lb (9,000 kg)",
+         "25,353 lb (11,500 kg)",
+         "32,187 lb (14,600 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WC67K-30t/1600",
+      "glance": [
+       "33 US tons (30 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "3.1″ (80 mm)",
+       "13.2″ (335 mm)",
+       "4,630 lb (2,100 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-30t/2000",
+      "glance": [
+       "33 US tons (30 t)",
+       "6.6 ft · 78.7″ (2,000 mm)",
+       "3.1″ (80 mm)",
+       "13.2″ (335 mm)",
+       "5,071 lb (2,300 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-40t/2500",
+      "glance": [
+       "44 US tons (40 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "3.9″ (100 mm)",
+       "14.0″ (355 mm)",
+       "7,055 lb (3,200 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-63t/2500",
+      "glance": [
+       "69 US tons (63 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "4.7″ (120 mm)",
+       "14.6″ (370 mm)",
+       "9,039 lb (4,100 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-80t/2500",
+      "glance": [
+       "88 US tons (80 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "4.7″ (120 mm)",
+       "15.0″ (380 mm)",
+       "10,141 lb (4,600 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-100t/2500",
+      "glance": [
+       "110 US tons (100 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "12,346 lb (5,600 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-100t/3200",
+      "glance": [
+       "110 US tons (100 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "14,771 lb (6,700 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-100t/4000",
+      "glance": [
+       "110 US tons (100 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "18,519 lb (8,400 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-125t/2500",
+      "glance": [
+       "138 US tons (125 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "13,889 lb (6,300 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-125t/3200",
+      "glance": [
+       "138 US tons (125 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "15,653 lb (7,100 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-125t/4000",
+      "glance": [
+       "138 US tons (125 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "19,842 lb (9,000 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-125t/5000",
+      "glance": [
+       "138 US tons (125 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "25,353 lb (11,500 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-125t/6000",
+      "glance": [
+       "138 US tons (125 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "6.3″ (160 mm)",
+       "16.9″ (430 mm)",
+       "32,187 lb (14,600 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic press brake brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "pb-nc"
+  },
+  "vl-nc-large": {
+   "id": "vl-nc-large",
+   "brand": "novotech",
+   "name": "NC hydraulic press brakes, 176 – 441 US tons × 8 – 20 ft — torsion bar",
+   "short": "NC press brakes 160 – 400 t",
+   "models_label": "WC67K/E-160t/2500 – WC67K/E-400T/6000 · 21 models",
+   "summary": "The torsion-bar press brake in the heavy sizes: 160 to 400 t over 8 to 20 ft, with 13.8 – 15.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.8″ daylight, 20 – 50 cc pumps and 11 – 22 kW motors. The right machine for a shop that bends 3/8″ and 1/2″ plate in simple shapes and does not need a CNC — the E21 control still stores 40 programs and positions the back gauge and depth automatically.",
+   "features": [
+    "Mild steel to 3/8″ over 10 ft on the 200 t, 1/2″ over 13 ft on the 300 t, 1/2″ over 20 ft on the 400 t (V = 8 × thickness)",
+    "Estun E21 NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, stroke counter; inches or millimetres",
+    "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
+    "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
+    "Welded, stress-relieved monoblock frame machined in one setting; Rexroth-type hydraulic block; Schneider electrics",
+    "European-style quick clamps, segmented 2-V die and sectioned punch set; front support arms",
+    "Side and rear guards; foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Estun E300P / E310P NC control with R axis",
+    "Y-axis CNC upgrade (closed-loop ram) to the WAD series",
+    "DSP laser finger protection or light curtain",
+    "Sheet follower support; longer back gauge",
+    "Hydraulic oil cooler",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-nc-1",
+    "vl-nc-backgauge"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "NC press brakes · 160 – 200 t",
+      "sub": "9 models · 176 – 220 US tons · 8 – 20 ft",
+      "models": [
+       "WC67K/E-160t/2500",
+       "WC67K-160t/3200",
+       "WC67K-160t/4000",
+       "WC67K/E-160t/5000",
+       "WC67K/E-160t/6000",
+       "WC67K-200T/3200",
+       "WC67K-200T/4000",
+       "WC67K/E-200T/5000",
+       "WC67K/E-200T/6000"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "176 US tons (160 t)",
+         "176 US tons (160 t)",
+         "176 US tons (160 t)",
+         "176 US tons (160 t)",
+         "176 US tons (160 t)",
+         "220 US tons (200 t)",
+         "220 US tons (200 t)",
+         "220 US tons (200 t)",
+         "220 US tons (200 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "80.7″ (2,050 mm)",
+         "98.8″ (2,510 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)",
+         "98.8″ (2,510 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)",
+         "18.9″ (480 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "4.33 in/s (110 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)",
+         "0.33 in/s (8.5 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.56 in/s (65 mm/s)",
+         "2.56 in/s (65 mm/s)",
+         "2.56 in/s (65 mm/s)",
+         "2.56 in/s (65 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "69 US gal (260 L)",
+         "115 US gal (435 L)",
+         "115 US gal (435 L)",
+         "115 US gal (435 L)",
+         "115 US gal (435 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "98 × 65 × 106″ (2,500 × 1,650 × 2,700 mm)",
+         "126 × 65 × 110″ (3,200 × 1,650 × 2,800 mm)",
+         "157 × 65 × 110″ (4,000 × 1,650 × 2,800 mm)",
+         "197 × 69 × 122″ (5,000 × 1,750 × 3,100 mm)",
+         "236 × 69 × 130″ (6,000 × 1,750 × 3,300 mm)",
+         "126 × 65 × 110″ (3,200 × 1,650 × 2,800 mm)",
+         "157 × 65 × 110″ (4,000 × 1,650 × 2,800 mm)",
+         "197 × 77 × 122″ (5,000 × 1,950 × 3,100 mm)",
+         "236 × 77 × 122″ (6,000 × 1,950 × 3,100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "18,960 lb (8,600 kg)",
+         "21,605 lb (9,800 kg)",
+         "25,353 lb (11,500 kg)",
+         "29,762 lb (13,500 kg)",
+         "36,376 lb (16,500 kg)",
+         "25,133 lb (11,400 kg)",
+         "30,203 lb (13,700 kg)",
+         "36,156 lb (16,400 kg)",
+         "49,604 lb (22,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "NC press brakes · 250 – 400 t",
+      "sub": "12 models · 276 – 441 US tons · 10 – 20 ft",
+      "models": [
+       "WC67K-250T/3200",
+       "WC67K-250T/4000",
+       "WC67K/E-250T/5000",
+       "WC67K/E-250T/6000",
+       "WC67K-300T/3200",
+       "WC67K-300T/4000",
+       "WC67K/E-300T/5000",
+       "WC67K/E-300T/6000",
+       "WC67K/E-400T/3200",
+       "WC67K/E-400T/4000",
+       "WC67K/E-400T/5000",
+       "WC67K/E-400T/6000"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "276 US tons (250 t)",
+         "276 US tons (250 t)",
+         "276 US tons (250 t)",
+         "276 US tons (250 t)",
+         "331 US tons (300 t)",
+         "331 US tons (300 t)",
+         "331 US tons (300 t)",
+         "331 US tons (300 t)",
+         "441 US tons (400 t)",
+         "441 US tons (400 t)",
+         "441 US tons (400 t)",
+         "441 US tons (400 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "102.4″ (2,600 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)",
+         "102.4″ (2,600 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)",
+         "98.4″ (2,500 mm)",
+         "122.0″ (3,100 mm)",
+         "149.6″ (3,800 mm)",
+         "189.0″ (4,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)",
+         "22.8″ (580 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "4.33 in/s (110 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.54 in/s (90 mm/s)",
+         "3.54 in/s (90 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.31 in/s (8 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)",
+         "0.28 in/s (7 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "2.95 in/s (75 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)",
+         "33.5″ (850 mm) · 5.91 in/s (150 mm/s)",
+         "33.5″ (850 mm) · 5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "115 US gal (435 L)",
+         "115 US gal (435 L)",
+         "115 US gal (435 L)",
+         "143 US gal (540 L)",
+         "143 US gal (540 L)",
+         "143 US gal (540 L)",
+         "143 US gal (540 L)",
+         "143 US gal (540 L)",
+         "143 US gal (540 L)",
+         "143 US gal (540 L)",
+         "145 US gal (550 L)",
+         "145 US gal (550 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "130 × 83 × 124″ (3,300 × 2,100 × 3,150 mm)",
+         "157 × 83 × 124″ (4,000 × 2,100 × 3,150 mm)",
+         "197 × 83 × 126″ (5,000 × 2,100 × 3,200 mm)",
+         "236 × 83 × 126″ (6,000 × 2,100 × 3,200 mm)",
+         "126 × 87 × 126″ (3,200 × 2,200 × 3,200 mm)",
+         "157 × 87 × 126″ (4,000 × 2,200 × 3,200 mm)",
+         "197 × 87 × 126″ (5,000 × 2,200 × 3,200 mm)",
+         "236 × 87 × 126″ (6,000 × 2,200 × 3,200 mm)",
+         "130 × 94 × 126″ (3,300 × 2,400 × 3,200 mm)",
+         "157 × 94 × 126″ (4,000 × 2,400 × 3,200 mm)",
+         "197 × 94 × 126″ (5,000 × 2,400 × 3,200 mm)",
+         "236 × 94 × 126″ (6,000 × 2,400 × 3,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "34,172 lb (15,500 kg)",
+         "38,801 lb (17,600 kg)",
+         "46,297 lb (21,000 kg)",
+         "51,809 lb (23,500 kg)",
+         "37,699 lb (17,100 kg)",
+         "41,447 lb (18,800 kg)",
+         "52,911 lb (24,000 kg)",
+         "61,729 lb (28,000 kg)",
+         "44,754 lb (20,300 kg)",
+         "52,470 lb (23,800 kg)",
+         "61,509 lb (27,900 kg)",
+         "72,752 lb (33,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WC67K/E-160t/2500",
+      "glance": [
+       "176 US tons (160 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "18,960 lb (8,600 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-160t/3200",
+      "glance": [
+       "176 US tons (160 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "21,605 lb (9,800 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-160t/4000",
+      "glance": [
+       "176 US tons (160 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "25,353 lb (11,500 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-160t/5000",
+      "glance": [
+       "176 US tons (160 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "29,762 lb (13,500 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-160t/6000",
+      "glance": [
+       "176 US tons (160 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "36,376 lb (16,500 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-200T/3200",
+      "glance": [
+       "220 US tons (200 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "25,133 lb (11,400 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-200T/4000",
+      "glance": [
+       "220 US tons (200 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "30,203 lb (13,700 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-200T/5000",
+      "glance": [
+       "220 US tons (200 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "36,156 lb (16,400 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-200T/6000",
+      "glance": [
+       "220 US tons (200 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7.9″ (200 mm)",
+       "18.9″ (480 mm)",
+       "49,604 lb (22,500 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-250T/3200",
+      "glance": [
+       "276 US tons (250 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "34,172 lb (15,500 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-250T/4000",
+      "glance": [
+       "276 US tons (250 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "38,801 lb (17,600 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-250T/5000",
+      "glance": [
+       "276 US tons (250 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "46,297 lb (21,000 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-250T/6000",
+      "glance": [
+       "276 US tons (250 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "51,809 lb (23,500 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-300T/3200",
+      "glance": [
+       "331 US tons (300 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "37,699 lb (17,100 kg)"
+      ]
+     },
+     {
+      "name": "WC67K-300T/4000",
+      "glance": [
+       "331 US tons (300 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "41,447 lb (18,800 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-300T/5000",
+      "glance": [
+       "331 US tons (300 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-300T/6000",
+      "glance": [
+       "331 US tons (300 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "61,729 lb (28,000 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-400T/3200",
+      "glance": [
+       "441 US tons (400 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "44,754 lb (20,300 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-400T/4000",
+      "glance": [
+       "441 US tons (400 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "52,470 lb (23,800 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-400T/5000",
+      "glance": [
+       "441 US tons (400 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "61,509 lb (27,900 kg)"
+      ]
+     },
+     {
+      "name": "WC67K/E-400T/6000",
+      "glance": [
+       "441 US tons (400 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "9.8″ (250 mm)",
+       "22.8″ (580 mm)",
+       "72,752 lb (33,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic press brake brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "pb-nc"
+  },
+  "vl-wadg": {
+   "id": "vl-wadg",
+   "brand": "novotech",
+   "name": "Electric servo press brakes, 11 – 176 US tons × 1.6 – 10.5 ft",
+   "short": "Electric press brakes 10 – 160 t",
+   "models_label": "WADG-10T/500 – WADG-160T/3200 · 10 models",
+   "summary": "A press brake without hydraulics: servo motors drive the ram through timing belts and dual lead ball screws, so there is no oil, no pump running between bends, no valves to drift and no warm-up — the ram repeats to ± 0.01 mm from the first part, bends at any speed from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53T control and X-R servo back gauge; the 40 and 50 t machines are also sold in robot bending cells.",
+   "features": [
+    "Mild steel to 1/4″ over 10 ft on the 100 t; 5/16″ over 10 ft on the 160 t (V = 8 × thickness)",
+    "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
+    "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
+    "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
+    "Delem DA-53T 2D CNC control; X and R back gauge axes on HIWIN linear guides and TBI ball screws, Inovance servo drives",
+    "Mechanical quick clamps and 2-V die with segmented punch; Schneider electrics; NACHI bearings; automatic lubrication",
+    "Light curtain, side and rear guards, foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DA-66S or DA-69S 3D control; ESA S875",
+    "Wila hydraulic clamping; DSP laser finger protection",
+    "Angle measurement; CNC crowning on 60 t and up",
+    "Robot bending cell with Estun robot",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-wadg-1",
+    "vl-wadg-robot",
+    "vl-wadg-motors",
+    "vl-wadg-ram",
+    "vl-wadg-drawing",
+    "vl-wadg-support",
+    "vl-wadg-tooling",
+    "vl-wadg-parts"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Electric servo press brakes · WADG",
+      "sub": "10 models · 11 – 176 US tons · 1.6 – 10.5 ft",
+      "models": [
+       "WADG-10T/500",
+       "WADG-20T/800",
+       "WADG-30T/1250",
+       "WADG-40T/1300",
+       "WADG-40T/1600",
+       "WADG-50T/1600",
+       "WADG-60T/2000",
+       "WADG-80T/2500",
+       "WADG-100T/3200",
+       "WADG-160T/3200"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "11 US tons (10 t)",
+         "22 US tons (20 t)",
+         "33 US tons (30 t)",
+         "44 US tons (40 t)",
+         "44 US tons (40 t)",
+         "55 US tons (50 t)",
+         "66 US tons (60 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "176 US tons (160 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "1.6 ft · 19.7″ (500 mm)",
+         "2.6 ft · 31.5″ (800 mm)",
+         "4.1 ft · 49.2″ (1,250 mm)",
+         "4.3 ft · 51.2″ (1,300 mm)",
+         "5.2 ft · 63.0″ (1,600 mm)",
+         "5.2 ft · 63.0″ (1,600 mm)",
+         "6.6 ft · 78.7″ (2,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "20.1″ (510 mm)",
+         "26.8″ (680 mm)",
+         "35.4″ (900 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "49.2″ (1,250 mm)",
+         "63.0″ (1,600 mm)",
+         "78.7″ (2,000 mm)",
+         "106.3″ (2,700 mm)",
+         "106.3″ (2,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "10.0″ (255 mm)",
+         "10.0″ (255 mm)",
+         "10.0″ (255 mm)",
+         "11.8″ (300 mm)",
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "18.5″ (470 mm)",
+         "18.5″ (470 mm)",
+         "18.5″ (470 mm)",
+         "20.5″ (520 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach / return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "programmable",
+        "cells": [
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 15.75 in/s (400 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motors",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "20.1 HP (15 kW)",
+         "26.8 HP (20 kW)",
+         "2 × 20.1 HP (15 kW)",
+         "2 × 20.1 HP (15 kW)",
+         "2 × 20.1 HP (15 kW)",
+         "2 × 26.8 HP (20 kW)",
+         "2 × 33.5 HP (25 kW)",
+         "2 × 33.5 HP (25 kW)",
+         "3 × 33.5 HP (25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "25 × 39 × 49″ (640 × 980 × 1,250 mm)",
+         "47 × 61 × 96″ (1,200 × 1,560 × 2,450 mm)",
+         "57 × 65 × 97″ (1,460 × 1,660 × 2,470 mm)",
+         "67 × 81 × 90″ (1,700 × 2,050 × 2,280 mm)",
+         "67 × 81 × 90″ (1,700 × 2,050 × 2,280 mm)",
+         "87 × 81 × 90″ (2,200 × 2,050 × 2,280 mm)",
+         "106 × 85 × 94″ (2,700 × 2,150 × 2,380 mm)",
+         "118 × 89 × 94″ (3,000 × 2,250 × 2,380 mm)",
+         "157 × 96 × 102″ (4,000 × 2,450 × 2,580 mm)",
+         "157 × 96 × 109″ (4,000 × 2,450 × 2,780 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,764 lb (800 kg)",
+         "6,834 lb (3,100 kg)",
+         "9,083 lb (4,120 kg)",
+         "9,921 lb (4,500 kg)",
+         "10,692 lb (4,850 kg)",
+         "10,803 lb (4,900 kg)",
+         "13,228 lb (6,000 kg)",
+         "19,621 lb (8,900 kg)",
+         "23,589 lb (10,700 kg)",
+         "26,015 lb (11,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WADG-10T/500",
+      "glance": [
+       "11 US tons (10 t)",
+       "1.6 ft · 19.7″ (500 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "WADG-20T/800",
+      "glance": [
+       "22 US tons (20 t)",
+       "2.6 ft · 31.5″ (800 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "6,834 lb (3,100 kg)"
+      ]
+     },
+     {
+      "name": "WADG-30T/1250",
+      "glance": [
+       "33 US tons (30 t)",
+       "4.1 ft · 49.2″ (1,250 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "9,083 lb (4,120 kg)"
+      ]
+     },
+     {
+      "name": "WADG-40T/1300",
+      "glance": [
+       "44 US tons (40 t)",
+       "4.3 ft · 51.2″ (1,300 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "9,921 lb (4,500 kg)"
+      ]
+     },
+     {
+      "name": "WADG-40T/1600",
+      "glance": [
+       "44 US tons (40 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "10,692 lb (4,850 kg)"
+      ]
+     },
+     {
+      "name": "WADG-50T/1600",
+      "glance": [
+       "55 US tons (50 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "10,803 lb (4,900 kg)"
+      ]
+     },
+     {
+      "name": "WADG-60T/2000",
+      "glance": [
+       "66 US tons (60 t)",
+       "6.6 ft · 78.7″ (2,000 mm)",
+       "7.9″ (200 mm)",
+       "18.5″ (470 mm)",
+       "13,228 lb (6,000 kg)"
+      ]
+     },
+     {
+      "name": "WADG-80T/2500",
+      "glance": [
+       "88 US tons (80 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "7.9″ (200 mm)",
+       "18.5″ (470 mm)",
+       "19,621 lb (8,900 kg)"
+      ]
+     },
+     {
+      "name": "WADG-100T/3200",
+      "glance": [
+       "110 US tons (100 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.5″ (470 mm)",
+       "23,589 lb (10,700 kg)"
+      ]
+     },
+     {
+      "name": "WADG-160T/3200",
+      "glance": [
+       "176 US tons (160 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9.8″ (250 mm)",
+       "20.5″ (520 mm)",
+       "26,015 lb (11,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Servo-electric drive through belts and dual lead ball screws: no hydraulic oil, 0.15 – 30 mm/s programmable bending speed, power drawn only while the ram moves."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
+    "label": "Download the electric press brake brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "pb-electric"
+  },
+  "vl-wadg-mini": {
+   "id": "vl-wadg-mini",
+   "brand": "novotech",
+   "name": "Compact electric servo press brakes, 3 – 13 US tons × 8 – 24″",
+   "short": "Compact electric press brakes",
+   "models_label": "WADG-3T/200 · WADG-6T/400 · WADG-12T/600",
+   "summary": "Bench-size electric brakes for electronics enclosures, brackets, small appliance and instrument parts: 3, 6 and 12 t over 8, 16 and 24″, a 2 – 5.5 kW servo motor, 4.7″ stroke and 16.5″ daylight in a 28 – 33″ footprint on 220 V. Two CNC axes (X and R back gauge) with a touchscreen control, mechanical quick clamp for the punch and a 2-V quick-change die — the same ± 0.01 mm repeatability as the big machines, with 50 % less energy and 40 % less noise than a small hydraulic brake.",
+   "features": [
+    "Single-phase or 3-phase supply; 20 % smaller footprint than a hydraulic brake of the same tonnage",
+    "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
+    "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
+    "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
+    "Touchscreen CNC with X and R back gauge axes on cylindrical guides",
+    "Mechanical quick clamp and 2-V quick-change die; foot pedal with emergency stop"
+   ],
+   "optional": [
+    "Single-V mechanical die clamping",
+    "Light curtain",
+    "Custom voltage"
+   ],
+   "images": [
+    "vl-wadg-tooling",
+    "vl-wadg-parts"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Compact electric servo press brakes",
+      "sub": "3 models · 3.3 – 13 US tons · 8 – 24″",
+      "models": [
+       "WADG-3T/200",
+       "WADG-6T/400",
+       "WADG-12T/600"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "3 US tons (3 t)",
+         "7 US tons (6 t)",
+         "13 US tons (12 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "15.7″ (400 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "14.6″ (370 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "—",
+         "6.3″ (160 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "4.7″ (120 mm)",
+         "4.7″ (120 mm)",
+         "4.7″ (120 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach / return speed",
+        "sub": "",
+        "cells": [
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "programmable",
+        "cells": [
+         "0.04 – 1.18 in/s (1 – 30 mm/s)",
+         "0.04 – 1.18 in/s (1 – 30 mm/s)",
+         "0.04 – 1.18 in/s (1 – 30 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor",
+        "sub": "",
+        "cells": [
+         "2.7 HP (2 kW)",
+         "4.0 HP (3 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 28 × 78″ (700 × 700 × 1,980 mm)",
+         "30 × 30 × 78″ (750 × 750 × 1,980 mm)",
+         "33 × 33 × 82″ (850 × 850 × 2,080 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "705 lb (320 kg)",
+         "1,235 lb (560 kg)",
+         "1,676 lb (760 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WADG-3T/200",
+      "glance": [
+       "3 US tons (3 t)",
+       "7.9″ (200 mm)",
+       "4.7″ (120 mm)",
+       "16.5″ (420 mm)",
+       "705 lb (320 kg)"
+      ]
+     },
+     {
+      "name": "WADG-6T/400",
+      "glance": [
+       "7 US tons (6 t)",
+       "15.7″ (400 mm)",
+       "4.7″ (120 mm)",
+       "16.5″ (420 mm)",
+       "1,235 lb (560 kg)"
+      ]
+     },
+     {
+      "name": "WADG-12T/600",
+      "glance": [
+       "13 US tons (12 t)",
+       "23.6″ (600 mm)",
+       "4.7″ (120 mm)",
+       "16.5″ (420 mm)",
+       "1,676 lb (760 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Servo-electric drive through belts and dual lead ball screws: no hydraulic oil, 0.15 – 30 mm/s programmable bending speed, power drawn only while the ram moves."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
+    "label": "Download the electric press brake brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "pb-electric"
+  },
+  "vl-qc12k": {
+   "id": "vl-qc12k",
+   "brand": "novotech",
+   "name": "Hydraulic swing beam shears, 5/32″ – 3/4″ × 8 – 20 ft",
+   "short": "Swing beam shears",
+   "models_label": "QC12K-4×2500 – QC12K-20×4000 · 32 models",
+   "summary": "The hydraulic shear most shops buy: a swing beam on two cylinders cuts the full length in one stroke, the Estun E21S control positions the motorised back gauge and sets the cutting angle, and hydraulic hold-downs keep the sheet flat. Thirty-two models from 5/32″ × 8 ft to 3/4″ × 13 ft; the 1/4″ × 8 ft and 1/4″ × 10 ft machines (QC12K-6×2500 and 6×3200) are the sizes we quote most, with 17 strokes a minute, a 7.5 kW motor and 25.6″ of back gauge. Ball-transfer front tables, shadow-line light, squaring arm and a light-barrier front guard are standard.",
+   "features": [
+    "5/32″ to 3/4″ (4 – 20 mm) mild steel; stainless about 60 % of that thickness",
+    "Estun E21S NC control: motorised back gauge, cutting-angle and blade-gap setting, stroke counter, 40 programs × 25 steps, inches or millimetres",
+    "Swing beam on two cylinders with accumulator return; Rexroth hydraulic valve block with pressure gauge and overload protection",
+    "Motorised back gauge on ball screws, 0.8 – 25.6″ (20 – 650 mm), 31.5″ (800 mm) on 13 ft and up, with support fingers and retract",
+    "Hydraulic hold-downs every 100 mm; four-edge rectangular blades; manual single-point blade-gap adjustment",
+    "Shadow-line light, ball-transfer front tables, squaring arm, front guard with light barrier, rear safety barrier",
+    "Siemens or Wannan main motor; Schneider electrics; NOK seals",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Estun E200PS or Delem DAC-360T control with programmable blade gap",
+    "Pneumatic sheet support (return of the cut piece)",
+    "Longer front support arms; roller tables",
+    "Hydraulic oil cooler; automatic lubrication",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-qc12k-1",
+    "vl-qc12k-2",
+    "vl-qc12k-rear",
+    "vl-sh-backgauge",
+    "vl-sh-holddowns",
+    "vl-sh-holddowns-2",
+    "vl-sh-e21s",
+    "vl-sh-blade",
+    "vl-sh-roller",
+    "vl-sh-photo-1",
+    "vl-sh-photo-2",
+    "vl-sh-photo-3"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Swing beam shears · 5/32″ and 1/4″",
+      "sub": "10 models · 8 – 20 ft",
+      "models": [
+       "QC12K-4×2500",
+       "QC12K-4×3200",
+       "QC12K-4×4000",
+       "QC12K-4×5000",
+       "QC12K-4×6000",
+       "QC12K-6×2500",
+       "QC12K-6×3200",
+       "QC12K-6×4000",
+       "QC12K-6×5000",
+       "QC12K-6×6000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "5/32″ (4 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "33",
+         "26",
+         "23",
+         "16",
+         "12",
+         "17",
+         "17",
+         "15",
+         "11",
+         "8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "2°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "20.1 HP (15 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "37 US gal (140 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "85 US gal (320 L)",
+         "116 US gal (440 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "85 US gal (320 L)",
+         "116 US gal (440 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "119 × 62 × 68″ (3,035 × 1,570 × 1,720 mm)",
+         "148 × 65 × 73″ (3,750 × 1,640 × 1,850 mm)",
+         "179 × 75 × 75″ (4,550 × 1,900 × 1,900 mm)",
+         "224 × 75 × 79″ (5,700 × 1,900 × 2,000 mm)",
+         "256 × 97 × 89″ (6,500 × 2,460 × 2,250 mm)",
+         "120 × 65 × 75″ (3,050 × 1,650 × 1,900 mm)",
+         "148 × 65 × 75″ (3,750 × 1,650 × 1,900 mm)",
+         "179 × 79 × 79″ (4,550 × 2,000 × 2,000 mm)",
+         "224 × 96 × 91″ (5,700 × 2,450 × 2,300 mm)",
+         "258 × 97 × 98″ (6,550 × 2,470 × 2,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,716 lb (3,500 kg)",
+         "12,125 lb (5,500 kg)",
+         "16,535 lb (7,500 kg)",
+         "18,739 lb (8,500 kg)",
+         "37,479 lb (17,000 kg)",
+         "12,125 lb (5,500 kg)",
+         "14,330 lb (6,500 kg)",
+         "18,078 lb (8,200 kg)",
+         "27,778 lb (12,600 kg)",
+         "42,990 lb (19,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Swing beam shears · 5/16″ to 15/32″",
+      "sub": "14 models · 8 – 20 ft",
+      "models": [
+       "QC12K-8×2500",
+       "QC12K-8×3200",
+       "QC12K-8×4000",
+       "QC12K-8×5000",
+       "QC12K-8×6000",
+       "QC12K-10×2500",
+       "QC12K-10×3200",
+       "QC12K-10×4000",
+       "QC12K-10×6000",
+       "QC12K-12×2500",
+       "QC12K-12×3200",
+       "QC12K-12×4000",
+       "QC12K-12×5000",
+       "QC12K-12×6000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)",
+         "15/32″ (12 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "13",
+         "13",
+         "12",
+         "10",
+         "9",
+         "13",
+         "13",
+         "9",
+         "6",
+         "12",
+         "10",
+         "8",
+         "6",
+         "5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "2°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "2°",
+         "1.5°",
+         "1.5°",
+         "1.5°",
+         "2°",
+         "2°",
+         "1.75°",
+         "2°",
+         "2°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 25.6″ (20–650 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "20.1 HP (15 kW)",
+         "24.8 HP (18.5 kW)",
+         "24.8 HP (18.5 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "85 US gal (320 L)",
+         "116 US gal (440 L)",
+         "50 US gal (190 L)",
+         "50 US gal (190 L)",
+         "106 US gal (400 L)",
+         "116 US gal (440 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "116 US gal (440 L)",
+         "116 US gal (440 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "120 × 65 × 75″ (3,060 × 1,650 × 1,900 mm)",
+         "148 × 65 × 75″ (3,760 × 1,650 × 1,900 mm)",
+         "180 × 77 × 76″ (4,560 × 1,960 × 1,920 mm)",
+         "220 × 93 × 86″ (5,600 × 2,360 × 2,180 mm)",
+         "260 × 96 × 98″ (6,600 × 2,450 × 2,500 mm)",
+         "120 × 79 × 76″ (3,050 × 2,000 × 1,920 mm)",
+         "150 × 79 × 76″ (3,800 × 2,000 × 1,920 mm)",
+         "185 × 83 × 87″ (4,700 × 2,100 × 2,200 mm)",
+         "260 × 83 × 91″ (6,600 × 2,100 × 2,300 mm)",
+         "125 × 85 × 86″ (3,170 × 2,150 × 2,180 mm)",
+         "150 × 85 × 86″ (3,800 × 2,150 × 2,180 mm)",
+         "185 × 90 × 87″ (4,700 × 2,280 × 2,200 mm)",
+         "228 × 96 × 94″ (5,800 × 2,450 × 2,400 mm)",
+         "260 × 102 × 106″ (6,600 × 2,600 × 2,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "12,787 lb (5,800 kg)",
+         "14,991 lb (6,800 kg)",
+         "19,401 lb (8,800 kg)",
+         "28,219 lb (12,800 kg)",
+         "47,399 lb (21,500 kg)",
+         "15,432 lb (7,000 kg)",
+         "18,739 lb (8,500 kg)",
+         "26,015 lb (11,800 kg)",
+         "60,627 lb (27,500 kg)",
+         "21,605 lb (9,800 kg)",
+         "25,353 lb (11,500 kg)",
+         "30,424 lb (13,800 kg)",
+         "41,888 lb (19,000 kg)",
+         "68,343 lb (31,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Swing beam shears · 5/8″ and 3/4″",
+      "sub": "8 models · 8 – 20 ft",
+      "models": [
+       "QC12K-16×2500",
+       "QC12K-16×3200",
+       "QC12K-16×4000",
+       "QC12K-16×5000",
+       "QC12K-16×6000",
+       "QC12K-20×2500",
+       "QC12K-20×3200",
+       "QC12K-20×4000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "13",
+         "10",
+         "9",
+         "7",
+         "5",
+         "8",
+         "7",
+         "5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "2.5°",
+         "2°",
+         "1.75°",
+         "2.5°",
+         "2.5°",
+         "2.5°",
+         "2.5°",
+         "2.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "159 US gal (600 L)",
+         "159 US gal (600 L)",
+         "159 US gal (600 L)",
+         "132 US gal (500 L)",
+         "132 US gal (500 L)",
+         "145 US gal (550 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "128 × 91 × 87″ (3,250 × 2,300 × 2,200 mm)",
+         "152 × 91 × 86″ (3,870 × 2,300 × 2,180 mm)",
+         "185 × 101 × 87″ (4,700 × 2,575 × 2,200 mm)",
+         "232 × 102 × 106″ (5,900 × 2,600 × 2,700 mm)",
+         "260 × 106 × 114″ (6,600 × 2,700 × 2,900 mm)",
+         "130 × 102 × 91″ (3,300 × 2,580 × 2,300 mm)",
+         "163 × 102 × 98″ (4,150 × 2,600 × 2,500 mm)",
+         "191 × 102 × 110″ (4,850 × 2,600 × 2,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "24,251 lb (11,000 kg)",
+         "27,778 lb (12,600 kg)",
+         "37,479 lb (17,000 kg)",
+         "52,911 lb (24,000 kg)",
+         "81,130 lb (36,800 kg)",
+         "31,526 lb (14,300 kg)",
+         "35,274 lb (16,000 kg)",
+         "50,706 lb (23,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "QC12K-4×2500",
+      "glance": [
+       "5/32″ (4 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "33",
+       "10.1 HP (7.5 kW)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×3200",
+      "glance": [
+       "5/32″ (4 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "26",
+       "10.1 HP (7.5 kW)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×4000",
+      "glance": [
+       "5/32″ (4 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "23",
+       "10.1 HP (7.5 kW)",
+       "16,535 lb (7,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×5000",
+      "glance": [
+       "5/32″ (4 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "16",
+       "10.1 HP (7.5 kW)",
+       "18,739 lb (8,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-4×6000",
+      "glance": [
+       "5/32″ (4 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "12",
+       "20.1 HP (15 kW)",
+       "37,479 lb (17,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×2500",
+      "glance": [
+       "1/4″ (6 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "17",
+       "10.1 HP (7.5 kW)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×3200",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "17",
+       "10.1 HP (7.5 kW)",
+       "14,330 lb (6,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×4000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "15",
+       "10.1 HP (7.5 kW)",
+       "18,078 lb (8,200 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×5000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "11",
+       "20.1 HP (15 kW)",
+       "27,778 lb (12,600 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-6×6000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "8",
+       "20.1 HP (15 kW)",
+       "42,990 lb (19,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×2500",
+      "glance": [
+       "5/16″ (8 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13",
+       "14.8 HP (11 kW)",
+       "12,787 lb (5,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×3200",
+      "glance": [
+       "5/16″ (8 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "13",
+       "14.8 HP (11 kW)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×4000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12",
+       "20.1 HP (15 kW)",
+       "19,401 lb (8,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×5000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "10",
+       "24.8 HP (18.5 kW)",
+       "28,219 lb (12,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-8×6000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "9",
+       "24.8 HP (18.5 kW)",
+       "47,399 lb (21,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×2500",
+      "glance": [
+       "3/8″ (10 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13",
+       "20.1 HP (15 kW)",
+       "15,432 lb (7,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×3200",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "13",
+       "20.1 HP (15 kW)",
+       "18,739 lb (8,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×4000",
+      "glance": [
+       "3/8″ (10 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9",
+       "29.5 HP (22 kW)",
+       "26,015 lb (11,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-10×6000",
+      "glance": [
+       "3/8″ (10 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "6",
+       "29.5 HP (22 kW)",
+       "60,627 lb (27,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×2500",
+      "glance": [
+       "15/32″ (12 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "12",
+       "29.5 HP (22 kW)",
+       "21,605 lb (9,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×3200",
+      "glance": [
+       "15/32″ (12 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "10",
+       "29.5 HP (22 kW)",
+       "25,353 lb (11,500 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×4000",
+      "glance": [
+       "15/32″ (12 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "8",
+       "29.5 HP (22 kW)",
+       "30,424 lb (13,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×5000",
+      "glance": [
+       "15/32″ (12 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "6",
+       "40.2 HP (30 kW)",
+       "41,888 lb (19,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-12×6000",
+      "glance": [
+       "15/32″ (12 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "5",
+       "40.2 HP (30 kW)",
+       "68,343 lb (31,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×2500",
+      "glance": [
+       "5/8″ (16 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13",
+       "29.5 HP (22 kW)",
+       "24,251 lb (11,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×3200",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "10",
+       "29.5 HP (22 kW)",
+       "27,778 lb (12,600 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×4000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9",
+       "29.5 HP (22 kW)",
+       "37,479 lb (17,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×5000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7",
+       "40.2 HP (30 kW)",
+       "52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-16×6000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "5",
+       "40.2 HP (30 kW)",
+       "81,130 lb (36,800 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-20×2500",
+      "glance": [
+       "3/4″ (20 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "8",
+       "40.2 HP (30 kW)",
+       "31,526 lb (14,300 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-20×3200",
+      "glance": [
+       "3/4″ (20 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7",
+       "40.2 HP (30 kW)",
+       "35,274 lb (16,000 kg)"
+      ]
+     },
+     {
+      "name": "QC12K-20×4000",
+      "glance": [
+       "3/4″ (20 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "5",
+       "40.2 HP (30 kW)",
+       "50,706 lb (23,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the supplier's ratings over the full blade length for mild steel of up to 65,000 psi (450 N/mm²); stainless steel runs about 60 % of the mild-steel thickness, aluminum about 150 %. The model number is the metric thickness × cutting length. Dimensions are overall L (along the blade) × W × H; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Shearing-Machines-2026.pdf",
+    "label": "Download the hydraulic shear brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-swing"
+  },
+  "vl-q11k": {
+   "id": "vl-q11k",
+   "brand": "novotech",
+   "name": "Hydraulic guillotine shears, 1/4″ – 1-9/16″ × 8 – 26 ft, variable rake angle",
+   "short": "Guillotine shears",
+   "models_label": "Q11K-6×2500 – Q11K-40×2500 · 34 models",
+   "summary": "The production shear: a guillotine beam on linear rollers with a rake angle the control sets between 0.5° and 4°, so thin sheet is cut fast and flat and 1″ plate is cut at the high angle with less twist and less force. The blade gap is adjusted from the Estun E21S control as well, with the back gauge and the stroke length. Thirty-four models from 1/4″ × 8 ft to 1-9/16″ × 8 ft and 5/8″ × 26 ft, with 7.5 to 55 kW motors and twin pumps on the 20 mm × 20 ft machine.",
+   "features": [
+    "1/4″ to 1-9/16″ (6 – 40 mm) mild steel over 8 – 26 ft; up to 25 cuts a minute",
+    "Estun E21S NC control: motorised back gauge, variable rake angle and blade gap set from the control, stroke counter, inches or millimetres",
+    "Guillotine beam on linear rollers with a variable rake angle — thin sheet cut fast and flat at 0.5°, thick plate at the high angle with less distortion",
+    "Motorised ball-screw back gauge to 31.5″ (800 mm), 39.4″ (1,000 mm) on the large machines, with sheet support",
+    "Hydraulic hold-downs; four-edge blades; Rexroth valve block with overload protection; accumulator return",
+    "Shadow-line light, ball-transfer front tables, squaring arm, front guard with light barrier, rear safety barrier",
+    "Siemens or Wannan main motor; Schneider electrics",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DAC-360T or Estun E200PS control",
+    "Pneumatic sheet support; conveyor for cut strips",
+    "Longer front support arms; roller tables",
+    "Hydraulic oil cooler",
+    "Spare blade set",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-q11k-1",
+    "vl-q11k-rear",
+    "vl-q11k-rear-2",
+    "vl-q11k-controls",
+    "vl-q11k-valve",
+    "vl-q11k-measure",
+    "vl-q11k-feed",
+    "vl-q11k-rexroth",
+    "vl-q11k-holddown",
+    "vl-g-photo-1",
+    "vl-g-photo-2",
+    "vl-g-photo-3",
+    "vl-g-photo-4",
+    "vl-g-photo-5"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Guillotine shears · 1/4″ and 5/16″",
+      "sub": "10 models · 8 – 20 ft",
+      "models": [
+       "Q11K-6×2500",
+       "Q11K-6×3200",
+       "Q11K-6×4000",
+       "Q11K-6×5000",
+       "Q11K-6×6000",
+       "Q11K-8×2500",
+       "Q11K-8×3200",
+       "Q11K-8×4000",
+       "Q11K-8×5000",
+       "Q11K-8×6000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)",
+         "5/16″ (8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at max / min angle",
+        "cells": [
+         "16 – 25",
+         "14 – 20",
+         "12 – 17",
+         "8 – 14",
+         "7 – 12",
+         "13 – 20",
+         "11 – 18",
+         "9 – 16",
+         "8 – 15",
+         "7 – 14"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rake angle",
+        "sub": "variable",
+        "cells": [
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°",
+         "0.5° – 1.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)",
+         "20.1 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "90 US gal (340 L)",
+         "90 US gal (340 L)",
+         "90 US gal (340 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "90 US gal (340 L)",
+         "92 US gal (350 L)",
+         "153 US gal (580 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "126 × 77 × 81″ (3,200 × 1,950 × 2,050 mm)",
+         "154 × 77 × 82″ (3,900 × 1,950 × 2,075 mm)",
+         "183 × 79 × 83″ (4,640 × 2,000 × 2,100 mm)",
+         "228 × 83 × 94″ (5,780 × 2,100 × 2,380 mm)",
+         "266 × 87 × 98″ (6,750 × 2,200 × 2,500 mm)",
+         "124 × 78 × 81″ (3,150 × 1,970 × 2,055 mm)",
+         "152 × 81 × 83″ (3,850 × 2,050 × 2,100 mm)",
+         "183 × 83 × 94″ (4,650 × 2,100 × 2,400 mm)",
+         "224 × 77 × 102″ (5,700 × 1,950 × 2,600 mm)",
+         "266 × 89 × 103″ (6,750 × 2,250 × 2,615 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "12,566 lb (5,700 kg)",
+         "14,550 lb (6,600 kg)",
+         "17,416 lb (7,900 kg)",
+         "30,865 lb (14,000 kg)",
+         "40,785 lb (18,500 kg)",
+         "13,669 lb (6,200 kg)",
+         "16,314 lb (7,400 kg)",
+         "22,928 lb (10,400 kg)",
+         "34,172 lb (15,500 kg)",
+         "44,092 lb (20,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Guillotine shears · 3/8″ to 5/8″",
+      "sub": "13 models · 8 – 26 ft",
+      "models": [
+       "Q11K-10×3200",
+       "Q11K-10×4000",
+       "Q11K-13×2500",
+       "Q11K-13×3200",
+       "Q11K-13×4000",
+       "Q11K-13×5000",
+       "Q11K-13×6000",
+       "Q11K-16×2500",
+       "Q11K-16×3200",
+       "Q11K-16×4000",
+       "Q11K-16×5000",
+       "Q11K-16×6000",
+       "Q11K-16×8000"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "1/2″ (13 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)",
+         "5/8″ (16 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "26.2 ft · 315.0″ (8,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at max / min angle",
+        "cells": [
+         "9 – 16",
+         "10 – 16",
+         "10 – 20",
+         "9 – 18",
+         "8 – 16",
+         "7 – 14",
+         "6 – 12",
+         "9 – 18",
+         "8 – 17",
+         "7 – 15",
+         "5 – 11",
+         "6 – 11",
+         "4 – 8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rake angle",
+        "sub": "variable",
+        "cells": [
+         "0.5° – 2.5°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°",
+         "0.5° – 2.5°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "20.1 HP (15 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "49.6 HP (37 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "79 US gal (300 L)",
+         "107 US gal (405 L)",
+         "107 US gal (405 L)",
+         "107 US gal (405 L)",
+         "107 US gal (405 L)",
+         "133 US gal (505 L)",
+         "269 US gal (1020 L)",
+         "125 US gal (475 L)",
+         "125 US gal (475 L)",
+         "157 US gal (595 L)",
+         "157 US gal (595 L)",
+         "269 US gal (1020 L)",
+         "544 US gal (2060 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "152 × 68 × 88″ (3,850 × 1,720 × 2,242 mm)",
+         "184 × 75 × 92″ (4,680 × 1,895 × 2,335 mm)",
+         "128 × 77 × 83″ (3,250 × 1,950 × 2,110 mm)",
+         "154 × 81 × 91″ (3,900 × 2,070 × 2,315 mm)",
+         "189 × 85 × 97″ (4,800 × 2,150 × 2,460 mm)",
+         "228 × 89 × 110″ (5,800 × 2,270 × 2,800 mm)",
+         "274 × 96 × 120″ (6,950 × 2,450 × 3,050 mm)",
+         "129 × 80 × 89″ (3,280 × 2,020 × 2,270 mm)",
+         "156 × 85 × 96″ (3,950 × 2,150 × 2,450 mm)",
+         "189 × 84 × 100″ (4,800 × 2,130 × 2,550 mm)",
+         "229 × 92 × 109″ (5,810 × 2,330 × 2,780 mm)",
+         "276 × 98 × 118″ (7,000 × 2,500 × 3,000 mm)",
+         "356 × 125 × 138″ (9,050 × 3,180 × 3,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "18,519 lb (8,400 kg)",
+         "26,676 lb (12,100 kg)",
+         "16,755 lb (7,600 kg)",
+         "22,708 lb (10,300 kg)",
+         "29,762 lb (13,500 kg)",
+         "48,502 lb (22,000 kg)",
+         "59,525 lb (27,000 kg)",
+         "20,503 lb (9,300 kg)",
+         "26,896 lb (12,200 kg)",
+         "33,069 lb (15,000 kg)",
+         "49,604 lb (22,500 kg)",
+         "71,650 lb (32,500 kg)",
+         "136,686 lb (62,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Guillotine shears · 3/4″ to 1-9/16″",
+      "sub": "11 models · 8 – 20 ft",
+      "models": [
+       "Q11K-20×2500",
+       "Q11K-20×3200",
+       "Q11K-20×4000",
+       "Q11K-20×6000",
+       "Q11K-25×2500",
+       "Q11K-25×3200",
+       "Q11K-25×4000",
+       "Q11K-30×2500",
+       "Q11K-30×3200",
+       "Q11K-30×4000",
+       "Q11K-40×2500"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity, mild steel",
+        "sub": "≤ 450 N/mm² · 65,000 psi",
+        "cells": [
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "3/4″ (20 mm)",
+         "1″ (25 mm)",
+         "1″ (25 mm)",
+         "1″ (25 mm)",
+         "1-3/16″ (30 mm)",
+         "1-3/16″ (30 mm)",
+         "1-3/16″ (30 mm)",
+         "1-9/16″ (40 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cuts per minute",
+        "sub": "at max / min angle",
+        "cells": [
+         "7 – 16",
+         "6 – 15",
+         "6 – 14",
+         "5 – 11",
+         "5 – 14",
+         "5 – 10",
+         "5 – 8",
+         "5 – 12",
+         "4 – 10",
+         "3 – 7",
+         "4 – 8"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rake angle",
+        "sub": "variable",
+        "cells": [
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3.5°",
+         "0.5° – 3.5°",
+         "0.5° – 3.5°",
+         "0.5° – 3°",
+         "0.5° – 3°",
+         "0.5° – 3.5°",
+         "0.5° – 4°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 31.5″ (20–800 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)",
+         "0.8 – 39.4″ (20–1000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "40.2 HP (30 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "2 × 40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)",
+         "60.3 HP (45 kW)",
+         "73.8 HP (55 kW)",
+         "73.8 HP (55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "135 US gal (510 L)",
+         "135 US gal (510 L)",
+         "169 US gal (640 L)",
+         "396 US gal (1500 L)",
+         "198 US gal (750 L)",
+         "217 US gal (820 L)",
+         "317 US gal (1200 L)",
+         "206 US gal (780 L)",
+         "264 US gal (1000 L)",
+         "370 US gal (1400 L)",
+         "362 US gal (1370 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "126 × 87 × 99″ (3,200 × 2,220 × 2,520 mm)",
+         "156 × 85 × 102″ (3,950 × 2,150 × 2,600 mm)",
+         "187 × 94 × 114″ (4,750 × 2,400 × 2,900 mm)",
+         "276 × 112 × 132″ (7,000 × 2,850 × 3,350 mm)",
+         "129 × 79 × 104″ (3,270 × 2,000 × 2,650 mm)",
+         "156 × 87 × 105″ (3,970 × 2,200 × 2,670 mm)",
+         "193 × 110 × 126″ (4,900 × 2,800 × 3,190 mm)",
+         "136 × 98 × 114″ (3,450 × 2,500 × 2,900 mm)",
+         "163 × 106 × 112″ (4,150 × 2,700 × 2,850 mm)",
+         "205 × 102 × 132″ (5,200 × 2,600 × 3,350 mm)",
+         "157 × 116 × 124″ (4,000 × 2,950 × 3,150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "27,558 lb (12,500 kg)",
+         "31,085 lb (14,100 kg)",
+         "45,636 lb (20,700 kg)",
+         "97,003 lb (44,000 kg)",
+         "33,069 lb (15,000 kg)",
+         "40,785 lb (18,500 kg)",
+         "57,320 lb (26,000 kg)",
+         "47,399 lb (21,500 kg)",
+         "59,525 lb (27,000 kg)",
+         "77,162 lb (35,000 kg)",
+         "80,469 lb (36,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Q11K-6×2500",
+      "glance": [
+       "1/4″ (6 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "16 – 25",
+       "10.1 HP (7.5 kW)",
+       "12,566 lb (5,700 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×3200",
+      "glance": [
+       "1/4″ (6 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "14 – 20",
+       "10.1 HP (7.5 kW)",
+       "14,550 lb (6,600 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×4000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12 – 17",
+       "10.1 HP (7.5 kW)",
+       "17,416 lb (7,900 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×5000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "8 – 14",
+       "14.8 HP (11 kW)",
+       "30,865 lb (14,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-6×6000",
+      "glance": [
+       "1/4″ (6 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7 – 12",
+       "14.8 HP (11 kW)",
+       "40,785 lb (18,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×2500",
+      "glance": [
+       "5/16″ (8 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "13 – 20",
+       "14.8 HP (11 kW)",
+       "13,669 lb (6,200 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×3200",
+      "glance": [
+       "5/16″ (8 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "11 – 18",
+       "14.8 HP (11 kW)",
+       "16,314 lb (7,400 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×4000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "9 – 16",
+       "20.1 HP (15 kW)",
+       "22,928 lb (10,400 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×5000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "8 – 15",
+       "20.1 HP (15 kW)",
+       "34,172 lb (15,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-8×6000",
+      "glance": [
+       "5/16″ (8 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "7 – 14",
+       "20.1 HP (15 kW)",
+       "44,092 lb (20,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-10×3200",
+      "glance": [
+       "3/8″ (10 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9 – 16",
+       "20.1 HP (15 kW)",
+       "18,519 lb (8,400 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-10×4000",
+      "glance": [
+       "3/8″ (10 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "10 – 16",
+       "29.5 HP (22 kW)",
+       "26,676 lb (12,100 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×2500",
+      "glance": [
+       "1/2″ (13 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "10 – 20",
+       "29.5 HP (22 kW)",
+       "16,755 lb (7,600 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×3200",
+      "glance": [
+       "1/2″ (13 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9 – 18",
+       "29.5 HP (22 kW)",
+       "22,708 lb (10,300 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×4000",
+      "glance": [
+       "1/2″ (13 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "8 – 16",
+       "29.5 HP (22 kW)",
+       "29,762 lb (13,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×5000",
+      "glance": [
+       "1/2″ (13 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "7 – 14",
+       "29.5 HP (22 kW)",
+       "48,502 lb (22,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-13×6000",
+      "glance": [
+       "1/2″ (13 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "6 – 12",
+       "49.6 HP (37 kW)",
+       "59,525 lb (27,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×2500",
+      "glance": [
+       "5/8″ (16 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "9 – 18",
+       "29.5 HP (22 kW)",
+       "20,503 lb (9,300 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×3200",
+      "glance": [
+       "5/8″ (16 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "8 – 17",
+       "29.5 HP (22 kW)",
+       "26,896 lb (12,200 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×4000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "7 – 15",
+       "29.5 HP (22 kW)",
+       "33,069 lb (15,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×5000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "5 – 11",
+       "40.2 HP (30 kW)",
+       "49,604 lb (22,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×6000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "6 – 11",
+       "49.6 HP (37 kW)",
+       "71,650 lb (32,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-16×8000",
+      "glance": [
+       "5/8″ (16 mm)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "4 – 8",
+       "60.3 HP (45 kW)",
+       "136,686 lb (62,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×2500",
+      "glance": [
+       "3/4″ (20 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "7 – 16",
+       "40.2 HP (30 kW)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×3200",
+      "glance": [
+       "3/4″ (20 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "6 – 15",
+       "40.2 HP (30 kW)",
+       "31,085 lb (14,100 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×4000",
+      "glance": [
+       "3/4″ (20 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "6 – 14",
+       "49.6 HP (37 kW)",
+       "45,636 lb (20,700 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-20×6000",
+      "glance": [
+       "3/4″ (20 mm)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "5 – 11",
+       "2 × 40.2 HP (30 kW)",
+       "97,003 lb (44,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-25×2500",
+      "glance": [
+       "1″ (25 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "5 – 14",
+       "49.6 HP (37 kW)",
+       "33,069 lb (15,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-25×3200",
+      "glance": [
+       "1″ (25 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "5 – 10",
+       "49.6 HP (37 kW)",
+       "40,785 lb (18,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-25×4000",
+      "glance": [
+       "1″ (25 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "5 – 8",
+       "60.3 HP (45 kW)",
+       "57,320 lb (26,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-30×2500",
+      "glance": [
+       "1-3/16″ (30 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "5 – 12",
+       "60.3 HP (45 kW)",
+       "47,399 lb (21,500 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-30×3200",
+      "glance": [
+       "1-3/16″ (30 mm)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "4 – 10",
+       "60.3 HP (45 kW)",
+       "59,525 lb (27,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-30×4000",
+      "glance": [
+       "1-3/16″ (30 mm)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "3 – 7",
+       "73.8 HP (55 kW)",
+       "77,162 lb (35,000 kg)"
+      ]
+     },
+     {
+      "name": "Q11K-40×2500",
+      "glance": [
+       "1-9/16″ (40 mm)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "4 – 8",
+       "73.8 HP (55 kW)",
+       "80,469 lb (36,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the supplier's ratings over the full blade length for mild steel of up to 65,000 psi (450 N/mm²); stainless steel runs about 60 % of the mild-steel thickness, aluminum about 150 %. The model number is the metric thickness × cutting length. Dimensions are overall L (along the blade) × W × H; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Shearing-Machines-2026.pdf",
+    "label": "Download the hydraulic shear brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "sh-guillotine"
+  },
+  "vl-vg-h": {
+   "id": "vl-vg-h",
+   "brand": "novotech",
+   "name": "Horizontal CNC V-grooving machines, 10.5 – 20 ft × 49 – 59″, to 5/32″ stainless",
+   "short": "Horizontal V-grooving",
+   "models_label": "3200 × 1250 – 6000 × 1500 · 7 models",
+   "summary": "V-grooving cuts a V-shaped channel along the bend line so the sheet folds to a sharp, zero-radius corner with no springback and no cracking of the finish — the way stainless elevator doors, column cladding, appliance panels and architectural trim are made. On the horizontal machine the sheet lies flat on a 49 or 59″ table, pneumatic clamps hold it and a four-tool head on ball screws planes the groove at up to 295 ft/min, ± 0.01 mm. Seven table sizes from 10.5 to 20 ft; sheet from 0.016″ to 5/32″.",
+   "features": [
+    "Sheet 0.016″ – 5/32″ (0.4 – 4 mm); 10.5 – 20 ft table lengths; 5.5 kW servo",
+    "4-axis CNC with a 15″ touchscreen and Taiwan servo motors — program groove depth, pitch and position, the machine runs the sheet",
+    "Four-tool grooving head on ball screws, 0.001 mm resolution, ± 0.01 mm positioning; alloy cutters, double-nozzle chip blowing",
+    "Hydraulic blank holder (Yuken, Japan) that clamps without marking; rack-and-pinion and ball-screw drives",
+    "60 mm low-alloy steel beam and Q345 base, stress-relieved, ± 0.03 mm bed flatness",
+    "Automatic lubrication; air-cooled servo cabinet",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Table lengths to 20 ft (6 m), widths 49″ or 59″",
+    "Extra cutter sets; special profile cutters",
+    "Dust extraction",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-vg-h-1",
+    "vl-vg-head",
+    "vl-vg-trial",
+    "vl-vg-clamps",
+    "vl-vg-table",
+    "vl-vg-control",
+    "vl-vg-ruler",
+    "vl-vg-parts",
+    "vl-vg-corner"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Horizontal CNC V-grooving machines",
+      "sub": "7 models · 10.5 – 20 ft × 49 – 59″ · to 5/32″ stainless",
+      "models": [
+       "3200 × 1250",
+       "4000 × 1250",
+       "4000 × 1500",
+       "5000 × 1250",
+       "5000 × 1500",
+       "6000 × 1250",
+       "6000 × 1500"
+      ],
+      "rows": [
+       {
+        "label": "Max. grooving length",
+        "sub": "",
+        "cells": [
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "16.4 ft · 196.9″ (5,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)",
+         "19.7 ft · 236.2″ (6,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. grooving width",
+        "sub": "sheet width",
+        "cells": [
+         "49.2″ (1,250 mm)",
+         "49.2″ (1,250 mm)",
+         "59.1″ (1,500 mm)",
+         "49.2″ (1,250 mm)",
+         "59.1″ (1,500 mm)",
+         "49.2″ (1,250 mm)",
+         "59.1″ (1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sheet thickness",
+        "sub": "min – max",
+        "cells": [
+         "0.016″ – 5/32″ (0.4 – 4 mm)",
+         "0.016″ – 5/32″ (0.4 – 4 mm)",
+         "0.016″ – 5/32″ (0.4 – 4 mm)",
+         "0.016″ – 5/32″ (0.4 – 4 mm)",
+         "0.016″ – 5/32″ (0.4 – 4 mm)",
+         "0.016″ – 5/32″ (0.4 – 4 mm)",
+         "0.016″ – 5/32″ (0.4 – 4 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. edge distance",
+        "sub": "",
+        "cells": [
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Grooving speed",
+        "sub": "",
+        "cells": [
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "X and Y",
+        "cells": [
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main servo motor",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic clamping pressure",
+        "sub": "",
+        "cells": [
+         "1,015 – 1,305 psi (7 – 9 MPa)",
+         "1,015 – 1,305 psi (7 – 9 MPa)",
+         "1,015 – 1,305 psi (7 – 9 MPa)",
+         "1,015 – 1,305 psi (7 – 9 MPa)",
+         "1,015 – 1,305 psi (7 – 9 MPa)",
+         "1,015 – 1,305 psi (7 – 9 MPa)",
+         "1,015 – 1,305 psi (7 – 9 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "209 × 89 × 65″ (5,300 × 2,250 × 1,650 mm)",
+         "228 × 89 × 65″ (5,800 × 2,250 × 1,650 mm)",
+         "228 × 98 × 65″ (5,800 × 2,500 × 1,650 mm)",
+         "268 × 89 × 65″ (6,800 × 2,250 × 1,650 mm)",
+         "268 × 98 × 65″ (6,800 × 2,500 × 1,650 mm)",
+         "307 × 89 × 65″ (7,800 × 2,250 × 1,650 mm)",
+         "307 × 98 × 65″ (7,800 × 2,500 × 1,650 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "3200 × 1250",
+      "glance": [
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "49.2″ (1,250 mm)",
+       "0.016″ – 5/32″ (0.4 – 4 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "7.4 HP (5.5 kW)"
+      ]
+     },
+     {
+      "name": "4000 × 1250",
+      "glance": [
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "49.2″ (1,250 mm)",
+       "0.016″ – 5/32″ (0.4 – 4 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "7.4 HP (5.5 kW)"
+      ]
+     },
+     {
+      "name": "4000 × 1500",
+      "glance": [
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "59.1″ (1,500 mm)",
+       "0.016″ – 5/32″ (0.4 – 4 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "7.4 HP (5.5 kW)"
+      ]
+     },
+     {
+      "name": "5000 × 1250",
+      "glance": [
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "49.2″ (1,250 mm)",
+       "0.016″ – 5/32″ (0.4 – 4 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "7.4 HP (5.5 kW)"
+      ]
+     },
+     {
+      "name": "5000 × 1500",
+      "glance": [
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "59.1″ (1,500 mm)",
+       "0.016″ – 5/32″ (0.4 – 4 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "7.4 HP (5.5 kW)"
+      ]
+     },
+     {
+      "name": "6000 × 1250",
+      "glance": [
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "49.2″ (1,250 mm)",
+       "0.016″ – 5/32″ (0.4 – 4 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "7.4 HP (5.5 kW)"
+      ]
+     },
+     {
+      "name": "6000 × 1500",
+      "glance": [
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "59.1″ (1,500 mm)",
+       "0.016″ – 5/32″ (0.4 – 4 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "7.4 HP (5.5 kW)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "length",
+     "width",
+     "thickness",
+     "speed",
+     "motor"
+    ],
+    "caps": {},
+    "note": "The model number is the metric grooving length × width. Maximum thickness is for stainless steel; mild steel and aluminum to about the same thickness. The horizontal machine lays the sheet flat on the table (longest sheets, four-tool head); the vertical machine stands it against the clamping beam (smaller footprint, thicker plate)."
+   },
+   "pdf": {
+    "file": "files/NovoTech-V-Grooving-Machines-2026.pdf",
+    "label": "Download the V-grooving machine brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "vg-h"
+  },
+  "vl-vg-v": {
+   "id": "vl-vg-v",
+   "brand": "novotech",
+   "name": "Vertical CNC V-grooving machines, 10.5 – 13 ft × 49 – 59″, to 1/4″",
+   "short": "Vertical V-grooving",
+   "models_label": "3200 × 1250 – 4000 × 1500 · 4 models",
+   "summary": "The vertical machine stands the sheet against a fixed beam and feeds it from the rear, so the bed cannot sag and the groove depth holds ± 0.03 mm over the length; it takes half the floor space of the horizontal machine and grooves plate to 1/4″. The same Taiwan servo CNC, four-cutter head and hydraulic blank holder. Four sizes: 10.5 and 13 ft × 49 or 59″.",
+   "features": [
+    "Sheet 0.016″ – 1/4″ (0.4 – 6 mm); rear feeding with replaceable worktable; 4.4 kW servo",
+    "4-axis CNC with a 15″ touchscreen and Taiwan servo motors — program groove depth, pitch and position, the machine runs the sheet",
+    "Four-tool grooving head on ball screws, 0.001 mm resolution, ± 0.01 mm positioning; alloy cutters, double-nozzle chip blowing",
+    "Hydraulic blank holder (Yuken, Japan) that clamps without marking; rack-and-pinion and ball-screw drives",
+    "60 mm low-alloy steel beam and Q345 base, stress-relieved, ± 0.03 mm bed flatness",
+    "Automatic lubrication; air-cooled servo cabinet",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Table lengths to 20 ft (6 m), widths 49″ or 59″",
+    "Extra cutter sets; special profile cutters",
+    "Dust extraction",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-vg-v-1",
+    "vl-vg-v-scene",
+    "vl-vg-cutters",
+    "vl-vg-beam",
+    "vl-vg-control-2",
+    "vl-vg-parts-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Vertical CNC V-grooving machines",
+      "sub": "4 models · 10.5 – 13 ft × 49 – 59″ · to 1/4″",
+      "models": [
+       "3200 × 1250",
+       "3200 × 1500",
+       "4000 × 1250",
+       "4000 × 1500"
+      ],
+      "rows": [
+       {
+        "label": "Max. grooving length",
+        "sub": "",
+        "cells": [
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)",
+         "13.1 ft · 157.5″ (4,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. grooving width",
+        "sub": "sheet width",
+        "cells": [
+         "49.2″ (1,250 mm)",
+         "59.1″ (1,500 mm)",
+         "49.2″ (1,250 mm)",
+         "59.1″ (1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sheet thickness",
+        "sub": "min – max",
+        "cells": [
+         "0.016″ – 1/4″ (0.4 – 6 mm)",
+         "0.016″ – 1/4″ (0.4 – 6 mm)",
+         "0.016″ – 1/4″ (0.4 – 6 mm)",
+         "0.016″ – 1/4″ (0.4 – 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. edge distance",
+        "sub": "",
+        "cells": [
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)",
+         "0.3″ (8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Grooving speed",
+        "sub": "",
+        "cells": [
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)",
+         "up to 295 ft/min (90 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)",
+         "up to 394 ft/min (120 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "X and Y",
+        "cells": [
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution",
+         "± 0.0004″ (± 0.01 mm) · 0.001 mm resolution"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main servo motor",
+        "sub": "",
+        "cells": [
+         "5.9 HP (4.4 kW)",
+         "5.9 HP (4.4 kW)",
+         "5.9 HP (4.4 kW)",
+         "5.9 HP (4.4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic clamping pressure",
+        "sub": "",
+        "cells": [
+         "870 – 1,160 psi (6 – 8 MPa)",
+         "870 – 1,160 psi (6 – 8 MPa)",
+         "870 – 1,160 psi (6 – 8 MPa)",
+         "870 – 1,160 psi (6 – 8 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "197 × 100 × 83″ (5,000 × 2,550 × 2,100 mm)",
+         "197 × 110 × 83″ (5,000 × 2,800 × 2,100 mm)",
+         "228 × 100 × 83″ (5,800 × 2,550 × 2,100 mm)",
+         "230 × 110 × 83″ (5,850 × 2,800 × 2,100 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "3200 × 1250",
+      "glance": [
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "49.2″ (1,250 mm)",
+       "0.016″ – 1/4″ (0.4 – 6 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "5.9 HP (4.4 kW)"
+      ]
+     },
+     {
+      "name": "3200 × 1500",
+      "glance": [
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "59.1″ (1,500 mm)",
+       "0.016″ – 1/4″ (0.4 – 6 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "5.9 HP (4.4 kW)"
+      ]
+     },
+     {
+      "name": "4000 × 1250",
+      "glance": [
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "49.2″ (1,250 mm)",
+       "0.016″ – 1/4″ (0.4 – 6 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "5.9 HP (4.4 kW)"
+      ]
+     },
+     {
+      "name": "4000 × 1500",
+      "glance": [
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "59.1″ (1,500 mm)",
+       "0.016″ – 1/4″ (0.4 – 6 mm)",
+       "up to 295 ft/min (90 m/min)",
+       "5.9 HP (4.4 kW)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "length",
+     "width",
+     "thickness",
+     "speed",
+     "motor"
+    ],
+    "caps": {},
+    "note": "The model number is the metric grooving length × width. Maximum thickness is for stainless steel; mild steel and aluminum to about the same thickness. The horizontal machine lays the sheet flat on the table (longest sheets, four-tool head); the vertical machine stands it against the clamping beam (smaller footprint, thicker plate)."
+   },
+   "pdf": {
+    "file": "files/NovoTech-V-Grooving-Machines-2026.pdf",
+    "label": "Download the V-grooving machine brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "vg-v"
+  }
+ }
+}

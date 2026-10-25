@@ -67,7 +67,7 @@ PAGE = dict(
           "a": "Yes — the optional 0 – 180° angular cutting device on the table positions the sheet for mitre and trapezoid cuts against the squaring arm; the standard squaring arm has a T-slot, a stopper and a ruler for square cuts."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about metal shears",
-    related_pages=[{"href": "press-brake.html", "label": "CNC press brakes"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"},
+    related_pages=[{"href": "hydraulic-shearing-machine.html", "label": "Value-line hydraulic shears to 1-9/16″"}, {"href": "press-brake.html", "label": "CNC press brakes"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"},
                    {"href": "corner-notcher.html", "label": "Corner notchers"}, {"href": "circle-cutters-and-seamers.html", "label": "Circle shears & flanging machines"},
                    {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}],
     related_title="More sheet-metal cutting and forming machinery from NovoTech",

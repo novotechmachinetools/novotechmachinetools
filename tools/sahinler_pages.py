@@ -14,6 +14,7 @@ from isitan_lib import CRUMBS, SAHINLER_INTRO_VIDEO, VOLT_FAQ_GENERIC, lower_kee
 from sahinler_families import *  # noqa: F401,F403
 import sahinler_plate_rolls
 import hidroliksan_data  # NovoTech premium-line production presses below the Şahinler group on hydraulic-press.html
+import vl_sheet_data     # NovoTech value-line Q35Y ironworker below the Şahinler group on ironworker-machines.html
 
 SET = "sahinler"
 PDF_PROD_FILE = "files/NovoTech-Production-Hydraulic-Presses-2026.pdf"
@@ -27,7 +28,11 @@ def pdf_prod():
 
 PDF_PROD = pdf_prod()
 PREMIUM_FAMILIES = [dict(f, pdf=PDF_PROD) for f in hidroliksan_data.FAMILIES]   # their brochure button: the NovoTech production-press brochure
-FAMILIES = ANGLE_FAMILIES + IRON_FAMILIES + PUNCH_FAMILIES + PRESS_FAMILIES + PREMIUM_FAMILIES + NOTCH_FAMILIES + POLISH_FAMILIES
+PDF_VL_IRON_FILE = "files/NovoTech-Ironworkers-Value-Line-2026.pdf"
+VL_IRON_FAMILIES = [dict(f, pdf={"file": PDF_VL_IRON_FILE, "label": "Download the value-line ironworker brochure",
+                                 "size": f"PDF · {os.path.getsize(os.path.join(ROOT, 'src', PDF_VL_IRON_FILE)) / 1e6:.0f} MB · imperial units" if os.path.exists(os.path.join(ROOT, "src", PDF_VL_IRON_FILE)) else "PDF · imperial units"})
+                    for f in vl_sheet_data.IRON_FAMILIES]
+FAMILIES = ANGLE_FAMILIES + IRON_FAMILIES + VL_IRON_FAMILIES + PUNCH_FAMILIES + PRESS_FAMILIES + PREMIUM_FAMILIES + NOTCH_FAMILIES + POLISH_FAMILIES
 SECTION = {P_ANGLE: "Angle rolls", P_IRON: "Ironworkers & punching", P_PUNCH: "Ironworkers & punching", P_PRESS: "Hydraulic presses", P_NOTCH: "Corner notchers", P_POLISH: "Pipe polishing & sanding"}
 
 PAGES = {
@@ -52,13 +57,14 @@ PAGES = {
         related_title="More bending machinery from NovoTech",
     ),
     P_IRON: dict(
-        title="Hydraulic Ironworker Machines 44–193 Ton | NovoTech",
-        meta="Hydraulic ironworkers from 44 to 193 US tons that punch, shear bar, angle and flat and notch: single-piston HKM 40–65, double-piston HKM 55–175 for 2 operators.",
+        title="Hydraulic Ironworker Machines, 44 to 276 Ton | NovoTech",
+        meta="Hydraulic ironworkers, 44–276 US tons: punch, shear bar, angle and flat, notch. Şahinler HKM single- and double-piston, plus the NovoTech value-line Q35Y.",
         h1="Hydraulic ironworker machines",
-        intro="A hydraulic ironworker (also sold as a steelworker or universal punch and shear) puts the five jobs of the structural shop on one machine: punching, round and square bar shear, angle shear at 90° and 45°, flat-bar and sheet shear and rectangular notching, each with its own station and LED light. Şahinler's HKM range runs from the 44 US ton HKM 40 to the 193 US ton HKM 175 in two designs: single-piston machines in which one cylinder serves every station — compact and economical — and double-piston machines with two cylinders and two foot pedals so two operators punch and shear at the same time. Punches to Ø1-1/2″ are standard on every model; large-hole, section punching, beam and tee blades, V-notching, press-brake and keyway tools are optional. Sold with a CSA-approved panel and installed, tooled and supported from Mississauga, ON.",
+        intro="A hydraulic ironworker (also sold as a steelworker or universal punch and shear) puts the five jobs of the structural shop on one machine: punching, round and square bar shear, angle shear at 90° and 45°, flat-bar and sheet shear and rectangular notching, each with its own station and LED light. Şahinler's HKM range runs from the 44 US ton HKM 40 to the 193 US ton HKM 175 in two designs: single-piston machines in which one cylinder serves every station — compact and economical — and double-piston machines with two cylinders and two foot pedals so two operators punch and shear at the same time. Punches to Ø1-1/2″ are standard on every model; large-hole, section punching, beam and tee blades, V-notching, press-brake and keyway tools are optional. Below the Şahinler machines is NovoTech's own value line, the Q35Y single-cylinder ironworkers from 55 to 276 US tons, built in China to our specification and sold under our name with the tooling included. All sold with a CSA-approved panel and installed, tooled and supported from Mississauga, ON.",
         points=["Single-piston HKM 40 · 45 · 60 · 65 V — 44 to 72 US tons, 4 – 5 work stations", "Double-piston HKM 55 · 65 · 85 · 115 · 175 — 61 to 193 US tons, two operators at once", "Angle to L 7-7/8 × 7-7/8 × 13/16″, flat bar to 15 × 1-1/8″, holes to Ø2-1/4″ in 7/8″ plate"],
         hero="sh-hkm115", minis=["sh-hkm60", "sh-hkm175"],
-        groups=[("sahinler-iron", "HKM hydraulic ironworkers", "Single-piston and double-piston steelworkers from 44 to 193 US tons, with the punching, shearing and notching capacities of every model.", "sahinler")],
+        groups=[("sahinler-iron", "HKM hydraulic ironworkers", "Single-piston and double-piston steelworkers from 44 to 193 US tons, with the punching, shearing and notching capacities of every model.", "sahinler"),
+                ("iron-value", "NovoTech value-line ironworkers", "The Q35Y: one cylinder, five stations and the tooling in the crate, from 55 to 276 US tons at a value-line price.", "novotech")],
         faq=[{"q": "Single-piston or double-piston ironworker?", "a": "A single-piston machine (HKM 40 – 65 V) uses one hydraulic cylinder for all stations, so one operator works one station at a time — the right choice for a fabrication shop that punches a few holes and cuts a few angles per job. A double-piston machine (HKM 55 – 175) has two cylinders and two foot pedals, so one operator can punch while another shears or notches: twice the output from one machine, plus an electrical back gauge as standard."},
              {"q": "What size ironworker do I need?", "a": "Size it by the thickest material you punch and the largest angle you shear. The punching capacity is quoted as a hole diameter × thickness at the machine's tonnage — a 66 US ton HKM 60 punches Ø1-1/8″ through 9/16″ plate and shears L 4-3/4 × 4-3/4 × 1/2″ angle; the HKM 115 punches Ø1-3/8″ × 1″ and shears L 5-7/8 × 5-7/8 × 5/8″. Tell us your plate thickness, largest angle and flat bar and we will point to the model on the capacity table."},
              {"q": "What tooling comes with the machine?", "a": "A Ø7/8″ punch and die (Ø1″ on the HKM 115), the round and square bar blade set, the angle blade set, the flat-bar shear blades and — except on the HKM 40 — the rectangular notching blade set. Punches and dies to Ø1-1/2″ in any diameter, oblong or square are stocked in Mississauga; large-hole punching sets go to Ø4-7/8″ with the optional tool."},
@@ -201,7 +207,8 @@ def build():
                           "origin_feature": {"title": "Made in Turkey", "text": "Şahinler Metal has built shop presses in Bursa since 1976; the NovoTech premium-line production presses come from a Turkish press builder with 50 years of hydraulic press manufacturing, CE-certified with Siemens controls and European hydraulics."}})
         write_category(slug, p, FAMILIES, SET, SECTION[slug], extra=extra)
     keys = register_images()
-    used = {k for f in FAMILIES + sahinler_plate_rolls.FAMILIES + SPB_FAMILIES + CIRCLE_FAMILIES for k in f["images"]} | {p["hero"] for p in PAGES.values()} | {m for p in PAGES.values() for m in p["minis"]}
+    vl_keys = {k for f in VL_IRON_FAMILIES for k in f["images"]}      # registered by tools/vl_sheet_pages.py (section value-sheet)
+    used = ({k for f in FAMILIES + sahinler_plate_rolls.FAMILIES + SPB_FAMILIES + CIRCLE_FAMILIES for k in f["images"]} | {p["hero"] for p in PAGES.values()} | {m for p in PAGES.values() for m in p["minis"]}) - vl_keys
     unused = sorted(set(keys) - used)
     if unused:
         print("photos not used on any page:", unused)

@@ -192,3 +192,13 @@ Sources: Dener's 2026 product renders (`/home/claude/dener/render/`, PNG with a 
 to 2,800 px on export), frames from Dener's videos (`video/`) and Dener's website photos (`web/`), all staged from the user's laptop
 (`…\DENER\products pictures 2026\Ürünler Render`, `pictures from video`, `Ürünler`).  Dener is shown under its own brand, so the logo
 stays.  Keys `dn-*`; `tools/dener_keys.txt` is written by `tools/dener_pages.py`.
+
+## NovoTech value-line sheet-metal machines (section `value-sheet`, tools/vl_sheet_photos.py)
+
+Press brakes (CNC, NC, electric), hydraulic shears, V-grooving machines, panel benders and the Q35Y ironworker are sold under
+NovoTech's name, so the supplier's badges and the model labels that carry its name are erased from every render and photo
+(hand-boxed on 100 px grid views, LaMa through `tools/delogo.py` mode "lama"); Chinese warning stickers are filled the same
+way.  Sources (outside the repository): the supplier's website renders (`/home/claude/value-sheet-src/img/`, 1,600 px WebP, most with a
+real alpha channel → `trim` only) and the hi-res factory photos staged from the user's laptop (`/home/claude/value-sheet-src/hires/`, kept as detail photos).  Renders on an opaque white background go through BiRefNet like any white photo
+(`cutout=True`); flood-filling the white leaked into the white machine bodies, so that path (`white_alpha`) is kept only for
+the one render where it worked (`vl-wadg-1`).  Keys `vl-*`; `tools/vl_sheet_keys.txt` is written by `tools/vl_sheet_pages.py`.

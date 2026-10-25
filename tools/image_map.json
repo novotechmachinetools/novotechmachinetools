@@ -14257,5 +14257,843 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "vl-wad-1": {
+  "src": "tools/src-images/value-sheet/vl-wad-1.png",
+  "alt": "NovoTech WAD 100T/3200 CNC hydraulic press brake — 10 ft × 110 US tons, front view with the Delem control on its swing arm",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wad-2": {
+  "src": "tools/src-images/value-sheet/vl-wad-2.jpg",
+  "alt": "WAD 100T/3200 CNC hydraulic press brake — front view with front support arms",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "vl-wade-1": {
+  "src": "tools/src-images/value-sheet/vl-wade-1.png",
+  "alt": "WAD 110T/3200 CNC hydraulic press brake with the 2D graphic touchscreen control",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wad-heavy": {
+  "src": "tools/src-images/value-sheet/vl-wad-heavy.png",
+  "alt": "Heavy-duty CNC press brake with twin sheet followers — 30 ft bending length",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wad-tandem": {
+  "src": "tools/src-images/value-sheet/vl-wad-tandem.jpg",
+  "alt": "Tandem CNC press brake — two 300 t × 13 ft machines on one control with sheet followers",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "vl-wad-tandem-2": {
+  "src": "tools/src-images/value-sheet/vl-wad-tandem-2.png",
+  "alt": "Tandem press brake with CNC sheet followers for long, heavy plate",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wad-follower": {
+  "src": "tools/src-images/value-sheet/vl-wad-follower.png",
+  "alt": "Heavy-duty CNC press brake with a CNC sheet follower table",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wad-robot": {
+  "src": "tools/src-images/value-sheet/vl-wad-robot.jpg",
+  "alt": "WAD 110T/3200 CNC press brake in a robot bending cell",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-backgauge": {
+  "src": "tools/src-images/value-sheet/vl-pb-backgauge.jpg",
+  "alt": "CNC back gauge on ball screws and linear guides — X and R axes, servo driven",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-clamps": {
+  "src": "tools/src-images/value-sheet/vl-pb-clamps.png",
+  "alt": "European-style tool clamping along the ram with the light curtain at the side",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-quickclamp": {
+  "src": "tools/src-images/value-sheet/vl-pb-quickclamp.jpg",
+  "alt": "Quick-release tool clamps — the punch changes without tools",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-clamp-open": {
+  "src": "tools/src-images/value-sheet/vl-pb-clamp-open.jpg",
+  "alt": "Quick clamp opened for a punch change",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-cylinders": {
+  "src": "tools/src-images/value-sheet/vl-pb-cylinders.jpg",
+  "alt": "Y1 and Y2 ram cylinders with the hydraulic blocks on top of the frame",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-da53": {
+  "src": "tools/src-images/value-sheet/vl-pb-da53.png",
+  "alt": "Delem DA-53T 2D touchscreen control — standard on the CNC press brakes",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-da58": {
+  "src": "tools/src-images/value-sheet/vl-pb-da58.png",
+  "alt": "Delem DA-58T 15″ 2D graphic control with bend sequence calculation",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-da66": {
+  "src": "tools/src-images/value-sheet/vl-pb-da66.png",
+  "alt": "Delem DA-66T 17″ 2D control with 3D visualisation",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-fingers": {
+  "src": "tools/src-images/value-sheet/vl-pb-fingers.jpg",
+  "alt": "Back gauge stop fingers on the X-R beam",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-hydclamp": {
+  "src": "tools/src-images/value-sheet/vl-pb-hydclamp.png",
+  "alt": "Hydraulic tool clamping — one lever locks the whole ram",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-dsp": {
+  "src": "tools/src-images/value-sheet/vl-pb-dsp.jpg",
+  "alt": "DSP laser finger protection under the punch",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-crowning": {
+  "src": "tools/src-images/value-sheet/vl-pb-crowning.jpg",
+  "alt": "CNC crowning cylinders under the table compensate deflection along the bend",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-servo-bg": {
+  "src": "tools/src-images/value-sheet/vl-pb-servo-bg.jpg",
+  "alt": "Servo motor and ball screw of the back gauge X axis",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-follower-detail": {
+  "src": "tools/src-images/value-sheet/vl-pb-follower-detail.png",
+  "alt": "CNC sheet follower supporting a large blank through the bend",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-nc-1": {
+  "src": "tools/src-images/value-sheet/vl-nc-1.jpg",
+  "alt": "NovoTech WC67E 100T/3200 NC hydraulic press brake — 10 ft × 110 US tons, torsion-bar synchronised, with the Estun control",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "vl-nc-backgauge": {
+  "src": "tools/src-images/value-sheet/vl-nc-backgauge.jpg",
+  "alt": "Torsion bar and the motorised X back gauge seen from the rear",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-nc-torsion": {
+  "src": "tools/src-images/value-sheet/vl-nc-torsion.png",
+  "alt": "Torsion-bar synchronisation of the ram — the mechanical link between the two cylinders",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-nc-bg-motor": {
+  "src": "tools/src-images/value-sheet/vl-nc-bg-motor.jpg",
+  "alt": "Back gauge drive motor and ball screw on the NC press brake",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-nc-photo-1": {
+  "src": "tools/src-images/value-sheet/vl-nc-photo-1.jpg",
+  "alt": "NC press brake — back gauge beam with the stop fingers and linear scale",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-nc-photo-2": {
+  "src": "tools/src-images/value-sheet/vl-nc-photo-2.jpg",
+  "alt": "NC press brake — European-style punch clamping on the ram",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-nc-photo-3": {
+  "src": "tools/src-images/value-sheet/vl-nc-photo-3.jpg",
+  "alt": "NC press brake — ram cylinder and the mechanical depth stop",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-1": {
+  "src": "tools/src-images/value-sheet/vl-wadg-1.png",
+  "alt": "NovoTech WADG 100T/3200 electric servo press brake — 10 ft × 110 US tons, dual ball-screw drive, no hydraulics",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-robot": {
+  "src": "tools/src-images/value-sheet/vl-wadg-robot.jpg",
+  "alt": "WADG 40T/1600 electric press brake in a robot bending cell with an Estun robot",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "vl-wadg-motors": {
+  "src": "tools/src-images/value-sheet/vl-wadg-motors.jpg",
+  "alt": "Y1 and Y2 servo motors on top of the electric press brake frame",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-ram": {
+  "src": "tools/src-images/value-sheet/vl-wadg-ram.png",
+  "alt": "Servo motors, belts and ball screws driving the ram of the electric press brake",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-drawing": {
+  "src": "tools/src-images/value-sheet/vl-wadg-drawing.png",
+  "alt": "Electric press brake — frame, dual lead screws and ram",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-support": {
+  "src": "tools/src-images/value-sheet/vl-wadg-support.png",
+  "alt": "Front support arms on linear rails",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-tooling": {
+  "src": "tools/src-images/value-sheet/vl-wadg-tooling.png",
+  "alt": "Standard punches and dies supplied with the press brakes",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-parts": {
+  "src": "tools/src-images/value-sheet/vl-wadg-parts.png",
+  "alt": "Typical parts bent on the electric press brake — brackets, channels and boxes",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-qc12k-1": {
+  "src": "tools/src-images/value-sheet/vl-qc12k-1.png",
+  "alt": "NovoTech QC12K hydraulic swing beam shear — 10 ft × 1/4″ with the Estun E21S control",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-qc12k-2": {
+  "src": "tools/src-images/value-sheet/vl-qc12k-2.jpg",
+  "alt": "Hydraulic swing beam shear with the control on a swing arm and front ball-transfer tables",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "vl-qc12k-rear": {
+  "src": "tools/src-images/value-sheet/vl-qc12k-rear.png",
+  "alt": "Swing beam shear from the rear — back gauge beam, hydraulic cylinders and the light-barrier guard",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-backgauge": {
+  "src": "tools/src-images/value-sheet/vl-sh-backgauge.png",
+  "alt": "Motorised back gauge on ball screws with the sheet support fingers",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-holddowns": {
+  "src": "tools/src-images/value-sheet/vl-sh-holddowns.jpg",
+  "alt": "Hydraulic hold-down cylinders along the cutting line",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-holddowns-2": {
+  "src": "tools/src-images/value-sheet/vl-sh-holddowns-2.jpg",
+  "alt": "Hold-downs and blade gap seen from the operator side",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-e21s": {
+  "src": "tools/src-images/value-sheet/vl-sh-e21s.png",
+  "alt": "Estun E21S and E200PS NC shear controls — back gauge, cutting angle and blade clearance",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-blade": {
+  "src": "tools/src-images/value-sheet/vl-sh-blade.png",
+  "alt": "Four-edge rectangular blades — turn the blade for a fresh edge",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-roller": {
+  "src": "tools/src-images/value-sheet/vl-sh-roller.jpg",
+  "alt": "Roller sheet support in the front table",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-photo-1": {
+  "src": "tools/src-images/value-sheet/vl-sh-photo-1.jpg",
+  "alt": "Swing beam shear — hydraulic cylinder and back gauge drive",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-photo-2": {
+  "src": "tools/src-images/value-sheet/vl-sh-photo-2.jpg",
+  "alt": "Swing beam shear — main motor and pump on top of the oil tank",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-sh-photo-3": {
+  "src": "tools/src-images/value-sheet/vl-sh-photo-3.jpg",
+  "alt": "Swing beam shear — blade gap adjustment and hold-down manifold",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-1": {
+  "src": "tools/src-images/value-sheet/vl-q11k-1.png",
+  "alt": "NovoTech Q11K 6×2500 hydraulic guillotine shear — 8 ft × 1/4″ with the Estun control and ball-transfer tables",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-rear": {
+  "src": "tools/src-images/value-sheet/vl-q11k-rear.png",
+  "alt": "Guillotine shear from the rear — the ball-screw back gauge and sheet support",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-rear-2": {
+  "src": "tools/src-images/value-sheet/vl-q11k-rear-2.png",
+  "alt": "Guillotine shear — rear view with the electrical cabinet and the back gauge motor",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-controls": {
+  "src": "tools/src-images/value-sheet/vl-q11k-controls.png",
+  "alt": "Estun E21S NC control and the optional Delem DAC-360T",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-valve": {
+  "src": "tools/src-images/value-sheet/vl-q11k-valve.png",
+  "alt": "Rexroth hydraulic valve block with pressure gauge",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-measure": {
+  "src": "tools/src-images/value-sheet/vl-q11k-measure.jpg",
+  "alt": "Checking the cut strip — straight, burr-free edges",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-feed": {
+  "src": "tools/src-images/value-sheet/vl-q11k-feed.jpg",
+  "alt": "Feed opening with the hold-down cylinders and the roller table",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-rexroth": {
+  "src": "tools/src-images/value-sheet/vl-q11k-rexroth.png",
+  "alt": "Rexroth directional valve of the hydraulic system",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q11k-holddown": {
+  "src": "tools/src-images/value-sheet/vl-q11k-holddown.png",
+  "alt": "Hydraulic hold-down cylinders of the guillotine shear",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-g-photo-1": {
+  "src": "tools/src-images/value-sheet/vl-g-photo-1.jpg",
+  "alt": "Guillotine shear — rake angle cylinders behind the blade beam",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-g-photo-2": {
+  "src": "tools/src-images/value-sheet/vl-g-photo-2.jpg",
+  "alt": "Guillotine shear — pressure gauge and manual valves",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-g-photo-3": {
+  "src": "tools/src-images/value-sheet/vl-g-photo-3.jpg",
+  "alt": "Guillotine shear — NC control panel",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-g-photo-4": {
+  "src": "tools/src-images/value-sheet/vl-g-photo-4.jpg",
+  "alt": "Guillotine shear — top of the frame with the main cylinder",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-g-photo-5": {
+  "src": "tools/src-images/value-sheet/vl-g-photo-5.jpg",
+  "alt": "Guillotine shear — back gauge screw and support",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-q35y-1": {
+  "src": "tools/src-images/value-sheet/vl-q35y-1.png",
+  "alt": "NovoTech Q35Y hydraulic ironworker — punching, flat bar, angle, round and square bar shearing and notching stations",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-punch": {
+  "src": "tools/src-images/value-sheet/vl-iw-punch.jpg",
+  "alt": "Punching station with the hold-down and the adjustable stripper",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-notch": {
+  "src": "tools/src-images/value-sheet/vl-iw-notch.jpg",
+  "alt": "Rectangular notching station",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-angle": {
+  "src": "tools/src-images/value-sheet/vl-iw-angle.jpg",
+  "alt": "Angle shearing station with the guard open",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-flat": {
+  "src": "tools/src-images/value-sheet/vl-iw-flat.png",
+  "alt": "Flat bar shearing station with the ruler and hold-down",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-notch-die": {
+  "src": "tools/src-images/value-sheet/vl-iw-notch-die.jpg",
+  "alt": "Notching die and the opened guard",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-tooling": {
+  "src": "tools/src-images/value-sheet/vl-iw-tooling.png",
+  "alt": "Punches, dies and notching tools supplied with the ironworker",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-valve": {
+  "src": "tools/src-images/value-sheet/vl-iw-valve.jpg",
+  "alt": "Hydraulic valve block of the ironworker",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-motor": {
+  "src": "tools/src-images/value-sheet/vl-iw-motor.jpg",
+  "alt": "Main motor and pump unit",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-iw-gauge": {
+  "src": "tools/src-images/value-sheet/vl-iw-gauge.jpg",
+  "alt": "Checking the angle on a sheared and bent sample",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-h-1": {
+  "src": "tools/src-images/value-sheet/vl-vg-h-1.png",
+  "alt": "NovoTech horizontal CNC V-grooving machine — 13 ft × 4 ft table with the four-tool grooving head",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-v-1": {
+  "src": "tools/src-images/value-sheet/vl-vg-v-1.png",
+  "alt": "NovoTech vertical CNC V-grooving machine — the sheet stands against the clamps, 13 ft grooving length",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-v-scene": {
+  "src": "tools/src-images/value-sheet/vl-vg-v-scene.jpg",
+  "alt": "Vertical V-grooving machine on the shop floor",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-head": {
+  "src": "tools/src-images/value-sheet/vl-vg-head.jpg",
+  "alt": "Four-tool grooving head of the horizontal machine",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-cutters": {
+  "src": "tools/src-images/value-sheet/vl-vg-cutters.jpg",
+  "alt": "Grooving cutters of the vertical machine",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-trial": {
+  "src": "tools/src-images/value-sheet/vl-vg-trial.jpg",
+  "alt": "V-groove cut into stainless sheet before bending",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-clamps": {
+  "src": "tools/src-images/value-sheet/vl-vg-clamps.png",
+  "alt": "Pneumatic sheet clamps along the table",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-corner": {
+  "src": "tools/src-images/value-sheet/vl-vg-corner.jpg",
+  "alt": "Sharp outside corner bent after V-grooving",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-table": {
+  "src": "tools/src-images/value-sheet/vl-vg-table.png",
+  "alt": "Horizontal V-grooving machine — table and gantry",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-beam": {
+  "src": "tools/src-images/value-sheet/vl-vg-beam.png",
+  "alt": "Vertical machine — grooving beam and clamping bar",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-control": {
+  "src": "tools/src-images/value-sheet/vl-vg-control.png",
+  "alt": "Touchscreen CNC control of the V-grooving machine",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-control-2": {
+  "src": "tools/src-images/value-sheet/vl-vg-control-2.png",
+  "alt": "Control pendant with the CNC screen and push buttons",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-ruler": {
+  "src": "tools/src-images/value-sheet/vl-vg-ruler.jpg",
+  "alt": "Scale along the clamping bar for positioning the sheet",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-parts": {
+  "src": "tools/src-images/value-sheet/vl-vg-parts.jpg",
+  "alt": "Grooved and bent stainless sample — zero-radius corner",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-parts-2": {
+  "src": "tools/src-images/value-sheet/vl-vg-parts-2.png",
+  "alt": "Octagonal column bent from a V-grooved sheet",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pbm-1": {
+  "src": "tools/src-images/value-sheet/vl-pbm-1.jpg",
+  "alt": "NovoTech PB-M2500 CNC panel bender — press-arm type, 98″ bend width, with the control console",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "vl-pba-1": {
+  "src": "tools/src-images/value-sheet/vl-pba-1.png",
+  "alt": "NovoTech PB-A1400 CNC panel bender with automatic tool change — 55″ bend width",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-robot-cell": {
+  "src": "tools/src-images/value-sheet/vl-pb-robot-cell.jpg",
+  "alt": "PB-M2500 panel bender loaded and unloaded by two robots",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-operator": {
+  "src": "tools/src-images/value-sheet/vl-pb-operator.jpg",
+  "alt": "Operator at the tool magazine of the automatic tool-change panel bender",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-loading": {
+  "src": "tools/src-images/value-sheet/vl-pb-loading.png",
+  "alt": "Panel bender with a robot loading cell and sheet supports",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-unit": {
+  "src": "tools/src-images/value-sheet/vl-pb-unit.png",
+  "alt": "Bending unit — upper and lower blades, blank-holder and the sheet manipulator",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-tools": {
+  "src": "tools/src-images/value-sheet/vl-pb-tools.jpg",
+  "alt": "Automatic tool-change magazine of the PB-A",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-blades": {
+  "src": "tools/src-images/value-sheet/vl-pb-blades.png",
+  "alt": "Bending blades forming a flange upward",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-clamp": {
+  "src": "tools/src-images/value-sheet/vl-pb-clamp.png",
+  "alt": "Blank-holder cylinder of the panel bender",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-manipulator": {
+  "src": "tools/src-images/value-sheet/vl-pb-manipulator.png",
+  "alt": "Sheet manipulator with suction cups and rotation",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-frame": {
+  "src": "tools/src-images/value-sheet/vl-pb-frame.png",
+  "alt": "Welded, stress-relieved frame of the panel bender",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-parts": {
+  "src": "tools/src-images/value-sheet/vl-pb-parts.png",
+  "alt": "Panels with hems and box corners bent on the panel bender",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-parts-2": {
+  "src": "tools/src-images/value-sheet/vl-pb-parts-2.png",
+  "alt": "Trays, enclosures and brackets from the panel bender",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-parts-3": {
+  "src": "tools/src-images/value-sheet/vl-pb-parts-3.png",
+  "alt": "Perforated enclosure bent on four sides",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-pb-tool-diagram": {
+  "src": "tools/src-images/value-sheet/vl-pb-tool-diagram.png",
+  "alt": "Tool-change diagram of the PB-A bending unit",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "video-0imM4bArpBc": {
+  "src": "/home/claude/gms-site/yt/0imM4bArpBc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-KyNWOyaBKDM": {
+  "src": "/home/claude/gms-site/yt/KyNWOyaBKDM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

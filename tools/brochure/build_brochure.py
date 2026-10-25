@@ -110,7 +110,8 @@ def render(spec, no_inline):
         groups = [{"title": spec["title"], "families": families}]
     env = Environment(loader=FileSystemLoader(HERE), autoescape=False)
     env.filters["img"] = img
-    html = env.get_template("brochure.html").render(spec=spec, site=SITE, families=families, groups=groups, total=total, included=INCLUDED,
+    included = [(spec["made_in"], "")] + INCLUDED[1:] if spec.get("made_in") else INCLUDED   # value line: "Built in China to North American standards"
+    html = env.get_template("brochure.html").render(spec=spec, site=SITE, families=families, groups=groups, total=total, included=included,
                                                      fonts="file://" + os.path.join(ROOT, "src", "fonts"), logo=img("novotech-logo", 800, png=True),
                                                      cover_imgs=[img(k) for k in spec["cover_photos"]], year=spec.get("year", "2026"))
     out_html = os.path.join(HERE, "out", os.path.basename(spec["out"]).replace(".pdf", ".html"))

@@ -2,11 +2,11 @@
  "slug": "ironworker-machines",
  "template": "category.html",
  "family_set": "sahinler",
- "title": "Hydraulic Ironworker Machines 44–193 Ton | NovoTech",
+ "title": "Hydraulic Ironworker Machines, 44 to 276 Ton | NovoTech",
  "artifact_title": "Hydraulic ironworker machines",
- "meta_description": "Hydraulic ironworkers from 44 to 193 US tons that punch, shear bar, angle and flat and notch: single-piston HKM 40–65, double-piston HKM 55–175 for 2 operators.",
+ "meta_description": "Hydraulic ironworkers, 44–276 US tons: punch, shear bar, angle and flat, notch. Şahinler HKM single- and double-piston, plus the NovoTech value-line Q35Y.",
  "h1": "Hydraulic ironworker machines",
- "intro": "A hydraulic ironworker (also sold as a steelworker or universal punch and shear) puts the five jobs of the structural shop on one machine: punching, round and square bar shear, angle shear at 90° and 45°, flat-bar and sheet shear and rectangular notching, each with its own station and LED light. Şahinler's HKM range runs from the 44 US ton HKM 40 to the 193 US ton HKM 175 in two designs: single-piston machines in which one cylinder serves every station — compact and economical — and double-piston machines with two cylinders and two foot pedals so two operators punch and shear at the same time. Punches to Ø1-1/2″ are standard on every model; large-hole, section punching, beam and tee blades, V-notching, press-brake and keyway tools are optional. Sold with a CSA-approved panel and installed, tooled and supported from Mississauga, ON.",
+ "intro": "A hydraulic ironworker (also sold as a steelworker or universal punch and shear) puts the five jobs of the structural shop on one machine: punching, round and square bar shear, angle shear at 90° and 45°, flat-bar and sheet shear and rectangular notching, each with its own station and LED light. Şahinler's HKM range runs from the 44 US ton HKM 40 to the 193 US ton HKM 175 in two designs: single-piston machines in which one cylinder serves every station — compact and economical — and double-piston machines with two cylinders and two foot pedals so two operators punch and shear at the same time. Punches to Ø1-1/2″ are standard on every model; large-hole, section punching, beam and tee blades, V-notching, press-brake and keyway tools are optional. Below the Şahinler machines is NovoTech's own value line, the Q35Y single-cylinder ironworkers from 55 to 276 US tons, built in China to our specification and sold under our name with the tooling included. All sold with a CSA-approved panel and installed, tooled and supported from Mississauga, ON.",
  "hero_points": [
   "Single-piston HKM 40 · 45 · 60 · 65 V — 44 to 72 US tons, 4 – 5 work stations",
   "Double-piston HKM 55 · 65 · 85 · 115 · 175 — 61 to 193 US tons, two operators at once",
@@ -40,6 +40,15 @@
    "families": [
     "sahinler-hkm-single",
     "sahinler-hkm-double"
+   ]
+  },
+  {
+   "id": "iron-value-group",
+   "title": "NovoTech value-line ironworkers",
+   "lead": "The Q35Y: one cylinder, five stations and the tooling in the crate, from 55 to 276 US tons at a value-line price.",
+   "brand": "novotech",
+   "families": [
+    "vl-q35y"
    ]
   }
  ],

@@ -15,6 +15,7 @@ import shutil
 from isitan_lib import VOLT_FAQ_GENERIC, write_category, write_families  # noqa: F401
 import dener_data as D
 import dener_photos as PH
+import vl_sheet_data as VL   # NovoTech value-line panel benders below the Dener machine on panel-bender.html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "dener"
@@ -26,6 +27,7 @@ PDF_LASER_FILE = "files/NovoTech-Dener-Fiber-Lasers-2026.pdf"
 PDF_TUBE_FILE = "files/NovoTech-Dener-Tube-Lasers-2026.pdf"
 PDF_PANEL_FILE = "files/NovoTech-Dener-Panel-Bender-2026.pdf"
 PDF_SHEAR_FILE = "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf"
+PDF_VL_PANEL_FILE = "files/NovoTech-Panel-Benders-Value-Line-2026.pdf"
 COPY_PDFS = {PDF_PB_FILE: "nt-hydraulic-pb.pdf", PDF_SERVO_FILE: "pdf2/NovoTech_Dener_Servo_Press_Brakes (1).pdf", PDF_LASER_FILE: "nt-fiber-laser.pdf"}
 
 BRAND_LINE = ("Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries, "
@@ -78,8 +80,9 @@ PAGE_PB = dict(
           "a": "Yes. Machines ship from Kayseri to Mississauga; we unload, level, commission and train your operators, and Dener Canada stocks parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about press brakes",
-    related_pages=[{"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"},
-                   {"href": "panel-bender.html", "label": "CNC panel bender"}, {"href": "shear-cutting.html", "label": "Metal shears"},
+    related_pages=[{"href": "hydraulic-press-brake.html", "label": "Value-line hydraulic press brakes"}, {"href": "electric-press-brake.html", "label": "Value-line electric press brakes"},
+                   {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"},
+                   {"href": "panel-bender.html", "label": "CNC panel benders"}, {"href": "shear-cutting.html", "label": "Metal shears"},
                    {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}, {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
     related_title="More bending and cutting machinery from NovoTech",
 )
@@ -155,20 +158,23 @@ PAGE_TUBE = dict(
 )
 
 PAGE_PANEL = dict(
-    title="CNC Panel Bender, 79″ × 1/8″, 15 Servo Axes | NovoTech",
-    meta="Automatic CNC panel bender sold and installed in Canada: folds all four sides of blanks to 79 × 49″ in one setup — 14 ga mild steel, 16 ga stainless, 1/8″ aluminum — 0.2 s per bend, 15 servo axes, no tooling changes.",
-    h1="CNC panel bender — four-side bending of blanks to 79 × 49″ with no tooling changes",
+    title="CNC Panel Benders, 63–165″ Wide, 0.2 s per Bend | NovoTech",
+    meta="CNC panel benders sold in Canada: the Dener 79″ machine and NovoTech's value-line PB-M and PB-A, 63–165″, with automatic tool change — four sides, 0.2 s a bend.",
+    h1="CNC panel benders — four-side bending with no tooling changes, 63 to 165″ bend width",
     intro="A panel bender is the machine that replaces a press brake for boxes, doors, enclosures, panels and HVAC parts: the blank is clamped "
           "by a blank-holder and a bending blade folds the flange up or down, hems it or forms a box corner in 0.2 s, while the manipulator "
           "turns the part to bend the next side — all four sides in one setup, no tooling changes, no skilled operator. NovoTech sells the "
           "Dener panel bender in Canada: blanks to 78.7 × 49.2″ (2,000 × 1,250 mm), flanges to 6.7″, 14 ga mild steel, 16 ga stainless and "
           "1/8″ aluminum, 15 servo axes with 0.001 mm positioning, 100 % electric at about 2.8 kW average draw. Automatic loading and "
-          "unloading arms turn it into an unattended cell. Installed and supported from Mississauga, ON.",
+          "unloading arms turn it into an unattended cell. Below it is NovoTech's own value line: the PB-M press-arm panel benders in nine sizes "
+          "from 63 to 165″ and the PB-A with automatic tool change in four sizes to 126″, built in China to our specification with the same "
+          "0.2 s bends and 14 ga capacity. All installed and supported from Mississauga, ON.",
     points=["Blanks to 78.7 × 49.2″, flanges to 6.7″ (11.8″ on request), 1 mm minimum radius, boxes from 5.5 × 7.5″ inside",
             "14 ga mild steel, 16 ga stainless, 1/8″ aluminum — 0.2 s per bend, 295 ft/min feeding",
-            "15 servo axes, 0.001 mm positioning, 100 % electric, about 50 dB; loading / unloading arms available"],
+            "Value line: PB-M 63 – 165″ in nine sizes, PB-A with 0.5 s automatic tool change to 126″; robot loading cells"],
     hero="dn-panel-1", minis=["dn-panel-2", "dn-panel-5"],
-    groups=[("panel", "CNC panel bender", "Fully servo-driven four-side bending cell with a 3D control — one model, 79 × 49″ blanks.", BRAND)],
+    groups=[("panel", "Dener CNC panel bender", "Fully servo-driven four-side bending cell with a 3D control — one model, 79 × 49″ blanks, made in Turkey.", BRAND),
+            ("panel-value", "NovoTech value-line panel benders", "The PB-M press-arm machines in nine sizes and the PB-A with automatic tool change — 63 to 165″ bend width at a value-line price.", VL.BRAND)],
     faq=[{"q": "Panel bender or press brake?",
           "a": "A press brake bends one line at a time and the operator handles the part between bends; a panel bender clamps the blank once and forms every side — up, down, hems, box corners — automatically, in 0.2 s per bend and with the same accuracy on the first and the thousandth part. For boxes, doors, cabinets, enclosures, appliance and HVAC panels in sheet to 14 ga it is five to ten times faster than a brake and needs no skilled operator or tooling changes. For plate, long single bends, deep boxes or small batches of unusual parts the press brake stays the better machine — most shops run both."},
          {"q": "What sheet can it bend?",
@@ -223,14 +229,18 @@ def build():
     fams += [dict(f, pdf=pdf_laser) for f in D.LASER_FAMILIES]
     fams += [dict(f, pdf=pdf_tube) for f in D.TUBE_FAMILIES]
     fams += [dict(f, pdf=pdf_panel) for f in D.PANEL_FAMILIES]
+    pdf_vl_panel = pdf(PDF_VL_PANEL_FILE, "Download the value-line panel bender brochure")
+    fams += [dict(f, pdf=pdf_vl_panel) for f in VL.PANEL_FAMILIES]
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **INTRO_VIDEO}
     write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", extra={**common, "nav_label": "CNC press brakes", "catalogue_pdf": None, "catalogue_pdfs": [pdf_pb, pdf_servo]})
     write_category(D.P_LASER, PAGE_LASER, fams, SET, "Sheet laser cutters", extra={**common, "nav_label": "Sheet laser cutters", "catalogue_pdf": pdf_laser})
     write_category(D.P_TUBE, PAGE_TUBE, fams, SET, "Tube laser cutters", extra={**common, "nav_label": "Tube laser cutters", "catalogue_pdf": pdf_tube})
-    write_category(D.P_PANEL, PAGE_PANEL, fams, SET, "Panel benders", extra={**common, "nav_label": "Panel benders", "catalogue_pdf": pdf_panel})
+    write_category(D.P_PANEL, PAGE_PANEL, fams, SET, "Panel benders", extra={**common, "nav_label": "Panel benders", "catalogue_pdf": None, "catalogue_pdfs": [pdf_panel, pdf_vl_panel],
+                                                                                "hero_brand_line": "The Dener panel bender is made in Turkey by Dener Makina; the PB-M and PB-A carry the NovoTech name — built in China to North American standards. All sold, installed and supported in Canada by NovoTech."})
     keys = register_images()
-    used = {k for f in fams + D.SHEAR_FAMILIES for k in f["images"]}
+    vl_keys = {k for f in VL.PANEL_FAMILIES for k in f["images"]}
+    used = {k for f in fams + D.SHEAR_FAMILIES for k in f["images"]} - vl_keys
     for p in (PAGE_PB, PAGE_LASER, PAGE_TUBE, PAGE_PANEL):
         used |= {p["hero"]} | set(p["minis"])
     unused = sorted(set(keys) - used)
@@ -239,7 +249,7 @@ def build():
     missing = sorted(used - set(keys))
     if missing:
         raise SystemExit(f"image keys without a photo: {missing}")
-    vids = sorted({v["id"] for f in fams + D.SHEAR_FAMILIES for v in f["videos"]} | {INTRO_VIDEO["intro_video"]["id"]})
+    vids = sorted({v["id"] for f in fams + D.SHEAR_FAMILIES for v in f["videos"] if f["id"] not in {x["id"] for x in VL.PANEL_FAMILIES}} | {INTRO_VIDEO["intro_video"]["id"]})
     open(os.path.join(ROOT, "tools", "dener_vids.txt"), "w").write(" ".join(vids))
     print(f"dener: {len(fams)} families on 4 pages + {len(D.SHEAR_FAMILIES)} shear families · images: {len(keys)} · videos: {len(vids)}")
 

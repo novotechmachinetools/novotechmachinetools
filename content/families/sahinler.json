@@ -9,6 +9,7 @@
   "sahinler-tc-42",
   "sahinler-hkm-single",
   "sahinler-hkm-double",
+  "vl-q35y",
   "sahinler-hpm",
   "sahinler-hpm-dp",
   "sahinler-hpm-cnc",
@@ -3053,6 +3054,373 @@
    },
    "headline": "61 – 193 US tons · two operators at once · angle to L 7-7/8 × 7-7/8 × 13/16″ · holes to Ø2-1/4″ × 7/8″",
    "group": "sahinler-iron"
+  },
+  "vl-q35y": {
+   "id": "vl-q35y",
+   "brand": "novotech",
+   "name": "Q35Y hydraulic ironworkers, 55 – 276 US tons — NovoTech value line",
+   "short": "Q35Y ironworkers",
+   "models_label": "Q35Y-50 · 60 · 90 · 120 · 160 · 200 · 250",
+   "summary": "The value-line steelworker: one hydraulic cylinder, five stations — punching, flat-bar shear, angle shear at 90° and 45°, round and square bar shear and rectangular notching — and the tooling to use them in the crate. The 66 US ton Q35Y-60 punches Ø1″ through 5/8″ and shears 4-3/4 × 4-3/4 × 1/2″ angle; the 132-ton Q35Y-120 punches Ø1-3/8″ through 1″ and shears 6-1/4″ angle and 1″ flat; the 200 and 250 t machines cut 7-7/8″ angle, 12″ channel and 1-9/16″ to 2″ plate. The Q35Y-50 is the compact single-station bench model.",
+   "features": [
+    "Punching to Ø1-9/16″ × 1-9/16″, angle to 7-7/8 × 7-7/8 × 11/16″, flat bar to 15-3/4 × 1-9/16″",
+    "Five stations: punching, flat-bar shear, angle shear at 90° and 45°, round / square bar shear and rectangular notching — each with hold-down and guard",
+    "Single cylinder with adjustable stroke and two foot pedals; strokes per minute as the table",
+    "Punch and die, flat-bar blades, angle blades, bar blades and notching blades included",
+    "Hydraulic valve block with overload protection; Schneider electrics; LED lighting at the stations",
+    "Travel-limit switches and interlocked guards",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Tee, I-beam and channel blades; V-notching; pipe notching; bending tools",
+    "Large-hole and section punching tools; punch sets",
+    "Back gauge for the shear station; length stops",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-q35y-1",
+    "vl-iw-punch",
+    "vl-iw-notch",
+    "vl-iw-angle",
+    "vl-iw-flat",
+    "vl-iw-notch-die",
+    "vl-iw-tooling",
+    "vl-iw-valve",
+    "vl-iw-motor",
+    "vl-iw-gauge"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Q35Y hydraulic ironworkers",
+      "sub": "7 models · 55 – 276 US tons",
+      "models": [
+       "Q35Y-50",
+       "Q35Y-60",
+       "Q35Y-90",
+       "Q35Y-120",
+       "Q35Y-160",
+       "Q35Y-200",
+       "Q35Y-250"
+      ],
+      "rows": [
+       {
+        "label": "Punching force",
+        "sub": "",
+        "cells": [
+         "55 US tons (50 t)",
+         "66 US tons (60 t)",
+         "99 US tons (90 t)",
+         "132 US tons (120 t)",
+         "176 US tons (160 t)",
+         "220 US tons (200 t)",
+         "276 US tons (250 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching, max. thickness",
+        "sub": "",
+        "cells": [
+         "15/32″ (12 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)",
+         "1″ (25 mm)",
+         "1-1/8″ (28 mm)",
+         "1-3/8″ (35 mm)",
+         "1-9/16″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching, max. Ø",
+        "sub": "",
+        "cells": [
+         "Ø0.98″ (25 mm)",
+         "Ø0.98″ (25 mm)",
+         "Ø1.18″ (30 mm)",
+         "Ø1.38″ (35 mm)",
+         "Ø1.50″ (38 mm)",
+         "Ø1.57″ (40 mm)",
+         "Ø1.57″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar shear, max. thickness",
+        "sub": "",
+        "cells": [
+         "15/32″ (12 mm)",
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)",
+         "1″ (25 mm)",
+         "1-3/16″ (30 mm)",
+         "1-9/16″ (40 mm)",
+         "2″ (50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar shear, width × thickness",
+        "sub": "",
+        "cells": [
+         "11.8 × 15/32″ (300 × 12 mm)",
+         "9.8 × 5/8″ · 15.7 × 5/16″ (250 × 16 · 400 × 8 mm)",
+         "13.0 × 3/4″ · 18.9 × 3/8″ (330 × 20 · 480 × 10 mm)",
+         "13.0 × 1″ · 23.6 × 5/8″ (330 × 25 · 600 × 16 mm)",
+         "13.2 × 1-3/16″ · 23.6 × 3/4″ (335 × 30 · 600 × 20 mm)",
+         "15.7 × 1-3/8″ · 27.6 × 1″ (400 × 35 · 700 × 25 mm)",
+         "15.7 × 1-9/16″ · 29.5 × 1-3/16″ (400 × 40 · 750 × 30 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bar shear — round · square",
+        "sub": "",
+        "cells": [
+         "—",
+         "Ø1.77″ · □1.57″ (45 · 40 mm)",
+         "Ø1.97″ · □1.97″ (50 · 50 mm)",
+         "Ø2.36″ · □1.97″ (60 · 50 mm)",
+         "Ø2.56″ · □2.17″ (65 · 55 mm)",
+         "Ø2.76″ · □2.36″ (70 · 60 mm)",
+         "Ø2.95″ · □2.56″ (75 · 65 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle shear 90°",
+        "sub": "",
+        "cells": [
+         "—",
+         "4.7 × 4.7 × 15/32″ (120×120×12 mm)",
+         "5.5 × 5.5 × 15/32″ (140×140×12 mm)",
+         "6.3 × 6.3 × 9/16″ (160×160×14 mm)",
+         "7.1 × 7.1 × 5/8″ (180×180×16 mm)",
+         "7.9 × 7.9 × 11/16″ (200×200×18 mm)",
+         "7.9 × 7.9 × 11/16″ (200×200×18 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle shear 45°",
+        "sub": "",
+        "cells": [
+         "—",
+         "2.0 × 2.0 × 3/16″ (50×50×5 mm)",
+         "2.8 × 2.8 × 9/32″ (70×70×7 mm)",
+         "3.1 × 3.1 × 9/32″ (80×80×7 mm)",
+         "3.1 × 3.1 × 3/8″ (80×80×10 mm)",
+         "3.9 × 3.9 × 3/8″ (100×100×10 mm)",
+         "4.7 × 4.7 × 5/8″ (120×120×16 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tee shear 90° · 45°",
+        "sub": "",
+        "cells": [
+         "—",
+         "4.7 × 4.7 × 15/32″ (120×120×12 mm) · 2.4 × 2.4 × 5/16″ (60×60×8 mm)",
+         "5.5 × 5.5 × 15/32″ (140×140×12 mm) · 2.8 × 2.8 × 3/8″ (70×70×10 mm)",
+         "6.3 × 6.3 × 9/16″ (160×160×14 mm) · 3.1 × 3.1 × 3/8″ (80×80×10 mm)",
+         "7.1 × 7.1 × 5/8″ (180×180×16 mm) · 3.1 × 3.1 × 3/8″ (80×80×10 mm)",
+         "7.9 × 7.9 × 11/16″ (200×200×18 mm) · 3.1 × 3.1 × 3/8″ (80×80×10 mm)",
+         "7.9 × 7.9 × 11/16″ (200×200×18 mm) · 3.1 × 3.1 × 3/8″ (80×80×10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "I-beam · channel shear",
+        "sub": "",
+        "cells": [
+         "—",
+         "5.0 × 2.9 × 3/16″ (126×74×5 mm) · 5.0 × 2.1 × 3/16″ (126×53×5 mm)",
+         "6.3 × 3.4 × 1/4″ (160×86×6 mm) · 6.3 × 2.4 × 3/16″ (160×60×5 mm)",
+         "7.9 × 4.0 × 11/32″ (200×102×9 mm) · 7.9 × 3.0 × 11/32″ (200×75×9 mm)",
+         "11.0 × 4.9 × 3/8″ (280×124×10 mm) · 11.0 × 3.4 × 7/16″ (280×86×11 mm)",
+         "11.8 × 5.0 × 7/16″ (300×126×11 mm) · 11.8 × 3.5 × 15/32″ (300×89×12 mm)",
+         "12.6 × 5.1 × 3/8″ (320×130×10 mm) · 11.8 × 3.6 × 15/32″ (300×92×12 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Shear angle",
+        "sub": "",
+        "cells": [
+         "7°",
+         "7°",
+         "8°",
+         "8°",
+         "8°",
+         "8°",
+         "8°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Ram stroke",
+        "sub": "",
+        "cells": [
+         "1.4″ (35 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)",
+         "3.1″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes per minute",
+        "sub": "",
+        "cells": [
+         "10 – 18",
+         "9 – 25",
+         "12 – 28",
+         "12 – 28",
+         "12 – 28",
+         "10",
+         "10"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "4.5″ (115 mm)",
+         "11.8″ (300 mm)",
+         "14.0″ (355 mm)",
+         "15.7″ (400 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "20.1 HP (15 kW)",
+         "24.8 HP (18.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "37 × 22 × 71″ (950 × 550 × 1,800 mm)",
+         "65 × 29 × 70″ (1,640 × 730 × 1,770 mm)",
+         "73 × 31 × 75″ (1,860 × 800 × 1,900 mm)",
+         "93 × 38 × 82″ (2,355 × 960 × 2,090 mm)",
+         "106 × 41 × 91″ (2,680 × 1,040 × 2,300 mm)",
+         "117 × 49 × 93″ (2,970 × 1,240 × 2,350 mm)",
+         "118 × 57 × 96″ (3,000 × 1,440 × 2,450 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Q35Y-50",
+      "glance": [
+       "55 US tons (50 t)",
+       "15/32″ (12 mm)",
+       "—",
+       "15/32″ (12 mm)",
+       "5.4 HP (4 kW)"
+      ]
+     },
+     {
+      "name": "Q35Y-60",
+      "glance": [
+       "66 US tons (60 t)",
+       "5/8″ (16 mm)",
+       "4.7 × 4.7 × 15/32″ (120×120×12 mm)",
+       "5/8″ (16 mm)",
+       "7.4 HP (5.5 kW)"
+      ]
+     },
+     {
+      "name": "Q35Y-90",
+      "glance": [
+       "99 US tons (90 t)",
+       "3/4″ (20 mm)",
+       "5.5 × 5.5 × 15/32″ (140×140×12 mm)",
+       "3/4″ (20 mm)",
+       "10.1 HP (7.5 kW)"
+      ]
+     },
+     {
+      "name": "Q35Y-120",
+      "glance": [
+       "132 US tons (120 t)",
+       "1″ (25 mm)",
+       "6.3 × 6.3 × 9/16″ (160×160×14 mm)",
+       "1″ (25 mm)",
+       "14.8 HP (11 kW)"
+      ]
+     },
+     {
+      "name": "Q35Y-160",
+      "glance": [
+       "176 US tons (160 t)",
+       "1-1/8″ (28 mm)",
+       "7.1 × 7.1 × 5/8″ (180×180×16 mm)",
+       "1-3/16″ (30 mm)",
+       "14.8 HP (11 kW)"
+      ]
+     },
+     {
+      "name": "Q35Y-200",
+      "glance": [
+       "220 US tons (200 t)",
+       "1-3/8″ (35 mm)",
+       "7.9 × 7.9 × 11/16″ (200×200×18 mm)",
+       "1-9/16″ (40 mm)",
+       "20.1 HP (15 kW)"
+      ]
+     },
+     {
+      "name": "Q35Y-250",
+      "glance": [
+       "276 US tons (250 t)",
+       "1-9/16″ (40 mm)",
+       "7.9 × 7.9 × 11/16″ (200×200×18 mm)",
+       "2″ (50 mm)",
+       "24.8 HP (18.5 kW)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "punching",
+     "angle",
+     "flat",
+     "motor"
+    ],
+    "caps": {},
+    "note": "Capacities are the supplier's ratings for steel of up to 65,000 psi (450 N/mm²); the Q35Y-50 is the compact single-station bench model, the Q35Y-60 and up have the five stations and the section-shear capacities shown. The model number is the metric tonnage."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Ironworkers-Value-Line-2026.pdf",
+    "label": "Download the value-line ironworker brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "iron-value"
   },
   "sahinler-hpm": {
    "id": "sahinler-hpm",

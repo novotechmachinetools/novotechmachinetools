@@ -11,7 +11,9 @@
   "dn-smart-open",
   "dn-eftl",
   "dn-ftl",
-  "dn-panel"
+  "dn-panel",
+  "vl-pbm",
+  "vl-pba"
  ],
  "families": {
   "dn-xl-small": {
@@ -3333,6 +3335,710 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "panel"
+  },
+  "vl-pbm": {
+   "id": "vl-pbm",
+   "brand": "novotech",
+   "name": "PB-M press-arm panel benders, 63 – 165″ bend width — NovoTech value line",
+   "short": "PB-M panel benders",
+   "models_label": "PB-M1600 – PB-M4200 · 9 models · 15 servo axes",
+   "summary": "The value-line panel bender: a fully servo-electric bending cell with 15 axes, a patented press arm that feeds and supports the blank and a suction-cup manipulator that turns it, forming every side of a panel — up, down, hems, box corners — at 0.2 s per bend. Mild steel to 14 ga, stainless to 16 ga, aluminum to 1/8″, bending heights of 7.9″ (11.8″ on the -300 models), blanks to 165 × 47″. Nine models from 63″ to 165″ bend width, with robot loading as an option.",
+   "features": [
+    "Nine sizes, 63 – 165″ (1,600 – 4,200 mm) bend width; MH models take 55″-deep blanks",
+    "15 servo axes with 0.01° resolution: upper and lower bending blades, blank-holder, press arm and the sheet manipulator",
+    "0.2 s per bend; mild steel to 14 ga, stainless to 16 ga, aluminum to 1/8″; bending height 7.9″ (200 mm)",
+    "Three-point Y positioning with suction-cup manipulator; the patented press arm feeds and supports the blank",
+    "Cast QT500 / HT300 frame, stress-relieved and vibration-aged; automatic lubrication",
+    "CNC with a 10,000-part process library and ESA control option; offline programming, remote monitoring",
+    "Standard and hemming tools; perimeter guarding and light curtains",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Robot or gantry loading and unloading, sheet stacks and pallets",
+    "300 mm bending height (-300 models); 1,400 mm deep blanks (MH models)",
+    "Extra bending and hemming tools",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-pbm-1",
+    "vl-pb-robot-cell",
+    "vl-pb-loading",
+    "vl-pb-unit",
+    "vl-pb-blades",
+    "vl-pb-clamp",
+    "vl-pb-manipulator",
+    "vl-pb-frame",
+    "vl-pb-parts",
+    "vl-pb-parts-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PB-M press-arm panel benders",
+      "sub": "9 models · 63 – 165″ bend width · 14 ga mild steel",
+      "models": [
+       "PB-M1600",
+       "PB-M2100",
+       "PB-M2600",
+       "PB-M3200",
+       "PB-M4200",
+       "PB-M2100-300",
+       "PB-M2600-300",
+       "PB-MH2100",
+       "PB-MH2600"
+      ],
+      "rows": [
+       {
+        "label": "Max. bending width",
+        "sub": "",
+        "cells": [
+         "63.0″ (1,600 mm)",
+         "86.2″ (2,190 mm)",
+         "102.8″ (2,610 mm)",
+         "126.0″ (3,200 mm)",
+         "165.4″ (4,200 mm)",
+         "82.7″ (2,100 mm)",
+         "102.4″ (2,600 mm)",
+         "82.7″ (2,100 mm)",
+         "102.4″ (2,600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. blank size L × W",
+        "sub": "",
+        "cells": [
+         "63 × 47″ (1,600 × 1,200 mm)",
+         "86 × 47″ (2,190 × 1,200 mm)",
+         "103 × 47″ (2,610 × 1,200 mm)",
+         "126 × 47″ (3,200 × 1,200 mm)",
+         "165 × 47″ (4,200 × 1,200 mm)",
+         "83 × 47″ (2,100 × 1,200 mm)",
+         "102 × 47″ (2,600 × 1,200 mm)",
+         "83 × 55″ (2,100 × 1,400 mm)",
+         "102 × 55″ (2,600 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending height",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, stainless steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "20 ga (1.0 mm)",
+         "20 ga (1.0 mm)",
+         "20 ga (1.0 mm)",
+         "20 ga (1.0 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, aluminum",
+        "sub": "",
+        "cells": [
+         "1/8″ (3.0 mm)",
+         "1/8″ (3.0 mm)",
+         "1/8″ (3.0 mm)",
+         "1/8″ (3.0 mm)",
+         "3/32″ (2.5 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. thickness",
+        "sub": "",
+        "cells": [
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. four-side box, inside",
+        "sub": "",
+        "cells": [
+         "11.0 × 7.1″ (280 × 180 mm)",
+         "11.0 × 7.1″ (280 × 180 mm)",
+         "11.0 × 7.1″ (280 × 180 mm)",
+         "11.0 × 7.1″ (280 × 180 mm)",
+         "11.0 × 8.7″ (280 × 220 mm)",
+         "11.0 × 7.1″ (280 × 180 mm)",
+         "11.0 × 7.1″ (280 × 180 mm)",
+         "11.0 × 7.1″ (280 × 180 mm)",
+         "11.0 × 7.1″ (280 × 180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. two-side box, inside",
+        "sub": "",
+        "cells": [
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)",
+         "8.7″ (220 mm)",
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blank diagonal, max.",
+        "sub": "",
+        "cells": [
+         "92.1″ (2,340 mm)",
+         "112.4″ (2,854 mm)",
+         "127.6″ (3,240 mm)",
+         "149.4″ (3,794 mm)",
+         "187.1″ (4,752 mm)",
+         "119.5″ (3,036 mm)",
+         "134.9″ (3,426 mm)",
+         "112.4″ (2,854 mm)",
+         "127.6″ (3,240 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo axes",
+        "sub": "",
+        "cells": [
+         "15",
+         "15",
+         "15",
+         "17",
+         "19",
+         "15",
+         "15",
+         "15",
+         "15"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "51.0 HP (38 kW)",
+         "101.9 HP (76 kW)",
+         "144.8 HP (108 kW)",
+         "206.5 HP (154 kW)",
+         "244.1 HP (182 kW)",
+         "101.9 HP (76 kW)",
+         "144.8 HP (108 kW)",
+         "71.1 HP (53 kW)",
+         "88.5 HP (66 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Noise",
+        "sub": "",
+        "cells": [
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "188 × 85 × 114″ (4,780 × 2,150 × 2,900 mm)",
+         "222 × 108 × 126″ (5,650 × 2,750 × 3,200 mm)",
+         "240 × 128 × 130″ (6,100 × 3,250 × 3,300 mm)",
+         "272 × 161 × 138″ (6,900 × 4,100 × 3,500 mm)",
+         "315 × 201 × 142″ (8,000 × 5,100 × 3,600 mm)",
+         "228 × 102 × 138″ (5,800 × 2,600 × 3,500 mm)",
+         "248 × 124 × 140″ (6,300 × 3,150 × 3,550 mm)",
+         "222 × 104 × 126″ (5,650 × 2,650 × 3,200 mm)",
+         "222 × 124 × 126″ (5,650 × 3,150 × 3,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "about 26,455 lb (12,000 kg)",
+         "about 46,297 lb (21,000 kg)",
+         "about 52,911 lb (24,000 kg)",
+         "about 61,729 lb (28,000 kg)",
+         "about 79,366 lb (36,000 kg)",
+         "about 46,297 lb (21,000 kg)",
+         "about 55,115 lb (25,000 kg)",
+         "about 38,581 lb (17,500 kg)",
+         "about 46,297 lb (21,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PB-M1600",
+      "glance": [
+       "63.0″ (1,600 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 26,455 lb (12,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-M2100",
+      "glance": [
+       "86.2″ (2,190 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 46,297 lb (21,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-M2600",
+      "glance": [
+       "102.8″ (2,610 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-M3200",
+      "glance": [
+       "126.0″ (3,200 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 61,729 lb (28,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-M4200",
+      "glance": [
+       "165.4″ (4,200 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 79,366 lb (36,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-M2100-300",
+      "glance": [
+       "82.7″ (2,100 mm)",
+       "16 ga (1.5 mm)",
+       "11.8″ (300 mm)",
+       "0.2 s per bend",
+       "about 46,297 lb (21,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-M2600-300",
+      "glance": [
+       "102.4″ (2,600 mm)",
+       "16 ga (1.5 mm)",
+       "11.8″ (300 mm)",
+       "0.2 s per bend",
+       "about 55,115 lb (25,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-MH2100",
+      "glance": [
+       "82.7″ (2,100 mm)",
+       "16 ga (1.5 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 38,581 lb (17,500 kg)"
+      ]
+     },
+     {
+      "name": "PB-MH2600",
+      "glance": [
+       "102.4″ (2,600 mm)",
+       "16 ga (1.5 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 46,297 lb (21,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_width",
+     "thickness",
+     "bending_height",
+     "speed",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the supplier's ratings; the model number is the metric bending width (-300: 300 mm bending height; MH: 1,400 mm deep blank). Minimum box sizes and blank sizes are approximate and depend on the tooling fitted."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Panel-Benders-Value-Line-2026.pdf",
+    "label": "Download the value-line panel bender brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "panel-value"
+  },
+  "vl-pba": {
+   "id": "vl-pba",
+   "brand": "novotech",
+   "name": "PB-A automatic tool-change panel benders, 64 – 126″ bend width — NovoTech value line",
+   "short": "PB-A panel benders",
+   "models_label": "PB-A1630 – PB-A3200 · 4 models · 26 – 28 servo axes",
+   "summary": "The PB-A adds an automatic tool changer: the blank-holder tool set reconfigures itself in 0.5 s for every side and every notch of the part, so parts with different flange lengths on each side, cut-outs and narrow boxes run without an operator touching a tool. 26 – 28 servo axes, ± 0.1 mm thickness detection, 0.2 s per bend; the same capacities as the PB-M. Four sizes from 64″ to 126″.",
+   "features": [
+    "Four sizes, 64 – 126″ (1,630 – 3,200 mm) bend width; minimum four-side box 14.6 × 7.1″",
+    "Automatic tool change — 0.5 s per change, 24 – 28 servo axes: the tool set reconfigures itself for every side of the part",
+    "0.2 s per bend; mild steel to 14 ga, stainless to 16 ga, aluminum to 1/8″; ± 0.1 mm thickness detection",
+    "Suction-cup manipulator with rotation; press-arm feeding",
+    "Cast QT500 / HT300 frame, stress-relieved and vibration-aged; automatic lubrication",
+    "CNC with process library, ESA control option, offline programming, cloud monitoring; robot interface",
+    "Perimeter guarding and light curtains",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Robot or gantry loading and unloading, sheet stacks and pallets",
+    "300 mm bending height (-300 models); 1,400 mm deep blanks (MH models)",
+    "Extra bending and hemming tools",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-pba-1",
+    "vl-pb-operator",
+    "vl-pb-tools",
+    "vl-pb-tool-diagram",
+    "vl-pb-parts-3"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PB-A automatic tool-change panel benders",
+      "sub": "4 models · 64 – 126″ bend width · 14 ga mild steel",
+      "models": [
+       "PB-A1630",
+       "PB-A2190",
+       "PB-A2610",
+       "PB-A3200"
+      ],
+      "rows": [
+       {
+        "label": "Max. bending width",
+        "sub": "",
+        "cells": [
+         "64.2″ (1,630 mm)",
+         "86.2″ (2,190 mm)",
+         "102.8″ (2,610 mm)",
+         "126.0″ (3,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. blank size L × W",
+        "sub": "",
+        "cells": [
+         "63 × 47″ (1,600 × 1,200 mm)",
+         "86 × 47″ (2,190 × 1,200 mm)",
+         "103 × 49″ (2,610 × 1,250 mm)",
+         "126 × 49″ (3,200 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. bending height",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)",
+         "14 ga (2.0 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, stainless steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. thickness, aluminum",
+        "sub": "",
+        "cells": [
+         "1/8″ (3.0 mm)",
+         "1/8″ (3.0 mm)",
+         "1/8″ (3.0 mm)",
+         "3/32″ (2.5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. thickness",
+        "sub": "",
+        "cells": [
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)",
+         "0.014″ (0.35 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. four-side box, inside",
+        "sub": "",
+        "cells": [
+         "14.6 × 7.1″ (370 × 180 mm)",
+         "14.6 × 7.1″ (370 × 180 mm)",
+         "14.6 × 7.1″ (370 × 180 mm)",
+         "15.4 × 7.1″ (390 × 180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. two-side box, inside",
+        "sub": "",
+        "cells": [
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)",
+         "7.1″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blank diagonal, max.",
+        "sub": "",
+        "cells": [
+         "92.1″ (2,340 mm)",
+         "112.4″ (2,854 mm)",
+         "127.6″ (3,240 mm)",
+         "149.4″ (3,794 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend",
+         "0.2 s per bend"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo axes",
+        "sub": "",
+        "cells": [
+         "26",
+         "26",
+         "26",
+         "28"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "59.0 HP (44 kW)",
+         "119.3 HP (89 kW)",
+         "158.2 HP (118 kW)",
+         "221.3 HP (165 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Noise",
+        "sub": "",
+        "cells": [
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB",
+         "about 50 dB"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "188 × 108 × 114″ (4,780 × 2,750 × 2,900 mm)",
+         "222 × 144 × 126″ (5,650 × 3,650 × 3,200 mm)",
+         "240 × 161 × 132″ (6,100 × 4,100 × 3,350 mm)",
+         "272 × 165 × 138″ (6,900 × 4,200 × 3,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "about 26,455 lb (12,000 kg)",
+         "about 46,297 lb (21,000 kg)",
+         "about 52,911 lb (24,000 kg)",
+         "about 61,729 lb (28,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PB-A1630",
+      "glance": [
+       "64.2″ (1,630 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 26,455 lb (12,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-A2190",
+      "glance": [
+       "86.2″ (2,190 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 46,297 lb (21,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-A2610",
+      "glance": [
+       "102.8″ (2,610 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 52,911 lb (24,000 kg)"
+      ]
+     },
+     {
+      "name": "PB-A3200",
+      "glance": [
+       "126.0″ (3,200 mm)",
+       "14 ga (2.0 mm)",
+       "7.9″ (200 mm)",
+       "0.2 s per bend",
+       "about 61,729 lb (28,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_width",
+     "thickness",
+     "bending_height",
+     "speed",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the supplier's ratings; the model number is the metric bending width (-300: 300 mm bending height; MH: 1,400 mm deep blank). Minimum box sizes and blank sizes are approximate and depend on the tooling fitted."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Panel-Benders-Value-Line-2026.pdf",
+    "label": "Download the value-line panel bender brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "panel-value"
   }
  }
 }
