@@ -1,7 +1,7 @@
 """Build optimized WebP product images for the site from source photos.
 
 Usage: python3 tools/make_images.py [--only key,key] [--engine birefnet|threshold]
-Reads tools/image_map.json: { "<out-name>": {"src": "<path>", "alt": "...", "trim": true/false,
+Reads tools/image_map.json: { "<out-name>": {"src": "<path>", "alt": "...", "trim": true/false, "sizes": [w…] (optional, overrides 1200/800/480),
                                              "cutout": true/false (optional override),
                                              "orig": "<original photo>"  (cut it out again from this, ignoring a hand-made src),
                                              "cut_size": 1024|1280, "cut_spec": "tools/cutout-specs/x.json", "upscale": 1.5} }
@@ -130,6 +130,8 @@ for name, spec in MAP.items():
     widths = [w for w in SIZES if w <= im.width] or [im.width]
     if im.width < SIZES[-1] and im.width not in widths:
         widths = [im.width]
+    if spec.get("sizes"):        # e.g. the site logo: shown at 178 px, so 360 / 180 px variants instead of 1200 / 800 / 480
+        widths = [w for w in spec["sizes"] if w <= im.width] or [im.width]
     # small square-ish thumbnail for gallery strips
     t = im.copy(); t.thumbnail((160, 160), Image.LANCZOS)
     tout = os.path.join(outdir, f"{name}-thumb.webp"); t.save(tout, "WEBP", quality=78, method=4)

@@ -264,3 +264,17 @@ Hub title "Metal Shear Machines, 16 ga to 1-9/16″ Plate | NovoTech"; the gener
 swing beam vs guillotine, capacity, length, back gauge, safety / PSR) moved to the hub, the line pages keep their product FAQs
 with a one-line pointer.  Range table: 156 rows, one per model, picked by the shared glance keys capacity / length / strokes /
 motor / weight.  Generators run in this order: saymak_pages → dener_pages → vl_sheet_pages → ttmc_pages → shear_hub.
+
+## Page speed (Oct 25) — task #30
+
+Lighthouse 13.5 (mobile preset, simulated slow 4G, 4x CPU) on the preview server, which now gzips and sends cache headers
+like the production .htaccess (tools/serve.py) — the first runs without gzip scored 55 – 67 only because the 180 – 215 KB
+HTML went over the wire uncompressed (40 KB gzipped).  Results after the fixes: press-brake hub 96, sheet-metal-shears 98,
+band-saw 96, laser-cutting-machine hub 99, rebar-bender-and-cutter 98; desktop 100.  Accessibility / Best practices / SEO 100
+on every page checked.  LCP 2.1 – 2.4 s (the hero intro paragraph), FCP 1.5 s, CLS 0, TBT 0 – 160 ms.
+Fixes: (1) header logo had no small variant — the 480 px / 32 KB file was served for a 170 px slot; image_map "sizes" now
+makes 800 / 360 / 180 px variants (8 KB on mobile) and build.img(name, max_w) caps the header srcset at 360 px;
+(2) hub pages no longer emit VideoObject JSON-LD for videos that live on the line pages (press-brake JSON-LD 52 → 32 KB);
+(3) nothing else worth doing: fonts are the six weights the CSS uses (preloaded 400 + condensed 700), CSS is inlined and
+minified, images are responsive WebP with width/height, JS is 12 KB deferred.  Noise: the first Lighthouse run after a Chrome
+launch reports a 2 – 3 s "parse HTML" long task that disappears on the second run — always run twice.

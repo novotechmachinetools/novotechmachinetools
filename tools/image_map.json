@@ -481,7 +481,12 @@
   "alt": "NovoTech Machine Tools Inc.",
   "trim": true,
   "section": "site",
-  "quality": 90
+  "quality": 80,
+  "sizes": [
+   800,
+   360,
+   180
+  ]
  },
  "hb-12x6": {
   "src": "/home/claude/gms-site/dl/hb12x6_gms_hasir__demir_bukme_makinasi.webp",

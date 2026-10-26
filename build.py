@@ -305,11 +305,14 @@ def build_spec_table(spec):
 
 
 # ---------------------------------------------------------------- images
-def img(name):
+def img(name, max_w=None):
+    """Variants of an image for the templates; max_w drops the variants wider than that (the header logo: 360 px is plenty)."""
     e = manifest.get(name)
     if not e:
         raise SystemExit(f"image not in manifest: {name}")
     v = sorted(e["variants"], key=lambda x: x["w"])
+    if max_w:
+        v = [x for x in v if x["w"] <= max_w] or v[:1]
     largest = v[-1]
     return {
         "name": name,
@@ -437,7 +440,7 @@ def page_ld(page):
     graph.append({"@type": "ItemList", "@id": url + "#products", "name": page["h1"], "numberOfItems": len(products), "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": p} for i, p in enumerate(products)]})
     # videos
     vids = []
-    for g in page.get("groups", []):
+    for g in ([] if page.get("subpages") else page.get("groups", [])):      # a hub shows cards only: its videos (and their anchors) are on the line pages
         for f in g["families"]:
             for v in f.get("videos") or []:
                 vids.append((v, url + "#" + f["id"] + "-video"))
