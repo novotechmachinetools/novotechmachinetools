@@ -24,8 +24,10 @@ P_EUP, P_EUD = "european-press-brake-punches", "european-press-brake-dies"
 P_TW, P_BL = "trumpf-wila-press-brake-tooling", "bystronic-lvd-press-brake-tooling"
 P_AM, P_ACC = "american-style-press-brake-tooling", "press-brake-tool-holders-adapters"
 SECTION = "Press brake tooling"
-CAT_FILE = "files/EUROSTAMP-press-brake-tooling-punch-and-dies---MADE-IN-ITALY.pdf"     # the old site's URL, kept
-CATALOGUE = {"file": CAT_FILE, "label": "Download the EUROSTAMP tooling catalogue", "size": "PDF · 10 MB · metric, IT / EN"}
+# NovoTech's inch edition of the EUROSTAMP catalogue (tools/brochure/eurostamp_edition.py); the old site's URL of the metric
+# catalogue redirects to it (src/root/.htaccess)
+CAT_FILE = "files/NovoTech-Press-Brake-Tooling-Catalogue-2026.pdf"
+CATALOGUE = {"file": CAT_FILE, "label": "Download the EUROSTAMP catalogue — inch edition", "size": "PDF · {mb} MB · mm and inches"}
 
 BRAND_LINE = ("EUROSTAMP tooling is made in Gragnano Trebbiense, Italy, by a company that has built nothing but press brake tools "
               "since 1970 — sold, shipped and supported in Canada by NovoTech from Mississauga, ON.")
@@ -1106,7 +1108,8 @@ def copy_files():
             os.remove(os.path.join(dst, fn))
     cat = os.path.join(ROOT, "src", CAT_FILE)
     if not os.path.exists(cat):
-        shutil.copy(os.path.join(D.ES, "pdf", "cat.pdf"), cat)
+        raise SystemExit(f"{CAT_FILE} is missing: python3 tools/brochure/eurostamp_edition.py")
+    CATALOGUE["size"] = CATALOGUE["size"].format(mb=round(os.path.getsize(cat) / 1e6))
     return len(used)
 
 
@@ -1118,7 +1121,9 @@ def register_images():
     heroes = {"es-p-range", "es-p-c041", "es-p-dies", "es-p-c077b", "es-p-c180", "es-p-holders"}      # page heroes under 1,200 px
     for key, alt, src in PH.exports(DRAWINGS, tool_alt):
         imap[key] = {"src": os.path.relpath(src, ROOT), "alt": alt, "section": "tooling", "trim": src.endswith(".webp"), "quality": 82,
-                     "cutout": False, **({"upscale": 1.5} if key in heroes else {})}
+                     "cutout": False, **({"upscale": 1.5} if key in heroes else {}),
+                     # the drawings are cropped to 800 px already: trimmed further they would lose their 800 px variant
+                     **({"trim_white": False} if src.endswith(".png") else {})}
         keys.append(key)
     for k in [k for k in imap if (k.startswith("es-") and imap[k].get("section") == "tooling" and k not in PH.PHOTOS and k not in DRAWINGS)]:
         del imap[k]                                    # pictures no longer used (a drawing that left a family's spread)
@@ -1133,6 +1138,7 @@ def register_images():
 
 def build():
     check_lengths()
+    n_dxf = copy_files()                               # first: it also reads the catalogue's size for the download button
     write_families(SET, ALL_FAMILIES)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, "catalogue_pdf": CATALOGUE, **INTRO_VIDEO,
               "why_title": "Every EUROSTAMP tool from NovoTech", "why_features": WHY, "why_note": "", "quote": QUOTE,
@@ -1158,7 +1164,6 @@ def build():
                                                                      article_intro="The clamping styles, the V opening and the tonnage a bend needs — and how to load the tools into your CNC.",
                                                                      article_id="tooling-guide"))
     open(os.path.join(ROOT, "content", "articles", "press-brake-tooling-guide.html"), "w", encoding="utf-8").write(guide_html())
-    n_dxf = copy_files()
     keys = register_images()
     print(f"tooling: {len(ALL_FAMILIES)} families on {len(PAGES)} pages + hub · {sum(count(s) for s in PAGES)} table rows · "
           f"{n_dxf} DXF files · {len(keys)} images")

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Press brake tooling catalogue — NovoTech inch edition</title>
+<style>
+@font-face { font-family: "Barlow"; font-weight: 400; src: url("{{ fonts }}/barlow-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 500; src: url("{{ fonts }}/barlow-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 600; src: url("{{ fonts }}/barlow-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 700; src: url("{{ fonts }}/barlow-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 500; src: url("{{ fonts }}/barlow-condensed-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 600; src: url("{{ fonts }}/barlow-condensed-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; src: url("{{ fonts }}/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@page { size: 210mm 297mm; margin: 0; }
+:root { --orange: #f0820f; --orange-ink: #d96f00; --charcoal: #24262b; --steel: #5b6068; --line: #d9dce1; --paper: #f4f5f7; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Barlow", Arial, sans-serif; color: var(--charcoal); font-size: 9.6pt; line-height: 1.4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { position: relative; width: 210mm; height: 297mm; overflow: hidden; page-break-after: always; break-after: page; background: #fff; }
+.page:last-child { page-break-after: auto; }
+h1, h2, h3 { font-family: "Barlow Condensed", "Barlow", sans-serif; margin: 0; line-height: 1.04; }
+.kicker { font-family: "Barlow Condensed", sans-serif; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: 8.5pt; color: var(--orange-ink); }
+/* cover */
+.cover .top { position: absolute; left: 0; right: 0; top: 0; height: 128mm; background: var(--charcoal); color: #fff; }
+.cover .logo { position: absolute; left: 14mm; top: 12mm; height: 16mm; }
+.cover .tag { position: absolute; right: 14mm; top: 15.5mm; background: var(--orange); color: #fff; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9.5pt; letter-spacing: .14em; text-transform: uppercase; padding: 5pt 16pt; transform: skewX(-14deg); }
+.cover .tag span { display: inline-block; transform: skewX(14deg); }
+.cover .line { position: absolute; left: 14mm; top: 40mm; font-size: 8pt; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); font-weight: 600; }
+.cover h1 { position: absolute; left: 14mm; top: 47mm; font-size: 50pt; font-weight: 700; text-transform: uppercase; letter-spacing: .01em; }
+.cover h1 em { font-style: normal; color: var(--orange); }
+.cover .sub { position: absolute; left: 14mm; right: 14mm; top: 92mm; font-family: "Barlow Condensed", sans-serif; font-size: 15pt; font-weight: 500; letter-spacing: .03em; color: #c9ccd3; line-height: 1.25; }
+.cover .rule { position: absolute; left: 14mm; top: 118mm; width: 34mm; height: 4pt; background: var(--orange); }
+.cover .photo { position: absolute; left: 8mm; right: 8mm; top: 134mm; height: 112mm; display: flex; align-items: center; justify-content: center; }
+.cover .photo img { max-width: 100%; max-height: 100%; }
+.cover .stats { position: absolute; left: 0; right: 0; bottom: 0; height: 27mm; background: var(--charcoal); color: #fff; display: flex; align-items: center; padding: 0 14mm; }
+.cover .stats div { flex: 1; border-left: 1pt solid #4a4e57; padding-left: 13pt; }
+.cover .stats div:first-child { border: 0; padding-left: 0; }
+.cover .stats b { display: block; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 18pt; color: var(--orange); }
+.cover .stats span { font-size: 7pt; letter-spacing: .14em; text-transform: uppercase; color: #b9bdc6; }
+.cover .maker { position: absolute; right: 14mm; top: 250mm; display: flex; align-items: center; gap: 8pt; font-size: 7.4pt; color: var(--steel); }
+.cover .maker img { height: 9mm; width: auto; }
+/* inside pages */
+.band { position: absolute; left: 0; right: 0; top: 0; height: 16mm; background: var(--charcoal); color: #fff; padding: 3.4mm 12mm 0 12mm; }
+.band .t1 { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 12pt; letter-spacing: .08em; text-transform: uppercase; }
+.band .t2 { font-size: 7pt; letter-spacing: .14em; text-transform: uppercase; color: #b9bdc6; margin-top: 2pt; }
+.band .tab { position: absolute; right: 12mm; top: 4.4mm; background: var(--orange); color: #fff; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 8.5pt; letter-spacing: .12em; text-transform: uppercase; padding: 4pt 14pt; transform: skewX(-14deg); }
+.band .tab span { display: inline-block; transform: skewX(14deg); }
+.foot { position: absolute; left: 12mm; right: 12mm; bottom: 7mm; border-top: 2.2pt solid var(--orange); padding-top: 5pt; display: flex; align-items: center; gap: 10pt; font-size: 7.2pt; color: var(--steel); }
+.foot img { height: 8.5mm; width: auto; }
+.foot .addr b { color: var(--charcoal); font-size: 7.6pt; }
+.foot .num { margin-left: auto; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 16pt; color: var(--orange); }
+.body { position: absolute; left: 12mm; right: 12mm; top: 21mm; bottom: 24mm; }
+h2.title { font-size: 25pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 7pt; }
+.lead { font-size: 10pt; line-height: 1.45; margin: 0 0 8pt; max-width: 175mm; }
+.cols { display: flex; gap: 8mm; }
+.cols > div { flex: 1; min-width: 0; }
+h3 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: .08em; margin: 9pt 0 4pt; padding-bottom: 2.5pt; border-bottom: 1pt solid var(--line); }
+.sample { border: 1pt solid var(--line); background: #fff; padding: 2mm; text-align: center; }
+.sample img { max-width: 100%; max-height: 88mm; }
+.cap { font-size: 7.6pt; color: var(--steel); margin-top: 3pt; }
+ul.how { margin: 0; padding: 0; list-style: none; font-size: 8.8pt; }
+ul.how li { position: relative; padding-left: 12pt; margin: 0 0 4pt; }
+ul.how li::before { content: ""; position: absolute; left: 0; top: .52em; width: 6pt; height: 2pt; background: var(--orange); }
+table { border-collapse: collapse; width: 100%; font-size: 8pt; }
+th, td { padding: 2.2pt 5pt; text-align: left; border-bottom: .6pt solid var(--line); white-space: nowrap; }
+th { background: var(--charcoal); color: #fff; font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 8.6pt; letter-spacing: .03em; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+tr:nth-child(even) td { background: var(--paper); }
+.styles { table-layout: fixed; }
+.styles td { white-space: normal; vertical-align: top; }
+.styles td:first-child { font-weight: 600; }
+.styles th:last-child, .styles td:last-child { width: 17mm; text-align: right; white-space: nowrap; }
+.chip { display: inline-block; width: 8pt; height: 8pt; border-radius: 1.5pt; margin-right: 5pt; vertical-align: -1pt; }
+.note { font-size: 7.4pt; color: var(--steel); margin-top: 4pt; }
+.cta { margin-top: 7pt; border: 1pt solid var(--line); background: var(--paper); padding: 7pt 9pt; font-size: 8.6pt; }
+.cta b { font-family: "Barlow Condensed", sans-serif; font-size: 10pt; letter-spacing: .06em; text-transform: uppercase; color: var(--orange-ink); }
+/* back */
+.back .top { position: absolute; left: 0; right: 0; top: 0; height: 112mm; background: var(--charcoal); color: #fff; padding: 18mm 15mm; }
+.back h2 { font-size: 34pt; font-weight: 700; text-transform: uppercase; }
+.back h2 em { font-style: normal; color: var(--orange); }
+.back .top p { font-size: 11pt; color: #c9ccd3; max-width: 160mm; }
+.back .contact { position: absolute; left: 15mm; right: 15mm; top: 126mm; display: flex; gap: 22pt; }
+.back .contact div { flex: 1; border-top: 2pt solid var(--orange); padding-top: 6pt; }
+.back .contact b { display: block; font-family: "Barlow Condensed", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--orange-ink); font-size: 9pt; margin-bottom: 4pt; }
+.back .contact span { font-size: 11pt; display: block; }
+.back .incl { position: absolute; left: 15mm; right: 15mm; top: 160mm; border: 1pt solid var(--line); background: var(--paper); padding: 9pt 12pt; font-size: 8.6pt; }
+.back .incl b { font-family: "Barlow Condensed", sans-serif; font-size: 10pt; letter-spacing: .08em; text-transform: uppercase; display: block; margin-bottom: 4pt; }
+.back .incl ul { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 16pt; }
+.back .incl li { padding-left: 12pt; position: relative; margin-bottom: 3pt; break-inside: avoid; }
+.back .incl li::before { content: "✓"; position: absolute; left: 0; color: var(--orange-ink); font-weight: 700; }
+.back .logo { position: absolute; right: 15mm; bottom: 36mm; height: 19mm; }
+.back .maker { position: absolute; left: 15mm; bottom: 34mm; display: flex; flex-direction: column; align-items: flex-start; gap: 6pt; font-size: 7.6pt; color: var(--steel); width: 112mm; }
+.back .maker img { height: 9mm; width: auto; max-width: 70mm; object-fit: contain; object-position: left center; }
+.back .fine { position: absolute; left: 15mm; right: 15mm; bottom: 14mm; font-size: 7.2pt; color: var(--steel); }
+.back .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 6mm; background: var(--orange); }
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="top">
+    <img class="logo" src="{{ logo }}" alt="NovoTech">
+    <div class="tag"><span>Tooling catalogue · inch edition</span></div>
+    <div class="line">EUROSTAMP tooling · made in Italy · sold &amp; serviced in Canada by NovoTech</div>
+    <h1>Press brake<br><em>tooling</em></h1>
+    <div class="sub">Punches, dies, holders, adapters and clamps for Amada-Promecam (European), Trumpf, Wila and Bystronic press brakes — every dimension in millimetres and inches</div>
+    <div class="rule"></div>
+  </div>
+  <div class="photo"><img src="{{ hero }}" alt=""></div>
+  <div class="maker"><img src="{{ maker_logo }}" alt="EUROSTAMP Tooling"><span>Manufactured by Eurostamp S.r.l.,<br>Gragnano Trebbiense, Italy</span></div>
+  <div class="stats">
+    <div><b>Since 1970</b><span>press brake tooling</span></div>
+    <div><b>{{ n_tools }}</b><span>tools in this catalogue</span></div>
+    <div><b>mm + in</b><span>every dimension</span></div>
+    <div><b>Canada</b><span>quotes, stock &amp; support</span></div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="band"><div class="t1">About this edition</div><div class="t2">NovoTech Machine Tools Inc. · EUROSTAMP press brake tooling</div><div class="tab"><span>Inch edition</span></div></div>
+  <div class="body">
+    <div class="kicker">NovoTech × EUROSTAMP</div>
+    <h2 class="title">How to read this edition</h2>
+    <p class="lead">This is EUROSTAMP's own catalogue, page for page, with the inch values added by NovoTech. Nothing is taken away: every metric number keeps its place and the imperial value stands beside it, in the same type and colour.</p>
+    <div class="cols">
+      <div>
+        <div class="sample"><img src="{{ sample }}" alt=""></div>
+        <div class="cap">Punch 1055 on page 36: dimensions, the squared scale under the tool, the specification lines and the length box, each in millimetres and inches.</div>
+      </div>
+      <div>
+        <h3>What was added</h3>
+        <ul class="how">
+          <li><b>Dimensions</b> on the drawings: the inch value in brackets beside the millimetres — 105 (4.13″), R 0,5 (.020″). Two decimals from one inch up, three below.</li>
+          <li><b>The squared scale</b> round each punch: every numbered mark with its inch value — 20 (.79″), 40 (1.57″).</li>
+          <li><b>Specification lines</b>: height and radius in inches — H = 105.00 (4.134″), R = 0.5 (.020″).</li>
+          <li><b>Length boxes</b>: every length in inches and every weight in pounds, in a twin box beside the metric one or inside the same cells — 835 mm / 32.87″, 12,6 kg / 27.8 lb.</li>
+          <li><b>FRAZ. / SECT.</b> marks a sectioned set: pieces that add up to the length, with horns at the ends.</li>
+          <li>Where a drawing has no room beside a number — a small radius deep inside a 4V die, say — the number keeps its millimetres only: 1 mm = .0394″.</li>
+          <li>The page numbers are EUROSTAMP's, so the product index on pages 8 – 13 still leads to every code.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cols" style="margin-top: 4pt">
+      <div>
+        <h3>Clamping styles in this catalogue</h3>
+        <table class="styles">
+          <tr><th>Style</th><th>Pages</th></tr>
+          {% for s in styles %}<tr><td><span class="chip" style="background: {{ s.color }}"></span>{{ s.name }}</td><td>{{ s.pages }}</td></tr>
+          {% endfor %}
+        </table>
+        <p class="note">American-style tooling (.500″ tang) is on NovoTechMachineTools.com — American-style press brake tooling.</p>
+      </div>
+      <div>
+        <h3>Max T/m in US tons per foot</h3>
+        <table>
+          <tr><th class="n">t/m</th><th class="n">US t/ft</th><th class="n">t/m</th><th class="n">US t/ft</th><th class="n">t/m</th><th class="n">US t/ft</th></tr>
+          {% for row in loads %}<tr>{% for tm, us in row %}<td class="n"><b>{{ tm }}</b></td><td class="n">{{ us }}</td>{% endfor %}</tr>
+          {% endfor %}
+        </table>
+        <p class="note">Max T/m is the load the tool takes per metre of its length: × 0.336 gives US tons per foot. Never load a short piece of tool with the full press force.</p>
+      </div>
+    </div>
+    <div class="cta"><b>Ordering</b> — send NovoTech the codes, lengths and quantities you need, with your press brake make and model. We check the clamping, quote, ship and support the tooling from Mississauga, ON: +1 647 526 5510 · info@NovoTechMachineTools.com</div>
+  </div>
+  <div class="foot"><img src="{{ logo_dark }}" alt="NovoTech"><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>1365 Mid-Way Blvd, Unit 26, Mississauga, ON L5T 2J5, Canada<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | +1 647 526 5510</div><div class="num">02</div></div>
+</section>
+
+<section class="page back">
+  <div class="top">
+    <h2>Let's find the right<br><em>tooling for your press brake.</em></h2>
+    <p>Send us the part drawing or the codes from this catalogue. NovoTech checks the clamping style, the V opening and the tonnage, and quotes EUROSTAMP punches, dies and holders in the lengths you need — sectioned or full length.</p>
+  </div>
+  <div class="contact">
+    <div><b>Phone</b><span>+1 647 526 5510</span></div>
+    <div><b>Web &amp; email</b><span>NovoTechMachineTools.com</span><span>info@NovoTechMachineTools.com</span></div>
+    <div><b>Address</b><span>1365 Mid-Way Blvd, Unit 26</span><span>Mississauga, ON L5T 2J5, Canada</span></div>
+  </div>
+  <div class="incl">
+    <b>Tooling from NovoTech</b>
+    <ul>
+      <li>EUROSTAMP tools made in Italy, C45 and 42CrMo4 steel, induction-hardened</li>
+      <li>Amada-Promecam, Trumpf, Wila, Bystronic and LVD styles</li>
+      <li>DXF profiles for your CNC on NovoTechMachineTools.com</li>
+      <li>Sectioned sets, horns and special lengths on request</li>
+      <li>Adapters between clamping systems, holders and clamps</li>
+      <li>Special tools and heat treatments made to your drawing</li>
+    </ul>
+  </div>
+  <div class="maker"><img src="{{ maker_logo }}" alt="EUROSTAMP Tooling"><span>EUROSTAMP Tooling is a trademark of Eurostamp S.r.l., Via dell'Industria 11, 29010 Gragnano Trebbiense (PC), Italy. Catalogue pages reproduced from EUROSTAMP's IT-EN catalogue; inch values added by NovoTech.</span></div>
+  <img class="logo" src="{{ logo_dark }}" alt="NovoTech">
+  <p class="fine">Specifications subject to change without notice. Inch and pound values are converted from the manufacturer's metric data and rounded (lengths to .01″ from one inch up and to .001″ below, weights to 0.1 lb). Codes are manufacturer designations.</p>
+  <div class="bar"></div>
+</section>
+</body>
+</html>

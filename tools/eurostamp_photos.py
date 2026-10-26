@@ -23,6 +23,7 @@ Kinds:
     python3 tools/eurostamp_photos.py [keys] [--force]     process (missing outputs only, unless --force)
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -128,12 +129,13 @@ PHOTOS = {
     "es-p-eg-pdhold": draw(WEB2 + "eg-pdhold.jpg", "EUROGRIP P-DHOLD pneumatic die holder for European-style dies"),
     "es-p-c218": photo(AM + "x16.png", "EUROGRIP clamp — the handle sits flush in the body"),
     "es-w-4021": draw(WEB2 + "4021.jpg", "4021 — safety clamp with top handle and fixing screws, H60 (drawing)"),
-    "es-w-4219": draw(WEB2 + "4219.jpg", "4219 — safety clamp with top lever and urethane insert (drawing)"),
+    "es-w-4219": draw(WEB2 + "4219.jpg", "4219 — safety clamp with top lever and urethane insert (drawing)", dims=[58]),
     "es-w-4009": draw(WEB2 + "4009.jpg", "4009 — safety clamp with fold-away handle (drawing)"),
     "es-w-4302": draw(WEB2 + "4302.jpg", "4302 — lower adapter from a Beyeler / Trumpf beam to European dies, H60 (drawing)"),
     "es-w-4304": draw(WEB2 + "4304.jpg", "4304 — lower adapter from a European beam to LVD dies, H40 (drawing)"),
     "es-w-4040": draw(WEB2 + "4040.jpg", "Filler block with its long clamps (drawing)"),
-    "es-w-4034": draw(WEB2 + "4034.jpg", "4034 — short clamp for the rear of the filler block (drawing)"),
+    "es-w-4034": draw(WEB2 + "4034.jpg", "4034 — short clamp for the rear of the filler block (drawing)",
+                      dims=[8, 11, 17, 25, 100, 150]),
     "es-w-8100": draw(WEB2 + "8100.jpg", "Tang on request: Beyeler / Trumpf style 13 × 20 mm (drawing)"),
     "es-w-8107": draw(WEB2 + "8107.jpg", "Tang on request: American style, 12.7 mm (.500″) (drawing)"),
     "es-w-3191": draw(WEB2 + "3191.jpg", "3191 — adjustable die V 65 – 180 mm, closed and open (drawing)"),
@@ -412,6 +414,8 @@ def process(key, force=False):
     k = p["kind"]
     if k == "draw":
         im = on_white(Image.open(p["src"]))
+        if "(drawing" in p["alt"]:
+            im = with_inches(im, code=key.split("-")[-1].upper(), dims=p.get("dims", ()))
         im = im.crop(content_box(im))
         im = fit(im)
         remove_old(key)
@@ -420,6 +424,7 @@ def process(key, force=False):
     elif k == "std":
         im = on_white(Image.open(p["src"]))
         im = remove_labels(im, p.get("labels", []), p.get("boxes", []))
+        im = with_inches(im, std=True)
         im = fit(im.crop(content_box(im, pad=0.03)))
         remove_old(key)
         path = os.path.join(OUT, key + ".png")
@@ -478,13 +483,67 @@ def process(key, force=False):
     return path
 
 
+# ------------------------------------------------------------------------------------------------ inches on the drawings
+STD_LENGTHS = {10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 75, 80, 90, 100, 120, 150, 200, 250, 270, 300, 350, 370, 400, 410, 412, 415, 500,
+               505, 510, 515, 520, 550, 600, 700, 800, 805, 830, 832, 835, 1000, 1050, 1100, 1250, 2050, 2550, 3050, 4050}
+_IDX = None
+
+
+def inch_index():
+    """{code_pages: {code: [catalogue pages]}, page_dims: {page: [blue dimension values]}} — cached from the catalogue"""
+    global _IDX
+    if _IDX is None:
+        import json
+        path = ES + "parsed/inch_index.json"
+        if not os.path.exists(path):
+            import fitz
+            import eurostamp_catalogue as EC
+            doc = fitz.open(EC.CAT)
+            json.dump({"code_pages": EC.code_pages(doc), "page_dims": {str(k): sorted(v) for k, v in EC.page_dims(doc).items()}},
+                      open(path, "w"))
+        _IDX = json.load(open(path))
+    return _IDX
+
+
+INCH_LOG = []                                       # (code, numbers read, numbers not placed, annotated) — for checking
+
+
+def with_inches(im, code=None, std=False, dims=()):
+    """the inch value beside every millimetre number of a drawing (tools/inch_raster.py).  A dimension is written only when
+    the catalogue prints that value on the tool's page (or it is one of `dims`, read off a drawing whose tool has no
+    catalogue drawing of its own); the scale-grid marks are checked by their step."""
+    import inch_raster as IR
+    if std:
+        exp = STD_LENGTHS
+    else:
+        idx = inch_index()
+        exp = set()
+        base = re.match(r"\d+", code or "")
+        pages = idx["code_pages"].get(code or "") or (idx["code_pages"].get(base.group(0), []) if base else [])
+        for pg in pages:                              # 3037/8 and 4143S are on the catalogue page of 3037 and 4143
+            exp |= set(idx["page_dims"].get(str(pg), []))
+        exp |= {float(d) for d in dims}
+    cap = IR.text_size(im)
+    if 0 < cap < 14:
+        # lettering too small for an inch value beside it: the drawing at twice the size, its digits read both as drawn and
+        # enlarged (thin grey strokes) — and the drawing as it was when nothing can be read for sure even so
+        big = im.resize((im.width * 2, im.height * 2), Image.LANCZOS)
+        out, rep, nums = IR.annotate(big, expect=exp, found=IR.find_twice(im, expect=exp), small=im)
+        placed = [N for N in nums if N["value"] and N["text"] not in rep]
+        INCH_LOG.append((code or "std", [N["text"] for N in nums], rep, bool(placed)))
+        return out if placed else im
+    out, rep, nums = IR.annotate(im, expect=exp)
+    INCH_LOG.append((code or "std", [N["text"] for N in nums], rep, True))
+    return out
+
+
 def drawing(key, t, force=False):
     """the maker's drawing of a tool (es-d-<code>), cropped on white → PNG"""
     path = os.path.join(OUT, key + ".png")
     if os.path.exists(path) and not force:
         return path
     os.makedirs(OUT, exist_ok=True)
-    im = on_white(Image.open(t["drawing"]))
+    im = with_inches(on_white(Image.open(t["drawing"])), code=t["code"], dims=[t[f] for f in ("h", "r") if t.get(f)])
     im = fit(im.crop(content_box(im, pad=0.03)))
     im.save(path)
     return path
