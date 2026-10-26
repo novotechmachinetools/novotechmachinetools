@@ -1,0 +1,209 @@
+{
+ "slug": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+ "template": "hub.html",
+ "family_set": "gecam",
+ "nav_label": "All deburring & finishing machines",
+ "title": "Metal Deburring & Finishing Machines, 6″ – 53″ | NovoTech",
+ "artifact_title": "Deburring & Finishing Machines",
+ "meta_description": "Deburring, edge rounding, deslagging, corner grinding and pipe sanding machines for laser-, plasma- and punch-cut parts, welded boxes and tube.",
+ "h1": "Deburring and finishing machines — for laser-cut parts, welded boxes and tube",
+ "intro": "A deburring machine takes the burr, slag and sharp edges off cut metal parts and gives them an even finish, so they can be handled safely, painted evenly and assembled without hand grinding. NovoTech supplies the machines of Gecam, built in Parma, Italy: wide-belt deburring machines from the 5-7/8″ G15 to the 53-1/8″ G135, dry or wet; edge rounding machines that round edges to 5/64″, inside holes and on both sides at once; a deslagging machine for plasma and oxy-fuel parts; brush deburring machines and benches for shops that do not need a wide-belt line; and corner grinders for the welds of boxes, cabinets and tube frames. The pipe page adds the Eurofintec orbital and centreless pipe sanders, built by Gecam, and the NovoTech premium-line BT 114-S. Every machine is supplied with a CSA-approved panel, installed, and supported from Mississauga, ON. Below, each page in brief and every model in one table.",
+ "hero_points": [
+  "<a href=\"sheet-metal-deburring-machines\">Sheet metal deburring machines</a> — wide-belt deburring and satin finishing, 5-7/8″ to 53-1/8″, dry or wet",
+  "<a href=\"edge-rounding-deslagging-machines\">Edge rounding & deslagging</a> — radius to 5/64″, both sides in one pass · <a href=\"brush-deburring-machines\">brush deburring machines & benches</a>",
+  "<a href=\"corner-grinding-machines\">Corner grinders</a> for box welds · <a href=\"pipe-sanding-polishing-machines\">pipe sanders & polishers</a> to Ø15-3/4″"
+ ],
+ "hero_image": "gc-g135",
+ "hero_image_secondary": [
+  "gc-135",
+  "ef-144"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Deburring & finishing"
+  }
+ ],
+ "hero_brand_line": "Gecam and Eurofintec machines are built in Parma, Italy, by Gecam; the BT 114-S is NovoTech's premium line, built in Turkey. All sold, installed and supported in Canada by NovoTech.",
+ "subpages": [
+  {
+   "slug": "sheet-metal-deburring-machines",
+   "title": "Sheet metal deburring machines",
+   "image": "gc-g65",
+   "blurb": "Gecam G15, G30, G65, G135 and GM wide-belt deburring and satin finishing machines, 5-7/8″ to 53-1/8″ wide, dry or wet.",
+   "families": [
+    "gecam-g15-g30",
+    "gecam-g65-g135",
+    "gecam-gm",
+    "gecam-wet"
+   ],
+   "nav_label": "Sheet metal deburring"
+  },
+  {
+   "slug": "edge-rounding-deslagging-machines",
+   "title": "Edge rounding & deslagging machines",
+   "image": "gc-g135rb8",
+   "blurb": "G135RB8 brush-carousel edge rounding to 5/64″, GT06 and GT13 double-sided edge rounding, G65DCC deslagging for plasma parts.",
+   "families": [
+    "gecam-g135rb8",
+    "gecam-gt",
+    "gecam-g65dcc"
+   ],
+   "nav_label": "Edge rounding & deslagging"
+  },
+  {
+   "slug": "brush-deburring-machines",
+   "title": "Brush deburring machines & benches",
+   "image": "gc-cub",
+   "blurb": "CUB conveyor brush machines, the EASY T vacuum-table workstation and GCB crossed-belt benches for heavy and shaped parts.",
+   "families": [
+    "gecam-cub",
+    "gecam-easy-t",
+    "gecam-gcb"
+   ],
+   "nav_label": "Brush deburring & benches"
+  },
+  {
+   "slug": "corner-grinding-machines",
+   "title": "Corner grinders",
+   "image": "gc-135",
+   "blurb": "Hand-fed 131 and 136, automatic 135 and PLC corner grinders for the welds of boxes, cabinets, doors and tube frames.",
+   "families": [
+    "gecam-135",
+    "gecam-136-131",
+    "gecam-corner-special"
+   ],
+   "nav_label": "Corner grinders"
+  },
+  {
+   "slug": "pipe-sanding-polishing-machines",
+   "title": "Pipe sanding & polishing",
+   "image": "ef-144",
+   "blurb": "BT 114-S automatic pipe sander, Eurofintec orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring.",
+   "families": [
+    "sahinler-bt-114-s",
+    "eurofintec-141-144",
+    "eurofintec-128",
+    "eurofintec-228",
+    "eurofintec-728-143"
+   ],
+   "nav_label": "Pipe sanding & polishing"
+  }
+ ],
+ "range_kind": "table",
+ "range_cols": [
+  "Capacity",
+  "Part thickness",
+  "Feed",
+  "Working groups / tools",
+  "Weight"
+ ],
+ "range_lead": "Capacity, part thickness, feed, working groups and weight for every model on the five pages. Each row links to the full specification table of its machine.",
+ "range_caption": "Deburring, edge rounding, corner grinding and pipe sanding machines supplied by NovoTech — Gecam, Eurofintec and the NovoTech premium line",
+ "range_note": "Working width is the widest part the machine takes; tube capacities are outside diameters. Feed is the conveyor or part speed. Weights are approximate and depend on the groups fitted.",
+ "faq": [
+  {
+   "q": "What does a deburring machine do?",
+   "a": "It removes the burr that laser cutting, punching, shearing and plasma cutting leave on a part's edges, rounds the sharp edges and evens out the surface — in one pass on a conveyor, where hand grinding takes minutes per part and never comes out the same twice. Deburred parts are safe to handle, bend and weld cleanly, and take paint and powder coating evenly right to the edge."
+  },
+  {
+   "q": "Belt, brushes or both?",
+   "a": "The abrasive belt (R) cuts the burr off and levels the surface; top brushes (X, T) and brush carousels (B4, B8) round the edges, inside holes too; cylindrical Scotch-Brite brushes (B) give a satin finish. Most shops combine them — a belt and top brushes deburr and round in one pass, and a Scotch-Brite brush at the end leaves an even grain."
+  },
+  {
+   "q": "Which machine for plasma and oxy-fuel parts?",
+   "a": "The G65DCC: its D belt on a soft rubber roller breaks the slag off the bottom edge of parts 3/8″ to 4-3/4″ thick and strip brushes on two transverse belts round the edges in the same pass. For thinner plasma parts with light dross a G65 with belt and top brushes is usually enough."
+  },
+  {
+   "q": "Can it round edges on both sides at once?",
+   "a": "Yes — the GT06 and GT13 run strip brushes on cross belts above and below the part and round every edge on both sides in one pass, leaving the faces as they were. The G135RB8 works from the top with the deepest radius, 5/64″ (2 mm)."
+  },
+  {
+   "q": "Do you install the machines and train operators?",
+   "a": "Yes. Our technicians install and commission the machine anywhere in Canada, set up the groups and abrasives for your parts and train the operators; abrasives, brushes and parts are supplied from Mississauga, ON, and we support every machine by video call."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about deburring machines",
+ "catalogue_pdf": null,
+ "origin_feature": {
+  "title": "Made in Italy by Gecam",
+  "text": "Gecam designs and builds deburring, grinding and finishing machines at Vicofertile, Parma — 100 % made in Italy, with components from Italian suppliers within 125 miles (200 km) of the plant. In 2005 it took over Eurofintec, the abrasive-belt machine builder whose name its pipe and belt machines still carry."
+ },
+ "section_label": "Deburring & finishing",
+ "related_blurb": "Every deburring, edge rounding, brush, corner grinding and pipe sanding machine NovoTech supplies, in one table.",
+ "related_pages": [
+  {
+   "href": "sheet-metal-deburring-machines.html",
+   "label": "Sheet metal deburring machines"
+  },
+  {
+   "href": "edge-rounding-deslagging-machines.html",
+   "label": "Edge rounding & deslagging machines"
+  },
+  {
+   "href": "brush-deburring-machines.html",
+   "label": "Brush deburring machines & benches"
+  },
+  {
+   "href": "corner-grinding-machines.html",
+   "label": "Corner grinders"
+  },
+  {
+   "href": "pipe-sanding-polishing-machines.html",
+   "label": "Pipe sanding & polishing"
+  },
+  {
+   "href": "corner-welding-machines.html",
+   "label": "Corner welders"
+  },
+  {
+   "href": "laser-cutting-machine.html",
+   "label": "Sheet laser cutters"
+  },
+  {
+   "href": "plate-beveler.html",
+   "label": "Plate bevelers"
+  }
+ ],
+ "intro_video": {
+  "id": "nnEMwdcC5kQ",
+  "title": "Gecam corporate introduction",
+  "thumb": "video-nnEMwdcC5kQ",
+  "duration": "PT2M27S"
+ },
+ "intro_video_heading": "Inside the factory — Gecam in Parma, Italy",
+ "intro_video_text": "A tour of Gecam at Vicofertile, Parma, where the machines on this page are designed and built.",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+   "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+   "size": "PDF · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
+   "label": "Download the notchers, circle cutters, polishers & benders brochure",
+   "size": "PDF · 2 MB · imperial units"
+  }
+ ],
+ "range_pick": [
+  "capacity",
+  "thickness",
+  "feed",
+  [
+   "tools",
+   "belt"
+  ],
+  "weight"
+ ]
+}

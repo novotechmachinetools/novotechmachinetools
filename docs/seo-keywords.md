@@ -335,3 +335,28 @@ machine" 375, "portable plate beveler" 361 (pos. 16).
   12, CHP7-and-CHP12 … 3) are 301-redirected to the new brochure.
 Videos: 25 of NovoTech's own videos of the Cevisa machines; "CEVISA BEVELLING MACHINES Factory introduction" is the
 Inside-the-factory video.
+
+## Gecam / Eurofintec deburring, corner grinding, pipe sanding, corner welding (Oct 26) — task #17
+
+Keyword tools were out of credit that day (Ubersuggest 3/3 reports, Semrush no API units, Ahrefs plan), so titles come from
+Search Console (Jun 2025 – Oct 2026). Old deburring page (sheet-metal-plate-deburring-edge-rounding-finishing-grinding):
+35,522 impressions, avg. position 25; old pipe page (pipe-polishing-deburring-grinding-brushing, already 301 → pipe-sanding-
+polishing-machines): 95,467 impressions. Queries: "pipe sander" 4,220, "pipe polisher" 3,123, "pipe polishing machine" 2,809
+(pos. 8), "tube sander" 2,276, "tube polisher" 2,256, "tube polishing machine" 1,475, "weld finishing machine" 1,153, "corner
+grinder" 1,132 (pos. 9), "metal sanding machine market" 832, "pipe polisher machine" 810, "tube sanding machine" 662, "edge
+rounding machine" 659 (pos. 57), "sheet metal finishing machine" 623, "metal finishing machine" 547, "corner grinding machine"
+531 (pos. 4, 35 clicks), "sheet metal deburring machine" 494 (pos. 61), "corner sanding machine" 432, "metal deburring machine"
+378, "plate deburring machines" 343, "corner grinding tool" 221.
+- Hub at the old URL, "Metal Deburring & Finishing Machines, 6″ – 53″ | NovoTech"; five line pages (section rule: > 6 families):
+  sheet-metal-deburring-machines ("Sheet Metal Deburring Machines, 6″ – 53″ Wide"), edge-rounding-deslagging-machines ("Edge
+  Rounding & Deslagging Machines to 53″"), brush-deburring-machines, corner-grinding-machines ("Corner Grinders & Weld Seam
+  Sanders, Edges to 59″" — corner grinder / corner sanding / weld seam in one title, "corner grinding machine" in the slug),
+  pipe-sanding-polishing-machines ("Pipe Sanders & Polishing Machines to Ø15-3/4″").
+- New top-level menu "Corner welders": corner-welding-machines ("Corner Welding Machines for Boxes, to 59 × 59″").
+- No supplier brand in titles or slugs. Gecam and Eurofintec are shown under their own brands (logos), the BT 114-S stays
+  NovoTech premium line and leads the pipe page.
+- Old Gecam PDFs with impressions (Gecam brochure 571, 136-and-131 corner grinder 530, GECAM-EUROFINTEC catalogue 456, CUB 186,
+  plate deburring 156, special machines 116, Easy-T 90, metal box 67, centreless 115, 143 35, …) are 301-redirected to the
+  matching new page or the new brochure.
+Videos: 71 of NovoTech's own Gecam / Eurofintec videos on the families (G3 = G30 and G6 / G60 = G65 in Gecam's older names);
+"GECAM - Corporate introduction video" is the Inside-the-factory video on every Gecam page and the pipe page.

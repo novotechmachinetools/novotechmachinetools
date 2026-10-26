@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""NovoTech premium line-only category pages: angle rolls, ironworkers, punching machines, hydraulic presses, corner notchers and pipe
-polishing (family set content/families/sahinler.json).  The NovoTech premium line families that share ISITAN pages (plate rolls, SPB draw
+"""NovoTech premium line-only category pages: angle rolls, ironworkers, punching machines, hydraulic presses and corner notchers
+(family set content/families/sahinler.json); the pipe polishing page with the BT 114-S is written by tools/gecam_pages.py.  The NovoTech premium line families that share ISITAN pages (plate rolls, SPB draw
 benders, SDK / EFM circle cutters) are written by the ISITAN modules.
 
     python3 tools/sahinler_pages.py        # families + pages + image_map entries (tools/sahinler_keys.txt)
@@ -133,23 +133,7 @@ PAGES = {
         related_pages=[{"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "folder-sheet-metal-brake.html", "label": "Roofing & pan brakes"}],
         related_title="More sheet-metal machinery from NovoTech",
     ),
-    P_POLISH: dict(
-        title="Pipe Sanders & Pipe Polishing Machines | NovoTech",
-        meta="Pipe sander and polishing machine with automatic feeder: two abrasive belts finish, satin-brush or derust straight and bent pipe and tube, Ø3/8″ to Ø4-1/2″.",
-        h1="Pipe sanders and pipe polishing machines",
-        intro="A pipe sander (pipe polisher, tube polishing machine) runs abrasive belts around a round pipe or square tube to grind off rust and weld discolouration, give stainless a satin or brushed finish and prepare tube for painting or plating. The BT 114-S is the automatic version: a separate feed motor pushes the tube through two 37 × 2″ belts at an inverter-set speed, so the operator loads the pipe and takes the finished length off the other side without turning or holding it — straight tube and bends up to 45°, Ø3/8″ to Ø4-1/2″. The belt speed is variable too, belts change through an opening cover and a holder is provided for manual feeding. Supplied with two belts, a CSA-approved panel and support from Mississauga, ON.",
-        points=["Round pipe and square tube Ø3/8″ to Ø4-1/2″ (10 – 114 mm), straight or bent to 45°", "Automatic pipe feeder with its own motor; feeding and belt speed variable by inverter", "Two 37 × 2″ abrasive belts included; 6.4 HP total"],
-        hero="sh-bt114s", minis=["sh-bt114s-rail", "sh-bt114s-tube"],
-        groups=[("sahinler-polish", "Automatic pipe polishing and sanding machine", "The BT 114-S belt sander with automatic pipe feeder.", "sahinler")],
-        faq=[{"q": "What finish does a belt pipe sander give?", "a": "The finish follows the belt: a coarse grit removes rust, scale and weld colour; 180 – 240 grit gives the brushed, satin finish of architectural stainless handrail; finer belts and non-woven belts prepare for mirror polishing. Two belts run at once on the BT 114-S, so a cutting belt and a finishing belt can be fitted together."},
-             {"q": "Does it polish bent tube?", "a": "Yes — the belt head and feeder follow bends up to 45°, so handrail elbows and furniture frames are finished after bending instead of before. Tight 90° elbows are finished on the straight sections and blended by hand."},
-             {"q": "Round and square tube on the same machine?", "a": "Yes. Round pipe from Ø3/8″ to Ø4-1/2″ is clamped by the manual adjustment and fed through; square tube is passed through flat side by side, two faces at a time. The feeder means the operator never turns the material by hand."},
-             {"q": "What about centreless and planetary polishers?", "a": "For long runs of straight stainless tube to a mirror finish a centreless polisher with several heads is the production machine; for a fabrication shop that finishes handrail, furniture and short lengths in mixed sizes the belt sander with feeder is faster to set up and a fraction of the price. Ask us about both."},
-             VOLT_FAQ_GENERIC],
-        faq_title="Questions we get asked about pipe polishing",
-        related_pages=[{"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Metal deburring & finishing"}, {"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}, {"href": "angle-rolls.html", "label": "Angle rolls & tube rollers"}],
-        related_title="More tube machinery from NovoTech",
-    ),
+    # P_POLISH (pipe-sanding-polishing-machines) is written by tools/gecam_pages.py: the BT 114-S shares it with the Eurofintec pipe sanders
 }
 EXTRA = {"hero_brand_line": BRAND_LINE, "catalogue_pdf": PDF, "origin_feature": ORIGIN}
 PAGE_PDF = {P_ANGLE: "premium-angle-rolls", P_IRON: "premium-ironworkers", P_PUNCH: "premium-ironworkers", P_PRESS: "premium-shop-presses",

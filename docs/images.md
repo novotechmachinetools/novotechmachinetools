@@ -304,3 +304,12 @@ tools/cevisa_photos.py: the shearing bevellers are Cevisa's own RGBA cut-outs fr
 catalogue's photos are yard and workshop shots, so they are used rectangular only: bevelled plate samples, machines at work,
 the CHP 12 on a crane hook, the CHP 21G REV turned over (on white, cut out).  The Cevisa logo
 (tools/src-images/cevisa-logo.png) was keyed from the catalogue's back page rendered at 600 dpi.
+
+### Gecam / Eurofintec photos (Oct 26)
+
+tools/gecam_photos.py → tools/src-images/gecam (section "gecam"), 140 photos: gecam.com machines on white cut out by BiRefNet
+(`B`), the 2026 Gecam catalogue's own RGBA cut-outs (image + soft mask from pdfimages, `C`) for the G15, G30, G65, G135, GM65,
+GM110, G65/135 WET, G65DCC, CUB and GCB, and its worked-sample cut-outs (page 22, mapped to their captions by position); detail
+photos kept rectangular. 45 small images upscaled 2x with Real-ESRGAN. Logos: the Gecam and Eurofintec marks redrawn from the
+vector paths of the Eurofintec catalogue cover (PyMuPDF, images removed, no background) — tools/src-images/gecam-logo.png and
+eurofintec-logo.png ("division" line left off the Eurofintec mark, as on the machines).

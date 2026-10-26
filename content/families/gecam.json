@@ -1,0 +1,3610 @@
+{
+ "order": [
+  "gecam-g15-g30",
+  "gecam-g65-g135",
+  "gecam-gm",
+  "gecam-wet",
+  "gecam-g135rb8",
+  "gecam-gt",
+  "gecam-g65dcc",
+  "gecam-cub",
+  "gecam-easy-t",
+  "gecam-gcb",
+  "gecam-135",
+  "gecam-136-131",
+  "gecam-corner-special",
+  "sahinler-bt-114-s",
+  "eurofintec-141-144",
+  "eurofintec-128",
+  "eurofintec-228",
+  "eurofintec-728-143",
+  "gecam-cws"
+ ],
+ "families": {
+  "gecam-g15-g30": {
+   "id": "gecam-g15-g30",
+   "brand": "gecam",
+   "name": "G15 · G30 compact deburring machines, 5-7/8″ and 11-13/16″ wide",
+   "short": "G15 · G30",
+   "models_label": "G15 · G30 · 2 models",
+   "summary": "The way into belt deburring for laser, punching and plasma shops: an abrasive belt on a rubber contact roller takes the burr off, the brushes behind it round the edges and leave an even satin finish, and the conveyor carries the parts through. The G15 is the smallest Gecam — 5-7/8″ wide, a belt unit and a row of rotating, oscillating top brushes, for small parts up to 4-1/8″ thick. The G30 takes parts 11-13/16″ wide and .020″ to 4-3/4″ thick with the belt (R), cylindrical Scotch-Brite brush (B), external brush (b) and double-row top brush (X) groups in the combination the parts need.",
+   "headline": "Working width 5-7/8″ and 11-13/16″ · parts .020″ – 4-3/4″ · belt and brush groups",
+   "features": [
+    "Abrasive belt unit (R) on a 55 Shore rubberized contact roller with automatic belt centering",
+    "G15: single row of rotating and oscillating top brushes Ø7-7/8″ (T) — deburring, satin finish and edge rounding in one pass",
+    "G30: belt (R), cylindrical Scotch-Brite brush (B), external brush (b) and a double row of four top brushes Ø4-1/2″ (X), configured to your parts",
+    "Conveyor feed 3.3 – 13.1 ft/min (1 – 4 m/min), rubberized pressure rollers before and after each group",
+    "Manual grit set on the G30: the bench height compensates for the belt thickness",
+    "Dust extraction at each group; 1,177 CFM (2,000 m³/h) required",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Additional infeed and outfeed rollers",
+    "Variable speed for each working group (G30)",
+    "Conveyor belt cleaning brush (G30)",
+    "Touch screen (G30)",
+    "Vacuum table (G30)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-g15",
+    "gc-g30",
+    "gc-g15-infeed",
+    "gc-g15-brushes",
+    "gc-g30-belts",
+    "gc-g30-rb",
+    "gc-g30-panel",
+    "gc-g30-rollers",
+    "gc-g30-conveyor",
+    "gc-g30-sample",
+    "gc-sample-r"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "G15 · G30",
+      "sub": "Compact deburring machines",
+      "models": [
+       "G15",
+       "G30"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "5-7/8″ (150 mm)",
+         "11-13/16″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "min – max",
+        "cells": [
+         ".039″ – 4-1/8″ (1 – 105 mm)",
+         ".020″ – 4-3/4″ (0.5 – 120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)",
+         "12-5/8 × 74-13/16″ (320 × 1,900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Brushes",
+        "sub": "",
+        "cells": [
+         "Ø7-7/8″ (200 mm), single row (T)",
+         "Ø4-1/2″ (115 mm), double row of 4 (X)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "3.3 – 13.1 ft/min (1 – 4 m/min)",
+         "3.3 – 13.1 ft/min (1 – 4 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working groups",
+        "sub": "configurable",
+        "cells": [
+         "R · T",
+         "R · B · b · X"
+        ],
+        "key": true
+       },
+       {
+        "label": "Grit set",
+        "sub": "",
+        "cells": [
+         "—",
+         "Manual"
+        ],
+        "key": false
+       },
+       {
+        "label": "Suction hood",
+        "sub": "",
+        "cells": [
+         "—",
+         "Ø7-7/8″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust extraction required",
+        "sub": "",
+        "cells": [
+         "1,177 CFM (2,000 m³/h)",
+         "1,177 CFM (2,000 m³/h)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "70 × 34 × 76″ (1,774 × 853 × 1,929 mm)",
+         "24 × 84 × 81″ (620 × 2,134 × 2,050 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 948 lb (430 kg)",
+         "from 1,190 lb (540 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "G15",
+      "glance": [
+       "5-7/8″ wide",
+       ".039″ – 4-1/8″",
+       "3.3 – 13.1 ft/min",
+       "R · T",
+       "948 lb"
+      ]
+     },
+     {
+      "name": "G30",
+      "glance": [
+       "11-13/16″ wide",
+       ".020″ – 4-3/4″",
+       "3.3 – 13.1 ft/min",
+       "R · B · b · X",
+       "1,190 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "DS_yO-WbtSQ",
+     "title": "G15 RTT — the little one",
+     "duration": "PT1M23S",
+     "thumb": "video-DS_yO-WbtSQ"
+    },
+    {
+     "id": "-uEVrOpBn2s",
+     "title": "G30 (G3) RB dry deburring",
+     "duration": "PT1M40S",
+     "thumb": "video--uEVrOpBn2s"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-belt"
+  },
+  "gecam-g65-g135": {
+   "id": "gecam-g65-g135",
+   "brand": "gecam",
+   "name": "G65 · G135 wide-belt deburring machines, 25-9/16″ and 53-1/8″ wide",
+   "short": "G65 · G135",
+   "models_label": "G65 · G135 · 2 models",
+   "summary": "The production deburring machines for laser, punching and plasma shops: up to four working groups in one pass — an abrasive belt for the burr, a double row of rotating, oscillating top brushes for the edges (8 on the G65, 20 on the G135), a cylindrical Scotch-Brite brush for the finish, and on the G65 a carousel of four abrasive brushes that rounds edges inside holes and slots. Touch screen, electronic grit set and variable belt speed are standard; the motorized table lifts on four synchronized screws and sets the part thickness to ±.004″ (0.1 mm). Parts .020″ to 4-3/4″ thick, fed at 2 to 20 ft/min.",
+   "headline": "Working width 25-9/16″ and 53-1/8″ · parts .020″ – 4-3/4″ · up to 4 groups · touch screen",
+   "features": [
+    "Configurable groups: R abrasive belt on a 55 Shore contact roller (Ø7-1/2″ G65, Ø7-1/16″ G135), X double row of top brushes Ø4-1/2″ (8 or 20), B cylindrical Scotch-Brite brush Ø7-7/8″, b external brush Ø5-7/8″, B4 four-brush carousel Ø9-13/16″ (G65)",
+    "Touch screen, electronic grit set with stored belt types, and variable-speed belt group as standard",
+    "Independent motor for every group; dust hood at each group, directly at the point of work",
+    "Motorized table on 4 synchronized trapezoidal screws — part thickness set to ±.004″ (0.1 mm)",
+    "Oil-proof natural rubber conveyor belt with automatic centering; rubberized pressure rollers before and after each group",
+    "Diagnostic unit with display for alarms and faults",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Vacuum table",
+    "Magnetic conveyor track for small steel parts",
+    "Conveyor belt cleaning brush",
+    "Higher-power motors",
+    "Industry 4.0 connection",
+    "Additional infeed / outfeed rollers",
+    "Return conveyor bringing parts back to the operator",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-g65",
+    "gc-g135",
+    "gc-g65-glass",
+    "gc-g65-rxb4",
+    "gc-g65-rx",
+    "gc-g135-rxr",
+    "gc-x-brushes",
+    "gc-touch",
+    "gc-grit-set",
+    "gc-g135-ext-brush",
+    "gc-g135-long-table",
+    "gc-belt-cleaning",
+    "gc-g135-dust",
+    "gc-sample-rx",
+    "gc-sample-rxx",
+    "gc-sample-rb",
+    "gc-sample-oxide"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "G65 · G135",
+      "sub": "Wide-belt deburring machines",
+      "models": [
+       "G65",
+       "G135"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "25-9/16″ (650 mm)",
+         "53-1/8″ (1,350 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "min – max",
+        "cells": [
+         ".020″ – 4-3/4″ (0.5 – 120 mm)",
+         ".020″ – 4-3/4″ (0.5 – 120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "26 × 86-5/8″ (660 × 2,200 mm)",
+         "53-15/16 × 86-5/8″ (1,370 × 2,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt contact roller",
+        "sub": "55 Shore rubber",
+        "cells": [
+         "Ø7-1/2″ (190 mm)",
+         "Ø7-1/16″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Top brushes (X)",
+        "sub": "double row",
+        "cells": [
+         "8 × Ø4-1/2″ (115 mm)",
+         "20 × Ø4-1/2″ (115 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "2.0 – 20 ft/min (0.6 – 6 m/min)",
+         "2.0 – 20 ft/min (0.6 – 6 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working groups",
+        "sub": "configurable",
+        "cells": [
+         "R · X · B · B4 · b",
+         "R · X · B · b"
+        ],
+        "key": true
+       },
+       {
+        "label": "Touch screen · electronic grit set · variable-speed belt",
+        "sub": "",
+        "cells": [
+         "Standard",
+         "Standard"
+        ],
+        "key": false
+       },
+       {
+        "label": "Suction hoods",
+        "sub": "",
+        "cells": [
+         "Ø5-7/8″ (150 mm)",
+         "Ø5-7/8″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust extraction required",
+        "sub": "",
+        "cells": [
+         "2,354 CFM (4,000 m³/h)",
+         "3,531 CFM (6,000 m³/h)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "46 × 84 × 81″ (1,176 × 2,137 × 2,050 mm)",
+         "74 × 84 × 81″ (1,876 × 2,137 × 2,070 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 3,748 lb (1,700 kg)",
+         "from 3,968 lb (1,800 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "G65",
+      "glance": [
+       "25-9/16″ wide",
+       ".020″ – 4-3/4″",
+       "2.0 – 20 ft/min",
+       "R · X · B · B4 · b",
+       "3,748 lb"
+      ]
+     },
+     {
+      "name": "G135",
+      "glance": [
+       "53-1/8″ wide",
+       ".020″ – 4-3/4″",
+       "2.0 – 20 ft/min",
+       "R · X · B · b",
+       "3,968 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "P6clb5uvwzo",
+     "title": "G65 RXB4 deburring and finishing",
+     "duration": "PT1M22S",
+     "thumb": "video-P6clb5uvwzo"
+    },
+    {
+     "id": "uQ-9CMccQIs",
+     "title": "G65 RXB4 — edge rounding with rotating brushes",
+     "duration": "PT1M12S",
+     "thumb": "video-uQ-9CMccQIs"
+    },
+    {
+     "id": "brMbAFpqbOw",
+     "title": "G65 RXR deburring and edge rounding",
+     "duration": "PT0M48S",
+     "thumb": "video-brMbAFpqbOw"
+    },
+    {
+     "id": "9Lprvh8Y438",
+     "title": "G65 (G60) RX deburring",
+     "duration": "PT1M28S",
+     "thumb": "video-9Lprvh8Y438"
+    },
+    {
+     "id": "1chAwVBSWWs",
+     "title": "G65 (G6) RTB deburring",
+     "duration": "PT1M38S",
+     "thumb": "video-1chAwVBSWWs"
+    },
+    {
+     "id": "9gJt-anlXiE",
+     "title": "G65 (G6) BB Scotch-Brite polishing",
+     "duration": "PT1M11S",
+     "thumb": "video-9gJt-anlXiE"
+    },
+    {
+     "id": "pMdmrBLEAFc",
+     "title": "G135 RXR deburring and finishing",
+     "duration": "PT2M18S",
+     "thumb": "video-pMdmrBLEAFc"
+    },
+    {
+     "id": "vYP5gY1w1Ik",
+     "title": "G135 XX deburring",
+     "duration": "PT0M58S",
+     "thumb": "video-vYP5gY1w1Ik"
+    },
+    {
+     "id": "7ly2JRZL-Xc",
+     "title": "In-depth look at the G135 RXR",
+     "duration": "PT19M45S",
+     "thumb": "video-7ly2JRZL-Xc"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-belt"
+  },
+  "gecam-gm": {
+   "id": "gecam-gm",
+   "brand": "gecam",
+   "name": "GM65 · GM110 single-belt deburring and satin finishing machines, 25-9/16″ and 43-5/16″ wide",
+   "short": "GM65 · GM110",
+   "models_label": "GM65 · GM110 · 2 models",
+   "summary": "One abrasive belt on a Ø7-1/2″ rubber contact roller and nothing more: the simplest and lowest-cost way to take the burrs off flat parts and give stainless steel, aluminum, brass and copper an even satin grain across a 25-9/16″ or 43-5/16″ width. Parts from .020″ to 4-3/4″ thick ride through on the conveyor at 2 to 20 ft/min (GM65) or 3.3 to 13.1 ft/min (GM110), and a magnetic conveyor track holds small steel parts down.",
+   "headline": "Working width 25-9/16″ and 43-5/16″ · parts .020″ – 4-3/4″ · one abrasive belt",
+   "features": [
+    "Abrasive belt unit (R) on a 55 Shore rubberized contact roller Ø7-1/2″ (190 mm) with automatic belt centering",
+    "Deburring and satin finishing of flat parts in one pass",
+    "Conveyor feed 2 – 20 ft/min (GM65) or 3.3 – 13.1 ft/min (GM110)",
+    "Suction hood Ø5-7/8″; 1,177 CFM (2,000 m³/h) extraction required",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Magnetic conveyor track",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-gm65",
+    "gc-gm110",
+    "gc-gm-belt",
+    "gc-sample-brass",
+    "gc-sample-plate",
+    "gc-sample-copper",
+    "gc-sample-hairline",
+    "gc-sample-satin"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "GM65 · GM110",
+      "sub": "Single-belt deburring and satin finishing machines",
+      "models": [
+       "GM65",
+       "GM110"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "25-9/16″ (650 mm)",
+         "43-5/16″ (1,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "min – max",
+        "cells": [
+         ".020″ – 4-3/4″ (0.5 – 120 mm)",
+         ".020″ – 4-3/4″ (0.5 – 120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "26-3/8 × 86-5/8″ (670 × 2,200 mm)",
+         "44-1/8 × 60″ (1,120 × 1,524 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt contact roller",
+        "sub": "55 Shore rubber",
+        "cells": [
+         "Ø7-1/2″ (190 mm)",
+         "Ø7-1/2″ (190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "2.0 – 20 ft/min (0.6 – 6 m/min)",
+         "3.3 – 13.1 ft/min (1 – 4 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working group",
+        "sub": "abrasive belt",
+        "cells": [
+         "R",
+         "R"
+        ],
+        "key": true
+       },
+       {
+        "label": "Suction hood",
+        "sub": "",
+        "cells": [
+         "Ø5-7/8″ (150 mm)",
+         "Ø5-7/8″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust extraction required",
+        "sub": "",
+        "cells": [
+         "1,177 CFM (2,000 m³/h)",
+         "1,177 CFM (2,000 m³/h)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 55 × 79″ (980 × 1,386 × 2,000 mm)",
+         "63 × 55 × 78″ (1,600 × 1,386 × 1,990 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 1,301 lb (590 kg)",
+         "from 1,764 lb (800 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "GM65",
+      "glance": [
+       "25-9/16″ wide",
+       ".020″ – 4-3/4″",
+       "2.0 – 20 ft/min",
+       "R",
+       "1,301 lb"
+      ]
+     },
+     {
+      "name": "GM110",
+      "glance": [
+       "43-5/16″ wide",
+       ".020″ – 4-3/4″",
+       "3.3 – 13.1 ft/min",
+       "R",
+       "1,764 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-belt"
+  },
+  "gecam-wet": {
+   "id": "gecam-wet",
+   "brand": "gecam",
+   "name": "G30 WET · G65/135 WET wet deburring machines, 11-13/16″ and 51-3/16″ wide",
+   "short": "G30 WET · G65/135 WET",
+   "models_label": "G30 WET · G65/135 WET · 2 models",
+   "summary": "Deburring with water, for parts that would deform from the heat of dry grinding and for shops that want no grinding dust in the air: sprayers wet the belt and the brushes right at the cut, each managed separately, the sludge drains to an external collection tank, and on the G30 WET a drying group clears the parts at the exit. The G30 WET carries up to two groups on an 11-13/16″ width; the G65/135 WET takes parts 51-3/16″ wide and .031″ to 5-1/2″ thick with belt, top-brush and cylindrical-brush groups. Fixed bench at 35-7/16″ working height; feed up to 33 ft/min.",
+   "headline": "Working width 11-13/16″ and 51-3/16″ · parts to 5-1/2″ · water sprayed at every tool",
+   "features": [
+    "Water sprayers directly on each working tool, managed independently",
+    "External sludge collection tank; filter paper separates the sludge (G30 WET)",
+    "Groups: R abrasive belt on a Ø4-15/16″ (125 mm) contact roller, T single row of top brushes Ø4-1/2″, B cylindrical Scotch-Brite brush Ø5-7/8″; b external brush on the G65/135 WET",
+    "G30 WET: up to 2 groups, feed 16 – 33 ft/min (5 – 10 m/min), drying group at the exit",
+    "G65/135 WET: feed 1.6 – 33 ft/min (0.5 – 10 m/min)",
+    "Fixed bench at 35-7/16″ (900 mm) working height",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Touch screen",
+    "Synthetic top brushes made for wet work",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-g30-wet",
+    "gc-g65-wet",
+    "gc-g30-wet-side",
+    "gc-wet-rr",
+    "gc-wet-rt",
+    "gc-sample-rbb"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "G30 WET · G65/135 WET",
+      "sub": "Wet deburring machines",
+      "models": [
+       "G30 WET",
+       "G65/135 WET"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "11-13/16″ (300 mm)",
+         "51-3/16″ (1,300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "",
+        "cells": [
+         "to 5-1/2″ (140 mm)",
+         ".031″ – 5-1/2″ (0.8 – 140 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "12-5/8 × 74-13/16″ (320 × 1,900 mm)",
+         "51-15/16 × 86-5/8″ (1,320 × 2,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "16 – 33 ft/min (5 – 10 m/min)",
+         "1.6 – 33 ft/min (0.5 – 10 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working groups",
+        "sub": "configurable",
+        "cells": [
+         "Up to 2 of R · T · B",
+         "R · T · B · b"
+        ],
+        "key": true
+       },
+       {
+        "label": "Water",
+        "sub": "",
+        "cells": [
+         "Sprayers at each tool · external sludge tank",
+         "Sprayers at each tool · external sludge tank"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working height",
+        "sub": "fixed bench",
+        "cells": [
+         "35-7/16″ (900 mm)",
+         "35-7/16″ (900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "56 × 34 × 83″ (1,430 × 860 × 2,100 mm)",
+         "91 × 63 × 94″ (2,300 × 1,600 × 2,380 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 1,455 lb (660 kg)",
+         "8,818 lb (4,000 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "G30 WET",
+      "glance": [
+       "11-13/16″ wide",
+       "to 5-1/2″",
+       "16 – 33 ft/min",
+       "R · T · B (2)",
+       "1,455 lb"
+      ]
+     },
+     {
+      "name": "G65/135 WET",
+      "glance": [
+       "51-3/16″ wide",
+       ".031″ – 5-1/2″",
+       "1.6 – 33 ft/min",
+       "R · T · B · b",
+       "8,818 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "n12yiYojRjI",
+     "title": "G30 WET",
+     "duration": "PT1M12S",
+     "thumb": "video-n12yiYojRjI"
+    },
+    {
+     "id": "jwnr8gK3ETg",
+     "title": "G30 (G3) WET deburring and finishing",
+     "duration": "PT2M49S",
+     "thumb": "video-jwnr8gK3ETg"
+    },
+    {
+     "id": "MgZDeNLR5KY",
+     "title": "G65 (G6) WET",
+     "duration": "PT1M23S",
+     "thumb": "video-MgZDeNLR5KY"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-wet"
+  },
+  "gecam-g135rb8": {
+   "id": "gecam-g135rb8",
+   "brand": "gecam",
+   "name": "G135RB8 edge rounding machine, 53-1/8″ wide, radius to 5/64″",
+   "short": "G135RB8",
+   "models_label": "G135RB8 · 8-brush carousel",
+   "summary": "For laser-cut parts going to paint, powder coating or hands-on assembly: an abrasive belt takes off the burr, then a carousel of eight cylindrical abrasive brushes — each turning clockwise and counter-clockwise while the carousel rotates — works every edge from every direction, inside holes and slots too, up to a 5/64″ (2 mm) radius. The brushes are staggered, so no part of an edge escapes them, and paint covers the rounded edge instead of thinning out on a sharp one. Vacuum table for small parts, quick-release brush and belt change, touch-screen control of every group. 53-1/8″ wide, parts .020″ to 4-3/4″.",
+   "headline": "Working width 53-1/8″ · edge radius to 5/64″ (2 mm) · belt + 8-brush carousel",
+   "features": [
+    "Abrasive belt (R) on a 55 Shore contact roller Ø4-15/16″ (125 mm), variable speed",
+    "Carousel of 8 cylindrical abrasive brushes Ø11-13/16 × 20-15/16″ (300 × 532 mm) turning both ways, staggered so every edge is reached",
+    "Edge radius up to 5/64″ (2 mm), inside holes too; also for coated and surface-treated sheet",
+    "Double row of 8 top brushes Ø4-1/2″ (X) as a further configurable group",
+    "Feed 0.7 – 6.6 ft/min (0.2 – 2 m/min); touch screen and electronic grit set standard",
+    "Vacuum table; quick-release change of brushes and belt",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-g135rb8",
+    "gc-rb8-carousel",
+    "gc-rb8-belt",
+    "gc-rb8-touch",
+    "gc-rb8-before-after",
+    "gc-rb8-plate",
+    "gc-sample-r2",
+    "gc-sample-rb8"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "G135RB8",
+      "sub": "Deburring and edge rounding machine",
+      "models": [
+       "G135RB8"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "53-1/8″ (1,350 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "min – max",
+        "cells": [
+         ".020″ – 4-3/4″ (0.5 – 120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Edge radius",
+        "sub": "inside holes too",
+        "cells": [
+         "to 5/64″ (2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "53-15/16 × 86-5/8″ (1,370 × 2,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Carousel brushes",
+        "sub": "B group",
+        "cells": [
+         "8 × Ø11-13/16 × 20-15/16″ (300 × 532 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "0.7 – 6.6 ft/min (0.2 – 2 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working groups",
+        "sub": "configurable",
+        "cells": [
+         "R · X · B (8-brush carousel)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Touch screen · electronic grit set · variable-speed belt",
+        "sub": "",
+        "cells": [
+         "Standard"
+        ],
+        "key": false
+       },
+       {
+        "label": "Suction hoods",
+        "sub": "",
+        "cells": [
+         "Ø5-7/8″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust extraction required",
+        "sub": "",
+        "cells": [
+         "3,531 CFM (6,000 m³/h)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "86 × 168 × 88″ (2,177 × 4,277 × 2,235 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 9,237 lb (4,190 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "G135RB8",
+      "glance": [
+       "53-1/8″ wide",
+       ".020″ – 4-3/4″",
+       "0.7 – 6.6 ft/min",
+       "R · X · 8-brush carousel",
+       "9,237 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "v9s8r2TJT00",
+     "title": "G135 RB8 deburring and edge rounding",
+     "duration": "PT0M45S",
+     "thumb": "video-v9s8r2TJT00"
+    },
+    {
+     "id": "nyTW0augaGo",
+     "title": "G135 RB rotary brushes for edge rounding",
+     "duration": "PT2M28S",
+     "thumb": "video-nyTW0augaGo"
+    },
+    {
+     "id": "a9VgU3D0vok",
+     "title": "Rotary brush carousel rounding edges",
+     "duration": "PT2M28S",
+     "thumb": "video-a9VgU3D0vok"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-round"
+  },
+  "gecam-gt": {
+   "id": "gecam-gt",
+   "brand": "gecam",
+   "name": "GT06 · GT13 double-sided edge rounding machines, 23-5/8″ and 51-3/16″ wide",
+   "short": "GT06 · GT13",
+   "models_label": "GT06 · GT13 · 2 models",
+   "summary": "Both faces of the part in one pass: cross belts carrying flexible strip brushes travel across the part above and below it, rounding every edge on both sides and inside the holes, while the faces themselves are not touched — a brushed, galvanized or pre-painted surface comes out as it went in. The part rides through on motorized rollers on a fixed bench. The GT06 adds two transverse abrasive belts with a pressure pad for heavier burrs (six groups, 23-5/8″ wide, parts .020″ to 3-1/8″); the GT13 runs two strip-brush belts of 75 brushes each, one above and one below the part (51-3/16″ wide, parts to 3-9/16″). Touch screen with stored programs on both.",
+   "headline": "Working width 23-5/8″ and 51-3/16″ · both sides in one pass · edges rounded inside holes",
+   "features": [
+    "Cross belts with strip brushes above and below the part: every edge rounded on both sides in one pass, inside holes too",
+    "The faces are not worked, so previous surface treatments are kept",
+    "GT06: 2 transverse abrasive belts with pressure pad and self-braking motor + 4 strip-brush tracks — 6 groups above and below",
+    "GT13: 2 strip-brush belts, one above and one below, 75 brushes each (150 in all), 7.4 HP (5.5 kW) per group",
+    "Motorized pressure setting of each group, 0 – 1-3/8″ (0 – 35 mm); independent motor for each group",
+    "Fixed bench with motorized rollers; feed 2.3 – 23 ft/min (GT06) or 2.3 – 20 ft/min (GT13)",
+    "Touch screen with stored work programs and alarm self-diagnosis",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-gt06",
+    "gc-gt13",
+    "gc-gt13-rcs",
+    "gc-gt06-inside",
+    "gc-gt-strips",
+    "gc-gt-gauge",
+    "gc-gt-touch",
+    "gc-sample-holes"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "GT06 · GT13",
+      "sub": "Double-sided edge rounding machines",
+      "models": [
+       "GT06",
+       "GT13"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "23-5/8″ (600 mm)",
+         "51-3/16″ (1,300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "min – max",
+        "cells": [
+         ".020″ – 3-1/8″ (0.5 – 80 mm)",
+         ".020″ – 3-9/16″ (0.5 – 90 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Groups above and below the part",
+        "sub": "",
+        "cells": [
+         "2 transverse abrasive belts (R) + 4 strip-brush tracks (C)",
+         "2 strip-brush belts (C), one above and one below, 75 brushes each"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belts",
+        "sub": "width × length",
+        "cells": [
+         "1-15/16 × 98-7/16″ (50 × 2,500 mm)",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strip brushes",
+        "sub": "",
+        "cells": [
+         "2-5/8 × 1-1/4″ (66 × 32 mm)",
+         "2-3/8 × 1-15/16″ (60 × 50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Brush pressure",
+        "sub": "",
+        "cells": [
+         "0 – 1-3/8″ (0 – 35 mm), motorized, each group",
+         "0 – 1-3/8″ (0 – 35 mm), motorized, each group"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "motorized rollers",
+        "cells": [
+         "2.3 – 23 ft/min (0.7 – 7 m/min)",
+         "2.3 – 20 ft/min (0.7 – 6 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Suction hood",
+        "sub": "",
+        "cells": [
+         "Ø5-7/8″ (150 mm)",
+         "Ø7-1/16″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust extraction required",
+        "sub": "",
+        "cells": [
+         "2,354 CFM (4,000 m³/h)",
+         "2,354 CFM (4,000 m³/h)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "46 × 66 × 83″ (1,170 × 1,676 × 2,096 mm)",
+         "100 × 49 × 77″ (2,550 × 1,250 × 1,950 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 4,409 lb (2,000 kg)",
+         "from 4,850 lb (2,200 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "GT06",
+      "glance": [
+       "23-5/8″ wide",
+       ".020″ – 3-1/8″",
+       "2.3 – 23 ft/min",
+       "2 belts + 4 strip-brush tracks",
+       "4,409 lb"
+      ]
+     },
+     {
+      "name": "GT13",
+      "glance": [
+       "51-3/16″ wide",
+       ".020″ – 3-9/16″",
+       "2.3 – 20 ft/min",
+       "2 strip-brush belts, 150 brushes",
+       "4,850 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "owfvMKRntJ8",
+     "title": "GT06 — edge rounding top and bottom",
+     "duration": "PT0M58S",
+     "thumb": "video-owfvMKRntJ8"
+    },
+    {
+     "id": "7GM9LWGFoEs",
+     "title": "GT13 double-sided cross-belt edge rounding",
+     "duration": "PT1M38S",
+     "thumb": "video-7GM9LWGFoEs"
+    },
+    {
+     "id": "snxpgxlhbu8",
+     "title": "GT13 CS double-sided deburring",
+     "duration": "PT1M48S",
+     "thumb": "video-snxpgxlhbu8"
+    },
+    {
+     "id": "OeZjSsXzXas",
+     "title": "GT13 CB — oxide removal",
+     "duration": "PT1M29S",
+     "thumb": "video-OeZjSsXzXas"
+    },
+    {
+     "id": "q6RLOup6bN4",
+     "title": "GT13 RCS cross-belt deburring",
+     "duration": "PT1M31S",
+     "thumb": "video-q6RLOup6bN4"
+    },
+    {
+     "id": "Kxy4IBRUBS4",
+     "title": "GT13 CSB brushing, rounding and oxide removal",
+     "duration": "PT1M25S",
+     "thumb": "video-Kxy4IBRUBS4"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-round"
+  },
+  "gecam-g65dcc": {
+   "id": "gecam-g65dcc",
+   "brand": "gecam",
+   "name": "G65DCC deslagging and edge rounding machine, 23-5/8″ wide, parts 3/8″ – 4-3/4″",
+   "short": "G65DCC",
+   "models_label": "G65DCC · deslagging",
+   "summary": "Plasma and oxy-fuel cutting leave dross welded to the bottom edge of thick parts, and grinding it off by hand is slow, noisy work. The G65DCC takes it off in one pass: a D belt on a large Ø16-9/16″ soft rubber roller (20 Shore), pressed on by a pneumatic cylinder, works only the edges and breaks the slag away, then 82 strip brushes on two transverse belts, turning in opposite directions, round the edges evenly. Magnetic table and touch screen standard; parts 3/8″ to 4-3/4″ thick, 23-5/8″ wide.",
+   "headline": "Working width 23-5/8″ · parts 3/8″ – 4-3/4″ · slag off and edges rounded in one pass",
+   "features": [
+    "D group: abrasive belt on a Ø16-9/16″ (420 mm) 20 Shore roller, pressed by a pneumatic cylinder; pneumatic belt tensioning and photocell belt centering",
+    "Works the edges, not the face — the slag is broken off without grinding the surface",
+    "C group: 82 strip brushes on two transverse belts with reverse rotation and independent motors, for an even edge radius",
+    "Magnetic table and touch screen standard",
+    "Feed 2.3 – 23 ft/min (0.7 – 7 m/min); suction hoods Ø5-7/8″, 2,354 CFM (4,000 m³/h) required",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-g65dcc",
+    "gc-dcc-inside",
+    "gc-dcc-touch",
+    "gc-dcc-before",
+    "gc-dcc-after",
+    "gc-dcc-edge",
+    "gc-dcc-thick"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "G65DCC",
+      "sub": "Deslagging and edge rounding machine",
+      "models": [
+       "G65DCC"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "23-5/8″ (600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "min – max",
+        "cells": [
+         "3/8″ – 4-3/4″ (10 – 120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt (D)",
+        "sub": "width × length",
+        "cells": [
+         "26-3/4 × 59-1/16″ (680 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "D belt roller",
+        "sub": "",
+        "cells": [
+         "Ø16-9/16″ (420 mm), 20 Shore, pneumatic pressure"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strip brushes (C)",
+        "sub": "reverse rotation, independent motors",
+        "cells": [
+         "82 on two transverse belts, 2-5/8 × 2-1/16″ (66 × 52 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "2.3 – 23 ft/min (0.7 – 7 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working groups",
+        "sub": "",
+        "cells": [
+         "D · C"
+        ],
+        "key": true
+       },
+       {
+        "label": "Touch screen · magnetic table",
+        "sub": "",
+        "cells": [
+         "Standard"
+        ],
+        "key": false
+       },
+       {
+        "label": "Suction hoods",
+        "sub": "",
+        "cells": [
+         "Ø5-7/8″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust extraction required",
+        "sub": "",
+        "cells": [
+         "2,354 CFM (4,000 m³/h)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "75 × 70 × 84″ (1,900 × 1,776 × 2,130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 3,351 lb (1,520 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "G65DCC",
+      "glance": [
+       "23-5/8″ wide",
+       "3/8″ – 4-3/4″",
+       "2.3 – 23 ft/min",
+       "D belt · 82 strip brushes",
+       "3,351 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "iicuKk_mo58",
+     "title": "G65 (G6) DCC deslagging and edge rounding",
+     "duration": "PT5M29S",
+     "thumb": "video-iicuKk_mo58"
+    },
+    {
+     "id": "VpVDpUHtAOM",
+     "title": "GE65 RCC — belt and strip-brush groups",
+     "duration": "PT1M31S",
+     "thumb": "video-VpVDpUHtAOM"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-slag"
+  },
+  "gecam-cub": {
+   "id": "gecam-cub",
+   "brand": "gecam",
+   "name": "CUB 30 · CUB 65BB · CUB 30B1B2 brush deburring machines, 11-13/16″ and 25-9/16″ wide",
+   "short": "CUB 30 · CUB 65BB · CUB 30B1B2",
+   "models_label": "CUB 30 · CUB 65BB · CUB 30B1B2 · 3 models",
+   "summary": "A simpler, much lower-cost alternative to a wide-belt machine for deburring and satin-finishing flat parts: cylindrical brushes over a conveyor, each with its own motor and a motorized pressure setting, and the heads open on the operator side, so parts wider than the conveyor can still be brushed. Any cylindrical brush fits — Scotch-Brite for a satin finish, abrasive or wire for burrs. The CUB 30 and CUB 30B1B2 take parts 11-13/16″ wide and up to 9-13/16″ thick, the CUB 65BB parts 25-9/16″ wide and up to 4-3/4″, all from 3-15/16″ long.",
+   "headline": "Working width 11-13/16″ and 25-9/16″ · parts to 9-13/16″ · conveyor 3.3 – 23 ft/min",
+   "features": [
+    "Cylindrical brushes Ø7-1/16″ (CUB 30, CUB 30B1B2) or Ø7-7/8″ (CUB 65BB) — Scotch-Brite, abrasive or wire",
+    "Motorized, independent pressure adjustment of each brush; brush heads positioned by handwheel",
+    "Conveyor at variable speed, 3.3 – 23 ft/min (1 – 7 m/min); pressure rollers with independent adjustment",
+    "Independent motors; heads open on the operator side for parts wider than the conveyor",
+    "Parts from 3-15/16″ (100 mm) long",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Variable brush speed",
+    "Brushes for other finishes",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-cub",
+    "gc-cub-cat",
+    "gc-cub-30",
+    "gc-cub-compact",
+    "gc-cub-brushes",
+    "gc-cub-heads",
+    "gc-sample-scotch"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CUB 30 · CUB 65BB · CUB 30B1B2",
+      "sub": "Brush deburring machines",
+      "models": [
+       "CUB 30",
+       "CUB 65BB",
+       "CUB 30B1B2"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "11-13/16″ (300 mm)",
+         "25-9/16″ (650 mm)",
+         "11-13/16″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part thickness",
+        "sub": "min – max",
+        "cells": [
+         ".020″ – 9-13/16″ (0.5 – 250 mm)",
+         ".020″ – 4-3/4″ (0.5 – 120 mm)",
+         ".020″ – 9-13/16″ (0.5 – 250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Brush Ø",
+        "sub": "cylindrical",
+        "cells": [
+         "Ø7-1/16″ (180 mm)",
+         "Ø7-7/8″ (200 mm)",
+         "Ø7-1/16″ (180 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed speed",
+        "sub": "variable",
+        "cells": [
+         "3.3 – 23 ft/min (1 – 7 m/min)",
+         "3.3 – 23 ft/min (1 – 7 m/min)",
+         "3.3 – 23 ft/min (1 – 7 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Min. part length",
+        "sub": "",
+        "cells": [
+         "3-15/16″ (100 mm)",
+         "3-15/16″ (100 mm)",
+         "3-15/16″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "44 × 42 × 54″ (1,120 × 1,068 × 1,360 mm)",
+         "48 × 67 × 55″ (1,220 × 1,700 × 1,400 mm)",
+         "45 × 30 × 47″ (1,150 × 750 × 1,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "849 lb (385 kg)",
+         "1,543 lb (700 kg)",
+         "992 lb (450 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CUB 30",
+      "glance": [
+       "11-13/16″ wide",
+       ".020″ – 9-13/16″",
+       "3.3 – 23 ft/min",
+       "Brushes Ø7-1/16″",
+       "849 lb"
+      ]
+     },
+     {
+      "name": "CUB 65BB",
+      "glance": [
+       "25-9/16″ wide",
+       ".020″ – 4-3/4″",
+       "3.3 – 23 ft/min",
+       "Brushes Ø7-7/8″",
+       "1,543 lb"
+      ]
+     },
+     {
+      "name": "CUB 30B1B2",
+      "glance": [
+       "11-13/16″ wide",
+       ".020″ – 9-13/16″",
+       "3.3 – 23 ft/min",
+       "Brushes Ø7-1/16″",
+       "992 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "GIHs5vp-zQE",
+     "title": "CUB 30 brushing and deburring",
+     "duration": "PT1M10S",
+     "thumb": "video-GIHs5vp-zQE"
+    },
+    {
+     "id": "MIgzM81gJQA",
+     "title": "CUB 30 BB — top and bottom brushing",
+     "duration": "PT1M6S",
+     "thumb": "video-MIgzM81gJQA"
+    },
+    {
+     "id": "TzeAYCddrUs",
+     "title": "CUB 30 BB brushing and finishing",
+     "duration": "PT1M12S",
+     "thumb": "video-TzeAYCddrUs"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-brush"
+  },
+  "gecam-easy-t": {
+   "id": "gecam-easy-t",
+   "brand": "gecam",
+   "name": "EASY T brushing workstation with vacuum table, 31-1/2 × 51-3/16″, parts to 5-7/8″",
+   "short": "EASY T",
+   "models_label": "EASY T · workstation",
+   "summary": "A bench for the parts a conveyor machine cannot take — heavy, thick, shaped or one-off: the vacuum table holds the part and the operator guides a Ø5-7/8″ top brush over it on a swinging arm, deburring, rounding the edges or satin-finishing. The arm carries two tools and tilts through 180° to change from one to the other; the tool is switched on from the handlebar, and the dust is drawn off inside the table. Parts up to 5-7/8″ thick on a 31-1/2 × 51-3/16″ table.",
+   "headline": "Table 31-1/2 × 51-3/16″ · parts to 5-7/8″ · two tools on a 180° tilting arm",
+   "features": [
+    "Two tools on a swinging arm that tilts through 180° for a quick change from one to the other",
+    "Vacuum table, vacuum area 9-13/16 × 13-3/4″ (250 × 350 mm)",
+    "Top brush Ø5-7/8″ (150 mm) with quick release; adjustable speed; any brush type for the material and finish",
+    "1 HP (0.75 kW) motor; tool buttons on the handlebar",
+    "Suction hood inside the table; working height 37-3/16″ (945 mm)",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Brushes for deburring, edge rounding and satin finishing",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-easy-t",
+    "gc-easy-t-tools",
+    "gc-easy-t-work",
+    "gc-easy-t-operator",
+    "gc-easy-t-brush"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "EASY T",
+      "sub": "Brushing workstation",
+      "models": [
+       "EASY T"
+      ],
+      "rows": [
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "31-1/2 × 51-3/16″ (800 × 1,300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "cells": [
+         "37-3/16″ (945 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Vacuum area",
+        "sub": "",
+        "cells": [
+         "9-13/16 × 13-3/4″ (250 × 350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. part thickness",
+        "sub": "",
+        "cells": [
+         "5-7/8″ (150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Top brush (T)",
+        "sub": "2 tools on a 180° tilting arm",
+        "cells": [
+         "Ø5-7/8″ (150 mm), quick release"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1 HP (0.75 kW)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EASY T",
+      "glance": [
+       "31-1/2 × 51-3/16″ table",
+       "to 5-7/8″",
+       "—",
+       "Top brush Ø5-7/8″ · 2 tools",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "oIDa5QsHTG0",
+     "title": "EASY T deburring, grinding and polishing",
+     "duration": "PT2M46S",
+     "thumb": "video-oIDa5QsHTG0"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-bench"
+  },
+  "gecam-gcb": {
+   "id": "gecam-gcb",
+   "brand": "gecam",
+   "name": "GCB 25 · GCB 30 · GCB 40 double crossed-belt deburring benches, tables 98-7/16″ to 157-1/2″",
+   "short": "GCB 25 · GCB 30 · GCB 40",
+   "models_label": "GCB 25 · GCB 30 · GCB 40 · 3 models",
+   "summary": "A manual station for large, heavy and awkward parts: two long abrasive belts cross over a motorized table, and the operator works the part against the belt — over a rubber roller, a shoe or a brush placed wherever along the belt the job needs — so long edges, profiles and shaped parts are deburred, satin-finished and rounded without a fixture. The belts are tensioned pneumatically and run at variable speed, a single independent brush (T) rounds edges, and a suction-cup manipulator holds shaped parts in any position. Tables 98-7/16″, 118-1/8″ or 157-1/2″ long.",
+   "headline": "Tables 98-7/16″, 118-1/8″ and 157-1/2″ × 31-1/2″ · two crossed belts · manipulator for shaped parts",
+   "features": [
+    "Double crossed abrasive belt 4-3/4″ (120 mm) wide with pneumatic tensioning, variable belt speed",
+    "Rubber roller, shoe or brush accessory placed at any point along the belt",
+    "Motorized table with 23-5/8″ (600 mm) vertical stroke; parts up to 220 lb (100 kg) on the table",
+    "Single independent brush (T group) for edge rounding",
+    "Control panel in front of the working area",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Suction-cup manipulator for shaped parts: 360° horizontal and 360° vertical rotation, 90° tilt, parts to 82 lb (37 kg)",
+    "Accessory storage rack on guided wheels",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-gcb",
+    "gc-gcb-cat",
+    "gc-gcb-work",
+    "gc-gcb-brush",
+    "gc-gcb-vacuum"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "GCB 25 · GCB 30 · GCB 40",
+      "sub": "Double crossed-belt deburring benches",
+      "models": [
+       "GCB 25",
+       "GCB 30",
+       "GCB 40"
+      ],
+      "rows": [
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "98-7/16 × 31-1/2″ (2,500 × 800 mm)",
+         "118-1/8 × 31-1/2″ (3,000 × 800 mm)",
+         "157-1/2 × 31-1/2″ (4,000 × 800 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belts",
+        "sub": "2 crossed belts",
+        "cells": [
+         "4-3/4 × 314-15/16″ (120 × 8,000 mm)",
+         "4-3/4 × 354-5/16″ (120 × 9,000 mm)",
+         "4-3/4 × 430-1/2″ (120 × 10,935 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table vertical stroke (Z)",
+        "sub": "",
+        "cells": [
+         "23-5/8″ (600 mm)",
+         "23-5/8″ (600 mm)",
+         "23-5/8″ (600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. part weight on the table",
+        "sub": "",
+        "cells": [
+         "220 lb (100 kg)",
+         "220 lb (100 kg)",
+         "220 lb (100 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. part weight on the clamping system",
+        "sub": "",
+        "cells": [
+         "18 lb (8 kg)",
+         "18 lb (8 kg)",
+         "18 lb (8 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. part weight on the manipulator",
+        "sub": "optional",
+        "cells": [
+         "82 lb (37 kg)",
+         "82 lb (37 kg)",
+         "82 lb (37 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 148 × 87″ (1,000 × 3,750 × 2,200 mm)",
+         "39 × 148 × 87″ (1,000 × 3,750 × 2,200 mm)",
+         "39 × 148 × 87″ (1,000 × 3,750 × 2,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 1,742 lb (790 kg)",
+         "from 1,742 lb (790 kg)",
+         "from 1,742 lb (790 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "GCB 25",
+      "glance": [
+       "98-7/16 × 31-1/2″ table",
+       "—",
+       "—",
+       "2 crossed belts 4-3/4″",
+       "1,742 lb"
+      ]
+     },
+     {
+      "name": "GCB 30",
+      "glance": [
+       "118-1/8 × 31-1/2″ table",
+       "—",
+       "—",
+       "2 crossed belts 4-3/4″",
+       "1,742 lb"
+      ]
+     },
+     {
+      "name": "GCB 40",
+      "glance": [
+       "157-1/2 × 31-1/2″ table",
+       "—",
+       "—",
+       "2 crossed belts 4-3/4″",
+       "1,742 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded. Weights are approximate and depend on the working groups fitted. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "8wLm7uOQRnA",
+     "title": "GCB 25 RR cross-belt deburring",
+     "duration": "PT2M52S",
+     "thumb": "video-8wLm7uOQRnA"
+    },
+    {
+     "id": "8Z8EFZOkpXI",
+     "title": "Double crossed belt on bent plate",
+     "duration": "PT3M30S",
+     "thumb": "video-8Z8EFZOkpXI"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-bench"
+  },
+  "gecam-135": {
+   "id": "gecam-135",
+   "brand": "gecam",
+   "name": "135 automatic corner grinder for welded boxes, edges to 59″",
+   "short": "135",
+   "models_label": "135 · 1 or 2 heads",
+   "summary": "Grinds the weld on the outside corner of a welded box or cabinet without the operator holding anything: the box is clamped pneumatically on a large support base, the belt head comes in on a pneumatic carriage and then travels the full length of the edge on recirculating-ball guides at an inverter-set speed, stops at the end and releases the part, so the operator turns it to the next edge and starts again without returning to zero. One head as standard, a two-head version for more output, and a PLUS version with vertical, horizontal and oscillating head movement for radiusing. Edges up to 31-1/2″ or 59″.",
+   "headline": "Edges to 31-1/2″ or 59″ · automatic head travel · 1 or 2 heads",
+   "features": [
+    "Automatic head travel along the edge; head speed variable by inverter",
+    "Large base with table support for the part; pneumatic clamping",
+    "Abrasive belt 5-7/8 × 78-3/4″ (150 × 2,000 mm) pressed on the weld by a pad with contact rollers",
+    "Belt speed 4,724 / 2,362 ft/min (24 / 12 m/s); 4 HP (3 kW)",
+    "Working pressure set by bringing the head closer to the part",
+    "Push-button control as standard",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Touch-screen control",
+    "Two-head version",
+    "PLUS version: vertical, horizontal and oscillating head movement for radiusing (touch-screen models)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-135",
+    "gc-135-2h",
+    "gc-135-head",
+    "gc-135-pad",
+    "gc-135-guides",
+    "gc-135-touch",
+    "gc-135-sample"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "135",
+      "sub": "Automatic corner grinder",
+      "models": [
+       "135"
+      ],
+      "rows": [
+       {
+        "label": "Max. edge length",
+        "sub": "two base lengths",
+        "cells": [
+         "31-1/2″ or 59-1/16″ (800 or 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Grinding heads",
+        "sub": "",
+        "cells": [
+         "1 · 2 on the two-head version"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt speed",
+        "sub": "two speeds",
+        "cells": [
+         "4,724 / 2,362 ft/min (24 / 12 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Contact rollers",
+        "sub": "",
+        "cells": [
+         "1-15/16 × 5-7/8″ (50 × 150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Head travel",
+        "sub": "",
+        "cells": [
+         "Automatic, speed by inverter"
+        ],
+        "key": true
+       },
+       {
+        "label": "Clamping",
+        "sub": "",
+        "cells": [
+         "Pneumatic"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "one head",
+        "cells": [
+         "73 × 63 × 59″ (1,850 × 1,600 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "from 1,058 lb (480 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "135",
+      "glance": [
+       "Edges to 31-1/2″ or 59″",
+       "—",
+       "Automatic head travel",
+       "1 or 2 belt heads",
+       "1,058 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Belt speeds are surface speeds; the corner grinders run at two speeds, the higher for steel and the lower for stainless and aluminum. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [
+    {
+     "id": "tOxkUm2lGZo",
+     "title": "135 grinding box corners",
+     "duration": "PT4M10S",
+     "thumb": "video-tOxkUm2lGZo"
+    },
+    {
+     "id": "J6m2o9B1Ka4",
+     "title": "135 on a corner weld seam",
+     "duration": "PT3M15S",
+     "thumb": "video-J6m2o9B1Ka4"
+    },
+    {
+     "id": "ZzlXT-qjUOc",
+     "title": "135 two-head version",
+     "duration": "PT3M5S",
+     "thumb": "video-ZzlXT-qjUOc"
+    },
+    {
+     "id": "TTCL4SnvtKI",
+     "title": "135 PLUS",
+     "duration": "PT3M3S",
+     "thumb": "video-TTCL4SnvtKI"
+    },
+    {
+     "id": "VPEpu74z84I",
+     "title": "135 corner seam grinding",
+     "duration": "PT2M2S",
+     "thumb": "video-VPEpu74z84I"
+    },
+    {
+     "id": "7RM52FGLZag",
+     "title": "135 belt change",
+     "duration": "PT0M48S",
+     "thumb": "video-7RM52FGLZag"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-corner"
+  },
+  "gecam-136-131": {
+   "id": "gecam-136-131",
+   "brand": "gecam",
+   "name": "136 · 131 corner grinders for box welds, corners to 11-13/16″ high",
+   "short": "136 · 131",
+   "models_label": "136 · 131 · 2 models",
+   "summary": "The hand-fed corner grinders for welded boxes, cabinets, doors and trays: the abrasive belt runs over a fork with two rollers, and the operator slides the corner along it on the table. The fork oscillates both in angle and about its pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp corner. The 136 has a 23-5/8 × 15-3/4″ table with a prismatic guide for corners 7-7/8″ or 11-13/16″ high (19-11/16″ on request) and also radiuses flat parts; the 131 has a 23-5/8 × 9-13/16″ table adjustable in height and inclination with squaring guides, for corners up to 5-7/8″. Both run at two belt speeds.",
+   "headline": "Corners to 5-7/8″ (131) and 11-13/16″ (136) high · radius 3/64″ – 3/8″ or sharp · two belt speeds",
+   "features": [
+    "Fixed head with an oscillating two-roller fork: radius 3/64″ – 3/8″ (R1 – R10 mm) or a sharp corner",
+    "Abrasive belt 5-7/8 × 78-3/4″ (150 × 2,000 mm) at two speeds, 4,724 / 2,362 ft/min (24 / 12 m/s)",
+    "136: 23-5/8 × 15-3/4″ table with prismatic guide; corners 7-7/8″ or 11-13/16″ high; parts 3-1/8″ – 19-11/16″ (80 – 500 mm) deep",
+    "131: 23-5/8 × 9-13/16″ table, height and inclination set by handwheel, squaring guides adjusted by hand; corners to 5-7/8″",
+    "Dust hood; electrics in a sealed box",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Dust collector (cyclone on the 136)",
+    "136 for corners up to 19-11/16″ (500 mm) high",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-136",
+    "gc-131",
+    "gc-136-box",
+    "gc-136-head",
+    "gc-131-table",
+    "gc-131-head",
+    "gc-box-corner"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "136 · 131",
+      "sub": "Corner grinders",
+      "models": [
+       "136",
+       "131"
+      ],
+      "rows": [
+       {
+        "label": "Max. corner height",
+        "sub": "",
+        "cells": [
+         "7-7/8″ or 11-13/16″ (200 / 300 mm) · 19-11/16″ (500 mm) on request",
+         "5-7/8″ (150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "23-5/8 × 15-3/4″ (600 × 400 mm)",
+         "23-5/8 × 9-13/16″ (600 × 250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table adjustment",
+        "sub": "",
+        "cells": [
+         "Prismatic guide",
+         "Height and inclination by handwheel · squaring guides"
+        ],
+        "key": false
+       },
+       {
+        "label": "Corner radius",
+        "sub": "",
+        "cells": [
+         "3/64″ – 3/8″ (R1 – R10 mm) or sharp",
+         "3/64″ – 3/8″ (R1 – R10 mm) or sharp"
+        ],
+        "key": false
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)",
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt speed",
+        "sub": "two speeds",
+        "cells": [
+         "4,724 / 2,362 ft/min (24 / 12 m/s)",
+         "4,724 / 2,362 ft/min (24 / 12 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Fork rollers",
+        "sub": "",
+        "cells": [
+         "1-15/16 × 5-7/8″ (50 × 150 mm)",
+         "1-15/16 × 5-7/8″ (50 × 150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "two speeds",
+        "cells": [
+         "3 / 2 HP (2.25 / 1.5 kW)",
+         "3.1 / 2 HP (2.3 / 1.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "40 × 47 × 44″ (1,006 × 1,200 × 1,130 mm)",
+         "28 × 55 × 59″ (700 × 1,400 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "353 lb (160 kg)",
+         "265 lb (120 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "136",
+      "glance": [
+       "Corners to 11-13/16″ high",
+       "—",
+       "Hand-fed",
+       "Belt 5-7/8″, oscillating fork",
+       "353 lb"
+      ]
+     },
+     {
+      "name": "131",
+      "glance": [
+       "Corners to 5-7/8″ high",
+       "—",
+       "Hand-fed",
+       "Belt 5-7/8″, oscillating fork",
+       "265 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Belt speeds are surface speeds; the corner grinders run at two speeds, the higher for steel and the lower for stainless and aluminum. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [
+    {
+     "id": "lXGO65Ghwo0",
+     "title": "136 on an enclosure weld seam",
+     "duration": "PT2M1S",
+     "thumb": "video-lXGO65Ghwo0"
+    },
+    {
+     "id": "rrpQjvD7sEE",
+     "title": "136 weld seam grinding",
+     "duration": "PT5M16S",
+     "thumb": "video-rrpQjvD7sEE"
+    },
+    {
+     "id": "bDsDqFoJ5l4",
+     "title": "131 corner grinder",
+     "duration": "PT1M36S",
+     "thumb": "video-bDsDqFoJ5l4"
+    },
+    {
+     "id": "cnQful7fLsI",
+     "title": "131 with oscillating head",
+     "duration": "PT1M14S",
+     "thumb": "video-cnQful7fLsI"
+    },
+    {
+     "id": "XSrlMJ_lmME",
+     "title": "131 box weld seam sanding",
+     "duration": "PT4M13S",
+     "thumb": "video-XSrlMJ_lmME"
+    },
+    {
+     "id": "pRvYJVhLOkE",
+     "title": "131 on a stainless box",
+     "duration": "PT1M59S",
+     "thumb": "video-pRvYJVhLOkE"
+    },
+    {
+     "id": "y0gMB7J6F_E",
+     "title": "131 box seam grinding",
+     "duration": "PT5M43S",
+     "thumb": "video-y0gMB7J6F_E"
+    },
+    {
+     "id": "7sG_9LqdVNM",
+     "title": "131 on a door corner",
+     "duration": "PT0M36S",
+     "thumb": "video-7sG_9LqdVNM"
+    },
+    {
+     "id": "eEYp5xXPNZo",
+     "title": "How to adjust and operate the 131",
+     "duration": "PT17M28S",
+     "thumb": "video-eEYp5xXPNZo"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-corner"
+  },
+  "gecam-corner-special": {
+   "id": "gecam-corner-special",
+   "brand": "gecam",
+   "name": "Upper-corner, six-head and tube-frame corner grinders, PLC-controlled, boxes to 23-5/8″ and tube to 3-1/8″",
+   "short": "Special corner grinders",
+   "models_label": "Upper-corner · six-head · tube-frame",
+   "summary": "For corner welds in series, Gecam builds grinders that run from a stored recipe — the operator places the part and starts it. The upper-corner grinder brings two vertical heads down on the two top corners of a box at once and presses the belt on the weld with pads; time and pressure are set on the touch screen by how much weld there is to remove. The six-head grinder cleans the outside edges of boxes up to 5-7/8″ high two corners at a time, about 30 seconds a pair. The four-head tube-frame grinder removes the welds on 90° corners of square-tube frames — table legs and frames from 3/4″ to 3-1/8″ tube — on all four sides in one cycle.",
+   "headline": "Recipe-controlled corner grinding · boxes and 90° tube frames · built to the part",
+   "features": [
+    "Upper-corner grinder: 2 heads with pads press a 1-3/8″ (35 mm) belt on both top corners at once; time and pressure set on the touch screen",
+    "Six-head grinder: 4 lower heads in pairs at 90° with rubber pads and 2 upper heads with oscillating rubber rollers; the heads close in pneumatically and travel along the corner",
+    "Tube-frame grinder: 2 mirrored vertical heads for top and bottom and 2 horizontal heads for the sides; pneumatic belt tension; side heads travel vertically to use the whole belt",
+    "PLC recipes with the data of each part; dust drawn off at the point of work",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-upper-corner",
+    "gc-six-head",
+    "gc-tube-corner",
+    "gc-upper-corner-panel",
+    "gc-six-head-heads",
+    "gc-six-head-pads",
+    "gc-tube-corner-table",
+    "gc-tube-corner-heads",
+    "gc-corner-before",
+    "gc-corner-after"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Special corner grinders",
+      "sub": "PLC-controlled corner grinders for series work",
+      "models": [
+       "Upper-corner grinder",
+       "Six-head grinder",
+       "Tube-frame grinder"
+      ],
+      "rows": [
+       {
+        "label": "Workpiece",
+        "sub": "",
+        "cells": [
+         "Boxes, working width 7-7/8″ / 23-5/8″ (200 / 600 mm)",
+         "Boxes up to 5-7/8″ (150 mm) high",
+         "Square tube 13/16″ – 3-1/8″ (20 – 80 mm) · frames from 17-11/16″ (450 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Grinding heads",
+        "sub": "",
+        "cells": [
+         "2, vertical, on the two top corners",
+         "6: 4 lower in pairs at 90° + 2 upper",
+         "4: 2 vertical + 2 horizontal"
+        ],
+        "key": true
+       },
+       {
+        "label": "Corners per cycle",
+        "sub": "",
+        "cells": [
+         "2",
+         "2, about 30 s per pair",
+         "1 corner, 4 sides"
+        ],
+        "key": false
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "1-3/8 × 60-7/16″ (35 × 1,535 mm)",
+         "—",
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt speed",
+        "sub": "",
+        "cells": [
+         "4,724 / 2,362 ft/min (24 / 12 m/s)",
+         "—",
+         "4,921 ft/min (25 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Touch-screen PLC: time and pressure",
+         "PLC recipes",
+         "Touch-screen PLC: time for each head"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Upper-corner grinder",
+      "glance": [
+       "Boxes 7-7/8″ / 23-5/8″ wide",
+       "—",
+       "PLC-timed",
+       "2 belt heads",
+       "—"
+      ]
+     },
+     {
+      "name": "Six-head grinder",
+      "glance": [
+       "Boxes to 5-7/8″ high",
+       "—",
+       "~30 s per 2 corners",
+       "6 belt heads",
+       "—"
+      ]
+     },
+     {
+      "name": "Tube-frame grinder",
+      "glance": [
+       "Tube 3/4″ – 3-1/8″ square",
+       "—",
+       "4 sides per cycle",
+       "4 belt heads",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Special machines are configured for the part: send a drawing of the box or frame and the weld to be removed for a quote. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [
+    {
+     "id": "J5LT42sqaRw",
+     "title": "Six-head corner grinder",
+     "duration": "PT2M28S",
+     "thumb": "video-J5LT42sqaRw"
+    },
+    {
+     "id": "QLv9H4YqNoc",
+     "title": "Automatic weld seam grinder for electrical panels",
+     "duration": "PT4M22S",
+     "thumb": "video-QLv9H4YqNoc"
+    },
+    {
+     "id": "CK-pAsAkwrg",
+     "title": "Weld seam grinder for electrical panels",
+     "duration": "PT1M50S",
+     "thumb": "video-CK-pAsAkwrg"
+    },
+    {
+     "id": "YH0_0xBvYb4",
+     "title": "Special weld seam corner grinder",
+     "duration": "PT0M22S",
+     "thumb": "video-YH0_0xBvYb4"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-corner-special"
+  },
+  "sahinler-bt-114-s": {
+   "id": "sahinler-bt-114-s",
+   "brand": "sahinler",
+   "name": "BT 114-S automatic pipe polishing and sanding machine",
+   "short": "BT 114-S",
+   "models_label": "BT 114-S · Ø3/8″ to Ø4-1/2″ · 6.4 HP",
+   "summary": "A belt sander for round pipe and square tube that feeds the material itself: an automatic pipe feeder with its own motor pushes straight or bent tube (up to a 45° bend) through two 37 × 2″ abrasive belts, so the operator does not turn or hold the material. Feeding speed and belt speed are both inverter-variable, the belt is changed through an opening cover and a holder is provided for manual feeding. Finishing, satin-brushing and rust removal on Ø3/8″ to Ø4-1/2″ — handrail, furniture and architectural stainless.",
+   "features": [
+    "Automatic pipe feeder with separate motor — delivers material without operator intervention; no need to turn the material",
+    "Pipe / tube Ø3/8″ – Ø4-1/2″ (10 – 114 mm); polishes bent pipe and tube up to a 45° bend",
+    "Variable feeding speed and variable sanding-belt speed by inverter drive",
+    "2 abrasive belts 37 × 2″ included; opening cover for belt changes and cleaning",
+    "Manual pipe-clamping adjustment; fixing attachment for the motor; holder for manual feeding"
+   ],
+   "optional": [
+    "Abrasive belts in other grits",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+   ],
+   "images": [
+    "sh-bt114s-photo",
+    "sh-bt114s",
+    "sh-bt114s-showroom",
+    "sh-bt114s-head",
+    "sh-bt114s-front",
+    "sh-bt114s-top",
+    "sh-bt114s-belt",
+    "sh-bt114s-square",
+    "sh-bt114s-rolls",
+    "sh-bt114s-wheel",
+    "sh-bt114s-belt-2",
+    "sh-bt114s-pendant",
+    "sh-bt114s-rail",
+    "sh-bt114s-tube"
+   ],
+   "videos": [
+    {
+     "id": "j8vE5Dmc4QI",
+     "title": "BT 114-S pipe sander — pipe polishing machine",
+     "duration": "PT1M12S",
+     "thumb": "video-j8vE5Dmc4QI"
+    },
+    {
+     "id": "zd5Zhu82wPo",
+     "title": "BT 114-S square tube sanding and polishing machine",
+     "duration": "PT2M35S",
+     "thumb": "video-zd5Zhu82wPo"
+    },
+    {
+     "id": "kotI1chSYnY",
+     "title": "Curved pipe polishing on the BT 114-S",
+     "duration": "PT3M14S",
+     "thumb": "video-kotI1chSYnY"
+    },
+    {
+     "id": "6SVmTnY_4rs",
+     "title": "BT 114-S — diameter adjustment",
+     "duration": "PT1M37S",
+     "thumb": "video-6SVmTnY_4rs"
+    },
+    {
+     "id": "o23ZQEoAvzU",
+     "title": "BT 114-S automatic pipe sander with feeder",
+     "duration": "PT1M56S",
+     "thumb": "video-o23ZQEoAvzU"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BT 114-S",
+      "sub": "automatic pipe polishing & sanding machine",
+      "models": [
+       "BT 114-S"
+      ],
+      "rows": [
+       {
+        "label": "Working capacity",
+        "sub": "pipe / tube OD",
+        "cells": [
+         "Ø3/8″ – Ø4-1/2″ (10 – 114 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive-belt motors",
+        "sub": "",
+        "cells": [
+         "4 + 2 HP (3 + 1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed-wheel motor",
+        "sub": "",
+        "cells": [
+         "0.3 HP (0.24 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total motor power",
+        "sub": "",
+        "cells": [
+         "6.4 HP (4.75 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt size",
+        "sub": "2 belts included",
+        "cells": [
+         "37 × 2″ (940 × 50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feeding speed",
+        "sub": "variable, inverter drive",
+        "cells": [
+         "9.8 – 72 ft/min (3 – 22 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sanding-belt speed",
+        "sub": "",
+        "cells": [
+         "Variable, inverter drive"
+        ],
+        "key": false
+       },
+       {
+        "label": "Automatic pipe feeder",
+        "sub": "",
+        "cells": [
+         "Standard"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 30 × 59″ (990 × 760 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "approx.",
+        "cells": [
+         "617 lb (280 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BT 114-S",
+      "glance": [
+       "Ø3/8″ – Ø4-1/2″ (10 – 114 mm)",
+       "37 × 2″ (940 × 50 mm)",
+       "6.4 HP (4.75 kW)",
+       "617 lb (280 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "belt",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
+   },
+   "headline": "Pipe and tube Ø3/8″ to Ø4-1/2″ (10 – 114 mm) · automatic feeder · 2 belts 37 × 2″",
+   "pdf": {
+    "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
+    "label": "Download the notchers, circle cutters, polishers & benders brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "sahinler-polish"
+  },
+  "eurofintec-141-144": {
+   "id": "eurofintec-141-144",
+   "brand": "eurofintec",
+   "name": "141 · 144 orbital pipe sanders for straight and bent tube, Ø3/8″ – 5-7/8″",
+   "short": "141 · 144",
+   "models_label": "141 · 144 · 2 models",
+   "summary": "The tube passes through the head while two abrasive belts orbit around it, so round and oval tube — straight or bent — is ground, satin-finished or cleaned all round without the operator turning it. The tube only moves along its axis, which gives an even finish and spares the operator. Belt tension and centering are electronic, belt speed is variable. The compact 141 takes tube from Ø3/8″ to Ø3-1/8″ — handrail, furniture and frame tube; the 144 Ø9/16″ to Ø5-7/8″. Feeding and extraction units are available, with reverse feed that brings the tube back for a second pass.",
+   "headline": "Round and oval tube Ø3/8″ – 5-7/8″ · straight and bent · two orbiting belts",
+   "features": [
+    "Two abrasive belts on an orbital wheel inside the head — the tube is worked all round without being turned",
+    "Round and elliptical tube, straight and bent",
+    "Electronic belt tensioning and centering",
+    "Variable belt speed, 1,969 – 4,921 ft/min (10 – 25 m/s)",
+    "141: 2 belts 3/4 × 23-5/8″ (20 × 600 mm), 2 HP (1.5 kW) · 144: 2 belts 1-15/16 × 43-5/16″ (50 × 1,100 mm), 4 HP (3 kW)",
+    "Connection for a dust extractor at the point of work",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic feeding and extraction units",
+    "Reverse feed that returns the tube for a second pass",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "ef-141",
+    "ef-144",
+    "ef-141-bend",
+    "ef-141-small",
+    "ef-144-feeder",
+    "ef-144-panel"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "141 · 144",
+      "sub": "Orbital pipe sanders",
+      "models": [
+       "141",
+       "144"
+      ],
+      "rows": [
+       {
+        "label": "Tube Ø",
+        "sub": "round and oval, straight and bent",
+        "cells": [
+         "Ø3/8″ – 3-1/8″ (10 – 80 mm)",
+         "Ø9/16″ – 5-7/8″ (15 – 150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belts",
+        "sub": "on an orbital wheel",
+        "cells": [
+         "2 × 13/16 × 23-5/8″ (20 × 600 mm)",
+         "2 × 1-15/16 × 43-5/16″ (50 × 1,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Belt speed",
+        "sub": "variable",
+        "cells": [
+         "1,969 – 4,921 ft/min (10 – 25 m/s)",
+         "1,969 – 4,921 ft/min (10 – 25 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "24 × 26 × 44″ (620 × 650 × 1,110 mm)",
+         "47 × 26 × 49″ (1,200 × 650 × 1,250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "408 lb (185 kg)",
+         "463 lb (210 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "141",
+      "glance": [
+       "Tube Ø3/8″ – 3-1/8″",
+       "—",
+       "Hand or automatic feed",
+       "2 orbiting belts 3/4″",
+       "408 lb"
+      ]
+     },
+     {
+      "name": "144",
+      "glance": [
+       "Tube Ø9/16″ – 5-7/8″",
+       "—",
+       "Hand or automatic feed",
+       "2 orbiting belts 1-15/16″",
+       "463 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Tube capacities are outside diameters. Metric values in brackets are the manufacturer's figures; belt speeds are surface speeds. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "bBTOXVG-XkA",
+     "title": "141 pipe sander",
+     "duration": "PT2M47S",
+     "thumb": "video-bBTOXVG-XkA"
+    },
+    {
+     "id": "Ct6iF4KiDts",
+     "title": "141 small tube deburring and finishing",
+     "duration": "PT0M45S",
+     "thumb": "video-Ct6iF4KiDts"
+    },
+    {
+     "id": "Ds_wymTW1Bs",
+     "title": "144 orbital pipe sander",
+     "duration": "PT1M51S",
+     "thumb": "video-Ds_wymTW1Bs"
+    },
+    {
+     "id": "qsHhvHH5IOw",
+     "title": "144 pipe polishing",
+     "duration": "PT1M32S",
+     "thumb": "video-qsHhvHH5IOw"
+    },
+    {
+     "id": "reRZfVQBCF8",
+     "title": "144 polishing aluminum tube",
+     "duration": "PT0M49S",
+     "thumb": "video-reRZfVQBCF8"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "ef-orbital"
+  },
+  "eurofintec-128": {
+   "id": "eurofintec-128",
+   "brand": "eurofintec",
+   "name": "128 S · 128 SL · 128 DL centreless pipe and bar sanders, Ø3/16″ – 5-7/8″",
+   "short": "128 S · 128 SL · 128 DL",
+   "models_label": "128 S · 128 SL · 128 DL · 3 models",
+   "summary": "Centreless belt grinders for satin-finishing and polishing round bar and tube: the part lies on a work rest and a grooved rubber wheel turns it against the abrasive belt while it is pushed through, so the whole surface is finished evenly along its length. The rubber wheel's speed is set for each diameter and the belt runs at two speeds. The 128 S takes Ø3/16″ to Ø4-5/16″ on a 2-15/16″ belt and the 128 SL Ø3/16″ to Ø5-7/8″ on a 5-7/8″ belt, both up to 39″ long without extra supports; the 128 DL has two independent heads in line, so two grits work in one pass, for Ø3/8″ to Ø5-7/8″ on a prismatic support. Dry or wet.",
+   "headline": "Round bar and tube Ø3/16″ – 5-7/8″ · centreless · 1 or 2 heads · dry or wet",
+   "features": [
+    "Centreless group with grooved rubber wheel; part rotation set electronically for the diameter (15 – 75 rpm on the 128 S / SL, 20 – 100 rpm on the 128 DL)",
+    "Two belt speeds: 2,953 / 5,906 ft/min (15 / 30 m/s); belt tensioning and centering",
+    "Contact wheel Ø7-7/8″ (200 mm)",
+    "128 S / SL: parts up to 39-3/8″ (1 m) long without support; extra support guides for longer parts",
+    "128 DL: two independently controlled heads; prismatic work support with anti-friction lining, set by handwheel; 3 support accessories included",
+    "Electrics in a sealed metal box",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Wet version with coolant on the belt",
+    "Extra work support guides for long parts",
+    "Contact wheels in other diameters",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "ef-128sl",
+    "ef-128dl",
+    "ef-128-work",
+    "ef-128-wheel",
+    "ef-128dl-heads",
+    "ef-128dl-guide",
+    "ef-128-wet"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "128 S · 128 SL · 128 DL",
+      "sub": "Centreless pipe and bar sanders",
+      "models": [
+       "128 S",
+       "128 SL",
+       "128 DL"
+      ],
+      "rows": [
+       {
+        "label": "Bar and tube Ø",
+        "sub": "",
+        "cells": [
+         "Ø3/16″ – 4-5/16″ (5 – 110 mm)",
+         "Ø3/16″ – 5-7/8″ (5 – 150 mm)",
+         "Ø3/8″ – 5-7/8″ (10 – 150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Grinding heads",
+        "sub": "",
+        "cells": [
+         "1",
+         "1",
+         "2, independent"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "2-15/16 × 78-3/4″ (75 × 2,000 mm)",
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)",
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Contact wheel",
+        "sub": "Ø × width",
+        "cells": [
+         "7-7/8 × 2-15/16″ (200 × 75 mm)",
+         "7-7/8 × 5-7/8″ (200 × 150 mm)",
+         "7-7/8 × 5-7/8″ (200 × 150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt speed",
+        "sub": "two speeds",
+        "cells": [
+         "2,953 / 5,906 ft/min (15 / 30 m/s)",
+         "2,953 / 5,906 ft/min (15 / 30 m/s)",
+         "2,953 / 5,906 ft/min (15 / 30 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Part rotation",
+        "sub": "rubber wheel, variable",
+        "cells": [
+         "23 – 115 ft/min (7 – 35 m/min)",
+         "23 – 115 ft/min (7 – 35 m/min)",
+         "33 – 164 ft/min (10 – 50 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. length without support",
+        "sub": "",
+        "cells": [
+         "39-3/8″ (1,000 mm)",
+         "39-3/8″ (1,000 mm)",
+         "Prismatic support"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "4.4 / 3.4 HP (3.3 / 2.5 kW)",
+         "4.4 / 3.4 HP (3.3 / 2.5 kW)",
+         "8.7 HP (6.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "59 × 26 × 57″ (1,500 × 650 × 1,450 mm)",
+         "59 × 28 × 63″ (1,500 × 700 × 1,600 mm)",
+         "67 × 55 × 63″ (1,700 × 1,400 × 1,600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "309 lb (140 kg)",
+         "—",
+         "992 lb (450 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "128 S",
+      "glance": [
+       "Bar & tube Ø3/16″ – 4-5/16″",
+       "—",
+       "Rotation 23 – 115 ft/min",
+       "1 belt 2-15/16″",
+       "309 lb"
+      ]
+     },
+     {
+      "name": "128 SL",
+      "glance": [
+       "Bar & tube Ø3/16″ – 5-7/8″",
+       "—",
+       "Rotation 23 – 115 ft/min",
+       "1 belt 5-7/8″",
+       "—"
+      ]
+     },
+     {
+      "name": "128 DL",
+      "glance": [
+       "Bar & tube Ø3/8″ – 5-7/8″",
+       "—",
+       "Rotation 33 – 164 ft/min",
+       "2 belts 5-7/8″",
+       "992 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Tube capacities are outside diameters. Metric values in brackets are the manufacturer's figures; belt speeds are surface speeds. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "T8fy51DykIk",
+     "title": "128 S centreless pipe sander",
+     "duration": "PT2M34S",
+     "thumb": "video-T8fy51DykIk"
+    },
+    {
+     "id": "ESDnM4-hkYM",
+     "title": "128 S centreless pipe sanding",
+     "duration": "PT1M49S",
+     "thumb": "video-ESDnM4-hkYM"
+    },
+    {
+     "id": "UwRy5zVRRk4",
+     "title": "128 SL pipe sanding",
+     "duration": "PT3M31S",
+     "thumb": "video-UwRy5zVRRk4"
+    },
+    {
+     "id": "KJX0iCI8bYY",
+     "title": "128 SL centreless tube sanding",
+     "duration": "PT1M44S",
+     "thumb": "video-KJX0iCI8bYY"
+    },
+    {
+     "id": "I-LmPF3pKe4",
+     "title": "128 SL pipe sanding machine",
+     "duration": "PT3M45S",
+     "thumb": "video-I-LmPF3pKe4"
+    },
+    {
+     "id": "QWP5ysXOv7w",
+     "title": "128 SL centreless pipe polisher",
+     "duration": "PT1M0S",
+     "thumb": "video-QWP5ysXOv7w"
+    },
+    {
+     "id": "_jHJUG1jRWE",
+     "title": "128 centreless grinding",
+     "duration": "PT2M1S",
+     "thumb": "video-_jHJUG1jRWE"
+    },
+    {
+     "id": "f3f7-lNiEH0",
+     "title": "128 DL dry",
+     "duration": "PT2M1S",
+     "thumb": "video-f3f7-lNiEH0"
+    },
+    {
+     "id": "I27PlnO8OI8",
+     "title": "128 DL twin, wet",
+     "duration": "PT2M27S",
+     "thumb": "video-I27PlnO8OI8"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "ef-centreless"
+  },
+  "eurofintec-228": {
+   "id": "eurofintec-228",
+   "brand": "eurofintec",
+   "name": "228 pipe sander for large pipe, Ø3/8″ – 15-3/4″",
+   "short": "228",
+   "models_label": "228 · pipe to Ø15-3/4″",
+   "summary": "For pipe too big for a centreless machine: a 3-15/16″ free belt runs over two Vulkollan rollers on a compensated fork that follows any ovality of the pipe, while a contrast group with a grooved rubber roller — set to the diameter by handwheel — turns the pipe and carries it past at up to 23 ft/min. Pneumatic contact wheel, fully enclosed belt and a circular-grinding attachment; roller stands in line with the machine carry long pipe. Pipe and round bar from Ø3/8″ to Ø15-3/4″.",
+   "headline": "Pipe Ø3/8″ – 15-3/4″ · 3-15/16 × 157-1/2″ free belt · feed 0 – 23 ft/min",
+   "features": [
+    "Free abrasive belt 3-15/16 × 157-1/2″ (100 × 4,000 mm) on two Vulkollan rollers on a compensated fork",
+    "Pneumatic contact wheel Ø9-13/16 × 3-15/16″ (250 × 100 mm) on bearings, for pipe up to Ø15-3/4″",
+    "Contrast group with grooved rubber roller on a guide set by handwheel to the pipe diameter; feed 0 – 23 ft/min (0 – 7 m/min)",
+    "Fully enclosed belt; circular-grinding attachment included",
+    "4.3 / 5.4 HP (3.2 / 4 kW)",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Roller stands for long and heavy pipe",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "ef-228",
+    "ef-228-rollers",
+    "ef-228-work",
+    "ef-228-large"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "228",
+      "sub": "Pipe sander for large pipe",
+      "models": [
+       "228"
+      ],
+      "rows": [
+       {
+        "label": "Pipe and bar Ø",
+        "sub": "",
+        "cells": [
+         "Ø3/8″ – 15-3/4″ (10 – 400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "free belt, width × length",
+        "cells": [
+         "3-15/16 × 157-1/2″ (100 × 4,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Contact wheel",
+        "sub": "Ø × width",
+        "cells": [
+         "9-13/16 × 3-15/16″ (250 × 100 mm), pneumatic"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "contrast roller",
+        "cells": [
+         "0 – 23 ft/min (0 – 7 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "4.3 / 5.4 HP (3.2 / 4 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "54 × 39 × 89″ (1,380 × 990 × 2,270 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "228",
+      "glance": [
+       "Pipe Ø3/8″ – 15-3/4″",
+       "—",
+       "0 – 23 ft/min",
+       "Free belt 3-15/16″",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Tube capacities are outside diameters. Metric values in brackets are the manufacturer's figures; belt speeds are surface speeds. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "RF_dHAi0IEE",
+     "title": "228 — pipe up to Ø15-3/4″",
+     "duration": "PT4M34S",
+     "thumb": "video-RF_dHAi0IEE"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "ef-centreless"
+  },
+  "eurofintec-728-143": {
+   "id": "eurofintec-728-143",
+   "brand": "eurofintec",
+   "name": "728 tube brushing machine and 143 tube-end deburring machine, Ø3/8″ – 5-7/8″",
+   "short": "728 · 143",
+   "models_label": "728 · 143 · 2 machines",
+   "summary": "Two brush machines for the work around a tube shop's saw and polisher. The 728 brushes round tube: a Ø11-13/16″ brush on a two-speed, self-braking motor works the tube while a grooved rubber contrast roller — tilted to feed it and pneumatically compensated — carries it past, cleaning, satin-finishing or polishing tube from Ø3/8″ to Ø5-7/8″, with handwheel adjustment as the brush wears. The 143 deburrs the cut ends of stainless tube and profiles inside and outside in one cycle: a wire brush turns while its own axis rotates, changing direction so every edge is deburred evenly, on ends cut at 90° or 45° and on bent parts — round tube Ø13/16″ to Ø4-3/4″, square 13/16″ to 4-3/4″.",
+   "headline": "728: tube Ø3/8″ – 5-7/8″ · 143: tube ends Ø13/16″ – 4-3/4″, round and square",
+   "features": [
+    "728: brush Ø11-13/16 × 3-15/16″ (300 × 100 mm), 275 – 825 rpm; two-speed motor with electronic brake, V-belt drive",
+    "728: contrast group with grooved rubber roller, tilt and diameter adjustment, pneumatic position compensation with adjustable pressure; steel work rest",
+    "728: column base, extraction hood, electrics in a sealed box with inverter",
+    "143: wire brush Ø9-13/16 × 3-15/16″ (250 × 100 mm); two brush speeds and two speeds of brush-axis rotation",
+    "143: inside and outside of the tube end in one cycle; ends cut at 90° and 45°, bent parts too; entry with adjustable central prism",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Self-filtering dust extraction (728)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "ef-728",
+    "ef-143",
+    "ef-143-front",
+    "ef-728-brush",
+    "ef-728-adjust",
+    "ef-728-pneumatic",
+    "ef-728-contrast",
+    "ef-143-brush",
+    "ef-143-45"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "728 · 143",
+      "sub": "Tube brushing and tube-end deburring machines",
+      "models": [
+       "728",
+       "143"
+      ],
+      "rows": [
+       {
+        "label": "Tube size",
+        "sub": "",
+        "cells": [
+         "Round Ø3/8″ – 5-7/8″ (10 – 150 mm)",
+         "Round Ø13/16″ – 4-3/4″ (20 – 120 mm) · square 13/16″ – 4-3/4″ (20 – 120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Brush",
+        "sub": "",
+        "cells": [
+         "Ø11-13/16″ (300 mm), 3-15/16″ (100 mm) wide",
+         "Wire, Ø9-13/16″ (250 mm), 3-15/16″ (100 mm) wide"
+        ],
+        "key": true
+       },
+       {
+        "label": "Brush speed",
+        "sub": "",
+        "cells": [
+         "275 – 825 rpm, 2-speed motor",
+         "2 speeds · brush axis rotation 2 speeds"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work",
+        "sub": "",
+        "cells": [
+         "Cleaning, satin finishing and polishing along the tube",
+         "Tube ends cut at 90° and 45°, inside and outside in one cycle"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3.4 / 4.4 HP (2.5 / 3.3 kW)",
+         "4.4 / 6 HP (3.3 / 4.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "31 × 51 × 55″ (800 × 1,300 × 1,400 mm)",
+         "28 × 37 × 55″ (700 × 930 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "705 lb (320 kg)",
+         "816 lb (370 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "728",
+      "glance": [
+       "Tube Ø3/8″ – 5-7/8″",
+       "—",
+       "Contrast-roller feed",
+       "Brush Ø11-13/16″",
+       "705 lb"
+      ]
+     },
+     {
+      "name": "143",
+      "glance": [
+       "Tube ends Ø13/16″ – 4-3/4″",
+       "—",
+       "Hand-fed",
+       "Wire brush Ø9-13/16″",
+       "816 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Tube capacities are outside diameters. Metric values in brackets are the manufacturer's figures; belt speeds are surface speeds. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "pCPlP3ZAuyw",
+     "title": "728 pipe polishing and brushing",
+     "duration": "PT1M17S",
+     "thumb": "video-pCPlP3ZAuyw"
+    },
+    {
+     "id": "3-jRbQS-rs4",
+     "title": "143 tube-end deburring",
+     "duration": "PT1M50S",
+     "thumb": "video-3-jRbQS-rs4"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "ef-brush"
+  },
+  "gecam-cws": {
+   "id": "gecam-cws",
+   "brand": "gecam",
+   "name": "CWS 200 · CWS 300 corner welding machines for bent boxes, parts to 59 × 59″",
+   "short": "CWS 200 · CWS 300",
+   "models_label": "CWS 200 · CWS 300 · 2 models",
+   "summary": "Welds the corners of bent boxes, cabinets, trays and enclosures in mild steel, stainless and aluminum with a TIG or plasma torch moved by the machine instead of by hand. The operator places the part with its corner against the external copper guide and presses the clamp button — a pneumatic cylinder anchors it from inside against copper blocks that hold the corner and draw the heat away — then presses start: the torch goes to the start point and welds the corner at the set speed. The parameters of each part are stored on the CNC touch screen. Corners 7-7/8″ high on the CWS 200 and 11-13/16″ on the CWS 300, parts from 3-15/16 × 3-15/16″ to 59 × 59″; two-axis torch movement is available.",
+   "headline": "Corners 7-7/8″ and 11-13/16″ high · parts 3-15/16″ – 59″ square · TIG or plasma · CNC touch screen",
+   "features": [
+    "Guide system for the torch; welding speed variable 0 – 118 in/min (0 – 50 mm/s)",
+    "Pneumatic clamping from inside against copper blocks: the corner is held in place and kept cool",
+    "Copper group: external unit 7-7/8″ or 11-13/16″ (200 / 300 mm) high and an internal unit matched to the corner height",
+    "CNC with touch screen; work and torch parameters stored for repeat parts",
+    "Mild steel, stainless steel and aluminum; for a TIG or plasma welding power source",
+    "Work table 32-5/16 × 32-5/16″ (820 × 820 mm)",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Two-axis (X, Y) torch movement",
+    "Cooling unit for the copper blocks — recommended to avoid discoloration of the weld zone",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-cws",
+    "gc-cws-welding",
+    "gc-cws-copper",
+    "gc-cws-stop",
+    "gc-cws-touch",
+    "gc-cws-bent",
+    "gc-cws-welded",
+    "gc-cws-boxes"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CWS 200 · CWS 300",
+      "sub": "Corner welding machines",
+      "models": [
+       "CWS 200",
+       "CWS 300"
+      ],
+      "rows": [
+       {
+        "label": "Max. corner height",
+        "sub": "external copper unit",
+        "cells": [
+         "7-7/8″ (200 mm)",
+         "11-13/16″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part size",
+        "sub": "min – max",
+        "cells": [
+         "3-15/16 × 3-15/16″ – 59-1/16 × 59-1/16″ (100 × 100 – 1,500 × 1,500 mm)",
+         "3-15/16 × 3-15/16″ – 59-1/16 × 59-1/16″ (100 × 100 – 1,500 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "32-5/16 × 32-5/16″ (820 × 820 mm)",
+         "32-5/16 × 32-5/16″ (820 × 820 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding speed",
+        "sub": "",
+        "cells": [
+         "0 – 118 in/min (0 – 50 mm/s), variable",
+         "0 – 118 in/min (0 – 50 mm/s), variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Welding process",
+        "sub": "",
+        "cells": [
+         "TIG or plasma",
+         "TIG or plasma"
+        ],
+        "key": true
+       },
+       {
+        "label": "Clamping",
+        "sub": "",
+        "cells": [
+         "Pneumatic, from inside, on copper blocks",
+         "Pneumatic, from inside, on copper blocks"
+        ],
+        "key": false
+       },
+       {
+        "label": "Torch movement",
+        "sub": "",
+        "cells": [
+         "Guided · 2-axis (X, Y) available",
+         "Guided · 2-axis (X, Y) available"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "CNC touch screen, stored parameters",
+         "CNC touch screen, stored parameters"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CWS 200",
+      "glance": [
+       "Corners to 7-7/8″ high",
+       "Parts to 59 × 59″",
+       "0 – 118 in/min",
+       "TIG or plasma torch",
+       "—"
+      ]
+     },
+     {
+      "name": "CWS 300",
+      "glance": [
+       "Corners to 11-13/16″ high",
+       "Parts to 59 × 59″",
+       "0 – 118 in/min",
+       "TIG or plasma torch",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "The CWS works with a TIG or plasma welding power source. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [
+    {
+     "id": "31eDB7VrF6I",
+     "title": "CWS 200 / 300 one-axis corner welding",
+     "duration": "PT2M28S",
+     "thumb": "video-31eDB7VrF6I"
+    },
+    {
+     "id": "x_qoKWRnEwA",
+     "title": "Two-axis corner welding",
+     "duration": "PT2M5S",
+     "thumb": "video-x_qoKWRnEwA"
+    },
+    {
+     "id": "R48m8-Np9XU",
+     "title": "Automatic corner welding",
+     "duration": "PT2M26S",
+     "thumb": "video-R48m8-Np9XU"
+    },
+    {
+     "id": "QTZDWAw4wu0",
+     "title": "Corner welding system at work",
+     "duration": "PT1M39S",
+     "thumb": "video-QTZDWAw4wu0"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · imperial units"
+   },
+   "group": "gc-weld"
+  }
+ }
+}

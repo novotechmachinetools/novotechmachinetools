@@ -113,6 +113,21 @@ Redirect 301 "/files/Arm-guillotine-shear-DKM-CKM-KMW-KM-HM.pdf" "/shear-cutting
 Redirect 301 "/files/Foot-sheet-metal-shear-PPS.pdf" "/shear-cutting"
 Redirect 301 "/files/Throatless-shear-IMS-TMS.pdf" "/shear-cutting"
 RedirectMatch 301 ^/rebar-bending-machines(\.html)?$ /rebar-bender
+# old Gecam / Eurofintec brochures → the new pages and the NovoTech Gecam & Eurofintec brochure
+Redirect 301 "/files/Gecam-deburring-and-finishing-machines-borchure.pdf" "/files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf"
+Redirect 301 "/files/pipe-and-sheet-metal-deburing-polishing-and-grinding-machines-GECAM-EUROFINTEC.pdf" "/files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf"
+Redirect 301 "/files/136-and-131-seam-weld-corner-grinder.pdf" "/corner-grinding-machines"
+Redirect 301 "/files/metal-box-deburring-and-grinding-machine.pdf" "/corner-grinding-machines"
+Redirect 301 "/files/manual-deburring-and-grinding-machine-Cub-30-BB_eng.pdf" "/brush-deburring-machines"
+Redirect 301 "/files/manual-deburring-and-grinding-machine-GECAM-Easy-T.pdf" "/brush-deburring-machines"
+Redirect 301 "/files/plate-deburring-grinding-edge-rounding-polishing-finishing-for-laser-and-plasma-cut-parts-GECAM.pdf" "/sheet-metal-deburring-machines"
+Redirect 301 "/files/special-machines-for-deburring-polishing-and-grinding-sheet-metal.pdf" "/sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
+Redirect 301 "/files/pipe-centerless-grinding-and-polishing-machine-GECAM.pdf" "/pipe-sanding-polishing-machines"
+Redirect 301 "/files/143-tube-and-pipe-deburring-machine-GECAM-MADE-IN-ITALY-.pdf" "/pipe-sanding-polishing-machines"
+Redirect 301 "/files/pipe-polishing-and-brushing-machine-GECAM.pdf" "/pipe-sanding-polishing-machines"
+Redirect 301 "/files/pipe-and-tube-deburring-machine-GECAM.pdf" "/pipe-sanding-polishing-machines"
+Redirect 301 "/files/Pipe-and-tube-Polisher-and-sander-,-grinder-BT.pdf" "/pipe-sanding-polishing-machines"
+Redirect 301 "/files/pipe-centerless-sander-TP-120.pdf" "/pipe-sanding-polishing-machines"
 
 # ---- Compression -------------------------------------------------------------
 <IfModule mod_brotli.c>

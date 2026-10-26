@@ -17681,5 +17681,1652 @@
   "trim": true,
   "quality": 90,
   "cutout": false
+ },
+ "gc-g15": {
+  "src": "tools/src-images/gecam/gc-g15.png",
+  "alt": "Gecam G15 compact deburring machine, 5-7/8″ working width",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g30": {
+  "src": "tools/src-images/gecam/gc-g30.png",
+  "alt": "Gecam G30 deburring machine, 11-13/16″ working width",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g15-infeed": {
+  "src": "tools/src-images/gecam/gc-g15-infeed.jpg",
+  "alt": "G15 conveyor belt at the infeed",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g15-brushes": {
+  "src": "tools/src-images/gecam/gc-g15-brushes.jpg",
+  "alt": "G15 rotating and oscillating top brushes (T group)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g30-belts": {
+  "src": "tools/src-images/gecam/gc-g30-belts.jpg",
+  "alt": "Two abrasive belt units (R groups) inside a G30",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g30-rb": {
+  "src": "tools/src-images/gecam/gc-g30-rb.jpg",
+  "alt": "Abrasive belt and cylindrical brush (R + B groups) in a G30",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g30-panel": {
+  "src": "tools/src-images/gecam/gc-g30-panel.jpg",
+  "alt": "G30 control panel",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g30-rollers": {
+  "src": "tools/src-images/gecam/gc-g30-rollers.jpg",
+  "alt": "Rubberized pressure rollers at the G30 infeed",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g30-conveyor": {
+  "src": "tools/src-images/gecam/gc-g30-conveyor.jpg",
+  "alt": "Additional infeed and outfeed rollers (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g30-sample": {
+  "src": "tools/src-images/gecam/gc-g30-sample.jpg",
+  "alt": "Laser-cut plate after deburring and edge rounding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-r": {
+  "src": "tools/src-images/gecam/gc-sample-r.png",
+  "alt": "Sample: deburred with the abrasive belt (R group)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g65": {
+  "src": "tools/src-images/gecam/gc-g65.png",
+  "alt": "Gecam G65 wide-belt deburring machine, 25-9/16″ working width",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g135": {
+  "src": "tools/src-images/gecam/gc-g135.png",
+  "alt": "Gecam G135 wide-belt deburring machine, 53-1/8″ working width",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g65-glass": {
+  "src": "tools/src-images/gecam/gc-g65-glass.jpg",
+  "alt": "G65 wide-belt deburring machine with glazed side doors",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g65-rxb4": {
+  "src": "tools/src-images/gecam/gc-g65-rxb4.jpg",
+  "alt": "Inside a G65 RXB4: abrasive belt, top brushes and four-brush carousel",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g65-rx": {
+  "src": "tools/src-images/gecam/gc-g65-rx.jpg",
+  "alt": "Abrasive belt unit and double row of top brushes (R + X groups)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g135-rxr": {
+  "src": "tools/src-images/gecam/gc-g135-rxr.jpg",
+  "alt": "G135 with belt, top-brush and belt units (RXR)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-x-brushes": {
+  "src": "tools/src-images/gecam/gc-x-brushes.jpg",
+  "alt": "Top brushes of the X group, turning and oscillating across the part",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-touch": {
+  "src": "tools/src-images/gecam/gc-touch.jpg",
+  "alt": "Touch screen: speed, thickness and working pressure of every group",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-grit-set": {
+  "src": "tools/src-images/gecam/gc-grit-set.jpg",
+  "alt": "Electronic grit set: the belt thickness stored for each grit",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g135-ext-brush": {
+  "src": "tools/src-images/gecam/gc-g135-ext-brush.jpg",
+  "alt": "G135 with the external cylindrical brush below the outfeed (b group, configurable)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g135-long-table": {
+  "src": "tools/src-images/gecam/gc-g135-long-table.jpg",
+  "alt": "Wide-belt deburring machine with extended infeed table (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-belt-cleaning": {
+  "src": "tools/src-images/gecam/gc-belt-cleaning.jpg",
+  "alt": "Conveyor belt cleaning brush (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-g135-dust": {
+  "src": "tools/src-images/gecam/gc-g135-dust.jpg",
+  "alt": "G135 connected to a Gecam GDC cartridge dust collector (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-rx": {
+  "src": "tools/src-images/gecam/gc-sample-rx.png",
+  "alt": "Sample: deburred and edge-rounded with belt and top brushes (RX)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-sample-rxx": {
+  "src": "tools/src-images/gecam/gc-sample-rxx.png",
+  "alt": "Sample: deburred and rounded with RXX",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-sample-rb": {
+  "src": "tools/src-images/gecam/gc-sample-rb.png",
+  "alt": "Sample: deburred and finished with belt and cylindrical brush (RB)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-sample-oxide": {
+  "src": "tools/src-images/gecam/gc-sample-oxide.png",
+  "alt": "Sample: oxide removed from laser-cut edges with the X group",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gm65": {
+  "src": "tools/src-images/gecam/gc-gm65.png",
+  "alt": "Gecam GM65 single-belt deburring and satin finishing machine, 25-9/16″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gm110": {
+  "src": "tools/src-images/gecam/gc-gm110.png",
+  "alt": "Gecam GM110 single-belt deburring and satin finishing machine, 43-5/16″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gm-belt": {
+  "src": "tools/src-images/gecam/gc-gm-belt.jpg",
+  "alt": "Abrasive belt unit of a GM machine",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-brass": {
+  "src": "tools/src-images/gecam/gc-sample-brass.jpg",
+  "alt": "Satin-finished brass part",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-plate": {
+  "src": "tools/src-images/gecam/gc-sample-plate.jpg",
+  "alt": "Deburred and satin-finished steel plate",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-copper": {
+  "src": "tools/src-images/gecam/gc-sample-copper.jpg",
+  "alt": "Copper bar after deburring",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-hairline": {
+  "src": "tools/src-images/gecam/gc-sample-hairline.png",
+  "alt": "Sample: hairline (satin) finish",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-sample-satin": {
+  "src": "tools/src-images/gecam/gc-sample-satin.png",
+  "alt": "Sample: satin finish with the abrasive belt (R)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g30-wet": {
+  "src": "tools/src-images/gecam/gc-g30-wet.jpg",
+  "alt": "Gecam G30 WET wet deburring machine, 11-13/16″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g65-wet": {
+  "src": "tools/src-images/gecam/gc-g65-wet.png",
+  "alt": "Gecam G65/135 WET wet deburring machine, 51-3/16″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g30-wet-side": {
+  "src": "tools/src-images/gecam/gc-g30-wet-side.jpg",
+  "alt": "G30 WET with two belt units (RR), side view",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-wet-rr": {
+  "src": "tools/src-images/gecam/gc-wet-rr.jpg",
+  "alt": "Two abrasive belt units (RR) of a wet machine",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-wet-rt": {
+  "src": "tools/src-images/gecam/gc-wet-rt.jpg",
+  "alt": "Belt unit and top brushes (RT) in a G30 WET",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-rbb": {
+  "src": "tools/src-images/gecam/gc-sample-rbb.png",
+  "alt": "Sample: satin finish with belt and two cylindrical brushes (RBB)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g135rb8": {
+  "src": "tools/src-images/gecam/gc-g135rb8.jpg",
+  "alt": "Gecam G135RB8 edge rounding machine with eight-brush carousel, 53-1/8″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-rb8-carousel": {
+  "src": "tools/src-images/gecam/gc-rb8-carousel.jpg",
+  "alt": "Carousel of eight cylindrical abrasive brushes turning in both directions",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-rb8-belt": {
+  "src": "tools/src-images/gecam/gc-rb8-belt.jpg",
+  "alt": "Abrasive belt unit (R group) of the G135RB8",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-rb8-touch": {
+  "src": "tools/src-images/gecam/gc-rb8-touch.jpg",
+  "alt": "Touch-screen control of the G135RB8",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-rb8-before-after": {
+  "src": "tools/src-images/gecam/gc-rb8-before-after.jpg",
+  "alt": "Laser-cut parts before and after edge rounding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-rb8-plate": {
+  "src": "tools/src-images/gecam/gc-rb8-plate.jpg",
+  "alt": "Plate with edges rounded, inside the holes too",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-r2": {
+  "src": "tools/src-images/gecam/gc-sample-r2.png",
+  "alt": "Sample: 5/64″ (2 mm) edge radius from the eight-brush carousel",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-sample-rb8": {
+  "src": "tools/src-images/gecam/gc-sample-rb8.png",
+  "alt": "Sample: deburred and rounded with RB8",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gt06": {
+  "src": "tools/src-images/gecam/gc-gt06.jpg",
+  "alt": "Gecam GT06 double-sided edge rounding machine, 23-5/8″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gt13": {
+  "src": "tools/src-images/gecam/gc-gt13.jpg",
+  "alt": "Gecam GT13 double-sided edge rounding machine, 51-3/16″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gt13-rcs": {
+  "src": "tools/src-images/gecam/gc-gt13-rcs.jpg",
+  "alt": "GT13 in RCS configuration",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gt06-inside": {
+  "src": "tools/src-images/gecam/gc-gt06-inside.jpg",
+  "alt": "Cross belts with strip brushes working above and below the part",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-gt-strips": {
+  "src": "tools/src-images/gecam/gc-gt-strips.jpg",
+  "alt": "Strip brushes on a cross belt",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-gt-gauge": {
+  "src": "tools/src-images/gecam/gc-gt-gauge.jpg",
+  "alt": "Strip brushes, easily replaced as they wear",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-gt-touch": {
+  "src": "tools/src-images/gecam/gc-gt-touch.jpg",
+  "alt": "Touch screen with stored work programs",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-holes": {
+  "src": "tools/src-images/gecam/gc-sample-holes.png",
+  "alt": "Sample: deburred and rounded inside the holes",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-g65dcc": {
+  "src": "tools/src-images/gecam/gc-g65dcc.png",
+  "alt": "Gecam G65DCC deslagging and edge rounding machine, 23-5/8″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-dcc-inside": {
+  "src": "tools/src-images/gecam/gc-dcc-inside.jpg",
+  "alt": "D belt on its large rubber roller and the C strip-brush belts",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-dcc-touch": {
+  "src": "tools/src-images/gecam/gc-dcc-touch.jpg",
+  "alt": "G65DCC touch screen",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-dcc-before": {
+  "src": "tools/src-images/gecam/gc-dcc-before.jpg",
+  "alt": "Plasma-cut part with slag, before deslagging",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-dcc-after": {
+  "src": "tools/src-images/gecam/gc-dcc-after.jpg",
+  "alt": "Plasma-cut part after deslagging and edge rounding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-dcc-edge": {
+  "src": "tools/src-images/gecam/gc-dcc-edge.jpg",
+  "alt": "Plate edge with slag (left) and after the G65DCC (right)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-dcc-thick": {
+  "src": "tools/src-images/gecam/gc-dcc-thick.jpg",
+  "alt": "Thick plasma-cut part — the work the G65DCC deslags",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cub": {
+  "src": "tools/src-images/gecam/gc-cub.jpg",
+  "alt": "Gecam CUB brush deburring machine with two brush heads",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-cub-cat": {
+  "src": "tools/src-images/gecam/gc-cub-cat.png",
+  "alt": "CUB brush deburring machine with two brush units",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-cub-30": {
+  "src": "tools/src-images/gecam/gc-cub-30.jpg",
+  "alt": "Gecam CUB 30 brush deburring machine with conveyor",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-cub-compact": {
+  "src": "tools/src-images/gecam/gc-cub-compact.png",
+  "alt": "Compact CUB brush deburring machine",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-cub-brushes": {
+  "src": "tools/src-images/gecam/gc-cub-brushes.jpg",
+  "alt": "Two cylindrical brush heads with independent pressure adjustment",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cub-heads": {
+  "src": "tools/src-images/gecam/gc-cub-heads.jpg",
+  "alt": "CUB brush heads, positioned by handwheel",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-sample-scotch": {
+  "src": "tools/src-images/gecam/gc-sample-scotch.png",
+  "alt": "Sample: Scotch-Brite finish with a cylindrical brush (B group)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-easy-t": {
+  "src": "tools/src-images/gecam/gc-easy-t.jpg",
+  "alt": "Gecam EASY T brushing workstation with vacuum table",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-easy-t-tools": {
+  "src": "tools/src-images/gecam/gc-easy-t-tools.jpg",
+  "alt": "Two tools on the 180° tilting arm",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-easy-t-work": {
+  "src": "tools/src-images/gecam/gc-easy-t-work.jpg",
+  "alt": "Brushing a part held down by the vacuum table",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-easy-t-operator": {
+  "src": "tools/src-images/gecam/gc-easy-t-operator.jpg",
+  "alt": "Operator guiding the brush head along a part",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-easy-t-brush": {
+  "src": "tools/src-images/gecam/gc-easy-t-brush.jpg",
+  "alt": "Top brush rounding the edges of a part",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-gcb": {
+  "src": "tools/src-images/gecam/gc-gcb.jpg",
+  "alt": "Gecam GCB 25 RR double crossed-belt deburring bench",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gcb-cat": {
+  "src": "tools/src-images/gecam/gc-gcb-cat.png",
+  "alt": "GCB bench with crossed belts and table",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-gcb-work": {
+  "src": "tools/src-images/gecam/gc-gcb-work.jpg",
+  "alt": "Operator deburring a part on the GCB",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-gcb-brush": {
+  "src": "tools/src-images/gecam/gc-gcb-brush.jpg",
+  "alt": "Single independent brush (T group) for edge rounding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-gcb-vacuum": {
+  "src": "tools/src-images/gecam/gc-gcb-vacuum.jpg",
+  "alt": "Suction-cup manipulator for shaped parts (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-135": {
+  "src": "tools/src-images/gecam/gc-135.jpg",
+  "alt": "Gecam 135 automatic corner grinder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-135-2h": {
+  "src": "tools/src-images/gecam/gc-135-2h.jpg",
+  "alt": "135 two-head version",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-135-head": {
+  "src": "tools/src-images/gecam/gc-135-head.jpg",
+  "alt": "135 grinding head on its carriage",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-135-pad": {
+  "src": "tools/src-images/gecam/gc-135-pad.jpg",
+  "alt": "Pad and contact roller pressing the belt on the weld",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-135-guides": {
+  "src": "tools/src-images/gecam/gc-135-guides.jpg",
+  "alt": "Two grinding heads over the part support with plastic slides",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-135-touch": {
+  "src": "tools/src-images/gecam/gc-135-touch.jpg",
+  "alt": "Touch-screen control (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-135-sample": {
+  "src": "tools/src-images/gecam/gc-135-sample.jpg",
+  "alt": "Box edge after weld grinding on the 135",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136": {
+  "src": "tools/src-images/gecam/gc-136.jpg",
+  "alt": "Gecam 136 corner grinder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-131": {
+  "src": "tools/src-images/gecam/gc-131.jpg",
+  "alt": "Gecam 131 corner grinder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-136-box": {
+  "src": "tools/src-images/gecam/gc-136-box.jpg",
+  "alt": "136 grinding the welded corner of a box",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-136-head": {
+  "src": "tools/src-images/gecam/gc-136-head.jpg",
+  "alt": "136 belt head with oscillating fork",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-table": {
+  "src": "tools/src-images/gecam/gc-131-table.jpg",
+  "alt": "131 work table with squaring guides",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-head": {
+  "src": "tools/src-images/gecam/gc-131-head.jpg",
+  "alt": "131 belt fork at a box corner",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-box-corner": {
+  "src": "tools/src-images/gecam/gc-box-corner.jpg",
+  "alt": "Box corner after weld grinding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-upper-corner": {
+  "src": "tools/src-images/gecam/gc-upper-corner.jpg",
+  "alt": "Gecam automatic upper-corner grinder with two heads",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-six-head": {
+  "src": "tools/src-images/gecam/gc-six-head.jpg",
+  "alt": "Gecam six-head PLC corner grinder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-tube-corner": {
+  "src": "tools/src-images/gecam/gc-tube-corner.jpg",
+  "alt": "Gecam four-head corner grinder for 90° tube frames",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-upper-corner-panel": {
+  "src": "tools/src-images/gecam/gc-upper-corner-panel.jpg",
+  "alt": "Touch-screen control of the upper-corner grinder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-six-head-heads": {
+  "src": "tools/src-images/gecam/gc-six-head-heads.jpg",
+  "alt": "Lower heads of the six-head grinder at a box corner",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-six-head-pads": {
+  "src": "tools/src-images/gecam/gc-six-head-pads.jpg",
+  "alt": "Rubber pads pressing the belts on two corners at once",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-tube-corner-table": {
+  "src": "tools/src-images/gecam/gc-tube-corner-table.jpg",
+  "alt": "Frame support of the tube corner grinder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-tube-corner-heads": {
+  "src": "tools/src-images/gecam/gc-tube-corner-heads.jpg",
+  "alt": "Side heads of the tube corner grinder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-corner-before": {
+  "src": "tools/src-images/gecam/gc-corner-before.jpg",
+  "alt": "Welded box corner before grinding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-corner-after": {
+  "src": "tools/src-images/gecam/gc-corner-after.jpg",
+  "alt": "The same corner after grinding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws": {
+  "src": "tools/src-images/gecam/gc-cws.jpg",
+  "alt": "Gecam CWS 300 corner welding machine",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-cws-welding": {
+  "src": "tools/src-images/gecam/gc-cws-welding.jpg",
+  "alt": "TIG torch welding a corner along the copper guide",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-copper": {
+  "src": "tools/src-images/gecam/gc-cws-copper.jpg",
+  "alt": "Copper blocks that hold the corner and draw off the heat",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-stop": {
+  "src": "tools/src-images/gecam/gc-cws-stop.jpg",
+  "alt": "External copper guide the corner rests against",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-touch": {
+  "src": "tools/src-images/gecam/gc-cws-touch.jpg",
+  "alt": "CNC touch screen of the CWS",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-bent": {
+  "src": "tools/src-images/gecam/gc-cws-bent.jpg",
+  "alt": "Bent corner before welding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-welded": {
+  "src": "tools/src-images/gecam/gc-cws-welded.jpg",
+  "alt": "Welded corner",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-boxes": {
+  "src": "tools/src-images/gecam/gc-cws-boxes.jpg",
+  "alt": "Corner-welded boxes",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-141": {
+  "src": "tools/src-images/gecam/ef-141.jpg",
+  "alt": "Eurofintec 141 orbital pipe sander, Ø3/8″ – 3-1/8″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-144": {
+  "src": "tools/src-images/gecam/ef-144.jpg",
+  "alt": "Eurofintec 144 orbital pipe sander, Ø9/16″ – 5-7/8″, with feeder (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-141-bend": {
+  "src": "tools/src-images/gecam/ef-141-bend.jpg",
+  "alt": "141 sanding a bent tube",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-141-small": {
+  "src": "tools/src-images/gecam/ef-141-small.jpg",
+  "alt": "141 sanding small-diameter tube",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-144-feeder": {
+  "src": "tools/src-images/gecam/ef-144-feeder.jpg",
+  "alt": "Automatic feeder kit on the 144 (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-144-panel": {
+  "src": "tools/src-images/gecam/ef-144-panel.jpg",
+  "alt": "144 control box",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-128sl": {
+  "src": "tools/src-images/gecam/ef-128sl.jpg",
+  "alt": "Eurofintec 128 SL centreless pipe sander",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-128dl": {
+  "src": "tools/src-images/gecam/ef-128dl.jpg",
+  "alt": "Eurofintec 128 DL two-head centreless sander",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-128-work": {
+  "src": "tools/src-images/gecam/ef-128-work.jpg",
+  "alt": "128 SL sanding a tube",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-128-wheel": {
+  "src": "tools/src-images/gecam/ef-128-wheel.jpg",
+  "alt": "Contact wheel and belt of the 128",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-128dl-heads": {
+  "src": "tools/src-images/gecam/ef-128dl-heads.jpg",
+  "alt": "The two heads of the 128 DL",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-128dl-guide": {
+  "src": "tools/src-images/gecam/ef-128dl-guide.jpg",
+  "alt": "Prismatic work support of the 128 DL",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-128-wet": {
+  "src": "tools/src-images/gecam/ef-128-wet.jpg",
+  "alt": "Wet version: coolant on the belt (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-228": {
+  "src": "tools/src-images/gecam/ef-228.jpg",
+  "alt": "Eurofintec 228 pipe sander, Ø3/8″ – 15-3/4″",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-228-rollers": {
+  "src": "tools/src-images/gecam/ef-228-rollers.jpg",
+  "alt": "228 with pipe roller stands (optional)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-228-work": {
+  "src": "tools/src-images/gecam/ef-228-work.jpg",
+  "alt": "Contrast roller and belt on a pipe",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-228-large": {
+  "src": "tools/src-images/gecam/ef-228-large.jpg",
+  "alt": "Sanding large-diameter pipe",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-728": {
+  "src": "tools/src-images/gecam/ef-728.jpg",
+  "alt": "Eurofintec 728 tube brushing machine",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-143": {
+  "src": "tools/src-images/gecam/ef-143.jpg",
+  "alt": "Eurofintec 143 tube-end deburring machine",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-143-front": {
+  "src": "tools/src-images/gecam/ef-143-front.jpg",
+  "alt": "143 with its front guard, seen from the operator side",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "ef-728-brush": {
+  "src": "tools/src-images/gecam/ef-728-brush.jpg",
+  "alt": "728 brush and contrast roller",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-728-adjust": {
+  "src": "tools/src-images/gecam/ef-728-adjust.jpg",
+  "alt": "Handwheel adjustment of the brush as it wears",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-728-pneumatic": {
+  "src": "tools/src-images/gecam/ef-728-pneumatic.jpg",
+  "alt": "Pneumatic compensation of the contrast roller",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-728-contrast": {
+  "src": "tools/src-images/gecam/ef-728-contrast.jpg",
+  "alt": "Grooved rubber contrast roller with tilt adjustment",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-143-brush": {
+  "src": "tools/src-images/gecam/ef-143-brush.jpg",
+  "alt": "Wire brush of the 143",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "ef-143-45": {
+  "src": "tools/src-images/gecam/ef-143-45.jpg",
+  "alt": "Support for tube ends cut at 45°",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gecam-logo": {
+  "src": "tools/src-images/gecam-logo.png",
+  "alt": "Gecam",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false
+ },
+ "eurofintec-logo": {
+  "src": "tools/src-images/eurofintec-logo.png",
+  "alt": "Eurofintec",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false
+ },
+ "video-DS_yO-WbtSQ": {
+  "src": "/home/claude/gms-site/yt/DS_yO-WbtSQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-P6clb5uvwzo": {
+  "src": "/home/claude/gms-site/yt/P6clb5uvwzo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-uQ-9CMccQIs": {
+  "src": "/home/claude/gms-site/yt/uQ-9CMccQIs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-dLvvcPs1wwQ": {
+  "src": "/home/claude/gms-site/yt/dLvvcPs1wwQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-brMbAFpqbOw": {
+  "src": "/home/claude/gms-site/yt/brMbAFpqbOw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-vYP5gY1w1Ik": {
+  "src": "/home/claude/gms-site/yt/vYP5gY1w1Ik.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-7ly2JRZL-Xc": {
+  "src": "/home/claude/gms-site/yt/7ly2JRZL-Xc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-v9s8r2TJT00": {
+  "src": "/home/claude/gms-site/yt/v9s8r2TJT00.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-nyTW0augaGo": {
+  "src": "/home/claude/gms-site/yt/nyTW0augaGo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-q6RLOup6bN4": {
+  "src": "/home/claude/gms-site/yt/q6RLOup6bN4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Kxy4IBRUBS4": {
+  "src": "/home/claude/gms-site/yt/Kxy4IBRUBS4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-MIgzM81gJQA": {
+  "src": "/home/claude/gms-site/yt/MIgzM81gJQA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-TzeAYCddrUs": {
+  "src": "/home/claude/gms-site/yt/TzeAYCddrUs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-8wLm7uOQRnA": {
+  "src": "/home/claude/gms-site/yt/8wLm7uOQRnA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-VPEpu74z84I": {
+  "src": "/home/claude/gms-site/yt/VPEpu74z84I.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-7RM52FGLZag": {
+  "src": "/home/claude/gms-site/yt/7RM52FGLZag.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-rrpQjvD7sEE": {
+  "src": "/home/claude/gms-site/yt/rrpQjvD7sEE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-cnQful7fLsI": {
+  "src": "/home/claude/gms-site/yt/cnQful7fLsI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-XSrlMJ_lmME": {
+  "src": "/home/claude/gms-site/yt/XSrlMJ_lmME.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-pRvYJVhLOkE": {
+  "src": "/home/claude/gms-site/yt/pRvYJVhLOkE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-y0gMB7J6F_E": {
+  "src": "/home/claude/gms-site/yt/y0gMB7J6F_E.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-7sG_9LqdVNM": {
+  "src": "/home/claude/gms-site/yt/7sG_9LqdVNM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-eEYp5xXPNZo": {
+  "src": "/home/claude/gms-site/yt/eEYp5xXPNZo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-YH0_0xBvYb4": {
+  "src": "/home/claude/gms-site/yt/YH0_0xBvYb4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Ct6iF4KiDts": {
+  "src": "/home/claude/gms-site/yt/Ct6iF4KiDts.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-qsHhvHH5IOw": {
+  "src": "/home/claude/gms-site/yt/qsHhvHH5IOw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-reRZfVQBCF8": {
+  "src": "/home/claude/gms-site/yt/reRZfVQBCF8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-UwRy5zVRRk4": {
+  "src": "/home/claude/gms-site/yt/UwRy5zVRRk4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-KJX0iCI8bYY": {
+  "src": "/home/claude/gms-site/yt/KJX0iCI8bYY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-I-LmPF3pKe4": {
+  "src": "/home/claude/gms-site/yt/I-LmPF3pKe4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-QWP5ysXOv7w": {
+  "src": "/home/claude/gms-site/yt/QWP5ysXOv7w.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ESDnM4-hkYM": {
+  "src": "/home/claude/gms-site/yt/ESDnM4-hkYM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video--uEVrOpBn2s": {
+  "src": "/home/claude/gms-site/yt/-uEVrOpBn2s.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-9Lprvh8Y438": {
+  "src": "/home/claude/gms-site/yt/9Lprvh8Y438.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-1chAwVBSWWs": {
+  "src": "/home/claude/gms-site/yt/1chAwVBSWWs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-9gJt-anlXiE": {
+  "src": "/home/claude/gms-site/yt/9gJt-anlXiE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-pMdmrBLEAFc": {
+  "src": "/home/claude/gms-site/yt/pMdmrBLEAFc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-n12yiYojRjI": {
+  "src": "/home/claude/gms-site/yt/n12yiYojRjI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-jwnr8gK3ETg": {
+  "src": "/home/claude/gms-site/yt/jwnr8gK3ETg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-MgZDeNLR5KY": {
+  "src": "/home/claude/gms-site/yt/MgZDeNLR5KY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-a9VgU3D0vok": {
+  "src": "/home/claude/gms-site/yt/a9VgU3D0vok.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-owfvMKRntJ8": {
+  "src": "/home/claude/gms-site/yt/owfvMKRntJ8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-7GM9LWGFoEs": {
+  "src": "/home/claude/gms-site/yt/7GM9LWGFoEs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-snxpgxlhbu8": {
+  "src": "/home/claude/gms-site/yt/snxpgxlhbu8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-OeZjSsXzXas": {
+  "src": "/home/claude/gms-site/yt/OeZjSsXzXas.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-iicuKk_mo58": {
+  "src": "/home/claude/gms-site/yt/iicuKk_mo58.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-VpVDpUHtAOM": {
+  "src": "/home/claude/gms-site/yt/VpVDpUHtAOM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-GIHs5vp-zQE": {
+  "src": "/home/claude/gms-site/yt/GIHs5vp-zQE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-oIDa5QsHTG0": {
+  "src": "/home/claude/gms-site/yt/oIDa5QsHTG0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-8Z8EFZOkpXI": {
+  "src": "/home/claude/gms-site/yt/8Z8EFZOkpXI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-tOxkUm2lGZo": {
+  "src": "/home/claude/gms-site/yt/tOxkUm2lGZo.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-J6m2o9B1Ka4": {
+  "src": "/home/claude/gms-site/yt/J6m2o9B1Ka4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ZzlXT-qjUOc": {
+  "src": "/home/claude/gms-site/yt/ZzlXT-qjUOc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-TTCL4SnvtKI": {
+  "src": "/home/claude/gms-site/yt/TTCL4SnvtKI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-lXGO65Ghwo0": {
+  "src": "/home/claude/gms-site/yt/lXGO65Ghwo0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-bDsDqFoJ5l4": {
+  "src": "/home/claude/gms-site/yt/bDsDqFoJ5l4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-J5LT42sqaRw": {
+  "src": "/home/claude/gms-site/yt/J5LT42sqaRw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-QLv9H4YqNoc": {
+  "src": "/home/claude/gms-site/yt/QLv9H4YqNoc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-CK-pAsAkwrg": {
+  "src": "/home/claude/gms-site/yt/CK-pAsAkwrg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-31eDB7VrF6I": {
+  "src": "/home/claude/gms-site/yt/31eDB7VrF6I.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-x_qoKWRnEwA": {
+  "src": "/home/claude/gms-site/yt/x_qoKWRnEwA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-R48m8-Np9XU": {
+  "src": "/home/claude/gms-site/yt/R48m8-Np9XU.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-QTZDWAw4wu0": {
+  "src": "/home/claude/gms-site/yt/QTZDWAw4wu0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-bBTOXVG-XkA": {
+  "src": "/home/claude/gms-site/yt/bBTOXVG-XkA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Ds_wymTW1Bs": {
+  "src": "/home/claude/gms-site/yt/Ds_wymTW1Bs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-T8fy51DykIk": {
+  "src": "/home/claude/gms-site/yt/T8fy51DykIk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-_jHJUG1jRWE": {
+  "src": "/home/claude/gms-site/yt/_jHJUG1jRWE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-f3f7-lNiEH0": {
+  "src": "/home/claude/gms-site/yt/f3f7-lNiEH0.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-I27PlnO8OI8": {
+  "src": "/home/claude/gms-site/yt/I27PlnO8OI8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-RF_dHAi0IEE": {
+  "src": "/home/claude/gms-site/yt/RF_dHAi0IEE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-pCPlP3ZAuyw": {
+  "src": "/home/claude/gms-site/yt/pCPlP3ZAuyw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-3-jRbQS-rs4": {
+  "src": "/home/claude/gms-site/yt/3-jRbQS-rs4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-nnEMwdcC5kQ": {
+  "src": "/home/claude/gms-site/yt/nnEMwdcC5kQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

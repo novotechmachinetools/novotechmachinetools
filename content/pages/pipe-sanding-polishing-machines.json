@@ -1,21 +1,21 @@
 {
  "slug": "pipe-sanding-polishing-machines",
  "template": "category.html",
- "family_set": "sahinler",
- "title": "Pipe Sanders & Pipe Polishing Machines | NovoTech",
- "artifact_title": "Pipe sanders and pipe polishing machines",
- "meta_description": "Pipe sander and polishing machine with automatic feeder: two abrasive belts finish, satin-brush or derust straight and bent pipe and tube, Ø3/8″ to Ø4-1/2″.",
- "h1": "Pipe sanders and pipe polishing machines",
- "intro": "A pipe sander (pipe polisher, tube polishing machine) runs abrasive belts around a round pipe or square tube to grind off rust and weld discolouration, give stainless a satin or brushed finish and prepare tube for painting or plating. The BT 114-S is the automatic version: a separate feed motor pushes the tube through two 37 × 2″ belts at an inverter-set speed, so the operator loads the pipe and takes the finished length off the other side without turning or holding it — straight tube and bends up to 45°, Ø3/8″ to Ø4-1/2″. The belt speed is variable too, belts change through an opening cover and a holder is provided for manual feeding. Supplied with two belts, a CSA-approved panel and support from Mississauga, ON.",
+ "family_set": "gecam",
+ "title": "Pipe Sanders & Polishing Machines to Ø15-3/4″ | NovoTech",
+ "artifact_title": "Pipe sanders and pipe polishing machines — automatic, orbital and centreless tube sanders, Ø3/16″ to Ø15-3/4″",
+ "meta_description": "Tube sanders and pipe polishers for straight and bent tube: BT 114-S with automatic feeder, orbital, centreless and large-pipe sanders, tube-end deburring.",
+ "h1": "Pipe sanders and pipe polishing machines — automatic, orbital and centreless tube sanders, Ø3/16″ to Ø15-3/4″",
+ "intro": "A pipe sander (pipe polisher, tube polishing machine) runs abrasive belts or brushes over round or square tube to grind off rust, scale and weld discolouration, give stainless steel a satin or brushed finish and prepare tube for painting or plating. NovoTech has four kinds: the BT 114-S, NovoTech's premium-line sander with two belts and an automatic feeder for straight and bent tube Ø3/8″ to Ø4-1/2″; the Eurofintec 141 and 144 orbital sanders, whose belts orbit the tube so straight and bent round and oval tube is finished all round without turning, Ø3/8″ to Ø5-7/8″; the Eurofintec 128 S, 128 SL and 128 DL centreless sanders for bar and tube Ø3/16″ to Ø5-7/8″ and the 228 for pipe up to Ø15-3/4″; and the 728 tube brushing machine and 143 tube-end deburring machine. Eurofintec machines are built in Parma, Italy, by Gecam. Supplied with a CSA-approved panel and supported from Mississauga, ON.",
  "hero_points": [
-  "Round pipe and square tube Ø3/8″ to Ø4-1/2″ (10 – 114 mm), straight or bent to 45°",
-  "Automatic pipe feeder with its own motor; feeding and belt speed variable by inverter",
-  "Two 37 × 2″ abrasive belts included; 6.4 HP total"
+  "BT 114-S: automatic feeder, two 37 × 2″ belts, straight and bent tube Ø3/8″ – 4-1/2″",
+  "141 · 144 orbital sanders for bent tube Ø3/8″ – 5-7/8″ · 128 centreless Ø3/16″ – 5-7/8″ · 228 to Ø15-3/4″",
+  "728 tube brushing · 143 tube-end deburring, inside and outside, ends cut at 90° and 45°"
  ],
  "hero_image": "sh-bt114s",
  "hero_image_secondary": [
-  "sh-bt114s-rail",
-  "sh-bt114s-tube"
+  "ef-144",
+  "ef-128sl"
  ],
  "breadcrumb": [
   {
@@ -27,37 +27,73 @@
    "href": "products.html"
   },
   {
-   "label": "Pipe sanders and pipe polishing machines"
+   "label": "Deburring & finishing",
+   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
+  },
+  {
+   "label": "Pipe sanders and pipe polishing machines — automatic, orbital and centreless tube sanders, Ø3/16″ to Ø15-3/4″"
   }
  ],
- "hero_brand_line": "NovoTech premium line — machines built in Turkey to NovoTech's specification with European hydraulic and electrical components, sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON.",
+ "hero_brand_line": "Eurofintec pipe sanders are built in Parma, Italy, by Gecam; the BT 114-S is NovoTech's premium line, built in Turkey to NovoTech's specification with European components. All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "sahinler-polish-group",
    "title": "Automatic pipe polishing and sanding machine",
-   "lead": "The BT 114-S belt sander with automatic pipe feeder.",
+   "lead": "The BT 114-S belt sander with automatic pipe feeder — NovoTech premium line, made in Turkey.",
    "brand": "sahinler",
    "families": [
     "sahinler-bt-114-s"
    ]
+  },
+  {
+   "id": "ef-orbital-group",
+   "title": "Orbital pipe sanders",
+   "lead": "Two belts orbit the tube in the head: straight and bent tube finished all round without turning.",
+   "brand": "eurofintec",
+   "families": [
+    "eurofintec-141-144"
+   ]
+  },
+  {
+   "id": "ef-centreless-group",
+   "title": "Centreless and large-pipe sanders",
+   "lead": "Round bar and tube turned against the belt as it passes — Ø3/16″ to Ø15-3/4″.",
+   "brand": "eurofintec",
+   "families": [
+    "eurofintec-128",
+    "eurofintec-228"
+   ]
+  },
+  {
+   "id": "ef-brush-group",
+   "title": "Tube brushing and tube-end deburring",
+   "lead": "A heavy brushing machine for tube and a deburring machine for cut tube ends.",
+   "brand": "eurofintec",
+   "families": [
+    "eurofintec-728-143"
+   ]
   }
  ],
  "faq": [
+  {
+   "q": "Which pipe sander do I need?",
+   "a": "For handrail, furniture and fabrication work in mixed sizes, straight and bent: the BT 114-S with its automatic feeder (Ø3/8″ – 4-1/2″) or the 141 / 144 orbital sanders (Ø3/8″ – 5-7/8″, round and oval). For long runs of straight bar and tube to an even satin or polished finish: a 128 centreless sander, two heads on the 128 DL for two grits in one pass. For pipe over Ø5-7/8″: the 228, to Ø15-3/4″. Tube ends go on the 143."
+  },
   {
    "q": "What finish does a belt pipe sander give?",
    "a": "The finish follows the belt: a coarse grit removes rust, scale and weld colour; 180 – 240 grit gives the brushed, satin finish of architectural stainless handrail; finer belts and non-woven belts prepare for mirror polishing. Two belts run at once on the BT 114-S, so a cutting belt and a finishing belt can be fitted together."
   },
   {
    "q": "Does it polish bent tube?",
-   "a": "Yes — the belt head and feeder follow bends up to 45°, so handrail elbows and furniture frames are finished after bending instead of before. Tight 90° elbows are finished on the straight sections and blended by hand."
+   "a": "The BT 114-S and the 141 and 144 orbital sanders do: the BT 114-S head and feeder follow bends up to 45°, and on the orbital sanders the belts orbit the tube as it is pushed through the head, so elbows and frames are finished after bending. Centreless machines finish straight bar and tube only."
   },
   {
    "q": "Round and square tube on the same machine?",
-   "a": "Yes. Round pipe from Ø3/8″ to Ø4-1/2″ is clamped by the manual adjustment and fed through; square tube is passed through flat side by side, two faces at a time. The feeder means the operator never turns the material by hand."
+   "a": "The BT 114-S takes round pipe from Ø3/8″ to Ø4-1/2″ and square tube, passed through flat side by side, two faces at a time. The orbital and centreless sanders are for round tube (the orbital sanders oval too); the 143 deburrs the ends of round and square tube."
   },
   {
-   "q": "What about centreless and planetary polishers?",
-   "a": "For long runs of straight stainless tube to a mirror finish a centreless polisher with several heads is the production machine; for a fabrication shop that finishes handrail, furniture and short lengths in mixed sizes the belt sander with feeder is faster to set up and a fraction of the price. Ask us about both."
+   "q": "How are cut tube ends deburred?",
+   "a": "On the 143: the tube end is pushed into a prism against a wire brush that turns while its own axis rotates, deburring the inside and the outside of the end in one cycle — ends cut at 90° or 45°, round Ø13/16″ to Ø4-3/4″ and square to 4-3/4″."
   },
   {
    "q": "What voltage do these machines run on?",
@@ -65,20 +101,32 @@
   }
  ],
  "faq_title": "Questions we get asked about pipe polishing",
- "catalogue_pdf": {
-  "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
-  "label": "Download the notchers, circle cutters, polishers & benders brochure",
-  "size": "PDF · 2 MB · imperial units"
- },
+ "catalogue_pdf": null,
  "origin_feature": {
-  "title": "NovoTech premium line — made in Turkey",
-  "text": "Built in Turkey to NovoTech's specification by a CE-certified metal-forming plant with European hydraulic and electrical components; inspected before shipping, with the same CSA panel, warranty and Mississauga, ON support as every machine we sell."
+  "title": "Made in Italy and Turkey",
+  "text": "The Eurofintec orbital, centreless and brushing machines are built by Gecam at Vicofertile, Parma — 100 % made in Italy; the BT 114-S is built in Turkey for NovoTech's premium line, inspected before shipping."
  },
- "section_label": "Pipe polishing & sanding",
+ "section_label": "Deburring & finishing",
  "related_pages": [
   {
+   "href": "sheet-metal-deburring-machines.html",
+   "label": "Sheet metal deburring machines"
+  },
+  {
+   "href": "edge-rounding-deslagging-machines.html",
+   "label": "Edge rounding & deslagging machines"
+  },
+  {
+   "href": "brush-deburring-machines.html",
+   "label": "Brush deburring machines & benches"
+  },
+  {
+   "href": "corner-grinding-machines.html",
+   "label": "Corner grinders"
+  },
+  {
    "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
-   "label": "Metal deburring & finishing"
+   "label": "All deburring & finishing machines"
   },
   {
    "href": "pipe-notcher.html",
@@ -89,17 +137,70 @@
    "label": "Pipe & tube benders"
   },
   {
+   "href": "circular-cold-saws.html",
+   "label": "Circular cold saws"
+  },
+  {
    "href": "angle-rolls.html",
    "label": "Angle rolls & tube rollers"
   }
  ],
- "related_title": "More tube machinery from NovoTech",
- "intro_video": {
-  "id": "nqgpctYOsyk",
-  "title": "Factory introduction video",
-  "thumb": "video-nqgpctYOsyk",
-  "duration": "PT4M29S"
+ "related_title": "More finishing and fabrication machinery from NovoTech",
+ "section": {
+  "label": "Deburring & finishing",
+  "hub": {
+   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
+   "label": "All deburring & finishing machines",
+   "image": "gc-g135",
+   "blurb": "Every deburring, edge rounding, brush, corner grinding and pipe sanding machine NovoTech supplies, in one table."
+  },
+  "pages": [
+   {
+    "href": "sheet-metal-deburring-machines.html",
+    "label": "Sheet metal deburring",
+    "current": false
+   },
+   {
+    "href": "edge-rounding-deslagging-machines.html",
+    "label": "Edge rounding & deslagging",
+    "current": false
+   },
+   {
+    "href": "brush-deburring-machines.html",
+    "label": "Brush deburring & benches",
+    "current": false
+   },
+   {
+    "href": "corner-grinding-machines.html",
+    "label": "Corner grinders",
+    "current": false
+   },
+   {
+    "href": "pipe-sanding-polishing-machines.html",
+    "label": "Pipe sanding & polishing",
+    "current": true
+   }
+  ]
  },
- "intro_video_heading": "Inside the factory — where the machines are built",
- "intro_video_text": "A tour of the plant in Bursa, Turkey, where the premium-line plate rolls, angle rolls, ironworkers and presses are built."
+ "intro_video": {
+  "id": "nnEMwdcC5kQ",
+  "title": "Gecam corporate introduction",
+  "thumb": "video-nnEMwdcC5kQ",
+  "duration": "PT2M27S"
+ },
+ "intro_video_heading": "Inside the factory — Gecam in Parma, Italy",
+ "intro_video_text": "A tour of Gecam at Vicofertile, Parma, where the Eurofintec pipe sanders on this page are built (the BT 114-S is built in Turkey).",
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+   "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+   "size": "PDF · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
+   "label": "Download the notchers, circle cutters, polishers & benders brochure",
+   "size": "PDF · 2 MB · imperial units"
+  }
+ ],
+ "nav_label": "Pipe sanding & polishing"
 }
