@@ -65215,5 +65215,5226 @@
    "file": "img/site/cevisa-logo-thumb.webp",
    "bytes": 4890
   }
+ },
+ "gc-g15": {
+  "alt": "Gecam G15 compact deburring machine, 5-7/8\u2033 working width",
+  "variants": [
+   {
+    "w": 800,
+    "h": 924,
+    "file": "img/gecam/gc-g15-800.webp",
+    "bytes": 72890
+   },
+   {
+    "w": 480,
+    "h": 554,
+    "file": "img/gecam/gc-g15-480.webp",
+    "bytes": 39686
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 139,
+   "h": 160,
+   "file": "img/gecam/gc-g15-thumb.webp",
+   "bytes": 7320
+  }
+ },
+ "gc-g30": {
+  "alt": "Gecam G30 deburring machine, 11-13/16\u2033 working width",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1123,
+    "file": "img/gecam/gc-g30-800.webp",
+    "bytes": 58240
+   },
+   {
+    "w": 480,
+    "h": 674,
+    "file": "img/gecam/gc-g30-480.webp",
+    "bytes": 32098
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 114,
+   "h": 160,
+   "file": "img/gecam/gc-g30-thumb.webp",
+   "bytes": 4692
+  }
+ },
+ "gc-g15-infeed": {
+  "alt": "G15 conveyor belt at the infeed",
+  "variants": [
+   {
+    "w": 800,
+    "h": 451,
+    "file": "img/gecam/gc-g15-infeed-800.webp",
+    "bytes": 26538
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/gecam/gc-g15-infeed-480.webp",
+    "bytes": 14604
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/gecam/gc-g15-infeed-thumb.webp",
+   "bytes": 2880
+  }
+ },
+ "gc-g15-brushes": {
+  "alt": "G15 rotating and oscillating top brushes (T group)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 451,
+    "file": "img/gecam/gc-g15-brushes-800.webp",
+    "bytes": 42416
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/gecam/gc-g15-brushes-480.webp",
+    "bytes": 23110
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/gecam/gc-g15-brushes-thumb.webp",
+   "bytes": 4160
+  }
+ },
+ "gc-g30-belts": {
+  "alt": "Two abrasive belt units (R groups) inside a G30",
+  "variants": [
+   {
+    "w": 480,
+    "h": 447,
+    "file": "img/gecam/gc-g30-belts-480.webp",
+    "bytes": 24644
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/gecam/gc-g30-belts-thumb.webp",
+   "bytes": 4996
+  }
+ },
+ "gc-g30-rb": {
+  "alt": "Abrasive belt and cylindrical brush (R + B groups) in a G30",
+  "variants": [
+   {
+    "w": 480,
+    "h": 721,
+    "file": "img/gecam/gc-g30-rb-480.webp",
+    "bytes": 24566
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 106,
+   "h": 160,
+   "file": "img/gecam/gc-g30-rb-thumb.webp",
+   "bytes": 3012
+  }
+ },
+ "gc-g30-panel": {
+  "alt": "G30 control panel",
+  "variants": [
+   {
+    "w": 480,
+    "h": 494,
+    "file": "img/gecam/gc-g30-panel-480.webp",
+    "bytes": 11216
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 155,
+   "h": 160,
+   "file": "img/gecam/gc-g30-panel-thumb.webp",
+   "bytes": 2578
+  }
+ },
+ "gc-g30-rollers": {
+  "alt": "Rubberized pressure rollers at the G30 infeed",
+  "variants": [
+   {
+    "w": 480,
+    "h": 426,
+    "file": "img/gecam/gc-g30-rollers-480.webp",
+    "bytes": 14800
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 142,
+   "file": "img/gecam/gc-g30-rollers-thumb.webp",
+   "bytes": 3060
+  }
+ },
+ "gc-g30-conveyor": {
+  "alt": "Additional infeed and outfeed rollers (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-g30-conveyor-800.webp",
+    "bytes": 25386
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-g30-conveyor-480.webp",
+    "bytes": 12236
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-g30-conveyor-thumb.webp",
+   "bytes": 2540
+  }
+ },
+ "gc-g30-sample": {
+  "alt": "Laser-cut plate after deburring and edge rounding",
+  "variants": [
+   {
+    "w": 800,
+    "h": 451,
+    "file": "img/gecam/gc-g30-sample-800.webp",
+    "bytes": 38582
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/gecam/gc-g30-sample-480.webp",
+    "bytes": 13590
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/gecam/gc-g30-sample-thumb.webp",
+   "bytes": 1122
+  }
+ },
+ "gc-sample-r": {
+  "alt": "Sample: deburred with the abrasive belt (R group)",
+  "variants": [
+   {
+    "w": 378,
+    "h": 378,
+    "file": "img/gecam/gc-sample-r-378.webp",
+    "bytes": 18926
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 160,
+   "file": "img/gecam/gc-sample-r-thumb.webp",
+   "bytes": 6566
+  }
+ },
+ "gc-g65": {
+  "alt": "Gecam G65 wide-belt deburring machine, 25-9/16\u2033 working width",
+  "variants": [
+   {
+    "w": 800,
+    "h": 938,
+    "file": "img/gecam/gc-g65-800.webp",
+    "bytes": 49678
+   },
+   {
+    "w": 480,
+    "h": 562,
+    "file": "img/gecam/gc-g65-480.webp",
+    "bytes": 27302
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 137,
+   "h": 160,
+   "file": "img/gecam/gc-g65-thumb.webp",
+   "bytes": 5202
+  }
+ },
+ "gc-g135": {
+  "alt": "Gecam G135 wide-belt deburring machine, 53-1/8\u2033 working width",
+  "variants": [
+   {
+    "w": 800,
+    "h": 783,
+    "file": "img/gecam/gc-g135-800.webp",
+    "bytes": 51084
+   },
+   {
+    "w": 480,
+    "h": 470,
+    "file": "img/gecam/gc-g135-480.webp",
+    "bytes": 27206
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 157,
+   "file": "img/gecam/gc-g135-thumb.webp",
+   "bytes": 6380
+  }
+ },
+ "gc-g65-glass": {
+  "alt": "G65 wide-belt deburring machine with glazed side doors",
+  "variants": [
+   {
+    "w": 800,
+    "h": 886,
+    "file": "img/gecam/gc-g65-glass-800.webp",
+    "bytes": 54546
+   },
+   {
+    "w": 480,
+    "h": 532,
+    "file": "img/gecam/gc-g65-glass-480.webp",
+    "bytes": 31462
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 144,
+   "h": 160,
+   "file": "img/gecam/gc-g65-glass-thumb.webp",
+   "bytes": 6414
+  },
+  "cut": "birefnet"
+ },
+ "gc-g65-rxb4": {
+  "alt": "Inside a G65 RXB4: abrasive belt, top brushes and four-brush carousel",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-g65-rxb4-800.webp",
+    "bytes": 48930
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-g65-rxb4-480.webp",
+    "bytes": 24742
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-g65-rxb4-thumb.webp",
+   "bytes": 4558
+  }
+ },
+ "gc-g65-rx": {
+  "alt": "Abrasive belt unit and double row of top brushes (R + X groups)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1203,
+    "file": "img/gecam/gc-g65-rx-800.webp",
+    "bytes": 94530
+   },
+   {
+    "w": 480,
+    "h": 722,
+    "file": "img/gecam/gc-g65-rx-480.webp",
+    "bytes": 39728
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 106,
+   "h": 160,
+   "file": "img/gecam/gc-g65-rx-thumb.webp",
+   "bytes": 3244
+  }
+ },
+ "gc-g135-rxr": {
+  "alt": "G135 with belt, top-brush and belt units (RXR)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 588,
+    "file": "img/gecam/gc-g135-rxr-800.webp",
+    "bytes": 44800
+   },
+   {
+    "w": 480,
+    "h": 353,
+    "file": "img/gecam/gc-g135-rxr-480.webp",
+    "bytes": 22432
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 118,
+   "file": "img/gecam/gc-g135-rxr-thumb.webp",
+   "bytes": 4196
+  }
+ },
+ "gc-x-brushes": {
+  "alt": "Top brushes of the X group, turning and oscillating across the part",
+  "variants": [
+   {
+    "w": 480,
+    "h": 376,
+    "file": "img/gecam/gc-x-brushes-480.webp",
+    "bytes": 18486
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 125,
+   "file": "img/gecam/gc-x-brushes-thumb.webp",
+   "bytes": 4222
+  }
+ },
+ "gc-touch": {
+  "alt": "Touch screen: speed, thickness and working pressure of every group",
+  "variants": [
+   {
+    "w": 800,
+    "h": 568,
+    "file": "img/gecam/gc-touch-800.webp",
+    "bytes": 37952
+   },
+   {
+    "w": 480,
+    "h": 341,
+    "file": "img/gecam/gc-touch-480.webp",
+    "bytes": 16120
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 114,
+   "file": "img/gecam/gc-touch-thumb.webp",
+   "bytes": 2828
+  }
+ },
+ "gc-grit-set": {
+  "alt": "Electronic grit set: the belt thickness stored for each grit",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-grit-set-800.webp",
+    "bytes": 21142
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-grit-set-480.webp",
+    "bytes": 8888
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-grit-set-thumb.webp",
+   "bytes": 1556
+  }
+ },
+ "gc-g135-ext-brush": {
+  "alt": "G135 with the external cylindrical brush below the outfeed (b group, configurable)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 870,
+    "file": "img/gecam/gc-g135-ext-brush-800.webp",
+    "bytes": 37876
+   },
+   {
+    "w": 480,
+    "h": 522,
+    "file": "img/gecam/gc-g135-ext-brush-480.webp",
+    "bytes": 23438
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 147,
+   "h": 160,
+   "file": "img/gecam/gc-g135-ext-brush-thumb.webp",
+   "bytes": 5448
+  },
+  "cut": "birefnet"
+ },
+ "gc-g135-long-table": {
+  "alt": "Wide-belt deburring machine with extended infeed table (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 584,
+    "file": "img/gecam/gc-g135-long-table-800.webp",
+    "bytes": 53610
+   },
+   {
+    "w": 480,
+    "h": 350,
+    "file": "img/gecam/gc-g135-long-table-480.webp",
+    "bytes": 31914
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 117,
+   "file": "img/gecam/gc-g135-long-table-thumb.webp",
+   "bytes": 7158
+  },
+  "cut": "birefnet"
+ },
+ "gc-belt-cleaning": {
+  "alt": "Conveyor belt cleaning brush (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-belt-cleaning-800.webp",
+    "bytes": 30546
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-belt-cleaning-480.webp",
+    "bytes": 14824
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-belt-cleaning-thumb.webp",
+   "bytes": 2912
+  }
+ },
+ "gc-g135-dust": {
+  "alt": "G135 connected to a Gecam GDC cartridge dust collector (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 521,
+    "file": "img/gecam/gc-g135-dust-800.webp",
+    "bytes": 22014
+   },
+   {
+    "w": 480,
+    "h": 313,
+    "file": "img/gecam/gc-g135-dust-480.webp",
+    "bytes": 11842
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 104,
+   "file": "img/gecam/gc-g135-dust-thumb.webp",
+   "bytes": 2448
+  }
+ },
+ "gc-sample-rx": {
+  "alt": "Sample: deburred and edge-rounded with belt and top brushes (RX)",
+  "variants": [
+   {
+    "w": 480,
+    "h": 139,
+    "file": "img/gecam/gc-sample-rx-480.webp",
+    "bytes": 11742
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 46,
+   "file": "img/gecam/gc-sample-rx-thumb.webp",
+   "bytes": 2912
+  }
+ },
+ "gc-sample-rxx": {
+  "alt": "Sample: deburred and rounded with RXX",
+  "variants": [
+   {
+    "w": 376,
+    "h": 326,
+    "file": "img/gecam/gc-sample-rxx-376.webp",
+    "bytes": 11910
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 139,
+   "file": "img/gecam/gc-sample-rxx-thumb.webp",
+   "bytes": 3794
+  }
+ },
+ "gc-sample-rb": {
+  "alt": "Sample: deburred and finished with belt and cylindrical brush (RB)",
+  "variants": [
+   {
+    "w": 480,
+    "h": 306,
+    "file": "img/gecam/gc-sample-rb-480.webp",
+    "bytes": 31078
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 102,
+   "file": "img/gecam/gc-sample-rb-thumb.webp",
+   "bytes": 6638
+  }
+ },
+ "gc-sample-oxide": {
+  "alt": "Sample: oxide removed from laser-cut edges with the X group",
+  "variants": [
+   {
+    "w": 480,
+    "h": 184,
+    "file": "img/gecam/gc-sample-oxide-480.webp",
+    "bytes": 11792
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 61,
+   "file": "img/gecam/gc-sample-oxide-thumb.webp",
+   "bytes": 2962
+  }
+ },
+ "gc-gm65": {
+  "alt": "Gecam GM65 single-belt deburring and satin finishing machine, 25-9/16\u2033",
+  "variants": [
+   {
+    "w": 480,
+    "h": 825,
+    "file": "img/gecam/gc-gm65-480.webp",
+    "bytes": 32978
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 93,
+   "h": 160,
+   "file": "img/gecam/gc-gm65-thumb.webp",
+   "bytes": 4038
+  }
+ },
+ "gc-gm110": {
+  "alt": "Gecam GM110 single-belt deburring and satin finishing machine, 43-5/16\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 953,
+    "file": "img/gecam/gc-gm110-800.webp",
+    "bytes": 49762
+   },
+   {
+    "w": 480,
+    "h": 572,
+    "file": "img/gecam/gc-gm110-480.webp",
+    "bytes": 27698
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 134,
+   "h": 160,
+   "file": "img/gecam/gc-gm110-thumb.webp",
+   "bytes": 5042
+  }
+ },
+ "gc-gm-belt": {
+  "alt": "Abrasive belt unit of a GM machine",
+  "variants": [
+   {
+    "w": 324,
+    "h": 942,
+    "file": "img/gecam/gc-gm-belt-324.webp",
+    "bytes": 23766
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 55,
+   "h": 160,
+   "file": "img/gecam/gc-gm-belt-thumb.webp",
+   "bytes": 2194
+  }
+ },
+ "gc-sample-brass": {
+  "alt": "Satin-finished brass part",
+  "variants": [
+   {
+    "w": 480,
+    "h": 398,
+    "file": "img/gecam/gc-sample-brass-480.webp",
+    "bytes": 10880
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 133,
+   "file": "img/gecam/gc-sample-brass-thumb.webp",
+   "bytes": 1276
+  }
+ },
+ "gc-sample-plate": {
+  "alt": "Deburred and satin-finished steel plate",
+  "variants": [
+   {
+    "w": 800,
+    "h": 502,
+    "file": "img/gecam/gc-sample-plate-800.webp",
+    "bytes": 25286
+   },
+   {
+    "w": 480,
+    "h": 301,
+    "file": "img/gecam/gc-sample-plate-480.webp",
+    "bytes": 11236
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/gecam/gc-sample-plate-thumb.webp",
+   "bytes": 894
+  }
+ },
+ "gc-sample-copper": {
+  "alt": "Copper bar after deburring",
+  "variants": [
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/gecam/gc-sample-copper-480.webp",
+    "bytes": 12932
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/gecam/gc-sample-copper-thumb.webp",
+   "bytes": 2822
+  }
+ },
+ "gc-sample-hairline": {
+  "alt": "Sample: hairline (satin) finish",
+  "variants": [
+   {
+    "w": 380,
+    "h": 228,
+    "file": "img/gecam/gc-sample-hairline-380.webp",
+    "bytes": 15962
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 96,
+   "file": "img/gecam/gc-sample-hairline-thumb.webp",
+   "bytes": 5324
+  }
+ },
+ "gc-sample-satin": {
+  "alt": "Sample: satin finish with the abrasive belt (R)",
+  "variants": [
+   {
+    "w": 448,
+    "h": 288,
+    "file": "img/gecam/gc-sample-satin-448.webp",
+    "bytes": 33732
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/gecam/gc-sample-satin-thumb.webp",
+   "bytes": 9172
+  }
+ },
+ "gc-g30-wet": {
+  "alt": "Gecam G30 WET wet deburring machine, 11-13/16\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1127,
+    "file": "img/gecam/gc-g30-wet-800.webp",
+    "bytes": 74244
+   },
+   {
+    "w": 480,
+    "h": 676,
+    "file": "img/gecam/gc-g30-wet-480.webp",
+    "bytes": 38734
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 114,
+   "h": 160,
+   "file": "img/gecam/gc-g30-wet-thumb.webp",
+   "bytes": 6034
+  },
+  "cut": "birefnet"
+ },
+ "gc-g65-wet": {
+  "alt": "Gecam G65/135 WET wet deburring machine, 51-3/16\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1241,
+    "file": "img/gecam/gc-g65-wet-800.webp",
+    "bytes": 109936
+   },
+   {
+    "w": 480,
+    "h": 745,
+    "file": "img/gecam/gc-g65-wet-480.webp",
+    "bytes": 57218
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 103,
+   "h": 160,
+   "file": "img/gecam/gc-g65-wet-thumb.webp",
+   "bytes": 6204
+  }
+ },
+ "gc-g30-wet-side": {
+  "alt": "G30 WET with two belt units (RR), side view",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1057,
+    "file": "img/gecam/gc-g30-wet-side-800.webp",
+    "bytes": 62450
+   },
+   {
+    "w": 480,
+    "h": 634,
+    "file": "img/gecam/gc-g30-wet-side-480.webp",
+    "bytes": 36858
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 121,
+   "h": 160,
+   "file": "img/gecam/gc-g30-wet-side-thumb.webp",
+   "bytes": 6446
+  },
+  "cut": "birefnet"
+ },
+ "gc-wet-rr": {
+  "alt": "Two abrasive belt units (RR) of a wet machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1203,
+    "file": "img/gecam/gc-wet-rr-800.webp",
+    "bytes": 62716
+   },
+   {
+    "w": 480,
+    "h": 722,
+    "file": "img/gecam/gc-wet-rr-480.webp",
+    "bytes": 31486
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 106,
+   "h": 160,
+   "file": "img/gecam/gc-wet-rr-thumb.webp",
+   "bytes": 3604
+  }
+ },
+ "gc-wet-rt": {
+  "alt": "Belt unit and top brushes (RT) in a G30 WET",
+  "variants": [
+   {
+    "w": 800,
+    "h": 896,
+    "file": "img/gecam/gc-wet-rt-800.webp",
+    "bytes": 39438
+   },
+   {
+    "w": 480,
+    "h": 538,
+    "file": "img/gecam/gc-wet-rt-480.webp",
+    "bytes": 19412
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 143,
+   "h": 160,
+   "file": "img/gecam/gc-wet-rt-thumb.webp",
+   "bytes": 3118
+  }
+ },
+ "gc-sample-rbb": {
+  "alt": "Sample: satin finish with belt and two cylindrical brushes (RBB)",
+  "variants": [
+   {
+    "w": 326,
+    "h": 488,
+    "file": "img/gecam/gc-sample-rbb-326.webp",
+    "bytes": 13812
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 107,
+   "h": 160,
+   "file": "img/gecam/gc-sample-rbb-thumb.webp",
+   "bytes": 3868
+  }
+ },
+ "gc-g135rb8": {
+  "alt": "Gecam G135RB8 edge rounding machine with eight-brush carousel, 53-1/8\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 743,
+    "file": "img/gecam/gc-g135rb8-800.webp",
+    "bytes": 46634
+   },
+   {
+    "w": 480,
+    "h": 446,
+    "file": "img/gecam/gc-g135rb8-480.webp",
+    "bytes": 25326
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/gecam/gc-g135rb8-thumb.webp",
+   "bytes": 6080
+  },
+  "cut": "birefnet"
+ },
+ "gc-rb8-carousel": {
+  "alt": "Carousel of eight cylindrical abrasive brushes turning in both directions",
+  "variants": [
+   {
+    "w": 800,
+    "h": 519,
+    "file": "img/gecam/gc-rb8-carousel-800.webp",
+    "bytes": 29978
+   },
+   {
+    "w": 480,
+    "h": 311,
+    "file": "img/gecam/gc-rb8-carousel-480.webp",
+    "bytes": 15116
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 104,
+   "file": "img/gecam/gc-rb8-carousel-thumb.webp",
+   "bytes": 3174
+  }
+ },
+ "gc-rb8-belt": {
+  "alt": "Abrasive belt unit (R group) of the G135RB8",
+  "variants": [
+   {
+    "w": 480,
+    "h": 722,
+    "file": "img/gecam/gc-rb8-belt-480.webp",
+    "bytes": 14646
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 106,
+   "h": 160,
+   "file": "img/gecam/gc-rb8-belt-thumb.webp",
+   "bytes": 2006
+  }
+ },
+ "gc-rb8-touch": {
+  "alt": "Touch-screen control of the G135RB8",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 783,
+    "file": "img/gecam/gc-rb8-touch-1200.webp",
+    "bytes": 61458
+   },
+   {
+    "w": 800,
+    "h": 522,
+    "file": "img/gecam/gc-rb8-touch-800.webp",
+    "bytes": 29734
+   },
+   {
+    "w": 480,
+    "h": 313,
+    "file": "img/gecam/gc-rb8-touch-480.webp",
+    "bytes": 13446
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 104,
+   "file": "img/gecam/gc-rb8-touch-thumb.webp",
+   "bytes": 2414
+  }
+ },
+ "gc-rb8-before-after": {
+  "alt": "Laser-cut parts before and after edge rounding",
+  "variants": [
+   {
+    "w": 480,
+    "h": 179,
+    "file": "img/gecam/gc-rb8-before-after-480.webp",
+    "bytes": 10130
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 60,
+   "file": "img/gecam/gc-rb8-before-after-thumb.webp",
+   "bytes": 1368
+  }
+ },
+ "gc-rb8-plate": {
+  "alt": "Plate with edges rounded, inside the holes too",
+  "variants": [
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/gecam/gc-rb8-plate-480.webp",
+    "bytes": 8678
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/gecam/gc-rb8-plate-thumb.webp",
+   "bytes": 1704
+  }
+ },
+ "gc-sample-r2": {
+  "alt": "Sample: 5/64\u2033 (2 mm) edge radius from the eight-brush carousel",
+  "variants": [
+   {
+    "w": 480,
+    "h": 279,
+    "file": "img/gecam/gc-sample-r2-480.webp",
+    "bytes": 23732
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 93,
+   "file": "img/gecam/gc-sample-r2-thumb.webp",
+   "bytes": 5230
+  }
+ },
+ "gc-sample-rb8": {
+  "alt": "Sample: deburred and rounded with RB8",
+  "variants": [
+   {
+    "w": 440,
+    "h": 338,
+    "file": "img/gecam/gc-sample-rb8-440.webp",
+    "bytes": 16152
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/gecam/gc-sample-rb8-thumb.webp",
+   "bytes": 5004
+  }
+ },
+ "gc-gt06": {
+  "alt": "Gecam GT06 double-sided edge rounding machine, 23-5/8\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1000,
+    "file": "img/gecam/gc-gt06-800.webp",
+    "bytes": 38880
+   },
+   {
+    "w": 480,
+    "h": 600,
+    "file": "img/gecam/gc-gt06-480.webp",
+    "bytes": 23038
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 128,
+   "h": 160,
+   "file": "img/gecam/gc-gt06-thumb.webp",
+   "bytes": 4472
+  },
+  "cut": "birefnet"
+ },
+ "gc-gt13": {
+  "alt": "Gecam GT13 double-sided edge rounding machine, 51-3/16\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 736,
+    "file": "img/gecam/gc-gt13-800.webp",
+    "bytes": 39538
+   },
+   {
+    "w": 480,
+    "h": 442,
+    "file": "img/gecam/gc-gt13-480.webp",
+    "bytes": 23100
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 147,
+   "file": "img/gecam/gc-gt13-thumb.webp",
+   "bytes": 5634
+  },
+  "cut": "birefnet"
+ },
+ "gc-gt13-rcs": {
+  "alt": "GT13 in RCS configuration",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1136,
+    "file": "img/gecam/gc-gt13-rcs-1200.webp",
+    "bytes": 67284
+   },
+   {
+    "w": 800,
+    "h": 757,
+    "file": "img/gecam/gc-gt13-rcs-800.webp",
+    "bytes": 43454
+   },
+   {
+    "w": 480,
+    "h": 454,
+    "file": "img/gecam/gc-gt13-rcs-480.webp",
+    "bytes": 23110
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 151,
+   "file": "img/gecam/gc-gt13-rcs-thumb.webp",
+   "bytes": 5658
+  },
+  "cut": "birefnet"
+ },
+ "gc-gt06-inside": {
+  "alt": "Cross belts with strip brushes working above and below the part",
+  "variants": [
+   {
+    "w": 800,
+    "h": 639,
+    "file": "img/gecam/gc-gt06-inside-800.webp",
+    "bytes": 59102
+   },
+   {
+    "w": 480,
+    "h": 383,
+    "file": "img/gecam/gc-gt06-inside-480.webp",
+    "bytes": 27426
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 128,
+   "file": "img/gecam/gc-gt06-inside-thumb.webp",
+   "bytes": 4578
+  }
+ },
+ "gc-gt-strips": {
+  "alt": "Strip brushes on a cross belt",
+  "variants": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "img/gecam/gc-gt-strips-480.webp",
+    "bytes": 46882
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 90,
+   "h": 160,
+   "file": "img/gecam/gc-gt-strips-thumb.webp",
+   "bytes": 4206
+  }
+ },
+ "gc-gt-gauge": {
+  "alt": "Strip brushes, easily replaced as they wear",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-gt-gauge-800.webp",
+    "bytes": 60152
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-gt-gauge-480.webp",
+    "bytes": 28800
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-gt-gauge-thumb.webp",
+   "bytes": 4276
+  }
+ },
+ "gc-gt-touch": {
+  "alt": "Touch screen with stored work programs",
+  "variants": [
+   {
+    "w": 800,
+    "h": 590,
+    "file": "img/gecam/gc-gt-touch-800.webp",
+    "bytes": 24192
+   },
+   {
+    "w": 480,
+    "h": 354,
+    "file": "img/gecam/gc-gt-touch-480.webp",
+    "bytes": 12804
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 118,
+   "file": "img/gecam/gc-gt-touch-thumb.webp",
+   "bytes": 2746
+  }
+ },
+ "gc-sample-holes": {
+  "alt": "Sample: deburred and rounded inside the holes",
+  "variants": [
+   {
+    "w": 418,
+    "h": 286,
+    "file": "img/gecam/gc-sample-holes-418.webp",
+    "bytes": 14590
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 109,
+   "file": "img/gecam/gc-sample-holes-thumb.webp",
+   "bytes": 4366
+  }
+ },
+ "gc-g65dcc": {
+  "alt": "Gecam G65DCC deslagging and edge rounding machine, 23-5/8\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1192,
+    "file": "img/gecam/gc-g65dcc-800.webp",
+    "bytes": 57356
+   },
+   {
+    "w": 480,
+    "h": 715,
+    "file": "img/gecam/gc-g65dcc-480.webp",
+    "bytes": 31804
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 107,
+   "h": 160,
+   "file": "img/gecam/gc-g65dcc-thumb.webp",
+   "bytes": 4020
+  }
+ },
+ "gc-dcc-inside": {
+  "alt": "D belt on its large rubber roller and the C strip-brush belts",
+  "variants": [
+   {
+    "w": 480,
+    "h": 359,
+    "file": "img/gecam/gc-dcc-inside-480.webp",
+    "bytes": 24888
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-dcc-inside-thumb.webp",
+   "bytes": 4518
+  }
+ },
+ "gc-dcc-touch": {
+  "alt": "G65DCC touch screen",
+  "variants": [
+   {
+    "w": 480,
+    "h": 356,
+    "file": "img/gecam/gc-dcc-touch-480.webp",
+    "bytes": 11534
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/gecam/gc-dcc-touch-thumb.webp",
+   "bytes": 2446
+  }
+ },
+ "gc-dcc-before": {
+  "alt": "Plasma-cut part with slag, before deslagging",
+  "variants": [
+   {
+    "w": 480,
+    "h": 382,
+    "file": "img/gecam/gc-dcc-before-480.webp",
+    "bytes": 18268
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/gecam/gc-dcc-before-thumb.webp",
+   "bytes": 1958
+  }
+ },
+ "gc-dcc-after": {
+  "alt": "Plasma-cut part after deslagging and edge rounding",
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-dcc-after-480.webp",
+    "bytes": 9718
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-dcc-after-thumb.webp",
+   "bytes": 1168
+  }
+ },
+ "gc-dcc-edge": {
+  "alt": "Plate edge with slag (left) and after the G65DCC (right)",
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-dcc-edge-480.webp",
+    "bytes": 19130
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-dcc-edge-thumb.webp",
+   "bytes": 2206
+  }
+ },
+ "gc-dcc-thick": {
+  "alt": "Thick plasma-cut part \u2014 the work the G65DCC deslags",
+  "variants": [
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-dcc-thick-480.webp",
+    "bytes": 5200
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-dcc-thick-thumb.webp",
+   "bytes": 934
+  }
+ },
+ "gc-cub": {
+  "alt": "Gecam CUB brush deburring machine with two brush heads",
+  "variants": [
+   {
+    "w": 800,
+    "h": 904,
+    "file": "img/gecam/gc-cub-800.webp",
+    "bytes": 50352
+   },
+   {
+    "w": 480,
+    "h": 542,
+    "file": "img/gecam/gc-cub-480.webp",
+    "bytes": 27812
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 142,
+   "h": 160,
+   "file": "img/gecam/gc-cub-thumb.webp",
+   "bytes": 6542
+  },
+  "cut": "birefnet"
+ },
+ "gc-cub-cat": {
+  "alt": "CUB brush deburring machine with two brush units",
+  "variants": [
+   {
+    "w": 800,
+    "h": 998,
+    "file": "img/gecam/gc-cub-cat-800.webp",
+    "bytes": 100740
+   },
+   {
+    "w": 480,
+    "h": 599,
+    "file": "img/gecam/gc-cub-cat-480.webp",
+    "bytes": 53804
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 128,
+   "h": 160,
+   "file": "img/gecam/gc-cub-cat-thumb.webp",
+   "bytes": 8152
+  }
+ },
+ "gc-cub-30": {
+  "alt": "Gecam CUB 30 brush deburring machine with conveyor",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1053,
+    "file": "img/gecam/gc-cub-30-800.webp",
+    "bytes": 66700
+   },
+   {
+    "w": 480,
+    "h": 632,
+    "file": "img/gecam/gc-cub-30-480.webp",
+    "bytes": 38626
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 122,
+   "h": 160,
+   "file": "img/gecam/gc-cub-30-thumb.webp",
+   "bytes": 6782
+  },
+  "cut": "birefnet"
+ },
+ "gc-cub-compact": {
+  "alt": "Compact CUB brush deburring machine",
+  "variants": [
+   {
+    "w": 336,
+    "h": 448,
+    "file": "img/gecam/gc-cub-compact-336.webp",
+    "bytes": 27376
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/gecam/gc-cub-compact-thumb.webp",
+   "bytes": 7656
+  }
+ },
+ "gc-cub-brushes": {
+  "alt": "Two cylindrical brush heads with independent pressure adjustment",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-cub-brushes-800.webp",
+    "bytes": 26592
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-cub-brushes-480.webp",
+    "bytes": 12152
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-cub-brushes-thumb.webp",
+   "bytes": 2430
+  }
+ },
+ "gc-cub-heads": {
+  "alt": "CUB brush heads, positioned by handwheel",
+  "variants": [
+   {
+    "w": 800,
+    "h": 504,
+    "file": "img/gecam/gc-cub-heads-800.webp",
+    "bytes": 20754
+   },
+   {
+    "w": 480,
+    "h": 302,
+    "file": "img/gecam/gc-cub-heads-480.webp",
+    "bytes": 10252
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 101,
+   "file": "img/gecam/gc-cub-heads-thumb.webp",
+   "bytes": 2416
+  }
+ },
+ "gc-sample-scotch": {
+  "alt": "Sample: Scotch-Brite finish with a cylindrical brush (B group)",
+  "variants": [
+   {
+    "w": 436,
+    "h": 344,
+    "file": "img/gecam/gc-sample-scotch-436.webp",
+    "bytes": 11774
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 126,
+   "file": "img/gecam/gc-sample-scotch-thumb.webp",
+   "bytes": 4138
+  }
+ },
+ "gc-easy-t": {
+  "alt": "Gecam EASY T brushing workstation with vacuum table",
+  "variants": [
+   {
+    "w": 800,
+    "h": 903,
+    "file": "img/gecam/gc-easy-t-800.webp",
+    "bytes": 64674
+   },
+   {
+    "w": 480,
+    "h": 542,
+    "file": "img/gecam/gc-easy-t-480.webp",
+    "bytes": 35932
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 142,
+   "h": 160,
+   "file": "img/gecam/gc-easy-t-thumb.webp",
+   "bytes": 6968
+  },
+  "cut": "birefnet"
+ },
+ "gc-easy-t-tools": {
+  "alt": "Two tools on the 180\u00b0 tilting arm",
+  "variants": [
+   {
+    "w": 800,
+    "h": 522,
+    "file": "img/gecam/gc-easy-t-tools-800.webp",
+    "bytes": 26482
+   },
+   {
+    "w": 480,
+    "h": 313,
+    "file": "img/gecam/gc-easy-t-tools-480.webp",
+    "bytes": 12006
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 104,
+   "file": "img/gecam/gc-easy-t-tools-thumb.webp",
+   "bytes": 2180
+  }
+ },
+ "gc-easy-t-work": {
+  "alt": "Brushing a part held down by the vacuum table",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-easy-t-work-800.webp",
+    "bytes": 37884
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-easy-t-work-480.webp",
+    "bytes": 18512
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-easy-t-work-thumb.webp",
+   "bytes": 3730
+  }
+ },
+ "gc-easy-t-operator": {
+  "alt": "Operator guiding the brush head along a part",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 551,
+    "file": "img/gecam/gc-easy-t-operator-1200.webp",
+    "bytes": 35424
+   },
+   {
+    "w": 800,
+    "h": 367,
+    "file": "img/gecam/gc-easy-t-operator-800.webp",
+    "bytes": 22958
+   },
+   {
+    "w": 480,
+    "h": 220,
+    "file": "img/gecam/gc-easy-t-operator-480.webp",
+    "bytes": 12650
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 73,
+   "file": "img/gecam/gc-easy-t-operator-thumb.webp",
+   "bytes": 2692
+  }
+ },
+ "gc-easy-t-brush": {
+  "alt": "Top brush rounding the edges of a part",
+  "variants": [
+   {
+    "w": 480,
+    "h": 400,
+    "file": "img/gecam/gc-easy-t-brush-480.webp",
+    "bytes": 18738
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 133,
+   "file": "img/gecam/gc-easy-t-brush-thumb.webp",
+   "bytes": 4114
+  }
+ },
+ "gc-gcb": {
+  "alt": "Gecam GCB 25 RR double crossed-belt deburring bench",
+  "variants": [
+   {
+    "w": 800,
+    "h": 473,
+    "file": "img/gecam/gc-gcb-800.webp",
+    "bytes": 70322
+   },
+   {
+    "w": 480,
+    "h": 284,
+    "file": "img/gecam/gc-gcb-480.webp",
+    "bytes": 42860
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 95,
+   "file": "img/gecam/gc-gcb-thumb.webp",
+   "bytes": 10166
+  },
+  "cut": "birefnet"
+ },
+ "gc-gcb-cat": {
+  "alt": "GCB bench with crossed belts and table",
+  "variants": [
+   {
+    "w": 800,
+    "h": 580,
+    "file": "img/gecam/gc-gcb-cat-800.webp",
+    "bytes": 79756
+   },
+   {
+    "w": 480,
+    "h": 348,
+    "file": "img/gecam/gc-gcb-cat-480.webp",
+    "bytes": 38418
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 116,
+   "file": "img/gecam/gc-gcb-cat-thumb.webp",
+   "bytes": 7802
+  }
+ },
+ "gc-gcb-work": {
+  "alt": "Operator deburring a part on the GCB",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-gcb-work-800.webp",
+    "bytes": 47402
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-gcb-work-480.webp",
+    "bytes": 25714
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-gcb-work-thumb.webp",
+   "bytes": 4862
+  }
+ },
+ "gc-gcb-brush": {
+  "alt": "Single independent brush (T group) for edge rounding",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-gcb-brush-800.webp",
+    "bytes": 39384
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-gcb-brush-480.webp",
+    "bytes": 20204
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-gcb-brush-thumb.webp",
+   "bytes": 3960
+  }
+ },
+ "gc-gcb-vacuum": {
+  "alt": "Suction-cup manipulator for shaped parts (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-gcb-vacuum-800.webp",
+    "bytes": 29352
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-gcb-vacuum-480.webp",
+    "bytes": 16022
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-gcb-vacuum-thumb.webp",
+   "bytes": 3508
+  }
+ },
+ "gc-135": {
+  "alt": "Gecam 135 automatic corner grinder",
+  "variants": [
+   {
+    "w": 800,
+    "h": 637,
+    "file": "img/gecam/gc-135-800.webp",
+    "bytes": 33384
+   },
+   {
+    "w": 480,
+    "h": 382,
+    "file": "img/gecam/gc-135-480.webp",
+    "bytes": 21568
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/gecam/gc-135-thumb.webp",
+   "bytes": 5402
+  },
+  "cut": "birefnet"
+ },
+ "gc-135-2h": {
+  "alt": "135 two-head version",
+  "variants": [
+   {
+    "w": 800,
+    "h": 473,
+    "file": "img/gecam/gc-135-2h-800.webp",
+    "bytes": 31586
+   },
+   {
+    "w": 480,
+    "h": 284,
+    "file": "img/gecam/gc-135-2h-480.webp",
+    "bytes": 20020
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 95,
+   "file": "img/gecam/gc-135-2h-thumb.webp",
+   "bytes": 5022
+  },
+  "cut": "birefnet"
+ },
+ "gc-135-head": {
+  "alt": "135 grinding head on its carriage",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1420,
+    "file": "img/gecam/gc-135-head-800.webp",
+    "bytes": 42630
+   },
+   {
+    "w": 480,
+    "h": 852,
+    "file": "img/gecam/gc-135-head-480.webp",
+    "bytes": 19524
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 90,
+   "h": 160,
+   "file": "img/gecam/gc-135-head-thumb.webp",
+   "bytes": 1762
+  }
+ },
+ "gc-135-pad": {
+  "alt": "Pad and contact roller pressing the belt on the weld",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-135-pad-800.webp",
+    "bytes": 35310
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-135-pad-480.webp",
+    "bytes": 18632
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-135-pad-thumb.webp",
+   "bytes": 3958
+  }
+ },
+ "gc-135-guides": {
+  "alt": "Two grinding heads over the part support with plastic slides",
+  "variants": [
+   {
+    "w": 800,
+    "h": 527,
+    "file": "img/gecam/gc-135-guides-800.webp",
+    "bytes": 26820
+   },
+   {
+    "w": 480,
+    "h": 316,
+    "file": "img/gecam/gc-135-guides-480.webp",
+    "bytes": 14602
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/gecam/gc-135-guides-thumb.webp",
+   "bytes": 3302
+  }
+ },
+ "gc-135-touch": {
+  "alt": "Touch-screen control (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-135-touch-800.webp",
+    "bytes": 29634
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-135-touch-480.webp",
+    "bytes": 14334
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-135-touch-thumb.webp",
+   "bytes": 2074
+  }
+ },
+ "gc-135-sample": {
+  "alt": "Box edge after weld grinding on the 135",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-135-sample-800.webp",
+    "bytes": 15978
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-135-sample-480.webp",
+    "bytes": 7702
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-135-sample-thumb.webp",
+   "bytes": 1508
+  }
+ },
+ "gc-136": {
+  "alt": "Gecam 136 corner grinder",
+  "variants": [
+   {
+    "w": 800,
+    "h": 944,
+    "file": "img/gecam/gc-136-800.webp",
+    "bytes": 56590
+   },
+   {
+    "w": 480,
+    "h": 566,
+    "file": "img/gecam/gc-136-480.webp",
+    "bytes": 32648
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 136,
+   "h": 160,
+   "file": "img/gecam/gc-136-thumb.webp",
+   "bytes": 6390
+  },
+  "cut": "birefnet"
+ },
+ "gc-131": {
+  "alt": "Gecam 131 corner grinder",
+  "variants": [
+   {
+    "w": 480,
+    "h": 746,
+    "file": "img/gecam/gc-131-480.webp",
+    "bytes": 35304
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 103,
+   "h": 160,
+   "file": "img/gecam/gc-131-thumb.webp",
+   "bytes": 5380
+  },
+  "cut": "birefnet"
+ },
+ "gc-136-box": {
+  "alt": "136 grinding the welded corner of a box",
+  "variants": [
+   {
+    "w": 800,
+    "h": 908,
+    "file": "img/gecam/gc-136-box-800.webp",
+    "bytes": 52848
+   },
+   {
+    "w": 480,
+    "h": 545,
+    "file": "img/gecam/gc-136-box-480.webp",
+    "bytes": 30386
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 141,
+   "h": 160,
+   "file": "img/gecam/gc-136-box-thumb.webp",
+   "bytes": 6388
+  },
+  "cut": "birefnet"
+ },
+ "gc-136-head": {
+  "alt": "136 belt head with oscillating fork",
+  "variants": [
+   {
+    "w": 800,
+    "h": 470,
+    "file": "img/gecam/gc-136-head-800.webp",
+    "bytes": 24364
+   },
+   {
+    "w": 480,
+    "h": 282,
+    "file": "img/gecam/gc-136-head-480.webp",
+    "bytes": 11960
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 94,
+   "file": "img/gecam/gc-136-head-thumb.webp",
+   "bytes": 2402
+  }
+ },
+ "gc-131-table": {
+  "alt": "131 work table with squaring guides",
+  "variants": [
+   {
+    "w": 480,
+    "h": 322,
+    "file": "img/gecam/gc-131-table-480.webp",
+    "bytes": 12440
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/gecam/gc-131-table-thumb.webp",
+   "bytes": 2550
+  }
+ },
+ "gc-131-head": {
+  "alt": "131 belt fork at a box corner",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-131-head-800.webp",
+    "bytes": 35452
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-131-head-480.webp",
+    "bytes": 17374
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-131-head-thumb.webp",
+   "bytes": 3592
+  }
+ },
+ "gc-box-corner": {
+  "alt": "Box corner after weld grinding",
+  "variants": [
+   {
+    "w": 480,
+    "h": 252,
+    "file": "img/gecam/gc-box-corner-480.webp",
+    "bytes": 5730
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 84,
+   "file": "img/gecam/gc-box-corner-thumb.webp",
+   "bytes": 1210
+  }
+ },
+ "gc-upper-corner": {
+  "alt": "Gecam automatic upper-corner grinder with two heads",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1010,
+    "file": "img/gecam/gc-upper-corner-800.webp",
+    "bytes": 58544
+   },
+   {
+    "w": 480,
+    "h": 606,
+    "file": "img/gecam/gc-upper-corner-480.webp",
+    "bytes": 33946
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 127,
+   "h": 160,
+   "file": "img/gecam/gc-upper-corner-thumb.webp",
+   "bytes": 6068
+  },
+  "cut": "birefnet"
+ },
+ "gc-six-head": {
+  "alt": "Gecam six-head PLC corner grinder",
+  "variants": [
+   {
+    "w": 800,
+    "h": 506,
+    "file": "img/gecam/gc-six-head-800.webp",
+    "bytes": 37428
+   },
+   {
+    "w": 480,
+    "h": 304,
+    "file": "img/gecam/gc-six-head-480.webp",
+    "bytes": 23188
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 101,
+   "file": "img/gecam/gc-six-head-thumb.webp",
+   "bytes": 5548
+  },
+  "cut": "birefnet"
+ },
+ "gc-tube-corner": {
+  "alt": "Gecam four-head corner grinder for 90\u00b0 tube frames",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1311,
+    "file": "img/gecam/gc-tube-corner-1200.webp",
+    "bytes": 80020
+   },
+   {
+    "w": 800,
+    "h": 874,
+    "file": "img/gecam/gc-tube-corner-800.webp",
+    "bytes": 50096
+   },
+   {
+    "w": 480,
+    "h": 524,
+    "file": "img/gecam/gc-tube-corner-480.webp",
+    "bytes": 27552
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 146,
+   "h": 160,
+   "file": "img/gecam/gc-tube-corner-thumb.webp",
+   "bytes": 6332
+  },
+  "cut": "birefnet"
+ },
+ "gc-upper-corner-panel": {
+  "alt": "Touch-screen control of the upper-corner grinder",
+  "variants": [
+   {
+    "w": 480,
+    "h": 367,
+    "file": "img/gecam/gc-upper-corner-panel-480.webp",
+    "bytes": 18946
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 122,
+   "file": "img/gecam/gc-upper-corner-panel-thumb.webp",
+   "bytes": 3370
+  }
+ },
+ "gc-six-head-heads": {
+  "alt": "Lower heads of the six-head grinder at a box corner",
+  "variants": [
+   {
+    "w": 800,
+    "h": 453,
+    "file": "img/gecam/gc-six-head-heads-800.webp",
+    "bytes": 26700
+   },
+   {
+    "w": 480,
+    "h": 272,
+    "file": "img/gecam/gc-six-head-heads-480.webp",
+    "bytes": 14374
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 91,
+   "file": "img/gecam/gc-six-head-heads-thumb.webp",
+   "bytes": 2992
+  }
+ },
+ "gc-six-head-pads": {
+  "alt": "Rubber pads pressing the belts on two corners at once",
+  "variants": [
+   {
+    "w": 800,
+    "h": 558,
+    "file": "img/gecam/gc-six-head-pads-800.webp",
+    "bytes": 25256
+   },
+   {
+    "w": 480,
+    "h": 335,
+    "file": "img/gecam/gc-six-head-pads-480.webp",
+    "bytes": 12340
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 112,
+   "file": "img/gecam/gc-six-head-pads-thumb.webp",
+   "bytes": 2570
+  }
+ },
+ "gc-tube-corner-table": {
+  "alt": "Frame support of the tube corner grinder",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-tube-corner-table-800.webp",
+    "bytes": 35058
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-tube-corner-table-480.webp",
+    "bytes": 17838
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-tube-corner-table-thumb.webp",
+   "bytes": 3366
+  }
+ },
+ "gc-tube-corner-heads": {
+  "alt": "Side heads of the tube corner grinder",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-tube-corner-heads-800.webp",
+    "bytes": 33420
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-tube-corner-heads-480.webp",
+    "bytes": 16662
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-tube-corner-heads-thumb.webp",
+   "bytes": 3120
+  }
+ },
+ "gc-corner-before": {
+  "alt": "Welded box corner before grinding",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-corner-before-800.webp",
+    "bytes": 23130
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-corner-before-480.webp",
+    "bytes": 10864
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-corner-before-thumb.webp",
+   "bytes": 2148
+  }
+ },
+ "gc-corner-after": {
+  "alt": "The same corner after grinding",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-corner-after-800.webp",
+    "bytes": 21366
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-corner-after-480.webp",
+    "bytes": 10540
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-corner-after-thumb.webp",
+   "bytes": 2230
+  }
+ },
+ "gc-cws": {
+  "alt": "Gecam CWS 300 corner welding machine",
+  "variants": [
+   {
+    "w": 800,
+    "h": 845,
+    "file": "img/gecam/gc-cws-800.webp",
+    "bytes": 43590
+   },
+   {
+    "w": 480,
+    "h": 507,
+    "file": "img/gecam/gc-cws-480.webp",
+    "bytes": 25484
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 151,
+   "h": 160,
+   "file": "img/gecam/gc-cws-thumb.webp",
+   "bytes": 5914
+  },
+  "cut": "birefnet"
+ },
+ "gc-cws-welding": {
+  "alt": "TIG torch welding a corner along the copper guide",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-cws-welding-800.webp",
+    "bytes": 26936
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-cws-welding-480.webp",
+    "bytes": 13446
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-cws-welding-thumb.webp",
+   "bytes": 2976
+  }
+ },
+ "gc-cws-copper": {
+  "alt": "Copper blocks that hold the corner and draw off the heat",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-cws-copper-800.webp",
+    "bytes": 34678
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-cws-copper-480.webp",
+    "bytes": 18208
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-cws-copper-thumb.webp",
+   "bytes": 3886
+  }
+ },
+ "gc-cws-stop": {
+  "alt": "External copper guide the corner rests against",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-cws-stop-800.webp",
+    "bytes": 35976
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-cws-stop-480.webp",
+    "bytes": 18972
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-cws-stop-thumb.webp",
+   "bytes": 4144
+  }
+ },
+ "gc-cws-touch": {
+  "alt": "CNC touch screen of the CWS",
+  "variants": [
+   {
+    "w": 480,
+    "h": 250,
+    "file": "img/gecam/gc-cws-touch-480.webp",
+    "bytes": 6742
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 83,
+   "file": "img/gecam/gc-cws-touch-thumb.webp",
+   "bytes": 1400
+  }
+ },
+ "gc-cws-bent": {
+  "alt": "Bent corner before welding",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-cws-bent-800.webp",
+    "bytes": 27546
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-cws-bent-480.webp",
+    "bytes": 10842
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-cws-bent-thumb.webp",
+   "bytes": 1358
+  }
+ },
+ "gc-cws-welded": {
+  "alt": "Welded corner",
+  "variants": [
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-cws-welded-800.webp",
+    "bytes": 32560
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-cws-welded-480.webp",
+    "bytes": 13946
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-cws-welded-thumb.webp",
+   "bytes": 2022
+  }
+ },
+ "gc-cws-boxes": {
+  "alt": "Corner-welded boxes",
+  "variants": [
+   {
+    "w": 480,
+    "h": 272,
+    "file": "img/gecam/gc-cws-boxes-480.webp",
+    "bytes": 6742
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 91,
+   "file": "img/gecam/gc-cws-boxes-thumb.webp",
+   "bytes": 1526
+  }
+ },
+ "ef-141": {
+  "alt": "Eurofintec 141 orbital pipe sander, \u00d83/8\u2033 \u2013 3-1/8\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 794,
+    "file": "img/gecam/ef-141-800.webp",
+    "bytes": 54036
+   },
+   {
+    "w": 480,
+    "h": 476,
+    "file": "img/gecam/ef-141-480.webp",
+    "bytes": 32782
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 159,
+   "file": "img/gecam/ef-141-thumb.webp",
+   "bytes": 7596
+  },
+  "cut": "birefnet"
+ },
+ "ef-144": {
+  "alt": "Eurofintec 144 orbital pipe sander, \u00d89/16\u2033 \u2013 5-7/8\u2033, with feeder (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1103,
+    "file": "img/gecam/ef-144-800.webp",
+    "bytes": 64642
+   },
+   {
+    "w": 480,
+    "h": 662,
+    "file": "img/gecam/ef-144-480.webp",
+    "bytes": 36404
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 116,
+   "h": 160,
+   "file": "img/gecam/ef-144-thumb.webp",
+   "bytes": 5746
+  },
+  "cut": "birefnet"
+ },
+ "ef-141-bend": {
+  "alt": "141 sanding a bent tube",
+  "variants": [
+   {
+    "w": 800,
+    "h": 676,
+    "file": "img/gecam/ef-141-bend-800.webp",
+    "bytes": 39324
+   },
+   {
+    "w": 480,
+    "h": 406,
+    "file": "img/gecam/ef-141-bend-480.webp",
+    "bytes": 18254
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 135,
+   "file": "img/gecam/ef-141-bend-thumb.webp",
+   "bytes": 3418
+  }
+ },
+ "ef-141-small": {
+  "alt": "141 sanding small-diameter tube",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-141-small-800.webp",
+    "bytes": 30008
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-141-small-480.webp",
+    "bytes": 15050
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-141-small-thumb.webp",
+   "bytes": 3262
+  }
+ },
+ "ef-144-feeder": {
+  "alt": "Automatic feeder kit on the 144 (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-144-feeder-800.webp",
+    "bytes": 43880
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-144-feeder-480.webp",
+    "bytes": 23346
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-144-feeder-thumb.webp",
+   "bytes": 4954
+  }
+ },
+ "ef-144-panel": {
+  "alt": "144 control box",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-144-panel-800.webp",
+    "bytes": 27124
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-144-panel-480.webp",
+    "bytes": 13394
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-144-panel-thumb.webp",
+   "bytes": 2900
+  }
+ },
+ "ef-128sl": {
+  "alt": "Eurofintec 128 SL centreless pipe sander",
+  "variants": [
+   {
+    "w": 480,
+    "h": 720,
+    "file": "img/gecam/ef-128sl-480.webp",
+    "bytes": 49204
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 107,
+   "h": 160,
+   "file": "img/gecam/ef-128sl-thumb.webp",
+   "bytes": 6944
+  },
+  "cut": "birefnet"
+ },
+ "ef-128dl": {
+  "alt": "Eurofintec 128 DL two-head centreless sander",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1227,
+    "file": "img/gecam/ef-128dl-1200.webp",
+    "bytes": 124708
+   },
+   {
+    "w": 800,
+    "h": 818,
+    "file": "img/gecam/ef-128dl-800.webp",
+    "bytes": 78310
+   },
+   {
+    "w": 480,
+    "h": 491,
+    "file": "img/gecam/ef-128dl-480.webp",
+    "bytes": 41588
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 157,
+   "h": 160,
+   "file": "img/gecam/ef-128dl-thumb.webp",
+   "bytes": 8624
+  },
+  "cut": "birefnet"
+ },
+ "ef-128-work": {
+  "alt": "128 SL sanding a tube",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-128-work-800.webp",
+    "bytes": 41894
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-128-work-480.webp",
+    "bytes": 22694
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-128-work-thumb.webp",
+   "bytes": 4564
+  }
+ },
+ "ef-128-wheel": {
+  "alt": "Contact wheel and belt of the 128",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-128-wheel-800.webp",
+    "bytes": 26590
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-128-wheel-480.webp",
+    "bytes": 13510
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-128-wheel-thumb.webp",
+   "bytes": 2798
+  }
+ },
+ "ef-128dl-heads": {
+  "alt": "The two heads of the 128 DL",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-128dl-heads-800.webp",
+    "bytes": 38816
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-128dl-heads-480.webp",
+    "bytes": 20586
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-128dl-heads-thumb.webp",
+   "bytes": 3946
+  }
+ },
+ "ef-128dl-guide": {
+  "alt": "Prismatic work support of the 128 DL",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-128dl-guide-800.webp",
+    "bytes": 28488
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-128dl-guide-480.webp",
+    "bytes": 15218
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-128dl-guide-thumb.webp",
+   "bytes": 3408
+  }
+ },
+ "ef-128-wet": {
+  "alt": "Wet version: coolant on the belt (optional)",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/ef-128-wet-480.webp",
+    "bytes": 15492
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/ef-128-wet-thumb.webp",
+   "bytes": 3818
+  }
+ },
+ "ef-228": {
+  "alt": "Eurofintec 228 pipe sander, \u00d83/8\u2033 \u2013 15-3/4\u2033",
+  "variants": [
+   {
+    "w": 480,
+    "h": 792,
+    "file": "img/gecam/ef-228-480.webp",
+    "bytes": 35264
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 97,
+   "h": 160,
+   "file": "img/gecam/ef-228-thumb.webp",
+   "bytes": 4626
+  },
+  "cut": "birefnet"
+ },
+ "ef-228-rollers": {
+  "alt": "228 with pipe roller stands (optional)",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1014,
+    "file": "img/gecam/ef-228-rollers-1200.webp",
+    "bytes": 111230
+   },
+   {
+    "w": 800,
+    "h": 676,
+    "file": "img/gecam/ef-228-rollers-800.webp",
+    "bytes": 72956
+   },
+   {
+    "w": 480,
+    "h": 406,
+    "file": "img/gecam/ef-228-rollers-480.webp",
+    "bytes": 39180
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 135,
+   "file": "img/gecam/ef-228-rollers-thumb.webp",
+   "bytes": 8916
+  },
+  "cut": "birefnet"
+ },
+ "ef-228-work": {
+  "alt": "Contrast roller and belt on a pipe",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-228-work-800.webp",
+    "bytes": 32310
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-228-work-480.webp",
+    "bytes": 15830
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-228-work-thumb.webp",
+   "bytes": 3338
+  }
+ },
+ "ef-228-large": {
+  "alt": "Sanding large-diameter pipe",
+  "variants": [
+   {
+    "w": 800,
+    "h": 451,
+    "file": "img/gecam/ef-228-large-800.webp",
+    "bytes": 38840
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/gecam/ef-228-large-480.webp",
+    "bytes": 19096
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/gecam/ef-228-large-thumb.webp",
+   "bytes": 3632
+  }
+ },
+ "ef-728": {
+  "alt": "Eurofintec 728 tube brushing machine",
+  "variants": [
+   {
+    "w": 480,
+    "h": 876,
+    "file": "img/gecam/ef-728-480.webp",
+    "bytes": 54780
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 88,
+   "h": 160,
+   "file": "img/gecam/ef-728-thumb.webp",
+   "bytes": 6072
+  },
+  "cut": "birefnet"
+ },
+ "ef-143": {
+  "alt": "Eurofintec 143 tube-end deburring machine",
+  "variants": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "img/gecam/ef-143-480.webp",
+    "bytes": 36990
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 90,
+   "h": 160,
+   "file": "img/gecam/ef-143-thumb.webp",
+   "bytes": 4692
+  },
+  "cut": "birefnet"
+ },
+ "ef-143-front": {
+  "alt": "143 with its front guard, seen from the operator side",
+  "variants": [
+   {
+    "w": 480,
+    "h": 1044,
+    "file": "img/gecam/ef-143-front-480.webp",
+    "bytes": 35072
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 74,
+   "h": 160,
+   "file": "img/gecam/ef-143-front-thumb.webp",
+   "bytes": 3842
+  },
+  "cut": "birefnet"
+ },
+ "ef-728-brush": {
+  "alt": "728 brush and contrast roller",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-728-brush-800.webp",
+    "bytes": 47418
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-728-brush-480.webp",
+    "bytes": 23802
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-728-brush-thumb.webp",
+   "bytes": 4130
+  }
+ },
+ "ef-728-adjust": {
+  "alt": "Handwheel adjustment of the brush as it wears",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-728-adjust-800.webp",
+    "bytes": 29102
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-728-adjust-480.webp",
+    "bytes": 15264
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-728-adjust-thumb.webp",
+   "bytes": 3302
+  }
+ },
+ "ef-728-pneumatic": {
+  "alt": "Pneumatic compensation of the contrast roller",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-728-pneumatic-800.webp",
+    "bytes": 35720
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-728-pneumatic-480.webp",
+    "bytes": 18682
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-728-pneumatic-thumb.webp",
+   "bytes": 3826
+  }
+ },
+ "ef-728-contrast": {
+  "alt": "Grooved rubber contrast roller with tilt adjustment",
+  "variants": [
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/ef-728-contrast-800.webp",
+    "bytes": 38422
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/ef-728-contrast-480.webp",
+    "bytes": 18354
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/ef-728-contrast-thumb.webp",
+   "bytes": 3524
+  }
+ },
+ "ef-143-brush": {
+  "alt": "Wire brush of the 143",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/gecam/ef-143-brush-800.webp",
+    "bytes": 123340
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/gecam/ef-143-brush-480.webp",
+    "bytes": 48782
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/gecam/ef-143-brush-thumb.webp",
+   "bytes": 3892
+  }
+ },
+ "ef-143-45": {
+  "alt": "Support for tube ends cut at 45\u00b0",
+  "variants": [
+   {
+    "w": 480,
+    "h": 690,
+    "file": "img/gecam/ef-143-45-480.webp",
+    "bytes": 10328
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 111,
+   "h": 160,
+   "file": "img/gecam/ef-143-45-thumb.webp",
+   "bytes": 1462
+  }
+ },
+ "gecam-logo": {
+  "alt": "Gecam",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 444,
+    "file": "img/site/gecam-logo-1200.webp",
+    "bytes": 49522
+   },
+   {
+    "w": 800,
+    "h": 296,
+    "file": "img/site/gecam-logo-800.webp",
+    "bytes": 31020
+   },
+   {
+    "w": 480,
+    "h": 178,
+    "file": "img/site/gecam-logo-480.webp",
+    "bytes": 17454
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 59,
+   "file": "img/site/gecam-logo-thumb.webp",
+   "bytes": 3842
+  }
+ },
+ "eurofintec-logo": {
+  "alt": "Eurofintec",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 592,
+    "file": "img/site/eurofintec-logo-1200.webp",
+    "bytes": 36414
+   },
+   {
+    "w": 800,
+    "h": 395,
+    "file": "img/site/eurofintec-logo-800.webp",
+    "bytes": 23646
+   },
+   {
+    "w": 480,
+    "h": 237,
+    "file": "img/site/eurofintec-logo-480.webp",
+    "bytes": 14658
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 79,
+   "file": "img/site/eurofintec-logo-thumb.webp",
+   "bytes": 4004
+  }
+ },
+ "video-DS_yO-WbtSQ": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-DS_yO-WbtSQ-1200.webp",
+    "bytes": 22716
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-DS_yO-WbtSQ-800.webp",
+    "bytes": 13842
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-DS_yO-WbtSQ-480.webp",
+    "bytes": 7026
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-DS_yO-WbtSQ-thumb.webp",
+   "bytes": 1812
+  }
+ },
+ "video-P6clb5uvwzo": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-P6clb5uvwzo-1200.webp",
+    "bytes": 34118
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-P6clb5uvwzo-800.webp",
+    "bytes": 20912
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-P6clb5uvwzo-480.webp",
+    "bytes": 10754
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-P6clb5uvwzo-thumb.webp",
+   "bytes": 2664
+  }
+ },
+ "video-uQ-9CMccQIs": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-uQ-9CMccQIs-1200.webp",
+    "bytes": 23232
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-uQ-9CMccQIs-800.webp",
+    "bytes": 14596
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-uQ-9CMccQIs-480.webp",
+    "bytes": 8358
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-uQ-9CMccQIs-thumb.webp",
+   "bytes": 2610
+  }
+ },
+ "video-dLvvcPs1wwQ": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-dLvvcPs1wwQ-1200.webp",
+    "bytes": 24486
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-dLvvcPs1wwQ-800.webp",
+    "bytes": 15460
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-dLvvcPs1wwQ-480.webp",
+    "bytes": 8242
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-dLvvcPs1wwQ-thumb.webp",
+   "bytes": 2190
+  }
+ },
+ "video-brMbAFpqbOw": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-brMbAFpqbOw-1200.webp",
+    "bytes": 28100
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-brMbAFpqbOw-800.webp",
+    "bytes": 18156
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-brMbAFpqbOw-480.webp",
+    "bytes": 10214
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-brMbAFpqbOw-thumb.webp",
+   "bytes": 2788
+  }
+ },
+ "video-vYP5gY1w1Ik": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-vYP5gY1w1Ik-1200.webp",
+    "bytes": 26406
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-vYP5gY1w1Ik-800.webp",
+    "bytes": 16396
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-vYP5gY1w1Ik-480.webp",
+    "bytes": 8528
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-vYP5gY1w1Ik-thumb.webp",
+   "bytes": 2280
+  }
+ },
+ "video-7ly2JRZL-Xc": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-7ly2JRZL-Xc-1200.webp",
+    "bytes": 19832
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-7ly2JRZL-Xc-800.webp",
+    "bytes": 12190
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-7ly2JRZL-Xc-480.webp",
+    "bytes": 6494
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-7ly2JRZL-Xc-thumb.webp",
+   "bytes": 2176
+  }
+ },
+ "video-v9s8r2TJT00": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-v9s8r2TJT00-1200.webp",
+    "bytes": 30822
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-v9s8r2TJT00-800.webp",
+    "bytes": 19572
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-v9s8r2TJT00-480.webp",
+    "bytes": 10418
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-v9s8r2TJT00-thumb.webp",
+   "bytes": 2786
+  }
+ },
+ "video-nyTW0augaGo": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-nyTW0augaGo-1200.webp",
+    "bytes": 19506
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-nyTW0augaGo-800.webp",
+    "bytes": 12098
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-nyTW0augaGo-480.webp",
+    "bytes": 6484
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-nyTW0augaGo-thumb.webp",
+   "bytes": 2044
+  }
+ },
+ "video-q6RLOup6bN4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-q6RLOup6bN4-1200.webp",
+    "bytes": 34792
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-q6RLOup6bN4-800.webp",
+    "bytes": 22344
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-q6RLOup6bN4-480.webp",
+    "bytes": 12240
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-q6RLOup6bN4-thumb.webp",
+   "bytes": 3342
+  }
+ },
+ "video-Kxy4IBRUBS4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-Kxy4IBRUBS4-1200.webp",
+    "bytes": 24142
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-Kxy4IBRUBS4-800.webp",
+    "bytes": 15712
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-Kxy4IBRUBS4-480.webp",
+    "bytes": 8684
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-Kxy4IBRUBS4-thumb.webp",
+   "bytes": 2836
+  }
+ },
+ "video-MIgzM81gJQA": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-MIgzM81gJQA-1200.webp",
+    "bytes": 27710
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-MIgzM81gJQA-800.webp",
+    "bytes": 16496
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-MIgzM81gJQA-480.webp",
+    "bytes": 8954
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-MIgzM81gJQA-thumb.webp",
+   "bytes": 2108
+  }
+ },
+ "video-TzeAYCddrUs": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-TzeAYCddrUs-1200.webp",
+    "bytes": 27492
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-TzeAYCddrUs-800.webp",
+    "bytes": 17940
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-TzeAYCddrUs-480.webp",
+    "bytes": 10082
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-TzeAYCddrUs-thumb.webp",
+   "bytes": 2776
+  }
+ },
+ "video-8wLm7uOQRnA": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-8wLm7uOQRnA-1200.webp",
+    "bytes": 39898
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-8wLm7uOQRnA-800.webp",
+    "bytes": 25242
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-8wLm7uOQRnA-480.webp",
+    "bytes": 14374
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-8wLm7uOQRnA-thumb.webp",
+   "bytes": 4048
+  }
+ },
+ "video-VPEpu74z84I": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-VPEpu74z84I-1200.webp",
+    "bytes": 29090
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-VPEpu74z84I-800.webp",
+    "bytes": 18404
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-VPEpu74z84I-480.webp",
+    "bytes": 9926
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-VPEpu74z84I-thumb.webp",
+   "bytes": 2794
+  }
+ },
+ "video-7RM52FGLZag": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-7RM52FGLZag-480.webp",
+    "bytes": 12244
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-7RM52FGLZag-thumb.webp",
+   "bytes": 2894
+  }
+ },
+ "video-rrpQjvD7sEE": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-rrpQjvD7sEE-1200.webp",
+    "bytes": 32724
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-rrpQjvD7sEE-800.webp",
+    "bytes": 21684
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-rrpQjvD7sEE-480.webp",
+    "bytes": 11968
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-rrpQjvD7sEE-thumb.webp",
+   "bytes": 3148
+  }
+ },
+ "video-cnQful7fLsI": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-cnQful7fLsI-1200.webp",
+    "bytes": 35098
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-cnQful7fLsI-800.webp",
+    "bytes": 21316
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-cnQful7fLsI-480.webp",
+    "bytes": 10534
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-cnQful7fLsI-thumb.webp",
+   "bytes": 2448
+  }
+ },
+ "video-XSrlMJ_lmME": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-XSrlMJ_lmME-480.webp",
+    "bytes": 9154
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-XSrlMJ_lmME-thumb.webp",
+   "bytes": 3256
+  }
+ },
+ "video-pRvYJVhLOkE": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-pRvYJVhLOkE-1200.webp",
+    "bytes": 26702
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-pRvYJVhLOkE-800.webp",
+    "bytes": 16694
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-pRvYJVhLOkE-480.webp",
+    "bytes": 9444
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-pRvYJVhLOkE-thumb.webp",
+   "bytes": 2898
+  }
+ },
+ "video-y0gMB7J6F_E": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-y0gMB7J6F_E-1200.webp",
+    "bytes": 31678
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-y0gMB7J6F_E-800.webp",
+    "bytes": 21142
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-y0gMB7J6F_E-480.webp",
+    "bytes": 11658
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-y0gMB7J6F_E-thumb.webp",
+   "bytes": 3300
+  }
+ },
+ "video-7sG_9LqdVNM": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-7sG_9LqdVNM-1200.webp",
+    "bytes": 40590
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-7sG_9LqdVNM-800.webp",
+    "bytes": 25820
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-7sG_9LqdVNM-480.webp",
+    "bytes": 14496
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-7sG_9LqdVNM-thumb.webp",
+   "bytes": 4210
+  }
+ },
+ "video-eEYp5xXPNZo": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-eEYp5xXPNZo-480.webp",
+    "bytes": 10638
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-eEYp5xXPNZo-thumb.webp",
+   "bytes": 3314
+  }
+ },
+ "video-YH0_0xBvYb4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-YH0_0xBvYb4-1200.webp",
+    "bytes": 49632
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-YH0_0xBvYb4-800.webp",
+    "bytes": 30696
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-YH0_0xBvYb4-480.webp",
+    "bytes": 15592
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-YH0_0xBvYb4-thumb.webp",
+   "bytes": 3692
+  }
+ },
+ "video-Ct6iF4KiDts": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-Ct6iF4KiDts-480.webp",
+    "bytes": 12672
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-Ct6iF4KiDts-thumb.webp",
+   "bytes": 3414
+  }
+ },
+ "video-qsHhvHH5IOw": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-qsHhvHH5IOw-480.webp",
+    "bytes": 8446
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-qsHhvHH5IOw-thumb.webp",
+   "bytes": 2410
+  }
+ },
+ "video-reRZfVQBCF8": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-reRZfVQBCF8-480.webp",
+    "bytes": 9432
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-reRZfVQBCF8-thumb.webp",
+   "bytes": 2376
+  }
+ },
+ "video-UwRy5zVRRk4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-UwRy5zVRRk4-1200.webp",
+    "bytes": 42634
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-UwRy5zVRRk4-800.webp",
+    "bytes": 27348
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-UwRy5zVRRk4-480.webp",
+    "bytes": 14710
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-UwRy5zVRRk4-thumb.webp",
+   "bytes": 3656
+  }
+ },
+ "video-KJX0iCI8bYY": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-KJX0iCI8bYY-1200.webp",
+    "bytes": 54336
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-KJX0iCI8bYY-800.webp",
+    "bytes": 34064
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-KJX0iCI8bYY-480.webp",
+    "bytes": 17072
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-KJX0iCI8bYY-thumb.webp",
+   "bytes": 3740
+  }
+ },
+ "video-I-LmPF3pKe4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-I-LmPF3pKe4-1200.webp",
+    "bytes": 49562
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-I-LmPF3pKe4-800.webp",
+    "bytes": 30758
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-I-LmPF3pKe4-480.webp",
+    "bytes": 15504
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-I-LmPF3pKe4-thumb.webp",
+   "bytes": 3658
+  }
+ },
+ "video-QWP5ysXOv7w": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-QWP5ysXOv7w-1200.webp",
+    "bytes": 52898
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-QWP5ysXOv7w-800.webp",
+    "bytes": 32040
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-QWP5ysXOv7w-480.webp",
+    "bytes": 16900
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-QWP5ysXOv7w-thumb.webp",
+   "bytes": 4326
+  }
+ },
+ "video-ESDnM4-hkYM": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-ESDnM4-hkYM-1200.webp",
+    "bytes": 23644
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-ESDnM4-hkYM-800.webp",
+    "bytes": 15216
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-ESDnM4-hkYM-480.webp",
+    "bytes": 8610
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-ESDnM4-hkYM-thumb.webp",
+   "bytes": 2500
+  }
+ },
+ "video--uEVrOpBn2s": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video--uEVrOpBn2s-1200.webp",
+    "bytes": 28672
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video--uEVrOpBn2s-800.webp",
+    "bytes": 18702
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video--uEVrOpBn2s-480.webp",
+    "bytes": 10494
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video--uEVrOpBn2s-thumb.webp",
+   "bytes": 3034
+  }
+ },
+ "video-9Lprvh8Y438": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-9Lprvh8Y438-480.webp",
+    "bytes": 4554
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-9Lprvh8Y438-thumb.webp",
+   "bytes": 1286
+  }
+ },
+ "video-1chAwVBSWWs": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-1chAwVBSWWs-1200.webp",
+    "bytes": 23176
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-1chAwVBSWWs-800.webp",
+    "bytes": 15152
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-1chAwVBSWWs-480.webp",
+    "bytes": 8728
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-1chAwVBSWWs-thumb.webp",
+   "bytes": 2534
+  }
+ },
+ "video-9gJt-anlXiE": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-9gJt-anlXiE-1200.webp",
+    "bytes": 31078
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-9gJt-anlXiE-800.webp",
+    "bytes": 20508
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-9gJt-anlXiE-480.webp",
+    "bytes": 11504
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-9gJt-anlXiE-thumb.webp",
+   "bytes": 3364
+  }
+ },
+ "video-pMdmrBLEAFc": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-pMdmrBLEAFc-1200.webp",
+    "bytes": 18888
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-pMdmrBLEAFc-800.webp",
+    "bytes": 9792
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-pMdmrBLEAFc-480.webp",
+    "bytes": 3692
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-pMdmrBLEAFc-thumb.webp",
+   "bytes": 704
+  }
+ },
+ "video-n12yiYojRjI": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-n12yiYojRjI-1200.webp",
+    "bytes": 25120
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-n12yiYojRjI-800.webp",
+    "bytes": 15832
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-n12yiYojRjI-480.webp",
+    "bytes": 8514
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-n12yiYojRjI-thumb.webp",
+   "bytes": 2564
+  }
+ },
+ "video-jwnr8gK3ETg": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-jwnr8gK3ETg-1200.webp",
+    "bytes": 31332
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-jwnr8gK3ETg-800.webp",
+    "bytes": 19150
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-jwnr8gK3ETg-480.webp",
+    "bytes": 8990
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-jwnr8gK3ETg-thumb.webp",
+   "bytes": 2042
+  }
+ },
+ "video-MgZDeNLR5KY": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-MgZDeNLR5KY-1200.webp",
+    "bytes": 21430
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-MgZDeNLR5KY-800.webp",
+    "bytes": 12906
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-MgZDeNLR5KY-480.webp",
+    "bytes": 7234
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-MgZDeNLR5KY-thumb.webp",
+   "bytes": 2410
+  }
+ },
+ "video-a9VgU3D0vok": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-a9VgU3D0vok-1200.webp",
+    "bytes": 19892
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-a9VgU3D0vok-800.webp",
+    "bytes": 12750
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-a9VgU3D0vok-480.webp",
+    "bytes": 7378
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-a9VgU3D0vok-thumb.webp",
+   "bytes": 2242
+  }
+ },
+ "video-owfvMKRntJ8": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-owfvMKRntJ8-1200.webp",
+    "bytes": 21230
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-owfvMKRntJ8-800.webp",
+    "bytes": 12994
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-owfvMKRntJ8-480.webp",
+    "bytes": 7250
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-owfvMKRntJ8-thumb.webp",
+   "bytes": 1930
+  }
+ },
+ "video-7GM9LWGFoEs": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-7GM9LWGFoEs-480.webp",
+    "bytes": 6142
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-7GM9LWGFoEs-thumb.webp",
+   "bytes": 2078
+  }
+ },
+ "video-snxpgxlhbu8": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-snxpgxlhbu8-1200.webp",
+    "bytes": 16178
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-snxpgxlhbu8-800.webp",
+    "bytes": 10048
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-snxpgxlhbu8-480.webp",
+    "bytes": 5432
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-snxpgxlhbu8-thumb.webp",
+   "bytes": 1546
+  }
+ },
+ "video-OeZjSsXzXas": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-OeZjSsXzXas-480.webp",
+    "bytes": 4676
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-OeZjSsXzXas-thumb.webp",
+   "bytes": 1468
+  }
+ },
+ "video-iicuKk_mo58": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-iicuKk_mo58-1200.webp",
+    "bytes": 33082
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-iicuKk_mo58-800.webp",
+    "bytes": 21698
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-iicuKk_mo58-480.webp",
+    "bytes": 11546
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-iicuKk_mo58-thumb.webp",
+   "bytes": 2876
+  }
+ },
+ "video-VpVDpUHtAOM": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-VpVDpUHtAOM-1200.webp",
+    "bytes": 13518
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-VpVDpUHtAOM-800.webp",
+    "bytes": 8584
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-VpVDpUHtAOM-480.webp",
+    "bytes": 4838
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-VpVDpUHtAOM-thumb.webp",
+   "bytes": 1534
+  }
+ },
+ "video-GIHs5vp-zQE": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-GIHs5vp-zQE-1200.webp",
+    "bytes": 28750
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-GIHs5vp-zQE-800.webp",
+    "bytes": 18524
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-GIHs5vp-zQE-480.webp",
+    "bytes": 9984
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-GIHs5vp-zQE-thumb.webp",
+   "bytes": 2760
+  }
+ },
+ "video-oIDa5QsHTG0": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-oIDa5QsHTG0-1200.webp",
+    "bytes": 34852
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-oIDa5QsHTG0-800.webp",
+    "bytes": 21936
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-oIDa5QsHTG0-480.webp",
+    "bytes": 11684
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-oIDa5QsHTG0-thumb.webp",
+   "bytes": 2808
+  }
+ },
+ "video-8Z8EFZOkpXI": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-8Z8EFZOkpXI-1200.webp",
+    "bytes": 48806
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-8Z8EFZOkpXI-800.webp",
+    "bytes": 31834
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-8Z8EFZOkpXI-480.webp",
+    "bytes": 17218
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-8Z8EFZOkpXI-thumb.webp",
+   "bytes": 4354
+  }
+ },
+ "video-tOxkUm2lGZo": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-tOxkUm2lGZo-480.webp",
+    "bytes": 11224
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-tOxkUm2lGZo-thumb.webp",
+   "bytes": 3288
+  }
+ },
+ "video-J6m2o9B1Ka4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-J6m2o9B1Ka4-1200.webp",
+    "bytes": 20698
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-J6m2o9B1Ka4-800.webp",
+    "bytes": 13050
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-J6m2o9B1Ka4-480.webp",
+    "bytes": 7648
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-J6m2o9B1Ka4-thumb.webp",
+   "bytes": 2490
+  }
+ },
+ "video-ZzlXT-qjUOc": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-ZzlXT-qjUOc-1200.webp",
+    "bytes": 59034
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-ZzlXT-qjUOc-800.webp",
+    "bytes": 37736
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-ZzlXT-qjUOc-480.webp",
+    "bytes": 20134
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-ZzlXT-qjUOc-thumb.webp",
+   "bytes": 4776
+  }
+ },
+ "video-TTCL4SnvtKI": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-TTCL4SnvtKI-1200.webp",
+    "bytes": 30258
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-TTCL4SnvtKI-800.webp",
+    "bytes": 19564
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-TTCL4SnvtKI-480.webp",
+    "bytes": 11136
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-TTCL4SnvtKI-thumb.webp",
+   "bytes": 2918
+  }
+ },
+ "video-lXGO65Ghwo0": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-lXGO65Ghwo0-1200.webp",
+    "bytes": 15610
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-lXGO65Ghwo0-800.webp",
+    "bytes": 9986
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-lXGO65Ghwo0-480.webp",
+    "bytes": 5314
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-lXGO65Ghwo0-thumb.webp",
+   "bytes": 1446
+  }
+ },
+ "video-bDsDqFoJ5l4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-bDsDqFoJ5l4-1200.webp",
+    "bytes": 15280
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-bDsDqFoJ5l4-800.webp",
+    "bytes": 8740
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-bDsDqFoJ5l4-480.webp",
+    "bytes": 4496
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-bDsDqFoJ5l4-thumb.webp",
+   "bytes": 1290
+  }
+ },
+ "video-J5LT42sqaRw": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-J5LT42sqaRw-1200.webp",
+    "bytes": 17526
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-J5LT42sqaRw-800.webp",
+    "bytes": 10942
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-J5LT42sqaRw-480.webp",
+    "bytes": 6160
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-J5LT42sqaRw-thumb.webp",
+   "bytes": 1738
+  }
+ },
+ "video-QLv9H4YqNoc": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-QLv9H4YqNoc-480.webp",
+    "bytes": 6244
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-QLv9H4YqNoc-thumb.webp",
+   "bytes": 2066
+  }
+ },
+ "video-CK-pAsAkwrg": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-CK-pAsAkwrg-1200.webp",
+    "bytes": 13172
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-CK-pAsAkwrg-800.webp",
+    "bytes": 8044
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-CK-pAsAkwrg-480.webp",
+    "bytes": 4360
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-CK-pAsAkwrg-thumb.webp",
+   "bytes": 1428
+  }
+ },
+ "video-31eDB7VrF6I": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-31eDB7VrF6I-1200.webp",
+    "bytes": 24086
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-31eDB7VrF6I-800.webp",
+    "bytes": 15102
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-31eDB7VrF6I-480.webp",
+    "bytes": 7962
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-31eDB7VrF6I-thumb.webp",
+   "bytes": 2320
+  }
+ },
+ "video-x_qoKWRnEwA": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-x_qoKWRnEwA-1200.webp",
+    "bytes": 29434
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-x_qoKWRnEwA-800.webp",
+    "bytes": 19048
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-x_qoKWRnEwA-480.webp",
+    "bytes": 10396
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-x_qoKWRnEwA-thumb.webp",
+   "bytes": 2880
+  }
+ },
+ "video-R48m8-Np9XU": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-R48m8-Np9XU-480.webp",
+    "bytes": 8954
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-R48m8-Np9XU-thumb.webp",
+   "bytes": 2618
+  }
+ },
+ "video-QTZDWAw4wu0": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-QTZDWAw4wu0-480.webp",
+    "bytes": 9734
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-QTZDWAw4wu0-thumb.webp",
+   "bytes": 3122
+  }
+ },
+ "video-bBTOXVG-XkA": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-bBTOXVG-XkA-1200.webp",
+    "bytes": 21802
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-bBTOXVG-XkA-800.webp",
+    "bytes": 13926
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-bBTOXVG-XkA-480.webp",
+    "bytes": 8046
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-bBTOXVG-XkA-thumb.webp",
+   "bytes": 2572
+  }
+ },
+ "video-Ds_wymTW1Bs": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-Ds_wymTW1Bs-1200.webp",
+    "bytes": 45932
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-Ds_wymTW1Bs-800.webp",
+    "bytes": 29980
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-Ds_wymTW1Bs-480.webp",
+    "bytes": 16238
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-Ds_wymTW1Bs-thumb.webp",
+   "bytes": 3958
+  }
+ },
+ "video-T8fy51DykIk": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-T8fy51DykIk-480.webp",
+    "bytes": 14014
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-T8fy51DykIk-thumb.webp",
+   "bytes": 4226
+  }
+ },
+ "video-_jHJUG1jRWE": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-_jHJUG1jRWE-480.webp",
+    "bytes": 23310
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-_jHJUG1jRWE-thumb.webp",
+   "bytes": 4590
+  }
+ },
+ "video-f3f7-lNiEH0": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-f3f7-lNiEH0-1200.webp",
+    "bytes": 42726
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-f3f7-lNiEH0-800.webp",
+    "bytes": 27668
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-f3f7-lNiEH0-480.webp",
+    "bytes": 15038
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-f3f7-lNiEH0-thumb.webp",
+   "bytes": 3896
+  }
+ },
+ "video-I27PlnO8OI8": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-I27PlnO8OI8-1200.webp",
+    "bytes": 39084
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-I27PlnO8OI8-800.webp",
+    "bytes": 24288
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-I27PlnO8OI8-480.webp",
+    "bytes": 12500
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-I27PlnO8OI8-thumb.webp",
+   "bytes": 2738
+  }
+ },
+ "video-RF_dHAi0IEE": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-RF_dHAi0IEE-1200.webp",
+    "bytes": 52696
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-RF_dHAi0IEE-800.webp",
+    "bytes": 34194
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-RF_dHAi0IEE-480.webp",
+    "bytes": 18126
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-RF_dHAi0IEE-thumb.webp",
+   "bytes": 4422
+  }
+ },
+ "video-pCPlP3ZAuyw": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-pCPlP3ZAuyw-1200.webp",
+    "bytes": 38496
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-pCPlP3ZAuyw-800.webp",
+    "bytes": 24198
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-pCPlP3ZAuyw-480.webp",
+    "bytes": 12486
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-pCPlP3ZAuyw-thumb.webp",
+   "bytes": 3006
+  }
+ },
+ "video-3-jRbQS-rs4": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-3-jRbQS-rs4-1200.webp",
+    "bytes": 20324
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-3-jRbQS-rs4-800.webp",
+    "bytes": 13000
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-3-jRbQS-rs4-480.webp",
+    "bytes": 7078
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-3-jRbQS-rs4-thumb.webp",
+   "bytes": 1896
+  }
+ },
+ "video-nnEMwdcC5kQ": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-nnEMwdcC5kQ-1200.webp",
+    "bytes": 30102
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-nnEMwdcC5kQ-800.webp",
+    "bytes": 18238
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-nnEMwdcC5kQ-480.webp",
+    "bytes": 9418
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-nnEMwdcC5kQ-thumb.webp",
+   "bytes": 2244
+  }
  }
 }

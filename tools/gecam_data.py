@@ -587,7 +587,7 @@ FAMILIES = [
         spec(T_136_131, {"136": ["Corners to 11-13/16″ high", "—", "Hand-fed", "Belt 5-7/8″, oscillating fork", "353 lb"],
                          "131": ["Corners to 5-7/8″ high", "—", "Hand-fed", "Belt 5-7/8″, oscillating fork", "265 lb"]}, NOTE_CORNER)),
     fam("gecam-corner-special", "gc-corner-special", P_CORNER, GECAM,
-        "Upper-corner, six-head and tube-frame corner grinders, PLC-controlled, boxes to 23-5/8″ and tube to 3-1/8″",
+        "Upper-corner, six-head and tube-frame corner grinders, boxes to 23-5/8″, tube to 3-1/8″",
         "Special corner grinders", "Upper-corner · six-head · tube-frame",
         "For corner welds in series, Gecam builds grinders that run from a stored recipe — the operator places the part and starts "
         "it. The upper-corner grinder brings two vertical heads down on the two top corners of a box at once and presses the belt on "
@@ -641,12 +641,12 @@ FAMILIES = [
          "Round and elliptical tube, straight and bent",
          "Electronic belt tensioning and centering",
          "Variable belt speed, 1,969 – 4,921 ft/min (10 – 25 m/s)",
-         "141: 2 belts 3/4 × 23-5/8″ (20 × 600 mm), 2 HP (1.5 kW) · 144: 2 belts 1-15/16 × 43-5/16″ (50 × 1,100 mm), 4 HP (3 kW)",
+         "141: 2 belts 13/16 × 23-5/8″ (20 × 600 mm), 2 HP (1.5 kW) · 144: 2 belts 1-15/16 × 43-5/16″ (50 × 1,100 mm), 4 HP (3 kW)",
          "Connection for a dust extractor at the point of work",
          VOLT],
         ["Automatic feeding and extraction units", "Reverse feed that returns the tube for a second pass", VOLT_OPT],
         ["ef-141", "ef-144", "ef-141-bend", "ef-141-small", "ef-144-feeder", "ef-144-panel"],
-        spec(T_141_144, {"141": ["Tube Ø3/8″ – 3-1/8″", "—", "Hand or automatic feed", "2 orbiting belts 3/4″", "408 lb"],
+        spec(T_141_144, {"141": ["Tube Ø3/8″ – 3-1/8″", "—", "Hand or automatic feed", "2 orbiting belts 13/16″", "408 lb"],
                          "144": ["Tube Ø9/16″ – 5-7/8″", "—", "Hand or automatic feed", "2 orbiting belts 1-15/16″", "463 lb"]}, NOTE_PIPE)),
     fam("eurofintec-128", "ef-centreless", P_PIPE, EURO,
         "128 S · 128 SL · 128 DL centreless pipe and bar sanders, Ø3/16″ – 5-7/8″", "128 S · 128 SL · 128 DL", "128 S · 128 SL · 128 DL · 3 models",

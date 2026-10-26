@@ -61,6 +61,7 @@ h2.title::after { content: ""; display: block; width: .9in; height: 3.5pt; backg
 .toc .row .dots { flex: 1; border-bottom: 1pt dotted #b9bdc6; transform: translateY(-3pt); }
 .toc .row .pg { font-family: "Barlow Condensed", sans-serif; font-weight: 700; color: var(--orange-ink); font-size: 11pt; }
 .toc .row .ser { color: var(--steel); font-size: 8pt; }
+.toc.compact h3 { margin: 8pt 0 3pt; } .toc.compact .row { padding: 1.5pt 0; font-size: 8.8pt; } .toc.compact .title { margin-bottom: 4pt; }
 .about p { max-width: 6.9in; font-size: 10pt; }
 .included { border: 1pt solid var(--line); background: var(--paper); display: flex; gap: 12pt; padding: 9pt 12pt; font-size: 7.4pt; margin-top: 10pt; }
 .included .lbl { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 9pt; letter-spacing: .08em; text-transform: uppercase; width: 1.1in; flex: none; line-height: 1.15; }
@@ -151,7 +152,8 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
 {# ---------------------------------------------------------------- contents #}
 <section class="page">
   <div class="band"><div class="t1">Contents</div><div class="t2">NovoTech Machine Tools Inc. · {{ spec.range_label }}</div><div class="tab"><span>Contents</span></div></div>
-  <div class="body toc">
+  {% set ntoc = groups|map(attribute="families")|map("length")|sum %}
+  <div class="body toc{{ ' compact' if ntoc > 14 else '' }}">
     <div class="kicker">{{ spec.range_label }}</div>
     <h2 class="title">Contents</h2>
     {% for g in groups %}
