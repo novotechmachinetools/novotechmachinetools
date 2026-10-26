@@ -1,7 +1,7 @@
 """ISITAN section: plate rollers (catalogue pages 4–27)."""
 from isitan_lib import *  # noqa: F401,F403
 import sahinler_plate_rolls as SH  # NovoTech premium line families appended below the ISITAN groups on the 4-roll and 3-roll pages
-from sahinler_lib import BRAND_LINE as SH_BRAND_LINE, PDF as PDF_SH
+from sahinler_lib import BRAND_LINE as SH_BRAND_LINE, premium_pdf
 
 SET = "plate-rolls"
 SECTION = "Plate rollers"
@@ -277,7 +277,7 @@ ORDER = ["hydraulic-4-roll-plate-rollers", "hydraulic-3-roll-plate-rollers", "mo
 
 
 ALL_FAMILIES = FAMILIES + SH.FAMILIES
-SHARED = {"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, PDF_SH) if p],
+SHARED = {"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf("premium-plate-rolls")) if p],
           "hero_brand_line": "ISITAN and NovoTech premium line plate rolls are made in Turkey — ISITAN Makine since 1959, the NovoTech premium line built to NovoTech's specification — with European components. Sold, installed and supported in Canada by NovoTech.",
           "origin_feature": {"title": "Made in Turkey — ISITAN and the NovoTech premium line", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959 and the NovoTech premium line plate rolls since 1976 — CE-certified machines with European hydraulic and electrical components."}}
 
@@ -290,6 +290,7 @@ def build():
         write_category(slug, PAGES[slug], ALL_FAMILIES, SET, SECTION, hub=hub, siblings=sib, guide=GUIDE, extra=SHARED if slug in (SH.P4, SH.P3) else None)
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Plate Rollers", "faq_title": "Questions we get asked about plate rollers", "nav_label": "All plate rollers", "related_blurb": hub["blurb"]},
               ALL_FAMILIES, SET, SECTION, [(s, SUBPAGE_META[s][0], SUBPAGE_META[s][1], SUBPAGE_META[s][2], SUBPAGE_META[s][3]) for s in ORDER],
-              extra={"article": "plate-roller-guide.html", "article_id": "buying-guide", "article_title": "Plate roller buying guide",
+              extra={"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf("premium-plate-rolls")) if p],
+                     "article": "plate-roller-guide.html", "article_id": "buying-guide", "article_title": "Plate roller buying guide",
                      "article_intro": "What we explain to customers before they buy a plate roller: 3-roll and 4-roll machines, initial-pinch and double-pinch, how capacity is rated, cone bending, crowning, controls and automation. Written by NovoTech's technicians from years of installing plate rolls in Canada."})
     return IMAGES

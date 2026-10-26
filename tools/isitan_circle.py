@@ -1,7 +1,7 @@
 """ISITAN section: circle cutting machines (catalogue pages 32–33) — one category page; the LS-13P lock seamer moved to the bead-roller page (Oct 2026)."""
 from isitan_lib import *  # noqa: F401,F403
 from sahinler_families import CIRCLE_FAMILIES  # SDK / EFM tank-head machines below the ISITAN group
-from sahinler_lib import PDF as PDF_SH
+from sahinler_lib import premium_pdf
 
 SET = "circle-cutting"
 SECTION = "Circle cutters & flangers"
@@ -87,7 +87,7 @@ ALL_FAMILIES = FAMILIES + CIRCLE_FAMILIES
 def build():
     write_families(SET, ALL_FAMILIES)
     write_category(SLUG, PAGE, ALL_FAMILIES, SET, SECTION,
-                   extra={"nav_label": "Circle cutters & flangers", "catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, PDF_SH) if p],
+                   extra={"nav_label": "Circle cutters & flangers", "catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf("premium-sheet-metal")) if p],
                           "hero_brand_line": "ISITAN circle cutters and NovoTech premium-line flanging machines are made in Turkey — ISITAN Makine since 1959, the NovoTech premium line built to NovoTech's specification — with European components. Sold, installed and supported in Canada by NovoTech.",
                           "origin_feature": {"title": "Made in Turkey — ISITAN and the NovoTech premium line", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959 and the NovoTech premium line tank-head machinery since 1976 — CE-certified machines with European components."},
                           "related_pages": [{"href": "hydraulic-4-roll-plate-rollers.html", "label": "Hydraulic 4-roll plate rollers"}, {"href": "bead-rollers.html", "label": "Bead rollers"}, {"href": "plate-rollers.html", "label": "Plate rollers & slip rolls"}]})

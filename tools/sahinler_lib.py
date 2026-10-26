@@ -243,7 +243,13 @@ NOTE_SIMPLE = "Capacities are for mild steel unless stated; metric values in bra
 VOLT = "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
 BRAND_LINE = "NovoTech premium line — machines built in Turkey to NovoTech's specification with European hydraulic and electrical components, sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON."
 ORIGIN = {"title": "NovoTech premium line — made in Turkey", "text": "Built in Turkey to NovoTech's specification by a CE-certified metal-forming plant with European hydraulic and electrical components; inspected before shipping, with the same CSA panel, warranty and Mississauga, ON support as every machine we sell."}
-PDF = None   # the supplier's catalogue carried its brand; NovoTech-format brochures per section are generated instead (tools/brochure)
+PDF = None   # the supplier's catalogue carried its brand; NovoTech-format brochures per section are generated instead (tools/sahinler_brochures.py)
+
+
+def premium_pdf(name):
+    """The premium-line brochure entry for a page: premium-angle-rolls, premium-ironworkers, premium-shop-presses, premium-plate-rolls, premium-sheet-metal."""
+    from sahinler_brochures import pdf_entry
+    return pdf_entry(name)
 
 
 def vid(i, title, dur):

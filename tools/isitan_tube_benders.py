@@ -1,7 +1,7 @@
 """ISITAN section: tube & pipe benders (catalogue pages 40–49) — hub `pipe-benders` with three category pages."""
 from isitan_lib import *  # noqa: F401,F403
 from sahinler_families import SPB_FAMILIES  # SPB draw benders below the ISITAN BK group
-from sahinler_lib import PDF as PDF_SH
+from sahinler_lib import premium_pdf
 
 SET = "tube-benders"
 SECTION = "Pipe & tube benders"
@@ -429,12 +429,13 @@ def build():
     sib = [(s, SUBPAGE_META[s][3], SUBPAGE_META[s][0]) for s in ORDER]
     hub = {"slug": HUB, "label": "All pipe & tube benders", "image": "is-sfb-38-cnc-a5", "blurb": "Every ISITAN tube and pipe bender NovoTech supplies, with the capacity table for the whole range."}
     related = [{"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "tube-end-forming-machines.html", "label": "Tube end forming machines"}, {"href": "circular-cold-saws.html", "label": "Circular cold saws"}]
-    shared = {"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, PDF_SH) if p],
+    shared = {"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf("premium-sheet-metal")) if p],
               "hero_brand_line": "ISITAN BK and SPB benders are made in Turkey — ISITAN Makine since 1959, the NovoTech premium line built to NovoTech's specification — with European components. Sold, installed and supported in Canada by NovoTech.",
               "origin_feature": {"title": "Made in Turkey — ISITAN and the NovoTech premium line", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959 and the NovoTech premium line bending machinery since 1976 — CE-certified machines with European components."}}
     for slug in ORDER:
         write_category(slug, {**PAGES[slug], "related_pages": related}, ALL_FAMILIES, SET, SECTION, hub=hub, siblings=sib, extra=shared if slug == P_BK else None)
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Pipe Benders & Tube Bending Machines", "faq_title": "Questions we get asked about pipe benders", "nav_label": "All pipe & tube benders", "related_blurb": hub["blurb"]},
               ALL_FAMILIES, SET, SECTION, [(s, SUBPAGE_META[s][0], SUBPAGE_META[s][1], SUBPAGE_META[s][2], SUBPAGE_META[s][3]) for s in ORDER],
-              extra={"related_pages": [{"href": f"{s}.html", "label": SUBPAGE_META[s][0]} for s in ORDER] + related})
+              extra={"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf("premium-sheet-metal")) if p],
+                     "related_pages": [{"href": f"{s}.html", "label": SUBPAGE_META[s][0]} for s in ORDER] + related})
     return IMAGES

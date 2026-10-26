@@ -299,9 +299,12 @@ def register_images(images, keys_out):
 
 
 def write_families(set_name, families):
+    from sahinler_brochures import FAMILY_PDF, pdf_entry      # premium-line families get their NovoTech brochure here
     fam = {}
     for f in families:
         d = {k: v for k, v in f.items() if k not in ("page", "group")}
+        if not d.get("pdf") and f["id"] in FAMILY_PDF:
+            d["pdf"] = pdf_entry(FAMILY_PDF[f["id"]])
         d["group"] = f.get("group", "")
         d["brand"] = f.get("brand", "isitan")
         fam[f["id"]] = d

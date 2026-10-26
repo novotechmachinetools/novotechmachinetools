@@ -11,6 +11,7 @@ import json
 import os
 
 from isitan_lib import CRUMBS, SAHINLER_INTRO_VIDEO, VOLT_FAQ_GENERIC, lower_keep_acronyms, write_json  # noqa: F401
+from sahinler_lib import premium_pdf
 from sahinler_families import *  # noqa: F401,F403
 import sahinler_plate_rolls
 import hidroliksan_data  # NovoTech premium-line production presses below the premium-line group on hydraulic-press.html
@@ -151,6 +152,8 @@ PAGES = {
     ),
 }
 EXTRA = {"hero_brand_line": BRAND_LINE, "catalogue_pdf": PDF, "origin_feature": ORIGIN}
+PAGE_PDF = {P_ANGLE: "premium-angle-rolls", P_IRON: "premium-ironworkers", P_PUNCH: "premium-ironworkers", P_PRESS: "premium-shop-presses",
+            P_NOTCH: "premium-sheet-metal", P_POLISH: "premium-sheet-metal"}
 
 
 def load_photos():
@@ -200,9 +203,9 @@ def build():
     from isitan_lib import write_category
     write_families_set()
     for slug, p in PAGES.items():
-        extra = dict(EXTRA, **SAHINLER_INTRO_VIDEO)
+        extra = dict(EXTRA, **SAHINLER_INTRO_VIDEO, catalogue_pdf=premium_pdf(PAGE_PDF[slug]))
         if slug == P_PRESS:
-            extra.update({"catalogue_pdf": None, "catalogue_pdfs": [x for x in (PDF, PDF_PROD) if x]})
+            extra.update({"catalogue_pdf": None, "catalogue_pdfs": [premium_pdf(PAGE_PDF[slug]), PDF_PROD]})
             extra.update({"hero_brand_line": "Premium-line shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses are built in Turkey with European components to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
                           "origin_feature": {"title": "Made in Turkey", "text": "The shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses come from a Turkish press builder with 50 years of hydraulic press manufacturing, CE-certified with Siemens controls and European hydraulics."}})
         write_category(slug, p, FAMILIES, SET, SECTION[slug], extra=extra)

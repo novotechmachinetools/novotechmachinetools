@@ -248,3 +248,15 @@ crops each machine and detail photo from the page, paints the printed model name
 crop, upscales every crop 2x with Real-ESRGAN (tools/esrgan.py) and writes tools/src-images/ttmc/; the machine photos are cut
 out by BiRefNet in make_images, the detail photos stay rectangular.  Nothing on the machines carries the supplier's logo (only
 the model plates), so no inpainting was needed.
+
+### Premium-line brochures (Oct 25) — task #31
+
+The supplier's catalogue was removed from the site with the rebrand, so the 31 premium-line families now carry five
+NovoTech-format brochures built by tools/brochure/build_brochure.py from the specs that tools/sahinler_brochures.py writes:
+angle rolls & section benders (PK, HPK, HPK DP, TC-42 — 17 pages), ironworkers & punching machines (HKM, HPM — 14 pages),
+hydraulic shop presses (DPM, DPM-K / DK, AT, AP, DK-S — 13 pages), plate rolls premium line (4R HSS / HS-L / HS, 4RH, 4R HC,
+3R UHS / HS — 20 pages) and notchers / circle cutters / pipe polisher / SPB benders (12 pages).  isitan_lib.write_families()
+attaches the brochure to every family listed in sahinler_brochures.FAMILY_PDF, and the pages carry it as catalogue_pdf
+(angle rolls, ironworkers, punching, notchers, pipe polishing) or as the second catalogue_pdfs entry next to the ISITAN
+catalogue (plate rollers hub + 4-roll / 3-roll pages, circle cutters, pipe benders hub + rotary draw page) and next to the
+production-press brochure (hydraulic presses).
