@@ -294,3 +294,13 @@ photos, NC screens, application photos and parts collages are used (the parts wi
 edge strip removed).  The HP with automatic back gauge comes from the Tubend General Catalogue 2026 on white (its soft mask
 is fully opaque) and is cut out by BiRefNet in make_images.  The Tubend logo (tools/src-images/tubend-logo.png) was keyed
 from the catalogue cover rendered at 600 dpi.
+
+### Cevisa photos (Oct 26)
+
+tools/cevisa_photos.py: the shearing bevellers are Cevisa's own RGBA cut-outs from cevisa.net (47-…chp7 2720 px, 49-…chp12,
+45-…chp12-inv, 52-…chp12g, 54-…chp21g, 56-…chp21g-inv, 58-…chp12g-rev, 60-…chp21g-rev) — matted on white, the ones under
+~1,000 px upscaled 2x with Real-ESRGAN, alpha resized with them.  The milling bevellers are cevisa.net JPEGs on white (CHP
+60G 1118 px, CHP 100G 2480 px, CHP 30G and 60G INV only 300 × 400, upscaled 2x) cut out by BiRefNet in make_images.  The
+catalogue's photos are yard and workshop shots, so they are used rectangular only: bevelled plate samples, machines at work,
+the CHP 12 on a crane hook, the CHP 21G REV turned over (on white, cut out).  The Cevisa logo
+(tools/src-images/cevisa-logo.png) was keyed from the catalogue's back page rendered at 600 dpi.

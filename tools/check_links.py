@@ -18,7 +18,6 @@ OLD_SITE = {
     "products", "about-us", "contact-us", "brochures", "metal-fabricating-articles", "privacy-policy",
     "plate-roller-bender",
     "folder-sheet-metal-brake",
-    "plate-beveler",
     "lock-former", "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
     "aluminum-and-pvc-upcut-saws",
     "press-brake-tooling-punch-and-die", "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction",

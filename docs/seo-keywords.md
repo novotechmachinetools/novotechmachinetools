@@ -318,3 +318,20 @@ Placement, per the brief (only HP 10 – HP 150, WP 100 / WP 300, TB 34 / TB 42)
   the Tubend range — MHB, roller conveyors, PK / HPK, SPB, TT notchers, BP polisher, AC / DK saws — is not on the site.
 Videos: four of NovoTech's own videos of the Tubend HP; the channel's HP 22 / HP 40 videos show a different, cream-coloured
 press and are not used.  No factory video, so no Inside-the-factory section on the two pages.
+
+## Cevisa plate bevellers (Oct 26) — task #16
+
+Search Console (Jun 2025 – Oct 2026), old plate-beveler page: 27,056 impressions, avg. position 32 — "plate bevel machine"
+1,618, "plate beveling machine" 1,582 (pos. 37), "plate beveling equipment" 1,457, "plate bevelling machine" 1,333 (pos. 28),
+"plate bevelling machines" 1,062, "plate beveling machines" 1,051, "plate cold bevelling machine(s)" ~1,000 (pos. 20),
+"plate bevelling" 928, "bevelling machine" 667, "plate beveler machine" 611, "plate beveler" 600, "portable plate beveling
+machine" 375, "portable plate beveler" 361 (pos. 16).
+- plate-beveler (old URL, kept) — "Plate Beveling Machines, Plate 1/8″ – 4-3/4″ | NovoTech" (US spelling in the title, the
+  Canadian / UK "plate bevelling machines" in the h1, "cold bevellers" in the meta).
+- One page, four families small → large (the section rule allows up to ~4): CHP 7 / 12 / 12 INV standard shearing,
+  CHP 12G / 21G / 21G INV adjustable, CHP 12G REV / 21G REV reversible, CHP 30G / 60G / 60G INV / 100G milling.
+- Cevisa is shown under its own brand, as on the old site ("CEVISA … MADE IN SPAIN") and NovoTech's channel videos.
+- Old Cevisa PDFs that earn impressions (CEVISA-beveling-machine-general-catalog.pdf 218, CHP60g … 20, CHP12g-and-CHP21g …
+  12, CHP7-and-CHP12 … 3) are 301-redirected to the new brochure.
+Videos: 25 of NovoTech's own videos of the Cevisa machines; "CEVISA BEVELLING MACHINES Factory introduction" is the
+Inside-the-factory video.
