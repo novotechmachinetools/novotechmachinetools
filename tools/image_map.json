@@ -20602,5 +20602,341 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "vn-ulf-1": {
+  "src": "tools/src-images/value-laser/vn-ulf-1.webp",
+  "alt": "NovoTech ULF 3015 open-type fiber laser — 10 × 5 ft single table, Cypcut console on its arm",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulf-frame": {
+  "src": "tools/src-images/value-laser/vn-ulf-frame.webp",
+  "alt": "Welded bed of the ULF — internal stiffeners, annealed and shot-blasted to relieve the welding stress",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulf-beam": {
+  "src": "tools/src-images/value-laser/vn-ulf-beam.webp",
+  "alt": "Cast-aluminum crossbeam of the ULF with the cutting-head carriage and cable chain",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulf-console": {
+  "src": "tools/src-images/value-laser/vn-ulf-console.webp",
+  "alt": "Cypcut CNC console — monitor, keyboard and hand pendant on a swing arm",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulf-head": {
+  "src": "tools/src-images/value-laser/vn-ulf-head.webp",
+  "alt": "Raytools autofocus cutting head with anti-collision protection",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulf-source": {
+  "src": "tools/src-images/value-laser/vn-ulf-source.webp",
+  "alt": "Raycus fiber laser source — Raycus, MAX or IPG chosen at order",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulf-chiller": {
+  "src": "tools/src-images/value-laser/vn-ulf-chiller.webp",
+  "alt": "Hanli water chiller for the laser source and the cutting head",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulf-skyeye": {
+  "src": "tools/src-images/value-laser/vn-ulf-skyeye.webp",
+  "alt": "Camera nesting over the table — scan the remnant, nest the parts on it (optional)",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ipg": {
+  "src": "tools/src-images/value-laser/vn-ipg.webp",
+  "alt": "IPG fiber laser source (optional)",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-1": {
+  "src": "tools/src-images/value-laser/vn-ule-1.webp",
+  "alt": "NovoTech ULE enclosed fiber laser with exchange table — 20 × 8.5 ft working area, full enclosure, front console",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-console": {
+  "src": "tools/src-images/value-laser/vn-ule-console.jpg",
+  "alt": "ULE operator station — touchscreen CNC with the cutting database, emergency stop and hand pendant",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-bed": {
+  "src": "tools/src-images/value-laser/vn-ule-bed.jpg",
+  "alt": "Inside the ULE bed — zoned extraction chambers under the table, rack and linear guide",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-frame": {
+  "src": "tools/src-images/value-laser/vn-ule-frame.webp",
+  "alt": "Welded bed of the ULE — precision-welded and heat-treated, flat to 0.05 mm per square metre",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-servo": {
+  "src": "tools/src-images/value-laser/vn-ule-servo.jpg",
+  "alt": "Servo motor and reducer driving the gantry",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-rack": {
+  "src": "tools/src-images/value-laser/vn-ule-rack.jpg",
+  "alt": "Precision-ground rack beside the linear guide rail",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-chiller": {
+  "src": "tools/src-images/value-laser/vn-ule-chiller.jpg",
+  "alt": "Hanli 12000 water chiller, sized for a 12 kW source",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-cabinet": {
+  "src": "tools/src-images/value-laser/vn-ule-cabinet.jpg",
+  "alt": "Electrical cabinet — Schneider components, servo drives and the CNC, two cooling fans",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-fms-tower": {
+  "src": "tools/src-images/value-laser/vn-fms-tower.jpg",
+  "alt": "Sheet storage tower feeding an exchange-table laser — flexible manufacturing system (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-fms-gantry": {
+  "src": "tools/src-images/value-laser/vn-fms-gantry.jpg",
+  "alt": "Gantry loading and unloading with suction cups (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-precitec": {
+  "src": "tools/src-images/value-laser/vn-precitec.webp",
+  "alt": "Precitec ProCutter autofocus cutting head (optional)",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulft-1": {
+  "src": "tools/src-images/value-laser/vn-ulft-1.webp",
+  "alt": "NovoTech ULFT open-type sheet-and-tube fiber laser — 10 × 5 ft table and a rotary chuck for tube on one machine",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulft-frame": {
+  "src": "tools/src-images/value-laser/vn-ulft-frame.webp",
+  "alt": "ULFT bed — hollow welded frame with fish-scale stiffeners, stress-relieved",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulft-beam": {
+  "src": "tools/src-images/value-laser/vn-ulft-beam.webp",
+  "alt": "Crossbeam and cutting-head carriage of the ULFT",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulft-chuck": {
+  "src": "tools/src-images/value-laser/vn-ulft-chuck.webp",
+  "alt": "Pneumatic chuck of the tube unit — one-key self-centring, three times faster than an electric chuck",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulft-head": {
+  "src": "tools/src-images/value-laser/vn-ulft-head.webp",
+  "alt": "Autofocus cutting head — anti-collision, micro-joints so parts stay in the sheet",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulft-sources": {
+  "src": "tools/src-images/value-laser/vn-ulft-sources.webp",
+  "alt": "MAX and Raycus fiber laser sources — chosen at order",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-1": {
+  "src": "tools/src-images/value-laser/vn-ulet-1.webp",
+  "alt": "NovoTech ULET enclosed sheet-and-tube fiber laser — full enclosure with the tube chuck at the end",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-beam": {
+  "src": "tools/src-images/value-laser/vn-ulet-beam.webp",
+  "alt": "Crossbeam and Z axis of the ULET — manganese steel, heat-treated",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-chuck": {
+  "src": "tools/src-images/value-laser/vn-ulet-chuck.jpg",
+  "alt": "Pneumatic chuck clamping a square tube",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-head": {
+  "src": "tools/src-images/value-laser/vn-ulet-head.webp",
+  "alt": "Autofocus cutting head with anti-collision protection",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-source": {
+  "src": "tools/src-images/value-laser/vn-ulet-source.webp",
+  "alt": "Raycus fiber laser source, 1.5 to 40 kW",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-1": {
+  "src": "tools/src-images/value-laser/vn-ult-1.webp",
+  "alt": "NovoTech ULT tube laser — two pneumatic chucks, bundle loader on the left, unloading table in front",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-frame": {
+  "src": "tools/src-images/value-laser/vn-ult-frame.webp",
+  "alt": "ULT bed with the cutting cabin, chuck carriage rails and following supports",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-beam": {
+  "src": "tools/src-images/value-laser/vn-ult-beam.webp",
+  "alt": "Stress-relieved crossbeam carrying the chuck carriage",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-console": {
+  "src": "tools/src-images/value-laser/vn-ult-console.webp",
+  "alt": "CNC console with Cypcut tube software",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-chuck": {
+  "src": "tools/src-images/value-laser/vn-ult-chuck.webp",
+  "alt": "Double-acting pneumatic chuck — clamps tube from Ø0.6 to 8.7″ without changing jaws",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-head": {
+  "src": "tools/src-images/value-laser/vn-ult-head.webp",
+  "alt": "Autofocus cutting head for tube",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-tubest": {
+  "src": "tools/src-images/value-laser/vn-ult-tubest.jpg",
+  "alt": "TubesT tube nesting — parts unfolded and nested along the bar (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-dualy": {
+  "src": "tools/src-images/value-laser/vn-ult-dualy.jpg",
+  "alt": "Dual Y-axis cutting — a short Y axis on the head for fast cutting of small tube (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-loader": {
+  "src": "tools/src-images/value-laser/vn-ult-loader.jpg",
+  "alt": "Automatic bundle loader (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-zero": {
+  "src": "tools/src-images/value-laser/vn-ult-zero.jpg",
+  "alt": "Zero-tail cutting and five-axis ±45° bevel head (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-feeder": {
+  "src": "tools/src-images/value-laser/vn-ult-feeder.jpg",
+  "alt": "Automatic feeding system — up to 606 lb (275 kg) per tube, 19 s cycle (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
  }
 }

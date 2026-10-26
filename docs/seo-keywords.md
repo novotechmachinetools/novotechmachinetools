@@ -382,3 +382,19 @@ aluminium profiles", "copy router machine for aluminium", "aluminum profile end 
   301-redirected to the NovoTech Plastmak brochure.
 Videos: 14 of NovoTech's own Plastmak videos (SC 401, SC 402, SC 400, SC 4000S / PLUS, SC 101 S, SC 501, SC 502S, SC 1000); no
 factory video on the channel, so these pages have no Inside-the-factory section.
+
+## NovoTech value-line lasers (Oct 26) — task #36
+
+Ahrefs (plan) and Semrush (API units) were unavailable and Ubersuggest only answers autocomplete, so the titles come from Search
+Console and Canadian autocomplete. GSC: "laser cutting machines" 520, "fiber laser cutting machine" 349, "laser cutting machine"
+240, "laser cutting system" 213 — all on the hub, which keeps them. Autocomplete (CA): "fiber laser cutter (for sheet metal,
+canada, price, 5x10, 6kw / 12kw, enclosed, gantry)", "tube laser cutter (for sale, price, canada, ontario)", "pipe laser cutter",
+"tube and pipe laser cutting machine", "plate and tube laser cutting machine", "5 axis tube laser cutter", "h beam laser cutting
+machine". The subpages therefore use "fiber laser cutter" / "tube laser cutter" so they do not compete with the hubs'
+"…cutting machines":
+- novotech-fiber-lasers "NovoTech Fiber Laser Cutters, 1.5–60 kW · Value Line" (ULF, ULE, ULFT, ULET; menu "NovoTech fiber
+  lasers · value line", second under Sheet laser cutters).
+- novotech-tube-lasers "NovoTech Tube Laser Cutters, Ø0.4–14″ · Value Line" (ULT; menu "NovoTech tube lasers · value line").
+- The hubs now introduce three lines (Dener premium, NovoTech value, Senfeng value); the tube hub's h1 goes to 40 kW.
+- No supplier name anywhere; model numbers are the supplier's (ULF-3015G, ULE-6026E, ULT-024A). The ULG ground-rail and ULH
+  H-beam lasers are left out (no photos), the ULJM precision laser too (contradictory data).

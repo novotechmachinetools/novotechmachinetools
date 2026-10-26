@@ -206,6 +206,18 @@ real alpha channel → `trim` only) and the hi-res factory photos staged from th
 (`cutout=True`); flood-filling the white leaked into the white machine bodies, so that path (`white_alpha`) is kept only for
 the one render where it worked (`vl-wadg-1`).  Keys `vl-*`; `tools/vl_sheet_keys.txt` is written by `tools/vl_sheet_pages.py`.
 
+## NovoTech value-line lasers (section `value-laser`, tools/vl_laser_photos.py)
+
+The ULF / ULE / ULFT / ULET sheet lasers and the ULT tube lasers are sold under NovoTech's name, so the supplier's badges, the
+model labels painted on the enclosures, the loader-post lettering and the warning stickers with Chinese text are erased (boxes
+in page pixels on 50 px grid views, LaMa through `tools/delogo.py`).  Sources (outside the repository, `/home/claude/adhlaser/`):
+the pages of the supplier's series brochures and 2025 general brochure rendered from the PDFs (`src/`), and the images inside
+the ULE 3015 quotation (`q/`).  Renders are cropped from the pages, upscaled with Real-ESRGAN x2 when the crop is under 900 px
+(twice under 700 px), cut out with BiRefNet (cache key `vlaser-<key>`) and saved as WebP with lossless alpha; the ULE hero
+(q-01-27) keeps its own mask with the soft floor shadow removed (alpha below 90 dropped); the quotation photos, the automation
+photos and the diagrams stay rectangular JPEGs.  Optional accessories say "(optional)" in the caption.  Keys `vn-*`;
+`tools/vl_laser_keys.txt` is written by `tools/vl_laser_pages.py`.
+
 ## Senfeng (section `senfeng`, tools/senfeng_photos.py)
 
 Senfeng is sold under its own brand (the value line of the laser section), so the logo stays.  Sources (outside the repository,

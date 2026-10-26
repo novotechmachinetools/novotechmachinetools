@@ -2,6 +2,7 @@
  "order": [
   "dn-eftl",
   "dn-ftl",
+  "vn-ult",
   "sf-t",
   "sf-plus",
   "sf-heavy"
@@ -415,6 +416,480 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "tube-ftl"
+  },
+  "vn-ult": {
+   "id": "vn-ult",
+   "brand": "novotech",
+   "name": "ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft bars, 1.5 – 40 kW",
+   "short": "ULT tube lasers",
+   "models_label": "ULT-016A – 036A · two- and three-chuck · 10 versions",
+   "summary": "The tube laser for round, square, rectangular, oval and open profiles: pneumatic self-centring chucks at both ends of the bar, servo-following supports under it, and a 1.5 to 40 kW source that cuts holes, slots, copes and notches and parts the tube in one pass. Four chuck sizes — Ø6.3″, 9.4″, 11″ and 14.2″ — for bars of 20, 29.5 or 39 ft and up to 2,205 lb; 328 ft/min and 1.2 G on the small chucks. The three-chuck version takes over the bar as it shortens, so the last part is cut with no remnant. Pneumatic loaders, bundle feeding, a ±45° five-axis bevel head and TubesT nesting are options.",
+   "features": [
+    "Ø0.4 – 14.2″ round, square to 13.8″; bars 20 – 39 ft and to 2,205 lb; 1.5 – 40 kW; to 328 ft/min, 1.2 G",
+    "Double-acting pneumatic self-centring chucks — the standard chuck clamps Ø0.6 to 8.7″ (15 – 220 mm) without changing the jaws",
+    "Fiber laser source 1.5 – 40 kW (Raycus, MAX or IPG) with an autofocus tube cutting head and anti-collision protection",
+    "Cypcut tube control with the cutting database and power-based speed adjustment",
+    "Patented welded bed with servo-following tube supports; stress-relieved crossbeam with cushion pads and limit switches",
+    "Delta servos, YYC rack and Hiwin guides; Hanli water chiller; unloading table",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Pneumatic loader or automatic bundle loader (bundles to 11,000 lb / 5 t) and feeding system",
+    "Third chuck for zero-tail cutting; five-axis ±45° bevel head",
+    "Dual Y-axis cutting for small tube",
+    "TubesT nesting software",
+    "Custom voltage: 208, 240 or 480 V 3-phase"
+   ],
+   "images": [
+    "vn-ult-1",
+    "vn-ult-chuck",
+    "vn-ult-frame",
+    "vn-ult-beam",
+    "vn-ult-head",
+    "vn-ult-console",
+    "vn-ult-loader",
+    "vn-ult-zero",
+    "vn-ult-feeder",
+    "vn-ult-dualy",
+    "vn-ult-tubest"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "ULT two-chuck tube lasers",
+      "sub": "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft bars · 1.5 – 40 kW",
+      "models": [
+       "ULT-016A",
+       "ULT-016B",
+       "ULT-024A",
+       "ULT-024B",
+       "ULT-028A",
+       "ULT-036A"
+      ],
+      "rows": [
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+         "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+         "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+         "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+         "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+         "Ø0.4 – 14.2″ (Ø10 – 360 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "max. side",
+        "cells": [
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "8.9″ (227 mm)",
+         "9.1″ (230 mm)",
+         "10.8″ (275 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bar length",
+        "sub": "",
+        "cells": [
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "on the chucks",
+        "cells": [
+         "331 lb (150 kg)",
+         "353 lb (160 kg)",
+         "882 lb (400 kg)",
+         "573 lb (260 kg)",
+         "1,323 lb (600 kg)",
+         "2,205 lb (1,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "246 ft/min (75 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.2 G",
+         "1.2 G",
+         "1 G",
+         "1 G",
+         "0.8 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Chuck speed",
+        "sub": "",
+        "cells": [
+         "53.5 rpm",
+         "53.5 rpm",
+         "53.5 rpm",
+         "53.5 rpm",
+         "37.5 rpm",
+         "23 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Head travel X / Z",
+        "sub": "",
+        "cells": [
+         "11.8 / 9.8″ (300 / 250 mm)",
+         "11.8 / 9.8″ (300 / 250 mm)",
+         "15.7 / 11.8″ (400 / 300 mm)",
+         "15.7 / 11.8″ (400 / 300 mm)",
+         "17.7 / 11.8″ (450 / 300 mm)",
+         "21.7 / 15.7″ (550 / 400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loading",
+        "sub": "",
+        "cells": [
+         "pneumatic loader: round Ø0.4 – 6.3″, square to 6.3″ diagonal (160 mm)",
+         "pneumatic loader: round Ø0.4 – 6.3″, square to 6.3″ diagonal (160 mm)",
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal · 573 lb (260 kg) bars",
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal",
+         "bundle feeding system or crane",
+         "bundle feeding system or crane"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "ULT three-chuck tube lasers · zero-tail",
+      "sub": "4 chuck versions · Ø0.4 – 14.2″ · the last part cut without a remnant",
+      "models": [
+       "ULT-024A · 3 chucks",
+       "ULT-024B · 3 chucks",
+       "ULT-028A · 3 chucks",
+       "ULT-036A · 3 chucks"
+      ],
+      "rows": [
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+         "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+         "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+         "Ø0.4 – 14.2″ (Ø10 – 360 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "max. side",
+        "cells": [
+         "8.9″ (227 mm)",
+         "9.1″ (230 mm)",
+         "10.8″ (275 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bar length",
+        "sub": "",
+        "cells": [
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "on the chucks",
+        "cells": [
+         "882 lb (400 kg)",
+         "573 lb (260 kg)",
+         "1,323 lb (600 kg)",
+         "2,205 lb (1,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "246 ft/min (75 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G",
+         "1 G",
+         "0.8 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Chuck speed",
+        "sub": "",
+        "cells": [
+         "53.5 rpm",
+         "53.5 rpm",
+         "37.5 rpm",
+         "23 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Head travel X / Z",
+        "sub": "",
+        "cells": [
+         "27.6 / 13.8″ (700 / 350 mm)",
+         "27.6 / 13.8″ (700 / 350 mm)",
+         "31.5 / 13.8″ (800 / 350 mm)",
+         "39.4 / 15.7″ (1000 / 400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loading",
+        "sub": "",
+        "cells": [
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal · 573 lb (260 kg) bars",
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal",
+         "bundle feeding system or crane",
+         "bundle feeding system or crane"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "ULT-016A",
+      "glance": [
+       "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "331 lb (150 kg)"
+      ]
+     },
+     {
+      "name": "ULT-016B",
+      "glance": [
+       "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "353 lb (160 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024A",
+      "glance": [
+       "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "882 lb (400 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024B",
+      "glance": [
+       "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "573 lb (260 kg)"
+      ]
+     },
+     {
+      "name": "ULT-028A",
+      "glance": [
+       "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+       "1.5 – 40 kW",
+       "246 ft/min (75 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "ULT-036A",
+      "glance": [
+       "Ø0.4 – 14.2″ (Ø10 – 360 mm)",
+       "1.5 – 40 kW",
+       "197 ft/min (60 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "2,205 lb (1,000 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024A · 3 chucks",
+      "glance": [
+       "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "882 lb (400 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024B · 3 chucks",
+      "glance": [
+       "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "573 lb (260 kg)"
+      ]
+     },
+     {
+      "name": "ULT-028A · 3 chucks",
+      "glance": [
+       "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+       "1.5 – 40 kW",
+       "246 ft/min (75 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "ULT-036A · 3 chucks",
+      "glance": [
+       "Ø0.4 – 14.2″ (Ø10 – 360 mm)",
+       "1.5 – 40 kW",
+       "197 ft/min (60 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "2,205 lb (1,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "round",
+     "power",
+     "speed",
+     "length",
+     "load"
+    ],
+    "caps": {},
+    "note": "The model number gives the bar length and the chuck: ULT6024A = 6 m (20 ft) bars and the Ø240 mm chuck, version A; every chuck size is built for 6, 9 or 12 m bars (ULT6…, ULT9…, ULT12…). A and B are two chuck versions of the same size. Square and rectangular tube is limited by the chuck's square capacity; laser power is chosen at order."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Tube-Lasers-Value-Line-2026.pdf",
+    "label": "Download the NovoTech tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "tube-novotech"
   },
   "sf-t": {
    "id": "sf-t",

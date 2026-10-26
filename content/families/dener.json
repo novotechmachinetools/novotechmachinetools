@@ -24,7 +24,12 @@
   "sf-t",
   "sf-plus",
   "sf-heavy",
-  "sf-bdc"
+  "sf-bdc",
+  "vn-ulf",
+  "vn-ule",
+  "vn-ulft",
+  "vn-ulet",
+  "vn-ult"
  ],
  "families": {
   "dn-xl-small": {
@@ -8041,6 +8046,1755 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "panel-senfeng"
+  },
+  "vn-ulf": {
+   "id": "vn-ulf",
+   "brand": "novotech",
+   "name": "ULF open-type single-table fiber lasers, 10 × 5 to 85 × 10.5 ft, 1.5 – 60 kW",
+   "short": "ULF open-type lasers",
+   "models_label": "ULF-3015G – 6020G · ULF-3015E – 6022E · ULF-6026E – 26032E · 16 models",
+   "summary": "The open-type laser: a single table loaded from three sides, the source and cabinet built into the machine, and the price that makes a first fiber laser possible. The ULF-G takes 1.5 to 6 kW at 295 ft/min and 1.4 G on 10 × 5 to 20 × 6.7 ft tables — the machine for a shop that cuts sheet and light plate a few hours a day. The ULF-E is the heavier build: 1.5 to 12 kW, 459 ft/min, 1.7 G, tables to 7.2 ft wide and up to 6,600 lb of plate. The large-format ULF-E machines run 6 to 60 kW over plate tables from 20 × 8.5 to 85 × 10.5 ft for structural, trailer and heavy-equipment work, with up to 79,000 lb (36 t) on the table.",
+   "features": [
+    "1.5 – 60 kW; 10 × 5 to 85 × 10.5 ft; 295 – 459 ft/min, 1.4 – 1.7 G; table loads to 79,000 lb",
+    "Fiber laser source chosen at order — Raycus, MAX or IPG — with an autofocus cutting head (Raytools or BOCI) and capacitive height sensing",
+    "Cypcut bus control with nesting, the cutting-parameter database and power-based speed adjustment; hand pendant",
+    "Welded bed annealed and shot-blasted to relieve stress; Inovance or Delta servos, YYC racks, Hiwin linear guides, DESBOER gearboxes",
+    "Zoned dust extraction under the table, automatic lubrication, Hanli water chiller, air-cooled electrical cabinet with Schneider components",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)",
+    "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"
+   ],
+   "optional": [
+    "Precitec ProCutter cutting head; IPG source; higher power at order",
+    "Camera nesting over the table for remnants",
+    "Sheet storage tower and gantry loading / unloading (flexible manufacturing system)",
+    "Dust collector, air compressor and nitrogen generator sized to the machine",
+    "Custom voltage: 208, 240 or 480 V 3-phase"
+   ],
+   "images": [
+    "vn-ulf-1",
+    "vn-ulf-frame",
+    "vn-ulf-beam",
+    "vn-ulf-console",
+    "vn-ulf-head",
+    "vn-ulf-source",
+    "vn-ulf-chiller",
+    "vn-ipg",
+    "vn-ulf-skyeye"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "ULF-G open-type fiber lasers · 1.5 – 6 kW",
+      "sub": "5 models · 10 × 5 to 20 × 6.7 ft · single table",
+      "models": [
+       "ULF-3015G",
+       "ULF-4015G",
+       "ULF-6015G",
+       "ULF-4020G",
+       "ULF-6020G"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "10.2 ft × 5 ft · 122 × 60″ (3,100 × 1,530 mm)",
+         "13.5 ft × 5 ft · 161 × 60″ (4,100 × 1,530 mm)",
+         "20 ft × 5 ft · 240 × 60″ (6,100 × 1,530 mm)",
+         "13.5 ft × 6.7 ft · 161 × 81″ (4,100 × 2,050 mm)",
+         "20 ft × 6.7 ft · 240 × 81″ (6,100 × 2,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 6 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW",
+         "1.5 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "no load",
+        "cells": [
+         "295 ft/min (90 m/min)",
+         "295 ft/min (90 m/min)",
+         "295 ft/min (90 m/min)",
+         "295 ft/min (90 m/min)",
+         "295 ft/min (90 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed with Delta servos",
+        "sub": "",
+        "cells": [
+         "230 ft/min (70 m/min)",
+         "230 ft/min (70 m/min)",
+         "230 ft/min (70 m/min)",
+         "230 ft/min (70 m/min)",
+         "230 ft/min (70 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "single axis",
+        "cells": [
+         "1.4 G",
+         "1.4 G",
+         "1.4 G",
+         "1.4 G",
+         "1.4 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.02 mm/m (±0.0002″/ft)",
+         "±0.02 mm/m (±0.0002″/ft)",
+         "±0.02 mm/m (±0.0002″/ft)",
+         "±0.02 mm/m (±0.0002″/ft)",
+         "±0.02 mm/m (±0.0002″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "1,984 lb (900 kg)",
+         "2,646 lb (1,200 kg)",
+         "3,968 lb (1,800 kg)",
+         "3,527 lb (1,600 kg)",
+         "5,291 lb (2,400 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "185 × 92 × 73″ (4,700 × 2,345 × 1,850 mm)",
+         "236 × 92 × 73″ (6,000 × 2,345 × 1,850 mm)",
+         "327 × 92 × 73″ (8,300 × 2,345 × 1,850 mm)",
+         "236 × 115 × 73″ (6,000 × 2,916 × 1,850 mm)",
+         "327 × 115 × 73″ (8,300 × 2,916 × 1,850 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "ULF-E open-type fiber lasers · 1.5 – 12 kW",
+      "sub": "5 models · 10 × 5 to 20 × 7.2 ft · heavier build, 1.7 G",
+      "models": [
+       "ULF-3015E",
+       "ULF-4015E",
+       "ULF-6015E",
+       "ULF-4022E",
+       "ULF-6022E"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "10.2 ft × 5 ft · 122 × 60″ (3,100 × 1,530 mm)",
+         "13.5 ft × 5 ft · 161 × 60″ (4,100 × 1,530 mm)",
+         "20 ft × 5 ft · 240 × 60″ (6,100 × 1,530 mm)",
+         "13.5 ft × 7.2 ft · 161 × 87″ (4,100 × 2,200 mm)",
+         "20 ft × 7.2 ft · 240 × 87″ (6,100 × 2,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 12 kW",
+         "1.5 – 12 kW",
+         "1.5 – 12 kW",
+         "1.5 – 12 kW",
+         "1.5 – 12 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "no load",
+        "cells": [
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed with Delta servos",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "axes combined",
+        "cells": [
+         "1.7 G",
+         "1.7 G",
+         "1.7 G",
+         "1.7 G",
+         "1.7 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "2,425 lb (1,100 kg)",
+         "3,307 lb (1,500 kg)",
+         "4,850 lb (2,200 kg)",
+         "4,409 lb (2,000 kg)",
+         "6,614 lb (3,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "185 × 92 × 77″ (4,700 × 2,345 × 1,950 mm)",
+         "236 × 92 × 77″ (6,000 × 2,345 × 1,950 mm)",
+         "327 × 92 × 77″ (8,300 × 2,345 × 1,950 mm)",
+         "236 × 128 × 77″ (6,000 × 3,250 × 1,950 mm)",
+         "327 × 128 × 77″ (8,300 × 3,250 × 1,950 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "ULF-E large-format plate lasers · 6 – 60 kW",
+      "sub": "6 models · 20 × 8.5 to 85 × 10.5 ft",
+      "models": [
+       "ULF-6026E",
+       "ULF-8026E",
+       "ULF-13026E",
+       "ULF-13032E",
+       "ULF-26026E",
+       "ULF-26032E"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "20 ft × 8.5 ft (6,100 × 2,600 mm)",
+         "26.2 ft × 8.5 ft (8,000 × 2,600 mm)",
+         "42.7 ft × 8.5 ft (13,000 × 2,600 mm)",
+         "42.7 ft × 10.5 ft (13,000 × 3,200 mm)",
+         "85.3 ft × 8.5 ft (26,000 × 2,600 mm)",
+         "85.3 ft × 10.5 ft (26,000 × 3,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW",
+         "6 – 60 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "no load",
+        "cells": [
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.7 G",
+         "1.7 G",
+         "1.7 G",
+         "1.4 G",
+         "1.7 G",
+         "1.4 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.0012″ (±0.03 mm)",
+         "±0.0016″ (±0.04 mm)",
+         "±0.0028″ (±0.07 mm)",
+         "±0.0028″ (±0.07 mm)",
+         "±0.0028″ (±0.07 mm per 10 m)",
+         "±0.0028″ (±0.07 mm per 10 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.0008″ (±0.02 mm)",
+         "±0.0008″ (±0.02 mm)",
+         "±0.0012″ (±0.03 mm)",
+         "±0.0012″ (±0.03 mm)",
+         "±0.0020″ (±0.05 mm)",
+         "±0.0020″ (±0.05 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "8,598 lb (3,900 kg)",
+         "11,464 lb (5,200 kg)",
+         "30,865 lb (14,000 kg)",
+         "39,683 lb (18,000 kg)",
+         "61,729 lb (28,000 kg)",
+         "79,366 lb (36,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28.5 × 12.5 × 6.7 ft (8,700 × 3,800 × 2,050 mm)",
+         "36.1 × 12.5 × 6.7 ft (11,000 × 3,800 × 2,050 mm)",
+         "53.5 × 12.3 × 8 ft (16,300 × 3,750 × 2,450 mm)",
+         "54.1 × 14.3 × 8 ft (16,500 × 4,350 × 2,450 mm)",
+         "101.7 × 12.3 × 8 ft (31,000 × 3,750 × 2,450 mm)",
+         "103.3 × 14.3 × 8 ft (31,500 × 4,350 × 2,450 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "ULF-3015G",
+      "glance": [
+       "10.2 ft × 5 ft · 122 × 60″ (3,100 × 1,530 mm)",
+       "1.5 – 6 kW",
+       "295 ft/min (90 m/min)",
+       "1.4 G",
+       "1,984 lb (900 kg)"
+      ]
+     },
+     {
+      "name": "ULF-4015G",
+      "glance": [
+       "13.5 ft × 5 ft · 161 × 60″ (4,100 × 1,530 mm)",
+       "1.5 – 6 kW",
+       "295 ft/min (90 m/min)",
+       "1.4 G",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "ULF-6015G",
+      "glance": [
+       "20 ft × 5 ft · 240 × 60″ (6,100 × 1,530 mm)",
+       "1.5 – 6 kW",
+       "295 ft/min (90 m/min)",
+       "1.4 G",
+       "3,968 lb (1,800 kg)"
+      ]
+     },
+     {
+      "name": "ULF-4020G",
+      "glance": [
+       "13.5 ft × 6.7 ft · 161 × 81″ (4,100 × 2,050 mm)",
+       "1.5 – 6 kW",
+       "295 ft/min (90 m/min)",
+       "1.4 G",
+       "3,527 lb (1,600 kg)"
+      ]
+     },
+     {
+      "name": "ULF-6020G",
+      "glance": [
+       "20 ft × 6.7 ft · 240 × 81″ (6,100 × 2,050 mm)",
+       "1.5 – 6 kW",
+       "295 ft/min (90 m/min)",
+       "1.4 G",
+       "5,291 lb (2,400 kg)"
+      ]
+     },
+     {
+      "name": "ULF-3015E",
+      "glance": [
+       "10.2 ft × 5 ft · 122 × 60″ (3,100 × 1,530 mm)",
+       "1.5 – 12 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "2,425 lb (1,100 kg)"
+      ]
+     },
+     {
+      "name": "ULF-4015E",
+      "glance": [
+       "13.5 ft × 5 ft · 161 × 60″ (4,100 × 1,530 mm)",
+       "1.5 – 12 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "ULF-6015E",
+      "glance": [
+       "20 ft × 5 ft · 240 × 60″ (6,100 × 1,530 mm)",
+       "1.5 – 12 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "4,850 lb (2,200 kg)"
+      ]
+     },
+     {
+      "name": "ULF-4022E",
+      "glance": [
+       "13.5 ft × 7.2 ft · 161 × 87″ (4,100 × 2,200 mm)",
+       "1.5 – 12 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "4,409 lb (2,000 kg)"
+      ]
+     },
+     {
+      "name": "ULF-6022E",
+      "glance": [
+       "20 ft × 7.2 ft · 240 × 87″ (6,100 × 2,200 mm)",
+       "1.5 – 12 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "6,614 lb (3,000 kg)"
+      ]
+     },
+     {
+      "name": "ULF-6026E",
+      "glance": [
+       "20 ft × 8.5 ft (6,100 × 2,600 mm)",
+       "6 – 60 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "8,598 lb (3,900 kg)"
+      ]
+     },
+     {
+      "name": "ULF-8026E",
+      "glance": [
+       "26.2 ft × 8.5 ft (8,000 × 2,600 mm)",
+       "6 – 60 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "11,464 lb (5,200 kg)"
+      ]
+     },
+     {
+      "name": "ULF-13026E",
+      "glance": [
+       "42.7 ft × 8.5 ft (13,000 × 2,600 mm)",
+       "6 – 60 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "30,865 lb (14,000 kg)"
+      ]
+     },
+     {
+      "name": "ULF-13032E",
+      "glance": [
+       "42.7 ft × 10.5 ft (13,000 × 3,200 mm)",
+       "6 – 60 kW",
+       "459 ft/min (140 m/min)",
+       "1.4 G",
+       "39,683 lb (18,000 kg)"
+      ]
+     },
+     {
+      "name": "ULF-26026E",
+      "glance": [
+       "85.3 ft × 8.5 ft (26,000 × 2,600 mm)",
+       "6 – 60 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "61,729 lb (28,000 kg)"
+      ]
+     },
+     {
+      "name": "ULF-26032E",
+      "glance": [
+       "85.3 ft × 10.5 ft (26,000 × 3,200 mm)",
+       "6 – 60 kW",
+       "459 ft/min (140 m/min)",
+       "1.4 G",
+       "79,366 lb (36,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "accel",
+     "load"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both exchange tables together."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
+    "label": "Download the NovoTech fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-novotech"
+  },
+  "vn-ule": {
+   "id": "vn-ule",
+   "brand": "novotech",
+   "name": "ULE enclosed fiber lasers with exchange table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW",
+   "short": "ULE exchange-table lasers",
+   "models_label": "ULE-3015E – 6020E · ULE-6026E – 12526E · 7 models",
+   "summary": "The production laser: a full enclosure with laser-safe windows keeps the beam, sparks and fumes in, and two tables swap in 15 seconds so the operator loads one sheet while the other is cut. Four sizes from 10 × 5 to 20 × 6.7 ft take 3 to 20 kW with 11.8″ of Z travel; three large-format machines from 20 × 8.5 to 41 × 8.5 ft take 6 to 40 kW and 16.5″ of Z for heavy plate. 459 ft/min and 1.7 G, ±0.03 mm/m positioning, a bed flat to 0.05 mm per square metre and a twin-chain exchange that doubles the table load. Ready for a sheet storage tower and gantry loading.",
+   "features": [
+    "3 – 40 kW; 10 × 5 to 41 × 8.5 ft; exchange tables, 15 s swap; 459 ft/min, 1.7 G; Z travel 11.8 – 16.5″",
+    "Fiber laser source chosen at order — Raycus, MAX or IPG — with an autofocus cutting head (Raytools or BOCI) and capacitive height sensing",
+    "Cypcut bus control with nesting, the cutting-parameter database and power-based speed adjustment; hand pendant",
+    "Welded bed annealed and shot-blasted to relieve stress; Inovance or Delta servos, YYC racks, Hiwin linear guides, DESBOER gearboxes",
+    "Zoned dust extraction under the table, automatic lubrication, Hanli water chiller, air-cooled electrical cabinet with Schneider components",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)",
+    "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"
+   ],
+   "optional": [
+    "Precitec ProCutter cutting head; IPG source; higher power at order",
+    "Camera nesting over the table for remnants",
+    "Sheet storage tower and gantry loading / unloading (flexible manufacturing system)",
+    "Dust collector, air compressor and nitrogen generator sized to the machine",
+    "Custom voltage: 208, 240 or 480 V 3-phase"
+   ],
+   "images": [
+    "vn-ule-1",
+    "vn-ule-console",
+    "vn-ule-bed",
+    "vn-ule-frame",
+    "vn-ule-servo",
+    "vn-ule-rack",
+    "vn-ule-cabinet",
+    "vn-ule-chiller",
+    "vn-fms-tower",
+    "vn-fms-gantry",
+    "vn-precitec"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "ULE enclosed exchange-table fiber lasers · 3 – 20 kW",
+      "sub": "4 models · 10 × 5 to 20 × 6.7 ft · table swap in 15 s",
+      "models": [
+       "ULE-3015E",
+       "ULE-4015E",
+       "ULE-4020E",
+       "ULE-6020E"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "10.2 ft × 5.1 ft · 122 × 61″ (3,100 × 1,550 mm)",
+         "13.5 ft × 5.1 ft · 161 × 61″ (4,100 × 1,550 mm)",
+         "13.5 ft × 6.7 ft · 161 × 81″ (4,100 × 2,050 mm)",
+         "20 ft × 6.7 ft · 240 × 81″ (6,100 × 2,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "3 – 20 kW",
+         "3 – 20 kW",
+         "3 – 20 kW",
+         "3 – 20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "no load",
+        "cells": [
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed with Delta servos",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.7 G",
+         "1.7 G",
+         "1.7 G",
+         "1.7 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.02 mm/m (±0.0002″/ft)",
+         "±0.02 mm/m (±0.0002″/ft)",
+         "±0.02 mm/m (±0.0002″/ft)",
+         "±0.02 mm/m (±0.0002″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "both tables, single chain",
+        "cells": [
+         "3,307 lb (1,500 kg)",
+         "4,189 lb (1,900 kg)",
+         "5,732 lb (2,600 kg)",
+         "8,818 lb (4,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load, twin chain",
+        "sub": "both tables",
+        "cells": [
+         "6,614 lb (3,000 kg)",
+         "8,378 lb (3,800 kg)",
+         "11,464 lb (5,200 kg)",
+         "17,637 lb (8,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table exchange",
+        "sub": "",
+        "cells": [
+         "15 s",
+         "15 s",
+         "15 s",
+         "15 s"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28.9 × 9.7 × 7.5 ft (8,800 × 2,950 × 2,300 mm)",
+         "35.4 × 9.7 × 7.5 ft (10,800 × 2,950 × 2,300 mm)",
+         "35.4 × 11.5 × 7.5 ft (10,800 × 3,500 × 2,300 mm)",
+         "49.2 × 11.5 × 7.5 ft (15,000 × 3,500 × 2,300 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "ULE large-format exchange-table fiber lasers · 6 – 40 kW",
+      "sub": "3 models · 20 × 8.5 to 41 × 8.5 ft",
+      "models": [
+       "ULE-6026E",
+       "ULE-8026E",
+       "ULE-12526E"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "20 ft × 8.5 ft (6,100 × 2,600 mm)",
+         "26.6 ft × 8.5 ft (8,100 × 2,600 mm)",
+         "41 ft × 8.5 ft (12,500 × 2,600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 – 40 kW",
+         "6 – 40 kW",
+         "6 – 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "no load",
+        "cells": [
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)",
+         "459 ft/min (140 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.7 G",
+         "1.7 G",
+         "1.7 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.0012″ (±0.03 mm)",
+         "±0.0016″ (±0.04 mm)",
+         "±0.0012″ (±0.03 mm) · Y axis ±0.0024″ (±0.06 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.0008″ (±0.02 mm)",
+         "±0.0008″ (±0.02 mm)",
+         "±0.0012″ (±0.03 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "both tables, single chain",
+        "cells": [
+         "13,669 lb (6,200 kg)",
+         "18,078 lb (8,200 kg)",
+         "27,558 lb (12,500 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load, twin chain",
+        "sub": "both tables",
+        "cells": [
+         "27,337 lb (12,400 kg)",
+         "36,156 lb (16,400 kg)",
+         "55,115 lb (25,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table exchange",
+        "sub": "",
+        "cells": [
+         "15 s",
+         "15 s",
+         "15 s"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "49.2 × 13.9 × 8.9 ft (15,000 × 4,250 × 2,700 mm)",
+         "64 × 13.9 × 8.9 ft (19,500 × 4,250 × 2,700 mm)",
+         "90.2 × 13.9 × 8.9 ft (27,500 × 4,250 × 2,700 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "ULE-3015E",
+      "glance": [
+       "10.2 ft × 5.1 ft · 122 × 61″ (3,100 × 1,550 mm)",
+       "3 – 20 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "3,307 lb (1,500 kg)"
+      ]
+     },
+     {
+      "name": "ULE-4015E",
+      "glance": [
+       "13.5 ft × 5.1 ft · 161 × 61″ (4,100 × 1,550 mm)",
+       "3 – 20 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "4,189 lb (1,900 kg)"
+      ]
+     },
+     {
+      "name": "ULE-4020E",
+      "glance": [
+       "13.5 ft × 6.7 ft · 161 × 81″ (4,100 × 2,050 mm)",
+       "3 – 20 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "5,732 lb (2,600 kg)"
+      ]
+     },
+     {
+      "name": "ULE-6020E",
+      "glance": [
+       "20 ft × 6.7 ft · 240 × 81″ (6,100 × 2,050 mm)",
+       "3 – 20 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "8,818 lb (4,000 kg)"
+      ]
+     },
+     {
+      "name": "ULE-6026E",
+      "glance": [
+       "20 ft × 8.5 ft (6,100 × 2,600 mm)",
+       "6 – 40 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "13,669 lb (6,200 kg)"
+      ]
+     },
+     {
+      "name": "ULE-8026E",
+      "glance": [
+       "26.6 ft × 8.5 ft (8,100 × 2,600 mm)",
+       "6 – 40 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "18,078 lb (8,200 kg)"
+      ]
+     },
+     {
+      "name": "ULE-12526E",
+      "glance": [
+       "41 ft × 8.5 ft (12,500 × 2,600 mm)",
+       "6 – 40 kW",
+       "459 ft/min (140 m/min)",
+       "1.7 G",
+       "27,558 lb (12,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "accel",
+     "load"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both exchange tables together."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
+    "label": "Download the NovoTech fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-novotech"
+  },
+  "vn-ulft": {
+   "id": "vn-ulft",
+   "brand": "novotech",
+   "name": "ULFT open-type sheet-and-tube fiber lasers, 10 × 5 to 85 × 10.5 ft plus tube to Ø13.8″, 1.5 – 60 kW",
+   "short": "ULFT sheet + tube lasers",
+   "models_label": "ULFT 3015 – 26032 · 13 table sizes",
+   "summary": "Sheet and tube on one open-type machine: the ULF table for sheet and plate, and along its side a rotary pneumatic chuck and supports for round, square and rectangular tube to Ø8.7″ or Ø13.8″ in 20, 29.5 or 39 ft lengths. The same source and head cut both, so a shop that cuts a few tubes a week does not need a second laser. Thirteen table sizes from 10 × 5 to 85 × 10.5 ft, 1.5 to 60 kW, 459 ft/min.",
+   "features": [
+    "Sheet 10 × 5 to 85 × 10.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 60 kW; 459 ft/min, 1 – 1.5 G",
+    "Fiber laser source chosen at order — Raycus, MAX or IPG — with an autofocus cutting head (Raytools or BOCI) and capacitive height sensing",
+    "Cypcut bus control with nesting, the cutting-parameter database and power-based speed adjustment; hand pendant",
+    "Welded bed annealed and shot-blasted to relieve stress; Inovance or Delta servos, YYC racks, Hiwin linear guides, DESBOER gearboxes",
+    "Zoned dust extraction under the table, automatic lubrication, Hanli water chiller, air-cooled electrical cabinet with Schneider components",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)",
+    "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"
+   ],
+   "optional": [
+    "Precitec ProCutter cutting head; IPG source; higher power at order",
+    "Camera nesting over the table for remnants",
+    "Sheet storage tower and gantry loading / unloading (flexible manufacturing system)",
+    "Dust collector, air compressor and nitrogen generator sized to the machine",
+    "Custom voltage: 208, 240 or 480 V 3-phase",
+    "Tube supports and unloading for 39 ft lengths"
+   ],
+   "images": [
+    "vn-ulft-1",
+    "vn-ulft-chuck",
+    "vn-ulft-frame",
+    "vn-ulft-beam",
+    "vn-ulft-head",
+    "vn-ulft-sources"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "ULFT open-type sheet-and-tube fiber lasers",
+      "sub": "13 table sizes · 10 × 5 to 85 × 10.5 ft · tube to Ø13.8″ · 1.5 – 60 kW",
+      "models": [
+       "ULFT series"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "sheet",
+        "cells": [
+         "10 × 5 ft to 85 × 10.5 ft (3,000 × 1,500 – 26,000 × 3,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table sizes",
+        "sub": "sheet",
+        "cells": [
+         "10 × 5, 13 × 5, 20 × 5, 13 × 6.6 and 20 × 6.6 ft; 20, 26, 43 or 85 ft × 8.5 or 10.5 ft (3 × 1.5 to 26 × 3.2 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tube capacity",
+        "sub": "round / square",
+        "cells": [
+         "Ø8.7″ or Ø13.8″ chuck (Ø220 / 350 mm); square tube to 12.6″ (320 mm) on the large chuck"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 60 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "no load",
+        "cells": [
+         "459 ft/min (140 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 – 1.5 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.02 mm/m (±0.0002″/ft)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "ULFT series",
+      "glance": [
+       "10 × 5 ft to 85 × 10.5 ft (3,000 × 1,500 – 26,000 × 3,200 mm)",
+       "1.5 – 60 kW",
+       "459 ft/min (140 m/min)",
+       "1 – 1.5 G",
+       ""
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "accel",
+     "load"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both exchange tables together."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
+    "label": "Download the NovoTech fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-novotech"
+  },
+  "vn-ulet": {
+   "id": "vn-ulet",
+   "brand": "novotech",
+   "name": "ULET enclosed sheet-and-tube fiber lasers, 10 × 5 to 41 × 8.5 ft plus tube to Ø13.8″, 1.5 – 40 kW",
+   "short": "ULET sheet + tube lasers",
+   "models_label": "ULET 3015 – 12526 · 8 table sizes",
+   "summary": "The enclosed version of the sheet-and-tube laser: the ULE cabin with its exchange table for sheet, and at the end of the machine a pneumatic chuck — three times faster to clamp than an electric one — for round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 39 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; quieter and cleaner than an open machine, for shops where the laser stands next to assembly or welding.",
+   "features": [
+    "Enclosed sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 40 kW; 459 ft/min",
+    "Fiber laser source chosen at order — Raycus, MAX or IPG — with an autofocus cutting head (Raytools or BOCI) and capacitive height sensing",
+    "Cypcut bus control with nesting, the cutting-parameter database and power-based speed adjustment; hand pendant",
+    "Welded bed annealed and shot-blasted to relieve stress; Inovance or Delta servos, YYC racks, Hiwin linear guides, DESBOER gearboxes",
+    "Zoned dust extraction under the table, automatic lubrication, Hanli water chiller, air-cooled electrical cabinet with Schneider components",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)",
+    "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"
+   ],
+   "optional": [
+    "Precitec ProCutter cutting head; IPG source; higher power at order",
+    "Camera nesting over the table for remnants",
+    "Sheet storage tower and gantry loading / unloading (flexible manufacturing system)",
+    "Dust collector, air compressor and nitrogen generator sized to the machine",
+    "Custom voltage: 208, 240 or 480 V 3-phase",
+    "Tube supports and unloading for 39 ft lengths"
+   ],
+   "images": [
+    "vn-ulet-1",
+    "vn-ulet-chuck",
+    "vn-ulet-beam",
+    "vn-ulet-head",
+    "vn-ulet-source"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "ULET enclosed sheet-and-tube fiber lasers",
+      "sub": "8 table sizes · 10 × 5 to 41 × 8.5 ft · tube to Ø13.8″ · 1.5 – 40 kW",
+      "models": [
+       "ULET series"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "sheet",
+        "cells": [
+         "10 × 5 ft to 41 × 8.5 ft (3,000 × 1,500 – 12,500 × 2,600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table sizes",
+        "sub": "sheet",
+        "cells": [
+         "10 × 5, 13 × 5, 20 × 5, 13 × 6.6 and 20 × 6.6 ft; 20, 26 or 41 ft × 8.5 ft (3 × 1.5 to 12.5 × 2.6 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tube capacity",
+        "sub": "round / square",
+        "cells": [
+         "Ø8.7″ or Ø13.8″ chuck (Ø220 / 350 mm); square tube to 12.6″ (320 mm) on the large chuck"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "no load",
+        "cells": [
+         "459 ft/min (140 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 – 1.5 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.02 mm/m (±0.0002″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Chuck",
+        "sub": "",
+        "cells": [
+         "pneumatic, three times faster than an electric chuck"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "ULET series",
+      "glance": [
+       "10 × 5 ft to 41 × 8.5 ft (3,000 × 1,500 – 12,500 × 2,600 mm)",
+       "1.5 – 40 kW",
+       "459 ft/min (140 m/min)",
+       "1 – 1.5 G",
+       ""
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "accel",
+     "load"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both exchange tables together."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
+    "label": "Download the NovoTech fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-novotech"
+  },
+  "vn-ult": {
+   "id": "vn-ult",
+   "brand": "novotech",
+   "name": "ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft bars, 1.5 – 40 kW",
+   "short": "ULT tube lasers",
+   "models_label": "ULT-016A – 036A · two- and three-chuck · 10 versions",
+   "summary": "The tube laser for round, square, rectangular, oval and open profiles: pneumatic self-centring chucks at both ends of the bar, servo-following supports under it, and a 1.5 to 40 kW source that cuts holes, slots, copes and notches and parts the tube in one pass. Four chuck sizes — Ø6.3″, 9.4″, 11″ and 14.2″ — for bars of 20, 29.5 or 39 ft and up to 2,205 lb; 328 ft/min and 1.2 G on the small chucks. The three-chuck version takes over the bar as it shortens, so the last part is cut with no remnant. Pneumatic loaders, bundle feeding, a ±45° five-axis bevel head and TubesT nesting are options.",
+   "features": [
+    "Ø0.4 – 14.2″ round, square to 13.8″; bars 20 – 39 ft and to 2,205 lb; 1.5 – 40 kW; to 328 ft/min, 1.2 G",
+    "Double-acting pneumatic self-centring chucks — the standard chuck clamps Ø0.6 to 8.7″ (15 – 220 mm) without changing the jaws",
+    "Fiber laser source 1.5 – 40 kW (Raycus, MAX or IPG) with an autofocus tube cutting head and anti-collision protection",
+    "Cypcut tube control with the cutting database and power-based speed adjustment",
+    "Patented welded bed with servo-following tube supports; stress-relieved crossbeam with cushion pads and limit switches",
+    "Delta servos, YYC rack and Hiwin guides; Hanli water chiller; unloading table",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Pneumatic loader or automatic bundle loader (bundles to 11,000 lb / 5 t) and feeding system",
+    "Third chuck for zero-tail cutting; five-axis ±45° bevel head",
+    "Dual Y-axis cutting for small tube",
+    "TubesT nesting software",
+    "Custom voltage: 208, 240 or 480 V 3-phase"
+   ],
+   "images": [
+    "vn-ult-1",
+    "vn-ult-chuck",
+    "vn-ult-frame",
+    "vn-ult-beam",
+    "vn-ult-head",
+    "vn-ult-console",
+    "vn-ult-loader",
+    "vn-ult-zero",
+    "vn-ult-feeder",
+    "vn-ult-dualy",
+    "vn-ult-tubest"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "ULT two-chuck tube lasers",
+      "sub": "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft bars · 1.5 – 40 kW",
+      "models": [
+       "ULT-016A",
+       "ULT-016B",
+       "ULT-024A",
+       "ULT-024B",
+       "ULT-028A",
+       "ULT-036A"
+      ],
+      "rows": [
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+         "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+         "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+         "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+         "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+         "Ø0.4 – 14.2″ (Ø10 – 360 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "max. side",
+        "cells": [
+         "6.3″ (160 mm)",
+         "6.3″ (160 mm)",
+         "8.9″ (227 mm)",
+         "9.1″ (230 mm)",
+         "10.8″ (275 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bar length",
+        "sub": "",
+        "cells": [
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "on the chucks",
+        "cells": [
+         "331 lb (150 kg)",
+         "353 lb (160 kg)",
+         "882 lb (400 kg)",
+         "573 lb (260 kg)",
+         "1,323 lb (600 kg)",
+         "2,205 lb (1,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "246 ft/min (75 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1.2 G",
+         "1.2 G",
+         "1 G",
+         "1 G",
+         "0.8 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Chuck speed",
+        "sub": "",
+        "cells": [
+         "53.5 rpm",
+         "53.5 rpm",
+         "53.5 rpm",
+         "53.5 rpm",
+         "37.5 rpm",
+         "23 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Head travel X / Z",
+        "sub": "",
+        "cells": [
+         "11.8 / 9.8″ (300 / 250 mm)",
+         "11.8 / 9.8″ (300 / 250 mm)",
+         "15.7 / 11.8″ (400 / 300 mm)",
+         "15.7 / 11.8″ (400 / 300 mm)",
+         "17.7 / 11.8″ (450 / 300 mm)",
+         "21.7 / 15.7″ (550 / 400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loading",
+        "sub": "",
+        "cells": [
+         "pneumatic loader: round Ø0.4 – 6.3″, square to 6.3″ diagonal (160 mm)",
+         "pneumatic loader: round Ø0.4 – 6.3″, square to 6.3″ diagonal (160 mm)",
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal · 573 lb (260 kg) bars",
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal",
+         "bundle feeding system or crane",
+         "bundle feeding system or crane"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "ULT three-chuck tube lasers · zero-tail",
+      "sub": "4 chuck versions · Ø0.4 – 14.2″ · the last part cut without a remnant",
+      "models": [
+       "ULT-024A · 3 chucks",
+       "ULT-024B · 3 chucks",
+       "ULT-028A · 3 chucks",
+       "ULT-036A · 3 chucks"
+      ],
+      "rows": [
+       {
+        "label": "Round tube",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+         "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+         "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+         "Ø0.4 – 14.2″ (Ø10 – 360 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Square tube",
+        "sub": "max. side",
+        "cells": [
+         "8.9″ (227 mm)",
+         "9.1″ (230 mm)",
+         "10.8″ (275 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW",
+         "1.5 – 40 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bar length",
+        "sub": "",
+        "cells": [
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube weight",
+        "sub": "on the chucks",
+        "cells": [
+         "882 lb (400 kg)",
+         "573 lb (260 kg)",
+         "1,323 lb (600 kg)",
+         "2,205 lb (1,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "328 ft/min (100 m/min)",
+         "328 ft/min (100 m/min)",
+         "246 ft/min (75 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G",
+         "1 G",
+         "0.8 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Chuck speed",
+        "sub": "",
+        "cells": [
+         "53.5 rpm",
+         "53.5 rpm",
+         "37.5 rpm",
+         "23 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Head travel X / Z",
+        "sub": "",
+        "cells": [
+         "27.6 / 13.8″ (700 / 350 mm)",
+         "27.6 / 13.8″ (700 / 350 mm)",
+         "31.5 / 13.8″ (800 / 350 mm)",
+         "39.4 / 15.7″ (1000 / 400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)",
+         "±0.04 mm/m (±0.0005″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loading",
+        "sub": "",
+        "cells": [
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal · 573 lb (260 kg) bars",
+         "pneumatic loader: round Ø0.4 – 8.7″ (Ø10 – 220 mm), square to 8.7″ diagonal",
+         "bundle feeding system or crane",
+         "bundle feeding system or crane"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "ULT-016A",
+      "glance": [
+       "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "331 lb (150 kg)"
+      ]
+     },
+     {
+      "name": "ULT-016B",
+      "glance": [
+       "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "353 lb (160 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024A",
+      "glance": [
+       "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "882 lb (400 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024B",
+      "glance": [
+       "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "573 lb (260 kg)"
+      ]
+     },
+     {
+      "name": "ULT-028A",
+      "glance": [
+       "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+       "1.5 – 40 kW",
+       "246 ft/min (75 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "ULT-036A",
+      "glance": [
+       "Ø0.4 – 14.2″ (Ø10 – 360 mm)",
+       "1.5 – 40 kW",
+       "197 ft/min (60 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "2,205 lb (1,000 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024A · 3 chucks",
+      "glance": [
+       "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "882 lb (400 kg)"
+      ]
+     },
+     {
+      "name": "ULT-024B · 3 chucks",
+      "glance": [
+       "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
+       "1.5 – 40 kW",
+       "328 ft/min (100 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "573 lb (260 kg)"
+      ]
+     },
+     {
+      "name": "ULT-028A · 3 chucks",
+      "glance": [
+       "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
+       "1.5 – 40 kW",
+       "246 ft/min (75 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "1,323 lb (600 kg)"
+      ]
+     },
+     {
+      "name": "ULT-036A · 3 chucks",
+      "glance": [
+       "Ø0.4 – 14.2″ (Ø10 – 360 mm)",
+       "1.5 – 40 kW",
+       "197 ft/min (60 m/min)",
+       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "2,205 lb (1,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "round",
+     "power",
+     "speed",
+     "length",
+     "load"
+    ],
+    "caps": {},
+    "note": "The model number gives the bar length and the chuck: ULT6024A = 6 m (20 ft) bars and the Ø240 mm chuck, version A; every chuck size is built for 6, 9 or 12 m bars (ULT6…, ULT9…, ULT12…). A and B are two chuck versions of the same size. Square and rectangular tube is limited by the chuck's square capacity; laser power is chosen at order."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Tube-Lasers-Value-Line-2026.pdf",
+    "label": "Download the NovoTech tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "tube-novotech"
   }
  }
 }

@@ -94,6 +94,10 @@
  "section_label": "Tube laser cutters",
  "related_pages": [
   {
+   "href": "novotech-tube-lasers.html",
+   "label": "NovoTech tube lasers"
+  },
+  {
    "href": "senfeng-tube-lasers.html",
    "label": "Senfeng tube lasers"
   },
@@ -129,13 +133,18 @@
    "href": "tube-laser-cutting-machine.html",
    "label": "All tube lasers",
    "image": "dn-tube-2",
-   "blurb": "Every tube and profile laser NovoTech sells — Dener and Senfeng — on one page, with the tube range, power, speed and bar length of the whole range in one table."
+   "blurb": "Every tube and profile laser NovoTech sells — Dener, NovoTech's own value line and Senfeng — on one page, with the tube range, power, speed and bar length of the whole range in one table."
   },
   "pages": [
    {
     "href": "dener-tube-lasers.html",
     "label": "Dener tube lasers",
     "current": true
+   },
+   {
+    "href": "novotech-tube-lasers.html",
+    "label": "NovoTech tube lasers",
+    "current": false
    },
    {
     "href": "senfeng-tube-lasers.html",

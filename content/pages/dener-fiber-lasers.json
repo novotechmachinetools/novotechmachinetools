@@ -100,6 +100,10 @@
  "section_label": "Sheet laser cutters",
  "related_pages": [
   {
+   "href": "novotech-fiber-lasers.html",
+   "label": "NovoTech fiber lasers"
+  },
+  {
    "href": "senfeng-fiber-lasers.html",
    "label": "Senfeng fiber lasers"
   },
@@ -135,13 +139,18 @@
    "href": "laser-cutting-machine.html",
    "label": "All sheet lasers",
    "image": "dn-gfl-3",
-   "blurb": "Every fiber laser NovoTech sells for sheet and plate — Dener and Senfeng — on one page, with the working area, power and speed of the whole range in one table."
+   "blurb": "Every fiber laser NovoTech sells for sheet and plate — Dener, NovoTech's own value line and Senfeng — on one page, with the working area, power and speed of the whole range in one table."
   },
   "pages": [
    {
     "href": "dener-fiber-lasers.html",
     "label": "Dener fiber lasers",
     "current": true
+   },
+   {
+    "href": "novotech-fiber-lasers.html",
+    "label": "NovoTech fiber lasers",
+    "current": false
    },
    {
     "href": "senfeng-fiber-lasers.html",

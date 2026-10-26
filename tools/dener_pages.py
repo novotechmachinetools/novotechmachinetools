@@ -18,6 +18,8 @@ import dener_photos as PH
 import vl_sheet_data as VL   # NovoTech value-line panel benders below the Dener machine on panel-bender.html
 import senfeng_data as SF    # Senfeng lasers, tube lasers and panel benders: the value line below Dener, under the Senfeng brand
 import senfeng_pages as SFP
+import vl_laser_data as VLL   # NovoTech value-line lasers (ULF / ULE / ULFT / ULET, ULT): their own pages, families kept in this set for the hubs
+import vl_laser_pages as VLP
 import laser_nav as LN
 import press_brake_nav as PBN
 import shear_nav as SN
@@ -282,6 +284,10 @@ def build():
     fams += [dict(f, pdf=pdf_sf_laser) for f in SF.LASER_FAMILIES]
     fams += [dict(f, pdf=pdf_sf_tube) for f in SF.TUBE_FAMILIES]
     fams += [dict(f, pdf=pdf_sf_panel) for f in SF.PANEL_FAMILIES]
+    pdf_vl_sheet = VLP.pdf(VLP.PDF_SHEET, "Download the NovoTech fiber laser brochure")
+    pdf_vl_tube = VLP.pdf(VLP.PDF_TUBE, "Download the NovoTech tube laser brochure")
+    fams += [dict(f, pdf=pdf_vl_sheet) for f in VLL.SHEET_FAMILIES]
+    fams += [dict(f, pdf=pdf_vl_tube) for f in VLL.TUBE_FAMILIES]
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **INTRO_VIDEO}
     write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", hub=PBN.hub(), siblings=PBN.siblings(),
@@ -296,7 +302,7 @@ def build():
     write_category(D.P_PANEL, PAGE_PANEL, fams, SET, "Panel benders", extra={**common, "nav_label": "Panel benders", "catalogue_pdf": None, "catalogue_pdfs": [pdf_panel, pdf_sf_panel, pdf_vl_panel],
                                                                                 "hero_brand_line": "The Dener panel bender is made in Turkey by Dener Makina; the BDC machines by Senfeng Laser in Jinan, China; the PB-M and PB-A carry the NovoTech name — built in China to North American standards. All sold, installed and supported in Canada by NovoTech."})
     keys = register_images()
-    vl_keys = {k for f in VL.PANEL_FAMILIES + SF.ALL for k in f["images"]}
+    vl_keys = {k for f in VL.PANEL_FAMILIES + SF.ALL + VLL.ALL for k in f["images"]}
     used = {k for f in fams + D.SHEAR_FAMILIES for k in f["images"]} - vl_keys
     for p in (PAGE_PB, PAGE_LASER, PAGE_TUBE, PAGE_PANEL, PAGE_SHEAR):
         used |= {p["hero"]} | set(p["minis"])
@@ -306,7 +312,7 @@ def build():
     missing = sorted(used - set(keys))
     if missing:
         raise SystemExit(f"image keys without a photo: {missing}")
-    vids = sorted({v["id"] for f in fams + D.SHEAR_FAMILIES for v in f["videos"] if f["id"] not in {x["id"] for x in VL.PANEL_FAMILIES + SF.ALL}} | {INTRO_VIDEO["intro_video"]["id"]})
+    vids = sorted({v["id"] for f in fams + D.SHEAR_FAMILIES for v in f["videos"] if f["id"] not in {x["id"] for x in VL.PANEL_FAMILIES + SF.ALL + VLL.ALL}} | {INTRO_VIDEO["intro_video"]["id"]})
     open(os.path.join(ROOT, "tools", "dener_vids.txt"), "w").write(" ".join(vids))
     print(f"dener: {len(fams)} families on 4 Dener pages (+ Senfeng families for the Senfeng pages) + {len(D.SHEAR_FAMILIES)} shear families · images: {len(keys)} · videos: {len(vids)}")
 
