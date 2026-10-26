@@ -161,7 +161,10 @@ alpha for the gallery shots (the logo is inpainted on the photo composited over 
 (Playwright / Chromium) from a family set: cover, contents, about, one page per family (photo band, model tag, summary,
 standard / optional equipment) and the specification tables, in the NovoTech catalogue style.  A short first table is
 placed on the family page itself when it fits — the page is rendered, measured, and families whose content would run into
-the footer get a separate specifications page on a second pass (`no_inline` in the spec forces that).  Photos are the
+the footer get a separate specifications page on a second pass (`no_inline` in the spec forces that).  Specifications
+pages are measured the same way: a family whose table page runs into the footer is paginated again with a 25 % smaller
+budget per page (up to six passes), and a single table taller than a page is split into row chunks that repeat the model
+header ("… (continued)").  Photos are the
 site's 1200 px variants flattened over white and embedded as JPEG (`tools/brochure/out/img/`), which keeps a 20-page
 brochure around 2–5 MB; the logo stays PNG for the dark cover.  Specs so far: `production-presses.json` →
 `src/files/NovoTech-Production-Hydraulic-Presses-2026.pdf`, `guillotine-shears.json` →
@@ -260,3 +263,24 @@ attaches the brochure to every family listed in sahinler_brochures.FAMILY_PDF, a
 (angle rolls, ironworkers, punching, notchers, pipe polishing) or as the second catalogue_pdfs entry next to the ISITAN
 catalogue (plate rollers hub + 4-roll / 3-roll pages, circle cutters, pipe benders hub + rotary draw page) and next to the
 production-press brochure (hydraulic presses).
+
+### CSM photos (Oct 26)
+
+Two sources (outside the repo, /home/claude/csm/img/): the tubebender.com.tw renders downloaded on Oct 24 and the page
+rasters of the two supplier catalogues (electric.pdf / hydraulic.pdf are 12 full-page JPEGs each at 1822 × 1290 px; pdfimages
+gives them without the PDF's overlays; pdfimages numbers the pages from 000 = cover, so E-004 is printed page 4).
+tools/csm_photos.py:
+
+- Website renders: the site's `Small_*.jpg` versions of the bender renders carry no callouts and are used as they are.
+  Symmetric-1.jpg and WB10-A.jpg exist only with numbered bubbles and dashed leader lines; callout_masks() finds the
+  bubbles (a flat disc of blue (73, 143, 228) with a white digit, 0.8 – 5 % of the image width), follows the leader lines
+  from each bubble (blue pixels connected to it, away from the machine's own blue paint) and the arrow heads at their ends;
+  over the background they are painted white, over the machine LaMa-inpainted.  Anything not connected to a bubble is never
+  touched, so the blue machines, stickers and reflections stay as they are.
+- Catalogue crops: the same with the catalogue's cyan (0, 155, 228) bubbles (~18 px) and dots every 10 px, detected on the
+  crop plus an 80 px margin so bubbles just outside the crop still seed their leaders; cyan dots printed over yellow are
+  followed by colour difference (G − R, B − R), and the one leader they lose (TSRJ, over the yellow arm) is a `trace`
+  polyline.  Supplier labels printed over the parts samples are painted white (`fill`) or, on the tinted backgrounds,
+  LaMa-filled (`inpaint`).  Crops are upscaled 2x with Real-ESRGAN.
+- Machine photos are cut out by BiRefNet in make_images; parts samples and details stay rectangular.  The CSM logo
+  (tools/src-images/csm-logo.png) was keyed from the catalogue cover at 4x super-resolution.

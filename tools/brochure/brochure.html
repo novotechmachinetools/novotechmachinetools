@@ -211,7 +211,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
   <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % f.page }}</div></div>
 </section>
 {% for tables in f.spec_pages %}
-<section class="page spec">
+<section class="page spec" data-spec="{{ f.id }}">
   <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ f.name }}</div><div class="tab"><span>Specifications</span></div></div>
   <div class="body">
     <div class="kicker">Technical specifications{% if f.spec_pages|length > 1 %} · {{ loop.index }} / {{ f.spec_pages|length }}{% endif %}</div>

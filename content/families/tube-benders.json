@@ -7,7 +7,14 @@
   "isitan-sfb-32",
   "isitan-sfb-38-nc-a",
   "isitan-bk",
-  "sahinler-spb"
+  "sahinler-spb",
+  "csm-emr",
+  "csm-mbe",
+  "csm-tbre",
+  "csm-tsr",
+  "csm-tsrj",
+  "csm-tncb",
+  "csm-f38"
  ],
  "families": {
   "isitan-sfb-cnc-a5": {
@@ -1740,6 +1747,3625 @@
     "size": "PDF · 2 MB · imperial units"
    },
    "group": "sahinler-draw"
+  },
+  "csm-emr": {
+   "id": "csm-emr",
+   "brand": "csm",
+   "name": "EMB / EMR and MRE2-RBE all-electric CNC tube benders, Ø19/32″ to Ø4″",
+   "short": "EMB / EMR all-electric",
+   "models_label": "15 EMB – 75 EMR · 50 – 100 MRE2-RBE · 10 models",
+   "summary": "CSM's all-electric CNC benders: every axis — bend arm, carriage, collet, clamp and pressure die, side booster, tool shift and mandrel — is a servo motor, so there is no hydraulic unit, no oil, no warm-up and about half the energy of a hydraulic bender, with ±0.01° bend-arm accuracy. The EMB / EMR work-head rotates to bend left- and right-hand in the same part — brake and fuel lines, air-conditioning and oil tube on the 15 and 20, furniture and health-care tube on the 30 – 45, automotive and transportation tube on the 75 — with 3 + 3 stacked tools and a roll-bending head. The MRE2-RBE adds a servo rear booster for Ø2″ to Ø4″ tube in thin walls and tight radii.",
+   "headline": "All-electric · left- and right-hand bending · Ø19/32″ – Ø4″ · 3 + 3 stacked tools",
+   "features": [
+    "All axes by servo motor: bend arm, carriage, collet, clamp die (EMB / EMR by pneumatic), pressure die, side booster, tool shift up-down and left-right",
+    "Work-head rotation by servo motor — converts between left- and right-hand bending within one part (EMB / EMR)",
+    "Mandrel by servo motor with automatic lubrication and anticipated retraction",
+    "Servo rear booster on the MRE2-RBE and 75 EMR",
+    "Industrial-PC control with touch-screen: bending simulation, 3D preview and interference detection; reads IGS / STP files",
+    "Programmable speed for every servo axis; USB port for data transfer; manual / automatic mode; inch / metric; XYZ / YBC axes",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic tube loader and unloader; bundle loading",
+    "Rear booster (servo RBE / hydraulic RBF, RBH) for thin-wall and tight-radius bending",
+    "Roll-bending head for large radii",
+    "Integrated circular saw, end-forming station and robot transfer — automated bending cells",
+    "Tooling: bend dies, clamp dies, pressure dies, wiper dies and mandrels to your tube and radius",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-emr",
+    "cs-mre2",
+    "cs-emr-15",
+    "cs-emr-45",
+    "cs-emr-75",
+    "cs-mre2-50",
+    "cs-mre2-100",
+    "cs-emr-parts-small",
+    "cs-emr-parts-mid",
+    "cs-emr-parts-large",
+    "cs-mre2-parts",
+    "cs-mre2-parts-large"
+   ],
+   "videos": [
+    {
+     "id": "-2gkOrFzL_E",
+     "title": "15 EMB all-electric bender — fuel lines",
+     "duration": "PT3M5S",
+     "thumb": "video--2gkOrFzL_E"
+    },
+    {
+     "id": "MDyNuwdL4NM",
+     "title": "20 EMB — car head-rest bars",
+     "duration": "PT0M36S",
+     "thumb": "video-MDyNuwdL4NM"
+    },
+    {
+     "id": "qqJaIEVVA4o",
+     "title": "20 EMBH with robot cell — car head rests",
+     "duration": "PT1M40S",
+     "thumb": "video-qqJaIEVVA4o"
+    },
+    {
+     "id": "QaaLWs2v9rM",
+     "title": "45 EMR CNC tube bender",
+     "duration": "PT0M43S",
+     "thumb": "video-QaaLWs2v9rM"
+    },
+    {
+     "id": "_0lmdzh_CMo",
+     "title": "45 EMR — left- and right-hand bending",
+     "duration": "PT1M56S",
+     "thumb": "video-_0lmdzh_CMo"
+    },
+    {
+     "id": "4yCa4Psl0kY",
+     "title": "100 MRE2-RBE all-electric pipe bender",
+     "duration": "PT1M56S",
+     "thumb": "video-4yCa4Psl0kY"
+    },
+    {
+     "id": "ziFviuJ280Q",
+     "title": "100 MRE2-RBE CNC mandrel tube bender",
+     "duration": "PT0M42S",
+     "thumb": "video-ziFviuJ280Q"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "EMB / EMR",
+      "sub": "All-electric CNC left- and right-hand benders",
+      "models": [
+       "15 EMB",
+       "20 EMB",
+       "20 EMR",
+       "32 MBRE",
+       "30 EMR",
+       "45 EMR",
+       "75 EMR"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø19/32″ (15 mm) × 16 ga (1.5 mm)",
+         "Ø13/16″ (20 mm) × 16 ga (1.5 mm)",
+         "Ø13/16″ (20 mm) × 16 ga (1.5 mm)",
+         "Ø1-1/4″ (32 mm) × 15 ga (1.8 mm)",
+         "Ø1-3/16″ (30 mm) × 14 ga (2 mm)",
+         "Ø1-3/4″ (45 mm) × 16 ga (1.6 mm)",
+         "Ø3″ (76.2 mm) × 14 ga (2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "0.4 – 2.2″ (10 – 55 mm)",
+         "0.4 – 3.1″ (10 – 80 mm)",
+         "0.4 – 3.1″ (10 – 80 mm)",
+         "1.0 – 5.0″ (25 – 128 mm)",
+         "0.6 – 3.5″ (15 – 90 mm)",
+         "1.2 – 5.9″ (30 – 150 mm)",
+         "1.6 – 9.1″ (40 – 230 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "3.3 ft · 39″ (1,000 mm)",
+         "4.9 ft · 59″ (1,500 mm)",
+         "4.9 ft · 59″ (1,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "9.2 ft · 110″ (2,800 mm)",
+         "9.8 ft · 118″ (3,000 mm)",
+         "9.8 ft · 118″ (3,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "3+3",
+         "3+3",
+         "3+3",
+         "3+3",
+         "3+3",
+         "3+3",
+         "3+3"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "MRE2-RBE",
+      "sub": "All-electric CNC benders with servo rear booster",
+      "models": [
+       "50 MRE2-RBE",
+       "80 MRE2-RBE",
+       "100 MRE2-RBE"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø2″ (50.8 mm) × 15 ga (1.8 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (100 mm) × 10 ga (3.6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "1.2 – 5.9″ (30 – 150 mm)",
+         "1.6 – 9.1″ (40 – 230 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "8.2 ft · 98″ (2,500 mm)",
+         "9.8 ft · 118″ (3,000 mm)",
+         "9.8 ft · 118″ (3,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "3",
+         "3",
+         "3"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "Yes",
+         "Yes",
+         "Yes"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "Servo",
+         "Servo",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "15 EMB",
+      "glance": [
+       "Ø19/32″ × 16 ga",
+       "2.2″ (55 mm)",
+       "3.3 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "20 EMB",
+      "glance": [
+       "Ø13/16″ × 16 ga",
+       "3.1″ (80 mm)",
+       "4.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "20 EMR",
+      "glance": [
+       "Ø13/16″ × 16 ga",
+       "3.1″ (80 mm)",
+       "4.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "32 MBRE",
+      "glance": [
+       "Ø1-1/4″ × 15 ga",
+       "5.0″ (128 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "30 EMR",
+      "glance": [
+       "Ø1-3/16″ × 14 ga",
+       "3.5″ (90 mm)",
+       "9.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "45 EMR",
+      "glance": [
+       "Ø1-3/4″ × 16 ga",
+       "5.9″ (150 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "75 EMR",
+      "glance": [
+       "Ø3″ × 14 ga",
+       "9.1″ (230 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 MRE2-RBE",
+      "glance": [
+       "Ø2″ × 15 ga",
+       "5.9″ (150 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 MRE2-RBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "9.1″ (230 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 MRE2-RBE",
+      "glance": [
+       "Ø4″ × 10 ga",
+       "11.8″ (300 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "45 EMR": "Ø1-3/4″ × 16 ga · all-electric, left / right bending",
+     "80 MRE2-RBE": "Ø3-1/8″ × 12 ga · all-electric with servo booster"
+    },
+    "note": "Capacities are the manufacturer's ratings for round mild-steel tube, outside diameter × wall; CLR = centreline radius of the bend die. Mandrel length is the maximum tube length fed with the standard mandrel rod (the working length). Tooling capacity is the number of stacked bend dies / radii; \"roll bending\" models carry a roll-bending head for large radii; a rear booster (RBE servo, RBF / RBH / CBF hydraulic) pushes the tube from behind for thin-wall and tight-radius bends. Three-phase machines are supplied for 600 V with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Electric-Tube-Benders-2026.pdf",
+    "label": "Download the CSM electric tube & wire bender brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "csm-electric"
+  },
+  "csm-mbe": {
+   "id": "csm-mbe",
+   "brand": "csm",
+   "name": "MBE / MRE electric-hybrid CNC tube benders, Ø11/16″ to Ø6″",
+   "short": "MBE / MRE electric hybrid",
+   "models_label": "18 MBE – 150 MRE-RBE · 24 models",
+   "summary": "The electric-hybrid bender: servo motors on the bend arm, carriage, collet rotation and tool shift for accuracy and speed, hydraulics on the clamp die, pressure die, side booster and mandrel for force — the combination most production shops choose. Twenty-four models from Ø11/16″ to Ø6″ in three stacked tools; the MRE adds a roll-bending head for large radii and the -RBE versions a servo rear booster. The work-head travels on linear guides, so the same machine bends clockwise and counter-clockwise.",
+   "headline": "Electric hybrid · Ø11/16″ – Ø6″ · 3 stacked tools · clockwise and counter-clockwise",
+   "features": [
+    "Bend arm (C-axis) by servo motor through CSM's patented transmission gears — ±0.01° tolerance",
+    "Carriage (Y-axis) by servo motor with programmable speed; collet (B-axis) rotation by servo motor",
+    "Clamp die, pressure die and side booster by hydraulics; tool / radii shift up-down and left-right by servo motor",
+    "Mandrel by hydraulics with automatic lubrication and anticipated retraction",
+    "Work-head on linear guides — bends clockwise and counter-clockwise on one machine (MBE / MRE)",
+    "Roll-bending head on the MRE; servo rear booster on the -RBE models",
+    "Industrial-PC control with touch-screen: bending simulation, 3D preview and interference detection; reads IGS / STP files",
+    "Programmable speed for every servo axis; USB port for data transfer; manual / automatic mode; inch / metric; XYZ / YBC axes",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic tube loader and unloader; bundle loading",
+    "Rear booster (servo RBE / hydraulic RBF, RBH) for thin-wall and tight-radius bending",
+    "Roll-bending head for large radii",
+    "Integrated circular saw, end-forming station and robot transfer — automated bending cells",
+    "Tooling: bend dies, clamp dies, pressure dies, wiper dies and mandrels to your tube and radius",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-mbe",
+    "cs-mbe-parts",
+    "cs-mbe-parts-2"
+   ],
+   "videos": [
+    {
+     "id": "jm3NRKCkZ24",
+     "title": "18 MBE steel tube bender",
+     "duration": "PT0M52S",
+     "thumb": "video-jm3NRKCkZ24"
+    },
+    {
+     "id": "N25JS5HRfhI",
+     "title": "65 MBE — trunk hood hinges",
+     "duration": "PT0M58S",
+     "thumb": "video-N25JS5HRfhI"
+    },
+    {
+     "id": "onuI3yw9ORo",
+     "title": "80 MBE-RBE with saw cutter",
+     "duration": "PT4M33S",
+     "thumb": "video-onuI3yw9ORo"
+    },
+    {
+     "id": "837dwPNiKq8",
+     "title": "90 MBE-RBE exhaust pipe bender",
+     "duration": "PT1M46S",
+     "thumb": "video-837dwPNiKq8"
+    },
+    {
+     "id": "qwCp0PyUBaY",
+     "title": "50 MRE — handlebars",
+     "duration": "PT1M7S",
+     "thumb": "video-qwCp0PyUBaY"
+    },
+    {
+     "id": "dDR4wWSnXiY",
+     "title": "50 MRE-RBE with robot transfer and checking fixture",
+     "duration": "PT1M37S",
+     "thumb": "video-dDR4wWSnXiY"
+    },
+    {
+     "id": "9TQpk6FSaBM",
+     "title": "80 MRE aluminum profile bender",
+     "duration": "PT1M33S",
+     "thumb": "video-9TQpk6FSaBM"
+    },
+    {
+     "id": "AWu19COeHqU",
+     "title": "130 MRE-RBE chassis tube bender",
+     "duration": "PT6M22S",
+     "thumb": "video-AWu19COeHqU"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MBE",
+      "sub": "Electric-hybrid CNC benders",
+      "models": [
+       "18 MBE",
+       "25 MBE",
+       "30 MBE",
+       "38 MBE",
+       "50 MBE",
+       "65 MBE",
+       "80 MBE",
+       "100 MBE",
+       "65 MBE-RBE",
+       "80 MBE-RBE",
+       "100 MBE-RBE",
+       "130 MBE-RBE"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø11/16″ (18 mm) × 16 ga (1.6 mm)",
+         "Ø1″ (25.4 mm) × 16 ga (1.5 mm)",
+         "Ø1-3/16″ (30 mm) × 14 ga (2 mm)",
+         "Ø1-1/2″ (38.1 mm) × 15 ga (1.8 mm)",
+         "Ø2″ (50.8 mm) × 14 ga (2 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (100 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.8 mm)",
+         "Ø4″ (100 mm) × 10 ga (3.6 mm)",
+         "Ø5″ (127 mm) × 9 ga (3.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "0.4 – 3.1″ (10 – 80 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)",
+         "3.1 – 15.7″ (80 – 400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "3.9 ft · 47″ (1,200 mm)",
+         "4.9 ft · 59″ (1,500 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "13.1 ft · 157″ (4,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Servo",
+         "Servo",
+         "Servo",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "MRE",
+      "sub": "Electric-hybrid CNC benders with roll-bending head",
+      "models": [
+       "18 MRE",
+       "25 MRE",
+       "30 MRE",
+       "38 MRE",
+       "50 MRE",
+       "65 MRE",
+       "80 MRE",
+       "65 MRE-RBE",
+       "80 MRE-RBE",
+       "100 MRE-RBE",
+       "130 MRE-RBE",
+       "150 MRE-RBE"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø11/16″ (18 mm) × 16 ga (1.6 mm)",
+         "Ø1″ (25.4 mm) × 16 ga (1.5 mm)",
+         "Ø1-3/16″ (30 mm) × 14 ga (2 mm)",
+         "Ø1-1/2″ (38 mm) × 15 ga (1.8 mm)",
+         "Ø2″ (50.8 mm) × 14 ga (2 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.5 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.8 mm)",
+         "Ø4″ (100 mm) × 10 ga (3.6 mm)",
+         "Ø5″ (127 mm) × 9 ga (3.8 mm)",
+         "Ø6″ (152.4 mm) × 11 ga (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "0.4 – 3.1″ (10 – 80 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)",
+         "3.1 – 15.7″ (80 – 400 mm)",
+         "3.5 – 15.7″ (90 – 400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "3.9 ft · 47″ (1,200 mm)",
+         "4.9 ft · 59″ (1,500 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "13.1 ft · 157″ (4,000 mm)",
+         "13.1 ft · 157″ (4,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Servo",
+         "Servo",
+         "Servo",
+         "Servo",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "18 MBE",
+      "glance": [
+       "Ø11/16″ × 16 ga",
+       "3.1″ (80 mm)",
+       "3.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "25 MBE",
+      "glance": [
+       "Ø1″ × 16 ga",
+       "4.7″ (120 mm)",
+       "4.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "30 MBE",
+      "glance": [
+       "Ø1-3/16″ × 14 ga",
+       "4.7″ (120 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "38 MBE",
+      "glance": [
+       "Ø1-1/2″ × 15 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 MBE",
+      "glance": [
+       "Ø2″ × 14 ga",
+       "8.7″ (220 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 MBE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 MBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 MBE",
+      "glance": [
+       "Ø4″ × 11 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 MBE-RBE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 MBE-RBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 MBE-RBE",
+      "glance": [
+       "Ø4″ × 10 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "130 MBE-RBE",
+      "glance": [
+       "Ø5″ × 9 ga",
+       "15.7″ (400 mm)",
+       "13.1 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "18 MRE",
+      "glance": [
+       "Ø11/16″ × 16 ga",
+       "3.1″ (80 mm)",
+       "3.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "25 MRE",
+      "glance": [
+       "Ø1″ × 16 ga",
+       "4.7″ (120 mm)",
+       "4.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "30 MRE",
+      "glance": [
+       "Ø1-3/16″ × 14 ga",
+       "4.7″ (120 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "38 MRE",
+      "glance": [
+       "Ø1-1/2″ × 15 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 MRE",
+      "glance": [
+       "Ø2″ × 14 ga",
+       "8.7″ (220 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 MRE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 MRE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 MRE-RBE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 MRE-RBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 MRE-RBE",
+      "glance": [
+       "Ø4″ × 10 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "130 MRE-RBE",
+      "glance": [
+       "Ø5″ × 9 ga",
+       "15.7″ (400 mm)",
+       "13.1 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "150 MRE-RBE",
+      "glance": [
+       "Ø6″ × 11 ga",
+       "15.7″ (400 mm)",
+       "13.1 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "80 MBE": "Ø3-1/8″ × 12 ga · electric hybrid"
+    },
+    "note": "Capacities are the manufacturer's ratings for round mild-steel tube, outside diameter × wall; CLR = centreline radius of the bend die. Mandrel length is the maximum tube length fed with the standard mandrel rod (the working length). Tooling capacity is the number of stacked bend dies / radii; \"roll bending\" models carry a roll-bending head for large radii; a rear booster (RBE servo, RBF / RBH / CBF hydraulic) pushes the tube from behind for thin-wall and tight-radius bends. Three-phase machines are supplied for 600 V with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Electric-Tube-Benders-2026.pdf",
+    "label": "Download the CSM electric tube & wire bender brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "csm-electric"
+  },
+  "csm-tbre": {
+   "id": "csm-tbre",
+   "brand": "csm",
+   "name": "TBRE / TMRE and TSRE / TDRE electric-hybrid CNC tube benders, Ø15/32″ to Ø5″",
+   "short": "TBRE / TMRE / TDRE electric hybrid",
+   "models_label": "25 TBRE – 130 TBRE-RBE · 25 – 100 TMRE-RBE · 18 TSRE – 100 TDRE-RBE · 42 models",
+   "summary": "The T series: the same servo bend arm, carriage and collet as the MBE on a fixed work-head with two (TBRE, TDRE) or three (TMRE) stacked tools and hydraulic tool shift up-down — the economical electric-hybrid bender for a shop that bends one direction. The TBRE / TMRE carry a roll-bending head and reach Ø5″; the TSRE (one tool) and TDRE (two tools) start at Ø15/32″ for HVAC and fuel line and go to Ø4″; -RBE versions add the servo rear booster.",
+   "headline": "Electric hybrid · Ø15/32″ – Ø5″ · 1 – 3 stacked tools · roll bending on TBRE / TMRE",
+   "features": [
+    "Bend arm (C-axis) by servo motor through CSM's patented transmission gears — ±0.01° tolerance",
+    "Carriage (Y-axis) by servo motor with programmable speed; collet (B-axis) rotation by servo motor",
+    "Clamp die, pressure die and side booster by hydraulics; tool shift up-down by hydraulics, left-right by servo motor",
+    "Mandrel by hydraulics with automatic lubrication and anticipated retraction",
+    "Roll-bending head on the TBRE / TMRE; servo rear booster on the -RBE models",
+    "Industrial-PC control with touch-screen: bending simulation, 3D preview and interference detection; reads IGS / STP files",
+    "Programmable speed for every servo axis; USB port for data transfer; manual / automatic mode; inch / metric; XYZ / YBC axes",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic tube loader and unloader; bundle loading",
+    "Rear booster (servo RBE / hydraulic RBF, RBH) for thin-wall and tight-radius bending",
+    "Roll-bending head for large radii",
+    "Integrated circular saw, end-forming station and robot transfer — automated bending cells",
+    "Tooling: bend dies, clamp dies, pressure dies, wiper dies and mandrels to your tube and radius",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-tbre",
+    "cs-tdre",
+    "cs-tbre-parts",
+    "cs-tbre-parts-2",
+    "cs-tdre-parts",
+    "cs-tdre-parts-2"
+   ],
+   "videos": [
+    {
+     "id": "a-IhDc2PMvg",
+     "title": "32 TBRE CNC tube bender",
+     "duration": "PT1M17S",
+     "thumb": "video-a-IhDc2PMvg"
+    },
+    {
+     "id": "8HGVF3b_hYs",
+     "title": "38 TMRE three-stack bender — stroller frames",
+     "duration": "PT1M4S",
+     "thumb": "video-8HGVF3b_hYs"
+    },
+    {
+     "id": "JM40hF49R8A",
+     "title": "80 TBRE-RBE with roll bender and punching unit",
+     "duration": "PT1M43S",
+     "thumb": "video-JM40hF49R8A"
+    },
+    {
+     "id": "1NBAKSIfxBo",
+     "title": "38 TBRE with punch — oval furniture tube",
+     "duration": "PT1M2S",
+     "thumb": "video-1NBAKSIfxBo"
+    },
+    {
+     "id": "ESVmrPwJ-6A",
+     "title": "12 TDRE brake line bender",
+     "duration": "PT2M9S",
+     "thumb": "video-ESVmrPwJ-6A"
+    },
+    {
+     "id": "2RBTDwhJG1E",
+     "title": "65 TDRE exhaust pipe bender",
+     "duration": "PT0M32S",
+     "thumb": "video-2RBTDwhJG1E"
+    },
+    {
+     "id": "2mRTbtcL7os",
+     "title": "18 TDRE with LD020 automatic loader",
+     "duration": "PT4M3S",
+     "thumb": "video-2mRTbtcL7os"
+    },
+    {
+     "id": "iEgi5kfQ2EY",
+     "title": "130 TBRE-RBE — driver cabin frames",
+     "duration": "PT2M24S",
+     "thumb": "video-iEgi5kfQ2EY"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TBRE",
+      "sub": "Two stacked tools, roll bending",
+      "models": [
+       "25 TBRE",
+       "30 TBRE",
+       "38 TBRE",
+       "50 TBRE",
+       "65 TBRE",
+       "80 TBRE",
+       "100 TBRE",
+       "65 TBRE-RBE",
+       "80 TBRE-RBE",
+       "100 TBRE-RBE",
+       "130 TBRE-RBE"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1″ (25.4 mm) × 16 ga (1.5 mm)",
+         "Ø1-3/16″ (30 mm) × 14 ga (2 mm)",
+         "Ø1-1/2″ (38.1 mm) × 15 ga (1.8 mm)",
+         "Ø2″ (50.8 mm) × 14 ga (2 mm)",
+         "Ø2-1/2″ (65 mm) × 14 ga (2 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (100 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.8 mm)",
+         "Ø4″ (100 mm) × 10 ga (3.6 mm)",
+         "Ø5″ (127 mm) × 9 ga (3.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)",
+         "3.1 – 15.7″ (80 – 400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "4.9 ft · 59″ (1,500 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "13.1 ft · 157″ (4,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Servo",
+         "Servo",
+         "Servo",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "TMRE",
+      "sub": "Three stacked tools, roll bending",
+      "models": [
+       "25 TMRE",
+       "30 TMRE",
+       "38 TMRE",
+       "50 TMRE",
+       "65 TMRE",
+       "80 TMRE",
+       "100 TMRE",
+       "65 TMRE-RBE",
+       "80 TMRE-RBE",
+       "100 TMRE-RBE"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1″ (25.4 mm) × 16 ga (1.5 mm)",
+         "Ø1-3/16″ (30 mm) × 14 ga (2 mm)",
+         "Ø1-1/2″ (38.1 mm) × 15 ga (1.8 mm)",
+         "Ø2″ (50.8 mm) × 14 ga (2 mm)",
+         "Ø2-1/2″ (65 mm) × 14 ga (2 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (100 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.8 mm)",
+         "Ø4″ (100 mm) × 10 ga (3.6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "4.9 ft · 59″ (1,500 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3",
+         "3"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes",
+         "Yes"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Servo",
+         "Servo",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "TSRE",
+      "sub": "One tool",
+      "models": [
+       "18 TSRE",
+       "30 TSRE",
+       "38 TSRE",
+       "50 TSRE",
+       "65 TSRE",
+       "80 TSRE",
+       "100 TSRE",
+       "65 TSRE-RBE",
+       "80 TSRE-RBE"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø11/16″ (18 mm) × 16 ga (1.6 mm)",
+         "Ø1-3/16″ (30 mm) × 14 ga (2 mm)",
+         "Ø1-1/2″ (38.1 mm) × 15 ga (1.8 mm)",
+         "Ø2″ (50.8 mm) × 14 ga (2 mm)",
+         "Ø2-1/2″ (65 mm) × 14 ga (2 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (100 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "0.4 – 3.1″ (10 – 80 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.6 – 13.8″ (40 – 350 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "3.9 ft · 47″ (1,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Servo",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "TDRE",
+      "sub": "Two stacked tools",
+      "models": [
+       "12 TDRE",
+       "18 TDRE",
+       "25 TDRE",
+       "30 TDRE",
+       "38 TDRE",
+       "50 TDRE",
+       "65 TDRE",
+       "80 TDRE",
+       "100 TDRE",
+       "65 TDRE-RBE",
+       "80 TDRE-RBE",
+       "100 TDRE-RBE"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø15/32″ (12 mm) × 20 ga (1 mm)",
+         "Ø11/16″ (18 mm) × 16 ga (1.6 mm)",
+         "Ø1″ (25.4 mm) × 16 ga (1.5 mm)",
+         "Ø1-3/16″ (30 mm) × 14 ga (2 mm)",
+         "Ø1-1/2″ (38.1 mm) × 15 ga (1.8 mm)",
+         "Ø2″ (50.8 mm) × 14 ga (2 mm)",
+         "Ø2-1/2″ (65 mm) × 14 ga (2 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (100 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 12 ga (2.5 mm)",
+         "Ø3-1/8″ (80 mm) × 12 ga (2.8 mm)",
+         "Ø4″ (100 mm) × 10 ga (3.6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "0.5 – 2.2″ (12 – 55 mm)",
+         "0.4 – 3.1″ (10 – 80 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "0.6 – 4.7″ (15 – 120 mm)",
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.2 – 11.8″ (30 – 300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "3.3 ft · 39″ (1,000 mm)",
+         "3.9 ft · 47″ (1,200 mm)",
+         "4.9 ft · 59″ (1,500 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)",
+         "11.5 ft · 138″ (3,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Servo",
+         "Servo",
+         "Servo"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "25 TBRE",
+      "glance": [
+       "Ø1″ × 16 ga",
+       "4.7″ (120 mm)",
+       "4.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "30 TBRE",
+      "glance": [
+       "Ø1-3/16″ × 14 ga",
+       "4.7″ (120 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "38 TBRE",
+      "glance": [
+       "Ø1-1/2″ × 15 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TBRE",
+      "glance": [
+       "Ø2″ × 14 ga",
+       "8.7″ (220 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TBRE",
+      "glance": [
+       "Ø2-1/2″ × 14 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TBRE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TBRE",
+      "glance": [
+       "Ø4″ × 11 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TBRE-RBE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TBRE-RBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TBRE-RBE",
+      "glance": [
+       "Ø4″ × 10 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "130 TBRE-RBE",
+      "glance": [
+       "Ø5″ × 9 ga",
+       "15.7″ (400 mm)",
+       "13.1 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "25 TMRE",
+      "glance": [
+       "Ø1″ × 16 ga",
+       "4.7″ (120 mm)",
+       "4.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "30 TMRE",
+      "glance": [
+       "Ø1-3/16″ × 14 ga",
+       "4.7″ (120 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "38 TMRE",
+      "glance": [
+       "Ø1-1/2″ × 15 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TMRE",
+      "glance": [
+       "Ø2″ × 14 ga",
+       "8.7″ (220 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TMRE",
+      "glance": [
+       "Ø2-1/2″ × 14 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TMRE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TMRE",
+      "glance": [
+       "Ø4″ × 11 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TMRE-RBE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TMRE-RBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TMRE-RBE",
+      "glance": [
+       "Ø4″ × 10 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "18 TSRE",
+      "glance": [
+       "Ø11/16″ × 16 ga",
+       "3.1″ (80 mm)",
+       "3.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "30 TSRE",
+      "glance": [
+       "Ø1-3/16″ × 14 ga",
+       "4.7″ (120 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "38 TSRE",
+      "glance": [
+       "Ø1-1/2″ × 15 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TSRE",
+      "glance": [
+       "Ø2″ × 14 ga",
+       "8.7″ (220 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TSRE",
+      "glance": [
+       "Ø2-1/2″ × 14 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TSRE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TSRE",
+      "glance": [
+       "Ø4″ × 11 ga",
+       "13.8″ (350 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TSRE-RBE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TSRE-RBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "12 TDRE",
+      "glance": [
+       "Ø15/32″ × 20 ga",
+       "2.2″ (55 mm)",
+       "3.3 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "18 TDRE",
+      "glance": [
+       "Ø11/16″ × 16 ga",
+       "3.1″ (80 mm)",
+       "3.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "25 TDRE",
+      "glance": [
+       "Ø1″ × 16 ga",
+       "4.7″ (120 mm)",
+       "4.9 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "30 TDRE",
+      "glance": [
+       "Ø1-3/16″ × 14 ga",
+       "4.7″ (120 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "38 TDRE",
+      "glance": [
+       "Ø1-1/2″ × 15 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TDRE",
+      "glance": [
+       "Ø2″ × 14 ga",
+       "8.7″ (220 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TDRE",
+      "glance": [
+       "Ø2-1/2″ × 14 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TDRE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TDRE",
+      "glance": [
+       "Ø4″ × 11 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TDRE-RBE",
+      "glance": [
+       "Ø2-1/2″ × 12 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TDRE-RBE",
+      "glance": [
+       "Ø3-1/8″ × 12 ga",
+       "11.0″ (280 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TDRE-RBE",
+      "glance": [
+       "Ø4″ × 10 ga",
+       "11.8″ (300 mm)",
+       "11.5 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "65 TDRE": "Ø2-1/2″ × 14 ga · electric hybrid, two tools"
+    },
+    "note": "Capacities are the manufacturer's ratings for round mild-steel tube, outside diameter × wall; CLR = centreline radius of the bend die. Mandrel length is the maximum tube length fed with the standard mandrel rod (the working length). Tooling capacity is the number of stacked bend dies / radii; \"roll bending\" models carry a roll-bending head for large radii; a rear booster (RBE servo, RBF / RBH / CBF hydraulic) pushes the tube from behind for thin-wall and tight-radius bends. Three-phase machines are supplied for 600 V with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Electric-Tube-Benders-2026.pdf",
+    "label": "Download the CSM electric tube & wire bender brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "csm-electric"
+  },
+  "csm-tsr": {
+   "id": "csm-tsr",
+   "brand": "csm",
+   "name": "TSR / TDR hydraulic CNC pipe benders, Ø1-1/2″ to Ø8-5/8″",
+   "short": "TSR / TDR hydraulic CNC",
+   "models_label": "38 TSR – 220 TSR · TSR-RBF / RBH · 38 TDR – 150 TDR-RBH · 28 models",
+   "summary": "The heavy hydraulic CNC bender for pipe and thick-wall tube: a hydraulic bend arm, clamp, pressure die and side booster with a servo carriage and collet rotation, from Ø1-1/2″ × 11 ga to Ø8-5/8″ × 19/32″ pipe on 20 ft mandrels — boiler, construction, shipyard, oil-rig and water-supply pipe. The TDR carries two stacked tools; the -RBF and -RBH versions add a hydraulic rear booster for thin-wall pipe and radii down to 1 × D. Industrial-PC control with 3D simulation, or the PLC control of the NC range.",
+   "headline": "Hydraulic CNC · Ø1-1/2″ – Ø8-5/8″ · pipe to 19/32″ wall · 1 – 2 tools",
+   "features": [
+    "Bend arm (C-axis), clamp die, pressure die and side booster by hydraulics",
+    "Carriage (Y-axis) by servo motor with programmable speed; collet (B-axis) rotation by servo motor",
+    "Tool / radii shift up-down and left-right by hydraulics (TDR)",
+    "Mandrel by hydraulics with automatic lubrication and anticipated retraction",
+    "Hydraulic rear booster on the -RBF / -RBH models",
+    "Industrial-PC control with touch-screen: bending simulation, 3D preview and interference detection; reads IGS / STP files",
+    "Programmable speed for every servo axis; USB port for data transfer; manual / automatic mode; inch / metric; XYZ / YBC axes",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic tube loader and unloader; bundle loading",
+    "Rear booster (servo RBE / hydraulic RBF, RBH) for thin-wall and tight-radius bending",
+    "Roll-bending head for large radii",
+    "Integrated circular saw, end-forming station and robot transfer — automated bending cells",
+    "Tooling: bend dies, clamp dies, pressure dies, wiper dies and mandrels to your tube and radius",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-tsr",
+    "cs-tsr-parts",
+    "cs-tsr-parts-2",
+    "cs-tsr-parts-3"
+   ],
+   "videos": [
+    {
+     "id": "8fi_4Ccsh00",
+     "title": "38 TSR CNC hydraulic pipe bender",
+     "duration": "PT0M46S",
+     "thumb": "video-8fi_4Ccsh00"
+    },
+    {
+     "id": "gUbyulH7I-0",
+     "title": "50 TSR with automatic loader",
+     "duration": "PT2M48S",
+     "thumb": "video-gUbyulH7I-0"
+    },
+    {
+     "id": "N02_RPTBW2E",
+     "title": "65 TSR CNC pipe bender",
+     "duration": "PT0M51S",
+     "thumb": "video-N02_RPTBW2E"
+    },
+    {
+     "id": "QH6HAbj2Aqs",
+     "title": "80 TSR-RBF serpentine bender",
+     "duration": "PT5M8S",
+     "thumb": "video-QH6HAbj2Aqs"
+    },
+    {
+     "id": "xvaNquiXaNA",
+     "title": "150 TSR shipyard CNC pipe bender",
+     "duration": "PT2M26S",
+     "thumb": "video-xvaNquiXaNA"
+    },
+    {
+     "id": "8IKC2uQYhDk",
+     "title": "180 TSR CNC pipe bender",
+     "duration": "PT1M40S",
+     "thumb": "video-8IKC2uQYhDk"
+    },
+    {
+     "id": "X-zuvXJGMfI",
+     "title": "38 TDR with split dies",
+     "duration": "PT2M56S",
+     "thumb": "video-X-zuvXJGMfI"
+    },
+    {
+     "id": "rMYecEESog4",
+     "title": "100 TDR-RBH exhaust pipe bender with seam detection",
+     "duration": "PT1M22S",
+     "thumb": "video-rMYecEESog4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TSR",
+      "sub": "Hydraulic CNC benders, one tool",
+      "models": [
+       "38 TSR",
+       "50 TSR",
+       "65 TSR",
+       "80 TSR",
+       "100 TSR",
+       "120 TSR",
+       "150 TSR",
+       "180 TSR",
+       "220 TSR",
+       "80 TSR-RBF",
+       "100 TSR-RBF",
+       "120 TSR-RBF",
+       "50 TSR-RBH",
+       "65 TSR-RBH",
+       "80 TSR-RBH",
+       "100 TSR-RBH",
+       "120 TSR-RBH",
+       "150 TSR-RBH",
+       "180 TSR-RBH"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ (38.1 mm) × 11 ga (3 mm)",
+         "Ø2″ (50.8 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 11 ga (3 mm)",
+         "Ø3-1/8″ (80 mm) × 3/16″ (4.5 mm)",
+         "Ø4″ (101.6 mm) × 7/32″ (5.5 mm)",
+         "Ø4-3/4″ (120 mm) × 7/32″ (5.5 mm)",
+         "Ø6″ (152.4 mm) × 9/32″ (7 mm)",
+         "Ø7″ (180 mm) × 11/32″ (9 mm)",
+         "Ø8-5/8″ (220 mm) × 19/32″ (15 mm)",
+         "Ø3-1/8″ (80 mm) × 7/32″ (5.5 mm)",
+         "Ø4″ (101.6 mm) × 7/32″ (5.5 mm)",
+         "Ø4-3/4″ (120 mm) × 7/32″ (5.5 mm)",
+         "Ø2″ (50.8 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 11 ga (3 mm)",
+         "Ø3-1/8″ (80 mm) × 3/16″ (4.5 mm)",
+         "Ø4″ (101.6 mm) × 7/32″ (5.5 mm)",
+         "Ø4-3/4″ (120 mm) × 7/32″ (5.5 mm)",
+         "Ø6″ (152.4 mm) × 9/32″ (7 mm)",
+         "Ø7″ (180 mm) × 11/32″ (9 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "2.4 – 15.7″ (60 – 400 mm)",
+         "3.1 – 17.7″ (80 – 450 mm)",
+         "3.5 – 19.7″ (90 – 500 mm)",
+         "3.9 – 23.6″ (100 – 600 mm)",
+         "3.9 – 31.5″ (100 – 800 mm)",
+         "1.3 – 13.6″ (32 – 345 mm)",
+         "1.2 – 15.7″ (30 – 400 mm)",
+         "3.1 – 17.7″ (80 – 450 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 9.8″ (40 – 250 mm)",
+         "2.4 – 15.7″ (60 – 400 mm)",
+         "3.1 – 17.7″ (80 – 450 mm)",
+         "3.5 – 19.7″ (90 – 500 mm)",
+         "3.9 – 23.6″ (100 – 600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "9.8 ft · 118″ (3,000 mm)",
+         "11.8 ft · 142″ (3,600 mm)",
+         "16.4 ft · 197″ (5,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "9.8 ft · 118″ (3,000 mm)",
+         "11.8 ft · 142″ (3,600 mm)",
+         "16.4 ft · 197″ (5,000 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "9.8 ft · 118″ (3,000 mm)",
+         "11.8 ft · 142″ (3,600 mm)",
+         "16.4 ft · 197″ (5,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "TDR",
+      "sub": "Hydraulic CNC benders, two stacked tools",
+      "models": [
+       "38 TDR",
+       "50 TDR",
+       "65 TDR",
+       "80 TDR",
+       "100 TDR",
+       "120 TDR",
+       "150 TDR",
+       "100 TDR-RBH",
+       "150 TDR-RBH"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ (38.1 mm) × 11 ga (3 mm)",
+         "Ø2″ (50.8 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 11 ga (3 mm)",
+         "Ø3-1/8″ (80 mm) × 3/16″ (4.5 mm)",
+         "Ø4″ (101.6 mm) × 7/32″ (5.5 mm)",
+         "Ø4-3/4″ (120 mm) × 7/32″ (5.5 mm)",
+         "Ø6″ (152.4 mm) × 9/32″ (7 mm)",
+         "Ø4″ (101.6 mm) × 7/32″ (5.5 mm)",
+         "Ø6″ (152.4 mm) × 9/32″ (7 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "2.4 – 15.7″ (60 – 400 mm)",
+         "3.1 – 15.7″ (80 – 400 mm)",
+         "3.5 – 19.7″ (90 – 500 mm)",
+         "2.4 – 15.7″ (60 – 400 mm)",
+         "3.5 – 19.7″ (90 – 500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "9.8 ft · 118″ (3,000 mm)",
+         "11.8 ft · 142″ (3,600 mm)",
+         "16.4 ft · 197″ (5,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "11.8 ft · 142″ (3,600 mm)",
+         "19.7 ft · 236″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2",
+         "2"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Hydraulic",
+         "Hydraulic"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "38 TSR",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TSR",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "8.7″ (220 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TSR",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TSR",
+      "glance": [
+       "Ø3-1/8″ × 3/16″",
+       "11.0″ (280 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TSR",
+      "glance": [
+       "Ø4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "11.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "120 TSR",
+      "glance": [
+       "Ø4-3/4″ × 7/32″",
+       "17.7″ (450 mm)",
+       "16.4 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "150 TSR",
+      "glance": [
+       "Ø6″ × 9/32″",
+       "19.7″ (500 mm)",
+       "19.7 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "180 TSR",
+      "glance": [
+       "Ø7″ × 11/32″",
+       "23.6″ (600 mm)",
+       "19.7 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "220 TSR",
+      "glance": [
+       "Ø8-5/8″ × 19/32″",
+       "31.5″ (800 mm)",
+       "19.7 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TSR-RBF",
+      "glance": [
+       "Ø3-1/8″ × 7/32″",
+       "13.6″ (345 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TSR-RBF",
+      "glance": [
+       "Ø4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "11.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "120 TSR-RBF",
+      "glance": [
+       "Ø4-3/4″ × 7/32″",
+       "17.7″ (450 mm)",
+       "16.4 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TSR-RBH",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "8.7″ (220 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TSR-RBH",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TSR-RBH",
+      "glance": [
+       "Ø3-1/8″ × 3/16″",
+       "9.8″ (250 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TSR-RBH",
+      "glance": [
+       "Ø4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "11.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "120 TSR-RBH",
+      "glance": [
+       "Ø4-3/4″ × 7/32″",
+       "17.7″ (450 mm)",
+       "16.4 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "150 TSR-RBH",
+      "glance": [
+       "Ø6″ × 9/32″",
+       "19.7″ (500 mm)",
+       "19.7 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "180 TSR-RBH",
+      "glance": [
+       "Ø7″ × 11/32″",
+       "23.6″ (600 mm)",
+       "19.7 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "38 TDR",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TDR",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "8.7″ (220 mm)",
+       "7.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TDR",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TDR",
+      "glance": [
+       "Ø3-1/8″ × 3/16″",
+       "11.0″ (280 mm)",
+       "9.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TDR",
+      "glance": [
+       "Ø4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "11.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "120 TDR",
+      "glance": [
+       "Ø4-3/4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "16.4 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "150 TDR",
+      "glance": [
+       "Ø6″ × 9/32″",
+       "19.7″ (500 mm)",
+       "19.7 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TDR-RBH",
+      "glance": [
+       "Ø4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "11.8 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     },
+     {
+      "name": "150 TDR-RBH",
+      "glance": [
+       "Ø6″ × 9/32″",
+       "19.7″ (500 mm)",
+       "19.7 ft",
+       "IPC CNC · touch-screen · 3D simulation",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "100 TSR": "Ø4″ × 7/32″ · hydraulic CNC",
+     "220 TSR": "Ø8-5/8″ × 19/32″ · hydraulic CNC"
+    },
+    "note": "Capacities are the manufacturer's ratings for round mild-steel tube, outside diameter × wall; CLR = centreline radius of the bend die. Mandrel length is the maximum tube length fed with the standard mandrel rod (the working length). Tooling capacity is the number of stacked bend dies / radii; \"roll bending\" models carry a roll-bending head for large radii; a rear booster (RBE servo, RBF / RBH / CBF hydraulic) pushes the tube from behind for thin-wall and tight-radius bends. Three-phase machines are supplied for 600 V with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+    "label": "Download the CSM hydraulic bender, end former & saw brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "csm-hydraulic"
+  },
+  "csm-tsrj": {
+   "id": "csm-tsrj",
+   "brand": "csm",
+   "name": "TSRJ / TDRJ and TNCPB NC hydraulic tube benders, Ø1-1/2″ to Ø4″",
+   "short": "TSRJ / TDRJ / TNCPB NC",
+   "models_label": "38 – 80 TSRJ · 38 – 65 TDRJ · 50 – 100 TNCPB · 11 models",
+   "summary": "The NC hydraulic benders with a PLC touch-screen: the TSRJ (one tool) and TDRJ (two tools) feed the tube with a servo carriage at programmable speed and rotate it with a servo collet, so multi-plane parts are bent from a stored program; the TNCPB is fed by hand against the stop with servo rotation — the lowest-priced programmed bender for Ø2″ to Ø4″ furniture, railing and automotive tube. Hydraulic bend arm, clamp, pressure die and side booster; mandrel with automatic lubrication and anticipated retraction.",
+   "headline": "NC hydraulic · Ø1-1/2″ – Ø4″ · servo feed (TSRJ / TDRJ) or manual feed (TNCPB)",
+   "features": [
+    "Bend arm (C-axis), clamp die, pressure die and side booster by hydraulics",
+    "Carriage (Y-axis) by servo motor with programmable speed (TSRJ / TDRJ) — manual feeding on the TNCPB",
+    "Collet (B-axis) grip by hydraulics, rotation by servo motor",
+    "Mandrel by hydraulics with automatic lubrication and anticipated retraction",
+    "Tool / radii shift up-down and left-right by hydraulics (TDRJ)",
+    "PLC control with touch-screen: programmable servo speeds, USB port, manual / automatic, inch / metric; XYZ / YBC axes optional",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic tube loader and unloader; bundle loading",
+    "Rear booster (servo RBE / hydraulic RBF, RBH) for thin-wall and tight-radius bending",
+    "Roll-bending head for large radii",
+    "Integrated circular saw, end-forming station and robot transfer — automated bending cells",
+    "Tooling: bend dies, clamp dies, pressure dies, wiper dies and mandrels to your tube and radius",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-tsrj",
+    "cs-tncpb",
+    "cs-tsrj-carriage"
+   ],
+   "videos": [
+    {
+     "id": "uHg5_8L7djQ",
+     "title": "75 TNCPB NC pipe bending machine",
+     "duration": "PT0M42S",
+     "thumb": "video-uHg5_8L7djQ"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TSRJ / TDRJ",
+      "sub": "NC hydraulic benders with servo carriage",
+      "models": [
+       "38 TSRJ",
+       "50 TSRJ",
+       "65 TSRJ",
+       "80 TSRJ",
+       "38 TDRJ",
+       "50 TDRJ",
+       "65 TDRJ"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ (38.1 mm) × 11 ga (3 mm)",
+         "Ø2″ (50.8 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 11 ga (3 mm)",
+         "Ø3-1/8″ (80 mm) × 3/16″ (4.5 mm)",
+         "Ø1-1/2″ (38.1 mm) × 11 ga (3 mm)",
+         "Ø2″ (50.8 mm) × 11 ga (3 mm)",
+         "Ø2-1/2″ (65 mm) × 11 ga (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)",
+         "1.6 – 11.0″ (40 – 280 mm)",
+         "1.0 – 5.9″ (25 – 150 mm)",
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.4 – 9.8″ (35 – 250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)",
+         "9.8 ft · 118″ (3,000 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.2 ft · 98″ (2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "1",
+         "1",
+         "1",
+         "1",
+         "2",
+         "2",
+         "2"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "TNCPB",
+      "sub": "NC hydraulic benders with manual feeding",
+      "models": [
+       "50 TNCPB",
+       "75 TNCPB",
+       "89 TNCPB",
+       "100 TNCPB"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø2″ (50.8 mm) × 11 ga (3 mm)",
+         "Ø3″ (76.2 mm) × 11 ga (3 mm)",
+         "Ø3-1/2″ (88.9 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (101.6 mm) × 7/32″ (5.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "1.2 – 8.7″ (30 – 220 mm)",
+         "1.6 – 9.8″ (40 – 250 mm)",
+         "2.0 – 11.8″ (50 – 300 mm)",
+         "2.4 – 15.7″ (60 – 400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "6.9 ft · 83″ (2,100 mm)",
+         "7.9 ft · 94″ (2,400 mm)",
+         "8.5 ft · 102″ (2,600 mm)",
+         "11.8 ft · 142″ (3,600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "1",
+         "1",
+         "1",
+         "1"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "38 TSRJ",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TSRJ",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "8.7″ (220 mm)",
+       "7.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TSRJ",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "80 TSRJ",
+      "glance": [
+       "Ø3-1/8″ × 3/16″",
+       "11.0″ (280 mm)",
+       "9.8 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "38 TDRJ",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "5.9″ (150 mm)",
+       "7.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TDRJ",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "8.7″ (220 mm)",
+       "7.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "65 TDRJ",
+      "glance": [
+       "Ø2-1/2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "8.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TNCPB",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "8.7″ (220 mm)",
+       "6.9 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "75 TNCPB",
+      "glance": [
+       "Ø3″ × 11 ga",
+       "9.8″ (250 mm)",
+       "7.9 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "89 TNCPB",
+      "glance": [
+       "Ø3-1/2″ × 12 ga",
+       "11.8″ (300 mm)",
+       "8.5 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TNCPB",
+      "glance": [
+       "Ø4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "11.8 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "75 TNCPB": "Ø3″ × 11 ga · NC hydraulic, manual feed"
+    },
+    "note": "Capacities are the manufacturer's ratings for round mild-steel tube, outside diameter × wall; CLR = centreline radius of the bend die. Mandrel length is the maximum tube length fed with the standard mandrel rod (the working length). Tooling capacity is the number of stacked bend dies / radii; \"roll bending\" models carry a roll-bending head for large radii; a rear booster (RBE servo, RBF / RBH / CBF hydraulic) pushes the tube from behind for thin-wall and tight-radius bends. Three-phase machines are supplied for 600 V with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+    "label": "Download the CSM hydraulic bender, end former & saw brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "csm-nc"
+  },
+  "csm-tncb": {
+   "id": "csm-tncb",
+   "brand": "csm",
+   "name": "TNCB single-axis NC hydraulic pipe benders, Ø1-1/2″ to Ø8-5/8″",
+   "short": "TNCB single-axis NC",
+   "models_label": "38 TNCB – 220 TNCB · TNCB-CBF / RBF · 13 models",
+   "summary": "The single-axis hydraulic bender with a mandrel: the operator positions the pipe against the mechanical stop, the PLC bends it to the programmed angle — the simple, rugged machine for boiler, construction, shipyard and water-supply pipe from Ø1-1/2″ to Ø8-5/8″, and for furniture and automotive tube on the small models. The -CBF and -RBF versions add a hydraulic booster for thin-wall pipe and tight radii, the 220 TNCB-RBF bends to a 39″ centreline radius.",
+   "headline": "Single-axis NC hydraulic · Ø1-1/2″ – Ø8-5/8″ · mandrel · mechanical stop",
+   "features": [
+    "Bend arm (C-axis), clamp die, pressure die and side booster by hydraulics",
+    "Mandrel by hydraulics with automatic lubrication and anticipated retraction",
+    "Mechanical stopper for the feed position",
+    "Hydraulic booster on the -CBF / -RBF models",
+    "PLC control with touch-screen: programmable speeds, USB port, manual / automatic, inch / metric",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic loader",
+    "Hydraulic rear booster",
+    "Tooling: bend dies, clamp dies, pressure dies, wiper dies and mandrels to your pipe and radius",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-tncb",
+    "cs-tncb-parts",
+    "cs-tncb-parts-2"
+   ],
+   "videos": [
+    {
+     "id": "Z3eMKTBjO5A",
+     "title": "38 TNCB NC mandrel pipe bender",
+     "duration": "PT3M29S",
+     "thumb": "video-Z3eMKTBjO5A"
+    },
+    {
+     "id": "bp16NSlrOXc",
+     "title": "38 TNCB bending square tube",
+     "duration": "PT1M47S",
+     "thumb": "video-bp16NSlrOXc"
+    },
+    {
+     "id": "TU0e6UvHXLQ",
+     "title": "50 TNCB mandrel pipe bender",
+     "duration": "PT0M26S",
+     "thumb": "video-TU0e6UvHXLQ"
+    },
+    {
+     "id": "g-hrQ6svHn8",
+     "title": "75 TNCB NC pipe bender",
+     "duration": "PT0M29S",
+     "thumb": "video-g-hrQ6svHn8"
+    },
+    {
+     "id": "groeKSO8KBs",
+     "title": "100 TNCB NC hydraulic pipe bender",
+     "duration": "PT1M13S",
+     "thumb": "video-groeKSO8KBs"
+    },
+    {
+     "id": "_qmrm1RAdv8",
+     "title": "120 TNCB-RBF boiler pipe — 1 × D bends",
+     "duration": "PT0M38S",
+     "thumb": "video-_qmrm1RAdv8"
+    },
+    {
+     "id": "Q7NQpY0_nvI",
+     "title": "220 TNCB NC mandrel bender",
+     "duration": "PT1M28S",
+     "thumb": "video-Q7NQpY0_nvI"
+    },
+    {
+     "id": "0RuOxFGOlTA",
+     "title": "220 TNCB-RBF mandrel pipe bender",
+     "duration": "PT1M23S",
+     "thumb": "video-0RuOxFGOlTA"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TNCB",
+      "sub": "Single-axis NC hydraulic benders",
+      "models": [
+       "38 TNCB",
+       "50 TNCB",
+       "75 TNCB",
+       "89 TNCB",
+       "100 TNCB",
+       "120 TNCB",
+       "150 TNCB",
+       "180 TNCB",
+       "220 TNCB",
+       "75 TNCB-CBF",
+       "120 TNCB-CBF",
+       "120 TNCB-RBF",
+       "220 TNCB-RBF"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "cells": [
+         "Ø1-1/2″ (38.1 mm) × 11 ga (3 mm)",
+         "Ø2″ (50.8 mm) × 11 ga (3 mm)",
+         "Ø3″ (76.2 mm) × 11 ga (3 mm)",
+         "Ø3-1/2″ (88.9 mm) × 12 ga (2.5 mm)",
+         "Ø4″ (101.6 mm) × 7/32″ (5.5 mm)",
+         "Ø5″ (127 mm) × 10 ga (3.5 mm)",
+         "Ø6″ (152.4 mm) × 9/32″ (7 mm)",
+         "Ø7″ (180 mm) × 11/32″ (9 mm)",
+         "Ø8-5/8″ (220 mm) × 5/16″ (8 mm)",
+         "Ø3″ (76.2 mm) × 11 ga (3 mm)",
+         "Ø5″ (127 mm) × 7/32″ (5.5 mm)",
+         "Ø5″ (127 mm) × 7/32″ (5.5 mm)",
+         "Ø8-5/8″ (220 mm) × 9/32″ (7 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "cells": [
+         "1.0 – 6.7″ (25 – 170 mm)",
+         "1.2 – 9.8″ (30 – 250 mm)",
+         "1.6 – 11.8″ (40 – 300 mm)",
+         "1.6 – 13.8″ (40 – 350 mm)",
+         "2.4 – 15.7″ (60 – 400 mm)",
+         "3.1 – 17.7″ (80 – 450 mm)",
+         "3.5 – 19.7″ (90 – 500 mm)",
+         "3.9 – 23.6″ (100 – 600 mm)",
+         "3.9 – 27.6″ (100 – 700 mm)",
+         "1.6 – 11.8″ (40 – 300 mm)",
+         "3.1 – 15.7″ (80 – 400 mm)",
+         "2.4 – 17.7″ (60 – 450 mm)",
+         "3.9 – 39.4″ (100 – 1000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mandrel working length",
+        "sub": "",
+        "cells": [
+         "6.2 ft · 75″ (1,900 mm)",
+         "7.2 ft · 87″ (2,200 mm)",
+         "8.5 ft · 102″ (2,600 mm)",
+         "8.5 ft · 102″ (2,600 mm)",
+         "11.8 ft · 142″ (3,600 mm)",
+         "17.1 ft · 205″ (5,200 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "19.7 ft · 236″ (6,000 mm)",
+         "8.5 ft · 102″ (2,600 mm)",
+         "17.1 ft · 205″ (5,200 mm)",
+         "17.1 ft · 205″ (5,200 mm)",
+         "19.7 ft · 236″ (6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tooling capacity",
+        "sub": "stacked dies / radii",
+        "cells": [
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1",
+         "1"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roll bending",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rear booster",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic",
+         "Hydraulic"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "38 TNCB",
+      "glance": [
+       "Ø1-1/2″ × 11 ga",
+       "6.7″ (170 mm)",
+       "6.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "50 TNCB",
+      "glance": [
+       "Ø2″ × 11 ga",
+       "9.8″ (250 mm)",
+       "7.2 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "75 TNCB",
+      "glance": [
+       "Ø3″ × 11 ga",
+       "11.8″ (300 mm)",
+       "8.5 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "89 TNCB",
+      "glance": [
+       "Ø3-1/2″ × 12 ga",
+       "13.8″ (350 mm)",
+       "8.5 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "100 TNCB",
+      "glance": [
+       "Ø4″ × 7/32″",
+       "15.7″ (400 mm)",
+       "11.8 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "120 TNCB",
+      "glance": [
+       "Ø5″ × 10 ga",
+       "17.7″ (450 mm)",
+       "17.1 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "150 TNCB",
+      "glance": [
+       "Ø6″ × 9/32″",
+       "19.7″ (500 mm)",
+       "19.7 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "180 TNCB",
+      "glance": [
+       "Ø7″ × 11/32″",
+       "23.6″ (600 mm)",
+       "19.7 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "220 TNCB",
+      "glance": [
+       "Ø8-5/8″ × 5/16″",
+       "27.6″ (700 mm)",
+       "19.7 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "75 TNCB-CBF",
+      "glance": [
+       "Ø3″ × 11 ga",
+       "11.8″ (300 mm)",
+       "8.5 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "120 TNCB-CBF",
+      "glance": [
+       "Ø5″ × 7/32″",
+       "15.7″ (400 mm)",
+       "17.1 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "120 TNCB-RBF",
+      "glance": [
+       "Ø5″ × 7/32″",
+       "17.7″ (450 mm)",
+       "17.1 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     },
+     {
+      "name": "220 TNCB-RBF",
+      "glance": [
+       "Ø8-5/8″ × 9/32″",
+       "39.4″ (1000 mm)",
+       "19.7 ft",
+       "PLC NC · touch-screen",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {
+     "120 TNCB": "Ø5″ × 10 ga · single-axis NC"
+    },
+    "note": "Capacities are the manufacturer's ratings for round mild-steel tube, outside diameter × wall; CLR = centreline radius of the bend die. Mandrel length is the maximum tube length fed with the standard mandrel rod (the working length). Tooling capacity is the number of stacked bend dies / radii; \"roll bending\" models carry a roll-bending head for large radii; a rear booster (RBE servo, RBF / RBH / CBF hydraulic) pushes the tube from behind for thin-wall and tight-radius bends. Three-phase machines are supplied for 600 V with a CSA-approved panel."
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+    "label": "Download the CSM hydraulic bender, end former & saw brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "csm-nc"
+  },
+  "csm-f38": {
+   "id": "csm-f38",
+   "brand": "csm",
+   "name": "F38 / F50 symmetric tube benders — both ends of the tube bent at once, Ø1-1/2″ and Ø2″",
+   "short": "F38 / F50 symmetric benders",
+   "models_label": "F38 · F50 · F38-90 · F38H-4A · F38H-5A · 5 models",
+   "summary": "Two bending heads on one bed bend both ends of a tube in the same stroke — towel rails, handles, furniture frames, U-bolts, chair legs and headboards come off the machine finished, at twice the output of a single-head bender. The F38 and F50 are the single-axis hydraulic machines with a head pusher for fast unloading; the F38-90 adds manual multi-plane rotation; the F38H-4A and F38H-5A feed the tube with a servo motor and the -5A rotates it with a servo collet for automatic multi-plane parts. Stacked tools for Ø3/4″, Ø1″, Ø1-1/4″ and Ø1-1/2″.",
+   "headline": "Two heads · Ø1-1/2″ and Ø2″ × 12 ga · 1 to 3 axes · stacked tools",
+   "features": [
+    "Two bending heads bend both tube ends in one cycle; bending, clamp die and pressure die by hydraulics",
+    "Head pusher for fast unloading (single-axis models)",
+    "Feeding by servo motor (F38H-4A / 5A); grip by hydraulics with servo rotation for multi-plane bends (F38H-5A)",
+    "Stacked tooling: up to 3 – 4 dies for Ø3/4″, 2 – 3 for Ø1″, 1 – 2 for Ø1-1/4″, 1 for Ø1-1/2″",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Tooling to your tube and radius",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-f38h",
+    "cs-f38"
+   ],
+   "videos": [
+    {
+     "id": "NUlZbZ6Pv8c",
+     "title": "F38H-4A double-head bender — bed frames in square tube",
+     "duration": "PT2M36S",
+     "thumb": "video-NUlZbZ6Pv8c"
+    },
+    {
+     "id": "4lOXCjcIoK4",
+     "title": "F38 dual-head symmetric bender with punch",
+     "duration": "PT0M22S",
+     "thumb": "video-4lOXCjcIoK4"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "glance_keys": [
+     "capacity",
+     "clr",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities for round mild-steel tube; the working distance is the range of centre-to-centre spacing between the two bends; tools stack = number of dies stacked for that tube size.",
+    "tables": [
+     {
+      "title": "F series",
+      "sub": "Symmetric benders",
+      "models": [
+       "F38",
+       "F50",
+       "F38-90",
+       "F38H-4A",
+       "F38H-5A"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD × wall, mild steel",
+        "key": true,
+        "cells": [
+         "Ø1-1/2″ × 12 ga (38.1 × 2.5 mm)",
+         "Ø2″ × 14 ga (50 × 2 mm)",
+         "Ø1-1/2″ × 12 ga (38.1 × 2.5 mm)",
+         "Ø1-1/2″ × 12 ga (38 × 2.5 mm)",
+         "Ø1-1/2″ × 12 ga (38 × 2.5 mm)"
+        ]
+       },
+       {
+        "label": "Centreline radius (CLR)",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "1.5 – 7.1″ (38 – 180 mm)",
+         "1.6 – 9.8″ (40 – 250 mm)",
+         "1.5 – 7.1″ (38 – 180 mm)",
+         "1.5 – 7.1″ (38 – 180 mm)",
+         "1.5 – 7.1″ (38 – 180 mm)"
+        ]
+       },
+       {
+        "label": "Working distance",
+        "sub": "between the two bends",
+        "key": true,
+        "cells": [
+         "6.7 – 59.1″ (170 – 1500 mm)",
+         "7.9 – 90.6″ (200 – 2300 mm)",
+         "6.7 – 59.1″ (170 – 1500 mm)",
+         "9.8 – 165.4″ (250 – 4200 mm)",
+         "12.6 – 165.4″ (320 – 4200 mm)"
+        ]
+       },
+       {
+        "label": "Tools stack",
+        "sub": "Ø3/4″ / Ø1″ / Ø1-1/4″ / Ø1-1/2″",
+        "key": false,
+        "cells": [
+         "3-4 / 2-3 / 1-2 / 1",
+         "4-5 / 3-4 / 2-3 / 1-2",
+         "3-4 / 2-3 / 1-2 / 1",
+         "3-4 / 2-3 / 1-2 / 1",
+         "3-4 / 2-3 / 1-2 / 1"
+        ]
+       },
+       {
+        "label": "Multi-plane",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "—",
+         "—",
+         "Manual",
+         "—",
+         "Automatic"
+        ]
+       },
+       {
+        "label": "Axes",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "1",
+         "1",
+         "1",
+         "2",
+         "3"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "F38",
+      "glance": [
+       "Ø1-1/2″ × 12 ga",
+       "7.1″ (180 mm)",
+       "6.7 – 59″ span",
+       "Symmetric, hydraulic, 1 axis",
+       "—"
+      ]
+     },
+     {
+      "name": "F50",
+      "glance": [
+       "Ø2″ × 14 ga",
+       "9.8″ (250 mm)",
+       "7.9 – 90.6″ span",
+       "Symmetric, hydraulic, 1 axis",
+       "—"
+      ]
+     },
+     {
+      "name": "F38-90",
+      "glance": [
+       "Ø1-1/2″ × 12 ga",
+       "7.1″ (180 mm)",
+       "6.7 – 59″ span",
+       "Symmetric, manual multi-plane",
+       "—"
+      ]
+     },
+     {
+      "name": "F38H-4A",
+      "glance": [
+       "Ø1-1/2″ × 12 ga",
+       "7.1″ (180 mm)",
+       "9.8 – 165″ span",
+       "Symmetric, servo feed, 2 axes",
+       "—"
+      ]
+     },
+     {
+      "name": "F38H-5A",
+      "glance": [
+       "Ø1-1/2″ × 12 ga",
+       "7.1″ (180 mm)",
+       "12.6 – 165″ span",
+       "Symmetric, servo feed + rotation, 3 axes",
+       "—"
+      ]
+     }
+    ]
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+    "label": "Download the CSM hydraulic bender, end former & saw brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "csm-symmetric"
   }
  }
 }

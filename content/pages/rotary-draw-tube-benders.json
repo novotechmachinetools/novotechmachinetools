@@ -83,11 +83,15 @@
  "related_pages": [
   {
    "href": "cnc-tube-benders.html",
-   "label": "CNC tube benders"
+   "label": "ISITAN CNC tube benders"
   },
   {
    "href": "nc-tube-benders.html",
-   "label": "NC tube benders"
+   "label": "ISITAN NC tube benders"
+  },
+  {
+   "href": "csm-tube-benders.html",
+   "label": "CSM tube benders"
   },
   {
    "href": "pipe-benders.html",
@@ -118,18 +122,23 @@
   "pages": [
    {
     "href": "cnc-tube-benders.html",
-    "label": "CNC benders",
+    "label": "ISITAN CNC benders",
     "current": false
    },
    {
     "href": "nc-tube-benders.html",
-    "label": "NC benders",
+    "label": "ISITAN NC benders",
     "current": false
    },
    {
     "href": "rotary-draw-tube-benders.html",
     "label": "Rotary draw",
     "current": true
+   },
+   {
+    "href": "csm-tube-benders.html",
+    "label": "CSM benders",
+    "current": false
    }
   ]
  },

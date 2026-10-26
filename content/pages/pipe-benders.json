@@ -3,19 +3,19 @@
  "template": "hub.html",
  "family_set": "tube-benders",
  "nav_label": "All pipe & tube benders",
- "title": "Pipe Benders & Mandrel Tube Bending Machines | NovoTech",
+ "title": "Pipe & Tube Benders, CNC, Electric & Hydraulic | NovoTech",
  "artifact_title": "Pipe Benders & Tube Bending Machines",
- "meta_description": "CNC and NC mandrel pipe benders to Ø3-1/2″ and compact rotary draw tube benders, sold and serviced across Canada. Capacity table in inches for every model.",
- "h1": "Pipe benders and tube bending machines",
- "intro": "A pipe bender or tube bending machine draws a tube around a bend die to a set angle; a mandrel bender adds an internal mandrel so thin-wall tube bends to a tight radius without wrinkling or collapsing. Every ISITAN tube and pipe bender NovoTech sells in Canada: servo CNC mandrel benders with 3D simulation for production, NC hydraulic mandrel benders with a 10″ touchscreen for exhaust, handrail and furniture shops, compact SFB 32 and aluminum-profile benders, and BK rotary draw benders for pipe, bar and box section — from a 1 HP bench bender to a 34 HP CNC pipe bending machine for Ø3-1/2″ × 8 ga. Built in Turkey by ISITAN since 1959, supplied with CSA-approved panels, one tooling set and installation, and supported from NovoTech's warehouse in Mississauga, ON. Looking for a mandrel bender, exhaust pipe bender, hydraulic pipe bender or CNC tube bender? These are the ones we stock and service.",
+ "meta_description": "ISITAN and CSM mandrel benders — all-electric, hybrid and hydraulic CNC, NC, symmetric and rotary draw — from Ø15/32″ tube to Ø8-5/8″ pipe, in one table.",
+ "h1": "Pipe benders and tube bending machines — CNC, NC, all-electric and hydraulic, Ø15/32″ to Ø8-5/8″",
+ "intro": "A pipe bender or tube bending machine draws a tube around a bend die to a set angle; a mandrel bender adds an internal mandrel so thin-wall tube bends to a tight radius without wrinkling or collapsing. NovoTech sells two lines of mandrel benders in Canada, each on its own pages: ISITAN, built in Turkey since 1959 — servo CNC mandrel benders with 3D simulation, NC hydraulic mandrel benders with a 10″ touchscreen, compact SFB 32 and aluminum-profile benders, and BK rotary draw benders for pipe, bar and box section, with the premium-line SPB NC draw benders beside them; and CSM, built in Taiwan since 1982 — all-electric EMB / EMR benders that bend left- and right-hand in one part, MBE / MRE and T-series electric hybrids with stacked tools, TSR / TDR hydraulic CNC and TNCB NC pipe benders to Ø8-5/8″ and two-head symmetric benders. From a 1 HP bench bender for 1-1/4″ pipe to a 20 ft hydraulic CNC pipe bender for shipyard pipe, every machine is supplied with a CSA-approved panel, tooling and installation, and supported from Mississauga, ON. Below, each page in brief and every model in one capacity table.",
  "hero_points": [
-  "<a href=\"cnc-tube-benders\">CNC tube benders</a> — 3- and 5-axis servo mandrel benders, Ø1-1/2″ to Ø3-1/2″",
-  "<a href=\"nc-tube-benders\">NC tube benders</a> — hydraulic mandrel benders with 10″ touchscreen, Ø1-1/4″ to Ø3-1/2″",
-  "<a href=\"rotary-draw-tube-benders\">Rotary draw benders</a> — compact non-mandrel benders for pipe, bar and box section"
+  "<a href=\"cnc-tube-benders\">ISITAN CNC tube benders</a> — 3- and 5-axis servo mandrel benders, Ø1-1/2″ to Ø3-1/2″",
+  "<a href=\"nc-tube-benders\">ISITAN NC tube benders</a> and <a href=\"rotary-draw-tube-benders\">rotary draw benders</a> — hydraulic mandrel benders to Ø3-1/2″, compact benders for pipe, bar and box section",
+  "<a href=\"csm-tube-benders\">CSM tube benders</a> — all-electric, hybrid and hydraulic CNC, NC and symmetric benders, Ø15/32″ to Ø8-5/8″"
  ],
  "hero_image": "is-sfb-38-cnc-a5",
  "hero_image_secondary": [
-  "is-sfb-90-nc",
+  "cs-tbre",
   "is-bk-050"
  ],
  "breadcrumb": [
@@ -31,31 +31,31 @@
    "label": "Pipe & tube benders"
   }
  ],
- "hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "ISITAN benders are made in Turkey by ISITAN Makine; CSM benders in Taiwan by Chiao Sheng Machinery; the SPB draw benders are NovoTech's premium line, made in Turkey. All sold, installed and supported in Canada by NovoTech.",
  "subpages": [
   {
    "slug": "cnc-tube-benders",
-   "title": "CNC tube benders",
+   "title": "ISITAN CNC tube benders",
    "image": "is-sfb-90-cnc",
-   "blurb": "SFB CNC/A3 and CNC/A5 servo mandrel benders from Ø1-1/2″ to Ø3-1/2″ with 21″ touchscreen CNC and 3D simulation.",
+   "blurb": "SFB CNC/A3 and CNC/A5 servo mandrel benders from Ø1-1/2″ to Ø3-1/2″ with 21″ touchscreen CNC and 3D simulation, made in Turkey.",
    "families": [
     "isitan-sfb-cnc-a5",
     "isitan-sfb-cnc-a3"
    ],
-   "nav_label": "CNC benders"
+   "nav_label": "ISITAN CNC benders"
   },
   {
    "slug": "nc-tube-benders",
-   "title": "NC tube benders",
+   "title": "ISITAN NC tube benders",
    "image": "is-sfb-90-nc",
-   "blurb": "SFB NC and NC/C hydraulic mandrel benders with 10″ touchscreen NC, compact SFB 32 benders and aluminum-profile benders.",
+   "blurb": "SFB NC and NC/C hydraulic mandrel benders with 10″ touchscreen NC, compact SFB 32 benders and aluminum-profile benders, made in Turkey.",
    "families": [
     "isitan-sfb-nc-c",
     "isitan-sfb-nc",
     "isitan-sfb-32",
     "isitan-sfb-38-nc-a"
    ],
-   "nav_label": "NC benders"
+   "nav_label": "ISITAN NC benders"
   },
   {
    "slug": "rotary-draw-tube-benders",
@@ -67,6 +67,22 @@
     "sahinler-spb"
    ],
    "nav_label": "Rotary draw"
+  },
+  {
+   "slug": "csm-tube-benders",
+   "title": "CSM tube benders",
+   "image": "cs-tbre",
+   "blurb": "All-electric EMB / EMR left- and right-hand benders, MBE / MRE and T-series electric hybrids with stacked tools, TSR hydraulic CNC and TNCB NC pipe benders to Ø8-5/8″ and two-head symmetric benders, made in Taiwan.",
+   "families": [
+    "csm-emr",
+    "csm-mbe",
+    "csm-tbre",
+    "csm-tsr",
+    "csm-tsrj",
+    "csm-tncb",
+    "csm-f38"
+   ],
+   "nav_label": "CSM benders"
   }
  ],
  "range_kind": "table",
@@ -78,8 +94,8 @@
   "Weight"
  ],
  "range_lead": "Maximum tube (OD × wall in mild steel), centreline radius, working length, control and weight for every model. Each row links to the full specification table of its series.",
- "range_caption": "ISITAN tube and pipe benders supplied by NovoTech — capacities for mild steel tube",
- "range_note": "Tube capacities are for mild steel; stainless, aluminum, bar and box-section capacities for the BK series are on the rotary draw page. CLR = centreline radius. Working length is the maximum feed with the standard mandrel rod (extended mandrels to 20 ft are optional on SFB models).",
+ "range_caption": "Tube and pipe benders supplied by NovoTech — ISITAN, CSM and the NovoTech premium line — capacities for mild steel tube",
+ "range_note": "Tube capacities are for mild steel; stainless, aluminum, bar and box-section capacities for the BK series are on the rotary draw page. CLR = centreline radius (the largest die radius). Working length is the maximum feed with the standard mandrel rod (extended mandrels to 20 ft are optional on SFB models); for the CSM symmetric benders it is the span between the two bends. Weights for the CSM benders are quoted with the configuration.",
  "faq": [
   {
    "q": "Pipe bender, tube bender, mandrel bender — what is the difference?",
@@ -91,7 +107,11 @@
   },
   {
    "q": "Which tube benders does NovoTech stock?",
-   "a": "We keep the SFB 38-NC and 51-NC and the BK-050 in Mississauga, ON, and bring CNC models, carrier models and the larger 76 and 90 sizes in to order with their tooling. In-stock machines carry the 7-day money-back guarantee."
+   "a": "We keep the SFB 38-NC and 51-NC and the BK-050 in Mississauga, ON, and bring CNC models, carrier models and the larger 76 and 90 sizes in to order with their tooling. In-stock machines carry the 7-day money-back guarantee. CSM benders are quoted with the tooling for your part drawings."
+  },
+  {
+   "q": "ISITAN or CSM?",
+   "a": "Both are mandrel benders, installed and supported by the same NovoTech technicians. ISITAN (Turkey) covers Ø1-1/4″ to Ø3-1/2″ with NC, carrier and CNC models — the job-shop and fabricator range, several models in stock. CSM (Taiwan) covers Ø15/32″ brake line to Ø8-5/8″ pipe with all-electric and electric-hybrid CNC benders, stacked tools, rear boosters, hydraulic CNC and NC pipe benders and automation — the series-production range. Send us the part drawing and we quote from either line."
   },
   {
    "q": "Do you install tube benders and train operators?",
@@ -109,23 +129,27 @@
  "faq_title": "Questions we get asked about pipe benders",
  "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey by ISITAN",
-  "text": "ISITAN has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."
+  "title": "Two bender makers, one supplier",
+  "text": "ISITAN (Turkey, since 1959) and CSM (Taiwan, CNC benders since 1989) — every machine with a CSA-approved panel, tooling, installation, training and parts and service from Mississauga, ON."
  },
  "section_label": "Pipe & tube benders",
  "related_blurb": "Every ISITAN tube and pipe bender NovoTech supplies, with the capacity table for the whole range.",
  "related_pages": [
   {
    "href": "cnc-tube-benders.html",
-   "label": "CNC tube benders"
+   "label": "ISITAN CNC tube benders"
   },
   {
    "href": "nc-tube-benders.html",
-   "label": "NC tube benders"
+   "label": "ISITAN NC tube benders"
   },
   {
    "href": "rotary-draw-tube-benders.html",
    "label": "Rotary draw tube benders"
+  },
+  {
+   "href": "csm-tube-benders.html",
+   "label": "CSM tube benders"
   },
   {
    "href": "pipe-notcher.html",
@@ -138,6 +162,10 @@
   {
    "href": "circular-cold-saws.html",
    "label": "Circular cold saws"
+  },
+  {
+   "href": "wire-bending-machines.html",
+   "label": "CNC wire bending machines"
   }
  ],
  "intro_video": {
@@ -155,9 +183,29 @@
    "size": "PDF · 29 MB · imperial units"
   },
   {
+   "file": "files/NovoTech-CSM-Electric-Tube-Benders-2026.pdf",
+   "label": "Download the CSM electric tube & wire bender brochure",
+   "size": "PDF · 1 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+   "label": "Download the CSM hydraulic bender, end former & saw brochure",
+   "size": "PDF · 2 MB · imperial units"
+  },
+  {
    "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
    "label": "Download the notchers, circle cutters, polishers & benders brochure",
    "size": "PDF · 2 MB · imperial units"
   }
+ ],
+ "range_pick": [
+  "capacity",
+  [
+   "clr",
+   "radius"
+  ],
+  "working_length",
+  "control",
+  "weight"
  ]
 }

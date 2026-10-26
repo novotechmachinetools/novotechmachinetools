@@ -4,13 +4,13 @@
  "family_set": "pipe-end-and-saws",
  "title": "Cold Saws — Circular & CNC Carbide Cold Saws | NovoTech",
  "artifact_title": "Cold saws — circular cold saws, manual to CNC carbide",
- "meta_description": "Cold saw machines for metal from a 10-3/4″ manual circular saw to CNC carbide production saws: wet cutting, burr-free ends, tube and bar to Ø6-1/4″, servo feeding, loaders.",
+ "meta_description": "Cold saws from a 10-3/4″ manual circular saw to automatic HSS and carbide production saws: wet cutting, burr-free ends, tube and bar to Ø6-1/4″, servo feed.",
  "h1": "Cold saws — circular cold saws, manual to CNC carbide",
- "intro": "A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Two families of cold saw machines: ISITAN's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head — and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the ISITAN saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON.",
+ "intro": "A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Three families of cold saw machines: ISITAN's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head; CSM's CT325 automatic saw with hydraulic down-feed and a servo carriage, cutting tube and bundles to Ø4″ in three spindle-speed ranges; and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the ISITAN saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON.",
  "hero_points": [
   "Manual and semi-automatic circular cold saws: round to Ø4-1/2″, mitre 45° both ways, 10-3/4″ – 13-3/4″ HSS blades",
   "Automatic carbide cold saws: solid bar Ø3/8″ – 6-1/4″ at up to 920 ft/min, servo feed, 20 ft magazine loader",
-  "Automatic HSS cold saws: tube and bar to Ø4″, ±.004″ feed accuracy, several lengths per bar"
+  "Automatic HSS cold saws: tube, bundles and bar to Ø4″, servo feed to ±.004″, several lengths per bar — CSM CT325 and Bekamak BMDO CS"
  ],
  "hero_image": "is-sfc-350-vx",
  "hero_image_secondary": [
@@ -30,7 +30,7 @@
    "label": "Cold saws — circular cold saws, manual to CNC carbide"
   }
  ],
- "hero_brand_line": "ISITAN circular cold saws are made in Turkey by ISITAN Makine; the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "ISITAN circular cold saws are made in Turkey by ISITAN Makine, the CT325 in Taiwan by CSM and the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "semi-group",
@@ -46,6 +46,15 @@
    "lead": "SFC VP with pneumatic vise and SFC V with manual vise, 10-3/4″ and 12-1/2″ blades.",
    "families": [
     "isitan-sfc-v"
+   ]
+  },
+  {
+   "id": "csm-saw-group",
+   "title": "CSM automatic circular saw with servo feed",
+   "lead": "The CT325 saws tube and bundles to Ø4″ with hydraulic down-feed, a servo carriage feeding to ±0.004″ and three spindle-speed ranges.",
+   "brand": "csm",
+   "families": [
+    "csm-ct325"
    ]
   },
   {
@@ -73,6 +82,10 @@
    "a": "You load bars in the magazine (BMDO XS) or on the roller table (BMDO CS), program the lengths and quantities, and the saw feeds each bar with a servo gripper, clamps it hydraulically, cuts, counts and moves on to the next length — to ±.004″ on the CS and with a 60 mm remnant on the XS."
   },
   {
+   "q": "What is the CSM CT325 for?",
+   "a": "Cutting tube to length in production, single or in bundles: the CT325 clamps hydraulically, feeds with a servo carriage to ±.004″ at 39 in/s and feeds the blade down hydraulically through planetary gears, with a PLC touch-screen and a pedestal with emergency stop. The L, M and H types differ only in spindle speed — steel, stainless and alloy, aluminum and non-ferrous. It is the saw CSM builds into its bending cells, and stands just as well on its own."
+  },
+  {
    "q": "Manual, pneumatic or semi-automatic?",
    "a": "The SFC V clamps with a hand vise — the simplest saw for occasional cuts. The SFC VP clamps with air at the pull of a lever, which saves time on every cut and holds short pieces better. The SFC 350-VX runs a semi-automatic cycle from a foot switch with a regulated head descent, for batches of the same part without an operator on the handle."
   },
@@ -88,8 +101,8 @@
  "faq_title": "Questions we get asked about cold saws",
  "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey by ISITAN and Bekamak",
-  "text": "ISITAN has built sheet-metal machinery in Bursa since 1959; Bekamak has built saws since 1990 — CE-certified machines with European components."
+  "title": "Made in Turkey and Taiwan",
+  "text": "ISITAN has built sheet-metal machinery in Bursa since 1959, CSM tube machinery in Tainan since 1982 and Bekamak saws since 1990 — CE-certified machines with European components."
  },
  "section_label": "Tube notchers, end formers & cold saws",
  "related_pages": [
@@ -104,6 +117,10 @@
   {
    "href": "pipe-benders.html",
    "label": "Pipe & tube benders"
+  },
+  {
+   "href": "csm-tube-benders.html",
+   "label": "CSM tube benders"
   },
   {
    "href": "band-saw.html",
@@ -129,6 +146,11 @@
    "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
    "label": "Download the ISITAN machinery catalogue",
    "size": "PDF · 29 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+   "label": "Download the CSM hydraulic bender, end former & saw brochure",
+   "size": "PDF · 2 MB · imperial units"
   },
   {
    "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",

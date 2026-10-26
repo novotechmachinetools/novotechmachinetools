@@ -4,11 +4,11 @@
  "family_set": "pipe-end-and-saws",
  "title": "Tube End Forming Machines — Expand, Reduce, Bead | NovoTech",
  "artifact_title": "Tube end forming machines — expanding, reducing, beading and flanging",
- "meta_description": "Tube end formers from a Ø3-1/2″ hydraulic expander-reducer to Swiss CNC inner / outer machines for Ø23.6″: expanding, reducing, beading, flaring, flanging; tube cutting and deburring.",
+ "meta_description": "Tube end formers from Ø3-1/2″ expander-reducers and six-station formers to Swiss CNC inner / outer machines for Ø23.6″: expand, reduce, bead, flare, groove.",
  "h1": "Tube end forming machines — expanding, reducing, beading and flanging",
- "intro": "A tube end former (pipe end forming machine) expands or reduces the end of a tube so two tubes slip together, and the production versions bead, flare, flange, calibrate and emboss the end as well — the machines behind exhaust systems, ventilation and chimney tube, shock absorbers, handrail and furniture connectors. Two ranges on this page, small to large. ISITAN's SFF single-station hydraulic end formers expand and reduce tube to Ø3-1/2″ × 14 ga with one tooling set, for the fabrication shop. Wecotech's Swiss tube end forming machines cover series production: the Easy line of compact expanders, reducers, a straightening press and a punching unit; the Universal line of modular production machines — expanders, reducers, axial and servo rotary formers, a multi-station forming centre and an automatic beading machine to Ø39.4″; the Traditional line built for the C and IO tooling that is standard in the exhaust trade; the Weco line of CNC inner / outer formers with programmable tool rotation for tube to Ø23.6″ and a flanging cell for bellows; and the shearing cutters, tube shear and deburring machine that complete an end-forming cell. Siemens controls, Bosch Rexroth hydraulics or servo drives, CSA-approved panels and support from Mississauga, ON.",
+ "intro": "A tube end former (pipe end forming machine) expands or reduces the end of a tube so two tubes slip together, and the production versions bead, flare, flange, calibrate and emboss the end as well — the machines behind exhaust systems, ventilation and chimney tube, shock absorbers, handrail and furniture connectors. Three ranges on this page, small to large. ISITAN's SFF single-station hydraulic end formers expand and reduce tube to Ø3-1/2″ × 14 ga with one tooling set, for the fabrication shop. CSM's EF end formers carry six forming stations on one ram for tube to Ø2″, the REF machines roll grooves and the ER 30-5 forms, chamfers and grooves in one cycle — the end-finishing stations of a bending cell. Wecotech's Swiss tube end forming machines cover series production: the Easy line of compact expanders, reducers, a straightening press and a punching unit; the Universal line of modular production machines — expanders, reducers, axial and servo rotary formers, a multi-station forming centre and an automatic beading machine to Ø39.4″; the Traditional line built for the C and IO tooling that is standard in the exhaust trade; the Weco line of CNC inner / outer formers with programmable tool rotation for tube to Ø23.6″ and a flanging cell for bellows; and the shearing cutters, tube shear and deburring machine that complete an end-forming cell. Siemens controls, Bosch Rexroth hydraulics or servo drives, CSA-approved panels and support from Mississauga, ON.",
  "hero_points": [
-  "ISITAN SFF hydraulic end formers — expand and reduce tube ends to Ø3-1/2″ × 14 ga, tooling set included",
+  "ISITAN SFF hydraulic end formers to Ø3-1/2″ × 14 ga · CSM EF six-station formers to Ø2″, REF grooving and ER 30-5 end-finishing machines",
   "Wecotech compact expanders and reducers from Ø3/8″ to Ø23.6″, 21 – 26 US tons, 2 – 4 s cycles, touchscreen programming",
   "Wecotech CNC inner / outer formers to Ø23.6″ with 8 – 24 radial pistons, Tubimatic machines for standard C and IO tools, beading, flanging, shearing and deburring"
  ],
@@ -30,7 +30,7 @@
    "label": "Tube end forming machines — expanding, reducing, beading and flanging"
   }
  ],
- "hero_brand_line": "ISITAN end formers are made in Turkey by ISITAN Makine; the Wecotech machines in Switzerland by Wecotech AG. All sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "ISITAN end formers are made in Turkey by ISITAN Makine, the CSM machines in Taiwan by Chiao Sheng Machinery and the Wecotech machines in Switzerland by Wecotech AG. All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "form-group",
@@ -39,6 +39,15 @@
    "brand": "isitan",
    "families": [
     "isitan-sff"
+   ]
+  },
+  {
+   "id": "csm-form-group",
+   "title": "CSM end formers, grooving and end-finishing machines",
+   "lead": "Six-station EF end formers to Ø2″, REF grooving machines and the ER 30-5 that forms, chamfers and grooves in one cycle — the end-finishing stations of CSM's bending cells.",
+   "brand": "csm",
+   "families": [
+    "csm-ef"
    ]
   },
   {
@@ -109,6 +118,10 @@
    "a": "An expander opens a tube end so the next tube slips inside (exhaust slip joints, telescoping handrail, sleeves); a reducer collapses the end to fit into the next tube. The ISITAN SFF does both in one station with a hydraulic ram and interchangeable forming tools; the Wecotech Tubex and Tubex-U expand with a cone-driven segmented tool, the Tubin and Tubin-U reduce with collet-type top jaws, and the Tubimatic and Weco-line machines do both — and bead, flare and flange — with inner and outer tools."
   },
   {
+   "q": "What do the CSM EF, REF and ER machines do?",
+   "a": "The CSM EF carries six forming stations on one hydraulic ram, so expanding, reducing, beading, flaring and flanging run in sequence without a tool change — the end former to put beside a bender for tube to Ø13/16″, Ø1-3/16″ or Ø2″, in a horizontal or vertical layout. The REF 30 and REF 40 roll a groove into the tube end for O-ring and clamp connections; the ER 30-5 forms, chamfers and grooves the end in one cycle on a trolley that moves between cells. With a CSM WB wire bender the EF50 makes complete exhaust hangers."
+  },
+  {
    "q": "What is an inner / outer (IO) tube end former?",
    "a": "A machine with two tools that work on the tube end at the same time: an inner mandrel or expansion tool inside the tube and an outer tool — closing jaws or, on the Weco line, 8 to 24 radial pistons — around it. Between them the end is expanded, reduced, beaded, flared, flanged or embossed to a defined shape in one stroke, in any position on round or shaped tube. The Tubimatic IO machines take the commercially available IO-tools; the Tubex IO-S and Wecomatic run Wecotech's own tooling under CNC."
   },
@@ -144,8 +157,8 @@
  "faq_title": "Questions we get asked about tube end formers",
  "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey and Switzerland",
-  "text": "ISITAN has built sheet-metal and tube machinery in Bursa since 1959; Wecotech AG builds tube end forming machines in Switzerland for the exhaust, ventilation and automotive industries — Siemens controls, Bosch Rexroth hydraulics and servo drives, CE-certified."
+  "title": "Made in Turkey, Taiwan and Switzerland",
+  "text": "ISITAN has built sheet-metal and tube machinery in Bursa since 1959; CSM has built tube benders and end formers in Tainan since 1982; Wecotech AG builds tube end forming machines in Switzerland for the exhaust, ventilation and automotive industries — CE-certified, with Siemens controls and Bosch Rexroth hydraulics and servo drives."
  },
  "section_label": "Tube notchers, end formers & cold saws",
  "related_pages": [
@@ -162,8 +175,12 @@
    "label": "Pipe & tube benders"
   },
   {
-   "href": "rotary-draw-tube-benders.html",
-   "label": "Rotary draw tube benders"
+   "href": "csm-tube-benders.html",
+   "label": "CSM tube benders"
+  },
+  {
+   "href": "wire-bending-machines.html",
+   "label": "CNC wire bending machines"
   }
  ],
  "related_title": "More tube machinery from NovoTech",
@@ -181,6 +198,11 @@
    "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
    "label": "Download the ISITAN machinery catalogue",
    "size": "PDF · 29 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+   "label": "Download the CSM hydraulic bender, end former & saw brochure",
+   "size": "PDF · 2 MB · imperial units"
   },
   {
    "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",

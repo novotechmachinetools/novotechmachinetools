@@ -278,3 +278,24 @@ makes 800 / 360 / 180 px variants (8 KB on mobile) and build.img(name, max_w) ca
 (3) nothing else worth doing: fonts are the six weights the CSS uses (preloaded 400 + condensed 700), CSS is inlined and
 minified, images are responsive WebP with width/height, JS is 12 KB deferred.  Noise: the first Lighthouse run after a Chrome
 launch reports a 2 – 3 s "parse HTML" long task that disappears on the second run — always run twice.
+
+## CSM (Oct 26) — task #13
+
+Canada volumes (Ubersuggest, Oct 26): "pipe tube bender" 1,600, "tube bender" 1,300 (SD 17), "hydraulic tube bender" 390,
+"pipe bending machine" 110, "cnc tube bender" 90 (SD 29, CPC $7), "electric tube bender" 90, "mandrel tube bender" 90,
+"cnc wire bending machine" 30, "3d cnc wire bending machine" 10.
+Placement, per the user's brief and the section rule (> 6 families / 6,000 words → a page per line):
+- csm-tube-benders (new line page under the pipe-benders hub) — "CSM Electric & Hydraulic Tube Benders, to Ø8-5/8″ |
+  NovoTech": 7 families / 133 models (EMB / EMR, MRE2-RBE, MBE / MRE, TBRE / TMRE / TSRE / TDRE, TSR / TDR, TSRJ / TDRJ +
+  TNCPB, TNCB, F38 / F50 symmetric).  Putting them on the CNC and NC pages would have made those 6 and 7 families.
+- The ISITAN CNC / NC pages are now named for their line: "ISITAN CNC Mandrel Tube Benders, 3 & 5 Axis | NovoTech" and
+  "ISITAN NC Mandrel Tube Benders to Ø3-1/2″ | NovoTech" (h1s likewise); the generic terms go to the hub: "Pipe & Tube
+  Benders, CNC, Electric & Hydraulic | NovoTech".  Hub range table: range_pick with ["clr", "radius"] so the SPB rows no
+  longer shift their motor / weight into the wrong columns.
+- tube-end-forming-machines: CSM group (EF / REF / ER) after the ISITAN SFF group; circular-cold-saws: CSM CT325 group
+  before Bekamak (nav child added).
+- wire-bending-machines (new top-level section, after Pipe & tube benders): "CNC Wire Bending Machines, 3D, Ø5/32″ to
+  Ø9/16″ | NovoTech".
+- Not transferred, per the brief: CSM laser cutting (LS150 / LS208 / LS220 / LS360) and riveting (CS-102 / 150A / 180A).
+Videos: 56 of NovoTech's own channel videos of CSM machines (ids in tools/csm_vids.txt), "CSM tube bender company
+introduction" as the Inside-the-factory video on the CSM and wire pages.

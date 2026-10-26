@@ -2,6 +2,7 @@
 from isitan_lib import *  # noqa: F401,F403
 from sahinler_families import SPB_FAMILIES  # SPB draw benders below the ISITAN BK group
 from sahinler_lib import premium_pdf
+import csm_pages as CSM  # CSM (Taiwan) tube benders: their own line page under the pipe-benders hub
 
 SET = "tube-benders"
 SECTION = "Pipe & tube benders"
@@ -220,6 +221,7 @@ def t_bk():
 
 
 P_CNC, P_NC, P_BK = "cnc-tube-benders", "nc-tube-benders", "rotary-draw-tube-benders"
+P_CSM = CSM.D.P_BEND
 
 FAMILIES = [
     dict(id="isitan-sfb-cnc-a5", group="cnc", page=P_CNC,
@@ -352,10 +354,10 @@ TOOLING_FAQ = {"q": "What do you need from me to quote tooling?",
 
 PAGES = {
     P_CNC: dict(
-        title="CNC Mandrel Tube & Pipe Benders, 3 and 5 Axis | NovoTech",
+        title="ISITAN CNC Mandrel Tube Benders, 3 & 5 Axis | NovoTech",
         meta="Servo CNC mandrel benders from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe: 21″ touchscreen with 3D simulation, 190° bends, 13.1 ft feed. Parts and service in Canada.",
-        h1="CNC tube benders",
-        intro="A CNC tube bender drives the feed, rotation and bend axes with servo motors from a program, so multi-bend parts come off the machine identical without the operator positioning the tube between bends. Servo-driven CNC mandrel benders for production tube and pipe bending: the SFB CNC/A3 in five sizes from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe, and the five-axis SFB CNC/A5 that adds servo roll-bending for large sweeps. A 21″ touchscreen CNC with 3D simulation, spring-back and hardness compensation and X-Y-Z to Y-B-C conversion turns a drawing into a multi-bend part — exhaust and chassis tube, handrails, seating and fitness frames, furniture. Hydraulic mandrel, collet and clamping, oil cooler and remote assistance on every machine, with CSA-approved panels and support from Mississauga, ON.",
+        h1="ISITAN CNC tube benders — 3- and 5-axis servo mandrel benders, Ø1-1/2″ to Ø3-1/2″",
+        intro="A CNC tube bender drives the feed, rotation and bend axes with servo motors from a program, so multi-bend parts come off the machine identical without the operator positioning the tube between bends. Servo-driven CNC mandrel benders for production tube and pipe bending: the SFB CNC/A3 in five sizes from Ø1-1/2″ tube to Ø3-1/2″ × 8 ga pipe, and the five-axis SFB CNC/A5 that adds servo roll-bending for large sweeps. A 21″ touchscreen CNC with 3D simulation, spring-back and hardness compensation and X-Y-Z to Y-B-C conversion turns a drawing into a multi-bend part — exhaust and chassis tube, handrails, seating and fitness frames, furniture. Hydraulic mandrel, collet and clamping, oil cooler and remote assistance on every machine, with CSA-approved panels and support from Mississauga, ON. CSM's all-electric, hybrid and hydraulic CNC benders from Ø15/32″ to Ø8-5/8″ are on the CSM tube benders page.",
         points=["Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga mild steel tube · 190° · CLR to 9.8″", "3 or 5 servo axes · ±0.1° rotation · 9.8 or 13.1 ft feed", "21″ touchscreen CNC · 3D simulation · reports and remote assistance"],
         hero="is-sfb-38-cnc-a5", minis=["is-sfb-90-cnc", "is-sfb-51-cnc"],
         groups=[("cnc", "SFB CNC mandrel benders", "Five-axis A5 with servo roll bending, and the three-axis A3 production line-up.")],
@@ -365,10 +367,10 @@ PAGES = {
              TOOLING_FAQ, VOLT_FAQ],
     ),
     P_NC: dict(
-        title="NC Mandrel Pipe Benders — Hydraulic Tube Benders | NovoTech",
+        title="ISITAN NC Mandrel Tube Benders to Ø3-1/2″ | NovoTech",
         meta="Hydraulic NC mandrel benders from Ø1-1/4″ to Ø3-1/2″ pipe with 10″ touchscreen, servo-rotation carrier models, compact and aluminum-profile benders.",
-        h1="NC tube benders",
-        intro="An NC tube bender is a hydraulic mandrel bender whose bend angles are stored in a numeric control: the operator feeds and rotates the tube to a stop and the machine bends each angle to the programmed value. Hydraulic mandrel benders with a 10″ touchscreen NC: the SFB NC line in five sizes from Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga with 100 programs of 20 bends, the SFB NC/C with a servo-rotation carrier and hydraulic collet for series production, the compact SFB 32 benders for Ø1-1/4″ tube, and NC aluminum-profile benders for window and door frames. The pipe bender most exhaust, handrail, furniture and fabrication shops in Canada actually need — mandrel bending with programmed angles, without the price of a full CNC.",
+        h1="ISITAN NC tube benders — hydraulic mandrel benders with touchscreen NC, Ø1-1/4″ to Ø3-1/2″",
+        intro="An NC tube bender is a hydraulic mandrel bender whose bend angles are stored in a numeric control: the operator feeds and rotates the tube to a stop and the machine bends each angle to the programmed value. Hydraulic mandrel benders with a 10″ touchscreen NC: the SFB NC line in five sizes from Ø1-1/2″ × 11 ga to Ø3-1/2″ × 8 ga with 100 programs of 20 bends, the SFB NC/C with a servo-rotation carrier and hydraulic collet for series production, the compact SFB 32 benders for Ø1-1/4″ tube, and NC aluminum-profile benders for window and door frames. The pipe bender most exhaust, handrail, furniture and fabrication shops in Canada actually need — mandrel bending with programmed angles, without the price of a full CNC. CSM's NC hydraulic benders to Ø8-5/8″ pipe and its two-head symmetric benders are on the CSM tube benders page.",
         points=["Ø1-1/4″ × 11 ga to Ø3-1/2″ × 8 ga mild steel tube · 190° · CLR to 9.8″", "10″ touchscreen NC · 100 programs × 20 bends · encoder angle measurement", "Hydraulic mandrel, clamping and pressure die · up to 15.1 ft feed"],
         hero="is-sfb-90-nc", minis=["is-sfb-51-nc-c", "is-sfb-32-hd"],
         groups=[("nc", "SFB NC mandrel benders", "The standard SFB NC and the NC/C with servo-rotation carrier."),
@@ -395,33 +397,36 @@ PAGES = {
 }
 
 HUB_PAGE = dict(
-    title="Pipe Benders & Mandrel Tube Bending Machines | NovoTech",
-    meta="CNC and NC mandrel pipe benders to Ø3-1/2″ and compact rotary draw tube benders, sold and serviced across Canada. Capacity table in inches for every model.",
-    h1="Pipe benders and tube bending machines",
-    intro="A pipe bender or tube bending machine draws a tube around a bend die to a set angle; a mandrel bender adds an internal mandrel so thin-wall tube bends to a tight radius without wrinkling or collapsing. Every ISITAN tube and pipe bender NovoTech sells in Canada: servo CNC mandrel benders with 3D simulation for production, NC hydraulic mandrel benders with a 10″ touchscreen for exhaust, handrail and furniture shops, compact SFB 32 and aluminum-profile benders, and BK rotary draw benders for pipe, bar and box section — from a 1 HP bench bender to a 34 HP CNC pipe bending machine for Ø3-1/2″ × 8 ga. Built in Turkey by ISITAN since 1959, supplied with CSA-approved panels, one tooling set and installation, and supported from NovoTech's warehouse in Mississauga, ON. Looking for a mandrel bender, exhaust pipe bender, hydraulic pipe bender or CNC tube bender? These are the ones we stock and service.",
-    points=[f"<a href=\"{P_CNC}\">CNC tube benders</a> — 3- and 5-axis servo mandrel benders, Ø1-1/2″ to Ø3-1/2″",
-            f"<a href=\"{P_NC}\">NC tube benders</a> — hydraulic mandrel benders with 10″ touchscreen, Ø1-1/4″ to Ø3-1/2″",
-            f"<a href=\"{P_BK}\">Rotary draw benders</a> — compact non-mandrel benders for pipe, bar and box section"],
-    hero="is-sfb-38-cnc-a5", minis=["is-sfb-90-nc", "is-bk-050"],
+    title="Pipe & Tube Benders, CNC, Electric & Hydraulic | NovoTech",
+    meta="ISITAN and CSM mandrel benders — all-electric, hybrid and hydraulic CNC, NC, symmetric and rotary draw — from Ø15/32″ tube to Ø8-5/8″ pipe, in one table.",
+    h1="Pipe benders and tube bending machines — CNC, NC, all-electric and hydraulic, Ø15/32″ to Ø8-5/8″",
+    intro="A pipe bender or tube bending machine draws a tube around a bend die to a set angle; a mandrel bender adds an internal mandrel so thin-wall tube bends to a tight radius without wrinkling or collapsing. NovoTech sells two lines of mandrel benders in Canada, each on its own pages: ISITAN, built in Turkey since 1959 — servo CNC mandrel benders with 3D simulation, NC hydraulic mandrel benders with a 10″ touchscreen, compact SFB 32 and aluminum-profile benders, and BK rotary draw benders for pipe, bar and box section, with the premium-line SPB NC draw benders beside them; and CSM, built in Taiwan since 1982 — all-electric EMB / EMR benders that bend left- and right-hand in one part, MBE / MRE and T-series electric hybrids with stacked tools, TSR / TDR hydraulic CNC and TNCB NC pipe benders to Ø8-5/8″ and two-head symmetric benders. From a 1 HP bench bender for 1-1/4″ pipe to a 20 ft hydraulic CNC pipe bender for shipyard pipe, every machine is supplied with a CSA-approved panel, tooling and installation, and supported from Mississauga, ON. Below, each page in brief and every model in one capacity table.",
+    points=[f"<a href=\"{P_CNC}\">ISITAN CNC tube benders</a> — 3- and 5-axis servo mandrel benders, Ø1-1/2″ to Ø3-1/2″",
+            f"<a href=\"{P_NC}\">ISITAN NC tube benders</a> and <a href=\"{P_BK}\">rotary draw benders</a> — hydraulic mandrel benders to Ø3-1/2″, compact benders for pipe, bar and box section",
+            f"<a href=\"{P_CSM}\">CSM tube benders</a> — all-electric, hybrid and hydraulic CNC, NC and symmetric benders, Ø15/32″ to Ø8-5/8″"],
+    hero="is-sfb-38-cnc-a5", minis=["cs-tbre", "is-bk-050"],
     faq=[{"q": "Pipe bender, tube bender, mandrel bender — what is the difference?", "a": "\"Pipe\" is sized by nominal pipe size (NPS) and schedule, \"tube\" by outside diameter and wall, but the machines are the same: a bend die, a clamp and a pressure die draw the material around the radius. A mandrel bender adds an internal mandrel so thin-wall tube can be bent to a tight radius without wrinkling; our SFB benders are mandrel benders, the BK series are rotary draw benders without a mandrel. Every capacity on these pages is given as OD × wall in inches and gauge."},
          {"q": "How do I choose a tube bender?", "a": "Start with the largest tube (OD × wall and material), the tightest centreline radius and the number of bends per part — that sets mandrel or not and the model size. Then the volume: a rotary draw BK for occasional bends, an SFB NC for programmed angles with manual feed, the NC/C carrier for repeatable multi-plane parts, and a CNC when parts come from a drawing in hundreds. Send us a part drawing and we will size the machine and tooling."},
-         {"q": "Which tube benders does NovoTech stock?", "a": "We keep the SFB 38-NC and 51-NC and the BK-050 in Mississauga, ON, and bring CNC models, carrier models and the larger 76 and 90 sizes in to order with their tooling. In-stock machines carry the 7-day money-back guarantee."},
+         {"q": "Which tube benders does NovoTech stock?", "a": "We keep the SFB 38-NC and 51-NC and the BK-050 in Mississauga, ON, and bring CNC models, carrier models and the larger 76 and 90 sizes in to order with their tooling. In-stock machines carry the 7-day money-back guarantee. CSM benders are quoted with the tooling for your part drawings."},
+         {"q": "ISITAN or CSM?", "a": "Both are mandrel benders, installed and supported by the same NovoTech technicians. ISITAN (Turkey) covers Ø1-1/4″ to Ø3-1/2″ with NC, carrier and CNC models — the job-shop and fabricator range, several models in stock. CSM (Taiwan) covers Ø15/32″ brake line to Ø8-5/8″ pipe with all-electric and electric-hybrid CNC benders, stacked tools, rear boosters, hydraulic CNC and NC pipe benders and automation — the series-production range. Send us the part drawing and we quote from either line."},
          {"q": "Do you install tube benders and train operators?", "a": "Yes — our technicians commission the bender anywhere in Canada, set up the first tooling, prove out your part and train operators on the NC or CNC. Remote assistance over the network is built into the CNC models, and we support every machine by video call."},
          TOOLING_FAQ, VOLT_FAQ],
     range_lead="Maximum tube (OD × wall in mild steel), centreline radius, working length, control and weight for every model. Each row links to the full specification table of its series.",
     range_cols=["Max. tube (OD × wall)", "Max. CLR", "Working length", "Control", "Weight"],
-    range_caption="ISITAN tube and pipe benders supplied by NovoTech — capacities for mild steel tube",
-    range_note="Tube capacities are for mild steel; stainless, aluminum, bar and box-section capacities for the BK series are on the rotary draw page. CLR = centreline radius. Working length is the maximum feed with the standard mandrel rod (extended mandrels to 20 ft are optional on SFB models).",
+    range_caption="Tube and pipe benders supplied by NovoTech — ISITAN, CSM and the NovoTech premium line — capacities for mild steel tube",
+    range_note="Tube capacities are for mild steel; stainless, aluminum, bar and box-section capacities for the BK series are on the rotary draw page. CLR = centreline radius (the largest die radius). Working length is the maximum feed with the standard mandrel rod (extended mandrels to 20 ft are optional on SFB models); for the CSM symmetric benders it is the span between the two bends. Weights for the CSM benders are quoted with the configuration.",
 )
 SUBPAGE_META = {
-    P_CNC: ("CNC tube benders", "is-sfb-90-cnc", "SFB CNC/A3 and CNC/A5 servo mandrel benders from Ø1-1/2″ to Ø3-1/2″ with 21″ touchscreen CNC and 3D simulation.", "CNC benders"),
-    P_NC: ("NC tube benders", "is-sfb-90-nc", "SFB NC and NC/C hydraulic mandrel benders with 10″ touchscreen NC, compact SFB 32 benders and aluminum-profile benders.", "NC benders"),
+    P_CNC: ("ISITAN CNC tube benders", "is-sfb-90-cnc", "SFB CNC/A3 and CNC/A5 servo mandrel benders from Ø1-1/2″ to Ø3-1/2″ with 21″ touchscreen CNC and 3D simulation, made in Turkey.", "ISITAN CNC benders"),
+    P_NC: ("ISITAN NC tube benders", "is-sfb-90-nc", "SFB NC and NC/C hydraulic mandrel benders with 10″ touchscreen NC, compact SFB 32 benders and aluminum-profile benders, made in Turkey.", "ISITAN NC benders"),
     P_BK: ("Rotary draw tube benders", "is-bk-050", "ISITAN BK compact non-mandrel benders for pipe to 2-1/2″ NPS, steel tube, bar and box section, and SPB NC draw benders to Ø3″ pipe.", "Rotary draw"),
 }
-ORDER = [P_CNC, P_NC, P_BK]
+SUBPAGE_META[P_CSM] = ("CSM tube benders", "cs-tbre", "All-electric EMB / EMR left- and right-hand benders, MBE / MRE and T-series electric hybrids with stacked tools, TSR hydraulic CNC and TNCB NC pipe benders to Ø8-5/8″ and two-head symmetric benders, made in Taiwan.", "CSM benders")
+ORDER = [P_CNC, P_NC, P_BK, P_CSM]
+PAGES[P_CSM] = CSM.PAGE_BEND
 
 
-ALL_FAMILIES = FAMILIES + SPB_FAMILIES
+ALL_FAMILIES = FAMILIES + SPB_FAMILIES + CSM.families(P_CSM)
 
 
 def build():
@@ -433,9 +438,15 @@ def build():
               "hero_brand_line": "ISITAN BK and SPB benders are made in Turkey — ISITAN Makine since 1959, the NovoTech premium line built to NovoTech's specification — with European components. Sold, installed and supported in Canada by NovoTech.",
               "origin_feature": {"title": "Made in Turkey — ISITAN and the NovoTech premium line", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959 and the NovoTech premium line bending machinery since 1976 — CE-certified machines with European components."}}
     for slug in ORDER:
+        if slug == P_CSM:      # the CSM line page keeps its own related links, brand line, factory video and brochures
+            write_category(slug, PAGES[slug], ALL_FAMILIES, SET, SECTION, hub=hub, siblings=sib, extra=CSM.bend_extra())
+            continue
         write_category(slug, {**PAGES[slug], "related_pages": related}, ALL_FAMILIES, SET, SECTION, hub=hub, siblings=sib, extra=shared if slug == P_BK else None)
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Pipe Benders & Tube Bending Machines", "faq_title": "Questions we get asked about pipe benders", "nav_label": "All pipe & tube benders", "related_blurb": hub["blurb"]},
               ALL_FAMILIES, SET, SECTION, [(s, SUBPAGE_META[s][0], SUBPAGE_META[s][1], SUBPAGE_META[s][2], SUBPAGE_META[s][3]) for s in ORDER],
-              extra={"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf("premium-sheet-metal")) if p],
-                     "related_pages": [{"href": f"{s}.html", "label": SUBPAGE_META[s][0]} for s in ORDER] + related})
+              extra={"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, CSM.pdf("csm-emr"), CSM.pdf("csm-tsr"), premium_pdf("premium-sheet-metal")) if p],
+                     "range_pick": ["capacity", ["clr", "radius"], "working_length", "control", "weight"],
+                     "hero_brand_line": "ISITAN benders are made in Turkey by ISITAN Makine; CSM benders in Taiwan by Chiao Sheng Machinery; the SPB draw benders are NovoTech's premium line, made in Turkey. All sold, installed and supported in Canada by NovoTech.",
+                     "origin_feature": {"title": "Two bender makers, one supplier", "text": "ISITAN (Turkey, since 1959) and CSM (Taiwan, CNC benders since 1989) — every machine with a CSA-approved panel, tooling, installation, training and parts and service from Mississauga, ON."},
+                     "related_pages": [{"href": f"{s}.html", "label": SUBPAGE_META[s][0]} for s in ORDER] + related + [{"href": "wire-bending-machines.html", "label": "CNC wire bending machines"}]})
     return IMAGES

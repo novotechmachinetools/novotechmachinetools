@@ -245,6 +245,10 @@
        "href": "circular-cold-saws.html#semi-group"
       },
       {
+       "label": "CSM CT325 automatic saw",
+       "href": "circular-cold-saws.html#csm-saw-group"
+      },
+      {
        "label": "Bekamak automatic TCT & HSS saws",
        "href": "circular-cold-saws.html#bekamak-circular-group"
       }
@@ -263,18 +267,26 @@
      "href": "pipe-benders.html",
      "children": [
       {
-       "label": "CNC tube benders",
+       "label": "ISITAN CNC tube benders",
        "href": "cnc-tube-benders.html"
       },
       {
-       "label": "NC tube benders",
+       "label": "ISITAN NC tube benders",
        "href": "nc-tube-benders.html"
       },
       {
        "label": "Rotary draw tube benders",
        "href": "rotary-draw-tube-benders.html"
+      },
+      {
+       "label": "CSM tube benders",
+       "href": "csm-tube-benders.html"
       }
      ]
+    },
+    {
+     "label": "Wire bending machines",
+     "href": "wire-bending-machines.html"
     },
     {
      "label": "Hydraulic presses",
@@ -530,6 +542,15 @@
     "label": "Senfeng fiber laser brochure",
     "size": "PDF · imperial units"
    }
+  },
+  "csm": {
+   "name": "CSM",
+   "manufacturer": "Chiao Sheng Machinery Co., Ltd.",
+   "country": "Taiwan",
+   "country_code": "TW",
+   "line": "Made in Taiwan",
+   "logo": "csm-logo",
+   "tagline": "Made in Taiwan since 1982 — CSM CNC tube benders, end formers, saws and wire benders, sold, installed and supported in Canada by NovoTech."
   }
  }
 }

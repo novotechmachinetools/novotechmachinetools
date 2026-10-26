@@ -1,0 +1,193 @@
+{
+ "order": [
+  "csm-wb"
+ ],
+ "families": {
+  "csm-wb": {
+   "id": "csm-wb",
+   "brand": "csm",
+   "name": "WB 10-A and WB 14-A CNC wire bending machines, Ø5/32″ to Ø9/16″ wire from coil",
+   "short": "WB wire benders",
+   "models_label": "WB 10-A · WB 14-A · 2 models",
+   "summary": "A 3D CNC wire bender fed from the coil: the decoiler, hydraulic straightener and servo feeder bring the wire to a servo bending head that bends at up to 1,000°/s with ±0.01° repeatability, rotates the work-head 440°/s for the next plane and shifts between concentric tools, then a hydraulic cutter drops the finished part — baskets, racks, handles, hooks, springs, brackets and display frames in Ø5/32″ to Ø3/8″ (WB 10-A) or Ø1/4″ to Ø9/16″ (WB 14-A) wire. The customised work-head avoids interference on complex shapes; the IPC control with a 15″ touch-screen simulates the part in 3D before the first wire is bent.",
+   "headline": "3D CNC from the coil · Ø5/32″ – Ø9/16″ · 1,000°/s · ±0.01°",
+   "features": [
+    "Bending by servo motor — 1,000°/s (WB 10-A) / 600°/s (WB 14-A), ±0.01° repeatability",
+    "Work-head rotation by servo motor, 440°/s, ±0.01°; tooling shift by servo motor, concentric tool design",
+    "Feeding by servo motor at 164 ft/min, ±0.004″; straightening by hydraulics; uncoiling by AC motor",
+    "Cutting by hydraulics; customised work-head eliminates interference",
+    "IPC control with 15″ touch-screen and 3D simulation",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Tooling to your wire and radii",
+    "Decoiler for large coils",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-wb10",
+    "cs-wb-line",
+    "cs-wb-screen"
+   ],
+   "videos": [
+    {
+     "id": "1g-E_smNt4E",
+     "title": "WB 14-A automatic wire bender with reel and straightener",
+     "duration": "PT2M36S",
+     "thumb": "video-1g-E_smNt4E"
+    },
+    {
+     "id": "0Heyxw1glOI",
+     "title": "WB 14-A — furniture and chair wire parts",
+     "duration": "PT0M27S",
+     "thumb": "video-0Heyxw1glOI"
+    },
+    {
+     "id": "elmlupJS1Bw",
+     "title": "WB 14-A furniture wire bending",
+     "duration": "PT0M22S",
+     "thumb": "video-elmlupJS1Bw"
+    },
+    {
+     "id": "MieZrMWJ9u8",
+     "title": "WB 14 wire bender and end former — exhaust hangers",
+     "duration": "PT3M12S",
+     "thumb": "video-MieZrMWJ9u8"
+    },
+    {
+     "id": "iTKgAHpHLZw",
+     "title": "WB + EF wire bending and end forming line",
+     "duration": "PT2M1S",
+     "thumb": "video-iTKgAHpHLZw"
+    },
+    {
+     "id": "IRi4s7epjGs",
+     "title": "WB 14-A with EF50 — exhaust hanger line",
+     "duration": "PT2M33S",
+     "thumb": "video-IRi4s7epjGs"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "glance_keys": [
+     "capacity",
+     "detail",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending capacity is the wire diameter in mild steel; the WB 14-A bends the larger wire at 600°/s.",
+    "tables": [
+     {
+      "title": "WB",
+      "sub": "CNC wire bending machines",
+      "models": [
+       "WB 10-A",
+       "WB 14-A"
+      ],
+      "rows": [
+       {
+        "label": "Bending capacity",
+        "sub": "wire OD",
+        "key": true,
+        "cells": [
+         "Ø5/32″ – 3/8″ (4 – 10 mm)",
+         "Ø1/4″ – 9/16″ (6 – 14 mm)"
+        ]
+       },
+       {
+        "label": "Bending speed / repeatability",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "1,000°/s · ±0.01°",
+         "600°/s · ±0.01°"
+        ]
+       },
+       {
+        "label": "Feeding speed / repeatability",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "164 ft/min (50 m/min) · ±0.004″ (±0.1 mm)",
+         "164 ft/min (50 m/min) · ±0.004″ (±0.1 mm)"
+        ]
+       },
+       {
+        "label": "Work-head rotation speed / repeatability",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "440°/s · ±0.01°",
+         "440°/s · ±0.01°"
+        ]
+       },
+       {
+        "label": "Max. pressure",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "1,991 psi (140 kgf/cm²)",
+         "1,991 psi (140 kgf/cm²)"
+        ]
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "18.0 HP (13.4 kW)",
+         "20.0 HP (14.9 kW)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "136 × 51 × 68″ (3,450 × 1,300 × 1,715 mm)",
+         "136 × 51 × 68″ (3,450 × 1,300 × 1,715 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "5,291 lb (2,400 kg)",
+         "5,291 lb (2,400 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WB 10-A",
+      "glance": [
+       "Ø5/32″ – 3/8″ wire",
+       "1,000°/s · 3D CNC",
+       "18.0 HP (13.4 kW)",
+       "5,291 lb (2,400 kg)"
+      ]
+     },
+     {
+      "name": "WB 14-A",
+      "glance": [
+       "Ø1/4″ – 9/16″ wire",
+       "600°/s · 3D CNC",
+       "20.0 HP (14.9 kW)",
+       "5,291 lb (2,400 kg)"
+      ]
+     }
+    ]
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Electric-Tube-Benders-2026.pdf",
+    "label": "Download the CSM electric tube & wire bender brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "csm-wire"
+  }
+ }
+}

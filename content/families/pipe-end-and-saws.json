@@ -26,7 +26,9 @@
   "wt-flanging-cell",
   "wt-tubecut",
   "wt-tubeshear",
-  "wt-rotobrush"
+  "wt-rotobrush",
+  "csm-ef",
+  "csm-ct325"
  ],
  "families": {
   "isitan-pn": {
@@ -5834,6 +5836,517 @@
     "size": "PDF · 5 MB · imperial units"
    },
    "group": "wt-cutting"
+  },
+  "csm-ef": {
+   "id": "csm-ef",
+   "brand": "csm",
+   "name": "EF six-station tube end formers and REF / ER grooving and end-finishing machines, Ø13/16″ to Ø2″",
+   "short": "EF end formers · REF / ER",
+   "models_label": "EF20 · EF30 · EF50 · EF20VH – EF50VH · REF30 · REF40 · ER30-5 · 9 models",
+   "summary": "CSM's end-finishing machines for the tube that comes off its benders: the EF series carries six forming stations on one hydraulic ram — expand, reduce, bead, flare and flange in sequence without a tool change — for tube to Ø13/16″, Ø1-3/16″ and Ø2″, in a horizontal (plane) or vertical (VH) layout; the REF 30 and REF 40 roll a groove into the tube end for O-ring and clamp connections; the ER 30-5 does end forming, chamfering and grooving on one machine — the complex end-finish station of an automated bending cell. PLC control with touch-screen, hydraulic clamping, servo feeding on the ER.",
+   "headline": "Six forming stations · Ø13/16″ – Ø2″ · grooving to Ø1-9/16″ · end forming + chamfering + grooving",
+   "features": [
+    "EF: six forming stations on one ram — expand, reduce, bead, flare, flange without a tool change; plane (horizontal) or VH (vertical) layout",
+    "REF: rotary grooving for O-ring and clamp grooves, 3/16″ – 1/4″ forming stroke",
+    "ER 30-5: end forming, chamfering and grooving in one cycle; trolley platform for moving between cells",
+    "Hydraulic clamping and forming; PLC with touch-screen; working height 39 – 49″",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Forming tools to your tube end",
+    "Integration into a bending cell with robot transfer",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-ef30",
+    "cs-ref40",
+    "cs-ref20",
+    "cs-ef30-tools",
+    "cs-er30",
+    "cs-end-finishing",
+    "cs-ref-part"
+   ],
+   "videos": [
+    {
+     "id": "e9XHHIUkZ-w",
+     "title": "EF50-6 six-station pipe end former",
+     "duration": "PT0M45S",
+     "thumb": "video-e9XHHIUkZ-w"
+    },
+    {
+     "id": "TJ05JjjU64E",
+     "title": "ER30-5 five-head end forming machine",
+     "duration": "PT1M36S",
+     "thumb": "video-TJ05JjjU64E"
+    },
+    {
+     "id": "htrLpOzBoGo",
+     "title": "ER30-5 pipe end former",
+     "duration": "PT1M30S",
+     "thumb": "video-htrLpOzBoGo"
+    },
+    {
+     "id": "iZON_5GTBcM",
+     "title": "18 MBE bender and EF50 end former in one cell",
+     "duration": "PT2M21S",
+     "thumb": "video-iZON_5GTBcM"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "glance_keys": [
+     "capacity",
+     "detail",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the maximum tube outside diameter; forming stroke on the REF / ER is the depth of the groove or form.",
+    "tables": [
+     {
+      "title": "EF",
+      "sub": "Six-station end formers",
+      "models": [
+       "EF20",
+       "EF30",
+       "EF50",
+       "EF20VH",
+       "EF30VH",
+       "EF50VH"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD",
+        "key": true,
+        "cells": [
+         "Ø13/16″ (20 mm)",
+         "Ø1-3/16″ (30 mm)",
+         "Ø2″ (50 mm)",
+         "Ø13/16″ (20 mm)",
+         "Ø1-3/16″ (30 mm)",
+         "Ø2″ (50 mm)"
+        ]
+       },
+       {
+        "label": "Forming stations",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "6",
+         "6",
+         "6",
+         "6",
+         "6",
+         "6"
+        ]
+       },
+       {
+        "label": "Layout",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "Horizontal",
+         "Horizontal",
+         "Horizontal",
+         "Vertical",
+         "Vertical",
+         "Vertical"
+        ]
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "48.0″ (1,220 mm)",
+         "48.0″ (1,220 mm)",
+         "49.2″ (1,250 mm)",
+         "48.0″ (1,220 mm)",
+         "48.0″ (1,220 mm)",
+         "49.2″ (1,250 mm)"
+        ]
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10.1 HP (7.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "7.4 HP (5.5 kW)",
+         "10.1 HP (7.5 kW)"
+        ]
+       },
+       {
+        "label": "Max. pressure",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "2,418 psi (170 kgf/cm²)",
+         "2,418 psi (170 kgf/cm²)",
+         "2,418 psi (170 kgf/cm²)",
+         "1,991 psi (140 kgf/cm²)",
+         "1,991 psi (140 kgf/cm²)",
+         "2,418 psi (170 kgf/cm²)"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "REF / ER",
+      "sub": "Grooving and complex end-finishing",
+      "models": [
+       "REF30",
+       "REF40",
+       "ER30-5"
+      ],
+      "rows": [
+       {
+        "label": "Max. tube capacity",
+        "sub": "OD",
+        "key": true,
+        "cells": [
+         "Ø1-3/16″ (30 mm)",
+         "Ø1-9/16″ (40 mm)",
+         "Ø1-3/16″ (30 mm)"
+        ]
+       },
+       {
+        "label": "Max. forming stroke",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "1/4″ (6.5 mm)",
+         "3/16″ (5 mm)",
+         "1/4″ (6.5 mm)"
+        ]
+       },
+       {
+        "label": "Operations",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "Grooving",
+         "Grooving",
+         "End forming, chamfering, grooving"
+        ]
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "41.7″ (1,060 mm)",
+         "47.6″ (1,210 mm)",
+         "39.4″ (1,000 mm)"
+        ]
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "5.0 HP (3.7 kW)",
+         "5.9 HP (4.4 kW)",
+         "7.4 HP (5.5 kW)"
+        ]
+       },
+       {
+        "label": "Max. pressure",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "1,422 psi (100 kgf/cm²)",
+         "996 psi (70 kgf/cm²)",
+         "2,418 psi (170 kgf/cm²)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EF20",
+      "glance": [
+       "Ø13/16″",
+       "6 stations, horizontal",
+       "7.4 HP (5.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "EF30",
+      "glance": [
+       "Ø1-3/16″",
+       "6 stations, horizontal",
+       "7.4 HP (5.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "EF50",
+      "glance": [
+       "Ø2″",
+       "6 stations, horizontal",
+       "10.1 HP (7.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "EF20VH",
+      "glance": [
+       "Ø13/16″",
+       "6 stations, vertical",
+       "7.4 HP (5.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "EF30VH",
+      "glance": [
+       "Ø1-3/16″",
+       "6 stations, vertical",
+       "7.4 HP (5.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "EF50VH",
+      "glance": [
+       "Ø2″",
+       "6 stations, vertical",
+       "10.1 HP (7.5 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "REF30",
+      "glance": [
+       "Ø1-3/16″",
+       "grooving, 1/4″ stroke",
+       "5.0 HP (3.7 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "REF40",
+      "glance": [
+       "Ø1-9/16″",
+       "grooving, 3/16″ stroke",
+       "5.9 HP (4.4 kW)",
+       "—"
+      ]
+     },
+     {
+      "name": "ER30-5",
+      "glance": [
+       "Ø1-3/16″",
+       "forming + chamfer + groove",
+       "7.4 HP (5.5 kW)",
+       "—"
+      ]
+     }
+    ]
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+    "label": "Download the CSM hydraulic bender, end former & saw brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "csm-form"
+  },
+  "csm-ct325": {
+   "id": "csm-ct325",
+   "brand": "csm",
+   "name": "CT325 hydraulic circular saws with servo feed, Ø1/2″ to Ø4″ tube and bundles",
+   "short": "CT325 circular saws",
+   "models_label": "CT325 L · M · H · 3 models",
+   "summary": "The automatic circular saw CSM builds for its bending cells: hydraulic down-feed of a Ø10 – 12-3/4″ blade driven through planetary gears, hydraulic clamping, a servo carriage that feeds the tube to ±0.004″ and a PLC with touch-screen — round, square, rectangular and angle sections, single or in bundles with the customised vises. Three spindle-speed ranges for steel (L), stainless and alloy (M) and aluminum and non-ferrous (H), all at 3.8 HP.",
+   "headline": "Ø1/2″ – Ø4″ · bundle cutting · servo feed ±0.004″ · 3 speed ranges",
+   "features": [
+    "Hydraulic down-feed; blade driven through planetary transmission gears for low energy use",
+    "Hydraulic clamping; feeding by servo motor to ±0.004″ at 39 in/s",
+    "Standard vises for Ø1-3/4″ – Ø4″; customised vises for Ø1/2″ – Ø2-1/2″ and bundle cutting",
+    "PLC control with touch-screen; standing pedestal with emergency stop and remote control",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Bundle-cutting vises",
+    "Saw blades for steel, stainless and aluminum",
+    "Integration into a bending cell",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-ct325",
+    "cs-ct325-bundle",
+    "cs-ct325-parts"
+   ],
+   "videos": [
+    {
+     "id": "Bf866DAmzuk",
+     "title": "CT325 automatic cold saw",
+     "duration": "PT1M10S",
+     "thumb": "video-Bf866DAmzuk"
+    },
+    {
+     "id": "gRXc_HnOVCQ",
+     "title": "CT325 automatic circular saw",
+     "duration": "PT1M42S",
+     "thumb": "video-gRXc_HnOVCQ"
+    },
+    {
+     "id": "H8WEu6EmeRk",
+     "title": "CT325 M automatic cold saw",
+     "duration": "PT1M35S",
+     "thumb": "video-H8WEu6EmeRk"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "installed_power",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities for mild steel (40 kgf/mm²); the three types differ in spindle speed range only.",
+    "tables": [
+     {
+      "title": "CT325",
+      "sub": "Hydraulic circular saws with servo feed",
+      "models": [
+       "CT325 L",
+       "CT325 M",
+       "CT325 H"
+      ],
+      "rows": [
+       {
+        "label": "Capacity, mild steel",
+        "sub": "standard vises / customised vises",
+        "key": true,
+        "cells": [
+         "Ø1-3/4″ – 4″ (44 – 101.6 mm) / Ø1/2″ – 2-1/2″ (12 – 63.5 mm)",
+         "Ø1-3/4″ – 4″ (44 – 101.6 mm) / Ø1/2″ – 2-1/2″ (12 – 63.5 mm)",
+         "Ø1-3/4″ – 4″ (44 – 101.6 mm) / Ø1/2″ – 2-1/2″ (12 – 63.5 mm)"
+        ]
+       },
+       {
+        "label": "Saw blade",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "Ø9-7/8″ – 12-3/4″ (250 – 325 mm)",
+         "Ø9-7/8″ – 12-3/4″ (250 – 325 mm)",
+         "Ø9-7/8″ – 12-3/4″ (250 – 325 mm)"
+        ]
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "22 – 62 rpm",
+         "47 – 135 rpm",
+         "80 – 220 rpm"
+        ]
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "3.8 HP (2.8 kW)",
+         "3.8 HP (2.8 kW)",
+         "3.8 HP (2.8 kW)"
+        ]
+       },
+       {
+        "label": "Feeding speed / accuracy",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "39 in/s (1,000 mm/s) / ±0.004″ (±0.1 mm)",
+         "39 in/s (1,000 mm/s) / ±0.004″ (±0.1 mm)",
+         "39 in/s (1,000 mm/s) / ±0.004″ (±0.1 mm)"
+        ]
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "37.4″ (950 mm)",
+         "37.4″ (950 mm)",
+         "37.4″ (950 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "67 × 30 × 63″ (1,700 × 760 × 1,600 mm)",
+         "67 × 30 × 63″ (1,700 × 760 × 1,600 mm)",
+         "67 × 30 × 63″ (1,700 × 760 × 1,600 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "1,764 lb (800 kg)",
+         "1,764 lb (800 kg)",
+         "1,764 lb (800 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CT325 L",
+      "glance": [
+       "Ø9-7/8″ – 12-3/4″",
+       "Ø4″ (Ø1/2″ bundles)",
+       "—",
+       "3.8 HP · 22 – 62 rpm",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "CT325 M",
+      "glance": [
+       "Ø9-7/8″ – 12-3/4″",
+       "Ø4″ (Ø1/2″ bundles)",
+       "—",
+       "3.8 HP · 47 – 135 rpm",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "CT325 H",
+      "glance": [
+       "Ø9-7/8″ – 12-3/4″",
+       "Ø4″ (Ø1/2″ bundles)",
+       "—",
+       "3.8 HP · 80 – 220 rpm",
+       "1,764 lb (800 kg)"
+      ]
+     }
+    ]
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+    "label": "Download the CSM hydraulic bender, end former & saw brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "csm-saw"
   }
  }
 }

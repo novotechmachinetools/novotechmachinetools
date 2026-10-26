@@ -53,8 +53,18 @@ def table_weight(t):
     return 2 + len(t["rows"]) * (1.0 + 0.08 * max(0, len(t["models"]) - 4))
 
 
+def split_rows(t, budget):
+    """A table that alone is heavier than a page goes on as row chunks of the same table (the header row repeats)."""
+    per = 1.0 + 0.08 * max(0, len(t["models"]) - 4)
+    n = max(3, int((budget - 2) / per))
+    if len(t["rows"]) <= n:
+        return [t]
+    return [dict(t, rows=t["rows"][i:i + n], title=t["title"] + (" (continued)" if i else "")) for i in range(0, len(t["rows"]), n)]
+
+
 def paginate_tables(tables, budget=34):
     pages, cur, w = [], [], 0
+    tables = [c for t in tables for c in (split_rows(t, budget) if table_weight(t) > budget else [t])]
     for t in tables:
         tw = table_weight(t)
         if cur and w + tw > budget:
@@ -65,26 +75,27 @@ def paginate_tables(tables, budget=34):
     return pages
 
 
-def layout(families, no_inline):
-    """A short first table goes on the family page itself unless the page overflowed on the previous pass."""
+def layout(families, no_inline, budgets=None):
+    """A short first table goes on the family page itself unless the page overflowed on the previous pass; a family whose
+    specification page ran into the footer gets a smaller per-page budget (budgets[fid]) and is paginated again."""
     for f in families:
         tables = list(f["specs"]["tables"])
         f["inline_table"] = None
         if tables and f["id"] not in no_inline and table_weight(tables[0]) <= 20:
             f["inline_table"] = tables.pop(0)
-        f["spec_pages"] = paginate_tables(tables)
+        f["spec_pages"] = paginate_tables(tables, (budgets or {}).get(f["id"], 34))
 
 
-def overflowing(pg):
-    """Family ids whose page content runs into the footer."""
-    return pg.evaluate("""() => [...document.querySelectorAll('section.page[data-fam]')].filter(p => {
+def overflowing(pg, sel="section.page[data-fam]"):
+    """Family ids whose page (family page, or with sel='section.page[data-spec]' a specifications page) runs into the footer."""
+    return pg.evaluate("""(sel) => [...document.querySelectorAll(sel)].filter(p => {
         const b = p.querySelector('.body'), f = p.querySelector('.foot'); if (!b || !f) return false;
         const kids = [...b.children]; if (!kids.length) return false;
         const bottom = Math.max(...kids.map(k => k.getBoundingClientRect().bottom));
-        return bottom > f.getBoundingClientRect().top - 4; }).map(p => p.dataset.fam)""")
+        return bottom > f.getBoundingClientRect().top - 4; }).map(p => p.dataset.fam || p.dataset.spec)""", sel)
 
 
-def render(spec, no_inline):
+def render(spec, no_inline, budgets=None):
     fams_all = {}
     for s in spec["family_sets"]:
         fams_all.update(json.load(open(os.path.join(ROOT, "content", "families", f"{s}.json"), encoding="utf-8"))["families"])
@@ -96,7 +107,7 @@ def render(spec, no_inline):
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]
         f["series"] = f.get("short", f["name"]).split(" ")[0] if not f.get("series") else f["series"]
         families.append(f)
-    layout(families, no_inline)
+    layout(families, no_inline, budgets)
     # page numbering: cover 1, contents 2, about 3, then families, back cover
     page = 4
     for f in families:
@@ -123,27 +134,38 @@ def render(spec, no_inline):
 def build(spec_path, html_only=False):
     spec = json.load(open(spec_path, encoding="utf-8"))
     no_inline = set(spec.get("no_inline", []))
-    out_html, total = render(spec, no_inline)
+    budgets = {}
+    out_html, total = render(spec, no_inline, budgets)
     if html_only:
         print("html:", out_html); return
     from playwright.sync_api import sync_playwright
     out_pdf = os.path.join(ROOT, spec["out"])
     with sync_playwright() as p:
         b = p.chromium.launch()
-        for _ in range(3):      # inline tables that run into the footer go to a specifications page, then re-render
-            pg = b.new_page()
+        for _ in range(6):      # inline tables that run into the footer go to a specifications page; specification pages that
+            pg = b.new_page()   # run into the footer are paginated with a smaller budget; then re-render
             pg.goto("file://" + out_html, wait_until="networkidle")
             pg.emulate_media(media="print")
             over = set(overflowing(pg))
             new = over - no_inline
-            if not new:
+            spec_over = set(overflowing(pg, "section.page[data-spec]"))
+            if not new and not spec_over:
                 if over:
                     print("!! pages still overflow:", sorted(over))
                 break
-            print("inline table does not fit, moved to a specifications page:", ", ".join(sorted(new)))
-            no_inline |= new
+            if new:
+                print("inline table does not fit, moved to a specifications page:", ", ".join(sorted(new)))
+                no_inline |= new
+            for fid in spec_over:
+                budgets[fid] = budgets.get(fid, 34) * 0.75
+                print(f"specifications page of {fid} runs into the footer — paginating at {budgets[fid]:.0f}")
             pg.close()
-            out_html, total = render(spec, no_inline)
+            out_html, total = render(spec, no_inline, budgets)
+        else:
+            print("!! still overflowing after 6 passes")
+            pg = b.new_page()
+            pg.goto("file://" + out_html, wait_until="networkidle")
+            pg.emulate_media(media="print")
         pg.pdf(path=out_pdf, format="Letter", print_background=True, prefer_css_page_size=True, margin={"top": "0", "bottom": "0", "left": "0", "right": "0"})
         b.close()
     print(f"pdf: {out_pdf} ({os.path.getsize(out_pdf) / 1e6:.1f} MB, {total} pages)")

@@ -1,0 +1,110 @@
+{
+ "slug": "wire-bending-machines",
+ "template": "category.html",
+ "family_set": "csm",
+ "title": "CNC Wire Bending Machines, 3D, Ø5/32″ to Ø9/16″ | NovoTech",
+ "artifact_title": "CNC wire bending machines — 3D wire benders fed from the coil, Ø5/32″ to Ø9/16″",
+ "meta_description": "3D CNC wire benders fed from the coil: decoiler, straightener, servo feed and a 1,000°/s bending head — baskets, racks, frames, hooks and exhaust hangers.",
+ "h1": "CNC wire bending machines — 3D wire benders fed from the coil, Ø5/32″ to Ø9/16″",
+ "intro": "A CNC wire bending machine turns wire from the coil into a finished part in one pass: the decoiler pays off the wire, the straightener takes out the coil set, a servo feeder pushes the programmed length through the bending head, the head bends, rotates to the next plane and bends again, and a cutter drops the part — baskets, display racks, shelf supports, chair and furniture frames, handles, hooks, springs and exhaust hangers, with no jigs and no bending by hand. NovoTech sells the CSM WB 10-A and WB 14-A, built in Tainan, Taiwan, by the tube-bender maker CSM: 3D benders for Ø5/32″ to Ø3/8″ and Ø1/4″ to Ø9/16″ wire, bending at up to 1,000°/s with ±0.01° repeatability, an IPC control with a 15″ touch-screen that simulates the part in 3D before the first bend, and a concentric tool design and customised work-head that keep complex shapes free of interference. With a CSM EF end former they make a complete exhaust-hanger line. Installed, trained and supported from Mississauga, ON, with a CSA-approved panel.",
+ "hero_points": [
+  "WB 10-A: Ø5/32″ – 3/8″ wire at 1,000°/s · WB 14-A: Ø1/4″ – 9/16″ wire at 600°/s — ±0.01° bending repeatability",
+  "From the coil: AC-driven decoiler, hydraulic straightener, servo feed at 164 ft/min (±0.004″), hydraulic cutter",
+  "3D: servo work-head rotation at 440°/s, servo tool shift, concentric tools; IPC control with 15″ touch-screen and 3D simulation"
+ ],
+ "hero_image": "cs-wb10",
+ "hero_image_secondary": [
+  "cs-wb-screen",
+  "cs-wb-line"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "CNC wire bending machines — 3D wire benders fed from the coil, Ø5/32″ to Ø9/16″"
+  }
+ ],
+ "hero_brand_line": "CSM tube benders are made in Tainan, Taiwan, by Chiao Sheng Machinery — CNC benders since 1989, 24 international design patents, ISO 9001 and CE. Sold, installed and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "csm-wire-group",
+   "title": "CSM CNC wire benders",
+   "lead": "Two sizes of 3D CNC wire bender with decoiler, straightener, servo feed, bending head and cutter on one base.",
+   "brand": "csm",
+   "families": [
+    "csm-wb"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "What can a CNC wire bender make?",
+   "a": "Any part bent from round wire or rod in the capacity range: wire baskets and racks, display and shelf hardware, chair, sofa and bed frames, handles and hooks, springs and clips, automotive seat and exhaust-hanger wire, fencing and agricultural parts. The machine bends in three dimensions, so a part with bends in several planes comes off finished and cut to length."
+  },
+  {
+   "q": "WB 10-A or WB 14-A?",
+   "a": "By the wire. The WB 10-A bends Ø5/32″ to Ø3/8″ (4 – 10 mm) at 1,000°/s — the faster machine for furniture, display and basket wire. The WB 14-A takes Ø1/4″ to Ø9/16″ (6 – 14 mm) at 600°/s — heavier frames, rod, seat and exhaust-hanger wire. Both feed at 164 ft/min, rotate the head at 440°/s and repeat to ±0.01°; base, power and footprint are the same."
+  },
+  {
+   "q": "2D or 3D — what does the rotating work-head do?",
+   "a": "A 2D bender bends in one plane only. On the WB the work-head itself rotates around the wire under servo control, so after one bend the next can be made in any other plane — the wire never has to be turned by hand, and three-dimensional parts come off in one cycle. The concentric tool design and the customised work-head keep the head clear of the part as it grows."
+  },
+  {
+   "q": "How is a new part programmed?",
+   "a": "On the IPC control with its 15″ touch-screen: enter the lengths, bend angles and rotation angles of the part, and the control shows it in 3D, checks the sequence for interference and runs it. Programs are stored and reloaded for the next batch; no jigs or fixtures have to be built for a new part."
+  },
+  {
+   "q": "Can it work with an end former?",
+   "a": "Yes — the WB 14-A with a CSM EF50 end former makes complete exhaust hangers: the wire is bent and cut and the ends are formed in one line. The videos below show the line in production; the EF end formers are on our tube end forming page."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about CNC wire benders",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-CSM-Electric-Tube-Benders-2026.pdf",
+  "label": "Download the CSM electric tube & wire bender brochure",
+  "size": "PDF · 1 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in Taiwan by CSM",
+  "text": "Chiao Sheng Machinery has built tube benders in Tainan since 1982 and CNC benders since 1989 — two plants in the Southern Taiwan Science Park, ISO 9001 since 2002, CE on every machine and two Taiwan Excellence awards."
+ },
+ "section_label": "Wire bending machines",
+ "related_pages": [
+  {
+   "href": "csm-tube-benders.html",
+   "label": "CSM tube benders"
+  },
+  {
+   "href": "pipe-benders.html",
+   "label": "Pipe & tube benders"
+  },
+  {
+   "href": "tube-end-forming-machines.html",
+   "label": "Tube end formers"
+  },
+  {
+   "href": "rebar-bender.html",
+   "label": "Rebar benders"
+  }
+ ],
+ "related_title": "More bending machinery from NovoTech",
+ "intro_video": {
+  "id": "bUnS5wPFYQE",
+  "title": "CSM tube bender company introduction",
+  "thumb": "video-bUnS5wPFYQE",
+  "duration": "PT4M36S"
+ },
+ "intro_video_heading": "Inside the factory — CSM in Tainan, Taiwan",
+ "intro_video_text": "A tour of the CSM plant in the Southern Taiwan Science Park, where the tube benders, end formers, saws and wire benders are built.",
+ "nav_label": "Wire bending machines"
+}
