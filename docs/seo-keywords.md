@@ -403,3 +403,19 @@ machine". The subpages therefore use "fiber laser cutter" / "tube laser cutter" 
   data and photos from the supplier's ULG web page); title unchanged, meta now names "ULG ground-rail plate lasers to 85 × 14.8 ft"
   (154 characters), h1 / intro / points / group lead / FAQ ("When does a ground-rail laser make sense?") and the brochure updated.
   The ULH H-beam laser stays off the site (user's decision).
+
+## Press brake tooling — EUROSTAMP (Oct 26) — task #20
+
+Search Console (16 months) for the old tooling page (press-brake-tooling-punch-and-die, 9,183 + 4,843 impressions, position
+19 – 32) and its PDF (1,630 impressions): "eurostamp" 776, "eurostamp tooling" 669 (position 7), "european press brake tooling"
+329, "press brake tooling" 317, "press brake tooling canada" 313 (position 11), "press brake punch" 140, "segmented press brake
+tooling" 94. EUROSTAMP is NovoTech's tooling brand: in the h1, intro, meta and content, never in titles or slugs. The old URL
+stays the hub and the old PDF keeps its URL (the EUROSTAMP catalogue). Titles:
+- press-brake-tooling-punch-and-die "Press Brake Tooling Canada — Punches & Dies | NovoTech"
+- european-press-brake-punches "European Press Brake Punches, Amada-Style | NovoTech"
+- european-press-brake-dies "European Press Brake Dies, Amada-Style | NovoTech"
+- trumpf-wila-press-brake-tooling "Trumpf & Wila-Style Press Brake Tooling | NovoTech"
+- bystronic-lvd-press-brake-tooling "Bystronic & LVD-Style Press Brake Tooling | NovoTech"
+- american-style-press-brake-tooling "American-Style Press Brake Punches & Dies | NovoTech"
+- press-brake-tool-holders-adapters "Press Brake Tool Holders, Adapters & Clamps | NovoTech"
+The hub's guide uses "sectioned (segmented) tooling" for the 94 "segmented" impressions.

@@ -74,7 +74,7 @@
       <div class="subpage-body">
         <h2><a href="{{ sp.href }}">{{ sp.title }}</a></h2>
         <p>{{ sp.blurb }}</p>
-        <p class="subpage-count">{{ sp.families|length }} machine famil{{ 'y' if sp.families|length == 1 else 'ies' }} · <a class="arrow" href="{{ sp.href }}">specifications{{ ', photos and videos' if sp.has_videos else ' and photos' }}</a></p>
+        <p class="subpage-count">{{ sp.families|length }} {{ page.family_noun or 'machine' }} famil{{ 'y' if sp.families|length == 1 else 'ies' }} · <a class="arrow" href="{{ sp.href }}">{{ page.subpage_link or ('specifications' ~ (', photos and videos' if sp.has_videos else ' and photos')) }}</a></p>
       </div>
     </li>
     {% endfor %}
@@ -167,7 +167,7 @@
       <table class="spec-table spec-table-range">
         {% if page.range_kind == 'table' %}
         <caption>{{ page.range_caption }}</caption>
-        <thead><tr><th scope="col" class="label-col">Model</th><th scope="col">Type</th>{% for c in page.range_cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
+        <thead><tr><th scope="col" class="label-col">{{ page.range_first_col or 'Model' }}</th><th scope="col">{{ page.range_second_col or 'Type' }}</th>{% for c in page.range_cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
         <tbody>
           {% for r in page.range_rows %}
           <tr><th scope="row"><a href="{{ r.href }}">{{ r.model }}</a><small>{{ r.family }}</small></th><td>{{ r.kind }}</td>{% for c in r.cols %}<td>{{ c }}</td>{% endfor %}</tr>
@@ -201,13 +201,13 @@
 
 <section class="why" aria-labelledby="why-title">
   <div class="wrap">
-    <h2 id="why-title">Included with every machine from NovoTech</h2>
+    <h2 id="why-title">{{ page.why_title or "Included with every machine from NovoTech" }}</h2>
     <ul class="why-grid">
-      {% for s in site.standard_features %}{% if s.id == 'origin' and page.origin_feature %}{% set s = page.origin_feature %}{% endif %}
+      {% for s in page.why_features or site.standard_features %}{% if s.id == 'origin' and page.origin_feature %}{% set s = page.origin_feature %}{% endif %}
       <li><span class="why-badge">{{ feature_icon(s.icon or 'factory') }}</span><div><strong>{{ s.title }}</strong><span>{{ s.text }}</span></div></li>
       {% endfor %}
     </ul>
-    <p class="why-note">{{ site.voltage_note }}</p>
+    {% set why_note = page.why_note if page.why_note is defined else site.voltage_note %}{% if why_note %}<p class="why-note">{{ why_note }}</p>{% endif %}
   </div>
 </section>
 

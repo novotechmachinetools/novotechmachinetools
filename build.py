@@ -520,11 +520,18 @@ def caption_for(f, alt):
         if re.search(r"(?<![\w-])" + re.escape(name) + r"(?![\w-])", alt):
             return f"{name} · {caps[name]}" if caps[name] else name, alt
     head = f.get("headline", "")
-    return f"{f['short']} · {head[0].lower() + head[1:]}" if head else f["short"], alt
+    first = head.split(" ", 1)[0]
+    if len(first) > 1 and first[0].isupper() and first[1:].isalpha() and first[1:].islower():
+        head = head[0].lower() + head[1:]          # 'Bends …' → 'bends …', but 'V .24 – .98″' and 'Z1 / Z2' stay
+    return f"{f['short']} · {head}" if head else f["short"], alt
 
 
 def prepare_family(f):
-    if f.get("specs") and f["specs"].get("kind") == "table":
+    if f.get("specs") and f["specs"].get("kind") == "tools":
+        # press brake tooling: the data generator supplies the tool tables (rows = tools) as f["tool_tables"]
+        f["headline"] = f.get("headline") or f["specs"].get("headline", "")
+        f["model_caps"] = {**(f["specs"].get("caps") or {}), **(f.get("model_caps") or {})}
+    elif f.get("specs") and f["specs"].get("kind") == "table":
         # generic spec kind: the data generator supplies finished tables (cells already "imperial (metric)")
         f["tables"] = f["specs"]["tables"]
         f["headline"] = f.get("headline") or f["specs"].get("headline", "")
@@ -600,6 +607,10 @@ def range_table(subpages, pick=None):
         for f in sp["families"]:
             spec = f.get("specs")
             if not spec:
+                continue
+            if spec.get("kind") == "tools":      # tooling: one row per family, not per tool
+                rows.append({"model": f["short"], "family": spec.get("family_row_sub", ""), "href": f"{sp['slug']}.html#{f['id']}",
+                             "kind": sp.get("nav_label") or sp["title"], "cols": spec.get("family_row", []), "line": ""})
                 continue
             if spec.get("kind") == "table":
                 gk = spec.get("glance_keys", [])
@@ -703,7 +714,7 @@ def ai_catalogue(pages):
                 models = []
                 for i, m in enumerate(spec.get("models", [])):
                     entry = {"name": m["name"]}
-                    if spec.get("kind") == "table":
+                    if spec.get("kind") in ("table", "tools"):
                         for k, v in zip(spec.get("glance_keys", []), m.get("glance", [])):
                             entry[k] = v
                     elif spec.get("kind") == "bandsaw":

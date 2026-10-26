@@ -19,7 +19,7 @@ OLD_SITE = {
     "plate-roller-bender",
     "folder-sheet-metal-brake",
     "lock-former",
-    "press-brake-tooling-punch-and-die", "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction",
+    "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction",
 }
 
 

@@ -346,3 +346,19 @@ screwing and sash assembly machines, conveyors 1001 – 1003, the stand and the 
 2024 Plastmak catalogue (16.11.2024 KATALOG KÜÇÜK.pdf), upscaled 2x. Production-group pictures are line-ups of the machines'
 cut-outs. The Plastmak logo (tools/src-images/plastmak-logo.png) was redrawn from the vector paths of the 2026 catalogue's
 page header.
+
+### EUROSTAMP press brake tooling (Oct 26)
+
+tools/eurostamp_photos.py → tools/src-images/eurostamp (section "tooling"). Sources in /home/claude/eurostamp: the web shop's
+drawing of every tool (img/, 1100 × 1422, often RGBA) — composited on white and cropped (`es-d-<code>`, six spread over each
+family's tools, chosen in tools/eurostamp_pages.py); the shop's pictures of the accessories, radius and offset tools, adjustable
+dies and EUROGRIP (web2/, fetched through the browser in October 2026: drawings, and photos of film, cloth, squares, gauges and
+EUROGRIP on the press — `es-w-*`); eurostampsrl.it photos (web/) cut out with BiRefNet for the heroes (`es-p-range`, `-goose`,
+`-dies`, `-group`, `-holders`); the IT-EN catalogue's photos (pdf/ext, ext2, ≈ 600 px) upscaled with Real-ESRGAN x2 — the
+duotone pages (red, blue, purple, orange) turned grey from the HSV value channel; and NovoTech's American-style brochure (am/):
+its 1,600 px copies of catalogue photos and the profile drawings, which are white on black and are redrawn with a steel-grey
+body and charcoal lines (`es-am-*`). The American page's hero is a line-up of seven of those profiles (bodies only, outlined,
+on transparent) at one scale. The standard-length diagrams (`es-std-*`) lose the Italian line of each bilingual label: the
+letters are found by colour, grouped into text lines across the text direction, and the upper line is inpainted with LaMa
+(on es-std-by-die the whole label, its English line has a typo; the German "seite" notes beside the Bystronic insets go too).
+EUROSTAMP is NovoTech's tooling brand, so its marks on the tools stay.

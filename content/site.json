@@ -400,7 +400,33 @@
     },
     {
      "label": "Press brake tooling",
-     "href": "press-brake-tooling-punch-and-die.html"
+     "href": "press-brake-tooling-punch-and-die.html",
+     "children": [
+      {
+       "label": "European punches · Amada-Promecam",
+       "href": "european-press-brake-punches.html"
+      },
+      {
+       "label": "European dies · Amada-Promecam",
+       "href": "european-press-brake-dies.html"
+      },
+      {
+       "label": "Trumpf & Wila-style tooling",
+       "href": "trumpf-wila-press-brake-tooling.html"
+      },
+      {
+       "label": "Bystronic & LVD-style tooling",
+       "href": "bystronic-lvd-press-brake-tooling.html"
+      },
+      {
+       "label": "American-style tooling",
+       "href": "american-style-press-brake-tooling.html"
+      },
+      {
+       "label": "Holders, adapters & clamps",
+       "href": "press-brake-tool-holders-adapters.html"
+      }
+     ]
     }
    ]
   },
@@ -652,6 +678,15 @@
    "line": "Made in Turkey",
    "logo": "plastmak-logo",
    "tagline": "Made in Bursa, Turkey — Plastmak aluminum and PVC window and door machinery, sold, installed and supported in Canada by NovoTech."
+  },
+  "eurostamp": {
+   "name": "EUROSTAMP Tooling",
+   "manufacturer": "Eurostamp S.r.l.",
+   "country": "Italy",
+   "country_code": "IT",
+   "line": "Made in Italy",
+   "logo": "eurostamp-logo",
+   "tagline": "Made in Gragnano Trebbiense, Italy, since 1970 — EUROSTAMP press brake punches, dies, holders and adapters, sold, shipped and supported in Canada by NovoTech."
   }
  }
 }

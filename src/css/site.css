@@ -340,6 +340,21 @@ small { font-size: .85em; }
 .guide-figure.is-cutout { background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
 .guide-figure.is-cutout img { border: 0; display: block; margin: 0 auto; max-height: 460px; width: auto; }
 .guide-table th[scope="row"] { font-weight: 600; }
+/* ---------- press brake tooling: one row per tool, DXF links, tonnage chart ---------- */
+.tool-specs { margin-top: 18px; }
+.tool-table tbody th { min-width: 78px; white-space: nowrap; }
+.tool-table td { white-space: nowrap; }
+.tool-table.has-desc td:first-of-type { white-space: normal; min-width: 240px; }
+.tool-table td a[download] { display: inline-block; padding: 1px 9px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .03em; color: var(--orange-ink); text-decoration: none; background: var(--white); }
+.tool-table td a[download]::after { content: " ↓"; }
+.tool-table td a[download]:hover, .tool-table td a[download]:focus-visible { border-color: var(--orange); color: var(--orange-deep); }
+.tonnage-table { min-width: 980px; font-size: 14px; }
+.tonnage-table th, .tonnage-table td { padding: 6px 7px; text-align: center; }
+.tonnage-table thead th { font-size: 16px; }
+.tonnage-table thead th small { display: block; font-family: var(--sans); font-size: 11.5px; font-weight: 400; color: #d6d8db; }
+.tonnage-table tbody th { min-width: 118px; text-align: left; }
+.tonnage-table tbody th small { display: block; font-size: 12px; }
+.tonnage-table td.rec { font-weight: 700; color: var(--orange-ink); background: #FFF1E6 !important; }
 /* ---------- premium / value line badges ---------- */
 .line-badge { display: inline-flex; align-items: center; gap: 12px; padding: 6px 14px 6px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); margin-bottom: 12px; }
 .line-badge img { height: 28px; width: auto; }

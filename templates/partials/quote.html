@@ -3,7 +3,8 @@
   <div class="wrap quote-grid">
     <div class="quote-copy">
       <h2 id="quote-title">Request a quote</h2>
-      <p>Tell us which machine you are looking at and the bar sizes you run, and we will come back with pricing, delivery and the right voltage option for your shop. We answer within one business day.</p>
+      {% set q = page.quote or {} %}{% set rebar = (page.family_set or 'rebar') == 'rebar' %}
+      <p>{{ q.intro or ("Tell us which machine you are looking at and the bar sizes you run, and we will come back with pricing, delivery and the right voltage option for your shop." if rebar else "Tell us which machine you are looking at and what you will run on it — material, sizes and voltage — and we will come back with pricing, delivery and the right options for your shop.") }} We answer within one business day.</p>
       <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern) or email {{ email_link() }}.</p>
       <p class="quote-contact">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}</p>
     </div>
@@ -28,16 +29,16 @@
         <input id="q-phone" name="phone" type="tel" autocomplete="tel">
       </div>
       <div class="field field-wide">
-        <label for="q-machine">Machine of interest</label>
+        <label for="q-machine">{{ q.select_label or "Machine of interest" }}</label>
         <select id="q-machine" name="machine">
-          <option value="">Choose a machine family…</option>
+          <option value="">{{ q.select_placeholder or "Choose a machine family…" }}</option>
           <option value="Not sure — please advise">Not sure — please advise</option>
           {% for g in page.groups %}{% for f in g.families %}<option value="{{ f.name }}">{{ f.name }} — {{ f.models_label }}</option>{% endfor %}{% endfor %}
           <option value="{{ site.agents.form_option }}">{{ site.agents.form_option }}</option>
         </select>
       </div>
       <div class="field field-wide">
-        <label for="q-message">Bar sizes, voltage, quantity, delivery city…</label>
+        <label for="q-message">{{ q.message_label or ("Bar sizes, voltage, quantity, delivery city…" if rebar else "Material, sizes, voltage, quantity, delivery city…") }}</label>
         <textarea id="q-message" name="message" rows="5"></textarea>
       </div>
       <div class="field field-wide form-actions">

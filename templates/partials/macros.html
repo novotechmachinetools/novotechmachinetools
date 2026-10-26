@@ -54,7 +54,7 @@
 <div class="cta-row cta-row-sm">
   <a class="btn btn-primary btn-sm" href="#reques-a-quote" data-machine="{{ f.name }}">Request a quote</a>
   {% set fpdf = f.pdf or (site.brands[f.brand].pdf if f.brand and site.brands.get(f.brand) and site.brands[f.brand].pdf else page.catalogue_pdf) %}
-  {% if fpdf %}<a class="btn btn-ghost btn-sm" href="{{ fpdf.file }}" download>Download PDF brochure</a>{% endif %}
+  {% if fpdf %}<a class="btn btn-ghost btn-sm" href="{{ fpdf.file }}" download>{{ f.pdf_cta or 'Download PDF brochure' }}</a>{% endif %}
   {% if f.videos %}<a class="btn btn-link btn-sm" href="#{{ f.id }}-video">Watch the video{{ 's' if f.videos|length > 1 else '' }}</a>{% endif %}
 </div>
 {%- endmacro %}
@@ -119,6 +119,26 @@
   </section>
   {% endfor %}
   <p class="table-note">{{ f.specs.note }}{% if not f.specs.no_voltage %} {{ site.voltage_note }}{% endif %}</p>
+</div>
+{%- endmacro %}
+
+{# ---------- tool tables: one row per tool (press brake tooling); a cell is text or {href, text, download} ---------- #}
+{% macro tool_tables(f) -%}
+<div class="specs tool-specs" id="{{ f.id }}-specs">
+  {% for t in f.tool_tables %}
+  <section class="table-scroll" tabindex="0" aria-label="{{ f.name }} — {{ t.title }}">
+    <table class="spec-table tool-table{{ ' has-desc' if t.desc else '' }}">
+      <caption>{{ t.title }}{% if t.sub %} <small>{{ t.sub }}</small>{% endif %}</caption>
+      <thead><tr><th scope="col" class="label-col">{{ t.first_col or 'Code' }}</th>{% for c in t.cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
+      <tbody>
+        {% for r in t.rows %}
+        <tr><th scope="row">{{ r[0] }}</th>{% for c in r[1:] %}<td>{% if c is mapping %}<a href="{{ c.href }}"{% if c.download %} download{% endif %}>{{ c.text }}</a>{% else %}{{ c }}{% endif %}</td>{% endfor %}</tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endfor %}
+  {% if f.tool_note %}<p class="table-note">{{ f.tool_note }}</p>{% endif %}
 </div>
 {%- endmacro %}
 

@@ -1,0 +1,254 @@
+{
+ "slug": "press-brake-tooling-punch-and-die",
+ "template": "hub.html",
+ "family_set": "tooling",
+ "nav_label": "All press brake tooling",
+ "title": "Press Brake Tooling Canada — Punches & Dies | NovoTech",
+ "artifact_title": "Press brake tooling — EUROSTAMP punches, dies and adapters for every clamping style, made in Italy",
+ "meta_description": "EUROSTAMP punches, dies, holders and adapters made in Italy, for Amada-Promecam, Trumpf, Wila, Bystronic, LVD and American-style press brakes.",
+ "h1": "Press brake tooling — EUROSTAMP punches, dies and adapters for every clamping style, made in Italy",
+ "intro": "NovoTech sells and supports EUROSTAMP press brake tooling in Canada: punches, dies, holders, adapters and clamping made in Italy by a company that has built nothing but press brake tooling since 1970. Six pages cover the range — European-style (Amada-Promecam) punches and dies for most press brakes in Canadian shops, Trumpf and Wila-style tooling, Bystronic and LVD-style tooling, American-style tooling with the .500″ tang, and the holders, adapters and accessories that let one press brake run another style's tools. Every table gives the angle, height, tip radius or V opening and load rating of each tool in inches and millimetres, with DXF profiles to load into your CNC. Below the range: how to choose a V opening and the tonnage chart for air bending.",
+ "hero_points": [
+  "Over 700 punches, dies, holders and accessories, in full lengths and sectioned sets — European, Trumpf, Wila, Bystronic, LVD and American styles",
+  "C45 and 42CrMo4 steel, induction-hardened 55 – 60 HRC up to 3 mm (.118″) deep; special tools to your drawing",
+  "DXF profiles to download; adapters between clamping styles; quoted and shipped from Mississauga, ON"
+ ],
+ "hero_image": "es-p-range",
+ "hero_image_secondary": [
+  "es-p-group",
+  "es-p-dies"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Press brake tooling"
+  }
+ ],
+ "hero_brand_line": "EUROSTAMP tooling is made in Gragnano Trebbiense, Italy, by a company that has built nothing but press brake tools since 1970 — sold, shipped and supported in Canada by NovoTech from Mississauga, ON.",
+ "subpages": [
+  {
+   "slug": "european-press-brake-punches",
+   "title": "European (Amada-Promecam) punches — straight, acute, gooseneck, ESH, radius and offset",
+   "image": "es-p-goose",
+   "blurb": "Straight, acute, gooseneck and sash punches for the Amada-Promecam clamping used on most press brakes, the ESH same-height series, radius holders R3 – R50 and offset tools.",
+   "families": [
+    "es-eu-straight",
+    "es-eu-acute",
+    "es-eu-goose",
+    "es-esh-punch",
+    "es-eu-radius",
+    "es-eu-joggle"
+   ],
+   "nav_label": "European punches"
+  },
+  {
+   "slug": "european-press-brake-dies",
+   "title": "European (Amada-Promecam) dies — 1V, 2V / 4V, self-centring, T, hemming and ESH insert dies",
+   "image": "es-p-dies-eu",
+   "blurb": "1V dies V18 – V220, multi-V and 3U dies with holders, self-centring dies on rails, slim T dies, mechanical and pneumatic hemming dies and ESH inserts.",
+   "families": [
+    "es-eu-1v",
+    "es-eu-multiv",
+    "es-eu-insert",
+    "es-eu-tdie",
+    "es-eu-hem",
+    "es-esh-die"
+   ],
+   "nav_label": "European dies"
+  },
+  {
+   "slug": "trumpf-wila-press-brake-tooling",
+   "title": "Trumpf and Wila-style tooling — New Standard punches and dies",
+   "image": "es-p-dies",
+   "blurb": "Trumpf-style punches to 300 mm high and dies V6 – V120; Wila-style punches and 55 / 100 mm dies — with safety buttons on the lighter tools.",
+   "families": [
+    "es-tr-punch",
+    "es-tr-die",
+    "es-wi-punch",
+    "es-wi-die"
+   ],
+   "nav_label": "Trumpf & Wila"
+  },
+  {
+   "slug": "bystronic-lvd-press-brake-tooling",
+   "title": "Bystronic and LVD-style tooling — punches and dies",
+   "image": "es-p-c180",
+   "blurb": "Bystronic / Beyeler type R and RF-A punches, flattening blades and dies; LVD-style punches and dies V6 – V120 rated to 340 t/m.",
+   "families": [
+    "es-by-punch",
+    "es-by-die",
+    "es-lvd-punch",
+    "es-lvd-die"
+   ],
+   "nav_label": "Bystronic & LVD"
+  },
+  {
+   "slug": "american-style-press-brake-tooling",
+   "title": "American-style punches and dies — .500″ tang",
+   "image": "es-am-hero",
+   "blurb": "88° and 85° straight and gooseneck punches, 28° – 30° acute punches and 1V dies V .375 – .875″ with the American tang, in 36″, 18″ and sectioned lengths.",
+   "families": [
+    "es-am-punch",
+    "es-am-die"
+   ],
+   "nav_label": "American style"
+  },
+  {
+   "slug": "press-brake-tool-holders-adapters",
+   "title": "Holders, adapters, clamps and accessories",
+   "image": "es-p-holders",
+   "blurb": "Intermediates and adapters between clamping styles, safety clamps and EUROGRIP, lower adapters, adjustable dies V24 – V400, urethane tooling and gauges.",
+   "families": [
+    "es-acc-upper",
+    "es-acc-clamps",
+    "es-acc-lower",
+    "es-acc-adjustable",
+    "es-acc-urethane",
+    "es-acc-shop"
+   ],
+   "nav_label": "Holders & adapters"
+  }
+ ],
+ "range_kind": "table",
+ "range_cols": [
+  "Profiles",
+  "Angles",
+  "Height H",
+  "Max. load"
+ ],
+ "range_lead": "Every tooling family on one table: the number of profiles, the angles, the working heights and the highest load rating. Each row links to the family's tool table, with the full data and the DXF profiles.",
+ "range_caption": "EUROSTAMP press brake tooling supplied by NovoTech — families by clamping style",
+ "range_note": "Loads are the maker's maximum in tonnes per metre of tool length, shown as US tons per foot (1 t/m = 0.336 US t/ft). Heights are the working height H.",
+ "faq": [
+  {
+   "q": "Which tooling fits my press brake?",
+   "a": "It depends on the clamping, not the brand of the machine. Most press brakes in Canadian shops — Amada, Accurpress, Baykal, Dener, Durmazlar, Ermaksan, Yawei and many more — clamp European-style (Amada-Promecam) tools. Trumpf, Darley and Safan use Trumpf or Wila (New Standard) clamping; Bystronic and Beyeler use type R, RF or RF-A; LVD has its own; and many older North American brakes take American-style tools with a .500″ tang. Send us the model of your brake or a photo of the clamp and a tool, and we confirm before you order."
+  },
+  {
+   "q": "How do I choose the V opening?",
+   "a": "Start with V = 8 × the sheet thickness for mild steel up to about 1/2″ — V24 (about 1″) for 1/8″, V50 (2″) for 1/4″ — and 10 to 12 × for heavier plate. Aluminum works with 6 ×, stainless with 8 – 10 ×. The inside radius comes out at about 1/6 of the V and the shortest flange you can bend at about 0.7 × V. The guide and the tonnage chart below work through it."
+  },
+  {
+   "q": "How much tonnage does a bend need?",
+   "a": "For 90° air bending of mild steel, tons per foot ≈ 575 × t² ÷ V, with the thickness t and the V opening in inches: 1/4″ in a 2″ V needs about 18 US tons per foot of bend, so a 10 ft bend needs about 180 tons. Stainless needs about 1.5 times as much, soft aluminum about half. The tooling must be rated above the tonnage per foot, and the press brake above the total."
+  },
+  {
+   "q": "What do the load ratings in the tables mean?",
+   "a": "The maximum force the tool takes per unit of length — EUROSTAMP gives it in tonnes per metre, we add US tons per foot. If a bend needs 15 tons per foot, use a punch and a die rated above 15 US t/ft (45 t/m). Concentrated loads on a short piece of tool are the usual way tools crack: a 1 ft part bent with 30 tons puts 30 tons per foot on the tool."
+  },
+  {
+   "q": "Do you make special tools?",
+   "a": "Yes. EUROSTAMP's technical department designs special punches and dies — profiles, radii, offsets, combined tools — for parts standard tooling cannot bend. Send us the part drawing and the press brake model, and we come back with a proposal and a price."
+  },
+  {
+   "q": "What steel is the tooling made of?",
+   "a": "C45 medium-carbon steel, raw or tempered, and Italian 42CrMo4 chrome-molybdenum steel for the heavier and slimmer tools. The working surfaces are induction-hardened to 55 – 60 HRC up to 3 mm (.118″) deep, so the tip and shoulders resist wear while the body stays tough. The ESH insert dies are nitrided all over to 65 HRC."
+  },
+  {
+   "q": "Can we get the tools as DXF files for our CNC?",
+   "a": "Yes — every tool in these tables that has a DXF link can be downloaded straight from the page: the profile drawn in millimetres, ready to import into the tool library of a Delem, ESA or Cybelec control or into offline bending software. For the few tools without one, ask us and we get the drawing from EUROSTAMP."
+  }
+ ],
+ "faq_title": "Questions we get asked about press brake tooling",
+ "catalogue_pdf": {
+  "file": "files/EUROSTAMP-press-brake-tooling-punch-and-dies---MADE-IN-ITALY.pdf",
+  "label": "Download the EUROSTAMP tooling catalogue",
+  "size": "PDF · 10 MB · metric, IT / EN"
+ },
+ "origin_feature": {
+  "title": "Made in Italy since 1970",
+  "text": "EUROSTAMP has built press brake tooling in Gragnano Trebbiense, near Piacenza, since 1970."
+ },
+ "section_label": "Press brake tooling",
+ "related_blurb": "Every EUROSTAMP tooling family NovoTech sells — European, Trumpf, Wila, Bystronic, LVD and American styles, holders and adapters — with a guide to choosing the V opening and the tonnage chart.",
+ "related_pages": [
+  {
+   "href": "european-press-brake-punches.html",
+   "label": "European (Amada-Promecam) punches — straight, acute, gooseneck, ESH, radius and offset"
+  },
+  {
+   "href": "european-press-brake-dies.html",
+   "label": "European (Amada-Promecam) dies — 1V, 2V / 4V, self-centring, T, hemming and ESH insert dies"
+  },
+  {
+   "href": "trumpf-wila-press-brake-tooling.html",
+   "label": "Trumpf and Wila-style tooling — New Standard punches and dies"
+  },
+  {
+   "href": "bystronic-lvd-press-brake-tooling.html",
+   "label": "Bystronic and LVD-style tooling — punches and dies"
+  },
+  {
+   "href": "american-style-press-brake-tooling.html",
+   "label": "American-style punches and dies — .500″ tang"
+  },
+  {
+   "href": "press-brake-tool-holders-adapters.html",
+   "label": "Holders, adapters, clamps and accessories"
+  }
+ ],
+ "intro_video": {
+  "id": "RTLFMt-ryOc",
+  "title": "EUROSTAMP press brake tooling — introduction",
+  "thumb": "video-RTLFMt-ryOc",
+  "duration": "PT5M3S"
+ },
+ "intro_video_heading": "Inside the factory — where the tooling is made",
+ "intro_video_text": "EUROSTAMP introduces its plant in Gragnano Trebbiense, Italy, where the punches, dies and adapters on these pages are made.",
+ "why_title": "Every EUROSTAMP tool from NovoTech",
+ "why_features": [
+  {
+   "title": "Made in Italy since 1970",
+   "text": "EUROSTAMP builds only press brake tooling — punches, dies, adapters and clamping — in Gragnano Trebbiense, near Piacenza.",
+   "icon": "factory"
+  },
+  {
+   "title": "Hardened where it wears",
+   "text": "C45 and 42CrMo4 steel, induction-hardened to 55 – 60 HRC up to 3 mm (.118″) deep on the working surfaces.",
+   "icon": "warranty"
+  },
+  {
+   "title": "DXF profiles to download",
+   "text": "Most punches and dies here link to their DXF profile — load it into the tool library of your Delem, ESA or Cybelec control, or into offline software.",
+   "icon": "receipt"
+  },
+  {
+   "title": "Fits your press brake",
+   "text": "European (Amada-Promecam), Trumpf, Wila, Bystronic, LVD and American styles, and adapters between them.",
+   "icon": "repeat"
+  },
+  {
+   "title": "Special tools to your drawing",
+   "text": "EUROSTAMP's technical department designs special punches and dies for the parts standard tooling cannot bend.",
+   "icon": "panel"
+  },
+  {
+   "title": "Shipped across Canada",
+   "text": "Quoted, ordered and shipped by NovoTech from Mississauga, ON, with the freight arranged at competitive rates.",
+   "icon": "truck"
+  }
+ ],
+ "why_note": "",
+ "quote": {
+  "intro": "Tell us your press brake (make, model and clamping), the tool codes or the part you need to bend, and the lengths, and we will come back with pricing and delivery.",
+  "select_label": "Tooling of interest",
+  "select_placeholder": "Choose a tooling family…",
+  "message_label": "Press brake, tool codes, lengths, quantities, delivery city…"
+ },
+ "youtube_playlist": "https://www.youtube.com/@NovoTechMachineTools/videos",
+ "range_first_col": "Tool family",
+ "range_second_col": "Page",
+ "family_noun": "tool",
+ "subpage_link": "tool tables and drawings",
+ "article": "press-brake-tooling-guide.html",
+ "article_title": "Choosing press brake tooling",
+ "article_intro": "The clamping styles, the V opening and the tonnage a bend needs — and how to load the tools into your CNC.",
+ "article_id": "tooling-guide"
+}
