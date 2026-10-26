@@ -348,6 +348,18 @@ small { font-size: .85em; }
 .tool-table td a[download] { display: inline-block; padding: 1px 9px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .03em; color: var(--orange-ink); text-decoration: none; background: var(--white); }
 .tool-table td a[download]::after { content: " ↓"; }
 .tool-table td a[download]:hover, .tool-table td a[download]:focus-visible { border-color: var(--orange); color: var(--orange-deep); }
+/* lengths & weights: every length a tool is sold in (inches over mm) and the weight of each piece or set (lb over kg) */
+.tool-table th small, .tool-table td small { display: block; font-family: var(--sans); font-size: 12.5px; font-weight: 400; line-height: 1.25; letter-spacing: 0; }
+.tool-table thead th small { color: rgba(255, 255, 255, .74); }
+.tool-table thead th small.tt-tag { color: var(--orange); font-weight: 600; }
+.tool-table td small { color: var(--steel); }
+.tool-table thead th.tt-group { text-align: center; background: var(--charcoal-2); border-bottom: 1px solid rgba(255, 255, 255, .2); font-size: 16px; padding: 6px 12px; }
+.tool-table thead th.tt-len { font-size: 17px; padding-top: 7px; vertical-align: top; }
+.tool-table thead tr:first-child th[rowspan] { vertical-align: bottom; }
+.tool-table td.tt-w { font-variant-numeric: tabular-nums; }
+.tool-table td.tt-none { color: var(--mist); }
+.tool-table-lw { margin-top: 6px; }
+.tool-table-lw caption { font-size: 18px; }
 .tonnage-table { min-width: 980px; font-size: 14px; }
 .tonnage-table th, .tonnage-table td { padding: 6px 7px; text-align: center; }
 .tonnage-table thead th { font-size: 16px; }

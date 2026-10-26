@@ -9,6 +9,7 @@ DXF profile per tool), photos and drawings from tools/eurostamp_photos.py (secti
     python3 tools/make_images.py --only $(cat tools/eurostamp_keys.txt)
 """
 import json
+import re
 import os
 import shutil
 
@@ -180,7 +181,7 @@ family("es-eu-straight", P_EUP, "Straight and heavy-duty punches, 45° – 88°"
        [T("Straight punches", "85° – 88°", [t for t in eu_straight if t["angle"] >= 85 and D.punch_type(t) == "Straight"], PUNCH_COLS),
         T("Straight punches", "45° – 75°", [t for t in eu_straight if t["angle"] < 85 and D.punch_type(t) == "Straight"], PUNCH_COLS),
         T("Heavy-duty punches for plate", "large tip radius", [t for t in eu_straight if D.punch_type(t) == "Heavy-duty"], PUNCH_COLS)],
-       images=["es-p-c077a", "es-p-c077b", "es-std-eu-punch"], tools=eu_straight, videos=[VIDEO_TOOLING],
+       images=["es-p-c077b", "es-std-eu-punch"], tools=eu_straight, videos=[VIDEO_TOOLING],
        headline="45° – 88°, H 2.56 – 7.87″, to 50 US t/ft", family_row=frow(eu_straight))
 
 family("es-eu-acute", P_EUP, "Acute and hemming punches, 24° – 35°", "Acute punches",
@@ -194,7 +195,7 @@ family("es-eu-acute", P_EUP, "Acute and hemming punches, 24° – 35°", "Acute 
         "Pairs with the 30° and 45° dies and the hemming dies on the European dies page"],
        [T("Acute punches", "26° – 35°", [t for t in eu_acute if D.punch_type(t) == "Acute"], PUNCH_COLS),
         T("Hemming punches", "24° – 28°", [t for t in eu_acute if D.punch_type(t) == "Hemming"], PUNCH_COLS)],
-       images=["es-p-c136"], tools=eu_acute, headline="26° – 35° acute, 24° – 28° hemming, H 3.15 – 7.87″", family_row=frow(eu_acute))
+       images=["es-p-c077a"], tools=eu_acute, headline="26° – 35° acute, 24° – 28° hemming, H 3.15 – 7.87″", family_row=frow(eu_acute))
 
 family("es-eu-goose", P_EUP, "Gooseneck and sash punches, 60° – 88°", "Gooseneck punches",
        "A gooseneck punch is relieved behind the tip so a returned flange clears the body: the punch for U-channels, pans and boxes with "
@@ -208,7 +209,7 @@ family("es-eu-goose", P_EUP, "Gooseneck and sash punches, 60° – 88°", "Goose
         "C45 or 42CrMo4 steel, induction-hardened 55 – 60 HRC"],
        [T("Gooseneck punches", "single, double and reversed", [t for t in eu_goose if D.punch_type(t) != "Sash"], PUNCH_COLS),
         T("Sash punches", "slim nose for return flanges", [t for t in eu_goose if D.punch_type(t) == "Sash"], PUNCH_COLS)],
-       images=["es-p-goose", "es-p-c107", "es-p-c015"], tools=eu_goose, headline="H 2.62 – 7.87″ — single, double, reversed and sash",
+       images=["es-p-c015"], tools=eu_goose, headline="H 2.62 – 7.87″ — single, double, reversed and sash",
        family_row=frow(eu_goose))
 
 family("es-esh-punch", P_EUP, "ESH same-height punches, 120 mm", "ESH punches",
@@ -236,15 +237,38 @@ ROUND_R = ["1100", "1101", "1102", "1103", "1037", "1104", "1106", "1107", "1108
            "1041", "1114", "1042", "1115", "1116", "1117", "1118"]
 
 
+def _tool(code):
+    return D.TOOLS.get(code) or {"code": code, "sizes": [], "len_web": None, "style": None}
+
+
 def acc_table(title, sub, rows, cols, first_col="Code"):
-    """hand-built table for accessories: rows = [code, cells…]; codes with a DXF get a link in the last column if 'Profile' is a col"""
+    """hand-built table for accessories: rows = [code, cells…]; codes with a DXF get a link in the last column if 'Profile' is a
+    col.  A 'Lengths' / 'Length' column is replaced by the lengths-and-weights columns (D.with_lengths)."""
+    cols = list(cols)
+    li = next((i for i, c in enumerate(cols) if c in ("Lengths", "Length")), None)
     out = []
     for r in rows:
         code, cells = r[0], list(r[1:])
+        if li is not None:
+            cells.pop(li)
         if "Profile" in cols:
             cells.append(D.dxf_cell(code))
         out.append([code] + cells)
-    return {"title": title, "sub": sub, "cols": cols, "rows": out, "first_col": first_col, "desc": True}
+    if li is not None:
+        cols.pop(li)
+    tab = {"title": title, "sub": sub, "cols": cols, "rows": out, "first_col": first_col, "desc": True}
+    return D.with_lengths(tab, [_tool(r[0]) for r in rows]) if li is not None else tab
+
+
+def roll_table(title, codes):
+    """film and cloth come in rolls: the price list's sizes are roll lengths in metres, with the weight of each roll"""
+    rows = []
+    for c, d in codes:
+        t = D.TOOLS.get(c) or {}
+        rl = [(int(m.group(1)), D.num(w)) for sz, w in t.get("sizes", []) for m in [re.match(r"^(\d+)\s*m$", sz.strip())] if m]
+        rows.append([c, d, " · ".join(f"{m * 3.2808:.0f} ft ({m} m)" for m, _ in rl) or "—",
+                     " · ".join(f"{D.lb_s(w)} ({D.kg_s(w)})" for _, w in rl if w) or "—"])
+    return {"title": title, "sub": "", "cols": ["Part", "Roll length", "Weight per roll"], "rows": rows, "first_col": "Code", "desc": True}
 
 
 LEN_TEXT = {"4308": "roll of 33 m (108 ft)", "4314": "roll of 33 m (108 ft)", "4379": "5 or 10 m (16 / 33 ft)", "4380": "5 or 10 m (16 / 33 ft)"}
@@ -323,7 +347,7 @@ family("es-eu-1v", P_EUD, "1V dies, V 18 – 220 mm", "1V dies",
         "835 and 415 mm (32.9 / 16.3″) lengths; 805 mm (31.7″) sectioned set: 10, 15, 20, 40, 50, 100, 200 and 370 mm",
         "C45 steel, tempered; V and shoulders induction-hardened 55 – 60 HRC"],
        [T("1V dies", "solid, 60 mm (2.36″) wide", eu_1v, DIE_COLS)],
-       images=["es-p-c055", "es-p-dies-eu", "es-std-eu-die"], tools=eu_1v, videos=[VIDEO_ESA],
+       images=["es-p-c055", "es-p-c041", "es-std-eu-die"], tools=eu_1v, videos=[VIDEO_ESA],
        headline="V .71 – 8.66″ (18 – 220 mm), to 67 US t/ft", family_row=frow(eu_1v))
 
 family("es-eu-multiv", P_EUD, "2V, 4V and U dies with holders", "Multi-V dies",
@@ -339,7 +363,7 @@ family("es-eu-multiv", P_EUD, "2V, 4V and U dies with holders", "Multi-V dies",
         acc_table("Holders and rails", "for the bolted 2V and the self-centring dies",
                   [(c, HOLDER_TXT[c][0], D.height(HOLDER_TXT[c][1]) if HOLDER_TXT[c][1] else "—", lens(c)) for c in ["2018", "2039", "2019", "2035", "2058", "2059", "2060"]],
                   ["Part", "Height H", "Lengths", "Profile"])],
-       images=["es-p-c067a"], tools=eu_multi, headline="2V, 4V and 3U, V .24 – 1.97″ (6 – 50 mm)", family_row=frow(eu_multi))
+       images=["es-p-c047", "es-p-c067a"], tools=eu_multi, headline="2V, 4V and 3U, V .24 – 1.97″ (6 – 50 mm)", family_row=frow(eu_multi))
 
 family("es-eu-insert", P_EUD, "Self-centring 1V dies, V 4 – 25 mm", "Self-centring dies",
        "Slim one-V dies, 14 mm (.55″) wide and 60 mm (2.36″) high, that centre themselves on a rail: narrow enough for short flanges and "
@@ -348,7 +372,7 @@ family("es-eu-insert", P_EUD, "Self-centring 1V dies, V 4 – 25 mm", "Self-cent
        ["V openings 4 to 25 mm (.16 – .98″); angles 88°, 60° and 30°", "14 mm (.55″) wide, 60 – 65 mm (2.36 – 2.56″) high; rated to 100 t/m (34 US t/ft)",
         "835 and 415 mm (32.9 / 16.3″) lengths; 805 mm (31.7″) sectioned set", "Rails 2058 (on a holder) and 2059 (on the lower beam); stopper 2060 for sectioned dies"],
        [T("Self-centring 1V dies", "14 mm (.55″) wide", eu_ins, DIE_COLS)],
-       images=[], tools=eu_ins, headline="V .16 – .98″ (4 – 25 mm), 14 mm (.55″) wide", family_row=frow(eu_ins))
+       images=["es-p-c066"], tools=eu_ins, headline="V .16 – .98″ (4 – 25 mm), 14 mm (.55″) wide", family_row=frow(eu_ins))
 
 family("es-eu-tdie", P_EUD, "T dies, V 6 – 25 mm, 80 and 120 mm high", "T dies",
        "A slim die body on a 60 mm (2.36″) T-shaped foot: the foot clamps in the European-style lower beam like a block die, and the "
@@ -358,7 +382,7 @@ family("es-eu-tdie", P_EUD, "T dies, V 6 – 25 mm, 80 and 120 mm high", "T dies
         "Rated to 100 t/m (34 US t/ft)", "835 and 415 mm (32.9 / 16.3″) lengths; 805 mm (31.7″) sectioned set", "C45 steel, induction-hardened"],
        [T("T dies, 80 mm high", "", [t for t in eu_t if (t["h"] or 0) < 100], DIE_COLS),
         T("T dies, 120 mm high", "", [t for t in eu_t if (t["h"] or 0) >= 100], DIE_COLS)],
-       images=["es-p-c261"], tools=eu_t, headline="H 3.15 / 4.72″, V .24 – .98″ (6 – 25 mm)", family_row=frow(eu_t))
+       images=["es-p-c039"], tools=eu_t, headline="H 3.15 / 4.72″, V .24 – .98″ (6 – 25 mm)", family_row=frow(eu_t))
 
 family("es-eu-hem", P_EUD, "Hemming dies, mechanical and pneumatic", "Hemming dies",
        "A hemming (flattening) die pre-bends and closes a hem on one press brake with one punch: an acute V on top pre-bends the flange to "
@@ -398,7 +422,7 @@ family("es-tr-punch", P_TW, "Trumpf-style punches, 26° – 86°", "Trumpf punch
         "Safety buttons standard on tools up to 13.5 kg (30 lb)",
         "500 mm (19.7″) lengths, 100 – 300 mm pieces and the 550 mm (21.7″) sectioned set with horns", "42CrMo4 or C45 steel, induction-hardened"],
        [T("Trumpf-style punches", "", tr_p, PUNCH_COLS)],
-       images=["es-p-c091", "es-std-tr-punch"], tools=tr_p, headline="H 5.51 – 11.81″, to 84 US t/ft", family_row=frow(tr_p))
+       images=["es-p-c091", "es-p-c107", "es-std-tr-punch"], tools=tr_p, headline="H 5.51 – 11.81″, to 84 US t/ft", family_row=frow(tr_p))
 
 family("es-tr-die", P_TW, "Trumpf-style dies, V 6 – 120 mm", "Trumpf dies",
        "One-V dies with the Trumpf tang in two heights, 100 and 150 mm (3.94 / 5.91″) — and 120 mm for the big V openings: 86° and 84° "
@@ -632,7 +656,7 @@ family("es-acc-lower", P_ACC, "Lower adapters, die holders and tangs", "Lower ad
        [acc_table("Lower adapters, die holders and filler blocks", "", [(c, d, D.height(h_of(c, h)) if h_of(c, h) else "—", lens(c)) for c, d, h in LOWER],
                   ["Part", "Height H", "Lengths", "Profile"]),
         acc_table("Tangs on request", "made on any EUROSTAMP tool", [(c, d, lens(c)) for c, d in TANGS], ["Tang", "Lengths"])],
-       images=["es-p-holders", "es-p-c190", "es-p-c191", "es-w-4302", "es-w-4304", "es-w-4040", "es-w-4034", "es-w-8100", "es-w-8107"], tools=[], ndraw=0, glance_tools=[],
+       images=["es-p-holders", "es-w-4302", "es-w-4304", "es-w-4040", "es-w-4034", "es-w-8100", "es-w-8107"], tools=[], ndraw=0, glance_tools=[],
        models_label="4014 – 4305 · 9010 – 9020 · tangs 8010 – 8107", headline="Between styles, die holders to 13.5 ft, tangs on request",
        family_row=[f"{len(LOWER) + len(TANGS)} · adapters + tangs", "—", "H 1.18 – 2.36″ (30 – 60 mm)", "—"])
 
@@ -668,7 +692,9 @@ family("es-acc-urethane", P_ACC, "Urethane and nylon dies, protective film", "Ur
        "Where the steel die stays, a urethane film or a protective cloth over the V keeps the shoulders off the part.",
        ["Urethane inserts 25 × 25 to 100 × 50 mm, solid or with a hole, in holders", "Nylon inserts 20 × 24, 24 × 35 and 31 × 38 mm with holders, European and Beyeler / Trumpf / Wila",
         "Urethane film 0.5 and 0.8 mm × 33 m (108 ft); cloth for sheet to 3 or 6 mm", "Inserts and holders in 835 and 415 mm (32.9 / 16.3″) lengths"],
-       [acc_table("Urethane and nylon inserts, film and cloth", "", [(c, d, lens(c)) for c, d in URE], ["Part", "Lengths", "Profile"])],
+       [acc_table("Urethane and nylon inserts and holders", "", [(c, d, lens(c)) for c, d in URE if c not in LEN_TEXT and c != "4309"], ["Part", "Lengths", "Profile"]),
+        roll_table("Protective film and cloth", [(c, d) for c, d in URE if c in LEN_TEXT]),
+        acc_table("Film supports", "", [(c, d) for c, d in URE if c == "4309"], ["Part", "Profile"])],
        images=["es-w-4308", "es-p-c255", "es-w-4309", "es-w-4379", "es-w-4380", "es-w-2037", "es-w-2110", "es-w-2119"], tools=[], ndraw=0, glance_tools=[],
        models_label="2036 – 2119 · 4308 – 4380", headline="Urethane and nylon inserts, film and cloth",
        family_row=[f"{len(URE)} · inserts, holders, film", "—", "—", "—"])
@@ -705,10 +731,10 @@ def count(page):
 
 
 SUBPAGES = [
-    (P_EUP, "European (Amada-Promecam) punches — straight, acute, gooseneck, ESH, radius and offset", "es-p-goose",
+    (P_EUP, "European (Amada-Promecam) punches — straight, acute, gooseneck, ESH, radius and offset", "es-p-c077b",
      "Straight, acute, gooseneck and sash punches for the Amada-Promecam clamping used on most press brakes, the ESH same-height series, radius holders R3 – R50 and offset tools.",
      "European punches"),
-    (P_EUD, "European (Amada-Promecam) dies — 1V, 2V / 4V, self-centring, T, hemming and ESH insert dies", "es-p-dies-eu",
+    (P_EUD, "European (Amada-Promecam) dies — 1V, 2V / 4V, self-centring, T, hemming and ESH insert dies", "es-p-c041",
      "1V dies V18 – V220, multi-V and 3U dies with holders, self-centring dies on rails, slim T dies, mechanical and pneumatic hemming dies and ESH inserts.",
      "European dies"),
     (P_TW, "Trumpf and Wila-style tooling — New Standard punches and dies", "es-p-dies",
@@ -755,7 +781,7 @@ PAGES = {
         points=["Straight 45° – 88°, acute 24° – 35°, gooseneck and sash punches 2.56 – 7.87″ (65 – 200 mm) high, rated to 50 US t/ft (150 t/m)",
                 "ESH same-height series: every punch 120 mm (4.72″), for staged bending in one setup",
                 "Radius holders with round elements R3 – R50 and offset tools Z 1 – 15 mm; DXF profiles to download"],
-        hero="es-p-goose", minis=["es-p-c077b"],
+        hero="es-p-c077b", minis=["es-p-c077a-cut"],
         faq=[{"q": "Will these punches fit my press brake?",
               "a": "If your press brake clamps European-style (Amada-Promecam) tooling, yes. EUROSTAMP lists Amada, Promecam, Accurpress, Adira, "
                    "Baykal, Boschert, Bystronic-Beyeler Euro-B, Colgar, Dener, Durmazlar, Ermaksan, Gasparini, Haco, Prima Power, Salvagnini, "
@@ -798,7 +824,7 @@ PAGES = {
         points=["1V dies V18 – V220 mm (.71 – 8.66″), rated to 67 US t/ft (200 t/m); 2V, 4V and 3U dies with holders",
                 "Self-centring 1V dies, T dies 80 and 120 mm high, hemming dies — mechanical and pneumatic",
                 "ESH insert dies nitrided to 65 HRC; 835 / 415 mm lengths and 805 mm sectioned sets; DXF profiles"],
-        hero="es-p-dies-eu", minis=["es-p-c067b"],
+        hero="es-p-c041", minis=["es-p-c067b"],
         faq=[{"q": "How do I choose the V opening?",
               "a": "For mild steel up to about 1/2″, start with a V of 8 times the thickness: V16 (5/8″) for 14 gauge, V24 for 1/8″, V50 for "
                    "1/4″. Thicker plate needs 10 to 12 times; aluminum can go to 6 times, stainless wants 8 to 10. A wider V needs less force and "
@@ -1068,8 +1094,8 @@ def copy_files():
     """the DXF profiles (R12) under files/dxf and the EUROSTAMP catalogue at the old site's PDF URL"""
     dst = os.path.join(ROOT, "src", D.DXF_DIR)
     os.makedirs(dst, exist_ok=True)
-    used = {r[-1]["href"].rsplit("/", 1)[1] for f in ALL_FAMILIES for t in f["tool_tables"] for r in t["rows"]
-            if isinstance(r[-1], dict) and "href" in r[-1]}
+    used = {c["href"].rsplit("/", 1)[1] for f in ALL_FAMILIES for t in f["tool_tables"] for r in t["rows"] for c in r
+            if isinstance(c, dict) and "href" in c}
     for fn in used:
         src = os.path.join(D.ES, "dxf12", fn)
         out = os.path.join(dst, fn)
@@ -1089,7 +1115,7 @@ def register_images():
     imap_path = os.path.join(ROOT, "tools", "image_map.json")
     imap = json.load(open(imap_path, encoding="utf-8"))
     keys = []
-    heroes = {"es-p-range", "es-p-dies-eu", "es-p-dies", "es-p-goose", "es-p-c180", "es-p-holders"}      # page heroes under 1,200 px
+    heroes = {"es-p-range", "es-p-c041", "es-p-dies", "es-p-c077b", "es-p-c180", "es-p-holders"}      # page heroes under 1,200 px
     for key, alt, src in PH.exports(DRAWINGS, tool_alt):
         imap[key] = {"src": os.path.relpath(src, ROOT), "alt": alt, "section": "tooling", "trim": src.endswith(".webp"), "quality": 82,
                      "cutout": False, **({"upscale": 1.5} if key in heroes else {})}
@@ -1113,7 +1139,7 @@ def build():
               "youtube_playlist": "https://www.youtube.com/@NovoTechMachineTools/videos"}
     for slug, p in PAGES.items():
         fs = fams(slug)
-        ndx = sum(1 for f in fs for t in f["tool_tables"] for r in t["rows"] if isinstance(r[-1], dict))
+        ndx = sum(1 for f in fs for t in f["tool_tables"] for r in t["rows"] if any(isinstance(c, dict) and "href" in c for c in r))
         lead = (f"{count(slug)} tools in {len(fs)} families, {ndx} of them with a DXF profile to download." if ndx else
                 f"{count(slug)} tools in {len(fs)} families, with EUROSTAMP part numbers and profile drawings.")
         groups = [(slug, p["h1"].split(" — ")[0], lead, BRAND)]

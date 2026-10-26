@@ -33,7 +33,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ES = "/home/claude/eurostamp/"
-IMG, WEB, WEB2, EXT, EXT2, AM = (ES + d for d in ("img/", "web/", "web2/", "pdf/ext/", "pdf/ext2/", "am/"))
+IMG, WEB, WEB2, EXT, EXT2, EXT3, AM = (ES + d for d in ("img/", "web/", "web2/", "pdf/ext/", "pdf/ext2/", "pdf/ext3/", "am/"))
 OUT = os.path.join(ROOT, "tools", "src-images", "eurostamp")
 MAX_SIDE = 1800
 Image.MAX_IMAGE_PIXELS = None
@@ -69,12 +69,13 @@ PHOTOS = {
     "es-p-range": cut(WEB + "es-hero_mob.jpg", "EUROSTAMP press brake tooling — punches, dies, holders and adapters made in Italy"),
     "es-p-group": cut(WEB + "es-02.jpg", "Straight, gooseneck and acute punches from EUROSTAMP"),
     # ---------------------------------------------------------------- European punches
-    "es-p-goose": cut(WEB + "es-header-partner.jpg", "European-style (Amada-Promecam) gooseneck and straight punches"),
-    "es-p-c077a": photo(EXT + "p077-x309.png", "Sectioned punch set, 805 mm — horns at both ends and short sections between, assembled to the length of the bend"),
-    "es-p-c077b": cut(EXT + "p077-x311.png", "European-style punches — straight, gooseneck and acute profiles"),
-    "es-p-c107": cut(EXT + "p107-x452.png", "Gooseneck punches — the relieved neck clears return flanges"),
+    # every photo of a style page comes from that style's own pages of the EUROSTAMP catalogue (red pages = Amada-Promecam,
+    # blue = Trumpf, purple = Wila, orange = Bystronic) or shows a part number of that style
+    "es-p-c077a": photo(EXT + "p077-x309.png", "Sectioned European-style acute punch 1311 (26°), 805 mm set — horns at both ends and short sections between"),
+    "es-p-c077a-cut": cut(EXT + "p077-x309.png", "European-style (Amada-Promecam) sectioned punch, 805 mm set with horns"),
+    "es-p-c077b": cut(EXT + "p077-x311.png", "European-style (Amada-Promecam) punch sections — the narrow 13 mm tang with its safety groove"),
+    "es-p-c107": cut(EXT + "p107-x452.png", "Trumpf-style gooseneck punches with the safety button in the tang"),
     "es-p-c015": photo(EXT + "p015-x51.png", "Gooseneck punches standing in a row, sections and full lengths", gray=True),
-    "es-p-c136": photo(EXT + "p136-x563.png", "Punches stored in a tooling rack, tips forward"),
     "es-p-c078a": photo(EXT + "p078-x315.png", "ESH punches — every profile 120 mm (4.72″) high", crop=(0, 95, 597, 455), gray=True),
     "es-p-radius-press": photo(EXT2 + "p192-x806.png", "Radius holder with a round element in the press brake beam"),
     "es-p-c013": photo(AM + "x15.png", "Round radius elements on their bars"),
@@ -93,15 +94,15 @@ PHOTOS = {
     "es-w-1135": draw(WEB2 + "1135.jpg", "1135 — offset insert pair Z 3.5 mm at 90° (drawing)"),
     "es-w-1130": draw(WEB2 + "1130.jpg", "1130 — offset insert pair Z 1 mm at 140° for thin sheet (drawing)"),
     # ---------------------------------------------------------------- European dies
-    "es-p-dies-eu": cut(WEB + "es-hero_mob.jpg", "European-style (Amada-Promecam) dies and die holders made in Italy",
-                        keep=[(0, 392), (130, 392), (190, 404), (250, 398), (296, 394), (345, 403), (400, 404), (440, 408), (575, 428),
-                              (650, 440), (700, 453), (800, 467), (877, 480), (1000, 500), (1000, 686), (0, 686)]),
     "es-p-dies": cut(WEB + "es-01.jpg", "Trumpf-style dies — the 3228 1V die with its sections"),
-    "es-p-c055": photo(EXT + "p055-x196.png", "1V dies in the lower beam, punch above"),
+    "es-p-c055": photo(EXT + "p055-x196.png", "European-style 1V dies in the lower beam, punch above"),
+    "es-p-c041": cut(EXT3 + "p041-x135.png", "European-style (Amada-Promecam) 1V die 2081, 45°, sectioned to the length of the bend", fade_right=0.16),
+    "es-p-c047": photo(EXT3 + "p047-x170.png", "European-style two-V self-centring dies"),
+    "es-p-c066": photo(EXT3 + "p066-x242.png", "Rail with a self-centring die insert, bolted in the European-style lower beam"),
+    "es-p-c039": photo(EXT3 + "p039-x128.png", "European-style T dies taken from the tooling rack"),
     "es-p-treat": photo(AM + "x18.png", "Tools finished with nitriding and phosphating — surface treatments EUROSTAMP applies on request"),
     "es-p-c067a": photo(EXT + "p067-x247.png", "Rail for self-centring dies"),
     "es-p-c067b": cut(EXT + "p067-x249.png", "3173 holder for ESH insert dies, with its urethane strip"),
-    "es-p-c261": photo(EXT + "p261-x1187.png", "T die seen end-on — the slim body on its 60 mm foot"),
     "es-p-c071": photo(EXT + "p071-x264.png", "Hemming die with the spring-loaded flattening plate"),
     "es-p-c078b": photo(EXT + "p078-x315.png", "ESH insert dies in the 3173 holder", crop=(0, 450, 597, 790), gray=True),
     # ---------------------------------------------------------------- Trumpf & Wila
@@ -129,8 +130,6 @@ PHOTOS = {
     "es-w-4021": draw(WEB2 + "4021.jpg", "4021 — safety clamp with top handle and fixing screws, H60 (drawing)"),
     "es-w-4219": draw(WEB2 + "4219.jpg", "4219 — safety clamp with top lever and urethane insert (drawing)"),
     "es-w-4009": draw(WEB2 + "4009.jpg", "4009 — safety clamp with fold-away handle (drawing)"),
-    "es-p-c190": photo(EXT + "p190-x798.png", "Lower adapters and dies on the lower beam"),
-    "es-p-c191": photo(EXT + "p191-x802.png", "Lower adapter seating a die of another style"),
     "es-w-4302": draw(WEB2 + "4302.jpg", "4302 — lower adapter from a Beyeler / Trumpf beam to European dies, H60 (drawing)"),
     "es-w-4304": draw(WEB2 + "4304.jpg", "4304 — lower adapter from a European beam to LVD dies, H40 (drawing)"),
     "es-w-4040": draw(WEB2 + "4040.jpg", "Filler block with its long clamps (drawing)"),
@@ -443,6 +442,14 @@ def process(key, force=False):
                 ImageDraw.Draw(m).polygon([(x * s, y * s) for x, y in p["keep"]], fill=255)
                 rgba.putalpha(Image.fromarray(np.minimum(np.asarray(rgba.getchannel("A")), np.asarray(m))))
             rgba.putalpha(clean_alpha(rgba.getchannel("A")))
+            if p.get("fade_right"):            # the photo cuts the part at its right edge: fade it out instead of a hard cut
+                A = np.asarray(rgba.getchannel("A")).astype(np.float32)
+                xs = np.nonzero(A.max(axis=0) > 8)[0]
+                x1 = xs.max() if len(xs) else A.shape[1] - 1
+                x0 = int(x1 - p["fade_right"] * (x1 - xs.min()))
+                ramp = np.ones(A.shape[1], np.float32)
+                ramp[x0:x1 + 1] = np.linspace(1, 0, x1 + 1 - x0) ** 1.4
+                rgba.putalpha(Image.fromarray((A * ramp[None, :]).astype(np.uint8)))
             path, _ = save_rgba(key, rgba)
         else:
             im = fit(im)

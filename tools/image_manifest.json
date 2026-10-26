@@ -76516,7 +76516,7 @@
   }
  },
  "es-p-c077a": {
-  "alt": "Sectioned punch set, 805 mm \u2014 horns at both ends and short sections between, assembled to the length of the bend",
+  "alt": "Sectioned European-style acute punch 1311 (26\u00b0), 805 mm set \u2014 horns at both ends and short sections between",
   "variants": [
    {
     "w": 800,
@@ -76540,19 +76540,25 @@
   }
  },
  "es-p-c077b": {
-  "alt": "European-style punches \u2014 straight, gooseneck and acute profiles",
+  "alt": "European-style (Amada-Promecam) punch sections \u2014 the narrow 13 mm tang with its safety groove",
   "variants": [
+   {
+    "w": 1200,
+    "h": 925,
+    "file": "img/tooling/es-p-c077b-1200.webp",
+    "bytes": 71184
+   },
    {
     "w": 800,
     "h": 617,
     "file": "img/tooling/es-p-c077b-800.webp",
-    "bytes": 42794
+    "bytes": 43550
    },
    {
     "w": 480,
     "h": 370,
     "file": "img/tooling/es-p-c077b-480.webp",
-    "bytes": 22152
+    "bytes": 22506
    }
   ],
   "alpha": true,
@@ -76560,11 +76566,11 @@
    "w": 160,
    "h": 123,
    "file": "img/tooling/es-p-c077b-thumb.webp",
-   "bytes": 5238
+   "bytes": 5222
   }
  },
  "es-p-c107": {
-  "alt": "Gooseneck punches \u2014 the relieved neck clears return flanges",
+  "alt": "Trumpf-style gooseneck punches with the safety button in the tang",
   "variants": [
    {
     "w": 800,
@@ -77056,7 +77062,7 @@
   }
  },
  "es-p-c055": {
-  "alt": "1V dies in the lower beam, punch above",
+  "alt": "European-style 1V dies in the lower beam, punch above",
   "variants": [
    {
     "w": 800,
@@ -80293,6 +80299,132 @@
    "h": 17,
    "file": "img/site/eurostamp-logo-thumb.webp",
    "bytes": 2952
+  }
+ },
+ "es-p-c077a-cut": {
+  "alt": "European-style (Amada-Promecam) sectioned punch, 805 mm set with horns",
+  "variants": [
+   {
+    "w": 800,
+    "h": 254,
+    "file": "img/tooling/es-p-c077a-cut-800.webp",
+    "bytes": 20776
+   },
+   {
+    "w": 480,
+    "h": 153,
+    "file": "img/tooling/es-p-c077a-cut-480.webp",
+    "bytes": 12238
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 51,
+   "file": "img/tooling/es-p-c077a-cut-thumb.webp",
+   "bytes": 3048
+  }
+ },
+ "es-p-c041": {
+  "alt": "European-style (Amada-Promecam) 1V die 2081, 45\u00b0, sectioned to the length of the bend",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 497,
+    "file": "img/tooling/es-p-c041-1200.webp",
+    "bytes": 40028
+   },
+   {
+    "w": 800,
+    "h": 331,
+    "file": "img/tooling/es-p-c041-800.webp",
+    "bytes": 25180
+   },
+   {
+    "w": 480,
+    "h": 199,
+    "file": "img/tooling/es-p-c041-480.webp",
+    "bytes": 13994
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 66,
+   "file": "img/tooling/es-p-c041-thumb.webp",
+   "bytes": 3786
+  }
+ },
+ "es-p-c047": {
+  "alt": "European-style two-V self-centring dies",
+  "variants": [
+   {
+    "w": 800,
+    "h": 410,
+    "file": "img/tooling/es-p-c047-800.webp",
+    "bytes": 14034
+   },
+   {
+    "w": 480,
+    "h": 246,
+    "file": "img/tooling/es-p-c047-480.webp",
+    "bytes": 7616
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 82,
+   "file": "img/tooling/es-p-c047-thumb.webp",
+   "bytes": 1678
+  }
+ },
+ "es-p-c066": {
+  "alt": "Rail with a self-centring die insert, bolted in the European-style lower beam",
+  "variants": [
+   {
+    "w": 800,
+    "h": 593,
+    "file": "img/tooling/es-p-c066-800.webp",
+    "bytes": 19064
+   },
+   {
+    "w": 480,
+    "h": 356,
+    "file": "img/tooling/es-p-c066-480.webp",
+    "bytes": 11532
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/tooling/es-p-c066-thumb.webp",
+   "bytes": 2684
+  }
+ },
+ "es-p-c039": {
+  "alt": "European-style T dies taken from the tooling rack",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1131,
+    "file": "img/tooling/es-p-c039-800.webp",
+    "bytes": 36550
+   },
+   {
+    "w": 480,
+    "h": 679,
+    "file": "img/tooling/es-p-c039-480.webp",
+    "bytes": 19670
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 113,
+   "h": 160,
+   "file": "img/tooling/es-p-c039-thumb.webp",
+   "bytes": 3424
   }
  }
 }

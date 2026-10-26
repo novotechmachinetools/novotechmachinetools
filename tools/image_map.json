@@ -21057,18 +21057,9 @@
   "quality": 82,
   "cutout": false
  },
- "es-p-goose": {
-  "src": "tools/src-images/eurostamp/es-p-goose.webp",
-  "alt": "European-style (Amada-Promecam) gooseneck and straight punches",
-  "section": "tooling",
-  "trim": true,
-  "quality": 82,
-  "cutout": false,
-  "upscale": 1.5
- },
  "es-p-c077a": {
   "src": "tools/src-images/eurostamp/es-p-c077a.jpg",
-  "alt": "Sectioned punch set, 805 mm — horns at both ends and short sections between, assembled to the length of the bend",
+  "alt": "Sectioned European-style acute punch 1311 (26°), 805 mm set — horns at both ends and short sections between",
   "section": "tooling",
   "trim": false,
   "quality": 82,
@@ -21076,15 +21067,16 @@
  },
  "es-p-c077b": {
   "src": "tools/src-images/eurostamp/es-p-c077b.webp",
-  "alt": "European-style punches — straight, gooseneck and acute profiles",
+  "alt": "European-style (Amada-Promecam) punch sections — the narrow 13 mm tang with its safety groove",
   "section": "tooling",
   "trim": true,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "upscale": 1.5
  },
  "es-p-c107": {
   "src": "tools/src-images/eurostamp/es-p-c107.webp",
-  "alt": "Gooseneck punches — the relieved neck clears return flanges",
+  "alt": "Trumpf-style gooseneck punches with the safety button in the tang",
   "section": "tooling",
   "trim": true,
   "quality": 82,
@@ -21093,14 +21085,6 @@
  "es-p-c015": {
   "src": "tools/src-images/eurostamp/es-p-c015.jpg",
   "alt": "Gooseneck punches standing in a row, sections and full lengths",
-  "section": "tooling",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "es-p-c136": {
-  "src": "tools/src-images/eurostamp/es-p-c136.jpg",
-  "alt": "Punches stored in a tooling rack, tips forward",
   "section": "tooling",
   "trim": false,
   "quality": 82,
@@ -21242,15 +21226,6 @@
   "quality": 82,
   "cutout": false
  },
- "es-p-dies-eu": {
-  "src": "tools/src-images/eurostamp/es-p-dies-eu.webp",
-  "alt": "European-style (Amada-Promecam) dies and die holders made in Italy",
-  "section": "tooling",
-  "trim": true,
-  "quality": 82,
-  "cutout": false,
-  "upscale": 1.5
- },
  "es-p-dies": {
   "src": "tools/src-images/eurostamp/es-p-dies.webp",
   "alt": "Trumpf-style dies — the 3228 1V die with its sections",
@@ -21262,7 +21237,7 @@
  },
  "es-p-c055": {
   "src": "tools/src-images/eurostamp/es-p-c055.jpg",
-  "alt": "1V dies in the lower beam, punch above",
+  "alt": "European-style 1V dies in the lower beam, punch above",
   "section": "tooling",
   "trim": false,
   "quality": 82,
@@ -21289,14 +21264,6 @@
   "alt": "3173 holder for ESH insert dies, with its urethane strip",
   "section": "tooling",
   "trim": true,
-  "quality": 82,
-  "cutout": false
- },
- "es-p-c261": {
-  "src": "tools/src-images/eurostamp/es-p-c261.jpg",
-  "alt": "T die seen end-on — the slim body on its 60 mm foot",
-  "section": "tooling",
-  "trim": false,
   "quality": 82,
   "cutout": false
  },
@@ -21489,22 +21456,6 @@
  "es-w-4009": {
   "src": "tools/src-images/eurostamp/es-w-4009.png",
   "alt": "4009 — safety clamp with fold-away handle (drawing)",
-  "section": "tooling",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "es-p-c190": {
-  "src": "tools/src-images/eurostamp/es-p-c190.jpg",
-  "alt": "Lower adapters and dies on the lower beam",
-  "section": "tooling",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "es-p-c191": {
-  "src": "tools/src-images/eurostamp/es-p-c191.jpg",
-  "alt": "Lower adapter seating a die of another style",
   "section": "tooling",
   "trim": false,
   "quality": 82,
@@ -22484,6 +22435,47 @@
   "section": "site",
   "trim": true,
   "quality": 90,
+  "cutout": false
+ },
+ "es-p-c077a-cut": {
+  "src": "tools/src-images/eurostamp/es-p-c077a-cut.webp",
+  "alt": "European-style (Amada-Promecam) sectioned punch, 805 mm set with horns",
+  "section": "tooling",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "es-p-c041": {
+  "src": "tools/src-images/eurostamp/es-p-c041.webp",
+  "alt": "European-style (Amada-Promecam) 1V die 2081, 45°, sectioned to the length of the bend",
+  "section": "tooling",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "upscale": 1.5
+ },
+ "es-p-c047": {
+  "src": "tools/src-images/eurostamp/es-p-c047.jpg",
+  "alt": "European-style two-V self-centring dies",
+  "section": "tooling",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "es-p-c066": {
+  "src": "tools/src-images/eurostamp/es-p-c066.jpg",
+  "alt": "Rail with a self-centring die insert, bolted in the European-style lower beam",
+  "section": "tooling",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "es-p-c039": {
+  "src": "tools/src-images/eurostamp/es-p-c039.jpg",
+  "alt": "European-style T dies taken from the tooling rack",
+  "section": "tooling",
+  "trim": false,
+  "quality": 82,
   "cutout": false
  }
 }

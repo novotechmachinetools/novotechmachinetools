@@ -123,20 +123,41 @@
 {%- endmacro %}
 
 {# ---------- tool tables: one row per tool (press brake tooling); a cell is text or {href, text, download} ---------- #}
+{% macro tt_head(c) -%}
+{% if c is mapping %}{{ c.label }}{% if c.sub %}<small>{{ c.sub }}</small>{% endif %}{% if c.tag %}<small class="tt-tag">{{ c.tag }}</small>{% endif %}{% else %}{{ c }}{% endif %}
+{%- endmacro %}
+
+{% macro tt_cell(c) -%}
+{% if c is mapping %}{% if c.href %}<td><a href="{{ c.href }}"{% if c.download %} download{% endif %}>{{ c.text }}</a></td>{% else %}<td{% if c.cls %} class="{{ c.cls }}"{% endif %}>{{ c.text }}{% if c.sub %}<small>{{ c.sub }}</small>{% endif %}</td>{% endif %}{% else %}<td{% if c == '—' %} class="tt-none"{% endif %}>{{ c }}</td>{% endif %}
+{%- endmacro %}
+
+{# one tool table: a single header row, or two when a 'Lengths & weights' group spans some of the columns #}
+{% macro tt_table(t, label, extra_cls='') -%}
+<section class="table-scroll" tabindex="0" aria-label="{{ label }}">
+  <table class="spec-table tool-table{{ ' has-desc' if t.desc else '' }}{{ ' has-lengths' if t.group else '' }}{{ ' ' ~ extra_cls if extra_cls else '' }}">
+    <caption>{{ t.title }}{% if t.sub %} <small>{{ t.sub }}</small>{% endif %}</caption>
+    <thead>
+      {% if t.group %}{% set g0 = t.group.start %}{% set g1 = t.group.start + t.group.span %}
+      <tr><th scope="col" rowspan="2" class="label-col">{{ t.first_col or 'Code' }}</th>{% for c in t.cols[:g0] %}<th scope="col" rowspan="2">{{ tt_head(c) }}</th>{% endfor %}<th scope="colgroup" colspan="{{ t.group.span }}" class="tt-group">{{ t.group.label }}</th>{% for c in t.cols[g1:] %}<th scope="col" rowspan="2">{{ tt_head(c) }}</th>{% endfor %}</tr>
+      <tr>{% for c in t.cols[g0:g1] %}<th scope="col" class="tt-len">{{ tt_head(c) }}</th>{% endfor %}</tr>
+      {% else %}
+      <tr><th scope="col" class="label-col">{{ t.first_col or 'Code' }}</th>{% for c in t.cols %}<th scope="col">{{ tt_head(c) }}</th>{% endfor %}</tr>
+      {% endif %}
+    </thead>
+    <tbody>
+      {% for r in t.rows %}
+      <tr><th scope="row">{{ r[0] }}</th>{% for c in r[1:] %}{{ tt_cell(c) }}{% endfor %}</tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{%- endmacro %}
+
 {% macro tool_tables(f) -%}
 <div class="specs tool-specs" id="{{ f.id }}-specs">
   {% for t in f.tool_tables %}
-  <section class="table-scroll" tabindex="0" aria-label="{{ f.name }} — {{ t.title }}">
-    <table class="spec-table tool-table{{ ' has-desc' if t.desc else '' }}">
-      <caption>{{ t.title }}{% if t.sub %} <small>{{ t.sub }}</small>{% endif %}</caption>
-      <thead><tr><th scope="col" class="label-col">{{ t.first_col or 'Code' }}</th>{% for c in t.cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
-      <tbody>
-        {% for r in t.rows %}
-        <tr><th scope="row">{{ r[0] }}</th>{% for c in r[1:] %}<td>{% if c is mapping %}<a href="{{ c.href }}"{% if c.download %} download{% endif %}>{{ c.text }}</a>{% else %}{{ c }}{% endif %}</td>{% endfor %}</tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </section>
+  {{ tt_table(t, f.name ~ ' — ' ~ t.title) }}
+  {% if t.lw %}{{ tt_table(t.lw, f.name ~ ' — ' ~ t.lw.title, 'tool-table-lw') }}{% endif %}
   {% endfor %}
   {% if f.tool_note %}<p class="table-note">{{ f.tool_note }}</p>{% endif %}
 </div>

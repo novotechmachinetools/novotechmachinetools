@@ -327,6 +327,211 @@ def lengths(t):
     return out
 
 
+_BOXES = json.load(open(ES + "parsed/boxes.json", encoding="utf-8"))["codes"]     # the catalogue's length / weight boxes by code
+_CAT_TAG = {"sectioned": "sectioned", "short-sectioned": "short-sectioned", "horn": "horn", "standard": "", None: ""}
+
+
+def _pl_len_rows(t):
+    """the price list's sizes → [{mm, kg, tag, n}] — tag '' (full length), 'sectioned', 'short-sectioned', 'right horn',
+    'left horn' or 'pair' (two pieces, e.g. the 2 × 150 mm moving horns)"""
+    rows = []
+    for sz, w in t.get("sizes") or []:
+        s = sz.strip().replace("‐", "-")
+        kg = num(w) if w and re.match(r"\s*\d", w) else None
+        m = re.match(r"^(\d{2,4})(?:\s*(fraz\.?))?$", s, re.I)
+        if m:
+            rows.append({"mm": int(m.group(1)), "kg": kg, "tag": "sectioned" if m.group(2) else "", "n": 1})
+            continue
+        m = re.match(r"^Sect\.\s*Short-(\d+)", s, re.I)
+        if m:
+            rows.append({"mm": int(m.group(1)), "kg": kg, "tag": "short-sectioned", "n": 1})
+            continue
+        m = re.match(r"^(\d+)\s*(rig\.|right|lef\.|left)\s*ho[rt]n$", s, re.I)
+        if m:
+            rows.append({"mm": int(m.group(1)), "kg": kg, "tag": "right horn" if m.group(2).lower().startswith("r") else "left horn", "n": 1})
+            continue
+        m = re.match(r"^(\d)\s*x\s*(\d+)$", s)
+        if m:
+            rows.append({"mm": int(m.group(2)), "kg": kg, "tag": "pair", "n": int(m.group(1))})
+    return rows
+
+
+def _cat_len_rows(code):
+    return [[{"mm": mm, "kg": kg, "tag": _CAT_TAG.get(tag, ""), "n": 1} for mm, kg, tag in b["rows"]] for b in _BOXES.get(code) or []]
+
+
+_AREA = {}
+
+
+def dxf_area(code):
+    """cross-section of a tool from its DXF profile (LINE / ARC loops), mm² — EUROSTAMP's own weights are this area × length
+    × 7.85 g/cm³ to within 1 % (checked on 1011, 1052, 1055, 3080, 3200, 1294, 1315, 1324 …)"""
+    if code in _AREA:
+        return _AREA[code]
+    import math
+    path = ES + "dxf12/" + code + ".dxf"
+    if not os.path.exists(path):
+        _AREA[code] = None
+        return None
+    lines = open(path, encoding="latin-1").read().split("\n")
+    ents, cur = [], None
+    for i in range(0, len(lines) - 1, 2):
+        c, v = lines[i].strip(), lines[i + 1].strip()
+        if c == "0":
+            if cur:
+                ents.append(cur)
+            cur = {"type": v} if v in ("LINE", "ARC", "CIRCLE") else None
+        elif cur is not None and re.match(r"^-?[\d.]+(e-?\d+)?$", v):
+            cur.setdefault(c, float(v))
+    if cur:
+        ents.append(cur)
+    segs = []
+    for e in ents:
+        if e["type"] == "LINE":
+            segs.append([(e["10"], e["20"]), (e["11"], e["21"])])
+        else:
+            cx, cy, r = e["10"], e["20"], e["40"]
+            a0, a1 = (e.get("50", 0.0), e.get("51", 360.0)) if e["type"] == "ARC" else (0.0, 360.0)
+            if a1 < a0:
+                a1 += 360
+            n = max(2, int((a1 - a0) / 3) + 1)
+            segs.append([(cx + r * math.cos(math.radians(a0 + (a1 - a0) * k / (n - 1))), cy + r * math.sin(math.radians(a0 + (a1 - a0) * k / (n - 1)))) for k in range(n)])
+    used, areas = [False] * len(segs), []
+    for i in range(len(segs)):
+        if used[i]:
+            continue
+        used[i], path_ = True, list(segs[i])
+        for _ in range(len(segs)):
+            if len(path_) > 2 and math.dist(path_[-1], path_[0]) < 0.02:
+                break
+            for j, s in enumerate(segs):
+                if not used[j] and math.dist(s[0], path_[-1]) < 0.02:
+                    path_ += s[1:]; used[j] = True; break
+                if not used[j] and math.dist(s[-1], path_[-1]) < 0.02:
+                    path_ += s[::-1][1:]; used[j] = True; break
+            else:
+                break
+        if len(path_) > 2 and math.dist(path_[-1], path_[0]) < 0.02:
+            areas.append(abs(sum(x0 * y1 - x1 * y0 for (x0, y0), (x1, y1) in zip(path_, path_[1:] + path_[:1]))) / 2)
+    areas.sort(reverse=True)
+    _AREA[code] = (areas[0] - sum(areas[1:])) if areas else None
+    return _AREA[code]
+
+
+LVD_LENGTH = 510              # EUROSTAMP's LVD-style tools: 510 mm (the shop states it on the tools that carry a length)
+
+
+def length_rows(t):
+    """every length a tool is sold in, with its weight: the 2024 price list first (it is the ordering document and lists the
+    right and left horns separately), weights it lacks from the catalogue's box, and the catalogue's rows when the price list
+    has none (EUROGRIP, tangs).  A weight nobody publishes (the LVD-style series) is calculated from the DXF profile and
+    flagged 'calc'.  [{mm, kg, tag, n, calc}]"""
+    rows = _length_rows(t)
+    a = None
+    for r in rows:
+        if r["kg"] is None and r["tag"] in ("", "sectioned", "short-sectioned"):
+            a = a if a is not None else dxf_area(t["code"])
+            if a:
+                r["kg"], r["calc"] = round(a * r["mm"] * r.get("n", 1) * 7.85e-6, 1), True
+    return rows
+
+
+def _length_rows(t):
+    pl = _pl_len_rows(t)
+    cats = _cat_len_rows(t["code"])
+    if not pl:
+        if cats:
+            return [dict(r) for r in cats[0]]
+        if t.get("style") == "lvd":
+            return [{"mm": int(t.get("len_web") or LVD_LENGTH), "kg": None, "tag": "", "n": 1}]
+        return [{"mm": int(t["len_web"]), "kg": None, "tag": "", "n": 1}] if t.get("len_web") else []
+    sect = ("sectioned", "short-sectioned")
+    for r in pl:
+        if r["kg"] is None:
+            for box in cats:
+                c = next((c for c in box if c["mm"] == r["mm"] and c["kg"] is not None and (c["tag"] in sect) == (r["tag"] in sect)), None)
+                if c:
+                    r["kg"] = c["kg"]
+                    break
+    # a length the catalogue prints and the price list lost (its other rows agree with the price list): add it, in catalogue order
+    have = {r["mm"] for r in pl}
+    for box in cats:
+        mms = {c["mm"] for c in box}
+        if have < mms and all(any(c["mm"] == r["mm"] and (c["kg"] is None or r["kg"] is None or abs(c["kg"] - r["kg"]) < 0.25) for c in box) for r in pl):
+            out = []
+            for c in box:
+                same = [r for r in pl if r["mm"] == c["mm"]]
+                out.extend(same or [dict(c)])
+            return out
+    return pl
+
+
+def inch2(mm):
+    """a tool length in decimal inches, two places: 32.87″, .98″"""
+    s = f"{mm / 25.4:.2f}"
+    return (s[1:] if s.startswith("0.") else s) + "″"
+
+
+def lb_s(kg):
+    v = kg * 2.20462
+    return f"{v:,.0f} lb" if v >= 100 else f"{v:.1f} lb"
+
+
+def kg_s(kg):
+    """12.6 → '12.6 kg', 13 → '13.0 kg' (one decimal like the catalogue), 1.375 → '1.375 kg', 594 → '594 kg'"""
+    if kg >= 100:
+        return f"{kg:,.0f} kg"
+    return f"{kg:.1f} kg" if round(kg, 1) == kg else f"{kg:g} kg"
+
+
+LEN_TAG = {"": "", "sectioned": "sectioned set", "short-sectioned": "short sectioned set", "right horn": "horn, right",
+           "left horn": "horn, left", "horn": "horn", "pair": "pair"}
+
+
+def len_key(r):
+    return (r["mm"], r["tag"], r.get("n", 1))
+
+
+def len_keys(tools):
+    """the length columns of a table, in catalogue order: full lengths (long to short), sectioned sets, horns, pairs, then the
+    short sections (Trumpf / Wila / Bystronic pieces under 100 mm)"""
+    keys = []
+    for t in tools:
+        for r in length_rows(t):
+            k = len_key(r)
+            if k not in keys:
+                keys.append(k)
+    grp = {"": 0, "sectioned": 1, "short-sectioned": 2, "right horn": 3, "horn": 3, "left horn": 4, "pair": 5}
+
+    def order(k):
+        mm, tag, n = k
+        g = grp.get(tag, 6)
+        if tag == "" and mm < 100:
+            g = 7
+        return (g, -mm)
+    return sorted(keys, key=order)
+
+
+def len_head(k):
+    mm, tag, n = k
+    lab = f"{n} × {inch2(mm)}" if n > 1 else inch2(mm)
+    sub = f"{n} × {mm:,} mm" if n > 1 else f"{mm:,} mm"
+    return {"label": lab, "sub": sub, "tag": LEN_TAG.get(tag, tag)}
+
+
+def len_cell(t, k):
+    for r in length_rows(t):
+        if len_key(r) == k:
+            if r["kg"] is None:
+                return {"text": "yes", "cls": "tt-w"}
+            pre = "≈ " if r.get("calc") else ""
+            return {"text": pre + lb_s(r["kg"]), "sub": pre + kg_s(r["kg"]), "cls": "tt-w"}
+    return "—"
+
+
+INLINE_LENGTHS = 4          # up to this many length columns go into the tool table itself; more get their own table under it
+
+
 def lengths_text(ls):
     """[(835,''),(415,''),(805,'sectioned')] → '32.9 · 16.3″ · 31.7″ sect. (835 · 415 · 805 sect. mm)';
     short single pieces are summarised: '19.7″ · 21.7″ sect. · pieces (500 · 550 sect. · 25 – 300 mm)'"""
@@ -369,17 +574,37 @@ COLS = {
 }
 
 
+def with_lengths(tab, tools, at=None):
+    """add the lengths-and-weights columns to a table dict (rows = tools, same order): every length the tools are sold in,
+    in inches and mm, with the weight of each in lb and kg.  Up to INLINE_LENGTHS columns join the table under a
+    'Lengths & weights' group header (inserted at `at`, default before a final Profile column); more get a table of their own,
+    tab['lw'], shown right under it."""
+    keys = len_keys(tools)
+    if not keys:
+        return tab
+    heads = [len_head(k) for k in keys]
+    if any(r.get("calc") for t in tools for r in length_rows(t)):
+        tab["sub"] = (tab["sub"] + " · " if tab.get("sub") else "") + "weights marked ≈ calculated from the tool profile (steel, 7.85 g/cm³)"
+    if len(keys) <= INLINE_LENGTHS:
+        if at is None:
+            at = len(tab["cols"]) - 1 if tab["cols"] and tab["cols"][-1] == "Profile" else len(tab["cols"])
+        tab["cols"] = tab["cols"][:at] + heads + tab["cols"][at:]
+        tab["rows"] = [r[:at + 1] + [len_cell(t, k) for k in keys] + r[at + 1:] for r, t in zip(tab["rows"], tools)]
+        tab["group"] = {"label": "Lengths & weights", "start": at, "span": len(keys)}
+    else:
+        tab["lw"] = {"title": tab["title"] + " — lengths and weights", "sub": "weight of each piece or set",
+                     "cols": heads, "rows": [[t["code"]] + [len_cell(t, k) for k in keys] for t in tools],
+                     "first_col": tab.get("first_col") or "Code", "group": {"label": "Lengths & weights", "start": 0, "span": len(keys)}}
+    return tab
+
+
 def tool_table(title, sub, tools, cols, note=""):
-    """one table, one row per tool: the code in the first column, then `cols`.  The 'len' column is dropped when every tool
-    of the table is sold in the same lengths (they go into the sub-caption instead)."""
+    """one table, one row per tool: the code in the first column, then `cols`.  'len' becomes the lengths-and-weights
+    columns (with_lengths)."""
     cols = list(cols)
-    if "len" in cols:
-        ls = {tuple(lengths(t)) for t in tools}
-        if len(ls) == 1:
-            cols.remove("len")
-            common = lengths_text(list(next(iter(ls))))
-            if common != "—":
-                sub = (sub + " · " if sub else "") + "lengths " + common
+    want_len = "len" in cols
+    if want_len:
+        cols.remove("len")
     if "type" in cols and len({t.get("type_label") for t in tools}) == 1:
         cols.remove("type")                        # one type for the whole table: the title says it
     if "load" in cols and not any(t["load"] for t in tools):
@@ -388,8 +613,9 @@ def tool_table(title, sub, tools, cols, note=""):
         sub = (sub + " · " if sub else "") + tools[0]["material"] + " steel"
         cols.remove("mat")
     rows = [[t["code"]] + [COLS[c][1](t) for c in cols] for t in tools]
-    return {"title": title, "sub": sub, "cols": [COLS[c][0] for c in cols], "rows": rows, "note": note,
-            "codes": [t["code"] for t in tools]}
+    tab = {"title": title, "sub": sub, "cols": [COLS[c][0] for c in cols], "rows": rows, "note": note,
+           "codes": [t["code"] for t in tools]}
+    return with_lengths(tab, tools) if want_len else tab
 
 
 # ------------------------------------------------------------------------------------------------ selection helpers
