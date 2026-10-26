@@ -8,6 +8,8 @@
   "isitan-sfb-38-nc-a",
   "isitan-bk",
   "sahinler-spb",
+  "tubend-tb34",
+  "tubend-tb42",
   "csm-emr",
   "csm-mbe",
   "csm-tbre",
@@ -1716,7 +1718,7 @@
       "name": "SPB 60",
       "glance": [
        "Ø2-3/8″ × 11 ga (60 × 3 mm)",
-       "R2.4″ (Ø5/8″ × 8 ga)",
+       "R5.9″ (Ø2-3/8″ × 10 ga)",
        "3 HP (2.25 kW)",
        "728 lb (330 kg)"
       ]
@@ -1725,7 +1727,7 @@
       "name": "SPB 76",
       "glance": [
        "Ø3″ × 10 ga (76 × 3.5 mm)",
-       "R3″ (Ø5/8″ × 11 ga)",
+       "R8.7″ (Ø3″ × 10 ga)",
        "4 HP (3 kW)",
        "1,102 lb (500 kg)"
       ]
@@ -1747,6 +1749,271 @@
     "size": "PDF · 2 MB · imperial units"
    },
    "group": "sahinler-draw"
+  },
+  "tubend-tb34": {
+   "id": "tubend-tb34",
+   "brand": "tubend",
+   "name": "TB 34 electric mandrel-less pipe bender, 1″ NPS pipe",
+   "short": "TB 34",
+   "models_label": "TB 34 · 1 model",
+   "summary": "A bench-size electric pipe bender for 1″ NPS pipe and Ø1-5/16″ × 11 ga tube to 180°: a gear-reduced drive turns the bend die at 1.9 rpm, a digital readout shows the angle and stops the bend where you set it, and a brake motor holds the angle so spring-back does not creep into the part. 198 lb with detachable carrying handles — it goes to the work — and one die set in your pipe size is included. Street furniture, bike racks, safety barriers and handrail parts.",
+   "headline": "1″ NPS pipe · Ø1-5/16″ × 11 ga to 180° · digital angle readout · 198 lb",
+   "features": [
+    "Bends pipe and tube to Ø1-5/16″ × 11 ga (Ø34 × 3 mm) — 1″ NPS — up to 180°, minimum radius 3 × tube Ø",
+    "Digital readout; the bend angle can be limited from the readout for repeat parts",
+    "Gearbox-driven power transmission; brake motor prevents bending errors from spring-back",
+    "Durable steel body; detachable carrying handles for moving it around the shop",
+    "1 set of pipe bending dies included",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Pipe dies in custom sizes",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tb-tb34",
+    "tb-tb34-parts",
+    "tb-tb34-barrier"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TB 34",
+      "sub": "Electric mandrel-less pipe and tube bender",
+      "models": [
+       "TB 34"
+      ],
+      "rows": [
+       {
+        "label": "Max. bending capacity",
+        "sub": "OD × wall, to 180°",
+        "cells": [
+         "1″ NPS pipe · Ø1-5/16″ × 11 ga (Ø34 × 3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Min. bending radius",
+        "sub": "centreline",
+        "cells": [
+         "3 × tube Ø"
+        ],
+        "key": true
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Digital angle readout with angle limit · brake motor"
+        ],
+        "key": true
+       },
+       {
+        "label": "Output speed",
+        "sub": "",
+        "cells": [
+         "1.9 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "0.7 HP (0.55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 10 × 18″ (720 × 260 × 460 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "198 lb (90 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TB 34",
+      "glance": [
+       "1″ NPS pipe · Ø1-5/16″ × 11 ga (Ø34 × 3 mm)",
+       "3 × tube Ø",
+       "—",
+       "Digital angle readout with angle limit · brake motor",
+       "198 lb (90 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "min_radius",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacity is mild steel pipe or tube with the matching die set; one die set in the size you order is included."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
+    "label": "Download the Tubend press, pipe bender & positioner brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "tubend-tb"
+  },
+  "tubend-tb42": {
+   "id": "tubend-tb42",
+   "brand": "tubend",
+   "name": "TB 42 hydraulic mandrel-less pipe bender, 1-1/4″ NPS pipe",
+   "short": "TB 42",
+   "models_label": "TB 42 · 1 model",
+   "summary": "A 17-ton hydraulic pipe bender in a closed steel cabinet: the cylinder pushes the former through the pipe or tube between two wing dies on the top plate, a manual angle switch and digital readout set the bend, and the speed is adjustable. 1-1/4″ NPS pipe and Ø1-5/8″ × 11 ga tube; free holes in the plate take special dies for section, flat and solid bar. One set of pipe bending dies included, 485 lb.",
+   "headline": "17 US ton hydraulic · 1-1/4″ NPS pipe · Ø1-5/8″ × 11 ga · digital readout",
+   "features": [
+    "Tube bending capacity to Ø1-5/8″ × 11 ga (Ø42 × 3 mm) — 1-1/4″ NPS pipe",
+    "17 US ton (15 t) hydraulic cylinder, 5.9″ stroke, adjustable speed",
+    "Manual adjustable angle switch with digital readout",
+    "Free holes in the top plate for special tools; steel welded frame",
+    "One set of pipe bending dies included",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Sets of pipe, tube, section or solid bar dies to the required size",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tb-tb42",
+    "tb-tb42-part",
+    "tb-tb42-dies",
+    "tb-tb42-panel"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TB 42",
+      "sub": "Hydraulic mandrel-less pipe and tube bender",
+      "models": [
+       "TB 42"
+      ],
+      "rows": [
+       {
+        "label": "Max. bending capacity",
+        "sub": "OD × wall",
+        "cells": [
+         "1-1/4″ NPS pipe · Ø1-5/8″ × 11 ga (Ø42 × 3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. force",
+        "sub": "at 2,900 psi (200 bar)",
+        "cells": [
+         "17 US ton (15 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Digital readout · manual angle switch · adjustable speed"
+        ],
+        "key": true
+       },
+       {
+        "label": "Maximum stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working speed",
+        "sub": "",
+        "cells": [
+         "0.79 in/s (20 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Oil tank",
+        "sub": "",
+        "cells": [
+         "4 US gal (15 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "18 × 39 × 39″ (450 × 1,000 × 1,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "485 lb (220 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TB 42",
+      "glance": [
+       "1-1/4″ NPS pipe · Ø1-5/8″ × 11 ga (Ø42 × 3 mm)",
+       "—",
+       "—",
+       "Digital readout · manual angle switch · adjustable speed",
+       "485 lb (220 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "min_radius",
+     "working_length",
+     "control",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacity is mild steel pipe or tube with the matching die set; one die set in the size you order is included."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
+    "label": "Download the Tubend press, pipe bender & positioner brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "tubend-tb"
   },
   "csm-emr": {
    "id": "csm-emr",

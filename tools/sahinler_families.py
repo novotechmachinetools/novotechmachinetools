@@ -210,7 +210,7 @@ SPB_FAMILIES = [
              {"label": "Motor power", "sub": "", "cells": [motor("3.0"), motor("4.0")], "key": False},
              {"label": "Dimensions L × W × H", "sub": "", "cells": [dims("33 × 30 × 47"), dims("37 × 33 × 49")], "key": False},
              {"label": "Weight", "sub": "", "cells": [weight("728"), weight("1,102")], "key": False}]}],
-             ["capacity", "radius", "motor", "weight"], ["Mild steel tube", "Min. bending radius", "Motor power", "Weight"]),
+             ["capacity", "radius", "motor", "weight"], ["Mild steel tube", "Max. bending radius", "Motor power", "Weight"]),
          headline="Pipe to Ø3″ × 10 ga (76 × 3.5 mm) · NC control with 500 programs · 1 tooling set included"),
 ]
 

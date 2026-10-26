@@ -17015,5 +17015,241 @@
   "trim": true,
   "quality": 90,
   "cutout": false
+ },
+ "tb-hp10": {
+  "src": "tools/src-images/tubend/tb-hp10.png",
+  "alt": "Tubend HP 10 NC hydraulic horizontal press with touch-screen control stand and foot pedal",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-hp80": {
+  "src": "tools/src-images/tubend/tb-hp80.png",
+  "alt": "Tubend HP 80 hydraulic horizontal press with induction-hardened support pins, control stand and foot pedal",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-hp-backgauge": {
+  "src": "tools/src-images/tubend/tb-hp-backgauge.jpg",
+  "alt": "HP horizontal press with servo-driven NC back gauge, touch-screen control stand and foot pedal",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-hp-screen-manual": {
+  "src": "tools/src-images/tubend/tb-hp-screen-manual.jpg",
+  "alt": "HP touch-screen in manual mode: the ram works between the minimum and maximum stroke set in mm",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-hp-screen-recipe": {
+  "src": "tools/src-images/tubend/tb-hp-screen-recipe.jpg",
+  "alt": "HP touch-screen in recipe mode: ram and back gauge positions for each step of a part",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-hp-tool-vdie": {
+  "src": "tools/src-images/tubend/tb-hp-tool-vdie.jpg",
+  "alt": "Press brake punch with multi-V die on the HP table",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-hp-tool-pipe": {
+  "src": "tools/src-images/tubend/tb-hp-tool-pipe.jpg",
+  "alt": "Mandrel-less pipe bending tool with a tube bent to an S",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-hp-tool-pipe-end": {
+  "src": "tools/src-images/tubend/tb-hp-tool-pipe-end.jpg",
+  "alt": "Pipe end reduction and expansion tool",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-hp-tool-radius": {
+  "src": "tools/src-images/tubend/tb-hp-tool-radius.jpg",
+  "alt": "Wide-radius bending tool bending 13/16″ (20 mm) plate",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-hp-tool-busbar": {
+  "src": "tools/src-images/tubend/tb-hp-tool-busbar.jpg",
+  "alt": "Busbar precision bending tool bending copper busbar",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-hp-parts": {
+  "src": "tools/src-images/tubend/tb-hp-parts.png",
+  "alt": "Flat bar, angle, channel, pipe and round bar parts bent on the HP",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-hp-busbar-parts": {
+  "src": "tools/src-images/tubend/tb-hp-busbar-parts.png",
+  "alt": "Copper busbars bent and punched on the HP",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-hp120": {
+  "src": "tools/src-images/tubend/tb-hp120.png",
+  "alt": "Tubend HP 120 / HP 150 heavy-duty horizontal press with T-slot table, support columns and control stand",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-hp120-side": {
+  "src": "tools/src-images/tubend/tb-hp120-side.png",
+  "alt": "HP 120 / HP 150 from the side: hydraulic unit, control box, T-slot table and foot pedal",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-hp120-straighten": {
+  "src": "tools/src-images/tubend/tb-hp120-straighten.jpg",
+  "alt": "Straightening a plate between the hardened support columns of the HP 120 / HP 150",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-tb34": {
+  "src": "tools/src-images/tubend/tb-tb34.png",
+  "alt": "Tubend TB 34 electric mandrel-less pipe bender with digital angle readout",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-tb34-parts": {
+  "src": "tools/src-images/tubend/tb-tb34-parts.jpg",
+  "alt": "Street furniture, bike racks and serpentine tube bent on the TB 34",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-tb34-barrier": {
+  "src": "tools/src-images/tubend/tb-tb34-barrier.jpg",
+  "alt": "Safety barrier bent from pipe on the TB 34",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-tb42": {
+  "src": "tools/src-images/tubend/tb-tb42.png",
+  "alt": "Tubend TB 42 hydraulic mandrel-less pipe bender",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-tb42-part": {
+  "src": "tools/src-images/tubend/tb-tb42-part.jpg",
+  "alt": "Pipe bent to a U on the TB 42",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-tb42-dies": {
+  "src": "tools/src-images/tubend/tb-tb42-dies.jpg",
+  "alt": "TB 42 pipe bending dies on the top plate",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-tb42-panel": {
+  "src": "tools/src-images/tubend/tb-tb42-panel.jpg",
+  "alt": "TB 42 control panel with digital readout, emergency stop and joystick",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "tb-wp300": {
+  "src": "tools/src-images/tubend/tb-wp300.png",
+  "alt": "Tubend WP 300 tilting welding positioner with slotted turntable and control box",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-wp100": {
+  "src": "tools/src-images/tubend/tb-wp100.png",
+  "alt": "Tubend WP 100 compact tilting welding positioner",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tb-wp300-plate": {
+  "src": "tools/src-images/tubend/tb-wp300-plate.png",
+  "alt": "WP 300 with a custom perforated work plate for welding fixtures",
+  "section": "tubend",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "tubend-logo": {
+  "src": "tools/src-images/tubend-logo.png",
+  "alt": "Tubend",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false
+ },
+ "video-pxJvddrvYeg": {
+  "src": "/home/claude/gms-site/yt/pxJvddrvYeg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-D9CKQFKn78E": {
+  "src": "/home/claude/gms-site/yt/D9CKQFKn78E.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-njyMkBwLGQk": {
+  "src": "/home/claude/gms-site/yt/njyMkBwLGQk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-RgLqznLX8QI": {
+  "src": "/home/claude/gms-site/yt/RgLqznLX8QI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

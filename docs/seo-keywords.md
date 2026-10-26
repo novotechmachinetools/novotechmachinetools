@@ -299,3 +299,22 @@ Placement, per the user's brief and the section rule (> 6 families / 6,000 words
 - Not transferred, per the brief: CSM laser cutting (LS150 / LS208 / LS220 / LS360) and riveting (CS-102 / 150A / 180A).
 Videos: 56 of NovoTech's own channel videos of CSM machines (ids in tools/csm_vids.txt), "CSM tube bender company
 introduction" as the Inside-the-factory video on the CSM and wire pages.
+
+## Tubend (Oct 26) — task #14
+
+Search Console (Jun 2025 – Oct 2026) for the old horizontal-press-brake page: 14,673 impressions, avg. position 22.9 —
+"horizontal press brake" 1,782 impressions (pos. 17), "horizontal hydraulic press" 1,370, "horizontal hydraulic presses"
+988, "horizontal hydraulic press machine" 810, "horizontal press brakes" 737.  Ubersuggest Canada: "welding positioner"
+390 / month (SD 14), "rotary welding positioner" 90, "hydraulic pipe bender" 390 (GSC: "hydraulic pipe benders" 1,340
+impressions at pos. 44, "hydraulic pipe bending machine" 435), "electric pipe bender" 90.
+Placement, per the brief (only HP 10 – HP 150, WP 100 / WP 300, TB 34 / TB 42):
+- horizontal-press-brake (the old URL, kept) — "Horizontal Press Brakes, Hydraulic, 11 – 165 Ton | NovoTech"; h1 adds
+  "NC hydraulic horizontal presses" for the horizontal-hydraulic-press queries.  Two families: HP 10 – HP 100, HP 120 / 150.
+- welding-positioners (new top-level section after Plate bevelers) — "Welding Positioners, Tilting, 220 – 661 lb |
+  NovoTech".
+- TB 34 / TB 42 as a Tubend group on rotary-draw-tube-benders, retitled "Rotary Draw & Hydraulic Pipe Benders to Ø3″ |
+  NovoTech" for "hydraulic pipe bender"; menu label "Rotary draw & hydraulic benders".
+- Tubend is shown under its own brand (the machines carry the Tubend logo; the old site's Tubend PDF did too).  The rest of
+  the Tubend range — MHB, roller conveyors, PK / HPK, SPB, TT notchers, BP polisher, AC / DK saws — is not on the site.
+Videos: four of NovoTech's own videos of the Tubend HP; the channel's HP 22 / HP 40 videos show a different, cream-coloured
+press and are not used.  No factory video, so no Inside-the-factory section on the two pages.

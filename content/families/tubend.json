@@ -1,0 +1,603 @@
+{
+ "order": [
+  "tubend-hp",
+  "tubend-hp-heavy",
+  "tubend-wp"
+ ],
+ "families": {
+  "tubend-hp": {
+   "id": "tubend-hp",
+   "brand": "tubend",
+   "name": "HP 10 – HP 100 NC hydraulic horizontal presses, 11 – 110 US ton",
+   "short": "HP 10 – HP 100",
+   "models_label": "HP 10 · HP 20 · HP 40 · HP 60 · HP 80 · HP 100 · 6 models",
+   "summary": "A horizontal press brake lays the press on its side: a hydraulic ram pushes the tool across a heavy steel table at bench height, so flat bar, angle, pipe, solid bar and busbar are bent, punched, sheared or straightened with the part lying flat in front of the operator. Tubend's HP series runs from the 11-ton HP 10 for 5-7/8″ × 1/4″ flat bar to the 110-ton HP 100 for 11-13/16″ × 15/16″, every model with an NC touch-screen on a control stand — manual, automatic and recipe modes — a foot pedal, induction-hardened support pins and an ergonomic tool table for quick tool changes.",
+   "headline": "11 – 110 US ton · flat bar to 11-13/16″ × 15/16″ · NC touch-screen with recipes",
+   "features": [
+    "NC control stand with touch-screen: manual mode between set limits, automatic serial modes and recipe mode for multi-step parts",
+    "Hydraulic speed and pressure adjustment; ram stroke 7.9″ (HP 10, HP 20) or 11.8″ (HP 40 – HP 100)",
+    "Ergonomic tool table at bench height; easy tool change; induction-hardened support pins",
+    "Easily adjustable back stop; foot pedal",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Automatic back gauge — servo-driven NC with pull-back, 3.3, 6.6 or 9.8 ft (1, 2 or 3 m) long, for series parts",
+    "Bending tools: Radius punch with v-die, press brake punch with multi-v die, bolt punch with multi-v die, narrow v-die, two-sided v-bending tool, spring-loaded u-bending tool",
+    "Pipe and bar tools: mandrel-less pipe bending tool, solid bar and thick-wall pipe bending tool, pipe end reduction and expansion tool, profile bending tool, round bar bending tool, pipe clamping tool",
+    "Notching, punching, shearing and straightening tools; busbar shearing, punching, bending and twisting tools",
+    "Custom dies made to your part",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tb-hp10",
+    "tb-hp80",
+    "tb-hp-backgauge",
+    "tb-hp-screen-manual",
+    "tb-hp-screen-recipe",
+    "tb-hp-tool-vdie",
+    "tb-hp-tool-pipe",
+    "tb-hp-tool-pipe-end",
+    "tb-hp-tool-radius",
+    "tb-hp-tool-busbar",
+    "tb-hp-parts",
+    "tb-hp-busbar-parts"
+   ],
+   "videos": [
+    {
+     "id": "pxJvddrvYeg",
+     "title": "HP 40 NC horizontal press — instruction",
+     "duration": "PT2M49S",
+     "thumb": "video-pxJvddrvYeg"
+    },
+    {
+     "id": "D9CKQFKn78E",
+     "title": "HP multi-function horizontal press brake with NC control",
+     "duration": "PT20M8S",
+     "thumb": "video-D9CKQFKn78E"
+    },
+    {
+     "id": "njyMkBwLGQk",
+     "title": "HP horizontal press — straightening tool",
+     "duration": "PT0M42S",
+     "thumb": "video-njyMkBwLGQk"
+    },
+    {
+     "id": "RgLqznLX8QI",
+     "title": "HP 10 horizontal press brake, 11 US ton",
+     "duration": "PT2M47S",
+     "thumb": "video-RgLqznLX8QI"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HP 10 – HP 100",
+      "sub": "NC hydraulic horizontal presses",
+      "models": [
+       "HP 10",
+       "HP 20",
+       "HP 40",
+       "HP 60",
+       "HP 80",
+       "HP 100"
+      ],
+      "rows": [
+       {
+        "label": "Max. force",
+        "sub": "at 2,900 psi (200 bar)",
+        "cells": [
+         "11 US ton (10 t)",
+         "22 US ton (20 t)",
+         "44 US ton (40 t)",
+         "55 US ton (50 t)",
+         "88 US ton (80 t)",
+         "110 US ton (100 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Flat bar bending capacity",
+        "sub": "width × thickness, mild steel",
+        "cells": [
+         "5-7/8″ × 1/4″ (150 × 6 mm)",
+         "7-7/8″ × 3/8″ (200 × 10 mm)",
+         "9-7/8″ × 5/8″ (250 × 16 mm)",
+         "11-13/16″ × 5/8″ (300 × 16 mm)",
+         "11-13/16″ × 13/16″ (300 × 20 mm)",
+         "11-13/16″ × 15/16″ (300 × 24 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Maximum stroke",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tool height",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working / return speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "3 HP (2.2 kW)",
+         "5.4 HP (4 kW)",
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "35 × 18 × 46″ (900 × 450 × 1,160 mm)",
+         "47 × 22 × 48″ (1,200 × 550 × 1,230 mm)",
+         "51 × 24 × 51″ (1,300 × 600 × 1,300 mm)",
+         "51 × 24 × 55″ (1,300 × 600 × 1,400 mm)",
+         "63 × 33 × 63″ (1,600 × 850 × 1,600 mm)",
+         "63 × 33 × 67″ (1,600 × 850 × 1,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "882 lb (400 kg)",
+         "1,411 lb (640 kg)",
+         "2,205 lb (1,000 kg)",
+         "3,748 lb (1,700 kg)",
+         "4,630 lb (2,100 kg)",
+         "5,401 lb (2,450 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HP 10",
+      "glance": [
+       "11 US ton (10 t)",
+       "5-7/8″ × 1/4″ (150 × 6 mm)",
+       "7.9″ (200 mm)",
+       "1.5 HP (1.1 kW)",
+       "882 lb (400 kg)"
+      ]
+     },
+     {
+      "name": "HP 20",
+      "glance": [
+       "22 US ton (20 t)",
+       "7-7/8″ × 3/8″ (200 × 10 mm)",
+       "7.9″ (200 mm)",
+       "3 HP (2.2 kW)",
+       "1,411 lb (640 kg)"
+      ]
+     },
+     {
+      "name": "HP 40",
+      "glance": [
+       "44 US ton (40 t)",
+       "9-7/8″ × 5/8″ (250 × 16 mm)",
+       "11.8″ (300 mm)",
+       "5.4 HP (4 kW)",
+       "2,205 lb (1,000 kg)"
+      ]
+     },
+     {
+      "name": "HP 60",
+      "glance": [
+       "55 US ton (50 t)",
+       "11-13/16″ × 5/8″ (300 × 16 mm)",
+       "11.8″ (300 mm)",
+       "7.4 HP (5.5 kW)",
+       "3,748 lb (1,700 kg)"
+      ]
+     },
+     {
+      "name": "HP 80",
+      "glance": [
+       "88 US ton (80 t)",
+       "11-13/16″ × 13/16″ (300 × 20 mm)",
+       "11.8″ (300 mm)",
+       "10 HP (7.5 kW)",
+       "4,630 lb (2,100 kg)"
+      ]
+     },
+     {
+      "name": "HP 100",
+      "glance": [
+       "110 US ton (100 t)",
+       "11-13/16″ × 15/16″ (300 × 24 mm)",
+       "11.8″ (300 mm)",
+       "15 HP (11 kW)",
+       "5,401 lb (2,450 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "capacity",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending capacity is flat bar bent the hard way in mild steel with the standard V tooling; force is at the pressure given. Metric values in brackets are the manufacturer's figures; dimensions L × W × H, weight net."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
+    "label": "Download the Tubend press, pipe bender & positioner brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "tubend-hp"
+  },
+  "tubend-hp-heavy": {
+   "id": "tubend-hp-heavy",
+   "brand": "tubend",
+   "name": "HP 120 · HP 150 heavy-duty horizontal presses, 132 – 165 US ton",
+   "short": "HP 120 · HP 150",
+   "models_label": "HP 120 · HP 150 · 2 models",
+   "summary": "The heavy horizontal presses for straightening and bending big sections: 132 and 165 US tons on a 19.7″ stroke, hardened Ø5-1/8″ and Ø5-7/8″ support columns between which shafts, beams and heavy bar are straightened, a T-slot clamping table with heat-treated support holes for tools and attachments, and an upper brace that keeps the frame from flexing. 19-11/16″ × 1-9/16″ flat bar on the HP 150; NC control stand and foot pedal as on the HP series, and dies designed and made for the job.",
+   "headline": "132 – 165 US ton · 19.7″ stroke · flat bar to 19-11/16″ × 1-9/16″ · T-slot table",
+   "features": [
+    "NC control unit with control stand and foot pedal; hydraulic speed and pressure adjustment",
+    "Hardened support columns, Ø5-1/8″ (HP 120) and Ø5-7/8″ (HP 150), for straightening between columns",
+    "Multiple heat-treated support holes for straightening and for mounting tools and attachments",
+    "T-slot clamping table for securing tools and dies; upper support brace prevents flexing",
+    "Robust steel body; high-profile ergonomic design for large and long workpieces",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom die design and manufacturing for the job",
+    "Special requests and revisions on request",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tb-hp120",
+    "tb-hp120-side",
+    "tb-hp120-straighten"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HP 120 · HP 150",
+      "sub": "Heavy-duty horizontal presses with T-slot table and support columns",
+      "models": [
+       "HP 120",
+       "HP 150"
+      ],
+      "rows": [
+       {
+        "label": "Max. force",
+        "sub": "at 3,340 psi (230 bar)",
+        "cells": [
+         "132 US ton (120 t)",
+         "165 US ton (150 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Flat bar bending capacity",
+        "sub": "width × thickness, mild steel",
+        "cells": [
+         "19-11/16″ × 1-3/16″ (500 × 30 mm)",
+         "19-11/16″ × 1-9/16″ (500 × 40 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Maximum piston stroke",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tool height",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)",
+         "19.7″ (500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Support column diameter",
+        "sub": "",
+        "cells": [
+         "Ø5-1/8″ (130 mm)",
+         "Ø5-7/8″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working / return speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "10 HP (7.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "109 × 69 × 50″ (2,760 × 1,750 × 1,275 mm)",
+         "117 × 69 × 58″ (2,960 × 1,750 × 1,475 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,937 lb (3,600 kg)",
+         "9,480 lb (4,300 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HP 120",
+      "glance": [
+       "132 US ton (120 t)",
+       "19-11/16″ × 1-3/16″ (500 × 30 mm)",
+       "19.7″ (500 mm)",
+       "7.4 HP (5.5 kW)",
+       "7,937 lb (3,600 kg)"
+      ]
+     },
+     {
+      "name": "HP 150",
+      "glance": [
+       "165 US ton (150 t)",
+       "19-11/16″ × 1-9/16″ (500 × 40 mm)",
+       "19.7″ (500 mm)",
+       "10 HP (7.5 kW)",
+       "9,480 lb (4,300 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "capacity",
+     "stroke",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending capacity is flat bar bent the hard way in mild steel with the standard V tooling; force is at the pressure given. Metric values in brackets are the manufacturer's figures; dimensions L × W × H, weight net."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
+    "label": "Download the Tubend press, pipe bender & positioner brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "tubend-hp"
+  },
+  "tubend-wp": {
+   "id": "tubend-wp",
+   "brand": "tubend",
+   "name": "WP 100 · WP 300 tilting welding positioners, 220 – 661 lb",
+   "short": "WP 100 · WP 300",
+   "models_label": "WP 100 · WP 300 · 2 models",
+   "summary": "A welding positioner turns the part under the torch, so a round weld is laid in one continuous pass in the flat position instead of being stopped and restarted around the part. Tubend's WP 100 carries 220 lb on a Ø13-3/4″ table that tilts 120°; the WP 300 carries 661 lb on a Ø18-7/8″ table that tilts 90°. The table turns 360° at 1 to 5.5 rpm, set on the control box and run from the standard foot pedal; T-slots take clamps and fixtures, and a Ø6-1/4″ or Ø7-7/8″ lathe chuck or a custom fixture plate (WP 300) is available. Single-phase 220 V.",
+   "headline": "220 – 661 lb · 360° at 1 – 5.5 rpm · 90 – 120° tilt · foot pedal",
+   "features": [
+    "Adjustable tilt angle for easy positioning of the part — 120° (WP 100) or 90° (WP 300), right or left",
+    "Adjustable turning speed, 1 – 5.5 rpm, for a steady travel speed under the torch",
+    "Standard foot pedal; control box with speed and direction",
+    "T-slotted turntable (M10) for clamps and fixtures",
+    "Runs on single-phase 220 V"
+   ],
+   "optional": [
+    "Ø6-1/4″ (160 mm) or Ø7-7/8″ (200 mm) 3-jaw lathe chuck",
+    "Custom work plate for welding fixtures (WP 300)"
+   ],
+   "volt_note": "Single-phase 220 V supply — no three-phase power needed.",
+   "images": [
+    "tb-wp300",
+    "tb-wp100",
+    "tb-wp300-plate"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WP 100 · WP 300",
+      "sub": "Tilting welding positioners",
+      "models": [
+       "WP 100",
+       "WP 300"
+      ],
+      "rows": [
+       {
+        "label": "Nominal load capacity",
+        "sub": "table horizontal",
+        "cells": [
+         "220 lb (100 kg)",
+         "661 lb (300 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Load capacity, table tilted",
+        "sub": "table vertical",
+        "cells": [
+         "110 lb (50 kg)",
+         "331 lb (150 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table diameter",
+        "sub": "",
+        "cells": [
+         "Ø13-3/4″ (350 mm)",
+         "Ø18-7/8″ (480 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table rotation",
+        "sub": "",
+        "cells": [
+         "360° · 1 – 5.5 rpm, variable",
+         "360° · 1 – 5.5 rpm, variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tilt",
+        "sub": "",
+        "cells": [
+         "120°, right – left",
+         "90°, right – left"
+        ],
+        "key": true
+       },
+       {
+        "label": "Turntable motor",
+        "sub": "",
+        "cells": [
+         "0.33 HP (0.25 kW)",
+         "0.5 HP (0.37 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "220 V 1-phase",
+         "220 V 1-phase"
+        ],
+        "key": false
+       },
+       {
+        "label": "T-slots",
+        "sub": "",
+        "cells": [
+         "M10 × 12",
+         "M10 × 12"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "22 × 26 × 15″ (550 × 650 × 370 mm)",
+         "25 × 29 × 22″ (640 × 740 × 550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "99 lb (45 kg)",
+         "209 lb (95 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WP 100",
+      "glance": [
+       "220 lb (100 kg)",
+       "Ø13-3/4″ (350 mm)",
+       "360° · 1 – 5.5 rpm, variable",
+       "120°, right – left",
+       "99 lb (45 kg)"
+      ]
+     },
+     {
+      "name": "WP 300",
+      "glance": [
+       "661 lb (300 kg)",
+       "Ø18-7/8″ (480 mm)",
+       "360° · 1 – 5.5 rpm, variable",
+       "90°, right – left",
+       "209 lb (95 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "table",
+     "rotation",
+     "tilt",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Nominal load is a centred part on the horizontal table; with the table tilted the WP 100 carries 110 lb and the WP 300 331 lb. Metric values in brackets are the manufacturer's figures."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
+    "label": "Download the Tubend press, pipe bender & positioner brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "tubend-wp"
+  }
+ }
+}

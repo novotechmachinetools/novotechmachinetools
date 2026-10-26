@@ -17,7 +17,7 @@ DIST = os.path.join(ROOT, "dist")
 OLD_SITE = {
     "products", "about-us", "contact-us", "brochures", "metal-fabricating-articles", "privacy-policy",
     "plate-roller-bender",
-    "folder-sheet-metal-brake", "horizontal-press-brake",
+    "folder-sheet-metal-brake",
     "plate-beveler",
     "lock-former", "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
     "aluminum-and-pvc-upcut-saws",

@@ -275,7 +275,7 @@
        "href": "nc-tube-benders.html"
       },
       {
-       "label": "Rotary draw tube benders",
+       "label": "Rotary draw & hydraulic benders",
        "href": "rotary-draw-tube-benders.html"
       },
       {
@@ -305,6 +305,10 @@
     {
      "label": "Plate bevelers",
      "href": "plate-beveler.html"
+    },
+    {
+     "label": "Welding positioners",
+     "href": "welding-positioners.html"
     },
     {
      "label": "Circle cutters & flanging",
@@ -551,6 +555,15 @@
    "line": "Made in Taiwan",
    "logo": "csm-logo",
    "tagline": "Made in Taiwan since 1982 — CSM CNC tube benders, end formers, saws and wire benders, sold, installed and supported in Canada by NovoTech."
+  },
+  "tubend": {
+   "name": "Tubend",
+   "manufacturer": "Tubend Machine",
+   "country": "Turkey",
+   "country_code": "TR",
+   "line": "Made in Turkey",
+   "logo": "tubend-logo",
+   "tagline": "Made in Bursa, Turkey — Tubend hydraulic horizontal presses, pipe benders and welding positioners, sold, installed and supported in Canada by NovoTech."
   }
  }
 }

@@ -284,3 +284,13 @@ tools/csm_photos.py:
   LaMa-filled (`inpaint`).  Crops are upscaled 2x with Real-ESRGAN.
 - Machine photos are cut out by BiRefNet in make_images; parts samples and details stay rectangular.  The CSM logo
   (tools/src-images/csm-logo.png) was keyed from the catalogue cover at 4x super-resolution.
+
+### Tubend photos (Oct 26)
+
+tools/tubend_photos.py: the machine cut-outs are Tubend's own clean PNGs from tubend.com.tr (HP 10, HP 80, HP 120 / 150,
+TB 34, TB 42, WP 100, WP 300) — matted on white, upscaled 2x with Real-ESRGAN where smaller than ~1,200 px, alpha resized
+with them.  The cut-outs of NovoTech's earlier Tubend brochure had white halos and floor patches, so only its tooling
+photos, NC screens, application photos and parts collages are used (the parts with their alpha cleaned: haze below 40 and an
+edge strip removed).  The HP with automatic back gauge comes from the Tubend General Catalogue 2026 on white (its soft mask
+is fully opaque) and is cut out by BiRefNet in make_images.  The Tubend logo (tools/src-images/tubend-logo.png) was keyed
+from the catalogue cover rendered at 600 dpi.
