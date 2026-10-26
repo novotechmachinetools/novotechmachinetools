@@ -128,6 +128,8 @@ Redirect 301 "/files/pipe-polishing-and-brushing-machine-GECAM.pdf" "/pipe-sandi
 Redirect 301 "/files/pipe-and-tube-deburring-machine-GECAM.pdf" "/pipe-sanding-polishing-machines"
 Redirect 301 "/files/Pipe-and-tube-Polisher-and-sander-,-grinder-BT.pdf" "/pipe-sanding-polishing-machines"
 Redirect 301 "/files/pipe-centerless-sander-TP-120.pdf" "/pipe-sanding-polishing-machines"
+# old Plastmak brochure → the NovoTech Plastmak brochure
+Redirect 301 "/files/Aluminum-and-PVC-processing-machines---PLASTMAK---MADE-IN-TURKEY_opt.pdf" "/files/NovoTech-Plastmak-Window-Machinery-2026.pdf"
 
 # ---- Compression -------------------------------------------------------------
 <IfModule mod_brotli.c>

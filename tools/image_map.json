@@ -19328,5 +19328,1279 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "pm-401": {
+  "src": "tools/src-images/plastmak/pm-401.webp",
+  "alt": "Plastmak SÇ 401 aluminum and PVC upcut saw, Ø17-11/16″ (450 mm) blade",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-401-table": {
+  "src": "tools/src-images/plastmak/pm-401-table.jpg",
+  "alt": "SÇ 401 turntable with pneumatic vertical and horizontal clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-401-scale": {
+  "src": "tools/src-images/plastmak/pm-401-scale.jpg",
+  "alt": "SÇ 401 turntable, 0° – 180° with quick stops",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-401-guard": {
+  "src": "tools/src-images/plastmak/pm-401-guard.jpg",
+  "alt": "SÇ 401 protective cover over the cutting area",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-402": {
+  "src": "tools/src-images/plastmak/pm-402.webp",
+  "alt": "Plastmak SÇ 402 automatic upcut saw, Ø21-5/8″ (550 mm) blade",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-403": {
+  "src": "tools/src-images/plastmak/pm-403.webp",
+  "alt": "Plastmak SÇ 403 automatic upcut saw, Ø23-5/8″ / Ø25-9/16″ (600 / 650 mm) blade",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-402-table": {
+  "src": "tools/src-images/plastmak/pm-402-table.jpg",
+  "alt": "SÇ 402 table: pneumatic clamps, angle scale and roller conveyor",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-402-blade": {
+  "src": "tools/src-images/plastmak/pm-402-blade.jpg",
+  "alt": "SÇ 402 blade rising through the table",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-403-panel": {
+  "src": "tools/src-images/plastmak/pm-403-panel.jpg",
+  "alt": "SÇ 403 control panel and cutting table",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-403-clamps": {
+  "src": "tools/src-images/plastmak/pm-403-clamps.jpg",
+  "alt": "SÇ 403 horizontal clamp and roller conveyor",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-403-blade": {
+  "src": "tools/src-images/plastmak/pm-403-blade.jpg",
+  "alt": "SÇ 403 blade at 45°, profile clamped from above and the side",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-403-guard": {
+  "src": "tools/src-images/plastmak/pm-403-guard.jpg",
+  "alt": "SÇ 403 front-rear moving guard",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-450": {
+  "src": "tools/src-images/plastmak/pm-450.webp",
+  "alt": "Plastmak SÇ 450 shutter box and lamella saw, Ø21-5/8″ (550 mm) blade",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-450-clamps": {
+  "src": "tools/src-images/plastmak/pm-450-clamps.jpg",
+  "alt": "SÇ 450 clamping pistons matched to the shutter box",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-450-blade": {
+  "src": "tools/src-images/plastmak/pm-450-blade.jpg",
+  "alt": "SÇ 450 cutting a roller-shutter box",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-450-roller": {
+  "src": "tools/src-images/plastmak/pm-450-roller.jpg",
+  "alt": "SÇ 450 pressure roller holding a pack of lamellas",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-450-table": {
+  "src": "tools/src-images/plastmak/pm-450-table.jpg",
+  "alt": "SÇ 450 cutting table and controls",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-400s": {
+  "src": "tools/src-images/plastmak/pm-400s.webp",
+  "alt": "Plastmak SÇ 400S double-head saw, 2 × Ø19-11/16″ (500 mm) blades",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-4000s": {
+  "src": "tools/src-images/plastmak/pm-4000s.webp",
+  "alt": "Plastmak SÇ 4000S servo double-head saw, 2 × Ø23-5/8″ (600 mm) blades",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-400s-head": {
+  "src": "tools/src-images/plastmak/pm-400s-head.jpg",
+  "alt": "SÇ 400S saw head with guard and profile support",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-400s-console": {
+  "src": "tools/src-images/plastmak/pm-400s-console.jpg",
+  "alt": "SÇ 400S control console: touch panel, USB and Ethernet",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-400s-vise": {
+  "src": "tools/src-images/plastmak/pm-400s-vise.jpg",
+  "alt": "SÇ 400S vise at the saw head",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-400s-support": {
+  "src": "tools/src-images/plastmak/pm-400s-support.jpg",
+  "alt": "SÇ 400S automatic support arm for long profiles",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-400s-guard": {
+  "src": "tools/src-images/plastmak/pm-400s-guard.jpg",
+  "alt": "SÇ 400S short-piece cutting rail guard",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4000s-heads": {
+  "src": "tools/src-images/plastmak/pm-4000s-heads.jpg",
+  "alt": "SÇ 4000S heads tilted to 45° inward",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4000s-tilt": {
+  "src": "tools/src-images/plastmak/pm-4000s-tilt.jpg",
+  "alt": "SÇ 4000S head tilting between 90° and 45°",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4000s-console": {
+  "src": "tools/src-images/plastmak/pm-4000s-console.jpg",
+  "alt": "SÇ 4000S head and 10″ touch panel",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4000s-conveyor": {
+  "src": "tools/src-images/plastmak/pm-4000s-conveyor.jpg",
+  "alt": "SÇ 4000S moving conveyor between the heads",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4000s-clamps": {
+  "src": "tools/src-images/plastmak/pm-4000s-clamps.jpg",
+  "alt": "SÇ 4000S top clamps for precise cuts",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4000s-slide": {
+  "src": "tools/src-images/plastmak/pm-4000s-slide.jpg",
+  "alt": "SÇ 4000S linear slide of the moving head",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-301": {
+  "src": "tools/src-images/plastmak/pm-301.webp",
+  "alt": "Plastmak SÇ 301 glazing bead saw",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-301s": {
+  "src": "tools/src-images/plastmak/pm-301s.webp",
+  "alt": "Plastmak SÇ 301S mouldless glazing bead saw",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-301-mould": {
+  "src": "tools/src-images/plastmak/pm-301-mould.jpg",
+  "alt": "SÇ 301 adjustable universal mould",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-301-saws": {
+  "src": "tools/src-images/plastmak/pm-301-saws.jpg",
+  "alt": "SÇ 301 twin saws cutting the bead at 45°",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-301s-wheel": {
+  "src": "tools/src-images/plastmak/pm-301s-wheel.jpg",
+  "alt": "SÇ 301S wheel holding 12 bead profiles",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-301s-clamps": {
+  "src": "tools/src-images/plastmak/pm-301s-clamps.jpg",
+  "alt": "SÇ 301S pneumatic bead clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-301s-twin": {
+  "src": "tools/src-images/plastmak/pm-301s-twin.jpg",
+  "alt": "SÇ 301S cutting two beads at once",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-301s-top": {
+  "src": "tools/src-images/plastmak/pm-301s-top.jpg",
+  "alt": "SÇ 301S cutting head from above",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-431": {
+  "src": "tools/src-images/plastmak/pm-431.webp",
+  "alt": "Plastmak SÇ 431 overhead miter saw, Ø15-3/4″ (400 mm) blade",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-441": {
+  "src": "tools/src-images/plastmak/pm-441.webp",
+  "alt": "Plastmak SÇ 441 bench miter saw, Ø11-13/16″ (300 mm) blade",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-451": {
+  "src": "tools/src-images/plastmak/pm-451.webp",
+  "alt": "Plastmak SÇ 451 bench miter saw, Ø15-3/4″ (400 mm) blade",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-431-table": {
+  "src": "tools/src-images/plastmak/pm-431-table.jpg",
+  "alt": "SÇ 431 table, saw guard and pneumatic clamp",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-431-head": {
+  "src": "tools/src-images/plastmak/pm-431-head.jpg",
+  "alt": "SÇ 431 saw head and roller conveyor",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-100gp": {
+  "src": "tools/src-images/plastmak/pm-100gp.webp",
+  "alt": "Plastmak SÇ 100 Gold Plus 4-corner PVC welding machine",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-100gp-full": {
+  "src": "tools/src-images/plastmak/pm-100gp-full.webp",
+  "alt": "Plastmak SÇ 100 Gold Plus Full 4-corner welding and cleaning line",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-gp-head": {
+  "src": "tools/src-images/plastmak/pm-gp-head.jpg",
+  "alt": "Gold Plus welding head on its linear rail",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-heads": {
+  "src": "tools/src-images/plastmak/pm-gp-heads.jpg",
+  "alt": "Gold Plus heads and automatic carriers",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-top": {
+  "src": "tools/src-images/plastmak/pm-gp-top.jpg",
+  "alt": "Gold Plus: the four heads seen from above",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-press": {
+  "src": "tools/src-images/plastmak/pm-gp-press.jpg",
+  "alt": "Gold Plus welding head with its top presses",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-heater": {
+  "src": "tools/src-images/plastmak/pm-gp-heater.jpg",
+  "alt": "Gold Plus heating plate and clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-console": {
+  "src": "tools/src-images/plastmak/pm-gp-console.jpg",
+  "alt": "Gold Plus touch screen and barcode scanner",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-robot": {
+  "src": "tools/src-images/plastmak/pm-gp-robot.jpg",
+  "alt": "Gold Plus Full robotic carrier arm taking a welded frame to the cleaner",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-cleaner": {
+  "src": "tools/src-images/plastmak/pm-gp-cleaner.jpg",
+  "alt": "Gold Plus Full CNC corner cleaning station",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-gp-corner": {
+  "src": "tools/src-images/plastmak/pm-gp-corner.jpg",
+  "alt": "Welded corners of a laminated and a white PVC frame",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-100": {
+  "src": "tools/src-images/plastmak/pm-100.webp",
+  "alt": "Plastmak SÇ 100 double-head PVC welding machine",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-101": {
+  "src": "tools/src-images/plastmak/pm-101.webp",
+  "alt": "Plastmak SÇ 101 single-head PVC welding machine",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-100-head": {
+  "src": "tools/src-images/plastmak/pm-100-head.jpg",
+  "alt": "SÇ 100 welding head",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-100-side": {
+  "src": "tools/src-images/plastmak/pm-100-side.jpg",
+  "alt": "SÇ 100 head and control panel",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-100-heater": {
+  "src": "tools/src-images/plastmak/pm-100-heater.jpg",
+  "alt": "SÇ 100 heating plate between the profile clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-100-panel": {
+  "src": "tools/src-images/plastmak/pm-100-panel.jpg",
+  "alt": "SÇ 100 operation panel",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-100-guide": {
+  "src": "tools/src-images/plastmak/pm-100-guide.jpg",
+  "alt": "SÇ 100 linear guide of the moving head",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-101-head": {
+  "src": "tools/src-images/plastmak/pm-101-head.jpg",
+  "alt": "SÇ 101 head with individual top clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-101-plates": {
+  "src": "tools/src-images/plastmak/pm-101-plates.jpg",
+  "alt": "SÇ 101 moulds and heating plate",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000": {
+  "src": "tools/src-images/plastmak/pm-6000.webp",
+  "alt": "Plastmak SÇ 6000 semi-automatic CNC corner cleaner",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-6000s": {
+  "src": "tools/src-images/plastmak/pm-6000s.webp",
+  "alt": "Plastmak SÇ 6000S CNC corner cleaning machine",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-6000-panel": {
+  "src": "tools/src-images/plastmak/pm-6000-panel.jpg",
+  "alt": "SÇ 6000 touch panel and profile carry tables",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000-saw": {
+  "src": "tools/src-images/plastmak/pm-6000-saw.jpg",
+  "alt": "SÇ 6000 Ø9-13/16″ (250 mm) saw behind its guard",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000-head": {
+  "src": "tools/src-images/plastmak/pm-6000-head.jpg",
+  "alt": "SÇ 6000 high-frequency spindle with the cleaning saw",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000-inside": {
+  "src": "tools/src-images/plastmak/pm-6000-inside.jpg",
+  "alt": "Inside the SÇ 6000: tools and profile stops",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000s-tools": {
+  "src": "tools/src-images/plastmak/pm-6000s-tools.jpg",
+  "alt": "SÇ 6000S tool group",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000s-head": {
+  "src": "tools/src-images/plastmak/pm-6000s-head.jpg",
+  "alt": "SÇ 6000S spindle and saw on the servo axes",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000s-inside": {
+  "src": "tools/src-images/plastmak/pm-6000s-inside.jpg",
+  "alt": "Inside the SÇ 6000S",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000s-scraper": {
+  "src": "tools/src-images/plastmak/pm-6000s-scraper.jpg",
+  "alt": "SÇ 6000S scraping tools",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-6000s-pendant": {
+  "src": "tools/src-images/plastmak/pm-6000s-pendant.jpg",
+  "alt": "SÇ 6000S handwheel for setting the axes",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-601": {
+  "src": "tools/src-images/plastmak/pm-601.webp",
+  "alt": "Plastmak SÇ 601 corner cleaning machine with 3 knives",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-601-inside": {
+  "src": "tools/src-images/plastmak/pm-601-inside.jpg",
+  "alt": "SÇ 601 knife stack and profile stops",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-601-cutter": {
+  "src": "tools/src-images/plastmak/pm-601-cutter.jpg",
+  "alt": "SÇ 601 knife cleaning the corner of a laminated profile",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-601-scraper": {
+  "src": "tools/src-images/plastmak/pm-601-scraper.jpg",
+  "alt": "SÇ 601 bearing-guided scraper on the profile surface",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4550": {
+  "src": "tools/src-images/plastmak/pm-4550.webp",
+  "alt": "Plastmak SÇ 4550 9-axis aluminum and PVC profile machining and cutting centre",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-4550-spindles": {
+  "src": "tools/src-images/plastmak/pm-4550-spindles.jpg",
+  "alt": "SÇ 4550: the ten air-cooled spindles",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4550-heads": {
+  "src": "tools/src-images/plastmak/pm-4550-heads.jpg",
+  "alt": "SÇ 4550 spindle heads around the profile",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4550-saw": {
+  "src": "tools/src-images/plastmak/pm-4550-saw.jpg",
+  "alt": "SÇ 4550 Ø21-5/8″ (550 mm) servo cutting unit",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4550-printer": {
+  "src": "tools/src-images/plastmak/pm-4550-printer.jpg",
+  "alt": "SÇ 4550 barcode printer and UPS",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4550-outfeed": {
+  "src": "tools/src-images/plastmak/pm-4550-outfeed.jpg",
+  "alt": "SÇ 4550 outlet conveyor with belt system",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-4550-station": {
+  "src": "tools/src-images/plastmak/pm-4550-station.jpg",
+  "alt": "SÇ 4550 waiting station for processed profiles",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000": {
+  "src": "tools/src-images/plastmak/pm-5000.webp",
+  "alt": "Plastmak SÇ 5000 3-axis CNC drilling and milling machine for PVC",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-5000s": {
+  "src": "tools/src-images/plastmak/pm-5000s.webp",
+  "alt": "Plastmak SÇ 5000S 3-axis CNC drilling and milling machine for aluminum and PVC",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-5000-screen": {
+  "src": "tools/src-images/plastmak/pm-5000-screen.jpg",
+  "alt": "SÇ 5000 touch screen",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000-spindles": {
+  "src": "tools/src-images/plastmak/pm-5000-spindles.jpg",
+  "alt": "SÇ 5000 spindles and profile clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000-inside": {
+  "src": "tools/src-images/plastmak/pm-5000-inside.jpg",
+  "alt": "Inside the SÇ 5000",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000-heads": {
+  "src": "tools/src-images/plastmak/pm-5000-heads.jpg",
+  "alt": "SÇ 5000 spindle motors on the servo axes",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000s-screen": {
+  "src": "tools/src-images/plastmak/pm-5000s-screen.jpg",
+  "alt": "SÇ 5000S 19″ Windows screen with DXF drawing",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000s-console": {
+  "src": "tools/src-images/plastmak/pm-5000s-console.jpg",
+  "alt": "SÇ 5000S working area and screen",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000s-spindles": {
+  "src": "tools/src-images/plastmak/pm-5000s-spindles.jpg",
+  "alt": "SÇ 5000S three independent spindles",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000s-inside": {
+  "src": "tools/src-images/plastmak/pm-5000s-inside.jpg",
+  "alt": "Inside the SÇ 5000S",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000s-clamp": {
+  "src": "tools/src-images/plastmak/pm-5000s-clamp.jpg",
+  "alt": "SÇ 5000S profile clamp and cutter",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-5000s-table": {
+  "src": "tools/src-images/plastmak/pm-5000s-table.jpg",
+  "alt": "SÇ 5000S profile clamps on the wide table",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-211": {
+  "src": "tools/src-images/plastmak/pm-211.webp",
+  "alt": "Plastmak SÇ 211 end milling machine with 2-knife cutter set",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-211s": {
+  "src": "tools/src-images/plastmak/pm-211s.webp",
+  "alt": "Plastmak SÇ 211S end milling machine with serial blade change",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-211-front": {
+  "src": "tools/src-images/plastmak/pm-211-front.jpg",
+  "alt": "SÇ 211 cutter area and controls",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-211-vises": {
+  "src": "tools/src-images/plastmak/pm-211-vises.jpg",
+  "alt": "SÇ 211 two vertical and one horizontal vise",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-211-cutters": {
+  "src": "tools/src-images/plastmak/pm-211-cutters.jpg",
+  "alt": "SÇ 211 cutter stack and profile stop",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-211-stack": {
+  "src": "tools/src-images/plastmak/pm-211-stack.jpg",
+  "alt": "SÇ 211 cutter stack for the mullion end",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-211s-change": {
+  "src": "tools/src-images/plastmak/pm-211s-change.jpg",
+  "alt": "SÇ 211S blade group changed with a single button",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-501": {
+  "src": "tools/src-images/plastmak/pm-501.webp",
+  "alt": "Plastmak SÇ 501 copy router with triple drilling unit",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-502s": {
+  "src": "tools/src-images/plastmak/pm-502s.webp",
+  "alt": "Plastmak SÇ 502S high-frequency copy router",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-512": {
+  "src": "tools/src-images/plastmak/pm-512.webp",
+  "alt": "Plastmak SÇ 512 high-frequency 3-hole copy router",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-521s": {
+  "src": "tools/src-images/plastmak/pm-521s.webp",
+  "alt": "Plastmak SÇ 521S triple water drainage slot router",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-542": {
+  "src": "tools/src-images/plastmak/pm-542.webp",
+  "alt": "Plastmak SÇ 542 high-frequency aluminum copy router",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-501-drill": {
+  "src": "tools/src-images/plastmak/pm-501-drill.jpg",
+  "alt": "SÇ 501 triple drilling unit",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-501-head": {
+  "src": "tools/src-images/plastmak/pm-501-head.jpg",
+  "alt": "SÇ 501 copy head and profile clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-502-panel": {
+  "src": "tools/src-images/plastmak/pm-502-panel.jpg",
+  "alt": "SÇ 502S controls: copy routing, cooling, drainage slot and triple drilling",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-502-template": {
+  "src": "tools/src-images/plastmak/pm-502-template.jpg",
+  "alt": "SÇ 502S universal template",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-502-top": {
+  "src": "tools/src-images/plastmak/pm-502-top.jpg",
+  "alt": "SÇ 502S router head and clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-512-head": {
+  "src": "tools/src-images/plastmak/pm-512-head.jpg",
+  "alt": "SÇ 512 router head, triple drilling and cooling",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-521s-heads": {
+  "src": "tools/src-images/plastmak/pm-521s-heads.jpg",
+  "alt": "SÇ 521S three drainage-slot routers",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-521s-table": {
+  "src": "tools/src-images/plastmak/pm-521s-table.jpg",
+  "alt": "SÇ 521S routers over the moving table",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-542-spindle": {
+  "src": "tools/src-images/plastmak/pm-542-spindle.jpg",
+  "alt": "SÇ 542 18,000 rpm spindle",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-542-template": {
+  "src": "tools/src-images/plastmak/pm-542-template.jpg",
+  "alt": "SÇ 542 template system for aluminum hardware cut-outs",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-542-head": {
+  "src": "tools/src-images/plastmak/pm-542-head.jpg",
+  "alt": "SÇ 542 router head over the profile clamps",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-542-clamp": {
+  "src": "tools/src-images/plastmak/pm-542-clamp.jpg",
+  "alt": "SÇ 542 pneumatic profile clamp",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-542-top": {
+  "src": "tools/src-images/plastmak/pm-542-top.jpg",
+  "alt": "SÇ 542 copy head and template from above",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-902": {
+  "src": "tools/src-images/plastmak/pm-902.webp",
+  "alt": "Plastmak SÇ 902 hydraulic corner crimping machine for aluminum",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-902-table": {
+  "src": "tools/src-images/plastmak/pm-902-table.jpg",
+  "alt": "SÇ 902 crimping table and support arms",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-902-heads": {
+  "src": "tools/src-images/plastmak/pm-902-heads.jpg",
+  "alt": "SÇ 902 knife holders, 4 right and 4 left",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-902-knives": {
+  "src": "tools/src-images/plastmak/pm-902-knives.jpg",
+  "alt": "SÇ 902 crimping knives",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-902-scale": {
+  "src": "tools/src-images/plastmak/pm-902-scale.jpg",
+  "alt": "SÇ 902 millimetre scale for knife height and advance",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-902-wedge": {
+  "src": "tools/src-images/plastmak/pm-902-wedge.jpg",
+  "alt": "SÇ 902 pneumatic centring miter wedge",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-902-cylinder": {
+  "src": "tools/src-images/plastmak/pm-902-cylinder.jpg",
+  "alt": "SÇ 902 hydraulic knife cylinder",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-screw-single": {
+  "src": "tools/src-images/plastmak/pm-screw-single.webp",
+  "alt": "Plastmak single screwing machine with roller tables",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-screw-double": {
+  "src": "tools/src-images/plastmak/pm-screw-double.webp",
+  "alt": "Plastmak double-head screwing machine with support tables",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-screw-motor": {
+  "src": "tools/src-images/plastmak/pm-screw-motor.jpg",
+  "alt": "Pneumatic screwing motor",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-sash": {
+  "src": "tools/src-images/plastmak/pm-sash.webp",
+  "alt": "Plastmak sash assembly machine with laser alignment and automatic screwing",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-221": {
+  "src": "tools/src-images/plastmak/pm-221.webp",
+  "alt": "Plastmak SÇ 221 portable notching and milling machine",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-551": {
+  "src": "tools/src-images/plastmak/pm-551.webp",
+  "alt": "Plastmak SÇ 551 portable copy milling machine",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-table": {
+  "src": "tools/src-images/plastmak/pm-table.webp",
+  "alt": "Two-shelf steel stand for the portable machines",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-1000": {
+  "src": "tools/src-images/plastmak/pm-1000.webp",
+  "alt": "Plastmak SÇ 1000 digital measuring conveyor, 9′ 10″ (3 m)",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-1000-panel": {
+  "src": "tools/src-images/plastmak/pm-1000-panel.jpg",
+  "alt": "SÇ 1000 touch screen and measuring stop",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pm-1001": {
+  "src": "tools/src-images/plastmak/pm-1001.webp",
+  "alt": "Plastmak SÇ 1001 aluminum roller conveyor",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-1002": {
+  "src": "tools/src-images/plastmak/pm-1002.webp",
+  "alt": "Plastmak SÇ 1002 plastic roller conveyor",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-1003": {
+  "src": "tools/src-images/plastmak/pm-1003.webp",
+  "alt": "Plastmak SÇ 1003 sheet-metal conveyor",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-compressor": {
+  "src": "tools/src-images/plastmak/pm-compressor.webp",
+  "alt": "SÇ 801 air compressor, 130 gal (500 l)",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-line-pvc1": {
+  "src": "tools/src-images/plastmak/pm-line-pvc1.webp",
+  "alt": "PVC single-head group: SÇ 401 saw, SÇ 501 copy router, SÇ 101 welder, SÇ 301 bead saw, SÇ 211 end mill, SÇ 601 corner cleaner",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-line-pvc2": {
+  "src": "tools/src-images/plastmak/pm-line-pvc2.webp",
+  "alt": "PVC double-head group: SÇ 400S saw, SÇ 501 copy router, SÇ 100 welder, SÇ 301 bead saw, SÇ 211 end mill, SÇ 601 corner cleaner",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-line-alu": {
+  "src": "tools/src-images/plastmak/pm-line-alu.webp",
+  "alt": "Aluminum double-head group: SÇ 4000S saw, SÇ 5000S CNC, SÇ 211S end mill, SÇ 902 corner crimper",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "pm-line-shop": {
+  "src": "tools/src-images/plastmak/pm-line-shop.webp",
+  "alt": "PVC window workshop: SÇ 801 compressor, SÇ 400S saw, SÇ 5000 CNC, SÇ 100 welder, SÇ 6000 corner cleaner, SÇ 211S end mill, SÇ 301S bead saw",
+  "section": "plastmak",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "plastmak-logo": {
+  "src": "tools/src-images/plastmak-logo.png",
+  "alt": "Plastmak",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false
+ },
+ "video-6_KfOwCxUwk": {
+  "src": "/home/claude/gms-site/yt/6_KfOwCxUwk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-zai1zC0QZ0Q": {
+  "src": "/home/claude/gms-site/yt/zai1zC0QZ0Q.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-F9VBp0QD91E": {
+  "src": "/home/claude/gms-site/yt/F9VBp0QD91E.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-PRLhsXYBvfc": {
+  "src": "/home/claude/gms-site/yt/PRLhsXYBvfc.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-LJSwkkCeFMg": {
+  "src": "/home/claude/gms-site/yt/LJSwkkCeFMg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ueqIxB1KMfE": {
+  "src": "/home/claude/gms-site/yt/ueqIxB1KMfE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-4joDJ1kUi00": {
+  "src": "/home/claude/gms-site/yt/4joDJ1kUi00.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-DLE1zG6NJVA": {
+  "src": "/home/claude/gms-site/yt/DLE1zG6NJVA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-CBYNMAwzDGw": {
+  "src": "/home/claude/gms-site/yt/CBYNMAwzDGw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-w9HuC6RrHno": {
+  "src": "/home/claude/gms-site/yt/w9HuC6RrHno.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-eSDM6QInOfs": {
+  "src": "/home/claude/gms-site/yt/eSDM6QInOfs.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-phyPgKa6BxE": {
+  "src": "/home/claude/gms-site/yt/phyPgKa6BxE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-jpJMgI3VL4w": {
+  "src": "/home/claude/gms-site/yt/jpJMgI3VL4w.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-DVVKKS4_RqE": {
+  "src": "/home/claude/gms-site/yt/DVVKKS4_RqE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

@@ -313,3 +313,16 @@ GM110, G65/135 WET, G65DCC, CUB and GCB, and its worked-sample cut-outs (page 22
 photos kept rectangular. 45 small images upscaled 2x with Real-ESRGAN. Logos: the Gecam and Eurofintec marks redrawn from the
 vector paths of the Eurofintec catalogue cover (PyMuPDF, images removed, no background) — tools/src-images/gecam-logo.png and
 eurofintec-logo.png ("division" line left off the Eurofintec mark, as on the machines).
+
+### Plastmak photos (Oct 26)
+
+tools/plastmak_photos.py → tools/src-images/plastmak (section "plastmak"), 146 photos. plastmak.com's photos were already in
+the Downloads captures (plastmak[bc]-NN.json, base64) and were decoded to /home/claude/plastmak/web (210 images, studio shots
+2,560 px, details 1,080 – 1,920 px). The machines are cut out of those 2,560 px studio shots with BiRefNet (`W`, cached);
+saws with roller conveyors running out of the frame are cropped to the machine plus part of each conveyor, which fades out at
+the crop. The cut-outs inside NovoTech's Plastmak catalogue (1,300 – 1,600 px with soft masks) lost parts of the white machine
+bodies, so they are used (`C`) only where no other photo exists and the mask was checked: SÇ 441, 451, 501, 512, 601,
+screwing and sash assembly machines, conveyors 1001 – 1003, the stand and the compressor. SÇ 211, 211S and 521S come from the
+2024 Plastmak catalogue (16.11.2024 KATALOG KÜÇÜK.pdf), upscaled 2x. Production-group pictures are line-ups of the machines'
+cut-outs. The Plastmak logo (tools/src-images/plastmak-logo.png) was redrawn from the vector paths of the 2026 catalogue's
+page header.

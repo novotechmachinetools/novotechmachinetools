@@ -19,7 +19,6 @@ OLD_SITE = {
     "plate-roller-bender",
     "folder-sheet-metal-brake",
     "lock-former",
-    "aluminum-and-pvc-upcut-saws",
     "press-brake-tooling-punch-and-die", "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction",
 }
 

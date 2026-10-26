@@ -360,3 +360,25 @@ rounding machine" 659 (pos. 57), "sheet metal finishing machine" 623, "metal fin
   matching new page or the new brochure.
 Videos: 71 of NovoTech's own Gecam / Eurofintec videos on the families (G3 = G30 and G6 / G60 = G65 in Gecam's older names);
 "GECAM - Corporate introduction video" is the Inside-the-factory video on every Gecam page and the pipe page.
+
+## Plastmak aluminum & PVC window machinery (Oct 26) — task #19
+
+Keyword tools were out of credit (Ubersuggest reports used up; only Google autocomplete via Ubersuggest worked), so titles come
+from Search Console and autocomplete. Old saws page (aluminum-and-pvc-upcut-saws, kept as the URL): 19,130 + 3,678
+impressions, avg. position 21 / 58. Queries: "up cut saw" 2,097, "automated upcut saw" 1,891, "upcut saw" 1,159, "upcut saw
+for aluminum" 1,081 (pos. 11), "aluminum extrusion saw" 878, "extrusion saw" 800, "industrial upcut saw" 609, "aluminium
+extrusion saw" 548, "aluminum upcut saw" 412 (pos. 12), "aluminum cutting saw" 354, "aluminum saws" 312, "upcut miter saw" 287,
+"aluminium extrusion cutter" 254, "extrusion cutting machine" 247, "upcut saws" 208. Autocomplete (Canada): "upvc window
+machine(ry)", "pvc / upvc window welding machine", "vinyl window welding machines", "window fabrication machinery", "window
+manufacturing equipment", "corner cleaning machine (upvc, cnc)", "aluminum window machinery", "corner crimping machine for
+aluminium profiles", "copy router machine for aluminium", "aluminum profile end milling machine".
+- Saws: "Automatic Upcut Saws for Aluminum Extrusion & PVC | NovoTech" at the old URL (menu "Aluminum & PVC saws").
+- New menu "Aluminum & PVC processing machines": hub pvc-aluminum-window-machines ("Aluminum & PVC Window Fabrication
+  Machinery"), pvc-window-welding-machines ("PVC Window Welders & Corner Cleaners, 1–4 Corners"), profile-machining-centres-
+  copy-routers ("Aluminum Profile CNC Centres & Copy Routers"), window-assembly-machines ("Corner Crimping & Window Assembly
+  Machines"), window-production-lines ("Window Production Lines, 40 – 220 Windows a Shift"). "Vinyl" is used in the intros and
+  FAQ for Canadian searches; "SÇ (often written SC)" is explained once.
+- Plastmak shown under its own brand (logo); no brand in titles or slugs. The old Plastmak PDF (27 impressions) is
+  301-redirected to the NovoTech Plastmak brochure.
+Videos: 14 of NovoTech's own Plastmak videos (SC 401, SC 402, SC 400, SC 4000S / PLUS, SC 101 S, SC 501, SC 502S, SC 1000); no
+factory video on the channel, so these pages have no Inside-the-factory section.

@@ -1,0 +1,4197 @@
+{
+ "order": [
+  "plastmak-401",
+  "plastmak-402-403",
+  "plastmak-450",
+  "plastmak-double",
+  "plastmak-bead",
+  "plastmak-miter",
+  "plastmak-gold-plus",
+  "plastmak-100-101",
+  "plastmak-6000",
+  "plastmak-601",
+  "plastmak-4550",
+  "plastmak-5000",
+  "plastmak-copy",
+  "plastmak-211",
+  "plastmak-902",
+  "plastmak-screw",
+  "plastmak-portable",
+  "plastmak-conveyor",
+  "plastmak-line-pvc1",
+  "plastmak-line-pvc2",
+  "plastmak-line-alu",
+  "plastmak-line-shop"
+ ],
+ "families": {
+  "plastmak-401": {
+   "id": "plastmak-401",
+   "brand": "plastmak",
+   "name": "SÇ 401 upcut saw for aluminum and PVC, Ø17-11/16″ blade, 0° – 180°",
+   "short": "SÇ 401",
+   "models_label": "SÇ 401 · 1 model",
+   "summary": "The entry upcut saw for window shops and aluminum fabricators: the Ø17-11/16″ (450 mm) diamond-tipped blade rises from under the table through the clamped profile, so the cut is guarded and burr-light, and the turntable sets any angle from 0° to 180° — with quick stops at 15°, 22.5°, 30°, 45°, 60° and 90° and a locking arm for the angles between. The blade rises 5-5/16″ (135 mm) and cuts profiles up to 5-5/16″ high and 8-9/16″ wide at 90°. Its feed slows down when the blade meets aluminum, easing the load on the motor, and 8′ 2″ (2.5 m) measuring and transport conveyors come standard on both sides.",
+   "headline": "Ø17-11/16″ (450 mm) blade · 0° – 180° · cuts 5-5/16 × 8-9/16″ at 90°",
+   "features": [
+    "Diamond-tipped Ø17-11/16″ (450 mm) blade rising 5-5/16″ (135 mm) through the table",
+    "Turntable 0° – 180° with quick stops at 15°, 22.5°, 30°, 45°, 60° and 90°; locking arm for intermediate angles",
+    "Blade feed slows in aluminum to reduce the load on the motor",
+    "Pneumatic profile clamps; protective cover over the cutting area",
+    "Measuring and transport conveyors 8′ 2″ (2.5 m), right and left, standard",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Cooling device for aluminum cutting",
+    "Hydro-check feed control for aluminum cutting",
+    "Roller conveyor",
+    "SÇ 1000 digital measuring conveyor",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-401",
+    "pm-401-table",
+    "pm-401-scale",
+    "pm-401-guard"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 401",
+      "sub": "Upcut saw, Ø450 mm blade",
+      "models": [
+       "SÇ 401"
+      ],
+      "rows": [
+       {
+        "label": "Cutting angle",
+        "sub": "quick stops 15°, 22.5°, 30°, 45°, 60°, 90°",
+        "cells": [
+         "0° – 180°"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade",
+        "sub": "diamond-tipped",
+        "cells": [
+         "Ø17-11/16″ (450 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade rise",
+        "sub": "through the table",
+        "cells": [
+         "5-5/16″ (135 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Capacity at 90°",
+        "sub": "height × width",
+        "cells": [
+         "5-5/16 × 8-9/16″ (135 × 217 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity at 45°",
+        "sub": "height × width",
+        "cells": [
+         "5-5/16 × 6-3/16″ (135 × 157 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "1.4 CFM (41 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Conveyors",
+        "sub": "measuring and transport",
+        "cells": [
+         "8′ 2″ (2.5 m) right and left"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "276 lb (125 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "26 × 31 × 51″ (660 × 790 × 1,300 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 401",
+      "glance": [
+       "Ø17-11/16″ blade, 0° – 180°",
+       "5-5/16 × 8-9/16″ at 90°",
+       "1.5 HP",
+       "1.4 CFM",
+       "276 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 401": "Ø17-11/16″ (450 mm) blade"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Cutting capacities are the largest profile, height × width, at the angle shown."
+   },
+   "videos": [
+    {
+     "id": "6_KfOwCxUwk",
+     "title": "SÇ 401 upcut saw for aluminum and PVC extrusions",
+     "duration": "PT1M3S",
+     "thumb": "video-6_KfOwCxUwk"
+    },
+    {
+     "id": "zai1zC0QZ0Q",
+     "title": "SÇ 401 upcut saw, Ø17-11/16″ (450 mm)",
+     "duration": "PT0M49S",
+     "thumb": "video-zai1zC0QZ0Q"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-upcut"
+  },
+  "plastmak-402-403": {
+   "id": "plastmak-402-403",
+   "brand": "plastmak",
+   "name": "SÇ 402 · SÇ 403 automatic upcut saws, Ø21-5/8″ to Ø25-9/16″ blades",
+   "short": "SÇ 402 · SÇ 403",
+   "models_label": "SÇ 402 · SÇ 403 · 2 models",
+   "summary": "Fully automatic upcut saws for aluminum and PVC production: the profile is clamped pneumatically from above and from the side, the blade rises through it under hydro-pneumatic control at the speed set for the profile, and an oil spray cools the cut. The head turns to fixed stops from −60° to +60° — 0°, 15°, 22.5°, 30°, 45° and 60° either way. The SÇ 402 runs a Ø21-5/8″ (550 mm) blade and cuts profiles up to 7-1/16″ high and 10-7/16″ wide at 90°; the SÇ 403 takes a Ø23-5/8″ (600 mm) blade, or Ø25-9/16″ (650 mm) as an option, for profiles up to 9-3/16 × 12-3/8″, behind a guard that moves front to back. Both come with 9′ 10″ (3 m) roller conveyors on each side.",
+   "headline": "Ø21-5/8″ – Ø25-9/16″ blades · −60° to +60° · cuts to 9-3/16 × 12-3/8″",
+   "features": [
+    "Hydro-pneumatic blade feed with hydro-checks; cutting speed set to the profile",
+    "Fixed angle stops left and right: 0°, 15°, 22.5°, 30°, 45° and 60°",
+    "Pneumatic vertical and horizontal clamps with adjustable pressure; two-hand safety start",
+    "SÇ 402: Ø21-5/8″ (550 mm) diamond-tipped blade, 3 HP (2.2 kW) saw motor",
+    "SÇ 403: Ø23-5/8″ (600 mm) blade, Ø25-9/16″ (650 mm) optional; 4 HP (3 kW) saw motor; front-rear moving guard",
+    "Oil spray cooling; roller conveyors 9′ 10″ (3 m) right and left",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Ø25-9/16″ (650 mm) blade (SÇ 403)",
+    "SÇ 1000 digital measuring conveyor",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-402",
+    "pm-403",
+    "pm-402-table",
+    "pm-402-blade",
+    "pm-403-panel",
+    "pm-403-clamps",
+    "pm-403-blade",
+    "pm-403-guard"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 402 · SÇ 403",
+      "sub": "Automatic upcut saws",
+      "models": [
+       "SÇ 402",
+       "SÇ 403"
+      ],
+      "rows": [
+       {
+        "label": "Cutting angle",
+        "sub": "fixed stops 0°, ±15°, ±22.5°, ±30°, ±45°, ±60°",
+        "cells": [
+         "−60° to +60°",
+         "−60° to +60°"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade",
+        "sub": "diamond-tipped",
+        "cells": [
+         "Ø21-5/8″ (550 mm)",
+         "Ø23-5/8″ (600 mm); Ø25-9/16″ (650 mm) optional"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)",
+         "Ø1-9/16″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Capacity at 90°",
+        "sub": "height × width",
+        "cells": [
+         "7-1/16 × 10-7/16″ (180 × 265 mm)",
+         "8-3/16 × 11-5/16″ (208 × 288 mm); 9-3/16 × 12-3/8″ (233 × 315 mm) with Ø650"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity at 45°",
+        "sub": "height × width",
+        "cells": [
+         "7-1/16 × 7-1/2″ (180 × 190 mm)",
+         "8-3/16 × 8-1/16″ (208 × 205 mm); 9-3/16 × 8-3/4″ (233 × 223 mm) with Ø650"
+        ],
+        "key": false
+       },
+       {
+        "label": "Capacity at 60°",
+        "sub": "height × width",
+        "cells": [
+         "7-1/16 × 5-1/2″ (180 × 140 mm)",
+         "8-3/16 × 5-11/16″ (208 × 145 mm); 9-3/16 × 6-3/16″ (233 × 157 mm) with Ø650"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "1.4 CFM (41 l/min)",
+         "1.4 CFM (41 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roller conveyors",
+        "sub": "",
+        "cells": [
+         "9′ 10″ (3 m) right and left",
+         "9′ 10″ (3 m) right and left"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "441 lb (200 kg)",
+         "573 lb (260 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "32 × 35 × 52″ (820 × 900 × 1,330 mm)",
+         "33 × 39 × 57″ (850 × 985 × 1,450 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 402",
+      "glance": [
+       "Ø21-5/8″ blade, ±60°",
+       "7-1/16 × 10-7/16″ at 90°",
+       "4 HP",
+       "1.4 CFM",
+       "441 lb"
+      ]
+     },
+     {
+      "name": "SÇ 403",
+      "glance": [
+       "Ø23-5/8″ / Ø25-9/16″ blade, ±60°",
+       "9-3/16 × 12-3/8″ at 90°",
+       "4 HP",
+       "1.4 CFM",
+       "573 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 402": "Ø21-5/8″ (550 mm) blade",
+     "SÇ 403": "Ø23-5/8″ (600 mm) blade"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Cutting capacities are the largest profile, height × width, at the angle shown."
+   },
+   "videos": [
+    {
+     "id": "F9VBp0QD91E",
+     "title": "SÇ 402 cutting aluminum profiles",
+     "duration": "PT2M39S",
+     "thumb": "video-F9VBp0QD91E"
+    },
+    {
+     "id": "PRLhsXYBvfc",
+     "title": "SÇ 402 upcut saw",
+     "duration": "PT1M13S",
+     "thumb": "video-PRLhsXYBvfc"
+    },
+    {
+     "id": "LJSwkkCeFMg",
+     "title": "SÇ 402 with Ø21-5/8″ (550 mm) blade",
+     "duration": "PT1M3S",
+     "thumb": "video-LJSwkkCeFMg"
+    },
+    {
+     "id": "ueqIxB1KMfE",
+     "title": "SÇ 402 automatic upcut saw at work",
+     "duration": "PT2M3S",
+     "thumb": "video-ueqIxB1KMfE"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-upcut"
+  },
+  "plastmak-450": {
+   "id": "plastmak-450",
+   "brand": "plastmak",
+   "name": "SÇ 450 roller-shutter box and lamella saw, Ø21-5/8″ blade, cuts 14-3/16″ wide",
+   "short": "SÇ 450",
+   "models_label": "SÇ 450 · 1 model",
+   "summary": "A saw for roller-shutter work: it cuts packs of aluminum or PVC shutter lamellas in one stroke, shutter boxes and side posts, and monoblock shutter boxes as a set. The Ø21-5/8″ (550 mm) blade runs fast for a clean cut surface and travels on linear guides; the clamping pistons are matched to the part, L-shaped boxes up to 13-3/4″ (350 mm) fit under them, and the blade cuts 14-3/16″ (360 mm) wide. The cutting speed is adjustable, and 9′ 10″ (3 m) roller conveyors carry the profiles on both sides.",
+   "headline": "Ø21-5/8″ (550 mm) blade · shutter boxes to 13-3/4″ · cuts 14-3/16″ wide",
+   "features": [
+    "Cuts packs of shutter lamellas, shutter boxes, side posts and monoblock boxes",
+    "Ø21-5/8″ (550 mm) blade at high speed for a clean cut surface; adjustable cutting speed",
+    "Blade on a linear guide system for precise cuts",
+    "Clamping pistons matched to the part; L-shaped boxes up to 13-3/4″ (350 mm)",
+    "Roller conveyors 2 × 9′ 10″ (3 m)",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Cooling system",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-450",
+    "pm-450-clamps",
+    "pm-450-blade",
+    "pm-450-roller",
+    "pm-450-table"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 450",
+      "sub": "Shutter box and lamella saw",
+      "models": [
+       "SÇ 450"
+      ],
+      "rows": [
+       {
+        "label": "Blade",
+        "sub": "",
+        "cells": [
+         "Ø21-5/8″ (550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting width",
+        "sub": "max.",
+        "cells": [
+         "14-3/16″ (360 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Shutter box",
+        "sub": "L-shaped, max.",
+        "cells": [
+         "13-3/4″ (350 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.35 CFM (10 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Roller conveyors",
+        "sub": "",
+        "cells": [
+         "2 × 9′ 10″ (3 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "761 lb (345 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "33 × 35 × 78″ (840 × 900 × 1,980 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 450",
+      "glance": [
+       "Ø21-5/8″ blade, boxes to 13-3/4″",
+       "Cuts 14-3/16″ wide",
+       "4 HP",
+       "0.35 CFM",
+       "761 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 450": "Ø21-5/8″ (550 mm) blade"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Cutting capacities are the largest profile, height × width, at the angle shown."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-upcut"
+  },
+  "plastmak-double": {
+   "id": "plastmak-double",
+   "brand": "plastmak",
+   "name": "SÇ 400S · SÇ 4000S double-head miter saws, cutting lengths to 171-5/8″",
+   "short": "SÇ 400S · SÇ 4000S",
+   "models_label": "SÇ 400S · SÇ 4000S · 2 models",
+   "summary": "Double-head saws cut both ends of a window or door profile in one stroke, square or mitred, to the length set on the control: the right head runs on a servo-driven carriage, both heads tilt automatically to 90° or 45° inward, and an arm supports long profiles. The SÇ 400S has two Ø19-11/16″ (500 mm) blades, cuts 19-1/8″ to 131-7/8″ (485 – 3,350 mm) long to ±.039″ (±1 mm) and takes profiles up to 11-1/8″ high at 90°. The fully automatic SÇ 4000S has two Ø23-5/8″ (600 mm) blades on hydro-check-controlled feeds, cuts 21-5/8″ to 171-5/8″ (550 – 4,360 mm) to ±.020″ (±0.5 mm) and takes profiles up to 12-3/16″ high and 8-7/16″ wide. Cut lists arrive by USB; the SÇ 400S works with Ercom and Teknosoft barcode systems.",
+   "headline": "2 × Ø19-11/16″ or 2 × Ø23-5/8″ blades · lengths to 171-5/8″ · ±.020″",
+   "features": [
+    "Heads set automatically to 90° and 45° inward; automatic cutting at 90°; wedge (block) slicing",
+    "Servo-driven moving head; colour touch panel (10″ on the SÇ 4000S); unlimited cut-list memory, lists by USB; remote support",
+    "SÇ 400S: 2 × Ø19-11/16″ (500 mm) blades rising 6-1/2″ (165 mm) — two 3-1/8″ (80 mm) profiles at once; ±.039″ (±1 mm)",
+    "SÇ 4000S: 2 × Ø23-5/8″ (600 mm) blades rising 8-7/16″ (215 mm) — two 3-1/8″ profiles at once; hydro-check saw feed; ±.020″",
+    "2 vertical and 4 horizontal vises; profile supports right, left and between the heads; automatic support arm for long profiles",
+    "Program for profiles longer than the bed: 19′ 8″ (6 m) on the SÇ 400S, 26′ 3″ (8 m) on the SÇ 4000S",
+    "Spray blade cooling; multi-language software",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Barcode printer (Ercom, Teknosoft)",
+    "Hydro-check saw feed (SÇ 400S)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-400s",
+    "pm-4000s",
+    "pm-400s-head",
+    "pm-400s-console",
+    "pm-400s-vise",
+    "pm-400s-support",
+    "pm-400s-guard",
+    "pm-4000s-heads",
+    "pm-4000s-tilt",
+    "pm-4000s-console",
+    "pm-4000s-conveyor",
+    "pm-4000s-clamps",
+    "pm-4000s-slide"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 400S · SÇ 4000S",
+      "sub": "Double-head miter saws",
+      "models": [
+       "SÇ 400S",
+       "SÇ 4000S"
+      ],
+      "rows": [
+       {
+        "label": "Cutting length",
+        "sub": "min – max",
+        "cells": [
+         "19-1/8″ – 131-7/8″ (485 – 3,350 mm)",
+         "21-5/8″ – 171-5/8″ (550 – 4,360 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Head tilt",
+        "sub": "",
+        "cells": [
+         "90° and 45° inward, automatic",
+         "90° and 45° inward, automatic"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting accuracy",
+        "sub": "",
+        "cells": [
+         "±.039″ (±1 mm)",
+         "±.020″ (±0.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blades",
+        "sub": "",
+        "cells": [
+         "2 × Ø19-11/16″ (500 mm)",
+         "2 × Ø23-5/8″ (600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)",
+         "Ø1-9/16″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade rise",
+        "sub": "",
+        "cells": [
+         "6-1/2″ (165 mm) — two 3-1/8″ (80 mm) profiles at once",
+         "8-7/16″ (215 mm) — two 3-1/8″ (80 mm) profiles at once"
+        ],
+        "key": false
+       },
+       {
+        "label": "Capacity at 90°",
+        "sub": "height × width",
+        "cells": [
+         "11-1/8 × 6-1/2″ (282 × 165 mm)",
+         "12-3/16 × 8-7/16″ (310 × 215 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity at 45°",
+        "sub": "height × width",
+        "cells": [
+         "7-7/8 × 6-1/2″ (200 × 165 mm)",
+         "8-3/4 × 8-7/16″ (222 × 215 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw motors",
+        "sub": "",
+        "cells": [
+         "2 × 3 HP (2 × 2.2 kW)",
+         "2 × 4 HP (2 × 3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "8 HP (6 kW)",
+         "10.7 HP (8 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "1.1 CFM (30 l/min)",
+         "1.1 CFM (30 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,951 lb (885 kg)",
+         "2,392 lb (1,085 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "L × W × H",
+        "cells": [
+         "252 × 40 × 62″ (6,398 × 1,010 × 1,580 mm)",
+         "290 × 44 × 62″ (7,375 × 1,110 × 1,580 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 400S",
+      "glance": [
+       "Lengths 19-1/8″ – 131-7/8″",
+       "11-1/8 × 6-1/2″ at 90°",
+       "8 HP",
+       "1.1 CFM",
+       "1,951 lb"
+      ]
+     },
+     {
+      "name": "SÇ 4000S",
+      "glance": [
+       "Lengths 21-5/8″ – 171-5/8″",
+       "12-3/16 × 8-7/16″ at 90°",
+       "10.7 HP",
+       "1.1 CFM",
+       "2,392 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 400S": "2 × Ø19-11/16″ (500 mm) blades",
+     "SÇ 4000S": "2 × Ø23-5/8″ (600 mm) blades"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Cutting capacities are the largest profile, height × width, at the angle shown."
+   },
+   "videos": [
+    {
+     "id": "4joDJ1kUi00",
+     "title": "SÇ 400 double-head saw with NC control",
+     "duration": "PT3M0S",
+     "thumb": "video-4joDJ1kUi00"
+    },
+    {
+     "id": "DLE1zG6NJVA",
+     "title": "SÇ 4000S fully automatic double-head saw",
+     "duration": "PT1M20S",
+     "thumb": "video-DLE1zG6NJVA"
+    },
+    {
+     "id": "CBYNMAwzDGw",
+     "title": "SÇ 4000S PLUS with Ø23-5/8″ (600 mm) blades",
+     "duration": "PT1M35S",
+     "thumb": "video-CBYNMAwzDGw"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-double"
+  },
+  "plastmak-bead": {
+   "id": "plastmak-bead",
+   "brand": "plastmak",
+   "name": "SÇ 301 · SÇ 301S glazing bead saws, beads 11-13/16″ – 100-3/8″ long",
+   "short": "SÇ 301 · SÇ 301S",
+   "models_label": "SÇ 301 · SÇ 301S · 2 models",
+   "summary": "Glazing beads are cut at 45° on both ends to the size of the glass opening. The SÇ 301 cuts PVC beads automatically with two Ø7-7/8″ (200 mm) saws in an easily adjusted universal mould, with an 8′ 2″ (2.5 m) sheet-steel measuring conveyor for long frames. The SÇ 301S needs no moulds: a wheel holds 12 different bead profiles, two beads are cut at the same time, a nail adjustment mechanism and two nail saws finish the bead's clip, and 8′ 2″ (2.5 m) conveyors run on both sides — with a diamond saw and cooling it cuts aluminum beads too. Both take beads 11-13/16″ to 100-3/8″ (300 – 2,550 mm) long and up to 1-1/8″ (28.3 mm) high.",
+   "headline": "45° bead cutting · 11-13/16″ – 100-3/8″ · 12 beads without moulds (SÇ 301S)",
+   "features": [
+    "45° cutting of glazing beads; automatic cycle, adjustable cutting speed",
+    "Pneumatic bead clamping",
+    "SÇ 301: 2 × Ø7-7/8″ (200 mm) saws, universal adjustable mould, measuring conveyor 8′ 2″ (2.5 m)",
+    "SÇ 301S: profile wheel for 12 beads, 2 beads at once, 2 nail saws Ø3-15/16″ (100 mm), conveyors 2 × 8′ 2″",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Left conveyor (SÇ 301)",
+    "Nail saw (SÇ 301)",
+    "Diamond-tipped saw with cooling for aluminum beads (SÇ 301S)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-301",
+    "pm-301s",
+    "pm-301-mould",
+    "pm-301-saws",
+    "pm-301s-wheel",
+    "pm-301s-clamps",
+    "pm-301s-twin",
+    "pm-301s-top"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 301 · SÇ 301S",
+      "sub": "Glazing bead saws",
+      "models": [
+       "SÇ 301",
+       "SÇ 301S"
+      ],
+      "rows": [
+       {
+        "label": "Cutting angle",
+        "sub": "",
+        "cells": [
+         "45°",
+         "45°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bead length",
+        "sub": "min – max",
+        "cells": [
+         "11-13/16″ – 100-3/8″ (300 – 2,550 mm)",
+         "11-13/16″ – 100-3/8″ (300 – 2,550 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bead height",
+        "sub": "max.",
+        "cells": [
+         "1-1/8″ (28.3 mm)",
+         "1-1/8″ (28.3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bead profiles",
+        "sub": "",
+        "cells": [
+         "Universal adjustable mould",
+         "12 on the profile wheel, no moulds; 2 beads at once"
+        ],
+        "key": true
+       },
+       {
+        "label": "Main saws",
+        "sub": "",
+        "cells": [
+         "2 × Ø7-7/8″ (200 mm)",
+         "2 × Ø7-7/8″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Nail saws",
+        "sub": "",
+        "cells": [
+         "Optional",
+         "2 × Ø3-15/16″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)",
+         "Ø1-1/4″ (32 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw motors",
+        "sub": "",
+        "cells": [
+         "2 × 1 HP (2 × 0.75 kW)",
+         "2 × 1.5 HP (2 × 1.1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.35 CFM (10 l/min)",
+         "0.35 CFM (10 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Conveyors",
+        "sub": "",
+        "cells": [
+         "Measuring conveyor 8′ 2″ (2.5 m)",
+         "2 × 8′ 2″ (2.5 m), right and left"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "209 lb (95 kg)",
+         "320 lb (145 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "18 × 46 × 44″ (450 × 1,160 × 1,120 mm)",
+         "20 × 55 × 46″ (520 × 1,400 × 1,180 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 301",
+      "glance": [
+       "Beads 11-13/16″ – 100-3/8″",
+       "Beads to 1-1/8″ high",
+       "2 HP",
+       "0.35 CFM",
+       "209 lb"
+      ]
+     },
+     {
+      "name": "SÇ 301S",
+      "glance": [
+       "Beads 11-13/16″ – 100-3/8″, 12 profiles",
+       "Beads to 1-1/8″ high",
+       "3 HP",
+       "0.35 CFM",
+       "320 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 301": "2 × Ø7-7/8″ (200 mm) saws",
+     "SÇ 301S": "12 bead profiles, no moulds"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Cutting capacities are the largest profile, height × width, at the angle shown."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-bead"
+  },
+  "plastmak-miter": {
+   "id": "plastmak-miter",
+   "brand": "plastmak",
+   "name": "SÇ 431 · SÇ 441 · SÇ 451 overhead and bench miter saws, Ø11-13/16″ to Ø15-3/4″ blades",
+   "short": "SÇ 431 · SÇ 441 · SÇ 451",
+   "models_label": "SÇ 431 · SÇ 441 · SÇ 451 · 3 models",
+   "summary": "Top-down miter saws for aluminum and PVC profiles. The SÇ 431 stands on its own base with a pneumatic clamp and a Ø15-3/4″ (400 mm) diamond blade that leaves burr-free aluminum cuts; it miters from −45° to +45° with quick stops at 90°, 75°, 60° and 45° and a locking arm between them, cuts profiles up to 4-3/4″ high and 7-1/16″ wide at 90°, and works with a 9′ 10″ (3 m) roller conveyor. The SÇ 441 (Ø11-13/16″, 300 mm) and SÇ 451 (Ø15-3/4″, 400 mm) are bench saws for the workshop or the site: double springs and a guard for safe cuts, cutting on the top table, and fixed stops at 0°, 15°, 22.5°, 30° and 45° either way.",
+   "headline": "Ø11-13/16″ – Ø15-3/4″ blades · −45° to +45° · cuts 4-3/4 × 7-1/16″ (SÇ 431)",
+   "features": [
+    "SÇ 431: Ø15-3/4″ (400 mm) diamond blade, burr-free aluminum cuts; −45° to +45°, quick stops 90°, 75°, 60°, 45°",
+    "SÇ 431: pneumatic profile clamp, table locking arm, roller conveyor 9′ 10″ (3 m)",
+    "SÇ 441 · SÇ 451: bench miter saws, Ø11-13/16″ and Ø15-3/4″ blades, −45° to +45°",
+    "SÇ 441 · SÇ 451: double spring system and saw guard; fixed stops 0°, 15°, 22.5°, 30°, 45° left and right",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Cooling device for aluminum cutting (SÇ 431)",
+    "Single-phase 220 V version (SÇ 431)",
+    "Lower cabinet, right / left measuring system, pneumatic clamping with cooling, diamond triple-chip saw (SÇ 441 · SÇ 451)",
+    "Portable stand (SÇ 441 · SÇ 451)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-431",
+    "pm-441",
+    "pm-451",
+    "pm-431-table",
+    "pm-431-head"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 431 · SÇ 441 · SÇ 451",
+      "sub": "Overhead and bench miter saws",
+      "models": [
+       "SÇ 431",
+       "SÇ 441",
+       "SÇ 451"
+      ],
+      "rows": [
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "Overhead (top-down) miter saw on its stand, pneumatic clamping",
+         "Bench miter saw",
+         "Bench miter saw"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade",
+        "sub": "",
+        "cells": [
+         "Ø15-3/4″ (400 mm)",
+         "Ø11-13/16″ (300 mm)",
+         "Ø15-3/4″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Miter range",
+        "sub": "",
+        "cells": [
+         "−45° to +45°",
+         "−45° to +45°",
+         "−45° to +45°"
+        ],
+        "key": true
+       },
+       {
+        "label": "Quick stops",
+        "sub": "",
+        "cells": [
+         "90°, 75°, 60°, 45°",
+         "0°, 15°, 22.5°, 30°, 45° left and right",
+         "0°, 15°, 22.5°, 30°, 45° left and right"
+        ],
+        "key": false
+       },
+       {
+        "label": "Capacity at 90°",
+        "sub": "height × width",
+        "cells": [
+         "4-3/4 × 7-1/16″ (120 × 180 mm)",
+         "—",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity at 45°",
+        "sub": "height × width",
+        "cells": [
+         "4-3/4 × 4-15/16″ (120 × 125 mm)",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting length",
+        "sub": "with the conveyor",
+        "cells": [
+         "14-3/16″ – 129-15/16″ (360 – 3,300 mm)",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.08 CFM (2.2 l/min)",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "265 lb (120 kg)",
+         "—",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "26 × 31 × 53″ (650 × 800 × 1,340 mm)",
+         "—",
+         "—"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 431",
+      "glance": [
+       "Ø15-3/4″ blade, ±45°",
+       "4-3/4 × 7-1/16″ at 90°",
+       "2 HP",
+       "0.08 CFM",
+       "265 lb"
+      ]
+     },
+     {
+      "name": "SÇ 441",
+      "glance": [
+       "Ø11-13/16″ blade, ±45°",
+       "—",
+       "—",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "SÇ 451",
+      "glance": [
+       "Ø15-3/4″ blade, ±45°",
+       "—",
+       "—",
+       "—",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 431": "Ø15-3/4″ (400 mm) blade",
+     "SÇ 441": "Ø11-13/16″ (300 mm) blade",
+     "SÇ 451": "Ø15-3/4″ (400 mm) blade"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Cutting capacities are the largest profile, height × width, at the angle shown."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-miter"
+  },
+  "plastmak-gold-plus": {
+   "id": "plastmak-gold-plus",
+   "brand": "plastmak",
+   "name": "SÇ 100 Gold Plus 4-corner PVC welder and Gold Plus Full welding & cleaning line, frames to 145-11/16 × 106-5/16″",
+   "short": "SÇ 100 Gold Plus · Gold Plus Full",
+   "models_label": "SÇ 100 Gold Plus · Gold Plus Full · 2 models",
+   "summary": "The fastest way to weld a PVC window frame: the SÇ 100 Gold Plus welds all four corners at 90° at the same time. Its heads ride on linear rails, driven by servo motors through planetary gearboxes, and automatic carriers bring the profiles in; frames from 16-1/8 × 19-1/2″ up to 145-11/16 × 106-5/16″ (410 × 495 to 3,700 × 2,700 mm), profiles 1-9/16″ to 7-7/8″ high, with a 0.2 mm seam on every profile type. A barcode scanner and a 19″ Windows screen recall each profile's temperatures and times. The Gold Plus Full adds a high-precision carrier robot and a CNC corner cleaner that recognises each frame itself — welding and cleaning in one line, four frames on it at once, with automatic colour / white separation.",
+   "headline": "4 corners at once · frames to 145-11/16 × 106-5/16″ · welding and cleaning line (Full)",
+   "features": [
+    "Welds the four corners of a PVC frame at 90° at the same time; single-corner welding too",
+    "Axes on servo motors with planetary gearboxes; linear-rail top presses; automatic carriers",
+    "0.2 mm weld seam possible on every profile type; U (threshold-less door) welding",
+    "Heating temperature and time set independently by PID; welding, cooling and temperature stored per profile",
+    "Barcode scanner and 19″ Windows-based screen; quick mould change; roll-type Teflon changed in minutes",
+    "Gold Plus Full: carrier robot arm and CNC corner cleaner that identifies each frame without the operator; 2-axis carrier arm feeding profiles; 4 frames on the line at once; automatic colour / white separation",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Gasket press system (frames 20-1/2 × 20-1/2″ to 143-11/16 × 104-5/16″)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-100gp",
+    "pm-100gp-full",
+    "pm-gp-head",
+    "pm-gp-heads",
+    "pm-gp-top",
+    "pm-gp-press",
+    "pm-gp-heater",
+    "pm-gp-console",
+    "pm-gp-robot",
+    "pm-gp-cleaner",
+    "pm-gp-corner"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 100 Gold Plus · Gold Plus Full",
+      "sub": "4-corner PVC welding",
+      "models": [
+       "SÇ 100 Gold Plus",
+       "SÇ 100 Gold Plus Full"
+      ],
+      "rows": [
+       {
+        "label": "Machine",
+        "sub": "",
+        "cells": [
+         "4-corner welding machine",
+         "4-corner welding machine, carrier robot and CNC corner cleaner in one line"
+        ],
+        "key": true
+       },
+       {
+        "label": "Welding angle",
+        "sub": "",
+        "cells": [
+         "90°",
+         "90°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Profile height",
+        "sub": "min – max",
+        "cells": [
+         "1-9/16″ – 7-7/8″ (40 – 200 mm)",
+         "1-9/16″ – 7-7/8″ (40 – 200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile width",
+        "sub": "max.",
+        "cells": [
+         "5-7/8″ (150 mm)",
+         "5-7/8″ (150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Frame size, min.",
+        "sub": "width × length",
+        "cells": [
+         "16-1/8 × 19-1/2″ (410 × 495 mm); 20-1/2 × 20-1/2″ (520 × 520 mm) with gasket press",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Frame size, max.",
+        "sub": "width × length",
+        "cells": [
+         "145-11/16 × 106-5/16″ (3,700 × 2,700 mm); 143-11/16 × 104-5/16″ (3,650 × 2,650 mm) with gasket press",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Weld seam",
+        "sub": "",
+        "cells": [
+         "0.2 mm (.008″) seam possible on every profile",
+         "0.2 mm (.008″) seam possible on every profile"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "33.5 HP (25 kW)",
+         "45.6 HP (34 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "6.4 CFM (180 l/min)",
+         "12.4 CFM (350 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,189 lb (1,900 kg)",
+         "8,267 lb (3,750 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "L × W × H",
+        "cells": [
+         "208 × 184 × 66″ (5,280 × 4,670 × 1,670 mm)",
+         "531 × 217″ (13,500 × 5,500 mm) line footprint"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 100 Gold Plus",
+      "glance": [
+       "Frames to 145-11/16 × 106-5/16″",
+       "h 1-9/16 – 7-7/8″ · w 5-7/8″",
+       "33.5 HP",
+       "6.4 CFM",
+       "4,189 lb"
+      ]
+     },
+     {
+      "name": "SÇ 100 Gold Plus Full",
+      "glance": [
+       "4 corners welded and cleaned",
+       "h 1-9/16 – 7-7/8″ · w 5-7/8″",
+       "45.6 HP",
+       "12.4 CFM",
+       "8,267 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 100 Gold Plus Full": "welding and cleaning line",
+     "SÇ 100 Gold Plus": "4-corner welder"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-weld"
+  },
+  "plastmak-100-101": {
+   "id": "plastmak-100-101",
+   "brand": "plastmak",
+   "name": "SÇ 100 · SÇ 101 double- and single-head PVC welders, profiles to 6-5/16″ high",
+   "short": "SÇ 100 · SÇ 101",
+   "models_label": "SÇ 100 · SÇ 101 · 2 models",
+   "summary": "The welders of most PVC window shops. The SÇ 100 welds two corners at once: its right head is moved to the profile length and locked with a button, profiles from 13-3/8″ to 126″ (340 – 3,200 mm) long and 1-9/16″ to 6-5/16″ high, with a normal or a 0.2 mm seam on laminated profiles, and top-down centring on linear guides. The SÇ 101 welds one corner at any angle from 25° to 180° — for arches, bays and odd frames — with individually clamping top pistons, a moving left table and a foot pedal. Both are PLC-controlled with thermostatic heating plates set on a digital display, store temperature, time and pressure for each profile type, and change moulds quickly.",
+   "headline": "Two corners (SÇ 100) or one at 25° – 180° (SÇ 101) · profiles to 6-5/16″ high",
+   "features": [
+    "SÇ 100: two heads, right head positioned and locked by button; profiles 13-3/8″ – 126″ (340 – 3,200 mm) long",
+    "SÇ 100: normal and 0.2 mm seams on laminated profiles; single-corner welding; top-down centring; linear guides",
+    "SÇ 101: any angle from 25° to 180°; individually clamping top pistons; moving left table; foot-pedal clamping",
+    "PLC control; thermostatic heating plates, temperature set on a digital display; temperature, time and pressure per profile",
+    "Quick mould change; power supply protected against voltage surges",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-100",
+    "pm-101",
+    "pm-100-head",
+    "pm-100-side",
+    "pm-100-heater",
+    "pm-100-panel",
+    "pm-100-guide",
+    "pm-101-head",
+    "pm-101-plates"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 100 · SÇ 101",
+      "sub": "Double- and single-head PVC welding",
+      "models": [
+       "SÇ 100",
+       "SÇ 101"
+      ],
+      "rows": [
+       {
+        "label": "Heads",
+        "sub": "",
+        "cells": [
+         "2 (right head moves, locked by button)",
+         "1 (left table moves)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Welding angle",
+        "sub": "",
+        "cells": [
+         "90°",
+         "25° – 180°"
+        ],
+        "key": true
+       },
+       {
+        "label": "Welded profile length",
+        "sub": "min – max",
+        "cells": [
+         "13-3/8″ – 126″ (340 – 3,200 mm)",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile height",
+        "sub": "min – max",
+        "cells": [
+         "1-9/16″ – 6-5/16″ (40 – 160 mm)",
+         "1-9/16″ – 6-5/16″ (40 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile width",
+        "sub": "max.",
+        "cells": [
+         "6-1/2″ (165 mm)",
+         "7-7/8″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weld seam",
+        "sub": "",
+        "cells": [
+         "Normal or 0.2 mm (.008″) on laminated profiles",
+         "Normal or 0.2 mm (.008″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "PLC, digital heating-plate temperature",
+         "PLC, digital heating-plate temperature"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "12.1 HP (9 kW)",
+         "5.4 HP (4 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "2.5 CFM (70 l/min)",
+         "2.5 CFM (70 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,069 lb (485 kg)",
+         "298 lb (135 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "152 × 55 × 62″ (3,870 × 1,400 × 1,570 mm)",
+         "24 × 25 × 55″ (610 × 630 × 1,390 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 100",
+      "glance": [
+       "Profiles 13-3/8″ – 126″ long",
+       "h 1-9/16 – 6-5/16″ · w 6-1/2″",
+       "12.1 HP",
+       "2.5 CFM",
+       "1,069 lb"
+      ]
+     },
+     {
+      "name": "SÇ 101",
+      "glance": [
+       "One corner, 25° – 180°",
+       "h 1-9/16 – 6-5/16″ · w 7-7/8″",
+       "5.4 HP",
+       "2.5 CFM",
+       "298 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 100": "double-head welder",
+     "SÇ 101": "single-head welder, 25° – 180°"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [
+    {
+     "id": "w9HuC6RrHno",
+     "title": "SÇ 101 welding a PVC corner",
+     "duration": "PT0M48S",
+     "thumb": "video-w9HuC6RrHno"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-weld"
+  },
+  "plastmak-6000": {
+   "id": "plastmak-6000",
+   "brand": "plastmak",
+   "name": "SÇ 6000 · SÇ 6000S CNC corner cleaners, profiles to 7-7/8″ high",
+   "short": "SÇ 6000 · SÇ 6000S",
+   "models_label": "SÇ 6000 · SÇ 6000S · 2 models",
+   "summary": "After welding, every corner of a PVC frame carries a bead of melted plastic that has to come off. The SÇ 6000 cleans the bottom, top and outer faces of 90° corners with a Ø9-13/16″ (250 mm) diamond-tipped saw, scrapers and a high-frequency spindle on two servo axes — 5 to 8 seconds a corner, 400 to 500 frames in an 8-hour shift; programs are written with a joystick, angles and radii come from circular interpolation, and a pedal centres the frame. The SÇ 6000S is the full CNC cleaner: 10 tools in separate groups clean top and bottom faces of white and laminated profiles, the inner and outer seal grooves and angled and radiused surfaces, it recognises the profile itself, and it imports DXF drawings through CAM Codex — 160 to 200 frames a shift.",
+   "headline": "2 axes · 400 – 500 frames a shift (SÇ 6000) · 10 tools, DXF (SÇ 6000S)",
+   "features": [
+    "Ø9-13/16″ (250 mm) diamond-tipped saw and bearing-guided scrapers; high-frequency 18,000 rpm spindle",
+    "SÇ 6000: 2 servo axes and 1 high-frequency motor; joystick programming of Y and Z; touch screen; foot-pedal centring",
+    "SÇ 6000: 5 – 8 s a corner, 400 – 500 frames a shift; daily and monthly production report; sensor profile stop",
+    "SÇ 6000S: 10 cleaning tools; seal grooves, angled and radiused surfaces; automatic profile recognition",
+    "SÇ 6000S: 19″ LCD screen, own software, DXF import and drawing with CAM Codex; automatic timed lubrication; linear slides",
+    "Unlimited program memory; profile carry tables with brush tops that keep the profiles from scratching",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-6000",
+    "pm-6000s",
+    "pm-6000-panel",
+    "pm-6000-saw",
+    "pm-6000-head",
+    "pm-6000-inside",
+    "pm-6000s-tools",
+    "pm-6000s-head",
+    "pm-6000s-inside",
+    "pm-6000s-scraper",
+    "pm-6000s-pendant"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 6000 · SÇ 6000S",
+      "sub": "CNC corner cleaning, 2 axes",
+      "models": [
+       "SÇ 6000",
+       "SÇ 6000S"
+      ],
+      "rows": [
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "PLC / NC, joystick programming, touch screen",
+         "CNC, 19″ Windows screen, DXF import (CAM Codex)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Output",
+        "sub": "8-hour shift",
+        "cells": [
+         "400 – 500 frames a shift; 5 – 8 s a corner",
+         "160 – 200 frames a shift, all surfaces and seal grooves"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cleaning tools",
+        "sub": "",
+        "cells": [
+         "Saw, scrapers and cutters on 2 servo axes",
+         "10 tools in separate groups"
+        ],
+        "key": false
+       },
+       {
+        "label": "Frame size",
+        "sub": "min. A × B",
+        "cells": [
+         "from 13-3/4 × 13-3/4″ (350 × 350 mm)",
+         "from 13-3/4 × 13-3/4″ (350 × 350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Profile width",
+        "sub": "max. a",
+        "cells": [
+         "5-7/8″ (150 mm)",
+         "4-3/4″ (120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile height",
+        "sub": "max. h",
+        "cells": [
+         "7-7/8″ (200 mm)",
+         "5-7/8″ (150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Saw blade",
+        "sub": "",
+        "cells": [
+         "Ø9-13/16″ (250 mm) diamond-tipped, .079″ (2 mm) thick",
+         "Ø9-13/16″ (250 mm) diamond-tipped, .079″ (2 mm) thick"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)",
+         "Ø1-1/4″ (32 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle",
+        "sub": "",
+        "cells": [
+         "18,000 rpm, 300 Hz, 1.9 HP (1.4 kW)",
+         "18,000 rpm, 300 Hz, 2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "8 HP (6 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "1.4 CFM (40 l/min)",
+         "4.2 CFM (120 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "882 lb (400 kg)",
+         "1,653 lb (750 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "41 × 55 × 62″ (1,030 × 1,400 × 1,570 mm)",
+         "49 × 73 × 83″ (1,250 × 1,850 × 2,100 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 6000",
+      "glance": [
+       "400 – 500 frames a shift",
+       "h 7-7/8″ · w 5-7/8″",
+       "4 HP",
+       "1.4 CFM",
+       "882 lb"
+      ]
+     },
+     {
+      "name": "SÇ 6000S",
+      "glance": [
+       "160 – 200 frames a shift, 10 tools",
+       "h 5-7/8″ · w 4-3/4″",
+       "8 HP",
+       "4.2 CFM",
+       "1,653 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 6000": "semi-automatic CNC corner cleaner",
+     "SÇ 6000S": "CNC corner cleaner, 10 tools"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-clean"
+  },
+  "plastmak-601": {
+   "id": "plastmak-601",
+   "brand": "plastmak",
+   "name": "SÇ 601 corner cleaning machine with 3 knives, profiles to 4-15/16″ wide",
+   "short": "SÇ 601",
+   "models_label": "SÇ 601 · 1 model",
+   "summary": "The PLC-controlled corner cleaner for shops that weld on an SÇ 100 or SÇ 101: the welded corner is pushed against the square, centred automatically, and three knives and bearing-guided scrapers clean the corner and its top and bottom faces in one cycle. Frame and sash profiles are told apart automatically, and on acrylic-coated profiles surface and corner cleaning can be run separately. Profiles up to 4-15/16″ (125 mm) wide and 1-9/16″ to 3-9/16″ (40 – 90 mm) high.",
+   "headline": "3 knives · profiles to 4-15/16″ wide, 1-9/16″ – 3-9/16″ high",
+   "features": [
+    "Cleans the corner and the top and bottom faces after welding",
+    "3 different knives; bearing-guided scraping system",
+    "Automatic squaring against the stop and automatic centring of the profile",
+    "Automatic frame / sash separation; surface and corner cleaning separately for acrylic profiles",
+    "Fully automatic PLC operation",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-601",
+    "pm-601-inside",
+    "pm-601-cutter",
+    "pm-601-scraper"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 601",
+      "sub": "Corner cleaning machine, 3 knives",
+      "models": [
+       "SÇ 601"
+      ],
+      "rows": [
+       {
+        "label": "Cleaning",
+        "sub": "",
+        "cells": [
+         "Corners, top and bottom faces; frame and sash profiles told apart automatically"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile width",
+        "sub": "max. a",
+        "cells": [
+         "4-15/16″ (125 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile height",
+        "sub": "min – max h",
+        "cells": [
+         "1-9/16″ – 3-9/16″ (40 – 90 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Knives",
+        "sub": "",
+        "cells": [
+         "3"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutter",
+        "sub": "max.",
+        "cells": [
+         "Ø8-1/4″ (210 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutter bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.35 CFM (10 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "397 lb (180 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "30 × 39 × 59″ (770 × 980 × 1,510 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 601",
+      "glance": [
+       "90° corners, 3 knives",
+       "h 1-9/16 – 3-9/16″ · w 4-15/16″",
+       "2 HP",
+       "0.35 CFM",
+       "397 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 601": "corner cleaner, 3 knives"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-clean"
+  },
+  "plastmak-4550": {
+   "id": "plastmak-4550",
+   "brand": "plastmak",
+   "name": "SÇ 4550 9-axis profile machining and cutting centre, profiles to 21′ 4″",
+   "short": "SÇ 4550",
+   "models_label": "SÇ 4550 · 1 model",
+   "summary": "A complete machining line for aluminum and PVC profiles: seven profiles wait in the magazine, the length of each is measured automatically, a 3-axis holding station clamps it, and ten high-speed air-cooled spindles groove, drill, mark and mill it before a servo-controlled Ø21-5/8″ (550 mm) saw cuts it at any angle from 30° to 150° to ±0.1°. Profiles from 78-3/4″ to 255-7/8″ (2,000 – 6,500 mm), axes averaging 394 ft/min (120 m/min). Finished parts wait on a station and leave on a belt conveyor with a printed barcode label; offcuts go to the collection cart by conveyor. A 23.8″ touch screen runs Windows-based software; jobs arrive by USB, the machine can be watched online and is backed by a UPS.",
+   "headline": "9 axes · 10 spindles · profiles 78-3/4″ – 255-7/8″ · saw 30° – 150°",
+   "features": [
+    "Grooving, drilling, marking and cutting at different angles on aluminum and PVC profiles",
+    "10 high-speed air-cooled spindle motors for aluminum; precision 3-axis profile holding station",
+    "Profile magazine for 7 profiles; automatic profile length detection",
+    "Servo-controlled Ø21-5/8″ (550 mm) cutting unit, 30° – 150°, ±0.1°",
+    "Waiting station for processed profiles; outlet belt conveyor; barcode printer; automatic waste conveyor to the cart",
+    "23.8″ touch screen, Windows-based software; USB data transfer; online remote monitoring and remote support; UPS",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Compatibility with CAM programs",
+    "Optional profile length",
+    "Safety barrier (sensor)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-4550",
+    "pm-4550-spindles",
+    "pm-4550-heads",
+    "pm-4550-saw",
+    "pm-4550-printer",
+    "pm-4550-outfeed",
+    "pm-4550-station"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 4550",
+      "sub": "Profile machining and cutting centre, 9 axes",
+      "models": [
+       "SÇ 4550"
+      ],
+      "rows": [
+       {
+        "label": "Axes",
+        "sub": "",
+        "cells": [
+         "9"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile length",
+        "sub": "min – max",
+        "cells": [
+         "78-3/4″ – 255-7/8″ (2,000 – 6,500 mm) — 6′ 7″ to 21′ 4″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindles",
+        "sub": "",
+        "cells": [
+         "10 high-speed air-cooled spindle motors for aluminum"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle head travel",
+        "sub": "X / Y / Z",
+        "cells": [
+         "11-13/16 / 12-5/8 / 10-1/4″ (300 / 320 / 260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axis speed",
+        "sub": "",
+        "cells": [
+         "394 ft/min (120 m/min) average"
+        ],
+        "key": false
+       },
+       {
+        "label": "Profile magazine",
+        "sub": "",
+        "cells": [
+         "7 profiles"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting unit",
+        "sub": "",
+        "cells": [
+         "Servo-controlled, 30° – 150°, ±0.1°"
+        ],
+        "key": true
+       },
+       {
+        "label": "Saw blade",
+        "sub": "",
+        "cells": [
+         "Ø21-5/8″ (550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade bore",
+        "sub": "",
+        "cells": [
+         "Ø1-1/4″ (32 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "51 HP (38 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "17.7 CFM (500 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "8,267 lb (3,750 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "L × W × H",
+        "cells": [
+         "535 × 109 × 87″ (13,600 × 2,760 × 2,200 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 4550",
+      "glance": [
+       "Profiles 78-3/4″ – 255-7/8″",
+       "9 axes, 10 spindles",
+       "51 HP",
+       "17.7 CFM",
+       "8,267 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 4550": "9 axes, 10 spindles"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-cnc"
+  },
+  "plastmak-5000": {
+   "id": "plastmak-5000",
+   "brand": "plastmak",
+   "name": "SÇ 5000 · SÇ 5000S 3-axis CNC drilling and milling machines, travel 15-3/8 × 7-7/8 × 7-7/8″",
+   "short": "SÇ 5000 · SÇ 5000S",
+   "models_label": "SÇ 5000 · SÇ 5000S · 2 models",
+   "summary": "Three-axis CNC machines that do the hardware work of a window on one station: lock and handle places, hinge and espagnolette slots, barrel holes, triple drilling and drainage slots, with three spindles at 18,000 rpm on servo axes travelling 15-3/8 × 7-7/8 × 7-7/8″ (390 × 200 × 200 mm). The SÇ 5000 is for PVC — door, sash and sliding work, point-to-point programming, inside drainage slots, measuring arms with stops and laser centring. The SÇ 5000S takes aluminum and PVC: three independent 1.9 HP spindles, a 19″ Windows screen with DXF import and CAM Codex, on-screen simulation, cooling for aluminum, an automatic safety cover and a wider working area; switching between aluminum and PVC on the touch screen changes every speed by itself.",
+   "headline": "3 axes · 3 spindles at 18,000 rpm · travel 15-3/8 × 7-7/8 × 7-7/8″",
+   "features": [
+    "Door, sash, handle-cylinder (barrel) and triple drilling on one station; drainage slots",
+    "3 spindles at 18,000 rpm on X, Y and Z servo axes, travel 15-3/8 × 7-7/8 × 7-7/8″ (390 × 200 × 200 mm)",
+    "Right and left measuring arms with stops; laser centring; unlimited memory",
+    "SÇ 5000: PVC profiles, easy point-to-point programming",
+    "SÇ 5000S: aluminum and PVC; 19″ Windows screen, DXF import and drawing with CAM Codex; process simulation on screen",
+    "SÇ 5000S: cooling for aluminum; aluminum / PVC switch on the touch screen; linear guides; automatic lubrication; automatic safety cover; remote support",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-5000",
+    "pm-5000s",
+    "pm-5000-screen",
+    "pm-5000-spindles",
+    "pm-5000-inside",
+    "pm-5000-heads",
+    "pm-5000s-screen",
+    "pm-5000s-console",
+    "pm-5000s-spindles",
+    "pm-5000s-inside",
+    "pm-5000s-clamp",
+    "pm-5000s-table"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 5000 · SÇ 5000S",
+      "sub": "3-axis CNC drilling and milling",
+      "models": [
+       "SÇ 5000",
+       "SÇ 5000S"
+      ],
+      "rows": [
+       {
+        "label": "Profiles",
+        "sub": "",
+        "cells": [
+         "PVC",
+         "Aluminum and PVC"
+        ],
+        "key": true
+       },
+       {
+        "label": "Axis travel",
+        "sub": "X / Y / Z",
+        "cells": [
+         "15-3/8 / 7-7/8 / 7-7/8″ (390 / 200 / 200 mm)",
+         "15-3/8 / 7-7/8 / 7-7/8″ (390 / 200 / 200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindles",
+        "sub": "",
+        "cells": [
+         "3 motors: 1 + 0.7 + 0.7 HP (0.75 + 0.55 + 0.55 kW), 18,000 rpm",
+         "3 independent: 3 × 1.9 HP (3 × 1.4 kW), 18,000 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Router cutter / shank",
+        "sub": "",
+        "cells": [
+         "Ø3/16″ / Ø5/16″ (5 / 8 mm)",
+         "Ø3/16″ / Ø5/16″ (5 / 8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Routing length",
+        "sub": "min.",
+        "cells": [
+         "3-1/8″ (80 mm)",
+         "3-1/8″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Point-to-point programming, laser centring",
+         "19″ Windows screen, DXF import (CAM Codex), simulation"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "8 HP (6 kW)",
+         "8 HP (6 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.32 CFM (9 l/min)",
+         "0.32 CFM (9 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "783 lb (355 kg)",
+         "1,653 lb (750 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "94 × 44 × 76″ (2,400 × 1,130 × 1,940 mm)",
+         "52 × 66 × 75″ (1,330 × 1,670 × 1,900 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 5000",
+      "glance": [
+       "Travel 15-3/8 × 7-7/8 × 7-7/8″",
+       "PVC, 3 spindles",
+       "8 HP",
+       "0.32 CFM",
+       "783 lb"
+      ]
+     },
+     {
+      "name": "SÇ 5000S",
+      "glance": [
+       "Travel 15-3/8 × 7-7/8 × 7-7/8″",
+       "Aluminum & PVC, 3 spindles",
+       "8 HP",
+       "0.32 CFM",
+       "1,653 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 5000": "3-axis CNC for PVC",
+     "SÇ 5000S": "3-axis CNC for aluminum and PVC"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-cnc"
+  },
+  "plastmak-copy": {
+   "id": "plastmak-copy",
+   "brand": "plastmak",
+   "name": "SÇ 501 · 502S · 512 · 521S · 542 copy routers, travel 11 × 4-15/16 × 3-9/16″",
+   "short": "SÇ 501 · 502S · 512 · 521S · 542",
+   "models_label": "SÇ 501 · 502S · 512 · 521S · 542 · 5 models",
+   "summary": "A copy router follows a template with a stylus while the router cuts the same shape into the profile — the quick, simple way to make lock, handle and hinge cut-outs and drainage slots in series. On the SÇ 501 (PVC, 12,000 rpm), SÇ 502S and SÇ 512 (aluminum and PVC, 18,000 rpm) the copy head works on the vertical axis and a triple drilling unit on the horizontal one, each able to run on its own; a universal template comes with them and special templates can be made. The SÇ 521S opens water drainage slots with three independent 18,000 rpm routers that can work angled, over a table that moves right and left. The SÇ 542 is the aluminum router: an 18,000 rpm spindle, oil cooling and a template system made for aluminum handle, lock and hardware slots. All travel 11 × 4-15/16 × 3-9/16″ (280 × 125 × 90 mm).",
+   "headline": "Travel 11 × 4-15/16 × 3-9/16″ · 12,000 – 18,000 rpm · triple drilling (501 · 502S · 512)",
+   "features": [
+    "Copy head on the vertical axis, triple drilling unit on the horizontal axis (SÇ 501 · 502S · 512); each works on its own",
+    "Universal template; templates made to order",
+    "Water drainage slots, also angled (SÇ 501 · 502S · 521S)",
+    "High-frequency 18,000 rpm routers (SÇ 502S · 512 · 521S · 542); cooling on the SÇ 512, oil cooling on the SÇ 542",
+    "SÇ 521S: three routers working separately or together, pneumatic clamping, fully automatic cycle",
+    "Right conveyor 3′ 3″ (1 m) on the SÇ 502S, 512 and 542; dual support system on the SÇ 502S",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Optional templates",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-501",
+    "pm-502s",
+    "pm-512",
+    "pm-521s",
+    "pm-542",
+    "pm-501-drill",
+    "pm-501-head",
+    "pm-502-panel",
+    "pm-502-template",
+    "pm-502-top",
+    "pm-512-head",
+    "pm-521s-heads",
+    "pm-521s-table",
+    "pm-542-spindle",
+    "pm-542-template",
+    "pm-542-head",
+    "pm-542-clamp",
+    "pm-542-top"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 501 · 502S · 512 · 521S · 542",
+      "sub": "Copy routers",
+      "models": [
+       "SÇ 501",
+       "SÇ 502S",
+       "SÇ 512",
+       "SÇ 521S",
+       "SÇ 542"
+      ],
+      "rows": [
+       {
+        "label": "Profiles",
+        "sub": "",
+        "cells": [
+         "PVC",
+         "Aluminum and PVC",
+         "Aluminum and PVC",
+         "PVC",
+         "Aluminum"
+        ],
+        "key": true
+       },
+       {
+        "label": "Jobs",
+        "sub": "",
+        "cells": [
+         "Lock places, hinge slots, handle holes, drainage slots",
+         "Lock places, hinge slots, handle holes, drainage slots",
+         "Lock places, hinge slots, handle holes",
+         "Water drainage slots, 3 routers",
+         "Handles, locks and hardware slots"
+        ],
+        "key": true
+       },
+       {
+        "label": "Router speed",
+        "sub": "",
+        "cells": [
+         "12,000 rpm",
+         "18,000 rpm",
+         "18,000 rpm",
+         "18,000 rpm",
+         "18,000 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Router motor",
+        "sub": "",
+        "cells": [
+         "2 × 1.2 HP (2 × 0.9 kW)",
+         "1.2 + 1 HP (0.9 + 0.75 kW)",
+         "1 HP (0.75 kW)",
+         "3 × 1 HP (3 × 0.75 kW)",
+         "1.9 HP (1.4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Router travel",
+        "sub": "X / Y / Z",
+        "cells": [
+         "11 / 4-15/16 / 3-9/16″ (280 / 125 / 90 mm)",
+         "11 / 4-15/16 / 3-9/16″ (280 / 125 / 90 mm)",
+         "11 / 4-15/16 / 3-9/16″ (280 / 125 / 90 mm)",
+         "11 / 4-15/16 / 3-9/16″ (280 / 125 / 90 mm)",
+         "11 / 4-15/16 / 3-9/16″ (280 / 125 / 90 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Router cutter / shank",
+        "sub": "",
+        "cells": [
+         "Ø3/16″ / Ø5/16″ (5 / 8 mm)",
+         "Ø3/16″ / Ø5/16″ (5 / 8 mm)",
+         "Ø3/16″ / Ø5/16″ (5 / 8 mm)",
+         "Ø3/16″ / Ø5/16″ (5 / 8 mm)",
+         "Ø3/16″ / Ø5/16″ (5 / 8 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Routing length",
+        "sub": "min.",
+        "cells": [
+         "3-1/8″ (80 mm)",
+         "3-1/8″ (80 mm)",
+         "3-1/8″ (80 mm)",
+         "3-1/8″ (80 mm)",
+         "3-1/8″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Triple drilling unit",
+        "sub": "",
+        "cells": [
+         "1 HP (0.75 kW); drills to Ø7/16″ / Ø1/2″ (11 / 12 mm)",
+         "1 HP (0.75 kW); drills to Ø7/16″ / Ø1/2″ (11 / 12 mm)",
+         "1 HP (0.75 kW); drills to Ø7/16″ / Ø1/2″ (11 / 12 mm)",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "3.4 HP (2.5 kW)",
+         "4 HP (3 kW)",
+         "2 HP (1.5 kW)",
+         "4 HP (3 kW)",
+         "1.9 HP (1.4 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.32 CFM (9 l/min)",
+         "0.32 CFM (9 l/min)",
+         "0.32 CFM (9 l/min)",
+         "0.32 CFM (9 l/min)",
+         "0.32 CFM (9 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Conveyor",
+        "sub": "",
+        "cells": [
+         "—",
+         "Right, 3′ 3″ (1 m)",
+         "Right, 3′ 3″ (1 m)",
+         "Table moves right and left",
+         "Right, 3′ 3″ (1 m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "254 lb (115 kg)",
+         "287 lb (130 kg)",
+         "243 lb (110 kg)",
+         "309 lb (140 kg)",
+         "198 lb (90 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "26 × 35 × 48″ (650 × 900 × 1,220 mm)",
+         "28 × 38 × 49″ (710 × 960 × 1,250 mm)",
+         "26 × 35 × 48″ (650 × 900 × 1,220 mm)",
+         "29 × 35 × 58″ (740 × 900 × 1,475 mm)",
+         "25 × 36 × 57″ (631 × 920 × 1,443 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 501",
+      "glance": [
+       "Travel 11 × 4-15/16 × 3-9/16″",
+       "PVC, triple drilling",
+       "3.4 HP",
+       "0.32 CFM",
+       "254 lb"
+      ]
+     },
+     {
+      "name": "SÇ 502S",
+      "glance": [
+       "Travel 11 × 4-15/16 × 3-9/16″",
+       "Aluminum & PVC, triple drilling",
+       "4 HP",
+       "0.32 CFM",
+       "287 lb"
+      ]
+     },
+     {
+      "name": "SÇ 512",
+      "glance": [
+       "Travel 11 × 4-15/16 × 3-9/16″",
+       "Aluminum & PVC, triple drilling",
+       "2 HP",
+       "0.32 CFM",
+       "243 lb"
+      ]
+     },
+     {
+      "name": "SÇ 521S",
+      "glance": [
+       "3 drainage-slot routers",
+       "PVC",
+       "4 HP",
+       "0.32 CFM",
+       "309 lb"
+      ]
+     },
+     {
+      "name": "SÇ 542",
+      "glance": [
+       "Travel 11 × 4-15/16 × 3-9/16″",
+       "Aluminum",
+       "1.9 HP",
+       "0.32 CFM",
+       "198 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 501": "PVC copy router, triple drilling",
+     "SÇ 502S": "18,000 rpm copy router",
+     "SÇ 512": "3-hole copy router",
+     "SÇ 521S": "3 drainage-slot routers",
+     "SÇ 542": "aluminum copy router"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [
+    {
+     "id": "eSDM6QInOfs",
+     "title": "SÇ 501 copy router making hardware cut-outs",
+     "duration": "PT0M59S",
+     "thumb": "video-eSDM6QInOfs"
+    },
+    {
+     "id": "phyPgKa6BxE",
+     "title": "SÇ 502S copy router, 3 spindles",
+     "duration": "PT0M56S",
+     "thumb": "video-phyPgKa6BxE"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-copy"
+  },
+  "plastmak-211": {
+   "id": "plastmak-211",
+   "brand": "plastmak",
+   "name": "SÇ 211 · SÇ 211S end milling machines, cutters to Ø6-5/16″",
+   "short": "SÇ 211 · SÇ 211S",
+   "models_label": "SÇ 211 · SÇ 211S · 2 models",
+   "summary": "An end milling machine shapes the end of a mullion (transom) to the contour of the frame profile it butts against, so the joint closes tight. The SÇ 211 mills PVC and aluminum mullions with a stack of cutters up to Ø5-1/2″ (140 mm) and 3-9/16″ (90 mm) high: two vertical and one horizontal vise hold the profile, a pneumatic cylinder moves the milling motor, and a separator button switches between profile series. The heavier SÇ 211S mills aluminum to high quality from −45° to +45° on mechanical stops, with cutters up to Ø6-5/16″ (160 mm) and a second 7-7/8″ (200 mm) stack; a whole cutter group changes with one button and three more wait on the rack, the support adjusts to four profiles, the feed is hydro-pneumatic and a boron-oil spray cools the cut.",
+   "headline": "Cutters to Ø6-5/16″ · stack to 3-9/16″ + 7-7/8″ · ±45° (SÇ 211S)",
+   "features": [
+    "End milling of mullion (transom) connections on PVC and aluminum profiles",
+    "SÇ 211: 2 vertical and 1 horizontal vise, pneumatic profile clamping; milling motor moved by a pneumatic cylinder",
+    "SÇ 211: easy series change with the separator button (60 – 70 series)",
+    "SÇ 211S: −45° to +45° with mechanical angle stops; cutter groups changed with a single button; rack for 3 groups",
+    "SÇ 211S: support adjustable for four profiles; hydro-pneumatic cutting speed; boron-oil spray",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Hydro-check feed (SÇ 211)",
+    "Cooling system (SÇ 211)",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-211",
+    "pm-211s",
+    "pm-211-front",
+    "pm-211-vises",
+    "pm-211-cutters",
+    "pm-211-stack",
+    "pm-211s-change"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 211 · SÇ 211S",
+      "sub": "End milling machines",
+      "models": [
+       "SÇ 211",
+       "SÇ 211S"
+      ],
+      "rows": [
+       {
+        "label": "Profiles",
+        "sub": "",
+        "cells": [
+         "PVC and aluminum",
+         "Aluminum and PVC"
+        ],
+        "key": true
+       },
+       {
+        "label": "Milling angle",
+        "sub": "",
+        "cells": [
+         "To 30°",
+         "−45° to +45°, mechanical stops"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutter",
+        "sub": "max.",
+        "cells": [
+         "Ø5-1/2″ (140 mm)",
+         "Ø6-5/16″ (160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutter bore",
+        "sub": "",
+        "cells": [
+         "Ø1-3/16″ (30 mm)",
+         "Ø1-3/16″ (30 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutter stack height",
+        "sub": "max.",
+        "cells": [
+         "3-9/16″ (90 mm)",
+         "3-9/16″ + 7-7/8″ (90 + 200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutter change",
+        "sub": "",
+        "cells": [
+         "Series switch button (60 – 70 series)",
+         "Whole cutter group by one button; rack for 3 groups"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.35 CFM (10 l/min)",
+         "0.35 CFM (10 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "220 lb (100 kg)",
+         "342 lb (155 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "27 × 24 × 48″ (690 × 600 × 1,220 mm)",
+         "41 × 26 × 49″ (1,030 × 670 × 1,245 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 211",
+      "glance": [
+       "Cutters to Ø5-1/2″",
+       "PVC & aluminum",
+       "1.5 HP",
+       "0.35 CFM",
+       "220 lb"
+      ]
+     },
+     {
+      "name": "SÇ 211S",
+      "glance": [
+       "Cutters to Ø6-5/16″, ±45°",
+       "Aluminum & PVC",
+       "1.5 HP",
+       "0.35 CFM",
+       "342 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 211": "end milling, 2 knives",
+     "SÇ 211S": "end milling, serial blade change"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-endmill"
+  },
+  "plastmak-902": {
+   "id": "plastmak-902",
+   "brand": "plastmak",
+   "name": "SÇ 902 hydraulic corner crimping machine for aluminum, profiles to 5-1/8″ high",
+   "short": "SÇ 902",
+   "models_label": "SÇ 902 · 1 model",
+   "summary": "Aluminum window and door frames are joined at the corner with a cleat inside the profile; the corner crimper presses knives into the profile walls over the cleat and locks the 90° joint. On the SÇ 902 both knife movements are hydraulic, 4 knives on the right and 4 on the left, with millimetre scales for knife height and advance, a pneumatic centring miter wedge, and a release button for fine adjustment. Two foot pedals work the hydraulic press and the profile clamp, plexiglass protects the profile faces, and arms on both sides carry the frame. Profiles up to 5-1/8″ (130 mm) high.",
+   "headline": "4 + 4 hydraulic knives · profiles to 5-1/8″ high · 2 × 3,307 lbf",
+   "features": [
+    "Hydraulic movement of both knife sets; 4 right and 4 left knives",
+    "Millimetre scales for knife height and advance; release button for precise adjustment",
+    "Pneumatic centring miter wedge; 2 foot pedals for the hydraulic press and the profile clamp",
+    "Plexiglass sheet protects the profile faces; right and left support arms",
+    "Built to CE standards",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "pm-902",
+    "pm-902-table",
+    "pm-902-heads",
+    "pm-902-knives",
+    "pm-902-scale",
+    "pm-902-wedge",
+    "pm-902-cylinder"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 902",
+      "sub": "Hydraulic corner crimping machine",
+      "models": [
+       "SÇ 902"
+      ],
+      "rows": [
+       {
+        "label": "Profiles",
+        "sub": "",
+        "cells": [
+         "Aluminum, 90° corners"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile height",
+        "sub": "max. H",
+        "cells": [
+         "5-1/8″ (130 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Knives",
+        "sub": "",
+        "cells": [
+         "4 right and 4 left, hydraulic"
+        ],
+        "key": true
+       },
+       {
+        "label": "Crimping force",
+        "sub": "",
+        "cells": [
+         "2 × 3,307 lbf (2 × 1,500 kgf) at 102 psi (7 bar)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Hydraulic pressure",
+        "sub": "max.",
+        "cells": [
+         "1,450 psi (100 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "0.71 CFM (20 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "794 lb (360 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "W × D × H",
+        "cells": [
+         "43 × 37 × 50″ (1,090 × 930 × 1,280 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 902",
+      "glance": [
+       "Aluminum 90° corners",
+       "Profiles to 5-1/8″ high",
+       "3 HP",
+       "0.71 CFM",
+       "794 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 902": "hydraulic corner crimper"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-crimp"
+  },
+  "plastmak-screw": {
+   "id": "plastmak-screw",
+   "brand": "plastmak",
+   "name": "Screwing machines and sash assembly machine, screws to 4.2 × 38 mm",
+   "short": "Screwing & sash assembly",
+   "models_label": "Single screwing · double-head screwing · sash assembly · 3 machines",
+   "summary": "Assembly stations for the steps after the frame is welded or crimped. The single screwing machine drives screws from 3.9 × 16 mm to 4.2 × 38 mm with a pneumatic motor and stable torque control, its working range set between 1.6″ and 4.7″ and its cycle started by a foot pedal — compact enough to slot into a line, fed by an automatic screw feeder. The double-head screwing machine drives two screws at once into PVC and aluminum profiles. The sash assembly machine fits single and double opening hardware in series without moulds or templates: laser alignment, automatic measuring and screwing, a three-arm drilling unit, a hinge template and an espagnolette groove cutter — 3.5 minutes on average for a double opening window.",
+   "headline": "Screws 3.9 × 16 to 4.2 × 38 mm · double-opening sash in 3.5 min",
+   "features": [
+    "Single screwing: pneumatic screwing system with precise torque control; adjustable working range (A – B); foot pedal",
+    "Single screwing: works with an automatic screw feeding unit; compact, ergonomic and easy to maintain",
+    "Double-head screwing: two pneumatic screwing motors driving at the same time, PVC and aluminum profiles",
+    "Sash assembly: series work on different profiles, single and double opening hardware, no moulds or templates",
+    "Sash assembly: fully automatic laser-aligned screwing; automatic measuring; triple-arm drilling with support plate",
+    "Sash assembly: semi-automatic hinge template; espagnolette grooving cutter; lit hardware shelf; corner-turning scissors",
+    "Compressed air required; RAL 7035 grey"
+   ],
+   "optional": [],
+   "images": [
+    "pm-screw-single",
+    "pm-screw-double",
+    "pm-sash",
+    "pm-screw-motor"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Screwing and sash assembly",
+      "sub": "Pneumatic screwing stations and a sash hardware assembly machine",
+      "models": [
+       "Single screwing machine",
+       "Double-head screwing machine",
+       "Sash assembly machine"
+      ],
+      "rows": [
+       {
+        "label": "Job",
+        "sub": "",
+        "cells": [
+         "Screwing at one station",
+         "Screwing with two heads at once, PVC and aluminum",
+         "Fitting and screwing sash hardware, single and double opening"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working range",
+        "sub": "min – max",
+        "cells": [
+         "A and B 1.6 – 4.7″",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Screw size",
+        "sub": "",
+        "cells": [
+         "3.9 × 16 mm to 4.2 × 38 mm",
+         "to 4.2 × 38 mm",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Screwing motor",
+        "sub": "",
+        "cells": [
+         "Pneumatic, 0.7 HP, 3,000 rpm, stall torque 5 lb·ft",
+         "2 × pneumatic, 0.7 HP, 3,000 rpm, stall torque 5 lb·ft",
+         "Automatic screwing with laser alignment"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cycle",
+        "sub": "",
+        "cells": [
+         "Foot pedal",
+         "—",
+         "Double opening window: 3.5 min on average"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air",
+        "sub": "",
+        "cells": [
+         "90 – 120 psi, 1/4″ inlet",
+         "90 – 120 psi, 1/4″ inlet",
+         "90 – 120 psi"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "276 lb",
+         "463 lb",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions",
+        "sub": "L × W × H",
+        "cells": [
+         "43 × 22 × 79″",
+         "35 × 30 × 79″",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Colour",
+        "sub": "",
+        "cells": [
+         "—",
+         "RAL 7035",
+         "RAL 7035"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Single screwing machine",
+      "glance": [
+       "Working range 1.6 – 4.7″",
+       "Screws 3.9 × 16 – 4.2 × 38 mm",
+       "0.7 HP motor",
+       "—",
+       "276 lb"
+      ]
+     },
+     {
+      "name": "Double-head screwing machine",
+      "glance": [
+       "Two heads",
+       "Screws to 4.2 × 38 mm",
+       "2 × 0.7 HP motors",
+       "—",
+       "463 lb"
+      ]
+     },
+     {
+      "name": "Sash assembly machine",
+      "glance": [
+       "Double sash in 3.5 min",
+       "Hardware fitting and screwing",
+       "—",
+       "—",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "Single screwing machine": "pneumatic, foot pedal",
+     "Double-head screwing machine": "two heads at once",
+     "Sash assembly machine": "laser alignment, automatic screwing"
+    },
+    "note": "Figures as listed in NovoTech's Plastmak catalogue. Air supply 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-screw"
+  },
+  "plastmak-portable": {
+   "id": "plastmak-portable",
+   "brand": "plastmak",
+   "name": "SÇ 221 · SÇ 551 portable notching and copy milling machines",
+   "short": "SÇ 221 · SÇ 551",
+   "models_label": "SÇ 221 · SÇ 551 · stand · 2 machines",
+   "summary": "Bench machines for small shops, site work and the jobs a production line does not cover. The SÇ 221 notches the ends of aluminum and PVC mullions (transoms) to fit the frame, holding the profile in vertical and horizontal vises, with a single-phase motor. The SÇ 551 copy-mills lock, handle, hinge and espagnolette slots and grooves of any size in aluminum and PVC profiles, from a copy template made for the job — or, against its stop, grooves of many kinds without a template. A two-shelf steel stand carries them, and a lower cabinet and an air system are available for both.",
+   "headline": "Mullion notching (SÇ 221) · copy milling of hardware slots (SÇ 551)",
+   "features": [
+    "SÇ 221: mullion (transom) notching of aluminum and PVC profiles; vertical and horizontal vises; single-phase motor",
+    "SÇ 551: lock, handle, hinge and espagnolette slots and grooves of any size, aluminum and PVC",
+    "SÇ 551: copy device suited to your job; grooving independent of the copy template with the help of the stop",
+    "Two-shelf steel stand for the portable machines"
+   ],
+   "optional": [
+    "Lower cabinet",
+    "Pneumatic (air) system"
+   ],
+   "images": [
+    "pm-221",
+    "pm-551",
+    "pm-table"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 221 · SÇ 551 · stand",
+      "sub": "Portable machines",
+      "models": [
+       "SÇ 221",
+       "SÇ 551",
+       "Portable stand"
+      ],
+      "rows": [
+       {
+        "label": "Job",
+        "sub": "",
+        "cells": [
+         "Mullion (transom) notching of aluminum and PVC profiles",
+         "Lock, handle, hinge and espagnolette slots and grooves of any size",
+         "Two-shelf steel stand for the portable machines"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working",
+        "sub": "",
+        "cells": [
+         "Vertical and horizontal vises",
+         "Copy template made for your job; grooving against the stop without a template",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "Single-phase",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Options",
+        "sub": "",
+        "cells": [
+         "Lower cabinet; pneumatic system",
+         "Lower cabinet; pneumatic system",
+         "—"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 221",
+      "glance": [
+       "Mullion notching",
+       "Aluminum & PVC",
+       "Single-phase",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "SÇ 551",
+      "glance": [
+       "Copy milling of hardware slots",
+       "Aluminum & PVC",
+       "—",
+       "—",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 221": "portable notcher",
+     "SÇ 551": "portable copy mill"
+    },
+    "note": "Air supply 87 – 116 psi (6 – 8 bar). Weights are approximate."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-portable"
+  },
+  "plastmak-conveyor": {
+   "id": "plastmak-conveyor",
+   "brand": "plastmak",
+   "name": "SÇ 1000 digital measuring conveyor, 9′ 10″, ±.020″, and SÇ 1001 – 1003 roller conveyors",
+   "short": "SÇ 1000 · 1001 · 1002 · 1003",
+   "models_label": "SÇ 1000 · 1001 · 1002 · 1003 · 4 models",
+   "summary": "Conveyors carry long profiles to and from the saws and machines at table height. The SÇ 1000 is a digital measuring conveyor: 9′ 10″ (3 m) long, it sets its stop to the length entered on the touch screen to ±.020″ (±0.5 mm), retracts the stop at one push so the cut piece comes out freely, calibrates easily and fits any of the saws, on a 220 V single-phase supply. The SÇ 1001 (aluminum rollers), SÇ 1002 (plastic rollers, kind to finished profiles) and SÇ 1003 (sheet-metal track) are plain support conveyors on height-adjustable legs.",
+   "headline": "Measuring length 9′ 10″ (3 m) · ±.020″ (±0.5 mm) · roller and sheet conveyors",
+   "features": [
+    "SÇ 1000: 9′ 10″ (3 m) digital measuring conveyor, ±.020″ (±0.5 mm), touch screen",
+    "SÇ 1000: stop retracts at one push to free the cut piece; easy to fit to all the machines; easy calibration",
+    "SÇ 1000: works on a 220 V single-phase supply",
+    "SÇ 1001: aluminum roller track · SÇ 1002: plastic roller track · SÇ 1003: sheet-metal profile track",
+    "Height-adjustable legs"
+   ],
+   "optional": [
+    "Bluetooth measuring station (SÇ 1000)"
+   ],
+   "images": [
+    "pm-1000",
+    "pm-1000-panel",
+    "pm-1001",
+    "pm-1002",
+    "pm-1003"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SÇ 1000 · 1001 · 1002 · 1003",
+      "sub": "Measuring and roller conveyors",
+      "models": [
+       "SÇ 1000",
+       "SÇ 1001",
+       "SÇ 1002",
+       "SÇ 1003"
+      ],
+      "rows": [
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "Digital measuring conveyor with stop",
+         "Aluminum roller conveyor",
+         "Plastic roller conveyor",
+         "Sheet-metal conveyor"
+        ],
+        "key": true
+       },
+       {
+        "label": "Measuring length",
+        "sub": "",
+        "cells": [
+         "9′ 10″ (3 m)",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Accuracy",
+        "sub": "",
+        "cells": [
+         "±.020″ (±0.5 mm)",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Touch screen; stop retracts at one push to free the cut piece",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Supply",
+        "sub": "",
+        "cells": [
+         "220 V single-phase",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Legs",
+        "sub": "",
+        "cells": [
+         "—",
+         "Height-adjustable",
+         "Height-adjustable",
+         "Height-adjustable"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SÇ 1000",
+      "glance": [
+       "Measuring length 9′ 10″",
+       "±.020″ (±0.5 mm)",
+       "220 V 1-phase",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "SÇ 1001",
+      "glance": [
+       "Aluminum roller conveyor",
+       "—",
+       "—",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "SÇ 1002",
+      "glance": [
+       "Plastic roller conveyor",
+       "—",
+       "—",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "SÇ 1003",
+      "glance": [
+       "Sheet-metal conveyor",
+       "—",
+       "—",
+       "—",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {
+     "SÇ 1000": "digital measuring conveyor"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″."
+   },
+   "videos": [
+    {
+     "id": "jpJMgI3VL4w",
+     "title": "SÇ 1000 programmable length stop on an upcut saw",
+     "duration": "PT1M4S",
+     "thumb": "video-jpJMgI3VL4w"
+    },
+    {
+     "id": "DVVKKS4_RqE",
+     "title": "SÇ 1000 9′ 10″ NC length stop table",
+     "duration": "PT1M15S",
+     "thumb": "video-DVVKKS4_RqE"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-portable"
+  },
+  "plastmak-line-pvc1": {
+   "id": "plastmak-line-pvc1",
+   "brand": "plastmak",
+   "name": "PVC single-head production group, 40 – 60 windows a shift",
+   "short": "PVC single-head group",
+   "models_label": "6 machines · 40 – 60 windows a shift",
+   "summary": "The starting set for a PVC window shop, built around single-head machines for a continuous flow: the SÇ 401 upcut saw cuts the profiles, the SÇ 501 copy router opens lock places, handle holes and drainage slots, the SÇ 101 welds the corners one at a time, the SÇ 601 cleans them, the SÇ 211 end-mills the mullions and the SÇ 301 cuts the glazing beads. Together they make 40 to 60 windows in an 8-hour shift.",
+   "headline": "6 machines · 40 – 60 windows in an 8-hour shift",
+   "features": [
+    "Cutting: SÇ 401 upcut saw, Ø17-11/16″ (450 mm), 0° – 180°",
+    "Copy routing, triple drilling and drainage slots: SÇ 501",
+    "Welding: SÇ 101 single-head welder, 25° – 180° · corner cleaning: SÇ 601, 3 knives",
+    "Mullion end milling: SÇ 211 · glazing beads: SÇ 301",
+    "Machines can be changed or added — ask us for a layout of your shop"
+   ],
+   "optional": [],
+   "images": [
+    "pm-line-pvc1",
+    "pm-401",
+    "pm-501",
+    "pm-101",
+    "pm-301",
+    "pm-211",
+    "pm-601"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PVC single-head group",
+      "sub": "40 – 60 windows in an 8-hour shift",
+      "models": [
+       "SÇ 401",
+       "SÇ 501",
+       "SÇ 101",
+       "SÇ 301",
+       "SÇ 211",
+       "SÇ 601"
+      ],
+      "rows": [
+       {
+        "label": "Job",
+        "sub": "",
+        "cells": [
+         "Upcut saw",
+         "Copy router with triple drilling",
+         "Single-head welder",
+         "Glazing bead saw",
+         "End milling machine",
+         "Corner cleaner, 3 knives"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "Ø17-11/16″ blade, 0° – 180°",
+         "Travel 11 × 4-15/16 × 3-9/16″",
+         "25° – 180°, profiles to 6-5/16″ high",
+         "Beads to 100-3/8″",
+         "Cutters to Ø5-1/2″",
+         "Profiles to 4-15/16″ wide"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW)",
+         "3.4 HP (2.5 kW)",
+         "5.4 HP (4 kW)",
+         "2 HP (1.5 kW)",
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "1.4 CFM (41 l/min)",
+         "0.32 CFM (9 l/min)",
+         "2.5 CFM (70 l/min)",
+         "0.35 CFM (10 l/min)",
+         "0.35 CFM (10 l/min)",
+         "0.35 CFM (10 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "276 lb (125 kg)",
+         "254 lb (115 kg)",
+         "298 lb (135 kg)",
+         "209 lb (95 kg)",
+         "220 lb (100 kg)",
+         "397 lb (180 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "PVC single-head group — the whole group",
+      "sub": "Sums of the machines above",
+      "models": [
+       "PVC single-head group"
+      ],
+      "rows": [
+       {
+        "label": "Output",
+        "sub": "",
+        "cells": [
+         "40 – 60 windows in an 8-hour shift"
+        ],
+        "key": true
+       },
+       {
+        "label": "Machines",
+        "sub": "",
+        "cells": [
+         "6"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "15.7 HP (11.7 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "5.3 CFM (150 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "",
+        "cells": [
+         "1,653 lb (750 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PVC single-head group",
+      "glance": [
+       "40 – 60 windows a shift",
+       "PVC",
+       "15.7 HP",
+       "5.3 CFM",
+       "1,653 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Group figures are the sums of the machines' own figures."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-lines"
+  },
+  "plastmak-line-pvc2": {
+   "id": "plastmak-line-pvc2",
+   "brand": "plastmak",
+   "name": "PVC double-head production group, 80 – 120 windows a shift",
+   "short": "PVC double-head group",
+   "models_label": "6 machines · 80 – 120 windows a shift",
+   "summary": "The same flow with double-head machines for higher volumes: the SÇ 400S double-head saw cuts both ends of each profile in one stroke and the SÇ 100 welds two corners at a time, with the SÇ 501 copy router, SÇ 601 corner cleaner, SÇ 211 end mill and SÇ 301 bead saw around them — 80 to 120 windows in an 8-hour shift.",
+   "headline": "6 machines · 80 – 120 windows in an 8-hour shift",
+   "features": [
+    "Cutting: SÇ 400S double-head saw, 2 × Ø19-11/16″ (500 mm)",
+    "Copy routing, triple drilling and drainage slots: SÇ 501",
+    "Welding: SÇ 100 double-head welder · corner cleaning: SÇ 601",
+    "Mullion end milling: SÇ 211 · glazing beads: SÇ 301",
+    "Machines can be changed or added — ask us for a layout of your shop"
+   ],
+   "optional": [],
+   "images": [
+    "pm-line-pvc2",
+    "pm-400s",
+    "pm-501",
+    "pm-100",
+    "pm-301",
+    "pm-211",
+    "pm-601"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PVC double-head group",
+      "sub": "80 – 120 windows in an 8-hour shift",
+      "models": [
+       "SÇ 400S",
+       "SÇ 501",
+       "SÇ 100",
+       "SÇ 301",
+       "SÇ 211",
+       "SÇ 601"
+      ],
+      "rows": [
+       {
+        "label": "Job",
+        "sub": "",
+        "cells": [
+         "Double-head saw",
+         "Copy router with triple drilling",
+         "Double-head welder",
+         "Glazing bead saw",
+         "End milling machine",
+         "Corner cleaner, 3 knives"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "2 × Ø19-11/16″ blades, 19-1/8″ – 131-7/8″",
+         "Travel 11 × 4-15/16 × 3-9/16″",
+         "Profiles 13-3/8″ – 126″ long",
+         "Beads to 100-3/8″",
+         "Cutters to Ø5-1/2″",
+         "Profiles to 4-15/16″ wide"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power",
+        "sub": "",
+        "cells": [
+         "8 HP (6 kW)",
+         "3.4 HP (2.5 kW)",
+         "12.1 HP (9 kW)",
+         "2 HP (1.5 kW)",
+         "1.5 HP (1.1 kW)",
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "1.1 CFM (30 l/min)",
+         "0.32 CFM (9 l/min)",
+         "2.5 CFM (70 l/min)",
+         "0.35 CFM (10 l/min)",
+         "0.35 CFM (10 l/min)",
+         "0.35 CFM (10 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,951 lb (885 kg)",
+         "254 lb (115 kg)",
+         "1,069 lb (485 kg)",
+         "209 lb (95 kg)",
+         "220 lb (100 kg)",
+         "397 lb (180 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "PVC double-head group — the whole group",
+      "sub": "Sums of the machines above",
+      "models": [
+       "PVC double-head group"
+      ],
+      "rows": [
+       {
+        "label": "Output",
+        "sub": "",
+        "cells": [
+         "80 – 120 windows in an 8-hour shift"
+        ],
+        "key": true
+       },
+       {
+        "label": "Machines",
+        "sub": "",
+        "cells": [
+         "6"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "29 HP (21.6 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "4.9 CFM (139 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "",
+        "cells": [
+         "4,101 lb (1,860 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PVC double-head group",
+      "glance": [
+       "80 – 120 windows a shift",
+       "PVC",
+       "29 HP",
+       "4.9 CFM",
+       "4,101 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Group figures are the sums of the machines' own figures."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-lines"
+  },
+  "plastmak-line-alu": {
+   "id": "plastmak-line-alu",
+   "brand": "plastmak",
+   "name": "Aluminum double-head production group, 80 – 120 windows a shift",
+   "short": "Aluminum double-head group",
+   "models_label": "4 machines · 80 – 120 windows a shift",
+   "summary": "A group for aluminum windows and doors, built around a double-head saw and a 3-axis CNC: the SÇ 4000S cuts the profiles, the SÇ 5000S drills and mills the hardware places, the SÇ 211S end-mills the mullions and the SÇ 902 crimps the corners — 80 to 120 windows in an 8-hour shift.",
+   "headline": "4 machines · 80 – 120 windows in an 8-hour shift",
+   "features": [
+    "Cutting: SÇ 4000S servo double-head saw, 2 × Ø23-5/8″ (600 mm)",
+    "Drilling and milling: SÇ 5000S 3-axis CNC for aluminum and PVC",
+    "Mullion end milling: SÇ 211S, ±45° · corner crimping: SÇ 902 hydraulic",
+    "Machines can be changed or added — ask us for a layout of your shop"
+   ],
+   "optional": [],
+   "images": [
+    "pm-line-alu",
+    "pm-4000s",
+    "pm-5000s",
+    "pm-211s",
+    "pm-902"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Aluminum double-head group",
+      "sub": "80 – 120 windows in an 8-hour shift",
+      "models": [
+       "SÇ 4000S",
+       "SÇ 5000S",
+       "SÇ 211S",
+       "SÇ 902"
+      ],
+      "rows": [
+       {
+        "label": "Job",
+        "sub": "",
+        "cells": [
+         "Double-head saw",
+         "3-axis CNC drilling and milling",
+         "End milling machine",
+         "Hydraulic corner crimper"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "2 × Ø23-5/8″ blades, 21-5/8″ – 171-5/8″",
+         "Travel 15-3/8 × 7-7/8 × 7-7/8″",
+         "Cutters to Ø6-5/16″, ±45°",
+         "Profiles to 5-1/8″ high"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power",
+        "sub": "",
+        "cells": [
+         "10.7 HP (8 kW)",
+         "8 HP (6 kW)",
+         "1.5 HP (1.1 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "1.1 CFM (30 l/min)",
+         "0.32 CFM (9 l/min)",
+         "0.35 CFM (10 l/min)",
+         "0.71 CFM (20 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,392 lb (1,085 kg)",
+         "1,653 lb (750 kg)",
+         "342 lb (155 kg)",
+         "794 lb (360 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "Aluminum double-head group — the whole group",
+      "sub": "Sums of the machines above",
+      "models": [
+       "Aluminum double-head group"
+      ],
+      "rows": [
+       {
+        "label": "Output",
+        "sub": "",
+        "cells": [
+         "80 – 120 windows in an 8-hour shift"
+        ],
+        "key": true
+       },
+       {
+        "label": "Machines",
+        "sub": "",
+        "cells": [
+         "4"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "23.2 HP (17.3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "2.4 CFM (69 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "",
+        "cells": [
+         "5,181 lb (2,350 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Aluminum double-head group",
+      "glance": [
+       "80 – 120 windows a shift",
+       "Aluminum",
+       "23.2 HP",
+       "2.4 CFM",
+       "5,181 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Group figures are the sums of the machines' own figures."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-lines"
+  },
+  "plastmak-line-shop": {
+   "id": "plastmak-line-shop",
+   "brand": "plastmak",
+   "name": "PVC window workshop set-up, 200 – 220 windows a shift",
+   "short": "PVC window workshop",
+   "models_label": "7 machines · 200 – 220 windows a shift",
+   "summary": "A complete PVC window workshop laid out as a production loop: compressed air from the SÇ 801, double-head cutting on the SÇ 400S, CNC drilling and milling on the SÇ 5000, double-corner welding on the SÇ 100, CNC corner cleaning on the SÇ 6000, end milling on the SÇ 211S and bead cutting on the SÇ 301S — 200 to 220 windows in an 8-hour shift.",
+   "headline": "7 machines · 200 – 220 windows in an 8-hour shift",
+   "features": [
+    "Compressed air: SÇ 801 compressor, 130 gal (500 l)",
+    "Cutting: SÇ 400S double-head saw · CNC drilling and milling: SÇ 5000",
+    "Welding: SÇ 100 double-head welder · corner cleaning: SÇ 6000 CNC",
+    "Mullion end milling: SÇ 211S · glazing beads: SÇ 301S, 12 beads without moulds",
+    "Laid out as a loop so the profiles travel the shortest way — ask us for a layout of your shop"
+   ],
+   "optional": [],
+   "images": [
+    "pm-line-shop",
+    "pm-compressor",
+    "pm-400s",
+    "pm-5000",
+    "pm-100",
+    "pm-6000",
+    "pm-211s",
+    "pm-301s"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PVC window workshop",
+      "sub": "200 – 220 windows in an 8-hour shift",
+      "models": [
+       "SÇ 801",
+       "SÇ 400S",
+       "SÇ 5000",
+       "SÇ 100",
+       "SÇ 6000",
+       "SÇ 211S",
+       "SÇ 301S"
+      ],
+      "rows": [
+       {
+        "label": "Job",
+        "sub": "",
+        "cells": [
+         "Air compressor",
+         "Double-head saw",
+         "3-axis CNC drilling and milling",
+         "Double-head welder",
+         "CNC corner cleaner",
+         "End milling machine",
+         "Mouldless glazing bead saw"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "130 gal (500 l) tank",
+         "2 × Ø19-11/16″ blades, 19-1/8″ – 131-7/8″",
+         "Travel 15-3/8 × 7-7/8 × 7-7/8″",
+         "Profiles 13-3/8″ – 126″ long",
+         "400 – 500 frames a shift",
+         "Cutters to Ø6-5/16″, ±45°",
+         "12 beads, to 100-3/8″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power",
+        "sub": "",
+        "cells": [
+         "—",
+         "8 HP (6 kW)",
+         "8 HP (6 kW)",
+         "12.1 HP (9 kW)",
+         "4 HP (3 kW)",
+         "1.5 HP (1.1 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "—",
+         "1.1 CFM (30 l/min)",
+         "0.32 CFM (9 l/min)",
+         "2.5 CFM (70 l/min)",
+         "1.4 CFM (40 l/min)",
+         "0.35 CFM (10 l/min)",
+         "0.35 CFM (10 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "—",
+         "1,951 lb (885 kg)",
+         "783 lb (355 kg)",
+         "1,069 lb (485 kg)",
+         "882 lb (400 kg)",
+         "342 lb (155 kg)",
+         "320 lb (145 kg)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "PVC window workshop — the whole group",
+      "sub": "Sums of the machines above (without the compressor)",
+      "models": [
+       "PVC window workshop"
+      ],
+      "rows": [
+       {
+        "label": "Output",
+        "sub": "",
+        "cells": [
+         "200 – 220 windows in an 8-hour shift"
+        ],
+        "key": true
+       },
+       {
+        "label": "Machines",
+        "sub": "",
+        "cells": [
+         "7"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "36.6 HP (27.3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air consumption",
+        "sub": "",
+        "cells": [
+         "6.0 CFM (169 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "",
+        "cells": [
+         "5,346 lb (2,425 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PVC window workshop",
+      "glance": [
+       "200 – 220 windows a shift",
+       "PVC",
+       "36.6 HP",
+       "6.0 CFM",
+       "5,346 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "profile",
+     "power",
+     "air",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Metric values in brackets are the manufacturer's figures; imperial values are converted and rounded, lengths to the nearest 1/16″. Air consumption is at 87 – 116 psi (6 – 8 bar). Weights are approximate. Group figures are the sums of the machines' own figures."
+   },
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+    "label": "Download the Plastmak window machinery brochure",
+    "size": "PDF · 16 MB · imperial units"
+   },
+   "group": "pm-lines"
+  }
+ }
+}

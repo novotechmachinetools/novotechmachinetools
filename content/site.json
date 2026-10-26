@@ -369,6 +369,28 @@
      "href": "aluminum-and-pvc-upcut-saws.html"
     },
     {
+     "label": "Aluminum & PVC processing machines",
+     "href": "pvc-aluminum-window-machines.html",
+     "children": [
+      {
+       "label": "PVC welding & corner cleaning",
+       "href": "pvc-window-welding-machines.html"
+      },
+      {
+       "label": "CNC centres & copy routers",
+       "href": "profile-machining-centres-copy-routers.html"
+      },
+      {
+       "label": "Assembly machines & conveyors",
+       "href": "window-assembly-machines.html"
+      },
+      {
+       "label": "Window production lines",
+       "href": "window-production-lines.html"
+      }
+     ]
+    },
+    {
      "label": "Press brake tooling",
      "href": "press-brake-tooling-punch-and-die.html"
     }
@@ -613,6 +635,15 @@
    "line": "Made in Italy",
    "logo": "eurofintec-logo",
    "tagline": "Made in Parma, Italy, by Gecam's Eurofintec division — orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring machines, sold, installed and supported in Canada by NovoTech."
+  },
+  "plastmak": {
+   "name": "Plastmak",
+   "manufacturer": "Plastmak PVC ve Alüminyum İşleme Makineleri",
+   "country": "Turkey",
+   "country_code": "TR",
+   "line": "Made in Turkey",
+   "logo": "plastmak-logo",
+   "tagline": "Made in Bursa, Turkey — Plastmak aluminum and PVC window and door machinery, sold, installed and supported in Canada by NovoTech."
   }
  }
 }
