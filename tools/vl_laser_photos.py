@@ -33,6 +33,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = "/home/claude/adhlaser/src/"
 QD = "/home/claude/adhlaser/q/"
+UG = "/home/claude/adhlaser/ulg/s/"          # ULG photos from the supplier's website (October 2026), see the ULG block below
 WORK = "/home/claude/adhlaser/work/"
 OUT = os.path.join(ROOT, "tools", "src-images", "value-laser")
 MAX_SIDE = 1800
@@ -40,11 +41,13 @@ Image.MAX_IMAGE_PIXELS = None
 
 
 def R(page, crop, alt, boxes=(), **kw):
-    return dict(kind="render", src=SRC + page + ".png", page=page, crop=crop, alt=alt, boxes=list(boxes), **kw)
+    src = page if page.startswith("/") else SRC + page + ".png"
+    return dict(kind="render", src=src, page=os.path.basename(page), crop=crop, alt=alt, boxes=list(boxes), **kw)
 
 
 def A(path, alt, boxes=(), floor=90, **kw):
-    return dict(kind="alpha", src=QD + path, page=path, crop=None, alt=alt, boxes=list(boxes), floor=floor, **kw)
+    src = path if path.startswith("/") else QD + path
+    return dict(kind="alpha", src=src, page=os.path.basename(path), crop=None, alt=alt, boxes=list(boxes), floor=floor, **kw)
 
 
 def P(page, crop, alt, boxes=(), **kw):
@@ -80,6 +83,19 @@ PHOTOS = {
     "vn-fms-tower": P("GEN-006", (140, 560, 1150, 1080), "Sheet storage tower feeding an exchange-table laser — flexible manufacturing system (optional)"),
     "vn-fms-gantry": P("GEN-006", (1360, 880, 2380, 1280), "Gantry loading and unloading with suction cups (optional)"),
     "vn-precitec": R("ULE-004", (245, 435, 415, 820), "Precitec ProCutter autofocus cutting head (optional)"),
+    # ---------------------------------------------------------------- ULG ground-rail plate lasers (photos from the supplier's website)
+    "vn-ulg-1": R(UG + "ulg-hero.webp", None, "NovoTech ULG ground-rail plate laser — enclosed gantry cabin running on floor rails, plate table behind, console in front",
+                  boxes=[(332, 286, 416, 390), (1278, 278, 1312, 470)]),
+    "vn-ulg-beam": P(UG + "ulg-beam.webp", None, "ULG gantry and cutting head over the slat table — the gantry runs on its own ground rails"),
+    "vn-ulg-rails": P(UG + "ulg-bed.webp", None, "Ground rails and plate-support table set side by side — the motion axis never carries the plate load"),
+    "vn-ulg-table": P(UG + "ulg-table.webp", None, "Long plate-support table with replaceable slats, sources and chillers along the wall"),
+    "vn-ulg-cutting": P(UG + "ulg-cutting.webp", None, "Cutting head piercing plate — 12 to 60 kW source chosen at order"),
+    "vn-ulg-parts": P(UG + "ulg-parts.webp", None, "Heavy-plate parts and flanges cut on the ULG table, gantry carriage overhead", boxes=[(846, 138, 937, 170)]),
+    "vn-ulg-installed": P(UG + "ulg-installed.webp", None, "ULG with a 59 × 14.8 ft (18 × 4.5 m) table and a 30 kW source installed in a heavy-equipment plant",
+                          boxes=[(8, 698, 532, 845)]),
+    "vn-ulg-extraction": P(UG + "ulg-extraction.webp", None, "Zoned fume-extraction duct along the plate table"),
+    "vn-ulg-console": A(UG + "ulg-console.webp", "ULG operator console with the touchscreen CNC, nesting and remnant functions", floor=0, up=True),
+    "vn-ulg-flanges": P(UG + "ulg-flanges.webp", None, "Tower flanges and baseplates cut from thick plate on a ground-rail laser"),
     # ---------------------------------------------------------------- ULFT open-type sheet + tube lasers
     "vn-ulft-1": R("ULFT-000", (982, 190, 2562, 1005), "NovoTech ULFT open-type sheet-and-tube fiber laser — 10 × 5 ft table and a rotary chuck for tube on one machine",
                    boxes=[(1310, 632, 1400, 705), (1760, 370, 1815, 398), (1470, 650, 1618, 708), (2058, 662, 2110, 722)]),
@@ -130,7 +146,9 @@ def clean_alpha(alpha, keep=0.004):
 def fit(im):
     """at most MAX_SIDE; a picture 560 – 800 px wide is brought to 800 px so the site gets its 800 px variant"""
     s = MAX_SIDE / max(im.size)
-    if s >= 1 and 560 <= im.width < 800:
+    if s >= 1:                                   # never blown up past the source, except the 560 – 800 px band
+        s = 800 / im.width if 560 <= im.width < 800 else 1
+    elif 560 <= im.width * s < 800:              # a tall picture capped by its height still gets an 800 px wide variant
         s = 800 / im.width
     return im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS) if s != 1 else im
 
@@ -207,7 +225,15 @@ def process(key):
         rgb = delogo(white.convert("RGB"), page_boxes(p))
         a = np.asarray(alpha).astype(np.float32)
         a = np.clip((a - p["floor"]) * 255.0 / (250 - p["floor"]), 0, 255).astype(np.uint8)   # soft floor shadow out
-        path, size = save_rgba(key, rgb, clean_alpha(Image.fromarray(a)))
+        alpha = Image.fromarray(a)
+        if p.get("up"):                                  # a narrow cut-out: Real-ESRGAN x2 on the white matte, the mask resized to match
+            bb = alpha.point(lambda v: 255 if v > 8 else 0).getbbox()
+            rgb, alpha = rgb.crop(bb), alpha.crop(bb)
+            if min(rgb.size) < 560:
+                from esrgan import upscale
+                rgb = upscale(rgb)
+                alpha = alpha.resize(rgb.size, Image.LANCZOS)
+        path, size = save_rgba(key, rgb, clean_alpha(alpha))
     else:
         im = im.convert("RGB")
         if p["crop"]:

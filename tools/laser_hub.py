@@ -25,7 +25,7 @@ ORIGIN = {"title": "Three lines, one supplier", "text": "Premium Dener lasers fr
 HUBS = {
     "sheet": dict(
         set="sheet-lasers", families=[("dener-fiber-lasers", ["dn-gfl", "dn-smart-closed", "dn-smart-semi", "dn-smart-open"]),
-                                      ("novotech-fiber-lasers", ["vn-ulf", "vn-ule", "vn-ulft", "vn-ulet"]),
+                                      ("novotech-fiber-lasers", ["vn-ulf", "vn-ule", "vn-ulg", "vn-ulft", "vn-ulet"]),
                                       ("senfeng-fiber-lasers", ["sf-compact", "sf-np", "sf-h", "sf-hm", "sf-r", "sf-3d", "sf-coil"])],
         page=dict(
             title="Fiber Laser Cutting Machines, 1.5–80 kW, Canada | NovoTech",
@@ -35,14 +35,14 @@ HUBS = {
                   "high-power sources, stainless and aluminum to 1″ — at speeds no plasma or punch can match, with a clean edge and no tooling. "
                   "NovoTech sells three lines of fiber lasers in Canada, each on its own page: the Dener lasers — the premium line, made in Turkey, "
                   "the GFL production laser with a 1.5 G gantry and pallet changer and the Smart series to 13 × 82 ft, 3 to 40 kW; NovoTech's own "
-                  "value line — the open ULF single-table lasers, the enclosed ULE with a 15-second exchange table, the ULFT and ULET that cut sheet "
-                  "and tube on one machine, and plate tables to 85 ft with up to 60 kW; and the Senfeng lasers — a value line under its own brand, "
+                  "value line — the open ULF single-table lasers, the enclosed ULE with a 15-second exchange table, the ULG ground-rail plate lasers, "
+                  "the ULFT and ULET that cut sheet and tube on one machine, and plate tables to 85 ft with up to 60 kW; and the Senfeng lasers — a value line under its own brand, "
                   "from 4 × 4 ft compact machines and the NP open-type to the H series with pallet changer to 80 kW, plate gantries to 10 × 164 ft, "
                   "3D and coil-fed lines. Below, each line in brief, the "
                   "laser power guide, and every model in one table of working area, power and speed; every machine comes with a CSA-approved "
                   "panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON.",
             points=["Dener premium line: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft; Smart closed, semi-closed and open lasers to 13 × 82 ft; 3 – 40 kW",
-                    "NovoTech value line: open ULF from 10 × 5 ft, enclosed ULE with 15 s exchange table to 41 ft, ULFT / ULET sheet + tube, plate to 85 ft, 1.5 – 60 kW",
+                    "NovoTech value line: open ULF from 10 × 5 ft, enclosed ULE with 15 s exchange table to 41 ft, ULG ground-rail to 85 × 14.8 ft, ULFT / ULET sheet + tube, 1.5 – 60 kW",
                     "Senfeng value line: compact 4 × 4 ft from 1.5 kW, NP open-type, H series with pallet changer to 80 kW, plate gantries to 164 ft, 3D, coil-fed"],
             hero="dn-gfl-3", minis=["vn-ule-1", "sf-h-1"],
             range_cols=["Working area", "Laser power", "Max. speed", "Acceleration", "Max. sheet load"],
@@ -52,7 +52,7 @@ HUBS = {
             range_note="Working areas in feet and inches (millimetres); the model number is the nominal table in decimetres (3015 = 3,000 × 1,500 mm, 10 × 5 ft). Laser power as the sources offered on that model. "
                        "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel and transformer; 208, 240 and 480 V on request.",
             faq=[{"q": "Dener, NovoTech or Senfeng — which laser should I buy?",
-                  "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, Dener Canada parts in Mississauga and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed exchange-table and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."},
+                  "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, Dener Canada parts in Mississauga and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed exchange-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."},
                  {"q": "What laser power do I need?",
                   "a": "Power sets the thickness and the speed. As a guide for mild steel: 3 kW cuts 1/2″, 6 kW 3/4″ (and 1/4″ at over 300 in/min), 12 kW 1″, 20 kW 1-1/4″ and 30 – 40 kW 1-1/2″ and beyond; stainless and aluminum run about 20 – 30 % thinner at the same power, with nitrogen or air assist. Most Canadian job shops buying today choose 6 or 12 kW: thick enough for structural work, fast enough to pay for the machine on thin sheet. Tell us your material mix and we run the cutting chart for you."},
                  {"q": "Which table size?",

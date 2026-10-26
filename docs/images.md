@@ -218,6 +218,14 @@ the ULE 3015 quotation (`q/`).  Renders are cropped from the pages, upscaled wit
 photos and the diagrams stay rectangular JPEGs.  Optional accessories say "(optional)" in the caption.  Keys `vn-*`;
 `tools/vl_laser_keys.txt` is written by `tools/vl_laser_pages.py`.
 
+The ULG ground-rail plate lasers (added Oct 26 at the user's request) come from the supplier's ULG web page: the container
+cannot reach that site, so the ten 1,600 px WebP files were fetched in the built-in browser on the user's computer (JavaScript
+`fetch` → base64 in the tool result, decoded here — nothing is downloaded or saved on the user's PC) into
+`/home/claude/adhlaser/ulg/s/`.  The hero `vn-ulg-1` is cut out with BiRefNet after the badge and the painted model name are
+erased; the console `vn-ulg-console` keeps its own alpha; the other eight stay photos, with the gantry badge (`vn-ulg-parts`) and
+the Chinese caption banner (`vn-ulg-installed`) erased with LaMa.  `fit()` no longer enlarges a picture past its source size
+(except the 560 – 800 px band, which still goes to 800 px).
+
 ## Senfeng (section `senfeng`, tools/senfeng_photos.py)
 
 Senfeng is sold under its own brand (the value line of the laser section), so the logo stays.  Sources (outside the repository,

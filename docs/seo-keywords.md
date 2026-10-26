@@ -398,3 +398,8 @@ machine". The subpages therefore use "fiber laser cutter" / "tube laser cutter" 
 - The hubs now introduce three lines (Dener premium, NovoTech value, Senfeng value); the tube hub's h1 goes to 40 kW.
 - No supplier name anywhere; model numbers are the supplier's (ULF-3015G, ULE-6026E, ULT-024A). The ULG ground-rail and ULH
   H-beam lasers are left out (no photos), the ULJM precision laser too (contradictory data).
+
+- Oct 26 (user's request): ULG ground-rail plate lasers added to novotech-fiber-lasers as a fifth family (ULG-A and ULG-C, 12 models,
+  data and photos from the supplier's ULG web page); title unchanged, meta now names "ULG ground-rail plate lasers to 85 × 14.8 ft"
+  (154 characters), h1 / intro / points / group lead / FAQ ("When does a ground-rail laser make sense?") and the brochure updated.
+  The ULH H-beam laser stays off the site (user's decision).

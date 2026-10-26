@@ -27,6 +27,7 @@
   "sf-bdc",
   "vn-ulf",
   "vn-ule",
+  "vn-ulg",
   "vn-ulft",
   "vn-ulet",
   "vn-ult"
@@ -9013,6 +9014,473 @@
     ],
     "caps": {},
     "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both exchange tables together."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
+    "label": "Download the NovoTech fiber laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "laser-novotech"
+  },
+  "vn-ulg": {
+   "id": "vn-ulg",
+   "brand": "novotech",
+   "name": "ULG ground-rail plate lasers, 42.7 or 85.3 ft × up to 14.8 ft, 12 – 60 kW",
+   "short": "ULG ground-rail lasers",
+   "models_label": "ULG-13035A – 26045A · ULG-13035C – 26045C · 12 models",
+   "summary": "For plate too long, too wide or too heavy for a table machine: the ULG's gantry runs on rails set in the floor beside a separate plate-support table, so the table carries up to 202,000 lb (91.8 t) of plate without loading the motion axes. Tables 42.7 or 85.3 ft long and 11.5, 13.1 or 14.8 ft wide, other lengths to order; 12 to 60 kW for thick plate. Two gantries: the ULG-A runs to 262 ft/min and 1.1 G, the heavier ULG-C leaves 11.8″ under the beam with a 60 kW source. Loaded by crane, with zoned extraction along the whole table — the laser for structural steel, tower, mining and heavy-equipment fabricators.",
+   "features": [
+    "12 – 60 kW; tables 42.7 or 85.3 ft × 11.5 – 14.8 ft, other lengths to order; table loads to 202,000 lb; to 262 ft/min, 1.1 G",
+    "Gantry on ground rails, separate from the plate-support table — the plate load never reaches the motion axes",
+    "Fiber laser source chosen at order — Raycus, MAX or IPG — with a high-power autofocus cutting head",
+    "Bus CNC with edge finding, nesting, common-line cutting and remnant functions; touchscreen console",
+    "Positioning ±0.03 mm/m over the whole table; transmission covers and automatic lubrication on the long axis",
+    "Zoned fume extraction along the table; replaceable support slats",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)",
+    "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"
+   ],
+   "optional": [
+    "Bevel cutting head",
+    "MES connection and industry file interfaces",
+    "Dust collector, compressor and gas supply sized to the machine",
+    "Custom voltage: 208, 240 or 480 V 3-phase"
+   ],
+   "images": [
+    "vn-ulg-1",
+    "vn-ulg-installed",
+    "vn-ulg-beam",
+    "vn-ulg-rails",
+    "vn-ulg-table",
+    "vn-ulg-cutting",
+    "vn-ulg-parts",
+    "vn-ulg-console",
+    "vn-ulg-extraction",
+    "vn-ulg-flanges"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "ULG-A ground-rail plate lasers · 12 – 60 kW",
+      "sub": "6 models · 42.7 or 85.3 ft long, 11.5 – 14.8 ft wide · to 262 ft/min and 1.1 G",
+      "models": [
+       "ULG-13035A",
+       "ULG-13040A",
+       "ULG-13045A",
+       "ULG-26035A",
+       "ULG-26040A",
+       "ULG-26045A"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "42.7 ft × 11.5 ft (13,000 × 3,500 mm)",
+         "42.7 ft × 13.1 ft (13,000 × 4,000 mm)",
+         "42.7 ft × 14.8 ft (13,000 × 4,500 mm)",
+         "85.3 ft × 11.5 ft (26,000 × 3,500 mm)",
+         "85.3 ft × 13.1 ft (26,000 × 4,000 mm)",
+         "85.3 ft × 14.8 ft (26,000 × 4,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "axes combined",
+        "cells": [
+         "262 ft/min (80 m/min)",
+         "230 ft/min (70 m/min)",
+         "197 ft/min (60 m/min)",
+         "262 ft/min (80 m/min)",
+         "230 ft/min (70 m/min)",
+         "197 ft/min (60 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "axes combined",
+        "cells": [
+         "1.1 G",
+         "1 G",
+         "0.85 G",
+         "1.1 G",
+         "1 G",
+         "0.85 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0016″ (±0.04 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0016″ (±0.04 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0016″ (±0.04 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0024″ (±0.06 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0024″ (±0.06 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0024″ (±0.06 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clearance under the gantry",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "78,705 lb (35,700 kg)",
+         "89,948 lb (40,800 kg)",
+         "101,192 lb (45,900 kg)",
+         "157,410 lb (71,400 kg)",
+         "179,897 lb (81,600 kg)",
+         "202,384 lb (91,800 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "53.1 × 17.4 × 6.4 ft (16,200 × 5,300 × 1,950 mm)",
+         "53.1 × 19 × 6.4 ft (16,200 × 5,800 × 1,950 mm)",
+         "53.1 × 20.7 × 6.4 ft (16,200 × 6,300 × 1,950 mm)",
+         "100.1 × 17.4 × 6.4 ft (30,500 × 5,300 × 1,950 mm)",
+         "102 × 19 × 6.4 ft (31,100 × 5,800 × 1,950 mm)",
+         "102 × 20.7 × 6.4 ft (31,100 × 6,300 × 1,950 mm)"
+        ],
+        "key": false
+       }
+      ]
+     },
+     {
+      "title": "ULG-C ground-rail plate lasers · 12 – 60 kW",
+      "sub": "6 models · heavier gantry, 11.8″ under the beam with a 60 kW source",
+      "models": [
+       "ULG-13035C",
+       "ULG-13040C",
+       "ULG-13045C",
+       "ULG-26035C",
+       "ULG-26040C",
+       "ULG-26045C"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "42.7 ft × 11.5 ft (13,000 × 3,500 mm)",
+         "42.7 ft × 13.1 ft (13,000 × 4,000 mm)",
+         "42.7 ft × 14.8 ft (13,000 × 4,500 mm)",
+         "85.3 ft × 11.5 ft (26,000 × 3,500 mm)",
+         "85.3 ft × 13.1 ft (26,000 × 4,000 mm)",
+         "85.3 ft × 14.8 ft (26,000 × 4,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW",
+         "12 – 60 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "axes combined",
+        "cells": [
+         "230 ft/min (70 m/min)",
+         "197 ft/min (60 m/min)",
+         "164 ft/min (50 m/min)",
+         "230 ft/min (70 m/min)",
+         "197 ft/min (60 m/min)",
+         "164 ft/min (50 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "axes combined",
+        "cells": [
+         "0.8 G",
+         "0.7 G",
+         "0.6 G",
+         "0.8 G",
+         "0.7 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)",
+         "±0.03 mm/m (±0.0004″/ft)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeat accuracy",
+        "sub": "",
+        "cells": [
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0020″ (±0.05 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0020″ (±0.05 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0020″ (±0.05 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0028″ (±0.07 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0028″ (±0.07 mm)",
+         "X ±0.0012″ (±0.03 mm) · Y ±0.0028″ (±0.07 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clearance under the gantry",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm) to 40 kW · 11.8″ (300 mm) at 60 kW",
+         "7.5″ (190 mm) to 40 kW · 11.8″ (300 mm) at 60 kW",
+         "7.5″ (190 mm) to 40 kW · 11.8″ (300 mm) at 60 kW",
+         "7.5″ (190 mm) to 40 kW · 11.8″ (300 mm) at 60 kW",
+         "7.5″ (190 mm) to 40 kW · 11.8″ (300 mm) at 60 kW",
+         "7.5″ (190 mm) to 40 kW · 11.8″ (300 mm) at 60 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "78,705 lb (35,700 kg)",
+         "89,948 lb (40,800 kg)",
+         "101,192 lb (45,900 kg)",
+         "157,410 lb (71,400 kg)",
+         "179,897 lb (81,600 kg)",
+         "202,384 lb (91,800 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "54 × 17.7 × 7.2 ft (16,450 × 5,400 × 2,200 mm)",
+         "54 × 19.4 × 7.2 ft (16,450 × 5,900 × 2,200 mm)",
+         "54 × 21 × 7.2 ft (16,450 × 6,390 × 2,200 mm)",
+         "100.7 × 17.7 × 7.2 ft (30,700 × 5,390 × 2,200 mm)",
+         "102 × 19.3 × 7.2 ft (31,100 × 5,890 × 2,200 mm)",
+         "102 × 21 × 7.2 ft (31,100 × 6,390 × 2,200 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "ULG-13035A",
+      "glance": [
+       "42.7 ft × 11.5 ft (13,000 × 3,500 mm)",
+       "12 – 60 kW",
+       "262 ft/min (80 m/min)",
+       "1.1 G",
+       "78,705 lb (35,700 kg)"
+      ]
+     },
+     {
+      "name": "ULG-13040A",
+      "glance": [
+       "42.7 ft × 13.1 ft (13,000 × 4,000 mm)",
+       "12 – 60 kW",
+       "230 ft/min (70 m/min)",
+       "1 G",
+       "89,948 lb (40,800 kg)"
+      ]
+     },
+     {
+      "name": "ULG-13045A",
+      "glance": [
+       "42.7 ft × 14.8 ft (13,000 × 4,500 mm)",
+       "12 – 60 kW",
+       "197 ft/min (60 m/min)",
+       "0.85 G",
+       "101,192 lb (45,900 kg)"
+      ]
+     },
+     {
+      "name": "ULG-26035A",
+      "glance": [
+       "85.3 ft × 11.5 ft (26,000 × 3,500 mm)",
+       "12 – 60 kW",
+       "262 ft/min (80 m/min)",
+       "1.1 G",
+       "157,410 lb (71,400 kg)"
+      ]
+     },
+     {
+      "name": "ULG-26040A",
+      "glance": [
+       "85.3 ft × 13.1 ft (26,000 × 4,000 mm)",
+       "12 – 60 kW",
+       "230 ft/min (70 m/min)",
+       "1 G",
+       "179,897 lb (81,600 kg)"
+      ]
+     },
+     {
+      "name": "ULG-26045A",
+      "glance": [
+       "85.3 ft × 14.8 ft (26,000 × 4,500 mm)",
+       "12 – 60 kW",
+       "197 ft/min (60 m/min)",
+       "0.85 G",
+       "202,384 lb (91,800 kg)"
+      ]
+     },
+     {
+      "name": "ULG-13035C",
+      "glance": [
+       "42.7 ft × 11.5 ft (13,000 × 3,500 mm)",
+       "12 – 60 kW",
+       "230 ft/min (70 m/min)",
+       "0.8 G",
+       "78,705 lb (35,700 kg)"
+      ]
+     },
+     {
+      "name": "ULG-13040C",
+      "glance": [
+       "42.7 ft × 13.1 ft (13,000 × 4,000 mm)",
+       "12 – 60 kW",
+       "197 ft/min (60 m/min)",
+       "0.7 G",
+       "89,948 lb (40,800 kg)"
+      ]
+     },
+     {
+      "name": "ULG-13045C",
+      "glance": [
+       "42.7 ft × 14.8 ft (13,000 × 4,500 mm)",
+       "12 – 60 kW",
+       "164 ft/min (50 m/min)",
+       "0.6 G",
+       "101,192 lb (45,900 kg)"
+      ]
+     },
+     {
+      "name": "ULG-26035C",
+      "glance": [
+       "85.3 ft × 11.5 ft (26,000 × 3,500 mm)",
+       "12 – 60 kW",
+       "230 ft/min (70 m/min)",
+       "0.8 G",
+       "157,410 lb (71,400 kg)"
+      ]
+     },
+     {
+      "name": "ULG-26040C",
+      "glance": [
+       "85.3 ft × 13.1 ft (26,000 × 4,000 mm)",
+       "12 – 60 kW",
+       "197 ft/min (60 m/min)",
+       "0.7 G",
+       "179,897 lb (81,600 kg)"
+      ]
+     },
+     {
+      "name": "ULG-26045C",
+      "glance": [
+       "85.3 ft × 14.8 ft (26,000 × 4,500 mm)",
+       "12 – 60 kW",
+       "164 ft/min (50 m/min)",
+       "0.6 G",
+       "202,384 lb (91,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "accel",
+     "load"
+    ],
+    "caps": {},
+    "note": "The model number gives the table in decimetres (13035 = 13,000 × 3,500 mm); other lengths are built to order — the photos show 59 ft (18 m) and 66 ft (20 m) machines. Laser power is chosen at order. Speeds and accelerations are no-load values with the axes combined; the table load is the largest plate the support table carries."
    },
    "pdf": {
     "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",

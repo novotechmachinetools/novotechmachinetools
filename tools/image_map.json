@@ -20938,5 +20938,85 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "vn-ulg-1": {
+  "src": "tools/src-images/value-laser/vn-ulg-1.webp",
+  "alt": "NovoTech ULG ground-rail plate laser — enclosed gantry cabin running on floor rails, plate table behind, console in front",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-beam": {
+  "src": "tools/src-images/value-laser/vn-ulg-beam.jpg",
+  "alt": "ULG gantry and cutting head over the slat table — the gantry runs on its own ground rails",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-rails": {
+  "src": "tools/src-images/value-laser/vn-ulg-rails.jpg",
+  "alt": "Ground rails and plate-support table set side by side — the motion axis never carries the plate load",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-table": {
+  "src": "tools/src-images/value-laser/vn-ulg-table.jpg",
+  "alt": "Long plate-support table with replaceable slats, sources and chillers along the wall",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-cutting": {
+  "src": "tools/src-images/value-laser/vn-ulg-cutting.jpg",
+  "alt": "Cutting head piercing plate — 12 to 60 kW source chosen at order",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-parts": {
+  "src": "tools/src-images/value-laser/vn-ulg-parts.jpg",
+  "alt": "Heavy-plate parts and flanges cut on the ULG table, gantry carriage overhead",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-installed": {
+  "src": "tools/src-images/value-laser/vn-ulg-installed.jpg",
+  "alt": "ULG with a 59 × 14.8 ft (18 × 4.5 m) table and a 30 kW source installed in a heavy-equipment plant",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-extraction": {
+  "src": "tools/src-images/value-laser/vn-ulg-extraction.jpg",
+  "alt": "Zoned fume-extraction duct along the plate table",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-console": {
+  "src": "tools/src-images/value-laser/vn-ulg-console.webp",
+  "alt": "ULG operator console with the touchscreen CNC, nesting and remnant functions",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulg-flanges": {
+  "src": "tools/src-images/value-laser/vn-ulg-flanges.jpg",
+  "alt": "Tower flanges and baseplates cut from thick plate on a ground-rail laser",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
  }
 }

@@ -76046,5 +76046,299 @@
    "file": "img/value-laser/vn-ult-feeder-thumb.webp",
    "bytes": 2676
   }
+ },
+ "vn-ulg-1": {
+  "alt": "NovoTech ULG ground-rail plate laser \u2014 enclosed gantry cabin running on floor rails, plate table behind, console in front",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 534,
+    "file": "img/value-laser/vn-ulg-1-1200.webp",
+    "bytes": 76940
+   },
+   {
+    "w": 800,
+    "h": 356,
+    "file": "img/value-laser/vn-ulg-1-800.webp",
+    "bytes": 44136
+   },
+   {
+    "w": 480,
+    "h": 214,
+    "file": "img/value-laser/vn-ulg-1-480.webp",
+    "bytes": 21688
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 71,
+   "file": "img/value-laser/vn-ulg-1-thumb.webp",
+   "bytes": 4752
+  }
+ },
+ "vn-ulg-beam": {
+  "alt": "ULG gantry and cutting head over the slat table \u2014 the gantry runs on its own ground rails",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 786,
+    "file": "img/value-laser/vn-ulg-beam-1200.webp",
+    "bytes": 137588
+   },
+   {
+    "w": 800,
+    "h": 524,
+    "file": "img/value-laser/vn-ulg-beam-800.webp",
+    "bytes": 79682
+   },
+   {
+    "w": 480,
+    "h": 315,
+    "file": "img/value-laser/vn-ulg-beam-480.webp",
+    "bytes": 37186
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/value-laser/vn-ulg-beam-thumb.webp",
+   "bytes": 5294
+  }
+ },
+ "vn-ulg-rails": {
+  "alt": "Ground rails and plate-support table set side by side \u2014 the motion axis never carries the plate load",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 797,
+    "file": "img/value-laser/vn-ulg-rails-1200.webp",
+    "bytes": 123430
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/value-laser/vn-ulg-rails-800.webp",
+    "bytes": 62474
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/value-laser/vn-ulg-rails-480.webp",
+    "bytes": 25482
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/value-laser/vn-ulg-rails-thumb.webp",
+   "bytes": 3154
+  }
+ },
+ "vn-ulg-table": {
+  "alt": "Long plate-support table with replaceable slats, sources and chillers along the wall",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-laser/vn-ulg-table-1200.webp",
+    "bytes": 146580
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-laser/vn-ulg-table-800.webp",
+    "bytes": 75114
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-laser/vn-ulg-table-480.webp",
+    "bytes": 30110
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-laser/vn-ulg-table-thumb.webp",
+   "bytes": 3850
+  }
+ },
+ "vn-ulg-cutting": {
+  "alt": "Cutting head piercing plate \u2014 12 to 60 kW source chosen at order",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-laser/vn-ulg-cutting-1200.webp",
+    "bytes": 159954
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-laser/vn-ulg-cutting-800.webp",
+    "bytes": 88044
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-laser/vn-ulg-cutting-480.webp",
+    "bytes": 38854
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-laser/vn-ulg-cutting-thumb.webp",
+   "bytes": 5872
+  }
+ },
+ "vn-ulg-parts": {
+  "alt": "Heavy-plate parts and flanges cut on the ULG table, gantry carriage overhead",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-laser/vn-ulg-parts-1200.webp",
+    "bytes": 176566
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-laser/vn-ulg-parts-800.webp",
+    "bytes": 93766
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-laser/vn-ulg-parts-480.webp",
+    "bytes": 40766
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-laser/vn-ulg-parts-thumb.webp",
+   "bytes": 5692
+  }
+ },
+ "vn-ulg-installed": {
+  "alt": "ULG with a 59 \u00d7 14.8 ft (18 \u00d7 4.5 m) table and a 30 kW source installed in a heavy-equipment plant",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/value-laser/vn-ulg-installed-1200.webp",
+    "bytes": 171694
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/value-laser/vn-ulg-installed-800.webp",
+    "bytes": 85452
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/value-laser/vn-ulg-installed-480.webp",
+    "bytes": 34640
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/value-laser/vn-ulg-installed-thumb.webp",
+   "bytes": 4658
+  }
+ },
+ "vn-ulg-extraction": {
+  "alt": "Zoned fume-extraction duct along the plate table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-laser/vn-ulg-extraction-1200.webp",
+    "bytes": 94182
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-laser/vn-ulg-extraction-800.webp",
+    "bytes": 51414
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-laser/vn-ulg-extraction-480.webp",
+    "bytes": 24216
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-laser/vn-ulg-extraction-thumb.webp",
+   "bytes": 3924
+  }
+ },
+ "vn-ulg-console": {
+  "alt": "ULG operator console with the touchscreen CNC, nesting and remnant functions",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1926,
+    "file": "img/value-laser/vn-ulg-console-800.webp",
+    "bytes": 114176
+   },
+   {
+    "w": 480,
+    "h": 1156,
+    "file": "img/value-laser/vn-ulg-console-480.webp",
+    "bytes": 63492
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 66,
+   "h": 160,
+   "file": "img/value-laser/vn-ulg-console-thumb.webp",
+   "bytes": 4218
+  }
+ },
+ "vn-ulg-flanges": {
+  "alt": "Tower flanges and baseplates cut from thick plate on a ground-rail laser",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/value-laser/vn-ulg-flanges-1200.webp",
+    "bytes": 188332
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/value-laser/vn-ulg-flanges-800.webp",
+    "bytes": 94352
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/value-laser/vn-ulg-flanges-480.webp",
+    "bytes": 37842
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/value-laser/vn-ulg-flanges-thumb.webp",
+   "bytes": 4972
+  }
  }
 }

@@ -8,8 +8,9 @@ brochures and the ULE 3015 quotation NovoTech received; shown as imperial (metri
 are the supplier's: the working area in decimetres (3015 = 3,000 × 1,500 mm nominal), on tube lasers the bar length and the
 chuck size (ULT6024A = 6 m bars, Ø240 mm chuck, version A).
 
-Left out on purpose (October 2026): the ULG ground-rail plate lasers and the ULH H-beam laser (no photos in any brochure or
-quotation), and the ULJM precision laser (its published working area and axis strokes contradict each other).
+ULG ground-rail plate lasers: data and photos from the supplier's ULG web page (October 2026), added at the user's request.
+Left out on purpose: the ULH H-beam laser (the user does not want it on the site) and the ULJM precision laser (its published
+working area and axis strokes contradict each other).
 
 Pages fed from here: novotech-fiber-lasers (under the laser-cutting-machine hub) and novotech-tube-lasers (under the
 tube-laser-cutting-machine hub), both written by tools/vl_laser_pages.py from the 'dener' family set, which
@@ -143,6 +144,38 @@ T_ULE_L = table("ULE large-format exchange-table fiber lasers · 6 – 40 kW", "
     ("Table exchange", "15 s"),
     ("Dimensions L × W × H", [dims(*r[6], ft=True) for r in ULE_L])])
 
+# ------------------------------------------------------------------------------------------------ ULG ground-rail plate lasers
+# (model, L, W, repeat Y mm, speed m/min, accel G, load kg, dims) — supplier's web table, October 2026
+ULG_A = [("ULG-13035A", 13000, 3500, 0.04, 80, 1.1, 35700, (16200, 5300, 1950)), ("ULG-13040A", 13000, 4000, 0.04, 70, 1.0, 40800, (16200, 5800, 1950)),
+         ("ULG-13045A", 13000, 4500, 0.04, 60, 0.85, 45900, (16200, 6300, 1950)), ("ULG-26035A", 26000, 3500, 0.06, 80, 1.1, 71400, (30500, 5300, 1950)),
+         ("ULG-26040A", 26000, 4000, 0.06, 70, 1.0, 81600, (31100, 5800, 1950)), ("ULG-26045A", 26000, 4500, 0.06, 60, 0.85, 91800, (31100, 6300, 1950))]
+ULG_C = [("ULG-13035C", 13000, 3500, 0.05, 70, 0.8, 35700, (16450, 5400, 2200)), ("ULG-13040C", 13000, 4000, 0.05, 60, 0.7, 40800, (16450, 5900, 2200)),
+         ("ULG-13045C", 13000, 4500, 0.05, 50, 0.6, 45900, (16450, 6390, 2200)), ("ULG-26035C", 26000, 3500, 0.07, 70, 0.8, 71400, (30700, 5390, 2200)),
+         ("ULG-26040C", 26000, 4000, 0.07, 60, 0.7, 81600, (31100, 5890, 2200)), ("ULG-26045C", 26000, 4500, 0.07, 50, 0.6, 91800, (31100, 6390, 2200))]
+
+
+def ulg_rows(rows, clearance):
+    return [
+        ("Working area", [area(r[1], r[2], inches=False) for r in rows]),
+        ("Laser power", "12 – 60 kW"),
+        ("Max. speed", "axes combined", [mmin(r[4]) for r in rows]),
+        ("Max. acceleration", "axes combined", [f"{r[5]:g} G" for r in rows]),
+        ("Positioning accuracy", acc_m(0.03)),
+        ("Repeat accuracy", [f"X {acc(0.03)} · Y {acc(r[3])}" for r in rows]),
+        ("Z travel", mm_in(250)),
+        ("Clearance under the gantry", clearance),
+        ("Max. table load", [weight(r[6]) for r in rows]),
+        ("Dimensions L × W × H", [dims(*r[7], ft=True) for r in rows])]
+
+
+T_ULG_A = table("ULG-A ground-rail plate lasers · 12 – 60 kW", "6 models · 42.7 or 85.3 ft long, 11.5 – 14.8 ft wide · to 262 ft/min and 1.1 G",
+                [r[0] for r in ULG_A], ulg_rows(ULG_A, mm_in(190)))
+T_ULG_C = table("ULG-C ground-rail plate lasers · 12 – 60 kW", "6 models · heavier gantry, 11.8″ under the beam with a 60 kW source",
+                [r[0] for r in ULG_C], ulg_rows(ULG_C, f"{mm_in(190)} to 40 kW · {mm_in(300)} at 60 kW"))
+NOTE_ULG = ("The model number gives the table in decimetres (13035 = 13,000 × 3,500 mm); other lengths are built to order — the photos show "
+            "59 ft (18 m) and 66 ft (20 m) machines. Laser power is chosen at order. Speeds and accelerations are no-load values with the "
+            "axes combined; the table load is the largest plate the support table carries.")
+
 # ------------------------------------------------------------------------------------------------ sheet + tube combinations
 TUBE_CHUCK = "Ø8.7″ or Ø13.8″ chuck (Ø220 / 350 mm); square tube to 12.6″ (320 mm) on the large chuck"
 TUBE_LEN = "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
@@ -254,6 +287,29 @@ SHEET_FAMILIES = [
                  "vn-fms-tower", "vn-fms-gantry", "vn-precitec"],
          videos=[],
          specs=spec([T_ULE_S, T_ULE_L], LZ_GK, LZ_G_FROM, NOTE_SHEET)),
+    dict(id="vn-ulg", group="laser-novotech", page=P_SHEET, brand=BRAND,
+         name="ULG ground-rail plate lasers, 42.7 or 85.3 ft × up to 14.8 ft, 12 – 60 kW",
+         short="ULG ground-rail lasers",
+         models_label="ULG-13035A – 26045A · ULG-13035C – 26045C · 12 models",
+         summary="For plate too long, too wide or too heavy for a table machine: the ULG's gantry runs on rails set in the floor beside a "
+                 "separate plate-support table, so the table carries up to 202,000 lb (91.8 t) of plate without loading the motion "
+                 "axes. Tables 42.7 or 85.3 ft long and 11.5, 13.1 or 14.8 ft wide, other lengths to order; 12 to 60 kW for thick "
+                 "plate. Two gantries: the ULG-A runs to 262 ft/min and 1.1 G, the heavier ULG-C leaves 11.8″ under the beam with a "
+                 "60 kW source. Loaded by crane, with zoned extraction along the whole table — the laser for structural steel, tower, "
+                 "mining and heavy-equipment fabricators.",
+         features=["12 – 60 kW; tables 42.7 or 85.3 ft × 11.5 – 14.8 ft, other lengths to order; table loads to 202,000 lb; to 262 ft/min, 1.1 G",
+                   "Gantry on ground rails, separate from the plate-support table — the plate load never reaches the motion axes",
+                   "Fiber laser source chosen at order — Raycus, MAX or IPG — with a high-power autofocus cutting head",
+                   "Bus CNC with edge finding, nesting, common-line cutting and remnant functions; touchscreen console",
+                   "Positioning ±0.03 mm/m over the whole table; transmission covers and automatic lubrication on the long axis",
+                   "Zoned fume extraction along the table; replaceable support slats",
+                   VOLT, "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"],
+         optional=["Bevel cutting head", "MES connection and industry file interfaces", "Dust collector, compressor and gas supply sized to the machine",
+                   "Custom voltage: 208, 240 or 480 V 3-phase"],
+         images=["vn-ulg-1", "vn-ulg-installed", "vn-ulg-beam", "vn-ulg-rails", "vn-ulg-table", "vn-ulg-cutting", "vn-ulg-parts", "vn-ulg-console",
+                 "vn-ulg-extraction", "vn-ulg-flanges"],
+         videos=[],
+         specs=spec([T_ULG_A, T_ULG_C], LZ_GK, LZ_G_FROM, NOTE_ULG)),
     dict(id="vn-ulft", group="laser-novotech", page=P_SHEET, brand=BRAND,
          name="ULFT open-type sheet-and-tube fiber lasers, 10 × 5 to 85 × 10.5 ft plus tube to Ø13.8″, 1.5 – 60 kW",
          short="ULFT sheet + tube lasers",
