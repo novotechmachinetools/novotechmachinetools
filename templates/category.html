@@ -92,9 +92,21 @@
     </div>
 
     {% if f.videos %}
-    <div class="family-videos{{ ' is-multi' if f.videos|length > 1 else '' }}" id="{{ f.id }}-video">
+    {% set nv = f.videos|length %}
+    {% if nv > 3 %}
+    <div class="vid-carousel" id="{{ f.id }}-video" role="region" aria-roledescription="carousel" aria-label="{{ f.short or f.name }} videos ({{ nv }})">
+      <div class="family-videos is-multi vc-track" tabindex="0">
+        {% for v in f.videos %}{{ video(v) }}{% endfor %}
+      </div>
+      <button type="button" class="vc-btn vc-prev" aria-label="Previous videos" disabled></button>
+      <button type="button" class="vc-btn vc-next" aria-label="Next videos"></button>
+      <p class="vc-status" aria-live="polite">Videos 1 – 3 of {{ nv }}</p>
+    </div>
+    {% else %}
+    <div class="family-videos{{ ' is-multi' if nv > 1 else '' }}" id="{{ f.id }}-video">
       {% for v in f.videos %}{{ video(v) }}{% endfor %}
     </div>
+    {% endif %}
     {% endif %}
 
     {% if f.tables %}

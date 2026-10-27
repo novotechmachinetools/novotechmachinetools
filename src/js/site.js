@@ -221,7 +221,38 @@
       v.dataset.userStarted = "1";
     });
   });
-  if (videos.length && "IntersectionObserver" in window && !reduceMotion && !saveData && !PREVIEW) {
+  /* more than three videos: a carousel — three in view (two on tablets, one on phones), arrows page through the rest */
+  d.querySelectorAll(".vid-carousel").forEach(function (c) {
+    var track = c.querySelector(".vc-track"), prev = c.querySelector(".vc-prev"), next = c.querySelector(".vc-next"),
+        status = c.querySelector(".vc-status"), items = Array.prototype.slice.call(track.querySelectorAll(".video"));
+    if (!items.length) return;
+    function gap() { return parseFloat(getComputedStyle(track).columnGap) || 0; }
+    function step() { return items[0].getBoundingClientRect().width + gap(); }
+    function per() { return Math.max(1, Math.floor((track.clientWidth + gap() + 2) / step())); }
+    function update() {
+      var max = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max - 2;
+      var first = Math.min(items.length, Math.round(track.scrollLeft / step()) + 1), last = Math.min(items.length, first + per() - 1);
+      status.textContent = "Videos " + first + (last > first ? " – " + last : "") + " of " + items.length;
+    }
+    function stopHidden() {                     // a player that left the view stops (its poster comes back)
+      var tr = track.getBoundingClientRect();
+      items.forEach(function (v) {
+        var fr = v.querySelector("iframe"), r = v.getBoundingClientRect();
+        if (fr && v._poster && (r.right < tr.left + 20 || r.left > tr.right - 20)) { fr.replaceWith(v._poster); delete v.dataset.userStarted; }
+      });
+    }
+    prev.addEventListener("click", function () { track.scrollBy({ left: -per() * step(), behavior: "smooth" }); });
+    next.addEventListener("click", function () { track.scrollBy({ left: per() * step(), behavior: "smooth" }); });
+    var t;
+    track.addEventListener("scroll", function () { clearTimeout(t); t = setTimeout(function () { update(); stopHidden(); }, 120); }, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  });
+  /* muted autoplay only for the first video of each group; the others play when clicked */
+  var autoVideos = videos.filter(function (v) { return v.parentElement.querySelector(".video") === v; });
+  if (autoVideos.length && "IntersectionObserver" in window && !reduceMotion && !saveData && !PREVIEW) {
     var vio = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         var v = e.target;
@@ -234,7 +265,7 @@
         }
       });
     }, { threshold: [0, 0.5] });
-    videos.forEach(function (v) { vio.observe(v); });
+    autoVideos.forEach(function (v) { vio.observe(v); });
   }
 
   /* ---------- "Request a quote" buttons pre-select the machine ---------- */

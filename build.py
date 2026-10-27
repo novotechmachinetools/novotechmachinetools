@@ -526,7 +526,44 @@ def caption_for(f, alt):
     return f"{f['short']} · {head}" if head else f["short"], alt
 
 
+# ---------------------------------------------------------------- videos: content/videos.json lists, per family, every
+# NovoTech YouTube video that shows it (display order; titles of new ones written for the site) — it replaces the family's
+# own list.  Durations come from the channel export tools/novotech-youtube-videos.tsv; thumbnails are video-<id> images.
+YT_CHANNEL = {}
+for _l in open(os.path.join(ROOT, "tools", "novotech-youtube-videos.tsv"), encoding="utf-8"):
+    _p = _l.rstrip("\n").split("\t")
+    if len(_p) == 3:
+        YT_CHANNEL[_p[0]] = (_p[2].strip(), _p[1].strip())
+_vp = os.path.join(ROOT, "content", "videos.json")
+VIDEO_MAP = json.load(open(_vp, encoding="utf-8")) if os.path.exists(_vp) else {}
+
+
+def _iso_dur(mmss):
+    p = [int(x) for x in mmss.split(":")]
+    return f"PT{p[0]}H{p[1]}M{p[2]}S" if len(p) == 3 else f"PT{p[0]}M{p[1]}S"
+
+
+def family_videos(f):
+    lst = VIDEO_MAP.get(f["id"])
+    if lst is None:
+        return
+    cur = {v["id"]: v for v in f.get("videos") or []}
+    out = []
+    for it in lst:
+        i = it if isinstance(it, str) else it["id"]
+        v = dict(cur[i]) if i in cur else {"id": i, "thumb": "video-" + i}
+        if not isinstance(it, str) and it.get("title") and (i not in cur or it.get("new")):
+            v["title"] = it["title"]
+        if not v.get("title"):
+            v["title"] = YT_CHANNEL[i][0]
+        if not v.get("duration") and i in YT_CHANNEL:
+            v["duration"] = _iso_dur(YT_CHANNEL[i][1])
+        out.append(v)
+    f["videos"] = out
+
+
 def prepare_family(f):
+    family_videos(f)
     if f.get("specs") and f["specs"].get("kind") == "tools":
         # press brake tooling: the data generator supplies the tool tables (rows = tools) as f["tool_tables"]
         f["headline"] = f.get("headline") or f["specs"].get("headline", "")
