@@ -218,10 +218,12 @@ def mm_values(page, areas):
     cv = PL.Canvas(page, runs)
     polys = {id(r): r.outline() for r in runs}
     n, miss = 0, []
+    reach = [fitz.Rect(a) for a in areas]                  # each drawing with the millimetres written round it
     for r in runs:
         m = DIM_RE.match(r.t)
         if not m or not any(a.contains(r.origin) for a in areas):
             continue
+        k = next(j for j, a in enumerate(areas) if a.contains(r.origin))
         v = float(m.group(2)) * 25.4
         t = ("R " if m.group(1) else "") + mm_txt(v) + " mm"
         others = [polys[id(o)] for o in runs if o is not r]
@@ -230,9 +232,11 @@ def mm_values(page, areas):
                                            ("knock", 0.68), ("knock", 0.6)])
         if res:
             n += 1
+            x0, y0, x1, y1 = res["poly"].bounds
+            reach[k] |= fitz.Rect(x0, y0, x1, y1)
         else:
             miss.append(r.t)
-    return n, miss
+    return n, miss, reach
 
 
 # ------------------------------------------------------------------------------------------------------- pages
@@ -407,7 +411,8 @@ def punch_page(doc, num, title, items, extra=None):
     ink.put(34, 784, "Drawings in decimal inches, millimetres in blue. Tang .500″ (12.7 mm) with safety lip. "
             "H = height, R = tip radius, α = angle.", 6.8, "L", GREY)
     ink.flush()
-    n, miss = mm_values(page, areas)
+    n, miss, reach = mm_values(page, areas)
+    CROPS.update({it["code"]: (page.number, tuple(r)) for it, r in zip(items, reach)})
     chrome(page, num, title)
     return page, n, miss
 
@@ -427,9 +432,27 @@ def die_page(doc, num, title, items):
             "1.937″ (49.2 mm), 2.563″ (65.1 mm) overall.", 6.6, "L", GREY)
     ink.put(34, 793, "V = V opening, R = shoulder radius, α = angle, W = body width.", 6.6, "L", GREY)
     ink.flush()
-    n, miss = mm_values(page, areas)
+    n, miss, reach = mm_values(page, areas)
+    CROPS.update({it["code"]: (page.number, tuple(r)) for it, r in zip(items, reach)})
     chrome(page, num, title)
     return page, n, miss
+
+
+CROPS = {}                                                  # code → (page index, drawing with its labels)
+
+
+def web_drawings(pdf=OUT, out_dir=None, dpi=300):
+    """the drawings as they are in the catalogue — inches with the millimetres added — for the website's
+    American-style pages (tools/src-images/eurostamp/es-am-<code>.png)"""
+    out_dir = out_dir or os.path.join(ROOT, "tools", "src-images", "eurostamp")
+    doc = fitz.open(pdf)
+    paths = []
+    for code, (pno, r) in CROPS.items():
+        R = fitz.Rect(r) + (-6, -6, 6, 6)
+        path = os.path.join(out_dir, f"es-am-{code.lower()}.png")
+        doc[pno].get_pixmap(dpi=dpi, clip=R).save(path)
+        paths.append(path)
+    return paths
 
 
 def build(out=OUT):
@@ -457,3 +480,6 @@ if __name__ == "__main__":
     print(o)
     for r in rep:
         print(r)
+    if "--web" in sys.argv:
+        for p in web_drawings(o):
+            print(p)

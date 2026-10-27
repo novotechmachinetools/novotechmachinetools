@@ -377,6 +377,11 @@ def find_numbers(rgb, expect=None, grid_step=10, texts=None, thr=150):
     trusted = []
     for N in out:
         if N["kind"] == "dim":
+            if expect is not None and not any(abs(N["value"] - e) < 1e-6 for e in expect) and N.get("_commas"):
+                # a decimal number the catalogue does not print for this tool: no inch value for it, but its comma
+                # still becomes a point
+                trusted.append(dict(N, value=0, comma_only=True))
+                continue
             if expect is not None and not any(abs(N["value"] - e) < 1e-6 for e in expect):
                 # a comma the drawing has but the reading lost (65 → 6,5): only where the two digits stand a comma's width
                 # apart — '1,75' whose 1 merged with a leader line reads 75, and must not become 7,5 — and only when
@@ -586,7 +591,8 @@ def _reads_as_own(R, own, others, N):
             if d < 0.5 * d_own:
                 return False
         return True
-    return all(_gap(R, B) >= d_own + 0.15 * cap for B in others)
+    # stacked over or under: clearly nearer its own number than any other (a value between two numbers reads as either)
+    return all(_gap(R, B) >= d_own + 0.5 * cap for B in others)
 
 
 def _fit(N, paper, texts, dark_only, scales, grow=3):

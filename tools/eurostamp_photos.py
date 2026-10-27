@@ -177,7 +177,9 @@ PHOTOS = {
     "es-am-sect": photo(AM + "x35.png", "American-style sectioned sets: punch and die sections in inches, 35.75″ in all"),
     "es-am-hero": dict(kind="amhero", src=AM, alt="American-style punches and dies with the .500″ tang — gooseneck, straight and acute profiles",
                        codes=["S29084", "S28881", "S28932", "S29083", "S28946", "S28947", "S29144"]),
-    **{f"es-am-{c.lower()}": dict(kind="am", src=AM + f"{x}.png", alt=f"{c} — American-style {d} (drawing, inches)") for c, (x, d) in AM_DRAW.items()},
+    # the drawings as they are in the catalogue edition (tools/catalogue/american.py --web): inches with the millimetres
+    **{f"es-am-{c.lower()}": dict(kind="am", src=AM + f"{x}.png", alt=f"{c} — American-style {d} (drawing, inches and millimetres)")
+       for c, (x, d) in AM_DRAW.items()},
 }
 
 

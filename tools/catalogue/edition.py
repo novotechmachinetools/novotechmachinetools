@@ -113,6 +113,15 @@ def assemble(out_path):
                            {"startpage": 5, "prefix": "6 in", "style": "", "firstpagenum": 1},
                            {"startpage": 6, "prefix": "", "style": "D", "firstpagenum": 6},
                            {"startpage": n - 1, "prefix": "Back cover", "style": "", "firstpagenum": 1}])
+    # bookmarks: physical page numbers (EUROSTAMP's page p is p + 1 from page 6 on, after the imperial page 6)
+    am0 = n - 1 - n_am + 1
+    final.set_toc([[1, "Cover", 1], [1, "About this edition", 2], [1, "Air bending force — inches and US tons", 6],
+                   [1, "Air bending force — metric", 7], [1, "Product index", 9],
+                   [1, "Amada-Promecam (European) style", 15], [2, "ESH same-height series", 79],
+                   [1, "Trumpf style", 91], [1, "Wila style", 147], [1, "Bystronic style", 171], [1, "Accessories", 191],
+                   [2, "EUROGRIP clamping systems", 214], [1, "American style (.500″ tang)", am0],
+                   [2, "American-style punches", am0 + 2], [2, "American-style dies", am0 + 4],
+                   [1, "Contact NovoTech", n]])
     final.set_metadata({"title": "Press brake tooling catalogue — EUROSTAMP, NovoTech inch edition",
                         "author": "NovoTech Machine Tools Inc.",
                         "subject": "EUROSTAMP punches, dies, holders, adapters and clamps with every dimension in inches and "
