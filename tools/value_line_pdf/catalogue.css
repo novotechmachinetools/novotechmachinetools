@@ -3,6 +3,11 @@
 @font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; src: url("__FONTS__/barlow-condensed-latin-700-normal.ttf") format("truetype"); }
 @font-face { font-family: "Barlow"; font-weight: 400; font-style: normal; src: url("__FONTS__/barlow-latin-400-normal.ttf") format("truetype"); }
 @font-face { font-family: "Barlow"; font-weight: 500; font-style: normal; src: url("__FONTS__/barlow-latin-500-normal.ttf") format("truetype"); }
+/* the diameter sign: Inter's round Ø (declared last, so it wins for U+00D8 / U+00F8) */
+@font-face { font-family: "Barlow"; font-weight: 400; src: url("__FONTS__/nt-diameter-400.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
+@font-face { font-family: "Barlow"; font-weight: 500; src: url("__FONTS__/nt-diameter-500.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; src: url("__FONTS__/nt-diameter-700.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
+
 
 :root {
   --orange: #F28A1F;

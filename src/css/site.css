@@ -17,6 +17,12 @@
 @font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/barlow-condensed-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 @font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/barlow-condensed-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 
+/* The diameter sign: a round Ø (Inter's), used for U+00D8 / U+00F8 in place of Barlow's narrow one */
+@font-face { font-family: "NT Diameter"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/nt-diameter-400.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
+@font-face { font-family: "NT Diameter"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/nt-diameter-500.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
+@font-face { font-family: "NT Diameter"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/nt-diameter-600.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
+@font-face { font-family: "NT Diameter"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/nt-diameter-700.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
+
 /* Metric-matched fallbacks (Arial scaled to Barlow's widths and vertical metrics) so the swap to the
    web font does not move the layout — keeps CLS near zero while the woff2 files load. */
 @font-face { font-family: "Barlow Fallback"; font-weight: 400; src: local("Arial"), local("ArialMT"), local("Helvetica"); size-adjust: 96.1%; ascent-override: 104.05%; descent-override: 20.81%; line-gap-override: 0%; }
@@ -49,8 +55,8 @@
   --paper: #F4F5F6;
   --white: #FFFFFF;
   --focus: #1B6FD6;
-  --sans: "Barlow", "Barlow Fallback", "Barlow Fallback R", "Barlow Fallback D", Arial, Roboto, sans-serif;
-  --cond: "Barlow Condensed", "Barlow Condensed Fallback", "Barlow Condensed Fallback R", "Barlow Condensed Fallback D", "Arial Narrow", Arial, sans-serif;
+  --sans: "NT Diameter", "Barlow", "Barlow Fallback", "Barlow Fallback R", "Barlow Fallback D", Arial, Roboto, sans-serif;
+  --cond: "NT Diameter", "Barlow Condensed", "Barlow Condensed Fallback", "Barlow Condensed Fallback R", "Barlow Condensed Fallback D", "Arial Narrow", Arial, sans-serif;
   --wrap: 1560px;      /* content grows with the monitor up to this; text blocks keep a readable measure (ch caps) */
   --gutter: 16px;
   --radius: 3px;
