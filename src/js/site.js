@@ -229,6 +229,7 @@
     function gap() { return parseFloat(getComputedStyle(track).columnGap) || 0; }
     function step() { return items[0].getBoundingClientRect().width + gap(); }
     function per() { return Math.max(1, Math.floor((track.clientWidth + gap() + 2) / step())); }
+    c._per = per;
     function update() {
       var max = track.scrollWidth - track.clientWidth;
       prev.disabled = track.scrollLeft <= 2;
@@ -250,8 +251,14 @@
     window.addEventListener("resize", update);
     update();
   });
-  /* muted autoplay only for the first video of each group; the others play when clicked */
-  var autoVideos = videos.filter(function (v) { return v.parentElement.querySelector(".video") === v; });
+  /* muted autoplay for the videos in view when the page opens: all of a family's videos when it has three or fewer, the
+     first three of a carousel (two on tablets, one on phones); the ones behind the arrows play only when clicked */
+  var autoVideos = videos.filter(function (v) {
+    var c = v.closest(".vid-carousel");
+    if (!c) return true;
+    var items = Array.prototype.slice.call(c.querySelectorAll(".video"));
+    return items.indexOf(v) < (c._per ? c._per() : 3);
+  });
   if (autoVideos.length && "IntersectionObserver" in window && !reduceMotion && !saveData && !PREVIEW) {
     var vio = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
