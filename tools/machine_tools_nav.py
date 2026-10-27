@@ -8,16 +8,16 @@ SECTION = "CNC machine tools"
 RELATED_TITLE = "More CNC machine tools from NovoTech"
 # (slug, title, hero image, blurb, nav label, line)
 SUBPAGES = [
-    ("dener-cnc-lathes", "Dener CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks", "dn-ttc-1",
+    ("cnc-lathe", "Dener CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks", "dn-ttc-1",
      "The premium line, made in Turkey: 45° slant-bed CNC lathes with Fanuc control, 12-station servo turrets and hydraulic tailstocks — the "
      "compact TTC-6 and TTC-8 and the TTH-8, TTH-10 and TTH-12 with a Ø27.6″ swing, a 12″ chuck and 4.65″ spindle bore on the largest. "
      "C-axis turrets with live tools to order.",
      "Dener CNC lathes", "premium"),
-    ("dener-machining-centres", "Dener machining centres — TMC vertical and TDC double-column, BBT40 and BBT50", "dn-tmc-1",
+    ("vertical-machining-center", "Dener machining centres — TMC vertical and TDC double-column, BBT40 and BBT50", "dn-tmc-1",
      "The premium line, made in Turkey: TMC vertical machining centres from 33.5 to 63″ X travel with a 10,000 rpm BBT40 spindle and 24 tools, "
      "and TDC double-column machining centres from 82.7 to 161.4″ with a BBT50 spindle and tables for 26,455 lb.",
      "Dener machining centres", "premium"),
-    ("dener-surface-grinders", "Dener surface grinder — TGH-B 450 NC surface grinding machine", "dn-tgh-1",
+    ("surface-grinder", "Dener surface grinder — TGH-B 450 NC surface grinding machine", "dn-tgh-1",
      "The premium line, made in Turkey: a precision NC surface grinder with a 17.7 × 35.4″ table, a 15.7 × 31.5″ electromagnetic chuck, "
      "hydraulic table drive and Mitsubishi NC down and cross feed in 0.00004″ steps.",
      "Dener surface grinders", "premium"),

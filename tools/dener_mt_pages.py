@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Dener machine-tool pages: dener-cnc-lathes (TTC / TTH), dener-machining-centres (TMC vertical, TDC double-column) and
-dener-surface-grinders (TGH-B 450), under the cnc-machine-tools hub — family set content/families/dener-mt.json, photos from
+"""Dener machine-tool pages: cnc-lathe (TTC / TTH), vertical-machining-center (TMC vertical, TDC double-column) and
+surface-grinder (TGH-B 450), under the cnc-machine-tools hub — family set content/families/dener-mt.json, photos from
 tools/dener_mt_photos.py (section 'dener').
 
     python3 tools/dener_mt_photos.py                      # frames of NovoTech's videos → tools/src-images/dener, Shorts thumbnails
     python3 tools/dener_mt_pages.py                       # families + pages + image_map entries (tools/dener_mt_keys.txt)
     python3 tools/yt_thumbs.py $(cat tools/dener_mt_vids.txt)
     python3 tools/make_images.py --only $(cat tools/dener_mt_keys.txt)
-    python3 tools/brochure/build_brochure.py tools/brochure/specs/dener-cnc-lathes.json   (… machining-centres, surface-grinder)
+    python3 tools/brochure/build_brochure.py tools/brochure/specs/cnc-lathe.json   (… machining-centres, surface-grinder)
     python3 tools/machine_tools_hub.py                    # the hub, after this and tools/ttmc_more_pages.py
 """
 import json
@@ -45,9 +45,9 @@ INSTALL_FAQ = {"q": "Do you deliver, install and train in Canada?",
                     "the power and air requirements before the machine ships."}
 
 PAGE_LATHE = dict(
-    title="Dener CNC Lathes, Slant-Bed, 6″–12″ Chucks | NovoTech",
-    meta="Dener TTC and TTH CNC lathes: 45° slant bed, Fanuc control, 12-station servo turret, 6″ to 12″ chucks, Ø27.6″ swing, C-axis live "
-         "tooling. Made in Turkey; sold in Canada.",
+    title="CNC Lathes for Sale — Slant-Bed, 6″–12″ Chucks | NovoTech",
+    meta="CNC lathes for sale in Canada: Dener TTC and TTH slant-bed CNC lathes with Fanuc control, 12-station servo turret, 6″ to 12″ "
+         "chucks, Ø27.6″ swing and C-axis live tooling. Made in Turkey.",
     h1="Dener CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks",
     intro="A CNC lathe turns, faces, bores, grooves and threads round parts from bar stock or chucked blanks, with its tools on a turret that "
           "brings the next one into position in a fraction of a second. NovoTech sells Dener's CNC lathes in Canada, built in Kayseri, "
@@ -93,13 +93,13 @@ PAGE_LATHE = dict(
 )
 
 PAGE_MC = dict(
-    title="Dener Vertical & Double-Column Machining Centres | NovoTech",
-    meta="Dener TMC vertical machining centres, BBT40, 10,000 rpm, 24 tools, X 33.5 – 63″, and TDC double-column machining centres, BBT50, "
-         "X 82.7 – 161.4″. Made in Turkey; sold in Canada.",
-    h1="Dener machining centres — TMC vertical and TDC double-column, BBT40 and BBT50",
+    title="Vertical Machining Center, BT40 & Double-Column BT50 | NovoTech",
+    meta="Vertical machining centers (VMC) for sale in Canada: Dener TMC, BBT40, 10,000 rpm, 24 tools, X 33.5 – 63″, and TDC double-column "
+         "machining centers, BBT50, X to 161.4″. Made in Turkey.",
+    h1="Dener vertical machining centers — TMC VMCs and TDC double-column, BBT40 and BBT50",
     intro="A machining centre mills, drills, bores and taps prismatic parts under CNC and changes its own tools from a magazine, so a part "
           "that once went from the mill to the drill press to the tapping arm is finished in one setup. NovoTech sells Dener's machining "
-          "centres in Canada, built in Kayseri, Turkey: the TMC vertical machining centres in five sizes, from the TMC 850 with 33.5 × 20.1 × "
+          "centres in Canada, built in Kayseri, Turkey: the TMC vertical machining centres (VMC) in five sizes, from the TMC 850 with 33.5 × 20.1 × "
           "22″ (850 × 510 × 560 mm) travels to the TMC 1600 with 63 × 27.6 × 27.6″ (1,600 × 700 × 700 mm), all with a direct-drive BBT40 "
           "spindle at 10,000 rpm, a 24-tool arm changer and rapids of 1,417 in/min (36 m/min); and the TDC double-column (gantry) machining "
           "centres for long, wide and heavy parts — 82.7 to 161.4″ (2,100 – 4,100 mm) of X travel, 55 to 82.7″ between the columns, tables "
@@ -146,9 +146,9 @@ PAGE_MC = dict(
 )
 
 PAGE_GRIND = dict(
-    title="Dener TGH-B 450 NC Surface Grinder, 18 × 35″ Table | NovoTech",
-    meta="Dener TGH-B 450 precision NC surface grinder: 17.7 × 35.4″ table, 15.7 × 31.5″ magnetic chuck, Ø13.8″ wheel, Mitsubishi NC feeds "
-         "in 0.00004″ steps. Made in Turkey; sold in Canada.",
+    title="Precision NC Surface Grinder, 18 × 35″ Table | NovoTech",
+    meta="Surface grinder for sale in Canada: the Dener TGH-B 450 precision NC surface grinder, 17.7 × 35.4″ table, 15.7 × 31.5″ magnetic "
+         "chuck, Ø13.8″ wheel, Mitsubishi NC down feed in 0.00004″ steps. Made in Turkey.",
     h1="Dener NC surface grinder — TGH-B 450, 17.7 × 35.4″ table",
     intro="A surface grinder finishes flat, parallel and square faces to tenths: the part sits on a magnetic chuck on a table that runs back "
           "and forth under a grinding wheel, the wheel steps across at each stroke and comes down a few tenths at a time until the face is "

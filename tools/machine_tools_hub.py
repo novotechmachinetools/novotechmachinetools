@@ -18,15 +18,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "machine-tools"
 
 # (family set, page slug, family ids in display order)
-SOURCES = [("dener-mt", "dener-cnc-lathes", ["dn-ttc", "dn-tth"]),
-           ("dener-mt", "dener-machining-centres", ["dn-tmc", "dn-tdc"]),
-           ("dener-mt", "dener-surface-grinders", ["dn-tgh"]),
+SOURCES = [("dener-mt", "cnc-lathe", ["dn-ttc", "dn-tth"]),
+           ("dener-mt", "vertical-machining-center", ["dn-tmc", "dn-tdc"]),
+           ("dener-mt", "surface-grinder", ["dn-tgh"]),
            ("ttmc-more", "novotech-cnc-machine-tools", ["tt-cnc-lathe", "tt-vmc", "tt-boring", "tt-cnc-slot"])]
 
 HUB_PAGE = dict(
-    title="CNC Lathes, Machining Centres & Surface Grinders | NovoTech",
-    meta="CNC machine tools sold in Canada: Dener CNC lathes, TMC vertical and TDC double-column machining centres and the TGH surface "
-         "grinder, and NovoTech's value-line CNC lathe, VMCs and boring mills.",
+    title="CNC Lathes, Machining Centers & Surface Grinders | NovoTech",
+    meta="CNC lathes, vertical and double-column machining centers and surface grinders for sale in Canada — the Dener premium line from "
+         "Turkey and NovoTech's value line, with every model in one table.",
     h1="CNC machine tools — CNC lathes, vertical and double-column machining centres and surface grinders",
     intro="CNC machine tools turn, mill, drill, bore, tap and grind the parts a fabrication shop or a machine shop makes from bar, plate and "
           "castings. NovoTech sells two lines in Canada, each on its own pages: the Dener machine tools — the premium line, built in Kayseri, "

@@ -9,15 +9,15 @@ TDC 2112 rapid traverse (24 / 24 / 15 m/min), which only denerusa.com gives mode
 catalogue table (Fanuc 0i-TF Plus is standard on denerusa.com) gives the spindle motor and torque; the machining centres'
 Mitsubishi column (M80A is standard there).  Shown as imperial (metric) like the rest of the site.
 
-Pages: dener-cnc-lathes, dener-machining-centres, dener-surface-grinders — under the cnc-machine-tools hub
+Pages: cnc-lathe, vertical-machining-center, surface-grinder — under the cnc-machine-tools hub
 (tools/machine_tools_nav.py), written by tools/dener_mt_pages.py.
 """
 import dener_data as D
 
 BRAND = D.BRAND
-P_LATHE = "dener-cnc-lathes"
-P_MC = "dener-machining-centres"
-P_GRIND = "dener-surface-grinders"
+P_LATHE = "cnc-lathe"
+P_MC = "vertical-machining-center"
+P_GRIND = "surface-grinder"
 
 
 def i1(mm, nd=1):
