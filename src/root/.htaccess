@@ -7,6 +7,11 @@ RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
+# ---- Server-side settings and keys are never served ------------------------------
+<FilesMatch "^(\.user\.ini|form-config\.php|ai-config\.php|.*\.sample\.php)$">
+  Require all denied
+</FilesMatch>
+
 # ---- Clean URLs: /band-saw serves band-saw.html, and /band-saw.html redirects to /band-saw ----
 RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]

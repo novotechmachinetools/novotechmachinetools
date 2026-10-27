@@ -313,6 +313,13 @@ small { font-size: .85em; }
 .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--orange-deep); outline: 2px solid var(--orange); outline-offset: 0; }
 .field input[aria-invalid="true"] { border-color: #C62828; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.field-note { margin: 0; font-size: 13px; color: var(--steel); }
+.field-files input[type="file"] { padding: 8px; border-style: dashed; background: var(--paper, #FAFAF9); cursor: pointer; }
+.field-files input[type="file"]::file-selector-button { font: inherit; font-weight: 600; margin-right: 12px; padding: 7px 14px; border: 1px solid var(--charcoal); border-radius: var(--radius); background: #fff; color: var(--charcoal); cursor: pointer; }
+.field-files input[type="file"]:hover::file-selector-button { border-color: var(--orange-deep); color: var(--orange-deep); }
+.field-files input[aria-invalid="true"] { border-color: #C62828; }
+.field-captcha { min-height: 78px; }
+.captcha { max-width: 100%; overflow: hidden; }
 .form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
 .form-status { margin: 0; font-weight: 500; color: var(--charcoal-2); }
 .form-status.is-error { color: #B3261E; }

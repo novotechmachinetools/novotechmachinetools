@@ -8,7 +8,7 @@
       <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern) or email {{ email_link() }}.</p>
       <p class="quote-contact">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}</p>
     </div>
-    <form class="quote-form" action="quote.php" method="post" novalidate{% if staging %} data-staging="1"{% endif %}>
+    <form class="quote-form" action="quote.php" method="post" enctype="multipart/form-data" novalidate{% if staging %} data-staging="1"{% endif %}>
       <input type="hidden" name="page" value="{{ page.title }}">
       <input type="hidden" name="ts" value="{{ build_ts }}">
       <p class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
@@ -41,6 +41,15 @@
         <label for="q-message">{{ q.message_label or ("Bar sizes, voltage, quantity, delivery city…" if rebar else "Material, sizes, voltage, quantity, delivery city…") }}</label>
         <textarea id="q-message" name="message" rows="5"></textarea>
       </div>
+      <div class="field field-wide field-files">
+        <label for="q-files">Drawings, photos or files <span>optional</span></label>
+        <input id="q-files" name="files[]" type="file" multiple accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.sldprt,.x_t,.jpg,.jpeg,.png,.heic,.webp,.zip,.xls,.xlsx,.doc,.docx,.txt,.csv" aria-describedby="q-files-note">
+        <p class="field-note" id="q-files-note">Part drawings or sketches, photos of your parts — PDF, DWG, DXF, STEP, IGES, JPG, PNG, ZIP, Excel or Word · up to 5 files, 10 MB in total.</p>
+      </div>
+      {% if site.recaptcha_site_key %}<div class="field field-wide field-captcha">
+        <div class="captcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
+        <noscript><p class="field-note">Please turn on JavaScript to send the form, or email us.</p></noscript>
+      </div>{% endif %}
       <div class="field field-wide form-actions">
         <button class="btn btn-primary" type="submit">Send quote request</button>
         <p class="form-status" role="status" aria-live="polite"></p>

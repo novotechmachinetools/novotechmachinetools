@@ -292,40 +292,92 @@
   var form = d.querySelector(".quote-form");
   if (form && window.fetch && window.FormData) {
     var status = form.querySelector(".form-status");
+    var fileIn = form.querySelector("input[type=file]");
+    var MAX_FILES = 5, MAX_BYTES = 10 * 1024 * 1024;
+    var OK_EXT = /\.(pdf|dwg|dxf|step|stp|igs|iges|sldprt|x_t|jpe?g|png|heic|webp|zip|xlsx?|docx?|txt|csv)$/i;
+    var say = function (cls, msg, html) { status.className = "form-status" + (cls ? " " + cls : ""); if (html) status.innerHTML = msg; else status.textContent = msg; };
+    var checkFiles = function () {
+      if (!fileIn || !fileIn.files || !fileIn.files.length) { if (fileIn) fileIn.setAttribute("aria-invalid", "false"); return ""; }
+      var fs = fileIn.files, total = 0, msg = "";
+      if (fs.length > MAX_FILES) msg = "Please attach up to " + MAX_FILES + " files.";
+      for (var i = 0; i < fs.length && !msg; i++) {
+        total += fs[i].size;
+        if (!OK_EXT.test(fs[i].name)) msg = "“" + fs[i].name + "” is not a file type we accept — please send PDF, DWG, DXF, STEP, IGES, JPG, PNG, ZIP, Excel or Word files.";
+      }
+      if (!msg && total > MAX_BYTES) msg = "The files add up to " + (total / 1048576).toFixed(1) + " MB — please keep attachments under 10 MB in total, or email larger files to " + EMAIL + ".";
+      fileIn.setAttribute("aria-invalid", msg ? "true" : "false");
+      return msg;
+    };
+    if (fileIn) fileIn.addEventListener("change", function () { var m = checkFiles(); if (m) say("is-error", m); else if (/is-error/.test(status.className)) say("", ""); });
+
+    /* Google reCAPTCHA (v2 checkbox): the script loads only when the form comes near the screen or is used */
+    var capEl = form.querySelector(".captcha"), capId = null, capLoading = false;
+    window.ntCaptchaReady = function () {
+      if (capEl && capId === null && window.grecaptcha) capId = window.grecaptcha.render(capEl, { sitekey: capEl.dataset.sitekey });
+    };
+    var loadCaptcha = function () {
+      if (!capEl || capLoading || PREVIEW) return;
+      capLoading = true;
+      var sc = d.createElement("script");
+      sc.src = "https://www.google.com/recaptcha/api.js?onload=ntCaptchaReady&render=explicit";
+      sc.async = true; sc.defer = true;
+      d.head.appendChild(sc);
+    };
+    if (capEl) {
+      form.addEventListener("focusin", loadCaptcha);
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { loadCaptcha(); io.disconnect(); } }, { rootMargin: "600px 0px" });
+        io.observe(form);
+      } else { loadCaptcha(); }
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (PREVIEW) { status.className = "form-status"; status.textContent = "This is a preview — on the live site this sends the request to " + EMAIL + "."; return; }
+      if (PREVIEW) { say("", "This is a preview — on the live site this sends the request to " + EMAIL + "."); return; }
       var ok = true;
       form.querySelectorAll("[required]").forEach(function (el) {
         var bad = !el.value.trim() || (el.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));
         el.setAttribute("aria-invalid", bad ? "true" : "false");
         if (bad) ok = false;
       });
-      if (!ok) { status.className = "form-status is-error"; status.textContent = "Please add your name and a valid email address."; return; }
+      if (!ok) { say("is-error", "Please add your name and a valid email address."); return; }
+      var fm = checkFiles();
+      if (fm) { say("is-error", fm); return; }
       if (form.dataset.staging) {
         // GitHub test site: no PHP here, so hand the request to the visitor's e-mail app instead
         var f = function (n) { var el = form.elements[n]; return el ? el.value : ""; };
         var body = "Name: " + f("name") + "\nCompany: " + f("company") + "\nEmail: " + f("email") + "\nPhone: " + f("phone") + "\nMachine: " + f("machine") + "\nPage: " + f("page") + "\n\n" + f("message");
         window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Quote request — " + (f("machine") || "NovoTech website")) + "&body=" + encodeURIComponent(body);
-        status.className = "form-status";
-        status.textContent = "This is the test site (GitHub) and it cannot send e-mail by itself, so your request was opened in your e-mail app instead. On the live site at NovoTechMachineTools.com the form sends directly to " + EMAIL + ".";
+        say("", "This is the test site (GitHub) and it cannot send e-mail by itself, so your request was opened in your e-mail app instead" +
+          (fileIn && fileIn.files && fileIn.files.length ? " — please attach your files there" : "") +
+          ". On the live site at NovoTechMachineTools.com the form sends directly to " + EMAIL + ", attachments included.");
         return;
       }
+      if (capEl) {
+        var tok = window.grecaptcha && capId !== null ? window.grecaptcha.getResponse(capId) : "";
+        if (!tok) { loadCaptcha(); say("is-error", "Please tick “I’m not a robot” before sending."); return; }
+      }
       var btn = form.querySelector("button[type=submit]");
-      btn.disabled = true; status.className = "form-status"; status.textContent = "Sending…";
+      btn.disabled = true; say("", fileIn && fileIn.files && fileIn.files.length ? "Sending your request and files…" : "Sending…");
       fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
-        .then(function (r) { return r.json(); })
+        .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
         .then(function (j) {
           if (j && j.ok) {
-            status.className = "form-status is-ok"; status.textContent = "Thanks — your request is on its way. We will reply within one business day.";
+            say("is-ok", "Thanks — your request is on its way. We will reply within one business day.");
             form.reset();
-          } else { throw new Error(j && j.error ? j.error : "send failed"); }
+          } else {
+            var esc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+            say("is-error", (j && j.error ? esc(j.error) + " " : "We could not send the form from this page. ") +
+              "You can also email <a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a> or call +1 647 526 5510.", true);
+          }
         })
         .catch(function () {
-          status.className = "form-status is-error";
-          status.innerHTML = "We could not send the form from this page. Please email <a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a> or call +1 647 526 5510.";
+          say("is-error", "We could not send the form from this page. Please email <a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a> or call +1 647 526 5510.", true);
         })
-        .then(function () { btn.disabled = false; });
+        .then(function () {
+          btn.disabled = false;
+          if (capEl && window.grecaptcha && capId !== null) window.grecaptcha.reset(capId);
+        });
     });
   }
 })();
