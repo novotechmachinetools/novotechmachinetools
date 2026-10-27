@@ -418,8 +418,26 @@
      "href": "milling-machine.html"
     },
     {
-     "label": "CNC lathes & machining centres",
-     "href": "cnc-machine-tools.html"
+     "label": "CNC lathes, machining centres & grinders",
+     "href": "cnc-machine-tools.html",
+     "children": [
+      {
+       "label": "Dener CNC lathes · premium line",
+       "href": "dener-cnc-lathes.html"
+      },
+      {
+       "label": "Dener machining centres · premium line",
+       "href": "dener-machining-centres.html"
+      },
+      {
+       "label": "Dener surface grinders · premium line",
+       "href": "dener-surface-grinders.html"
+      },
+      {
+       "label": "NovoTech CNC machine tools · value line",
+       "href": "novotech-cnc-machine-tools.html"
+      }
+     ]
     },
     {
      "label": "Aluminum & PVC processing machines",
@@ -654,7 +672,7 @@
    "country": "Turkey",
    "country_code": "TR",
    "line": "Dener",
-   "tagline": "Made in Turkey since 1974 — Dener Makina press brakes, shears, sheet and tube fiber lasers and panel benders, with Dener Canada in Mississauga, ON, Canada; sold, installed and supported in Canada by NovoTech"
+   "tagline": "Made in Turkey since 1974 — Dener Makina press brakes, shears, sheet and tube fiber lasers, panel benders and CNC machine tools, with Dener Canada in Mississauga, ON, Canada; sold, installed and supported in Canada by NovoTech"
   },
   "senfeng": {
    "name": "Senfeng",

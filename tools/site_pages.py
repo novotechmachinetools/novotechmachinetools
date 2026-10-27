@@ -52,7 +52,7 @@ BLURBS = {
     "belt-grinder": "Metal belt grinders with 2 – 8″ belts, disc sanders, bench grinders, chamfering machines and dust collectors.",
     "drill-press": "Gear-head, column and variable-speed drill presses, 1/2″ to 2″ in steel, with power feed and tapping.",
     "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines and keyseaters.",
-    "cnc-machine-tools": "A slant-bed CNC lathe, BT40 vertical machining centres and BT50 CNC boring and milling machines.",
+    "cnc-machine-tools": "Dener CNC lathes, vertical and double-column machining centres and a surface grinder; value-line CNC lathe, VMCs and boring mills.",
     "cnc-plasma-table": "CNC plasma tables 2 × 2 ft to 5 × 10 ft and CNC plasma pipe cutters for Ø2 – 11-3/4″ pipe.",
     "english-wheel": "English wheels, planishing hammers, electric power hammers, shrinker-stretchers and air forging hammers.",
     "arbor-press": "Arbor presses 1/2 – 8 tons, bench presses with sheet-metal tooling, turret punch presses and orbital riveters.",
@@ -72,7 +72,7 @@ GROUPS = [
      ["pipe-benders", "pipe-notcher", "tube-end-forming-machines", "wire-bending-machines"]),
     ("finishing", "Deburring, grinding and finishing", "Deburring and edge rounding, belt grinders and sanders, corner grinding and pipe polishing.",
      ["sheet-metal-plate-deburring-edge-rounding-finishing-grinding", "belt-grinder", "corner-grinding-machines", "pipe-sanding-polishing-machines"]),
-    ("machining", "Drilling, milling and CNC machining", "Drill presses, milling machines, CNC lathes and machining centres.",
+    ("machining", "Drilling, milling and CNC machining", "Drill presses, milling machines, CNC lathes, machining centres and surface grinders.",
      ["drill-press", "milling-machine", "cnc-machine-tools"]),
     ("welding", "Welding", "Positioners and corner welders that take the hand work out of repeat welds.",
      ["welding-positioners", "corner-welding-machines"]),
@@ -87,7 +87,7 @@ FEATURED = ["press-brake", "laser-cutting-machine", "tube-laser-cutting-machine"
 
 BRANDS = [
     {"name": "Dener", "country": "Turkey", "since": "1974", "logo": None, "href": "press-brake.html",
-     "what": "CNC press brakes, panel benders, hydraulic shears, sheet and tube fiber lasers"},
+     "what": "CNC press brakes, panel benders, hydraulic shears, sheet and tube fiber lasers, CNC lathes, machining centres and surface grinders"},
     {"name": "GMS", "country": "Turkey", "since": "1960", "logo": None, "href": "rebar-bender-and-cutter.html",
      "what": "Rebar benders, stirrup benders, rebar cutters and automatic rebar processing lines"},
     {"name": "ISITAN", "country": "Turkey", "since": "1959", "logo": "isitan-logo", "href": "plate-rollers.html",
@@ -157,6 +157,9 @@ BROCHURES = [
     ("tube", "NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf", "CSM hydraulic tube benders, end formers and saws"),
     ("tube", "NovoTech-Wecotech-Tube-End-Forming-2026.pdf", "Wecotech tube end forming machines"),
     ("finishing", "NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf", "Gecam and Eurofintec deburring, finishing and pipe sanding"),
+    ("machining", "NovoTech-Dener-CNC-Lathes-2026.pdf", "Dener CNC lathes"),
+    ("machining", "NovoTech-Dener-Machining-Centres-2026.pdf", "Dener vertical and double-column machining centres"),
+    ("machining", "NovoTech-Dener-Surface-Grinder-2026.pdf", "Dener NC surface grinder"),
     ("rebar", "NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf", "GMS rebar bending and cutting machines"),
     ("windows", "NovoTech-Plastmak-Window-Machinery-2026.pdf", "Plastmak aluminum and PVC window machinery"),
 ]

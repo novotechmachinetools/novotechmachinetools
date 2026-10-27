@@ -1,0 +1,2356 @@
+{
+ "order": [
+  "dn-ttc",
+  "dn-tth",
+  "dn-tmc",
+  "dn-tdc",
+  "dn-tgh",
+  "tt-cnc-lathe",
+  "tt-vmc",
+  "tt-boring",
+  "tt-cnc-slot"
+ ],
+ "families": {
+  "dn-ttc": {
+   "id": "dn-ttc",
+   "brand": "dener",
+   "name": "TTC compact CNC lathes, 6″ and 8″ chucks — 45° slant bed",
+   "short": "TTC compact CNC lathes",
+   "models_label": "TTC-6 · TTC-8 · 2 models, C-axis versions",
+   "summary": "The TTC is Dener's compact slant-bed CNC lathe for shaft, flange and bushing work in series: a one-piece cast bed inclined at 45° that sheds chips into the conveyor, roller linear guides and C1 / C3 ballscrews coupled straight to the servo motors, a spindle on super-precision bearings and a 12-station servo turret that indexes in 0.2 s. The TTC-6 turns parts to Ø12″ (305 mm) × 17″ (433 mm) behind a 6″ hydraulic chuck at 6,000 rpm and takes 1.77″ (45 mm) bar; the TTC-8 has an 8″ chuck, 2.05″ (52 mm) bar and 4,500 rpm. With the optional BMT55 C-axis turret and its 12 live tools the same machine drills, taps and mills flats and slots in the one setup. Fanuc 0i-TF Plus control as standard, Mitsubishi M80 to order.",
+   "features": [
+    "45° one-piece cast slant bed; finite-element designed; travels X 7.5″ × Z 17.7″ (190 × 450 mm)",
+    "Swing over bed Ø22″ (560 mm); max. turning Ø12″ (305 mm)",
+    "Fanuc 0i-TF Plus CNC with 10.4″ colour screen (Mitsubishi M80 optional)",
+    "One-piece 45° cast slant bed; roller linear guides; C1 / C3 ballscrews coupled directly to the servo motors",
+    "Spindle on super-precision roller bearings; hydraulic chuck with soft and hard jaws",
+    "12-station servo turret with tool holders; hydraulic tailstock moved independently of the turret",
+    "Fully enclosed guarding with front-door interlock; chip conveyor, coolant system, oil skimmer, automatic lubrication",
+    "Hydraulic unit, cabinet cooling, foot pedal, portable handwheel, levelling bolts and tools",
+    "CSA-approved electrical panel; transformer for 600, 480, 240 or 208 V 3-phase"
+   ],
+   "optional": [
+    "Mitsubishi M80A control",
+    "C-axis turret: BMT55, 12 live tools for drilling, tapping and milling",
+    "Tool-setting arm and workpiece probe",
+    "Automatic bar feeder; parts catcher",
+    "Programmable tailstock",
+    "Linear scales",
+    "Automatic door",
+    "Electrical cabinet air conditioner",
+    "Chip cart; mist extractor"
+   ],
+   "images": [
+    "dn-ttc-1",
+    "dn-ttc-2",
+    "dn-ttc-3",
+    "dn-mt-lathe-casting"
+   ],
+   "videos": [
+    {
+     "id": "dim9DA1TmoQ",
+     "title": "DENER TTC-8 CNC turning centre",
+     "duration": "PT0M29S",
+     "thumb": "video-dim9DA1TmoQ"
+    },
+    {
+     "id": "_bkvwzuOYW0",
+     "title": "DENER machining centre and turning centre assembly line",
+     "duration": "PT0M25S",
+     "thumb": "video-_bkvwzuOYW0"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TTC CNC lathes",
+      "sub": "2 models · 6″ and 8″ chucks · 45° slant bed",
+      "models": [
+       "TTC-6",
+       "TTC-8"
+      ],
+      "rows": [
+       {
+        "label": "Swing over bed",
+        "sub": "",
+        "cells": [
+         "Ø22.0″ (560 mm)",
+         "Ø22.0″ (560 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. turning diameter",
+        "sub": "C-axis turret in brackets",
+        "cells": [
+         "Ø12.0″ (305 mm) · C: Ø10.8″",
+         "Ø12.0″ (305 mm) · C: Ø10.8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. turning length",
+        "sub": "C-axis turret in brackets",
+        "cells": [
+         "17.0″ (433 mm) · C: 14.3″",
+         "16.0″ (406 mm) · C: 13.2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Chuck",
+        "sub": "",
+        "cells": [
+         "6″ hydraulic, soft and hard jaws",
+         "8″ hydraulic, soft and hard jaws"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bar capacity",
+        "sub": "",
+        "cells": [
+         "Ø1.77″ (45 mm)",
+         "Ø2.05″ (52 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle nose",
+        "sub": "",
+        "cells": [
+         "A2-5",
+         "A2-6"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle bore",
+        "sub": "",
+        "cells": [
+         "Ø2.20″ (56 mm)",
+         "Ø2.60″ (66 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. spindle speed",
+        "sub": "",
+        "cells": [
+         "6,000 rpm",
+         "4,500 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "Fanuc, continuous / max.",
+        "cells": [
+         "14.8 / 27.4 HP (11 / 20.4 kW)",
+         "14.8 / 27.4 HP (11 / 20.4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. spindle torque",
+        "sub": "",
+        "cells": [
+         "127 lb·ft (171.6 N·m)",
+         "144 lb·ft (195 N·m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Travels X / Z",
+        "sub": "",
+        "cells": [
+         "7.5 / 17.7″ (190 / 450 mm)",
+         "7.5 / 17.7″ (190 / 450 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rapid traverse X / Z",
+        "sub": "",
+        "cells": [
+         "1,181 in/min (30 m/min)",
+         "1,181 in/min (30 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting feed",
+        "sub": "",
+        "cells": [
+         "39 – 197 in/min (1 – 5 m/min)",
+         "39 – 197 in/min (1 – 5 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Turret",
+        "sub": "",
+        "cells": [
+         "12 stations, servo-driven, hydraulic clamping; 0.20 – 0.34 s per station",
+         "12 stations, servo-driven, hydraulic clamping; 0.20 – 0.34 s per station"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool shank / boring bar",
+        "sub": "",
+        "cells": [
+         "1″ square (25 × 25 mm) / Ø1.57″ (40 mm)",
+         "1″ square (25 × 25 mm) / Ø1.57″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "C-axis turret",
+        "sub": "option",
+        "cells": [
+         "BMT55, 12 live tools to 6,000 rpm, 5.0 / 11.1 HP (3.7 / 8.3 kW)",
+         "BMT55, 12 live tools to 6,000 rpm, 5.0 / 11.1 HP (3.7 / 8.3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tailstock",
+        "sub": "hydraulic, quill Ø2.68″ (68 mm)",
+        "cells": [
+         "17.7″ (450 mm) travel, MT4",
+         "17.7″ (450 mm) travel, MT4"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy X / Z",
+        "sub": "",
+        "cells": [
+         ".0003 / .00016″ (0.008 / 0.004 mm)",
+         ".0003 / .00016″ (0.008 / 0.004 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability X / Z",
+        "sub": "",
+        "cells": [
+         ".00016 / .00008″ (0.004 / 0.002 mm)",
+         ".00016 / .00008″ (0.004 / 0.002 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant tank",
+        "sub": "",
+        "cells": [
+         "37 US gal (140 L)",
+         "37 US gal (140 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "25 kVA",
+         "25 kVA"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "162 × 67 × 70″ (4,123 × 1,709 × 1,778 mm)",
+         "162 × 67 × 70″ (4,123 × 1,709 × 1,778 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,187 lb (3,260 kg)",
+         "7,288 lb (3,306 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TTC-6",
+      "glance": [
+       "Ø22.0″ (560 mm)",
+       "7.5 / 17.7″ (190 / 450 mm)",
+       "6,000 rpm",
+       "14.8 / 27.4 HP (11 / 20.4 kW)",
+       "7,187 lb (3,260 kg)"
+      ]
+     },
+     {
+      "name": "TTC-8",
+      "glance": [
+       "Ø22.0″ (560 mm)",
+       "7.5 / 17.7″ (190 / 450 mm)",
+       "4,500 rpm",
+       "14.8 / 27.4 HP (11 / 20.4 kW)",
+       "7,288 lb (3,306 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "swing_over_bed",
+     "travel_x_z",
+     "spindle_speed_max",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions in inches with Dener's millimetres in brackets. Spindle motor and torque are those of the standard Fanuc control; with the optional Mitsubishi control the spindle motor is 11 / 18 kW. Max. turning diameter and length are given for the standard slot turret and, after 'C:', for the optional C-axis turret with live tools."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-CNC-Lathes-2026.pdf",
+    "label": "Download the Dener CNC lathe brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "lathe-ttc"
+  },
+  "dn-tth": {
+   "id": "dn-tth",
+   "brand": "dener",
+   "name": "TTH CNC lathes, 8″, 10″ and 12″ chucks — 45° slant bed, Ø27.6″ swing",
+   "short": "TTH CNC lathes",
+   "models_label": "TTH-8 · TTH-10 · TTH-12 · 3 models, C-axis versions",
+   "summary": "The TTH is the larger Dener slant-bed lathe: Ø27.6″ (700 mm) swing over the bed, X 11.8″ × Z 29.9″ (300 × 760 mm) travels and parts to Ø20.8″ (528 mm) × 26.8″ (680 mm). Three spindles cover shaft and chuck work from 2″ to 3.7″ bar: the TTH-8 with an 8″ chuck, 2.05″ (52 mm) bar and 4,500 rpm, the TTH-10 with a 10″ chuck, 2.95″ (75 mm) bar and an A2-8 nose, and the TTH-12 with a 12″ chuck, an A2-11 nose, a 4.65″ (118 mm) spindle bore and 602 lb·ft (816 N·m) of torque for heavy cuts in large diameters. Same 45° cast bed, roller guides, servo turret and hydraulic tailstock as the TTC; the BMT55 C-axis turret with 12 live tools makes it a turn-mill centre.",
+   "features": [
+    "45° one-piece cast slant bed; travels X 11.8″ × Z 29.9″ (300 × 760 mm); tailstock travel 25.6″ (650 mm)",
+    "Swing over bed Ø27.6″ (700 mm); max. turning Ø20.8″ (528 mm)",
+    "Fanuc 0i-TF Plus CNC with 10.4″ colour screen (Mitsubishi M80 optional)",
+    "One-piece 45° cast slant bed; roller linear guides; C1 / C3 ballscrews coupled directly to the servo motors",
+    "Spindle on super-precision roller bearings; hydraulic chuck with soft and hard jaws",
+    "12-station servo turret with tool holders; hydraulic tailstock moved independently of the turret",
+    "Fully enclosed guarding with front-door interlock; chip conveyor, coolant system, oil skimmer, automatic lubrication",
+    "Hydraulic unit, cabinet cooling, foot pedal, portable handwheel, levelling bolts and tools",
+    "CSA-approved electrical panel; transformer for 600, 480, 240 or 208 V 3-phase"
+   ],
+   "optional": [
+    "Mitsubishi M80A control",
+    "C-axis turret: BMT55, 12 live tools for drilling, tapping and milling",
+    "Tool-setting arm and workpiece probe",
+    "Automatic bar feeder; parts catcher",
+    "Programmable tailstock",
+    "Linear scales",
+    "Automatic door",
+    "Electrical cabinet air conditioner",
+    "Chip cart; mist extractor"
+   ],
+   "images": [
+    "dn-tth-1",
+    "dn-tth-2",
+    "dn-tth-3",
+    "dn-tth-4"
+   ],
+   "videos": [
+    {
+     "id": "XhIVx8rzqnY",
+     "title": "DENER TTH-10 CNC turning machine",
+     "duration": "PT0M34S",
+     "thumb": "video-XhIVx8rzqnY"
+    },
+    {
+     "id": "_bkvwzuOYW0",
+     "title": "DENER machining centre and turning centre assembly line",
+     "duration": "PT0M25S",
+     "thumb": "video-_bkvwzuOYW0"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TTH CNC lathes",
+      "sub": "3 models · 8″, 10″ and 12″ chucks · 45° slant bed",
+      "models": [
+       "TTH-8",
+       "TTH-10",
+       "TTH-12"
+      ],
+      "rows": [
+       {
+        "label": "Swing over bed",
+        "sub": "",
+        "cells": [
+         "Ø27.6″ (700 mm)",
+         "Ø27.6″ (700 mm)",
+         "Ø27.6″ (700 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. turning diameter",
+        "sub": "C-axis turret in brackets",
+        "cells": [
+         "Ø20.8″ (528 mm) · C: Ø17.2″",
+         "Ø20.8″ (528 mm) · C: Ø17.2″",
+         "Ø19.2″ (488 mm) · C: Ø14.7″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. turning length",
+        "sub": "C-axis turret in brackets",
+        "cells": [
+         "26.8″ (680 mm) · C: 24.7″",
+         "26.0″ (660 mm) · C: 23.9″",
+         "24.2″ (614 mm) · C: 21.1″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Chuck",
+        "sub": "",
+        "cells": [
+         "8″ hydraulic, soft and hard jaws",
+         "10″ hydraulic, soft and hard jaws",
+         "12″ hydraulic, soft and hard jaws"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bar capacity",
+        "sub": "",
+        "cells": [
+         "Ø2.05″ (52 mm)",
+         "Ø2.95″ (75 mm)",
+         "Ø3.74″ (95 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle nose",
+        "sub": "",
+        "cells": [
+         "A2-6",
+         "A2-8",
+         "A2-11"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle bore",
+        "sub": "",
+        "cells": [
+         "Ø2.60″ (66 mm)",
+         "Ø3.62″ (92 mm)",
+         "Ø4.65″ (118 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. spindle speed",
+        "sub": "",
+        "cells": [
+         "4,500 rpm",
+         "3,500 rpm",
+         "2,450 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "Fanuc, continuous / max.",
+        "cells": [
+         "20.1 / 32.5 HP (15 / 24.2 kW)",
+         "14.8 / 22.1 HP (11 / 16.5 kW)",
+         "20.1 / 27.4 HP (15 / 20.4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. spindle torque",
+        "sub": "",
+        "cells": [
+         "170 lb·ft (231 N·m)",
+         "232 lb·ft (315 N·m)",
+         "602 lb·ft (815.9 N·m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Travels X / Z",
+        "sub": "",
+        "cells": [
+         "11.8 / 29.9″ (300 / 760 mm)",
+         "11.8 / 29.9″ (300 / 760 mm)",
+         "11.8 / 29.9″ (300 / 760 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rapid traverse X / Z",
+        "sub": "",
+        "cells": [
+         "1,181 in/min (30 m/min)",
+         "1,181 in/min (30 m/min)",
+         "1,181 in/min (30 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting feed",
+        "sub": "",
+        "cells": [
+         "39 – 394 in/min (1 – 10 m/min)",
+         "39 – 394 in/min (1 – 10 m/min)",
+         "39 – 394 in/min (1 – 10 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Turret",
+        "sub": "",
+        "cells": [
+         "12 stations, servo-driven, hydraulic clamping; 0.20 – 0.34 s per station",
+         "12 stations, servo-driven, hydraulic clamping; 0.20 – 0.34 s per station",
+         "12 stations, servo-driven, hydraulic clamping; 0.20 – 0.34 s per station"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool shank / boring bar",
+        "sub": "",
+        "cells": [
+         "1″ square (25 × 25 mm) / Ø1.57″ (40 mm)",
+         "1″ square (25 × 25 mm) / Ø1.57″ (40 mm)",
+         "1″ square (25 × 25 mm) / Ø1.57″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "C-axis turret",
+        "sub": "option",
+        "cells": [
+         "BMT55, 12 live tools to 6,000 rpm, 5.0 / 11.1 HP (3.7 / 8.3 kW)",
+         "BMT55, 12 live tools to 6,000 rpm, 5.0 / 11.1 HP (3.7 / 8.3 kW)",
+         "BMT55, 12 live tools to 5,000 rpm, 5.0 / 11.1 HP (3.7 / 8.3 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tailstock",
+        "sub": "hydraulic, quill Ø2.68″ (68 mm)",
+        "cells": [
+         "25.6″ (650 mm) travel, MT4",
+         "25.6″ (650 mm) travel, MT4",
+         "25.6″ (650 mm) travel, MT5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy X / Z",
+        "sub": "",
+        "cells": [
+         ".0003 / .00016″ (0.008 / 0.004 mm)",
+         ".0003 / .00016″ (0.008 / 0.004 mm)",
+         ".0003 / .00016″ (0.008 / 0.004 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability X / Z",
+        "sub": "",
+        "cells": [
+         ".00016 / .00008″ (0.004 / 0.002 mm)",
+         ".00016 / .00008″ (0.004 / 0.002 mm)",
+         ".00016 / .00008″ (0.004 / 0.002 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant tank",
+        "sub": "",
+        "cells": [
+         "42 US gal (160 L)",
+         "42 US gal (160 L)",
+         "42 US gal (160 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "32 kVA",
+         "32 kVA",
+         "32 kVA"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "171 × 76 × 79″ (4,345 × 1,924 × 2,008 mm)",
+         "171 × 76 × 79″ (4,345 × 1,924 × 2,008 mm)",
+         "179 × 82 × 79″ (4,545 × 2,073 × 2,008 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "11,881 lb (5,389 kg)",
+         "11,991 lb (5,439 kg)",
+         "12,976 lb (5,886 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TTH-8",
+      "glance": [
+       "Ø27.6″ (700 mm)",
+       "11.8 / 29.9″ (300 / 760 mm)",
+       "4,500 rpm",
+       "20.1 / 32.5 HP (15 / 24.2 kW)",
+       "11,881 lb (5,389 kg)"
+      ]
+     },
+     {
+      "name": "TTH-10",
+      "glance": [
+       "Ø27.6″ (700 mm)",
+       "11.8 / 29.9″ (300 / 760 mm)",
+       "3,500 rpm",
+       "14.8 / 22.1 HP (11 / 16.5 kW)",
+       "11,991 lb (5,439 kg)"
+      ]
+     },
+     {
+      "name": "TTH-12",
+      "glance": [
+       "Ø27.6″ (700 mm)",
+       "11.8 / 29.9″ (300 / 760 mm)",
+       "2,450 rpm",
+       "20.1 / 27.4 HP (15 / 20.4 kW)",
+       "12,976 lb (5,886 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "swing_over_bed",
+     "travel_x_z",
+     "spindle_speed_max",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions in inches with Dener's millimetres in brackets. Spindle motor and torque are those of the standard Fanuc control; with the optional Mitsubishi control the spindle motor is 11 / 18 kW. Max. turning diameter and length are given for the standard slot turret and, after 'C:', for the optional C-axis turret with live tools."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-CNC-Lathes-2026.pdf",
+    "label": "Download the Dener CNC lathe brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "lathe-tth"
+  },
+  "dn-tmc": {
+   "id": "dn-tmc",
+   "brand": "dener",
+   "name": "TMC vertical machining centres, BBT40 — X 33.5 to 63″",
+   "short": "TMC vertical machining centres",
+   "models_label": "TMC 850 – TMC 1600 · 5 models",
+   "summary": "Dener's TMC vertical machining centres mill, drill, bore and tap in one setup — pockets, contours, rigid tapping without a floating holder, and shapes drawn freehand in the Navi-Mill conversational software. The base, column and saddle are stress-relieved Meehanite castings laid out by finite-element analysis; the BBT40 spindle is direct-driven at 10,000 rpm (12,000 or 15,000 to order) with its own cooling; the 24-tool arm changer swaps tools in 1.3 s; double-nut C3 ballscrews and roller guides traverse at 1,417 in/min (36 m/min) and position to ±0.00016″ (±0.004 mm). Five sizes from the TMC 850 — 33.5 × 20.1 × 22″ (850 × 510 × 560 mm) over a 39 × 20″ table — to the TMC 1600 with 63 × 27.6 × 27.6″ (1,600 × 700 × 700 mm) and a 2,646 lb (1,200 kg) table load; the 1300 and 1600 have a 40 HP (30 kW) spindle motor.",
+   "features": [
+    "Five sizes: X 33.5 – 63″, Y 20.1 – 27.6″, Z 22 – 27.6″ (850 – 1,600 × 510 – 700 × 560 – 700 mm)",
+    "1,417 in/min (36 m/min) rapids on all axes; ±0.00016″ (±0.004 mm) positioning, ±0.00008″ (±0.002 mm) repeatability",
+    "Mitsubishi M80A CNC, 15″ touchscreen, Navi-Mill conversational programming (Fanuc 0i-MF optional)",
+    "Stress-relieved Meehanite cast base, column and saddle, laid out by finite-element analysis",
+    "BBT40 10,000 rpm direct-drive spindle with spindle cooling; 24-tool arm-type changer; rigid tapping",
+    "C3 double-nut ballscrews coupled directly to the servo motors; roller linear guides; 4th-axis ready",
+    "Fully enclosed guarding with front-door interlock; coolant round the spindle, air blast, chip wash-down",
+    "Steel-belt chip conveyor with cart, oil skimmer, automatic lubrication, cabinet cooling, handwheel",
+    "CSA-approved electrical panel; transformer for 600, 480, 240 or 208 V 3-phase"
+   ],
+   "optional": [
+    "Fanuc 0i-MF control",
+    "12,000 or 15,000 rpm BBT40 spindle",
+    "Through-spindle coolant, 435 psi (30 bar)",
+    "CNC rotary table — 4th axis",
+    "Tool setter and workpiece probe",
+    "Linear scales",
+    "Automatic door",
+    "Electrical cabinet air conditioner",
+    "Mist extractor"
+   ],
+   "images": [
+    "dn-tmc-1",
+    "dn-tmc-2",
+    "dn-tmc-3",
+    "dn-mt-vmc-line"
+   ],
+   "videos": [
+    {
+     "id": "gUYhBOqIP3M",
+     "title": "DENER TMC 1200 vertical machining centre",
+     "duration": "PT0M41S",
+     "thumb": "video-gUYhBOqIP3M"
+    },
+    {
+     "id": "_bkvwzuOYW0",
+     "title": "DENER machining centre and turning centre assembly line",
+     "duration": "PT0M25S",
+     "thumb": "video-_bkvwzuOYW0"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TMC vertical machining centres",
+      "sub": "5 models · BBT40, 10,000 rpm, 24 tools · 33.5 to 63″ X travel",
+      "models": [
+       "TMC 850",
+       "TMC 1000",
+       "TMC 1200",
+       "TMC 1300",
+       "TMC 1600"
+      ],
+      "rows": [
+       {
+        "label": "Travels X × Y × Z",
+        "sub": "",
+        "cells": [
+         "33.5 × 20.1 × 22.0″ (850 × 510 × 560 mm)",
+         "40.2 × 20.1 × 22.0″ (1,020 × 510 × 560 mm)",
+         "47.2 × 23.6 × 23.6″ (1,200 × 600 × 600 mm)",
+         "51.2 × 27.6 × 27.6″ (1,300 × 700 × 700 mm)",
+         "63.0 × 27.6 × 27.6″ (1,600 × 700 × 700 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "39.4 × 19.7″ (1,000 × 500 mm)",
+         "47.2 × 19.7″ (1,200 × 500 mm)",
+         "51.2 × 23.6″ (1,300 × 600 mm)",
+         "57.1 × 27.6″ (1,450 × 700 mm)",
+         "68.9 × 27.6″ (1,750 × 700 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "T-slots",
+        "sub": "",
+        "cells": [
+         "5 × 18 mm at 100 mm (3.94″)",
+         "5 × 18 mm at 100 mm (3.94″)",
+         "5 × 18 mm at 100 mm (3.94″)",
+         "5 × 18 mm at 125 mm (4.92″)",
+         "5 × 18 mm at 125 mm (4.92″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "1,102 lb (500 kg)",
+         "1,102 lb (500 kg)",
+         "2,205 lb (1,000 kg)",
+         "2,646 lb (1,200 kg)",
+         "2,646 lb (1,200 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle nose to table",
+        "sub": "",
+        "cells": [
+         "5.9 – 28.0″ (150 – 710 mm)",
+         "5.9 – 28.0″ (150 – 710 mm)",
+         "5.9 – 29.5″ (150 – 750 mm)",
+         "5.1 – 32.7″ (130 – 830 mm)",
+         "5.1 – 32.7″ (130 – 830 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle",
+        "sub": "",
+        "cells": [
+         "BBT40 (7/24 taper), direct drive, with spindle cooling",
+         "BBT40 (7/24 taper), direct drive, with spindle cooling",
+         "BBT40 (7/24 taper), direct drive, with spindle cooling",
+         "BBT40 (7/24 taper), direct drive, with spindle cooling",
+         "BBT40 (7/24 taper), direct drive, with spindle cooling"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "10,000 rpm · 12,000 or 15,000 rpm optional",
+         "10,000 rpm · 12,000 or 15,000 rpm optional",
+         "10,000 rpm · 12,000 or 15,000 rpm optional",
+         "10,000 rpm · 12,000 or 15,000 rpm optional",
+         "10,000 rpm · 12,000 or 15,000 rpm optional"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "Mitsubishi, continuous / max.",
+        "cells": [
+         "10.1 / 24.1 HP (7.5 / 18 kW)",
+         "10.1 / 24.1 HP (7.5 / 18 kW)",
+         "10.1 / 24.1 HP (7.5 / 18 kW)",
+         "14.8 / 40.2 HP (11 / 30 kW)",
+         "14.8 / 40.2 HP (11 / 30 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle torque",
+        "sub": "continuous / max.",
+        "cells": [
+         "35 / 85 lb·ft (47.7 / 115 N·m)",
+         "35 / 85 lb·ft (47.7 / 115 N·m)",
+         "35 / 85 lb·ft (47.7 / 115 N·m)",
+         "57 / 141 lb·ft (77.8 / 191 N·m)",
+         "57 / 141 lb·ft (77.8 / 191 N·m)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axis motors X / Y / Z",
+        "sub": "",
+        "cells": [
+         "3.0 / 3.0 / 4.7 HP (2.2 / 2.2 / 3.5 kW)",
+         "3.0 / 3.0 / 4.7 HP (2.2 / 2.2 / 3.5 kW)",
+         "4.7 / 4.7 / 4.7 HP (3.5 / 3.5 / 3.5 kW)",
+         "4.7 / 4.7 / 6.0 HP (3.5 / 3.5 / 4.5 kW)",
+         "4.7 / 4.7 / 6.0 HP (3.5 / 3.5 / 4.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rapid traverse X / Y / Z",
+        "sub": "",
+        "cells": [
+         "1,417 in/min (36 m/min)",
+         "1,417 in/min (36 m/min)",
+         "1,417 in/min (36 m/min)",
+         "1,417 in/min (36 m/min)",
+         "1,417 in/min (36 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting feed",
+        "sub": "",
+        "cells": [
+         "39 – 591 in/min (1 – 15 m/min)",
+         "39 – 591 in/min (1 – 15 m/min)",
+         "39 – 591 in/min (1 – 15 m/min)",
+         "39 – 591 in/min (1 – 15 m/min)",
+         "39 – 591 in/min (1 – 15 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool changer",
+        "sub": "",
+        "cells": [
+         "24 tools, arm type, BBT40",
+         "24 tools, arm type, BBT40",
+         "24 tools, arm type, BBT40",
+         "24 tools, arm type, BBT40",
+         "24 tools, arm type, BBT40"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool change",
+        "sub": "tool to tool / chip to chip",
+        "cells": [
+         "1.3 / 3.1 s",
+         "1.3 / 3.1 s",
+         "1.3 / 3.7 s",
+         "1.3 / 3.7 s",
+         "1.3 / 3.7 s"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tool",
+        "sub": "Ø with free neighbours · length · weight",
+        "cells": [
+         "Ø3.9″ (100 mm), Ø5.9″ (150 mm) · 11.8″ (300 mm) · 15.4 lb (7 kg)",
+         "Ø3.9″ (100 mm), Ø5.9″ (150 mm) · 11.8″ (300 mm) · 15.4 lb (7 kg)",
+         "Ø3.9″ (100 mm), Ø5.9″ (150 mm) · 11.8″ (300 mm) · 15.4 lb (7 kg)",
+         "Ø3.9″ (100 mm), Ø5.9″ (150 mm) · 11.8″ (300 mm) · 15.4 lb (7 kg)",
+         "Ø3.9″ (100 mm), Ø5.9″ (150 mm) · 11.8″ (300 mm) · 15.4 lb (7 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Linear guides",
+        "sub": "roller type, X / Y / Z",
+        "cells": [
+         "30 / 35 / 35 mm",
+         "30 / 35 / 35 mm",
+         "35 / 45 / 45 mm",
+         "35 / 45 / 45 mm",
+         "35 / 45 / 45 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Ballscrews",
+        "sub": "",
+        "cells": [
+         "C3 class, double nut, X / Y / Z",
+         "C3 class, double nut, X / Y / Z",
+         "C3 class, double nut, X / Y / Z",
+         "C3 class, double nut, X / Y / Z",
+         "C3 class, double nut, X / Y / Z"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "per 11.8″ (300 mm)",
+        "cells": [
+         "±.00016″ (±0.004 mm)",
+         "±.00016″ (±0.004 mm)",
+         "±.00016″ (±0.004 mm)",
+         "±.00016″ (±0.004 mm)",
+         "±.0002″ (±0.005 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability",
+        "sub": "per 11.8″ (300 mm)",
+        "cells": [
+         "±.00008″ (±0.002 mm)",
+         "±.00008″ (±0.002 mm)",
+         "±.00008″ (±0.002 mm)",
+         "±.00008″ (±0.002 mm)",
+         "±.00008″ (±0.002 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant tank",
+        "sub": "",
+        "cells": [
+         "92 US gal (350 L)",
+         "92 US gal (350 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply / air",
+        "sub": "",
+        "cells": [
+         "32 kVA · 73 – 87 psi (5 – 6 bar)",
+         "32 kVA · 73 – 87 psi (5 – 6 bar)",
+         "32 kVA · 73 – 87 psi (5 – 6 bar)",
+         "43 kVA · 73 – 87 psi (5 – 6 bar)",
+         "43 kVA · 73 – 87 psi (5 – 6 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Floor space L × W × H",
+        "sub": "",
+        "cells": [
+         "156 × 87 × 125″ (3,965 × 2,200 × 3,185 mm)",
+         "169 × 87 × 125″ (4,300 × 2,200 × 3,185 mm)",
+         "184 × 94 × 124″ (4,685 × 2,400 × 3,145 mm)",
+         "195 × 93 × 129″ (4,945 × 2,370 × 3,280 mm)",
+         "224 × 94 × 129″ (5,690 × 2,400 × 3,280 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "14,330 lb (6,500 kg)",
+         "16,535 lb (7,500 kg)",
+         "17,637 lb (8,000 kg)",
+         "20,944 lb (9,500 kg)",
+         "22,046 lb (10,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TMC 850",
+      "glance": [
+       "39.4 × 19.7″ (1,000 × 500 mm)",
+       "33.5 × 20.1 × 22.0″ (850 × 510 × 560 mm)",
+       "10,000 rpm · 12,000 or 15,000 rpm optional",
+       "10.1 / 24.1 HP (7.5 / 18 kW)",
+       "14,330 lb (6,500 kg)"
+      ]
+     },
+     {
+      "name": "TMC 1000",
+      "glance": [
+       "47.2 × 19.7″ (1,200 × 500 mm)",
+       "40.2 × 20.1 × 22.0″ (1,020 × 510 × 560 mm)",
+       "10,000 rpm · 12,000 or 15,000 rpm optional",
+       "10.1 / 24.1 HP (7.5 / 18 kW)",
+       "16,535 lb (7,500 kg)"
+      ]
+     },
+     {
+      "name": "TMC 1200",
+      "glance": [
+       "51.2 × 23.6″ (1,300 × 600 mm)",
+       "47.2 × 23.6 × 23.6″ (1,200 × 600 × 600 mm)",
+       "10,000 rpm · 12,000 or 15,000 rpm optional",
+       "10.1 / 24.1 HP (7.5 / 18 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     },
+     {
+      "name": "TMC 1300",
+      "glance": [
+       "57.1 × 27.6″ (1,450 × 700 mm)",
+       "51.2 × 27.6 × 27.6″ (1,300 × 700 × 700 mm)",
+       "10,000 rpm · 12,000 or 15,000 rpm optional",
+       "14.8 / 40.2 HP (11 / 30 kW)",
+       "20,944 lb (9,500 kg)"
+      ]
+     },
+     {
+      "name": "TMC 1600",
+      "glance": [
+       "68.9 × 27.6″ (1,750 × 700 mm)",
+       "63.0 × 27.6 × 27.6″ (1,600 × 700 × 700 mm)",
+       "10,000 rpm · 12,000 or 15,000 rpm optional",
+       "14.8 / 40.2 HP (11 / 30 kW)",
+       "22,046 lb (10,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table",
+     "travel_x_y_z",
+     "spindle_speed",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions in inches with Dener's millimetres in brackets. Spindle motor and torque are those of the standard Mitsubishi control; with the optional Fanuc 0i-MF control the spindle is a Fanuc motor of the same class. Floor space is Dener's figure for the machine's working area."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Machining-Centres-2026.pdf",
+    "label": "Download the Dener machining centre brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "mc-vertical"
+  },
+  "dn-tdc": {
+   "id": "dn-tdc",
+   "brand": "dener",
+   "name": "TDC double-column machining centres, BBT50 — X 82.7 to 161.4″",
+   "short": "TDC double-column machining centres",
+   "models_label": "TDC 2112 · TDC 3116 · TDC 4120 · 3 models",
+   "summary": "For parts too long, wide or heavy for a vertical machining centre — machine bases, moulds, plates, frames — the TDC double-column (gantry) machining centre carries the spindle on a saddle across a rigid cross rail between two columns, over a table that travels underneath. The BBT50 direct-drive spindle runs to 10,000 rpm on a 30 / 35 HP (22 / 26 kW) motor, with through-spindle coolant at 435 psi (30 bar); roller guides on all three axes. Three sizes: the TDC 2112 with 82.7 × 48 × 23.6″ (2,100 × 1,220 × 600 mm) travels, 55″ (1,400 mm) between the columns and a 24-tool changer, the TDC 3116 with 122 × 63 × 40″ and the TDC 4120 with 161 × 79.5 × 40″ (4,100 × 2,020 × 1,020 mm), a 157.5 × 71″ table for 26,455 lb (12,000 kg) and a 40-tool chain magazine.",
+   "features": [
+    "Gantry frame: two columns and a cross rail over a travelling table; 55 – 82.7″ (1,400 – 2,100 mm) between the columns",
+    "Table loads 8,818 – 26,455 lb (4,000 – 12,000 kg); X travel 82.7 – 161.4″ (2,100 – 4,100 mm)",
+    "Mitsubishi M80A CNC with Navi-Mill conversational programming (Fanuc 0i-MF Plus optional)",
+    "BBT50 10,000 rpm direct-drive spindle with spindle cooling and through-spindle coolant, 435 psi (30 bar)",
+    "Arm-type 24-tool changer (TDC 2112) or chain-type 40-tool magazine (TDC 3116, 4120); rigid tapping",
+    "C3 ballscrews; roller linear guides on X, Y and Z; 4th-axis ready",
+    "Semi-enclosed guarding; coolant round the spindle, air blast, chip wash-down; steel-belt chip conveyor",
+    "Oil skimmer, automatic lubrication, cabinet cooling, portable handwheel",
+    "CSA-approved electrical panel; transformer for 600, 480, 240 or 208 V 3-phase"
+   ],
+   "optional": [
+    "Fanuc 0i-MF Plus 15″ control",
+    "Z travel 31.5″ (800 mm) on the TDC 2112",
+    "CNC rotary table",
+    "Tool setter and workpiece probe",
+    "Linear scales",
+    "Automatic door",
+    "Electrical cabinet air conditioner",
+    "Chip cart; mist extractor"
+   ],
+   "images": [
+    "dn-tdc-diagram"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TDC double-column machining centres",
+      "sub": "3 models · BBT50, 10,000 rpm · 82.7 to 161.4″ X travel",
+      "models": [
+       "TDC 2112",
+       "TDC 3116",
+       "TDC 4120"
+      ],
+      "rows": [
+       {
+        "label": "Travels X × Y × Z",
+        "sub": "",
+        "cells": [
+         "82.7 × 48.0 × 23.6″ (2,100 × 1,220 × 600 mm) · Z 31.5″ (800 mm) optional",
+         "122.0 × 63.0 × 40.2″ (3,100 × 1,600 × 1,020 mm)",
+         "161.4 × 79.5 × 40.2″ (4,100 × 2,020 × 1,020 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "55.1″ (1,400 mm)",
+         "66.9″ (1,700 mm)",
+         "82.7″ (2,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "78.7 × 47.2″ (2,000 × 1,200 mm)",
+         "118.1 × 59.1″ (3,000 × 1,500 mm)",
+         "157.5 × 70.9″ (4,000 × 1,800 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "T-slots",
+        "sub": "",
+        "cells": [
+         "7 × 22 mm at 150 mm (5.91″)",
+         "9 × 22 mm at 150 mm (5.91″)",
+         "9 × 22 mm at 150 mm (5.91″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "8,818 lb (4,000 kg)",
+         "22,046 lb (10,000 kg)",
+         "26,455 lb (12,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle",
+        "sub": "",
+        "cells": [
+         "BBT50, direct drive, through-spindle coolant 435 psi (30 bar)",
+         "BBT50, direct drive, through-spindle coolant 435 psi (30 bar)",
+         "BBT50, direct drive, through-spindle coolant 435 psi (30 bar)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "10,000 rpm",
+         "10,000 rpm",
+         "10,000 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "continuous / max.",
+        "cells": [
+         "29.5 / 34.9 HP (22 / 26 kW)",
+         "29.5 / 34.9 HP (22 / 26 kW)",
+         "29.5 / 34.9 HP (22 / 26 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Axis motors X / Y / Z",
+        "sub": "",
+        "cells": [
+         "12.1 / 6.0 / 6.0 HP (9 / 4.5 / 4.5 kW)",
+         "12.1 / 9.4 / 9.4 HP (9 / 7 / 7 kW)",
+         "12.1 / 9.4 / 9.4 HP (9 / 7 / 7 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rapid traverse X / Y / Z",
+        "sub": "",
+        "cells": [
+         "945 / 945 / 591 in/min (24 / 24 / 15 m/min)",
+         "472 in/min (12 m/min)",
+         "472 in/min (12 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting feed",
+        "sub": "",
+        "cells": [
+         "39 – 394 in/min (1 – 10 m/min)",
+         "39 – 394 in/min (1 – 10 m/min)",
+         "39 – 394 in/min (1 – 10 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool changer",
+        "sub": "",
+        "cells": [
+         "24 tools, arm type, BBT50",
+         "40 tools, chain type, BBT50",
+         "40 tools, chain type, BBT50"
+        ],
+        "key": false
+       },
+       {
+        "label": "Linear guides",
+        "sub": "",
+        "cells": [
+         "roller type on X, Y and Z",
+         "roller type on X, Y and Z",
+         "roller type on X, Y and Z"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "X / Y / Z",
+        "cells": [
+         "±.00031″ (±0.008 mm)",
+         "±.00031″ (±0.008 mm)",
+         "±.00031″ (±0.008 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability",
+        "sub": "X / Y / Z",
+        "cells": [
+         "±.00016″ (±0.004 mm)",
+         "±.00016″ (±0.004 mm)",
+         "±.00016″ (±0.004 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant tank",
+        "sub": "",
+        "cells": [
+         "79 US gal (300 L)",
+         "211 US gal (800 L)",
+         "211 US gal (800 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Guarding",
+        "sub": "",
+        "cells": [
+         "semi-enclosed",
+         "semi-enclosed",
+         "semi-enclosed"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "235 × 143 × 133″ (5,965 × 3,640 × 3,372 mm)",
+         "327 × 171 × 173″ (8,315 × 4,340 × 4,390 mm)",
+         "406 × 187 × 173″ (10,315 × 4,740 × 4,390 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "46,297 lb (21,000 kg)",
+         "70,548 lb (32,000 kg)",
+         "88,185 lb (40,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TDC 2112",
+      "glance": [
+       "78.7 × 47.2″ (2,000 × 1,200 mm)",
+       "82.7 × 48.0 × 23.6″ (2,100 × 1,220 × 600 mm) · Z 31.5″ (800 mm) optional",
+       "10,000 rpm",
+       "29.5 / 34.9 HP (22 / 26 kW)",
+       "46,297 lb (21,000 kg)"
+      ]
+     },
+     {
+      "name": "TDC 3116",
+      "glance": [
+       "118.1 × 59.1″ (3,000 × 1,500 mm)",
+       "122.0 × 63.0 × 40.2″ (3,100 × 1,600 × 1,020 mm)",
+       "10,000 rpm",
+       "29.5 / 34.9 HP (22 / 26 kW)",
+       "70,548 lb (32,000 kg)"
+      ]
+     },
+     {
+      "name": "TDC 4120",
+      "glance": [
+       "157.5 × 70.9″ (4,000 × 1,800 mm)",
+       "161.4 × 79.5 × 40.2″ (4,100 × 2,020 × 1,020 mm)",
+       "10,000 rpm",
+       "29.5 / 34.9 HP (22 / 26 kW)",
+       "88,185 lb (40,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table",
+     "travel_x_y_z",
+     "spindle_speed",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions in inches with Dener's millimetres in brackets. Mitsubishi M80A control standard, Fanuc 0i-MF Plus optional. The TDC 2112's rapid traverse is from Dener USA's specification; the 3116 and 4120 traverse at 12 m/min on all axes."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Machining-Centres-2026.pdf",
+    "label": "Download the Dener machining centre brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "mc-double"
+  },
+  "dn-tgh": {
+   "id": "dn-tgh",
+   "brand": "dener",
+   "name": "TGH-B 450 NC surface grinder, 17.7 × 35.4″ table",
+   "short": "TGH-B 450 NC surface grinder",
+   "models_label": "TGH-B 450 · 1 model",
+   "summary": "A precision surface grinder for flat, parallel and square faces on dies, moulds, plates, gauges and machine parts in hardened or soft steel and other materials. The table travels on scraped V and flat guideways with Turcite-B coating, driven hydraulically at 16 – 82 ft/min (5 – 25 m/min); the cross and vertical axes run on ballscrews and AC servo motors under a Mitsubishi NC with a 10″ touchscreen, so the operator keys in the stock to remove and the down feed — in 0.00004″ (0.001 mm) steps — and the cross feed are applied stroke by stroke. A 15.7 × 31.5″ (400 × 800 mm) electromagnetic chuck on a 17.7 × 35.4″ (450 × 900 mm) table, a Ø13.8″ (350 mm) wheel on a direct-drive spindle and 21.7″ (550 mm) under the wheel centre.",
+   "features": [
+    "Grinds 35.4 × 17.7″ (900 × 450 mm) faces; 3.0 – 21.7″ (75 – 550 mm) from the wheel centre to the table",
+    "Automatic down feed in 0.00004″ (0.001 mm) steps; automatic cross feed 0.002 – 0.79″ (0.05 – 20 mm) per stroke",
+    "Mitsubishi NC on the cross and vertical axes, AC servo motors on ballscrews, 10″ touchscreen, wired handwheel",
+    "Electro-hydraulic table drive; direct-drive spindle on preloaded precision bearings",
+    "Stress-relieved cast base; honeycomb-ribbed column; V and flat guideways, Turcite-B coated and hand-scraped",
+    "Electromagnetic chuck 15.7 × 31.5″ (400 × 800 mm) with demagnetizing unit",
+    "Ø13.8″ (350 mm) wheel with flange, puller, balancing stand and arbor; table-mounted diamond dresser",
+    "Coolant system with paper filter; hydraulic unit; central lubrication; table guard and door interlock",
+    "CSA-approved electrical panel; transformer for 600, 480, 240 or 208 V 3-phase"
+   ],
+   "optional": [
+    "Additional wheel flange",
+    "Wheel-head-mounted diamond dresser",
+    "Magnetic sine plate (V-S 100M) and sine bar (VS-100)",
+    "Magnetic separator with paper filter for the coolant",
+    "Precision toolmaker's vise (VMV-40)",
+    "Workpiece demagnetizer (VDM-68)",
+    "Profile grinding and dressing attachment (V-PB-BS)"
+   ],
+   "images": [
+    "dn-tgh-1"
+   ],
+   "videos": [
+    {
+     "id": "ofby5Vxihsc",
+     "title": "DENER TGH-B 450 surface grinding machine",
+     "duration": "PT0M48S",
+     "thumb": "video-ofby5Vxihsc"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TGH-B 450 NC surface grinder",
+      "sub": "1 model · 17.7 × 35.4″ table · Mitsubishi NC on the cross and vertical axes",
+      "models": [
+       "TGH-B 450"
+      ],
+      "rows": [
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "17.7 × 35.4″ (450 × 900 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Electromagnetic chuck",
+        "sub": "",
+        "cells": [
+         "15.7 × 31.5″ (400 × 800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Grinding length × width",
+        "sub": "",
+        "cells": [
+         "35.4 × 17.7″ (900 × 450 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle centre to table",
+        "sub": "",
+        "cells": [
+         "3.0 – 21.7″ (75 – 550 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "882 lb (400 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "T-slot",
+        "sub": "",
+        "cells": [
+         "1 × 14 mm H7"
+        ],
+        "key": false
+       },
+       {
+        "label": "Grinding wheel",
+        "sub": "",
+        "cells": [
+         "Ø13.8 × Ø5.0 × 1.57″ (Ø350 × Ø127 × 40 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "100 – 1,450 rpm, by inverter"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW), direct drive"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table speed",
+        "sub": "longitudinal, hydraulic",
+        "cells": [
+         "16 – 82 ft/min (5 – 25 m/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cross feed",
+        "sub": "automatic, per stroke",
+        "cells": [
+         "0.002 – 0.79″ (0.05 – 20 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Down feed",
+        "sub": "smallest increment",
+        "cells": [
+         "0.00004″ (0.001 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rapid traverse vertical / cross",
+        "sub": "",
+        "cells": [
+         "236 in/min (6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Ballscrews vertical / cross",
+        "sub": "",
+        "cells": [
+         "Ø25 mm, C3 / Ø25 mm, C6"
+        ],
+        "key": false
+       },
+       {
+        "label": "Guideways",
+        "sub": "",
+        "cells": [
+         "V and flat, Turcite-B coated, hand-scraped"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motors vertical / cross",
+        "sub": "",
+        "cells": [
+         "0.9 HP (0.7 kW) each"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic unit",
+        "sub": "",
+        "cells": [
+         "5.4 HP (4 kW), 580 psi (40 bar), 26 US gal (100 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant",
+        "sub": "",
+        "cells": [
+         "26 US gal (100 L) tank with paper filter"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Mitsubishi FX5U NC, 10″ colour touchscreen"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "22.3 kVA"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "129 × 108 × 85″ (3,280 × 2,750 × 2,151 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "8,157 lb (3,700 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TGH-B 450",
+      "glance": [
+       "17.7 × 35.4″ (450 × 900 mm)",
+       "35.4 × 17.7″ (900 × 450 mm)",
+       "100 – 1,450 rpm, by inverter",
+       "5.4 HP (4 kW), direct drive",
+       "8,157 lb (3,700 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table",
+     "grinding_area",
+     "spindle_speed",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Dimensions in inches with Dener's millimetres in brackets."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Surface-Grinder-2026.pdf",
+    "label": "Download the Dener surface grinder brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "grind"
+  },
+  "tt-cnc-lathe": {
+   "id": "tt-cnc-lathe",
+   "brand": "novotech",
+   "name": "CTK6416 slant-bed CNC lathe with gang tooling",
+   "short": "CTK6416 CNC lathe",
+   "models_label": "CTK6416 · 1 model",
+   "summary": "A compact 45° slant-bed CNC lathe for small turned parts in series: linear guides, gang (parallel) tooling for fast tool changes, a one-piece bed and base, a 3,000 rpm spindle on 7.5 HP and AC servo axes with 0.00004″ resolution. Mitsubishi or Fanuc control.",
+   "features": [
+    "Swing over bed 11.8″ (300 mm), over cross slide 5.9″ (150 mm)",
+    "X / Z travel 11.8 / 11.8″; 472 ipm rapids",
+    "3,000 rpm spindle, 7.5 HP; MT5",
+    "45° slant bed for chip clearing; small footprint"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ctk6416"
+   ],
+   "videos": [],
+   "headline": "Swing 11.8″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CTK6416",
+      "sub": "Slant-bed CNC lathe with gang tooling",
+      "models": [
+       "CTK6416"
+      ],
+      "rows": [
+       {
+        "label": "Swing over bed",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Swing over cross slide",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Travel X / Z",
+        "sub": "",
+        "cells": [
+         "11.8 / 11.8″ (300 / 300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rapid traverse X / Z",
+        "sub": "",
+        "cells": [
+         "472 ipm (12 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed, max",
+        "sub": "",
+        "cells": [
+         "3,000 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle taper",
+        "sub": "",
+        "cells": [
+         "MT5"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW) spindle, AC servo axes"
+        ],
+        "key": true
+       },
+       {
+        "label": "Minimum increment",
+        "sub": "",
+        "cells": [
+         "0.00004″ (0.001 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "CNC control",
+        "sub": "",
+        "cells": [
+         "Mitsubishi or Fanuc (to order)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "75 × 51 × 59″ (1,900 × 1,300 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,968 lb (1,800 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CTK6416",
+      "glance": [
+       "11.8″ (300 mm)",
+       "11.8 / 11.8″ (300 / 300 mm)",
+       "3,000 rpm",
+       "7.5 HP (5.5 kW) spindle, AC servo axes",
+       "3,968 lb (1,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "swing_over_bed",
+     "travel_x_z",
+     "spindle_speed_max",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "CTK6416": "swing 11.8″ (300 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "lathe"
+  },
+  "tt-vmc": {
+   "id": "tt-vmc",
+   "brand": "novotech",
+   "name": "VMC8046 · VMC10562 vertical machining centres, BT40, 8,000 rpm",
+   "short": "VMC vertical machining centres",
+   "models_label": "VMC8046 · VMC10562 · 2 models",
+   "summary": "Vertical machining centres with a 39.4 × 21.7″ table that carries 1,764 lb: the VMC8046 with linear rolling guideways on X and Y, hardened box ways on Z, a 7.5 / 10 HP spindle and a 16-tool changer; the VMC10562 with a wide bed, a heavy column, roller linear guideways on all three axes, a 15 HP spindle, 945 ipm rapids and a 24-tool changer. Mitsubishi, Fanuc or Siemens CNC to order.",
+   "features": [
+    "Travel 31.5 – 41.3 × 17.3 – 24.4 × 19.7 – 24″",
+    "BT40 spindle to 8,000 rpm; 7.5 / 10 HP or 15 HP",
+    "Positioning ±0.0006″, repeatability ±0.0001 – 0.0002″",
+    "16- or 24-tool automatic tool changer",
+    "VMC10562: floating-cushion tool unclamping protects the spindle bearings; oil separation keeps the coolant clean"
+   ],
+   "optional": [],
+   "images": [
+    "tm-vmc10562",
+    "tm-vmc8046"
+   ],
+   "videos": [],
+   "headline": "BT40, 8,000 rpm",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "VMC8046 · VMC10562",
+      "sub": "Vertical machining centres, BT40, 8,000 rpm",
+      "models": [
+       "VMC8046",
+       "VMC10562"
+      ],
+      "rows": [
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "39.4 × 21.7″ (1,000 × 550 mm), 1,764 lb (800 kg) load",
+         "39.4 × 21.7″ (1,000 × 550 mm), 1,764 lb (800 kg) load"
+        ],
+        "key": true
+       },
+       {
+        "label": "Travel X × Y × Z",
+        "sub": "",
+        "cells": [
+         "31.5 (41.3 optional) × 17.3 × 19.7″ (800 (1,050) × 440 × 500 mm)",
+         "41.3 × 24.4 × 24″ (1,050 × 620 × 610 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle taper",
+        "sub": "",
+        "cells": [
+         "BT40",
+         "BT40"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "200 – 8,000 rpm",
+         "500 – 8,000 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "",
+        "cells": [
+         "7.5 / 10 HP (5.5 / 7.5 kW)",
+         "15 HP (11 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rapid traverse X / Y / Z",
+        "sub": "",
+        "cells": [
+         "472 ipm (12 m/min)",
+         "945 ipm (24 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting feed",
+        "sub": "",
+        "cells": [
+         "X, Y 0.04 – 126 ipm (1 – 3,200 mm/min); Z 0.04 – 79 ipm (1 – 2,000 mm/min)",
+         "X, Y 0.24 – 126 ipm (6 – 3,200 mm/min); Z 0.04 – 315 ipm (1 – 8,000 mm/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning / repeatability",
+        "sub": "",
+        "cells": [
+         "±0.0006″ / ±0.0002″ (±0.015 / ±0.005 mm)",
+         "±0.0006″ per 12″ / ±0.0001″ (±0.015 per 300 / ±0.003 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool changer",
+        "sub": "",
+        "cells": [
+         "16 tools",
+         "24 tools"
+        ],
+        "key": true
+       },
+       {
+        "label": "CNC control",
+        "sub": "",
+        "cells": [
+         "Mitsubishi, Fanuc or Siemens (to order)",
+         "Mitsubishi, Fanuc or Siemens (to order)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine size L × W × H",
+        "sub": "",
+        "cells": [
+         "98 × 91 × 106″ (2,500 × 2,300 × 2,700 mm)",
+         "110 × 110 × 112″ (2,800 × 2,800 × 2,850 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "9,921 lb (4,500 kg)",
+         "17,637 lb (8,000 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "VMC8046",
+      "glance": [
+       "39.4 × 21.7″ (1,000 × 550 mm), 1,764 lb (800 kg) load",
+       "31.5 (41.3 optional) × 17.3 × 19.7″ (800 (1,050) × 440 × 500 mm)",
+       "200 – 8,000 rpm",
+       "7.5 / 10 HP (5.5 / 7.5 kW)",
+       "9,921 lb (4,500 kg)"
+      ]
+     },
+     {
+      "name": "VMC10562",
+      "glance": [
+       "39.4 × 21.7″ (1,000 × 550 mm), 1,764 lb (800 kg) load",
+       "41.3 × 24.4 × 24″ (1,050 × 620 × 610 mm)",
+       "500 – 8,000 rpm",
+       "15 HP (11 kW)",
+       "17,637 lb (8,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table",
+     "travel_x_y_z",
+     "spindle_speed",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {
+     "VMC8046": "16 tools",
+     "VMC10562": "24 tools"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vmc"
+  },
+  "tt-boring": {
+   "id": "tt-boring",
+   "brand": "novotech",
+   "name": "TXK · TH-800 CNC boring and milling machines, BT50",
+   "short": "CNC boring mills",
+   "models_label": "TXK68 – TH-800 · 5 models",
+   "summary": "CNC boring and milling machines for large prismatic parts — drilling, reaming, tapping, milling and boring several faces in one set-up: the TXK68 with a worm-gear dividing table, the fixed-column TXK160 range with a 51.2 × 23.6″ table, heavy linear guideways and an optional rotary B axis, and the TH-800 horizontal machining centre with an 800 × 800 mm B-axis table and a 40-tool chain magazine.",
+   "features": [
+    "BT50 spindles; 7.5 / 10 HP; up to 3,000 rpm (TXK160)",
+    "Travel to 59 × 31.5 × 19.7″ (TXK160) and 63″ Y (TXK160D)",
+    "4-axis machining with the rotary table (TXK68, TXK160B, TH-800)",
+    "TH-800: 40-tool chain magazine, 13 s tool change",
+    "Mitsubishi or Fanuc CNC"
+   ],
+   "optional": [],
+   "images": [
+    "tm-th800",
+    "tm-txk160",
+    "tm-txk160d",
+    "tm-txk68"
+   ],
+   "videos": [],
+   "headline": "BT50, 4-axis",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TXK68 · TXK160 · TXK160B · TXK160D · TH-800",
+      "sub": "CNC boring and milling machines, BT50 / MT5",
+      "models": [
+       "TXK68",
+       "TXK160",
+       "TXK160B",
+       "TXK160D",
+       "TH-800"
+      ],
+      "rows": [
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "36.2 × 32.3″ (920 × 820 mm), worm-gear dividing",
+         "51.2 × 23.6″ (1,300 × 600 mm)",
+         "51.2 × 23.6″ (1,300 × 600 mm), rotary",
+         "51.2 × 23.6″ (1,300 × 600 mm); optional rotary 4th axis 23.6 × 19.7″ (600 × 500 mm)",
+         "31.5 × 31.5″ (800 × 800 mm), B axis 360°"
+        ],
+        "key": true
+       },
+       {
+        "label": "Travel X × Y × Z",
+        "sub": "",
+        "cells": [
+         "31.5 × 23.6 × 39.4″ (800 × 600 × 1,000 mm)",
+         "41.3 (59.1 optional) × 31.5 × 19.7″ (1,050 (1,500) × 800 × 500 mm)",
+         "41.3 (59.1 optional) × 31.5 × 19.7″ (1,050 (1,500) × 800 × 500 mm)",
+         "41.3 × 63 × 19.7″ (1,050 × 1,600 × 500 mm)",
+         "X 47.2″ (1,200 mm), Z 39.4″ (1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle taper",
+        "sub": "",
+        "cells": [
+         "MT5 or BT50",
+         "BT50",
+         "BT50",
+         "BT50",
+         "BT50"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "25 – 760 rpm, 9 speeds",
+         "Up to 3,000 rpm",
+         "Up to 3,000 rpm",
+         "Up to 3,000 rpm",
+         "—"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)",
+         "7.5 / 10 HP (5.5 / 7.5 kW)",
+         "7.5 / 10 HP (5.5 / 7.5 kW)",
+         "7.5 / 10 HP (5.5 / 7.5 kW)",
+         "7.5 / 10 HP (5.5 / 7.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rapid traverse",
+        "sub": "",
+        "cells": [
+         "472 ipm (12 m/min)",
+         "709 ipm (18 m/min)",
+         "709 ipm (18 m/min)",
+         "709 ipm (18 m/min)",
+         "472 ipm (12 m/min) X, Z; 394 ipm (10 m/min) Y"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning / repeatability",
+        "sub": "",
+        "cells": [
+         "±0.0006″ / ±0.0002″ (±0.015 / ±0.005 mm)",
+         "±0.0006″ / ±0.0002″ (±0.015 / ±0.005 mm)",
+         "±0.0006″ / ±0.0002″ (±0.015 / ±0.005 mm)",
+         "±0.0006″ / ±0.0002″ (±0.015 / ±0.005 mm)",
+         "0.0004″ / 0.0002″ (0.01 / 0.005 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tool changer",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "Optional tool magazine",
+         "40-tool chain magazine, 13 s change"
+        ],
+        "key": false
+       },
+       {
+        "label": "CNC control",
+        "sub": "",
+        "cells": [
+         "Mitsubishi E60 / M64AS or Fanuc (to order)",
+         "Mitsubishi E60 / M64AS or Fanuc (to order)",
+         "Mitsubishi E60 / M64AS or Fanuc (to order)",
+         "Mitsubishi E60 / M64AS or Fanuc (to order)",
+         "Mitsubishi E60 / M64AS or Fanuc (to order)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine size L × W × H",
+        "sub": "",
+        "cells": [
+         "136 × 83 × 113″ (3,450 × 2,100 × 2,880 mm)",
+         "104 × 118 × 98″ (2,650 × 3,000 × 2,500 mm)",
+         "104 × 118 × 98″ (2,650 × 3,000 × 2,500 mm)",
+         "104 × 118 × 98″ (2,650 × 3,000 × 2,500 mm)",
+         "236 × 228 × 138″ (6,000 × 5,800 × 3,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "13,228 lb (6,000 kg)",
+         "14,991 lb (6,800 kg)",
+         "15,432 lb (7,000 kg)",
+         "14,991 lb (6,800 kg)",
+         "36,376 lb (16,500 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TXK68",
+      "glance": [
+       "36.2 × 32.3″ (920 × 820 mm), worm-gear dividing",
+       "31.5 × 23.6 × 39.4″ (800 × 600 × 1,000 mm)",
+       "25 – 760 rpm, 9 speeds",
+       "7.5 HP (5.5 kW)",
+       "13,228 lb (6,000 kg)"
+      ]
+     },
+     {
+      "name": "TXK160",
+      "glance": [
+       "51.2 × 23.6″ (1,300 × 600 mm)",
+       "41.3 (59.1 optional) × 31.5 × 19.7″ (1,050 (1,500) × 800 × 500 mm)",
+       "Up to 3,000 rpm",
+       "7.5 / 10 HP (5.5 / 7.5 kW)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "TXK160B",
+      "glance": [
+       "51.2 × 23.6″ (1,300 × 600 mm), rotary",
+       "41.3 (59.1 optional) × 31.5 × 19.7″ (1,050 (1,500) × 800 × 500 mm)",
+       "Up to 3,000 rpm",
+       "7.5 / 10 HP (5.5 / 7.5 kW)",
+       "15,432 lb (7,000 kg)"
+      ]
+     },
+     {
+      "name": "TXK160D",
+      "glance": [
+       "51.2 × 23.6″ (1,300 × 600 mm); optional rotary 4th axis 23.6 × 19.7″ (600 × 500 mm)",
+       "41.3 × 63 × 19.7″ (1,050 × 1,600 × 500 mm)",
+       "Up to 3,000 rpm",
+       "7.5 / 10 HP (5.5 / 7.5 kW)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "TH-800",
+      "glance": [
+       "31.5 × 31.5″ (800 × 800 mm), B axis 360°",
+       "X 47.2″ (1,200 mm), Z 39.4″ (1,000 mm)",
+       "—",
+       "7.5 / 10 HP (5.5 / 7.5 kW)",
+       "36,376 lb (16,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table",
+     "travel_x_y_z",
+     "spindle_speed",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {
+     "TXK68": "36.2 × 32.3″ (920 × 820 mm), worm-gear dividing",
+     "TXK160": "51.2 × 23.6″ (1,300 × 600 mm)",
+     "TXK160B": "51.2 × 23.6″ (1,300 × 600 mm), rotary",
+     "TXK160D": "51.2 × 23.6″ (1,300 × 600 mm); optional rotary 4th axis 23.6 × 19.7″ (600 × 500 mm)",
+     "TH-800": "31.5 × 31.5″ (800 × 800 mm), B axis 360°"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "boring"
+  },
+  "tt-cnc-slot": {
+   "id": "tt-cnc-slot",
+   "brand": "novotech",
+   "name": "CNC100 · CNC120 slot machining centres for quartz and glass",
+   "short": "CNC100 / CNC120",
+   "models_label": "CNC100 · CNC120 · 2 models",
+   "summary": "CNC machining centres built to cut grooves in quartz, glass and similar materials with Ø4 – 7″ saw discs — for the optoelectronic and photovoltaic industry — with a patented spindle structure, outboard slurry collection and 709 ipm rapids.",
+   "features": [
+    "Saw discs Ø4 – 7″ (100 – 180 mm); spindle 200 – 4,500 rpm",
+    "Tables 39.4 × 19.7″ and 47.2 × 23.6″",
+    "Positioning ±0.0006″, repeatability ±0.0002″",
+    "Mitsubishi or Fanuc CNC"
+   ],
+   "optional": [],
+   "images": [
+    "tm-cnc100"
+   ],
+   "videos": [],
+   "headline": "Saw discs Ø4 – 7″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CNC100 · CNC120",
+      "sub": "CNC slot machining centres for grooving quartz and glass with saw discs",
+      "models": [
+       "CNC100",
+       "CNC120"
+      ],
+      "rows": [
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "39.4 × 19.7″ (1,000 × 500 mm), 5 T-slots 18 mm at 100 mm",
+         "47.2 × 23.6″ (1,200 × 600 mm), 5 T-slots 18 mm at 125 mm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting disc",
+        "sub": "",
+        "cells": [
+         "Ø4 – 7″ (100 – 180 mm)",
+         "Ø4 – 7″ (100 – 180 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Travel X × Y × Z",
+        "sub": "",
+        "cells": [
+         "31.5 / 40.2 × 18.1 × 19.7″ (800 / 1,020 × 460 × 500 mm)",
+         "31.5 / 40.2 × 23.6 × 19.7″ (800 / 1,020 × 600 × 500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "200 – 4,500 rpm",
+         "200 – 4,500 rpm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 / 4 HP (2.2 / 3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rapid traverse",
+        "sub": "",
+        "cells": [
+         "709 ipm (18 m/min)",
+         "709 ipm (18 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning / repeatability",
+        "sub": "",
+        "cells": [
+         "±0.0006″ / ±0.0002″ (±0.015 / ±0.005 mm)",
+         "±0.0006″ / ±0.0002″ (±0.015 / ±0.005 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "CNC control",
+        "sub": "",
+        "cells": [
+         "Mitsubishi or Fanuc (to order)",
+         "Mitsubishi or Fanuc (to order)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine size L × W × H",
+        "sub": "",
+        "cells": [
+         "98 × 91 × 106″ (2,500 × 2,300 × 2,700 mm)",
+         "118 × 98 × 106″ (3,000 × 2,500 × 2,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "9,480 lb (4,300 kg)",
+         "11,795 lb (5,350 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CNC100",
+      "glance": [
+       "39.4 × 19.7″ (1,000 × 500 mm), 5 T-slots 18 mm at 100 mm",
+       "Ø4 – 7″ (100 – 180 mm)",
+       "31.5 / 40.2 × 18.1 × 19.7″ (800 / 1,020 × 460 × 500 mm)",
+       "3 HP (2.2 kW)",
+       "9,480 lb (4,300 kg)"
+      ]
+     },
+     {
+      "name": "CNC120",
+      "glance": [
+       "47.2 × 23.6″ (1,200 × 600 mm), 5 T-slots 18 mm at 125 mm",
+       "Ø4 – 7″ (100 – 180 mm)",
+       "31.5 / 40.2 × 23.6 × 19.7″ (800 / 1,020 × 600 × 500 mm)",
+       "3 / 4 HP (2.2 / 3 kW)",
+       "11,795 lb (5,350 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table",
+     "cutting_disc",
+     "travel_x_y_z",
+     "spindle_motor",
+     "weight"
+    ],
+    "caps": {
+     "CNC100": "39.4 × 19.7″ (1,000 × 500 mm), 5 T-slots 18 mm at 100 mm",
+     "CNC120": "47.2 × 23.6″ (1,200 × 600 mm), 5 T-slots 18 mm at 125 mm"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vmc"
+  }
+ }
+}

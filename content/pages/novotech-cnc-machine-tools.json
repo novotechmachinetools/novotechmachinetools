@@ -1,0 +1,164 @@
+{
+ "slug": "novotech-cnc-machine-tools",
+ "template": "category.html",
+ "family_set": "ttmc-more",
+ "title": "NovoTech CNC Lathes, VMCs & Boring Mills · Value Line | NovoTech",
+ "artifact_title": "NovoTech CNC machine tools — CNC lathe, vertical machining centres and CNC boring mills, the value line",
+ "meta_description": "NovoTech value-line CNC machine tools: a slant-bed CNC lathe, BT40 vertical machining centres with 16 – 24 tool changers, BT50 CNC boring and milling machines and a horizontal machining centre.",
+ "h1": "NovoTech CNC machine tools — CNC lathe, vertical machining centres and CNC boring mills, the value line",
+ "intro": "CNC machine tools for the job shop and the production line, built in China to NovoTech's specification with Mitsubishi, Fanuc or Siemens controls to order: the CTK6416 slant-bed CNC lathe with gang tooling, the VMC8046 and VMC10562 vertical machining centres with BT40 spindles to 8,000 rpm and 16- and 24-tool changers, CNC boring and milling machines with BT50 spindles and rotary B axes for large prismatic parts, the TH-800 horizontal machining centre with a 40-tool magazine, and slot machining centres for quartz and glass. Installed, programmed with you and supported from Mississauga, ON, Canada.",
+ "hero_points": [
+  "VMC8046 and VMC10562 vertical machining centres: 39.4 × 21.7″ table, BT40, 8,000 rpm, 16 / 24 tools",
+  "TXK68 – TXK160D CNC boring and milling machines and TH-800 horizontal machining centre, BT50, 4-axis",
+  "CTK6416 slant-bed CNC lathe with gang tooling; CNC100 / CNC120 slot machining centres"
+ ],
+ "hero_image": "tm-vmc10562",
+ "hero_image_secondary": [
+  "tm-th800",
+  "tm-ctk6416"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "CNC machine tools",
+   "href": "cnc-machine-tools.html"
+  },
+  {
+   "label": "NovoTech CNC machine tools"
+  }
+ ],
+ "hero_brand_line": "NovoTech value line — NovoTech's own brand, manufactured in China to high North American quality standards and sold with a 1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support from Mississauga, ON, Canada.",
+ "nav_label": "NovoTech CNC machine tools",
+ "groups": [
+  {
+   "id": "vmc-group",
+   "title": "Vertical machining centres",
+   "lead": "Three-axis CNC milling, drilling and tapping with an automatic tool changer.",
+   "brand": "novotech",
+   "families": [
+    "tt-vmc",
+    "tt-cnc-slot"
+   ]
+  },
+  {
+   "id": "boring-group",
+   "title": "CNC boring and milling machines",
+   "lead": "Large parts machined on several faces in one set-up, with a rotary B axis.",
+   "brand": "novotech",
+   "families": [
+    "tt-boring"
+   ]
+  },
+  {
+   "id": "lathe-group",
+   "title": "CNC lathe",
+   "lead": "A compact slant-bed lathe for small turned parts in series.",
+   "brand": "novotech",
+   "families": [
+    "tt-cnc-lathe"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which CNC control do the machines have?",
+   "a": "Mitsubishi or Fanuc on every machine, Siemens on the machining centres — chosen when you order. All three are supported in North America, with programmers and spare parts available locally; we recommend the control your programmers already know."
+  },
+  {
+   "q": "BT40 or BT50?",
+   "a": "BT40 spindles (the same size as CAT40) are the standard for vertical machining centres up to about 15 HP — fast tool changes and a wide choice of holders. BT50 spindles carry larger face mills and boring bars and take heavier cuts: the boring and milling machines have them."
+  },
+  {
+   "q": "Do you install and train?",
+   "a": "Yes — NovoTech delivers, levels and commissions the machine, checks the geometry, and trains your operator on the control; we help with the first programs and the post-processor for your CAM software. Ask us for the foundation drawing and the power requirements before the machine ships."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about novotech CNC machine tools",
+ "catalogue_pdf": null,
+ "origin_feature": {
+  "title": "NovoTech value line — built in China",
+  "text": "Built in China to NovoTech's specification by a maker that exports metalworking machinery to more than 70 countries; inspected before shipping, wired for Canadian power and supported by NovoTech's technicians in Mississauga, ON, Canada."
+ },
+ "section_label": "CNC machine tools",
+ "related_pages": [
+  {
+   "href": "dener-cnc-lathes.html",
+   "label": "Dener CNC lathes"
+  },
+  {
+   "href": "dener-machining-centres.html",
+   "label": "Dener machining centres"
+  },
+  {
+   "href": "dener-surface-grinders.html",
+   "label": "Dener surface grinder"
+  },
+  {
+   "href": "cnc-machine-tools.html",
+   "label": "All CNC machine tools"
+  },
+  {
+   "href": "milling-machine.html",
+   "label": "Milling machines"
+  },
+  {
+   "href": "drill-press.html",
+   "label": "Drill presses"
+  },
+  {
+   "href": "laser-cutting-machine.html",
+   "label": "Fiber laser cutting machines"
+  },
+  {
+   "href": "cnc-plasma-table.html",
+   "label": "CNC plasma tables"
+  }
+ ],
+ "related_title": "More machinery from NovoTech",
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null,
+ "section": {
+  "label": "CNC machine tools",
+  "related_title": "More CNC machine tools from NovoTech",
+  "hub": {
+   "href": "cnc-machine-tools.html",
+   "label": "All CNC machine tools",
+   "image": "dn-tmc-1",
+   "blurb": "Every CNC lathe, machining centre and surface grinder NovoTech sells — Dener premium and NovoTech value lines — on one page, with the whole range in one table."
+  },
+  "pages": [
+   {
+    "href": "dener-cnc-lathes.html",
+    "label": "Dener CNC lathes",
+    "current": false
+   },
+   {
+    "href": "dener-machining-centres.html",
+    "label": "Dener machining centres",
+    "current": false
+   },
+   {
+    "href": "dener-surface-grinders.html",
+    "label": "Dener surface grinders",
+    "current": false
+   },
+   {
+    "href": "novotech-cnc-machine-tools.html",
+    "label": "NovoTech CNC machine tools",
+    "current": true
+   }
+  ]
+ }
+}

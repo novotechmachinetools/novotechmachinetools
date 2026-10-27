@@ -1,0 +1,44 @@
+{
+ "cover_line": "Dener Makina · made in Turkey · sold & serviced in Canada by NovoTech",
+ "about_kicker": "Dener Makina · Kayseri, Turkey",
+ "country": "Turkey",
+ "single_phase": false,
+ "year": "2026",
+ "family_sets": [
+  "dener-mt"
+ ],
+ "made_in": "Made in Turkey by Dener Makina",
+ "title": "CNC lathes",
+ "subtitle": "Dener TTC and TTH slant-bed CNC lathes · 6″ to 12″ chucks · Ø22″ and Ø27.6″ swing · Fanuc control",
+ "range_label": "Dener CNC lathes",
+ "about_for": "Dener CNC lathes",
+ "about_title": "Slant-bed CNC lathes from Dener's machine-tool plant",
+ "about_text": [
+  "The TTC and TTH lathes share one design: a one-piece cast bed inclined at 45° that sheds chips into the conveyor, roller linear guides with C1 and C3 ballscrews coupled straight to the servo motors, a spindle on super-precision bearings, a 12-station servo turret that indexes in 0.2 s, a hydraulic chuck and a hydraulic tailstock, under a Fanuc 0i-TF Plus control (Mitsubishi M80 to order). The compact TTC-6 and TTC-8 swing Ø22″ (560 mm) with 6″ and 8″ chucks; the TTH-8, TTH-10 and TTH-12 swing Ø27.6″ (700 mm), turn parts up to Ø20.8″ × 26.8″ (528 × 680 mm) and go up to a 12″ chuck and 3.74″ (95 mm) bar. A BMT55 C-axis turret with 12 live tools turns any of them into a turn-mill centre.",
+  "Dener Makina has built machinery in Kayseri since 1974, and since 2016 CNC machine tools in the Taksan plant it took over: 155,000 m² of factory buildings where the castings are machined and the machines assembled. NovoTech sells, installs and supports the lathes in Canada from Mississauga, Ontario, Canada, with a CSA-approved panel and a 1-year warranty."
+ ],
+ "families": [
+  "dn-ttc",
+  "dn-tth"
+ ],
+ "groups": [
+  {
+   "title": "TTC compact CNC lathes",
+   "families": [
+    "dn-ttc"
+   ]
+  },
+  {
+   "title": "TTH CNC lathes",
+   "families": [
+    "dn-tth"
+   ]
+  }
+ ],
+ "cover_photos": [
+  "dn-ttc-1",
+  "dn-tth-1",
+  "dn-ttc-3"
+ ],
+ "out": "src/files/NovoTech-Dener-CNC-Lathes-2026.pdf"
+}

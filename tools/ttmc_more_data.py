@@ -409,7 +409,7 @@ MILL = [
 ]
 
 # =============================================================================================== CNC machine tools
-P_CNC = "cnc-machine-tools"
+P_CNC = "novotech-cnc-machine-tools"      # under the cnc-machine-tools hub (tools/machine_tools_nav.py) since the Dener machine tools came
 CNC = [
     F("tt-vmc", P_CNC, "vmc", "VMC8046 · VMC10562 vertical machining centres, BT40, 8,000 rpm", "VMC vertical machining centres", [T["tt-vmc"][0]],
       "Vertical machining centres with a 39.4 × 21.7″ table that carries 1,764 lb: the VMC8046 with linear rolling guideways on X and Y, "

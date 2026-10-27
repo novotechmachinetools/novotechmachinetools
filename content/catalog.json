@@ -86,7 +86,7 @@
   {
    "id": "machining",
    "title": "Drilling, milling and CNC machining",
-   "lead": "Drill presses, milling machines, CNC lathes and machining centres.",
+   "lead": "Drill presses, milling machines, CNC lathes, machining centres and surface grinders.",
    "slugs": [
     "drill-press",
     "milling-machine",
@@ -157,7 +157,7 @@
   "belt-grinder": "Metal belt grinders with 2 – 8″ belts, disc sanders, bench grinders, chamfering machines and dust collectors.",
   "drill-press": "Gear-head, column and variable-speed drill presses, 1/2″ to 2″ in steel, with power feed and tapping.",
   "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines and keyseaters.",
-  "cnc-machine-tools": "A slant-bed CNC lathe, BT40 vertical machining centres and BT50 CNC boring and milling machines.",
+  "cnc-machine-tools": "Dener CNC lathes, vertical and double-column machining centres and a surface grinder; value-line CNC lathe, VMCs and boring mills.",
   "cnc-plasma-table": "CNC plasma tables 2 × 2 ft to 5 × 10 ft and CNC plasma pipe cutters for Ø2 – 11-3/4″ pipe.",
   "english-wheel": "English wheels, planishing hammers, electric power hammers, shrinker-stretchers and air forging hammers.",
   "arbor-press": "Arbor presses 1/2 – 8 tons, bench presses with sheet-metal tooling, turret punch presses and orbital riveters."
@@ -187,7 +187,7 @@
    "since": "1974",
    "logo": null,
    "href": "press-brake.html",
-   "what": "CNC press brakes, panel benders, hydraulic shears, sheet and tube fiber lasers"
+   "what": "CNC press brakes, panel benders, hydraulic shears, sheet and tube fiber lasers, CNC lathes, machining centres and surface grinders"
   },
   {
    "name": "GMS",
@@ -485,6 +485,21 @@
    "group": "finishing",
    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
    "title": "Gecam and Eurofintec deburring, finishing and pipe sanding"
+  },
+  {
+   "group": "machining",
+   "file": "files/NovoTech-Dener-CNC-Lathes-2026.pdf",
+   "title": "Dener CNC lathes"
+  },
+  {
+   "group": "machining",
+   "file": "files/NovoTech-Dener-Machining-Centres-2026.pdf",
+   "title": "Dener vertical and double-column machining centres"
+  },
+  {
+   "group": "machining",
+   "file": "files/NovoTech-Dener-Surface-Grinder-2026.pdf",
+   "title": "Dener NC surface grinder"
   },
   {
    "group": "rebar",

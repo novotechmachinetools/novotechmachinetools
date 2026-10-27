@@ -1,0 +1,175 @@
+{
+ "slug": "dener-cnc-lathes",
+ "template": "category.html",
+ "family_set": "dener-mt",
+ "title": "Dener CNC Lathes, Slant-Bed, 6″–12″ Chucks | NovoTech",
+ "artifact_title": "Dener CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks",
+ "meta_description": "Dener TTC and TTH CNC lathes: 45° slant bed, Fanuc control, 12-station servo turret, 6″ to 12″ chucks, Ø27.6″ swing, C-axis live tooling. Made in Turkey; sold in Canada.",
+ "h1": "Dener CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks",
+ "intro": "A CNC lathe turns, faces, bores, grooves and threads round parts from bar stock or chucked blanks, with its tools on a turret that brings the next one into position in a fraction of a second. NovoTech sells Dener's CNC lathes in Canada, built in Kayseri, Turkey, in the machine-tool plant Dener took over from Taksan in 2016. Both families share one design: a one-piece cast bed inclined at 45°, roller linear guides with C1 and C3 ballscrews coupled straight to the servo motors, a 12-station servo turret that indexes in 0.2 s, a hydraulic chuck and a hydraulic tailstock, under a Fanuc 0i-TF Plus control (Mitsubishi M80 to order). The compact TTC-6 and TTC-8 swing Ø22″ (560 mm) with 6″ and 8″ chucks; the TTH-8, TTH-10 and TTH-12 swing Ø27.6″ (700 mm), turn parts to Ø20.8″ × 26.8″ and go up to a 12″ chuck, 3.74″ (95 mm) bar and 602 lb·ft of spindle torque. A BMT55 C-axis turret with 12 live tools turns any of them into a turn-mill centre. Installed, programmed with you and supported from Mississauga, ON, Canada.",
+ "hero_points": [
+  "TTC-6 / TTC-8: Ø22″ swing, turning Ø12″ × 17″, 6″ or 8″ chuck, 6,000 / 4,500 rpm",
+  "TTH-8 / 10 / 12: Ø27.6″ swing, turning Ø20.8″ × 26.8″, 8″ to 12″ chucks, bar to Ø3.74″ (95 mm)",
+  "Fanuc 0i-TF Plus, 12-station servo turret, hydraulic tailstock; C-axis live tooling, bar feeder and probes to order"
+ ],
+ "hero_image": "dn-ttc-1",
+ "hero_image_secondary": [
+  "dn-tth-1",
+  "dn-ttc-3"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "CNC machine tools",
+   "href": "cnc-machine-tools.html"
+  },
+  {
+   "label": "Dener CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks"
+  }
+ ],
+ "hero_brand_line": "Dener builds its CNC lathes, machining centres and grinders in Kayseri, Turkey, in the machine-tool plant it took over from Taksan in 2016. Sold, installed and supported in Canada by NovoTech.",
+ "groups": [
+  {
+   "id": "lathe-ttc-group",
+   "title": "TTC compact CNC lathes",
+   "lead": "Ø22″ swing with 6″ and 8″ chucks — the compact slant-bed lathe for shafts, flanges and bushings in series.",
+   "brand": "dener",
+   "families": [
+    "dn-ttc"
+   ]
+  },
+  {
+   "id": "lathe-tth-group",
+   "title": "TTH CNC lathes",
+   "lead": "Ø27.6″ swing with 8″ to 12″ chucks — longer and heavier work, up to Ø20.8″ × 26.8″, and a 4.65″ spindle bore on the TTH-12.",
+   "brand": "dener",
+   "families": [
+    "dn-tth"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "TTC or TTH — which lathe do I need?",
+   "a": "Choose by the largest part and the bar you feed. The TTC turns parts up to Ø12″ × 17″ (305 × 433 mm) from a 6″ or 8″ chuck and takes bar to 1.77″ (TTC-6) or 2.05″ (TTC-8): the machine for shafts, pins, flanges and bushings in series. The TTH swings Ø27.6″, turns to Ø20.8″ × 26.8″ (528 × 680 mm) and has 8″, 10″ and 12″ chucks with bar to 2.05″, 2.95″ and 3.74″; the TTH-12's A2-11 spindle, 4.65″ bore and 602 lb·ft of torque are for large diameters, pipe and heavy roughing. Send us a drawing of your largest part and we check it against the working range."
+  },
+  {
+   "q": "Why a 45° slant bed?",
+   "a": "On a slant bed the chips fall away from the tools and the guideways straight into the chip conveyor, the turret sits behind the spindle where the cutting force pushes into the casting, and the operator reaches the chuck easily over the low front. Dener casts the bed in one piece, stress-relieves it and lays it out by finite-element analysis, so it damps vibration in interrupted and heavy cuts."
+  },
+  {
+   "q": "Fanuc or Mitsubishi?",
+   "a": "Dener lathes for North America come with the Fanuc 0i-TF Plus as standard, the control most Canadian programmers and service technicians already know; the Mitsubishi M80 is available instead. Both run ISO G-code with canned turning, grooving and threading cycles and take programs from any CAM system. The spindle motor differs slightly between the two (see the table)."
+  },
+  {
+   "q": "What does the C-axis option add?",
+   "a": "A BMT55 turret with 12 live (driven) tools at up to 6,000 rpm and a spindle that indexes and holds position: cross holes, tapped holes, flats, slots, hex and keyways are machined in the same setup instead of on a mill. The largest turning diameter and length are a little smaller with the live-tool turret — both are in the table."
+  },
+  {
+   "q": "Can it run unattended?",
+   "a": "With the automatic bar feeder and a parts catcher a lathe runs through a bar without the operator; the tool-setting arm and workpiece probe measure offsets and parts in the cycle, and the automatic door opens and closes for a robot. All are options on both families."
+  },
+  {
+   "q": "Do you deliver, install and train in Canada?",
+   "a": "Yes. Machines ship from Kayseri to Mississauga, ON, Canada; NovoTech unloads, levels and commissions the machine, checks the geometry, trains your operators and programmers on the control and helps with the first parts. Every machine comes with a CSA-approved panel, a 1-year warranty and parts and service from Mississauga. Ask for the foundation drawing and the power and air requirements before the machine ships."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about CNC lathes",
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Dener-CNC-Lathes-2026.pdf",
+  "label": "Download the Dener CNC lathe brochure",
+  "size": "PDF · 1 MB · imperial units"
+ },
+ "origin_feature": {
+  "title": "Made in Turkey by Dener Makina",
+  "text": "Dener has built machinery in Kayseri since 1974 — press brakes, shears and lasers first, and since 2016 CNC machine tools in the Taksan plant: 155,000 m² of factory buildings on a 1.3 million m² site, with castings machined and machines assembled in-house."
+ },
+ "section_label": "CNC machine tools",
+ "related_pages": [
+  {
+   "href": "dener-machining-centres.html",
+   "label": "Dener machining centres"
+  },
+  {
+   "href": "dener-surface-grinders.html",
+   "label": "Dener surface grinder"
+  },
+  {
+   "href": "novotech-cnc-machine-tools.html",
+   "label": "NovoTech CNC machine tools"
+  },
+  {
+   "href": "cnc-machine-tools.html",
+   "label": "All CNC machine tools"
+  },
+  {
+   "href": "milling-machine.html",
+   "label": "Milling machines"
+  },
+  {
+   "href": "drill-press.html",
+   "label": "Drill presses"
+  },
+  {
+   "href": "band-saw.html",
+   "label": "Band saws"
+  },
+  {
+   "href": "belt-grinder.html",
+   "label": "Belt grinders and sanders"
+  }
+ ],
+ "related_title": "More metalworking machinery from NovoTech",
+ "section": {
+  "label": "CNC machine tools",
+  "hub": {
+   "href": "cnc-machine-tools.html",
+   "label": "All CNC machine tools",
+   "image": "dn-tmc-1",
+   "blurb": "Every CNC lathe, machining centre and surface grinder NovoTech sells — Dener premium and NovoTech value lines — on one page, with the whole range in one table."
+  },
+  "pages": [
+   {
+    "href": "dener-cnc-lathes.html",
+    "label": "Dener CNC lathes",
+    "current": true
+   },
+   {
+    "href": "dener-machining-centres.html",
+    "label": "Dener machining centres",
+    "current": false
+   },
+   {
+    "href": "dener-surface-grinders.html",
+    "label": "Dener surface grinders",
+    "current": false
+   },
+   {
+    "href": "novotech-cnc-machine-tools.html",
+    "label": "NovoTech CNC machine tools",
+    "current": false
+   }
+  ],
+  "related_title": "More CNC machine tools from NovoTech"
+ },
+ "intro_video": {
+  "id": "_bkvwzuOYW0",
+  "title": "DENER machining centre and turning centre assembly line",
+  "thumb": "video-_bkvwzuOYW0",
+  "duration": "PT0M25S"
+ },
+ "intro_video_heading": "Inside the factory — where the machines are built",
+ "intro_video_text": "The assembly hall in Kayseri, Turkey, where Dener's machining centres and lathes are built up from their own castings.",
+ "nav_label": "Dener CNC lathes"
+}

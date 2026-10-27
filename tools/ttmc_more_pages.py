@@ -165,7 +165,7 @@ PAGES = {
              {"q": "Single-phase or 3-phase?",
               "a": "The WTZ bench and floor drill presses and the TB…V inverter column drills run on single-phase power; the gear-head drill presses have 3-phase two-speed motors, supplied for 600 V with a CSA-approved panel or for 208 / 240 / 480 V on request."},
              VOLT],
-        related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes and machining centres"},
+        related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes, machining centres and grinders"},
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}, {"href": "band-saw.html", "label": "Band saws"},
                  {"href": "ironworker-machines.html", "label": "Ironworkers"}, {"href": "arbor-press.html", "label": "Arbor presses and bench presses"}],
     ),
@@ -195,14 +195,14 @@ PAGES = {
              {"q": "Power feed and DRO?",
               "a": "Power feed moves the table at a steady rate for a better finish and less operator fatigue; a digital readout (DRO) shows the table position to 0.0002″ and replaces the dials for most work. The X6336 and LM-1450 have power feed on all three axes; DROs are available on most models — ask us when you quote."},
              VOLT],
-        related=[{"href": "drill-press.html", "label": "Drill presses"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes and machining centres"},
+        related=[{"href": "drill-press.html", "label": "Drill presses"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes, machining centres and grinders"},
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}, {"href": "band-saw.html", "label": "Band saws"}],
     ),
     D.P_CNC: dict(
-        title="CNC Lathes, Vertical Machining Centres & Boring Mills | NovoTech",
-        meta="CNC machine tools from NovoTech: a slant-bed CNC lathe, BT40 vertical machining centres with 16 – 24 tool changers, BT50 CNC boring and milling machines and a horizontal machining centre.",
-        h1="CNC lathes, vertical machining centres and CNC boring mills",
-        nav="CNC machine tools",
+        title="NovoTech CNC Lathes, VMCs & Boring Mills · Value Line | NovoTech",
+        meta="NovoTech value-line CNC machine tools: a slant-bed CNC lathe, BT40 vertical machining centres with 16 – 24 tool changers, BT50 CNC boring and milling machines and a horizontal machining centre.",
+        h1="NovoTech CNC machine tools — CNC lathe, vertical machining centres and CNC boring mills, the value line",
+        nav="NovoTech CNC machine tools",
         intro="CNC machine tools for the job shop and the production line, built in China to NovoTech's specification with Mitsubishi, Fanuc "
               "or Siemens controls to order: the CTK6416 slant-bed CNC lathe with gang tooling, the VMC8046 and VMC10562 vertical machining "
               "centres with BT40 spindles to 8,000 rpm and 16- and 24-tool changers, CNC boring and milling machines with BT50 spindles and "
@@ -471,6 +471,16 @@ def group_entry(page_slug, gid, title, lead, manual, fams):
 def write_page(slug, p, fams):
     groups = [group_entry(slug, gid, t, lead, manual, fams) for gid, t, lead, manual in p["groups"]]
     crumbs = CRUMBS + ([p["crumb"]] if p.get("crumb") else []) + [{"label": p["h1"].split(" — ")[0]}]
+    section = None
+    if slug == D.P_CNC:                               # the value line's page under the CNC machine-tool hub, beside the Dener pages
+        import machine_tools_nav as MTN
+        h = MTN.hub()
+        crumbs = CRUMBS + [{"label": MTN.SECTION, "href": f"{h['slug']}.html"}, {"label": p["h1"].split(" — ")[0]}]
+        section = {"label": MTN.SECTION, "related_title": MTN.RELATED_TITLE,
+                   "hub": {"href": f"{h['slug']}.html", "label": h["label"], "image": h["image"], "blurb": h["blurb"]},
+                   "pages": [{"href": f"{s}.html", "label": nav, "current": s == slug} for s, nav, _ in MTN.siblings()]}
+        p = dict(p, related=[{"href": f"{s}.html", "label": lab} for s, _, lab in MTN.siblings() if s != slug]
+                 + [{"href": f"{h['slug']}.html", "label": h["label"]}] + [r for r in p["related"] if r["href"] != f"{h['slug']}.html"])
     page = {
         "slug": slug, "template": "category.html", "family_set": SET,
         "title": p["title"], "artifact_title": p["h1"], "meta_description": p["meta"], "h1": p["h1"], "intro": p["intro"],
@@ -480,6 +490,9 @@ def write_page(slug, p, fams):
         "catalogue_pdf": None, "origin_feature": ORIGIN, "section_label": p["nav"],
         "related_pages": p["related"], "related_title": "More machinery from NovoTech", **NO_VIDEO,
     }
+    if section:
+        page["section"] = section
+        page["section_label"] = section["label"]
     write_json(os.path.join(ROOT, "content", "pages", f"{slug}.json"), page)
     return page
 
