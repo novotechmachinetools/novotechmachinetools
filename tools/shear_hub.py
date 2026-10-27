@@ -36,7 +36,7 @@ HUB_PAGE = dict(
           "— QC12K swing beam and Q11K guillotine from 5/32″ to 1-9/16″ and 26 ft, built in China with Estun controls; and NovoTech's value-line "
           "sheet metal shears — pneumatic, light hydraulic, electric and flywheel mechanical shears from 16 ga to 3/8″ for the sheet-metal "
           "shop. Below, each line in brief and every model in one table of capacity, length, strokes, motor and weight; every machine comes "
-          "with a CSA-approved panel, a 1-year warranty and installation, training and parts from Mississauga, ON.",
+          "with a CSA-approved panel, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
     points=["Dener premium line: BS / BSY hydraulic swing beam 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotine with variable angle 1/4″ – 3/4″ × 10 – 20 ft",
             "NovoTech premium line: SRGM direct-gear mechanical shears 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min, return-to-sender versions",
             "NovoTech value line: QC12K / Q11K hydraulic plate shears 5/32″ – 1-9/16″ × 8 – 26 ft; sheet metal shears 16 ga – 3/8″ × 39 – 120″"],
@@ -47,7 +47,7 @@ HUB_PAGE = dict(
     range_note="Capacities are the manufacturers' ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. "
                "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208, 240 and 480 V on request.",
     faq=[{"q": "Which line of shear should I buy?",
-          "a": "By the material and the hours. For sheet to 1/4″ in a sheet-metal, HVAC or signage shop, the NovoTech sheet metal shears are the lowest-priced powered machines — pneumatic, hydraulic or electric, 39″ to 120″ — and the premium SRGM mechanical shears are the step up for a shop that shears all day: direct-gear drive, 31 – 35 strokes a minute, NC back gauge and photocell guard as standard. For plate from 5/32″ to 1-9/16″ the hydraulic shears take over: NovoTech's value-line QC12K swing beam and Q11K guillotine in the widest range of sizes, or the Dener BS and DAS — the premium plate shears, Turkish-built with the ESA CNC and Dener Canada parts in Mississauga. All four lines are installed and supported by the same NovoTech technicians; we quote across lines so you can compare."},
+          "a": "By the material and the hours. For sheet to 1/4″ in a sheet-metal, HVAC or signage shop, the NovoTech sheet metal shears are the lowest-priced powered machines — pneumatic, hydraulic or electric, 39″ to 120″ — and the premium SRGM mechanical shears are the step up for a shop that shears all day: direct-gear drive, 31 – 35 strokes a minute, NC back gauge and photocell guard as standard. For plate from 5/32″ to 1-9/16″ the hydraulic shears take over: NovoTech's value-line QC12K swing beam and Q11K guillotine in the widest range of sizes, or the Dener BS and DAS — the premium plate shears, Turkish-built with the ESA CNC and Dener Canada parts in Mississauga, ON, Canada. All four lines are installed and supported by the same NovoTech technicians; we quote across lines so you can compare."},
          {"q": "Mechanical or hydraulic shear — which is better?",
           "a": "For sheet to 1/4″ a mechanical shear is the faster and simpler machine: 30 – 55 strokes a minute from a motor and gearbox or flywheel, no hydraulic power pack, no oil to heat up, no valves or seals to service, and the same cut quality on the first and the thousandth stroke. Hydraulic shears earn their price from 3/8″ plate upwards, where the beam needs tonnage rather than speed — and in the light sizes a small hydraulic shear is the quietest, lowest-priced way to cut 14 ga to 5/32″ a few times an hour."},
          {"q": "Swing beam or guillotine?",
@@ -61,7 +61,7 @@ HUB_PAGE = dict(
          {"q": "What about safety and the Ontario pre-start review?",
           "a": "Finger guards along the blade, rear guard fences or photocells / light curtains, an anti-repeat single-stroke control and a mobile foot pedal with emergency stop are standard or available on every line; we recommend the photocell or light-curtain rear guard on every powered shear. In Ontario a new shear needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."},
          {"q": "Do you deliver, install and service in Canada?",
-          "a": "Yes — every shear is shipped to Mississauga, unloaded, levelled, commissioned and the operators trained by NovoTech; blades and parts for all four lines are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request) and a 1-year warranty."},
+          "a": "Yes — every shear is shipped to Mississauga, ON, Canada, unloaded, levelled, commissioned and the operators trained by NovoTech; blades and parts for all four lines are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request) and a 1-year warranty."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about metal shears",
     related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"},
@@ -89,7 +89,7 @@ def build():
               fams, SET, SN.SECTION, SN.subpages(),
               extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": ["capacity", "length", "strokes", "motor", "weight"],
                      "hero_brand_line": "Dener Makina builds the premium hydraulic shears in Kayseri, Turkey; the premium-line mechanical shears are built in Turkey and the value-line shears in China, all to NovoTech's specification. Every line sold, installed and supported in Canada by NovoTech.",
-                     "origin_feature": {"title": "Four lines, one supplier", "text": "Premium Dener and NovoTech mechanical shears from Turkey, NovoTech value-line hydraulic and sheet metal shears from China — every one with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON."},
+                     "origin_feature": {"title": "Four lines, one supplier", "text": "Premium Dener and NovoTech mechanical shears from Turkey, NovoTech value-line hydraulic and sheet metal shears from China — every one with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                      "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"]})
     path = os.path.join(ROOT, "content", "pages", f"{SN.HUB}.json")

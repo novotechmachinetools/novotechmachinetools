@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% from "partials/site.html" import crumbs with context %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    {{ crumbs(page) }}
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+  </div>
+</section>
+
+<section class="wrap articles" aria-label="Articles">
+  <ul class="article-grid">
+    {% for a in page.articles %}
+    <li class="article-card">
+      <a class="article-art{{ ' is-cutout' if a.img and a.img.alpha else '' }}" href="{{ a.href }}" tabindex="-1" aria-hidden="true">{% if a.img %}<img src="{{ a.img.small }}" srcset="{{ a.img.srcset }}" sizes="(max-width: 640px) 92vw, 360px" width="{{ a.img.w }}" height="{{ a.img.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
+      <div class="article-body">
+        <p class="article-topic">{{ a.topic }}</p>
+        <h2 class="article-title"><a href="{{ a.href }}">{{ a.title }}</a></h2>
+        <p>{{ a.text }}</p>
+        <p><a class="arrow" href="{{ a.href }}">Read the {{ 'guide' if 'guide' in a.title|lower else 'article' }}</a></p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% include "partials/quote.html" %}
+{% endblock %}

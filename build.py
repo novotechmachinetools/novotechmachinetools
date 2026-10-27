@@ -686,6 +686,173 @@ def range_table(subpages, pick=None):
     return rows
 
 
+CATALOG_DATA = json.load(open(os.path.join(ROOT, "content", "catalog.json"), encoding="utf-8")) \
+    if os.path.exists(os.path.join(ROOT, "content", "catalog.json")) else {"groups": [], "blurbs": {}, "card_image": {}, "featured": [], "brands": []}
+SITE_TEMPLATES = {"home.html", "products.html", "contact.html", "about.html", "brochures.html", "articles.html", "privacy.html", "article.html"}
+CATALOG = {}      # slug → category card (menu label, image, blurb, sub-pages), filled by main()
+SHOWN_FAMILIES = [0]   # machine families that appear on the product pages, counted by main()
+PDF_INDEX = {}    # files/x.pdf → {"label", "size", "pages": [{"href", "label"}]}, filled by main()
+
+
+def build_catalog(loaded):
+    by_slug = {p["slug"]: p for p in loaded}
+    out = {}
+    for c in site["nav"][0]["children"]:
+        slug = c["href"].split("#")[0][:-5]
+        p = by_slug.get(slug, {})
+        im = CATALOG_DATA["card_image"].get(slug) or p.get("hero_image")
+        out[slug] = {"slug": slug, "href": c["href"], "label": c["label"], "image": img(im) if im else None,
+                     "blurb": CATALOG_DATA["blurbs"].get(slug) or p.get("meta_description", ""),
+                     "children": [{"label": x["label"], "href": x["href"]} for x in c.get("children") or []]}
+    return out
+
+
+def build_pdf_index(loaded):
+    """every PDF a product page offers for download, with the pages that offer it"""
+    idx = {}
+    label_of = {c["href"].split("#")[0][:-5]: c["label"] for c in site["nav"][0]["children"]}
+    for c in site["nav"][0]["children"]:
+        for x in c.get("children") or []:
+            label_of[x["href"].split("#")[0][:-5]] = x["label"]
+
+    def walk(o, page):
+        if isinstance(o, dict):
+            f = o.get("file")
+            if isinstance(f, str) and f.endswith(".pdf") and f.startswith("files/"):
+                e = idx.setdefault(f, {"file": f, "label": o.get("label") or "", "size": o.get("size") or "", "pages": []})
+                if not e["label"] and o.get("label"):
+                    e["label"] = o["label"]
+                ref = {"href": page["slug"] + ".html", "label": label_of.get(page["slug"]) or page.get("nav_label") or page.get("h1", "")}
+                if ref not in e["pages"]:
+                    e["pages"].append(ref)
+            for v in o.values():
+                walk(v, page)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v, page)
+    for p in loaded:
+        if p.get("template") in SITE_TEMPLATES:
+            continue
+        walk(p, p)
+    top = {c["href"].split("#")[0] for c in site["nav"][0]["children"]}
+    for f, e in idx.items():
+        e["pages"].sort(key=lambda r: (r["href"] not in top, r["label"]))      # the main category pages first
+        seen_l, keep = set(), []
+        for r in e["pages"]:
+            if r["label"] not in seen_l:
+                seen_l.add(r["label"])
+                keep.append(r)
+        e["pages"] = keep
+        fp = os.path.join(ROOT, "src", f)
+        if os.path.exists(fp):
+            if not e["size"]:
+                e["size"] = f"{os.path.getsize(fp) / 1048576:.1f} MB"
+            try:
+                import fitz
+                e["page_count"] = fitz.open(fp).page_count
+            except Exception:
+                pass
+        key = "pdf-" + re.sub(r"[^a-z0-9]+", "-", os.path.basename(f)[:-4].lower()).strip("-")
+        e["cover"] = img(key) if key in manifest else None
+    return idx
+
+
+def prepare_site_page(page):
+    """the data the site's own pages show: category cards, brands, brochures, article cards"""
+    t = page.get("template")
+    page["catalog_groups"] = [{"id": g["id"], "title": g["title"], "lead": g["lead"],
+                               "cards": [CATALOG[s_] for s_ in g["slugs"] if s_ in CATALOG]} for g in CATALOG_DATA["groups"]]
+    page["featured"] = [CATALOG[s_] for s_ in CATALOG_DATA["featured"] if s_ in CATALOG]
+    page["category_count"] = len(CATALOG)
+    page["family_count"] = SHOWN_FAMILIES[0]
+    page["brands"] = [dict(b, logo_img=img(b["logo"]) if b.get("logo") else None) for b in CATALOG_DATA["brands"]]
+    makers = [b for b in CATALOG_DATA["brands"] if not b["name"].startswith("NovoTech")]
+    page["maker_count"] = len(makers)
+    page["country_count"] = len({b["country"] for b in makers})
+    for k in ("showroom",):
+        if page.get(k):
+            page[k + "_imgs"] = [img(n) for n in page[k]]
+    if t == "brochures.html":
+        titles = {e["group"]: [] for e in CATALOG_DATA.get("brochures", [])}
+        for e in CATALOG_DATA.get("brochures", []):
+            if e["file"] in PDF_INDEX:                 # only brochures a product page offers
+                titles[e["group"]].append(dict(PDF_INDEX[e["file"]], title=e["title"]))
+        page["brochure_groups"] = [{"id": g["id"], "title": g["title"], "cards": titles[g["id"]]}
+                                   for g in CATALOG_DATA["groups"] if titles.get(g["id"])]
+        page["brochure_count"] = sum(len(g["cards"]) for g in page["brochure_groups"])
+    if t == "home.html":
+        pick = ["files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf", "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+                "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "files/NovoTech-Press-Brake-Tooling-Catalogue-2026.pdf"]
+        names = {e["file"]: e["title"] for e in CATALOG_DATA.get("brochures", [])}
+        page["brochure_pick"] = [dict(PDF_INDEX[f], title=names.get(f, "")) for f in pick if f in PDF_INDEX]
+        page["brochure_count"] = len([e for e in CATALOG_DATA.get("brochures", []) if e["file"] in PDF_INDEX])
+        art = json.load(open(os.path.join(ROOT, "content", "pages", "metal-fabricating-articles.json"), encoding="utf-8"))
+        page["guides"] = [dict(a, img=img(a["image"]) if a.get("image") else None) for a in art.get("articles", [])]
+    if page.get("effective"):
+        page["effective_label"] = datetime.date.fromisoformat(page["effective"]).strftime("%B %-d, %Y")
+    if page.get("articles"):
+        for a in page["articles"]:
+            a["img"] = img(a["image"]) if a.get("image") else None
+    return page
+
+
+def site_page_ld(page):
+    """structured data for the site's own pages"""
+    url = page["url"]
+    graph = [organization_ld(),
+             {"@type": "WebSite", "@id": site["domain"] + "/#website", "url": site["domain"] + "/", "name": site["name"],
+              "publisher": {"@id": site["domain"] + "/#organization"}, "inLanguage": "en-CA"}]
+    crumbs = []
+    for i, c in enumerate(page.get("breadcrumb", []), 1):
+        crumbs.append({"@type": "ListItem", "position": i, "name": c["label"], "item": absurl(c["href"]) if c.get("href") else url})
+    if len(crumbs) > 1:
+        graph.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": crumbs})
+    kind = {"home.html": "WebPage", "products.html": "CollectionPage", "contact.html": "ContactPage", "about.html": "AboutPage",
+            "brochures.html": "CollectionPage", "articles.html": "CollectionPage", "privacy.html": "WebPage", "article.html": "WebPage"}[page["template"]]
+    wp = {"@type": kind, "@id": url, "url": url, "name": page["title"], "description": page["meta_description"], "inLanguage": "en-CA",
+          "isPartOf": {"@id": site["domain"] + "/#website"}, "publisher": {"@id": site["domain"] + "/#organization"},
+          "datePublished": page["date_published"], "dateModified": page["date_modified"]}
+    if len(crumbs) > 1:
+        wp["breadcrumb"] = {"@id": url + "#breadcrumb"}
+    if page["template"] in ("contact.html", "about.html", "home.html"):
+        wp["about"] = {"@id": site["domain"] + "/#organization"}
+    graph.append(wp)
+    if page["template"] in ("products.html", "home.html"):
+        items = page["featured"] if page["template"] == "home.html" else [c for g in page["catalog_groups"] for c in g["cards"]]
+        graph.append({"@type": "ItemList", "@id": url + "#categories", "name": "Machine categories", "numberOfItems": len(items),
+                      "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": c["label"], "url": absurl(c["href"])}
+                                          for i, c in enumerate(items)]})
+    if page["template"] == "brochures.html":
+        docs = [e for g in page["brochure_groups"] for e in g["cards"]]
+        graph.append({"@type": "ItemList", "@id": url + "#brochures", "name": "Brochures", "numberOfItems": len(docs),
+                      "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {
+                          "@type": "DigitalDocument", "name": e.get("title") or e["label"] or os.path.basename(e["file"]), "url": absurl(e["file"]),
+                          "encodingFormat": "application/pdf"}} for i, e in enumerate(docs)]})
+    if page["template"] == "articles.html":
+        graph.append({"@type": "ItemList", "@id": url + "#articles", "name": "Articles and buying guides",
+                      "numberOfItems": len(page["articles"]),
+                      "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": a["title"], "url": absurl(a["href"])}
+                                          for i, a in enumerate(page["articles"])]})
+    if page["template"] == "article.html":
+        hero = img(page["hero_image"]) if page.get("hero_image") else None
+        graph.append({"@type": "Article", "@id": url + "#article", "headline": page["h1"], "description": page["meta_description"],
+                      "mainEntityOfPage": {"@id": url}, "inLanguage": "en-CA",
+                      "datePublished": page["date_published"], "dateModified": page["date_modified"],
+                      "author": {"@id": site["domain"] + "/#organization"}, "publisher": {"@id": site["domain"] + "/#organization"},
+                      **({"image": [absurl(hero["src"])]} if hero else {})})
+    vids = list(page.get("videos") or [])
+    if page.get("intro_video"):
+        vids.insert(0, page["intro_video"])
+    for v in vids:
+        t = img(v["thumb"])
+        graph.append({"@type": "VideoObject", "@id": url + "#video-" + v["id"], "name": v["title"],
+                      "description": v["title"] + " — NovoTech Machine Tools, Canada.", "thumbnailUrl": [absurl(t["src"])],
+                      "uploadDate": v.get("upload_date", "2023-12-26"), "duration": v.get("duration", "PT2M"),
+                      "contentUrl": "https://www.youtube.com/watch?v=" + v["id"], "embedUrl": "https://www.youtube-nocookie.com/embed/" + v["id"],
+                      "publisher": {"@id": site["domain"] + "/#organization"}})
+    return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
+
+
 PREPARED = []   # prepared page dicts (families resolved) — used for the AI assistant's catalogue
 
 
@@ -711,7 +878,7 @@ def render_page(page):
         g["families"] = [prepare_family(family(page, f)) if isinstance(f, str) else f for f in g["families"]]
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
         page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
-    page["url"] = f"{site['domain']}/{page['slug']}"      # clean URLs: pages are served without .html
+    page["url"] = f"{site['domain']}/{page['slug']}" if page["slug"] != "index" else site["domain"] + "/"   # clean URLs: pages are served without .html
     page["date_published"], page["date_modified"] = page_dates(page["slug"])
     page["updated_label"] = datetime.date.fromisoformat(page["date_modified"]).strftime("%B %Y")
     if page.get("article"):   # long-form guide kept from the old site (HTML fragment with <figure data-img> placeholders)
@@ -725,9 +892,12 @@ def render_page(page):
         art = re.sub(r'<figure class="guide-figure" data-img="([^"]+)"(?: data-alt="([^"]*)")?></figure>', fig, art)
         page["article_html"] = art
         page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
+    is_site = page.get("template") in SITE_TEMPLATES
+    if is_site:
+        prepare_site_page(page)
     tpl = env.get_template(page.get("template", "page.html"))
     inline_css = None if ARTIFACT else open(os.path.join(DIST, "css", "site.css"), encoding="utf-8").read().replace("../fonts/", "fonts/")   # minified by main(); URLs re-based to the page
-    html = tpl.render(page=page, ld_json=page_ld(page), build_ts=int(datetime.datetime.now().timestamp()), inline_css=inline_css,
+    html = tpl.render(page=page, ld_json=site_page_ld(page) if is_site else page_ld(page), build_ts=int(datetime.datetime.now().timestamp()), inline_css=inline_css,
                       css_hash=asset_hash(os.path.join(ROOT, "src", "css", "site.css")), js_hash=asset_hash(os.path.join(ROOT, "src", "js", "site.js")),
                       ai_hash=asset_hash(os.path.join(ROOT, "src", "js", "ai.js")))
     PREPARED.append(page)
@@ -885,6 +1055,15 @@ def main():
                                     "related_title": hub.get("related_title_" + (g.get("line") or ""), None)}
                     covered = {m["href"] for m in g["members"]} | {hub["slug"] + ".html"} | ({alt["href"]} if alt else set())
                     p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these
+    CATALOG.update(build_catalog(loaded))
+    shown = set()
+    for p in loaded:
+        if p.get("template") in SITE_TEMPLATES:
+            continue
+        for g in p.get("groups", []):
+            shown |= {(p.get("family_set"), f) for f in g.get("families", []) if isinstance(f, str)}
+    SHOWN_FAMILIES[0] = len(shown)
+    PDF_INDEX.update(build_pdf_index(loaded))
     for page in loaded:
         html = render_page(page)
         if ARTIFACT:
@@ -901,7 +1080,11 @@ def main():
     print(f"ai catalogue: {len(cat)} families, {os.path.getsize(os.path.join(DIST, 'ai', 'catalogue.json'))//1024} KB")
     # sitemap
     today = datetime.date.today().isoformat()
-    urls = "".join(f"  <url><loc>{site['domain']}/{p['slug']}</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{'0.9' if p.get('subpages') else '0.8'}</priority></url>\n" for p in pages)
+    def loc(p):
+        return site["domain"] + "/" if p["slug"] == "index" else f"{site['domain']}/{p['slug']}"
+    def prio(p):
+        return "1.0" if p["slug"] == "index" else "0.9" if p.get("subpages") or p["slug"] == "products" else "0.5" if p["slug"] == "privacy-policy" else "0.8"
+    urls = "".join(f"  <url><loc>{loc(p)}</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{prio(p)}</priority></url>\n" for p in pages)
     open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
     if STAGING:
         open(os.path.join(DIST, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")

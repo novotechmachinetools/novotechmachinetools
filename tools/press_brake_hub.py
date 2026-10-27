@@ -34,7 +34,7 @@ HUB_PAGE = dict(
           "brakes 3 to 176 tons and NC torsion-bar brakes from 33 tons, built in China to our specification; and the ISITAN compact hydraulic "
           "press brakes, 33 to 66 tons over 4 to 7 ft for the sheet-metal shop. Below, each line in brief and the whole range in one table; "
           "every machine comes with a CSA-approved panel, European-style tooling, a 1-year warranty and installation, training and parts "
-          "from Mississauga, ON.",
+          "from Mississauga, ON, Canada.",
     points=["Dener premium line: XL hydraulic 66 – 661 tons × 5 – 20 ft, XH hybrid, DDM servo-electric 44 – 220 tons, DDS from 22 tons",
             "NovoTech value line: hydraulic CNC 55 – 1,323 tons, electric 3 – 176 tons, NC 33 – 441 tons — Delem, Hawe, Estun",
             "ISITAN compact: 33 – 66 tons × 4.2 – 6.9 ft, NC or CNC with Cybelec — plus Eurostamp tooling stocked in Canada"],
@@ -45,7 +45,7 @@ HUB_PAGE = dict(
     range_note="Bending force in US tons (metric tonnes); XH hybrid packages are fitted to the XL frames, so stroke and daylight are those of the XL of the same tonnage. "
                "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208, 240 and 480 V on request.",
     faq=[{"q": "Dener, NovoTech value line or ISITAN — which press brake should I buy?",
-          "a": "By the work. For plate and production — 3/8″ and 1/2″ over 10 to 20 ft, two shifts, a long options list — the Dener XL and XH are the machines; they are built in Turkey on the heaviest frame, with ESA or Delem controls and Dener Canada parts in Mississauga. The NovoTech value line is the same architecture — monoblock frame, Hawe servo valves, linear scales, Delem control — built in China to our specification at about two-thirds of the price: the right buy for a job shop that needs a 100 – 300 ton CNC brake, an electric brake for sheet, or an NC brake for repeat parts. The ISITAN Edgebenders are the compact 33 – 66 ton machines for HVAC, enclosures and brackets where a 100-ton brake is more than you need. All three are installed and supported by the same NovoTech technicians."},
+          "a": "By the work. For plate and production — 3/8″ and 1/2″ over 10 to 20 ft, two shifts, a long options list — the Dener XL and XH are the machines; they are built in Turkey on the heaviest frame, with ESA or Delem controls and Dener Canada parts in Mississauga, ON, Canada. The NovoTech value line is the same architecture — monoblock frame, Hawe servo valves, linear scales, Delem control — built in China to our specification at about two-thirds of the price: the right buy for a job shop that needs a 100 – 300 ton CNC brake, an electric brake for sheet, or an NC brake for repeat parts. The ISITAN Edgebenders are the compact 33 – 66 ton machines for HVAC, enclosures and brackets where a 100-ton brake is more than you need. All three are installed and supported by the same NovoTech technicians."},
          {"q": "Hydraulic, hybrid or electric?",
           "a": "Hydraulic gives the lowest price per ton and full force over the whole stroke — the machine for thick plate. A hybrid (Dener XH) is a hydraulic brake with a servo-driven pump: 42 – 58 % less energy, faster, quieter, for a shop that runs the brake all day. An electric brake (Dener DDM, NovoTech WADG) has no oil at all: ±0.01 mm repeatability, bending speeds to 30 mm/s and about 70 % less power — usually the better buy for 16 ga to 1/4″ sheet. Above about 150 tons and on 3/8″ plate, hydraulic still wins."},
          {"q": "How much tonnage and length do I need?",
@@ -57,7 +57,7 @@ HUB_PAGE = dict(
          {"q": "What about safety and the Ontario pre-start review?",
           "a": "Side guards, an enclosed rear guard, interlocked doors and an anti-panic foot pedal with emergency stop are standard; DSP or Fiessler laser finger protection and light curtains are options we recommend for every CNC machine. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."},
          {"q": "Do you deliver, install and service in Canada?",
-          "a": "Yes — every press brake is shipped to Mississauga, unloaded, levelled, commissioned and the operators trained by NovoTech; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
+          "a": "Yes — every press brake is shipped to Mississauga, ON, Canada, unloaded, levelled, commissioned and the operators trained by NovoTech; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about press brakes",
     related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
@@ -87,7 +87,7 @@ def build():
               fams, SET, PBN.SECTION, subpages,
               extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": ["bending_force", "bending_length", "stroke", "daylight", "weight"],
                      "hero_brand_line": "Dener Makina builds the premium line in Kayseri, Turkey; the NovoTech value line is built in China to our specification; ISITAN builds the compact brakes in Bursa, Turkey. All sold, installed and supported in Canada by NovoTech.",
-                     "origin_feature": {"title": "Three lines, one supplier", "text": "Premium Dener, NovoTech's own value line and the ISITAN compact brakes — every one with a CSA-approved panel, European tooling, a 1-year warranty and parts and technicians in Mississauga, ON."},
+                     "origin_feature": {"title": "Three lines, one supplier", "text": "Premium Dener, NovoTech's own value line and the ISITAN compact brakes — every one with a CSA-approved panel, European tooling, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                      "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"]})
     # the hub's subpages carry the line class for the cards (premium / value)

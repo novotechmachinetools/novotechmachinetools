@@ -3,12 +3,12 @@
   <div class="wrap quote-grid">
     <div class="quote-copy">
       <h2 id="quote-title">Request a quote</h2>
-      {% set q = page.quote or {} %}{% set rebar = (page.family_set or 'rebar') == 'rebar' %}
+      {% set q = page.quote or {} %}{% set rebar = (page.family_set or ('site' if page.catalog_groups else 'rebar')) == 'rebar' %}
       <p>{{ q.intro or ("Tell us which machine you are looking at and the bar sizes you run, and we will come back with pricing, delivery and the right voltage option for your shop." if rebar else "Tell us which machine you are looking at and what you will run on it — material, sizes and voltage — and we will come back with pricing, delivery and the right options for your shop.") }} We answer within one business day.</p>
       <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern) or email {{ email_link() }}.</p>
-      <p class="quote-contact">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}</p>
+      <p class="quote-contact">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}</p>
     </div>
-    <form class="quote-form" action="quote.php" method="post" enctype="multipart/form-data" novalidate{% if staging %} data-staging="1"{% endif %}>
+    <form class="quote-form" action="quote.php" method="post" enctype="multipart/form-data" novalidate{% if staging %} data-staging="1"{% endif %}{% if site.recaptcha_site_key %} data-recaptcha="{{ site.recaptcha_site_key }}"{% endif %}>
       <input type="hidden" name="page" value="{{ page.title }}">
       <input type="hidden" name="ts" value="{{ build_ts }}">
       <p class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
@@ -34,6 +34,7 @@
           <option value="">{{ q.select_placeholder or "Choose a machine family…" }}</option>
           <option value="Not sure — please advise">Not sure — please advise</option>
           {% for g in page.groups %}{% for f in g.families %}<option value="{{ f.name }}">{{ f.name }} — {{ f.models_label }}</option>{% endfor %}{% endfor %}
+          {% if not page.groups and page.catalog_groups %}{% for g in page.catalog_groups %}<optgroup label="{{ g.title }}">{% for c in g.cards %}<option value="{{ c.label }}">{{ c.label }}</option>{% endfor %}</optgroup>{% endfor %}{% endif %}
           <option value="{{ site.agents.form_option }}">{{ site.agents.form_option }}</option>
         </select>
       </div>
@@ -46,13 +47,11 @@
         <input id="q-files" name="files[]" type="file" multiple accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.sldprt,.x_t,.jpg,.jpeg,.png,.heic,.webp,.zip,.xls,.xlsx,.doc,.docx,.txt,.csv" aria-describedby="q-files-note">
         <p class="field-note" id="q-files-note">Part drawings or sketches, photos of your parts — PDF, DWG, DXF, STEP, IGES, JPG, PNG, ZIP, Excel or Word · up to 5 files, 10 MB in total.</p>
       </div>
-      {% if site.recaptcha_site_key %}<div class="field field-wide field-captcha">
-        <div class="captcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
-        <noscript><p class="field-note">Please turn on JavaScript to send the form, or email us.</p></noscript>
-      </div>{% endif %}
+      {% if site.recaptcha_site_key %}<input type="hidden" name="g-recaptcha-response" value="">{% endif %}
       <div class="field field-wide form-actions">
         <button class="btn btn-primary" type="submit">Send quote request</button>
         <p class="form-status" role="status" aria-live="polite"></p>
+        {% if site.recaptcha_site_key %}<p class="field-note recaptcha-note">This form is protected by reCAPTCHA; Google's <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>{% endif %}
       </div>
     </form>
   </div>

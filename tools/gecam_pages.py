@@ -71,7 +71,7 @@ PAGE_SHEET = dict(
           "(11-13/16″) for small parts and job shops; the G65 (25-9/16″) and G135 (53-1/8″) production machines with up to four "
           "groups, touch screen and electronic grit set as standard; the single-belt GM65 and GM110 for plain deburring and satin "
           "finishing; and the G30 WET and G65/135 WET for parts that must not get hot. Parts from .020″ to 4-3/4″ thick (5-1/2″ wet). "
-          "Supplied with a CSA-approved panel, installed and supported from Mississauga, ON.",
+          "Supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["Working width 5-7/8″ to 53-1/8″ · parts .020″ to 4-3/4″ thick (5-1/2″ on the wet machines)",
             "Abrasive belt, top brushes, four-brush carousel and Scotch-Brite brushes — up to 4 groups in one pass",
             "Touch screen, electronic grit set and ±.004″ thickness setting on the G65 and G135 · wet machines for heat-sensitive parts"],
@@ -121,7 +121,7 @@ PAGE_EDGE = dict(
           "(2 mm) radius across 53-1/8″; the GT06 and GT13, which run strip brushes on cross belts above and below the part and round "
           "both sides in one pass without touching the faces, 23-5/8″ and 51-3/16″ wide; and the G65DCC, which breaks the slag off "
           "parts 3/8″ to 4-3/4″ thick and rounds their edges. Supplied with a CSA-approved panel, installed and supported from "
-          "Mississauga, ON.",
+          "Mississauga, ON, Canada.",
     points=["G135RB8: 8-brush carousel, edge radius to 5/64″ (2 mm), 53-1/8″ wide",
             "GT06 · GT13: both sides of the part in one pass, faces untouched, 23-5/8″ and 51-3/16″ wide",
             "G65DCC: plasma and oxy-fuel slag off parts 3/8″ – 4-3/4″ thick, edges rounded in the same pass"],
@@ -161,7 +161,7 @@ PAGE_BRUSH = dict(
           "in Parma, Italy: the CUB 30, CUB 65BB and CUB 30B1B2 brush machines, 11-13/16″ and 25-9/16″ wide, with motorized pressure "
           "on every brush; the EASY T workstation, with a vacuum table and a two-tool brush arm that tilts through 180°; and the GCB "
           "25, 30 and 40 benches, where two long crossed abrasive belts run over a motorized table up to 157-1/2″ long. Supplied with "
-          "a CSA-approved panel, installed and supported from Mississauga, ON.",
+          "a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["CUB brush machines: 11-13/16″ and 25-9/16″ wide, parts to 9-13/16″ thick, conveyor 3.3 – 23 ft/min",
             "EASY T: 31-1/2 × 51-3/16″ vacuum table, two tools on a 180° tilting arm, parts to 5-7/8″",
             "GCB 25 / 30 / 40: two crossed belts over tables 98-7/16″ to 157-1/2″ long, suction-cup manipulator for shaped parts"],
@@ -196,7 +196,7 @@ PAGE_CORNER = dict(
           "and 136, where an abrasive belt on an oscillating fork grinds corners up to 5-7/8″ and 11-13/16″ high to a radius of 3/64″ to "
           "3/8″; the 135, whose head travels the full length of the edge by itself on boxes with edges up to 59″; and PLC-controlled "
           "machines for series work — an upper-corner grinder, a six-head grinder and a grinder for the welds of 90° tube frames. "
-          "Supplied with a CSA-approved panel, installed and supported from Mississauga, ON.",
+          "Supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["131 · 136: hand-fed, corners to 5-7/8″ and 11-13/16″ high, radius 3/64″ – 3/8″ or sharp",
             "135: automatic head travel along edges up to 31-1/2″ or 59″, one or two heads",
             "Special PLC grinders for upper corners, two corners at once and 90° tube frames"],
@@ -241,7 +241,7 @@ PAGE_PIPE = dict(
           "and bent round and oval tube is finished all round without turning, Ø3/8″ to Ø5-7/8″; the Eurofintec 128 S, 128 SL and 128 DL "
           "centreless sanders for bar and tube Ø3/16″ to Ø5-7/8″ and the 228 for pipe up to Ø15-3/4″; and the 728 tube brushing machine "
           "and 143 tube-end deburring machine. Eurofintec machines are built in Parma, Italy, by Gecam. Supplied with a CSA-approved "
-          "panel and supported from Mississauga, ON.",
+          "panel and supported from Mississauga, ON, Canada.",
     points=["BT 114-S: automatic feeder, two 37 × 2″ belts, straight and bent tube Ø3/8″ – 4-1/2″",
             "141 · 144 orbital sanders for bent tube Ø3/8″ – 5-7/8″ · 128 centreless Ø3/16″ – 5-7/8″ · 228 to Ø15-3/4″",
             "728 tube brushing · 143 tube-end deburring, inside and outside, ends cut at 90° and 45°"],
@@ -287,7 +287,7 @@ PAGE_WELD = dict(
           "blocks that hold the corner square and draw off the heat, the TIG or plasma torch runs along a guide at 0 to 118 in/min, and "
           "the CNC touch screen stores the parameters of every part. Mild steel, stainless steel and aluminum; corners 7-7/8″ or "
           "11-13/16″ high, parts from 3-15/16″ to 59″ square. The welded corner then goes to a corner grinder. Supplied with a "
-          "CSA-approved panel, installed and supported from Mississauga, ON.",
+          "CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["Corners 7-7/8″ (CWS 200) or 11-13/16″ (CWS 300) high · parts 3-15/16″ to 59″ square",
             "TIG or plasma · guided torch, 0 – 118 in/min · two-axis torch movement available",
             "Pneumatic clamping on copper blocks · CNC touch screen with stored parameters"],
@@ -326,7 +326,7 @@ HUB_PAGE = dict(
           "edges to 5/64″, inside holes and on both sides at once; a deslagging machine for plasma and oxy-fuel parts; brush deburring "
           "machines and benches for shops that do not need a wide-belt line; and corner grinders for the welds of boxes, cabinets and "
           "tube frames. Pipe sanders and polishers have a page of their own. Every machine is supplied with a CSA-approved panel, "
-          "installed, and supported from Mississauga, ON. "
+          "installed, and supported from Mississauga, ON, Canada. "
           "Below, each page in brief and every model in one table.",
     points=[f"<a href=\"{D.P_SHEET}\">Sheet metal deburring machines</a> — wide-belt deburring and satin finishing, 5-7/8″ to 53-1/8″, dry or wet",
             f"<a href=\"{D.P_EDGE}\">Edge rounding & deslagging</a> — radius to 5/64″, both sides in one pass · <a href=\"{D.P_BRUSH}\">brush deburring machines & benches</a>",
@@ -350,7 +350,7 @@ HUB_PAGE = dict(
                "one pass, leaving the faces as they were. The G135RB8 works from the top with the deepest radius, 5/64″ (2 mm)."},
          {"q": "Do you install the machines and train operators?",
           "a": "Yes. Our technicians install and commission the machine anywhere in Canada, set up the groups and abrasives for your "
-               "parts and train the operators; abrasives, brushes and parts are supplied from Mississauga, ON, and we support every "
+               "parts and train the operators; abrasives, brushes and parts are supplied from Mississauga, ON, Canada, and we support every "
                "machine by video call."},
          VOLT_FAQ_GENERIC],
     range_lead="Capacity, part thickness, feed, working groups and weight for every model on the four pages. Each row links to the full specification table of its machine.",
@@ -375,7 +375,7 @@ PAGE_DEBUR = dict(
           "rounding machines that round every edge to 5/64″ (2 mm), inside holes too, or both sides of the part at once; the G65DCC, "
           "which breaks the slag off thick plasma and oxy-fuel parts; and, for shops that do not need a wide-belt line, CUB brush "
           "machines, the EASY T brushing workstation and GCB crossed-belt benches for heavy, long and shaped parts. Supplied with a "
-          "CSA-approved panel, installed and supported from Mississauga, ON.",
+          "CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["Wide-belt deburring and satin finishing, 5-7/8″ to 53-1/8″ wide · parts .020″ to 4-3/4″ thick, dry or wet",
             "Edge rounding to 5/64″ (2 mm), both sides in one pass on the GT06 and GT13 · G65DCC deslagging for plasma parts 3/8″ – 4-3/4″",
             "CUB conveyor brush machines, the EASY T vacuum-table workstation and GCB crossed-belt benches for heavy and shaped parts"],
@@ -407,7 +407,7 @@ PIPE_EXTRA = {
 }
 
 # ------------------------------------------------------------------------------------------------ brochure
-ABOUT_NT = ("NovoTech sells, installs and supports Gecam and Eurofintec machines in Canada from Mississauga, Ontario — groups and abrasives "
+ABOUT_NT = ("NovoTech sells, installs and supports Gecam and Eurofintec machines in Canada from Mississauga, Ontario, Canada — groups and abrasives "
             "chosen for your parts, installation, operator training, a CSA-approved panel, a 1-year warranty and parts and technical support "
             "in Canada.")
 BROCHURE = dict(

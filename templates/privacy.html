@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "partials/site.html" import crumbs with context %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    {{ crumbs(page) }}
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    <p class="hero-updated">Effective <time datetime="{{ page.effective }}">{{ page.effective_label }}</time></p>
+  </div>
+</section>
+
+<section class="wrap policy" aria-label="Privacy policy">
+  {% for s in page.sections %}
+  <div class="policy-section">
+    <h2>{{ s.title }}</h2>
+    {% for t in s.text %}<p>{{ t }}</p>{% endfor %}
+    {% if s.links %}<p>{% for l in s.links %}<a href="{{ l.href }}" rel="noopener">{{ l.label }}</a>{{ ' · ' if not loop.last else '' }}{% endfor %}</p>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}

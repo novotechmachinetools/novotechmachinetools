@@ -64,7 +64,7 @@ PAGE_SAWS = dict(
           "up to 9-3/16 × 12-3/8″; the SÇ 450 for roller-shutter boxes and lamella packs; the SÇ 400S and SÇ 4000S double-head "
           "saws, which cut both ends of a frame profile at once, up to 171-5/8″ long; the SÇ 301 and SÇ 301S glazing bead saws; "
           "and the SÇ 431, SÇ 441 and SÇ 451 miter saws. Supplied with a CSA-approved panel, installed and supported from "
-          "Mississauga, ON.",
+          "Mississauga, ON, Canada.",
     points=["Upcut saws Ø17-11/16″ – Ø25-9/16″ (450 – 650 mm), automatic from the SÇ 402, profiles to 9-3/16 × 12-3/8″",
             "Double-head saws: 2 × Ø19-11/16″ or 2 × Ø23-5/8″, lengths 19-1/8″ – 171-5/8″, ±.020″ on the SÇ 4000S",
             "Glazing bead, shutter box and miter saws — the whole cutting side of a window shop"],
@@ -119,7 +119,7 @@ PAGE_WELD = dict(
           "the SÇ 100 Gold Plus, which welds all four corners of a frame up to 145-11/16 × 106-5/16″ at once, and the Gold Plus "
           "Full line that adds a robot and a CNC cleaner; the SÇ 601 corner cleaner with three knives; and the SÇ 6000 and SÇ "
           "6000S CNC corner cleaners. All three welders can make a 0.2 mm (.008″) seam. Supplied with a CSA-approved panel, "
-          "installed and supported from Mississauga, ON.",
+          "installed and supported from Mississauga, ON, Canada.",
     points=["SÇ 101 single-head, 25° – 180° · SÇ 100 double-head, profiles 13-3/8″ – 126″ long and to 6-5/16″ high",
             "SÇ 100 Gold Plus: four corners at once, frames to 145-11/16 × 106-5/16″ · Gold Plus Full welding and cleaning line",
             "SÇ 601 three-knife corner cleaner · SÇ 6000 and 6000S CNC cleaners, up to 500 frames a shift"],
@@ -163,7 +163,7 @@ PAGE_CNC = dict(
           "SÇ 211 and SÇ 211S end milling machines; the SÇ 5000 and SÇ 5000S 3-axis CNC drilling and milling machines with three "
           "spindles; and the SÇ 4550, a 9-axis machining and cutting centre that takes profiles up to 21′ 4″ (6,500 mm) from a "
           "magazine and delivers them machined, cut and labelled. Supplied with a CSA-approved panel, installed and supported "
-          "from Mississauga, ON.",
+          "from Mississauga, ON, Canada.",
     points=["SÇ 4550: 9 axes, 10 spindles, profiles 78-3/4″ – 255-7/8″, cut at 30° – 150°",
             "SÇ 5000 · 5000S: 3-axis CNC, 3 spindles at 18,000 rpm, travel 15-3/8 × 7-7/8 × 7-7/8″",
             "Copy routers SÇ 501 · 502S · 512 · 521S · 542 · end mills SÇ 211 · 211S, cutters to Ø6-5/16″"],
@@ -204,7 +204,7 @@ PAGE_ASSY = dict(
           "and double-head pneumatic screwing machines and a sash assembly machine that fits a double-opening sash's hardware in "
           "3.5 minutes; the SÇ 221 and SÇ 551 portable notching and copy milling machines; and the SÇ 1000 digital measuring "
           "conveyor with the SÇ 1001 – 1003 conveyors that carry profiles to and from every machine. Supplied with a "
-          "CSA-approved panel, installed and supported from Mississauga, ON.",
+          "CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["SÇ 902 hydraulic corner crimper: 4 + 4 knives, aluminum profiles to 5-1/8″ high",
             "Single and double-head screwing machines · sash assembly machine, double sash in 3.5 min",
             "SÇ 221 · SÇ 551 portable machines · SÇ 1000 measuring conveyor 9′ 10″, ±.020″"],
@@ -240,7 +240,7 @@ PAGE_LINES = dict(
           "group (four machines, 80 – 120 windows) and a complete PVC workshop laid out as a loop (seven machines, 200 – 220 "
           "windows). Each table lists the machines with their capacity, power, air and weight, and the totals for the group. "
           "Machines can be swapped or added to suit your profiles and output; we plan the layout, install the line and train your "
-          "team from Mississauga, ON.",
+          "team from Mississauga, ON, Canada.",
     points=["PVC single-head group: 6 machines, 40 – 60 windows a shift",
             "PVC double-head and aluminum double-head groups: 80 – 120 windows a shift",
             "Complete PVC workshop with compressor: 7 machines, 200 – 220 windows a shift"],
@@ -275,7 +275,7 @@ HUB_PAGE = dict(
           "end milling machines; a hydraulic corner crimper, screwing and sash assembly machines, portable machines and "
           "conveyors; and complete production groups for 40 to 220 windows a shift. The saws have their own page — upcut, "
           "double-head, bead and miter saws. Every machine is supplied with a CSA-approved panel, installed and supported from "
-          "Mississauga, ON. Below, each page in brief and every model in one table.",
+          "Mississauga, ON, Canada. Below, each page in brief and every model in one table.",
     points=[f"<a href=\"{D.P_WELD}\">PVC welding & corner cleaning</a> — 1, 2 and 4-corner welders, knife and CNC corner cleaners",
             f"<a href=\"{D.P_CNC}\">CNC centres & copy routers</a> — 9-axis centre, 3-axis CNC, copy routers, end mills · "
             f"<a href=\"{D.P_ASSY}\">assembly machines & conveyors</a>",
@@ -299,7 +299,7 @@ HUB_PAGE = dict(
                "and train your operators."},
          {"q": "Do you install the machines and train operators?",
           "a": "Yes. Our technicians install and commission every machine anywhere in Canada, set it up for your profiles and train "
-               "the operators; spare parts and tooling are supplied from Mississauga, ON, and we support every machine by video "
+               "the operators; spare parts and tooling are supplied from Mississauga, ON, Canada, and we support every machine by video "
                "call."},
          VOLT_FAQ_GENERIC],
     range_lead="Capacity, profiles, power, air and weight for every model on the four pages. Each row links to the full specification table of its machine.",

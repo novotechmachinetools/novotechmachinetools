@@ -27,10 +27,10 @@ PDF_SHEET = "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf"
 PDF_TUBE = "files/NovoTech-Tube-Lasers-Value-Line-2026.pdf"
 
 BRAND_LINE = ("NovoTech's own value line: built in China to high North American quality standards, with Raycus, MAX or IPG sources, "
-              "Cypcut controls, Hiwin guides and Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON "
+              "Cypcut controls, Hiwin guides and Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada "
               "parts and support as every machine we sell.")
 ORIGIN = {"title": "Built in China to North American standards", "text": "NovoTech's own brand — Raycus or IPG sources, Raytools, BOCI or Precitec "
-          "heads and Cypcut controls, inspected before shipping, with the same CSA panel, warranty and Mississauga, ON support as every machine we sell."}
+          "heads and Cypcut controls, inspected before shipping, with the same CSA panel, warranty and Mississauga, ON, Canada support as every machine we sell."}
 NO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
 
 
@@ -51,7 +51,7 @@ PAGE_SHEET = dict(
           "an exchange table that swaps in 15 seconds, from 10 × 5 to 41 × 8.5 ft and 3 to 40 kW; the ULG ground-rail plate lasers, whose "
           "gantry runs on floor rails over a table 42.7 or 85.3 ft long and up to 14.8 ft wide, with 12 to 60 kW; and the ULFT and ULET, "
           "which cut sheet and tube to Ø13.8″ on one machine, open or enclosed. For the Turkish-built premium lasers see the Dener page; for 4 × 4 ft "
-          "compact machines, 80 kW and coil-fed lines see Senfeng. Every machine is installed and supported from Mississauga, ON, with a "
+          "compact machines, 80 kW and coil-fed lines see Senfeng. Every machine is installed and supported from Mississauga, ON, Canada, with a "
           "CSA-approved panel and a 1-year warranty.",
     points=["ULF open-type: G build 1.5 – 6 kW, E build to 12 kW and 1.7 G on 10 × 5 to 20 × 7.2 ft; large-format plate tables to 85 × 10.5 ft and 60 kW",
             "ULE enclosed with exchange table, 15 s swap: 10 × 5 to 41 × 8.5 ft, 3 – 40 kW, Z travel to 16.5″, ready for a storage tower",
@@ -72,7 +72,7 @@ PAGE_SHEET = dict(
          {"q": "What does the laser need on site?",
           "a": "Three-phase power (600 V with the CSA panel, or 208 / 240 / 480 V on request), compressed air at 185 psi (13 bar) and 53 cfm (1.5 m³/min) for air cutting, oxygen and nitrogen of 99.96 % purity, a dust collector, and a shop between 41 and 86 °F (5 – 30 °C) with humidity under 70 % — the water chiller is included. We lay the machine out for your building and size the compressor and dust collector with the quote."},
          {"q": "How does the NovoTech value line compare with Dener and Senfeng?",
-          "a": "Dener is the premium line: built in Turkey with Precitec heads, IPG or nLIGHT sources and Dener Canada parts in Mississauga, for the shop that cuts two shifts a day for twenty years. Senfeng is a value line sold under its own brand, with the widest range — 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. The NovoTech lasers are our own brand, built in China to our specification with Raycus or IPG sources, Cypcut controls and Hiwin, YYC and Schneider components, at the lowest price of the three; all are installed, warranted and serviced by the same NovoTech technicians. We quote all three so you can compare."},
+          "a": "Dener is the premium line: built in Turkey with Precitec heads, IPG or nLIGHT sources and Dener Canada parts in Mississauga, ON, Canada, for the shop that cuts two shifts a day for twenty years. Senfeng is a value line sold under its own brand, with the widest range — 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. The NovoTech lasers are our own brand, built in China to our specification with Raycus or IPG sources, Cypcut controls and Hiwin, YYC and Schneider components, at the lowest price of the three; all are installed, warranted and serviced by the same NovoTech technicians. We quote all three so you can compare."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about the NovoTech fiber lasers",
     related_pages=[{"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"}, {"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes · value line"},
@@ -92,7 +92,7 @@ PAGE_TUBE = dict(
           "and four chuck sizes for round tube from Ø0.4 to 14.2″ and square to 13.8″, on 20, 29.5 or 39 ft bars of up to 2,205 lb. The "
           "three-chuck version cuts the last part without a remnant; pneumatic loaders, bundle feeding to 5 tonnes, a ±45° five-axis bevel "
           "head and TubesT nesting are options. For sheet and tube on one machine see the ULFT and ULET on the NovoTech fiber laser page; "
-          "for the premium Turkish tube lasers see Dener. Installed and supported from Mississauga, ON, with a CSA-approved panel and a "
+          "for the premium Turkish tube lasers see Dener. Installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a "
           "1-year warranty.",
     points=["Four chuck sizes: Ø6.3, 9.4, 11 and 14.2″ round, square to 13.8″; 20, 29.5 or 39 ft bars to 2,205 lb",
             "1.5 – 40 kW; 328 ft/min and 1.2 G on the small chucks; ±0.04 mm/m positioning; double-acting pneumatic chucks",
@@ -119,10 +119,10 @@ PAGE_TUBE = dict(
     related_title="More tube machinery from NovoTech",
 )
 
-ABOUT_NT = ("NovoTech Machine Tools sells, installs and supports sheet-metal and fabrication machinery across Canada from Mississauga, "
+ABOUT_NT = ("NovoTech Machine Tools sells, installs and supports sheet-metal and fabrication machinery across Canada from Mississauga, ON, Canada, "
             "Ontario. The value line is our own brand: machines built in China to our specification with established components — Raycus, "
             "MAX or IPG sources, Raytools, BOCI or Precitec heads, Cypcut controls, Hiwin guides, YYC racks and Schneider electrics — inspected "
-            "before they ship, with a CSA-approved panel, a 1-year warranty, operator training and parts and service from Mississauga.")
+            "before they ship, with a CSA-approved panel, a 1-year warranty, operator training and parts and service from Mississauga, ON, Canada.")
 
 BROCHURES = {
     "novotech-fiber-lasers": dict(

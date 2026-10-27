@@ -70,7 +70,7 @@ PHOTOS = {
     "sh-bt114s": dict(src=C + "BT-114-S.png", alt="BT 114-S automatic pipe polishing and sanding machine with the mobile control pendant"),
     "sh-bt114s-rail": dict(src=C + "bt114-s-pipes.png", cutout=False, alt="Stainless handrail tube polished on the BT 114-S"),
     "sh-bt114s-tube": dict(src=C + "BT-114-uygulama.png", cutout=False, alt="BT 114-S — satin-finished stainless tube"),
-    # NovoTech's own showroom photos of the BT 114-S (Mississauga, Oct 2026) — the supplier's badges and nameplate inpainted
+    # NovoTech's own showroom photos of the BT 114-S (Mississauga, ON, Canada, Oct 2026) — the supplier's badges and nameplate inpainted
     "sh-bt114s-photo": dict(src=B + "render.png", boxes=[(112, 272, 203, 314, A)], up=True, cutout=True,
                             alt="BT 114-S pipe polishing machine with the belt head, feed unit and the mobile control pendant"),
     "sh-bt114s-showroom": dict(src=B + "showroom.jpg", cutout=True,

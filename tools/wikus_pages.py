@@ -196,7 +196,7 @@ PAGE = dict(
     intro="A band saw blade is the one consumable that decides what a band saw machine can do: the right cutting material, tooth form and "
           "tooth pitch cut faster, straighter and longer than the wrong one on any saw. NovoTech supplies the two WIKUS blades that Canadian "
           "shops run most — made in Germany by the world's largest band saw blade maker and welded to the length of your machine in "
-          "Mississauga, ON. The MARATHON® M42 bimetal blade is the everyday blade for profiles, tube, bundles and solid bar on any horizontal or "
+          "Mississauga, ON, Canada. The MARATHON® M42 bimetal blade is the everyday blade for profiles, tube, bundles and solid bar on any horizontal or "
           "vertical band saw; the FUTURA® carbide-tipped blade is the production blade for solid steel, stainless and aluminum on the Bekamak "
           "saws and any machine with a carbide package. Both come in every width from 1/2″ to 3-1/8″ and in every tooth pitch; the rest of the "
           "WIKUS program — coated PREMIUM blades, X3000® blades for difficult alloys, the NE blades for aluminum and copper, CBN-coated blades "
@@ -217,7 +217,7 @@ PAGE = dict(
          {"q": "Do you supply other WIKUS blades?",
           "a": "Yes — the complete WIKUS metal-cutting program is available to order: the economical PRIMAR and the high-performance SKALAR and SELEKTA GS bimetal blades, the coated PREMIUM versions, the X3000® blades for stainless, nickel and titanium alloys, the DUROSET and TAURUS carbide blades, the FUTURA VA, 718, NE and SN specialists for stainless, superalloys, aluminum and hardened parts, and the CUBOGRIT® CBN blades for hardened steel above 55 HRC. Tell us the material and the saw and we propose the blade; data sheets on request."},
          {"q": "Do you stock blades and weld them in Canada?",
-          "a": "Yes — the common widths of the MARATHON M42 are stocked as coil in Mississauga and welded and annealed to your length; the FUTURA and the rest of the program are welded to order. Tell us the saw, the materials you cut and the sizes, and we propose the blade and the pitch — and we are happy to run a test blade on a difficult job."}],
+          "a": "Yes — the common widths of the MARATHON M42 are stocked as coil in Mississauga, ON, Canada and welded and annealed to your length; the FUTURA and the rest of the program are welded to order. Tell us the saw, the materials you cut and the sizes, and we propose the blade and the pitch — and we are happy to run a test blade on a difficult job."}],
     faq_title="Questions we get asked about band saw blades",
     related_pages=[{"href": "band-saw.html", "label": "Metal cutting band saws"}, {"href": "double-column-band-saws.html", "label": "Bekamak double-column band saws"},
                    {"href": "automatic-band-saws.html", "label": "Bekamak automatic band saws"}, {"href": "circular-cold-saws.html", "label": "Circular cold saws"}],

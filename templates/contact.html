@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import email_link, social_links with context %}
+{% from "partials/site.html" import crumbs, photo with context %}
+
+{% block content %}
+{% set addr = site.address.street ~ ", " ~ site.address.city ~ ", " ~ site.address.region ~ " " ~ site.address.postal ~ ", " ~ site.address.country %}
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    {{ crumbs(page) }}
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#reques-a-quote">Send your drawings</a>
+      <a class="btn btn-ghost" href="tel:{{ site.phone_tel }}">Call {{ site.phone }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap contact-grid" aria-label="How to reach us">
+  <ul class="contact-cards">
+    <li class="contact-card">
+      <h2 class="contact-label">Call</h2>
+      <p class="contact-big"><a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a></p>
+      <p>{{ site.hours }} Eastern time. Outside those hours, leave a message or send the form and we will call you back.</p>
+    </li>
+    <li class="contact-card">
+      <h2 class="contact-label">Email</h2>
+      <p class="contact-big">{{ email_link() }}</p>
+      <p>Send drawings, photos and questions — we reply within one business day.</p>
+    </li>
+    <li class="contact-card">
+      <h2 class="contact-label">WhatsApp</h2>
+      <p class="contact-big"><a href="{{ page.whatsapp }}" rel="noopener">Message us on WhatsApp</a></p>
+      <p>Photos and short videos of your parts or your old machine are welcome.</p>
+    </li>
+    <li class="contact-card">
+      <h2 class="contact-label">Visit</h2>
+      <p class="contact-big contact-addr">{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}<br>{{ site.address.country }}</p>
+      <p><a class="arrow" href="https://www.google.com/maps/search/?api=1&amp;query={{ page.map_query | urlencode }}" rel="noopener">Directions in Google Maps</a></p>
+    </li>
+  </ul>
+  <div class="contact-map">
+    <iframe title="Map: NovoTech Machine Tools, {{ addr }}" src="https://maps.google.com/maps?q={{ page.map_query | urlencode }}&amp;z=14&amp;output=embed" width="600" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<section class="wrap contact-visit" aria-labelledby="visit-title">
+  <div class="visit-copy">
+    <h2 id="visit-title">Visiting the showroom</h2>
+    <ul class="hero-points">
+      {% for v in page.visit %}<li>{{ v }}</li>{% endfor %}
+    </ul>
+    <p class="footer-title footer-follow">Follow NovoTech</p>
+    {{ social_links("social social-dark") }}
+  </div>
+  <div class="visit-photo">{{ photo(img("nt-showroom-building"), "(max-width: 900px) 92vw, 640px") }}</div>
+</section>
+
+{% include "partials/quote.html" %}
+{% endblock %}

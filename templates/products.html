@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% from "partials/site.html" import crumbs, cat_card, why_section with context %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    {{ crumbs(page) }}
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    <nav class="chip-nav" aria-label="Machine groups">
+      <ul>
+        {% for g in page.catalog_groups %}<li><a href="#{{ g.id }}">{{ g.title }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>
+
+{% for g in page.catalog_groups %}
+<section class="wrap cat-group" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
+  <div class="group-head">
+    <h2 id="{{ g.id }}-title">{{ g.title }}</h2>
+    <p class="group-lead">{{ g.lead }}</p>
+  </div>
+  <ul class="cat-grid">
+    {% for c in g.cards %}{{ cat_card(c) }}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+<section class="wrap products-help" aria-labelledby="help-title">
+  <div class="help-box">
+    <div>
+      <h2 id="help-title">Not sure which machine you need?</h2>
+      <p>Describe the parts you make — material, thickness, length, quantities — or send a drawing, and we will recommend the machine and the options that fit. You can also ask the <button type="button" class="link-button ai-open" aria-controls="ai-panel">AI machine finder</button>, or browse the <a href="brochures.html">PDF brochures</a>.</p>
+    </div>
+    <a class="btn btn-primary" href="#reques-a-quote">Ask for a recommendation</a>
+  </div>
+</section>
+
+{{ why_section() }}
+
+{% include "partials/quote.html" %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% from "partials/site.html" import crumbs, pdf_card with context %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    {{ crumbs(page) }}
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    <nav class="chip-nav" aria-label="Brochure groups">
+      <ul>
+        {% for g in page.brochure_groups %}<li><a href="#{{ g.id }}">{{ g.title }} <small>{{ g.cards|length }}</small></a></li>{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>
+
+{% for g in page.brochure_groups %}
+<section class="wrap pdf-group" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
+  <div class="group-head"><h2 id="{{ g.id }}-title">{{ g.title }}</h2></div>
+  <ul class="pdf-grid">
+    {% for e in g.cards %}{{ pdf_card(e) }}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+{% include "partials/quote.html" %}
+{% endblock %}

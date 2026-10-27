@@ -64,7 +64,7 @@ PAGE_BEND = dict(
           "mandrel — from Ø15/32″ to Ø6″ with one to three stacked tools and roll-bending heads; the TSR / TDR hydraulic CNC pipe benders to "
           "Ø8-5/8″; the TSRJ / TDRJ, TNCPB and TNCB NC hydraulic benders; and the two-head F38 / F50 symmetric benders. Rear boosters, "
           "loaders, punching units, saws, end formers and robot cells turn any of them into an automated bending cell. Sold, installed and "
-          "supported in Canada by NovoTech from Mississauga, ON, with a CSA-approved panel.",
+          "supported in Canada by NovoTech from Mississauga, ON, Canada, with a CSA-approved panel.",
     points=["All-electric EMB / EMR (left- and right-hand) Ø19/32″ – Ø3″ and MRE2-RBE to Ø4″ — no hydraulics, ±0.01° bend arm",
             "Electric hybrid MBE / MRE, TBRE / TMRE, TSRE / TDRE: Ø15/32″ – Ø6″, 1 – 3 stacked tools, roll bending, servo rear boosters",
             "Hydraulic CNC TSR / TDR to Ø8-5/8″ pipe; NC TSRJ / TDRJ, TNCPB and TNCB; F38 / F50 two-head symmetric benders"],
@@ -121,7 +121,7 @@ PAGE_WIRE = dict(
           "Tainan, Taiwan, by the tube-bender maker CSM: 3D benders for Ø5/32″ to Ø3/8″ and Ø1/4″ to Ø9/16″ wire, bending at up to 1,000°/s "
           "with ±0.01° repeatability, an IPC control with a 15″ touch-screen that simulates the part in 3D before the first bend, and a "
           "concentric tool design and customised work-head that keep complex shapes free of interference. With a CSM EF end former they make "
-          "a complete exhaust-hanger line. Installed, trained and supported from Mississauga, ON, with a CSA-approved panel.",
+          "a complete exhaust-hanger line. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel.",
     points=["WB 10-A: Ø5/32″ – 3/8″ wire at 1,000°/s · WB 14-A: Ø1/4″ – 9/16″ wire at 600°/s — ±0.01° bending repeatability",
             "From the coil: AC-driven decoiler, hydraulic straightener, servo feed at 164 ft/min (±0.004″), hydraulic cutter",
             "3D: servo work-head rotation at 440°/s, servo tool shift, concentric tools; IPC control with 15″ touch-screen and 3D simulation"],
@@ -148,7 +148,7 @@ PAGE_WIRE = dict(
 ABOUT_CSM = ("Chiao Sheng Machinery (CSM) has built tube benders in Tainan, Taiwan, since 1982 and released its first CNC bender in 1989; the "
              "company works from two plants in the Southern Taiwan Science Park, holds 24 international design patents, has been ISO 9001 "
              "certified since 2002 and CE-certifies every machine. NovoTech sells, installs and supports CSM machines in Canada from "
-             "Mississauga, Ontario — layout for your building, installation, operator training, a CSA-approved panel, a 1-year warranty and "
+             "Mississauga, Ontario, Canada — layout for your building, installation, operator training, a CSA-approved panel, a 1-year warranty and "
              "parts and technical support in Canada.")
 BROCHURES = {
     "csm-electric": dict(

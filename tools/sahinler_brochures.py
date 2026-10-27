@@ -16,7 +16,7 @@ MADE_IN = "Made in Turkey to NovoTech's specification — CE-certified, European
 ABOUT_LINE = ("The machines in this catalogue are NovoTech's premium line: built in Turkey to NovoTech's specification by a CE-certified "
               "metal-forming plant with more than 40 years of machine building and exports to over 100 countries, with European hydraulic "
               "and electrical components, inspected before shipping, and sold under NovoTech's name with a CSA-approved panel, a 1-year "
-              "warranty and spare parts and technical support from NovoTech in Mississauga, Ontario.")
+              "warranty and spare parts and technical support from NovoTech in Mississauga, Ontario, Canada.")
 
 # brochure name → (pdf file, button label, families by set, spec)
 BROCHURES = {
@@ -97,7 +97,7 @@ BROCHURES = {
                     "The HNM hydraulic corner notchers cut the 90° and variable-angle notches that let a sheet fold into a box; the SDK 6 and SDK 8 cut and flange "
                     "circular blanks and tank heads to Ø15 ft in 5/16″ plate and the EFM 6 does the same for elliptical heads; the BT 114-S polishes and sands "
                     "round and square tube to a satin finish with a mobile pendant; and the SPB 60 and SPB 76 NC draw benders bend handrail and furniture tube "
-                    "around a die with a programmed sequence of bends. All with a CSA-approved panel, installed and supported from Mississauga."],
+                    "around a die with a programmed sequence of bends. All with a CSA-approved panel, installed and supported from Mississauga, ON, Canada."],
         family_sets=["sahinler", "circle-cutting", "tube-benders"],
         families=["sahinler-hnm-fixed", "sahinler-hnm-variable", "sahinler-sdk", "sahinler-efm", "sahinler-bt-114-s", "sahinler-spb"],
         groups=[{"title": "Hydraulic corner notchers", "families": ["sahinler-hnm-fixed", "sahinler-hnm-variable"]},

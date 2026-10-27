@@ -201,7 +201,7 @@
 
 {# ---------- e-mail address that harvesters cannot read: the "@" is drawn by CSS and the mailto: link is built by JS ---------- #}
 {% macro email_link(cls="") -%}
-<a class="em{{ ' ' ~ cls if cls else '' }}" href="#reques-a-quote" data-u="{{ site.email_user }}" data-d="{{ site.email_domain }}"><span>{{ site.email_user }}</span><span class="em-at"></span><span>{{ site.email_domain }}</span></a>
+<a class="em{{ ' ' ~ cls if cls else '' }}" href="{{ 'contact-us.html#reques-a-quote' if page and page.no_quote else '#reques-a-quote' }}" data-u="{{ site.email_user }}" data-d="{{ site.email_domain }}"><span>{{ site.email_user }}</span><span class="em-at"></span><span>{{ site.email_domain }}</span></a>
 {%- endmacro %}
 
 {# ---------- social profile links (icons: Font Awesome Free 7, CC BY 4.0 — https://fontawesome.com/license/free) ---------- #}

@@ -39,7 +39,7 @@ PAGE = dict(
           "Welded steel frame, cutting beam in teflon slideways, high-carbon high-chrome blades with two and four cutting edges, "
           "front blade-gap adjustment, NC back gauge, shadow-line light and photocell guards. For plate from 1/4″ to 1-9/16″ see the Dener "
           "and NovoTech value-line hydraulic shears, for lighter sheet the value-line sheet metal shears — every line in one table on the "
-          "shears overview. All supplied with a CSA-approved panel, installed and supported from Mississauga, ON.",
+          "shears overview. All supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["SRGM-H light type, 1/8″ × 3.6 – 10 ft, 35 strokes/min · SRGM standard, 1/4″ × 3.6 – 13.8 ft, 31 strokes/min",
             "SRGM-HFR / SRGM-FR with return-to-sender: the cut blank comes back to the front, off-cuts drop to the rear",
             "SRGM-HCL / SRGM-CL built into cut-to-length coil lines; Turkish-built with European motors, gearboxes and electrics"],
@@ -60,7 +60,7 @@ PAGE = dict(
          {"q": "What does return-to-sender do?",
           "a": "On the FR and HFR series a sheet support behind the blade tilts after the cut and carries the cut piece back under the blade to the front of the machine, while off-cuts fall to the rear. One operator cuts blanks and strips without walking round the machine or needing a helper at the back — the biggest time saver on a shear that cuts small parts all day. The standard version is manual; the pneumatic version adds return-to-rear for scrap."},
          {"q": "How long do the blades last, and can they be turned?",
-          "a": "The blades are high-carbon, high-chrome tool steel: the top blade has two cutting edges and the bottom blade four, so each is turned to a fresh edge before it needs regrinding. The blade gap is set from the front of the machine to the sheet thickness, which keeps the edges sharp and the cut burr-free. Replacement blades are stocked in Mississauga."},
+          "a": "The blades are high-carbon, high-chrome tool steel: the top blade has two cutting edges and the bottom blade four, so each is turned to a fresh edge before it needs regrinding. The blade gap is set from the front of the machine to the sheet thickness, which keeps the edges sharp and the cut burr-free. Replacement blades are stocked in Mississauga, ON, Canada."},
          {"q": "Can it cut at an angle?",
           "a": "Yes — the optional 0 – 180° angular cutting device on the table positions the sheet for mitre and trapezoid cuts against the squaring arm; the standard squaring arm has a T-slot, a stopper and a ruler for square cuts."},
          VOLT_FAQ_GENERIC],

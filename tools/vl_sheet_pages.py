@@ -30,15 +30,15 @@ PDF_PANEL = "files/NovoTech-Panel-Benders-Value-Line-2026.pdf"
 PDF_IRON = "files/NovoTech-Ironworkers-Value-Line-2026.pdf"
 
 BRAND_LINE = ("NovoTech's own value line: manufactured in China to high North American quality standards, with Delem, Estun, Hawe, Rexroth and "
-              "Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell.")
+              "Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada parts and support as every machine we sell.")
 ORIGIN = {"title": "Built in China to North American standards", "text": "NovoTech's own brand — European controls and hydraulics, inspected before shipping, "
-          "same CSA panel, warranty and Mississauga, ON support as every machine we sell."}
+          "same CSA panel, warranty and Mississauga, ON, Canada support as every machine we sell."}
 WADE_VIDEO = {"intro_video": {"id": "-rFs4TdGvds", "title": "10 ft × 110 ton CNC press brake with Delem DA-53T control", "thumb": "video--rFs4TdGvds", "duration": "PT2M23S"},
               "intro_video_heading": "In our showroom — the 10 ft × 110 ton CNC press brake",
-              "intro_video_text": "A walk around the value-line CNC press brake in Mississauga: Delem DA-53T control, servo back gauge, quick clamps and the hydraulic system."}
+              "intro_video_text": "A walk around the value-line CNC press brake in Mississauga, ON, Canada: Delem DA-53T control, servo back gauge, quick clamps and the hydraulic system."}
 SHEAR_VIDEO = {"intro_video": {"id": "WKmfgruGOWI", "title": "10 ft × 1/4″ swing beam shear with Estun E200P control", "thumb": "video-WKmfgruGOWI", "duration": "PT45S"},
                "intro_video_heading": "In our showroom — the 10 ft × 1/4″ swing beam shear",
-               "intro_video_text": "The value-line swing beam shear cutting 1/4″ plate in Mississauga, with the Estun control and the motorised back gauge."}
+               "intro_video_text": "The value-line swing beam shear cutting 1/4″ plate in Mississauga, ON, Canada, with the Estun control and the motorised back gauge."}
 NO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
 # WADE_VIDEO / SHEAR_VIDEO are not used: both clips were filmed at the supplier's factory with its badges in view (Oct 2026).
 
@@ -59,7 +59,7 @@ PAGE_PB = dict(
           "tandem machines to 1,323 tons and 26 ft; the NC torsion-bar brakes from 33 to 441 tons for shops that bend the same parts every day; and "
           "the electric servo press brakes — no hydraulic oil, ball-screw drive, ±0.01 mm — from 11 to 176 US tons, plus 3 to 12 ton bench "
           "machines. For the Turkish-built premium machines see the Dener CNC press brakes; for the compact 4 – 7 ft shop brakes see the ISITAN "
-          "page. Every machine is installed and supported from Mississauga, ON, with a CSA-approved panel and a 1-year warranty.",
+          "page. Every machine is installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a 1-year warranty.",
     points=["Hydraulic CNC: Delem DA-53T, Hawe servo valves, servo back gauge, 4+1 axes — 55 – 331 US tons × 4 – 20 ft; heavy-duty to 1,323 tons",
             "Electric: servo motors, belts and ball screws, ±0.01 mm, 70 % less energy — 11 – 176 US tons × 20″ – 10.5 ft, 3 – 12 t bench",
             "NC torsion-bar brakes with Estun E21 control — 33 – 441 tons × 5 – 20 ft; robot bending cells on hydraulic and electric"],
@@ -72,7 +72,7 @@ PAGE_PB = dict(
          {"q": "CNC or NC press brake — what is the difference?",
           "a": "An NC press brake positions the back gauge and the ram depth from a stored program, but the two cylinders are kept in step by a torsion bar and the depth is set by mechanical stops: accurate enough for brackets, boxes, channels and roofing in one material. A CNC press brake measures the ram on linear scales and corrects it through servo valves, calculates the bend from the drawing, crowns the bed automatically and changes material and thickness in the program — the machine for mixed work, tight angles and multi-bend parts."},
          {"q": "How does the value line differ from the Dener press brakes?",
-          "a": "The architecture is the same — monoblock frame, Hawe servo valves, linear scales, servo back gauge, Delem control, European tooling — and both are installed and supported by the same NovoTech technicians in Mississauga. The Dener XL is built in Turkey on a heavier frame with a longer options list (ESA controls, 6-axis ATF gauge, hybrid drive, 20 ft and 661 tons in the catalogue) and carries the Dener name and Dener Canada parts; the value-line machine is built in China to our specification, sold under NovoTech's name and inspected before it ships, at about two-thirds of the price. Both come with the CSA panel and the same warranty."},
+          "a": "The architecture is the same — monoblock frame, Hawe servo valves, linear scales, servo back gauge, Delem control, European tooling — and both are installed and supported by the same NovoTech technicians in Mississauga, ON, Canada. The Dener XL is built in Turkey on a heavier frame with a longer options list (ESA controls, 6-axis ATF gauge, hybrid drive, 20 ft and 661 tons in the catalogue) and carries the Dener name and Dener Canada parts; the value-line machine is built in China to our specification, sold under NovoTech's name and inspected before it ships, at about two-thirds of the price. Both come with the CSA panel and the same warranty."},
          {"q": "How much tonnage do I need?",
           "a": "Air bending mild steel with the standard V = 8 × thickness die takes roughly 8 US tons per foot for 16 ga, 15 tons per foot for 1/8″, 30 for 3/16″, 55 for 1/4″ and 130 tons per foot for 1/2″; stainless needs about 50 % more, aluminum about half. A 10 ft × 1/4″ job is therefore a 110 – 135 ton machine, 10 ft × 3/8″ a 220 – 250 ton machine and 13 ft × 1/2″ a 400 ton machine. Tell us the thickest and longest bend you make and we size the brake and the tooling."},
          {"q": "How does the electric ball-screw drive work?",
@@ -86,7 +86,7 @@ PAGE_PB = dict(
          {"q": "Can the press brake be automated?",
           "a": "Yes — the 40 and 50 ton electric machines and the 110 – 220 ton hydraulic brakes are sold as complete robot bending cells with an Estun robot, gripper, loading table and unloading stack, and every CNC model has the robot interface; CNC sheet followers support large blanks through the bend on the hydraulic machines."},
          {"q": "Do you deliver, install and service in Canada?",
-          "a": "Yes. Machines are inspected before they leave the factory, shipped to Mississauga, unloaded, levelled, commissioned and the operators trained by NovoTech; parts for the Delem, Hawe, Rexroth, Estun and Schneider components are standard items and the machine-specific parts are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
+          "a": "Yes. Machines are inspected before they leave the factory, shipped to Mississauga, ON, Canada, unloaded, levelled, commissioned and the operators trained by NovoTech; parts for the Delem, Hawe, Rexroth, Estun and Schneider components are standard items and the machine-specific parts are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about the NovoTech press brakes",
     related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "hydraulic-shearing-machine.html", "label": "Hydraulic shears"},
@@ -103,7 +103,7 @@ PAGE_SHEAR = dict(
           "brand, built in China with Estun controls, Rexroth hydraulics and Siemens motors: the swing beam shears from 5/32″ to 3/4″ over 8 to "
           "20 ft — the rugged everyday plate shear — and the guillotine shears with a variable rake angle from 1/4″ to 1-9/16″ over 8 to 26 ft for "
           "production and thick plate. The Dener premium plate shears, the premium-line mechanical shears and the value-line sheet metal shears "
-          "have their own pages, and the shears overview puts every line in one table. Installed and supported from Mississauga, ON, with a "
+          "have their own pages, and the shears overview puts every line in one table. Installed and supported from Mississauga, ON, Canada, with a "
           "CSA-approved panel.",
     points=["Swing beam: 32 models, 5/32″ – 3/4″ × 8 – 20 ft, Estun E21S control, motorised back gauge",
             "Guillotine: 34 models, 1/4″ – 1-9/16″ × 8 – 26 ft, variable rake angle and blade gap from the control",
@@ -139,7 +139,7 @@ PAGE_VG = dict(
           "sheet is bent on a small press brake. NovoTech sells its own value-line CNC V-grooving machines in Canada: the horizontal machines lay "
           "the sheet flat on a 10.5 to 20 ft table, the vertical machines stand it against a fixed beam in half the floor space and groove plate "
           "to 1/4″. Four-tool servo heads on ball screws, ± 0.01 mm, Taiwan CNC and servos, hydraulic clamping that does not mark the sheet. "
-          "Installed and supported from Mississauga, ON, with a CSA-approved panel.",
+          "Installed and supported from Mississauga, ON, Canada, with a CSA-approved panel.",
     points=["Horizontal: 7 sizes, 10.5 – 20 ft × 49 – 59″, sheet 0.016″ – 5/32″, four-tool head at 295 ft/min",
             "Vertical: 4 sizes, 10.5 – 13 ft × 49 – 59″, plate to 1/4″, rear feeding, half the footprint",
             "± 0.01 mm positioning, 0.001 mm resolution; hydraulic blank holder; CNC with touchscreen"],

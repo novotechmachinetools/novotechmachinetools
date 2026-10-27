@@ -20,9 +20,9 @@ SET = "ttmc"
 BRAND = D.BRAND
 PDF_FILE = "files/NovoTech-Sheet-Metal-Shears-2026.pdf"
 BRAND_LINE = ("NovoTech's value-line sheet metal shears are built in China to NovoTech's specification and sold under NovoTech's name — "
-              "with a CSA-approved panel, a 1-year warranty and parts and service from Mississauga, ON.")
+              "with a CSA-approved panel, a 1-year warranty and parts and service from Mississauga, ON, Canada.")
 ORIGIN = {"title": "NovoTech value line — built in China", "text": "Built by a sheet-metal machinery maker that exports shears, press brakes and notchers worldwide; "
-          "inspected before shipping, wired for Canadian voltage with a CSA-approved panel, and supported by NovoTech's technicians in Mississauga, ON."}
+          "inspected before shipping, wired for Canadian voltage with a CSA-approved panel, and supported by NovoTech's technicians in Mississauga, ON, Canada."}
 NO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
 
 PAGE = dict(
@@ -35,7 +35,7 @@ PAGE = dict(
           "52″ and 16 ga over 98″, the THS and HQ11 hydraulic shears from 12 ga to 1/4″ over 51″ to 120″, the Q11 electric shears with a manual "
           "back gauge and counter or a PLC with motorised back gauge, 14 ga to 5/32″ over 49″ to 100″, and the Q11 flywheel mechanical shears "
           "for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Every machine ships with front and back gauges, a foot pedal "
-          "and two-edged blades, wired for Canadian voltage with a CSA-approved panel; installed, trained and supported from Mississauga, ON. "
+          "and two-edged blades, wired for Canadian voltage with a CSA-approved panel; installed, trained and supported from Mississauga, ON, Canada. "
           "For plate shears from 5/32″ to 1-9/16″ see the NovoTech hydraulic shears, for the premium direct-gear mechanical shears the "
           "NovoTech mechanical shears, and for every line in one table the shears overview.",
     points=["PS pneumatic shear 16 ga × 52″ on 85 – 100 psi shop air · HQ01 light hydraulic shears 14 ga × 52″ and 16 ga × 98″, 3 HP",

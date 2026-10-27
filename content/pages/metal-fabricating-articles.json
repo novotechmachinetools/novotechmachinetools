@@ -1,0 +1,57 @@
+{
+ "slug": "metal-fabricating-articles",
+ "template": "articles.html",
+ "title": "Metal Fabrication Articles & Buying Guides | NovoTech",
+ "meta_description": "Buying guides and articles from NovoTech's technicians: band saws, plate rollers, ironworkers, press brake tooling and rebar benders and cutters.",
+ "h1": "Articles and buying guides",
+ "intro": "What we explain to customers before they buy — how the machines work, how capacity is rated, which options matter and which do not — written by NovoTech's sales engineers and technicians from years of installing machines in Canada.",
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Articles"
+  }
+ ],
+ "articles": [
+  {
+   "href": "band-saw.html#buying-guide",
+   "title": "Band saw buying guide",
+   "image": "bk-hero-auto-350ga",
+   "topic": "Sawing",
+   "text": "Horizontal and vertical, pivot and double-column, manual to fully automatic: how to choose a metal-cutting band saw, and the blade, coolant and feed details that decide how well it cuts."
+  },
+  {
+   "href": "plate-rollers.html#buying-guide",
+   "title": "Plate roller buying guide",
+   "image": "is-4rhms-3100-250",
+   "topic": "Rolling",
+   "text": "3-roll and 4-roll machines, initial-pinch and double-pinch, how capacity is rated, cone bending, crowning, controls and automation."
+  },
+  {
+   "href": "ironworker-machines.html#buying-guide",
+   "title": "Ironworker buying guide",
+   "image": "sh-hkm115",
+   "topic": "Punching and shearing",
+   "text": "Punching and shearing tonnage, throat depth, stations and tooling: how to size an ironworker for the work in your shop, and why not all tons are equal."
+  },
+  {
+   "href": "press-brake-tooling-punch-and-die.html#tooling-guide",
+   "title": "Press brake tooling guide",
+   "image": "es-p-range",
+   "topic": "Bending",
+   "text": "Clamping styles, punch and die shapes, V-opening and tonnage, sectioned tools and horns: how to choose press brake punches and dies that fit your machine and your parts."
+  },
+  {
+   "href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
+   "title": "The benefits of using a rebar bender and cutter in construction",
+   "image": "b-45x1",
+   "topic": "Rebar",
+   "text": "Why contractors and rebar shops bend and cut on site and in the yard with machines instead of by hand: speed, accuracy, safety and cost."
+  }
+ ],
+ "quote": {
+  "intro": "Have a question the guides do not answer? Tell us about your parts and we will recommend the machine."
+ }
+}

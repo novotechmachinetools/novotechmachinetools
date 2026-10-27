@@ -60,7 +60,7 @@ PAGE_HP = dict(
           "and the 132- and 165-ton HP 120 and HP 150 with a T-slot table and hardened support columns for straightening heavy "
           "sections. Every HP has a touch-screen control stand with manual, automatic and recipe modes and a foot pedal; a servo NC "
           "back gauge, a library of bending, punching, shearing, pipe and busbar tools and dies made for your part are available. "
-          "Installed, trained and supported from Mississauga, ON.",
+          "Installed, trained and supported from Mississauga, ON, Canada.",
     points=["HP 10 – HP 100: 11 – 110 US tons · flat bar from 5-7/8″ × 1/4″ to 11-13/16″ × 15/16″",
             "HP 120 · HP 150: 132 – 165 US tons · 19.7″ stroke · T-slot table and hardened support columns",
             "Touch-screen NC with manual, automatic and recipe modes · servo NC back gauge · bending, punching, pipe and busbar tools"],
@@ -119,7 +119,7 @@ PAGE_WP = dict(
           "built in Bursa, Turkey: the WP 100 carries 220 lb on a Ø13-3/4″ table that tilts 120°, the WP 300 661 lb on a Ø18-7/8″ table "
           "that tilts 90°. Both turn 360° at 1 to 5.5 rpm, set on the control box and run from the standard foot pedal, with T-slots for "
           "clamps and fixtures, an optional 3-jaw lathe chuck and, on the WP 300, a custom fixture plate. They run on single-phase "
-          "220 V. Supplied and supported from Mississauga, ON.",
+          "220 V. Supplied and supported from Mississauga, ON, Canada.",
     points=["WP 100: 220 lb on a Ø13-3/4″ table, 120° tilt · WP 300: 661 lb on a Ø18-7/8″ table, 90° tilt",
             "360° rotation at 1 – 5.5 rpm, variable · foot pedal standard · single-phase 220 V",
             "T-slotted turntable · optional Ø6-1/4″ or Ø7-7/8″ 3-jaw chuck · custom fixture plate (WP 300)"],
@@ -159,7 +159,7 @@ TB_GROUP = ("tubend-tb", "Tubend mandrel-less pipe benders",
             "barrier, furniture and repair work.", BRAND)
 
 # ------------------------------------------------------------------------------------------------ brochure
-ABOUT_TUBEND = ("NovoTech sells, installs and supports Tubend machines in Canada from Mississauga, Ontario — tooling chosen for your parts, "
+ABOUT_TUBEND = ("NovoTech sells, installs and supports Tubend machines in Canada from Mississauga, Ontario, Canada — tooling chosen for your parts, "
                 "installation, operator training, a CSA-approved panel on three-phase machines, a 1-year warranty and parts and technical "
                 "support in Canada.")
 BROCHURE = dict(

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% from "partials/site.html" import crumbs, photo with context %}
+
+{% block content %}
+{% set hero = img(page.hero_image) %}
+<section class="page-hero">
+  <div class="wrap page-hero-inner article-head">
+    {{ crumbs(page) }}
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    <p class="hero-updated">{{ page.byline }} · updated <time datetime="{{ page.date_modified }}">{{ page.updated_label }}</time></p>
+  </div>
+</section>
+
+<section class="guide wrap article-page" aria-label="Article">
+  <figure class="guide-figure article-lead-figure">{{ photo(hero, "(max-width: 900px) 92vw, 860px", eager=True) }}</figure>
+  <nav class="guide-toc" aria-label="Contents">
+    <ol>{% for t in page.article_toc %}<li><a href="#{{ t.id }}">{{ t.label }}</a></li>{% endfor %}</ol>
+  </nav>
+  {{ page.article_html | safe }}
+  {% if page.related %}
+  <div class="article-related">
+    <h3>Machines in this article</h3>
+    <ul class="related-list">{% for r in page.related %}<li><a class="arrow" href="{{ r.href }}">{{ r.label }}</a></li>{% endfor %}</ul>
+  </div>
+  {% endif %}
+</section>
+
+{% include "partials/quote.html" %}
+{% endblock %}

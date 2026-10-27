@@ -58,7 +58,7 @@ def wrap(draw, text, font, max_w):
 def build(page):
     slug = page["slug"]
     title = page.get("social_title") or page["h1"]
-    tagline = page.get("social_tagline") or "Sold, installed and supported in Canada by NovoTech Machine Tools, Mississauga, ON"
+    tagline = page.get("social_tagline") or "Sold, installed and supported in Canada by NovoTech Machine Tools, Mississauga, ON, Canada"
     img = Image.new("RGB", (W, H), CHARCOAL)
     d = ImageDraw.Draw(img)
     # orange slanted band on the right

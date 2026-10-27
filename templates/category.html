@@ -155,6 +155,17 @@
 </section>
 {% endif %}
 
+{% if page.article_html %}
+<section class="guide wrap" id="{{ page.article_id or 'buying-guide' }}" aria-labelledby="guide-title">
+  <h2 id="guide-title">{{ page.article_title or 'Buying guide' }}</h2>
+  {% if page.article_intro %}<p class="group-lead">{{ page.article_intro }}</p>{% endif %}
+  <nav class="guide-toc" aria-label="Guide contents">
+    <ol>{% for t in page.article_toc %}<li><a href="#{{ t.id }}">{{ t.label }}</a></li>{% endfor %}</ol>
+  </nav>
+  {{ page.article_html | safe }}
+</section>
+{% endif %}
+
 {% if page.faq %}
 <section class="faq wrap" aria-labelledby="faq-title">
   <h2 id="faq-title">{{ page.faq_title or "Questions we get asked" }}</h2>

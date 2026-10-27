@@ -39,7 +39,7 @@ BK = {
         title="Manual Metal Band Saws — Double-Miter Gravity-Feed Bandsaws | NovoTech",
         meta="Gravity-feed manual band saws BMS 230DG and 270DG: double-miter heads to 60°, hydraulic descent, Ø9″ to 10-5/8″. Specs in inches and mm, CSA panels.",
         h1="Bekamak manual band saws",
-        intro="Gravity-feed pivot saws built by Bekamak in Turkey for maintenance shops, fabricators and anyone cutting a few pieces at a time: the operator positions the bar, closes the vise and lowers the bow; a hydraulic cylinder controls the descent and the double-miter head swivels both ways for angle cuts. Premium-line construction with CSA-approved panels and support from Mississauga, ON.",
+        intro="Gravity-feed pivot saws built by Bekamak in Turkey for maintenance shops, fabricators and anyone cutting a few pieces at a time: the operator positions the bar, closes the vise and lowers the bow; a hydraulic cylinder controls the descent and the double-miter head swivels both ways for angle cuts. Premium-line construction with CSA-approved panels and support from Mississauga, ON, Canada.",
         points=["Hydraulic-damped gravity feed with adjustable cutting pressure", "Double-miter head: +60° right, −45° left", "Round capacities Ø9″ (230 mm) and Ø10-5/8″ (270 mm)"],
         hero="bk-hero-manual", minis=["bk-bms-230dg-1-cut"],
         lead="European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control.",
@@ -104,7 +104,7 @@ BK = {
         title="Vertical Band Saws for Metal — Plate & Block Saws | NovoTech",
         meta="Bekamak vertical band saws for metal cutting: the tilting-frame BMSY 460VG, the BMSY 613VT and VB 0814-8 block saws and the fully automatic CROSS 0626VT plate saw.",
         h1="Bekamak vertical band saws",
-        intro="A vertical band saw for metal cutting runs the blade vertically through the workpiece instead of swinging a bow down onto it, so plates, blocks and billets can be sliced along their length or cross-cut flat on a table. Bekamak builds four: the BMSY 460VG, a semi-automatic saw whose frame tilts 60° both ways for miter cuts in Ø18″ stock; the BMSY 613VT, which slices 23-5/8″ × 23-5/8″ sections up to 51″ long from blocks and plates on a servo cutting feed; the VB 0814-8 block-cutting machine for 32″ × 55″ blocks of 40,000 kg over a 26 ft cut; and the fully automatic CROSS 0626VT, which feeds and cuts plates up to 23-5/8″ × 102″ in tool steel, titanium and Inconel. CSA-approved panels, parts and support from Mississauga, ON.",
+        intro="A vertical band saw for metal cutting runs the blade vertically through the workpiece instead of swinging a bow down onto it, so plates, blocks and billets can be sliced along their length or cross-cut flat on a table. Bekamak builds four: the BMSY 460VG, a semi-automatic saw whose frame tilts 60° both ways for miter cuts in Ø18″ stock; the BMSY 613VT, which slices 23-5/8″ × 23-5/8″ sections up to 51″ long from blocks and plates on a servo cutting feed; the VB 0814-8 block-cutting machine for 32″ × 55″ blocks of 40,000 kg over a 26 ft cut; and the fully automatic CROSS 0626VT, which feeds and cuts plates up to 23-5/8″ × 102″ in tool steel, titanium and Inconel. CSA-approved panels, parts and support from Mississauga, ON, Canada.",
         points=["Semi-automatic: BMSY 460VG tilting-frame miter saw, BMSY 613VT and VB 0814-8 block saws", "Fully automatic: CROSS 0626VT plate saw with automatic feed, 23-5/8″ × 102″", "Sections from Ø18″ (460 mm) to 32″ × 55″ blocks and 102″ wide plate"],
         hero="bk-bmsy-613vt-3", minis=["bk-bmsy-460vg-1", "bk-cross-0626vt-1"],
         lead="Vertical blades for plate, blocks and billets: a tilting-frame miter saw, two block saws and an automatic plate saw.",
@@ -141,7 +141,7 @@ NF = {
         title="Automatic Feed Band Saws — Value-Line CNC Bandsaws | NovoTech",
         meta="Value-line automatic feed band saws: BS300x370 roller-feed, BS-460GB swivel-head miter saw with 20 ft stand, BS-650G scissor-type NC saw and the BS-5040 single-column saw.",
         h1="NovoTech automatic band saws",
-        intro="Automatic saws that feed, clamp, cut and count by themselves — roller feeders on the compact BS300x370, the swivel-head BS-460GB that miters to both sides, the scissor-type BS-650G with NC feeding and 60° miters and a hydraulic shuttle vise on the single-column BS-5040; the CNC double column BS-500G, 500GT and 850G are on the double-column page. Value-line pricing with CSA-approved panels, a 1-year warranty and support from Mississauga, ON.",
+        intro="Automatic saws that feed, clamp, cut and count by themselves — roller feeders on the compact BS300x370, the swivel-head BS-460GB that miters to both sides, the scissor-type BS-650G with NC feeding and 60° miters and a hydraulic shuttle vise on the single-column BS-5040; the CNC double column BS-500G, 500GT and 850G are on the double-column page. Value-line pricing with CSA-approved panels, a 1-year warranty and support from Mississauga, ON, Canada.",
         points=["Roller feed, NC feeder or hydraulic shuttle vise", "Piece counters and PLC job lists", "Round capacities from Ø11-3/4″ (300 mm) to Ø18-1/8″ (460 mm)"],
         hero="nt-a12-1-hero", minis=["nt-a18-1-cut", "nt-a12sc-1-cut"],
         lead="Roller-feed, shuttle-vise and CNC servo automatics from Ø11-3/4″ to Ø23-5/8″ (300–600 mm): feed, clamp, cut and count without an operator at the saw.",
@@ -179,7 +179,7 @@ KW = {
 
 ORIGIN = {
     "bekamak": {"title": "Made in Turkey by Bekamak", "text": "Bekamak has built band saws in Turkey since 1990 with European components — our premium line."},
-    "novotech": {"title": "Built in China to North American standards", "text": "NovoTech's own brand — same CSA panel, warranty and Mississauga, ON support as every machine we sell."},
+    "novotech": {"title": "Built in China to North American standards", "text": "NovoTech's own brand — same CSA panel, warranty and Mississauga, ON, Canada support as every machine we sell."},
 }
 
 BRAND = {
@@ -187,7 +187,7 @@ BRAND = {
                     brand_line="Bekamak band saws are made in Turkey by Bekamak Makina. Sold, installed and supported in Canada by NovoTech — the premium line of our band saw range.",
                     related_title="More Bekamak band saws from NovoTech"),
     "novotech": dict(key="novotech", slug="novotech", line="value", name="NovoTech", pdf=PDF_NF, page_label="NovoTech",
-                    brand_line="NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell.",
+                    brand_line="NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada parts and support as every machine we sell.",
                     related_title="More NovoTech value line band saws"),
 }
 
@@ -259,7 +259,7 @@ def main():
                              "image": p["hero_image"], "blurb": specs[cat]["lead"], "families": fams(brand, cat)})
         lines.append({"id": b["line"], "brand": b["key"], "label": f"{b['line'].title()} line", "name": b["name"], "short": b["page_label"], "pdf": b["pdf"],
                       "blurb": ("Built in Turkey since 1990 with European components and the heaviest construction in their class — the saws we recommend for production and heavy sections." if brand == "bekamak"
-                                else "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON parts and support as every machine we sell."),
+                                else "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada parts and support as every machine we sell."),
                       "subpages": subpages})
     # ---- hub
     hp = os.path.join(PAGES, "band-saw.json")
@@ -268,7 +268,7 @@ def main():
     h["subpages"] = [sp for ln in lines for sp in ln["subpages"]]
     h["title"] = "Metal Cutting Band Saws & Bandsaws for Sale in Canada | NovoTech"
     h["meta_description"] = "Metal cutting band saws from Ø9″ to 87″: manual, semi-automatic, automatic, double column and vertical machines in a premium and a value line, plus a guide."
-    h["intro"] = "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga, ON."
+    h["intro"] = "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga, ON, Canada."
     h["hero_image"] = "bk-hero-auto-350ga"
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-bs315gf-1"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 87″ (230–2200 mm)',

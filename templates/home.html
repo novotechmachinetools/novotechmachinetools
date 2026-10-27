@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import video with context %}
+{% from "partials/site.html" import cat_card, brand_grid, why_section, photo, pdf_card with context %}
+
+{% block content %}
+{% set hero = img(page.hero_image) %}
+<section class="hero home-hero">
+  <div class="wrap hero-grid has-large-hero">
+    <div class="hero-copy">
+      <p class="kicker">NovoTech Machine Tools · Mississauga, Ontario, Canada</p>
+      <h1>{{ page.h1 }}</h1>
+      <p class="lead">{{ page.intro }}</p>
+      <ul class="hero-points">
+        {% for p in page.hero_points %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="products.html">Browse all machines</a>
+        <a class="btn btn-ghost" href="#reques-a-quote">Request a quote</a>
+      </div>
+    </div>
+    <div class="hero-art is-large" aria-hidden="true">
+      <div class="hero-band"></div>
+      <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, 820px" width="{{ hero.w }}" height="{{ hero.h }}" alt="" fetchpriority="high" decoding="async">
+      <div class="hero-minis">
+        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 140 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 200 %}{% set mw = 200 %}{% set mh = (200 * m.h / m.w) | round | int %}{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="" loading="lazy" decoding="async">{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="NovoTech at a glance">
+  <ul class="wrap facts-list">
+    <li><strong>{{ page.category_count }}</strong><span>kinds of machine, from press brakes to rebar benders</span></li>
+    <li><strong>{{ page.family_count }}</strong><span>machine families with full specifications in inches and mm</span></li>
+    <li><strong>{{ page.maker_count }}</strong><span>brands from {{ page.country_count }} countries, plus NovoTech's own lines</span></li>
+    <li><strong>20+</strong><span>years supplying Canadian fabrication shops</span></li>
+  </ul>
+</section>
+
+<section class="wrap home-cats" aria-labelledby="cats-title">
+  <div class="section-head">
+    <h2 id="cats-title">Machines for every step of the job</h2>
+    <p class="group-lead">Cutting, bending, rolling, punching, sawing and finishing — the machines Canadian shops ask us for most. Every page has the specifications, photos, videos and a PDF brochure.</p>
+  </div>
+  <ul class="cat-grid">
+    {% for c in page.featured %}{{ cat_card(c) }}{% endfor %}
+  </ul>
+  <p class="section-more"><a class="btn btn-ghost" href="products.html">See all {{ page.category_count }} kinds of machine</a></p>
+</section>
+
+{{ why_section() }}
+
+<section class="wrap home-brands" aria-labelledby="brands-title">
+  <div class="section-head">
+    <h2 id="brands-title">Manufacturers we represent</h2>
+    <p class="group-lead">Long-standing partners in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China — each building the machines it knows best — and NovoTech's own premium and value lines.</p>
+  </div>
+  {{ brand_grid(page.brands) }}
+</section>
+
+<section class="showroom-band" aria-labelledby="showroom-title">
+  <div class="wrap showroom-grid">
+    <div class="showroom-copy">
+      <p class="kicker">Showroom and warehouse</p>
+      <h2 id="showroom-title">See the machines before you buy</h2>
+      <p>Our showroom and parts warehouse are at {{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }}, {{ site.address.country }}. Bring a drawing or a sample part and we will show you how the machine handles it — call ahead and we will make sure the machine you want to see is on the floor.</p>
+      <p class="showroom-hours"><strong>{{ site.hours }}</strong> (Eastern) · <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contact-us.html">Plan a visit</a>
+        <a class="btn btn-ghost btn-light" href="about-us.html">About NovoTech</a>
+      </div>
+    </div>
+    <ul class="showroom-photos">
+      {% for im in page.showroom_imgs %}<li>{{ photo(im, "(max-width: 700px) 46vw, 340px") }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="videos wrap" aria-labelledby="video-title">
+  <div class="videos-grid">
+    <div>
+      <h2 id="video-title">Who we are, in three minutes</h2>
+      <p>A short introduction to NovoTech Machine Tools: the showroom, the machines we stock and the manufacturers we work with. More machine videos are on <a href="{{ site.youtube_channel }}" rel="noopener">NovoTech's YouTube channel</a>.</p>
+    </div>
+    {{ video(page.intro_video) }}
+  </div>
+</section>
+
+<section class="wrap home-learn" aria-label="Guides and brochures">
+  <div class="learn-col">
+    <h2>Buying guides</h2>
+    <p class="group-lead">What we explain to customers before they buy, written by our sales engineers and technicians.</p>
+    <ul class="guide-list">
+      {% for a in page.guides %}
+      <li><a href="{{ a.href }}">{% if a.img %}<span class="guide-thumb{{ ' is-cutout' if a.img.alpha else '' }}"><img src="{{ a.img.small }}" srcset="{{ a.img.srcset }}" sizes="96px" width="{{ a.img.w }}" height="{{ a.img.h }}" alt="" loading="lazy" decoding="async"></span>{% endif %}<span><small>{{ a.topic }}</small><strong>{{ a.title }}</strong></span></a></li>
+      {% endfor %}
+    </ul>
+    <p><a class="arrow" href="metal-fabricating-articles.html">All articles and guides</a></p>
+  </div>
+  <div class="learn-col">
+    <h2>Brochures</h2>
+    <p class="group-lead">{{ page.brochure_count }} PDF brochures with photos and full specifications, written for Canadian shops.</p>
+    <ul class="pdf-strip">
+      {% for e in page.brochure_pick %}<li><a href="{{ e.file }}" target="_blank" rel="noopener">{% if e.cover %}<img src="{{ e.cover.small }}" srcset="{{ e.cover.srcset }}" sizes="150px" width="{{ e.cover.w }}" height="{{ e.cover.h }}" alt="" loading="lazy" decoding="async">{% endif %}<span>{{ e.title }}</span></a></li>{% endfor %}
+    </ul>
+    <p><a class="arrow" href="brochures.html">All brochures</a></p>
+  </div>
+</section>
+
+{% include "partials/quote.html" %}
+{% endblock %}

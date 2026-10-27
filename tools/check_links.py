@@ -15,11 +15,9 @@ from urllib.parse import unquote
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
 OLD_SITE = {
-    "products", "about-us", "contact-us", "brochures", "metal-fabricating-articles", "privacy-policy",
     "plate-roller-bender",
     "folder-sheet-metal-brake",
     "lock-former",
-    "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction",
 }
 
 

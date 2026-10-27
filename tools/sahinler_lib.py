@@ -241,8 +241,8 @@ NOTE_ROLLS = ("Plate bending capacities are for mild steel with a yield strength
               "diameter. Thin sheet in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H.")
 NOTE_SIMPLE = "Capacities are for mild steel unless stated; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H."
 VOLT = "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
-BRAND_LINE = "NovoTech premium line — machines built in Turkey to NovoTech's specification with European hydraulic and electrical components, sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON."
-ORIGIN = {"title": "NovoTech premium line — made in Turkey", "text": "Built in Turkey to NovoTech's specification by a CE-certified metal-forming plant with European hydraulic and electrical components; inspected before shipping, with the same CSA panel, warranty and Mississauga, ON support as every machine we sell."}
+BRAND_LINE = "NovoTech premium line — machines built in Turkey to NovoTech's specification with European hydraulic and electrical components, sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON, Canada."
+ORIGIN = {"title": "NovoTech premium line — made in Turkey", "text": "Built in Turkey to NovoTech's specification by a CE-certified metal-forming plant with European hydraulic and electrical components; inspected before shipping, with the same CSA panel, warranty and Mississauga, ON, Canada support as every machine we sell."}
 PDF = None   # the supplier's catalogue carried its brand; NovoTech-format brochures per section are generated instead (tools/sahinler_brochures.py)
 
 

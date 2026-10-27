@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import video with context %}
+{% from "partials/site.html" import crumbs, brand_grid, why_section, photo with context %}
+
+{% block content %}
+{% set hero = img(page.hero_image) %}
+<section class="page-hero about-hero">
+  <div class="wrap about-hero-grid">
+    <div>
+      {{ crumbs(page) }}
+      <h1>{{ page.h1 }}</h1>
+      <p class="lead">{{ page.intro }}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="products.html">See the machines we sell</a>
+        <a class="btn btn-ghost" href="contact-us.html">Contact us</a>
+      </div>
+    </div>
+    <figure class="about-hero-photo">{{ photo(hero, "(max-width: 900px) 92vw, 640px", eager=True) }}<figcaption>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }}, {{ site.address.country }}</figcaption></figure>
+  </div>
+</section>
+
+<section class="wrap about-story" aria-label="Our story">
+  {% for s in page.story %}
+  <div class="story-row">
+    <h2>{{ s.title }}</h2>
+    <div>{% for t in s.text %}<p>{{ t }}</p>{% endfor %}</div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="wrap about-gallery" aria-labelledby="gallery-title">
+  <h2 id="gallery-title">Inside the showroom</h2>
+  <ul class="gallery-grid">
+    {% for im in page.showroom_imgs %}<li><figure>{{ photo(im, "(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 500px") }}<figcaption>{{ im.alt }}</figcaption></figure></li>{% endfor %}
+  </ul>
+</section>
+
+<section class="wrap about-brands" aria-labelledby="brands-title">
+  <div class="section-head">
+    <h2 id="brands-title">The manufacturers behind our machines</h2>
+    <p class="group-lead">Each of them builds the machines it knows best. We stock their spare parts in Mississauga, ON, Canada, and our technicians install and service their machines across Canada.</p>
+  </div>
+  {{ brand_grid(page.brands) }}
+</section>
+
+{% set nv = page.videos|length %}
+<section class="videos wrap" aria-labelledby="videos-title">
+  <h2 id="videos-title">Meet us and our partners</h2>
+  <div class="vid-carousel" id="about-video" role="region" aria-roledescription="carousel" aria-label="NovoTech and partner videos ({{ nv }})">
+    <div class="family-videos is-multi vc-track" tabindex="0">{% for v in page.videos %}{{ video(v) }}{% endfor %}</div>
+    <button type="button" class="vc-btn vc-prev" aria-label="Previous videos" disabled></button>
+    <button type="button" class="vc-btn vc-next" aria-label="Next videos"></button>
+    <p class="vc-status" aria-live="polite">Videos 1 – 3 of {{ nv }}</p>
+  </div>
+</section>
+
+{{ why_section() }}
+
+{% include "partials/quote.html" %}
+{% endblock %}

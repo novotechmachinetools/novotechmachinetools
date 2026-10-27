@@ -7,7 +7,7 @@ SECTION = "Shears"
 # (slug, title, hero image, blurb, nav label, line)
 SUBPAGES = [
     ("dener-shears", "Dener hydraulic shears — BS / BSY swing beam and DAS CNC guillotine, 1/4″ to 3/4″", "dn-das-1",
-     "The premium line, made in Turkey: BS / BSY hydraulic swing beam shears with NC back gauge, 1/4″ to 5/8″ over 6.8 to 13.5 ft, and the DAS CNC guillotine shears with variable cutting angle, 1/4″ to 3/4″ over 10 to 20 ft, with Dener Canada parts in Mississauga.",
+     "The premium line, made in Turkey: BS / BSY hydraulic swing beam shears with NC back gauge, 1/4″ to 5/8″ over 6.8 to 13.5 ft, and the DAS CNC guillotine shears with variable cutting angle, 1/4″ to 3/4″ over 10 to 20 ft, with Dener Canada parts in Mississauga, ON, Canada.",
      "Dener hydraulic shears", "premium"),
     ("novotech-mechanical-shears", "NovoTech mechanical guillotine shears — direct-gear SRGM, 1/8″ and 1/4″ · premium line", "sm-srgm",
      "NovoTech's premium-line mechanical shears, built in Turkey: a motor and gearbox drive the beam — no hydraulics, no flywheel clutch — for 31 to 35 strokes a minute in 1/8″ sheet to 10 ft and 1/4″ plate to 13.8 ft, with return-to-sender and cut-to-length versions.",

@@ -9,7 +9,7 @@
       </ul>
     </div>
     <div class="agents-cta">
-      <a class="btn btn-primary" href="#reques-a-quote" data-machine="{{ site.agents.form_option }}">{{ site.agents.cta }}</a>
+      <a class="btn btn-primary" href="{{ 'contact-us.html#reques-a-quote' if page.no_quote else '#reques-a-quote' }}" data-machine="{{ site.agents.form_option }}">{{ site.agents.cta }}</a>
       <a class="btn btn-ghost btn-light" href="tel:{{ site.phone_tel }}">Call {{ site.phone }}</a>
       <p class="agents-note">Tell us your territory and the customers you serve — we reply within one business day.</p>
     </div>

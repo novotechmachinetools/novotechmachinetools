@@ -5,8 +5,9 @@
  * to the sales inbox with the customer's drawings and photos attached.
  * Works with the JavaScript submit (returns JSON) and with a plain HTML POST (returns a small page).
  *
- * reCAPTCHA: put the secret key in form-config.php next to this file (copy form-config.sample.php). form-config.php is
- * never committed to Git. Without a secret the check is skipped, so the form keeps working until the keys are set.
+ * reCAPTCHA v3: put the secret key in form-config.php next to this file (copy form-config.sample.php); the site key goes into
+ * content/site.json. form-config.php is never committed to Git. Without a secret the check is skipped, so the form keeps
+ * working until the keys are set.
  */
 declare(strict_types=1);
 
@@ -22,6 +23,7 @@ $OK_EXT    = ['pdf', 'dwg', 'dxf', 'step', 'stp', 'igs', 'iges', 'sldprt', 'x_t'
 $cfgFile = __DIR__ . '/form-config.php';
 $cfg = is_file($cfgFile) ? (array)(require $cfgFile) : [];
 $SECRET = (string)($cfg['recaptcha_secret'] ?? '');
+$MIN_SCORE = (float)($cfg['recaptcha_min_score'] ?? 0.5);     // reCAPTCHA v3: 0.0 = bot … 1.0 = person
 
 header('X-Content-Type-Options: nosniff');
 $wantsJson = isset($_SERVER['HTTP_ACCEPT']) && strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false;
@@ -66,11 +68,14 @@ if ($ts > 0 && (time() - $ts) < $MIN_SECS) {
     respond(true, 'Thanks — your request has been received.');
 }
 
-// Google reCAPTCHA v2
+// Google reCAPTCHA v3: the token the page fetched when the form was sent, checked with Google; a score from 0.0 (bot) to
+// 1.0 (person) comes back, and requests below the threshold are refused
 if ($SECRET !== '') {
     $token = $f('g-recaptcha-response', 4000);
+    $blocked = 'Our spam filter could not confirm that this request was sent by a person. Please try again, or email '
+             . 'info@NovoTechMachineTools.com or call +1 647 526 5510.';
     if ($token === '') {
-        respond(false, 'Please tick “I’m not a robot” and send the form again.', 422);
+        respond(false, $blocked, 422);
     }
     $post = http_build_query(['secret' => $SECRET, 'response' => $token, 'remoteip' => $_SERVER['REMOTE_ADDR'] ?? '']);
     $raw = false;
@@ -85,8 +90,9 @@ if ($SECRET !== '') {
         $raw = @file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $ctx);
     }
     $res = is_string($raw) ? json_decode($raw, true) : null;
-    if (!is_array($res) || empty($res['success'])) {
-        respond(false, 'The “I’m not a robot” check did not go through. Please tick it again and send the form.', 422);
+    $score = is_array($res) && isset($res['score']) ? (float)$res['score'] : 0.0;
+    if (!is_array($res) || empty($res['success']) || ($res['action'] ?? 'quote') !== 'quote' || $score < $MIN_SCORE) {
+        respond(false, $blocked, 422);
     }
 }
 

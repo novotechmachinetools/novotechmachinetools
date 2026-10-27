@@ -17,10 +17,10 @@ import laser_nav as LN
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-BRAND_LINE = ("Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga); NovoTech's own value line is built in "
+BRAND_LINE = ("Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga, ON, Canada); NovoTech's own value line is built in "
               "China to our specification; Senfeng Laser builds its value line in Jinan, China (CE / FDA / ETL). All sold, installed and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Three lines, one supplier", "text": "Premium Dener lasers from Turkey, NovoTech's own value line and the Senfeng value line from China — every machine with a "
-          "CSA-approved panel, a chiller, nesting software, a 1-year warranty, and installation, training, parts and remote diagnostics from Mississauga, ON."}
+          "CSA-approved panel, a chiller, nesting software, a 1-year warranty, and installation, training, parts and remote diagnostics from Mississauga, ON, Canada."}
 
 HUBS = {
     "sheet": dict(
@@ -40,7 +40,7 @@ HUBS = {
                   "from 4 × 4 ft compact machines and the NP open-type to the H series with pallet changer to 80 kW, plate gantries to 10 × 164 ft, "
                   "3D and coil-fed lines. Below, each line in brief, the "
                   "laser power guide, and every model in one table of working area, power and speed; every machine comes with a CSA-approved "
-                  "panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON.",
+                  "panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
             points=["Dener premium line: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft; Smart closed, semi-closed and open lasers to 13 × 82 ft; 3 – 40 kW",
                     "NovoTech value line: open ULF from 10 × 5 ft, enclosed ULE with 15 s exchange table to 41 ft, ULG ground-rail to 85 × 14.8 ft, ULFT / ULET sheet + tube, 1.5 – 60 kW",
                     "Senfeng value line: compact 4 × 4 ft from 1.5 kW, NP open-type, H series with pallet changer to 80 kW, plate gantries to 164 ft, 3D, coil-fed"],
@@ -52,7 +52,7 @@ HUBS = {
             range_note="Working areas in feet and inches (millimetres); the model number is the nominal table in decimetres (3015 = 3,000 × 1,500 mm, 10 × 5 ft). Laser power as the sources offered on that model. "
                        "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel and transformer; 208, 240 and 480 V on request.",
             faq=[{"q": "Dener, NovoTech or Senfeng — which laser should I buy?",
-                  "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, Dener Canada parts in Mississauga and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed exchange-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."},
+                  "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, Dener Canada parts in Mississauga, ON, Canada and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed exchange-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."},
                  {"q": "What laser power do I need?",
                   "a": "Power sets the thickness and the speed. As a guide for mild steel: 3 kW cuts 1/2″, 6 kW 3/4″ (and 1/4″ at over 300 in/min), 12 kW 1″, 20 kW 1-1/4″ and 30 – 40 kW 1-1/2″ and beyond; stainless and aluminum run about 20 – 30 % thinner at the same power, with nitrogen or air assist. Most Canadian job shops buying today choose 6 or 12 kW: thick enough for structural work, fast enough to pay for the machine on thin sheet. Tell us your material mix and we run the cutting chart for you."},
                  {"q": "Which table size?",
@@ -64,7 +64,7 @@ HUBS = {
                  {"q": "Can the laser be automated?",
                   "a": "Yes — a loading / unloading tower that feeds the pallet changer, sheet storage with several shelves for lights-out production, part sorting, and bevel heads for weld preparation. The Dener GFL and closed-type Smart, the NovoTech ULE and the Senfeng H series are prepared for the tower; the Senfeng coil-fed lines go further and cut straight from the coil. Ask us for the automation layout."},
                  {"q": "What does the machine need on site?",
-                  "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas, a dust collector and a compressed-air supply for air cutting. A 6 kW 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with a pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga, and the Ontario pre-start health and safety review is prepared by us."},
+                  "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas, a dust collector and a compressed-air supply for air cutting. A 6 kW 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with a pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada, and the Ontario pre-start health and safety review is prepared by us."},
                  VOLT_FAQ_GENERIC],
             faq_title="Questions we get asked about laser cutting machines",
             related_pages=[{"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"}, {"href": "laser-welding-machine.html", "label": "Laser welding & cladding"},
@@ -89,7 +89,7 @@ HUBS = {
                   "zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft. For trailer, railing, furniture, "
                   "agricultural, HVAC and steel-construction work. Below, each line in brief and every model in one table of tube range, power, "
                   "speed and bar length; every machine comes with a CSA-approved panel, chiller, tube nesting software, a 1-year warranty and "
-                  "installation, training and parts from Mississauga, ON.",
+                  "installation, training and parts from Mississauga, ON, Canada.",
             points=["Dener premium line: E-FTL Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm; FTL Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb",
                     "NovoTech value line: ULT two- and three-chuck lasers Ø0.4″ – 14.2″, square to 13.8″, 20 – 39 ft bars to 2,205 lb, 1.5 – 40 kW",
                     "Senfeng value line: T, PLUS and 45° bevel GT lasers Ø0.5″ – 14″; NT zero-tailing, ST / HT three- and four-chuck lasers to Ø25″ and 49 ft"],
@@ -101,7 +101,7 @@ HUBS = {
             range_note="Round tube as the chuck's minimum to maximum diameter; square and rectangular tube is limited by the diagonal. Dener bar lengths list the bar weight with them. "
                        "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel and transformer; 208, 240 and 480 V on request.",
             faq=[{"q": "Dener, NovoTech or Senfeng — which tube laser should I buy?",
-                  "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, ±0.05 mm, Dener Canada parts in Mississauga — for the shop that runs the tube laser all day on precise work. NovoTech's own ULT is the value line we build to our specification: two or three pneumatic chucks for the Ø0.4 to 14.2″ tube most shops cut, at the lowest price of the three. Senfeng's tube lasers are a value line under their own brand: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser and cuts the railings, frames and furniture tube most shops run, and the range goes where few others do — zero-tailing three-chuck machines, four-chuck machines for 49 ft stock, Ø25″ pipe and the H-beam profile line. We quote all three so you can compare."},
+                  "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, ±0.05 mm, Dener Canada parts in Mississauga, ON, Canada — for the shop that runs the tube laser all day on precise work. NovoTech's own ULT is the value line we build to our specification: two or three pneumatic chucks for the Ø0.4 to 14.2″ tube most shops cut, at the lowest price of the three. Senfeng's tube lasers are a value line under their own brand: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser and cuts the railings, frames and furniture tube most shops run, and the range goes where few others do — zero-tailing three-chuck machines, four-chuck machines for 49 ft stock, Ø25″ pipe and the H-beam profile line. We quote all three so you can compare."},
                  {"q": "What can a tube laser cut?",
                   "a": "Round, square, rectangular, oval and open profiles — angle, channel, flat bar — in mild steel, stainless, aluminum, copper and brass, from the chuck's minimum to its maximum size, in wall thicknesses to about 1/2″ (12 kW) or 3/4″ (20 kW). Holes, slots, copes for tube-to-tube joints, tabs and notches for folding, engraving — anything you can draw on the surface of the profile. A 5-axis or 45° bevel head adds weld preparations and mitred corners."},
                  {"q": "Two, three or four chucks?",

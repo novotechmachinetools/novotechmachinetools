@@ -53,7 +53,7 @@ PAGE = dict(
           "CHP 12G REV and CHP 21G REV that turn over to bevel the lower edge without turning the plate; and the CHP 30G, CHP 60G, CHP "
           "60G INV and CHP 100G milling bevellers, which machine bevels up to 3-15/16″ wide at 15° to 70° in any material — Hardox, "
           "Armox, duplex and stainless included — on plate up to 4-3/4″. Supplied with a CSA-approved panel, installed and supported "
-          "from Mississauga, ON.",
+          "from Mississauga, ON, Canada.",
     points=["Shearing bevellers CHP 7 – CHP 21G: plate and tube 1/8″ – 1-15/16″, bevels to 1-1/8″ at up to 8.5 ft/min",
             "Adjustable angle (20° – 45°), inverted (INV) and reversible (REV) models for X and K bevels without turning the plate",
             "Milling bevellers CHP 30G – CHP 100G: machined bevels to 3-15/16″, 15° – 70°, any material, plate to 4-3/4″"],
@@ -104,7 +104,7 @@ PAGE = dict(
 )
 
 # ------------------------------------------------------------------------------------------------ brochure
-ABOUT_CEVISA = ("NovoTech sells, installs and supports Cevisa bevellers in Canada from Mississauga, Ontario — the machine and cutters chosen "
+ABOUT_CEVISA = ("NovoTech sells, installs and supports Cevisa bevellers in Canada from Mississauga, Ontario, Canada — the machine and cutters chosen "
                 "for your plates and bevels, a CSA-approved panel, operator training, a 1-year warranty and parts and technical support in "
                 "Canada.")
 BROCHURE = dict(

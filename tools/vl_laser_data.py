@@ -242,7 +242,7 @@ LZ_STD = ["Fiber laser source chosen at order — Raycus, MAX or IPG — with an
           "Cypcut bus control with nesting, the cutting-parameter database and power-based speed adjustment; hand pendant",
           "Welded bed annealed and shot-blasted to relieve stress; Inovance or Delta servos, YYC racks, Hiwin linear guides, DESBOER gearboxes",
           "Zoned dust extraction under the table, automatic lubrication, Hanli water chiller, air-cooled electrical cabinet with Schneider components",
-          VOLT, "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"]
+          VOLT, "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON, Canada"]
 LZ_OPT = ["Precitec ProCutter cutting head; IPG source; higher power at order", "Camera nesting over the table for remnants",
           "Sheet storage tower and gantry loading / unloading (flexible manufacturing system)", "Dust collector, air compressor and nitrogen generator sized to the machine",
           "Custom voltage: 208, 240 or 480 V 3-phase"]
@@ -303,7 +303,7 @@ SHEET_FAMILIES = [
                    "Bus CNC with edge finding, nesting, common-line cutting and remnant functions; touchscreen console",
                    "Positioning ±0.03 mm/m over the whole table; transmission covers and automatic lubrication on the long axis",
                    "Zoned fume extraction along the table; replaceable support slats",
-                   VOLT, "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON"],
+                   VOLT, "1-year warranty; installation, operator training, parts and remote diagnostics from Mississauga, ON, Canada"],
          optional=["Bevel cutting head", "MES connection and industry file interfaces", "Dust collector, compressor and gas supply sized to the machine",
                    "Custom voltage: 208, 240 or 480 V 3-phase"],
          images=["vn-ulg-1", "vn-ulg-installed", "vn-ulg-beam", "vn-ulg-rails", "vn-ulg-table", "vn-ulg-cutting", "vn-ulg-parts", "vn-ulg-console",

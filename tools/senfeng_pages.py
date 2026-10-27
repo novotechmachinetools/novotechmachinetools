@@ -31,7 +31,7 @@ PDF_PANEL = "files/NovoTech-Senfeng-Panel-Benders-2026.pdf"
 BRAND_LINE = ("Senfeng Laser builds fiber laser cutting, welding and cladding machines in Jinan, China — 20 years, 15,000 machines a year, "
               "CE / FDA / ETL certified, with Senfeng Laser USA. Sold, installed and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Made in China by Senfeng Laser", "text": "Senfeng has built fiber laser machines in Jinan since 2004 — a 1.8 million ft² campus, its own laser "
-          "sources and cutting heads, 20 overseas branches and a USA warehouse — with NovoTech's CSA panel, warranty and Mississauga, ON support."}
+          "sources and cutting heads, 20 overseas branches and a USA warehouse — with NovoTech's CSA panel, warranty and Mississauga, ON, Canada support."}
 NO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
 
 
@@ -51,7 +51,7 @@ PAGE_WELD = dict(
           "the HWM handheld welders at 1.5 to 3 kW with wire feed for joints to 9/32″, robotic laser welding cells from 1.5 to 20 kW with "
           "positioners and tracks, teaching-free and collaborative MIG robots, and the laser cladding machines that rebuild shafts, rolls and "
           "bores with a metallurgically bonded wear layer. Senfeng makes its own sources and heads in Jinan, China; CE / FDA / ETL certified. "
-          "Installed and supported from Mississauga, ON.",
+          "Installed and supported from Mississauga, ON, Canada.",
     points=["Handheld: S series 0.8 – 1.5 kW air-cooled, 99 – 121 lb · HWM 1.5 – 3 kW, welds to 9/32″, 4-in-1 head",
             "Robotic: RW laser cells 1.5 – 20 kW · RMW teaching-free and CMW cobot MIG welders 350 / 500 A",
             "Cladding: 6 / 12 kW robot cells, lathe-type machines to 20 ft and a portable system for on-site repair"],
@@ -70,7 +70,7 @@ PAGE_WELD = dict(
          {"q": "What is laser cladding used for?",
           "a": "Repairing and hardening: worn shafts, hydraulic cylinder rods, rolls, valve seats, pump housings and dies get a new wear- or corrosion-resistant surface — stainless, nickel, cobalt or carbide alloys from powder — fused to the base metal with a thin heat-affected zone, far stronger than thermal spray and with less distortion than overlay welding. Layers to 25/64″ (10 mm), machined afterwards. Mining, oil and gas, hydro, pulp and paper and steel mills are the usual customers."},
          {"q": "What does the machine need on site?",
-          "a": "The S series plugs into a 220 V outlet; the HWM, robots and cladding machines run on 3-phase — we supply the transformer for 600 V. Shielding gas (argon or nitrogen), compressed air for the cutting and cleaning modes, a fume extractor, and for the cladding machines a powder supply. Delivery, installation and training by NovoTech from Mississauga."},
+          "a": "The S series plugs into a 220 V outlet; the HWM, robots and cladding machines run on 3-phase — we supply the transformer for 600 V. Shielding gas (argon or nitrogen), compressed air for the cutting and cleaning modes, a fume extractor, and for the cladding machines a powder supply. Delivery, installation and training by NovoTech from Mississauga, ON, Canada."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about laser welders",
     related_pages=[{"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}, {"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"},
@@ -91,7 +91,7 @@ PAGE_LASER = dict(
           "in the catalogue; the enclosed H series with a 20-second pallet changer from 1.5 to 80 kW on tables to 8.3 × 40 ft; the HM that cuts "
           "sheet and Ø8.6″ tube on one machine; the R and TX plate gantries to 10 × 164 ft with ±45° bevel heads for shipyards and structural "
           "steel; five-axis and robot 3D lasers for formed parts; and coil-fed lines that cut straight from the coil. Loading towers, sheet "
-          "storage and air-cutting packages for every model. Installed, trained and supported from Mississauga, ON, with a CSA-approved panel "
+          "storage and air-cutting packages for every model. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel "
           "and NovoTech's warranty.",
     points=["Compact SF1313G / SF1530 series 4 × 4 and 5 × 10 ft, 1.5 – 12 kW; NP open-type 5 × 10 to 6.6 × 20 ft, 3 – 12 kW",
             "H series enclosed lasers with pallet changer: HC 1.5 – 12 kW, H4 6 – 30 kW to 8.3 × 40 ft, H5 heavy-load 40 – 80 kW for 2″ plate",
@@ -103,7 +103,7 @@ PAGE_LASER = dict(
          {"q": "NP or H series?",
           "a": "The NP is a single-table open machine: the operator loads between sheets, which is fine for a few sheets an hour. The H series is enclosed and has a pallet changer that swaps tables in 20 seconds, so loading overlaps cutting — a production machine for two shifts, with 1.5 to 80 kW and tables to 8.3 × 40 ft, and the one that takes the loading tower and sheet storage. HC is the compact build, H4 the fourth-generation machine with 2 G and 656 ft/min, H5 the heavy-load frame for 40 – 80 kW and 2″ plate."},
          {"q": "Own-brand sources and heads — what does that mean for support?",
-          "a": "Senfeng builds its own fiber sources, cutting heads and control cabinets, so parts come from one maker rather than three, and IPG, Raycus or Max sources can be specified instead. Senfeng Laser USA holds parts and has a service team; NovoTech installs, trains and services in Canada from Mississauga, with remote diagnostics through the control and a CSA-approved panel on every machine."},
+          "a": "Senfeng builds its own fiber sources, cutting heads and control cabinets, so parts come from one maker rather than three, and IPG, Raycus or Max sources can be specified instead. Senfeng Laser USA holds parts and has a service team; NovoTech installs, trains and services in Canada from Mississauga, ON, Canada, with remote diagnostics through the control and a CSA-approved panel on every machine."},
          {"q": "What is the HM sheet-and-tube combination?",
           "a": "An enclosed H series sheet laser with a rotary chuck and tube supports on the side: the same 6 to 30 kW source and head cut 5 × 10 to 8.3 × 20 ft sheet with the pallet changer and round, square or rectangular tube from Ø0.7 to 8.6″ and 20 ft long. For a shop that cuts both but cannot justify two machines — switching takes the time to load the tube."},
          {"q": "Plate gantries, bevels and oxy-fuel?",
@@ -111,7 +111,7 @@ PAGE_LASER = dict(
          {"q": "When does a coil-fed line pay off?",
           "a": "When the same thin material runs all day: enclosures, HVAC, appliance and automotive parts. The decoiler, leveller and laser work on one control, there is no sheet handling, no offcuts and no limit on part length. The SF15015C runs thin coil through an open-type laser; the SF1503CH takes coil to 1/8″ and 16.5 tons; the SF2012CH levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW."},
          {"q": "How does Senfeng compare with the Dener premium line?",
-          "a": "Dener is the premium line: Turkish-built with Precitec heads, IPG / nLIGHT sources, a heavier frame rated for 1.5 G and Dener Canada parts in Mississauga — the longer life at high duty. Senfeng costs less and covers sizes and powers Dener does not: 4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, 3D and coil-fed lasers. The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."},
+          "a": "Dener is the premium line: Turkish-built with Precitec heads, IPG / nLIGHT sources, a heavier frame rated for 1.5 G and Dener Canada parts in Mississauga, ON, Canada — the longer life at high duty. Senfeng costs less and covers sizes and powers Dener does not: 4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, 3D and coil-fed lasers. The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about Senfeng fiber lasers",
     related_pages=[{"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}, {"href": "panel-bender.html", "label": "Senfeng BDC panel benders"},
@@ -132,7 +132,7 @@ PAGE_TUBE = dict(
           "chuck in the middle so the last part is cut without a tail; and the ST three-chuck and HT four-chuck machines carry tube to Ø25″ and "
           "6,600 lb over 29 to 49 ft with 6 to 20 kW, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for "
           "H-beams, channels and angles. Pneumatic self-centring chucks, following supports, tube nesting from 3D files, bundle loaders and "
-          "unloading conveyors; CE / FDA / ETL certified. Installed, trained and supported from Mississauga, ON, with a CSA-approved panel and "
+          "unloading conveyors; CE / FDA / ETL certified. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel and "
           "NovoTech's warranty.",
     points=["T series: Ø0.5 – 14.1″, 20 – 39 ft, 1.5 – 6 kW, 15 models in two bed lengths; PLUS to 492 ft/min; GPLUS / GT with ±45° bevel head",
             "NT zero-tailing three-chuck machines Ø0.7 – 14.1″; ST three-chuck and HT four-chuck to Ø25.1″, 6,600 lb and 49 ft, 6 – 20 kW",
@@ -150,7 +150,7 @@ PAGE_TUBE = dict(
          {"q": "What about software?",
           "a": "The bus-based CNC imports STEP / IGES solid models or draws the parts in its own tube CAD, unfolds them onto the profile, nests them along the bar to use the remnant and writes the program, with a cutting database for the material and seam detection to orient welded tube. Offline programming on a PC is standard."},
          {"q": "How does Senfeng compare with the Dener premium line?",
-          "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, Dener Canada parts in Mississauga. Senfeng costs a fraction of that for the same tube sizes and reaches further: zero-tailing three-chuck machines, four-chuck machines for 49 ft stock, Ø25″ pipe and the H-beam line. The comparison and the capacity table for both lines are on the tube laser cutters overview."},
+          "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, Dener Canada parts in Mississauga, ON, Canada. Senfeng costs a fraction of that for the same tube sizes and reaches further: zero-tailing three-chuck machines, four-chuck machines for 49 ft stock, Ø25″ pipe and the H-beam line. The comparison and the capacity table for both lines are on the tube laser cutters overview."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about Senfeng tube lasers",
     related_pages=[{"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"},
@@ -183,7 +183,7 @@ def register_images():
 
 ABOUT_SENFENG = ("Senfeng Laser has built fiber laser machines in Jinan, Shandong, since 2004: a 1.8 million ft² campus, its own laser sources, "
                  "cutting heads and welding guns, around 15,000 machines a year, 20 overseas branches and Senfeng Laser USA with a warehouse "
-                 "and service team. CE, FDA and ETL certified. NovoTech sells, installs and supports the machines in Canada from Mississauga, "
+                 "and service team. CE, FDA and ETL certified. NovoTech sells, installs and supports the machines in Canada from Mississauga, ON, Canada, "
                  "Ontario — layout for your building, installation, operator training, a CSA-approved panel, a 1-year warranty and parts and "
                  "technical support in Canada.")
 BROCHURES = {

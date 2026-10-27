@@ -30,7 +30,7 @@ CAT_FILE = "files/NovoTech-Press-Brake-Tooling-Catalogue-2026.pdf"
 CATALOGUE = {"file": CAT_FILE, "label": "Download the EUROSTAMP catalogue — inch edition", "size": "PDF · {mb} MB · mm and inches"}
 
 BRAND_LINE = ("EUROSTAMP tooling is made in Gragnano Trebbiense, Italy, by a company that has built nothing but press brake tools "
-              "since 1970 — sold, shipped and supported in Canada by NovoTech from Mississauga, ON.")
+              "since 1970 — sold, shipped and supported in Canada by NovoTech from Mississauga, ON, Canada.")
 ORIGIN = {"title": "Made in Italy since 1970", "text": "EUROSTAMP has built press brake tooling in Gragnano Trebbiense, near Piacenza, since 1970."}
 WHY = [
     {"title": "Made in Italy since 1970", "text": "EUROSTAMP builds only press brake tooling — punches, dies, adapters and clamping — in Gragnano Trebbiense, near Piacenza.", "icon": "factory"},
@@ -38,7 +38,7 @@ WHY = [
     {"title": "DXF profiles to download", "text": "Most punches and dies here link to their DXF profile — load it into the tool library of your Delem, ESA or Cybelec control, or into offline software.", "icon": "receipt"},
     {"title": "Fits your press brake", "text": "European (Amada-Promecam), Trumpf, Wila, Bystronic, LVD and American styles, and adapters between them.", "icon": "repeat"},
     {"title": "Special tools to your drawing", "text": "EUROSTAMP's technical department designs special punches and dies for the parts standard tooling cannot bend.", "icon": "panel"},
-    {"title": "Shipped across Canada", "text": "Quoted, ordered and shipped by NovoTech from Mississauga, ON, with the freight arranged at competitive rates.", "icon": "truck"},
+    {"title": "Shipped across Canada", "text": "Quoted, ordered and shipped by NovoTech from Mississauga, ON, Canada, with the freight arranged at competitive rates.", "icon": "truck"},
 ]
 QUOTE = {"intro": "Tell us your press brake (make, model and clamping), the tool codes or the part you need to bend, and the lengths, and we "
                   "will come back with pricing and delivery.",
@@ -779,7 +779,7 @@ PAGES = {
               "(16.3″) lengths and 805 mm (31.7″) sectioned sets with horns. Six families on this page: straight punches from 45° to 88° and "
               "heavy-duty punches with R6 – R10 tips for plate; acute 24° to 35° punches; gooseneck and sash punches for return flanges; the "
               "ESH series with one 120 mm working height for staged bending; radius holders with round elements R3 to R50; and offset "
-              "(joggle) tools. The punches link to their DXF profiles for your CNC, and NovoTech quotes, ships and supports the tooling from Mississauga, ON.",
+              "(joggle) tools. The punches link to their DXF profiles for your CNC, and NovoTech quotes, ships and supports the tooling from Mississauga, ON, Canada.",
         points=["Straight 45° – 88°, acute 24° – 35°, gooseneck and sash punches 2.56 – 7.87″ (65 – 200 mm) high, rated to 50 US t/ft (150 t/m)",
                 "ESH same-height series: every punch 120 mm (4.72″), for staged bending in one setup",
                 "Radius holders with round elements R3 – R50 and offset tools Z 1 – 15 mm; DXF profiles to download"],
@@ -969,7 +969,7 @@ HUB_PAGE = dict(
           "bending.",
     points=["Over 700 punches, dies, holders and accessories, in full lengths and sectioned sets — European, Trumpf, Wila, Bystronic, LVD and American styles",
             "C45 and 42CrMo4 steel, induction-hardened 55 – 60 HRC up to 3 mm (.118″) deep; special tools to your drawing",
-            "DXF profiles to download; adapters between clamping styles; quoted and shipped from Mississauga, ON"],
+            "DXF profiles to download; adapters between clamping styles; quoted and shipped from Mississauga, ON, Canada"],
     hero="es-p-range", minis=["es-p-group", "es-p-dies"],
     range_cols=["Profiles", "Angles", "Height H", "Max. load"],
     range_lead="Every tooling family on one table: the number of profiles, the angles, the working heights and the highest load rating. Each row links to the family's tool table, with the full data and the DXF profiles.",

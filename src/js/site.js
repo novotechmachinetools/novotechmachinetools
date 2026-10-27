@@ -310,25 +310,38 @@
     };
     if (fileIn) fileIn.addEventListener("change", function () { var m = checkFiles(); if (m) say("is-error", m); else if (/is-error/.test(status.className)) say("", ""); });
 
-    /* Google reCAPTCHA (v2 checkbox): the script loads only when the form comes near the screen or is used */
-    var capEl = form.querySelector(".captcha"), capId = null, capLoading = false;
-    window.ntCaptchaReady = function () {
-      if (capEl && capId === null && window.grecaptcha) capId = window.grecaptcha.render(capEl, { sitekey: capEl.dataset.sitekey });
-    };
+    /* Google reCAPTCHA v3 (invisible, score-based): the script loads only when the form comes near the screen or is used,
+       and a fresh token is fetched at the moment of sending */
+    var capKey = form.dataset.recaptcha || "", capLoading = false;
     var loadCaptcha = function () {
-      if (!capEl || capLoading || PREVIEW) return;
+      if (!capKey || capLoading || PREVIEW || form.dataset.staging) return;
       capLoading = true;
       var sc = d.createElement("script");
-      sc.src = "https://www.google.com/recaptcha/api.js?onload=ntCaptchaReady&render=explicit";
+      sc.src = "https://www.google.com/recaptcha/api.js?render=" + encodeURIComponent(capKey);
       sc.async = true; sc.defer = true;
       d.head.appendChild(sc);
     };
-    if (capEl) {
+    var withToken = function (done) {
+      if (!capKey) { done(); return; }
+      loadCaptcha();
+      var tries = 0;
+      (function wait() {
+        if (window.grecaptcha && window.grecaptcha.execute) {
+          window.grecaptcha.ready(function () {
+            window.grecaptcha.execute(capKey, { action: "quote" }).then(function (tok) {
+              var h = form.querySelector("input[name='g-recaptcha-response']"); if (h) h.value = tok; done();
+            }, function () { done(); });
+          });
+        } else if (++tries < 50) { setTimeout(wait, 100); }
+        else { done(); }                       // blocked or offline: the server answers with a clear message
+      })();
+    };
+    if (capKey) {
       form.addEventListener("focusin", loadCaptcha);
       if ("IntersectionObserver" in window) {
         var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { loadCaptcha(); io.disconnect(); } }, { rootMargin: "600px 0px" });
         io.observe(form);
-      } else { loadCaptcha(); }
+      }
     }
 
     form.addEventListener("submit", function (e) {
@@ -353,12 +366,9 @@
           ". On the live site at NovoTechMachineTools.com the form sends directly to " + EMAIL + ", attachments included.");
         return;
       }
-      if (capEl) {
-        var tok = window.grecaptcha && capId !== null ? window.grecaptcha.getResponse(capId) : "";
-        if (!tok) { loadCaptcha(); say("is-error", "Please tick “I’m not a robot” before sending."); return; }
-      }
       var btn = form.querySelector("button[type=submit]");
       btn.disabled = true; say("", fileIn && fileIn.files && fileIn.files.length ? "Sending your request and files…" : "Sending…");
+      withToken(function () {
       fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
         .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
         .then(function (j) {
@@ -374,10 +384,8 @@
         .catch(function () {
           say("is-error", "We could not send the form from this page. Please email <a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a> or call +1 647 526 5510.", true);
         })
-        .then(function () {
-          btn.disabled = false;
-          if (capEl && window.grecaptcha && capId !== null) window.grecaptcha.reset(capId);
-        });
+        .then(function () { btn.disabled = false; });
+      });
     });
   }
 })();

@@ -1,0 +1,74 @@
+{# ---------- building blocks of the site's own pages (home, products, contact, about, brochures, articles, privacy) ---------- #}
+{% from "partials/macros.html" import feature_icon with context %}
+
+{% macro crumbs(page) -%}
+<nav class="crumbs" aria-label="Breadcrumb">
+  <ol>
+    {% for c in page.breadcrumb %}<li>{% if c.href %}<a href="{{ c.href }}">{{ c.label }}</a>{% else %}<span aria-current="page">{{ c.label }}</span>{% endif %}</li>{% endfor %}
+  </ol>
+</nav>
+{%- endmacro %}
+
+{% macro page_hero(page, extra="") -%}
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    {{ crumbs(page) }}
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    {{ extra }}
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro cat_card(c, h="h3", sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 360px") -%}
+<li class="cat-card">
+  <a class="cat-art{{ ' is-cutout' if c.image and c.image.alpha else '' }}" href="{{ c.href }}" tabindex="-1" aria-hidden="true">{% if c.image %}<img src="{{ c.image.small }}" srcset="{{ c.image.srcset }}" sizes="{{ sizes }}" width="{{ c.image.w }}" height="{{ c.image.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
+  <div class="cat-body">
+    <{{ h }} class="cat-title"><a href="{{ c.href }}">{{ c.label }}</a></{{ h }}>
+    <p>{{ c.blurb }}</p>
+    {% if c.children %}<ul class="cat-sub">{% for x in c.children %}<li><a href="{{ x.href }}">{{ x.label }}</a></li>{% endfor %}</ul>{% endif %}
+  </div>
+</li>
+{%- endmacro %}
+
+{% macro brand_grid(brands, h="h3") -%}
+<ul class="brand-grid">
+  {% for b in brands %}
+  <li><a class="brand-card" href="{{ b.href }}">
+    <{{ h }} class="brand-name">{{ b.name }}</{{ h }}>
+    <span class="brand-origin">{{ b.country }}{% if b.since %} · since {{ b.since }}{% endif %}</span>
+    <span class="brand-what">{{ b.what }}</span>
+  </a></li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro why_section(title="Included with every machine from NovoTech") -%}
+<section class="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <h2 id="why-title">{{ title }}</h2>
+    <ul class="why-grid">
+      {% for s in site.standard_features if s.id != 'origin' %}
+      <li><span class="why-badge">{{ feature_icon(s.icon or 'factory') }}</span><div><strong>{{ s.title }}</strong><span>{{ s.text }}</span></div></li>
+      {% endfor %}
+    </ul>
+    <p class="why-note">{{ site.voltage_note }}</p>
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro photo(im, sizes, cls="", eager=False) -%}
+<img{% if cls %} class="{{ cls }}"{% endif %} src="{{ im.small if not eager else im.src }}" srcset="{{ im.srcset }}" sizes="{{ sizes }}" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}"{% if not eager %} loading="lazy"{% else %} fetchpriority="high"{% endif %} decoding="async">
+{%- endmacro %}
+
+{% macro pdf_card(e) -%}
+<li class="pdf-card">
+  <a class="pdf-cover" href="{{ e.file }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% if e.cover %}<img src="{{ e.cover.small }}" srcset="{{ e.cover.srcset }}" sizes="(max-width: 640px) 40vw, 200px" width="{{ e.cover.w }}" height="{{ e.cover.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
+  <div class="pdf-body">
+    <h3 class="pdf-title"><a href="{{ e.file }}" target="_blank" rel="noopener">{{ e.title }}</a></h3>
+    {% set sz = (e.size or '') | replace('PDF · ', '') %}<p class="pdf-meta">PDF{% if e.page_count %} · {{ e.page_count }} pages{% endif %}{% if sz %} · {{ sz }}{% endif %}</p>
+    <p class="pdf-actions"><a class="btn btn-primary btn-sm" href="{{ e.file }}" download>Download</a> <a class="btn btn-ghost btn-sm" href="{{ e.file }}" target="_blank" rel="noopener">Open</a></p>
+    {% if e.pages %}<p class="pdf-pages">Machines on the website: {% for r in e.pages[:4] %}<a href="{{ r.href }}">{{ r.label }}</a>{{ ', ' if not loop.last else '' }}{% endfor %}{% if e.pages|length > 4 %} and more{% endif %}</p>{% endif %}
+  </div>
+</li>
+{%- endmacro %}

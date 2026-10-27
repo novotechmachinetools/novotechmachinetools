@@ -51,10 +51,10 @@ INCLUDED_ITEMS = [
     "CSA-approved electrical panel",
     "1-year warranty",
     "7-day money-back guarantee (in-stock machines only)",
-    "Spare parts & technical support readily available from Mississauga, Ontario",
+    "Spare parts & technical support readily available from Mississauga, Ontario, Canada",
     "Order today with just 10% down — 0% down financing available",
     "Installation and training available across Canada",
-    "Shipping across Canada from Mississauga, ON",
+    "Shipping across Canada and the US from Ontario",
     "Remote troubleshooting and technical support by video call",
 ]
 VOLTAGE_LINE = "Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase."

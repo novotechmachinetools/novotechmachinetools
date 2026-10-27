@@ -1,0 +1,479 @@
+{
+ "groups": [
+  {
+   "id": "bending",
+   "title": "Sheet metal bending",
+   "lead": "Press brakes, panel benders and the tooling that goes in them.",
+   "slugs": [
+    "press-brake",
+    "panel-bender",
+    "v-grooving-machine",
+    "folder-sheet-metal-brake",
+    "horizontal-press-brake",
+    "press-brake-tooling-punch-and-die"
+   ]
+  },
+  {
+   "id": "laser",
+   "title": "Laser cutting and laser welding",
+   "lead": "Fiber lasers for sheet, plate and tube, and laser welding from handheld to robotic.",
+   "slugs": [
+    "laser-cutting-machine",
+    "tube-laser-cutting-machine",
+    "laser-welding-machine"
+   ]
+  },
+  {
+   "id": "cutting",
+   "title": "Shearing, punching and notching",
+   "lead": "Shears, ironworkers, notchers and plate bevellers.",
+   "slugs": [
+    "shear-cutting",
+    "ironworker-machines",
+    "corner-notcher",
+    "plate-beveler"
+   ]
+  },
+  {
+   "id": "sawing",
+   "title": "Sawing",
+   "lead": "Band saws, cold saws and the blades that go in them.",
+   "slugs": [
+    "band-saw",
+    "band-saw-blades",
+    "circular-cold-saws",
+    "aluminum-and-pvc-upcut-saws"
+   ]
+  },
+  {
+   "id": "rolling",
+   "title": "Rolling, pressing and forming",
+   "lead": "Plate and section rolling, hydraulic presses and the HVAC forming machines.",
+   "slugs": [
+    "plate-rollers",
+    "angle-rolls",
+    "hydraulic-press",
+    "bead-rollers",
+    "lock-former",
+    "circle-cutters-and-seamers"
+   ]
+  },
+  {
+   "id": "tube",
+   "title": "Tube and pipe",
+   "lead": "Bending, notching and end forming of tube and pipe, and CNC wire bending.",
+   "slugs": [
+    "pipe-benders",
+    "pipe-notcher",
+    "tube-end-forming-machines",
+    "wire-bending-machines"
+   ]
+  },
+  {
+   "id": "finishing",
+   "title": "Deburring, grinding and finishing",
+   "lead": "Deburring and edge rounding of cut parts, corner grinding and pipe polishing.",
+   "slugs": [
+    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+    "corner-grinding-machines",
+    "pipe-sanding-polishing-machines"
+   ]
+  },
+  {
+   "id": "welding",
+   "title": "Welding",
+   "lead": "Positioners and corner welders that take the hand work out of repeat welds.",
+   "slugs": [
+    "welding-positioners",
+    "corner-welding-machines"
+   ]
+  },
+  {
+   "id": "rebar",
+   "title": "Rebar machinery",
+   "lead": "Benders, cutters and processing lines for reinforcing steel.",
+   "slugs": [
+    "rebar-bender-and-cutter"
+   ]
+  },
+  {
+   "id": "windows",
+   "title": "Aluminum and PVC window machinery",
+   "lead": "Machines for window, door and curtain-wall fabricators.",
+   "slugs": [
+    "pvc-aluminum-window-machines"
+   ]
+  }
+ ],
+ "blurbs": {
+  "press-brake": "CNC hydraulic, hybrid and electric press brakes, 22 to 1,323 US tons — Dener premium and NovoTech value lines.",
+  "panel-bender": "CNC panel benders that bend all four sides of a panel without tool changes, 47″ to 165″ bend width.",
+  "v-grooving-machine": "CNC V-grooving machines for sharp architectural bends — horizontal to 20 ft, vertical to 1/4″ plate.",
+  "folder-sheet-metal-brake": "Manual and hydraulic roofing brakes and box-and-pan brakes for flashing, siding and trim.",
+  "horizontal-press-brake": "NC hydraulic horizontal presses for bending, straightening and punching, 11 to 165 US tons.",
+  "press-brake-tooling-punch-and-die": "EUROSTAMP punches, dies, holders and adapters for every clamping style, made in Italy.",
+  "laser-cutting-machine": "Fiber laser cutting machines for sheet and plate, 4 × 4 ft to 10 × 164 ft beds, 1.5 to 80 kW.",
+  "tube-laser-cutting-machine": "Tube and profile fiber lasers for Ø0.3″ to 25.2″, 20 to 49 ft bars, 1.5 to 40 kW.",
+  "laser-welding-machine": "Handheld laser welders from 0.8 kW, robotic laser welding cells to 20 kW, and laser cladding.",
+  "shear-cutting": "Sheet metal shears, mechanical guillotines and hydraulic plate shears, 16 ga to 1-9/16″.",
+  "ironworker-machines": "Hydraulic ironworkers and punching machines that punch, shear, notch and bend in one machine.",
+  "corner-notcher": "Hydraulic corner notchers for the corners of sheet metal boxes, cabinets and panels.",
+  "plate-beveler": "Cevisa portable cold bevellers for weld preparation on plate and pipe, 1/8″ to 4-3/4″ thick.",
+  "band-saw": "Manual, semi-automatic and automatic metal-cutting band saws — Bekamak premium and NovoTech value lines.",
+  "band-saw-blades": "WIKUS bimetal M42 and carbide-tipped band saw blades, welded to length for your saw.",
+  "circular-cold-saws": "Circular cold saws from manual to CNC carbide — ISITAN, CSM and Bekamak.",
+  "aluminum-and-pvc-upcut-saws": "Automatic upcut, double-head, glazing bead and miter saws for aluminum and PVC extrusions.",
+  "plate-rollers": "Hydraulic 4-roll and 3-roll plate rollers and motorized slip rolls, from light sheet to heavy plate.",
+  "angle-rolls": "Angle rolls, tube rollers and section benders for angle, flat bar, pipe and profiles.",
+  "hydraulic-press": "H-frame, T-slot and straightening shop presses, 33 to 441 US tons, and production hydraulic presses.",
+  "bead-rollers": "Bead rollers, beading machines and a lock seamer for HVAC duct and sheet metal work.",
+  "lock-former": "Pittsburgh lock formers and seam closing machines for HVAC ductwork.",
+  "circle-cutters-and-seamers": "Circle cutting and flanging machines for tank ends, dished heads and duct fittings.",
+  "pipe-benders": "CNC, NC, all-electric and hydraulic pipe and tube benders, Ø15/32″ to Ø8-5/8″.",
+  "pipe-notcher": "Tube notchers and pipe notching machines for the fit-up of tube frames, railings and roll cages.",
+  "tube-end-forming-machines": "Wecotech tube end forming machines from Switzerland — expanding, reducing, beading and flanging.",
+  "wire-bending-machines": "CSM CNC 3D wire benders fed from the coil, Ø5/32″ to Ø9/16″ wire.",
+  "welding-positioners": "Tilting welding positioners for round welds, 220 to 661 lb.",
+  "corner-welding-machines": "Gecam TIG and plasma corner welders for bent boxes, cabinets and enclosures.",
+  "sheet-metal-plate-deburring-edge-rounding-finishing-grinding": "Gecam wide-belt deburring, edge rounding, deslagging and brush machines, 5-7/8″ to 53-1/8″ wide.",
+  "corner-grinding-machines": "Gecam corner grinders for the weld seams of boxes, cabinets, doors and tube frames.",
+  "pipe-sanding-polishing-machines": "Automatic, orbital and centreless pipe sanders and polishers, Ø3/16″ to Ø15-3/4″.",
+  "rebar-bender-and-cutter": "GMS rebar benders, stirrup benders, rebar cutters and automatic processing lines, made in Turkey.",
+  "pvc-aluminum-window-machines": "Plastmak aluminum and PVC window and door machinery — welding, cleaning, CNC machining, assembly and complete lines."
+ },
+ "card_image": {
+  "folder-sheet-metal-brake": "nt-card-roofing-brake",
+  "lock-former": "nt-card-lock-former"
+ },
+ "featured": [
+  "press-brake",
+  "laser-cutting-machine",
+  "tube-laser-cutting-machine",
+  "band-saw",
+  "rebar-bender-and-cutter",
+  "plate-rollers",
+  "ironworker-machines",
+  "shear-cutting",
+  "pipe-benders",
+  "panel-bender",
+  "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+  "press-brake-tooling-punch-and-die"
+ ],
+ "brands": [
+  {
+   "name": "Dener",
+   "country": "Turkey",
+   "since": "1974",
+   "logo": null,
+   "href": "press-brake.html",
+   "what": "CNC press brakes, panel benders, hydraulic shears, sheet and tube fiber lasers"
+  },
+  {
+   "name": "GMS",
+   "country": "Turkey",
+   "since": "1960",
+   "logo": null,
+   "href": "rebar-bender-and-cutter.html",
+   "what": "Rebar benders, stirrup benders, rebar cutters and automatic rebar processing lines"
+  },
+  {
+   "name": "ISITAN",
+   "country": "Turkey",
+   "since": "1959",
+   "logo": "isitan-logo",
+   "href": "plate-rollers.html",
+   "what": "Plate rollers, pipe benders, cold saws, tube notchers, bead rollers and circle cutters"
+  },
+  {
+   "name": "Bekamak",
+   "country": "Turkey",
+   "since": "1990",
+   "logo": "bekamak-logo",
+   "href": "band-saw.html",
+   "what": "Manual, semi-automatic and automatic band saws and automatic circular saws"
+  },
+  {
+   "name": "Gecam",
+   "country": "Italy",
+   "since": null,
+   "logo": "gecam-logo",
+   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
+   "what": "Deburring and edge rounding machines, corner grinders and corner welders"
+  },
+  {
+   "name": "Eurofintec",
+   "country": "Italy",
+   "since": null,
+   "logo": "eurofintec-logo",
+   "href": "pipe-sanding-polishing-machines.html",
+   "what": "Orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring"
+  },
+  {
+   "name": "EUROSTAMP",
+   "country": "Italy",
+   "since": "1970",
+   "logo": "eurostamp-logo",
+   "href": "press-brake-tooling-punch-and-die.html",
+   "what": "Press brake punches, dies, holders and adapters for every clamping style"
+  },
+  {
+   "name": "CSM",
+   "country": "Taiwan",
+   "since": "1982",
+   "logo": "csm-logo",
+   "href": "pipe-benders.html",
+   "what": "CNC and hydraulic tube benders, CNC wire benders and automatic saws"
+  },
+  {
+   "name": "Senfeng",
+   "country": "China",
+   "since": "2004",
+   "logo": "senfeng-logo",
+   "href": "laser-cutting-machine.html",
+   "what": "Fiber laser cutting machines, laser welding and cladding, panel benders"
+  },
+  {
+   "name": "Cevisa",
+   "country": "Spain",
+   "since": "1969",
+   "logo": "cevisa-logo",
+   "href": "plate-beveler.html",
+   "what": "Shearing and milling plate bevellers for weld preparation"
+  },
+  {
+   "name": "Plastmak",
+   "country": "Turkey",
+   "since": null,
+   "logo": "plastmak-logo",
+   "href": "pvc-aluminum-window-machines.html",
+   "what": "Aluminum and PVC window and door machinery, from single machines to complete lines"
+  },
+  {
+   "name": "Tubend",
+   "country": "Turkey",
+   "since": null,
+   "logo": "tubend-logo",
+   "href": "horizontal-press-brake.html",
+   "what": "Hydraulic horizontal presses, pipe benders and welding positioners"
+  },
+  {
+   "name": "Wecotech",
+   "country": "Switzerland",
+   "since": null,
+   "logo": null,
+   "href": "tube-end-forming-machines.html",
+   "what": "Tube end forming machines: expanders, reducers, inner and outer formers"
+  },
+  {
+   "name": "WIKUS",
+   "country": "Germany",
+   "since": null,
+   "logo": null,
+   "href": "band-saw-blades.html",
+   "what": "Bimetal and carbide-tipped band saw blades, welded to length"
+  },
+  {
+   "name": "NovoTech premium line",
+   "country": "Turkey",
+   "since": null,
+   "logo": "novotech-logo",
+   "href": "plate-rollers.html",
+   "what": "Plate rollers, angle rolls, ironworkers, hydraulic presses, shears and pipe polishers built to NovoTech's specification with European components"
+  },
+  {
+   "name": "NovoTech value line",
+   "country": "China",
+   "since": null,
+   "logo": "novotech-logo",
+   "href": "novotech-cnc-press-brakes.html",
+   "what": "CNC press brakes, fiber lasers, shears, panel benders and band saws built to North American quality standards"
+  }
+ ],
+ "brochures": [
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
+   "title": "Dener hydraulic and hybrid CNC press brakes"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Dener-Servo-Press-Brakes-2026.pdf",
+   "title": "Dener servo-electric press brakes"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+   "title": "NovoTech value-line hydraulic press brakes"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
+   "title": "NovoTech value-line electric press brakes"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Dener-Panel-Bender-2026.pdf",
+   "title": "Dener CNC panel bender"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Panel-Benders-Value-Line-2026.pdf",
+   "title": "NovoTech value-line panel benders"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Senfeng-Panel-Benders-2026.pdf",
+   "title": "Senfeng panel benders"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-V-Grooving-Machines-2026.pdf",
+   "title": "CNC V-grooving machines"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
+   "title": "Tubend horizontal presses, pipe benders and welding positioners"
+  },
+  {
+   "group": "bending",
+   "file": "files/NovoTech-Press-Brake-Tooling-Catalogue-2026.pdf",
+   "title": "EUROSTAMP press brake tooling catalogue — inch edition"
+  },
+  {
+   "group": "laser",
+   "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
+   "title": "Dener fiber laser cutting machines"
+  },
+  {
+   "group": "laser",
+   "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
+   "title": "NovoTech value-line fiber lasers"
+  },
+  {
+   "group": "laser",
+   "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+   "title": "Senfeng fiber laser cutting machines"
+  },
+  {
+   "group": "laser",
+   "file": "files/NovoTech-Dener-Tube-Lasers-2026.pdf",
+   "title": "Dener tube laser cutting machines"
+  },
+  {
+   "group": "laser",
+   "file": "files/NovoTech-Tube-Lasers-Value-Line-2026.pdf",
+   "title": "NovoTech value-line tube lasers"
+  },
+  {
+   "group": "laser",
+   "file": "files/NovoTech-Senfeng-Tube-Lasers-2026.pdf",
+   "title": "Senfeng tube laser cutting machines"
+  },
+  {
+   "group": "laser",
+   "file": "files/NovoTech-Senfeng-Laser-Welding-Cladding-2026.pdf",
+   "title": "Senfeng laser welding and cladding machines"
+  },
+  {
+   "group": "cutting",
+   "file": "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf",
+   "title": "Dener hydraulic guillotine shears"
+  },
+  {
+   "group": "cutting",
+   "file": "files/NovoTech-Guillotine-Shears-2026.pdf",
+   "title": "NovoTech premium-line mechanical guillotine shears"
+  },
+  {
+   "group": "cutting",
+   "file": "files/NovoTech-Hydraulic-Shearing-Machines-2026.pdf",
+   "title": "NovoTech value-line hydraulic shears"
+  },
+  {
+   "group": "cutting",
+   "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+   "title": "NovoTech value-line sheet metal shears"
+  },
+  {
+   "group": "cutting",
+   "file": "files/NovoTech-Ironworkers-Punching-Machines-2026.pdf",
+   "title": "NovoTech premium-line ironworkers and punching machines"
+  },
+  {
+   "group": "cutting",
+   "file": "files/NovoTech-Cevisa-Plate-Bevelling-Machines-2026.pdf",
+   "title": "Cevisa plate bevelling machines"
+  },
+  {
+   "group": "sawing",
+   "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+   "title": "Bekamak band saw and circular saw catalogue"
+  },
+  {
+   "group": "sawing",
+   "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
+   "title": "NovoTech value-line band saw catalogue"
+  },
+  {
+   "group": "rolling",
+   "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
+   "title": "NovoTech premium-line plate rolls"
+  },
+  {
+   "group": "rolling",
+   "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
+   "title": "ISITAN machinery catalogue"
+  },
+  {
+   "group": "rolling",
+   "file": "files/NovoTech-Angle-Rolls-Section-Benders-2026.pdf",
+   "title": "Angle rolls and section benders"
+  },
+  {
+   "group": "rolling",
+   "file": "files/NovoTech-Hydraulic-Shop-Presses-2026.pdf",
+   "title": "Hydraulic shop presses"
+  },
+  {
+   "group": "rolling",
+   "file": "files/NovoTech-Production-Hydraulic-Presses-2026.pdf",
+   "title": "Production hydraulic presses"
+  },
+  {
+   "group": "rolling",
+   "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
+   "title": "Corner notchers, circle cutters, pipe polishers and benders"
+  },
+  {
+   "group": "tube",
+   "file": "files/NovoTech-CSM-Electric-Tube-Benders-2026.pdf",
+   "title": "CSM electric tube and wire benders"
+  },
+  {
+   "group": "tube",
+   "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+   "title": "CSM hydraulic tube benders, end formers and saws"
+  },
+  {
+   "group": "tube",
+   "file": "files/NovoTech-Wecotech-Tube-End-Forming-2026.pdf",
+   "title": "Wecotech tube end forming machines"
+  },
+  {
+   "group": "finishing",
+   "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+   "title": "Gecam and Eurofintec deburring, finishing and pipe sanding"
+  },
+  {
+   "group": "rebar",
+   "file": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+   "title": "GMS rebar bending and cutting machines"
+  },
+  {
+   "group": "windows",
+   "file": "files/NovoTech-Plastmak-Window-Machinery-2026.pdf",
+   "title": "Plastmak aluminum and PVC window machinery"
+  }
+ ]
+}
