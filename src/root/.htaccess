@@ -18,6 +18,9 @@ RewriteRule ^([^.]+)$ $1.html [L]
 # ---- Old URLs that changed (add one line per moved page) ---------------------
 # RedirectMatch 301 ^/old-page(\.html)?$ /new-page
 RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw
+RedirectMatch 301 ^/sheet-metal-deburring-machines(\.html)?$ /sheet-metal-plate-deburring-edge-rounding-finishing-grinding
+RedirectMatch 301 ^/edge-rounding-deslagging-machines(\.html)?$ /sheet-metal-plate-deburring-edge-rounding-finishing-grinding
+RedirectMatch 301 ^/brush-deburring-machines(\.html)?$ /sheet-metal-plate-deburring-edge-rounding-finishing-grinding
 RedirectMatch 301 ^/plate-roller-bender(\.html)?$ /plate-rollers
 RedirectMatch 301 ^/plate-roller-buying-guide(\.html)?$ /plate-rollers#buying-guide
 RedirectMatch 301 ^/bead-roller-hvac-forming-pittsburgh-lock-former(\.html)?$ /bead-rollers
@@ -119,9 +122,9 @@ Redirect 301 "/files/Gecam-deburring-and-finishing-machines-borchure.pdf" "/file
 Redirect 301 "/files/pipe-and-sheet-metal-deburing-polishing-and-grinding-machines-GECAM-EUROFINTEC.pdf" "/files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf"
 Redirect 301 "/files/136-and-131-seam-weld-corner-grinder.pdf" "/corner-grinding-machines"
 Redirect 301 "/files/metal-box-deburring-and-grinding-machine.pdf" "/corner-grinding-machines"
-Redirect 301 "/files/manual-deburring-and-grinding-machine-Cub-30-BB_eng.pdf" "/brush-deburring-machines"
-Redirect 301 "/files/manual-deburring-and-grinding-machine-GECAM-Easy-T.pdf" "/brush-deburring-machines"
-Redirect 301 "/files/plate-deburring-grinding-edge-rounding-polishing-finishing-for-laser-and-plasma-cut-parts-GECAM.pdf" "/sheet-metal-deburring-machines"
+Redirect 301 "/files/manual-deburring-and-grinding-machine-Cub-30-BB_eng.pdf" "/sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
+Redirect 301 "/files/manual-deburring-and-grinding-machine-GECAM-Easy-T.pdf" "/sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
+Redirect 301 "/files/plate-deburring-grinding-edge-rounding-polishing-finishing-for-laser-and-plasma-cut-parts-GECAM.pdf" "/sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
 Redirect 301 "/files/special-machines-for-deburring-polishing-and-grinding-sheet-metal.pdf" "/sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
 Redirect 301 "/files/pipe-centerless-grinding-and-polishing-machine-GECAM.pdf" "/pipe-sanding-polishing-machines"
 Redirect 301 "/files/143-tube-and-pipe-deburring-machine-GECAM-MADE-IN-ITALY-.pdf" "/pipe-sanding-polishing-machines"

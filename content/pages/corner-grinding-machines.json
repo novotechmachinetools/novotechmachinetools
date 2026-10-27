@@ -2,11 +2,11 @@
  "slug": "corner-grinding-machines",
  "template": "category.html",
  "family_set": "gecam",
- "title": "Corner Grinders & Weld Seam Sanders, Edges to 59″ | NovoTech",
- "artifact_title": "Corner grinders — weld seam grinding machines for boxes, cabinets, doors and tube frames",
- "meta_description": "Corner grinding machines that take the welds on box, cabinet and door corners flush or to a radius: hand-fed, automatic and PLC machines for series work.",
- "h1": "Corner grinders — weld seam grinding machines for boxes, cabinets, doors and tube frames",
- "intro": "A corner grinder (corner sanding machine, weld seam sander) grinds the weld on the corner of a welded box, cabinet, door or tray flush with the sheet, or to a neat radius, ready for paint or polishing — work that takes long minutes with a hand grinder and never looks the same twice. NovoTech sells the corner grinders of Gecam, built in Parma, Italy: the hand-fed 131 and 136, where an abrasive belt on an oscillating fork grinds corners up to 5-7/8″ and 11-13/16″ high to a radius of 3/64″ to 3/8″; the 135, whose head travels the full length of the edge by itself on boxes with edges up to 59″; and PLC-controlled machines for series work — an upper-corner grinder, a six-head grinder and a grinder for the welds of 90° tube frames. Supplied with a CSA-approved panel, installed and supported from Mississauga, ON.",
+ "title": "Corner Grinders — Corner Grinding Machines to 59″ | NovoTech",
+ "artifact_title": "Corner grinders — corner grinding machines for the weld seams of boxes, cabinets, doors and tube frames",
+ "meta_description": "Corner grinders (corner grinding machines, corner sanders) that grind the welds on box, cabinet and door corners flush or to a radius: hand-fed, automatic and PLC.",
+ "h1": "Corner grinders — corner grinding machines for the weld seams of boxes, cabinets, doors and tube frames",
+ "intro": "A corner grinder (corner grinding machine, also called a corner sander or weld seam sander) grinds the weld on the corner of a welded box, cabinet, door or tray flush with the sheet, or to a neat radius, ready for paint or polishing — work that takes long minutes with a hand grinder and never looks the same twice. NovoTech sells the corner grinders of Gecam, built in Parma, Italy: the hand-fed 131 and 136, where an abrasive belt on an oscillating fork grinds corners up to 5-7/8″ and 11-13/16″ high to a radius of 3/64″ to 3/8″; the 135, whose head travels the full length of the edge by itself on boxes with edges up to 59″; and PLC-controlled machines for series work — an upper-corner grinder, a six-head grinder and a grinder for the welds of 90° tube frames. Supplied with a CSA-approved panel, installed and supported from Mississauga, ON.",
  "hero_points": [
   "131 · 136: hand-fed, corners to 5-7/8″ and 11-13/16″ high, radius 3/64″ – 3/8″ or sharp",
   "135: automatic head travel along edges up to 31-1/2″ or 59″, one or two heads",
@@ -27,11 +27,7 @@
    "href": "products.html"
   },
   {
-   "label": "Deburring & finishing",
-   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
-  },
-  {
-   "label": "Corner grinders — weld seam grinding machines for boxes, cabinets, doors and tube frames"
+   "label": "Corner grinders — corner grinding machines for the weld seams of boxes, cabinets, doors and tube frames"
   }
  ],
  "hero_brand_line": "Gecam machines are designed and built in Parma, Italy, by GECAM — deburring, grinding and finishing machines made 100 % in Italy, with components from Italian suppliers within 125 miles of the plant. Sold, installed and supported in Canada by NovoTech.",
@@ -92,78 +88,22 @@
   "title": "Made in Italy by Gecam",
   "text": "Gecam designs and builds deburring, grinding and finishing machines at Vicofertile, Parma — 100 % made in Italy, with components from Italian suppliers within 125 miles (200 km) of the plant. In 2005 it took over Eurofintec, the abrasive-belt machine builder whose name its pipe and belt machines still carry."
  },
- "section_label": "Deburring & finishing",
+ "section_label": "Corner grinders",
  "related_pages": [
   {
-   "href": "sheet-metal-deburring-machines.html",
-   "label": "Sheet metal deburring machines"
-  },
-  {
-   "href": "edge-rounding-deslagging-machines.html",
-   "label": "Edge rounding & deslagging machines"
-  },
-  {
-   "href": "brush-deburring-machines.html",
-   "label": "Brush deburring machines & benches"
+   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
+   "label": "Metal deburring & finishing machines"
   },
   {
    "href": "pipe-sanding-polishing-machines.html",
-   "label": "Pipe sanding & polishing"
-  },
-  {
-   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
-   "label": "All deburring & finishing machines"
+   "label": "Pipe sanding & polishing machines"
   },
   {
    "href": "corner-welding-machines.html",
    "label": "Corner welders"
-  },
-  {
-   "href": "corner-notcher.html",
-   "label": "Corner notchers"
-  },
-  {
-   "href": "press-brake.html",
-   "label": "Press brakes"
   }
  ],
  "related_title": "More finishing and fabrication machinery from NovoTech",
- "section": {
-  "label": "Deburring & finishing",
-  "hub": {
-   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html",
-   "label": "All deburring & finishing machines",
-   "image": "gc-g135",
-   "blurb": "Every deburring, edge rounding, brush, corner grinding and pipe sanding machine NovoTech supplies, in one table."
-  },
-  "pages": [
-   {
-    "href": "sheet-metal-deburring-machines.html",
-    "label": "Sheet metal deburring",
-    "current": false
-   },
-   {
-    "href": "edge-rounding-deslagging-machines.html",
-    "label": "Edge rounding & deslagging",
-    "current": false
-   },
-   {
-    "href": "brush-deburring-machines.html",
-    "label": "Brush deburring & benches",
-    "current": false
-   },
-   {
-    "href": "corner-grinding-machines.html",
-    "label": "Corner grinders",
-    "current": true
-   },
-   {
-    "href": "pipe-sanding-polishing-machines.html",
-    "label": "Pipe sanding & polishing",
-    "current": false
-   }
-  ]
- },
  "intro_video": {
   "id": "nnEMwdcC5kQ",
   "title": "Gecam corporate introduction",

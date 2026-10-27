@@ -2,12 +2,13 @@
 """Gecam (Parma, Italy) and its Eurofintec division — deburring & finishing hub and pages, the pipe sanding page (with the NovoTech
 premium-line BT 114-S) and the corner welding page; image registration (section 'gecam') and the NovoTech-format brochure spec.
 
-    Deburring & finishing machines  sheet-metal-plate-deburring-edge-rounding-finishing-grinding (hub, the old site's URL)
-        ├ sheet-metal-deburring-machines        G15 · G30 · G65 · G135 · GM65 · GM110 · G30 WET · G65/135 WET
-        ├ edge-rounding-deslagging-machines     G135RB8 · GT06 · GT13 · G65DCC
-        ├ brush-deburring-machines              CUB 30 · CUB 65BB · CUB 30B1B2 · EASY T · GCB 25 / 30 / 40
-        ├ corner-grinding-machines              135 · 136 · 131 · special corner grinders
-        └ pipe-sanding-polishing-machines       BT 114-S (NovoTech premium line) · Eurofintec 141 · 144 · 128 S / SL / DL · 228 · 728 · 143
+    Metal deburring & finishing     sheet-metal-plate-deburring-edge-rounding-finishing-grinding (one page, the old site's URL):
+                                    wide-belt deburring G15 · G30 · G65 · G135 · GM65 · GM110 · G30 WET · G65/135 WET,
+                                    edge rounding & deslagging G135RB8 · GT06 · GT13 · G65DCC,
+                                    brush machines & benches CUB 30 · CUB 65BB · CUB 30B1B2 · EASY T · GCB 25 / 30 / 40
+    Corner grinders                 corner-grinding-machines                  135 · 136 · 131 · special corner grinders
+    Pipe sanding & polishing        pipe-sanding-polishing-machines           BT 114-S (NovoTech premium line, first) · Eurofintec 141 · 144 ·
+                                                                              128 S / SL / DL · 228 · 728 · 143 — a menu item of its own, no hub
     Corner welders                  corner-welding-machines                   CWS 200 · CWS 300
 
     python3 tools/gecam_photos.py                    # gecam.com, catalogue and brochure images → tools/src-images/gecam
@@ -186,10 +187,10 @@ PAGE_BRUSH = dict(
 
 # ------------------------------------------------------------------------------------------------ corner grinders
 PAGE_CORNER = dict(
-    title="Corner Grinders & Weld Seam Sanders, Edges to 59″ | NovoTech",
-    meta="Corner grinding machines that take the welds on box, cabinet and door corners flush or to a radius: hand-fed, automatic and PLC machines for series work.",
-    h1="Corner grinders — weld seam grinding machines for boxes, cabinets, doors and tube frames",
-    intro="A corner grinder (corner sanding machine, weld seam sander) grinds the weld on the corner of a welded box, cabinet, door or "
+    title="Corner Grinders — Corner Grinding Machines to 59″ | NovoTech",
+    meta="Corner grinders (corner grinding machines, corner sanders) that grind the welds on box, cabinet and door corners flush or to a radius: hand-fed, automatic and PLC.",
+    h1="Corner grinders — corner grinding machines for the weld seams of boxes, cabinets, doors and tube frames",
+    intro="A corner grinder (corner grinding machine, also called a corner sander or weld seam sander) grinds the weld on the corner of a welded box, cabinet, door or "
           "tray flush with the sheet, or to a neat radius, ready for paint or polishing — work that takes long minutes with a hand "
           "grinder and never looks the same twice. NovoTech sells the corner grinders of Gecam, built in Parma, Italy: the hand-fed 131 "
           "and 136, where an abrasive belt on an oscillating fork grinds corners up to 5-7/8″ and 11-13/16″ high to a radius of 3/64″ to "
@@ -317,20 +318,20 @@ PAGE_WELD = dict(
 # ------------------------------------------------------------------------------------------------ hub
 HUB_PAGE = dict(
     title="Metal Deburring & Finishing Machines, 6″ – 53″ | NovoTech",
-    meta="Deburring, edge rounding, deslagging, corner grinding and pipe sanding machines for laser-, plasma- and punch-cut parts, welded boxes and tube.",
-    h1="Deburring and finishing machines — for laser-cut parts, welded boxes and tube",
+    meta="Deburring, edge rounding, deslagging, brush and corner grinding machines for laser-, plasma- and punch-cut parts and welded boxes.",
+    h1="Deburring and finishing machines — for laser-cut parts and welded boxes",
     intro="A deburring machine takes the burr, slag and sharp edges off cut metal parts and gives them an even finish, so they can be "
           "handled safely, painted evenly and assembled without hand grinding. NovoTech supplies the machines of Gecam, built in Parma, "
           "Italy: wide-belt deburring machines from the 5-7/8″ G15 to the 53-1/8″ G135, dry or wet; edge rounding machines that round "
           "edges to 5/64″, inside holes and on both sides at once; a deslagging machine for plasma and oxy-fuel parts; brush deburring "
           "machines and benches for shops that do not need a wide-belt line; and corner grinders for the welds of boxes, cabinets and "
-          "tube frames. The pipe page adds the Eurofintec orbital and centreless pipe sanders, built by Gecam, and the NovoTech "
-          "premium-line BT 114-S. Every machine is supplied with a CSA-approved panel, installed, and supported from Mississauga, ON. "
+          "tube frames. Pipe sanders and polishers have a page of their own. Every machine is supplied with a CSA-approved panel, "
+          "installed, and supported from Mississauga, ON. "
           "Below, each page in brief and every model in one table.",
     points=[f"<a href=\"{D.P_SHEET}\">Sheet metal deburring machines</a> — wide-belt deburring and satin finishing, 5-7/8″ to 53-1/8″, dry or wet",
             f"<a href=\"{D.P_EDGE}\">Edge rounding & deslagging</a> — radius to 5/64″, both sides in one pass · <a href=\"{D.P_BRUSH}\">brush deburring machines & benches</a>",
-            f"<a href=\"{D.P_CORNER}\">Corner grinders</a> for box welds · <a href=\"{D.P_PIPE}\">pipe sanders & polishers</a> to Ø15-3/4″"],
-    hero="gc-g135", minis=["gc-135", "ef-144"],
+            f"<a href=\"{D.P_CORNER}\">Corner grinders</a> for the welds of boxes, cabinets, doors and tube frames"],
+    hero="gc-g135", minis=["gc-135", "gc-g65"],
     faq=[{"q": "What does a deburring machine do?",
           "a": "It removes the burr that laser cutting, punching, shearing and plasma cutting leave on a part's edges, rounds the sharp "
                "edges and evens out the surface — in one pass on a conveyor, where hand grinding takes minutes per part and never comes "
@@ -352,19 +353,48 @@ HUB_PAGE = dict(
                "parts and train the operators; abrasives, brushes and parts are supplied from Mississauga, ON, and we support every "
                "machine by video call."},
          VOLT_FAQ_GENERIC],
-    range_lead="Capacity, part thickness, feed, working groups and weight for every model on the five pages. Each row links to the full specification table of its machine.",
+    range_lead="Capacity, part thickness, feed, working groups and weight for every model on the four pages. Each row links to the full specification table of its machine.",
     range_cols=["Capacity", "Part thickness", "Feed", "Working groups / tools", "Weight"],
-    range_caption="Deburring, edge rounding, corner grinding and pipe sanding machines supplied by NovoTech — Gecam, Eurofintec and the NovoTech premium line",
+    range_caption="Deburring, edge rounding, brush and corner grinding machines supplied by NovoTech — Gecam, built in Parma, Italy",
     range_note="Working width is the widest part the machine takes; tube capacities are outside diameters. Feed is the conveyor or part speed. Weights are approximate and depend on the groups fitted.",
 )
+# ------------------------------------------------------------------------------------------------ the one deburring page
+DEBUR_FAQ = HUB_PAGE["faq"][:4] + [q for q in PAGE_SHEET["faq"] if q is not VOLT_FAQ_GENERIC] + \
+    [q for q in PAGE_EDGE["faq"] if q is not VOLT_FAQ_GENERIC and q["q"] != "What is deslagging?"] + \
+    [q for q in PAGE_BRUSH["faq"] if q is not VOLT_FAQ_GENERIC] + [HUB_PAGE["faq"][4], VOLT_FAQ_GENERIC]
+for _q in DEBUR_FAQ:                                     # the answers now point into this page, not to another one
+    _q["a"] = _q["a"].replace(", on the sheet metal deburring page.", ", further up this page.")
+PAGE_DEBUR = dict(
+    title="Metal Deburring & Finishing Machines, 6″ – 53″ | NovoTech",
+    meta="Gecam wide-belt deburring, edge rounding, deslagging and brush deburring machines and benches for laser-, punch- and plasma-cut parts, dry or wet.",
+    h1="Metal deburring and finishing machines, 5-7/8″ to 53-1/8″ wide",
+    intro="A metal deburring machine takes the burr, slag and sharp edges off laser-, punch- and plasma-cut parts and gives them an even "
+          "finish — in one pass on a conveyor, where hand grinding takes minutes per part and never comes out the same twice. NovoTech "
+          "sells the machines of Gecam, built in Parma, Italy, small to large: wide-belt deburring and satin-finishing machines from the "
+          "5-7/8″ G15 to the 53-1/8″ G135, dry or wet, with an abrasive belt, top brushes and Scotch-Brite brushes in one pass; edge "
+          "rounding machines that round every edge to 5/64″ (2 mm), inside holes too, or both sides of the part at once; the G65DCC, "
+          "which breaks the slag off thick plasma and oxy-fuel parts; and, for shops that do not need a wide-belt line, CUB brush "
+          "machines, the EASY T brushing workstation and GCB crossed-belt benches for heavy, long and shaped parts. Supplied with a "
+          "CSA-approved panel, installed and supported from Mississauga, ON.",
+    points=["Wide-belt deburring and satin finishing, 5-7/8″ to 53-1/8″ wide · parts .020″ to 4-3/4″ thick, dry or wet",
+            "Edge rounding to 5/64″ (2 mm), both sides in one pass on the GT06 and GT13 · G65DCC deslagging for plasma parts 3/8″ – 4-3/4″",
+            "CUB conveyor brush machines, the EASY T vacuum-table workstation and GCB crossed-belt benches for heavy and shaped parts"],
+    hero="gc-g135", minis=["gc-g135rb8", "gc-cub"],
+    groups=PAGE_SHEET["groups"] + PAGE_EDGE["groups"] + PAGE_BRUSH["groups"],
+    faq=DEBUR_FAQ,
+    faq_title="Questions we get asked about metal deburring machines",
+    related_pages=[{"href": f"{D.P_CORNER}.html", "label": "Corner grinders"}, {"href": f"{D.P_PIPE}.html", "label": "Pipe sanding & polishing machines"},
+                   {"href": "corner-welding-machines.html", "label": "Corner welders"}, {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"},
+                   {"href": "plate-beveler.html", "label": "Plate bevelers"}, {"href": "press-brake.html", "label": "Press brakes"}],
+)
+
 SUBPAGES = [  # slug, title, image, blurb, nav label
     (D.P_SHEET, "Sheet metal deburring machines", "gc-g65", "Gecam G15, G30, G65, G135 and GM wide-belt deburring and satin finishing machines, 5-7/8″ to 53-1/8″ wide, dry or wet.", "Sheet metal deburring"),
     (D.P_EDGE, "Edge rounding & deslagging machines", "gc-g135rb8", "G135RB8 brush-carousel edge rounding to 5/64″, GT06 and GT13 double-sided edge rounding, G65DCC deslagging for plasma parts.", "Edge rounding & deslagging"),
     (D.P_BRUSH, "Brush deburring machines & benches", "gc-cub", "CUB conveyor brush machines, the EASY T vacuum-table workstation and GCB crossed-belt benches for heavy and shaped parts.", "Brush deburring & benches"),
     (D.P_CORNER, "Corner grinders", "gc-135", "Hand-fed 131 and 136, automatic 135 and PLC corner grinders for the welds of boxes, cabinets, doors and tube frames.", "Corner grinders"),
-    (D.P_PIPE, "Pipe sanding & polishing", "ef-144", "BT 114-S automatic pipe sander, Eurofintec orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring.", "Pipe sanding & polishing"),
 ]
-PAGES = {D.P_SHEET: PAGE_SHEET, D.P_EDGE: PAGE_EDGE, D.P_BRUSH: PAGE_BRUSH, D.P_CORNER: PAGE_CORNER, D.P_PIPE: PAGE_PIPE}
+PAGES = {D.P_SHEET: PAGE_SHEET, D.P_EDGE: PAGE_EDGE, D.P_BRUSH: PAGE_BRUSH, D.P_CORNER: PAGE_CORNER}
 
 PIPE_EXTRA = {
     "hero_brand_line": "Eurofintec pipe sanders are built in Parma, Italy, by Gecam; the BT 114-S is NovoTech's premium line, built in Turkey to "
@@ -433,31 +463,34 @@ def video_ids():
 
 
 def build():
+    for f in ALL:                                          # the three deburring pages are one page now
+        if f["page"] in (D.P_SHEET, D.P_EDGE, D.P_BRUSH):
+            f["page"] = D.P_HUB
     write_families(SET, ALL)
-    hub = {"slug": D.P_HUB, "label": "All deburring & finishing machines", "image": "gc-g135",
-           "blurb": "Every deburring, edge rounding, brush, corner grinding and pipe sanding machine NovoTech supplies, in one table."}
-    sib = [(s, nav, title) for s, title, _, _, nav in SUBPAGES]
-    for slug, p in PAGES.items():
-        extra = dict(SHARED, nav_label=dict((s, nav) for s, _, _, _, nav in SUBPAGES)[slug])
-        if slug == D.P_PIPE:
-            extra.update(PIPE_EXTRA)
-        write_category(slug, {**p, "related_title": RELATED_TITLE}, ALL, SET, SECTION, hub=hub, siblings=sib, extra=extra)
+    pipe_related = [{"href": f"{D.P_HUB}.html", "label": "Metal deburring & finishing machines"},
+                    {"href": f"{D.P_CORNER}.html", "label": "Corner grinders"},
+                    {"href": "tube-end-forming-machines.html", "label": "Tube end formers"}, {"href": "pipe-notcher.html", "label": "Tube notchers"}]
+    # the wide-belt, edge rounding / deslagging and brush machines on one page (the old site's URL); corner grinders and pipe
+    # sanders are menu items of their own — no hub
+    write_category(D.P_HUB, {**PAGE_DEBUR, "related_title": RELATED_TITLE}, ALL, SET, "Metal deburring & finishing machines",
+                   extra={**SHARED, "nav_label": "Metal deburring & finishing machines"})
+    write_category(D.P_CORNER, {**PAGE_CORNER, "related_title": RELATED_TITLE,
+                                "related_pages": [{"href": f"{D.P_HUB}.html", "label": "Metal deburring & finishing machines"},
+                                                  {"href": f"{D.P_PIPE}.html", "label": "Pipe sanding & polishing machines"},
+                                                  {"href": "corner-welding-machines.html", "label": "Corner welders"}]},
+                   ALL, SET, "Corner grinders", extra={**SHARED, "nav_label": "Corner grinders"})
+    write_category(D.P_PIPE, {**PAGE_PIPE, "related_title": RELATED_TITLE, "related_pages": pipe_related},
+                   ALL, SET, "Pipe sanding & polishing machines", extra={**SHARED, **PIPE_EXTRA, "nav_label": "Pipe sanding & polishing machines"})
     write_category(D.P_WELD, PAGE_WELD, ALL, SET, "Corner welders", extra={**SHARED, "nav_label": "Corner welders"})
-    write_hub(D.P_HUB, {**HUB_PAGE, "artifact_title": "Deburring & Finishing Machines", "faq_title": "Questions we get asked about deburring machines",
-                        "nav_label": "All deburring & finishing machines", "related_blurb": hub["blurb"]},
-              ALL, SET, SECTION, SUBPAGES,
-              extra={**SHARED, "range_pick": ["capacity", "thickness", "feed", ["tools", "belt"], "weight"],
-                     "catalogue_pdf": None, "catalogue_pdfs": [pdf(), premium_pdf("premium-sheet-metal")],
-                     "hero_brand_line": "Gecam and Eurofintec machines are built in Parma, Italy, by Gecam; the BT 114-S is NovoTech's premium line, built in "
-                                        "Turkey. All sold, installed and supported in Canada by NovoTech.",
-                     "related_pages": [{"href": f"{s}.html", "label": t} for s, t, _, _, _ in SUBPAGES] +
-                                      [{"href": "corner-welding-machines.html", "label": "Corner welders"}, {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"},
-                                       {"href": "plate-beveler.html", "label": "Plate bevelers"}]})
+    for old in (D.P_SHEET, D.P_EDGE, D.P_BRUSH):          # merged into the deburring page
+        fp = os.path.join(ROOT, "content", "pages", f"{old}.json")
+        if os.path.exists(fp):
+            os.remove(fp)
     keys = register_images()
     write_brochure_specs()
-    pages = list(PAGES.values()) + [PAGE_WELD, HUB_PAGE]
+    pages = [PAGE_DEBUR, PAGE_CORNER, PAGE_PIPE, PAGE_WELD]
     used = {k for f in D.FAMILIES for k in f["images"]} | {p["hero"] for p in pages} | {m for p in pages for m in p["minis"]}
-    used |= set(BROCHURE["cover_photos"]) | {s[2] for s in SUBPAGES}
+    used |= set(BROCHURE["cover_photos"])
     used -= {k for f in BT114 for k in f["images"]} | {"sh-bt114s"}          # registered by tools/sahinler_pages.py
     unused = sorted(set(keys) - used - {"gecam-logo", "eurofintec-logo"})
     if unused:
@@ -466,7 +499,7 @@ def build():
     if missing:
         print("!! image keys without a photo (export still running?):", missing)
     open(os.path.join(ROOT, "tools", "gecam_vids.txt"), "w").write(" ".join(video_ids()))
-    for name, p in [("hub", HUB_PAGE)] + [(s, PAGES[s]) for s in PAGES] + [("weld", PAGE_WELD)]:
+    for name, p in [("deburring", PAGE_DEBUR), ("corner", PAGE_CORNER), ("pipe", PAGE_PIPE), ("weld", PAGE_WELD)]:
         print(f"{name:42s} title {len(p['title'])} · meta {len(p['meta'])}")
     print(f"gecam: {len(D.FAMILIES)} families · {sum(len(f['specs']['models']) for f in D.FAMILIES)} models · images: {len(keys)} · videos: {len(video_ids())}")
 
