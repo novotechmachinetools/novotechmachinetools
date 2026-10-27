@@ -89421,5 +89421,53 @@
    "bytes": 6788
   },
   "cut": "birefnet"
+ },
+ "es-am-intermediate": {
+  "alt": "Z1 intermediate for American-style punches \u2014 on its own and with a punch in place; the clamp dashed (drawing, inches and millimetres)",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1548,
+    "file": "img/tooling/es-am-intermediate-1200.webp",
+    "bytes": 19572
+   },
+   {
+    "w": 800,
+    "h": 1032,
+    "file": "img/tooling/es-am-intermediate-800.webp",
+    "bytes": 12766
+   },
+   {
+    "w": 480,
+    "h": 619,
+    "file": "img/tooling/es-am-intermediate-480.webp",
+    "bytes": 7360
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 124,
+   "h": 160,
+   "file": "img/tooling/es-am-intermediate-thumb.webp",
+   "bytes": 1742
+  }
+ },
+ "es-am-intermediate-tang": {
+  "alt": "The American-style punch tang the Z1 intermediate takes: .500\u2033 wide, .622\u2033 with the safety lip (drawing, inches and millimetres)",
+  "variants": [
+   {
+    "w": 480,
+    "h": 631,
+    "file": "img/tooling/es-am-intermediate-tang-480.webp",
+    "bytes": 6898
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 122,
+   "h": 160,
+   "file": "img/tooling/es-am-intermediate-tang-thumb.webp",
+   "bytes": 1242
+  }
  }
 }

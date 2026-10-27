@@ -94,7 +94,7 @@ def assemble(out_path):
     # the edition page shows punch 1055 on page 36 as it now is
     sample = os.path.join(WORK, "edition-sample.png")
     src, i = by_page[36]
-    src[i].get_pixmap(dpi=230, clip=fitz.Rect(40, 56, 331, 462)).save(sample)
+    src[i].get_pixmap(dpi=230, clip=fitz.Rect(40, 56, 331, 455)).save(sample)
     front = PG.front_pages(sample)                   # NovoTech cover + edition page (+ back cover last)
     final = fitz.open()
     final.insert_pdf(front, from_page=0, to_page=1)
@@ -121,6 +121,7 @@ def assemble(out_path):
                    [1, "Trumpf style", 91], [1, "Wila style", 147], [1, "Bystronic style", 171], [1, "Accessories", 191],
                    [2, "EUROGRIP clamping systems", 214], [1, "American style (.500″ tang)", am0],
                    [2, "American-style punches", am0 + 2], [2, "American-style dies", am0 + 4],
+                   [2, "Z1 intermediate for American-style punches", am0 + 6],
                    [1, "Contact NovoTech", n]])
     final.set_metadata({"title": "Press brake tooling catalogue — EUROSTAMP, NovoTech inch edition",
                         "author": "NovoTech Machine Tools Inc.",

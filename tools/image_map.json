@@ -26267,5 +26267,23 @@
   "quality": 82,
   "cutout": true,
   "cut_size": 768
+ },
+ "es-am-intermediate": {
+  "src": "tools/src-images/eurostamp/es-am-intermediate.png",
+  "alt": "Z1 intermediate for American-style punches — on its own and with a punch in place; the clamp dashed (drawing, inches and millimetres)",
+  "section": "tooling",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "trim_white": false
+ },
+ "es-am-intermediate-tang": {
+  "src": "tools/src-images/eurostamp/es-am-intermediate-tang.png",
+  "alt": "The American-style punch tang the Z1 intermediate takes: .500″ wide, .622″ with the safety lip (drawing, inches and millimetres)",
+  "section": "tooling",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "trim_white": false
  }
 }

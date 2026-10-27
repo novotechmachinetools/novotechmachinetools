@@ -1,5 +1,6 @@
-"""NovoTech's American-style section for the catalogue edition (pages 272 – 277): EUROSTAMP's American-style punches
-and dies (.500″ tang), laid out like the rest of the catalogue — opener, overview, two pages of punches, two of dies.
+"""NovoTech's American-style section for the catalogue edition (pages 272 – 278): EUROSTAMP's American-style punches
+and dies (.500″ tang), laid out like the rest of the catalogue — opener, overview, two pages of punches, two of dies —
+and the Z1 intermediate that takes American-style punches.
 
 The drawings are EUROSTAMP's own vector drawings (dimensions in decimal inches), placed as they are; the millimetre
 value of every dimension is added beside it in the catalogue's metric blue.  Specifications and part numbers are
@@ -212,8 +213,9 @@ def pn_box(page, ink, x, y, item, width=150.0):
 DIM_RE = re.compile(r"^(R\s?)?(\d*\.\d{3})$")
 
 
-def mm_values(page, areas):
-    """the millimetres of every inch dimension inside `areas` (the drawings), beside or under it in metric blue"""
+def mm_values(page, areas, mm_of=None, order=("after", "below", "before", "above")):
+    """the millimetres of every inch dimension inside `areas` (the drawings), beside or under it in metric blue.
+    `mm_of`: the millimetres to write for an inch text, where the drawing was made in millimetres (the intermediate)"""
     runs = TM.runs(page, None)
     cv = PL.Canvas(page, runs)
     polys = {id(r): r.outline() for r in runs}
@@ -225,9 +227,9 @@ def mm_values(page, areas):
             continue
         k = next(j for j, a in enumerate(areas) if a.contains(r.origin))
         v = float(m.group(2)) * 25.4
-        t = ("R " if m.group(1) else "") + mm_txt(v) + " mm"
+        t = ("R " if m.group(1) else "") + (mm_of[r.t] if mm_of else mm_txt(v)) + " mm"
         others = [polys[id(o)] for o in runs if o is not r]
-        res = PL.place(cv, r, (f"({t})", t), others, order=["after", "below", "before", "above"], weight="light",
+        res = PL.place(cv, r, (f"({t})", t), others, order=list(order), weight="light",
                        color=BLUE, stages=[("clean", 0.78), ("clean", 0.68), ("light", 0.68), ("clean", 0.6),
                                            ("knock", 0.68), ("knock", 0.6)])
         if res:
@@ -438,6 +440,108 @@ def die_page(doc, num, title, items):
     return page, n, miss
 
 
+INT = os.path.join(SRC, "american_intermediate.pdf")          # EUROSTAMP's drawing 'INTERMEDIO AMERICAN STYLE' (mm)
+INT_A = fitz.Rect(92, 64, 312, 350)                           # the intermediate on its own, and with a punch in it
+INT_B = fitz.Rect(90, 360, 172, 470)                          # the punch tang it takes
+INT_ROWS = [("Height", "3.937″ (100 mm)"), ("Upper tang", "1.181″ (30 mm)"), ("Body depth", "1.063″ (27 mm)"),
+            ("Axis from tang face", ".276″ (7 mm)"), ("Punch tang slot", ".500″ (12.7 mm)"),
+            ("Safety-lip pocket", ".650″ (16.5 mm)")]
+
+
+def _int_source():
+    """the sheet without its text (the dimensions are set again: decimal inches, the millimetres in blue), and the
+    dimension texts with where they were"""
+    doc = fitz.open(INT)
+    p = doc[0]
+    labels = []
+    for b in p.get_text("dict")["blocks"]:
+        for ln in b.get("lines", []):
+            for s in ln["spans"]:
+                t = s["text"].strip()
+                if re.fullmatch(r"\d+(,\d+)?", t):
+                    labels.append((t.replace(",", "."), fitz.Rect(s["bbox"]), tuple(ln["dir"]), s["size"]))
+    p.add_redact_annot(p.rect, fill=False)
+    p.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE,
+                       text=fitz.PDF_REDACT_TEXT_REMOVE)
+    return doc, labels
+
+
+def intermediate_page(doc, num):
+    """EUROSTAMP's Z1 intermediate that takes American-style punches: no part number yet, so 'on request'"""
+    import textflow as TF
+    page = doc.new_page(width=W, height=H)
+    ink = P6.Ink(page)
+    ink.put(36.0, 92.0, "Z1 intermediate", 20, "BI", BLUE)
+    ink.put(36.0, 105.5, "for American-style punches · .500″ tang", 9, "M", BLUE)
+    ink.flush()
+    html = ("<p>This intermediate puts American-style punches on press brakes built for Z1 intermediates (Amada-Promecam "
+            "European style). Its body is a standard Z1 — 3.937″ (100 mm) high under a 1.181″ (30 mm) upper tang, "
+            "1.063″ (27 mm) deep, with the bending axis .276″ (7 mm) from the tang face — so it lines up with the "
+            "machine’s other Z1 intermediates.</p>"
+            "<p>The lower slot takes the punch’s .500″ (12.7 mm) tang, with a .650″ (16.5 mm) pocket for its safety "
+            "lip, which holds the punch while the clamp is open. The clamp is drawn dashed: on the left the "
+            "intermediate on its own, next to it with a punch in place.</p>")
+    page.insert_htmlbox(fitz.Rect(36, 116, 561, 190), html, css=TF.CSS, archive=TF.ARCHIVE)
+    src, labels = _int_source()
+    uprights = [(it[1].x, min(it[1].y, it[2].y), max(it[1].y, it[2].y)) for dr in src[0].get_drawings()
+                if (dr.get("width") or 1) < 0.42                  # thin: extension lines, not the centre lines
+                for it in dr["items"] if it[0] == "l" and abs(it[1].x - it[2].x) < 0.05
+                and abs(it[1].y - it[2].y) > 4]                    # (not the arrowheads' bases)
+    s = 1.55
+    areas, mm_of = [], {}
+    for clip, (x0, y0) in ((INT_A, (36.0, 200.0)), (INT_B, (414.0, 412.0))):
+        r = fitz.Rect(x0, y0, x0 + clip.width * s, y0 + clip.height * s)
+        page.show_pdf_page(r, src, 0, clip=clip)
+        areas.append(r)
+        for t, bb, d, size in labels:
+            if not clip.contains(bb):
+                continue
+            txt = inch(float(t) / 25.4)
+            mm_of[txt] = t
+            fs = 8.6
+            w = PL.FONT["light"].text_length(txt, fs)
+            if d[0] > 0.5:                                    # across: centred where the number was, on its line
+                mid, yb = (bb.x0 + bb.x1) / 2, bb.y1 - 0.5           # the extension lines reach the dimension line
+                xl = max([x for x, a, b in uprights if x < mid and a <= yb <= b] or [mid - 99])
+                xr = min([x for x, a, b in uprights if x > mid and a <= yb <= b] or [mid + 99])
+                room = (min(mid - xl, xr - mid) * 2) * s - 1.6  # between the extension lines either side
+                if w > room:                                  # the 7 between the tang face and the axis
+                    fs *= room / w
+                    w = room
+                cx = x0 + (mid - clip.x0) * s
+                base = y0 + (bb.y1 - 0.21 * size - clip.y0) * s
+                PL.put_text(page, fitz.Point(cx - w / 2, base), (1, 0), (0, -1), txt, fs, "light", (0, 0, 0))
+            else:                                             # upright, reading bottom to top
+                cy = y0 + ((bb.y0 + bb.y1) / 2 - clip.y0) * s
+                base = x0 + (bb.x1 - 0.21 * size - clip.x0) * s
+                PL.put_text(page, fitz.Point(base, cy + w / 2), (0, -1), (-1, 0), txt, fs, "light", (0, 0, 0))
+    ink = P6.Ink(page)
+    # the data, right of the drawing
+    x0, y0, wd, rh = 398.0, 210.0, 163.0, 17.0
+    sh = page.new_shape()
+    sh.draw_rect(fitz.Rect(x0, y0, x0 + wd, y0 + 20))
+    sh.finish(color=None, fill=GREEN, width=0)
+    sh.draw_rect(fitz.Rect(x0, y0 + 20, x0 + wd, y0 + 20 + len(INT_ROWS) * rh + 8))
+    sh.finish(color=None, fill=(0.94, 0.95, 0.95), width=0)
+    sh.commit()
+    ink.put(x0 + 8, y0 + 13.6, "DIMENSIONS", 9, "M", WHITE)
+    for k, (a, b) in enumerate(INT_ROWS):
+        yy = y0 + 20 + 15 + k * rh
+        ink.put(x0 + 8, yy, a, 8.2, "L", INK)
+        ink.put(x0 + wd - 8, yy, b, 8.6, "R", INK, "right")
+    bot = y0 + 20 + len(INT_ROWS) * rh + 8
+    ink.put(x0, bot + 16, "Part number, lengths and price on request.", 7.6, "LI", INK)
+    ink.put(414.0, 400.0, "AMERICAN-STYLE PUNCH TANG", 8, "M", BLUE)
+    ink.put(34, 784, "Drawing after EUROSTAMP’s, which is in millimetres: decimal inches, the millimetres in blue.",
+            6.8, "L", GREY)
+    ink.flush()
+    n, miss, reach = mm_values(page, areas, mm_of, order=["above", "after", "before", "below", "below-far"])
+    CROPS["intermediate"] = (page.number, tuple(reach[0]))
+    CROPS["intermediate-tang"] = (page.number, tuple(reach[1]))
+    chrome(page, num, "AMERICAN STYLE INTERMEDIATE")
+    return page, n, miss
+
+
 CROPS = {}                                                  # code → (page index, drawing with its labels)
 
 
@@ -470,6 +574,8 @@ def build(out=OUT):
                  (FIRST + 5, "AMERICAN STYLE DIES - 30° / 34°", [D["S29142"], D["S29141"], D["S29143"], D["S29144"]])):
         _, n, miss = die_page(doc, *args)
         report.append((args[0], n, miss))
+    _, n, miss = intermediate_page(doc, FIRST + 6)
+    report.append((FIRST + 6, n, miss))
     os.makedirs(os.path.dirname(out), exist_ok=True)
     doc.save(out, garbage=3, deflate=True)
     return out, report

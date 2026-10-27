@@ -57,7 +57,7 @@ def front_pages(sample=None):
 
 
 def american_pages():
-    """the American-style section (pages 272 – 277), built afresh"""
+    """the American-style section (pages 272 – 278), built afresh"""
     import american
     p, report = american.build(os.path.join(WORK, "american.pdf"))
     for r in report:

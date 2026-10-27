@@ -180,6 +180,11 @@ PHOTOS = {
     # the drawings as they are in the catalogue edition (tools/catalogue/american.py --web): inches with the millimetres
     **{f"es-am-{c.lower()}": dict(kind="am", src=AM + f"{x}.png", alt=f"{c} — American-style {d} (drawing, inches and millimetres)")
        for c, (x, d) in AM_DRAW.items()},
+    # the Z1 intermediate for American-style punches: EUROSTAMP's metric drawing as set in the catalogue (page 278)
+    "es-am-intermediate": dict(kind="catalogue", alt="Z1 intermediate for American-style punches — on its own and with a punch "
+                                                     "in place; the clamp dashed (drawing, inches and millimetres)"),
+    "es-am-intermediate-tang": dict(kind="catalogue", alt="The American-style punch tang the Z1 intermediate takes: .500″ wide, "
+                                                          ".622″ with the safety lip (drawing, inches and millimetres)"),
 }
 
 
@@ -414,6 +419,8 @@ def process(key, force=False):
     if have and not force:
         return os.path.join(OUT, have[0])
     k = p["kind"]
+    if k == "catalogue":
+        raise SystemExit(f"{key}: made from the catalogue edition — run python3 tools/catalogue/american.py --web")
     if k == "draw":
         im = on_white(Image.open(p["src"]))
         if "(drawing" in p["alt"]:

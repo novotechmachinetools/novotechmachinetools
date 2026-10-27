@@ -28,7 +28,7 @@ STYLES = [("Amada-Promecam (European) style", "14 – 89", "#d71920"), ("— ESH
           ("Trumpf style", "90 – 145", "#1fa3dd"), ("Wila style", "146 – 169", "#a54d97"), ("Bystronic style", "170 – 189", "#f07f22"),
           ("Radius, offset, nylon and urethane tools; EUROGRIP clamping; intermediates, clamps, adapters, tangs, adjustable dies, "
            "accessories and special tools", "190 – 269", "#8e9196"),
-          ("American style (.500″ tang)", "272 – 277", "#2e8b57")]
+          ("American style (.500″ tang)", "272 – 278", "#2e8b57")]
 LOADS = [25, 30, 35, 40, 50, 60, 65, 70, 80, 85, 90, 100, 120, 125, 150, 160, 180, 200, 250, 300, 340, 400]
 
 

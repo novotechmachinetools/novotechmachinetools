@@ -22,6 +22,7 @@
   "es-lvd-die",
   "es-am-punch",
   "es-am-die",
+  "es-am-inter",
   "es-acc-upper",
   "es-acc-clamps",
   "es-acc-lower",
@@ -27722,12 +27723,83 @@
    },
    "group": "american-style-press-brake-tooling"
   },
+  "es-am-inter": {
+   "id": "es-am-inter",
+   "brand": "eurostamp",
+   "name": "American-style Z1 intermediate",
+   "short": "Z1 intermediate",
+   "summary": "An upper intermediate that puts American-style punches on press brakes built for Z1 intermediates (Amada-Promecam European style). The body is a standard Z1 — 3.937″ (100 mm) high under a 1.181″ (30 mm) upper tang, 1.063″ (27 mm) deep, with the bending axis .276″ (7 mm) from the tang face — so it lines up with the machine's other Z1 intermediates; the lower slot takes the .500″ (12.7 mm) American tang, with a .650″ (16.5 mm) pocket for its safety lip.",
+   "features": [
+    "Fits press brakes built for Z1 intermediates (Amada-Promecam European style)",
+    "Takes American-style punches: .500″ (12.7 mm) tang with the safety lip",
+    "Height 3.937″ (100 mm) under a 1.181″ (30 mm) tang; body 1.063″ (27 mm), axis .276″ (7 mm)",
+    "Part number, lengths and price on request"
+   ],
+   "models_label": "Z1 · part number on request",
+   "images": [
+    "es-am-intermediate",
+    "es-am-intermediate-tang"
+   ],
+   "videos": [],
+   "tool_tables": [
+    {
+     "title": "American-style Z1 intermediate",
+     "sub": "EUROSTAMP drawing in millimetres, here in decimal inches with the millimetres",
+     "first_col": "Part no.",
+     "cols": [
+      "Fits",
+      "Takes",
+      "Height",
+      "Body depth",
+      "Bending axis",
+      "Lengths"
+     ],
+     "rows": [
+      [
+       "On request",
+       "Brakes built for Z1 intermediates",
+       "American punches, .500″ (12.7 mm) tang",
+       "3.937″ (100 mm) + 1.181″ (30 mm) tang",
+       "1.063″ (27 mm)",
+       ".276″ (7 mm) from tang face",
+       "on request"
+      ]
+     ]
+    }
+   ],
+   "tool_note": "EUROSTAMP drew this intermediate in millimetres; the inch values are converted exactly (1″ = 25.4 mm). Catalogue page 278.",
+   "pdf": null,
+   "pdf_cta": "Download the catalogue (PDF)",
+   "headline": "Z1 beam → .500″ American punches",
+   "model_caps": {},
+   "specs": {
+    "kind": "tools",
+    "models": [],
+    "glance_keys": [
+     "type",
+     "angle",
+     "height",
+     "tip_radius_or_v",
+     "max_load"
+    ],
+    "family_row": [
+     "1 · intermediate",
+     "—",
+     "3.937″ (100 mm) + 1.181″ tang",
+     "—"
+    ],
+    "family_row_sub": "",
+    "headline": "Z1 beam → .500″ American punches",
+    "note": "EUROSTAMP drew this intermediate in millimetres; the inch values are converted exactly (1″ = 25.4 mm). Catalogue page 278."
+   },
+   "group": "american-style-press-brake-tooling"
+  },
   "es-acc-upper": {
    "id": "es-acc-upper",
    "brand": "eurostamp",
    "name": "Intermediates and upper adapters",
    "short": "Upper adapters",
-   "summary": "The intermediate is the holder between the ram and a European-style punch: it carries the clamp and, on the adjustable versions, a wedge that crowns each section so the angle stays true along the bend. Z1 intermediates have a 27 mm (1.06″) body with the bending axis 7 mm from the face; Z2 intermediates a 40 mm (1.57″) body with the axis at 20 mm; the heavy-duty versions are solid CrMo steel. The upper adapters go the other way: they let a press brake with Trumpf / Wila, Beyeler, LVD, Weinbrenner, CBC, EHT, Durmazlar, Darley, Baykal or Colgar clamping run European-style punches — or a European-style beam run Trumpf / Wila punches.",
+   "summary": "The intermediate is the holder between the ram and a European-style punch: it carries the clamp and, on the adjustable versions, a wedge that crowns each section so the angle stays true along the bend. Z1 intermediates have a 27 mm (1.06″) body with the bending axis 7 mm from the face; Z2 intermediates a 40 mm (1.57″) body with the axis at 20 mm; the heavy-duty versions are solid CrMo steel. The upper adapters go the other way: they let a press brake with Trumpf / Wila, Beyeler, LVD, Weinbrenner, CBC, EHT, Durmazlar, Darley, Baykal or Colgar clamping run European-style punches — or a European-style beam run Trumpf / Wila punches. The Z1 intermediate for American-style punches is on the American-style tooling page.",
    "features": [
     "Adjustable intermediates Z1 (H100, H120, H150) and Z2 (H120); heavy-duty CrMo versions rated to 160 t/m (54 US t/ft)",
     "Fixed intermediates and short extensions, 75 and 150 mm long",

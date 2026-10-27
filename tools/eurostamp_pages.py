@@ -560,6 +560,25 @@ family("es-am-die", P_AM, "American-style dies, V .375 – .875″", "American d
        family_row=["8", "30° – 88°", "1.937″ (49.2 mm)", "—"],
        extra_caps={c: f"{a}° · V {D.inch(v)} · H 1.937″" for c, m, ty, a, v, r, w, ln in AM_D})
 
+am_i_tab = {"title": "American-style Z1 intermediate", "sub": "EUROSTAMP drawing in millimetres, here in decimal inches with the millimetres",
+            "first_col": "Part no.",
+            "cols": ["Fits", "Takes", "Height", "Body depth", "Bending axis", "Lengths"],
+            "rows": [["On request", "Brakes built for Z1 intermediates", "American punches, .500″ (12.7 mm) tang",
+                      "3.937″ (100 mm) + 1.181″ (30 mm) tang", "1.063″ (27 mm)", ".276″ (7 mm) from tang face", "on request"]]}
+family("es-am-inter", P_AM, "American-style Z1 intermediate", "Z1 intermediate",
+       "An upper intermediate that puts American-style punches on press brakes built for Z1 intermediates (Amada-Promecam European "
+       "style). The body is a standard Z1 — 3.937″ (100 mm) high under a 1.181″ (30 mm) upper tang, 1.063″ (27 mm) deep, with the "
+       "bending axis .276″ (7 mm) from the tang face — so it lines up with the machine's other Z1 intermediates; the lower slot takes "
+       "the .500″ (12.7 mm) American tang, with a .650″ (16.5 mm) pocket for its safety lip.",
+       ["Fits press brakes built for Z1 intermediates (Amada-Promecam European style)",
+        "Takes American-style punches: .500″ (12.7 mm) tang with the safety lip",
+        "Height 3.937″ (100 mm) under a 1.181″ (30 mm) tang; body 1.063″ (27 mm), axis .276″ (7 mm)",
+        "Part number, lengths and price on request"],
+       [am_i_tab], images=["es-am-intermediate", "es-am-intermediate-tang"], tools=[], ndraw=0, glance_tools=[],
+       note="EUROSTAMP drew this intermediate in millimetres; the inch values are converted exactly (1″ = 25.4 mm). Catalogue page 278.",
+       pdf=None, models_label="Z1 · part number on request", headline="Z1 beam → .500″ American punches",
+       family_row=["1 · intermediate", "—", "3.937″ (100 mm) + 1.181″ tang", "—"])
+
 # ================================================================================================= holders, adapters, clamps, accessories
 def h_of(code, default=None):
     t = D.TOOLS.get(code)
@@ -588,7 +607,8 @@ family("es-acc-upper", P_ACC, "Intermediates and upper adapters", "Upper adapter
        "a wedge that crowns each section so the angle stays true along the bend. Z1 intermediates have a 27 mm (1.06″) body with the "
        "bending axis 7 mm from the face; Z2 intermediates a 40 mm (1.57″) body with the axis at 20 mm; the heavy-duty versions are solid "
        "CrMo steel. The upper adapters go the other way: they let a press brake with Trumpf / Wila, Beyeler, LVD, Weinbrenner, CBC, EHT, "
-       "Durmazlar, Darley, Baykal or Colgar clamping run European-style punches — or a European-style beam run Trumpf / Wila punches.",
+       "Durmazlar, Darley, Baykal or Colgar clamping run European-style punches — or a European-style beam run Trumpf / Wila punches. "
+       "The Z1 intermediate for American-style punches is on the American-style tooling page.",
        ["Adjustable intermediates Z1 (H100, H120, H150) and Z2 (H120); heavy-duty CrMo versions rated to 160 t/m (54 US t/ft)",
         "Fixed intermediates and short extensions, 75 and 150 mm long", "Upper adapters to European-style punches from 12 clamping systems; European → Trumpf / Wila adapter",
         "Custom-tang upper adapters H59, H67 and H100 (minimum 5 pieces)", "150 mm (5.9″) long sections unless noted"],
@@ -746,7 +766,7 @@ SUBPAGES = [
      "Bystronic / Beyeler type R and RF-A punches, flattening blades and dies; LVD-style punches and dies V6 – V120 rated to 340 t/m.",
      "Bystronic & LVD"),
     (P_AM, "American-style punches and dies — .500″ tang", "es-am-hero",
-     "88° and 85° straight and gooseneck punches, 28° – 30° acute punches and 1V dies V .375 – .875″ with the American tang, in 36″, 18″ and sectioned lengths.",
+     "88° and 85° straight and gooseneck punches, 28° – 30° acute punches and 1V dies V .375 – .875″ with the American tang, in 36″, 18″ and sectioned lengths — and a Z1 intermediate that takes them on European-style brakes.",
      "American style"),
     (P_ACC, "Holders, adapters, clamps and accessories", "es-p-holders",
      "Intermediates and adapters between clamping styles, safety clamps and EUROGRIP, lower adapters, adjustable dies V24 – V400, urethane tooling and gauges.",
@@ -910,15 +930,18 @@ PAGES = {
               "clamping found on most press brakes built in North America. Punches stand 3.779″ (96 mm) high: 88° straight and 88° / 85° "
               "gooseneck punches for 90° air bending, 30° and 28° acute punches for hemming and acute angles, and a 5.125″ acute gooseneck. "
               "The dies all share a 1.937″ (49.2 mm) working height: 88° dies V .375 to .750″ and 30° – 34° acute dies V .375 to .875″. "
-              "Every tool comes in 36″ and 18″ lengths and a 35.75″ sectioned set, each with its own part number.",
+              "Every tool comes in 36″ and 18″ lengths and a 35.75″ sectioned set, each with its own part number. For press brakes "
+              "with European-style (Amada-Promecam) clamping there is a Z1 intermediate that takes these punches.",
         points=["Punches 88°, 85°, 30° and 28°, 3.779″ (96 mm) high — tang .500″ with safety lip",
                 "1V dies V .375 – .875″ (9.53 – 22.23 mm), 88°, 34° and 30°; working height 1.937″ (49.2 mm)",
-                "36″ (914.4 mm), 18″ (457.2 mm) and 35.75″ (908 mm) sectioned lengths"],
+                "36″ (914.4 mm), 18″ (457.2 mm) and 35.75″ (908 mm) sectioned lengths",
+                "Z1 intermediate for American-style punches on European-style (Amada-Promecam) press brakes"],
         hero="es-am-hero", minis=[],
         faq=[{"q": "Will American-style tooling fit my press brake?",
               "a": "It fits press brakes with American-style clamping — a .500″ tang in a clamp bar, used on most press brakes built in North "
                    "America. Measure the tang slot of your upper clamp and lower die holder, or send us a photo of a tool you use now, and we "
-                   "confirm. If your brake has European-style clamping, see the European punches and dies pages."},
+                   "confirm. If your brake has European-style clamping, see the European punches and dies pages — or, to use "
+                   "American-style punches on it, the Z1 intermediate on this page, for brakes built for Z1 intermediates."},
              {"q": "Why do the drawings say the dimensions are in inches?",
               "a": "American-style tooling is designed in inches. The tables give each dimension in decimal inches with the exact metric value, "
                    "and the part numbers carry the length in millimetres: 0914 for 36″, 0457 for 18″ and 0908 for the 35.75″ sectioned set."}],
