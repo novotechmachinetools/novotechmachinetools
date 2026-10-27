@@ -142,7 +142,7 @@ PHOTOS = {
     "gc-135-guides": P(W + "DSC_0089.jpg", "Two grinding heads over the part support with plastic slides"),
     "gc-135-touch": P(W + "DSC_0095.jpg", "Touch-screen control (optional)"),
     "gc-135-sample": P(W + "campione-135.jpg", "Box edge after weld grinding on the 135"),
-    # ---- 136 · 131 corner grinders ----------------------------------------------------------------------------------------
+    # ---- 131 · 136 corner grinders ----------------------------------------------------------------------------------------
     "gc-136": B(W + "136.jpg", "Gecam 136 corner grinder"),
     "gc-131": B(W + "131.jpg", "Gecam 131 corner grinder", up=True),
     "gc-136-box": B(W + "136-con-scatola.jpg", "136 grinding the welded corner of a box"),

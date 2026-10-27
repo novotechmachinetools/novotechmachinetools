@@ -10,12 +10,14 @@
   "gecam-cub",
   "gecam-easy-t",
   "gecam-gcb",
+  "gecam-131",
+  "gecam-136",
   "gecam-135",
-  "gecam-136-131",
   "gecam-corner-special",
   "sahinler-bt-114-s",
   "eurofintec-141-144",
   "eurofintec-128",
+  "eurofintec-128dl",
   "eurofintec-228",
   "eurofintec-728-143",
   "gecam-cws"
@@ -1929,6 +1931,370 @@
    },
    "group": "gc-bench"
   },
+  "gecam-131": {
+   "id": "gecam-131",
+   "brand": "gecam",
+   "name": "131 corner grinder for box and door welds, corners to 5-7/8″ high",
+   "short": "131",
+   "models_label": "131 · hand-fed",
+   "summary": "The compact hand-fed corner grinder for welded boxes, cabinets, doors and trays: the abrasive belt runs over a fork with two rollers, and the operator slides the corner along it on the table. The fork oscillates both in angle and about its pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp corner. The 23-5/8 × 9-13/16″ table is set in height and inclination by handwheel, with squaring guides adjusted by hand, for corners up to 5-7/8″ high. Two belt speeds: the higher for steel, the lower for stainless steel and aluminum.",
+   "headline": "Corners to 5-7/8″ high · radius 3/64″ – 3/8″ or sharp · table adjustable in height and inclination",
+   "features": [
+    "Fixed head with an oscillating two-roller fork: radius 3/64″ – 3/8″ (R1 – R10 mm) or a sharp corner",
+    "Abrasive belt 5-7/8 × 78-3/4″ (150 × 2,000 mm) at two speeds, 4,724 / 2,362 ft/min (24 / 12 m/s)",
+    "23-5/8 × 9-13/16″ (600 × 250 mm) work table, height and inclination set by handwheel",
+    "Squaring guides adjusted by hand; corners up to 5-7/8″ (150 mm) high",
+    "Dust hood; electrics in a sealed box",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-131",
+    "gc-131-table",
+    "gc-131-head",
+    "gc-box-corner"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "131",
+      "sub": "Hand-fed corner grinder",
+      "models": [
+       "131"
+      ],
+      "rows": [
+       {
+        "label": "Max. corner height",
+        "sub": "",
+        "cells": [
+         "5-7/8″ (150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "23-5/8 × 9-13/16″ (600 × 250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table adjustment",
+        "sub": "",
+        "cells": [
+         "Height and inclination by handwheel · squaring guides"
+        ],
+        "key": false
+       },
+       {
+        "label": "Corner radius",
+        "sub": "",
+        "cells": [
+         "3/64″ – 3/8″ (R1 – R10 mm) or sharp"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt speed",
+        "sub": "two speeds",
+        "cells": [
+         "4,724 / 2,362 ft/min (24 / 12 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Fork rollers",
+        "sub": "",
+        "cells": [
+         "1-15/16 × 5-7/8″ (50 × 150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "two speeds",
+        "cells": [
+         "3.1 / 2 HP (2.3 / 1.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 55 × 59″ (700 × 1,400 × 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "265 lb (120 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "131",
+      "glance": [
+       "Corners to 5-7/8″ high",
+       "—",
+       "Hand-fed",
+       "Belt 5-7/8″, oscillating fork",
+       "265 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Belt speeds are surface speeds; the corner grinders run at two speeds, the higher for steel and the lower for stainless and aluminum. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [
+    {
+     "id": "bDsDqFoJ5l4",
+     "title": "131 corner grinder",
+     "duration": "PT1M36S",
+     "thumb": "video-bDsDqFoJ5l4"
+    },
+    {
+     "id": "cnQful7fLsI",
+     "title": "131 with oscillating head",
+     "duration": "PT1M14S",
+     "thumb": "video-cnQful7fLsI"
+    },
+    {
+     "id": "XSrlMJ_lmME",
+     "title": "131 box weld seam sanding",
+     "duration": "PT4M13S",
+     "thumb": "video-XSrlMJ_lmME"
+    },
+    {
+     "id": "pRvYJVhLOkE",
+     "title": "131 on a stainless box",
+     "duration": "PT1M59S",
+     "thumb": "video-pRvYJVhLOkE"
+    },
+    {
+     "id": "y0gMB7J6F_E",
+     "title": "131 box seam grinding",
+     "duration": "PT5M43S",
+     "thumb": "video-y0gMB7J6F_E"
+    },
+    {
+     "id": "7sG_9LqdVNM",
+     "title": "131 on a door corner",
+     "duration": "PT0M36S",
+     "thumb": "video-7sG_9LqdVNM"
+    },
+    {
+     "id": "eEYp5xXPNZo",
+     "title": "How to adjust and operate the 131",
+     "duration": "PT17M28S",
+     "thumb": "video-eEYp5xXPNZo"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · 4 MB · imperial units"
+   },
+   "group": "gc-corner"
+  },
+  "gecam-136": {
+   "id": "gecam-136",
+   "brand": "gecam",
+   "name": "136 corner grinder for box and cabinet welds, corners to 11-13/16″ high",
+   "short": "136",
+   "models_label": "136 · hand-fed",
+   "summary": "The hand-fed corner grinder for taller boxes, cabinets and enclosures: the abrasive belt runs over a fork with two rollers, and the operator slides the corner along it on a 23-5/8 × 15-3/4″ table with a prismatic guide. The fork oscillates both in angle and about its pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp corner. Corners 7-7/8″ or 11-13/16″ high — 19-11/16″ on request — on parts 3-1/8″ to 19-11/16″ deep, and it also radiuses the edges of flat parts. Two belt speeds: the higher for steel, the lower for stainless steel and aluminum.",
+   "headline": "Corners to 11-13/16″ high (19-11/16″ on request) · radius 3/64″ – 3/8″ or sharp · prismatic guide",
+   "features": [
+    "Fixed head with an oscillating two-roller fork: radius 3/64″ – 3/8″ (R1 – R10 mm) or a sharp corner",
+    "Abrasive belt 5-7/8 × 78-3/4″ (150 × 2,000 mm) at two speeds, 4,724 / 2,362 ft/min (24 / 12 m/s)",
+    "23-5/8 × 15-3/4″ (600 × 400 mm) work table with prismatic guide",
+    "Corners 7-7/8″ or 11-13/16″ (200 / 300 mm) high; parts 3-1/8″ – 19-11/16″ (80 – 500 mm) deep",
+    "Also radiuses the edges of flat parts",
+    "Dust hood; electrics in a sealed box",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Cyclone dust collector",
+    "Version for corners up to 19-11/16″ (500 mm) high",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-136",
+    "gc-136-box",
+    "gc-136-head",
+    "gc-box-corner"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "136",
+      "sub": "Hand-fed corner grinder",
+      "models": [
+       "136"
+      ],
+      "rows": [
+       {
+        "label": "Max. corner height",
+        "sub": "",
+        "cells": [
+         "7-7/8″ or 11-13/16″ (200 / 300 mm) · 19-11/16″ (500 mm) on request"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part depth",
+        "sub": "",
+        "cells": [
+         "3-1/8″ – 19-11/16″ (80 – 500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "23-5/8 × 15-3/4″ (600 × 400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table adjustment",
+        "sub": "",
+        "cells": [
+         "Prismatic guide"
+        ],
+        "key": false
+       },
+       {
+        "label": "Corner radius",
+        "sub": "",
+        "cells": [
+         "3/64″ – 3/8″ (R1 – R10 mm) or sharp"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length",
+        "cells": [
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt speed",
+        "sub": "two speeds",
+        "cells": [
+         "4,724 / 2,362 ft/min (24 / 12 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Fork rollers",
+        "sub": "",
+        "cells": [
+         "1-15/16 × 5-7/8″ (50 × 150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "two speeds",
+        "cells": [
+         "3 / 2 HP (2.25 / 1.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "40 × 47 × 44″ (1,006 × 1,200 × 1,130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "353 lb (160 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "136",
+      "glance": [
+       "Corners to 11-13/16″ high",
+       "—",
+       "Hand-fed",
+       "Belt 5-7/8″, oscillating fork",
+       "353 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Belt speeds are surface speeds; the corner grinders run at two speeds, the higher for steel and the lower for stainless and aluminum. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [
+    {
+     "id": "lXGO65Ghwo0",
+     "title": "136 on an enclosure weld seam",
+     "duration": "PT2M1S",
+     "thumb": "video-lXGO65Ghwo0"
+    },
+    {
+     "id": "rrpQjvD7sEE",
+     "title": "136 weld seam grinding",
+     "duration": "PT5M16S",
+     "thumb": "video-rrpQjvD7sEE"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · 4 MB · imperial units"
+   },
+   "group": "gc-corner"
+  },
   "gecam-135": {
    "id": "gecam-135",
    "brand": "gecam",
@@ -2112,235 +2478,6 @@
      "title": "135 belt change",
      "duration": "PT0M48S",
      "thumb": "video-7RM52FGLZag"
-    }
-   ],
-   "pdf": {
-    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
-    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
-   },
-   "group": "gc-corner"
-  },
-  "gecam-136-131": {
-   "id": "gecam-136-131",
-   "brand": "gecam",
-   "name": "136 · 131 corner grinders for box welds, corners to 11-13/16″ high",
-   "short": "136 · 131",
-   "models_label": "136 · 131 · 2 models",
-   "summary": "The hand-fed corner grinders for welded boxes, cabinets, doors and trays: the abrasive belt runs over a fork with two rollers, and the operator slides the corner along it on the table. The fork oscillates both in angle and about its pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp corner. The 136 has a 23-5/8 × 15-3/4″ table with a prismatic guide for corners 7-7/8″ or 11-13/16″ high (19-11/16″ on request) and also radiuses flat parts; the 131 has a 23-5/8 × 9-13/16″ table adjustable in height and inclination with squaring guides, for corners up to 5-7/8″. Both run at two belt speeds.",
-   "headline": "Corners to 5-7/8″ (131) and 11-13/16″ (136) high · radius 3/64″ – 3/8″ or sharp · two belt speeds",
-   "features": [
-    "Fixed head with an oscillating two-roller fork: radius 3/64″ – 3/8″ (R1 – R10 mm) or a sharp corner",
-    "Abrasive belt 5-7/8 × 78-3/4″ (150 × 2,000 mm) at two speeds, 4,724 / 2,362 ft/min (24 / 12 m/s)",
-    "136: 23-5/8 × 15-3/4″ table with prismatic guide; corners 7-7/8″ or 11-13/16″ high; parts 3-1/8″ – 19-11/16″ (80 – 500 mm) deep",
-    "131: 23-5/8 × 9-13/16″ table, height and inclination set by handwheel, squaring guides adjusted by hand; corners to 5-7/8″",
-    "Dust hood; electrics in a sealed box",
-    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
-   ],
-   "optional": [
-    "Dust collector (cyclone on the 136)",
-    "136 for corners up to 19-11/16″ (500 mm) high",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
-   ],
-   "images": [
-    "gc-136",
-    "gc-131",
-    "gc-136-box",
-    "gc-136-head",
-    "gc-131-table",
-    "gc-131-head",
-    "gc-box-corner"
-   ],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "136 · 131",
-      "sub": "Corner grinders",
-      "models": [
-       "136",
-       "131"
-      ],
-      "rows": [
-       {
-        "label": "Max. corner height",
-        "sub": "",
-        "cells": [
-         "7-7/8″ or 11-13/16″ (200 / 300 mm) · 19-11/16″ (500 mm) on request",
-         "5-7/8″ (150 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Work table",
-        "sub": "",
-        "cells": [
-         "23-5/8 × 15-3/4″ (600 × 400 mm)",
-         "23-5/8 × 9-13/16″ (600 × 250 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Table adjustment",
-        "sub": "",
-        "cells": [
-         "Prismatic guide",
-         "Height and inclination by handwheel · squaring guides"
-        ],
-        "key": false
-       },
-       {
-        "label": "Corner radius",
-        "sub": "",
-        "cells": [
-         "3/64″ – 3/8″ (R1 – R10 mm) or sharp",
-         "3/64″ – 3/8″ (R1 – R10 mm) or sharp"
-        ],
-        "key": false
-       },
-       {
-        "label": "Abrasive belt",
-        "sub": "width × length",
-        "cells": [
-         "5-7/8 × 78-3/4″ (150 × 2,000 mm)",
-         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Belt speed",
-        "sub": "two speeds",
-        "cells": [
-         "4,724 / 2,362 ft/min (24 / 12 m/s)",
-         "4,724 / 2,362 ft/min (24 / 12 m/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Fork rollers",
-        "sub": "",
-        "cells": [
-         "1-15/16 × 5-7/8″ (50 × 150 mm)",
-         "1-15/16 × 5-7/8″ (50 × 150 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor",
-        "sub": "two speeds",
-        "cells": [
-         "3 / 2 HP (2.25 / 1.5 kW)",
-         "3.1 / 2 HP (2.3 / 1.5 kW)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "sub": "",
-        "cells": [
-         "40 × 47 × 44″ (1,006 × 1,200 × 1,130 mm)",
-         "28 × 55 × 59″ (700 × 1,400 × 1,500 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "353 lb (160 kg)",
-         "265 lb (120 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "136",
-      "glance": [
-       "Corners to 11-13/16″ high",
-       "—",
-       "Hand-fed",
-       "Belt 5-7/8″, oscillating fork",
-       "353 lb"
-      ]
-     },
-     {
-      "name": "131",
-      "glance": [
-       "Corners to 5-7/8″ high",
-       "—",
-       "Hand-fed",
-       "Belt 5-7/8″, oscillating fork",
-       "265 lb"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "thickness",
-     "feed",
-     "tools",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Belt speeds are surface speeds; the corner grinders run at two speeds, the higher for steel and the lower for stainless and aluminum. Metric values in brackets are the manufacturer's figures."
-   },
-   "videos": [
-    {
-     "id": "lXGO65Ghwo0",
-     "title": "136 on an enclosure weld seam",
-     "duration": "PT2M1S",
-     "thumb": "video-lXGO65Ghwo0"
-    },
-    {
-     "id": "rrpQjvD7sEE",
-     "title": "136 weld seam grinding",
-     "duration": "PT5M16S",
-     "thumb": "video-rrpQjvD7sEE"
-    },
-    {
-     "id": "bDsDqFoJ5l4",
-     "title": "131 corner grinder",
-     "duration": "PT1M36S",
-     "thumb": "video-bDsDqFoJ5l4"
-    },
-    {
-     "id": "cnQful7fLsI",
-     "title": "131 with oscillating head",
-     "duration": "PT1M14S",
-     "thumb": "video-cnQful7fLsI"
-    },
-    {
-     "id": "XSrlMJ_lmME",
-     "title": "131 box weld seam sanding",
-     "duration": "PT4M13S",
-     "thumb": "video-XSrlMJ_lmME"
-    },
-    {
-     "id": "pRvYJVhLOkE",
-     "title": "131 on a stainless box",
-     "duration": "PT1M59S",
-     "thumb": "video-pRvYJVhLOkE"
-    },
-    {
-     "id": "y0gMB7J6F_E",
-     "title": "131 box seam grinding",
-     "duration": "PT5M43S",
-     "thumb": "video-y0gMB7J6F_E"
-    },
-    {
-     "id": "7sG_9LqdVNM",
-     "title": "131 on a door corner",
-     "duration": "PT0M36S",
-     "thumb": "video-7sG_9LqdVNM"
-    },
-    {
-     "id": "eEYp5xXPNZo",
-     "title": "How to adjust and operate the 131",
-     "duration": "PT17M28S",
-     "thumb": "video-eEYp5xXPNZo"
     }
    ],
    "pdf": {
@@ -2889,17 +3026,17 @@
   "eurofintec-128": {
    "id": "eurofintec-128",
    "brand": "eurofintec",
-   "name": "128 S · 128 SL · 128 DL centreless pipe and bar sanders, Ø3/16″ – 5-7/8″",
-   "short": "128 S · 128 SL · 128 DL",
-   "models_label": "128 S · 128 SL · 128 DL · 3 models",
-   "summary": "Centreless belt grinders for satin-finishing and polishing round bar and tube: the part lies on a work rest and a grooved rubber wheel turns it against the abrasive belt while it is pushed through, so the whole surface is finished evenly along its length. The rubber wheel's speed is set for each diameter and the belt runs at two speeds. The 128 S takes Ø3/16″ to Ø4-5/16″ on a 2-15/16″ belt and the 128 SL Ø3/16″ to Ø5-7/8″ on a 5-7/8″ belt, both up to 39″ long without extra supports; the 128 DL has two independent heads in line, so two grits work in one pass, for Ø3/8″ to Ø5-7/8″ on a prismatic support. Dry or wet.",
-   "headline": "Round bar and tube Ø3/16″ – 5-7/8″ · centreless · 1 or 2 heads · dry or wet",
+   "name": "128 S · 128 SL single-head centreless pipe and bar sanders, Ø3/16″ – 5-7/8″",
+   "short": "128 S · 128 SL",
+   "models_label": "128 S · 128 SL · 2 models",
+   "summary": "Single-head centreless belt grinders for satin-finishing and polishing round bar and tube: the part lies on a work rest and a grooved rubber wheel turns it against the abrasive belt while it is pushed through, so the whole surface is finished evenly along its length. The rubber wheel's speed is set for each diameter and the belt runs at two speeds. The 128 S takes Ø3/16″ to Ø4-5/16″ on a 2-15/16″ belt and the 128 SL Ø3/16″ to Ø5-7/8″ on a 5-7/8″ belt, both up to 39″ long without extra supports. Dry or wet.",
+   "headline": "Round bar and tube Ø3/16″ – 5-7/8″ · centreless · single head · dry or wet",
    "features": [
-    "Centreless group with grooved rubber wheel; part rotation set electronically for the diameter (15 – 75 rpm on the 128 S / SL, 20 – 100 rpm on the 128 DL)",
+    "Centreless group with grooved rubber wheel; part rotation set electronically for the diameter, 15 – 75 rpm",
     "Two belt speeds: 2,953 / 5,906 ft/min (15 / 30 m/s); belt tensioning and centering",
+    "128 S: abrasive belt 2-15/16 × 78-3/4″ (75 × 2,000 mm) for Ø3/16″ – 4-5/16″ · 128 SL: 5-7/8 × 78-3/4″ (150 × 2,000 mm) for Ø3/16″ – 5-7/8″",
     "Contact wheel Ø7-7/8″ (200 mm)",
-    "128 S / SL: parts up to 39-3/8″ (1 m) long without support; extra support guides for longer parts",
-    "128 DL: two independently controlled heads; prismatic work support with anti-friction lining, set by handwheel; 3 support accessories included",
+    "Parts up to 39-3/8″ (1 m) long without support; extra support guides for longer parts",
     "Electrics in a sealed metal box",
     "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
    ],
@@ -2911,23 +3048,19 @@
    ],
    "images": [
     "ef-128sl",
-    "ef-128dl",
     "ef-128-work",
     "ef-128-wheel",
-    "ef-128dl-heads",
-    "ef-128dl-guide",
     "ef-128-wet"
    ],
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "128 S · 128 SL · 128 DL",
-      "sub": "Centreless pipe and bar sanders",
+      "title": "128 S · 128 SL",
+      "sub": "Single-head centreless pipe and bar sanders",
       "models": [
        "128 S",
-       "128 SL",
-       "128 DL"
+       "128 SL"
       ],
       "rows": [
        {
@@ -2935,8 +3068,7 @@
         "sub": "",
         "cells": [
          "Ø3/16″ – 4-5/16″ (5 – 110 mm)",
-         "Ø3/16″ – 5-7/8″ (5 – 150 mm)",
-         "Ø3/8″ – 5-7/8″ (10 – 150 mm)"
+         "Ø3/16″ – 5-7/8″ (5 – 150 mm)"
         ],
         "key": true
        },
@@ -2945,8 +3077,7 @@
         "sub": "",
         "cells": [
          "1",
-         "1",
-         "2, independent"
+         "1"
         ],
         "key": true
        },
@@ -2955,7 +3086,6 @@
         "sub": "width × length",
         "cells": [
          "2-15/16 × 78-3/4″ (75 × 2,000 mm)",
-         "5-7/8 × 78-3/4″ (150 × 2,000 mm)",
          "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
         ],
         "key": true
@@ -2965,7 +3095,6 @@
         "sub": "Ø × width",
         "cells": [
          "7-7/8 × 2-15/16″ (200 × 75 mm)",
-         "7-7/8 × 5-7/8″ (200 × 150 mm)",
          "7-7/8 × 5-7/8″ (200 × 150 mm)"
         ],
         "key": false
@@ -2974,7 +3103,6 @@
         "label": "Belt speed",
         "sub": "two speeds",
         "cells": [
-         "2,953 / 5,906 ft/min (15 / 30 m/s)",
          "2,953 / 5,906 ft/min (15 / 30 m/s)",
          "2,953 / 5,906 ft/min (15 / 30 m/s)"
         ],
@@ -2985,8 +3113,7 @@
         "sub": "rubber wheel, variable",
         "cells": [
          "23 – 115 ft/min (7 – 35 m/min)",
-         "23 – 115 ft/min (7 – 35 m/min)",
-         "33 – 164 ft/min (10 – 50 m/min)"
+         "23 – 115 ft/min (7 – 35 m/min)"
         ],
         "key": false
        },
@@ -2995,8 +3122,7 @@
         "sub": "",
         "cells": [
          "39-3/8″ (1,000 mm)",
-         "39-3/8″ (1,000 mm)",
-         "Prismatic support"
+         "39-3/8″ (1,000 mm)"
         ],
         "key": false
        },
@@ -3005,8 +3131,7 @@
         "sub": "",
         "cells": [
          "4.4 / 3.4 HP (3.3 / 2.5 kW)",
-         "4.4 / 3.4 HP (3.3 / 2.5 kW)",
-         "8.7 HP (6.5 kW)"
+         "4.4 / 3.4 HP (3.3 / 2.5 kW)"
         ],
         "key": true
        },
@@ -3015,8 +3140,7 @@
         "sub": "",
         "cells": [
          "59 × 26 × 57″ (1,500 × 650 × 1,450 mm)",
-         "59 × 28 × 63″ (1,500 × 700 × 1,600 mm)",
-         "67 × 55 × 63″ (1,700 × 1,400 × 1,600 mm)"
+         "59 × 28 × 63″ (1,500 × 700 × 1,600 mm)"
         ],
         "key": false
        },
@@ -3025,8 +3149,7 @@
         "sub": "",
         "cells": [
          "309 lb (140 kg)",
-         "—",
-         "992 lb (450 kg)"
+         "—"
         ],
         "key": true
        }
@@ -3052,16 +3175,6 @@
        "Rotation 23 – 115 ft/min",
        "1 belt 5-7/8″",
        "—"
-      ]
-     },
-     {
-      "name": "128 DL",
-      "glance": [
-       "Bar & tube Ø3/8″ – 5-7/8″",
-       "—",
-       "Rotation 33 – 164 ft/min",
-       "2 belts 5-7/8″",
-       "992 lb"
       ]
      }
     ],
@@ -3111,13 +3224,160 @@
      "title": "128 SL centreless pipe polisher",
      "duration": "PT1M0S",
      "thumb": "video-QWP5ysXOv7w"
-    },
-    {
-     "id": "_jHJUG1jRWE",
-     "title": "128 centreless grinding",
-     "duration": "PT2M1S",
-     "thumb": "video-_jHJUG1jRWE"
-    },
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · 4 MB · imperial units"
+   },
+   "group": "ef-centreless"
+  },
+  "eurofintec-128dl": {
+   "id": "eurofintec-128dl",
+   "brand": "eurofintec",
+   "name": "128 DL two-head centreless pipe and bar sander, Ø3/8″ – 5-7/8″",
+   "short": "128 DL",
+   "models_label": "128 DL · 2 heads",
+   "summary": "The two-head centreless sander for production finishing of round bar and tube: two independently controlled heads in line, so two grits — roughing and finishing, or two finishing steps — work in one pass. The part lies on a prismatic work support with an anti-friction lining, set by handwheel, and a grooved rubber wheel turns it against the belts while it is pushed through, so the whole surface is finished evenly along its length. Part rotation 20 – 100 rpm, set electronically for the diameter; two belt speeds. Bar and tube Ø3/8″ to Ø5-7/8″, dry or wet.",
+   "headline": "Round bar and tube Ø3/8″ – 5-7/8″ · two heads in line · two grits in one pass · dry or wet",
+   "features": [
+    "Two independently controlled heads in line, each with a 5-7/8 × 78-3/4″ (150 × 2,000 mm) belt: two grits in one pass",
+    "Centreless group with grooved rubber wheel; part rotation set electronically for the diameter, 20 – 100 rpm",
+    "Two belt speeds: 2,953 / 5,906 ft/min (15 / 30 m/s); belt tensioning and centering",
+    "Contact wheels Ø7-7/8″ (200 mm)",
+    "Prismatic work support with anti-friction lining, set by handwheel; 3 support accessories included",
+    "Electrics in a sealed metal box",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Wet version with coolant on the belts",
+    "Contact wheels in other diameters",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "ef-128dl",
+    "ef-128dl-heads",
+    "ef-128dl-guide",
+    "ef-128-wheel",
+    "ef-128-wet"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "128 DL",
+      "sub": "Two-head centreless pipe and bar sander",
+      "models": [
+       "128 DL"
+      ],
+      "rows": [
+       {
+        "label": "Bar and tube Ø",
+        "sub": "",
+        "cells": [
+         "Ø3/8″ – 5-7/8″ (10 – 150 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Grinding heads",
+        "sub": "",
+        "cells": [
+         "2, independent, in line"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "width × length, each head",
+        "cells": [
+         "5-7/8 × 78-3/4″ (150 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Contact wheel",
+        "sub": "Ø × width, each head",
+        "cells": [
+         "7-7/8 × 5-7/8″ (200 × 150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Belt speed",
+        "sub": "two speeds",
+        "cells": [
+         "2,953 / 5,906 ft/min (15 / 30 m/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Part rotation",
+        "sub": "rubber wheel, variable",
+        "cells": [
+         "33 – 164 ft/min (10 – 50 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work support",
+        "sub": "",
+        "cells": [
+         "Prismatic, anti-friction lining, set by handwheel"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "8.7 HP (6.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "67 × 55 × 63″ (1,700 × 1,400 × 1,600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "992 lb (450 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "128 DL",
+      "glance": [
+       "Bar & tube Ø3/8″ – 5-7/8″",
+       "—",
+       "Rotation 33 – 164 ft/min",
+       "2 belts 5-7/8″",
+       "992 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Tube capacities are outside diameters. Metric values in brackets are the manufacturer's figures; belt speeds are surface speeds. Dimensions are overall L × W × H."
+   },
+   "videos": [
     {
      "id": "f3f7-lNiEH0",
      "title": "128 DL dry",
@@ -3129,6 +3389,12 @@
      "title": "128 DL twin, wet",
      "duration": "PT2M27S",
      "thumb": "video-I27PlnO8OI8"
+    },
+    {
+     "id": "_jHJUG1jRWE",
+     "title": "128 DL centreless pipe sanders",
+     "duration": "PT2M1S",
+     "thumb": "video-_jHJUG1jRWE"
     }
    ],
    "pdf": {

@@ -6,9 +6,9 @@ premium-line BT 114-S) and the corner welding page; image registration (section 
                                     wide-belt deburring G15 · G30 · G65 · G135 · GM65 · GM110 · G30 WET · G65/135 WET,
                                     edge rounding & deslagging G135RB8 · GT06 · GT13 · G65DCC,
                                     brush machines & benches CUB 30 · CUB 65BB · CUB 30B1B2 · EASY T · GCB 25 / 30 / 40
-    Corner grinders                 corner-grinding-machines                  135 · 136 · 131 · special corner grinders
+    Corner grinders                 corner-grinding-machines                  131 · 136 · 135 · special corner grinders
     Pipe sanding & polishing        pipe-sanding-polishing-machines           BT 114-S (NovoTech premium line, first) · Eurofintec 141 · 144 ·
-                                                                              128 S / SL / DL · 228 · 728 · 143 — a menu item of its own, no hub
+                                                                              128 S · SL / 128 DL · 228 · 728 · 143 — a menu item of its own, no hub
     Corner welders                  corner-welding-machines                   CWS 200 · CWS 300
 
     python3 tools/gecam_photos.py                    # gecam.com, catalogue and brochure images → tools/src-images/gecam
@@ -200,9 +200,9 @@ PAGE_CORNER = dict(
     points=["131 · 136: hand-fed, corners to 5-7/8″ and 11-13/16″ high, radius 3/64″ – 3/8″ or sharp",
             "135: automatic head travel along edges up to 31-1/2″ or 59″, one or two heads",
             "Special PLC grinders for upper corners, two corners at once and 90° tube frames"],
-    hero="gc-135", minis=["gc-136", "gc-131"],
+    hero="gc-131", minis=["gc-136", "gc-135"],
     groups=[("gc-corner", "Corner grinders for boxes, cabinets and doors",
-             "The hand-fed 136 and 131 and the automatic 135, each grinding the corner weld with a belt pressed on by rollers or a pad.", D.GECAM),
+             "The hand-fed 131 and 136 and the automatic 135, each grinding the corner weld with a belt pressed on by rollers or a pad.", D.GECAM),
             ("gc-corner-special", "Special corner grinders for series work",
              "PLC machines that run from a stored recipe: the operator places the part and starts the cycle.", D.GECAM)],
     faq=[{"q": "What does a corner grinder do?",

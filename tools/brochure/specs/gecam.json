@@ -22,12 +22,14 @@
   "gecam-cub",
   "gecam-easy-t",
   "gecam-gcb",
+  "gecam-131",
+  "gecam-136",
   "gecam-135",
-  "gecam-136-131",
   "gecam-corner-special",
   "gecam-cws",
   "eurofintec-141-144",
   "eurofintec-128",
+  "eurofintec-128dl",
   "eurofintec-228",
   "eurofintec-728-143"
  ],
@@ -63,8 +65,9 @@
   {
    "title": "Corner grinders",
    "families": [
+    "gecam-131",
+    "gecam-136",
     "gecam-135",
-    "gecam-136-131",
     "gecam-corner-special"
    ]
   },
@@ -79,6 +82,7 @@
    "families": [
     "eurofintec-141-144",
     "eurofintec-128",
+    "eurofintec-128dl",
     "eurofintec-228",
     "eurofintec-728-143"
    ]
