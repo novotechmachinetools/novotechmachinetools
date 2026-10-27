@@ -231,16 +231,56 @@ class Editor:
             self.adds.append((line.u, line.v, fitz.Point(line.O), its, col))
 
     # apply ---------------------------------------------------------------------------------------------------------
+    @staticmethod
+    def _square(c):
+        """a small square at the centre of the glyph: redaction takes out any glyph it touches"""
+        ln = c.line
+        w = c.adv() or (c.bbox.width or c.size * 0.5)
+        x0, y0 = ln.coords(c.o)
+        ctr = ln.point(x0 + w / 2, y0 + 0.32 * c.size)
+        r = max(0.25, min(w, c.size) * 0.16)
+        return fitz.Rect(ctr.x - r, ctr.y - r, ctr.x + r, ctr.y + r)
+
+    def _redaction_rects(self):
+        """one thin strip per run of consecutive glyphs taken out of a horizontal or vertical line (the glyph-centre
+        squares joined), a square per glyph elsewhere: adding redactions one by one gets slow past a few hundred"""
+        by_line = {}
+        for c in self.gone:
+            by_line.setdefault(id(c.line), (c.line, []))[1].append(c)
+        out = []
+        for ln, cs in by_line.values():
+            straight = (abs(ln.u[1]) < 1e-3 or abs(ln.u[0]) < 1e-3) and abs(ln.u[0] * ln.v[0] + ln.u[1] * ln.v[1]) < 1e-3
+            if not straight:
+                out += [self._square(c) for c in cs]
+                continue
+            pos = {id(c): k for k, c in enumerate(ln.chars)}
+            cs = sorted(set(cs), key=lambda c: pos.get(id(c), 0))
+            run, last = [], None
+            for c in cs + [None]:
+                k = pos.get(id(c)) if c is not None else None
+                gap_ok = (c is not None and last is not None
+                          and all(not x.c.strip() for x in ln.chars[last + 1:k]))
+                if run and not gap_ok:
+                    sq = [self._square(x) for x in run]
+                    R = fitz.Rect(sq[0])
+                    for q in sq[1:]:
+                        R |= q
+                    small = min(x.size for x in run)
+                    if (R.height if abs(ln.u[1]) < 1e-3 else R.width) > 0.45 * small + 0.6:
+                        out += sq                       # glyphs on different baselines: one square each
+                    else:
+                        out.append(R)
+                    run = []
+                if c is not None:
+                    run.append(c)
+                    last = k
+        return out
+
     def apply(self):
         page = self.page
         if self.gone:
-            for c in self.gone:
-                ln = c.line
-                w = c.adv() or (c.bbox.width or c.size * 0.5)
-                x0, y0 = ln.coords(c.o)
-                ctr = ln.point(x0 + w / 2, y0 + 0.32 * c.size)
-                r = max(0.25, min(w, c.size) * 0.16)
-                page.add_redact_annot(fitz.Rect(ctr.x - r, ctr.y - r, ctr.x + r, ctr.y + r), fill=False)
+            for R in self._redaction_rects():
+                page.add_redact_annot(R, fill=False)
             page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE,
                                   text=fitz.PDF_REDACT_TEXT_REMOVE)
         for u, v, piv, items, col in self.adds:

@@ -220,6 +220,11 @@ def _spots(label, w, fs, name, lo_l, hi_l):
         return [(0, below)]
     if name == "below-r":
         return [(adv - w, below)]
+    if name == "below-v":                               # under the value of a 'H = 66.65' line
+        x0 = getattr(label, "num_x", 0.0)
+        return [(x0, below)]
+    if name == "below-far":                             # further down: under the tile a piece label sits in
+        return [((adv - w) / 2, below - k * s) for k in (0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.2, 2.6)]
     return []
 
 
@@ -238,9 +243,81 @@ def _reads_as_own(poly, own, others, same_line, label, band):
     for B in others:
         if poly.distance(B) < 0.25 * label.size and c.distance(B) < 1.25 * dc + 0.1:
             return False
-        if c.distance(B) < dc:
+        if c.distance(B) < 1.4 * dc:                    # clearly nearer to its own number than to any other
             return False
     return True
+
+
+ROW_SCALES = (0.88, 0.8, 0.72, 0.66, 0.6, 0.54, 0.48, 0.44, 0.4, 0.36)
+
+
+def place_row(cv, members, texts, weight="reg", color=None, min_share=0.6):
+    """values for a row of numbers set close together on one baseline (the piece lengths of a segmentation diagram:
+    '100 25 25 30 35 40 45 50'): every value centred under its own number — or all of them over — at one size small
+    enough that neighbouring values keep apart.  Where the numbers are too close for a readable size the values are
+    staggered: every other one a line lower, still centred under its number.  Members whose spot is not free are left
+    out (returned as None).  Returns [result or None] in the order of `members`."""
+    n = len(members)
+    r0 = members[0]
+    s = sorted(m.size for m in members)[n // 2]
+    fo = FONT[weight]
+    centres = [r0.along(m.origin) + m.adv / 2 for m in members]
+    unit = [fo.text_length(t, 1.0) for t in texts]
+    gap = 0.3 * s
+
+    def fit(step):
+        lim = [(centres[i + step] - centres[i] - gap) / ((unit[i] + unit[i + step]) / 2) for i in range(n - step)]
+        return min(lim) if lim else 9e9
+    fit1, fit2 = fit(1), fit(2)
+    layouts = []
+    for sc in ROW_SCALES:
+        fs = s * sc
+        if fs < 3.3:
+            continue
+        if fs <= fit1:
+            layouts.append(("one", fs))
+        elif fs <= fit2 and n >= 3:
+            layouts.append(("two", fs))
+    best = None
+    for kind, fs in layouts:
+        for pos in ("below", "above"):
+            res = []
+            for k, (m, t) in enumerate(zip(members, texts)):
+                w = fo.text_length(t, fs)
+                lo_l = -0.2 if "," in m.t else -0.03
+                g2 = 0.10 * m.size + 0.4
+                level = (k % 2) if kind == "two" else 0
+                if pos == "below":
+                    dy = lo_l * m.size - g2 - 0.80 * fs - level * 1.02 * fs
+                else:
+                    dy = 0.74 * m.size + g2 + 0.22 * fs + level * 1.02 * fs
+                o = m.point((m.adv - w) / 2, 0)
+                o = fitz.Point(o.x + dy * m.v[0], o.y + dy * m.v[1])
+                poly, _ = text_outline(o, m.u, m.v, t, fs, weight)
+                mode = next((md for md in ("clean", "light", "knock") if cv.free(poly, md)), None)
+                res.append((o, poly, mode, fs, t))
+            cnt = sum(1 for x in res if x[2])
+            # every value placed matters most; then a single line over two, a larger size, below over above
+            key = (cnt == n, cnt, fs >= 0.55 * s and kind == "one", fs, pos == "below")
+            if best is None or key > best[0]:
+                best = (key, res)
+    if best is None or best[0][1] < max(2, min_share * n):
+        return [None] * n
+    out = []
+    for m, (o, poly, mode, fs, t) in zip(members, best[1]):
+        if not mode:
+            out.append(None)
+            continue
+        if mode == "knock":
+            patch = poly.buffer(0.35, join_style=2)
+            sh = cv.page.new_shape()
+            sh.draw_polyline([fitz.Point(x, y) for x, y in patch.exterior.coords])
+            sh.finish(color=None, fill=(1, 1, 1), closePath=True, width=0)
+            sh.commit()
+        put_text(cv.page, o, m.u, m.v, t, fs, weight, rgb(color if color is not None else m.color), italic=m.italic)
+        cv.take(poly)
+        out.append({"spot": "row", "mode": mode, "fs": fs, "poly": poly})
+    return out
 
 
 def place(cv, label, txt, others, order=None, stages=STAGES, color=None, weight=None, min_fs=3.4, base=1.0,
@@ -256,10 +333,11 @@ def place(cv, label, txt, others, order=None, stages=STAGES, color=None, weight=
     lo_l = -0.2 if "," in label.t else -0.03
     hi_l = 0.74
     u, v = label.u, label.v
-    n = (-u[1], u[0])                                   # band across the baseline for the same-line test
-    a = label.point(-60, 0)
-    b = label.point(label.adv + 60, 0)
-    band = LineString([(a.x, a.y), (b.x, b.y)]).buffer(0.45 * label.size)
+    # the band of the label's own line (mid-glyph height, ± 0.3 sizes) for the same-line test: neighbours on the line
+    # count, the lines above and below do not
+    a = label.point(-60, 0.35)
+    b = label.point(label.adv + 60, 0.35)
+    band = LineString([(a.x, a.y), (b.x, b.y)]).buffer(0.3 * label.size)
     for mode, sc in stages:
         fs = label.size * sc * base
         if fs < min_fs:

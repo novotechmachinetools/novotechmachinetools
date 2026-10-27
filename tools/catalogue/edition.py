@@ -33,30 +33,31 @@ from specblock import add_us_lines              # noqa: E402
 from annotate import annotate_page              # noqa: E402
 from logo import place_logo                     # noqa: E402
 import eurostamp_codes                          # noqa: E402
+import glyphnums                                # noqa: E402
 import pages as PG                              # noqa: E402
 
 CAT = "/home/claude/eurostamp/pdf/cat.pdf"
 WORK = os.path.join(ROOT, "tools", "cache", "edition")
-OCR_PAGES = {16, 17, 23, 27, 28, 61, 63, 64, 172, 195, 216, 228, 229, 231, 232, 237, 238, 239}
-NO_NUMBERS = set(range(1, 14)) | {14, 90, 146, 170, 190}          # cover, intro, index and section openers
+NO_NUMBERS = set(range(1, 14)) | {14, 90, 146, 170, 190, 215}     # cover, intro, index, section openers; 215: times in s
 
 
 def process(page, ppage, codes, report):
     pno = page.number + 1
-    h = PG.HANDLERS.get(pno)
+    outlined = glyphnums.has_outlined_text(page)          # dimensions drawn as outlines: read them before any edit
     ctx = {"skip_rects": [], "skip_lines": set(), "no_clean": False, "no_numbers": pno in NO_NUMBERS}
-    if h:
+    hs = PG.HANDLERS.get(pno, [])
+    for h in hs:
         h(page, ppage, ctx)
-        ppage = None                                # the page changed: no pdfplumber matrices for the cleanup
+        ppage = None                                # the page changed: no pdfplumber matrices after this
     if not ctx["no_clean"]:
         clean_page(page, ppage, report=report)
     add_us_lines(page, None, report=report)
     n = {}
     if not ctx["no_numbers"]:
-        n = annotate_page(page, codes=codes, skip_rects=ctx["skip_rects"], ocr=pno in OCR_PAGES, report=report)
-    post = PG.POST.get(pno)
-    if post:
-        post(page, ctx)
+        n = annotate_page(page, codes=codes, skip_rects=ctx["skip_rects"], ocr=outlined, report=report,
+                          reserve=ctx.get("reserve", []))
+    for post in PG.POST.get(pno, []):
+        post(page, ctx, report)
     place_logo(page)
     return n
 
@@ -73,7 +74,7 @@ def run_part(pages, part):
     out = fitz.open()
     for p in pages:
         out.insert_pdf(doc, from_page=p - 1, to_page=p - 1)
-    out.save(os.path.join(WORK, f"part-{part}.pdf"), garbage=3, deflate=True)
+    out.save(os.path.join(WORK, f"part-{part}.pdf"), garbage=4, deflate=True)
     json.dump({"pages": pages, "report": report}, open(os.path.join(WORK, f"part-{part}.json"), "w"))
     print("saved part", part, len(pages), "pages;", len(report), "left")
 
@@ -87,23 +88,47 @@ def assemble(out_path):
         pdf = fitz.open(os.path.join(WORK, pj.replace(".json", ".pdf")))
         for i, p in enumerate(meta["pages"]):
             by_page[p] = (pdf, i)
-    front = PG.front_pages()                         # NovoTech cover + edition page (+ back cover last)
+    missing = [p for p in range(3, 272) if p not in by_page]
+    if missing:
+        raise SystemExit(f"pages not processed yet: {missing[:20]}{' …' if len(missing) > 20 else ''}")
+    # the edition page shows punch 1055 on page 36 as it now is
+    sample = os.path.join(WORK, "edition-sample.png")
+    src, i = by_page[36]
+    src[i].get_pixmap(dpi=230, clip=fitz.Rect(40, 56, 331, 462)).save(sample)
+    front = PG.front_pages(sample)                   # NovoTech cover + edition page (+ back cover last)
     final = fitz.open()
     final.insert_pdf(front, from_page=0, to_page=1)
     for p in range(3, 272):
+        if p == 6:
+            final.insert_pdf(PG.imperial6())         # the air-bending page in inches, then EUROSTAMP's metric one
         src, i = by_page[p]
         final.insert_pdf(src, from_page=i, to_page=i)
     am = PG.american_pages()
-    if am is not None:
-        final.insert_pdf(am)
+    n_am = am.page_count
+    final.insert_pdf(am)
     final.insert_pdf(front, from_page=front.page_count - 1, to_page=front.page_count - 1)
-    final.set_metadata({"title": "Press brake tooling catalogue — EUROSTAMP, NovoTech inch edition", "author": "NovoTech Machine Tools Inc.",
-                        "subject": "EUROSTAMP punches, dies, holders, adapters and clamps with every dimension in inches and millimetres",
-                        "keywords": "press brake tooling, punches, dies, Amada-Promecam, European style, Trumpf, Wila, Bystronic, American style, inch",
+    n = final.page_count
+    # the page numbers a reader sees: EUROSTAMP's, '6 in' for the imperial page 6, 272 … for the American section
+    final.set_page_labels([{"startpage": 0, "prefix": "", "style": "D", "firstpagenum": 1},
+                           {"startpage": 5, "prefix": "6 in", "style": "", "firstpagenum": 1},
+                           {"startpage": 6, "prefix": "", "style": "D", "firstpagenum": 6},
+                           {"startpage": n - 1, "prefix": "Back cover", "style": "", "firstpagenum": 1}])
+    final.set_metadata({"title": "Press brake tooling catalogue — EUROSTAMP, NovoTech inch edition",
+                        "author": "NovoTech Machine Tools Inc.",
+                        "subject": "EUROSTAMP punches, dies, holders, adapters and clamps with every dimension in inches and "
+                                   "millimetres; American-style tooling",
+                        "keywords": "press brake tooling, punches, dies, Amada-Promecam, European style, Trumpf, Wila, Bystronic, "
+                                    "American style, inch",
                         "creator": "NovoTech Machine Tools Inc.", "producer": "NovoTech Machine Tools Inc."})
+    # the same font files are embedded once per page: merge the copies first, then keep only the glyphs used
+    tmp = os.path.join(WORK, "assembled-tmp.pdf")
+    final.save(tmp, garbage=4, deflate=True)
+    final = fitz.open(tmp)
     final.subset_fonts()
-    final.save(out_path, garbage=3, deflate=True, encryption=fitz.PDF_ENCRYPT_NONE)
-    print("saved", out_path, final.page_count, "pages", os.path.getsize(out_path) // 1024, "KB")
+    final.save(out_path, garbage=4, deflate=True, encryption=fitz.PDF_ENCRYPT_NONE)
+    os.remove(tmp)
+    print("saved", out_path, final.page_count, "pages", f"(American section {n_am})",
+          os.path.getsize(out_path) // 1024, "KB")
 
 
 def parse_pages(s):

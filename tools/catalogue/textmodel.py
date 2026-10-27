@@ -143,5 +143,27 @@ def runs(page, ppage=None, gap=0.55):
                 first = next(g for g in grp if g[0].strip())
                 main = max((g for g in grp if g[0].strip()), key=lambda g: g[4])
                 m = _matrix_for(idx, first[0], first[2])
+                txt = "".join(g[0] for g in grp).strip()
+                if MULTI_RE.match(txt):
+                    # '20 15 10': the piece lengths of a segmentation diagram set as one line — one run per number
+                    sub = []
+                    for g in grp + [(" ",)]:
+                        if g[0].strip():
+                            sub.append(g)
+                        elif sub:
+                            result.append(Run([x[:5] for x in sub], u, main[4], main[3], main[5], m))
+                            sub = []
+                    continue
                 result.append(Run([g[:5] for g in grp], u, main[4], main[3], main[5], m))
-    return result
+    # the same text printed twice in the same place (some labels are) counts once
+    out, seen = [], set()
+    for r in result:
+        key = (r.t, round(r.origin.x * 2), round(r.origin.y * 2), round(r.size, 1))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(r)
+    return out
+
+
+MULTI_RE = re.compile(r"^\d{1,4}(?:\s+\d{1,4})+$")

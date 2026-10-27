@@ -24,12 +24,57 @@ import textmodel as TM
 from fonts import ttf, font
 
 NUM_RE = re.compile(r"^(R\s?|Ø\s?|ø\s?)?(\d{1,4}(?:\.\d{1,3})?)$")
-SPEC_RE = re.compile(r"^(H|R|V|B|L|S)\s*=\s*(\d+(?:\.\d+)?)$")
+SPEC_RE = re.compile(r"^(H|R|V|B|L|S|v)\s*=\s*(\d+(?:\.\d+)?)$")
 LEN_RE = re.compile(r"^(\d{2,4})\s*mm$", re.I)
+LENGTH_CODES = {"1000", "1050", "1100", "1250", "1275", "1300", "2050", "2550", "3050", "3200", "4000", "4050"}  # codes that are also lengths
+COUNT_RE = re.compile(r"^(\d{1,2})\s*[x×]\s*(\d{2,4})(?:\s*mm)?$", re.I)     # '2x150': two pieces of 150 mm
 KG_RE = re.compile(r"^(\d+(?:\.\d+)?)\s*kg$", re.I)
 BOTH_RE = re.compile(r"^(\d{2,4})\s*mm\s+(\d+(?:\.\d+)?)\s*kg$", re.I)
 TAG_RE = re.compile(r"^(SECTIONED|HORN|SHORT SECTIONED)$")
+MMV_RE = re.compile(r"(?<![\d.])(\d+(?:\.\d+)?)\s?mm$")
 BLACK = 0x231F20
+
+
+def number_rows(dims):
+    """runs of plain numbers set one after the other on a common baseline, close together: [[(run, value, prefix)]]"""
+    n = len(dims)
+    parent = list(range(n))
+
+    def find(a):
+        while parent[a] != a:
+            parent[a] = parent[parent[a]]
+            a = parent[a]
+        return a
+    tight = []
+    for i in range(n):
+        a = dims[i][0]
+        for j in range(i + 1, n):
+            b = dims[j][0]
+            if a.u[0] * b.u[0] + a.u[1] * b.u[1] < 0.995 or abs(a.size / b.size - 1) > 0.15:
+                continue
+            # b's baseline offset from a's, across the line
+            dx, dy = b.origin.x - a.origin.x, b.origin.y - a.origin.y
+            across = abs(dx * -a.u[1] + dy * a.u[0])
+            if across > 0.3 * a.size:
+                continue
+            along = dx * a.u[0] + dy * a.u[1]
+            gap = along - a.adv if along > 0 else -along - b.adv
+            if gap < 2.0 * a.size:
+                parent[find(i)] = find(j)
+                if gap < 0.6 * a.size:
+                    tight.append(i)
+    groups = {}
+    for i in range(n):
+        groups.setdefault(find(i), []).append(i)
+    tight_roots = {find(i) for i in tight}
+    out = []
+    for root, idx in groups.items():
+        if len(idx) >= 3 or (len(idx) == 2 and root in tight_roots):
+            g = [dims[i] for i in idx]
+            r0 = g[0][0]
+            g.sort(key=lambda d: r0.along(d[0].origin))
+            out.append(g)
+    return out
 
 
 def is_blue(c):
@@ -60,7 +105,7 @@ def cells(runs):
         if not r.upright or r.size > 10:
             continue
         t = re.sub(r"\s+", " ", r.t)
-        if BOTH_RE.match(t) or LEN_RE.match(t):
+        if BOTH_RE.match(t) or LEN_RE.match(t) or COUNT_RE.match(t):
             lens.append(r)
         elif KG_RE.match(t):
             kgs.append(r)
@@ -80,7 +125,9 @@ def cells(runs):
         lo, hi = L.bbox.y0 - 2.5, (T.bbox.y1 if T else L.bbox.y1) + 3.0
         cand = [K for K in kgs if -2 < K.bbox.x0 - L.bbox.x1 < 48 and lo < (K.bbox.y0 + K.bbox.y1) / 2 < hi]
         K = min(cand, key=lambda K: abs(K.origin.y - cy)) if cand else None
-        rows.append({"mm": int(LEN_RE.match(t).group(1)), "kg": float(KG_RE.match(re.sub(r"\s+", " ", K.t)).group(1)) if K else None,
+        mc = COUNT_RE.match(t)
+        rows.append({"mm": int(mc.group(2) if mc else LEN_RE.match(t).group(1)), "n": int(mc.group(1)) if mc else None,
+                     "kg": float(KG_RE.match(re.sub(r"\s+", " ", K.t)).group(1)) if K else None,
                      "L": L, "K": K, "T": T})
     rows.sort(key=lambda r: (round(r["L"].bbox.x0), r["L"].bbox.y0))
     boxes = []
@@ -159,7 +206,7 @@ def twin_plan(cv, geo, b, dry_taken):
     X0, X1, Y0, Y1 = geo["X0"], geo["X1"], geo["Y0"], geo["Y1"]
     fs0 = rows[0]["L"].size
     LF = font(ttf("Roboto-Light"))
-    ins = [inch(r["mm"], 2) for r in rows]
+    ins = [(f"{r['n']} × " if r.get("n") else "") + inch(r["mm"], 2) for r in rows]
     lbs = [lb_text(r["kg"]) if r["kg"] is not None else "" for r in rows]
     H = Y1 - Y0
     for f in (fs0, fs0 * 0.9, fs0 * 0.82, fs0 * 0.75):
@@ -169,11 +216,14 @@ def twin_plan(cv, geo, b, dry_taken):
         wi = max(wi, tagw)
         wl = (max(LF.text_length(t, f) for t in lbs if t) + 2 * pad) if any(lbs) else 0
         W = wi + wl
-        spots = [("right", fitz.Rect(X1, Y0, X1 + W, Y1)), ("left", fitz.Rect(X0 - W, Y0, X0, Y1))]
+        # beside it on the right reads best (row for row), then under it, then on the left, then over it
+        Wb = max(W, X1 - X0)
+        spots = [("right", fitz.Rect(X1, Y0, X1 + W, Y1))]
         for g in (3, 6):
-            Wb = max(W, X1 - X0)
-            spots += [("below", fitz.Rect(X0, Y1 + g, X0 + Wb, Y1 + g + H)), ("below", fitz.Rect(X1 - Wb, Y1 + g, X1, Y1 + g + H)),
-                      ("above", fitz.Rect(X0, Y0 - g - H, X0 + Wb, Y0 - g)), ("above", fitz.Rect(X1 - Wb, Y0 - g - H, X1, Y0 - g))]
+            spots += [("below", fitz.Rect(X0, Y1 + g, X0 + Wb, Y1 + g + H)), ("below", fitz.Rect(X1 - Wb, Y1 + g, X1, Y1 + g + H))]
+        spots.append(("left", fitz.Rect(X0 - W, Y0, X0, Y1)))
+        for g in (3, 6):
+            spots += [("above", fitz.Rect(X0, Y0 - g - H, X0 + Wb, Y0 - g)), ("above", fitz.Rect(X1 - Wb, Y0 - g - H, X1, Y0 - g))]
         for spot, R in spots:
             test = fitz.Rect(R.x0 + (1.8 if spot == "right" else 0), R.y0 + (1.2 if spot in ("right", "left") else 0),
                              R.x1 - (1.8 if spot == "left" else 0), R.y1 - (1.2 if spot in ("right", "left") else 0))
@@ -313,8 +363,9 @@ def dual_texts(geo, b, plan):
         y0 = top + (h - block) / 2
         b1 = y0 + 0.76 * fs
         b2 = b1 + 1.08 * fs
-        out.append((fitz.Point(X0 + padl, b1), f"{r['mm']} mm", fs))
-        out.append((fitz.Point(X0 + padl, b2), inch(r["mm"], 2), fs))
+        cnt = f"{r['n']} × " if r.get("n") else ""
+        out.append((fitz.Point(X0 + padl, b1), f"{cnt}{r['mm']} mm", fs))
+        out.append((fitz.Point(X0 + padl, b2), cnt + inch(r["mm"], 2), fs))
         if tl:
             ft, lines = tl
             yb = b2 + 0.22 * fs + 0.78 * ft
@@ -376,13 +427,15 @@ def piece_labels(runs):
     return out
 
 
-def annotate_page(page, codes=frozenset(), skip_rects=(), ocr=False, report=None, box_mode="auto"):
-    """add the inch values; returns counts"""
+def annotate_page(page, codes=frozenset(), skip_rects=(), ocr=False, report=None, box_mode="auto", reserve=()):
+    """add the inch values; returns counts.  `reserve`: areas where text will be set later (no inch value goes there)"""
     rep = report if report is not None else []
     pno = page.number + 1
     pp = one_page_plumber(page)
     runs = TM.runs(page, pp)
     cv = PL.Canvas(page, runs)
+    for r in reserve:
+        cv.take_rect(fitz.Rect(r), pad=1.0)
     polys = {id(r): r.outline() for r in runs}
     n = {"dim": 0, "spec": 0, "box": 0, "piece": 0, "ocr": 0}
 
@@ -402,14 +455,20 @@ def annotate_page(page, codes=frozenset(), skip_rects=(), ocr=False, report=None
         if not v:
             continue
         txt = f"({v / 25.4:.3f}″)" if v >= 25.4 else f"({inch(v)})"
+        dig = next((k for k, c in enumerate(r.chars) if c[0].isdigit()), 0)
+        r.num_x = r.along(r.chars[dig][1])
         res = PL.place(cv, r, txt, others(r), order=["after", "after>"], weight="light",
-                       stages=[("clean", 0.82), ("clean", 0.7), ("light", 0.7), ("clean", 0.6)], color=BLACK)
+                       stages=[("clean", 0.82), ("clean", 0.7), ("light", 0.7), ("clean", 0.6), ("knock", 0.7),
+                               ("knock", 0.6)], color=BLACK)
+        if not res:                                     # last resort: under the value
+            res = PL.place(cv, r, txt, others(r), order=["below-v"], weight="light",
+                           stages=[("clean", 0.7), ("clean", 0.6), ("light", 0.6)], color=BLACK)
         if res:
             n["spec"] += 1
         else:
             rep.append((pno, "spec", r.t))
     # 2 · the length / weight boxes
-    bxs = cells(runs)
+    bxs = [b for b in cells(runs) if not any(skipped(r["L"]) for r in b["rows"])]
     drawings = page.get_drawings()
     geos = [box_geometry(drawings, b) for b in bxs]
     plans = None
@@ -453,7 +512,10 @@ def annotate_page(page, codes=frozenset(), skip_rects=(), ocr=False, report=None
         if id(r) not in pieces or skipped(r):
             continue
         cnt, mm, a, x = pieces[id(r)]
-        res = PL.place(cv, r, (f"({inch(mm, 2)})", inch(mm, 2)), others(r), order=["below", "after", "before"], weight="reg")
+        res = PL.place(cv, r, (f"({inch(mm, 2)})", inch(mm, 2)), others(r), order=["below", "below-far", "after", "before"],
+                       weight="reg", stages=[("clean", 0.88), ("clean", 0.75), ("light", 0.75), ("clean", 0.62),
+                                             ("light", 0.62), ("knock", 0.62), ("clean", 0.52), ("light", 0.52),
+                                             ("knock", 0.52), ("clean", 0.44)])
         if res:
             n["piece"] += 1
         else:
@@ -465,16 +527,40 @@ def annotate_page(page, codes=frozenset(), skip_rects=(), ocr=False, report=None
         if id(r) in box_runs or id(r) in piece_ids or skipped(r):
             continue
         m = NUM_RE.match(r.t)
-        if not m or r.size >= 14 or r.weight == "bold" or r.color == 0xFFFFFF:
+        if not m or r.size >= 17 or r.weight == "bold" or r.color == 0xFFFFFF:
             continue
-        if r.origin.y > page.rect.height - 50 and r.size >= 16:
-            continue
+        if r.origin.y > page.rect.height - 50 and r.size >= 15:
+            continue                                     # the page number
         v = float(m.group(2))
         if v == 0:
             continue
         if v >= 1000 and not is_blue(r.color):
             continue                                     # black 4-digit numbers are tool codes; blue ones are lengths
+        if v >= 1000 and not m.group(1) and r.t in codes and r.t not in LENGTH_CODES:
+            continue                                     # a blue tool code in a call-out ('4389' on the EUROGRIP drawings)
         dims.append((r, v, m.group(1)))
+    # rows of numbers set close together (the piece lengths of the segmentation diagrams) are laid out as a row: every
+    # value under its own number at one size
+    done_ids = set()
+    row_left = []
+    for row in number_rows([d for d in dims if not d[2]]):
+        texts = [inch(v) for r, v, pre in row]
+        res = PL.place_row(cv, [d[0] for d in row], texts)
+        for (r, v, pre), x in zip(row, res):
+            if x:
+                done_ids.add(id(r))
+                n["dim"] += 1
+            else:
+                row_left.append(id(r))
+    dims = [d for d in dims if id(d[0]) not in done_ids]
+    for r, v, pre in [d for d in dims if id(d[0]) in row_left]:
+        # a row member whose place under (or over) the row was taken: still under or over its own number
+        res = PL.place(cv, r, (f"({inch(v)})", inch(v)), others(r), order=["below", "above", "below-far"])
+        if res:
+            done_ids.add(id(r))
+            n["dim"] += 1
+    dims = [d for d in dims if id(d[0]) not in done_ids]
+
     # crowded numbers first: they have the fewest spots
     def crowd(d):
         r = d[0]
@@ -488,41 +574,63 @@ def annotate_page(page, codes=frozenset(), skip_rects=(), ocr=False, report=None
             n["dim"] += 1
         else:
             rep.append((pno, "dim", r.t))
-    # 5 · dimensions drawn as outlines
+    # 4b · millimetre values in tables and notes: '0.5 mm' → '0.5 mm (.020″)'
+    for r in runs:
+        if id(r) in box_runs or skipped(r) or "″" in r.t or is_blue(r.color) and r.size > 12:
+            continue
+        m = MMV_RE.search(re.sub(r"\s+", " ", r.t))
+        if not m or (r.chars and not r.upright):
+            continue
+        v = float(m.group(1))
+        if not v:
+            continue
+        res = PL.place(cv, r, f"({inch(v)})", others(r), order=["after", "after>"],
+                       weight="light" if r.weight == "light" else "reg",
+                       stages=[("clean", 0.85), ("clean", 0.72), ("light", 0.72), ("clean", 0.6)])
+        if res:
+            n["dim"] += 1
+        else:
+            rep.append((pno, "mm", r.t))
+    # 5 · dimensions drawn as outlines (vector glyphs): read with Tesseract, annotated the same way
     if ocr:
-        import ocrnums
-        for f in ocrnums.found(page):
-            R = f["rect"]
+        import glyphnums
+        fakes = []
+        for f in glyphnums.found(page):
             fake = FakeRun(f)
-            if any(polys[id(o)].intersects(fake.outline()) for o in runs):
-                continue                                     # real text already there
-            res = PL.place(cv, fake, (f"({inch(f['value'])})", inch(f["value"])), list(polys.values()))
+            if any(polys[id(o)].intersects(fake.outline()) for o in runs) or skipped(fake):
+                continue                                     # real text already there, or a page handler's area
+            fakes.append(fake)
+        allp = list(polys.values()) + [fk.outline() for fk in fakes]
+        for fake in fakes:
+            v = fake.value
+            stacked = (fake.prefix.strip() + " " if fake.prefix else "") + inch(v)
+            own = fake.outline()
+            res = PL.place(cv, fake, (f"({inch(v)})", stacked), [p for p in allp if p is not own and not p.equals(own)])
             if res:
                 n["ocr"] += 1
             else:
-                rep.append((pno, "ocr", f["text"]))
+                rep.append((pno, "ocr", fake.t))
     return n
 
 
 class FakeRun:
-    """a number read from the drawing, shaped like textmodel.Run for the placer"""
+    """a number read from the drawing (glyphnums.found), shaped like textmodel.Run for the placer"""
 
     def __init__(self, f):
-        R, u, v = f["rect"], f["u"], f["v"]
         self.t = f["text"]
+        self.value = f["value"]
+        self.prefix = f.get("prefix", "")
         self.size = f["size"]
-        self.u, self.v = u, v
-        self.weight, self.italic, self.color = "reg", False, 0x2E6EB5
-        if u == (1, 0):
-            self.origin = fitz.Point(R.x0, R.y1)
-            self.adv = R.width
-        elif u == (0, -1):                                   # reads bottom to top
-            self.origin = fitz.Point(R.x1, R.y1)
-            self.adv = R.height
-        else:                                                # top to bottom
-            self.origin = fitz.Point(R.x0, R.y0)
-            self.adv = R.height
-        self.bbox = R
+        self.u, self.v = tuple(f["u"]), tuple(f["v"])
+        self.weight, self.italic = "reg", False
+        self.color = f.get("color", 0x2E6EB5)
+        self.origin = fitz.Point(f["origin"])
+        self.adv = f["adv"]
+        self.bbox = f["rect"]
+        self.chars = []
+
+    def along(self, p):
+        return (p[0] - self.origin.x) * self.u[0] + (p[1] - self.origin.y) * self.u[1]
 
     def point(self, x, y, size=None):
         s = self.size if size is None else size
@@ -530,11 +638,11 @@ class FakeRun:
 
     @property
     def upright(self):
-        return self.u == (1, 0)
+        return abs(self.u[0] - 1) < 0.01
 
     @property
     def vertical(self):
-        return self.u == (0, -1)
+        return abs(self.u[1] + 1) < 0.01
 
     def outline(self, lo=None, hi=None):
         lo = -0.03 if lo is None else lo

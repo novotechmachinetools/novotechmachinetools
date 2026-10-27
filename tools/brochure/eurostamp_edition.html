@@ -111,7 +111,7 @@ tr:nth-child(even) td { background: var(--paper); }
     <div class="tag"><span>Tooling catalogue · inch edition</span></div>
     <div class="line">EUROSTAMP tooling · made in Italy · sold &amp; serviced in Canada by NovoTech</div>
     <h1>Press brake<br><em>tooling</em></h1>
-    <div class="sub">Punches, dies, holders, adapters and clamps for Amada-Promecam (European), Trumpf, Wila and Bystronic press brakes — every dimension in millimetres and inches</div>
+    <div class="sub">Punches, dies, holders, adapters and clamps for Amada-Promecam (European), Trumpf, Wila, Bystronic and American-style press brakes — every dimension in millimetres and inches</div>
     <div class="rule"></div>
   </div>
   <div class="photo"><img src="{{ hero }}" alt=""></div>
@@ -129,7 +129,7 @@ tr:nth-child(even) td { background: var(--paper); }
   <div class="body">
     <div class="kicker">NovoTech × EUROSTAMP</div>
     <h2 class="title">How to read this edition</h2>
-    <p class="lead">This is EUROSTAMP's own catalogue, page for page, with the inch values added by NovoTech. Nothing is taken away: every metric number keeps its place and the imperial value stands beside it, in the same type and colour.</p>
+    <p class="lead">This is EUROSTAMP's own catalogue, page for page, in English only, with the inch values added by NovoTech. Every metric number keeps its place and the imperial value stands under or beside it, parallel to it, in the same type.</p>
     <div class="cols">
       <div>
         <div class="sample"><img src="{{ sample }}" alt=""></div>
@@ -138,12 +138,12 @@ tr:nth-child(even) td { background: var(--paper); }
       <div>
         <h3>What was added</h3>
         <ul class="how">
-          <li><b>Dimensions</b> on the drawings: the inch value in brackets beside the millimetres — 105 (4.13″), R 0,5 (.020″). Two decimals from one inch up, three below.</li>
-          <li><b>The squared scale</b> round each punch: every numbered mark with its inch value — 20 (.79″), 40 (1.57″).</li>
-          <li><b>Specification lines</b>: height and radius in inches — H = 105.00 (4.134″), R = 0.5 (.020″).</li>
-          <li><b>Length boxes</b>: every length in inches and every weight in pounds, in a twin box beside the metric one or inside the same cells — 835 mm / 32.87″, 12,6 kg / 27.8 lb.</li>
-          <li><b>FRAZ. / SECT.</b> marks a sectioned set: pieces that add up to the length, with horns at the ends.</li>
-          <li>Where a drawing has no room beside a number — a small radius deep inside a 4V die, say — the number keeps its millimetres only: 1 mm = .0394″.</li>
+          <li><b>Dimensions</b> on the drawings: the inch value under the millimetres, or beside them where there is no room — 105 / 4.13″, R 0.5 (.020″). Two decimals from one inch up, three below; decimal points throughout.</li>
+          <li><b>The squared scale</b> round each punch: every numbered mark with its inch value — 20 / .79″, 40 / 1.57″.</li>
+          <li><b>Specification lines</b>: height and radius in inches — H = 105.00 (4.134″) — and a <b>Max US t/ft</b> line under every Max T/m.</li>
+          <li><b>Length boxes</b>: every length in inches and every weight in pounds, in a twin box beside the metric one or inside the same cells — 835 mm / 32.87″, 12.6 kg / 27.8 lb. <b>SECTIONED</b> marks a sectioned set, <b>HORN</b> a piece with a horn.</li>
+          <li><b>Page 6 in inches</b>: the air-bending chart in inches and US tons per foot, in front of EUROSTAMP's metric page 6.</li>
+          <li><b>American-style tooling</b> (.500″ tang): punches and dies on pages 272 – 277, drawings in inches with the millimetres added.</li>
           <li>The page numbers are EUROSTAMP's, so the product index on pages 8 – 13 still leads to every code.</li>
         </ul>
       </div>
@@ -156,7 +156,7 @@ tr:nth-child(even) td { background: var(--paper); }
           {% for s in styles %}<tr><td><span class="chip" style="background: {{ s.color }}"></span>{{ s.name }}</td><td>{{ s.pages }}</td></tr>
           {% endfor %}
         </table>
-        <p class="note">American-style tooling (.500″ tang) is on NovoTechMachineTools.com — American-style press brake tooling.</p>
+        <p class="note">Running text is set again in English, with inch values beside the millimetres. EUROSTAMP's page 6 stainless chart prints 208 t/m for V 50 / 8 mm; the chart's formula gives 128, which both versions of page 6 now show.</p>
       </div>
       <div>
         <h3>Max T/m in US tons per foot</h3>
@@ -187,14 +187,14 @@ tr:nth-child(even) td { background: var(--paper); }
     <b>Tooling from NovoTech</b>
     <ul>
       <li>EUROSTAMP tools made in Italy, C45 and 42CrMo4 steel, induction-hardened</li>
-      <li>Amada-Promecam, Trumpf, Wila, Bystronic and LVD styles</li>
+      <li>Amada-Promecam, Trumpf, Wila, Bystronic, LVD and American styles</li>
       <li>DXF profiles for your CNC on NovoTechMachineTools.com</li>
       <li>Sectioned sets, horns and special lengths on request</li>
       <li>Adapters between clamping systems, holders and clamps</li>
       <li>Special tools and heat treatments made to your drawing</li>
     </ul>
   </div>
-  <div class="maker"><img src="{{ maker_logo }}" alt="EUROSTAMP Tooling"><span>EUROSTAMP Tooling is a trademark of Eurostamp S.r.l., Via dell'Industria 11, 29010 Gragnano Trebbiense (PC), Italy. Catalogue pages reproduced from EUROSTAMP's IT-EN catalogue; inch values added by NovoTech.</span></div>
+  <div class="maker"><img src="{{ maker_logo }}" alt="EUROSTAMP Tooling"><span>EUROSTAMP Tooling is a trademark of Eurostamp S.r.l., Via dell'Industria 11, 29010 Gragnano Trebbiense (PC), Italy. Catalogue pages reproduced from EUROSTAMP's IT-EN catalogue; English text, inch values and the American-style section by NovoTech.</span></div>
   <img class="logo" src="{{ logo_dark }}" alt="NovoTech">
   <p class="fine">Specifications subject to change without notice. Inch and pound values are converted from the manufacturer's metric data and rounded (lengths to .01″ from one inch up and to .001″ below, weights to 0.1 lb). Codes are manufacturer designations.</p>
   <div class="bar"></div>

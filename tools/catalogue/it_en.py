@@ -8,6 +8,9 @@ import re
 # whole Italian lines with no English partner, anywhere
 T = {
     "SEZIONATO": "SECTIONED",
+    # the second lines of Italian labels whose first line went (EUROGRIP pages)
+    "SUPERIORE (fissa)": "", "manuale (M-EASY o M-TOP)": "", "pneumatico (P-EASY o P-TOP)": "", "(2 sec. )": "",
+    "(2 sec.)": "",
 }
 
 SAFETY = {"IL PULSANTE DI": "", "SICUREZZA VIENE": "", "MONTATO STANDARD SU": "", "TUTTI GLI UTENSILI CON": "",
@@ -32,7 +35,10 @@ ADJ_DIES = {"(pag 253)": "(page 253)", "Angolo minimo di piega / Minimum": "Mini
             "OGNI MODELLO DI MATRICE RICHIEDE UNO SPECIFICO SUPPORTO": "", "EACH DIE REQUIRES THE PROPER SUPPORT": "EACH DIE NEEDS ITS OWN HOLDER"}
 
 # {page: {original line: replacement}} — '' drops the line
+ESH_TREAT = {"nitrurato e fosfatato/": "", "nitrurato e fosfatato /": "", "nitrurato e fosfatato": ""}
 PAGE = {
+    247: {"CONTROTAVOLA": ""},
+    82: {"LUNGHEZZA STANDARD 100MM": "", "STANDARD LENGHT 100MM": "STANDARD LENGTH 100 MM (3.94″)"},
     50: {"TRAFILATI 15X15": "", "SQUARE BAR 15X15": "SQUARE BAR 15 × 15 MM (.59 × .59″)"},
     51: {"SOLO LUNGHEZZA": "", "505 MM": "", "LENGHT 505 MM": "LENGTH 505 MM (19.88″)"},
     66: {"POLYURETHAN": "POLYURETHANE"},
@@ -76,6 +82,17 @@ PAGE = {
     210: {"NYLON INSERTS AND HOLDER": "NYLON INSERTS AND HOLDERS"},
     211: {"POLYURETHANE INSERTS AND HOLDER": "POLYURETHANE INSERTS AND HOLDERS"},
     212: {"POLYURETHANE INSERTS AND HOLDER": "POLYURETHANE INSERTS AND HOLDERS"},
+    213: {"LIGHT TIGTHENING": "LIGHT TIGHTENING", "SUPERIORE (fissa)": ""},
+    214: {"L'INNOVAZIONE EUROGRIP / THE EUROGRIP INNOVATION": "THE EUROGRIP INNOVATION",
+          "IL RISPARMIO DI TEMPO / THE TIME SAVING": "TIME SAVED WITH EUROGRIP"},
+    217: {"(Corpo / Body: 27mm – Asse / Axis: 7mm)": "(body 27 mm / 1.06″ – axis 7 mm / .276″)",
+          "(Corpo / Body: 40mm – Asse / Axis: 20mm)": "(body 40 mm / 1.57″ – axis 20 mm / .787″)",
+          "MIN. 100": "MIN. 100 (3.94″)", "MIN. 120": "MIN. 120 (4.72″)"},
+    219: {"MIN. 100": "MIN. 100 (3.94″)", "MIN. FREE SPACE 88mm": "MIN. FREE SPACE 88 mm (3.46″)"},
+    227: {"SUPERIORE (fissa)": ""},
+    234: {"COMPONENTI AGGIUNTIVI PER SISTEMI PNEUMATICI / PNEUMATIC CLAMPING SYSTEM ADDITONAL COMPONENTS":
+              "ADDITIONAL COMPONENTS FOR PNEUMATIC CLAMPING SYSTEMS",
+          "KIT CONNESSIONI P-EASY": "", "KIT CONNESSIONI P-TOP": ""},
     235: dict(HEAVY, **{
         "GLI INTERMEDIARI REGISTRABILI (COMPLETI CON CUNEO PER CENTINATURA) POTREBBERO ESSERE FORNITI": "",
         "IN VERSIONE MONOLITICA OPPURE ASSEMBLATA (CORPO INTERMEDIARIO + PIASTRA FRONTALE)": "",
@@ -180,6 +197,10 @@ PAGE = {
           "FOSFATAZIONE": "", "Trattamento superficiale che": "", "aumenta la resistenza alla": "", "corrosione.": "",
           "Surface treatment able to increase the": "Surface treatment that increases"},
 }
+
+
+for _p in (87, 88, 89):                              # the ESH insert dies: their treatment line, Italian half
+    PAGE[_p] = dict(PAGE.get(_p, {}), **ESH_TREAT)
 
 
 def norm(t):

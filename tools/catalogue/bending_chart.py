@@ -50,22 +50,34 @@ def read_table(page, x0, x1, y0=470, y1=760):
     return [c[0] for c in cols], table
 
 
-def recommended(page, table, cols_x):
-    """the dark-blue cells: (V, S) pairs"""
-    out = set()
+def shades(page, table, cols_x, x0, x1):
+    """the filled cells of one table: (V, S) → 'rec' (dark blue, the recommended V) or 'grey'"""
+    out = {}
     for d in page.get_drawings():
         f = d.get("fill")
-        if not f or not (f[2] > 0.35 and f[0] < 0.2):
+        if not f:
+            continue
+        if f[2] > 0.35 and f[0] < 0.2:
+            kind = "rec"
+        elif 0.88 < f[0] < 0.92 and 0.88 < f[1] < 0.92 and 0.88 < f[2] < 0.92:
+            kind = "grey"
+        else:
             continue
         r = d["rect"]
-        if not (5 < r.width < 14 and 8 < r.height < 16):
+        if not (5 < r.width < 40 and 8 < r.height < 16):
             continue
         cx, cy = (r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2
+        if not x0 <= cx <= x1:
+            continue
         row = min(table, key=lambda t: abs(t["y"] - cy))
         if abs(row["y"] - cy) > 6:
             continue
-        S = min(cols_x, key=lambda c: abs(c[1] - cx))
-        out.add((row["V"], S[0]))
+        # a grey band covers the cells either side of the recommended one: every column whose centre is inside
+        for S in cols_x:
+            if r.x0 + 1 < S[1] < r.x1 - 1:
+                key = (row["V"], S[0])
+                if kind == "rec" or out.get(key) != "rec":
+                    out[key] = kind
     return out
 
 
@@ -81,7 +93,9 @@ def charts():
             t = w[4].replace("mm", "")
             if t and t[0].isdigit():
                 cols_x.append((num(t), (w[0] + w[2]) / 2))
-        res[name] = {"S": cols, "rows": table, "rec": sorted(recommended(page, table, cols_x))}
+        sh = shades(page, table, cols_x, x0, x1)
+        res[name] = {"S": cols, "rows": table, "shade": sorted(sh.items()),
+                     "rec": sorted(k for k, v in sh.items() if v == "rec")}
     return res
 
 
@@ -93,3 +107,4 @@ if __name__ == "__main__":
         for r in v["rows"]:
             print("  ", r["V"], r["B"], r["Ri"], r["F"])
         print("  rec:", v["rec"])
+        print("  grey:", sorted(k for k, s in v["shade"] if s == "grey"))

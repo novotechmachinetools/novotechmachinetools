@@ -317,13 +317,14 @@ def find_numbers(rgb, expect=None, grid_step=10, texts=None, thr=150):
                 txt = alt
             if txt is None:
                 continue
-        chars, k = [], 0
+        chars, k, commas = [], 0, []
         for kind, _, obj in seq:
             if kind == "g":
                 chars.append(txt[k])
                 k += 1
             elif chars and chars[-1].isdigit() and k < n_g:
                 chars.append(",")                          # a small blob between two digits: the decimal comma
+                commas.append((obj["x0"], obj["y0"], obj["x1"], obj["y1"]))
         s = "".join(chars)
         if re.fullmatch(r"[RØ]?0\d+", s):                     # 06 cannot be a length in mm: the comma was too faint to see
             i0 = 2 if s[0] in "RØ" else 1
@@ -336,7 +337,8 @@ def find_numbers(rgb, expect=None, grid_step=10, texts=None, thr=150):
         col = tuple(int(c) for c in px.mean(axis=0)) if len(px) else (60, 60, 60)
         kind = "dim" if (col[2] - col[0] > 8) else "grid"
         out.append({"text": s, "value": v, "is_r": bool(m.group(1)), "prefix": m.group(1) or "", "box": (x0, y0, x1, y1), "angle": ang,
-                    "cap": cap, "color": col, "kind": kind, "n": n_g, "_glyphs": [obj for kd, _, obj in seq if kd == "g"]})
+                    "cap": cap, "color": col, "kind": kind, "n": n_g, "_glyphs": [obj for kd, _, obj in seq if kd == "g"],
+                    "_commas": commas})
     # black numbers are scale-grid labels only when the drawing has a grid: round black numbers standing in evenly
     # spaced rows; in a drawing printed all in black they are its dimensions.  A round black number that fits no row of
     # a grid drawing is dropped (a grid label misread, most likely), any other black number is a dimension.
@@ -521,8 +523,10 @@ def _text_img(txt, font, color, ang):
     return im
 
 
-ORDER = {"dim": ["after", "above", "below", "after>", "before", "before<"],
+# as in the catalogue edition: under the number where there is room (no brackets), else over it, else beside it in brackets
+ORDER = {"dim": ["below", "above", "after", "before", "after>", "before<"],
          "grid": ["below", "above", "after", "before", "after>", "before<"]}
+STACKED = ("above", "below")
 
 
 def _spots(N, tw, th):
@@ -588,23 +592,39 @@ def _reads_as_own(R, own, others, N):
 def _fit(N, paper, texts, dark_only, scales, grow=3):
     """the first free spot for N's inch value that reads as N's: (text image, x, y) or None.  A spot nearer to another
     number than to N would be read as that number's inch value, so it is not used."""
-    extra = f"({inch(N['value'], 2 if N['kind'] == 'grid' else None)})"
+    plain = inch(N["value"], 2 if N["kind"] == "grid" else None)
     own = tuple(N["box"])
     others = [B for B in texts if tuple(B) != own]
     for scale in scales:
         font = ImageFont.truetype(FONT_PATH, max(8, int(round(N["cap"] / 0.711 * scale))))
-        tim = _text_img(extra, font, N["color"], N["angle"])
-        tw, th = tim.size
-        sp = _spots(N, tw, th)
-        alpha = np.asarray(tim.getchannel("A"))
         for spot in ORDER[N["kind"]]:
-            for (px, py) in sp.get(spot, []):
+            tim = _text_img(plain if spot in STACKED else f"({plain})", font, N["color"], N["angle"])
+            tw, th = tim.size
+            alpha = np.asarray(tim.getchannel("A"))
+            for (px, py) in _spots(N, tw, th).get(spot, []):
                 R = (px, py, px + tw, py + th)
                 if not _reads_as_own(R, own, others, N):
                     continue
                 if paper.clear_pixels(px, py, alpha, ignore=own, dark_only=dark_only, grow=grow):
                     return tim, px, py, alpha
     return None
+
+
+def decimal_points(out, nums):
+    """decimal commas → points: the comma's blob painted out and a round point set where its head was (on the
+    baseline), in the number's colour — '65,5' reads '65.5' as in the catalogue edition"""
+    dr = ImageDraw.Draw(out)
+    for N in nums:
+        for (x0, y0, x1, y1) in N.get("_commas") or []:
+            dr.rectangle([x0 - 1, y0 - 1, x1 + 1, y1 + 1], fill=(255, 255, 255))
+            if N["angle"] == 90:
+                d = max(2.0, (y1 - y0) * 0.95)
+                cy = (y0 + y1) / 2
+                dr.ellipse([x0, cy - d / 2, x0 + d, cy + d / 2], fill=tuple(N["color"]))
+            else:
+                d = max(2.0, (x1 - x0) * 0.95)
+                cx = (x0 + x1) / 2
+                dr.ellipse([cx - d / 2, y0, cx + d / 2, y0 + d], fill=tuple(N["color"]))
 
 
 def _grid_checked(grid):
@@ -671,7 +691,8 @@ def find_twice(rgb, expect=None, grid_step=10):
     n2 = find_numbers(big, expect=expect, grid_step=grid_step, texts=t2, thr=185)
     nums = list(n2)
     for N in n1:
-        N = dict(N, box=tuple(2 * v for v in N["box"]), cap=2 * N["cap"])
+        N = dict(N, box=tuple(2 * v for v in N["box"]), cap=2 * N["cap"],
+                 _commas=[tuple(2 * v for v in c) for c in N.get("_commas") or []])
         if not any(_overlap(N["box"], M["box"]) > 0.3 for M in nums):
             nums.append(N)
     texts = list(t2) + [tuple(2 * v for v in B) for B in t1 if not any(_overlap(tuple(2 * v for v in B), C) > 0.3 for C in t2)]
@@ -689,6 +710,7 @@ def annotate(rgb, expect=None, grid_step=10, thr=150, found=None, small=None):
         texts = []
         nums = find_numbers(rgb, expect=expect, grid_step=grid_step, texts=texts, thr=thr)
     out = rgb.copy()
+    decimal_points(out, nums)
     paper = Paper(small, 2) if small is not None else Paper(rgb)
     report = []
     # dimensions first, the longest numbers first; a second pass may write over the light grey of a tool body

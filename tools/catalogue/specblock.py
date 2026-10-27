@@ -254,6 +254,12 @@ def _sig(d):
 BIG = (1.0, 0.9)
 SMALL = (0.82, 0.74, 0.66)
 DEBUG = []
+ALPHA_FIRST = {187}        # crowded pages: 'α = …' joins the Mat line before anything else moves (the boxes stay put)
+
+
+def _is_alpha(L):
+    c = next((c for c in L.chars if c.c.strip()), None)
+    return c is not None and (c.c == "α" or (c.c == "a" and "Symbol" in (c.font or ""))) and "=" in L.t
 
 
 def add_us_lines(page, ppage=None, report=None):
@@ -306,7 +312,7 @@ def add_us_lines(page, ppage=None, report=None):
         def try_down(scales):
             for sc in scales:
                 d1, sh = offs(sc)
-                if all(free(m2, glyph_rect(L, sh), page) for L in below) and free(m2, new_rect(sc, d1), page):
+                if all(free(m2, glyph_rect(L, sh), page, margin=1.8) for L in below) and free(m2, new_rect(sc, d1), page):
                     return ("down", sc, d1, sh)
 
         def try_push(scales):
@@ -328,12 +334,62 @@ def add_us_lines(page, ppage=None, report=None):
             sp = font(ttf(Mat.chars[-1].font)).text_length(" ", Mat.size)
             tw = font(ttf(T.main_font)).text_length("tempered", T.size)
             x_end = Mat.bbox.x1 + sp
-            tr = fitz.Rect(x_end, Mat.O.y - 0.8 * Mat.size, x_end + tw, Mat.O.y + 0.22 * Mat.size)
-            if not free(m2, tr, page, margin=2.0):
+            tr = fitz.Rect(x_end, Mat.O.y - 0.74 * Mat.size, x_end + tw + 1.5, Mat.O.y + 0.22 * Mat.size)
+            if not free(m2, tr, page, margin=1.2):
                 return None
             for sc in scales:
                 if free(m2, new_rect(sc, 0.0), page):
                     return ("merge", sc, T, Mat, x_end)
+
+        def try_alpha(scales):
+            """'α = 30°' (the block's last line) moves to the end of the Mat line; the new line takes its place"""
+            if align != "left" or not below or not _is_alpha(below[-1]) or not blk[0].t.startswith("Mat"):
+                return None
+            A, Mt = below[-1], blk[0]
+            # some α lines come with a stray copy of their first glyph as a line of its own
+            if any(not (len(L.t) == 1 and abs(L.O.x - A.O.x) < 1 and abs(L.O.y - A.O.y) < 1) for L in below[:-1]):
+                return None
+            txt = "".join(char_for(c.c, c.font) for c in A.chars).strip()
+            ref = next((c for c in A.chars if c.c == "="), A.chars[-1])
+            fpath = ttf(ref.font)
+            sp = font(ttf(Mt.chars[-1].font)).text_length(" ", Mt.size)
+            x_end = Mt.bbox.x1 + 1.1 * sp
+            d_alpha = A.O.y - M.O.y
+            thin = txt.replace(" ", "\u2009")
+            for t2, a_sc in ((txt, 1.0), (txt, 0.86), (thin, 0.86), (thin, 0.78), (thin, 0.72)):
+                aw = font(fpath).text_length(t2, A.size * a_sc)
+                ar = fitz.Rect(x_end, Mt.O.y - 0.74 * A.size * a_sc, x_end + aw + 0.4, Mt.O.y + 0.2 * Mt.size)
+                if not free(m2, ar, page, margin=0.8):
+                    continue
+                for sc in scales:
+                    if free(m2, new_rect(sc, d_alpha), page):
+                        return ("alpha", sc, d_alpha, A, Mt, x_end, t2, fpath, A.size * a_sc, ref.color)
+            if DEBUG:
+                print("   alpha: no room", fitz.Rect(x_end, Mt.O.y - Mt.size, x_end + aw, Mt.O.y))
+
+        def try_compress():
+            """every line of the block set again a little smaller at a tighter pitch, so that the new line fits in the
+            height the block had: for blocks with nowhere to grow (a box beside them, the page foot under them)"""
+            n = len(blk)
+            if n < 3:
+                return None
+            y0, y1 = blk[0].O.y, blk[-1].O.y
+            p2 = (y1 - y0) / n
+            sc = min(1.0, p2 / pitch)
+            if sc < 0.7:
+                return None
+            ys = [y0 + (k if k <= i else k + 1) * p2 for k in range(n)]
+            y_new = y0 + (i + 1) * p2
+            for L, y in zip(blk, ys):
+                w = _line_width(L, sc)
+                x = L.O.x if align == "left" else L.bbox.x1 - w
+                if not free(m2, fitz.Rect(x, y - 0.8 * L.size * sc, x + w, y + 0.22 * L.size * sc), page, margin=0.6):
+                    return None
+            w = sum(font(ttf(f)).text_length(t, M.size * sc) for t, f in items)
+            x = M.O.x if align == "left" else M.bbox.x1 - w
+            if not free(m2, fitz.Rect(x, y_new - 0.8 * M.size * sc, x + w, y_new + 0.22 * M.size * sc), page, margin=0.6):
+                return None
+            return ("compress", sc, ys, y_new)
 
         def try_up(scales):
             above = blk[:i + 1]
@@ -341,10 +397,17 @@ def add_us_lines(page, ppage=None, report=None):
                 if all(free(m2, glyph_rect(L, -pitch), page) for L in above) and free(m2, new_rect(sc, 0.0), page):
                     return ("up", sc)
 
-        plan = (try_down(BIG) or try_push(BIG) or try_merge(BIG) or try_up(BIG)
-                or try_down(SMALL) or try_push(SMALL) or try_merge(SMALL) or try_up(SMALL))
+        if page.number + 1 in ALPHA_FIRST:
+            plan = (try_down(BIG) or try_alpha(BIG) or try_alpha(SMALL) or try_push(BIG) or try_merge(BIG)
+                    or try_up(BIG) or try_down(SMALL) or try_push(SMALL) or try_merge(SMALL) or try_up(SMALL))
+        else:
+            plan = (try_down(BIG) or try_push(BIG) or try_merge(BIG) or try_up(BIG)
+                    or try_down(SMALL) or try_push(SMALL) or try_merge(SMALL) or try_up(SMALL)
+                    or try_alpha(BIG) or try_alpha(SMALL))
         if DEBUG:
             print("  plan", page.number + 1, M.t, align, [L.t for L in blk], "box" if R_box else "-", plan and plan[:2])
+        if plan is None:
+            plan = try_compress()
         if plan is None:
             dig = next((c for c in reversed(M.chars) if c.c.strip()), M.chars[-1])
             txt = f" ({value} US t/ft)"
@@ -371,6 +434,15 @@ def add_us_lines(page, ppage=None, report=None):
                 R = plan[4]
                 pushes.append((R, sh))
                 mark(mask, fitz.Rect(R.x0, R.y0 + sh, R.x1, R.y1 + sh))
+        elif kind == "compress":
+            _, sc, ys, y_new = plan
+            for L, y in zip(blk, ys):
+                mark(mask, fitz.Rect(L.bbox.x0, y - 0.8 * L.size * sc, L.bbox.x1, y + 0.22 * L.size * sc))
+            mark(mask, fitz.Rect(M.bbox.x0, y_new - 0.8 * M.size * sc, M.bbox.x0 + width(sc), y_new + 0.22 * M.size * sc))
+        elif kind == "alpha":
+            _, sc, d_alpha, A, Mt, x_end, txt, fpath, asz, acol = plan
+            mark(mask, new_rect(sc, d_alpha))
+            mark(mask, fitz.Rect(x_end, Mt.O.y - 0.78 * asz, x_end + font(fpath).text_length(txt, asz), Mt.O.y + 0.24 * asz))
         elif kind in ("merge", "up"):
             mark(mask, new_rect(plan[1], 0.0))
             if kind == "up":
@@ -402,12 +474,61 @@ def add_us_lines(page, ppage=None, report=None):
             for L in blk[:i + 1]:
                 ed.put_chars(L, L.chars, dy=pitch)
             write_items(ed, M, items, x0, 0.0, plan[1])
+        elif kind == "compress":
+            _, sc, ys, y_new = plan
+            align = "left" if abs(blk[0].O.x - M.O.x) < 2 else "right"
+            for L, y in zip(blk, ys):
+                reset_line(ed, L, y, sc, align)
+            w = sum(font(ttf(f)).text_length(t, M.size * sc) for t, f in items)
+            x_new = 0.0 if align == "left" else (M.bbox.x1 - M.O.x) - w
+            write_items(ed, M, items, x_new, -(y_new - M.O.y), sc)
+        elif kind == "alpha":
+            _, sc, d_alpha, A, Mt, x_end, txt, fpath, asz, acol = plan
+            for L in below:                                  # the α line and any stray copy of its first glyph
+                ed.drop(L.chars)
+            ed.put_text(Mt, x_end - Mt.O.x, txt, fpath, asz, color=acol)
+            write_items(ed, M, items, x0, -d_alpha, sc)
         else:
             _, sc, x, txt, dig = plan
             ed.put_text(M, x, txt, dig.font, M.size * sc, color=dig.color)
         n += 1
     ed.apply()
     return n
+
+
+def _segments(L):
+    """a line as (text, font, size, colour) pieces: consecutive glyphs in one font"""
+    out = []
+    for c in L.chars:
+        ch = char_for(c.c, c.font)
+        if out and out[-1][1] == c.font and abs(out[-1][2] - c.size) < 0.01 and out[-1][3] == c.color:
+            out[-1][0] += ch
+        else:
+            out.append([ch, c.font, c.size, c.color])
+    while out and not out[-1][0].strip():
+        out.pop()
+    return out
+
+
+def _line_width(L, sc):
+    segs = _segments(L)
+    if segs:
+        segs[0][0] = segs[0][0].lstrip()
+    return sum(font(ttf(f)).text_length(t, sz * sc) for t, f, sz, _ in segs)
+
+
+def reset_line(ed, L, y, sc, align):
+    """L set again on baseline y at sc of its size (left lines keep their start, right ones their end)"""
+    segs = _segments(L)
+    if not segs:
+        return
+    segs[0][0] = segs[0][0].lstrip()
+    ed.drop(L.chars)
+    w = sum(font(ttf(f)).text_length(t, sz * sc) for t, f, sz, _ in segs)
+    x = 0.0 if align == "left" else (L.bbox.x1 - L.O.x) - w
+    dy = -(y - L.O.y)
+    for t, f, sz, col in segs:
+        x = ed.put_text(L, x, t, f, sz * sc, color=col, dy=dy)
 
 
 def write_items(ed, M, items, x, dy, sc=1.0):
