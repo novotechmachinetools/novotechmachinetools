@@ -1,0 +1,122 @@
+{
+ "slug": "milling-machine",
+ "template": "category.html",
+ "family_set": "ttmc-more",
+ "title": "Milling Machines — Turret, Universal & Mill-Drills | NovoTech",
+ "artifact_title": "Milling machines — turret, universal and drilling-milling machines",
+ "meta_description": "Milling machines for metal: turret mills with horizontal spindle, universal and heavy ISO50 milling machines to 79″ tables, drilling-milling machines, mini mills and keyseaters.",
+ "h1": "Milling machines — turret, universal and drilling-milling machines",
+ "intro": "Milling machines cut flat faces, slots, steps, pockets and keyways with rotating cutters while the table moves the work under them. NovoTech's value-line milling machines are built in China to our specification: knee-type turret mills with a horizontal spindle as well as the vertical head, universal mills with a head that swivels through 360°, heavy ISO50 universal mills with power feed and rapid traverse on all axes and tables up to 79″, drilling-milling machines that drill 2″, a mini mill-drill and a radial drill-mill, and a keyseater and a slotting machine for keyways and splines. Parts and support from Mississauga, ON, Canada.",
+ "hero_points": [
+  "Turret mills X6325W – X6336WA: vertical head to 7,200 rpm, horizontal spindle, power feed, tables to 64 × 14″",
+  "Universal mills XQ6226, X6436 and heavy ISO50 LM-1450 / X5750 with tables to 79″ and servo feeds",
+  "ZX drilling-milling machines for 2″ drilling; TX-20 and DM-20; B5012 keyseater and B5013 slotter"
+ ],
+ "hero_image": "tm-x6332",
+ "hero_image_secondary": [
+  "tm-lm1450",
+  "tm-zx5325"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Milling machines"
+  }
+ ],
+ "hero_brand_line": "NovoTech value line — NovoTech's own brand, manufactured in China to high North American quality standards and sold with a 1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support from Mississauga, ON, Canada.",
+ "nav_label": "Milling machines",
+ "groups": [
+  {
+   "id": "turret-group",
+   "title": "Turret milling machines",
+   "lead": "Knee-type mills with a turret head — the tool-room machine — and on the W models a horizontal spindle too.",
+   "brand": "novotech",
+   "families": [
+    "tt-mill-turret"
+   ]
+  },
+  {
+   "id": "univ-group",
+   "title": "Universal milling machines",
+   "lead": "Horizontal and vertical milling on one machine, with a head that swivels through 360°.",
+   "brand": "novotech",
+   "families": [
+    "tt-mill-univ",
+    "tt-mill-heavy"
+   ]
+  },
+  {
+   "id": "drill-group",
+   "title": "Drilling-milling machines and mini mills",
+   "lead": "Mill-drills for the job shop and the repair shop: 2″ drilling and face milling on one column.",
+   "brand": "novotech",
+   "families": [
+    "tt-zx",
+    "tt-mill-small"
+   ]
+  },
+  {
+   "id": "slot-group",
+   "title": "Keyseaters and slotting machines",
+   "lead": "Keyways and splines in hubs, gears and pulleys.",
+   "brand": "novotech",
+   "families": [
+    "tt-slot"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Turret mill, universal mill or drill-mill?",
+   "a": "A turret (Bridgeport-type) mill has a vertical head that tilts and a knee that moves the table up and down — the most flexible machine for one-off parts, slots and pockets. A universal mill adds a horizontal spindle and arbor for side and slab milling and gang cutters, and swivels its head through 360°. A drill-mill drills and mills on one column without a knee: the lower-cost choice when most of the work is drilling with some face milling."
+  },
+  {
+   "q": "What do ISO40 and ISO50 mean?",
+   "a": "They are the sizes of the spindle taper that holds the tool holder: ISO40 (NT40, the same size as CAT40 and BT40) for general milling, ISO50 for heavier cuts and larger face mills. R8 and MT tapers are found on small mills. Tell us what tooling you already have — adapters are available."
+  },
+  {
+   "q": "Power feed and DRO?",
+   "a": "Power feed moves the table at a steady rate for a better finish and less operator fatigue; a digital readout (DRO) shows the table position to 0.0002″ and replaces the dials for most work. The X6336 and LM-1450 have power feed on all three axes; DROs are available on most models — ask us when you quote."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about milling machines",
+ "catalogue_pdf": null,
+ "origin_feature": {
+  "title": "NovoTech value line — built in China",
+  "text": "Built in China to NovoTech's specification by a maker that exports metalworking machinery to more than 70 countries; inspected before shipping, wired for Canadian power and supported by NovoTech's technicians in Mississauga, ON, Canada."
+ },
+ "section_label": "Milling machines",
+ "related_pages": [
+  {
+   "href": "drill-press.html",
+   "label": "Drill presses"
+  },
+  {
+   "href": "cnc-machine-tools.html",
+   "label": "CNC lathes and machining centres"
+  },
+  {
+   "href": "belt-grinder.html",
+   "label": "Belt grinders and sanders"
+  },
+  {
+   "href": "band-saw.html",
+   "label": "Band saws"
+  }
+ ],
+ "related_title": "More machinery from NovoTech",
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null
+}

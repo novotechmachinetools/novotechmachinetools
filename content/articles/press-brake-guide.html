@@ -1,0 +1,69 @@
+<section class="guide-section" id="how-a-press-brake-bends">
+<h3>How does a press brake bend?</h3>
+<p>A press brake bends sheet and plate by pressing it with a punch (the upper tool) into a V-shaped die (the lower tool). Almost all CNC bending today is <strong>air bending</strong>: the punch pushes the sheet into the V without forcing it against the die walls, and the angle is set by how deep the punch goes. The same punch and die make 90°, 120° or 135° bends, and the CNC controls the depth to a few ten-thousandths of an inch. Two older methods are still used. <strong>Bottoming</strong> presses the sheet against the die faces for very consistent angles in thin sheet and takes several times the force. <strong>Coining</strong> stamps the punch tip into the sheet and takes five to ten times the force, so on a modern CNC brake it is rarely worth it.</p>
+<p>In air bending the inside radius comes from the die opening, not from the punch. In mild steel it comes out at about 15 – 17 % of the V (a 2″ V gives about a 5/16″ inside radius), in 304 stainless about 20 – 22 % and in soft aluminum about 13 – 15 %. That is why the V opening is the first decision for every bend, and it also decides the tonnage.</p>
+<figure class="guide-figure" data-img="vl-wadg-tooling"></figure>
+</section>
+<section class="guide-section" id="press-brake-tonnage-and-length">
+<h3>How much tonnage and length do I need?</h3>
+<p>For 90° air bending of mild steel (60,000 psi tensile), <strong>US tons per foot ≈ 575 × t² ÷ V</strong>, with the thickness t and the V opening in inches. Use a V of about 8 × t for sheet up to 1/2″ and 10 – 12 × t for thicker plate, which also keeps the outside of the bend from cracking. Multiply the mild-steel figure by about 1.5 for 304 stainless, about 0.5 for soft aluminum, about 1.3 for 350W (Grade 50) structural steel and about 3 for wear plate such as AR400, which also needs a wider die.</p>
+<div class="table-scroll" tabindex="0" aria-label="Press brake tonnage examples"><table class="spec-table spec-table-simple guide-table guide-small"><caption>Air bending at 90°, mild steel <small>From the full chart in the press brake tooling guide</small></caption><thead><tr><th scope="col">Thickness</th><th scope="col">V opening</th><th scope="col">US tons per foot</th><th scope="col">10 ft bend</th></tr></thead><tbody>
+<tr><th scope="row">16 ga (.060″)</th><td>1/2″</td><td>4.1</td><td>41 tons</td></tr>
+<tr><th scope="row">10 ga (.135″)</th><td>1″</td><td>10.5</td><td>105 tons</td></tr>
+<tr><th scope="row">3/16″</th><td>1-1/2″</td><td>13.5</td><td>135 tons</td></tr>
+<tr><th scope="row">1/4″</th><td>2″</td><td>18.0</td><td>180 tons</td></tr>
+<tr><th scope="row">3/8″</th><td>3″</td><td>27.0</td><td>270 tons</td></tr>
+<tr><th scope="row">1/2″</th><td>5″</td><td>28.8</td><td>288 tons</td></tr>
+<tr><th scope="row">3/4″</th><td>8″</td><td>40.4</td><td>404 tons</td></tr>
+</tbody></table></div>
+<p>Leave about 20 % headroom above the heaviest bend you make, so the machine is not working at its limit every day. For length, add at least a foot to the longest part, so the part clears the side frames with room to position it. As a guide:</p>
+<ul>
+<li>10 ft × 1/4″ is a 175 – 220 ton machine.</li>
+<li>10 ft × 3/8″ is a 250 – 320 ton machine.</li>
+<li>13 ft × 1/2″, bent in a 5 – 6″ V, is a 400 – 450 ton machine.</li>
+</ul>
+<p>Two more checks before you choose. First, the <strong>minimum flange</strong>: a flange shorter than about 0.7 × V falls into the die, so a 1/4″ part in a 2″ V needs a flange of at least about 1-3/8″. Second, <strong>short heavy bends</strong>: full tonnage is meant to be spread along the bed, and a short bend near full tonnage on a long machine concentrates the load on the beam and the tooling. Check the tons-per-foot rating of the tools and the maker's limit for the bed.</p>
+<figure class="guide-figure" data-img="vl-wad-heavy"></figure>
+</section>
+<section class="guide-section" id="hydraulic-hybrid-or-electric-press-brake">
+<h3>Hydraulic, hybrid or electric?</h3>
+<h4>Hydraulic</h4>
+<p>Two cylinders, one at each end of the ram, are kept level by proportional valves and linear scales on the side frames (Y1 and Y2 synchronisation). Hydraulic press brakes are built in every size, from about 30 to more than 1,000 tons and up to 26 ft or longer in tandem. They are the standard choice for plate and long beds. The pump runs whenever the machine is on, so the oil warms up and the motor uses power even when the ram is still.</p>
+<h4>Hybrid</h4>
+<p>A servo motor drives the pump only while the ram moves. The frame and cylinders are the same as on a hydraulic brake, but the machine uses 40 – 60 % less electricity, runs cooler and quieter, and needs less oil. If your brake waits between bends for loading and handling, which most do, the hybrid repays its price in power and oil.</p>
+<h4>Electric</h4>
+<p>Servo motors drive the ram through ball screws or a belt-and-pulley system, with no hydraulic oil at all. Electric press brakes are the fastest and most repeatable, the quietest and the cheapest to run, but they are built in smaller tonnages, typically up to about 220 US tons. They are the machine for sheet-metal parts, enclosures and high-mix work in thin and medium gauges.</p>
+<h4>NC torsion-bar</h4>
+<p>On an NC press brake the two cylinders are tied together by a torsion shaft instead of being controlled separately, and the control sets the ram stop and the back gauge. It is the simplest and lowest-priced press brake and suits repeat parts in a small shop. It cannot tilt the ram for tapered bends, and the angle depends more on the operator.</p>
+<figure class="guide-figure" data-img="vl-wadg-motors"></figure>
+</section>
+<section class="guide-section" id="press-brake-cnc-axes-crowning">
+<h3>CNC control, back gauge axes and crowning</h3>
+<p>A CNC press brake controls the ram (Y1 and Y2), the back gauge and the crowning from one program. On a graphic control such as the Delem DA-58T or DA-66T, or the ESA S875, the operator draws the part or imports it, and the control calculates the bend sequence, the depth for each angle and the back gauge positions. Programs can also be prepared on a PC in the office while the machine works.</p>
+<p>The back gauge axes decide how many different parts the machine can handle without a manual set-up:</p>
+<ul>
+<li><strong>X</strong> moves the fingers front to back for the flange length. Every CNC brake has it.</li>
+<li><strong>R</strong> moves them up and down, so the fingers follow dies of different heights and stepped flanges.</li>
+<li><strong>Z1 and Z2</strong> move each finger sideways, so several set-ups can sit along the bed at once.</li>
+<li><strong>X1 and X2</strong> move each finger front to back separately, for tapered and angled flanges.</li>
+</ul>
+<p>For a job shop, X and R are the minimum, and a 6-axis gauge (X1, X2, R1, R2, Z1, Z2) earns its price when you bend many short batches. Sheet followers that lift large sheets with the bend are worth having on plate and long panels.</p>
+<p><strong>Crowning</strong> matters on every brake longer than about 8 ft. Under load the bed and the ram bow slightly, so the middle of a long bend comes out more open than the ends. Crowning (hydraulic cylinders in the bed or a motorised wedge system, set by the CNC) bends the bed back by the same amount, so the angle is the same along the whole length.</p>
+<figure class="guide-figure" data-img="vl-pb-da66"></figure>
+</section>
+<section class="guide-section" id="press-brake-tooling-choice">
+<h3>Tooling and clamping</h3>
+<p>Most press brakes in Canada take European-style (Amada-Promecam) tooling; others use the hydraulic New Standard clamping of Wila and Trumpf, or the American .500″ tang. Quick-release or hydraulic clamping cuts tool changes from minutes to seconds, and for a high-mix shop it is worth more than a faster ram. A practical first set is an 88° straight punch and an 88° gooseneck punch, for return flanges and boxes; a 4V die or a set of 1V dies covering 6 – 10 × your common thicknesses; and sectioned punches with horns for boxes. Check the open height and stroke against the tallest punch you need: a deep box needs a tall gooseneck punch and enough height to lift the finished box out. The <a href="press-brake-tooling-punch-and-die.html#tooling-guide">press brake tooling guide</a> has the full tonnage chart and the clamping styles.</p>
+</section>
+<section class="guide-section" id="press-brake-safety-installation">
+<h3>Safety, installation and support in Canada</h3>
+<p>Every press brake needs point-of-operation guarding. Laser finger protection (DSP or Fiessler type) or light curtains are the standard on CNC machines, with side and rear guards and a foot pedal with an emergency stop. In Ontario, a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it.</p>
+<p>NovoTech supplies three-phase press brakes for 600 V with a CSA-approved panel as standard (208, 240 or 480 V on request). We send the floor plan and foundation details with the quote, and we unload, level, commission and train your operators. To quote, we need:</p>
+<ul>
+<li>the thickest and the longest bend, and the material grade</li>
+<li>drawings of a few typical parts</li>
+<li>how many different parts you bend and your batch sizes</li>
+<li>the voltage in your shop</li>
+</ul>
+<p>From those we size the tonnage, the length, the back gauge and the tooling.</p>
+</section>

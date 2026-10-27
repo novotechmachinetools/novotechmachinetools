@@ -14,6 +14,7 @@ from isitan_lib import VOLT_FAQ_GENERIC, write_category, write_families  # noqa:
 import shear_nav as SN
 import ttmc_data as D
 import ttmc_photos as PH
+import ttmc_more_data2 as D2   # foot, bench and hand shears (value line, sample photos in section 'ttmc-more')
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "ttmc"
@@ -27,7 +28,7 @@ NO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text"
 
 PAGE = dict(
     title="NovoTech Sheet Metal Shears, 16 ga to 3/8″ · Value Line",
-    meta="Pneumatic shear for 16 ga, hydraulic shears to 1/4″, electric shears with manual or NC back gauge, flywheel mechanical shears to 3/8″ — 39 to 120″, 31 models.",
+    meta="Pneumatic shear for 16 ga, hydraulic shears to 1/4″, electric shears with manual or NC back gauge, flywheel mechanical shears to 3/8″, foot, bench and hand shears — 12 to 120″.",
     h1="NovoTech sheet metal shears — pneumatic, hydraulic, electric and mechanical, 16 ga to 3/8″, the value line",
     intro="The shears for the sheet-metal shop — HVAC, ductwork, signage, enclosures, roofing and the general repair shop — where a 10 ft × 1/4″ "
           "plate shear is more machine than the work needs. NovoTech's value-line sheet metal shears are built in China to our specification "
@@ -36,16 +37,20 @@ PAGE = dict(
           "back gauge and counter or a PLC with motorised back gauge, 14 ga to 5/32″ over 49″ to 100″, and the Q11 flywheel mechanical shears "
           "for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Every machine ships with front and back gauges, a foot pedal "
           "and two-edged blades, wired for Canadian voltage with a CSA-approved panel; installed, trained and supported from Mississauga, ON, Canada. "
+          "For the shop without power at the shear there are foot shears to 98″, bench shears, lever guillotines, lever shears and bar "
+          "cutters for plate and bar, and throatless shears that cut curves. "
           "For plate shears from 5/32″ to 1-9/16″ see the NovoTech hydraulic shears, for the premium direct-gear mechanical shears the "
           "NovoTech mechanical shears, and for every line in one table the shears overview.",
     points=["PS pneumatic shear 16 ga × 52″ on 85 – 100 psi shop air · HQ01 light hydraulic shears 14 ga × 52″ and 16 ga × 98″, 3 HP",
             "THS and HQ11 hydraulic shears 12 ga – 1/4″ × 51 – 120″, 12 – 20 strokes/min, quick-set blade clearance, electric or NC back gauge",
-            "Q11 electric shears 14 ga – 5/32″ × 49 – 100″ with manual or PLC / motorised back gauge · Q11 mechanical shears 1/8″ – 3/8″, 45 – 55 strokes/min"],
+            "Q11 electric shears 14 ga – 5/32″ × 49 – 100″ with manual or PLC / motorised back gauge · Q11 mechanical shears 1/8″ – 3/8″, 45 – 55 strokes/min",
+            "Foot shears 20 – 14 ga × 40 – 98″, bench shears, lever guillotines, lever shears and bar cutters to 1/4″ plate and Ø1-1/4″ bar"],
     hero="tt-q11a", minis=["tt-hq11", "tt-ps"],
     groups=[("sh-light", "Pneumatic and light hydraulic shears, 16 – 14 ga", "The lightest powered shears in the range: the PS on shop air and the HQ01 with a 3 HP power pack — for ductwork, signage and light sheet.", BRAND),
             ("sh-hydraulic", "Hydraulic shears, 12 ga to 1/4″", "The THS with front and back gauges and the HQ11 with quick-set blade clearance and an electric or NC back gauge — 51″ to 120″.", BRAND),
             ("sh-electric", "Electric shears, 14 ga to 5/32″", "A motor and gearbox drive the beam — no hydraulics: the Q11 with manual back gauge and counter, and the Q11 NC with a PLC touch-screen and motorised back gauge.", BRAND),
-            ("sh-mechanical", "Mechanical shears to 3/8″", "The classic flywheel shear for medium and thick steel: 45 to 55 strokes a minute, 1/8″ to 3/8″ over 39″ to 98″.", BRAND)],
+            ("sh-mechanical", "Mechanical shears to 3/8″", "The classic flywheel shear for medium and thick steel: 45 to 55 strokes a minute, 1/8″ to 3/8″ over 39″ to 98″.", BRAND),
+            ("sh-manual", "Foot, bench and hand shears", "No motor needed: foot shears to 98″, bench shears, lever guillotines, lever shears for plate and bar, bar cutters and throatless shears.", BRAND)],
     faq=[{"q": "Pneumatic, hydraulic, electric or mechanical — which shear for a small shop?",
           "a": "By the sheet you cut and what you already have. If the shop runs compressed air and cuts 16 ga and lighter — ductwork, flashing, signage — the PS pneumatic shear is the simplest machine: no motor, no oil, 40 strokes a minute. For 14 ga to 1/4″ the hydraulic shears (HQ01, THS, HQ11) give a smooth, quiet cut with hydraulic hold-downs and the lowest price per inch of blade. The electric Q11 cuts the same 14 ga to 5/32″ through a gearbox with nothing to warm up and 30 strokes a minute, and the NC version adds a PLC and motorised back gauge for repeat parts. The flywheel mechanical shears are the fastest — 45 to 55 strokes a minute — and go to 3/8″ for the shop that cuts heavier bar and plate."},
          {"q": "Which length — 52″, 79″, 98″ or 120″?",
@@ -96,12 +101,18 @@ def register_images():
 
 def build():
     pdf = pdf_entry()
-    fams = [dict(f, pdf=pdf) for f in D.FAMILIES]
+    fams = [dict(f, pdf=pdf) for f in D.FAMILIES] + [dict(f) for f in D2.SHEAR]
     write_families(SET, fams)
     write_category(D.P_SHEAR, PAGE, fams, SET, SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
                    extra={"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, "catalogue_pdf": pdf, "nav_label": "NovoTech sheet metal shears", **NO_VIDEO})
+    path = os.path.join(ROOT, "content", "pages", f"{D.P_SHEAR}.json")
+    page = json.load(open(path, encoding="utf-8"))
+    for g in page["groups"]:
+        if g["id"] == "sh-manual-group":
+            g["tagline"] = D2.MANUAL_TAG if hasattr(D2, "MANUAL_TAG") else None
+    json.dump(page, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     keys = register_images()
-    used = {k for f in FAMILIES_IMAGES() for k in f} | {PAGE["hero"]} | set(PAGE["minis"])
+    used = {k for f in FAMILIES_IMAGES() for k in f} | {PAGE["hero"]} | set(PAGE["minis"])     # the manual shears' photos are registered by ttmc_more_pages.py
     unused = sorted(set(keys) - used)
     if unused:
         print("photos not used on the page:", unused)

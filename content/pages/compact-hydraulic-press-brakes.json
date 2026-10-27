@@ -49,7 +49,7 @@
  "faq": [
   {
    "q": "What tonnage do I need?",
-   "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening. As a rule of thumb, bending 8 ga (0.16″) mild steel over a 4 ft length with a standard V die needs about 30 US tons, 10 ga about 20 tons and 1/4″ plate about 60 tons per 4 ft. The NC control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we will size the machine."
+   "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening: in mild steel about 575 × t² ÷ V US tons per foot, with t and V in inches. In a V of 8 × the thickness, a 4 ft bend takes about 16 US tons in 16 ga, 39 tons in 10 ga and 47 tons in 8 ga (0.16″); a wider die lowers the force — 8 ga in a 2″ V takes about 31 tons over 4 ft — at the cost of a larger inside radius. The NC control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we will size the machine."
   },
   {
    "q": "NC or CNC?",

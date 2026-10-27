@@ -698,7 +698,7 @@ TAB["tt-zx"] = [
 CAT["tt-zx"] = ["ZX5325/C: rotary milling head; table swivels ±45°; ZX5325 belt-drive head, ZX5325C gear-drive head; power feed on Y, Z and DRO at extra cost", "ZX7550C: power feed on X, Y, Z at extra cost; optional DRO"]
 
 # PDF p39 – p42 (074 – 080) — turret and universal milling machines
-TAB["tt-turret"] = [
+TAB["tt-mill"] = [
     table("4H · X6325W · X6332WA · X6336 · X6336WA", "Turret milling machines; the W models with a horizontal spindle too", ["4H", "X6325W", "X6332WA", "X6336", "X6336WA"], [
         ("Spindle taper", "TXT", ["—", "NT30, R8", "ISO40", "ISO40 vertical, ISO50 horizontal", "ISO40 vertical, ISO50 horizontal"]),
         ("*Spindle speeds", "TXT", ["—", "Vertical 80 – 5,440 rpm, horizontal 40 – 1,300 rpm", "Vertical 80 – 5,440 rpm, horizontal 40 – 1,300 rpm",
@@ -708,7 +708,7 @@ TAB["tt-turret"] = [
         ("Spindle to column", "TXT", ["—", "3.9 – 22″ (100 – 560 mm)", "3.9 – 22″ (100 – 560 mm)", "5.9 – 29.5″ (150 – 750 mm)", "5.9 – 29.5″ (150 – 750 mm)"]),
         ("*Table", "TXT", ["50 × 10″ (1,270 × 254 mm)", "50 × 10.2″ (1,270 × 260 mm)", "49.2 × 12.6″ (1,250 × 320 mm), swivels ±45°", "49.2 × 14.2″ (1,250 × 360 mm)", "64.2 × 14.2″ (1,630 × 360 mm), swivels ±45°"]),
         ("*Travel X × Y (× Z)", "TXT", ["33.5 × 15.7″ (850 × 400 mm)", "27.6 × 11″ (700 × 280 mm)", "23.6 × 13.4″ (600 × 340 mm)", "39.4 × 11.8 × 13.8″ (1,000 × 300 × 350 mm)", "39.4 × 12.6 × 15.9″ (1,000 × 320 × 405 mm)"]),
-        ("Feeds", "TXT", ["Power feed and DRO (catalogue photo)", "Power feed X, Y; motorized Z", "Power feed X, Y; motorized Z", "Power feed X, Y, Z", "Power feed X, Y, Z"]),
+        ("Feeds", "TXT", ["Ask for the configuration", "Power feed X, Y; motorized Z", "Power feed X, Y; motorized Z", "Power feed X, Y, Z", "Power feed X, Y, Z"]),
         ("*Motor", "TXT", ["3 HP (2.2 kW)", "3 HP (2.2 kW) vertical, 4 HP (3 kW) horizontal", "3 HP (2.2 kW) vertical, 4 HP (3 kW) horizontal",
                            "5 HP (3.7 kW) vertical, 5.5 HP (4 kW) horizontal", "5 / 2.7 HP (3.7 / 2 kW) vertical, 5.5 HP (4 kW) horizontal"]),
         ("Packing size L × W × H", "PK", [(170, 160, 215), (150, 167, 210), (152, 163, 220), (190, 200, 225), (200, 200, 225)]),
@@ -745,7 +745,7 @@ TAB["tt-turret"] = [
         ("*Weight", "KG", [2650, 2650, 3500, 3950, 4300, 4500]),
     ]),
 ]
-CAT["tt-turret"] = ["X6325W/X6332WA: automatic feed X, Y; motorized Z; head swivels ±45° front/back and ±90° left/right; manual lubrication; X6332WA table swivel ±45°",
+CAT["tt-mill"] = ["X6325W/X6332WA: automatic feed X, Y; motorized Z; head swivels ±45° front/back and ±90° left/right; manual lubrication; X6332WA table swivel ±45°",
                     "X6336/X6336WA: high-speed milling head made in Taiwan; automatic feeds X, Y, Z; hardened square guideways; manual lubrication; X6336WA table swivel ±45°; vertical spindle 70 – 7,200 rpm",
                     "XQ6226: hardened guideways; ISO40 spindle; manual lubrication; X, Y auto feed standard, Z optional; cutter head swivels ±360°; XQ6226B hardened and finish-ground table, auto feed X, Y, motorized table lift Z",
                     "LM-1450A/B/C/D: auto feed and rapid X, Y, Z; head ±360°; three axes hardened; hardened and ground table; DRO at extra cost; B: servo feed motor; C/D: for production work",
@@ -951,7 +951,7 @@ TAB["tt-hs300"] = [
         ("*Working width", "L", [305, 500, 800, 1000, 1300]),
         ("*Capacity, mild steel", "TXT", ["20 ga (1 mm) full width, 18 ga (1.2 mm) half width", "16 ga (1.5 mm)", "16 ga (1.5 mm)", "16 ga (1.5 mm)", "16 ga (1.5 mm)"]),
         ("Back gauge", "TXT", ["0 – 7″ (0 – 180 mm)", "—", "—", "—", "—"]),
-        ("Packing size L × W × H", "PK", [(46, 44, 67), (79, 27, 45), (112, 28, 54), (138, 28, 54), (170, 28, 54)]),
+        ("Packing size L × W × H", "PK", ["18 × 17 × 26″ (46 × 44 × 67 cm) overall", (79, 27, 45), (112, 28, 54), (138, 28, 54), (170, 28, 54)]),
         ("*Weight", "KG", [21, 36, 41, 52, 70]),
     ]),
     table("GS-1000 · GS-1000I · KHS-1000 · KHS-1250 · TSC1010/1.6", "Manual lever guillotine shears on stand, 40 – 49″", ["GS-1000", "GS-1000I", "KHS-1000", "KHS-1250", "TSC1010/1.6"], [
@@ -1075,7 +1075,7 @@ CAT["tt-plasma"] = ["PC 2×2 / 2×4: cuts steel, aluminum, galvanized and coated
 
 # PDF p62 (119 – 120)
 TAB["tt-pcp"] = [
-    table("PCP 300×3000E · PCP 300×3000 · PCP 300×6000", "CNC plasma pipe cutting machines, Ø2 – 12″ pipe", ["PCP 300×3000E", "PCP 300×3000", "PCP 300×6000"], [
+    table("PCP 300×3000E · PCP 300×3000 · PCP 300×6000", "CNC plasma pipe cutting machines, Ø2 – 11-3/4″ pipe", ["PCP 300×3000E", "PCP 300×3000", "PCP 300×6000"], [
         ("*Pipe diameter", "TXT", "Ø2 – 11-3/4″ (50 – 300 mm)"),
         ("*Pipe length", "TXT", ["10 ft (3,000 mm)", "10 ft (3,000 mm)", "20 ft (6,000 mm)"]),
         ("*Wall thickness", "TXT", "0.04 – 1/2″ (1 – 12 mm)"),
@@ -1380,24 +1380,24 @@ TAB["tt-slip"] = [
         ("Packing size L × W × H", "PK", [(48, 22, 18), (48, 22, 18), (54, 24, 28), (95, 26, 37), (134, 32, 50), (145, 32, 50), (155, 59, 128), (170, 45, 50), (134, 35, 50), (170, 43, 56), (175, 45, 60)]),
         ("*Weight", "KG", [13, 12, 13, 38, 80, 86, 135, 117, 100, 195, 235]),
     ]),
-    table("W01-2 · W01-0.8×2050 · ESR-1020×2", "Floor slip rolls, 14 ga × 24 – 81″; ESR motorized", ["W01-2×610", "W01-2×1000", "W01-2×1250", "W01-0.8×2050", "ESR-1020×2"], [
-        ("*Working width", "L", [610, 1000, 1250, 2050, 1020]),
-        ("*Capacity, mild steel", "T", [2.0, 2.0, 2.0, 0.8, 2.0]),
-        ("*Roll diameter", "D", [60, 60, 60, 60, 60]),
-        ("Drive", "TXT", ["Hand crank", "Hand crank", "Hand crank", "Hand crank", "Motor 1.5 HP (1.1 kW) 1-phase or 1 HP (0.75 kW) 3-phase, foot pedal"]),
-        ("Packing size L × W × H", "PK", [(110, 50, 69), (155, 51, 69), (180, 50, 69), (255, 50, 70), (174, 60, 126)]),
-        ("*Weight", "KG", [165, 200, 229, 290, 260]),
+    table("W01-2 · W01-0.8×2050", "Floor slip rolls on stand, 14 ga × 24 – 49″ and 22 ga × 81″", ["W01-2×610", "W01-2×1000", "W01-2×1250", "W01-0.8×2050"], [
+        ("*Working width", "L", [610, 1000, 1250, 2050]),
+        ("*Capacity, mild steel", "T", [2.0, 2.0, 2.0, 0.8]),
+        ("*Roll diameter", "D", [60, 60, 60, 60]),
+        ("Drive", "TXT", "Hand crank"),
+        ("Packing size L × W × H", "PK", [(110, 50, 69), (155, 51, 69), (180, 50, 69), (255, 50, 70)]),
+        ("*Weight", "KG", [165, 200, 229, 290]),
     ]),
-    table("ESR electric slip rolls", "Motorized 3-roll asymmetric slip rolls, 22 ga – 1/4″ × 4 – 10 ft", ["ESR-1300×1.5", "ESR-1300×1.5E", "ESR-1300×2.5", "ESR-1300×4.5", "ESR-1300×6.5", "ESR-1550×3.5", "ESR-1550×4.5", "ESR-2020×3.5", "ESR-2070×2.5", "ESR-2070×3.5", "ESR-2500×0.8", "ESR2550×2.5E", "ESR2550×3.5E", "ESR3050×2.5E", "ESR3050×3.5E"], [
-        ("*Working width", "L", [1300, 1300, 1300, 1300, 1300, 1550, 1550, 2020, 2070, 2070, 2500, 2510, 2510, 3010, 3010]),
-        ("*Capacity, mild steel", "T", [1.5, 1.5, 2.5, 4.5, 6.5, 3.5, 4.5, 3.5, 2.5, 3.5, 0.8, 2.5, 3.5, 2.5, 3.5]),
-        ("*Roll diameter", "D", [75, 60, 90, 120, 150, 120, 150, 127, 120, 127, 90, 140, 150, 160, 170]),
-        ("Min. rolling diameter", "D", ["—", "—", 100, 130, 170, 130, 230, 140, 130, 140, 100, 160, 170, 180, 190]),
-        ("Roll speed at 60 Hz", "TXT", ["—", "—", "10.8 rpm", "11.2 rpm", "7.8 rpm", "11.2 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm", "10.8 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm"]),
-        ("*Motor", "TXT", ["1.5 HP (1.1 kW) 1-phase or 1 HP (0.75 kW) 3-phase"] * 2 + ["2 HP (1.5 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "4 HP (3 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "4 HP (3 kW)", "5.5 HP (4 kW)", "7.5 HP (5.5 kW)"]),
-        ("Back roll", "TXT", ["Manual"] * 11 + ["Motorized lift, digital position readout"] * 4),
-        ("Packing size L × W × H", "PK", [(179, 59, 110), (190, 55, 108), (200, 70, 120), (200, 76, 127), (208, 80, 134), (222, 76, 127), (230, 77, 145), (270, 87, 130), (282, 87, 130), (282, 87, 130), (310, 74, 120), (342, 83, 132), (342, 83, 132), (384, 82, 142), (391, 91, 136)]),
-        ("*Weight", "KG", [300, 275, 545, 750, 900, 840, 1005, 1095, 1060, 1110, 780, 1508, 1529, 1696, 2182]),
+    table("ESR electric slip rolls", "Motorized 3-roll slip rolls with foot pedal, 22 ga – 1/4″ × 3.3 – 10 ft", ["ESR-1020×2", "ESR-1300×1.5", "ESR-1300×1.5E", "ESR-1300×2.5", "ESR-1300×4.5", "ESR-1300×6.5", "ESR-1550×3.5", "ESR-1550×4.5", "ESR-2020×3.5", "ESR-2070×2.5", "ESR-2070×3.5", "ESR-2500×0.8", "ESR2550×2.5E", "ESR2550×3.5E", "ESR3050×2.5E", "ESR3050×3.5E"], [
+        ("*Working width", "L", [1020, 1300, 1300, 1300, 1300, 1300, 1550, 1550, 2020, 2070, 2070, 2500, 2510, 2510, 3010, 3010]),
+        ("*Capacity, mild steel", "T", [2.0, 1.5, 1.5, 2.5, 4.5, 6.5, 3.5, 4.5, 3.5, 2.5, 3.5, 0.8, 2.5, 3.5, 2.5, 3.5]),
+        ("*Roll diameter", "D", [60, 75, 60, 90, 120, 150, 120, 150, 127, 120, 127, 90, 140, 150, 160, 170]),
+        ("Min. rolling diameter", "D", ["—", "—", "—", 100, 130, 170, 130, 230, 140, 130, 140, 100, 160, 170, 180, 190]),
+        ("Roll speed at 60 Hz", "TXT", ["—", "—", "—", "10.8 rpm", "11.2 rpm", "7.8 rpm", "11.2 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm", "10.8 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm", "7.8 rpm"]),
+        ("*Motor", "TXT", ["1.5 HP (1.1 kW) 1-phase or 1 HP (0.75 kW) 3-phase"] * 3 + ["2 HP (1.5 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "4 HP (3 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "3 HP (2.2 kW)", "4 HP (3 kW)", "4 HP (3 kW)", "5.5 HP (4 kW)", "7.5 HP (5.5 kW)"]),
+        ("Back roll", "TXT", ["Manual"] * 12 + ["Motorized lift, digital position readout"] * 4),
+        ("Packing size L × W × H", "PK", [(174, 60, 126), (179, 59, 110), (190, 55, 108), (200, 70, 120), (200, 76, 127), (208, 80, 134), (222, 76, 127), (230, 77, 145), (270, 87, 130), (282, 87, 130), (282, 87, 130), (310, 74, 120), (342, 83, 132), (342, 83, 132), (384, 82, 142), (391, 91, 136)]),
+        ("*Weight", "KG", [260, 300, 275, 545, 750, 900, 840, 1005, 1095, 1060, 1110, 780, 1508, 1529, 1696, 2182]),
     ]),
     table("HER hydraulic slip rolls", "3-roll slip rolls with hydraulic drive on all rolls, 12 ga – 1/2″ × 4 – 10 ft", ["HER-1300×6.5", "HER-1550×4.5", "HER-1550×6.5", "HER-2070×4.5", "HER-2070×6.5", "HER-2000×12", "HER-2500×8", "HER-2500×6.5", "HER-2550×2.5", "HER-2550×3.5", "HER-3050×2.5", "HER-3050×3.5"], [
         ("*Working width", "TXT", ["4′3″ (1,300 mm)", "5′1″ (1,550 mm)", "5′1″ (1,550 mm)", "6′8″ (2,070 mm)", "6′8″ (2,070 mm)", "6′7″ (2,000 mm)", "8′2″ (2,500 mm)", "8′2″ (2,500 mm)", "8′3″ (2,510 mm)", "8′3″ (2,510 mm)", "9′11″ (3,010 mm)", "9′11″ (3,010 mm)"]),
@@ -1587,13 +1587,13 @@ TAB["tt-etb"] = [
         ("Packing size L × W × H", "PK", [(88, 52, 123), (137, 77, 142)]),
         ("*Weight", "KG", [138, 300]),
     ]),
-    table("RM24 · RM36 · RM42 · RM-24H · RM-36H · RM-42H", "Deep-throat bead rollers, 24 – 42″, 20 ga — manual (M) or variable-speed motor", ["RM24M", "RM24", "RM-24H", "RM-24HM", "RM36M", "RM36", "RM-36H", "RM-36HM", "RM42", "RM-42H", "RM-42HM"], [
+    table("RM24 · RM36 · RM42 · RM-24H · RM-36H · RM-42H", "Deep-throat bead rollers, 24 – 42″, 20 ga — hand crank (M) or variable-speed motor; H models with a 4″ high throat", ["RM24M", "RM24", "RM-24H", "RM-24HM", "RM36M", "RM36", "RM-36H", "RM-36HM", "RM42", "RM-42H", "RM-42HM"], [
         ("*Capacity", "TXT", "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum"),
         ("*Throat depth", "TXT", ["24″ (610 mm)"] * 4 + ["36″ (910 mm)"] * 4 + ["42″ (1,067 mm)"] * 3),
         ("Throat height", "TXT", ["—", "—", "4″ (102 mm)", "4″ (102 mm)", "—", "—", "4″ (102 mm)", "4″ (102 mm)", "—", "4″ (102 mm)", "4″ (102 mm)"]),
-        ("*Drive", "TXT", ["Hand crank", "Variable-speed motor, foot pedal, forward / reverse", "Variable-speed motor, both shafts driven", "Variable-speed motor, both shafts driven",
-                           "Hand crank", "Variable-speed motor, foot pedal, forward / reverse", "Variable-speed motor, both shafts driven", "Variable-speed motor, both shafts driven",
-                           "Variable-speed motor, foot pedal, forward / reverse", "Variable-speed motor, both shafts driven", "Variable-speed motor, both shafts driven"]),
+        ("*Drive", "TXT", ["Hand crank", "Variable-speed motor, foot pedal, forward / reverse", "Variable-speed motor, foot pedal, both shafts driven", "Hand crank",
+                           "Hand crank", "Variable-speed motor, foot pedal, forward / reverse", "Variable-speed motor, foot pedal, both shafts driven", "Hand crank",
+                           "Variable-speed motor, foot pedal, forward / reverse", "Variable-speed motor, foot pedal, both shafts driven", "Hand crank"]),
         ("Packing size L × W × H", "PK", [(117, 64, 40), (117, 64, 40), (122, 61, 129), (166, 61, 150), (120, 70, 40), (151, 72, 40), (147, 61, 143), (166, 61, 150), (157, 57, 58), (166, 61, 150), (166, 61, 150)]),
         ("*Weight", "KG", [55, 60, 66, 61, 70, 80, 84, 79, 76, 93, 88]),
     ]),
@@ -1811,7 +1811,8 @@ TAB["tt-ew2"] = [
         ("*Throat depth", "TXT", ["45″ (1,145 mm)", "24-4/5″ (630 mm)", "24-4/5″ (630 mm)", "30″ (760 mm)"]),
         ("Wheels", "TXT", ["10 lower wheels and 4 upper rolling wheels; quick cam handle releases the panel", "Upper wheel Ø8″ (203.5 mm); 6 lower wheels 3″ wide: flat, 2, 4, 6, 8, 12″ radius",
                            "Upper wheel Ø8″ (203.5 mm); roll holder for anvil storage", "Upper wheel Ø8″ (203.5 mm); quick-release lower anvil support with locking cam"]),
-        ("Packing size L × W × H", "PK", [(170, 152, 40), (100, 80, 162), (100, 50, 98), (118, 100, 170)]),
+        ("Size L × W × H", "TXT", ["67 × 60 × 16″ (170 × 152 × 40 cm) crate", "39 × 31 × 64″ (100 × 80 × 162 cm) machine", "39 × 20 × 39″ (100 × 50 × 98 cm) machine",
+                                    "46 × 39 × 67″ (118 × 100 × 170 cm) machine"]),
         ("*Weight", "KG", [209, 166, 129, 298]),
     ]),
     table("PIC50", "Roller former that embosses a diamond pattern into sheet, 50″", ["PIC50"], [
@@ -1842,7 +1843,7 @@ TAB["tt-notcher"] = [
         ("*Angle", "TXT", ["Up to 50°", "0 – 45°", "0 – 60°", "0 – 50°", "90°", "90°", "—"]),
         ("Drive", "TXT", ["Ordinary 1/2″ hand drill; bi-metal hole saws", "Drill press, 3/4″ spindle, 1/2 – 5/8″ adapter", "Drill press, 3/4″ spindle, 1/2 – 5/8″ adapter", "Drill press, 1″ spindle, 1/2 – 5/8″ adapter", "Hand lever", "Hand lever", "Hand lever"]),
         ("Frame", "TXT", ["CNC-machined, 1-1/4″ steel frame; 2-axis clamp; 1″ stainless shaft", "Aluminum", "Steel", "Aluminum", "Steel", "Steel", "Steel"]),
-        ("*Weight", "KG", [9.5, 2.8, 4.5, 4, 6, 11, 6]),
+        ("*Weight", "KG", [9.5, 2.8, 4.5, 4, "13 – 31 lb (6 – 14 kg)", "24 – 37 lb (11 – 17 kg)", 6]),
     ]),
     table("FB-4 · BDS · HP-20", "Form bender, vise brake dies and hand punch", ["FB-4", "BDS-4", "BDS-5", "BDS-6", "BDS-8", "HP-20"], [
         ("*Job", "TXT", ["Cold forming of steel: bends, closed forms; stencil for roll bending", "Vise-mount brake dies, 4″ (100 mm)", "Vise-mount brake dies, 5″ (125 mm)", "Vise-mount brake dies, 6″ (150 mm)", "Vise-mount brake dies, 8″ (200 mm)",
@@ -1881,9 +1882,9 @@ TAB["tt-arbor"] = [
 ]
 CAT["tt-arbor"] = ["AP: high-quality steel body; press-fitting and pulling bearings; 4-position plate"]
 
-TAB["tt-turret"] = [
-    table("TP-12A · TP-12B · TP-24A · TP-24B", "Manual turret punch presses, 12 stations, 7.5 US tons", ["TP-12A", "TP-12B", "TP-24A", "TP-24B"], [
-        ("*Punching force", "TXT", "15,000 lb (6,000 kg)"),
+TAB["tt-tpunch"] = [
+    table("TP-12A · TP-12B · TP-24A · TP-24B", "Manual turret punch presses, 12 stations, 6.6 US tons", ["TP-12A", "TP-12B", "TP-24A", "TP-24B"], [
+        ("*Punching force", "TXT", "6.6 US tons (6,000 kg)"),
         ("*Throat depth", "TXT", ["12″ (305 mm)", "12″ (305 mm)", "24″ (608 mm)", "24″ (608 mm)"]),
         ("*Capacity", "TXT", "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″"),
         ("Stations", "TXT", "12 round punches: 3/16, 1/4, 5/16, 3/8, 1/2, 9/16, 5/8, 3/4, 7/8, 1, 1-1/8, 1-1/4″ (metric 5 – 32 mm)"),
@@ -1893,7 +1894,7 @@ TAB["tt-turret"] = [
         ("*Weight", "KG", [270, 390, 455, 690]),
     ]),
 ]
-CAT["tt-turret"] = ["two stands A and B; manual punching via hand lever; accurate and lower-cost machine; dies up to 2-1/4″ on special request; delivered with 12 round punches; square, oval, rectangular and other shaped punches and dies on request"]
+CAT["tt-tpunch"] = ["two stands A and B; manual punching via hand lever; accurate and lower-cost machine; dies up to 2-1/4″ on special request; delivered with 12 round punches; square, oval, rectangular and other shaped punches and dies on request"]
 
 TAB["tt-bench-press"] = [
     table("BP-3T · EBP-10T · BP3-F", "Bench presses for punch, flare, bead, louver and bend tooling", ["BP-3T", "EBP-10T", "BP3-F"], [

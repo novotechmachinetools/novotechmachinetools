@@ -15,7 +15,7 @@ The supplier's Vol. 23 catalogue is metric; the website shows imperial first wit
 from fractions import Fraction
 
 GAUGE = {0.4: "28 ga", 0.5: "26 ga", 0.6: "24 ga", 0.7: "22 ga", 0.75: "22 ga", 0.8: "22 ga", 0.9: "20 ga", 1.0: "20 ga", 1.2: "18 ga",
-         1.25: "18 ga", 1.5: "16 ga", 1.6: "16 ga", 2.0: "14 ga", 2.5: "12 ga"}
+         1.25: "18 ga", 1.5: "16 ga", 1.6: "16 ga", 1.8: "15 ga", 2.0: "14 ga", 2.5: "12 ga", 3.5: "10 ga"}
 FRAC_T = {3.0: "1/8″", 3.2: "1/8″", 4.0: "5/32″", 4.5: "3/16″", 5.0: "3/16″", 6.0: "1/4″", 6.35: "1/4″", 6.5: "1/4″", 8.0: "5/16″", 10.0: "3/8″",
           12.0: "1/2″", 12.7: "1/2″", 13.0: "1/2″", 15.0: "5/8″", 16.0: "5/8″", 20.0: "3/4″", 22.0: "7/8″", 25.0: "1″", 30.0: "1-1/4″"}
 HP = {0.04: "1/20", 0.09: "1/8", 0.12: "1/6", 0.15: "1/5", 0.18: "1/4", 0.25: "1/3", 0.37: "1/2", 0.4: "1/2", 0.45: "0.6", 0.55: "3/4", 0.75: "1",
@@ -212,3 +212,52 @@ def spec(tables, glance_keys, glance_labels, note, caps=None):
                 g.append(v)
             models.append({"name": m, "glance": g})
     return {"kind": "table", "tables": tables, "models": models, "glance_keys": glance_keys, "caps": caps or {}, "note": note}
+
+
+def _slug(label):
+    import re
+    return re.sub(r"[^a-z0-9]+", "_", label.lower()).strip("_")
+
+
+def pick(t, models, title=None, sub=None):
+    """a copy of table t with only the given model columns (in the given order)"""
+    idx = [t["models"].index(m) for m in models]
+    rows = [dict(r, cells=[r["cells"][i] for i in idx]) for r in t["rows"]]
+    rows = [r for r in rows if any(c != "—" for c in r["cells"])]          # drop rows that are empty for every picked model
+    return {"title": title or t["title"], "sub": sub if sub is not None else t["sub"], "models": list(models), "rows": rows}
+
+
+def _cap(fmt, rr, i):
+    """'[Blade diameter, max] blade · [Round, 90°] round' -> '12.4″ (315 mm) blade · Ø3-7/8″ (100 mm) round'; parts whose row is
+    missing or empty for the model are left out"""
+    import re
+    out = []
+    for part in fmt.split(" · "):
+        labs = re.findall(r"\[([^\]]+)\]", part)
+        if all(lab in rr and rr[lab][i] != "—" for lab in labs):
+            out.append(re.sub(r"\[([^\]]+)\]", lambda m: rr[m.group(1)][i], part))
+    return " · ".join(out)
+
+
+def auto_spec(tables, note, cap=None, n_glance=5):
+    """spec for a family from finished tables: the glance (hub table, AI catalogue) is read from the key rows ('*' labels) in
+    table order, at most n_glance of them; gallery captions per model from cap ('[row label] text · …', default: the first key
+    row's value)."""
+    keys = []
+    for t in tables:
+        for r in t["rows"]:
+            if r["key"] and r["label"] not in keys:
+                keys.append(r["label"])
+    if "Weight" in keys and keys.index("Weight") >= n_glance:            # weight is always one of the glance columns
+        keys = keys[:n_glance - 1] + ["Weight"]
+    else:
+        keys = keys[:n_glance]
+    models, caps = [], {}
+    for t in tables:
+        rr = {r["label"]: r["cells"] for r in t["rows"]}
+        first = next((r["label"] for r in t["rows"] if r["key"]), None)
+        fmt = cap or (f"[{first}]" if first else "")
+        for i, m in enumerate(t["models"]):
+            models.append({"name": m, "glance": [rr[k][i] if k in rr else "—" for k in keys]})
+            caps[m] = _cap(fmt, rr, i)
+    return {"kind": "table", "tables": tables, "models": models, "glance_keys": [_slug(k) for k in keys], "caps": caps, "note": note}

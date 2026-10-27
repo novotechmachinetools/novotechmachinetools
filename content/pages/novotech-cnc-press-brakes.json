@@ -83,7 +83,7 @@
   },
   {
    "q": "How much tonnage do I need?",
-   "a": "Air bending mild steel with the standard V = 8 × thickness die takes roughly 8 US tons per foot for 16 ga, 15 tons per foot for 1/8″, 30 for 3/16″, 55 for 1/4″ and 130 tons per foot for 1/2″; stainless needs about 50 % more, aluminum about half. A 10 ft × 1/4″ job is therefore a 110 – 135 ton machine, 10 ft × 3/8″ a 220 – 250 ton machine and 13 ft × 1/2″ a 400 ton machine. Tell us the thickest and longest bend you make and we size the brake and the tooling."
+   "a": "Air bending mild steel takes about 575 × t² ÷ V US tons per foot, with the thickness t and the V opening in inches: in the standard V = 8 × thickness die that is about 4 tons per foot for 16 ga, 9 for 1/8″, 13.5 for 3/16″, 18 for 1/4″ and 36 for 1/2″ (29 in a 10 × t die); stainless needs about 50 % more, aluminum about half. With about 20 % headroom, a 10 ft × 1/4″ job is therefore a 175 – 220 ton machine, 10 ft × 3/8″ a 250 – 320 ton machine and 13 ft × 1/2″, bent in a 5 – 6″ V, a 400 – 450 ton machine. Tell us the thickest and longest bend you make and we size the brake and the tooling."
   },
   {
    "q": "How does the electric ball-screw drive work?",

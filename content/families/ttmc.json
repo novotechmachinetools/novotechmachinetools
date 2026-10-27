@@ -6,7 +6,12 @@
   "tt-hq11",
   "tt-q11",
   "tt-q11nc",
-  "tt-q11-mech"
+  "tt-q11-mech",
+  "tt-q01",
+  "tt-bq01",
+  "tt-hs300",
+  "tt-hs",
+  "tt-mms"
  ],
  "families": {
   "tt-ps": {
@@ -1395,6 +1400,1487 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "sh-mechanical"
+  },
+  "tt-q01": {
+   "id": "tt-q01",
+   "brand": "novotech",
+   "name": "Q01 foot shears, 20 – 14 ga × 40 – 98″",
+   "short": "Q01 foot shears",
+   "models_label": "Q01-1.0x1000 – Q01-1.2x2500B · 7 models",
+   "summary": "Foot-operated shears for HVAC, roofing and light sheet: cast frames for 20 ga and 14 ga over 40″ and 16 ga over 52″, welded steel frames (A) with an adjustable-length pedal, and the light-duty B models with a spring-loaded hold-down for 16 ga over 52″ and 18 ga over 98″. High-carbon chromium-steel blades; front and back gauges; mild steel, aluminum, copper, brass, zinc and plastic.",
+   "features": [
+    "20 ga × 40″, 14 ga × 40″, 16 ga × 52″, 18 ga × 98″",
+    "Cast or welded steel frames; spring-loaded hold-down beam (B)",
+    "Back gauge 0 – 27.6 / 31.5″ (700 / 800 mm)",
+    "High-carbon chromium-steel blades; adjustable blade gap (B)",
+    "Rear safety cage optional (A)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-q01",
+    "tm-q01a",
+    "tm-q01b",
+    "tm-q01b-gauge"
+   ],
+   "videos": [],
+   "headline": "20 – 14 ga × 40 – 98″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Q01 foot shears",
+      "sub": "Foot-operated shears, 20 – 14 ga × 40 – 98″",
+      "models": [
+       "Q01-1.0x1000",
+       "Q01-2x1000",
+       "Q01-2x1000A",
+       "Q01-1.5x1320",
+       "Q01-1.5x1320A",
+       "Q01-1.6x1320B",
+       "Q01-1.2x2500B"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "52″ (1,320 mm)",
+         "52″ (1,320 mm)",
+         "52″ (1,320 mm)",
+         "98.4″ (2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "20 ga (1 mm)",
+         "14 ga (2 mm)",
+         "14 ga (2 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.6 mm)",
+         "18 ga (1.2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0 – 27.6″ (0 – 700 mm)",
+         "0 – 27.6″ (0 – 700 mm)",
+         "0 – 31.5″ (0 – 800 mm)",
+         "0 – 27.6″ (0 – 700 mm)",
+         "0 – 31.5″ (0 – 800 mm)",
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Frame",
+        "sub": "",
+        "cells": [
+         "Cast",
+         "Cast",
+         "Welded steel",
+         "Cast",
+         "Welded steel",
+         "Welded steel, light duty",
+         "Welded steel, light duty"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "55 × 30 × 45″ (140 × 76 × 115 cm)",
+         "55 × 30 × 45″ (140 × 76 × 115 cm)",
+         "55 × 30 × 45″ (140 × 76 × 115 cm)",
+         "66 × 30 × 47″ (168 × 76 × 120 cm)",
+         "66 × 30 × 45″ (168 × 76 × 115 cm)",
+         "71 × 24 × 47″ (180 × 60 × 120 cm)",
+         "118 × 24 × 47″ (300 × 60 × 120 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "805 lb (365 kg)",
+         "893 lb (405 kg)",
+         "783 lb (355 kg)",
+         "1,001 lb (454 kg)",
+         "948 lb (430 kg)",
+         "904 lb (410 kg)",
+         "1,631 lb (740 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "Q01-1.0x1000",
+      "glance": [
+       "39.4″ (1,000 mm)",
+       "20 ga (1 mm)",
+       "0 – 27.6″ (0 – 700 mm)",
+       "805 lb (365 kg)"
+      ]
+     },
+     {
+      "name": "Q01-2x1000",
+      "glance": [
+       "39.4″ (1,000 mm)",
+       "14 ga (2 mm)",
+       "0 – 27.6″ (0 – 700 mm)",
+       "893 lb (405 kg)"
+      ]
+     },
+     {
+      "name": "Q01-2x1000A",
+      "glance": [
+       "39.4″ (1,000 mm)",
+       "14 ga (2 mm)",
+       "0 – 31.5″ (0 – 800 mm)",
+       "783 lb (355 kg)"
+      ]
+     },
+     {
+      "name": "Q01-1.5x1320",
+      "glance": [
+       "52″ (1,320 mm)",
+       "16 ga (1.5 mm)",
+       "0 – 27.6″ (0 – 700 mm)",
+       "1,001 lb (454 kg)"
+      ]
+     },
+     {
+      "name": "Q01-1.5x1320A",
+      "glance": [
+       "52″ (1,320 mm)",
+       "16 ga (1.5 mm)",
+       "0 – 31.5″ (0 – 800 mm)",
+       "948 lb (430 kg)"
+      ]
+     },
+     {
+      "name": "Q01-1.6x1320B",
+      "glance": [
+       "52″ (1,320 mm)",
+       "16 ga (1.6 mm)",
+       "31.5″ (800 mm)",
+       "904 lb (410 kg)"
+      ]
+     },
+     {
+      "name": "Q01-1.2x2500B",
+      "glance": [
+       "98.4″ (2,500 mm)",
+       "18 ga (1.2 mm)",
+       "31.5″ (800 mm)",
+       "1,631 lb (740 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_width",
+     "capacity_mild_steel",
+     "back_gauge_range",
+     "weight"
+    ],
+    "caps": {
+     "Q01-1.0x1000": "39.4″ (1,000 mm) × 20 ga (1 mm)",
+     "Q01-2x1000": "39.4″ (1,000 mm) × 14 ga (2 mm)",
+     "Q01-2x1000A": "39.4″ (1,000 mm) × 14 ga (2 mm)",
+     "Q01-1.5x1320": "52″ (1,320 mm) × 16 ga (1.5 mm)",
+     "Q01-1.5x1320A": "52″ (1,320 mm) × 16 ga (1.5 mm)",
+     "Q01-1.6x1320B": "52″ (1,320 mm) × 16 ga (1.6 mm)",
+     "Q01-1.2x2500B": "98.4″ (2,500 mm) × 18 ga (1.2 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "sh-manual"
+  },
+  "tt-bq01": {
+   "id": "tt-bq01",
+   "brand": "novotech",
+   "name": "BQ01 bench shears, BQF01 foot and EBQ01 motorized bench shears, Q01 hand shears",
+   "short": "Bench shears",
+   "models_label": "BQ01-1.25x650 – Q01-0.8x2500 · 10 models",
+   "summary": "Bench shears for 18 – 20 ga over 26″ and 41″, by hand lever (BQ01), foot pedal (BQF01) or a 1 HP motor and foot switch (EBQ01), with a working light and a 19.7″ back gauge; and the Q01 two-handle shears on stands for 16 ga over 41 and 59″, 18 ga over 79″ and 22 ga over 98″.",
+   "features": [
+    "Bench shears 18 ga × 26″ and 20 ga × 41″; back gauge 0 – 19.7″",
+    "Hand lever, foot pedal or motorized (EBQ01, 1 HP, foot switch)",
+    "Q01 hand shears: 16 ga × 41 – 59″, 18 ga × 79″, 22 ga × 98″",
+    "Working light; front angle stop (EBQ01); rear safety cage optional (BQF01)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ebq01",
+    "tm-bqf01",
+    "tm-bq01",
+    "tm-q01h"
+   ],
+   "videos": [],
+   "headline": "22 – 16 ga × 26 – 98″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BQ01 · BQF01 · EBQ01",
+      "sub": "Bench shears — hand lever, foot pedal or motorized, 20 – 18 ga × 26 – 41″",
+      "models": [
+       "BQ01-1.25x650",
+       "BQ01-1.0x1050",
+       "BQF01-1.25x650",
+       "BQF01-1.0x1050",
+       "EBQ01-1.25x650",
+       "EBQ01-1.0x1050"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "25.6″ (650 mm)",
+         "41.3″ (1,050 mm)",
+         "25.6″ (650 mm)",
+         "41.3″ (1,050 mm)",
+         "25.6″ (650 mm)",
+         "41.3″ (1,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "18 ga (1.25 mm)",
+         "20 ga (1 mm)",
+         "18 ga (1.25 mm)",
+         "20 ga (1 mm)",
+         "18 ga (1.25 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Operation",
+        "sub": "",
+        "cells": [
+         "Hand lever",
+         "Hand lever",
+         "Foot pedal",
+         "Foot pedal",
+         "Motor 1 HP (0.75 kW), foot switch",
+         "Motor 1 HP (0.75 kW), foot switch"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0 – 19.7″ (0 – 500 mm)",
+         "0 – 19.7″ (0 – 500 mm)",
+         "0 – 19.7″ (0 – 500 mm)",
+         "0 – 19.7″ (0 – 500 mm)",
+         "0 – 19.7″ (0 – 500 mm)",
+         "0 – 19.7″ (0 – 500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "37 × 19 × 23″ (93 × 47 × 58 cm)",
+         "52 × 16 × 25″ (133 × 40 × 63 cm)",
+         "36 × 31 × 44″ (92 × 80 × 113 cm)",
+         "52 × 31 × 44″ (132 × 80 × 113 cm)",
+         "41 × 26 × 25″ (105 × 65 × 63 cm)",
+         "55 × 26 × 26″ (140 × 65 × 65 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "201 lb (91 kg)",
+         "298 lb (135 kg)",
+         "342 lb (155 kg)",
+         "386 lb (175 kg)",
+         "408 lb (185 kg)",
+         "525 lb (238 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "Q01 hand shears",
+      "sub": "Two-handle lever shears on stand, 22 – 16 ga × 41 – 98″",
+      "models": [
+       "Q01-1.5x1050",
+       "Q01-1.5x1500",
+       "Q01-1.25x2000",
+       "Q01-0.8x2500"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "41.3″ (1,050 mm)",
+         "59.1″ (1,500 mm)",
+         "78.7″ (2,000 mm)",
+         "98.4″ (2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "18 ga (1.25 mm)",
+         "22 ga (0.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0 – 11.8″ (0 – 300 mm)",
+         "0 – 11.8″ (0 – 300 mm)",
+         "0 – 11.8″ (0 – 300 mm)",
+         "0 – 11.8″ (0 – 300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "63 × 30 × 47″ (161 × 75 × 120 cm)",
+         "82 × 30 × 47″ (208 × 75 × 120 cm)",
+         "102 × 30 × 47″ (258 × 75 × 120 cm)",
+         "121 × 30 × 47″ (308 × 76 × 120 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "833 lb (378 kg)",
+         "1,014 lb (460 kg)",
+         "1,127 lb (511 kg)",
+         "1,228 lb (557 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BQ01-1.25x650",
+      "glance": [
+       "25.6″ (650 mm)",
+       "18 ga (1.25 mm)",
+       "Hand lever",
+       "201 lb (91 kg)"
+      ]
+     },
+     {
+      "name": "BQ01-1.0x1050",
+      "glance": [
+       "41.3″ (1,050 mm)",
+       "20 ga (1 mm)",
+       "Hand lever",
+       "298 lb (135 kg)"
+      ]
+     },
+     {
+      "name": "BQF01-1.25x650",
+      "glance": [
+       "25.6″ (650 mm)",
+       "18 ga (1.25 mm)",
+       "Foot pedal",
+       "342 lb (155 kg)"
+      ]
+     },
+     {
+      "name": "BQF01-1.0x1050",
+      "glance": [
+       "41.3″ (1,050 mm)",
+       "20 ga (1 mm)",
+       "Foot pedal",
+       "386 lb (175 kg)"
+      ]
+     },
+     {
+      "name": "EBQ01-1.25x650",
+      "glance": [
+       "25.6″ (650 mm)",
+       "18 ga (1.25 mm)",
+       "Motor 1 HP (0.75 kW), foot switch",
+       "408 lb (185 kg)"
+      ]
+     },
+     {
+      "name": "EBQ01-1.0x1050",
+      "glance": [
+       "41.3″ (1,050 mm)",
+       "20 ga (1 mm)",
+       "Motor 1 HP (0.75 kW), foot switch",
+       "525 lb (238 kg)"
+      ]
+     },
+     {
+      "name": "Q01-1.5x1050",
+      "glance": [
+       "41.3″ (1,050 mm)",
+       "16 ga (1.5 mm)",
+       "—",
+       "833 lb (378 kg)"
+      ]
+     },
+     {
+      "name": "Q01-1.5x1500",
+      "glance": [
+       "59.1″ (1,500 mm)",
+       "16 ga (1.5 mm)",
+       "—",
+       "1,014 lb (460 kg)"
+      ]
+     },
+     {
+      "name": "Q01-1.25x2000",
+      "glance": [
+       "78.7″ (2,000 mm)",
+       "18 ga (1.25 mm)",
+       "—",
+       "1,127 lb (511 kg)"
+      ]
+     },
+     {
+      "name": "Q01-0.8x2500",
+      "glance": [
+       "98.4″ (2,500 mm)",
+       "22 ga (0.8 mm)",
+       "—",
+       "1,228 lb (557 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_width",
+     "capacity_mild_steel",
+     "operation",
+     "weight"
+    ],
+    "caps": {
+     "BQ01-1.25x650": "25.6″ (650 mm) × 18 ga (1.25 mm)",
+     "BQ01-1.0x1050": "41.3″ (1,050 mm) × 20 ga (1 mm)",
+     "BQF01-1.25x650": "25.6″ (650 mm) × 18 ga (1.25 mm)",
+     "BQF01-1.0x1050": "41.3″ (1,050 mm) × 20 ga (1 mm)",
+     "EBQ01-1.25x650": "25.6″ (650 mm) × 18 ga (1.25 mm)",
+     "EBQ01-1.0x1050": "41.3″ (1,050 mm) × 20 ga (1 mm)",
+     "Q01-1.5x1050": "41.3″ (1,050 mm) × 16 ga (1.5 mm)",
+     "Q01-1.5x1500": "59.1″ (1,500 mm) × 16 ga (1.5 mm)",
+     "Q01-1.25x2000": "78.7″ (2,000 mm) × 18 ga (1.25 mm)",
+     "Q01-0.8x2500": "98.4″ (2,500 mm) × 22 ga (0.8 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "sh-manual"
+  },
+  "tt-hs300": {
+   "id": "tt-hs300",
+   "brand": "novotech",
+   "name": "Hand guillotine shears, 20 – 16 ga × 12 – 51″",
+   "short": "Hand guillotine shears",
+   "models_label": "HS-300 – TSC1010/1.6 · 10 models",
+   "summary": "Lever guillotine shears for thin sheet and plastic: the HS-300 for 20 ga over 12″, the HS-500 to HS-1300 for 16 ga over 20 to 51″, and the GS, KHS and TSC shears on stands with fast clamping, a hand-wheel back gauge and a counterweight on the lever, for 20 ga over 40 – 49″ and 16 ga over 40″.",
+   "features": [
+    "HS-300: 20 ga × 12″ with back gauge 0 – 7″",
+    "HS-500 – HS-1300: 16 ga × 20 – 51″",
+    "GS / KHS / TSC: 20 – 16 ga × 40 – 49″; cast-iron frame on the GS-1000I",
+    "Fast clamping; back gauge by hand wheel; counterweight (spring on the GS-1000)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-khs",
+    "tm-gs1000",
+    "tm-hs800",
+    "tm-hs300",
+    "tm-tsc"
+   ],
+   "videos": [],
+   "headline": "20 – 16 ga × 12 – 51″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HS-300 · HS-500 – HS-1300",
+      "sub": "Hand guillotine shears for thin sheet and plastic, 12 – 52″",
+      "models": [
+       "HS-300",
+       "HS-500",
+       "HS-800",
+       "HS-1000",
+       "HS-1300"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "12″ (305 mm)",
+         "19.7″ (500 mm)",
+         "31.5″ (800 mm)",
+         "39.4″ (1,000 mm)",
+         "51.2″ (1,300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "20 ga (1 mm) full width, 18 ga (1.2 mm) half width",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "0 – 7″ (0 – 180 mm)",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "18 × 17 × 26″ (46 × 44 × 67 cm) overall",
+         "31 × 11 × 18″ (79 × 27 × 45 cm)",
+         "44 × 11 × 21″ (112 × 28 × 54 cm)",
+         "54 × 11 × 21″ (138 × 28 × 54 cm)",
+         "67 × 11 × 21″ (170 × 28 × 54 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "46 lb (21 kg)",
+         "79 lb (36 kg)",
+         "90 lb (41 kg)",
+         "115 lb (52 kg)",
+         "154 lb (70 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "GS-1000 · GS-1000I · KHS-1000 · KHS-1250 · TSC1010/1.6",
+      "sub": "Manual lever guillotine shears on stand, 40 – 49″",
+      "models": [
+       "GS-1000",
+       "GS-1000I",
+       "KHS-1000",
+       "KHS-1250",
+       "TSC1010/1.6"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "39.4″ (1,000 mm)",
+         "49.2″ (1,250 mm)",
+         "39.8″ (1,010 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "20 ga (1 mm)",
+         "20 ga (1 mm)",
+         "20 ga (1 mm)",
+         "20 ga (1 mm)",
+         "16 ga (1.6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Frame",
+        "sub": "",
+        "cells": [
+         "Steel plate",
+         "Cast iron",
+         "Steel plate",
+         "Steel plate",
+         "Steel plate"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "31.5″ (800 mm)",
+         "29.9″ (760 mm)",
+         "29.5″ (750 mm)",
+         "29.5″ (750 mm)",
+         "29.9″ (760 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "61 × 39 × 23″ (155 × 100 × 58 cm)",
+         "64 × 40 × 20″ (162 × 102 × 50 cm)",
+         "74 × 43 × 27″ (187 × 110 × 69 cm)",
+         "83 × 43 × 27″ (212 × 110 × 69 cm)",
+         "59 × 41 × 46″ (150 × 105 × 117 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "525 lb (238 kg)",
+         "849 lb (385 kg)",
+         "1,014 lb (460 kg)",
+         "1,235 lb (560 kg)",
+         "739 lb (335 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HS-300",
+      "glance": [
+       "12″ (305 mm)",
+       "20 ga (1 mm) full width, 18 ga (1.2 mm) half width",
+       "46 lb (21 kg)"
+      ]
+     },
+     {
+      "name": "HS-500",
+      "glance": [
+       "19.7″ (500 mm)",
+       "16 ga (1.5 mm)",
+       "79 lb (36 kg)"
+      ]
+     },
+     {
+      "name": "HS-800",
+      "glance": [
+       "31.5″ (800 mm)",
+       "16 ga (1.5 mm)",
+       "90 lb (41 kg)"
+      ]
+     },
+     {
+      "name": "HS-1000",
+      "glance": [
+       "39.4″ (1,000 mm)",
+       "16 ga (1.5 mm)",
+       "115 lb (52 kg)"
+      ]
+     },
+     {
+      "name": "HS-1300",
+      "glance": [
+       "51.2″ (1,300 mm)",
+       "16 ga (1.5 mm)",
+       "154 lb (70 kg)"
+      ]
+     },
+     {
+      "name": "GS-1000",
+      "glance": [
+       "39.4″ (1,000 mm)",
+       "20 ga (1 mm)",
+       "525 lb (238 kg)"
+      ]
+     },
+     {
+      "name": "GS-1000I",
+      "glance": [
+       "39.4″ (1,000 mm)",
+       "20 ga (1 mm)",
+       "849 lb (385 kg)"
+      ]
+     },
+     {
+      "name": "KHS-1000",
+      "glance": [
+       "39.4″ (1,000 mm)",
+       "20 ga (1 mm)",
+       "1,014 lb (460 kg)"
+      ]
+     },
+     {
+      "name": "KHS-1250",
+      "glance": [
+       "49.2″ (1,250 mm)",
+       "20 ga (1 mm)",
+       "1,235 lb (560 kg)"
+      ]
+     },
+     {
+      "name": "TSC1010/1.6",
+      "glance": [
+       "39.8″ (1,010 mm)",
+       "16 ga (1.6 mm)",
+       "739 lb (335 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_width",
+     "capacity_mild_steel",
+     "weight"
+    ],
+    "caps": {
+     "HS-300": "12″ (305 mm) × 20 ga (1 mm) full width, 18 ga (1.2 mm) half width",
+     "HS-500": "19.7″ (500 mm) × 16 ga (1.5 mm)",
+     "HS-800": "31.5″ (800 mm) × 16 ga (1.5 mm)",
+     "HS-1000": "39.4″ (1,000 mm) × 16 ga (1.5 mm)",
+     "HS-1300": "51.2″ (1,300 mm) × 16 ga (1.5 mm)",
+     "GS-1000": "39.4″ (1,000 mm) × 20 ga (1 mm)",
+     "GS-1000I": "39.4″ (1,000 mm) × 20 ga (1 mm)",
+     "KHS-1000": "39.4″ (1,000 mm) × 20 ga (1 mm)",
+     "KHS-1250": "49.2″ (1,250 mm) × 20 ga (1 mm)",
+     "TSC1010/1.6": "39.8″ (1,010 mm) × 16 ga (1.6 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "sh-manual"
+  },
+  "tt-hs": {
+   "id": "tt-hs",
+   "brand": "novotech",
+   "name": "Lever shears, bar cutters and bar and section shears",
+   "short": "Lever shears and bar cutters",
+   "models_label": "HS-5 – PBS-9 · 13 models",
+   "summary": "Hand shears for plate, flat bar and bar: the HS and HSG lever shears cut 1/4″ plate and 2-3/4 × 1/4″ flat with 5 – 12″ blades; the MS bar cutters cut round bar from Ø3/4 to 1-1/4″, square and flat; the PBS bar and section shears cut flat bar up to 4 × 3/8″, angle, tee, round and square bar, and the PBS-9 punches holes in sheet as well.",
+   "features": [
+    "HS / HSG: 1/4″ (6 mm) plate, flat bar 2-3/4 × 1/4″, round Ø7/16 – 1/2″",
+    "MS-20 – MS-32: round Ø3/4 – 1-1/4″, square 11/16 – 1-1/8″",
+    "PBS-7 / PBS-9: flat 3-1/2 × 9/16″, angle 2-3/8 × 1/4″, round Ø7/8″; PBS-9 punches 14 ga",
+    "Hold-down adjustable for height (PBS)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-hs",
+    "tm-ms",
+    "tm-pbs9",
+    "tm-pbs7"
+   ],
+   "videos": [],
+   "headline": "1/4″ plate, Ø1-1/4″ bar",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HS-5 – HS-12 · HSG-8",
+      "sub": "Lever shears for plate, flat bar and round bar",
+      "models": [
+       "HS-5",
+       "HS-6",
+       "HS-8",
+       "HS-10",
+       "HS-12",
+       "HSG-8"
+      ],
+      "rows": [
+       {
+        "label": "Blade length",
+        "sub": "",
+        "cells": [
+         "5″",
+         "6″",
+         "8″",
+         "10″",
+         "12″",
+         "8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Plate, mild steel",
+        "sub": "",
+        "cells": [
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)",
+         "1/4″ (6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Flat bar",
+        "sub": "",
+        "cells": [
+         "2-3/4 × 1/4″ (70 × 6 mm)",
+         "2-3/4 × 1/4″ (70 × 6 mm)",
+         "2-3/4 × 1/4″ (70 × 6 mm)",
+         "2-3/4 × 1/4″ (70 × 6 mm)",
+         "2-3/4 × 1/4″ (70 × 6 mm)",
+         "2-3/4 × 1/4″ (70 × 6 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar",
+        "sub": "",
+        "cells": [
+         "Ø7/16″ (11 mm)",
+         "Ø7/16″ (11 mm)",
+         "Ø1/2″ (13 mm)",
+         "Ø1/2″ (13 mm)",
+         "Ø1/2″ (13 mm)",
+         "Ø1/2″ (13 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "16 × 15 × 7″ (40 × 37 × 17 cm)",
+         "16 × 15 × 7″ (40 × 37 × 17 cm)",
+         "17 × 16 × 6″ (42 × 41 × 16 cm)",
+         "21 × 19 × 6″ (54 × 48 × 15 cm)",
+         "21 × 19 × 6″ (54 × 48 × 15 cm)",
+         "20 × 6 × 18″ (50 × 16 × 45 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "20 lb (9 kg)",
+         "22 lb (10 kg)",
+         "37 lb (17 kg)",
+         "46 lb (21 kg)",
+         "57 lb (26 kg)",
+         "42 lb (19 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "MS-20 · MS-24 · MS-28 · MS-32",
+      "sub": "Hand bar cutters for round, square and flat bar",
+      "models": [
+       "MS-20",
+       "MS-24",
+       "MS-28",
+       "MS-32"
+      ],
+      "rows": [
+       {
+        "label": "Round bar",
+        "sub": "",
+        "cells": [
+         "Ø13/16″ (20 mm)",
+         "Ø15/16″ (24 mm)",
+         "Ø1-1/8″ (28 mm)",
+         "Ø1-1/4″ (32 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square bar",
+        "sub": "",
+        "cells": [
+         "11/16 × 11/16″ (18 × 18 mm)",
+         "13/16 × 13/16″ (20 × 20 mm)",
+         "15/16 × 15/16″ (24 × 24 mm)",
+         "1-1/8 × 1-1/8″ (28 × 28 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar",
+        "sub": "",
+        "cells": [
+         "1-3/16 × 5/16″ (30 × 8 mm)",
+         "1-3/8 × 1/2″ (35 × 12 mm)",
+         "1-9/16 × 1/2″ (40 × 12 mm)",
+         "1-9/16 × 9/16″ (40 × 14 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "16 × 15 × 8″ (41 × 37 × 20 cm)",
+         "16 × 15 × 8″ (41 × 37 × 20 cm)",
+         "18 × 9 × 18″ (45 × 24 × 45 cm)",
+         "18 × 10 × 18″ (46 × 25 × 45 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "35 lb (16 kg)",
+         "55 lb (25 kg)",
+         "75 lb (34 kg)",
+         "101 lb (46 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "PBS-8 · PBS-7 · PBS-9",
+      "sub": "Bar and section shears — angle, T, flat, round and square; PBS-9 also punches",
+      "models": [
+       "PBS-8",
+       "PBS-7",
+       "PBS-9"
+      ],
+      "rows": [
+       {
+        "label": "Round bar",
+        "sub": "",
+        "cells": [
+         "Ø5/8″ (16 mm)",
+         "Ø7/8″ (22 mm)",
+         "Ø7/8″ (22 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square bar",
+        "sub": "",
+        "cells": [
+         "5/8 × 5/8″ (16 × 16 mm)",
+         "13/16 × 13/16″ (20 × 20 mm)",
+         "13/16 × 13/16″ (20 × 20 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar",
+        "sub": "",
+        "cells": [
+         "3-7/8 × 3/8″ (100 × 10 mm)",
+         "3-1/2 × 9/16″ (90 × 14 mm)",
+         "3-1/2 × 9/16″ (90 × 14 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Angle",
+        "sub": "",
+        "cells": [
+         "1-9/16 × 1/4″ (40 × 6 mm)",
+         "2-3/8 × 1/4″ (60 × 7 mm)",
+         "2-3/8 × 1/4″ (60 × 7 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "T-section",
+        "sub": "",
+        "cells": [
+         "1-9/16 × 1/4″ (40 × 6 mm)",
+         "2-3/8 × 1/4″ (60 × 7 mm)",
+         "2-3/8 × 1/4″ (60 × 7 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Plate",
+        "sub": "",
+        "cells": [
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "3/8″ (10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Punching",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "14 ga (2 mm) sheet, throat 6.3″ (160 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "26 × 9 × 22″ (65 × 24 × 55 cm)",
+         "34 × 15 × 24″ (87 × 37 × 62 cm)",
+         "42 × 14 × 33″ (106 × 36 × 84 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "99 lb (45 kg)",
+         "212 lb (96 kg)",
+         "287 lb (130 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HS-5",
+      "glance": [
+       "5″",
+       "1/4″ (6 mm)",
+       "20 lb (9 kg)",
+       "Ø7/16″ (11 mm)",
+       "2-3/4 × 1/4″ (70 × 6 mm)"
+      ]
+     },
+     {
+      "name": "HS-6",
+      "glance": [
+       "6″",
+       "1/4″ (6 mm)",
+       "22 lb (10 kg)",
+       "Ø7/16″ (11 mm)",
+       "2-3/4 × 1/4″ (70 × 6 mm)"
+      ]
+     },
+     {
+      "name": "HS-8",
+      "glance": [
+       "8″",
+       "1/4″ (6 mm)",
+       "37 lb (17 kg)",
+       "Ø1/2″ (13 mm)",
+       "2-3/4 × 1/4″ (70 × 6 mm)"
+      ]
+     },
+     {
+      "name": "HS-10",
+      "glance": [
+       "10″",
+       "1/4″ (6 mm)",
+       "46 lb (21 kg)",
+       "Ø1/2″ (13 mm)",
+       "2-3/4 × 1/4″ (70 × 6 mm)"
+      ]
+     },
+     {
+      "name": "HS-12",
+      "glance": [
+       "12″",
+       "1/4″ (6 mm)",
+       "57 lb (26 kg)",
+       "Ø1/2″ (13 mm)",
+       "2-3/4 × 1/4″ (70 × 6 mm)"
+      ]
+     },
+     {
+      "name": "HSG-8",
+      "glance": [
+       "8″",
+       "1/4″ (6 mm)",
+       "42 lb (19 kg)",
+       "Ø1/2″ (13 mm)",
+       "2-3/4 × 1/4″ (70 × 6 mm)"
+      ]
+     },
+     {
+      "name": "MS-20",
+      "glance": [
+       "—",
+       "—",
+       "35 lb (16 kg)",
+       "Ø13/16″ (20 mm)",
+       "1-3/16 × 5/16″ (30 × 8 mm)"
+      ]
+     },
+     {
+      "name": "MS-24",
+      "glance": [
+       "—",
+       "—",
+       "55 lb (25 kg)",
+       "Ø15/16″ (24 mm)",
+       "1-3/8 × 1/2″ (35 × 12 mm)"
+      ]
+     },
+     {
+      "name": "MS-28",
+      "glance": [
+       "—",
+       "—",
+       "75 lb (34 kg)",
+       "Ø1-1/8″ (28 mm)",
+       "1-9/16 × 1/2″ (40 × 12 mm)"
+      ]
+     },
+     {
+      "name": "MS-32",
+      "glance": [
+       "—",
+       "—",
+       "101 lb (46 kg)",
+       "Ø1-1/4″ (32 mm)",
+       "1-9/16 × 9/16″ (40 × 14 mm)"
+      ]
+     },
+     {
+      "name": "PBS-8",
+      "glance": [
+       "—",
+       "—",
+       "99 lb (45 kg)",
+       "Ø5/8″ (16 mm)",
+       "3-7/8 × 3/8″ (100 × 10 mm)"
+      ]
+     },
+     {
+      "name": "PBS-7",
+      "glance": [
+       "—",
+       "—",
+       "212 lb (96 kg)",
+       "Ø7/8″ (22 mm)",
+       "3-1/2 × 9/16″ (90 × 14 mm)"
+      ]
+     },
+     {
+      "name": "PBS-9",
+      "glance": [
+       "—",
+       "—",
+       "287 lb (130 kg)",
+       "Ø7/8″ (22 mm)",
+       "3-1/2 × 9/16″ (90 × 14 mm)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade_length",
+     "plate_mild_steel",
+     "weight",
+     "round_bar",
+     "flat_bar"
+    ],
+    "caps": {
+     "HS-5": "Ø7/16″ (11 mm) round",
+     "HS-6": "Ø7/16″ (11 mm) round",
+     "HS-8": "Ø1/2″ (13 mm) round",
+     "HS-10": "Ø1/2″ (13 mm) round",
+     "HS-12": "Ø1/2″ (13 mm) round",
+     "HSG-8": "Ø1/2″ (13 mm) round",
+     "MS-20": "Ø13/16″ (20 mm) round",
+     "MS-24": "Ø15/16″ (24 mm) round",
+     "MS-28": "Ø1-1/8″ (28 mm) round",
+     "MS-32": "Ø1-1/4″ (32 mm) round",
+     "PBS-8": "Ø5/8″ (16 mm) round",
+     "PBS-7": "Ø7/8″ (22 mm) round",
+     "PBS-9": "Ø7/8″ (22 mm) round"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "sh-manual"
+  },
+  "tt-mms": {
+   "id": "tt-mms",
+   "brand": "novotech",
+   "name": "MMS bench shears and throatless rack-and-pinion shears, 16 ga – 5/32″",
+   "short": "MMS bench shears",
+   "models_label": "MMS-1 – MMS-6 · 6 models",
+   "summary": "Bench shears for sheet, strip and wire: the MMS-1 to MMS-3 for 16 ga to 1/8″, and the MMS-4 to MMS-6 throatless shears with an alloy-steel rack and pinion that cut straight lines, curves and shapes in mild steel to 5/32″ and stainless to 1/8″ — the work turns freely around the blade.",
+   "features": [
+    "MMS-1 – MMS-3: 16 ga – 1/8″ mild steel",
+    "MMS-4 – MMS-6: 14 ga – 5/32″ mild steel, 16 ga – 1/8″ stainless; cuts curves",
+    "Rack-and-pinion drive; removable handle; adjustable hold-down (MMS-6)",
+    "Bolts to a bench or a stand"
+   ],
+   "optional": [],
+   "images": [
+    "tm-mms6",
+    "tm-mms3"
+   ],
+   "videos": [],
+   "headline": "16 ga – 5/32″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MMS-1 · MMS-2 · MMS-3",
+      "sub": "Bench shears for sheet, strip and wire",
+      "models": [
+       "MMS-1",
+       "MMS-2",
+       "MMS-3"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)",
+         "14 ga (2 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "13 × 4 × 5″ (32 × 10 × 13 cm)",
+         "7 × 7 × 9″ (19 × 18 × 24 cm)",
+         "13 × 9 × 13″ (32 × 24 × 34 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4 lb (2 kg)",
+         "20 lb (9 kg)",
+         "46 lb (21 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "MMS-4 · MMS-5 · MMS-6",
+      "sub": "Throatless rack-and-pinion bench shears — cut straight lines, curves and shapes",
+      "models": [
+       "MMS-4",
+       "MMS-5",
+       "MMS-6"
+      ],
+      "rows": [
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm)",
+         "1/8″ (3 mm)",
+         "5/32″ (4 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, stainless steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)",
+         "14 ga (2 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Length of cut per stroke",
+        "sub": "",
+        "cells": [
+         "2-3/4″ (70 mm)",
+         "3-1/8″ (80 mm)",
+         "4-3/8″ (110 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Lower blade length",
+        "sub": "",
+        "cells": [
+         "4-1/8″ (105 mm)",
+         "4-1/4″ (108 mm)",
+         "5-1/2″ (140 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat",
+        "sub": "",
+        "cells": [
+         "4-1/8″ (105 mm)",
+         "4-5/8″ (116 mm)",
+         "5-7/8″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Handle length",
+        "sub": "",
+        "cells": [
+         "17-1/2″ (442 mm)",
+         "23-1/4″ (590 mm)",
+         "28-1/4″ (720 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "20 × 13 × 9″ (51 × 33 × 22 cm)",
+         "15 × 10 × 27″ (38 × 26 × 69 cm)",
+         "15 × 10 × 32″ (38 × 26 × 82 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "18 lb (8 kg)",
+         "33 lb (15 kg)",
+         "57 lb (26 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MMS-1",
+      "glance": [
+       "16 ga (1.5 mm)",
+       "4 lb (2 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "MMS-2",
+      "glance": [
+       "14 ga (2 mm)",
+       "20 lb (9 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "MMS-3",
+      "glance": [
+       "1/8″ (3 mm)",
+       "46 lb (21 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "MMS-4",
+      "glance": [
+       "—",
+       "18 lb (8 kg)",
+       "14 ga (2 mm)",
+       "16 ga (1.5 mm)"
+      ]
+     },
+     {
+      "name": "MMS-5",
+      "glance": [
+       "—",
+       "33 lb (15 kg)",
+       "1/8″ (3 mm)",
+       "14 ga (2 mm)"
+      ]
+     },
+     {
+      "name": "MMS-6",
+      "glance": [
+       "—",
+       "57 lb (26 kg)",
+       "5/32″ (4 mm)",
+       "1/8″ (3 mm)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "shearing_capacity_mild_steel",
+     "weight",
+     "capacity_mild_steel",
+     "capacity_stainless_steel"
+    ],
+    "caps": {
+     "MMS-1": "16 ga (1.5 mm)",
+     "MMS-2": "14 ga (2 mm)",
+     "MMS-3": "1/8″ (3 mm)",
+     "MMS-4": "14 ga (2 mm)",
+     "MMS-5": "1/8″ (3 mm)",
+     "MMS-6": "5/32″ (4 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "sh-manual"
   }
  }
 }

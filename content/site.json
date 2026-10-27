@@ -8,7 +8,7 @@
  "email_domain": "NovoTechMachineTools.com",
  "address": {
   "street": "1365 Mid-Way Blvd, Unit 26",
-  "city": "Mississauga, ON, Canada",
+  "city": "Mississauga",
   "region": "ON",
   "postal": "L5T 2J5",
   "country": "Canada"
@@ -180,6 +180,10 @@
      ]
     },
     {
+     "label": "CNC plasma tables",
+     "href": "cnc-plasma-table.html"
+    },
+    {
      "label": "Plate rollers & slip rolls",
      "href": "plate-rollers.html",
      "children": [
@@ -194,6 +198,10 @@
       {
        "label": "Motorized 3-roll plate rollers",
        "href": "motorized-plate-rollers.html"
+      },
+      {
+       "label": "Slip rolls · value line",
+       "href": "motorized-plate-rollers.html#tt-slip-group"
       }
      ]
     },
@@ -270,11 +278,15 @@
       {
        "label": "Bekamak automatic TCT & HSS saws",
        "href": "circular-cold-saws.html#bekamak-circular-group"
+      },
+      {
+       "label": "NovoTech value-line cold & abrasive saws",
+       "href": "circular-cold-saws.html#tt-cold-group"
       }
      ]
     },
     {
-     "label": "Roofing & pan brakes",
+     "label": "Sheet metal brakes & folders",
      "href": "folder-sheet-metal-brake.html"
     },
     {
@@ -300,6 +312,10 @@
       {
        "label": "CSM tube benders",
        "href": "csm-tube-benders.html"
+      },
+      {
+       "label": "Value-line tube & pipe benders",
+       "href": "tube-bender.html"
       }
      ]
     },
@@ -318,8 +334,20 @@
       {
        "label": "Production hydraulic presses · premium line",
        "href": "hydraulic-press.html#novotech-production-group"
+      },
+      {
+       "label": "Shop presses · value line",
+       "href": "hydraulic-press.html#tt-shop-group"
+      },
+      {
+       "label": "Hydraulic presses · value line",
+       "href": "hydraulic-press.html#tt-hp-group"
       }
      ]
+    },
+    {
+     "label": "Arbor & bench presses",
+     "href": "arbor-press.html"
     },
     {
      "label": "Plate bevelers",
@@ -342,12 +370,20 @@
      "href": "bead-rollers.html"
     },
     {
-     "label": "Lock formers",
+     "label": "Lock formers & HVAC machines",
      "href": "lock-former.html"
+    },
+    {
+     "label": "English wheels & power hammers",
+     "href": "english-wheel.html"
     },
     {
      "label": "Metal deburring & finishing machines",
      "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
+    },
+    {
+     "label": "Belt grinders & sanders",
+     "href": "belt-grinder.html"
     },
     {
      "label": "Corner grinders",
@@ -372,6 +408,18 @@
     {
      "label": "Aluminum & PVC saws",
      "href": "aluminum-and-pvc-upcut-saws.html"
+    },
+    {
+     "label": "Drill presses",
+     "href": "drill-press.html"
+    },
+    {
+     "label": "Milling machines",
+     "href": "milling-machine.html"
+    },
+    {
+     "label": "CNC lathes & machining centres",
+     "href": "cnc-machine-tools.html"
     },
     {
      "label": "Aluminum & PVC processing machines",

@@ -1,0 +1,49 @@
+{
+ "slug": "hydraulic-press",
+ "family_set": "ttmc-more",
+ "groups": [
+  {
+   "id": "tt-shop-group",
+   "title": "Shop presses · value line",
+   "lead": "Hand-pump and motorized workshop presses from 10 to 176 tons, and shop press brakes — NovoTech value line, built in China.",
+   "brand": "novotech",
+   "families": [
+    "tt-shop-hs",
+    "tt-shop-small",
+    "tt-shop-brake"
+   ]
+  },
+  {
+   "id": "tt-hp-group",
+   "title": "Hydraulic presses · value line",
+   "lead": "Motorized H-frame, brake, sliding-table, C-frame and four-column presses from 22 to 551 US tons — NovoTech value line, built in China.",
+   "brand": "novotech",
+   "families": [
+    "tt-hp-h",
+    "tt-hpb",
+    "tt-hp-m1",
+    "tt-hp-c",
+    "tt-hp-f"
+   ]
+  }
+ ],
+ "intro_add": "NovoTech's value-line presses, built in China, add hand-pump and motorized shop presses from 10 to 176 tons, motorized H-frame presses to 551 US tons, presses with a brake function, sliding-table, C-frame and four-column presses.",
+ "points_add": [
+  "NovoTech value line: shop presses 10 – 176 t, H-frame presses 33 – 551 US tons, brake, sliding-table, C-frame and four-column presses"
+ ],
+ "faq_add": [
+  {
+   "q": "Premium-line or value-line press?",
+   "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with hand pumps on the small presses and built-on or separate power units on the motorized ones."
+  }
+ ],
+ "related_add": [
+  {
+   "href": "arbor-press.html",
+   "label": "Arbor presses and bench presses"
+  }
+ ],
+ "set": {
+  "hero_brand_line": "Premium-line shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses are built in Turkey with European components; the value-line presses are built in China — all to NovoTech's specification and sold, installed and supported in Canada by NovoTech."
+ }
+}

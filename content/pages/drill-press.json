@@ -1,0 +1,135 @@
+{
+ "slug": "drill-press",
+ "template": "category.html",
+ "family_set": "ttmc-more",
+ "title": "Drill Presses — Gear-Head, Floor & Bench, to 2″ | NovoTech",
+ "artifact_title": "Drill presses — gear-head, column, floor and bench drill presses",
+ "meta_description": "Industrial drill presses: gear-head drill presses 1 – 2″ in steel with power feed and tapping, belt and inverter column drills, variable-speed bench and floor drill presses, vises.",
+ "h1": "Drill presses — gear-head, column, floor and bench drill presses",
+ "intro": "A drill press holds the drill square to the work and feeds it with the force and control a hand drill cannot give — the first machine tool in most fabrication and maintenance shops. NovoTech's value-line drill presses are built in China to our specification: gear-head drill presses from 1″ to 2″ in steel with eight or twelve speeds, power feed and tapping, inverter drill presses that keep full torque at low speed, belt-drive and stepless column drills, variable-speed bench and floor drill presses with a digital speed display, a drilling and tapping press with automatic reverse, and the vises to go with them. Parts and support from Mississauga, ON, Canada.",
+ "hero_points": [
+  "Gear-head drill presses T-25 – T-50: 1″ to 2″ in steel, 8 – 12 speeds, power feed, tapping to M30",
+  "TX530 inverter drill presses with two-range gearbox; TB column drills, belt drive or stepless by frequency converter",
+  "WTZ variable-speed bench and floor drill presses, 1/2 – 5/8″; WTZ-16T drilling and tapping with automatic reverse"
+ ],
+ "hero_image": "tm-t50e",
+ "hero_image_secondary": [
+  "tm-t25",
+  "tm-tbv"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Drill presses"
+  }
+ ],
+ "hero_brand_line": "NovoTech value line — NovoTech's own brand, manufactured in China to high North American quality standards and sold with a 1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support from Mississauga, ON, Canada.",
+ "nav_label": "Drill presses",
+ "groups": [
+  {
+   "id": "gear-group",
+   "title": "Gear-head drill presses",
+   "lead": "Speeds through a gearbox — no belts to move — with the torque for large holes and tapping, from 1″ to 2″ in steel.",
+   "brand": "novotech",
+   "families": [
+    "tt-t25",
+    "tt-t5025",
+    "tt-t50"
+   ]
+  },
+  {
+   "id": "column-group",
+   "title": "Column drills — belt drive and inverter",
+   "lead": "Industrial column drills with a digital speed display; the V models with stepless speed on single-phase power.",
+   "brand": "novotech",
+   "families": [
+    "tt-tb"
+   ]
+  },
+  {
+   "id": "vs-group",
+   "title": "Variable-speed bench and floor drill presses",
+   "lead": "Light drill presses with variable speed for holes to 5/8″, and a drilling and tapping press.",
+   "brand": "novotech",
+   "families": [
+    "tt-wtz"
+   ]
+  },
+  {
+   "id": "vise-group",
+   "title": "Drill press vises and welding clamps",
+   "lead": "Vises for the drill press and the mill, and angle clamps for welding.",
+   "brand": "novotech",
+   "families": [
+    "tt-vise"
+   ],
+   "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support from Mississauga, ON, Canada"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Gear-head or belt-drive drill press?",
+   "a": "A gear-head drill press changes speed with levers on a gearbox and transmits more torque at low speed — the speeds you need for 1″ and larger holes and for tapping — and it does not slip. A belt-drive drill press is quieter and smoother at high speed for small holes but needs the belts moved to change speed. Inverter (V) machines change speed steplessly from the panel and keep their torque at low speed with a two-range gearbox (TX530)."
+  },
+  {
+   "q": "What drilling capacity do I need?",
+   "a": "The rated capacity is the largest hole drilled in mild steel in one pass with a twist drill. Choose a machine one size above your largest everyday hole: a 1″ machine for general fabrication, 1-1/4 to 1-9/16″ for structural work and tapping, 2″ for heavy plates and flanges. Larger holes are faster and safer with an annular cutter on a magnetic drill or on the drill press."
+  },
+  {
+   "q": "Which drill presses tap?",
+   "a": "The WTZ-16T taps M12 with automatic reverse; the TX530 range taps 3/4 – 1″ with forward and reverse; the T-50 and T-50E tap M30 in steel; tapping is an option on most T-25, T-26, T-28 and T-30 models. Tapping needs a reversing spindle and low speed — tell us the largest tap and the material."
+  },
+  {
+   "q": "Single-phase or 3-phase?",
+   "a": "The WTZ bench and floor drill presses and the TB…V inverter column drills run on single-phase power; the gear-head drill presses have 3-phase two-speed motors, supplied for 600 V with a CSA-approved panel or for 208 / 240 / 480 V on request."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about drill presses",
+ "catalogue_pdf": null,
+ "origin_feature": {
+  "title": "NovoTech value line — built in China",
+  "text": "Built in China to NovoTech's specification by a maker that exports metalworking machinery to more than 70 countries; inspected before shipping, wired for Canadian power and supported by NovoTech's technicians in Mississauga, ON, Canada."
+ },
+ "section_label": "Drill presses",
+ "related_pages": [
+  {
+   "href": "milling-machine.html",
+   "label": "Milling machines"
+  },
+  {
+   "href": "cnc-machine-tools.html",
+   "label": "CNC lathes and machining centres"
+  },
+  {
+   "href": "belt-grinder.html",
+   "label": "Belt grinders and sanders"
+  },
+  {
+   "href": "band-saw.html",
+   "label": "Band saws"
+  },
+  {
+   "href": "ironworker-machines.html",
+   "label": "Ironworkers"
+  },
+  {
+   "href": "arbor-press.html",
+   "label": "Arbor presses and bench presses"
+  }
+ ],
+ "related_title": "More machinery from NovoTech",
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null
+}

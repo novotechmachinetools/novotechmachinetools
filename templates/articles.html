@@ -7,17 +7,24 @@
     {{ crumbs(page) }}
     <h1>{{ page.h1 }}</h1>
     <p class="lead">{{ page.intro }}</p>
+    {% if page.article_groups %}
+    <nav class="article-topics" aria-label="Guide topics">
+      <ul>{% for g in page.article_groups %}<li><a href="#{{ g.id }}">{{ g.title }} <span>{{ g.count }}</span></a></li>{% endfor %}</ul>
+    </nav>
+    {% endif %}
   </div>
 </section>
 
-<section class="wrap articles" aria-label="Articles">
+{% for g in page.article_groups %}
+<section class="wrap articles" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
+  <h2 class="articles-group-title" id="{{ g.id }}-title">{{ g.title }}</h2>
   <ul class="article-grid">
-    {% for a in page.articles %}
+    {% for a in page.articles if a.group == g.id %}
     <li class="article-card">
       <a class="article-art{{ ' is-cutout' if a.img and a.img.alpha else '' }}" href="{{ a.href }}" tabindex="-1" aria-hidden="true">{% if a.img %}<img src="{{ a.img.small }}" srcset="{{ a.img.srcset }}" sizes="(max-width: 640px) 92vw, 360px" width="{{ a.img.w }}" height="{{ a.img.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
       <div class="article-body">
-        <p class="article-topic">{{ a.topic }}</p>
-        <h2 class="article-title"><a href="{{ a.href }}">{{ a.title }}</a></h2>
+        <p class="article-topic">{{ 'Buying guide' if 'buying guide' in a.title|lower else ('Guide' if 'guide' in a.title|lower else 'Article') }}</p>
+        <h3 class="article-title"><a href="{{ a.href }}">{{ a.title }}</a></h3>
         <p>{{ a.text }}</p>
         <p><a class="arrow" href="{{ a.href }}">Read the {{ 'guide' if 'guide' in a.title|lower else 'article' }}</a></p>
       </div>
@@ -25,6 +32,7 @@
     {% endfor %}
   </ul>
 </section>
+{% endfor %}
 
 {% include "partials/quote.html" %}
 {% endblock %}

@@ -3,7 +3,7 @@
   {
    "id": "bending",
    "title": "Sheet metal bending",
-   "lead": "Press brakes, panel benders and the tooling that goes in them.",
+   "lead": "Press brakes, panel benders, sheet metal brakes and the tooling that goes in them.",
    "slugs": [
     "press-brake",
     "panel-bender",
@@ -25,11 +25,12 @@
   },
   {
    "id": "cutting",
-   "title": "Shearing, punching and notching",
-   "lead": "Shears, ironworkers, notchers and plate bevellers.",
+   "title": "Shearing, punching, plasma cutting and notching",
+   "lead": "Shears, ironworkers, CNC plasma tables, notchers and plate bevellers.",
    "slugs": [
     "shear-cutting",
     "ironworker-machines",
+    "cnc-plasma-table",
     "corner-notcher",
     "plate-beveler"
    ]
@@ -48,14 +49,16 @@
   {
    "id": "rolling",
    "title": "Rolling, pressing and forming",
-   "lead": "Plate and section rolling, hydraulic presses and the HVAC forming machines.",
+   "lead": "Plate and section rolling, presses, HVAC forming machines and metal shaping.",
    "slugs": [
     "plate-rollers",
     "angle-rolls",
     "hydraulic-press",
+    "arbor-press",
     "bead-rollers",
     "lock-former",
-    "circle-cutters-and-seamers"
+    "circle-cutters-and-seamers",
+    "english-wheel"
    ]
   },
   {
@@ -72,11 +75,22 @@
   {
    "id": "finishing",
    "title": "Deburring, grinding and finishing",
-   "lead": "Deburring and edge rounding of cut parts, corner grinding and pipe polishing.",
+   "lead": "Deburring and edge rounding, belt grinders and sanders, corner grinding and pipe polishing.",
    "slugs": [
     "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+    "belt-grinder",
     "corner-grinding-machines",
     "pipe-sanding-polishing-machines"
+   ]
+  },
+  {
+   "id": "machining",
+   "title": "Drilling, milling and CNC machining",
+   "lead": "Drill presses, milling machines, CNC lathes and machining centres.",
+   "slugs": [
+    "drill-press",
+    "milling-machine",
+    "cnc-machine-tools"
    ]
   },
   {
@@ -109,7 +123,7 @@
   "press-brake": "CNC hydraulic, hybrid and electric press brakes, 22 to 1,323 US tons — Dener premium and NovoTech value lines.",
   "panel-bender": "CNC panel benders that bend all four sides of a panel without tool changes, 47″ to 165″ bend width.",
   "v-grooving-machine": "CNC V-grooving machines for sharp architectural bends — horizontal to 20 ft, vertical to 1/4″ plate.",
-  "folder-sheet-metal-brake": "Manual and hydraulic roofing brakes and box-and-pan brakes for flashing, siding and trim.",
+  "folder-sheet-metal-brake": "Magnetic brakes, box and pan brakes, hand brakes, hydraulic and electric folders, roofing brakes and 3-in-1 machines.",
   "horizontal-press-brake": "NC hydraulic horizontal presses for bending, straightening and punching, 11 to 165 US tons.",
   "press-brake-tooling-punch-and-die": "EUROSTAMP punches, dies, holders and adapters for every clamping style, made in Italy.",
   "laser-cutting-machine": "Fiber laser cutting machines for sheet and plate, 4 × 4 ft to 10 × 164 ft beds, 1.5 to 80 kW.",
@@ -117,20 +131,20 @@
   "laser-welding-machine": "Handheld laser welders from 0.8 kW, robotic laser welding cells to 20 kW, and laser cladding.",
   "shear-cutting": "Sheet metal shears, mechanical guillotines and hydraulic plate shears, 16 ga to 1-9/16″.",
   "ironworker-machines": "Hydraulic ironworkers and punching machines that punch, shear, notch and bend in one machine.",
-  "corner-notcher": "Hydraulic corner notchers for the corners of sheet metal boxes, cabinets and panels.",
+  "corner-notcher": "Hydraulic, pneumatic and manual corner notchers for the corners of boxes, cabinets and panels.",
   "plate-beveler": "Cevisa portable cold bevellers for weld preparation on plate and pipe, 1/8″ to 4-3/4″ thick.",
   "band-saw": "Manual, semi-automatic and automatic metal-cutting band saws — Bekamak premium and NovoTech value lines.",
   "band-saw-blades": "WIKUS bimetal M42 and carbide-tipped band saw blades, welded to length for your saw.",
-  "circular-cold-saws": "Circular cold saws from manual to CNC carbide — ISITAN, CSM and Bekamak.",
+  "circular-cold-saws": "Circular cold saws from manual to CNC carbide — ISITAN, CSM, Bekamak and NovoTech value line — and abrasive saws.",
   "aluminum-and-pvc-upcut-saws": "Automatic upcut, double-head, glazing bead and miter saws for aluminum and PVC extrusions.",
-  "plate-rollers": "Hydraulic 4-roll and 3-roll plate rollers and motorized slip rolls, from light sheet to heavy plate.",
-  "angle-rolls": "Angle rolls, tube rollers and section benders for angle, flat bar, pipe and profiles.",
-  "hydraulic-press": "H-frame, T-slot and straightening shop presses, 33 to 441 US tons, and production hydraulic presses.",
+  "plate-rollers": "Hydraulic 4-roll and 3-roll plate rollers, motorized plate rollers and slip rolls, from 22 ga sheet to heavy plate.",
+  "angle-rolls": "Angle rolls, profile benders, ring rollers and tube rollers for angle, flat bar, pipe and profiles.",
+  "hydraulic-press": "Shop presses from 10 tons, H-frame, C-frame and four-column hydraulic presses to 551 US tons, and production presses.",
   "bead-rollers": "Bead rollers, beading machines and a lock seamer for HVAC duct and sheet metal work.",
-  "lock-former": "Pittsburgh lock formers and seam closing machines for HVAC ductwork.",
+  "lock-former": "Pittsburgh lock formers, roll formers, seam closer, cleat benders and round duct machines for HVAC ductwork.",
   "circle-cutters-and-seamers": "Circle cutting and flanging machines for tank ends, dished heads and duct fittings.",
   "pipe-benders": "CNC, NC, all-electric and hydraulic pipe and tube benders, Ø15/32″ to Ø8-5/8″.",
-  "pipe-notcher": "Tube notchers and pipe notching machines for the fit-up of tube frames, railings and roll cages.",
+  "pipe-notcher": "Tube notchers, hole-saw and end-mill notchers and belt tube-end grinders for frames, railings and roll cages.",
   "tube-end-forming-machines": "Wecotech tube end forming machines from Switzerland — expanding, reducing, beading and flanging.",
   "wire-bending-machines": "CSM CNC 3D wire benders fed from the coil, Ø5/32″ to Ø9/16″ wire.",
   "welding-positioners": "Tilting welding positioners for round welds, 220 to 661 lb.",
@@ -139,7 +153,14 @@
   "corner-grinding-machines": "Gecam corner grinders for the weld seams of boxes, cabinets, doors and tube frames.",
   "pipe-sanding-polishing-machines": "Automatic, orbital and centreless pipe sanders and polishers, Ø3/16″ to Ø15-3/4″.",
   "rebar-bender-and-cutter": "GMS rebar benders, stirrup benders, rebar cutters and automatic processing lines, made in Turkey.",
-  "pvc-aluminum-window-machines": "Plastmak aluminum and PVC window and door machinery — welding, cleaning, CNC machining, assembly and complete lines."
+  "pvc-aluminum-window-machines": "Plastmak aluminum and PVC window and door machinery — welding, cleaning, CNC machining, assembly and complete lines.",
+  "belt-grinder": "Metal belt grinders with 2 – 8″ belts, disc sanders, bench grinders, chamfering machines and dust collectors.",
+  "drill-press": "Gear-head, column and variable-speed drill presses, 1/2″ to 2″ in steel, with power feed and tapping.",
+  "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines and keyseaters.",
+  "cnc-machine-tools": "A slant-bed CNC lathe, BT40 vertical machining centres and BT50 CNC boring and milling machines.",
+  "cnc-plasma-table": "CNC plasma tables 2 × 2 ft to 5 × 10 ft and CNC plasma pipe cutters for Ø2 – 11-3/4″ pipe.",
+  "english-wheel": "English wheels, planishing hammers, electric power hammers, shrinker-stretchers and air forging hammers.",
+  "arbor-press": "Arbor presses 1/2 – 8 tons, bench presses with sheet-metal tooling, turret punch presses and orbital riveters."
  },
  "card_image": {
   "folder-sheet-metal-brake": "nt-card-roofing-brake",

@@ -12,6 +12,8 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
+if os.environ.get("LENIENT_IMAGES"):   # preview build with placeholder images: never into dist/, so it cannot be deployed
+    DIST = os.path.join(ROOT, "dist-preview")
 STAGING = "--staging" in sys.argv
 ARTIFACT = "--artifact" in sys.argv   # claude.ai artifact preview: page fragment, no doc skeleton
 if ARTIFACT:
@@ -305,9 +307,15 @@ def build_spec_table(spec):
 
 
 # ---------------------------------------------------------------- images
+MISSING_IMAGES = set()   # filled only with LENIENT_IMAGES=1 (preview builds; never deployed)
+
+
 def img(name, max_w=None):
     """Variants of an image for the templates; max_w drops the variants wider than that (the header logo: 360 px is plenty)."""
     e = manifest.get(name)
+    if not e and os.environ.get("LENIENT_IMAGES") and name != "novotech-logo":   # local preview while images are still being made
+        MISSING_IMAGES.add(name)
+        return img("novotech-logo", max_w)
     if not e:
         raise SystemExit(f"image not in manifest: {name}")
     v = sorted(e["variants"], key=lambda x: x["w"])
@@ -457,6 +465,16 @@ def page_ld(page):
     if page.get("faq"):
         graph.append({"@type": "FAQPage", "@id": url + "#faq", "mainEntity": [
             {"@type": "Question", "name": q["q"], "acceptedAnswer": {"@type": "Answer", "text": q["a"]}} for q in page["faq"]]})
+    if page.get("article_html"):   # the buying guide at the bottom of the page
+        aid = page.get("article_id") or "buying-guide"
+        words = len(re.sub(r"<[^>]+>", " ", page["article_html"]).split())
+        graph.append({"@type": "Article", "@id": url + "#" + aid, "url": url + "#" + aid,
+                      "headline": page.get("article_title") or "Buying guide", "description": page.get("article_intro") or page["meta_description"],
+                      "articleSection": [t["label"] for t in page.get("article_toc", [])], "wordCount": words, "inLanguage": "en-CA",
+                      "datePublished": page["date_published"], "dateModified": page["date_modified"],
+                      **({"image": absurl(hero["src"])} if hero else {}),
+                      "author": {"@id": site["domain"] + "/#organization"}, "publisher": {"@id": site["domain"] + "/#organization"},
+                      "isPartOf": {"@id": url}, "mainEntityOfPage": {"@id": url}})
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
 
@@ -466,9 +484,9 @@ for fn in os.listdir(os.path.join(ROOT, "content", "families")):
         FAMILY_SETS[fn[:-5]] = json.load(open(os.path.join(ROOT, "content", "families", fn), encoding="utf-8"))["families"]
 
 
-def family(page, fid):
-    """A deep copy of a family record from the page's family set."""
-    fs = FAMILY_SETS[page.get("family_set", "rebar")]
+def family(page, fid, fset=None):
+    """A deep copy of a family record from the page's family set (or the set of the group / section page that lists it)."""
+    fs = FAMILY_SETS[fset or page.get("family_set", "rebar")]
     if fid not in fs:
         raise SystemExit(f"unknown family {fid}")
     return json.loads(json.dumps(fs[fid]))
@@ -691,6 +709,47 @@ CATALOG_DATA = json.load(open(os.path.join(ROOT, "content", "catalog.json"), enc
 SITE_TEMPLATES = {"home.html", "products.html", "contact.html", "about.html", "brochures.html", "articles.html", "privacy.html", "article.html"}
 CATALOG = {}      # slug → category card (menu label, image, blurb, sub-pages), filled by main()
 SHOWN_FAMILIES = [0]   # machine families that appear on the product pages, counted by main()
+def apply_extra_groups(loaded):
+    """content/extra_groups/<name>.json adds product groups (or a section page of a hub) from another family set to a page that
+    another generator writes — e.g. the NovoTech value-line cold saws on circular-cold-saws.html — so that generator need not change:
+        {"slug": page, "family_set": set, "groups": [{"id", "title", "lead", "brand", "families": [...], "after": group id}],
+         "subpages": [{"slug", "title", "image", "blurb", "nav_label", "families", "in_range": false, "after": slug}],
+         "intro_add": text, "points_add": [...], "faq_add": [...], "related_add": [...], "set": {field: value}}"""
+    d = os.path.join(ROOT, "content", "extra_groups")
+    if not os.path.isdir(d):
+        return
+    by_slug = {p["slug"]: p for p in loaded}
+    for fn in sorted(os.listdir(d)):
+        if not fn.endswith(".json"):
+            continue
+        x = json.load(open(os.path.join(d, fn), encoding="utf-8"))
+        p = by_slug.get(x["slug"])
+        if p is None:
+            raise SystemExit(f"content/extra_groups/{fn}: no page {x['slug']}")
+        for key, idkey in (("groups", "id"), ("subpages", "slug")):
+            for e in x.get(key, []):
+                e = dict(e)
+                after = e.pop("after", None)
+                e.setdefault("family_set", x.get("family_set"))
+                lst = p.setdefault(key, [])
+                pos = next((i + 1 for i, o in enumerate(lst) if o[idkey] == after), len(lst)) if after else len(lst)
+                if any(o[idkey] == e[idkey] for o in lst):
+                    raise SystemExit(f"content/extra_groups/{fn}: {key} {e[idkey]} is already on {x['slug']}")
+                lst.insert(pos, e)
+        if x.get("intro_add"):
+            p["intro"] = p["intro"].rstrip() + " " + x["intro_add"]
+        if x.get("points_add"):
+            p["hero_points"] = list(p.get("hero_points", [])) + x["points_add"]
+        if x.get("faq_add"):
+            faq = list(p.get("faq", []))
+            pos = len(faq) - 1 if faq and faq[-1]["q"].startswith("What voltage") else len(faq)     # the generic voltage answer stays last
+            p["faq"] = faq[:pos] + x["faq_add"] + faq[pos:]
+        if x.get("related_add"):
+            have = {r["href"] for r in p.get("related_pages", [])}
+            p["related_pages"] = list(p.get("related_pages", [])) + [r for r in x["related_add"] if r["href"] not in have]
+        p.update(x.get("set", {}))
+
+
 PDF_INDEX = {}    # files/x.pdf → {"label", "size", "pages": [{"href", "label"}]}, filled by main()
 
 
@@ -787,7 +846,8 @@ def prepare_site_page(page):
         page["brochure_pick"] = [dict(PDF_INDEX[f], title=names.get(f, "")) for f in pick if f in PDF_INDEX]
         page["brochure_count"] = len([e for e in CATALOG_DATA.get("brochures", []) if e["file"] in PDF_INDEX])
         art = json.load(open(os.path.join(ROOT, "content", "pages", "metal-fabricating-articles.json"), encoding="utf-8"))
-        page["guides"] = [dict(a, img=img(a["image"]) if a.get("image") else None) for a in art.get("articles", [])]
+        pick = [a for a in art.get("articles", []) if a.get("featured")] or art.get("articles", [])[:5]
+        page["guides"] = [dict(a, img=img(a["image"]) if a.get("image") else None) for a in pick]
     if page.get("effective"):
         page["effective_label"] = datetime.date.fromisoformat(page["effective"]).strftime("%B %-d, %Y")
     if page.get("articles"):
@@ -860,7 +920,7 @@ def render_page(page):
     page = dict(page)
     if page.get("subpages"):  # hub: resolve each sub-page's families and derive groups for the quote form / structured data
         for sp in page["subpages"]:
-            sp["families"] = [prepare_family(family(page, fid)) for fid in sp["families"]]
+            sp["families"] = [prepare_family(family(page, fid, sp.get("family_set"))) for fid in sp["families"]]
             sp["has_videos"] = any(f.get("videos") for f in sp["families"])
             sp["href"] = sp["slug"] + ".html"
         page["groups"] = [{"id": sp["slug"], "title": sp["title"], "families": sp["families"]} for sp in page["subpages"]]
@@ -870,12 +930,12 @@ def render_page(page):
                 ln["subpages"] = [by_slug[sp["slug"]] for sp in ln["subpages"]]
                 ln["range_rows"] = range_table(ln["subpages"])
                 ln["brand_info"] = site["brands"].get(ln["brand"], {})
-        page["range_rows"] = range_table(page["subpages"], page.get("range_pick"))
+        page["range_rows"] = range_table([sp for sp in page["subpages"] if sp.get("in_range", True)], page.get("range_pick"))
         if page.get("range_groups"):   # e.g. rebar hub: benders and cutters in separate tables
             for rg in page["range_groups"]:
                 rg["rows"] = [row for row in page["range_rows"] if row.get("kind") == rg["kind"]]
     for g in page.get("groups", []):
-        g["families"] = [prepare_family(family(page, f)) if isinstance(f, str) else f for f in g["families"]]
+        g["families"] = [prepare_family(family(page, f, g.get("family_set"))) if isinstance(f, str) else f for f in g["families"]]
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
         page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
     page["url"] = f"{site['domain']}/{page['slug']}" if page["slug"] != "index" else site["domain"] + "/"   # clean URLs: pages are served without .html
@@ -892,6 +952,11 @@ def render_page(page):
         art = re.sub(r'<figure class="guide-figure" data-img="([^"]+)"(?: data-alt="([^"]*)")?></figure>', fig, art)
         page["article_html"] = art
         page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
+        gid = "#" + (page.get("article_id") or "buying-guide")
+        if page.get("jump_links") and not any(j["href"] == gid for j in page["jump_links"]):   # the guide in the bar under the hero
+            jl = list(page["jump_links"])
+            jl.insert(next((i for i, j in enumerate(jl) if j["href"] == "#reques-a-quote"), len(jl)), {"href": gid, "label": "Buying guide"})
+            page["jump_links"] = jl
     is_site = page.get("template") in SITE_TEMPLATES
     if is_site:
         prepare_site_page(page)
@@ -1032,6 +1097,7 @@ def main():
     pages = []
     pdir = os.path.join(ROOT, "content", "pages")
     loaded = [json.load(open(os.path.join(pdir, fn), encoding="utf-8")) for fn in sorted(os.listdir(pdir)) if fn.endswith(".json") and not fn.startswith("_")]
+    apply_extra_groups(loaded)
     # every page of a hub's section gets links to the hub and to its sibling pages (cross-linking the benders / cutters / lines pages)
     for hub in [p for p in loaded if p.get("subpages")]:
         def member(sp):
@@ -1061,7 +1127,7 @@ def main():
         if p.get("template") in SITE_TEMPLATES:
             continue
         for g in p.get("groups", []):
-            shown |= {(p.get("family_set"), f) for f in g.get("families", []) if isinstance(f, str)}
+            shown |= {(g.get("family_set") or p.get("family_set"), f) for f in g.get("families", []) if isinstance(f, str)}
     SHOWN_FAMILIES[0] = len(shown)
     PDF_INDEX.update(build_pdf_index(loaded))
     for page in loaded:
@@ -1088,6 +1154,8 @@ def main():
     open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
     if STAGING:
         open(os.path.join(DIST, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
+    if MISSING_IMAGES:
+        print(f"PREVIEW ONLY: {len(MISSING_IMAGES)} images missing, logo shown instead: " + ", ".join(sorted(MISSING_IMAGES)[:12]) + " …")
     print("done", "(staging)" if STAGING else "")
 
 

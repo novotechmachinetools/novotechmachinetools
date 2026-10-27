@@ -1,10 +1,10 @@
 {
  "slug": "metal-fabricating-articles",
  "template": "articles.html",
- "title": "Metal Fabrication Articles & Buying Guides | NovoTech",
- "meta_description": "Buying guides and articles from NovoTech's technicians: band saws, plate rollers, ironworkers, press brake tooling and rebar benders and cutters.",
- "h1": "Articles and buying guides",
- "intro": "What we explain to customers before they buy — how the machines work, how capacity is rated, which options matter and which do not — written by NovoTech's sales engineers and technicians from years of installing machines in Canada.",
+ "title": "Metal Fabrication Buying Guides & Articles | NovoTech",
+ "meta_description": "43 buying guides from NovoTech's technicians: press brakes, lasers, shears, band saws, plate rollers, tube benders, ironworkers, presses, grinders, CNC machines, rebar and window machinery.",
+ "h1": "Buying guides and articles",
+ "intro": "What we explain to customers before they buy — how the machines work, how capacity is rated, which options matter and which do not — written by NovoTech's sales engineers and technicians from years of installing machines in Canada. Each guide sits at the bottom of its product page, next to the machines it describes.",
  "breadcrumb": [
   {
    "label": "Home",
@@ -16,39 +16,446 @@
  ],
  "articles": [
   {
-   "href": "band-saw.html#buying-guide",
-   "title": "Band saw buying guide",
-   "image": "bk-hero-auto-350ga",
-   "topic": "Sawing",
-   "text": "Horizontal and vertical, pivot and double-column, manual to fully automatic: how to choose a metal-cutting band saw, and the blade, coolant and feed details that decide how well it cuts."
-  },
-  {
-   "href": "plate-rollers.html#buying-guide",
-   "title": "Plate roller buying guide",
-   "image": "is-4rhms-3100-250",
-   "topic": "Rolling",
-   "text": "3-roll and 4-roll machines, initial-pinch and double-pinch, how capacity is rated, cone bending, crowning, controls and automation."
-  },
-  {
-   "href": "ironworker-machines.html#buying-guide",
-   "title": "Ironworker buying guide",
-   "image": "sh-hkm115",
-   "topic": "Punching and shearing",
-   "text": "Punching and shearing tonnage, throat depth, stations and tooling: how to size an ironworker for the work in your shop, and why not all tons are equal."
+   "href": "press-brake.html#buying-guide",
+   "title": "Press brake buying guide",
+   "image": "dn-xl-1",
+   "topic": "Bending and forming",
+   "group": "bending",
+   "text": "Air bending and the V-die, the tonnage formula with a quick chart, hydraulic, hybrid and electric drives, back gauge axes, crowning, tooling and the Ontario pre-start review.",
+   "featured": true
   },
   {
    "href": "press-brake-tooling-punch-and-die.html#tooling-guide",
    "title": "Press brake tooling guide",
    "image": "es-p-range",
-   "topic": "Bending",
-   "text": "Clamping styles, punch and die shapes, V-opening and tonnage, sectioned tools and horns: how to choose press brake punches and dies that fit your machine and your parts."
+   "group": "bending",
+   "text": "Clamping styles, punch and die shapes, V-opening and tonnage, sectioned tools and horns: how to choose press brake punches and dies that fit your machine and your parts.",
+   "topic": "Bending and forming"
+  },
+  {
+   "href": "panel-bender.html#buying-guide",
+   "title": "Panel bender buying guide",
+   "image": "dn-panel-1",
+   "topic": "Bending and forming",
+   "group": "bending",
+   "text": "How a panel bender folds four sides in one set-up, when it beats a press brake, how capacity is rated, and what automatic tool change and robot loading add.",
+   "featured": false
+  },
+  {
+   "href": "v-grooving-machine.html#buying-guide",
+   "title": "V-grooving machine buying guide",
+   "image": "vl-vg-h-1",
+   "topic": "Bending and forming",
+   "group": "bending",
+   "text": "Sharp corners in stainless and aluminum panels: why groove, horizontal or vertical machines, groove depth and angle, and how grooved panels are bent.",
+   "featured": false
+  },
+  {
+   "href": "folder-sheet-metal-brake.html#buying-guide",
+   "title": "Sheet metal brake buying guide",
+   "image": "tm-eb2500",
+   "topic": "Bending and forming",
+   "group": "bending",
+   "text": "Hand, box and pan, magnetic and hydraulic brakes compared, how capacity is rated in gauges of steel, stainless and aluminum, and folder or press brake.",
+   "featured": false
+  },
+  {
+   "href": "horizontal-press-brake.html#buying-guide",
+   "title": "Horizontal press brake buying guide",
+   "image": "tb-hp80",
+   "topic": "Bending and forming",
+   "group": "bending",
+   "text": "Bending, punching, shearing and straightening bar on one machine: sizing by flat bar and holes, the tools to order, and the NC recipes and back gauge.",
+   "featured": false
+  },
+  {
+   "href": "plate-rollers.html#buying-guide",
+   "title": "Plate roller buying guide",
+   "image": "is-4rhms-3100-250",
+   "group": "bending",
+   "featured": true,
+   "text": "3-roll and 4-roll machines, initial-pinch and double-pinch, how capacity is rated, cone bending, crowning, controls and automation.",
+   "topic": "Bending and forming"
+  },
+  {
+   "href": "angle-rolls.html#buying-guide",
+   "title": "Angle roll buying guide",
+   "image": "sh-hpk100",
+   "topic": "Bending and forming",
+   "group": "bending",
+   "text": "How three rolls bend sections into rings, why the section matters more than its size, twist and roll sets, and NC and spiral bending.",
+   "featured": false
+  },
+  {
+   "href": "band-saw.html#buying-guide",
+   "title": "Band saw buying guide",
+   "image": "bk-hero-auto-350ga",
+   "group": "cutting",
+   "featured": true,
+   "text": "Horizontal and vertical, pivot and double-column, manual to fully automatic: how to choose a metal-cutting band saw, and the blade, coolant and feed details that decide how well it cuts.",
+   "topic": "Cutting and sawing"
+  },
+  {
+   "href": "laser-cutting-machine.html#buying-guide",
+   "title": "Fiber laser cutting machine buying guide",
+   "image": "dn-gfl-3",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "Laser power and thickness at a glance, single or exchange table, oxygen, nitrogen or air assist, open or enclosed machines and the running costs.",
+   "featured": true
+  },
+  {
+   "href": "tube-laser-cutting-machine.html#buying-guide",
+   "title": "Tube laser buying guide",
+   "image": "dn-tube-2",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "What a tube laser replaces, how to size the chucks, bar length and power, two or three chucks and the tail, loading, bevels and floor space.",
+   "featured": false
+  },
+  {
+   "href": "cnc-plasma-table.html#buying-guide",
+   "title": "CNC plasma table buying guide",
+   "image": "tm-pc510",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "Plasma, laser or oxy-fuel, the source for your plate, piercing and consumables, torch height control, water or downdraft tables and pipe cutting.",
+   "featured": false
+  },
+  {
+   "href": "circular-cold-saws.html#buying-guide",
+   "title": "Cold saw buying guide",
+   "image": "is-sfc-350-vx",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "Cold saw, abrasive saw or band saw, HSS or carbide blades and tooth pitch, capacity on the miter, and manual, semi-automatic or automatic saws.",
+   "featured": false
+  },
+  {
+   "href": "band-saw-blades.html#buying-guide",
+   "title": "Band saw blade guide",
+   "image": "wk-marathon-m42",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "The five things that define a blade, choosing the pitch from the contact length, breaking in a new blade and the habits that make blades last.",
+   "featured": false
+  },
+  {
+   "href": "aluminum-and-pvc-upcut-saws.html#buying-guide",
+   "title": "Upcut saw buying guide",
+   "image": "pm-402",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "Upcut, double-head or top-down saw, the blade size for your largest profile, aluminum or PVC blades, feeds and cooling, and measuring conveyors.",
+   "featured": false
+  },
+  {
+   "href": "plate-beveler.html#buying-guide",
+   "title": "Plate beveller buying guide",
+   "image": "cv-chp12",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "Cold bevelling for weld preparation, shearing or milling bevellers, sizing by the bevel face, INV and REV machines, pipe and discs.",
+   "featured": false
+  },
+  {
+   "href": "circle-cutters-and-seamers.html#buying-guide",
+   "title": "Circle cutting machine buying guide",
+   "image": "is-idk-5",
+   "topic": "Cutting and sawing",
+   "group": "cutting",
+   "text": "How a circle shear cuts blanks and rings, choosing the diameter and thickness, clamping and drive, and cutting and flanging tank heads.",
+   "featured": false
+  },
+  {
+   "href": "ironworker-machines.html#buying-guide",
+   "title": "Ironworker buying guide",
+   "image": "sh-hkm115",
+   "group": "punching",
+   "featured": true,
+   "text": "Punching and shearing tonnage, throat depth, stations and tooling: how to size an ironworker for the work in your shop, and why not all tons are equal.",
+   "topic": "Punching, shearing and notching"
+  },
+  {
+   "href": "shear-cutting.html#buying-guide",
+   "title": "Metal shear buying guide",
+   "image": "sm-srgm",
+   "topic": "Punching, shearing and notching",
+   "group": "punching",
+   "text": "Which kind of shear, how capacity is rated in mild steel, stainless and aluminum, rake angle and blade gap, back gauges and sheet support.",
+   "featured": true
+  },
+  {
+   "href": "hydraulic-punching-machines.html#buying-guide",
+   "title": "Hydraulic punching machine buying guide",
+   "image": "sh-hpm115",
+   "topic": "Punching, shearing and notching",
+   "group": "punching",
+   "text": "The tonnage formula for round and shaped holes, the smallest hole you can punch, throat depth, die clearance and CNC tables.",
+   "featured": false
+  },
+  {
+   "href": "corner-notcher.html#buying-guide",
+   "title": "Corner notcher buying guide",
+   "image": "sh-hnm6v",
+   "topic": "Punching, shearing and notching",
+   "group": "punching",
+   "text": "What a corner notcher does, fixed 90° or variable angle, capacity in mild steel, stainless and aluminum, and getting the notch right.",
+   "featured": false
+  },
+  {
+   "href": "pipe-benders.html#buying-guide",
+   "title": "Tube and pipe bender buying guide",
+   "image": "is-sfb-38-cnc-a5",
+   "topic": "Tube, pipe and wire",
+   "group": "tube",
+   "text": "Tube or pipe, CLR, D of bend and wall factor, which bending method, when you need a mandrel, NC or CNC, and the tooling to order.",
+   "featured": false
+  },
+  {
+   "href": "tube-end-forming-machines.html#buying-guide",
+   "title": "Tube end forming buying guide",
+   "image": "wt-wecomatic-200",
+   "topic": "Tube, pipe and wire",
+   "group": "tube",
+   "text": "Expanding, reducing, beading and flaring, ram, inner/outer or rotary forming, sizing by tube and wall, tooling and change-over.",
+   "featured": false
+  },
+  {
+   "href": "wire-bending-machines.html#buying-guide",
+   "title": "CNC wire bender buying guide",
+   "image": "cs-wb10",
+   "topic": "Tube, pipe and wire",
+   "group": "tube",
+   "text": "From coil to finished part: wire size and strength, straightening and accuracy, 2D or 3D heads, programming and end-forming lines.",
+   "featured": false
+  },
+  {
+   "href": "pipe-notcher.html#buying-guide",
+   "title": "Tube notcher buying guide",
+   "image": "is-pn-17-90",
+   "topic": "Tube, pipe and wire",
+   "group": "tube",
+   "text": "Why a good cope makes a better weld, belt, hole-saw or end-mill notchers, size and angle range, belts and dust collection.",
+   "featured": false
+  },
+  {
+   "href": "bead-rollers.html#buying-guide",
+   "title": "Bead roller buying guide",
+   "image": "is-hibks-4",
+   "topic": "Sheet metal, HVAC and metal shaping",
+   "group": "sheet",
+   "text": "What bead rollers make, capacity and throat depth, hand-crank, motorized or hydraulic top rolls, roll sets and tips for clean beads.",
+   "featured": false
+  },
+  {
+   "href": "lock-former.html#buying-guide",
+   "title": "Lock former buying guide",
+   "image": "tm-pf16g",
+   "topic": "Sheet metal, HVAC and metal shaping",
+   "group": "sheet",
+   "text": "Pittsburgh locks, snap locks, seams and cleats, choosing the gauge range, material allowance, and the machines of a duct line.",
+   "featured": false
+  },
+  {
+   "href": "english-wheel.html#buying-guide",
+   "title": "Metal shaping machine buying guide",
+   "image": "tm-f1570",
+   "topic": "Sheet metal, HVAC and metal shaping",
+   "group": "sheet",
+   "text": "English wheel, planishing hammer, power hammer or shrinker-stretcher: what each does, throat and frame stiffness, anvils and dies.",
+   "featured": false
+  },
+  {
+   "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html#buying-guide",
+   "title": "Deburring machine buying guide",
+   "image": "gc-g135",
+   "topic": "Deburring, grinding and finishing",
+   "group": "finishing",
+   "text": "Why burrs and sharp edges matter for coating, belts and brushes, the right machine for laser, plasma and coated parts, and dust and wet machines.",
+   "featured": false
+  },
+  {
+   "href": "belt-grinder.html#buying-guide",
+   "title": "Belt grinder buying guide",
+   "image": "tm-s75h",
+   "topic": "Deburring, grinding and finishing",
+   "group": "finishing",
+   "text": "Belt width and motor power, belt speeds for steel, stainless and aluminum, abrasives and grits, and dust and safety.",
+   "featured": false
+  },
+  {
+   "href": "corner-grinding-machines.html#buying-guide",
+   "title": "Corner grinder buying guide",
+   "image": "gc-131",
+   "topic": "Deburring, grinding and finishing",
+   "group": "finishing",
+   "text": "Grinding the welded corners of boxes and doors: hand-fed or automatic, radius and box height, and abrasives for a finish that disappears.",
+   "featured": false
+  },
+  {
+   "href": "pipe-sanding-polishing-machines.html#buying-guide",
+   "title": "Pipe sander buying guide",
+   "image": "sh-bt114s",
+   "topic": "Deburring, grinding and finishing",
+   "group": "finishing",
+   "text": "Belt, orbital, centreless and large-pipe sanders, straight or bent tube, grits for a satin or mirror finish, and keeping stainless clean.",
+   "featured": false
+  },
+  {
+   "href": "laser-welding-machine.html#buying-guide",
+   "title": "Laser welding machine buying guide",
+   "image": "sf-hwm-1",
+   "topic": "Welding",
+   "group": "welding",
+   "text": "When a laser welder beats TIG and MIG, the power for your thickness, air-cooled or water-cooled welders, laser safety and robotic cells.",
+   "featured": false
+  },
+  {
+   "href": "welding-positioners.html#buying-guide",
+   "title": "Welding positioner buying guide",
+   "image": "tb-wp300",
+   "topic": "Welding",
+   "group": "welding",
+   "text": "What a positioner does for round welds, rating for weight and off-centre loads, the table speed formula, and fixtures and grounding.",
+   "featured": false
+  },
+  {
+   "href": "corner-welding-machines.html#buying-guide",
+   "title": "Corner welding machine buying guide",
+   "image": "gc-cws",
+   "topic": "Welding",
+   "group": "welding",
+   "text": "Welding the corners of bent boxes by machine: the copper blocks, part sizes, and TIG or plasma with the right power source.",
+   "featured": false
+  },
+  {
+   "href": "hydraulic-press.html#buying-guide",
+   "title": "Hydraulic press buying guide",
+   "image": "sh-dpm",
+   "topic": "Presses",
+   "group": "presses",
+   "text": "Sizing the tonnage for press fits, straightening and bending, H-frame, C-frame or column, working space, controls and safety.",
+   "featured": false
+  },
+  {
+   "href": "arbor-press.html#buying-guide",
+   "title": "Arbor and bench press buying guide",
+   "image": "tm-ap8",
+   "topic": "Presses",
+   "group": "presses",
+   "text": "Choosing an arbor press by force and space, ratchet or standard, bench presses for sheet-metal tooling, turret punches and orbital riveting.",
+   "featured": false
+  },
+  {
+   "href": "drill-press.html#buying-guide",
+   "title": "Drill press buying guide",
+   "image": "tm-t50e",
+   "topic": "Drilling, milling and CNC machining",
+   "group": "machining",
+   "text": "Choosing the capacity, gear-head, belt or inverter drive, the rpm formula for steel, stainless and aluminum, tapping and work holding.",
+   "featured": false
+  },
+  {
+   "href": "milling-machine.html#buying-guide",
+   "title": "Milling machine buying guide",
+   "image": "tm-x6332",
+   "topic": "Drilling, milling and CNC machining",
+   "group": "machining",
+   "text": "Turret, universal or drill-mill, table and travels, ISO40 or ISO50, power feed and DRO, and the tooling to budget for.",
+   "featured": false
+  },
+  {
+   "href": "cnc-machine-tools.html#buying-guide",
+   "title": "CNC machine tool buying guide",
+   "image": "tm-vmc10562",
+   "topic": "Drilling, milling and CNC machining",
+   "group": "machining",
+   "text": "CNC lathe, vertical machining centre or boring mill, sizing the travels, BT40 or BT50, choosing the control, options and installation.",
+   "featured": false
+  },
+  {
+   "href": "rebar-bender-and-cutter.html#buying-guide",
+   "title": "Rebar bender and cutter buying guide",
+   "image": "b-45x1",
+   "topic": "Rebar",
+   "group": "rebar",
+   "text": "Canadian bar sizes and grades in one table, reading the 45 / 65 / 85 kg/mm² capacity columns, bend diameters and pins, and output per shift.",
+   "featured": false
   },
   {
    "href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
    "title": "The benefits of using a rebar bender and cutter in construction",
    "image": "b-45x1",
-   "topic": "Rebar",
-   "text": "Why contractors and rebar shops bend and cut on site and in the yard with machines instead of by hand: speed, accuracy, safety and cost."
+   "group": "rebar",
+   "text": "Why contractors and rebar shops bend and cut on site and in the yard with machines instead of by hand: speed, accuracy, safety and cost.",
+   "topic": "Rebar"
+  },
+  {
+   "href": "pvc-aluminum-window-machines.html#buying-guide",
+   "title": "Window and door machinery buying guide",
+   "image": "pm-100gp",
+   "topic": "Window and door machinery",
+   "group": "windows",
+   "text": "The steps of a window shop and the machine for each, sizing the line by windows a shift, PVC or aluminum, and air, power and layout.",
+   "featured": false
+  }
+ ],
+ "article_groups": [
+  {
+   "id": "bending",
+   "title": "Bending and forming",
+   "count": 8
+  },
+  {
+   "id": "cutting",
+   "title": "Cutting and sawing",
+   "count": 9
+  },
+  {
+   "id": "punching",
+   "title": "Punching, shearing and notching",
+   "count": 4
+  },
+  {
+   "id": "tube",
+   "title": "Tube, pipe and wire",
+   "count": 4
+  },
+  {
+   "id": "sheet",
+   "title": "Sheet metal, HVAC and metal shaping",
+   "count": 3
+  },
+  {
+   "id": "finishing",
+   "title": "Deburring, grinding and finishing",
+   "count": 4
+  },
+  {
+   "id": "welding",
+   "title": "Welding",
+   "count": 3
+  },
+  {
+   "id": "presses",
+   "title": "Presses",
+   "count": 2
+  },
+  {
+   "id": "machining",
+   "title": "Drilling, milling and CNC machining",
+   "count": 3
+  },
+  {
+   "id": "rebar",
+   "title": "Rebar",
+   "count": 2
+  },
+  {
+   "id": "windows",
+   "title": "Window and door machinery",
+   "count": 1
   }
  ],
  "quote": {

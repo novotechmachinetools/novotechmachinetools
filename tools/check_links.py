@@ -13,11 +13,9 @@ import sys
 from urllib.parse import unquote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIST = os.path.join(ROOT, "dist")
+DIST = os.path.join(ROOT, os.environ.get("CHECK_DIST", "dist"))
 OLD_SITE = {
     "plate-roller-bender",
-    "folder-sheet-metal-brake",
-    "lock-former",
 }
 
 

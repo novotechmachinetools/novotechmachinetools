@@ -7,6 +7,8 @@ content/catalog.json: the product categories of the main menu in groups, with a 
 import json
 import os
 
+import guides
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = json.load(open(os.path.join(ROOT, "content", "site.json"), encoding="utf-8"))
 HOME = {"label": "Home", "href": "index.html"}
@@ -16,7 +18,7 @@ BLURBS = {
     "press-brake": "CNC hydraulic, hybrid and electric press brakes, 22 to 1,323 US tons — Dener premium and NovoTech value lines.",
     "panel-bender": "CNC panel benders that bend all four sides of a panel without tool changes, 47″ to 165″ bend width.",
     "v-grooving-machine": "CNC V-grooving machines for sharp architectural bends — horizontal to 20 ft, vertical to 1/4″ plate.",
-    "folder-sheet-metal-brake": "Manual and hydraulic roofing brakes and box-and-pan brakes for flashing, siding and trim.",
+    "folder-sheet-metal-brake": "Magnetic brakes, box and pan brakes, hand brakes, hydraulic and electric folders, roofing brakes and 3-in-1 machines.",
     "horizontal-press-brake": "NC hydraulic horizontal presses for bending, straightening and punching, 11 to 165 US tons.",
     "press-brake-tooling-punch-and-die": "EUROSTAMP punches, dies, holders and adapters for every clamping style, made in Italy.",
     "laser-cutting-machine": "Fiber laser cutting machines for sheet and plate, 4 × 4 ft to 10 × 164 ft beds, 1.5 to 80 kW.",
@@ -24,20 +26,20 @@ BLURBS = {
     "laser-welding-machine": "Handheld laser welders from 0.8 kW, robotic laser welding cells to 20 kW, and laser cladding.",
     "shear-cutting": "Sheet metal shears, mechanical guillotines and hydraulic plate shears, 16 ga to 1-9/16″.",
     "ironworker-machines": "Hydraulic ironworkers and punching machines that punch, shear, notch and bend in one machine.",
-    "corner-notcher": "Hydraulic corner notchers for the corners of sheet metal boxes, cabinets and panels.",
+    "corner-notcher": "Hydraulic, pneumatic and manual corner notchers for the corners of boxes, cabinets and panels.",
     "plate-beveler": "Cevisa portable cold bevellers for weld preparation on plate and pipe, 1/8″ to 4-3/4″ thick.",
     "band-saw": "Manual, semi-automatic and automatic metal-cutting band saws — Bekamak premium and NovoTech value lines.",
     "band-saw-blades": "WIKUS bimetal M42 and carbide-tipped band saw blades, welded to length for your saw.",
-    "circular-cold-saws": "Circular cold saws from manual to CNC carbide — ISITAN, CSM and Bekamak.",
+    "circular-cold-saws": "Circular cold saws from manual to CNC carbide — ISITAN, CSM, Bekamak and NovoTech value line — and abrasive saws.",
     "aluminum-and-pvc-upcut-saws": "Automatic upcut, double-head, glazing bead and miter saws for aluminum and PVC extrusions.",
-    "plate-rollers": "Hydraulic 4-roll and 3-roll plate rollers and motorized slip rolls, from light sheet to heavy plate.",
-    "angle-rolls": "Angle rolls, tube rollers and section benders for angle, flat bar, pipe and profiles.",
-    "hydraulic-press": "H-frame, T-slot and straightening shop presses, 33 to 441 US tons, and production hydraulic presses.",
+    "plate-rollers": "Hydraulic 4-roll and 3-roll plate rollers, motorized plate rollers and slip rolls, from 22 ga sheet to heavy plate.",
+    "angle-rolls": "Angle rolls, profile benders, ring rollers and tube rollers for angle, flat bar, pipe and profiles.",
+    "hydraulic-press": "Shop presses from 10 tons, H-frame, C-frame and four-column hydraulic presses to 551 US tons, and production presses.",
     "bead-rollers": "Bead rollers, beading machines and a lock seamer for HVAC duct and sheet metal work.",
-    "lock-former": "Pittsburgh lock formers and seam closing machines for HVAC ductwork.",
+    "lock-former": "Pittsburgh lock formers, roll formers, seam closer, cleat benders and round duct machines for HVAC ductwork.",
     "circle-cutters-and-seamers": "Circle cutting and flanging machines for tank ends, dished heads and duct fittings.",
     "pipe-benders": "CNC, NC, all-electric and hydraulic pipe and tube benders, Ø15/32″ to Ø8-5/8″.",
-    "pipe-notcher": "Tube notchers and pipe notching machines for the fit-up of tube frames, railings and roll cages.",
+    "pipe-notcher": "Tube notchers, hole-saw and end-mill notchers and belt tube-end grinders for frames, railings and roll cages.",
     "tube-end-forming-machines": "Wecotech tube end forming machines from Switzerland — expanding, reducing, beading and flanging.",
     "wire-bending-machines": "CSM CNC 3D wire benders fed from the coil, Ø5/32″ to Ø9/16″ wire.",
     "welding-positioners": "Tilting welding positioners for round welds, 220 to 661 lb.",
@@ -47,22 +49,31 @@ BLURBS = {
     "pipe-sanding-polishing-machines": "Automatic, orbital and centreless pipe sanders and polishers, Ø3/16″ to Ø15-3/4″.",
     "rebar-bender-and-cutter": "GMS rebar benders, stirrup benders, rebar cutters and automatic processing lines, made in Turkey.",
     "pvc-aluminum-window-machines": "Plastmak aluminum and PVC window and door machinery — welding, cleaning, CNC machining, assembly and complete lines.",
+    "belt-grinder": "Metal belt grinders with 2 – 8″ belts, disc sanders, bench grinders, chamfering machines and dust collectors.",
+    "drill-press": "Gear-head, column and variable-speed drill presses, 1/2″ to 2″ in steel, with power feed and tapping.",
+    "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines and keyseaters.",
+    "cnc-machine-tools": "A slant-bed CNC lathe, BT40 vertical machining centres and BT50 CNC boring and milling machines.",
+    "cnc-plasma-table": "CNC plasma tables 2 × 2 ft to 5 × 10 ft and CNC plasma pipe cutters for Ø2 – 11-3/4″ pipe.",
+    "english-wheel": "English wheels, planishing hammers, electric power hammers, shrinker-stretchers and air forging hammers.",
+    "arbor-press": "Arbor presses 1/2 – 8 tons, bench presses with sheet-metal tooling, turret punch presses and orbital riveters.",
 }
 GROUPS = [
-    ("bending", "Sheet metal bending", "Press brakes, panel benders and the tooling that goes in them.",
+    ("bending", "Sheet metal bending", "Press brakes, panel benders, sheet metal brakes and the tooling that goes in them.",
      ["press-brake", "panel-bender", "v-grooving-machine", "folder-sheet-metal-brake", "horizontal-press-brake", "press-brake-tooling-punch-and-die"]),
     ("laser", "Laser cutting and laser welding", "Fiber lasers for sheet, plate and tube, and laser welding from handheld to robotic.",
      ["laser-cutting-machine", "tube-laser-cutting-machine", "laser-welding-machine"]),
-    ("cutting", "Shearing, punching and notching", "Shears, ironworkers, notchers and plate bevellers.",
-     ["shear-cutting", "ironworker-machines", "corner-notcher", "plate-beveler"]),
+    ("cutting", "Shearing, punching, plasma cutting and notching", "Shears, ironworkers, CNC plasma tables, notchers and plate bevellers.",
+     ["shear-cutting", "ironworker-machines", "cnc-plasma-table", "corner-notcher", "plate-beveler"]),
     ("sawing", "Sawing", "Band saws, cold saws and the blades that go in them.",
      ["band-saw", "band-saw-blades", "circular-cold-saws", "aluminum-and-pvc-upcut-saws"]),
-    ("rolling", "Rolling, pressing and forming", "Plate and section rolling, hydraulic presses and the HVAC forming machines.",
-     ["plate-rollers", "angle-rolls", "hydraulic-press", "bead-rollers", "lock-former", "circle-cutters-and-seamers"]),
+    ("rolling", "Rolling, pressing and forming", "Plate and section rolling, presses, HVAC forming machines and metal shaping.",
+     ["plate-rollers", "angle-rolls", "hydraulic-press", "arbor-press", "bead-rollers", "lock-former", "circle-cutters-and-seamers", "english-wheel"]),
     ("tube", "Tube and pipe", "Bending, notching and end forming of tube and pipe, and CNC wire bending.",
      ["pipe-benders", "pipe-notcher", "tube-end-forming-machines", "wire-bending-machines"]),
-    ("finishing", "Deburring, grinding and finishing", "Deburring and edge rounding of cut parts, corner grinding and pipe polishing.",
-     ["sheet-metal-plate-deburring-edge-rounding-finishing-grinding", "corner-grinding-machines", "pipe-sanding-polishing-machines"]),
+    ("finishing", "Deburring, grinding and finishing", "Deburring and edge rounding, belt grinders and sanders, corner grinding and pipe polishing.",
+     ["sheet-metal-plate-deburring-edge-rounding-finishing-grinding", "belt-grinder", "corner-grinding-machines", "pipe-sanding-polishing-machines"]),
+    ("machining", "Drilling, milling and CNC machining", "Drill presses, milling machines, CNC lathes and machining centres.",
+     ["drill-press", "milling-machine", "cnc-machine-tools"]),
     ("welding", "Welding", "Positioners and corner welders that take the hand work out of repeat welds.",
      ["welding-positioners", "corner-welding-machines"]),
     ("rebar", "Rebar machinery", "Benders, cutters and processing lines for reinforcing steel.", ["rebar-bender-and-cutter"]),
@@ -283,32 +294,57 @@ def main():
     })
 
     # ---------------------------------------------------------------------------------------------- articles
+    # the long guides kept from the old site, then one buying guide per product category (tools/guides.py), in topic sections
+    older = [
+        {"href": "band-saw.html#buying-guide", "title": "Band saw buying guide", "image": "bk-hero-auto-350ga", "group": "cutting",
+         "featured": True,
+         "text": "Horizontal and vertical, pivot and double-column, manual to fully automatic: how to choose a metal-cutting band saw, "
+                 "and the blade, coolant and feed details that decide how well it cuts."},
+        {"href": "plate-rollers.html#buying-guide", "title": "Plate roller buying guide", "image": "is-4rhms-3100-250", "group": "bending",
+         "featured": True,
+         "text": "3-roll and 4-roll machines, initial-pinch and double-pinch, how capacity is rated, cone bending, crowning, controls "
+                 "and automation."},
+        {"href": "ironworker-machines.html#buying-guide", "title": "Ironworker buying guide", "image": "sh-hkm115", "group": "punching",
+         "featured": True,
+         "text": "Punching and shearing tonnage, throat depth, stations and tooling: how to size an ironworker for the work in your "
+                 "shop, and why not all tons are equal."},
+        {"href": "press-brake-tooling-punch-and-die.html#tooling-guide", "title": "Press brake tooling guide", "image": "es-p-range",
+         "group": "bending", "text": "Clamping styles, punch and die shapes, V-opening and tonnage, sectioned tools and horns: how to "
+                                     "choose press brake punches and dies that fit your machine and your parts."},
+        {"href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
+         "title": "The benefits of using a rebar bender and cutter in construction", "image": "b-45x1", "group": "rebar",
+         "text": "Why contractors and rebar shops bend and cut on site and in the yard with machines instead of by hand: speed, "
+                 "accuracy, safety and cost."},
+    ]
+    topic = dict(guides.TOPICS)
+    place = {"band-saw.html#buying-guide": None,                                       # first in its section
+             "plate-rollers.html#buying-guide": "horizontal-press-brake.html#buying-guide",
+             "ironworker-machines.html#buying-guide": None,
+             "press-brake-tooling-punch-and-die.html#tooling-guide": "press-brake.html#buying-guide",
+             "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html": "rebar-bender-and-cutter.html#buying-guide"}
+    allcards = guides.cards()
+    for a in older:
+        a["topic"] = topic[a["group"]]
+        after = place.get(a["href"])
+        if after is None:
+            first = next(i for i, c in enumerate(allcards) if c["group"] == a["group"])
+            allcards.insert(first, a)
+        else:
+            allcards.insert(next(i for i, c in enumerate(allcards) if c["href"] == after) + 1, a)
+    article_groups = [{"id": gid, "title": title, "articles": [a for a in allcards if a["group"] == gid]} for gid, title in guides.TOPICS]
+    article_groups = [g for g in article_groups if g["articles"]]
     write("metal-fabricating-articles", {
         "template": "articles.html",
-        "title": "Metal Fabrication Articles & Buying Guides | NovoTech",
-        "meta_description": "Buying guides and articles from NovoTech's technicians: band saws, plate rollers, ironworkers, press brake tooling and rebar benders and cutters.",
-        "h1": "Articles and buying guides",
+        "title": "Metal Fabrication Buying Guides & Articles | NovoTech",
+        "meta_description": f"{len(allcards)} buying guides from NovoTech's technicians: press brakes, lasers, shears, band saws, plate "
+                            "rollers, tube benders, ironworkers, presses, grinders, CNC machines, rebar and window machinery.",
+        "h1": "Buying guides and articles",
         "intro": "What we explain to customers before they buy — how the machines work, how capacity is rated, which options matter and "
-                 "which do not — written by NovoTech's sales engineers and technicians from years of installing machines in Canada.",
+                 "which do not — written by NovoTech's sales engineers and technicians from years of installing machines in Canada. "
+                 "Each guide sits at the bottom of its product page, next to the machines it describes.",
         "breadcrumb": [HOME, {"label": "Articles"}],
-        "articles": [
-            {"href": "band-saw.html#buying-guide", "title": "Band saw buying guide", "image": "bk-hero-auto-350ga", "topic": "Sawing",
-             "text": "Horizontal and vertical, pivot and double-column, manual to fully automatic: how to choose a metal-cutting band saw, "
-                     "and the blade, coolant and feed details that decide how well it cuts."},
-            {"href": "plate-rollers.html#buying-guide", "title": "Plate roller buying guide", "image": "is-4rhms-3100-250", "topic": "Rolling",
-             "text": "3-roll and 4-roll machines, initial-pinch and double-pinch, how capacity is rated, cone bending, crowning, controls "
-                     "and automation."},
-            {"href": "ironworker-machines.html#buying-guide", "title": "Ironworker buying guide", "image": "sh-hkm115", "topic": "Punching and shearing",
-             "text": "Punching and shearing tonnage, throat depth, stations and tooling: how to size an ironworker for the work in your "
-                     "shop, and why not all tons are equal."},
-            {"href": "press-brake-tooling-punch-and-die.html#tooling-guide", "title": "Press brake tooling guide", "image": "es-p-range",
-             "topic": "Bending", "text": "Clamping styles, punch and die shapes, V-opening and tonnage, sectioned tools and horns: how to "
-                                         "choose press brake punches and dies that fit your machine and your parts."},
-            {"href": "the-benefits-of-using-a-rebar-bender-and-cutter-in-construction.html",
-             "title": "The benefits of using a rebar bender and cutter in construction", "image": "b-45x1", "topic": "Rebar",
-             "text": "Why contractors and rebar shops bend and cut on site and in the yard with machines instead of by hand: speed, "
-                     "accuracy, safety and cost."},
-        ],
+        "articles": [a for g in article_groups for a in g["articles"]],
+        "article_groups": [{"id": g["id"], "title": g["title"], "count": len(g["articles"])} for g in article_groups],
         "quote": {"intro": "Have a question the guides do not answer? Tell us about your parts and we will recommend the machine."},
     })
 
