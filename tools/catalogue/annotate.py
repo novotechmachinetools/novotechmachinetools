@@ -570,6 +570,11 @@ def annotate_page(page, codes=frozenset(), skip_rects=(), ocr=False, report=None
         stacked = (pre.strip() + " " if pre else "") + inch(v)
         inline = f"({inch(v)})"
         res = PL.place(cv, r, (inline, stacked), others(r))
+        if not res:                                       # a number on a tool body, its dimension line just under it:
+            res = PL.place(cv, r, (inline, stacked), others(r), order=["below-far"])     # a little lower down
+        if not res:                                       # last: on a small white patch over the grid or the tool body
+            res = PL.place(cv, r, (inline, stacked), others(r), order=["below", "above", "after", "before", "below-far"],
+                           stages=[("force", 0.62), ("force", 0.52), ("force", 0.44)])
         if res:
             n["dim"] += 1
         else:

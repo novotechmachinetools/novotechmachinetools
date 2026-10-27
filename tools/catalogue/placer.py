@@ -143,6 +143,8 @@ class Canvas:
             m = self.ink
         elif mode == "light":
             m = self.dark | self.text
+        elif mode == "force":
+            m = self.text                              # anything but text: a white patch goes under the value
         else:
             m = self.hard
         return not (m[Y0:Y0 + h, X0:X0 + w] & loc).any()
@@ -354,7 +356,7 @@ def place(cv, label, txt, others, order=None, stages=STAGES, color=None, weight=
                 if not _reads_as_own(poly, own, others, spot in ("after", "before", "after>", "before<"), label, band):
                     continue
                 if not dry:
-                    if mode == "knock":
+                    if mode in ("knock", "force"):
                         patch = poly.buffer(0.35, join_style=2)
                         sh = cv.page.new_shape()
                         sh.draw_polyline([fitz.Point(x, y) for x, y in patch.exterior.coords])
