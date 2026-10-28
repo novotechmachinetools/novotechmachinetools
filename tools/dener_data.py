@@ -467,7 +467,7 @@ LASER_FAMILIES = [
          name="Smart closed-type fiber lasers with double table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
          short="Smart closed-type lasers",
          models_label="Smart 3015 – 12526 · 6 table sizes · 3 – 40 kW",
-         summary="The Smart series is the value sheet laser from the same factory: a fully enclosed cabin with laser-safe glass, a double "
+         summary="The Smart series is the economy sheet laser from the same Turkish factory: a fully enclosed cabin with laser-safe glass, a double "
                  "exchange table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting "
                  "heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting "
                  "area, control and remote handset.",

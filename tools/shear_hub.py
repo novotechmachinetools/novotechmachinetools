@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""The shear hub (shear-cutting.html, hub.html template): four product pages — Dener hydraulic shears (premium), NovoTech
-mechanical shears (premium, Saymak-built), NovoTech hydraulic shears (value, QC12K / Q11K) and NovoTech sheet metal shears
-(value, TTMC-built) — introduced separately with their family cards, plus the whole range in one capacity table.
+"""The shear hub (shear-cutting.html, hub.html template): a short page that sends the buyer to the right kind of shear —
+hydraulic shears, mechanical guillotine shears or sheet metal shears (tools/shear_nav.py) — with the three compared, the
+whole range in one capacity table and the questions we get asked.
 
-The hub reads the families the four generators wrote (content/families/shears.json, value-sheet.json, ttmc.json) into its
-own set content/families/all-shears.json, so run it AFTER tools/saymak_pages.py, tools/dener_pages.py, tools/vl_sheet_pages.py
-and tools/ttmc_pages.py:
+The hub reads the families the four supplier generators wrote (content/families/shears.json, value-sheet.json, ttmc.json)
+into its own set content/families/all-shears.json, so run it AFTER tools/saymak_pages.py, tools/dener_pages.py,
+tools/vl_sheet_pages.py and tools/ttmc_pages.py, and BEFORE tools/shear_types.py (the three pages):
 
-    python3 tools/shear_hub.py
+    python3 tools/shear_hub.py && python3 tools/shear_types.py
 """
 import json
 import os
@@ -18,36 +18,35 @@ import shear_nav as SN
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "all-shears"
 
-# (family set, page slug, family ids in display order)
-SOURCES = [("shears", "dener-shears", ["dn-bs", "dn-das"]),
-           ("shears", "novotech-mechanical-shears", ["nt-shear-srgm-h", "nt-shear-srgm", "nt-shear-srgm-hfr", "nt-shear-srgm-fr", "nt-shear-srgm-hcl", "nt-shear-srgm-cl"]),
-           ("value-sheet", "hydraulic-shearing-machine", ["vl-qc12k", "vl-q11k"]),
-           ("ttmc", "sheet-metal-shears", ["tt-ps", "tt-hq01", "tt-bq01", "tt-ths", "tt-hq11", "tt-q11", "tt-q11nc", "tt-q11-mech", "tt-ps1220"])]
+# (family set, page slug, family ids in display order) — from the page map in shear_nav
+SOURCES = SN.family_sources()
 
 HUB_PAGE = dict(
-    title="Metal Shear Machines, 16 ga to 1-9/16″ Plate | NovoTech",
-    meta="Every metal shear sold by NovoTech in Canada: Dener hydraulic shears, NovoTech mechanical shears, value-line hydraulic plate shears and sheet metal shears.",
-    h1="Metal shear machines — sheet metal shears, mechanical guillotines and hydraulic plate shears, 16 ga to 1-9/16″",
+    title="Metal Shears for Sale in Canada — Hydraulic, Mechanical & Sheet Metal Shears, 20 ga to 1-9/16″ | NovoTech",
+    meta="Every metal shear NovoTech sells in Canada, by kind: hydraulic swing beam and guillotine plate shears to 1-9/16″, direct-gear and flywheel mechanical shears to 3/8″, and sheet metal shears for the HVAC and signage shop — the three kinds compared and every model in one table.",
+    h1="Metal shears — hydraulic, mechanical and sheet metal shears, 20 ga to 1-9/16″",
     intro="A metal shear (sheet metal shearing machine, guillotine shear, shear cutter) cuts plate and sheet to size in one stroke between a "
           "fixed bottom blade and a top blade on the moving beam — the first machine in every sheet-metal, HVAC, signage and fabrication shop, "
-          "before the press brake. NovoTech sells four lines of shears in Canada, each on its own page: the Dener hydraulic shears — the premium "
-          "plate shears made in Turkey, BS / BSY swing beam to 5/8″ and the DAS CNC guillotine to 3/4″ × 20 ft; NovoTech's premium-line "
-          "mechanical shears — direct-gear SRGM guillotines, 1/8″ and 1/4″ to 13.8 ft, built in Turkey; NovoTech's value-line hydraulic shears "
-          "— QC12K swing beam and Q11K guillotine from 5/32″ to 1-9/16″ and 26 ft, built in China with Estun controls; and NovoTech's value-line "
-          "sheet metal shears — pneumatic, light hydraulic, electric and flywheel mechanical shears from 16 ga to 3/8″ for the sheet-metal "
-          "shop, with motorized bench shears and a coil slitting and cut-to-length machine. Below, each line in brief and every model in one table of capacity, length, strokes, motor and weight; every machine comes "
-          "with a CSA-approved panel, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
-    points=["Dener premium line: BS / BSY hydraulic swing beam 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotine with variable angle 1/4″ – 3/4″ × 10 – 20 ft",
-            "NovoTech premium line: SRGM direct-gear mechanical shears 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min, return-to-sender versions",
-            "NovoTech value line: QC12K / Q11K hydraulic plate shears 5/32″ – 1-9/16″ × 8 – 26 ft; sheet metal shears 20 ga – 3/8″ × 26 – 120″ and a 48″ coil slitter"],
-    hero="sm-srgm", minis=["dn-das-1", "vl-qc12k-1"],
+          "before the press brake. NovoTech sells three kinds in Canada, each on its own page: hydraulic shears — swing beam and variable-rake "
+          "guillotine plate shears from 12 ga to 1-9/16″ and 26 ft, in a premium line made in Turkey and a value line built to our "
+          "specification; mechanical guillotine shears — direct-gear SRGM machines for 1/8″ and 1/4″ at 31 to 35 strokes a minute and flywheel "
+          "shears to 3/8″, with no hydraulics at all; and sheet metal shears — pneumatic, electric and bench shears and a coil slitter for the "
+          "sheet-metal shop. Below, the three kinds compared, every model in one table of capacity, length, strokes, motor and weight, and the "
+          "questions we get asked; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts from "
+          "Mississauga, ON, Canada.",
+    points=["Hydraulic: swing beam 12 ga – 3/4″ × 4 – 20 ft and guillotine 1/4″ – 1-9/16″ × 8 – 26 ft; premium BS / BSY and DAS CNC, value QC12K / Q11K",
+            "Mechanical: SRGM direct-gear guillotines 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min; flywheel shears to 3/8″",
+            "Sheet metal: pneumatic 16 ga × 52″, electric 14 ga – 5/32″ × 49 – 100″, bench shears, 48″ coil slitting and cut-to-length machine"],
+    hero="sm-srgm", minis=["dn-das-1", "tt-q11a"],
     range_cols=["Capacity (mild steel)", "Shearing length", "Strokes / min", "Motor", "Weight"],
-    range_lead="Every shear model NovoTech sells, in one table: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification table on the line's page.",
-    range_caption="Metal shears supplied by NovoTech — Dener, NovoTech premium line and NovoTech value line",
+    range_lead="Every shear model NovoTech sells, in one table: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification table on the hydraulic, mechanical or sheet metal shear page.",
+    range_caption="Metal shears supplied by NovoTech — hydraulic, mechanical and sheet metal shears, premium and value lines",
     range_note="Capacities are the manufacturers' ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel. "
                "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208, 240 and 480 V on request.",
-    faq=[{"q": "Which line of shear should I buy?",
-          "a": "By the material and the hours. For sheet to 1/4″ in a sheet-metal, HVAC or signage shop, the NovoTech sheet metal shears are the lowest-priced powered machines — pneumatic, hydraulic or electric, 39″ to 120″ — and the premium SRGM mechanical shears are the step up for a shop that shears all day: direct-gear drive, 31 – 35 strokes a minute, NC back gauge and photocell guard as standard. For plate from 5/32″ to 1-9/16″ the hydraulic shears take over: NovoTech's value-line QC12K swing beam and Q11K guillotine in the widest range of sizes, or the Dener BS and DAS — the premium plate shears, Turkish-built with the ESA CNC and Dener Canada parts in Mississauga, ON, Canada. All four lines are installed and supported by the same NovoTech technicians; we quote across lines so you can compare."},
+    faq=[{"q": "Hydraulic, mechanical or sheet metal shear — which should I buy?",
+          "a": "By the material and the hours. For sheet to 14 ga in a sheet-metal, HVAC or signage shop, the sheet metal shears are the lowest-priced powered machines — pneumatic, electric or bench, 26″ to 100″. For 1/8″ and 1/4″ all day, a mechanical guillotine shear is the faster and simpler machine: direct-gear drive, 31 – 35 strokes a minute, no hydraulics, with return-to-sender and cut-to-length versions. From 1/4″ plate up — 3/8″, 1/2″, to 1-9/16″ over 20 and 26 ft — the hydraulic shears are the machines, swing beam for the everyday plate shear and a variable-rake guillotine for production and thick plate; each comes in a premium and a value line on the same page. Every kind is installed and supported by the same NovoTech technicians."},
+         {"q": "Premium line or value line?",
+          "a": "The premium hydraulic shears (Dener BS / BSY and DAS CNC) and mechanical shears (SRGM) are built in Turkey on the heaviest frames with European hydraulics, motors and controls and parts in Mississauga, ON, Canada — for two shifts a day and the tightest cut. NovoTech's value line — the QC12K / Q11K hydraulic shears with Estun controls and the sheet metal shears — is built in China to our specification at about two-thirds of the price, the right buy for a job shop. Both lines are sections on the hydraulic shear page, so the comparison is side by side."},
          {"q": "Mechanical or hydraulic shear — which is better?",
           "a": "For sheet to 1/4″ a mechanical shear is the faster and simpler machine: 30 – 55 strokes a minute from a motor and gearbox or flywheel, no hydraulic power pack, no oil to heat up, no valves or seals to service, and the same cut quality on the first and the thousandth stroke. Hydraulic shears earn their price from 3/8″ plate upwards, where the beam needs tonnage rather than speed — and in the light sizes a small hydraulic shear is the quietest, lowest-priced way to cut 14 ga to 5/32″ a few times an hour."},
          {"q": "Swing beam or guillotine?",
@@ -70,6 +69,22 @@ HUB_PAGE = dict(
     related_title="More sheet-metal cutting and forming machinery from NovoTech",
 )
 
+# the three kinds side by side, above the range table (hub.html renders page.compare)
+COMPARE = {
+    "title": "Which kind of shear?",
+    "lead": "The three kinds NovoTech sells, side by side. Thickness, length and hours a day decide; the pages list every model of each kind, premium and value lines together.",
+    "cols": ["", "Hydraulic shears", "Mechanical guillotine shears", "Sheet metal shears"],
+    "rows": [
+        ["Cuts", "Plate and sheet, 12 ga to 1-9/16″", "Sheet and light plate, 20 ga to 3/8″", "Sheet, 20 to 14 ga"],
+        ["Length", "4 – 26 ft", "3.6 – 13.8 ft", "26 – 100″ (48″ coil slitter)"],
+        ["Drive", "Hydraulic cylinders; swing beam or variable-rake guillotine", "Motor and gearbox (direct gear) or flywheel and clutch", "Pneumatic cylinder, electric motor or hand lever"],
+        ["Speed", "8 – 22 strokes/min", "31 – 55 strokes/min", "to 25 strokes/min"],
+        ["Strengths", "Tonnage for plate, variable rake, CNC gauges", "No hydraulics, fastest cycle, return-to-sender, coil lines", "Lowest price, shop air or single phase, small footprint"],
+        ["Typical buyer", "Steel fabricators, plate shops, production", "Sheet-metal production, HVAC plants, coil processors", "HVAC, signage, roofing, repair and small shops"],
+        ["Page", {"href": "hydraulic-shearing-machine.html", "label": "Hydraulic shears"}, {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}],
+    ],
+}
+
 
 def build():
     fams = []
@@ -78,6 +93,7 @@ def build():
         for fid in ids:
             f = dict(fs[fid])
             f["page"] = slug
+            f["group"] = SN.group_of(fid)      # the section of the type page it sits in
             fams.append(f)
     write_families(SET, fams)
     pdfs, seen = [], set()
@@ -89,15 +105,16 @@ def build():
               fams, SET, SN.SECTION, SN.subpages(),
               extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": [["capacity", "capacity_mild_steel"], ["length", "working_width"], "strokes", ["motor", "operation"], "weight"],
                      "hero_brand_line": "Dener Makina builds the premium hydraulic shears in Kayseri, Turkey; the premium-line mechanical shears are built in Turkey and the value-line shears in China, all to NovoTech's specification. Every line sold, installed and supported in Canada by NovoTech.",
-                     "origin_feature": {"title": "Four lines, one supplier", "text": "Premium Dener and NovoTech mechanical shears from Turkey, NovoTech value-line hydraulic and sheet metal shears from China — every one with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
+                     "origin_feature": {"title": "Three kinds, two lines, one supplier", "text": "Hydraulic, mechanical or sheet metal shear, premium or value line — every one with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
-                     "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"]})
+                     "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"],
+                     "hub_compact": True, "compare": COMPARE, "subpage_link": "all models, specifications and photos"})
     path = os.path.join(ROOT, "content", "pages", f"{SN.HUB}.json")
     page = json.load(open(path, encoding="utf-8"))
     for sp, line in zip(page["subpages"], SN.lines()):
         if line:
             sp["line"] = line
-        sp["cards_title"] = sp["title"].split(" — ")[0] + " — the line-up"
+        sp["cards_title"] = sp["title"].split(" — ")[0] + " — every family"
     json.dump(page, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print(f"shear hub: {len(fams)} families on {len(page['subpages'])} pages · {len(pdfs)} brochures · {sum(len(f['specs']['models']) for f in fams)} models")
 

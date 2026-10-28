@@ -64,7 +64,7 @@ PAGE_PB = dict(
           "ball-screw press brake from 22 US tons for small parts. ESA S640 / S875 or Delem DA-66S / 69S controls, European-style tooling, "
           "back gauges to 6 axes, crowning, angle measurement, sheet followers and robot cells. This is the premium line; NovoTech's own "
           "value-line CNC press brakes and the ISITAN compact press brakes have pages of their own. Installed and supported from Mississauga, ON, Canada, "
-          "ON, with a CSA-approved panel and Dener Canada parts.",
+          "with a CSA-approved panel and Dener Canada parts.",
     points=["XL hydraulic: 18 models, 66 – 661 US tons × 5 – 20 ft; tandem to 60 ft and 1,800 tons",
             "XH hybrid: servo pump on the XL frame — 42 – 58 % less energy, faster approach and return",
             "DDM servo-electric 44 – 220 tons and DDS ball-screw 22 / 44 tons — no hydraulic oil"],
@@ -126,7 +126,7 @@ PAGE_LASER = dict(
           "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas — oxygen for mild steel, nitrogen or compressed air for stainless and aluminum — a dust collector and a compressed-air supply. A 6 kW GFL 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with the pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about Dener fiber lasers",
-    related_pages=[{"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}, {"href": "dener-cnc-press-brakes.html", "label": "Dener CNC press brakes"},
+    related_pages=[{"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}, {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"},
                    {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring after laser cutting"},
                    {"href": "shear-cutting.html", "label": "Metal shears"}, {"href": "panel-bender.html", "label": "CNC panel bender"}],
     related_title="Machinery that works alongside a laser",
@@ -196,7 +196,7 @@ PAGE_SHEAR = dict(
           "a": "A 10 ft shear needs about 16 × 10 ft of floor with the back gauge travel; a 20 ft DAS about 27 × 12 ft. 600 V 3-phase with the supplied transformer or 480 V; the motors run from 15 to 60 HP. We lay the machine out for your building before you order."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about Dener shears",
-    related_pages=[{"href": "dener-cnc-press-brakes.html", "label": "Dener CNC press brakes"}, {"href": "dener-fiber-lasers.html", "label": "Dener fiber lasers"},
+    related_pages=[{"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "dener-fiber-lasers.html", "label": "Dener fiber lasers"},
                    {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
     related_title="More cutting machinery from NovoTech",
 )
@@ -290,15 +290,10 @@ def build():
     fams += [dict(f, pdf=pdf_vl_tube) for f in VLL.TUBE_FAMILIES]
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **INTRO_VIDEO}
-    write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", hub=PBN.hub(), siblings=PBN.siblings(),
-                   extra={**common, "nav_label": "Dener CNC press brakes", "catalogue_pdf": None, "catalogue_pdfs": [pdf_pb, pdf_servo]})
-    write_category(D.P_LASER, PAGE_LASER, fams, SET, LN.SECTIONS["sheet"]["section"], hub=LN.hub("sheet"), siblings=LN.siblings("sheet"),
-                   extra={**common, "nav_label": "Dener fiber lasers", "catalogue_pdf": pdf_laser})
-    write_category(D.P_TUBE, PAGE_TUBE, fams, SET, LN.SECTIONS["tube"]["section"], hub=LN.hub("tube"), siblings=LN.siblings("tube"),
-                   extra={**common, "nav_label": "Dener tube lasers", "catalogue_pdf": pdf_tube})
+    # the press-brake families are shown on the hydraulic / electric press brake pages (tools/press_brake_types.py), not on a Dener page;
+    # the laser families on the pages per kind of laser (tools/laser_types.py — enclosed, open-type, tube laser cutters …), not on a Dener page
     pdf_shear = pdf(PDF_SHEAR_FILE, "Download the Dener hydraulic shears brochure")
-    write_category(D.P_SHEAR, PAGE_SHEAR, [dict(f, pdf=pdf_shear) for f in D.SHEAR_FAMILIES], "shears", SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
-                   extra={**common, "nav_label": "Dener hydraulic shears", "catalogue_pdf": pdf_shear})
+    # the shear families are shown on the hydraulic / mechanical / sheet metal shear pages (tools/shear_types.py), not on a supplier page
     write_category(D.P_PANEL, PAGE_PANEL, fams, SET, "Panel benders", extra={**common, "nav_label": "Panel benders", "catalogue_pdf": None, "catalogue_pdfs": [pdf_panel, pdf_sf_panel, pdf_vl_panel],
                                                                                 "hero_brand_line": "The Dener panel bender is made in Turkey by Dener Makina; the BDC machines by Senfeng Laser in Jinan, China; the PB-M and PB-A carry the NovoTech name — built in China to North American standards. All sold, installed and supported in Canada by NovoTech."})
     keys = register_images()

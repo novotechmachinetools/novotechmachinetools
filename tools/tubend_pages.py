@@ -101,7 +101,7 @@ PAGE_HP = dict(
                "the same way every time."},
          VOLT_FAQ_HP],
     faq_title="Questions we get asked about horizontal press brakes",
-    related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"},
+    related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"},
                    {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "hydraulic-press.html", "label": "Hydraulic presses"},
                    {"href": "pipe-benders.html", "label": "Pipe & tube benders"}],
     related_title="More bending and forming machinery from NovoTech",

@@ -1075,8 +1075,15 @@ def render_page(page):
                 rg["rows"] = [row for row in page["range_rows"] if row.get("kind") == rg["kind"]]
     for g in page.get("groups", []):
         g["families"] = [prepare_family(family(page, f, g.get("family_set"))) if isinstance(f, str) else f for f in g["families"]]
+    if page.get("range_pick") and page.get("groups") and not page.get("subpages"):   # a category page with every model in one table under the hero
+        page["range_rows"] = range_table([{"slug": page["slug"], "families": g["families"], "nav_label": g["title"].split(" — ")[0]} for g in page["groups"]], page["range_pick"])
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
-        page["jump_links"] = [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
+        page["jump_links"] = ([{"href": "#range-at-a-glance", "label": "All models"}] if page.get("range_rows") else []) + [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
+    if not page.get("jump_links") and page.get("hub_compact"):   # a short hub: its pages, then the parts of the page
+        page["jump_links"] = ([{"href": sp["slug"] + ".html", "label": sp.get("nav_label") or sp["title"]} for sp in page["subpages"]]
+                              + [{"href": x["href"], "label": x.get("nav_label") or x["title"].split(" — ")[0]} for x in page.get("extra_cards", [])]
+                              + ([{"href": "#compare", "label": "Compare"}] if page.get("compare") else [])
+                              + [{"href": "#range-at-a-glance", "label": "All models"}, {"href": "#faq-title", "label": "Questions"}, {"href": "#reques-a-quote", "label": "Request a quote"}])
     page["url"] = f"{site['domain']}/{page['slug']}" if page["slug"] != "index" else site["domain"] + "/"   # clean URLs: pages are served without .html
     page["date_published"], page["date_modified"] = page_dates(page["slug"])
     page["updated_label"] = datetime.date.fromisoformat(page["date_modified"]).strftime("%B %Y")

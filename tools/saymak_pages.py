@@ -65,7 +65,7 @@ PAGE = dict(
           "a": "Yes — the optional 0 – 180° angular cutting device on the table positions the sheet for mitre and trapezoid cuts against the squaring arm; the standard squaring arm has a T-slot, a stopper and a ruler for square cuts."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about metal shears",
-    related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"},
+    related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"},
                    {"href": "corner-notcher.html", "label": "Corner notchers"}, {"href": "circle-cutters-and-seamers.html", "label": "Circle shears & flanging machines"},
                    {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}],
     related_title="More sheet-metal cutting and forming machinery from NovoTech",
@@ -112,8 +112,7 @@ def build():
     pdf_dn = pdf_entry(PDF_DENER_FILE, "Download the Dener hydraulic shears brochure")
     fams = [dict(f, pdf=pdf) for f in FAMILIES] + [dict(f, pdf=pdf_dn) for f in DN.SHEAR_FAMILIES]
     write_families(SET, fams)
-    write_category(P_SHEAR, PAGE, fams, SET, SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
-                   extra={"hero_brand_line": BRAND_LINE, "catalogue_pdf": pdf, "origin_feature": ORIGIN, "nav_label": "NovoTech mechanical shears"})
+    # the shear families are shown on the hydraulic / mechanical / sheet metal shear pages (tools/shear_types.py), not on a supplier page
     keys = register_images()
     used = {k for f in FAMILIES for k in f["images"]} | {PAGE["hero"]} | set(PAGE["minis"])
     unused = sorted(set(keys) - used)

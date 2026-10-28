@@ -46,8 +46,20 @@ RedirectMatch 301 ^/(novofab|novotech)-automatic-band-saws(\.html)?$ /automatic-
 RedirectMatch 301 ^/(novofab|novotech)-double-column-band-saws(\.html)?$ /twin-column-band-saws
 RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
 # the old automatic cold saw page (Bekamak BMDO) now lives on the cold saw page, below the İşitan circular saws
-RedirectMatch 301 ^/hydraulic-press-brake(\.html)?$ /novotech-cnc-press-brakes
-RedirectMatch 301 ^/electric-press-brake(\.html)?$ /novotech-cnc-press-brakes
+# press brakes are split by kind of machine, not by supplier (Oct 2026): the supplier pages redirect to the type pages
+RedirectMatch 301 ^/dener-cnc-press-brakes(\.html)?$ /hydraulic-press-brake
+RedirectMatch 301 ^/novotech-cnc-press-brakes(\.html)?$ /hydraulic-press-brake
+RedirectMatch 301 ^/compact-hydraulic-press-brakes(\.html)?$ /hydraulic-press-brake#pb-compact-group
+# shears are split by kind of machine, not by supplier (Oct 2026)
+RedirectMatch 301 ^/dener-shears(\.html)?$ /hydraulic-shearing-machine
+RedirectMatch 301 ^/novotech-mechanical-shears(\.html)?$ /mechanical-guillotine-shear
+# lasers are split by kind of machine, not by supplier (Oct 2026)
+RedirectMatch 301 ^/dener-fiber-lasers(\.html)?$ /enclosed-fiber-laser
+RedirectMatch 301 ^/novotech-fiber-lasers(\.html)?$ /open-type-fiber-laser
+RedirectMatch 301 ^/senfeng-fiber-lasers(\.html)?$ /enclosed-fiber-laser
+RedirectMatch 301 ^/dener-tube-lasers(\.html)?$ /tube-laser-cutter
+RedirectMatch 301 ^/novotech-tube-lasers(\.html)?$ /tube-laser-cutter
+RedirectMatch 301 ^/senfeng-tube-lasers(\.html)?$ /tube-laser-cutter
 RedirectMatch 301 ^/slip-rolls(\.html)?$ /plate-rollers
 RedirectMatch 301 ^/cold-saw-carbide-saw-cutting(\.html)?$ /circular-cold-saws#bekamak-circular-group
 
@@ -61,8 +73,8 @@ Redirect 301 "/files/NC-hydraulic-mandrel-tube-bending-machine.pdf" "/nc-tube-be
 Redirect 301 "/files/mandrel-pipe-bender---pipe-end-forming---tube-draw-bender-SAHINLER-FORM-METAL.pdf" "/pipe-benders"
 Redirect 301 "/files/SPB---BK-pipe-draw-bender-SAHINLER---ISITAN---MADE-IN-TURKEY-s.pdf" "/rotary-draw-tube-benders"
 Redirect 301 "/files/SPB---BK-pipe-draw-bender-SAHINLER---ISITAN---MADE-IN-TURKEY.pdf" "/rotary-draw-tube-benders"
-Redirect 301 "/files/EdgeBender-press-brake-ISITAN---MADE-IN-TURKEY.pdf" "/compact-hydraulic-press-brakes"
-Redirect 301 "/files/NC-press-brake-EdgeBender-brochure-ISITAN.pdf" "/compact-hydraulic-press-brakes"
+Redirect 301 "/files/EdgeBender-press-brake-ISITAN---MADE-IN-TURKEY.pdf" "/hydraulic-press-brake"
+Redirect 301 "/files/NC-press-brake-EdgeBender-brochure-ISITAN.pdf" "/hydraulic-press-brake"
 Redirect 301 "/files/Power-bead-roller-IBKS-IKMP-HIBKS.pdf" "/bead-rollers"
 Redirect 301 "/files/HIBKS-,-IBKS-,-IKMP-bead-roller-ISITAN---MADE-IN-TURKEY.pdf" "/bead-rollers"
 Redirect 301 "/files/Manual-bead-roller-IK-IKS-IKD.pdf" "/bead-rollers"

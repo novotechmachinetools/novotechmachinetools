@@ -2,10 +2,10 @@
  "slug": "angle-rolls",
  "template": "category.html",
  "family_set": "sahinler",
- "title": "Angle Rolls, Tube Rollers & Section Benders | NovoTech",
- "artifact_title": "Angle rolls, tube rollers and section benders",
- "meta_description": "Hydraulic angle rolls and tube rollers from a 2 HP bench bender to HEB 600 beam benders: angle, pipe, tube, flat bar and channel rolled to rings and spirals.",
- "h1": "Angle rolls, tube rollers and section benders",
+ "title": "Angle Rolls & Roll Benders for Sale in Canada — Tube, Pipe & Profile Rollers | NovoTech",
+ "artifact_title": "Angle rolls and roll benders — tube, pipe and profile rollers",
+ "meta_description": "Angle rolls and roll benders sold, installed and supported in Canada: hydraulic tube, pipe and profile rollers from a 2 HP bench bender to HEB 600 beam benders — angle, pipe, tube, flat bar and channel rolled to rings, arcs and spirals. Every model in one table.",
+ "h1": "Angle rolls and roll benders — tube, pipe and profile rollers",
  "intro": "An angle roll (also called a roll bender, section bender, profile bender, ring roller or tube roller) pushes a bar, angle, pipe, tube or beam between three rolls to bend it into an arc, a ring or a spiral — the machine behind curved handrails, tank stiffener rings, rolled flanges, arched trusses and coiled heating pipe. The NovoTech premium line covers the complete range: the motorized PK 30 and PK 35 for small flat bar, angle and tube, the hydraulic HPK 40 to HPK 120 section and pipe benders with digital readouts, hydraulic guides and optional NC control, the HPK DP heavy-duty beam benders for channel, I-beam and H-beam up to HEB 600, and the TC-42 NC coiling machine for variable-pitch tube coils. Every machine rolls horizontally or vertically, comes with a standard roll set and takes pipe, tube, angle and special profile rolls; capacity charts for each model are on this page. Sold with a CSA-approved panel, parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "PK 30 / PK 35 motorized and HPK 40 – 120 hydraulic angle rolls — pipe to NPS 5, angle to L 4-3/4 × 4-3/4 × 1/2″",
@@ -27,14 +27,14 @@
    "href": "products.html"
   },
   {
-   "label": "Angle rolls, tube rollers and section benders"
+   "label": "Angle rolls and roll benders — tube, pipe and profile rollers"
   }
  ],
  "hero_brand_line": "NovoTech premium line — machines built in Turkey to NovoTech's specification with European hydraulic and electrical components, sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON, Canada.",
  "groups": [
   {
    "id": "sahinler-angle-group",
-   "title": "Hydraulic section and pipe benders — angle rolls",
+   "title": "Hydraulic angle rolls and pipe roll benders · premium line",
    "lead": "From the PK 30 bench bender to the HPK 360 DP beam bender, small to large, each with its section bending capacity chart.",
    "brand": "sahinler",
    "families": [
@@ -86,7 +86,7 @@
    "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
   }
  ],
- "faq_title": "Questions we get asked about angle rolls",
+ "faq_title": "Questions we get asked about angle rolls and roll benders",
  "catalogue_pdf": {
   "file": "files/NovoTech-Angle-Rolls-Section-Benders-2026.pdf",
   "label": "Download the angle rolls brochure",
@@ -123,5 +123,30 @@
   "duration": "PT4M29S"
  },
  "intro_video_heading": "Inside the factory — where the machines are built",
- "intro_video_text": "A tour of the plant in Bursa, Turkey, where the premium-line plate rolls, angle rolls, ironworkers and presses are built."
+ "intro_video_text": "A tour of the plant in Bursa, Turkey, where the premium-line plate rolls, angle rolls, ironworkers and presses are built.",
+ "range_pick": [
+  [
+   "shaft",
+   "shaft_diameter"
+  ],
+  [
+   "roll_diameter",
+   "capacity",
+   "flat_bar_on_edge_hard_way"
+  ],
+  [
+   "motor",
+   "drive"
+  ],
+  "weight"
+ ],
+ "range_cols": [
+  "Shaft",
+  "Roll diameter / capacity",
+  "Motor",
+  "Weight"
+ ],
+ "range_lead": "Every angle roll, roll bender and tube roller NovoTech sells, in one table — shaft size, roll diameter or capacity, motor and weight. Each row links to the model's capacity chart below.",
+ "range_caption": "Angle rolls, roll benders and tube rollers supplied by NovoTech — premium and value lines",
+ "range_note": "The shaft diameter sets the roll set and the section the machine takes; the capacity chart under each model gives the largest section and the smallest ring diameter for mild steel."
 }

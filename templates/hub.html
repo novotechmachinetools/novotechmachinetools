@@ -67,7 +67,7 @@
 {% endfor %}
 {% else %}
 <section class="wrap subpages" aria-label="Rebar machinery pages">
-  <ul class="subpage-grid{{ ' is-4' if page.subpages|length == 4 else '' }}">
+  <ul class="subpage-grid{{ ' is-4' if (page.subpages|length + (page.extra_cards or [])|length) == 4 else '' }}">
     {% for sp in page.subpages %}{% set im = img(sp.image) %}
     <li class="subpage-card">
       <a href="{{ sp.href }}" class="subpage-art"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 700px) 92vw, 360px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></a>
@@ -78,12 +78,52 @@
       </div>
     </li>
     {% endfor %}
+    {% for xc in page.extra_cards or [] %}{% set im = img(xc.image) %}
+    <li class="subpage-card">
+      <a href="{{ xc.href }}" class="subpage-art"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 700px) 92vw, 360px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></a>
+      <div class="subpage-body">
+        <h2><a href="{{ xc.href }}">{{ xc.title }}</a></h2>
+        <p>{{ xc.blurb }}</p>
+        <p class="subpage-count">{{ xc.note }}</p>
+      </div>
+    </li>
+    {% endfor %}
   </ul>
 </section>
 {% endif %}
 
+{% if page.jump_links %}
+<nav class="jump" aria-label="On this page">
+  <div class="wrap">
+    <ul class="jump-list">
+      {% for j in page.jump_links %}<li><a href="{{ j.href }}">{{ j.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</nav>
+{% endif %}
+
 <div class="wrap page-body">
-{% for sp in page.subpages %}
+{% if page.compare %}
+<section class="group compare" id="compare" aria-labelledby="compare-title">
+  <header class="group-head">
+    <h2 id="compare-title">{{ page.compare.title }}</h2>
+    <p class="group-lead">{{ page.compare.lead }}</p>
+  </header>
+  <div class="specs">
+    <section class="table-scroll" tabindex="0" aria-label="{{ page.compare.title }}">
+      <table class="spec-table compare-table">
+        <thead><tr>{% for c in page.compare.cols %}<th scope="col"{% if loop.first %} class="label-col"{% endif %}>{{ c }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for r in page.compare.rows %}
+          <tr>{% for c in r %}{% if loop.first %}<th scope="row">{{ c }}</th>{% elif c is mapping %}<td><a class="arrow" href="{{ c.href }}">{{ c.label }}</a></td>{% else %}<td>{{ c }}</td>{% endif %}{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </div>
+</section>
+{% endif %}
+{% for sp in page.subpages if not page.hub_compact %}
 <section class="group group-cards{{ ' line-' ~ sp.line if sp.line else '' }}" id="{{ sp.slug }}-overview" aria-labelledby="{{ sp.slug }}-overview-title">
   <header class="group-head">
     <h2 id="{{ sp.slug }}-overview-title">{{ sp.cards_title or (sp.title ~ ' line-up') }}</h2>

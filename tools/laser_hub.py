@@ -19,40 +19,39 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 BRAND_LINE = ("Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga, ON, Canada); NovoTech's own value line is built in "
               "China to our specification; Senfeng Laser builds its value line in Jinan, China (CE / FDA / ETL). All sold, installed and supported in Canada by NovoTech.")
-ORIGIN = {"title": "Three lines, one supplier", "text": "Premium Dener lasers from Turkey, NovoTech's own value line and the Senfeng value line from China — every machine with a "
+ORIGIN = {"title": "Premium and value lines, one supplier", "text": "Premium Dener lasers from Turkey, NovoTech's own value line and the Senfeng value line from China — every machine with a "
           "CSA-approved panel, a chiller, nesting software, a 1-year warranty, and installation, training, parts and remote diagnostics from Mississauga, ON, Canada."}
 
 HUBS = {
     "sheet": dict(
-        set="sheet-lasers", families=[("dener-fiber-lasers", ["dn-gfl", "dn-smart-closed", "dn-smart-semi", "dn-smart-open"]),
-                                      ("novotech-fiber-lasers", ["vn-ulf", "vn-ule", "vn-ulg", "vn-ulft", "vn-ulet"]),
-                                      ("senfeng-fiber-lasers", ["sf-compact", "sf-np", "sf-h", "sf-hm", "sf-r", "sf-3d", "sf-coil"])],
+        set="sheet-lasers", families=LN.families("sheet"),
         page=dict(
-            title="Fiber Laser Cutting Machines, 1.5–80 kW, Canada | NovoTech",
-            meta="Every sheet metal laser NovoTech sells: Dener GFL and Smart lasers 3–40 kW, NovoTech's own ULF and ULE value line to 60 kW, Senfeng from 4 × 4 ft to 80 kW.",
-            h1="Laser cutting machines for sheet and plate — 4 × 4 ft to 10 × 164 ft, 1.5 to 80 kW",
+            title="Fiber Laser Cutting Machines for Sale in Canada — Enclosed, Open-Type, Plate & Tube, 1.5–80 kW | NovoTech",
+            meta="Every fiber laser NovoTech sells in Canada, by kind: enclosed lasers with exchange table or pallet changer, open-type single-table lasers, large-format plate lasers to 10 × 164 ft, sheet-and-tube combination lasers, 3D cells and coil-fed lines — 1.5 to 80 kW, premium and value lines, the kinds compared and every model in one table.",
+            h1="Laser cutting machines for sheet and plate — enclosed, open-type, plate and sheet-and-tube lasers, 1.5 to 80 kW",
             intro="A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″ and beyond with the "
                   "high-power sources, stainless and aluminum to 1″ — at speeds no plasma or punch can match, with a clean edge and no tooling. "
-                  "NovoTech sells three lines of fiber lasers in Canada, each on its own page: the Dener lasers — the premium line, made in Turkey, "
-                  "the GFL production laser with a 1.5 G gantry and pallet changer and the Smart series to 13 × 82 ft, 3 to 40 kW; NovoTech's own "
-                  "value line — the open ULF single-table lasers, the enclosed ULE with a 15-second exchange table, the ULG ground-rail plate lasers, "
-                  "the ULFT and ULET that cut sheet and tube on one machine, and plate tables to 85 ft with up to 60 kW; and the Senfeng lasers — a value line under its own brand, "
-                  "from 4 × 4 ft compact machines and the NP open-type to the H series with pallet changer to 80 kW, plate gantries to 10 × 164 ft, "
-                  "3D and coil-fed lines. Below, each line in brief, the "
-                  "laser power guide, and every model in one table of working area, power and speed; every machine comes with a CSA-approved "
-                  "panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
-            points=["Dener premium line: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft; Smart closed, semi-closed and open lasers to 13 × 82 ft; 3 – 40 kW",
-                    "NovoTech value line: open ULF from 10 × 5 ft, enclosed ULE with 15 s exchange table to 41 ft, ULG ground-rail to 85 × 14.8 ft, ULFT / ULET sheet + tube, 1.5 – 60 kW",
-                    "Senfeng value line: compact 4 × 4 ft from 1.5 kW, NP open-type, H series with pallet changer to 80 kW, plate gantries to 164 ft, 3D, coil-fed"],
+                  "NovoTech sells five kinds in Canada, each on its own page: enclosed lasers with a laser-safe cabin and an exchange table or pallet "
+                  "changer, the production machine from 4 × 4 ft compact models to 8.5 × 41 ft and 80 kW; open-type single-table and semi-closed "
+                  "lasers, the entry and long-plate machines to 85 ft; large-format plate lasers on ground rails or gantries to 10 × 164 ft with bevel "
+                  "heads; sheet-and-tube combination lasers with a rotary chuck beside the table; and 3D laser cells and coil-fed lines. Each kind comes "
+                  "in a premium line made in Turkey and a value line built to our specification, as sections on the same page. Below, the five kinds "
+                  "compared, the laser power guide and every model in one table of working area, power and speed; every machine comes with a "
+                  "CSA-approved panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
+            points=["Enclosed: exchange table or pallet changer, 4 × 4 ft compact to 8.5 × 41 ft, 1.5 – 80 kW — premium GFL / Smart closed, value ULE, H series, compact",
+                    "Open-type and semi-closed: single tables 5 × 10 to 85 × 10.5 ft, 1.5 – 60 kW; plate lasers on ground rails and gantries to 10 × 164 ft with ±45° bevel",
+                    "Sheet-and-tube lasers to Ø13.8″ tube; five-axis 3D cells and robot cells; coil-fed lines to 9/16″ plate"],
             hero="dn-gfl-3", minis=["vn-ule-1", "sf-h-1"],
             range_cols=["Working area", "Laser power", "Max. speed", "Acceleration", "Max. sheet load"],
             range_pick=[["working_area", "area"], "power", "speed", "accel", "load"],
             range_lead="Every sheet laser model NovoTech sells, in one table: working area, laser power, axis speed, acceleration and the maximum sheet weight on the table, where the maker publishes them. Each row links to the full specification table on the line's page.",
-            range_caption="Sheet and plate fiber lasers supplied by NovoTech — Dener, NovoTech value line and Senfeng",
+            range_caption="Sheet and plate fiber lasers supplied by NovoTech — enclosed, open-type, plate, sheet-and-tube, 3D and coil-fed, premium and value lines",
             range_note="Working areas in feet and inches (millimetres); the model number is the nominal table in decimetres (3015 = 3,000 × 1,500 mm, 10 × 5 ft). Laser power as the sources offered on that model. "
                        "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel and transformer; 208, 240 and 480 V on request.",
-            faq=[{"q": "Dener, NovoTech or Senfeng — which laser should I buy?",
-                  "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, Dener Canada parts in Mississauga, ON, Canada and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed exchange-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."},
+            faq=[{"q": "Enclosed, open-type, plate or sheet-and-tube — which laser should I buy?",
+                  "a": "By how many sheets a day and what they are. An enclosed laser with an exchange table or pallet changer keeps cutting while you load the next sheet and keeps fumes and the beam inside — the production machine, and the one most shops buy from 5 × 10 ft up. An open-type single-table laser stops while you load but costs less and takes sheets from any side — the first laser, and the only kind for 20 to 85 ft plate on a single table. A ground-rail or gantry plate laser is for heavy plate and very long beds, with bevel heads and oxy-fuel. A sheet-and-tube laser adds a rotary chuck beside the table for a shop that cuts both and has room for one machine. 3D cells cut formed parts; coil-fed lines cut straight from the coil. Each kind has its own page with the premium and value lines side by side."},
+                 {"q": "Premium line or value line?",
+                  "a": "The premium Dener lasers are built in Turkey on frames rated for 1.5 G, with Precitec heads, IPG / nLIGHT sources, the longest life at high duty and Dener Canada parts in Mississauga, ON, Canada — for two shifts a day. NovoTech's own value line and the Senfeng value line are built in China with their own or Raycus sources, in a wider range — 4 × 4 ft compact machines, 60 – 80 kW plate gantries, sheet-and-tube combos, coil-fed lines — at a lower price; NovoTech stocks the parts and does the service for all of them. Same cut quality at the same power; the premium machine is faster between parts and lasts longer at high duty."},
                  {"q": "What laser power do I need?",
                   "a": "Power sets the thickness and the speed. As a guide for mild steel: 3 kW cuts 1/2″, 6 kW 3/4″ (and 1/4″ at over 300 in/min), 12 kW 1″, 20 kW 1-1/4″ and 30 – 40 kW 1-1/2″ and beyond; stainless and aluminum run about 20 – 30 % thinner at the same power, with nitrogen or air assist. Most Canadian job shops buying today choose 6 or 12 kW: thick enough for structural work, fast enough to pay for the machine on thin sheet. Tell us your material mix and we run the cutting chart for you."},
                  {"q": "Which table size?",
@@ -74,34 +73,33 @@ HUBS = {
             artifact_title="Sheet Laser Cutters", nav_label="All sheet lasers",
         )),
     "tube": dict(
-        set="tube-lasers", families=[("dener-tube-lasers", ["dn-eftl", "dn-ftl"]), ("novotech-tube-lasers", ["vn-ult"]),
-                                     ("senfeng-tube-lasers", ["sf-t", "sf-plus", "sf-heavy"])],
+        set="tube-lasers", families=LN.families("tube"),
         page=dict(
-            title="Tube Laser Cutting Machines, Ø0.3″ to 25″, Canada | NovoTech",
-            meta="Every tube laser NovoTech sells: Dener E-FTL and FTL to Ø25.2″, NovoTech's own ULT two- and three-chuck lasers to Ø14.2″, Senfeng from Ø0.5″ to 49 ft bars.",
+            title="Tube Laser Cutting Machines for Sale in Canada — Ø0.3″ to 25″, 20 to 49 ft Bars | NovoTech",
+            meta="Every tube and profile laser NovoTech sells in Canada, by kind: tube laser cutters to Ø14″ with two or three chucks and heavy-duty three- and four-chuck machines to Ø25″ and 49 ft, 1.5 to 40 kW — premium and value lines, the two kinds compared and every model in one table.",
             h1="Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 20 to 49 ft bars, 1.5 to 40 kW",
             intro="A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one "
-                  "pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells three lines of tube lasers in Canada, "
-                  "each on its own page: the Dener tube lasers — the premium line, made in Turkey, the E-FTL with 1 G servo chucks for Ø0.3″ to 13.8″ "
-                  "and the heavy FTL for structural tube, pipe and beams to Ø25.2″ and 12 m bars of 2,600 kg; NovoTech's own ULT — the value line, "
-                  "two or three pneumatic chucks for Ø0.4″ to 14.2″ on 20 to 39 ft bars with 1.5 to 40 kW; and the Senfeng tube lasers — a "
-                  "value line under its own brand, from the Ø0.5″ two-chuck T series with 1.5 kW to the high-speed PLUS, the 45° bevel GT, the "
-                  "zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft. For trailer, railing, furniture, "
-                  "agricultural, HVAC and steel-construction work. Below, each line in brief and every model in one table of tube range, power, "
-                  "speed and bar length; every machine comes with a CSA-approved panel, chiller, tube nesting software, a 1-year warranty and "
-                  "installation, training and parts from Mississauga, ON, Canada.",
-            points=["Dener premium line: E-FTL Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm; FTL Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb",
-                    "NovoTech value line: ULT two- and three-chuck lasers Ø0.4″ – 14.2″, square to 13.8″, 20 – 39 ft bars to 2,205 lb, 1.5 – 40 kW",
-                    "Senfeng value line: T, PLUS and 45° bevel GT lasers Ø0.5″ – 14″; NT zero-tailing, ST / HT three- and four-chuck lasers to Ø25″ and 49 ft"],
+                  "pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells two kinds in Canada, each on its own "
+                  "page: tube laser cutters for tube to Ø14″ with two or three chucks on 20 to 39 ft bars — the premium E-FTL with 1 G servo chucks "
+                  "made in Turkey, NovoTech's value-line ULT and the T series, high-speed PLUS and bevel-cutting GT; and heavy-duty tube and profile "
+                  "lasers with three and four chucks for structural tube, pipe and beams to Ø25″, 6,600 lb and 49 ft, plus the H-beam profile line. "
+                  "For trailer, railing, furniture, agricultural, HVAC and steel-construction work. Below, the two kinds compared and every model in "
+                  "one table of tube range, power, speed and bar length; every machine comes with a CSA-approved panel, chiller, tube nesting "
+                  "software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
+            points=["Tube laser cutters: premium E-FTL Ø0.3″ – 13.8″, 1 G, ±0.05 mm; value ULT Ø0.4″ – 14.2″ two or three chucks; T / PLUS / GT Ø0.5″ – 14″ — 20 – 39 ft bars, 1.5 – 40 kW",
+                    "Heavy-duty: premium FTL Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb; NT zero-tailing, ST / HT three- and four-chuck lasers to Ø25″, 6,600 lb and 49 ft",
+                    "Bundle loaders, following supports, ±45° bevel heads, STEP / IGES import and tube nesting on every machine"],
             hero="dn-tube-2", minis=["vn-ult-1", "sf-t-1"],
             range_cols=["Round tube", "Laser power", "Max. speed", "Bar length", "Max. bar weight"],
             range_pick=[["tube", "round"], "power", "speed", "length", "load"],
             range_lead="Every tube laser model NovoTech sells, in one table: round tube range, laser power, axis speed, bar length and — for the NovoTech and Senfeng machines — the maximum bar weight. Each row links to the full specification table on the line's page.",
-            range_caption="Tube and profile fiber lasers supplied by NovoTech — Dener, NovoTech value line and Senfeng",
+            range_caption="Tube and profile fiber lasers supplied by NovoTech — tube laser cutters and heavy-duty machines, premium and value lines",
             range_note="Round tube as the chuck's minimum to maximum diameter; square and rectangular tube is limited by the diagonal. Dener bar lengths list the bar weight with them. "
                        "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel and transformer; 208, 240 and 480 V on request.",
-            faq=[{"q": "Dener, NovoTech or Senfeng — which tube laser should I buy?",
-                  "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, ±0.05 mm, Dener Canada parts in Mississauga, ON, Canada — for the shop that runs the tube laser all day on precise work. NovoTech's own ULT is the value line we build to our specification: two or three pneumatic chucks for the Ø0.4 to 14.2″ tube most shops cut, at the lowest price of the three. Senfeng's tube lasers are a value line under their own brand: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser and cuts the railings, frames and furniture tube most shops run, and the range goes where few others do — zero-tailing three-chuck machines, four-chuck machines for 49 ft stock, Ø25″ pipe and the H-beam profile line. We quote all three so you can compare."},
+            faq=[{"q": "Tube laser cutter or heavy-duty tube laser — which should I buy?",
+                  "a": "By the biggest bar you cut. A two- or three-chuck tube laser cutter covers tube to Ø14″ on 20 to 39 ft bars — railing, furniture, trailer, HVAC, agricultural and most steel-construction work — and is the machine most shops need; the premium E-FTL and the value-line ULT, T and PLUS are on one page, side by side. A heavy-duty machine with three or four chucks holds beams and pipe to Ø25″, bars of 2,600 – 3,000 kg and 49 ft, and cuts them without tailing — for structural steel, pipe and heavy profiles. Both kinds load from a bundle, support the bar as it is cut and take bevel heads."},
+                 {"q": "Premium line or value line?",
+                  "a": "The premium Dener E-FTL and FTL are built in Turkey with 1 G servo chucks, Precitec heads, ±0.05 mm and Dener Canada parts in Mississauga, ON, Canada — for the shop that runs the tube laser all day. NovoTech's value-line ULT and the Senfeng T / PLUS / GT / NT / ST / HT are built in China with pneumatic chucks, in a wider range of sizes and powers at a lower price; NovoTech stocks the parts and does the service. The premium machine is faster between parts and holds tighter tolerance at high duty."},
                  {"q": "What can a tube laser cut?",
                   "a": "Round, square, rectangular, oval and open profiles — angle, channel, flat bar — in mild steel, stainless, aluminum, copper and brass, from the chuck's minimum to its maximum size, in wall thicknesses to about 1/2″ (12 kW) or 3/4″ (20 kW). Holes, slots, copes for tube-to-tube joints, tabs and notches for folding, engraving — anything you can draw on the surface of the profile. A 5-axis or 45° bevel head adds weld preparations and mitred corners."},
                  {"q": "Two, three or four chucks?",
@@ -122,12 +120,36 @@ HUBS = {
         )),
 }
 
+COMPARE = {
+    "sheet": {
+        "title": "Which kind of laser?",
+        "lead": "The five kinds NovoTech sells, side by side. Sheets per day, the longest plate and what else you cut decide the kind; each page lists every model, premium and value lines together.",
+        "cols": ["Kind", "Loading", "Working area and power", "Best for", "Page"],
+        "rows": [
+            ["Enclosed lasers", "Exchange table or pallet changer, laser-safe cabin", "4 × 4 to 8.5 × 41 ft, 1.5 – 80 kW", "Production: cuts while you load, two shifts a day", {"href": "enclosed-fiber-laser.html", "label": "Enclosed lasers"}],
+            ["Open-type and semi-closed lasers", "Single table loaded from any side", "5 × 10 to 85 × 10.5 ft, 1.5 – 60 kW", "First laser, long plate, lowest price", {"href": "open-type-fiber-laser.html", "label": "Open-type lasers"}],
+            ["Large-format plate lasers", "Ground rails or gantry, bevel heads, oxy-fuel", "to 10 × 164 ft, 6 – 60 kW", "Heavy plate, shipyards, structural, very long beds", {"href": "large-format-plate-laser.html", "label": "Plate lasers"}],
+            ["Sheet-and-tube lasers", "Table plus a rotary chuck", "to 85 ft sheet, tube to Ø13.8″, 1.5 – 40 kW", "One machine for sheet and tube", {"href": "sheet-and-tube-laser.html", "label": "Sheet & tube lasers"}],
+            ["3D cells and coil-fed lines", "Five-axis head or robot; uncoiler and leveller", "1.5 – 80 kW", "Formed parts; high-volume blanks from coil", {"href": "3d-laser-and-coil-fed-line.html", "label": "3D & coil-fed lasers"}],
+        ],
+    },
+    "tube": {
+        "title": "Which kind of tube laser?",
+        "lead": "The two kinds NovoTech sells, side by side. The biggest bar you cut decides; each page lists every model, premium and value lines together.",
+        "cols": ["Kind", "Chucks", "Tube range and bars", "Best for", "Page"],
+        "rows": [
+            ["Tube laser cutters", "Two or three chucks", "Ø0.3″ – 14″, 20 – 39 ft bars, 1.5 – 40 kW", "Railing, furniture, trailer, HVAC, agricultural, most steel construction", {"href": "tube-laser-cutter.html", "label": "Tube laser cutters"}],
+            ["Heavy-duty tube and profile lasers", "Three or four chucks, zero tailing", "Ø0.6″ – 25.2″, bars to 49 ft and 6,600 lb, 3 – 40 kW", "Structural tube, pipe, beams and heavy profiles", {"href": "heavy-duty-tube-laser.html", "label": "Heavy-duty tube lasers"}],
+        ],
+    },
+}
+
 
 def build():
     src = json.load(open(os.path.join(ROOT, "content", "families", "dener.json"), encoding="utf-8"))["families"]
     for kind, h in HUBS.items():
         sec = LN.SECTIONS[kind]
-        fams = [dict(src[fid], page=slug) for slug, ids in h["families"] for fid in ids]
+        fams = [dict(src[fid], page=slug, group=LN.group_of(kind, fid)) for slug, ids in h["families"] for fid in ids]
         write_families(h["set"], fams)
         pdfs, seen = [], set()
         for f in fams:
@@ -138,13 +160,14 @@ def build():
         write_hub(sec["hub"], {**pg, "related_blurb": sec["blurb"]}, fams, h["set"], sec["section"], LN.subpages(kind),
                   extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": pg["range_pick"], "hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN,
                          "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
-                         "related_pages": pg["related_pages"], "related_title": pg["related_title"]})
+                         "related_pages": pg["related_pages"], "related_title": pg["related_title"],
+                         "hub_compact": True, "compare": COMPARE[kind], "subpage_link": "all models, specifications and photos"})
         path = os.path.join(ROOT, "content", "pages", f"{sec['hub']}.json")
         page = json.load(open(path, encoding="utf-8"))
         for sp, line in zip(page["subpages"], LN.lines(kind)):
             if line:
                 sp["line"] = line
-            sp["cards_title"] = sp["title"].split(" — ")[0] + " — the line-up"
+            sp["cards_title"] = sp["title"].split(" — ")[0] + " — every family"
         json.dump(page, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
         print(f"{sec['hub']}: {len(fams)} families on {len(page['subpages'])} pages · {len(pdfs)} brochures")
 

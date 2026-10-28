@@ -38,13 +38,13 @@ SECTION = {P_ANGLE: "Angle rolls", P_IRON: "Ironworkers & punching", P_PUNCH: "I
 
 PAGES = {
     P_ANGLE: dict(
-        title="Angle Rolls, Tube Rollers & Section Benders | NovoTech",
-        meta="Hydraulic angle rolls and tube rollers from a 2 HP bench bender to HEB 600 beam benders: angle, pipe, tube, flat bar and channel rolled to rings and spirals.",
-        h1="Angle rolls, tube rollers and section benders",
+        title="Angle Rolls & Roll Benders for Sale in Canada — Tube, Pipe & Profile Rollers | NovoTech",
+        meta="Angle rolls and roll benders sold, installed and supported in Canada: hydraulic tube, pipe and profile rollers from a 2 HP bench bender to HEB 600 beam benders — angle, pipe, tube, flat bar and channel rolled to rings, arcs and spirals. Every model in one table.",
+        h1="Angle rolls and roll benders — tube, pipe and profile rollers",
         intro="An angle roll (also called a roll bender, section bender, profile bender, ring roller or tube roller) pushes a bar, angle, pipe, tube or beam between three rolls to bend it into an arc, a ring or a spiral — the machine behind curved handrails, tank stiffener rings, rolled flanges, arched trusses and coiled heating pipe. The NovoTech premium line covers the complete range: the motorized PK 30 and PK 35 for small flat bar, angle and tube, the hydraulic HPK 40 to HPK 120 section and pipe benders with digital readouts, hydraulic guides and optional NC control, the HPK DP heavy-duty beam benders for channel, I-beam and H-beam up to HEB 600, and the TC-42 NC coiling machine for variable-pitch tube coils. Every machine rolls horizontally or vertically, comes with a standard roll set and takes pipe, tube, angle and special profile rolls; capacity charts for each model are on this page. Sold with a CSA-approved panel, parts and support from Mississauga, ON, Canada.",
         points=["PK 30 / PK 35 motorized and HPK 40 – 120 hydraulic angle rolls — pipe to NPS 5, angle to L 4-3/4 × 4-3/4 × 1/2″", "HPK 160 – 360 DP heavy-duty beam benders — IPN 600, UPN 600, HEB 600, pipe to NPS 16", "Digital readouts standard; NC control, hydraulic lateral guides and spiral crane optional; capacity chart per model"],
         hero="sh-hpk100", minis=["sh-hpk60", "sh-hpk160dp"],
-        groups=[("sahinler-angle", "Hydraulic section and pipe benders — angle rolls", "From the PK 30 bench bender to the HPK 360 DP beam bender, small to large, each with its section bending capacity chart.", "sahinler"),
+        groups=[("sahinler-angle", "Hydraulic angle rolls and pipe roll benders · premium line", "From the PK 30 bench bender to the HPK 360 DP beam bender, small to large, each with its section bending capacity chart.", "sahinler"),
                 ("sahinler-coil", "Tube coiling machine", "The TC-42 NC for spiral and variable-pitch tube coils with straight ends.", "sahinler")],
         faq=[{"q": "Angle roll, roll bender, section bender, ring roller, tube roller — are these the same machine?", "a": "Yes. All describe the three-roll machine on this page: two driven rolls hold the section and the third roll pushes it into a curve, and a ring is finished by running the piece round again. Each profile — flat bar, angle, square bar, pipe, tube, channel, beam — has its own roll set; the capacity chart under each model lists the largest section it rolls and the smallest diameter it rolls it to."},
              {"q": "How do I read the capacity chart?", "a": "Find your profile in the left column and read the largest section the machine can roll and, after the arrow, the minimum outside diameter it can roll that section to. A second entry gives a smaller section with its tighter minimum diameter. 'Standard rolls' profiles are rolled with the roll set supplied with the machine; 'optional rolls' need the matching roll set. The chart is for mild steel of 37,700 psi yield; stainless, aluminum and high-strength sections need the next model up."},
@@ -53,9 +53,14 @@ PAGES = {
              {"q": "Can these machines roll spirals and coils?", "a": "Yes. Every HPK with the optional spiral bending crane rolls spiral staircases, stringers and heating coils; the TC-42 NC is the dedicated coiling machine that rolls variable-pitch coils with a straight elbow at each end in one automatic pass."},
              {"q": "Do you supply the rolls for my profile?", "a": "A standard roll set comes with every machine and rolls flat bar, square bar and tee. Pipe, tube, angle, channel and special profile rolls are quoted to your section drawing and shipped with the machine or added later; Delrin rolls are available for polished stainless and aluminum."},
              VOLT_FAQ_GENERIC],
-        faq_title="Questions we get asked about angle rolls",
+        faq_title="Questions we get asked about angle rolls and roll benders",
         related_pages=[{"href": "rotary-draw-tube-benders.html", "label": "Rotary draw tube benders"}, {"href": "hydraulic-3-roll-plate-rollers.html", "label": "Hydraulic 3-roll plate rollers"}, {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"}],
         related_title="More bending machinery from NovoTech",
+        range_pick=[["shaft", "shaft_diameter"], ["roll_diameter", "capacity", "flat_bar_on_edge_hard_way"], ["motor", "drive"], "weight"],
+        range_cols=["Shaft", "Roll diameter / capacity", "Motor", "Weight"],
+        range_lead="Every angle roll, roll bender and tube roller NovoTech sells, in one table — shaft size, roll diameter or capacity, motor and weight. Each row links to the model's capacity chart below.",
+        range_caption="Angle rolls, roll benders and tube rollers supplied by NovoTech — premium and value lines",
+        range_note="The shaft diameter sets the roll set and the section the machine takes; the capacity chart under each model gives the largest section and the smallest ring diameter for mild steel.",
     ),
     P_IRON: dict(
         title="Hydraulic Ironworker Machines, 44 to 276 Ton | NovoTech",
@@ -113,7 +118,7 @@ PAGES = {
              {"q": "Can the press be built to my die?", "a": "Yes — every series of the premium line is built to order in the table size, stroke, daylight and tonnage the die needs, from a 33 US ton C-frame to a 3,307 US ton H-frame, with quick die change, die loading arms, ejector, heated platens or a die cushion as required. Send us the die drawing and the cycle you need and we quote the press around it."},
              VOLT_FAQ_GENERIC],
         faq_title="Questions we get asked about hydraulic presses",
-        related_pages=[{"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
+        related_pages=[{"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
         related_title="More pressing and bending machinery from NovoTech",
     ),
     P_NOTCH: dict(
@@ -130,7 +135,7 @@ PAGES = {
              {"q": "Corner notcher or ironworker notching station?", "a": "The ironworker's rectangular notching station cuts a slot into the edge of bar and plate; the corner notcher cuts the full square corner out of a large sheet laid on its table with a back gauge, at 20 – 30 strokes a minute. Sheet-metal shops that fold boxes daily want the notcher; structural shops are usually served by the ironworker."},
              VOLT_FAQ_GENERIC],
         faq_title="Questions we get asked about corner notchers",
-        related_pages=[{"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "folder-sheet-metal-brake.html", "label": "Roofing & pan brakes"}],
+        related_pages=[{"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "folder-sheet-metal-brake.html", "label": "Roofing & pan brakes"}],
         related_title="More sheet-metal machinery from NovoTech",
     ),
     # P_POLISH (pipe-sanding-polishing-machines) is written by tools/gecam_pages.py: the BT 114-S shares it with the Eurofintec pipe sanders
@@ -201,6 +206,9 @@ def build():
                           "origin_feature": {"title": "Made in Turkey", "text": "The shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses come from a Turkish press builder with 50 years of hydraulic press manufacturing, CE-certified with Siemens controls and European hydraulics."}})
         if slug == P_IRON:
             extra.update(IRON_GUIDE)
+        for k in ("range_pick", "range_cols", "range_lead", "range_caption", "range_note"):   # the all-models table under the hero (angle rolls)
+            if k in p:
+                extra[k] = p[k]
         write_category(slug, p, FAMILIES, SET, SECTION[slug], extra=extra)
     keys = register_images()
     vl_keys = {k for f in VL_IRON_FAMILIES for k in f["images"]}      # registered by tools/vl_sheet_pages.py (section value-sheet)

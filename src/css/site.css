@@ -842,3 +842,8 @@ body.ai-locked { overflow: hidden; }
 .article-page { max-width: 1000px; }
 .article-lead-figure img { max-height: none; width: 100%; }
 .article-related { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line-soft); }
+
+/* Hub: the kinds of machine compared (press brakes: hydraulic / electric / horizontal) */
+.compare-table td { vertical-align: top; line-height: 1.4; min-width: 200px; }
+.compare-table tbody th { white-space: normal; min-width: 130px; }
+.compare-table thead th { white-space: normal; }

@@ -830,7 +830,7 @@ PAGES = {
                    "stations and used without re-setting the ram, which saves set-up time on parts with several different bends."},
              FAQ_COMMON],
         faq_title="Questions we get asked about European-style punches",
-        related=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "dener-cnc-press-brakes.html", "label": "Dener CNC press brakes"},
+        related=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"},
                  {"href": "panel-bender.html", "label": "Panel benders"}],
     ),
     P_EUD: dict(
@@ -866,7 +866,7 @@ PAGES = {
                    "without a tool change. The pneumatic (PN) versions open and close on shop air."},
              FAQ_COMMON],
         faq_title="Questions we get asked about European-style dies",
-        related=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes · value line"}],
+        related=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "hydraulic-press-brake.html", "label": "NovoTech CNC press brakes · value line"}],
     ),
     P_TW: dict(
         title="Trumpf & Wila-Style Press Brake Tooling | NovoTech",

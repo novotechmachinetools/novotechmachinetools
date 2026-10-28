@@ -115,7 +115,7 @@ PAGE_LASER = dict(
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about Senfeng fiber lasers",
     related_pages=[{"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}, {"href": "panel-bender.html", "label": "Senfeng BDC panel benders"},
-                   {"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes · value line"},
+                   {"href": "hydraulic-press-brake.html", "label": "NovoTech CNC press brakes · value line"},
                    {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring after laser cutting"},
                    {"href": "hydraulic-shearing-machine.html", "label": "Value-line hydraulic shears"}],
     related_title="Machinery that works alongside a laser",
@@ -183,8 +183,8 @@ def register_images():
 
 ABOUT_SENFENG = ("Senfeng Laser has built fiber laser machines in Jinan, Shandong, since 2004: a 1.8 million ft² campus, its own laser sources, "
                  "cutting heads and welding guns, around 15,000 machines a year, 20 overseas branches and Senfeng Laser USA with a warehouse "
-                 "and service team. CE, FDA and ETL certified. NovoTech sells, installs and supports the machines in Canada from Mississauga, ON, Canada, "
-                 "Ontario — layout for your building, installation, operator training, a CSA-approved panel, a 1-year warranty and parts and "
+                 "and service team. CE, FDA and ETL certified. NovoTech sells, installs and supports the machines in Canada from Mississauga, ON, Canada "
+                 "— layout for your building, installation, operator training, a CSA-approved panel, a 1-year warranty and parts and "
                  "technical support in Canada.")
 BROCHURES = {
     "senfeng-sheet-lasers": dict(
@@ -251,14 +251,8 @@ def build():
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **NO_VIDEO}
     write_category(D.P_WELD, PAGE_WELD, fams, SET, "Laser welding", extra={**common, "nav_label": "Laser welding & cladding", "catalogue_pdf": pdf_weld})
-    # the sheet and tube lasers live in the 'dener' family set (tools/dener_pages.py writes it, Senfeng families included);
-    # their pages are the value-line pages of the two laser hubs
-    pdf_laser = pdf(PDF_LASER, "Download the Senfeng fiber laser brochure")
-    pdf_tube = pdf(PDF_TUBE, "Download the Senfeng tube laser brochure")
-    write_category(D.P_LASER, PAGE_LASER, [dict(f, pdf=pdf_laser) for f in D.LASER_FAMILIES], "dener", LN.SECTIONS["sheet"]["section"],
-                   hub=LN.hub("sheet"), siblings=LN.siblings("sheet"), extra={**common, "nav_label": "Senfeng fiber lasers", "catalogue_pdf": pdf_laser})
-    write_category(D.P_TUBE, PAGE_TUBE, [dict(f, pdf=pdf_tube) for f in D.TUBE_FAMILIES], "dener", LN.SECTIONS["tube"]["section"],
-                   hub=LN.hub("tube"), siblings=LN.siblings("tube"), extra={**common, "nav_label": "Senfeng tube lasers", "catalogue_pdf": pdf_tube})
+    # the sheet and tube lasers live in the 'dener' family set (tools/dener_pages.py writes it, Senfeng families included) and are
+    # shown on the pages per kind of laser (tools/laser_types.py), not on a Senfeng page
     keys = register_images()
     write_brochure_specs()
     used = {k for f in D.ALL for k in f["images"]}

@@ -587,6 +587,8 @@ def build():
     fams = D.NEW_FAMILIES + D2.GROUP_FAMILIES
     write_families(SET, fams)
     for slug, p in PAGES.items():
+        if slug == D.P_BRAKE:     # the brakes are a hub with one page per kind now — tools/brake_hub.py writes them (after this script)
+            continue
         write_page(slug, p, [f for f in fams if f["page"] == slug])
     for slug, x in EXTRA.items():
         write_extra(slug, x, [f for f in fams if f["page"] == slug])

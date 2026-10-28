@@ -1,10 +1,10 @@
 {
  "order": [
   "dn-eftl",
-  "dn-ftl",
   "vn-ult",
   "sf-t",
   "sf-plus",
+  "dn-ftl",
   "sf-heavy"
  ],
  "families": {
@@ -213,209 +213,7 @@
     "label": "Download the tube laser brochure",
     "size": "PDF · 1 MB · imperial units"
    },
-   "group": "tube-eftl"
-  },
-  "dn-ftl": {
-   "id": "dn-ftl",
-   "brand": "dener",
-   "name": "FTL tube and profile laser cutters, Ø0.6″ – 25.2″, 3 – 20 kW",
-   "short": "FTL tube lasers",
-   "models_label": "FTL 250 · 350 · 500 · 640",
-   "summary": "The heavy tube laser: four chuck sizes from Ø250 to Ø640 mm for structural tube, pipe and beams to 25.2″ across and 12 m long, up to 2,600 kg per bar on the 640 chuck and 12,000 kg on the long-bed 250 version. 3 to 20 kW sources cut wall thicknesses to 1″; the 5-axis head cuts bevels and weld preparations. For steel-construction, trailer, agricultural and equipment builders.",
-   "features": [
-    "Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 39.4 ft (12 m) and 5,732 lb",
-    "3 to 20 kW sources; 5-axis bevel head",
-    "Fiber laser source 3 – 20 kW, autofocus cutting head",
-    "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
-    "Automatic loader for bundles; tube supports that follow the cut; unloading table",
-    "CNC with tube nesting and import of STEP / IGES files; cutting database",
-    "Fume extraction through the tube; chip and slug collection",
-    "CE safety enclosure",
-    "CSA-approved electrical panel; 600 V with transformer"
-   ],
-   "optional": [
-    "Bevel (3D) cutting head",
-    "Longer loading and unloading, 29.5 and 39.4 ft (9 / 12 m)",
-    "Seam detection; tapping and drilling attachments",
-    "Dust collector",
-    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
-   ],
-   "images": [
-    "dn-tube-6",
-    "dn-tube-4",
-    "dn-tube-5",
-    "dn-tube-7"
-   ],
-   "videos": [
-    {
-     "id": "zPexjUvz7jg",
-     "title": "DENER FTL tube laser cutting machine",
-     "duration": "PT1M47S",
-     "thumb": "video-zPexjUvz7jg"
-    }
-   ],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "FTL tube and profile fiber lasers",
-      "sub": "4 chuck sizes · Ø0.6″ – 25.2″ · 3 – 20 kW",
-      "models": [
-       "FTL 250",
-       "FTL 350",
-       "FTL 500",
-       "FTL 640"
-      ],
-      "rows": [
-       {
-        "label": "Tube diameter",
-        "sub": "round",
-        "cells": [
-         "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
-         "Ø1.2 – 13.8″ (Ø30 – 350 mm)",
-         "Ø1.2 – 19.7″ (Ø30 – 500 mm)",
-         "Ø4.7 – 25.2″ (Ø120 – 640 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Profile size",
-        "sub": "square / rectangular",
-        "cells": [
-         "0.6 – 9.8″ (15 – 250 mm)",
-         "1.2 – 13.8″ (30 – 350 mm)",
-         "1.2 – 19.7″ (30 – 500 mm)",
-         "4.7 – 25.2″ (120 – 640 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Laser source power",
-        "sub": "options",
-        "cells": [
-         "3 / 6 / 12 / 20 kW",
-         "3 / 6 / 12 / 20 kW",
-         "3 / 6 / 12 / 20 kW",
-         "3 / 6 / 12 / 20 kW"
-        ],
-        "key": false
-       },
-       {
-        "label": "Max. tube length and weight",
-        "sub": "",
-        "cells": [
-         "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)",
-         "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)",
-         "39.4 ft, 4,630 lb (12 m, 2,100 kg)",
-         "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Max. speed",
-        "sub": "",
-        "cells": [
-         "262 ft/min (80 m/min)",
-         "177 ft/min (54 m/min)",
-         "82 ft/min (25 m/min)",
-         "82 ft/min (25 m/min)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Max. acceleration",
-        "sub": "",
-        "cells": [
-         "0.6 G",
-         "0.6 G",
-         "0.6 G",
-         "0.6 G"
-        ],
-        "key": false
-       },
-       {
-        "label": "Repeatability",
-        "sub": "",
-        "cells": [
-         "±0.05 mm (±0.002″)",
-         "±0.05 mm (±0.002″)",
-         "±0.1 mm (±0.004″)",
-         "±0.1 mm (±0.004″)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Voltage",
-        "sub": "",
-        "cells": [
-         "380 V 50/60 Hz · 600 V with transformer",
-         "380 V 50/60 Hz · 600 V with transformer",
-         "380 V 50/60 Hz · 600 V with transformer",
-         "380 V 50/60 Hz · 600 V with transformer"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "FTL 250",
-      "glance": [
-       "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
-       "0.6 – 9.8″ (15 – 250 mm)",
-       "3 / 6 / 12 / 20 kW",
-       "262 ft/min (80 m/min)",
-       "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)"
-      ]
-     },
-     {
-      "name": "FTL 350",
-      "glance": [
-       "Ø1.2 – 13.8″ (Ø30 – 350 mm)",
-       "1.2 – 13.8″ (30 – 350 mm)",
-       "3 / 6 / 12 / 20 kW",
-       "177 ft/min (54 m/min)",
-       "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)"
-      ]
-     },
-     {
-      "name": "FTL 500",
-      "glance": [
-       "Ø1.2 – 19.7″ (Ø30 – 500 mm)",
-       "1.2 – 19.7″ (30 – 500 mm)",
-       "3 / 6 / 12 / 20 kW",
-       "82 ft/min (25 m/min)",
-       "39.4 ft, 4,630 lb (12 m, 2,100 kg)"
-      ]
-     },
-     {
-      "name": "FTL 640",
-      "glance": [
-       "Ø4.7 – 25.2″ (Ø120 – 640 mm)",
-       "4.7 – 25.2″ (120 – 640 mm)",
-       "3 / 6 / 12 / 20 kW",
-       "82 ft/min (25 m/min)",
-       "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "tube",
-     "profile",
-     "power",
-     "speed",
-     "length"
-    ],
-    "caps": {},
-    "note": "Chuck size is the model number (250 = Ø250 mm); every chuck size is available with any of the listed laser sources. Loading length and bundle loader to suit the tube length; ask us for the cutting chart for your tube wall and material."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Dener-Tube-Lasers-2026.pdf",
-    "label": "Download the tube laser brochure",
-    "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "tube-ftl"
+   "group": "lt-premium-eftl"
   },
   "vn-ult": {
    "id": "vn-ult",
@@ -889,7 +687,7 @@
     "label": "Download the NovoTech tube laser brochure",
     "size": "PDF · 1 MB · imperial units"
    },
-   "group": "tube-novotech"
+   "group": "lt-value-ult"
   },
   "sf-t": {
    "id": "sf-t",
@@ -1387,7 +1185,7 @@
     "label": "Download the Senfeng tube laser brochure",
     "size": "PDF · 1 MB · imperial units"
    },
-   "group": "tube-senfeng"
+   "group": "lt-value-t"
   },
   "sf-plus": {
    "id": "sf-plus",
@@ -1733,7 +1531,209 @@
     "label": "Download the Senfeng tube laser brochure",
     "size": "PDF · 1 MB · imperial units"
    },
-   "group": "tube-senfeng"
+   "group": "lt-value-plus"
+  },
+  "dn-ftl": {
+   "id": "dn-ftl",
+   "brand": "dener",
+   "name": "FTL tube and profile laser cutters, Ø0.6″ – 25.2″, 3 – 20 kW",
+   "short": "FTL tube lasers",
+   "models_label": "FTL 250 · 350 · 500 · 640",
+   "summary": "The heavy tube laser: four chuck sizes from Ø250 to Ø640 mm for structural tube, pipe and beams to 25.2″ across and 12 m long, up to 2,600 kg per bar on the 640 chuck and 12,000 kg on the long-bed 250 version. 3 to 20 kW sources cut wall thicknesses to 1″; the 5-axis head cuts bevels and weld preparations. For steel-construction, trailer, agricultural and equipment builders.",
+   "features": [
+    "Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 39.4 ft (12 m) and 5,732 lb",
+    "3 to 20 kW sources; 5-axis bevel head",
+    "Fiber laser source 3 – 20 kW, autofocus cutting head",
+    "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
+    "Automatic loader for bundles; tube supports that follow the cut; unloading table",
+    "CNC with tube nesting and import of STEP / IGES files; cutting database",
+    "Fume extraction through the tube; chip and slug collection",
+    "CE safety enclosure",
+    "CSA-approved electrical panel; 600 V with transformer"
+   ],
+   "optional": [
+    "Bevel (3D) cutting head",
+    "Longer loading and unloading, 29.5 and 39.4 ft (9 / 12 m)",
+    "Seam detection; tapping and drilling attachments",
+    "Dust collector",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-tube-6",
+    "dn-tube-4",
+    "dn-tube-5",
+    "dn-tube-7"
+   ],
+   "videos": [
+    {
+     "id": "zPexjUvz7jg",
+     "title": "DENER FTL tube laser cutting machine",
+     "duration": "PT1M47S",
+     "thumb": "video-zPexjUvz7jg"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "FTL tube and profile fiber lasers",
+      "sub": "4 chuck sizes · Ø0.6″ – 25.2″ · 3 – 20 kW",
+      "models": [
+       "FTL 250",
+       "FTL 350",
+       "FTL 500",
+       "FTL 640"
+      ],
+      "rows": [
+       {
+        "label": "Tube diameter",
+        "sub": "round",
+        "cells": [
+         "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
+         "Ø1.2 – 13.8″ (Ø30 – 350 mm)",
+         "Ø1.2 – 19.7″ (Ø30 – 500 mm)",
+         "Ø4.7 – 25.2″ (Ø120 – 640 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Profile size",
+        "sub": "square / rectangular",
+        "cells": [
+         "0.6 – 9.8″ (15 – 250 mm)",
+         "1.2 – 13.8″ (30 – 350 mm)",
+         "1.2 – 19.7″ (30 – 500 mm)",
+         "4.7 – 25.2″ (120 – 640 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source power",
+        "sub": "options",
+        "cells": [
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW",
+         "3 / 6 / 12 / 20 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. tube length and weight",
+        "sub": "",
+        "cells": [
+         "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)",
+         "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)",
+         "39.4 ft, 4,630 lb (12 m, 2,100 kg)",
+         "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. speed",
+        "sub": "",
+        "cells": [
+         "262 ft/min (80 m/min)",
+         "177 ft/min (54 m/min)",
+         "82 ft/min (25 m/min)",
+         "82 ft/min (25 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "0.6 G",
+         "0.6 G",
+         "0.6 G",
+         "0.6 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability",
+        "sub": "",
+        "cells": [
+         "±0.05 mm (±0.002″)",
+         "±0.05 mm (±0.002″)",
+         "±0.1 mm (±0.004″)",
+         "±0.1 mm (±0.004″)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Voltage",
+        "sub": "",
+        "cells": [
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer",
+         "380 V 50/60 Hz · 600 V with transformer"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "FTL 250",
+      "glance": [
+       "Ø0.6 – 9.8″ (Ø15 – 250 mm)",
+       "0.6 – 9.8″ (15 – 250 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "262 ft/min (80 m/min)",
+       "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)"
+      ]
+     },
+     {
+      "name": "FTL 350",
+      "glance": [
+       "Ø1.2 – 13.8″ (Ø30 – 350 mm)",
+       "1.2 – 13.8″ (30 – 350 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "177 ft/min (54 m/min)",
+       "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)"
+      ]
+     },
+     {
+      "name": "FTL 500",
+      "glance": [
+       "Ø1.2 – 19.7″ (Ø30 – 500 mm)",
+       "1.2 – 19.7″ (30 – 500 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "82 ft/min (25 m/min)",
+       "39.4 ft, 4,630 lb (12 m, 2,100 kg)"
+      ]
+     },
+     {
+      "name": "FTL 640",
+      "glance": [
+       "Ø4.7 – 25.2″ (Ø120 – 640 mm)",
+       "4.7 – 25.2″ (120 – 640 mm)",
+       "3 / 6 / 12 / 20 kW",
+       "82 ft/min (25 m/min)",
+       "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "tube",
+     "profile",
+     "power",
+     "speed",
+     "length"
+    ],
+    "caps": {},
+    "note": "Chuck size is the model number (250 = Ø250 mm); every chuck size is available with any of the listed laser sources. Loading length and bundle loader to suit the tube length; ask us for the cutting chart for your tube wall and material."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Tube-Lasers-2026.pdf",
+    "label": "Download the tube laser brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "lt-premium-ftl"
   },
   "sf-heavy": {
    "id": "sf-heavy",
@@ -2408,7 +2408,7 @@
     "label": "Download the Senfeng tube laser brochure",
     "size": "PDF · 1 MB · imperial units"
    },
-   "group": "tube-senfeng"
+   "group": "lt-value-heavy"
   }
  }
 }

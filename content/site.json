@@ -82,16 +82,16 @@
      "href": "press-brake.html",
      "children": [
       {
-       "label": "Dener CNC press brakes · premium line",
-       "href": "dener-cnc-press-brakes.html"
+       "label": "Hydraulic press brakes",
+       "href": "hydraulic-press-brake.html"
       },
       {
-       "label": "NovoTech CNC press brakes · value line",
-       "href": "novotech-cnc-press-brakes.html"
+       "label": "Electric press brakes",
+       "href": "electric-press-brake.html"
       },
       {
-       "label": "Compact hydraulic press brakes",
-       "href": "compact-hydraulic-press-brakes.html"
+       "label": "Horizontal press brakes",
+       "href": "horizontal-press-brake.html"
       }
      ]
     },
@@ -108,16 +108,24 @@
      "href": "laser-cutting-machine.html",
      "children": [
       {
-       "label": "Dener fiber lasers · premium line",
-       "href": "dener-fiber-lasers.html"
+       "label": "Enclosed lasers",
+       "href": "enclosed-fiber-laser.html"
       },
       {
-       "label": "NovoTech fiber lasers · value line",
-       "href": "novotech-fiber-lasers.html"
+       "label": "Open-type lasers",
+       "href": "open-type-fiber-laser.html"
       },
       {
-       "label": "Senfeng fiber lasers · value line",
-       "href": "senfeng-fiber-lasers.html"
+       "label": "Plate lasers",
+       "href": "large-format-plate-laser.html"
+      },
+      {
+       "label": "Sheet & tube lasers",
+       "href": "sheet-and-tube-laser.html"
+      },
+      {
+       "label": "3D & coil-fed lasers",
+       "href": "3d-laser-and-coil-fed-line.html"
       }
      ]
     },
@@ -126,16 +134,12 @@
      "href": "tube-laser-cutting-machine.html",
      "children": [
       {
-       "label": "Dener tube lasers · premium line",
-       "href": "dener-tube-lasers.html"
+       "label": "Tube laser cutters",
+       "href": "tube-laser-cutter.html"
       },
       {
-       "label": "NovoTech tube lasers · value line",
-       "href": "novotech-tube-lasers.html"
-      },
-      {
-       "label": "Senfeng tube lasers · value line",
-       "href": "senfeng-tube-lasers.html"
+       "label": "Heavy-duty tube lasers",
+       "href": "heavy-duty-tube-laser.html"
       }
      ]
     },
@@ -148,19 +152,15 @@
      "href": "shear-cutting.html",
      "children": [
       {
-       "label": "Dener hydraulic shears · premium line",
-       "href": "dener-shears.html"
-      },
-      {
-       "label": "NovoTech mechanical shears · premium line",
-       "href": "novotech-mechanical-shears.html"
-      },
-      {
-       "label": "NovoTech hydraulic shears · value line",
+       "label": "Hydraulic shears",
        "href": "hydraulic-shearing-machine.html"
       },
       {
-       "label": "NovoTech sheet metal shears · value line",
+       "label": "Mechanical guillotine shears",
+       "href": "mechanical-guillotine-shear.html"
+      },
+      {
+       "label": "Sheet metal shears",
        "href": "sheet-metal-shears.html"
       }
      ]
@@ -287,7 +287,33 @@
     },
     {
      "label": "Sheet metal brakes & folders",
-     "href": "folder-sheet-metal-brake.html"
+     "href": "folder-sheet-metal-brake.html",
+     "children": [
+      {
+       "label": "Box and pan brakes",
+       "href": "box-and-pan-brake.html"
+      },
+      {
+       "label": "Hand brakes & folders",
+       "href": "sheet-metal-hand-brake.html"
+      },
+      {
+       "label": "Magnetic brakes",
+       "href": "magnetic-sheet-metal-brake.html"
+      },
+      {
+       "label": "Hydraulic & CNC folders",
+       "href": "hydraulic-folding-machine.html"
+      },
+      {
+       "label": "Roofing & siding brakes",
+       "href": "roofing-siding-brake.html"
+      },
+      {
+       "label": "3-in-1 shear, brake & roll",
+       "href": "shear-brake-roll-3-in-1.html"
+      }
+     ]
     },
     {
      "label": "Horizontal press brakes",

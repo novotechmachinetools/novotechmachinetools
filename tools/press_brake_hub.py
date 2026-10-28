@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""The press-brake hub (press-brake.html, hub.html template): three product pages — Dener CNC press brakes (premium line),
-NovoTech CNC press brakes (value line, hydraulic + electric + NC) and the ISITAN compact hydraulic press brakes — introduced
-separately with their family cards, plus the whole range in one capacity table, like the rebar hub.
+"""The press-brake hub (press-brake.html, hub.html template): a short page that sends the buyer to the right kind of
+machine — hydraulic press brakes or electric press brakes (tools/press_brake_nav.py), plus the horizontal press brakes —
+with a comparison of the three, the whole range in one capacity table and the questions we get asked.
 
-The hub reads the families the three generators wrote (content/families/dener.json, value-sheet.json, edgebender.json) into
-its own set content/families/press-brakes.json, so run it AFTER tools/dener_pages.py, tools/vl_sheet_pages.py and
-tools/isitan_pressbrake.py:
+The hub reads the families the three supplier generators wrote (content/families/dener.json, value-sheet.json,
+edgebender.json) into its own set content/families/press-brakes.json, so run it AFTER tools/dener_pages.py,
+tools/vl_sheet_pages.py and tools/isitan_pressbrake.py, and BEFORE tools/press_brake_types.py (the two type pages):
 
-    python3 tools/press_brake_hub.py
+    python3 tools/press_brake_hub.py && python3 tools/press_brake_types.py
 """
 import json
 import os
@@ -18,36 +18,34 @@ import press_brake_nav as PBN
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "press-brakes"
 
-# (family set, page slug, family ids in display order)
-SOURCES = [("dener", "dener-cnc-press-brakes", ["dn-xl-small", "dn-xl-large", "dn-xh", "dn-ddm", "dn-dds"]),
-           ("value-sheet", "novotech-cnc-press-brakes", ["vl-wad-small", "vl-wad-large", "vl-wad-heavy", "vl-wadg", "vl-wadg-mini", "vl-nc-small", "vl-nc-large"]),
-           ("edgebender", "compact-hydraulic-press-brakes", ["isitan-edgebender-cnc", "isitan-edgebender-nc"])]
+# (family set, page slug, family ids in display order) — from the page map in press_brake_nav
+SOURCES = PBN.family_sources()
 
 HUB_PAGE = dict(
-    title="Press Brakes for Sale in Canada, 22–1,323 Tons | NovoTech",
-    meta="Every press brake NovoTech sells in Canada: Dener CNC hydraulic, hybrid and servo-electric brakes, NovoTech's value-line hydraulic and electric brakes, and ISITAN compact brakes — 22 to 1,323 US tons.",
-    h1="Press brakes — CNC hydraulic, hybrid and electric, 22 to 1,323 US tons",
+    title="Press Brakes for Sale in Canada — Hydraulic & Electric, 22–1,323 Tons | NovoTech",
+    meta="Every press brake NovoTech sells in Canada, by kind: hydraulic CNC, hybrid and NC press brakes to 1,323 US tons, servo-electric and ball-screw press brakes to 220 tons, and horizontal press brakes — with the capacity table for the whole range.",
+    h1="Press brakes — hydraulic and electric, 22 to 1,323 US tons",
     intro="A press brake bends sheet and plate between a punch and a V-die; the control sets the back gauge, the ram depth and the angle, and the "
-          "operator loads the sheet and presses the pedal. NovoTech sells three lines of press brakes in Canada, each on its own page: the "
-          "Dener CNC press brakes — the premium line, made in Turkey, hydraulic XL to 661 US tons and 20 ft, the XH hybrid and the DDM "
-          "servo-electric; NovoTech's own value-line CNC press brakes — hydraulic 55 to 331 tons and heavy-duty to 1,323 tons, electric servo "
-          "brakes 3 to 176 tons and NC torsion-bar brakes from 33 tons, built in China to our specification; and the ISITAN compact hydraulic "
-          "press brakes, 33 to 66 tons over 4 to 7 ft for the sheet-metal shop. Below, each line in brief and the whole range in one table; "
-          "every machine comes with a CSA-approved panel, European-style tooling, a 1-year warranty and installation, training and parts "
-          "from Mississauga, ON, Canada.",
-    points=["Dener premium line: XL hydraulic 66 – 661 tons × 5 – 20 ft, XH hybrid, DDM servo-electric 44 – 220 tons, DDS from 22 tons",
-            "NovoTech value line: hydraulic CNC 55 – 1,323 tons, electric 3 – 176 tons, NC 33 – 441 tons — Delem, Hawe, Estun",
-            "ISITAN compact: 33 – 66 tons × 4.2 – 6.9 ft, NC or CNC with Cybelec — plus Eurostamp tooling stocked in Canada"],
-    hero="dn-xl-1", minis=["vl-wad-1", "is-eb-1240-cnc"],
+          "operator loads the sheet and presses the pedal. NovoTech sells two kinds in Canada, each on its own page: hydraulic press brakes — "
+          "the lowest price per ton and full force over the whole stroke, from the 33-ton compact and NC machines to CNC brakes of 1,323 US "
+          "tons and 26 ft, in a premium line made in Turkey and a value line built to our specification — and electric press brakes, servo-"
+          "driven with no hydraulic oil, 3 to 220 US tons, twice the speed and about 70 % less power for sheet work. A third page covers the "
+          "horizontal press brakes that bend bar, pipe and busbar. Below, the three kinds compared, every model in one table and the questions "
+          "we get asked; every machine comes with a CSA-approved panel, European-style tooling, a 1-year warranty and installation, training and "
+          "parts from Mississauga, ON, Canada.",
+    points=["Hydraulic: CNC 55 – 1,323 US tons × 4 – 26 ft, XH hybrid with servo pump, NC torsion-bar from 33 tons, compact 33 – 66 tons × 4 – 7 ft",
+            "Electric: servo-electric 44 – 220 tons × 5 – 13 ft and ball-screw 3 – 176 tons — ±0.01 mm, no oil, power only while the ram moves",
+            "Horizontal: 11 – 165 ton NC presses that bend, punch, shear and straighten flat bar, pipe and busbar"],
+    hero="dn-xl-1", minis=["dn-ddm-2", "tb-hp80"],
     range_cols=["Bending force", "Bending length", "Stroke", "Daylight", "Weight"],
-    range_lead="Every press brake model NovoTech sells, in one table: bending force and length, ram stroke, daylight and weight. Each row links to the full specification table on the line's page.",
-    range_caption="Press brakes supplied by NovoTech — Dener, NovoTech value line and ISITAN",
+    range_lead="Every press brake model NovoTech sells, in one table: bending force and length, ram stroke, daylight and weight. Each row links to the full specification table on the hydraulic or electric page.",
+    range_caption="Press brakes supplied by NovoTech — hydraulic and electric, premium and value lines",
     range_note="Bending force in US tons (metric tonnes); XH hybrid packages are fitted to the XL frames, so stroke and daylight are those of the XL of the same tonnage. "
                "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208, 240 and 480 V on request.",
-    faq=[{"q": "Dener, NovoTech value line or ISITAN — which press brake should I buy?",
-          "a": "By the work. For plate and production — 3/8″ and 1/2″ over 10 to 20 ft, two shifts, a long options list — the Dener XL and XH are the machines; they are built in Turkey on the heaviest frame, with ESA or Delem controls and Dener Canada parts in Mississauga, ON, Canada. The NovoTech value line is the same architecture — monoblock frame, Hawe servo valves, linear scales, Delem control — built in China to our specification at about two-thirds of the price: the right buy for a job shop that needs a 100 – 300 ton CNC brake, an electric brake for sheet, or an NC brake for repeat parts. The ISITAN Edgebenders are the compact 33 – 66 ton machines for HVAC, enclosures and brackets where a 100-ton brake is more than you need. All three are installed and supported by the same NovoTech technicians."},
-         {"q": "Hydraulic, hybrid or electric?",
-          "a": "Hydraulic gives the lowest price per ton and full force over the whole stroke — the machine for thick plate. A hybrid (Dener XH) is a hydraulic brake with a servo-driven pump: 42 – 58 % less energy, faster, quieter, for a shop that runs the brake all day. An electric brake (Dener DDM, NovoTech WADG) has no oil at all: ±0.01 mm repeatability, bending speeds to 30 mm/s and about 70 % less power — usually the better buy for 16 ga to 1/4″ sheet. Above about 150 tons and on 3/8″ plate, hydraulic still wins."},
+    faq=[{"q": "Hydraulic, hybrid or electric — which press brake should I buy?",
+          "a": "Hydraulic gives the lowest price per ton and full force over the whole stroke — the machine for thick plate, long parts and the widest tonnage range (33 to 1,323 US tons here). A hybrid (the Dener XH) is a hydraulic brake with a servo-driven pump: 42 – 58 % less energy, faster, quieter, for a shop that runs the brake all day. An electric brake (Dener DDM, NovoTech WADG) has no oil at all: ±0.01 mm repeatability, bending speeds to 30 mm/s and about 70 % less power — usually the better buy for 16 ga to 1/4″ sheet in a job shop or a clean environment. Above about 150 tons and on 3/8″ plate, hydraulic still wins. Bar, pipe and busbar are bent on a horizontal press brake, a different machine with its own page."},
+         {"q": "Premium line or value line?",
+          "a": "Both kinds come in two lines, on the same page. The premium line is made in Turkey by Dener on the heaviest frame, with ESA or Delem controls, the longest options list and Dener Canada parts in Mississauga, ON, Canada — the machine for plate and production, two shifts a day. NovoTech's own value line is the same architecture — monoblock frame, Hawe servo valves, linear scales, Delem control — built in China to our specification at about two-thirds of the price: the right buy for a job shop that needs a 100 – 300 ton CNC brake, an electric brake for sheet or an NC brake for repeat parts. The ISITAN compact brakes, 33 – 66 tons over 4 – 7 ft, are for HVAC, enclosures and brackets where a 100-ton machine is more than you need. All are installed and supported by the same NovoTech technicians."},
          {"q": "How much tonnage and length do I need?",
           "a": "Air bending mild steel takes about 575 × t² ÷ V US tons per foot, with the thickness t and the V opening in inches: in the standard V = 8 × thickness die that is about 4 tons per foot for 16 ga, 9 for 1/8″, 13.5 for 3/16″, 18 for 1/4″ and 36 for 1/2″ (29 in a 10 × t die); stainless needs about 50 % more, aluminum about half. Add a foot of length to the longest part you bend and about 20 % headroom. A 10 ft × 1/4″ shop is a 175 – 220 ton machine; 10 ft × 3/8″ a 250 – 320 ton machine; 13 ft × 1/2″, bent in a 5 – 6″ V, a 400 – 450 ton machine. Tell us your thickest and longest bend and we size the brake and the tooling."},
          {"q": "CNC or NC?",
@@ -62,9 +60,27 @@ HUB_PAGE = dict(
     faq_title="Questions we get asked about press brakes",
     related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
                    {"href": "shear-cutting.html", "label": "Metal shears"}, {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"},
-                   {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}, {"href": "v-grooving-machine.html", "label": "V-grooving machines"}],
+                   {"href": "v-grooving-machine.html", "label": "V-grooving machines"}],
     related_title="Machinery that works alongside a press brake",
 )
+
+# the three kinds side by side, above the range table (hub.html renders page.compare)
+COMPARE = {
+    "title": "Which kind of press brake?",
+    "lead": "The three kinds NovoTech sells, side by side. Tonnage, length and the material you bend decide; the pages explain each line and every model.",
+    "cols": ["", "Hydraulic press brakes", "Electric press brakes", "Horizontal press brakes"],
+    "rows": [
+        ["Bends", "Sheet and plate, 16 ga to 1/2″ and beyond", "Sheet, 20 ga to 1/4″ (3/8″ on the largest)", "Flat bar, pipe, tube, busbar — bend, punch, shear, straighten"],
+        ["Force and length", "33 – 1,323 US tons × 4 – 26 ft", "3 – 220 US tons × 1.6 – 13 ft", "11 – 165 US tons, 8 – 24″ stroke"],
+        ["Drive", "Hydraulic cylinders; XH hybrid adds a servo pump", "Servo motors and ball screws, no hydraulic oil", "Hydraulic cylinder, NC control with recipes"],
+        ["Strengths", "Lowest price per ton, full force all stroke, widest range", "±0.01 mm, about twice the speed, ~70 % less power, clean and quiet", "One machine for bar and pipe work a press brake cannot do"],
+        ["Typical buyer", "Steel fabricators, plate work, production shops", "Job shops, sheet metal, enclosures, clean rooms", "Rail, electrical, structural and repair shops"],
+        ["Page", {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "electric-press-brake.html", "label": "Electric press brakes"}, {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
+    ],
+}
+EXTRA_CARDS = [{"href": "horizontal-press-brake.html", "title": "Horizontal press brakes — bar, pipe and busbar, 11 to 165 US tons", "image": "tb-hp80",
+                "blurb": "NC hydraulic horizontal presses that bend, punch, shear and straighten flat bar, pipe, bar and busbar — a different machine from the vertical press brake, on its own page.",
+                "note": "2 machine families · specifications, photos and videos"}]
 
 
 def build():
@@ -74,6 +90,7 @@ def build():
         for fid in ids:
             f = dict(fs[fid])
             f["page"] = slug
+            f["group"] = PBN.group_of(fid)      # the section of the type page it sits in
             fams.append(f)
     write_families(SET, fams)
     pdfs = []
@@ -86,17 +103,18 @@ def build():
     write_hub(PBN.HUB, {**HUB_PAGE, "artifact_title": "Press Brakes", "nav_label": "All press brakes", "related_blurb": PBN.hub()["blurb"]},
               fams, SET, PBN.SECTION, subpages,
               extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": ["bending_force", "bending_length", "stroke", "daylight", "weight"],
-                     "hero_brand_line": "Dener Makina builds the premium line in Kayseri, Turkey; the NovoTech value line is built in China to our specification; ISITAN builds the compact brakes in Bursa, Turkey. All sold, installed and supported in Canada by NovoTech.",
-                     "origin_feature": {"title": "Three lines, one supplier", "text": "Premium Dener, NovoTech's own value line and the ISITAN compact brakes — every one with a CSA-approved panel, European tooling, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
+                     "hero_brand_line": "The premium line is built by Dener Makina in Kayseri, Turkey; the NovoTech value line is built in China to our specification; the compact brakes by ISITAN in Bursa, Turkey; the horizontal presses by Tubend. All sold, installed and supported in Canada by NovoTech.",
+                     "origin_feature": {"title": "Two kinds, two lines, one supplier", "text": "Hydraulic or electric, premium or value — every press brake comes with a CSA-approved panel, European tooling, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
-                     "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"]})
+                     "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"],
+                     "hub_compact": True, "compare": COMPARE, "extra_cards": EXTRA_CARDS, "subpage_link": "all models, specifications and photos"})
     # the hub's subpages carry the line class for the cards (premium / value)
     path = os.path.join(ROOT, "content", "pages", f"{PBN.HUB}.json")
     page = json.load(open(path, encoding="utf-8"))
     for sp, (_, _, _, _, _, line) in zip(page["subpages"], PBN.SUBPAGES):
         if line:
             sp["line"] = line
-        sp["cards_title"] = sp["title"].split(" — ")[0] + " — the line-up"
+        sp["cards_title"] = sp["title"].split(" — ")[0] + " — every family"
     json.dump(page, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print(f"press-brake hub: {len(fams)} families on {len(subpages)} pages · {len(pdfs)} brochures")
 

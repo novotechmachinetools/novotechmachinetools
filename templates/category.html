@@ -56,6 +56,28 @@
 </nav>
 
 <div class="wrap page-body">
+{% if page.range_rows %}
+<section class="group" id="range-at-a-glance" aria-labelledby="range-title">
+  <header class="group-head">
+    <h2 id="range-title">{{ page.range_title or 'Every model at a glance' }}</h2>
+    <p class="group-lead">{{ page.range_lead }}</p>
+  </header>
+  <div class="specs">
+    <section class="table-scroll" tabindex="0" aria-label="All models at a glance">
+      <table class="spec-table spec-table-range">
+        <caption>{{ page.range_caption }}</caption>
+        <thead><tr><th scope="col" class="label-col">Model</th><th scope="col">{{ page.range_second_col or 'Group' }}</th>{% for c in page.range_cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for r in page.range_rows %}
+          <tr><th scope="row"><a href="{{ r.href }}">{{ r.model }}</a><small>{{ r.family }}</small></th><td>{{ r.kind }}</td>{% for c in r.cols %}<td>{{ c }}</td>{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </div>
+  {% if page.range_note %}<p class="table-note">{{ page.range_note }}</p>{% endif %}
+</section>
+{% endif %}
 {% for g in page.groups %}
 <section class="group" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
   <header class="group-head{{ ' has-brand' if g.brand else '' }}">

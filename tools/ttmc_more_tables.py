@@ -1295,7 +1295,7 @@ CAT["tt-pbb"] = ["PBB: fully welded, compact, low maintenance; simple and safe; 
                  "MFS 2020: segments 25 – 500 mm; foot control; MF 3020: one-piece blade, foot control", "EFMS: segments 25 – 400 mm; EFM one-piece blade; foot pedal operation"]
 
 # PDF p74 – p75 (143 – 145) — hydraulic folding machines.  The WC67Y / WA67Y torsion-bar press brakes on p75 right are NOT
-# listed: they are the NovoTech value-line NC press brakes (vl-nc-small / vl-nc-large on novotech-cnc-press-brakes.html).
+# listed: they are the NovoTech value-line NC press brakes (vl-nc-small / vl-nc-large on hydraulic-press-brake.html).
 TAB["tt-hw"] = [
     table("HW1220×3.5 – HW3050×3.5", "Hydraulic folding machines, 10 ga × 4 – 10 ft, manual back gauge", ["HW1220×3.5", "HW1830×3.5", "HW2440×3.5", "HW3050×3.5"], [
         ("*Bending length", "TXT", ["48″ (1,220 mm)", "72″ (1,830 mm)", "96″ (2,440 mm)", "120″ (3,050 mm)"]),

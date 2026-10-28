@@ -3,17 +3,17 @@
   "dn-xl-small",
   "dn-xl-large",
   "dn-xh",
-  "dn-ddm",
-  "dn-dds",
   "vl-wad-small",
   "vl-wad-large",
   "vl-wad-heavy",
-  "vl-wadg",
-  "vl-wadg-mini",
   "vl-nc-small",
   "vl-nc-large",
   "isitan-edgebender-cnc",
-  "isitan-edgebender-nc"
+  "isitan-edgebender-nc",
+  "dn-ddm",
+  "dn-dds",
+  "vl-wadg",
+  "vl-wadg-mini"
  ],
  "families": {
   "dn-xl-small": {
@@ -447,7 +447,7 @@
     "label": "Download the hydraulic & hybrid press brake brochure",
     "size": "PDF · 9 MB · imperial units"
    },
-   "group": "pb-hydraulic"
+   "group": "pb-premium"
   },
   "dn-xl-large": {
    "id": "dn-xl-large",
@@ -918,7 +918,7 @@
     "label": "Download the hydraulic & hybrid press brake brochure",
     "size": "PDF · 9 MB · imperial units"
    },
-   "group": "pb-hydraulic"
+   "group": "pb-premium"
   },
   "dn-xh": {
    "id": "dn-xh",
@@ -1248,588 +1248,6 @@
     "size": "PDF · 9 MB · imperial units"
    },
    "group": "pb-hybrid"
-  },
-  "dn-ddm": {
-   "id": "dn-ddm",
-   "brand": "dener",
-   "name": "DDM servo-electric CNC press brakes, 44 – 220 US tons × 5 – 13.4 ft",
-   "short": "DDM servo-electric press brakes",
-   "models_label": "DDM 4015 – DDM 20040 · 9 models",
-   "summary": "A full-electric press brake with no hydraulic oil: servo motors drive the ram through belts and pulleys, bending at 20 mm/s on every model — twice the speed of a hydraulic — with 0.01 mm ram repeatability and power drawn only while the ram moves. Nine models from 44 US tons × 5 ft to 220 US tons × 13.4 ft, all with the 21″ ESA S875 W 3D control, four axes (Y1, Y2, X, R) and European tooling as standard; robot cells, 6-axis back gauges and angle measurement as options. Quiet, clean and fast — the machine for a job shop that bends all day.",
-   "features": [
-    "Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability",
-    "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake",
-    "21″ ESA S875 W 3D CNC control",
-    "4 axes: Y1, Y2, X, R",
-    "European-type segmented punch and die clamping",
-    "Side and rear safety guards; anti-panic emergency-stop pedal",
-    "Electrical cabinet cooling; 380/600 V 3-phase, CSA-approved panel",
-    "Servo-electric drive — no hydraulic oil, start/stop energy use"
-   ],
-   "optional": [
-    "Delem DA-66S or DA-69S 3D control",
-    "X-R-Z1-Z2, X1-X2-R-Z1-Z2, ATF X1-X2-R1-R2-Z1-Z2 or X-Prime back gauge",
-    "Fiessler AKAS 2 M(P) safety barrier or DSP front laser safety",
-    "Manual or automatic crowning",
-    "CE-standard light barrier; sheet follower",
-    "Automatic angle measurement",
-    "Pneumatic or Wila mechanical / hydraulic clamping",
-    "Robot bending cell",
-    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
-   ],
-   "images": [
-    "dn-ddm-2",
-    "dn-ddm-1",
-    "dn-ddm-3",
-    "dn-ddm-web-1",
-    "dn-ddm-video-1",
-    "dn-ddm-control"
-   ],
-   "videos": [
-    {
-     "id": "_Aqyyfk97KI",
-     "title": "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake",
-     "duration": "PT0M57S",
-     "thumb": "video-_Aqyyfk97KI"
-    },
-    {
-     "id": "dlmcihzfRuI",
-     "title": "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake",
-     "duration": "PT1M7S",
-     "thumb": "video-dlmcihzfRuI"
-    },
-    {
-     "id": "ZujRJUhckG4",
-     "title": "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake",
-     "duration": "PT0M51S",
-     "thumb": "video-ZujRJUhckG4"
-    },
-    {
-     "id": "da7UnOripzc",
-     "title": "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake",
-     "duration": "PT0M56S",
-     "thumb": "video-da7UnOripzc"
-    },
-    {
-     "id": "30squAhhy_o",
-     "title": "CNC hydraulic press brake vs. servo-electric press brake",
-     "duration": "PT2M32S",
-     "thumb": "video-30squAhhy_o"
-    },
-    {
-     "id": "qLRQDobmnXQ",
-     "title": "DENER DDM servo-electric press brake robot cell",
-     "duration": "PT0M54S",
-     "thumb": "video-qLRQDobmnXQ"
-    },
-    {
-     "id": "2_Vz-v-rFqU",
-     "title": "DDM electric press brake with Wila hydraulic clamping",
-     "duration": "PT0M38S",
-     "thumb": "video-2_Vz-v-rFqU"
-    },
-    {
-     "id": "IGgudJFrO-I",
-     "title": "DDM electric press brake bending demonstration",
-     "duration": "PT1M0S",
-     "thumb": "video-IGgudJFrO-I"
-    }
-   ],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "DDM servo-electric press brakes",
-      "sub": "9 models · 44 – 220 US tons · 5 – 13.4 ft",
-      "models": [
-       "DDM 4015",
-       "DDM 5020",
-       "DDM 6525",
-       "DDM 8025",
-       "DDM 10030",
-       "DDM 13030",
-       "DDM 15030",
-       "DDM 17535",
-       "DDM 20040"
-      ],
-      "rows": [
-       {
-        "label": "Bending force",
-        "sub": "",
-        "cells": [
-         "44 US tons (40 t)",
-         "55 US tons (50 t)",
-         "72 US tons (65 t)",
-         "88 US tons (80 t)",
-         "110 US tons (100 t)",
-         "143 US tons (130 t)",
-         "165 US tons (150 t)",
-         "193 US tons (175 t)",
-         "220 US tons (200 t)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending length",
-        "sub": "",
-        "cells": [
-         "5 ft · 60.2″ (1,530 mm)",
-         "6.7 ft · 80.3″ (2,040 mm)",
-         "8.4 ft · 100.4″ (2,550 mm)",
-         "8.4 ft · 100.4″ (2,550 mm)",
-         "10 ft · 120.1″ (3,050 mm)",
-         "10 ft · 120.1″ (3,050 mm)",
-         "10 ft · 120.1″ (3,050 mm)",
-         "11.7 ft · 140.6″ (3,570 mm)",
-         "13.4 ft · 160.6″ (4,080 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Daylight",
-        "sub": "open height",
-        "cells": [
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)",
-         "23.2″ (590 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Approach speed",
-        "sub": "",
-        "cells": [
-         "7.09 in/s (180 mm/s)",
-         "5.91 in/s (150 mm/s)",
-         "5.12 in/s (130 mm/s)",
-         "3.94 in/s (100 mm/s)",
-         "2.95 in/s (75 mm/s)",
-         "3.15 in/s (80 mm/s)",
-         "3.94 in/s (100 mm/s)",
-         "3.35 in/s (85 mm/s)",
-         "2.95 in/s (75 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Bending speed",
-        "sub": "",
-        "cells": [
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)",
-         "0.79 in/s (20 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Return speed",
-        "sub": "",
-        "cells": [
-         "7.09 in/s (180 mm/s)",
-         "5.91 in/s (150 mm/s)",
-         "5.12 in/s (130 mm/s)",
-         "3.94 in/s (100 mm/s)",
-         "2.95 in/s (75 mm/s)",
-         "3.15 in/s (80 mm/s)",
-         "3.94 in/s (100 mm/s)",
-         "3.35 in/s (85 mm/s)",
-         "2.95 in/s (75 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Servo motor power",
-        "sub": "",
-        "cells": [
-         "14.8 HP (11 kW)",
-         "14.8 HP (11 kW)",
-         "14.8 HP (11 kW)",
-         "14.8 HP (11 kW)",
-         "14.8 HP (11 kW)",
-         "16.8 HP (12.5 kW)",
-         "29.5 HP (22 kW)",
-         "29.5 HP (22 kW)",
-         "29.5 HP (22 kW)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "sub": "",
-        "cells": [
-         "105 × 90 × 100″ (2,670 × 2,280 × 2,530 mm)",
-         "125 × 90 × 100″ (3,180 × 2,280 × 2,530 mm)",
-         "145 × 90 × 100″ (3,680 × 2,280 × 2,530 mm)",
-         "145 × 90 × 100″ (3,680 × 2,280 × 2,530 mm)",
-         "166 × 89 × 100″ (4,220 × 2,260 × 2,530 mm)",
-         "167 × 91 × 105″ (4,230 × 2,300 × 2,660 mm)",
-         "188 × 98 × 111″ (4,770 × 2,480 × 2,820 mm)",
-         "211 × 98 × 111″ (5,370 × 2,480 × 2,820 mm)",
-         "227 × 98 × 111″ (5,760 × 2,480 × 2,820 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "10,141 lb (4,600 kg)",
-         "11,464 lb (5,200 kg)",
-         "13,007 lb (5,900 kg)",
-         "13,228 lb (6,000 kg)",
-         "14,991 lb (6,800 kg)",
-         "18,298 lb (8,300 kg)",
-         "27,558 lb (12,500 kg)",
-         "30,865 lb (14,000 kg)",
-         "34,172 lb (15,500 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "DDM 4015",
-      "glance": [
-       "44 US tons (40 t)",
-       "5 ft · 60.2″ (1,530 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "10,141 lb (4,600 kg)"
-      ]
-     },
-     {
-      "name": "DDM 5020",
-      "glance": [
-       "55 US tons (50 t)",
-       "6.7 ft · 80.3″ (2,040 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "11,464 lb (5,200 kg)"
-      ]
-     },
-     {
-      "name": "DDM 6525",
-      "glance": [
-       "72 US tons (65 t)",
-       "8.4 ft · 100.4″ (2,550 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "13,007 lb (5,900 kg)"
-      ]
-     },
-     {
-      "name": "DDM 8025",
-      "glance": [
-       "88 US tons (80 t)",
-       "8.4 ft · 100.4″ (2,550 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "13,228 lb (6,000 kg)"
-      ]
-     },
-     {
-      "name": "DDM 10030",
-      "glance": [
-       "110 US tons (100 t)",
-       "10 ft · 120.1″ (3,050 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "14,991 lb (6,800 kg)"
-      ]
-     },
-     {
-      "name": "DDM 13030",
-      "glance": [
-       "143 US tons (130 t)",
-       "10 ft · 120.1″ (3,050 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "18,298 lb (8,300 kg)"
-      ]
-     },
-     {
-      "name": "DDM 15030",
-      "glance": [
-       "165 US tons (150 t)",
-       "10 ft · 120.1″ (3,050 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "27,558 lb (12,500 kg)"
-      ]
-     },
-     {
-      "name": "DDM 17535",
-      "glance": [
-       "193 US tons (175 t)",
-       "11.7 ft · 140.6″ (3,570 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "30,865 lb (14,000 kg)"
-      ]
-     },
-     {
-      "name": "DDM 20040",
-      "glance": [
-       "220 US tons (200 t)",
-       "13.4 ft · 160.6″ (4,080 mm)",
-       "11.8″ (300 mm)",
-       "23.2″ (590 mm)",
-       "34,172 lb (15,500 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "bending_force",
-     "bending_length",
-     "stroke",
-     "daylight",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric tonnage × metric bending length. Servo-electric drive: no hydraulic oil, 20 mm/s bending speed on every model, power drawn only while the ram moves."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Dener-Servo-Press-Brakes-2026.pdf",
-    "label": "Download the servo-electric press brake brochure",
-    "size": "PDF · 14 MB · imperial units"
-   },
-   "group": "pb-servo"
-  },
-  "dn-dds": {
-   "id": "dn-dds",
-   "brand": "dener",
-   "name": "DDS ball-screw electric press brakes, 22 and 44 US tons × 3 – 4.3 ft",
-   "short": "DDS ball-screw press brakes",
-   "models_label": "DDS 2090 · DDS 4013 · 2 models",
-   "summary": "The small electric press brake: Lenze servo motors on ball screws move the ram — no oil, no cylinders — in a compact monoblock frame with a small throat for precise bends on brackets, boxes, enclosures and pans. 22 US tons × 3 ft or 44 US tons × 4.3 ft, 14.8″ daylight, the 15″ ESA S640 control and a 2-axis back gauge as standard, a 5-axis gauge, Wila clamping and a laser finger guard as options. Plugs into a standard panel and goes through a normal door.",
-   "features": [
-    "Ball-screw ram drive with Lenze servo technology; up to 50 % energy saving",
-    "Monoblock frame, small throat, 14.8″ daylight for box bending",
-    "15″ ESA S640 2D colour touchscreen CNC control",
-    "2-axis back gauge (X, R)",
-    "European-type punch and die clamping",
-    "Electrical cabinet cooling",
-    "Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders"
-   ],
-   "optional": [
-    "ESA 875 W CNC control; 5-axis back gauge (X, R, Z1, Z2, X-Prime) with ESA S660",
-    "Foldable, height-adjustable work table",
-    "Wila mechanical / hydraulic clamping; double-wedge adjustable European punch holder",
-    "Punches and dies",
-    "DSP-AP laser finger protection",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
-   ],
-   "images": [
-    "dn-dds-1",
-    "dn-dds-2",
-    "dn-dds-video",
-    "dn-dds-3",
-    "dn-dds-4"
-   ],
-   "videos": [
-    {
-     "id": "JVG9kw1nIGk",
-     "title": "DENER DDS 4 ft × 30 ton ball-screw electric press brake",
-     "duration": "PT1M8S",
-     "thumb": "video-JVG9kw1nIGk"
-    },
-    {
-     "id": "R5D3JCTN-Ww",
-     "title": "Small press brake — DDS 4013 ball-screw press brake",
-     "duration": "PT2M41S",
-     "thumb": "video-R5D3JCTN-Ww"
-    },
-    {
-     "id": "Myd9TVSUFj8",
-     "title": "DENER DDS 2050 — 1.6 ft × 20 ton ball-screw servo-electric press brake",
-     "duration": "PT0M38S",
-     "thumb": "video-Myd9TVSUFj8"
-    },
-    {
-     "id": "sq1YPi0sQTU",
-     "title": "Bending a water-sealed pan on the DDS ball-screw press brake",
-     "duration": "PT1M38S",
-     "thumb": "video-sq1YPi0sQTU"
-    },
-    {
-     "id": "nlCZhY7olZ8",
-     "title": "DDS 4013 — 100 % electric ball-screw press brake",
-     "duration": "PT0M30S",
-     "thumb": "video-nlCZhY7olZ8"
-    }
-   ],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "DDS ball-screw electric press brakes",
-      "sub": "2 models · 22 and 44 US tons · 3 – 4.3 ft",
-      "models": [
-       "DDS 4013",
-       "DDS 2090"
-      ],
-      "rows": [
-       {
-        "label": "Bending force",
-        "sub": "",
-        "cells": [
-         "44 US tons (40 t)",
-         "22 US tons (20 t)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending length",
-        "sub": "",
-        "cells": [
-         "4.3 ft · 51.2″ (1,300 mm)",
-         "3 ft · 35.4″ (900 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Daylight",
-        "sub": "open height",
-        "cells": [
-         "14.8″ (376 mm)",
-         "14.8″ (376 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "5.9″ (150 mm)",
-         "5.9″ (150 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Approach speed",
-        "sub": "",
-        "cells": [
-         "4.72 in/s (120 mm/s)",
-         "4.72 in/s (120 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Bending speed",
-        "sub": "",
-        "cells": [
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Return speed",
-        "sub": "",
-        "cells": [
-         "4.72 in/s (120 mm/s)",
-         "4.72 in/s (120 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Servo motor power",
-        "sub": "",
-        "cells": [
-         "2 × 5.1 HP (2 × 3.8 kW)",
-         "5.1 HP (3.8 kW)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dimensions W × D × H",
-        "sub": "",
-        "cells": [
-         "95.9 × 74.0 × 91.3″ (2,436 × 1,880 × 2,319 mm)",
-         "69.3 × 50.4 × 86.2″ (1,760 × 1,280 × 2,189 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "7,496 lb (3,400 kg)",
-         "4,409 lb (2,000 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "DDS 4013",
-      "glance": [
-       "44 US tons (40 t)",
-       "4.3 ft · 51.2″ (1,300 mm)",
-       "5.9″ (150 mm)",
-       "14.8″ (376 mm)",
-       "7,496 lb (3,400 kg)"
-      ]
-     },
-     {
-      "name": "DDS 2090",
-      "glance": [
-       "22 US tons (20 t)",
-       "3 ft · 35.4″ (900 mm)",
-       "5.9″ (150 mm)",
-       "14.8″ (376 mm)",
-       "4,409 lb (2,000 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "bending_force",
-     "bending_length",
-     "stroke",
-     "daylight",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Bending force in US tons (metric tons in brackets). Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders; a compact machine for small parts, boxes and brackets."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Dener-Servo-Press-Brakes-2026.pdf",
-    "label": "Download the servo-electric press brake brochure",
-    "size": "PDF · 14 MB · imperial units"
-   },
-   "group": "pb-servo"
   },
   "vl-wad-small": {
    "id": "vl-wad-small",
@@ -2250,7 +1668,7 @@
     "label": "Download the hydraulic press brake brochure",
     "size": "PDF · 2 MB · imperial units"
    },
-   "group": "pb-cnc"
+   "group": "pb-value"
   },
   "vl-wad-large": {
    "id": "vl-wad-large",
@@ -2953,7 +2371,7 @@
     "label": "Download the hydraulic press brake brochure",
     "size": "PDF · 2 MB · imperial units"
    },
-   "group": "pb-cnc"
+   "group": "pb-value"
   },
   "vl-wad-heavy": {
    "id": "vl-wad-heavy",
@@ -3786,603 +3204,7 @@
     "label": "Download the hydraulic press brake brochure",
     "size": "PDF · 2 MB · imperial units"
    },
-   "group": "pb-cnc"
-  },
-  "vl-wadg": {
-   "id": "vl-wadg",
-   "brand": "novotech",
-   "name": "Electric servo press brakes, 11 – 176 US tons × 1.6 – 10.5 ft",
-   "short": "Electric press brakes 10 – 160 t",
-   "models_label": "WADG-10T/500 – WADG-160T/3200 · 10 models",
-   "summary": "A press brake without hydraulics: servo motors drive the ram through timing belts and dual lead ball screws, so there is no oil, no pump running between bends, no valves to drift and no warm-up — the ram repeats to ± 0.01 mm from the first part, bends at any speed from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53T control and X-R servo back gauge; the 40 and 50 t machines are also sold in robot bending cells.",
-   "features": [
-    "Mild steel to 1/4″ over 10 ft on the 100 t; 5/16″ over 10 ft on the 160 t (V = 8 × thickness)",
-    "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
-    "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
-    "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
-    "Delem DA-53T 2D CNC control; X and R back gauge axes on HIWIN linear guides and TBI ball screws, Inovance servo drives",
-    "Mechanical quick clamps and 2-V die with segmented punch; Schneider electrics; NACHI bearings; automatic lubrication",
-    "Light curtain, side and rear guards, foot pedal with emergency stop",
-    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
-   ],
-   "optional": [
-    "Delem DA-66S or DA-69S 3D control; ESA S875",
-    "Wila hydraulic clamping; DSP laser finger protection",
-    "Angle measurement; CNC crowning on 60 t and up",
-    "Robot bending cell with Estun robot",
-    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
-   ],
-   "images": [
-    "vl-wadg-1",
-    "vl-wadg-robot",
-    "vl-wadg-motors",
-    "vl-wadg-ram",
-    "vl-wadg-drawing",
-    "vl-wadg-support",
-    "vl-wadg-tooling",
-    "vl-wadg-parts"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "Electric servo press brakes · WADG",
-      "sub": "10 models · 11 – 176 US tons · 1.6 – 10.5 ft",
-      "models": [
-       "WADG-10T/500",
-       "WADG-20T/800",
-       "WADG-30T/1250",
-       "WADG-40T/1300",
-       "WADG-40T/1600",
-       "WADG-50T/1600",
-       "WADG-60T/2000",
-       "WADG-80T/2500",
-       "WADG-100T/3200",
-       "WADG-160T/3200"
-      ],
-      "rows": [
-       {
-        "label": "Bending force",
-        "sub": "",
-        "cells": [
-         "11 US tons (10 t)",
-         "22 US tons (20 t)",
-         "33 US tons (30 t)",
-         "44 US tons (40 t)",
-         "44 US tons (40 t)",
-         "55 US tons (50 t)",
-         "66 US tons (60 t)",
-         "88 US tons (80 t)",
-         "110 US tons (100 t)",
-         "176 US tons (160 t)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending length",
-        "sub": "",
-        "cells": [
-         "1.6 ft · 19.7″ (500 mm)",
-         "2.6 ft · 31.5″ (800 mm)",
-         "4.1 ft · 49.2″ (1,250 mm)",
-         "4.3 ft · 51.2″ (1,300 mm)",
-         "5.2 ft · 63.0″ (1,600 mm)",
-         "5.2 ft · 63.0″ (1,600 mm)",
-         "6.6 ft · 78.7″ (2,000 mm)",
-         "8.2 ft · 98.4″ (2,500 mm)",
-         "10.5 ft · 126.0″ (3,200 mm)",
-         "10.5 ft · 126.0″ (3,200 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Distance between columns",
-        "sub": "",
-        "cells": [
-         "20.1″ (510 mm)",
-         "26.8″ (680 mm)",
-         "35.4″ (900 mm)",
-         "36.2″ (920 mm)",
-         "36.2″ (920 mm)",
-         "49.2″ (1,250 mm)",
-         "63.0″ (1,600 mm)",
-         "78.7″ (2,000 mm)",
-         "106.3″ (2,700 mm)",
-         "106.3″ (2,700 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "7.9″ (200 mm)",
-         "9.8″ (250 mm)",
-         "9.8″ (250 mm)",
-         "10.0″ (255 mm)",
-         "10.0″ (255 mm)",
-         "10.0″ (255 mm)",
-         "11.8″ (300 mm)",
-         "18.1″ (460 mm)",
-         "18.1″ (460 mm)",
-         "18.1″ (460 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "5.9″ (150 mm)",
-         "5.9″ (150 mm)",
-         "5.9″ (150 mm)",
-         "5.9″ (150 mm)",
-         "5.9″ (150 mm)",
-         "5.9″ (150 mm)",
-         "7.9″ (200 mm)",
-         "7.9″ (200 mm)",
-         "7.9″ (200 mm)",
-         "9.8″ (250 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Daylight",
-        "sub": "open height",
-        "cells": [
-         "16.5″ (420 mm)",
-         "16.5″ (420 mm)",
-         "16.5″ (420 mm)",
-         "16.5″ (420 mm)",
-         "16.5″ (420 mm)",
-         "16.5″ (420 mm)",
-         "18.5″ (470 mm)",
-         "18.5″ (470 mm)",
-         "18.5″ (470 mm)",
-         "20.5″ (520 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Approach / return speed",
-        "sub": "",
-        "cells": [
-         "7.09 in/s (180 mm/s)",
-         "9.84 in/s (250 mm/s)",
-         "9.84 in/s (250 mm/s)",
-         "9.84 in/s (250 mm/s)",
-         "9.84 in/s (250 mm/s)",
-         "9.84 in/s (250 mm/s)",
-         "9.84 in/s (250 mm/s)",
-         "7.87 in/s (200 mm/s)",
-         "7.87 in/s (200 mm/s)",
-         "7.87 in/s (200 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Bending speed",
-        "sub": "programmable",
-        "cells": [
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
-         "0.006 – 1.18 in/s (0.15 – 30 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Back gauge X stroke · speed",
-        "sub": "",
-        "cells": [
-         "7.9″ (200 mm) · 15.75 in/s (400 mm/s)",
-         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
-         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
-         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
-         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
-         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
-         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
-         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
-         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
-         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Back gauge R stroke · speed",
-        "sub": "",
-        "cells": [
-         "3.1″ (80 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
-         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Servo motors",
-        "sub": "",
-        "cells": [
-         "7.4 HP (5.5 kW)",
-         "20.1 HP (15 kW)",
-         "26.8 HP (20 kW)",
-         "2 × 20.1 HP (15 kW)",
-         "2 × 20.1 HP (15 kW)",
-         "2 × 20.1 HP (15 kW)",
-         "2 × 26.8 HP (20 kW)",
-         "2 × 33.5 HP (25 kW)",
-         "2 × 33.5 HP (25 kW)",
-         "3 × 33.5 HP (25 kW)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "sub": "",
-        "cells": [
-         "25 × 39 × 49″ (640 × 980 × 1,250 mm)",
-         "47 × 61 × 96″ (1,200 × 1,560 × 2,450 mm)",
-         "57 × 65 × 97″ (1,460 × 1,660 × 2,470 mm)",
-         "67 × 81 × 90″ (1,700 × 2,050 × 2,280 mm)",
-         "67 × 81 × 90″ (1,700 × 2,050 × 2,280 mm)",
-         "87 × 81 × 90″ (2,200 × 2,050 × 2,280 mm)",
-         "106 × 85 × 94″ (2,700 × 2,150 × 2,380 mm)",
-         "118 × 89 × 94″ (3,000 × 2,250 × 2,380 mm)",
-         "157 × 96 × 102″ (4,000 × 2,450 × 2,580 mm)",
-         "157 × 96 × 109″ (4,000 × 2,450 × 2,780 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "1,764 lb (800 kg)",
-         "6,834 lb (3,100 kg)",
-         "9,083 lb (4,120 kg)",
-         "9,921 lb (4,500 kg)",
-         "10,692 lb (4,850 kg)",
-         "10,803 lb (4,900 kg)",
-         "13,228 lb (6,000 kg)",
-         "19,621 lb (8,900 kg)",
-         "23,589 lb (10,700 kg)",
-         "26,015 lb (11,800 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "WADG-10T/500",
-      "glance": [
-       "11 US tons (10 t)",
-       "1.6 ft · 19.7″ (500 mm)",
-       "5.9″ (150 mm)",
-       "16.5″ (420 mm)",
-       "1,764 lb (800 kg)"
-      ]
-     },
-     {
-      "name": "WADG-20T/800",
-      "glance": [
-       "22 US tons (20 t)",
-       "2.6 ft · 31.5″ (800 mm)",
-       "5.9″ (150 mm)",
-       "16.5″ (420 mm)",
-       "6,834 lb (3,100 kg)"
-      ]
-     },
-     {
-      "name": "WADG-30T/1250",
-      "glance": [
-       "33 US tons (30 t)",
-       "4.1 ft · 49.2″ (1,250 mm)",
-       "5.9″ (150 mm)",
-       "16.5″ (420 mm)",
-       "9,083 lb (4,120 kg)"
-      ]
-     },
-     {
-      "name": "WADG-40T/1300",
-      "glance": [
-       "44 US tons (40 t)",
-       "4.3 ft · 51.2″ (1,300 mm)",
-       "5.9″ (150 mm)",
-       "16.5″ (420 mm)",
-       "9,921 lb (4,500 kg)"
-      ]
-     },
-     {
-      "name": "WADG-40T/1600",
-      "glance": [
-       "44 US tons (40 t)",
-       "5.2 ft · 63.0″ (1,600 mm)",
-       "5.9″ (150 mm)",
-       "16.5″ (420 mm)",
-       "10,692 lb (4,850 kg)"
-      ]
-     },
-     {
-      "name": "WADG-50T/1600",
-      "glance": [
-       "55 US tons (50 t)",
-       "5.2 ft · 63.0″ (1,600 mm)",
-       "5.9″ (150 mm)",
-       "16.5″ (420 mm)",
-       "10,803 lb (4,900 kg)"
-      ]
-     },
-     {
-      "name": "WADG-60T/2000",
-      "glance": [
-       "66 US tons (60 t)",
-       "6.6 ft · 78.7″ (2,000 mm)",
-       "7.9″ (200 mm)",
-       "18.5″ (470 mm)",
-       "13,228 lb (6,000 kg)"
-      ]
-     },
-     {
-      "name": "WADG-80T/2500",
-      "glance": [
-       "88 US tons (80 t)",
-       "8.2 ft · 98.4″ (2,500 mm)",
-       "7.9″ (200 mm)",
-       "18.5″ (470 mm)",
-       "19,621 lb (8,900 kg)"
-      ]
-     },
-     {
-      "name": "WADG-100T/3200",
-      "glance": [
-       "110 US tons (100 t)",
-       "10.5 ft · 126.0″ (3,200 mm)",
-       "7.9″ (200 mm)",
-       "18.5″ (470 mm)",
-       "23,589 lb (10,700 kg)"
-      ]
-     },
-     {
-      "name": "WADG-160T/3200",
-      "glance": [
-       "176 US tons (160 t)",
-       "10.5 ft · 126.0″ (3,200 mm)",
-       "9.8″ (250 mm)",
-       "20.5″ (520 mm)",
-       "26,015 lb (11,800 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "bending_force",
-     "bending_length",
-     "stroke",
-     "daylight",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Servo-electric drive through belts and dual lead ball screws: no hydraulic oil, 0.15 – 30 mm/s programmable bending speed, power drawn only while the ram moves."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
-    "label": "Download the electric press brake brochure",
-    "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "pb-electric"
-  },
-  "vl-wadg-mini": {
-   "id": "vl-wadg-mini",
-   "brand": "novotech",
-   "name": "Compact electric servo press brakes, 3 – 13 US tons × 8 – 24″",
-   "short": "Compact electric press brakes",
-   "models_label": "WADG-3T/200 · WADG-6T/400 · WADG-12T/600",
-   "summary": "Bench-size electric brakes for electronics enclosures, brackets, small appliance and instrument parts: 3, 6 and 12 t over 8, 16 and 24″, a 2 – 5.5 kW servo motor, 4.7″ stroke and 16.5″ daylight in a 28 – 33″ footprint on 220 V. Two CNC axes (X and R back gauge) with a touchscreen control, mechanical quick clamp for the punch and a 2-V quick-change die — the same ± 0.01 mm repeatability as the big machines, with 50 % less energy and 40 % less noise than a small hydraulic brake.",
-   "features": [
-    "Single-phase or 3-phase supply; 20 % smaller footprint than a hydraulic brake of the same tonnage",
-    "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
-    "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
-    "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
-    "Touchscreen CNC with X and R back gauge axes on cylindrical guides",
-    "Mechanical quick clamp and 2-V quick-change die; foot pedal with emergency stop"
-   ],
-   "optional": [
-    "Single-V mechanical die clamping",
-    "Light curtain",
-    "Custom voltage"
-   ],
-   "images": [
-    "vl-wadg-tooling",
-    "vl-wadg-parts"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "Compact electric servo press brakes",
-      "sub": "3 models · 3.3 – 13 US tons · 8 – 24″",
-      "models": [
-       "WADG-3T/200",
-       "WADG-6T/400",
-       "WADG-12T/600"
-      ],
-      "rows": [
-       {
-        "label": "Bending force",
-        "sub": "",
-        "cells": [
-         "3 US tons (3 t)",
-         "7 US tons (6 t)",
-         "13 US tons (12 t)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending length",
-        "sub": "",
-        "cells": [
-         "7.9″ (200 mm)",
-         "15.7″ (400 mm)",
-         "23.6″ (600 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Distance between columns",
-        "sub": "",
-        "cells": [
-         "11.8″ (300 mm)",
-         "14.6″ (370 mm)",
-         "17.7″ (450 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "—",
-         "6.3″ (160 mm)",
-         "7.9″ (200 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "4.7″ (120 mm)",
-         "4.7″ (120 mm)",
-         "4.7″ (120 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Daylight",
-        "sub": "open height",
-        "cells": [
-         "16.5″ (420 mm)",
-         "16.5″ (420 mm)",
-         "16.5″ (420 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Approach / return speed",
-        "sub": "",
-        "cells": [
-         "7.87 in/s (200 mm/s)",
-         "7.87 in/s (200 mm/s)",
-         "7.87 in/s (200 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Bending speed",
-        "sub": "programmable",
-        "cells": [
-         "0.04 – 1.18 in/s (1 – 30 mm/s)",
-         "0.04 – 1.18 in/s (1 – 30 mm/s)",
-         "0.04 – 1.18 in/s (1 – 30 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Servo motor",
-        "sub": "",
-        "cells": [
-         "2.7 HP (2 kW)",
-         "4.0 HP (3 kW)",
-         "7.4 HP (5.5 kW)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "sub": "",
-        "cells": [
-         "28 × 28 × 78″ (700 × 700 × 1,980 mm)",
-         "30 × 30 × 78″ (750 × 750 × 1,980 mm)",
-         "33 × 33 × 82″ (850 × 850 × 2,080 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "705 lb (320 kg)",
-         "1,235 lb (560 kg)",
-         "1,676 lb (760 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "WADG-3T/200",
-      "glance": [
-       "3 US tons (3 t)",
-       "7.9″ (200 mm)",
-       "4.7″ (120 mm)",
-       "16.5″ (420 mm)",
-       "705 lb (320 kg)"
-      ]
-     },
-     {
-      "name": "WADG-6T/400",
-      "glance": [
-       "7 US tons (6 t)",
-       "15.7″ (400 mm)",
-       "4.7″ (120 mm)",
-       "16.5″ (420 mm)",
-       "1,235 lb (560 kg)"
-      ]
-     },
-     {
-      "name": "WADG-12T/600",
-      "glance": [
-       "13 US tons (12 t)",
-       "23.6″ (600 mm)",
-       "4.7″ (120 mm)",
-       "16.5″ (420 mm)",
-       "1,676 lb (760 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "bending_force",
-     "bending_length",
-     "stroke",
-     "daylight",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Servo-electric drive through belts and dual lead ball screws: no hydraulic oil, 0.15 – 30 mm/s programmable bending speed, power drawn only while the ram moves."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
-    "label": "Download the electric press brake brochure",
-    "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "pb-electric"
+   "group": "pb-value"
   },
   "vl-nc-small": {
    "id": "vl-nc-small",
@@ -5845,7 +4667,7 @@
    },
    "headline": "44 US tons (40 t) × 4.2 ft (1270 mm) · 3-axis CNC · Cybelec Cybtouch 12",
    "brand": "isitan",
-   "group": "pressbrake"
+   "group": "pb-compact"
   },
   "isitan-edgebender-nc": {
    "id": "isitan-edgebender-nc",
@@ -6142,7 +4964,1185 @@
    },
    "headline": "33–66 US tons (30–60 t) · 4.2–6.9 ft (1270–2100 mm) · 2-axis NC",
    "brand": "isitan",
-   "group": "pressbrake"
+   "group": "pb-compact"
+  },
+  "dn-ddm": {
+   "id": "dn-ddm",
+   "brand": "dener",
+   "name": "DDM servo-electric CNC press brakes, 44 – 220 US tons × 5 – 13.4 ft",
+   "short": "DDM servo-electric press brakes",
+   "models_label": "DDM 4015 – DDM 20040 · 9 models",
+   "summary": "A full-electric press brake with no hydraulic oil: servo motors drive the ram through belts and pulleys, bending at 20 mm/s on every model — twice the speed of a hydraulic — with 0.01 mm ram repeatability and power drawn only while the ram moves. Nine models from 44 US tons × 5 ft to 220 US tons × 13.4 ft, all with the 21″ ESA S875 W 3D control, four axes (Y1, Y2, X, R) and European tooling as standard; robot cells, 6-axis back gauges and angle measurement as options. Quiet, clean and fast — the machine for a job shop that bends all day.",
+   "features": [
+    "Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability",
+    "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake",
+    "21″ ESA S875 W 3D CNC control",
+    "4 axes: Y1, Y2, X, R",
+    "European-type segmented punch and die clamping",
+    "Side and rear safety guards; anti-panic emergency-stop pedal",
+    "Electrical cabinet cooling; 380/600 V 3-phase, CSA-approved panel",
+    "Servo-electric drive — no hydraulic oil, start/stop energy use"
+   ],
+   "optional": [
+    "Delem DA-66S or DA-69S 3D control",
+    "X-R-Z1-Z2, X1-X2-R-Z1-Z2, ATF X1-X2-R1-R2-Z1-Z2 or X-Prime back gauge",
+    "Fiessler AKAS 2 M(P) safety barrier or DSP front laser safety",
+    "Manual or automatic crowning",
+    "CE-standard light barrier; sheet follower",
+    "Automatic angle measurement",
+    "Pneumatic or Wila mechanical / hydraulic clamping",
+    "Robot bending cell",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "dn-ddm-2",
+    "dn-ddm-1",
+    "dn-ddm-3",
+    "dn-ddm-web-1",
+    "dn-ddm-video-1",
+    "dn-ddm-control"
+   ],
+   "videos": [
+    {
+     "id": "_Aqyyfk97KI",
+     "title": "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake",
+     "duration": "PT0M57S",
+     "thumb": "video-_Aqyyfk97KI"
+    },
+    {
+     "id": "dlmcihzfRuI",
+     "title": "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake",
+     "duration": "PT1M7S",
+     "thumb": "video-dlmcihzfRuI"
+    },
+    {
+     "id": "ZujRJUhckG4",
+     "title": "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake",
+     "duration": "PT0M51S",
+     "thumb": "video-ZujRJUhckG4"
+    },
+    {
+     "id": "da7UnOripzc",
+     "title": "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake",
+     "duration": "PT0M56S",
+     "thumb": "video-da7UnOripzc"
+    },
+    {
+     "id": "30squAhhy_o",
+     "title": "CNC hydraulic press brake vs. servo-electric press brake",
+     "duration": "PT2M32S",
+     "thumb": "video-30squAhhy_o"
+    },
+    {
+     "id": "qLRQDobmnXQ",
+     "title": "DENER DDM servo-electric press brake robot cell",
+     "duration": "PT0M54S",
+     "thumb": "video-qLRQDobmnXQ"
+    },
+    {
+     "id": "2_Vz-v-rFqU",
+     "title": "DDM electric press brake with Wila hydraulic clamping",
+     "duration": "PT0M38S",
+     "thumb": "video-2_Vz-v-rFqU"
+    },
+    {
+     "id": "IGgudJFrO-I",
+     "title": "DDM electric press brake bending demonstration",
+     "duration": "PT1M0S",
+     "thumb": "video-IGgudJFrO-I"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DDM servo-electric press brakes",
+      "sub": "9 models · 44 – 220 US tons · 5 – 13.4 ft",
+      "models": [
+       "DDM 4015",
+       "DDM 5020",
+       "DDM 6525",
+       "DDM 8025",
+       "DDM 10030",
+       "DDM 13030",
+       "DDM 15030",
+       "DDM 17535",
+       "DDM 20040"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "44 US tons (40 t)",
+         "55 US tons (50 t)",
+         "72 US tons (65 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "143 US tons (130 t)",
+         "165 US tons (150 t)",
+         "193 US tons (175 t)",
+         "220 US tons (200 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "5 ft · 60.2″ (1,530 mm)",
+         "6.7 ft · 80.3″ (2,040 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "8.4 ft · 100.4″ (2,550 mm)",
+         "10 ft · 120.1″ (3,050 mm)",
+         "10 ft · 120.1″ (3,050 mm)",
+         "10 ft · 120.1″ (3,050 mm)",
+         "11.7 ft · 140.6″ (3,570 mm)",
+         "13.4 ft · 160.6″ (4,080 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)",
+         "23.2″ (590 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.35 in/s (85 mm/s)",
+         "2.95 in/s (75 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)",
+         "0.79 in/s (20 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "2.95 in/s (75 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.35 in/s (85 mm/s)",
+         "2.95 in/s (75 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor power",
+        "sub": "",
+        "cells": [
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "14.8 HP (11 kW)",
+         "16.8 HP (12.5 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "105 × 90 × 100″ (2,670 × 2,280 × 2,530 mm)",
+         "125 × 90 × 100″ (3,180 × 2,280 × 2,530 mm)",
+         "145 × 90 × 100″ (3,680 × 2,280 × 2,530 mm)",
+         "145 × 90 × 100″ (3,680 × 2,280 × 2,530 mm)",
+         "166 × 89 × 100″ (4,220 × 2,260 × 2,530 mm)",
+         "167 × 91 × 105″ (4,230 × 2,300 × 2,660 mm)",
+         "188 × 98 × 111″ (4,770 × 2,480 × 2,820 mm)",
+         "211 × 98 × 111″ (5,370 × 2,480 × 2,820 mm)",
+         "227 × 98 × 111″ (5,760 × 2,480 × 2,820 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "10,141 lb (4,600 kg)",
+         "11,464 lb (5,200 kg)",
+         "13,007 lb (5,900 kg)",
+         "13,228 lb (6,000 kg)",
+         "14,991 lb (6,800 kg)",
+         "18,298 lb (8,300 kg)",
+         "27,558 lb (12,500 kg)",
+         "30,865 lb (14,000 kg)",
+         "34,172 lb (15,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DDM 4015",
+      "glance": [
+       "44 US tons (40 t)",
+       "5 ft · 60.2″ (1,530 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "10,141 lb (4,600 kg)"
+      ]
+     },
+     {
+      "name": "DDM 5020",
+      "glance": [
+       "55 US tons (50 t)",
+       "6.7 ft · 80.3″ (2,040 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "11,464 lb (5,200 kg)"
+      ]
+     },
+     {
+      "name": "DDM 6525",
+      "glance": [
+       "72 US tons (65 t)",
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "13,007 lb (5,900 kg)"
+      ]
+     },
+     {
+      "name": "DDM 8025",
+      "glance": [
+       "88 US tons (80 t)",
+       "8.4 ft · 100.4″ (2,550 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "13,228 lb (6,000 kg)"
+      ]
+     },
+     {
+      "name": "DDM 10030",
+      "glance": [
+       "110 US tons (100 t)",
+       "10 ft · 120.1″ (3,050 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "14,991 lb (6,800 kg)"
+      ]
+     },
+     {
+      "name": "DDM 13030",
+      "glance": [
+       "143 US tons (130 t)",
+       "10 ft · 120.1″ (3,050 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "18,298 lb (8,300 kg)"
+      ]
+     },
+     {
+      "name": "DDM 15030",
+      "glance": [
+       "165 US tons (150 t)",
+       "10 ft · 120.1″ (3,050 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "27,558 lb (12,500 kg)"
+      ]
+     },
+     {
+      "name": "DDM 17535",
+      "glance": [
+       "193 US tons (175 t)",
+       "11.7 ft · 140.6″ (3,570 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "30,865 lb (14,000 kg)"
+      ]
+     },
+     {
+      "name": "DDM 20040",
+      "glance": [
+       "220 US tons (200 t)",
+       "13.4 ft · 160.6″ (4,080 mm)",
+       "11.8″ (300 mm)",
+       "23.2″ (590 mm)",
+       "34,172 lb (15,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric tonnage × metric bending length. Servo-electric drive: no hydraulic oil, 20 mm/s bending speed on every model, power drawn only while the ram moves."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Servo-Press-Brakes-2026.pdf",
+    "label": "Download the servo-electric press brake brochure",
+    "size": "PDF · 14 MB · imperial units"
+   },
+   "group": "pb-servo"
+  },
+  "dn-dds": {
+   "id": "dn-dds",
+   "brand": "dener",
+   "name": "DDS ball-screw electric press brakes, 22 and 44 US tons × 3 – 4.3 ft",
+   "short": "DDS ball-screw press brakes",
+   "models_label": "DDS 2090 · DDS 4013 · 2 models",
+   "summary": "The small electric press brake: Lenze servo motors on ball screws move the ram — no oil, no cylinders — in a compact monoblock frame with a small throat for precise bends on brackets, boxes, enclosures and pans. 22 US tons × 3 ft or 44 US tons × 4.3 ft, 14.8″ daylight, the 15″ ESA S640 control and a 2-axis back gauge as standard, a 5-axis gauge, Wila clamping and a laser finger guard as options. Plugs into a standard panel and goes through a normal door.",
+   "features": [
+    "Ball-screw ram drive with Lenze servo technology; up to 50 % energy saving",
+    "Monoblock frame, small throat, 14.8″ daylight for box bending",
+    "15″ ESA S640 2D colour touchscreen CNC control",
+    "2-axis back gauge (X, R)",
+    "European-type punch and die clamping",
+    "Electrical cabinet cooling",
+    "Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders"
+   ],
+   "optional": [
+    "ESA 875 W CNC control; 5-axis back gauge (X, R, Z1, Z2, X-Prime) with ESA S660",
+    "Foldable, height-adjustable work table",
+    "Wila mechanical / hydraulic clamping; double-wedge adjustable European punch holder",
+    "Punches and dies",
+    "DSP-AP laser finger protection",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "dn-dds-1",
+    "dn-dds-2",
+    "dn-dds-video",
+    "dn-dds-3",
+    "dn-dds-4"
+   ],
+   "videos": [
+    {
+     "id": "JVG9kw1nIGk",
+     "title": "DENER DDS 4 ft × 30 ton ball-screw electric press brake",
+     "duration": "PT1M8S",
+     "thumb": "video-JVG9kw1nIGk"
+    },
+    {
+     "id": "R5D3JCTN-Ww",
+     "title": "Small press brake — DDS 4013 ball-screw press brake",
+     "duration": "PT2M41S",
+     "thumb": "video-R5D3JCTN-Ww"
+    },
+    {
+     "id": "Myd9TVSUFj8",
+     "title": "DENER DDS 2050 — 1.6 ft × 20 ton ball-screw servo-electric press brake",
+     "duration": "PT0M38S",
+     "thumb": "video-Myd9TVSUFj8"
+    },
+    {
+     "id": "sq1YPi0sQTU",
+     "title": "Bending a water-sealed pan on the DDS ball-screw press brake",
+     "duration": "PT1M38S",
+     "thumb": "video-sq1YPi0sQTU"
+    },
+    {
+     "id": "nlCZhY7olZ8",
+     "title": "DDS 4013 — 100 % electric ball-screw press brake",
+     "duration": "PT0M30S",
+     "thumb": "video-nlCZhY7olZ8"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DDS ball-screw electric press brakes",
+      "sub": "2 models · 22 and 44 US tons · 3 – 4.3 ft",
+      "models": [
+       "DDS 4013",
+       "DDS 2090"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "44 US tons (40 t)",
+         "22 US tons (20 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "4.3 ft · 51.2″ (1,300 mm)",
+         "3 ft · 35.4″ (900 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "14.8″ (376 mm)",
+         "14.8″ (376 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)",
+         "4.72 in/s (120 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor power",
+        "sub": "",
+        "cells": [
+         "2 × 5.1 HP (2 × 3.8 kW)",
+         "5.1 HP (3.8 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions W × D × H",
+        "sub": "",
+        "cells": [
+         "95.9 × 74.0 × 91.3″ (2,436 × 1,880 × 2,319 mm)",
+         "69.3 × 50.4 × 86.2″ (1,760 × 1,280 × 2,189 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,496 lb (3,400 kg)",
+         "4,409 lb (2,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DDS 4013",
+      "glance": [
+       "44 US tons (40 t)",
+       "4.3 ft · 51.2″ (1,300 mm)",
+       "5.9″ (150 mm)",
+       "14.8″ (376 mm)",
+       "7,496 lb (3,400 kg)"
+      ]
+     },
+     {
+      "name": "DDS 2090",
+      "glance": [
+       "22 US tons (20 t)",
+       "3 ft · 35.4″ (900 mm)",
+       "5.9″ (150 mm)",
+       "14.8″ (376 mm)",
+       "4,409 lb (2,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets). Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders; a compact machine for small parts, boxes and brackets."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Dener-Servo-Press-Brakes-2026.pdf",
+    "label": "Download the servo-electric press brake brochure",
+    "size": "PDF · 14 MB · imperial units"
+   },
+   "group": "pb-servo"
+  },
+  "vl-wadg": {
+   "id": "vl-wadg",
+   "brand": "novotech",
+   "name": "Electric servo press brakes, 11 – 176 US tons × 1.6 – 10.5 ft",
+   "short": "Electric press brakes 10 – 160 t",
+   "models_label": "WADG-10T/500 – WADG-160T/3200 · 10 models",
+   "summary": "A press brake without hydraulics: servo motors drive the ram through timing belts and dual lead ball screws, so there is no oil, no pump running between bends, no valves to drift and no warm-up — the ram repeats to ± 0.01 mm from the first part, bends at any speed from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53T control and X-R servo back gauge; the 40 and 50 t machines are also sold in robot bending cells.",
+   "features": [
+    "Mild steel to 1/4″ over 10 ft on the 100 t; 5/16″ over 10 ft on the 160 t (V = 8 × thickness)",
+    "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
+    "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
+    "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
+    "Delem DA-53T 2D CNC control; X and R back gauge axes on HIWIN linear guides and TBI ball screws, Inovance servo drives",
+    "Mechanical quick clamps and 2-V die with segmented punch; Schneider electrics; NACHI bearings; automatic lubrication",
+    "Light curtain, side and rear guards, foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DA-66S or DA-69S 3D control; ESA S875",
+    "Wila hydraulic clamping; DSP laser finger protection",
+    "Angle measurement; CNC crowning on 60 t and up",
+    "Robot bending cell with Estun robot",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-wadg-1",
+    "vl-wadg-robot",
+    "vl-wadg-motors",
+    "vl-wadg-ram",
+    "vl-wadg-drawing",
+    "vl-wadg-support",
+    "vl-wadg-tooling",
+    "vl-wadg-parts"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Electric servo press brakes · WADG",
+      "sub": "10 models · 11 – 176 US tons · 1.6 – 10.5 ft",
+      "models": [
+       "WADG-10T/500",
+       "WADG-20T/800",
+       "WADG-30T/1250",
+       "WADG-40T/1300",
+       "WADG-40T/1600",
+       "WADG-50T/1600",
+       "WADG-60T/2000",
+       "WADG-80T/2500",
+       "WADG-100T/3200",
+       "WADG-160T/3200"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "11 US tons (10 t)",
+         "22 US tons (20 t)",
+         "33 US tons (30 t)",
+         "44 US tons (40 t)",
+         "44 US tons (40 t)",
+         "55 US tons (50 t)",
+         "66 US tons (60 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "176 US tons (160 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "1.6 ft · 19.7″ (500 mm)",
+         "2.6 ft · 31.5″ (800 mm)",
+         "4.1 ft · 49.2″ (1,250 mm)",
+         "4.3 ft · 51.2″ (1,300 mm)",
+         "5.2 ft · 63.0″ (1,600 mm)",
+         "5.2 ft · 63.0″ (1,600 mm)",
+         "6.6 ft · 78.7″ (2,000 mm)",
+         "8.2 ft · 98.4″ (2,500 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)",
+         "10.5 ft · 126.0″ (3,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "20.1″ (510 mm)",
+         "26.8″ (680 mm)",
+         "35.4″ (900 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "49.2″ (1,250 mm)",
+         "63.0″ (1,600 mm)",
+         "78.7″ (2,000 mm)",
+         "106.3″ (2,700 mm)",
+         "106.3″ (2,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "10.0″ (255 mm)",
+         "10.0″ (255 mm)",
+         "10.0″ (255 mm)",
+         "11.8″ (300 mm)",
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "18.5″ (470 mm)",
+         "18.5″ (470 mm)",
+         "18.5″ (470 mm)",
+         "20.5″ (520 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach / return speed",
+        "sub": "",
+        "cells": [
+         "7.09 in/s (180 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "9.84 in/s (250 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "programmable",
+        "cells": [
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)",
+         "0.006 – 1.18 in/s (0.15 – 30 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 15.75 in/s (400 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "15.7″ (400 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)",
+         "19.7″ (500 mm) · 19.69 in/s (500 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)",
+         "5.9″ (150 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motors",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)",
+         "20.1 HP (15 kW)",
+         "26.8 HP (20 kW)",
+         "2 × 20.1 HP (15 kW)",
+         "2 × 20.1 HP (15 kW)",
+         "2 × 20.1 HP (15 kW)",
+         "2 × 26.8 HP (20 kW)",
+         "2 × 33.5 HP (25 kW)",
+         "2 × 33.5 HP (25 kW)",
+         "3 × 33.5 HP (25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "25 × 39 × 49″ (640 × 980 × 1,250 mm)",
+         "47 × 61 × 96″ (1,200 × 1,560 × 2,450 mm)",
+         "57 × 65 × 97″ (1,460 × 1,660 × 2,470 mm)",
+         "67 × 81 × 90″ (1,700 × 2,050 × 2,280 mm)",
+         "67 × 81 × 90″ (1,700 × 2,050 × 2,280 mm)",
+         "87 × 81 × 90″ (2,200 × 2,050 × 2,280 mm)",
+         "106 × 85 × 94″ (2,700 × 2,150 × 2,380 mm)",
+         "118 × 89 × 94″ (3,000 × 2,250 × 2,380 mm)",
+         "157 × 96 × 102″ (4,000 × 2,450 × 2,580 mm)",
+         "157 × 96 × 109″ (4,000 × 2,450 × 2,780 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,764 lb (800 kg)",
+         "6,834 lb (3,100 kg)",
+         "9,083 lb (4,120 kg)",
+         "9,921 lb (4,500 kg)",
+         "10,692 lb (4,850 kg)",
+         "10,803 lb (4,900 kg)",
+         "13,228 lb (6,000 kg)",
+         "19,621 lb (8,900 kg)",
+         "23,589 lb (10,700 kg)",
+         "26,015 lb (11,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WADG-10T/500",
+      "glance": [
+       "11 US tons (10 t)",
+       "1.6 ft · 19.7″ (500 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "WADG-20T/800",
+      "glance": [
+       "22 US tons (20 t)",
+       "2.6 ft · 31.5″ (800 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "6,834 lb (3,100 kg)"
+      ]
+     },
+     {
+      "name": "WADG-30T/1250",
+      "glance": [
+       "33 US tons (30 t)",
+       "4.1 ft · 49.2″ (1,250 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "9,083 lb (4,120 kg)"
+      ]
+     },
+     {
+      "name": "WADG-40T/1300",
+      "glance": [
+       "44 US tons (40 t)",
+       "4.3 ft · 51.2″ (1,300 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "9,921 lb (4,500 kg)"
+      ]
+     },
+     {
+      "name": "WADG-40T/1600",
+      "glance": [
+       "44 US tons (40 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "10,692 lb (4,850 kg)"
+      ]
+     },
+     {
+      "name": "WADG-50T/1600",
+      "glance": [
+       "55 US tons (50 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "5.9″ (150 mm)",
+       "16.5″ (420 mm)",
+       "10,803 lb (4,900 kg)"
+      ]
+     },
+     {
+      "name": "WADG-60T/2000",
+      "glance": [
+       "66 US tons (60 t)",
+       "6.6 ft · 78.7″ (2,000 mm)",
+       "7.9″ (200 mm)",
+       "18.5″ (470 mm)",
+       "13,228 lb (6,000 kg)"
+      ]
+     },
+     {
+      "name": "WADG-80T/2500",
+      "glance": [
+       "88 US tons (80 t)",
+       "8.2 ft · 98.4″ (2,500 mm)",
+       "7.9″ (200 mm)",
+       "18.5″ (470 mm)",
+       "19,621 lb (8,900 kg)"
+      ]
+     },
+     {
+      "name": "WADG-100T/3200",
+      "glance": [
+       "110 US tons (100 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "7.9″ (200 mm)",
+       "18.5″ (470 mm)",
+       "23,589 lb (10,700 kg)"
+      ]
+     },
+     {
+      "name": "WADG-160T/3200",
+      "glance": [
+       "176 US tons (160 t)",
+       "10.5 ft · 126.0″ (3,200 mm)",
+       "9.8″ (250 mm)",
+       "20.5″ (520 mm)",
+       "26,015 lb (11,800 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Servo-electric drive through belts and dual lead ball screws: no hydraulic oil, 0.15 – 30 mm/s programmable bending speed, power drawn only while the ram moves."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
+    "label": "Download the electric press brake brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "pb-value-electric"
+  },
+  "vl-wadg-mini": {
+   "id": "vl-wadg-mini",
+   "brand": "novotech",
+   "name": "Compact electric servo press brakes, 3 – 13 US tons × 8 – 24″",
+   "short": "Compact electric press brakes",
+   "models_label": "WADG-3T/200 · WADG-6T/400 · WADG-12T/600",
+   "summary": "Bench-size electric brakes for electronics enclosures, brackets, small appliance and instrument parts: 3, 6 and 12 t over 8, 16 and 24″, a 2 – 5.5 kW servo motor, 4.7″ stroke and 16.5″ daylight in a 28 – 33″ footprint on 220 V. Two CNC axes (X and R back gauge) with a touchscreen control, mechanical quick clamp for the punch and a 2-V quick-change die — the same ± 0.01 mm repeatability as the big machines, with 50 % less energy and 40 % less noise than a small hydraulic brake.",
+   "features": [
+    "Single-phase or 3-phase supply; 20 % smaller footprint than a hydraulic brake of the same tonnage",
+    "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
+    "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
+    "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
+    "Touchscreen CNC with X and R back gauge axes on cylindrical guides",
+    "Mechanical quick clamp and 2-V quick-change die; foot pedal with emergency stop"
+   ],
+   "optional": [
+    "Single-V mechanical die clamping",
+    "Light curtain",
+    "Custom voltage"
+   ],
+   "images": [
+    "vl-wadg-tooling",
+    "vl-wadg-parts"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Compact electric servo press brakes",
+      "sub": "3 models · 3.3 – 13 US tons · 8 – 24″",
+      "models": [
+       "WADG-3T/200",
+       "WADG-6T/400",
+       "WADG-12T/600"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "3 US tons (3 t)",
+         "7 US tons (6 t)",
+         "13 US tons (12 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "15.7″ (400 mm)",
+         "23.6″ (600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "14.6″ (370 mm)",
+         "17.7″ (450 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "—",
+         "6.3″ (160 mm)",
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "4.7″ (120 mm)",
+         "4.7″ (120 mm)",
+         "4.7″ (120 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)",
+         "16.5″ (420 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach / return speed",
+        "sub": "",
+        "cells": [
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "programmable",
+        "cells": [
+         "0.04 – 1.18 in/s (1 – 30 mm/s)",
+         "0.04 – 1.18 in/s (1 – 30 mm/s)",
+         "0.04 – 1.18 in/s (1 – 30 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor",
+        "sub": "",
+        "cells": [
+         "2.7 HP (2 kW)",
+         "4.0 HP (3 kW)",
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 28 × 78″ (700 × 700 × 1,980 mm)",
+         "30 × 30 × 78″ (750 × 750 × 1,980 mm)",
+         "33 × 33 × 82″ (850 × 850 × 2,080 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "705 lb (320 kg)",
+         "1,235 lb (560 kg)",
+         "1,676 lb (760 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WADG-3T/200",
+      "glance": [
+       "3 US tons (3 t)",
+       "7.9″ (200 mm)",
+       "4.7″ (120 mm)",
+       "16.5″ (420 mm)",
+       "705 lb (320 kg)"
+      ]
+     },
+     {
+      "name": "WADG-6T/400",
+      "glance": [
+       "7 US tons (6 t)",
+       "15.7″ (400 mm)",
+       "4.7″ (120 mm)",
+       "16.5″ (420 mm)",
+       "1,235 lb (560 kg)"
+      ]
+     },
+     {
+      "name": "WADG-12T/600",
+      "glance": [
+       "13 US tons (12 t)",
+       "23.6″ (600 mm)",
+       "4.7″ (120 mm)",
+       "16.5″ (420 mm)",
+       "1,676 lb (760 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Servo-electric drive through belts and dual lead ball screws: no hydraulic oil, 0.15 – 30 mm/s programmable bending speed, power drawn only while the ram moves."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Electric-Press-Brakes-2026.pdf",
+    "label": "Download the electric press brake brochure",
+    "size": "PDF · 1 MB · imperial units"
+   },
+   "group": "pb-value-electric"
   }
  }
 }

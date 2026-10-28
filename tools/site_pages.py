@@ -118,7 +118,7 @@ BRANDS = [
      "what": "Bimetal and carbide-tipped band saw blades, welded to length"},
     {"name": "NovoTech premium line", "country": "Turkey", "since": None, "logo": "novotech-logo", "href": "plate-rollers.html",
      "what": "Plate rollers, angle rolls, ironworkers, hydraulic presses, shears and pipe polishers built to NovoTech's specification with European components"},
-    {"name": "NovoTech value line", "country": "China", "since": None, "logo": "novotech-logo", "href": "novotech-cnc-press-brakes.html",
+    {"name": "NovoTech value line", "country": "China", "since": None, "logo": "novotech-logo", "href": "hydraulic-press-brake.html",
      "what": "CNC press brakes, fiber lasers, shears, panel benders and band saws built to North American quality standards"},
 ]
 

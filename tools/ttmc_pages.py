@@ -69,7 +69,7 @@ PAGE = dict(
           "a": "The NovoTech mechanical shears (SRGM) are the premium direct-gear machines from Turkey — heavier, 31 to 35 strokes a minute, NC back gauge and photocell guard as standard — for the shop that shears all day. The NovoTech hydraulic shears (QC12K / Q11K) are plate shears from 5/32″ to 1-9/16″ over 8 to 26 ft with Estun controls. The sheet metal shears on this page are the smaller, lower-priced machines for sheet to 1/4″ and widths to 120″ — the same NovoTech installation, warranty and support. The comparison and the capacity table for every line are on the shears overview."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about sheet metal shears",
-    related_pages=[{"href": "compact-hydraulic-press-brakes.html", "label": "Compact hydraulic press brakes"}, {"href": "corner-notcher.html", "label": "Corner notchers"},
+    related_pages=[{"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "corner-notcher.html", "label": "Corner notchers"},
                    {"href": "bead-rollers.html", "label": "Bead rollers"}, {"href": "circle-cutters-and-seamers.html", "label": "Circle shears & flanging machines"},
                    {"href": "plate-rollers.html", "label": "Plate rollers"}],
     related_title="More sheet-metal machinery from NovoTech",
@@ -105,8 +105,7 @@ def build():
     pdf = pdf_entry()
     fams = [dict(f, pdf=pdf) for f in D.FAMILIES] + [dict(f) for f in D2.SHEAR]
     write_families(SET, fams)
-    write_category(D.P_SHEAR, PAGE, fams, SET, SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
-                   extra={"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, "catalogue_pdf": pdf, "nav_label": "NovoTech sheet metal shears", **NO_VIDEO})
+    # the shear families are shown on the hydraulic / mechanical / sheet metal shear pages (tools/shear_types.py), not on a supplier page
     keys = register_images()
     used = {k for f in FAMILIES_IMAGES() for k in f} | {PAGE["hero"]} | set(PAGE["minis"])     # the bench shears' photos are registered by ttmc_more_pages.py
     unused = sorted(set(keys) - used)

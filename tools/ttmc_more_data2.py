@@ -273,7 +273,7 @@ CIRCLE = [
 ]
 
 # =============================================================================================== press brakes, horizontal benders
-P_COMPACT = "compact-hydraulic-press-brakes"
+P_COMPACT = "hydraulic-press-brake"     # the hydraulic press brake page (hub + type pages, Oct 2026)
 COMPACT = [
     F("tt-hbv", P_COMPACT, "tt-hbv", "HBV hydraulic bending brakes, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″", "HBV hydraulic brakes",
       T["tt-hbv"] + NT["tt-hbv-l"],

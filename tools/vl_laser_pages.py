@@ -75,7 +75,7 @@ PAGE_SHEET = dict(
           "a": "Dener is the premium line: built in Turkey with Precitec heads, IPG or nLIGHT sources and Dener Canada parts in Mississauga, ON, Canada, for the shop that cuts two shifts a day for twenty years. Senfeng is a value line sold under its own brand, with the widest range — 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. The NovoTech lasers are our own brand, built in China to our specification with Raycus or IPG sources, Cypcut controls and Hiwin, YYC and Schneider components, at the lowest price of the three; all are installed, warranted and serviced by the same NovoTech technicians. We quote all three so you can compare."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about the NovoTech fiber lasers",
-    related_pages=[{"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"}, {"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes · value line"},
+    related_pages=[{"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutters"}, {"href": "hydraulic-press-brake.html", "label": "NovoTech CNC press brakes · value line"},
                    {"href": "hydraulic-shearing-machine.html", "label": "Value-line hydraulic shears"},
                    {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring after laser cutting"},
                    {"href": "laser-welding-machine.html", "label": "Laser welding & cladding"}],
@@ -119,8 +119,8 @@ PAGE_TUBE = dict(
     related_title="More tube machinery from NovoTech",
 )
 
-ABOUT_NT = ("NovoTech Machine Tools sells, installs and supports sheet-metal and fabrication machinery across Canada from Mississauga, ON, Canada, "
-            "Ontario. The value line is our own brand: machines built in China to our specification with established components — Raycus, "
+ABOUT_NT = ("NovoTech Machine Tools sells, installs and supports sheet-metal and fabrication machinery across Canada from Mississauga, ON, Canada. "
+            "The value line is our own brand: machines built in China to our specification with established components — Raycus, "
             "MAX or IPG sources, Raytools, BOCI or Precitec heads, Cypcut controls, Hiwin guides, YYC racks and Schneider electrics — inspected "
             "before they ship, with a CSA-approved panel, a 1-year warranty, operator training and parts and service from Mississauga, ON, Canada.")
 
@@ -182,10 +182,8 @@ def build():
     pdf_sheet = pdf(PDF_SHEET, "Download the NovoTech fiber laser brochure")
     pdf_tube = pdf(PDF_TUBE, "Download the NovoTech tube laser brochure")
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **NO_VIDEO}
-    write_category(D.P_SHEET, PAGE_SHEET, [dict(f, pdf=pdf_sheet) for f in D.SHEET_FAMILIES], SET, LN.SECTIONS["sheet"]["section"],
-                   hub=LN.hub("sheet"), siblings=LN.siblings("sheet"), extra={**common, "nav_label": "NovoTech fiber lasers", "catalogue_pdf": pdf_sheet})
-    write_category(D.P_TUBE, PAGE_TUBE, [dict(f, pdf=pdf_tube) for f in D.TUBE_FAMILIES], SET, LN.SECTIONS["tube"]["section"],
-                   hub=LN.hub("tube"), siblings=LN.siblings("tube"), extra={**common, "nav_label": "NovoTech tube lasers", "catalogue_pdf": pdf_tube})
+    # the ULF / ULE / ULG / ULFT / ULET / ULT families live in the 'dener' family set (tools/dener_pages.py writes it) and are shown on
+    # the pages per kind of laser (tools/laser_types.py), not on a NovoTech-line page
     keys = register_images()
     write_brochure_specs()
     used = {k for f in D.ALL for k in f["images"]}

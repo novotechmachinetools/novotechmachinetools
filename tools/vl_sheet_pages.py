@@ -123,7 +123,7 @@ PAGE_SHEAR = dict(
           "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and Dener Canada parts; the value-line shears are built in China to our specification with Estun controls and Rexroth valves, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about hydraulic shears",
-    related_pages=[{"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes"},
+    related_pages=[{"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"},
                    {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "corner-notcher.html", "label": "Corner notchers"},
                    {"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}],
     related_title="More cutting machinery from NovoTech",
@@ -156,7 +156,7 @@ PAGE_VG = dict(
           "a": "On the touchscreen CNC: enter the sheet thickness, the groove positions (or a pitch and count), the depth and the number of passes, and the machine runs the sheet automatically; the four-tool head takes the groove in several light cuts for a clean V. Programs are stored and recalled; the control runs in inches or millimetres."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about V-grooving machines",
-    related_pages=[{"href": "novotech-cnc-press-brakes.html", "label": "NovoTech CNC press brakes"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
+    related_pages=[{"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
                    {"href": "folder-sheet-metal-brake.html", "label": "Roofing & pan brakes"}, {"href": "hydraulic-shearing-machine.html", "label": "Hydraulic shears"},
                    {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring & finishing"}],
     related_title="More sheet-metal machinery from NovoTech",
@@ -188,10 +188,8 @@ def build():
     fams += [dict(f, pdf=pdf_shear) for f in D.SHEAR_FAMILIES] + [dict(f, pdf=pdf_vg) for f in D.VG_FAMILIES]
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN}
-    write_category(D.P_PB, PAGE_PB, fams, SET, "Press brakes", hub=PBN.hub(), siblings=PBN.siblings(),
-                   extra={**common, **NO_VIDEO, "nav_label": "NovoTech CNC press brakes", "catalogue_pdf": None, "catalogue_pdfs": [pdf_hpb, pdf_epb]})
-    write_category(D.P_SHEAR, PAGE_SHEAR, fams, SET, SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
-                   extra={**common, **NO_VIDEO, "nav_label": "NovoTech hydraulic shears", "catalogue_pdf": pdf_shear})
+    # the press-brake families are shown on the hydraulic / electric press brake pages (tools/press_brake_types.py), not on a value-line page
+    # the shear families are shown on the hydraulic / mechanical / sheet metal shear pages (tools/shear_types.py), not on a supplier page
     write_category(D.P_VG, PAGE_VG, fams, SET, "V-grooving machines", extra={**common, **NO_VIDEO, "nav_label": "V-grooving machines", "catalogue_pdf": pdf_vg})
     keys = register_images()
     used = {k for f in D.ALL for k in f["images"]}

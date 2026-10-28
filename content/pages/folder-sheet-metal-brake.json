@@ -1,16 +1,17 @@
 {
  "slug": "folder-sheet-metal-brake",
- "template": "category.html",
+ "template": "hub.html",
  "family_set": "ttmc-more",
- "title": "Sheet Metal Brakes — Box & Pan, Magnetic & Hydraulic | NovoTech",
- "artifact_title": "Sheet metal brakes — box and pan, magnetic, hand and hydraulic folding machines",
- "meta_description": "Sheet metal brakes in Canada: magnetic, box and pan brakes for 9″ deep boxes, hand brakes, hydraulic, electric and CNC folders, roofing brakes and 3-in-1s.",
- "h1": "Sheet metal brakes — box and pan, magnetic, hand and hydraulic folding machines",
- "intro": "A sheet metal brake (folder) bends sheet by clamping it under a straight beam and swinging a folding leaf up around the edge — no punch and die, no marks on painted sheet, and long, straight bends in thin material that a press brake cannot hold flat. NovoTech's value-line brakes are built in China to our specification: magnetic brakes from 2 to 10 ft that clamp the sheet with an electromagnet and fold boxes of any depth, box and pan brakes with removable fingers — the heaviest fold 14 ga boxes 9″ deep, by hand or with hydraulic power — hand brakes and foot-clamp folding machines for the HVAC, roofing and sheet-metal shop, hydraulic, electric and CNC folding machines for 10 ga over 10 ft, 3/16″ over 8 ft and 14 ga over 12 ft, portable roofing brakes and a coil dispenser for the job site, and combination shear, brake and roll machines — 137 models, with parts and support from Mississauga, ON, Canada.",
+ "nav_label": "All sheet metal brakes",
+ "title": "Sheet Metal Brakes & Folding Machines for Sale in Canada — Box & Pan, Hand, Magnetic, Hydraulic & CNC | NovoTech",
+ "artifact_title": "Sheet metal brakes",
+ "meta_description": "Every sheet metal brake and folding machine NovoTech sells in Canada, by kind: box and pan brakes, hand brakes and foot-clamp folders, magnetic brakes, hydraulic / electric / CNC folding machines, portable roofing and siding brakes and 3-in-1 machines — 137 models in one table, with a buying guide.",
+ "h1": "Sheet metal brakes and folding machines — box and pan, hand, magnetic, hydraulic, roofing and 3-in-1",
+ "intro": "A sheet metal brake (folder) bends sheet by clamping it under a straight beam and swinging a folding leaf up around the edge — no punch and die, no marks on painted sheet, and long, straight bends in thin material that a press brake cannot hold flat. NovoTech sells six kinds in Canada, each on its own page: box and pan brakes with removable fingers for boxes and pans; straight hand brakes, foot-clamp folding machines and bench brakes for flashing, trim and duct; magnetic brakes that fold boxes of any depth; hydraulic, electric and CNC folding machines for 10 ga over 10 ft and production panels; portable roofing and siding brakes for the job site; and 3-in-1 shear, brake and roll machines for the small shop. Below, the six kinds compared, every one of the 137 models in one table, the questions we get asked and the buying guide. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
-  "Magnetic brakes EB625 – EB3200: 16 ga × 2 – 8 ft and 18 ga × 10 ft, 3.3 – 13.2 US tons of clamping, boxes of any depth",
-  "Box and pan brakes 12 – 157″ with removable fingers, 22 to 12 ga, boxes to 9″ deep in 14 ga; hand brakes and foot-clamp folders to 13 ft",
-  "Hydraulic folding machines 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″; TFM / TFMS CNC electric folders 14 ga × 122 – 145″"
+  "Box and pan brakes 12 – 157″ to 12 ga and 14 ga boxes 9″ deep; hand brakes and foot-clamp folders to 13 ft; bench brakes",
+  "Magnetic brakes 2 – 10 ft, 16 ga, boxes of any depth; hydraulic folders 10 ga × 10 ft; TFM / TFMS CNC folders 14 ga × 12 ft",
+  "Portable roofing and siding brakes 7 – 12.5 ft with slitter; 3-in-1 shear, brake and roll machines 8 – 80″"
  ],
  "hero_image": "tm-eb2500",
  "hero_image_secondary": [
@@ -31,73 +32,108 @@
   }
  ],
  "hero_brand_line": "NovoTech value line — NovoTech's own brand, manufactured in China to high North American quality standards and sold with a 1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support from Mississauga, ON, Canada.",
- "nav_label": "Sheet metal brakes",
- "groups": [
+ "subpages": [
   {
-   "id": "mag-group",
-   "title": "Magnetic sheet metal brakes",
-   "lead": "An electromagnet in the bed clamps the sheet under a steel bar — no beam frame at the ends, so a short bar folds the side of a box of any depth.",
-   "brand": "novotech",
-   "families": [
-    "tt-eb"
-   ]
-  },
-  {
-   "id": "hyd-group",
-   "title": "Hydraulic, electric and CNC folding machines",
-   "lead": "Powered clamping and folding: a 10 ft bend in 10 ga takes a foot pedal instead of two people, and the CNC folders run a 99-bend program with their back gauge.",
-   "brand": "novotech",
-   "families": [
-    "tt-hw",
-    "tt-hw-h",
-    "tt-tfm",
-    "tt-efm"
-   ]
-  },
-  {
-   "id": "panbox-group",
-   "title": "Box and pan brakes",
-   "lead": "The upper blade is made of removable fingers: take them out where the sides of the box come up and fold all four sides of a pan.",
-   "brand": "novotech",
+   "slug": "box-and-pan-brake",
+   "title": "Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
+   "image": "tm-bp1650",
+   "blurb": "Hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, and hydraulic box and pan brakes.",
    "families": [
     "tt-pb",
-    "tt-pb-heavy"
+    "tt-pb-heavy",
+    "tt-hw-h"
    ],
-   "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support from Mississauga, ON, Canada"
+   "nav_label": "Box and pan brakes",
+   "cards_title": "Box and pan brakes — every family"
   },
   {
-   "id": "hand-group",
-   "title": "Hand brakes and foot-clamp folding machines",
-   "lead": "Straight brakes with a one-piece blade for long, clean bends, and folders whose clamping beam closes from a foot pedal.",
-   "brand": "novotech",
+   "slug": "sheet-metal-hand-brake",
+   "title": "Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
+   "image": "tm-hb2250",
+   "blurb": "Straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines to 119″ in 12 ga, and bench, slitting and offset brakes.",
    "families": [
     "tt-hb",
-    "tt-folder"
-   ],
-   "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support from Mississauga, ON, Canada"
-  },
-  {
-   "id": "roof-group",
-   "title": "Portable roofing brakes and bench brakes",
-   "lead": "Light brakes that go to the job: aluminum roofing brakes for flashing and trim, a coil dispenser, bench brakes, shear and brake machines, slitting brakes and offset tools.",
-   "brand": "novotech",
-   "families": [
-    "tt-alb",
-    "tt-cd24",
+    "tt-folder",
     "tt-bench-brake"
    ],
-   "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support from Mississauga, ON, Canada"
+   "nav_label": "Hand brakes & folders",
+   "cards_title": "Sheet metal hand brakes — every family"
   },
   {
-   "id": "combo-group",
-   "title": "Combination shear, brake and roll machines",
-   "lead": "Three machines on one frame — the starter machine for the small sheet-metal and HVAC shop.",
-   "brand": "novotech",
+   "slug": "magnetic-sheet-metal-brake",
+   "title": "Magnetic sheet metal brakes — 2 to 10 ft, 16 gauge, boxes of any depth",
+   "image": "tm-eb2500",
+   "blurb": "EB625 to EB3200, 16 ga over 2 – 8 ft and 18 ga over 10 ft, 3.3 – 13.2 US tons of electromagnetic clamping — fold boxes of any depth, closed shapes and short return flanges.",
+   "families": [
+    "tt-eb"
+   ],
+   "nav_label": "Magnetic brakes",
+   "cards_title": "Magnetic sheet metal brakes — every family"
+  },
+  {
+   "slug": "hydraulic-folding-machine",
+   "title": "Hydraulic, electric and CNC folding machines — 10 ga over 10 ft, 14 ga CNC over 12 ft",
+   "image": "tm-hwe",
+   "blurb": "Hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge.",
+   "families": [
+    "tt-hw",
+    "tt-efm",
+    "tt-tfm"
+   ],
+   "nav_label": "Hydraulic & CNC folders",
+   "cards_title": "Hydraulic, electric and CNC folding machines — every family"
+  },
+  {
+   "slug": "roofing-siding-brake",
+   "title": "Portable roofing and siding brakes — aluminum brakes with slitter, 7 to 12.5 ft",
+   "image": "tm-alb",
+   "blurb": "ALB brakes with roller slitter, 24 ga steel and 0.032″ aluminum over 7.2 – 12.5 ft, bend to 180°, set up in minutes, plus a 24″ trim coil dispenser.",
+   "families": [
+    "tt-alb",
+    "tt-cd24"
+   ],
+   "nav_label": "Roofing & siding brakes",
+   "cards_title": "Portable roofing and siding brakes — every family"
+  },
+  {
+   "slug": "shear-brake-roll-3-in-1",
+   "title": "3-in-1 shear, brake and roll machines — 8″ to 80″",
+   "image": "tm-3in1",
+   "blurb": "Combination shear, brake and slip roll on one frame from 8″ to 52″ in 20 – 16 ga, and the motorized E3-IN-1 for 1/8″ × 52″ and 80″.",
    "families": [
     "tt-3in1",
     "tt-e3in1"
-   ]
+   ],
+   "nav_label": "3-in-1 machines",
+   "cards_title": "3-in-1 shear, brake and roll machines — every family"
   }
+ ],
+ "range_kind": "table",
+ "range_cols": [
+  "Length",
+  "Capacity (mild steel)",
+  "Weight"
+ ],
+ "range_lead": "Every brake and folding machine NovoTech sells — all 137 models in one table: bending length, capacity in mild steel and weight. Each row links to the model's full specification on its page.",
+ "range_caption": "Sheet metal brakes and folding machines supplied by NovoTech — value line, built to our specification",
+ "range_note": "Capacities are rated in gauge of mild steel over the full bending length; stainless about two gauges lighter, aluminum about two gauges heavier. Single-phase and three-phase machines are supplied with a CSA-approved panel; voltages on request.",
+ "range_pick": [
+  [
+   "bending_length",
+   "working_length",
+   "working_width",
+   "capacity_length_mild_steel",
+   "coil_width",
+   "bending_capacity_width"
+  ],
+  [
+   "capacity_mild_steel",
+   "capacity",
+   "shear_brake_roll_capacity_mild_steel",
+   "bending_and_shearing_capacity_mild_steel",
+   "capacity_length_mild_steel"
+  ],
+  "weight"
  ],
  "faq": [
   {
@@ -140,6 +176,7 @@
   "text": "Built in China to NovoTech's specification by a maker that exports metalworking machinery to more than 70 countries; inspected before shipping, wired for Canadian power and supported by NovoTech's technicians in Mississauga, ON, Canada."
  },
  "section_label": "Sheet metal brakes",
+ "related_blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared, all 137 models in one table and the buying guide.",
  "related_pages": [
   {
    "href": "press-brake.html",
@@ -166,7 +203,83 @@
    "label": "Corner notchers"
   }
  ],
- "related_title": "More machinery from NovoTech",
+ "related_title": "Machinery that works alongside a sheet metal brake",
+ "hub_compact": true,
+ "compare": {
+  "title": "Which kind of sheet metal brake?",
+  "lead": "The six kinds NovoTech sells, side by side. The parts you make — boxes, long flashing, deep enclosures, production panels, site work — decide the kind; the pages list every model of each.",
+  "cols": [
+   "Kind",
+   "What it folds",
+   "Capacity and length",
+   "Best for",
+   "Page"
+  ],
+  "rows": [
+   [
+    "Box and pan brakes",
+    "Boxes, pans and straight bends; removable fingers",
+    "22 – 12 ga × 12 – 157″; 14 ga boxes 9″ deep",
+    "HVAC, enclosures, sheet-metal shops",
+    {
+     "href": "box-and-pan-brake.html",
+     "label": "Box and pan brakes"
+    }
+   ],
+   [
+    "Hand brakes and folders",
+    "Long straight bends; foot-clamp folders; bench brakes",
+    "22 – 12 ga × 12″ – 13 ft",
+    "Flashing, trim, duct panels, job boxes",
+    {
+     "href": "sheet-metal-hand-brake.html",
+     "label": "Hand brakes and folders"
+    }
+   ],
+   [
+    "Magnetic brakes",
+    "Boxes of any depth, closed shapes, return flanges",
+    "16 ga × 2 – 8 ft, 18 ga × 10 ft",
+    "Enclosures, signage, prototypes, mobile shops",
+    {
+     "href": "magnetic-sheet-metal-brake.html",
+     "label": "Magnetic brakes"
+    }
+   ],
+   [
+    "Hydraulic, electric and CNC folders",
+    "Heavy and long panels, powered; programs on the CNC",
+    "10 ga × 10 ft, 3/16″ × 8 ft; CNC 14 ga × 12 ft",
+    "Cladding, cassettes, enclosures, production duct",
+    {
+     "href": "hydraulic-folding-machine.html",
+     "label": "Hydraulic and CNC folders"
+    }
+   ],
+   [
+    "Roofing and siding brakes",
+    "Flashing, drip edge, fascia from coil, on site",
+    "24 ga steel, 0.032″ aluminum × 7 – 12.5 ft",
+    "Roofers, siding and eavestrough contractors",
+    {
+     "href": "roofing-siding-brake.html",
+     "label": "Roofing and siding brakes"
+    }
+   ],
+   [
+    "3-in-1 machines",
+    "Shear, fold and roll on one frame",
+    "20 – 16 ga × 8 – 52″; motorized 1/8″ × 52 – 80″",
+    "Small shops, maintenance, schools",
+    {
+     "href": "shear-brake-roll-3-in-1.html",
+     "label": "3-in-1 machines"
+    }
+   ]
+  ]
+ },
+ "subpage_link": "all models, specifications and photos",
+ "family_noun": "machine",
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null

@@ -152,7 +152,5 @@ PAGE = dict(
 def build():
     write_families(SET, FAMILIES)
     import press_brake_nav as PBN
-    write_category(SLUG, {**PAGE, "related_pages": [{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "bead-rollers.html", "label": "Bead rollers"}]},
-                   FAMILIES, SET, SECTION, hub=PBN.hub(), siblings=PBN.siblings(),
-                   extra={"nav_label": "Compact hydraulic press brakes", "related_title": "More bending machinery from NovoTech"})
+    # the Edgebender families are shown on the hydraulic press brake page (tools/press_brake_types.py), not on a page of their own
     return IMAGES
