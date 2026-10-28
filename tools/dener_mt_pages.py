@@ -60,7 +60,7 @@ PAGE_LATHE = dict(
     points=["TTC-6 / TTC-8: Ø22″ swing, turning Ø12″ × 17″, 6″ or 8″ chuck, 6,000 / 4,500 rpm",
             "TTH-8 / 10 / 12: Ø27.6″ swing, turning Ø20.8″ × 26.8″, 8″ to 12″ chucks, bar to Ø3.74″ (95 mm)",
             "Fanuc 0i-TF Plus, 12-station servo turret, hydraulic tailstock; C-axis live tooling, bar feeder and probes to order"],
-    hero="dn-ttc-1", minis=["dn-tth-1", "dn-ttc-3"],
+    hero="dn-ttc-1", minis=["dn-tth-1", "dn-ttc-2"],
     groups=[("lathe-ttc", "TTC compact CNC lathes", "Ø22″ swing with 6″ and 8″ chucks — the compact slant-bed lathe for shafts, flanges and bushings in series.", BRAND),
             ("lathe-tth", "TTH CNC lathes", "Ø27.6″ swing with 8″ to 12″ chucks — longer and heavier work, up to Ø20.8″ × 26.8″, and a 4.65″ spindle bore on the TTH-12.", BRAND)],
     faq=[{"q": "TTC or TTH — which lathe do I need?",
@@ -108,7 +108,7 @@ PAGE_MC = dict(
     points=["TMC 850 – 1600: X 33.5 – 63″, tables to 68.9 × 27.6″ and 2,646 lb, BBT40 10,000 rpm (12,000 / 15,000 optional), 24 tools",
             "TDC 2112 – 4120: X 82.7 – 161.4″, 55 – 82.7″ between the columns, tables to 157.5 × 70.9″ and 26,455 lb, BBT50, 24 or 40 tools",
             "Mitsubishi M80A with Navi-Mill (Fanuc optional); C3 ballscrews, roller guides, ±0.00016″ positioning on the TMC"],
-    hero="dn-tmc-1", minis=["dn-tmc-3", "dn-mt-vmc-line"],
+    hero="dn-tmc-1", minis=["dn-tdc-1", "dn-tmc-2"],
     groups=[("mc-vertical", "TMC vertical machining centres", "Five sizes from 33.5 to 63″ of X travel — BBT40, 10,000 rpm, 24 tools, fully enclosed.", BRAND),
             ("mc-double", "TDC double-column machining centres", "Gantry machines for long, wide and heavy parts — 82.7 to 161.4″ of X travel, BBT50, tables to 26,455 lb.", BRAND)],
     faq=[{"q": "Vertical or double-column machining centre?",
@@ -160,7 +160,7 @@ PAGE_GRIND = dict(
     points=["17.7 × 35.4″ table, 15.7 × 31.5″ electromagnetic chuck, 882 lb table load, 3 – 21.7″ under the wheel centre",
             "Mitsubishi NC with 10″ touchscreen: automatic down feed in 0.00004″ steps and cross feed 0.002 – 0.79″ per stroke",
             "Direct-drive spindle 100 – 1,450 rpm, Ø13.8″ wheel; hydraulic table 16 – 82 ft/min on scraped V and flat ways"],
-    hero="dn-tgh-1", minis=[],
+    hero="dn-tgh-1", minis=["dn-tgh-4", "dn-tgh-6"],
     groups=[("grind", "TGH NC surface grinder", "A 450 × 900 mm precision surface grinder with NC cross and down feed and a hydraulic table.", BRAND)],
     faq=[{"q": "What does the NC do on a surface grinder?",
           "a": "On a manual grinder the operator turns the handwheels for every pass. On the TGH-B 450 the cross and vertical axes are AC servo "
@@ -190,8 +190,7 @@ def register_images():
         f = [x for x in os.listdir(d) if os.path.splitext(x)[0] == key]
         if not f:
             raise SystemExit(f"missing export for {key} — run tools/dener_mt_photos.py")
-        imap[key] = {"src": f"tools/src-images/dener/{f[0]}", "alt": p["alt"], "section": "dener", "trim": False, "quality": 82, "cutout": False,
-                     **({"trim_white": False} if f[0].endswith(".png") else {})}
+        imap[key] = {"src": f"tools/src-images/dener/{f[0]}", "alt": p["alt"], "section": "dener", **PH.image_map_spec(key)}
         keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "dener_mt_keys.txt"), "w").write(",".join(keys))

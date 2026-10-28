@@ -89471,345 +89471,246 @@
   }
  },
  "dn-ttc-1": {
-  "alt": "Dener TTC-8 CNC lathe \u2014 8\u2033 chuck, 45\u00b0 slant bed, chip conveyor at the side",
+  "alt": "Dener TTC CNC lathe \u2014 fully enclosed 45\u00b0 slant-bed lathe with the control on the front and the chip conveyor at the end",
   "variants": [
    {
+    "w": 1200,
+    "h": 663,
+    "file": "img/dener/dn-ttc-1-1200.webp",
+    "bytes": 44640
+   },
+   {
     "w": 800,
-    "h": 800,
+    "h": 442,
     "file": "img/dener/dn-ttc-1-800.webp",
-    "bytes": 47650
+    "bytes": 26136
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 265,
     "file": "img/dener/dn-ttc-1-480.webp",
-    "bytes": 24562
+    "bytes": 13692
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 88,
    "file": "img/dener/dn-ttc-1-thumb.webp",
-   "bytes": 4532
+   "bytes": 3846
   }
  },
  "dn-ttc-2": {
-  "alt": "Dener TTC-8 CNC lathe \u2014 the control and the front door",
+  "alt": "12-station servo turret of the Dener TTC and TTH CNC lathes \u2014 slot type, hydraulically clamped",
   "variants": [
    {
-    "w": 800,
-    "h": 1000,
-    "file": "img/dener/dn-ttc-2-800.webp",
-    "bytes": 53510
-   },
-   {
-    "w": 480,
-    "h": 600,
-    "file": "img/dener/dn-ttc-2-480.webp",
-    "bytes": 28436
+    "w": 425,
+    "h": 409,
+    "file": "img/dener/dn-ttc-2-425.webp",
+    "bytes": 32476
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 128,
-   "h": 160,
+   "w": 160,
+   "h": 154,
    "file": "img/dener/dn-ttc-2-thumb.webp",
-   "bytes": 4364
-  }
+   "bytes": 8248
+  },
+  "cut": "birefnet"
  },
  "dn-ttc-3": {
-  "alt": "Dener TTC-8 \u2014 the 12-station turret and the hydraulic chuck inside the machine",
+  "alt": "A shaft being turned on a Dener CNC lathe \u2014 the turret tool cutting the taper",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/dener/dn-ttc-3-800.webp",
-    "bytes": 39762
+    "w": 710,
+    "h": 382,
+    "file": "img/dener/dn-ttc-3-710.webp",
+    "bytes": 24042
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 258,
     "file": "img/dener/dn-ttc-3-480.webp",
-    "bytes": 21684
+    "bytes": 14536
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 86,
    "file": "img/dener/dn-ttc-3-thumb.webp",
-   "bytes": 4418
+   "bytes": 3088
   }
  },
  "dn-tth-1": {
-  "alt": "Dener TTH-10 CNC lathe \u2014 10\u2033 chuck, 45\u00b0 slant bed, front view",
+  "alt": "Dener TTH CNC lathe \u2014 \u00d827.6\u2033 swing, 8\u2033 to 12\u2033 chucks, chip conveyor at the end",
   "variants": [
    {
+    "w": 682,
+    "h": 354,
+    "file": "img/dener/dn-tth-1-682.webp",
+    "bytes": 9052
+   },
+   {
     "w": 480,
-    "h": 600,
+    "h": 249,
     "file": "img/dener/dn-tth-1-480.webp",
-    "bytes": 20986
+    "bytes": 8552
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 128,
-   "h": 160,
+   "w": 160,
+   "h": 83,
    "file": "img/dener/dn-tth-1-thumb.webp",
-   "bytes": 3350
+   "bytes": 2646
   }
  },
  "dn-tth-2": {
-  "alt": "Dener TTH-10 \u2014 the CNC control on the front of the machine",
+  "alt": "BMT55 C-axis turret with 12 live-tool stations for drilling, tapping and milling (optional) \u2014 Dener TTH",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/dener/dn-tth-2-800.webp",
-    "bytes": 45444
-   },
-   {
     "w": 480,
-    "h": 480,
+    "h": 340,
     "file": "img/dener/dn-tth-2-480.webp",
-    "bytes": 23436
+    "bytes": 27498
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 113,
    "file": "img/dener/dn-tth-2-thumb.webp",
-   "bytes": 4430
-  }
+   "bytes": 6162
+  },
+  "cut": "birefnet"
  },
  "dn-tth-3": {
-  "alt": "Dener TTH-10 \u2014 12-station servo turret with VDI and boring-bar holders",
+  "alt": "Hydraulic tailstock on its own linear guides, moved independently of the turret \u2014 Dener TTH",
   "variants": [
    {
-    "w": 800,
-    "h": 1000,
-    "file": "img/dener/dn-tth-3-800.webp",
-    "bytes": 31552
-   },
-   {
     "w": 480,
-    "h": 600,
+    "h": 312,
     "file": "img/dener/dn-tth-3-480.webp",
-    "bytes": 17886
+    "bytes": 25980
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 128,
-   "h": 160,
+   "w": 160,
+   "h": 104,
    "file": "img/dener/dn-tth-3-thumb.webp",
-   "bytes": 3240
-  }
- },
- "dn-tth-4": {
-  "alt": "Dener TTH-10 \u2014 chip conveyor, coolant tank and hydraulic unit at the back",
-  "variants": [
-   {
-    "w": 800,
-    "h": 889,
-    "file": "img/dener/dn-tth-4-800.webp",
-    "bytes": 39082
-   },
-   {
-    "w": 480,
-    "h": 533,
-    "file": "img/dener/dn-tth-4-480.webp",
-    "bytes": 21064
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 144,
-   "h": 160,
-   "file": "img/dener/dn-tth-4-thumb.webp",
-   "bytes": 4238
-  }
- },
- "dn-mt-lathe-casting": {
-  "alt": "One-piece 45\u00b0 slant-bed casting of a Dener CNC lathe on the assembly line in Kayseri",
-  "variants": [
-   {
-    "w": 800,
-    "h": 889,
-    "file": "img/dener/dn-mt-lathe-casting-800.webp",
-    "bytes": 108728
-   },
-   {
-    "w": 480,
-    "h": 533,
-    "file": "img/dener/dn-mt-lathe-casting-480.webp",
-    "bytes": 51648
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 144,
-   "h": 160,
-   "file": "img/dener/dn-mt-lathe-casting-thumb.webp",
-   "bytes": 6650
-  }
+   "bytes": 5732
+  },
+  "cut": "birefnet"
  },
  "dn-tmc-1": {
-  "alt": "Dener TMC 1200 vertical machining centre \u2014 BBT40 spindle, 24-tool changer",
+  "alt": "Dener TMC vertical machining centre \u2014 fully enclosed, with the swivelling control pendant and the chip conveyor and cart",
   "variants": [
    {
+    "w": 1200,
+    "h": 571,
+    "file": "img/dener/dn-tmc-1-1200.webp",
+    "bytes": 48176
+   },
+   {
     "w": 800,
-    "h": 1000,
+    "h": 381,
     "file": "img/dener/dn-tmc-1-800.webp",
-    "bytes": 48054
+    "bytes": 28504
    },
    {
     "w": 480,
-    "h": 600,
+    "h": 228,
     "file": "img/dener/dn-tmc-1-480.webp",
-    "bytes": 26360
+    "bytes": 15576
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 128,
-   "h": 160,
+   "w": 160,
+   "h": 76,
    "file": "img/dener/dn-tmc-1-thumb.webp",
-   "bytes": 4108
+   "bytes": 4232
   }
  },
  "dn-tmc-2": {
-  "alt": "Dener TMC 1200 \u2014 the enclosure from the side, with the electrical cabinet",
+  "alt": "24-tool arm-type automatic tool changer of the Dener TMC \u2014 BBT40 tool holders",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/dener/dn-tmc-2-800.webp",
-    "bytes": 44028
+    "w": 588,
+    "h": 395,
+    "file": "img/dener/dn-tmc-2-588.webp",
+    "bytes": 43276
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 322,
     "file": "img/dener/dn-tmc-2-480.webp",
-    "bytes": 22430
+    "bytes": 31312
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 107,
    "file": "img/dener/dn-tmc-2-thumb.webp",
-   "bytes": 4206
+   "bytes": 5434
   }
  },
  "dn-tmc-3": {
-  "alt": "Dener TMC 1200 \u2014 the work area: 51 \u00d7 24\u2033 T-slot table under the spindle",
+  "alt": "Milling a pocket in an aluminium block with flood coolant on a Dener TMC vertical machining centre",
   "variants": [
    {
-    "w": 800,
-    "h": 800,
-    "file": "img/dener/dn-tmc-3-800.webp",
-    "bytes": 38488
+    "w": 561,
+    "h": 610,
+    "file": "img/dener/dn-tmc-3-561.webp",
+    "bytes": 40926
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 522,
     "file": "img/dener/dn-tmc-3-480.webp",
-    "bytes": 20004
+    "bytes": 32792
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 160,
+   "w": 147,
    "h": 160,
    "file": "img/dener/dn-tmc-3-thumb.webp",
-   "bytes": 3790
-  }
- },
- "dn-mt-vmc-line": {
-  "alt": "Vertical machining centre castings on Dener's machine-tool assembly line in Kayseri, Turkey",
-  "variants": [
-   {
-    "w": 800,
-    "h": 1000,
-    "file": "img/dener/dn-mt-vmc-line-800.webp",
-    "bytes": 92674
-   },
-   {
-    "w": 480,
-    "h": 600,
-    "file": "img/dener/dn-mt-vmc-line-480.webp",
-    "bytes": 49054
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 128,
-   "h": 160,
-   "file": "img/dener/dn-mt-vmc-line-thumb.webp",
-   "bytes": 5404
+   "bytes": 5266
   }
  },
  "dn-tgh-1": {
-  "alt": "Dener TGH-B 450 NC surface grinder \u2014 17.7 \u00d7 35.4\u2033 table, 10\u2033 touchscreen control",
+  "alt": "Dener TGH-B 450 NC surface grinder \u2014 17.7 \u00d7 35.4\u2033 table, wheel head on the column, 10\u2033 touchscreen control",
   "variants": [
    {
     "w": 1200,
-    "h": 675,
+    "h": 1214,
     "file": "img/dener/dn-tgh-1-1200.webp",
-    "bytes": 59518
+    "bytes": 78516
    },
    {
     "w": 800,
-    "h": 450,
+    "h": 809,
     "file": "img/dener/dn-tgh-1-800.webp",
-    "bytes": 36190
+    "bytes": 45564
    },
    {
     "w": 480,
-    "h": 270,
+    "h": 486,
     "file": "img/dener/dn-tgh-1-480.webp",
-    "bytes": 19318
+    "bytes": 24196
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 90,
+   "w": 158,
+   "h": 160,
    "file": "img/dener/dn-tgh-1-thumb.webp",
-   "bytes": 3864
-  }
- },
- "dn-tdc-diagram": {
-  "alt": "TDC double-column machining centres \u2014 working envelope: X, Y and Z travels, distance between columns and table of the TDC 2112, 3116 and 4120 (diagram)",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 750,
-    "file": "img/dener/dn-tdc-diagram-1200.webp",
-    "bytes": 35192
-   },
-   {
-    "w": 800,
-    "h": 500,
-    "file": "img/dener/dn-tdc-diagram-800.webp",
-    "bytes": 21794
-   },
-   {
-    "w": 480,
-    "h": 300,
-    "file": "img/dener/dn-tdc-diagram-480.webp",
-    "bytes": 10504
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 100,
-   "file": "img/dener/dn-tdc-diagram-thumb.webp",
-   "bytes": 1848
+   "bytes": 6156
   }
  },
  "video-XhIVx8rzqnY": {
@@ -89961,5 +89862,386 @@
    "file": "img/bandsaw/video-ofby5Vxihsc-thumb.webp",
    "bytes": 3780
   }
+ },
+ "dn-ttc-4": {
+  "alt": "One-piece 45\u00b0 slant-bed casting with the headstock, turret slide and tailstock \u2014 the structure of the Dener TTC and TTH lathes",
+  "variants": [
+   {
+    "w": 608,
+    "h": 618,
+    "file": "img/dener/dn-ttc-4-608.webp",
+    "bytes": 36528
+   },
+   {
+    "w": 480,
+    "h": 488,
+    "file": "img/dener/dn-ttc-4-480.webp",
+    "bytes": 30090
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 157,
+   "h": 160,
+   "file": "img/dener/dn-ttc-4-thumb.webp",
+   "bytes": 6808
+  }
+ },
+ "dn-tth-5": {
+  "alt": "Turning a part on a Dener CNC lathe \u2014 chuck, turret and tool at work",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 321,
+    "file": "img/dener/dn-tth-5-1200.webp",
+    "bytes": 35808
+   },
+   {
+    "w": 800,
+    "h": 214,
+    "file": "img/dener/dn-tth-5-800.webp",
+    "bytes": 20558
+   },
+   {
+    "w": 480,
+    "h": 129,
+    "file": "img/dener/dn-tth-5-480.webp",
+    "bytes": 10266
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 43,
+   "file": "img/dener/dn-tth-5-thumb.webp",
+   "bytes": 1648
+  }
+ },
+ "dn-tmc-4": {
+  "alt": "Mitsubishi M80 control with a 15\u2033 touchscreen on the Dener TMC",
+  "variants": [
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/dener/dn-tmc-4-480.webp",
+    "bytes": 21778
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/dener/dn-tmc-4-thumb.webp",
+   "bytes": 4026
+  }
+ },
+ "dn-tmc-5": {
+  "alt": "Dener TMC \u2014 the swivelling control pendant beside the front door",
+  "variants": [
+   {
+    "w": 999,
+    "h": 858,
+    "file": "img/dener/dn-tmc-5-999.webp",
+    "bytes": 50188
+   },
+   {
+    "w": 800,
+    "h": 687,
+    "file": "img/dener/dn-tmc-5-800.webp",
+    "bytes": 32122
+   },
+   {
+    "w": 480,
+    "h": 412,
+    "file": "img/dener/dn-tmc-5-480.webp",
+    "bytes": 15202
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 137,
+   "file": "img/dener/dn-tmc-5-thumb.webp",
+   "bytes": 3218
+  }
+ },
+ "dn-tmc-6": {
+  "alt": "Stress-relieved Meehanite castings \u2014 base, saddle, table and column of the Dener TMC",
+  "variants": [
+   {
+    "w": 480,
+    "h": 520,
+    "file": "img/dener/dn-tmc-6-480.webp",
+    "bytes": 27162
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 148,
+   "h": 160,
+   "file": "img/dener/dn-tmc-6-thumb.webp",
+   "bytes": 5892
+  },
+  "cut": "birefnet"
+ },
+ "dn-tmc-7": {
+  "alt": "Servo motor coupled directly to the C3 ballscrew between the roller linear guides \u2014 Dener TMC axis drive",
+  "variants": [
+   {
+    "w": 662,
+    "h": 459,
+    "file": "img/dener/dn-tmc-7-662.webp",
+    "bytes": 33666
+   },
+   {
+    "w": 480,
+    "h": 333,
+    "file": "img/dener/dn-tmc-7-480.webp",
+    "bytes": 21300
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 111,
+   "file": "img/dener/dn-tmc-7-thumb.webp",
+   "bytes": 3764
+  }
+ },
+ "dn-tdc-1": {
+  "alt": "Dener TDC double-column machining centre \u2014 semi-enclosed gantry, the cross rail on two columns",
+  "variants": [
+   {
+    "w": 797,
+    "h": 624,
+    "file": "img/dener/dn-tdc-1-797.webp",
+    "bytes": 32940
+   },
+   {
+    "w": 480,
+    "h": 376,
+    "file": "img/dener/dn-tdc-1-480.webp",
+    "bytes": 19518
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 125,
+   "file": "img/dener/dn-tdc-1-thumb.webp",
+   "bytes": 5210
+  }
+ },
+ "dn-tdc-2": {
+  "alt": "Dener TDC double-column machining centre \u2014 front view with the control on its swing arm",
+  "variants": [
+   {
+    "w": 1120,
+    "h": 595,
+    "file": "img/dener/dn-tdc-2-1120.webp",
+    "bytes": 27724
+   },
+   {
+    "w": 800,
+    "h": 425,
+    "file": "img/dener/dn-tdc-2-800.webp",
+    "bytes": 21198
+   },
+   {
+    "w": 480,
+    "h": 255,
+    "file": "img/dener/dn-tdc-2-480.webp",
+    "bytes": 11312
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 85,
+   "file": "img/dener/dn-tdc-2-thumb.webp",
+   "bytes": 3210
+  }
+ },
+ "dn-tdc-3": {
+  "alt": "BBT50 direct-drive spindle of the Dener TDC \u2014 10,000 rpm, through-spindle coolant",
+  "variants": [
+   {
+    "w": 456,
+    "h": 243,
+    "file": "img/dener/dn-tdc-3-456.webp",
+    "bytes": 19024
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 85,
+   "file": "img/dener/dn-tdc-3-thumb.webp",
+   "bytes": 5054
+  },
+  "cut": "birefnet"
+ },
+ "dn-tdc-4": {
+  "alt": "Roller linear guides and ballscrew on a Dener TDC axis",
+  "variants": [
+   {
+    "w": 582,
+    "h": 440,
+    "file": "img/dener/dn-tdc-4-582.webp",
+    "bytes": 23306
+   },
+   {
+    "w": 480,
+    "h": 363,
+    "file": "img/dener/dn-tdc-4-480.webp",
+    "bytes": 17694
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 121,
+   "file": "img/dener/dn-tdc-4-thumb.webp",
+   "bytes": 3286
+  }
+ },
+ "dn-tdc-5": {
+  "alt": "A 3-D contoured aluminium part machined on a Dener machining centre",
+  "variants": [
+   {
+    "w": 969,
+    "h": 568,
+    "file": "img/dener/dn-tdc-5-969.webp",
+    "bytes": 68416
+   },
+   {
+    "w": 800,
+    "h": 469,
+    "file": "img/dener/dn-tdc-5-800.webp",
+    "bytes": 46906
+   },
+   {
+    "w": 480,
+    "h": 281,
+    "file": "img/dener/dn-tdc-5-480.webp",
+    "bytes": 18576
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 94,
+   "file": "img/dener/dn-tdc-5-thumb.webp",
+   "bytes": 2680
+  }
+ },
+ "dn-tgh-2": {
+  "alt": "Dener TGH-B 450 surface grinder \u2014 three-quarter view with the control panel on the right",
+  "variants": [
+   {
+    "w": 764,
+    "h": 813,
+    "file": "img/dener/dn-tgh-2-764.webp",
+    "bytes": 55124
+   },
+   {
+    "w": 480,
+    "h": 511,
+    "file": "img/dener/dn-tgh-2-480.webp",
+    "bytes": 31384
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 150,
+   "h": 160,
+   "file": "img/dener/dn-tgh-2-thumb.webp",
+   "bytes": 6542
+  }
+ },
+ "dn-tgh-4": {
+  "alt": "Grinding a block on the magnetic chuck \u2014 wheel guard and coolant nozzle of the Dener TGH-B 450",
+  "variants": [
+   {
+    "w": 800,
+    "h": 603,
+    "file": "img/dener/dn-tgh-4-800.webp",
+    "bytes": 37602
+   },
+   {
+    "w": 480,
+    "h": 362,
+    "file": "img/dener/dn-tgh-4-480.webp",
+    "bytes": 18528
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 121,
+   "file": "img/dener/dn-tgh-4-thumb.webp",
+   "bytes": 3384
+  }
+ },
+ "dn-tgh-5": {
+  "alt": "Mitsubishi NC with a 10\u2033 touchscreen on the Dener TGH-B 450",
+  "variants": [
+   {
+    "w": 582,
+    "h": 776,
+    "file": "img/dener/dn-tgh-5-582.webp",
+    "bytes": 34818
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/dener/dn-tgh-5-480.webp",
+    "bytes": 24976
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/dener/dn-tgh-5-thumb.webp",
+   "bytes": 3032
+  }
+ },
+ "dn-tgh-6": {
+  "alt": "15.7 \u00d7 31.5\u2033 (400 \u00d7 800 mm) electromagnetic chuck of the Dener TGH-B 450",
+  "variants": [
+   {
+    "w": 480,
+    "h": 210,
+    "file": "img/dener/dn-tgh-6-480.webp",
+    "bytes": 14078
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 70,
+   "file": "img/dener/dn-tgh-6-thumb.webp",
+   "bytes": 3298
+  }
+ },
+ "dn-tgh-7": {
+  "alt": "Hydraulic unit with a 100 L tank \u2014 drives the table of the Dener TGH-B 450",
+  "variants": [
+   {
+    "w": 362,
+    "h": 326,
+    "file": "img/dener/dn-tgh-7-362.webp",
+    "bytes": 17454
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 144,
+   "file": "img/dener/dn-tgh-7-thumb.webp",
+   "bytes": 6144
+  },
+  "cut": "birefnet"
  }
 }
