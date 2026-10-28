@@ -203,15 +203,16 @@
       if (!layer) return;
       if (!motion) { wrap.classList.add("is-open"); return; }
       function inset() {
-        var h = stage.clientHeight, w = stage.clientWidth, wh, ww;
-        if (w > 900) { wh = h * 0.72; ww = wh * 0.8; if (ww > w * 0.5) { ww = w * 0.5; wh = ww * 1.25; } }
-        else { ww = w * 0.78; wh = Math.min(ww * 1.25, h * 0.56); }
-        return "inset(" + Math.max(12, (h - wh) / 2) + "px " + Math.max(12, (w - ww) / 2) + "px)";
+        var h = stage.clientHeight, w = stage.clientWidth, wh, ww, top;
+        if (w > 900) { wh = h * 0.72; ww = wh * 0.8; if (ww > w * 0.5) { ww = w * 0.5; wh = ww * 1.25; } top = (h - wh) / 2; }
+        else { wh = h * 0.4; ww = Math.min(w * 0.78, wh * 0.8); top = h * 0.22; }
+        var x = Math.max(12, (w - ww) / 2);
+        return "inset(" + Math.max(12, top) + "px " + x + "px " + Math.max(12, h - top - wh) + "px " + x + "px)";
       }
       gsap.set(layer, { clipPath: inset() });
       var tl = gsap.timeline({ scrollTrigger: { trigger: wrap, start: "top top", end: "bottom bottom", scrub: 0.8, invalidateOnRefresh: true,
         onUpdate: function (st) { wrap.classList.toggle("is-open", st.progress > 0.6); } } });
-      tl.fromTo(layer, { clipPath: inset }, { clipPath: "inset(0px 0px)", ease: "none", duration: 1 }, 0)
+      tl.fromTo(layer, { clipPath: inset }, { clipPath: "inset(0px 0px 0px 0px)", ease: "none", duration: 1 }, 0)
         .to(copy, { y: -60, autoAlpha: 0, ease: "none", duration: 0.45 }, 0.08);
     });
   }
