@@ -86091,13 +86091,13 @@
   "cut": "birefnet"
  },
  "tm-x6336": {
-  "alt": "X6336 turret milling machine with horizontal spindle",
+  "alt": "Turret milling machine with horizontal spindle, as the X6336WA",
   "variants": [
    {
     "w": 480,
     "h": 695,
     "file": "img/ttmc-more/tm-x6336-480.webp",
-    "bytes": 60154
+    "bytes": 59406
    }
   ],
   "alpha": true,
@@ -86105,7 +86105,7 @@
    "w": 110,
    "h": 160,
    "file": "img/ttmc-more/tm-x6336-thumb.webp",
-   "bytes": 8366
+   "bytes": 8288
   },
   "cut": "birefnet"
  },
@@ -90241,6 +90241,2397 @@
    "h": 144,
    "file": "img/dener/dn-tgh-7-thumb.webp",
    "bytes": 6144
+  },
+  "cut": "birefnet"
+ },
+ "tm-bsm3150": {
+  "alt": "BSM3150 shear and brake machine on its mobile stand",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 396,
+    "file": "img/ttmc-more/tm-bsm3150-1200.webp",
+    "bytes": 45716
+   },
+   {
+    "w": 800,
+    "h": 264,
+    "file": "img/ttmc-more/tm-bsm3150-800.webp",
+    "bytes": 28986
+   },
+   {
+    "w": 480,
+    "h": 159,
+    "file": "img/ttmc-more/tm-bsm3150-480.webp",
+    "bytes": 15784
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 53,
+   "file": "img/ttmc-more/tm-bsm3150-thumb.webp",
+   "bytes": 4200
+  },
+  "cut": "birefnet"
+ },
+ "tm-bsm3150-head": {
+  "alt": "Slitter head of the shear and brake machine",
+  "variants": [
+   {
+    "w": 480,
+    "h": 345,
+    "file": "img/ttmc-more/tm-bsm3150-head-480.webp",
+    "bytes": 9436
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 115,
+   "file": "img/ttmc-more/tm-bsm3150-head-thumb.webp",
+   "bytes": 1992
+  }
+ },
+ "tm-cd24": {
+  "alt": "CD-24 coil dispenser on its folding stand",
+  "variants": [
+   {
+    "w": 480,
+    "h": 535,
+    "file": "img/ttmc-more/tm-cd24-480.webp",
+    "bytes": 41416
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 144,
+   "h": 160,
+   "file": "img/ttmc-more/tm-cd24-thumb.webp",
+   "bytes": 8746
+  },
+  "cut": "birefnet"
+ },
+ "tm-cd24-coil": {
+  "alt": "Trim coil on the CD-24 next to a portable brake",
+  "variants": [
+   {
+    "w": 480,
+    "h": 374,
+    "file": "img/ttmc-more/tm-cd24-coil-480.webp",
+    "bytes": 13274
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 125,
+   "file": "img/ttmc-more/tm-cd24-coil-thumb.webp",
+   "bytes": 3388
+  }
+ },
+ "tm-dc900": {
+  "alt": "DC900 dust collector",
+  "variants": [
+   {
+    "w": 378,
+    "h": 912,
+    "file": "img/ttmc-more/tm-dc900-378.webp",
+    "bytes": 35226
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 66,
+   "h": 160,
+   "file": "img/ttmc-more/tm-dc900-thumb.webp",
+   "bytes": 4236
+  },
+  "cut": "birefnet"
+ },
+ "tm-efms2540l": {
+  "alt": "EFMS-2540\u00d71.5L electric folding machine with segmented beams and foot pedals",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 424,
+    "file": "img/ttmc-more/tm-efms2540l-1200.webp",
+    "bytes": 79998
+   },
+   {
+    "w": 800,
+    "h": 283,
+    "file": "img/ttmc-more/tm-efms2540l-800.webp",
+    "bytes": 47624
+   },
+   {
+    "w": 480,
+    "h": 170,
+    "file": "img/ttmc-more/tm-efms2540l-480.webp",
+    "bytes": 25640
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 57,
+   "file": "img/ttmc-more/tm-efms2540l-thumb.webp",
+   "bytes": 5880
+  },
+  "cut": "birefnet"
+ },
+ "tm-efms2540l-angle": {
+  "alt": "Bending angle setting dial",
+  "variants": [
+   {
+    "w": 800,
+    "h": 659,
+    "file": "img/ttmc-more/tm-efms2540l-angle-800.webp",
+    "bytes": 27092
+   },
+   {
+    "w": 480,
+    "h": 396,
+    "file": "img/ttmc-more/tm-efms2540l-angle-480.webp",
+    "bytes": 15650
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 132,
+   "file": "img/ttmc-more/tm-efms2540l-angle-thumb.webp",
+   "bytes": 3178
+  }
+ },
+ "tm-hbv1250": {
+  "alt": "HBV-1250 hydraulic press brake with two cylinders and foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 714,
+    "file": "img/ttmc-more/tm-hbv1250-1200.webp",
+    "bytes": 87676
+   },
+   {
+    "w": 800,
+    "h": 476,
+    "file": "img/ttmc-more/tm-hbv1250-800.webp",
+    "bytes": 54218
+   },
+   {
+    "w": 480,
+    "h": 285,
+    "file": "img/ttmc-more/tm-hbv1250-480.webp",
+    "bytes": 29148
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 95,
+   "file": "img/ttmc-more/tm-hbv1250-thumb.webp",
+   "bytes": 7402
+  },
+  "cut": "birefnet"
+ },
+ "tm-hbv1250-gauge": {
+  "alt": "Back gauge hand wheel with counter",
+  "variants": [
+   {
+    "w": 800,
+    "h": 786,
+    "file": "img/ttmc-more/tm-hbv1250-gauge-800.webp",
+    "bytes": 23256
+   },
+   {
+    "w": 480,
+    "h": 472,
+    "file": "img/ttmc-more/tm-hbv1250-gauge-480.webp",
+    "bytes": 13460
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 157,
+   "file": "img/ttmc-more/tm-hbv1250-gauge-thumb.webp",
+   "bytes": 3210
+  }
+ },
+ "tm-hp150f1plc": {
+  "alt": "HP-150F1/PLC four-column hydraulic press with PLC cabinet",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1697,
+    "file": "img/ttmc-more/tm-hp150f1plc-1200.webp",
+    "bytes": 150748
+   },
+   {
+    "w": 800,
+    "h": 1131,
+    "file": "img/ttmc-more/tm-hp150f1plc-800.webp",
+    "bytes": 90222
+   },
+   {
+    "w": 480,
+    "h": 679,
+    "file": "img/ttmc-more/tm-hp150f1plc-480.webp",
+    "bytes": 45040
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 113,
+   "h": 160,
+   "file": "img/ttmc-more/tm-hp150f1plc-thumb.webp",
+   "bytes": 7012
+  },
+  "cut": "birefnet"
+ },
+ "tm-hp30c2": {
+  "alt": "HP-30C C-frame hydraulic press with foot pedal",
+  "variants": [
+   {
+    "w": 480,
+    "h": 933,
+    "file": "img/ttmc-more/tm-hp30c2-480.webp",
+    "bytes": 42900
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 82,
+   "h": 160,
+   "file": "img/ttmc-more/tm-hp30c2-thumb.webp",
+   "bytes": 5082
+  },
+  "cut": "birefnet"
+ },
+ "tm-hp63c2": {
+  "alt": "HP-63C C-frame hydraulic press with guard doors",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1438,
+    "file": "img/ttmc-more/tm-hp63c2-800.webp",
+    "bytes": 145262
+   },
+   {
+    "w": 480,
+    "h": 863,
+    "file": "img/ttmc-more/tm-hp63c2-480.webp",
+    "bytes": 72516
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 89,
+   "h": 160,
+   "file": "img/ttmc-more/tm-hp63c2-thumb.webp",
+   "bytes": 4842
+  },
+  "cut": "birefnet"
+ },
+ "tm-hw2540h": {
+  "alt": "HW2.0\u00d72540H hydraulic pan and box brake with NC control pedestal and foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 617,
+    "file": "img/ttmc-more/tm-hw2540h-1200.webp",
+    "bytes": 89778
+   },
+   {
+    "w": 800,
+    "h": 411,
+    "file": "img/ttmc-more/tm-hw2540h-800.webp",
+    "bytes": 56448
+   },
+   {
+    "w": 480,
+    "h": 247,
+    "file": "img/ttmc-more/tm-hw2540h-480.webp",
+    "bytes": 29956
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 82,
+   "file": "img/ttmc-more/tm-hw2540h-thumb.webp",
+   "bytes": 6812
+  },
+  "cut": "birefnet"
+ },
+ "tm-hw2540h-panel": {
+  "alt": "NC control panel: open height, bending angle and dwell time",
+  "variants": [
+   {
+    "w": 480,
+    "h": 316,
+    "file": "img/ttmc-more/tm-hw2540h-panel-480.webp",
+    "bytes": 13098
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/ttmc-more/tm-hw2540h-panel-thumb.webp",
+   "bytes": 2318
+  }
+ },
+ "tm-ksm850": {
+  "alt": "KSM-850 cylinder head and block resurfacing machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1087,
+    "file": "img/ttmc-more/tm-ksm850-1200.webp",
+    "bytes": 67334
+   },
+   {
+    "w": 800,
+    "h": 725,
+    "file": "img/ttmc-more/tm-ksm850-800.webp",
+    "bytes": 39818
+   },
+   {
+    "w": 480,
+    "h": 435,
+    "file": "img/ttmc-more/tm-ksm850-480.webp",
+    "bytes": 20606
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 145,
+   "file": "img/ttmc-more/tm-ksm850-thumb.webp",
+   "bytes": 5136
+  },
+  "cut": "birefnet"
+ },
+ "tm-ksm850-panel": {
+  "alt": "Control panel with variable head and table speeds",
+  "variants": [
+   {
+    "w": 480,
+    "h": 316,
+    "file": "img/ttmc-more/tm-ksm850-panel-480.webp",
+    "bytes": 11614
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/ttmc-more/tm-ksm850-panel-thumb.webp",
+   "bytes": 2070
+  }
+ },
+ "tm-mdt-filter": {
+  "alt": "Cartridge filter of the downdraft table",
+  "variants": [
+   {
+    "w": 480,
+    "h": 671,
+    "file": "img/ttmc-more/tm-mdt-filter-480.webp",
+    "bytes": 12990
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 114,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mdt-filter-thumb.webp",
+   "bytes": 2124
+  }
+ },
+ "tm-mdt4840": {
+  "alt": "MDT-4840 downdraft table with three-stage filtration",
+  "variants": [
+   {
+    "w": 800,
+    "h": 925,
+    "file": "img/ttmc-more/tm-mdt4840-800.webp",
+    "bytes": 46510
+   },
+   {
+    "w": 480,
+    "h": 555,
+    "file": "img/ttmc-more/tm-mdt4840-480.webp",
+    "bytes": 26458
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 138,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mdt4840-thumb.webp",
+   "bytes": 5488
+  },
+  "cut": "birefnet"
+ },
+ "tm-mdt6022": {
+  "alt": "MDT-6022 downdraft grinding table",
+  "variants": [
+   {
+    "w": 480,
+    "h": 365,
+    "file": "img/ttmc-more/tm-mdt6022-480.webp",
+    "bytes": 22960
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 122,
+   "file": "img/ttmc-more/tm-mdt6022-thumb.webp",
+   "bytes": 5306
+  },
+  "cut": "birefnet"
+ },
+ "tm-mdt6137": {
+  "alt": "MDT-6137 downdraft table",
+  "variants": [
+   {
+    "w": 800,
+    "h": 815,
+    "file": "img/ttmc-more/tm-mdt6137-800.webp",
+    "bytes": 38914
+   },
+   {
+    "w": 480,
+    "h": 489,
+    "file": "img/ttmc-more/tm-mdt6137-480.webp",
+    "bytes": 22090
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 157,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mdt6137-thumb.webp",
+   "bytes": 5468
+  },
+  "cut": "birefnet"
+ },
+ "tm-mgm300": {
+  "alt": "MGM-300 finishing and deburring machine, 12\u2033 working width",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1166,
+    "file": "img/ttmc-more/tm-mgm300-800.webp",
+    "bytes": 89928
+   },
+   {
+    "w": 480,
+    "h": 700,
+    "file": "img/ttmc-more/tm-mgm300-480.webp",
+    "bytes": 45878
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 110,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mgm300-thumb.webp",
+   "bytes": 6050
+  },
+  "cut": "birefnet"
+ },
+ "tm-mgm300-conveyor": {
+  "alt": "Conveyor drive and abrasive belt of the MGM-300",
+  "variants": [
+   {
+    "w": 480,
+    "h": 316,
+    "file": "img/ttmc-more/tm-mgm300-conveyor-480.webp",
+    "bytes": 33222
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/ttmc-more/tm-mgm300-conveyor-thumb.webp",
+   "bytes": 3640
+  }
+ },
+ "tm-mgx16": {
+  "alt": "MGX16 slot boring machine",
+  "variants": [
+   {
+    "w": 476,
+    "h": 695,
+    "file": "img/ttmc-more/tm-mgx16-476.webp",
+    "bytes": 42298
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 110,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mgx16-thumb.webp",
+   "bytes": 6796
+  },
+  "cut": "birefnet"
+ },
+ "tm-mgx20r": {
+  "alt": "MGX20R slot boring machine with swivelling head",
+  "variants": [
+   {
+    "w": 480,
+    "h": 636,
+    "file": "img/ttmc-more/tm-mgx20r-480.webp",
+    "bytes": 47502
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 121,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mgx20r-thumb.webp",
+   "bytes": 7860
+  },
+  "cut": "birefnet"
+ },
+ "tm-mh5500": {
+  "alt": "MH5500 pipe support",
+  "variants": [
+   {
+    "w": 480,
+    "h": 421,
+    "file": "img/ttmc-more/tm-mh5500-480.webp",
+    "bytes": 30882
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 140,
+   "file": "img/ttmc-more/tm-mh5500-thumb.webp",
+   "bytes": 8360
+  },
+  "cut": "birefnet"
+ },
+ "tm-mr3000a": {
+  "alt": "MR3000A pipe stand with double height adjustment",
+  "variants": [
+   {
+    "w": 480,
+    "h": 505,
+    "file": "img/ttmc-more/tm-mr3000a-480.webp",
+    "bytes": 36860
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 152,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mr3000a-thumb.webp",
+   "bytes": 10244
+  },
+  "cut": "birefnet"
+ },
+ "tm-mr7000d": {
+  "alt": "MR7000D pipe stand with three-point legs",
+  "variants": [
+   {
+    "w": 800,
+    "h": 559,
+    "file": "img/ttmc-more/tm-mr7000d-800.webp",
+    "bytes": 52702
+   },
+   {
+    "w": 480,
+    "h": 336,
+    "file": "img/ttmc-more/tm-mr7000d-480.webp",
+    "bytes": 30262
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 112,
+   "file": "img/ttmc-more/tm-mr7000d-thumb.webp",
+   "bytes": 8562
+  },
+  "cut": "birefnet"
+ },
+ "tm-mrt15": {
+  "alt": "MRT-15 multi-function rotary table with control box and foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 713,
+    "file": "img/ttmc-more/tm-mrt15-1200.webp",
+    "bytes": 73698
+   },
+   {
+    "w": 800,
+    "h": 475,
+    "file": "img/ttmc-more/tm-mrt15-800.webp",
+    "bytes": 46218
+   },
+   {
+    "w": 480,
+    "h": 285,
+    "file": "img/ttmc-more/tm-mrt15-480.webp",
+    "bytes": 24348
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 95,
+   "file": "img/ttmc-more/tm-mrt15-thumb.webp",
+   "bytes": 5858
+  },
+  "cut": "birefnet"
+ },
+ "tm-mrt15-v": {
+  "alt": "MRT-15 in the vertical position",
+  "variants": [
+   {
+    "w": 480,
+    "h": 653,
+    "file": "img/ttmc-more/tm-mrt15-v-480.webp",
+    "bytes": 31390
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 118,
+   "h": 160,
+   "file": "img/ttmc-more/tm-mrt15-v-thumb.webp",
+   "bytes": 5070
+  },
+  "cut": "birefnet"
+ },
+ "tm-ms38": {
+  "alt": "MS 3-8 benchtop mortiser",
+  "variants": [
+   {
+    "w": 415,
+    "h": 680,
+    "file": "img/ttmc-more/tm-ms38-415.webp",
+    "bytes": 38710
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 98,
+   "h": 160,
+   "file": "img/ttmc-more/tm-ms38-thumb.webp",
+   "bytes": 6204
+  },
+  "cut": "birefnet"
+ },
+ "tm-ms48": {
+  "alt": "MS 4-8 benchtop mortiser",
+  "variants": [
+   {
+    "w": 291,
+    "h": 592,
+    "file": "img/ttmc-more/tm-ms48-291.webp",
+    "bytes": 27708
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 79,
+   "h": 160,
+   "file": "img/ttmc-more/tm-ms48-thumb.webp",
+   "bytes": 5676
+  },
+  "cut": "birefnet"
+ },
+ "tm-pjv": {
+  "alt": "Folding pipe jack with V-head",
+  "variants": [
+   {
+    "w": 480,
+    "h": 893,
+    "file": "img/ttmc-more/tm-pjv-480.webp",
+    "bytes": 46500
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 86,
+   "h": 160,
+   "file": "img/ttmc-more/tm-pjv-thumb.webp",
+   "bytes": 5448
+  },
+  "cut": "birefnet"
+ },
+ "tm-ps1220": {
+  "alt": "PS-1220\u00d71.5GT coil slitting and cut-to-length machine",
+  "variants": [
+   {
+    "w": 480,
+    "h": 328,
+    "file": "img/ttmc-more/tm-ps1220-480.webp",
+    "bytes": 27144
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 109,
+   "file": "img/ttmc-more/tm-ps1220-thumb.webp",
+   "bytes": 6190
+  },
+  "cut": "birefnet"
+ },
+ "tm-ps1220-line": {
+  "alt": "Slitting machine with the decoiler and the outfeed table",
+  "variants": [
+   {
+    "w": 480,
+    "h": 240,
+    "file": "img/ttmc-more/tm-ps1220-line-480.webp",
+    "bytes": 29410
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 80,
+   "file": "img/ttmc-more/tm-ps1220-line-thumb.webp",
+   "bytes": 6644
+  },
+  "cut": "birefnet"
+ },
+ "tm-ps1220-slit": {
+  "alt": "Coil slit into strips",
+  "variants": [
+   {
+    "w": 800,
+    "h": 555,
+    "file": "img/ttmc-more/tm-ps1220-slit-800.webp",
+    "bytes": 47482
+   },
+   {
+    "w": 480,
+    "h": 333,
+    "file": "img/ttmc-more/tm-ps1220-slit-480.webp",
+    "bytes": 25230
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 111,
+   "file": "img/ttmc-more/tm-ps1220-slit-thumb.webp",
+   "bytes": 4446
+  }
+ },
+ "tm-ptr185": {
+  "alt": "PTR-185 low pipe roller stand",
+  "variants": [
+   {
+    "w": 800,
+    "h": 491,
+    "file": "img/ttmc-more/tm-ptr185-800.webp",
+    "bytes": 42440
+   },
+   {
+    "w": 480,
+    "h": 294,
+    "file": "img/ttmc-more/tm-ptr185-480.webp",
+    "bytes": 24656
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 98,
+   "file": "img/ttmc-more/tm-ptr185-thumb.webp",
+   "bytes": 6188
+  },
+  "cut": "birefnet"
+ },
+ "tm-qcs500a": {
+  "alt": "QCS-500A aluminum cut-off saw with 20\u2033 blade and pneumatic clamping",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1138,
+    "file": "img/ttmc-more/tm-qcs500a-800.webp",
+    "bytes": 82350
+   },
+   {
+    "w": 480,
+    "h": 683,
+    "file": "img/ttmc-more/tm-qcs500a-480.webp",
+    "bytes": 43122
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 113,
+   "h": 160,
+   "file": "img/ttmc-more/tm-qcs500a-thumb.webp",
+   "bytes": 6158
+  },
+  "cut": "birefnet"
+ },
+ "tm-qcs500a-vise": {
+  "alt": "Pneumatic vise, swivel scale and control panel of the QCS-500A",
+  "variants": [
+   {
+    "w": 480,
+    "h": 464,
+    "file": "img/ttmc-more/tm-qcs500a-vise-480.webp",
+    "bytes": 20672
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 155,
+   "file": "img/ttmc-more/tm-qcs500a-vise-thumb.webp",
+   "bytes": 3894
+  }
+ },
+ "tm-rb3653000d": {
+  "alt": "RB365\u00d73000D roller conveyor with digital length stop",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 556,
+    "file": "img/ttmc-more/tm-rb3653000d-1200.webp",
+    "bytes": 61282
+   },
+   {
+    "w": 800,
+    "h": 371,
+    "file": "img/ttmc-more/tm-rb3653000d-800.webp",
+    "bytes": 39158
+   },
+   {
+    "w": 480,
+    "h": 222,
+    "file": "img/ttmc-more/tm-rb3653000d-480.webp",
+    "bytes": 20950
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/ttmc-more/tm-rb3653000d-thumb.webp",
+   "bytes": 5020
+  },
+  "cut": "birefnet"
+ },
+ "tm-rb3653000d-stop": {
+  "alt": "Length stop with digital display",
+  "variants": [
+   {
+    "w": 480,
+    "h": 313,
+    "file": "img/ttmc-more/tm-rb3653000d-stop-480.webp",
+    "bytes": 12910
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 104,
+   "file": "img/ttmc-more/tm-rb3653000d-stop-thumb.webp",
+   "bytes": 1912
+  }
+ },
+ "tm-srb3202000d": {
+  "alt": "SRB-320\u00d72000D roller stand with vertical side rollers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 748,
+    "file": "img/ttmc-more/tm-srb3202000d-1200.webp",
+    "bytes": 85320
+   },
+   {
+    "w": 800,
+    "h": 498,
+    "file": "img/ttmc-more/tm-srb3202000d-800.webp",
+    "bytes": 55866
+   },
+   {
+    "w": 480,
+    "h": 299,
+    "file": "img/ttmc-more/tm-srb3202000d-480.webp",
+    "bytes": 29572
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/ttmc-more/tm-srb3202000d-thumb.webp",
+   "bytes": 7044
+  },
+  "cut": "birefnet"
+ },
+ "tm-tbs356": {
+  "alt": "TBS-356 14\u2033 band saw for wood",
+  "variants": [
+   {
+    "w": 305,
+    "h": 699,
+    "file": "img/ttmc-more/tm-tbs356-305.webp",
+    "bytes": 24230
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 70,
+   "h": 160,
+   "file": "img/ttmc-more/tm-tbs356-thumb.webp",
+   "bytes": 4886
+  },
+  "cut": "birefnet"
+ },
+ "tm-tbs457": {
+  "alt": "TBS-457 18\u2033 band saw for wood",
+  "variants": [
+   {
+    "w": 414,
+    "h": 862,
+    "file": "img/ttmc-more/tm-tbs457-414.webp",
+    "bytes": 27238
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 77,
+   "h": 160,
+   "file": "img/ttmc-more/tm-tbs457-thumb.webp",
+   "bytes": 4380
+  },
+  "cut": "birefnet"
+ },
+ "tm-tdm-roller": {
+  "alt": "Spiral-toothed infeed roller and cutterblock",
+  "variants": [
+   {
+    "w": 800,
+    "h": 502,
+    "file": "img/ttmc-more/tm-tdm-roller-800.webp",
+    "bytes": 35620
+   },
+   {
+    "w": 480,
+    "h": 301,
+    "file": "img/ttmc-more/tm-tdm-roller-480.webp",
+    "bytes": 19496
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/ttmc-more/tm-tdm-roller-thumb.webp",
+   "bytes": 3300
+  }
+ },
+ "tm-tdm-thick": {
+  "alt": "Planer-thicknesser opened for thicknessing",
+  "variants": [
+   {
+    "w": 480,
+    "h": 370,
+    "file": "img/ttmc-more/tm-tdm-thick-480.webp",
+    "bytes": 21862
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/ttmc-more/tm-tdm-thick-thumb.webp",
+   "bytes": 5564
+  },
+  "cut": "birefnet"
+ },
+ "tm-tdm260": {
+  "alt": "TDM-260 surface planer and thicknesser",
+  "variants": [
+   {
+    "w": 480,
+    "h": 503,
+    "file": "img/ttmc-more/tm-tdm260-480.webp",
+    "bytes": 29626
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 153,
+   "h": 160,
+   "file": "img/ttmc-more/tm-tdm260-thumb.webp",
+   "bytes": 6464
+  },
+  "cut": "birefnet"
+ },
+ "tm-tdm320": {
+  "alt": "TDM-320 surface planer and thicknesser",
+  "variants": [
+   {
+    "w": 800,
+    "h": 627,
+    "file": "img/ttmc-more/tm-tdm320-800.webp",
+    "bytes": 37184
+   },
+   {
+    "w": 480,
+    "h": 376,
+    "file": "img/ttmc-more/tm-tdm320-480.webp",
+    "bytes": 20550
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 125,
+   "file": "img/ttmc-more/tm-tdm320-thumb.webp",
+   "bytes": 4894
+  },
+  "cut": "birefnet"
+ },
+ "tm-tfm-screen": {
+  "alt": "Touch-screen CNC of the folding machine",
+  "variants": [
+   {
+    "w": 480,
+    "h": 325,
+    "file": "img/ttmc-more/tm-tfm-screen-480.webp",
+    "bytes": 11620
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 108,
+   "file": "img/ttmc-more/tm-tfm-screen-thumb.webp",
+   "bytes": 2046
+  }
+ },
+ "tm-tfm-table": {
+  "alt": "CNC back gauge table with fingers",
+  "variants": [
+   {
+    "w": 480,
+    "h": 216,
+    "file": "img/ttmc-more/tm-tfm-table-480.webp",
+    "bytes": 12312
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/ttmc-more/tm-tfm-table-thumb.webp",
+   "bytes": 2474
+  }
+ },
+ "tm-tfm3100": {
+  "alt": "TFM 3100\u00d72E CNC electric folding machine with touch-screen control",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 567,
+    "file": "img/ttmc-more/tm-tfm3100-1200.webp",
+    "bytes": 65820
+   },
+   {
+    "w": 800,
+    "h": 378,
+    "file": "img/ttmc-more/tm-tfm3100-800.webp",
+    "bytes": 39554
+   },
+   {
+    "w": 480,
+    "h": 227,
+    "file": "img/ttmc-more/tm-tfm3100-480.webp",
+    "bytes": 21066
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 76,
+   "file": "img/ttmc-more/tm-tfm3100-thumb.webp",
+   "bytes": 4976
+  },
+  "cut": "birefnet"
+ },
+ "tm-tfms-box": {
+  "alt": "Box folded on the segmented folding machine",
+  "variants": [
+   {
+    "w": 480,
+    "h": 336,
+    "file": "img/ttmc-more/tm-tfms-box-480.webp",
+    "bytes": 11898
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 112,
+   "file": "img/ttmc-more/tm-tfms-box-thumb.webp",
+   "bytes": 2508
+  }
+ },
+ "tm-tfms-segments": {
+  "alt": "Segmented upper beam",
+  "variants": [
+   {
+    "w": 480,
+    "h": 326,
+    "file": "img/ttmc-more/tm-tfms-segments-480.webp",
+    "bytes": 10642
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 109,
+   "file": "img/ttmc-more/tm-tfms-segments-thumb.webp",
+   "bytes": 2142
+  }
+ },
+ "tm-tfms3100": {
+  "alt": "TFMS 3100\u00d72E CNC electric folding machine with segmented upper beam",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 520,
+    "file": "img/ttmc-more/tm-tfms3100-1200.webp",
+    "bytes": 55424
+   },
+   {
+    "w": 800,
+    "h": 347,
+    "file": "img/ttmc-more/tm-tfms3100-800.webp",
+    "bytes": 33278
+   },
+   {
+    "w": 480,
+    "h": 208,
+    "file": "img/ttmc-more/tm-tfms3100-480.webp",
+    "bytes": 18100
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 69,
+   "file": "img/ttmc-more/tm-tfms3100-thumb.webp",
+   "bytes": 4388
+  },
+  "cut": "birefnet"
+ },
+ "tm-tl406": {
+  "alt": "TL-406 12 \u00d7 16\u2033 wood lathe",
+  "variants": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/ttmc-more/tm-tl406-480.webp",
+    "bytes": 24360
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/ttmc-more/tm-tl406-thumb.webp",
+   "bytes": 6556
+  },
+  "cut": "birefnet"
+ },
+ "tm-tl406-bed": {
+  "alt": "TL-406 with the extension bed (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 264,
+    "file": "img/ttmc-more/tm-tl406-bed-800.webp",
+    "bytes": 30742
+   },
+   {
+    "w": 480,
+    "h": 158,
+    "file": "img/ttmc-more/tm-tl406-bed-480.webp",
+    "bytes": 17250
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 53,
+   "file": "img/ttmc-more/tm-tl406-bed-thumb.webp",
+   "bytes": 4722
+  },
+  "cut": "birefnet"
+ },
+ "tm-trs-pipe": {
+  "alt": "Pipe on welding turning rolls",
+  "variants": [
+   {
+    "w": 480,
+    "h": 352,
+    "file": "img/ttmc-more/tm-trs-pipe-480.webp",
+    "bytes": 28124
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 117,
+   "file": "img/ttmc-more/tm-trs-pipe-thumb.webp",
+   "bytes": 7106
+  },
+  "cut": "birefnet"
+ },
+ "tm-trs1000": {
+  "alt": "TRS1000 welding turning rolls \u2014 drive and idler with control box and foot pedal",
+  "variants": [
+   {
+    "w": 480,
+    "h": 339,
+    "file": "img/ttmc-more/tm-trs1000-480.webp",
+    "bytes": 25060
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 113,
+   "file": "img/ttmc-more/tm-trs1000-thumb.webp",
+   "bytes": 6334
+  },
+  "cut": "birefnet"
+ },
+ "tm-trs2200": {
+  "alt": "TRS2200 welding turning rolls",
+  "variants": [
+   {
+    "w": 800,
+    "h": 463,
+    "file": "img/ttmc-more/tm-trs2200-800.webp",
+    "bytes": 40818
+   },
+   {
+    "w": 480,
+    "h": 278,
+    "file": "img/ttmc-more/tm-trs2200-480.webp",
+    "bytes": 23466
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 93,
+   "file": "img/ttmc-more/tm-trs2200-thumb.webp",
+   "bytes": 5712
+  },
+  "cut": "birefnet"
+ },
+ "tm-trs5000": {
+  "alt": "TRS5000 welding turning rolls with steel base",
+  "variants": [
+   {
+    "w": 480,
+    "h": 215,
+    "file": "img/ttmc-more/tm-trs5000-480.webp",
+    "bytes": 20100
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/ttmc-more/tm-trs5000-thumb.webp",
+   "bytes": 4956
+  },
+  "cut": "birefnet"
+ },
+ "tm-w2540h2": {
+  "alt": "W2.0\u00d72540H heavy pan and box brake with extended fingers and counterweight",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 790,
+    "file": "img/ttmc-more/tm-w2540h2-1200.webp",
+    "bytes": 123806
+   },
+   {
+    "w": 800,
+    "h": 527,
+    "file": "img/ttmc-more/tm-w2540h2-800.webp",
+    "bytes": 78298
+   },
+   {
+    "w": 480,
+    "h": 316,
+    "file": "img/ttmc-more/tm-w2540h2-480.webp",
+    "bytes": 40870
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/ttmc-more/tm-w2540h2-thumb.webp",
+   "bytes": 9494
+  },
+  "cut": "birefnet"
+ },
+ "tm-w2540h2-fingers": {
+  "alt": "Ground segmented fingers of the heavy pan and box brake",
+  "variants": [
+   {
+    "w": 480,
+    "h": 315,
+    "file": "img/ttmc-more/tm-w2540h2-fingers-480.webp",
+    "bytes": 17500
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/ttmc-more/tm-w2540h2-fingers-thumb.webp",
+   "bytes": 3698
+  }
+ },
+ "tm-w2540h2-gauge": {
+  "alt": "Digital angle gauge on the bending leaf",
+  "variants": [
+   {
+    "w": 480,
+    "h": 318,
+    "file": "img/ttmc-more/tm-w2540h2-gauge-480.webp",
+    "bytes": 16932
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/ttmc-more/tm-w2540h2-gauge-thumb.webp",
+   "bytes": 3168
+  }
+ },
+ "tm-wgs": {
+  "alt": "Welding torch holder on a positioner",
+  "variants": [
+   {
+    "w": 480,
+    "h": 703,
+    "file": "img/ttmc-more/tm-wgs-480.webp",
+    "bytes": 44848
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 109,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wgs-thumb.webp",
+   "bytes": 6736
+  },
+  "cut": "birefnet"
+ },
+ "tm-wj-cutterhead": {
+  "alt": "Spiral cutterhead with indexable carbide inserts",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/ttmc-more/tm-wj-cutterhead-480.webp",
+    "bytes": 7056
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/ttmc-more/tm-wj-cutterhead-thumb.webp",
+   "bytes": 1668
+  }
+ },
+ "tm-wj1040": {
+  "alt": "WJ10X40 10\u2033 surface planer",
+  "variants": [
+   {
+    "w": 480,
+    "h": 453,
+    "file": "img/ttmc-more/tm-wj1040-480.webp",
+    "bytes": 26118
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 151,
+   "file": "img/ttmc-more/tm-wj1040-thumb.webp",
+   "bytes": 6224
+  },
+  "cut": "birefnet"
+ },
+ "tm-wj876": {
+  "alt": "WJ-8x76 8\u2033 jointer with spiral cutterhead on cabinet stand",
+  "variants": [
+   {
+    "w": 800,
+    "h": 480,
+    "file": "img/ttmc-more/tm-wj876-800.webp",
+    "bytes": 31184
+   },
+   {
+    "w": 480,
+    "h": 288,
+    "file": "img/ttmc-more/tm-wj876-480.webp",
+    "bytes": 16724
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 96,
+   "file": "img/ttmc-more/tm-wj876-thumb.webp",
+   "bytes": 4754
+  },
+  "cut": "birefnet"
+ },
+ "tm-wjp-cutterhead": {
+  "alt": "Spiral cutterhead of the thickness planer",
+  "variants": [
+   {
+    "w": 800,
+    "h": 531,
+    "file": "img/ttmc-more/tm-wjp-cutterhead-800.webp",
+    "bytes": 40934
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/ttmc-more/tm-wjp-cutterhead-480.webp",
+    "bytes": 22912
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/ttmc-more/tm-wjp-cutterhead-thumb.webp",
+   "bytes": 4518
+  }
+ },
+ "tm-wjp15": {
+  "alt": "WJP-15 15\u2033 thickness planer with spiral cutterhead",
+  "variants": [
+   {
+    "w": 480,
+    "h": 610,
+    "file": "img/ttmc-more/tm-wjp15-480.webp",
+    "bytes": 37538
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 126,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wjp15-thumb.webp",
+   "bytes": 7182
+  },
+  "cut": "birefnet"
+ },
+ "tm-wjp15b": {
+  "alt": "WJP-15B benchtop thickness planer",
+  "variants": [
+   {
+    "w": 480,
+    "h": 426,
+    "file": "img/ttmc-more/tm-wjp15b-480.webp",
+    "bytes": 27166
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 142,
+   "file": "img/ttmc-more/tm-wjp15b-thumb.webp",
+   "bytes": 7258
+  },
+  "cut": "birefnet"
+ },
+ "tm-wjp20": {
+  "alt": "WJP-20 20\u2033 thickness planer with spiral cutterhead",
+  "variants": [
+   {
+    "w": 480,
+    "h": 511,
+    "file": "img/ttmc-more/tm-wjp20-480.webp",
+    "bytes": 39146
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 150,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wjp20-thumb.webp",
+   "bytes": 8642
+  },
+  "cut": "birefnet"
+ },
+ "tm-wm-drilling": {
+  "alt": "Drilling on the milling and drilling table",
+  "variants": [
+   {
+    "w": 800,
+    "h": 616,
+    "file": "img/ttmc-more/tm-wm-drilling-800.webp",
+    "bytes": 22970
+   },
+   {
+    "w": 480,
+    "h": 369,
+    "file": "img/ttmc-more/tm-wm-drilling-480.webp",
+    "bytes": 13406
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/ttmc-more/tm-wm-drilling-thumb.webp",
+   "bytes": 3050
+  }
+ },
+ "tm-wm-planing": {
+  "alt": "Edge planing with the clamping device",
+  "variants": [
+   {
+    "w": 800,
+    "h": 554,
+    "file": "img/ttmc-more/tm-wm-planing-800.webp",
+    "bytes": 16246
+   },
+   {
+    "w": 480,
+    "h": 332,
+    "file": "img/ttmc-more/tm-wm-planing-480.webp",
+    "bytes": 9216
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 111,
+   "file": "img/ttmc-more/tm-wm-planing-thumb.webp",
+   "bytes": 2086
+  }
+ },
+ "tm-wm01": {
+  "alt": "WM-01 horizontal boring machine on stand",
+  "variants": [
+   {
+    "w": 480,
+    "h": 796,
+    "file": "img/ttmc-more/tm-wm01-480.webp",
+    "bytes": 48938
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 96,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wm01-thumb.webp",
+   "bytes": 6294
+  },
+  "cut": "birefnet"
+ },
+ "tm-wm2000": {
+  "alt": "WM2000 multifunction woodworking machine \u2014 planer and saw",
+  "variants": [
+   {
+    "w": 480,
+    "h": 384,
+    "file": "img/ttmc-more/tm-wm2000-480.webp",
+    "bytes": 27300
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 128,
+   "file": "img/ttmc-more/tm-wm2000-thumb.webp",
+   "bytes": 6276
+  },
+  "cut": "birefnet"
+ },
+ "tm-wm2200": {
+  "alt": "WM2200 multifunction woodworking machine set up as a table saw",
+  "variants": [
+   {
+    "w": 800,
+    "h": 420,
+    "file": "img/ttmc-more/tm-wm2200-800.webp",
+    "bytes": 32144
+   },
+   {
+    "w": 480,
+    "h": 252,
+    "file": "img/ttmc-more/tm-wm2200-480.webp",
+    "bytes": 17676
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 84,
+   "file": "img/ttmc-more/tm-wm2200-thumb.webp",
+   "bytes": 4612
+  },
+  "cut": "birefnet"
+ },
+ "tm-wm2200r": {
+  "alt": "WM2200R multifunction machine with thicknesser on its legs",
+  "variants": [
+   {
+    "w": 480,
+    "h": 521,
+    "file": "img/ttmc-more/tm-wm2200r-480.webp",
+    "bytes": 31442
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 147,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wm2200r-thumb.webp",
+   "bytes": 6866
+  },
+  "cut": "birefnet"
+ },
+ "tm-wm2500e": {
+  "alt": "WM2500E multifunction woodworking machine",
+  "variants": [
+   {
+    "w": 480,
+    "h": 318,
+    "file": "img/ttmc-more/tm-wm2500e-480.webp",
+    "bytes": 19660
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/ttmc-more/tm-wm2500e-thumb.webp",
+   "bytes": 5028
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp-heavy-box": {
+  "alt": "Control box of the heavy positioners",
+  "variants": [
+   {
+    "w": 480,
+    "h": 348,
+    "file": "img/ttmc-more/tm-wp-heavy-box-480.webp",
+    "bytes": 9974
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 116,
+   "file": "img/ttmc-more/tm-wp-heavy-box-thumb.webp",
+   "bytes": 1928
+  }
+ },
+ "tm-wp-sample": {
+  "alt": "Pipe welded on a positioner",
+  "variants": [
+   {
+    "w": 800,
+    "h": 649,
+    "file": "img/ttmc-more/tm-wp-sample-800.webp",
+    "bytes": 34482
+   },
+   {
+    "w": 480,
+    "h": 390,
+    "file": "img/ttmc-more/tm-wp-sample-480.webp",
+    "bytes": 19144
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 130,
+   "file": "img/ttmc-more/tm-wp-sample-thumb.webp",
+   "bytes": 3622
+  }
+ },
+ "tm-wp1000": {
+  "alt": "WP-1000 welding positioner with power tilt",
+  "variants": [
+   {
+    "w": 480,
+    "h": 405,
+    "file": "img/ttmc-more/tm-wp1000-480.webp",
+    "bytes": 33716
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 135,
+   "file": "img/ttmc-more/tm-wp1000-thumb.webp",
+   "bytes": 7678
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp100t": {
+  "alt": "WP-100T benchtop welding positioner with 8\u2033 chuck",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 827,
+    "file": "img/ttmc-more/tm-wp100t-1200.webp",
+    "bytes": 89866
+   },
+   {
+    "w": 800,
+    "h": 552,
+    "file": "img/ttmc-more/tm-wp100t-800.webp",
+    "bytes": 57300
+   },
+   {
+    "w": 480,
+    "h": 331,
+    "file": "img/ttmc-more/tm-wp100t-480.webp",
+    "bytes": 31256
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 110,
+   "file": "img/ttmc-more/tm-wp100t-thumb.webp",
+   "bytes": 7022
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp100t-h": {
+  "alt": "WP-100T in the horizontal position",
+  "variants": [
+   {
+    "w": 480,
+    "h": 381,
+    "file": "img/ttmc-more/tm-wp100t-h-480.webp",
+    "bytes": 30388
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/ttmc-more/tm-wp100t-h-thumb.webp",
+   "bytes": 6938
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp110": {
+  "alt": "WP-110 welding positioner with 8\u2033 chuck and foot pedal",
+  "variants": [
+   {
+    "w": 800,
+    "h": 680,
+    "file": "img/ttmc-more/tm-wp110-800.webp",
+    "bytes": 66684
+   },
+   {
+    "w": 480,
+    "h": 408,
+    "file": "img/ttmc-more/tm-wp110-480.webp",
+    "bytes": 35654
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 136,
+   "file": "img/ttmc-more/tm-wp110-thumb.webp",
+   "bytes": 8082
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp110-panel": {
+  "alt": "Control panel: speed, foot pedal and auto mode, forward and reverse",
+  "variants": [
+   {
+    "w": 800,
+    "h": 453,
+    "file": "img/ttmc-more/tm-wp110-panel-800.webp",
+    "bytes": 18976
+   },
+   {
+    "w": 480,
+    "h": 272,
+    "file": "img/ttmc-more/tm-wp110-panel-480.webp",
+    "bytes": 10222
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 91,
+   "file": "img/ttmc-more/tm-wp110-panel-thumb.webp",
+   "bytes": 2222
+  }
+ },
+ "tm-wp110t": {
+  "alt": "WP-110T welding positioner with hollow chuck",
+  "variants": [
+   {
+    "w": 800,
+    "h": 584,
+    "file": "img/ttmc-more/tm-wp110t-800.webp",
+    "bytes": 55436
+   },
+   {
+    "w": 480,
+    "h": 350,
+    "file": "img/ttmc-more/tm-wp110t-480.webp",
+    "bytes": 30322
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 117,
+   "file": "img/ttmc-more/tm-wp110t-thumb.webp",
+   "bytes": 7108
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp2000": {
+  "alt": "WP-2000 welding positioner with power tilt",
+  "variants": [
+   {
+    "w": 480,
+    "h": 465,
+    "file": "img/ttmc-more/tm-wp2000-480.webp",
+    "bytes": 42694
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 155,
+   "file": "img/ttmc-more/tm-wp2000-thumb.webp",
+   "bytes": 9450
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp220": {
+  "alt": "WP-220 tilting welding positioner with foot pedal",
+  "variants": [
+   {
+    "w": 480,
+    "h": 697,
+    "file": "img/ttmc-more/tm-wp220-480.webp",
+    "bytes": 43392
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 110,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wp220-thumb.webp",
+   "bytes": 7176
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp3000": {
+  "alt": "WP-3000 welding positioner, 8,818 lb",
+  "variants": [
+   {
+    "w": 800,
+    "h": 618,
+    "file": "img/ttmc-more/tm-wp3000-800.webp",
+    "bytes": 66812
+   },
+   {
+    "w": 480,
+    "h": 371,
+    "file": "img/ttmc-more/tm-wp3000-480.webp",
+    "bytes": 33826
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 124,
+   "file": "img/ttmc-more/tm-wp3000-thumb.webp",
+   "bytes": 7214
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp30t": {
+  "alt": "WP-30T benchtop welding positioner with foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 930,
+    "file": "img/ttmc-more/tm-wp30t-1200.webp",
+    "bytes": 93150
+   },
+   {
+    "w": 800,
+    "h": 620,
+    "file": "img/ttmc-more/tm-wp30t-800.webp",
+    "bytes": 60394
+   },
+   {
+    "w": 480,
+    "h": 372,
+    "file": "img/ttmc-more/tm-wp30t-480.webp",
+    "bytes": 32544
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 124,
+   "file": "img/ttmc-more/tm-wp30t-thumb.webp",
+   "bytes": 7730
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp30t-chuck": {
+  "alt": "Chuck on the WP-30T table (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 578,
+    "file": "img/ttmc-more/tm-wp30t-chuck-800.webp",
+    "bytes": 27364
+   },
+   {
+    "w": 480,
+    "h": 347,
+    "file": "img/ttmc-more/tm-wp30t-chuck-480.webp",
+    "bytes": 15108
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 116,
+   "file": "img/ttmc-more/tm-wp30t-chuck-thumb.webp",
+   "bytes": 2982
+  }
+ },
+ "tm-wp350": {
+  "alt": "WP-350 tilting welding positioner",
+  "variants": [
+   {
+    "w": 415,
+    "h": 528,
+    "file": "img/ttmc-more/tm-wp350-415.webp",
+    "bytes": 40730
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 126,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wp350-thumb.webp",
+   "bytes": 9536
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp50": {
+  "alt": "WP-50 benchtop welding positioner with 3-jaw chuck and digital speed display",
+  "variants": [
+   {
+    "w": 800,
+    "h": 673,
+    "file": "img/ttmc-more/tm-wp50-800.webp",
+    "bytes": 74738
+   },
+   {
+    "w": 480,
+    "h": 404,
+    "file": "img/ttmc-more/tm-wp50-480.webp",
+    "bytes": 39902
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 135,
+   "file": "img/ttmc-more/tm-wp50-thumb.webp",
+   "bytes": 8506
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp50-gas": {
+  "alt": "Gas inlet port for purging through the centre",
+  "variants": [
+   {
+    "w": 800,
+    "h": 609,
+    "file": "img/ttmc-more/tm-wp50-gas-800.webp",
+    "bytes": 31094
+   },
+   {
+    "w": 480,
+    "h": 366,
+    "file": "img/ttmc-more/tm-wp50-gas-480.webp",
+    "bytes": 17340
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 122,
+   "file": "img/ttmc-more/tm-wp50-gas-thumb.webp",
+   "bytes": 3712
+  }
+ },
+ "tm-wp500": {
+  "alt": "WP-500 welding positioner with motorized tilt",
+  "variants": [
+   {
+    "w": 800,
+    "h": 684,
+    "file": "img/ttmc-more/tm-wp500-800.webp",
+    "bytes": 64140
+   },
+   {
+    "w": 480,
+    "h": 410,
+    "file": "img/ttmc-more/tm-wp500-480.webp",
+    "bytes": 36366
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 137,
+   "file": "img/ttmc-more/tm-wp500-thumb.webp",
+   "bytes": 8508
+  },
+  "cut": "birefnet"
+ },
+ "tm-wp500-panel": {
+  "alt": "Control panel: table rotation, tilt and speed",
+  "variants": [
+   {
+    "w": 800,
+    "h": 621,
+    "file": "img/ttmc-more/tm-wp500-panel-800.webp",
+    "bytes": 21656
+   },
+   {
+    "w": 480,
+    "h": 372,
+    "file": "img/ttmc-more/tm-wp500-panel-480.webp",
+    "bytes": 12198
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 124,
+   "file": "img/ttmc-more/tm-wp500-panel-thumb.webp",
+   "bytes": 2738
+  }
+ },
+ "tm-wp500t": {
+  "alt": "WP-500T welding positioner with \u00d86-11/16\u2033 hollow chuck",
+  "variants": [
+   {
+    "w": 800,
+    "h": 709,
+    "file": "img/ttmc-more/tm-wp500t-800.webp",
+    "bytes": 56428
+   },
+   {
+    "w": 480,
+    "h": 426,
+    "file": "img/ttmc-more/tm-wp500t-480.webp",
+    "bytes": 32642
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 142,
+   "file": "img/ttmc-more/tm-wp500t-thumb.webp",
+   "bytes": 8336
+  },
+  "cut": "birefnet"
+ },
+ "tm-wpc": {
+  "alt": "WPC 3-jaw welding chuck",
+  "variants": [
+   {
+    "w": 800,
+    "h": 779,
+    "file": "img/ttmc-more/tm-wpc-800.webp",
+    "bytes": 47968
+   },
+   {
+    "w": 480,
+    "h": 467,
+    "file": "img/ttmc-more/tm-wpc-480.webp",
+    "bytes": 26508
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 156,
+   "file": "img/ttmc-more/tm-wpc-thumb.webp",
+   "bytes": 6878
+  },
+  "cut": "birefnet"
+ },
+ "tm-ws25": {
+  "alt": "WS25-200 belt and disc combination sander",
+  "variants": [
+   {
+    "w": 480,
+    "h": 412,
+    "file": "img/ttmc-more/tm-ws25-480.webp",
+    "bytes": 27444
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 137,
+   "file": "img/ttmc-more/tm-ws25-thumb.webp",
+   "bytes": 6384
+  },
+  "cut": "birefnet"
+ },
+ "tm-wt-notcher": {
+  "alt": "Tube notcher and fixtures on the welding table",
+  "variants": [
+   {
+    "w": 800,
+    "h": 537,
+    "file": "img/ttmc-more/tm-wt-notcher-800.webp",
+    "bytes": 18174
+   },
+   {
+    "w": 480,
+    "h": 322,
+    "file": "img/ttmc-more/tm-wt-notcher-480.webp",
+    "bytes": 10790
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/ttmc-more/tm-wt-notcher-thumb.webp",
+   "bytes": 2444
+  }
+ },
+ "tm-wt3624": {
+  "alt": "WT-36X24 mobile welding table with CNC hole pattern and drop-down tray",
+  "variants": [
+   {
+    "w": 480,
+    "h": 333,
+    "file": "img/ttmc-more/tm-wt3624-480.webp",
+    "bytes": 21358
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 111,
+   "file": "img/ttmc-more/tm-wt3624-thumb.webp",
+   "bytes": 5648
+  },
+  "cut": "birefnet"
+ },
+ "tm-wtr": {
+  "alt": "Outboard support stand with screw height adjustment",
+  "variants": [
+   {
+    "w": 480,
+    "h": 502,
+    "file": "img/ttmc-more/tm-wtr-480.webp",
+    "bytes": 27924
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 153,
+   "h": 160,
+   "file": "img/ttmc-more/tm-wtr-thumb.webp",
+   "bytes": 6750
+  },
+  "cut": "birefnet"
+ },
+ "tm-wts-mortise": {
+  "alt": "Mortising attachment on the table saw (optional)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 706,
+    "file": "img/ttmc-more/tm-wts-mortise-800.webp",
+    "bytes": 31314
+   },
+   {
+    "w": 480,
+    "h": 424,
+    "file": "img/ttmc-more/tm-wts-mortise-480.webp",
+    "bytes": 17552
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 141,
+   "file": "img/ttmc-more/tm-wts-mortise-thumb.webp",
+   "bytes": 3610
+  }
+ },
+ "tm-wts-screen": {
+  "alt": "Touch screen for blade height and angle",
+  "variants": [
+   {
+    "w": 800,
+    "h": 447,
+    "file": "img/ttmc-more/tm-wts-screen-800.webp",
+    "bytes": 24622
+   },
+   {
+    "w": 480,
+    "h": 268,
+    "file": "img/ttmc-more/tm-wts-screen-480.webp",
+    "bytes": 13112
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/ttmc-more/tm-wts-screen-thumb.webp",
+   "bytes": 2162
+  }
+ },
+ "tm-wts1050": {
+  "alt": "WTS10-50 10\u2033 cabinet table saw with 52\u2033 rip fence",
+  "variants": [
+   {
+    "w": 800,
+    "h": 441,
+    "file": "img/ttmc-more/tm-wts1050-800.webp",
+    "bytes": 36320
+   },
+   {
+    "w": 480,
+    "h": 265,
+    "file": "img/ttmc-more/tm-wts1050-480.webp",
+    "bytes": 20170
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 88,
+   "file": "img/ttmc-more/tm-wts1050-thumb.webp",
+   "bytes": 5332
+  },
+  "cut": "birefnet"
+ },
+ "tm-wts1050s": {
+  "alt": "WTS10-50S table saw with touch-screen blade height and angle",
+  "variants": [
+   {
+    "w": 800,
+    "h": 372,
+    "file": "img/ttmc-more/tm-wts1050s-800.webp",
+    "bytes": 29724
+   },
+   {
+    "w": 480,
+    "h": 223,
+    "file": "img/ttmc-more/tm-wts1050s-480.webp",
+    "bytes": 16530
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/ttmc-more/tm-wts1050s-thumb.webp",
+   "bytes": 4394
+  },
+  "cut": "birefnet"
+ },
+ "tm-x6336-dro": {
+  "alt": "Three-axis digital readout and feed controls of the X6336",
+  "variants": [
+   {
+    "w": 480,
+    "h": 559,
+    "file": "img/ttmc-more/tm-x6336-dro-480.webp",
+    "bytes": 22732
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 137,
+   "h": 160,
+   "file": "img/ttmc-more/tm-x6336-dro-thumb.webp",
+   "bytes": 3034
+  }
+ },
+ "tm-x6336b": {
+  "alt": "X6336 turret milling machine with power feed and digital readout",
+  "variants": [
+   {
+    "w": 800,
+    "h": 948,
+    "file": "img/ttmc-more/tm-x6336b-800.webp",
+    "bytes": 80924
+   },
+   {
+    "w": 480,
+    "h": 569,
+    "file": "img/ttmc-more/tm-x6336b-480.webp",
+    "bytes": 45694
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 135,
+   "h": 160,
+   "file": "img/ttmc-more/tm-x6336b-thumb.webp",
+   "bytes": 8128
   },
   "cut": "birefnet"
  }

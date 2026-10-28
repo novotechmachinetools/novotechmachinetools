@@ -2,7 +2,7 @@
  "slug": "metal-fabricating-articles",
  "template": "articles.html",
  "title": "Metal Fabrication Buying Guides & Articles | NovoTech",
- "meta_description": "42 buying guides from NovoTech's technicians: press brakes, lasers, shears, band saws, plate rollers, tube benders, ironworkers, presses, grinders, CNC machines, rebar and window machinery.",
+ "meta_description": "43 buying guides from NovoTech's technicians: press brakes, lasers, shears, band saws, plate rollers, tube benders, ironworkers, presses, grinders, CNC machines, rebar and window machinery.",
  "h1": "Buying guides and articles",
  "intro": "What we explain to customers before they buy — how the machines work, how capacity is rated, which options matter and which do not — written by NovoTech's sales engineers and technicians from years of installing machines in Canada. Each guide sits at the bottom of its product page, next to the machines it describes.",
  "breadcrumb": [
@@ -313,11 +313,11 @@
   },
   {
    "href": "welding-positioners.html#buying-guide",
-   "title": "Welding positioner buying guide",
+   "title": "Welding positioner and turning roll buying guide",
    "image": "tb-wp300",
    "topic": "Welding",
    "group": "welding",
-   "text": "What a positioner does for round welds, rating for weight and off-centre loads, the table speed formula, and fixtures and grounding.",
+   "text": "Positioner or turning rolls, rating for weight and off-centre loads, the table speed formula, chucks and torch holders, and pipe stands and supports.",
    "featured": false
   },
   {
@@ -390,6 +390,15 @@
    "group": "windows",
    "text": "The steps of a window shop and the machine for each, sizing the line by windows a shift, PVC or aluminum, and air, power and layout.",
    "featured": false
+  },
+  {
+   "href": "woodworking-machinery.html#buying-guide",
+   "title": "Woodworking machinery buying guide",
+   "image": "tm-tdm320",
+   "topic": "Woodworking machinery",
+   "group": "wood",
+   "text": "The machines a woodworking shop needs and in what order, jointer and planer widths, spiral carbide heads, table saw or band saw, mortisers and dust collection.",
+   "featured": false
   }
  ],
  "article_groups": [
@@ -446,6 +455,11 @@
   {
    "id": "windows",
    "title": "Window and door machinery",
+   "count": 1
+  },
+  {
+   "id": "wood",
+   "title": "Woodworking machinery",
    "count": 1
   }
  ],

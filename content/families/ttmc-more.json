@@ -2,12 +2,15 @@
  "order": [
   "tt-eb",
   "tt-hw",
+  "tt-hw-h",
+  "tt-tfm",
   "tt-efm",
   "tt-pb",
   "tt-pb-heavy",
   "tt-hb",
   "tt-folder",
   "tt-alb",
+  "tt-cd24",
   "tt-bench-brake",
   "tt-3in1",
   "tt-e3in1",
@@ -41,6 +44,7 @@
   "tt-mill-heavy",
   "tt-zx",
   "tt-mill-small",
+  "tt-ksm850",
   "tt-slot",
   "tt-vmc",
   "tt-boring",
@@ -57,6 +61,17 @@
   "tt-tb3",
   "tt-exhaust",
   "tt-hb-pipe",
+  "tt-wm",
+  "tt-wj",
+  "tt-tdm",
+  "tt-wjp",
+  "tt-wts",
+  "tt-tbs",
+  "tt-mortise",
+  "tt-slotbore",
+  "tt-tl406",
+  "tt-ws25",
+  "tt-dc900",
   "tt-cs",
   "tt-pds315h",
   "tt-pds400",
@@ -88,7 +103,17 @@
   "tt-hb-horizontal",
   "tt-her",
   "tt-esr",
-  "tt-bfm2560"
+  "tt-bfm2560",
+  "tt-mgm300",
+  "tt-wp-bench",
+  "tt-wp-chuck",
+  "tt-wp-tilt",
+  "tt-wp-heavy",
+  "tt-wp-acc",
+  "tt-trs",
+  "tt-wtr",
+  "tt-wt3624",
+  "tt-mdt"
  ],
  "families": {
   "tt-eb": {
@@ -693,26 +718,426 @@
    "no_pdf": true,
    "group": "hyd"
   },
+  "tt-hw-h": {
+   "id": "tt-hw-h",
+   "brand": "novotech",
+   "name": "HW2.0×1320H · HW2.0×2540H hydraulic box and pan brakes, 14 ga × 52″ and 100″",
+   "short": "Hydraulic box and pan brakes",
+   "models_label": "HW2.0×1320H · HW2.0×2540H · 2 models",
+   "summary": "The box and pan brake with hydraulic power: the bending leaf is swung by hydraulics while the operator holds the sheet, and a single-program NC sets the bending angle, the opening height and the dwell time, so every box in a batch comes out the same. Removable fingers from 3 to 12″ fold boxes and pans up to 9″ deep in 14 ga mild steel over 52″ or 100″, with a 44″ back gauge and a foot pedal — for the shop that folds boxes, trays and enclosures all day.",
+   "features": [
+    "14 ga (2 mm) mild steel × 52″ (HW2.0×1320H) and 100″ (HW2.0×2540H)",
+    "Boxes and pans to 9″ (230 mm) deep; removable fingers 3 – 12″",
+    "NC control panel: bending angle, opening height and dwell time; foot pedal",
+    "Bending angle 0 – 120°; back gauge 44″ (1,125 mm)",
+    "3 – 4 HP (2.2 – 3 kW) hydraulic unit"
+   ],
+   "optional": [],
+   "images": [
+    "tm-hw2540h",
+    "tm-hw2540h-panel"
+   ],
+   "videos": [],
+   "headline": "14 ga × 52 – 100″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HW2.0×1320H · HW2.0×2540H",
+      "sub": "Hydraulic pan and box brakes with NC angle control, 14 ga × 52″ and 100″",
+      "models": [
+       "HW2.0×1320H",
+       "HW2.0×2540H"
+      ],
+      "rows": [
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "52″ (1,320 mm)",
+         "100″ (2,540 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm) mild steel",
+         "14 ga (2 mm) mild steel"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 120°",
+         "0 – 120°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Box depth, max",
+        "sub": "",
+        "cells": [
+         "9.1″ (230 mm)",
+         "9.1″ (230 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Fingers",
+        "sub": "",
+        "cells": [
+         "12″ × 1, 6″ × 2, 5″ × 2, 4″ × 3, 3″ × 2",
+         "12″ × 4, 6″ × 4, 5″ × 2, 4″ × 3, 3″ × 2"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "44.3″ (1,125 mm)",
+         "44.3″ (1,125 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Single-program NC with programmable angle readout; foot pedal",
+         "Single-program NC with programmable angle readout; foot pedal"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "82 × 29 × 62″ (208 × 73 × 157 cm)",
+         "130 × 29 × 68″ (330 × 73 × 172 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,469 lb (1,120 kg)",
+         "3,483 lb (1,580 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HW2.0×1320H",
+      "glance": [
+       "52″ (1,320 mm)",
+       "14 ga (2 mm) mild steel",
+       "9.1″ (230 mm)",
+       "3 HP (2.2 kW)",
+       "2,469 lb (1,120 kg)"
+      ]
+     },
+     {
+      "name": "HW2.0×2540H",
+      "glance": [
+       "100″ (2,540 mm)",
+       "14 ga (2 mm) mild steel",
+       "9.1″ (230 mm)",
+       "4 HP (3 kW)",
+       "3,483 lb (1,580 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_length",
+     "capacity",
+     "box_depth_max",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "HW2.0×1320H": "52″ (1,320 mm) × 14 ga (2 mm) mild steel",
+     "HW2.0×2540H": "100″ (2,540 mm) × 14 ga (2 mm) mild steel"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "hyd"
+  },
+  "tt-tfm": {
+   "id": "tt-tfm",
+   "brand": "novotech",
+   "name": "TFM / TFMS CNC electric folding machines, 14 ga × 122″ and 145″",
+   "short": "TFM / TFMS CNC folders",
+   "models_label": "TFM 3100×2E – TFMS 3680×2E · 4 models",
+   "summary": "CNC folding machines for production panels: electric drives clamp and fold 14 ga mild steel or 18 ga stainless over 122″ or 145″ to a programmed angle from 0 to 135°, and a CNC back gauge positions every flange from 1/2 to 48-3/8″ with ±0.004″ repeatability. The touch screen stores 2,000 programs of up to 99 bends, draws the profile from a graphic library and handles radius bending and angle correction. The TFMS models have a segmented upper beam — segments from 2 to 6″ — for boxes 4″ deep.",
+   "features": [
+    "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless × 122″ (3,100 mm) or 144-7/8″ (3,680 mm)",
+    "CNC back gauge 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+    "Touch screen: 2,000 programs of 99 bends, graphic profile library, radius bending, angle correction",
+    "Bending angle 0 – 135°; clamping opening 4-7/8″ (125 mm); reverse bends from 1/2″",
+    "TFMS: segmented upper beam for boxes 4″ (100 mm) deep"
+   ],
+   "optional": [],
+   "images": [
+    "tm-tfm3100",
+    "tm-tfms3100",
+    "tm-tfm-screen",
+    "tm-tfm-table",
+    "tm-tfms-segments",
+    "tm-tfms-box"
+   ],
+   "videos": [],
+   "headline": "14 ga × 122 – 145″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TFM 3100×2E · TFM 3680×2E · TFMS 3100×2E · TFMS 3680×2E",
+      "sub": "CNC electric folding machines, 14 ga × 122″ and 145″ — TFMS with segmented upper beam",
+      "models": [
+       "TFM 3100×2E",
+       "TFM 3680×2E",
+       "TFMS 3100×2E",
+       "TFMS 3680×2E"
+      ],
+      "rows": [
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "122″ (3,100 mm)",
+         "144-7/8″ (3,680 mm)",
+         "122″ (3,100 mm)",
+         "144-7/8″ (3,680 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless",
+         "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless",
+         "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless",
+         "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 135°, programmable",
+         "0 – 135°, programmable",
+         "0 – 135°, programmable",
+         "0 – 135°, programmable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping opening",
+        "sub": "",
+        "cells": [
+         "4-7/8″ (125 mm)",
+         "4-7/8″ (125 mm)",
+         "4-7/8″ (125 mm)",
+         "4-7/8″ (125 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Min. reverse bend",
+        "sub": "",
+        "cells": [
+         "1/2″ (12.7 mm)",
+         "1/2″ (12.7 mm)",
+         "1/2″ (12.7 mm)",
+         "1/2″ (12.7 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+         "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+         "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+         "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge table height",
+        "sub": "",
+        "cells": [
+         "35-3/4″ (910 mm)",
+         "35-3/4″ (910 mm)",
+         "35-3/4″ (910 mm)",
+         "35-3/4″ (910 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Upper beam",
+        "sub": "",
+        "cells": [
+         "One-piece",
+         "One-piece",
+         "Segments 2″ × 7, 3″ × 2, 4″ × 4, 5″ × 10, 6″ × 6 — boxes 4″ (100 mm) deep; 10.5 and 25 mm one-piece beams also supplied",
+         "Segments 2″ × 7, 3″ × 2, 4″ × 4, 5″ × 10, 6″ × 6 — boxes 4″ (100 mm) deep; 10.5 and 25 mm one-piece beams also supplied"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motors",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW) main, 2 HP (1.5 kW) back gauge servo, 1-1/2 HP (1.1 kW) clamping",
+         "5-1/2 HP (4 kW) main, 2 HP (1.5 kW) back gauge servo, 2 HP (1.5 kW) clamping",
+         "4 HP (3 kW) main, 2 HP (1.5 kW) back gauge servo, 1-1/2 HP (1.1 kW) clamping",
+         "5-1/2 HP (4 kW) main, 2 HP (1.5 kW) back gauge servo, 2 HP (1.5 kW) clamping"
+        ],
+        "key": true
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Touch screen: 2,000 programs, 99 bends per program, profile library with graphics, radius bending and angle correction",
+         "Touch screen: 2,000 programs, 99 bends per program, profile library with graphics, radius bending and angle correction",
+         "Touch screen: 2,000 programs, 99 bends per program, profile library with graphics, radius bending and angle correction",
+         "Touch screen: 2,000 programs, 99 bends per program, profile library with graphics, radius bending and angle correction"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "171 × 79 × 63″ (434 × 201 × 160 cm)",
+         "195 × 83 × 59″ (496 × 210 × 150 cm)",
+         "171 × 79 × 63″ (434 × 201 × 160 cm)",
+         "195 × 83 × 59″ (496 × 210 × 150 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "9,436 lb (4,280 kg)",
+         "11,640 lb (5,280 kg)",
+         "9,436 lb (4,280 kg)",
+         "11,640 lb (5,280 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TFM 3100×2E",
+      "glance": [
+       "122″ (3,100 mm)",
+       "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless",
+       "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+       "4 HP (3 kW) main, 2 HP (1.5 kW) back gauge servo, 1-1/2 HP (1.1 kW) clamping",
+       "9,436 lb (4,280 kg)"
+      ]
+     },
+     {
+      "name": "TFM 3680×2E",
+      "glance": [
+       "144-7/8″ (3,680 mm)",
+       "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless",
+       "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+       "5-1/2 HP (4 kW) main, 2 HP (1.5 kW) back gauge servo, 2 HP (1.5 kW) clamping",
+       "11,640 lb (5,280 kg)"
+      ]
+     },
+     {
+      "name": "TFMS 3100×2E",
+      "glance": [
+       "122″ (3,100 mm)",
+       "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless",
+       "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+       "4 HP (3 kW) main, 2 HP (1.5 kW) back gauge servo, 1-1/2 HP (1.1 kW) clamping",
+       "9,436 lb (4,280 kg)"
+      ]
+     },
+     {
+      "name": "TFMS 3680×2E",
+      "glance": [
+       "144-7/8″ (3,680 mm)",
+       "14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless",
+       "CNC, 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+       "5-1/2 HP (4 kW) main, 2 HP (1.5 kW) back gauge servo, 2 HP (1.5 kW) clamping",
+       "11,640 lb (5,280 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_length",
+     "capacity",
+     "back_gauge",
+     "motors",
+     "weight"
+    ],
+    "caps": {
+     "TFM 3100×2E": "122″ (3,100 mm)",
+     "TFM 3680×2E": "144-7/8″ (3,680 mm)",
+     "TFMS 3100×2E": "122″ (3,100 mm)",
+     "TFMS 3680×2E": "144-7/8″ (3,680 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "hyd"
+  },
   "tt-efm": {
    "id": "tt-efm",
    "brand": "novotech",
    "name": "EFM / EFMS electric folding machines, 16 – 20 ga × 80 – 120″",
    "short": "EFM electric folders",
-   "models_label": "EFM 2020 – EFMS 3020 · 6 models",
-   "summary": "Motorized folding with the operator's hands free: one motor closes the clamping beam, a second swings the folding beam, both run from a foot pedal while the operator holds and positions the sheet. 16 ga (1.5 mm) mild steel over 80″, 20 ga (1 mm) over 100″ and 120″. The EFMS models have a segmented blade (25 to 400 mm segments) for boxes and pans, the EFM models a one-piece blade for long straight bends.",
+   "models_label": "EFM 2020 – EFMS-2540×1.5L · 7 models",
+   "summary": "Motorized folding with the operator's hands free: one motor closes the clamping beam, a second swings the folding beam, both run from a foot pedal while the operator holds and positions the sheet. 16 ga (1.5 mm) mild steel over 80″, 20 ga (1 mm) over 100″ and 120″. The EFMS models have a segmented blade (25 to 400 mm segments) for boxes and pans, the EFM models a one-piece blade for long straight bends. The EFMS-2540×1.5L takes 16 ga over the full 100″, with 2 HP and 3 HP motors, a ten-segment blade and the bending angle set on a dial.",
    "features": [
-    "16 ga (1.5 mm) × 80″; 20 ga (1 mm) × 100″ and 120″; bending angle 0 – 135°",
-    "Clamping motor 1/2 HP (0.37 kW) and folding motor 1 HP (0.75 kW); foot pedal control",
+    "16 ga (1.5 mm) × 80″ and 100″ (EFMS-2540×1.5L); 20 ga (1 mm) × 100″ and 120″; bending angle 0 – 135°",
+    "Clamping motor 1/2 HP (0.37 kW) and folding motor 1 HP (0.75 kW) — 2 HP and 3 HP on the EFMS-2540×1.5L; foot pedal control",
     "EFMS: segmented blade, segments 25 – 400 mm, for boxes and pans; EFM: one-piece blade",
     "4″ (100 mm) opening height"
    ],
    "optional": [],
    "images": [
+    "tm-efms2540l",
     "tm-efms",
-    "tm-efm"
+    "tm-efm",
+    "tm-efms2540l-angle"
    ],
    "videos": [],
-   "headline": "16 ga × 80″, 20 ga × 100 – 120″",
+   "headline": "16 ga × 80 – 100″, 20 ga × 100 – 120″",
    "specs": {
     "kind": "table",
     "tables": [
@@ -833,6 +1258,79 @@
         "key": true
        }
       ]
+     },
+     {
+      "title": "EFMS-2540×1.5L",
+      "sub": "Electric folding machine with segmented beams and motorized clamping, 16 ga × 100″",
+      "models": [
+       "EFMS-2540×1.5L"
+      ],
+      "rows": [
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "100″ (2,540 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 120°, set on a dial; limit switches"
+        ],
+        "key": false
+       },
+       {
+        "label": "Opening height",
+        "sub": "",
+        "cells": [
+         "3-1/8″ (80 mm) clamping bar lift"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade",
+        "sub": "",
+        "cells": [
+         "10 segments, 10″ (254 mm) wide"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motors",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW) clamping, 3 HP (2.2 kW) folding"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "146 × 35 × 53″ (370 × 90 × 135 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,425 lb (1,100 kg)"
+        ],
+        "key": true
+       }
+      ]
      }
     ],
     "models": [
@@ -889,6 +1387,15 @@
        "1/2 HP (0.37 kW) clamping, 1 HP (0.75 kW) folding",
        "3,594 lb (1,630 kg)"
       ]
+     },
+     {
+      "name": "EFMS-2540×1.5L",
+      "glance": [
+       "100″ (2,540 mm)",
+       "16 ga (1.5 mm)",
+       "2 HP (1.5 kW) clamping, 3 HP (2.2 kW) folding",
+       "2,425 lb (1,100 kg)"
+      ]
      }
     ],
     "glance_keys": [
@@ -903,7 +1410,8 @@
      "EFM 2520": "100″ (2,520 mm) × 20 ga (1 mm)",
      "EFMS 2520": "100″ (2,520 mm) × 20 ga (1 mm)",
      "EFM 3020": "119″ (3,020 mm) × 20 ga (1 mm)",
-     "EFMS 3020": "119″ (3,020 mm) × 20 ga (1 mm)"
+     "EFMS 3020": "119″ (3,020 mm) × 20 ga (1 mm)",
+     "EFMS-2540×1.5L": "100″ (2,540 mm) × 16 ga (1.5 mm)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
@@ -1450,11 +1958,12 @@
   "tt-pb-heavy": {
    "id": "tt-pb-heavy",
    "brand": "novotech",
-   "name": "Heavy box and pan brakes, 18 – 14 ga × 59 – 100″, pans to 5-1/8″ deep",
+   "name": "Heavy box and pan brakes, 18 – 14 ga × 52 – 100″, boxes to 9″ deep",
    "short": "Heavy box and pan brakes",
-   "models_label": "W1830×1.5P – WU2.0×2500 · 4 models",
-   "summary": "Heavy fabricated box and pan brakes for pans and boxes deeper than a standard brake allows. The W1.5×2540H folds 16 ga over 100″ with fingers for pans up to 5-1/8″ deep and a 6-1/4″ clamping-beam lift; the WU2.0×2500 folds 14 ga over 100″ with two counterweights; the W1830×1.5P folds 16 ga over 72″ with 2, 3 and 4″ fingers; the W1.2×1500H folds 18 ga over 59″ with 4-7/8″ fingers and a precision angle stop. The counterweights hold the beam in any position.",
+   "models_label": "W1830×1.5P – W2.0×2540H · 6 models",
+   "summary": "Heavy fabricated box and pan brakes for boxes and pans deeper than a standard brake allows. The W2.0×1320H and W2.0×2540H fold 14 ga over 52″ and 100″ and take boxes and pans up to 9″ deep, with extended fingers, a 44″ back gauge and a digital angle gauge on the bending leaf; the W1.5×2540H folds 16 ga over 100″ with fingers for pans up to 5-1/8″ deep and a 6-1/4″ clamping-beam lift; the WU2.0×2500 folds 14 ga over 100″ with two counterweights; the W1830×1.5P folds 16 ga over 72″ with 2, 3 and 4″ fingers; the W1.2×1500H folds 18 ga over 59″ with 4-7/8″ fingers and a precision angle stop. The counterweights hold the beam in any position.",
    "features": [
+    "W2.0×1320H / W2.0×2540H: 14 ga (2 mm) × 52″ and 100″; boxes and pans to 9″ (230 mm) deep; digital angle gauge; back gauge 44″",
     "W1.5×2540H: 16 ga × 100″; pans to 5-1/8″ (130 mm) deep; fingers 60 – 305 mm; quick beam adjustment",
     "WU2.0×2500: 14 ga × 100″; fingers 75 mm (5) and 125 mm (17), easy to remove; two counterweights; stop rod",
     "W1830×1.5P: 16 ga × 72″; eight fingers each of 2, 3 and 4″",
@@ -1462,13 +1971,16 @@
    ],
    "optional": [],
    "images": [
+    "tm-w2540h2",
     "tm-w2540h",
+    "tm-w2540h2-fingers",
+    "tm-w2540h2-gauge",
     "tm-wu",
     "tm-w1830p",
     "tm-w1500h"
    ],
    "videos": [],
-   "headline": "18 – 14 ga × 59 – 100″",
+   "headline": "18 – 14 ga × 52 – 100″",
    "specs": {
     "kind": "table",
     "tables": [
@@ -1560,6 +2072,79 @@
         "key": true
        }
       ]
+     },
+     {
+      "title": "W2.0×1320H · W2.0×2540H",
+      "sub": "Heavy pan and box brakes with extended fingers and digital angle gauge, 14 ga × 52″ and 100″",
+      "models": [
+       "W2.0×1320H",
+       "W2.0×2540H"
+      ],
+      "rows": [
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "52″ (1,320 mm)",
+         "100″ (2,540 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm)",
+         "14 ga (2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Box depth / fingers",
+        "sub": "",
+        "cells": [
+         "Boxes and pans to 9″ (230 mm) deep; fingers 12″ × 1, 6″ × 2, 5″ × 2, 4″ × 3, 3″ × 2",
+         "Boxes and pans to 9″ (230 mm) deep; fingers 12″ × 4, 6″ × 4, 5″ × 2, 4″ × 3, 3″ × 2"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "44.3″ (1,125 mm)",
+         "44.3″ (1,125 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 120°; digital angle gauge",
+         "0 – 120°; digital angle gauge"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "76 × 30 × 68″ (193 × 75 × 172 cm)",
+         "124 × 30 × 68″ (315 × 75 × 172 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,995 lb (905 kg)",
+         "3,053 lb (1,385 kg)"
+        ],
+        "key": true
+       }
+      ]
      }
     ],
     "models": [
@@ -1598,6 +2183,24 @@
        "Fingers 75 mm (5) and 125 mm (17)",
        "3,020 lb (1,370 kg)"
       ]
+     },
+     {
+      "name": "W2.0×1320H",
+      "glance": [
+       "52″ (1,320 mm)",
+       "14 ga (2 mm)",
+       "Boxes and pans to 9″ (230 mm) deep; fingers 12″ × 1, 6″ × 2, 5″ × 2, 4″ × 3, 3″ × 2",
+       "1,995 lb (905 kg)"
+      ]
+     },
+     {
+      "name": "W2.0×2540H",
+      "glance": [
+       "100″ (2,540 mm)",
+       "14 ga (2 mm)",
+       "Boxes and pans to 9″ (230 mm) deep; fingers 12″ × 4, 6″ × 4, 5″ × 2, 4″ × 3, 3″ × 2",
+       "3,053 lb (1,385 kg)"
+      ]
      }
     ],
     "glance_keys": [
@@ -1610,7 +2213,9 @@
      "W1830×1.5P": "72″ (1,830 mm) × 16 ga (1.5 mm)",
      "W1.2×1500H": "59″ (1,500 mm) × 18 ga (1.2 mm)",
      "W1.5×2540H": "100″ (2,540 mm) × 16 ga (1.5 mm)",
-     "WU2.0×2500": "100″ (2,500 mm) × 14 ga (2 mm)"
+     "WU2.0×2500": "100″ (2,500 mm) × 14 ga (2 mm)",
+     "W2.0×1320H": "52″ (1,320 mm) × 14 ga (2 mm)",
+     "W2.0×2540H": "100″ (2,540 mm) × 14 ga (2 mm)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
@@ -3040,29 +3645,139 @@
    "no_pdf": true,
    "group": "roof"
   },
+  "tt-cd24": {
+   "id": "tt-cd24",
+   "brand": "novotech",
+   "name": "CD-24 coil dispenser for trim coil, 24″",
+   "short": "CD-24 coil dispenser",
+   "models_label": "CD-24 · 1 model",
+   "summary": "A coil dispenser for the job site: trim coil up to 24″ wide sits on two non-marring bottom rollers under a quick-release tension roller, so the sheet pulls off flat into the portable brake and is cut to length with the brake's own cutter. The stand folds flat for the van; 35 lb.",
+   "features": [
+    "Trim coil to 24″ (610 mm) wide",
+    "Two non-marring bottom rollers and a quick-release tension roller",
+    "Folding support stand; 35 lb (16 kg)",
+    "Works with the cutter of the portable brake; roller cutter optional"
+   ],
+   "optional": [
+    "Roller cutter"
+   ],
+   "images": [
+    "tm-cd24",
+    "tm-cd24-coil"
+   ],
+   "videos": [],
+   "headline": "Coil to 24″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CD-24",
+      "sub": "Coil dispenser for trim coil on the job site",
+      "models": [
+       "CD-24"
+      ],
+      "rows": [
+       {
+        "label": "Coil width",
+        "sub": "",
+        "cells": [
+         "To 24″ (610 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rolls",
+        "sub": "",
+        "cells": [
+         "Two non-marring bottom rollers and a quick-release tension roller"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stand",
+        "sub": "",
+        "cells": [
+         "Folding support stand"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting",
+        "sub": "",
+        "cells": [
+         "Works with the cutter of the portable brake; roller cutter optional"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "40 × 25 × 7″ (102 × 64 × 18 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "35 lb (16 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CD-24",
+      "glance": [
+       "To 24″ (610 mm)",
+       "Two non-marring bottom rollers and a quick-release tension roller",
+       "35 lb (16 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "coil_width",
+     "rolls",
+     "weight"
+    ],
+    "caps": {
+     "CD-24": "To 24″ (610 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "roof"
+  },
   "tt-bench-brake": {
    "id": "tt-bench-brake",
    "brand": "novotech",
-   "name": "Bench, slitting and offset brakes, 22 – 18 ga × 14 – 100″",
+   "name": "Bench, slitting and offset brakes, 22 – 18 ga × 14 – 124″",
    "short": "Bench and slitting brakes",
-   "models_label": "BSM1016 – ZWJ-36 · 10 models",
-   "summary": "Small brakes for the bench and the van: the BSM folding brakes on a fold-away steel stand bend and slit 20 – 22 ga over 40, 48 and 100″, with a slitting device that comes off; the WB-14 and W1.2 bench brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the ZWJ offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga steel and 18 ga aluminum.",
+   "models_label": "BSM1016 – ZWJ-36 · 12 models",
+   "summary": "Small brakes for the bench and the van: the BSM folding brakes on a fold-away steel stand bend and slit 20 – 22 ga over 40, 48 and 100″, with a slitting device that comes off; the BSM1550 and BSM3150 shear and brake machines bend 22 ga over 61″ and 124″ on a mobile stand, with gas springs that lift the bending beam and carry the slitter head along the sheet; the WB-14 and W1.2 bench brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the ZWJ offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga steel and 18 ga aluminum.",
    "features": [
     "BSM1016 / BSM1220 / BSM2540: bend and slit 20 – 22 ga over 40 – 100″, foldable steel stand",
+    "BSM1550 / BSM3150: bend 22 ga over 61″ and 124″, slit over 59″ and 122″; mobile stand with gas springs",
     "W1.2 bench brakes 18 – 39″ in 18 ga; WB-14 14″ in 20 ga",
     "ZWJ-20 / ZWJ-36 offset brakes: 1/2″ jogs to 90° in 20 ga steel and 18 ga aluminum",
     "Aluminum, copper and steel"
    ],
    "optional": [],
    "images": [
+    "tm-bsm3150",
     "tm-bsm1016",
     "tm-bsm2540",
+    "tm-bsm3150-head",
     "tm-w1000",
     "tm-wb14",
     "tm-zwj"
    ],
    "videos": [],
-   "headline": "22 – 18 ga × 14 – 100″",
+   "headline": "22 – 18 ga × 14 – 124″",
    "specs": {
     "kind": "table",
     "tables": [
@@ -3132,6 +3847,70 @@
          "137 lb (62 kg)",
          "181 lb (82 kg)",
          "507 lb (230 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "BSM1550 · BSM3150",
+      "sub": "Shear and brake machines on a mobile stand, 22 ga × 61″ and 124″",
+      "models": [
+       "BSM1550",
+       "BSM3150"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
+         "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending and shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "22 ga (0.8 mm)",
+         "22 ga (0.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 135°",
+         "0 – 135°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stand",
+        "sub": "",
+        "cells": [
+         "Mobile stand on casters; gas springs lift the bending beam and move the slitter head",
+         "Mobile stand on casters; gas springs lift the bending beam and move the slitter head"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "80 × 34 × 20″ (203 × 87 × 50 cm)",
+         "143 × 35 × 20″ (363 × 89 × 52 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "430 lb (195 kg)",
+         "937 lb (425 kg)"
         ],
         "key": true
        }
@@ -3255,6 +4034,26 @@
       ]
      },
      {
+      "name": "BSM1550",
+      "glance": [
+       "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
+       "22 ga (0.8 mm)",
+       "430 lb (195 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "BSM3150",
+      "glance": [
+       "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)",
+       "22 ga (0.8 mm)",
+       "937 lb (425 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
       "name": "WB-14",
       "glance": [
        "—",
@@ -3336,6 +4135,8 @@
      "BSM1016": "40″ (1,016 mm)",
      "BSM1220": "48″ (1,220 mm)",
      "BSM2540": "100″ (2,540 mm)",
+     "BSM1550": "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
+     "BSM3150": "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)",
      "WB-14": "",
      "W1.2×460": "",
      "W1.2×610": "",
@@ -9169,11 +9970,11 @@
    "name": "Turret milling machines, ISO40, with horizontal spindle on the W models",
    "short": "Turret mills",
    "models_label": "4H – X6336WA · 5 models",
-   "summary": "Knee-type turret mills for the tool room and the maintenance shop: the 4H with a 50 × 10″ table, shown with power feed and a digital readout; the X6325W and X6332WA with a horizontal spindle as well as the vertical head, power feed on X and Y and a motorized knee; the X6336 and X6336WA with a high-speed head (70 – 7,200 rpm), power feed on all three axes and hardened square ways. The head swivels ±45° front to back and ±90° left to right; on the WA models the table swivels ±45° too.",
+   "summary": "Knee-type turret mills for the tool room and the maintenance shop: the 4H with a 50 × 10″ table, shown with power feed and a digital readout; the X6325W and X6332WA with a horizontal spindle as well as the vertical head, power feed on X and Y and a motorized knee; the X6336 with an NT40 head, a 63 × 14.2″ table, 51.2″ of X travel and power feed and rapid traverse on all three axes; and the X6336WA with a high-speed head (70 – 7,200 rpm), a horizontal spindle and power feed on all three axes. The head swivels ±45° front to back and ±90° left to right; on the WA models the table swivels ±45° too.",
    "features": [
-    "Tables 50 × 10″ to 64.2 × 14.2″; X travel 23.6 – 39.4″",
-    "Vertical head 80 – 5,440 or 70 – 7,200 rpm; horizontal spindle 40 – 1,800 rpm (W models)",
-    "Power feed X, Y; motorized Z — or power feed on all three axes (X6336)",
+    "Tables 50 × 10″ to 64.2 × 14.2″; X travel 23.6 – 51.2″",
+    "Vertical head 60 – 3,600, 80 – 5,440 or 70 – 7,200 rpm; horizontal spindle 40 – 1,800 rpm (W models)",
+    "Power feed X, Y; motorized Z — or power feed on all three axes (X6336, X6336WA), with rapid traverse on the X6336",
     "3 – 5.5 HP; quill travel 5″ (127 mm)",
     "Table swivel ±45° (X6332WA, X6336WA)"
    ],
@@ -9182,6 +9983,8 @@
     "tm-x6332",
     "tm-4h",
     "tm-x6325",
+    "tm-x6336b",
+    "tm-x6336-dro",
     "tm-x6336"
    ],
    "videos": [],
@@ -9207,7 +10010,7 @@
          "—",
          "NT30, R8",
          "ISO40",
-         "ISO40 vertical, ISO50 horizontal",
+         "NT40; head swivels 90°",
          "ISO40 vertical, ISO50 horizontal"
         ],
         "key": false
@@ -9219,7 +10022,7 @@
          "—",
          "Vertical 80 – 5,440 rpm, horizontal 40 – 1,300 rpm",
          "Vertical 80 – 5,440 rpm, horizontal 40 – 1,300 rpm",
-         "Vertical 70 – 7,200 rpm, horizontal 60 – 1,800 rpm",
+         "Vertical 60 – 3,600 rpm, rated at 50 Hz",
          "Vertical 70 – 7,200 rpm, horizontal 60 – 1,800 rpm"
         ],
         "key": true
@@ -9231,7 +10034,7 @@
          "5″ (127 mm)",
          "5″ (127 mm)",
          "5″ (127 mm)",
-         "5″ (127 mm)",
+         "—",
          "5″ (127 mm)"
         ],
         "key": false
@@ -9243,7 +10046,7 @@
          "0 – 18.1″ (0 – 460 mm)",
          "3.9 – 19.3″ (100 – 490 mm)",
          "3.9 – 19.7″ (100 – 500 mm)",
-         "5.3 – 19.1″ (135 – 485 mm)",
+         "1.6 – 19.3″ (40 – 490 mm)",
          "5.3 – 19.1″ (135 – 485 mm)"
         ],
         "key": false
@@ -9255,7 +10058,7 @@
          "—",
          "3.9 – 22″ (100 – 560 mm)",
          "3.9 – 22″ (100 – 560 mm)",
-         "5.9 – 29.5″ (150 – 750 mm)",
+         "6.3 – 26″ (160 – 660 mm)",
          "5.9 – 29.5″ (150 – 750 mm)"
         ],
         "key": false
@@ -9267,7 +10070,7 @@
          "50 × 10″ (1,270 × 254 mm)",
          "50 × 10.2″ (1,270 × 260 mm)",
          "49.2 × 12.6″ (1,250 × 320 mm), swivels ±45°",
-         "49.2 × 14.2″ (1,250 × 360 mm)",
+         "63 × 14.2″ (1,600 × 360 mm); 3 T-slots; 772 lb (350 kg) load",
          "64.2 × 14.2″ (1,630 × 360 mm), swivels ±45°"
         ],
         "key": true
@@ -9279,7 +10082,7 @@
          "33.5 × 15.7″ (850 × 400 mm)",
          "27.6 × 11″ (700 × 280 mm)",
          "23.6 × 13.4″ (600 × 340 mm)",
-         "39.4 × 11.8 × 13.8″ (1,000 × 300 × 350 mm)",
+         "51.2 × 12.6 × 17.7″ (1,300 × 320 × 450 mm)",
          "39.4 × 12.6 × 15.9″ (1,000 × 320 × 405 mm)"
         ],
         "key": true
@@ -9291,7 +10094,7 @@
          "Ask for the configuration",
          "Power feed X, Y; motorized Z",
          "Power feed X, Y; motorized Z",
-         "Power feed X, Y, Z",
+         "Power feed X, Y 1 – 31.5 in/min (25 – 800 mm/min), Z 1.2 – 10.5 in/min (30 – 267 mm/min); rapid 39.4 / 39.4 / 13.2 in/min (1,000 / 1,000 / 335 mm/min)",
          "Power feed X, Y, Z"
         ],
         "key": false
@@ -9303,7 +10106,7 @@
          "3 HP (2.2 kW)",
          "3 HP (2.2 kW) vertical, 4 HP (3 kW) horizontal",
          "3 HP (2.2 kW) vertical, 4 HP (3 kW) horizontal",
-         "5 HP (3.7 kW) vertical, 5.5 HP (4 kW) horizontal",
+         "—",
          "5 / 2.7 HP (3.7 / 2 kW) vertical, 5.5 HP (4 kW) horizontal"
         ],
         "key": true
@@ -9315,7 +10118,7 @@
          "67 × 63 × 85″ (170 × 160 × 215 cm)",
          "59 × 66 × 83″ (150 × 167 × 210 cm)",
          "60 × 64 × 87″ (152 × 163 × 220 cm)",
-         "75 × 79 × 89″ (190 × 200 × 225 cm)",
+         "105 × 87 × 94″ (267 × 222 × 240 cm)",
          "79 × 79 × 89″ (200 × 200 × 225 cm)"
         ],
         "key": false
@@ -9327,7 +10130,7 @@
          "2,646 lb (1,200 kg)",
          "3,527 lb (1,600 kg)",
          "3,417 lb (1,550 kg)",
-         "5,512 lb (2,500 kg)",
+         "7,055 lb (3,200 kg)",
          "5,842 lb (2,650 kg)"
         ],
         "key": true
@@ -9369,11 +10172,11 @@
      {
       "name": "X6336",
       "glance": [
-       "Vertical 70 – 7,200 rpm, horizontal 60 – 1,800 rpm",
-       "49.2 × 14.2″ (1,250 × 360 mm)",
-       "39.4 × 11.8 × 13.8″ (1,000 × 300 × 350 mm)",
-       "5 HP (3.7 kW) vertical, 5.5 HP (4 kW) horizontal",
-       "5,512 lb (2,500 kg)"
+       "Vertical 60 – 3,600 rpm, rated at 50 Hz",
+       "63 × 14.2″ (1,600 × 360 mm); 3 T-slots; 772 lb (350 kg) load",
+       "51.2 × 12.6 × 17.7″ (1,300 × 320 × 450 mm)",
+       "—",
+       "7,055 lb (3,200 kg)"
       ]
      },
      {
@@ -9398,7 +10201,7 @@
      "4H": "50 × 10″ (1,270 × 254 mm)",
      "X6325W": "50 × 10.2″ (1,270 × 260 mm)",
      "X6332WA": "49.2 × 12.6″ (1,250 × 320 mm), swivels ±45°",
-     "X6336": "49.2 × 14.2″ (1,250 × 360 mm)",
+     "X6336": "63 × 14.2″ (1,600 × 360 mm); 3 T-slots; 772 lb (350 kg) load",
      "X6336WA": "64.2 × 14.2″ (1,630 × 360 mm), swivels ±45°"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
@@ -10421,6 +11224,140 @@
    "manual": false,
    "no_pdf": true,
    "group": "drill"
+  },
+  "tt-ksm850": {
+   "id": "tt-ksm850",
+   "brand": "novotech",
+   "name": "KSM-850 cylinder head and block resurfacing machine",
+   "short": "KSM-850 resurfacer",
+   "models_label": "KSM-850 · 1 model",
+   "summary": "A surface milling machine for the engine rebuilder: a ball-screw table feeds the cylinder head or block under a Ø13″ cutter head with CBN and PCD inserts and leaves the gasket face flat and smooth, on heads and blocks up to 33.5″ long, 13″ wide and 17.3″ high. Head speed from 300 to 1,200 rpm and table feed up to 23.6 in/min are both variable, and the machine runs single passes or continuous working cycles.",
+   "features": [
+    "Heads and blocks to 33.5 × 13″ (850 × 330 mm), 6.3 – 17.3″ (160 – 440 mm) high",
+    "Ø13″ (330 mm) cutter head; 1/2″ CBN / PCD insert and holder standard",
+    "Head 300 – 1,200 rpm and table feed 0 – 23.6 in/min, both variable; ball-screw table, 43.9″ (1,115 mm) travel",
+    "Manual or continuous working cycles",
+    "2 HP head motor, 1 HP table motor; 1,874 lb (850 kg)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ksm850",
+    "tm-ksm850-panel"
+   ],
+   "videos": [],
+   "headline": "Heads to 33.5 × 13″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "KSM-850",
+      "sub": "Cylinder head and block resurfacing machine",
+      "models": [
+       "KSM-850"
+      ],
+      "rows": [
+       {
+        "label": "Workpiece, max L × W × H",
+        "sub": "",
+        "cells": [
+         "33.5 × 13 × 6.3 – 17.3″ (850 × 330 × 160 – 440 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table travel",
+        "sub": "",
+        "cells": [
+         "43.9″ (1,115 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutter head, max",
+        "sub": "",
+        "cells": [
+         "Ø13″ (330 mm), 1/2″ CBN / PCD insert and holder standard"
+        ],
+        "key": true
+       },
+       {
+        "label": "Head speed",
+        "sub": "",
+        "cells": [
+         "300 – 1,200 rpm, variable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table feed",
+        "sub": "",
+        "cells": [
+         "0 – 23.6 in/min (0 – 600 mm/min), variable, ball screw"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cycle",
+        "sub": "",
+        "cells": [
+         "Manual or continuous working cycle programs"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motors",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW) head, 1 HP (0.75 kW) table"
+        ],
+        "key": true
+       },
+       {
+        "label": "Machine size L × W × H",
+        "sub": "",
+        "cells": [
+         "64 × 43 × 66″ (163 × 110 × 168 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,874 lb (850 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "KSM-850",
+      "glance": [
+       "33.5 × 13 × 6.3 – 17.3″ (850 × 330 × 160 – 440 mm)",
+       "43.9″ (1,115 mm)",
+       "Ø13″ (330 mm), 1/2″ CBN / PCD insert and holder standard",
+       "2 HP (1.5 kW) head, 1 HP (0.75 kW) table",
+       "1,874 lb (850 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "workpiece_max_l_w_h",
+     "table_travel",
+     "cutter_head_max",
+     "motors",
+     "weight"
+    ],
+    "caps": {
+     "KSM-850": "43.9″ (1,115 mm) table travel"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "resurf"
   },
   "tt-slot": {
    "id": "tt-slot",
@@ -13092,6 +14029,1829 @@
    "no_pdf": true,
    "group": "pipe"
   },
+  "tt-wm": {
+   "id": "tt-wm",
+   "brand": "novotech",
+   "name": "WM2000 · WM2200 · WM2200R · WM2500E multifunction woodworking machines, 8 – 10″ planing",
+   "short": "WM multifunction machines",
+   "models_label": "WM2000 – WM2500E · 4 models",
+   "summary": "Four machines on one motor for the bench: a surface planer 7.9 or 9.8″ wide, a table saw with an 8-1/4 to 11″ blade, and on the WM2200 models a milling and drilling table on the side for mortises and dowel holes — for the home shop, the small joinery and the site where there is room for one machine. The WM2200R adds a 9.8 × 6.3″ thicknesser on its own legs; the WM2500E has a 3.4 HP motor that starts at 160 V on a weak site supply. Planing and cutting angles from 0 to 45° with the fences and devices supplied.",
+   "features": [
+    "Surface planing 7.9″ (WM2000) or 9.8″ wide, up to 9/64″ (3.5 mm) per pass",
+    "Table saw: Ø8-1/4″ blade and 2-3/4″ cut (WM2000) to Ø11″ blade and 4″ cut (WM2500E)",
+    "Milling and drilling table 14.6 × 7.9″ on the WM2200, WM2200R and WM2500E",
+    "WM2200R: thicknesser 9.8 × 6.3″ (250 × 160 mm), on legs",
+    "2.7 – 3.4 HP, 5,500 rpm; 95 – 172 lb"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wm2200",
+    "tm-wm2000",
+    "tm-wm2500e",
+    "tm-wm2200r",
+    "tm-wm-planing",
+    "tm-wm-drilling"
+   ],
+   "videos": [],
+   "headline": "8 – 10″ planing",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WM2000 · WM2200 · WM2200R · WM2500E",
+      "sub": "Multifunction woodworking machines — planing, sawing, milling and drilling",
+      "models": [
+       "WM2000",
+       "WM2200",
+       "WM2200R",
+       "WM2500E"
+      ],
+      "rows": [
+       {
+        "label": "Planing width",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Planing depth per pass",
+        "sub": "",
+        "cells": [
+         "0 – 1/8″ (0 – 3 mm)",
+         "0 – 9/64″ (0 – 3.5 mm)",
+         "0 – 9/64″ (0 – 3.5 mm)",
+         "0 – 9/64″ (0 – 3.5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw blade / depth of cut",
+        "sub": "",
+        "cells": [
+         "Ø8-1/4″ (210 mm) / 2-3/4″ (70 mm)",
+         "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
+         "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
+         "Ø11″ (280 mm) / 4″ (100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Saw table L × W",
+        "sub": "",
+        "cells": [
+         "28 × 19.7″ (710 × 500 mm)",
+         "29.5 × 20.1″ (750 × 510 mm)",
+         "29.5 × 20.1″ (750 × 510 mm)",
+         "29.5 × 20.1″ (750 × 510 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Planer tables L × W",
+        "sub": "",
+        "cells": [
+         "27.6 × 8.7″ (700 × 220 mm)",
+         "34.7 × 12.5″ (882 × 318 mm)",
+         "39.4 × 12.5″ (1,000 × 318 mm)",
+         "34.7 × 12.5″ (882 × 318 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Milling and drilling table",
+        "sub": "",
+        "cells": [
+         "—",
+         "14.6 × 7.9″ (370 × 200 mm)",
+         "14.6 × 7.9″ (370 × 200 mm)",
+         "14.6 × 7.9″ (370 × 200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Thicknessing",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "9.8 × 6.3″ (250 × 160 mm); table 22.8 × 9.8″ (580 × 250 mm)",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting and planing angles",
+        "sub": "",
+        "cells": [
+         "0 – 45° with the devices",
+         "0 – 45° with the devices",
+         "0 – 45° with the devices",
+         "0 – 45° with the devices"
+        ],
+        "key": false
+       },
+       {
+        "label": "Knives",
+        "sub": "",
+        "cells": [
+         "2 × 7.9″ (200 mm), regrindable",
+         "2 × 9.8″ (250 mm), regrindable",
+         "2 × 9.8″ (250 mm), regrindable",
+         "2 × 9.8″ (250 mm), regrindable"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "2.7 HP (2 kW), 5,500 rpm",
+         "3 HP (2.2 kW), 5,500 rpm",
+         "3 HP (2.2 kW), 5,500 rpm",
+         "3.4 HP (2.5 kW), 5,500 rpm; starts at 160 V"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "34 × 20 × 10″ (86 × 52 × 25 cm)",
+         "36 × 23 × 12″ (92 × 58.5 × 30 cm)",
+         "41 × 21 × 21″ (104 × 52.5 × 53.5 cm)",
+         "36 × 23 × 13″ (92 × 58.5 × 33 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "95 lb (43 kg)",
+         "130 lb (59 kg)",
+         "172 lb (78 kg)",
+         "132 lb (60 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WM2000",
+      "glance": [
+       "7.9″ (200 mm)",
+       "Ø8-1/4″ (210 mm) / 2-3/4″ (70 mm)",
+       "2.7 HP (2 kW), 5,500 rpm",
+       "95 lb (43 kg)"
+      ]
+     },
+     {
+      "name": "WM2200",
+      "glance": [
+       "9.8″ (250 mm)",
+       "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
+       "3 HP (2.2 kW), 5,500 rpm",
+       "130 lb (59 kg)"
+      ]
+     },
+     {
+      "name": "WM2200R",
+      "glance": [
+       "9.8″ (250 mm)",
+       "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
+       "3 HP (2.2 kW), 5,500 rpm",
+       "172 lb (78 kg)"
+      ]
+     },
+     {
+      "name": "WM2500E",
+      "glance": [
+       "9.8″ (250 mm)",
+       "Ø11″ (280 mm) / 4″ (100 mm)",
+       "3.4 HP (2.5 kW), 5,500 rpm; starts at 160 V",
+       "132 lb (60 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "planing_width",
+     "saw_blade_depth_of_cut",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "WM2000": "7.9″ (200 mm) planing",
+     "WM2200": "9.8″ (250 mm) planing",
+     "WM2200R": "9.8″ (250 mm) planing",
+     "WM2500E": "9.8″ (250 mm) planing"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "combo"
+  },
+  "tt-wj": {
+   "id": "tt-wj",
+   "brand": "novotech",
+   "name": "WJ jointers with spiral cutterhead, 6″ and 8″, and WJ10X40 10″ surface planer",
+   "short": "WJ jointers",
+   "models_label": "WJ-6x55 · WJ-8x76 · WJ10X40 · 3 models",
+   "summary": "Jointers flatten one face of a rough board and square an edge to it before the board goes through the thickness planer. The WJ-6x55 and WJ-8x76 have spiral cutterheads with indexable carbide inserts — quieter, a cleaner surface on figured wood, and an insert turned to a fresh edge instead of a set of knives to regrind — long tables of 55-1/2″ and 76″ and a 36″ fence that tilts 45 – 135°. The WJ10X40 is a 10″ surface planer with a straight three-knife cutterhead at 6,500 rpm.",
+   "features": [
+    "WJ-6x55: 6″ cut, 55-1/2″ tables; WJ-8x76: 8″ cut, 76″ tables",
+    "Spiral cutterhead with indexable carbide inserts, 4,800 rpm",
+    "Fence 36 × 5″, tilts 45 – 135° with stops at 45°, 90° and 135°",
+    "Cutting depth to 1/8″ (3 mm)",
+    "WJ10X40: 10″ (260 mm) surface planer, three knives, 6,500 rpm, 3 HP"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wj876",
+    "tm-wj-cutterhead",
+    "tm-wj1040"
+   ],
+   "videos": [],
+   "headline": "6 – 10″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WJ-6x55 · WJ-8x76",
+      "sub": "Jointers with spiral cutterhead, 6″ and 8″",
+      "models": [
+       "WJ-6x55",
+       "WJ-8x76"
+      ],
+      "rows": [
+       {
+        "label": "Cutting width",
+        "sub": "",
+        "cells": [
+         "6″ (153 mm)",
+         "8″ (200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting depth, max",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stock, min",
+        "sub": "",
+        "cells": [
+         "8″ (200 mm) long, 1/2″ (12 mm) thick",
+         "10″ (254 mm) long, 1/2″ (12 mm) thick"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutterhead",
+        "sub": "",
+        "cells": [
+         "Spiral, 15 × 15 × 2.5 mm indexable carbide inserts, 4,800 rpm",
+         "Spiral, 14 × 14 × 2 mm indexable carbide inserts, 4,800 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Fence",
+        "sub": "",
+        "cells": [
+         "36 × 5″ (915 × 127 mm), tilts 45 – 135° with stops at 45°, 90° and 135°",
+         "36 × 5″ (915 × 127 mm), tilts 45 – 135° with stops at 45°, 90° and 135°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tables L × W",
+        "sub": "",
+        "cells": [
+         "55-1/2 × 6″ (1,410 × 153 mm)",
+         "76 × 8″ (1,930 × 203 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "33 × 20 × 32″ (83 × 50 × 82 cm) stand + 67 × 22 × 13″ (170 × 57 × 34 cm) body",
+         "41 × 21 × 32″ (103 × 54 × 82 cm) stand + 81 × 24 × 13″ (206 × 62 × 34 cm) body"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "397 lb (180 kg)",
+         "507 lb (230 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "WJ10X40",
+      "sub": "Surface planer, 10″",
+      "models": [
+       "WJ10X40"
+      ],
+      "rows": [
+       {
+        "label": "Cutting width",
+        "sub": "",
+        "cells": [
+         "10″ (260 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting depth, max",
+        "sub": "",
+        "cells": [
+         "3/16″ (5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutterhead",
+        "sub": "",
+        "cells": [
+         "Straight, 3 knives, 6,500 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Fence",
+        "sub": "",
+        "cells": [
+         "Tilts 0 – 45°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tables L × W",
+        "sub": "",
+        "cells": [
+         "41-5/16″ (1,050 mm) long"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "44 × 22 × 37″ (113 × 55 × 93 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "348 lb (158 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WJ-6x55",
+      "glance": [
+       "6″ (153 mm)",
+       "Spiral, 15 × 15 × 2.5 mm indexable carbide inserts, 4,800 rpm",
+       "55-1/2 × 6″ (1,410 × 153 mm)",
+       "397 lb (180 kg)"
+      ]
+     },
+     {
+      "name": "WJ-8x76",
+      "glance": [
+       "8″ (200 mm)",
+       "Spiral, 14 × 14 × 2 mm indexable carbide inserts, 4,800 rpm",
+       "76 × 8″ (1,930 × 203 mm)",
+       "507 lb (230 kg)"
+      ]
+     },
+     {
+      "name": "WJ10X40",
+      "glance": [
+       "10″ (260 mm)",
+       "Straight, 3 knives, 6,500 rpm",
+       "41-5/16″ (1,050 mm) long",
+       "348 lb (158 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "cutting_width",
+     "cutterhead",
+     "tables_l_w",
+     "weight"
+    ],
+    "caps": {
+     "WJ-6x55": "6″ (153 mm) cut",
+     "WJ-8x76": "8″ (200 mm) cut",
+     "WJ10X40": "10″ (260 mm) cut"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "planing"
+  },
+  "tt-tdm": {
+   "id": "tt-tdm",
+   "brand": "novotech",
+   "name": "TDM jointer-planer combinations, 10 – 16″ planing, thicknessing to 9″",
+   "short": "TDM jointer-planers",
+   "models_label": "TDM-260 · TDM-320 · TDM-410 · 3 models",
+   "summary": "Two machines on one cutterblock: lift the infeed and outfeed tables and the jointer becomes a thickness planer, with a spiral-toothed infeed roller that feeds the board at 20 ft/min under the same cutterblock. Planing widths of 10.2″, 12.6″ and 16.1″ and thicknessing from 1/8″ up to 6.3 – 9.1″, on a closed steel stand with a fence that tilts 90 – 45° — the space-saving choice for the small shop.",
+   "features": [
+    "Planing width 10.2″ (TDM-260), 12.6″ (TDM-320), 16.1″ (TDM-410)",
+    "Thicknessing 0.12 – 6.3″ to 0.12 – 9.1″ (3 – 230 mm)",
+    "Tables 41.3 – 70.9″ long; fence tilts 90 – 45°",
+    "Feed 20 ft/min (6 m/min); spiral-toothed infeed roller",
+    "3 – 4 HP (2.2 – 3 kW)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-tdm320",
+    "tm-tdm260",
+    "tm-tdm-thick",
+    "tm-tdm-roller"
+   ],
+   "videos": [],
+   "headline": "10 – 16″ planing",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TDM-260 · TDM-320 · TDM-410",
+      "sub": "Surface planer and thicknesser combinations, 10 – 16″",
+      "models": [
+       "TDM-260",
+       "TDM-320",
+       "TDM-410"
+      ],
+      "rows": [
+       {
+        "label": "Planing width",
+        "sub": "",
+        "cells": [
+         "10.2″ (260 mm)",
+         "12.6″ (320 mm)",
+         "16.1″ (410 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table length",
+        "sub": "",
+        "cells": [
+         "41.3″ (1,050 mm)",
+         "59″ (1,500 mm)",
+         "70.9″ (1,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting depth, max",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "3/16″ (5 mm)",
+         "3/16″ (5 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Thicknessing height",
+        "sub": "",
+        "cells": [
+         "0.12 – 6.3″ (3 – 160 mm)",
+         "0.12 – 9.1″ (3 – 230 mm)",
+         "0.12 – 8.9″ (3 – 225 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "20 ft/min (6 m/min)",
+         "20 ft/min (6 m/min)",
+         "20 ft/min (6 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Fence",
+        "sub": "",
+        "cells": [
+         "Tilts 90 – 45°",
+         "43 × 6″ (1,100 × 150 mm), tilts 90 – 45°",
+         "Tilts 90 – 45°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "46 × 23 × 37″ (118 × 59 × 95 cm)",
+         "63 × 24 × 39″ (160 × 62 × 98 cm)",
+         "72 × 26 × 39″ (183 × 67 × 98 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "437 lb (198 kg)",
+         "628 lb (285 kg)",
+         "926 lb (420 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TDM-260",
+      "glance": [
+       "10.2″ (260 mm)",
+       "0.12 – 6.3″ (3 – 160 mm)",
+       "3 HP (2.2 kW)",
+       "437 lb (198 kg)"
+      ]
+     },
+     {
+      "name": "TDM-320",
+      "glance": [
+       "12.6″ (320 mm)",
+       "0.12 – 9.1″ (3 – 230 mm)",
+       "3 HP (2.2 kW)",
+       "628 lb (285 kg)"
+      ]
+     },
+     {
+      "name": "TDM-410",
+      "glance": [
+       "16.1″ (410 mm)",
+       "0.12 – 8.9″ (3 – 225 mm)",
+       "4 HP (3 kW)",
+       "926 lb (420 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "planing_width",
+     "thicknessing_height",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "TDM-260": "10.2″ (260 mm) planing",
+     "TDM-320": "12.6″ (320 mm) planing",
+     "TDM-410": "16.1″ (410 mm) planing"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "planing"
+  },
+  "tt-wjp": {
+   "id": "tt-wjp",
+   "brand": "novotech",
+   "name": "WJP thickness planers with spiral cutterhead, 15″ and 20″",
+   "short": "WJP thickness planers",
+   "models_label": "WJP-15B · WJP-15 · WJP-20 · 3 models",
+   "summary": "Thickness planers bring boards to an even thickness with both faces parallel. All three have spiral cutterheads with carbide inserts and two feed speeds: the WJP-15B is a 15″ benchtop planer with a 3 HP motor; the WJP-15 and WJP-20 are floor planers on a mobile base with table extensions, for stock up to 8″ thick and 15″ or 20″ wide.",
+   "features": [
+    "Cutting width 15″ (WJP-15B, WJP-15) or 20″ (WJP-20)",
+    "Stock 3/16 – 8″ thick (1/4 – 8-1/4″ on the WJP-15B); up to 1/8″ per pass",
+    "Spiral cutterhead with carbide inserts; two feed speeds",
+    "WJP-15 / WJP-20: floor models with mobile base and table extensions",
+    "320 – 838 lb (145 – 380 kg)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wjp20",
+    "tm-wjp15",
+    "tm-wjp15b",
+    "tm-wjp-cutterhead"
+   ],
+   "videos": [],
+   "headline": "15 – 20″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WJP-15B · WJP-15 · WJP-20",
+      "sub": "Thickness planers with spiral cutterhead, 15″ and 20″",
+      "models": [
+       "WJP-15B",
+       "WJP-15",
+       "WJP-20"
+      ],
+      "rows": [
+       {
+        "label": "Cutting width",
+        "sub": "",
+        "cells": [
+         "15″ (381 mm)",
+         "15″ (381 mm)",
+         "20″ (500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stock thickness",
+        "sub": "",
+        "cells": [
+         "1/4 – 8-1/4″ (6.35 – 210 mm)",
+         "3/16 – 8″ (5 – 203 mm)",
+         "3/16 – 8″ (5 – 200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting depth, max",
+        "sub": "",
+        "cells": [
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)",
+         "1/8″ (3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutterhead",
+        "sub": "",
+        "cells": [
+         "Spiral, 15 × 15 × 2.5 mm carbide inserts, 5,000 rpm",
+         "Spiral, 15 × 15 × 2.5 mm carbide inserts, 4,750 rpm",
+         "Spiral, 14 × 14 × 2 mm carbide inserts, 4,800 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed",
+        "sub": "",
+        "cells": [
+         "Two feed speeds",
+         "Two feed speeds",
+         "Two feed speeds"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table with extensions",
+        "sub": "",
+        "cells": [
+         "20-1/4 × 15″ (515 × 381 mm)",
+         "42-1/8 × 15″ (1,072 × 381 mm)",
+         "55-1/2 × 20″ (1,410 × 508 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "Benchtop, 3 HP",
+         "Floor model with mobile base",
+         "Floor model with mobile base"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "37 × 25 × 28″ (94 × 64 × 72 cm)",
+         "36 × 29 × 51″ (92 × 73 × 130 cm)",
+         "43 × 34 × 49″ (109 × 87 × 125 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "320 lb (145 kg)",
+         "602 lb (273 kg)",
+         "838 lb (380 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WJP-15B",
+      "glance": [
+       "15″ (381 mm)",
+       "1/4 – 8-1/4″ (6.35 – 210 mm)",
+       "Spiral, 15 × 15 × 2.5 mm carbide inserts, 5,000 rpm",
+       "320 lb (145 kg)"
+      ]
+     },
+     {
+      "name": "WJP-15",
+      "glance": [
+       "15″ (381 mm)",
+       "3/16 – 8″ (5 – 203 mm)",
+       "Spiral, 15 × 15 × 2.5 mm carbide inserts, 4,750 rpm",
+       "602 lb (273 kg)"
+      ]
+     },
+     {
+      "name": "WJP-20",
+      "glance": [
+       "20″ (500 mm)",
+       "3/16 – 8″ (5 – 200 mm)",
+       "Spiral, 14 × 14 × 2 mm carbide inserts, 4,800 rpm",
+       "838 lb (380 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "cutting_width",
+     "stock_thickness",
+     "cutterhead",
+     "weight"
+    ],
+    "caps": {
+     "WJP-15B": "15″ (381 mm) cut",
+     "WJP-15": "15″ (381 mm) cut",
+     "WJP-20": "20″ (500 mm) cut"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "planing"
+  },
+  "tt-wts": {
+   "id": "tt-wts",
+   "brand": "novotech",
+   "name": "WTS10 10″ cabinet table saws, 30″ and 52″ rip — touch-screen S models",
+   "short": "WTS10 table saws",
+   "models_label": "WTS10-30 – WTS10-50S · 4 models",
+   "summary": "10″ cabinet table saws with a cast-iron table, a 3 HP motor and 3-3/8″ of cut at 90°: the WTS10-30 rips 30″ to the right of the blade, the WTS10-50 52″ on a long fence rail with a table extension and legs. On the S models the blade height and tilt are set on a touch screen with a digital display instead of hand wheels. An 8″ dado stack up to 13/16″ wide fits, and a 4″ port connects the dust collector.",
+   "features": [
+    "10″ blade, 3,550 rpm; cut 3-3/8″ at 90°, 2-1/4″ at 45°",
+    "Rip 30″ (WTS10-30) or 52″ (WTS10-50) right of the blade, 20″ left",
+    "Cast-iron table 40 × 27″; blade tilts 45° left",
+    "S models: touch screen sets the blade height and angle",
+    "8″ dado stack to 13/16″; 4″ dust port; 3 HP"
+   ],
+   "optional": [
+    "Mortising attachment"
+   ],
+   "images": [
+    "tm-wts1050",
+    "tm-wts1050s",
+    "tm-wts-screen",
+    "tm-wts-mortise"
+   ],
+   "videos": [],
+   "headline": "10″ blade, 30 – 52″ rip",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WTS10-30 · WTS10-50 · WTS10-30S · WTS10-50S",
+      "sub": "10″ cabinet table saws — S models with touch-screen blade height and angle",
+      "models": [
+       "WTS10-30",
+       "WTS10-50",
+       "WTS10-30S",
+       "WTS10-50S"
+      ],
+      "rows": [
+       {
+        "label": "Blade",
+        "sub": "",
+        "cells": [
+         "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide",
+         "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide",
+         "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide",
+         "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide"
+        ],
+        "key": true
+       },
+       {
+        "label": "Depth of cut, 90° / 45°",
+        "sub": "",
+        "cells": [
+         "3-3/8 / 2-1/4″ (80 / 55 mm)",
+         "3-3/8 / 2-1/4″ (80 / 55 mm)",
+         "3-3/8 / 2-1/4″ (80 / 55 mm)",
+         "3-3/8 / 2-1/4″ (80 / 55 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rip capacity, right / left of blade",
+        "sub": "",
+        "cells": [
+         "30 / 20″ (760 / 520 mm)",
+         "52 / 20″ (1,320 / 520 mm)",
+         "30 / 20″ (760 / 520 mm)",
+         "52 / 20″ (1,320 / 520 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cast-iron table",
+        "sub": "",
+        "cells": [
+         "40 × 27″ (1,025 × 690 mm)",
+         "40 × 27″ (1,025 × 690 mm)",
+         "40 × 27″ (1,025 × 690 mm)",
+         "40 × 27″ (1,025 × 690 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade tilt",
+        "sub": "",
+        "cells": [
+         "45° left",
+         "45° left",
+         "45° left",
+         "45° left"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade height and angle",
+        "sub": "",
+        "cells": [
+         "Hand wheels",
+         "Hand wheels",
+         "Touch screen with digital display",
+         "Touch screen with digital display"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dust port",
+        "sub": "",
+        "cells": [
+         "4″ (100 mm)",
+         "4″ (100 mm)",
+         "4″ (100 mm)",
+         "4″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Overall size L × W × H",
+        "sub": "",
+        "cells": [
+         "64 × 37 × 41″ (1,630 × 930 × 1,040 mm)",
+         "84 × 37 × 41″ (2,138 × 930 × 1,040 mm)",
+         "64 × 38 × 41″ (1,630 × 970 × 1,040 mm)",
+         "84 × 38 × 41″ (2,138 × 970 × 1,040 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "465 lb (211 kg)",
+         "496 lb (225 kg)",
+         "516 lb (234 kg)",
+         "547 lb (248 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WTS10-30",
+      "glance": [
+       "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide",
+       "3-3/8 / 2-1/4″ (80 / 55 mm)",
+       "30 / 20″ (760 / 520 mm)",
+       "3 HP (2.2 kW)",
+       "465 lb (211 kg)"
+      ]
+     },
+     {
+      "name": "WTS10-50",
+      "glance": [
+       "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide",
+       "3-3/8 / 2-1/4″ (80 / 55 mm)",
+       "52 / 20″ (1,320 / 520 mm)",
+       "3 HP (2.2 kW)",
+       "496 lb (225 kg)"
+      ]
+     },
+     {
+      "name": "WTS10-30S",
+      "glance": [
+       "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide",
+       "3-3/8 / 2-1/4″ (80 / 55 mm)",
+       "30 / 20″ (760 / 520 mm)",
+       "3 HP (2.2 kW)",
+       "516 lb (234 kg)"
+      ]
+     },
+     {
+      "name": "WTS10-50S",
+      "glance": [
+       "10″ (254 mm), 3,550 rpm; dado 8″ (203 mm) to 13/16″ (20.6 mm) wide",
+       "3-3/8 / 2-1/4″ (80 / 55 mm)",
+       "52 / 20″ (1,320 / 520 mm)",
+       "3 HP (2.2 kW)",
+       "547 lb (248 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "depth_of_cut_90_45",
+     "rip_capacity_right_left_of_blade",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "WTS10-30": "30 / 20″ (760 / 520 mm) rip",
+     "WTS10-50": "52 / 20″ (1,320 / 520 mm) rip",
+     "WTS10-30S": "30 / 20″ (760 / 520 mm) rip",
+     "WTS10-50S": "52 / 20″ (1,320 / 520 mm) rip"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "sawing"
+  },
+  "tt-tbs": {
+   "id": "tt-tbs",
+   "brand": "novotech",
+   "name": "TBS-356 · TBS-457 band saws for wood, 14″ and 18″",
+   "short": "TBS band saws",
+   "models_label": "TBS-356 · TBS-457 · 2 models",
+   "summary": "Deluxe band saws for resawing and curve cutting: the TBS-356 is a 14″ saw with 13″ of resaw height and a 1.5 HP motor on 115 / 230 V; the TBS-457 an 18″ saw with an 18.4″ throat, 12″ of resaw height and a 3 HP motor. Both have two blade speeds, a table that tilts 10° left and 45° right and a closed cabinet stand.",
+   "features": [
+    "TBS-356: 14″, 13.6″ throat, 13″ resaw, 1.5 HP, 115 / 230 V",
+    "TBS-457: 18″, 18.4″ throat, 12″ resaw, 3 HP",
+    "Blades 1/8 – 3/4″ (TBS-356) and 1/4 – 1-1/4″ (TBS-457) wide",
+    "Two blade speeds; table tilts 10° left and 45° right"
+   ],
+   "optional": [],
+   "images": [
+    "tm-tbs457",
+    "tm-tbs356"
+   ],
+   "videos": [],
+   "headline": "14 – 18″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TBS-356 · TBS-457",
+      "sub": "14″ and 18″ deluxe band saws for wood",
+      "models": [
+       "TBS-356",
+       "TBS-457"
+      ],
+      "rows": [
+       {
+        "label": "Resaw height",
+        "sub": "",
+        "cells": [
+         "13″ (330 mm)",
+         "12″ (305 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Throat",
+        "sub": "",
+        "cells": [
+         "13.6″ (346 mm)",
+         "18.4″ (467 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade",
+        "sub": "",
+        "cells": [
+         "1/8 – 3/4″ (3 – 19 mm) wide, 111″ (2,819 mm) long",
+         "1/4 – 1-1/4″ (6 – 32 mm) wide, 142″ (3,607 mm) long"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "16 × 21.5″ (406 × 546 mm), tilts 10° left and 45° right",
+         "21 × 19″ (533 × 483 mm), tilts 10° left and 45° right"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speeds",
+        "sub": "",
+        "cells": [
+         "2 speeds: 1,250 / 2,620 ft/min (380 / 800 m/min)",
+         "2 speeds: 1,510 / 3,215 ft/min (460 / 980 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW), 115 / 230 V",
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Size H × W × D",
+        "sub": "",
+        "cells": [
+         "73 × 30 × 25″ (1,850 × 762 × 635 mm)",
+         "76 × 38 × 27″ (1,930 × 969 × 694 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "55 × 19 × 24″ (139 × 48 × 60 cm)",
+         "79 × 24 × 41″ (201 × 60 × 103 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "267 lb (121 kg)",
+         "388 lb (176 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TBS-356",
+      "glance": [
+       "13″ (330 mm)",
+       "13.6″ (346 mm)",
+       "1.5 HP (1.1 kW), 115 / 230 V",
+       "267 lb (121 kg)"
+      ]
+     },
+     {
+      "name": "TBS-457",
+      "glance": [
+       "12″ (305 mm)",
+       "18.4″ (467 mm)",
+       "3 HP (2.2 kW)",
+       "388 lb (176 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "resaw_height",
+     "throat",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "TBS-356": "13″ (330 mm) resaw",
+     "TBS-457": "12″ (305 mm) resaw"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "sawing"
+  },
+  "tt-mortise": {
+   "id": "tt-mortise",
+   "brand": "novotech",
+   "name": "MS 3-8 · MS 4-8 benchtop hollow-chisel mortisers",
+   "short": "MS mortisers",
+   "models_label": "MS 3-8 · MS 4-8 · 2 models",
+   "summary": "Hollow-chisel mortisers cut the square mortise of a mortise-and-tenon joint: a bit turns inside a square hollow chisel that the lever drives into the wood. The MS 3-8 comes with 1/4, 5/16, 3/8 and 1/2″ chisels and cuts mortises 3″ deep; the MS 4-8 has a 1/2″ chuck, a 3/4 HP motor and 4-1/2″ of depth.",
+   "features": [
+    "MS 3-8: 1/2 HP; chisels 1/4 – 1/2″ included; mortises 3″ deep",
+    "MS 4-8: 3/4 HP; 1/2″ chuck; mortises 4-1/2″ deep",
+    "Stock 8 – 8-1/2″ wide and 6 – 7-3/8″ thick",
+    "JT #2 spindle; 1,725 or 3,450 rpm at 60 Hz"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ms38",
+    "tm-ms48"
+   ],
+   "videos": [],
+   "headline": "3 – 4-1/2″ deep",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MS 3-8 · MS 4-8",
+      "sub": "Benchtop hollow-chisel mortisers",
+      "models": [
+       "MS 3-8",
+       "MS 4-8"
+      ],
+      "rows": [
+       {
+        "label": "Chisel and chuck",
+        "sub": "",
+        "cells": [
+         "3/8″ (10 mm) chuck, 5/8″ (16 mm) collar; chisels 1/4, 5/16, 3/8 and 1/2″ included",
+         "1/2″ (12.7 mm) chuck, 5/8″ and 3/4″ (16, 19 mm) collars"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stock, max width × thickness",
+        "sub": "",
+        "cells": [
+         "8-1/2 × 6″ (216 × 153 mm) with the riser block",
+         "8 × 7-3/8″ (203 × 187 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mortise depth, max",
+        "sub": "",
+        "cells": [
+         "3″ (76 mm)",
+         "4-1/2″ (114 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Chisel travel",
+        "sub": "",
+        "cells": [
+         "4-5/8″ (118 mm)",
+         "4-3/4″ (120 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Spindle",
+        "sub": "",
+        "cells": [
+         "JT #2, 1,725 rpm at 60 Hz",
+         "JT #2, 3,450 rpm at 60 Hz"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1/2 HP (0.37 kW)",
+         "3/4 HP (0.56 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "14 × 29 × 32″ (35 × 74 × 82 cm)",
+         "26 × 17 × 14″ (66 × 43 × 36 cm) machine + 13 × 16 × 6″ (33 × 41 × 15 cm) base"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "71 lb (32 kg)",
+         "88 lb (40 kg) with the base, shipping weight"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MS 3-8",
+      "glance": [
+       "3/8″ (10 mm) chuck, 5/8″ (16 mm) collar; chisels 1/4, 5/16, 3/8 and 1/2″ included",
+       "8-1/2 × 6″ (216 × 153 mm) with the riser block",
+       "3″ (76 mm)",
+       "1/2 HP (0.37 kW)",
+       "71 lb (32 kg)"
+      ]
+     },
+     {
+      "name": "MS 4-8",
+      "glance": [
+       "1/2″ (12.7 mm) chuck, 5/8″ and 3/4″ (16, 19 mm) collars",
+       "8 × 7-3/8″ (203 × 187 mm)",
+       "4-1/2″ (114 mm)",
+       "3/4 HP (0.56 kW)",
+       "88 lb (40 kg) with the base, shipping weight"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "chisel_and_chuck",
+     "stock_max_width_thickness",
+     "mortise_depth_max",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "MS 3-8": "3″ (76 mm) deep",
+     "MS 4-8": "4-1/2″ (114 mm) deep"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "boring"
+  },
+  "tt-slotbore": {
+   "id": "tt-slotbore",
+   "brand": "novotech",
+   "name": "MGX slot boring machines and WM-01 horizontal boring machine",
+   "short": "Slot and horizontal boring",
+   "models_label": "MGX16 · MGX20R · WM-01 · 3 models",
+   "summary": "Slot mortisers and boring machines for joinery and furniture: the MGX16 and MGX20R bore slot mortises and dowel holes with the work clamped on the table while the motor table moves across, along and up — the MGX20R with two speeds and a head that swivels ±60° for angled slots; the WM-01 is a compact horizontal boring machine on a stand for dowel holes in panels and frames.",
+   "features": [
+    "MGX16: 5/8″ chuck, 3 HP, travel 6.7 × 8.7 × 5.9″",
+    "MGX20R: 3/4″ chuck, two speeds, head swivels ±60°, travel 8.5 × 10.2 × 5.7″",
+    "WM-01: 1/2″ chuck, 1 HP, 3,450 rpm, on stand"
+   ],
+   "optional": [],
+   "images": [
+    "tm-mgx20r",
+    "tm-mgx16",
+    "tm-wm01"
+   ],
+   "videos": [],
+   "headline": "Slots and dowel holes",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MGX16 · MGX20R · WM-01",
+      "sub": "Slot boring machines and horizontal boring machine",
+      "models": [
+       "MGX16",
+       "MGX20R",
+       "WM-01"
+      ],
+      "rows": [
+       {
+        "label": "Drill chuck",
+        "sub": "",
+        "cells": [
+         "5/8″ (16 mm)",
+         "3/4″ (20 mm)",
+         "1/2″ (13 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "21.5 × 10.4″ (545 × 265 mm)",
+         "23.4 × 12.4″ (595 × 316 mm), work table fixed, motor table moves",
+         "8.3 – 14.2″ (210 – 360 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Travel, cross / longitudinal / vertical",
+        "sub": "",
+        "cells": [
+         "6.7 / 8.7 / 5.9″ (170 / 220 / 150 mm)",
+         "8.5 / 10.2 / 5.7″ (215 / 260 / 145 mm)",
+         "3.3 / 3.1″ (85 / 80 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "cells": [
+         "2,800 rpm",
+         "1,400 / 2,800 rpm",
+         "3,450 rpm at 60 Hz"
+        ],
+        "key": false
+       },
+       {
+        "label": "Head swivel",
+        "sub": "",
+        "cells": [
+         "—",
+         "±60°",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "2 / 2.5 HP (1.5 / 1.9 kW), two speeds",
+         "1 HP (0.75 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "34 × 26 × 52″ (86 × 66 × 133 cm)",
+         "42 × 35 × 52″ (106 × 88 × 133 cm)",
+         "37 × 22 × 22″ (93 × 57 × 56 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "379 lb (172 kg)",
+         "529 lb (240 kg)",
+         "181 lb (82 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MGX16",
+      "glance": [
+       "5/8″ (16 mm)",
+       "6.7 / 8.7 / 5.9″ (170 / 220 / 150 mm)",
+       "3 HP (2.2 kW)",
+       "379 lb (172 kg)"
+      ]
+     },
+     {
+      "name": "MGX20R",
+      "glance": [
+       "3/4″ (20 mm)",
+       "8.5 / 10.2 / 5.7″ (215 / 260 / 145 mm)",
+       "2 / 2.5 HP (1.5 / 1.9 kW), two speeds",
+       "529 lb (240 kg)"
+      ]
+     },
+     {
+      "name": "WM-01",
+      "glance": [
+       "1/2″ (13 mm)",
+       "3.3 / 3.1″ (85 / 80 mm)",
+       "1 HP (0.75 kW)",
+       "181 lb (82 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "drill_chuck",
+     "travel_cross_longitudinal_vertical",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "MGX16": "5/8″ (16 mm) chuck",
+     "MGX20R": "3/4″ (20 mm) chuck",
+     "WM-01": "1/2″ (13 mm) chuck"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "boring"
+  },
+  "tt-tl406": {
+   "id": "tt-tl406",
+   "brand": "novotech",
+   "name": "TL-406 12 × 16″ wood lathe",
+   "short": "TL-406 wood lathe",
+   "models_label": "TL-406 · 1 model",
+   "summary": "A benchtop wood lathe for bowls, spindles, pens and furniture parts: 12″ of swing over the bed and 16″ between centres, six speeds, a 1″ × 8 TPI spindle nose with MT-2 tapers in the headstock and the self-ejecting tailstock, a 12-position index head and a spindle lock. An extension bed lengthens it for longer spindles.",
+   "features": [
+    "12″ (305 mm) swing; 16″ (406 mm) between centres",
+    "6 speeds; 1/2 HP motor",
+    "Spindle nose 1″ × 8 TPI; MT-2 headstock and tailstock; 2-1/2″ ram travel",
+    "12-position index head; spindle lock; self-ejecting tailstock"
+   ],
+   "optional": [
+    "Bed extension"
+   ],
+   "images": [
+    "tm-tl406",
+    "tm-tl406-bed"
+   ],
+   "videos": [],
+   "headline": "12 × 16″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TL-406",
+      "sub": "12 × 16″ wood lathe",
+      "models": [
+       "TL-406"
+      ],
+      "rows": [
+       {
+        "label": "Swing over bed",
+        "sub": "",
+        "cells": [
+         "12″ (305 mm); 9.5″ (241 mm) over the tool rest base"
+        ],
+        "key": true
+       },
+       {
+        "label": "Between centres",
+        "sub": "",
+        "cells": [
+         "16″ (406 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Speeds",
+        "sub": "",
+        "cells": [
+         "6"
+        ],
+        "key": false
+       },
+       {
+        "label": "Headstock and tailstock",
+        "sub": "",
+        "cells": [
+         "Spindle nose 1″ × 8 TPI, MT-2 / MT-2; 2-1/2″ (63 mm) ram travel; self-ejecting tailstock"
+        ],
+        "key": false
+       },
+       {
+        "label": "Index head",
+        "sub": "",
+        "cells": [
+         "12 positions; spindle lock"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1/2 HP (0.37 kW), 6.6 A"
+        ],
+        "key": true
+       },
+       {
+        "label": "Size H × W × D",
+        "sub": "",
+        "cells": [
+         "32 × 10.5 × 19″ (813 × 267 × 483 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "34 × 18 × 11″ (86 × 46 × 29 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "88 lb (40 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TL-406",
+      "glance": [
+       "12″ (305 mm); 9.5″ (241 mm) over the tool rest base",
+       "16″ (406 mm)",
+       "1/2 HP (0.37 kW), 6.6 A",
+       "88 lb (40 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "swing_over_bed",
+     "between_centres",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "TL-406": "12″ (305 mm); 9.5″ (241 mm) over the tool rest base swing"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "turning"
+  },
+  "tt-ws25": {
+   "id": "tt-ws25",
+   "brand": "novotech",
+   "name": "WS25-200 belt and disc combination sander, 1 × 42″ belt and 8″ disc",
+   "short": "WS25-200 sander",
+   "models_label": "WS25-200 · 1 model",
+   "summary": "A bench sander for small parts and edges: a 1 × 42″ belt at 3,000 ft/min and an 8″ disc on one 1/3 HP motor, both with cast-iron tables that tilt 0 – 45° and have miter slots, and 1-1/2″ dust ports for a shop vacuum.",
+   "features": [
+    "1 × 42″ belt at 3,000 ft/min; 8″ disc at 1,725 rpm",
+    "Cast-iron tables with miter slots, both tilt 0 – 45°",
+    "1-1/2″ dust ports; 1/3 HP; 57 lb"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ws25"
+   ],
+   "videos": [],
+   "headline": "1 × 42″ belt, 8″ disc",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WS25-200",
+      "sub": "Belt and disc combination sander, 1 × 42″ belt and 8″ disc",
+      "models": [
+       "WS25-200"
+      ],
+      "rows": [
+       {
+        "label": "Belt",
+        "sub": "",
+        "cells": [
+         "1 × 42″ (25 × 1,067 mm), 3,000 ft/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Disc",
+        "sub": "",
+        "cells": [
+         "8″ (203 mm), 1,725 rpm at 60 Hz"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tables",
+        "sub": "",
+        "cells": [
+         "Cast iron with miter slots, both tilt 0 – 45°: belt 6 × 7″ (153 × 178 mm), disc 4 × 10″ (102 × 254 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust ports",
+        "sub": "",
+        "cells": [
+         "1-1/2″ (38 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1/3 HP (0.25 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "25 × 15 × 20″ (64 × 38 × 50 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "57 lb (26 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WS25-200",
+      "glance": [
+       "1 × 42″ (25 × 1,067 mm), 3,000 ft/min",
+       "8″ (203 mm), 1,725 rpm at 60 Hz",
+       "1/3 HP (0.25 kW)",
+       "57 lb (26 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "belt",
+     "disc",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "WS25-200": "1 × 42″ (25 × 1,067 mm), 3,000 ft/min"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "finish"
+  },
+  "tt-dc900": {
+   "id": "tt-dc900",
+   "brand": "novotech",
+   "name": "DC900 dust collector, 940 CFM",
+   "short": "DC900 dust collector",
+   "models_label": "DC900 · 1 model",
+   "summary": "A single-stage dust collector for one or two machines: 940 CFM from a 1.8 HP motor, two 4″ inlets, an 8.5 ft hose, an 11.7 cu ft collection bag and a 30-micron filter bag, on casters so it goes to the machine that is running.",
+   "features": [
+    "940 CFM (1,600 m³/h); 4.8″ water (1,200 Pa)",
+    "Two Ø4″ inlets; 4″ hose, 8.5 ft",
+    "11.7 cu ft bag; 30-micron filter",
+    "1.8 HP; 108 lb on casters"
+   ],
+   "optional": [],
+   "images": [
+    "tm-dc900"
+   ],
+   "videos": [],
+   "headline": "940 CFM",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "DC900",
+      "sub": "Dust collector for woodworking machines",
+      "models": [
+       "DC900"
+      ],
+      "rows": [
+       {
+        "label": "Air flow",
+        "sub": "",
+        "cells": [
+         "940 CFM (1,600 m³/h); 4.8″ water (1,200 Pa)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Inlets",
+        "sub": "",
+        "cells": [
+         "Two Ø4″ (100 mm) ports; 4″ hose, 8.5 ft (2,600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bag",
+        "sub": "",
+        "cells": [
+         "11.7 cu ft (0.33 m³) collection bag; 30-micron filter"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1.8 HP (1,350 W)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "35 × 19 × 18″ (90 × 49 × 46 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "108 lb (49 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "DC900",
+      "glance": [
+       "940 CFM (1,600 m³/h); 4.8″ water (1,200 Pa)",
+       "1.8 HP (1,350 W)",
+       "108 lb (49 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "air_flow",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "DC900": "940 CFM (1,600 m³/h); 4.8″ water (1,200 Pa)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "finish"
+  },
   "tt-cs": {
    "id": "tt-cs",
    "brand": "novotech",
@@ -13988,20 +16748,25 @@
   "tt-stand": {
    "id": "tt-stand",
    "brand": "novotech",
-   "name": "Roller stands, roller conveyors and RA785 measuring roller table",
+   "name": "Roller stands, roller conveyors and measuring roller tables",
    "short": "Roller stands and tables",
-   "models_label": "RV1100 – RA785 · 6 models",
-   "summary": "Material support for saws, shears, brakes and drills: V-roller and flat roller stands, a tripod stand, roller conveyors in 41″ sections with 79″ and 118″ extensions, and the RA785 roller table with a measuring feed system that positions the bar to ±0.012″ at 40 – 140 in/min.",
+   "models_label": "RV1100 – SRB-320×2000D · 9 models",
+   "summary": "Material support for saws, shears, brakes and drills: V-roller and flat roller stands, a tripod stand, roller conveyors in 41″ sections with 79″ and 118″ extensions, the RB365×3000D — a 120″ roller conveyor on a closed steel frame with a length stop that reads out digitally — the SRB-320 roller stands, 39″ and 79″ long, with adjustable vertical side rollers that guide the bar, and the RA785 roller table with a measuring feed system that positions the bar to ±0.012″ at 40 – 140 in/min.",
    "features": [
     "Height-adjustable stands 23 – 43″; loads to 728 lb",
     "Roller conveyors 1,323 – 1,543 lb; extensions of 79″, 118″ and more",
+    "RB365×3000D: 120″ conveyor with a digital length stop, 882 lb",
+    "SRB-320×1000D / 2000D: 39″ and 79″ stands with vertical side rollers, 1,323 lb",
     "RA785: 79″ roller table with measuring feed, ±0.012″ (0.3 mm)"
    ],
    "optional": [],
    "images": [
     "tm-stand-ra785",
+    "tm-rb3653000d",
+    "tm-srb3202000d",
     "tm-stand-rb365",
-    "tm-stand-rv"
+    "tm-stand-rv",
+    "tm-rb3653000d-stop"
    ],
    "videos": [],
    "headline": "Stands, conveyors and roller tables",
@@ -14099,6 +16864,87 @@
         "key": true
        }
       ]
+     },
+     {
+      "title": "RB365×3000D · SRB-320×1000D · SRB-320×2000D",
+      "sub": "Roller conveyor with digital length stop and roller stands with side rollers",
+      "models": [
+       "RB365×3000D",
+       "SRB-320×1000D",
+       "SRB-320×2000D"
+      ],
+      "rows": [
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "Roller conveyor 120″ (3,050 mm) with digital length stop",
+         "Roller stand 39″ (1,000 mm) with vertical side rollers",
+         "Roller stand 79″ (2,000 mm) with vertical side rollers"
+        ],
+        "key": true
+       },
+       {
+        "label": "Height",
+        "sub": "",
+        "cells": [
+         "29.9 – 41.7″ (760 – 1,060 mm)",
+         "25.8 – 29.3″ (655 – 745 mm)",
+         "25.8 – 29.3″ (655 – 745 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roller width",
+        "sub": "",
+        "cells": [
+         "14.4″ (365 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "882 lb (400 kg)",
+         "1,323 lb (600 kg)",
+         "1,323 lb (600 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed system",
+        "sub": "",
+        "cells": [
+         "Length stop moved by hand, with a digital readout; closed steel frame",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side rollers",
+        "sub": "",
+        "cells": [
+         "—",
+         "Adjustable vertical side rollers guide the bar",
+         "Adjustable vertical side rollers guide the bar"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "254 lb (115 kg)",
+         "176 lb (80 kg)",
+         "271 lb (123 kg)"
+        ],
+        "key": true
+       }
+      ]
      }
     ],
     "models": [
@@ -14155,6 +17001,33 @@
        "336 lb/ft (500 kg/m)",
        "320 lb (145 kg)"
       ]
+     },
+     {
+      "name": "RB365×3000D",
+      "glance": [
+       "Roller conveyor 120″ (3,050 mm) with digital length stop",
+       "29.9 – 41.7″ (760 – 1,060 mm)",
+       "882 lb (400 kg)",
+       "254 lb (115 kg)"
+      ]
+     },
+     {
+      "name": "SRB-320×1000D",
+      "glance": [
+       "Roller stand 39″ (1,000 mm) with vertical side rollers",
+       "25.8 – 29.3″ (655 – 745 mm)",
+       "1,323 lb (600 kg)",
+       "176 lb (80 kg)"
+      ]
+     },
+     {
+      "name": "SRB-320×2000D",
+      "glance": [
+       "Roller stand 79″ (2,000 mm) with vertical side rollers",
+       "25.8 – 29.3″ (655 – 745 mm)",
+       "1,323 lb (600 kg)",
+       "271 lb (123 kg)"
+      ]
      }
     ],
     "glance_keys": [
@@ -14169,7 +17042,10 @@
      "RB1000": "Tripod roller stand",
      "RB365": "Roller conveyor, 41″ (1,040 mm) — 2,000 / 3,000 mm extensions",
      "RB2000": "Roller conveyor",
-     "RA785": "Roller table with measuring feed system, 79″ (2,000 mm)"
+     "RA785": "Roller table with measuring feed system, 79″ (2,000 mm)",
+     "RB365×3000D": "Roller conveyor 120″ (3,050 mm) with digital length stop",
+     "SRB-320×1000D": "Roller stand 39″ (1,000 mm) with vertical side rollers",
+     "SRB-320×2000D": "Roller stand 79″ (2,000 mm) with vertical side rollers"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
@@ -14180,22 +17056,24 @@
   "tt-qcs400": {
    "id": "tt-qcs400",
    "brand": "novotech",
-   "name": "QCS-400 aluminum cut-off saws, 16″ blade, pneumatic clamping",
-   "short": "QCS-400 aluminum saw",
-   "models_label": "QCS-400 · QCS-400A · 2 models",
-   "summary": "A 16″ saw for aluminum profiles at 2,800 rpm: fast pneumatic clamping, a pneumatic cylinder that brings the blade down at a controlled speed, and a blade that swivels 45° left and right for miter cuts in profiles up to 7-7/8 × 3-1/8″.",
+   "name": "QCS-400 · QCS-500A aluminum cut-off saws, 16″ and 20″ blade, pneumatic clamping",
+   "short": "QCS aluminum saws",
+   "models_label": "QCS-400 · QCS-400A · QCS-500A · 3 models",
+   "summary": "Saws for aluminum profiles at 2,800 rpm with fast pneumatic clamping and a pneumatic cylinder that brings the blade down at a controlled speed: the QCS-400 and QCS-400A have a 16″ blade that swivels 45° left and right for miter cuts in profiles up to 7-7/8 × 3-1/8″; the QCS-500A has a 20″ blade on a head that swivels from 0 to 180° and a 3 HP motor, and cuts profiles up to 10-1/4 × 5-1/8″ at 90° and 9-1/2 × 4″ at 45°.",
    "features": [
-    "Ø4-1/8″ (105 mm) round, 7-7/8 × 3-1/8″ (200 × 80 mm) profile at 90° and 45°",
-    "Blade swivels ±45°",
-    "Pneumatic clamping vise; pneumatic feed cylinder",
-    "1.5 HP belt drive, 2,800 rpm"
+    "QCS-400 / 400A: 16″ blade; Ø4-1/8″ round, 7-7/8 × 3-1/8″ (200 × 80 mm) profiles at 90° and 45°; 1.5 HP",
+    "QCS-500A: 20″ blade; Ø6-11/16″ round; 10-1/4 × 5-1/8″ at 90°, 9-1/2 × 4″ at 45°; 3 HP",
+    "Blade swivels ±45° (QCS-400) or 0 – 180° (QCS-500A)",
+    "Pneumatic clamping vise; pneumatic feed cylinder; belt drive, 2,800 rpm"
    ],
    "optional": [],
    "images": [
-    "tm-qcs400"
+    "tm-qcs500a",
+    "tm-qcs400",
+    "tm-qcs500a-vise"
    ],
    "videos": [],
-   "headline": "Profiles 7-7/8 × 3-1/8″",
+   "headline": "Profiles to 10-1/4 × 5-1/8″",
    "specs": {
     "kind": "table",
     "tables": [
@@ -14280,6 +17158,87 @@
         "key": true
        }
       ]
+     },
+     {
+      "title": "QCS-500A",
+      "sub": "Aluminum cut-off saw with 20″ blade swivelling 0 – 180°, pneumatic clamping and descent",
+      "models": [
+       "QCS-500A"
+      ],
+      "rows": [
+       {
+        "label": "Blade diameter, max",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round, 90° and 45°",
+        "sub": "",
+        "cells": [
+         "Ø6-3/4″ (170 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular, 90° and 45° left and right",
+        "sub": "",
+        "cells": [
+         "10-1/4 × 5-1/8″ (260 × 130 mm) at 90°, 9-1/2 × 4″ (240 × 100 mm) at 45°"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade speed",
+        "sub": "",
+        "cells": [
+         "2,800 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade swivel",
+        "sub": "",
+        "cells": [
+         "0 – 180°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "Belt"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "42 × 42 × 65″ (107 × 107 × 164 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "750 lb (340 kg)"
+        ],
+        "key": true
+       }
+      ]
      }
     ],
     "models": [
@@ -14302,6 +17261,16 @@
        "2,800 rpm",
        "556 lb (252 kg)"
       ]
+     },
+     {
+      "name": "QCS-500A",
+      "glance": [
+       "19.7″ (500 mm)",
+       "Ø6-3/4″ (170 mm)",
+       "10-1/4 × 5-1/8″ (260 × 130 mm) at 90°, 9-1/2 × 4″ (240 × 100 mm) at 45°",
+       "2,800 rpm",
+       "750 lb (340 kg)"
+      ]
      }
     ],
     "glance_keys": [
@@ -14313,7 +17282,8 @@
     ],
     "caps": {
      "QCS-400": "7-7/8 × 3-1/8″ (200 × 80 mm)",
-     "QCS-400A": "7-7/8 × 3-1/8″ (200 × 80 mm)"
+     "QCS-400A": "7-7/8 × 3-1/8″ (200 × 80 mm)",
+     "QCS-500A": "10-1/4 × 5-1/8″ (260 × 130 mm) at 90°, 9-1/2 × 4″ (240 × 100 mm) at 45°"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine. Speeds marked “rated at 50 Hz” are the manufacturer's 50 Hz figures — motors run about 20 % faster on 60 Hz power."
    },
@@ -17812,8 +20782,8 @@
    ],
    "optional": [],
    "images": [
-    "tm-hp63c",
-    "tm-hp30c"
+    "tm-hp63c2",
+    "tm-hp30c2"
    ],
    "videos": [],
    "headline": "22 – 110 US tons",
@@ -17975,19 +20945,21 @@
   "tt-hp-f": {
    "id": "tt-hp-f",
    "brand": "novotech",
-   "name": "HP-F four-column hydraulic presses, 55 – 347 US tons",
+   "name": "HP-F four-column hydraulic presses, 55 – 347 US tons, and HP-F1/PLC presses with touch-screen control",
    "short": "HP-F four-column presses",
-   "models_label": "HP-50F – HP-315FK · 8 models",
-   "summary": "Four-column presses for forming and pressing with an evenly guided slide: 55 to 220 US tons on the HP-F, and the heavier F1 models to 347 US tons with tables up to 42.9 × 31.5″; the HP-315FK has a PLC touch-screen control cabinet.",
+   "models_label": "HP-50F – HP-315F1/PLC · 13 models",
+   "summary": "Four-column presses for forming and pressing with an evenly guided slide: 55 to 220 US tons on the HP-F, the heavier F1 models to 347 US tons with tables up to 42.9 × 31.5″, and the HP-F1/PLC presses from 110 to 347 US tons with a PLC touch-screen cabinet, a foot pedal and a separate hydraulic station; the HP-315FK has a PLC touch-screen control cabinet too.",
    "features": [
     "55 – 347 US tons",
     "Tables 15.7 × 23.6″ to 42.9 × 31.5″",
     "Stroke 11.8 – 15.7″",
+    "HP-F1/PLC: PLC touch screen, foot pedal and separate hydraulic station, 110 – 347 US tons",
     "Separate pump unit; PLC touch screen on the HP-315FK"
    ],
    "optional": [],
    "images": [
     "tm-hp315fk",
+    "tm-hp150f1plc",
     "tm-hp50f"
    ],
    "videos": [],
@@ -18100,6 +21072,127 @@
         "key": true
        }
       ]
+     },
+     {
+      "title": "HP-100F1/PLC – HP-315F1/PLC",
+      "sub": "Four-column hydraulic presses with PLC touch-screen control, 110 – 347 US tons",
+      "models": [
+       "HP-100F1/PLC",
+       "HP-150F1/PLC",
+       "HP-200F1/PLC",
+       "HP-250F1/PLC",
+       "HP-315F1/PLC"
+      ],
+      "rows": [
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "110 US tons (1,000 kN)",
+         "165 US tons (1,500 kN)",
+         "220 US tons (2,000 kN)",
+         "276 US tons (2,500 kN)",
+         "347 US tons (3,150 kN)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pressure",
+        "sub": "",
+        "cells": [
+         "4,496 psi (31 MPa)",
+         "4,496 psi (31 MPa)",
+         "4,496 psi (31 MPa)",
+         "4,496 psi (31 MPa)",
+         "4,496 psi (31 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight, max",
+        "sub": "",
+        "cells": [
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "27.6″ (700 mm)",
+         "27.6″ (700 mm)",
+         "31.5″ (800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "23.6 × 23.6″ (600 × 600 mm)",
+         "23.6 × 23.6″ (600 × 600 mm)",
+         "27.6 × 27.6″ (700 × 700 mm)",
+         "27.6 × 27.6″ (700 × 700 mm)",
+         "31.5 × 31.5″ (800 × 800 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "PLC touch-screen cabinet, foot pedal; separate hydraulic station",
+         "PLC touch-screen cabinet, foot pedal; separate hydraulic station",
+         "PLC touch-screen cabinet, foot pedal; separate hydraulic station",
+         "PLC touch-screen cabinet, foot pedal; separate hydraulic station",
+         "PLC touch-screen cabinet, foot pedal; separate hydraulic station"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "43 × 31 × 93″ (110 × 80 × 235 cm)",
+         "43 × 31 × 93″ (110 × 80 × 235 cm)",
+         "102 × 35 × 55″ (260 × 90 × 140 cm)",
+         "106 × 35 × 59″ (270 × 90 × 150 cm)",
+         "118 × 39 × 83″ (300 × 100 × 210 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic station L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 35 × 55″ (100 × 90 × 140 cm)",
+         "39 × 35 × 55″ (100 × 90 × 140 cm)",
+         "39 × 35 × 55″ (100 × 90 × 140 cm)",
+         "39 × 35 × 55″ (100 × 90 × 140 cm)",
+         "43 × 39 × 59″ (110 × 100 × 150 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,616 lb (1,640 kg)",
+         "4,057 lb (1,840 kg)",
+         "5,291 lb (2,400 kg)",
+         "6,261 lb (2,840 kg)",
+         "8,311 lb (3,770 kg)"
+        ],
+        "key": true
+       }
+      ]
      }
     ],
     "models": [
@@ -18174,6 +21267,51 @@
        "42.9 × 31.5″ (1,090 × 800 mm)",
        "19,621 lb (8,900 kg)"
       ]
+     },
+     {
+      "name": "HP-100F1/PLC",
+      "glance": [
+       "110 US tons (1,000 kN)",
+       "11.8″ (300 mm)",
+       "23.6 × 23.6″ (600 × 600 mm)",
+       "3,616 lb (1,640 kg)"
+      ]
+     },
+     {
+      "name": "HP-150F1/PLC",
+      "glance": [
+       "165 US tons (1,500 kN)",
+       "11.8″ (300 mm)",
+       "23.6 × 23.6″ (600 × 600 mm)",
+       "4,057 lb (1,840 kg)"
+      ]
+     },
+     {
+      "name": "HP-200F1/PLC",
+      "glance": [
+       "220 US tons (2,000 kN)",
+       "11.8″ (300 mm)",
+       "27.6 × 27.6″ (700 × 700 mm)",
+       "5,291 lb (2,400 kg)"
+      ]
+     },
+     {
+      "name": "HP-250F1/PLC",
+      "glance": [
+       "276 US tons (2,500 kN)",
+       "11.8″ (300 mm)",
+       "27.6 × 27.6″ (700 × 700 mm)",
+       "6,261 lb (2,840 kg)"
+      ]
+     },
+     {
+      "name": "HP-315F1/PLC",
+      "glance": [
+       "347 US tons (3,150 kN)",
+       "11.8″ (300 mm)",
+       "31.5 × 31.5″ (800 × 800 mm)",
+       "8,311 lb (3,770 kg)"
+      ]
      }
     ],
     "glance_keys": [
@@ -18190,7 +21328,12 @@
      "HP-150F1": "165 US tons (1,500 kN)",
      "HP-200F1": "220 US tons (2,000 kN)",
      "HP-315F1": "347 US tons (3,150 kN)",
-     "HP-315FK": "347 US tons (3,150 kN)"
+     "HP-315FK": "347 US tons (3,150 kN)",
+     "HP-100F1/PLC": "110 US tons (1,000 kN)",
+     "HP-150F1/PLC": "165 US tons (1,500 kN)",
+     "HP-200F1/PLC": "220 US tons (2,000 kN)",
+     "HP-250F1/PLC": "276 US tons (2,500 kN)",
+     "HP-315F1/PLC": "347 US tons (3,150 kN)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
@@ -18413,22 +21556,24 @@
   "tt-hbv": {
    "id": "tt-hbv",
    "brand": "novotech",
-   "name": "HBV24 · HBV48 hydraulic bending brakes, 5/32″ × 24″ and 48″",
+   "name": "HBV hydraulic bending brakes, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″",
    "short": "HBV hydraulic brakes",
-   "models_label": "HBV24 · HBV48 · 2 models",
-   "summary": "Small hydraulic brakes for brackets, clips and short parts in plate: 16.5 or 33 US tons push the top beam into a four-way V-block for 5/32″ (4 mm) plate over 24″ or 48″, controlled by a hydraulic foot valve; the beam unpins for closed bends and easy removal of the part, and a back gauge sets the flange from 4.1 to 21.7″.",
+   "models_label": "HBV24 – HBV-2540 · 4 models",
+   "summary": "Small hydraulic brakes for brackets, clips and short parts in plate. The HBV24 and HBV48 push the top beam into a four-way V-block with 16.5 or 33 US tons for 5/32″ (4 mm) plate over 24″ or 48″, controlled by a hydraulic foot valve; the beam unpins for closed bends and easy removal of the part, and a back gauge sets the flange from 4.1 to 21.7″. The HBV-1250 and HBV-2540 are two-cylinder press brakes of 35 US tons for 3/16″ over 49″ and 1/8″ over 100″, with a 5.1″ stroke, an 8.3″ open height, a foot pedal and a back gauge set by hand wheel with a counter.",
    "features": [
-    "5/32″ (4 mm) mild steel × 24″ (HBV24) or 48″ (HBV48)",
-    "16.5 / 33 US tons; 5.9″ (150 mm) stroke",
-    "Four-way V-block; hydraulic pull-up press beam",
-    "Hydraulic foot valve; back gauge 4.1 – 21.7″"
+    "HBV24 / HBV48: 5/32″ (4 mm) × 24″ or 48″; 16.5 / 33 US tons; four-way V-block; hydraulic foot valve",
+    "HBV-1250: 3/16″ (5 mm) × 49-1/4″; HBV-2540: 1/8″ (3 mm) × 100″; 35 US tons on two cylinders",
+    "Back gauge 4.1 – 21.7″ (HBV24 / 48) or 24-3/8″ with hand wheel and counter (HBV-1250 / 2540)",
+    "Stroke 5.1 – 5.9″"
    ],
    "optional": [],
    "images": [
-    "tm-hbv"
+    "tm-hbv1250",
+    "tm-hbv",
+    "tm-hbv1250-gauge"
    ],
    "videos": [],
-   "headline": "5/32″ × 24 – 48″",
+   "headline": "To 3/16″ × 49″, 1/8″ × 100″",
    "specs": {
     "kind": "table",
     "tables": [
@@ -18513,6 +21658,97 @@
         "key": true
        }
       ]
+     },
+     {
+      "title": "HBV-1250 · HBV-2540",
+      "sub": "Hydraulic press brakes with two cylinders, 35 US tons, 49″ and 100″",
+      "models": [
+       "HBV-1250",
+       "HBV-2540"
+      ],
+      "rows": [
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "35.3 US tons (32 t)",
+         "35.3 US tons (32 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending width × thickness",
+        "sub": "",
+        "cells": [
+         "49-1/4″ (1,250 mm) × 3/16″ (5 mm)",
+         "100″ (2,540 mm) × 1/8″ (3 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.1″ (130 mm)",
+         "5.1″ (130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Open height, max",
+        "sub": "",
+        "cells": [
+         "8.3″ (210 mm)",
+         "8.3″ (210 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Speed, working and return",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "24-3/8″ (620 mm), hand wheel with counter",
+         "24-3/8″ (620 mm), hand wheel with counter"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "94 × 56 × 63″ (238 × 142 × 160 cm)",
+         "144 × 56 × 63″ (367 × 142 × 160 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,646 lb (1,200 kg)",
+         "3,858 lb (1,750 kg)"
+        ],
+        "key": true
+       }
+      ]
      }
     ],
     "models": [
@@ -18533,6 +21769,24 @@
        "4 HP (3 kW)",
        "1,124 lb (510 kg)"
       ]
+     },
+     {
+      "name": "HBV-1250",
+      "glance": [
+       "35.3 US tons (32 t)",
+       "49-1/4″ (1,250 mm) × 3/16″ (5 mm)",
+       "4 HP (3 kW)",
+       "2,646 lb (1,200 kg)"
+      ]
+     },
+     {
+      "name": "HBV-2540",
+      "glance": [
+       "35.3 US tons (32 t)",
+       "100″ (2,540 mm) × 1/8″ (3 mm)",
+       "4 HP (3 kW)",
+       "3,858 lb (1,750 kg)"
+      ]
      }
     ],
     "glance_keys": [
@@ -18543,7 +21797,9 @@
     ],
     "caps": {
      "HBV24": "24″ (610 mm) × 5/32″ (4 mm)",
-     "HBV48": "48″ (1,220 mm) × 5/32″ (4 mm)"
+     "HBV48": "48″ (1,220 mm) × 5/32″ (4 mm)",
+     "HBV-1250": "49-1/4″ (1,250 mm) × 3/16″ (5 mm)",
+     "HBV-2540": "100″ (2,540 mm) × 1/8″ (3 mm)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
@@ -19719,6 +22975,2023 @@
    "manual": false,
    "no_pdf": true,
    "group": "tt-bfm"
+  },
+  "tt-mgm300": {
+   "id": "tt-mgm300",
+   "brand": "novotech",
+   "name": "MGM-300 finishing and deburring machine, 12″ working width",
+   "short": "MGM-300 deburring machine",
+   "models_label": "MGM-300 · 1 model",
+   "summary": "A compact finishing machine for small laser-cut, punched and machined parts: a 12 × 41″ abrasive belt over a 12″ working width, parts from 0.04 to 7-7/8″ thick on a conveyor with variable speed from 4.9 to 23 ft/min, the table height set digitally in mm or inch on four synchronized posts, electric-eye belt tracking and a 4″ dust extraction port.",
+   "features": [
+    "12″ (300 mm) working width; parts 0.04 – 7-7/8″ (1 – 200 mm) thick",
+    "Abrasive belt 12 × 41″ (310 × 1,040 mm); rubber contact roller",
+    "Conveyor 4.9 – 23 ft/min (1.5 – 7 m/min), variable",
+    "Digital table height; four-post synchronous lifting; electric-eye belt tracking",
+    "4″ dust port; 5.4 HP (4 kW); 1,190 lb"
+   ],
+   "optional": [],
+   "images": [
+    "tm-mgm300",
+    "tm-mgm300-conveyor"
+   ],
+   "videos": [],
+   "headline": "12″ working width",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MGM-300",
+      "sub": "Finishing and deburring machine, 12″ working width",
+      "models": [
+       "MGM-300"
+      ],
+      "rows": [
+       {
+        "label": "Working width, max",
+        "sub": "",
+        "cells": [
+         "12″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Workpiece thickness",
+        "sub": "",
+        "cells": [
+         "0.04 – 7-7/8″ (1 – 200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "",
+        "cells": [
+         "12 × 41″ (310 × 1,040 mm); electric-eye belt tracking"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "4.9 – 23 ft/min (1.5 – 7 m/min), variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Contact roller",
+        "sub": "",
+        "cells": [
+         "Rubber, Ø4-1/4 × 12-1/2″ (110 × 320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "Digital, mm / inch; four synchronized lifting posts"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust extraction",
+        "sub": "",
+        "cells": [
+         "4″ (Ø100 mm) vacuum hose connection"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 63 × 70″ (100 × 160 × 178 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,190 lb (540 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MGM-300",
+      "glance": [
+       "12″ (300 mm)",
+       "0.04 – 7-7/8″ (1 – 200 mm)",
+       "4.9 – 23 ft/min (1.5 – 7 m/min), variable",
+       "5.5 HP (4 kW)",
+       "1,190 lb (540 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_width_max",
+     "workpiece_thickness",
+     "feed_speed",
+     "main_motor",
+     "weight"
+    ],
+    "caps": {
+     "MGM-300": "12″ (300 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-bfm"
+  },
+  "tt-wp-bench": {
+   "id": "tt-wp-bench",
+   "brand": "novotech",
+   "name": "MRT-15 · WP-50 · WP-30T benchtop welding positioners, 33 – 110 lb",
+   "short": "Benchtop positioners",
+   "models_label": "MRT-15 · WP-50 · WP-30T · 3 models",
+   "summary": "Small positioners for the bench that turn tube, flanges and small parts under the torch at a steady speed, started and stopped with the foot pedal. The MRT-15 is a rotary table with a 4″ 3-jaw chuck that works horizontal or vertical — for welding, grinding and cutting — at up to 18 rpm; the WP-50 has an 8″ table with a 3-jaw chuck, a digital speed display and gas purge through the centre for back-purging stainless tube; the WP-30T a 12-3/8″ table with a 2-9/16″ hollow bore and a hand-wheel tilt.",
+   "features": [
+    "Loads 33 lb (MRT-15), 66 lb (WP-30T) and 110 lb (WP-50) horizontal",
+    "MRT-15: 4″ 3-jaw chuck, 0 – 18 rpm, horizontal or vertical",
+    "WP-50: Ø8″ table with 3-jaw chuck, 0 – 6 rpm with digital display, gas purge through the centre",
+    "WP-30T: Ø12-3/8″ table, 2-9/16″ hollow bore, 0 – 6.5 rpm, hand-wheel tilt 0 – 90°",
+    "Foot pedal on every model"
+   ],
+   "optional": [
+    "3-jaw chuck and torch holder (WP-30T)"
+   ],
+   "images": [
+    "tm-wp50",
+    "tm-wp30t",
+    "tm-mrt15",
+    "tm-mrt15-v",
+    "tm-wp50-gas",
+    "tm-wp30t-chuck"
+   ],
+   "videos": [],
+   "headline": "33 – 110 lb",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MRT-15 · WP-50 · WP-30T",
+      "sub": "Benchtop welding positioners and rotary table, 33 – 110 lb",
+      "models": [
+       "MRT-15",
+       "WP-50",
+       "WP-30T"
+      ],
+      "rows": [
+       {
+        "label": "Load, horizontal / vertical",
+        "sub": "",
+        "cells": [
+         "33 / 22 lb (15 / 10 kg)",
+         "110 / 66 lb (50 / 30 kg)",
+         "66 / 44 lb (30 / 20 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table / chuck",
+        "sub": "",
+        "cells": [
+         "4″ (100 mm) 3-jaw chuck, clamps Ø5/64 – 3-1/2″ (2 – 90 mm)",
+         "Ø8″ (200 mm) table with 3-jaw chuck, clamps Ø5/64 – 3-1/2″ (2 – 90 mm)",
+         "Ø12-3/8″ (315 mm) table, Ø2-9/16″ (65 mm) hollow bore"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "—",
+         "11-1/2″ (295 mm)",
+         "15.4″ (390 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rotation speed",
+        "sub": "",
+        "cells": [
+         "0 – 18 rpm",
+         "0 – 6 rpm, digital display",
+         "0 – 6.5 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tilt",
+        "sub": "",
+        "cells": [
+         "0 – 90°, by hand",
+         "0 – 90°, by hand",
+         "0 – 90°, hand wheel"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "150 W",
+         "100 W",
+         "80 W"
+        ],
+        "key": false
+       },
+       {
+        "label": "Features",
+        "sub": "",
+        "cells": [
+         "Foot pedal; works horizontal or vertical for welding, grinding and cutting",
+         "Foot pedal; gas purge through the centre (Ø5/16″ / 8 mm hole, Ø3/8″ / 10 mm port)",
+         "Foot pedal; torch holder and chuck optional"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "15 × 15 × 13″ (37 × 37 × 32 cm)",
+         "20 × 12 × 19″ (50 × 30 × 49 cm)",
+         "20 × 19 × 20″ (52 × 48 × 51 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "37 lb (17 kg)",
+         "49 lb (22 kg)",
+         "77 lb (35 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MRT-15",
+      "glance": [
+       "33 / 22 lb (15 / 10 kg)",
+       "4″ (100 mm) 3-jaw chuck, clamps Ø5/64 – 3-1/2″ (2 – 90 mm)",
+       "0 – 18 rpm",
+       "0 – 90°, by hand",
+       "37 lb (17 kg)"
+      ]
+     },
+     {
+      "name": "WP-50",
+      "glance": [
+       "110 / 66 lb (50 / 30 kg)",
+       "Ø8″ (200 mm) table with 3-jaw chuck, clamps Ø5/64 – 3-1/2″ (2 – 90 mm)",
+       "0 – 6 rpm, digital display",
+       "0 – 90°, by hand",
+       "49 lb (22 kg)"
+      ]
+     },
+     {
+      "name": "WP-30T",
+      "glance": [
+       "66 / 44 lb (30 / 20 kg)",
+       "Ø12-3/8″ (315 mm) table, Ø2-9/16″ (65 mm) hollow bore",
+       "0 – 6.5 rpm",
+       "0 – 90°, hand wheel",
+       "77 lb (35 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "load_horizontal_vertical",
+     "table_chuck",
+     "rotation_speed",
+     "tilt",
+     "weight"
+    ],
+    "caps": {
+     "MRT-15": "33 / 22 lb (15 / 10 kg)",
+     "WP-50": "110 / 66 lb (50 / 30 kg)",
+     "WP-30T": "66 / 44 lb (30 / 20 kg)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-wp-small"
+  },
+  "tt-wp-chuck": {
+   "id": "tt-wp-chuck",
+   "brand": "novotech",
+   "name": "WP-100T · WP-110 · WP-110T chuck welding positioners, 220 – 247 lb",
+   "short": "Chuck positioners",
+   "models_label": "WP-100T · WP-110 · WP-110T · 3 models",
+   "summary": "Positioners built around an 8″ 3-jaw chuck for tube, pipe, flanges and shafts: 220 – 247 lb on the chuck, 0 – 6 or 0 – 8 rpm, foot pedal. The WP-100T is a benchtop positioner with a 2-3/8″ hollow bore that tilts 0 – 90° by hand; the WP-110 and WP-110T stand on a pedestal base, lock at 0, 30, 60 or 90° and run forward, reverse and in auto mode — the WP-110T with a 2-9/16″ hollow bore so long tube passes through the chuck.",
+   "features": [
+    "220 – 247 lb (100 – 112 kg) horizontal, 110 – 121 lb vertical",
+    "8″ (200 mm) 3-jaw chuck; hollow bore 2-3/8″ (WP-100T) and 2-9/16″ (WP-110T)",
+    "0 – 6 rpm (WP-100T), 0 – 8 rpm (WP-110, WP-110T)",
+    "WP-110 / WP-110T: tilt locked at 0, 30, 60 or 90°; forward / reverse; auto mode",
+    "Foot pedal standard"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wp110",
+    "tm-wp110t",
+    "tm-wp100t",
+    "tm-wp100t-h",
+    "tm-wp110-panel"
+   ],
+   "videos": [],
+   "headline": "220 – 247 lb",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WP-100T · WP-110 · WP-110T",
+      "sub": "Chuck welding positioners for tube and pipe, 220 – 247 lb",
+      "models": [
+       "WP-100T",
+       "WP-110",
+       "WP-110T"
+      ],
+      "rows": [
+       {
+        "label": "Load, horizontal / vertical",
+        "sub": "",
+        "cells": [
+         "220 / 110 lb (100 / 50 kg)",
+         "247 / 121 lb (112 / 55 kg)",
+         "247 / 121 lb (112 / 55 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table / chuck",
+        "sub": "",
+        "cells": [
+         "8″ (200 mm) 3-jaw chuck; Ø2-3/8″ (60 mm) hollow bore with reducer",
+         "8″ (200 mm) 3-jaw chuck",
+         "8″ (200 mm) 3-jaw chuck; Ø2-9/16″ (65 mm) hollow bore"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "16.5″",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rotation speed",
+        "sub": "",
+        "cells": [
+         "0 – 6 rpm",
+         "0 – 8 rpm",
+         "0 – 8 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tilt",
+        "sub": "",
+        "cells": [
+         "0 – 90°, by hand",
+         "0°, 30°, 60° or 90°, pin-locked",
+         "0°, 30°, 60° or 90°, pin-locked"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "120 W variable-speed AC",
+         "125 W",
+         "125 W"
+        ],
+        "key": false
+       },
+       {
+        "label": "Features",
+        "sub": "",
+        "cells": [
+         "Benchtop; foot pedal",
+         "Foot pedal; forward / reverse; auto mode",
+         "Foot pedal; forward / reverse; auto mode"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 22 × 18″ (70 × 55 × 45 cm)",
+         "20 × 21 × 23″ (50 × 53 × 58 cm)",
+         "20 × 21 × 23″ (50 × 53 × 58 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "243 lb (110 kg)",
+         "143 lb (65 kg)",
+         "143 lb (65 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WP-100T",
+      "glance": [
+       "220 / 110 lb (100 / 50 kg)",
+       "8″ (200 mm) 3-jaw chuck; Ø2-3/8″ (60 mm) hollow bore with reducer",
+       "0 – 6 rpm",
+       "0 – 90°, by hand",
+       "243 lb (110 kg)"
+      ]
+     },
+     {
+      "name": "WP-110",
+      "glance": [
+       "247 / 121 lb (112 / 55 kg)",
+       "8″ (200 mm) 3-jaw chuck",
+       "0 – 8 rpm",
+       "0°, 30°, 60° or 90°, pin-locked",
+       "143 lb (65 kg)"
+      ]
+     },
+     {
+      "name": "WP-110T",
+      "glance": [
+       "247 / 121 lb (112 / 55 kg)",
+       "8″ (200 mm) 3-jaw chuck; Ø2-9/16″ (65 mm) hollow bore",
+       "0 – 8 rpm",
+       "0°, 30°, 60° or 90°, pin-locked",
+       "143 lb (65 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "load_horizontal_vertical",
+     "table_chuck",
+     "rotation_speed",
+     "tilt",
+     "weight"
+    ],
+    "caps": {
+     "WP-100T": "220 / 110 lb (100 / 50 kg)",
+     "WP-110": "247 / 121 lb (112 / 55 kg)",
+     "WP-110T": "247 / 121 lb (112 / 55 kg)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-wp-small"
+  },
+  "tt-wp-tilt": {
+   "id": "tt-wp-tilt",
+   "brand": "novotech",
+   "name": "WP-220 · WP-350 · WP-500 · WP-500T tilting welding positioners, 485 – 1,102 lb",
+   "short": "Tilting positioners",
+   "models_label": "WP-220 – WP-500T · 4 models",
+   "summary": "Tilting turntable positioners for flanges, pipe-to-plate joints, hubs, tank heads and wheels: 0 – 5 rpm variable, a table that tilts from 0 to 135°, foot pedal. The WP-220 and WP-350 carry 485 and 772 lb on a Ø13″ T-slotted table and tilt by hand; the WP-500 and WP-500T carry 1,102 lb on a Ø21.7″ table with a motorized tilt, the WP-500T with a Ø6-11/16″ hollow chuck for pipe.",
+   "features": [
+    "485 – 1,102 lb (220 – 500 kg) horizontal, 220 – 551 lb vertical",
+    "Ø13″ (WP-220, WP-350) and Ø21.7″ (WP-500, WP-500T) tables",
+    "0 – 5 rpm, variable; foot pedal",
+    "Tilt 0 – 135°: by hand (WP-220, WP-350), motorized (WP-500, WP-500T)",
+    "WP-500T: Ø6-11/16″ (170 mm) hollow chuck"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wp500",
+    "tm-wp220",
+    "tm-wp350",
+    "tm-wp500t",
+    "tm-wp500-panel",
+    "tm-wp-sample"
+   ],
+   "videos": [],
+   "headline": "485 – 1,102 lb",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WP-220 · WP-350 · WP-500 · WP-500T",
+      "sub": "Tilting welding positioners, 485 – 1,102 lb",
+      "models": [
+       "WP-220",
+       "WP-350",
+       "WP-500",
+       "WP-500T"
+      ],
+      "rows": [
+       {
+        "label": "Load, horizontal / vertical",
+        "sub": "",
+        "cells": [
+         "485 / 220 lb (220 / 100 kg)",
+         "772 / 265 lb (350 / 120 kg)",
+         "1,102 / 551 lb (500 / 250 kg)",
+         "1,102 / 551 lb (500 / 250 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table / chuck",
+        "sub": "",
+        "cells": [
+         "Ø13″ (330 mm) table",
+         "Ø13″ (330 mm) table",
+         "Ø21.7″ (550 mm) table",
+         "Ø21.7″ (550 mm) table, Ø6-11/16″ (170 mm) hollow chuck"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "17.7″ (450 mm)",
+         "18.9″ (480 mm)",
+         "26″ (660 mm)",
+         "26″ (660 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rotation speed",
+        "sub": "",
+        "cells": [
+         "0 – 5 rpm, variable",
+         "0 – 5 rpm, variable",
+         "0 – 5 rpm, variable",
+         "0 – 5 rpm, variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tilt",
+        "sub": "",
+        "cells": [
+         "0 – 135°, by hand",
+         "0 – 135°, by hand",
+         "0 – 135°, motorized",
+         "0 – 135°, motorized"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "125 W",
+         "125 W",
+         "400 W rotation; tilt motor",
+         "400 W rotation; tilt motor"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "25 × 19 × 25″ (64 × 49 × 63 cm)",
+         "25 × 17 × 25″ (64 × 44 × 63 cm)",
+         "32 × 29 × 28″ (82 × 73 × 71 cm)",
+         "32 × 29 × 28″ (82 × 73 × 71 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "75 lb (34 kg)",
+         "84 lb (38 kg)",
+         "485 lb (220 kg)",
+         "507 lb (230 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WP-220",
+      "glance": [
+       "485 / 220 lb (220 / 100 kg)",
+       "Ø13″ (330 mm) table",
+       "0 – 5 rpm, variable",
+       "0 – 135°, by hand",
+       "75 lb (34 kg)"
+      ]
+     },
+     {
+      "name": "WP-350",
+      "glance": [
+       "772 / 265 lb (350 / 120 kg)",
+       "Ø13″ (330 mm) table",
+       "0 – 5 rpm, variable",
+       "0 – 135°, by hand",
+       "84 lb (38 kg)"
+      ]
+     },
+     {
+      "name": "WP-500",
+      "glance": [
+       "1,102 / 551 lb (500 / 250 kg)",
+       "Ø21.7″ (550 mm) table",
+       "0 – 5 rpm, variable",
+       "0 – 135°, motorized",
+       "485 lb (220 kg)"
+      ]
+     },
+     {
+      "name": "WP-500T",
+      "glance": [
+       "1,102 / 551 lb (500 / 250 kg)",
+       "Ø21.7″ (550 mm) table, Ø6-11/16″ (170 mm) hollow chuck",
+       "0 – 5 rpm, variable",
+       "0 – 135°, motorized",
+       "507 lb (230 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "load_horizontal_vertical",
+     "table_chuck",
+     "rotation_speed",
+     "tilt",
+     "weight"
+    ],
+    "caps": {
+     "WP-220": "485 / 220 lb (220 / 100 kg)",
+     "WP-350": "772 / 265 lb (350 / 120 kg)",
+     "WP-500": "1,102 / 551 lb (500 / 250 kg)",
+     "WP-500T": "1,102 / 551 lb (500 / 250 kg)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-wp-big"
+  },
+  "tt-wp-heavy": {
+   "id": "tt-wp-heavy",
+   "brand": "novotech",
+   "name": "WP-1000 · WP-2000 · WP-3000 heavy welding positioners, 3,307 – 8,818 lb",
+   "short": "Heavy positioners",
+   "models_label": "WP-1000 · WP-2000 · WP-3000 · 3 models",
+   "summary": "Heavy positioners for pressure vessels, large flanges, rings and weldments: 3,307 to 8,818 lb on tables of Ø39.4 to 47.2″, 0.1 – 1.2 rpm rotation and a motorized tilt through 135° in 57 seconds, run from a hand pendant and a foot pedal, with high-frequency protection for TIG welding. Rated with the load's centre of gravity up to 12″ from the table centre and 12″ above the table.",
+   "features": [
+    "3,307 / 5,512 / 8,818 lb (1,500 / 2,500 / 4,000 kg) horizontal",
+    "Tables Ø39.4″, Ø43.3″ and Ø47.2″",
+    "Rotation 0.1 – 1.2 rpm; tilt 0 – 135°, motorized, 57 s",
+    "Hand pendant and foot pedal; high-frequency protected",
+    "1 – 2 HP (0.75 – 1.5 kW)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wp3000",
+    "tm-wp1000",
+    "tm-wp2000",
+    "tm-wp-heavy-box"
+   ],
+   "videos": [],
+   "headline": "3,307 – 8,818 lb",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WP-1000 · WP-2000 · WP-3000",
+      "sub": "Heavy welding positioners with power tilt, 3,307 – 8,818 lb",
+      "models": [
+       "WP-1000",
+       "WP-2000",
+       "WP-3000"
+      ],
+      "rows": [
+       {
+        "label": "Load, horizontal / vertical",
+        "sub": "",
+        "cells": [
+         "3,307 / 2,205 lb (1,500 / 1,000 kg)",
+         "5,512 / 4,409 lb (2,500 / 2,000 kg)",
+         "8,818 / 5,952 lb (4,000 / 2,700 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table / chuck",
+        "sub": "",
+        "cells": [
+         "Ø39.4″ (1,000 mm) table",
+         "Ø43.3″ (1,100 mm) table",
+         "Ø47.2″ (1,200 mm) table"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "41.7″ (1,059 mm)",
+         "44″ (1,118 mm)",
+         "47.8″ (1,213 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Load centre of gravity, max",
+        "sub": "",
+        "cells": [
+         "12″ from the table centre and 12″ from the table face",
+         "12″ from the table centre and 12″ from the table face",
+         "12″ from the table centre and 12″ from the table face"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rotation speed",
+        "sub": "",
+        "cells": [
+         "0.1 – 1.2 rpm",
+         "0.1 – 1.2 rpm",
+         "0.1 – 1.2 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tilt",
+        "sub": "",
+        "cells": [
+         "0 – 135°, motorized — 135° in 57 s",
+         "0 – 135°, motorized — 135° in 57 s",
+         "0 – 135°, motorized — 135° in 57 s"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1 HP (0.75 kW)",
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Hand pendant and foot pedal; high-frequency protected",
+         "Hand pendant and foot pedal; high-frequency protected",
+         "Hand pendant and foot pedal; high-frequency protected"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "67 × 51 × 51″ (170 × 130 × 130 cm)",
+         "75 × 59 × 51″ (190 × 150 × 130 cm)",
+         "79 × 59 × 55″ (200 × 150 × 140 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,579 lb (1,170 kg)",
+         "3,417 lb (1,550 kg)",
+         "3,946 lb (1,790 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WP-1000",
+      "glance": [
+       "3,307 / 2,205 lb (1,500 / 1,000 kg)",
+       "Ø39.4″ (1,000 mm) table",
+       "0.1 – 1.2 rpm",
+       "0 – 135°, motorized — 135° in 57 s",
+       "2,579 lb (1,170 kg)"
+      ]
+     },
+     {
+      "name": "WP-2000",
+      "glance": [
+       "5,512 / 4,409 lb (2,500 / 2,000 kg)",
+       "Ø43.3″ (1,100 mm) table",
+       "0.1 – 1.2 rpm",
+       "0 – 135°, motorized — 135° in 57 s",
+       "3,417 lb (1,550 kg)"
+      ]
+     },
+     {
+      "name": "WP-3000",
+      "glance": [
+       "8,818 / 5,952 lb (4,000 / 2,700 kg)",
+       "Ø47.2″ (1,200 mm) table",
+       "0.1 – 1.2 rpm",
+       "0 – 135°, motorized — 135° in 57 s",
+       "3,946 lb (1,790 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "load_horizontal_vertical",
+     "table_chuck",
+     "rotation_speed",
+     "tilt",
+     "weight"
+    ],
+    "caps": {
+     "WP-1000": "3,307 / 2,205 lb (1,500 / 1,000 kg)",
+     "WP-2000": "5,512 / 4,409 lb (2,500 / 2,000 kg)",
+     "WP-3000": "8,818 / 5,952 lb (4,000 / 2,700 kg)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-wp-big"
+  },
+  "tt-wp-acc": {
+   "id": "tt-wp-acc",
+   "brand": "novotech",
+   "name": "WPC welding chucks and WGS torch holders for the positioners",
+   "short": "Chucks and torch holders",
+   "models_label": "WPC-200 – WGS540 · 6 models",
+   "summary": "Accessories for the positioners: WPC self-centring 3-jaw welding chucks that grip parts from Ø0.4″ inside to Ø15″ outside, and WGS torch holders that clamp the torch on an arm 8.5 to 21.3″ long and a post up to 59″ high, so the bead stays in one place while the part turns.",
+   "features": [
+    "WPC-200 / 300 / 400: outside clamping Ø4.3 – 15″, inside Ø0.4 – 9.8″; centre holes Ø3.1 – 6.7″",
+    "Clamping force 441 – 772 lb; part weight to 529 lb",
+    "WGS215 / 370 / 540: arms 8.5, 14.6 and 21.3″; posts 11.8 – 59″"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wpc",
+    "tm-wgs"
+   ],
+   "videos": [],
+   "headline": "Chucks and torch holders",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WPC-200 · WPC-300 · WPC-400",
+      "sub": "Self-centring 3-jaw welding chucks for the positioners",
+      "models": [
+       "WPC-200",
+       "WPC-300",
+       "WPC-400"
+      ],
+      "rows": [
+       {
+        "label": "Clamping, outside",
+        "sub": "",
+        "cells": [
+         "Ø4.3 – 8.3″ (110 – 210 mm)",
+         "Ø6.7 – 11.8″ (170 – 300 mm)",
+         "Ø9.8 – 15″ (250 – 380 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Clamping, inside",
+        "sub": "",
+        "cells": [
+         "Ø0.4 – 5.1″ (10 – 130 mm)",
+         "Ø3.1 – 7.5″ (80 – 190 mm)",
+         "Ø4.7 – 9.8″ (120 – 250 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Centre hole",
+        "sub": "",
+        "cells": [
+         "Ø3.1″ (80 mm)",
+         "Ø3.9″ (100 mm)",
+         "Ø6.7″ (170 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping force",
+        "sub": "",
+        "cells": [
+         "441 lb (200 kg)",
+         "551 lb (250 kg)",
+         "772 lb (350 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "66 lb (30 kg)",
+         "265 lb (120 kg)",
+         "529 lb (240 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "WGS215 · WGS370 · WGS540",
+      "sub": "Adjustable welding torch holders",
+      "models": [
+       "WGS215",
+       "WGS370",
+       "WGS540"
+      ],
+      "rows": [
+       {
+        "label": "Horizontal arm",
+        "sub": "",
+        "cells": [
+         "8.5″ (215 mm)",
+         "14.6″ (370 mm)",
+         "21.3″ (540 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Vertical post",
+        "sub": "",
+        "cells": [
+         "11.8, 23.6, 39.4, 47.2 or 59″ (300, 600, 1,000, 1,200 or 1,500 mm)",
+         "11.8, 23.6, 39.4, 47.2 or 59″ (300, 600, 1,000, 1,200 or 1,500 mm)",
+         "11.8, 23.6, 39.4, 47.2 or 59″ (300, 600, 1,000, 1,200 or 1,500 mm)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WPC-200",
+      "glance": [
+       "Ø4.3 – 8.3″ (110 – 210 mm)",
+       "Ø0.4 – 5.1″ (10 – 130 mm)",
+       "66 lb (30 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "WPC-300",
+      "glance": [
+       "Ø6.7 – 11.8″ (170 – 300 mm)",
+       "Ø3.1 – 7.5″ (80 – 190 mm)",
+       "265 lb (120 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "WPC-400",
+      "glance": [
+       "Ø9.8 – 15″ (250 – 380 mm)",
+       "Ø4.7 – 9.8″ (120 – 250 mm)",
+       "529 lb (240 kg)",
+       "—",
+       "—"
+      ]
+     },
+     {
+      "name": "WGS215",
+      "glance": [
+       "—",
+       "—",
+       "—",
+       "8.5″ (215 mm)",
+       "11.8, 23.6, 39.4, 47.2 or 59″ (300, 600, 1,000, 1,200 or 1,500 mm)"
+      ]
+     },
+     {
+      "name": "WGS370",
+      "glance": [
+       "—",
+       "—",
+       "—",
+       "14.6″ (370 mm)",
+       "11.8, 23.6, 39.4, 47.2 or 59″ (300, 600, 1,000, 1,200 or 1,500 mm)"
+      ]
+     },
+     {
+      "name": "WGS540",
+      "glance": [
+       "—",
+       "—",
+       "—",
+       "21.3″ (540 mm)",
+       "11.8, 23.6, 39.4, 47.2 or 59″ (300, 600, 1,000, 1,200 or 1,500 mm)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "clamping_outside",
+     "clamping_inside",
+     "load_max",
+     "horizontal_arm",
+     "vertical_post"
+    ],
+    "caps": {
+     "WPC-200": "Ø4.3 – 8.3″ (110 – 210 mm)",
+     "WPC-300": "Ø6.7 – 11.8″ (170 – 300 mm)",
+     "WPC-400": "Ø9.8 – 15″ (250 – 380 mm)",
+     "WGS215": "8.5″ (215 mm)",
+     "WGS370": "14.6″ (370 mm)",
+     "WGS540": "21.3″ (540 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-wp-big"
+  },
+  "tt-trs": {
+   "id": "tt-trs",
+   "brand": "novotech",
+   "name": "TRS welding turning rolls, 2,205 – 11,023 lb per set",
+   "short": "TRS turning rolls",
+   "models_label": "TRS1000 – TRS5000 · 4 models",
+   "summary": "Turning rolls (welding rotators) turn pipe, tanks and vessels under a fixed torch for circumferential welds, and for cutting, grinding and painting: each set is a drive section with a variable-speed motor, a control box and a foot pedal, and an idler section placed to suit the length of the part. Four sizes carry 2,205 to 11,023 lb per set and work from Ø1-1/2 to 96″, at surface speeds up to 56 – 143 in/min.",
+   "features": [
+    "2,205 / 2,646 / 4,850 / 11,023 lb (1,000 – 5,000 kg) per set",
+    "Work Ø1-1/2 – 24″ (TRS1000) to Ø12 – 96″ (TRS5000)",
+    "Surface speed variable, up to 56 – 143 in/min",
+    "One drive and one idler section per set; control box and foot pedal",
+    "Wheels Ø8 – 12″; 150 – 500 W motors"
+   ],
+   "optional": [],
+   "images": [
+    "tm-trs1000",
+    "tm-trs-pipe",
+    "tm-trs2200",
+    "tm-trs5000"
+   ],
+   "videos": [],
+   "headline": "2,205 – 11,023 lb",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TRS1000 · TRS1200 · TRS2200 · TRS5000",
+      "sub": "Welding turning rolls (rotators), one drive and one idler per set, 2,205 – 11,023 lb",
+      "models": [
+       "TRS1000",
+       "TRS1200",
+       "TRS2200",
+       "TRS5000"
+      ],
+      "rows": [
+       {
+        "label": "Load per set",
+        "sub": "",
+        "cells": [
+         "2,205 lb (1,000 kg)",
+         "2,646 lb (1,200 kg)",
+         "4,850 lb (2,200 kg)",
+         "11,023 lb (5,000 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Work diameter",
+        "sub": "",
+        "cells": [
+         "Ø1-1/2 – 24″ (38 – 609 mm)",
+         "Ø7.9 – 31.5″ (200 – 800 mm)",
+         "Ø4 – 60″ (101 – 1,524 mm)",
+         "Ø12 – 96″ (304 – 2,438 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Surface speed",
+        "sub": "",
+        "cells": [
+         "0 – 78 in/min (0 – 1,978 mm/min)",
+         "0 – 56 in/min (0 – 1,413 mm/min)",
+         "0 – 143 in/min (0 – 3,641 mm/min)",
+         "0 – 69 in/min (0 – 1,745 mm/min)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Wheels",
+        "sub": "",
+        "cells": [
+         "Ø8 × 2-9/16″ (203 × 65 mm)",
+         "Ø8 × 2-9/16″ (203 × 65 mm)",
+         "Ø10 × 3″ (254 × 76 mm)",
+         "Ø12 × 4″ (305 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "150 W",
+         "250 W",
+         "500 W",
+         "500 W"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "26 × 22 × 20″ (65 × 57 × 50 cm)",
+         "25 × 26 × 19″ (63 × 66 × 48 cm)",
+         "40 × 32 × 20″ (102 × 82 × 50 cm)",
+         "59 × 41 × 28″ (150 × 105 × 70 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "198 lb (90 kg)",
+         "190 lb (86 kg)",
+         "485 lb (220 kg)",
+         "717 lb (325 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TRS1000",
+      "glance": [
+       "2,205 lb (1,000 kg)",
+       "Ø1-1/2 – 24″ (38 – 609 mm)",
+       "0 – 78 in/min (0 – 1,978 mm/min)",
+       "198 lb (90 kg)"
+      ]
+     },
+     {
+      "name": "TRS1200",
+      "glance": [
+       "2,646 lb (1,200 kg)",
+       "Ø7.9 – 31.5″ (200 – 800 mm)",
+       "0 – 56 in/min (0 – 1,413 mm/min)",
+       "190 lb (86 kg)"
+      ]
+     },
+     {
+      "name": "TRS2200",
+      "glance": [
+       "4,850 lb (2,200 kg)",
+       "Ø4 – 60″ (101 – 1,524 mm)",
+       "0 – 143 in/min (0 – 3,641 mm/min)",
+       "485 lb (220 kg)"
+      ]
+     },
+     {
+      "name": "TRS5000",
+      "glance": [
+       "11,023 lb (5,000 kg)",
+       "Ø12 – 96″ (304 – 2,438 mm)",
+       "0 – 69 in/min (0 – 1,745 mm/min)",
+       "717 lb (325 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "load_per_set",
+     "work_diameter",
+     "surface_speed",
+     "weight"
+    ],
+    "caps": {
+     "TRS1000": "2,205 lb (1,000 kg) per set",
+     "TRS1200": "2,646 lb (1,200 kg) per set",
+     "TRS2200": "4,850 lb (2,200 kg) per set",
+     "TRS5000": "11,023 lb (5,000 kg) per set"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-rolls"
+  },
+  "tt-wtr": {
+   "id": "tt-wtr",
+   "brand": "novotech",
+   "name": "Pipe stands, pipe supports and pipe jacks for welding, to 19,800 lb",
+   "short": "Pipe stands and supports",
+   "models_label": "WTR450 – PTR-1090A · 16 models",
+   "summary": "Supports that hold the far end of a long pipe or vessel while it turns on a positioner or on turning rolls, and stands for fit-up and cutting: WTR outboard support stands with screw height adjustment for 992 – 9,921 lb; MR pipe stands with roller heads for 6,600 – 15,400 lb and Ø4 – 60″ pipe, the MR3000A with double height adjustment and the MR7000D on three-point legs; MH5500 and MH9000 pipe supports; and folding pipe jacks with V, ball-transfer or roller heads and low PTR roller stands.",
+   "features": [
+    "WTR450 / 2250 / 4500 outboard supports: 992 – 9,921 lb, Ø2 – 48″, 8″ screw height travel",
+    "MR pipe stands: 6,600 – 15,400 lb, Ø4 – 60″ pipe, polyurethane-covered steel wheels",
+    "MH5500 / MH9000 pipe supports: 12,100 and 19,800 lb, 60″ and 72″ wide",
+    "Folding pipe jacks: V-head 2,400 lb, ball-transfer and roller heads 1,000 lb, 28 – 51″ high",
+    "PTR roller stands for Ø1/2 – 36″ pipe, 7-1/4 – 43″ high, 1,100 lb"
+   ],
+   "optional": [],
+   "images": [
+    "tm-mr3000a",
+    "tm-wtr",
+    "tm-mr7000d",
+    "tm-mh5500",
+    "tm-pjv",
+    "tm-ptr185"
+   ],
+   "videos": [],
+   "headline": "To 19,800 lb",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WTR450 · WTR2250 · WTR4500",
+      "sub": "Outboard support stands with screw height adjustment",
+      "models": [
+       "WTR450",
+       "WTR2250",
+       "WTR4500"
+      ],
+      "rows": [
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "992 lb (450 kg)",
+         "4,960 lb (2,250 kg)",
+         "9,921 lb (4,500 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Work diameter",
+        "sub": "",
+        "cells": [
+         "Ø2 – 36″ (50 – 915 mm)",
+         "Ø2 – 36″ (50 – 916 mm)",
+         "Ø10 – 48″ (254 – 1,219 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Wheels",
+        "sub": "",
+        "cells": [
+         "Ø8 × 2-9/16″ (203 × 65 mm)",
+         "Ø8 × 2-9/16″ (203 × 65 mm)",
+         "Ø12 × 4″ (305 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Height",
+        "sub": "",
+        "cells": [
+         "25.7″ (652 mm) min., screw travel 8″ (205 mm)",
+         "28″ (712 mm) min., screw travel 8″ (205 mm)",
+         "34.9″ (887 mm) min., screw travel 8″ (205 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "30 × 21 × 31″ (77 × 54 × 79 cm)",
+         "31 × 21 × 33″ (80 × 54 × 85 cm)",
+         "46 × 27 × 39″ (116 × 68 × 100 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "121 lb (55 kg)",
+         "143 lb (65 kg)",
+         "551 lb (250 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "MR3000 · MR3000A · MR5000 · MR7000D · MH5500 · MH9000",
+      "sub": "Pipe stands and pipe supports, 6,600 – 19,800 lb",
+      "models": [
+       "MR3000",
+       "MR3000A",
+       "MR5000",
+       "MR7000D",
+       "MH5500",
+       "MH9000"
+      ],
+      "rows": [
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "6,600 lb (3,000 kg)",
+         "6,600 lb (3,000 kg)",
+         "11,000 lb (5,000 kg)",
+         "15,400 lb (7,000 kg)",
+         "12,100 lb (5,500 kg)",
+         "19,800 lb (9,000 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Work diameter",
+        "sub": "",
+        "cells": [
+         "Ø4 – 48″ (101 – 1,219 mm)",
+         "Ø4 – 48″ (101 – 1,219 mm)",
+         "Ø4 – 60″ (101 – 1,524 mm)",
+         "Ø4 – 60″ (101 – 1,524 mm)",
+         "60″ (1,524 mm) wide",
+         "72″ (1,830 mm) wide"
+        ],
+        "key": true
+       },
+       {
+        "label": "Wheels",
+        "sub": "",
+        "cells": [
+         "Ø8″ (203 mm), polyurethane-covered steel",
+         "Ø8″ (203 mm), polyurethane-covered steel",
+         "Ø12″ (304 mm), polyurethane-covered steel",
+         "Ø12″ (304 mm), polyurethane-covered steel",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Height",
+        "sub": "",
+        "cells": [
+         "34 – 42″ (865 – 1,070 mm)",
+         "41 – 49″ (1,054 – 1,259 mm), double height adjustment",
+         "31 – 44″ (800 – 1,122 mm)",
+         "34 – 47″ (876 – 1,192 mm), three-point legs",
+         "36″ (915 mm)",
+         "18″ (460 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "54 × 39 × 38″ (137 × 100 × 96 cm)",
+         "54 × 39 × 45″ (137 × 100 × 115 cm)",
+         "64 × 39 × 39″ (163 × 100 × 100 cm)",
+         "70 × 39 × 42″ (177 × 100 × 107 cm)",
+         "64 × 39 × 42″ (163 × 98 × 107 cm)",
+         "76 × 28 × 24″ (194 × 71 × 61 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "265 lb (120 kg)",
+         "320 lb (145 kg)",
+         "507 lb (230 kg)",
+         "860 lb (390 kg)",
+         "198 lb (90 kg)",
+         "280 lb (127 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "PJV-1100 · PJV-450B · PJ-450SW · PTR-185 · PTR-610 · PTR-800 · PTR-1090A",
+      "sub": "Folding pipe jacks and pipe roller stands",
+      "models": [
+       "PJV-1100",
+       "PJV-450B",
+       "PJ-450SW",
+       "PTR-185",
+       "PTR-610",
+       "PTR-800",
+       "PTR-1090A"
+      ],
+      "rows": [
+       {
+        "label": "Head",
+        "sub": "",
+        "cells": [
+         "V-head",
+         "Ball-transfer head",
+         "Roller head with steel wheels",
+         "Two rollers",
+         "Two rollers",
+         "Two rollers",
+         "Two rollers"
+        ],
+        "key": true
+       },
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "2,400 lb (1,100 kg)",
+         "1,000 lb (450 kg)",
+         "1,000 lb (450 kg)",
+         "1,100 lb (500 kg)",
+         "1,100 lb (500 kg)",
+         "1,100 lb (500 kg)",
+         "1,100 lb (500 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Height",
+        "sub": "",
+        "cells": [
+         "28 – 51″ (710 – 1,300 mm)",
+         "28 – 51″ (710 – 1,300 mm)",
+         "28 – 51″ (710 – 1,300 mm)",
+         "7-1/4″ (185 mm)",
+         "24″ (610 mm)",
+         "31″ (800 mm)",
+         "29 – 43″ (740 – 1,090 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pipe size",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "Ø1/2 – 36″ (12 – 910 mm)",
+         "Ø1/2 – 36″ (12 – 910 mm)",
+         "Ø1/2 – 36″ (12 – 910 mm)",
+         "Ø1/2 – 36″ (12 – 910 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "31 × 10 × 8″ (80 × 25 × 20 cm)",
+         "31 × 10 × 8″ (80 × 25 × 20 cm)",
+         "31 × 10 × 8″ (80 × 25 × 20 cm)",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "31 lb (14 kg)",
+         "33 lb (15 kg)",
+         "31 lb (14 kg)",
+         "46 lb (21 kg)",
+         "71 lb (32 kg)",
+         "73 lb (33 kg)",
+         "73 lb (33 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WTR450",
+      "glance": [
+       "992 lb (450 kg)",
+       "Ø2 – 36″ (50 – 915 mm)",
+       "25.7″ (652 mm) min., screw travel 8″ (205 mm)",
+       "121 lb (55 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "WTR2250",
+      "glance": [
+       "4,960 lb (2,250 kg)",
+       "Ø2 – 36″ (50 – 916 mm)",
+       "28″ (712 mm) min., screw travel 8″ (205 mm)",
+       "143 lb (65 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "WTR4500",
+      "glance": [
+       "9,921 lb (4,500 kg)",
+       "Ø10 – 48″ (254 – 1,219 mm)",
+       "34.9″ (887 mm) min., screw travel 8″ (205 mm)",
+       "551 lb (250 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "MR3000",
+      "glance": [
+       "6,600 lb (3,000 kg)",
+       "Ø4 – 48″ (101 – 1,219 mm)",
+       "34 – 42″ (865 – 1,070 mm)",
+       "265 lb (120 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "MR3000A",
+      "glance": [
+       "6,600 lb (3,000 kg)",
+       "Ø4 – 48″ (101 – 1,219 mm)",
+       "41 – 49″ (1,054 – 1,259 mm), double height adjustment",
+       "320 lb (145 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "MR5000",
+      "glance": [
+       "11,000 lb (5,000 kg)",
+       "Ø4 – 60″ (101 – 1,524 mm)",
+       "31 – 44″ (800 – 1,122 mm)",
+       "507 lb (230 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "MR7000D",
+      "glance": [
+       "15,400 lb (7,000 kg)",
+       "Ø4 – 60″ (101 – 1,524 mm)",
+       "34 – 47″ (876 – 1,192 mm), three-point legs",
+       "860 lb (390 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "MH5500",
+      "glance": [
+       "12,100 lb (5,500 kg)",
+       "60″ (1,524 mm) wide",
+       "36″ (915 mm)",
+       "198 lb (90 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "MH9000",
+      "glance": [
+       "19,800 lb (9,000 kg)",
+       "72″ (1,830 mm) wide",
+       "18″ (460 mm)",
+       "280 lb (127 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "PJV-1100",
+      "glance": [
+       "2,400 lb (1,100 kg)",
+       "—",
+       "28 – 51″ (710 – 1,300 mm)",
+       "31 lb (14 kg)",
+       "V-head"
+      ]
+     },
+     {
+      "name": "PJV-450B",
+      "glance": [
+       "1,000 lb (450 kg)",
+       "—",
+       "28 – 51″ (710 – 1,300 mm)",
+       "33 lb (15 kg)",
+       "Ball-transfer head"
+      ]
+     },
+     {
+      "name": "PJ-450SW",
+      "glance": [
+       "1,000 lb (450 kg)",
+       "—",
+       "28 – 51″ (710 – 1,300 mm)",
+       "31 lb (14 kg)",
+       "Roller head with steel wheels"
+      ]
+     },
+     {
+      "name": "PTR-185",
+      "glance": [
+       "1,100 lb (500 kg)",
+       "—",
+       "7-1/4″ (185 mm)",
+       "46 lb (21 kg)",
+       "Two rollers"
+      ]
+     },
+     {
+      "name": "PTR-610",
+      "glance": [
+       "1,100 lb (500 kg)",
+       "—",
+       "24″ (610 mm)",
+       "71 lb (32 kg)",
+       "Two rollers"
+      ]
+     },
+     {
+      "name": "PTR-800",
+      "glance": [
+       "1,100 lb (500 kg)",
+       "—",
+       "31″ (800 mm)",
+       "73 lb (33 kg)",
+       "Two rollers"
+      ]
+     },
+     {
+      "name": "PTR-1090A",
+      "glance": [
+       "1,100 lb (500 kg)",
+       "—",
+       "29 – 43″ (740 – 1,090 mm)",
+       "73 lb (33 kg)",
+       "Two rollers"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "load_max",
+     "work_diameter",
+     "height",
+     "weight",
+     "head"
+    ],
+    "caps": {
+     "WTR450": "992 lb (450 kg)",
+     "WTR2250": "4,960 lb (2,250 kg)",
+     "WTR4500": "9,921 lb (4,500 kg)",
+     "MR3000": "6,600 lb (3,000 kg)",
+     "MR3000A": "6,600 lb (3,000 kg)",
+     "MR5000": "11,000 lb (5,000 kg)",
+     "MR7000D": "15,400 lb (7,000 kg)",
+     "MH5500": "12,100 lb (5,500 kg)",
+     "MH9000": "19,800 lb (9,000 kg)",
+     "PJV-1100": "2,400 lb (1,100 kg)",
+     "PJV-450B": "1,000 lb (450 kg)",
+     "PJ-450SW": "1,000 lb (450 kg)",
+     "PTR-185": "1,100 lb (500 kg)",
+     "PTR-610": "1,100 lb (500 kg)",
+     "PTR-800": "1,100 lb (500 kg)",
+     "PTR-1090A": "1,100 lb (500 kg)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "tt-supports"
+  },
+  "tt-wt3624": {
+   "id": "tt-wt3624",
+   "brand": "novotech",
+   "name": "WT-36X24 mobile welding table with CNC hole pattern",
+   "short": "WT-36X24 welding table",
+   "models_label": "WT-36X24 · 1 model",
+   "summary": "A mobile fixture table for the fabrication shop: a 36 × 24 × 5/8″ top, flat to 0.006″, with 216 holes of 5/8″ on a 2″ grid for clamps and fixtures, reversible and nitrided with a black-oxide finish against spatter and rust. It carries 1,500 lb and comes with a tube and pipe notcher, a drop-down working tray, shelves, leveling feet and casters.",
+   "features": [
+    "Top 36 × 24 × 5/8″ (910 × 610 × 16 mm), flat to 0.006″ (0.15 mm)",
+    "216 holes Ø5/8″ (16 mm) on a 2″ (50 mm) grid",
+    "Reversible top; nitrided black-oxide finish",
+    "1,500 lb (680 kg) load; leveling feet and casters",
+    "Tube and pipe notcher, drop-down tray and shelves standard"
+   ],
+   "optional": [],
+   "images": [
+    "tm-wt3624",
+    "tm-wt-notcher"
+   ],
+   "videos": [],
+   "headline": "36 × 24″ top",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WT-36X24",
+      "sub": "Mobile welding table with CNC hole pattern",
+      "models": [
+       "WT-36X24"
+      ],
+      "rows": [
+       {
+        "label": "Table top",
+        "sub": "",
+        "cells": [
+         "36 × 24 × 5/8″ (910 × 610 × 16 mm), flat to 0.006″ (0.15 mm), reversible, nitrided black-oxide finish"
+        ],
+        "key": true
+       },
+       {
+        "label": "Holes",
+        "sub": "",
+        "cells": [
+         "216 × Ø5/8″ (16 mm) on a 2″ (50 mm) grid"
+        ],
+        "key": true
+       },
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "1,499 lb (680 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Standard",
+        "sub": "",
+        "cells": [
+         "Tube and pipe notcher, drop-down working tray, shelves, leveling feet and casters"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "40 × 28 × 43″ (102 × 72 × 108 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "375 lb (170 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WT-36X24",
+      "glance": [
+       "36 × 24 × 5/8″ (910 × 610 × 16 mm), flat to 0.006″ (0.15 mm), reversible, nitrided black-oxide finish",
+       "216 × Ø5/8″ (16 mm) on a 2″ (50 mm) grid",
+       "1,499 lb (680 kg)",
+       "375 lb (170 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table_top",
+     "holes",
+     "load_max",
+     "weight"
+    ],
+    "caps": {
+     "WT-36X24": "1,499 lb (680 kg) load"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "tt-weld-tables"
+  },
+  "tt-mdt": {
+   "id": "tt-mdt",
+   "brand": "novotech",
+   "name": "MDT downdraft tables for grinding, sanding and welding fumes, 1,350 – 3,700 CFM",
+   "short": "MDT downdraft tables",
+   "models_label": "MDT-4840 · MDT-6137 · MDT-6022 · 3 models",
+   "summary": "Downdraft tables pull grinding dust, sanding dust and welding fumes down through the perforated top before they reach the operator. The MDT-4840 and MDT-6137 draw 1,350 CFM through three filter stages — an aluminum pre-filter, a cartridge filter and a HEPA filter — with compressed-air cleaning of the cartridges on the MDT-4840; the MDT-6022 is a 61 × 20″ grinding table with two fans moving 3,700 CFM through four panel filters.",
+   "features": [
+    "MDT-4840: 46 × 38.7″ table; MDT-6137: 61 × 36.8″; MDT-6022: 61-3/16 × 20″",
+    "1,350 CFM with 3-stage filtration G2 / F7 / H13 (MDT-4840, MDT-6137)",
+    "MDT-6022: 3,700 CFM through four panel filters; 1/8″ steel inserts; 78 dB or less",
+    "Table loads 441 – 1,543 lb",
+    "Motors 3/4 – 4 HP (0.55 – 3 kW)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-mdt4840",
+    "tm-mdt6137",
+    "tm-mdt6022",
+    "tm-mdt-filter"
+   ],
+   "videos": [],
+   "headline": "1,350 – 3,700 CFM",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "MDT-4840 · MDT-6137 · MDT-6022",
+      "sub": "Metalworking downdraft tables for grinding, sanding and welding fumes",
+      "models": [
+       "MDT-4840",
+       "MDT-6137",
+       "MDT-6022"
+      ],
+      "rows": [
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "46 × 38.7″ (1,168 × 982 mm)",
+         "61 × 36.8″ (1,550 × 935 mm)",
+         "61-3/16 × 20″ (1,555 × 510 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Air flow",
+        "sub": "",
+        "cells": [
+         "1,350 CFM at the base",
+         "1,350 CFM at the base",
+         "3,700 CFM (2 × 1,850 CFM)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Filtration",
+        "sub": "",
+        "cells": [
+         "3 stages: aluminum pre-filter (G2), cartridge (F7), HEPA (H13)",
+         "3 stages: aluminum pre-filter (G2), cartridge (F7), HEPA (H13)",
+         "4 panel filters 19 × 15 × 1″, 300 micron"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "4 HP (3 kW)",
+         "3/4 HP (0.55 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table load, max",
+        "sub": "",
+        "cells": [
+         "1,543 lb (700 kg)",
+         "1,543 lb (700 kg)",
+         "441 lb (200 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "38.8″ (985 mm)",
+         "38.8″ (985 mm)",
+         "29.5″ (750 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Other",
+        "sub": "",
+        "cells": [
+         "Compressed air 60 – 90 psi (4.1 – 6.2 bar) for filter cleaning",
+         "—",
+         "1/8″ steel table inserts, two swarf trays, ≤78 dB"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "61 × 46 × 82″ (156 × 117 × 208 cm)",
+         "79 × 46 × 80″ (201 × 117 × 203 cm)",
+         "70 × 30 × 39″ (178 × 75 × 100 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "783 lb (355 kg)",
+         "1,036 lb (470 kg)",
+         "331 lb (150 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "MDT-4840",
+      "glance": [
+       "46 × 38.7″ (1,168 × 982 mm)",
+       "1,350 CFM at the base",
+       "3 stages: aluminum pre-filter (G2), cartridge (F7), HEPA (H13)",
+       "783 lb (355 kg)"
+      ]
+     },
+     {
+      "name": "MDT-6137",
+      "glance": [
+       "61 × 36.8″ (1,550 × 935 mm)",
+       "1,350 CFM at the base",
+       "3 stages: aluminum pre-filter (G2), cartridge (F7), HEPA (H13)",
+       "1,036 lb (470 kg)"
+      ]
+     },
+     {
+      "name": "MDT-6022",
+      "glance": [
+       "61-3/16 × 20″ (1,555 × 510 mm)",
+       "3,700 CFM (2 × 1,850 CFM)",
+       "4 panel filters 19 × 15 × 1″, 300 micron",
+       "331 lb (150 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "table",
+     "air_flow",
+     "filtration",
+     "weight"
+    ],
+    "caps": {
+     "MDT-4840": "1,350 CFM at the base",
+     "MDT-6137": "1,350 CFM at the base",
+     "MDT-6022": "3,700 CFM (2 × 1,850 CFM)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-weld-tables"
   }
  }
 }

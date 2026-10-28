@@ -4,13 +4,13 @@
  "family_set": "ttmc-more",
  "title": "Milling Machines — Turret, Universal & Mill-Drills | NovoTech",
  "artifact_title": "Milling machines — turret, universal and drilling-milling machines",
- "meta_description": "Milling machines for metal: turret mills with horizontal spindle, universal and heavy ISO50 milling machines to 79″ tables, drilling-milling machines, mini mills and keyseaters.",
+ "meta_description": "Milling machines: turret mills with horizontal spindle, universal and ISO50 mills, drill-mills, keyseaters and a cylinder head resurfacing machine.",
  "h1": "Milling machines — turret, universal and drilling-milling machines",
- "intro": "Milling machines cut flat faces, slots, steps, pockets and keyways with rotating cutters while the table moves the work under them. NovoTech's value-line milling machines are built in China to our specification: knee-type turret mills with a horizontal spindle as well as the vertical head, universal mills with a head that swivels through 360°, heavy ISO50 universal mills with power feed and rapid traverse on all axes and tables up to 79″, drilling-milling machines that drill 2″, a mini mill-drill and a radial drill-mill, and a keyseater and a slotting machine for keyways and splines. Parts and support from Mississauga, ON, Canada.",
+ "intro": "Milling machines cut flat faces, slots, steps, pockets and keyways with rotating cutters while the table moves the work under them. NovoTech's value-line milling machines are built in China to our specification: knee-type turret mills with a horizontal spindle as well as the vertical head, universal mills with a head that swivels through 360°, heavy ISO50 universal mills with power feed and rapid traverse on all axes and tables up to 79″, drilling-milling machines that drill 2″, a mini mill-drill and a radial drill-mill, a keyseater and a slotting machine for keyways and splines, and the KSM-850 resurfacing machine for cylinder heads and blocks. Parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Turret mills X6325W – X6336WA: vertical head to 7,200 rpm, horizontal spindle, power feed, tables to 64 × 14″",
   "Universal mills XQ6226, X6436 and heavy ISO50 LM-1450 / X5750 with tables to 79″ and servo feeds",
-  "ZX drilling-milling machines for 2″ drilling; TX-20 and DM-20; B5012 keyseater and B5013 slotter"
+  "ZX drilling-milling machines for 2″ drilling; TX-20 and DM-20; B5012 keyseater and B5013 slotter; KSM-850 head resurfacer"
  ],
  "hero_image": "tm-x6332",
  "hero_image_secondary": [
@@ -70,6 +70,15 @@
    "families": [
     "tt-slot"
    ]
+  },
+  {
+   "id": "resurf-group",
+   "title": "Cylinder head resurfacing machine",
+   "lead": "Flat, smooth gasket faces on cylinder heads and engine blocks for the engine rebuilder.",
+   "brand": "novotech",
+   "families": [
+    "tt-ksm850"
+   ]
   }
  ],
  "faq": [
@@ -83,7 +92,11 @@
   },
   {
    "q": "Power feed and DRO?",
-   "a": "Power feed moves the table at a steady rate for a better finish and less operator fatigue; a digital readout (DRO) shows the table position to 0.0002″ and replaces the dials for most work. The X6336 and LM-1450 have power feed on all three axes; DROs are available on most models — ask us when you quote."
+   "a": "Power feed moves the table at a steady rate for a better finish and less operator fatigue; a digital readout (DRO) shows the table position to 0.0002″ and replaces the dials for most work. The X6336 and LM-1450 have power feed on all three axes, the X6336 with rapid traverse and a three-axis DRO; DROs are available on most models — ask us when you quote."
+  },
+  {
+   "q": "What does a cylinder head resurfacing machine do?",
+   "a": "It mills the gasket face of a cylinder head or an engine block flat and smooth again after warping or corrosion, so the new head gasket seals. The KSM-850 feeds the part under a Ø13″ cutter head with CBN inserts for cast iron and PCD for aluminum, with variable head speed and table feed for the finish the gasket needs, on heads and blocks up to 33.5″ long."
   },
   {
    "q": "What voltage do these machines run on?",

@@ -91,7 +91,7 @@ PLAN = {
  "tm-lm1450": (41, "L1", [], "LM-1450A universal milling machine, ISO50, with DRO"),
  "tm-lm1450b": (41, "L3", [], "LM-1450B universal milling machine with servo feed"),
  "tm-lm1450d": (41, "R4", [], "LM-1450D universal milling machine for production work"),
- "tm-x6336": (42, "L3", [], "X6336 turret milling machine with horizontal spindle"),
+ "tm-x6336": (42, "L3", [], "Turret milling machine with horizontal spindle, as the X6336WA"),
  "tm-x6436": (42, "R1", [], "X6436 universal milling machine with servo feeds"),
  "tm-x5750": (42, "R3", [(958, 520, 1004, 540)], "X5750 universal milling machine with ball screws and three servo motors"), "tm-ctk6416": (43, "L1", [], "CTK6416 slant-bed CNC lathe with gang tooling"),
  "tm-cnc100": (43, "R1", [], "CNC100 slot machining centre for grooving quartz and glass"),

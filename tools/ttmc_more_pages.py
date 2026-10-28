@@ -1,21 +1,26 @@
 #!/usr/bin/env python3
 """NovoTech value-line machines built by TTMC (sold under NovoTech's name with TTMC model codes, no supplier brand) — writes
   content/families/ttmc-more.json            every family of tools/ttmc_more_data.py (new pages) and ttmc_more_data2.py (groups)
-  content/pages/<slug>.json                  the ten new pages (category.html)
+  content/pages/<slug>.json                  the new pages (category.html), woodworking machinery among them
   content/extra_groups/ttmc-<slug>.json      value-line groups on pages other generators write (build.py apply_extra_groups)
-  tools/image_map.json, tools/ttmc_more_keys.txt   the sample photos (tools/ttmc_more_photos.py), section 'ttmc-more'
-The EBQ01 bench shears (ttmc_more_data2.SHEAR) go on sheet-metal-shears.html through tools/ttmc_pages.py (family set 'ttmc').
+  tools/image_map.json, tools/ttmc_more_keys.txt   the photos (tools/ttmc_more_photos.py — Vol. 23 catalogue, and
+                                             tools/ttmc_new_photos.py — 2026 sheets and catalogues), section 'ttmc-more'
+The EBQ01 bench shears and the PS-1220 coil slitter (ttmc_more_data2.SHEAR) go on sheet-metal-shears.html through
+tools/ttmc_pages.py (family set 'ttmc').
 
-    python3 tools/ttmc_more_photos.py && python3 tools/ttmc_more_pages.py && python3 tools/ttmc_pages.py
+    python3 tools/ttmc_more_photos.py && python3 tools/ttmc_new_photos.py && python3 tools/ttmc_more_pages.py && python3 tools/ttmc_pages.py
     python3 tools/make_images.py --only $(cat tools/ttmc_more_keys.txt) && python3 build.py
 """
 import json
 import os
 
+from PIL import Image
+
 from isitan_lib import CRUMBS, VOLT_FAQ_GENERIC, lower_keep_acronyms, write_families, write_json
 import ttmc_more_data as D
 import ttmc_more_data2 as D2
 import ttmc_more_photos as PH
+import ttmc_new_photos as NP
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "ttmc-more"
@@ -34,25 +39,26 @@ VOLT = VOLT_FAQ_GENERIC
 PAGES = {
     D.P_BRAKE: dict(
         title="Sheet Metal Brakes — Box & Pan, Magnetic & Hydraulic | NovoTech",
-        meta="Sheet metal brakes in Canada: magnetic brakes 2 – 10 ft, box and pan brakes, hand brakes, hydraulic and electric folding machines to 3/16″, roofing brakes, 3-in-1 machines.",
+        meta="Sheet metal brakes in Canada: magnetic, box and pan brakes for 9″ deep boxes, hand brakes, hydraulic, electric and CNC folders, roofing brakes and 3-in-1s.",
         h1="Sheet metal brakes — box and pan, magnetic, hand and hydraulic folding machines",
         nav="Sheet metal brakes",
         intro="A sheet metal brake (folder) bends sheet by clamping it under a straight beam and swinging a folding leaf up around the edge — "
               "no punch and die, no marks on painted sheet, and long, straight bends in thin material that a press brake cannot hold flat. "
               "NovoTech's value-line brakes are built in China to our specification: magnetic brakes from 2 to 10 ft that clamp the sheet "
-              "with an electromagnet and fold boxes of any depth, box and pan brakes with removable fingers, hand brakes and foot-clamp folding "
-              "machines for the HVAC, roofing and sheet-metal shop, hydraulic and electric folding machines for 10 ga over 10 ft and 3/16″ "
-              "over 8 ft, portable roofing brakes for the job site and combination shear, brake and roll machines — 140 models, with parts "
+              "with an electromagnet and fold boxes of any depth, box and pan brakes with removable fingers — the heaviest fold 14 ga boxes "
+              "9″ deep, by hand or with hydraulic power — hand brakes and foot-clamp folding machines for the HVAC, roofing and sheet-metal "
+              "shop, hydraulic, electric and CNC folding machines for 10 ga over 10 ft, 3/16″ over 8 ft and 14 ga over 12 ft, portable "
+              "roofing brakes and a coil dispenser for the job site, and combination shear, brake and roll machines — {n} models, with parts "
               "and support from Mississauga, ON, Canada.",
         points=["Magnetic brakes EB625 – EB3200: 16 ga × 2 – 8 ft and 18 ga × 10 ft, 3.3 – 13.2 US tons of clamping, boxes of any depth",
-                "Box and pan brakes 12 – 157″ with removable fingers, 22 to 12 ga; hand brakes and foot-clamp folders to 13 ft",
-                "Hydraulic folding machines 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″ with servo back gauge; electric folders to 10 ft"],
+                "Box and pan brakes 12 – 157″ with removable fingers, 22 to 12 ga, boxes to 9″ deep in 14 ga; hand brakes and foot-clamp folders to 13 ft",
+                "Hydraulic folding machines 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″; TFM / TFMS CNC electric folders 14 ga × 122 – 145″"],
         hero="tm-eb2500", minis=["tm-hwe", "tm-bp1650"],
         groups=[("mag", "Magnetic sheet metal brakes", "An electromagnet in the bed clamps the sheet under a steel bar — no beam frame at the ends, so a short bar folds the side of a box of any depth.", False),
-                ("hyd", "Hydraulic and electric folding machines", "Powered clamping and folding: a 10 ft bend in 10 ga takes a foot pedal instead of two people.", False),
+                ("hyd", "Hydraulic, electric and CNC folding machines", "Powered clamping and folding: a 10 ft bend in 10 ga takes a foot pedal instead of two people, and the CNC folders run a 99-bend program with their back gauge.", False),
                 ("panbox", "Box and pan brakes", "The upper blade is made of removable fingers: take them out where the sides of the box come up and fold all four sides of a pan.", True),
                 ("hand", "Hand brakes and foot-clamp folding machines", "Straight brakes with a one-piece blade for long, clean bends, and folders whose clamping beam closes from a foot pedal.", True),
-                ("roof", "Portable roofing brakes and bench brakes", "Light brakes that go to the job: aluminum roofing brakes for flashing and trim, bench brakes, slitting brakes and offset tools.", True),
+                ("roof", "Portable roofing brakes and bench brakes", "Light brakes that go to the job: aluminum roofing brakes for flashing and trim, a coil dispenser, bench brakes, shear and brake machines, slitting brakes and offset tools.", True),
                 ("combo", "Combination shear, brake and roll machines", "Three machines on one frame — the starter machine for the small sheet-metal and HVAC shop.", False)],
         faq=[{"q": "Box and pan brake, hand brake or magnetic brake — which do I need?",
               "a": "A hand (straight) brake has a one-piece clamping blade: the best choice for long straight bends — flashing, trim, duct panels. A box and pan brake has a blade made of removable fingers, so it folds the four sides of a box or a pan; with all the fingers in it works as a straight brake too. A magnetic brake has no clamping beam at all — an electromagnet holds a loose steel bar on the sheet — so it folds boxes of any depth, closed and narrow shapes and short return flanges that a box and pan brake cannot reach, at the cost of a lower capacity (16 ga to 8 ft). For 14 ga and heavier, or for production, choose a hydraulic or electric folding machine."},
@@ -62,6 +68,8 @@ PAGES = {
               "a": "Yes — that is one of the reasons to fold instead of press-brake bending. The sheet is clamped and the leaf swings around the clamp edge without sliding over a die. The ALB roofing brakes have a silicone insert in the bending beam for pre-painted coil and copper; on the other brakes a strip of protective film on the sheet keeps the finish perfect."},
              {"q": "When should I buy a hydraulic folding machine instead of a press brake?",
               "a": "When the work is long panels in thin and medium sheet — duct, enclosures, architectural cladding, flashing — up to 10 ga. A folder bends from one side with the sheet lying flat, so a long panel needs no support or second person, there are no punch and die to change, and painted sheet is not marked. A press brake is the better machine for short heavy parts, for thick plate, for many different bends in one part and for tight tolerances on small flanges."},
+             {"q": "What does a CNC folding machine add?",
+              "a": "A CNC folder (TFM, TFMS) positions the back gauge for every flange and folds to a programmed angle, one bend after the other from a program of up to 99 bends — the operator only turns and feeds the sheet. Programs are stored for repeat parts, the control corrects the angle for springback and folds radii in small steps. It pays for itself on production panels — cladding, cassettes, enclosures, duct — where a hand-set folder needs a skilled operator for every part. The TFMS has a segmented upper beam for boxes."},
              {"q": "What do I need to bend roofing flashing on site?",
               "a": "A portable roofing brake: the ALB brakes have an aluminum frame on folding legs, set up in 10 – 15 minutes, take 24 ga steel and 0.032″ aluminum over 7.2 – 12.5 ft, bend to 180° and slit the coil with a roller knife. For the shop, a box and pan brake or a magnetic brake does the same work in heavier gauges."},
              {"q": "Do you still sell the brakes from the old website?",
@@ -171,29 +179,32 @@ PAGES = {
     ),
     D.P_MILL: dict(
         title="Milling Machines — Turret, Universal & Mill-Drills | NovoTech",
-        meta="Milling machines for metal: turret mills with horizontal spindle, universal and heavy ISO50 milling machines to 79″ tables, drilling-milling machines, mini mills and keyseaters.",
+        meta="Milling machines: turret mills with horizontal spindle, universal and ISO50 mills, drill-mills, keyseaters and a cylinder head resurfacing machine.",
         h1="Milling machines — turret, universal and drilling-milling machines",
         nav="Milling machines",
         intro="Milling machines cut flat faces, slots, steps, pockets and keyways with rotating cutters while the table moves the work under "
               "them. NovoTech's value-line milling machines are built in China to our specification: knee-type turret mills with a "
               "horizontal spindle as well as the vertical head, universal mills with a head that swivels through 360°, heavy ISO50 universal "
               "mills with power feed and rapid traverse on all axes and tables up to 79″, drilling-milling machines that drill 2″, a mini "
-              "mill-drill and a radial drill-mill, and a keyseater and a slotting machine for keyways and splines. Parts and support from "
-              "Mississauga, ON, Canada.",
+              "mill-drill and a radial drill-mill, a keyseater and a slotting machine for keyways and splines, and the KSM-850 resurfacing "
+              "machine for cylinder heads and blocks. Parts and support from Mississauga, ON, Canada.",
         points=["Turret mills X6325W – X6336WA: vertical head to 7,200 rpm, horizontal spindle, power feed, tables to 64 × 14″",
                 "Universal mills XQ6226, X6436 and heavy ISO50 LM-1450 / X5750 with tables to 79″ and servo feeds",
-                "ZX drilling-milling machines for 2″ drilling; TX-20 and DM-20; B5012 keyseater and B5013 slotter"],
+                "ZX drilling-milling machines for 2″ drilling; TX-20 and DM-20; B5012 keyseater and B5013 slotter; KSM-850 head resurfacer"],
         hero="tm-x6332", minis=["tm-lm1450", "tm-zx5325"],
         groups=[("turret", "Turret milling machines", "Knee-type mills with a turret head — the tool-room machine — and on the W models a horizontal spindle too.", False),
                 ("univ", "Universal milling machines", "Horizontal and vertical milling on one machine, with a head that swivels through 360°.", False),
                 ("drill", "Drilling-milling machines and mini mills", "Mill-drills for the job shop and the repair shop: 2″ drilling and face milling on one column.", False),
-                ("slot", "Keyseaters and slotting machines", "Keyways and splines in hubs, gears and pulleys.", False)],
+                ("slot", "Keyseaters and slotting machines", "Keyways and splines in hubs, gears and pulleys.", False),
+                ("resurf", "Cylinder head resurfacing machine", "Flat, smooth gasket faces on cylinder heads and engine blocks for the engine rebuilder.", False)],
         faq=[{"q": "Turret mill, universal mill or drill-mill?",
               "a": "A turret (Bridgeport-type) mill has a vertical head that tilts and a knee that moves the table up and down — the most flexible machine for one-off parts, slots and pockets. A universal mill adds a horizontal spindle and arbor for side and slab milling and gang cutters, and swivels its head through 360°. A drill-mill drills and mills on one column without a knee: the lower-cost choice when most of the work is drilling with some face milling."},
              {"q": "What do ISO40 and ISO50 mean?",
               "a": "They are the sizes of the spindle taper that holds the tool holder: ISO40 (NT40, the same size as CAT40 and BT40) for general milling, ISO50 for heavier cuts and larger face mills. R8 and MT tapers are found on small mills. Tell us what tooling you already have — adapters are available."},
              {"q": "Power feed and DRO?",
-              "a": "Power feed moves the table at a steady rate for a better finish and less operator fatigue; a digital readout (DRO) shows the table position to 0.0002″ and replaces the dials for most work. The X6336 and LM-1450 have power feed on all three axes; DROs are available on most models — ask us when you quote."},
+              "a": "Power feed moves the table at a steady rate for a better finish and less operator fatigue; a digital readout (DRO) shows the table position to 0.0002″ and replaces the dials for most work. The X6336 and LM-1450 have power feed on all three axes, the X6336 with rapid traverse and a three-axis DRO; DROs are available on most models — ask us when you quote."},
+             {"q": "What does a cylinder head resurfacing machine do?",
+              "a": "It mills the gasket face of a cylinder head or an engine block flat and smooth again after warping or corrosion, so the new head gasket seals. The KSM-850 feeds the part under a Ø13″ cutter head with CBN inserts for cast iron and PCD for aluminum, with variable head speed and table feed for the finish the gasket needs, on heads and blocks up to 33.5″ long."},
              VOLT],
         related=[{"href": "drill-press.html", "label": "Drill presses"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes, machining centres and grinders"},
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}, {"href": "band-saw.html", "label": "Band saws"}],
@@ -313,6 +324,40 @@ PAGES = {
         related=[{"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "angle-rolls.html", "label": "Angle rolls, tube rollers and ring rollers"},
                  {"href": "tube-end-forming-machines.html", "label": "Tube end forming machines"}, {"href": "horizontal-press-brake.html", "label": "Horizontal benders"}],
     ),
+    D.P_WOOD: dict(
+        # keyword research (Ubersuggest, Canada, Oct 2026): "woodworking machinery" 320/mo, CPC $1.47; "woodworking machines" 320/mo, CPC $1.08
+        title="Woodworking Machinery — Planers, Jointers & Saws | NovoTech",
+        meta="Woodworking machines in Canada: jointers, thickness planers, jointer-planers, 10″ table saws, band saws, multifunction machines, mortisers and a lathe.",
+        h1="Woodworking machinery — jointers, planers, table saws, band saws and multifunction machines",
+        nav="Woodworking machinery",
+        intro="Woodworking machines for the cabinet shop, the joinery, the school shop and the serious home workshop. NovoTech's value-line "
+              "woodworking machinery is built in China to our specification: multifunction machines that plane, saw, mortise and drill on "
+              "one motor; 6″ and 8″ jointers and 15″ and 20″ thickness planers with spiral carbide cutterheads, and jointer-planers to 16″; "
+              "10″ cabinet table saws with 30″ and 52″ of rip, with touch-screen blade height and angle on the S models; 14″ and 18″ band "
+              "saws for resawing; hollow-chisel mortisers, slot boring and horizontal boring machines; a 12 × 16″ wood lathe; a belt and "
+              "disc sander and a dust collector — {n} models, with parts and support from Mississauga, ON, Canada.",
+        points=["Jointers 6 – 8″ and thickness planers 15 – 20″ with spiral carbide cutterheads; jointer-planers 10 – 16″",
+                "WTS10 10″ cabinet table saws, 30″ and 52″ rip, touch-screen S models; TBS 14″ and 18″ band saws",
+                "WM multifunction machines, MS mortisers, MGX slot boring machines, TL-406 lathe, DC900 dust collector"],
+        hero="tm-tdm320", minis=["tm-wts1050", "tm-tbs457"],
+        groups=[("planing", "Jointers, thickness planers and jointer-planers", "Flat, square and to thickness: the machines that turn rough lumber into stock.", False),
+                ("sawing", "Table saws and band saws", "Rip and crosscut on the table saw, resaw and cut curves on the band saw.", False),
+                ("combo", "Multifunction woodworking machines", "Planer, table saw, mortiser and drill on one motor — for the shop with room for one machine.", False),
+                ("boring", "Mortisers and boring machines", "Mortises, slots and dowel holes for joinery, doors and furniture.", False),
+                ("turning", "Wood lathe", "Bowls, spindles, pens and furniture parts.", False),
+                ("finish", "Sander and dust collector", "Sand small parts and edges, and keep the chips and dust off the floor and out of the air.", False)],
+        faq=[{"q": "Jointer, thickness planer or jointer-planer — what do I need?",
+              "a": "A jointer flattens one face of a rough board and squares an edge to it; a thickness planer then makes the other face parallel and brings the board to thickness. You need both to mill rough lumber. A jointer-planer (TDM) does both jobs with one cutterblock in the space of one machine — the tables lift for thicknessing — at the cost of a changeover between the two; separate machines are faster when both run all day."},
+             {"q": "Spiral carbide cutterhead or straight knives?",
+              "a": "A spiral (helical) cutterhead has many small carbide inserts set in a spiral: it cuts with a shearing action, so it is quieter, leaves a cleaner surface on figured and interlocked grain and tears out less, and a chipped insert is turned to a fresh edge in a minute instead of a set of knives reground and reset. Straight knives cost less to buy and are fine for softwood and general work. The WJ jointers and WJP planers have spiral carbide heads; the WJ10X40 and the multifunction machines have straight knives."},
+             {"q": "Which table saw — 30″ or 52″ rip, hand wheels or touch screen?",
+              "a": "The rip capacity is the widest cut to the right of the blade: 30″ is enough for solid wood and for cutting a sheet of plywood to 30″ parts; 52″ cuts a 4 × 8 sheet to any width, which a cabinet shop needs. All WTS10 saws take a 10″ blade with 3-3/8″ of cut at 90°; on the S models the blade height and angle are typed on a touch screen and shown digitally — faster and repeatable set-ups for production."},
+             {"q": "Do I need a dust collector?",
+              "a": "Yes for every planer, jointer and table saw: they make chips faster than a shop vacuum can take them, and fine dust is a health risk. A single-stage collector like the DC900 — 940 CFM, two 4″ inlets — serves one or two machines at a time; keep the hose runs short and connect the machine that is running."},
+             VOLT],
+        related=[{"href": "drill-press.html", "label": "Drill presses"}, {"href": "belt-grinder.html", "label": "Belt grinders and sanders"},
+                 {"href": "vertical-band-saws.html", "label": "Vertical band saws"}, {"href": "aluminum-and-pvc-upcut-saws.html", "label": "Aluminum & PVC saws"}],
+    ),
 }
 
 # ---------------------------------------------------------------------------------------------------------------- groups on existing pages
@@ -322,9 +367,10 @@ EXTRA = {
     D2.P_COLD: dict(
         groups=[("tt-cold", "Cold saws · value line", "NovoTech's value-line cold saws, built in China: manual gear-driven cold saws with 9 – 14″ blades, a semi-automatic hydraulic saw and a 16″ heavy-duty saw.", False, None),
                 ("tt-abrasive", "Abrasive cut-off saws · value line", "Fast square and miter cuts in steel tube, pipe and profiles with 12 – 16″ abrasive wheels.", False, None),
-                ("tt-stands", "Roller stands and roller tables", "Material support for every saw, shear and brake.", True, None)],
+                ("tt-stands", "Roller stands, roller conveyors and roller tables", "Material support for every saw, shear and brake — stands with side rollers, a conveyor with a digital length stop and a measuring roller table.", True, None)],
         intro_add="NovoTech's value-line cold saws, built in China, add gear-driven manual saws with 9 – 14″ blades, a semi-automatic hydraulic "
-                  "saw, a 16″ heavy-duty saw and abrasive cut-off saws, plus roller stands and a measuring roller table.",
+                  "saw, a 16″ heavy-duty saw and abrasive cut-off saws, plus roller stands, a roller conveyor with a digital length stop and a "
+                  "measuring roller table.",
         points_add=["NovoTech value line: CS cold saws 9 – 14″, PDS-315H semi-automatic hydraulic, PDS-400 heavy-duty 16″, TV abrasive saws 12 – 16″"],
         faq_add=[{"q": "Cold saw or abrasive cut-off saw?",
                   "a": "A cold saw cuts with a toothed HSS or carbide blade at low speed: a square, burr-free cut that is ready to weld, no sparks and no heat in the part, but the blade must suit the material. An abrasive saw grinds through with a 12 – 16″ wheel at high speed: a lower price, any steel including hardened, but a hot part, sparks, a burr and wheels that wear quickly. For production cutting of tube and profiles choose a cold saw; for occasional cutting of mixed steel the abrasive saw."}],
@@ -332,8 +378,9 @@ EXTRA = {
         set={"hero_brand_line": "ISITAN circular cold saws are made in Turkey by ISITAN Makine, the CT325 in Taiwan by CSM and the automatic BMDO saws by Bekamak Makina, Turkey; NovoTech's value-line cold saws are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_ALU: dict(
-        groups=[("tt-alu", "Aluminum cut-off saw · value line", "A 16″ pneumatic-clamping saw for aluminum profiles — NovoTech value line, built in China.", False, None)],
-        intro_add="For the shop that cuts aluminum profiles now and then, the NovoTech value-line QCS-400 is a 16″ saw with pneumatic clamping and feed.",
+        groups=[("tt-alu", "Aluminum cut-off saws · value line", "16″ and 20″ pneumatic-clamping saws for aluminum profiles — NovoTech value line, built in China.", False, None)],
+        intro_add="For the shop that cuts aluminum profiles now and then, the NovoTech value-line QCS-400 is a 16″ saw with pneumatic clamping "
+                  "and feed, and the QCS-500A a 20″ saw whose head swivels from 0 to 180° for profiles up to 10-1/4 × 5-1/8″.",
         related_add=[{"href": "circular-cold-saws.html", "label": "Cold saws"}],
     ),
     D2.P_CORNER: dict(
@@ -386,7 +433,7 @@ EXTRA = {
                 ("tt-rivet", "Orbital riveting machines · value line", "Hydraulic orbital riveters that roll solid rivets from 3/16 to 1-3/16″ — NovoTech value line, built in China.", False, None)],
         intro_add="NovoTech's value-line presses, built in China, add motorized workshop presses from 28 to 176 US tons, the EBP-10T hydraulic "
                   "bench press, motorized H-frame presses to 551 US tons, presses with a brake function, sliding-table, C-frame and four-column "
-                  "presses, and XM orbital riveting machines.",
+                  "presses — the HP-F1/PLC with a PLC touch screen — and XM orbital riveting machines.",
         points_add=["NovoTech value line: workshop presses 28 – 176 US tons, H-frame presses 33 – 551 US tons, brake, sliding-table, C-frame and four-column presses, orbital riveters"],
         faq_add=[{"q": "Premium-line or value-line press?",
                   "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with built-on or separate power units."}],
@@ -400,8 +447,9 @@ EXTRA = {
         points_add=["NovoTech value line: MCS-1250E motorized circle shear Ø8 – 49″, ECS10/10 circle shear with flanging"],
     ),
     D2.P_COMPACT: dict(
-        groups=[("tt-hbv", "Hydraulic bending brakes · value line", "Small hydraulic brakes with a four-way V-block for 5/32″ plate — NovoTech value line, built in China.", False, None)],
-        intro_add="For short parts in plate, the NovoTech value-line HBV24 and HBV48 hydraulic bending brakes bend 5/32″ over 24″ and 48″ with a four-way V-block.",
+        groups=[("tt-hbv", "Hydraulic bending brakes · value line", "Small hydraulic brakes for plate to 3/16″, with a four-way V-block or two cylinders — NovoTech value line, built in China.", False, None)],
+        intro_add="For short parts in plate, the NovoTech value-line HBV24 and HBV48 hydraulic bending brakes bend 5/32″ over 24″ and 48″ with a "
+                  "four-way V-block, and the two-cylinder HBV-1250 and HBV-2540 take 3/16″ over 49″ and 1/8″ over 100″.",
     ),
     D2.P_HORIZ: dict(
         groups=[("tt-horiz", "Hydraulic horizontal benders · value line", "Horizontal benders for flat bar from 11 to 44 US tons — NovoTech value line, built in China.", False, None)],
@@ -420,9 +468,34 @@ EXTRA = {
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line slip rolls are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_DEBURR: dict(
-        groups=[("tt-bfm", "Wide-belt deburring machine · value line", "An entry-level wide-belt deburring and finishing machine — NovoTech value line, built in China.", False, None)],
-        intro_add="For the shop that starts deburring by machine, the NovoTech value-line BFM-2560 is a 24″ wide-belt machine with a wet dust collector.",
+        groups=[("tt-bfm", "Wide-belt deburring machines · value line", "Entry-level wide-belt deburring and finishing machines, 12″ and 24″ — NovoTech value line, built in China.", False, None)],
+        intro_add="For the shop that starts deburring by machine, the NovoTech value-line MGM-300 (12″) and BFM-2560 (24″, with a wet dust "
+                  "collector) are wide-belt machines for laser-cut and punched parts.",
         related_add=[{"href": "belt-grinder.html", "label": "Belt grinders and sanders"}],
+    ),
+    D2.P_WELD: dict(
+        groups=[("tt-wp-small", "Benchtop and chuck positioners · value line", "Positioners for tube, pipe and small parts from 33 to 247 lb, with chucks, hollow bores and foot pedals — NovoTech value line, built in China.", False, None),
+                ("tt-wp-big", "Tilting and heavy welding positioners · value line", "Turntable positioners from 485 to 8,818 lb with tilt by hand or motor, and the chucks and torch holders that go on them — NovoTech value line, built in China.", False, None),
+                ("tt-rolls", "Welding turning rolls · value line", "Turning rolls that turn pipe, tanks and vessels from Ø1-1/2 to 96″ under the torch — NovoTech value line, built in China.", False, None),
+                ("tt-supports", "Pipe stands and supports", "Outboard supports, pipe stands, pipe jacks and roller stands for fit-up and welding.", True, None),
+                ("tt-weld-tables", "Welding table and downdraft tables", "A fixture table with a 2″ hole grid, and downdraft tables that take grinding dust and welding fumes away from the operator.", True, None)],
+        intro_add="NovoTech's value-line welding equipment, built in China, adds benchtop and chuck positioners from 33 lb, tilting positioners "
+                  "to 1,102 lb and heavy positioners with motorized tilt to 8,818 lb, welding chucks and torch holders, TRS turning rolls for "
+                  "pipe and vessels to 11,023 lb per set, pipe stands, supports and pipe jacks, a fixture welding table and downdraft tables.",
+        points_add=["NovoTech value line: positioners 33 – 8,818 lb with chucks, hollow bores and motorized tilt; TRS turning rolls 2,205 – 11,023 lb",
+                    "Pipe stands and supports to 19,800 lb, the WT-36X24 fixture table and MDT downdraft tables 1,350 – 3,700 CFM"],
+        faq_add=[{"q": "Positioner or turning rolls?",
+                  "a": "A positioner holds the part on a turntable or in a chuck and turns it about its own axis, tilted to bring the joint to the flat position: the machine for flanges, short pipe spools, hubs and parts up to about the size of the table. Turning rolls carry a long round part — pipe, a tank shell, a pressure vessel — on wheels and turn it under the torch: the machine for long and heavy work. Long pipe in a positioner chuck needs an outboard support stand at the far end."},
+                 {"q": "How do I size a positioner for my part?",
+                  "a": "By the weight and where its centre of gravity sits. The rating is for the centre of gravity close to the table centre and face: the further it is from the axis (an off-centre bracket) or from the table (a tall part), the more torque the drive and the tilt need. The heavy WP positioners are rated with the centre of gravity up to 12″ from the table centre and 12″ above it. For off-centre or tall parts choose the next size up, and send us a sketch with the weight."}],
+        related_add=[{"href": "pipe-sanding-polishing-machines.html", "label": "Pipe sanding & polishing"}],
+        set={"title": "Welding Positioners, Turning Rolls & Pipe Stands | NovoTech",
+             "meta_description": "Welding positioners 33 – 8,818 lb, turning rolls to 11,023 lb, pipe stands and supports, a welding table and downdraft tables — Tubend and NovoTech.",
+             "h1": "Welding positioners, turning rolls, pipe stands and welding tables",
+             "artifact_title": "Welding positioners, turning rolls, pipe stands and welding tables",
+             "faq_title": "Questions we get asked about welding positioners and turning rolls",
+             "breadcrumb": CRUMBS + [{"label": "Welding positioners & turning rolls"}],
+             "hero_brand_line": "Tubend machines are made in Bursa, Turkey, by Tubend Machine, with European components; NovoTech's value-line positioners, turning rolls, stands and tables are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
 }
 
@@ -454,9 +527,10 @@ def write_page(slug, p, fams):
                    "pages": [{"href": f"{s}.html", "label": nav, "current": s == slug} for s, nav, _ in MTN.siblings()]}
         p = dict(p, related=[{"href": f"{s}.html", "label": lab} for s, _, lab in MTN.siblings() if s != slug]
                  + [{"href": f"{h['slug']}.html", "label": h["label"]}] + [r for r in p["related"] if r["href"] != f"{h['slug']}.html"])
+    n_models = sum(len(f["specs"]["models"]) for f in fams)
     page = {
         "slug": slug, "template": "category.html", "family_set": SET,
-        "title": p["title"], "artifact_title": p["h1"], "meta_description": p["meta"], "h1": p["h1"], "intro": p["intro"],
+        "title": p["title"], "artifact_title": p["h1"], "meta_description": p["meta"], "h1": p["h1"], "intro": p["intro"].replace("{n}", f"{n_models:,}"),
         "hero_points": p["points"], "hero_image": p["hero"], "hero_image_secondary": p["minis"],
         "breadcrumb": crumbs, "hero_brand_line": BRAND_LINE, "nav_label": p["nav"],
         "groups": groups, "faq": p["faq"], "faq_title": p.get("faq_title") or f"Questions we get asked about {lower_keep_acronyms(p['h1'].split(' — ')[0])}",
@@ -491,12 +565,18 @@ def register_images(used):
     imap = json.load(open(imap_path, encoding="utf-8"))
     keys = []
     for key in sorted(used):
-        page, blob, fills, alt = PH.PLAN[key]
+        if key in PH.PLAN:                       # Vol. 23 catalogue crops, under 1,000 px: the 768 px matte is as sharp and twice as fast
+            alt, detail, size, tool = PH.PLAN[key][3], key in PH.DETAIL, 768, "ttmc_more_photos.py"
+        elif key in NP.PHOTOS:                   # 2026 sheets (up to 2,300 px): 1024 px matte; catalogue photos under 1,300 px: 768
+            alt, detail, tool = NP.PHOTOS[key]["alt"], key in NP.DETAIL, "ttmc_new_photos.py"
+            with Image.open(os.path.join(ROOT, "tools", "src-images", "ttmc-more", f"{key}.jpg")) as im:
+                size = 1024 if max(im.size) >= 1300 else 768
+        else:
+            raise SystemExit(f"no photo for {key} in ttmc_more_photos.PLAN or ttmc_new_photos.PHOTOS")
         src = f"tools/src-images/ttmc-more/{key}.jpg"
         if not os.path.exists(os.path.join(ROOT, src)):
-            raise SystemExit(f"missing crop for {key} — run tools/ttmc_more_photos.py")
-        imap[key] = {"src": src, "alt": alt, "section": "ttmc-more", "trim": True, "quality": 82, "cutout": key not in PH.DETAIL,
-                     "cut_size": 768}   # catalogue photos are under 1,000 px: the 768 px matte is as sharp and twice as fast
+            raise SystemExit(f"missing crop for {key} — run tools/{tool}")
+        imap[key] = {"src": src, "alt": alt, "section": "ttmc-more", "trim": True, "quality": 82, "cutout": not detail, "cut_size": size}
         keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "ttmc_more_keys.txt"), "w").write(",".join(keys))

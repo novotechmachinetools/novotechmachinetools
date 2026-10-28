@@ -26,6 +26,7 @@ TOPICS = [
     ("machining", "Drilling, milling and CNC machining"),
     ("rebar", "Rebar"),
     ("windows", "Window and door machinery"),
+    ("wood", "Woodworking machinery"),
 ]
 
 BY = "Written by NovoTech's sales engineers and technicians from years of installing machines in Canada."
@@ -182,11 +183,11 @@ GUIDES = [
       "portable or production welders, laser safety in the shop, and robots and cladding. " + BY,
       "When a laser welder beats TIG and MIG, the power for your thickness, air-cooled or water-cooled welders, laser safety and "
       "robotic cells."),
-    G("welding-positioners", "welding-positioner-guide.html", "Welding positioner buying guide", "welding",
-      "What we explain to customers before they buy a welding positioner: what it does, the weight and off-centre load it takes, "
-      "the table speed formula, fixtures, chucks and grounding. " + BY,
-      "What a positioner does for round welds, rating for weight and off-centre loads, the table speed formula, and fixtures and "
-      "grounding."),
+    G("welding-positioners", "welding-positioner-guide.html", "Welding positioner and turning roll buying guide", "welding",
+      "What we explain to customers before they buy a welding positioner or turning rolls: what each does, the weight and "
+      "off-centre load it takes, the table speed formula, chucks, torch holders and grounding, and supports for long work. " + BY,
+      "Positioner or turning rolls, rating for weight and off-centre loads, the table speed formula, chucks and torch holders, and "
+      "pipe stands and supports."),
     G("corner-welding-machines", "corner-welding-guide.html", "Corner welding machine buying guide", "welding",
       "What we explain to customers before they buy a corner welding machine: what it does, why the copper blocks matter, which "
       "parts fit, and TIG or plasma. " + BY,
@@ -225,6 +226,12 @@ GUIDES = [
       "output, PVC or aluminum, profile systems and tooling, and air, power and layout. " + BY,
       "The steps of a window shop and the machine for each, sizing the line by windows a shift, PVC or aluminum, and air, power and "
       "layout."),
+    # ------------------------------------------------------------------------------------------- woodworking
+    G("woodworking-machinery", "woodworking-machinery-guide.html", "Woodworking machinery buying guide", "wood",
+      "What we explain to customers before they equip a woodworking shop: which machines and in what order, choosing the jointer "
+      "and the planer, spiral carbide cutterheads, table saw or band saw, joinery machines and dust collection. " + BY,
+      "The machines a woodworking shop needs and in what order, jointer and planer widths, spiral carbide heads, table saw or band "
+      "saw, mortisers and dust collection."),
     G("corner-notcher", "corner-notcher-guide.html", "Corner notcher buying guide", "punching",
       "What we explain to customers before they buy a corner notcher: what it does, fixed or variable angle, thickness, notch "
       "size and material, hydraulic, pneumatic or manual drive, and how to size the notch. " + BY,

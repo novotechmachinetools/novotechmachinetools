@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """NovoTech value-line machines built by TTMC (sold under NovoTech's name, TTMC model codes) — families of the NEW pages:
 sheet metal brakes, lock formers, belt grinders, drill presses, milling machines, CNC machine tools, CNC plasma tables, power and
-planishing hammers and tube benders.  Spec tables in tools/ttmc_more_tables.py, photos in tools/ttmc_more_photos.py, pages in
-tools/ttmc_more_pages.py; families of the existing pages in tools/ttmc_more_data2.py.
+planishing hammers, tube benders and woodworking machinery.  Spec tables in tools/ttmc_more_tables.py (Vol. 23 catalogue) and
+tools/ttmc_new_tables.py (2026 new-item sheets, welding and woodworking catalogues), photos in tools/ttmc_more_photos.py and
+tools/ttmc_new_photos.py, pages in tools/ttmc_more_pages.py; families of the existing pages in tools/ttmc_more_data2.py.
 
 Scope (Oct 2026, the owner's decision): no fully manual machines except the manual sheet metal brakes — no foot or hand shears,
 manual rolls and ring rollers, manual pipe and tube benders, manual shaping machines (English wheels, shrinker-stretchers, hand
@@ -11,8 +12,10 @@ the dropped models stay in ttmc_more_tables.py; the families pick only the power
 """
 from ttmc_conv import auto_spec, pick
 import ttmc_more_tables as TT
+import ttmc_new_tables as TN
 
 T = TT.TAB
+NT = TN.TAB          # 2026 new items, welding positioners and supports, woodworking
 BRAND = "novotech"
 NOTE = ("Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate "
         "L × W × H and weight is the net weight of the machine.")
@@ -56,16 +59,39 @@ BRAKES = [
        "Bending angle setting 0 – 135°; hand wheels set the upper beam and the tool gap",
        "Foot pedal control; full protective covers; light curtain at the front on the E models"],
       ["tm-hwe", "tm-hw", "tm-hw2440", "tm-hw-box", "tm-hw-angle"], headline="10 ga × 4 – 10 ft, 3/16″ × 80 – 100″", cap="[Bending length] × [Capacity]"),
-    F("tt-efm", P_BRAKE, "hyd", "EFM / EFMS electric folding machines, 16 – 20 ga × 80 – 120″", "EFM electric folders", [T["tt-pbb"][2]],
+    F("tt-hw-h", P_BRAKE, "hyd", "HW2.0×1320H · HW2.0×2540H hydraulic box and pan brakes, 14 ga × 52″ and 100″", "Hydraulic box and pan brakes",
+      NT["tt-hw-h"],
+      "The box and pan brake with hydraulic power: the bending leaf is swung by hydraulics while the operator holds the sheet, and a "
+      "single-program NC sets the bending angle, the opening height and the dwell time, so every box in a batch comes out the same. "
+      "Removable fingers from 3 to 12″ fold boxes and pans up to 9″ deep in 14 ga mild steel over 52″ or 100″, with a 44″ back gauge "
+      "and a foot pedal — for the shop that folds boxes, trays and enclosures all day.",
+      ["14 ga (2 mm) mild steel × 52″ (HW2.0×1320H) and 100″ (HW2.0×2540H)", "Boxes and pans to 9″ (230 mm) deep; removable fingers 3 – 12″",
+       "NC control panel: bending angle, opening height and dwell time; foot pedal",
+       "Bending angle 0 – 120°; back gauge 44″ (1,125 mm)", "3 – 4 HP (2.2 – 3 kW) hydraulic unit"],
+      ["tm-hw2540h", "tm-hw2540h-panel"], headline="14 ga × 52 – 100″", cap="[Bending length] × [Capacity]"),
+    F("tt-tfm", P_BRAKE, "hyd", "TFM / TFMS CNC electric folding machines, 14 ga × 122″ and 145″", "TFM / TFMS CNC folders", NT["tt-tfm"],
+      "CNC folding machines for production panels: electric drives clamp and fold 14 ga mild steel or 18 ga stainless over 122″ or "
+      "145″ to a programmed angle from 0 to 135°, and a CNC back gauge positions every flange from 1/2 to 48-3/8″ with ±0.004″ "
+      "repeatability. The touch screen stores 2,000 programs of up to 99 bends, draws the profile from a graphic library and handles "
+      "radius bending and angle correction. The TFMS models have a segmented upper beam — segments from 2 to 6″ — for boxes 4″ deep.",
+      ["14 ga (2 mm) mild steel, 18 ga (1.2 mm) stainless × 122″ (3,100 mm) or 144-7/8″ (3,680 mm)",
+       "CNC back gauge 1/2 – 48-3/8″ (12.7 – 1,228 mm), repeatability ±0.004″ (0.1 mm)",
+       "Touch screen: 2,000 programs of 99 bends, graphic profile library, radius bending, angle correction",
+       "Bending angle 0 – 135°; clamping opening 4-7/8″ (125 mm); reverse bends from 1/2″",
+       "TFMS: segmented upper beam for boxes 4″ (100 mm) deep"],
+      ["tm-tfm3100", "tm-tfms3100", "tm-tfm-screen", "tm-tfm-table", "tm-tfms-segments", "tm-tfms-box"], headline="14 ga × 122 – 145″",
+      cap="[Bending length]"),
+    F("tt-efm", P_BRAKE, "hyd", "EFM / EFMS electric folding machines, 16 – 20 ga × 80 – 120″", "EFM electric folders", [T["tt-pbb"][2]] + NT["tt-efms-l"],
       "Motorized folding with the operator's hands free: one motor closes the clamping beam, a second swings the folding beam, both run "
       "from a foot pedal while the operator holds and positions the sheet. 16 ga (1.5 mm) mild steel over 80″, 20 ga (1 mm) over 100″ "
       "and 120″. The EFMS models have a segmented blade (25 to 400 mm segments) for boxes and pans, the EFM models a one-piece blade for "
-      "long straight bends.",
-      ["16 ga (1.5 mm) × 80″; 20 ga (1 mm) × 100″ and 120″; bending angle 0 – 135°",
-       "Clamping motor 1/2 HP (0.37 kW) and folding motor 1 HP (0.75 kW); foot pedal control",
+      "long straight bends. The EFMS-2540×1.5L takes 16 ga over the full 100″, with 2 HP and 3 HP motors, a ten-segment blade and the "
+      "bending angle set on a dial.",
+      ["16 ga (1.5 mm) × 80″ and 100″ (EFMS-2540×1.5L); 20 ga (1 mm) × 100″ and 120″; bending angle 0 – 135°",
+       "Clamping motor 1/2 HP (0.37 kW) and folding motor 1 HP (0.75 kW) — 2 HP and 3 HP on the EFMS-2540×1.5L; foot pedal control",
        "EFMS: segmented blade, segments 25 – 400 mm, for boxes and pans; EFM: one-piece blade",
        "4″ (100 mm) opening height"],
-      ["tm-efms", "tm-efm"], headline="16 ga × 80″, 20 ga × 100 – 120″", cap="[Bending length] × [Capacity, mild steel]"),
+      ["tm-efms2540l", "tm-efms", "tm-efm", "tm-efms2540l-angle"], headline="16 ga × 80 – 100″, 20 ga × 100 – 120″", cap="[Bending length] × [Capacity, mild steel]"),
     F("tt-pb", P_BRAKE, "panbox", "Box and pan brakes, 22 ga – 12 ga × 12 – 157″", "Box and pan brakes", T["tt-pb"],
       "Hand-operated box and pan brakes with removable fingers, from a 12″ bench brake to 13 ft floor brakes with counterweights. The "
       "bench and stand brakes take 20 to 16 ga over 12 to 50″; the BP-1650 and BP-1648H fold 16 ga over 48 – 50″ with 4″ deep boxes; "
@@ -78,17 +104,20 @@ BRAKES = [
        "BP-1648H: all-steel welded, adjustable truss bars, bronze bushings, removable nose bar and stop rod for repeat bends"],
       ["tm-bp1650", "tm-pb1220", "tm-w2540a", "tm-pb1220z", "tm-bp1648h", "tm-w1220pb"], headline="22 ga – 12 ga × 12 – 157″",
       cap="[Bending length] × [Capacity, mild steel]", manual=True),
-    F("tt-pb-heavy", P_BRAKE, "panbox", "Heavy box and pan brakes, 18 – 14 ga × 59 – 100″, pans to 5-1/8″ deep", "Heavy box and pan brakes",
-      [T["tt-pb-heavy"][0]],
-      "Heavy fabricated box and pan brakes for pans and boxes deeper than a standard brake allows. The W1.5×2540H folds 16 ga over 100″ "
-      "with fingers for pans up to 5-1/8″ deep and a 6-1/4″ clamping-beam lift; the WU2.0×2500 folds 14 ga over 100″ with two "
-      "counterweights; the W1830×1.5P folds 16 ga over 72″ with 2, 3 and 4″ fingers; the W1.2×1500H folds 18 ga over 59″ with 4-7/8″ "
-      "fingers and a precision angle stop. The counterweights hold the beam in any position.",
-      ["W1.5×2540H: 16 ga × 100″; pans to 5-1/8″ (130 mm) deep; fingers 60 – 305 mm; quick beam adjustment",
+    F("tt-pb-heavy", P_BRAKE, "panbox", "Heavy box and pan brakes, 18 – 14 ga × 52 – 100″, boxes to 9″ deep", "Heavy box and pan brakes",
+      [T["tt-pb-heavy"][0]] + NT["tt-pb-heavy2"],
+      "Heavy fabricated box and pan brakes for boxes and pans deeper than a standard brake allows. The W2.0×1320H and W2.0×2540H fold "
+      "14 ga over 52″ and 100″ and take boxes and pans up to 9″ deep, with extended fingers, a 44″ back gauge and a digital angle gauge "
+      "on the bending leaf; the W1.5×2540H folds 16 ga over 100″ with fingers for pans up to 5-1/8″ deep and a 6-1/4″ clamping-beam "
+      "lift; the WU2.0×2500 folds 14 ga over 100″ with two counterweights; the W1830×1.5P folds 16 ga over 72″ with 2, 3 and 4″ fingers; "
+      "the W1.2×1500H folds 18 ga over 59″ with 4-7/8″ fingers and a precision angle stop. The counterweights hold the beam in any position.",
+      ["W2.0×1320H / W2.0×2540H: 14 ga (2 mm) × 52″ and 100″; boxes and pans to 9″ (230 mm) deep; digital angle gauge; back gauge 44″",
+       "W1.5×2540H: 16 ga × 100″; pans to 5-1/8″ (130 mm) deep; fingers 60 – 305 mm; quick beam adjustment",
        "WU2.0×2500: 14 ga × 100″; fingers 75 mm (5) and 125 mm (17), easy to remove; two counterweights; stop rod",
        "W1830×1.5P: 16 ga × 72″; eight fingers each of 2, 3 and 4″",
        "W1.2×1500H: 18 ga × 59″; 4-7/8″ (125 mm) fingers; counterweight stops in any position; precision angle stop"],
-      ["tm-w2540h", "tm-wu", "tm-w1830p", "tm-w1500h"], headline="18 – 14 ga × 59 – 100″", cap="[Bending length] × [Capacity, mild steel]", manual=True),
+      ["tm-w2540h2", "tm-w2540h", "tm-w2540h2-fingers", "tm-w2540h2-gauge", "tm-wu", "tm-w1830p", "tm-w1500h"], headline="18 – 14 ga × 52 – 100″",
+      cap="[Bending length] × [Capacity, mild steel]", manual=True),
     F("tt-hb", P_BRAKE, "hand", "Hand brakes, 22 ga – 12 ga × 12″ – 13 ft", "Hand brakes", T["tt-hb"] + [T["tt-pb-heavy"][1]],
       "Straight brakes for HVAC, flashing and general sheet work: bench brakes from 12 to 48″, the HB brakes on stand for 22 ga and 16 ga "
       "over 48 – 50″, floor brakes for 18 – 16 ga over 40 – 51″ with a one-piece blade or sliding segments, and heavy floor brakes with "
@@ -123,15 +152,27 @@ BRAKES = [
        "Roller knife for slitting; infeed depth 19 – 23″ (485 – 580 mm)",
        "Anodized light-alloy frame, 132 – 234 lb; set up in 10 – 15 minutes"],
       ["tm-alb", "tm-alb-work"], headline="24 ga × 7 – 12.5 ft", cap="[Bending length]", manual=True),
-    F("tt-bench-brake", P_BRAKE, "roof", "Bench, slitting and offset brakes, 22 – 18 ga × 14 – 100″", "Bench and slitting brakes", T["tt-bsm"] + T["tt-wb"],
+    F("tt-cd24", P_BRAKE, "roof", "CD-24 coil dispenser for trim coil, 24″", "CD-24 coil dispenser", NT["tt-cd24"],
+      "A coil dispenser for the job site: trim coil up to 24″ wide sits on two non-marring bottom rollers under a quick-release tension "
+      "roller, so the sheet pulls off flat into the portable brake and is cut to length with the brake's own cutter. The stand folds flat "
+      "for the van; 35 lb.",
+      ["Trim coil to 24″ (610 mm) wide", "Two non-marring bottom rollers and a quick-release tension roller",
+       "Folding support stand; 35 lb (16 kg)", "Works with the cutter of the portable brake; roller cutter optional"],
+      ["tm-cd24", "tm-cd24-coil"], headline="Coil to 24″", cap="[Coil width]", manual=True, optional=["Roller cutter"]),
+    F("tt-bench-brake", P_BRAKE, "roof", "Bench, slitting and offset brakes, 22 – 18 ga × 14 – 124″", "Bench and slitting brakes",
+      T["tt-bsm"] + NT["tt-bsm-sb"] + T["tt-wb"],
       "Small brakes for the bench and the van: the BSM folding brakes on a fold-away steel stand bend and slit 20 – 22 ga over 40, 48 and "
-      "100″, with a slitting device that comes off; the WB-14 and W1.2 bench brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the "
-      "ZWJ offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga steel and 18 ga aluminum.",
+      "100″, with a slitting device that comes off; the BSM1550 and BSM3150 shear and brake machines bend 22 ga over 61″ and 124″ on a "
+      "mobile stand, with gas springs that lift the bending beam and carry the slitter head along the sheet; the WB-14 and W1.2 bench "
+      "brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the ZWJ offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga "
+      "steel and 18 ga aluminum.",
       ["BSM1016 / BSM1220 / BSM2540: bend and slit 20 – 22 ga over 40 – 100″, foldable steel stand",
+       "BSM1550 / BSM3150: bend 22 ga over 61″ and 124″, slit over 59″ and 122″; mobile stand with gas springs",
        "W1.2 bench brakes 18 – 39″ in 18 ga; WB-14 14″ in 20 ga",
        "ZWJ-20 / ZWJ-36 offset brakes: 1/2″ jogs to 90° in 20 ga steel and 18 ga aluminum",
        "Aluminum, copper and steel"],
-      ["tm-bsm1016", "tm-bsm2540", "tm-w1000", "tm-wb14", "tm-zwj"], headline="22 – 18 ga × 14 – 100″", cap="[Working length]", manual=True),
+      ["tm-bsm3150", "tm-bsm1016", "tm-bsm2540", "tm-bsm3150-head", "tm-w1000", "tm-wb14", "tm-zwj"], headline="22 – 18 ga × 14 – 124″",
+      cap="[Working length]", manual=True),
     F("tt-3in1", P_BRAKE, "combo", "3-in-1 shear, brake and roll machines, 20 – 16 ga × 8 – 52″", "3-in-1 machines", T["tt-3in1"] + T["tt-3in1a"],
       "Hand-operated combination machines that shear, bend and roll sheet on one frame: 20 ga (1 mm) mild steel over 8 to 52″ and 16 ga "
       "(1.5 mm) over 42 and 52″, folding to 90° and rolling down to 1-1/8″ diameter on the small models. The floor models have removable "
@@ -359,13 +400,14 @@ MILL = [
     F("tt-mill-turret", P_MILL, "turret", "Turret milling machines, ISO40, with horizontal spindle on the W models", "Turret mills",
       [T["tt-mill"][0]],
       "Knee-type turret mills for the tool room and the maintenance shop: the 4H with a 50 × 10″ table, shown with power feed and a digital readout; the X6325W "
-      "and X6332WA with a horizontal spindle as well as the vertical head, power feed on X and Y and a motorized knee; the X6336 and "
-      "X6336WA with a high-speed head (70 – 7,200 rpm), power feed on all three axes and hardened square ways. The head swivels ±45° "
-      "front to back and ±90° left to right; on the WA models the table swivels ±45° too.",
-      ["Tables 50 × 10″ to 64.2 × 14.2″; X travel 23.6 – 39.4″", "Vertical head 80 – 5,440 or 70 – 7,200 rpm; horizontal spindle 40 – 1,800 rpm (W models)",
-       "Power feed X, Y; motorized Z — or power feed on all three axes (X6336)", "3 – 5.5 HP; quill travel 5″ (127 mm)",
-       "Table swivel ±45° (X6332WA, X6336WA)"],
-      ["tm-x6332", "tm-4h", "tm-x6325", "tm-x6336"], headline="Tables to 64 × 14″", cap="[Table]"),
+      "and X6332WA with a horizontal spindle as well as the vertical head, power feed on X and Y and a motorized knee; the X6336 with an "
+      "NT40 head, a 63 × 14.2″ table, 51.2″ of X travel and power feed and rapid traverse on all three axes; and the X6336WA with a "
+      "high-speed head (70 – 7,200 rpm), a horizontal spindle and power feed on all three axes. The head swivels ±45° front to back and "
+      "±90° left to right; on the WA models the table swivels ±45° too.",
+      ["Tables 50 × 10″ to 64.2 × 14.2″; X travel 23.6 – 51.2″", "Vertical head 60 – 3,600, 80 – 5,440 or 70 – 7,200 rpm; horizontal spindle 40 – 1,800 rpm (W models)",
+       "Power feed X, Y; motorized Z — or power feed on all three axes (X6336, X6336WA), with rapid traverse on the X6336",
+       "3 – 5.5 HP; quill travel 5″ (127 mm)", "Table swivel ±45° (X6332WA, X6336WA)"],
+      ["tm-x6332", "tm-4h", "tm-x6325", "tm-x6336b", "tm-x6336-dro", "tm-x6336"], headline="Tables to 64 × 14″", cap="[Table]"),
     F("tt-mill-univ", P_MILL, "univ", "XQ6226 · X6436 universal milling machines, ISO40 / ISO50", "XQ6226 / X6436 universal", [T["tt-mill"][1]],
       "Universal milling machines with a horizontal spindle and a vertical head that swivels through 360°: the XQ6226 range with a "
       "44 – 50″ table, hardened ways, an ISO40 spindle and power feed on X and Y (motorized knee on the B), and the X6436 with ISO40 "
@@ -396,6 +438,16 @@ MILL = [
       ["3/4″ (20 mm) drilling", "TX-20: variable 50 – 2,250 rpm, MT2, cabinet stand", "DM-20: 5 speeds 210 – 2,000 rpm, MT3 / R8, arm reach 19.7″",
        "DM-20 options: vise, coolant pump, milling chuck set, lamp"],
       ["tm-tx20", "tm-dm20"], headline="3/4″ drilling", cap="[Drilling capacity] drilling"),
+    F("tt-ksm850", P_MILL, "resurf", "KSM-850 cylinder head and block resurfacing machine", "KSM-850 resurfacer", NT["tt-ksm850"],
+      "A surface milling machine for the engine rebuilder: a ball-screw table feeds the cylinder head or block under a Ø13″ cutter head "
+      "with CBN and PCD inserts and leaves the gasket face flat and smooth, on heads and blocks up to 33.5″ long, 13″ wide and 17.3″ "
+      "high. Head speed from 300 to 1,200 rpm and table feed up to 23.6 in/min are both variable, and the machine runs single passes or "
+      "continuous working cycles.",
+      ["Heads and blocks to 33.5 × 13″ (850 × 330 mm), 6.3 – 17.3″ (160 – 440 mm) high",
+       "Ø13″ (330 mm) cutter head; 1/2″ CBN / PCD insert and holder standard",
+       "Head 300 – 1,200 rpm and table feed 0 – 23.6 in/min, both variable; ball-screw table, 43.9″ (1,115 mm) travel",
+       "Manual or continuous working cycles", "2 HP head motor, 1 HP table motor; 1,874 lb (850 kg)"],
+      ["tm-ksm850", "tm-ksm850-panel"], headline="Heads to 33.5 × 13″", cap="[Table travel] table travel"),
     F("tt-slot", P_MILL, "slot", "B5012 keyseater and B5013 slotting machine", "Keyseater and slotter", T["tt-slot"],
       "Machines for keyways and splines: the B5012 keyseater cuts keyways in single and small-batch work, especially in blind holes, "
       "and its column does not limit the size of the part; the B5013 slotting machine has a head that swivels 90° left and right, a "
@@ -540,4 +592,94 @@ TUBE = [
       ["tm-ehb10"], headline="1/2 – 2″ pipe", cap="[Force]"),
 ]
 
-NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + PLASMA + SHAPE + TUBE
+# =============================================================================================== woodworking machinery (2026 catalogue)
+P_WOOD = "woodworking-machinery"
+WD = NT["tt-wood-dust"]
+WOOD = [
+    F("tt-wm", P_WOOD, "combo", "WM2000 · WM2200 · WM2200R · WM2500E multifunction woodworking machines, 8 – 10″ planing", "WM multifunction machines",
+      NT["tt-wm"],
+      "Four machines on one motor for the bench: a surface planer 7.9 or 9.8″ wide, a table saw with an 8-1/4 to 11″ blade, and on the "
+      "WM2200 models a milling and drilling table on the side for mortises and dowel holes — for the home shop, the small joinery and "
+      "the site where there is room for one machine. The WM2200R adds a 9.8 × 6.3″ thicknesser on its own legs; the WM2500E has a 3.4 HP "
+      "motor that starts at 160 V on a weak site supply. Planing and cutting angles from 0 to 45° with the fences and devices supplied.",
+      ["Surface planing 7.9″ (WM2000) or 9.8″ wide, up to 9/64″ (3.5 mm) per pass",
+       "Table saw: Ø8-1/4″ blade and 2-3/4″ cut (WM2000) to Ø11″ blade and 4″ cut (WM2500E)",
+       "Milling and drilling table 14.6 × 7.9″ on the WM2200, WM2200R and WM2500E",
+       "WM2200R: thicknesser 9.8 × 6.3″ (250 × 160 mm), on legs", "2.7 – 3.4 HP, 5,500 rpm; 95 – 172 lb"],
+      ["tm-wm2200", "tm-wm2000", "tm-wm2500e", "tm-wm2200r", "tm-wm-planing", "tm-wm-drilling"], headline="8 – 10″ planing", cap="[Planing width] planing"),
+    F("tt-wj", P_WOOD, "planing", "WJ jointers with spiral cutterhead, 6″ and 8″, and WJ10X40 10″ surface planer", "WJ jointers", NT["tt-wj"],
+      "Jointers flatten one face of a rough board and square an edge to it before the board goes through the thickness planer. The "
+      "WJ-6x55 and WJ-8x76 have spiral cutterheads with indexable carbide inserts — quieter, a cleaner surface on figured wood, and an "
+      "insert turned to a fresh edge instead of a set of knives to regrind — long tables of 55-1/2″ and 76″ and a 36″ fence that tilts "
+      "45 – 135°. The WJ10X40 is a 10″ surface planer with a straight three-knife cutterhead at 6,500 rpm.",
+      ["WJ-6x55: 6″ cut, 55-1/2″ tables; WJ-8x76: 8″ cut, 76″ tables", "Spiral cutterhead with indexable carbide inserts, 4,800 rpm",
+       "Fence 36 × 5″, tilts 45 – 135° with stops at 45°, 90° and 135°", "Cutting depth to 1/8″ (3 mm)",
+       "WJ10X40: 10″ (260 mm) surface planer, three knives, 6,500 rpm, 3 HP"],
+      ["tm-wj876", "tm-wj-cutterhead", "tm-wj1040"], headline="6 – 10″", cap="[Cutting width] cut"),
+    F("tt-tdm", P_WOOD, "planing", "TDM jointer-planer combinations, 10 – 16″ planing, thicknessing to 9″", "TDM jointer-planers", NT["tt-tdm"],
+      "Two machines on one cutterblock: lift the infeed and outfeed tables and the jointer becomes a thickness planer, with a "
+      "spiral-toothed infeed roller that feeds the board at 20 ft/min under the same cutterblock. Planing widths of 10.2″, 12.6″ and "
+      "16.1″ and thicknessing from 1/8″ up to 6.3 – 9.1″, on a closed steel stand with a fence that tilts 90 – 45° — the space-saving "
+      "choice for the small shop.",
+      ["Planing width 10.2″ (TDM-260), 12.6″ (TDM-320), 16.1″ (TDM-410)", "Thicknessing 0.12 – 6.3″ to 0.12 – 9.1″ (3 – 230 mm)",
+       "Tables 41.3 – 70.9″ long; fence tilts 90 – 45°", "Feed 20 ft/min (6 m/min); spiral-toothed infeed roller", "3 – 4 HP (2.2 – 3 kW)"],
+      ["tm-tdm320", "tm-tdm260", "tm-tdm-thick", "tm-tdm-roller"], headline="10 – 16″ planing", cap="[Planing width] planing"),
+    F("tt-wjp", P_WOOD, "planing", "WJP thickness planers with spiral cutterhead, 15″ and 20″", "WJP thickness planers", NT["tt-wjp"],
+      "Thickness planers bring boards to an even thickness with both faces parallel. All three have spiral cutterheads with carbide "
+      "inserts and two feed speeds: the WJP-15B is a 15″ benchtop planer with a 3 HP motor; the WJP-15 and WJP-20 are floor planers on a "
+      "mobile base with table extensions, for stock up to 8″ thick and 15″ or 20″ wide.",
+      ["Cutting width 15″ (WJP-15B, WJP-15) or 20″ (WJP-20)", "Stock 3/16 – 8″ thick (1/4 – 8-1/4″ on the WJP-15B); up to 1/8″ per pass",
+       "Spiral cutterhead with carbide inserts; two feed speeds", "WJP-15 / WJP-20: floor models with mobile base and table extensions",
+       "320 – 838 lb (145 – 380 kg)"],
+      ["tm-wjp20", "tm-wjp15", "tm-wjp15b", "tm-wjp-cutterhead"], headline="15 – 20″", cap="[Cutting width] cut"),
+    F("tt-wts", P_WOOD, "sawing", "WTS10 10″ cabinet table saws, 30″ and 52″ rip — touch-screen S models", "WTS10 table saws", NT["tt-wts"],
+      "10″ cabinet table saws with a cast-iron table, a 3 HP motor and 3-3/8″ of cut at 90°: the WTS10-30 rips 30″ to the right of the "
+      "blade, the WTS10-50 52″ on a long fence rail with a table extension and legs. On the S models the blade height and tilt are set on "
+      "a touch screen with a digital display instead of hand wheels. An 8″ dado stack up to 13/16″ wide fits, and a 4″ port connects the "
+      "dust collector.",
+      ["10″ blade, 3,550 rpm; cut 3-3/8″ at 90°, 2-1/4″ at 45°", "Rip 30″ (WTS10-30) or 52″ (WTS10-50) right of the blade, 20″ left",
+       "Cast-iron table 40 × 27″; blade tilts 45° left", "S models: touch screen sets the blade height and angle",
+       "8″ dado stack to 13/16″; 4″ dust port; 3 HP"],
+      ["tm-wts1050", "tm-wts1050s", "tm-wts-screen", "tm-wts-mortise"], headline="10″ blade, 30 – 52″ rip", cap="[Rip capacity, right / left of blade] rip",
+      optional=["Mortising attachment"]),
+    F("tt-tbs", P_WOOD, "sawing", "TBS-356 · TBS-457 band saws for wood, 14″ and 18″", "TBS band saws", NT["tt-tbs"],
+      "Deluxe band saws for resawing and curve cutting: the TBS-356 is a 14″ saw with 13″ of resaw height and a 1.5 HP motor on "
+      "115 / 230 V; the TBS-457 an 18″ saw with an 18.4″ throat, 12″ of resaw height and a 3 HP motor. Both have two blade speeds, a "
+      "table that tilts 10° left and 45° right and a closed cabinet stand.",
+      ["TBS-356: 14″, 13.6″ throat, 13″ resaw, 1.5 HP, 115 / 230 V", "TBS-457: 18″, 18.4″ throat, 12″ resaw, 3 HP",
+       "Blades 1/8 – 3/4″ (TBS-356) and 1/4 – 1-1/4″ (TBS-457) wide", "Two blade speeds; table tilts 10° left and 45° right"],
+      ["tm-tbs457", "tm-tbs356"], headline="14 – 18″", cap="[Resaw height] resaw"),
+    F("tt-mortise", P_WOOD, "boring", "MS 3-8 · MS 4-8 benchtop hollow-chisel mortisers", "MS mortisers", NT["tt-mortise"],
+      "Hollow-chisel mortisers cut the square mortise of a mortise-and-tenon joint: a bit turns inside a square hollow chisel that the "
+      "lever drives into the wood. The MS 3-8 comes with 1/4, 5/16, 3/8 and 1/2″ chisels and cuts mortises 3″ deep; the MS 4-8 has a "
+      "1/2″ chuck, a 3/4 HP motor and 4-1/2″ of depth.",
+      ["MS 3-8: 1/2 HP; chisels 1/4 – 1/2″ included; mortises 3″ deep", "MS 4-8: 3/4 HP; 1/2″ chuck; mortises 4-1/2″ deep",
+       "Stock 8 – 8-1/2″ wide and 6 – 7-3/8″ thick", "JT #2 spindle; 1,725 or 3,450 rpm at 60 Hz"],
+      ["tm-ms38", "tm-ms48"], headline="3 – 4-1/2″ deep", cap="[Mortise depth, max] deep"),
+    F("tt-slotbore", P_WOOD, "boring", "MGX slot boring machines and WM-01 horizontal boring machine", "Slot and horizontal boring", NT["tt-slotbore"],
+      "Slot mortisers and boring machines for joinery and furniture: the MGX16 and MGX20R bore slot mortises and dowel holes with the "
+      "work clamped on the table while the motor table moves across, along and up — the MGX20R with two speeds and a head that swivels "
+      "±60° for angled slots; the WM-01 is a compact horizontal boring machine on a stand for dowel holes in panels and frames.",
+      ["MGX16: 5/8″ chuck, 3 HP, travel 6.7 × 8.7 × 5.9″", "MGX20R: 3/4″ chuck, two speeds, head swivels ±60°, travel 8.5 × 10.2 × 5.7″",
+       "WM-01: 1/2″ chuck, 1 HP, 3,450 rpm, on stand"],
+      ["tm-mgx20r", "tm-mgx16", "tm-wm01"], headline="Slots and dowel holes", cap="[Drill chuck] chuck"),
+    F("tt-tl406", P_WOOD, "turning", "TL-406 12 × 16″ wood lathe", "TL-406 wood lathe", NT["tt-tl406"],
+      "A benchtop wood lathe for bowls, spindles, pens and furniture parts: 12″ of swing over the bed and 16″ between centres, six "
+      "speeds, a 1″ × 8 TPI spindle nose with MT-2 tapers in the headstock and the self-ejecting tailstock, a 12-position index head and "
+      "a spindle lock. An extension bed lengthens it for longer spindles.",
+      ["12″ (305 mm) swing; 16″ (406 mm) between centres", "6 speeds; 1/2 HP motor",
+       "Spindle nose 1″ × 8 TPI; MT-2 headstock and tailstock; 2-1/2″ ram travel", "12-position index head; spindle lock; self-ejecting tailstock"],
+      ["tm-tl406", "tm-tl406-bed"], headline="12 × 16″", cap="[Swing over bed] swing", optional=["Bed extension"]),
+    F("tt-ws25", P_WOOD, "finish", "WS25-200 belt and disc combination sander, 1 × 42″ belt and 8″ disc", "WS25-200 sander", [WD[0]],
+      "A bench sander for small parts and edges: a 1 × 42″ belt at 3,000 ft/min and an 8″ disc on one 1/3 HP motor, both with "
+      "cast-iron tables that tilt 0 – 45° and have miter slots, and 1-1/2″ dust ports for a shop vacuum.",
+      ["1 × 42″ belt at 3,000 ft/min; 8″ disc at 1,725 rpm", "Cast-iron tables with miter slots, both tilt 0 – 45°", "1-1/2″ dust ports; 1/3 HP; 57 lb"],
+      ["tm-ws25"], headline="1 × 42″ belt, 8″ disc"),
+    F("tt-dc900", P_WOOD, "finish", "DC900 dust collector, 940 CFM", "DC900 dust collector", [WD[1]],
+      "A single-stage dust collector for one or two machines: 940 CFM from a 1.8 HP motor, two 4″ inlets, an 8.5 ft hose, an 11.7 cu ft "
+      "collection bag and a 30-micron filter bag, on casters so it goes to the machine that is running.",
+      ["940 CFM (1,600 m³/h); 4.8″ water (1,200 Pa)", "Two Ø4″ inlets; 4″ hose, 8.5 ft", "11.7 cu ft bag; 30-micron filter", "1.8 HP; 108 lb on casters"],
+      ["tm-dc900"], headline="940 CFM"),
+]
+
+NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + PLASMA + SHAPE + TUBE + WOOD

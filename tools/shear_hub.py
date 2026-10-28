@@ -22,7 +22,7 @@ SET = "all-shears"
 SOURCES = [("shears", "dener-shears", ["dn-bs", "dn-das"]),
            ("shears", "novotech-mechanical-shears", ["nt-shear-srgm-h", "nt-shear-srgm", "nt-shear-srgm-hfr", "nt-shear-srgm-fr", "nt-shear-srgm-hcl", "nt-shear-srgm-cl"]),
            ("value-sheet", "hydraulic-shearing-machine", ["vl-qc12k", "vl-q11k"]),
-           ("ttmc", "sheet-metal-shears", ["tt-ps", "tt-hq01", "tt-ths", "tt-hq11", "tt-q11", "tt-q11nc", "tt-q11-mech"])]
+           ("ttmc", "sheet-metal-shears", ["tt-ps", "tt-hq01", "tt-bq01", "tt-ths", "tt-hq11", "tt-q11", "tt-q11nc", "tt-q11-mech", "tt-ps1220"])]
 
 HUB_PAGE = dict(
     title="Metal Shear Machines, 16 ga to 1-9/16″ Plate | NovoTech",
@@ -35,11 +35,11 @@ HUB_PAGE = dict(
           "mechanical shears — direct-gear SRGM guillotines, 1/8″ and 1/4″ to 13.8 ft, built in Turkey; NovoTech's value-line hydraulic shears "
           "— QC12K swing beam and Q11K guillotine from 5/32″ to 1-9/16″ and 26 ft, built in China with Estun controls; and NovoTech's value-line "
           "sheet metal shears — pneumatic, light hydraulic, electric and flywheel mechanical shears from 16 ga to 3/8″ for the sheet-metal "
-          "shop. Below, each line in brief and every model in one table of capacity, length, strokes, motor and weight; every machine comes "
+          "shop, with motorized bench shears and a coil slitting and cut-to-length machine. Below, each line in brief and every model in one table of capacity, length, strokes, motor and weight; every machine comes "
           "with a CSA-approved panel, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
     points=["Dener premium line: BS / BSY hydraulic swing beam 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotine with variable angle 1/4″ – 3/4″ × 10 – 20 ft",
             "NovoTech premium line: SRGM direct-gear mechanical shears 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min, return-to-sender versions",
-            "NovoTech value line: QC12K / Q11K hydraulic plate shears 5/32″ – 1-9/16″ × 8 – 26 ft; sheet metal shears 16 ga – 3/8″ × 39 – 120″"],
+            "NovoTech value line: QC12K / Q11K hydraulic plate shears 5/32″ – 1-9/16″ × 8 – 26 ft; sheet metal shears 20 ga – 3/8″ × 26 – 120″ and a 48″ coil slitter"],
     hero="sm-srgm", minis=["dn-das-1", "vl-qc12k-1"],
     range_cols=["Capacity (mild steel)", "Shearing length", "Strokes / min", "Motor", "Weight"],
     range_lead="Every shear model NovoTech sells, in one table: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification table on the line's page.",
@@ -87,7 +87,7 @@ def build():
             seen.add(p["file"]); pdfs.append(p)
     write_hub(SN.HUB, {**HUB_PAGE, "artifact_title": "Metal Shears", "nav_label": "All shears", "related_blurb": SN.hub()["blurb"]},
               fams, SET, SN.SECTION, SN.subpages(),
-              extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": ["capacity", "length", "strokes", "motor", "weight"],
+              extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": [["capacity", "capacity_mild_steel"], ["length", "working_width"], "strokes", ["motor", "operation"], "weight"],
                      "hero_brand_line": "Dener Makina builds the premium hydraulic shears in Kayseri, Turkey; the premium-line mechanical shears are built in Turkey and the value-line shears in China, all to NovoTech's specification. Every line sold, installed and supported in Canada by NovoTech.",
                      "origin_feature": {"title": "Four lines, one supplier", "text": "Premium Dener and NovoTech mechanical shears from Turkey, NovoTech value-line hydraulic and sheet metal shears from China — every one with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,

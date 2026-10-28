@@ -12,11 +12,13 @@
   "vl-q11k",
   "tt-ps",
   "tt-hq01",
+  "tt-bq01",
   "tt-ths",
   "tt-hq11",
   "tt-q11",
   "tt-q11nc",
-  "tt-q11-mech"
+  "tt-q11-mech",
+  "tt-ps1220"
  ],
  "families": {
   "dn-bs": {
@@ -4496,6 +4498,129 @@
    },
    "group": "sh-light"
   },
+  "tt-bq01": {
+   "id": "tt-bq01",
+   "brand": "novotech",
+   "name": "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″",
+   "short": "EBQ01 bench shears",
+   "models_label": "EBQ01-1.25x650 · EBQ01-1.0x1050 · 2 models",
+   "summary": "Compact motorized shears for the bench: a 1 HP motor drives the blade from a foot switch, so both hands hold the sheet — 18 ga over 26″ and 20 ga over 41″, with a 19.7″ back gauge, a front angle stop and a working light. For duct parts, flashing, signs and small panels where a floor shear is more machine than the work needs.",
+   "features": [
+    "18 ga (1.25 mm) × 26″ (650 mm); 20 ga (1 mm) × 41″ (1,050 mm)",
+    "1 HP (0.75 kW) motor; foot switch",
+    "Back gauge 0 – 19.7″ (0 – 500 mm); front angle stop",
+    "Working light"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ebq01"
+   ],
+   "videos": [],
+   "headline": "18 – 20 ga × 26 – 41″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "EBQ01-1.25x650 · EBQ01-1.0x1050",
+      "sub": "Motorized bench shears, 18 ga × 26″ and 20 ga × 41″",
+      "models": [
+       "EBQ01-1.25x650",
+       "EBQ01-1.0x1050"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "25.6″ (650 mm)",
+         "41.3″ (1,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "18 ga (1.25 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Operation",
+        "sub": "",
+        "cells": [
+         "Motor 1 HP (0.75 kW), foot switch",
+         "Motor 1 HP (0.75 kW), foot switch"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0 – 19.7″ (0 – 500 mm)",
+         "0 – 19.7″ (0 – 500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "41 × 26 × 25″ (105 × 65 × 63 cm)",
+         "55 × 26 × 26″ (140 × 65 × 65 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "408 lb (185 kg)",
+         "525 lb (238 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EBQ01-1.25x650",
+      "glance": [
+       "25.6″ (650 mm)",
+       "18 ga (1.25 mm)",
+       "Motor 1 HP (0.75 kW), foot switch",
+       "408 lb (185 kg)"
+      ]
+     },
+     {
+      "name": "EBQ01-1.0x1050",
+      "glance": [
+       "41.3″ (1,050 mm)",
+       "20 ga (1 mm)",
+       "Motor 1 HP (0.75 kW), foot switch",
+       "525 lb (238 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_width",
+     "capacity_mild_steel",
+     "operation",
+     "weight"
+    ],
+    "caps": {
+     "EBQ01-1.25x650": "25.6″ (650 mm) × 18 ga (1.25 mm)",
+     "EBQ01-1.0x1050": "41.3″ (1,050 mm) × 20 ga (1 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "sh-light"
+  },
   "tt-ths": {
    "id": "tt-ths",
    "brand": "novotech",
@@ -5602,6 +5727,149 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "sh-mechanical"
+  },
+  "tt-ps1220": {
+   "id": "tt-ps1220",
+   "brand": "novotech",
+   "name": "PS-1220×1.5GT coil slitting and cut-to-length machine, 16 ga × 48″",
+   "short": "PS-1220 coil slitter",
+   "models_label": "PS-1220×1.5GT · 1 model",
+   "summary": "A coil line in one machine: the decoiler pays off coil up to 48″ wide and 4,409 lb, the machine feeds it automatically at up to 56 ft/min, rotary knives slit it into strips — two strips in 16 ga, up to seven in thin sheet — and the shear cuts the strips to length at 35 strokes a minute onto the 120″ outfeed table. For roofing, siding and trim shops, HVAC and duct, and any shop that buys coil and cuts its own blanks.",
+   "features": [
+    "16 ga (1.5 mm) mild steel × 48″ (1,220 mm) wide",
+    "Slits 2 strips in 16 ga, 3 in 20 ga, 5 in 22 ga, up to 7 in 0.5 – 0.6 mm",
+    "Automatic feed 0 – 56 ft/min (0 – 17 m/min); shear 35 strokes/min",
+    "Decoiler for 20″ coil ID, 4,409 lb (2,000 kg); outfeed table 120 × 49″",
+    "3 HP slitter + 3 HP shear; 4,630 lb"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ps1220",
+    "tm-ps1220-line",
+    "tm-ps1220-slit"
+   ],
+   "videos": [],
+   "headline": "16 ga × 48″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PS-1220×1.5GT",
+      "sub": "Coil slitting and cut-to-length machine with decoiler and outfeed table, 16 ga × 48″",
+      "models": [
+       "PS-1220×1.5GT"
+      ],
+      "rows": [
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm) mild steel"
+        ],
+        "key": true
+       },
+       {
+        "label": "Length",
+        "sub": "",
+        "cells": [
+         "48″ (1,220 mm) slitting and shearing width"
+        ],
+        "key": true
+       },
+       {
+        "label": "Slitting",
+        "sub": "",
+        "cells": [
+         "Up to 2 strips in 16 ga (1.5 mm), 3 in 20 ga (1 mm), 4 in 0.9 mm, 5 in 22 ga (0.8 mm), 6 in 0.7 mm, 7 in 0.6 – 0.5 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes",
+        "sub": "",
+        "cells": [
+         "35 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "0 – 56 ft/min (0 – 17 m/min), automatic feed"
+        ],
+        "key": false
+       },
+       {
+        "label": "Decoiler",
+        "sub": "",
+        "cells": [
+         "For 20″ (480 – 510 mm) coil ID, 48.4″ (1,230 mm) wide, 4,409 lb (2,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outfeed table",
+        "sub": "",
+        "cells": [
+         "120 × 49 × 30″ (306 × 125 × 76 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW) slitter + 3 HP (2.2 kW) shear"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 67 × 57″ (172 × 170 × 145 cm) machine + 74 × 35 × 53″ (187 × 88 × 134 cm) decoiler + 122 × 12 × 10″ (310 × 30 × 25 cm) table"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,630 lb (2,100 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PS-1220×1.5GT",
+      "glance": [
+       "16 ga (1.5 mm) mild steel",
+       "48″ (1,220 mm) slitting and shearing width",
+       "35 strokes/min",
+       "3 HP (2.2 kW) slitter + 3 HP (2.2 kW) shear",
+       "4,630 lb (2,100 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "PS-1220×1.5GT": "48″ (1,220 mm) slitting and shearing width"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "sh-slit"
   }
  }
 }

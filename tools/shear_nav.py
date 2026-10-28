@@ -16,7 +16,7 @@ SUBPAGES = [
      "NovoTech's own value-line plate shears, built in China with Estun controls and Rexroth hydraulics: QC12K swing beam shears from 5/32″ to 3/4″ over 8 to 20 ft and Q11K variable-rake guillotines from 1/4″ to 1-9/16″ over 8 to 26 ft.",
      "NovoTech hydraulic shears", "value"),
     ("sheet-metal-shears", "NovoTech sheet metal shears — pneumatic, hydraulic, electric and mechanical, 16 ga to 3/8″ · value line", "tt-q11a",
-     "The value-line shears for the sheet-metal shop, built in China to NovoTech's specification: a pneumatic shear for 16 ga, light and production hydraulic shears to 1/4″, electric shears with manual or NC back gauge, and flywheel mechanical shears to 3/8″.",
+     "The value-line shears for the sheet-metal shop, built in China to NovoTech's specification: a pneumatic shear for 16 ga, light and production hydraulic shears to 1/4″, electric shears with manual or NC back gauge, flywheel mechanical shears to 3/8″, motorized bench shears and a 48″ coil slitting and cut-to-length machine.",
      "NovoTech sheet metal shears", "value"),
 ]
 

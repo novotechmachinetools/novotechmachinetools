@@ -26180,7 +26180,7 @@
  },
  "tm-x6336": {
   "src": "tools/src-images/ttmc-more/tm-x6336.jpg",
-  "alt": "X6336 turret milling machine with horizontal spindle",
+  "alt": "Turret milling machine with horizontal spindle, as the X6336WA",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
@@ -26595,5 +26595,968 @@
   "trim": false,
   "quality": 82,
   "cutout": "birefnet"
+ },
+ "tm-bsm3150": {
+  "src": "tools/src-images/ttmc-more/tm-bsm3150.jpg",
+  "alt": "BSM3150 shear and brake machine on its mobile stand",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-bsm3150-head": {
+  "src": "tools/src-images/ttmc-more/tm-bsm3150-head.jpg",
+  "alt": "Slitter head of the shear and brake machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-cd24": {
+  "src": "tools/src-images/ttmc-more/tm-cd24.jpg",
+  "alt": "CD-24 coil dispenser on its folding stand",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-cd24-coil": {
+  "src": "tools/src-images/ttmc-more/tm-cd24-coil.jpg",
+  "alt": "Trim coil on the CD-24 next to a portable brake",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-dc900": {
+  "src": "tools/src-images/ttmc-more/tm-dc900.jpg",
+  "alt": "DC900 dust collector",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-efms2540l": {
+  "src": "tools/src-images/ttmc-more/tm-efms2540l.jpg",
+  "alt": "EFMS-2540×1.5L electric folding machine with segmented beams and foot pedals",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-efms2540l-angle": {
+  "src": "tools/src-images/ttmc-more/tm-efms2540l-angle.jpg",
+  "alt": "Bending angle setting dial",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-hbv1250": {
+  "src": "tools/src-images/ttmc-more/tm-hbv1250.jpg",
+  "alt": "HBV-1250 hydraulic press brake with two cylinders and foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-hbv1250-gauge": {
+  "src": "tools/src-images/ttmc-more/tm-hbv1250-gauge.jpg",
+  "alt": "Back gauge hand wheel with counter",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-hp150f1plc": {
+  "src": "tools/src-images/ttmc-more/tm-hp150f1plc.jpg",
+  "alt": "HP-150F1/PLC four-column hydraulic press with PLC cabinet",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-hp30c2": {
+  "src": "tools/src-images/ttmc-more/tm-hp30c2.jpg",
+  "alt": "HP-30C C-frame hydraulic press with foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-hp63c2": {
+  "src": "tools/src-images/ttmc-more/tm-hp63c2.jpg",
+  "alt": "HP-63C C-frame hydraulic press with guard doors",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-hw2540h": {
+  "src": "tools/src-images/ttmc-more/tm-hw2540h.jpg",
+  "alt": "HW2.0×2540H hydraulic pan and box brake with NC control pedestal and foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-hw2540h-panel": {
+  "src": "tools/src-images/ttmc-more/tm-hw2540h-panel.jpg",
+  "alt": "NC control panel: open height, bending angle and dwell time",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-ksm850": {
+  "src": "tools/src-images/ttmc-more/tm-ksm850.jpg",
+  "alt": "KSM-850 cylinder head and block resurfacing machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-ksm850-panel": {
+  "src": "tools/src-images/ttmc-more/tm-ksm850-panel.jpg",
+  "alt": "Control panel with variable head and table speeds",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-mdt-filter": {
+  "src": "tools/src-images/ttmc-more/tm-mdt-filter.jpg",
+  "alt": "Cartridge filter of the downdraft table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-mdt4840": {
+  "src": "tools/src-images/ttmc-more/tm-mdt4840.jpg",
+  "alt": "MDT-4840 downdraft table with three-stage filtration",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mdt6022": {
+  "src": "tools/src-images/ttmc-more/tm-mdt6022.jpg",
+  "alt": "MDT-6022 downdraft grinding table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mdt6137": {
+  "src": "tools/src-images/ttmc-more/tm-mdt6137.jpg",
+  "alt": "MDT-6137 downdraft table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mgm300": {
+  "src": "tools/src-images/ttmc-more/tm-mgm300.jpg",
+  "alt": "MGM-300 finishing and deburring machine, 12″ working width",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-mgm300-conveyor": {
+  "src": "tools/src-images/ttmc-more/tm-mgm300-conveyor.jpg",
+  "alt": "Conveyor drive and abrasive belt of the MGM-300",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-mgx16": {
+  "src": "tools/src-images/ttmc-more/tm-mgx16.jpg",
+  "alt": "MGX16 slot boring machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mgx20r": {
+  "src": "tools/src-images/ttmc-more/tm-mgx20r.jpg",
+  "alt": "MGX20R slot boring machine with swivelling head",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mh5500": {
+  "src": "tools/src-images/ttmc-more/tm-mh5500.jpg",
+  "alt": "MH5500 pipe support",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mr3000a": {
+  "src": "tools/src-images/ttmc-more/tm-mr3000a.jpg",
+  "alt": "MR3000A pipe stand with double height adjustment",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mr7000d": {
+  "src": "tools/src-images/ttmc-more/tm-mr7000d.jpg",
+  "alt": "MR7000D pipe stand with three-point legs",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-mrt15": {
+  "src": "tools/src-images/ttmc-more/tm-mrt15.jpg",
+  "alt": "MRT-15 multi-function rotary table with control box and foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-mrt15-v": {
+  "src": "tools/src-images/ttmc-more/tm-mrt15-v.jpg",
+  "alt": "MRT-15 in the vertical position",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-ms38": {
+  "src": "tools/src-images/ttmc-more/tm-ms38.jpg",
+  "alt": "MS 3-8 benchtop mortiser",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-ms48": {
+  "src": "tools/src-images/ttmc-more/tm-ms48.jpg",
+  "alt": "MS 4-8 benchtop mortiser",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-pjv": {
+  "src": "tools/src-images/ttmc-more/tm-pjv.jpg",
+  "alt": "Folding pipe jack with V-head",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-ps1220": {
+  "src": "tools/src-images/ttmc-more/tm-ps1220.jpg",
+  "alt": "PS-1220×1.5GT coil slitting and cut-to-length machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-ps1220-line": {
+  "src": "tools/src-images/ttmc-more/tm-ps1220-line.jpg",
+  "alt": "Slitting machine with the decoiler and the outfeed table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-ps1220-slit": {
+  "src": "tools/src-images/ttmc-more/tm-ps1220-slit.jpg",
+  "alt": "Coil slit into strips",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-ptr185": {
+  "src": "tools/src-images/ttmc-more/tm-ptr185.jpg",
+  "alt": "PTR-185 low pipe roller stand",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-qcs500a": {
+  "src": "tools/src-images/ttmc-more/tm-qcs500a.jpg",
+  "alt": "QCS-500A aluminum cut-off saw with 20″ blade and pneumatic clamping",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-qcs500a-vise": {
+  "src": "tools/src-images/ttmc-more/tm-qcs500a-vise.jpg",
+  "alt": "Pneumatic vise, swivel scale and control panel of the QCS-500A",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-rb3653000d": {
+  "src": "tools/src-images/ttmc-more/tm-rb3653000d.jpg",
+  "alt": "RB365×3000D roller conveyor with digital length stop",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-rb3653000d-stop": {
+  "src": "tools/src-images/ttmc-more/tm-rb3653000d-stop.jpg",
+  "alt": "Length stop with digital display",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-srb3202000d": {
+  "src": "tools/src-images/ttmc-more/tm-srb3202000d.jpg",
+  "alt": "SRB-320×2000D roller stand with vertical side rollers",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tbs356": {
+  "src": "tools/src-images/ttmc-more/tm-tbs356.jpg",
+  "alt": "TBS-356 14″ band saw for wood",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-tbs457": {
+  "src": "tools/src-images/ttmc-more/tm-tbs457.jpg",
+  "alt": "TBS-457 18″ band saw for wood",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-tdm-roller": {
+  "src": "tools/src-images/ttmc-more/tm-tdm-roller.jpg",
+  "alt": "Spiral-toothed infeed roller and cutterblock",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-tdm-thick": {
+  "src": "tools/src-images/ttmc-more/tm-tdm-thick.jpg",
+  "alt": "Planer-thicknesser opened for thicknessing",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-tdm260": {
+  "src": "tools/src-images/ttmc-more/tm-tdm260.jpg",
+  "alt": "TDM-260 surface planer and thicknesser",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-tdm320": {
+  "src": "tools/src-images/ttmc-more/tm-tdm320.jpg",
+  "alt": "TDM-320 surface planer and thicknesser",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-tfm-screen": {
+  "src": "tools/src-images/ttmc-more/tm-tfm-screen.jpg",
+  "alt": "Touch-screen CNC of the folding machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-tfm-table": {
+  "src": "tools/src-images/ttmc-more/tm-tfm-table.jpg",
+  "alt": "CNC back gauge table with fingers",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-tfm3100": {
+  "src": "tools/src-images/ttmc-more/tm-tfm3100.jpg",
+  "alt": "TFM 3100×2E CNC electric folding machine with touch-screen control",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tfms-box": {
+  "src": "tools/src-images/ttmc-more/tm-tfms-box.jpg",
+  "alt": "Box folded on the segmented folding machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-tfms-segments": {
+  "src": "tools/src-images/ttmc-more/tm-tfms-segments.jpg",
+  "alt": "Segmented upper beam",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-tfms3100": {
+  "src": "tools/src-images/ttmc-more/tm-tfms3100.jpg",
+  "alt": "TFMS 3100×2E CNC electric folding machine with segmented upper beam",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tl406": {
+  "src": "tools/src-images/ttmc-more/tm-tl406.jpg",
+  "alt": "TL-406 12 × 16″ wood lathe",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-tl406-bed": {
+  "src": "tools/src-images/ttmc-more/tm-tl406-bed.jpg",
+  "alt": "TL-406 with the extension bed (optional)",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-trs-pipe": {
+  "src": "tools/src-images/ttmc-more/tm-trs-pipe.jpg",
+  "alt": "Pipe on welding turning rolls",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-trs1000": {
+  "src": "tools/src-images/ttmc-more/tm-trs1000.jpg",
+  "alt": "TRS1000 welding turning rolls — drive and idler with control box and foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-trs2200": {
+  "src": "tools/src-images/ttmc-more/tm-trs2200.jpg",
+  "alt": "TRS2200 welding turning rolls",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-trs5000": {
+  "src": "tools/src-images/ttmc-more/tm-trs5000.jpg",
+  "alt": "TRS5000 welding turning rolls with steel base",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-w2540h2": {
+  "src": "tools/src-images/ttmc-more/tm-w2540h2.jpg",
+  "alt": "W2.0×2540H heavy pan and box brake with extended fingers and counterweight",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-w2540h2-fingers": {
+  "src": "tools/src-images/ttmc-more/tm-w2540h2-fingers.jpg",
+  "alt": "Ground segmented fingers of the heavy pan and box brake",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-w2540h2-gauge": {
+  "src": "tools/src-images/ttmc-more/tm-w2540h2-gauge.jpg",
+  "alt": "Digital angle gauge on the bending leaf",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wgs": {
+  "src": "tools/src-images/ttmc-more/tm-wgs.jpg",
+  "alt": "Welding torch holder on a positioner",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wj-cutterhead": {
+  "src": "tools/src-images/ttmc-more/tm-wj-cutterhead.jpg",
+  "alt": "Spiral cutterhead with indexable carbide inserts",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wj1040": {
+  "src": "tools/src-images/ttmc-more/tm-wj1040.jpg",
+  "alt": "WJ10X40 10″ surface planer",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wj876": {
+  "src": "tools/src-images/ttmc-more/tm-wj876.jpg",
+  "alt": "WJ-8x76 8″ jointer with spiral cutterhead on cabinet stand",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wjp-cutterhead": {
+  "src": "tools/src-images/ttmc-more/tm-wjp-cutterhead.jpg",
+  "alt": "Spiral cutterhead of the thickness planer",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wjp15": {
+  "src": "tools/src-images/ttmc-more/tm-wjp15.jpg",
+  "alt": "WJP-15 15″ thickness planer with spiral cutterhead",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wjp15b": {
+  "src": "tools/src-images/ttmc-more/tm-wjp15b.jpg",
+  "alt": "WJP-15B benchtop thickness planer",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wjp20": {
+  "src": "tools/src-images/ttmc-more/tm-wjp20.jpg",
+  "alt": "WJP-20 20″ thickness planer with spiral cutterhead",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wm-drilling": {
+  "src": "tools/src-images/ttmc-more/tm-wm-drilling.jpg",
+  "alt": "Drilling on the milling and drilling table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wm-planing": {
+  "src": "tools/src-images/ttmc-more/tm-wm-planing.jpg",
+  "alt": "Edge planing with the clamping device",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wm01": {
+  "src": "tools/src-images/ttmc-more/tm-wm01.jpg",
+  "alt": "WM-01 horizontal boring machine on stand",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wm2000": {
+  "src": "tools/src-images/ttmc-more/tm-wm2000.jpg",
+  "alt": "WM2000 multifunction woodworking machine — planer and saw",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wm2200": {
+  "src": "tools/src-images/ttmc-more/tm-wm2200.jpg",
+  "alt": "WM2200 multifunction woodworking machine set up as a table saw",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wm2200r": {
+  "src": "tools/src-images/ttmc-more/tm-wm2200r.jpg",
+  "alt": "WM2200R multifunction machine with thicknesser on its legs",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wm2500e": {
+  "src": "tools/src-images/ttmc-more/tm-wm2500e.jpg",
+  "alt": "WM2500E multifunction woodworking machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp-heavy-box": {
+  "src": "tools/src-images/ttmc-more/tm-wp-heavy-box.jpg",
+  "alt": "Control box of the heavy positioners",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wp-sample": {
+  "src": "tools/src-images/ttmc-more/tm-wp-sample.jpg",
+  "alt": "Pipe welded on a positioner",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wp1000": {
+  "src": "tools/src-images/ttmc-more/tm-wp1000.jpg",
+  "alt": "WP-1000 welding positioner with power tilt",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp100t": {
+  "src": "tools/src-images/ttmc-more/tm-wp100t.jpg",
+  "alt": "WP-100T benchtop welding positioner with 8″ chuck",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-wp100t-h": {
+  "src": "tools/src-images/ttmc-more/tm-wp100t-h.jpg",
+  "alt": "WP-100T in the horizontal position",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp110": {
+  "src": "tools/src-images/ttmc-more/tm-wp110.jpg",
+  "alt": "WP-110 welding positioner with 8″ chuck and foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp110-panel": {
+  "src": "tools/src-images/ttmc-more/tm-wp110-panel.jpg",
+  "alt": "Control panel: speed, foot pedal and auto mode, forward and reverse",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wp110t": {
+  "src": "tools/src-images/ttmc-more/tm-wp110t.jpg",
+  "alt": "WP-110T welding positioner with hollow chuck",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp2000": {
+  "src": "tools/src-images/ttmc-more/tm-wp2000.jpg",
+  "alt": "WP-2000 welding positioner with power tilt",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp220": {
+  "src": "tools/src-images/ttmc-more/tm-wp220.jpg",
+  "alt": "WP-220 tilting welding positioner with foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp3000": {
+  "src": "tools/src-images/ttmc-more/tm-wp3000.jpg",
+  "alt": "WP-3000 welding positioner, 8,818 lb",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp30t": {
+  "src": "tools/src-images/ttmc-more/tm-wp30t.jpg",
+  "alt": "WP-30T benchtop welding positioner with foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp30t-chuck": {
+  "src": "tools/src-images/ttmc-more/tm-wp30t-chuck.jpg",
+  "alt": "Chuck on the WP-30T table (optional)",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wp350": {
+  "src": "tools/src-images/ttmc-more/tm-wp350.jpg",
+  "alt": "WP-350 tilting welding positioner",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp50": {
+  "src": "tools/src-images/ttmc-more/tm-wp50.jpg",
+  "alt": "WP-50 benchtop welding positioner with 3-jaw chuck and digital speed display",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp50-gas": {
+  "src": "tools/src-images/ttmc-more/tm-wp50-gas.jpg",
+  "alt": "Gas inlet port for purging through the centre",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wp500": {
+  "src": "tools/src-images/ttmc-more/tm-wp500.jpg",
+  "alt": "WP-500 welding positioner with motorized tilt",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wp500-panel": {
+  "src": "tools/src-images/ttmc-more/tm-wp500-panel.jpg",
+  "alt": "Control panel: table rotation, tilt and speed",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wp500t": {
+  "src": "tools/src-images/ttmc-more/tm-wp500t.jpg",
+  "alt": "WP-500T welding positioner with Ø6-11/16″ hollow chuck",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wpc": {
+  "src": "tools/src-images/ttmc-more/tm-wpc.jpg",
+  "alt": "WPC 3-jaw welding chuck",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-ws25": {
+  "src": "tools/src-images/ttmc-more/tm-ws25.jpg",
+  "alt": "WS25-200 belt and disc combination sander",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wt-notcher": {
+  "src": "tools/src-images/ttmc-more/tm-wt-notcher.jpg",
+  "alt": "Tube notcher and fixtures on the welding table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wt3624": {
+  "src": "tools/src-images/ttmc-more/tm-wt3624.jpg",
+  "alt": "WT-36X24 mobile welding table with CNC hole pattern and drop-down tray",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wtr": {
+  "src": "tools/src-images/ttmc-more/tm-wtr.jpg",
+  "alt": "Outboard support stand with screw height adjustment",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wts-mortise": {
+  "src": "tools/src-images/ttmc-more/tm-wts-mortise.jpg",
+  "alt": "Mortising attachment on the table saw (optional)",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wts-screen": {
+  "src": "tools/src-images/ttmc-more/tm-wts-screen.jpg",
+  "alt": "Touch screen for blade height and angle",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-wts1050": {
+  "src": "tools/src-images/ttmc-more/tm-wts1050.jpg",
+  "alt": "WTS10-50 10″ cabinet table saw with 52″ rip fence",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-wts1050s": {
+  "src": "tools/src-images/ttmc-more/tm-wts1050s.jpg",
+  "alt": "WTS10-50S table saw with touch-screen blade height and angle",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-x6336-dro": {
+  "src": "tools/src-images/ttmc-more/tm-x6336-dro.jpg",
+  "alt": "Three-axis digital readout and feed controls of the X6336",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-x6336b": {
+  "src": "tools/src-images/ttmc-more/tm-x6336b.jpg",
+  "alt": "X6336 turret milling machine with power feed and digital readout",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
  }
 }

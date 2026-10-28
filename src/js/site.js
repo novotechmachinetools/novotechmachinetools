@@ -63,6 +63,83 @@
     });
   }
 
+  /* ---------- Products menu: photos of the category under the pointer (desktop), a thumbnail beside each category (mobile) ---------- */
+  var mega = d.querySelector(".mega");
+  if (mega && window.fetch && window.matchMedia) {
+    var preview = mega.querySelector(".mega-preview"), topItem = mega.parentNode;
+    var wide = window.matchMedia("(min-width: 961px)");
+    var navData = null, navLoad = null, shownKey = null, hoverTimer = 0;
+    var loadNav = function () {
+      if (!navLoad) {
+        navLoad = fetch(mega.getAttribute("data-preview"), { credentials: "same-origin" })
+          .then(function (r) { return r.ok ? r.json() : {}; })
+          .catch(function () { return {}; })
+          .then(function (j) { navData = j || {}; return navData; });
+      }
+      return navLoad;
+    };
+    var esc = function (t) {
+      return String(t).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; });
+    };
+    var keyOf = function (el) {
+      var li = el && el.closest ? el.closest(".sub-menu > li") : null;
+      var a = li && li.querySelector("a");
+      return a ? a.getAttribute("href") : null;
+    };
+    var render = function (key) {
+      var p = navData && navData[key];
+      if (!p || !p.c || !p.c.length || shownKey === key) return;
+      shownKey = key;
+      var h = '<div class="mega-head"><p class="mega-title"><a href="' + esc(p.h) + '">' + esc(p.t) + '</a></p>' +
+        '<a class="mega-all" href="' + esc(p.h) + '">View all <span aria-hidden="true">→</span></a></div>' +
+        (p.b ? '<p class="mega-blurb">' + esc(p.b) + '</p>' : '') + '<div class="mega-cards">';
+      p.c.forEach(function (c) {
+        h += '<a class="mega-card" href="' + esc(c.h) + '"><span class="mega-img' + (c.a ? " is-cutout" : "") + '">' +
+          '<img src="' + esc(c.s) + '" srcset="' + esc(c.ss) + '" sizes="(min-width: 1100px) 190px, 236px" alt="" decoding="async"></span>' +
+          '<span class="mega-label">' + esc(c.l) + '</span>' + (c.n ? '<span class="mega-note">' + esc(c.n) + '</span>' : "") + "</a>";
+      });
+      preview.innerHTML = h + "</div>";
+    };
+    var show = function (key, now) {      // a short pause before switching, so a pointer crossing other categories on its way to the photos does not change them
+      clearTimeout(hoverTimer);
+      if (!key) return;
+      if (now || !shownKey) { loadNav().then(function () { render(key); }); return; }
+      hoverTimer = setTimeout(function () { loadNav().then(function () { render(key); }); }, 110);
+    };
+    var opened = function () {            // the menu opens on the current page's category, or the first one
+      if (!wide.matches) return;
+      loadNav().then(function () {
+        if (shownKey) return;
+        var cur = mega.querySelector(".sub-menu > li > a[aria-current]") || mega.querySelector(".sub-menu > li.open > a") ||
+          mega.querySelector(".sub-menu > li > a");
+        if (cur) render(cur.getAttribute("href"));
+      });
+    };
+    topItem.addEventListener("mouseenter", opened);
+    topItem.addEventListener("focusin", opened);
+    mega.addEventListener("mouseover", function (e) {
+      if (!wide.matches) return;
+      if (e.target.closest && e.target.closest(".mega-preview")) { clearTimeout(hoverTimer); return; }   // on the photos: keep them
+      show(keyOf(e.target));
+    });
+    mega.addEventListener("focusin", function (e) { if (wide.matches) show(keyOf(e.target), true); });
+    var addThumbs = function () {          // phones and tablets: no hover — one photo beside each category instead
+      if (mega.getAttribute("data-thumbs")) return;
+      mega.setAttribute("data-thumbs", "1");
+      loadNav().then(function () {
+        mega.querySelectorAll(".sub-menu > li > a").forEach(function (a) {
+          var p = navData[a.getAttribute("href")];
+          if (!p || !p.th) return;
+          var im = d.createElement("img");
+          im.className = "nav-thumb"; im.src = p.th; im.alt = ""; im.width = 46; im.height = 35; im.decoding = "async";
+          a.insertBefore(im, a.firstChild);
+        });
+      });
+    };
+    var subToggle = topItem.querySelector(".sub-toggle");
+    if (subToggle) subToggle.addEventListener("click", function () { if (!wide.matches) addThumbs(); });
+  }
+
   /* ---------- jump nav: highlight the section in view ---------- */
   var jumpLinks = Array.prototype.slice.call(d.querySelectorAll(".jump-list a[href^='#']"));
   if (jumpLinks.length && "IntersectionObserver" in window) {

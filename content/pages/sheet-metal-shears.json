@@ -4,14 +4,14 @@
  "family_set": "ttmc",
  "title": "NovoTech Sheet Metal Shears, 16 ga to 3/8″ · Value Line",
  "artifact_title": "NovoTech sheet metal shears — pneumatic, hydraulic, electric and mechanical, 16 ga to 3/8″, the value line",
- "meta_description": "Pneumatic shear for 16 ga, hydraulic shears to 1/4″, electric shears with manual or NC back gauge, flywheel mechanical shears to 3/8″ and motorized bench shears — 26 to 120″.",
+ "meta_description": "Pneumatic shear for 16 ga, hydraulic shears to 1/4″, electric shears with NC back gauge, mechanical shears to 3/8″, bench shears and a 48″ coil slitter.",
  "h1": "NovoTech sheet metal shears — pneumatic, hydraulic, electric and mechanical, 16 ga to 3/8″, the value line",
- "intro": "The shears for the sheet-metal shop — HVAC, ductwork, signage, enclosures, roofing and the general repair shop — where a 10 ft × 1/4″ plate shear is more machine than the work needs. NovoTech's value-line sheet metal shears are built in China to our specification and sold under our name: the PS pneumatic shear that cuts 16 ga over 52″ on shop air, the HQ01 light hydraulic shears for 14 ga over 52″ and 16 ga over 98″, the THS and HQ11 hydraulic shears from 12 ga to 1/4″ over 51″ to 120″, the Q11 electric shears with a manual back gauge and counter or a PLC with motorised back gauge, 14 ga to 5/32″ over 49″ to 100″, and the Q11 flywheel mechanical shears for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Every machine ships with front and back gauges, a foot pedal and two-edged blades, wired for Canadian voltage with a CSA-approved panel; installed, trained and supported from Mississauga, ON, Canada. For small parts on the bench, the EBQ01 motorized bench shears cut 18 ga over 26″ and 20 ga over 41″ from a foot switch. For plate shears from 5/32″ to 1-9/16″ see the NovoTech hydraulic shears, for the premium direct-gear mechanical shears the NovoTech mechanical shears, and for every line in one table the shears overview.",
+ "intro": "The shears for the sheet-metal shop — HVAC, ductwork, signage, enclosures, roofing and the general repair shop — where a 10 ft × 1/4″ plate shear is more machine than the work needs. NovoTech's value-line sheet metal shears are built in China to our specification and sold under our name: the PS pneumatic shear that cuts 16 ga over 52″ on shop air, the HQ01 light hydraulic shears for 14 ga over 52″ and 16 ga over 98″, the THS and HQ11 hydraulic shears from 12 ga to 1/4″ over 51″ to 120″, the Q11 electric shears with a manual back gauge and counter or a PLC with motorised back gauge, 14 ga to 5/32″ over 49″ to 100″, and the Q11 flywheel mechanical shears for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Every machine ships with front and back gauges, a foot pedal and two-edged blades, wired for Canadian voltage with a CSA-approved panel; installed, trained and supported from Mississauga, ON, Canada. For small parts on the bench, the EBQ01 motorized bench shears cut 18 ga over 26″ and 20 ga over 41″ from a foot switch; for coil, the PS-1220×1.5GT slits 48″ coil into strips and cuts them to length on one machine. For plate shears from 5/32″ to 1-9/16″ see the NovoTech hydraulic shears, for the premium direct-gear mechanical shears the NovoTech mechanical shears, and for every line in one table the shears overview.",
  "hero_points": [
   "PS pneumatic shear 16 ga × 52″ on 85 – 100 psi shop air · HQ01 light hydraulic shears 14 ga × 52″ and 16 ga × 98″, 3 HP",
   "THS and HQ11 hydraulic shears 12 ga – 1/4″ × 51 – 120″, 12 – 20 strokes/min, quick-set blade clearance, electric or NC back gauge",
   "Q11 electric shears 14 ga – 5/32″ × 49 – 100″ with manual or PLC / motorised back gauge · Q11 mechanical shears 1/8″ – 3/8″, 45 – 55 strokes/min",
-  "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″, 1 HP with foot switch"
+  "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″ · PS-1220×1.5GT coil slitting and cut-to-length machine, 16 ga × 48″"
  ],
  "hero_image": "tt-q11a",
  "hero_image_secondary": [
@@ -76,6 +76,15 @@
    "families": [
     "tt-q11-mech"
    ]
+  },
+  {
+   "id": "sh-slit-group",
+   "title": "Coil slitting and cut-to-length machine",
+   "lead": "Coil in, strips and blanks out: the decoiler, the slitter and the shear on one machine, 16 ga × 48″.",
+   "brand": "novotech",
+   "families": [
+    "tt-ps1220"
+   ]
   }
  ],
  "faq": [
@@ -102,6 +111,10 @@
   {
    "q": "Are the flywheel shears safe to run?",
    "a": "The Q11 mechanical shears make one stroke per pedal press — the clutch engages for one revolution and the beam stops at the top — and are supplied with mechanical hold-downs, a finger guard along the blade and the CSA-approved panel; a rear guard with photocell and front sheet supports are options we recommend for every machine. In Ontario a new shear needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."
+  },
+  {
+   "q": "When is a coil slitter worth it?",
+   "a": "When you buy sheet in coil, or cut the same strips and blanks every day — roofing and siding trim, flashing, duct, cable tray. The PS-1220×1.5GT pays off coil up to 48″ wide, slits it into up to seven strips in thin sheet (two in 16 ga) and cuts them to length at 35 strokes a minute, so blanks come off the outfeed table without a shear operator squaring each sheet. Coil costs less per pound than cut sheet and has no drop at the end of every sheet."
   },
   {
    "q": "How do these compare with the premium SRGM shears and the hydraulic value line?",

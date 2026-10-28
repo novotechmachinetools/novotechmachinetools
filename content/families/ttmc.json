@@ -7,7 +7,8 @@
   "tt-q11",
   "tt-q11nc",
   "tt-q11-mech",
-  "tt-bq01"
+  "tt-bq01",
+  "tt-ps1220"
  ],
  "families": {
   "tt-ps": {
@@ -1519,6 +1520,149 @@
    "manual": false,
    "no_pdf": true,
    "group": "sh-light"
+  },
+  "tt-ps1220": {
+   "id": "tt-ps1220",
+   "brand": "novotech",
+   "name": "PS-1220×1.5GT coil slitting and cut-to-length machine, 16 ga × 48″",
+   "short": "PS-1220 coil slitter",
+   "models_label": "PS-1220×1.5GT · 1 model",
+   "summary": "A coil line in one machine: the decoiler pays off coil up to 48″ wide and 4,409 lb, the machine feeds it automatically at up to 56 ft/min, rotary knives slit it into strips — two strips in 16 ga, up to seven in thin sheet — and the shear cuts the strips to length at 35 strokes a minute onto the 120″ outfeed table. For roofing, siding and trim shops, HVAC and duct, and any shop that buys coil and cuts its own blanks.",
+   "features": [
+    "16 ga (1.5 mm) mild steel × 48″ (1,220 mm) wide",
+    "Slits 2 strips in 16 ga, 3 in 20 ga, 5 in 22 ga, up to 7 in 0.5 – 0.6 mm",
+    "Automatic feed 0 – 56 ft/min (0 – 17 m/min); shear 35 strokes/min",
+    "Decoiler for 20″ coil ID, 4,409 lb (2,000 kg); outfeed table 120 × 49″",
+    "3 HP slitter + 3 HP shear; 4,630 lb"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ps1220",
+    "tm-ps1220-line",
+    "tm-ps1220-slit"
+   ],
+   "videos": [],
+   "headline": "16 ga × 48″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PS-1220×1.5GT",
+      "sub": "Coil slitting and cut-to-length machine with decoiler and outfeed table, 16 ga × 48″",
+      "models": [
+       "PS-1220×1.5GT"
+      ],
+      "rows": [
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "16 ga (1.5 mm) mild steel"
+        ],
+        "key": true
+       },
+       {
+        "label": "Length",
+        "sub": "",
+        "cells": [
+         "48″ (1,220 mm) slitting and shearing width"
+        ],
+        "key": true
+       },
+       {
+        "label": "Slitting",
+        "sub": "",
+        "cells": [
+         "Up to 2 strips in 16 ga (1.5 mm), 3 in 20 ga (1 mm), 4 in 0.9 mm, 5 in 22 ga (0.8 mm), 6 in 0.7 mm, 7 in 0.6 – 0.5 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Strokes",
+        "sub": "",
+        "cells": [
+         "35 strokes/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed speed",
+        "sub": "",
+        "cells": [
+         "0 – 56 ft/min (0 – 17 m/min), automatic feed"
+        ],
+        "key": false
+       },
+       {
+        "label": "Decoiler",
+        "sub": "",
+        "cells": [
+         "For 20″ (480 – 510 mm) coil ID, 48.4″ (1,230 mm) wide, 4,409 lb (2,000 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Outfeed table",
+        "sub": "",
+        "cells": [
+         "120 × 49 × 30″ (306 × 125 × 76 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW) slitter + 3 HP (2.2 kW) shear"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "68 × 67 × 57″ (172 × 170 × 145 cm) machine + 74 × 35 × 53″ (187 × 88 × 134 cm) decoiler + 122 × 12 × 10″ (310 × 30 × 25 cm) table"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,630 lb (2,100 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PS-1220×1.5GT",
+      "glance": [
+       "16 ga (1.5 mm) mild steel",
+       "48″ (1,220 mm) slitting and shearing width",
+       "35 strokes/min",
+       "3 HP (2.2 kW) slitter + 3 HP (2.2 kW) shear",
+       "4,630 lb (2,100 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "PS-1220×1.5GT": "48″ (1,220 mm) slitting and shearing width"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "sh-slit"
   }
  }
 }

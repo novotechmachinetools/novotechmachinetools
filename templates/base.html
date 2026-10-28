@@ -52,6 +52,7 @@
           <a href="{{ item.href }}">{{ item.label }}</a>
           {% if item.children %}
           <button type="button" class="sub-toggle" aria-expanded="false" aria-label="Show all products">▾</button>
+          <div class="mega" data-preview="nav-preview.json">
           <ul class="sub-menu">
             {% for c in item.children %}
             <li class="{{ 'has-tree' if c.children else '' }}{{ ' open' if c.children and nav_contains(c, page.slug) else '' }}">
@@ -73,6 +74,8 @@
             </li>
             {% endfor %}
           </ul>
+          <div class="mega-preview"></div>
+          </div>
           {% endif %}
         </li>
         {% endfor %}
@@ -104,13 +107,14 @@
     <div>
       <p class="footer-title">Products</p>
       <ul class="footer-links">
-        {% for c in site.nav[0].children[:12] %}<li><a href="{{ c.href }}">{{ c.label }}</a></li>{% endfor %}
+        {% set half = (site.nav[0].children|length + 1) // 2 %}
+        {% for c in site.nav[0].children[:half] %}<li><a href="{{ c.href }}">{{ c.label }}</a></li>{% endfor %}
       </ul>
     </div>
     <div>
       <p class="footer-title">&nbsp;</p>
       <ul class="footer-links">
-        {% for c in site.nav[0].children[12:] %}<li><a href="{{ c.href }}">{{ c.label }}</a></li>{% endfor %}
+        {% for c in site.nav[0].children[(site.nav[0].children|length + 1) // 2:] %}<li><a href="{{ c.href }}">{{ c.label }}</a></li>{% endfor %}
       </ul>
     </div>
     <div>

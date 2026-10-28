@@ -766,6 +766,73 @@ def build_catalog(loaded):
     return out
 
 
+def build_nav_preview(loaded):
+    """nav-preview.json — the photos of every category of the Products menu: the desktop menu shows those of the category under
+    the pointer (1 – 4 by screen width) and the mobile menu a thumbnail beside each category (src/js/site.js). Loaded on the first
+    open of the menu, so the pages carry none of it.  Per category: the pages and sections of its menu entries (their hero photo,
+    or for an anchor to a product group the photo of the group's first family), then the product families of its own page, then
+    the section pages of a hub."""
+    by_slug = {p["slug"]: p for p in loaded}
+
+    def page_of(href):
+        return by_slug.get(href.split("#")[0][:-5])
+
+    def clean(href):                       # the links as clean_urls() writes them into the pages: page, not page.html
+        return re.sub(r"^([a-z0-9-]+)\.html", lambda m: "./" if m.group(1) == "index" else m.group(1), href)
+
+    def group_family(p, g):
+        for fid in g.get("families", []):
+            f = FAMILY_SETS.get(g.get("family_set") or p.get("family_set") or "", {}).get(fid) if isinstance(fid, str) else None
+            if f and f.get("images"):
+                return f
+        return None
+
+    out = {}
+    for c in site["nav"][0]["children"]:
+        slug = c["href"].split("#")[0][:-5]
+        p = by_slug.get(slug, {})
+        cards, keys, hrefs = [], set(), set()
+
+        def add(label, href, key, note=""):
+            if not key or key not in manifest or key in keys or href in hrefs or len(cards) >= 4:
+                return
+            keys.add(key); hrefs.add(href)
+            im = img(key, 800)
+            cards.append({"l": label, "n": note or "", "h": clean(href), "s": img(key, 480)["src"], "ss": im["srcset"], "a": bool(im["alpha"]), "k": key})
+
+        entries, lines = [], []
+        for t in c.get("children") or []:
+            if t.get("children"):           # a tree group (Bekamak · premium line): its pages, named with the line
+                lines.append([dict(u, label=f"{u['label']} · {t['label'].split(' · ')[0]}") for u in t["children"]])
+            else:
+                entries.append(t)
+        for i in range(max((len(x) for x in lines), default=0)):     # alternate the lines: premium, value, premium, value
+            entries += [x[i] for x in lines if i < len(x)]
+        for e in entries:
+            ep = page_of(e["href"])
+            if not ep:
+                continue
+            key, anchor = None, e["href"].partition("#")[2]
+            if anchor:
+                g = next((g for g in ep.get("groups", []) if g.get("id") == anchor), None)
+                f = group_family(ep, g) if g else None
+                key = f["images"][0] if f else None
+            add(e["label"], e["href"], key or ep.get("hero_image"))
+        for g in p.get("groups", []):
+            f = group_family(p, g)
+            if f:
+                add(f.get("short") or g.get("title", ""), f"{slug}.html#{f['id']}", f["images"][0], f.get("headline", ""))
+        for sp in p.get("subpages", []):
+            add(sp.get("nav_label") or sp["title"], f"{sp['slug']}.html", sp.get("image"))
+        if not cards:
+            add(c["label"], c["href"], CATALOG_DATA["card_image"].get(slug) or p.get("hero_image"))
+        thumb = img(cards[0]["k"])["thumb"] if cards else None
+        for cd in cards:
+            del cd["k"]
+        out[clean(c["href"])] = {"t": c["label"], "b": CATALOG_DATA["blurbs"].get(slug) or p.get("meta_description", ""), "h": clean(c["href"]), "c": cards, "th": thumb}
+    return out
+
+
 def build_pdf_index(loaded):
     """every PDF a product page offers for download, with the pages that offer it"""
     idx = {}
@@ -1141,6 +1208,7 @@ def main():
                     covered = {m["href"] for m in g["members"]} | {hub["slug"] + ".html"} | ({alt["href"]} if alt else set())
                     p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these
     CATALOG.update(build_catalog(loaded))
+    json.dump(build_nav_preview(loaded), open(os.path.join(DIST, "nav-preview.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     shown = set()
     for p in loaded:
         if p.get("template") in SITE_TEMPLATES:

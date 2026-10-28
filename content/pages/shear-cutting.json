@@ -7,11 +7,11 @@
  "artifact_title": "Metal Shears",
  "meta_description": "Every metal shear sold by NovoTech in Canada: Dener hydraulic shears, NovoTech mechanical shears, value-line hydraulic plate shears and sheet metal shears.",
  "h1": "Metal shear machines — sheet metal shears, mechanical guillotines and hydraulic plate shears, 16 ga to 1-9/16″",
- "intro": "A metal shear (sheet metal shearing machine, guillotine shear, shear cutter) cuts plate and sheet to size in one stroke between a fixed bottom blade and a top blade on the moving beam — the first machine in every sheet-metal, HVAC, signage and fabrication shop, before the press brake. NovoTech sells four lines of shears in Canada, each on its own page: the Dener hydraulic shears — the premium plate shears made in Turkey, BS / BSY swing beam to 5/8″ and the DAS CNC guillotine to 3/4″ × 20 ft; NovoTech's premium-line mechanical shears — direct-gear SRGM guillotines, 1/8″ and 1/4″ to 13.8 ft, built in Turkey; NovoTech's value-line hydraulic shears — QC12K swing beam and Q11K guillotine from 5/32″ to 1-9/16″ and 26 ft, built in China with Estun controls; and NovoTech's value-line sheet metal shears — pneumatic, light hydraulic, electric and flywheel mechanical shears from 16 ga to 3/8″ for the sheet-metal shop. Below, each line in brief and every model in one table of capacity, length, strokes, motor and weight; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
+ "intro": "A metal shear (sheet metal shearing machine, guillotine shear, shear cutter) cuts plate and sheet to size in one stroke between a fixed bottom blade and a top blade on the moving beam — the first machine in every sheet-metal, HVAC, signage and fabrication shop, before the press brake. NovoTech sells four lines of shears in Canada, each on its own page: the Dener hydraulic shears — the premium plate shears made in Turkey, BS / BSY swing beam to 5/8″ and the DAS CNC guillotine to 3/4″ × 20 ft; NovoTech's premium-line mechanical shears — direct-gear SRGM guillotines, 1/8″ and 1/4″ to 13.8 ft, built in Turkey; NovoTech's value-line hydraulic shears — QC12K swing beam and Q11K guillotine from 5/32″ to 1-9/16″ and 26 ft, built in China with Estun controls; and NovoTech's value-line sheet metal shears — pneumatic, light hydraulic, electric and flywheel mechanical shears from 16 ga to 3/8″ for the sheet-metal shop, with motorized bench shears and a coil slitting and cut-to-length machine. Below, each line in brief and every model in one table of capacity, length, strokes, motor and weight; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
  "hero_points": [
   "Dener premium line: BS / BSY hydraulic swing beam 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotine with variable angle 1/4″ – 3/4″ × 10 – 20 ft",
   "NovoTech premium line: SRGM direct-gear mechanical shears 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min, return-to-sender versions",
-  "NovoTech value line: QC12K / Q11K hydraulic plate shears 5/32″ – 1-9/16″ × 8 – 26 ft; sheet metal shears 16 ga – 3/8″ × 39 – 120″"
+  "NovoTech value line: QC12K / Q11K hydraulic plate shears 5/32″ – 1-9/16″ × 8 – 26 ft; sheet metal shears 20 ga – 3/8″ × 26 – 120″ and a 48″ coil slitter"
  ],
  "hero_image": "sm-srgm",
  "hero_image_secondary": [
@@ -80,15 +80,17 @@
    "slug": "sheet-metal-shears",
    "title": "NovoTech sheet metal shears — pneumatic, hydraulic, electric and mechanical, 16 ga to 3/8″ · value line",
    "image": "tt-q11a",
-   "blurb": "The value-line shears for the sheet-metal shop, built in China to NovoTech's specification: a pneumatic shear for 16 ga, light and production hydraulic shears to 1/4″, electric shears with manual or NC back gauge, and flywheel mechanical shears to 3/8″.",
+   "blurb": "The value-line shears for the sheet-metal shop, built in China to NovoTech's specification: a pneumatic shear for 16 ga, light and production hydraulic shears to 1/4″, electric shears with manual or NC back gauge, flywheel mechanical shears to 3/8″, motorized bench shears and a 48″ coil slitting and cut-to-length machine.",
    "families": [
     "tt-ps",
     "tt-hq01",
+    "tt-bq01",
     "tt-ths",
     "tt-hq11",
     "tt-q11",
     "tt-q11nc",
-    "tt-q11-mech"
+    "tt-q11-mech",
+    "tt-ps1220"
    ],
    "nav_label": "NovoTech sheet metal shears",
    "line": "value",
@@ -204,10 +206,19 @@
   }
  ],
  "range_pick": [
-  "capacity",
-  "length",
+  [
+   "capacity",
+   "capacity_mild_steel"
+  ],
+  [
+   "length",
+   "working_width"
+  ],
   "strokes",
-  "motor",
+  [
+   "motor",
+   "operation"
+  ],
   "weight"
  ],
  "related_title": "More sheet-metal cutting and forming machinery from NovoTech"

@@ -151,6 +151,10 @@ def main(args):
         if not os.path.basename(fn).startswith("_"):
             p = json.load(open(fn, encoding="utf-8"))
             pages[p["slug"]] = p
+    for fn in sorted(glob.glob(os.path.join(ROOT, "content", "extra_groups", "*.json"))):   # headings another generator sets (build.py)
+        x = json.load(open(fn, encoding="utf-8"))
+        if x.get("slug") in pages and x.get("set"):
+            pages[x["slug"]].update({k: v for k, v in x["set"].items() if k in ("h1", "social_title", "social_tagline", "hero_image", "social_image")})
     default_hero = pages.get("index", {}).get("hero_image")
     done = json.load(open(SOURCES)) if os.path.exists(SOURCES) else {}
     if "--stale" in args or "--missing" in args:          # pages without a card, or whose photo, heading or tagline changed
