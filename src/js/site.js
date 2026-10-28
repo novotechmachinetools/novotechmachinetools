@@ -81,9 +81,12 @@
     var esc = function (t) {
       return String(t).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; });
     };
-    var keyOf = function (el) {
-      var li = el && el.closest ? el.closest(".sub-menu > li") : null;
-      var a = li && li.querySelector("a");
+    var keyOf = function (el) {             // the link under the pointer (a section page, product group or line) when it has photos of its own, else its category
+      if (!el || !el.closest) return null;
+      var a = el.closest(".sub-menu a");
+      if (a && navData && navData[a.getAttribute("href")]) return a.getAttribute("href");
+      var li = el.closest(".sub-menu > li");
+      a = li && li.querySelector("a");
       return a ? a.getAttribute("href") : null;
     };
     var render = function (key) {
@@ -100,11 +103,12 @@
       });
       preview.innerHTML = h + "</div>";
     };
-    var show = function (key, now) {      // a short pause before switching, so a pointer crossing other categories on its way to the photos does not change them
+    var show = function (el, now) {       // a short pause before switching, so a pointer crossing other entries on its way to the photos does not change them
       clearTimeout(hoverTimer);
-      if (!key) return;
-      if (now || !shownKey) { loadNav().then(function () { render(key); }); return; }
-      hoverTimer = setTimeout(function () { loadNav().then(function () { render(key); }); }, 110);
+      if (!el) return;
+      var go = function () { loadNav().then(function () { var key = keyOf(el); if (key) render(key); }); };
+      if (now || !shownKey) { go(); return; }
+      hoverTimer = setTimeout(go, 110);
     };
     var opened = function () {            // the menu opens on the current page's category, or the first one
       if (!wide.matches) return;
@@ -120,9 +124,9 @@
     mega.addEventListener("mouseover", function (e) {
       if (!wide.matches) return;
       if (e.target.closest && e.target.closest(".mega-preview")) { clearTimeout(hoverTimer); return; }   // on the photos: keep them
-      show(keyOf(e.target));
+      show(e.target);
     });
-    mega.addEventListener("focusin", function (e) { if (wide.matches) show(keyOf(e.target), true); });
+    mega.addEventListener("focusin", function (e) { if (wide.matches) show(e.target, true); });
     var addThumbs = function () {          // phones and tablets: no hover — one photo beside each category instead
       if (mega.getAttribute("data-thumbs")) return;
       mega.setAttribute("data-thumbs", "1");

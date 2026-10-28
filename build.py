@@ -836,6 +836,60 @@ def build_nav_preview(loaded):
         for cd in cards:
             del cd["k"]
         out[clean(c["href"])] = {"t": c["label"], "b": CATALOG_DATA["blurbs"].get(slug) or p.get("meta_description", ""), "h": clean(c["href"]), "c": cards, "th": thumb}
+
+        # the sub-menu entries (section pages, product groups, a product line): their own photos when the pointer rests on them
+        def sub_entry(e):
+            key = clean(e["href"])
+            if key in out:
+                return
+            ep = page_of(e["href"])
+            if not ep:
+                return
+            scards, skeys, shrefs = [], set(), set()
+
+            def sadd(label, href, k, note=""):
+                if not k or k not in manifest or k in skeys or href in shrefs or len(scards) >= 4:
+                    return
+                skeys.add(k); shrefs.add(href)
+                im = img(k, 800)
+                scards.append({"l": label, "n": note or "", "h": clean(href), "s": img(k, 480)["src"], "ss": im["srcset"], "a": bool(im["alpha"])})
+
+            anchor = e["href"].partition("#")[2]
+            blurb = ""
+            if e.get("children"):                                  # a product line: the pages of that line
+                for u in e["children"]:
+                    up = page_of(u["href"])
+                    if up:
+                        sadd(u["label"], u["href"], up.get("hero_image"))
+                blurb = ep.get("meta_description", "")
+            elif anchor:                                           # a product group on a page: its families
+                g = next((g for g in ep.get("groups", []) if g.get("id") == anchor), None)
+                if g:
+                    blurb = g.get("lead") or ""
+                    fs = FAMILY_SETS.get(g.get("family_set") or ep.get("family_set") or "", {})
+                    for fid in g.get("families", []):
+                        f = fs.get(fid) if isinstance(fid, str) else None
+                        if f and f.get("images"):
+                            sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", f["images"][0], f.get("headline", ""))
+            else:                                                  # a section page: the families of its groups, or its hub sections
+                blurb = ep.get("meta_description", "")
+                for g in ep.get("groups", []):
+                    fs = FAMILY_SETS.get(g.get("family_set") or ep.get("family_set") or "", {})
+                    for fid in g.get("families", []):
+                        f = fs.get(fid) if isinstance(fid, str) else None
+                        if f and f.get("images"):
+                            sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", f["images"][0], f.get("headline", ""))
+                for sp in ep.get("subpages", []):
+                    sadd(sp.get("nav_label") or sp["title"], f"{sp['slug']}.html", sp.get("image"))
+            if not scards:
+                sadd(e["label"], e["href"], ep.get("hero_image"))
+            if scards:
+                out[key] = {"t": e["label"], "b": blurb, "h": key, "c": scards, "th": None}
+
+        for t in c.get("children") or []:
+            sub_entry(t)
+            for u in t.get("children") or []:
+                sub_entry(dict(u, label=f"{u['label']} · {t['label'].split(' · ')[0]}"))
     return out
 
 
