@@ -1,0 +1,50 @@
+/* Home design A — "The dark room": full-bleed video, lit machines on a dark field, a scroll-driven track of best sellers. */
+.home-a .site-header { background: var(--ink); border-bottom-color: #2a2b2e; }
+.home-a .site-header .nav-menu > li > a, .home-a .site-header .phone { color: #fff; }
+.home-a .site-header .ai-open { background: #2b2c2f; color: #fff; border-color: #3a3b3f; }
+.home-a .site-header .nav-toggle { color: #fff; border-color: #555; }
+.home-a .site-header .brand img { filter: brightness(0) invert(1); }
+
+.ha-hero { position: relative; min-height: calc(100svh - var(--header-h)); display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: 1fr auto; color: #fff; isolation: isolate; }
+.ha-hero > .wrap, .ha-hero > nav { position: relative; z-index: 2; }
+.ha-hero-copy { align-self: end; padding-top: clamp(40px, 8vh, 96px); padding-bottom: clamp(28px, 4vh, 48px); min-width: 0; }
+.ha-hero-copy .hv-display { max-width: 24ch; color: #fff; font-size: clamp(42px, 5.8vw, 96px); text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.ha-hero-copy .hv-lead { color: #E6E8EA; margin-top: 22px; max-width: 58ch; }
+.ha-hero-copy .cta-row { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; }
+.ha-hero-copy .hv-link { color: #fff; }
+.ha-chips { padding-block: 18px 22px; min-width: 0; }
+.ha-chip-all { font-family: var(--cond); font-weight: 700; font-size: 20px; color: var(--orange); }
+.hv-chip:hover .ha-chip-all { color: var(--ink); }
+
+/* track: static by default (a snap-scrolling row); with motion on, the wrapper scrolls for 320svh while the stage stays put and the rail travels */
+.ha-track { position: relative; background: var(--paper); }
+.hv-track-stage { display: grid; grid-template-rows: auto 1fr; }
+.hv-track-head { width: min(100% - 2 * var(--gutter), var(--wrap)); margin: clamp(28px, 4vh, 48px) auto 0; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 32px; align-items: end; }
+.hv-track-rail { list-style: none; margin: 0; padding: clamp(18px, 3vh, 36px) var(--gutter) 28px; display: flex; gap: 24px; align-items: stretch; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.hv-track-rail::-webkit-scrollbar { display: none; }
+html.has-motion .ha-track:not(.is-static) { height: 320svh; }
+html.has-motion .ha-track:not(.is-static) .hv-track-stage { position: sticky; top: var(--header-h); height: calc(100svh - var(--header-h)); overflow: hidden; }
+html.has-motion .ha-track:not(.is-static) .hv-track-rail { width: max-content; overflow: visible; scroll-snap-type: none; will-change: transform; }
+.ha-card { width: min(560px, 72vw); flex: 0 0 auto; scroll-snap-align: start; display: grid; grid-template-rows: minmax(0, 1fr) auto; background: var(--charcoal-2); color: #fff; }
+.ha-card.tone-light { background: #fff; color: var(--ink); }
+.ha-card.tone-mid { background: var(--hv-steel-field); }
+.ha-card.tone-orange { background: var(--orange); color: var(--ink); }
+.ha-card-art { display: block; height: clamp(220px, 38vh, 400px); padding: 22px 22px 0; }
+.ha-card-art img { transition: transform .6s var(--hv-ease); }
+.ha-card:hover .ha-card-art img { transform: translateY(-6px) scale(1.02); }
+.ha-card-body { padding: 18px 24px 24px; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; gap: 4px 20px; align-items: end; }
+.ha-card-body h3 { grid-column: 1; font-size: clamp(28px, 2.6vw, 40px); margin: 0; line-height: 1; color: inherit; }
+.ha-card-body h3 a { color: inherit; text-decoration: none; }
+.ha-card-body h3 a:hover { text-decoration: underline; text-underline-offset: .15em; }
+.ha-card-fact { grid-column: 2; grid-row: 1; margin: 0; font-family: var(--cond); font-weight: 600; font-size: 17px; text-align: right; opacity: .9; }
+.ha-card-line { grid-column: 1 / -1; margin: 6px 0 0; font-size: 16px; line-height: 1.4; max-width: 44ch; opacity: .92; }
+.ha-card-body .hv-link { grid-column: 1 / -1; margin-top: 10px; font-size: 18px; }
+@media (max-width: 900px) {
+  .hv-track-head { grid-template-columns: 1fr; gap: 12px; }
+  .hv-track-rail { gap: 14px; }
+  .ha-card { width: 82vw; }
+  .ha-card-art { height: 220px; }
+  .ha-card-body { grid-template-columns: 1fr; }
+  .ha-card-fact { grid-column: 1; grid-row: auto; text-align: left; }
+  .ha-hero { min-height: calc(92svh - var(--header-h)); }
+}

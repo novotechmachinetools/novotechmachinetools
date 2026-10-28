@@ -1,0 +1,90 @@
+{# Sections shared by the homepage designs (home-a … home-e). Each takes the field class that colours it. #}
+
+{% macro facts_row(field="field-ink") -%}
+<section class="field {{ field }} hv-facts-band" aria-label="NovoTech at a glance">
+  <ul class="wrap hv-facts" data-reveal-group>
+    <li data-reveal-item><strong data-count="{{ page.category_count }}">{{ page.category_count }}</strong><span>kinds of machine, from press brakes to rebar benders</span></li>
+    <li data-reveal-item><strong data-count="{{ page.family_count }}">{{ page.family_count }}</strong><span>machine families with full specifications in inches and mm</span></li>
+    <li data-reveal-item><strong data-count="{{ page.maker_count }}">{{ page.maker_count }}</strong><span>manufacturers in {{ page.country_count }} countries, plus NovoTech's own lines</span></li>
+    <li data-reveal-item><strong data-count="20" data-suffix="+">20+</strong><span>years supplying Canadian fabrication shops</span></li>
+  </ul>
+</section>
+{%- endmacro %}
+
+{% macro also_list(groups, field="field-white") -%}
+<section class="field {{ field }} hv-also" aria-labelledby="also-title">
+  <div class="wrap hv-also-grid">
+    <div>
+      <h2 id="also-title" class="hv-display-2" data-words>Also on the floor</h2>
+      <p class="hv-lead">Beyond the best sellers, NovoTech stocks or orders {{ page.category_count }} kinds of machine. These come up next most often.</p>
+      <p><a class="btn btn-ghost" href="products.html">All {{ page.category_count }} kinds of machine</a></p>
+    </div>
+    <ul class="hv-also-list" data-reveal-group>
+      {% for g in groups if not g.hero %}
+      <li data-reveal-item><a href="{{ g.href }}"><span class="hv-also-img"><img src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="120px" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></span><span class="hv-also-text"><strong>{{ g.name }}</strong><span>{{ g.fact }}</span></span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro brands_sentence(field="field-dark") -%}
+<section class="field {{ field }} hv-proof" aria-labelledby="proof-title">
+  <div class="wrap">
+    <p class="hv-proof-sentence" data-lit><strong id="proof-title">We represent</strong> {% for b in page.brands if not b.name.startswith('NovoTech') %}<span>{{ b.name }}</span>{{ ', ' if not loop.last else '' }}{% endfor %}, and build <span>NovoTech's own premium and value lines</span>.</p>
+    <p class="hv-lead">Long-standing partners in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China, each building the machines it knows best. <a class="hv-link" href="about-us.html">About NovoTech</a></p>
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro showroom(field="field-paper") -%}
+<section class="field {{ field }} hv-showroom-band" aria-labelledby="showroom-title">
+  <div class="wrap hv-showroom">
+    <div class="hv-showroom-copy" data-reveal="fade-up">
+      <h2 id="showroom-title" class="hv-display-2" data-words>See the machine run before you buy</h2>
+      <p class="hv-lead">Our showroom and parts warehouse are at {{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }}. Bring a drawing or a sample part and we will cut or bend it on the machine you are considering. Call ahead and it will be on the floor and wired up.</p>
+      <p class="hv-showroom-hours"><strong>{{ site.hours }}</strong> Eastern · <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contact-us.html">Plan a visit</a>
+        <a class="btn btn-ghost" href="about-us.html">About NovoTech</a>
+      </div>
+    </div>
+    <ul class="hv-showroom-photos" data-reveal-group>
+      {% for im in page.showroom_imgs %}<li data-reveal-item><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 700px) 46vw, 380px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro work_strip(field="field-ink", names=["sf-t-cutting", "sh-hpk40-coil", "dn-xl-video-1", "nt-bs315gf-d4", "sh-4rhss-cone", "sf-3d-cut", "sh-cut-end", "es-p-c013", "tb-hp120-straighten", "cs-ct325-parts", "vl-wad-robot", "sf-h-line"]) -%}
+<section class="field {{ field }} hv-work" aria-labelledby="work-title">
+  <div class="wrap hv-work-head">
+    <h2 id="work-title" class="hv-display-2" data-words>Machines at work</h2>
+    <p class="hv-lead">Lasers cutting, rolls coiling, brakes bending: the parts our customers make, and the machines making them.</p>
+  </div>
+  <div class="hv-marquee hv-work-strip" data-marquee="55">
+    <ul class="hv-marquee-track">
+      {% for n in names %}{% set im = img(n) %}
+      <li><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="360px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro learn_row(field="field-white") -%}
+<section class="field {{ field }} hv-learn" aria-labelledby="learn-title">
+  <div class="wrap hv-learn-grid">
+    <div class="hv-learn-copy">
+      <h2 id="learn-title" class="hv-display-2" data-words>Before you buy</h2>
+      <p class="hv-lead">What we explain to customers before they order, written by our sales engineers and technicians, plus {{ page.brochure_count }} brochures with full specifications.</p>
+      <p><a class="hv-link" href="metal-fabricating-articles.html">All articles and guides</a><br><a class="hv-link" href="brochures.html">All brochures</a></p>
+    </div>
+    <ul class="hv-learn-list" data-reveal-group>
+      {% for a in page.guides[:4] %}
+      <li data-reveal-item><a href="{{ a.href }}">{% if a.img %}<span class="hv-learn-thumb{{ ' is-cutout' if a.img.alpha else '' }}"><img src="{{ a.img.small }}" srcset="{{ a.img.srcset }}" sizes="110px" width="{{ a.img.w }}" height="{{ a.img.h }}" alt="" loading="lazy" decoding="async"></span>{% endif %}<span><small>{{ a.topic }}</small><strong>{{ a.title }}</strong></span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endmacro %}

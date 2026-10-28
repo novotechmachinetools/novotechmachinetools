@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "partials/site.html" import photo with context %}
+{% from "partials/home.html" import showroom, brands_sentence, work_strip, learn_row, also_list, facts_row with context %}
+{% block body_attrs %} class="home-a"{% endblock %}
+{% block head %}<style>{{ css_text("home.css") | safe }}{{ css_text("home-a.css") | safe }}</style>
+<link rel="preload" as="image" href="{{ page.showcase.video.poster }}">{% endblock %}
+
+{% block content %}
+{% set sc = page.showcase %}
+<section class="ha-hero" data-drift aria-label="NovoTech Machine Tools">
+  <div class="hv-video is-light">
+    <img src="{{ sc.video.poster }}" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
+    <video data-hero-video muted playsinline loop preload="metadata" poster="{{ sc.video.poster }}" aria-hidden="true" tabindex="-1">
+      <source src="{{ sc.video.src }}" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap ha-hero-copy">
+    <h1 class="hv-display" data-words="load">Metal fabrication machinery, sold and supported in Canada</h1>
+    <p class="hv-lead" data-reveal="fade-up" data-reveal-on="load" data-delay=".55">Press brakes, fiber lasers, band saws, angle rolls, shears, plate rollers and ironworkers, installed and serviced from our Mississauga showroom, with a CSA-approved panel on every machine and parts on the shelf in Ontario.</p>
+    <div class="cta-row" data-reveal="fade-up" data-reveal-on="load" data-delay=".7">
+      <a class="btn btn-primary btn-lg" href="#reques-a-quote">Request a quote</a>
+      <a class="hv-link" href="#best-sellers">See the best sellers</a>
+    </div>
+  </div>
+  <nav class="wrap ha-chips" aria-label="Most-asked-for machines" data-reveal="fade-up" data-reveal-on="load" data-delay=".9">
+    <ul class="hv-chips">
+      {% for g in sc.hero %}
+      <li><a class="hv-chip" href="{{ g.href }}"><span class="hv-chip-img"><img src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="54px" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></span>{{ g.name }}</a></li>
+      {% endfor %}
+      <li><a class="hv-chip" href="products.html"><span class="hv-chip-img ha-chip-all">+{{ page.category_count - sc.hero|length }}</span>All machines</a></li>
+    </ul>
+  </nav>
+</section>
+
+{{ facts_row("field-ink") }}
+
+<section class="ha-track" id="best-sellers" data-track aria-labelledby="best-title">
+  <div class="hv-track-stage">
+    <div class="hv-track-head">
+      <h2 id="best-title" class="hv-display-2">Best sellers in Canada and the US</h2>
+      <p class="hv-lead">The eight kinds of machine Canadian and American shops ask us for most. Every page has specifications in inches and millimetres, photos, videos and a brochure.</p>
+    </div>
+    <ul class="hv-track-rail" data-reveal-group data-stagger=".08">
+      {% for g in sc.hero %}
+      <li class="ha-card tone-{{ g.tone }}" data-reveal-item>
+        <a class="ha-card-art" href="{{ g.href }}" tabindex="-1" aria-hidden="true"><img class="hv-cut" src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="(max-width: 900px) 78vw, 520px" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></a>
+        <div class="ha-card-body">
+          <h3><a href="{{ g.href }}">{{ g.name }}</a></h3>
+          <p class="ha-card-fact">{{ g.fact }}</p>
+          <p class="ha-card-line">{{ g.line }}</p>
+          <a class="hv-link" href="{{ g.href }}">{{ g.count }} machine families</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{{ also_list(sc.groups, "field-white") }}
+
+{{ brands_sentence("field-dark") }}
+
+{{ showroom("field-paper") }}
+
+{{ work_strip("field-ink") }}
+
+{{ learn_row("field-white") }}
+
+{% include "partials/quote.html" %}
+{% endblock %}
+
+{% block scripts %}<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/home.js?v={{ js_hash }}" defer></script>{% endblock %}

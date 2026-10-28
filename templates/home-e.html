@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% from "partials/home.html" import showroom, learn_row, facts_row with context %}
+{% block body_attrs %} class="home-e"{% endblock %}
+{% block head %}<style>{{ css_text("home.css") | safe }}{{ css_text("home-e.css") | safe }}</style>{% endblock %}
+
+{% block content %}
+{% set sc = page.showcase %}
+{% set extra = ["vl-wad-1", "is-eb-1240-cnc", "vn-ule-1", "sf-h-1", "bk-hero-hub", "nt-bs315gf-1", "sh-hpk60", "sh-hpk160dp", "dn-das-1", "vl-qc12k-1", "is-mrms-2050-190", "sh-hkm60", "h-45s", "sls-12", "cs-tbre", "tm-hwe", "gc-g135rb8", "es-p-group", "sh-dpm", "tb-hp80", "tm-pc510", "dn-panel-1", "is-sfc-350-vx", "sh-hnm6v", "tm-s75h", "dn-tube-2", "sh-hkm175", "is-mrmh-2050-180", "bk-bmdo-150xs-1", "is-bk-050"] %}
+{% set tiles = [] %}
+{% for g in sc.groups %}{% set _ = tiles.append({"img": g.img, "href": g.href, "name": g.name}) %}{% endfor %}
+{% for n in extra %}{% set _ = tiles.append({"img": img(n), "href": None, "name": img(n).alt}) %}{% endfor %}
+{% set tones = ["orange", "paper", "dark", "paper", "steel", "orange", "paper"] %}
+
+<section class="he-hero" aria-label="NovoTech Machine Tools">
+  <div class="he-wall" aria-hidden="true">
+    {% for r in range(7) %}
+    <div class="he-row hv-marquee{{ ' is-shift' if r % 2 else '' }}" data-marquee="{{ 9 + (r % 3) * 3 }}"{% if r % 2 %} data-marquee-reverse{% endif %}>
+      <div class="hv-marquee-track">
+        {% for i in range(13) %}{% set t = tiles[(r * 5 + i) % tiles|length] %}
+        <span class="he-tile tone-{{ tones[(r + i) % tones|length] }}"><img src="{{ t.img.small }}" srcset="{{ t.img.srcset }}" sizes="110px" width="{{ t.img.w }}" height="{{ t.img.h }}" alt="" loading="{{ 'eager' if r < 4 else 'lazy' }}" decoding="async"></span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="he-panel" data-reveal="rise" data-reveal-on="load">
+    <h1 class="he-panel-title">Metal fabrication machinery, sold and supported in Canada</h1>
+    <a class="btn btn-primary btn-lg" href="#reques-a-quote">Request a quote</a>
+    <p class="he-panel-row">Press brakes · fiber lasers · band saws · angle rolls · shears · plate rollers · ironworkers · rebar machines · <a href="products.html">all {{ page.category_count }} kinds</a></p>
+  </div>
+</section>
+
+<section class="field field-white he-catalogue" aria-labelledby="catalogue-title">
+  <div class="wrap">
+    <div class="he-catalogue-head">
+      <h2 id="catalogue-title" class="hv-display-2" data-words>The catalogue, one machine at a time</h2>
+      <p class="hv-lead">Each kind of machine on its own tile, named plainly, with the range it covers. The eight larger tiles are the lines Canadian and American shops buy most.</p>
+    </div>
+    <ul class="he-grid he-grid-big" data-reveal-group data-stagger=".05">
+      {% for g in sc.hero %}
+      <li class="he-item" data-reveal-item>
+        <a class="he-item-tile tone-{{ ['paper', 'orange', 'dark', 'steel'][loop.index0 % 4] }}" href="{{ g.href }}" tabindex="-1" aria-hidden="true"><img class="hv-cut is-centred" src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="(max-width: 700px) 44vw, 360px" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></a>
+        <h3><a href="{{ g.href }}">{{ g.name }}</a></h3>
+        <p>{{ g.fact }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <ul class="he-grid he-grid-small" data-reveal-group data-stagger=".05">
+      {% for g in sc.groups if not g.hero %}
+      <li class="he-item" data-reveal-item>
+        <a class="he-item-tile tone-{{ ['steel', 'paper', 'orange', 'dark', 'paper'][loop.index0 % 5] }}" href="{{ g.href }}" tabindex="-1" aria-hidden="true"><img class="hv-cut is-centred" src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="(max-width: 700px) 44vw, 280px" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></a>
+        <h3><a href="{{ g.href }}">{{ g.name }}</a></h3>
+        <p>{{ g.fact }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="section-more"><a class="btn btn-ghost" href="products.html">All {{ page.category_count }} kinds of machine</a></p>
+  </div>
+</section>
+
+{{ facts_row("field-ink") }}
+
+<section class="field field-paper he-run" aria-labelledby="run-title">
+  <div class="wrap he-run-grid">
+    <div class="he-run-copy">
+      <h2 id="run-title" class="hv-display-2" data-words>Machines at work</h2>
+      <p class="hv-lead">A minute and a half on the shop floor: cutting, bending, rolling and sawing.</p>
+      <p><a class="hv-link" href="{{ site.youtube_channel }}" rel="noopener">More videos on YouTube</a></p>
+    </div>
+    <div class="he-frames">
+      <div class="he-frame is-lifted hv-video">
+        <img src="{{ sc.video.poster }}" alt="" width="1280" height="720" loading="lazy" decoding="async">
+        <video data-hero-video muted playsinline loop preload="metadata" poster="{{ sc.video.poster }}" aria-hidden="true" tabindex="-1"><source src="{{ sc.video.src }}" type="video/mp4"></video>
+      </div>
+      {% for n in ["sf-t-cutting", "sh-hpk40-coil", "dn-xl-video-1", "nt-bs315gf-d4", "sh-4rhss-cone", "sf-3d-cut"] %}{% set im = img(n) %}
+      <div class="he-frame" data-reveal="fade-up" data-delay="{{ loop.index0 * 0.06 }}"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="360px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="field field-white he-marks" aria-labelledby="marks-title">
+  <div class="wrap">
+    <h2 id="marks-title" class="hv-display-2" data-words>Manufacturers we represent</h2>
+    <ul class="he-marks-grid" data-reveal-group data-stagger=".04">
+      {% for b in page.brands %}
+      <li data-reveal-item><a href="{{ b.href }}">{% if b.logo_img and not b.name.startswith('NovoTech') %}<img src="{{ b.logo_img.small }}" srcset="{{ b.logo_img.srcset }}" sizes="160px" width="{{ b.logo_img.w }}" height="{{ b.logo_img.h }}" alt="{{ b.name }}" loading="lazy" decoding="async">{% else %}<strong>{{ b.name }}</strong>{% endif %}<span>{{ 'made in ' if b.name.startswith('NovoTech') else '' }}{{ b.country }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{{ showroom("field-paper") }}
+
+{{ learn_row("field-white") }}
+
+{% include "partials/quote.html" %}
+{% endblock %}
+
+{% block scripts %}<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/home.js?v={{ js_hash }}" defer></script>{% endblock %}

@@ -1,0 +1,62 @@
+/* Home design E — "The specimen catalogue": a wall of machine tiles drifting like a conveyor, a docked panel, then the catalogue tile by tile. */
+.he-hero { position: relative; height: calc(100svh - var(--header-h)); min-height: 560px; overflow: hidden; background: var(--paper); isolation: isolate; }
+.he-wall { position: absolute; inset: 0; display: grid; grid-auto-rows: 1fr; gap: 8px; padding: 8px 0; box-sizing: border-box; }
+.he-row { height: 100%; }
+.he-row.is-shift .hv-marquee-track { margin-left: -60px; }
+.he-row .hv-marquee-track { gap: 8px; height: 100%; }
+.he-tile { display: grid; place-items: center; width: clamp(84px, 7.8vw, 124px); height: 100%; background: var(--paper); }
+.he-tile.tone-orange { background: var(--orange); }
+.he-tile.tone-dark { background: var(--charcoal); }
+.he-tile.tone-steel { background: var(--hv-steel-field); }
+.he-tile.tone-paper { background: #E6E8EB; }
+.he-tile img { width: 72%; height: 72%; object-fit: contain; }
+.he-panel { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); width: min(820px, calc(100% - 2 * var(--gutter))); background: var(--ink); color: #fff; padding: 28px; box-sizing: border-box; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px 28px; align-items: center; z-index: 2; }
+.he-panel-title { grid-column: 1; margin: 0; font-family: var(--cond); font-weight: 600; font-size: clamp(22px, 2vw, 28px); line-height: 1.15; color: #fff; }
+.he-panel .btn { grid-column: 2; grid-row: 1; }
+.he-panel-row { grid-column: 1 / -1; margin: 0; font-size: 15px; color: var(--hv-muted-on-dark); }
+.he-panel-row a { color: var(--orange); }
+
+.he-catalogue-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: end; margin-bottom: 28px; }
+.he-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 28px 16px; }
+.he-grid-big { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 28px; }
+.he-grid-small { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.he-item-tile { display: block; aspect-ratio: 4 / 3; background: var(--paper); padding: 8%; box-sizing: border-box; transition: transform .35s var(--hv-ease); }
+.he-grid-small .he-item-tile { aspect-ratio: 4 / 3; }
+.he-item-tile.tone-orange { background: var(--orange); }
+.he-item-tile.tone-dark { background: var(--charcoal); }
+.he-item-tile.tone-steel { background: var(--hv-steel-field); }
+.he-item-tile:hover { transform: translateY(-4px); }
+.he-item h3 { font-size: 21px; margin: 10px 0 0; line-height: 1.1; }
+.he-item h3 a { color: inherit; text-decoration: none; }
+.he-item h3 a:hover { color: var(--orange-deep); }
+.he-item p { margin: 3px 0 0; font-size: 14px; color: var(--steel); }
+.he-catalogue .section-more { margin-top: 32px; }
+
+.he-run-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 32px; align-items: end; }
+.he-frames { display: flex; gap: 6px; align-items: flex-end; overflow: hidden; margin-right: calc(-1 * var(--gutter)); }
+.he-frame { flex: 0 0 auto; height: 20vh; min-height: 140px; position: relative; overflow: hidden; }
+.he-frame img { height: 100%; width: auto; display: block; object-fit: cover; }
+.he-frame.is-lifted { height: 44vh; min-height: 280px; aspect-ratio: 16 / 9; background: var(--ink); }
+.he-frame.is-lifted img, .he-frame.is-lifted video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.he-frame.is-lifted::after { background: none; }
+
+.he-marks-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.he-marks-grid a { display: grid; place-items: center; gap: 8px; aspect-ratio: 4 / 3; background: var(--paper); text-decoration: none; color: var(--ink); padding: 18px; box-sizing: border-box; transition: background-color .25s var(--hv-ease); }
+.he-marks-grid a:hover { background: var(--orange-tint); }
+.he-marks-grid img { max-width: 70%; max-height: 48px; object-fit: contain; }
+.he-marks-grid strong { font-family: var(--cond); font-weight: 700; font-size: 26px; }
+.he-marks-grid span { font-size: 14px; color: var(--steel); }
+
+@media (max-width: 900px) {
+  .he-hero { height: auto; min-height: 0; }
+  .he-wall { position: relative; height: 62svh; }
+  .he-tile { width: 22vw; }
+  .he-panel { position: relative; left: auto; bottom: auto; transform: none; width: 100%; grid-template-columns: 1fr; padding: 22px var(--gutter); }
+  .he-panel .btn { grid-column: 1; grid-row: auto; justify-self: start; }
+  .he-catalogue-head { grid-template-columns: 1fr; gap: 10px; }
+  .he-grid-big, .he-grid-small { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
+  .he-run-grid { grid-template-columns: 1fr; }
+  .he-frames { flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x mandatory; }
+  .he-frame { scroll-snap-align: start; height: 34vw; min-height: 0; }
+  .he-frame.is-lifted { height: 52vw; min-height: 0; width: 92vw; aspect-ratio: auto; }
+}

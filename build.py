@@ -15,6 +15,7 @@ DIST = os.path.join(ROOT, "dist")
 if os.environ.get("LENIENT_IMAGES"):   # preview build with placeholder images: never into dist/, so it cannot be deployed
     DIST = os.path.join(ROOT, "dist-preview")
 STAGING = "--staging" in sys.argv
+DRAFTS = "--drafts" in sys.argv     # also render content/drafts/*.json (design candidates) into dist/
 ARTIFACT = "--artifact" in sys.argv   # claude.ai artifact preview: page fragment, no doc skeleton
 if ARTIFACT:
     DIST = os.path.join(ROOT, "dist-artifact")
@@ -347,8 +348,13 @@ def nav_is(item, slug):
     return (item.get("href") or "").split("#")[0] == slug + ".html" and "#" not in (item.get("href") or "")
 
 
+def css_text(name):
+    """A stylesheet from dist/css inlined into a page (minified by main() before any page renders), URLs re-based to the page."""
+    return open(os.path.join(DIST, "css", name), encoding="utf-8").read().replace("../fonts/", "fonts/")
+
+
 env.globals.update(site=site, img=img, staging=STAGING, year=datetime.date.today().year, dia=dia, inch=inch, bar_sizes=bar_sizes,
-                   nav_contains=nav_contains, nav_is=nav_is)
+                   nav_contains=nav_contains, nav_is=nav_is, css_text=css_text)
 
 
 def asset_hash(path):
@@ -885,7 +891,7 @@ def build_pdf_index(loaded):
 
 def prepare_site_page(page):
     """the data the site's own pages show: category cards, brands, brochures, article cards"""
-    t = page.get("template")
+    t = page.get("site_template") or page.get("template")   # draft homepage designs render with home.html's data
     page["catalog_groups"] = [{"id": g["id"], "title": g["title"], "lead": g["lead"],
                                "cards": [CATALOG[s_] for s_ in g["slugs"] if s_ in CATALOG]} for g in CATALOG_DATA["groups"]]
     page["featured"] = [CATALOG[s_] for s_ in CATALOG_DATA["featured"] if s_ in CATALOG]
@@ -906,6 +912,18 @@ def prepare_site_page(page):
         page["brochure_groups"] = [{"id": g["id"], "title": g["title"], "cards": titles[g["id"]]}
                                    for g in CATALOG_DATA["groups"] if titles.get(g["id"])]
         page["brochure_count"] = sum(len(g["cards"]) for g in page["brochure_groups"])
+    if page.get("showcase"):   # the homepage designs: the best-selling product groups (content/home_showcase.json)
+        sc = json.load(open(os.path.join(ROOT, "content", "home_showcase.json"), encoding="utf-8"))
+        groups = []
+        for g in sc["groups"]:
+            c = CATALOG.get(g["slug"], {})
+            try:
+                src_page = json.load(open(os.path.join(ROOT, "content", "pages", g["slug"] + ".json"), encoding="utf-8"))
+                fams = sum(len(sp.get("families", [])) for sp in src_page.get("subpages", [])) or sum(len(gr.get("families", [])) for gr in src_page.get("groups", []))
+            except FileNotFoundError:
+                fams = 0
+            groups.append(dict(g, href=g["slug"] + ".html", img=img(g["image"]), count=fams, blurb=c.get("blurb")))
+        page["showcase"] = {"groups": groups, "hero": [g for g in groups if g.get("hero")], "video": sc.get("video")}
     if t == "home.html":
         pick = ["files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf", "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
                 "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "files/NovoTech-Press-Brake-Tooling-Catalogue-2026.pdf"]
@@ -935,7 +953,7 @@ def site_page_ld(page):
     if len(crumbs) > 1:
         graph.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": crumbs})
     kind = {"home.html": "WebPage", "products.html": "CollectionPage", "contact.html": "ContactPage", "about.html": "AboutPage",
-            "brochures.html": "CollectionPage", "articles.html": "CollectionPage", "privacy.html": "WebPage", "article.html": "WebPage"}[page["template"]]
+            "brochures.html": "CollectionPage", "articles.html": "CollectionPage", "privacy.html": "WebPage", "article.html": "WebPage"}[page.get("site_template") or page["template"]]
     wp = {"@type": kind, "@id": url, "url": url, "name": page["title"], "description": page["meta_description"], "inLanguage": "en-CA",
           "isPartOf": {"@id": site["domain"] + "/#website"}, "publisher": {"@id": site["domain"] + "/#organization"},
           "datePublished": page["date_published"], "dateModified": page["date_modified"]}
@@ -1024,7 +1042,7 @@ def render_page(page):
             jl = list(page["jump_links"])
             jl.insert(next((i for i, j in enumerate(jl) if j["href"] == "#reques-a-quote"), len(jl)), {"href": gid, "label": "Buying guide"})
             page["jump_links"] = jl
-    is_site = page.get("template") in SITE_TEMPLATES
+    is_site = (page.get("site_template") or page.get("template")) in SITE_TEMPLATES
     if is_site:
         prepare_site_page(page)
     tpl = env.get_template(page.get("template", "page.html"))
@@ -1225,6 +1243,17 @@ def main():
         open(out, "w", encoding="utf-8").write(html)
         pages.append(page)
         print(f"wrote {out} ({len(html)//1024} KB)")
+    # draft pages (content/drafts/*.json): design candidates shown on the staging host only — noindex, not in the sitemap, nav or catalogue
+    ddir = os.path.join(ROOT, "content", "drafts")
+    if (STAGING or DRAFTS) and os.path.isdir(ddir):
+        for fn in sorted(os.listdir(ddir)):
+            if fn.endswith(".json") and not fn.startswith("_"):
+                page = json.load(open(os.path.join(ddir, fn), encoding="utf-8"))
+                page["draft"] = True
+                html = render_page(page)
+                out = os.path.join(DIST, page["slug"] + ".html")
+                open(out, "w", encoding="utf-8").write(html)
+                print(f"wrote {out} (draft, {len(html)//1024} KB)")
     # AI assistant catalogue (read by ask.php on the server and by the search panel in the browser)
     os.makedirs(os.path.join(DIST, "ai"), exist_ok=True)
     cat = ai_catalogue(PREPARED)

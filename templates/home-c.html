@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% from "partials/home.html" import showroom, learn_row, also_list, facts_row, work_strip with context %}
+{% block body_attrs %} class="home-c"{% endblock %}
+{% block head %}<style>{{ css_text("home.css") | safe }}{{ css_text("home-c.css") | safe }}</style>
+<link rel="preload" as="image" href="{{ page.showcase.video.poster }}">{% endblock %}
+
+{% block content %}
+{% set sc = page.showcase %}
+<section class="hc-hero" data-window aria-label="NovoTech Machine Tools">
+  <div class="hc-stage">
+    <div class="hv-window-layer">
+      <div class="hv-video">
+        <img src="{{ sc.video.poster }}" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
+        <video data-hero-video muted playsinline loop preload="metadata" poster="{{ sc.video.poster }}" aria-hidden="true" tabindex="-1"><source src="{{ sc.video.src }}" type="video/mp4"></video>
+      </div>
+    </div>
+    <div class="wrap hc-hero-grid">
+      <h1 class="hc-title hv-window-copy" data-words="load">Metal fabrication machinery</h1>
+      <div class="hc-aside hv-window-copy" data-reveal="fade-up" data-reveal-on="load" data-delay=".5">
+        <p class="hv-lead">Press brakes, fiber lasers, band saws, angle rolls, shears, plate rollers and ironworkers, sold, installed and supported in Canada from Mississauga, Ontario.</p>
+        <a class="btn btn-primary btn-lg" href="#reques-a-quote">Request a quote</a>
+      </div>
+      <p class="hc-hint hv-window-copy" data-reveal="fade-up" data-reveal-on="load" data-delay=".8">Scroll to open the floor</p>
+    </div>
+  </div>
+</section>
+
+{{ facts_row("field-ink") }}
+
+<section class="hc-poster" aria-labelledby="poster-title">
+  <div class="hc-pinned" aria-hidden="true"><p class="hc-pinned-title">Best sellers<br>in Canada &amp; the US</p></div>
+  <h2 id="poster-title" class="sr-only">Best sellers in Canada and the US</h2>
+  <ol class="hc-panels">
+    {% for g in sc.hero %}
+    <li class="hc-panel tone-{{ g.tone }}">
+      <figure class="hc-panel-art" data-reveal="scale">
+        <a href="{{ g.href }}" tabindex="-1" aria-hidden="true"><img class="hv-cut is-centred" src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="(max-width: 700px) 86vw, 50vw" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></a>
+      </figure>
+      <p class="hc-panel-caption"><a href="{{ g.href }}"><strong>{{ g.name }}</strong></a><span>{{ g.fact }} · {{ g.count }} machine families</span></p>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+{{ also_list(sc.groups, "field-white") }}
+
+<section class="field field-dark hc-names" aria-label="Manufacturers we represent">
+  <div class="hv-marquee hv-names" data-marquee="60">
+    <div class="hv-marquee-track">
+      {% for b in page.brands %}<span>{{ b.name }}</span>{% endfor %}
+    </div>
+  </div>
+  <p class="wrap hv-lead hc-names-note">Manufacturers in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China, each building the machines it knows best, plus NovoTech's own premium and value lines. <a class="hv-link" href="about-us.html">About NovoTech</a></p>
+</section>
+
+{{ showroom("field-paper") }}
+
+{{ work_strip("field-ink") }}
+
+{{ learn_row("field-white") }}
+
+{% include "partials/quote.html" %}
+{% endblock %}
+
+{% block scripts %}<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/home.js?v={{ js_hash }}" defer></script>{% endblock %}

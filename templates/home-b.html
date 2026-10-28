@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% from "partials/home.html" import showroom, learn_row, also_list, facts_row with context %}
+{% block body_attrs %} class="home-b"{% endblock %}
+{% block head %}<style>{{ css_text("home.css") | safe }}{{ css_text("home-b.css") | safe }}</style>{% endblock %}
+
+{% block content %}
+{% set sc = page.showcase %}
+<section class="hb-hero" data-slider data-interval="5200" data-drift aria-label="NovoTech Machine Tools">
+  <div class="wrap hb-hero-top">
+    <h1 class="hb-title" data-reveal="fade-up" data-reveal-on="load">Metal fabrication machinery, sold and supported in Canada</h1>
+    <p class="hb-top-right" data-reveal="fade-up" data-reveal-on="load" data-delay=".15">Showroom and parts in Mississauga, Ontario · CSA panel on every machine</p>
+  </div>
+  <p class="hb-verb hb-line-1" aria-live="polite"><span data-slider-verb>Bend sheet and plate.</span></p>
+  <div class="hb-stage" data-depth=".018">
+    {% for g in sc.hero %}
+    <figure class="hv-slide{{ ' is-active' if loop.first else '' }}" data-name="{{ g.name }}" data-title="{{ g.name }}" data-fact="{{ g.fact }}" data-href="{{ g.href }}" data-cta="See {{ g.name | lower }}" data-verb="{{ g.verb }} {{ g.object }}.">
+      <img class="hv-cut" src="{{ g.img.src }}" srcset="{{ g.img.srcset }}" sizes="(max-width: 700px) 92vw, 60vw" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="{{ g.img.alt }}"{% if not loop.first %} loading="lazy"{% else %} fetchpriority="high"{% endif %} decoding="async">
+    </figure>
+    {% endfor %}
+  </div>
+  <p class="hb-verb hb-line-2">Sold and supported in Canada.</p>
+  <div class="wrap hb-hero-side">
+    <p class="hb-side-left hv-lead" data-reveal="fade-up" data-reveal-on="load" data-delay=".3">Press brakes, fiber lasers, band saws, angle rolls, shears, plate rollers, ironworkers and rebar machines — installed, trained and serviced by NovoTech from Mississauga, Ontario.</p>
+    <div class="hb-side-right" data-reveal="fade-up" data-reveal-on="load" data-delay=".4">
+      <p class="hb-now"><strong data-slider-title>{{ sc.hero[0].name }}</strong><span data-slider-fact>{{ sc.hero[0].fact }}</span></p>
+      <a class="btn btn-primary" data-slider-link href="{{ sc.hero[0].href }}">See press brakes</a>
+    </div>
+  </div>
+  <div class="wrap hb-controls">
+    <div class="hb-dots" data-slider-dots role="group" aria-label="Choose a machine"></div>
+    <div class="hb-arrows">
+      <button type="button" class="hb-arrow" data-slider-prev aria-label="Previous machine">←</button>
+      <button type="button" class="hb-arrow" data-slider-next aria-label="Next machine">→</button>
+    </div>
+  </div>
+</section>
+
+{{ facts_row("field-ink") }}
+
+<section class="hb-chapters" aria-labelledby="chapters-title">
+  <h2 id="chapters-title" class="sr-only">Best sellers in Canada and the US</h2>
+  {% for g in sc.hero[:6] %}
+  <article class="hb-chapter tone-{{ g.tone }}" data-chapter>
+    <div class="hv-chapter-field"></div>
+    <div class="wrap hb-chapter-grid">
+      <div class="hb-chapter-copy" data-reveal-group>
+        <h3 class="hb-chapter-title" data-reveal-item><a href="{{ g.href }}">{{ g.name }}</a></h3>
+        <p class="hb-chapter-count" data-reveal-item>{{ g.count }} machine families · {{ g.fact }}</p>
+        <p class="hb-chapter-line" data-reveal-item>{{ g.line }}</p>
+        <a class="hv-link hb-chapter-link" href="{{ g.href }}" data-reveal-item>All {{ g.name | lower }}</a>
+      </div>
+      <figure class="hv-chapter-art">
+        <a href="{{ g.href }}" tabindex="-1" aria-hidden="true"><img class="hv-cut is-centred" src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="(max-width: 700px) 92vw, 56vw" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></a>
+      </figure>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+{{ also_list(sc.groups, "field-white") }}
+
+<section class="field field-orange hb-names" aria-label="Manufacturers we represent">
+  <div class="hv-marquee hv-names" data-marquee="60">
+    <div class="hv-marquee-track">
+      {% for b in page.brands %}<span>{{ b.name }}</span>{% endfor %}
+    </div>
+  </div>
+  <p class="wrap hv-lead hb-names-note">Manufacturers in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China, each building the machines it knows best, plus NovoTech's own premium and value lines. <a class="hv-link" href="about-us.html">About NovoTech</a></p>
+</section>
+
+{{ showroom("field-paper") }}
+
+{{ learn_row("field-white") }}
+
+{% include "partials/quote.html" %}
+{% endblock %}
+
+{% block scripts %}<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/home.js?v={{ js_hash }}" defer></script>{% endblock %}

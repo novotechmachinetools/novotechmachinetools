@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.meta_description }}">
-{% if staging %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
+{% if staging or page.draft %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
 <link rel="canonical" href="{{ page.url }}">
 <meta name="theme-color" content="#2D2E30">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -36,7 +36,7 @@
 {% block head %}{% endblock %}
 <script type="application/ld+json">{{ ld_json|safe }}</script>
 </head>
-<body id="top">
+<body id="top"{% block body_attrs %}{% endblock %}>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-row">
@@ -135,5 +135,6 @@
 <a class="to-top" href="#top" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M12 19V5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="m5 12 7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 {% include "partials/ai.html" %}
 <script src="js/site.js?v={{ js_hash }}" defer></script>
+{% block scripts %}{% endblock %}
 </body>
 </html>

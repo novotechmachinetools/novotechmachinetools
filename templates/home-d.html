@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% from "partials/home.html" import learn_row, facts_row, work_strip with context %}
+{% block body_attrs %} class="home-d"{% endblock %}
+{% block head %}<style>{{ css_text("home.css") | safe }}{{ css_text("home-d.css") | safe }}</style>
+<link rel="preload" as="image" href="{{ page.showcase.video.poster }}">{% endblock %}
+
+{% block content %}
+{% set sc = page.showcase %}
+<section class="hd-split" aria-label="NovoTech Machine Tools">
+  <div class="hd-read">
+    <div class="hd-hero">
+      <h1 class="hd-title" data-words="load">Metal fabrication machinery, sold and supported in Canada</h1>
+      <p class="hv-lead" data-reveal="fade-up" data-reveal-on="load" data-delay=".5">Press brakes, fiber lasers, band saws, angle rolls, shears, plate rollers, ironworkers and rebar machines from manufacturers in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China. Every machine comes with a CSA-approved panel; NovoTech installs it, trains your operators and keeps the parts in Mississauga, Ontario.</p>
+      <div class="cta-row" data-reveal="fade-up" data-reveal-on="load" data-delay=".65">
+        <a class="btn btn-primary btn-lg" href="#reques-a-quote">Request a quote</a>
+        <a class="hv-link" href="#machines">Browse the machines</a>
+      </div>
+      <ul class="hd-points" data-reveal-group>
+        {% for p in page.hero_points %}<li data-reveal-item>{{ p }}</li>{% endfor %}
+      </ul>
+    </div>
+
+    <div class="hd-index" id="machines" data-index="#hd-frame" data-index-media="#hd-media">
+      <h2 class="hv-display-2" data-words>The machines, by what they do</h2>
+      <p class="hv-lead">Point at a line to see the machine. The first eight are the ones Canadian and American shops ask us for most.</p>
+      <ol class="hd-rows">
+        {% for g in sc.groups %}
+        <li>
+          <a class="hd-row{{ ' is-hero' if g.hero else '' }}" href="{{ g.href }}" data-index-row data-img="{{ g.img.src }}" data-srcset="{{ g.img.srcset }}" data-tone="{{ g.tone }}" data-caption="{{ g.line }}">
+            <span class="hd-row-verb">{{ g.verb }}</span>
+            <span class="hd-row-name">{{ g.name }}</span>
+            <span class="hd-row-fact">{{ g.fact }}</span>
+            <span class="hd-row-thumb" aria-hidden="true"><img src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="96px" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></span>
+          </a>
+        </li>
+        {% endfor %}
+      </ol>
+      <p><a class="btn btn-ghost" href="products.html">All {{ page.category_count }} kinds of machine</a></p>
+    </div>
+
+    <div class="hd-about">
+      <h2 class="hv-display-2" data-words>See it run before you buy</h2>
+      <p class="hv-lead">Our showroom and parts warehouse are at {{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }}. Bring a drawing or a sample part and we will cut, bend or roll it on the machine you are considering. Call ahead and it will be on the floor and wired up.</p>
+      <p class="hv-showroom-hours"><strong>{{ site.hours }}</strong> Eastern · <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a></p>
+      <ul class="hv-showroom-photos hd-photos" data-reveal-group>
+        {% for im in page.showroom_imgs %}<li data-reveal-item><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 700px) 46vw, 300px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></li>{% endfor %}
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contact-us.html">Plan a visit</a>
+        <a class="btn btn-ghost" href="about-us.html">About NovoTech</a>
+      </div>
+      <h3 class="hd-brands-title">Manufacturers we represent</h3>
+      <ul class="hd-brands">
+        {% for b in page.brands %}<li>{{ b.name }}<span>{{ b.country }}</span></li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="hd-media" id="hd-media">
+    <div class="hd-media-video hv-video">
+      <img src="{{ sc.video.poster }}" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
+      <video data-hero-video muted playsinline loop preload="metadata" poster="{{ sc.video.poster }}" aria-hidden="true" tabindex="-1"><source src="{{ sc.video.src }}" type="video/mp4"></video>
+    </div>
+    <div class="hd-frame tone-dark" id="hd-frame" aria-hidden="true">
+      <img class="hv-cut is-centred" src="{{ sc.groups[0].img.src }}" srcset="{{ sc.groups[0].img.srcset }}" sizes="50vw" width="{{ sc.groups[0].img.w }}" height="{{ sc.groups[0].img.h }}" alt="" decoding="async">
+      <img class="hv-cut is-centred" src="{{ sc.groups[0].img.src }}" alt="" decoding="async" style="opacity:0">
+      <p class="hd-frame-caption" data-index-caption>{{ sc.groups[0].line }}</p>
+    </div>
+  </div>
+</section>
+
+{{ facts_row("field-ink") }}
+
+{{ work_strip("field-paper") }}
+
+{{ learn_row("field-white") }}
+
+{% include "partials/quote.html" %}
+{% endblock %}
+
+{% block scripts %}<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/home.js?v={{ js_hash }}" defer></script>{% endblock %}
