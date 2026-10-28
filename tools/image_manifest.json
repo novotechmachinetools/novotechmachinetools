@@ -10992,25 +10992,32 @@
   "alt": "NovoTech BS-2114TH hydraulic band saw, 15-3/4-inch",
   "variants": [
    {
+    "w": 1200,
+    "h": 908,
+    "file": "img/bandsaw/nt-h16-1-1200.webp",
+    "bytes": 145834
+   },
+   {
     "w": 800,
-    "h": 590,
+    "h": 605,
     "file": "img/bandsaw/nt-h16-1-800.webp",
-    "bytes": 83676
+    "bytes": 91008
    },
    {
     "w": 480,
-    "h": 354,
+    "h": 363,
     "file": "img/bandsaw/nt-h16-1-480.webp",
-    "bytes": 45288
+    "bytes": 46064
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 118,
+   "h": 121,
    "file": "img/bandsaw/nt-h16-1-thumb.webp",
-   "bytes": 9954
-  }
+   "bytes": 10208
+  },
+  "cut": "birefnet"
  },
  "nt-h12sc-1": {
   "alt": "NovoTech BS-5030 single-column band saw with touch screen",
@@ -11578,29 +11585,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 1081,
+    "h": 1114,
     "file": "img/bandsaw/nt-dc11t-1-1200.webp",
-    "bytes": 54858
+    "bytes": 88120
    },
    {
     "w": 800,
-    "h": 721,
+    "h": 742,
     "file": "img/bandsaw/nt-dc11t-1-800.webp",
-    "bytes": 35246
+    "bytes": 54640
    },
    {
     "w": 480,
-    "h": 432,
+    "h": 445,
     "file": "img/bandsaw/nt-dc11t-1-480.webp",
-    "bytes": 19978
+    "bytes": 30904
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 144,
+   "h": 148,
    "file": "img/bandsaw/nt-dc11t-1-thumb.webp",
-   "bytes": 4966
+   "bytes": 7920
   }
  },
  "nt-dc11t-2": {
@@ -11671,33 +11678,33 @@
   }
  },
  "nt-dc11av-1": {
-  "alt": "NovoTech TBK-4228B (improved) automatic double column band saw with variable speed, 11\u2033",
+  "alt": "NovoTech TBK-4228B automatic double column band saw with variable speed, 11\u2033",
   "variants": [
    {
     "w": 1200,
-    "h": 1060,
+    "h": 1049,
     "file": "img/bandsaw/nt-dc11av-1-1200.webp",
-    "bytes": 86634
+    "bytes": 103054
    },
    {
     "w": 800,
-    "h": 707,
+    "h": 699,
     "file": "img/bandsaw/nt-dc11av-1-800.webp",
-    "bytes": 53966
+    "bytes": 62674
    },
    {
     "w": 480,
-    "h": 424,
+    "h": 420,
     "file": "img/bandsaw/nt-dc11av-1-480.webp",
-    "bytes": 29458
+    "bytes": 34690
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 141,
+   "h": 140,
    "file": "img/bandsaw/nt-dc11av-1-thumb.webp",
-   "bytes": 7382
+   "bytes": 8466
   }
  },
  "nt-dc11av-3": {
@@ -11982,25 +11989,32 @@
   "alt": "NovoTech BS-2114TH hydraulic band saw, 15-3/4-inch",
   "variants": [
    {
+    "w": 1200,
+    "h": 908,
+    "file": "img/bandsaw/nt-h16-1-cut-1200.webp",
+    "bytes": 152102
+   },
+   {
     "w": 800,
-    "h": 590,
+    "h": 605,
     "file": "img/bandsaw/nt-h16-1-cut-800.webp",
-    "bytes": 86928
+    "bytes": 94066
    },
    {
     "w": 480,
-    "h": 354,
+    "h": 363,
     "file": "img/bandsaw/nt-h16-1-cut-480.webp",
-    "bytes": 46886
+    "bytes": 47652
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 118,
+   "h": 121,
    "file": "img/bandsaw/nt-h16-1-cut-thumb.webp",
-   "bytes": 9954
-  }
+   "bytes": 10208
+  },
+  "cut": "birefnet"
  },
  "nt-h12sc-1-cut": {
   "alt": "NovoTech BS-5030 single-column band saw with touch screen",
@@ -37576,33 +37590,33 @@
   }
  },
  "nt-dc11av-1-cut": {
-  "alt": "NovoTech TBK-4228B (improved) automatic double column band saw with variable speed, 11\u2033",
+  "alt": "NovoTech TBK-4228B automatic double column band saw with variable speed, 11\u2033",
   "variants": [
    {
     "w": 1200,
-    "h": 1060,
+    "h": 1049,
     "file": "img/bandsaw/nt-dc11av-1-cut-1200.webp",
-    "bytes": 86634
+    "bytes": 103054
    },
    {
     "w": 800,
-    "h": 707,
+    "h": 699,
     "file": "img/bandsaw/nt-dc11av-1-cut-800.webp",
-    "bytes": 53966
+    "bytes": 62674
    },
    {
     "w": 480,
-    "h": 424,
+    "h": 420,
     "file": "img/bandsaw/nt-dc11av-1-cut-480.webp",
-    "bytes": 29458
+    "bytes": 34690
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 141,
+   "h": 140,
    "file": "img/bandsaw/nt-dc11av-1-cut-thumb.webp",
-   "bytes": 7382
+   "bytes": 8466
   }
  },
  "nt-bs315gf-v1": {
