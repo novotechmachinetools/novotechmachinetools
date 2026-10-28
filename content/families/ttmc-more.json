@@ -13,7 +13,6 @@
   "tt-e3in1",
   "tt-lock",
   "tt-hvac",
-  "tt-rtb",
   "tt-duct",
   "tt-s75",
   "tt-s75h",
@@ -50,21 +49,14 @@
   "tt-plasma-servo",
   "tt-plasma-compact",
   "tt-pcp",
-  "tt-ew",
   "tt-ph",
-  "tt-ss",
   "tt-pic50",
   "tt-hammer",
-  "tt-arbor",
-  "tt-bench-press",
-  "tt-tpunch",
-  "tt-riveter",
   "tt-jtb",
   "tt-tbm60",
   "tt-tb3",
   "tt-exhaust",
   "tt-hb-pipe",
-  "tt-tb-hand",
   "tt-cs",
   "tt-pds315h",
   "tt-pds400",
@@ -73,9 +65,7 @@
   "tt-qcs400",
   "tt-hnm",
   "tt-pnm",
-  "tt-notch-hand",
   "tt-ptn",
-  "tt-pn-hand",
   "tt-prs",
   "tt-m55",
   "tt-rbm",
@@ -83,10 +73,10 @@
   "tt-tr",
   "tt-etb",
   "tt-rm-deep",
-  "tt-bead",
   "tt-shop-hs",
   "tt-shop-small",
-  "tt-shop-brake",
+  "tt-ebp10t",
+  "tt-riveter",
   "tt-hp-h",
   "tt-hpb",
   "tt-hp-m1",
@@ -96,10 +86,8 @@
   "tt-hcs",
   "tt-hbv",
   "tt-hb-horizontal",
-  "tt-ub",
   "tt-her",
   "tt-esr",
-  "tt-slip-hand",
   "tt-bfm2560"
  ],
  "families": {
@@ -4100,22 +4088,19 @@
   "tt-hvac": {
    "id": "tt-hvac",
    "brand": "novotech",
-   "name": "SL-10 seam closer, CHB / CB cleat benders and LB-2 letter bender",
-   "short": "Duct and sign tools",
-   "models_label": "CHB-24 – LB-2 · 6 models",
-   "summary": "The tools that finish the duct: the SL-10 electric seam closer runs along a Pittsburgh seam and closes it in three stages, adjusting itself to 26 – 20 ga sheet; the CHB hand brakes bend 1/4 to 1″ flanges 24 or 30″ long; the CB cleat benders form drive-cleat edges on rectangular duct in seconds, with no set-up. The LB-2 is a foot-operated channel letter bender for sign makers — Z, S and W bends in aluminum up to 0.079″.",
+   "name": "SL-10 electric seam closer for Pittsburgh seams, 26 – 20 ga",
+   "short": "SL-10 seam closer",
+   "models_label": "SL-10 · 1 model",
+   "summary": "The SL-10 runs along a Pittsburgh seam and closes it in three stages — 30°, 75° and 90° — adjusting itself to the sheet as it goes: faster, quieter and neater than closing the lip with a hammer, on straight and curved rectangular duct in 26 – 20 ga. It weighs 15 lb, so one hand guides it along the seam on the bench or on the job site.",
    "features": [
-    "SL-10: closes Pittsburgh seams in 3 stages (30°, 75°, 90°); 13 – 23 ft/min; 120 V or 230 V",
-    "CHB-24 / CHB-30: hand brakes for 1/4 – 1″ flanges in 20 ga, bench mounted, two-way trunnion",
-    "CB-24 / CB-30: drive-cleat edges in 20 ga; quick release with 3 handle positions; needle bearings",
-    "LB-2: channel letter bender for aluminum to 0.079″ (2 mm), foot pedal and depth stop"
+    "Closes Pittsburgh seams in 3 stages (30°, 75°, 90°)",
+    "26 – 20 ga (0.5 – 1 mm) sheet; flange 0.28 – 0.35″ (7 – 9 mm)",
+    "13 – 23 ft/min (4 – 7 m/min); 1,400 W motor, 120 V or 230 V",
+    "15 lb (6.6 kg) — portable"
    ],
    "optional": [],
    "images": [
-    "tm-sl10",
-    "tm-chb",
-    "tm-cb",
-    "tm-lb2"
+    "tm-sl10"
    ],
    "videos": [],
    "headline": "26 – 20 ga duct",
@@ -4123,27 +4108,17 @@
     "kind": "table",
     "tables": [
      {
-      "title": "CHB · CB · SL-10 · LB-2",
-      "sub": "HVAC duct hand tools: hand brakes, cleat benders, seam closer and letter bender",
+      "title": "SL-10",
+      "sub": "Electric seam closer for Pittsburgh seams",
       "models": [
-       "CHB-24",
-       "CHB-30",
-       "CB-24",
-       "CB-30",
-       "SL-10",
-       "LB-2"
+       "SL-10"
       ],
       "rows": [
        {
         "label": "Job",
         "sub": "",
         "cells": [
-         "Hand brake for 1/4 – 1″ flanges, 24″ long",
-         "Hand brake for 1/4 – 1″ flanges, 30″ long",
-         "Drive cleat edges on duct, 24″",
-         "Drive cleat edges on duct, 30″",
-         "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)",
-         "Channel letter bender for sign makers — Z, S and W bends"
+         "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)"
         ],
         "key": true
        },
@@ -4151,51 +4126,15 @@
         "label": "Capacity",
         "sub": "",
         "cells": [
-         "20 ga (1 mm)",
-         "20 ga (1 mm)",
-         "20 ga (1 mm)",
-         "20 ga (1 mm)",
-         "26 – 20 ga (0.5 – 1 mm); flange 0.28 – 0.35″ (7 – 9 mm)",
-         "0.079″ (2 mm) aluminum"
+         "26 – 20 ga (0.5 – 1 mm); flange 0.28 – 0.35″ (7 – 9 mm)"
         ],
         "key": true
-       },
-       {
-        "label": "Working width / fence",
-        "sub": "",
-        "cells": [
-         "24″ (610 mm); fence 1/4 – 1″ (6.35 – 25.4 mm)",
-         "30″ (760 mm); fence 1/4 – 1″ (6.35 – 25.4 mm)",
-         "24″ (610 mm)",
-         "30″ (760 mm); fence 0 – 1/2″ (0 – 12.7 mm)",
-         "—",
-         "—"
-        ],
-        "key": false
        },
        {
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand levers, bench mount",
-         "Hand levers, bench mount",
-         "Hand levers, 3-position quick release",
-         "Hand levers, 3-position quick release",
-         "1,400 W motor, 120 V or 230 V, 13 – 23 ft/min (4 – 7 m/min)",
-         "Foot pedal, depth stop"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "32 × 15 × 4″ (81 × 38 × 11 cm)",
-         "39 × 15 × 7″ (98 × 38 × 18 cm)",
-         "32 × 11 × 12″ (82 × 27 × 31 cm)",
-         "38 × 11 × 12″ (96 × 27 × 30 cm)",
-         "—",
-         "47 × 26 × 16″ (120 × 67 × 40 cm)"
+         "1,400 W motor, 120 V or 230 V, 13 – 23 ft/min (4 – 7 m/min)"
         ],
         "key": false
        },
@@ -4203,12 +4142,7 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "66 lb (30 kg)",
-         "75 lb (34 kg)",
-         "57 lb (26 kg)",
-         "66 lb (30 kg)",
-         "15 lb (6.6 kg)",
-         "90 lb (41 kg)"
+         "15 lb (6.6 kg)"
         ],
         "key": true
        }
@@ -4217,51 +4151,11 @@
     ],
     "models": [
      {
-      "name": "CHB-24",
-      "glance": [
-       "Hand brake for 1/4 – 1″ flanges, 24″ long",
-       "20 ga (1 mm)",
-       "66 lb (30 kg)"
-      ]
-     },
-     {
-      "name": "CHB-30",
-      "glance": [
-       "Hand brake for 1/4 – 1″ flanges, 30″ long",
-       "20 ga (1 mm)",
-       "75 lb (34 kg)"
-      ]
-     },
-     {
-      "name": "CB-24",
-      "glance": [
-       "Drive cleat edges on duct, 24″",
-       "20 ga (1 mm)",
-       "57 lb (26 kg)"
-      ]
-     },
-     {
-      "name": "CB-30",
-      "glance": [
-       "Drive cleat edges on duct, 30″",
-       "20 ga (1 mm)",
-       "66 lb (30 kg)"
-      ]
-     },
-     {
       "name": "SL-10",
       "glance": [
        "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)",
        "26 – 20 ga (0.5 – 1 mm); flange 0.28 – 0.35″ (7 – 9 mm)",
        "15 lb (6.6 kg)"
-      ]
-     },
-     {
-      "name": "LB-2",
-      "glance": [
-       "Channel letter bender for sign makers — Z, S and W bends",
-       "0.079″ (2 mm) aluminum",
-       "90 lb (41 kg)"
       ]
      }
     ],
@@ -4271,144 +4165,13 @@
      "weight"
     ],
     "caps": {
-     "CHB-24": "Hand brake for 1/4 – 1″ flanges, 24″ long",
-     "CHB-30": "Hand brake for 1/4 – 1″ flanges, 30″ long",
-     "CB-24": "Drive cleat edges on duct, 24″",
-     "CB-30": "Drive cleat edges on duct, 30″",
-     "SL-10": "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)",
-     "LB-2": "Channel letter bender for sign makers — Z, S and W bends"
+     "SL-10": "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
-   "manual": true,
+   "manual": false,
    "no_pdf": true,
    "group": "duct"
-  },
-  "tt-rtb": {
-   "id": "tt-rtb",
-   "brand": "novotech",
-   "name": "RTB round duct rollers, 22 ga × 40 – 49″",
-   "short": "RTB duct rollers",
-   "models_label": "RTB-8 · RTB-8A · RTB-8AS · 3 models",
-   "summary": "Hand rollers that roll 22 ga (0.8 mm) sheet into round duct and pipe, 40″ or 49″ long, with hardened rolls: light and portable for the bench, or on a welded stand at a 33.5″ working height (RTB-8AS).",
-   "features": [
-    "22 ga (0.8 mm) × 40″ (RTB-8) and 49″ (RTB-8A, RTB-8AS)",
-    "Hardened rolls; portable and compact",
-    "RTB-8AS on a welded stand, roll height 33.5″ (850 mm)"
-   ],
-   "optional": [],
-   "images": [
-    "tm-rtb8as",
-    "tm-rtb8"
-   ],
-   "videos": [],
-   "headline": "22 ga × 40 – 49″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "RTB-8 · RTB-8A · RTB-8AS",
-      "sub": "Hand rollers for forming round duct and pipe from sheet, 40 – 49″",
-      "models": [
-       "RTB-8",
-       "RTB-8A",
-       "RTB-8AS"
-      ],
-      "rows": [
-       {
-        "label": "Working length",
-        "sub": "",
-        "cells": [
-         "40″ (1,020 mm)",
-         "49″ (1,250 mm)",
-         "49″ (1,250 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Mounting",
-        "sub": "",
-        "cells": [
-         "Bench, portable",
-         "Bench, portable",
-         "On welded stand, roll height 33.5″ (850 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "54 × 12 × 16″ (136 × 30 × 40 cm)",
-         "63 × 12 × 16″ (160 × 30 × 40 cm)",
-         "59 × 58 × 15″ (150 × 147 × 38 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "130 lb (59 kg)",
-         "141 lb (64 kg)",
-         "205 lb (93 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "RTB-8",
-      "glance": [
-       "40″ (1,020 mm)",
-       "22 ga (0.8 mm)",
-       "130 lb (59 kg)"
-      ]
-     },
-     {
-      "name": "RTB-8A",
-      "glance": [
-       "49″ (1,250 mm)",
-       "22 ga (0.8 mm)",
-       "141 lb (64 kg)"
-      ]
-     },
-     {
-      "name": "RTB-8AS",
-      "glance": [
-       "49″ (1,250 mm)",
-       "22 ga (0.8 mm)",
-       "205 lb (93 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "working_length",
-     "capacity_mild_steel",
-     "weight"
-    ],
-    "caps": {
-     "RTB-8": "40″ (1,020 mm)",
-     "RTB-8A": "49″ (1,250 mm)",
-     "RTB-8AS": "49″ (1,250 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "round"
   },
   "tt-duct": {
    "id": "tt-duct",
@@ -12030,307 +11793,13 @@
    "no_pdf": true,
    "group": "pipe"
   },
-  "tt-ew": {
-   "id": "tt-ew",
-   "brand": "novotech",
-   "name": "English wheels, 22 – 14 ga, 18 – 45″ throat",
-   "short": "English wheels",
-   "models_label": "F0.8×450 – F2.0×760 · 10 models",
-   "summary": "English wheels stretch sheet into compound curves — fenders, hoods, tanks, aircraft and boat panels — by rolling it between a flat upper wheel and a crowned lower anvil. Ten models from the F0.8×450 for 22 ga with an 18″ throat to the F1.5×1100 with a 45″ throat and the heavy F2.0 wheels for 14 ga: rigid welded C-frames, hardened wheels, sets of lower anvils with radii from flat to 12″, quick-release lower anvils and foot pressure control on the F1.2×1000.",
-   "features": [
-    "22 ga (0.8 mm) to 14 ga (2 mm) mild steel; aluminum and copper heavier",
-    "Throat 18 – 45″ (450 – 1,145 mm)",
-    "Upper wheel Ø7-5/8 – 8″; 5 – 10 lower anvils, flat to 12″ radius",
-    "Quick-release lower anvil with locking cam; foot pressure control (F1.2×1000)",
-    "Rigid welded C-frames on stands with anvil storage"
-   ],
-   "optional": [],
-   "images": [
-    "tm-f1570",
-    "tm-f15110",
-    "tm-f2076",
-    "tm-f1210",
-    "tm-f12100",
-    "tm-f2063",
-    "tm-f1256"
-   ],
-   "videos": [],
-   "headline": "22 – 14 ga, 18 – 45″ throat",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "F0.8×450 · F1.2×560 · F1.2×560A · F1.2×710 · F1.5×700 · F1.2×1000",
-      "sub": "English wheels, 18 – 40″ throat",
-      "models": [
-       "F0.8×450",
-       "F1.2×560",
-       "F1.2×560A",
-       "F1.2×710",
-       "F1.5×700",
-       "F1.2×1000"
-      ],
-      "rows": [
-       {
-        "label": "Capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "22 ga (0.8 mm)",
-         "18 ga (1.2 mm)",
-         "18 ga (1.2 mm)",
-         "18 ga (1.2 mm)",
-         "16 ga (1.5 mm) steel, 14 ga (2 mm) aluminum and copper",
-         "18 ga (1.2 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "18″ (450 mm)",
-         "22″ (560 mm)",
-         "22″ (560 mm)",
-         "28″ (710 mm)",
-         "27-1/2″ (700 mm)",
-         "40″ (1,040 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Wheels",
-        "sub": "",
-        "cells": [
-         "Upper wheel and lower anvils",
-         "Upper wheel and 6 lower forming wheels",
-         "Upper wheel and 6 lower wheels; quick-change",
-         "Upper wheel and 6 lower forming wheels",
-         "Upper wheel 7-5/8 × 3″ (195 × 75 mm); lower anvil radii 47, 55, 75, 220, 1,000 mm; hardened; 0.15 / 0.06 mm accuracy",
-         "5 lower forming wheels; quick lever; sideways lower-wheel adjustment; foot pressure control"
-        ],
-        "key": false
-       },
-       {
-        "label": "Frame",
-        "sub": "",
-        "cells": [
-         "Bench frame on stand",
-         "Welded C-frame on stand",
-         "Welded C-frame on stand",
-         "Welded C-frame on stand",
-         "Rigid welded C-frame, heavy stand with anvil storage",
-         "Welded frame, professional version"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "25 × 24 × 2″ (63 × 60 × 4.5 cm) body + 34 × 5 × 5″ (87 × 12 × 13 cm) stand",
-         "33 × 29 × 13″ (84 × 74 × 34 cm)",
-         "33 × 29 × 13″ (84 × 74 × 33 cm)",
-         "35 × 31 × 11″ (89 × 80 × 27 cm)",
-         "46 × 41 × 11″ (118 × 103 × 29 cm)",
-         "72 × 37 × 14″ (183 × 93 × 35 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "37 lb (17 kg)",
-         "137 lb (62 kg)",
-         "126 lb (57 kg)",
-         "170 lb (77 kg)",
-         "243 lb (110 kg)",
-         "317 lb (144 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "F1.5×1100 · F2.0×630 · F2.0×630B · F2.0×760",
-      "sub": "Heavy English wheels, 14 – 16 ga, 24-4/5 – 45″ throat",
-      "models": [
-       "F1.5×1100",
-       "F2.0×630",
-       "F2.0×630B",
-       "F2.0×760"
-      ],
-      "rows": [
-       {
-        "label": "Capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "16 ga (1.5 mm)",
-         "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "14 ga (2 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "45″ (1,145 mm)",
-         "24-4/5″ (630 mm)",
-         "24-4/5″ (630 mm)",
-         "30″ (760 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Wheels",
-        "sub": "",
-        "cells": [
-         "10 lower wheels and 4 upper rolling wheels; quick cam handle releases the panel",
-         "Upper wheel Ø8″ (203.5 mm); 6 lower wheels 3″ wide: flat, 2, 4, 6, 8, 12″ radius",
-         "Upper wheel Ø8″ (203.5 mm); roll holder for anvil storage",
-         "Upper wheel Ø8″ (203.5 mm); quick-release lower anvil support with locking cam"
-        ],
-        "key": false
-       },
-       {
-        "label": "Size L × W × H",
-        "sub": "",
-        "cells": [
-         "67 × 60 × 16″ (170 × 152 × 40 cm) crate",
-         "39 × 31 × 64″ (100 × 80 × 162 cm) machine",
-         "39 × 20 × 39″ (100 × 50 × 98 cm) machine",
-         "46 × 39 × 67″ (118 × 100 × 170 cm) machine"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "461 lb (209 kg)",
-         "366 lb (166 kg)",
-         "284 lb (129 kg)",
-         "657 lb (298 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "F0.8×450",
-      "glance": [
-       "22 ga (0.8 mm)",
-       "18″ (450 mm)",
-       "37 lb (17 kg)"
-      ]
-     },
-     {
-      "name": "F1.2×560",
-      "glance": [
-       "18 ga (1.2 mm)",
-       "22″ (560 mm)",
-       "137 lb (62 kg)"
-      ]
-     },
-     {
-      "name": "F1.2×560A",
-      "glance": [
-       "18 ga (1.2 mm)",
-       "22″ (560 mm)",
-       "126 lb (57 kg)"
-      ]
-     },
-     {
-      "name": "F1.2×710",
-      "glance": [
-       "18 ga (1.2 mm)",
-       "28″ (710 mm)",
-       "170 lb (77 kg)"
-      ]
-     },
-     {
-      "name": "F1.5×700",
-      "glance": [
-       "16 ga (1.5 mm) steel, 14 ga (2 mm) aluminum and copper",
-       "27-1/2″ (700 mm)",
-       "243 lb (110 kg)"
-      ]
-     },
-     {
-      "name": "F1.2×1000",
-      "glance": [
-       "18 ga (1.2 mm)",
-       "40″ (1,040 mm)",
-       "317 lb (144 kg)"
-      ]
-     },
-     {
-      "name": "F1.5×1100",
-      "glance": [
-       "16 ga (1.5 mm)",
-       "45″ (1,145 mm)",
-       "461 lb (209 kg)"
-      ]
-     },
-     {
-      "name": "F2.0×630",
-      "glance": [
-       "14 ga (2 mm)",
-       "24-4/5″ (630 mm)",
-       "366 lb (166 kg)"
-      ]
-     },
-     {
-      "name": "F2.0×630B",
-      "glance": [
-       "14 ga (2 mm)",
-       "24-4/5″ (630 mm)",
-       "284 lb (129 kg)"
-      ]
-     },
-     {
-      "name": "F2.0×760",
-      "glance": [
-       "14 ga (2 mm)",
-       "30″ (760 mm)",
-       "657 lb (298 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity_mild_steel",
-     "throat_depth",
-     "weight"
-    ],
-    "caps": {
-     "F0.8×450": "22 ga (0.8 mm) · throat 18″ (450 mm)",
-     "F1.2×560": "18 ga (1.2 mm) · throat 22″ (560 mm)",
-     "F1.2×560A": "18 ga (1.2 mm) · throat 22″ (560 mm)",
-     "F1.2×710": "18 ga (1.2 mm) · throat 28″ (710 mm)",
-     "F1.5×700": "16 ga (1.5 mm) steel, 14 ga (2 mm) aluminum and copper · throat 27-1/2″ (700 mm)",
-     "F1.2×1000": "18 ga (1.2 mm) · throat 40″ (1,040 mm)",
-     "F1.5×1100": "16 ga (1.5 mm) · throat 45″ (1,145 mm)",
-     "F2.0×630": "14 ga (2 mm) · throat 24-4/5″ (630 mm)",
-     "F2.0×630B": "14 ga (2 mm) · throat 24-4/5″ (630 mm)",
-     "F2.0×760": "14 ga (2 mm) · throat 30″ (760 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "wheel"
-  },
   "tt-ph": {
    "id": "tt-ph",
    "brand": "novotech",
    "name": "Planishing hammers and power hammers, 18 – 16 ga, 12 – 30″ throat",
    "short": "Planishing and power hammers",
    "models_label": "PPH-12 – PH-30D · 7 models",
-   "summary": "Hammers that smooth and shape panels after the English wheel: the PPH pneumatic planishing hammers with 12″ and 24″ throats, nine radius anvils and a foot pedal; the PPH-610 that forms and beads 16 ga with quick-change upper dies; the UFP-2 that is a planishing hammer and an English wheel in one; and the PH-20D and PH-30D electric power hammers with 20″ and 30″ throats, variable speed up to 1,700 blows a minute and 16 ga steel or 12 ga aluminum capacity.",
+   "summary": "Hammers that smooth and shape sheet-metal panels: the PPH pneumatic planishing hammers with 12″ and 24″ throats, nine radius anvils and a foot pedal; the PPH-610 that forms and beads 16 ga with quick-change upper dies; the UFP-2 that is a planishing hammer and an English wheel in one; and the PH-20D and PH-30D electric power hammers with 20″ and 30″ throats, variable speed up to 1,700 blows a minute and 16 ga steel or 12 ga aluminum capacity.",
    "features": [
     "PPH-12 / PPH-24: 18 ga, 12 / 24″ throat, 9 radius anvils from 3/4″ to 12″ and flat, foot pedal",
     "PPH-610: 16 ga, 24″ throat, 90 – 120 psi, 3-position air flow",
@@ -12596,270 +12065,6 @@
    "no_pdf": true,
    "group": "hammer"
   },
-  "tt-ss": {
-   "id": "tt-ss",
-   "brand": "novotech",
-   "name": "Shrinker-stretchers, 18 – 16 ga — bench, hand and foot-operated",
-   "short": "Shrinker-stretchers",
-   "models_label": "SS-18 – FSM-16 · 9 models",
-   "summary": "Shrinkers gather the edge of a flange to curve it inward, stretchers spread it to curve it outward — together they bend angle and flanged parts into curves and S-shapes without cutting and welding. Bench models with 1″, 2-3/4″ and 8″ throats, the industrial SM-16B, the SS-12P hand tool and foot-operated models on stands that leave both hands free.",
-   "features": [
-    "18 ga (1.2 mm) and 16 ga (1.5 mm) mild steel",
-    "Throat 1″, 2-3/4″, 6″ and 8″",
-    "Shrinking and stretching jaws; aluminum jaws optional (FSM-16)",
-    "Foot pedal models: SS-18FD (two heads), SS-16F, SG-18F, FSM-16 on a wheeled base"
-   ],
-   "optional": [],
-   "images": [
-    "tm-ss18fd",
-    "tm-ss16f",
-    "tm-fsm16",
-    "tm-ss16",
-    "tm-sm16b",
-    "tm-ss-jaws"
-   ],
-   "videos": [],
-   "headline": "18 – 16 ga",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "SS-16 · SS-18 · SG-18 · SM-16B · SS-12P",
-      "sub": "Shrinker-stretchers, bench and hand",
-      "models": [
-       "SS-18",
-       "SG-18",
-       "SS-16",
-       "SM-16B",
-       "SS-12P"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "18 ga (1.2 mm) mild steel",
-         "16 ga (1.5 mm) mild steel",
-         "16 ga (1.5 mm) mild steel",
-         "16 ga (1.5 mm) mild steel",
-         "18 ga (1.2 mm) mild steel, 16 ga (1.5 mm) aluminum"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "1″ (25.4 mm)",
-         "2-3/4″ (70 mm)",
-         "8″ (208 mm)",
-         "—",
-         "—"
-        ],
-        "key": true
-       },
-       {
-        "label": "Jaws",
-        "sub": "",
-        "cells": [
-         "One body + shrinker and stretcher jaws (two units in the photo)",
-         "Shrinker and stretcher jaws",
-         "Shrinker and stretcher jaws",
-         "Two jaws, industrial type",
-         "Pliers type, quick-change tools"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "18 × 9 × 5″ (46 × 22 × 13 cm)",
-         "18 × 8 × 5″ (46 × 20 × 13 cm)",
-         "14 × 7 × 16″ (35 × 17 × 40 cm)",
-         "31 × 23 × 52″ (80 × 59 × 132 cm)",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "12 lb (5.5 kg)",
-         "12 lb (5.4 kg)",
-         "53 lb (24 kg)",
-         "44 lb (20 kg)",
-         "—"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "SS-18FD · SS-16F · SG-18F · FSM-16",
-      "sub": "Foot-operated shrinker-stretchers on stand",
-      "models": [
-       "SS-18FD",
-       "SS-16F",
-       "SG-18F",
-       "FSM-16"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "18 ga (1.2 mm) mild steel",
-         "16 ga (1.5 mm) mild steel",
-         "18 ga (1.2 mm) mild steel",
-         "16 ga (1.5 mm) mild steel"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "1″ (25.4 mm)",
-         "8″ (208 mm)",
-         "8″ (208 mm)",
-         "6″ (152 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Operation",
-        "sub": "",
-        "cells": [
-         "Foot pedal, two heads (shrink and stretch)",
-         "Foot pedal",
-         "Foot pedal",
-         "Foot pedal; wheeled base; aluminum jaws optional"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "45 × 18 × 7″ (115 × 46 × 19 cm)",
-         "14 × 7 × 17″ (36 × 17 × 42 cm) body + 35 × 26 × 11″ (90 × 65 × 28 cm) stand",
-         "—",
-         "46 × 20 × 9″ (118 × 51 × 23 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "64 lb (29 kg)",
-         "64 lb (29 kg)",
-         "77 lb (35 kg)",
-         "84 lb (38 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "SS-18",
-      "glance": [
-       "18 ga (1.2 mm) mild steel",
-       "1″ (25.4 mm)",
-       "12 lb (5.5 kg)"
-      ]
-     },
-     {
-      "name": "SG-18",
-      "glance": [
-       "16 ga (1.5 mm) mild steel",
-       "2-3/4″ (70 mm)",
-       "12 lb (5.4 kg)"
-      ]
-     },
-     {
-      "name": "SS-16",
-      "glance": [
-       "16 ga (1.5 mm) mild steel",
-       "8″ (208 mm)",
-       "53 lb (24 kg)"
-      ]
-     },
-     {
-      "name": "SM-16B",
-      "glance": [
-       "16 ga (1.5 mm) mild steel",
-       "—",
-       "44 lb (20 kg)"
-      ]
-     },
-     {
-      "name": "SS-12P",
-      "glance": [
-       "18 ga (1.2 mm) mild steel, 16 ga (1.5 mm) aluminum",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "SS-18FD",
-      "glance": [
-       "18 ga (1.2 mm) mild steel",
-       "1″ (25.4 mm)",
-       "64 lb (29 kg)"
-      ]
-     },
-     {
-      "name": "SS-16F",
-      "glance": [
-       "16 ga (1.5 mm) mild steel",
-       "8″ (208 mm)",
-       "64 lb (29 kg)"
-      ]
-     },
-     {
-      "name": "SG-18F",
-      "glance": [
-       "18 ga (1.2 mm) mild steel",
-       "8″ (208 mm)",
-       "77 lb (35 kg)"
-      ]
-     },
-     {
-      "name": "FSM-16",
-      "glance": [
-       "16 ga (1.5 mm) mild steel",
-       "6″ (152 mm)",
-       "84 lb (38 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "throat_depth",
-     "weight"
-    ],
-    "caps": {
-     "SS-18": "18 ga (1.2 mm) mild steel · throat 1″ (25.4 mm)",
-     "SG-18": "16 ga (1.5 mm) mild steel · throat 2-3/4″ (70 mm)",
-     "SS-16": "16 ga (1.5 mm) mild steel · throat 8″ (208 mm)",
-     "SM-16B": "16 ga (1.5 mm) mild steel",
-     "SS-12P": "18 ga (1.2 mm) mild steel, 16 ga (1.5 mm) aluminum",
-     "SS-18FD": "18 ga (1.2 mm) mild steel · throat 1″ (25.4 mm)",
-     "SS-16F": "16 ga (1.5 mm) mild steel · throat 8″ (208 mm)",
-     "SG-18F": "18 ga (1.2 mm) mild steel · throat 8″ (208 mm)",
-     "FSM-16": "16 ga (1.5 mm) mild steel · throat 6″ (152 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "shrink"
-  },
   "tt-pic50": {
    "id": "tt-pic50",
    "brand": "novotech",
@@ -12964,7 +12169,7 @@
    },
    "manual": false,
    "no_pdf": true,
-   "group": "wheel"
+   "group": "former"
   },
   "tt-hammer": {
    "id": "tt-hammer",
@@ -13182,877 +12387,6 @@
    "manual": false,
    "no_pdf": true,
    "group": "forge"
-  },
-  "tt-arbor": {
-   "id": "tt-arbor",
-   "brand": "novotech",
-   "name": "Arbor presses, 1/2 to 8 tons, and hand presses",
-   "short": "Arbor presses",
-   "models_label": "AP-1/2 – MP-800 · 13 models",
-   "summary": "Hand arbor presses for pressing bearings, bushings, pins and gears in and out, broaching keyways and staking: steel bodies, a four-position base plate and square rams from 3/4″ to 2-3/8″, from the 1/2-ton AP-1/2 to the 8-ton AP-8 with 17.7″ of height and a 10″ diameter capacity. The rack-and-pinion AP-1S and AP-2S, the ratchet RAP-2 and RAP-3 and the MP-800 flywheel press cover repeated small-part work.",
-   "features": [
-    "1/2 – 8 tons; work height to 17.7″, diameter to 10.2″",
-    "Four-position base plate; square rams 3/4 – 2-3/8″",
-    "Rack-and-pinion AP-1S / AP-2S with 2,248 – 4,496 lbf",
-    "Ratchet RAP-2 / RAP-3 for 2 – 3 tons with less effort"
-   ],
-   "optional": [],
-   "images": [
-    "tm-ap5",
-    "tm-ap8",
-    "tm-rap"
-   ],
-   "videos": [],
-   "headline": "1/2 – 8 tons",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "AP-1/2 – AP-8",
-      "sub": "Arbor presses, 1/2 to 8 tons",
-      "models": [
-       "AP-1/2",
-       "AP-1",
-       "AP-2",
-       "AP-3",
-       "AP-5",
-       "AP-6",
-       "AP-8"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "1/2 ton",
-         "1 ton",
-         "2 tons",
-         "3 tons",
-         "5 tons",
-         "6 tons",
-         "8 tons"
-        ],
-        "key": true
-       },
-       {
-        "label": "Max. work height × diameter",
-        "sub": "",
-        "cells": [
-         "3.5 × 3.1″ (90 × 80 mm)",
-         "4.3 × 3.9″ (110 × 100 mm)",
-         "7.1 × 4.8″ (180 × 123 mm)",
-         "11.2 × 6.4″ (285 × 163 mm)",
-         "15.7 × 8.9″ (400 × 226 mm)",
-         "17.7 × 10.2″ (450 × 260 mm)",
-         "17.7 × 10″ (450 × 255 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Largest arbor",
-        "sub": "",
-        "cells": [
-         "1″ (26 mm)",
-         "1-1/8″ (29 mm)",
-         "1-9/16″ (40 mm)",
-         "1-3/4″ (44 mm)",
-         "2-3/4″ (70 mm)",
-         "2-1/2″ (65 mm)",
-         "2-1/2″ (65 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Table",
-        "sub": "",
-        "cells": [
-         "Ø3-3/4″ (95 mm)",
-         "Ø4-3/4″ (120 mm)",
-         "Ø6-1/8″ (155 mm)",
-         "Ø7-1/4″ (185 mm)",
-         "Ø10″ (255 mm)",
-         "Ø10-1/4″ (260 mm)",
-         "Ø10″ (255 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Ram",
-        "sub": "",
-        "cells": [
-         "3/4″ (19 mm) square",
-         "1″ (25 mm) square",
-         "1-1/4″ (32 mm) square",
-         "1-1/2″ (38 mm) square",
-         "2″ (50 mm) square",
-         "2″ (50 mm) square",
-         "2-3/8 × 2-1/8″ (60 × 55 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Overall height",
-        "sub": "",
-        "cells": [
-         "11″ (280 mm)",
-         "14″ (355 mm)",
-         "17.5″ (445 mm)",
-         "24.2″ (615 mm)",
-         "32.1″ (815 mm)",
-         "25.4″ (645 mm)",
-         "25.6″ (650 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Base size",
-        "sub": "",
-        "cells": [
-         "9.4 × 6.7″ (240 × 170 mm)",
-         "10.6 × 7.5″ (268 × 190 mm)",
-         "17 × 10.2″ (432 × 260 mm)",
-         "17.9 × 11.8″ (455 × 300 mm)",
-         "25.4 × 6.9″ (645 × 176 mm)",
-         "26 × 11″ (660 × 280 mm)",
-         "25.2 × 10″ (640 × 255 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "15 lb (7 kg)",
-         "24 lb (11 kg)",
-         "66 lb (30 kg)",
-         "99 lb (45 kg)",
-         "260 lb (118 kg)",
-         "265 lb (120 kg)",
-         "287 lb (130 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "AP-1S · AP-2S · MP-1 · RAP-2 · RAP-3 · MP-800",
-      "sub": "Rack-and-pinion and ratchet presses, hand presses for small parts",
-      "models": [
-       "AP-1S",
-       "AP-2S",
-       "MP-1",
-       "RAP-2",
-       "RAP-3",
-       "MP-800"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "2,248 lbf (10 kN)",
-         "4,496 lbf (20 kN)",
-         "2,248 lbf (10 kN)",
-         "2 tons, ratchet",
-         "3 tons, ratchet",
-         "0.8 ton, flywheel"
-        ],
-        "key": true
-       },
-       {
-        "label": "Travel / opening",
-        "sub": "",
-        "cells": [
-         "Travel 5.9 + 2.4″ (150 + 60 mm)",
-         "Travel 7.9 + 3.1″ (200 + 80 mm)",
-         "Travel 4.7″ (120 mm); max. height 10.2″ (260 mm), dia. 7.9″ (200 mm)",
-         "Opening 7.1″ (180 mm)",
-         "Opening 15″ (380 mm)",
-         "Stroke 0.08″ (2 mm); shut height 5.5″ (140 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Table",
-        "sub": "",
-        "cells": [
-         "5.3 × 4.3″ (135 × 110 mm)",
-         "6.1 × 4.7″ (155 × 120 mm)",
-         "Ø9.3″ (235 mm)",
-         "—",
-         "—",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "24 lb (11 kg)",
-         "35 lb (16 kg)",
-         "55 lb (25 kg)",
-         "97 lb (44 kg)",
-         "132 lb (60 kg)",
-         "84 lb (38 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "AP-1/2",
-      "glance": [
-       "1/2 ton",
-       "3.5 × 3.1″ (90 × 80 mm)",
-       "15 lb (7 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "AP-1",
-      "glance": [
-       "1 ton",
-       "4.3 × 3.9″ (110 × 100 mm)",
-       "24 lb (11 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "AP-2",
-      "glance": [
-       "2 tons",
-       "7.1 × 4.8″ (180 × 123 mm)",
-       "66 lb (30 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "AP-3",
-      "glance": [
-       "3 tons",
-       "11.2 × 6.4″ (285 × 163 mm)",
-       "99 lb (45 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "AP-5",
-      "glance": [
-       "5 tons",
-       "15.7 × 8.9″ (400 × 226 mm)",
-       "260 lb (118 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "AP-6",
-      "glance": [
-       "6 tons",
-       "17.7 × 10.2″ (450 × 260 mm)",
-       "265 lb (120 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "AP-8",
-      "glance": [
-       "8 tons",
-       "17.7 × 10″ (450 × 255 mm)",
-       "287 lb (130 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "AP-1S",
-      "glance": [
-       "2,248 lbf (10 kN)",
-       "—",
-       "24 lb (11 kg)",
-       "Travel 5.9 + 2.4″ (150 + 60 mm)"
-      ]
-     },
-     {
-      "name": "AP-2S",
-      "glance": [
-       "4,496 lbf (20 kN)",
-       "—",
-       "35 lb (16 kg)",
-       "Travel 7.9 + 3.1″ (200 + 80 mm)"
-      ]
-     },
-     {
-      "name": "MP-1",
-      "glance": [
-       "2,248 lbf (10 kN)",
-       "—",
-       "55 lb (25 kg)",
-       "Travel 4.7″ (120 mm); max. height 10.2″ (260 mm), dia. 7.9″ (200 mm)"
-      ]
-     },
-     {
-      "name": "RAP-2",
-      "glance": [
-       "2 tons, ratchet",
-       "—",
-       "97 lb (44 kg)",
-       "Opening 7.1″ (180 mm)"
-      ]
-     },
-     {
-      "name": "RAP-3",
-      "glance": [
-       "3 tons, ratchet",
-       "—",
-       "132 lb (60 kg)",
-       "Opening 15″ (380 mm)"
-      ]
-     },
-     {
-      "name": "MP-800",
-      "glance": [
-       "0.8 ton, flywheel",
-       "—",
-       "84 lb (38 kg)",
-       "Stroke 0.08″ (2 mm); shut height 5.5″ (140 mm)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "max_work_height_diameter",
-     "weight",
-     "travel_opening"
-    ],
-    "caps": {
-     "AP-1/2": "1/2 ton",
-     "AP-1": "1 ton",
-     "AP-2": "2 tons",
-     "AP-3": "3 tons",
-     "AP-5": "5 tons",
-     "AP-6": "6 tons",
-     "AP-8": "8 tons",
-     "AP-1S": "2,248 lbf (10 kN)",
-     "AP-2S": "4,496 lbf (20 kN)",
-     "MP-1": "2,248 lbf (10 kN)",
-     "RAP-2": "2 tons, ratchet",
-     "RAP-3": "3 tons, ratchet",
-     "MP-800": "0.8 ton, flywheel"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "arbor"
-  },
-  "tt-bench-press": {
-   "id": "tt-bench-press",
-   "brand": "novotech",
-   "name": "BP-3T · EBP-10T bench presses and BP3-F combination bench press",
-   "short": "Bench presses",
-   "models_label": "BP-3T · EBP-10T · BP3-F · 3 models",
-   "summary": "Bench presses for the sheet-metal and HVAC shop: the BP-3T hand press with a 12″ throat takes industry-standard punches and dies for round, square and oblong holes, punch-and-flare and punch-and-bead tools and louver tooling, and works as an arbor press; the EBP-10T is a 10-ton hydraulic version with a 25″ throat and 6″ tool opening that takes all the BP-3T tooling; the BP3-F mounts four tools at once — bend, stretch, corner punch and shrink — for production.",
-   "features": [
-    "BP-3T: 3 tons, 12″ throat, welded plate, bronze bushings",
-    "EBP-10T: 10 tons hydraulic, 25″ throat, 4″ stroke",
-    "BP3-F: four stations — two 12″ throats and two 3″ throats",
-    "Tooling: shear 16 ga, 90° bend 3/8″, corner punch 16 ga, louver punches 1 – 5″, punch & flare and punch & bead 1 – 3″"
-   ],
-   "optional": [
-    "Shear kit",
-    "90° bend kit",
-    "Corner punch and corner radius punch",
-    "Louver punches",
-    "Punch & flare and punch & bead kits",
-    "Universal tool stand"
-   ],
-   "images": [
-    "tm-bp3t",
-    "tm-ebp10t",
-    "tm-bp3f",
-    "tm-louver"
-   ],
-   "videos": [],
-   "headline": "3 – 10 tons",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "BP-3T · EBP-10T · BP3-F",
-      "sub": "Bench presses for punch, flare, bead, louver and bend tooling",
-      "models": [
-       "BP-3T",
-       "EBP-10T",
-       "BP3-F"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "3 tons, hand lever",
-         "10 tons, hydraulic, 4″ stroke",
-         "Four hand stations"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "12″",
-         "25″",
-         "Two 12″ and two 3″ throats"
-        ],
-        "key": true
-       },
-       {
-        "label": "Tool opening",
-        "sub": "",
-        "cells": [
-         "—",
-         "6″",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Tooling",
-        "sub": "",
-        "cells": [
-         "Industry-standard punches and dies for round, square and oblong holes; punch & flare and punch & bead tools; louver press tooling",
-         "All BP-3T bench and louver press tooling; adaptor and die plate included",
-         "90° bend kit (3/8″ mild steel), stretcher (1.5 mm), corner punch (16 ga, 1 × 1″ cut), shrinker (1.5 mm) — four tools mounted at once"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "27 × 15 × 28″ (68 × 38 × 72 cm)",
-         "53 × 45 × 25″ (135 × 115 × 63 cm)",
-         "44 × 35 × 65″ (111 × 88 × 165 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "148 lb (67 kg)",
-         "739 lb (335 kg)",
-         "617 lb (280 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "BP-3T",
-      "glance": [
-       "3 tons, hand lever",
-       "12″",
-       "Industry-standard punches and dies for round, square and oblong holes; punch & flare and punch & bead tools; louver press tooling",
-       "148 lb (67 kg)"
-      ]
-     },
-     {
-      "name": "EBP-10T",
-      "glance": [
-       "10 tons, hydraulic, 4″ stroke",
-       "25″",
-       "All BP-3T bench and louver press tooling; adaptor and die plate included",
-       "739 lb (335 kg)"
-      ]
-     },
-     {
-      "name": "BP3-F",
-      "glance": [
-       "Four hand stations",
-       "Two 12″ and two 3″ throats",
-       "90° bend kit (3/8″ mild steel), stretcher (1.5 mm), corner punch (16 ga, 1 × 1″ cut), shrinker (1.5 mm) — four tools mounted at once",
-       "617 lb (280 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "throat_depth",
-     "tooling",
-     "weight"
-    ],
-    "caps": {
-     "BP-3T": "3 tons, hand lever",
-     "EBP-10T": "10 tons, hydraulic, 4″ stroke",
-     "BP3-F": "Four hand stations"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "bench"
-  },
-  "tt-tpunch": {
-   "id": "tt-tpunch",
-   "brand": "novotech",
-   "name": "TP-12 · TP-24 manual turret punch presses, 12 stations",
-   "short": "TP turret punches",
-   "models_label": "TP-12A – TP-24B · 4 models",
-   "summary": "Manual turret punch presses with twelve round punches from 3/16 to 1-1/4″ on a rotating turret: 6,000 kg of punching force from a hand lever, 1/4″ capacity, a 12″ (TP-12) or 24″ (TP-24) throat, on an open stand (A) or a cabinet stand with a table (B). Square, oval, rectangular and other shaped punches and dies to order, up to 2-1/4″.",
-   "features": [
-    "12 stations, round punches 3/16 – 1-1/4″ (metric 5 – 32 mm)",
-    "6.6 US tons (6,000 kg) by hand lever; 1/4″ (6 mm) capacity",
-    "12″ or 24″ throat; open stand or cabinet stand",
-    "Shaped punches and dies to order, up to 2-1/4″"
-   ],
-   "optional": [],
-   "images": [
-    "tm-tp12b",
-    "tm-tp12a"
-   ],
-   "videos": [],
-   "headline": "12 stations, 1/4″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "TP-12A · TP-12B · TP-24A · TP-24B",
-      "sub": "Manual turret punch presses, 12 stations, 6.6 US tons",
-      "models": [
-       "TP-12A",
-       "TP-12B",
-       "TP-24A",
-       "TP-24B"
-      ],
-      "rows": [
-       {
-        "label": "Punching force",
-        "sub": "",
-        "cells": [
-         "6.6 US tons (6,000 kg)",
-         "6.6 US tons (6,000 kg)",
-         "6.6 US tons (6,000 kg)",
-         "6.6 US tons (6,000 kg)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "12″ (305 mm)",
-         "12″ (305 mm)",
-         "24″ (608 mm)",
-         "24″ (608 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″",
-         "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″",
-         "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″",
-         "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″"
-        ],
-        "key": true
-       },
-       {
-        "label": "Stations",
-        "sub": "",
-        "cells": [
-         "12 round punches: 3/16, 1/4, 5/16, 3/8, 1/2, 9/16, 5/8, 3/4, 7/8, 1, 1-1/8, 1-1/4″ (metric 5 – 32 mm)",
-         "12 round punches: 3/16, 1/4, 5/16, 3/8, 1/2, 9/16, 5/8, 3/4, 7/8, 1, 1-1/8, 1-1/4″ (metric 5 – 32 mm)",
-         "12 round punches: 3/16, 1/4, 5/16, 3/8, 1/2, 9/16, 5/8, 3/4, 7/8, 1, 1-1/8, 1-1/4″ (metric 5 – 32 mm)",
-         "12 round punches: 3/16, 1/4, 5/16, 3/8, 1/2, 9/16, 5/8, 3/4, 7/8, 1, 1-1/8, 1-1/4″ (metric 5 – 32 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stripper clearance / ram stroke",
-        "sub": "",
-        "cells": [
-         "7/16″ (11 mm) / 21/32″ (17 mm)",
-         "7/16″ (11 mm) / 21/32″ (17 mm)",
-         "7/16″ (11 mm) / 21/32″ (17 mm)",
-         "7/16″ (11 mm) / 21/32″ (17 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stand",
-        "sub": "",
-        "cells": [
-         "Open stand (A)",
-         "Cabinet stand with table (B)",
-         "Open stand (A)",
-         "Cabinet stand with table (B)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "30 × 21 × 32″ (76 × 53 × 81 cm)",
-         "32 × 32 × 62″ (81 × 81 × 157 cm)",
-         "44 × 18 × 33″ (112 × 45 × 85 cm)",
-         "47 × 31 × 63″ (120 × 80 × 160 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "595 lb (270 kg)",
-         "860 lb (390 kg)",
-         "1,003 lb (455 kg)",
-         "1,521 lb (690 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "TP-12A",
-      "glance": [
-       "6.6 US tons (6,000 kg)",
-       "12″ (305 mm)",
-       "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″",
-       "595 lb (270 kg)"
-      ]
-     },
-     {
-      "name": "TP-12B",
-      "glance": [
-       "6.6 US tons (6,000 kg)",
-       "12″ (305 mm)",
-       "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″",
-       "860 lb (390 kg)"
-      ]
-     },
-     {
-      "name": "TP-24A",
-      "glance": [
-       "6.6 US tons (6,000 kg)",
-       "24″ (608 mm)",
-       "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″",
-       "1,003 lb (455 kg)"
-      ]
-     },
-     {
-      "name": "TP-24B",
-      "glance": [
-       "6.6 US tons (6,000 kg)",
-       "24″ (608 mm)",
-       "1/4″ (6 mm) — 3 ga mild steel; holes to 1-1/4″",
-       "1,521 lb (690 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "punching_force",
-     "throat_depth",
-     "capacity",
-     "weight"
-    ],
-    "caps": {
-     "TP-12A": "throat 12″ (305 mm)",
-     "TP-12B": "throat 12″ (305 mm)",
-     "TP-24A": "throat 24″ (608 mm)",
-     "TP-24B": "throat 24″ (608 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "punch"
-  },
-  "tt-riveter": {
-   "id": "tt-riveter",
-   "brand": "novotech",
-   "name": "XM orbital riveting machines, rivets Ø3/16 – 1-3/16″",
-   "short": "XM orbital riveters",
-   "models_label": "XM-5 – XM-30 · 6 models",
-   "summary": "Hydraulic orbital (rolling) riveters: the riveting head rolls the rivet end into shape instead of hammering it, with about a tenth of the force of punch riveting — the part keeps its fit, the head comes out smooth, without vibration or noise. Six sizes for solid rivets from 3/16 to 1-3/16″; with other tools the machine works as a normal press. Hinges, chain links, brake parts, appliances and hardware.",
-   "features": [
-    "Rivets Ø3/16 – 1-3/16″ (5 – 30 mm); 1,911 – 22,481 lbf",
-    "11 rivet head forms",
-    "Tables Ø4.7″ to 19.7 × 14″",
-    "Low noise, no vibration; replaces hammering, punching and hot riveting"
-   ],
-   "optional": [],
-   "images": [
-    "tm-xm8"
-   ],
-   "videos": [],
-   "headline": "Rivets to 1-3/16″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "XM-5 – XM-30",
-      "sub": "Hydraulic orbital (rolling) riveters, rivets Ø3/16 – 1-3/16″",
-      "models": [
-       "XM-5",
-       "XM-8",
-       "XM-10",
-       "XM-16",
-       "XM-20",
-       "XM-30"
-      ],
-      "rows": [
-       {
-        "label": "Rivet diameter, max",
-        "sub": "",
-        "cells": [
-         "3/16″ (5 mm)",
-         "5/16″ (8 mm)",
-         "3/8″ (10 mm)",
-         "5/8″ (16 mm)",
-         "13/16″ (20 mm)",
-         "1-3/16″ (30 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Force",
-        "sub": "",
-        "cells": [
-         "1,911 lbf (8.5 kN)",
-         "2,923 lbf (13 kN)",
-         "4,271 lbf (19 kN)",
-         "7,644 lbf (34 kN)",
-         "14,613 lbf (65 kN)",
-         "22,481 lbf (100 kN)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Spindle travel",
-        "sub": "",
-        "cells": [
-         "0.8″ (20 mm)",
-         "1.2″ (30 mm)",
-         "1.2″ (30 mm)",
-         "2″ (50 mm)",
-         "1.2″ (30 mm)",
-         "1.2″ (30 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Head to table, max",
-        "sub": "",
-        "cells": [
-         "4.7″ (120 mm)",
-         "10.8″ (275 mm)",
-         "10.8″ (275 mm)",
-         "8.7″ (220 mm)",
-         "9.8″ (250 mm)",
-         "11.8″ (300 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Table",
-        "sub": "",
-        "cells": [
-         "Ø4.7″ (120 mm)",
-         "9.8 × 7.9″ (250 × 200 mm)",
-         "9.8 × 7.9″ (250 × 200 mm)",
-         "13.8 × 9.8″ (350 × 250 mm)",
-         "16.5 × 11.8″ (420 × 300 mm)",
-         "19.7 × 14″ (500 × 355 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Machine size L × W × H",
-        "sub": "",
-        "cells": [
-         "17 × 13 × 32″ (440 × 320 × 822 mm)",
-         "33 × 24 × 69″ (850 × 600 × 1,750 mm)",
-         "28 × 20 × 59″ (700 × 500 × 1,500 mm)",
-         "31 × 23 × 73″ (800 × 585 × 1,850 mm)",
-         "42 × 20 × 76″ (1,070 × 500 × 1,930 mm)",
-         "51 × 23 × 87″ (1,300 × 580 × 2,200 mm)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "XM-5",
-      "glance": [
-       "3/16″ (5 mm)",
-       "1,911 lbf (8.5 kN)"
-      ]
-     },
-     {
-      "name": "XM-8",
-      "glance": [
-       "5/16″ (8 mm)",
-       "2,923 lbf (13 kN)"
-      ]
-     },
-     {
-      "name": "XM-10",
-      "glance": [
-       "3/8″ (10 mm)",
-       "4,271 lbf (19 kN)"
-      ]
-     },
-     {
-      "name": "XM-16",
-      "glance": [
-       "5/8″ (16 mm)",
-       "7,644 lbf (34 kN)"
-      ]
-     },
-     {
-      "name": "XM-20",
-      "glance": [
-       "13/16″ (20 mm)",
-       "14,613 lbf (65 kN)"
-      ]
-     },
-     {
-      "name": "XM-30",
-      "glance": [
-       "1-3/16″ (30 mm)",
-       "22,481 lbf (100 kN)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "rivet_diameter_max",
-     "force"
-    ],
-    "caps": {
-     "XM-5": "rivets to 3/16″ (5 mm)",
-     "XM-8": "rivets to 5/16″ (8 mm)",
-     "XM-10": "rivets to 3/8″ (10 mm)",
-     "XM-16": "rivets to 5/8″ (16 mm)",
-     "XM-20": "rivets to 13/16″ (20 mm)",
-     "XM-30": "rivets to 1-3/16″ (30 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "rivet"
   },
   "tt-jtb": {
    "id": "tt-jtb",
@@ -14349,23 +12683,22 @@
   "tt-tb3": {
    "id": "tt-tb3",
    "brand": "novotech",
-   "name": "TB-3 · HTB-1000 benders for 2″ schedule 40 pipe — hand, air and electric hydraulic",
+   "name": "TB-3A · TB-3B · TB-3C · HTB-1000 benders for 2″ schedule 40 pipe — air and electric hydraulic",
    "short": "TB-3 / HTB-1000 pipe benders",
-   "models_label": "TB-500 – HTB-1000 · 6 models",
-   "summary": "The bender family for 2″ schedule 40 pipe and roll-cage tube: the TB-500 ratchet bender for 2-1/2″ tube; the TB-3 hand bender; the TB-3A with a 10-ton air / hydraulic jack; the TB-3B and TB-3C with a 10-ton cylinder with 12″ stroke on a caster stand with die rack, air-hydraulic or electric-hydraulic; and the HTB-1000 electric-hydraulic bender, about three times faster than an air-hydraulic unit. Dies for 120°, 180° and 240°.",
+   "models_label": "TB-3A – HTB-1000 · 4 models",
+   "summary": "The bender family for 2″ schedule 40 pipe and roll-cage tube: the TB-3A with a 10-ton air / hydraulic jack on a pedestal; the TB-3B and TB-3C with a 10-ton cylinder and 12″ stroke on a caster stand with a die rack, air-hydraulic or electric-hydraulic; and the HTB-1000 electric-hydraulic bender, about three times faster than an air-hydraulic unit. Dies for 120°, 180° and 240°.",
    "features": [
-    "2″ schedule 40 pipe (0.154″ wall); TB-500: 2-1/2 × 0.120″ tube",
+    "2″ schedule 40 pipe (0.154″ wall); centre-line radius 3 – 6″",
     "Standard dies 1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
     "Optional round dies 3/4 – 2″ and square dies 3/4 – 1-1/2″; 120°, 180° and 240° dies",
+    "TB-3B / TB-3C: 10-ton cylinder, 12″ stroke, caster stand with die rack",
     "HTB-1000: 1 HP electric-hydraulic, aluminum-bronze bushings at the pivots"
    ],
    "optional": [],
    "images": [
     "tm-htb1000",
     "tm-tb3b",
-    "tm-tb3c",
-    "tm-tb500",
-    "tm-tb3"
+    "tm-tb3c"
    ],
    "videos": [],
    "headline": "2″ schedule 40 pipe",
@@ -14373,11 +12706,9 @@
     "kind": "table",
     "tables": [
      {
-      "title": "TB-500 · TB-3 · TB-3A · TB-3B · TB-3C · HTB-1000",
-      "sub": "Ratchet and hydraulic tube and pipe benders, to 2-1/2″ tube",
+      "title": "TB-3A · TB-3B · TB-3C · HTB-1000",
+      "sub": "Powered benders for 2″ schedule 40 pipe and roll-cage tube",
       "models": [
-       "TB-500",
-       "TB-3",
        "TB-3A",
        "TB-3B",
        "TB-3C",
@@ -14388,8 +12719,6 @@
         "label": "Capacity",
         "sub": "",
         "cells": [
-         "Round tube 2-1/2 × 0.120″ mild steel and aluminum, 2 × 0.120″ stainless and chromoly; solid rod 1″; min. OD 3/4″",
-         "2″ schedule 40 pipe (0.154″ wall)",
          "2″ schedule 40 pipe (0.154″ wall)",
          "2″ schedule 40 pipe (0.154″ wall)",
          "2″ schedule 40 pipe (0.154″ wall)",
@@ -14401,8 +12730,6 @@
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand lever (ratchet)",
-         "Hand lever",
          "10-ton air / hydraulic jack",
          "10-ton air-hydraulic cylinder, 12″ stroke",
          "10-ton electric-hydraulic cylinder, 12″ stroke",
@@ -14414,8 +12741,6 @@
         "label": "Centre-line radius",
         "sub": "",
         "cells": [
-         "3 – 7″ (76 – 176 mm)",
-         "3 – 6″",
          "3 – 6″",
          "3 – 6″",
          "3 – 6″",
@@ -14427,8 +12752,6 @@
         "label": "Standard dies",
         "sub": "",
         "cells": [
-         "1″ × 3″ CLR",
-         "1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
          "1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
          "1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
          "1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
@@ -14440,8 +12763,6 @@
         "label": "Optional dies",
         "sub": "",
         "cells": [
-         "3/4 – 2″ round, 3 – 7″ CLR (13 sizes); 90° or 180° dies",
-         "Round 3/4 – 2″, square 3/4 – 1-1/2″; 120°, 180° and 240° dies",
          "Round 3/4 – 2″, square 3/4 – 1-1/2″; 120°, 180° and 240° dies",
          "Round 3/4 – 2″, square 3/4 – 1-1/2″; 120°, 180° and 240° dies",
          "Round 3/4 – 2″, square 3/4 – 1-1/2″; 120°, 180° and 240° dies",
@@ -14454,8 +12775,6 @@
         "sub": "",
         "cells": [
          "Pedestal",
-         "Pedestal (extension handle optional)",
-         "Pedestal",
          "Caster stand with die rack",
          "Caster stand with die rack",
          "Caster stand with die rack"
@@ -14466,8 +12785,6 @@
         "label": "Packing size L × W × H",
         "sub": "",
         "cells": [
-         "35 × 35 × 17″ (90 × 90 × 43 cm)",
-         "39 × 13 × 14″ (98 × 34 × 36 cm)",
          "—",
          "—",
          "—",
@@ -14479,8 +12796,6 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "287 lb (130 kg)",
-         "143 lb (65 kg)",
          "—",
          "—",
          "—",
@@ -14492,24 +12807,6 @@
      }
     ],
     "models": [
-     {
-      "name": "TB-500",
-      "glance": [
-       "Round tube 2-1/2 × 0.120″ mild steel and aluminum, 2 × 0.120″ stainless and chromoly; solid rod 1″; min. OD 3/4″",
-       "Hand lever (ratchet)",
-       "1″ × 3″ CLR",
-       "287 lb (130 kg)"
-      ]
-     },
-     {
-      "name": "TB-3",
-      "glance": [
-       "2″ schedule 40 pipe (0.154″ wall)",
-       "Hand lever",
-       "1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
-       "143 lb (65 kg)"
-      ]
-     },
      {
       "name": "TB-3A",
       "glance": [
@@ -14554,8 +12851,6 @@
      "weight"
     ],
     "caps": {
-     "TB-500": "Hand lever (ratchet)",
-     "TB-3": "Hand lever",
      "TB-3A": "10-ton air / hydraulic jack",
      "TB-3B": "10-ton air-hydraulic cylinder, 12″ stroke",
      "TB-3C": "10-ton electric-hydraulic cylinder, 12″ stroke",
@@ -14694,48 +12989,37 @@
   "tt-hb-pipe": {
    "id": "tt-hb-pipe",
    "brand": "novotech",
-   "name": "HB hydraulic pipe benders, 8 – 16 tons, 1/2 – 3″ pipe",
-   "short": "HB hydraulic pipe benders",
-   "models_label": "HB-8 – HB-16 · 5 models",
-   "summary": "Hydraulic pipe benders for plumbing, electrical and maintenance work: a hand pump (or, on the EHB-10, an electric pump) drives the ram that pushes the pipe into the bending die. 8 to 16 tons, with die sets from 1/2″ to 2″, and to 3″ on the HB-16.",
+   "name": "EHB-10 electric hydraulic pipe bender, 11 US tons, 1/2 – 2″ pipe",
+   "short": "EHB-10 pipe bender",
+   "models_label": "EHB-10 · 1 model",
+   "summary": "A push-type pipe bender for plumbing, electrical and maintenance work with an electric pump instead of a hand pump: the ram pushes the pipe into the bending die between two supports with 11 US tons, with dies for 1/2 to 2″ pipe — simple and fast where a little ovality is acceptable.",
    "features": [
-    "8, 10, 12 and 16 tons; ram stroke 4.7 – 9.4″",
-    "Dies 1/2 – 2″; 1/2 – 3″ on the HB-16",
-    "EHB-10: electric pump, 1 HP 1-phase or 3/4 HP 3-phase",
-    "HB-8: dies 3/4, 1, 1-1/2, 1-5/8, 1-3/4″"
+    "11 US tons (10 t); ram stroke 6.1″ (155 mm)",
+    "Dies 1/2, 3/4, 1, 1-1/4, 1-1/2 and 2″",
+    "Electric pump: 1 HP (0.75 kW) 1-phase or 3/4 HP (0.55 kW) 3-phase",
+    "117 lb (53 kg) — moves to the job"
    ],
    "optional": [],
    "images": [
-    "tm-hb12",
-    "tm-ehb10",
-    "tm-hb10",
-    "tm-hb8"
+    "tm-ehb10"
    ],
    "videos": [],
-   "headline": "1/2 – 3″ pipe",
+   "headline": "1/2 – 2″ pipe",
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "HB-8 · HB-10 · HB-12 · HB-16 · EHB-10",
-      "sub": "Hydraulic pipe benders for 1/2 – 3″ pipe",
+      "title": "EHB-10",
+      "sub": "Electric hydraulic pipe bender for 1/2 – 2″ pipe",
       "models": [
-       "HB-8",
-       "HB-10",
-       "EHB-10",
-       "HB-12",
-       "HB-16"
+       "EHB-10"
       ],
       "rows": [
        {
         "label": "Force",
         "sub": "",
         "cells": [
-         "8.8 US tons (8 t)",
-         "11 US tons (10 t)",
-         "11 US tons (10 t)",
-         "13.2 US tons (12 t)",
-         "17.6 US tons (16 t)"
+         "11 US tons (10 t)"
         ],
         "key": true
        },
@@ -14743,11 +13027,7 @@
         "label": "Pipe dies",
         "sub": "",
         "cells": [
-         "3/4, 1, 1-1/2, 1-5/8, 1-3/4″",
-         "1/2, 3/4, 1, 1-1/4, 1-1/2, 2″",
-         "1/2, 3/4, 1, 1-1/4, 1-1/2, 2″",
-         "1/2, 3/4, 1, 1-1/4, 1-1/2, 2″",
-         "1/2, 3/4, 1, 1-1/4, 1-1/2, 2, 2-1/2, 3″"
+         "1/2, 3/4, 1, 1-1/4, 1-1/2, 2″"
         ],
         "key": true
        },
@@ -14755,11 +13035,7 @@
         "label": "Ram stroke",
         "sub": "",
         "cells": [
-         "4.7 + 2.4″ (120 + 60 mm)",
-         "6.1″ (155 mm)",
-         "6.1″ (155 mm)",
-         "9.4″ (240 mm)",
-         "9.4″ (240 mm)"
+         "6.1″ (155 mm)"
         ],
         "key": false
        },
@@ -14767,11 +13043,7 @@
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand pump",
-         "Hand pump",
-         "Electric pump: 1 HP (0.75 kW) 1-phase or 3/4 HP (0.55 kW) 3-phase",
-         "Hand pump",
-         "Hand pump"
+         "Electric pump: 1 HP (0.75 kW) 1-phase or 3/4 HP (0.55 kW) 3-phase"
         ],
         "key": true
        },
@@ -14779,11 +13051,7 @@
         "label": "Packing size L × W × H",
         "sub": "",
         "cells": [
-         "29 × 14 × 12″ (74 × 36 × 30 cm)",
-         "28 × 23 × 9″ (71 × 59 × 22 cm)",
-         "28 × 23 × 20″ (72 × 59 × 50 cm)",
-         "25 × 22 × 7″ (63 × 57 × 18 cm)",
-         "32 × 24 × 9″ (82 × 62 × 24 cm)"
+         "28 × 23 × 20″ (72 × 59 × 50 cm)"
         ],
         "key": false
        },
@@ -14791,11 +13059,7 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "101 lb (46 kg)",
-         "93 lb (42 kg)",
-         "117 lb (53 kg)",
-         "88 lb (40 kg)",
-         "187 lb (85 kg)"
+         "117 lb (53 kg)"
         ],
         "key": true
        }
@@ -14804,48 +13068,12 @@
     ],
     "models": [
      {
-      "name": "HB-8",
-      "glance": [
-       "8.8 US tons (8 t)",
-       "3/4, 1, 1-1/2, 1-5/8, 1-3/4″",
-       "Hand pump",
-       "101 lb (46 kg)"
-      ]
-     },
-     {
-      "name": "HB-10",
-      "glance": [
-       "11 US tons (10 t)",
-       "1/2, 3/4, 1, 1-1/4, 1-1/2, 2″",
-       "Hand pump",
-       "93 lb (42 kg)"
-      ]
-     },
-     {
       "name": "EHB-10",
       "glance": [
        "11 US tons (10 t)",
        "1/2, 3/4, 1, 1-1/4, 1-1/2, 2″",
        "Electric pump: 1 HP (0.75 kW) 1-phase or 3/4 HP (0.55 kW) 3-phase",
        "117 lb (53 kg)"
-      ]
-     },
-     {
-      "name": "HB-12",
-      "glance": [
-       "13.2 US tons (12 t)",
-       "1/2, 3/4, 1, 1-1/4, 1-1/2, 2″",
-       "Hand pump",
-       "88 lb (40 kg)"
-      ]
-     },
-     {
-      "name": "HB-16",
-      "glance": [
-       "17.6 US tons (16 t)",
-       "1/2, 3/4, 1, 1-1/4, 1-1/2, 2, 2-1/2, 3″",
-       "Hand pump",
-       "187 lb (85 kg)"
       ]
      }
     ],
@@ -14856,187 +13084,13 @@
      "weight"
     ],
     "caps": {
-     "HB-8": "8.8 US tons (8 t)",
-     "HB-10": "11 US tons (10 t)",
-     "EHB-10": "11 US tons (10 t)",
-     "HB-12": "13.2 US tons (12 t)",
-     "HB-16": "17.6 US tons (16 t)"
+     "EHB-10": "11 US tons (10 t)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
    "no_pdf": true,
    "group": "pipe"
-  },
-  "tt-tb-hand": {
-   "id": "tt-tb-hand",
-   "brand": "novotech",
-   "name": "Hand tube benders, 1/4 – 1″",
-   "short": "Hand tube benders",
-   "models_label": "TB-180 – MY-22 · 4 models",
-   "summary": "Hand benders for small tube: the TB-180 bends 3/8 – 1″ tube to 180° in one pull in a bench vise, with an eccentric lock roll and an angle indicator; the RB-1 bends 1/2 – 1″ tube to 270° on a stand; the RB-2 bends 1/4 – 5/8″ tube with 3D and 5D dies; the MY-22 comes in a carry case with dies for 3/8 – 7/8″ round and 3/4 – 1″ square tube.",
-   "features": [
-    "TB-180: 3/8 – 1″ OD, 0.049 – 0.095″ wall, 180° in one pull",
-    "RB-1: 1/2 – 1″, 270°; RB-2: 1/4 – 5/8″, 3D and 5D dies",
-    "MY-22: round 3/8 – 7/8″, square 3/4 and 1″, carry case",
-    "Vise or stand mounting"
-   ],
-   "optional": [],
-   "images": [
-    "tm-tb180",
-    "tm-rb1",
-    "tm-my22"
-   ],
-   "videos": [],
-   "headline": "Tube 1/4 – 1″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "TB-180 · RB-1 · RB-2 · MY-22",
-      "sub": "Hand tube benders for small tube, 1/4 – 1″",
-      "models": [
-       "TB-180",
-       "RB-1",
-       "RB-2",
-       "MY-22"
-      ],
-      "rows": [
-       {
-        "label": "Tube size",
-        "sub": "",
-        "cells": [
-         "3/8 – 1″ OD, 0.049 – 0.095″ wall",
-         "1/2 – 1″ OD, 0.03 – 0.05″ (0.8 – 1.2 mm) wall",
-         "1/4 – 5/8″ OD",
-         "Round 3/8 – 7/8″ OD, square 3/4 and 1″; 0.03 – 0.05″ (0.8 – 1.2 mm) wall"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bend angle, max",
-        "sub": "",
-        "cells": [
-         "180° in one pull",
-         "270°",
-         "180°",
-         "180°"
-        ],
-        "key": true
-       },
-       {
-        "label": "Standard dies",
-        "sub": "",
-        "cells": [
-         "3/4″ OD, 2-1/2″ CLR (20 mm, CLR 60 mm)",
-         "1/2, 9/16, 5/8, 3/4, 7/8, 1″",
-         "1/4, 5/16, 3/8, 1/2, 5/8″ — 3D and 5D radius",
-         "3/8, 1/2, 9/16, 5/8, 3/4, 7/8″ round; 3/4, 1″ square, in a carry case"
-        ],
-        "key": true
-       },
-       {
-        "label": "Optional dies",
-        "sub": "",
-        "cells": [
-         "3/8 and 1/2″ (CLR 2″), 5/8″ (2-1/2″), 7/8 and 1″ (3-1/2″); 10 – 25 mm",
-         "—",
-         "—",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Mounting",
-        "sub": "",
-        "cells": [
-         "Bench vise",
-         "Stand",
-         "Stand",
-         "Bench vise"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "—",
-         "41 × 17 × 14″ (103 × 43 × 35 cm)",
-         "43 × 16 × 16″ (110 × 40 × 40 cm)",
-         "24 × 14 × 6″ (62 × 35 × 16 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "—",
-         "123 lb (56 kg)",
-         "112 lb (51 kg)",
-         "53 lb (24 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "TB-180",
-      "glance": [
-       "3/8 – 1″ OD, 0.049 – 0.095″ wall",
-       "180° in one pull",
-       "3/4″ OD, 2-1/2″ CLR (20 mm, CLR 60 mm)",
-       "—"
-      ]
-     },
-     {
-      "name": "RB-1",
-      "glance": [
-       "1/2 – 1″ OD, 0.03 – 0.05″ (0.8 – 1.2 mm) wall",
-       "270°",
-       "1/2, 9/16, 5/8, 3/4, 7/8, 1″",
-       "123 lb (56 kg)"
-      ]
-     },
-     {
-      "name": "RB-2",
-      "glance": [
-       "1/4 – 5/8″ OD",
-       "180°",
-       "1/4, 5/16, 3/8, 1/2, 5/8″ — 3D and 5D radius",
-       "112 lb (51 kg)"
-      ]
-     },
-     {
-      "name": "MY-22",
-      "glance": [
-       "Round 3/8 – 7/8″ OD, square 3/4 and 1″; 0.03 – 0.05″ (0.8 – 1.2 mm) wall",
-       "180°",
-       "3/8, 1/2, 9/16, 5/8, 3/4, 7/8″ round; 3/4, 1″ square, in a carry case",
-       "53 lb (24 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "tube_size",
-     "bend_angle_max",
-     "standard_dies",
-     "weight"
-    ],
-    "caps": {
-     "TB-180": "3/8 – 1″ OD, 0.049 – 0.095″ wall",
-     "RB-1": "1/2 – 1″ OD, 0.03 – 0.05″ (0.8 – 1.2 mm) wall",
-     "RB-2": "1/4 – 5/8″ OD",
-     "MY-22": "Round 3/8 – 7/8″ OD, square 3/4 and 1″; 0.03 – 0.05″ (0.8 – 1.2 mm) wall"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "hand"
   },
   "tt-cs": {
    "id": "tt-cs",
@@ -15936,13 +13990,12 @@
    "brand": "novotech",
    "name": "Roller stands, roller conveyors and RA785 measuring roller table",
    "short": "Roller stands and tables",
-   "models_label": "RV1100 – RA785 · 7 models",
+   "models_label": "RV1100 – RA785 · 6 models",
    "summary": "Material support for saws, shears, brakes and drills: V-roller and flat roller stands, a tripod stand, roller conveyors in 41″ sections with 79″ and 118″ extensions, and the RA785 roller table with a measuring feed system that positions the bar to ±0.012″ at 40 – 140 in/min.",
    "features": [
     "Height-adjustable stands 23 – 43″; loads to 728 lb",
     "Roller conveyors 1,323 – 1,543 lb; extensions of 79″, 118″ and more",
-    "RA785: 79″ roller table with measuring feed, ±0.012″ (0.3 mm)",
-    "RS018 stand for the SS-18 shrinker-stretcher"
+    "RA785: 79″ roller table with measuring feed, ±0.012″ (0.3 mm)"
    ],
    "optional": [],
    "images": [
@@ -15962,7 +14015,6 @@
        "RV1100",
        "RB1100",
        "RB1000",
-       "RS018",
        "RB365",
        "RB2000",
        "RA785"
@@ -15975,7 +14027,6 @@
          "V-roller stand",
          "Roller stand",
          "Tripod roller stand",
-         "Adjustable stand (for the SS-18)",
          "Roller conveyor, 41″ (1,040 mm) — 2,000 / 3,000 mm extensions",
          "Roller conveyor",
          "Roller table with measuring feed system, 79″ (2,000 mm)"
@@ -15989,7 +14040,6 @@
          "24.4 – 43.3″ (620 – 1,100 mm)",
          "24.4 – 43.3″ (620 – 1,100 mm)",
          "23 – 38.6″ (585 – 980 mm)",
-         "25.6 – 35.4″ (650 – 900 mm)",
          "23.6 – 39.4″ (600 – 1,000 mm)",
          "23 – 38.6″ (585 – 980 mm)",
          "31.5 – 39.4″ (800 – 1,000 mm)"
@@ -16002,7 +14052,6 @@
         "cells": [
          "8.9″ (225 mm)",
          "13.8″ (350 mm)",
-         "—",
          "—",
          "14.4″ (365 mm)",
          "—",
@@ -16017,7 +14066,6 @@
          "728 lb (330 kg)",
          "661 lb (300 kg)",
          "331 lb (150 kg)",
-         "—",
          "1,323 lb (600 kg)",
          "1,543 lb (700 kg)",
          "336 lb/ft (500 kg/m)"
@@ -16028,7 +14076,6 @@
         "label": "Feed system",
         "sub": "",
         "cells": [
-         "—",
          "—",
          "—",
          "—",
@@ -16045,7 +14092,6 @@
          "35 lb (16 kg)",
          "35 lb (16 kg)",
          "18 lb (8 kg)",
-         "24 lb (11 kg)",
          "76 lb (34.5 kg)",
          "115 lb (52 kg)",
          "320 lb (145 kg)"
@@ -16081,15 +14127,6 @@
        "23 – 38.6″ (585 – 980 mm)",
        "331 lb (150 kg)",
        "18 lb (8 kg)"
-      ]
-     },
-     {
-      "name": "RS018",
-      "glance": [
-       "Adjustable stand (for the SS-18)",
-       "25.6 – 35.4″ (650 – 900 mm)",
-       "—",
-       "24 lb (11 kg)"
       ]
      },
      {
@@ -16130,7 +14167,6 @@
      "RV1100": "V-roller stand",
      "RB1100": "Roller stand",
      "RB1000": "Tripod roller stand",
-     "RS018": "Adjustable stand (for the SS-18)",
      "RB365": "Roller conveyor, 41″ (1,040 mm) — 2,000 / 3,000 mm extensions",
      "RB2000": "Roller conveyor",
      "RA785": "Roller table with measuring feed system, 79″ (2,000 mm)"
@@ -16559,171 +14595,6 @@
    "no_pdf": true,
    "group": "tt-notch"
   },
-  "tt-notch-hand": {
-   "id": "tt-notch-hand",
-   "brand": "novotech",
-   "name": "HN hand corner notchers and FN foot notcher",
-   "short": "Hand and foot notchers",
-   "models_label": "HN-3 – FN1.5x80 · 4 models",
-   "summary": "Manual 90° corner notchers for sheet and plate in the HVAC and sheet-metal shop: the HN-3 and HN-4 notch 16 ga with 5 and 6″ blades, the HN-3/102 notches 1/8″ with 4″ blades, and the FN1.5×80 works from a foot pedal on its own stand.",
-   "features": [
-    "HN-3 / HN-4: 16 ga (1.5 mm), 4.9 × 4.9″ and 6 × 6″ notches",
-    "HN-3/102: 1/8″ (3 mm), 3.9 × 3.9″",
-    "FN1.5×80: 16 ga, foot pedal, on stand",
-    "Stand optional for the HN-4"
-   ],
-   "optional": [],
-   "images": [
-    "tm-hn3",
-    "tm-hn4",
-    "tm-fn"
-   ],
-   "videos": [],
-   "headline": "16 ga – 1/8″, 90°",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "HN-3 · HN-4 · HN-3/102 · FN1.5x80",
-      "sub": "Hand and foot corner notchers, 90°",
-      "models": [
-       "HN-3",
-       "HN-4",
-       "HN-3/102",
-       "FN1.5x80"
-      ],
-      "rows": [
-       {
-        "label": "Capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "16 ga (1.5 mm)",
-         "16 ga (1.5 mm)",
-         "1/8″ (3 mm)",
-         "16 ga (1.5 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Notch size",
-        "sub": "",
-        "cells": [
-         "4-7/8 × 4-7/8″ (125 × 125 mm)",
-         "6 × 6″ (152 × 152 mm)",
-         "3-7/8 × 3-7/8″ (100 × 100 mm)",
-         "3-1/8 × 3-1/8″ (80 × 80 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Notch angle",
-        "sub": "",
-        "cells": [
-         "90°",
-         "90°",
-         "90°",
-         "90°"
-        ],
-        "key": false
-       },
-       {
-        "label": "Ram stroke",
-        "sub": "",
-        "cells": [
-         "1″ (25 mm)",
-         "13/16″ (20 mm)",
-         "1-3/16″ (30 mm)",
-         "1″ (25 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Operation",
-        "sub": "",
-        "cells": [
-         "Hand lever",
-         "Hand lever (stand optional)",
-         "Hand lever",
-         "Foot pedal, on stand"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "17 × 15 × 17″ (43 × 37 × 44 cm)",
-         "23 × 21 × 20″ (58 × 53 × 52 cm)",
-         "17 × 17 × 31″ (44 × 42 × 78 cm)",
-         "45 × 20 × 16″ (115 × 51 × 40 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "60 lb (27 kg)",
-         "165 lb (75 kg)",
-         "198 lb (90 kg)",
-         "163 lb (74 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "HN-3",
-      "glance": [
-       "16 ga (1.5 mm)",
-       "4-7/8 × 4-7/8″ (125 × 125 mm)",
-       "60 lb (27 kg)"
-      ]
-     },
-     {
-      "name": "HN-4",
-      "glance": [
-       "16 ga (1.5 mm)",
-       "6 × 6″ (152 × 152 mm)",
-       "165 lb (75 kg)"
-      ]
-     },
-     {
-      "name": "HN-3/102",
-      "glance": [
-       "1/8″ (3 mm)",
-       "3-7/8 × 3-7/8″ (100 × 100 mm)",
-       "198 lb (90 kg)"
-      ]
-     },
-     {
-      "name": "FN1.5x80",
-      "glance": [
-       "16 ga (1.5 mm)",
-       "3-1/8 × 3-1/8″ (80 × 80 mm)",
-       "163 lb (74 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity_mild_steel",
-     "notch_size",
-     "weight"
-    ],
-    "caps": {
-     "HN-3": "16 ga (1.5 mm)",
-     "HN-4": "16 ga (1.5 mm)",
-     "HN-3/102": "1/8″ (3 mm)",
-     "FN1.5x80": "16 ga (1.5 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "tt-notch"
-  },
   "tt-ptn": {
    "id": "tt-ptn",
    "brand": "novotech",
@@ -16887,194 +14758,6 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
-   "group": "tt-tube-notch"
-  },
-  "tt-pn-hand": {
-   "id": "tt-pn-hand",
-   "brand": "novotech",
-   "name": "Hole-saw pipe notchers for the drill and hand tube notchers",
-   "short": "Hole-saw and hand notchers",
-   "models_label": "PNM 1-1/2 – RAB · 7 models",
-   "summary": "Inexpensive notchers for the occasional saddle: the PNM 1-1/2 bolts to the bench and runs a bi-metal hole saw from an ordinary 1/2″ drill on 3/4 to 3″ tube at up to 50°, with offset notches up to 1-1/2″; the PN-1/2 notchers fit the drill press for compound-angle notches up to 2″; the RA hand notchers punch 90° notches in thin-wall tube by lever.",
-   "features": [
-    "PNM 1-1/2: 3/4 – 3″ OD, to 50°, CNC-machined 1-1/4″ steel frame, 2-axis clamp",
-    "PN-1/2A / H (aluminum) and PN-1/2S (steel): to 2″ tube, 0 – 45 / 50 / 60°",
-    "RA-1 – RA-10: hand lever, 90° notches",
-    "RAB: vent notcher"
-   ],
-   "optional": [],
-   "images": [
-    "tm-pnm15",
-    "tm-pn12",
-    "tm-ra"
-   ],
-   "videos": [],
-   "headline": "Tube to 3″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "PNM 1-1/2 · PN-1/2 · RA · RAB",
-      "sub": "Hole-saw pipe notchers for the drill press and hand drill, and hand tube notchers",
-      "models": [
-       "PNM 1-1/2",
-       "PN-1/2A",
-       "PN-1/2S",
-       "PN-1/2H",
-       "RA-1 – RA-3",
-       "RA-4 – RA-10",
-       "RAB"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "Tube 3/4 – 3″ OD; offset notches up to 1-1/2″",
-         "Tube to 2″",
-         "Tube to 2″",
-         "Tube to 2″",
-         "Pipe 1/4 – 2″ (inside diameter)",
-         "Tube Ø22 – 50 mm (sizes per model)",
-         "Vent notcher, wall to 0.155″"
-        ],
-        "key": true
-       },
-       {
-        "label": "Angle",
-        "sub": "",
-        "cells": [
-         "Up to 50°",
-         "0 – 45°",
-         "0 – 60°",
-         "0 – 50°",
-         "90°",
-         "90°",
-         "—"
-        ],
-        "key": true
-       },
-       {
-        "label": "Drive",
-        "sub": "",
-        "cells": [
-         "Ordinary 1/2″ hand drill; bi-metal hole saws",
-         "Drill press, 3/4″ spindle, 1/2 – 5/8″ adapter",
-         "Drill press, 3/4″ spindle, 1/2 – 5/8″ adapter",
-         "Drill press, 1″ spindle, 1/2 – 5/8″ adapter",
-         "Hand lever",
-         "Hand lever",
-         "Hand lever"
-        ],
-        "key": false
-       },
-       {
-        "label": "Frame",
-        "sub": "",
-        "cells": [
-         "CNC-machined, 1-1/4″ steel frame; 2-axis clamp; 1″ stainless shaft",
-         "Aluminum",
-         "Steel",
-         "Aluminum",
-         "Steel",
-         "Steel",
-         "Steel"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "21 lb (9.5 kg)",
-         "6 lb (2.8 kg)",
-         "10 lb (4.5 kg)",
-         "9 lb (4 kg)",
-         "13 – 31 lb (6 – 14 kg)",
-         "24 – 37 lb (11 – 17 kg)",
-         "13 lb (6 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "PNM 1-1/2",
-      "glance": [
-       "Tube 3/4 – 3″ OD; offset notches up to 1-1/2″",
-       "Up to 50°",
-       "21 lb (9.5 kg)"
-      ]
-     },
-     {
-      "name": "PN-1/2A",
-      "glance": [
-       "Tube to 2″",
-       "0 – 45°",
-       "6 lb (2.8 kg)"
-      ]
-     },
-     {
-      "name": "PN-1/2S",
-      "glance": [
-       "Tube to 2″",
-       "0 – 60°",
-       "10 lb (4.5 kg)"
-      ]
-     },
-     {
-      "name": "PN-1/2H",
-      "glance": [
-       "Tube to 2″",
-       "0 – 50°",
-       "9 lb (4 kg)"
-      ]
-     },
-     {
-      "name": "RA-1 – RA-3",
-      "glance": [
-       "Pipe 1/4 – 2″ (inside diameter)",
-       "90°",
-       "13 – 31 lb (6 – 14 kg)"
-      ]
-     },
-     {
-      "name": "RA-4 – RA-10",
-      "glance": [
-       "Tube Ø22 – 50 mm (sizes per model)",
-       "90°",
-       "24 – 37 lb (11 – 17 kg)"
-      ]
-     },
-     {
-      "name": "RAB",
-      "glance": [
-       "Vent notcher, wall to 0.155″",
-       "—",
-       "13 lb (6 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "angle",
-     "weight"
-    ],
-    "caps": {
-     "PNM 1-1/2": "Tube 3/4 – 3″ OD; offset notches up to 1-1/2″",
-     "PN-1/2A": "Tube to 2″",
-     "PN-1/2S": "Tube to 2″",
-     "PN-1/2H": "Tube to 2″",
-     "RA-1 – RA-3": "Pipe 1/4 – 2″ (inside diameter)",
-     "RA-4 – RA-10": "Tube Ø22 – 50 mm (sizes per model)",
-     "RAB": "Vent notcher, wall to 0.155″"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
    "no_pdf": true,
    "group": "tt-tube-notch"
   },
@@ -17960,14 +15643,14 @@
   "tt-rbm-small": {
    "id": "tt-rbm-small",
    "brand": "novotech",
-   "name": "RBM10 – RBM30HV ring rollers, Ø3/4 – 1-3/16″ shafts",
-   "short": "RBM10 – RBM30 ring rollers",
-   "models_label": "RBM10 – RBM30HV · 5 models",
-   "summary": "Small ring rollers for flat bar, square bar and light sections: the RBM10 by hand crank, the ERBM10HV, RBM30 and RBM30HV with a motor and foot pedal — the HV models horizontal and vertical — and the RBM20 with two driven rolls, an LED readout for the top roll and single-phase or 3-phase power.",
+   "name": "ERBM10HV – RBM30HV motorized ring rollers, Ø13/16 – 1-3/16″ shafts",
+   "short": "RBM motorized ring rollers",
+   "models_label": "ERBM10HV – RBM30HV · 4 models",
+   "summary": "Small motorized ring rollers for flat bar, square and round bar, light angle, channel and tube — railings, gates, frames and ornamental work: the ERBM10HV, RBM30 and RBM30HV with a motor and foot pedal — the HV models horizontal and vertical — and the RBM20 with two driven rolls, an LED readout for the top roll and single-phase or 3-phase power.",
    "features": [
-    "Shafts Ø3/4 – 1-3/16″ (20 – 30 mm)",
+    "Shafts Ø13/16″ (20 mm) and Ø1-3/16″ (30 mm); 3/4 – 1.5 HP; 8 – 12 rpm",
     "Flat bar on edge to 1-3/16 × 3/8″, the easy way to 2 × 9/16″",
-    "Motorized models with foot pedal; RBM10 by hand",
+    "Foot pedal; horizontal and vertical working position on the HV models",
     "RBM20: LED top-roll readout, two driven rolls, 1-phase or 3-phase"
    ],
    "optional": [],
@@ -17976,19 +15659,17 @@
     "tm-rbm20",
     "tm-erbm10",
     "tm-rbm30",
-    "tm-rbm10",
     "tm-rbm-rolls"
    ],
    "videos": [],
-   "headline": "Shafts Ø3/4 – 1-3/16″",
+   "headline": "Shafts Ø13/16 – 1-3/16″",
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "RBM10 · ERBM10HV · RBM20 · RBM30 · RBM30HV",
-      "sub": "Ring rollers with Ø3/4 – 1-3/16″ shafts — manual and motorized",
+      "title": "ERBM10HV · RBM20 · RBM30 · RBM30HV",
+      "sub": "Motorized ring rollers with Ø13/16 – 1-3/16″ shafts",
       "models": [
-       "RBM10",
        "ERBM10HV",
        "RBM20",
        "RBM30",
@@ -18000,7 +15681,6 @@
         "sub": "",
         "cells": [
          "Ø1-3/16″ (30 mm)",
-         "Ø1-3/16″ (30 mm)",
          "Ø13/16″ (20 mm)",
          "Ø1-3/16″ (30 mm)",
          "Ø1-3/16″ (30 mm)"
@@ -18011,7 +15691,6 @@
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand crank",
          "1.5 HP (1.1 kW), 8 rpm, foot pedal",
          "1 HP (0.75 kW) 1-phase or 3/4 HP (0.55 kW) 3-phase, 12 rpm, two driven rolls",
          "1.5 HP (1.1 kW), 9 rpm, foot pedal",
@@ -18023,7 +15702,6 @@
         "label": "Working position",
         "sub": "",
         "cells": [
-         "Vertical",
          "Horizontal and vertical",
          "Vertical",
          "Vertical",
@@ -18036,7 +15714,6 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
          "LED readout",
          "—",
          "—"
@@ -18047,7 +15724,6 @@
         "label": "Flat bar on edge (hard way)",
         "sub": "",
         "cells": [
-         "1-3/16 × 3/8″ (30 × 10 mm), min. Ø19.7″ (500 mm)",
          "1-3/16 × 3/8″ (30 × 10 mm), min. Ø19.7″ (500 mm)",
          "1 × 1/4″ (25 × 6 mm), min. Ø7.9″ (200 mm)",
          "1-3/16 × 3/8″ (30 × 10 mm), min. Ø12.6″ (320 mm)",
@@ -18060,7 +15736,6 @@
         "sub": "",
         "cells": [
          "2 × 3/8″ (50 × 10 mm), min. Ø15.7″ (400 mm)",
-         "2 × 3/8″ (50 × 10 mm), min. Ø15.7″ (400 mm)",
          "1-3/4 × 3/8″ (45 × 10 mm), min. Ø11.8″ (300 mm)",
          "—",
          "2 × 9/16″ (50 × 15 mm), min. Ø13.8″ (350 mm)"
@@ -18071,7 +15746,6 @@
         "label": "Square bar",
         "sub": "",
         "cells": [
-         "13/16 × 13/16″ (20 × 20 mm), min. Ø19.7″ (500 mm)",
          "13/16 × 13/16″ (20 × 20 mm), min. Ø19.7″ (500 mm)",
          "1/2 × 1/2″ (12 × 12 mm), min. Ø4.3″ (110 mm)",
          "—",
@@ -18084,7 +15758,6 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
          "1 × 1 × 5/32″ (25 × 25 × 4 mm), min. Ø7.9″ (200 mm)",
          "—",
          "2 × 2 × 3/16″ (50 × 50 × 5 mm), min. Ø15.7″ (400 mm)"
@@ -18095,7 +15768,6 @@
         "label": "T-bar, stem in",
         "sub": "",
         "cells": [
-         "—",
          "—",
          "1 × 1 × 5/32″ (25 × 25 × 4 mm), min. Ø7.9″ (200 mm)",
          "—",
@@ -18108,7 +15780,6 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
          "1-3/16 × 9/16 × 5/32″ (30 × 15 × 4 mm), min. Ø9.8″ (250 mm)",
          "—",
          "2 × 1 × 3/16″ (50 × 25 × 5 mm), min. Ø15.7″ (400 mm)"
@@ -18119,7 +15790,6 @@
         "label": "Channel, flanges in",
         "sub": "",
         "cells": [
-         "—",
          "—",
          "1-3/16 × 9/16 × 5/32″ (30 × 15 × 4 mm), min. Ø9.8″ (250 mm)",
          "—",
@@ -18132,7 +15802,6 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
          "13/16 × 13/16 × 5/32″ (20 × 20 × 4 mm), min. Ø5.9″ (150 mm)",
          "—",
          "1-9/16 × 1-9/16 × 3/16″ (40 × 40 × 5 mm), min. Ø15.7″ (400 mm)"
@@ -18143,7 +15812,6 @@
         "label": "Angle, leg in",
         "sub": "",
         "cells": [
-         "—",
          "—",
          "13/16 × 13/16 × 5/32″ (20 × 20 × 4 mm), min. Ø7.9″ (200 mm)",
          "—",
@@ -18156,7 +15824,6 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
          "Ø1/2″ (12 mm), min. Ø4.7″ (120 mm)",
          "Ø5/8″ (16 mm), min. Ø15.7″ (400 mm)",
          "Ø1-3/16″ (30 mm), min. Ø23.6″ (600 mm)"
@@ -18167,7 +15834,6 @@
         "label": "Square tube",
         "sub": "",
         "cells": [
-         "—",
          "—",
          "13/16 × 13/16 × 0.059″ (20 × 20 × 1.5 mm), min. Ø9.8″ (250 mm)",
          "1-3/16 × 1-3/16 × 0.039″ (30 × 30 × 1 mm), min. Ø35.4″ (900 mm)",
@@ -18180,7 +15846,6 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
          "1-3/16 × 3/8 × 0.059″ (30 × 10 × 1.5 mm), min. Ø11.8″ (300 mm)",
          "—",
          "2 × 1-3/16 × 0.118″ (50 × 30 × 3 mm), min. Ø47.2″ (1200 mm)"
@@ -18192,7 +15857,6 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
          "Ø3/4″ pipe, min. Ø15.7″ (400 mm); Ø1-3/16 × 0.06″ (30 × 1.5 mm), min. Ø15.7″ (400 mm)",
          "Ø1-3/16 × 0.04″ (30 × 1 mm), min. Ø31.5″ (800 mm)",
          "Ø1-3/8 – 2-3/8 × 0.08″ (35 – 60 × 2 mm), min. Ø39.4″ (1,000 mm), special rolls"
@@ -18203,7 +15867,6 @@
         "label": "Packing size L × W × H",
         "sub": "",
         "cells": [
-         "20 × 19 × 27″ (50 × 48 × 68 cm) + stand 23 × 14 × 34″ (59 × 35 × 86 cm)",
          "37 × 31 × 53″ (95 × 80 × 135 cm)",
          "39 × 19 × 54″ (98 × 47 × 138 cm) + base 28 × 18 × 31″ (70 × 45 × 80 cm)",
          "37 × 24 × 59″ (93 × 62 × 150 cm)",
@@ -18215,7 +15878,6 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "348 lb (158 kg)",
          "518 lb (235 kg)",
          "265 lb (120 kg)",
          "470 lb (213 kg)",
@@ -18227,16 +15889,6 @@
      }
     ],
     "models": [
-     {
-      "name": "RBM10",
-      "glance": [
-       "Ø1-3/16″ (30 mm)",
-       "Hand crank",
-       "1-3/16 × 3/8″ (30 × 10 mm), min. Ø19.7″ (500 mm)",
-       "2 × 3/8″ (50 × 10 mm), min. Ø15.7″ (400 mm)",
-       "348 lb (158 kg)"
-      ]
-     },
      {
       "name": "ERBM10HV",
       "glance": [
@@ -18286,7 +15938,6 @@
      "weight"
     ],
     "caps": {
-     "RBM10": "Ø1-3/16″ (30 mm) shafts",
      "ERBM10HV": "Ø1-3/16″ (30 mm) shafts",
      "RBM20": "Ø13/16″ (20 mm) shafts",
      "RBM30": "Ø1-3/16″ (30 mm) shafts",
@@ -18301,51 +15952,39 @@
   "tt-tr": {
    "id": "tt-tr",
    "brand": "novotech",
-   "name": "TR tube rollers, CRB-76 decorative ring roller and PR ring rollers",
-   "short": "Tube and ring rollers",
-   "models_label": "TR-40 – PR-5 · 7 models",
-   "summary": "Rollers that bend tube, pipe and bar into arcs and rings: the TR-40 for square and rectangular tube, the TR-50 and electric ETR-50 for 1/2 – 2″ round tube and 1/4 – 1-1/2″ pipe with CNC-machined dies, the TR-60 with a quick-change lower roll for round, square and rectangular tube, flat bar and channel; the CRB-76 rolls decorative rings and scrolls in round and square tube and flat bar; the PR-3 and PR-5 bench rollers roll flat bar and rod.",
+   "name": "ETR-50 electric tube roller and CRB-76 decorative ring roller",
+   "short": "ETR-50 / CRB-76 tube rollers",
+   "models_label": "ETR-50 · CRB-76 · 2 models",
+   "summary": "Two motorized rollers for tube and pipe: the ETR-50 rolls 1/2 – 2″ round tube, 1/4 – 1-1/2″ pipe and 1/2 – 1″ square tube into arcs and rings with CNC-machined dies, a 1/2 HP motor and a foot pedal; the CRB-76 rolls decorative rings and scrolls in round and square tube and flat bar on formers from Ø5/8 to 3″ — the metal-craft machine for gates, railings and furniture.",
    "features": [
-    "TR-50 / ETR-50: round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls",
-    "TR-60: round tube 2″, pipe 1-1/2″, square 2″, rectangular and channel 1 × 2″",
-    "ETR-50: 1/2 HP motor with foot pedal; CRB-76: 1.5 HP, formers Ø5/8 – 3″",
-    "PR-5: three driven rolls, flat bar 1 × 1/4″ the easy way, on a heavy stand"
+    "ETR-50: round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls",
+    "ETR-50: 1/2 HP (0.37 kW) motor, foot pedal, 1- or 3-phase",
+    "CRB-76: round tube formers Ø5/8 – 3″, square tube formers 5/8 – 2″, walls 0.02 – 0.08″",
+    "CRB-76: 1.5 HP (1.1 kW)"
    ],
    "optional": [],
    "images": [
-    "tm-tr60",
     "tm-etr50",
-    "tm-tr50",
     "tm-crb76",
-    "tm-pr5",
-    "tm-tr40",
-    "tm-pr5-stand",
-    "tm-pr3",
     "tm-crb-rolls"
    ],
    "videos": [],
-   "headline": "Tube to 2″",
+   "headline": "Tube to Ø3″",
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "TR-40 · TR-50 · ETR-50 · TR-60",
-      "sub": "Tube and pipe rollers — rings and arcs in tube, pipe, square tube and flat bar",
+      "title": "ETR-50",
+      "sub": "Electric tube and pipe roller — rings and arcs in round tube, pipe and square tube",
       "models": [
-       "TR-40",
-       "TR-50",
-       "ETR-50",
-       "TR-60"
+       "ETR-50"
       ],
       "rows": [
        {
         "label": "Capacity",
         "sub": "",
         "cells": [
-         "Square tube 1-9/16 × 0.06″ (40 × 40 × 1.5 mm) mild steel, min. Ø23.6″ (600 mm); 3/4″ (20 × 20 × 1.2 mm), min. Ø17.7″ (450 mm)",
-         "Round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls",
-         "Round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls",
-         "Round tube 2″ (min. radius 60″), pipe 1-1/2″ (20″), square tube 2″ (70″), rectangular 1 × 2″ (60″), channel 1 × 2″ (60″), flat bar 1-1/4″ (10″)"
+         "Round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls"
         ],
         "key": true
        },
@@ -18353,9 +15992,6 @@
         "label": "Standard rolls",
         "sub": "",
         "cells": [
-         "One set for square and rectangular tube",
-         "1-1/2″ round tube",
-         "1-1/2″ round tube",
          "1-1/2″ round tube"
         ],
         "key": true
@@ -18364,32 +16000,15 @@
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand crank",
-         "Hand crank",
-         "1/2 HP (0.37 kW) motor, foot pedal, 1- or 3-phase",
-         "Hand crank; quick-change lower roll"
+         "1/2 HP (0.37 kW) motor, foot pedal, 1- or 3-phase"
         ],
         "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "22 × 10 × 16″ (55 × 25 × 40 cm)",
-         "—",
-         "—",
-         "25 × 15 × 9″ (63 × 37 × 23 cm)"
-        ],
-        "key": false
        },
        {
         "label": "Weight",
         "sub": "",
         "cells": [
-         "44 lb (20 kg)",
-         "97 lb (44 kg)",
-         "126 lb (57 kg)",
-         "75 lb (34 kg)"
+         "126 lb (57 kg)"
         ],
         "key": true
        }
@@ -18451,75 +16070,9 @@
         "key": true
        }
       ]
-     },
-     {
-      "title": "PR-3 · PR-5",
-      "sub": "Bench ring rollers for flat bar and rod",
-      "models": [
-       "PR-3",
-       "PR-5"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "Round 1/4″ (6.5 mm); flat 1 × 5/32″ (25 × 4 mm); rolls Ø1-1/4″ (32 mm)",
-         "Flat bar 1 × 1/4″ easy way; round 1/2″ with optional rolls; min. Ø2.75″"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bend",
-        "sub": "",
-        "cells": [
-         "Rings — hand crank",
-         "Rings — three driven rolls, hand crank, heavy stand"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "14 × 8 × 8″ (36 × 20 × 21 cm)",
-         "13 × 9 × 9″ (33 × 22 × 24 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "13 lb (6 kg)",
-         "31 lb (14 kg)"
-        ],
-        "key": true
-       }
-      ]
      }
     ],
     "models": [
-     {
-      "name": "TR-40",
-      "glance": [
-       "Square tube 1-9/16 × 0.06″ (40 × 40 × 1.5 mm) mild steel, min. Ø23.6″ (600 mm); 3/4″ (20 × 20 × 1.2 mm), min. Ø17.7″ (450 mm)",
-       "One set for square and rectangular tube",
-       "Hand crank",
-       "44 lb (20 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "TR-50",
-      "glance": [
-       "Round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls",
-       "1-1/2″ round tube",
-       "Hand crank",
-       "97 lb (44 kg)",
-       "—"
-      ]
-     },
      {
       "name": "ETR-50",
       "glance": [
@@ -18527,16 +16080,6 @@
        "1-1/2″ round tube",
        "1/2 HP (0.37 kW) motor, foot pedal, 1- or 3-phase",
        "126 lb (57 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "TR-60",
-      "glance": [
-       "Round tube 2″ (min. radius 60″), pipe 1-1/2″ (20″), square tube 2″ (70″), rectangular 1 × 2″ (60″), channel 1 × 2″ (60″), flat bar 1-1/4″ (10″)",
-       "1-1/2″ round tube",
-       "Hand crank; quick-change lower roll",
-       "75 lb (34 kg)",
        "—"
       ]
      },
@@ -18549,26 +16092,6 @@
        "661 lb (300 kg)",
        "Ø5/8, 3/4, 7/8, 1, 1-1/4, 1-1/2, 2, 2-1/2, 3″ (Ø16, 19, 22, 25, 32, 38, 51, 63, 76 mm)"
       ]
-     },
-     {
-      "name": "PR-3",
-      "glance": [
-       "Round 1/4″ (6.5 mm); flat 1 × 5/32″ (25 × 4 mm); rolls Ø1-1/4″ (32 mm)",
-       "—",
-       "—",
-       "13 lb (6 kg)",
-       "—"
-      ]
-     },
-     {
-      "name": "PR-5",
-      "glance": [
-       "Flat bar 1 × 1/4″ easy way; round 1/2″ with optional rolls; min. Ø2.75″",
-       "—",
-       "—",
-       "31 lb (14 kg)",
-       "—"
-      ]
      }
     ],
     "glance_keys": [
@@ -18579,17 +16102,12 @@
      "round_tube_formers"
     ],
     "caps": {
-     "TR-40": "Square tube 1-9/16 × 0.06″ (40 × 40 × 1.5 mm) mild steel, min. Ø23.6″ (600 mm); 3/4″ (20 × 20 × 1.2 mm), min. Ø17.7″ (450 mm)",
-     "TR-50": "Round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls",
      "ETR-50": "Round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls",
-     "TR-60": "Round tube 2″ (min. radius 60″), pipe 1-1/2″ (20″), square tube 2″ (70″), rectangular 1 × 2″ (60″), channel 1 × 2″ (60″), flat bar 1-1/4″ (10″)",
-     "CRB-76": "",
-     "PR-3": "Round 1/4″ (6.5 mm); flat 1 × 5/32″ (25 × 4 mm); rolls Ø1-1/4″ (32 mm)",
-     "PR-5": "Flat bar 1 × 1/4″ easy way; round 1/2″ with optional rolls; min. Ø2.75″"
+     "CRB-76": "Ø5/8, 3/4, 7/8, 1, 1-1/4, 1-1/2, 2, 2-1/2, 3″ (Ø16, 19, 22, 25, 32, 38, 51, 63, 76 mm)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
-   "manual": true,
+   "manual": false,
    "no_pdf": true,
    "group": "tt-ring"
   },
@@ -18598,19 +16116,18 @@
    "brand": "novotech",
    "name": "ETB-12 · ETB-25 · ETB-40 beading machines, 18 – 8 ga",
    "short": "ETB beading machines",
-   "models_label": "TB-12 – ETB-40 · 4 models",
-   "summary": "Beading machines for stiffening beads, steps, flanges and offsets in sheet and in the ends of ducts and tanks: the TB-12 by hand and the ETB-12 with a self-braking motor and foot pedal for 18 ga with an 8″ throat; the ETB-25 and ETB-40 on welded steel frames with brake motors, foot pedals and adjustable idle rolls for 12 ga and 8 ga with 11 and 12″ throats. Four standard roll sets and eight extra profiles.",
+   "models_label": "ETB-12 · ETB-25 · ETB-40 · 3 models",
+   "summary": "Beading machines for stiffening beads, steps, flanges and offsets in sheet and in the ends of ducts and tanks: the ETB-12 with a self-braking motor and foot pedal for 18 ga with an 8″ throat; the ETB-25 and ETB-40 on welded steel frames with brake motors, foot pedals and adjustable idle rolls for 12 ga and 8 ga with 11 and 12″ throats. Four standard roll sets and eight extra profiles.",
    "features": [
-    "18 ga (TB-12, ETB-12), 12 ga (ETB-25), 8 ga (ETB-40) mild steel",
+    "18 ga (ETB-12), 12 ga (ETB-25), 8 ga (ETB-40) mild steel",
     "Throat 8 – 12″",
-    "Brake motor and foot pedal on the ETB models",
+    "Brake motor and foot pedal; 1 – 3 HP",
     "4 standard roll sets; 8 extra profiles to order"
    ],
    "optional": [],
    "images": [
     "tm-etb25",
-    "tm-etb12",
-    "tm-tb12"
+    "tm-etb12"
    ],
    "videos": [],
    "headline": "18 – 8 ga",
@@ -18618,10 +16135,9 @@
     "kind": "table",
     "tables": [
      {
-      "title": "TB-12 · ETB-12 · ETB-25 · ETB-40",
-      "sub": "Beading machines with 8 – 12″ throat, 18 ga to 8 ga",
+      "title": "ETB-12 · ETB-25 · ETB-40",
+      "sub": "Motorized beading machines with 8 – 12″ throat, 18 ga to 8 ga",
       "models": [
-       "TB-12",
        "ETB-12",
        "ETB-25",
        "ETB-40"
@@ -18631,7 +16147,6 @@
         "label": "Capacity, mild steel",
         "sub": "",
         "cells": [
-         "18 ga (1.2 mm)",
          "18 ga (1.2 mm)",
          "12 ga (2.5 mm)",
          "8 ga (4 mm)"
@@ -18643,7 +16158,6 @@
         "sub": "",
         "cells": [
          "8″ (200 mm)",
-         "8″ (200 mm)",
          "11″ (280 mm)",
          "12″ (300 mm)"
         ],
@@ -18654,7 +16168,6 @@
         "sub": "",
         "cells": [
          "5-1/2″ (140 mm)",
-         "5-1/2″ (140 mm)",
          "4-3/4″ (120 mm)",
          "6-1/2″ (165 mm)"
         ],
@@ -18664,7 +16177,6 @@
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand crank",
          "1 HP (0.75 kW), 32 rpm, foot pedal",
          "2 HP (1.5 kW), 20 rpm, brake motor, foot pedal",
          "3 HP (2.2 kW), 15.3 rpm, brake motor, foot pedal"
@@ -18677,7 +16189,6 @@
         "cells": [
          "4 standard sets; 8 extra profiles to order",
          "4 standard sets; 8 extra profiles to order",
-         "4 standard sets; 8 extra profiles to order",
          "4 standard sets; 8 extra profiles to order"
         ],
         "key": false
@@ -18686,7 +16197,6 @@
         "label": "Packing size L × W × H",
         "sub": "",
         "cells": [
-         "26 × 13 × 24″ (67 × 32 × 60 cm)",
          "43 × 19 × 58″ (110 × 48 × 148 cm)",
          "58 × 23 × 53″ (147 × 58 × 135 cm)",
          "65 × 23 × 55″ (165 × 58 × 140 cm)"
@@ -18697,7 +16207,6 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "101 lb (46 kg)",
          "265 lb (120 kg)",
          "518 lb (235 kg)",
          "752 lb (341 kg)"
@@ -18708,15 +16217,6 @@
      }
     ],
     "models": [
-     {
-      "name": "TB-12",
-      "glance": [
-       "18 ga (1.2 mm)",
-       "8″ (200 mm)",
-       "Hand crank",
-       "101 lb (46 kg)"
-      ]
-     },
      {
       "name": "ETB-12",
       "glance": [
@@ -18752,7 +16252,6 @@
      "weight"
     ],
     "caps": {
-     "TB-12": "18 ga (1.2 mm) · throat 8″ (200 mm)",
      "ETB-12": "18 ga (1.2 mm) · throat 8″ (200 mm)",
      "ETB-25": "12 ga (2.5 mm) · throat 11″ (280 mm)",
      "ETB-40": "8 ga (4 mm) · throat 12″ (300 mm)"
@@ -18766,21 +16265,20 @@
   "tt-rm-deep": {
    "id": "tt-rm-deep",
    "brand": "novotech",
-   "name": "RM24 · RM36 · RM42 deep-throat bead rollers, 24 – 42″",
+   "name": "RM24 · RM36 · RM42 motorized deep-throat bead rollers, 24 – 42″",
    "short": "RM deep-throat bead rollers",
-   "models_label": "RM24M – RM-42HM · 11 models",
-   "summary": "Deep-throat bead rollers for auto body panels, floor pans, doors and HVAC panels: 20 ga steel and 18 ga aluminum with a 24, 36 or 42″ throat, by hand crank (M models) or with a variable-speed motor, foot pedal and forward / reverse. The H models have a 4″ high throat for formed panels and drive both shafts. Round, flat, step and spoiler bead rolls; the bead depth is adjustable.",
+   "models_label": "RM24 – RM-42H · 6 models",
+   "summary": "Deep-throat bead rollers for auto body panels, floor pans, doors and HVAC panels: 20 ga steel and 18 ga aluminum with a 24, 36 or 42″ throat, a variable-speed motor, a foot pedal and forward / reverse. The H models have a 4″ high throat for formed panels and drive both shafts. Round, flat, step and spoiler bead rolls; the bead depth is adjustable.",
    "features": [
     "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
     "Throat 24″, 36″ or 42″; 4″ throat height on the H models",
-    "Variable-speed foot pedal, forward / reverse; both shafts driven (H)",
+    "Variable-speed motor, foot pedal, forward / reverse; both shafts driven (H)",
     "Rolls: round bead 1/8 – 1″, flat bead, step 1/16 – 1/4″, 45° step, spoiler 1-1/4″ radius"
    ],
    "optional": [],
    "images": [
     "tm-rm36",
-    "tm-rm42h",
-    "tm-rm24m"
+    "tm-rm42h"
    ],
    "videos": [],
    "headline": "24 – 42″ throat",
@@ -18789,30 +16287,20 @@
     "tables": [
      {
       "title": "RM24 · RM36 · RM42 · RM-24H · RM-36H · RM-42H",
-      "sub": "Deep-throat bead rollers, 24 – 42″, 20 ga — hand crank (M) or variable-speed motor; H models with a 4″ high throat",
+      "sub": "Motorized deep-throat bead rollers, 24 – 42″, 20 ga — H models with a 4″ high throat and both shafts driven",
       "models": [
-       "RM24M",
        "RM24",
        "RM-24H",
-       "RM-24HM",
-       "RM36M",
        "RM36",
        "RM-36H",
-       "RM-36HM",
        "RM42",
-       "RM-42H",
-       "RM-42HM"
+       "RM-42H"
       ],
       "rows": [
        {
         "label": "Capacity",
         "sub": "",
         "cells": [
-         "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-         "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-         "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-         "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-         "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
          "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
          "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
          "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
@@ -18828,13 +16316,8 @@
         "cells": [
          "24″ (610 mm)",
          "24″ (610 mm)",
-         "24″ (610 mm)",
-         "24″ (610 mm)",
          "36″ (910 mm)",
          "36″ (910 mm)",
-         "36″ (910 mm)",
-         "36″ (910 mm)",
-         "42″ (1,067 mm)",
          "42″ (1,067 mm)",
          "42″ (1,067 mm)"
         ],
@@ -18845,15 +16328,10 @@
         "sub": "",
         "cells": [
          "—",
-         "—",
-         "4″ (102 mm)",
-         "4″ (102 mm)",
-         "—",
-         "—",
-         "4″ (102 mm)",
          "4″ (102 mm)",
          "—",
          "4″ (102 mm)",
+         "—",
          "4″ (102 mm)"
         ],
         "key": false
@@ -18862,17 +16340,12 @@
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand crank",
          "Variable-speed motor, foot pedal, forward / reverse",
          "Variable-speed motor, foot pedal, both shafts driven",
-         "Hand crank",
-         "Hand crank",
          "Variable-speed motor, foot pedal, forward / reverse",
          "Variable-speed motor, foot pedal, both shafts driven",
-         "Hand crank",
          "Variable-speed motor, foot pedal, forward / reverse",
-         "Variable-speed motor, foot pedal, both shafts driven",
-         "Hand crank"
+         "Variable-speed motor, foot pedal, both shafts driven"
         ],
         "key": true
        },
@@ -18881,15 +16354,10 @@
         "sub": "",
         "cells": [
          "46 × 25 × 16″ (117 × 64 × 40 cm)",
-         "46 × 25 × 16″ (117 × 64 × 40 cm)",
          "48 × 24 × 51″ (122 × 61 × 129 cm)",
-         "65 × 24 × 59″ (166 × 61 × 150 cm)",
-         "47 × 28 × 16″ (120 × 70 × 40 cm)",
          "59 × 28 × 16″ (151 × 72 × 40 cm)",
          "58 × 24 × 56″ (147 × 61 × 143 cm)",
-         "65 × 24 × 59″ (166 × 61 × 150 cm)",
          "62 × 22 × 23″ (157 × 57 × 58 cm)",
-         "65 × 24 × 59″ (166 × 61 × 150 cm)",
          "65 × 24 × 59″ (166 × 61 × 150 cm)"
         ],
         "key": false
@@ -18898,17 +16366,12 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "121 lb (55 kg)",
          "132 lb (60 kg)",
          "146 lb (66 kg)",
-         "134 lb (61 kg)",
-         "154 lb (70 kg)",
          "176 lb (80 kg)",
          "185 lb (84 kg)",
-         "174 lb (79 kg)",
          "168 lb (76 kg)",
-         "205 lb (93 kg)",
-         "194 lb (88 kg)"
+         "205 lb (93 kg)"
         ],
         "key": true
        }
@@ -18916,15 +16379,6 @@
      }
     ],
     "models": [
-     {
-      "name": "RM24M",
-      "glance": [
-       "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-       "24″ (610 mm)",
-       "Hand crank",
-       "121 lb (55 kg)"
-      ]
-     },
      {
       "name": "RM24",
       "glance": [
@@ -18941,24 +16395,6 @@
        "24″ (610 mm)",
        "Variable-speed motor, foot pedal, both shafts driven",
        "146 lb (66 kg)"
-      ]
-     },
-     {
-      "name": "RM-24HM",
-      "glance": [
-       "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-       "24″ (610 mm)",
-       "Hand crank",
-       "134 lb (61 kg)"
-      ]
-     },
-     {
-      "name": "RM36M",
-      "glance": [
-       "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-       "36″ (910 mm)",
-       "Hand crank",
-       "154 lb (70 kg)"
       ]
      },
      {
@@ -18980,15 +16416,6 @@
       ]
      },
      {
-      "name": "RM-36HM",
-      "glance": [
-       "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-       "36″ (910 mm)",
-       "Hand crank",
-       "174 lb (79 kg)"
-      ]
-     },
-     {
       "name": "RM42",
       "glance": [
        "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
@@ -19005,15 +16432,6 @@
        "Variable-speed motor, foot pedal, both shafts driven",
        "205 lb (93 kg)"
       ]
-     },
-     {
-      "name": "RM-42HM",
-      "glance": [
-       "20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum",
-       "42″ (1,067 mm)",
-       "Hand crank",
-       "194 lb (88 kg)"
-      ]
      }
     ],
     "glance_keys": [
@@ -19023,17 +16441,12 @@
      "weight"
     ],
     "caps": {
-     "RM24M": "throat 24″ (610 mm)",
      "RM24": "throat 24″ (610 mm)",
      "RM-24H": "throat 24″ (610 mm)",
-     "RM-24HM": "throat 24″ (610 mm)",
-     "RM36M": "throat 36″ (910 mm)",
      "RM36": "throat 36″ (910 mm)",
      "RM-36H": "throat 36″ (910 mm)",
-     "RM-36HM": "throat 36″ (910 mm)",
      "RM42": "throat 42″ (1,067 mm)",
-     "RM-42H": "throat 42″ (1,067 mm)",
-     "RM-42HM": "throat 42″ (1,067 mm)"
+     "RM-42H": "throat 42″ (1,067 mm)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
@@ -19041,307 +16454,28 @@
    "no_pdf": true,
    "group": "tt-bead"
   },
-  "tt-bead": {
-   "id": "tt-bead",
-   "brand": "novotech",
-   "name": "RM bench bead rollers and rotary machines, 22 – 18 ga",
-   "short": "RM bench bead rollers",
-   "models_label": "RM-A – RM-27 · 7 models",
-   "summary": "Hand bead rollers and rotary machines for the bench and the vise: the RM-A and RM-B with hardened rolls, the RM08 with six roll sets for turning, burring, wiring, crimping and ogee beads, the RM12 and RM18 with 12 and 18″ throats, and the heavy-duty RM-8H and RM-27 with 22 mm shafts and gear drive for 18 ga steel and 16 ga aluminum.",
-   "features": [
-    "22 – 18 ga mild steel; RM-8H / RM-27: 20 ga stainless, 16 ga aluminum",
-    "Throat 4.5″ (RM-B) to 18″ (RM18)",
-    "RM08: six standard roll sets; RM-8H: 3/8″ bead and offset die sets",
-    "Bench, vise or stand mounting; stands optional"
-   ],
-   "optional": [],
-   "images": [
-    "tm-rm08",
-    "tm-rm18",
-    "tm-rm8h",
-    "tm-rm27",
-    "tm-rmb"
-   ],
-   "videos": [],
-   "headline": "22 – 18 ga",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "RM-A · RM-B · RM08 · RM12 · RM18 · RM-8H · RM-27",
-      "sub": "Rotary machines and bead rollers",
-      "models": [
-       "RM-A",
-       "RM-B",
-       "RM08",
-       "RM12",
-       "RM18",
-       "RM-8H",
-       "RM-27"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "20 ga (1 mm)",
-         "20 ga (1 mm)",
-         "22 ga (0.8 mm)",
-         "18 ga (1.2 mm)",
-         "18 ga (1.2 mm)",
-         "18 ga (1.2 mm) mild steel, 20 ga stainless, 16 ga aluminum",
-         "18 ga (1.2 mm) mild steel, 20 ga stainless, 16 ga aluminum"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "—",
-         "4.5″ (114 mm)",
-         "7″ (177 mm)",
-         "12″ (305 mm)",
-         "18″ (457 mm)",
-         "8″ (panels up to 16″ wide)",
-         "—"
-        ],
-        "key": true
-       },
-       {
-        "label": "Dies",
-        "sub": "",
-        "cells": [
-         "Hardened rolls; head rotates 360°; edge finder",
-         "Hardened rolls, tool-free adjustment, quick change",
-         "Six sets: turning, burring, wiring, crimping, ogee bead",
-         "—",
-         "Fence attachment optional",
-         "3/8″ bead set and offset set; 22 mm shafts; gear drive",
-         "Offset set standard; 1/4 and 3/8″ bead, tipping and flange sets optional"
-        ],
-        "key": false
-       },
-       {
-        "label": "Mounting",
-        "sub": "",
-        "cells": [
-         "Bench clamp",
-         "Bench clamp",
-         "Bench (stand optional)",
-         "Bench",
-         "Bench (stand optional)",
-         "Vise or stand",
-         "Vise or stand"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "7 × 11 × 26″ (18 × 28 × 66 cm)",
-         "6 × 10 × 28″ (15 × 26 × 71 cm)",
-         "19 × 18 × 6″ (49 × 46 × 16 cm)",
-         "15 × 18 × 6″ (38 × 45 × 16 cm)",
-         "29 × 11 × 6″ (73 × 28 × 14 cm)",
-         "—",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "20 lb (9 kg)",
-         "20 lb (9 kg)",
-         "49 lb (22 kg)",
-         "42 lb (19 kg)",
-         "53 lb (24 kg)",
-         "—",
-         "—"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "RM-A",
-      "glance": [
-       "20 ga (1 mm)",
-       "—",
-       "20 lb (9 kg)"
-      ]
-     },
-     {
-      "name": "RM-B",
-      "glance": [
-       "20 ga (1 mm)",
-       "4.5″ (114 mm)",
-       "20 lb (9 kg)"
-      ]
-     },
-     {
-      "name": "RM08",
-      "glance": [
-       "22 ga (0.8 mm)",
-       "7″ (177 mm)",
-       "49 lb (22 kg)"
-      ]
-     },
-     {
-      "name": "RM12",
-      "glance": [
-       "18 ga (1.2 mm)",
-       "12″ (305 mm)",
-       "42 lb (19 kg)"
-      ]
-     },
-     {
-      "name": "RM18",
-      "glance": [
-       "18 ga (1.2 mm)",
-       "18″ (457 mm)",
-       "53 lb (24 kg)"
-      ]
-     },
-     {
-      "name": "RM-8H",
-      "glance": [
-       "18 ga (1.2 mm) mild steel, 20 ga stainless, 16 ga aluminum",
-       "8″ (panels up to 16″ wide)",
-       "—"
-      ]
-     },
-     {
-      "name": "RM-27",
-      "glance": [
-       "18 ga (1.2 mm) mild steel, 20 ga stainless, 16 ga aluminum",
-       "—",
-       "—"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "throat_depth",
-     "weight"
-    ],
-    "caps": {
-     "RM-A": "20 ga (1 mm)",
-     "RM-B": "20 ga (1 mm)",
-     "RM08": "22 ga (0.8 mm)",
-     "RM12": "18 ga (1.2 mm)",
-     "RM18": "18 ga (1.2 mm)",
-     "RM-8H": "18 ga (1.2 mm) mild steel, 20 ga stainless, 16 ga aluminum",
-     "RM-27": "18 ga (1.2 mm) mild steel, 20 ga stainless, 16 ga aluminum"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "tt-bead"
-  },
   "tt-shop-hs": {
    "id": "tt-shop-hs",
    "brand": "novotech",
-   "name": "HP-S workshop presses 22 – 110 US tons and HPP motorized presses 66 – 176 US tons",
-   "short": "HP-S / HPP workshop presses",
-   "models_label": "HP-20S – HPP-160 · 8 models",
-   "summary": "H-frame workshop presses for repair, assembly and straightening: the HP-S presses from 22 to 110 US tons with hand pumps, in a European (S) and a standard (S-A) design, and the HPP motorized presses from 66 to 176 US tons with a two-step hydraulic unit, a cylinder that moves across the frame, V-block worktables and 16″ of stroke.",
+   "name": "HPP-60 · HPP-100 · HPP-160 motorized workshop presses, 66 – 176 US tons",
+   "short": "HPP motorized workshop presses",
+   "models_label": "HPP-60 · HPP-100 · HPP-160 · 3 models",
+   "summary": "Motorized H-frame workshop presses for repair, assembly and straightening: a two-step hydraulic unit with a 3 – 4 HP motor and a double-acting hand pump for fine positioning, a cylinder that moves across the frame, V-block worktables and 16″ of stroke, from 66 to 176 US tons with working widths to 43.3″.",
    "features": [
-    "HP-S: 22, 33, 55, 88 and 110 US tons; hand pump; travel to 7.9 + 17.7″",
-    "HPP: 66, 110 and 176 US tons; 3 – 4 HP; 16.1″ (410 mm) stroke",
-    "Moving cylinder and V-block worktable (HPP)",
-    "Working width to 43.3″ (HPP-160)"
+    "HPP-60 / 100 / 160: 66, 110 and 176 US tons",
+    "3 – 4 HP; two-step hydraulic unit; 16.1″ (410 mm) stroke",
+    "Cylinder moves across the frame; V-block worktable",
+    "Working width 29.5 – 43.3″ (750 – 1,100 mm)"
    ],
    "optional": [],
    "images": [
-    "tm-hpp100",
-    "tm-hp30s",
-    "tm-hp30sa"
+    "tm-hpp100"
    ],
    "videos": [],
-   "headline": "22 – 176 US tons",
+   "headline": "66 – 176 US tons",
    "specs": {
     "kind": "table",
     "tables": [
-     {
-      "title": "HP-20S – HP-100S · HP-20S-A – HP-100S-A",
-      "sub": "H-frame workshop presses 22 – 110 US tons — S European design, S-A standard design",
-      "models": [
-       "HP-20S",
-       "HP-30S",
-       "HP-50S",
-       "HP-80S",
-       "HP-100S"
-      ],
-      "rows": [
-       {
-        "label": "Force",
-        "sub": "",
-        "cells": [
-         "22 US tons (200 kN)",
-         "33 US tons (300 kN)",
-         "55 US tons (500 kN)",
-         "88 US tons (800 kN)",
-         "110 US tons (1,000 kN)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Pressure",
-        "sub": "",
-        "cells": [
-         "7,252 psi (50 MPa)",
-         "8,702 psi (60 MPa)",
-         "8,702 psi (60 MPa)",
-         "5,802 psi (40 MPa)",
-         "5,802 psi (40 MPa)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Travel",
-        "sub": "",
-        "cells": [
-         "7.9 + 17.7″ (200 + 450 mm)",
-         "7.9 + 17.7″ (200 + 450 mm)",
-         "9.8 + 17.7″ (250 + 450 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Table",
-        "sub": "",
-        "cells": [
-         "7.9 × 11.8″ (200 × 300 mm)",
-         "11.8 × 15.7″ (300 × 400 mm)",
-         "14.2 × 19.7″ (360 × 500 mm)",
-         "19.7 × 15.7″ (500 × 400 mm)",
-         "31.5 × 15.7″ (800 × 400 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "639 lb (290 kg)",
-         "705 lb (320 kg)",
-         "1,014 lb (460 kg)",
-         "1,808 lb (820 kg)",
-         "2,116 lb (960 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
      {
       "title": "HPP-60 · HPP-100 · HPP-160",
       "sub": "Motorized workshop presses with moving cylinder, 66 – 176 US tons",
@@ -19446,99 +16580,44 @@
     ],
     "models": [
      {
-      "name": "HP-20S",
-      "glance": [
-       "22 US tons (200 kN)",
-       "7.9 + 17.7″ (200 + 450 mm)",
-       "639 lb (290 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "HP-30S",
-      "glance": [
-       "33 US tons (300 kN)",
-       "7.9 + 17.7″ (200 + 450 mm)",
-       "705 lb (320 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "HP-50S",
-      "glance": [
-       "55 US tons (500 kN)",
-       "9.8 + 17.7″ (250 + 450 mm)",
-       "1,014 lb (460 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "HP-80S",
-      "glance": [
-       "88 US tons (800 kN)",
-       "11.8″ (300 mm)",
-       "1,808 lb (820 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "HP-100S",
-      "glance": [
-       "110 US tons (1,000 kN)",
-       "11.8″ (300 mm)",
-       "2,116 lb (960 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
       "name": "HPP-60",
       "glance": [
        "66 US tons (600 kN)",
-       "—",
-       "1,852 lb (840 kg)",
        "16.1″ (410 mm)",
-       "29.5″ (750 mm)"
+       "29.5″ (750 mm)",
+       "3 HP (2.2 kW)",
+       "1,852 lb (840 kg)"
       ]
      },
      {
       "name": "HPP-100",
       "glance": [
        "110 US tons (1,000 kN)",
-       "—",
-       "2,954 lb (1,340 kg)",
        "16.1″ (410 mm)",
-       "36.2″ (920 mm)"
+       "36.2″ (920 mm)",
+       "4 HP (3 kW)",
+       "2,954 lb (1,340 kg)"
       ]
      },
      {
       "name": "HPP-160",
       "glance": [
        "176 US tons (1,600 kN)",
-       "—",
-       "4,189 lb (1,900 kg)",
        "16.1″ (410 mm)",
-       "43.3″ (1,100 mm)"
+       "43.3″ (1,100 mm)",
+       "4 HP (3 kW)",
+       "4,189 lb (1,900 kg)"
       ]
      }
     ],
     "glance_keys": [
      "force",
-     "travel",
-     "weight",
      "stroke",
-     "working_width_max"
+     "working_width_max",
+     "motor",
+     "weight"
     ],
     "caps": {
-     "HP-20S": "22 US tons (200 kN)",
-     "HP-30S": "33 US tons (300 kN)",
-     "HP-50S": "55 US tons (500 kN)",
-     "HP-80S": "88 US tons (800 kN)",
-     "HP-100S": "110 US tons (1,000 kN)",
      "HPP-60": "66 US tons (600 kN)",
      "HPP-100": "110 US tons (1,000 kN)",
      "HPP-160": "176 US tons (1,600 kN)"
@@ -19552,105 +16631,28 @@
   "tt-shop-small": {
    "id": "tt-shop-small",
    "brand": "novotech",
-   "name": "Shop presses 10 – 30 tons and BP-16T / EBP-25T workshop presses",
-   "short": "Shop presses 10 – 30 tons",
-   "models_label": "10 t bench (382101) – EBP-25T · 7 models",
-   "summary": "Shop presses for the garage, the farm and the maintenance shop: H-frame presses from 10 to 30 tons with hand pumps and adjustable tables for pressing bearings, bushings and shafts and straightening parts; the BP-16T workshop press with a two-speed hand pump and the EBP-25T with a motorized pump and infinitely variable pressure and speed, both with two V-blocks for straightening.",
+   "name": "EBP-25T motorized workshop press, 28 US tons",
+   "short": "EBP-25T workshop press",
+   "models_label": "EBP-25T · 1 model",
+   "summary": "A compact workshop press with a motorized pump and infinitely variable pressure and speed — pressing bearings, bushings and shafts, and straightening on the two V-blocks — for the garage, the farm and the maintenance shop.",
    "features": [
-    "H-frame 10, 12, 20 and 30 tons; working space to 39″",
-    "BP-16T: 18 US tons, hand pump with low and high pressure; 6.3″ stroke",
-    "EBP-25T: 28 US tons, motorized pump, 7.9″ stroke; pressure gauge",
+    "28 US tons (250 kN); 7.9″ (200 mm) stroke",
+    "Motorized pump; infinitely variable pressure and speed; pressure gauge",
     "Two V-blocks for straightening"
    ],
    "optional": [],
    "images": [
-    "tm-ebp25t",
-    "tm-bp16t",
-    "tm-hframe"
+    "tm-ebp25t"
    ],
    "videos": [],
-   "headline": "10 – 30 tons",
+   "headline": "28 US tons",
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "H-frame shop presses, 10 – 30 tons",
-      "sub": "Hand-pump shop presses for the garage and maintenance shop",
+      "title": "EBP-25T",
+      "sub": "Motorized workshop press with two V-blocks",
       "models": [
-       "10 t bench (382101)",
-       "12 t (382102)",
-       "10 t (382103)",
-       "20 t (382105)",
-       "30 t (382106)"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "10 tons",
-         "12 tons",
-         "10 tons",
-         "20 tons",
-         "30 tons"
-        ],
-        "key": true
-       },
-       {
-        "label": "Overall height",
-        "sub": "",
-        "cells": [
-         "28.1″ (713 mm)",
-         "50.5″ (1,283 mm)",
-         "50.2″ (1,276 mm)",
-         "61.5″ (1,562 mm)",
-         "67.3″ (1,710 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Width",
-        "sub": "",
-        "cells": [
-         "23.5″ (596 mm)",
-         "20.3″ (514.4 mm)",
-         "20.4″ (516.9 mm)",
-         "26.4″ (670 mm)",
-         "29.9″ (760 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Working space",
-        "sub": "",
-        "cells": [
-         "—",
-         "2.6 – 39″ (66.7 – 990 mm)",
-         "5.7 – 36.3″ (146 – 922 mm)",
-         "5.7 – 36.3″ (146 – 922 mm)",
-         "0.25 – 24.2″ (6.4 – 615 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "176 lb (80 kg)",
-         "119 lb (54 kg)",
-         "143 lb (65 kg)",
-         "256 lb (116 kg)",
-         "441 lb (200 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "BP-16T · EBP-25T",
-      "sub": "Workshop presses with V-blocks — hand pump or motorized pump",
-      "models": [
-       "BP-16T",
        "EBP-25T"
       ],
       "rows": [
@@ -19658,7 +16660,6 @@
         "label": "Force",
         "sub": "",
         "cells": [
-         "18 US tons (160 kN)",
          "28 US tons (250 kN)"
         ],
         "key": true
@@ -19667,7 +16668,6 @@
         "label": "Stroke",
         "sub": "",
         "cells": [
-         "6.3″ (160 mm)",
          "7.9″ (200 mm)"
         ],
         "key": false
@@ -19676,7 +16676,6 @@
         "label": "Pump",
         "sub": "",
         "cells": [
-         "Hand pump, low and high pressure: 0.16 / 0.03″ (4 / 0.8 mm) per stroke",
          "Motorized pump, infinitely variable pressure and speed: 0.35 in/s (8.8 mm/s)"
         ],
         "key": true
@@ -19685,7 +16684,6 @@
         "label": "Return speed",
         "sub": "",
         "cells": [
-         "0.59 in/s (15 mm/s)",
          "0.49 in/s (12.5 mm/s)"
         ],
         "key": false
@@ -19694,7 +16692,6 @@
         "label": "Oil reservoir",
         "sub": "",
         "cells": [
-         "0.7 US gal (2.5 L)",
          "1.3 US gal (5 L)"
         ],
         "key": false
@@ -19703,7 +16700,6 @@
         "label": "Packing size L × W × H",
         "sub": "",
         "cells": [
-         "33 × 28 × 46″ (85 × 70 × 117 cm)",
          "39 × 38 × 43″ (98 × 96 × 108 cm)"
         ],
         "key": false
@@ -19712,7 +16708,6 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "474 lb (215 kg)",
          "534 lb (242 kg)"
         ],
         "key": true
@@ -19722,91 +16717,21 @@
     ],
     "models": [
      {
-      "name": "10 t bench (382101)",
-      "glance": [
-       "10 tons",
-       "28.1″ (713 mm)",
-       "176 lb (80 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "12 t (382102)",
-      "glance": [
-       "12 tons",
-       "50.5″ (1,283 mm)",
-       "119 lb (54 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "10 t (382103)",
-      "glance": [
-       "10 tons",
-       "50.2″ (1,276 mm)",
-       "143 lb (65 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "20 t (382105)",
-      "glance": [
-       "20 tons",
-       "61.5″ (1,562 mm)",
-       "256 lb (116 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "30 t (382106)",
-      "glance": [
-       "30 tons",
-       "67.3″ (1,710 mm)",
-       "441 lb (200 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "BP-16T",
-      "glance": [
-       "—",
-       "—",
-       "474 lb (215 kg)",
-       "18 US tons (160 kN)",
-       "Hand pump, low and high pressure: 0.16 / 0.03″ (4 / 0.8 mm) per stroke"
-      ]
-     },
-     {
       "name": "EBP-25T",
       "glance": [
-       "—",
-       "—",
-       "534 lb (242 kg)",
        "28 US tons (250 kN)",
-       "Motorized pump, infinitely variable pressure and speed: 0.35 in/s (8.8 mm/s)"
+       "Motorized pump, infinitely variable pressure and speed: 0.35 in/s (8.8 mm/s)",
+       "534 lb (242 kg)"
       ]
      }
     ],
     "glance_keys": [
-     "capacity",
-     "overall_height",
-     "weight",
      "force",
-     "pump"
+     "pump",
+     "weight"
     ],
     "caps": {
-     "10 t bench (382101)": "10 tons",
-     "12 t (382102)": "12 tons",
-     "10 t (382103)": "10 tons",
-     "20 t (382105)": "20 tons",
-     "30 t (382106)": "30 tons",
-     "BP-16T": "",
-     "EBP-25T": ""
+     "EBP-25T": "28 US tons (250 kN)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
@@ -19814,88 +16739,79 @@
    "no_pdf": true,
    "group": "tt-shop"
   },
-  "tt-shop-brake": {
-   "id": "tt-shop-brake",
+  "tt-ebp10t": {
+   "id": "tt-ebp10t",
    "brand": "novotech",
-   "name": "HP-12N · HP-24N shop press brakes, 12″ × 3/16″ and 24″ × 14 ga",
-   "short": "HP-12N / HP-24N press brakes",
-   "models_label": "HP-12N · HP-24N · 2 models",
-   "summary": "Compact hydraulic bending brakes driven by a bottle jack: the HP-12N bends 3/16″ mild steel over 12″ with two V-blocks on a frame with four wheels — its 12-ton ram and pump come off for other pressing jobs — and the HP-24N bends 14 ga over 24″ with 20 tons, with return springs that bring the bending bar back after every bend.",
+   "name": "EBP-10T hydraulic bench press for sheet-metal tooling, 10 tons, 25″ throat",
+   "short": "EBP-10T bench press",
+   "models_label": "EBP-10T · 1 model",
+   "summary": "A 10-ton hydraulic bench press for the sheet-metal and HVAC shop: a 25″ throat and a 6″ tool opening take the industry-standard bench and louver press tooling — punch round, square and oblong holes, punch and flare or punch and bead, cut louvers, notch corners, bend 90° in 3/8″ mild steel and shear 16 ga — and it works as a hydraulic arbor press as well.",
    "features": [
-    "HP-12N: 12 tons; 3/16″ (5 mm) × 12″; 0 – 90°",
-    "HP-24N: 20 tons; 14 ga half width, 16 ga full width, 12 ga aluminum, 18 ga stainless × 24″",
-    "Return springs bring the bending bar back (HP-24N)",
-    "HP-12N on four wheels; ram and pump removable"
+    "10 tons hydraulic; 4″ stroke; 25″ throat; 6″ tool opening",
+    "Takes all standard bench press and louver press tooling",
+    "Tooling: shear 16 ga, 90° bend 3/8″, corner punch 16 ga, louver punches 1 – 5″, punch & flare and punch & bead 1 – 3″"
    ],
-   "optional": [],
+   "optional": [
+    "Shear kit",
+    "90° bend kit",
+    "Corner punch and corner radius punch",
+    "Louver punches",
+    "Punch & flare and punch & bead kits",
+    "Universal tool stand"
+   ],
    "images": [
-    "tm-hp12n",
-    "tm-hp24n"
+    "tm-ebp10t",
+    "tm-louver"
    ],
    "videos": [],
-   "headline": "12″ × 3/16″, 24″ × 14 ga",
+   "headline": "10 tons, 25″ throat",
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "HP-12N · HP-24N",
-      "sub": "Press brakes for the shop press: 12 – 20 tons, 12 – 24″",
+      "title": "EBP-10T",
+      "sub": "Hydraulic bench press for punch, flare, bead, louver and bend tooling",
       "models": [
-       "HP-12N",
-       "HP-24N"
+       "EBP-10T"
       ],
       "rows": [
        {
-        "label": "Force",
+        "label": "Capacity",
         "sub": "",
         "cells": [
-         "12 tons (hydraulic ram and hand pump, removable for other pressing jobs)",
-         "20 tons hydraulic"
+         "10 tons, hydraulic, 4″ stroke"
         ],
         "key": true
        },
        {
-        "label": "Bending width × thickness",
+        "label": "Throat depth",
         "sub": "",
         "cells": [
-         "12″ (305 mm) × 3/16″ (5 mm, 6 ga) mild steel",
-         "24″ (610 mm): 14 ga (2 mm) mild steel half width, 16 ga (1.5 mm) full width, 12 ga (2.5 mm) aluminum, 18 ga (1.2 mm) stainless"
+         "25″"
         ],
         "key": true
        },
        {
-        "label": "Bending range",
+        "label": "Tool opening",
         "sub": "",
         "cells": [
-         "0 – 90°",
-         "0 – 90°"
+         "6″"
         ],
         "key": false
        },
        {
-        "label": "Min. reverse bend",
+        "label": "Tooling",
         "sub": "",
         "cells": [
-         "7/8″ (23 mm)",
-         "5/8″ (16 mm)"
+         "All BP-3T bench and louver press tooling; adaptor and die plate included"
         ],
-        "key": false
-       },
-       {
-        "label": "Ram stroke",
-        "sub": "",
-        "cells": [
-         "5.1″ (130 mm)",
-         "10.2″ (260 mm)"
-        ],
-        "key": false
+        "key": true
        },
        {
         "label": "Packing size L × W × H",
         "sub": "",
         "cells": [
-         "29 × 23 × 7″ (74 × 58 × 19 cm)",
-         "30 × 21 × 7″ (77 × 54 × 18 cm)"
+         "53 × 45 × 25″ (135 × 115 × 63 cm)"
         ],
         "key": false
        },
@@ -19903,8 +16819,7 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "115 lb (52 kg)",
-         "130 lb (59 kg)"
+         "739 lb (335 kg)"
         ],
         "key": true
        }
@@ -19913,36 +16828,206 @@
     ],
     "models": [
      {
-      "name": "HP-12N",
+      "name": "EBP-10T",
       "glance": [
-       "12 tons (hydraulic ram and hand pump, removable for other pressing jobs)",
-       "12″ (305 mm) × 3/16″ (5 mm, 6 ga) mild steel",
-       "115 lb (52 kg)"
-      ]
-     },
-     {
-      "name": "HP-24N",
-      "glance": [
-       "20 tons hydraulic",
-       "24″ (610 mm): 14 ga (2 mm) mild steel half width, 16 ga (1.5 mm) full width, 12 ga (2.5 mm) aluminum, 18 ga (1.2 mm) stainless",
-       "130 lb (59 kg)"
+       "10 tons, hydraulic, 4″ stroke",
+       "25″",
+       "All BP-3T bench and louver press tooling; adaptor and die plate included",
+       "739 lb (335 kg)"
       ]
      }
     ],
     "glance_keys": [
-     "force",
-     "bending_width_thickness",
+     "capacity",
+     "throat_depth",
+     "tooling",
      "weight"
     ],
     "caps": {
-     "HP-12N": "12″ (305 mm) × 3/16″ (5 mm, 6 ga) mild steel",
-     "HP-24N": "24″ (610 mm): 14 ga (2 mm) mild steel half width, 16 ga (1.5 mm) full width, 12 ga (2.5 mm) aluminum, 18 ga (1.2 mm) stainless"
+     "EBP-10T": "10 tons, hydraulic, 4″ stroke"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
-   "manual": true,
+   "manual": false,
    "no_pdf": true,
    "group": "tt-shop"
+  },
+  "tt-riveter": {
+   "id": "tt-riveter",
+   "brand": "novotech",
+   "name": "XM orbital riveting machines, rivets Ø3/16 – 1-3/16″",
+   "short": "XM orbital riveters",
+   "models_label": "XM-5 – XM-30 · 6 models",
+   "summary": "Hydraulic orbital (rolling) riveters: the riveting head rolls the rivet end into shape instead of hammering it, with about a tenth of the force of punch riveting — the part keeps its fit, the head comes out smooth, without vibration or noise. Six sizes for solid rivets from 3/16 to 1-3/16″; with other tools the machine works as a normal press. Hinges, chain links, brake parts, appliances and hardware.",
+   "features": [
+    "Rivets Ø3/16 – 1-3/16″ (5 – 30 mm); 1,911 – 22,481 lbf",
+    "11 rivet head forms",
+    "Tables Ø4.7″ to 19.7 × 14″",
+    "Low noise, no vibration; replaces hammering, punching and hot riveting"
+   ],
+   "optional": [],
+   "images": [
+    "tm-xm8"
+   ],
+   "videos": [],
+   "headline": "Rivets to 1-3/16″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "XM-5 – XM-30",
+      "sub": "Hydraulic orbital (rolling) riveters, rivets Ø3/16 – 1-3/16″",
+      "models": [
+       "XM-5",
+       "XM-8",
+       "XM-10",
+       "XM-16",
+       "XM-20",
+       "XM-30"
+      ],
+      "rows": [
+       {
+        "label": "Rivet diameter, max",
+        "sub": "",
+        "cells": [
+         "3/16″ (5 mm)",
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "5/8″ (16 mm)",
+         "13/16″ (20 mm)",
+         "1-3/16″ (30 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "1,911 lbf (8.5 kN)",
+         "2,923 lbf (13 kN)",
+         "4,271 lbf (19 kN)",
+         "7,644 lbf (34 kN)",
+         "14,613 lbf (65 kN)",
+         "22,481 lbf (100 kN)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Spindle travel",
+        "sub": "",
+        "cells": [
+         "0.8″ (20 mm)",
+         "1.2″ (30 mm)",
+         "1.2″ (30 mm)",
+         "2″ (50 mm)",
+         "1.2″ (30 mm)",
+         "1.2″ (30 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Head to table, max",
+        "sub": "",
+        "cells": [
+         "4.7″ (120 mm)",
+         "10.8″ (275 mm)",
+         "10.8″ (275 mm)",
+         "8.7″ (220 mm)",
+         "9.8″ (250 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "Ø4.7″ (120 mm)",
+         "9.8 × 7.9″ (250 × 200 mm)",
+         "9.8 × 7.9″ (250 × 200 mm)",
+         "13.8 × 9.8″ (350 × 250 mm)",
+         "16.5 × 11.8″ (420 × 300 mm)",
+         "19.7 × 14″ (500 × 355 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine size L × W × H",
+        "sub": "",
+        "cells": [
+         "17 × 13 × 32″ (440 × 320 × 822 mm)",
+         "33 × 24 × 69″ (850 × 600 × 1,750 mm)",
+         "28 × 20 × 59″ (700 × 500 × 1,500 mm)",
+         "31 × 23 × 73″ (800 × 585 × 1,850 mm)",
+         "42 × 20 × 76″ (1,070 × 500 × 1,930 mm)",
+         "51 × 23 × 87″ (1,300 × 580 × 2,200 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "XM-5",
+      "glance": [
+       "3/16″ (5 mm)",
+       "1,911 lbf (8.5 kN)"
+      ]
+     },
+     {
+      "name": "XM-8",
+      "glance": [
+       "5/16″ (8 mm)",
+       "2,923 lbf (13 kN)"
+      ]
+     },
+     {
+      "name": "XM-10",
+      "glance": [
+       "3/8″ (10 mm)",
+       "4,271 lbf (19 kN)"
+      ]
+     },
+     {
+      "name": "XM-16",
+      "glance": [
+       "5/8″ (16 mm)",
+       "7,644 lbf (34 kN)"
+      ]
+     },
+     {
+      "name": "XM-20",
+      "glance": [
+       "13/16″ (20 mm)",
+       "14,613 lbf (65 kN)"
+      ]
+     },
+     {
+      "name": "XM-30",
+      "glance": [
+       "1-3/16″ (30 mm)",
+       "22,481 lbf (100 kN)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "rivet_diameter_max",
+     "force"
+    ],
+    "caps": {
+     "XM-5": "rivets to 3/16″ (5 mm)",
+     "XM-8": "rivets to 5/16″ (8 mm)",
+     "XM-10": "rivets to 3/8″ (10 mm)",
+     "XM-16": "rivets to 5/8″ (16 mm)",
+     "XM-20": "rivets to 13/16″ (20 mm)",
+     "XM-30": "rivets to 1-3/16″ (30 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-rivet"
   },
   "tt-hp-h": {
    "id": "tt-hp-h",
@@ -21214,33 +18299,29 @@
   "tt-hcs": {
    "id": "tt-hcs",
    "brand": "novotech",
-   "name": "HCS · ECS circle shears and flanging machines and MCS manual circle shear",
-   "short": "HCS / ECS circle shears",
-   "models_label": "MCS1.0x1000 · HCS10/10 · ECS10/10 · 3 models",
-   "summary": "Circle shears that also flange: the HCS10/10 by hand crank and the ECS10/10 with a two-speed motor and foot pedal cut discs from Ø5-7/8 to 19-3/4″ in 16 ga and turn a rim up to 5/16″ high with the second roll set; the MCS1.0×1000 is a manual circle shear for discs up to Ø39-3/8″ in 20 ga.",
+   "name": "ECS10/10 motorized circle shear and flanging machine, 16 ga, Ø6 – 19-3/4″ discs",
+   "short": "ECS10/10 circle shear",
+   "models_label": "ECS10/10 · 1 model",
+   "summary": "A circle shear that also flanges: the ECS10/10 cuts discs from Ø5-7/8 to 19-3/4″ in 16 ga with a two-speed motor and a foot pedal, then turns a rim up to 5/16″ high with the second roll set — ends for ducts, tanks, lights and dust collectors.",
    "features": [
-    "HCS10/10 / ECS10/10: discs Ø5-7/8 – 19-3/4″, 16 ga; flanging to 5/16″",
-    "Two roll sets: cutting and flanging",
-    "ECS10/10: 1/2 / 3/4 HP two-speed motor, foot pedal",
-    "MCS1.0×1000: discs Ø4 – 39-3/8″ in 20 ga, hand crank"
+    "Discs Ø5-7/8 – 19-3/4″ (150 – 500 mm) in 16 ga (1.5 mm)",
+    "Flanging height to 5/16″ (8 mm); two roll sets: cutting and flanging",
+    "1/2 / 3/4 HP (0.37 / 0.55 kW) two-speed motor, foot pedal",
+    "Throat 19.7″ (500 mm)"
    ],
    "optional": [],
    "images": [
-    "tm-ecs",
-    "tm-hcs",
-    "tm-mcs1000"
+    "tm-ecs"
    ],
    "videos": [],
-   "headline": "Discs to Ø39″",
+   "headline": "Discs Ø6 – 19-3/4″",
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "MCS1.0x1000 · HCS10/10 · ECS10/10",
-      "sub": "Manual and motorized circle shears; HCS / ECS cut discs and flange rims",
+      "title": "ECS10/10",
+      "sub": "Motorized circle shear that cuts discs and flanges rims",
       "models": [
-       "MCS1.0x1000",
-       "HCS10/10",
        "ECS10/10"
       ],
       "rows": [
@@ -21248,8 +18329,6 @@
         "label": "Sheet thickness, max",
         "sub": "",
         "cells": [
-         "20 ga (1 mm)",
-         "16 ga (1.5 mm)",
          "16 ga (1.5 mm)"
         ],
         "key": true
@@ -21258,8 +18337,6 @@
         "label": "Disc diameter",
         "sub": "",
         "cells": [
-         "Ø4 – 39-3/8″ (100 – 1,000 mm)",
-         "Ø5-7/8 – 19-3/4″ (150 – 500 mm)",
          "Ø5-7/8 – 19-3/4″ (150 – 500 mm)"
         ],
         "key": true
@@ -21268,8 +18345,6 @@
         "label": "Throat depth",
         "sub": "",
         "cells": [
-         "—",
-         "19.7″ (500 mm)",
          "19.7″ (500 mm)"
         ],
         "key": false
@@ -21278,8 +18353,6 @@
         "label": "Flanging height, max",
         "sub": "",
         "cells": [
-         "—",
-         "5/16″ (8 mm)",
          "5/16″ (8 mm)"
         ],
         "key": false
@@ -21288,8 +18361,6 @@
         "label": "Drive",
         "sub": "",
         "cells": [
-         "Hand crank",
-         "Hand crank; hand-wheel infeed of the upper roll",
          "1/2 / 3/4 HP (0.37 / 0.55 kW) two-speed motor, foot pedal"
         ],
         "key": true
@@ -21298,8 +18369,6 @@
         "label": "Packing size L × W × H",
         "sub": "",
         "cells": [
-         "45 × 11 × 24″ (115 × 28 × 60 cm)",
-         "57 × 19 × 63″ (144 × 47 × 160 cm)",
          "59 × 22 × 63″ (151 × 57 × 160 cm)"
         ],
         "key": false
@@ -21308,8 +18377,6 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "154 lb (70 kg)",
-         "265 lb (120 kg)",
          "364 lb (165 kg)"
         ],
         "key": true
@@ -21318,24 +18385,6 @@
      }
     ],
     "models": [
-     {
-      "name": "MCS1.0x1000",
-      "glance": [
-       "20 ga (1 mm)",
-       "Ø4 – 39-3/8″ (100 – 1,000 mm)",
-       "Hand crank",
-       "154 lb (70 kg)"
-      ]
-     },
-     {
-      "name": "HCS10/10",
-      "glance": [
-       "16 ga (1.5 mm)",
-       "Ø5-7/8 – 19-3/4″ (150 – 500 mm)",
-       "Hand crank; hand-wheel infeed of the upper roll",
-       "265 lb (120 kg)"
-      ]
-     },
      {
       "name": "ECS10/10",
       "glance": [
@@ -21353,13 +18402,11 @@
      "weight"
     ],
     "caps": {
-     "MCS1.0x1000": "Ø4 – 39-3/8″ (100 – 1,000 mm)",
-     "HCS10/10": "Ø5-7/8 – 19-3/4″ (150 – 500 mm)",
      "ECS10/10": "Ø5-7/8 – 19-3/4″ (150 – 500 mm)"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
-   "manual": true,
+   "manual": false,
    "no_pdf": true,
    "group": "tt-circle"
   },
@@ -21691,426 +18738,6 @@
    "manual": false,
    "no_pdf": true,
    "group": "tt-horiz"
-  },
-  "tt-ub": {
-   "id": "tt-ub",
-   "brand": "novotech",
-   "name": "UB universal benders, SBG / YP / UBM bench benders and ornamental iron tools",
-   "short": "Universal and bench benders",
-   "models_label": "UB-70 – JTR-30 · 15 models",
-   "summary": "Hand benders for flat bar, round and square bar and angle — gates, railings, brackets, scrolls and ornamental iron: the UB-70, UB-100 and UB-100A universal benders bend angles to 120° and radius bends in flat bar up to 4 × 3/8″ hot; the SBG and YP benders bend angles, rings, hoops and scrolls; the W-1 and W-2 tool sets form scrolls, bend, twist, shear and punch strip; the W-10 makes 180° rod bends in a vise.",
-   "features": [
-    "UB-70 / UB-100: flat bar 2-3/4 – 4 × 3/8″, round Ø3/4″, square 11/16″ (hot); angle 2-3/8 × 5/16″",
-    "SBG-30 / SBG-40, YP-9 / YP-38 / UBM-30: flat bar to 2 × 5/16″, 0 – 200°",
-    "W-1 / W-2: scroll former, bender, twister, shear and punch",
-    "W-10: 180° bends in rod to 3/8″, ID 1/2 – 1-1/2″"
-   ],
-   "optional": [],
-   "images": [
-    "tm-ub100a",
-    "tm-ub70",
-    "tm-sbg30",
-    "tm-yp38",
-    "tm-ubm30",
-    "tm-w1",
-    "tm-w10",
-    "tm-mini-ub",
-    "tm-jtr30"
-   ],
-   "videos": [],
-   "headline": "Flat bar to 4 × 3/8″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "UB-70 · UB-100 · UB-100A · SBG-30 · SBG-40",
-      "sub": "Universal benders for flat bar, round, square and angle",
-      "models": [
-       "UB-70",
-       "UB-100",
-       "UB-100A",
-       "SBG-30",
-       "SBG-40"
-      ],
-      "rows": [
-       {
-        "label": "Flat bar",
-        "sub": "",
-        "cells": [
-         "2-3/4 × 3/8″ (70 × 10 mm) warm",
-         "4 × 3/8″ (100 × 10 mm) warm",
-         "4 × 1/4″ (100 × 7 mm) warm",
-         "1-3/16 × 3/8″ (30 × 10 mm)",
-         "1-3/16 × 5/16″ (30 × 8 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Round bar",
-        "sub": "",
-        "cells": [
-         "Ø3/4″ (20 mm) warm",
-         "Ø3/4″ (20 mm) warm",
-         "Ø7/8″ (22 mm) warm",
-         "Ø3/8″ (10 mm)",
-         "Ø5/8″ (15 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Square bar",
-        "sub": "",
-        "cells": [
-         "11/16″ (18 mm) warm",
-         "11/16″ (18 mm) warm",
-         "3/4″ (20 mm) warm",
-         "3/8″ (10 mm)",
-         "1/2″ (13 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Angle",
-        "sub": "",
-        "cells": [
-         "2-3/8 × 5/16″ (60 × 8 mm)",
-         "2-3/8 × 5/16″ (60 × 8 mm)",
-         "—",
-         "—",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Bending",
-        "sub": "",
-        "cells": [
-         "Angles to 120°, radius bends",
-         "Angles to 120°, radius bends",
-         "Angles to 120°, radius bends",
-         "Angles, rings, hoops and scrolls",
-         "Angles, rings, hoops and scrolls"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "62 lb (28 kg)",
-         "64 lb (29 kg)",
-         "73 lb (33 kg)",
-         "60 lb (27 kg)",
-         "51 lb (23 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "YP-9 · YP-38 · UBM-30",
-      "sub": "Bench benders for flat bar, 0 – 200°",
-      "models": [
-       "YP-9",
-       "YP-38",
-       "UBM-30"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "Flat 1-1/4 × 5/16″ (32 × 8 mm) or 2 × 1/4″ (50 × 6 mm)",
-         "Flat 1-1/4 × 5/16″ (32 × 8 mm) or 2 × 1/4″ (50 × 6 mm)",
-         "Flat 2 × 5/16″ (50 × 8 mm) or 2 × 1/4″ (50 × 6 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bend",
-        "sub": "",
-        "cells": [
-         "0 – 200°",
-         "0 – 200°",
-         "0 – 200°"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "26 × 10 × 5″ (67 × 26 × 13 cm)",
-         "35 × 10 × 10″ (88 × 26 × 26 cm)",
-         "35 × 10 × 10″ (88 × 26 × 26 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "35 lb (16 kg)",
-         "43 lb (19.5 kg)",
-         "68 lb (31 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "W-1 · W-2 · W-10 · Mini universal bender · SBG-20 · JTR-20 · JTR-30 · CRB-style tools",
-      "sub": "Ornamental iron and metal-craft tools",
-      "models": [
-       "W-1",
-       "W-2",
-       "W-10",
-       "Mini universal bender",
-       "SBG-20",
-       "JTR-20",
-       "JTR-30"
-      ],
-      "rows": [
-       {
-        "label": "Job",
-        "sub": "",
-        "cells": [
-         "Scroll former, bender, twister, shear and punch set",
-         "Heavier scroll former, bender, twister, shear and punch set",
-         "Rod forming tool: 180°+ bends with 1/2 – 1-1/2″ ID",
-         "Clamps, brackets, hooks, coils from wire, flat bar and tube",
-         "Angle bending of steel strip",
-         "Pressing (embossing) of steel strip",
-         "Rings from flat bar, round and square tube"
-        ],
-        "key": true
-       },
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "Round or square 3/8″ in scroll former and bender; flat 1 × 3/16″; punch 3/16″ flat; shear 1.18 × 0.2″ flat, 0.236″ round or square",
-         "—",
-         "Rod to 3/8″; flat to 1/2 × 3/16″",
-         "Wire and rod to 1/2″",
-         "Strip 13/16 × 0.06″ (20 × 1.5 mm)",
-         "Strip 13/16 × 0.06″ (20 × 1.5 mm)",
-         "Flat 1-9/16 × 3/8″ (40 × 10 mm); round tube Ø1-3/16 × 0.04″ (30 × 1 mm); square tube 1-9/16″ × 0.04″ (40 × 40 × 1 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "42 × 12 × 13″ (107 × 31 × 32 cm)",
-         "42 × 16 × 10″ (107 × 41 × 26 cm)",
-         "—",
-         "13 × 4 × 4″ (32 × 10 × 10 cm)",
-         "24 × 8 × 4″ (61 × 20 × 11 cm)",
-         "15 × 7 × 8″ (39 × 18 × 20 cm)",
-         "37 × 23 × 47″ (95 × 58 × 120 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "26 lb (12 kg)",
-         "71 lb (32 kg)",
-         "—",
-         "6 lb (2.8 kg)",
-         "15 lb (7 kg)",
-         "26 lb (12 kg)",
-         "143 lb (65 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "UB-70",
-      "glance": [
-       "2-3/4 × 3/8″ (70 × 10 mm) warm",
-       "Ø3/4″ (20 mm) warm",
-       "62 lb (28 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "UB-100",
-      "glance": [
-       "4 × 3/8″ (100 × 10 mm) warm",
-       "Ø3/4″ (20 mm) warm",
-       "64 lb (29 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "UB-100A",
-      "glance": [
-       "4 × 1/4″ (100 × 7 mm) warm",
-       "Ø7/8″ (22 mm) warm",
-       "73 lb (33 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "SBG-30",
-      "glance": [
-       "1-3/16 × 3/8″ (30 × 10 mm)",
-       "Ø3/8″ (10 mm)",
-       "60 lb (27 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "SBG-40",
-      "glance": [
-       "1-3/16 × 5/16″ (30 × 8 mm)",
-       "Ø5/8″ (15 mm)",
-       "51 lb (23 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "YP-9",
-      "glance": [
-       "—",
-       "—",
-       "35 lb (16 kg)",
-       "Flat 1-1/4 × 5/16″ (32 × 8 mm) or 2 × 1/4″ (50 × 6 mm)",
-       "0 – 200°"
-      ]
-     },
-     {
-      "name": "YP-38",
-      "glance": [
-       "—",
-       "—",
-       "43 lb (19.5 kg)",
-       "Flat 1-1/4 × 5/16″ (32 × 8 mm) or 2 × 1/4″ (50 × 6 mm)",
-       "0 – 200°"
-      ]
-     },
-     {
-      "name": "UBM-30",
-      "glance": [
-       "—",
-       "—",
-       "68 lb (31 kg)",
-       "Flat 2 × 5/16″ (50 × 8 mm) or 2 × 1/4″ (50 × 6 mm)",
-       "0 – 200°"
-      ]
-     },
-     {
-      "name": "W-1",
-      "glance": [
-       "—",
-       "—",
-       "26 lb (12 kg)",
-       "Round or square 3/8″ in scroll former and bender; flat 1 × 3/16″; punch 3/16″ flat; shear 1.18 × 0.2″ flat, 0.236″ round or square",
-       "—"
-      ]
-     },
-     {
-      "name": "W-2",
-      "glance": [
-       "—",
-       "—",
-       "71 lb (32 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "W-10",
-      "glance": [
-       "—",
-       "—",
-       "—",
-       "Rod to 3/8″; flat to 1/2 × 3/16″",
-       "—"
-      ]
-     },
-     {
-      "name": "Mini universal bender",
-      "glance": [
-       "—",
-       "—",
-       "6 lb (2.8 kg)",
-       "Wire and rod to 1/2″",
-       "—"
-      ]
-     },
-     {
-      "name": "SBG-20",
-      "glance": [
-       "—",
-       "—",
-       "15 lb (7 kg)",
-       "Strip 13/16 × 0.06″ (20 × 1.5 mm)",
-       "—"
-      ]
-     },
-     {
-      "name": "JTR-20",
-      "glance": [
-       "—",
-       "—",
-       "26 lb (12 kg)",
-       "Strip 13/16 × 0.06″ (20 × 1.5 mm)",
-       "—"
-      ]
-     },
-     {
-      "name": "JTR-30",
-      "glance": [
-       "—",
-       "—",
-       "143 lb (65 kg)",
-       "Flat 1-9/16 × 3/8″ (40 × 10 mm); round tube Ø1-3/16 × 0.04″ (30 × 1 mm); square tube 1-9/16″ × 0.04″ (40 × 40 × 1 mm)",
-       "—"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "flat_bar",
-     "round_bar",
-     "weight",
-     "capacity",
-     "bend"
-    ],
-    "caps": {
-     "UB-70": "2-3/4 × 3/8″ (70 × 10 mm) warm",
-     "UB-100": "4 × 3/8″ (100 × 10 mm) warm",
-     "UB-100A": "4 × 1/4″ (100 × 7 mm) warm",
-     "SBG-30": "1-3/16 × 3/8″ (30 × 10 mm)",
-     "SBG-40": "1-3/16 × 5/16″ (30 × 8 mm)",
-     "YP-9": "",
-     "YP-38": "",
-     "UBM-30": "",
-     "W-1": "",
-     "W-2": "",
-     "W-10": "",
-     "Mini universal bender": "",
-     "SBG-20": "",
-     "JTR-20": "",
-     "JTR-30": ""
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "tt-ub"
   },
   "tt-her": {
    "id": "tt-her",
@@ -22904,404 +19531,6 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine. Speeds marked “rated at 50 Hz” are the manufacturer's 50 Hz figures — motors run about 20 % faster on 60 Hz power."
    },
    "manual": false,
-   "no_pdf": true,
-   "group": "tt-slip"
-  },
-  "tt-slip-hand": {
-   "id": "tt-slip-hand",
-   "brand": "novotech",
-   "name": "Manual slip rolls, 22 – 14 ga × 12 – 81″",
-   "short": "Manual slip rolls",
-   "models_label": "SJ300 – W01-0.8×2050 · 15 models",
-   "summary": "Hand-crank slip rolls for HVAC, flashing and small tanks: precision-ground rolls of high-strength steel, hardened gears, an eccentric clamp, a lower roll set by lever and cam and a top roll that swings out to remove the part — 22 ga to 16 ga on the bench from 12 to 51″, the KW01 on its own stand, and the W01-2 floor rolls for 14 ga over 24 to 49″.",
-   "features": [
-    "22 – 14 ga (0.8 – 2 mm) × 12 – 81″",
-    "Precision-ground high-strength rolls; hardened gears",
-    "Quick-release top roll; lever-and-cam lower roll adjustment",
-    "Bench models, KW01 on stand, W01-2 on floor stand; stand type A optional"
-   ],
-   "optional": [],
-   "images": [
-    "tm-slip-1300",
-    "tm-slip-kw01",
-    "tm-w01-2",
-    "tm-slip-w01",
-    "tm-slip-sj"
-   ],
-   "videos": [],
-   "headline": "22 – 14 ga × 12 – 81″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "SJ · W01-0.8 · W01-1.5 · KW01",
-      "sub": "Manual slip rolls, 22 – 16 ga × 12 – 51″",
-      "models": [
-       "SJ300",
-       "SJ320",
-       "W01-0.8×305",
-       "W01-0.8×610",
-       "W01-0.8×915",
-       "W01-0.8×1000",
-       "KW01-0.8×1250",
-       "W01-0.8×1300",
-       "W01-1.5×915",
-       "W01-1.5×1300",
-       "W01-1.5×1300 HD"
-      ],
-      "rows": [
-       {
-        "label": "Working width",
-        "sub": "",
-        "cells": [
-         "11.8″ (300 mm)",
-         "12.6″ (320 mm)",
-         "12″ (305 mm)",
-         "24″ (610 mm)",
-         "36″ (915 mm)",
-         "39.4″ (1,000 mm)",
-         "49.2″ (1,250 mm)",
-         "51.2″ (1,300 mm)",
-         "36″ (915 mm)",
-         "51.2″ (1,300 mm)",
-         "51.2″ (1,300 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "20 ga (1 mm)",
-         "20 ga (1 mm)",
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)",
-         "16 ga (1.5 mm)",
-         "16 ga (1.5 mm)",
-         "16 ga (1.5 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Roll diameter",
-        "sub": "",
-        "cells": [
-         "Ø1-1/4″ (32 mm)",
-         "Ø1-1/4″ (32 mm)",
-         "Ø1″ (25.4 mm)",
-         "Ø1-1/2″ (38 mm)",
-         "Ø1-15/16″ (50 mm)",
-         "Ø1-15/16″ (50 mm)",
-         "Ø2-3/4″ (70 mm)",
-         "Ø1-15/16″ (50 mm)",
-         "Ø1-15/16″ (50 mm)",
-         "Ø3″ (75 mm)",
-         "Ø3″ (75 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Mounting",
-        "sub": "",
-        "cells": [
-         "Bench (vise optional)",
-         "Bench",
-         "Bench (stand A optional)",
-         "Bench",
-         "Bench",
-         "Bench",
-         "Floor stand",
-         "Bench",
-         "Bench",
-         "Bench, light type",
-         "Bench, heavy duty"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "19 × 9 × 7″ (48 × 22 × 18 cm)",
-         "19 × 9 × 7″ (48 × 22 × 18 cm)",
-         "21 × 9 × 11″ (54 × 24 × 28 cm)",
-         "37 × 10 × 15″ (95 × 26 × 37 cm)",
-         "53 × 13 × 20″ (134 × 32 × 50 cm)",
-         "57 × 13 × 20″ (145 × 32 × 50 cm)",
-         "61 × 23 × 50″ (155 × 59 × 128 cm)",
-         "67 × 18 × 20″ (170 × 45 × 50 cm)",
-         "53 × 14 × 20″ (134 × 35 × 50 cm)",
-         "67 × 17 × 22″ (170 × 43 × 56 cm)",
-         "69 × 18 × 24″ (175 × 45 × 60 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "29 lb (13 kg)",
-         "26 lb (12 kg)",
-         "29 lb (13 kg)",
-         "84 lb (38 kg)",
-         "176 lb (80 kg)",
-         "190 lb (86 kg)",
-         "298 lb (135 kg)",
-         "258 lb (117 kg)",
-         "220 lb (100 kg)",
-         "430 lb (195 kg)",
-         "518 lb (235 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "W01-2 · W01-0.8×2050",
-      "sub": "Floor slip rolls on stand, 14 ga × 24 – 49″ and 22 ga × 81″",
-      "models": [
-       "W01-2×610",
-       "W01-2×1000",
-       "W01-2×1250",
-       "W01-0.8×2050"
-      ],
-      "rows": [
-       {
-        "label": "Working width",
-        "sub": "",
-        "cells": [
-         "24″ (610 mm)",
-         "39.4″ (1,000 mm)",
-         "49.2″ (1,250 mm)",
-         "80.7″ (2,050 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "22 ga (0.8 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Roll diameter",
-        "sub": "",
-        "cells": [
-         "Ø2-3/8″ (60 mm)",
-         "Ø2-3/8″ (60 mm)",
-         "Ø2-3/8″ (60 mm)",
-         "Ø2-3/8″ (60 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Drive",
-        "sub": "",
-        "cells": [
-         "Hand crank",
-         "Hand crank",
-         "Hand crank",
-         "Hand crank"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "43 × 20 × 27″ (110 × 50 × 69 cm)",
-         "61 × 20 × 27″ (155 × 51 × 69 cm)",
-         "71 × 20 × 27″ (180 × 50 × 69 cm)",
-         "100 × 20 × 28″ (255 × 50 × 70 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "364 lb (165 kg)",
-         "441 lb (200 kg)",
-         "505 lb (229 kg)",
-         "639 lb (290 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "SJ300",
-      "glance": [
-       "11.8″ (300 mm)",
-       "20 ga (1 mm)",
-       "Ø1-1/4″ (32 mm)",
-       "29 lb (13 kg)"
-      ]
-     },
-     {
-      "name": "SJ320",
-      "glance": [
-       "12.6″ (320 mm)",
-       "20 ga (1 mm)",
-       "Ø1-1/4″ (32 mm)",
-       "26 lb (12 kg)"
-      ]
-     },
-     {
-      "name": "W01-0.8×305",
-      "glance": [
-       "12″ (305 mm)",
-       "22 ga (0.8 mm)",
-       "Ø1″ (25.4 mm)",
-       "29 lb (13 kg)"
-      ]
-     },
-     {
-      "name": "W01-0.8×610",
-      "glance": [
-       "24″ (610 mm)",
-       "22 ga (0.8 mm)",
-       "Ø1-1/2″ (38 mm)",
-       "84 lb (38 kg)"
-      ]
-     },
-     {
-      "name": "W01-0.8×915",
-      "glance": [
-       "36″ (915 mm)",
-       "22 ga (0.8 mm)",
-       "Ø1-15/16″ (50 mm)",
-       "176 lb (80 kg)"
-      ]
-     },
-     {
-      "name": "W01-0.8×1000",
-      "glance": [
-       "39.4″ (1,000 mm)",
-       "22 ga (0.8 mm)",
-       "Ø1-15/16″ (50 mm)",
-       "190 lb (86 kg)"
-      ]
-     },
-     {
-      "name": "KW01-0.8×1250",
-      "glance": [
-       "49.2″ (1,250 mm)",
-       "22 ga (0.8 mm)",
-       "Ø2-3/4″ (70 mm)",
-       "298 lb (135 kg)"
-      ]
-     },
-     {
-      "name": "W01-0.8×1300",
-      "glance": [
-       "51.2″ (1,300 mm)",
-       "22 ga (0.8 mm)",
-       "Ø1-15/16″ (50 mm)",
-       "258 lb (117 kg)"
-      ]
-     },
-     {
-      "name": "W01-1.5×915",
-      "glance": [
-       "36″ (915 mm)",
-       "16 ga (1.5 mm)",
-       "Ø1-15/16″ (50 mm)",
-       "220 lb (100 kg)"
-      ]
-     },
-     {
-      "name": "W01-1.5×1300",
-      "glance": [
-       "51.2″ (1,300 mm)",
-       "16 ga (1.5 mm)",
-       "Ø3″ (75 mm)",
-       "430 lb (195 kg)"
-      ]
-     },
-     {
-      "name": "W01-1.5×1300 HD",
-      "glance": [
-       "51.2″ (1,300 mm)",
-       "16 ga (1.5 mm)",
-       "Ø3″ (75 mm)",
-       "518 lb (235 kg)"
-      ]
-     },
-     {
-      "name": "W01-2×610",
-      "glance": [
-       "24″ (610 mm)",
-       "14 ga (2 mm)",
-       "Ø2-3/8″ (60 mm)",
-       "364 lb (165 kg)"
-      ]
-     },
-     {
-      "name": "W01-2×1000",
-      "glance": [
-       "39.4″ (1,000 mm)",
-       "14 ga (2 mm)",
-       "Ø2-3/8″ (60 mm)",
-       "441 lb (200 kg)"
-      ]
-     },
-     {
-      "name": "W01-2×1250",
-      "glance": [
-       "49.2″ (1,250 mm)",
-       "14 ga (2 mm)",
-       "Ø2-3/8″ (60 mm)",
-       "505 lb (229 kg)"
-      ]
-     },
-     {
-      "name": "W01-0.8×2050",
-      "glance": [
-       "80.7″ (2,050 mm)",
-       "22 ga (0.8 mm)",
-       "Ø2-3/8″ (60 mm)",
-       "639 lb (290 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "working_width",
-     "capacity_mild_steel",
-     "roll_diameter",
-     "weight"
-    ],
-    "caps": {
-     "SJ300": "11.8″ (300 mm) × 20 ga (1 mm)",
-     "SJ320": "12.6″ (320 mm) × 20 ga (1 mm)",
-     "W01-0.8×305": "12″ (305 mm) × 22 ga (0.8 mm)",
-     "W01-0.8×610": "24″ (610 mm) × 22 ga (0.8 mm)",
-     "W01-0.8×915": "36″ (915 mm) × 22 ga (0.8 mm)",
-     "W01-0.8×1000": "39.4″ (1,000 mm) × 22 ga (0.8 mm)",
-     "KW01-0.8×1250": "49.2″ (1,250 mm) × 22 ga (0.8 mm)",
-     "W01-0.8×1300": "51.2″ (1,300 mm) × 22 ga (0.8 mm)",
-     "W01-1.5×915": "36″ (915 mm) × 16 ga (1.5 mm)",
-     "W01-1.5×1300": "51.2″ (1,300 mm) × 16 ga (1.5 mm)",
-     "W01-1.5×1300 HD": "51.2″ (1,300 mm) × 16 ga (1.5 mm)",
-     "W01-2×610": "24″ (610 mm) × 14 ga (2 mm)",
-     "W01-2×1000": "39.4″ (1,000 mm) × 14 ga (2 mm)",
-     "W01-2×1250": "49.2″ (1,250 mm) × 14 ga (2 mm)",
-     "W01-0.8×2050": "80.7″ (2,050 mm) × 22 ga (0.8 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
    "no_pdf": true,
    "group": "tt-slip"
   },

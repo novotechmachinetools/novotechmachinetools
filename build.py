@@ -1070,7 +1070,26 @@ def artifact_fragment(html, page):
     return html.strip() + "\n"
 
 
+def social_images():
+    """every page shares with a 1200 × 630 preview image (og:image = img/social/<slug>.jpg): WhatsApp, Facebook and the other
+    chat and social apps show no picture when it is missing. make_social draws the cards that are missing or whose photo,
+    heading or tagline changed (and removes the cards of pages that are gone) before the images are copied."""
+    import subprocess
+    r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "tools", "make_social.py"), "--stale"],
+                       check=True, capture_output=True, text=True)
+    made = [ln.split()[0] for ln in r.stdout.splitlines() if ln.endswith(tuple("0123456789"))]
+    if made:
+        print(f"social images: drew {len(made)} — " + ", ".join(made[:6]) + (" …" if len(made) > 6 else ""))
+    pdir, sdir = os.path.join(ROOT, "content", "pages"), os.path.join(ROOT, "src", "img", "social")
+    slugs = [json.load(open(os.path.join(pdir, fn), encoding="utf-8"))["slug"] for fn in sorted(os.listdir(pdir))
+             if fn.endswith(".json") and not fn.startswith("_")]
+    still = [s for s in slugs if not os.path.exists(os.path.join(sdir, s + ".jpg"))]
+    if still:
+        raise SystemExit(f"no social image for: {', '.join(still)}")
+
+
 def main():
+    social_images()
     if os.path.exists(DIST):
         shutil.rmtree(DIST)
     os.makedirs(DIST)

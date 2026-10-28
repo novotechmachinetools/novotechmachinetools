@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """NovoTech value-line machines built by TTMC (sold under NovoTech's name, TTMC model codes) — families of the NEW pages:
-sheet metal brakes, lock formers, belt grinders, drill presses, milling machines, CNC machine tools, CNC plasma tables, metal
-shaping machines, arbor presses and tube benders.  Spec tables in tools/ttmc_more_tables.py, photos in tools/ttmc_more_photos.py,
-pages in tools/ttmc_more_pages.py; families of the existing pages in tools/ttmc_more_data2.py.
+sheet metal brakes, lock formers, belt grinders, drill presses, milling machines, CNC machine tools, CNC plasma tables, power and
+planishing hammers and tube benders.  Spec tables in tools/ttmc_more_tables.py, photos in tools/ttmc_more_photos.py, pages in
+tools/ttmc_more_pages.py; families of the existing pages in tools/ttmc_more_data2.py.
+
+Scope (Oct 2026, the owner's decision): no fully manual machines except the manual sheet metal brakes — no foot or hand shears,
+manual rolls and ring rollers, manual pipe and tube benders, manual shaping machines (English wheels, shrinker-stretchers, hand
+bead rollers), manual autobody tools, manual presses (arbor, ratchet, hand-pump), castings or saw blades.  The supplier tables of
+the dropped models stay in ttmc_more_tables.py; the families pick only the powered models.
 """
 from ttmc_conv import auto_spec, pick
 import ttmc_more_tables as TT
@@ -165,22 +170,14 @@ LOCK = [
        "AX20G: roll sets change without tools; quick jam release; roll sets at extra cost",
        "Single-phase or 3-phase motors: 1 HP (PF20G), 3 HP (PF16G), 4 HP (AX20G)"],
       ["tm-pf16g", "tm-pf20g", "tm-ax20g", "tm-lock-forms"], headline="26 – 16 ga mild steel", cap="[Capacity, mild steel] · [Speed]"),
-    F("tt-hvac", P_LOCK, "duct", "SL-10 seam closer, CHB / CB cleat benders and LB-2 letter bender", "Duct and sign tools", T["tt-hvac"],
-      "The tools that finish the duct: the SL-10 electric seam closer runs along a Pittsburgh seam and closes it in three stages, "
-      "adjusting itself to 26 – 20 ga sheet; the CHB hand brakes bend 1/4 to 1″ flanges 24 or 30″ long; the CB cleat benders form "
-      "drive-cleat edges on rectangular duct in seconds, with no set-up. The LB-2 is a foot-operated channel letter bender for sign "
-      "makers — Z, S and W bends in aluminum up to 0.079″.",
-      ["SL-10: closes Pittsburgh seams in 3 stages (30°, 75°, 90°); 13 – 23 ft/min; 120 V or 230 V",
-       "CHB-24 / CHB-30: hand brakes for 1/4 – 1″ flanges in 20 ga, bench mounted, two-way trunnion",
-       "CB-24 / CB-30: drive-cleat edges in 20 ga; quick release with 3 handle positions; needle bearings",
-       "LB-2: channel letter bender for aluminum to 0.079″ (2 mm), foot pedal and depth stop"],
-      ["tm-sl10", "tm-chb", "tm-cb", "tm-lb2"], headline="26 – 20 ga duct", cap="[Job]", manual=True),
-    F("tt-rtb", P_LOCK, "round", "RTB round duct rollers, 22 ga × 40 – 49″", "RTB duct rollers", T["tt-rtb"],
-      "Hand rollers that roll 22 ga (0.8 mm) sheet into round duct and pipe, 40″ or 49″ long, with hardened rolls: light and portable for "
-      "the bench, or on a welded stand at a 33.5″ working height (RTB-8AS).",
-      ["22 ga (0.8 mm) × 40″ (RTB-8) and 49″ (RTB-8A, RTB-8AS)", "Hardened rolls; portable and compact",
-       "RTB-8AS on a welded stand, roll height 33.5″ (850 mm)"],
-      ["tm-rtb8as", "tm-rtb8"], headline="22 ga × 40 – 49″", cap="[Working length]", manual=True),
+    F("tt-hvac", P_LOCK, "duct", "SL-10 electric seam closer for Pittsburgh seams, 26 – 20 ga", "SL-10 seam closer",
+      [pick(T["tt-hvac"][0], ["SL-10"], title="SL-10", sub="Electric seam closer for Pittsburgh seams")],
+      "The SL-10 runs along a Pittsburgh seam and closes it in three stages — 30°, 75° and 90° — adjusting itself to the sheet as it "
+      "goes: faster, quieter and neater than closing the lip with a hammer, on straight and curved rectangular duct in 26 – 20 ga. It "
+      "weighs 15 lb, so one hand guides it along the seam on the bench or on the job site.",
+      ["Closes Pittsburgh seams in 3 stages (30°, 75°, 90°)", "26 – 20 ga (0.5 – 1 mm) sheet; flange 0.28 – 0.35″ (7 – 9 mm)",
+       "13 – 23 ft/min (4 – 7 m/min); 1,400 W motor, 120 V or 230 V", "15 lb (6.6 kg) — portable"],
+      ["tm-sl10"], headline="26 – 20 ga duct", cap="[Job]"),
     F("tt-duct", P_LOCK, "round", "RM18E power beading machine and LQ15 slitting and bending machine", "Duct beading and slitting", [T["tt-etb"][1]],
       "Two powered machines for round duct: the RM18E puts single and offset beads on round duct — 15 ga (1.8 mm) with a 9-3/8″ throat, "
       "three standard roll sets and a foot pedal; the LQ15 slits 16 ga (1.5 mm) sheet up to 47″ wide and bends it for duct work.",
@@ -471,22 +468,12 @@ PLASMA = [
       ["tm-pcp3000e", "tm-pcp6000"], headline="Pipe Ø2 – 11-3/4″", cap="[Pipe length]"),
 ]
 
-# =============================================================================================== metal shaping
-P_SHAPE = "english-wheel"
+# =============================================================================================== power and planishing hammers
+P_SHAPE = "power-hammer"     # was english-wheel: English wheels and shrinker-stretchers are manual — not sold (Oct 2026)
 SHAPE = [
-    F("tt-ew", P_SHAPE, "wheel", "English wheels, 22 – 14 ga, 18 – 45″ throat", "English wheels", [T["tt-ew"][0], T["tt-ew2"][0]],
-      "English wheels stretch sheet into compound curves — fenders, hoods, tanks, aircraft and boat panels — by rolling it between a "
-      "flat upper wheel and a crowned lower anvil. Ten models from the F0.8×450 for 22 ga with an 18″ throat to the F1.5×1100 with a "
-      "45″ throat and the heavy F2.0 wheels for 14 ga: rigid welded C-frames, hardened wheels, sets of lower anvils with radii from flat "
-      "to 12″, quick-release lower anvils and foot pressure control on the F1.2×1000.",
-      ["22 ga (0.8 mm) to 14 ga (2 mm) mild steel; aluminum and copper heavier", "Throat 18 – 45″ (450 – 1,145 mm)",
-       "Upper wheel Ø7-5/8 – 8″; 5 – 10 lower anvils, flat to 12″ radius", "Quick-release lower anvil with locking cam; foot pressure control (F1.2×1000)",
-       "Rigid welded C-frames on stands with anvil storage"],
-      ["tm-f1570", "tm-f15110", "tm-f2076", "tm-f1210", "tm-f12100", "tm-f2063", "tm-f1256"], headline="22 – 14 ga, 18 – 45″ throat",
-      cap="[Capacity, mild steel] · throat [Throat depth]", manual=True),
     F("tt-ph", P_SHAPE, "hammer", "Planishing hammers and power hammers, 18 – 16 ga, 12 – 30″ throat", "Planishing and power hammers",
       [T["tt-ph"][0], pick(T["tt-ph"][1], ["PH-20D", "PH-30D"], title="PH-20D · PH-30D", sub="Electric power hammers")],
-      "Hammers that smooth and shape panels after the English wheel: the PPH pneumatic planishing hammers with 12″ and 24″ throats, nine "
+      "Hammers that smooth and shape sheet-metal panels: the PPH pneumatic planishing hammers with 12″ and 24″ throats, nine "
       "radius anvils and a foot pedal; the PPH-610 that forms and beads 16 ga with quick-change upper dies; the UFP-2 that is a planishing "
       "hammer and an English wheel in one; and the PH-20D and PH-30D electric power hammers with 20″ and 30″ throats, variable speed up "
       "to 1,700 blows a minute and 16 ga steel or 12 ga aluminum capacity.",
@@ -494,14 +481,7 @@ SHAPE = [
        "PPH500: 1, 2 and 3″ radius anvils, 875 – 1,350 blows/min, 50 – 100 psi", "PH-20D / PH-30D: 2 HP electric, variable 0 – 1,700 / 0 – 1,400 blows/min, 16 ga steel, 12 ga aluminum",
        "UFP-2: planishing hammer and English wheel on one stand"],
       ["tm-ph20d", "tm-pph610", "tm-pph12", "tm-ph30d", "tm-ufp2", "tm-anvils"], headline="18 – 16 ga", cap="throat [Throat depth]"),
-    F("tt-ss", P_SHAPE, "shrink", "Shrinker-stretchers, 18 – 16 ga — bench, hand and foot-operated", "Shrinker-stretchers", T["tt-ss"],
-      "Shrinkers gather the edge of a flange to curve it inward, stretchers spread it to curve it outward — together they bend angle and "
-      "flanged parts into curves and S-shapes without cutting and welding. Bench models with 1″, 2-3/4″ and 8″ throats, the industrial "
-      "SM-16B, the SS-12P hand tool and foot-operated models on stands that leave both hands free.",
-      ["18 ga (1.2 mm) and 16 ga (1.5 mm) mild steel", "Throat 1″, 2-3/4″, 6″ and 8″", "Shrinking and stretching jaws; aluminum jaws optional (FSM-16)",
-       "Foot pedal models: SS-18FD (two heads), SS-16F, SG-18F, FSM-16 on a wheeled base"],
-      ["tm-ss18fd", "tm-ss16f", "tm-fsm16", "tm-ss16", "tm-sm16b", "tm-ss-jaws"], headline="18 – 16 ga", cap="[Capacity] · throat [Throat depth]", manual=True),
-    F("tt-pic50", P_SHAPE, "wheel", "PIC50 diamond roller former, 20 ga × 50″", "PIC50 diamond roller", [T["tt-ew2"][1]],
+    F("tt-pic50", P_SHAPE, "former", "PIC50 diamond roller former, 20 ga × 50″", "PIC50 diamond roller", [T["tt-ew2"][1]],
       "A motorized roller former that embosses a 2-3/4″ (70 mm) diamond pattern into 20 ga sheet up to 50″ wide — decorative panels for "
       "doors, cabinets, food trucks and restorations — on a welded frame with a 1 HP motor and 9 – 16 rpm adjustable speed.",
       ["20 ga mild steel × 50″ (1,270 mm)", "2-3/4 × 2-3/4″ (70 × 70 mm) diamonds", "1 HP; 9 – 16 rpm adjustable"],
@@ -513,43 +493,6 @@ SHAPE = [
       ["Ram weight 35 – 165 lb (16 – 75 kg); 210 – 270 blows/min", "Blow energy 133 – 664 ft·lbf (180 – 900 J)",
        "Stock to 2-1/2″ (65 mm) square, Ø3-3/8″ (85 mm) round", "2 – 9.4 HP; separate anvil block 441 – 1,874 lb"],
       ["tm-c41-40", "tm-c41-16"], headline="35 – 165 lb ram", cap="[Ram (falling) weight] ram"),
-]
-
-# =============================================================================================== arbor & bench presses
-P_ARBOR = "arbor-press"
-ARBOR = [
-    F("tt-arbor", P_ARBOR, "arbor", "Arbor presses, 1/2 to 8 tons, and hand presses", "Arbor presses", T["tt-arbor"],
-      "Hand arbor presses for pressing bearings, bushings, pins and gears in and out, broaching keyways and staking: steel bodies, a "
-      "four-position base plate and square rams from 3/4″ to 2-3/8″, from the 1/2-ton AP-1/2 to the 8-ton AP-8 with 17.7″ of height and "
-      "a 10″ diameter capacity. The rack-and-pinion AP-1S and AP-2S, the ratchet RAP-2 and RAP-3 and the MP-800 flywheel press cover "
-      "repeated small-part work.",
-      ["1/2 – 8 tons; work height to 17.7″, diameter to 10.2″", "Four-position base plate; square rams 3/4 – 2-3/8″",
-       "Rack-and-pinion AP-1S / AP-2S with 2,248 – 4,496 lbf", "Ratchet RAP-2 / RAP-3 for 2 – 3 tons with less effort"],
-      ["tm-ap5", "tm-ap8", "tm-rap"], headline="1/2 – 8 tons", cap="[Capacity]", manual=True),
-    F("tt-bench-press", P_ARBOR, "bench", "BP-3T · EBP-10T bench presses and BP3-F combination bench press", "Bench presses", T["tt-bench-press"],
-      "Bench presses for the sheet-metal and HVAC shop: the BP-3T hand press with a 12″ throat takes industry-standard punches and dies "
-      "for round, square and oblong holes, punch-and-flare and punch-and-bead tools and louver tooling, and works as an arbor press; the "
-      "EBP-10T is a 10-ton hydraulic version with a 25″ throat and 6″ tool opening that takes all the BP-3T tooling; the BP3-F mounts "
-      "four tools at once — bend, stretch, corner punch and shrink — for production.",
-      ["BP-3T: 3 tons, 12″ throat, welded plate, bronze bushings", "EBP-10T: 10 tons hydraulic, 25″ throat, 4″ stroke",
-       "BP3-F: four stations — two 12″ throats and two 3″ throats", "Tooling: shear 16 ga, 90° bend 3/8″, corner punch 16 ga, louver punches 1 – 5″, punch & flare and punch & bead 1 – 3″"],
-      ["tm-bp3t", "tm-ebp10t", "tm-bp3f", "tm-louver"], headline="3 – 10 tons", cap="[Capacity]",
-      optional=["Shear kit", "90° bend kit", "Corner punch and corner radius punch", "Louver punches", "Punch & flare and punch & bead kits", "Universal tool stand"]),
-    F("tt-tpunch", P_ARBOR, "punch", "TP-12 · TP-24 manual turret punch presses, 12 stations", "TP turret punches", T["tt-tpunch"],
-      "Manual turret punch presses with twelve round punches from 3/16 to 1-1/4″ on a rotating turret: 6,000 kg of punching force from "
-      "a hand lever, 1/4″ capacity, a 12″ (TP-12) or 24″ (TP-24) throat, on an open stand (A) or a cabinet stand with a table (B). "
-      "Square, oval, rectangular and other shaped punches and dies to order, up to 2-1/4″.",
-      ["12 stations, round punches 3/16 – 1-1/4″ (metric 5 – 32 mm)", "6.6 US tons (6,000 kg) by hand lever; 1/4″ (6 mm) capacity",
-       "12″ or 24″ throat; open stand or cabinet stand", "Shaped punches and dies to order, up to 2-1/4″"],
-      ["tm-tp12b", "tm-tp12a"], headline="12 stations, 1/4″", cap="throat [Throat depth]", manual=True),
-    F("tt-riveter", P_ARBOR, "rivet", "XM orbital riveting machines, rivets Ø3/16 – 1-3/16″", "XM orbital riveters", T["tt-riveter"],
-      "Hydraulic orbital (rolling) riveters: the riveting head rolls the rivet end into shape instead of hammering it, with about a tenth "
-      "of the force of punch riveting — the part keeps its fit, the head comes out smooth, without vibration or noise. Six sizes for "
-      "solid rivets from 3/16 to 1-3/16″; with other tools the machine works as a normal press. Hinges, chain links, brake parts, "
-      "appliances and hardware.",
-      ["Rivets Ø3/16 – 1-3/16″ (5 – 30 mm); 1,911 – 22,481 lbf", "11 rivet head forms", "Tables Ø4.7″ to 19.7 × 14″",
-       "Low noise, no vibration; replaces hammering, punching and hot riveting"],
-      ["tm-xm8"], headline="Rivets to 1-3/16″", cap="rivets to [Rivet diameter, max]"),
 ]
 
 # =============================================================================================== tube & pipe benders
@@ -571,14 +514,15 @@ TUBE = [
       ["TBM-60: 1/4 – 2-1/2″ OD, 0 – 180°, 1.7 / 3.4 rpm, 2 HP, foot pedal", "HTB-25T: 25-ton hydraulic ram with air-hydraulic pump; 90° bends",
        "HTB-25T dies: 1″ × 4″ CLR standard; 3/4 – 2″ round and square dies optional; floor stand optional", "TBM-60: one 1″ tube kit standard; two-axis positioner optional"],
       ["tm-tbm60", "tm-htb25t", "tm-tbm60-pos", "tm-htb25t-stand"], headline="Tube to 2-1/2″", cap="[Capacity]"),
-    F("tt-tb3", P_TUBE, "power", "TB-3 · HTB-1000 benders for 2″ schedule 40 pipe — hand, air and electric hydraulic", "TB-3 / HTB-1000 pipe benders", [TB[1]],
-      "The bender family for 2″ schedule 40 pipe and roll-cage tube: the TB-500 ratchet bender for 2-1/2″ tube; the TB-3 hand bender; "
-      "the TB-3A with a 10-ton air / hydraulic jack; the TB-3B and TB-3C with a 10-ton cylinder with 12″ stroke on a caster stand with "
-      "die rack, air-hydraulic or electric-hydraulic; and the HTB-1000 electric-hydraulic bender, about three times faster than an "
-      "air-hydraulic unit. Dies for 120°, 180° and 240°.",
-      ["2″ schedule 40 pipe (0.154″ wall); TB-500: 2-1/2 × 0.120″ tube", "Standard dies 1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
-       "Optional round dies 3/4 – 2″ and square dies 3/4 – 1-1/2″; 120°, 180° and 240° dies", "HTB-1000: 1 HP electric-hydraulic, aluminum-bronze bushings at the pivots"],
-      ["tm-htb1000", "tm-tb3b", "tm-tb3c", "tm-tb500", "tm-tb3"], headline="2″ schedule 40 pipe", cap="[Drive]"),
+    F("tt-tb3", P_TUBE, "power", "TB-3A · TB-3B · TB-3C · HTB-1000 benders for 2″ schedule 40 pipe — air and electric hydraulic", "TB-3 / HTB-1000 pipe benders",
+      [pick(TB[1], ["TB-3A", "TB-3B", "TB-3C", "HTB-1000"], title="TB-3A · TB-3B · TB-3C · HTB-1000", sub="Powered benders for 2″ schedule 40 pipe and roll-cage tube")],
+      "The bender family for 2″ schedule 40 pipe and roll-cage tube: the TB-3A with a 10-ton air / hydraulic jack on a pedestal; the "
+      "TB-3B and TB-3C with a 10-ton cylinder and 12″ stroke on a caster stand with a die rack, air-hydraulic or electric-hydraulic; and "
+      "the HTB-1000 electric-hydraulic bender, about three times faster than an air-hydraulic unit. Dies for 120°, 180° and 240°.",
+      ["2″ schedule 40 pipe (0.154″ wall); centre-line radius 3 – 6″", "Standard dies 1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
+       "Optional round dies 3/4 – 2″ and square dies 3/4 – 1-1/2″; 120°, 180° and 240° dies",
+       "TB-3B / TB-3C: 10-ton cylinder, 12″ stroke, caster stand with die rack", "HTB-1000: 1 HP electric-hydraulic, aluminum-bronze bushings at the pivots"],
+      ["tm-htb1000", "tm-tb3b", "tm-tb3c"], headline="2″ schedule 40 pipe", cap="[Drive]"),
     F("tt-exhaust", P_TUBE, "power", "HTB-2000 exhaust tube bender and HTES-3000 expander-swager", "Exhaust benders", [TB[5]],
       "For the exhaust and muffler shop: the HTB-2000 hydraulic bender bends tube from 1 to 3″ with 58,000 lb of force, with a built-in "
       "swager / expander for end finishing, a knee-pad control, a depth-of-bend indicator and a complete tooling package; the HTES-3000 "
@@ -586,19 +530,14 @@ TUBE = [
       ["HTB-2000: tube 1 – 3″ OD, 0.098 – 0.118″ wall; 58,000 lb; 4 – 5.5 HP", "Tooling package: radius dies 3 – 5″, back shoes, collets, ball and swage dies, flare tool",
        "HTES-3000: expands 1 – 3-1/2″, swages 1 – 3″; 3,000 psi; Ø3.5″ cylinder, 6.5″ stroke", "Swivel casters with brakes"],
       ["tm-htb2000", "tm-htes"], headline="Exhaust tube 1 – 3″", cap="[Capacity]"),
-    F("tt-hb-pipe", P_TUBE, "pipe", "HB hydraulic pipe benders, 8 – 16 tons, 1/2 – 3″ pipe", "HB hydraulic pipe benders", [TB[3]],
-      "Hydraulic pipe benders for plumbing, electrical and maintenance work: a hand pump (or, on the EHB-10, an electric pump) drives "
-      "the ram that pushes the pipe into the bending die. 8 to 16 tons, with die sets from 1/2″ to 2″, and to 3″ on the HB-16.",
-      ["8, 10, 12 and 16 tons; ram stroke 4.7 – 9.4″", "Dies 1/2 – 2″; 1/2 – 3″ on the HB-16", "EHB-10: electric pump, 1 HP 1-phase or 3/4 HP 3-phase",
-       "HB-8: dies 3/4, 1, 1-1/2, 1-5/8, 1-3/4″"],
-      ["tm-hb12", "tm-ehb10", "tm-hb10", "tm-hb8"], headline="1/2 – 3″ pipe", cap="[Force]"),
-    F("tt-tb-hand", P_TUBE, "hand", "Hand tube benders, 1/4 – 1″", "Hand tube benders", [TB[0]],
-      "Hand benders for small tube: the TB-180 bends 3/8 – 1″ tube to 180° in one pull in a bench vise, with an eccentric lock roll and "
-      "an angle indicator; the RB-1 bends 1/2 – 1″ tube to 270° on a stand; the RB-2 bends 1/4 – 5/8″ tube with 3D and 5D dies; the "
-      "MY-22 comes in a carry case with dies for 3/8 – 7/8″ round and 3/4 – 1″ square tube.",
-      ["TB-180: 3/8 – 1″ OD, 0.049 – 0.095″ wall, 180° in one pull", "RB-1: 1/2 – 1″, 270°; RB-2: 1/4 – 5/8″, 3D and 5D dies",
-       "MY-22: round 3/8 – 7/8″, square 3/4 and 1″, carry case", "Vise or stand mounting"],
-      ["tm-tb180", "tm-rb1", "tm-my22"], headline="Tube 1/4 – 1″", cap="[Tube size]", manual=True),
+    F("tt-hb-pipe", P_TUBE, "pipe", "EHB-10 electric hydraulic pipe bender, 11 US tons, 1/2 – 2″ pipe", "EHB-10 pipe bender",
+      [pick(TB[3], ["EHB-10"], title="EHB-10", sub="Electric hydraulic pipe bender for 1/2 – 2″ pipe")],
+      "A push-type pipe bender for plumbing, electrical and maintenance work with an electric pump instead of a hand pump: the ram "
+      "pushes the pipe into the bending die between two supports with 11 US tons, with dies for 1/2 to 2″ pipe — simple and fast where "
+      "a little ovality is acceptable.",
+      ["11 US tons (10 t); ram stroke 6.1″ (155 mm)", "Dies 1/2, 3/4, 1, 1-1/4, 1-1/2 and 2″",
+       "Electric pump: 1 HP (0.75 kW) 1-phase or 3/4 HP (0.55 kW) 3-phase", "117 lb (53 kg) — moves to the job"],
+      ["tm-ehb10"], headline="1/2 – 2″ pipe", cap="[Force]"),
 ]
 
-NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + PLASMA + SHAPE + ARBOR + TUBE
+NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + PLASMA + SHAPE + TUBE

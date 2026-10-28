@@ -1,6 +1,9 @@
 """Build the 1200x630 social-share (Open Graph) image for every page.
 
-    python3 -I tools/make_social.py
+    python3 -I tools/make_social.py                 every page (and delete the images of pages that no longer exist)
+    python3 -I tools/make_social.py --stale         only the pages without an image, or whose photo, heading or tagline
+                                                    changed since it was drawn (build.py runs this itself)
+    python3 -I tools/make_social.py <slug> …        the given pages
 
 Reads content/pages/*.json (hero_image + social_title/h1) and tools/image_map.json for the source
 photo, writes src/img/social/<slug>.jpg (JPEG, < 300 KB so WhatsApp/Facebook/LinkedIn accept it).
@@ -23,9 +26,19 @@ out_dir = os.path.join(ROOT, "src", "img", "social")
 os.makedirs(out_dir, exist_ok=True)
 
 
+MANIFEST = json.load(open(os.path.join(ROOT, "tools", "image_manifest.json")))
+
+
 def load_cutout(name):
-    """The hero as a full-resolution cut-out (never the white-background source photo as a white box —
-    the house rule for every product photo on a non-white surface)."""
+    """The hero as a cut-out (never the white-background source photo as a white box — the house rule for every product
+    photo on a non-white surface): the largest web variant when make_images already cut it out (BiRefNet), otherwise a
+    full-resolution cut-out of the source photo."""
+    m = MANIFEST.get(name) or {}
+    if m.get("alpha") and m.get("variants"):
+        v = max(m["variants"], key=lambda x: x["w"])
+        im = Image.open(os.path.join(ROOT, "src", v["file"])).convert("RGBA")
+        bbox = im.getchannel("A").point(lambda a: 255 if a > 8 else 0).getbbox()
+        return im.crop(bbox) if bbox else im
     spec = imap[name]
     im = Image.open(os.path.join(ROOT, spec["src"]))
     if im.mode == "RGBA" and im.getchannel("A").getextrema()[0] < 8:
@@ -55,17 +68,18 @@ def wrap(draw, text, font, max_w):
     return lines
 
 
-def build(page):
+def build(page, default_hero=None):
+    """default_hero: the photo for pages without a hero of their own (contact, brochures, articles, products, privacy)"""
     slug = page["slug"]
     title = page.get("social_title") or page["h1"]
-    tagline = page.get("social_tagline") or "Sold, installed and supported in Canada by NovoTech Machine Tools, Mississauga, ON, Canada"
+    tagline = page.get("social_tagline") or "Sold, installed and supported in Canada\nMississauga, ON, Canada"
     img = Image.new("RGB", (W, H), CHARCOAL)
     d = ImageDraw.Draw(img)
     # orange slanted band on the right
     d.polygon([(640, 0), (W, 0), (W, H), (520, H)], fill=ORANGE)
     # product cut-out centred on the band
     try:
-        cut = load_cutout(page["hero_image"])
+        cut = load_cutout(page.get("social_image") or page.get("hero_image") or default_hero)
         box_w, box_h = 560, 520
         cut.thumbnail((box_w, box_h), Image.LANCZOS)
         x = 580 + (W - 580 - cut.width) // 2 + 20
@@ -81,23 +95,35 @@ def build(page):
     plate = Image.new("RGB", (lw + 28, logo.height + 20), WHITE)
     plate.paste(logo, (14, 10), logo)
     img.paste(plate, (56, 48))
-    # title
-    tf = ImageFont.truetype(F_TITLE, 66)
-    lines = wrap(d, title, tf, 470)
-    y = 190
-    for ln in lines[:3]:
+    # title: the whole heading when it fits in three lines, otherwise the part before its dash ("Rebar benders — …"),
+    # never a heading cut off in the middle of a phrase
+    head = title
+    for dash in (" — ", " – ", " - ", ": "):
+        if dash in title:
+            head = title.split(dash)[0]
+            break
+    for text, size, max_lines in ((title, 66, 3), (title, 58, 3), (head, 66, 3), (head, 58, 3), (head, 50, 4)):
+        tf = ImageFont.truetype(F_TITLE, size)
+        lines = wrap(d, text, tf, 470)
+        if len(lines) <= max_lines:
+            break
+    y = 190 if len(lines) <= 3 else 170
+    for ln in lines[:max_lines]:
         d.text((56, y), ln, font=tf, fill=WHITE)
-        y += 72
+        y += round(size * 1.09)
     # orange rule + tagline
     d.rectangle((56, y + 10, 56 + 90, y + 16), fill=ORANGE)
     tf2 = ImageFont.truetype(F_TEXT, 24)
     y += 36
-    for ln in wrap(d, tagline, tf2, 470)[:3]:
+    for ln in [w for part in tagline.split("\n") for w in wrap(d, part, tf2, 440)][:3]:
+        if y > H - 140:                                 # keep clear of the domain and phone lines
+            break
         d.text((56, y), ln, font=tf2, fill=MIST)
         y += 32
-    # domain
+    # domain and phone, two lines so they stay clear of the orange band
     tf3 = ImageFont.truetype(F_TEXT, 26)
-    d.text((56, H - 70), "NovoTechMachineTools.com  ·  +1 647 526 5510", font=tf3, fill=WHITE)
+    d.text((56, H - 98), "NovoTechMachineTools.com", font=tf3, fill=WHITE)
+    d.text((56, H - 64), "+1 647 526 5510", font=tf3, fill=WHITE)
     out = os.path.join(out_dir, slug + ".jpg")
     q = 86
     while True:
@@ -108,7 +134,43 @@ def build(page):
     print(f"{slug}.jpg  {os.path.getsize(out)//1024} KB  q={q}")
 
 
-for fn in sorted(glob.glob(os.path.join(ROOT, "content", "pages", "*.json"))):
-    if os.path.basename(fn).startswith("_"):
-        continue
-    build(json.load(open(fn, encoding="utf-8")))
+SOURCES = os.path.join(ROOT, "tools", "social_sources.json")     # what each card was drawn from, to redraw it when that changes
+STYLE = 2                                                        # bump to redraw every card after a layout change
+
+
+def card_key(page, default_hero):
+    hero = page.get("social_image") or page.get("hero_image") or default_hero
+    m = MANIFEST.get(hero) or {}
+    v = max(m["variants"], key=lambda x: x["w"])["bytes"] if m.get("variants") else None
+    return [STYLE, hero, v, page.get("social_title") or page["h1"], page.get("social_tagline")]
+
+
+def main(args):
+    pages = {}
+    for fn in sorted(glob.glob(os.path.join(ROOT, "content", "pages", "*.json"))):
+        if not os.path.basename(fn).startswith("_"):
+            p = json.load(open(fn, encoding="utf-8"))
+            pages[p["slug"]] = p
+    default_hero = pages.get("index", {}).get("hero_image")
+    done = json.load(open(SOURCES)) if os.path.exists(SOURCES) else {}
+    if "--stale" in args or "--missing" in args:          # pages without a card, or whose photo, heading or tagline changed
+        todo = [s for s in pages if not os.path.exists(os.path.join(out_dir, s + ".jpg"))
+                or done.get(s) != card_key(pages[s], default_hero)]
+    elif args:
+        todo = [a for a in args if not a.startswith("--")]
+    else:
+        todo = list(pages)
+    for fn in os.listdir(out_dir):                          # cards of pages that no longer exist
+        if fn.endswith(".jpg") and fn[:-4] not in pages:
+            os.remove(os.path.join(out_dir, fn))
+            print("removed", fn)
+    for s in todo:
+        build(pages[s], default_hero)
+        done[s] = card_key(pages[s], default_hero)
+    done = {s: k for s, k in sorted(done.items()) if s in pages}
+    with open(SOURCES, "w", encoding="utf-8") as f:
+        f.write("{\n" + ",\n".join(f"{json.dumps(s)}: {json.dumps(k, ensure_ascii=False)}" for s, k in done.items()) + "\n}\n")
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

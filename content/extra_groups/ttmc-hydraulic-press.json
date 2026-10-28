@@ -5,12 +5,12 @@
   {
    "id": "tt-shop-group",
    "title": "Shop presses · value line",
-   "lead": "Hand-pump and motorized workshop presses from 10 to 176 tons, and shop press brakes — NovoTech value line, built in China.",
+   "lead": "Motorized workshop presses from 28 to 176 US tons and a hydraulic bench press for sheet-metal tooling — NovoTech value line, built in China.",
    "brand": "novotech",
    "families": [
     "tt-shop-hs",
     "tt-shop-small",
-    "tt-shop-brake"
+    "tt-ebp10t"
    ]
   },
   {
@@ -25,22 +25,31 @@
     "tt-hp-c",
     "tt-hp-f"
    ]
+  },
+  {
+   "id": "tt-rivet-group",
+   "title": "Orbital riveting machines · value line",
+   "lead": "Hydraulic orbital riveters that roll solid rivets from 3/16 to 1-3/16″ — NovoTech value line, built in China.",
+   "brand": "novotech",
+   "families": [
+    "tt-riveter"
+   ]
   }
  ],
- "intro_add": "NovoTech's value-line presses, built in China, add hand-pump and motorized shop presses from 10 to 176 tons, motorized H-frame presses to 551 US tons, presses with a brake function, sliding-table, C-frame and four-column presses.",
+ "intro_add": "NovoTech's value-line presses, built in China, add motorized workshop presses from 28 to 176 US tons, the EBP-10T hydraulic bench press, motorized H-frame presses to 551 US tons, presses with a brake function, sliding-table, C-frame and four-column presses, and XM orbital riveting machines.",
  "points_add": [
-  "NovoTech value line: shop presses 10 – 176 t, H-frame presses 33 – 551 US tons, brake, sliding-table, C-frame and four-column presses"
+  "NovoTech value line: workshop presses 28 – 176 US tons, H-frame presses 33 – 551 US tons, brake, sliding-table, C-frame and four-column presses, orbital riveters"
  ],
  "faq_add": [
   {
    "q": "Premium-line or value-line press?",
-   "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with hand pumps on the small presses and built-on or separate power units on the motorized ones."
+   "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with built-on or separate power units."
   }
  ],
  "related_add": [
   {
-   "href": "arbor-press.html",
-   "label": "Arbor presses and bench presses"
+   "href": "lock-former.html",
+   "label": "Lock formers and HVAC machines"
   }
  ],
  "set": {

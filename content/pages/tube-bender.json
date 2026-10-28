@@ -2,15 +2,15 @@
  "slug": "tube-bender",
  "template": "category.html",
  "family_set": "ttmc-more",
- "title": "Tube & Pipe Benders — Hydraulic, Electric & Manual | NovoTech",
- "artifact_title": "Tube and pipe benders — hydraulic, electric and manual, value line",
- "meta_description": "Tube and pipe benders: hydraulic PLC tube benders to 3-1/8″, an electric top bender to 2-1/2″, 25-ton tubing benders, benders for 2″ schedule 40 pipe, exhaust benders, hydraulic pipe benders and hand benders.",
- "h1": "Tube and pipe benders — hydraulic, electric and manual, value line",
- "intro": "Benders for the fabrication shop, the roll-cage and chassis builder, the exhaust shop and the plumber and electrician — lower in price than the CNC and NC rotary-draw benders on the other pages of this section, for the shop that bends tube and pipe every week but does not need mandrel bending or programmed 3-D parts. NovoTech's value-line benders are built in China to our specification: JTB hydraulic PLC tube benders to 3-1/8″, the TBM-60 electric top bender to 2-1/2″, the HTB-25T 25-ton tubing bender, the TB-3 family and the HTB-1000 for 2″ schedule 40 pipe, the HTB-2000 exhaust bender with swager and expander, HB hydraulic pipe benders and hand benders for small tube. Dies, parts and support from Mississauga, ON, Canada.",
+ "title": "Tube & Pipe Benders — Hydraulic & Electric | NovoTech",
+ "artifact_title": "Tube and pipe benders — hydraulic, electric and air-hydraulic, value line",
+ "meta_description": "Tube and pipe benders: hydraulic PLC tube benders to 3-1/8″, an electric top bender to 2-1/2″, a 25-ton tubing bender, air and electric benders for 2″ schedule 40 pipe, exhaust benders and an electric pipe bender.",
+ "h1": "Tube and pipe benders — hydraulic, electric and air-hydraulic, value line",
+ "intro": "Benders for the fabrication shop, the roll-cage and chassis builder, the exhaust shop and the plumber and electrician — lower in price than the CNC and NC rotary-draw benders on the other pages of this section, for the shop that bends tube and pipe every week but does not need mandrel bending or programmed 3-D parts. NovoTech's value-line benders are built in China to our specification: JTB hydraulic PLC tube benders to 3-1/8″, the TBM-60 electric top bender to 2-1/2″, the HTB-25T 25-ton tubing bender, the air- and electric-hydraulic TB-3 benders and the HTB-1000 for 2″ schedule 40 pipe, the HTB-2000 exhaust bender with swager and expander and the EHB-10 electric hydraulic pipe bender. Dies, parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "JTB-40 / 50 / 80 hydraulic PLC tube benders: round tube to Ø3-1/8″, square tube to 3-1/8″, bending to 180°",
   "TBM-60 electric top bender 1/4 – 2-1/2″; HTB-25T 25-ton tubing bender; TB-3 and HTB-1000 for 2″ schedule 40 pipe",
-  "HTB-2000 exhaust bender and HTES-3000 expander-swager; HB hydraulic pipe benders 8 – 16 tons; hand benders 1/4 – 1″"
+  "HTB-2000 exhaust bender and HTES-3000 expander-swager; EHB-10 electric hydraulic pipe bender, 11 US tons, 1/2 – 2″ pipe"
  ],
  "hero_image": "tm-jtb50",
  "hero_image_secondary": [
@@ -51,28 +51,18 @@
   },
   {
    "id": "pipe-group",
-   "title": "Hydraulic pipe benders",
-   "lead": "Push-type benders with a hydraulic ram for plumbing, electrical and maintenance pipe work.",
+   "title": "Electric hydraulic pipe bender",
+   "lead": "A push-type bender with an electric pump for plumbing, electrical and maintenance pipe work.",
    "brand": "novotech",
    "families": [
     "tt-hb-pipe"
    ]
-  },
-  {
-   "id": "hand-group",
-   "title": "Hand tube benders",
-   "lead": "Small tube from 1/4 to 1″, bent in a vise or on a stand.",
-   "brand": "novotech",
-   "families": [
-    "tt-tb-hand"
-   ],
-   "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support from Mississauga, ON, Canada"
   }
  ],
  "faq": [
   {
    "q": "Rotary-draw, push-type or roll bending?",
-   "a": "A rotary-draw bender (JTB, TBM-60, HTB-25T, TB-3, HTB-1000) pulls the tube around a die with a clamp and a follower — a tight, accurate bend with little flattening, the method for roll cages, railings, frames and exhaust. A push-type hydraulic pipe bender (HB) pushes the pipe into a die between two supports — simple and fast for plumbing and electrical pipe, where some ovality is acceptable. For large radii, rings and spirals, see the tube rollers on the angle rolls page."
+   "a": "A rotary-draw bender (JTB, TBM-60, HTB-25T, TB-3, HTB-1000) pulls the tube around a die with a clamp and a follower — a tight, accurate bend with little flattening, the method for roll cages, railings, frames and exhaust. A push-type hydraulic pipe bender (EHB-10) pushes the pipe into a die between two supports — simple and fast for plumbing and electrical pipe, where some ovality is acceptable. For large radii, rings and spirals, see the tube rollers on the angle rolls page."
   },
   {
    "q": "What do I need to tell you to choose the dies?",

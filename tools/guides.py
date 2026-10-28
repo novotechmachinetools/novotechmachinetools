@@ -150,11 +150,11 @@ GUIDES = [
       "allowance and set-up, and the machines of a duct shop. " + BY,
       "Pittsburgh locks, snap locks, seams and cleats, choosing the gauge range, material allowance, and the machines of a duct "
       "line."),
-    G("english-wheel", "metal-shaping-guide.html", "Metal shaping machine buying guide", "sheet",
-      "What we explain to customers before they buy metal shaping machines: what the English wheel, planishing and power hammers "
-      "and shrinker-stretchers each do, and how to choose them. " + BY,
-      "English wheel, planishing hammer, power hammer or shrinker-stretcher: what each does, throat and frame stiffness, anvils "
-      "and dies."),
+    G("power-hammer", "power-hammer-guide.html", "Power and planishing hammer buying guide", "sheet",
+      "What we explain to customers before they buy a power hammer or a planishing hammer: what each hammer does, throat, frame "
+      "and dies, air and power, and sizing an air forging hammer. " + BY,
+      "Planishing hammer, power hammer or air forging hammer: what each does, throat and frame stiffness, dies and anvils, and "
+      "ram weight for forging."),
     # ------------------------------------------------------------------------------------------- finishing
     G("sheet-metal-plate-deburring-edge-rounding-finishing-grinding", "deburring-machine-guide.html", "Deburring machine buying guide",
       "finishing",
@@ -198,11 +198,6 @@ GUIDES = [
       "H-frame, C-frame or column presses, working space and controls, and shop or production presses. " + BY,
       "Sizing the tonnage for press fits, straightening and bending, H-frame, C-frame or column, working space, controls and "
       "safety."),
-    G("arbor-press", "arbor-press-guide.html", "Arbor and bench press buying guide", "presses",
-      "What we explain to customers before they buy a hand press: the arbor press size for your parts, ratchet or standard, bench "
-      "presses for sheet-metal tooling, turret punch presses and orbital riveters. " + BY,
-      "Choosing an arbor press by force and space, ratchet or standard, bench presses for sheet-metal tooling, turret punches and "
-      "orbital riveting."),
     # ------------------------------------------------------------------------------------------- machining
     G("drill-press", "drill-press-guide.html", "Drill press buying guide", "machining",
       "What we explain to customers before they buy a drill press: the drilling capacity you need, gear-head, belt or inverter "

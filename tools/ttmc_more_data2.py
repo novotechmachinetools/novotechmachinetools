@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """NovoTech value-line machines built by TTMC — families added as value-line groups to EXISTING pages (cold saws, aluminum saws,
 corner notchers, ironworkers, angle rolls, bead rollers, tube notchers, hydraulic presses, circle shears, compact press brakes,
-horizontal press brakes, plate rollers, deburring machines) and the manual shears on sheet-metal-shears.html.
+horizontal press brakes, plate rollers, deburring machines) and the EBQ01 motorized bench shears on sheet-metal-shears.html.
+Manual machines are not sold (see the scope note in ttmc_more_data.py): the families pick only the powered models.
 """
 from ttmc_conv import pick
 from ttmc_more_data import F, MANUAL_TAG, NOTE, NOTE_HZ  # noqa: F401
@@ -42,12 +43,13 @@ COLD = [
       ["Ø3-7/8″ (TV-300) to Ø5-1/2″ (TV-400, SQ-40-1) round at 90°", "Miter cuts to 45°; vise opening 7.5 – 8.7″",
        "Belt drive; 5.5 – 7.5 HP; wheel speed 3,200 – 5,400 rpm", "24 V low-voltage hold-to-run control; anti-burr vise"],
       ["tm-tv", "tm-tv-sq"], headline="Ø3-7/8 – 5-1/2″ round", cap="[Wheel diameter, max] wheel · [Round, 90°] round", note=NOTE_HZ),
-    F("tt-stand", P_COLD, "tt-stands", "Roller stands, roller conveyors and RA785 measuring roller table", "Roller stands and tables", T["tt-stand"],
+    F("tt-stand", P_COLD, "tt-stands", "Roller stands, roller conveyors and RA785 measuring roller table", "Roller stands and tables",
+      [pick(T["tt-stand"][0], ["RV1100", "RB1100", "RB1000", "RB365", "RB2000", "RA785"])],
       "Material support for saws, shears, brakes and drills: V-roller and flat roller stands, a tripod stand, roller conveyors in 41″ "
       "sections with 79″ and 118″ extensions, and the RA785 roller table with a measuring feed system that positions the bar to "
       "±0.012″ at 40 – 140 in/min.",
       ["Height-adjustable stands 23 – 43″; loads to 728 lb", "Roller conveyors 1,323 – 1,543 lb; extensions of 79″, 118″ and more",
-       "RA785: 79″ roller table with measuring feed, ±0.012″ (0.3 mm)", "RS018 stand for the SS-18 shrinker-stretcher"],
+       "RA785: 79″ roller table with measuring feed, ±0.012″ (0.3 mm)"],
       ["tm-stand-ra785", "tm-stand-rb365", "tm-stand-rv"], headline="Stands, conveyors and roller tables", cap="[Type]", manual=True),
 ]
 
@@ -78,12 +80,6 @@ CORNER = [
       ["PNM-130: 1/8″ (3 mm) × 5-1/8″; PNM-150: 14 ga (2 mm) × 5-7/8″", "Cast-iron table 23.6 × 18.1″", "Roving foot pedal; regulator and water trap",
        "Transparent blade guard; adjustable stops and guides"],
       ["tm-pnm"], headline="To 1/8″, 90°", cap="[Notch size]"),
-    F("tt-notch-hand", P_CORNER, "tt-notch", "HN hand corner notchers and FN foot notcher", "Hand and foot notchers", T["tt-notch-hand"],
-      "Manual 90° corner notchers for sheet and plate in the HVAC and sheet-metal shop: the HN-3 and HN-4 notch 16 ga with 5 and 6″ "
-      "blades, the HN-3/102 notches 1/8″ with 4″ blades, and the FN1.5×80 works from a foot pedal on its own stand.",
-      ["HN-3 / HN-4: 16 ga (1.5 mm), 4.9 × 4.9″ and 6 × 6″ notches", "HN-3/102: 1/8″ (3 mm), 3.9 × 3.9″", "FN1.5×80: 16 ga, foot pedal, on stand",
-       "Stand optional for the HN-4"],
-      ["tm-hn3", "tm-hn4", "tm-fn"], headline="16 ga – 1/8″, 90°", cap="[Capacity, mild steel]", manual=True),
 ]
 
 P_PIPE_NOTCH = "pipe-notcher"
@@ -98,14 +94,6 @@ PIPE_NOTCH = [
        "UTN40: end mill, 1-1/2 HP, 280 rpm; UTN40V: 1 HP DC, 75 – 250 rpm variable", "V-block vise, swivels in 1° steps (UTN40)",
        "PTN-12U: pipe 1/4 – 2″, electric"],
       ["tm-ptn30", "tm-utn40", "tm-utn40v", "tm-ptn12u", "tm-ptn-work"], headline="Tube to 3″", cap="[Capacity]"),
-    F("tt-pn-hand", P_PIPE_NOTCH, "tt-tube-notch", "Hole-saw pipe notchers for the drill and hand tube notchers", "Hole-saw and hand notchers",
-      [T["tt-notcher"][1]],
-      "Inexpensive notchers for the occasional saddle: the PNM 1-1/2 bolts to the bench and runs a bi-metal hole saw from an ordinary "
-      "1/2″ drill on 3/4 to 3″ tube at up to 50°, with offset notches up to 1-1/2″; the PN-1/2 notchers fit the drill press for "
-      "compound-angle notches up to 2″; the RA hand notchers punch 90° notches in thin-wall tube by lever.",
-      ["PNM 1-1/2: 3/4 – 3″ OD, to 50°, CNC-machined 1-1/4″ steel frame, 2-axis clamp", "PN-1/2A / H (aluminum) and PN-1/2S (steel): to 2″ tube, 0 – 45 / 50 / 60°",
-       "RA-1 – RA-10: hand lever, 90° notches", "RAB: vent notcher"],
-      ["tm-pnm15", "tm-pn12", "tm-ra"], headline="Tube to 3″", cap="[Capacity]", manual=True),
     F("tt-prs", P_PIPE_NOTCH, "tt-prs", "PRS tube and profile end grinders — belt notchers, Ø3/4 – 5-3/4″", "PRS tube end grinders", T["tt-prs"],
       "Belt grinders built to notch tube ends: the tube sits in the adjustable slide and is fed against a contact roller the size of the "
       "mating tube, at any angle from 30 to 90° — a clean, burr-free saddle in steel, stainless and aluminum tube and profiles without "
@@ -143,49 +131,44 @@ ANGLE = [
       ["Shafts Ø1-9/16″ (40 mm), Ø2″ (50 mm) and Ø2-1/2″ (65 mm); 2 – 3 HP; 9 – 9.3 rpm", "Horizontal and vertical operation (HV models)",
        "Hydraulic top roll on the HRBM models", "One standard combination roll set for all listed profiles", "Foot pedal; special rolls (also nylon) to order"],
       ["tm-hrbm50", "tm-rbm40", "tm-hrbm65", "tm-hrbm40", "tm-rbm50"], headline="Shafts Ø1-9/16 – 2-1/2″", cap="[Shaft diameter] shafts"),
-    F("tt-rbm-small", P_ANGLE, "tt-ring", "RBM10 – RBM30HV ring rollers, Ø3/4 – 1-3/16″ shafts", "RBM10 – RBM30 ring rollers", [RB[0]],
-      "Small ring rollers for flat bar, square bar and light sections: the RBM10 by hand crank, the ERBM10HV, RBM30 and RBM30HV with a "
-      "motor and foot pedal — the HV models horizontal and vertical — and the RBM20 with two driven rolls, an LED readout for the top "
-      "roll and single-phase or 3-phase power.",
-      ["Shafts Ø3/4 – 1-3/16″ (20 – 30 mm)", "Flat bar on edge to 1-3/16 × 3/8″, the easy way to 2 × 9/16″", "Motorized models with foot pedal; RBM10 by hand",
-       "RBM20: LED top-roll readout, two driven rolls, 1-phase or 3-phase"],
-      ["tm-rbm30hv", "tm-rbm20", "tm-erbm10", "tm-rbm30", "tm-rbm10", "tm-rbm-rolls"], headline="Shafts Ø3/4 – 1-3/16″", cap="[Shaft diameter] shafts"),
-    F("tt-tr", P_ANGLE, "tt-ring", "TR tube rollers, CRB-76 decorative ring roller and PR ring rollers", "Tube and ring rollers",
-      T["tt-tr"] + [RB[2], pick(T["tt-ub"][1], ["PR-3", "PR-5"], title="PR-3 · PR-5", sub="Bench ring rollers for flat bar and rod")],
-      "Rollers that bend tube, pipe and bar into arcs and rings: the TR-40 for square and rectangular tube, the TR-50 and electric ETR-50 "
-      "for 1/2 – 2″ round tube and 1/4 – 1-1/2″ pipe with CNC-machined dies, the TR-60 with a quick-change lower roll for round, square "
-      "and rectangular tube, flat bar and channel; the CRB-76 rolls decorative rings and scrolls in round and square tube and flat bar; "
-      "the PR-3 and PR-5 bench rollers roll flat bar and rod.",
-      ["TR-50 / ETR-50: round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls", "TR-60: round tube 2″, pipe 1-1/2″, square 2″, rectangular and channel 1 × 2″",
-       "ETR-50: 1/2 HP motor with foot pedal; CRB-76: 1.5 HP, formers Ø5/8 – 3″", "PR-5: three driven rolls, flat bar 1 × 1/4″ the easy way, on a heavy stand"],
-      ["tm-tr60", "tm-etr50", "tm-tr50", "tm-crb76", "tm-pr5", "tm-tr40", "tm-pr5-stand", "tm-pr3", "tm-crb-rolls"], headline="Tube to 2″", cap="[Capacity]", manual=True),
+    F("tt-rbm-small", P_ANGLE, "tt-ring", "ERBM10HV – RBM30HV motorized ring rollers, Ø13/16 – 1-3/16″ shafts", "RBM motorized ring rollers",
+      [pick(RB[0], ["ERBM10HV", "RBM20", "RBM30", "RBM30HV"], title="ERBM10HV · RBM20 · RBM30 · RBM30HV", sub="Motorized ring rollers with Ø13/16 – 1-3/16″ shafts")],
+      "Small motorized ring rollers for flat bar, square and round bar, light angle, channel and tube — railings, gates, frames and "
+      "ornamental work: the ERBM10HV, RBM30 and RBM30HV with a motor and foot pedal — the HV models horizontal and vertical — and the "
+      "RBM20 with two driven rolls, an LED readout for the top roll and single-phase or 3-phase power.",
+      ["Shafts Ø13/16″ (20 mm) and Ø1-3/16″ (30 mm); 3/4 – 1.5 HP; 8 – 12 rpm", "Flat bar on edge to 1-3/16 × 3/8″, the easy way to 2 × 9/16″",
+       "Foot pedal; horizontal and vertical working position on the HV models", "RBM20: LED top-roll readout, two driven rolls, 1-phase or 3-phase"],
+      ["tm-rbm30hv", "tm-rbm20", "tm-erbm10", "tm-rbm30", "tm-rbm-rolls"], headline="Shafts Ø13/16 – 1-3/16″", cap="[Shaft diameter] shafts"),
+    F("tt-tr", P_ANGLE, "tt-ring", "ETR-50 electric tube roller and CRB-76 decorative ring roller", "ETR-50 / CRB-76 tube rollers",
+      [pick(T["tt-tr"][0], ["ETR-50"], title="ETR-50", sub="Electric tube and pipe roller — rings and arcs in round tube, pipe and square tube"), RB[2]],
+      "Two motorized rollers for tube and pipe: the ETR-50 rolls 1/2 – 2″ round tube, 1/4 – 1-1/2″ pipe and 1/2 – 1″ square tube into "
+      "arcs and rings with CNC-machined dies, a 1/2 HP motor and a foot pedal; the CRB-76 rolls decorative rings and scrolls in round "
+      "and square tube and flat bar on formers from Ø5/8 to 3″ — the metal-craft machine for gates, railings and furniture.",
+      ["ETR-50: round tube 1/2 – 2″, pipe 1/4 – 1-1/2″, square tube 1/2 – 1″ with optional rolls", "ETR-50: 1/2 HP (0.37 kW) motor, foot pedal, 1- or 3-phase",
+       "CRB-76: round tube formers Ø5/8 – 3″, square tube formers 5/8 – 2″, walls 0.02 – 0.08″", "CRB-76: 1.5 HP (1.1 kW)"],
+      ["tm-etr50", "tm-crb76", "tm-crb-rolls"], headline="Tube to Ø3″", cap="[Capacity] · [Round tube formers]"),
 ]
 
 # =============================================================================================== bead rollers
 P_BEAD = "bead-rollers"
 BEAD = [
-    F("tt-etb", P_BEAD, "tt-bead", "ETB-12 · ETB-25 · ETB-40 beading machines, 18 – 8 ga", "ETB beading machines", [T["tt-etb"][0]],
-      "Beading machines for stiffening beads, steps, flanges and offsets in sheet and in the ends of ducts and tanks: the TB-12 by hand "
-      "and the ETB-12 with a self-braking motor and foot pedal for 18 ga with an 8″ throat; the ETB-25 and ETB-40 on welded steel frames "
-      "with brake motors, foot pedals and adjustable idle rolls for 12 ga and 8 ga with 11 and 12″ throats. Four standard roll sets and "
-      "eight extra profiles.",
-      ["18 ga (TB-12, ETB-12), 12 ga (ETB-25), 8 ga (ETB-40) mild steel", "Throat 8 – 12″", "Brake motor and foot pedal on the ETB models",
+    F("tt-etb", P_BEAD, "tt-bead", "ETB-12 · ETB-25 · ETB-40 beading machines, 18 – 8 ga", "ETB beading machines",
+      [pick(T["tt-etb"][0], ["ETB-12", "ETB-25", "ETB-40"], title="ETB-12 · ETB-25 · ETB-40", sub="Motorized beading machines with 8 – 12″ throat, 18 ga to 8 ga")],
+      "Beading machines for stiffening beads, steps, flanges and offsets in sheet and in the ends of ducts and tanks: the ETB-12 with a "
+      "self-braking motor and foot pedal for 18 ga with an 8″ throat; the ETB-25 and ETB-40 on welded steel frames with brake motors, "
+      "foot pedals and adjustable idle rolls for 12 ga and 8 ga with 11 and 12″ throats. Four standard roll sets and eight extra profiles.",
+      ["18 ga (ETB-12), 12 ga (ETB-25), 8 ga (ETB-40) mild steel", "Throat 8 – 12″", "Brake motor and foot pedal; 1 – 3 HP",
        "4 standard roll sets; 8 extra profiles to order"],
-      ["tm-etb25", "tm-etb12", "tm-tb12"], headline="18 – 8 ga", cap="[Capacity, mild steel] · throat [Throat depth]"),
-    F("tt-rm-deep", P_BEAD, "tt-bead", "RM24 · RM36 · RM42 deep-throat bead rollers, 24 – 42″", "RM deep-throat bead rollers", [T["tt-etb"][2]],
+      ["tm-etb25", "tm-etb12"], headline="18 – 8 ga", cap="[Capacity, mild steel] · throat [Throat depth]"),
+    F("tt-rm-deep", P_BEAD, "tt-bead", "RM24 · RM36 · RM42 motorized deep-throat bead rollers, 24 – 42″", "RM deep-throat bead rollers",
+      [pick(T["tt-etb"][2], ["RM24", "RM-24H", "RM36", "RM-36H", "RM42", "RM-42H"], title="RM24 · RM36 · RM42 · RM-24H · RM-36H · RM-42H",
+            sub="Motorized deep-throat bead rollers, 24 – 42″, 20 ga — H models with a 4″ high throat and both shafts driven")],
       "Deep-throat bead rollers for auto body panels, floor pans, doors and HVAC panels: 20 ga steel and 18 ga aluminum with a 24, 36 "
-      "or 42″ throat, by hand crank (M models) or with a variable-speed motor, foot pedal and forward / reverse. The H models have a 4″ "
-      "high throat for formed panels and drive both shafts. Round, flat, step and spoiler bead rolls; the bead depth is adjustable.",
+      "or 42″ throat, a variable-speed motor, a foot pedal and forward / reverse. The H models have a 4″ high throat for formed panels "
+      "and drive both shafts. Round, flat, step and spoiler bead rolls; the bead depth is adjustable.",
       ["20 ga (1 mm) mild steel, 18 ga (1.2 mm) aluminum", "Throat 24″, 36″ or 42″; 4″ throat height on the H models",
-       "Variable-speed foot pedal, forward / reverse; both shafts driven (H)", "Rolls: round bead 1/8 – 1″, flat bead, step 1/16 – 1/4″, 45° step, spoiler 1-1/4″ radius"],
-      ["tm-rm36", "tm-rm42h", "tm-rm24m"], headline="24 – 42″ throat", cap="throat [Throat depth]"),
-    F("tt-bead", P_BEAD, "tt-bead", "RM bench bead rollers and rotary machines, 22 – 18 ga", "RM bench bead rollers", T["tt-bead"],
-      "Hand bead rollers and rotary machines for the bench and the vise: the RM-A and RM-B with hardened rolls, the RM08 with six roll "
-      "sets for turning, burring, wiring, crimping and ogee beads, the RM12 and RM18 with 12 and 18″ throats, and the heavy-duty RM-8H and "
-      "RM-27 with 22 mm shafts and gear drive for 18 ga steel and 16 ga aluminum.",
-      ["22 – 18 ga mild steel; RM-8H / RM-27: 20 ga stainless, 16 ga aluminum", "Throat 4.5″ (RM-B) to 18″ (RM18)",
-       "RM08: six standard roll sets; RM-8H: 3/8″ bead and offset die sets", "Bench, vise or stand mounting; stands optional"],
-      ["tm-rm08", "tm-rm18", "tm-rm8h", "tm-rm27", "tm-rmb"], headline="22 – 18 ga", cap="[Capacity]", manual=True),
+       "Variable-speed motor, foot pedal, forward / reverse; both shafts driven (H)", "Rolls: round bead 1/8 – 1″, flat bead, step 1/16 – 1/4″, 45° step, spoiler 1-1/4″ radius"],
+      ["tm-rm36", "tm-rm42h"], headline="24 – 42″ throat", cap="throat [Throat depth]"),
 ]
 
 # =============================================================================================== hydraulic presses
@@ -193,29 +176,37 @@ P_PRESS = "hydraulic-press"
 SP = T["tt-shop-press"]
 HP = T["tt-hp"]
 PRESS = [
-    F("tt-shop-hs", P_PRESS, "tt-shop", "HP-S workshop presses 22 – 110 US tons and HPP motorized presses 66 – 176 US tons", "HP-S / HPP workshop presses",
-      [SP[3], SP[4]],
-      "H-frame workshop presses for repair, assembly and straightening: the HP-S presses from 22 to 110 US tons with hand pumps, in a "
-      "European (S) and a standard (S-A) design, and the HPP motorized presses from 66 to 176 US tons with a two-step hydraulic unit, a "
-      "cylinder that moves across the frame, V-block worktables and 16″ of stroke.",
-      ["HP-S: 22, 33, 55, 88 and 110 US tons; hand pump; travel to 7.9 + 17.7″", "HPP: 66, 110 and 176 US tons; 3 – 4 HP; 16.1″ (410 mm) stroke",
-       "Moving cylinder and V-block worktable (HPP)", "Working width to 43.3″ (HPP-160)"],
-      ["tm-hpp100", "tm-hp30s", "tm-hp30sa"], headline="22 – 176 US tons", cap="[Force]"),
-    F("tt-shop-small", P_PRESS, "tt-shop", "Shop presses 10 – 30 tons and BP-16T / EBP-25T workshop presses", "Shop presses 10 – 30 tons",
-      [SP[1], SP[2]],
-      "Shop presses for the garage, the farm and the maintenance shop: H-frame presses from 10 to 30 tons with hand pumps and adjustable "
-      "tables for pressing bearings, bushings and shafts and straightening parts; the BP-16T workshop press with a two-speed hand pump "
-      "and the EBP-25T with a motorized pump and infinitely variable pressure and speed, both with two V-blocks for straightening.",
-      ["H-frame 10, 12, 20 and 30 tons; working space to 39″", "BP-16T: 18 US tons, hand pump with low and high pressure; 6.3″ stroke",
-       "EBP-25T: 28 US tons, motorized pump, 7.9″ stroke; pressure gauge", "Two V-blocks for straightening"],
-      ["tm-ebp25t", "tm-bp16t", "tm-hframe"], headline="10 – 30 tons", cap="[Capacity]"),
-    F("tt-shop-brake", P_PRESS, "tt-shop", "HP-12N · HP-24N shop press brakes, 12″ × 3/16″ and 24″ × 14 ga", "HP-12N / HP-24N press brakes", [SP[0]],
-      "Compact hydraulic bending brakes driven by a bottle jack: the HP-12N bends 3/16″ mild steel over 12″ with two V-blocks on a "
-      "frame with four wheels — its 12-ton ram and pump come off for other pressing jobs — and the HP-24N bends 14 ga over 24″ with 20 "
-      "tons, with return springs that bring the bending bar back after every bend.",
-      ["HP-12N: 12 tons; 3/16″ (5 mm) × 12″; 0 – 90°", "HP-24N: 20 tons; 14 ga half width, 16 ga full width, 12 ga aluminum, 18 ga stainless × 24″",
-       "Return springs bring the bending bar back (HP-24N)", "HP-12N on four wheels; ram and pump removable"],
-      ["tm-hp12n", "tm-hp24n"], headline="12″ × 3/16″, 24″ × 14 ga", cap="[Bending width × thickness]", manual=True),
+    F("tt-shop-hs", P_PRESS, "tt-shop", "HPP-60 · HPP-100 · HPP-160 motorized workshop presses, 66 – 176 US tons", "HPP motorized workshop presses",
+      [SP[4]],
+      "Motorized H-frame workshop presses for repair, assembly and straightening: a two-step hydraulic unit with a 3 – 4 HP motor and a "
+      "double-acting hand pump for fine positioning, a cylinder that moves across the frame, V-block worktables and 16″ of stroke, from "
+      "66 to 176 US tons with working widths to 43.3″.",
+      ["HPP-60 / 100 / 160: 66, 110 and 176 US tons", "3 – 4 HP; two-step hydraulic unit; 16.1″ (410 mm) stroke",
+       "Cylinder moves across the frame; V-block worktable", "Working width 29.5 – 43.3″ (750 – 1,100 mm)"],
+      ["tm-hpp100"], headline="66 – 176 US tons", cap="[Force]"),
+    F("tt-shop-small", P_PRESS, "tt-shop", "EBP-25T motorized workshop press, 28 US tons", "EBP-25T workshop press",
+      [pick(SP[2], ["EBP-25T"], title="EBP-25T", sub="Motorized workshop press with two V-blocks")],
+      "A compact workshop press with a motorized pump and infinitely variable pressure and speed — pressing bearings, bushings and "
+      "shafts, and straightening on the two V-blocks — for the garage, the farm and the maintenance shop.",
+      ["28 US tons (250 kN); 7.9″ (200 mm) stroke", "Motorized pump; infinitely variable pressure and speed; pressure gauge", "Two V-blocks for straightening"],
+      ["tm-ebp25t"], headline="28 US tons", cap="[Force]"),
+    F("tt-ebp10t", P_PRESS, "tt-shop", "EBP-10T hydraulic bench press for sheet-metal tooling, 10 tons, 25″ throat", "EBP-10T bench press",
+      [pick(T["tt-bench-press"][0], ["EBP-10T"], title="EBP-10T", sub="Hydraulic bench press for punch, flare, bead, louver and bend tooling")],
+      "A 10-ton hydraulic bench press for the sheet-metal and HVAC shop: a 25″ throat and a 6″ tool opening take the industry-standard "
+      "bench and louver press tooling — punch round, square and oblong holes, punch and flare or punch and bead, cut louvers, notch "
+      "corners, bend 90° in 3/8″ mild steel and shear 16 ga — and it works as a hydraulic arbor press as well.",
+      ["10 tons hydraulic; 4″ stroke; 25″ throat; 6″ tool opening", "Takes all standard bench press and louver press tooling",
+       "Tooling: shear 16 ga, 90° bend 3/8″, corner punch 16 ga, louver punches 1 – 5″, punch & flare and punch & bead 1 – 3″"],
+      ["tm-ebp10t", "tm-louver"], headline="10 tons, 25″ throat", cap="[Capacity]",
+      optional=["Shear kit", "90° bend kit", "Corner punch and corner radius punch", "Louver punches", "Punch & flare and punch & bead kits", "Universal tool stand"]),
+    F("tt-riveter", P_PRESS, "tt-rivet", "XM orbital riveting machines, rivets Ø3/16 – 1-3/16″", "XM orbital riveters", T["tt-riveter"],
+      "Hydraulic orbital (rolling) riveters: the riveting head rolls the rivet end into shape instead of hammering it, with about a tenth "
+      "of the force of punch riveting — the part keeps its fit, the head comes out smooth, without vibration or noise. Six sizes for "
+      "solid rivets from 3/16 to 1-3/16″; with other tools the machine works as a normal press. Hinges, chain links, brake parts, "
+      "appliances and hardware.",
+      ["Rivets Ø3/16 – 1-3/16″ (5 – 30 mm); 1,911 – 22,481 lbf", "11 rivet head forms", "Tables Ø4.7″ to 19.7 × 14″",
+       "Low noise, no vibration; replaces hammering, punching and hot riveting"],
+      ["tm-xm8"], headline="Rivets to 1-3/16″", cap="rivets to [Rivet diameter, max]"),
     F("tt-hp-h", P_PRESS, "tt-hp", "HP-30 – HP-500 motorized H-frame hydraulic presses, 33 – 551 US tons", "HP H-frame presses", [HP[0]],
       "Motorized H-frame hydraulic presses for production pressing, forming, straightening and assembly, from 33 to 551 US tons: a "
       "piston stroke of 7.9 – 11.8″ plus 10.6 – 25.6″ of table travel, tables up to 35.4 × 47.2″, the hydraulic unit built on to 88 US "
@@ -259,13 +250,13 @@ CIRCLE = [
       ["Discs Ø7-7/8 – 49-1/4″ (200 – 1,250 mm) in 10 ga (3.5 mm)", "3 HP main motor and 1.5 HP feed motor", "Ball-screw radius setting with encoder readout",
        "Pneumatic blank clamping; regrindable blades in bronze bearings"],
       ["tm-mcs1250e"], headline="Ø8 – 49″ discs", cap="[Disc diameter]"),
-    F("tt-hcs", P_CIRCLE, "tt-circle", "HCS · ECS circle shears and flanging machines and MCS manual circle shear", "HCS / ECS circle shears", T["tt-hcs"],
-      "Circle shears that also flange: the HCS10/10 by hand crank and the ECS10/10 with a two-speed motor and foot pedal cut discs from "
-      "Ø5-7/8 to 19-3/4″ in 16 ga and turn a rim up to 5/16″ high with the second roll set; the MCS1.0×1000 is a manual circle shear "
-      "for discs up to Ø39-3/8″ in 20 ga.",
-      ["HCS10/10 / ECS10/10: discs Ø5-7/8 – 19-3/4″, 16 ga; flanging to 5/16″", "Two roll sets: cutting and flanging", "ECS10/10: 1/2 / 3/4 HP two-speed motor, foot pedal",
-       "MCS1.0×1000: discs Ø4 – 39-3/8″ in 20 ga, hand crank"],
-      ["tm-ecs", "tm-hcs", "tm-mcs1000"], headline="Discs to Ø39″", cap="[Disc diameter]", manual=True),
+    F("tt-hcs", P_CIRCLE, "tt-circle", "ECS10/10 motorized circle shear and flanging machine, 16 ga, Ø6 – 19-3/4″ discs", "ECS10/10 circle shear",
+      [pick(T["tt-hcs"][0], ["ECS10/10"], title="ECS10/10", sub="Motorized circle shear that cuts discs and flanges rims")],
+      "A circle shear that also flanges: the ECS10/10 cuts discs from Ø5-7/8 to 19-3/4″ in 16 ga with a two-speed motor and a foot "
+      "pedal, then turns a rim up to 5/16″ high with the second roll set — ends for ducts, tanks, lights and dust collectors.",
+      ["Discs Ø5-7/8 – 19-3/4″ (150 – 500 mm) in 16 ga (1.5 mm)", "Flanging height to 5/16″ (8 mm); two roll sets: cutting and flanging",
+       "1/2 / 3/4 HP (0.37 / 0.55 kW) two-speed motor, foot pedal", "Throat 19.7″ (500 mm)"],
+      ["tm-ecs"], headline="Discs Ø6 – 19-3/4″", cap="[Disc diameter]"),
 ]
 
 # =============================================================================================== press brakes, horizontal benders
@@ -290,16 +281,6 @@ HORIZ = [
       ["HB-10T: 11 US tons, flat bar 4-1/2 × 5/16″; hand control; mobile", "HB-25T / HB-40T: 27.6 / 44 US tons, flat bar to 6-1/4 × 1/2″; PLC touch screen; foot pedal",
        "Adjustable pressure with gauge; adjustable stroke", "33.5″ (850 mm) manual back gauge; ground-steel table"],
       ["tm-hb40t", "tm-hb10t", "tm-hb-vee"], headline="11 – 44 US tons", cap="[Bending force]", optional=["Special dies for pipe and flat bar"]),
-    F("tt-ub", P_HORIZ, "tt-ub", "UB universal benders, SBG / YP / UBM bench benders and ornamental iron tools", "Universal and bench benders",
-      [T["tt-ub"][0], pick(T["tt-ub"][1], ["YP-9", "YP-38", "UBM-30"], title="YP-9 · YP-38 · UBM-30", sub="Bench benders for flat bar, 0 – 200°"),
-       pick(T["tt-ub"][2], ["W-1", "W-2", "W-10", "Mini universal bender", "SBG-20", "JTR-20", "JTR-30"])],
-      "Hand benders for flat bar, round and square bar and angle — gates, railings, brackets, scrolls and ornamental iron: the UB-70, "
-      "UB-100 and UB-100A universal benders bend angles to 120° and radius bends in flat bar up to 4 × 3/8″ hot; the SBG and YP benders "
-      "bend angles, rings, hoops and scrolls; the W-1 and W-2 tool sets form scrolls, bend, twist, shear and punch strip; the W-10 makes "
-      "180° rod bends in a vise.",
-      ["UB-70 / UB-100: flat bar 2-3/4 – 4 × 3/8″, round Ø3/4″, square 11/16″ (hot); angle 2-3/8 × 5/16″", "SBG-30 / SBG-40, YP-9 / YP-38 / UBM-30: flat bar to 2 × 5/16″, 0 – 200°",
-       "W-1 / W-2: scroll former, bender, twister, shear and punch", "W-10: 180° bends in rod to 3/8″, ID 1/2 – 1-1/2″"],
-      ["tm-ub100a", "tm-ub70", "tm-sbg30", "tm-yp38", "tm-ubm30", "tm-w1", "tm-w10", "tm-mini-ub", "tm-jtr30"], headline="Flat bar to 4 × 3/8″", cap="[Flat bar]", manual=True),
 ]
 
 # =============================================================================================== slip rolls
@@ -323,14 +304,6 @@ ROLL = [
        "Foot pedal; 1 – 7.5 HP", "ESR2550 / ESR3050 E: motorized rear roll with digital position readout",
        "Options: hand-wheel adjustment of the rear roll, fast lower-roll adjustment"],
       ["tm-esr", "tm-esr1300e", "tm-esr1020"], headline="22 ga – 1/4″ × 3.3 – 10 ft", cap="[Working width] × [Capacity, mild steel]", note=NOTE_HZ),
-    F("tt-slip-hand", P_ROLL, "tt-slip", "Manual slip rolls, 22 – 14 ga × 12 – 81″", "Manual slip rolls", [SL[0], SL[1]],
-      "Hand-crank slip rolls for HVAC, flashing and small tanks: precision-ground rolls of high-strength steel, hardened gears, an "
-      "eccentric clamp, a lower roll set by lever and cam and a top roll that swings out to remove the part — 22 ga to 16 ga on the "
-      "bench from 12 to 51″, the KW01 on its own stand, and the W01-2 floor rolls for 14 ga over 24 to 49″.",
-      ["22 – 14 ga (0.8 – 2 mm) × 12 – 81″", "Precision-ground high-strength rolls; hardened gears", "Quick-release top roll; lever-and-cam lower roll adjustment",
-       "Bench models, KW01 on stand, W01-2 on floor stand; stand type A optional"],
-      ["tm-slip-1300", "tm-slip-kw01", "tm-w01-2", "tm-slip-w01", "tm-slip-sj"], headline="22 – 14 ga × 12 – 81″", cap="[Working width] × [Capacity, mild steel]",
-      manual=True),
 ]
 
 # =============================================================================================== deburring
@@ -347,44 +320,17 @@ DEBURR = [
       ["tm-bfm2560", "tm-wd1800"], headline="24″ working width", cap="[Working width, max]"),
 ]
 
-# =============================================================================================== manual shears (sheet-metal-shears.html, family set "ttmc")
+# =============================================================================================== motorized bench shears (sheet-metal-shears.html, family set "ttmc")
 P_SHEAR = "sheet-metal-shears"
 SHEAR = [
-    F("tt-q01", P_SHEAR, "sh-manual", "Q01 foot shears, 20 – 14 ga × 40 – 98″", "Q01 foot shears", T["tt-q01"],
-      "Foot-operated shears for HVAC, roofing and light sheet: cast frames for 20 ga and 14 ga over 40″ and 16 ga over 52″, welded "
-      "steel frames (A) with an adjustable-length pedal, and the light-duty B models with a spring-loaded hold-down for 16 ga over 52″ "
-      "and 18 ga over 98″. High-carbon chromium-steel blades; front and back gauges; mild steel, aluminum, copper, brass, zinc and plastic.",
-      ["20 ga × 40″, 14 ga × 40″, 16 ga × 52″, 18 ga × 98″", "Cast or welded steel frames; spring-loaded hold-down beam (B)", "Back gauge 0 – 27.6 / 31.5″ (700 / 800 mm)",
-       "High-carbon chromium-steel blades; adjustable blade gap (B)", "Rear safety cage optional (A)"],
-      ["tm-q01", "tm-q01a", "tm-q01b", "tm-q01b-gauge"], headline="20 – 14 ga × 40 – 98″", cap="[Working width] × [Capacity, mild steel]", manual=True),
-    F("tt-bq01", P_SHEAR, "sh-manual", "BQ01 bench shears, BQF01 foot and EBQ01 motorized bench shears, Q01 hand shears", "Bench shears", T["tt-bq01"],
-      "Bench shears for 18 – 20 ga over 26″ and 41″, by hand lever (BQ01), foot pedal (BQF01) or a 1 HP motor and foot switch (EBQ01), "
-      "with a working light and a 19.7″ back gauge; and the Q01 two-handle shears on stands for 16 ga over 41 and 59″, 18 ga over 79″ "
-      "and 22 ga over 98″.",
-      ["Bench shears 18 ga × 26″ and 20 ga × 41″; back gauge 0 – 19.7″", "Hand lever, foot pedal or motorized (EBQ01, 1 HP, foot switch)",
-       "Q01 hand shears: 16 ga × 41 – 59″, 18 ga × 79″, 22 ga × 98″", "Working light; front angle stop (EBQ01); rear safety cage optional (BQF01)"],
-      ["tm-ebq01", "tm-bqf01", "tm-bq01", "tm-q01h"], headline="22 – 16 ga × 26 – 98″", cap="[Working width] × [Capacity, mild steel]", manual=True),
-    F("tt-hs300", P_SHEAR, "sh-manual", "Hand guillotine shears, 20 – 16 ga × 12 – 51″", "Hand guillotine shears", T["tt-hs300"],
-      "Lever guillotine shears for thin sheet and plastic: the HS-300 for 20 ga over 12″, the HS-500 to HS-1300 for 16 ga over 20 to "
-      "51″, and the GS, KHS and TSC shears on stands with fast clamping, a hand-wheel back gauge and a counterweight on the lever, for 20 "
-      "ga over 40 – 49″ and 16 ga over 40″.",
-      ["HS-300: 20 ga × 12″ with back gauge 0 – 7″", "HS-500 – HS-1300: 16 ga × 20 – 51″", "GS / KHS / TSC: 20 – 16 ga × 40 – 49″; cast-iron frame on the GS-1000I",
-       "Fast clamping; back gauge by hand wheel; counterweight (spring on the GS-1000)"],
-      ["tm-khs", "tm-gs1000", "tm-hs800", "tm-hs300", "tm-tsc"], headline="20 – 16 ga × 12 – 51″", cap="[Working width] × [Capacity, mild steel]", manual=True),
-    F("tt-hs", P_SHEAR, "sh-manual", "Lever shears, bar cutters and bar and section shears", "Lever shears and bar cutters", T["tt-hs"],
-      "Hand shears for plate, flat bar and bar: the HS and HSG lever shears cut 1/4″ plate and 2-3/4 × 1/4″ flat with 5 – 12″ blades; "
-      "the MS bar cutters cut round bar from Ø3/4 to 1-1/4″, square and flat; the PBS bar and section shears cut flat bar up to 4 × 3/8″, "
-      "angle, tee, round and square bar, and the PBS-9 punches holes in sheet as well.",
-      ["HS / HSG: 1/4″ (6 mm) plate, flat bar 2-3/4 × 1/4″, round Ø7/16 – 1/2″", "MS-20 – MS-32: round Ø3/4 – 1-1/4″, square 11/16 – 1-1/8″",
-       "PBS-7 / PBS-9: flat 3-1/2 × 9/16″, angle 2-3/8 × 1/4″, round Ø7/8″; PBS-9 punches 14 ga", "Hold-down adjustable for height (PBS)"],
-      ["tm-hs", "tm-ms", "tm-pbs9", "tm-pbs7"], headline="1/4″ plate, Ø1-1/4″ bar", cap="[Round bar] round", manual=True),
-    F("tt-mms", P_SHEAR, "sh-manual", "MMS bench shears and throatless rack-and-pinion shears, 16 ga – 5/32″", "MMS bench shears", T["tt-mms"],
-      "Bench shears for sheet, strip and wire: the MMS-1 to MMS-3 for 16 ga to 1/8″, and the MMS-4 to MMS-6 throatless shears with an "
-      "alloy-steel rack and pinion that cut straight lines, curves and shapes in mild steel to 5/32″ and stainless to 1/8″ — the work turns "
-      "freely around the blade.",
-      ["MMS-1 – MMS-3: 16 ga – 1/8″ mild steel", "MMS-4 – MMS-6: 14 ga – 5/32″ mild steel, 16 ga – 1/8″ stainless; cuts curves",
-       "Rack-and-pinion drive; removable handle; adjustable hold-down (MMS-6)", "Bolts to a bench or a stand"],
-      ["tm-mms6", "tm-mms3"], headline="16 ga – 5/32″", manual=True),
+    F("tt-bq01", P_SHEAR, "sh-light", "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″", "EBQ01 bench shears",
+      [pick(T["tt-bq01"][0], ["EBQ01-1.25x650", "EBQ01-1.0x1050"], title="EBQ01-1.25x650 · EBQ01-1.0x1050", sub="Motorized bench shears, 18 ga × 26″ and 20 ga × 41″")],
+      "Compact motorized shears for the bench: a 1 HP motor drives the blade from a foot switch, so both hands hold the sheet — 18 ga "
+      "over 26″ and 20 ga over 41″, with a 19.7″ back gauge, a front angle stop and a working light. For duct parts, flashing, signs "
+      "and small panels where a floor shear is more machine than the work needs.",
+      ["18 ga (1.25 mm) × 26″ (650 mm); 20 ga (1 mm) × 41″ (1,050 mm)", "1 HP (0.75 kW) motor; foot switch",
+       "Back gauge 0 – 19.7″ (0 – 500 mm); front angle stop", "Working light"],
+      ["tm-ebq01"], headline="18 – 20 ga × 26 – 41″", cap="[Working width] × [Capacity, mild steel]"),
 ]
 
 GROUP_FAMILIES = COLD + ALU + CORNER + PIPE_NOTCH + IRON + ANGLE + BEAD + PRESS + CIRCLE + COMPACT + HORIZ + ROLL + DEBURR

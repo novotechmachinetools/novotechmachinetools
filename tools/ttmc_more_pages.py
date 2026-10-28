@@ -4,7 +4,7 @@
   content/pages/<slug>.json                  the ten new pages (category.html)
   content/extra_groups/ttmc-<slug>.json      value-line groups on pages other generators write (build.py apply_extra_groups)
   tools/image_map.json, tools/ttmc_more_keys.txt   the sample photos (tools/ttmc_more_photos.py), section 'ttmc-more'
-The manual shears (ttmc_more_data2.SHEAR) go on sheet-metal-shears.html through tools/ttmc_pages.py (family set 'ttmc').
+The EBQ01 bench shears (ttmc_more_data2.SHEAR) go on sheet-metal-shears.html through tools/ttmc_pages.py (family set 'ttmc').
 
     python3 tools/ttmc_more_photos.py && python3 tools/ttmc_more_pages.py && python3 tools/ttmc_pages.py
     python3 tools/make_images.py --only $(cat tools/ttmc_more_keys.txt) && python3 build.py
@@ -73,22 +73,22 @@ PAGES = {
     ),
     D.P_LOCK: dict(
         title="Lock Formers — Pittsburgh Machines & HVAC Duct Tools | NovoTech",
-        meta="Pittsburgh lock formers for 26 – 16 ga duct, an auxiliary roll former for button lock and drive cleat, seam closer, cleat benders, duct rollers, beading and slitting machines.",
+        meta="Pittsburgh lock formers for 26 – 16 ga duct, an auxiliary roll former for button lock and drive cleat, an electric seam closer, a power beading machine and a slitting machine.",
         h1="Lock formers and HVAC duct machines — Pittsburgh lock formers, roll formers and duct tools",
         nav="Lock formers & HVAC",
         intro="A lock former (Pittsburgh machine) rolls the edge of a duct panel into the Pittsburgh lock — the pocket the matching flange is "
               "hammered into to close a rectangular duct — and, with other roll sets, double seams, drive cleats, button locks and flanges. "
               "NovoTech's value-line HVAC machines are built in China to our specification: the PF20G lock former for 26 – 20 ga, the PF16G "
               "for 25 – 16 ga with six roll forms as standard, and the AX20G auxiliary roll former whose roll sets change in under five "
-              "minutes; and the tools that finish the duct — the SL-10 electric seam closer, hand brakes and cleat benders, round duct "
-              "rollers, a power beading machine for round duct and a slitting and bending machine. Parts and support from Mississauga, ON, Canada.",
+              "minutes; and the machines that finish the duct — the SL-10 electric seam closer, the RM18E power beading machine for round "
+              "duct and the LQ15 slitting and bending machine. Parts and support from Mississauga, ON, Canada.",
         points=["PF20G and PF16G Pittsburgh lock formers, 26 – 16 ga; AX20G roll former with button lock, drive cleat and 6-in-1 flange rolls",
-                "SL-10 electric seam closer for Pittsburgh seams; CHB and CB cleat benders; LB-2 channel letter bender",
-                "RTB round duct rollers, RM18E power beading machine and LQ15 slitting and bending machine"],
+                "SL-10 electric seam closer: closes Pittsburgh seams in three stages, 26 – 20 ga, 13 – 23 ft/min",
+                "RM18E power beading machine for round duct, 15 ga; LQ15 slitting and bending machine, 16 ga × 47″"],
         hero="tm-pf16g", minis=["tm-ax20g", "tm-sl10"],
         groups=[("lock", "Lock formers and roll formers", "The machines that roll the joints of rectangular duct: Pittsburgh locks, double seams, drive cleats, button locks and flanges.", False),
-                ("duct", "Seam closer, cleat benders and letter bender", "Hand and electric tools that close and finish the duct after the lock former.", True),
-                ("round", "Round duct rollers, beading and slitting", "For round duct and pipe: hand rollers, a power beading machine and a slitting and bending machine.", False)],
+                ("duct", "Electric seam closer", "The SL-10 closes the Pittsburgh seam after the lock former — faster and neater than a hammer.", False),
+                ("round", "Power beading and slitting machines", "For round duct and pipe: a power beading machine and a slitting and bending machine.", False)],
         faq=[{"q": "What is a Pittsburgh lock, and what gauge can a lock former take?",
               "a": "The Pittsburgh lock is the standard longitudinal seam of rectangular duct: the lock former rolls a pocket on one edge of the panel, the other edge is bent to a 90° flange, the flange goes into the pocket and the lip is hammered (or closed with a seam closer) over it. The PF20G forms it in 26 to 20 ga, the PF16G in 25 to 16 ga mild steel; galvanized steel is the usual material."},
              {"q": "PF20G, PF16G or AX20G?",
@@ -167,7 +167,7 @@ PAGES = {
              VOLT],
         related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes, machining centres and grinders"},
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}, {"href": "band-saw.html", "label": "Band saws"},
-                 {"href": "ironworker-machines.html", "label": "Ironworkers"}, {"href": "arbor-press.html", "label": "Arbor presses and bench presses"}],
+                 {"href": "ironworker-machines.html", "label": "Ironworkers"}, {"href": "hydraulic-press.html", "label": "Hydraulic presses and shop presses"}],
     ),
     D.P_MILL: dict(
         title="Milling Machines — Turret, Universal & Mill-Drills | NovoTech",
@@ -254,83 +254,56 @@ PAGES = {
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}],
     ),
     D.P_SHAPE: dict(
-        title="English Wheels, Power Hammers & Metal Shaping Tools | NovoTech",
-        meta="Metal shaping machines: English wheels with 18 – 45″ throats, pneumatic planishing hammers, electric power hammers, shrinker-stretchers, a diamond roller former and air forging hammers.",
-        h1="English wheels, planishing and power hammers and shrinker-stretchers — metal shaping machines",
-        nav="English wheels & power hammers",
-        intro="The machines of the metal shaper — auto body and hot-rod builders, restoration shops, aircraft and motorcycle fabricators and "
-              "metal artists: English wheels that stretch sheet into compound curves, planishing hammers and electric power hammers that "
-              "smooth and shape the panel, shrinker-stretchers that curve flanges and angles, a roller former that embosses a diamond pattern "
-              "and self-contained air hammers for the forge. NovoTech's value-line shaping machines are built in China to our specification, "
-              "with parts and support from Mississauga, ON, Canada.",
-        points=["English wheels F0.8×450 – F2.0×760: 22 – 14 ga, throats from 18″ to 45″, sets of lower anvils",
-                "Pneumatic planishing hammers with 12 – 24″ throats; PH-20D and PH-30D electric power hammers, 0 – 1,700 blows/min",
-                "Shrinker-stretchers to 16 ga; PIC50 diamond roller former; C41 air forging hammers, 35 – 165 lb ram"],
-        hero="tm-f1570", minis=["tm-ph20d", "tm-ss16f"],
-        groups=[("wheel", "English wheels and roller former", "Compound curves rolled into sheet between a flat upper wheel and a crowned lower anvil.", True),
-                ("hammer", "Planishing hammers and power hammers", "Smoothing, shaping and beading panels with fast, light blows.", False),
-                ("shrink", "Shrinker-stretchers", "Curves in flanges and angles without cutting and welding.", True),
+        title="Power Hammers & Planishing Hammers for Metal | NovoTech",
+        meta="Pneumatic planishing hammers with 12 – 24″ throats, electric power hammers to 1,700 blows/min, a diamond roller former and C41 air forging hammers, 35 – 165 lb ram.",
+        h1="Power hammers and planishing hammers — pneumatic, electric and air forging hammers",
+        nav="Power & planishing hammers",
+        intro="Hammers for the metal shaper and the blacksmith. Auto body, hot-rod, motorcycle and aircraft panel builders smooth and "
+              "shape sheet with a planishing hammer — fast, light blows between an upper die and a crowned lower anvil — and with an "
+              "electric power hammer that has the force to shape, bead and shrink as well; blacksmiths and forges draw out, upset, punch "
+              "and forge-weld hot stock under a self-contained air hammer that needs no compressor. NovoTech's value-line hammers are "
+              "built in China to our specification: PPH pneumatic planishing hammers with 12″ and 24″ throats, the UFP-2 planishing hammer "
+              "and wheel on one stand, the PH-20D and PH-30D electric power hammers with 20″ and 30″ throats, the PIC50 diamond roller "
+              "former for embossed panels and the C41 air forging hammers from 35 to 165 lb ram. Parts and support from Mississauga, ON, Canada.",
+        points=["Pneumatic planishing hammers PPH-12 / PPH-24 / PPH500 / PPH-610: 18 – 16 ga, 12 – 24″ throats, radius anvils",
+                "PH-20D and PH-30D electric power hammers: 2 HP, 0 – 1,700 blows/min, 16 ga steel and 12 ga aluminum",
+                "C41 self-contained air forging hammers, 35 – 165 lb ram, 210 – 270 blows/min; PIC50 diamond roller former, 20 ga × 50″"],
+        hero="tm-ph20d", minis=["tm-pph610", "tm-c41-40"],
+        groups=[("hammer", "Planishing hammers and power hammers", "Smoothing, shaping and beading panels with fast, light blows — on shop air or with an electric drive.", False),
+                ("former", "Diamond roller former", "A motorized roller that embosses a diamond pattern into sheet for decorative panels.", False),
                 ("forge", "Air forging hammers", "Self-contained pneumatic hammers for blacksmiths and forges.", False)],
-        faq=[{"q": "Which English wheel throat do I need?",
-              "a": "The throat is the distance from the wheels to the frame — it limits how far into a panel you can roll. 18 – 24″ throats suit motorcycle tanks, fenders and repair panels; 28 – 30″ handle most car panels; 40 – 45″ throats take hoods, roofs and aircraft skins. The F1.5 and F2.0 wheels take 16 and 14 ga steel; the lighter wheels 18 – 22 ga."},
-             {"q": "Planishing hammer or power hammer?",
-              "a": "A pneumatic planishing hammer (PPH) runs on shop air and delivers fast light blows to smooth a panel after the English wheel; a power hammer (PH-20D / PH-30D) is electric with variable speed and more force — it shapes as well as planishes, and with shaping dies shrinks and stretches. Many shops have both."},
-             {"q": "What is a shrinker-stretcher used for?",
-              "a": "To curve a flange or an angle: the shrinker gathers the metal so the flange curves toward it — window frames, wheel arches, curved brackets — and the stretcher spreads it to curve the other way. Shrink and stretch on the same part to make S-curves, without cutting and welding."},
+        faq=[{"q": "Planishing hammer or power hammer?",
+              "a": "A pneumatic planishing hammer (PPH) runs on shop air and delivers fast, light blows that smooth a panel and take out the marks of earlier shaping — the finishing tool of the auto body and restoration shop. An electric power hammer (PH-20D / PH-30D) has variable speed and more force: it shapes as well as planishes, and with shaping dies it shrinks, stretches and beads. Many shops have both."},
+             {"q": "Which throat depth do I need?",
+              "a": "The throat is the distance from the dies to the frame — it limits how far into a panel you can reach. A 12″ throat suits brackets, patch panels and motorcycle parts; 20 – 24″ most car panels; the 30″ throat of the PH-30D reaches the middle of hoods, roofs and large aircraft and boat skins."},
+             {"q": "What does a planishing hammer need from the compressor?",
+              "a": "The PPH500 runs at 50 – 100 psi and the PPH-610 at 90 – 120 psi; the foot pedal or the 3-position air flow valve sets the blow rate. Use clean, dry air — a filter, regulator and lubricator at the hammer keep the valve and the piston working."},
+             {"q": "Does an air forging hammer need shop air?",
+              "a": "No — the C41 hammers are self-contained: a 2 – 9.4 HP motor drives a compressor cylinder in the hammer itself, and that air drives the ram. They stand on a solid concrete foundation — the larger hammers on a separate anvil block of 441 to 1,874 lb — and forge stock heated in a forge. Choose the ram by the largest stock: the 35 – 55 lb rams for blades, tools and ornamental work up to about 1-1/2″ square, the 88 and 165 lb rams for 2 – 2-1/2″ square bar."},
              VOLT],
         related=[{"href": "bead-rollers.html", "label": "Bead rollers"}, {"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes"},
                  {"href": "angle-rolls.html", "label": "Angle rolls and ring rollers"}, {"href": "tube-bender.html", "label": "Tube and pipe benders"},
                  {"href": "belt-grinder.html", "label": "Belt grinders"}],
     ),
-    D.P_ARBOR: dict(
-        title="Arbor Presses, Bench Presses & Turret Punches | NovoTech",
-        meta="Arbor presses 1/2 – 8 tons, ratchet and rack-and-pinion presses, bench presses for punch, flare and louver tooling, 12-station turret punch presses and orbital riveting machines.",
-        h1="Arbor presses, bench presses, turret punch presses and orbital riveters",
-        nav="Arbor & bench presses",
-        intro="Hand presses for the tool room, the maintenance shop and the sheet-metal shop: arbor presses from 1/2 to 8 tons for pressing "
-              "bearings, bushings and pins, broaching keyways and staking; ratchet and rack-and-pinion presses for repeated small-part work; "
-              "bench presses that punch, flare, bead, louver, notch and bend sheet with standard tooling; manual turret punch presses with "
-              "twelve punches on the turret; and orbital riveting machines that form solid rivets without hammering. NovoTech's value-line "
-              "presses are built in China to our specification, with parts and tooling from Mississauga, ON, Canada.",
-        points=["Arbor presses AP-1/2 – AP-8, 1/2 to 8 tons; RAP ratchet presses; AP-S rack-and-pinion presses",
-                "Bench presses BP-3T (3 t), EBP-10T hydraulic (10 t, 25″ throat) and BP3-F four-station; louver, flare and bead tooling",
-                "TP-12 and TP-24 turret punch presses, 12 stations to 1-1/4″; XM orbital riveters for rivets to 1-3/16″"],
-        hero="tm-ap8", minis=["tm-bp3t", "tm-tp12b"],
-        groups=[("arbor", "Arbor presses", "Hand presses for pressing, broaching and staking — 1/2 to 8 tons.", True),
-                ("bench", "Bench presses for sheet-metal tooling", "Punch, flare, bead, louver, notch and bend sheet with standard bench press tooling.", False),
-                ("punch", "Turret punch presses", "Twelve punches on a rotating turret, worked by a hand lever.", True),
-                ("rivet", "Orbital riveting machines", "Solid rivets rolled into shape — quiet, without vibration, with a tenth of the force.", False)],
-        faq=[{"q": "What size arbor press do I need?",
-              "a": "Choose by the force and the size of the part. A 1 – 2 ton press handles small bearings, pins and staking; 3 – 5 tons most automotive and machine bearings and broaching; 6 – 8 tons larger bearings and gears, with up to 17.7″ of height and 10″ of diameter between the ram and the base. For more force, see the hydraulic shop presses."},
-             {"q": "What can the bench press do in the HVAC and sheet-metal shop?",
-              "a": "With the standard tooling: punch round, square and oblong holes, punch and flare or punch and bead holes for stiffness and hoses, cut louvers 1 – 5″ long, notch corners, bend 90° in 3/8″ mild steel and shear 16 ga. The EBP-10T is the hydraulic version for heavier and repeated work; the BP3-F holds four tools at once for production."},
-             {"q": "What is orbital riveting?",
-              "a": "The riveting head is tilted a few degrees and rolls around the rivet end, forming the head gradually with about a tenth of the force a punch would need. The part does not deform, the head is smooth and the machine is quiet — used for hinges, chain links, brake parts, appliances and hardware. With other tools the XM riveters work as normal presses."},
-             VOLT],
-        related=[{"href": "hydraulic-press.html", "label": "Hydraulic presses and shop presses"}, {"href": "drill-press.html", "label": "Drill presses"},
-                 {"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "ironworker-machines.html", "label": "Ironworkers"},
-                 {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
-    ),
     D.P_TUBE: dict(
-        title="Tube & Pipe Benders — Hydraulic, Electric & Manual | NovoTech",
-        meta="Tube and pipe benders: hydraulic PLC tube benders to 3-1/8″, an electric top bender to 2-1/2″, 25-ton tubing benders, benders for 2″ schedule 40 pipe, exhaust benders, hydraulic pipe benders and hand benders.",
-        h1="Tube and pipe benders — hydraulic, electric and manual, value line",
+        title="Tube & Pipe Benders — Hydraulic & Electric | NovoTech",
+        meta="Tube and pipe benders: hydraulic PLC tube benders to 3-1/8″, an electric top bender to 2-1/2″, a 25-ton tubing bender, air and electric benders for 2″ schedule 40 pipe, exhaust benders and an electric pipe bender.",
+        h1="Tube and pipe benders — hydraulic, electric and air-hydraulic, value line",
         nav="Tube & pipe benders · value line",
         intro="Benders for the fabrication shop, the roll-cage and chassis builder, the exhaust shop and the plumber and electrician — lower in "
               "price than the CNC and NC rotary-draw benders on the other pages of this section, for the shop that bends tube and pipe every "
               "week but does not need mandrel bending or programmed 3-D parts. NovoTech's value-line benders are built in China to our "
               "specification: JTB hydraulic PLC tube benders to 3-1/8″, the TBM-60 electric top bender to 2-1/2″, the HTB-25T 25-ton tubing "
-              "bender, the TB-3 family and the HTB-1000 for 2″ schedule 40 pipe, the HTB-2000 exhaust bender with swager and expander, HB "
-              "hydraulic pipe benders and hand benders for small tube. Dies, parts and support from Mississauga, ON, Canada.",
+              "bender, the air- and electric-hydraulic TB-3 benders and the HTB-1000 for 2″ schedule 40 pipe, the HTB-2000 exhaust bender "
+              "with swager and expander and the EHB-10 electric hydraulic pipe bender. Dies, parts and support from Mississauga, ON, Canada.",
         points=["JTB-40 / 50 / 80 hydraulic PLC tube benders: round tube to Ø3-1/8″, square tube to 3-1/8″, bending to 180°",
                 "TBM-60 electric top bender 1/4 – 2-1/2″; HTB-25T 25-ton tubing bender; TB-3 and HTB-1000 for 2″ schedule 40 pipe",
-                "HTB-2000 exhaust bender and HTES-3000 expander-swager; HB hydraulic pipe benders 8 – 16 tons; hand benders 1/4 – 1″"],
+                "HTB-2000 exhaust bender and HTES-3000 expander-swager; EHB-10 electric hydraulic pipe bender, 11 US tons, 1/2 – 2″ pipe"],
         hero="tm-jtb50", minis=["tm-tbm60", "tm-htb1000"],
         groups=[("power", "Hydraulic and electric tube benders", "Powered benders for tube, pipe, square tube and bar — from the PLC bender to the 25-ton tubing bender.", False),
-                ("pipe", "Hydraulic pipe benders", "Push-type benders with a hydraulic ram for plumbing, electrical and maintenance pipe work.", False),
-                ("hand", "Hand tube benders", "Small tube from 1/4 to 1″, bent in a vise or on a stand.", True)],
+                ("pipe", "Electric hydraulic pipe bender", "A push-type bender with an electric pump for plumbing, electrical and maintenance pipe work.", False)],
         faq=[{"q": "Rotary-draw, push-type or roll bending?",
-              "a": "A rotary-draw bender (JTB, TBM-60, HTB-25T, TB-3, HTB-1000) pulls the tube around a die with a clamp and a follower — a tight, accurate bend with little flattening, the method for roll cages, railings, frames and exhaust. A push-type hydraulic pipe bender (HB) pushes the pipe into a die between two supports — simple and fast for plumbing and electrical pipe, where some ovality is acceptable. For large radii, rings and spirals, see the tube rollers on the angle rolls page."},
+              "a": "A rotary-draw bender (JTB, TBM-60, HTB-25T, TB-3, HTB-1000) pulls the tube around a die with a clamp and a follower — a tight, accurate bend with little flattening, the method for roll cages, railings, frames and exhaust. A push-type hydraulic pipe bender (EHB-10) pushes the pipe into a die between two supports — simple and fast for plumbing and electrical pipe, where some ovality is acceptable. For large radii, rings and spirals, see the tube rollers on the angle rolls page."},
              {"q": "What do I need to tell you to choose the dies?",
               "a": "The outside diameter (or the square size), the wall thickness, the material and the centre-line radius (CLR) of the bend — usually 2 to 4 times the tube diameter. Tube and pipe sizes differ: 1-1/2″ schedule 40 pipe is 1.900″ OD, while 1-1/2″ tube is 1.500″ OD — the die must fit the OD exactly."},
              {"q": "When do I need a CNC or mandrel bender instead?",
@@ -364,22 +337,22 @@ EXTRA = {
         related_add=[{"href": "circular-cold-saws.html", "label": "Cold saws"}],
     ),
     D2.P_CORNER: dict(
-        groups=[("tt-notch", "Corner notchers · value line", "Hydraulic, pneumatic and manual corner notchers — NovoTech value line, built in China.", False, None)],
-        intro_add="NovoTech's value-line notchers, built in China, add the HNM-6 and HNM-6A hydraulic notchers for 1/4″, PNM pneumatic notchers "
-                  "and HN hand and FN foot notchers for 16 ga to 1/8″.",
-        points_add=["NovoTech value line: HNM-6 / HNM-6A hydraulic 1/4″, PNM-130 / 150 pneumatic, HN hand and FN foot notchers"],
-        faq_add=[{"q": "Hydraulic, pneumatic or manual notcher?",
-                  "a": "A hydraulic notcher cuts 3/16 – 1/4″ plate quickly and is the choice for a production shop or for heavier plate; a pneumatic notcher runs on shop air and cuts up to 1/8″ in sheet — quieter, no hydraulic oil, a lower price; a hand or foot notcher does 16 ga to 1/8″ without power for the shop that notches now and then. The premium-line HNM notchers and the value-line HNM-6 / HNM-6A differ in build and price; both have adjustable stops and a sheet hold-down."}],
+        groups=[("tt-notch", "Corner notchers · value line", "Hydraulic and pneumatic corner notchers — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value-line notchers, built in China, add the HNM-6 and HNM-6A hydraulic notchers for 1/4″ and the PNM-130 and "
+                  "PNM-150 pneumatic notchers for sheet to 1/8″.",
+        points_add=["NovoTech value line: HNM-6 / HNM-6A hydraulic 1/4″, PNM-130 / PNM-150 pneumatic"],
+        faq_add=[{"q": "Hydraulic or pneumatic notcher?",
+                  "a": "A hydraulic notcher cuts 3/16 – 1/4″ plate quickly and is the choice for a production shop or for heavier plate; a pneumatic notcher runs on shop air and cuts up to 1/8″ in sheet — quieter, no hydraulic oil, a lower price. The premium-line HNM notchers and the value-line HNM-6 / HNM-6A differ in build and price; both have adjustable stops and a sheet hold-down."}],
         set={"hero_brand_line": "Premium-line corner notchers are built in Turkey to NovoTech's specification with European hydraulic and electrical components; the value-line notchers are built in China to NovoTech's specification. All sold with a 1-year warranty and supported from Mississauga, ON, Canada."},
     ),
     D2.P_PIPE_NOTCH: dict(
-        groups=[("tt-tube-notch", "Tube and pipe notchers · value line", "Hole-saw, end-mill and hand notchers — NovoTech value line, built in China.", False, None),
+        groups=[("tt-tube-notch", "Tube and pipe notchers · value line", "Motorized hole-saw and end-mill notchers — NovoTech value line, built in China.", False, None),
                 ("tt-prs", "Tube end grinders · value line", "Belt grinders that notch tube ends at any angle with a contact roller the size of the mating tube.", False, None)],
-        intro_add="NovoTech's value-line notchers, built in China, add the PTN-30 hole-saw notcher, the UTN40 end-mill notchers, drill-press and "
-                  "hand notchers and the PRS tube end grinders that notch tube from Ø3/4 to 5-3/4″ with a belt.",
+        intro_add="NovoTech's value-line notchers, built in China, add the motorized PTN-30 hole-saw notcher, the UTN40 end-mill notchers, "
+                  "the PTN-12U and the PRS tube end grinders that notch tube from Ø3/4 to 5-3/4″ with a belt.",
         points_add=["NovoTech value line: PTN-30 hole-saw notcher, UTN40 end-mill notchers, PRS belt tube-end grinders to Ø5-3/4″"],
         faq_add=[{"q": "Hole saw, end mill or belt — which notching method?",
-                  "a": "A hole-saw notcher (PTN-30, PNM 1-1/2) is the lowest-cost way to cut a saddle: one inexpensive bi-metal hole saw per tube size, any angle, clean enough for most welding. An end-mill notcher (UTN40) cuts faster and more precisely, without coolant, and one cutter covers several sizes. A belt notcher (PRS) grinds the saddle against a contact roller: no burr, no sharp tooling, works on thin-wall stainless and aluminum and also finishes and deburrs. The premium-line PN machines are motorized notchers for production."}],
+                  "a": "A hole-saw notcher (PTN-30) is the lowest-cost way to cut a saddle: one inexpensive bi-metal hole saw per tube size, any angle, clean enough for most welding. An end-mill notcher (UTN40) cuts faster and more precisely, without coolant, and one cutter covers several sizes. A belt notcher (PRS) grinds the saddle against a contact roller: no burr, no sharp tooling, works on thin-wall stainless and aluminum and also finishes and deburrs. The premium-line PN machines are motorized notchers for production."}],
         related_add=[{"href": "tube-bender.html", "label": "Tube and pipe benders · value line"}, {"href": "belt-grinder.html", "label": "Belt grinders"}],
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line notchers are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
@@ -389,59 +362,59 @@ EXTRA = {
         points_add=["NovoTech value line: M50 – M60 compact ironworkers, 50 – 60 tons"],
     ),
     D2.P_ANGLE: dict(
-        groups=[("tt-ring", "Ring rollers, profile benders and tube rollers · value line", "Motorized profile benders with Ø3/4 to 2-1/2″ shafts, ring rollers and tube rollers — NovoTech value line, built in China.", False, None)],
-        intro_add="NovoTech's value-line ring rollers, built in China, add RBM and HRBM profile benders with Ø3/4 to 2-1/2″ shafts — manual, "
-                  "motorized and with a hydraulic top roll — TR tube rollers, the CRB-76 decorative ring roller and bench ring rollers.",
-        points_add=["NovoTech value line: RBM / HRBM profile benders Ø3/4 – 2-1/2″ shafts, TR tube rollers, CRB-76 decorative roller"],
+        groups=[("tt-ring", "Ring rollers, profile benders and tube rollers · value line", "Motorized profile benders with Ø13/16 to 2-1/2″ shafts, ring rollers and tube rollers — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value-line ring rollers, built in China, add motorized RBM and HRBM profile benders with Ø13/16 to 2-1/2″ "
+                  "shafts — the H models with a hydraulic top roll — the ETR-50 electric tube roller and the CRB-76 decorative ring roller.",
+        points_add=["NovoTech value line: RBM / HRBM motorized profile benders Ø13/16 – 2-1/2″ shafts, ETR-50 tube roller, CRB-76 decorative roller"],
         faq_add=[{"q": "Premium-line angle roll or value-line ring roller?",
                   "a": "The premium-line PK and HPK angle rolls are built in Turkey for daily structural work — heavier frames, larger shafts, NC options and capacities to 6″ angle. The value-line RBM and HRBM ring rollers are lighter and lower in price for the fabrication, railing and ornamental shop: flat bar, angle, channel, tee and tube to 4-3/4 × 1″ flat on the HRBM65, with one combination roll set for every profile."}],
         set={"hero_brand_line": "Premium-line angle rolls are built in Turkey to NovoTech's specification with European hydraulic and electrical components; the value-line ring rollers and tube rollers are built in China to NovoTech's specification. All sold with a 1-year warranty and supported from Mississauga, ON, Canada."},
     ),
     D2.P_BEAD: dict(
-        groups=[("tt-bead", "Beading machines and bead rollers · value line", "Motorized beading machines to 8 ga, deep-throat bead rollers to 42″ and bench bead rollers — NovoTech value line, built in China.", False, None)],
-        intro_add="NovoTech's value-line bead rollers, built in China, add ETB beading machines to 8 ga, RM24 – RM42 deep-throat bead rollers "
-                  "with variable-speed drive for auto body panels and RM bench bead rollers.",
-        points_add=["NovoTech value line: ETB beading machines 18 – 8 ga, RM24 / 36 / 42 deep-throat bead rollers, RM bench rollers"],
+        groups=[("tt-bead", "Beading machines and bead rollers · value line", "Motorized beading machines to 8 ga and motorized deep-throat bead rollers to 42″ — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value-line bead rollers, built in China, add ETB beading machines to 8 ga and RM24 – RM42 deep-throat bead "
+                  "rollers with variable-speed drive for auto body panels.",
+        points_add=["NovoTech value line: ETB beading machines 18 – 8 ga, RM24 / 36 / 42 motorized deep-throat bead rollers"],
         faq_add=[{"q": "Which throat depth for auto body panels?",
                   "a": "The throat is how far from the edge of the panel the bead can go: 24″ reaches the centre of a 48″ panel, 36″ and 42″ reach into floor pans, hoods and truck beds. The RM-H models also have a 4″ high throat so formed panels clear the frame. For duct, ends of tanks and edge beads, the 8 – 12″ throat of the ETB beading machines is enough."}],
-        related_add=[{"href": "english-wheel.html", "label": "English wheels and power hammers"}, {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
+        related_add=[{"href": "power-hammer.html", "label": "Power and planishing hammers"}, {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line bead rollers are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_PRESS: dict(
-        groups=[("tt-shop", "Shop presses · value line", "Hand-pump and motorized workshop presses from 10 to 176 tons, and shop press brakes — NovoTech value line, built in China.", False, None),
-                ("tt-hp", "Hydraulic presses · value line", "Motorized H-frame, brake, sliding-table, C-frame and four-column presses from 22 to 551 US tons — NovoTech value line, built in China.", False, None)],
-        intro_add="NovoTech's value-line presses, built in China, add hand-pump and motorized shop presses from 10 to 176 tons, motorized H-frame "
-                  "presses to 551 US tons, presses with a brake function, sliding-table, C-frame and four-column presses.",
-        points_add=["NovoTech value line: shop presses 10 – 176 t, H-frame presses 33 – 551 US tons, brake, sliding-table, C-frame and four-column presses"],
+        groups=[("tt-shop", "Shop presses · value line", "Motorized workshop presses from 28 to 176 US tons and a hydraulic bench press for sheet-metal tooling — NovoTech value line, built in China.", False, None),
+                ("tt-hp", "Hydraulic presses · value line", "Motorized H-frame, brake, sliding-table, C-frame and four-column presses from 22 to 551 US tons — NovoTech value line, built in China.", False, None),
+                ("tt-rivet", "Orbital riveting machines · value line", "Hydraulic orbital riveters that roll solid rivets from 3/16 to 1-3/16″ — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value-line presses, built in China, add motorized workshop presses from 28 to 176 US tons, the EBP-10T hydraulic "
+                  "bench press, motorized H-frame presses to 551 US tons, presses with a brake function, sliding-table, C-frame and four-column "
+                  "presses, and XM orbital riveting machines.",
+        points_add=["NovoTech value line: workshop presses 28 – 176 US tons, H-frame presses 33 – 551 US tons, brake, sliding-table, C-frame and four-column presses, orbital riveters"],
         faq_add=[{"q": "Premium-line or value-line press?",
-                  "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with hand pumps on the small presses and built-on or separate power units on the motorized ones."}],
-        related_add=[{"href": "arbor-press.html", "label": "Arbor presses and bench presses"}],
+                  "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with built-on or separate power units."}],
+        related_add=[{"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
         set={"hero_brand_line": "Premium-line shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses are built in Turkey with European components; the value-line presses are built in China — all to NovoTech's specification and sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_CIRCLE: dict(
-        groups=[("tt-circle", "Circle shears · value line", "Motorized and manual circle shears with flanging — NovoTech value line, built in China.", False, None)],
+        groups=[("tt-circle", "Circle shears · value line", "Motorized circle shears, one with flanging rolls — NovoTech value line, built in China.", False, None)],
         intro_add="NovoTech's value-line circle shears, built in China, add the MCS-1250E motorized circle shear for discs to Ø49″ in 10 ga and "
-                  "the HCS and ECS circle shears with flanging rolls.",
-        points_add=["NovoTech value line: MCS-1250E motorized circle shear Ø8 – 49″, HCS / ECS circle shears with flanging"],
+                  "the ECS10/10 motorized circle shear with flanging rolls.",
+        points_add=["NovoTech value line: MCS-1250E motorized circle shear Ø8 – 49″, ECS10/10 circle shear with flanging"],
     ),
     D2.P_COMPACT: dict(
         groups=[("tt-hbv", "Hydraulic bending brakes · value line", "Small hydraulic brakes with a four-way V-block for 5/32″ plate — NovoTech value line, built in China.", False, None)],
         intro_add="For short parts in plate, the NovoTech value-line HBV24 and HBV48 hydraulic bending brakes bend 5/32″ over 24″ and 48″ with a four-way V-block.",
     ),
     D2.P_HORIZ: dict(
-        groups=[("tt-horiz", "Hydraulic horizontal benders · value line", "Horizontal benders for flat bar from 11 to 44 US tons — NovoTech value line, built in China.", False, None),
-                ("tt-ub", "Universal and bench benders for flat bar and rod", "Hand benders for flat bar, rod and light angle — gates, railings and ornamental iron.", True, None)],
-        intro_add="NovoTech's value-line HB-10T, HB-25T and HB-40T hydraulic benders, built in China, bend flat bar to 6-1/4 × 1/2″, and the "
-                  "UB, SBG and YP hand benders and ornamental iron tools cover flat bar, rod and light angle without power.",
-        points_add=["NovoTech value line: HB-10T / 25T / 40T hydraulic horizontal benders; UB universal benders and ornamental iron tools"],
+        groups=[("tt-horiz", "Hydraulic horizontal benders · value line", "Horizontal benders for flat bar from 11 to 44 US tons — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value-line HB-10T, HB-25T and HB-40T hydraulic benders, built in China, bend flat bar to 6-1/4 × 1/2″.",
+        points_add=["NovoTech value line: HB-10T / 25T / 40T hydraulic horizontal benders, 11 – 44 US tons"],
         related_add=[{"href": "tube-bender.html", "label": "Tube and pipe benders · value line"}],
         set={"hero_brand_line": "Tubend machines are made in Bursa, Turkey, by Tubend Machine, with European components; NovoTech's value-line benders are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_ROLL: dict(
-        groups=[("tt-slip", "Slip rolls · value line", "Hydraulic, electric and manual slip rolls for sheet to 1/2″ — NovoTech value line, built in China.", False, None)],
+        groups=[("tt-slip", "Slip rolls · value line", "Hydraulic and electric slip rolls for sheet to 1/2″ — NovoTech value line, built in China.", False, None)],
         intro_add="For sheet and light plate, NovoTech's value-line slip rolls, built in China, roll 22 ga to 1/2″: HER hydraulic slip rolls with "
-                  "all three rolls driven, ESR electric slip rolls with cone rolling, and manual slip rolls for the HVAC and sheet-metal shop.",
-        points_add=["NovoTech value line: HER hydraulic slip rolls to 1/2″, ESR electric slip rolls 22 ga – 1/4″, manual slip rolls 12 – 81″"],
+                  "all three rolls driven and ESR electric slip rolls with cone rolling for the HVAC and sheet-metal shop.",
+        points_add=["NovoTech value line: HER hydraulic slip rolls to 1/2″, ESR electric slip rolls 22 ga – 1/4″"],
         faq_add=[{"q": "Plate roller or slip roll?",
                   "a": "A slip roll is a light three-roll machine for sheet — duct, flues, tanks, hoppers, signage — in 22 ga to 1/4″, with a top roll that swings out to slip the finished cylinder off. A plate roller rolls heavier plate and pre-bends the edges so the cylinder closes round. The HER hydraulic slip rolls bridge the two, to 1/2″ over 6′7″."}],
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line slip rolls are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
@@ -454,8 +427,8 @@ EXTRA = {
 }
 
 # ---------------------------------------------------------------------------------------------------------------- tube-bender page in the pipe-benders hub
-TUBE_SUBPAGE = {"slug": D.P_TUBE, "title": "Tube and pipe benders — hydraulic, electric and manual · value line", "image": "tm-jtb50",
-                "blurb": "NovoTech's value-line benders, built in China: JTB hydraulic PLC tube benders to 3-1/8″, the TBM-60 electric bender, 25-ton tubing benders, benders for 2″ schedule 40 pipe, exhaust benders, hydraulic pipe benders and hand benders.",
+TUBE_SUBPAGE = {"slug": D.P_TUBE, "title": "Tube and pipe benders — hydraulic, electric and air-hydraulic · value line", "image": "tm-jtb50",
+                "blurb": "NovoTech's value-line benders, built in China: JTB hydraulic PLC tube benders to 3-1/8″, the TBM-60 electric bender, a 25-ton tubing bender, air and electric benders for 2″ schedule 40 pipe, exhaust benders and an electric hydraulic pipe bender.",
                 "nav_label": "Value-line tube & pipe benders", "families": [f["id"] for f in D.TUBE], "in_range": False}
 
 
