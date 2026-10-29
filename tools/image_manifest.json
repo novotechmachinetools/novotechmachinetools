@@ -92973,13 +92973,13 @@
     "w": 800,
     "h": 625,
     "file": "img/dener-xl1560/dn-xl1560-front-800.webp",
-    "bytes": 65296
+    "bytes": 64946
    },
    {
     "w": 480,
     "h": 375,
     "file": "img/dener-xl1560/dn-xl1560-front-480.webp",
-    "bytes": 33406
+    "bytes": 33154
    }
   ],
   "alpha": true,
@@ -92987,7 +92987,7 @@
    "w": 160,
    "h": 125,
    "file": "img/dener-xl1560/dn-xl1560-front-thumb.webp",
-   "bytes": 7474
+   "bytes": 7470
   },
   "cut": "birefnet"
  },
@@ -92995,30 +92995,24 @@
   "alt": "Dener XL 1560 press brake from the left: Y1 / Y2 ram cylinders, DSP laser guards and the ESA control pendant",
   "variants": [
    {
-    "w": 1200,
-    "h": 894,
-    "file": "img/dener-xl1560/dn-xl1560-left-1200.webp",
-    "bytes": 96278
-   },
-   {
     "w": 800,
-    "h": 596,
+    "h": 704,
     "file": "img/dener-xl1560/dn-xl1560-left-800.webp",
-    "bytes": 55692
+    "bytes": 65680
    },
    {
     "w": 480,
-    "h": 358,
+    "h": 422,
     "file": "img/dener-xl1560/dn-xl1560-left-480.webp",
-    "bytes": 28980
+    "bytes": 33586
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 141,
    "file": "img/dener-xl1560/dn-xl1560-left-thumb.webp",
-   "bytes": 6718
+   "bytes": 7650
   },
   "cut": "birefnet"
  },
@@ -93027,23 +93021,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 901,
+    "h": 851,
     "file": "img/dener-xl1560/dn-xl1560-right-800.webp",
-    "bytes": 102600
+    "bytes": 92856
    },
    {
     "w": 480,
-    "h": 540,
+    "h": 510,
     "file": "img/dener-xl1560/dn-xl1560-right-480.webp",
-    "bytes": 50598
+    "bytes": 45962
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 142,
+   "w": 150,
    "h": 160,
    "file": "img/dener-xl1560/dn-xl1560-right-thumb.webp",
-   "bytes": 9646
+   "bytes": 9770
   },
   "cut": "birefnet"
  },
