@@ -332,13 +332,21 @@ def register():
             continue
         e = {"src": f"tools/src-images/dener-xl1560/{key}{ext}", "alt": p["alt"], "section": "dener-xl1560", "trim": ext == ".png",
              "quality": 84, "cutout": p.get("cutout") is True}
-        if p.get("cut_size"):
+        if os.path.exists(os.path.join(D, key + "-cut.png")):   # tools/xl1560_cut.py (SAM selection + BiRefNet edge): the alpha is final
+            e = {"src": f"tools/src-images/dener-xl1560/{key}-cut.png", "alt": p["alt"], "section": "dener-xl1560", "trim": True, "quality": 84}
+        elif p.get("cut_size"):
             e["cut_size"] = p["cut_size"]
         spec = os.path.join(ROOT, "tools", "cutout-specs", "birefnet", key + ".json")
-        if e["cutout"] and os.path.exists(spec):            # keep / drop polygons for a cut BiRefNet gets wrong
+        if e.get("cutout") and os.path.exists(spec):        # keep / drop polygons for a cut BiRefNet gets wrong
             e["cut_spec"] = f"tools/cutout-specs/birefnet/{key}.json"
         imap[key] = e
         keys.append(key)
+    # Dener's own studio cut-out of the XL 1500 × 60 (supplied by NovoTech, Oct 2026): the lead photo of the gallery
+    studio = os.path.join(D, "dn-xl1560-studio.png")
+    if os.path.exists(studio):
+        imap["dn-xl1560-studio"] = {"src": "tools/src-images/dener-xl1560/dn-xl1560-studio.png", "section": "dener-xl1560", "trim": True, "quality": 84,
+                                    "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, with the ESA S840 control pendant — studio photo"}
+        keys.append("dn-xl1560-studio")
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "dener_xl1560_keys.txt"), "w").write(",".join(keys))
     return keys

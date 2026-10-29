@@ -27607,34 +27607,25 @@
   ]
  },
  "dn-xl1560-front": {
-  "src": "tools/src-images/dener-xl1560/dn-xl1560-front.jpg",
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-front-cut.png",
   "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, front view with the ESA control pendant",
   "section": "dener-xl1560",
-  "trim": false,
-  "quality": 84,
-  "cutout": true,
-  "cut_size": 1536,
-  "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-front.json"
+  "trim": true,
+  "quality": 84
  },
  "dn-xl1560-left": {
-  "src": "tools/src-images/dener-xl1560/dn-xl1560-left.jpg",
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-left-cut.png",
   "alt": "Dener XL 1560 press brake from the left: Y1 / Y2 ram cylinders, DSP laser guards and the ESA control pendant",
   "section": "dener-xl1560",
-  "trim": false,
-  "quality": 84,
-  "cutout": true,
-  "cut_size": 1536,
-  "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-left.json"
+  "trim": true,
+  "quality": 84
  },
  "dn-xl1560-right": {
-  "src": "tools/src-images/dener-xl1560/dn-xl1560-right.jpg",
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-right-cut.png",
   "alt": "Dener XL 1560 press brake from the right with the ESA control on its swing arm",
   "section": "dener-xl1560",
-  "trim": false,
-  "quality": 84,
-  "cutout": true,
-  "cut_size": 1536,
-  "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-right.json"
+  "trim": true,
+  "quality": 84
  },
  "dn-xl1560-control": {
   "src": "tools/src-images/dener-xl1560/dn-xl1560-control.png",
@@ -28770,5 +28761,12 @@
   "section": "bandsaw",
   "trim": false,
   "quality": 82
+ },
+ "dn-xl1560-studio": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-studio.png",
+  "section": "dener-xl1560",
+  "trim": true,
+  "quality": 84,
+  "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, with the ESA S840 control pendant — studio photo"
  }
 }

@@ -92971,75 +92971,72 @@
   "variants": [
    {
     "w": 800,
-    "h": 625,
+    "h": 597,
     "file": "img/dener-xl1560/dn-xl1560-front-800.webp",
-    "bytes": 64946
+    "bytes": 59110
    },
    {
     "w": 480,
-    "h": 375,
+    "h": 358,
     "file": "img/dener-xl1560/dn-xl1560-front-480.webp",
-    "bytes": 33154
+    "bytes": 30590
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 125,
+   "h": 119,
    "file": "img/dener-xl1560/dn-xl1560-front-thumb.webp",
-   "bytes": 7470
-  },
-  "cut": "birefnet"
+   "bytes": 7024
+  }
  },
  "dn-xl1560-left": {
   "alt": "Dener XL 1560 press brake from the left: Y1 / Y2 ram cylinders, DSP laser guards and the ESA control pendant",
   "variants": [
    {
     "w": 800,
-    "h": 704,
+    "h": 724,
     "file": "img/dener-xl1560/dn-xl1560-left-800.webp",
-    "bytes": 65592
+    "bytes": 65336
    },
    {
     "w": 480,
-    "h": 422,
+    "h": 435,
     "file": "img/dener-xl1560/dn-xl1560-left-480.webp",
-    "bytes": 33304
+    "bytes": 34460
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 141,
+   "h": 145,
    "file": "img/dener-xl1560/dn-xl1560-left-thumb.webp",
-   "bytes": 7546
-  },
-  "cut": "birefnet"
+   "bytes": 8110
+  }
  },
  "dn-xl1560-right": {
   "alt": "Dener XL 1560 press brake from the right with the ESA control on its swing arm",
   "variants": [
    {
     "w": 800,
-    "h": 883,
+    "h": 835,
     "file": "img/dener-xl1560/dn-xl1560-right-800.webp",
-    "bytes": 90320
+    "bytes": 82270
    },
    {
     "w": 480,
-    "h": 530,
+    "h": 501,
     "file": "img/dener-xl1560/dn-xl1560-right-480.webp",
-    "bytes": 44226
+    "bytes": 41310
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 145,
+   "w": 153,
    "h": 160,
    "file": "img/dener-xl1560/dn-xl1560-right-thumb.webp",
-   "bytes": 8886
-  },
-  "cut": "birefnet"
+   "bytes": 8836
+  }
  },
  "dn-xl1560-control": {
   "alt": "ESA touch-screen control pendant of the Dener XL 1560 \u2014 start, stop, muting lamp and general reset",
@@ -96667,6 +96664,30 @@
    "h": 107,
    "file": "img/bandsaw/bk-opus-300-4-thumb.webp",
    "bytes": 3446
+  }
+ },
+ "dn-xl1560-studio": {
+  "alt": "Dener XL 1560 compact CNC press brake, 66 US tons \u00d7 5 ft, with the ESA S840 control pendant \u2014 studio photo",
+  "variants": [
+   {
+    "w": 800,
+    "h": 762,
+    "file": "img/dener-xl1560/dn-xl1560-studio-800.webp",
+    "bytes": 53128
+   },
+   {
+    "w": 480,
+    "h": 458,
+    "file": "img/dener-xl1560/dn-xl1560-studio-480.webp",
+    "bytes": 27266
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 153,
+   "file": "img/dener-xl1560/dn-xl1560-studio-thumb.webp",
+   "bytes": 6630
   }
  }
 }
