@@ -1,5 +1,5 @@
 {
- "comment": "XL 1560 right-angle view: the dealer's sign above the frame and the machine on the left dropped. Sign box widened (hairline and top edge); the smeared edge-on left guard door (x 455-503) dropped.",
+ "comment": "XL 1560 right-angle view: the dealer's sign above the frame (its lower edge follows the sign, so the frame's top-right corner stays), the machine on the left, the smeared edge-on left guard door and the cable chain on the floor (right of the right door) dropped.",
  "drop": [
   [
    [
@@ -7,16 +7,40 @@
     80
    ],
    [
-    1005,
+    1010,
     80
    ],
    [
-    1005,
+    1010,
+    241
+   ],
+   [
+    1002,
+    241
+   ],
+   [
+    950,
+    203
+   ],
+   [
+    942,
+    202
+   ],
+   [
+    900,
+    215
+   ],
+   [
+    840,
     234
+   ],
+   [
+    790,
+    241
    ],
    [
     770,
-    234
+    245
    ]
   ],
   [
@@ -53,6 +77,24 @@
    [
     455,
     1010
+   ]
+  ],
+  [
+   [
+    1141,
+    795
+   ],
+   [
+    1420,
+    795
+   ],
+   [
+    1420,
+    1005
+   ],
+   [
+    1141,
+    1005
    ]
   ]
  ]

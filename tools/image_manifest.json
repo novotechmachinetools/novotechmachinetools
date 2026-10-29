@@ -92998,13 +92998,13 @@
     "w": 800,
     "h": 704,
     "file": "img/dener-xl1560/dn-xl1560-left-800.webp",
-    "bytes": 65680
+    "bytes": 65592
    },
    {
     "w": 480,
     "h": 422,
     "file": "img/dener-xl1560/dn-xl1560-left-480.webp",
-    "bytes": 33586
+    "bytes": 33304
    }
   ],
   "alpha": true,
@@ -93012,7 +93012,7 @@
    "w": 160,
    "h": 141,
    "file": "img/dener-xl1560/dn-xl1560-left-thumb.webp",
-   "bytes": 7650
+   "bytes": 7546
   },
   "cut": "birefnet"
  },
@@ -93021,23 +93021,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 851,
+    "h": 883,
     "file": "img/dener-xl1560/dn-xl1560-right-800.webp",
-    "bytes": 92856
+    "bytes": 90320
    },
    {
     "w": 480,
-    "h": 510,
+    "h": 530,
     "file": "img/dener-xl1560/dn-xl1560-right-480.webp",
-    "bytes": 45962
+    "bytes": 44226
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 150,
+   "w": 145,
    "h": 160,
    "file": "img/dener-xl1560/dn-xl1560-right-thumb.webp",
-   "bytes": 9770
+   "bytes": 8886
   },
   "cut": "birefnet"
  },
