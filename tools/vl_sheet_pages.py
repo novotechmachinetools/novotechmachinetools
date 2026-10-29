@@ -33,9 +33,9 @@ BRAND_LINE = ("NovoTech's own value line: manufactured in China to high North Am
               "Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada parts and support as every machine we sell.")
 ORIGIN = {"title": "Built in China to North American standards", "text": "NovoTech's own brand — European controls and hydraulics, inspected before shipping, "
           "same CSA panel, warranty and Mississauga, ON, Canada support as every machine we sell."}
-WADE_VIDEO = {"intro_video": {"id": "-rFs4TdGvds", "title": "10 ft × 110 ton CNC press brake with Delem DA-53T control", "thumb": "video--rFs4TdGvds", "duration": "PT2M23S"},
+WADE_VIDEO = {"intro_video": {"id": "-rFs4TdGvds", "title": "10 ft × 110 ton CNC press brake with Delem control", "thumb": "video--rFs4TdGvds", "duration": "PT2M23S"},
               "intro_video_heading": "In our showroom — the 10 ft × 110 ton CNC press brake",
-              "intro_video_text": "A walk around the value-line CNC press brake in Mississauga, ON, Canada: Delem DA-53T control, servo back gauge, quick clamps and the hydraulic system."}
+              "intro_video_text": "A walk around the value-line CNC press brake in Mississauga, ON, Canada: Delem control, servo back gauge, tool clamps and the hydraulic system."}
 SHEAR_VIDEO = {"intro_video": {"id": "WKmfgruGOWI", "title": "10 ft × 1/4″ swing beam shear with Estun E200P control", "thumb": "video-WKmfgruGOWI", "duration": "PT45S"},
                "intro_video_heading": "In our showroom — the 10 ft × 1/4″ swing beam shear",
                "intro_video_text": "The value-line swing beam shear cutting 1/4″ plate in Mississauga, ON, Canada, with the Estun control and the motorised back gauge."}
@@ -60,9 +60,9 @@ PAGE_PB = dict(
           "the electric servo press brakes — no hydraulic oil, ball-screw drive, ±0.01 mm — from 11 to 176 US tons, plus 3 to 12 ton bench "
           "machines. For the Turkish-built premium machines see the Dener CNC press brakes; for the compact 4 – 7 ft shop brakes see the ISITAN "
           "page. Every machine is installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a 1-year warranty.",
-    points=["Hydraulic CNC: Delem DA-53T, Hawe servo valves, servo back gauge, 4+1 axes — 55 – 331 US tons × 4 – 20 ft; heavy-duty to 1,323 tons",
+    points=["Hydraulic CNC: Delem DA-53Tx, Hawe servo valves, servo back gauge, 4+1 axes — 55 – 331 US tons × 4 – 20 ft; heavy-duty to 1,323 tons",
             "Electric: servo motors, belts and ball screws, ±0.01 mm, 70 % less energy — 11 – 176 US tons × 20″ – 10.5 ft, 3 – 12 t bench",
-            "NC torsion-bar brakes with Estun E21 control — 33 – 441 tons × 5 – 20 ft; robot bending cells on hydraulic and electric"],
+            "NC torsion-bar brakes with Estun E21PS control — 33 – 441 tons × 5 – 20 ft; robot bending cells on hydraulic and electric"],
     hero="vl-wad-1", minis=["vl-wadg-1", "vl-nc-1"],
     groups=[("pb-cnc", "Hydraulic CNC press brakes", "Electro-hydraulic servo synchronisation, Delem control and a servo back gauge — the full CNC package from 55 to 1,323 US tons.", BRAND),
             ("pb-electric", "Electric servo press brakes", "Ball-screw servo drive from 3 to 176 US tons — the clean, quiet, accurate brake for sheet work.", BRAND),
@@ -78,9 +78,9 @@ PAGE_PB = dict(
          {"q": "How does the electric ball-screw drive work?",
           "a": "Two servo motors (three on the 160 t) on top of the frame drive lead ball screws through timing belts; the screws move the ram, and magnetic scales on each side feed the position back to the control so the two sides stay in step to 0.01 mm. Because the screws hold position without power, the ram can dwell at the bottom for coining or hemming with no energy drawn. The screws are preloaded and lubricated automatically; there is nothing to bleed or change. The 3 – 12 ton bench machines are the same drive in a cabinet that plugs into a wall outlet."},
          {"q": "Which control comes with the machine?",
-          "a": "The Delem DA-53T: a 10″ touchscreen numerical control for Y1, Y2, X and R (plus the V crowning axis on the hydraulic brakes from 110 t) that stores programs with the angle, depth and gauge positions and runs in inches or millimetres. The DA-58T adds a 15″ screen with 2D graphic programming and automatic bend sequencing, the DA-66T a 17″ screen with 3D part view, and the DA-69T full 3D programming and simulation; ESA S875 and Cybelec controls are available too. All of them import DXF files and take offline programs from Delem's Profile software. The NC brakes carry the Estun E21."},
+          "a": "The Delem DA-53Tx: a 15″ multi-touch numerical control for Y1, Y2, X and R (plus the V crowning axis on the hydraulic brakes from 110 t) with a graphic view of the tools and the product, a tool and material library, and programs with the angle, depth and gauge positions in inches or millimetres. The 18.5″ DA-58Tx adds 2D graphic programming with automatic bend sequencing and collision checks; the 24″ DA-66S 2D graphic programming with a 3D machine view, and the 24″ DA-69S full 3D programming and simulation. The ESA S840 (15.6″, up to 6 axes) and S875 W (21.5″, 3D, Windows PC), the Cybelec CybTouch 12 PS and the 21.5″ SCS920 can be fitted to order. All of them take offline programs from the maker's software (Delem Profile, EsaBend, Cybelec OFT). The NC brakes carry the Estun E21PS — the touch-screen Estun E315PS, the Delem DA-41T and the ESA S630 are the options. The buying guide on the press brake page compares them all."},
          {"q": "What tooling fits?",
-          "a": "A sectioned punch set with a segmented 2-V die and quick-release clamps is in the crate — tell us which tooling standard your shop uses and we match the clamping; Wila hydraulic clamping, double-sided quick clamps and Rolleri pneumatic clamps are options, and American-style tooling can be fitted with an adapter. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools — and sizes it to your machine."},
+          "a": "A sectioned punch set with a segmented 2-V die and manual top-tool clamps is in the crate — tell us which tooling standard your shop uses and we match the clamping; quick-release clamps, double-sided quick clamps, Rolleri pneumatic clamps and Wila hydraulic clamping are options, and American-style tooling can be fitted with an adapter. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools — and sizes it to your machine."},
          {"q": "What safety equipment is included?",
           "a": "Side guards, an enclosed rear guard, interlocked doors and an anti-panic foot pedal with emergency stop are standard. DSP laser finger protection (EN 12622 CAT 4 / SIL 3), which watches the zone under the punch and stops the ram if a finger enters it, and light curtains are options we recommend for every CNC machine; in Ontario the machine also needs the pre-start health and safety review, which we prepare the documentation for."},
          {"q": "Can the press brake be automated?",
@@ -184,7 +184,7 @@ def build():
     pdf_epb = pdf(PDF_EPB, "Download the electric press brake brochure")
     pdf_shear = pdf(PDF_SHEAR, "Download the value-line hydraulic shears brochure")
     pdf_vg = pdf(PDF_VG, "Download the V-grooving machine brochure")
-    fams = [dict(f, pdf=pdf_hpb) for f in D.HPB_FAMILIES] + [dict(f, pdf=pdf_epb) for f in D.EPB_FAMILIES]
+    fams = [dict(f, pdf=pdf_hpb) for f in D.HPB_FAMILIES + D.COMPACT_FAMILIES] + [dict(f, pdf=pdf_epb) for f in D.EPB_FAMILIES]
     fams += [dict(f, pdf=pdf_shear) for f in D.SHEAR_FAMILIES] + [dict(f, pdf=pdf_vg) for f in D.VG_FAMILIES]
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN}
@@ -198,7 +198,7 @@ def build():
     unused = sorted(set(keys) - used)
     if unused:
         print("photos not used on a page:", unused)
-    missing = sorted(used - set(keys))
+    missing = sorted(k for k in used - set(keys) if not k.startswith("vl-cp-"))      # vl-cp-*: tools/vl_compact_photos.py
     if missing:
         raise SystemExit(f"image keys without a photo: {missing}")
     vids = sorted({v["id"] for f in D.ALL for v in f["videos"]})

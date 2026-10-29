@@ -9,11 +9,11 @@
    "name": "Edgebender 1240 CNC — 3-axis (Y1 + Y2 + X) CNC hydraulic press brake",
    "short": "Edgebender 1240 CNC",
    "models_label": "Edgebender 1240 CNC · 44 US tons × 4.2 ft",
-   "summary": "A compact 3-axis CNC press brake for the sheet-metal shop: 44 US tons over 4.2 ft with a Cybelec Cybtouch 12 touchscreen control, independently controlled Y1 and Y2 cylinders, a CNC X-axis backgauge on HIWIN linear guides and ball screws, and quick-release Promecam tool clamping. HAWE or Rexroth hydraulics, Siemens electrics with remote connection and a Leuze light guard with learning mode for different part shapes — the specification of a large press brake in a machine that fits beside a shear and a slip roll.",
+   "summary": "A compact 3-axis CNC press brake for the sheet-metal shop: 44 US tons over 4.2 ft with a Cybelec Cybtouch 12 touchscreen control, independently controlled Y1 and Y2 cylinders, a CNC X-axis backgauge on HIWIN linear guides and ball screws, and Promecam tool clamping. HAWE or Rexroth hydraulics, Siemens electrics with remote connection and a Leuze light guard with learning mode for different part shapes — the specification of a large press brake in a machine that fits beside a shear and a slip roll.",
    "features": [
     "Cybelec Cybtouch 12 CNC control; 3 axes Y1 + Y2 + X; GIVI magnetic linear scales",
     "CNC X-axis backgauge on HIWIN linear guides with ball screws, 19.7″ travel; manual R axis; programmable retract",
-    "Quick-release Promecam top-tool clamping; standard top tools and bottom die for short-edge bends; manual crowning",
+    "Promecam top-tool clamping; standard top tools and bottom die for short-edge bends; manual crowning",
     "Double-cylinder bending system; upper beam on fibre slide bearings; balancing spindle and eccentric bearings for parallelism",
     "Two-speed operation (free fall, bending, return); hydraulic overload safety; HAWE or Rexroth hydraulic unit at the rear top",
     "Siemens electrics with remote-connection service; Leuze front safety barrier with learning mode; side covers with safety switch; foot pedal; height-adjustable front support arms on linear slides"
@@ -23,7 +23,7 @@
     "Servo-motorized R axis; servo-motorized X axis; extended backgauge length and extra fingers",
     "Special bending dies; extra front support arms",
     "Special safety systems (DSP, Fiessler)",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-eb-1240-cnc",
@@ -186,12 +186,12 @@
    "name": "Edgebender 1230 / 1540 / 2160 NC — 2-axis (Y + X) NC hydraulic press brakes",
    "short": "Edgebender NC",
    "models_label": "Edgebender 1230 NC · 1540 NC · 2160 NC",
-   "summary": "Two-axis NC press brakes from 33 to 66 US tons and 4.2 to 6.9 ft: the Y axis sets the bending angle through the NC control (motor-driven on the 1230, gearbox-driven on the 1540 and 2160) and a high-speed motorized X backgauge on linear guides positions the sheet to 0.008″. The NC stores 500 programs of 200 lines, calculates bending force and draws the tool, and every machine carries HAWE or Rexroth hydraulics, Siemens / Pizzato / Balluff electrics, a Leuze light guard and Promecam quick-release tool clamping — the compact press brake for ducting, enclosures, brackets and job-shop bending up to 8 ga.",
+   "summary": "Two-axis NC press brakes from 33 to 66 US tons and 4.2 to 6.9 ft: the Y axis sets the bending angle through the NC control (motor-driven on the 1230, gearbox-driven on the 1540 and 2160) and a high-speed motorized X backgauge on linear guides positions the sheet to 0.008″. The NC stores 500 programs of 200 lines, calculates bending force and draws the tool, and every machine carries HAWE or Rexroth hydraulics, Siemens / Pizzato / Balluff electrics, a Leuze light guard and Promecam tool clamping — the compact press brake for ducting, enclosures, brackets and job-shop bending up to 8 ga.",
    "features": [
     "NC control storing 500 programs of 200 lines; tooling selection, drawing and bending-force calculation; save and load via USB",
     "Motor-driven Y-axis angle setting via the NC; stroke-controlled angle with mechanical stop; tonnage set by pressure switch",
     "High-speed motorized X backgauge on linear guides: 23.6″ travel, 0.008″ accuracy; sensitive programmable retract",
-    "Quick-release Promecam upper-tool clamping; manual crowning by wedges in the upper tool holders; standard upper and lower tools",
+    "Promecam upper-tool clamping; manual crowning by wedges in the upper tool holders; standard upper and lower tools",
     "Double-cylinder bending system; two-speed operation (free fall, slow bend, fast return); hydraulic overload safety",
     "HAWE or Rexroth hydraulic unit; Siemens, Pizzato and Balluff electrics with remote service; Leuze front safety system with learning mode; CE-compliant safety foot pedal; floating-arm control panel; front support arms on linear slides"
    ],
@@ -200,7 +200,7 @@
     "Manual or motorized crowning on the lower blade",
     "Special bending dies; extra front support arm; special two-hand and foot-pedal control",
     "Special safety systems (DSP, Fiessler)",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-eb-2160",

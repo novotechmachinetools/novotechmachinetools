@@ -226,7 +226,7 @@ NOTE_ROLLS = ("Capacities are for mild steel with a yield strength of 34,100 psi
               "given in gauge; metric values in brackets are the manufacturer's nominal figures. Dimensions are overall L × W × H.")
 NOTE_SIMPLE = ("Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the "
                "manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H.")
-VOLT = "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+VOLT = "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
 
 
 
@@ -255,7 +255,7 @@ ORIGIN = {"title": "Made in Turkey by ISITAN", "text": "ISITAN has built sheet-m
 PDF = {"file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf", "label": "Download the ISITAN machinery catalogue", "size": "PDF · 29 MB · imperial units"}
 PDF_BK = {"file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "label": "Bekamak saw catalogue", "size": "PDF · 7.5 MB · imperial units"}
 VOLT_FAQ_GENERIC = {"q": "What voltage do these machines run on?",
-                    "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."}
+                    "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."}
 CRUMBS = [{"label": "Home", "href": "index.html"}, {"label": "Products", "href": "products.html"}]
 # "Inside the factory" section on every ISITAN-led page (NovoTech's own channel)
 ISITAN_INTRO_VIDEO = {"intro_video": {"id": "XMn6YkPPOig", "title": "ISITAN company introduction video", "thumb": "video-XMn6YkPPOig", "duration": "PT3M55S"},

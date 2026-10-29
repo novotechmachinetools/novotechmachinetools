@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """The press-brake section: one hub (press-brake.html) over three pages — hydraulic press brakes (Dener XL and XH hybrid,
 NovoTech's value-line CNC and NC brakes), electric press brakes (Dener DDM servo-electric and DDS ball-screw, NovoTech's
-value-line electric brakes) and compact hydraulic press brakes (the ISITAN Edgebender 33 – 66 tons and, through
-content/extra_groups, the value-line HBV bending brakes).  The horizontal press brake is a different machine (bar, pipe and
+value-line electric brakes) and compact hydraulic press brakes (the Dener XL 1560, the value-line WAD-50T and WC67K-30T
+compacts and, through content/extra_groups, the value-line HBV bending brakes — the ISITAN Edgebenders left the site Oct 28 2026).  The horizontal press brake is a different machine (bar, pipe and
 busbar) with its own page outside this section.
 
 Pages are split by what the buyer searches for (the kind of machine), not by supplier: the premium and value lines are
 sections inside each page.  Shared by tools/press_brake_hub.py (the hub and the merged family set) and
-tools/press_brake_types.py (the three pages); tools/dener_pages.py, tools/vl_sheet_pages.py and tools/isitan_pressbrake.py
-only write the families now."""
+tools/press_brake_types.py (the three pages); tools/dener_pages.py and tools/vl_sheet_pages.py only write the families now."""
 
 HUB = "press-brake"
 SECTION = "Press brakes"
@@ -26,7 +25,8 @@ PAGES = {
         ("value-sheet", "vl-wadg", "pb-value-electric"), ("value-sheet", "vl-wadg-mini", "pb-value-electric"),
     ],
     "compact-hydraulic-press-brakes": [
-        ("edgebender", "isitan-edgebender-cnc", "pb-compact-cnc"), ("edgebender", "isitan-edgebender-nc", "pb-compact-nc"),
+        ("dener", "dn-xl-1560", "pb-compact-dener"),
+        ("value-sheet", "vl-wad-compact", "pb-compact-cnc"), ("value-sheet", "vl-nc-compact", "pb-compact-nc"),
     ],
 }
 
@@ -38,8 +38,8 @@ SUBPAGES = [
     ("electric-press-brake", "Electric press brakes — servo-electric and ball-screw, 3 to 220 US tons", "dn-ddm-2",
      "No hydraulic oil: Dener DDM servo-electric brakes to 220 US tons and 13 ft, the DDS ball-screw brake from 22 tons, and NovoTech's value-line electric brakes from 3 to 176 tons — ±0.01 mm, twice the speed, about 70 % less power.",
      "Electric press brakes", ""),
-    ("compact-hydraulic-press-brakes", "Compact hydraulic press brakes — 16 to 66 US tons, 2 to 8 ft", "is-eb-1240-cnc",
-     "The press brakes for a sheet-metal shop: the ISITAN Edgebender 33 – 66 tons over 4.2 – 6.9 ft with NC or 3-axis CNC control, made in Turkey, and NovoTech's value-line HBV bending brakes from 16 tons for brackets and short parts in plate.",
+    ("compact-hydraulic-press-brakes", "Compact hydraulic press brakes — 16 to 66 US tons, 2 to 8 ft", "dn-xl1560-front",
+     "The press brakes for a sheet-metal shop: the Dener XL 1560 compact CNC brake, 66 US tons × 5 ft, NovoTech's value-line WAD-50T CNC and WC67K-30T NC compacts over 4.3 – 5.2 ft, and the HBV bending brakes from 16 tons for brackets and short parts in plate.",
      "Compact press brakes", ""),
 ]
 
@@ -86,8 +86,8 @@ def why_features():
                          "operators at no charge. Elsewhere in Canada on request, at an additional charge.")
         elif f["title"].startswith("Shipping across Canada"):
             f["title"] = "Free delivery in the GTA on factory orders"
-            f["text"] = ("A press brake ordered from the factory is delivered to your door anywhere in the Greater Toronto Area at no charge. "
-                         "In-stock machines, and deliveries elsewhere in Canada and the United States, ship at competitive freight rates arranged by NovoTech.")
+            f["text"] = ("A press brake ordered from the factory is delivered to your door anywhere in the Greater Toronto Area at no charge; "
+                         "unloading at your plant is the buyer's. In-stock machines, and deliveries elsewhere in Canada and the United States, ship at freight rates quoted by NovoTech.")
         out.append(f)
     return out
 

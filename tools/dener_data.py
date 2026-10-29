@@ -136,6 +136,7 @@ NOTE_PB = ("Bending force in US tons (metric tons in brackets); the model number
            "Dimensions are overall L (along the bed) × W × H with the standard front supports.")
 
 T_XL_SMALL = table("XL hydraulic press brakes · 5 – 10 ft", "8 models · 66 – 353 US tons", [r[0] for r in XL_SMALL], pb_rows(XL_SMALL))
+T_XL_1560 = table("XL 1560 compact CNC press brake", "1 model · 66 US tons × 5 ft", [XL[0][0]], pb_rows(XL[:1]))
 T_XL_LARGE = table("XL hydraulic press brakes · 12 – 20 ft", "10 models · 193 – 661 US tons", [r[0] for r in XL_LARGE], pb_rows(XL_LARGE))
 
 # hybrid: (model, t, approach, bend, return, kW, energy saving %) — frame, stroke, daylight and dimensions as the XL of the same tonnage
@@ -213,8 +214,26 @@ PB_STD_DDS = ["15″ ESA S640 2D colour touchscreen CNC control", "2-axis back g
 PB_OPT_DDS = ["ESA 875 W CNC control; 5-axis back gauge (X, R, Z1, Z2, X-Prime) with ESA S660", "Foldable, height-adjustable work table",
               "Wila mechanical / hydraulic clamping; double-wedge adjustable European punch holder", "Punches and dies", "DSP-AP laser finger protection", "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"]
 
+# the controls Dener fits — a short note under every press brake (the buying guide on press-brake.html explains them)
+CTL_XL = {"title": "ESA S640 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
+          "text": "Every XL comes with the 15″ ESA S640: touch-screen numeric and 2D graphic programming, automatic calculation of tonnage, "
+                  "bend sequence and back-gauge positions, tool library, up to 6 axes, USB and network. For shops that program from CAD or run "
+                  "many different parts, Dener fits the 21″ ESA S875 W (3D programming and simulation, DXF / STEP import, EsaBend 3D), "
+                  "the 24″ Delem DA-66S (2D graphic programming with a 3D machine view, Profile-S2D offline) or the 24″ Delem DA-69S "
+                  "(full 3D programming and simulation, Profile-S3D) — the same four controls on every Dener press brake.",
+          "images": ["ctl-esa-s640", "ctl-esa-s875w-card", "ctl-delem-da66s", "ctl-delem-da69s"]}
+CTL_DDM = {"title": "ESA S875 W 3D as standard; Delem DA-66S or DA-69S as options",
+           "text": "The DDM is delivered with the 21″ ESA S875 W: 3D programming and simulation, automatic bend sequence with collision "
+                   "control, DXF / STEP import and EsaBend 3D offline software on a Windows PC. The 24″ Delem DA-66S (2D graphic, 3D "
+                   "machine view) and DA-69S (3D) are the alternatives for shops standardised on Delem.",
+           "images": ["ctl-esa-s875w-card", "dn-det-esabend-3d", "ctl-delem-da66s", "ctl-delem-da69s"]}
+CTL_DDS = {"title": "ESA S640 2D as standard; ESA S875 W as an option",
+           "text": "The small DDS carries the 15″ ESA S640 2D control — numeric and 2D graphic programming with automatic tonnage and "
+                   "sequence calculation — and can be ordered with the 21″ ESA S875 W 3D control and a 5-axis back gauge.",
+           "images": ["ctl-esa-s640", "ctl-esa-s875w-card"]}
+
 PB_FAMILIES = [
-    dict(id="dn-xl-small", group="pb-hydraulic", page=P_PB, brand=BRAND,
+    dict(id="dn-xl-small", control=CTL_XL, group="pb-hydraulic", page=P_PB, brand=BRAND,
          name="XL hydraulic CNC press brakes, 66 – 353 US tons × 5 – 10 ft",
          short="XL hydraulic press brakes 5 – 10 ft",
          models_label="XL 1560 – XL 30320 · 8 models",
@@ -231,7 +250,7 @@ PB_FAMILIES = [
                      ("dXorm3f4fBY", "DENER XL 13 ft × 320 ton CNC hydraulic press brake"), ("fG6TQ8TseSo", "Hydraulic press brake with ATF 6-axis back gauge"),
                      ("BUFzeYAAE_Y", "Laser angle measurement system on the XL press brake"), ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
          specs=spec([T_XL_SMALL], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="dn-xl-large", group="pb-hydraulic", page=P_PB, brand=BRAND,
+    dict(id="dn-xl-large", control=CTL_XL, group="pb-hydraulic", page=P_PB, brand=BRAND,
          name="XL hydraulic CNC press brakes, 193 – 661 US tons × 12 – 20 ft",
          short="XL hydraulic press brakes 12 – 20 ft",
          models_label="XL 36175 – XL 60600 · 10 models",
@@ -246,7 +265,30 @@ PB_FAMILIES = [
                      ("FpHkRYeceyA", "20 ft × 1,000 ton 9-axis CNC heavy-duty press brake"), ("AGifmIGQOso", "DENER 60 ft × 1,800 ton tandem press brake with auto feeder"),
                      ("jMqwk_yyCBo", "DENER 1,600 ton × 40 ft tandem press brake installation time-lapse"), ("dsZ8f7BKP84", "Tandem press brake PUMA XL 2 × 20 ft × 320 ton")),
          specs=spec([T_XL_LARGE], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="dn-xh", group="pb-hybrid", page=P_PB, brand=BRAND,
+    dict(id="dn-xl-1560", control=CTL_XL, group="pb-compact-dener", page=P_PB, brand=BRAND,
+         name="XL 1560 compact CNC press brake, 66 US tons × 5 ft",
+         short="XL 1560 compact press brake",
+         models_label="XL 1560 · 1 model",
+         summary="The smallest XL is the compact press brake of the premium line: 60 metric tons (66 US tons) over 1,550 mm (5 ft), "
+                 "49″ between the frames, a 15.7″ throat and 16.1″ of daylight, on a 96 × 87″ footprint (64″ wide without the front supports) that goes through a shop door and "
+                 "weighs 9,480 lb — the same stress-relieved monoblock frame, Hawe hydraulics, Y1-Y2 ram with linear scales and ball-screw X "
+                 "back gauge as the big XLs, with the 15″ ESA S640 2D control, front supports on linear rail and a sectioned EUROSTAMP punch "
+                 "1281 with the 4-way die 2067 in the crate. 7.5 kW, 600 V with a CSA panel. For HVAC fittings, enclosures, brackets, "
+                 "signage and job-shop sheet work up to 5 ft where a 100-ton machine is more than you need — and a real CNC press brake, "
+                 "not a bending brake: the control calculates tonnage, sequence and gauge positions, and the DSP laser guard, 4- to 6-axis "
+                 "back gauges, CNC crowning and Wila clamping are the same options as on the 10 ft machines.",
+         headline="66 US tons × 5 ft · 15.7″ throat · ESA S640 2D · 9,480 lb · EUROSTAMP 1281 / 2067 tooling included",
+         features=["60 t × 1,550 mm — 16 ga to 3/16″ mild steel over the full 5 ft, 1/4″ over 4 ft (V = 8 × thickness)",
+                   "Monoblock welded frame, stress-relieved and machined in one setting; 49.2″ (1,250 mm) between the frames",
+                   "8.7″ (220 mm) stroke, 16.1″ (410 mm) daylight, 15.7″ (400 mm) throat for boxes and deep flanges",
+                   "Ball-screw X back gauge with 25.6″ (650 mm) travel, fingers with manual R and Z adjustment and micro vernier"] + PB_STD_XL,
+         optional=PB_OPT_XL,
+         images=["dn-xl1560-front", "dn-xl1560-left", "dn-xl1560-right", "dn-xl1560-control", "dn-xl1560-tooling", "dn-xl1560-tooling-2",
+                 "dn-xl1560-backgauge", "dn-xl1560-backgauge-2", "dn-det-eurostamp-tools", "dn-det-tool-1281", "dn-det-tool-2067", "dn-det-front-supports"],
+         videos=vids(("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake — the same 5 ft frame class"), ("5FWxGB6hoJI", "XL series hydraulic CNC press brakes"),
+                     ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
+         specs=spec([T_XL_1560], PB_GK, PB_G_FROM, NOTE_PB)),
+    dict(id="dn-xh", control=CTL_XL, group="pb-hybrid", page=P_PB, brand=BRAND,
          name="XH hybrid press brakes, 66 – 441 US tons — servo pump on the XL frame",
          short="XH hybrid press brakes",
          models_label="SVP 60 – SVP 400 · 9 tonnage packages",
@@ -262,7 +304,7 @@ PB_FAMILIES = [
                      ("-tAymdJwXjU", "DENER XL 13 ft × 220 ton hybrid press brake"), ("Msy6YHM5dIU", "DENER hybrid press brake"),
                      ("Ymz5qW36zTs", "DENER tandem 60 ft × 1,600 ton hybrid press brake with sheet following support")),
          specs=spec([T_XH], ["bending_force", "bending_length", "approach_speed", "servo_motor", "energy_saving"], ["Bending force", "Bending length", "Approach speed", "Servo motor", "Energy saving vs. the XL hydraulic"], NOTE_XH)),
-    dict(id="dn-ddm", group="pb-servo", page=P_PB, brand=BRAND,
+    dict(id="dn-ddm", control=CTL_DDM, group="pb-servo", page=P_PB, brand=BRAND,
          name="DDM servo-electric CNC press brakes, 44 – 220 US tons × 5 – 13.4 ft",
          short="DDM servo-electric press brakes",
          models_label="DDM 4015 – DDM 20040 · 9 models",
@@ -279,7 +321,7 @@ PB_FAMILIES = [
                      ("30squAhhy_o", "CNC hydraulic press brake vs. servo-electric press brake"), ("qLRQDobmnXQ", "DENER DDM servo-electric press brake robot cell"),
                      ("2_Vz-v-rFqU", "DDM electric press brake with Wila hydraulic clamping"), ("IGgudJFrO-I", "DDM electric press brake bending demonstration")),
          specs=spec([T_DDM], PB_GK, PB_G_FROM, NOTE_DDM)),
-    dict(id="dn-dds", group="pb-servo", page=P_PB, brand=BRAND,
+    dict(id="dn-dds", control=CTL_DDS, group="pb-servo", page=P_PB, brand=BRAND,
          name="DDS ball-screw electric press brakes, 22 and 44 US tons × 3 – 4.3 ft",
          short="DDS ball-screw press brakes",
          models_label="DDS 2090 · DDS 4013 · 2 models",

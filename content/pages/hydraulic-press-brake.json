@@ -6,7 +6,7 @@
  "artifact_title": "Hydraulic press brakes — CNC, hybrid and NC, 33 to 1,323 US tons",
  "meta_description": "Hydraulic press brakes sold, installed and supported in Canada: CNC brakes 55 – 1,323 US tons, XH hybrid with servo pump and NC torsion-bar brakes from 33 tons — premium and value lines, CSA panels, Delem and ESA controls.",
  "h1": "Hydraulic press brakes — CNC, hybrid and NC, 33 to 1,323 US tons",
- "intro": "A hydraulic press brake bends sheet and plate between a punch and a V-die with two hydraulic cylinders, giving full force over the whole stroke at the lowest price per ton — the machine for plate, long parts and production. NovoTech sells three kinds in Canada, all on this page: CNC hydraulic press brakes with linear scales, servo valves, crowning and a graphic control — the premium Dener XL in 18 models from 66 to 661 US tons and 5 to 20 ft, and NovoTech's own value line from 55 to 331 tons, heavy-duty and tandem to 1,323 tons and 26 ft; the XH hybrid, an XL with a servo-driven pump that cuts energy by 42 – 58 %; and NC torsion-bar press brakes from 33 to 441 tons for repeat parts in one material. Every machine comes with a CSA-approved panel and a 1-year warranty, and is installed, trained and supported from Mississauga, ON, Canada. For a brake with no hydraulic oil see the electric press brakes; for 33 – 66 ton machines over 4 – 7 ft, the compact press brakes.",
+ "intro": "A hydraulic press brake bends sheet and plate between a punch and a V-die with two hydraulic cylinders, giving full force over the whole stroke at the lowest price per ton — the machine for plate, long parts and production. NovoTech sells three kinds in Canada, all on this page: CNC hydraulic press brakes with linear scales, servo valves, crowning and a graphic control — the premium Dener XL in 18 models from 66 to 661 US tons and 5 to 20 ft, and NovoTech's own value line from 55 to 331 tons, heavy-duty and tandem to 1,323 tons and 26 ft; the XH hybrid, an XL with a servo-driven pump that cuts energy by 42 – 58 %; and NC torsion-bar press brakes from 33 to 441 tons for repeat parts in one material. Every machine comes with a CSA-approved panel and a 1-year warranty, and is installed, trained and supported from Mississauga, ON, Canada. For a brake with no hydraulic oil see the electric press brakes; for 33 – 66 ton machines over 4 – 5 ft, the compact press brakes.",
  "hero_points": [
   "CNC hydraulic: premium line 66 – 661 US tons × 5 – 20 ft (ESA / Delem, 6-axis gauges); value line 55 – 331 tons, heavy-duty to 1,323 tons × 26 ft",
   "XH hybrid: servo pump on the premium frame — 42 – 58 % less energy, 17 – 75 % faster approach and return, quieter",
@@ -34,12 +34,13 @@
    "label": "Hydraulic press brakes — CNC, hybrid and NC, 33 to 1,323 US tons"
   }
  ],
- "hero_brand_line": "The premium line is built by Dener Makina in Kayseri, Turkey (press brakes since 1974); NovoTech's value line is built in China to our specification with Delem, Hawe and Estun components; the compact brakes by ISITAN in Bursa, Turkey. All sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "The premium line is built by Dener Makina in Kayseri, Turkey (press brakes since 1974); NovoTech's value line is built in China to our specification with Delem, Hawe and Estun components. All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "pb-premium-group",
    "title": "CNC hydraulic press brakes · premium line",
    "lead": "The Dener XL: a monoblock frame, Hawe hydraulics and an ESA 2D control, 5 to 20 ft and 66 to 661 US tons — the standard for plate and production.",
+   "brand": "dener",
    "families": [
     "dn-xl-small",
     "dn-xl-large"
@@ -49,6 +50,7 @@
    "id": "pb-value-group",
    "title": "CNC hydraulic press brakes · value line",
    "lead": "NovoTech's own brakes: the same architecture — servo valves, linear scales, Delem control — from 55 to 331 US tons, heavy-duty and tandem machines to 1,323 tons.",
+   "brand": "novotech",
    "families": [
     "vl-wad-small",
     "vl-wad-large",
@@ -59,6 +61,7 @@
    "id": "pb-hybrid-group",
    "title": "Hybrid press brakes · premium line",
    "lead": "The XL with a servo-driven pump — the same frame and cylinders, less energy, more speed, less noise.",
+   "brand": "dener",
    "families": [
     "dn-xh"
    ]
@@ -67,6 +70,7 @@
    "id": "pb-nc-group",
    "title": "NC hydraulic press brakes — torsion bar · value line",
    "lead": "The simple machine: torsion-bar synchronised ram, mechanical stops and an Estun NC control for the back gauge and depth, 33 to 441 US tons.",
+   "brand": "novotech",
    "families": [
     "vl-nc-small",
     "vl-nc-large"
@@ -92,7 +96,7 @@
   },
   {
    "q": "Which control comes with the machine?",
-   "a": "The premium XL comes with the 15″ ESA S640 2D graphic control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The value-line CNC brakes come with Delem DA-53T or DA-58T and the heavy-duty machines with DA-66T; the NC brakes with an Estun E21. All program in inches or millimetres."
+   "a": "The premium XL comes with the 15″ ESA S640 2D graphic control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The value-line CNC brakes come with the 15″ Delem DA-53Tx — the 18.5″ DA-58Tx (2D graphic), the 24″ DA-66S and DA-69S, the ESA S840 and S875 W, the Cybelec CybTouch 12 and the SCS920 are options; the NC brakes with the Estun E21PS (E315PS, Delem DA-41T or ESA S630 as options). All program in inches or millimetres, and the buying guide on the press brake page compares every one of them."
   },
   {
    "q": "What back gauge and axes are available?",
@@ -100,7 +104,7 @@
   },
   {
    "q": "What tooling fits, and do you stock it?",
-   "a": "The premium Dener and ISITAN brakes come with European-style (Promecam / Amada) quick-release clamping, and a sectioned punch set with a 2-V die ships with every machine of both lines; the value-line brakes use their own clamping, so tell us which tooling standard your shop already has and we fit the clamps to match. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools, gooseneck and special profiles — and sizes it to your machine; Wila hydraulic clamping and American-style adapters are options."
+   "a": "European-style (Promecam / Amada) segmented tooling fits every line: the premium Dener brakes carry European-style top-tool holders, the value-line brakes their own clamping, and a sectioned punch set with a 2-V or 4-V die ships with every machine (a 4-V die with the Dener brakes, a 2-V die with the value line) — tell us which tooling standard your shop already has and we fit the holders to match. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools, gooseneck and special profiles — and sizes it to your machine; quick-release, pneumatic and Wila hydraulic clamping and American-style adapters are options, not standard equipment."
   },
   {
    "q": "What about safety and the Ontario pre-start review?",
@@ -108,11 +112,19 @@
   },
   {
    "q": "Do you deliver, install and service in Canada?",
-   "a": "Yes — NovoTech delivers across Canada and the United States from Mississauga, ON, Canada, commissions the machine and trains your operators — free of charge in the Greater Toronto Area, on request elsewhere; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
+   "a": "Yes — NovoTech sells, installs and supports press brakes across Canada and the United States. Installation, commissioning and operator training are free of charge in the Greater Toronto Area; outside the GTA our technicians do the same work at an additional charge. Dener Canada and NovoTech stock the parts in Canada. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
+  },
+  {
+   "q": "What does delivery cost, and who unloads the machine?",
+   "a": "A press brake ordered from the factory (back-ordered) travels in its container straight from the port, customs and the rail yard to your plant door: in the Greater Toronto Area that delivery is free; outside the GTA the freight is quoted and charged. A machine from NovoTech's stock is loaded, shipped and unloaded at the buyer's cost. In every case unloading is the buyer's responsibility and expense — the crane or forklift, the rigging and moving the machine onto its foundation — so book a rigger for the delivery day; we are glad to recommend riggers who know press brakes and to tell you the weight and lifting points."
+  },
+  {
+   "q": "Is the hydraulic oil included?",
+   "a": "No — the hydraulic oil is bought by the customer. Before commissioning, fill the tank with ISO VG 46 anti-wear hydraulic oil (AW 46) in the quantity shown in the specification table for your model; our technician checks the level and bleeds the system during installation. Electric press brakes have no hydraulic oil at all."
   },
   {
    "q": "What voltage do these machines run on?",
-   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
   }
  ],
  "faq_title": "Questions we get asked about hydraulic press brakes",
@@ -231,7 +243,7 @@
   },
   {
    "title": "Free delivery in the GTA on factory orders",
-   "text": "A press brake ordered from the factory is delivered to your door anywhere in the Greater Toronto Area at no charge. In-stock machines, and deliveries elsewhere in Canada and the United States, ship at competitive freight rates arranged by NovoTech.",
+   "text": "A press brake ordered from the factory is delivered to your door anywhere in the Greater Toronto Area at no charge; unloading at your plant is the buyer's. In-stock machines, and deliveries elsewhere in Canada and the United States, ship at freight rates quoted by NovoTech.",
    "icon": "truck"
   },
   {

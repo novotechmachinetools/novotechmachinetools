@@ -7,7 +7,7 @@ SLUG = "compact-hydraulic-press-brakes"
 
 IMAGES = {
     "is-eb-1240-cnc": ("cut/p35-222.png", "ISITAN Edgebender 1240 CNC 3-axis hydraulic press brake, 44 US tons × 4.2 ft"),
-    "is-eb-cnc-promecam-clamps": ("cut/p35-219.png", "Edgebender 1240 CNC — quick-release Promecam top-tool clamping"),
+    "is-eb-cnc-promecam-clamps": ("cut/p35-219.png", "Edgebender 1240 CNC — Promecam top-tool clamping"),
     "is-eb-cnc-backgauge": ("cut/p35-215.png", "Edgebender 1240 CNC — CNC X-axis backgauge fingers on HIWIN linear guides"),
     "is-eb-cnc-hydraulics": ("cut/p35-217.png", "Edgebender — HAWE / Rexroth hydraulic valves and pressure gauge"),
     "is-eb-cnc-promecam": ("cut/p36-224.png", "Edgebender — Promecam punch and die installed"),
@@ -22,7 +22,7 @@ IMAGES = {
     "is-eb-1230": ("cut/p37-234.png", "ISITAN Edgebender 1230 NC 2-axis hydraulic press brake, 33 US tons × 4.2 ft"),
     "is-eb-nc-bending": ("cut/p37-236.png", "Edgebender NC — bending a sheet behind the Leuze light guard"),
     "is-eb-nc-backgauge": ("cut/p37-238.png", "Edgebender NC — motorized X backgauge fingers on linear guides"),
-    "is-eb-nc-promecam": ("cut/p37-239.png", "Edgebender 1540 / 2160 — Promecam quick-release tool clamps"),
+    "is-eb-nc-promecam": ("cut/p37-239.png", "Edgebender 1540 / 2160 — Promecam tool clamps"),
     "is-eb-nc-lightguard": ("cut/p38-244.png", "Edgebender NC — safety light guard complying with CE"),
     "is-eb-nc-torsion": ("cut/p38-246.png", "Edgebender NC — torsion bar for sensitive bending"),
     "is-eb-nc-ballscrew": ("cut/p38-247.png", "Edgebender NC — motorized backgauge with ball screw"),
@@ -96,11 +96,11 @@ FAMILIES = [
          models_label="Edgebender 1240 CNC · 44 US tons × 4.2 ft",
          summary="A compact 3-axis CNC press brake for the sheet-metal shop: 44 US tons over 4.2 ft with a Cybelec Cybtouch 12 touchscreen "
                  "control, independently controlled Y1 and Y2 cylinders, a CNC X-axis backgauge on HIWIN linear guides and ball screws, "
-                 "and quick-release Promecam tool clamping. HAWE or Rexroth hydraulics, Siemens electrics with remote connection and a "
+                 "and Promecam tool clamping. HAWE or Rexroth hydraulics, Siemens electrics with remote connection and a "
                  "Leuze light guard with learning mode for different part shapes — the specification of a large press brake in a "
                  "machine that fits beside a shear and a slip roll.",
          features=["Cybelec Cybtouch 12 CNC control; 3 axes Y1 + Y2 + X; GIVI magnetic linear scales", "CNC X-axis backgauge on HIWIN linear guides with ball screws, 19.7″ travel; manual R axis; programmable retract",
-                   "Quick-release Promecam top-tool clamping; standard top tools and bottom die for short-edge bends; manual crowning",
+                   "Promecam top-tool clamping; standard top tools and bottom die for short-edge bends; manual crowning",
                    "Double-cylinder bending system; upper beam on fibre slide bearings; balancing spindle and eccentric bearings for parallelism",
                    "Two-speed operation (free fall, bending, return); hydraulic overload safety; HAWE or Rexroth hydraulic unit at the rear top",
                    "Siemens electrics with remote-connection service; Leuze front safety barrier with learning mode; side covers with safety switch; foot pedal; height-adjustable front support arms on linear slides"],
@@ -117,12 +117,12 @@ FAMILIES = [
                  "control (motor-driven on the 1230, gearbox-driven on the 1540 and 2160) and a high-speed motorized X backgauge on "
                  "linear guides positions the sheet to 0.008″. The NC stores 500 programs of 200 lines, calculates bending force and "
                  "draws the tool, and every machine carries HAWE or Rexroth hydraulics, Siemens / Pizzato / Balluff electrics, a Leuze "
-                 "light guard and Promecam quick-release tool clamping — the compact press brake for ducting, enclosures, brackets and "
+                 "light guard and Promecam tool clamping — the compact press brake for ducting, enclosures, brackets and "
                  "job-shop bending up to 8 ga.",
          features=["NC control storing 500 programs of 200 lines; tooling selection, drawing and bending-force calculation; save and load via USB",
                    "Motor-driven Y-axis angle setting via the NC; stroke-controlled angle with mechanical stop; tonnage set by pressure switch",
                    "High-speed motorized X backgauge on linear guides: 23.6″ travel, 0.008″ accuracy; sensitive programmable retract",
-                   "Quick-release Promecam upper-tool clamping; manual crowning by wedges in the upper tool holders; standard upper and lower tools",
+                   "Promecam upper-tool clamping; manual crowning by wedges in the upper tool holders; standard upper and lower tools",
                    "Double-cylinder bending system; two-speed operation (free fall, slow bend, fast return); hydraulic overload safety",
                    "HAWE or Rexroth hydraulic unit; Siemens, Pizzato and Balluff electrics with remote service; Leuze front safety system with learning mode; CE-compliant safety foot pedal; floating-arm control panel; front support arms on linear slides"],
          optional=["Motorized R axis with precision movement; additional backgauge length and fingers", "Manual or motorized crowning on the lower blade",
@@ -143,7 +143,7 @@ PAGE = dict(
     groups=[("pressbrake", "Edgebender press brakes line-up", "The 3-axis CNC Edgebender 1240 and the 2-axis NC 1230, 1540 and 2160.")],
     faq=[{"q": "What tonnage do I need?", "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening: in mild steel about 575 × t² ÷ V US tons per foot, with t and V in inches. In a V of 8 × the thickness, a 4 ft bend takes about 16 US tons in 16 ga, 39 tons in 10 ga and 47 tons in 8 ga (0.16″); a wider die lowers the force — 8 ga in a 2″ V takes about 31 tons over 4 ft — at the cost of a larger inside radius. The NC control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we will size the machine."},
          {"q": "NC or CNC?", "a": "The 2-axis NC Edgebender sets the bending angle (Y) and the backgauge (X) from a program — enough for most job-shop bending. The 3-axis CNC Edgebender 1240 controls the two cylinders independently (Y1, Y2), so the beam can be tilted for compensation and the Cybelec Cybtouch 12 gives graphic programming, angle correction and tool libraries like a full-size CNC press brake."},
-         {"q": "Which tooling fits?", "a": "The Edgebenders use Promecam-style (European) quick-release clamping, the most common tooling standard in Canada, with a standard top tool and bottom die included. Segmented punches, gooseneck tools and special dies are available — see our Eurostamp press brake tooling page."},
+         {"q": "Which tooling fits?", "a": "The Edgebenders use Promecam-style (European) top-tool holders, the most common tooling standard in Canada, with a standard top tool and bottom die included; quick-release clamps are an option. Segmented punches, gooseneck tools and special dies are available — see our Eurostamp press brake tooling page."},
          {"q": "Are they safe to run without a separate guarding system?", "a": "Every Edgebender carries a Leuze front light guard with learning mode, side covers with safety switches, a programmable backgauge retract and a CE-compliant foot pedal with emergency stop; DSP and Fiessler laser systems are available as options."},
          VOLT_FAQ_GENERIC],
 )

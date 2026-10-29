@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Tubend (Bursa, Turkey).  The TB pipe benders and WP positioners are sold under the Tubend name; the HP horizontal presses are
-sold as NovoTech's premium line, made in Turkey, with the maker's logo removed from the photos (tools/tubend_photos.LOGO), the
+"""HP horizontal presses, TB pipe benders and WP welding positioners made in Bursa, Turkey — all sold as NovoTech's premium line,
+made in Turkey, with the maker's logo removed from the photos (tools/tubend_photos.LOGO), the
 texts and their own brochure (Oct 2026).  Page texts for horizontal-press-brake (HP 10 – HP 150) and
 welding-positioners (WP 100 / WP 300), the TB group for the rotary draw page, image registration (section 'tubend'), and the
 NovoTech-format brochure spec:
 
     python3 tools/tubend_photos.py                   # tubend.com.tr cut-outs, brochure / catalogue images → tools/src-images/tubend
     python3 tools/tubend_pages.py                    # image_map entries (tools/tubend_keys.txt), the two pages, brochure spec
-    python3 tools/isitan_data.py                     # writes rotary-draw-tube-benders with the Tubend TB group (pipe-benders hub)
+    python3 tools/isitan_data.py                     # writes rotary-draw-tube-benders with the TB group (pipe-benders hub)
     python3 tools/make_images.py --only $(cat tools/tubend_keys.txt)
-    python3 tools/brochure/build_brochure.py tools/brochure/specs/tubend.json
+    python3 tools/brochure/build_brochure.py tools/brochure/specs/pipe-benders-welding-positioners.json
 
 The HP and WP families live in the 'tubend' family set; TB 34 / TB 42 in 'tube-benders' (tools/isitan_tube_benders.py).
 """
@@ -23,8 +23,8 @@ import tubend_photos as PH
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "tubend"
 BRAND = D.BRAND
-PDF_FILE = "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf"
-PDF_LABEL = "Download the Tubend pipe bender & welding positioner brochure"
+PDF_FILE = "files/NovoTech-Pipe-Benders-Welding-Positioners-2026.pdf"          # TB / WP: NovoTech premium line, no maker's name (Oct 28 2026)
+PDF_LABEL = "Download the NovoTech pipe bender & welding positioner brochure"
 PDF_HP_FILE = "files/NovoTech-Horizontal-Press-Brakes-2026.pdf"          # the HP presses: NovoTech premium line, no maker's name (Oct 2026)
 PDF_HP_LABEL = "Download the NovoTech horizontal press brake brochure"
 HP_BRAND_LINE = ("The HP horizontal presses are built in Turkey for NovoTech's premium line, with European hydraulics and controls. Sold, "
@@ -32,10 +32,10 @@ HP_BRAND_LINE = ("The HP horizontal presses are built in Turkey for NovoTech's p
 HP_ORIGIN = {"title": "Made in Turkey for NovoTech", "text": "NovoTech's premium-line horizontal presses are built in Turkey to our specification — welded "
              "steel frames, hardened tools and touch-screen controls — with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."}
 
-BRAND_LINE = ("Tubend machines are made in Bursa, Turkey, by Tubend Machine, with European components. Sold, installed and supported "
-              "in Canada by NovoTech.")
-ORIGIN = {"title": "Made in Turkey by Tubend", "text": "Tubend builds hydraulic horizontal presses and their tooling, pipe and section benders "
-          "and welding positioners in Bursa, Turkey — welded steel frames, hardened tools and touch-screen controls."}
+BRAND_LINE = ("The TB pipe benders and WP welding positioners are built in Turkey for NovoTech's premium line, with European components. Sold, "
+              "installed and supported in Canada by NovoTech.")
+ORIGIN = {"title": "Made in Turkey for NovoTech", "text": "NovoTech's premium-line pipe benders and welding positioners are built in Turkey to our "
+          "specification — welded steel frames, hardened dies and simple, robust controls — with a 1-year warranty and parts and technicians in Mississauga, ON, Canada."}
 NO_FACTORY_VIDEO = {"intro_video": None}
 
 
@@ -119,13 +119,13 @@ PAGE_HP = dict(
 # ------------------------------------------------------------------------------------------------ welding-positioners
 PAGE_WP = dict(
     title="Welding Positioners, Tilting, 220 – 661 lb | NovoTech",
-    meta="Tilting welding positioners that turn the part under the torch at 1 – 5.5 rpm: Tubend WP 100 and WP 300, 120° or 90° tilt, foot pedal, single-phase power.",
+    meta="Tilting welding positioners that turn the part under the torch at 1 – 5.5 rpm: NovoTech premium-line WP 100 and WP 300, 120° or 90° tilt, foot pedal, single-phase power.",
     h1="Welding positioners — tilting turntables for round welds, 220 to 661 lb",
     intro="A welding positioner holds the part on a turntable and turns it under the torch at a steady, adjustable speed, so a round "
           "weld on a flange, pipe-to-plate joint, hub, tank head or wheel is laid in one continuous pass in the flat position — no "
           "stopping, repositioning and restarting around the part, and a more even bead whether the torch is held by hand or clamped "
-          "in a holder. Tilting the table brings the joint to the best angle for the torch. NovoTech sells the Tubend WP 100 and WP 300, "
-          "built in Bursa, Turkey: the WP 100 carries 220 lb on a Ø13-3/4″ table that tilts 120°, the WP 300 661 lb on a Ø18-7/8″ table "
+          "in a holder. Tilting the table brings the joint to the best angle for the torch. NovoTech's premium-line WP 100 and WP 300 are "
+          "built in Turkey: the WP 100 carries 220 lb on a Ø13-3/4″ table that tilts 120°, the WP 300 661 lb on a Ø18-7/8″ table "
           "that tilts 90°. Both turn 360° at 1 to 5.5 rpm, set on the control box and run from the standard foot pedal, with T-slots for "
           "clamps and fixtures, an optional 3-jaw lathe chuck and, on the WP 300, a custom fixture plate. They run on single-phase "
           "220 V. Supplied and supported from Mississauga, ON, Canada.",
@@ -133,8 +133,8 @@ PAGE_WP = dict(
             "360° rotation at 1 – 5.5 rpm, variable · foot pedal standard · single-phase 220 V",
             "T-slotted turntable · optional Ø6-1/4″ or Ø7-7/8″ 3-jaw chuck · custom fixture plate (WP 300)"],
     hero="tb-wp300", minis=["tb-wp100", "tb-wp300-plate"],
-    groups=[("tubend-wp", "Tubend WP welding positioners",
-             "Two tilting positioners with variable-speed rotation for MIG, TIG and stick welding of round joints — on the bench or the floor.", BRAND)],
+    groups=[("tubend-wp", "WP tilting welding positioners · premium line",
+             "Two tilting positioners with variable-speed rotation for MIG, TIG and stick welding of round joints — on the bench or the floor.", "novotech-premium")],
     faq=[{"q": "What does a welding positioner do?",
           "a": "It turns the part under a stationary torch at a set speed, so a circumferential weld is made in one pass in the flat "
                "position — the easiest position to weld and the one that gives the most even bead. The welder no longer walks around "
@@ -163,22 +163,22 @@ PAGE_WP = dict(
 )
 
 # ------------------------------------------------------------------------------------------------ group on the rotary draw page
-TB_GROUP = ("tubend-tb", "Tubend mandrel-less pipe benders",
+TB_GROUP = ("tubend-tb", "TB mandrel-less pipe benders · premium line",
             "An electric bench bender for 1″ NPS pipe and a 17-ton hydraulic bender for 1-1/4″ NPS — simple, low-cost benders for railing, "
-            "barrier, furniture and repair work.", BRAND)
+            "barrier, furniture and repair work, built in Turkey for NovoTech's premium line.", "novotech-premium")
 
 # ------------------------------------------------------------------------------------------------ brochure
-ABOUT_TUBEND = ("NovoTech sells, installs and supports Tubend machines in Canada from Mississauga, Ontario, Canada — tooling chosen for your parts, "
-                "installation, operator training, a CSA-approved panel on three-phase machines, a 1-year warranty and parts and technical "
-                "support in Canada.")
+ABOUT_TB = ("NovoTech sells, installs and supports its premium-line pipe benders and welding positioners in Canada from Mississauga, Ontario, Canada — "
+            "dies chosen for your parts, installation, operator training, a CSA-approved panel on three-phase machines, a 1-year warranty and parts "
+            "and technical support in Canada.")
 BROCHURE = dict(
     title="Pipe benders and welding positioners",
-    subtitle="Tubend TB 34 / TB 42 mandrel-less pipe benders · WP 100 / WP 300 tilting welding positioners",
-    cover_line="Tubend · made in Turkey · sold & serviced in Canada by NovoTech", range_label="Tubend machinery", about_for="Tubend machinery",
-    about_kicker="Tubend · Bursa, Turkey", about_title="Simple, solid machines for the pipe and welding shop",
-    about_text=["Tubend designs and builds bending and forming machinery in Bursa, Turkey. The TB 34 and TB 42 are simple mandrel-less pipe "
-                "benders with a digital angle readout and a brake motor that holds the bend, and the WP 100 and WP 300 tilting welding "
-                "positioners turn round parts under the torch at 1 – 5.5 rpm, foot-pedal controlled.", ABOUT_TUBEND],
+    subtitle="TB 34 / TB 42 mandrel-less pipe benders · WP 100 / WP 300 tilting welding positioners",
+    cover_line="NovoTech premium line · made in Turkey · sold & serviced in Canada by NovoTech", range_label="Pipe benders and welding positioners", about_for="pipe benders and welding positioners",
+    about_kicker="NovoTech premium line · made in Turkey", about_title="Simple, solid machines for the pipe and welding shop",
+    about_text=["NovoTech's premium-line pipe benders and welding positioners are built in Turkey to our specification. The TB 34 and TB 42 are simple "
+                "mandrel-less pipe benders with a digital angle readout and a brake motor that holds the bend, and the WP 100 and WP 300 tilting "
+                "welding positioners turn round parts under the torch at 1 – 5.5 rpm, foot-pedal controlled.", ABOUT_TB],
     country="Turkey", families=["tubend-tb34", "tubend-tb42", "tubend-wp"], family_sets=["tubend", "tube-benders"],
     groups=[{"title": "Mandrel-less pipe benders", "families": ["tubend-tb34", "tubend-tb42"]},
             {"title": "Welding positioners", "families": ["tubend-wp"]}],
@@ -204,8 +204,11 @@ BROCHURE_HP = dict(
 
 def write_brochure_specs():
     d = os.path.join(ROOT, "tools", "brochure", "specs")
-    spec = dict(BROCHURE, single_phase=False, year="2026", made_in="Made in Turkey by Tubend — with European components")
-    json.dump(spec, open(os.path.join(d, "tubend.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    spec = dict(BROCHURE, single_phase=False, year="2026", made_in="Made in Turkey for NovoTech's premium line — with European components")
+    json.dump(spec, open(os.path.join(d, "pipe-benders-welding-positioners.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    old = os.path.join(d, "tubend.json")
+    if os.path.exists(old):
+        os.remove(old)
     spec = dict(BROCHURE_HP, single_phase=False, year="2026", made_in="Made in Turkey for NovoTech's premium line — with European hydraulics and controls")
     json.dump(spec, open(os.path.join(d, "horizontal-press-brakes.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
@@ -224,8 +227,7 @@ def register_images():
         imap[key] = {"src": f"tools/src-images/tubend/{key}{ext}", "alt": p["alt"], "section": "tubend", "trim": False, "quality": 82,
                      "cutout": bool(p.get("cutout"))}
         keys.append(key)
-    imap["tubend-logo"] = {"src": "tools/src-images/tubend-logo.png", "alt": "Tubend", "section": "site", "trim": True, "quality": 90, "cutout": False}
-    keys.append("tubend-logo")
+    imap.pop("tubend-logo", None)        # the maker's logo is no longer shown anywhere (Oct 28 2026)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "tubend_keys.txt"), "w").write(",".join(keys))
     return keys
@@ -246,7 +248,7 @@ def build():
     write_brochure_specs()
     used = {k for f in D.FAMILIES for k in f["images"]} | {PAGE_HP["hero"], PAGE_WP["hero"]} | set(PAGE_HP["minis"]) | set(PAGE_WP["minis"])
     used |= set(BROCHURE["cover_photos"]) | set(BROCHURE_HP["cover_photos"])
-    unused = sorted(set(keys) - used - {"tubend-logo"})
+    unused = sorted(set(keys) - used)
     if unused:
         print("photos not used on a page:", unused)
     missing = sorted(used - set(keys))

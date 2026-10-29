@@ -616,6 +616,14 @@ def prepare_family(f):
         im["cap1"], im["cap2"] = caption_for(f, im["alt"])
     f["card_image"] = f["gallery"][0] if f["gallery"] else None
     f["gallery"] += feature_gallery(f)
+    if f.get("control") and f["control"].get("images"):       # the control note under the summary (press brakes, Oct 28 2026)
+        ims = []
+        for k in f["control"]["images"]:
+            key, cap = (k, None) if isinstance(k, str) else (k[0], k[1])
+            if key in manifest:
+                im = img(key)
+                ims.append(dict(im, caption=cap or re.split(r"[:—–,]", im["alt"])[0].strip()))
+        f["control"] = dict(f["control"], images=ims)
     return f
 
 
@@ -758,7 +766,7 @@ def apply_extra_groups(loaded):
 
 
 BRAND_WORDS = ("Dener", "Senfeng", "NovoTech", "Bekamak", "CSM", "Cevisa", "GMS", "Gecam", "Eurofintec", "ISITAN", "Plastmak",
-               "EUROSTAMP", "Tubend", "Wecotech", "WIKUS")
+               "EUROSTAMP", "Wecotech", "WIKUS")
 
 
 def pdf_brand_label(pdf):
@@ -1130,6 +1138,16 @@ def hub_lineup_spec(hub, by_slug):
     return [{"brand": b, "items": groups[b]} for b in sorted(order, key=lambda b: (rank(b), order.index(b)))]
 
 
+def unique_pdfs(fams):
+    """the brochures of a set of families, each once, in order"""
+    out, seen = [], set()
+    for f in fams:
+        p = f.get("pdf")
+        if p and p.get("file") and p["file"] not in seen:
+            seen.add(p["file"]); out.append(p)
+    return out
+
+
 def hub_lineup(page):
     noun = page.get("lineup_noun") or page.get("section_label", "machines").lower()
     out = []
@@ -1143,7 +1161,7 @@ def hub_lineup(page):
         for it in grp["items"]:
             f = prepare_family(family(page, it["fid"], it["set"]))
             items.append({"f": f, "href": f"{it['slug']}.html#{it['fid']}", "type": it["type"], "text": lead_sentence(f.get("summary", ""))})
-        out.append({"brand": grp["brand"], "info": info, "id": "lineup-" + grp["brand"],
+        out.append({"brand": grp["brand"], "info": info, "id": "lineup-" + grp["brand"], "pdfs": unique_pdfs([it["f"] for it in items]),
                     "title": f"{name} {noun}" + (f" — {origin[0].lower() + origin[1:]}" if origin else ""), "cards": items})
     return out
 
@@ -1186,6 +1204,111 @@ def hero_links(page):
     return {k: h for k in keys if k for h in [find(k)] if h}
 
 
+
+# ---------------------------------------------------------------------------------------------- press brake tonnage, both units
+# Every tonnage on the press brake pages is shown in US tons and metric tonnes (Oct 28 2026): "44 US tons (40 t)",
+# "16 to 66 US tons (15 to 60 t)", "110-ton (100 t)", "400 to 1,200 t (441 to 1,323 US tons)".  The sources keep their original
+# figures; this pass adds the other unit at render time, idempotently (a figure already followed by its equivalent is skipped).
+# US → t uses the catalogue pairs found in the family data ("44 US tons (40 t)"), so a converted figure is the maker's rating.
+US_T = 1.1023113
+PRESS_BRAKE_SLUGS = {"press-brake", "hydraulic-press-brake", "electric-press-brake", "compact-hydraulic-press-brakes", "horizontal-press-brake"}
+_NUM = r"\d{1,3}(?:,\d{3})*(?:\.\d+)?"
+_SEP = r"(?:to|–|-|—|and|or)"
+_NOT_AFTER = r"(?!\s*(?:\(\s*\d|\)|<small|per\b|/|a foot|of force|-ton))"
+_CAT_T = {}
+
+
+def _num(s):
+    return float(s.replace(",", ""))
+
+
+def _fmt(x):
+    return f"{x:,.0f}" if float(x).is_integer() else f"{x:,.1f}".rstrip("0").rstrip(".")
+
+
+def _us_to_t(s):
+    us = _num(s)
+    if us in _CAT_T:
+        return _fmt(_CAT_T[us])
+    m = us / US_T
+    return _fmt(round(m) if m >= 10 else round(m * 2) / 2)
+
+
+def _t_to_us(s):
+    return _fmt(round(_num(s) * US_T))
+
+
+def load_catalogue_tons(loaded):
+    """US-ton → tonne pairs as the maker rates them, read from every string of the family data"""
+    pairs = re.compile(r"(" + _NUM + r")\s*US tons?\s*\((" + _NUM + r")\s*t\)")
+
+    def walk(x):
+        if isinstance(x, str):
+            for us, t in pairs.findall(x):
+                _CAT_T.setdefault(_num(us), _num(t))
+        elif isinstance(x, dict):
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    walk(loaded)
+    walk(FAMILY_SETS)
+
+
+_LIST = _NUM + r"(?:\s*(?:,|to|–|-|—|and|or)\s*" + _NUM + r")*"          # "33, 44 and 66", "16 to 66", "11 – 110"
+
+
+def _map_nums(lst, conv):
+    return re.sub(_NUM, lambda n: conv(n.group(0)), lst)
+
+
+def _both_tons_text(text):
+    # "132- and 165-ton", "400 and 600-ton"
+    text = re.sub(r"(?<![(\d])\b(" + _NUM + r")(-?\s*(?:and|or)\s*)(" + _NUM + r")-ton\b(?!\s*\(\s*\d)",
+                  lambda m: f"{m.group(1)}{m.group(2)}{m.group(3)}-ton ({_us_to_t(m.group(1))}{m.group(2).lstrip('-')}{_us_to_t(m.group(3))} t)", text)
+    # "110-ton"
+    text = re.sub(r"(?<![(\d])\b(" + _NUM + r")-ton\b(?!\s*\(\s*\d)", lambda m: f"{m.group(1)}-ton ({_us_to_t(m.group(1))} t)", text)
+    # "44 US tons", "16 to 66 US tons", "33, 44 and 66 US tons", "1,323 tons", "11 – 110 US ton"
+    text = re.sub(r"(?<![(\d])(?<!<small>)\b(" + _LIST + r")(\s*(?:US tons?|tons?))\b" + _NOT_AFTER,
+                  lambda m: f"{m.group(1)}{m.group(2)} ({_map_nums(m.group(1), _us_to_t)} t)", text)
+    # metric-only figures: "400 to 1,200 t", "3, 6 and 12 t", "110 t and up" — never "t/m", "t²", "(40 t)" or a figure already paired
+    text = re.sub(r"(?<![(\d])(?<!<small>)\b(" + _LIST + r")(\s*t)\b(?!\s*(?:\(\s*\d|\)|<|/|per\b|²|-|\d))",
+                  lambda m: f"{m.group(1)}{m.group(2)} ({_map_nums(m.group(1), _t_to_us)} US tons)", text)
+    return text
+
+
+def both_tons(text):
+    """add the missing unit after every press brake tonnage in a string (HTML or plain); the generated tonnage table
+    (between its markers) already carries both units in its own layout and is left alone"""
+    if "ton" not in text and not re.search(r"\d\s*t\b", text):
+        return text
+    parts = re.split(r"(<!-- tonnage-table -->.*?<!-- /tonnage-table -->)", text, flags=re.S)
+    return "".join(p if p.startswith("<!-- tonnage-table -->") else _both_tons_text(p) for p in parts)
+
+
+def both_tons_page(page, everything):
+    """walk the page dict; convert every string on a press brake page, elsewhere only strings about press brakes"""
+    skip = {"slug", "href", "src", "id", "url", "image", "hero", "minis", "canonical", "file", "template", "section", "thumb", "small", "srcset", "key"}
+
+    def walk(x, key=None):
+        if isinstance(x, str):
+            if key in skip or key == "title" and x is page.get("title"):
+                return x
+            if everything or "press brake" in x.lower():
+                return both_tons(x)
+            return x
+        if isinstance(x, dict):
+            for k, v in list(x.items()):
+                x[k] = walk(v, k)
+            return x
+        if isinstance(x, list):
+            for i, v in enumerate(x):
+                x[i] = walk(v, key)
+            return x
+        return x
+    walk(page)
+
 PREPARED = []   # prepared page dicts (families resolved) — used for the AI assistant's catalogue
 
 
@@ -1209,6 +1332,7 @@ def render_page(page):
                 rg["rows"] = [row for row in page["range_rows"] if row.get("kind") == rg["kind"]]
     for g in page.get("groups", []):
         g["families"] = [prepare_family(family(page, f, g.get("family_set"))) if isinstance(f, str) else f for f in g["families"]]
+        g["pdfs"] = unique_pdfs(g["families"])
     if page.get("range_pick") and page.get("groups") and not page.get("subpages"):   # a category page with every model in one table under the hero
         page["range_rows"] = range_table([{"slug": page["slug"], "families": g["families"], "nav_label": g["title"].split(" — ")[0]} for g in page["groups"]], page["range_pick"])
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
@@ -1229,12 +1353,18 @@ def render_page(page):
     if page.get("article"):   # long-form guide kept from the old site (HTML fragment with <figure data-img> placeholders)
         art = open(os.path.join(ROOT, "content", "articles", page["article"]), encoding="utf-8").read()
         def fig(m):
-            im = img(m.group(1))
-            alt = html_mod.escape(m.group(2)) if m.group(2) else im["alt"]
+            im = img(m.group(2))
+            alt = html_mod.escape(m.group(4)) if m.group(4) else im["alt"]
+            extra = (m.group(1) or "").strip()                     # e.g. "is-small" / "is-half": the figure floats beside the text
             cls = "guide-figure is-cutout" if im.get("alpha") else "guide-figure"
-            return (f'<figure class="{cls}"><img src="{im["small"]}" srcset="{im["srcset"]}" sizes="(max-width: 700px) 92vw, 760px" '
-                    f'width="{im["w"]}" height="{im["h"]}" alt="{alt}" loading="lazy" decoding="async"></figure>')
-        art = re.sub(r'<figure class="guide-figure" data-img="([^"]+)"(?: data-alt="([^"]*)")?></figure>', fig, art)
+            cls = (cls + " " + extra).strip()
+            cap = f"<figcaption>{html_mod.escape(m.group(3))}</figcaption>" if m.group(3) else ""
+            sizes = "(max-width: 700px) 92vw, 330px" if "is-small" in extra else ("(max-width: 700px) 92vw, 560px" if "is-half" in extra else "(max-width: 700px) 92vw, 760px")
+            return (f'<figure class="{cls}"><img src="{im["small"]}" srcset="{im["srcset"]}" sizes="{sizes}" '
+                    f'width="{im["w"]}" height="{im["h"]}" alt="{alt}" loading="lazy" decoding="async">{cap}</figure>')
+        art = re.sub(r'<figure class="guide-figure((?: [a-z-]+)*)" data-img="([^"]+)"(?: data-caption="([^"]*)")?(?: data-alt="([^"]*)")?></figure>', fig, art)
+        # two or more half-width figures in a row sit side by side in a grid row (clear of any floated figure above)
+        art = re.sub(r'((?:<figure class="guide-figure[^"]*\bis-half\b[^"]*">.*?</figure>\s*){2,})', r'<div class="guide-figure-row">\1</div>', art, flags=re.S)
         page["article_html"] = art
         page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
         gid = "#" + (page.get("article_id") or "buying-guide")
@@ -1245,6 +1375,7 @@ def render_page(page):
     is_site = (page.get("site_template") or page.get("template")) in SITE_TEMPLATES
     if is_site:
         prepare_site_page(page)
+    both_tons_page(page, page["slug"] in PRESS_BRAKE_SLUGS)
     tpl = env.get_template(page.get("template", "page.html"))
     inline_css = None if ARTIFACT else open(os.path.join(DIST, "css", "site.css"), encoding="utf-8").read().replace("../fonts/", "fonts/")   # minified by main(); URLs re-based to the page
     html = tpl.render(page=page, ld_json=site_page_ld(page) if is_site else page_ld(page), build_ts=int(datetime.datetime.now().timestamp()), inline_css=inline_css,
@@ -1403,6 +1534,7 @@ def main():
     loaded = [json.load(open(os.path.join(pdir, fn), encoding="utf-8")) for fn in sorted(os.listdir(pdir)) if fn.endswith(".json") and not fn.startswith("_")]
     apply_extra_groups(loaded)
     brand_all_pdf_labels(loaded)
+    load_catalogue_tons(loaded)
     by_slug_all = {p["slug"]: p for p in loaded}
     for hub in [p for p in loaded if p.get("hub_compact") and p.get("subpages")]:   # short hubs list every family by brand
         hub["lineup_spec"] = hub_lineup_spec(hub, by_slug_all)

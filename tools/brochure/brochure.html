@@ -215,7 +215,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
       <thead><tr><th>Model</th>{% for m in t.models %}<th>{{ m }}</th>{% endfor %}</tr></thead>
       <tbody>{% for r in t.rows %}<tr class="{{ 'key' if r.key else '' }}"><th>{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>{% for c in r.cells %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
     </table>
-    {% if not f.spec_pages %}<p class="note">{{ f.specs.note }}</p><p class="volt">{% if f.volt_note %}{{ f.volt_note }}{% else %}Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase{{ ', or 240 V single-phase on models with a small enough motor' if spec.single_phase else '' }}.{% endif %}</p>{% endif %}
+    {% if not f.spec_pages %}<p class="note">{{ f.specs.note }}</p><p class="volt">{% if f.volt_note %}{{ f.volt_note }}{% else %}Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase{{ ', or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less' if spec.single_phase else '' }}.{% endif %}</p>{% endif %}
     {% endif %}
   </div>
   <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % f.page }}</div></div>
@@ -233,7 +233,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
       <tbody>{% for r in t.rows %}<tr class="{{ 'key' if r.key else '' }}"><th>{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>{% for c in r.cells %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
     </table>
     {% endfor %}
-    {% if loop.last %}<p class="note">{{ f.specs.note }}</p><p class="volt">{% if f.volt_note %}{{ f.volt_note }}{% else %}Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase{{ ', or 240 V single-phase on models with a small enough motor' if spec.single_phase else '' }}.{% endif %}</p>
+    {% if loop.last %}<p class="note">{{ f.specs.note }}</p><p class="volt">{% if f.volt_note %}{{ f.volt_note }}{% else %}Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase{{ ', or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less' if spec.single_phase else '' }}.{% endif %}</p>
     <div class="included"><div class="lbl">Included with every NovoTech machine</div><ul>{% for t_, s in included %}<li>{{ t_.format(country=spec.country) }}{% if s %}<small>{{ s }}</small>{% endif %}</li>{% endfor %}</ul></div>{% endif %}
   </div>
   <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % (f.page + loop.index) }}</div></div>

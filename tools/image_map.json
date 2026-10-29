@@ -3876,7 +3876,7 @@
  },
  "is-eb-nc-promecam": {
   "src": "tools/src-images/isitan/is-eb-nc-promecam.png",
-  "alt": "Edgebender 1540 / 2160 — Promecam quick-release tool clamps",
+  "alt": "Edgebender 1540 / 2160 — Promecam tool clamps",
   "section": "forming",
   "trim": true,
   "quality": 82
@@ -4275,7 +4275,7 @@
  },
  "is-eb-cnc-promecam-clamps": {
   "src": "tools/src-images/isitan/is-eb-cnc-promecam-clamps.png",
-  "alt": "Edgebender 1240 CNC — quick-release Promecam top-tool clamping",
+  "alt": "Edgebender 1240 CNC — Promecam top-tool clamping",
   "section": "forming",
   "trim": true,
   "quality": 82
@@ -14380,7 +14380,7 @@
  },
  "vl-pb-da53": {
   "src": "tools/src-images/value-sheet/vl-pb-da53.png",
-  "alt": "Delem DA-53T 2D touchscreen control — standard on the CNC press brakes",
+  "alt": "Delem DA-53Tx touchscreen control — standard on the CNC press brakes",
   "section": "value-sheet",
   "trim": true,
   "quality": 82,
@@ -14388,7 +14388,7 @@
  },
  "vl-pb-da58": {
   "src": "tools/src-images/value-sheet/vl-pb-da58.png",
-  "alt": "Delem DA-58T 15″ 2D graphic control with bend sequence calculation",
+  "alt": "Delem DA-58Tx 18.5″ 2D graphic control with automatic bend sequence calculation",
   "section": "value-sheet",
   "trim": true,
   "quality": 82,
@@ -14396,7 +14396,7 @@
  },
  "vl-pb-da66": {
   "src": "tools/src-images/value-sheet/vl-pb-da66.png",
-  "alt": "Delem DA-66T 17″ 2D control with 3D visualisation",
+  "alt": "Delem DA-66T control (discontinued — replaced by the DA-66S; photo no longer used on the site)",
   "section": "value-sheet",
   "trim": true,
   "quality": 82,
@@ -17138,7 +17138,7 @@
  },
  "tb-tb34": {
   "src": "tools/src-images/tubend/tb-tb34.png",
-  "alt": "Tubend TB 34 electric mandrel-less pipe bender with digital angle readout",
+  "alt": "NovoTech TB 34 electric mandrel-less pipe bender with digital angle readout",
   "section": "tubend",
   "trim": false,
   "quality": 82,
@@ -17162,7 +17162,7 @@
  },
  "tb-tb42": {
   "src": "tools/src-images/tubend/tb-tb42.png",
-  "alt": "Tubend TB 42 hydraulic mandrel-less pipe bender",
+  "alt": "NovoTech TB 42 hydraulic mandrel-less pipe bender",
   "section": "tubend",
   "trim": false,
   "quality": 82,
@@ -17194,7 +17194,7 @@
  },
  "tb-wp300": {
   "src": "tools/src-images/tubend/tb-wp300.png",
-  "alt": "Tubend WP 300 tilting welding positioner with slotted turntable and control box",
+  "alt": "NovoTech WP 300 tilting welding positioner with slotted turntable and control box",
   "section": "tubend",
   "trim": false,
   "quality": 82,
@@ -17202,7 +17202,7 @@
  },
  "tb-wp100": {
   "src": "tools/src-images/tubend/tb-wp100.png",
-  "alt": "Tubend WP 100 compact tilting welding positioner",
+  "alt": "NovoTech WP 100 compact tilting welding positioner",
   "section": "tubend",
   "trim": false,
   "quality": 82,
@@ -17215,14 +17215,6 @@
   "trim": false,
   "quality": 82,
   "cutout": true
- },
- "tubend-logo": {
-  "src": "tools/src-images/tubend-logo.png",
-  "alt": "Tubend",
-  "section": "site",
-  "trim": true,
-  "quality": 90,
-  "cutout": false
  },
  "video-pxJvddrvYeg": {
   "src": "/home/claude/gms-site/yt/pxJvddrvYeg.jpg",
@@ -23120,14 +23112,6 @@
   "quality": 80,
   "cutout": false
  },
- "pdf-novotech-tubend-presses-benders-positioners-2026": {
-  "src": "tools/src-images/brochures/pdf-novotech-tubend-presses-benders-positioners-2026.jpg",
-  "alt": "Cover of the Tubend Presses Benders Positioners 2026 PDF",
-  "section": "site",
-  "trim": false,
-  "quality": 80,
-  "cutout": false
- },
  "pdf-novotech-v-grooving-machines-2026": {
   "src": "tools/src-images/brochures/pdf-novotech-v-grooving-machines-2026.jpg",
   "alt": "Cover of the V Grooving Machines 2026 PDF",
@@ -27619,5 +27603,641 @@
    360,
    180
   ]
+ },
+ "dn-xl1560-front": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-front.jpg",
+  "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, front view with ESA S640 control",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": true,
+  "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-front.json"
+ },
+ "dn-xl1560-left": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-left.jpg",
+  "alt": "Dener XL 1560 press brake from the left: Y1 / Y2 ram cylinders, DSP laser guards and the ESA control pendant",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": true,
+  "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-left.json"
+ },
+ "dn-xl1560-right": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-right.jpg",
+  "alt": "Dener XL 1560 press brake from the right with the ESA S640 control on its swing arm",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": true,
+  "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-right.json"
+ },
+ "dn-xl1560-control": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-control.jpg",
+  "alt": "ESA S640 15″ touch-screen control on the Dener XL 1560 — start, stop, muting lamp and general reset",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dn-xl1560-tooling": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-tooling.jpg",
+  "alt": "EUROSTAMP punch 1281 in the segmented holders, 4-way die and DSP laser transmitter on the XL 1560",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl1560-tooling-2": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-tooling-2.jpg",
+  "alt": "Segmented top-tool holders, EUROSTAMP tooling, front supports and the DSP laser receiver on the XL 1560",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl1560-backgauge": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-backgauge.jpg",
+  "alt": "X-axis back gauge of the XL 1560 on its ball screw with two fingers and the servo drive",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl1560-backgauge-2": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-backgauge-2.jpg",
+  "alt": "Back gauge beam, fingers and rear sheet support of the XL 1560 seen through the side frame",
+  "section": "dener-xl1560",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-wad1600": {
+  "src": "tools/src-images/value-compact/vl-cp-wad1600.jpg",
+  "alt": "NovoTech WAD-50T/1600 compact CNC press brake, 55 US tons × 5.2 ft, with Delem control",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": true,
+  "cut_spec": "tools/cutout-specs/birefnet/vl-cp-wad1600.json"
+ },
+ "vl-cp-clamps": {
+  "src": "tools/src-images/value-compact/vl-cp-clamps.jpg",
+  "alt": "Segmented top-tool holders with quick clamps on the compact CNC press brake (quick clamps are an option)",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-backgauge": {
+  "src": "tools/src-images/value-compact/vl-cp-backgauge.jpg",
+  "alt": "X-R back gauge of the compact CNC press brake on linear guides and ball screw, with the cable chain",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-laser": {
+  "src": "tools/src-images/value-compact/vl-cp-laser.jpg",
+  "alt": "DSP laser finger-protection receiver on the compact CNC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-servo": {
+  "src": "tools/src-images/value-compact/vl-cp-servo.jpg",
+  "alt": "Servo motor of the back gauge axis",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-fingers": {
+  "src": "tools/src-images/value-compact/vl-cp-fingers.jpg",
+  "alt": "Back gauge fingers on linear guides with the four-step stops",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-pump-motor": {
+  "src": "tools/src-images/value-compact/vl-cp-pump-motor.jpg",
+  "alt": "Servo main motor on the pump — the pump turns only while the ram moves",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-hawe": {
+  "src": "tools/src-images/value-compact/vl-cp-hawe.jpg",
+  "alt": "Hawe PVR 6 proportional valve regulation in the electrical cabinet",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-valve": {
+  "src": "tools/src-images/value-compact/vl-cp-valve.jpg",
+  "alt": "Hawe hydraulic valve block with pressure gauge",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-wad1300": {
+  "src": "tools/src-images/value-compact/vl-cp-wad1300.jpg",
+  "alt": "NovoTech WAD-50T/1300 compact CNC press brake, 55 US tons × 4.3 ft",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": true,
+  "cut_spec": "tools/cutout-specs/birefnet/vl-cp-wad1300.json"
+ },
+ "vl-cp-clamps-2": {
+  "src": "tools/src-images/value-compact/vl-cp-clamps-2.jpg",
+  "alt": "Top-tool holders along the ram of the compact CNC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-rear": {
+  "src": "tools/src-images/value-compact/vl-cp-rear.jpg",
+  "alt": "Compact CNC press brake from the rear: enclosed rear guard, electrical cabinet and hydraulic unit",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-hydraulics": {
+  "src": "tools/src-images/value-compact/vl-cp-hydraulics.jpg",
+  "alt": "Hydraulic unit with filter and pump motor of the compact CNC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-finger-drive": {
+  "src": "tools/src-images/value-compact/vl-cp-finger-drive.jpg",
+  "alt": "Back gauge drive with servo motor, ball screw and cable chain",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-fingers-2": {
+  "src": "tools/src-images/value-compact/vl-cp-fingers-2.jpg",
+  "alt": "Two back gauge fingers on the linear guide of the compact CNC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-wc67k": {
+  "src": "tools/src-images/value-compact/vl-cp-wc67k.jpg",
+  "alt": "NovoTech WC67K-30T/1600 compact NC torsion-bar press brake, 33 US tons × 5.2 ft",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": true,
+  "cut_spec": "tools/cutout-specs/birefnet/vl-cp-wc67k.json"
+ },
+ "vl-cp-e21": {
+  "src": "tools/src-images/value-compact/vl-cp-e21.jpg",
+  "alt": "Estun E21PS NC control of the WC67K compact press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-nc-screw": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-screw.jpg",
+  "alt": "Back gauge lead screw and hand wheel of the WC67K NC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-nc-valve": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-valve.jpg",
+  "alt": "Hydraulic valve block with pressure gauge and overload valve of the WC67K",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-front-supports": {
+  "src": "tools/src-images/value-compact/vl-cp-front-supports.jpg",
+  "alt": "Front support arms on the linear rail of the compact CNC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-rear-gauge": {
+  "src": "tools/src-images/value-compact/vl-cp-rear-gauge.jpg",
+  "alt": "Back gauge beam and fingers seen from the rear of the compact CNC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-cabinet": {
+  "src": "tools/src-images/value-compact/vl-cp-cabinet.jpg",
+  "alt": "Electrical cabinet with Schneider components of the compact CNC press brake",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-det-backgauge-std": {
+  "src": "tools/src-images/dener-detail/dn-det-backgauge-std.jpg",
+  "alt": "Standard back gauge of the Dener XL: CNC X axis on ball screw and linear guides, finger with manual R and Z adjustment and micro vernier",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-cylinder-pivot": {
+  "src": "tools/src-images/dener-detail/dn-det-cylinder-pivot.jpg",
+  "alt": "Hydraulic cylinder of the XL attached to the ram by a rotational pivot pin — no side thrust on the piston seals",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-frame-fea": {
+  "src": "tools/src-images/dener-detail/dn-det-frame-fea.jpg",
+  "alt": "Finite-element analysis of the XL welded frame: a high-strength frame with minimal distortion under load",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-punch-holder": {
+  "src": "tools/src-images/dener-detail/dn-det-punch-holder.jpg",
+  "alt": "Euro / American segmented upper punch holder — takes European and American upper tools",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-front-supports": {
+  "src": "tools/src-images/dener-detail/dn-det-front-supports.jpg",
+  "alt": "Two linear-guided front sheet supports with T-slots, ball transfers, disappearing stops and inch / mm scales",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-foot-pedal": {
+  "src": "tools/src-images/dener-detail/dn-det-foot-pedal.jpg",
+  "alt": "Foot pedal stand with emergency stop at the operator's position",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-rear-gates": {
+  "src": "tools/src-images/dener-detail/dn-det-rear-gates.jpg",
+  "alt": "Rear interlocked gates: the back gauge area cannot be entered while the machine runs",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-esa-640": {
+  "src": "tools/src-images/dener-detail/dn-det-esa-640.jpg",
+  "alt": "ESA S640 series control: 15″ touch screen, numeric and 2D programming, up to 6 axes",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-esa-875": {
+  "src": "tools/src-images/dener-detail/dn-det-esa-875.jpg",
+  "alt": "ESA S875 W control: 21″ 3D touch screen with EsaBend 3D simulation",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-bg-xr": {
+  "src": "tools/src-images/dener-detail/dn-det-bg-xr.jpg",
+  "alt": "2-axis (X, R) and 4-axis (X, R, Z1, Z2) back gauge on linear guides and ball screw",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-bg-5axis": {
+  "src": "tools/src-images/dener-detail/dn-det-bg-5axis.jpg",
+  "alt": "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-bg-6axis-atf": {
+  "src": "tools/src-images/dener-detail/dn-det-bg-6axis-atf.jpg",
+  "alt": "6-axis ATF back gauge (X1, X2, R1, R2, Z1, Z2): one flat and one crab-claw finger on each tower",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": true
+ },
+ "dn-det-eurostamp-tools": {
+  "src": "tools/src-images/dener-detail/dn-det-eurostamp-tools.jpg",
+  "alt": "The standard tooling delivered with a Dener press brake: EUROSTAMP 85° punch 1281 (R 0.8 mm, 100 t/m) and 4-way die 2067 with 16, 22, 35 and 50 mm openings",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-quick-release-plate": {
+  "src": "tools/src-images/dener-detail/dn-det-quick-release-plate.jpg",
+  "alt": "Dener quick-release punch holder front clamp plates with lever bar action, for European and American punches",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-eurostamp-quick-clamp": {
+  "src": "tools/src-images/dener-detail/dn-det-eurostamp-quick-clamp.jpg",
+  "alt": "EUROSTAMP quick clamp (Z1 / Z2 models): the European punch is inserted from below and self-seats when the lever closes",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-eurostamp-quick-clamp-2": {
+  "src": "tools/src-images/dener-detail/dn-det-eurostamp-quick-clamp-2.jpg",
+  "alt": "EUROSTAMP quick clamp on the ram — European tools only, lever action",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-sheet-followers": {
+  "src": "tools/src-images/dener-detail/dn-det-sheet-followers.jpg",
+  "alt": "AP 01 CNC mechanical sheet followers: 0 – 60° inclination, 150 kg (330 lb) each, for long and heavy sheets",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-oil-cooler": {
+  "src": "tools/src-images/dener-detail/dn-det-oil-cooler.jpg",
+  "alt": "Hydraulic oil cooler: the fan starts at 60 °C oil temperature and stops at 55 °C",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-tandem": {
+  "src": "tools/src-images/dener-detail/dn-det-tandem.jpg",
+  "alt": "Tandem press brakes: two machines on one control for long parts, cheaper than one large machine and more versatile for small jobs",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-ddm-rear": {
+  "src": "tools/src-images/dener-detail/dn-det-ddm-rear.jpg",
+  "alt": "Dener DDM servo-electric press brake from the rear: belt-and-pulley ram drive, no hydraulic oil",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-bg-2axis-ddm": {
+  "src": "tools/src-images/dener-detail/dn-det-bg-2axis-ddm.jpg",
+  "alt": "Standard 2-axis back gauge (X, R) of the DDM on linear guides, ball-screw X axis with 500 mm reach",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-finger-steps": {
+  "src": "tools/src-images/dener-detail/dn-det-finger-steps.jpg",
+  "alt": "Multi-step finger design: three X-axis stops extend the gauging range to 764 mm (30.1″) and ease long flanges",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-front-support-single": {
+  "src": "tools/src-images/dener-detail/dn-det-front-support-single.jpg",
+  "alt": "Linear-guided front sheet support with hardened rod, T-slot, ball transfers and inch / mm scale",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-cabinet-cooling": {
+  "src": "tools/src-images/dener-detail/dn-det-cabinet-cooling.jpg",
+  "alt": "Electrical cabinet cooling system — a sealed cabinet with air conditioning",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-esa-875-ddm": {
+  "src": "tools/src-images/dener-detail/dn-det-esa-875-ddm.jpg",
+  "alt": "ESA S875 W 21″ widescreen 3D control of the Dener DDM servo-electric press brake",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-esabend-3d": {
+  "src": "tools/src-images/dener-detail/dn-det-esabend-3d.jpg",
+  "alt": "EsaBend 3D: the part is imported or drawn, the bend sequence calculated and simulated with the tools in 3D",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-bg-5axis-ddm": {
+  "src": "tools/src-images/dener-detail/dn-det-bg-5axis-ddm.jpg",
+  "alt": "5-axis back gauge (X, X′, R, Z1, Z2) with ±100 mm X′ for parts that are not square to the die",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-wila-clamp": {
+  "src": "tools/src-images/dener-detail/dn-det-wila-clamp.jpg",
+  "alt": "Wila hydraulic tool clamping with CNC crowning — option on every Dener press brake",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-wila-tools": {
+  "src": "tools/src-images/dener-detail/dn-det-wila-tools.jpg",
+  "alt": "Wila New Standard tooling and hydraulic clamping for fast tool changes",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-wilson-clamp": {
+  "src": "tools/src-images/dener-detail/dn-det-wilson-clamp.jpg",
+  "alt": "Wilson Express Clamp: manual quick-release clamping for European punches",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-tool-1281": {
+  "src": "tools/src-images/dener-detail/dn-det-tool-1281.png",
+  "alt": "EUROSTAMP punch 1281 — the 85° gooseneck-free straight punch, R 0.8 mm, H 104.65 mm, 100 t/m, supplied with Dener press brakes",
+  "section": "dener-detail",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-tool-2067": {
+  "src": "tools/src-images/dener-detail/dn-det-tool-2067.png",
+  "alt": "EUROSTAMP 4-way die 2067 — four V openings (16, 22, 35 and 50 mm) in one 60 mm block, supplied with Dener press brakes",
+  "section": "dener-detail",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "ctl-delem-da69s": {
+  "src": "tools/src-images/controls/ctl-delem-da69s.png",
+  "alt": "Delem DA-69S: 24″ multi-touch 3D control — 3D and 2D programming, 3D simulation, Profile-S3D offline software",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-delem-da66s": {
+  "src": "tools/src-images/controls/ctl-delem-da66s.png",
+  "alt": "Delem DA-66S: 24″ multi-touch 2D graphical control with 3D machine view, Profile-S2D offline software",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-delem-da58tx": {
+  "src": "tools/src-images/controls/ctl-delem-da58tx.png",
+  "alt": "Delem DA-58Tx: 18.5″ touch 2D graphical control with automatic bend sequence and collision detection",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-delem-da53tx": {
+  "src": "tools/src-images/controls/ctl-delem-da53tx.png",
+  "alt": "Delem DA-53Tx: 15″ touch numerical control with 2D product and tool programming, up to 4 axes",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-delem-da41t": {
+  "src": "tools/src-images/controls/ctl-delem-da41t.png",
+  "alt": "Delem DA-41T: 7″ touch NC control for torsion-bar press brakes — Y and X axes, 100 programs",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-cybelec-ct12": {
+  "src": "tools/src-images/controls/ctl-cybelec-ct12.jpg",
+  "alt": "Cybelec CybTouch 12 PS: 12″ touch control for synchronised press brakes with TouchProfile 2D programming",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "ctl-esa-s875w-card": {
+  "src": "tools/src-images/controls/ctl-esa-s875w-card.jpg",
+  "alt": "ESA S875 W: 21.5″ Full HD multi-touch 3D control with an Intel i5 PC",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "ctl-esa-s840-card": {
+  "src": "tools/src-images/controls/ctl-esa-s840-card.png",
+  "alt": "ESA S840: 15.6″ HD touch control, up to 6 axes, numeric and 2D programming",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-esa-s630": {
+  "src": "tools/src-images/controls/ctl-esa-s630.jpg",
+  "alt": "ESA S630: 10″ resistive touch control for up to 4 axes, numeric and 2D programming",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "ctl-esa-s640w": {
+  "src": "tools/src-images/controls/ctl-esa-s640w.jpg",
+  "alt": "ESA S640 W: 15″ touch control with 2D graphic programming, up to 6 axes",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-scs920": {
+  "src": "tools/src-images/controls/ctl-scs920.jpg",
+  "alt": "SCS920: 21.5″ capacitive touch CNC, 6+1 axes standard (8+1 optional), for hydraulic, electric and dual-pump press brakes",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-estun-e21ps": {
+  "src": "tools/src-images/controls/ctl-estun-e21ps.jpg",
+  "alt": "Estun E21PS: NC control for torsion-bar press brakes — back gauge and ram positioning, one-way / two-way positioning, 2D graphic programming",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-estun-e315ps": {
+  "src": "tools/src-images/controls/ctl-estun-e315ps.jpg",
+  "alt": "Estun E315PS: 15.6″ capacitive touch NC control with 6+1 axes, angle programming and tool / material databases",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "ctl-esa-s640": {
+  "src": "tools/src-images/controls/ctl-esa-s640.jpg",
+  "alt": "ESA S640 15″ touch control pendant on the Dener XL 1560 — the standard control of the XL, XH and DDS",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
+ },
+ "pdf-novotech-pipe-benders-welding-positioners-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-pipe-benders-welding-positioners-2026.jpg",
+  "alt": "Cover of the NovoTech Pipe Benders & Welding Positioners 2026 PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false
+ },
+ "video-5FWxGB6hoJI": {
+  "src": "/home/claude/gms-site/yt/5FWxGB6hoJI.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-eF-rAliWQd4": {
+  "src": "/home/claude/gms-site/yt/eF-rAliWQd4.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

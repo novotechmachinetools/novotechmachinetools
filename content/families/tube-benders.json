@@ -39,7 +39,7 @@
     "Automatic mandrel lubrication (SFB 51 / 65)",
     "Hydraulic oil cooler and oil heater",
     "Safety mat 30 × 39″ or 39 × 59″",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-sfb-38-cnc-a5",
@@ -236,7 +236,7 @@
     "Automatic mandrel lubrication (SFB 51 / 65 / 76 / 90)",
     "Hydraulic oil heater",
     "Safety mat 30 × 39″ or 39 × 59″",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-sfb-90-cnc",
@@ -487,7 +487,7 @@
     "Motorized feeding (Y axis)",
     "Extra die sets; ball mandrel; wiper die",
     "Extended mandrel length (up to 20 ft)",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-sfb-90-nc-c",
@@ -689,7 +689,7 @@
     "Manual carrier",
     "Extra die sets in requested size; ball mandrel; wiper die",
     "Extended mandrel length (up to 20 ft)",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-sfb-90-nc",
@@ -938,7 +938,7 @@
    ],
    "optional": [
     "Extra die sets in requested size",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-sfb-32-hd",
@@ -1112,7 +1112,7 @@
    ],
    "optional": [
     "Additional profile die sets",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-sfb-38-nc-a2",
@@ -1268,7 +1268,7 @@
    ],
    "optional": [
     "Additional tooling for other diameters and profiles",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "is-bk-050",
@@ -1573,7 +1573,7 @@
    ],
    "optional": [
     "Pipe, tube, section or bar tooling sets to required size",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a small enough motor"
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
     "sh-spb76",
@@ -1752,7 +1752,7 @@
   },
   "tubend-tb34": {
    "id": "tubend-tb34",
-   "brand": "tubend",
+   "brand": "novotech-premium",
    "name": "TB 34 electric mandrel-less pipe bender, 1″ NPS pipe",
    "short": "TB 34",
    "models_label": "TB 34 · 1 model",
@@ -1868,15 +1868,15 @@
     "note": "Capacity is mild steel pipe or tube with the matching die set; one die set in the size you order is included."
    },
    "pdf": {
-    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
-    "label": "Download the Tubend press, pipe bender & positioner brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "file": "files/NovoTech-Pipe-Benders-Welding-Positioners-2026.pdf",
+    "label": "Download the NovoTech pipe bender & welding positioner brochure",
+    "size": "PDF · imperial units"
    },
    "group": "tubend-tb"
   },
   "tubend-tb42": {
    "id": "tubend-tb42",
-   "brand": "tubend",
+   "brand": "novotech-premium",
    "name": "TB 42 hydraulic mandrel-less pipe bender, 1-1/4″ NPS pipe",
    "short": "TB 42",
    "models_label": "TB 42 · 1 model",
@@ -2009,9 +2009,9 @@
     "note": "Capacity is mild steel pipe or tube with the matching die set; one die set in the size you order is included."
    },
    "pdf": {
-    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
-    "label": "Download the Tubend press, pipe bender & positioner brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "file": "files/NovoTech-Pipe-Benders-Welding-Positioners-2026.pdf",
+    "label": "Download the NovoTech pipe bender & welding positioner brochure",
+    "size": "PDF · imperial units"
    },
    "group": "tubend-tb"
   },

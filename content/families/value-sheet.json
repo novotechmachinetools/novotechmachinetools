@@ -5,6 +5,8 @@
   "vl-wad-heavy",
   "vl-nc-small",
   "vl-nc-large",
+  "vl-wad-compact",
+  "vl-nc-compact",
   "vl-wadg",
   "vl-wadg-mini",
   "vl-qc12k",
@@ -15,28 +17,42 @@
  "families": {
   "vl-wad-small": {
    "id": "vl-wad-small",
+   "control": {
+    "title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W, Cybelec CybTouch 12 or SCS920 to order",
+    "text": "The value-line CNC brakes ship with the 15″ Delem DA-53Tx — touch-screen numeric programming with a 2D tool and product view, crowning and servo control, up to 4 axes — the control most Canadian job shops know. Order the machine with the 18.5″ DA-58Tx (2D graphic programming with automatic bend sequence and collision check), the 24″ DA-66S (2D with a 3D machine view) or DA-69S (full 3D), the ESA S840 (15.6″, 6 axes) or S875 W (21.5″ 3D), the Cybelec CybTouch 12 (12″ 2D) or the SCS920 (21.5″, 6+1 axes) when the work calls for graphic programming, more axes or a control your operators already run.",
+    "images": [
+     "ctl-delem-da53tx",
+     "ctl-delem-da58tx",
+     "ctl-delem-da66s",
+     "ctl-delem-da69s",
+     "ctl-esa-s840-card",
+     "ctl-esa-s875w-card",
+     "ctl-cybelec-ct12",
+     "ctl-scs920"
+    ]
+   },
    "brand": "novotech",
    "name": "CNC hydraulic press brakes, 55 – 149 US tons × 4 – 13.5 ft",
    "short": "CNC press brakes 50 – 135 t",
    "models_label": "WAD-50T/1300 – WAD-135T/4100 · 9 models",
-   "summary": "The value-line CNC press brake: electro-hydraulic servo synchronisation with Hawe valves and linear scales, a servo-driven pump that only runs while the ram moves, a Delem DA-53T control and a servo back gauge on ball screws — the same architecture as the European machines, built to a price that lets a small shop own a real CNC brake. Nine models from 55 US tons × 4 ft to 149 US tons × 13.5 ft; the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for, with the DA-53T or DA-58T and 4+1 axes. Delem DA-66T / 69T 3D controls, 6-axis back gauges, DSP laser protection, sheet followers and Wila clamping are options.",
+   "summary": "The value-line CNC press brake: electro-hydraulic servo synchronisation with Hawe valves and linear scales, a servo-driven pump that only runs while the ram moves, a Delem DA-53Tx control and a servo back gauge on ball screws — the same architecture as the European machines, built to a price that lets a small shop own a real CNC brake. Nine models from 55 US tons × 4 ft to 149 US tons × 13.5 ft; the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for, with the DA-53Tx or DA-58Tx and 4+1 axes. Delem DA-66S / 69S controls, 6-axis back gauges, DSP laser protection, sheet followers and Wila clamping are options.",
    "features": [
     "Mild steel to 1/4″ over 10 ft on the 110 t, 5/16″ on the 135 t (V = 8 × thickness)",
-    "Delem DA-53T 2D touchscreen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
+    "Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
     "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
     "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
     "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
     "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
-    "European-style quick clamps and a segmented 2-V die with sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+    "Manual top-tool clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
     "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop",
     "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Delem DA-58T (15″ 2D), DA-66T (17″ 2D + 3D view) or DA-69T (3D) control; ESA S875, Cybelec options",
+    "Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
     "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
     "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains",
     "CNC sheet follower supports",
-    "Wila hydraulic clamping; double-sided quick clamps; Rolleri pneumatic clamps",
+    "Quick-release top clamps, double-sided quick clamps or Rolleri pneumatic clamps; Wila hydraulic clamping",
     "Automatic angle measurement",
     "Hydraulic oil cooler; automatic lubrication",
     "Tandem machines on one control; robot bending cells",
@@ -436,28 +452,42 @@
   },
   "vl-wad-large": {
    "id": "vl-wad-large",
+   "control": {
+    "title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W, Cybelec CybTouch 12 or SCS920 to order",
+    "text": "The value-line CNC brakes ship with the 15″ Delem DA-53Tx — touch-screen numeric programming with a 2D tool and product view, crowning and servo control, up to 4 axes — the control most Canadian job shops know. Order the machine with the 18.5″ DA-58Tx (2D graphic programming with automatic bend sequence and collision check), the 24″ DA-66S (2D with a 3D machine view) or DA-69S (full 3D), the ESA S840 (15.6″, 6 axes) or S875 W (21.5″ 3D), the Cybelec CybTouch 12 (12″ 2D) or the SCS920 (21.5″, 6+1 axes) when the work calls for graphic programming, more axes or a control your operators already run.",
+    "images": [
+     "ctl-delem-da53tx",
+     "ctl-delem-da58tx",
+     "ctl-delem-da66s",
+     "ctl-delem-da69s",
+     "ctl-esa-s840-card",
+     "ctl-esa-s875w-card",
+     "ctl-cybelec-ct12",
+     "ctl-scs920"
+    ]
+   },
    "brand": "novotech",
    "name": "CNC hydraulic press brakes, 187 – 331 US tons × 10 – 20 ft",
    "short": "CNC press brakes 170 – 300 t",
    "models_label": "WAD-170T/3200 – WAD-300T/6000 · 16 models",
-   "summary": "The same CNC press brake from 170 to 300 t: 10, 13.5, 16 and 20 ft bending lengths, 17.7 – 19.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.4″ daylight for deep boxes, with 25 – 40 cc pumps and 13 – 21 kW servo main motors. The 220 t × 13 ft and 250 t × 13 ft machines bend 3/8″ plate the full length; the 300 t × 20 ft bends 1/2″ over 13 ft. Delem DA-53T standard, 4+1 axes with CNC crowning.",
+   "summary": "The same CNC press brake from 170 to 300 t: 10, 13.5, 16 and 20 ft bending lengths, 17.7 – 19.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.4″ daylight for deep boxes, with 25 – 40 cc pumps and 13 – 21 kW servo main motors. The 220 t × 13 ft and 250 t × 13 ft machines bend 3/8″ plate the full length; the 300 t × 20 ft bends 1/2″ over 13 ft. Delem DA-53Tx standard, 4+1 axes with CNC crowning.",
    "features": [
     "Mild steel to 3/8″ over 13 ft on the 220 t, 1/2″ over 13 ft on the 300 t (V = 8 × thickness)",
-    "Delem DA-53T 2D touchscreen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
+    "Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
     "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
     "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
     "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
     "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
-    "European-style quick clamps and a segmented 2-V die with sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+    "Manual top-tool clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
     "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop",
     "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Delem DA-58T (15″ 2D), DA-66T (17″ 2D + 3D view) or DA-69T (3D) control; ESA S875, Cybelec options",
+    "Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
     "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
     "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains",
     "CNC sheet follower supports",
-    "Wila hydraulic clamping; double-sided quick clamps; Rolleri pneumatic clamps",
+    "Quick-release top clamps, double-sided quick clamps or Rolleri pneumatic clamps; Wila hydraulic clamping",
     "Automatic angle measurement",
     "Hydraulic oil cooler; automatic lubrication",
     "Tandem machines on one control; robot bending cells",
@@ -466,7 +496,6 @@
    "images": [
     "vl-wad-robot",
     "vl-pb-da58",
-    "vl-pb-da66",
     "vl-pb-hydclamp",
     "vl-pb-clamp-open",
     "vl-pb-follower-detail"
@@ -1139,6 +1168,20 @@
   },
   "vl-wad-heavy": {
    "id": "vl-wad-heavy",
+   "control": {
+    "title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W, Cybelec CybTouch 12 or SCS920 to order",
+    "text": "The value-line CNC brakes ship with the 15″ Delem DA-53Tx — touch-screen numeric programming with a 2D tool and product view, crowning and servo control, up to 4 axes — the control most Canadian job shops know. Order the machine with the 18.5″ DA-58Tx (2D graphic programming with automatic bend sequence and collision check), the 24″ DA-66S (2D with a 3D machine view) or DA-69S (full 3D), the ESA S840 (15.6″, 6 axes) or S875 W (21.5″ 3D), the Cybelec CybTouch 12 (12″ 2D) or the SCS920 (21.5″, 6+1 axes) when the work calls for graphic programming, more axes or a control your operators already run.",
+    "images": [
+     "ctl-delem-da53tx",
+     "ctl-delem-da58tx",
+     "ctl-delem-da66s",
+     "ctl-delem-da69s",
+     "ctl-esa-s840-card",
+     "ctl-esa-s875w-card",
+     "ctl-cybelec-ct12",
+     "ctl-scs920"
+    ]
+   },
    "brand": "novotech",
    "name": "Heavy-duty CNC press brakes, 441 – 1,323 US tons × 13 – 26 ft, and tandems",
    "short": "Heavy-duty & tandem press brakes",
@@ -1146,21 +1189,21 @@
    "summary": "For plate work, poles, towers and long profiles: 400 to 1,200 t machines with 13, 16, 20, 23 and 26 ft beds, 23.6″ throats, strokes to 15.7″ and 36″ daylight, twin pumps and twin servo motors from 800 t up, and a 38.6″ (980 mm) back gauge stroke as standard. CNC sheet followers, extra-long front supports and tandem configurations — two machines on one control bending to 60 ft — are built to order; the 3,000 t × 30 ft machine in the photos shows how far the range goes.",
    "features": [
     "Twin cylinders and twin pumps from 800 t; 38.6″ (980 mm) X back gauge stroke; 11 – 15 ft bed widths",
-    "Delem DA-53T 2D touchscreen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
+    "Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
     "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
     "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
     "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
     "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
-    "European-style quick clamps and a segmented 2-V die with sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+    "Manual top-tool clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
     "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop",
     "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Delem DA-58T (15″ 2D), DA-66T (17″ 2D + 3D view) or DA-69T (3D) control; ESA S875, Cybelec options",
+    "Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
     "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
     "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains",
     "CNC sheet follower supports",
-    "Wila hydraulic clamping; double-sided quick clamps; Rolleri pneumatic clamps",
+    "Quick-release top clamps, double-sided quick clamps or Rolleri pneumatic clamps; Wila hydraulic clamping",
     "Automatic angle measurement",
     "Hydraulic oil cooler; automatic lubrication",
     "Tandem machines on one control; robot bending cells",
@@ -1972,23 +2015,33 @@
   },
   "vl-nc-small": {
    "id": "vl-nc-small",
+   "control": {
+    "title": "Estun E21PS as standard; Estun E315PS, Delem DA-41T or ESA S630 to order",
+    "text": "The torsion-bar brakes carry the Estun E21PS: a two-axis NC that positions the back gauge (X) and the ram depth (Y) from 40 stored programs of 25 steps, with one-way or two-way positioning, retract, a stroke counter and inch / mm display — simple to learn in an hour. For angle programming and a tool and material database, the 15.6″ touch Estun E315PS (6+1 axes), the 7″ touch Delem DA-41T (100 programs, angle programming) or the 10″ ESA S630 (2D, 4 axes) can be fitted instead.",
+    "images": [
+     "ctl-estun-e21ps",
+     "ctl-estun-e315ps",
+     "ctl-delem-da41t",
+     "ctl-esa-s630"
+    ]
+   },
    "brand": "novotech",
    "name": "NC hydraulic press brakes, 33 – 138 US tons × 5 – 20 ft — torsion bar",
    "short": "NC press brakes 30 – 125 t",
    "models_label": "WC67K-30t/1600 – WC67K/E-125t/6000 · 13 models",
-   "summary": "The simplest press brake we sell: a torsion bar keeps the two ram cylinders in step mechanically, mechanical stops set the depth and an Estun E21 control positions the back gauge and the ram for 40 stored programs. No servo valves, no linear scales — nothing that needs a technician — which is why these machines run for decades in general fabrication shops bending brackets, boxes, channels and roofing. Thirteen models from 33 tons × 5 ft to 138 tons × 20 ft; the 100 t × 10 ft and 125 t × 13 ft are the standard sizes.",
+   "summary": "The simplest press brake we sell: a torsion bar keeps the two ram cylinders in step mechanically, mechanical stops set the depth and an Estun E21PS control positions the back gauge and the ram for 40 stored programs. No servo valves, no linear scales — nothing that needs a technician — which is why these machines run for decades in general fabrication shops bending brackets, boxes, channels and roofing. Thirteen models from 33 tons × 5 ft to 138 tons × 20 ft; the 100 t × 10 ft and 125 t × 13 ft are the standard sizes.",
    "features": [
     "Mild steel to 1/4″ over 10 ft on the 100 t, 5/16″ over 10 ft on the 125 t (V = 8 × thickness)",
-    "Estun E21 NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, stroke counter; inches or millimetres",
+    "Estun E21PS NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, one-way / two-way positioning, stroke counter; inches or millimetres",
     "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
     "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
     "Welded, stress-relieved monoblock frame machined in one setting; Rexroth-type hydraulic block; Schneider electrics",
-    "European-style quick clamps, segmented 2-V die and sectioned punch set; front support arms",
+    "Manual top-tool clamps, segmented 2-V die and sectioned punch set; front support arms",
     "Side and rear guards; foot pedal with emergency stop",
     "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Estun E300P / E310P NC control with R axis",
+    "Estun E315PS 15.6″ touch NC control (6+1 axes, tool and material database), Delem DA-41T 7″ touch or ESA S630 10″ touch control",
     "Y-axis CNC upgrade (closed-loop ram) to the WAD series",
     "DSP laser finger protection or light curtain",
     "Sheet follower support; longer back gauge",
@@ -2007,7 +2060,7 @@
    "videos": [
     {
      "id": "0imM4bArpBc",
-     "title": "5 ft × 50 ton hydraulic press brake with Estun E21 NC control",
+     "title": "5 ft × 50 ton hydraulic press brake with Estun NC control",
      "duration": "PT4M45S",
      "thumb": "video-0imM4bArpBc"
     }
@@ -2468,23 +2521,33 @@
   },
   "vl-nc-large": {
    "id": "vl-nc-large",
+   "control": {
+    "title": "Estun E21PS as standard; Estun E315PS, Delem DA-41T or ESA S630 to order",
+    "text": "The torsion-bar brakes carry the Estun E21PS: a two-axis NC that positions the back gauge (X) and the ram depth (Y) from 40 stored programs of 25 steps, with one-way or two-way positioning, retract, a stroke counter and inch / mm display — simple to learn in an hour. For angle programming and a tool and material database, the 15.6″ touch Estun E315PS (6+1 axes), the 7″ touch Delem DA-41T (100 programs, angle programming) or the 10″ ESA S630 (2D, 4 axes) can be fitted instead.",
+    "images": [
+     "ctl-estun-e21ps",
+     "ctl-estun-e315ps",
+     "ctl-delem-da41t",
+     "ctl-esa-s630"
+    ]
+   },
    "brand": "novotech",
    "name": "NC hydraulic press brakes, 176 – 441 US tons × 8 – 20 ft — torsion bar",
    "short": "NC press brakes 160 – 400 t",
    "models_label": "WC67K/E-160t/2500 – WC67K/E-400T/6000 · 21 models",
-   "summary": "The torsion-bar press brake in the heavy sizes: 160 to 400 t over 8 to 20 ft, with 13.8 – 15.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.8″ daylight, 20 – 50 cc pumps and 11 – 22 kW motors. The right machine for a shop that bends 3/8″ and 1/2″ plate in simple shapes and does not need a CNC — the E21 control still stores 40 programs and positions the back gauge and depth automatically.",
+   "summary": "The torsion-bar press brake in the heavy sizes: 160 to 400 t over 8 to 20 ft, with 13.8 – 15.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.8″ daylight, 20 – 50 cc pumps and 11 – 22 kW motors. The right machine for a shop that bends 3/8″ and 1/2″ plate in simple shapes and does not need a CNC — the E21PS control still stores 40 programs and positions the back gauge and depth automatically.",
    "features": [
     "Mild steel to 3/8″ over 10 ft on the 200 t, 1/2″ over 13 ft on the 300 t, 1/2″ over 20 ft on the 400 t (V = 8 × thickness)",
-    "Estun E21 NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, stroke counter; inches or millimetres",
+    "Estun E21PS NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, one-way / two-way positioning, stroke counter; inches or millimetres",
     "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
     "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
     "Welded, stress-relieved monoblock frame machined in one setting; Rexroth-type hydraulic block; Schneider electrics",
-    "European-style quick clamps, segmented 2-V die and sectioned punch set; front support arms",
+    "Manual top-tool clamps, segmented 2-V die and sectioned punch set; front support arms",
     "Side and rear guards; foot pedal with emergency stop",
     "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Estun E300P / E310P NC control with R axis",
+    "Estun E315PS 15.6″ touch NC control (6+1 axes, tool and material database), Delem DA-41T 7″ touch or ESA S630 10″ touch control",
     "Y-axis CNC upgrade (closed-loop ram) to the WAD series",
     "DSP laser finger protection or light curtain",
     "Sheet follower support; longer back gauge",
@@ -3256,25 +3319,499 @@
    },
    "group": "pb-nc"
   },
+  "vl-wad-compact": {
+   "id": "vl-wad-compact",
+   "control": {
+    "title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W, Cybelec CybTouch 12 or SCS920 to order",
+    "text": "The value-line CNC brakes ship with the 15″ Delem DA-53Tx — touch-screen numeric programming with a 2D tool and product view, crowning and servo control, up to 4 axes — the control most Canadian job shops know. Order the machine with the 18.5″ DA-58Tx (2D graphic programming with automatic bend sequence and collision check), the 24″ DA-66S (2D with a 3D machine view) or DA-69S (full 3D), the ESA S840 (15.6″, 6 axes) or S875 W (21.5″ 3D), the Cybelec CybTouch 12 (12″ 2D) or the SCS920 (21.5″, 6+1 axes) when the work calls for graphic programming, more axes or a control your operators already run.",
+    "images": [
+     "ctl-delem-da53tx",
+     "ctl-delem-da58tx",
+     "ctl-delem-da66s",
+     "ctl-delem-da69s",
+     "ctl-esa-s840-card",
+     "ctl-esa-s875w-card",
+     "ctl-cybelec-ct12",
+     "ctl-scs920"
+    ]
+   },
+   "brand": "novotech",
+   "name": "Compact CNC hydraulic press brakes, 55 US tons × 4.3 and 5.2 ft",
+   "short": "Compact CNC press brakes 50 t",
+   "models_label": "WAD-50T/1300 · WAD-50T/1600 · 2 models",
+   "summary": "The two smallest WAD machines are the value line's compact CNC press brakes: 50 metric tons (55 US tons) over 1,300 or 1,600 mm (4.3 and 5.2 ft), 44 or 51″ between the frames, a 9.8″ throat, 5.9″ stroke and 18.1″ daylight, on a 69 – 85 × 59″ footprint at 7,700 lb. The same electro-hydraulic servo architecture as the big machines — Hawe valves, linear scales on both sides, a servo-driven pump that only runs while the ram moves, Y1-Y2-X-R axes and the 15″ Delem DA-53Tx — with a sectioned punch set and a 2-V die in the crate. Mild steel to 1/8″ (3 mm) over the full length and 5/32″ (4 mm) over 4.3 ft; stainless to 3/32″. For enclosures, HVAC fittings, brackets and small-part production where a 10 ft machine would stand idle — and the lowest-priced real CNC press brake NovoTech sells.",
+   "headline": "55 US tons × 4.3 / 5.2 ft · 4 axes · Delem DA-53Tx · 7,700 lb · servo pump",
+   "features": [
+    "Mild steel to 1/8″ (3 mm) over the full length and 5/32″ (4 mm) over 4.3 ft (V = 8 × thickness); 44 / 51″ (1,120 / 1,300 mm) between the frames",
+    "9.8″ (250 mm) throat, 5.9″ (150 mm) stroke, 18.1″ (460 mm) daylight; 19.7″ (500 mm) X back gauge travel",
+    "4.4 kW (6 HP) servo main motor on a 13 cc pump — the quietest and most frugal CNC brake in the range",
+    "Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
+    "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
+    "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
+    "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
+    "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
+    "Manual top-tool clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+    "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
+    "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
+    "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains",
+    "CNC sheet follower supports",
+    "Quick-release top clamps, double-sided quick clamps or Rolleri pneumatic clamps; Wila hydraulic clamping",
+    "Automatic angle measurement",
+    "Hydraulic oil cooler; automatic lubrication",
+    "Tandem machines on one control; robot bending cells",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-cp-wad1600",
+    "vl-cp-wad1300",
+    "vl-cp-clamps",
+    "vl-cp-backgauge",
+    "vl-cp-fingers",
+    "vl-cp-laser",
+    "vl-cp-servo",
+    "vl-cp-finger-drive",
+    "vl-cp-pump-motor",
+    "vl-cp-hawe",
+    "vl-cp-valve",
+    "vl-cp-hydraulics",
+    "vl-cp-rear",
+    "vl-cp-front-supports",
+    "vl-cp-rear-gauge",
+    "vl-cp-cabinet",
+    "vl-cp-clamps-2",
+    "vl-cp-fingers-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Compact CNC press brakes · 4.3 and 5.2 ft",
+      "sub": "2 models · 55 US tons",
+      "models": [
+       "WAD-50T/1300",
+       "WAD-50T/1600"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "55 US tons (50 t)",
+         "55 US tons (50 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "4.3 ft · 51.2″ (1,300 mm)",
+         "5.2 ft · 63.0″ (1,600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "44.1″ (1,120 mm)",
+         "51.2″ (1,300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "5.9″ (150 mm)",
+         "5.9″ (150 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "18.1″ (460 mm)",
+         "18.1″ (460 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "6.30 in/s (160 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.51 in/s (13 mm/s)",
+         "0.71 in/s (18 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "19.7″ (500 mm) · 13.78 in/s (350 mm/s)",
+         "19.7″ (500 mm) · 15.75 in/s (400 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge R stroke · speed",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)",
+         "7.9″ (200 mm) · 7.87 in/s (200 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo main motor",
+        "sub": "",
+        "cells": [
+         "5.9 HP (4.4 kW)",
+         "5.9 HP (4.4 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "34 US gal (130 L)",
+         "34 US gal (130 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "69 × 59 × 92″ (1,750 × 1,500 × 2,330 mm)",
+         "85 × 59 × 92″ (2,150 × 1,500 × 2,330 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "7,716 lb (3,500 kg)",
+         "7,716 lb (3,500 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WAD-50T/1300",
+      "glance": [
+       "55 US tons (50 t)",
+       "4.3 ft · 51.2″ (1,300 mm)",
+       "5.9″ (150 mm)",
+       "18.1″ (460 mm)",
+       "7,716 lb (3,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-50T/1600",
+      "glance": [
+       "55 US tons (50 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "5.9″ (150 mm)",
+       "18.1″ (460 mm)",
+       "7,716 lb (3,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic press brake brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "pb-compact-cnc"
+  },
+  "vl-nc-compact": {
+   "id": "vl-nc-compact",
+   "control": {
+    "title": "Estun E21PS as standard; Estun E315PS, Delem DA-41T or ESA S630 to order",
+    "text": "The torsion-bar brakes carry the Estun E21PS: a two-axis NC that positions the back gauge (X) and the ram depth (Y) from 40 stored programs of 25 steps, with one-way or two-way positioning, retract, a stroke counter and inch / mm display — simple to learn in an hour. For angle programming and a tool and material database, the 15.6″ touch Estun E315PS (6+1 axes), the 7″ touch Delem DA-41T (100 programs, angle programming) or the 10″ ESA S630 (2D, 4 axes) can be fitted instead.",
+    "images": [
+     "ctl-estun-e21ps",
+     "ctl-estun-e315ps",
+     "ctl-delem-da41t",
+     "ctl-esa-s630"
+    ]
+   },
+   "brand": "novotech",
+   "name": "Compact NC hydraulic press brake, 33 US tons × 5.2 ft — torsion bar",
+   "short": "Compact NC press brake 30 t",
+   "models_label": "WC67K-30T/1600 · 1 model",
+   "summary": "The smallest torsion-bar press brake: 30 metric tons (33 US tons) over 1,600 mm (5.2 ft), 51″ between the frames, a 7.9″ throat and 13.2″ daylight, 4,630 lb on a 71 × 47″ footprint. A torsion bar keeps the two cylinders in step, mechanical stops set the depth and the Estun E21PS control positions the back gauge and the ram for 40 stored programs — nothing that needs a technician. Mild steel to 14 ga (2 mm) over the full length and 1/8″ (3 mm) over 4 ft. The press brake for a maintenance shop, a sign maker or a small fabricator bending brackets, boxes and channels in one material, at the lowest price of any powered press brake we sell.",
+   "headline": "33 US tons × 5.2 ft · torsion bar · Estun E21PS · 4,630 lb",
+   "features": [
+    "Mild steel to 14 ga (2 mm) over 5.2 ft and 1/8″ (3 mm) over 4 ft (V = 8 × thickness); 51″ (1,300 mm) between the frames, 7.9″ (200 mm) throat, 13.2″ (335 mm) daylight",
+    "23.6″ (600 mm) motorised X back gauge on ball screw and linear guide; 5.5 kW (7.5 HP) motor",
+    "Estun E21PS NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, one-way / two-way positioning, stroke counter; inches or millimetres",
+    "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
+    "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
+    "Welded, stress-relieved monoblock frame machined in one setting; Rexroth-type hydraulic block; Schneider electrics",
+    "Manual top-tool clamps, segmented 2-V die and sectioned punch set; front support arms",
+    "Side and rear guards; foot pedal with emergency stop",
+    "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Estun E315PS 15.6″ touch NC control (6+1 axes, tool and material database), Delem DA-41T 7″ touch or ESA S630 10″ touch control",
+    "Y-axis CNC upgrade (closed-loop ram) to the WAD series",
+    "DSP laser finger protection or light curtain",
+    "Sheet follower support; longer back gauge",
+    "Hydraulic oil cooler",
+    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
+   ],
+   "images": [
+    "vl-cp-wc67k",
+    "vl-cp-e21",
+    "vl-cp-nc-screw",
+    "vl-cp-nc-valve",
+    "vl-nc-torsion",
+    "vl-nc-bg-motor"
+   ],
+   "videos": [
+    {
+     "id": "0imM4bArpBc",
+     "title": "5 ft × 50 ton hydraulic press brake with Estun NC control",
+     "duration": "PT4M45S",
+     "thumb": "video-0imM4bArpBc"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Compact NC press brake · 5.2 ft",
+      "sub": "1 model · 33 US tons",
+      "models": [
+       "WC67K-30t/1600"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "33 US tons (30 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "5.2 ft · 63.0″ (1,600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Distance between columns",
+        "sub": "",
+        "cells": [
+         "51.2″ (1,300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "3.1″ (80 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Daylight",
+        "sub": "open height",
+        "cells": [
+         "13.2″ (335 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.67 in/s (17 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Back gauge X stroke · speed",
+        "sub": "",
+        "cells": [
+         "23.6″ (600 mm) · 5.91 in/s (150 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "7.4 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic oil tank",
+        "sub": "",
+        "cells": [
+         "21 US gal (80 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "71 × 47 × 67″ (1,800 × 1,200 × 1,700 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,630 lb (2,100 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WC67K-30t/1600",
+      "glance": [
+       "33 US tons (30 t)",
+       "5.2 ft · 63.0″ (1,600 mm)",
+       "3.1″ (80 mm)",
+       "13.2″ (335 mm)",
+       "4,630 lb (2,100 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Bending force in US tons (metric tons in brackets); the model number is the supplier's — metric tonnage × metric bending length. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports; weights are reference values."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Hydraulic-Press-Brakes-2026.pdf",
+    "label": "Download the hydraulic press brake brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "pb-compact-nc"
+  },
   "vl-wadg": {
    "id": "vl-wadg",
+   "control": {
+    "title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W or Cybelec CybTouch 12 to order",
+    "text": "The electric brakes use the same 15″ Delem DA-53Tx as the hydraulic CNC line, driving the servo ram and the X-R back gauge; the 2D graphic DA-58Tx, the 24″ DA-66S and DA-69S, the ESA S840 and S875 W and the Cybelec CybTouch 12 are the options.",
+    "images": [
+     "ctl-delem-da53tx",
+     "ctl-delem-da58tx",
+     "ctl-delem-da66s",
+     "ctl-delem-da69s",
+     "ctl-esa-s875w-card",
+     "ctl-cybelec-ct12"
+    ]
+   },
    "brand": "novotech",
    "name": "Electric servo press brakes, 11 – 176 US tons × 1.6 – 10.5 ft",
    "short": "Electric press brakes 10 – 160 t",
    "models_label": "WADG-10T/500 – WADG-160T/3200 · 10 models",
-   "summary": "A press brake without hydraulics: servo motors drive the ram through timing belts and dual lead ball screws, so there is no oil, no pump running between bends, no valves to drift and no warm-up — the ram repeats to ± 0.01 mm from the first part, bends at any speed from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53T control and X-R servo back gauge; the 40 and 50 t machines are also sold in robot bending cells.",
+   "summary": "A press brake without hydraulics: servo motors drive the ram through timing belts and dual lead ball screws, so there is no oil, no pump running between bends, no valves to drift and no warm-up — the ram repeats to ± 0.01 mm from the first part, bends at any speed from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53Tx control and X-R servo back gauge; the 40 and 50 t machines are also sold in robot bending cells.",
    "features": [
     "Mild steel to 1/4″ over 10 ft on the 100 t; 5/16″ over 10 ft on the 160 t (V = 8 × thickness)",
     "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
     "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
     "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
-    "Delem DA-53T 2D CNC control; X and R back gauge axes on HIWIN linear guides and TBI ball screws, Inovance servo drives",
-    "Mechanical quick clamps and 2-V die with segmented punch; Schneider electrics; NACHI bearings; automatic lubrication",
+    "Delem DA-53Tx 15″ touch CNC control; X and R back gauge axes on HIWIN linear guides and TBI ball screws, Inovance servo drives",
+    "Manual top-tool clamps and 2-V die with segmented punch; Schneider electrics; NACHI bearings; automatic lubrication",
     "Light curtain, side and rear guards, foot pedal with emergency stop",
     "CSA-approved electrical panel, 600 V 3-phase standard (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Delem DA-66S or DA-69S 3D control; ESA S875",
+    "Delem DA-58Tx 2D graphic, DA-66S or DA-69S control; ESA S840 or S875 W; Cybelec CybTouch 12",
     "Wila hydraulic clamping; DSP laser finger protection",
     "Angle measurement; CNC crowning on 60 t and up",
     "Robot bending cell with Estun robot",
@@ -3659,14 +4196,14 @@
    "name": "Compact electric servo press brakes, 3 – 13 US tons × 8 – 24″",
    "short": "Compact electric press brakes",
    "models_label": "WADG-3T/200 · WADG-6T/400 · WADG-12T/600",
-   "summary": "Bench-size electric brakes for electronics enclosures, brackets, small appliance and instrument parts: 3, 6 and 12 t over 8, 16 and 24″, a 2 – 5.5 kW servo motor, 4.7″ stroke and 16.5″ daylight in a 28 – 33″ footprint on 220 V. Two CNC axes (X and R back gauge) with a touchscreen control, mechanical quick clamp for the punch and a 2-V quick-change die — the same ± 0.01 mm repeatability as the big machines, with 50 % less energy and 40 % less noise than a small hydraulic brake.",
+   "summary": "Bench-size electric brakes for electronics enclosures, brackets, small appliance and instrument parts: 3, 6 and 12 t over 8, 16 and 24″, a 2 – 5.5 kW servo motor, 4.7″ stroke and 16.5″ daylight in a 28 – 33″ footprint on 220 V. Two CNC axes (X and R back gauge) with a touchscreen control, a manual top-tool clamp and a 2-V die — the same ± 0.01 mm repeatability as the big machines, with 50 % less energy and 40 % less noise than a small hydraulic brake.",
    "features": [
     "Single-phase or 3-phase supply; 20 % smaller footprint than a hydraulic brake of the same tonnage",
     "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
     "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
     "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
     "Touchscreen CNC with X and R back gauge axes on cylindrical guides",
-    "Mechanical quick clamp and 2-V quick-change die; foot pedal with emergency stop"
+    "Manual top-tool clamp and 2-V die; foot pedal with emergency stop"
    ],
    "optional": [
     "Single-V mechanical die clamping",

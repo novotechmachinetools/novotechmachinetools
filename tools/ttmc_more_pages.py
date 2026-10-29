@@ -489,12 +489,12 @@ EXTRA = {
                   "a": "By the weight and where its centre of gravity sits. The rating is for the centre of gravity close to the table centre and face: the further it is from the axis (an off-centre bracket) or from the table (a tall part), the more torque the drive and the tilt need. The heavy WP positioners are rated with the centre of gravity up to 12″ from the table centre and 12″ above it. For off-centre or tall parts choose the next size up, and send us a sketch with the weight."}],
         related_add=[{"href": "pipe-sanding-polishing-machines.html", "label": "Pipe sanding & polishing"}],
         set={"title": "Welding Positioners, Turning Rolls & Pipe Stands | NovoTech",
-             "meta_description": "Welding positioners 33 – 8,818 lb, turning rolls to 11,023 lb, pipe stands and supports, a welding table and downdraft tables — Tubend and NovoTech.",
+             "meta_description": "Welding positioners 33 – 8,818 lb, turning rolls to 11,023 lb, pipe stands and supports, a welding table and downdraft tables — NovoTech premium and value lines.",
              "h1": "Welding positioners, turning rolls, pipe stands and welding tables",
              "artifact_title": "Welding positioners, turning rolls, pipe stands and welding tables",
              "faq_title": "Questions we get asked about welding positioners and turning rolls",
              "breadcrumb": CRUMBS + [{"label": "Welding positioners & turning rolls"}],
-             "hero_brand_line": "Tubend machines are made in Bursa, Turkey, by Tubend Machine, with European components; NovoTech's value-line positioners, turning rolls, stands and tables are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
+             "hero_brand_line": "The WP tilting positioners are built in Turkey for NovoTech's premium line, with European components; NovoTech's value-line positioners, turning rolls, stands and tables are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
 }
 

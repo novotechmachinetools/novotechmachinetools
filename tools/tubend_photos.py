@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Tubend photos (HP horizontal presses, TB mandrel-less pipe benders, WP welding positioners) from three sources outside the
-repo:
+"""Photos of the HP horizontal presses, TB mandrel-less pipe benders and WP welding positioners (NovoTech premium line, made in
+Turkey) from three sources outside the repo:
 
   /home/claude/tubend/img/      tubend.com.tr product images (Oct 24) — the machine PNGs are Tubend's own clean cut-outs
   /home/claude/tubend/pdfimg/   images of NovoTech's earlier Tubend brochure (NovoTech_Tubend_Presses_Benders_2026.pdf, pdfimages;
@@ -59,16 +59,16 @@ PHOTOS = {
     "tb-hp120-side": C(WEB + "hp120.png", "HP 120 / HP 150 from the side: hydraulic unit, control box, T-slot table and foot pedal", up=True),
     "tb-hp120-straighten": P(WEB + "hp120-2.jpg", "Straightening a plate between the hardened support columns of the HP 120 / HP 150"),
     # ---- TB 34 / TB 42 --------------------------------------------------------------------------------------------
-    "tb-tb34": C(WEB + "tb34.png", "Tubend TB 34 electric mandrel-less pipe bender with digital angle readout", up=True),
+    "tb-tb34": C(WEB + "tb34.png", "NovoTech TB 34 electric mandrel-less pipe bender with digital angle readout", up=True),
     "tb-tb34-parts": P(PDF + "p20-000.png", "Street furniture, bike racks and serpentine tube bent on the TB 34"),
     "tb-tb34-barrier": P(PDF + "p20-001.png", "Safety barrier bent from pipe on the TB 34"),
-    "tb-tb42": C(WEB + "tb42.png", "Tubend TB 42 hydraulic mandrel-less pipe bender", up=True),
+    "tb-tb42": C(WEB + "tb42.png", "NovoTech TB 42 hydraulic mandrel-less pipe bender", up=True),
     "tb-tb42-part": P(WEB + "tb42-1.jpg", "Pipe bent to a U on the TB 42"),
     "tb-tb42-dies": P(PDF + "p21-000.png", "TB 42 pipe bending dies on the top plate"),
     "tb-tb42-panel": P(PDF + "p21-001.png", "TB 42 control panel with digital readout, emergency stop and joystick"),
     # ---- WP 100 / WP 300 ------------------------------------------------------------------------------------------
-    "tb-wp300": C(WEB + "wp300.png", "Tubend WP 300 tilting welding positioner with slotted turntable and control box"),
-    "tb-wp100": C(WEB + "wp100.png", "Tubend WP 100 compact tilting welding positioner"),
+    "tb-wp300": C(WEB + "wp300.png", "NovoTech WP 300 tilting welding positioner with slotted turntable and control box"),
+    "tb-wp100": C(WEB + "wp100.png", "NovoTech WP 100 compact tilting welding positioner"),
     "tb-wp300-plate": C(PDF + "c-p28-002.png", "WP 300 with a custom perforated work plate for welding fixtures", clean=40),
 }
 
@@ -81,24 +81,43 @@ def matte_rgba(im):
     return bg.convert("RGB"), im.split()[-1]
 
 
-# the maker's logo and name on the HP horizontal press photos — the presses are sold as NovoTech's premium line (Oct 2026):
-# boxes (x0, y0, x1, y1) in the pixels of the finished photo, filled by LaMa (tools/lama_inpaint.py)
+# the maker's logo and name on the photos — every machine is sold as NovoTech's premium line (HP presses Oct 2026, TB benders and
+# WP positioners Oct 28 2026): boxes (x0, y0, x1, y1) in the pixels of the finished photo, filled by LaMa (tools/lama_inpaint.py)
 LOGO = {
     "tb-hp10": [(55, 82, 273, 217)], "tb-hp80": [(113, 158, 347, 275)], "tb-hp-backgauge": [(274, 90, 352, 172)],
     "tb-hp120-straighten": [(2235, 115, 2570, 255)],
+    "tb-tb34": [(480, 705, 820, 938)],                                   # name plate on the front of the bender
+    "tb-tb42": [(415, 402, 618, 538), (1135, 310, 1280, 392)],          # name plate on the door; name embossed on the side handle
+    "tb-tb42-panel": [("tint", 335, 688, 556, 848), ("tint", 556, 700, 600, 828)],   # name printed on the control panel, under the STOP ring, beside the panel edge
+    "tb-wp300": [(202, 728, 300, 828)], "tb-wp300-plate": [(275, 775, 392, 858)],   # name plate on the column
 }
 # the maker's name typed on a control screen: the cell is painted with its own background colour, sampled at (x, y)
 SCREEN = {"tb-hp-screen-recipe": [((905, 168, 1040, 207), (1060, 186))]}
 
 
 def delogo(im, boxes):
+    """boxes: (x0, y0, x1, y1) fills the whole rectangle; ("tint", x0, y0, x1, y1) fills only the blue-tinted pixels (the maker's
+    blue-grey lettering and its blue underline) inside the rectangle, dilated by a few pixels — for a logo printed next to
+    other labels that must stay."""
     import numpy as np
     from lama_inpaint import inpaint
+    from scipy import ndimage
     rgba = im.mode == "RGBA"
     rgb = np.asarray(im.convert("RGB")).copy()
     mask = np.zeros(rgb.shape[:2], np.uint8)
-    for x0, y0, x1, y1 in boxes:
-        mask[y0:y1, x0:x1] = 255
+    for box in boxes:
+        if box[0] == "tint":
+            _, x0, y0, x1, y1 = box
+            sub = rgb[y0:y1, x0:x1].astype(int)
+            r, g, b = sub[..., 0], sub[..., 1], sub[..., 2]
+            yellow = ndimage.binary_dilation((r > 170) & (g > 150) & (b < 130), iterations=5)       # the STOP ring and its black letters stay
+            dark = (r < 130) & (g < 130) & (b < 150) & ~yellow
+            tint = (((b > r + 8) & (r < 215) & (b > 60)) | dark) & ~yellow                           # lettering, its halo, dark specks
+            tint = ndimage.binary_dilation(tint, iterations=9) & ~yellow
+            mask[y0:y1, x0:x1][tint] = 255
+        else:
+            x0, y0, x1, y1 = box
+            mask[y0:y1, x0:x1] = 255
     out = Image.fromarray(inpaint(rgb, mask))
     if rgba:
         out.putalpha(im.getchannel("A"))

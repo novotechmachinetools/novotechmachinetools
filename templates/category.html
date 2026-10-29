@@ -83,18 +83,24 @@
 </section>
 {% endif %}
 {% for g in page.groups %}
-<section class="group" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
-  <header class="group-head{{ ' has-brand' if g.brand else '' }}">
-    {% if g.brand %}{% set br = site.brands[g.brand] %}
+<section class="group{{ (' line-' ~ g.brand ~ (' line-value' if g.brand == 'novotech' else ' line-premium')) if g.brand else '' }}" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
+  {% if g.brand %}{% set br = site.brands[g.brand] %}
+  <header class="line-head">
     <div class="line-badge line-{{ g.brand }}">
       {% if br.logo %}{% set lg = img(br.logo) %}<img src="{{ lg.src }}" width="{{ lg.w }}" height="{{ lg.h }}" alt="{{ br.name }}" loading="lazy" decoding="async">{% endif %}
       <span class="line-name">{{ br.line }}</span>
     </div>
-    {% endif %}
+    <h2 id="{{ g.id }}-title" class="line-title">{{ g.title }}</h2>
+    {% if g.lead %}<p class="group-lead">{{ g.lead }}</p>{% endif %}
+    <p class="group-lead">{{ g.tagline or br.tagline }}</p>
+    {% if g.pdfs or page.range_rows %}<p class="line-links">{% for pd in g.pdfs %}<a class="btn btn-ghost btn-small" href="{{ pd.file }}" download>{{ pd.label }} <small>({{ pd.size }})</small></a> {% endfor %}{% if page.range_rows %}<a class="arrow" href="#range-at-a-glance">Capacity table</a>{% endif %}</p>{% endif %}
+  </header>
+  {% else %}
+  <header class="group-head">
     <h2 id="{{ g.id }}-title">{{ g.title }}</h2>
     {% if g.lead %}<p class="group-lead">{{ g.lead }}</p>{% endif %}
-    {% if g.brand %}<p class="group-tagline">{{ g.tagline or site.brands[g.brand].tagline }}</p>{% endif %}
   </header>
+  {% endif %}
 
   {% for f in g.families %}
   <article class="family" id="{{ f.id }}">
@@ -113,6 +119,18 @@
         <ul class="features">
           {% for feat in f.features %}<li>{{ feat }}</li>{% endfor %}
         </ul>
+        {% if f.control %}
+        <div class="control-note">
+          <h4>Control — {{ f.control.title }}</h4>
+          <p>{{ f.control.text }}</p>
+          {% if f.control.images %}
+          <ul class="control-thumbs">
+            {% for im in f.control.images %}<li><a href="{{ im.src }}" class="control-thumb{{ ' is-cutout' if im.alpha else '' }}" data-lightbox="{{ f.id }}-controls" aria-label="{{ im.alt }}"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="150px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></a><span>{{ im.caption }}</span></li>{% endfor %}
+          </ul>
+          {% endif %}
+          <p class="control-more"><a class="arrow" href="press-brake.html#controls">Compare every control in the buying guide</a></p>
+        </div>
+        {% endif %}
         {{ cta_row(f) }}
       </div>
     </div>

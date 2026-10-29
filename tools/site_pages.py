@@ -15,7 +15,7 @@ HOME = {"label": "Home", "href": "index.html"}
 
 # ------------------------------------------------------------------------------------------------ catalog
 BLURBS = {
-    "press-brake": "CNC hydraulic, hybrid and electric press brakes, 22 to 1,323 US tons — Dener premium and NovoTech value lines.",
+    "press-brake": "Hydraulic, hybrid, electric and compact press brakes, 16 to 1,323 US tons (15 to 1,200 t) — the Dener premium line and the NovoTech value line.",
     "panel-bender": "CNC panel benders that bend all four sides of a panel without tool changes, 47″ to 165″ bend width.",
     "v-grooving-machine": "CNC V-grooving machines for sharp architectural bends — horizontal to 20 ft, vertical to 1/4″ plate.",
     "folder-sheet-metal-brake": "Magnetic brakes, box and pan brakes, hand brakes, hydraulic, electric and CNC folders, roofing brakes and 3-in-1 machines.",
@@ -110,14 +110,12 @@ BRANDS = [
      "what": "Shearing and milling plate bevellers for weld preparation"},
     {"name": "Plastmak", "country": "Turkey", "since": None, "logo": "plastmak-logo", "href": "pvc-aluminum-window-machines.html",
      "what": "Aluminum and PVC window and door machinery, from single machines to complete lines"},
-    {"name": "Tubend", "country": "Turkey", "since": None, "logo": "tubend-logo", "href": "pipe-benders.html",
-     "what": "Mandrel-less pipe benders and welding positioners"},
     {"name": "Wecotech", "country": "Switzerland", "since": None, "logo": None, "href": "tube-end-forming-machines.html",
      "what": "Tube end forming machines: expanders, reducers, inner and outer formers"},
     {"name": "WIKUS", "country": "Germany", "since": None, "logo": None, "href": "band-saw-blades.html",
      "what": "Bimetal and carbide-tipped band saw blades, welded to length"},
     {"name": "NovoTech premium line", "country": "Turkey", "since": None, "logo": "novotech-logo", "href": "plate-rollers.html",
-     "what": "Plate rollers, angle rolls, ironworkers, hydraulic presses, shears and pipe polishers built to NovoTech's specification with European components"},
+     "what": "Plate rollers, angle rolls, ironworkers, hydraulic presses, shears, pipe polishers, horizontal presses, pipe benders and welding positioners built to NovoTech's specification with European components"},
     {"name": "NovoTech value line", "country": "China", "since": None, "logo": "novotech-logo", "href": "hydraulic-press-brake.html",
      "what": "CNC press brakes, fiber lasers, shears, panel benders and band saws built to North American quality standards"},
 ]
@@ -133,7 +131,7 @@ BROCHURES = [
     ("bending", "NovoTech-Senfeng-Panel-Benders-2026.pdf", "Senfeng panel benders"),
     ("bending", "NovoTech-V-Grooving-Machines-2026.pdf", "CNC V-grooving machines"),
     ("bending", "NovoTech-Horizontal-Press-Brakes-2026.pdf", "NovoTech premium-line horizontal press brakes"),
-    ("bending", "NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf", "Tubend pipe benders and welding positioners"),
+    ("bending", "NovoTech-Pipe-Benders-Welding-Positioners-2026.pdf", "NovoTech premium-line pipe benders and welding positioners"),
     ("bending", "NovoTech-Press-Brake-Tooling-Catalogue-2026.pdf", "EUROSTAMP press brake tooling catalogue — inch edition"),
     ("laser", "NovoTech-Dener-Fiber-Lasers-2026.pdf", "Dener fiber laser cutting machines"),
     ("laser", "NovoTech-Fiber-Lasers-Value-Line-2026.pdf", "NovoTech value-line fiber lasers"),
@@ -263,8 +261,8 @@ def main():
                       "one-year warranty. Our technicians commission machines, train operators and troubleshoot by video call, and spare "
                       "parts are stocked in Mississauga, ON, Canada."]},
             {"title": "Who we work with",
-             "text": ["We have built long partnerships with manufacturers on several continents: Dener, GMS, ISITAN, Bekamak, Plastmak and "
-                      "Tubend in Turkey; Gecam, Eurofintec and EUROSTAMP in Italy; Cevisa in Spain; Wecotech in Switzerland; WIKUS in "
+             "text": ["We have built long partnerships with manufacturers on several continents: Dener, GMS, ISITAN, Bekamak and Plastmak "
+                      "in Turkey; Gecam, Eurofintec and EUROSTAMP in Italy; Cevisa in Spain; Wecotech in Switzerland; WIKUS in "
                       "Germany; CSM in Taiwan; and Senfeng in China. Our own NovoTech premium line is built in Turkey to our "
                       "specification with European components, and the NovoTech value line is built to North American quality "
                       "standards."]},

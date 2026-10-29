@@ -204,7 +204,7 @@ FAMILIES = [
 HUB = "plate-rollers"
 GUIDE = {"href": "plate-rollers.html#buying-guide", "label": "Plate roller buying guide: 3-roll vs 4-roll, capacities, cones and controls"}
 VOLT_FAQ = {"q": "What voltage do ISITAN plate rollers run on?",
-            "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor."}
+            "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase."}
 
 PAGES = {
     "hydraulic-4-roll-plate-rollers": dict(

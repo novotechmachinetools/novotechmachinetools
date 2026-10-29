@@ -39,6 +39,8 @@ PHOTOS = {
     "nt-vs400-1": dict(src="VS-500.jpg", alt="NovoTech VS-400 vertical metal band saw with work light and table gauge, 15-3/4″ throat",
                        boxes=[(1648, 364, 1897, 512), (1578, 664, 1972, 902)]),
     "nt-vs500-1": dict(src="VS400.jpg", alt="NovoTech VS-500 vertical metal band saw, 19-3/4″ throat", boxes=[(396, 187, 476, 244)]),
+    # ---------------------------------------------------------------- CNC double column saw (the catalogue crop had white blotches — Oct 28 2026)
+    "nt-a14-1": dict(src="BS-500G-500GT.jpg", alt="NovoTech BS-500G / BS-500GT CNC automatic band saw", boxes=[(664, 430, 733, 468)], up=True),
 }
 
 
@@ -77,7 +79,7 @@ def process(key):
     if p.get("boxes"):
         im = fill_boxes(im, p["boxes"])
     im = trim(im)
-    if max(im.size) < SMALL:
+    if max(im.size) < SMALL or p.get("up"):
         from esrgan import upscale
         im = upscale(im.convert("RGB"))
     if key.startswith("tm-"):

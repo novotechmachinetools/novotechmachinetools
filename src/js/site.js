@@ -278,6 +278,21 @@
     });
   });
 
+  /* ---------- control thumbnails under a family: open in the lightbox as one set ---------- */
+  d.querySelectorAll(".control-thumbs").forEach(function (ul) {
+    var links = Array.prototype.slice.call(ul.querySelectorAll("a.control-thumb"));
+    var items = links.map(function (a) { var im = a.querySelector("img"); return { src: a.getAttribute("href"), srcset: im.getAttribute("srcset") || "", alt: im.alt, cap1: "", cap2: (a.nextElementSibling && a.nextElementSibling.textContent) || im.alt }; });
+    links.forEach(function (a, i) {
+      a.addEventListener("click", function (e) {
+        if (!window.HTMLDialogElement) return;
+        e.preventDefault();
+        ensureLightbox();
+        lbItems = items; showLb(i);
+        lightbox.showModal();
+      });
+    });
+  });
+
   /* ---------- YouTube players: poster first; when a video scrolls into view it autoplays muted,
      when it scrolls away the player is removed again so only one player runs at a time ---------- */
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

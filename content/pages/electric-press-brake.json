@@ -34,12 +34,13 @@
    "label": "Electric press brakes — servo-electric and ball-screw, 3 to 220 US tons"
   }
  ],
- "hero_brand_line": "The premium line is built by Dener Makina in Kayseri, Turkey (press brakes since 1974); NovoTech's value line is built in China to our specification with Delem, Hawe and Estun components; the compact brakes by ISITAN in Bursa, Turkey. All sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "The premium line is built by Dener Makina in Kayseri, Turkey (press brakes since 1974); NovoTech's value line is built in China to our specification with Delem, Hawe and Estun components. All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "pb-servo-group",
    "title": "Servo-electric and ball-screw press brakes · premium line",
    "lead": "No hydraulic oil: the Dener DDM servo-electric brake for production to 220 tons and the DDS ball-screw brake for small parts.",
+   "brand": "dener",
    "families": [
     "dn-ddm",
     "dn-dds"
@@ -49,6 +50,7 @@
    "id": "pb-value-electric-group",
    "title": "Electric press brakes · value line",
    "lead": "NovoTech's own electric brakes: ball-screw servo drive from 3 to 176 US tons — the clean, quiet, accurate brake for sheet work at a value-line price.",
+   "brand": "novotech",
    "families": [
     "vl-wadg",
     "vl-wadg-mini"
@@ -78,7 +80,7 @@
   },
   {
    "q": "What tooling fits, and do you stock it?",
-   "a": "The premium Dener and ISITAN brakes come with European-style (Promecam / Amada) quick-release clamping, and a sectioned punch set with a 2-V die ships with every machine of both lines; the value-line brakes use their own clamping, so tell us which tooling standard your shop already has and we fit the clamps to match. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools, gooseneck and special profiles — and sizes it to your machine; Wila hydraulic clamping and American-style adapters are options."
+   "a": "European-style (Promecam / Amada) segmented tooling fits every line: the premium Dener brakes carry European-style top-tool holders, the value-line brakes their own clamping, and a sectioned punch set with a 2-V or 4-V die ships with every machine (a 4-V die with the Dener brakes, a 2-V die with the value line) — tell us which tooling standard your shop already has and we fit the holders to match. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools, gooseneck and special profiles — and sizes it to your machine; quick-release, pneumatic and Wila hydraulic clamping and American-style adapters are options, not standard equipment."
   },
   {
    "q": "What about safety and the Ontario pre-start review?",
@@ -86,11 +88,19 @@
   },
   {
    "q": "Do you deliver, install and service in Canada?",
-   "a": "Yes — NovoTech delivers across Canada and the United States from Mississauga, ON, Canada, commissions the machine and trains your operators — free of charge in the Greater Toronto Area, on request elsewhere; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
+   "a": "Yes — NovoTech sells, installs and supports press brakes across Canada and the United States. Installation, commissioning and operator training are free of charge in the Greater Toronto Area; outside the GTA our technicians do the same work at an additional charge. Dener Canada and NovoTech stock the parts in Canada. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
+  },
+  {
+   "q": "What does delivery cost, and who unloads the machine?",
+   "a": "A press brake ordered from the factory (back-ordered) travels in its container straight from the port, customs and the rail yard to your plant door: in the Greater Toronto Area that delivery is free; outside the GTA the freight is quoted and charged. A machine from NovoTech's stock is loaded, shipped and unloaded at the buyer's cost. In every case unloading is the buyer's responsibility and expense — the crane or forklift, the rigging and moving the machine onto its foundation — so book a rigger for the delivery day; we are glad to recommend riggers who know press brakes and to tell you the weight and lifting points."
+  },
+  {
+   "q": "Is the hydraulic oil included?",
+   "a": "No — the hydraulic oil is bought by the customer. Before commissioning, fill the tank with ISO VG 46 anti-wear hydraulic oil (AW 46) in the quantity shown in the specification table for your model; our technician checks the level and bleeds the system during installation. Electric press brakes have no hydraulic oil at all."
   },
   {
    "q": "What voltage do these machines run on?",
-   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models with a small enough motor. Manual machines have no electrics."
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
   }
  ],
  "faq_title": "Questions we get asked about electric press brakes",
@@ -209,7 +219,7 @@
   },
   {
    "title": "Free delivery in the GTA on factory orders",
-   "text": "A press brake ordered from the factory is delivered to your door anywhere in the Greater Toronto Area at no charge. In-stock machines, and deliveries elsewhere in Canada and the United States, ship at competitive freight rates arranged by NovoTech.",
+   "text": "A press brake ordered from the factory is delivered to your door anywhere in the Greater Toronto Area at no charge; unloading at your plant is the buyer's. In-stock machines, and deliveries elsewhere in Canada and the United States, ship at freight rates quoted by NovoTech.",
    "icon": "truck"
   },
   {

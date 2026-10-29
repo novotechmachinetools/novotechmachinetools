@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Tubend (Bursa, Turkey) — sold under its own brand, three product groups only (Oct 2026 brief):
+"""HP horizontal presses, TB pipe benders and WP welding positioners — made in Bursa, Turkey, sold as NovoTech's premium line without
+the maker's name (HP Oct 2026, TB / WP Oct 28 2026); three product groups only (Oct 2026 brief):
 
   * HP 10 – HP 150 NC hydraulic horizontal presses → horizontal-press-brake.html (the old site's URL, kept: it ranks for
     "horizontal press brake" and "horizontal hydraulic press"), written by tools/tubend_pages.py;
@@ -191,7 +192,7 @@ FAMILIES = [
          videos=[],
          specs=spec([T_HPH], HPH_LABELS, HP_GK, HP_NOTE)),
     # -------------------------------------------------------------------------------------------- mandrel-less pipe benders
-    dict(id="tubend-tb34", group="tubend-tb", page=P_TB, brand=BRAND,
+    dict(id="tubend-tb34", group="tubend-tb", page=P_TB, brand="novotech-premium",
          name="TB 34 electric mandrel-less pipe bender, 1″ NPS pipe",
          short="TB 34",
          models_label="TB 34 · 1 model",
@@ -210,7 +211,7 @@ FAMILIES = [
          images=["tb-tb34", "tb-tb34-parts", "tb-tb34-barrier"],
          videos=[],
          specs=spec([T_TB34], ["Max. bending capacity", "Min. bending radius", None, "Control", "Weight"], TB_GK, TB_NOTE)),
-    dict(id="tubend-tb42", group="tubend-tb", page=P_TB, brand=BRAND,
+    dict(id="tubend-tb42", group="tubend-tb", page=P_TB, brand="novotech-premium",
          name="TB 42 hydraulic mandrel-less pipe bender, 1-1/4″ NPS pipe",
          short="TB 42",
          models_label="TB 42 · 1 model",
@@ -227,12 +228,12 @@ FAMILIES = [
          videos=[],
          specs=spec([T_TB42], ["Max. bending capacity", None, None, "Control", "Weight"], TB_GK, TB_NOTE)),
     # -------------------------------------------------------------------------------------------- welding positioners
-    dict(id="tubend-wp", group="tubend-wp", page=P_WP, brand=BRAND,
+    dict(id="tubend-wp", group="tubend-wp", page=P_WP, brand="novotech-premium",
          name="WP 100 · WP 300 tilting welding positioners, 220 – 661 lb",
          short="WP 100 · WP 300",
          models_label="WP 100 · WP 300 · 2 models",
          summary="A welding positioner turns the part under the torch, so a round weld is laid in one continuous pass in the flat "
-                 "position instead of being stopped and restarted around the part. Tubend's WP 100 carries 220 lb on a Ø13-3/4″ "
+                 "position instead of being stopped and restarted around the part. NovoTech's premium-line WP 100 carries 220 lb on a Ø13-3/4″ "
                  "table that tilts 120°; the WP 300 carries 661 lb on a Ø18-7/8″ table that tilts 90°. The table turns 360° at 1 to "
                  "5.5 rpm, set on the control box and run from the standard foot pedal; T-slots take clamps and fixtures, and a "
                  "Ø6-1/4″ or Ø7-7/8″ lathe chuck or a custom fixture plate (WP 300) is available. Single-phase 220 V.",

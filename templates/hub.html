@@ -109,15 +109,20 @@
 <div class="wrap page-body">
 {% if page.lineup %}
 <div class="lineup" id="lineup">
+<header class="lineup-head">
+  <h2 class="lineup-title">Line-up</h2>
+  <p class="group-lead">Every {{ page.lineup_noun or page.section_label|default('machine')|lower }} family NovoTech sells, by brand — the specifications, photos and videos are on the section pages.</p>
+</header>
 {% for lg in page.lineup %}{% set br = lg.info %}
-<section class="group group-cards lineup-line line-{{ lg.brand }}" id="{{ lg.id }}" aria-labelledby="{{ lg.id }}-title">
-  <header class="group-head has-brand">
+<section class="group group-cards lineup-line line-{{ lg.brand }} {{ 'line-value' if lg.brand == 'novotech' else 'line-premium' }}" id="{{ lg.id }}" aria-labelledby="{{ lg.id }}-title">
+  <header class="line-head">
     <div class="line-badge line-{{ lg.brand }}">
       {% if br.logo %}{% set lgo = img(br.logo) %}<img src="{{ lgo.src }}" width="{{ lgo.w }}" height="{{ lgo.h }}" alt="{{ br.name }}" loading="lazy" decoding="async">{% endif %}
       {% if br.line %}<span class="line-name">{{ br.line }}</span>{% endif %}
     </div>
-    <h2 id="{{ lg.id }}-title">{{ lg.title }}</h2>
-    {% if br.tagline %}<p class="group-tagline">{{ br.tagline }}</p>{% endif %}
+    <h2 id="{{ lg.id }}-title" class="line-title">{{ lg.title }}</h2>
+    {% if br.tagline %}<p class="group-lead">{{ br.tagline }}</p>{% endif %}
+    {% if lg.pdfs or page.range_rows %}<p class="line-links">{% for pd in lg.pdfs %}<a class="btn btn-ghost btn-small" href="{{ pd.file }}" download>{{ pd.label }} <small>({{ pd.size }})</small></a> {% endfor %}{% if page.range_rows %}<a class="arrow" href="#range-at-a-glance">Capacity table</a>{% endif %}</p>{% endif %}
   </header>
   <ul class="family-cards">
     {% for it in lg.cards %}{% set f = it.f %}
