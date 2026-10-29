@@ -84,7 +84,7 @@
   },
   {
    "q": "How much tonnage and length do I need?",
-   "a": "Air bending mild steel takes about 575 × t² ÷ V US tons per foot, with the thickness t and the V opening in inches: in the standard V = 8 × thickness die that is about 4 tons per foot for 16 ga, 9 for 1/8″, 13.5 for 3/16″, 18 for 1/4″ and 36 for 1/2″ (29 in a 10 × t die); stainless needs about 50 % more, aluminum about half. Add a foot of length to the longest part you bend and about 20 % headroom. A 10 ft × 1/4″ shop is a 175 – 220 ton machine; 10 ft × 3/8″ a 250 – 320 ton machine; 13 ft × 1/2″, bent in a 5 – 6″ V, a 400 – 450 ton machine. Tell us your thickest and longest bend and we size the brake and the tooling."
+   "a": "Air bending takes F = S² × 2 × R ÷ (1.4 × V) tonnes per metre of bend — the sheet thickness S and the V opening V in millimetres, the tensile strength R = 47 kg/mm² for mild steel (70 for stainless, 25 for aluminum), the formula behind the EUROSTAMP and Dener bending charts; in inches and US tons per foot it reads 575 × t² ÷ V. With the standard V of about 8 × the thickness, 3 mm needs about 24 t/m (8 US tons per foot), 6 mm 48 t/m (16), 1/4″ 54 t/m (18), 3/8″ in a 3″ V 80 t/m (27) and 1/2″ in a 5″ V 85 t/m (29). Multiply by the bend length and add about 20 % in reserve: 3 m × 6 mm is a 175-ton press brake, 10 ft × 1/4″ a 200 – 220 US ton machine, 10 ft × 3/8″ a 300 – 320 ton machine and 13 ft × 1/2″ a 400 – 450 ton machine. The tonnage calculator in the buying guide on the press brake page does the arithmetic for your thickness and length; tell us your thickest and longest bend and we size the brake and the tooling."
   },
   {
    "q": "What is a hybrid press brake?",
@@ -104,11 +104,11 @@
   },
   {
    "q": "What about safety and the Ontario pre-start review?",
-   "a": "Side guards, an enclosed rear guard, interlocked doors and an anti-panic foot pedal with emergency stop are standard; DSP or Fiessler laser finger protection and light curtains are options we recommend for every CNC machine. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."
+   "a": "Side guards, an enclosed rear guard, interlocked doors and an anti-panic foot pedal with emergency stop are standard; DSP or Fiessler laser finger protection and light curtains are options we recommend for every CNC machine. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs."
   },
   {
    "q": "Do you deliver, install and service in Canada?",
-   "a": "Yes — every press brake is shipped to Mississauga, ON, Canada, unloaded, levelled, commissioned and the operators trained by NovoTech; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
+   "a": "Yes — NovoTech delivers across Canada and the United States from Mississauga, ON, Canada, commissions the machine and trains your operators — free of charge in the Greater Toronto Area, on request elsewhere; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
   },
   {
    "q": "What voltage do these machines run on?",

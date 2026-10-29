@@ -56,7 +56,7 @@
  "faq": [
   {
    "q": "What tonnage do I need?",
-   "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening: in mild steel about 575 × t² ÷ V US tons per foot, with t and V in inches. In a V of 8 × the thickness, a 4 ft bend takes about 16 US tons in 16 ga, 39 tons in 10 ga and 47 tons in 8 ga (0.16″); a wider die lowers the force — 8 ga in a 2″ V takes about 31 tons over 4 ft — at the cost of a larger inside radius. The control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we size the machine."
+   "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening: F = S² × 2 × R ÷ (1.4 × V) tonnes per metre with S and V in millimetres and R = 47 kg/mm² for mild steel — in inches and US tons per foot about 575 × t² ÷ V. In a V of 8 × the thickness, a 4 ft bend takes about 16 US tons in 16 ga, 39 tons in 10 ga and 47 tons in 8 ga (0.16″); a wider die lowers the force — 8 ga in a 2″ V takes about 31 tons over 4 ft — at the cost of a larger inside radius. The control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we size the machine."
   },
   {
    "q": "NC or CNC?",
@@ -72,11 +72,11 @@
   },
   {
    "q": "Are they safe to run without a separate guarding system?",
-   "a": "Every Edgebender carries a Leuze front light guard with learning mode, side covers with safety switches, a programmable back gauge retract and a CE-compliant foot pedal with emergency stop; DSP and Fiessler laser systems are available as options. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."
+   "a": "Every Edgebender carries a Leuze front light guard with learning mode, side covers with safety switches, a programmable back gauge retract and a CE-compliant foot pedal with emergency stop; DSP and Fiessler laser systems are available as options. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs."
   },
   {
    "q": "Do you deliver, install and service in Canada?",
-   "a": "Yes — every press brake is shipped to Mississauga, ON, Canada, unloaded, levelled, commissioned and the operators trained by NovoTech; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
+   "a": "Yes — NovoTech delivers across Canada and the United States from Mississauga, ON, Canada, commissions the machine and trains your operators — free of charge in the Greater Toronto Area, on request elsewhere; Dener Canada and NovoTech stock the parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."
   },
   {
    "q": "What voltage do these machines run on?",

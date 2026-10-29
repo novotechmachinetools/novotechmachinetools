@@ -470,3 +470,58 @@
     });
   }
 })();
+
+/* Press brake tonnage calculator (the buying guide on press-brake.html): the EUROSTAMP air-bending formula
+   F = S² × 2 × R ÷ (1.4 × V) t/m, standard V by thickness, reserve on top — see tools/press_brake_tonnage.py. */
+(function () {
+  var box = document.getElementById('bend-calc');
+  if (!box) return;
+  var form = box.querySelector('[data-calc]'), out = box.querySelector('[data-calc-out]');
+  var DIES = [6, 8, 10, 12, 14, 16, 18, 20, 25, 32, 40, 50, 63, 80, 100, 125, 160, 200, 250, 320];
+  var US_T_PER_FT = 1.1023113 / 3.2808399, US_T = 1.1023113, IN = 25.4, FT = 304.8;
+  function ratio(s) { return s <= 2.5 ? 6 : s < 9 ? 8 : s <= 10 ? 10 : 12; }
+  function standardV(s) {
+    var want = ratio(s) * s, best = DIES[0];
+    DIES.forEach(function (d) { if (Math.abs(d - want) < Math.abs(best - want)) best = d; });
+    return best;
+  }
+  function fmt(x, d) { return x.toLocaleString('en-CA', { maximumFractionDigits: d === undefined ? 0 : d, minimumFractionDigits: 0 }); }
+  function frac(mm) {   // millimetres as inches to the nearest 1/16 for display
+    var inches = mm / IN, whole = Math.floor(inches), num = Math.round((inches - whole) * 16), den = 16;
+    if (num === 16) { whole += 1; num = 0; }
+    if (num === 0) return whole + '″';
+    while (num % 2 === 0) { num /= 2; den /= 2; }
+    return (whole ? whole + '-' : '') + num + '/' + den + '″';
+  }
+  var units = form.elements.units, material = form.elements.material, custom = box.querySelector('.calc-custom');
+  function setUnits() {
+    var imperial = units.value === 'in';
+    box.querySelectorAll('.calc-unit').forEach(function (el, i) { el.textContent = imperial ? (i === 1 ? '(ft)' : '(in)') : '(mm)'; });
+    var t = form.elements.t, l = form.elements.l, v = form.elements.v;
+    if (imperial) { t.step = '0.001'; t.value = '0.25'; l.step = '0.5'; l.value = '10'; v.step = '0.125'; v.value = ''; }
+    else { t.step = '0.1'; t.value = '6'; l.step = '1'; l.value = '3000'; v.step = '0.1'; v.value = ''; }
+  }
+  units.addEventListener('change', setUnits);
+  material.addEventListener('change', function () { custom.hidden = material.value !== 'custom'; });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var imperial = units.value === 'in';
+    var s = parseFloat(form.elements.t.value), L = parseFloat(form.elements.l.value), vIn = parseFloat(form.elements.v.value);
+    var R = material.value === 'custom' ? parseFloat(form.elements.r.value) : parseFloat(material.value);
+    var reserve = 1 + (parseFloat(form.elements.reserve.value) || 0) / 100;
+    if (!(s > 0) || !(L > 0) || !(R > 0)) return;
+    if (imperial) { s *= IN; L *= FT; if (vIn > 0) vIn *= IN; }
+    var v = vIn > 0 ? vIn : standardV(s), std = standardV(s);
+    var f = s * s * 2 * R / (1.4 * v), ft = f * US_T_PER_FT, total = f * L / 1000, machine = Math.ceil(total * reserve / 5) * 5;
+    var set = function (k, html) { out.querySelector('[data-out="' + k + '"]').innerHTML = html; };
+    var len = function (mm, d) { return imperial ? frac(mm) + ' (' + fmt(mm, d === undefined ? 1 : d) + ' mm)' : fmt(mm, d === undefined ? 1 : d) + ' mm (' + frac(mm) + ')'; };
+    set('v', len(v) + (vIn > 0 && Math.abs(v - std) > 0.01 ? ' <small>— standard for this thickness: ' + len(std, 0) + '</small>' : ' <small>— ' + ratio(s) + ' × the thickness, nearest standard die</small>'));
+    set('flange', 'flange ≥ ' + len(0.7 * v, 0) + ' · Ri ≈ ' + len(v / 6));
+    set('per', fmt(f, 1) + ' t/m · ' + fmt(ft, 1) + ' US tons per foot');
+    set('total', fmt(total, 0) + ' t (' + fmt(total * US_T, 0) + ' US tons) over ' + (imperial ? fmt(L / FT, 1) + ' ft' : fmt(L, 0) + ' mm'));
+    set('machine', '<strong>' + fmt(machine, 0) + ' t</strong> · ' + fmt(machine * US_T, 0) + ' US tons <small>with ' + Math.round((reserve - 1) * 100) + ' % in reserve</small>');
+    set('note', 'F = S² × 2 × R ÷ (1.4 × V): ' + fmt(s, 2) + '² × 2 × ' + fmt(R, 0) + ' ÷ (1.4 × ' + fmt(v, 1) + ') = ' + fmt(f, 1) + ' t/m, × ' + fmt(L / 1000, 2) + ' m = ' + fmt(total, 0) + ' t. ' +
+      (R >= 60 ? 'Stainless and high-strength steel also spring back more — allow a deeper bend or a narrower punch angle.' : R <= 30 ? 'Soft aluminum needs little force but a wider V and a larger radius to avoid cracking.' : 'For a bend longer than the machine’s bed, or plate above 1/2″, ask us about the die and the ram deflection.'));
+    out.hidden = false;
+  });
+})();
