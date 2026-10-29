@@ -61,7 +61,7 @@ PAGE_PB = dict(
           "crowning and angle, so the operator loads the sheet and presses the pedal. NovoTech sells Dener press brakes in Canada — the "
           "XL hydraulic press brake in 18 models from 66 to 661 US tons and 5 to 20 ft, the XH hybrid that puts a servo pump on the same "
           "frame for 42 – 58 % less energy, the DDM servo-electric press brake with no hydraulic oil from 44 to 220 US tons, and the DDS "
-          "ball-screw press brake from 22 US tons for small parts. ESA S640 / S875 or Delem DA-66S / 69S controls, European-style tooling, "
+          "ball-screw press brake from 22 US tons for small parts. ESA S840 / S875 or Delem DA-66S / 69S controls, European-style tooling, "
           "back gauges to 6 axes, crowning, angle measurement, sheet followers and robot cells. This is the premium line; NovoTech's own "
           "value-line CNC press brakes and the ISITAN compact press brakes have pages of their own. Installed and supported from Mississauga, ON, Canada, "
           "with a CSA-approved panel and Dener Canada parts.",
@@ -77,7 +77,7 @@ PAGE_PB = dict(
          {"q": "How much tonnage do I need?",
           "a": "Air bending mild steel takes about 575 × t² ÷ V US tons per foot, with the thickness t and the V opening in inches: in the standard V = 8 × thickness die that is about 4 tons per foot for 16 ga, 9 for 1/8″, 13.5 for 3/16″, 18 for 1/4″ and 36 for 1/2″ (29 in a 10 × t die); stainless needs about 50 % more, aluminum about half. With about 20 % headroom, a 10 ft × 1/4″ job is therefore a 175 – 220 ton machine, and 10 ft × 1/2″, bent in a 5 – 6″ V, a 300 – 400 ton machine. Tell us the thickest and longest bend you make and we size the brake and the tooling."},
          {"q": "Which control comes with the machine?",
-          "a": "The XL and DDS come with the 15″ ESA S640 2D graphic control: draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The DDM comes with the 21″ ESA S875 W 3D control with 3D simulation and offline programming. Delem DA-66S (2D) and DA-69S (3D) are options on every machine, as is the ESA S875 W on the XL. All of them program in inches or millimetres and import DXF files."},
+          "a": "The XL and DDS come with the 15″ ESA S840 2D graphic touch-screen control: draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The DDM comes with the 21″ ESA S875 W 3D control with 3D simulation and offline programming. Delem DA-66S (2D) and DA-69S (3D) are options on every machine, as is the ESA S875 W on the XL. All of them program in inches or millimetres and import DXF files."},
          {"q": "What is a hybrid press brake?",
           "a": "On a conventional hydraulic brake the motor and pump run at full speed all day, whether the ram moves or not. The XH hybrid replaces the AC motor and fixed pump with a servo motor driving an inverter pump: the pump turns only while the ram moves, at the speed the ram needs. Dener measures 42 – 58 % energy saving and 17 – 75 % faster approach and return against the XL of the same tonnage, with less heat in the oil and a quieter shop. Everything else — frame, cylinders, valves, tooling, controls — is the XL."},
          {"q": "What back gauge and axes are available?",

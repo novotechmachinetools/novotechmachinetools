@@ -5,7 +5,7 @@
     supports, rear gates, tool holders, quick clamps, the EUROSTAMP punch 1281 / 4-way die 2067, sheet followers, oil cooler,
     tandem; and the two EUROSTAMP tool profiles as DXF (the owner's files) → clean line drawings.
   * tools/src-images/controls/src/      — press brake controls: Delem's own cut-outs (DA-69S, DA-66S, DA-53Tx, DA-58Tx, DA-41T),
-    Cybelec's CybTouch 12 photo, ESA cards and brochure images (S630, S640W, S840, S875 W), the value-line supplier's
+    Cybelec's CybTouch 12 photo, ESA cards and brochure images (S630, S840, S875 W), the value-line supplier's
     controller page (SCS920, Estun E21PS / E315PS crops).
 
 Small images are upscaled 2x with Real-ESRGAN (tools/esrgan.py); a PDF image with a soft mask keeps its alpha.
@@ -39,7 +39,7 @@ DETAIL = {
     "dn-det-front-supports": D("xl-front-supports.png", "Two linear-guided front sheet supports with T-slots, ball transfers, disappearing stops and inch / mm scales"),
     "dn-det-foot-pedal": D("xl-foot-pedal.png", "Foot pedal stand with emergency stop at the operator's position"),
     "dn-det-rear-gates": D("xl-rear-gates.png", "Rear interlocked gates: the back gauge area cannot be entered while the machine runs"),
-    "dn-det-esa-640": D("xl-esa-640.png", "ESA S640 series control: 15″ touch screen, numeric and 2D programming, up to 6 axes"),
+    "dn-det-esa-2d": D("xl-esa-640.png", "ESA 2D touch design on a 15″ touch screen: the profile is drawn and the control calculates the bend sequence — the programming of the S840"),
     "dn-det-esa-875": D("xl-esa-875.png", "ESA S875 W control: 21″ 3D touch screen with EsaBend 3D simulation"),
     "dn-det-bg-xr": D("xl-bg-xr.png", "2-axis (X, R) and 4-axis (X, R, Z1, Z2) back gauge on linear guides and ball screw"),
     "dn-det-bg-5axis": D("xl-bg-5axis.png", "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons"),
@@ -78,8 +78,7 @@ CONTROLS = {
     "ctl-esa-s875w-card": D("esa-s875w-card.webp", "ESA S875 W: 21.5″ Full HD multi-touch 3D control with an Intel i5 PC", up=True, up2=True),
     "ctl-esa-s840-card": D("esa-s840-card.webp", "ESA S840: 15.6″ HD touch control, up to 6 axes, numeric and 2D programming", up=True, up2=True, cutout=True),
     "ctl-esa-s630": D("esa-006-020.png", "ESA S630: 10″ resistive touch control for up to 4 axes, numeric and 2D programming", up=True),
-    "ctl-esa-s640w": D("esa-007-027.png", "ESA S640 W: 15″ touch control with 2D graphic programming, up to 6 axes", mask="esa-007-028.png", up=True, cutout=True),
-    "ctl-esa-s640": D("xl1560-esa-s640.jpg", "ESA S640 15″ touch control pendant on the Dener XL 1560 — the standard control of the XL, XH and DDS", up=False, cutout=True, crop=(340, 80, 1300, 1150)),
+    "ctl-esa-pendant": D("xl1560-esa-s640.jpg", "ESA touch-screen control pendant on the Dener XL 1560", up=False, cutout=True, crop=(340, 80, 1300, 1150)),
     # the value-line supplier's controller page (a scan): crops of the controls that have no maker's photo
     "ctl-scs920": D("adh-controllers-page.png", "SCS920: 21.5″ capacitive touch CNC, 6+1 axes standard (8+1 optional), for hydraulic, electric and dual-pump press brakes", crop=(30, 290, 340, 680), up=True, up2=True, cutout=True),
     "ctl-estun-e21ps": D("adh-controllers-page.png", "Estun E21PS: NC control for torsion-bar press brakes — back gauge and ram positioning, one-way / two-way positioning, 2D graphic programming", crop=(1850, 320, 2080, 640), up=True, up2=True, cutout=True),

@@ -60,7 +60,7 @@ HYDRAULIC = dict(
          {"q": "What is a hybrid press brake?",
           "a": "On a conventional hydraulic brake the motor and pump run at full speed all day, whether the ram moves or not. The XH hybrid replaces the AC motor and fixed pump with a servo motor driving an inverter pump: the pump turns only while the ram moves, at the speed the ram needs. Dener measures 42 – 58 % energy saving and 17 – 75 % faster approach and return against the XL of the same tonnage, with less heat in the oil and a quieter shop. Everything else — frame, cylinders, valves, tooling, controls — is the XL."},
          {"q": "Which control comes with the machine?",
-          "a": "The premium XL comes with the 15″ ESA S640 2D graphic control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The value-line CNC brakes come with the 15″ Delem DA-53Tx — the 18.5″ DA-58Tx (2D graphic), the 24″ DA-66S and DA-69S, the ESA S840 and S875 W, the Cybelec CybTouch 12 and the SCS920 are options; the NC brakes with the Estun E21PS (E315PS, Delem DA-41T or ESA S630 as options). All program in inches or millimetres, and the buying guide on the press brake page compares every one of them."},
+          "a": "The premium XL comes with the 15″ ESA S840 2D graphic touch-screen control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The value-line CNC brakes come with the 15″ Delem DA-53Tx — the 18.5″ DA-58Tx (2D graphic), the 24″ DA-66S and DA-69S, the ESA S840 and S875 W, the Cybelec CybTouch 12 and the SCS920 are options; the NC brakes with the Estun E21PS (E315PS, Delem DA-41T or ESA S630 as options). All program in inches or millimetres, and the buying guide on the press brake page compares every one of them."},
          {"q": "What back gauge and axes are available?",
           "a": "Every CNC machine has the Y1 and Y2 ram axes and an X back-gauge axis on a ball screw and linear guides. Options go up to the 6-axis gauge with X1, X2, R1, R2, Z1 and Z2 — two independently positioned fingers for angled flanges — plus a CNC crowning axis; the NC brakes have X and the depth stop. The back gauge is set by the control for every bend of the program."},
          TOOLING_FAQ, SAFETY_FAQ, SERVICE_FAQ, DELIVERY_FAQ, OIL_FAQ, VOLT_FAQ_GENERIC],
@@ -108,12 +108,12 @@ ELECTRIC = dict(
 
 COMPACT = dict(
     title="Compact Hydraulic Press Brakes for Sale in Canada — 16 to 66 Tons, 2 to 8 ft | NovoTech",
-    meta="Small hydraulic press brakes sold, installed and supported in Canada: the Dener XL 1560 compact CNC brake, 66 US tons × 5 ft with ESA S640 control, NovoTech value-line WAD-50T CNC and WC67K-30T NC compacts over 4.3 – 5.2 ft, and HBV bending brakes 16 – 35 tons.",
+    meta="Small hydraulic press brakes sold, installed and supported in Canada: the Dener XL 1560 compact CNC brake, 66 US tons × 5 ft with ESA S840 control, NovoTech value-line WAD-50T CNC and WC67K-30T NC compacts over 4.3 – 5.2 ft, and HBV bending brakes 16 – 35 tons.",
     h1="Compact hydraulic press brakes — 16 to 66 US tons, 2 to 8 ft",
     intro="A compact hydraulic press brake bends sheet between a punch and a V-die like its big brothers, at the size that fits a sheet-metal "
           "shop rather than a steel-fabrication plant: 2 to 8 ft of bending length and 16 to 66 US tons, on a footprint that goes through a "
           "door and runs on a 600 V or 208 V supply. NovoTech sells three on this page: the Dener XL 1560 — the smallest machine of the "
-          "premium line, 66 US tons over 5 ft with the 15″ ESA S640 2D control, Y1-Y2 ram on linear scales, a ball-screw X back gauge and "
+          "premium line, 66 US tons over 5 ft with the 15″ ESA S840 2D control, Y1-Y2 ram on linear scales, a ball-screw X back gauge and "
           "EUROSTAMP tooling in the crate, built in Turkey; NovoTech's own value-line compacts, built to our specification — the WAD-50T "
           "CNC brakes, 55 US tons over 4.3 and 5.2 ft with Hawe servo valves and a Delem DA-53Tx, and the WC67K-30T torsion-bar NC brake, "
           "33 US tons over 5.2 ft with an Estun E21PS; and the value-line HBV bending brakes, 16 to 35 tons, with a four-way V-block "
@@ -121,7 +121,7 @@ COMPACT = dict(
           "enclosures, signage, brackets and job-shop work where a 100-ton machine is more than you need. Every machine comes with a "
           "CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For 10 ft and longer, or "
           "1/4″ plate and up, see the hydraulic press brakes; for a brake with no hydraulic oil the electric press brakes.",
-    points=["Dener XL 1560: 66 US tons × 5 ft, 15.7″ throat, ESA S640 2D control, Y1-Y2-X axes on linear scales, EUROSTAMP 1281 punch and 2067 4-way die included — premium line, made in Turkey",
+    points=["Dener XL 1560: 66 US tons × 5 ft, 15.7″ throat, ESA S840 2D control, Y1-Y2-X axes on linear scales, EUROSTAMP 1281 punch and 2067 4-way die included — premium line, made in Turkey",
             "Value line: WAD-50T/1300 and 1600 CNC brakes, 55 US tons × 4.3 – 5.2 ft, 4 axes with Delem DA-53Tx; WC67K-30T/1600 NC torsion-bar brake, 33 US tons × 5.2 ft with Estun E21PS",
             "Value-line HBV bending brakes: 16.5 – 35 US tons, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″, four-way V-block or two cylinders"],
     hero="dn-xl1560-front", minis=["vl-cp-wad1600", "vl-cp-wc67k"],

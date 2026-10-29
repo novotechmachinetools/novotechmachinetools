@@ -13589,7 +13589,7 @@
  },
  "dn-dds-4": {
   "src": "tools/src-images/dener/dn-dds-4.png",
-  "alt": "Dener DDS — ESA S640 15″ control",
+  "alt": "Dener DDS — ESA 15″ touch-screen control pendant",
   "section": "dener",
   "trim": true,
   "quality": 82,
@@ -27606,11 +27606,12 @@
  },
  "dn-xl1560-front": {
   "src": "tools/src-images/dener-xl1560/dn-xl1560-front.jpg",
-  "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, front view with ESA S640 control",
+  "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, front view with the ESA control pendant",
   "section": "dener-xl1560",
   "trim": false,
-  "quality": 82,
+  "quality": 84,
   "cutout": true,
+  "cut_size": 1536,
   "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-front.json"
  },
  "dn-xl1560-left": {
@@ -27618,33 +27619,35 @@
   "alt": "Dener XL 1560 press brake from the left: Y1 / Y2 ram cylinders, DSP laser guards and the ESA control pendant",
   "section": "dener-xl1560",
   "trim": false,
-  "quality": 82,
+  "quality": 84,
   "cutout": true,
+  "cut_size": 1536,
   "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-left.json"
  },
  "dn-xl1560-right": {
   "src": "tools/src-images/dener-xl1560/dn-xl1560-right.jpg",
-  "alt": "Dener XL 1560 press brake from the right with the ESA S640 control on its swing arm",
+  "alt": "Dener XL 1560 press brake from the right with the ESA control on its swing arm",
   "section": "dener-xl1560",
   "trim": false,
-  "quality": 82,
+  "quality": 84,
   "cutout": true,
+  "cut_size": 1536,
   "cut_spec": "tools/cutout-specs/birefnet/dn-xl1560-right.json"
  },
  "dn-xl1560-control": {
-  "src": "tools/src-images/dener-xl1560/dn-xl1560-control.jpg",
-  "alt": "ESA S640 15″ touch-screen control on the Dener XL 1560 — start, stop, muting lamp and general reset",
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-control.png",
+  "alt": "ESA touch-screen control pendant of the Dener XL 1560 — start, stop, muting lamp and general reset",
   "section": "dener-xl1560",
-  "trim": false,
-  "quality": 82,
-  "cutout": true
+  "trim": true,
+  "quality": 84,
+  "cutout": false
  },
  "dn-xl1560-tooling": {
   "src": "tools/src-images/dener-xl1560/dn-xl1560-tooling.jpg",
   "alt": "EUROSTAMP punch 1281 in the segmented holders, 4-way die and DSP laser transmitter on the XL 1560",
   "section": "dener-xl1560",
   "trim": false,
-  "quality": 82,
+  "quality": 84,
   "cutout": false
  },
  "dn-xl1560-tooling-2": {
@@ -27652,7 +27655,7 @@
   "alt": "Segmented top-tool holders, EUROSTAMP tooling, front supports and the DSP laser receiver on the XL 1560",
   "section": "dener-xl1560",
   "trim": false,
-  "quality": 82,
+  "quality": 84,
   "cutout": false
  },
  "dn-xl1560-backgauge": {
@@ -27660,7 +27663,7 @@
   "alt": "X-axis back gauge of the XL 1560 on its ball screw with two fingers and the servo drive",
   "section": "dener-xl1560",
   "trim": false,
-  "quality": 82,
+  "quality": 84,
   "cutout": false
  },
  "dn-xl1560-backgauge-2": {
@@ -27668,7 +27671,7 @@
   "alt": "Back gauge beam, fingers and rear sheet support of the XL 1560 seen through the side frame",
   "section": "dener-xl1560",
   "trim": false,
-  "quality": 82,
+  "quality": 84,
   "cutout": false
  },
  "vl-cp-wad1600": {
@@ -27901,14 +27904,6 @@
  "dn-det-rear-gates": {
   "src": "tools/src-images/dener-detail/dn-det-rear-gates.jpg",
   "alt": "Rear interlocked gates: the back gauge area cannot be entered while the machine runs",
-  "section": "dener-detail",
-  "trim": true,
-  "quality": 84,
-  "cutout": false
- },
- "dn-det-esa-640": {
-  "src": "tools/src-images/dener-detail/dn-det-esa-640.jpg",
-  "alt": "ESA S640 series control: 15″ touch screen, numeric and 2D programming, up to 6 axes",
   "section": "dener-detail",
   "trim": true,
   "quality": 84,
@@ -28178,14 +28173,6 @@
   "quality": 84,
   "cutout": false
  },
- "ctl-esa-s640w": {
-  "src": "tools/src-images/controls/ctl-esa-s640w.jpg",
-  "alt": "ESA S640 W: 15″ touch control with 2D graphic programming, up to 6 axes",
-  "section": "controls",
-  "trim": false,
-  "quality": 84,
-  "cutout": true
- },
  "ctl-scs920": {
   "src": "tools/src-images/controls/ctl-scs920.jpg",
   "alt": "SCS920: 21.5″ capacitive touch CNC, 6+1 axes standard (8+1 optional), for hydraulic, electric and dual-pump press brakes",
@@ -28205,14 +28192,6 @@
  "ctl-estun-e315ps": {
   "src": "tools/src-images/controls/ctl-estun-e315ps.jpg",
   "alt": "Estun E315PS: 15.6″ capacitive touch NC control with 6+1 axes, angle programming and tool / material databases",
-  "section": "controls",
-  "trim": false,
-  "quality": 84,
-  "cutout": true
- },
- "ctl-esa-s640": {
-  "src": "tools/src-images/controls/ctl-esa-s640.jpg",
-  "alt": "ESA S640 15″ touch control pendant on the Dener XL 1560 — the standard control of the XL, XH and DDS",
   "section": "controls",
   "trim": false,
   "quality": 84,
@@ -28239,5 +28218,21 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "dn-det-esa-2d": {
+  "src": "tools/src-images/dener-detail/dn-det-esa-2d.jpg",
+  "alt": "ESA 2D touch design on a 15″ touch screen: the profile is drawn and the control calculates the bend sequence — the programming of the S840",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "ctl-esa-pendant": {
+  "src": "tools/src-images/controls/ctl-esa-pendant.jpg",
+  "alt": "ESA touch-screen control pendant on the Dener XL 1560",
+  "section": "controls",
+  "trim": false,
+  "quality": 84,
+  "cutout": true
  }
 }

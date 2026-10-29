@@ -63,7 +63,7 @@ PHOTOS = {
     "dn-dds-1": R("DDS-1.png", "Dener DDS ball-screw electric press brake — three-quarter view"),
     "dn-dds-2": R("DDS-2.png", "Dener DDS 2090 ball-screw press brake — compact front view"),
     "dn-dds-3": R("DDS-3.png", "Dener DDS — ball-screw drive and back gauge"),
-    "dn-dds-4": R("DDS-4.png", "Dener DDS — ESA S640 15″ control"),
+    "dn-dds-4": R("DDS-4.png", "Dener DDS — ESA 15″ touch-screen control pendant"),
     "dn-dds-video": V("Ball Screw Press Brake DDS-4013_Moment3.jpg", "Dener DDS 4013 ball-screw press brake bending a bracket"),
     # shears
     "dn-bs-1": R("BS-1.png", "Dener BS hydraulic swing beam shear — front view"),
