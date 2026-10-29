@@ -35,7 +35,8 @@
   "novotech-bs-cnc",
   "novotech-tbk-4228",
   "novotech-tgk-4235",
-  "novotech-gz4250"
+  "novotech-gz4250",
+  "novotech-vs"
  ],
  "families": {
   "bekamak-bms-dg": {
@@ -10757,6 +10758,172 @@
        "Blade tensioning": "Hydraulic",
        "Packing size": "4250 × 1750 × 2370 mm",
        "Gross weight": "5320 kg"
+      },
+      "notes": ""
+     }
+    ]
+   }
+  },
+  "novotech-vs": {
+   "id": "novotech-vs",
+   "brand": "novotech",
+   "line": "value",
+   "group": "vertical",
+   "name": "VS-300 to VS-585 vertical metal band saws with blade welder, 12″ to 23″ throat",
+   "short": "VS vertical band saws",
+   "models_label": "VS-300 · VS-400 · VS-500 · VS-585",
+   "summary": "Vertical band saws for contour, slot and straight cuts in sheet, plate, bar and profiles — steel, stainless, aluminum, plastics and wood. The workpiece is pushed across a table that tilts 45° right (30° on the VS-500 and VS-585) and 15° left, the blade speed is set steplessly with an inverter, and every saw has its own blade welder, annealer and grinder on the column, so a blade can be cut, welded and threaded through a hole for internal cut-outs. Four sizes from a 12″ to a 23″ throat.",
+   "features": [
+    "Throat 12-1/4″ × 7-1/4″ (VS-300) to 23″ × 13-1/4″ (VS-585) — width × height under the upper guide",
+    "Variable blade speed by inverter: 33 – 590 ft/min (VS-300) to 49 – 1,076 ft/min (VS-500 / 585)",
+    "Built-in blade welder (2.4 kVA) with annealing and a blade grinder: weld a blade for internal cut-outs in minutes",
+    "Table tilts 45° right (30° on VS-500 / 585) and 15° left; table gauge and adjustable blade guard",
+    "Blades 1/8 – 5/8″ wide (1/4 – 3/4″ on the VS-585); work light; servo feed optional"
+   ],
+   "optional": [
+    "Servo-driven table feed",
+    "Extra blades in several widths and pitches"
+   ],
+   "images": [
+    "nt-vs400-1",
+    "nt-vs300-1",
+    "nt-vs500-1"
+   ],
+   "videos": [],
+   "headline": "Throat 12-1/4″ to 23″ wide, 7-1/4″ to 13-1/4″ high (310 – 585 × 185 – 336 mm)",
+   "specs": {
+    "kind": "bandsaw",
+    "voltage": "600 V 3-phase (208/240/480 V on request)",
+    "models": [
+     {
+      "name": "VS-300",
+      "capacity_mm": {
+       "0": {
+        "round": null,
+        "rect": [
+         310,
+         185
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 0.55,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "10-180",
+      "band_mm": null,
+      "working_height_mm": null,
+      "weight_kg": 275,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Table size": "19-3/4 × 15-3/4″ (500 × 400 mm)",
+       "Table tilt": "45° right, 15° left",
+       "Blade length": "111-5/8 – 114-3/4″ (2,835 – 2,915 mm)",
+       "Blade width": "1/8 – 5/8″ (3 – 16 mm)",
+       "Blade grinder motor": "1/8 HP (0.09 kW)",
+       "Blade welder": "2.4 kVA",
+       "Packing size": "38 × 26 × 69″ (96 × 65 × 175 cm)",
+       "Gross weight": "345 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "VS-400",
+      "capacity_mm": {
+       "0": {
+        "round": null,
+        "rect": [
+         400,
+         285
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "15-260",
+      "band_mm": null,
+      "working_height_mm": null,
+      "weight_kg": 310,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Table size": "21-5/8 × 23-5/8″ (550 × 600 mm)",
+       "Table tilt": "45° right, 15° left",
+       "Blade length": "133-1/2 – 136-1/2″ (3,390 – 3,467 mm)",
+       "Blade width": "1/8 – 5/8″ (3 – 16 mm)",
+       "Blade grinder motor": "1/8 HP (0.09 kW)",
+       "Blade welder": "2.4 kVA",
+       "Packing size": "43 × 31 × 79″ (108 × 80 × 200 cm)",
+       "Gross weight": "380 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "VS-500",
+      "capacity_mm": {
+       "0": {
+        "round": null,
+        "rect": [
+         500,
+         310
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "15-328",
+      "band_mm": null,
+      "working_height_mm": null,
+      "weight_kg": 484,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Table size": "26 × 27-1/2″ (660 × 700 mm)",
+       "Table tilt": "30° right, 15° left",
+       "Blade length": "156-3/4 – 159-1/2″ (3,980 – 4,050 mm)",
+       "Blade width": "1/8 – 5/8″ (3 – 16 mm)",
+       "Blade grinder motor": "1/8 HP (0.09 kW)",
+       "Blade welder": "2.4 kVA",
+       "Packing size": "55 × 35 × 87″ (140 × 90 × 220 cm)",
+       "Gross weight": "548 kg"
+      },
+      "notes": ""
+     },
+     {
+      "name": "VS-585",
+      "capacity_mm": {
+       "0": {
+        "round": null,
+        "rect": [
+         585,
+         336
+        ],
+        "square": null
+       }
+      },
+      "main_motor_kw": 1.5,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "15-328",
+      "band_mm": null,
+      "working_height_mm": null,
+      "weight_kg": 555,
+      "dims_mm": null,
+      "feed_length_mm": null,
+      "other": {
+       "Table size": "26 × 27-1/2″ (660 × 700 mm)",
+       "Table tilt": "30° right, 15° left",
+       "Blade length": "174-1/2 – 178″ (4,430 – 4,520 mm)",
+       "Blade width": "1/4 – 3/4″ (6 – 19 mm)",
+       "Blade grinder motor": "1/8 HP (0.09 kW)",
+       "Blade welder": "2.4 kVA",
+       "Packing size": "58 × 37 × 91″ (147 × 95 × 230 cm)",
+       "Gross weight": "640 kg"
       },
       "notes": ""
      }

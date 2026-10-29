@@ -470,7 +470,7 @@ def process(key):
 
 
 def main():
-    keys = [a for a in sys.argv[1:] if not a.startswith("--")] or list(PLAN)
+    keys = [a for a in sys.argv[1:] if not a.startswith("--")] or [k for k in PLAN if k not in __import__("ttmc_hires_photos").PHOTOS]   # those come from tools/ttmc_hires_photos.py now
     for k in keys:
         print(f"{k:22s} {process(k)}")
 

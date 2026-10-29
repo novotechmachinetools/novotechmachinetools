@@ -25,7 +25,7 @@ COLD = [
        "Head swivels 45° left and right; angle cuts at 45° to Ø4-1/8″", "Gear drive; reduction unit in an oil bath (CS-225 – 275); two blade speeds (CS-315, 350)",
        "24 V low-voltage hold-to-run control; vise with anti-burr device; double vise on the CS-315 and 350",
        "CS-315 / 350: 1 / 1.7 HP two-speed 3-phase or 1.5 HP single-phase motor"],
-      ["tm-cs"], headline="Ø2-3/8 – 4-3/4″ round", cap="[Blade diameter, max] blade · cuts [Round, 90°] round", note=NOTE_HZ),
+      ["tm-cs", "tm-cs-250", "tm-cs-225"], headline="Ø2-3/8 – 4-3/4″ round", cap="[Blade diameter, max] blade · cuts [Round, 90°] round", note=NOTE_HZ),
     F("tt-pds315h", P_COLD, "tt-cold", "PDS-315H semi-automatic hydraulic cold saw, 12-1/2″ blade", "PDS-315H semi-automatic", T["tt-pds315h"],
       "The semi-automatic cold saw: hydraulic clamping and a hydraulic feed cylinder make the cut — the operator loads the bar and "
       "presses start. A 12-1/2″ blade at 60 or 120 rpm, a saw frame that swivels ±45°, a double vise, coolant and 24 V DC controls; "
@@ -70,7 +70,7 @@ ALU = [
       ["QCS-400 / 400A: 16″ blade; Ø4-1/8″ round, 7-7/8 × 3-1/8″ (200 × 80 mm) profiles at 90° and 45°; 1.5 HP",
        "QCS-500A: 20″ blade; Ø6-11/16″ round; 10-1/4 × 5-1/8″ at 90°, 9-1/2 × 4″ at 45°; 3 HP",
        "Blade swivels ±45° (QCS-400) or 0 – 180° (QCS-500A)", "Pneumatic clamping vise; pneumatic feed cylinder; belt drive, 2,800 rpm"],
-      ["tm-qcs500a", "tm-qcs400", "tm-qcs500a-vise"], headline="Profiles to 10-1/4 × 5-1/8″", cap="[Rectangular, 90° and 45° left and right]", note=NOTE_HZ),
+      ["tm-qcs500a", "tm-qcs400a", "tm-qcs400", "tm-qcs500a-vise"], headline="Profiles to 10-1/4 × 5-1/8″", cap="[Rectangular, 90° and 45° left and right]", note=NOTE_HZ),
 ]
 
 # =============================================================================================== notchers

@@ -210,7 +210,8 @@ def build_bandsaw_table(spec):
         if L is None:  # width × thickness only
             return f"{blade_size_in(W, T)} ({W} × {T} mm)"
         return f"{inch_frac(L, 2).replace('″', '')} × {blade_size_in(W, T)} ({L:g} × {W} × {T} mm)"
-    rows.append({"label": "Band blade L × W × T", "cells": [band(m) for m in models], "type": "text"})
+    if any(m.get("band_mm") for m in models):     # vertical saws give blade length and width as ranges in "other" instead
+        rows.append({"label": "Band blade L × W × T", "cells": [band(m) for m in models], "type": "text"})
     rows.append({"label": "Main motor", "cells": [hp_range(m.get("main_motor_kw")) for m in models], "type": "text"})
     if any(m.get("hydraulic_motor_kw") for m in models):
         rows.append({"label": "Hydraulic motor", "cells": [hp_range(m.get("hydraulic_motor_kw")) if m.get("hydraulic_motor_kw") else "—" for m in models], "type": "text"})

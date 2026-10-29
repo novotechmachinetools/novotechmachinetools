@@ -23782,7 +23782,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-ctk6416": {
   "src": "tools/src-images/ttmc-more/tm-ctk6416.jpg",
@@ -24880,7 +24880,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-pf16g": {
   "src": "tools/src-images/ttmc-more/tm-pf16g.jpg",
@@ -25820,12 +25820,12 @@
  },
  "tm-tv": {
   "src": "tools/src-images/ttmc-more/tm-tv.jpg",
-  "alt": "TV-300 abrasive cut-off saw on stand",
+  "alt": "TV-300 / TV-350 / TV-400 abrasive cut-off saw on stand",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-tv-sq": {
   "src": "tools/src-images/ttmc-more/tm-tv-sq.jpg",
@@ -27558,5 +27558,53 @@
   "quality": 82,
   "cutout": true,
   "cut_size": 1024
+ },
+ "tm-cs-225": {
+  "src": "tools/src-images/ttmc-more/tm-cs-225.jpg",
+  "alt": "CS-225 bench cold saw, 9″ blade, with double vise and length stop",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-cs-250": {
+  "src": "tools/src-images/ttmc-more/tm-cs-250.jpg",
+  "alt": "CS-250 / CS-275 cold saw on cabinet stand, 10 – 11″ blade",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-qcs400a": {
+  "src": "tools/src-images/ttmc-more/tm-qcs400a.jpg",
+  "alt": "QCS-400A aluminum cut-off saw with pneumatic clamping and safety hood",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "nt-vs300-1": {
+  "src": "tools/src-images/value-line/nt-vs300-1.png",
+  "alt": "NovoTech VS-300 vertical metal band saw with blade welder, 12″ throat",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nt-vs400-1": {
+  "src": "tools/src-images/value-line/nt-vs400-1.png",
+  "alt": "NovoTech VS-400 vertical metal band saw with work light and table gauge, 15-3/4″ throat",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nt-vs500-1": {
+  "src": "tools/src-images/value-line/nt-vs500-1.png",
+  "alt": "NovoTech VS-500 vertical metal band saw, 19-3/4″ throat",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
  }
 }

@@ -83293,17 +83293,17 @@
   "variants": [
    {
     "w": 480,
-    "h": 832,
+    "h": 829,
     "file": "img/ttmc-more/tm-pds400-480.webp",
-    "bytes": 36796
+    "bytes": 36550
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 92,
+   "w": 93,
    "h": 160,
    "file": "img/ttmc-more/tm-pds400-thumb.webp",
-   "bytes": 4300
+   "bytes": 4192
   },
   "cut": "birefnet"
  },
@@ -85315,21 +85315,27 @@
   "cut": "birefnet"
  },
  "tm-tv": {
-  "alt": "TV-300 abrasive cut-off saw on stand",
+  "alt": "TV-300 / TV-350 / TV-400 abrasive cut-off saw on stand",
   "variants": [
    {
+    "w": 800,
+    "h": 1316,
+    "file": "img/ttmc-more/tm-tv-800.webp",
+    "bytes": 70564
+   },
+   {
     "w": 480,
-    "h": 872,
+    "h": 789,
     "file": "img/ttmc-more/tm-tv-480.webp",
-    "bytes": 40808
+    "bytes": 38364
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 88,
+   "w": 97,
    "h": 160,
    "file": "img/ttmc-more/tm-tv-thumb.webp",
-   "bytes": 5048
+   "bytes": 4830
   },
   "cut": "birefnet"
  },
@@ -87072,18 +87078,18 @@
   "alt": "CS-315 cold saw on stand with two-speed motor and double vise",
   "variants": [
    {
-    "w": 413,
-    "h": 926,
-    "file": "img/ttmc-more/tm-cs-413.webp",
-    "bytes": 37936
+    "w": 480,
+    "h": 1126,
+    "file": "img/ttmc-more/tm-cs-480.webp",
+    "bytes": 46598
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 71,
+   "w": 68,
    "h": 160,
    "file": "img/ttmc-more/tm-cs-thumb.webp",
-   "bytes": 4704
+   "bytes": 3896
   },
   "cut": "birefnet"
  },
@@ -92646,6 +92652,161 @@
    "h": 160,
    "file": "img/ttmc-more/tm-x6336b-thumb.webp",
    "bytes": 8128
+  },
+  "cut": "birefnet"
+ },
+ "tm-cs-225": {
+  "alt": "CS-225 bench cold saw, 9\u2033 blade, with double vise and length stop",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1264,
+    "file": "img/ttmc-more/tm-cs-225-1200.webp",
+    "bytes": 114892
+   },
+   {
+    "w": 800,
+    "h": 843,
+    "file": "img/ttmc-more/tm-cs-225-800.webp",
+    "bytes": 70902
+   },
+   {
+    "w": 480,
+    "h": 506,
+    "file": "img/ttmc-more/tm-cs-225-480.webp",
+    "bytes": 37162
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 152,
+   "h": 160,
+   "file": "img/ttmc-more/tm-cs-225-thumb.webp",
+   "bytes": 8184
+  },
+  "cut": "birefnet"
+ },
+ "tm-cs-250": {
+  "alt": "CS-250 / CS-275 cold saw on cabinet stand, 10 \u2013 11\u2033 blade",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1290,
+    "file": "img/ttmc-more/tm-cs-250-800.webp",
+    "bytes": 73686
+   },
+   {
+    "w": 480,
+    "h": 774,
+    "file": "img/ttmc-more/tm-cs-250-480.webp",
+    "bytes": 39014
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 99,
+   "h": 160,
+   "file": "img/ttmc-more/tm-cs-250-thumb.webp",
+   "bytes": 5160
+  },
+  "cut": "birefnet"
+ },
+ "tm-qcs400a": {
+  "alt": "QCS-400A aluminum cut-off saw with pneumatic clamping and safety hood",
+  "variants": [
+   {
+    "w": 480,
+    "h": 686,
+    "file": "img/ttmc-more/tm-qcs400a-480.webp",
+    "bytes": 35438
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 112,
+   "h": 160,
+   "file": "img/ttmc-more/tm-qcs400a-thumb.webp",
+   "bytes": 5474
+  },
+  "cut": "birefnet"
+ },
+ "nt-vs300-1": {
+  "alt": "NovoTech VS-300 vertical metal band saw with blade welder, 12\u2033 throat",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1910,
+    "file": "img/bandsaw/nt-vs300-1-1200.webp",
+    "bytes": 122588
+   },
+   {
+    "w": 800,
+    "h": 1273,
+    "file": "img/bandsaw/nt-vs300-1-800.webp",
+    "bytes": 70724
+   },
+   {
+    "w": 480,
+    "h": 764,
+    "file": "img/bandsaw/nt-vs300-1-480.webp",
+    "bytes": 36782
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 101,
+   "h": 160,
+   "file": "img/bandsaw/nt-vs300-1-thumb.webp",
+   "bytes": 5602
+  }
+ },
+ "nt-vs400-1": {
+  "alt": "NovoTech VS-400 vertical metal band saw with work light and table gauge, 15-3/4\u2033 throat",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1920,
+    "file": "img/bandsaw/nt-vs400-1-1200.webp",
+    "bytes": 131002
+   },
+   {
+    "w": 800,
+    "h": 1280,
+    "file": "img/bandsaw/nt-vs400-1-800.webp",
+    "bytes": 81448
+   },
+   {
+    "w": 480,
+    "h": 768,
+    "file": "img/bandsaw/nt-vs400-1-480.webp",
+    "bytes": 43094
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 100,
+   "h": 160,
+   "file": "img/bandsaw/nt-vs400-1-thumb.webp",
+   "bytes": 6528
+  },
+  "cut": "birefnet"
+ },
+ "nt-vs500-1": {
+  "alt": "NovoTech VS-500 vertical metal band saw, 19-3/4\u2033 throat",
+  "variants": [
+   {
+    "w": 480,
+    "h": 813,
+    "file": "img/bandsaw/nt-vs500-1-480.webp",
+    "bytes": 39700
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 95,
+   "h": 160,
+   "file": "img/bandsaw/nt-vs500-1-thumb.webp",
+   "bytes": 5546
   },
   "cut": "birefnet"
  }

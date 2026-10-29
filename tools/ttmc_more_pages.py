@@ -21,6 +21,7 @@ import ttmc_more_data as D
 import ttmc_more_data2 as D2
 import ttmc_more_photos as PH
 import ttmc_new_photos as NP
+import ttmc_hires_photos as HP
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "ttmc-more"
@@ -565,7 +566,9 @@ def register_images(used):
     imap = json.load(open(imap_path, encoding="utf-8"))
     keys = []
     for key in sorted(used):
-        if key in PH.PLAN:                       # Vol. 23 catalogue crops, under 1,000 px: the 768 px matte is as sharp and twice as fast
+        if key in HP.PHOTOS:                     # the supplier's high-resolution photos (Oct 2026) replace the catalogue crops
+            alt, detail, size, tool = HP.PHOTOS[key]["alt"], False, 1024, "ttmc_hires_photos.py"
+        elif key in PH.PLAN:                     # Vol. 23 catalogue crops, under 1,000 px: the 768 px matte is as sharp and twice as fast
             alt, detail, size, tool = PH.PLAN[key][3], key in PH.DETAIL, 768, "ttmc_more_photos.py"
         elif key in NP.PHOTOS:                   # 2026 sheets (up to 2,300 px): 1024 px matte; catalogue photos under 1,300 px: 768
             alt, detail, tool = NP.PHOTOS[key]["alt"], key in NP.DETAIL, "ttmc_new_photos.py"

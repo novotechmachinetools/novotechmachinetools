@@ -347,6 +347,40 @@ FAMILIES = [
                    11.0, "20-80", [8800, 67, 1.3], 5060, hyd=2.2, cool=0.12,
                    other={"Vise": "Hydraulic", "Blade tensioning": "Hydraulic", PACK: "4250 × 1750 × 2370 mm", GROSS: "5320 kg"}),
          ]),
+    # ================================================================ VERTICAL
+    dict(id="novotech-vs", group="vertical",
+         name="VS-300 to VS-585 vertical metal band saws with blade welder, 12″ to 23″ throat",
+         short="VS vertical band saws",
+         models_label="VS-300 · VS-400 · VS-500 · VS-585",
+         headline="Throat 12-1/4″ to 23″ wide, 7-1/4″ to 13-1/4″ high (310 – 585 × 185 – 336 mm)",
+         summary="Vertical band saws for contour, slot and straight cuts in sheet, plate, bar and profiles — steel, stainless, aluminum, "
+                 "plastics and wood. The workpiece is pushed across a table that tilts 45° right (30° on the VS-500 and VS-585) and 15° left, "
+                 "the blade speed is set steplessly with an inverter, and every saw has its own blade welder, annealer and grinder on the column, "
+                 "so a blade can be cut, welded and threaded through a hole for internal cut-outs. Four sizes from a 12″ to a 23″ throat.",
+         features=[
+             "Throat 12-1/4″ × 7-1/4″ (VS-300) to 23″ × 13-1/4″ (VS-585) — width × height under the upper guide",
+             "Variable blade speed by inverter: 33 – 590 ft/min (VS-300) to 49 – 1,076 ft/min (VS-500 / 585)",
+             "Built-in blade welder (2.4 kVA) with annealing and a blade grinder: weld a blade for internal cut-outs in minutes",
+             "Table tilts 45° right (30° on VS-500 / 585) and 15° left; table gauge and adjustable blade guard",
+             "Blades 1/8 – 5/8″ wide (1/4 – 3/4″ on the VS-585); work light; servo feed optional",
+         ],
+         optional=["Servo-driven table feed", "Extra blades in several widths and pitches"],
+         images=["nt-vs400-1", "nt-vs300-1", "nt-vs500-1"],
+         videos=[],
+         models=[
+             model("VS-300", {"0": cap(None, [310, 185])}, 0.55, "10-180", None, 275,
+                   other={"Table size": "19-3/4 × 15-3/4″ (500 × 400 mm)", "Table tilt": "45° right, 15° left", "Blade length": "111-5/8 – 114-3/4″ (2,835 – 2,915 mm)",
+                          "Blade width": "1/8 – 5/8″ (3 – 16 mm)", "Blade grinder motor": "1/8 HP (0.09 kW)", "Blade welder": "2.4 kVA", PACK: "38 × 26 × 69″ (96 × 65 × 175 cm)", GROSS: "345 kg"}),
+             model("VS-400", {"0": cap(None, [400, 285])}, 1.5, "15-260", None, 310,
+                   other={"Table size": "21-5/8 × 23-5/8″ (550 × 600 mm)", "Table tilt": "45° right, 15° left", "Blade length": "133-1/2 – 136-1/2″ (3,390 – 3,467 mm)",
+                          "Blade width": "1/8 – 5/8″ (3 – 16 mm)", "Blade grinder motor": "1/8 HP (0.09 kW)", "Blade welder": "2.4 kVA", PACK: "43 × 31 × 79″ (108 × 80 × 200 cm)", GROSS: "380 kg"}),
+             model("VS-500", {"0": cap(None, [500, 310])}, 1.5, "15-328", None, 484,
+                   other={"Table size": "26 × 27-1/2″ (660 × 700 mm)", "Table tilt": "30° right, 15° left", "Blade length": "156-3/4 – 159-1/2″ (3,980 – 4,050 mm)",
+                          "Blade width": "1/8 – 5/8″ (3 – 16 mm)", "Blade grinder motor": "1/8 HP (0.09 kW)", "Blade welder": "2.4 kVA", PACK: "55 × 35 × 87″ (140 × 90 × 220 cm)", GROSS: "548 kg"}),
+             model("VS-585", {"0": cap(None, [585, 336])}, 1.5, "15-328", None, 555,
+                   other={"Table size": "26 × 27-1/2″ (660 × 700 mm)", "Table tilt": "30° right, 15° left", "Blade length": "174-1/2 – 178″ (4,430 – 4,520 mm)",
+                          "Blade width": "1/4 – 3/4″ (6 – 19 mm)", "Blade grinder motor": "1/8 HP (0.09 kW)", "Blade welder": "2.4 kVA", PACK: "58 × 37 × 91″ (147 × 95 × 230 cm)", GROSS: "640 kg"}),
+         ]),
 ]
 
 
@@ -359,7 +393,7 @@ def main():
             "id": f["id"], "brand": "novotech", "line": "value", "group": f["group"], **({"subgroup": f["subgroup"]} if f.get("subgroup") else {}),
             "name": f["name"], "short": f["short"], "models_label": f["models_label"],
             "summary": f["summary"], "features": f["features"], "optional": f["optional"],
-            "images": f["images"], "videos": f["videos"],
+            "images": f["images"], "videos": f["videos"], **({"headline": f["headline"]} if f.get("headline") else {}),
             "specs": {"kind": "bandsaw", "voltage": f.get("voltage", V), "models": f["models"]},
         }
         fams[f["id"]] = rec

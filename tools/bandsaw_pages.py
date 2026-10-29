@@ -167,6 +167,21 @@ NF = {
             {"q": "Can a value-line double-column saw cut miters?", "a": "The TBK-4228A swivels for cuts at 30° and 45° (Ø10-1/4″ and Ø6-3/4″), and the CNC BS-500G and BS-500GT have an automatic rotary bow to 45°. The other value-line double-column models are straight-cut saws."},
             VOLT_FAQ,
         ]),
+    "vertical": dict(
+        title="Vertical Metal Band Saws with Blade Welder — 12″ to 23″ Throat | NovoTech",
+        meta="Value-line vertical metal band saws VS-300 to VS-585: 12″ to 23″ throat, tilting table, inverter blade speed and a built-in blade welder for contour and internal cuts. Specs in inches, sold and supported in Canada.",
+        h1="NovoTech vertical metal band saws",
+        intro="Vertical band saws for the tool room, fabrication and maintenance shop: the blade runs vertically and the workpiece — sheet, plate, bar, profiles, plastics or wood — is pushed across the table, so the saw cuts contours, radii, slots and straight lines that a horizontal saw cannot. The VS series has four sizes from a 12-1/4″ to a 23″ throat, a table that tilts 45° right (30° on the two larger saws) and 15° left, stepless blade speed from an inverter, and a blade welder with annealer and grinder on the column: cut the blade, thread it through a drilled hole, weld it and saw an internal cut-out. For slicing blocks and plate on a production line see the premium vertical saws.",
+        points=["Throat 12-1/4″ × 7-1/4″ to 23″ × 13-1/4″ (310 × 185 to 585 × 336 mm)", "Built-in blade welder, annealer and grinder for internal cut-outs", "Tilting table, inverter blade speed to 1,076 ft/min, table gauge and work light"],
+        hero="nt-vs400-1", minis=["nt-vs300-1", "nt-vs500-1"],
+        lead="Contour, slot and straight cuts on a tilting table, with a blade welder on every saw — four sizes from a 12″ to a 23″ throat.",
+        faq=[
+            {"q": "What is the throat of a vertical band saw?", "a": "The width from the blade to the column (how wide a part can pass beside the blade) and the height under the upper blade guide (how thick a part can be). The VS-300 takes 12-1/4″ × 7-1/4″ (310 × 185 mm), the VS-400 15-3/4″ × 11-1/4″, the VS-500 19-3/4″ × 12-1/4″ and the VS-585 23″ × 13-1/4″ (585 × 336 mm)."},
+            {"q": "What is the blade welder for?", "a": "Internal cut-outs and blade repair. Drill a hole in the part, cut the blade, thread it through the hole and weld it on the saw's own butt welder, anneal the weld and grind it flush with the built-in grinder — then saw the inside contour. The same welder makes blades from coil stock and repairs a broken blade in a few minutes."},
+            {"q": "Can these saws cut steel?", "a": "Yes — mild steel, stainless, tool steel in thin sections, aluminum, copper and brass, as well as plastics and wood: the inverter sets the blade speed from about 33 – 49 ft/min for steel to 590 – 1,076 ft/min for aluminum and non-metals. The chart on the saw gives the speed and tooth pitch for each material and thickness."},
+            {"q": "Vertical band saw or horizontal band saw?", "a": "A horizontal saw clamps a bar and cuts it to length, unattended; a vertical saw is a hand-fed machine for shapes — curves, slots, angles, notches and internal cut-outs in sheet and plate. Most shops that cut both have one of each."},
+            VOLT_FAQ,
+        ]),
 }
 
 KW = {
@@ -174,7 +189,7 @@ KW = {
     "semi-automatic": " If you are looking for a semi-automatic metal bandsaw, a hydraulic horizontal band saw for metal or an industrial band saw machine with a hydraulic vise, this is the page.",
     "automatic": " For buyers searching for an automatic metal cutting bandsaw, a CNC band saw machine or an industrial horizontal band saw for metal with automatic feeding, these are the models NovoTech sells and supports in Canada.",
     "double-column": " Known as double column, twin-column or dual column metal bandsaws, these horizontal band saw machines are the industrial choice for heavy solids, bundles and plate.",
-    "vertical": " If you are looking for a vertical band saw for metal cutting, a vertical bandsaw for plate and blocks or a vertical metal cutting band saw with automatic feed, these are the machines NovoTech sells and supports in Canada.",
+    "vertical": " If you are looking for a vertical band saw for metal cutting or a vertical bandsaw for plate, blocks and contour work, these are the machines NovoTech sells and supports in Canada.",
 }
 
 ORIGIN = {
@@ -204,6 +219,7 @@ SLUGS = {
     ("novotech", "semi-automatic"): "affordable-semi-automatic-band-saws",
     ("novotech", "automatic"): "automatic-feed-band-saws",
     ("novotech", "double-column"): "twin-column-band-saws",
+    ("novotech", "vertical"): "vertical-metal-band-saw",
 }
 
 
@@ -242,7 +258,7 @@ def page(brand, cat, spec):
 
 def main():
     for old in ("manual-band-saws", "semi-automatic-band-saws", "automatic-band-saws", "double-column-band-saws", "vertical-band-saws",
-                "affordable-semi-automatic-band-saws", "automatic-feed-band-saws", "twin-column-band-saws"):
+                "affordable-semi-automatic-band-saws", "automatic-feed-band-saws", "twin-column-band-saws", "vertical-metal-band-saw"):
         fp = os.path.join(PAGES, old + ".json")
         if os.path.exists(fp):
             os.remove(fp)
@@ -268,11 +284,11 @@ def main():
     h["subpages"] = [sp for ln in lines for sp in ln["subpages"]]
     h["title"] = "Metal Cutting Band Saws & Bandsaws for Sale in Canada | NovoTech"
     h["meta_description"] = "Metal cutting band saws from Ø9″ to 87″: manual, semi-automatic, automatic, double column and vertical machines in a premium and a value line, plus a guide."
-    h["intro"] = "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga, ON, Canada."
+    h["intro"] = "Horizontal metal cutting band saws — metal bandsaws for steel, stainless, aluminum and other metals — for fabricators, machine shops and steel service centres across Canada, in two clearly separated lines: the premium Bekamak range built in Turkey, and NovoTech's own value line. Whether you are searching for a manual band saw for metal, a semi-automatic hydraulic bandsaw, an automatic CNC band saw machine or an industrial double column saw for heavy bar and bundles or a vertical band saw for contour cuts, blocks and plate, every machine is here with specifications in inches and millimetres, a CSA-approved panel, spare parts and technical support from Mississauga, ON, Canada."
     h["hero_image"] = "bk-hero-auto-350ga"
     h["hero_image_secondary"] = ["bk-hero-hub", "nt-bs315gf-1"]
     h["hero_points"] = ['<a href="#premium-line">Premium line: Bekamak</a>, Ø9″ to 87″ (230–2200 mm)',
-                        '<a href="#value-line">Value line: NovoTech</a>, Ø10″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic and double-column',
+                        '<a href="#value-line">Value line: NovoTech</a>, Ø10″ to 23-5/8″ (250–600 mm) — semi-automatic, automatic, double-column and vertical',
                         '<a href="#manual-band-saws-overview">Manual</a> (Bekamak), <a href="#semi-automatic-band-saws-overview">semi-automatic</a>, <a href="#automatic-band-saws-overview">automatic</a>, <a href="#double-column-band-saws-overview">double-column</a> and <a href="#vertical-band-saws-overview">vertical</a> saws',
                         '<a href="#buying-guide">Band saw buying guide</a>, blade selection and troubleshooting chart on this page']
     h["catalogue_pdfs"] = [PDF_BK, PDF_NF]
