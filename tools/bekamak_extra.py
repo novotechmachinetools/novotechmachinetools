@@ -45,6 +45,32 @@ EXTRA_MODELS = {
                                  "Vise capacity": "400 × 2600 mm", "Minimum cutting length": "20 mm (30 mm automatic)"}),
 }
 
+# ---- models that are on bekamak.com but not in the 2025/2026 catalogues (specs from bekamak.com, Oct 2026) -------------
+# BMSO 320S: pivot-type fully automatic servo-feed saw (bekamak.com/urun/bmso-320s).  BMSO 460CS and BMSO 1313CS: the two
+# CS NC servo double-column sizes the catalogue skips.  TERRA 6: the high-speed (600 m/min) enclosed production saw.
+# BMH 170: hydraulic power hacksaw.  OPUS 300 (TCT circular saw) is in CIRCULAR_FAMILIES below.
+EXTRA_MODELS.update({
+    "BMSO 320S": model("BMSO 320S", {"0": {"round": 320, "rect": [370, 320], "square": 320}}, 2.2, "15-120", [4160, 34, 1.1], 1900,
+                       hyd=1.5, cool=0.12, wh=850, dims=[1950, 2150, 1800], feed=700,
+                       other={"Feeder servo motor": "1 kW", "Feed stroke": "700 mm", "Multiple-stroke feed length": "9999 mm",
+                              "Control": "Omron touch screen, 50 programs × 30 length steps"}),
+    "BMSO 460CS": model("BMSO 460CS", {"0": {"round": 460, "rect": [540, 460], "square": 460}}, 4, "15-120", [5750, 41, 1.3], 3250,
+                        hyd=2.2, cool=0.12, wh=826.5, dims=[3000, 2150, 2100], feed=700,
+                        other={"Feeder Servo Motor": "1.5 kW", "Chip Conveyor Motor": "0.25 kW"}),
+    "BMSO 1313CS": model("BMSO 1313CS", {"0": {"round": 1300, "rect": [1300, 1300], "square": 1300}}, "11-15", "15-120", [12100, "67/80", 1.6], 24000,
+                         hyd=4, cool=0.12, wh=914, dims=[6000, 5200, 4300], feed=3000,
+                         other={"Feeder Servo Motor": "2 kW", "Chip Conveyor Motor": "0.25 kW", "Feed stroke": "3000 mm", "Minimum cutting diameter": "300 mm"},
+                         notes="Main motor printed as '11/15 kW' (the 15 kW motor is the option listed for the CS family)."),
+    "TERRA 6": model("TERRA 6", {"0": {"round": 660, "rect": [660, 660], "square": 660}}, 30, "15-600", [11220, 67, 1.6], 11800,
+                     hyd=2.2, cool=None, wh=820, dims=[5250, 2250, 2820], feed=700,
+                     other={"Bow servo motor": "2 kW", "Feeder servo motor": "1.5 kW", "Coolant filtration unit": "0.75 kW", "Feed stroke": "700 mm",
+                            "Unloading stroke": "300 mm", "Multiple-stroke feed length": "9999 mm", "Minimum cutting length": "15 mm",
+                            "Minimum remnant in automatic mode": "0 mm", "Depth with chip conveyor": "2975 mm"}),
+    "BMH 170": model("BMH 170", {"0": {"round": 170, "rect": [200, 120], "square": 145}, "+45": {"round": 110, "rect": [110, 110], "square": 120}},
+                     0.75, "120", None, 265, wh=430, dims=[1100, 600, 810],
+                     other={"Hacksaw blade L × W × T": "13-3/4″ × 1-3/16″ × .059″ (350 × 30 × 1.5 mm)"}),
+})
+
 
 def vid(i, title, dur):
     return {"id": i, "title": title, "duration": dur, "thumb": "video-" + i}   # thumb registered by tools/yt_thumbs.py
@@ -58,6 +84,7 @@ V_460VG = [vid("w5-5lcb_gvA", "BMSY 460VG semi-automatic double-mitring tilting-
 V_CROSS = [vid("SfTZWsSaZNU", "102″ × 23″ fully automatic vertical band saw machine CROSS 0626VT", "PT54S")]
 V_BMDO_XS = [vid("CV27CVffJ1s", "BMDO 100 XS high-speed carbide cold saw", "PT2M"), vid("OP3ktYgA7aw", "High-speed carbide saw BMDO 100XS", "PT2M36S"), vid("_Gfo4BerI70", "High-speed carbide saw BMDO 100 XS CNC", "PT1M27S")]
 V_BMDO_CS = [vid("FDPXXawic4o", "High-speed carbide cold saw BMDO 80CS CNC", "PT51S")]
+V_460CS = [vid("EHRMBwaOEiA", "Bekamak BMSO 460CS NC — hydraulic vise and hydraulic top clamping", "PT1M42S")]
 
 # ---- families for content/families/bandsaw.json (brand bekamak) -----------------------------------
 BANDSAW_FAMILIES = [
@@ -106,7 +133,64 @@ BANDSAW_FAMILIES = [
          features=["23-5/8″ × 102″ (600 × 2600 mm) plate and billet capacity; vise capacity 15-3/4″ × 102″ (400 × 2600 mm)", "Fully automatic: feeder motor and servo positioning, programmed lengths, minimum cut 3/4″ (20 mm) — 1-3/16″ (30 mm) in automatic mode",
                    "10 HP (7.5 kW) main motor; 2-1/8″ × .063″ (54 × 1.6 mm) band at 50 – 245 ft/min (15 – 75 m/min)", "For tool steel, titanium, Hastelloy and Inconel; chip brush and chip conveyor; 1.5 HP coolant pump"],
          videos=V_CROSS, headline="Plates and billets 23-5/8″ × 102″ (600 × 2600 mm) · automatic feed"),
+    # ---- bekamak.com-only models (Oct 2026); "after" = the family they follow in content/families/bandsaw.json "order"
+    dict(id="bekamak-bmso-s", group="automatic", after="bekamak-bmso-e", name="BMSO 320S fully automatic servo-feed band saw, 12-5/8″", short="BMSO 320S servo", models=["BMSO 320S"],
+         summary="A pivot-type automatic saw with servo shuttle-vise feeding for straight cuts in bar, tube and profiles up to Ø12-5/8″ (320 mm): the Omron "
+                 "touch-screen control stores 50 programs of up to 30 length-and-quantity steps, the ball-screw servo feed positions the material in a "
+                 "27-1/2″ (700 mm) stroke — or in several strokes for lengths up to 394″ (9999 mm) — and the saw clamps, cuts and counts until the job "
+                 "is done. Linear-way bow guidance, hydro-mechanical blade tension, a chip conveyor and an inverter for stepless blade speed are standard.",
+         features=["Ø12-5/8″ (320 mm) round, 14-5/8″ × 12-5/8″ (370 × 320 mm) rectangular and 12-5/8″ square at 0°",
+                   "Servo shuttle-vise feed on a ball screw: 27-1/2″ (700 mm) stroke, multiple strokes for lengths to 394″ (9999 mm)",
+                   "Omron touch-screen control: 50 programs × 30 length-and-quantity steps, piece counter",
+                   "1-1/4″ × .042″ (34 × 1.1 mm) band at 50 – 395 ft/min (15 – 120 m/min) on an inverter; 3 HP (2.2 kW) main motor, heavy-duty gearbox",
+                   "Linear-way guidance, hydro-mechanical blade tension, blade-slippage sensor, cutting-pressure control, optical height adjustment, blade brush, chip conveyor, coolant pump",
+                   "Options: hydraulic blade tension, hydraulic top clamp, multi-segment (bundle) vise jaws, micro-spray lubrication, 10 ft (3 m) roller table"],
+         optional=["Hydraulic blade tension", "Hydraulic top clamp", "Multi-segment vise jaws", "Micro-spray lubrication", "10 ft (3 m) material roller table"],
+         videos=[], headline="Ø12-5/8″ (320 mm) round · 14-5/8″ × 12-5/8″ rectangular · servo feed, 50 programs"),
+    dict(id="bekamak-terra-6", group="double-column", after="bekamak-bmso-xs", name="TERRA 6 high-speed fully automatic band saw, 26″", short="TERRA 6 high-speed", models=["TERRA 6"],
+         summary="Bekamak's fastest saw: a fully enclosed double-column production machine whose 40 HP (30 kW) drive runs the 2-5/8″ (67 mm) band at up to "
+                 "1,970 ft/min (600 m/min), so a Ø16-3/8″ (415 mm) solid bar that takes around 22 minutes on a conventional band saw is cut in about "
+                 "2 minutes with the right carbide blade. Servo bow feed and servo material feed, a PC-based control that measures the load on the blade "
+                 "through a load cell and corrects the cutting parameters in real time, deflection control, a camera in the cabin and a zero-remnant "
+                 "unloading cycle — for steel service centres, forges, machine builders and the automotive industry, with carbide or bi-metal blades, "
+                 "up to Ø26″ (660 mm) round.",
+         features=["Ø26″ (660 mm) round and 26″ × 26″ (660 × 660 mm) rectangular capacity; minimum cut 5/8″ (15 mm)",
+                   "Blade speed 50 – 1,970 ft/min (15 – 600 m/min) on a 40 HP (30 kW) main motor; 2-5/8″ × .063″ (67 × 1.6 mm) carbide or bi-metal band",
+                   "Servo bow feed (2.7 HP / 2 kW) and servo material feed (2 HP / 1.5 kW): 27-1/2″ (700 mm) feed stroke, multiple strokes to 394″ (9999 mm), zero remnant in automatic mode",
+                   "PC-based control with load cell and deflection control: cutting parameters corrected in real time for longer blade life and a better surface finish",
+                   "Fully enclosed cabin with camera, hydraulic vises, hydraulic blade tension, hydraulic bow lock, inclined bow, motorized chip brush, chip conveyor, coolant filtration unit",
+                   "Options: micro-spray lubrication, 10 ft (3 m) material roller table"],
+         optional=["Micro-spray lubrication", "10 ft (3 m) material roller table"],
+         videos=[], headline="Ø26″ (660 mm) round · blade speed to 1,970 ft/min (600 m/min) · carbide and bi-metal blades"),
+    dict(id="bekamak-bmh-170", group="manual", after="bekamak-bms-dg", name="BMH 170 hydraulic power hacksaw, 6-3/4″", short="BMH 170 hacksaw", models=["BMH 170"],
+         summary="Not a band saw but the simplest Bekamak saw of all: a hydraulic power hacksaw whose flat 13-3/4″ (350 mm) blade reciprocates while "
+                 "hydraulic pressure feeds it through the material. The operator clamps the bar in the vise, sets the cutting speed and the length stop "
+                 "and starts the cut; the frame lifts when the piece drops. Ø6-3/4″ (170 mm) round at 0° and Ø4-3/8″ (110 mm) at 45°, a 1 HP motor and "
+                 "a footprint of 43″ × 24″ — for the small shop, the maintenance department and anyone who cuts a few pieces a day.",
+         features=["Ø6-3/4″ (170 mm) round, 7-7/8″ × 4-3/4″ (200 × 120 mm) rectangular at 0°; Ø4-3/8″ (110 mm) round at 45°",
+                   "Hydraulic down-feed of the reciprocating 13-3/4″ × 1-3/16″ (350 × 30 mm) hacksaw blade; cutting-speed control",
+                   "1 HP (0.75 kW) motor; vise, adjustable material length stop and height adjustment",
+                   "Coolant pump, roller table, electrical panel and control panel standard; 584 lb (265 kg)"],
+         optional=[],
+         videos=[], headline="Ø6-3/4″ (170 mm) round · 7-7/8″ × 4-3/4″ rectangular · hydraulic feed"),
 ]
+
+# models added to families that tools/bandsaw_data.py built from the catalogue: (family id) -> list of
+# (model name, name of the model it follows in the spec table or None = last, photos [(index, alt)…])
+CS_ADDITIONS = {
+    "bekamak-bmso-cs": dict(
+        add=[("BMSO 460CS", "BMSO 420CS", [(0, "Bekamak BMSO 460CS NC fully automatic servo-feed double-column band saw, Ø18-1/8″ (460 mm)"),
+                                          (2, "BMSO 460CS — left side with the servo shuttle vise and roller table"), (3, "BMSO 460CS — rear view: columns, blade wheels and electrical cabinet"),
+                                          (1, "BMSO 460CS — front view")]),
+             ("BMSO 1313CS", None, [(0, "Bekamak BMSO 1313CS fully automatic double-column band saw for blocks and billets, 51-1/8″ × 51-1/8″ (1300 × 1300 mm)"),
+                                    (2, "BMSO 1313CS — bow and column covers open: blade wheels, 2-5/8″ / 3-1/8″ band and hydraulic blade tension"),
+                                    (3, "BMSO 1313CS — rear view with the 10 ft (3 m) roller table and servo feed"), (1, "BMSO 1313CS — front quarter view")])],
+        models_label="BMSO 330CS · BMSO 420CS · BMSO 460CS · BMSO 560CS · BMSO 570CS · BMSO 820CS · BMSO 1110CS · BMSO 1313CS",
+        summary="Production saws with ball-screw servo shuttle-vise feeding and PLC touch-screen control: job lists of length and quantity run unattended "
+                "with ±0.1 mm repeatability. Ø13″ (330 mm) to Ø51-1/8″ (1300 mm) — the BMSO 1313CS cuts blocks and billets up to 51-1/8″ × 51-1/8″ "
+                "with a 118″ (3 m) feed stroke and a pallet-type chip conveyor.",
+        videos=V_460CS),
+}
 
 # ---- BMDO circular saws (spec kind "table"), on the circular cold saw page -------------------------
 GK_CIRC = ["blade", "round", "square", "main_motor", "weight"]
@@ -171,6 +255,36 @@ def t_bmdo_cs():
     return manual_spec([t], GK_CIRC, glance, caps, "Capacities are for mild steel tube and bar with an HSS blade. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request).")
 
 
+def t_opus_300():
+    # bekamak.com/urun/opus-300 (Oct 2026): the largest carbide cold saw, Ø900 mm TCT blade, 37 kW
+    models = ["OPUS 300"]
+    rows = [
+        ("Cutting capacity — round", "solid bar", ["Ø2-3/4″ – 11-3/4″ (70 – 300 mm)"]),
+        ("Cutting capacity — square", ["to 9-1/2″ × 9-1/2″ (240 × 240 mm)"]),
+        ("Blade Ø × T", "TCT carbide", ["Ø35-7/16″ × .142″ body / .165″ kerf (900 × 3.6 / 4.2 mm)"]),
+        ("Blade bore / pin holes", ["80 mm / 4-27-120, 2-12-64, 2-15-80"]),
+        ("Blade speed", "stepless", ["165 – 785 ft/min (50 – 240 m/min)"]),
+        ("Main motor", ["50 HP (37 kW)"]),
+        ("Saw-head feed / material feed", "servo", ["5.4 HP (4 kW) / 2.7 HP (2 kW)"]),
+        ("Hydraulic motor", ["3 HP (2.2 kW)"]),
+        ("Coolant pump / chip conveyor", ["0.27 HP / 0.33 HP (0.2 / 0.25 kW)"]),
+        ("Installed power", ["63 HP (47.15 kW)"]),
+        ("Material feed", "AC servo and ball screw", ["27-1/2″ (700 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)"]),
+        ("End-trim / remnant length", ["3/8″ / 3-3/8″ (10 / 85 mm)"]),
+        ("Magazine loader", "bundle of 20 ft bars", ["5 × Ø11-3/4″ (300 mm) bars, 20 ft (6 m) long"]),
+        ("Loader dimensions L × W × H", ["242 × 102 × 75″ (6150 × 2600 × 1900 mm)"]),
+        ("Compressed air", ["73 psi (5 bar), 8.7 cfm (245 l/min)"]),
+        ("Hydraulic tank / oil-mist tank", ["18.5 gal / 0.4 gal (70 / 1.5 l)"]),
+        ("Table height", ["37″ (940 mm)"]),
+        ("Dimensions W × L × H", ["163 × 98 × 126″ (4150 × 2500 × 3200 mm)"]),
+        ("Weight", ["24,251 lb (11,000 kg)"]),
+    ]
+    t = manual_table("OPUS 300 — automatic TCT circular saw", "Ø35-7/16″ (900 mm) carbide blade for solid bar to Ø11-3/4″ · servo feeding · magazine loader", models, rows, key_labels=("Cutting capacity", "Blade Ø"))
+    glance = {"OPUS 300": ["Ø35-7/16″ TCT", "Ø2-3/4″ – 11-3/4″", "to 9-1/2″", "50 HP", "24,251 lb"]}
+    caps = {"OPUS 300": "Automatic TCT circular saw · solid bar to Ø11-3/4″"}
+    return manual_spec([t], GK_CIRC, glance, caps, "Capacities are for solid steel bar with a TCT blade. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request).")
+
+
 CIRCULAR_FAMILIES = [
     dict(id="bekamak-bmdo-xs", group="bekamak-circular", brand="bekamak",
          name="BMDO 75XS · 100XS · 130XS · 150XS — automatic TCT carbide circular saws, Ø3-1/8″ to Ø6-1/4″",
@@ -204,6 +318,23 @@ CIRCULAR_FAMILIES = [
          images=["bk-bmdo-80cs-1", "bk-bmdo-100cs-1", "bk-bmdo-80cs-2", "bk-bmdo-100cs-2", "bk-bmdo-80cs-3"],
          videos=V_BMDO_CS, specs=t_bmdo_cs(),
          headline="Tube and bar Ø3/4″ to Ø4″ (20 – 100 mm) · HSS blades · servo gripper feed · touch screen"),
+    dict(id="bekamak-opus-300", group="bekamak-circular", brand="bekamak",
+         name="OPUS 300 — automatic TCT carbide circular saw, Ø11-3/4″",
+         short="OPUS 300 carbide saw", models_label="OPUS 300",
+         summary="The largest of Bekamak's carbide cold saws: a Ø35-7/16″ (900 mm) TCT blade on a 50 HP (37 kW) spindle and a servo-driven saw head cut "
+                 "solid steel and non-ferrous bar from Ø2-3/4″ to Ø11-3/4″ (70 – 300 mm) in continuous production. The AC-servo ball-screw material "
+                 "feed positions the bar in a 27-1/2″ (700 mm) stroke to lengths from 3/8″ to 394″, the 20 ft (6 m) automatic loader holds five "
+                 "Ø11-3/4″ bars, and the enclosed cabin, hydraulic clamping, oil-mist lubrication and chip conveyor let the saw run unattended, "
+                 "down to a 3-3/8″ (85 mm) remnant.",
+         features=["Solid bar Ø2-3/4″ – 11-3/4″ (70 – 300 mm) round and square to 9-1/2″ (240 mm), with a Ø35-7/16″ (900 mm) TCT carbide blade",
+                   "50 HP (37 kW) main motor, blade speed 165 – 785 ft/min (50 – 240 m/min); 5.4 HP (4 kW) servo saw-head feed",
+                   "AC-servo ball-screw material feed: 27-1/2″ (700 mm) stroke, lengths 3/8″ – 394″ (10 – 9999 mm) at up to 30 in/s; 3/8″ end trim, 3-3/8″ remnant",
+                   "20 ft (6 m) automatic magazine loader for five Ø11-3/4″ bars; hydraulic clamping; enclosed cabin with chip conveyor and oil-mist lubrication",
+                   "Options: air filter, 20 ft (6 m) automatic material stand"],
+         optional=["Air filter", "20 ft (6 m) automatic material stand", "208 / 240 / 480 V 3-phase"],
+         images=["bk-opus-300-1", "bk-opus-300-2", "bk-opus-300-3", "bk-opus-300-4"],
+         videos=[], specs=t_opus_300(),
+         headline="Solid bar Ø2-3/4″ to Ø11-3/4″ (70 – 300 mm) · Ø35-7/16″ TCT blade · servo feed · 20 ft loader"),
 ]
 
 # bekamak.com photos for the circular saws: key -> file in /home/claude/bekamak/site/img
@@ -222,6 +353,10 @@ CIRCULAR_IMAGES = {
     "bk-bmdo-80cs-3": ("bekamak-bmdo-80-cs-81_17421.jpg", "BMDO 80CS — 20 ft roller magazine for bar and tube"),
     "bk-bmdo-100cs-1": ("bekamak-bmdo-100cs-112_17450.jpg", "Bekamak BMDO 100CS automatic HSS circular saw with roller table, tube and bar to Ø4″"),
     "bk-bmdo-100cs-2": ("bekamak-bmdo-100cs-112_17451.jpg", "BMDO 100CS — front view with the feed roller table"),
+    "bk-opus-300-1": ("bekamak-opus-300-135_18229.jpg", "Bekamak OPUS 300 automatic TCT carbide circular saw, solid bar to Ø11-3/4″: enclosed cabin, chip conveyor and control panel"),
+    "bk-opus-300-2": ("bekamak-opus-300-135_18230.jpg", "OPUS 300 — rear quarter view with the chip conveyor"),
+    "bk-opus-300-3": ("bekamak-opus-300-135_18231.jpg", "OPUS 300 — cabin open: Ø35-7/16″ (900 mm) TCT blade, servo saw head and hydraulic clamping"),
+    "bk-opus-300-4": ("bekamak-opus-300-135_18232.jpg", "OPUS 300 — touch-screen control panel"),
 }
 
 # photos of the new band-saw models that are not on a white background: cut them out with BiRefNet

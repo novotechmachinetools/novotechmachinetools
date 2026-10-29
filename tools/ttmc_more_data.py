@@ -239,14 +239,14 @@ GRIND = [
        "4 HP; up to 6,693 ft/min — the S-150 has two speeds, 3,346 / 6,693 ft/min",
        "Quick-adjusting belt angle; large flat sanding surface; vibration-free running",
        "L models: lighter build, 5,709 ft/min"],
-      ["tm-s75"], headline="3 – 6″ × 79″ belt, 4 HP", cap="[Belt size] belt · [Belt speed]"),
+      ["tm-s75", "tm-s75l"], headline="3 – 6″ × 79″ belt, 4 HP", cap="[Belt size] belt · [Belt speed]"),
     F("tt-s75h", P_GRIND, "belt", "S-75H · S-150H heavy-duty belt grinders, 5.5 HP, with dust collector on the HB", "S-75H / S-150H heavy-duty", T["tt-s75h"],
       "The heavy-duty pedestal grinder for production deburring: a rigid welded steel base, a 5.5 HP motor driving a 79″ belt at "
       "6,496 ft/min, a 21″ flat grinding length for large parts and a grinding angle that is adjusted and locked. The HB models have a "
       "3/4 HP dust collector built into the base, the HA models a dust drawer.",
       ["5.5 HP (4 kW) at 2,800 rpm; 3 × 79″ or 6 × 79″ belt at 6,496 ft/min", "20.9″ (530 mm) flat grinding length",
        "Adjustable grinding angle with lock; adjustable height", "HB: built-in 3/4 HP dust collector; HA: dust drawer"],
-      ["tm-s75h"], headline="3 – 6″ × 79″ belt, 5.5 HP", cap="[Belt size] belt"),
+      ["tm-s75h", "tm-s75hb"], headline="3 – 6″ × 79″ belt, 5.5 HP", cap="[Belt size] belt"),
     F("tt-s100", P_GRIND, "belt", "S-100 · S-220 wide-belt grinders, 4″ and 8″ belt", "S-100 / S-220 wide belt", T["tt-s100"],
       "Wide belts for wide work: the S-100 runs a 4 × 48″ belt from 1.5 HP with a quick-adjusting belt angle and a large flat platen; "
       "the S-220 is a radius grinder and surface sander in one, with an 8 × 79″ belt, a Ø7-7/8″ contact wheel, a 19.7 × 8.7″ graphite "
@@ -306,24 +306,24 @@ GRIND = [
       "a 25 × 12″ table on a cabinet base. The TSM300 is a 12″ disc sander on a cabinet stand with a tilting table and miter stop.",
       ["20″ (508 mm) disc, 2 HP; 1,100 rpm at 60 Hz, or 500 – 1,800 rpm variable on the DS-20V", "Table tilts 30° up and 45° down by hand wheel",
        "DS-20A: table raised and lowered on the column; dust port for a shop vacuum", "TSM300: 12″ disc, 1.5 HP, tilting table with miter stop"],
-      ["tm-ds20", "tm-ds20v", "tm-tsm300"], headline="12″ and 20″ discs", cap="[Disc diameter] disc"),
+      ["tm-ds20", "tm-ds20a", "tm-ds20v", "tm-tsm300"], headline="12″ and 20″ discs", cap="[Disc diameter] disc"),
     F("tt-ds12", P_GRIND, "disc", "DS12 12″ bench disc sanders", "DS12 disc sanders", T["tt-ds12"],
       "Bench disc sanders with a 12″ disc at 1,725 rpm: the DS12 with a 17.6 × 6.1″ table and 3/4 HP, the DS12A with two tables and the "
       "DS12B with a 15.7 × 8.9″ table, 1 HP.",
       ["12″ (304 mm) disc, 1,725 rpm at 60 Hz", "3/4 HP (DS12) or 1 HP (DS12A, DS12B)", "DS12A: two tables"],
-      ["tm-ds12"], headline="12″ disc", cap="[Table size]"),
+      ["tm-ds12", "tm-ds12b"], headline="12″ disc", cap="[Table size]"),
     F("tt-bg", P_GRIND, "bench", "BG-8 · BG-10 bench grinders and BG-60 wire-wheel deburring machines", "Bench grinders", T["tt-bg"],
       "Heavy cast-iron bench grinders with 8 × 1″ and 10 × 1″ wheels, and the BG-60 deburring and polishing machines with a 10″ steel "
       "wire wheel 2-3/8″ wide — two speeds (1,680 / 3,400 rpm at 60 Hz) on the BG-60, 3 HP on the BG-60A.",
       ["BG-8: 8 × 1″ wheels, 3/4 HP; BG-10: 10 × 1″ wheels, 1 HP", "Heavy-duty cast-iron construction",
        "BG-60 / BG-60A: Ø10 × 2-3/8″ wire wheel, 0.012″ wire, 2 – 3 HP"],
-      ["tm-bg", "tm-bg60"], headline="8″ and 10″ wheels", cap="[Wheel size]"),
+      ["tm-bg", "tm-bg60", "tm-bg60a"], headline="8″ and 10″ wheels", cap="[Wheel size]"),
     F("tt-cmd", P_GRIND, "chamfer", "CMD-4 · CMD-80 edge chamfering machines and DM5 hand chamfering tools", "Chamfering machines", T["tt-cmd"],
       "Edge chamfering machines that put a 15 – 45° weld prep or a clean deburred edge on plate, strip and parts: the CMD-80 cuts chamfers "
       "up to 1/4″ (6 mm) from 1.5 HP, the CMD-4 up to 5/32″, and the compact DM5 units 3/16″ at 45°.",
       ["CMD-80: chamfers 0 – 1/4″ (6 mm) at 15 – 45°, 1.5 HP", "CMD-4: chamfers 0 – 5/32″ (4 mm) at 15 – 45°",
        "DM5 / DM5A: compact units, 45° chamfers to 3/16″ (5 mm), 20 lb"],
-      ["tm-cmd", "tm-cmd4"], headline="Chamfers to 1/4″", cap="[Chamfer size]"),
+      ["tm-cmd", "tm-cmd4", "tm-dm5", "tm-dm5a"], headline="Chamfers to 1/4″", cap="[Chamfer size]"),
     F("tt-md380", P_GRIND, "chamfer", "MD-380A · MD-380B end-surface grinders", "MD-380 end grinders", T["tt-md380"],
       "End-surface grinding machines of Italian design that grind the faces of parts flat: a Ø7-7/8″ wheel on a 4 HP electro-spindle, "
       "0.0004″ vertical increments, coolant, and either a fixed 15.2 × 7″ table (MD-380A) or a Ø15.7″ rotary table (MD-380B); parts up "

@@ -6,6 +6,7 @@
   "isitan-sfc-v",
   "bekamak-bmdo-xs",
   "bekamak-bmdo-cs",
+  "bekamak-opus-300",
   "wt-tubex",
   "wt-tubin",
   "wt-tubepress",
@@ -1269,6 +1270,224 @@
     "note": "Capacities are for mild steel tube and bar with an HSS blade. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request)."
    },
    "headline": "Tube and bar Ø3/4″ to Ø4″ (20 – 100 mm) · HSS blades · servo gripper feed · touch screen",
+   "group": "bekamak-circular"
+  },
+  "bekamak-opus-300": {
+   "id": "bekamak-opus-300",
+   "brand": "bekamak",
+   "name": "OPUS 300 — automatic TCT carbide circular saw, Ø11-3/4″",
+   "short": "OPUS 300 carbide saw",
+   "models_label": "OPUS 300",
+   "summary": "The largest of Bekamak's carbide cold saws: a Ø35-7/16″ (900 mm) TCT blade on a 50 HP (37 kW) spindle and a servo-driven saw head cut solid steel and non-ferrous bar from Ø2-3/4″ to Ø11-3/4″ (70 – 300 mm) in continuous production. The AC-servo ball-screw material feed positions the bar in a 27-1/2″ (700 mm) stroke to lengths from 3/8″ to 394″, the 20 ft (6 m) automatic loader holds five Ø11-3/4″ bars, and the enclosed cabin, hydraulic clamping, oil-mist lubrication and chip conveyor let the saw run unattended, down to a 3-3/8″ (85 mm) remnant.",
+   "features": [
+    "Solid bar Ø2-3/4″ – 11-3/4″ (70 – 300 mm) round and square to 9-1/2″ (240 mm), with a Ø35-7/16″ (900 mm) TCT carbide blade",
+    "50 HP (37 kW) main motor, blade speed 165 – 785 ft/min (50 – 240 m/min); 5.4 HP (4 kW) servo saw-head feed",
+    "AC-servo ball-screw material feed: 27-1/2″ (700 mm) stroke, lengths 3/8″ – 394″ (10 – 9999 mm) at up to 30 in/s; 3/8″ end trim, 3-3/8″ remnant",
+    "20 ft (6 m) automatic magazine loader for five Ø11-3/4″ bars; hydraulic clamping; enclosed cabin with chip conveyor and oil-mist lubrication",
+    "Options: air filter, 20 ft (6 m) automatic material stand"
+   ],
+   "optional": [
+    "Air filter",
+    "20 ft (6 m) automatic material stand",
+    "208 / 240 / 480 V 3-phase"
+   ],
+   "images": [
+    "bk-opus-300-1",
+    "bk-opus-300-2",
+    "bk-opus-300-3",
+    "bk-opus-300-4"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "OPUS 300 — automatic TCT circular saw",
+      "sub": "Ø35-7/16″ (900 mm) carbide blade for solid bar to Ø11-3/4″ · servo feeding · magazine loader",
+      "models": [
+       "OPUS 300"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity — round",
+        "sub": "solid bar",
+        "cells": [
+         "Ø2-3/4″ – 11-3/4″ (70 – 300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity — square",
+        "sub": "",
+        "cells": [
+         "to 9-1/2″ × 9-1/2″ (240 × 240 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade Ø × T",
+        "sub": "TCT carbide",
+        "cells": [
+         "Ø35-7/16″ × .142″ body / .165″ kerf (900 × 3.6 / 4.2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "80 mm / 4-27-120, 2-12-64, 2-15-80"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speed",
+        "sub": "stepless",
+        "cells": [
+         "165 – 785 ft/min (50 – 240 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "50 HP (37 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw-head feed / material feed",
+        "sub": "servo",
+        "cells": [
+         "5.4 HP (4 kW) / 2.7 HP (2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant pump / chip conveyor",
+        "sub": "",
+        "cells": [
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "63 HP (47.15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Material feed",
+        "sub": "AC servo and ball screw",
+        "cells": [
+         "27-1/2″ (700 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "End-trim / remnant length",
+        "sub": "",
+        "cells": [
+         "3/8″ / 3-3/8″ (10 / 85 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Magazine loader",
+        "sub": "bundle of 20 ft bars",
+        "cells": [
+         "5 × Ø11-3/4″ (300 mm) bars, 20 ft (6 m) long"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loader dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "242 × 102 × 75″ (6150 × 2600 × 1900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Compressed air",
+        "sub": "",
+        "cells": [
+         "73 psi (5 bar), 8.7 cfm (245 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic tank / oil-mist tank",
+        "sub": "",
+        "cells": [
+         "18.5 gal / 0.4 gal (70 / 1.5 l)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "37″ (940 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions W × L × H",
+        "sub": "",
+        "cells": [
+         "163 × 98 × 126″ (4150 × 2500 × 3200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "24,251 lb (11,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "OPUS 300",
+      "glance": [
+       "Ø35-7/16″ TCT",
+       "Ø2-3/4″ – 11-3/4″",
+       "to 9-1/2″",
+       "50 HP",
+       "24,251 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "main_motor",
+     "weight"
+    ],
+    "caps": {
+     "OPUS 300": "Automatic TCT circular saw · solid bar to Ø11-3/4″"
+    },
+    "note": "Capacities are for solid steel bar with a TCT blade. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request)."
+   },
+   "headline": "Solid bar Ø2-3/4″ to Ø11-3/4″ (70 – 300 mm) · Ø35-7/16″ TCT blade · servo feed · 20 ft loader",
    "group": "bekamak-circular"
   },
   "wt-tubex": {

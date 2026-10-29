@@ -4,12 +4,12 @@
  "family_set": "pipe-end-and-saws",
  "title": "Cold Saws — Circular & CNC Carbide Cold Saws | NovoTech",
  "artifact_title": "Cold saws — circular cold saws, manual to CNC carbide",
- "meta_description": "Cold saws from a 10-3/4″ manual circular saw to automatic HSS and carbide production saws: wet cutting, burr-free ends, tube and bar to Ø6-1/4″, servo feed.",
+ "meta_description": "Cold saws from a 10-3/4″ manual circular saw to automatic HSS and carbide production saws: wet cutting, burr-free ends, tube and bar to Ø6-1/4″ — solid bar to Ø11-3/4″ on the OPUS 300 — servo feed.",
  "h1": "Cold saws — circular cold saws, manual to CNC carbide",
- "intro": "A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Three families of cold saw machines: ISITAN's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head; CSM's CT325 automatic saw with hydraulic down-feed and a servo carriage, cutting tube and bundles to Ø4″ in three spindle-speed ranges; and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the ISITAN saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON, Canada.",
+ "intro": "A cold saw cuts metal with a slow-turning, coolant-flooded circular blade instead of a hot abrasive disc, leaving a square, burr-free end that is cool to the touch and ready to weld. Three families of cold saw machines: ISITAN's wet-type circular cold saws for the fabrication shop — the SFC 275 and 315 pull-down saws with a manual or pneumatic vise and the semi-automatic SFC 350-VX with a hydro-pneumatic head; CSM's CT325 automatic saw with hydraulic down-feed and a servo carriage, cutting tube and bundles to Ø4″ in three spindle-speed ranges; and Bekamak's automatic production saws: the BMDO XS high-speed carbide (TCT) cold saws that cut solid bar to Ø6-1/4″ from a 20 ft magazine loader with servo feeding, the OPUS 300 with a Ø35-7/16″ (900 mm) carbide blade and a 50 HP spindle for solid bar to Ø11-3/4″, and the BMDO CS HSS saws for tube and bar to Ø4″ with a servo gripper feed and touch-screen control. Mitre cuts 45° both ways on the ISITAN saws, blades for mild, high-strength and stainless steel, CSA-approved panels and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Manual and semi-automatic circular cold saws: round to Ø4-1/2″, mitre 45° both ways, 10-3/4″ – 13-3/4″ HSS blades",
-  "Automatic carbide cold saws: solid bar Ø3/8″ – 6-1/4″ at up to 920 ft/min, servo feed, 20 ft magazine loader",
+  "Automatic carbide cold saws: solid bar Ø3/8″ – 6-1/4″ at up to 920 ft/min, servo feed, 20 ft magazine loader — and the OPUS 300 for bar to Ø11-3/4″",
   "Automatic HSS cold saws: tube, bundles and bar to Ø4″, servo feed to ±.004″, several lengths per bar — CSM CT325 and Bekamak BMDO CS"
  ],
  "hero_image": "is-sfc-350-vx",
@@ -60,11 +60,12 @@
   {
    "id": "bekamak-circular-group",
    "title": "Bekamak automatic circular saws — TCT carbide and HSS",
-   "lead": "Production cold saws that feed, cut and count by themselves: BMDO XS carbide saws for solid bar to Ø6-1/4″ and BMDO CS HSS saws for tube and bar to Ø4″.",
+   "lead": "Production cold saws that feed, cut and count by themselves: BMDO XS carbide saws for solid bar to Ø6-1/4″, the OPUS 300 carbide saw for bar to Ø11-3/4″ and BMDO CS HSS saws for tube and bar to Ø4″.",
    "brand": "bekamak",
    "families": [
     "bekamak-bmdo-xs",
-    "bekamak-bmdo-cs"
+    "bekamak-bmdo-cs",
+    "bekamak-opus-300"
    ]
   }
  ],
@@ -75,7 +76,7 @@
   },
   {
    "q": "TCT carbide or HSS cold saw?",
-   "a": "A carbide (TCT) blade runs at 130–920 ft/min and is the fastest way to cut solid steel bar in production — the Bekamak BMDO XS saws are built around it, with servo feeding and a magazine loader for unattended runs. HSS blades run slower (22–130 ft/min on the BMDO CS) and are the choice for tube, thin walls and mixed work; the XS saws accept HSS blades for tube as well."
+   "a": "A carbide (TCT) blade runs at 130–920 ft/min and is the fastest way to cut solid steel bar in production — the Bekamak BMDO XS saws and the Ø11-3/4″ OPUS 300 are built around it, with servo feeding and a magazine loader for unattended runs. HSS blades run slower (22–130 ft/min on the BMDO CS) and are the choice for tube, thin walls and mixed work; the XS saws accept HSS blades for tube as well."
   },
   {
    "q": "What does an automatic cold saw do by itself?",

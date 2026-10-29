@@ -1,11 +1,13 @@
 {
  "order": [
   "bekamak-bms-dg",
+  "bekamak-bmh-170",
   "bekamak-bmsy-dgh",
   "bekamak-bmsy-g",
   "bekamak-bmsy-straight",
   "bekamak-bmso-roller",
   "bekamak-bmso-e",
+  "bekamak-bmso-s",
   "bekamak-bmso-ga",
   "bekamak-bmso-gs",
   "bekamak-bmso-dgs",
@@ -16,6 +18,7 @@
   "bekamak-bmso-cs",
   "bekamak-bmso-cgs",
   "bekamak-bmso-xs",
+  "bekamak-terra-6",
   "bekamak-bmsy-heavy",
   "bekamak-gantry-2200xs",
   "bekamak-bmsy-460vg",
@@ -6337,8 +6340,8 @@
    "group": "double-column",
    "name": "BMSO CS NC fully automatic servo-feed double-column band saws",
    "short": "BMSO CS NC servo",
-   "models_label": "BMSO 330CS · BMSO 420CS · BMSO 560CS · BMSO 570CS · BMSO 820CS · BMSO 1110CS",
-   "summary": "Production saws with ball-screw servo shuttle-vise feeding and PLC touch-screen control: job lists of length and quantity run unattended with ±0.1 mm repeatability. Ø13″ (330 mm) to Ø43-3/4″ (1110 mm).",
+   "models_label": "BMSO 330CS · BMSO 420CS · BMSO 460CS · BMSO 560CS · BMSO 570CS · BMSO 820CS · BMSO 1110CS · BMSO 1313CS",
+   "summary": "Production saws with ball-screw servo shuttle-vise feeding and PLC touch-screen control: job lists of length and quantity run unattended with ±0.1 mm repeatability. Ø13″ (330 mm) to Ø51-1/8″ (1300 mm) — the BMSO 1313CS cuts blocks and billets up to 51-1/8″ × 51-1/8″ with a 118″ (3 m) feed stroke and a pallet-type chip conveyor.",
    "features": [
     "Servo shuttle-vise feed on ball screw; multi-program PLC touch screen",
     "Twin-column guidance; hydraulic vise on feed and cutting side",
@@ -6372,7 +6375,15 @@
     "bk-bmso-570cs-3",
     "bk-bmso-570cs-4",
     "bk-bmso-1110cs-1",
-    "bk-bmso-820cs-5"
+    "bk-bmso-820cs-5",
+    "bk-bmso-460cs-1",
+    "bk-bmso-460cs-3",
+    "bk-bmso-460cs-4",
+    "bk-bmso-460cs-2",
+    "bk-bmso-1313cs-1",
+    "bk-bmso-1313cs-3",
+    "bk-bmso-1313cs-4",
+    "bk-bmso-1313cs-2"
    ],
    "videos": [
     {
@@ -6392,6 +6403,12 @@
      "title": "Bekamak BMSO 420CS customized for bundle cutting",
      "thumb": "video-MLBnkqpGtJA",
      "duration": "PT1M54S"
+    },
+    {
+     "id": "EHRMBwaOEiA",
+     "title": "Bekamak BMSO 460CS NC — hydraulic vise and hydraulic top clamping",
+     "duration": "PT1M42S",
+     "thumb": "video-EHRMBwaOEiA"
     }
    ],
    "specs": {
@@ -6467,6 +6484,42 @@
        "Chip Conveyor Motor": "0.25 kW"
       },
       "notes": "Hydraulic drive is labelled 'Hydraulic Motor' on this model."
+     },
+     {
+      "name": "BMSO 460CS",
+      "capacity_mm": {
+       "0": {
+        "round": 460,
+        "rect": [
+         540,
+         460
+        ],
+        "square": 460
+       }
+      },
+      "main_motor_kw": 4,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       5750,
+       41,
+       1.3
+      ],
+      "working_height_mm": 826.5,
+      "weight_kg": 3250,
+      "dims_mm": [
+       3000,
+       2150,
+       2100
+      ],
+      "feed_length_mm": 700,
+      "feed_type": null,
+      "other": {
+       "Feeder Servo Motor": "1.5 kW",
+       "Chip Conveyor Motor": "0.25 kW"
+      },
+      "notes": ""
      },
      {
       "name": "BMSO 560CS",
@@ -6608,6 +6661,44 @@
        "1M Stand Weight": "784 kg"
       },
       "notes": "Only round and square capacities are printed (no rectangular value). No feeder servo motor rating is printed for this model. The extra weight rows (pull table, stand weights) are printed as-is in the table."
+     },
+     {
+      "name": "BMSO 1313CS",
+      "capacity_mm": {
+       "0": {
+        "round": 1300,
+        "rect": [
+         1300,
+         1300
+        ],
+        "square": 1300
+       }
+      },
+      "main_motor_kw": "11-15",
+      "hydraulic_motor_kw": 4,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       12100,
+       "67/80",
+       1.6
+      ],
+      "working_height_mm": 914,
+      "weight_kg": 24000,
+      "dims_mm": [
+       6000,
+       5200,
+       4300
+      ],
+      "feed_length_mm": 3000,
+      "feed_type": null,
+      "other": {
+       "Feeder Servo Motor": "2 kW",
+       "Chip Conveyor Motor": "0.25 kW",
+       "Feed stroke": "3000 mm",
+       "Minimum cutting diameter": "300 mm"
+      },
+      "notes": "Main motor printed as '11/15 kW' (the 15 kW motor is the option listed for the CS family)."
      }
     ]
    },
@@ -6761,6 +6852,82 @@
       {
        "title": "Hydraulic top clamp",
        "image": null
+      }
+     ]
+    },
+    {
+     "model": "BMSO 460CS",
+     "slug": "bmso-460cs-nc_HV61W",
+     "standard": [
+      {
+       "title": "Control panel",
+       "image": "bk-det-990eee58acc3"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-b6dd001b2376"
+      },
+      {
+       "title": "Cutting pressure adjustment",
+       "image": "bk-det-8173cc12e707"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-3639d9b76ef0"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-ed8cc2bcb559"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-fab884778eb0"
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2012-11-20-961094"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-8928a83cea63"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-2013-03-11-513666"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-375289beb8ad"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-a5d577d953ba"
+      },
+      {
+       "title": "Band saw blade 1-1/2″ × .050″ (41 × 1.3 mm)",
+       "image": "bk-det-2013-02-04-844814"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-09c35ba38e33"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": "bk-det-68a1425ba75b"
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-3c4ee3270d05"
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-a69e4f628e64"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": "bk-det-2013-02-15-69546"
       }
      ]
     },
@@ -7001,6 +7168,62 @@
       {
        "title": "Laser line pointer",
        "image": "bk-det-352af4d02524"
+      }
+     ]
+    },
+    {
+     "model": "BMSO 1313CS",
+     "slug": "bmso-1313cs",
+     "standard": [
+      {
+       "title": "Blade deviation sensor",
+       "image": null
+      },
+      {
+       "title": "Laser line pointer",
+       "image": null
+      },
+      {
+       "title": "Cutting speed indicator",
+       "image": null
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": null
+      },
+      {
+       "title": "Pallet-type chip conveyor",
+       "image": null
+      },
+      {
+       "title": "10 ft (3 m) material stand",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": null
+      },
+      {
+       "title": "Hexagonal vise jaws",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "118″ (3 m) pull-out table",
+       "image": null
+      },
+      {
+       "title": "3 ft (1 m) material stand",
+       "image": null
+      },
+      {
+       "title": "10 ft (3 m) material stand",
+       "image": null
       }
      ]
     }
@@ -10929,6 +11152,450 @@
      }
     ]
    }
+  },
+  "bekamak-bmso-s": {
+   "id": "bekamak-bmso-s",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "automatic",
+   "name": "BMSO 320S fully automatic servo-feed band saw, 12-5/8″",
+   "short": "BMSO 320S servo",
+   "models_label": "BMSO 320S",
+   "summary": "A pivot-type automatic saw with servo shuttle-vise feeding for straight cuts in bar, tube and profiles up to Ø12-5/8″ (320 mm): the Omron touch-screen control stores 50 programs of up to 30 length-and-quantity steps, the ball-screw servo feed positions the material in a 27-1/2″ (700 mm) stroke — or in several strokes for lengths up to 394″ (9999 mm) — and the saw clamps, cuts and counts until the job is done. Linear-way bow guidance, hydro-mechanical blade tension, a chip conveyor and an inverter for stepless blade speed are standard.",
+   "features": [
+    "Ø12-5/8″ (320 mm) round, 14-5/8″ × 12-5/8″ (370 × 320 mm) rectangular and 12-5/8″ square at 0°",
+    "Servo shuttle-vise feed on a ball screw: 27-1/2″ (700 mm) stroke, multiple strokes for lengths to 394″ (9999 mm)",
+    "Omron touch-screen control: 50 programs × 30 length-and-quantity steps, piece counter",
+    "1-1/4″ × .042″ (34 × 1.1 mm) band at 50 – 395 ft/min (15 – 120 m/min) on an inverter; 3 HP (2.2 kW) main motor, heavy-duty gearbox",
+    "Linear-way guidance, hydro-mechanical blade tension, blade-slippage sensor, cutting-pressure control, optical height adjustment, blade brush, chip conveyor, coolant pump",
+    "Options: hydraulic blade tension, hydraulic top clamp, multi-segment (bundle) vise jaws, micro-spray lubrication, 10 ft (3 m) roller table"
+   ],
+   "optional": [
+    "Hydraulic blade tension",
+    "Hydraulic top clamp",
+    "Multi-segment vise jaws",
+    "Micro-spray lubrication",
+    "10 ft (3 m) material roller table"
+   ],
+   "images": [
+    "bk-bmso-320s-1",
+    "bk-bmso-320s-2"
+   ],
+   "videos": [],
+   "headline": "Ø12-5/8″ (320 mm) round · 14-5/8″ × 12-5/8″ rectangular · servo feed, 50 programs",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMSO 320S",
+      "capacity_mm": {
+       "0": {
+        "round": 320,
+        "rect": [
+         370,
+         320
+        ],
+        "square": 320
+       }
+      },
+      "main_motor_kw": 2.2,
+      "hydraulic_motor_kw": 1.5,
+      "coolant_pump_kw": 0.12,
+      "blade_speed_m_min": "15-120",
+      "band_mm": [
+       4160,
+       34,
+       1.1
+      ],
+      "working_height_mm": 850,
+      "weight_kg": 1900,
+      "dims_mm": [
+       1950,
+       2150,
+       1800
+      ],
+      "feed_length_mm": 700,
+      "feed_type": null,
+      "other": {
+       "Feeder servo motor": "1 kW",
+       "Feed stroke": "700 mm",
+       "Multiple-stroke feed length": "9999 mm",
+       "Control": "Omron touch screen, 50 programs × 30 length steps"
+      },
+      "notes": ""
+     }
+    ]
+   },
+   "model_features": [
+    {
+     "model": "BMSO 320S",
+     "slug": "bmso-320s",
+     "standard": [
+      {
+       "title": "Band saw blade 1-1/4″ × .042″ (34 × 1.1 mm)",
+       "image": "bk-det-2013-02-04-317656"
+      },
+      {
+       "title": "Hydro-mechanical blade tension",
+       "image": "bk-det-2013-01-11-582315"
+      },
+      {
+       "title": "Blade brush",
+       "image": "bk-det-2013-01-11-762642"
+      },
+      {
+       "title": "Chip conveyor",
+       "image": null
+      },
+      {
+       "title": "Safety switch",
+       "image": "bk-det-2013-01-11-724102"
+      },
+      {
+       "title": "Cutting width adjustment lever",
+       "image": "bk-det-2013-01-11-207651"
+      },
+      {
+       "title": "Linear guides",
+       "image": "bk-det-2013-01-11-123927"
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": "bk-det-2013-01-11-666491"
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": "bk-det-2013-01-11-712373"
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": "bk-det-09151d203307"
+      },
+      {
+       "title": "Cutting pressure control",
+       "image": "bk-det-cb7cf5bfb8c1"
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": "bk-det-2f0b743c9531"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-f818c3c4129c"
+      }
+     ],
+     "optional": [
+      {
+       "title": "Hydraulic blade tension",
+       "image": "bk-det-2013-01-11-978878"
+      },
+      {
+       "title": "Multi-segment vise jaws",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": "bk-det-2012-12-29-695466"
+      },
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": null
+      },
+      {
+       "title": "Hydraulic top clamp",
+       "image": "bk-det-7bda86b4bc2e"
+      }
+     ]
+    }
+   ]
+  },
+  "bekamak-terra-6": {
+   "id": "bekamak-terra-6",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "double-column",
+   "name": "TERRA 6 high-speed fully automatic band saw, 26″",
+   "short": "TERRA 6 high-speed",
+   "models_label": "TERRA 6",
+   "summary": "Bekamak's fastest saw: a fully enclosed double-column production machine whose 40 HP (30 kW) drive runs the 2-5/8″ (67 mm) band at up to 1,970 ft/min (600 m/min), so a Ø16-3/8″ (415 mm) solid bar that takes around 22 minutes on a conventional band saw is cut in about 2 minutes with the right carbide blade. Servo bow feed and servo material feed, a PC-based control that measures the load on the blade through a load cell and corrects the cutting parameters in real time, deflection control, a camera in the cabin and a zero-remnant unloading cycle — for steel service centres, forges, machine builders and the automotive industry, with carbide or bi-metal blades, up to Ø26″ (660 mm) round.",
+   "features": [
+    "Ø26″ (660 mm) round and 26″ × 26″ (660 × 660 mm) rectangular capacity; minimum cut 5/8″ (15 mm)",
+    "Blade speed 50 – 1,970 ft/min (15 – 600 m/min) on a 40 HP (30 kW) main motor; 2-5/8″ × .063″ (67 × 1.6 mm) carbide or bi-metal band",
+    "Servo bow feed (2.7 HP / 2 kW) and servo material feed (2 HP / 1.5 kW): 27-1/2″ (700 mm) feed stroke, multiple strokes to 394″ (9999 mm), zero remnant in automatic mode",
+    "PC-based control with load cell and deflection control: cutting parameters corrected in real time for longer blade life and a better surface finish",
+    "Fully enclosed cabin with camera, hydraulic vises, hydraulic blade tension, hydraulic bow lock, inclined bow, motorized chip brush, chip conveyor, coolant filtration unit",
+    "Options: micro-spray lubrication, 10 ft (3 m) material roller table"
+   ],
+   "optional": [
+    "Micro-spray lubrication",
+    "10 ft (3 m) material roller table"
+   ],
+   "images": [
+    "bk-terra-6-1",
+    "bk-terra-6-2",
+    "bk-terra-6-3"
+   ],
+   "videos": [],
+   "headline": "Ø26″ (660 mm) round · blade speed to 1,970 ft/min (600 m/min) · carbide and bi-metal blades",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "TERRA 6",
+      "capacity_mm": {
+       "0": {
+        "round": 660,
+        "rect": [
+         660,
+         660
+        ],
+        "square": 660
+       }
+      },
+      "main_motor_kw": 30,
+      "hydraulic_motor_kw": 2.2,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "15-600",
+      "band_mm": [
+       11220,
+       67,
+       1.6
+      ],
+      "working_height_mm": 820,
+      "weight_kg": 11800,
+      "dims_mm": [
+       5250,
+       2250,
+       2820
+      ],
+      "feed_length_mm": 700,
+      "feed_type": null,
+      "other": {
+       "Bow servo motor": "2 kW",
+       "Feeder servo motor": "1.5 kW",
+       "Coolant filtration unit": "0.75 kW",
+       "Feed stroke": "700 mm",
+       "Unloading stroke": "300 mm",
+       "Multiple-stroke feed length": "9999 mm",
+       "Minimum cutting length": "15 mm",
+       "Minimum remnant in automatic mode": "0 mm",
+       "Depth with chip conveyor": "2975 mm"
+      },
+      "notes": ""
+     }
+    ]
+   },
+   "model_features": [
+    {
+     "model": "TERRA 6",
+     "slug": "terra-6",
+     "standard": [
+      {
+       "title": "Hydraulic vise",
+       "image": null
+      },
+      {
+       "title": "Hydraulic blade tension",
+       "image": null
+      },
+      {
+       "title": "PC-based control panel",
+       "image": null
+      },
+      {
+       "title": "Inclined bow",
+       "image": null
+      },
+      {
+       "title": "Blade deflection control",
+       "image": null
+      },
+      {
+       "title": "Motorized chip brush",
+       "image": null
+      },
+      {
+       "title": "Chip conveyor",
+       "image": null
+      },
+      {
+       "title": "Optical bow height adjustment",
+       "image": null
+      },
+      {
+       "title": "Hydraulic bow lock",
+       "image": null
+      },
+      {
+       "title": "Load cell (blade load measurement)",
+       "image": null
+      },
+      {
+       "title": "Heavy-duty gearbox",
+       "image": null
+      },
+      {
+       "title": "Blade slippage sensor (proximity switch)",
+       "image": null
+      },
+      {
+       "title": "Inverter — variable blade speed",
+       "image": null
+      },
+      {
+       "title": "Electrical panel",
+       "image": null
+      },
+      {
+       "title": "Coolant pump",
+       "image": null
+      },
+      {
+       "title": "Safety switch",
+       "image": null
+      },
+      {
+       "title": "Fully enclosed cabin",
+       "image": null
+      },
+      {
+       "title": "Camera in the cabin",
+       "image": null
+      },
+      {
+       "title": "Zero remnant",
+       "image": null
+      }
+     ],
+     "optional": [
+      {
+       "title": "10 ft (3 m) material roller table",
+       "image": null
+      },
+      {
+       "title": "Micro-spray lubrication",
+       "image": null
+      }
+     ]
+    }
+   ]
+  },
+  "bekamak-bmh-170": {
+   "id": "bekamak-bmh-170",
+   "brand": "bekamak",
+   "line": "premium",
+   "group": "manual",
+   "name": "BMH 170 hydraulic power hacksaw, 6-3/4″",
+   "short": "BMH 170 hacksaw",
+   "models_label": "BMH 170",
+   "summary": "Not a band saw but the simplest Bekamak saw of all: a hydraulic power hacksaw whose flat 13-3/4″ (350 mm) blade reciprocates while hydraulic pressure feeds it through the material. The operator clamps the bar in the vise, sets the cutting speed and the length stop and starts the cut; the frame lifts when the piece drops. Ø6-3/4″ (170 mm) round at 0° and Ø4-3/8″ (110 mm) at 45°, a 1 HP motor and a footprint of 43″ × 24″ — for the small shop, the maintenance department and anyone who cuts a few pieces a day.",
+   "features": [
+    "Ø6-3/4″ (170 mm) round, 7-7/8″ × 4-3/4″ (200 × 120 mm) rectangular at 0°; Ø4-3/8″ (110 mm) round at 45°",
+    "Hydraulic down-feed of the reciprocating 13-3/4″ × 1-3/16″ (350 × 30 mm) hacksaw blade; cutting-speed control",
+    "1 HP (0.75 kW) motor; vise, adjustable material length stop and height adjustment",
+    "Coolant pump, roller table, electrical panel and control panel standard; 584 lb (265 kg)"
+   ],
+   "optional": [],
+   "images": [
+    "bk-bmh-170-2",
+    "bk-bmh-170-3",
+    "bk-bmh-170-1"
+   ],
+   "videos": [],
+   "headline": "Ø6-3/4″ (170 mm) round · 7-7/8″ × 4-3/4″ rectangular · hydraulic feed",
+   "specs": {
+    "kind": "bandsaw",
+    "models": [
+     {
+      "name": "BMH 170",
+      "capacity_mm": {
+       "0": {
+        "round": 170,
+        "rect": [
+         200,
+         120
+        ],
+        "square": 145
+       },
+       "+45": {
+        "round": 110,
+        "rect": [
+         110,
+         110
+        ],
+        "square": 120
+       }
+      },
+      "main_motor_kw": 0.75,
+      "hydraulic_motor_kw": null,
+      "coolant_pump_kw": null,
+      "blade_speed_m_min": "120",
+      "band_mm": null,
+      "working_height_mm": 430,
+      "weight_kg": 265,
+      "dims_mm": [
+       1100,
+       600,
+       810
+      ],
+      "feed_length_mm": null,
+      "feed_type": null,
+      "other": {
+       "Hacksaw blade L × W × T": "13-3/4″ × 1-3/16″ × .059″ (350 × 30 × 1.5 mm)"
+      },
+      "notes": ""
+     }
+    ]
+   },
+   "model_features": [
+    {
+     "model": "BMH 170",
+     "slug": "bmh-170",
+     "standard": [
+      {
+       "title": "Vise",
+       "image": "bk-det-2013-03-07-101650"
+      },
+      {
+       "title": "Adjustable material length stop",
+       "image": "bk-det-2013-03-06-585648"
+      },
+      {
+       "title": "Bow height adjustment",
+       "image": "bk-det-2013-03-06-568099"
+      },
+      {
+       "title": "Electrical panel",
+       "image": "bk-det-2013-03-06-8985"
+      },
+      {
+       "title": "Cutting speed control",
+       "image": "bk-det-2013-03-06-974818"
+      },
+      {
+       "title": "Control panel",
+       "image": "bk-det-2013-03-06-956619"
+      },
+      {
+       "title": "Hydraulic feed cylinder",
+       "image": "bk-det-2013-03-06-161756"
+      },
+      {
+       "title": "Coolant pump",
+       "image": "bk-det-2013-03-06-993708"
+      },
+      {
+       "title": "Roller table",
+       "image": "bk-det-2013-03-06-855162"
+      },
+      {
+       "title": "Saw blade",
+       "image": "bk-det-2013-03-06-517930"
+      }
+     ],
+     "optional": []
+    }
+   ]
   }
  }
 }

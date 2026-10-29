@@ -10941,13 +10941,13 @@
     "w": 800,
     "h": 819,
     "file": "img/bandsaw/nt-h13-1-800.webp",
-    "bytes": 49968
+    "bytes": 95742
    },
    {
     "w": 480,
     "h": 492,
     "file": "img/bandsaw/nt-h13-1-480.webp",
-    "bytes": 28150
+    "bytes": 53576
    }
   ],
   "alpha": true,
@@ -10955,8 +10955,9 @@
    "w": 156,
    "h": 160,
    "file": "img/bandsaw/nt-h13-1-thumb.webp",
-   "bytes": 5622
-  }
+   "bytes": 11446
+  },
+  "cut": "birefnet"
  },
  "nt-h13c-1": {
   "alt": "NovoTech BS-460G-JC hydraulic band saw with movable control panel",
@@ -11480,19 +11481,19 @@
     "w": 1200,
     "h": 922,
     "file": "img/bandsaw/nt-a18-1-1200.webp",
-    "bytes": 65082
+    "bytes": 106790
    },
    {
     "w": 800,
     "h": 614,
     "file": "img/bandsaw/nt-a18-1-800.webp",
-    "bytes": 41840
+    "bytes": 69402
    },
    {
     "w": 480,
     "h": 369,
     "file": "img/bandsaw/nt-a18-1-480.webp",
-    "bytes": 22218
+    "bytes": 36614
    }
   ],
   "alpha": true,
@@ -11500,8 +11501,9 @@
    "w": 160,
    "h": 123,
    "file": "img/bandsaw/nt-a18-1-thumb.webp",
-   "bytes": 4420
-  }
+   "bytes": 7624
+  },
+  "cut": "birefnet"
  },
  "nt-a18-2": {
   "alt": "BS-650G \u2014 feeder roller table",
@@ -11558,19 +11560,19 @@
     "w": 1200,
     "h": 1222,
     "file": "img/bandsaw/nt-dc11-1-1200.webp",
-    "bytes": 64254
+    "bytes": 112540
    },
    {
     "w": 800,
     "h": 815,
     "file": "img/bandsaw/nt-dc11-1-800.webp",
-    "bytes": 42218
+    "bytes": 74408
    },
    {
     "w": 480,
     "h": 489,
     "file": "img/bandsaw/nt-dc11-1-480.webp",
-    "bytes": 24366
+    "bytes": 40766
    }
   ],
   "alpha": true,
@@ -11578,8 +11580,9 @@
    "w": 157,
    "h": 160,
    "file": "img/bandsaw/nt-dc11-1-thumb.webp",
-   "bytes": 5806
-  }
+   "bytes": 9662
+  },
+  "cut": "birefnet"
  },
  "nt-dc11t-1": {
   "alt": "NovoTech TBK-4228A double column miter band saw",
@@ -12078,19 +12081,19 @@
     "w": 1200,
     "h": 922,
     "file": "img/bandsaw/nt-a18-1-cut-1200.webp",
-    "bytes": 69688
+    "bytes": 112904
    },
    {
     "w": 800,
     "h": 614,
     "file": "img/bandsaw/nt-a18-1-cut-800.webp",
-    "bytes": 45120
+    "bytes": 72796
    },
    {
     "w": 480,
     "h": 369,
     "file": "img/bandsaw/nt-a18-1-cut-480.webp",
-    "bytes": 23470
+    "bytes": 37830
    }
   ],
   "alpha": true,
@@ -12098,8 +12101,9 @@
    "w": 160,
    "h": 123,
    "file": "img/bandsaw/nt-a18-1-cut-thumb.webp",
-   "bytes": 4420
-  }
+   "bytes": 7624
+  },
+  "cut": "birefnet"
  },
  "nt-a13-1-cut": {
   "alt": "NovoTech BS-460GB automatic swivel-head miter band saw with 20 ft material stand",
@@ -12198,19 +12202,19 @@
     "w": 1200,
     "h": 1222,
     "file": "img/bandsaw/nt-dc11-1-cut-1200.webp",
-    "bytes": 68942
+    "bytes": 117104
    },
    {
     "w": 800,
     "h": 815,
     "file": "img/bandsaw/nt-dc11-1-cut-800.webp",
-    "bytes": 45314
+    "bytes": 78038
    },
    {
     "w": 480,
     "h": 489,
     "file": "img/bandsaw/nt-dc11-1-cut-480.webp",
-    "bytes": 25642
+    "bytes": 42250
    }
   ],
   "alpha": true,
@@ -12218,8 +12222,9 @@
    "w": 157,
    "h": 160,
    "file": "img/bandsaw/nt-dc11-1-cut-thumb.webp",
-   "bytes": 5806
-  }
+   "bytes": 9662
+  },
+  "cut": "birefnet"
  },
  "a-40-head": {
   "alt": "A 40 bending head with rollers bending a dowel bar",
@@ -83529,18 +83534,30 @@
   "alt": "PRS-76C tube and profile end grinder with two-speed motor, forward and reverse",
   "variants": [
    {
+    "w": 1200,
+    "h": 958,
+    "file": "img/ttmc-more/tm-prs-1200.webp",
+    "bytes": 73834
+   },
+   {
+    "w": 800,
+    "h": 639,
+    "file": "img/ttmc-more/tm-prs-800.webp",
+    "bytes": 49020
+   },
+   {
     "w": 480,
-    "h": 379,
+    "h": 383,
     "file": "img/ttmc-more/tm-prs-480.webp",
-    "bytes": 27124
+    "bytes": 27440
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 126,
+   "h": 128,
    "file": "img/ttmc-more/tm-prs-thumb.webp",
-   "bytes": 6764
+   "bytes": 6784
   },
   "cut": "birefnet"
  },
@@ -83548,18 +83565,24 @@
   "alt": "PRS-150 tube end grinder with 6\u2033 belt for tube up to 5-3/4\u2033",
   "variants": [
    {
-    "w": 464,
-    "h": 558,
-    "file": "img/ttmc-more/tm-prs150-464.webp",
-    "bytes": 33248
+    "w": 800,
+    "h": 904,
+    "file": "img/ttmc-more/tm-prs150-800.webp",
+    "bytes": 60144
+   },
+   {
+    "w": 480,
+    "h": 543,
+    "file": "img/ttmc-more/tm-prs150-480.webp",
+    "bytes": 34298
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 133,
+   "w": 142,
    "h": 160,
    "file": "img/ttmc-more/tm-prs150-thumb.webp",
-   "bytes": 7380
+   "bytes": 7314
   },
   "cut": "birefnet"
  },
@@ -83836,18 +83859,18 @@
   "alt": "RBM20 ring roller with LED top-roll readout and foot pedal",
   "variants": [
    {
-    "w": 439,
-    "h": 614,
-    "file": "img/ttmc-more/tm-rbm20-439.webp",
-    "bytes": 28082
+    "w": 480,
+    "h": 733,
+    "file": "img/ttmc-more/tm-rbm20-480.webp",
+    "bytes": 41432
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 114,
+   "w": 105,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm20-thumb.webp",
-   "bytes": 6748
+   "bytes": 6520
   },
   "cut": "birefnet"
  },
@@ -83855,37 +83878,37 @@
   "alt": "RBM30 motorized ring roller with foot pedal",
   "variants": [
    {
-    "w": 372,
-    "h": 600,
-    "file": "img/ttmc-more/tm-rbm30-372.webp",
-    "bytes": 25434
+    "w": 480,
+    "h": 689,
+    "file": "img/ttmc-more/tm-rbm30-480.webp",
+    "bytes": 36060
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 99,
+   "w": 111,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm30-thumb.webp",
-   "bytes": 5442
+   "bytes": 5756
   },
   "cut": "birefnet"
  },
  "tm-rbm30hv": {
-  "alt": "RBM30HV ring roller, horizontal and vertical",
+  "alt": "RBM30HV ring roller, horizontal and vertical, with pedestal control",
   "variants": [
    {
-    "w": 376,
-    "h": 476,
-    "file": "img/ttmc-more/tm-rbm30hv-376.webp",
-    "bytes": 25098
+    "w": 480,
+    "h": 734,
+    "file": "img/ttmc-more/tm-rbm30hv-480.webp",
+    "bytes": 43258
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 126,
+   "w": 105,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm30hv-thumb.webp",
-   "bytes": 7206
+   "bytes": 6122
   },
   "cut": "birefnet"
  },
@@ -83893,37 +83916,37 @@
   "alt": "RBM40HV profile bender, horizontal and vertical, with foot pedal",
   "variants": [
    {
-    "w": 443,
-    "h": 509,
-    "file": "img/ttmc-more/tm-rbm40-443.webp",
-    "bytes": 26862
+    "w": 480,
+    "h": 578,
+    "file": "img/ttmc-more/tm-rbm40-480.webp",
+    "bytes": 31078
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 139,
+   "w": 133,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm40-thumb.webp",
-   "bytes": 7116
+   "bytes": 6328
   },
   "cut": "birefnet"
  },
  "tm-rbm50": {
-  "alt": "RBM50HV profile bender with \u00d82\u2033 shafts",
+  "alt": "RBM50HV profile bender with \u00d82\u2033 shafts and foot pedal",
   "variants": [
    {
-    "w": 366,
-    "h": 552,
-    "file": "img/ttmc-more/tm-rbm50-366.webp",
-    "bytes": 28364
+    "w": 480,
+    "h": 580,
+    "file": "img/ttmc-more/tm-rbm50-480.webp",
+    "bytes": 36040
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 106,
+   "w": 132,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm50-thumb.webp",
-   "bytes": 6806
+   "bytes": 7228
   },
   "cut": "birefnet"
  },
@@ -84140,18 +84163,24 @@
   "alt": "S-100 belt grinder with 4\u2033 belt on pedestal",
   "variants": [
    {
+    "w": 800,
+    "h": 1049,
+    "file": "img/ttmc-more/tm-s100-800.webp",
+    "bytes": 56184
+   },
+   {
     "w": 480,
-    "h": 622,
+    "h": 630,
     "file": "img/ttmc-more/tm-s100-480.webp",
-    "bytes": 30762
+    "bytes": 31126
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 124,
+   "w": 122,
    "h": 160,
    "file": "img/ttmc-more/tm-s100-thumb.webp",
-   "bytes": 5746
+   "bytes": 5822
   },
   "cut": "birefnet"
  },
@@ -84162,15 +84191,15 @@
     "w": 480,
     "h": 497,
     "file": "img/ttmc-more/tm-s220-480.webp",
-    "bytes": 28106
+    "bytes": 26516
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 154,
+   "w": 155,
    "h": 160,
    "file": "img/ttmc-more/tm-s220-thumb.webp",
-   "bytes": 6778
+   "bytes": 6706
   },
   "cut": "birefnet"
  },
@@ -84178,18 +84207,30 @@
   "alt": "S-50 combination belt grinder and disc sander",
   "variants": [
    {
-    "w": 329,
-    "h": 307,
-    "file": "img/ttmc-more/tm-s50-329.webp",
-    "bytes": 17598
+    "w": 1200,
+    "h": 1212,
+    "file": "img/ttmc-more/tm-s50-1200.webp",
+    "bytes": 96082
+   },
+   {
+    "w": 800,
+    "h": 808,
+    "file": "img/ttmc-more/tm-s50-800.webp",
+    "bytes": 61230
+   },
+   {
+    "w": 480,
+    "h": 485,
+    "file": "img/ttmc-more/tm-s50-480.webp",
+    "bytes": 33320
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 149,
+   "w": 158,
+   "h": 160,
    "file": "img/ttmc-more/tm-s50-thumb.webp",
-   "bytes": 7276
+   "bytes": 7478
   },
   "cut": "birefnet"
  },
@@ -84197,56 +84238,74 @@
   "alt": "S-50B compact 3\u2033 belt grinder",
   "variants": [
    {
-    "w": 313,
-    "h": 255,
-    "file": "img/ttmc-more/tm-s50b-313.webp",
-    "bytes": 13180
+    "w": 800,
+    "h": 681,
+    "file": "img/ttmc-more/tm-s50b-800.webp",
+    "bytes": 46036
+   },
+   {
+    "w": 480,
+    "h": 409,
+    "file": "img/ttmc-more/tm-s50b-480.webp",
+    "bytes": 26968
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 130,
+   "h": 136,
    "file": "img/ttmc-more/tm-s50b-thumb.webp",
-   "bytes": 6302
+   "bytes": 6532
   },
   "cut": "birefnet"
  },
  "tm-s50v": {
-  "alt": "S-75V vertical column belt grinder",
+  "alt": "S-50V / S-75V vertical column belt grinder",
   "variants": [
    {
-    "w": 325,
-    "h": 711,
-    "file": "img/ttmc-more/tm-s50v-325.webp",
-    "bytes": 21478
+    "w": 480,
+    "h": 1122,
+    "file": "img/ttmc-more/tm-s50v-480.webp",
+    "bytes": 36590
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 73,
+   "w": 68,
    "h": 160,
    "file": "img/ttmc-more/tm-s50v-thumb.webp",
-   "bytes": 3714
+   "bytes": 3496
   },
   "cut": "birefnet"
  },
  "tm-s75": {
-  "alt": "S-75 heavy-duty belt grinder on pedestal, 3\u2033 \u00d7 79\u2033 belt",
+  "alt": "S-75 / S-150A heavy-duty belt grinder on pedestal, 3\u2033 and 6\u2033 \u00d7 79\u2033 belt",
   "variants": [
    {
-    "w": 437,
-    "h": 456,
-    "file": "img/ttmc-more/tm-s75-437.webp",
-    "bytes": 21886
+    "w": 1200,
+    "h": 1289,
+    "file": "img/ttmc-more/tm-s75-1200.webp",
+    "bytes": 74602
+   },
+   {
+    "w": 800,
+    "h": 859,
+    "file": "img/ttmc-more/tm-s75-800.webp",
+    "bytes": 51478
+   },
+   {
+    "w": 480,
+    "h": 516,
+    "file": "img/ttmc-more/tm-s75-480.webp",
+    "bytes": 28928
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 153,
+   "w": 149,
    "h": 160,
    "file": "img/ttmc-more/tm-s75-thumb.webp",
-   "bytes": 6824
+   "bytes": 6932
   },
   "cut": "birefnet"
  },
@@ -84254,37 +84313,55 @@
   "alt": "S-75F mobile floor belt grinder for weld seams",
   "variants": [
    {
+    "w": 1200,
+    "h": 1139,
+    "file": "img/ttmc-more/tm-s75f-1200.webp",
+    "bytes": 86614
+   },
+   {
+    "w": 800,
+    "h": 759,
+    "file": "img/ttmc-more/tm-s75f-800.webp",
+    "bytes": 57158
+   },
+   {
     "w": 480,
-    "h": 453,
+    "h": 455,
     "file": "img/ttmc-more/tm-s75f-480.webp",
-    "bytes": 31952
+    "bytes": 31834
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 151,
+   "h": 152,
    "file": "img/ttmc-more/tm-s75f-thumb.webp",
-   "bytes": 7712
+   "bytes": 7682
   },
   "cut": "birefnet"
  },
  "tm-s75h": {
-  "alt": "S-75HB heavy-duty belt grinder with built-in dust collector",
+  "alt": "S-75HA / S-150HA heavy-duty belt grinder with dust drawer in the base",
   "variants": [
    {
+    "w": 800,
+    "h": 1140,
+    "file": "img/ttmc-more/tm-s75h-800.webp",
+    "bytes": 90414
+   },
+   {
     "w": 480,
-    "h": 594,
+    "h": 684,
     "file": "img/ttmc-more/tm-s75h-480.webp",
-    "bytes": 43856
+    "bytes": 48158
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 129,
+   "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-s75h-thumb.webp",
-   "bytes": 7480
+   "bytes": 6918
   },
   "cut": "birefnet"
  },
@@ -84312,17 +84389,17 @@
   "variants": [
    {
     "w": 480,
-    "h": 598,
+    "h": 606,
     "file": "img/ttmc-more/tm-sdd75-480.webp",
-    "bytes": 46780
+    "bytes": 47534
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 128,
+   "w": 127,
    "h": 160,
    "file": "img/ttmc-more/tm-sdd75-thumb.webp",
-   "bytes": 8254
+   "bytes": 8090
   },
   "cut": "birefnet"
  },
@@ -84450,18 +84527,24 @@
   "alt": "SP-2 variable-speed grinding and polishing machine with belt and disc",
   "variants": [
    {
+    "w": 800,
+    "h": 1120,
+    "file": "img/ttmc-more/tm-sp2-800.webp",
+    "bytes": 56022
+   },
+   {
     "w": 480,
-    "h": 659,
+    "h": 672,
     "file": "img/ttmc-more/tm-sp2-480.webp",
-    "bytes": 32392
+    "bytes": 31692
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 117,
+   "w": 114,
    "h": 160,
    "file": "img/ttmc-more/tm-sp2-thumb.webp",
-   "bytes": 5828
+   "bytes": 5728
   },
   "cut": "birefnet"
  },
@@ -84470,9 +84553,9 @@
   "variants": [
    {
     "w": 480,
-    "h": 881,
+    "h": 879,
     "file": "img/ttmc-more/tm-sp3-480.webp",
-    "bytes": 36152
+    "bytes": 35682
    }
   ],
   "alpha": true,
@@ -84480,7 +84563,7 @@
    "w": 87,
    "h": 160,
    "file": "img/ttmc-more/tm-sp3-thumb.webp",
-   "bytes": 4300
+   "bytes": 4376
   },
   "cut": "birefnet"
  },
@@ -84488,10 +84571,16 @@
   "alt": "SP-6 belt grinder and 20\u2033 disc sander combination with dust ports",
   "variants": [
    {
+    "w": 800,
+    "h": 1135,
+    "file": "img/ttmc-more/tm-sp6-800.webp",
+    "bytes": 83934
+   },
+   {
     "w": 480,
-    "h": 678,
+    "h": 681,
     "file": "img/ttmc-more/tm-sp6-480.webp",
-    "bytes": 44620
+    "bytes": 44298
    }
   ],
   "alpha": true,
@@ -84499,7 +84588,7 @@
    "w": 113,
    "h": 160,
    "file": "img/ttmc-more/tm-sp6-thumb.webp",
-   "bytes": 6594
+   "bytes": 6638
   },
   "cut": "birefnet"
  },
@@ -85252,18 +85341,18 @@
   "alt": "TSM300 12\u2033 disc sander on cabinet stand",
   "variants": [
    {
-    "w": 455,
-    "h": 662,
-    "file": "img/ttmc-more/tm-tsm300-455.webp",
-    "bytes": 22878
+    "w": 480,
+    "h": 694,
+    "file": "img/ttmc-more/tm-tsm300-480.webp",
+    "bytes": 27430
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 110,
+   "w": 111,
    "h": 160,
    "file": "img/ttmc-more/tm-tsm300-thumb.webp",
-   "bytes": 4600
+   "bytes": 4870
   },
   "cut": "birefnet"
  },
@@ -85890,18 +85979,18 @@
   "alt": "WD-1800 stainless-steel wet dust collector for metal grinding dust",
   "variants": [
    {
-    "w": 329,
-    "h": 545,
-    "file": "img/ttmc-more/tm-wd1800-329.webp",
-    "bytes": 16266
+    "w": 480,
+    "h": 801,
+    "file": "img/ttmc-more/tm-wd1800-480.webp",
+    "bytes": 26590
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 97,
+   "w": 96,
    "h": 160,
    "file": "img/ttmc-more/tm-wd1800-thumb.webp",
-   "bytes": 3778
+   "bytes": 3810
   },
   "cut": "birefnet"
  },
@@ -86533,10 +86622,16 @@
   "alt": "BFM-2560 wide-belt finishing and deburring machine, 24\u2033 working width",
   "variants": [
    {
+    "w": 800,
+    "h": 1005,
+    "file": "img/ttmc-more/tm-bfm2560-800.webp",
+    "bytes": 67284
+   },
+   {
     "w": 480,
     "h": 603,
     "file": "img/ttmc-more/tm-bfm2560-480.webp",
-    "bytes": 38190
+    "bytes": 38272
    }
   ],
   "alpha": true,
@@ -86544,26 +86639,38 @@
    "w": 127,
    "h": 160,
    "file": "img/ttmc-more/tm-bfm2560-thumb.webp",
-   "bytes": 6698
+   "bytes": 6616
   },
   "cut": "birefnet"
  },
  "tm-bg": {
-  "alt": "BG-8 8\u2033 bench grinder",
+  "alt": "BG-8 8\u2033 bench grinder with eye shields",
   "variants": [
    {
-    "w": 446,
-    "h": 248,
-    "file": "img/ttmc-more/tm-bg-446.webp",
-    "bytes": 20844
+    "w": 1200,
+    "h": 655,
+    "file": "img/ttmc-more/tm-bg-1200.webp",
+    "bytes": 96664
+   },
+   {
+    "w": 800,
+    "h": 437,
+    "file": "img/ttmc-more/tm-bg-800.webp",
+    "bytes": 51210
+   },
+   {
+    "w": 480,
+    "h": 262,
+    "file": "img/ttmc-more/tm-bg-480.webp",
+    "bytes": 24172
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 89,
+   "h": 87,
    "file": "img/ttmc-more/tm-bg-thumb.webp",
-   "bytes": 6114
+   "bytes": 5274
   },
   "cut": "birefnet"
  },
@@ -86571,18 +86678,24 @@
   "alt": "BG-60 wire-wheel deburring and polishing machine",
   "variants": [
    {
-    "w": 402,
-    "h": 452,
-    "file": "img/ttmc-more/tm-bg60-402.webp",
-    "bytes": 27058
+    "w": 800,
+    "h": 897,
+    "file": "img/ttmc-more/tm-bg60-800.webp",
+    "bytes": 73524
+   },
+   {
+    "w": 480,
+    "h": 538,
+    "file": "img/ttmc-more/tm-bg60-480.webp",
+    "bytes": 37696
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 142,
+   "w": 143,
    "h": 160,
    "file": "img/ttmc-more/tm-bg60-thumb.webp",
-   "bytes": 7278
+   "bytes": 7202
   },
   "cut": "birefnet"
  },
@@ -86590,10 +86703,10 @@
   "alt": "BGM-50HV 2\u2033 belt grinder for knives and tools, horizontal and vertical",
   "variants": [
    {
-    "w": 299,
-    "h": 782,
-    "file": "img/ttmc-more/tm-bgm50-299.webp",
-    "bytes": 25954
+    "w": 471,
+    "h": 1226,
+    "file": "img/ttmc-more/tm-bgm50-471.webp",
+    "bytes": 43672
    }
   ],
   "alpha": true,
@@ -86601,18 +86714,24 @@
    "w": 61,
    "h": 160,
    "file": "img/ttmc-more/tm-bgm50-thumb.webp",
-   "bytes": 4450
+   "bytes": 4446
   },
   "cut": "birefnet"
  },
  "tm-bgm50b": {
-  "alt": "BGM-50 variable-speed 1-1/2\u2033 belt grinder",
+  "alt": "BGM-50 variable-speed belt grinder with inverter",
   "variants": [
    {
-    "w": 426,
-    "h": 402,
-    "file": "img/ttmc-more/tm-bgm50b-426.webp",
-    "bytes": 30194
+    "w": 800,
+    "h": 756,
+    "file": "img/ttmc-more/tm-bgm50b-800.webp",
+    "bytes": 70718
+   },
+   {
+    "w": 480,
+    "h": 454,
+    "file": "img/ttmc-more/tm-bgm50b-480.webp",
+    "bytes": 40046
    }
   ],
   "alpha": true,
@@ -86620,7 +86739,7 @@
    "w": 160,
    "h": 151,
    "file": "img/ttmc-more/tm-bgm50b-thumb.webp",
-   "bytes": 9400
+   "bytes": 9458
   },
   "cut": "birefnet"
  },
@@ -86628,18 +86747,24 @@
   "alt": "BKM-250 belt sander and edge beveller",
   "variants": [
    {
-    "w": 333,
-    "h": 670,
-    "file": "img/ttmc-more/tm-bkm250-333.webp",
-    "bytes": 25518
+    "w": 800,
+    "h": 1252,
+    "file": "img/ttmc-more/tm-bkm250-800.webp",
+    "bytes": 64034
+   },
+   {
+    "w": 480,
+    "h": 751,
+    "file": "img/ttmc-more/tm-bkm250-480.webp",
+    "bytes": 38004
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 80,
+   "w": 102,
    "h": 160,
    "file": "img/ttmc-more/tm-bkm250-thumb.webp",
-   "bytes": 4742
+   "bytes": 5318
   },
   "cut": "birefnet"
  },
@@ -86836,10 +86961,10 @@
   "alt": "BTM250 6\u2033 belt and 10\u2033 disc sander on cabinet stand",
   "variants": [
    {
-    "w": 311,
-    "h": 670,
-    "file": "img/ttmc-more/tm-btm250-311.webp",
-    "bytes": 19718
+    "w": 480,
+    "h": 1032,
+    "file": "img/ttmc-more/tm-btm250-480.webp",
+    "bytes": 33938
    }
   ],
   "alpha": true,
@@ -86847,7 +86972,7 @@
    "w": 74,
    "h": 160,
    "file": "img/ttmc-more/tm-btm250-thumb.webp",
-   "bytes": 4116
+   "bytes": 4020
   },
   "cut": "birefnet"
  },
@@ -86931,10 +87056,16 @@
   "alt": "CMD-80 edge chamfering machine for 15 \u2013 45\u00b0 weld preps",
   "variants": [
    {
-    "w": 286,
-    "h": 316,
-    "file": "img/ttmc-more/tm-cmd-286.webp",
-    "bytes": 15892
+    "w": 800,
+    "h": 885,
+    "file": "img/ttmc-more/tm-cmd-800.webp",
+    "bytes": 56860
+   },
+   {
+    "w": 480,
+    "h": 531,
+    "file": "img/ttmc-more/tm-cmd-480.webp",
+    "bytes": 31974
    }
   ],
   "alpha": true,
@@ -86942,7 +87073,7 @@
    "w": 145,
    "h": 160,
    "file": "img/ttmc-more/tm-cmd-thumb.webp",
-   "bytes": 6906
+   "bytes": 7036
   },
   "cut": "birefnet"
  },
@@ -86950,18 +87081,30 @@
   "alt": "CMD-4 bench chamfering machine",
   "variants": [
    {
-    "w": 269,
-    "h": 303,
-    "file": "img/ttmc-more/tm-cmd4-269.webp",
-    "bytes": 13888
+    "w": 1200,
+    "h": 1036,
+    "file": "img/ttmc-more/tm-cmd4-1200.webp",
+    "bytes": 76408
+   },
+   {
+    "w": 800,
+    "h": 691,
+    "file": "img/ttmc-more/tm-cmd4-800.webp",
+    "bytes": 49544
+   },
+   {
+    "w": 480,
+    "h": 414,
+    "file": "img/ttmc-more/tm-cmd4-480.webp",
+    "bytes": 26920
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 142,
-   "h": 160,
+   "w": 160,
+   "h": 138,
    "file": "img/ttmc-more/tm-cmd4-thumb.webp",
-   "bytes": 6422
+   "bytes": 6612
   },
   "cut": "birefnet"
  },
@@ -87012,10 +87155,10 @@
   "alt": "CRB-76 decorative ring roller for tube and flat bar",
   "variants": [
    {
-    "w": 443,
-    "h": 610,
-    "file": "img/ttmc-more/tm-crb76-443.webp",
-    "bytes": 25982
+    "w": 480,
+    "h": 661,
+    "file": "img/ttmc-more/tm-crb76-480.webp",
+    "bytes": 31458
    }
   ],
   "alpha": true,
@@ -87023,7 +87166,7 @@
    "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-crb76-thumb.webp",
-   "bytes": 6022
+   "bytes": 6010
   },
   "cut": "birefnet"
  },
@@ -87066,21 +87209,27 @@
   "cut": "birefnet"
  },
  "tm-dc650": {
-  "alt": "DC650 metal dust collector with three-stage filtration",
+  "alt": "DC650 metal dust collector with three-stage filtration and dust drawer",
   "variants": [
    {
-    "w": 435,
-    "h": 571,
-    "file": "img/ttmc-more/tm-dc650-435.webp",
-    "bytes": 37548
+    "w": 800,
+    "h": 767,
+    "file": "img/ttmc-more/tm-dc650-800.webp",
+    "bytes": 62556
+   },
+   {
+    "w": 480,
+    "h": 460,
+    "file": "img/ttmc-more/tm-dc650-480.webp",
+    "bytes": 31198
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 122,
-   "h": 160,
+   "w": 160,
+   "h": 153,
    "file": "img/ttmc-more/tm-dc650-thumb.webp",
-   "bytes": 5918
+   "bytes": 6526
   },
   "cut": "birefnet"
  },
@@ -87107,18 +87256,24 @@
   "alt": "DS12A 12\u2033 disc sander with two tables",
   "variants": [
    {
-    "w": 335,
-    "h": 230,
-    "file": "img/ttmc-more/tm-ds12-335.webp",
-    "bytes": 15498
+    "w": 800,
+    "h": 541,
+    "file": "img/ttmc-more/tm-ds12-800.webp",
+    "bytes": 47290
+   },
+   {
+    "w": 480,
+    "h": 324,
+    "file": "img/ttmc-more/tm-ds12-480.webp",
+    "bytes": 25446
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 110,
+   "h": 108,
    "file": "img/ttmc-more/tm-ds12-thumb.webp",
-   "bytes": 6110
+   "bytes": 5854
   },
   "cut": "birefnet"
  },
@@ -87126,10 +87281,10 @@
   "alt": "DS-20 20\u2033 disc sander for metal on pedestal",
   "variants": [
    {
-    "w": 434,
-    "h": 657,
-    "file": "img/ttmc-more/tm-ds20-434.webp",
-    "bytes": 36558
+    "w": 480,
+    "h": 726,
+    "file": "img/ttmc-more/tm-ds20-480.webp",
+    "bytes": 40224
    }
   ],
   "alpha": true,
@@ -87137,7 +87292,7 @@
    "w": 106,
    "h": 160,
    "file": "img/ttmc-more/tm-ds20-thumb.webp",
-   "bytes": 6002
+   "bytes": 5632
   },
   "cut": "birefnet"
  },
@@ -87145,10 +87300,16 @@
   "alt": "DS-20V variable-speed 20\u2033 disc sander on cabinet base",
   "variants": [
    {
-    "w": 461,
-    "h": 681,
-    "file": "img/ttmc-more/tm-ds20v-461.webp",
-    "bytes": 31614
+    "w": 800,
+    "h": 1188,
+    "file": "img/ttmc-more/tm-ds20v-800.webp",
+    "bytes": 70500
+   },
+   {
+    "w": 480,
+    "h": 713,
+    "file": "img/ttmc-more/tm-ds20v-480.webp",
+    "bytes": 37134
    }
   ],
   "alpha": true,
@@ -87156,7 +87317,7 @@
    "w": 108,
    "h": 160,
    "file": "img/ttmc-more/tm-ds20v-thumb.webp",
-   "bytes": 5318
+   "bytes": 5406
   },
   "cut": "birefnet"
  },
@@ -87164,18 +87325,24 @@
   "alt": "DVS14 metal dust collector with cyclone separation",
   "variants": [
    {
-    "w": 444,
-    "h": 498,
-    "file": "img/ttmc-more/tm-dvs14-444.webp",
-    "bytes": 23290
+    "w": 800,
+    "h": 835,
+    "file": "img/ttmc-more/tm-dvs14-800.webp",
+    "bytes": 44920
+   },
+   {
+    "w": 480,
+    "h": 501,
+    "file": "img/ttmc-more/tm-dvs14-480.webp",
+    "bytes": 24382
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 143,
+   "w": 153,
    "h": 160,
    "file": "img/ttmc-more/tm-dvs14-thumb.webp",
-   "bytes": 5906
+   "bytes": 5432
   },
   "cut": "birefnet"
  },
@@ -87415,93 +87582,99 @@
   "alt": "ERBM10HV motorized ring roller, horizontal and vertical, with foot pedal",
   "variants": [
    {
-    "w": 354,
-    "h": 635,
-    "file": "img/ttmc-more/tm-erbm10-354.webp",
-    "bytes": 36790
+    "w": 800,
+    "h": 1075,
+    "file": "img/ttmc-more/tm-erbm10-800.webp",
+    "bytes": 86036
+   },
+   {
+    "w": 480,
+    "h": 645,
+    "file": "img/ttmc-more/tm-erbm10-480.webp",
+    "bytes": 48754
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 89,
+   "w": 119,
    "h": 160,
    "file": "img/ttmc-more/tm-erbm10-thumb.webp",
-   "bytes": 7070
+   "bytes": 8002
   },
   "cut": "birefnet"
  },
  "tm-esr": {
-  "alt": "ESR-1300\u00d74.5 electric slip roll with wire grooves and cone rolling",
+  "alt": "ESR-1300\u00d72.5 electric slip roll with wire grooves, cone rolling and foot pedal",
   "variants": [
    {
     "w": 800,
-    "h": 465,
+    "h": 404,
     "file": "img/ttmc-more/tm-esr-800.webp",
-    "bytes": 45720
+    "bytes": 36502
    },
    {
     "w": 480,
-    "h": 279,
+    "h": 242,
     "file": "img/ttmc-more/tm-esr-480.webp",
-    "bytes": 25420
+    "bytes": 18944
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 93,
+   "h": 81,
    "file": "img/ttmc-more/tm-esr-thumb.webp",
-   "bytes": 6046
+   "bytes": 4872
   },
   "cut": "birefnet"
  },
  "tm-esr1020": {
-  "alt": "ESR-1020\u00d72 motorized slip roll with foot pedal",
+  "alt": "ESR-1300\u00d71.5 electric slip roll, 16 ga \u00d7 51\u2033, with foot pedal",
   "variants": [
    {
     "w": 800,
-    "h": 502,
+    "h": 526,
     "file": "img/ttmc-more/tm-esr1020-800.webp",
-    "bytes": 66212
+    "bytes": 57536
    },
    {
     "w": 480,
-    "h": 301,
+    "h": 316,
     "file": "img/ttmc-more/tm-esr1020-480.webp",
-    "bytes": 35638
+    "bytes": 31988
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 100,
+   "h": 105,
    "file": "img/ttmc-more/tm-esr1020-thumb.webp",
-   "bytes": 8884
+   "bytes": 8114
   },
   "cut": "birefnet"
  },
  "tm-esr1300e": {
-  "alt": "ESR-1300\u00d71.5E motorized slip roll, European design",
+  "alt": "ESR-1300\u00d74.5E electric slip roll with digital rear-roll readout on the pedestal control",
   "variants": [
    {
     "w": 800,
-    "h": 436,
+    "h": 522,
     "file": "img/ttmc-more/tm-esr1300e-800.webp",
-    "bytes": 52794
+    "bytes": 62244
    },
    {
     "w": 480,
-    "h": 262,
+    "h": 313,
     "file": "img/ttmc-more/tm-esr1300e-480.webp",
-    "bytes": 29018
+    "bytes": 32522
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 87,
+   "h": 104,
    "file": "img/ttmc-more/tm-esr1300e-thumb.webp",
-   "bytes": 6612
+   "bytes": 7416
   },
   "cut": "birefnet"
  },
@@ -87954,19 +88127,19 @@
   "cut": "birefnet"
  },
  "tm-her": {
-  "alt": "HER-1550\u00d76.5 hydraulic slip roll with digital pinch-roll counter",
+  "alt": "HER-1300\u00d76.5 hydraulic slip roll with digital rear-roll readout on the control pedestal",
   "variants": [
    {
     "w": 800,
-    "h": 400,
+    "h": 402,
     "file": "img/ttmc-more/tm-her-800.webp",
-    "bytes": 41312
+    "bytes": 32904
    },
    {
     "w": 480,
-    "h": 240,
+    "h": 241,
     "file": "img/ttmc-more/tm-her-480.webp",
-    "bytes": 22606
+    "bytes": 17864
    }
   ],
   "alpha": true,
@@ -87974,7 +88147,7 @@
    "w": 160,
    "h": 80,
    "file": "img/ttmc-more/tm-her-thumb.webp",
-   "bytes": 5554
+   "bytes": 4524
   },
   "cut": "birefnet"
  },
@@ -88422,40 +88595,40 @@
   "cut": "birefnet"
  },
  "tm-hrbm40": {
-  "alt": "HRBM40HV profile bender with hydraulic top roll",
+  "alt": "HRBM40HV profile bender with hydraulic top roll and pressure gauge",
   "variants": [
    {
-    "w": 467,
-    "h": 604,
-    "file": "img/ttmc-more/tm-hrbm40-467.webp",
-    "bytes": 34020
+    "w": 480,
+    "h": 689,
+    "file": "img/ttmc-more/tm-hrbm40-480.webp",
+    "bytes": 40900
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 124,
+   "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-hrbm40-thumb.webp",
-   "bytes": 7168
+   "bytes": 6308
   },
   "cut": "birefnet"
  },
  "tm-hrbm50": {
-  "alt": "HRBM50HV profile bender with hydraulic top roll",
+  "alt": "HRBM50HV profile bender with hydraulic top roll and pedestal control",
   "variants": [
    {
     "w": 480,
-    "h": 589,
+    "h": 629,
     "file": "img/ttmc-more/tm-hrbm50-480.webp",
-    "bytes": 35722
+    "bytes": 38160
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 130,
+   "w": 122,
    "h": 160,
    "file": "img/ttmc-more/tm-hrbm50-thumb.webp",
-   "bytes": 6894
+   "bytes": 6704
   },
   "cut": "birefnet"
  },
@@ -88464,9 +88637,9 @@
   "variants": [
    {
     "w": 480,
-    "h": 596,
+    "h": 595,
     "file": "img/ttmc-more/tm-hrbm65-480.webp",
-    "bytes": 39792
+    "bytes": 40668
    }
   ],
   "alpha": true,
@@ -88474,7 +88647,7 @@
    "w": 129,
    "h": 160,
    "file": "img/ttmc-more/tm-hrbm65-thumb.webp",
-   "bytes": 7344
+   "bytes": 7270
   },
   "cut": "birefnet"
  },
@@ -89043,21 +89216,21 @@
   "cut": "birefnet"
  },
  "tm-md380": {
-  "alt": "MD-380 end-surface grinding machine",
+  "alt": "MD-380A / MD-380B end-surface grinding machine",
   "variants": [
    {
-    "w": 480,
-    "h": 772,
-    "file": "img/ttmc-more/tm-md380-480.webp",
-    "bytes": 38522
+    "w": 440,
+    "h": 774,
+    "file": "img/ttmc-more/tm-md380-440.webp",
+    "bytes": 33562
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 99,
+   "w": 91,
    "h": 160,
    "file": "img/ttmc-more/tm-md380-thumb.webp",
-   "bytes": 5204
+   "bytes": 5064
   },
   "cut": "birefnet"
  },
@@ -94747,5 +94920,1759 @@
    "bytes": 6460
   },
   "cut": "birefnet"
+ },
+ "video-EHRMBwaOEiA": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/bandsaw/video-EHRMBwaOEiA-480.webp",
+    "bytes": 12088
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/bandsaw/video-EHRMBwaOEiA-thumb.webp",
+   "bytes": 3928
+  }
+ },
+ "bk-bmso-320s-1": {
+  "alt": "Bekamak BMSO 320S fully automatic servo-feed band saw, \u00d812-5/8\u2033 (320 mm), with the Omron touch-screen control",
+  "variants": [
+   {
+    "w": 480,
+    "h": 369,
+    "file": "img/bandsaw/bk-bmso-320s-1-480.webp",
+    "bytes": 35446
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/bandsaw/bk-bmso-320s-1-thumb.webp",
+   "bytes": 8112
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmso-320s-2": {
+  "alt": "BMSO 320S \u2014 rear view: blade wheels, electrical cabinet and the servo shuttle vise",
+  "variants": [
+   {
+    "w": 480,
+    "h": 446,
+    "file": "img/bandsaw/bk-bmso-320s-2-480.webp",
+    "bytes": 43174
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/bandsaw/bk-bmso-320s-2-thumb.webp",
+   "bytes": 9182
+  },
+  "cut": "birefnet"
+ },
+ "bk-det-2013-01-11-582315": {
+  "alt": "Bekamak BMSO 320S \u2014 hydro-mechanical blade tension",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-01-11-582315-800.webp",
+    "bytes": 35852
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-01-11-582315-480.webp",
+    "bytes": 11842
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-01-11-582315-thumb.webp",
+   "bytes": 1722
+  }
+ },
+ "bk-det-2013-01-11-762642": {
+  "alt": "Bekamak BMSO 320S \u2014 blade brush",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-01-11-762642-800.webp",
+    "bytes": 58736
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-01-11-762642-480.webp",
+    "bytes": 22628
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-01-11-762642-thumb.webp",
+   "bytes": 3038
+  }
+ },
+ "bk-det-2013-01-11-724102": {
+  "alt": "Bekamak BMSO 320S \u2014 safety switch",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-01-11-724102-800.webp",
+    "bytes": 26404
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-01-11-724102-480.webp",
+    "bytes": 13792
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-01-11-724102-thumb.webp",
+   "bytes": 3098
+  }
+ },
+ "bk-det-2013-01-11-207651": {
+  "alt": "Bekamak BMSO 320S \u2014 cutting width adjustment lever",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-01-11-207651-800.webp",
+    "bytes": 52044
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-01-11-207651-480.webp",
+    "bytes": 23046
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-01-11-207651-thumb.webp",
+   "bytes": 4368
+  }
+ },
+ "bk-det-2013-01-11-123927": {
+  "alt": "Bekamak BMSO 320S \u2014 linear guides",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-01-11-123927-800.webp",
+    "bytes": 26100
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-01-11-123927-480.webp",
+    "bytes": 10524
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-01-11-123927-thumb.webp",
+   "bytes": 1850
+  }
+ },
+ "bk-det-2013-01-11-666491": {
+  "alt": "Bekamak BMSO 320S \u2014 optical bow height adjustment",
+  "variants": [
+   {
+    "w": 800,
+    "h": 586,
+    "file": "img/bandsaw/bk-det-2013-01-11-666491-800.webp",
+    "bytes": 19444
+   },
+   {
+    "w": 480,
+    "h": 352,
+    "file": "img/bandsaw/bk-det-2013-01-11-666491-480.webp",
+    "bytes": 10398
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 117,
+   "file": "img/bandsaw/bk-det-2013-01-11-666491-thumb.webp",
+   "bytes": 2480
+  }
+ },
+ "bk-det-2013-01-11-712373": {
+  "alt": "Bekamak BMSO 320S \u2014 heavy-duty gearbox",
+  "variants": [
+   {
+    "w": 800,
+    "h": 538,
+    "file": "img/bandsaw/bk-det-2013-01-11-712373-800.webp",
+    "bytes": 37808
+   },
+   {
+    "w": 480,
+    "h": 323,
+    "file": "img/bandsaw/bk-det-2013-01-11-712373-480.webp",
+    "bytes": 16654
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 108,
+   "file": "img/bandsaw/bk-det-2013-01-11-712373-thumb.webp",
+   "bytes": 3012
+  }
+ },
+ "bk-det-09151d203307": {
+  "alt": "Bekamak BMSO 320S \u2014 inverter \u2014 variable blade speed",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-09151d203307-800.webp",
+    "bytes": 59010
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-09151d203307-480.webp",
+    "bytes": 28786
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-09151d203307-thumb.webp",
+   "bytes": 4566
+  }
+ },
+ "bk-det-2f0b743c9531": {
+  "alt": "Bekamak BMSO 320S \u2014 blade slippage sensor (proximity switch)",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-2f0b743c9531-1200.webp",
+    "bytes": 96010
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2f0b743c9531-800.webp",
+    "bytes": 50766
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2f0b743c9531-480.webp",
+    "bytes": 19850
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2f0b743c9531-thumb.webp",
+   "bytes": 2852
+  }
+ },
+ "bk-det-f818c3c4129c": {
+  "alt": "Bekamak BMSO 320S \u2014 coolant pump",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-f818c3c4129c-800.webp",
+    "bytes": 30246
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-f818c3c4129c-480.webp",
+    "bytes": 11840
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-f818c3c4129c-thumb.webp",
+   "bytes": 1834
+  }
+ },
+ "bk-det-2013-01-11-978878": {
+  "alt": "Bekamak BMSO 320S \u2014 hydraulic blade tension",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 799,
+    "file": "img/bandsaw/bk-det-2013-01-11-978878-1200.webp",
+    "bytes": 94726
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/bandsaw/bk-det-2013-01-11-978878-800.webp",
+    "bytes": 46728
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-01-11-978878-480.webp",
+    "bytes": 16006
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-01-11-978878-thumb.webp",
+   "bytes": 2278
+  }
+ },
+ "bk-det-7bda86b4bc2e": {
+  "alt": "Bekamak BMSO 320S \u2014 hydraulic top clamp",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-7bda86b4bc2e-800.webp",
+    "bytes": 48836
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-7bda86b4bc2e-480.webp",
+    "bytes": 24006
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-7bda86b4bc2e-thumb.webp",
+   "bytes": 4550
+  }
+ },
+ "bk-terra-6-1": {
+  "alt": "Bekamak TERRA 6 high-speed fully automatic band saw, \u00d826\u2033 (660 mm): enclosed cabin and PC-based control",
+  "variants": [
+   {
+    "w": 800,
+    "h": 438,
+    "file": "img/bandsaw/bk-terra-6-1-800.webp",
+    "bytes": 28580
+   },
+   {
+    "w": 480,
+    "h": 263,
+    "file": "img/bandsaw/bk-terra-6-1-480.webp",
+    "bytes": 15612
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 88,
+   "file": "img/bandsaw/bk-terra-6-1-thumb.webp",
+   "bytes": 3976
+  },
+  "cut": "birefnet"
+ },
+ "bk-terra-6-2": {
+  "alt": "TERRA 6 \u2014 front quarter view of the cabin; blade speed to 1,970 ft/min (600 m/min)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 451,
+    "file": "img/bandsaw/bk-terra-6-2-800.webp",
+    "bytes": 32892
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/bandsaw/bk-terra-6-2-480.webp",
+    "bytes": 17610
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/bk-terra-6-2-thumb.webp",
+   "bytes": 4734
+  },
+  "cut": "birefnet"
+ },
+ "bk-terra-6-3": {
+  "alt": "TERRA 6 \u2014 left side of the enclosure",
+  "variants": [
+   {
+    "w": 800,
+    "h": 572,
+    "file": "img/bandsaw/bk-terra-6-3-800.webp",
+    "bytes": 47038
+   },
+   {
+    "w": 480,
+    "h": 343,
+    "file": "img/bandsaw/bk-terra-6-3-480.webp",
+    "bytes": 25426
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 114,
+   "file": "img/bandsaw/bk-terra-6-3-thumb.webp",
+   "bytes": 6376
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmh-170-2": {
+  "alt": "Bekamak BMH 170 hydraulic power hacksaw, \u00d86-3/4\u2033 (170 mm), with the vise and roller table",
+  "variants": [
+   {
+    "w": 480,
+    "h": 447,
+    "file": "img/bandsaw/bk-bmh-170-2-480.webp",
+    "bytes": 36332
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/bandsaw/bk-bmh-170-2-thumb.webp",
+   "bytes": 7306
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmh-170-3": {
+  "alt": "BMH 170 \u2014 front quarter view with the material length stop",
+  "variants": [
+   {
+    "w": 480,
+    "h": 388,
+    "file": "img/bandsaw/bk-bmh-170-3-480.webp",
+    "bytes": 47872
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 129,
+   "file": "img/bandsaw/bk-bmh-170-3-thumb.webp",
+   "bytes": 7780
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmh-170-1": {
+  "alt": "BMH 170 \u2014 right side: reciprocating frame and hydraulic feed cylinder",
+  "variants": [
+   {
+    "w": 480,
+    "h": 369,
+    "file": "img/bandsaw/bk-bmh-170-1-480.webp",
+    "bytes": 34126
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/bandsaw/bk-bmh-170-1-thumb.webp",
+   "bytes": 6464
+  },
+  "cut": "birefnet"
+ },
+ "bk-det-2013-03-07-101650": {
+  "alt": "Bekamak BMH 170 \u2014 vise",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-07-101650-800.webp",
+    "bytes": 32374
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-07-101650-480.webp",
+    "bytes": 13528
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-07-101650-thumb.webp",
+   "bytes": 2532
+  }
+ },
+ "bk-det-2013-03-06-585648": {
+  "alt": "Bekamak BMH 170 \u2014 adjustable material length stop",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-585648-800.webp",
+    "bytes": 17916
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-585648-480.webp",
+    "bytes": 9070
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-585648-thumb.webp",
+   "bytes": 2130
+  }
+ },
+ "bk-det-2013-03-06-568099": {
+  "alt": "Bekamak BMH 170 \u2014 bow height adjustment",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-568099-800.webp",
+    "bytes": 37216
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-568099-480.webp",
+    "bytes": 14368
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-568099-thumb.webp",
+   "bytes": 2230
+  }
+ },
+ "bk-det-2013-03-06-8985": {
+  "alt": "Bekamak BMH 170 \u2014 electrical panel",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-8985-800.webp",
+    "bytes": 47098
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-8985-480.webp",
+    "bytes": 23378
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-8985-thumb.webp",
+   "bytes": 3888
+  }
+ },
+ "bk-det-2013-03-06-974818": {
+  "alt": "Bekamak BMH 170 \u2014 cutting speed control",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-974818-800.webp",
+    "bytes": 31198
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-974818-480.webp",
+    "bytes": 12586
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-974818-thumb.webp",
+   "bytes": 1988
+  }
+ },
+ "bk-det-2013-03-06-956619": {
+  "alt": "Bekamak BMH 170 \u2014 control panel",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-956619-800.webp",
+    "bytes": 53280
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-956619-480.webp",
+    "bytes": 21118
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-956619-thumb.webp",
+   "bytes": 3098
+  }
+ },
+ "bk-det-2013-03-06-161756": {
+  "alt": "Bekamak BMH 170 \u2014 clinder",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-161756-800.webp",
+    "bytes": 40732
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-161756-480.webp",
+    "bytes": 16874
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-161756-thumb.webp",
+   "bytes": 2420
+  }
+ },
+ "bk-det-2013-03-06-993708": {
+  "alt": "Bekamak BMH 170 \u2014 coolant pump",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-993708-800.webp",
+    "bytes": 70488
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-993708-480.webp",
+    "bytes": 26732
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-993708-thumb.webp",
+   "bytes": 2620
+  }
+ },
+ "bk-det-2013-03-06-855162": {
+  "alt": "Bekamak BMH 170 \u2014 roller table",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-855162-800.webp",
+    "bytes": 18330
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-855162-480.webp",
+    "bytes": 6674
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-855162-thumb.webp",
+   "bytes": 1192
+  }
+ },
+ "bk-det-2013-03-06-517930": {
+  "alt": "Bekamak BMH 170 \u2014 saw blade",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-06-517930-800.webp",
+    "bytes": 31302
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-06-517930-480.webp",
+    "bytes": 13080
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-06-517930-thumb.webp",
+   "bytes": 2636
+  }
+ },
+ "bk-bmso-460cs-1": {
+  "alt": "Bekamak BMSO 460CS NC fully automatic servo-feed double-column band saw, \u00d818-1/8\u2033 (460 mm)",
+  "variants": [
+   {
+    "w": 480,
+    "h": 377,
+    "file": "img/bandsaw/bk-bmso-460cs-1-480.webp",
+    "bytes": 33236
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 126,
+   "file": "img/bandsaw/bk-bmso-460cs-1-thumb.webp",
+   "bytes": 8072
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmso-460cs-3": {
+  "alt": "BMSO 460CS \u2014 left side with the servo shuttle vise and roller table",
+  "variants": [
+   {
+    "w": 480,
+    "h": 447,
+    "file": "img/bandsaw/bk-bmso-460cs-3-480.webp",
+    "bytes": 37126
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/bandsaw/bk-bmso-460cs-3-thumb.webp",
+   "bytes": 8724
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmso-460cs-4": {
+  "alt": "BMSO 460CS \u2014 rear view: columns, blade wheels and electrical cabinet",
+  "variants": [
+   {
+    "w": 480,
+    "h": 445,
+    "file": "img/bandsaw/bk-bmso-460cs-4-480.webp",
+    "bytes": 38920
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 148,
+   "file": "img/bandsaw/bk-bmso-460cs-4-thumb.webp",
+   "bytes": 9190
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmso-460cs-2": {
+  "alt": "BMSO 460CS \u2014 front view",
+  "variants": [
+   {
+    "w": 480,
+    "h": 378,
+    "file": "img/bandsaw/bk-bmso-460cs-2-480.webp",
+    "bytes": 35546
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 126,
+   "file": "img/bandsaw/bk-bmso-460cs-2-thumb.webp",
+   "bytes": 8374
+  },
+  "cut": "birefnet"
+ },
+ "bk-det-990eee58acc3": {
+  "alt": "Bekamak BMSO 460CS \u2014 control panel",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-990eee58acc3-1200.webp",
+    "bytes": 110980
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-990eee58acc3-800.webp",
+    "bytes": 59672
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-990eee58acc3-480.webp",
+    "bytes": 25312
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-990eee58acc3-thumb.webp",
+   "bytes": 3422
+  }
+ },
+ "bk-det-b6dd001b2376": {
+  "alt": "Bekamak BMSO 460CS \u2014 hydro-mechanical blade tension",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-b6dd001b2376-1200.webp",
+    "bytes": 103772
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-b6dd001b2376-800.webp",
+    "bytes": 50400
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-b6dd001b2376-480.webp",
+    "bytes": 17162
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-b6dd001b2376-thumb.webp",
+   "bytes": 2246
+  }
+ },
+ "bk-det-8173cc12e707": {
+  "alt": "Bekamak BMSO 460CS \u2014 cutting pressure adjustment",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-8173cc12e707-1200.webp",
+    "bytes": 147216
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-8173cc12e707-800.webp",
+    "bytes": 79248
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-8173cc12e707-480.webp",
+    "bytes": 31992
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-8173cc12e707-thumb.webp",
+   "bytes": 3114
+  }
+ },
+ "bk-det-3639d9b76ef0": {
+  "alt": "Bekamak BMSO 460CS \u2014 optical bow height adjustment",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-3639d9b76ef0-1200.webp",
+    "bytes": 42932
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-3639d9b76ef0-800.webp",
+    "bytes": 23800
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-3639d9b76ef0-480.webp",
+    "bytes": 10620
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-3639d9b76ef0-thumb.webp",
+   "bytes": 2072
+  }
+ },
+ "bk-det-ed8cc2bcb559": {
+  "alt": "Bekamak BMSO 460CS \u2014 coolant pump",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-ed8cc2bcb559-1200.webp",
+    "bytes": 55082
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-ed8cc2bcb559-800.webp",
+    "bytes": 29322
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-ed8cc2bcb559-480.webp",
+    "bytes": 11436
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-ed8cc2bcb559-thumb.webp",
+   "bytes": 1742
+  }
+ },
+ "bk-det-fab884778eb0": {
+  "alt": "Bekamak BMSO 460CS \u2014 linear guides",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-fab884778eb0-1200.webp",
+    "bytes": 98342
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-fab884778eb0-800.webp",
+    "bytes": 49246
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-fab884778eb0-480.webp",
+    "bytes": 18508
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-fab884778eb0-thumb.webp",
+   "bytes": 2906
+  }
+ },
+ "bk-det-2012-11-20-961094": {
+  "alt": "Bekamak BMSO 460CS \u2014 securty swich",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2012-11-20-961094-800.webp",
+    "bytes": 30074
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2012-11-20-961094-480.webp",
+    "bytes": 14702
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2012-11-20-961094-thumb.webp",
+   "bytes": 3108
+  }
+ },
+ "bk-det-8928a83cea63": {
+  "alt": "Bekamak BMSO 460CS \u2014 blade brush",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-8928a83cea63-1200.webp",
+    "bytes": 171240
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-8928a83cea63-800.webp",
+    "bytes": 86240
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-8928a83cea63-480.webp",
+    "bytes": 31920
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-8928a83cea63-thumb.webp",
+   "bytes": 3588
+  }
+ },
+ "bk-det-2013-03-11-513666": {
+  "alt": "Bekamak BMSO 460CS \u2014 blade slippage sensor (proximity switch)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-2013-03-11-513666-800.webp",
+    "bytes": 36066
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-2013-03-11-513666-480.webp",
+    "bytes": 15208
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-2013-03-11-513666-thumb.webp",
+   "bytes": 2630
+  }
+ },
+ "bk-det-375289beb8ad": {
+  "alt": "Bekamak BMSO 460CS \u2014 inverter \u2014 variable blade speed",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-375289beb8ad-1200.webp",
+    "bytes": 98396
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-375289beb8ad-800.webp",
+    "bytes": 61918
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-375289beb8ad-480.webp",
+    "bytes": 32032
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-375289beb8ad-thumb.webp",
+   "bytes": 5268
+  }
+ },
+ "bk-det-a5d577d953ba": {
+  "alt": "Bekamak BMSO 460CS \u2014 cutting width adjustment lever",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-a5d577d953ba-1200.webp",
+    "bytes": 136804
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-a5d577d953ba-800.webp",
+    "bytes": 69716
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-a5d577d953ba-480.webp",
+    "bytes": 26730
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-a5d577d953ba-thumb.webp",
+   "bytes": 4368
+  }
+ },
+ "bk-det-3c4ee3270d05": {
+  "alt": "Bekamak BMSO 460CS \u2014 hydraulic top clamp",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-3c4ee3270d05-1200.webp",
+    "bytes": 101086
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-3c4ee3270d05-800.webp",
+    "bytes": 58106
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-3c4ee3270d05-480.webp",
+    "bytes": 28180
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-3c4ee3270d05-thumb.webp",
+   "bytes": 4954
+  }
+ },
+ "bk-det-a69e4f628e64": {
+  "alt": "Bekamak BMSO 460CS \u2014 micro-spray lubrication",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/bandsaw/bk-det-a69e4f628e64-1200.webp",
+    "bytes": 61476
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-det-a69e4f628e64-800.webp",
+    "bytes": 31640
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-det-a69e4f628e64-480.webp",
+    "bytes": 12874
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-det-a69e4f628e64-thumb.webp",
+   "bytes": 1916
+  }
+ },
+ "bk-bmso-1313cs-1": {
+  "alt": "Bekamak BMSO 1313CS fully automatic double-column band saw for blocks and billets, 51-1/8\u2033 \u00d7 51-1/8\u2033 (1300 \u00d7 1300 mm)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 469,
+    "file": "img/bandsaw/bk-bmso-1313cs-1-800.webp",
+    "bytes": 43986
+   },
+   {
+    "w": 480,
+    "h": 281,
+    "file": "img/bandsaw/bk-bmso-1313cs-1-480.webp",
+    "bytes": 23438
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 94,
+   "file": "img/bandsaw/bk-bmso-1313cs-1-thumb.webp",
+   "bytes": 6444
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmso-1313cs-3": {
+  "alt": "BMSO 1313CS \u2014 bow and column covers open: blade wheels, 2-5/8\u2033 / 3-1/8\u2033 band and hydraulic blade tension",
+  "variants": [
+   {
+    "w": 800,
+    "h": 434,
+    "file": "img/bandsaw/bk-bmso-1313cs-3-800.webp",
+    "bytes": 51394
+   },
+   {
+    "w": 480,
+    "h": 260,
+    "file": "img/bandsaw/bk-bmso-1313cs-3-480.webp",
+    "bytes": 28190
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 87,
+   "file": "img/bandsaw/bk-bmso-1313cs-3-thumb.webp",
+   "bytes": 7058
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmso-1313cs-4": {
+  "alt": "BMSO 1313CS \u2014 rear view with the 10 ft (3 m) roller table and servo feed",
+  "variants": [
+   {
+    "w": 480,
+    "h": 457,
+    "file": "img/bandsaw/bk-bmso-1313cs-4-480.webp",
+    "bytes": 44878
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 152,
+   "file": "img/bandsaw/bk-bmso-1313cs-4-thumb.webp",
+   "bytes": 10412
+  },
+  "cut": "birefnet"
+ },
+ "bk-bmso-1313cs-2": {
+  "alt": "BMSO 1313CS \u2014 front quarter view",
+  "variants": [
+   {
+    "w": 480,
+    "h": 375,
+    "file": "img/bandsaw/bk-bmso-1313cs-2-480.webp",
+    "bytes": 36458
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 125,
+   "file": "img/bandsaw/bk-bmso-1313cs-2-thumb.webp",
+   "bytes": 8448
+  },
+  "cut": "birefnet"
+ },
+ "tm-bg60a": {
+  "alt": "BG-60A 3 HP wire-wheel deburring machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1061,
+    "file": "img/ttmc-more/tm-bg60a-1200.webp",
+    "bytes": 128748
+   },
+   {
+    "w": 800,
+    "h": 708,
+    "file": "img/ttmc-more/tm-bg60a-800.webp",
+    "bytes": 75216
+   },
+   {
+    "w": 480,
+    "h": 425,
+    "file": "img/ttmc-more/tm-bg60a-480.webp",
+    "bytes": 37522
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 142,
+   "file": "img/ttmc-more/tm-bg60a-thumb.webp",
+   "bytes": 7644
+  },
+  "cut": "birefnet"
+ },
+ "tm-dm5": {
+  "alt": "DM5 compact chamfering unit, 3/16\u2033 at 45\u00b0",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 917,
+    "file": "img/ttmc-more/tm-dm5-1200.webp",
+    "bytes": 60796
+   },
+   {
+    "w": 800,
+    "h": 611,
+    "file": "img/ttmc-more/tm-dm5-800.webp",
+    "bytes": 40052
+   },
+   {
+    "w": 480,
+    "h": 367,
+    "file": "img/ttmc-more/tm-dm5-480.webp",
+    "bytes": 22522
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 122,
+   "file": "img/ttmc-more/tm-dm5-thumb.webp",
+   "bytes": 5868
+  },
+  "cut": "birefnet"
+ },
+ "tm-esr1300-15e": {
+  "alt": "ESR-1300\u00d71.5E motorized slip roll, European design, with foot pedal",
+  "variants": [
+   {
+    "w": 800,
+    "h": 442,
+    "file": "img/ttmc-more/tm-esr1300-15e-800.webp",
+    "bytes": 61942
+   },
+   {
+    "w": 480,
+    "h": 265,
+    "file": "img/ttmc-more/tm-esr1300-15e-480.webp",
+    "bytes": 35414
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 88,
+   "file": "img/ttmc-more/tm-esr1300-15e-thumb.webp",
+   "bytes": 8210
+  },
+  "cut": "birefnet"
+ },
+ "tm-esr1300-45": {
+  "alt": "ESR-1300\u00d74.5 electric slip roll, 3/16\u2033 \u00d7 51\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 595,
+    "file": "img/ttmc-more/tm-esr1300-45-800.webp",
+    "bytes": 60960
+   },
+   {
+    "w": 480,
+    "h": 357,
+    "file": "img/ttmc-more/tm-esr1300-45-480.webp",
+    "bytes": 33832
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/ttmc-more/tm-esr1300-45-thumb.webp",
+   "bytes": 7822
+  },
+  "cut": "birefnet"
+ },
+ "tm-esr1550": {
+  "alt": "ESR-1550\u00d73.5 electric slip roll, 10 ga \u00d7 61\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 480,
+    "file": "img/ttmc-more/tm-esr1550-800.webp",
+    "bytes": 50740
+   },
+   {
+    "w": 480,
+    "h": 288,
+    "file": "img/ttmc-more/tm-esr1550-480.webp",
+    "bytes": 27618
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 96,
+   "file": "img/ttmc-more/tm-esr1550-thumb.webp",
+   "bytes": 6590
+  },
+  "cut": "birefnet"
+ },
+ "tm-esr2550e": {
+  "alt": "ESR-2550\u00d72.5E / ESR-2550\u00d73.5E electric slip rolls, 100\u2033 long, with the E-series control pedestal",
+  "variants": [
+   {
+    "w": 800,
+    "h": 366,
+    "file": "img/ttmc-more/tm-esr2550e-800.webp",
+    "bytes": 35604
+   },
+   {
+    "w": 480,
+    "h": 220,
+    "file": "img/ttmc-more/tm-esr2550e-480.webp",
+    "bytes": 20106
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 73,
+   "file": "img/ttmc-more/tm-esr2550e-thumb.webp",
+   "bytes": 5084
+  },
+  "cut": "birefnet"
+ },
+ "tm-her2070": {
+  "alt": "HER-2070\u00d76.5 hydraulic slip roll, 1/4\u2033 \u00d7 81\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 513,
+    "file": "img/ttmc-more/tm-her2070-800.webp",
+    "bytes": 47056
+   },
+   {
+    "w": 480,
+    "h": 308,
+    "file": "img/ttmc-more/tm-her2070-480.webp",
+    "bytes": 24922
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/ttmc-more/tm-her2070-thumb.webp",
+   "bytes": 5710
+  },
+  "cut": "birefnet"
+ },
+ "tm-dm5a": {
+  "alt": "DM5A compact chamfering unit with the table set for 45\u00b0",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 953,
+    "file": "img/ttmc-more/tm-dm5a-1200.webp",
+    "bytes": 72660
+   },
+   {
+    "w": 800,
+    "h": 635,
+    "file": "img/ttmc-more/tm-dm5a-800.webp",
+    "bytes": 47400
+   },
+   {
+    "w": 480,
+    "h": 381,
+    "file": "img/ttmc-more/tm-dm5a-480.webp",
+    "bytes": 26230
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/ttmc-more/tm-dm5a-thumb.webp",
+   "bytes": 6416
+  },
+  "cut": "birefnet"
+ },
+ "tm-ds12b": {
+  "alt": "DS12B 12\u2033 bench disc sander with tilting table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1083,
+    "file": "img/ttmc-more/tm-ds12b-1200.webp",
+    "bytes": 94222
+   },
+   {
+    "w": 800,
+    "h": 722,
+    "file": "img/ttmc-more/tm-ds12b-800.webp",
+    "bytes": 60946
+   },
+   {
+    "w": 480,
+    "h": 433,
+    "file": "img/ttmc-more/tm-ds12b-480.webp",
+    "bytes": 32788
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 144,
+   "file": "img/ttmc-more/tm-ds12b-thumb.webp",
+   "bytes": 7386
+  },
+  "cut": "birefnet"
+ },
+ "tm-ds20a": {
+  "alt": "DS-20A 20\u2033 disc sander \u2014 the table rides up and down the column",
+  "variants": [
+   {
+    "w": 480,
+    "h": 828,
+    "file": "img/ttmc-more/tm-ds20a-480.webp",
+    "bytes": 44234
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 93,
+   "h": 160,
+   "file": "img/ttmc-more/tm-ds20a-thumb.webp",
+   "bytes": 5056
+  },
+  "cut": "birefnet"
+ },
+ "tm-hrbm-work": {
+  "alt": "Rolling a ring of round tube on the HRBM profile bender \u2014 the three rolls and the top-roll screw",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 798,
+    "file": "img/ttmc-more/tm-hrbm-work-1200.webp",
+    "bytes": 123014
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/ttmc-more/tm-hrbm-work-800.webp",
+    "bytes": 59352
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/ttmc-more/tm-hrbm-work-480.webp",
+    "bytes": 19458
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/ttmc-more/tm-hrbm-work-thumb.webp",
+   "bytes": 2276
+  }
+ },
+ "tm-prs76": {
+  "alt": "PRS-76 tube end grinder with 4\u2033 belt",
+  "variants": [
+   {
+    "w": 480,
+    "h": 402,
+    "file": "img/ttmc-more/tm-prs76-480.webp",
+    "bytes": 24410
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 134,
+   "file": "img/ttmc-more/tm-prs76-thumb.webp",
+   "bytes": 6292
+  },
+  "cut": "birefnet"
+ },
+ "tm-prs76a": {
+  "alt": "PRS-76A tube end grinder with the tube clamp swung out",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1288,
+    "file": "img/ttmc-more/tm-prs76a-1200.webp",
+    "bytes": 82750
+   },
+   {
+    "w": 800,
+    "h": 859,
+    "file": "img/ttmc-more/tm-prs76a-800.webp",
+    "bytes": 55968
+   },
+   {
+    "w": 480,
+    "h": 515,
+    "file": "img/ttmc-more/tm-prs76a-480.webp",
+    "bytes": 30922
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 149,
+   "h": 160,
+   "file": "img/ttmc-more/tm-prs76a-thumb.webp",
+   "bytes": 7354
+  },
+  "cut": "birefnet"
+ },
+ "tm-s75hb": {
+  "alt": "S-75HB / S-150HB heavy-duty belt grinder with the built-in dust collector",
+  "variants": [
+   {
+    "w": 800,
+    "h": 932,
+    "file": "img/ttmc-more/tm-s75hb-800.webp",
+    "bytes": 78212
+   },
+   {
+    "w": 480,
+    "h": 559,
+    "file": "img/ttmc-more/tm-s75hb-480.webp",
+    "bytes": 40400
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 137,
+   "h": 160,
+   "file": "img/ttmc-more/tm-s75hb-thumb.webp",
+   "bytes": 7602
+  },
+  "cut": "birefnet"
+ },
+ "tm-s75l": {
+  "alt": "S-75L / S-150L light-type belt grinder on pedestal",
+  "variants": [
+   {
+    "w": 800,
+    "h": 905,
+    "file": "img/ttmc-more/tm-s75l-800.webp",
+    "bytes": 53342
+   },
+   {
+    "w": 480,
+    "h": 543,
+    "file": "img/ttmc-more/tm-s75l-480.webp",
+    "bytes": 28254
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 141,
+   "h": 160,
+   "file": "img/ttmc-more/tm-s75l-thumb.webp",
+   "bytes": 6600
+  },
+  "cut": "birefnet"
+ },
+ "bk-opus-300-1": {
+  "alt": "Bekamak OPUS 300 automatic TCT carbide circular saw, solid bar to \u00d811-3/4\u2033: enclosed cabin, chip conveyor and control panel",
+  "variants": [
+   {
+    "w": 480,
+    "h": 329,
+    "file": "img/bandsaw/bk-opus-300-1-480.webp",
+    "bytes": 21092
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 110,
+   "file": "img/bandsaw/bk-opus-300-1-thumb.webp",
+   "bytes": 5644
+  },
+  "cut": "birefnet"
+ },
+ "bk-opus-300-2": {
+  "alt": "OPUS 300 \u2014 rear quarter view with the chip conveyor",
+  "variants": [
+   {
+    "w": 480,
+    "h": 374,
+    "file": "img/bandsaw/bk-opus-300-2-480.webp",
+    "bytes": 24036
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 125,
+   "file": "img/bandsaw/bk-opus-300-2-thumb.webp",
+   "bytes": 5872
+  },
+  "cut": "birefnet"
+ },
+ "bk-opus-300-3": {
+  "alt": "OPUS 300 \u2014 cabin open: \u00d835-7/16\u2033 (900 mm) TCT blade, servo saw head and hydraulic clamping",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-opus-300-3-800.webp",
+    "bytes": 36116
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-opus-300-3-480.webp",
+    "bytes": 17846
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-opus-300-3-thumb.webp",
+   "bytes": 3406
+  }
+ },
+ "bk-opus-300-4": {
+  "alt": "OPUS 300 \u2014 touch-screen control panel",
+  "variants": [
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/bandsaw/bk-opus-300-4-800.webp",
+    "bytes": 42848
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/bandsaw/bk-opus-300-4-480.webp",
+    "bytes": 19792
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/bandsaw/bk-opus-300-4-thumb.webp",
+   "bytes": 3446
+  }
  }
 }

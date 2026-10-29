@@ -53,9 +53,10 @@
    "cat": "manual",
    "line": "premium",
    "image": "bk-hero-manual",
-   "blurb": "European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control.",
+   "blurb": "European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control — and a hydraulic power hacksaw for the smallest shops.",
    "families": [
-    "bekamak-bms-dg"
+    "bekamak-bms-dg",
+    "bekamak-bmh-170"
    ]
   },
   {
@@ -79,11 +80,12 @@
    "cat": "automatic",
    "line": "premium",
    "image": "bk-hero-auto-350ga",
-   "blurb": "Roller-feed automatics for simple repeat cutting, encoder and servo versions for length accuracy, and automatic miter saws for angled parts.",
+   "blurb": "Roller-feed automatics for simple repeat cutting, encoder and servo versions (BMSO E, BMSO 320S) for length accuracy, and automatic miter saws for angled parts.",
    "families": [
     "bekamak-bmso-ga",
     "bekamak-bmso-roller",
     "bekamak-bmso-e",
+    "bekamak-bmso-s",
     "bekamak-bmso-dgs",
     "bekamak-bmso-gs"
    ]
@@ -95,7 +97,7 @@
    "cat": "double-column",
    "line": "premium",
    "image": "bk-hero-dc-570cs",
-   "blurb": "From the BMSY C semi-automatics to servo-feed CS NC production saws and the enclosed XS line.",
+   "blurb": "From the BMSY C semi-automatics to servo-feed CS NC production saws, the enclosed XS line and the high-speed TERRA 6.",
    "families": [
     "bekamak-bmsy-c",
     "bekamak-bmsy-cgh",
@@ -104,6 +106,7 @@
     "bekamak-bmso-cs",
     "bekamak-bmso-cgs",
     "bekamak-bmso-xs",
+    "bekamak-terra-6",
     "bekamak-bmsy-heavy",
     "bekamak-gantry-2200xs"
    ]
@@ -259,9 +262,10 @@
      "cat": "manual",
      "line": "premium",
      "image": "bk-hero-manual",
-     "blurb": "European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control.",
+     "blurb": "European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control — and a hydraulic power hacksaw for the smallest shops.",
      "families": [
-      "bekamak-bms-dg"
+      "bekamak-bms-dg",
+      "bekamak-bmh-170"
      ]
     },
     {
@@ -285,11 +289,12 @@
      "cat": "automatic",
      "line": "premium",
      "image": "bk-hero-auto-350ga",
-     "blurb": "Roller-feed automatics for simple repeat cutting, encoder and servo versions for length accuracy, and automatic miter saws for angled parts.",
+     "blurb": "Roller-feed automatics for simple repeat cutting, encoder and servo versions (BMSO E, BMSO 320S) for length accuracy, and automatic miter saws for angled parts.",
      "families": [
       "bekamak-bmso-ga",
       "bekamak-bmso-roller",
       "bekamak-bmso-e",
+      "bekamak-bmso-s",
       "bekamak-bmso-dgs",
       "bekamak-bmso-gs"
      ]
@@ -301,7 +306,7 @@
      "cat": "double-column",
      "line": "premium",
      "image": "bk-hero-dc-570cs",
-     "blurb": "From the BMSY C semi-automatics to servo-feed CS NC production saws and the enclosed XS line.",
+     "blurb": "From the BMSY C semi-automatics to servo-feed CS NC production saws, the enclosed XS line and the high-speed TERRA 6.",
      "families": [
       "bekamak-bmsy-c",
       "bekamak-bmsy-cgh",
@@ -310,6 +315,7 @@
       "bekamak-bmso-cs",
       "bekamak-bmso-cgs",
       "bekamak-bmso-xs",
+      "bekamak-terra-6",
       "bekamak-bmsy-heavy",
       "bekamak-gantry-2200xs"
      ]

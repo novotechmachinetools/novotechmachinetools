@@ -111,7 +111,7 @@ PIPE_NOTCH = [
       "takes Ø1-3/8 – 5-3/4″ with a 6″ belt and 7.5 HP and grinds flat and on a contact wheel as well.",
       ["PRS-76A / 76C / 76: tube Ø3/4 – 3″, 4 × 79″ belt, 4 HP or two-speed 3 / 3.75 HP", "PRS-150: tube Ø1-3/8 – 5-3/4″, 6 × 79″ belt, 7.5 HP two-speed, forward and reverse",
        "Notching angle 30 – 90°; contact rollers for 1/2 to 2-1/2″ pipe sizes", "Dust collector connection; flat and contact-wheel grinding too"],
-      ["tm-prs", "tm-prs150"], headline="Tube Ø3/4 – 5-3/4″", cap="[Belt size] belt", optional=["Contact rollers Ø20, 26, 32, 42, 48, 60 and 76 mm (1/2 – 2-1/2″ pipe)"]),
+      ["tm-prs", "tm-prs76", "tm-prs76a", "tm-prs150"], headline="Tube Ø3/4 – 5-3/4″", cap="[Belt size] belt", optional=["Contact rollers Ø20, 26, 32, 42, 48, 60 and 76 mm (1/2 – 2-1/2″ pipe)"]),
 ]
 
 # =============================================================================================== ironworkers
@@ -140,7 +140,7 @@ ANGLE = [
       "1″ flat bar the easy way and 3-1/8 × 1″ on edge. Rolls for round tube and special profiles — also in nylon — are made to order.",
       ["Shafts Ø1-9/16″ (40 mm), Ø2″ (50 mm) and Ø2-1/2″ (65 mm); 2 – 3 HP; 9 – 9.3 rpm", "Horizontal and vertical operation (HV models)",
        "Hydraulic top roll on the HRBM models", "One standard combination roll set for all listed profiles", "Foot pedal; special rolls (also nylon) to order"],
-      ["tm-hrbm50", "tm-rbm40", "tm-hrbm65", "tm-hrbm40", "tm-rbm50"], headline="Shafts Ø1-9/16 – 2-1/2″", cap="[Shaft diameter] shafts"),
+      ["tm-hrbm50", "tm-rbm40", "tm-hrbm65", "tm-hrbm40", "tm-rbm50", "tm-hrbm-work"], headline="Shafts Ø1-9/16 – 2-1/2″", cap="[Shaft diameter] shafts"),
     F("tt-rbm-small", P_ANGLE, "tt-ring", "ERBM10HV – RBM30HV motorized ring rollers, Ø13/16 – 1-3/16″ shafts", "RBM motorized ring rollers",
       [pick(RB[0], ["ERBM10HV", "RBM20", "RBM30", "RBM30HV"], title="ERBM10HV · RBM20 · RBM30 · RBM30HV", sub="Motorized ring rollers with Ø13/16 – 1-3/16″ shafts")],
       "Small motorized ring rollers for flat bar, square and round bar, light angle, channel and tube — railings, gates, frames and "
@@ -311,7 +311,7 @@ ROLL = [
       "12 – 10 ga over 8′3″ and 9′11″.",
       ["Rolling capacity 12 ga to 1/2″ (2.5 – 12 mm) × 4′3″ – 9′11″", "All three rolls driven hydraulically; pinch rolls synchronized",
        "Digital pinch-roll position counter", "Rolls HRC 55; top roll swings out; forward / reverse foot pedal", "3 – 7.5 HP"],
-      ["tm-her"], headline="12 ga – 1/2″ × 4 – 10 ft", cap="[Working width] × [Capacity, mild steel]", note=NOTE_HZ),
+      ["tm-her", "tm-her2070"], headline="12 ga – 1/2″ × 4 – 10 ft", cap="[Working width] × [Capacity, mild steel]", note=NOTE_HZ),
     F("tt-esr", P_ROLL, "tt-slip", "ESR electric slip rolls, 22 ga – 1/4″ × 3.3 – 10 ft", "ESR electric slip rolls", [SL[2]],
       "Motorized three-roll slip rolls for HVAC, duct and sheet-metal work: a fixed top roll, adjustable lower and rear rolls of "
       "high-strength steel, wire grooves, a top roll that swings out over a cam lock and cone rolling. From the ESR-1020×2 for 14 ga over "
@@ -320,7 +320,7 @@ ROLL = [
       ["Rolling capacity 22 ga to 1/4″ (0.8 – 6.5 mm) × 40 – 118″", "Fixed top roll, adjustable lower and rear rolls; wire grooves; cone rolling",
        "Foot pedal; 1 – 7.5 HP", "ESR2550 / ESR3050 E: motorized rear roll with digital position readout",
        "Options: hand-wheel adjustment of the rear roll, fast lower-roll adjustment"],
-      ["tm-esr", "tm-esr1300e", "tm-esr1020"], headline="22 ga – 1/4″ × 3.3 – 10 ft", cap="[Working width] × [Capacity, mild steel]", note=NOTE_HZ),
+      ["tm-esr", "tm-esr1300e", "tm-esr1020", "tm-esr1300-15e", "tm-esr1300-45", "tm-esr1550", "tm-esr2550e"], headline="22 ga – 1/4″ × 3.3 – 10 ft", cap="[Working width] × [Capacity, mild steel]", note=NOTE_HZ),
 ]
 
 # =============================================================================================== deburring

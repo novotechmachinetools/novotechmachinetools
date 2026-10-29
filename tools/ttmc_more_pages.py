@@ -565,7 +565,7 @@ def register_images(used):
     keys = []
     for key in sorted(used):
         if key in HP.PHOTOS:                     # the supplier's high-resolution photos (Oct 2026) replace the catalogue crops
-            alt, detail, size, tool = HP.PHOTOS[key]["alt"], False, 1024, "ttmc_hires_photos.py"
+            alt, detail, size, tool = HP.PHOTOS[key]["alt"], bool(HP.PHOTOS[key].get("detail")), 1024, "ttmc_hires_photos.py"
         elif key in PH.PLAN:                     # Vol. 23 catalogue crops, under 1,000 px: the 768 px matte is as sharp and twice as fast
             alt, detail, size, tool = PH.PLAN[key][3], key in PH.DETAIL, 768, "ttmc_more_photos.py"
         elif key in NP.PHOTOS:                   # 2026 sheets (up to 2,300 px): 1024 px matte; catalogue photos under 1,300 px: 768
@@ -578,6 +578,9 @@ def register_images(used):
         if not os.path.exists(os.path.join(ROOT, src)):
             raise SystemExit(f"missing crop for {key} — run tools/{tool}")
         imap[key] = {"src": src, "alt": alt, "section": "ttmc-more", "trim": True, "quality": 82, "cutout": not detail, "cut_size": size}
+        spec = f"tools/cutout-specs/birefnet/{key}.json"       # keep / drop polygons for a photo BiRefNet gets wrong (smeared stand, floor shadow)
+        if os.path.exists(os.path.join(ROOT, spec)):
+            imap[key]["cut_spec"] = spec
         keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "ttmc_more_keys.txt"), "w").write(",".join(keys))

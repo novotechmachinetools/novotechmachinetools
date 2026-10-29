@@ -89,6 +89,14 @@ EXTRA_TITLES = {  # more of bekamak.com's captions → clean English (lower-case
     "automatic lubrication": "Automatic lubrication", "manual central lubrication": "Manual central lubrication", "cleaning hose": "Cleaning hose",
     "movable arm": "Movable arm", "optical rapid approach": "Optical rapid approach", "safety rope sensor": "Safety rope sensor", "servo motor": "Servo motor",
     "foot pedal": "Foot pedal", "tilt adjustment lever": "Tilt adjustment lever",
+    "clinder": "Hydraulic feed cylinder", "securty swich": "Safety switch", "lineer way": "Linear guides", "sensitive pressure": "Cutting pressure control",
+    "hydromechnic blade tension": "Hydro-mechanical blade tension", "pc-based control panel": "PC-based control panel", "inclined bow": "Inclined bow",
+    "deflection control": "Blade deflection control", "motorized chip brush": "Motorized chip brush", "hydraulic arm lock": "Hydraulic bow lock",
+    "load cell": "Load cell (blade load measurement)", "the electrical panel": "Electrical panel", "fully enclosed cabin": "Fully enclosed cabin",
+    "camera": "Camera in the cabin", "zero remnant": "Zero remnant", "deviation sensor": "Blade deviation sensor", "laser line pointer": "Laser line pointer",
+    "cutting speed indicator": "Cutting speed indicator", "hydraulic top pressing": "Hydraulic top clamp", "hydraulic strip tensioning": "Hydraulic blade tension",
+    "hexagonal jaw": "Hexagonal vise jaws", "3000 mm pulling bench": "118″ (3 m) pull-out table", "1 meter material stand": "3 ft (1 m) material stand",
+    "3 meter material stand": "10 ft (3 m) material stand",
 }
 ACRONYMS = {"nc": "NC", "cnc": "CNC", "led": "LED", "kw": "kW", "hp": "HP"}
 
