@@ -38,9 +38,9 @@ HUBS = {
                   "in a premium line made in Turkey and a value line built to our specification, as sections on the same page. Below, the five kinds "
                   "compared, the laser power guide and every model in one table of working area, power and speed; every machine comes with a "
                   "CSA-approved panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
-            points=["Enclosed: exchange table or pallet changer, 4 × 4 ft compact to 8.5 × 41 ft, 1.5 – 80 kW — premium GFL / Smart closed, value ULE, H series, compact",
-                    "Open-type and semi-closed: single tables 5 × 10 to 85 × 10.5 ft, 1.5 – 60 kW; plate lasers on ground rails and gantries to 10 × 164 ft with ±45° bevel",
-                    "Sheet-and-tube lasers to Ø13.8″ tube; five-axis 3D cells and robot cells; coil-fed lines to 9/16″ plate"],
+            points=['<a href="enclosed-fiber-laser.html">Enclosed</a>: exchange table or pallet changer, 4 × 4 ft compact to 8.5 × 41 ft, 1.5 – 80 kW — premium <a href="enclosed-fiber-laser.html#dn-gfl">GFL</a> / <a href="enclosed-fiber-laser.html#dn-smart-closed">Smart closed</a>, value <a href="enclosed-fiber-laser.html#vn-ule">ULE</a>, <a href="enclosed-fiber-laser.html#sf-h">H series</a>, <a href="enclosed-fiber-laser.html#sf-compact">compact</a>',
+                    '<a href="open-type-fiber-laser.html">Open-type and semi-closed</a>: single tables 5 × 10 to 85 × 10.5 ft, 1.5 – 60 kW; <a href="large-format-plate-laser.html">plate lasers on ground rails and gantries</a> to 10 × 164 ft with ±45° bevel',
+                    '<a href="sheet-and-tube-laser.html">Sheet-and-tube lasers</a> to Ø13.8″ tube; <a href="3d-laser-and-coil-fed-line.html#sf-3d">five-axis 3D cells and robot cells</a>; <a href="3d-laser-and-coil-fed-line.html#sf-coil">coil-fed lines</a> to 9/16″ plate'],
             hero="dn-gfl-3", minis=["vn-ule-1", "sf-h-1"],
             range_cols=["Working area", "Laser power", "Max. speed", "Acceleration", "Max. sheet load"],
             range_pick=[["working_area", "area"], "power", "speed", "accel", "load"],
@@ -86,8 +86,8 @@ HUBS = {
                   "For trailer, railing, furniture, agricultural, HVAC and steel-construction work. Below, the two kinds compared and every model in "
                   "one table of tube range, power, speed and bar length; every machine comes with a CSA-approved panel, chiller, tube nesting "
                   "software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
-            points=["Tube laser cutters: premium E-FTL Ø0.3″ – 13.8″, 1 G, ±0.05 mm; value ULT Ø0.4″ – 14.2″ two or three chucks; T / PLUS / GT Ø0.5″ – 14″ — 20 – 39 ft bars, 1.5 – 40 kW",
-                    "Heavy-duty: premium FTL Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb; NT zero-tailing, ST / HT three- and four-chuck lasers to Ø25″, 6,600 lb and 49 ft",
+            points=['<a href="tube-laser-cutter.html">Tube laser cutters</a>: premium <a href="tube-laser-cutter.html#dn-eftl">E-FTL</a> Ø0.3″ – 13.8″, 1 G, ±0.05 mm; value <a href="tube-laser-cutter.html#vn-ult">ULT</a> Ø0.4″ – 14.2″ two or three chucks; <a href="tube-laser-cutter.html#sf-t">T</a> / <a href="tube-laser-cutter.html#sf-plus">PLUS / GT</a> Ø0.5″ – 14″ — 20 – 39 ft bars, 1.5 – 40 kW',
+                    '<a href="heavy-duty-tube-laser.html">Heavy-duty</a>: premium <a href="heavy-duty-tube-laser.html#dn-ftl">FTL</a> Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb; <a href="heavy-duty-tube-laser.html#sf-heavy">NT zero-tailing, ST / HT three- and four-chuck lasers</a> to Ø25″, 6,600 lb and 49 ft',
                     "Bundle loaders, following supports, ±45° bevel heads, STEP / IGES import and tube nesting on every machine"],
             hero="dn-tube-2", minis=["vn-ult-1", "sf-t-1"],
             range_cols=["Round tube", "Laser power", "Max. speed", "Bar length", "Max. bar weight"],

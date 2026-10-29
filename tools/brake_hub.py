@@ -229,9 +229,9 @@ HUB_PAGE = dict(
           "shear, brake and roll machines for the small shop. Below, the six kinds compared, every one of the {n} models in one table, the "
           "questions we get asked and the buying guide. NovoTech's value-line brakes are built in China to our specification, with parts and "
           "support from Mississauga, ON, Canada.",
-    points=["Box and pan brakes 12 – 157″ to 12 ga and 14 ga boxes 9″ deep; hand brakes and foot-clamp folders to 13 ft; bench brakes",
-            "Magnetic brakes 2 – 10 ft, 16 ga, boxes of any depth; hydraulic folders 10 ga × 10 ft; TFM / TFMS CNC folders 14 ga × 12 ft",
-            "Portable roofing and siding brakes 7 – 12.5 ft with slitter; 3-in-1 shear, brake and roll machines 8 – 80″"],
+    points=['<a href="box-and-pan-brake.html">Box and pan brakes</a> 12 – 157″ to 12 ga and 14 ga boxes 9″ deep; <a href="sheet-metal-hand-brake.html">hand brakes and foot-clamp folders</a> to 13 ft; <a href="sheet-metal-hand-brake.html#tt-bench-brake">bench brakes</a>',
+            '<a href="magnetic-sheet-metal-brake.html">Magnetic brakes</a> 2 – 10 ft, 16 ga, boxes of any depth; <a href="hydraulic-folding-machine.html">hydraulic folders</a> 10 ga × 10 ft; <a href="hydraulic-folding-machine.html#tt-tfm">TFM / TFMS CNC folders</a> 14 ga × 12 ft',
+            '<a href="roofing-siding-brake.html">Portable roofing and siding brakes</a> 7 – 12.5 ft with slitter; <a href="shear-brake-roll-3-in-1.html">3-in-1 shear, brake and roll machines</a> 8 – 80″'],
     hero="tm-eb2500", minis=["tm-hwe", "tm-bp1650"],
     range_cols=RANGE["range_cols"],
     range_lead="Every brake and folding machine NovoTech sells — all {n} models in one table: bending length, capacity in mild steel and weight. Each row links to the model's full specification on its page.",

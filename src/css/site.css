@@ -847,3 +847,23 @@ body.ai-locked { overflow: hidden; }
 .compare-table td { vertical-align: top; line-height: 1.4; min-width: 200px; }
 .compare-table tbody th { white-space: normal; min-width: 130px; }
 .compare-table thead th { white-space: normal; }
+
+/* hub line-up: every family of a short hub, grouped by brand and line */
+.lineup { scroll-margin-top: calc(var(--header-h) + 56px); }
+.lineup-line { scroll-margin-top: calc(var(--header-h) + 56px); }
+.lineup-line .group-head h2 { margin-top: 2px; }
+.lineup-line .group-tagline { max-width: 72ch; }
+.card-type { color: var(--steel); background: var(--white); }
+.hero-points a { color: inherit; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.hero-points a:hover { color: var(--orange-deep); }
+.hero-link { display: block; width: 100%; position: relative; z-index: 1; }
+.hero-link > .hero-main { display: block; margin: 0 auto; transition: transform .2s ease; }
+.hero-link:hover > .hero-main { transform: translateY(-3px); }
+.hero-mini-link { display: block; line-height: 0; }
+.hero-mini-link img { transition: transform .2s ease; }
+.hero-mini-link:hover img { transform: translateY(-3px); }
+@media (prefers-reduced-motion: reduce) { .hero-link > .hero-main, .hero-mini-link img { transition: none; } }
+.hero-guide { margin: 12px 0 0; padding-left: 22px; position: relative; font-size: 15px; color: var(--steel); }
+.hero-guide::before { content: ""; position: absolute; left: 0; top: .5em; width: 12px; height: 12px; border: 2px solid var(--orange); border-radius: 50%; box-sizing: border-box; }
+.hero-guide a { font-weight: 700; color: var(--charcoal); text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.hero-guide a:hover { color: var(--orange-deep); }

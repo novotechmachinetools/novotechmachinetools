@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Tubend (Bursa, Turkey) — sold under its own brand.  Page texts for horizontal-press-brake (HP 10 – HP 150) and
+"""Tubend (Bursa, Turkey).  The TB pipe benders and WP positioners are sold under the Tubend name; the HP horizontal presses are
+sold as NovoTech's premium line, made in Turkey, with the maker's logo removed from the photos (tools/tubend_photos.LOGO), the
+texts and their own brochure (Oct 2026).  Page texts for horizontal-press-brake (HP 10 – HP 150) and
 welding-positioners (WP 100 / WP 300), the TB group for the rotary draw page, image registration (section 'tubend'), and the
 NovoTech-format brochure spec:
 
@@ -22,7 +24,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "tubend"
 BRAND = D.BRAND
 PDF_FILE = "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf"
-PDF_LABEL = "Download the Tubend press, pipe bender & positioner brochure"
+PDF_LABEL = "Download the Tubend pipe bender & welding positioner brochure"
+PDF_HP_FILE = "files/NovoTech-Horizontal-Press-Brakes-2026.pdf"          # the HP presses: NovoTech premium line, no maker's name (Oct 2026)
+PDF_HP_LABEL = "Download the NovoTech horizontal press brake brochure"
+HP_BRAND_LINE = ("The HP horizontal presses are built in Turkey for NovoTech's premium line, with European hydraulics and controls. Sold, "
+                 "installed and supported in Canada by NovoTech.")
+HP_ORIGIN = {"title": "Made in Turkey for NovoTech", "text": "NovoTech's premium-line horizontal presses are built in Turkey to our specification — welded "
+             "steel frames, hardened tools and touch-screen controls — with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."}
 
 BRAND_LINE = ("Tubend machines are made in Bursa, Turkey, by Tubend Machine, with European components. Sold, installed and supported "
               "in Canada by NovoTech.")
@@ -32,9 +40,10 @@ NO_FACTORY_VIDEO = {"intro_video": None}
 
 
 def pdf(fid=None):
-    f = os.path.join(ROOT, "src", PDF_FILE)
+    file, label = (PDF_HP_FILE, PDF_HP_LABEL) if fid in ("tubend-hp", "tubend-hp-heavy") else (PDF_FILE, PDF_LABEL)
+    f = os.path.join(ROOT, "src", file)
     size = f"PDF · {os.path.getsize(f) / 1e6:.0f} MB · imperial units" if os.path.exists(f) else "PDF · imperial units"
-    return {"file": PDF_FILE, "label": PDF_LABEL, "size": size}
+    return {"file": file, "label": label, "size": size}
 
 
 def families(page=None):
@@ -49,14 +58,14 @@ VOLT_FAQ_HP = {"q": "What power supply does an HP press need?",
 # ------------------------------------------------------------------------------------------------ horizontal-press-brake
 PAGE_HP = dict(
     title="Horizontal Press Brakes, Hydraulic, 11 – 165 Ton | NovoTech",
-    meta="NC hydraulic horizontal presses that bend, punch, shear and straighten flat bar, pipe, bar and busbar: Tubend HP 10 to HP 150 with touch-screen recipes.",
+    meta="NC hydraulic horizontal presses that bend, punch, shear and straighten flat bar, pipe, bar and busbar: NovoTech premium-line HP 10 to HP 150, made in Turkey, with touch-screen recipes.",
     h1="Horizontal press brakes — NC hydraulic horizontal presses, 11 to 165 US tons",
     intro="A horizontal press brake is a hydraulic press laid on its side: the ram pushes the tool across a heavy steel table at bench "
           "height, so flat bar, angle, channel, pipe, solid bar and busbar lie flat in front of the operator while they are bent, "
           "punched, sheared, notched or straightened. With the right tooling one machine does the work of a small press brake, a bar "
           "bender, a heavy-wall pipe bender, a punch and a straightening press — the workhorse of maintenance and repair shops, gate, "
           "railing and fence makers, trailer and agricultural fabricators and the switchgear builders who bend copper busbar. NovoTech "
-          "sells the HP series of Tubend, built in Bursa, Turkey: six NC-controlled models from the 11-ton HP 10 to the 110-ton HP 100, "
+          "sells the HP series, built in Turkey for its premium line: six NC-controlled models from the 11-ton HP 10 to the 110-ton HP 100, "
           "and the 132- and 165-ton HP 120 and HP 150 with a T-slot table and hardened support columns for straightening heavy "
           "sections. Every HP has a touch-screen control stand with manual, automatic and recipe modes and a foot pedal; a servo NC "
           "back gauge, a library of bending, punching, shearing, pipe and busbar tools and dies made for your part are available. "
@@ -65,9 +74,9 @@ PAGE_HP = dict(
             "HP 120 · HP 150: 132 – 165 US tons · 19.7″ stroke · T-slot table and hardened support columns",
             "Touch-screen NC with manual, automatic and recipe modes · servo NC back gauge · bending, punching, pipe and busbar tools"],
     hero="tb-hp80", minis=["tb-hp10", "tb-hp120"],
-    groups=[("tubend-hp", "Tubend HP hydraulic horizontal presses",
+    groups=[("tubend-hp", "HP hydraulic horizontal presses · premium line",
              "NC-controlled horizontal presses from 11 to 165 US tons, small to large: the HP 10 – HP 100 on one frame design, and the "
-             "HP 120 and HP 150 with a T-slot table and support columns for heavy bending and straightening.", BRAND)],
+             "HP 120 and HP 150 with a T-slot table and support columns for heavy bending and straightening.", "novotech-premium")],
     faq=[{"q": "What is a horizontal press brake used for?",
           "a": "Bending, punching, shearing, notching and straightening bar stock with the part lying flat on a table at bench height. "
                "The ram moves horizontally, so long parts rest on the table and the operator watches the bend from the side. With its "
@@ -163,26 +172,42 @@ ABOUT_TUBEND = ("NovoTech sells, installs and supports Tubend machines in Canada
                 "installation, operator training, a CSA-approved panel on three-phase machines, a 1-year warranty and parts and technical "
                 "support in Canada.")
 BROCHURE = dict(
-    title="Horizontal presses, pipe benders and welding positioners",
-    subtitle="Tubend HP 10 – HP 150 NC hydraulic horizontal presses, 11 – 165 US tons · TB 34 / TB 42 mandrel-less pipe benders · WP 100 / WP 300 welding positioners",
+    title="Pipe benders and welding positioners",
+    subtitle="Tubend TB 34 / TB 42 mandrel-less pipe benders · WP 100 / WP 300 tilting welding positioners",
     cover_line="Tubend · made in Turkey · sold & serviced in Canada by NovoTech", range_label="Tubend machinery", about_for="Tubend machinery",
-    about_kicker="Tubend · Bursa, Turkey", about_title="Horizontal presses with a tool for every bend",
-    about_text=["Tubend designs and builds bending and forming machinery in Bursa, Turkey. Its HP horizontal presses bend, punch, shear, notch "
+    about_kicker="Tubend · Bursa, Turkey", about_title="Simple, solid machines for the pipe and welding shop",
+    about_text=["Tubend designs and builds bending and forming machinery in Bursa, Turkey. The TB 34 and TB 42 are simple mandrel-less pipe "
+                "benders with a digital angle readout and a brake motor that holds the bend, and the WP 100 and WP 300 tilting welding "
+                "positioners turn round parts under the torch at 1 – 5.5 rpm, foot-pedal controlled.", ABOUT_TUBEND],
+    country="Turkey", families=["tubend-tb34", "tubend-tb42", "tubend-wp"], family_sets=["tubend", "tube-benders"],
+    groups=[{"title": "Mandrel-less pipe benders", "families": ["tubend-tb34", "tubend-tb42"]},
+            {"title": "Welding positioners", "families": ["tubend-wp"]}],
+    cover_photos=["tb-tb42", "tb-wp300"], out="src/" + PDF_FILE)
+
+ABOUT_HP = ("NovoTech sells, installs and supports the HP presses in Canada from Mississauga, Ontario, Canada — tooling chosen for your parts, "
+            "installation, operator training, a CSA-approved panel, a 1-year warranty and parts and technical support in Canada.")
+BROCHURE_HP = dict(
+    title="Horizontal press brakes",
+    subtitle="HP 10 – HP 150 NC hydraulic horizontal presses, 11 – 165 US tons — bend, punch, shear and straighten flat bar, pipe, bar and busbar",
+    cover_line="NovoTech premium line · made in Turkey · sold & serviced in Canada by NovoTech", range_label="Horizontal press brakes", about_for="horizontal press brakes",
+    about_kicker="NovoTech premium line · made in Turkey", about_title="Horizontal presses with a tool for every bend",
+    about_text=["NovoTech's premium-line HP horizontal presses are built in Turkey to our specification. They bend, punch, shear, notch "
                 "and straighten flat bar, pipe, solid bar and busbar with the part lying flat on the table — NC-controlled from 11 to 165 "
                 "US tons, with a touch-screen recipe control, an optional servo back gauge and an extensive library of bending, punching, "
-                "shearing, pipe and busbar tools. The TB 34 and TB 42 are simple mandrel-less pipe benders, and the WP 100 and WP 300 "
-                "tilting welding positioners turn round parts under the torch.", ABOUT_TUBEND],
-    country="Turkey", families=["tubend-hp", "tubend-hp-heavy", "tubend-tb34", "tubend-tb42", "tubend-wp"], family_sets=["tubend", "tube-benders"],
-    groups=[{"title": "Hydraulic horizontal presses", "families": ["tubend-hp", "tubend-hp-heavy"]},
-            {"title": "Mandrel-less pipe benders", "families": ["tubend-tb34", "tubend-tb42"]},
-            {"title": "Welding positioners", "families": ["tubend-wp"]}],
-    cover_photos=["tb-hp80", "tb-tb42", "tb-wp300"], out="src/" + PDF_FILE)
+                "shearing, pipe and busbar tools; the HP 120 and HP 150 add a T-slot table and hardened support columns for straightening "
+                "heavy sections.", ABOUT_HP],
+    country="Turkey", families=["tubend-hp", "tubend-hp-heavy"], family_sets=["tubend"],
+    groups=[{"title": "NC hydraulic horizontal presses", "families": ["tubend-hp"]},
+            {"title": "Heavy-duty horizontal presses", "families": ["tubend-hp-heavy"]}],
+    cover_photos=["tb-hp80", "tb-hp10", "tb-hp120"], out="src/" + PDF_HP_FILE)
 
 
 def write_brochure_specs():
     d = os.path.join(ROOT, "tools", "brochure", "specs")
     spec = dict(BROCHURE, single_phase=False, year="2026", made_in="Made in Turkey by Tubend — with European components")
     json.dump(spec, open(os.path.join(d, "tubend.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    spec = dict(BROCHURE_HP, single_phase=False, year="2026", made_in="Made in Turkey for NovoTech's premium line — with European hydraulics and controls")
+    json.dump(spec, open(os.path.join(d, "horizontal-press-brakes.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 
 def register_images():
@@ -214,12 +239,13 @@ def build():
     fams = families(D.P_HP) + families(D.P_WP)
     write_families(SET, fams)
     shared = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **NO_FACTORY_VIDEO, "catalogue_pdf": pdf(), "catalogue_pdfs": None}
-    write_category(D.P_HP, PAGE_HP, fams, SET, "Horizontal press brakes", extra={**shared, "nav_label": "Horizontal press brakes"})
+    write_category(D.P_HP, PAGE_HP, fams, SET, "Horizontal press brakes", extra={**shared, "hero_brand_line": HP_BRAND_LINE, "origin_feature": HP_ORIGIN,
+                                                                                   "catalogue_pdf": pdf("tubend-hp"), "nav_label": "Horizontal press brakes"})
     write_category(D.P_WP, PAGE_WP, fams, SET, "Welding positioners", extra={**shared, "nav_label": "Welding positioners"})
     keys = register_images()
     write_brochure_specs()
     used = {k for f in D.FAMILIES for k in f["images"]} | {PAGE_HP["hero"], PAGE_WP["hero"]} | set(PAGE_HP["minis"]) | set(PAGE_WP["minis"])
-    used |= set(BROCHURE["cover_photos"])
+    used |= set(BROCHURE["cover_photos"]) | set(BROCHURE_HP["cover_photos"])
     unused = sorted(set(keys) - used - {"tubend-logo"})
     if unused:
         print("photos not used on a page:", unused)

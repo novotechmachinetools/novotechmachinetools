@@ -459,7 +459,7 @@ PB_STD = ["Delem DA-53T 2D touchscreen CNC control; 4 axes — Y1, Y2 (independe
           "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
           "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
           "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
-          "European-style quick clamps and a segmented 2-V die with sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+          "Quick-release top clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
           "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop", VOLT]
 PB_OPT = ["Delem DA-58T (15″ 2D), DA-66T (17″ 2D + 3D view) or DA-69T (3D) control; ESA S875, Cybelec options",
           "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
@@ -469,7 +469,7 @@ NC_STD = ["Estun E21 NC control — programs the back gauge (X) and ram depth (Y
           "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
           "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
           "Welded, stress-relieved monoblock frame machined in one setting; Rexroth-type hydraulic block; Schneider electrics",
-          "European-style quick clamps, segmented 2-V die and sectioned punch set; front support arms", "Side and rear guards; foot pedal with emergency stop", VOLT]
+          "Quick-release top clamps, segmented 2-V die and sectioned punch set; front support arms", "Side and rear guards; foot pedal with emergency stop", VOLT]
 NC_OPT = ["Estun E300P / E310P NC control with R axis", "Y-axis CNC upgrade (closed-loop ram) to the WAD series", "DSP laser finger protection or light curtain",
           "Sheet follower support; longer back gauge", "Hydraulic oil cooler", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 EPB_STD = ["Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",

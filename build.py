@@ -757,6 +757,39 @@ def apply_extra_groups(loaded):
         p.update(x.get("set", {}))
 
 
+BRAND_WORDS = ("Dener", "Senfeng", "NovoTech", "Bekamak", "CSM", "Cevisa", "GMS", "Gecam", "Eurofintec", "ISITAN", "Plastmak",
+               "EUROSTAMP", "Tubend", "Wecotech", "WIKUS")
+
+
+def pdf_brand_label(pdf):
+    """A brochure button names its brand ("Download the Dener servo-electric press brake brochure"), so two brochures of the same
+    kind of machine on one page can be told apart.  The brand comes from the file name — files/NovoTech-Dener-… is Dener's,
+    files/NovoTech-Senfeng-… Senfeng's, every other NovoTech-… brochure NovoTech's own (value or premium line)."""
+    if not isinstance(pdf, dict) or not pdf.get("label", "").startswith("Download the "):
+        return
+    low = pdf["label"].lower()
+    if any(w.lower() in low for w in BRAND_WORDS):
+        return
+    f = os.path.basename(pdf.get("file", ""))
+    brand = "Dener" if "-Dener-" in f else "Senfeng" if "-Senfeng-" in f else "NovoTech" if f.startswith("NovoTech-") else None
+    if brand:
+        pdf["label"] = "Download the " + brand + " " + pdf["label"][len("Download the "):]
+
+
+def brand_all_pdf_labels(loaded):
+    for p in loaded:
+        pdf_brand_label(p.get("catalogue_pdf"))
+        for x in p.get("catalogue_pdfs") or []:
+            pdf_brand_label(x)
+        for ln in p.get("lines") or []:
+            pdf_brand_label(ln.get("pdf"))
+    for fs in FAMILY_SETS.values():
+        for f in fs.values():
+            pdf_brand_label(f.get("pdf"))
+    for b in site["brands"].values():
+        pdf_brand_label(b.get("pdf"))
+
+
 PDF_INDEX = {}    # files/x.pdf → {"label", "size", "pages": [{"href", "label"}]}, filled by main()
 
 
@@ -1053,6 +1086,106 @@ def site_page_ld(page):
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
 
+def lead_sentence(text, limit=210):
+    """The first sentence of a family summary (two when the first is very short), cut at a word under `limit` characters —
+    the hub line-up shows this much; the whole text stays on the family's own page."""
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9Ø])", (text or "").strip())
+    out = ""
+    for s_ in parts:
+        if out and len(out) + 1 + len(s_) > limit:
+            break
+        out = (out + " " + s_).strip()
+        if len(out) >= 90:
+            break
+    if len(out) > limit:
+        out = out[:limit].rsplit(" ", 1)[0].rstrip(",;:—– ") + "…"
+    return out
+
+
+def hub_lineup_spec(hub, by_slug):
+    """A short hub's line-up: every family on its section pages (and on the pages of its extra cards), grouped by brand and
+    line — premium lines first, then 'made in' brands, then the value lines — each family linking to its anchor on the page
+    that holds it.  Families are listed in page order, then group order."""
+    targets = [(sp["slug"], sp.get("nav_label") or sp["title"].split(" — ")[0]) for sp in hub["subpages"]]
+    targets += [(x["href"][:-5], x.get("nav_label") or x["title"].split(" — ")[0]) for x in hub.get("extra_cards", [])
+                if x["href"].endswith(".html") and x["href"][:-5] in by_slug]
+    seen, groups, order = set(), {}, []
+    for slug, label in targets:
+        p = by_slug[slug]
+        for g in p.get("groups", []):
+            fset = g.get("family_set") or p.get("family_set")
+            for fid in g["families"]:
+                if not isinstance(fid, str) or (fset, fid) in seen:
+                    continue
+                seen.add((fset, fid))
+                brand = FAMILY_SETS[fset][fid].get("brand") or g.get("brand") or "novotech"
+                if brand not in groups:
+                    groups[brand] = []
+                    order.append(brand)
+                groups[brand].append({"slug": slug, "type": label, "set": fset, "fid": fid})
+
+    def rank(b):
+        line = site["brands"].get(b, {}).get("line", "")
+        return 0 if line == "Premium line" else 2 if line == "Value line" else 1
+    return [{"brand": b, "items": groups[b]} for b in sorted(order, key=lambda b: (rank(b), order.index(b)))]
+
+
+def hub_lineup(page):
+    noun = page.get("lineup_noun") or page.get("section_label", "machines").lower()
+    out = []
+    for grp in page["lineup_spec"]:
+        info = site["brands"].get(grp["brand"], {"name": grp["brand"].title(), "line": ""})
+        name = info["name"]
+        if name == "NovoTech" and info.get("line"):
+            name = "NovoTech " + info["line"].lower().replace(" line", "-line")
+        origin = info.get("origin")
+        items = []
+        for it in grp["items"]:
+            f = prepare_family(family(page, it["fid"], it["set"]))
+            items.append({"f": f, "href": f"{it['slug']}.html#{it['fid']}", "type": it["type"], "text": lead_sentence(f.get("summary", ""))})
+        out.append({"brand": grp["brand"], "info": info, "id": "lineup-" + grp["brand"],
+                    "title": f"{name} {noun}" + (f" — {origin[0].lower() + origin[1:]}" if origin else ""), "cards": items})
+    return out
+
+
+def hero_links(page):
+    """Where each hero photo (the large one and the two small ones) links to: the family section that shows the same photo —
+    on a hub the section page and its anchor, on a category page the anchor on the page itself; on a hub without such a family,
+    the section page whose card uses the photo."""
+    def cands(k):
+        c = {k}
+        for suf in ("-cut", "-hero"):
+            if k.endswith(suf):
+                c.add(k[: -len(suf)])
+        return c
+
+    def find(k):
+        cs = cands(k)
+        for lg in page.get("lineup") or []:
+            for it in lg["cards"]:
+                if cs & set(it["f"].get("images") or []):
+                    return it["href"]
+        if page.get("subpages"):
+            for sp in page["subpages"]:
+                for f in sp["families"]:
+                    if cs & set(f.get("images") or []):
+                        return f"{sp['slug']}.html#{f['id']}"
+            for sp in page["subpages"]:
+                if sp.get("image") in cs:
+                    return sp["slug"] + ".html"
+            for x in page.get("extra_cards") or []:
+                if x.get("image") in cs:
+                    return x["href"]
+            return None
+        for g in page.get("groups") or []:
+            for f in g["families"]:
+                if isinstance(f, dict) and cs & set(f.get("images") or []):
+                    return "#" + f["id"]
+        return None
+    keys = [page.get("hero_image")] + list(page.get("hero_image_secondary") or [])
+    return {k: h for k in keys if k for h in [find(k)] if h}
+
+
 PREPARED = []   # prepared page dicts (families resolved) — used for the AI assistant's catalogue
 
 
@@ -1080,11 +1213,16 @@ def render_page(page):
         page["range_rows"] = range_table([{"slug": page["slug"], "families": g["families"], "nav_label": g["title"].split(" — ")[0]} for g in page["groups"]], page["range_pick"])
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
         page["jump_links"] = ([{"href": "#range-at-a-glance", "label": "All models"}] if page.get("range_rows") else []) + [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
+    if page.get("lineup_spec"):
+        page["lineup"] = hub_lineup(page)
     if not page.get("jump_links") and page.get("hub_compact"):   # a short hub: its pages, then the parts of the page
         page["jump_links"] = ([{"href": sp["slug"] + ".html", "label": sp.get("nav_label") or sp["title"]} for sp in page["subpages"]]
                               + [{"href": x["href"], "label": x.get("nav_label") or x["title"].split(" — ")[0]} for x in page.get("extra_cards", [])]
+                              + ([{"href": "#lineup", "label": "Line-up"}] if page.get("lineup") else [])
                               + ([{"href": "#compare", "label": "Compare"}] if page.get("compare") else [])
                               + [{"href": "#range-at-a-glance", "label": "All models"}, {"href": "#faq-title", "label": "Questions"}, {"href": "#reques-a-quote", "label": "Request a quote"}])
+    if page.get("template") in ("hub.html", "category.html") and page.get("hero_image"):
+        page["hero_links"] = hero_links(page)
     page["url"] = f"{site['domain']}/{page['slug']}" if page["slug"] != "index" else site["domain"] + "/"   # clean URLs: pages are served without .html
     page["date_published"], page["date_modified"] = page_dates(page["slug"])
     page["updated_label"] = datetime.date.fromisoformat(page["date_modified"]).strftime("%B %Y")
@@ -1264,6 +1402,10 @@ def main():
     pdir = os.path.join(ROOT, "content", "pages")
     loaded = [json.load(open(os.path.join(pdir, fn), encoding="utf-8")) for fn in sorted(os.listdir(pdir)) if fn.endswith(".json") and not fn.startswith("_")]
     apply_extra_groups(loaded)
+    brand_all_pdf_labels(loaded)
+    by_slug_all = {p["slug"]: p for p in loaded}
+    for hub in [p for p in loaded if p.get("hub_compact") and p.get("subpages")]:   # short hubs list every family by brand
+        hub["lineup_spec"] = hub_lineup_spec(hub, by_slug_all)
     # every page of a hub's section gets links to the hub and to its sibling pages (cross-linking the benders / cutters / lines pages)
     for hub in [p for p in loaded if p.get("subpages")]:
         def member(sp):
@@ -1285,6 +1427,8 @@ def main():
                                     "line": g.get("line"), "brand": g.get("brand"), "line_name": g.get("label"),
                                     "pages": [dict(m, current=(m["slug"] == p["slug"])) for m in g["members"]], "alt": alt,
                                     "related_title": hub.get("related_title_" + (g.get("line") or ""), None)}
+                    if hub.get("article") and not p.get("article") and not p.get("related_article"):   # the hub's buying guide, linked under the hero
+                        p["related_article"] = {"href": f"{hub['slug']}.html#{hub.get('article_id') or 'buying-guide'}", "label": hub.get("article_title") or "Buying guide"}
                     covered = {m["href"] for m in g["members"]} | {hub["slug"] + ".html"} | ({alt["href"]} if alt else set())
                     p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these
     CATALOG.update(build_catalog(loaded))

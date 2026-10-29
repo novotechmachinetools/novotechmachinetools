@@ -17018,7 +17018,7 @@
  },
  "tb-hp10": {
   "src": "tools/src-images/tubend/tb-hp10.png",
-  "alt": "Tubend HP 10 NC hydraulic horizontal press with touch-screen control stand and foot pedal",
+  "alt": "NovoTech HP 10 NC hydraulic horizontal press with touch-screen control stand and foot pedal",
   "section": "tubend",
   "trim": false,
   "quality": 82,
@@ -17026,7 +17026,7 @@
  },
  "tb-hp80": {
   "src": "tools/src-images/tubend/tb-hp80.png",
-  "alt": "Tubend HP 80 hydraulic horizontal press with induction-hardened support pins, control stand and foot pedal",
+  "alt": "NovoTech HP 80 hydraulic horizontal press with induction-hardened support pins, control stand and foot pedal",
   "section": "tubend",
   "trim": false,
   "quality": 82,
@@ -17114,7 +17114,7 @@
  },
  "tb-hp120": {
   "src": "tools/src-images/tubend/tb-hp120.png",
-  "alt": "Tubend HP 120 / HP 150 heavy-duty horizontal press with T-slot table, support columns and control stand",
+  "alt": "NovoTech HP 120 / HP 150 heavy-duty horizontal press with T-slot table, support columns and control stand",
   "section": "tubend",
   "trim": false,
   "quality": 82,
@@ -27606,5 +27606,18 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 84
+ },
+ "dener-logo": {
+  "src": "tools/src-images/dener-logo.png",
+  "alt": "Dener",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false,
+  "sizes": [
+   800,
+   360,
+   180
+  ]
  }
 }

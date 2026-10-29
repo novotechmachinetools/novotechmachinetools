@@ -7,11 +7,11 @@
  "families": {
   "tubend-hp": {
    "id": "tubend-hp",
-   "brand": "tubend",
+   "brand": "novotech-premium",
    "name": "HP 10 – HP 100 NC hydraulic horizontal presses, 11 – 110 US ton",
    "short": "HP 10 – HP 100",
    "models_label": "HP 10 · HP 20 · HP 40 · HP 60 · HP 80 · HP 100 · 6 models",
-   "summary": "A horizontal press brake lays the press on its side: a hydraulic ram pushes the tool across a heavy steel table at bench height, so flat bar, angle, pipe, solid bar and busbar are bent, punched, sheared or straightened with the part lying flat in front of the operator. Tubend's HP series runs from the 11-ton HP 10 for 5-7/8″ × 1/4″ flat bar to the 110-ton HP 100 for 11-13/16″ × 15/16″, every model with an NC touch-screen on a control stand — manual, automatic and recipe modes — a foot pedal, induction-hardened support pins and an ergonomic tool table for quick tool changes.",
+   "summary": "A horizontal press brake lays the press on its side: a hydraulic ram pushes the tool across a heavy steel table at bench height, so flat bar, angle, pipe, solid bar and busbar are bent, punched, sheared or straightened with the part lying flat in front of the operator. NovoTech's premium-line HP series runs from the 11-ton HP 10 for 5-7/8″ × 1/4″ flat bar to the 110-ton HP 100 for 11-13/16″ × 15/16″, every model with an NC touch-screen on a control stand — manual, automatic and recipe modes — a foot pedal, induction-hardened support pins and an ergonomic tool table for quick tool changes.",
    "headline": "11 – 110 US ton · flat bar to 11-13/16″ × 15/16″ · NC touch-screen with recipes",
    "features": [
     "NC control stand with touch-screen: manual mode between set limits, automatic serial modes and recipe mode for multi-step parts",
@@ -263,15 +263,15 @@
     "note": "Bending capacity is flat bar bent the hard way in mild steel with the standard V tooling; force is at the pressure given. Metric values in brackets are the manufacturer's figures; dimensions L × W × H, weight net."
    },
    "pdf": {
-    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
-    "label": "Download the Tubend press, pipe bender & positioner brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "file": "files/NovoTech-Horizontal-Press-Brakes-2026.pdf",
+    "label": "Download the NovoTech horizontal press brake brochure",
+    "size": "PDF · 1 MB · imperial units"
    },
    "group": "tubend-hp"
   },
   "tubend-hp-heavy": {
    "id": "tubend-hp-heavy",
-   "brand": "tubend",
+   "brand": "novotech-premium",
    "name": "HP 120 · HP 150 heavy-duty horizontal presses, 132 – 165 US ton",
    "short": "HP 120 · HP 150",
    "models_label": "HP 120 · HP 150 · 2 models",
@@ -424,9 +424,9 @@
     "note": "Bending capacity is flat bar bent the hard way in mild steel with the standard V tooling; force is at the pressure given. Metric values in brackets are the manufacturer's figures; dimensions L × W × H, weight net."
    },
    "pdf": {
-    "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
-    "label": "Download the Tubend press, pipe bender & positioner brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "file": "files/NovoTech-Horizontal-Press-Brakes-2026.pdf",
+    "label": "Download the NovoTech horizontal press brake brochure",
+    "size": "PDF · 1 MB · imperial units"
    },
    "group": "tubend-hp"
   },
@@ -594,8 +594,8 @@
    },
    "pdf": {
     "file": "files/NovoTech-Tubend-Presses-Benders-Positioners-2026.pdf",
-    "label": "Download the Tubend press, pipe bender & positioner brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "label": "Download the Tubend pipe bender & welding positioner brochure",
+    "size": "PDF · 1 MB · imperial units"
    },
    "group": "tubend-wp"
   }

@@ -49,7 +49,6 @@ RedirectMatch 301 ^/novofab-(.*)$ /novotech-$1
 # press brakes are split by kind of machine, not by supplier (Oct 2026): the supplier pages redirect to the type pages
 RedirectMatch 301 ^/dener-cnc-press-brakes(\.html)?$ /hydraulic-press-brake
 RedirectMatch 301 ^/novotech-cnc-press-brakes(\.html)?$ /hydraulic-press-brake
-RedirectMatch 301 ^/compact-hydraulic-press-brakes(\.html)?$ /hydraulic-press-brake#pb-compact-group
 # shears are split by kind of machine, not by supplier (Oct 2026)
 RedirectMatch 301 ^/dener-shears(\.html)?$ /hydraulic-shearing-machine
 RedirectMatch 301 ^/novotech-mechanical-shears(\.html)?$ /mechanical-guillotine-shear

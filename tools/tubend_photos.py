@@ -42,8 +42,8 @@ def B(src, alt, **kw):
 
 PHOTOS = {
     # ---- HP 10 – HP 100 -------------------------------------------------------------------------------------------
-    "tb-hp10": C(WEB + "hp10.png", "Tubend HP 10 NC hydraulic horizontal press with touch-screen control stand and foot pedal", up=True),
-    "tb-hp80": C(WEB + "hp80.png", "Tubend HP 80 hydraulic horizontal press with induction-hardened support pins, control stand and foot pedal", up=True),
+    "tb-hp10": C(WEB + "hp10.png", "NovoTech HP 10 NC hydraulic horizontal press with touch-screen control stand and foot pedal", up=True),
+    "tb-hp80": C(WEB + "hp80.png", "NovoTech HP 80 hydraulic horizontal press with induction-hardened support pins, control stand and foot pedal", up=True),
     "tb-hp-backgauge": B(CAT + "c-005.png", "HP horizontal press with servo-driven NC back gauge, touch-screen control stand and foot pedal"),
     "tb-hp-screen-manual": P(PDF + "p06-000.png", "HP touch-screen in manual mode: the ram works between the minimum and maximum stroke set in mm"),
     "tb-hp-screen-recipe": P(PDF + "p07-002.png", "HP touch-screen in recipe mode: ram and back gauge positions for each step of a part"),
@@ -55,7 +55,7 @@ PHOTOS = {
     "tb-hp-parts": C(PDF + "c-p06-007.png", "Flat bar, angle, channel, pipe and round bar parts bent on the HP", clean=40),
     "tb-hp-busbar-parts": C(PDF + "c-p06-003.png", "Copper busbars bent and punched on the HP", clean=40, edge=12),
     # ---- HP 120 / HP 150 ------------------------------------------------------------------------------------------
-    "tb-hp120": C(WEB + "hp120-2.png", "Tubend HP 120 / HP 150 heavy-duty horizontal press with T-slot table, support columns and control stand", up=True),
+    "tb-hp120": C(WEB + "hp120-2.png", "NovoTech HP 120 / HP 150 heavy-duty horizontal press with T-slot table, support columns and control stand", up=True),
     "tb-hp120-side": C(WEB + "hp120.png", "HP 120 / HP 150 from the side: hydraulic unit, control box, T-slot table and foot pedal", up=True),
     "tb-hp120-straighten": P(WEB + "hp120-2.jpg", "Straightening a plate between the hardened support columns of the HP 120 / HP 150"),
     # ---- TB 34 / TB 42 --------------------------------------------------------------------------------------------
@@ -81,7 +81,45 @@ def matte_rgba(im):
     return bg.convert("RGB"), im.split()[-1]
 
 
+# the maker's logo and name on the HP horizontal press photos — the presses are sold as NovoTech's premium line (Oct 2026):
+# boxes (x0, y0, x1, y1) in the pixels of the finished photo, filled by LaMa (tools/lama_inpaint.py)
+LOGO = {
+    "tb-hp10": [(55, 82, 273, 217)], "tb-hp80": [(113, 158, 347, 275)], "tb-hp-backgauge": [(274, 90, 352, 172)],
+    "tb-hp120-straighten": [(2235, 115, 2570, 255)],
+}
+# the maker's name typed on a control screen: the cell is painted with its own background colour, sampled at (x, y)
+SCREEN = {"tb-hp-screen-recipe": [((905, 168, 1040, 207), (1060, 186))]}
+
+
+def delogo(im, boxes):
+    import numpy as np
+    from lama_inpaint import inpaint
+    rgba = im.mode == "RGBA"
+    rgb = np.asarray(im.convert("RGB")).copy()
+    mask = np.zeros(rgb.shape[:2], np.uint8)
+    for x0, y0, x1, y1 in boxes:
+        mask[y0:y1, x0:x1] = 255
+    out = Image.fromarray(inpaint(rgb, mask))
+    if rgba:
+        out.putalpha(im.getchannel("A"))
+    return out
+
+
 def process(key, spec):
+    path, size = _process(key, spec)
+    if key in LOGO or key in SCREEN:
+        im = Image.open(path)
+        im = im.convert("RGBA") if path.endswith(".png") else im.convert("RGB")
+        if key in LOGO:
+            im = delogo(im, LOGO[key])
+        for box, at in SCREEN.get(key, []):
+            from PIL import ImageDraw
+            ImageDraw.Draw(im).rectangle(box, fill=im.getpixel(at))
+        im.save(path, **({"optimize": True} if path.endswith(".png") else {"quality": 92}))
+    return path, size
+
+
+def _process(key, spec):
     im = Image.open(spec["src"])
     if spec.get("cutout") and not spec.get("rect"):
         if spec.get("mask"):

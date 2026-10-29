@@ -34,9 +34,9 @@ HUB_PAGE = dict(
           "sheet-metal shop. Below, the three kinds compared, every model in one table of capacity, length, strokes, motor and weight, and the "
           "questions we get asked; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts from "
           "Mississauga, ON, Canada.",
-    points=["Hydraulic: swing beam 12 ga – 3/4″ × 4 – 20 ft and guillotine 1/4″ – 1-9/16″ × 8 – 26 ft; premium BS / BSY and DAS CNC, value QC12K / Q11K",
-            "Mechanical: SRGM direct-gear guillotines 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min; flywheel shears to 3/8″",
-            "Sheet metal: pneumatic 16 ga × 52″, electric 14 ga – 5/32″ × 49 – 100″, bench shears, 48″ coil slitting and cut-to-length machine"],
+    points=['<a href="hydraulic-shearing-machine.html">Hydraulic</a>: swing beam 12 ga – 3/4″ × 4 – 20 ft and guillotine 1/4″ – 1-9/16″ × 8 – 26 ft; premium <a href="hydraulic-shearing-machine.html#dn-bs">BS / BSY</a> and <a href="hydraulic-shearing-machine.html#dn-das">DAS CNC</a>, value <a href="hydraulic-shearing-machine.html#vl-qc12k">QC12K</a> / <a href="hydraulic-shearing-machine.html#vl-q11k">Q11K</a>',
+            '<a href="mechanical-guillotine-shear.html">Mechanical</a>: <a href="mechanical-guillotine-shear.html#sh-srgm-group">SRGM direct-gear guillotines</a> 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min; <a href="mechanical-guillotine-shear.html#tt-q11-mech">flywheel shears to 3/8″</a>',
+            '<a href="sheet-metal-shears.html">Sheet metal</a>: <a href="sheet-metal-shears.html#tt-ps">pneumatic 16 ga × 52″</a>, <a href="sheet-metal-shears.html#sh-electric-group">electric 14 ga – 5/32″ × 49 – 100″</a>, <a href="sheet-metal-shears.html#tt-bq01">bench shears</a>, <a href="sheet-metal-shears.html#tt-ps1220">48″ coil slitting and cut-to-length machine</a>'],
     hero="sm-srgm", minis=["dn-das-1", "tt-q11a"],
     range_cols=["Capacity (mild steel)", "Shearing length", "Strokes / min", "Motor", "Weight"],
     range_lead="Every shear model NovoTech sells, in one table: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification table on the hydraulic, mechanical or sheet metal shear page.",

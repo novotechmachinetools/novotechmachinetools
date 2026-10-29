@@ -16,6 +16,9 @@
       <ul class="hero-points">
         {% for p in page.hero_points %}<li>{{ p|safe }}</li>{% endfor %}
       </ul>
+      {% if page.article %}<p class="hero-guide"><a href="#{{ page.article_id or 'buying-guide' }}">{{ page.article_title or 'Buying guide' }}</a> — {{ page.guide_teaser or 'what to check before you buy, further down this page' }}</p>
+      {% elif page.related_article and page.related_article.href.startswith('#') %}<p class="hero-guide"><a href="{{ page.related_article.href }}">{{ page.related_article.label }}</a></p>
+      {% elif page.related_article %}<p class="hero-guide"><a href="{{ page.related_article.href }}">{{ page.related_article.label }}</a></p>{% endif %}
       <div class="cta-row{{ ' cta-stack' if (page.catalogue_pdfs or [])|length > 1 else '' }}">
         <a class="btn btn-primary" href="#reques-a-quote">Request a quote</a>
         {% if page.catalogue_pdf %}<a class="btn btn-ghost" href="{{ page.catalogue_pdf.file }}" download>{{ page.catalogue_pdf.label }} <small>({{ page.catalogue_pdf.size }})</small></a>{% endif %}
@@ -27,12 +30,13 @@
       {% elif page.hero_brand_line %}<p class="hero-brand">{{ page.hero_brand_line }}</p>{% endif %}
       <p class="hero-updated">Specifications checked against the manufacturer's current catalogue · page updated <time datetime="{{ page.date_modified }}">{{ page.updated_label }}</time></p>
     </div>
-    <div class="hero-art{{ ' is-large' if page.hero_large else '' }}" aria-hidden="true">
-      <div class="hero-band"></div>
-      <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, {{ 820 if page.hero_large else 680 }}px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">
+    {% set hl = page.hero_links or {} %}
+    <div class="hero-art{{ ' is-large' if page.hero_large else '' }}">
+      <div class="hero-band" aria-hidden="true"></div>
+      {% if hl.get(page.hero_image) %}<a class="hero-link" href="{{ hl[page.hero_image] }}">{% endif %}<img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, {{ 820 if page.hero_large else 680 }}px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">{% if hl.get(page.hero_image) %}</a>{% endif %}
       {% if page.hero_image_secondary %}
       <div class="hero-minis">
-        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% endfor %}
+        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
       </div>
       {% endif %}
     </div>
@@ -103,6 +107,41 @@
 {% endif %}
 
 <div class="wrap page-body">
+{% if page.lineup %}
+<div class="lineup" id="lineup">
+{% for lg in page.lineup %}{% set br = lg.info %}
+<section class="group group-cards lineup-line line-{{ lg.brand }}" id="{{ lg.id }}" aria-labelledby="{{ lg.id }}-title">
+  <header class="group-head has-brand">
+    <div class="line-badge line-{{ lg.brand }}">
+      {% if br.logo %}{% set lgo = img(br.logo) %}<img src="{{ lgo.src }}" width="{{ lgo.w }}" height="{{ lgo.h }}" alt="{{ br.name }}" loading="lazy" decoding="async">{% endif %}
+      {% if br.line %}<span class="line-name">{{ br.line }}</span>{% endif %}
+    </div>
+    <h2 id="{{ lg.id }}-title">{{ lg.title }}</h2>
+    {% if br.tagline %}<p class="group-tagline">{{ br.tagline }}</p>{% endif %}
+  </header>
+  <ul class="family-cards">
+    {% for it in lg.cards %}{% set f = it.f %}
+    <li class="family-card">
+      {% if f.card_image %}
+      <a class="family-card-art{{ ' is-cutout' if f.card_image.alpha else '' }}" href="{{ it.href }}" aria-hidden="true" tabindex="-1">
+        <img src="{{ f.card_image.small }}" srcset="{{ f.card_image.srcset }}" sizes="(max-width: 700px) 44vw, 260px" width="{{ f.card_image.w }}" height="{{ f.card_image.h }}" alt="" loading="lazy" decoding="async">
+      </a>
+      {% endif %}
+      <div class="family-card-body">
+        <span class="card-line card-type">{{ it.type }}</span>
+        <h3><a href="{{ it.href }}">{{ f.name }}</a></h3>
+        <p class="models">{{ f.models_label }}</p>
+        {% if f.headline %}<p class="headline">{{ f.headline }}</p>{% endif %}
+        {% if it.text %}<p class="family-card-text">{{ it.text }}</p>{% endif %}
+        <a class="arrow family-card-link" href="{{ it.href }}">Specifications and photos</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+</div>
+{% endif %}
 {% if page.compare %}
 <section class="group compare" id="compare" aria-labelledby="compare-title">
   <header class="group-head">

@@ -90,8 +90,8 @@
        "href": "electric-press-brake.html"
       },
       {
-       "label": "Horizontal press brakes",
-       "href": "horizontal-press-brake.html"
+       "label": "Compact press brakes",
+       "href": "compact-hydraulic-press-brakes.html"
       }
      ]
     },
@@ -639,7 +639,8 @@
     "file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
     "label": "Bekamak band saw catalogue",
     "size": "PDF · 7.5 MB · imperial units"
-   }
+   },
+   "origin": "Made in Turkey"
   },
   "novotech": {
    "name": "NovoTech",
@@ -652,7 +653,8 @@
     "file": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
     "label": "NovoTech value line band saw catalogue",
     "size": "PDF · 5 MB · imperial units"
-   }
+   },
+   "origin": "Built in China to North American standards"
   },
   "isitan": {
    "name": "ISITAN",
@@ -666,7 +668,8 @@
     "size": "PDF · 29 MB · imperial units"
    },
    "line": "Premium line",
-   "logo": "isitan-logo"
+   "logo": "isitan-logo",
+   "origin": "Made in Turkey"
   },
   "sahinler": {
    "name": "NovoTech",
@@ -674,7 +677,8 @@
    "country_code": "TR",
    "line": "Premium line",
    "logo": "novotech-logo",
-   "tagline": "NovoTech premium line: metal-forming machines built in Turkey to NovoTech's specification with European components — sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON, Canada"
+   "tagline": "NovoTech premium line: metal-forming machines built in Turkey to NovoTech's specification with European components — sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON, Canada",
+   "origin": "Made in Turkey"
   },
   "novotech-premium": {
    "name": "NovoTech",
@@ -682,7 +686,8 @@
    "country_code": "TR",
    "line": "Premium line",
    "logo": "novotech-logo",
-   "tagline": "NovoTech premium line: machines built in Turkey to NovoTech's specification with European components — sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON, Canada"
+   "tagline": "NovoTech premium line: machines built in Turkey to NovoTech's specification with European components — sold with a CSA-approved panel, 1-year warranty and parts and support from Mississauga, ON, Canada",
+   "origin": "Made in Turkey"
   },
   "wecotech": {
    "name": "Wecotech",
@@ -705,8 +710,10 @@
    "manufacturer": "Dener Makina",
    "country": "Turkey",
    "country_code": "TR",
-   "line": "Dener",
-   "tagline": "Made in Turkey since 1974 — Dener Makina press brakes, shears, sheet and tube fiber lasers, panel benders and CNC machine tools, with Dener Canada in Mississauga, ON, Canada; sold, installed and supported in Canada by NovoTech"
+   "line": "Premium line",
+   "tagline": "Made in Turkey since 1974 — Dener Makina press brakes, shears, sheet and tube fiber lasers, panel benders and CNC machine tools, with Dener Canada in Mississauga, ON, Canada; sold, installed and supported in Canada by NovoTech",
+   "logo": "dener-logo",
+   "origin": "Made in Turkey"
   },
   "senfeng": {
    "name": "Senfeng",
@@ -720,7 +727,8 @@
     "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
     "label": "Senfeng fiber laser brochure",
     "size": "PDF · imperial units"
-   }
+   },
+   "origin": "Made in China"
   },
   "csm": {
    "name": "CSM",
@@ -738,7 +746,8 @@
    "country_code": "TR",
    "line": "Made in Turkey",
    "logo": "tubend-logo",
-   "tagline": "Made in Bursa, Turkey — Tubend hydraulic horizontal presses, pipe benders and welding positioners, sold, installed and supported in Canada by NovoTech."
+   "tagline": "Made in Bursa, Turkey — Tubend hydraulic horizontal presses, pipe benders and welding positioners, sold, installed and supported in Canada by NovoTech.",
+   "origin": "Made in Turkey"
   },
   "cevisa": {
    "name": "Cevisa",

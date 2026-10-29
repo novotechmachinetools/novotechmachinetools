@@ -63101,25 +63101,25 @@
   }
  },
  "tb-hp10": {
-  "alt": "Tubend HP 10 NC hydraulic horizontal press with touch-screen control stand and foot pedal",
+  "alt": "NovoTech HP 10 NC hydraulic horizontal press with touch-screen control stand and foot pedal",
   "variants": [
    {
     "w": 1200,
     "h": 1266,
     "file": "img/tubend/tb-hp10-1200.webp",
-    "bytes": 105632
+    "bytes": 103236
    },
    {
     "w": 800,
     "h": 844,
     "file": "img/tubend/tb-hp10-800.webp",
-    "bytes": 67786
+    "bytes": 65570
    },
    {
     "w": 480,
     "h": 506,
     "file": "img/tubend/tb-hp10-480.webp",
-    "bytes": 35166
+    "bytes": 34008
    }
   ],
   "alpha": true,
@@ -63127,29 +63127,29 @@
    "w": 152,
    "h": 160,
    "file": "img/tubend/tb-hp10-thumb.webp",
-   "bytes": 7776
+   "bytes": 7624
   }
  },
  "tb-hp80": {
-  "alt": "Tubend HP 80 hydraulic horizontal press with induction-hardened support pins, control stand and foot pedal",
+  "alt": "NovoTech HP 80 hydraulic horizontal press with induction-hardened support pins, control stand and foot pedal",
   "variants": [
    {
     "w": 1200,
     "h": 969,
     "file": "img/tubend/tb-hp80-1200.webp",
-    "bytes": 80668
+    "bytes": 77372
    },
    {
     "w": 800,
     "h": 646,
     "file": "img/tubend/tb-hp80-800.webp",
-    "bytes": 49338
+    "bytes": 47978
    },
    {
     "w": 480,
     "h": 388,
     "file": "img/tubend/tb-hp80-480.webp",
-    "bytes": 25936
+    "bytes": 25004
    }
   ],
   "alpha": true,
@@ -63157,7 +63157,7 @@
    "w": 160,
    "h": 129,
    "file": "img/tubend/tb-hp80-thumb.webp",
-   "bytes": 6402
+   "bytes": 6194
   }
  },
  "tb-hp-backgauge": {
@@ -63167,19 +63167,19 @@
     "w": 1200,
     "h": 904,
     "file": "img/tubend/tb-hp-backgauge-1200.webp",
-    "bytes": 82492
+    "bytes": 81798
    },
    {
     "w": 800,
     "h": 602,
     "file": "img/tubend/tb-hp-backgauge-800.webp",
-    "bytes": 48950
+    "bytes": 48566
    },
    {
     "w": 480,
     "h": 361,
     "file": "img/tubend/tb-hp-backgauge-480.webp",
-    "bytes": 25760
+    "bytes": 25404
    }
   ],
   "alpha": true,
@@ -63187,7 +63187,7 @@
    "w": 160,
    "h": 120,
    "file": "img/tubend/tb-hp-backgauge-thumb.webp",
-   "bytes": 6214
+   "bytes": 6148
   },
   "cut": "birefnet"
  },
@@ -63228,19 +63228,19 @@
     "w": 1200,
     "h": 720,
     "file": "img/tubend/tb-hp-screen-recipe-1200.webp",
-    "bytes": 36734
+    "bytes": 35724
    },
    {
     "w": 800,
     "h": 480,
     "file": "img/tubend/tb-hp-screen-recipe-800.webp",
-    "bytes": 24658
+    "bytes": 24084
    },
    {
     "w": 480,
     "h": 288,
     "file": "img/tubend/tb-hp-screen-recipe-480.webp",
-    "bytes": 14182
+    "bytes": 14042
    }
   ],
   "alpha": false,
@@ -63248,7 +63248,7 @@
    "w": 160,
    "h": 96,
    "file": "img/tubend/tb-hp-screen-recipe-thumb.webp",
-   "bytes": 2762
+   "bytes": 2736
   }
  },
  "tb-hp-tool-vdie": {
@@ -63456,7 +63456,7 @@
   }
  },
  "tb-hp120": {
-  "alt": "Tubend HP 120 / HP 150 heavy-duty horizontal press with T-slot table, support columns and control stand",
+  "alt": "NovoTech HP 120 / HP 150 heavy-duty horizontal press with T-slot table, support columns and control stand",
   "variants": [
    {
     "w": 1200,
@@ -63522,19 +63522,19 @@
     "w": 1200,
     "h": 750,
     "file": "img/tubend/tb-hp120-straighten-1200.webp",
-    "bytes": 56920
+    "bytes": 56140
    },
    {
     "w": 800,
     "h": 500,
     "file": "img/tubend/tb-hp120-straighten-800.webp",
-    "bytes": 33212
+    "bytes": 32988
    },
    {
     "w": 480,
     "h": 300,
     "file": "img/tubend/tb-hp120-straighten-480.webp",
-    "bytes": 17150
+    "bytes": 16438
    }
   ],
   "alpha": false,
@@ -63542,7 +63542,7 @@
    "w": 160,
    "h": 100,
    "file": "img/tubend/tb-hp120-straighten-thumb.webp",
-   "bytes": 3290
+   "bytes": 3324
   }
  },
  "tb-tb34": {
@@ -92809,5 +92809,35 @@
    "bytes": 5546
   },
   "cut": "birefnet"
+ },
+ "dener-logo": {
+  "alt": "Dener",
+  "variants": [
+   {
+    "w": 800,
+    "h": 213,
+    "file": "img/site/dener-logo-800.webp",
+    "bytes": 14632
+   },
+   {
+    "w": 360,
+    "h": 96,
+    "file": "img/site/dener-logo-360.webp",
+    "bytes": 7176
+   },
+   {
+    "w": 180,
+    "h": 48,
+    "file": "img/site/dener-logo-180.webp",
+    "bytes": 3670
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 43,
+   "file": "img/site/dener-logo-thumb.webp",
+   "bytes": 2854
+  }
  }
 }

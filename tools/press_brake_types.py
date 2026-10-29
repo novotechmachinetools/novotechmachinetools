@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""The two press-brake pages, one per kind of drive — hydraulic-press-brake.html and electric-press-brake.html — under the
-press-brake hub.  Each page holds every family of that kind NovoTech sells, premium and value lines as sections, with the
+"""The three press-brake pages — hydraulic-press-brake.html, electric-press-brake.html and compact-hydraulic-press-brakes.html —
+under the press-brake hub.  Each page holds every family of that kind NovoTech sells, premium and value lines as sections, with the
 spec tables, photos, videos and brochures of the families (family set content/families/press-brakes.json, merged by
 tools/press_brake_hub.py — run that first):
 
     python3 tools/press_brake_hub.py && python3 tools/press_brake_types.py
 
-The pages replace the supplier pages dener-cnc-press-brakes, novotech-cnc-press-brakes and compact-hydraulic-press-brakes
-(301s in src/root/.htaccess): buyers search for the kind of machine, not the supplier, and one URL per kind is what the
+The pages replace the supplier pages dener-cnc-press-brakes and novotech-cnc-press-brakes (301s in src/root/.htaccess): buyers search for the kind of machine, not the supplier, and one URL per kind is what the
 search engines rank (reports/ساختار صفحات محصول و سئو.md)."""
 import json
 import os
@@ -20,12 +19,13 @@ SET = "press-brakes"
 
 BRAND_LINE = ("The premium line is built by Dener Makina in Kayseri, Turkey (press brakes since 1974); NovoTech's value line is built in China to our "
               "specification with Delem, Hawe and Estun components; the compact brakes by ISITAN in Bursa, Turkey. All sold, installed and supported in Canada by NovoTech.")
-ORIGIN = {"title": "Premium and value lines, one supplier", "text": "Every press brake comes with a CSA-approved panel, European-style tooling, a 1-year warranty and parts and technicians in Mississauga, ON, Canada — whichever line you choose."}
+ISITAN_PDF = {"file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf", "label": "Download the ISITAN machinery catalogue", "size": "PDF · 29 MB · imperial units"}
+ORIGIN = {"title": "Premium and value lines, one supplier", "text": "Every press brake comes with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada — whichever line you choose."}
 
 TONNAGE_FAQ = {"q": "How much tonnage and length do I need?",
                "a": "Air bending mild steel takes about 575 × t² ÷ V US tons per foot, with the thickness t and the V opening in inches: in the standard V = 8 × thickness die that is about 4 tons per foot for 16 ga, 9 for 1/8″, 13.5 for 3/16″, 18 for 1/4″ and 36 for 1/2″ (29 in a 10 × t die); stainless needs about 50 % more, aluminum about half. Add a foot of length to the longest part you bend and about 20 % headroom. A 10 ft × 1/4″ shop is a 175 – 220 ton machine; 10 ft × 3/8″ a 250 – 320 ton machine; 13 ft × 1/2″, bent in a 5 – 6″ V, a 400 – 450 ton machine. Tell us your thickest and longest bend and we size the brake and the tooling."}
 TOOLING_FAQ = {"q": "What tooling fits, and do you stock it?",
-               "a": "European-style (Promecam / Amada) segmented punches and dies with quick-release clamping are standard on every line, and a sectioned punch set with a 2-V die ships with each machine. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools, gooseneck and special profiles — and sizes it to your machine; Wila hydraulic clamping and American-style adapters are options."}
+               "a": "The premium Dener and ISITAN brakes come with European-style (Promecam / Amada) quick-release clamping, and a sectioned punch set with a 2-V die ships with every machine of both lines; the value-line brakes use their own clamping, so tell us which tooling standard your shop already has and we fit the clamps to match. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools, gooseneck and special profiles — and sizes it to your machine; Wila hydraulic clamping and American-style adapters are options."}
 SAFETY_FAQ = {"q": "What about safety and the Ontario pre-start review?",
               "a": "Side guards, an enclosed rear guard, interlocked doors and an anti-panic foot pedal with emergency stop are standard; DSP or Fiessler laser finger protection and light curtains are options we recommend for every CNC machine. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."}
 SERVICE_FAQ = {"q": "Do you deliver, install and service in Canada?",
@@ -33,34 +33,33 @@ SERVICE_FAQ = {"q": "Do you deliver, install and service in Canada?",
 
 HYDRAULIC = dict(
     title="Hydraulic Press Brakes for Sale in Canada — CNC, Hybrid & NC, 33–1,323 Tons | NovoTech",
-    meta="Hydraulic press brakes sold, installed and supported in Canada: CNC brakes 55 – 1,323 US tons, XH hybrid with servo pump, NC torsion-bar brakes from 33 tons and compact 33 – 66 ton machines — premium and value lines, CSA panels, Delem and ESA controls.",
-    h1="Hydraulic press brakes — CNC, hybrid, NC and compact, 33 to 1,323 US tons",
+    meta="Hydraulic press brakes sold, installed and supported in Canada: CNC brakes 55 – 1,323 US tons, XH hybrid with servo pump and NC torsion-bar brakes from 33 tons — premium and value lines, CSA panels, Delem and ESA controls.",
+    h1="Hydraulic press brakes — CNC, hybrid and NC, 33 to 1,323 US tons",
     intro="A hydraulic press brake bends sheet and plate between a punch and a V-die with two hydraulic cylinders, giving full force over the whole "
-          "stroke at the lowest price per ton — the machine for plate, long parts and production. NovoTech sells four kinds in Canada, all on this "
+          "stroke at the lowest price per ton — the machine for plate, long parts and production. NovoTech sells three kinds in Canada, all on this "
           "page: CNC hydraulic press brakes with linear scales, servo valves, crowning and a graphic control — the premium Dener XL in 18 models "
           "from 66 to 661 US tons and 5 to 20 ft, and NovoTech's own value line from 55 to 331 tons, heavy-duty and tandem to 1,323 tons and 26 ft; "
-          "the XH hybrid, an XL with a servo-driven pump that cuts energy by 42 – 58 %; NC torsion-bar press brakes from 33 to 441 tons for repeat "
-          "parts in one material; and the compact ISITAN brakes, 33 to 66 tons over 4 to 7 ft, for HVAC, enclosures and brackets. Every machine "
-          "comes with a CSA-approved panel, European-style tooling and a 1-year warranty, and is installed, trained and supported from Mississauga, "
-          "ON, Canada. For a brake with no hydraulic oil see the electric press brakes; for bar, pipe and busbar the horizontal press brakes.",
+          "the XH hybrid, an XL with a servo-driven pump that cuts energy by 42 – 58 %; and NC torsion-bar press brakes from 33 to 441 tons for "
+          "repeat parts in one material. Every machine comes with a CSA-approved panel and a 1-year warranty, and is "
+          "installed, trained and supported from Mississauga, ON, Canada. For a brake with no hydraulic oil see the electric press brakes; for "
+          "33 – 66 ton machines over 4 – 7 ft, the compact press brakes.",
     points=["CNC hydraulic: premium line 66 – 661 US tons × 5 – 20 ft (ESA / Delem, 6-axis gauges); value line 55 – 331 tons, heavy-duty to 1,323 tons × 26 ft",
             "XH hybrid: servo pump on the premium frame — 42 – 58 % less energy, 17 – 75 % faster approach and return, quieter",
-            "NC torsion-bar 33 – 441 tons for repeat parts; compact 33 – 66 ton × 4 – 7 ft brakes with Cybelec control for the sheet-metal shop"],
-    hero="dn-xl-1", minis=["vl-wad-1", "is-eb-1240-cnc"],
+            "NC torsion-bar 33 – 441 tons with Estun control for repeat parts in one material — the simplest hydraulic brake to run and maintain"],
+    hero="dn-xl-1", minis=["vl-wad-1", "vl-nc-1"],
     groups=[("pb-premium", "CNC hydraulic press brakes · premium line", "The Dener XL: a monoblock frame, Hawe hydraulics and an ESA 2D control, 5 to 20 ft and 66 to 661 US tons — the standard for plate and production."),
             ("pb-value", "CNC hydraulic press brakes · value line", "NovoTech's own brakes: the same architecture — servo valves, linear scales, Delem control — from 55 to 331 US tons, heavy-duty and tandem machines to 1,323 tons."),
             ("pb-hybrid", "Hybrid press brakes · premium line", "The XL with a servo-driven pump — the same frame and cylinders, less energy, more speed, less noise."),
-            ("pb-nc", "NC hydraulic press brakes — torsion bar · value line", "The simple machine: torsion-bar synchronised ram, mechanical stops and an Estun NC control for the back gauge and depth, 33 to 441 US tons."),
-            ("pb-compact", "Compact hydraulic press brakes, 33 – 66 tons", "The ISITAN Edgebender: 4.2 to 6.9 ft, 2-axis NC or 3-axis CNC with Cybelec control, made in Turkey — the press brake for a sheet-metal shop.")],
-    faq=[{"q": "CNC, hybrid, NC or compact — which hydraulic press brake do I need?",
-          "a": "A CNC brake measures the ram on linear scales and corrects it through servo valves, calculates the bend from the drawing, crowns the bed and changes material in the program — the machine for mixed work, tight angles and multi-bend parts, and the one most Canadian shops buy. The hybrid is a CNC brake with a servo pump: it costs a little more and pays it back in power, speed and noise when the brake runs all day. An NC brake positions the back gauge and the ram depth from a stored program with the cylinders kept in step by a torsion bar — rigid, cheap to maintain, right for the same parts in one material every day. The compact 33 – 66 ton brakes are for 4 – 7 ft work in sheet up to 8 ga where a 100-ton machine is more than you need."},
+            ("pb-nc", "NC hydraulic press brakes — torsion bar · value line", "The simple machine: torsion-bar synchronised ram, mechanical stops and an Estun NC control for the back gauge and depth, 33 to 441 US tons.")],
+    faq=[{"q": "CNC, hybrid or NC — which hydraulic press brake do I need?",
+          "a": "A CNC brake measures the ram on linear scales and corrects it through servo valves, calculates the bend from the drawing, crowns the bed and changes material in the program — the machine for mixed work, tight angles and multi-bend parts, and the one most Canadian shops buy. The hybrid is a CNC brake with a servo pump: it costs a little more and pays it back in power, speed and noise when the brake runs all day. An NC brake positions the back gauge and the ram depth from a stored program with the cylinders kept in step by a torsion bar — rigid, cheap to maintain, right for the same parts in one material every day. For 4 – 7 ft work in sheet up to 8 ga, where a 100-ton machine is more than you need, see the compact press brakes."},
          {"q": "Premium line or value line?",
           "a": "The premium Dener XL and XH are built in Turkey on the heaviest frame, with ESA or Delem controls, back gauges to 6 axes, sheet followers, robot cells and Dener Canada parts in Mississauga, ON, Canada — the machines for plate, 3/8″ and 1/2″ over 10 to 20 ft, two shifts, a long options list. NovoTech's value line is the same architecture — monoblock frame, Hawe servo valves, linear scales, Delem control — built in China to our specification at about two-thirds of the price: the right buy for a job shop that needs a 100 – 300 ton CNC brake or an NC brake for repeat parts, and the only line that goes to 1,323 tons and 26 ft. Both are installed and supported by the same NovoTech technicians."},
          TONNAGE_FAQ,
          {"q": "What is a hybrid press brake?",
           "a": "On a conventional hydraulic brake the motor and pump run at full speed all day, whether the ram moves or not. The XH hybrid replaces the AC motor and fixed pump with a servo motor driving an inverter pump: the pump turns only while the ram moves, at the speed the ram needs. Dener measures 42 – 58 % energy saving and 17 – 75 % faster approach and return against the XL of the same tonnage, with less heat in the oil and a quieter shop. Everything else — frame, cylinders, valves, tooling, controls — is the XL."},
          {"q": "Which control comes with the machine?",
-          "a": "The premium XL comes with the 15″ ESA S640 2D graphic control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The value-line CNC brakes come with Delem DA-53T or DA-58T and the heavy-duty machines with DA-66T; the NC brakes with an Estun E21; the compact CNC with a Cybelec Cybtouch 12. All program in inches or millimetres."},
+          "a": "The premium XL comes with the 15″ ESA S640 2D graphic control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The value-line CNC brakes come with Delem DA-53T or DA-58T and the heavy-duty machines with DA-66T; the NC brakes with an Estun E21. All program in inches or millimetres."},
          {"q": "What back gauge and axes are available?",
           "a": "Every CNC machine has the Y1 and Y2 ram axes and an X back-gauge axis on a ball screw and linear guides. Options go up to the 6-axis gauge with X1, X2, R1, R2, Z1 and Z2 — two independently positioned fingers for angled flanges — plus a CNC crowning axis; the NC brakes have X and the depth stop. The back gauge is set by the control for every bend of the program."},
          TOOLING_FAQ, SAFETY_FAQ, SERVICE_FAQ, VOLT_FAQ_GENERIC],
@@ -81,7 +80,7 @@ ELECTRIC = dict(
           "page: the premium Dener DDM servo-electric press brakes from 44 to 220 US tons and 5 to 13 ft with the ESA S875 3D control, and the "
           "DDS ball-screw brakes of 22 and 44 tons for small parts; and NovoTech's own value-line electric press brakes, ball-screw driven, from "
           "11 to 176 US tons and 1.6 to 10.5 ft with Delem control, plus 3 to 13 ton bench machines. Every machine comes with a CSA-approved "
-          "panel, European-style tooling and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For 3/8″ plate, "
+          "panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For 3/8″ plate, "
           "tonnage above 220 tons or the lowest price per ton, see the hydraulic press brakes.",
     points=["Premium line: DDM servo-electric 44 – 220 US tons × 5 – 13 ft, ESA S875 W 3D control; DDS ball-screw 22 and 44 tons",
             "Value line: electric ball-screw brakes 11 – 176 US tons × 1.6 – 10.5 ft with Delem control; 3 – 13 ton bench brakes",
@@ -106,6 +105,42 @@ ELECTRIC = dict(
     related_title="More bending and cutting machinery from NovoTech",
 )
 
+COMPACT = dict(
+    title="Compact Hydraulic Press Brakes for Sale in Canada — 16 to 66 Tons, 2 to 8 ft | NovoTech",
+    meta="Small hydraulic press brakes sold, installed and supported in Canada: ISITAN Edgebender 33, 44 and 66 US tons over 4.2 to 6.9 ft with NC or 3-axis CNC control and Promecam tooling, and value-line HBV bending brakes 16 – 35 tons for brackets and short parts in plate.",
+    h1="Compact hydraulic press brakes — 16 to 66 US tons, 2 to 8 ft",
+    intro="A compact hydraulic press brake bends sheet between a punch and a V-die like its big brothers, at the size that fits a sheet-metal "
+          "shop rather than a steel-fabrication plant: 2 to 8 ft of bending length and 16 to 66 US tons, on a footprint that goes through a "
+          "door and runs on a 600 V or 208 V supply. NovoTech sells two lines in Canada, both on this page: the ISITAN Edgebender, made in "
+          "Turkey — the 1240 CNC with independent Y1 / Y2 cylinders and a Cybelec touchscreen, and the 1230, 1540 and 2160 NC with a motorized "
+          "back gauge, 33 to 66 tons over 4.2 to 6.9 ft, Promecam tooling and a Leuze light guard; and NovoTech's own value-line HBV bending "
+          "brakes, 16 to 35 tons, with a four-way V-block (HBV24 / 48) or two cylinders (HBV-1250 / 2540) for brackets, clips and short parts in "
+          "plate to 3/16″. For HVAC fittings, enclosures, signage, brackets and job-shop work where a 100-ton machine is more than you need. "
+          "Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For "
+          "10 ft and longer, or 1/4″ plate and up, see the hydraulic press brakes; for a brake with no hydraulic oil the electric press brakes.",
+    points=["ISITAN Edgebender: 33, 44 and 66 US tons × 4.2, 5.1 and 6.9 ft; 2-axis NC or 3-axis CNC (Y1 + Y2 + X) with Cybelec control, made in Turkey",
+            "Promecam quick-release tooling, HAWE / Rexroth hydraulics, motorized ball-screw back gauge, Leuze front light guard",
+            "Value-line HBV bending brakes: 16.5 – 35 US tons, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″, four-way V-block or two cylinders"],
+    hero="is-eb-1240-cnc", minis=["is-eb-2160", "tm-hbv1250"],
+    groups=[("pb-compact-cnc", "Compact CNC press brake · premium line", "The Edgebender 1240 CNC: 44 US tons over 4.2 ft, independent Y1 / Y2 cylinders and a Cybelec Cybtouch 12 — a full CNC press brake in a small frame."),
+            ("pb-compact-nc", "Compact NC press brakes · premium line", "The Edgebender 1230, 1540 and 2160 NC: 33 to 66 US tons over 4.2 to 6.9 ft, angle and back gauge from a stored program.")],
+    faq=[{"q": "What tonnage do I need?",
+          "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening: in mild steel about 575 × t² ÷ V US tons per foot, with t and V in inches. In a V of 8 × the thickness, a 4 ft bend takes about 16 US tons in 16 ga, 39 tons in 10 ga and 47 tons in 8 ga (0.16″); a wider die lowers the force — 8 ga in a 2″ V takes about 31 tons over 4 ft — at the cost of a larger inside radius. The control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we size the machine."},
+         {"q": "NC or CNC?",
+          "a": "The 2-axis NC Edgebender sets the bending angle (Y) and the back gauge (X) from a program — enough for most job-shop bending. The 3-axis CNC Edgebender 1240 controls the two cylinders independently (Y1, Y2), so the beam can be tilted for compensation, and the Cybelec Cybtouch 12 gives graphic programming, angle correction and tool libraries like a full-size CNC press brake."},
+         {"q": "Edgebender or HBV bending brake?",
+          "a": "The Edgebender is a press brake: a programmable ram, a motorized back gauge, Promecam tooling and a light guard, for 4 – 7 ft sheet work all day. The HBV is a hydraulic bending brake for short parts in plate — brackets, clips, tabs — bent on a four-way V-block (HBV24 / 48) or between two cylinders (HBV-1250 / 2540) with a hand-wheel back gauge, at a fraction of the price. If you bend panels and enclosures, the Edgebender; if you bend 3/16″ plate brackets a few at a time, the HBV."},
+         {"q": "Which tooling fits?",
+          "a": "The Edgebenders use Promecam-style (European) quick-release clamping, the most common tooling standard in Canada, with a standard top tool and bottom die included. Segmented punches, gooseneck tools and special dies are available from NovoTech's Eurostamp press brake tooling stock. The HBV brakes come with their V-block or V-die."},
+         {"q": "Are they safe to run without a separate guarding system?",
+          "a": "Every Edgebender carries a Leuze front light guard with learning mode, side covers with safety switches, a programmable back gauge retract and a CE-compliant foot pedal with emergency stop; DSP and Fiessler laser systems are available as options. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs; NovoTech prepares the documentation for it."},
+         SERVICE_FAQ, VOLT_FAQ_GENERIC],
+    faq_title="Questions we get asked about compact press brakes",
+    related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes & folders"},
+                   {"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
+    related_title="More sheet-metal machinery from NovoTech",
+)
+
 VIDEOS = {
     "hydraulic-press-brake": {"intro_video": {"id": "pRxr7CB2pDQ", "title": "XL 13 ft × 220 ton CNC hydraulic press brake with laser angle measurement and sheet follower", "thumb": "video-pRxr7CB2pDQ", "duration": "PT1M30S"},
                               "intro_video_heading": "The CNC hydraulic press brake at work",
@@ -120,18 +155,19 @@ def build():
     fs = json.load(open(os.path.join(ROOT, "content", "families", f"{SET}.json"), encoding="utf-8"))
     fams = {fid: dict(fs["families"][fid], id=fid) for fid in fs["order"]}
     manifest = json.load(open(os.path.join(ROOT, "tools", "image_manifest.json"), encoding="utf-8"))
-    for slug, page in (("hydraulic-press-brake", HYDRAULIC), ("electric-press-brake", ELECTRIC)):
+    for slug, page in (("hydraulic-press-brake", HYDRAULIC), ("electric-press-brake", ELECTRIC), ("compact-hydraulic-press-brakes", COMPACT)):
         members = [dict(fams[fid], group=g) for _, fid, g in PBN.PAGES[slug]]
         pdfs, seen = [], set()
         for f in members:
             pd = f.get("pdf")
             if pd and pd["file"] not in seen:
                 seen.add(pd["file"]); pdfs.append(pd)
-        video = VIDEOS[slug] if VIDEOS[slug]["intro_video"]["thumb"] in manifest else {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
+        video = VIDEOS[slug] if slug in VIDEOS and VIDEOS[slug]["intro_video"]["thumb"] in manifest else {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
         write_category(slug, page, members, SET, PBN.SECTION, hub=PBN.hub(), siblings=PBN.siblings(),
                        extra={"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **video,
+                              "why_title": "Included with every press brake from NovoTech", "why_features": PBN.why_features(),
                               "nav_label": next(nav for s, _, _, _, nav, _ in PBN.SUBPAGES if s == slug),
-                              "catalogue_pdf": None, "catalogue_pdfs": pdfs})
+                              "catalogue_pdf": None, "catalogue_pdfs": pdfs or [ISITAN_PDF]})
         print(f"{slug}: {len(members)} families, {len(pdfs)} brochures")
 
 

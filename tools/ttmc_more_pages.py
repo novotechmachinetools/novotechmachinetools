@@ -447,17 +447,15 @@ EXTRA = {
                   "the ECS10/10 motorized circle shear with flanging rolls.",
         points_add=["NovoTech value line: MCS-1250E motorized circle shear Ø8 – 49″, ECS10/10 circle shear with flanging"],
     ),
-    D2.P_COMPACT: dict(
+    D2.P_COMPACT: dict(     # the compact page's own intro (tools/press_brake_types.py) already introduces the HBV brakes
         groups=[("tt-hbv", "Hydraulic bending brakes · value line", "Small hydraulic brakes for plate to 3/16″, with a four-way V-block or two cylinders — NovoTech value line, built in China.", False, None)],
-        intro_add="For short parts in plate, the NovoTech value-line HBV24 and HBV48 hydraulic bending brakes bend 5/32″ over 24″ and 48″ with a "
-                  "four-way V-block, and the two-cylinder HBV-1250 and HBV-2540 take 3/16″ over 49″ and 1/8″ over 100″.",
     ),
     D2.P_HORIZ: dict(
         groups=[("tt-horiz", "Hydraulic horizontal benders · value line", "Horizontal benders for flat bar from 11 to 44 US tons — NovoTech value line, built in China.", False, None)],
         intro_add="NovoTech's value-line HB-10T, HB-25T and HB-40T hydraulic benders, built in China, bend flat bar to 6-1/4 × 1/2″.",
         points_add=["NovoTech value line: HB-10T / 25T / 40T hydraulic horizontal benders, 11 – 44 US tons"],
         related_add=[{"href": "tube-bender.html", "label": "Tube and pipe benders · value line"}],
-        set={"hero_brand_line": "Tubend machines are made in Bursa, Turkey, by Tubend Machine, with European components; NovoTech's value-line benders are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
+        set={"hero_brand_line": "The HP horizontal presses are built in Turkey for NovoTech's premium line, with European hydraulics and controls; NovoTech's value-line benders are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_ROLL: dict(
         groups=[("tt-slip", "Slip rolls · value line", "Hydraulic and electric slip rolls for sheet to 1/2″ — NovoTech value line, built in China.", False, None)],

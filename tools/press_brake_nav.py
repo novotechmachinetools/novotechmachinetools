@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""The press-brake section: one hub (press-brake.html) over two pages, one per kind of drive — hydraulic press brakes
-(Dener XL and XH hybrid, NovoTech's value-line CNC and NC brakes, the ISITAN compact brakes) and electric press brakes
-(Dener DDM servo-electric and DDS ball-screw, NovoTech's value-line electric brakes).  The horizontal press brake keeps
-its own page (horizontal-press-brake.html) and is linked from the hub.
+"""The press-brake section: one hub (press-brake.html) over three pages — hydraulic press brakes (Dener XL and XH hybrid,
+NovoTech's value-line CNC and NC brakes), electric press brakes (Dener DDM servo-electric and DDS ball-screw, NovoTech's
+value-line electric brakes) and compact hydraulic press brakes (the ISITAN Edgebender 33 – 66 tons and, through
+content/extra_groups, the value-line HBV bending brakes).  The horizontal press brake is a different machine (bar, pipe and
+busbar) with its own page outside this section.
 
 Pages are split by what the buyer searches for (the kind of machine), not by supplier: the premium and value lines are
 sections inside each page.  Shared by tools/press_brake_hub.py (the hub and the merged family set) and
-tools/press_brake_types.py (the two pages); tools/dener_pages.py, tools/vl_sheet_pages.py and tools/isitan_pressbrake.py
+tools/press_brake_types.py (the three pages); tools/dener_pages.py, tools/vl_sheet_pages.py and tools/isitan_pressbrake.py
 only write the families now."""
 
 HUB = "press-brake"
@@ -19,32 +20,37 @@ PAGES = {
         ("value-sheet", "vl-wad-small", "pb-value"), ("value-sheet", "vl-wad-large", "pb-value"), ("value-sheet", "vl-wad-heavy", "pb-value"),
         ("dener", "dn-xh", "pb-hybrid"),
         ("value-sheet", "vl-nc-small", "pb-nc"), ("value-sheet", "vl-nc-large", "pb-nc"),
-        ("edgebender", "isitan-edgebender-cnc", "pb-compact"), ("edgebender", "isitan-edgebender-nc", "pb-compact"),
     ],
     "electric-press-brake": [
         ("dener", "dn-ddm", "pb-servo"), ("dener", "dn-dds", "pb-servo"),
         ("value-sheet", "vl-wadg", "pb-value-electric"), ("value-sheet", "vl-wadg-mini", "pb-value-electric"),
     ],
+    "compact-hydraulic-press-brakes": [
+        ("edgebender", "isitan-edgebender-cnc", "pb-compact-cnc"), ("edgebender", "isitan-edgebender-nc", "pb-compact-nc"),
+    ],
 }
 
 # (slug, title, hero image, blurb, nav label, line)
 SUBPAGES = [
-    ("hydraulic-press-brake", "Hydraulic press brakes — CNC, hybrid, NC and compact, 33 to 1,323 US tons", "dn-xl-1",
-     "The workhorse for plate and production: Dener XL CNC brakes to 661 US tons and 20 ft, NovoTech's value-line CNC brakes to 1,323 tons, the XH hybrid with a servo pump, NC torsion-bar brakes from 33 tons and the ISITAN compact 4 – 7 ft machines.",
+    ("hydraulic-press-brake", "Hydraulic press brakes — CNC, hybrid and NC, 33 to 1,323 US tons", "dn-xl-1",
+     "The workhorse for plate and production: Dener XL CNC brakes to 661 US tons and 20 ft, NovoTech's value-line CNC brakes to 1,323 tons and 26 ft, the XH hybrid with a servo pump and NC torsion-bar brakes from 33 tons.",
      "Hydraulic press brakes", ""),
     ("electric-press-brake", "Electric press brakes — servo-electric and ball-screw, 3 to 220 US tons", "dn-ddm-2",
      "No hydraulic oil: Dener DDM servo-electric brakes to 220 US tons and 13 ft, the DDS ball-screw brake from 22 tons, and NovoTech's value-line electric brakes from 3 to 176 tons — ±0.01 mm, twice the speed, about 70 % less power.",
      "Electric press brakes", ""),
+    ("compact-hydraulic-press-brakes", "Compact hydraulic press brakes — 16 to 66 US tons, 2 to 8 ft", "is-eb-1240-cnc",
+     "The press brakes for a sheet-metal shop: the ISITAN Edgebender 33 – 66 tons over 4.2 – 6.9 ft with NC or 3-axis CNC control, made in Turkey, and NovoTech's value-line HBV bending brakes from 16 tons for brackets and short parts in plate.",
+     "Compact press brakes", ""),
 ]
 
 
 def hub():
     return {"slug": HUB, "label": "All press brakes", "image": "dn-xl-1",
-            "blurb": "Hydraulic or electric? Every press brake NovoTech sells in Canada on one page, with the capacity table for the whole range and the horizontal press brakes."}
+            "blurb": "Hydraulic, electric or compact? Every press brake NovoTech sells in Canada on one page, with the three kinds compared and the capacity table for the whole range."}
 
 
 def siblings():
-    return [(s, nav, title.split(" — ")[0]) for s, title, _, _, nav, _ in SUBPAGES] + [("horizontal-press-brake", "Horizontal press brakes", "Horizontal press brakes")]
+    return [(s, nav, title.split(" — ")[0]) for s, title, _, _, nav, _ in SUBPAGES]
 
 
 def family_sources():
@@ -62,3 +68,26 @@ def group_of(fid):
             if f == fid:
                 return g
     raise KeyError(fid)
+
+
+def why_features():
+    """The 'Included with every machine' block of the press-brake pages: the site's standard features with two offers that apply
+    to press brakes only (Oct 2026) — installation and training in the Greater Toronto Area at no charge, and free delivery to
+    the customer's door in the GTA for press brakes ordered from the factory (back-ordered, not in-stock machines)."""
+    import json
+    import os
+    site = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "site.json"), encoding="utf-8"))
+    out = []
+    for f in site["standard_features"]:
+        f = dict(f)
+        if f["title"] == "Installation and training":
+            f["title"] = "Installation and training — free in the GTA"
+            f["text"] = ("On every press brake delivered in the Greater Toronto Area, NovoTech's technicians commission the machine and train your "
+                         "operators at no charge. Elsewhere in Canada on request, at an additional charge.")
+        elif f["title"].startswith("Shipping across Canada"):
+            f["title"] = "Free delivery in the GTA on factory orders"
+            f["text"] = ("A press brake ordered from the factory is delivered to your door anywhere in the Greater Toronto Area at no charge. "
+                         "In-stock machines, and deliveries elsewhere in Canada and the United States, ship at competitive freight rates arranged by NovoTech.")
+        out.append(f)
+    return out
+

@@ -146,13 +146,13 @@ WP_NOTE = ("Nominal load is a centred part on the horizontal table; with the tab
 
 FAMILIES = [
     # -------------------------------------------------------------------------------------------- horizontal presses
-    dict(id="tubend-hp", group="tubend-hp", page=P_HP, brand=BRAND,
+    dict(id="tubend-hp", group="tubend-hp", page=P_HP, brand="novotech-premium",     # sold as NovoTech's premium line, made in Turkey (Oct 2026)
          name="HP 10 – HP 100 NC hydraulic horizontal presses, 11 – 110 US ton",
          short="HP 10 – HP 100",
          models_label="HP 10 · HP 20 · HP 40 · HP 60 · HP 80 · HP 100 · 6 models",
          summary="A horizontal press brake lays the press on its side: a hydraulic ram pushes the tool across a heavy steel table "
                  "at bench height, so flat bar, angle, pipe, solid bar and busbar are bent, punched, sheared or straightened "
-                 "with the part lying flat in front of the operator. Tubend's HP series runs from the 11-ton HP 10 for 5-7/8″ × 1/4″ "
+                 "with the part lying flat in front of the operator. NovoTech's premium-line HP series runs from the 11-ton HP 10 for 5-7/8″ × 1/4″ "
                  "flat bar to the 110-ton HP 100 for 11-13/16″ × 15/16″, every model with an NC touch-screen on a control stand — "
                  "manual, automatic and recipe modes — a foot pedal, induction-hardened support pins and an ergonomic tool table "
                  "for quick tool changes.",
@@ -171,7 +171,7 @@ FAMILIES = [
          videos=vids(("pxJvddrvYeg", "HP 40 NC horizontal press — instruction"), ("D9CKQFKn78E", "HP multi-function horizontal press brake with NC control"),
                      ("njyMkBwLGQk", "HP horizontal press — straightening tool"), ("RgLqznLX8QI", "HP 10 horizontal press brake, 11 US ton")),
          specs=spec([T_HP], HP_LABELS, HP_GK, HP_NOTE)),
-    dict(id="tubend-hp-heavy", group="tubend-hp", page=P_HP, brand=BRAND,
+    dict(id="tubend-hp-heavy", group="tubend-hp", page=P_HP, brand="novotech-premium",
          name="HP 120 · HP 150 heavy-duty horizontal presses, 132 – 165 US ton",
          short="HP 120 · HP 150",
          models_label="HP 120 · HP 150 · 2 models",
