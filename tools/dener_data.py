@@ -283,7 +283,7 @@ PB_FAMILIES = [
                    "8.7″ (220 mm) stroke, 16.1″ (410 mm) daylight, 15.7″ (400 mm) throat for boxes and deep flanges",
                    "Ball-screw X back gauge with 25.6″ (650 mm) travel, fingers with manual R and Z adjustment and micro vernier"] + PB_STD_XL,
          optional=PB_OPT_XL,
-         images=["dn-xl1560-studio", "dn-xl1560-front", "dn-xl1560-left", "dn-xl1560-right", "dn-xl1560-control", "dn-xl1560-tooling", "dn-xl1560-tooling-2",
+         images=["dn-xl1560-studio", "dn-xl1560-control", "dn-xl1560-tooling", "dn-xl1560-tooling-2",
                  "dn-xl1560-backgauge", "dn-xl1560-backgauge-2", "dn-det-eurostamp-tools", "dn-det-tool-1281", "dn-det-tool-2067", "dn-det-front-supports"],
          videos=vids(("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake — the same 5 ft frame class"), ("5FWxGB6hoJI", "XL series hydraulic CNC press brakes"),
                      ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),

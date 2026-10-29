@@ -38,7 +38,7 @@ SUBPAGES = [
     ("electric-press-brake", "Electric press brakes — servo-electric and ball-screw, 3 to 220 US tons", "dn-ddm-2",
      "No hydraulic oil: Dener DDM servo-electric brakes to 220 US tons and 13 ft, the DDS ball-screw brake from 22 tons, and NovoTech's value-line electric brakes from 3 to 176 tons — ±0.01 mm, twice the speed, about 70 % less power.",
      "Electric press brakes", ""),
-    ("compact-hydraulic-press-brakes", "Compact hydraulic press brakes — 16 to 66 US tons, 2 to 8 ft", "dn-xl1560-front",
+    ("compact-hydraulic-press-brakes", "Compact hydraulic press brakes — 16 to 66 US tons, 2 to 8 ft", "dn-xl1560-studio",
      "The press brakes for a sheet-metal shop: the Dener XL 1560 compact CNC brake, 66 US tons × 5 ft, NovoTech's value-line WAD-50T CNC and WC67K-30T NC compacts over 4.3 – 5.2 ft, and the HBV bending brakes from 16 tons for brackets and short parts in plate.",
      "Compact press brakes", ""),
 ]
