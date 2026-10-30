@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The press-brake section: one hub (press-brake.html) over three pages — hydraulic press brakes (Dener XL and XH hybrid,
+"""The press-brake section: one hub (press-brake.html) over three pages — hydraulic press brakes (Dener XL, mild hybrid XL and XH full hybrid,
 NovoTech's value-line CNC and NC brakes), electric press brakes (Dener DDM servo-electric and DDS ball-screw, NovoTech's
 value-line electric brakes) and compact hydraulic press brakes (the Dener XL 1560, the value-line WAD-50T and WC67K-30T
 compacts and, through content/extra_groups, the value-line HBV bending brakes — the ISITAN Edgebenders left the site Oct 28 2026).  The horizontal press brake is a different machine (bar, pipe and
@@ -33,7 +33,7 @@ PAGES = {
 # (slug, title, hero image, blurb, nav label, line)
 SUBPAGES = [
     ("hydraulic-press-brake", "Hydraulic press brakes — CNC, hybrid and NC, 33 to 1,323 US tons", "dn-xl-1",
-     "The workhorse for plate and production: Dener XL CNC brakes to 661 US tons and 20 ft, NovoTech's value-line CNC brakes to 1,323 tons and 26 ft, the XH hybrid with a servo pump and NC torsion-bar brakes from 33 tons.",
+     "The workhorse for plate and production: Dener XL CNC brakes to 661 US tons and 20 ft, NovoTech's value-line CNC brakes to 1,323 tons and 26 ft, the mild hybrid XL and the XH full hybrid, and NC torsion-bar brakes from 33 tons.",
      "Hydraulic press brakes", ""),
     ("electric-press-brake", "Electric press brakes — servo-electric and ball-screw, 3 to 220 US tons", "dn-ddm-2",
      "No hydraulic oil: Dener DDM servo-electric brakes to 220 US tons and 13 ft, the DDS ball-screw brake from 22 tons, and NovoTech's value-line electric brakes from 3 to 176 tons — ±0.01 mm, twice the speed, about 70 % less power.",

@@ -63,7 +63,7 @@
     "CSA-approved electrical panel, 600 V 3-phase standard"
    ],
    "optional": [
-    "Mild hybrid drive: a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft; the XL with it is the XH)",
+    "Mild hybrid drive (Dener SVP package): a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft)",
     "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control",
     "CE-certified light barrier (DSP laser finger protection)",
     "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)",
@@ -177,6 +177,36 @@
      "title": "CNC press brake instruction with the ESA control",
      "duration": "PT38M59S",
      "thumb": "video-VGd39pN2zBM"
+    },
+    {
+     "id": "vIWys546tWY",
+     "title": "DENER XL 10 ft × 220 ton mild hybrid CNC press brake",
+     "duration": "PT0M35S",
+     "thumb": "video-vIWys546tWY"
+    },
+    {
+     "id": "nKbuxZGSjdQ",
+     "title": "DENER XL 12 ft × 175 ton mild hybrid press brake",
+     "duration": "PT0M51S",
+     "thumb": "video-nKbuxZGSjdQ"
+    },
+    {
+     "id": "-tAymdJwXjU",
+     "title": "DENER XL 13 ft × 220 ton mild hybrid press brake",
+     "duration": "PT0M50S",
+     "thumb": "video--tAymdJwXjU"
+    },
+    {
+     "id": "Msy6YHM5dIU",
+     "title": "DENER XL mild hybrid press brake",
+     "duration": "PT1M1S",
+     "thumb": "video-Msy6YHM5dIU"
+    },
+    {
+     "id": "Ymz5qW36zTs",
+     "title": "DENER tandem 60 ft × 1,600 ton mild hybrid press brake with sheet following support",
+     "duration": "PT0M58S",
+     "thumb": "video-Ymz5qW36zTs"
     }
    ],
    "specs": {
@@ -582,6 +612,151 @@
         "key": false
        }
       ]
+     },
+     {
+      "title": "Mild hybrid option on the XL · Dener SVP packages",
+      "sub": "servo motor and servo pump in the XL hydraulic circuit · 66 – 441 US tons",
+      "models": [
+       "SVP 60",
+       "SVP 80 XF",
+       "SVP 100",
+       "SVP 125 XF",
+       "SVP 135",
+       "SVP 175",
+       "SVP 220",
+       "SVP 320",
+       "SVP 400"
+      ],
+      "rows": [
+       {
+        "label": "Bending force",
+        "sub": "",
+        "cells": [
+         "66 US tons (60 t)",
+         "88 US tons (80 t)",
+         "110 US tons (100 t)",
+         "138 US tons (125 t)",
+         "149 US tons (135 t)",
+         "193 US tons (175 t)",
+         "243 US tons (220 t)",
+         "353 US tons (320 t)",
+         "441 US tons (400 t)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending length",
+        "sub": "on request to 13 ft",
+        "cells": [
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
+         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request"
+        ],
+        "key": true
+       },
+       {
+        "label": "Approach speed",
+        "sub": "",
+        "cells": [
+         "4.72 in/s (120 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "6.69 in/s (170 mm/s)",
+         "6.69 in/s (170 mm/s)",
+         "6.89 in/s (175 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "3.94 in/s (100 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending speed",
+        "sub": "",
+        "cells": [
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "6.30 in/s (160 mm/s)",
+         "4.92 in/s (125 mm/s)",
+         "7.87 in/s (200 mm/s)",
+         "7.48 in/s (190 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "6.30 in/s (160 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "3.94 in/s (100 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Servo motor",
+        "sub": "",
+        "cells": [
+         "6.7 HP (5 kW)",
+         "11.7 HP (8.7 kW)",
+         "11.7 HP (8.7 kW)",
+         "14.5 HP (10.8 kW)",
+         "14.5 HP (10.8 kW)",
+         "17.7 HP (13.2 kW)",
+         "22.4 HP (16.7 kW)",
+         "28.7 HP (21.4 kW)",
+         "36.1 HP (26.9 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Energy saving vs. the standard XL",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "about 45 %",
+         "—",
+         "about 42 %",
+         "about 45 %",
+         "about 51 %",
+         "about 55 %",
+         "about 58 %"
+        ],
+        "key": false
+       },
+       {
+        "label": "Frame, stroke, daylight",
+        "sub": "",
+        "cells": [
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage",
+         "as the XL press brake of the same tonnage"
+        ],
+        "key": false
+       }
+      ]
      }
     ],
     "models": [
@@ -774,7 +949,7 @@
      "weight"
     ],
     "caps": {},
-    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric bending length × metric tonnage. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports."
+    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric bending length × metric tonnage. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports. Mild hybrid option: the SVP package replaces the XL's AC motor and fixed pump with a servo motor and servo pump; packages to 441 US tons (400 t) fit XL machines to 13 ft (4 m) bending length, longer machines on request. Frame, stroke, daylight, throat and dimensions stay those of the XL of the same tonnage and length."
    },
    "pdf": {
     "file": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
@@ -816,7 +991,7 @@
     "CSA-approved electrical panel, 600 V 3-phase standard"
    ],
    "optional": [
-    "Mild hybrid drive: a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft; the XL with it is the XH)",
+    "Mild hybrid drive (Dener SVP package): a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft)",
     "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control",
     "CE-certified light barrier (DSP laser finger protection)",
     "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)",
@@ -1035,19 +1210,17 @@
     ]
    },
    "brand": "dener",
-   "name": "XH mild hybrid press brakes, 66 – 441 US tons — servo motor and servo pump on the XL frame",
-   "short": "XH mild hybrid press brakes",
-   "models_label": "SVP 60 – SVP 400 · 9 tonnage packages",
-   "summary": "The mild hybrid press brake is the XL with its AC motor and fixed-displacement pump replaced by a servo motor and servo pump: the pump turns only when the ram moves, so the machine draws 42 – 58 % less energy, runs quieter, approaches and returns 17 – 75 % faster and starts and stops with the pedal. Same frame, cylinders, stroke, daylight and equipment as the XL of the same tonnage — the hybrid is an option on any XL to 13 ft, longer on request.",
+   "name": "XH full hybrid press brakes — Dener's hybrid series",
+   "short": "XH full hybrid press brakes",
+   "models_label": "XH full hybrid series",
+   "summary": "The XH is Dener's full hybrid press brake: a series designed around its servo-driven hydraulics, built for low energy use, quiet operation and low running costs, with its own frame and covers (the XH design won a Bronze International Design Award). It is a different machine from the XL with the mild hybrid option, where only the XL's main motor and pump are replaced by a servo motor and servo pump — that option is listed with the XL. The XH takes the same controls and options as the XL; tonnage, length and speeds are confirmed per machine, so ask us for the XH data in your size.",
    "features": [
-    "Servo motor, drivers and inverter pump in the XL hydraulic circuit; single oil tank",
-    "Start/stop: the pump runs only while the ram moves",
-    "42 – 58 % energy saving and 17 – 75 % faster approach and return than the XL of the same tonnage",
-    "Less noise, less oil heating, lower maintenance",
+    "Full hybrid: the servo-driven hydraulic system is designed into the machine, not added to an XL",
+    "The pumps turn only while the ram moves — low energy use, quiet operation and cool oil",
+    "Its own frame and covers — the XH design won a Bronze International Design Award",
     "X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes",
     "15″ ESA S840 2D graphic touch-screen CNC control",
     "European-style segmented punch and die with European-style holders",
-    "Hawe hydraulic system; constant pressure",
     "Anti-panic foot pedal with emergency stop",
     "Front support arms on linear rail",
     "Side and rear safety guards",
@@ -1068,292 +1241,10 @@
    "images": [
     "dn-xh-1",
     "dn-xh-2",
-    "dn-xh-video",
     "dn-xh-3"
    ],
-   "videos": [
-    {
-     "id": "vIWys546tWY",
-     "title": "DENER XL 10 ft × 220 ton hybrid CNC press brake",
-     "duration": "PT0M35S",
-     "thumb": "video-vIWys546tWY"
-    },
-    {
-     "id": "nKbuxZGSjdQ",
-     "title": "DENER XL 12 ft × 175 ton hybrid press brake",
-     "duration": "PT0M51S",
-     "thumb": "video-nKbuxZGSjdQ"
-    },
-    {
-     "id": "-tAymdJwXjU",
-     "title": "DENER XL 13 ft × 220 ton hybrid press brake",
-     "duration": "PT0M50S",
-     "thumb": "video--tAymdJwXjU"
-    },
-    {
-     "id": "Msy6YHM5dIU",
-     "title": "DENER hybrid press brake",
-     "duration": "PT1M1S",
-     "thumb": "video-Msy6YHM5dIU"
-    },
-    {
-     "id": "Ymz5qW36zTs",
-     "title": "DENER tandem 60 ft × 1,600 ton hybrid press brake with sheet following support",
-     "duration": "PT0M58S",
-     "thumb": "video-Ymz5qW36zTs"
-    }
-   ],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "XH hybrid press brakes · SVP series",
-      "sub": "9 tonnage packages · 66 – 441 US tons · servo-driven pump on the XL frame",
-      "models": [
-       "SVP 60",
-       "SVP 80 XF",
-       "SVP 100",
-       "SVP 125 XF",
-       "SVP 135",
-       "SVP 175",
-       "SVP 220",
-       "SVP 320",
-       "SVP 400"
-      ],
-      "rows": [
-       {
-        "label": "Bending force",
-        "sub": "",
-        "cells": [
-         "66 US tons (60 t)",
-         "88 US tons (80 t)",
-         "110 US tons (100 t)",
-         "138 US tons (125 t)",
-         "149 US tons (135 t)",
-         "193 US tons (175 t)",
-         "243 US tons (220 t)",
-         "353 US tons (320 t)",
-         "441 US tons (400 t)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending length",
-        "sub": "on request to 13 ft",
-        "cells": [
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-         "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request"
-        ],
-        "key": true
-       },
-       {
-        "label": "Approach speed",
-        "sub": "",
-        "cells": [
-         "4.72 in/s (120 mm/s)",
-         "5.12 in/s (130 mm/s)",
-         "7.87 in/s (200 mm/s)",
-         "4.72 in/s (120 mm/s)",
-         "6.69 in/s (170 mm/s)",
-         "6.69 in/s (170 mm/s)",
-         "6.89 in/s (175 mm/s)",
-         "5.12 in/s (130 mm/s)",
-         "3.94 in/s (100 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Bending speed",
-        "sub": "",
-        "cells": [
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Return speed",
-        "sub": "",
-        "cells": [
-         "6.30 in/s (160 mm/s)",
-         "4.92 in/s (125 mm/s)",
-         "7.87 in/s (200 mm/s)",
-         "7.48 in/s (190 mm/s)",
-         "6.30 in/s (160 mm/s)",
-         "5.91 in/s (150 mm/s)",
-         "6.30 in/s (160 mm/s)",
-         "5.91 in/s (150 mm/s)",
-         "3.94 in/s (100 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Servo motor",
-        "sub": "",
-        "cells": [
-         "6.7 HP (5 kW)",
-         "11.7 HP (8.7 kW)",
-         "11.7 HP (8.7 kW)",
-         "14.5 HP (10.8 kW)",
-         "14.5 HP (10.8 kW)",
-         "17.7 HP (13.2 kW)",
-         "22.4 HP (16.7 kW)",
-         "28.7 HP (21.4 kW)",
-         "36.1 HP (26.9 kW)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Energy saving vs. the XL hydraulic",
-        "sub": "",
-        "cells": [
-         "—",
-         "—",
-         "about 45 %",
-         "—",
-         "about 42 %",
-         "about 45 %",
-         "about 51 %",
-         "about 55 %",
-         "about 58 %"
-        ],
-        "key": false
-       },
-       {
-        "label": "Frame, stroke, daylight",
-        "sub": "",
-        "cells": [
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage",
-         "as the XL press brake of the same tonnage"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "SVP 60",
-      "glance": [
-       "66 US tons (60 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "4.72 in/s (120 mm/s)",
-       "6.7 HP (5 kW)",
-       "—"
-      ]
-     },
-     {
-      "name": "SVP 80 XF",
-      "glance": [
-       "88 US tons (80 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "5.12 in/s (130 mm/s)",
-       "11.7 HP (8.7 kW)",
-       "—"
-      ]
-     },
-     {
-      "name": "SVP 100",
-      "glance": [
-       "110 US tons (100 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "7.87 in/s (200 mm/s)",
-       "11.7 HP (8.7 kW)",
-       "about 45 %"
-      ]
-     },
-     {
-      "name": "SVP 125 XF",
-      "glance": [
-       "138 US tons (125 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "4.72 in/s (120 mm/s)",
-       "14.5 HP (10.8 kW)",
-       "—"
-      ]
-     },
-     {
-      "name": "SVP 135",
-      "glance": [
-       "149 US tons (135 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "6.69 in/s (170 mm/s)",
-       "14.5 HP (10.8 kW)",
-       "about 42 %"
-      ]
-     },
-     {
-      "name": "SVP 175",
-      "glance": [
-       "193 US tons (175 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "6.69 in/s (170 mm/s)",
-       "17.7 HP (13.2 kW)",
-       "about 45 %"
-      ]
-     },
-     {
-      "name": "SVP 220",
-      "glance": [
-       "243 US tons (220 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "6.89 in/s (175 mm/s)",
-       "22.4 HP (16.7 kW)",
-       "about 51 %"
-      ]
-     },
-     {
-      "name": "SVP 320",
-      "glance": [
-       "353 US tons (320 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "5.12 in/s (130 mm/s)",
-       "28.7 HP (21.4 kW)",
-       "about 55 %"
-      ]
-     },
-     {
-      "name": "SVP 400",
-      "glance": [
-       "441 US tons (400 t)",
-       "up to 13 ft (4,050 mm) · 20 ft (6,050 mm) on request",
-       "3.94 in/s (100 mm/s)",
-       "36.1 HP (26.9 kW)",
-       "about 58 %"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "bending_force",
-     "bending_length",
-     "approach_speed",
-     "servo_motor",
-     "energy_saving"
-    ],
-    "caps": {},
-    "note": "The hybrid package replaces the XL's AC motor and fixed pump with a servo motor and inverter pump; tonnage packages up to 441 US tons (400 t) are available to 13 ft (4 m) bending length, longer machines on request. Frame, stroke, daylight, throat and dimensions are those of the XL press brake of the same tonnage and length."
-   },
+   "videos": [],
+   "specs": null,
    "pdf": {
     "file": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
     "label": "Download the hydraulic & hybrid press brake brochure",

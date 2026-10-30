@@ -50070,7 +50070,7 @@
   }
  },
  "dn-xh-1": {
-  "alt": "Dener XH hybrid press brake — servo-driven pump on the XL frame",
+  "alt": "Dener XH full hybrid press brake — front view",
   "variants": [
    {
     "w": 1200,
@@ -50100,7 +50100,7 @@
   }
  },
  "dn-xh-2": {
-  "alt": "Dener XH hybrid press brake — three-quarter view",
+  "alt": "Dener XH full hybrid press brake — three-quarter view",
   "variants": [
    {
     "w": 1200,
@@ -50130,7 +50130,7 @@
   }
  },
  "dn-xh-3": {
-  "alt": "Dener XH hybrid — ESA 3D CNC control",
+  "alt": "Dener XH full hybrid — the CNC control on its swing arm",
   "variants": [
    {
     "w": 1200,
@@ -94750,29 +94750,28 @@
   "cut": "birefnet"
  },
  "ctl-estun-e315ps": {
-  "alt": "Estun E315PS: 15.6″ capacitive touch NC control with 6+1 axes, angle programming and tool / material databases",
+  "alt": "Estun E315PS: 15.6″ capacitive touch NC control on its pendant arm — angle programming, tool and material databases, 6+1 axes",
   "variants": [
    {
     "w": 800,
-    "h": 672,
+    "h": 1360,
     "file": "img/controls/ctl-estun-e315ps-800.webp",
-    "bytes": 34502
+    "bytes": 49492
    },
    {
     "w": 480,
-    "h": 403,
+    "h": 816,
     "file": "img/controls/ctl-estun-e315ps-480.webp",
-    "bytes": 18926
+    "bytes": 27874
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 134,
+   "w": 94,
+   "h": 160,
    "file": "img/controls/ctl-estun-e315ps-thumb.webp",
-   "bytes": 4638
-  },
-  "cut": "birefnet"
+   "bytes": 3718
+  }
  },
  "pdf-novotech-pipe-benders-welding-positioners-2026": {
   "alt": "Cover of the NovoTech Pipe Benders & Welding Positioners 2026 PDF",

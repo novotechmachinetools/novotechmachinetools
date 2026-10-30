@@ -22,8 +22,8 @@
 <form class="calc-form" autocomplete="off" data-calc>
   <div class="calc-row">
     <label>Units <select name="units"><option value="mm">Metric (mm)</option><option value="in">Imperial (inches, feet)</option></select></label>
-    <label>Material <select name="material"><option value="47">Mild steel (47 kg/mm²)</option><option value="70">Stainless steel (70 kg/mm²)</option><option value="25">Aluminum (25 kg/mm²)</option><option value="custom">Other — tensile strength below</option></select></label>
-    <label class="calc-custom" hidden>Tensile strength (kg/mm²) <input type="number" name="r" min="10" max="150" step="1" value="47"></label>
+    <label>Material <select name="material"><option value="47" data-psi="67,000">Mild steel (47 kg/mm²)</option><option value="70" data-psi="100,000">Stainless steel (70 kg/mm²)</option><option value="25" data-psi="36,000">Aluminum (25 kg/mm²)</option><option value="custom">Other — enter the tensile strength</option></select></label>
+    <label class="calc-custom">Tensile strength <span class="calc-r-unit">(kg/mm²)</span> <input type="number" name="r" min="10" max="150" step="1" value="47"></label>
   </div>
   <div class="calc-row">
     <label>Sheet thickness <span class="calc-unit" data-unit="mm">(mm)</span> <input type="number" name="t" min="0.1" step="0.1" value="6" required></label>
@@ -95,7 +95,9 @@
 <p>Two cylinders, one at each end of the ram, are kept level by proportional valves and linear scales on the side frames (Y1 and Y2 synchronisation). Hydraulic press brakes are built in every size, from about 30 to more than 1,000 tons and up to 26 ft or longer in tandem. They are the standard choice for plate and long beds. The pump runs whenever the machine is on, so the oil warms up and the motor uses power even when the ram is still.</p>
 <h4>Mild hybrid — servo motor and servo pump</h4>
 <p>A mild hybrid is a hydraulic press brake whose pump is driven by a servo motor instead of a constant-speed AC motor. The frame, the cylinders, the valves and the single oil tank stay the same; the conventional motor and pump are replaced by a servo motor and a servo pump. The pump now turns only when the ram has to move. While the machine waits, and while the operator loads a blank or takes the part out — most of a shift — it stops instead of turning for nothing. That saves electricity, keeps the oil cooler, makes the machine quieter and wears the pump, the seals and the valves less, so the oil and the hydraulic parts last longer; the servo pump also speeds up the approach and the return. Dener's figures for the XL with this drive (100 to 400 t, beds to 13 ft): 42 – 58 % less energy, and an approach of 7.9 in/s (200 mm/s) instead of 6.3 in/s (160 mm/s) on the 100 t. If your brake waits between bends for loading and handling, which most do, the mild hybrid repays its price in power and oil.</p>
-<p>The mild hybrid drive is <strong>standard on every NovoTech WAD</strong> CNC press brake and an <strong>option on the Dener XL</strong> — the XL with it is the XH.</p>
+<p>The mild hybrid drive is <strong>standard on every NovoTech WAD</strong> CNC press brake and an <strong>option on the Dener XL</strong> (Dener calls the packages SVP).</p>
+<h4>Full hybrid</h4>
+<p>Dener's <strong>XH series</strong> is a full hybrid: a press brake designed around its servo-driven hydraulics, with its own frame and covers, rather than an XL with a different motor and pump. It takes the same controls and options as the XL; we confirm its tonnage, length and speeds for each machine.</p>
 <h4>Electric</h4>
 <p>Servo motors drive the ram through ball screws or a belt-and-pulley system, with no hydraulic oil at all. Electric press brakes are the fastest and most repeatable, the quietest and the cheapest to run, but they are built in smaller tonnages, typically up to about 220 US tons. They are the machine for sheet-metal parts, enclosures and high-mix work in thin and medium gauges.</p>
 <h4>NC torsion-bar</h4>

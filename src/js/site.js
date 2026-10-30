@@ -508,21 +508,43 @@
     while (num % 2 === 0) { num /= 2; den /= 2; }
     return (whole ? whole + '-' : '') + num + '/' + den + '″';
   }
-  var units = form.elements.units, material = form.elements.material, custom = box.querySelector('.calc-custom');
+  var units = form.elements.units, material = form.elements.material, rIn = form.elements.r, rUnit = box.querySelector('.calc-r-unit');
+  var PSI = 1422.334;   // psi per kg/mm²
+  var NAMES = { '47': 'Mild steel', '70': 'Stainless steel', '25': 'Aluminum' };
+  function roundPsi(kg) { return Math.round(kg * PSI / 1000) * 1000; }
+  // the material list and the tensile strength field follow the units: kg/mm² in metric, psi in imperial
+  function setMaterialUnits(imperial, oldImperial) {
+    Array.prototype.forEach.call(material.options, function (o) {
+      if (!NAMES[o.value]) return;
+      o.textContent = NAMES[o.value] + (imperial ? ' (' + o.getAttribute('data-psi') + ' psi)' : ' (' + o.value + ' kg/mm²)');
+    });
+    if (rUnit) rUnit.textContent = imperial ? '(psi)' : '(kg/mm²)';
+    var cur = parseFloat(rIn.value);
+    if (imperial) { rIn.min = '14000'; rIn.max = '213000'; rIn.step = '1000'; }
+    else { rIn.min = '10'; rIn.max = '150'; rIn.step = '1'; }
+    if (material.value !== 'custom') rIn.value = imperial ? roundPsi(parseFloat(material.value)) : material.value;
+    else if (cur > 0 && imperial !== oldImperial) rIn.value = imperial ? roundPsi(cur) : Math.round(cur / PSI);
+  }
+  var wasImperial = false;
   function setUnits() {
     var imperial = units.value === 'in';
+    setMaterialUnits(imperial, wasImperial); wasImperial = imperial;
     box.querySelectorAll('.calc-unit').forEach(function (el, i) { el.textContent = imperial ? (i === 1 ? '(ft)' : '(in)') : '(mm)'; });
     var t = form.elements.t, l = form.elements.l, v = form.elements.v;
     if (imperial) { t.step = '0.001'; t.value = '0.25'; l.step = '0.5'; l.value = '10'; v.step = '0.125'; v.value = ''; }
     else { t.step = '0.1'; t.value = '6'; l.step = '1'; l.value = '3000'; v.step = '0.1'; v.value = ''; }
   }
   units.addEventListener('change', setUnits);
-  material.addEventListener('change', function () { custom.hidden = material.value !== 'custom'; });
+  material.addEventListener('change', function () {        // a listed material fills in its strength; "Other" leaves it to the user
+    if (material.value !== 'custom') rIn.value = units.value === 'in' ? roundPsi(parseFloat(material.value)) : material.value;
+    else rIn.focus();
+  });
+  rIn.addEventListener('input', function () { material.value = 'custom'; });
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var imperial = units.value === 'in';
     var s = parseFloat(form.elements.t.value), L = parseFloat(form.elements.l.value), vIn = parseFloat(form.elements.v.value);
-    var R = material.value === 'custom' ? parseFloat(form.elements.r.value) : parseFloat(material.value);
+    var R = material.value === 'custom' ? parseFloat(rIn.value) / (imperial ? PSI : 1) : parseFloat(material.value);   // kg/mm² in the formula
     var reserve = 1 + (parseFloat(form.elements.reserve.value) || 0) / 100;
     if (!(s > 0) || !(L > 0) || !(R > 0)) return;
     if (imperial) { s *= IN; L *= FT; if (vIn > 0) vIn *= IN; }
@@ -535,7 +557,8 @@
     set('per', fmt(f, 1) + ' t/m · ' + fmt(ft, 1) + ' US tons per foot');
     set('total', fmt(total, 0) + ' t (' + fmt(total * US_T, 0) + ' US tons) over ' + (imperial ? fmt(L / FT, 1) + ' ft' : fmt(L, 0) + ' mm'));
     set('machine', '<strong>' + fmt(machine, 0) + ' t</strong> · ' + fmt(machine * US_T, 0) + ' US tons <small>with ' + Math.round((reserve - 1) * 100) + ' % in reserve</small>');
-    set('note', 'F = S² × 2 × R ÷ (1.4 × V): ' + fmt(s, 2) + '² × 2 × ' + fmt(R, 0) + ' ÷ (1.4 × ' + fmt(v, 1) + ') = ' + fmt(f, 1) + ' t/m, × ' + fmt(L / 1000, 2) + ' m = ' + fmt(total, 0) + ' t. ' +
+    set('note', 'F = S² × 2 × R ÷ (1.4 × V): ' + fmt(s, 2) + '² × 2 × ' + fmt(R, 0) + ' ÷ (1.4 × ' + fmt(v, 1) + ') = ' + fmt(f, 1) + ' t/m, × ' + fmt(L / 1000, 2) + ' m = ' + fmt(total, 0) + ' t' +
+      (imperial ? ' (R = ' + fmt(R, 0) + ' kg/mm² = ' + fmt(roundPsi(R), 0) + ' psi; S, V in mm)' : '') + '. ' +
       (R >= 60 ? 'Stainless and high-strength steel also spring back more — allow a deeper bend or a narrower punch angle.' : R <= 30 ? 'Soft aluminum needs little force but a wider V and a larger radius to avoid cracking.' : 'For a bend longer than the machine’s bed, or plate above 1/2″, ask us about the die and the ram deflection.'));
     out.hidden = false;
   });

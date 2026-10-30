@@ -45,9 +45,9 @@ PHOTOS = {
     "dn-xl-backgauge": V("Dener ATF 6 Axis Back Gauge_Moment2.jpg", "Dener ATF 6-axis back gauge — X1, X2, R1, R2, Z1, Z2"),
     "dn-xl-follower": V("CNC Sheet Follower for Press Brakes_Moment12.jpg", "CNC sheet follower supporting a large sheet during the bend"),
     # XH hybrid
-    "dn-xh-1": R("XH-1.png", "Dener XH hybrid press brake — servo-driven pump on the XL frame"),
-    "dn-xh-2": R("XH-2.png", "Dener XH hybrid press brake — three-quarter view"),
-    "dn-xh-3": R("XH-3.png", "Dener XH hybrid — ESA 3D CNC control"),
+    "dn-xh-1": R("XH-1.png", "Dener XH full hybrid press brake — front view"),
+    "dn-xh-2": R("XH-2.png", "Dener XH full hybrid press brake — three-quarter view"),
+    "dn-xh-3": R("XH-3.png", "Dener XH full hybrid — the CNC control on its swing arm"),
     "dn-xh-4": R("XH-4.png", "Dener press brake — European-style segmented punch and die with hydraulic clamping"),
     "dn-xh-video": V("Hibrit Abkant Pres_Moment28.jpg", "Dener hybrid press brake in production"),
     # DDM servo-electric

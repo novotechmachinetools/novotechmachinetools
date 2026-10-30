@@ -93,7 +93,9 @@ CONTROLS = {
     # the value-line supplier's controller page (a scan): crops of the controls that have no maker's photo
     "ctl-scs920": D("adh-controllers-page.png", "SCS920: 21.5″ capacitive touch CNC, 6+1 axes standard (8+1 optional), for hydraulic, electric and dual-pump press brakes", crop=(30, 290, 340, 680), up=True, up2=True, cutout=True),
     "ctl-estun-e21ps": D("adh-controllers-page.png", "Estun E21PS: NC control for torsion-bar press brakes — back gauge and ram positioning, one-way / two-way positioning, 2D graphic programming", crop=(1850, 320, 2080, 640), up=True, up2=True, cutout=True),
-    "ctl-estun-e315ps": D("adh-controllers-page.png", "Estun E315PS: 15.6″ capacitive touch NC control with 6+1 axes, angle programming and tool / material databases", crop=(2745, 340, 3045, 580), up=True, up2=True, cutout=True),
+    # Estun's product photo of the E315PS on its pendant arm, background removed with Pixelcut (the owner's choice, Oct 29 2026;
+    # earlier a crop of the supplier's controller page)
+    "ctl-estun-e315ps": D("estun-e315ps-pendant.png", "Estun E315PS: 15.6″ capacitive touch NC control on its pendant arm — angle programming, tool and material databases, 6+1 axes", up=True),
 }
 
 

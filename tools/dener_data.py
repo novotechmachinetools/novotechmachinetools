@@ -140,7 +140,9 @@ T_XL_1560 = table("XL 1560 compact CNC press brake", "1 model · 66 US tons × 5
 T_XL_LARGE = table("XL hydraulic press brakes · 12 – 20 ft", "10 models · 193 – 661 US tons", [r[0] for r in XL_LARGE], pb_rows(XL_LARGE))
 T_XL = table("XL hydraulic CNC press brakes · 5 – 20 ft", "18 models · 66 – 661 US tons", [r[0] for r in XL], pb_rows(XL))
 
-# hybrid: (model, t, approach, bend, return, kW, energy saving %) — frame, stroke, daylight and dimensions as the XL of the same tonnage
+# mild hybrid option on the XL — Dener's SVP packages (Mild hybrid presentation, Dener 2026): (package, t, approach, bend, return, kW,
+# energy saving %); frame, stroke, daylight and dimensions stay those of the XL of the same tonnage.  The XH is a different machine:
+# Dener's full hybrid series (the owner, Oct 29 2026) — no SVP data belongs to it.
 XH = [("SVP 60", 60, 120, 10, 160, 5, None), ("SVP 80 XF", 80, 130, 10, 125, 8.7, None), ("SVP 100", 100, 200, 10, 200, 8.7, 45),
       ("SVP 125 XF", 125, 120, 10, 190, 10.8, None), ("SVP 135", 135, 170, 10, 160, 10.8, 42), ("SVP 175", 175, 170, 10, 150, 13.2, 45),
       ("SVP 220", 220, 175, 10, 160, 16.7, 51), ("SVP 320", 320, 130, 10, 150, 21.4, 55), ("SVP 400", 400, 100, 10, 100, 26.9, 58)]
@@ -154,14 +156,15 @@ def xh_rows():
             ("Bending speed", [speed(r[3]) for r in XH]),
             ("Return speed", [speed(r[4]) for r in XH]),
             ("Servo motor", [hp(r[5]) for r in XH]),
-            ("Energy saving vs. the XL hydraulic", [f"about {r[6]} %" if r[6] else "—" for r in XH]),
+            ("Energy saving vs. the standard XL", [f"about {r[6]} %" if r[6] else "—" for r in XH]),
             ("Frame, stroke, daylight", ["as the XL press brake of the same tonnage"] * len(XH))]
 
 
-T_XH = table("XH hybrid press brakes · SVP series", "9 tonnage packages · 66 – 441 US tons · servo-driven pump on the XL frame", [r[0] for r in XH], xh_rows())
-NOTE_XH = ("The hybrid package replaces the XL's AC motor and fixed pump with a servo motor and inverter pump; tonnage packages up to 441 US tons "
-           "(400 t) are available to 13 ft (4 m) bending length, longer machines on request. Frame, stroke, daylight, throat and dimensions "
-           "are those of the XL press brake of the same tonnage and length.")
+T_SVP = table("Mild hybrid option on the XL · Dener SVP packages", "servo motor and servo pump in the XL hydraulic circuit · 66 – 441 US tons",
+              [r[0] for r in XH], xh_rows())
+NOTE_SVP = ("Mild hybrid option: the SVP package replaces the XL's AC motor and fixed pump with a servo motor and servo pump; packages to 441 US "
+            "tons (400 t) fit XL machines to 13 ft (4 m) bending length, longer machines on request. Frame, stroke, daylight, throat and "
+            "dimensions stay those of the XL of the same tonnage and length.")
 
 # servo-electric DDM: (model, length, t, approach, bend, return, stroke, daylight, L, W, H, kW, kg)
 DDM = [("DDM 4015", 1530, 40, 180, 20, 180, 300, 590, 2670, 2280, 2530, 11, 4600), ("DDM 5020", 2040, 50, 150, 20, 150, 300, 590, 3180, 2280, 2530, 11, 5200),
@@ -201,8 +204,8 @@ NOTE_DDS = ("Bending force in US tons (metric tons in brackets). Ball-screw driv
 PB_STD_XL = ["X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes", "15″ ESA S840 2D graphic touch-screen CNC control",
              "European-style segmented punch and die with European-style holders", "Hawe hydraulic system; constant pressure",
              "Anti-panic foot pedal with emergency stop", "Front support arms on linear rail", "Side and rear safety guards", "CSA-approved electrical panel, 600 V 3-phase standard"]
-PB_OPT_XL = ["Mild hybrid drive: a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine waits or is "
-             "loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft; the XL with it is the XH)",
+PB_OPT_XL = ["Mild hybrid drive (Dener SVP package): a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine "
+             "waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft)",
              "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control", "CE-certified light barrier (DSP laser finger protection)",
              "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)", "Manual or CNC motorised crowning", "Automatic angle measurement (bending accuracy 0.05°)",
              "Sheet follower support", "Hydraulic oil cooler; electrical panel cooler; automatic lubrication", "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
@@ -263,8 +266,13 @@ PB_FAMILIES = [
                      ("FpHkRYeceyA", "20 ft × 1,000 ton 9-axis CNC heavy-duty press brake"), ("AGifmIGQOso", "DENER 60 ft × 1,800 ton tandem press brake with auto feeder"),
                      ("jMqwk_yyCBo", "DENER 1,600 ton × 40 ft tandem press brake installation time-lapse"), ("dsZ8f7BKP84", "Tandem press brake PUMA XL 2 × 20 ft × 320 ton"),
                      ("fG6TQ8TseSo", "Hydraulic press brake with ATF 6-axis back gauge"), ("BUFzeYAAE_Y", "Laser angle measurement system on the XL press brake"),
-                     ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
-         specs=spec([T_XL], PB_GK, PB_G_FROM, NOTE_PB)),
+                     ("VGd39pN2zBM", "CNC press brake instruction with the ESA control"),
+                     # XLs with the mild hybrid option (the owner: the hybrid on the XL is the mild hybrid; the XH is the full hybrid)
+                     ("vIWys546tWY", "DENER XL 10 ft × 220 ton mild hybrid CNC press brake"), ("nKbuxZGSjdQ", "DENER XL 12 ft × 175 ton mild hybrid press brake"),
+                     ("-tAymdJwXjU", "DENER XL 13 ft × 220 ton mild hybrid press brake"), ("Msy6YHM5dIU", "DENER XL mild hybrid press brake"),
+                     ("Ymz5qW36zTs", "DENER tandem 60 ft × 1,600 ton mild hybrid press brake with sheet following support")),
+         # the SVP table sits under the XL table; the model list (compare, all models) stays the 18 XL machines
+         specs=dict(spec([T_XL], PB_GK, PB_G_FROM, NOTE_PB), tables=[T_XL, T_SVP], note=NOTE_PB + " " + NOTE_SVP)),
     dict(id="dn-xl-1560", control=CTL_XL, group="pb-compact-dener", page=P_PB, brand=BRAND,
          name="XL 1560 compact CNC press brake, 66 US tons × 5 ft",
          short="XL 1560 compact press brake",
@@ -289,21 +297,21 @@ PB_FAMILIES = [
                      ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
          specs=spec([T_XL_1560], PB_GK, PB_G_FROM, NOTE_PB)),
     dict(id="dn-xh", control=CTL_XL, group="pb-hybrid", page=P_PB, brand=BRAND,
-         name="XH mild hybrid press brakes, 66 – 441 US tons — servo motor and servo pump on the XL frame",
-         short="XH mild hybrid press brakes",
-         models_label="SVP 60 – SVP 400 · 9 tonnage packages",
-         summary="The mild hybrid press brake is the XL with its AC motor and fixed-displacement pump replaced by a servo motor and servo "
-                 "pump: the pump turns only when the ram moves, so the machine draws 42 – 58 % less energy, runs quieter, approaches and "
-                 "returns 17 – 75 % faster and starts and stops with the pedal. Same frame, cylinders, stroke, daylight and equipment as the XL "
-                 "of the same tonnage — the hybrid is an option on any XL to 13 ft, longer on request.",
-         features=["Servo motor, drivers and inverter pump in the XL hydraulic circuit; single oil tank", "Start/stop: the pump runs only while the ram moves",
-                   "42 – 58 % energy saving and 17 – 75 % faster approach and return than the XL of the same tonnage", "Less noise, less oil heating, lower maintenance"] + PB_STD_XL,
+         name="XH full hybrid press brakes — Dener's hybrid series",
+         short="XH full hybrid press brakes",
+         models_label="XH full hybrid series",
+         summary="The XH is Dener's full hybrid press brake: a series designed around its servo-driven hydraulics, built for low energy use, "
+                 "quiet operation and low running costs, with its own frame and covers (the XH design won a Bronze International Design Award). "
+                 "It is a different machine from the XL with the mild hybrid option, where only the XL's main motor and pump are replaced by a "
+                 "servo motor and servo pump — that option is listed with the XL. The XH takes the same controls and options as the XL; "
+                 "tonnage, length and speeds are confirmed per machine, so ask us for the XH data in your size.",
+         features=["Full hybrid: the servo-driven hydraulic system is designed into the machine, not added to an XL",
+                   "The pumps turn only while the ram moves — low energy use, quiet operation and cool oil",
+                   "Its own frame and covers — the XH design won a Bronze International Design Award"] + [x for x in PB_STD_XL if not x.startswith("Hawe")],
          optional=PB_OPT_XL[1:],
-         images=["dn-xh-1", "dn-xh-2", "dn-xh-video", "dn-xh-3"],
-         videos=vids(("vIWys546tWY", "DENER XL 10 ft × 220 ton hybrid CNC press brake"), ("nKbuxZGSjdQ", "DENER XL 12 ft × 175 ton hybrid press brake"),
-                     ("-tAymdJwXjU", "DENER XL 13 ft × 220 ton hybrid press brake"), ("Msy6YHM5dIU", "DENER hybrid press brake"),
-                     ("Ymz5qW36zTs", "DENER tandem 60 ft × 1,600 ton hybrid press brake with sheet following support")),
-         specs=spec([T_XH], ["bending_force", "bending_length", "approach_speed", "servo_motor", "energy_saving"], ["Bending force", "Bending length", "Approach speed", "Servo motor", "Energy saving vs. the XL hydraulic"], NOTE_XH)),
+         images=["dn-xh-1", "dn-xh-2", "dn-xh-3"],
+         videos=[],
+         specs=None),
     dict(id="dn-ddm", control=CTL_DDM, group="pb-servo", page=P_PB, brand=BRAND,
          name="DDM servo-electric CNC press brakes, 44 – 220 US tons × 5 – 13.4 ft",
          short="DDM servo-electric press brakes",

@@ -863,10 +863,6 @@ body.ai-locked { overflow: hidden; }
 .hero-mini-link img { transition: transform .2s ease; }
 .hero-mini-link:hover img { transform: translateY(-3px); }
 @media (prefers-reduced-motion: reduce) { .hero-link > .hero-main, .hero-mini-link img { transition: none; } }
-.hero-guide { margin: 12px 0 0; padding-left: 22px; position: relative; font-size: 15px; color: var(--steel); }
-.hero-guide::before { content: ""; position: absolute; left: 0; top: .5em; width: 12px; height: 12px; border: 2px solid var(--orange); border-radius: 50%; box-sizing: border-box; }
-.hero-guide a { font-weight: 700; color: var(--charcoal); text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-.hero-guide a:hover { color: var(--orange-deep); }
 
 /* press brake tonnage calculator (buying guide) */
 .tonnage-guide { min-width: 860px; font-size: 14.5px; }
@@ -1005,3 +1001,12 @@ body.ai-locked { overflow: hidden; }
 .ctl-table .yn.is-opt::before { content: "+"; color: var(--orange-deep); }
 .ctl-table .yn.is-unk { color: var(--mist); font-weight: 500; font-style: italic; }
 .ctl-table .yn.is-unk::before { content: "?"; font-style: normal; }
+
+/* the buying-guide button under every hero (the owner: a button like "Request a quote", in another colour) */
+.hero-guide { margin: 16px 0 0; }
+.btn-guide { background: var(--charcoal); border-color: var(--charcoal); color: #fff; gap: 12px; padding: 10px 20px 10px 14px; text-align: left; box-shadow: 0 4px 14px rgba(31,32,34,.14); }
+.btn-guide svg { flex: none; color: var(--orange); }
+.btn-guide span { display: grid; gap: 3px; }
+.btn-guide small { font-size: 13.5px; font-weight: 500; letter-spacing: 0; opacity: .82; }
+.btn-guide:hover, .btn-guide:focus-visible { background: var(--ink); border-color: var(--orange); color: #fff; }
+.btn-guide:hover svg, .btn-guide:focus-visible svg { color: var(--orange); }
