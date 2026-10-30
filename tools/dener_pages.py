@@ -64,7 +64,7 @@ PAGE_PB = dict(
           "ball-screw press brake from 22 US tons for small parts. ESA S840 / S875 or Delem DA-66S / 69S controls, European-style tooling, "
           "back gauges to 6 axes, crowning, angle measurement, sheet followers and robot cells. This is the premium line; NovoTech's own "
           "value-line CNC press brakes and the ISITAN compact press brakes have pages of their own. Installed and supported from Mississauga, ON, Canada, "
-          "with a CSA-approved panel and Dener Canada parts.",
+          "with a CSA-approved panel and parts stocked in Canada.",
     points=["XL hydraulic: 18 models, 66 – 661 US tons × 5 – 20 ft; tandem to 60 ft and 1,800 tons",
             "XH hybrid: servo pump on the XL frame — 42 – 58 % less energy, faster approach and return",
             "DDM servo-electric 44 – 220 tons and DDS ball-screw 22 / 44 tons — no hydraulic oil"],
@@ -85,7 +85,7 @@ PAGE_PB = dict(
          {"q": "Which tooling fits?",
           "a": "European-style (Promecam / Amada) segmented punches and dies with European-style holders are standard; Wila mechanical or hydraulic clamping, quick-release and pneumatic clamping are options, and American-style tooling can be fitted with an adapter. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius tools, hemming and joggle tools — and sizes it to your machine."},
          {"q": "Do you deliver, install and service in Canada?",
-          "a": "Yes. Machines ship from Kayseri to Mississauga, ON, Canada; we unload, level, commission and train your operators, and Dener Canada stocks parts here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
+          "a": "Yes. Machines ship from Kayseri to Mississauga, ON, Canada; we unload, level, commission and train your operators, and parts are stocked in Canada. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about press brakes",
     related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
@@ -99,7 +99,7 @@ PAGE_LASER = dict(
     meta="GFL production lasers with 1.5 G gantry and pallet changer, 5 × 10 to 6.6 × 20 ft; Smart series closed, semi-closed to 13 × 82 ft and open-type. Made in Turkey.",
     h1="Dener fiber lasers — GFL production lasers and the Smart series, 5 × 10 to 13 × 82 ft, 3 to 40 kW",
     intro="Dener's sheet lasers are the premium line of NovoTech's laser section: built in Kayseri, Turkey, on stress-relieved frames with IPG, "
-          "Raycus or nLIGHT sources, Precitec autofocus heads and nesting software, and backed by Dener Canada parts in Mississauga, ON, Canada. The GFL is "
+          "Raycus or nLIGHT sources, Precitec autofocus heads and nesting software, and backed by parts stocked in Canada. The GFL is "
           "the production machine — a space-frame gantry rated for 1.5 G and 394 ft/min, a pallet changer that loads the next sheet while the "
           "first is cut, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft with 3 to 40 kW. The Smart series comes from the same factory at a lower price: "
           "the closed-type with laser-safe cabin and double exchange table in six sizes to a 41 ft bed, the semi-closed single-table machines "
@@ -121,7 +121,7 @@ PAGE_LASER = dict(
          {"q": "What can be added later?",
           "a": "A loading / unloading tower that feeds the pallet changer, sheet storage with several shelves for lights-out production, part sorting, a bevel head for weld preparation, a marking head, and the intelligent air-cutting package that replaces nitrogen on sheet to about 1/4″. The GFL and the closed-type Smart are prepared for the tower from the factory."},
          {"q": "How does Dener compare with the Senfeng value line?",
-          "a": "Dener is the premium line — heavier frame rated for 1.5 G, Precitec heads, IPG / nLIGHT sources, longer life at high duty and Dener Canada parts in Mississauga, ON, Canada. Senfeng builds its own sources and heads and sells for less, with a range Dener does not cover (4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, coil-fed lines). The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."},
+          "a": "Dener is the premium line — heavier frame rated for 1.5 G, Precitec heads, IPG / nLIGHT sources, longer life at high duty and parts stocked in Canada. Senfeng builds its own sources and heads and sells for less, with a range Dener does not cover (4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, coil-fed lines). The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."},
          {"q": "What does the machine need on site?",
           "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas — oxygen for mild steel, nitrogen or compressed air for stainless and aluminum — a dust collector and a compressed-air supply. A 6 kW GFL 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with the pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada."},
          VOLT_FAQ_GENERIC],
@@ -137,7 +137,7 @@ PAGE_TUBE = dict(
     meta="E-FTL tube lasers with 1 G servo chucks for Ø0.3″ to 13.8″; heavy FTL for pipe, tube and beams to Ø25.2″ and 12 m bars. Bundle loaders, bevel heads, 3 – 20 kW.",
     h1="Dener tube lasers — E-FTL and FTL, Ø0.3″ to 25.2″, bars to 39.4 ft, 3 to 20 kW",
     intro="Dener's tube lasers are the premium line of NovoTech's tube laser section: built in Kayseri, Turkey, with servo chucks, Precitec "
-          "heads and 3 to 20 kW sources, and backed by Dener Canada parts in Mississauga, ON, Canada. The E-FTL is the fast machine for the sizes most "
+          "heads and 3 to 20 kW sources, and backed by parts stocked in Canada. The E-FTL is the fast machine for the sizes most "
           "fabricators use — railings, frames, furniture, trailers, exhaust: four chuck sizes from Ø0.3″ to 13.8″, servo axes accelerating at "
           "1 G to 394 ft/min and ±0.05 mm repeatability on 7, 9 or 12 m bars. The FTL is built for weight: structural tube, pipe and beams to "
           "Ø25.2″ and 12 m bars of 2,600 kg — 12,000 kg on the long-bed 250 — with ±0.1 mm on the large chucks and a 5-axis bevel head for weld "
@@ -145,7 +145,7 @@ PAGE_TUBE = dict(
           "and unload finished pieces. Installed, trained and supported from Mississauga, ON, Canada.",
     points=["E-FTL 120 / 180 / 250 / 350: Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm, bars to 39.4 ft",
             "FTL 250 / 350 / 500 / 640: Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb (12,000 kg on the long-bed 250), 5-axis bevel head",
-            "3 – 20 kW sources, bundle loaders, following supports, STEP / IGES tube nesting; made in Turkey, Dener Canada parts in Mississauga, ON, Canada"],
+            "3 – 20 kW sources, bundle loaders, following supports, STEP / IGES tube nesting; made in Turkey, parts stocked in Canada"],
     hero="dn-tube-2", minis=["dn-tube-6", "dn-tube-1"],
     groups=[("tube-eftl", "E-FTL tube lasers", "The fast tube laser for Ø0.3″ to 13.8″: 1 G servo axes, 394 ft/min, four chuck sizes.", BRAND),
             ("tube-ftl", "FTL heavy tube lasers", "For structural tube, pipe and profile to Ø25.2″ and 12 m bars of 2,600 kg.", BRAND)],
@@ -156,7 +156,7 @@ PAGE_TUBE = dict(
          {"q": "Can it cut bevels and weld preparations?",
           "a": "Yes — the 5-axis head on the FTL (optional on the E-FTL) tilts to ±45° so mitred corners, chamfers and weld preparations are cut in the same pass as the holes and copes; the tube arrives at the welding table ready to fit. The seam detector orients welded tube so the seam sits where the drawing puts it."},
          {"q": "How does Dener compare with the Senfeng value line?",
-          "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, Dener Canada parts in Mississauga, ON, Canada. Senfeng's tube lasers are the value line: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser, and the range goes to zero-tailing three-chuck and four-chuck machines for 49 ft stock. The comparison and the capacity table for both lines are on the tube laser cutters overview."},
+          "a": "Dener's E-FTL and FTL are the premium machines — Turkish-built, 1 G servo chucks, Precitec heads, parts stocked in Canada. Senfeng's tube lasers are the value line: a 6 m two-chuck machine with a 1.5 kW source costs a fraction of a premium tube laser, and the range goes to zero-tailing three-chuck and four-chuck machines for 49 ft stock. The comparison and the capacity table for both lines are on the tube laser cutters overview."},
          {"q": "Floor space and power?",
           "a": "A 7 m E-FTL needs about 20 m (65 ft) of length including the loader and unloader; a 12 m FTL about 30 m. 600 V 3-phase with the supplied transformer or 480 V, a chiller (included), assist gas and a dust collector. We lay the machine out for your building before you order."},
          VOLT_FAQ_GENERIC],
@@ -172,7 +172,7 @@ PAGE_SHEAR = dict(
     meta="BS / BSY hydraulic swing beam shears with NC back gauge, 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotines with variable angle, 1/4″ – 3/4″ × 10 – 20 ft.",
     h1="Dener hydraulic shears — BS / BSY swing beam to 5/8″ and DAS CNC guillotine to 3/4″ × 20 ft",
     intro="Dener's shears are the premium plate shears of NovoTech's shear section: built in Kayseri, Turkey, with Rexroth or Hoerbiger hydraulics, "
-          "ESA or Delem controls and Dener Canada parts in Mississauga, ON, Canada. The BS / BSY swing beam shears are the rugged everyday plate shear: a beam "
+          "ESA or Delem controls and parts stocked in Canada. The BS / BSY swing beam shears are the rugged everyday plate shear: a beam "
           "on two bearings swung through the cut by two cylinders, 8 to 22 strokes a minute, with an NC back gauge, hydraulic hold-downs and "
           "single-point blade-gap adjustment — the light BSY 2006 – 3006 for 1/4″ over 6.8 to 10 ft and the BS 3006 – 4016 to 5/8″ (16 mm) over "
           "10 and 13.5 ft. The DAS CNC guillotines are the production machines: a beam on linear rollers with a variable cutting angle, so thin "
@@ -180,7 +180,7 @@ PAGE_SHEAR = dict(
           "from the thickness and material keyed in — 1/4″ to 3/4″ over 10, 13 and 20 ft. Installed, trained and supported from Mississauga, ON, Canada.",
     points=["BS / BSY swing beam: 11 models, 1/4″ – 5/8″ × 6.8 – 13.5 ft, 8 – 22 strokes/min, NC back gauge, hydraulic hold-downs",
             "DAS CNC guillotine: 13 models, 1/4″ – 3/4″ × 10 – 20 ft, variable cutting angle, ESA 630 CNC, 1 m ball-screw back gauge",
-            "Made in Turkey by Dener Makina; Dener Canada parts in Mississauga, ON, Canada; CSA-approved panel, 600 V standard"],
+            "Made in Turkey by Dener Makina; parts stocked in Canada; CSA-approved panel, 600 V standard"],
     hero="dn-das-1", minis=["dn-bs-2", "dn-das-3"],
     groups=[("shear-swing", "BS / BSY hydraulic swing beam shears", "Plate from 1/4″ to 5/8″: two cylinders swing the beam through the cut, NC back gauge, 8 – 22 strokes a minute.", BRAND),
             ("shear-cnc", "DAS CNC hydraulic guillotine shears", "The production plate shear to 3/4″ × 20 ft: variable cutting angle, blade gap and back gauge set by the CNC.", BRAND)],
@@ -191,7 +191,7 @@ PAGE_SHEAR = dict(
          {"q": "What is standard on a Dener shear?",
           "a": "Hydraulic hold-downs (16 – 33 on the DAS), a squaring arm with scale, front support arms, a ball-transfer table, a shadow-line light, a photocell rear guard, a front finger guard, high-carbon high-chrome four-edged blades and the CSA-approved panel with a 600 V transformer. Pneumatic sheet supports with return-to-front, conveyors and longer arms are options."},
          {"q": "How do the Dener shears compare with the NovoTech value line?",
-          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, the 1 m back gauge and Dener Canada parts; the NovoTech value-line shears are built in China with Estun controls at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
+          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, the 1 m back gauge and parts stocked in Canada; the NovoTech value-line shears are built in China with Estun controls at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
          {"q": "Floor space and power?",
           "a": "A 10 ft shear needs about 16 × 10 ft of floor with the back gauge travel; a 20 ft DAS about 27 × 12 ft. 600 V 3-phase with the supplied transformer or 480 V; the motors run from 15 to 60 HP. We lay the machine out for your building before you order."},
          VOLT_FAQ_GENERIC],
