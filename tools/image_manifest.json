@@ -94676,27 +94676,33 @@
   "cut": "birefnet"
  },
  "ctl-esa-s630": {
-  "alt": "ESA S630: 10″ resistive touch control for up to 4 axes, numeric and 2D programming",
+  "alt": "ESA S630: 10″ resistive touch control on its pendant with the handle — up to 4 axes, numeric and 2D programming, the bend calculation on screen",
   "variants": [
    {
+    "w": 1200,
+    "h": 1142,
+    "file": "img/controls/ctl-esa-s630-1200.webp",
+    "bytes": 161802
+   },
+   {
     "w": 800,
-    "h": 547,
+    "h": 762,
     "file": "img/controls/ctl-esa-s630-800.webp",
-    "bytes": 75116
+    "bytes": 101438
    },
    {
     "w": 480,
-    "h": 328,
+    "h": 457,
     "file": "img/controls/ctl-esa-s630-480.webp",
-    "bytes": 38982
+    "bytes": 47034
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 109,
+   "h": 152,
    "file": "img/controls/ctl-esa-s630-thumb.webp",
-   "bytes": 4632
+   "bytes": 4666
   }
  },
  "ctl-scs920": {

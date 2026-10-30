@@ -85,7 +85,8 @@ CONTROLS = {
     # cards were esa-s875w-card.webp / esa-s840-card.webp)
     "ctl-esa-s875w-card": D("esa-s875w-stand.png", "ESA S875 W: 21.5″ Full HD multi-touch 3D control on its stand — EsaBend 3D shows the tools, the gauge and the part", up=False, cutout=True, upscale=1.6),
     "ctl-esa-s840-card": D("esa-s840-stand.png", "ESA S840: 15.6″ HD touch control on its stand — up to 6 axes, numeric and 2D programming with automatic bend sequence", up=True, cutout=True, upscale=1.1),
-    "ctl-esa-s630": D("esa-006-020.png", "ESA S630: 10″ resistive touch control for up to 4 axes, numeric and 2D programming", up=True),
+    # ESA's own front view of the S630 pendant, already cut out (the owner's choice, Oct 29 2026; earlier a crop of esa-006-020.png)
+    "ctl-esa-s630": D("esa-s630-pendant.png", "ESA S630: 10″ resistive touch control on its pendant with the handle — up to 4 axes, numeric and 2D programming, the bend calculation on screen", up=True),
     "ctl-esa-pendant": D("xl1560-esa-s640.jpg", "ESA touch-screen control pendant on the Dener XL 1560", up=False, cutout=True, crop=(340, 80, 1300, 1150)),
     # the value-line supplier's controller page (a scan): crops of the controls that have no maker's photo
     "ctl-scs920": D("adh-controllers-page.png", "SCS920: 21.5″ capacitive touch CNC, 6+1 axes standard (8+1 optional), for hydraulic, electric and dual-pump press brakes", crop=(30, 290, 340, 680), up=True, up2=True, cutout=True),
