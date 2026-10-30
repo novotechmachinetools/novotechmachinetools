@@ -201,7 +201,9 @@ NOTE_DDS = ("Bending force in US tons (metric tons in brackets). Ball-screw driv
 PB_STD_XL = ["X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes", "15″ ESA S840 2D graphic touch-screen CNC control",
              "European-style segmented punch and die with European-style holders", "Hawe hydraulic system; constant pressure",
              "Anti-panic foot pedal with emergency stop", "Front support arms on linear rail", "Side and rear safety guards", "CSA-approved electrical panel, 600 V 3-phase standard"]
-PB_OPT_XL = ["21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control", "CE-certified light barrier (DSP laser finger protection)",
+PB_OPT_XL = ["Mild hybrid drive: a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine waits or is "
+             "loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft; the XL with it is the XH)",
+             "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control", "CE-certified light barrier (DSP laser finger protection)",
              "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)", "Manual or CNC motorised crowning", "Automatic angle measurement (bending accuracy 0.05°)",
              "Sheet follower support", "Hydraulic oil cooler; electrical panel cooler; automatic lubrication", "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
              "Tandem configuration to 60 ft and 1,800 US tons", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
@@ -251,7 +253,9 @@ PB_FAMILIES = [
                    "5 to 20 ft bending lengths, 66 to 661 US tons; 23.6″ (600 mm) throat on the 400 and 600 t machines"] + PB_STD_XL,
          optional=PB_OPT_XL,
          images=["dn-xl-1", "dn-xl-2", "dn-xl-3", "dn-xf-1", "dn-xf-2", "dn-xl-video-1", "dn-xl-video-2", "dn-xl-backgauge", "dn-xl-follower",
-                 "dn-xh-4", "dn-xf-3", "dn-xl-control"],
+                 "dn-xh-4", "dn-xf-3", "dn-xl-control",
+                 # the back gauge options with their axis arrows (tools/dener_bg_arrows.py)
+                 "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis", "dn-det-bg-6axis-atf"],
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),
                      ("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake"), ("pRxr7CB2pDQ", "XL 13 ft × 220 ton with laser angle measurement and sheet follower"),
                      ("dXorm3f4fBY", "DENER XL 13 ft × 320 ton CNC hydraulic press brake"), ("_rdb1prKsxc", "20 ft × 600 ton DENER Puma XL heavy-duty press brake"),
@@ -285,16 +289,16 @@ PB_FAMILIES = [
                      ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
          specs=spec([T_XL_1560], PB_GK, PB_G_FROM, NOTE_PB)),
     dict(id="dn-xh", control=CTL_XL, group="pb-hybrid", page=P_PB, brand=BRAND,
-         name="XH hybrid press brakes, 66 – 441 US tons — servo pump on the XL frame",
-         short="XH hybrid press brakes",
+         name="XH mild hybrid press brakes, 66 – 441 US tons — servo motor and servo pump on the XL frame",
+         short="XH mild hybrid press brakes",
          models_label="SVP 60 – SVP 400 · 9 tonnage packages",
-         summary="The hybrid press brake is the XL with its AC motor and fixed-displacement pump replaced by a servo motor and inverter "
+         summary="The mild hybrid press brake is the XL with its AC motor and fixed-displacement pump replaced by a servo motor and servo "
                  "pump: the pump turns only when the ram moves, so the machine draws 42 – 58 % less energy, runs quieter, approaches and "
                  "returns 17 – 75 % faster and starts and stops with the pedal. Same frame, cylinders, stroke, daylight and equipment as the XL "
                  "of the same tonnage — the hybrid is an option on any XL to 13 ft, longer on request.",
          features=["Servo motor, drivers and inverter pump in the XL hydraulic circuit; single oil tank", "Start/stop: the pump runs only while the ram moves",
                    "42 – 58 % energy saving and 17 – 75 % faster approach and return than the XL of the same tonnage", "Less noise, less oil heating, lower maintenance"] + PB_STD_XL,
-         optional=PB_OPT_XL,
+         optional=PB_OPT_XL[1:],
          images=["dn-xh-1", "dn-xh-2", "dn-xh-video", "dn-xh-3"],
          videos=vids(("vIWys546tWY", "DENER XL 10 ft × 220 ton hybrid CNC press brake"), ("nKbuxZGSjdQ", "DENER XL 12 ft × 175 ton hybrid press brake"),
                      ("-tAymdJwXjU", "DENER XL 13 ft × 220 ton hybrid press brake"), ("Msy6YHM5dIU", "DENER hybrid press brake"),

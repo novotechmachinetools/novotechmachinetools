@@ -26,8 +26,9 @@ CTL = os.path.join(ROOT, "tools", "src-images", "controls")
 SMALL = 900            # px: a source whose longest side is under this is upscaled 2x
 
 
-def D(src, alt, mask=None, up=True, cutout=False, crop=None, up2=False):
-    return dict(src=src, alt=alt, mask=mask, up=up, cutout=cutout, crop=crop, up2=up2)
+def D(src, alt, mask=None, up=True, cutout=False, crop=None, up2=False, arrows=False, upscale=None):
+    """arrows=True: the figure is drawn with its axis arrows by tools/dener_bg_arrows.py (from the PDF page), not here"""
+    return dict(src=src, alt=alt, mask=mask, up=up, cutout=cutout, crop=crop, up2=up2, arrows=arrows, upscale=upscale)
 
 
 DETAIL = {
@@ -42,8 +43,11 @@ DETAIL = {
     "dn-det-esa-2d": D("xl-esa-640.png", "ESA 2D touch design on a 15″ touch screen: the profile is drawn and the control calculates the bend sequence — the programming of the S840"),
     "dn-det-esa-875": D("xl-esa-875.png", "ESA S875 W control: 21″ 3D touch screen with EsaBend 3D simulation"),
     "dn-det-bg-xr": D("xl-bg-xr.png", "2-axis (X, R) and 4-axis (X, R, Z1, Z2) back gauge on linear guides and ball screw"),
-    "dn-det-bg-5axis": D("xl-bg-5axis.png", "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons"),
-    "dn-det-bg-6axis-atf": D("xl-bg-6axis-atf.png", "6-axis ATF back gauge (X1, X2, R1, R2, Z1, Z2): one flat and one crab-claw finger on each tower", mask="xl-bg-6axis-atf-mask.png", cutout=True),
+    "dn-det-bg-2axis": D("xl-bg-xr.png", "2-axis CNC back gauge (X, R): the arrows show the X axis moving the fingers to and from the die and the R axis raising and lowering them", arrows=True),
+    "dn-det-bg-4axis": D("xl-bg-xr.png", "4-axis CNC back gauge (X, R, Z1, Z2): the arrows show X, R and the two fingers travelling sideways along the beam (Z1, Z2)", arrows=True),
+    "dn-det-bg-5axis": D("xl-bg-5axis.png", "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons — the arrows show each axis, X′ moving one finger in depth on its own", arrows=True),
+    "dn-det-bg-6axis-atf": D("xl-bg-6axis-atf.png", "6-axis ATF back gauge (X1, X2, R1, R2, Z1, Z2): each finger tower moves in depth, height and sideways on its own — one flat and one crab-claw finger on each tower", mask="xl-bg-6axis-atf-mask.png", cutout=True, arrows=True),
+    "dn-det-crowning-motor": D("xl-crowning-motor.jpg", "CNC motorised crowning on a Dener press brake: a gear motor at the end of the bed drives the crowning wedges, set by the control for every bend", up=False),
     "dn-det-eurostamp-tools": D("xl-eurostamp-tools.png", "The standard tooling delivered with a Dener press brake: EUROSTAMP 85° punch 1281 (R 0.8 mm, 100 t/m) and 4-way die 2067 with 16, 22, 35 and 50 mm openings"),
     "dn-det-quick-release-plate": D("xl-quick-release-plate.png", "Dener quick-release punch holder front clamp plates with lever bar action, for European and American punches"),
     "dn-det-eurostamp-quick-clamp": D("xl-eurostamp-quick-clamp.png", "EUROSTAMP quick clamp (Z1 / Z2 models): the European punch is inserted from below and self-seats when the lever closes"),
@@ -75,8 +79,10 @@ CONTROLS = {
     "ctl-delem-da53tx": D("delem-da-53tx.webp", "Delem DA-53Tx: 15″ touch numerical control with 2D product and tool programming, up to 4 axes", up=False, cutout=True),
     "ctl-delem-da41t": D("delem-da-41t.webp", "Delem DA-41T: 7″ touch NC control for torsion-bar press brakes — Y and X axes, 100 programs", up=False, cutout=True),
     "ctl-cybelec-ct12": D("cybelec-ct12.webp", "Cybelec CybTouch 12 PS: 12″ touch control for synchronised press brakes with TouchProfile 2D programming", up=False),
-    "ctl-esa-s875w-card": D("esa-s875w-card.webp", "ESA S875 W: 21.5″ Full HD multi-touch 3D control with an Intel i5 PC", up=True, up2=True),
-    "ctl-esa-s840-card": D("esa-s840-card.webp", "ESA S840: 15.6″ HD touch control, up to 6 axes, numeric and 2D programming", up=True, up2=True, cutout=True),
+    # ESA's own product photos of the S875 W and S840 on their swing-arm stands (the owner's choice, Oct 29 2026; the earlier
+    # cards were esa-s875w-card.webp / esa-s840-card.webp)
+    "ctl-esa-s875w-card": D("esa-s875w-stand.png", "ESA S875 W: 21.5″ Full HD multi-touch 3D control on its stand — EsaBend 3D shows the tools, the gauge and the part", up=False, cutout=True, upscale=1.6),
+    "ctl-esa-s840-card": D("esa-s840-stand.png", "ESA S840: 15.6″ HD touch control on its stand — up to 6 axes, numeric and 2D programming with automatic bend sequence", up=True, cutout=True, upscale=1.1),
     "ctl-esa-s630": D("esa-006-020.png", "ESA S630: 10″ resistive touch control for up to 4 axes, numeric and 2D programming", up=True),
     "ctl-esa-pendant": D("xl1560-esa-s640.jpg", "ESA touch-screen control pendant on the Dener XL 1560", up=False, cutout=True, crop=(340, 80, 1300, 1150)),
     # the value-line supplier's controller page (a scan): crops of the controls that have no maker's photo
@@ -185,7 +191,9 @@ def register():
                 continue
             ext = os.path.splitext(f[0])[1]
             imap[key] = {"src": f"tools/src-images/{os.path.basename(folder)}/{key}{ext}", "alt": p["alt"], "section": section, "trim": ext == ".jpg" and section == "dener-detail",
-                         "quality": 84, "cutout": bool(p.get("cutout"))}
+                         "quality": 84, "cutout": bool(p.get("cutout")) and not p.get("arrows")}   # arrows and letters would be cut away
+            if p.get("upscale"):                     # make_images: Lanczos upscale after the cut, so the 800 px variant exists
+                imap[key]["upscale"] = p["upscale"]
             keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "dener_detail_keys.txt"), "w").write(",".join(keys))
@@ -198,6 +206,9 @@ def main():
         return
     keys = [a for a in sys.argv[1:] if not a.startswith("--")] or list(DETAIL) + list(DXF) + list(CONTROLS)
     for k in keys:
+        if k in DETAIL and DETAIL[k].get("arrows"):
+            print(f"{k:32s} (drawn with its axis arrows by tools/dener_bg_arrows.py)")
+            continue
         if k in DETAIL:
             path, size = process_image(DETAIL[k], os.path.join(DET, "src"), DET, k)
         elif k in DXF:

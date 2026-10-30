@@ -93930,53 +93930,52 @@
   }
  },
  "dn-det-bg-5axis": {
-  "alt": "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons",
+  "alt": "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons — the arrows show each axis, X′ moving one finger in depth on its own",
   "variants": [
    {
     "w": 800,
-    "h": 570,
+    "h": 559,
     "file": "img/dener-detail/dn-det-bg-5axis-800.webp",
-    "bytes": 24110
+    "bytes": 25852
    },
    {
     "w": 480,
-    "h": 342,
+    "h": 335,
     "file": "img/dener-detail/dn-det-bg-5axis-480.webp",
-    "bytes": 13394
+    "bytes": 14402
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 114,
+   "h": 112,
    "file": "img/dener-detail/dn-det-bg-5axis-thumb.webp",
-   "bytes": 2736
+   "bytes": 3086
   }
  },
  "dn-det-bg-6axis-atf": {
-  "alt": "6-axis ATF back gauge (X1, X2, R1, R2, Z1, Z2): one flat and one crab-claw finger on each tower",
+  "alt": "6-axis ATF back gauge (X1, X2, R1, R2, Z1, Z2): each finger tower moves in depth, height and sideways on its own — one flat and one crab-claw finger on each tower",
   "variants": [
    {
     "w": 800,
-    "h": 444,
+    "h": 478,
     "file": "img/dener-detail/dn-det-bg-6axis-atf-800.webp",
-    "bytes": 42936
+    "bytes": 30140
    },
    {
     "w": 480,
-    "h": 266,
+    "h": 287,
     "file": "img/dener-detail/dn-det-bg-6axis-atf-480.webp",
-    "bytes": 23650
+    "bytes": 16182
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 89,
+   "h": 96,
    "file": "img/dener-detail/dn-det-bg-6axis-atf-thumb.webp",
-   "bytes": 5374
-  },
-  "cut": "birefnet"
+   "bytes": 3186
+  }
  },
  "dn-det-eurostamp-tools": {
   "alt": "The standard tooling delivered with a Dener press brake: EUROSTAMP 85° punch 1281 (R 0.8 mm, 100 t/m) and 4-way die 2067 with 16, 22, 35 and 50 mm openings",
@@ -94633,64 +94632,54 @@
   }
  },
  "ctl-esa-s875w-card": {
-  "alt": "ESA S875 W: 21.5″ Full HD multi-touch 3D control with an Intel i5 PC",
+  "alt": "ESA S875 W: 21.5″ Full HD multi-touch 3D control on its stand — EsaBend 3D shows the tools, the gauge and the part",
   "variants": [
    {
-    "w": 1200,
-    "h": 934,
-    "file": "img/controls/ctl-esa-s875w-card-1200.webp",
-    "bytes": 61226
-   },
-   {
     "w": 800,
-    "h": 622,
+    "h": 782,
     "file": "img/controls/ctl-esa-s875w-card-800.webp",
-    "bytes": 39424
+    "bytes": 65554
    },
    {
     "w": 480,
-    "h": 373,
+    "h": 469,
     "file": "img/controls/ctl-esa-s875w-card-480.webp",
-    "bytes": 21046
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 124,
-   "file": "img/controls/ctl-esa-s875w-card-thumb.webp",
-   "bytes": 3694
-  }
- },
- "ctl-esa-s840-card": {
-  "alt": "ESA S840: 15.6″ HD touch control, up to 6 axes, numeric and 2D programming",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 1200,
-    "file": "img/controls/ctl-esa-s840-card-1200.webp",
-    "bytes": 107020
-   },
-   {
-    "w": 800,
-    "h": 800,
-    "file": "img/controls/ctl-esa-s840-card-800.webp",
-    "bytes": 65288
-   },
-   {
-    "w": 480,
-    "h": 480,
-    "file": "img/controls/ctl-esa-s840-card-480.webp",
-    "bytes": 34156
+    "bytes": 34834
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 156,
+   "file": "img/controls/ctl-esa-s875w-card-thumb.webp",
+   "bytes": 7740
+  },
+  "cut": "birefnet"
+ },
+ "ctl-esa-s840-card": {
+  "alt": "ESA S840: 15.6″ HD touch control on its stand — up to 6 axes, numeric and 2D programming with automatic bend sequence",
+  "variants": [
+   {
+    "w": 800,
+    "h": 781,
+    "file": "img/controls/ctl-esa-s840-card-800.webp",
+    "bytes": 51936
+   },
+   {
+    "w": 480,
+    "h": 469,
+    "file": "img/controls/ctl-esa-s840-card-480.webp",
+    "bytes": 29074
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 156,
    "file": "img/controls/ctl-esa-s840-card-thumb.webp",
-   "bytes": 6400
-  }
+   "bytes": 7138
+  },
+  "cut": "birefnet"
  },
  "ctl-esa-s630": {
   "alt": "ESA S630: 10″ resistive touch control for up to 4 axes, numeric and 2D programming",
@@ -96839,6 +96828,84 @@
    "h": 160,
    "file": "img/value-sheet/vl-wadg-mini-1-thumb.webp",
    "bytes": 4904
+  }
+ },
+ "dn-det-bg-2axis": {
+  "alt": "2-axis CNC back gauge (X, R): the arrows show the X axis moving the fingers to and from the die and the R axis raising and lowering them",
+  "variants": [
+   {
+    "w": 800,
+    "h": 695,
+    "file": "img/dener-detail/dn-det-bg-2axis-800.webp",
+    "bytes": 28726
+   },
+   {
+    "w": 480,
+    "h": 417,
+    "file": "img/dener-detail/dn-det-bg-2axis-480.webp",
+    "bytes": 15780
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 139,
+   "file": "img/dener-detail/dn-det-bg-2axis-thumb.webp",
+   "bytes": 3354
+  }
+ },
+ "dn-det-bg-4axis": {
+  "alt": "4-axis CNC back gauge (X, R, Z1, Z2): the arrows show X, R and the two fingers travelling sideways along the beam (Z1, Z2)",
+  "variants": [
+   {
+    "w": 800,
+    "h": 544,
+    "file": "img/dener-detail/dn-det-bg-4axis-800.webp",
+    "bytes": 27670
+   },
+   {
+    "w": 480,
+    "h": 326,
+    "file": "img/dener-detail/dn-det-bg-4axis-480.webp",
+    "bytes": 14920
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 109,
+   "file": "img/dener-detail/dn-det-bg-4axis-thumb.webp",
+   "bytes": 3122
+  }
+ },
+ "dn-det-crowning-motor": {
+  "alt": "CNC motorised crowning on a Dener press brake: a gear motor at the end of the bed drives the crowning wedges, set by the control for every bend",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 771,
+    "file": "img/dener-detail/dn-det-crowning-motor-1200.webp",
+    "bytes": 57414
+   },
+   {
+    "w": 800,
+    "h": 514,
+    "file": "img/dener-detail/dn-det-crowning-motor-800.webp",
+    "bytes": 36368
+   },
+   {
+    "w": 480,
+    "h": 309,
+    "file": "img/dener-detail/dn-det-crowning-motor-480.webp",
+    "bytes": 19962
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/dener-detail/dn-det-crowning-motor-thumb.webp",
+   "bytes": 3606
   }
  }
 }

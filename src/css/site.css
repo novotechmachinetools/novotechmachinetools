@@ -941,3 +941,47 @@ body.ai-locked { overflow: hidden; }
 .calc-cta svg { color: var(--orange-deep); flex: none; }
 .calc-cta:hover, .calc-cta:focus-visible { background: var(--orange); color: var(--ink); }
 .calc-cta:hover svg, .calc-cta:focus-visible svg { color: var(--ink); }
+
+/* EUROSTAMP air-bending diagram, legend and force charts (buying guide, tools/eurostamp_charts.py) */
+.bend-diagram-row { display: grid; grid-template-columns: minmax(220px, 330px) 1fr; gap: 18px 32px; align-items: center; margin: 22px 0 26px; padding: 18px 20px; border: 1px solid var(--line); background: #fff; }
+.bend-figure { margin: 0; }
+.bend-figure figcaption { font-size: 13.5px; color: var(--steel); text-align: center; margin-top: 4px; }
+.bend-diagram { display: block; width: 100%; height: auto; }
+.bend-diagram .bd-axis { stroke: var(--mist); stroke-width: 1.2; stroke-dasharray: 12 4 2 4; }
+.bend-diagram .bd-die, .bend-diagram .bd-punch { fill: var(--paper); stroke: var(--charcoal); stroke-width: 2; stroke-linejoin: round; }
+.bend-diagram .bd-sheet { fill: var(--orange); stroke: var(--orange-ink); stroke-width: 1.2; stroke-linejoin: round; }
+.bend-diagram .bd-force { stroke: var(--orange-deep); stroke-width: 4; }
+.bend-diagram .bd-force-head { fill: var(--orange-deep); }
+.bend-diagram .bd-dim { stroke: var(--charcoal); stroke-width: 1.4; }
+.bend-diagram .bd-ext { stroke: var(--mist); stroke-width: 1; }
+.bend-diagram .bd-head { fill: var(--charcoal); }
+.bend-diagram .bd-label { font-family: var(--sans); font-weight: 700; font-size: 21px; fill: var(--ink); }
+.bend-legend { margin: 0; display: grid; gap: 0; border-top: 1px solid var(--line-soft); }
+.bend-legend > div { display: grid; grid-template-columns: 52px 1fr; align-items: center; border-bottom: 1px solid var(--line-soft); }
+.bend-legend dt { font-family: var(--cond); font-weight: 700; font-size: 24px; color: #fff; background: var(--charcoal); text-align: center; padding: 6px 0; align-self: stretch; display: flex; align-items: center; justify-content: center; }
+.bend-legend > div:first-child dt { background: var(--orange-deep); }
+.bend-legend dd { margin: 0; padding: 7px 12px; font-size: 15px; }
+.bend-formula { margin-top: 16px; display: grid; gap: 10px; }
+.bend-formula p { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 22px; font-family: var(--cond); font-weight: 600; color: var(--ink); }
+.bend-formula small { flex-basis: 100%; font-family: var(--sans); font-weight: 400; font-size: 13.5px; color: var(--steel); }
+.bend-formula .bf-f { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--orange-deep); color: #fff; font-weight: 700; font-size: 26px; }
+.bend-formula .bf-frac { display: inline-grid; text-align: center; line-height: 1.25; }
+.bend-formula .bf-frac > span:first-child { border-bottom: 2px solid var(--ink); padding: 0 6px 2px; }
+.bend-formula .bf-frac > span:last-child { padding: 2px 6px 0; }
+.force-chart { border-collapse: collapse; width: 100%; min-width: 980px; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.force-chart caption { text-align: left; font-family: var(--cond); font-weight: 600; font-size: 20px; color: var(--charcoal); padding: 10px 12px; background: var(--paper); border-bottom: 1px solid var(--line); }
+.force-chart caption small { display: block; font-family: var(--sans); font-weight: 400; font-size: 13.5px; color: var(--steel); margin-top: 2px; }
+.force-chart th, .force-chart td { border: 1px solid var(--line-soft); padding: 5px 2px; text-align: center; min-width: 38px; }
+.force-chart thead th { background: var(--charcoal); color: #fff; font-weight: 600; font-size: 12.5px; }
+.force-chart thead th.fc-key { background: var(--orange-deep); font-family: var(--cond); font-size: 17px; }
+.force-chart tbody th { background: var(--paper); font-weight: 700; }
+.force-chart td.fc-side { background: var(--paper); color: var(--steel); }
+.force-chart td.is-near { background: #eef0f2; }
+.force-chart td.is-rec { background: var(--orange); color: var(--ink); font-weight: 700; }
+.force-chart.is-inch thead th:not(.fc-key) { font-size: 11.5px; }
+.table-scroll + .table-scroll { margin-top: 18px; }
+@media (max-width: 720px) {
+  .bend-diagram-row { grid-template-columns: 1fr; padding: 14px; }
+  .bend-figure { max-width: 300px; margin: 0 auto; }
+  .bend-formula p { font-size: 19px; }
+}

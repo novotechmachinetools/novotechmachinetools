@@ -460,7 +460,8 @@ NOTE_IW = ("Capacities are the supplier's ratings for steel of up to 65,000 psi 
 # ------------------------------------------------------------------------------------------------ families
 PB_STD = ["Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
           "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
-          "Servo-driven main pump — the pump turns only while the ram moves: 40 – 60 % less energy than a conventional CNC brake, about 60 dB",
+          "Mild hybrid drive as standard: a servo motor and servo pump in place of the conventional motor and pump — the pump turns only while the ram "
+          "moves and stops while the machine waits, loads or unloads: 40 – 60 % less energy, cooler oil, about 60 dB, longer life for the pump, seals and valves",
           "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
           "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
           "Manual top-tool clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",

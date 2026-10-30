@@ -27920,7 +27920,7 @@
  },
  "dn-det-bg-5axis": {
   "src": "tools/src-images/dener-detail/dn-det-bg-5axis.jpg",
-  "alt": "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons",
+  "alt": "5-axis back gauge (X, X′, R, Z1, Z2) for lengths to 26 ft and presses to 800 tons — the arrows show each axis, X′ moving one finger in depth on its own",
   "section": "dener-detail",
   "trim": true,
   "quality": 84,
@@ -27928,11 +27928,11 @@
  },
  "dn-det-bg-6axis-atf": {
   "src": "tools/src-images/dener-detail/dn-det-bg-6axis-atf.jpg",
-  "alt": "6-axis ATF back gauge (X1, X2, R1, R2, Z1, Z2): one flat and one crab-claw finger on each tower",
+  "alt": "6-axis ATF back gauge (X1, X2, R1, R2, Z1, Z2): each finger tower moves in depth, height and sideways on its own — one flat and one crab-claw finger on each tower",
   "section": "dener-detail",
   "trim": true,
   "quality": 84,
-  "cutout": true
+  "cutout": false
  },
  "dn-det-eurostamp-tools": {
   "src": "tools/src-images/dener-detail/dn-det-eurostamp-tools.jpg",
@@ -28144,19 +28144,21 @@
  },
  "ctl-esa-s875w-card": {
   "src": "tools/src-images/controls/ctl-esa-s875w-card.jpg",
-  "alt": "ESA S875 W: 21.5″ Full HD multi-touch 3D control with an Intel i5 PC",
+  "alt": "ESA S875 W: 21.5″ Full HD multi-touch 3D control on its stand — EsaBend 3D shows the tools, the gauge and the part",
   "section": "controls",
   "trim": false,
   "quality": 84,
-  "cutout": false
+  "cutout": true,
+  "upscale": 1.6
  },
  "ctl-esa-s840-card": {
-  "src": "tools/src-images/controls/ctl-esa-s840-card.png",
-  "alt": "ESA S840: 15.6″ HD touch control, up to 6 axes, numeric and 2D programming",
+  "src": "tools/src-images/controls/ctl-esa-s840-card.jpg",
+  "alt": "ESA S840: 15.6″ HD touch control on its stand — up to 6 axes, numeric and 2D programming with automatic bend sequence",
   "section": "controls",
   "trim": false,
   "quality": 84,
-  "cutout": true
+  "cutout": true,
+  "upscale": 1.1
  },
  "ctl-esa-s630": {
   "src": "tools/src-images/controls/ctl-esa-s630.jpg",
@@ -28816,5 +28818,29 @@
   "quality": 84,
   "cutout": false,
   "upscale": 1.25
+ },
+ "dn-det-bg-2axis": {
+  "src": "tools/src-images/dener-detail/dn-det-bg-2axis.jpg",
+  "alt": "2-axis CNC back gauge (X, R): the arrows show the X axis moving the fingers to and from the die and the R axis raising and lowering them",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-bg-4axis": {
+  "src": "tools/src-images/dener-detail/dn-det-bg-4axis.jpg",
+  "alt": "4-axis CNC back gauge (X, R, Z1, Z2): the arrows show X, R and the two fingers travelling sideways along the beam (Z1, Z2)",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-crowning-motor": {
+  "src": "tools/src-images/dener-detail/dn-det-crowning-motor.jpg",
+  "alt": "CNC motorised crowning on a Dener press brake: a gear motor at the end of the bed drives the crowning wedges, set by the control for every bend",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
  }
 }
