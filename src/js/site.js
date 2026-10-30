@@ -169,36 +169,84 @@
     targets.forEach(function (t) { io.observe(t); });
   }
 
-  /* ---------- galleries: thumbnails swap the main image, lightbox on click ---------- */
-  var lightbox = null, lbImg, lbCap, lbItems = [], lbIndex = 0;
+  /* ---------- galleries: thumbnails swap the main image, lightbox on click ----------
+     The photo viewer's white stage has ONE size per photo set: the smallest box that holds every photo of the set
+     at the largest size the window allows (each photo is scaled into it with object-fit: contain). So the stage, the
+     arrows and the close button never move or resize while stepping through a set — only when the window itself is
+     resized (NovoTech, Oct 30 2026: "the left and right arrows must stay in the same place for every photo"). */
+  var lightbox = null, lbStage, lbFrame, lbImg, lbText, lbCount, lbItems = [], lbIndex = 0, lbNavAt = 0, lbDownOnBackdrop = false;
+  var LB_MAX_W = 1216, LB_MIN_W = 560, LB_PAD = 12, LB_CAP = 52;   // px: widest photo, narrowest stage, white margin, caption band
   function ensureLightbox() {
     if (lightbox) return;
     lightbox = d.createElement("dialog");
     lightbox.className = "lightbox";
     lightbox.setAttribute("aria-label", "Photo viewer");
-    lightbox.innerHTML = '<div class="lightbox-inner"><img alt=""><p class="lightbox-caption"></p>' +
+    lightbox.innerHTML = '<div class="lightbox-inner"><div class="lb-frame"><img alt="">' +
+      '<span class="lb-count" aria-live="polite"></span>' +
       '<button type="button" class="lb-prev" aria-label="Previous photo">‹</button>' +
-      '<button type="button" class="lb-next" aria-label="Next photo">›</button>' +
+      '<button type="button" class="lb-next" aria-label="Next photo">›</button></div>' +
+      '<p class="lightbox-caption"><span class="lb-text"></span></p>' +
       '<button type="button" class="lb-close" aria-label="Close">×</button></div>';
     d.body.appendChild(lightbox);
+    lbStage = lightbox.querySelector(".lightbox-inner");
+    lbFrame = lightbox.querySelector(".lb-frame");
     lbImg = lightbox.querySelector("img");
-    lbCap = lightbox.querySelector(".lightbox-caption");
-    lightbox.querySelector(".lb-prev").addEventListener("click", function () { showLb(lbIndex - 1); });
-    lightbox.querySelector(".lb-next").addEventListener("click", function () { showLb(lbIndex + 1); });
+    lbText = lightbox.querySelector(".lb-text");
+    lbCount = lightbox.querySelector(".lb-count");
+    var step = function (dir) { lbNavAt = Date.now(); showLb(lbIndex + dir); };
+    lightbox.querySelector(".lb-prev").addEventListener("click", function () { step(-1); });
+    lightbox.querySelector(".lb-next").addEventListener("click", function () { step(1); });
     lightbox.querySelector(".lb-close").addEventListener("click", function () { lightbox.close(); });
-    lightbox.addEventListener("click", function (e) { if (e.target === lightbox) lightbox.close(); });
-    lightbox.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowLeft") showLb(lbIndex - 1);
-      if (e.key === "ArrowRight") showLb(lbIndex + 1);
+    // a click on the dark backdrop closes the viewer, but only a real one (pressed and released on the backdrop) and
+    // never just after an arrow click, so fast repeated clicks or a swipe that ends outside the photo cannot close it
+    lightbox.addEventListener("pointerdown", function (e) { lbDownOnBackdrop = e.target === lightbox; });
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox && lbDownOnBackdrop && Date.now() - lbNavAt > 700) lightbox.close();
     });
-    onSwipe(lightbox.querySelector(".lightbox-inner"), function (dir) { showLb(lbIndex + dir); });
+    lightbox.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") { e.preventDefault(); step(-1); }
+      if (e.key === "ArrowRight") { e.preventDefault(); step(1); }
+    });
+    onSwipe(lbStage, step);
+    window.addEventListener("resize", function () { if (lightbox.open) layoutLb(); });
+    // empty the frame on close, so the next set never flashes the last photo of the previous one
+    lightbox.addEventListener("close", function () { lbImg.removeAttribute("srcset"); lbImg.removeAttribute("src"); lbImg.alt = ""; });
+  }
+  function layoutLb() {
+    var vw = d.documentElement.clientWidth || window.innerWidth, vh = window.innerHeight;
+    var gap = vw < 600 ? 12 : 28;                                  // dark margin around the stage
+    var maxW = Math.min(vw - 2 * gap - 2 * LB_PAD, LB_MAX_W);
+    var maxH = Math.max(120, vh - 2 * gap - LB_PAD - LB_CAP);
+    var w = 0, h = 0;
+    lbItems.forEach(function (it) {                                // each photo at its largest size; the stage holds them all
+      var r = (+it.w > 0 && +it.h > 0) ? it.h / it.w : 0.75;
+      var iw = Math.min(maxW, maxH / r);
+      w = Math.max(w, iw); h = Math.max(h, iw * r);
+    });
+    w = Math.floor(Math.max(w, Math.min(maxW, LB_MIN_W))); h = Math.floor(h);   // room for the caption and the arrows
+    lbFrame.style.width = w + "px"; lbFrame.style.height = h + "px";
+    lbStage.style.width = (w + 2 * LB_PAD) + "px";                 // a long caption wraps (two lines at most), it never widens the stage
+    lbImg.sizes = w + "px";
   }
   function showLb(i) {
     if (!lbItems.length) return;
     lbIndex = (i + lbItems.length) % lbItems.length;
     var it = lbItems[lbIndex];
-    lbImg.src = it.src; lbImg.srcset = it.srcset || ""; lbImg.sizes = "92vw"; lbImg.alt = it.alt;
-    lbCap.textContent = (it.cap2 || it.alt) + (it.cap1 ? " — " : ""); if (it.cap1) { var bb = d.createElement("b"); bb.textContent = it.cap1; lbCap.appendChild(bb); }
+    lbImg.srcset = it.srcset || ""; lbImg.src = it.src; lbImg.alt = it.alt || "";
+    lbText.textContent = (it.cap2 || it.alt || "") + (it.cap1 ? " — " : "");
+    if (it.cap1) { var bb = d.createElement("b"); bb.textContent = it.cap1; lbText.appendChild(bb); }
+    lbCount.textContent = (lbIndex + 1) + " / " + lbItems.length;
+    if (lbItems.length > 1) [1, -1].forEach(function (k) {         // fetch the neighbours now: the next click shows its photo at once
+      var n = lbItems[(lbIndex + k + lbItems.length) % lbItems.length], pre = new Image();
+      pre.sizes = lbImg.sizes; pre.srcset = n.srcset || ""; pre.src = n.src;
+    });
+  }
+  function openLb(items, i) {
+    ensureLightbox();
+    lbItems = items;
+    lightbox.classList.toggle("is-single", items.length < 2);
+    layoutLb(); showLb(i);
+    lightbox.showModal();
   }
   /* Horizontal swipe / drag detection shared by galleries and the lightbox */
   function onSwipe(el, cb) {
@@ -223,7 +271,7 @@
     var thumbs = Array.prototype.slice.call(g.querySelectorAll(".thumb"));
     var items = thumbs.length ? thumbs.map(function (t) {
       return { src: t.dataset.src, srcset: t.dataset.srcset, w: t.dataset.w, h: t.dataset.h, alt: t.dataset.alt, cap1: t.dataset.cap1, cap2: t.dataset.cap2, cutout: t.classList.contains("is-cutout") };
-    }) : [{ src: main.currentSrc || main.src, srcset: main.srcset, w: main.width, h: main.height, alt: main.alt, cap1: capModel && capModel.textContent, cap2: capDesc && capDesc.textContent, cutout: figure.classList.contains("is-cutout") }];
+    }) : [{ src: main.currentSrc || main.src, srcset: main.srcset, w: main.getAttribute("width"), h: main.getAttribute("height"), alt: main.alt, cap1: capModel && capModel.textContent, cap2: capDesc && capDesc.textContent, cutout: figure.classList.contains("is-cutout") }];
     var index = 0;
     function show(i) {
       index = (i + items.length) % items.length;
@@ -272,23 +320,19 @@
       if (figure._swiped) { e.preventDefault(); return; }
       if (!window.HTMLDialogElement) return; // old browsers: open the image itself
       e.preventDefault();
-      ensureLightbox();
-      lbItems = items; showLb(index);
-      lightbox.showModal();
+      openLb(items, index);
     });
   });
 
   /* ---------- control thumbnails under a family: open in the lightbox as one set ---------- */
   d.querySelectorAll(".control-thumbs").forEach(function (ul) {
     var links = Array.prototype.slice.call(ul.querySelectorAll("a.control-thumb"));
-    var items = links.map(function (a) { var im = a.querySelector("img"); return { src: a.getAttribute("href"), srcset: im.getAttribute("srcset") || "", alt: im.alt, cap1: "", cap2: (a.nextElementSibling && a.nextElementSibling.textContent) || im.alt }; });
+    var items = links.map(function (a) { var im = a.querySelector("img"); return { src: a.getAttribute("href"), srcset: im.getAttribute("srcset") || "", w: im.getAttribute("width"), h: im.getAttribute("height"), alt: im.alt, cap1: "", cap2: (a.nextElementSibling && a.nextElementSibling.textContent) || im.alt }; });
     links.forEach(function (a, i) {
       a.addEventListener("click", function (e) {
         if (!window.HTMLDialogElement) return;
         e.preventDefault();
-        ensureLightbox();
-        lbItems = items; showLb(i);
-        lightbox.showModal();
+        openLb(items, i);
       });
     });
   });
