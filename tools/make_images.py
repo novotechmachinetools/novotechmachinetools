@@ -5,7 +5,8 @@ Reads tools/image_map.json: { "<out-name>": {"src": "<path>", "alt": "...", "tri
                                              "cutout": true/false (optional override),
                                              "orig": "<original photo>"  (cut it out again from this, ignoring a hand-made src),
                                              "cut_size": 1024|1280, "cut_spec": "tools/cutout-specs/x.json", "upscale": 1.5} }
-Writes src/img/<section>/<out-name>-{1200,800,480}.webp (only sizes <= source width, always at least one)
+Writes src/img/<section>/<out-name>-{1200,800,480}.webp (only sizes <= source width, always at least one; a photo 15 % or more
+wider than the largest of those, under 1200 px, also gets <out-name>-<its width>.webp)
 and tools/image_manifest.json with the real dimensions of each variant (used by the templates).
 
 House rule (docs/images.md): a product photo shot on a white studio background is never shown as a
@@ -130,6 +131,10 @@ for name, spec in MAP.items():
     widths = [w for w in SIZES if w <= im.width] or [im.width]
     if im.width < SIZES[-1] and im.width not in widths:
         widths = [im.width]
+    # a photo well between two standard widths keeps its own width as the largest variant too (a 644 px cut-out had only the
+    # 480 px file, a 1,091 px one 800 px), so the gallery and the photo viewer get every pixel the photo has (Oct 30 2026)
+    if im.width < SIZES[0] and im.width not in widths and im.width >= max(widths) * 1.15:
+        widths = [im.width] + widths
     if spec.get("sizes"):        # e.g. the site logo: shown at 178 px, so 360 / 180 px variants instead of 1200 / 800 / 480
         widths = [w for w in spec["sizes"] if w <= im.width] or [im.width]
     # small square-ish thumbnail for gallery strips

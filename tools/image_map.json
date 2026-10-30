@@ -23525,7 +23525,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-b5013": {
   "src": "tools/src-images/ttmc-more/tm-b5013.jpg",
@@ -23534,7 +23534,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-bfm2560": {
   "src": "tools/src-images/ttmc-more/tm-bfm2560.jpg",
@@ -23795,7 +23795,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-ds12": {
   "src": "tools/src-images/ttmc-more/tm-ds12.jpg",
@@ -24596,7 +24596,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-lm1450b": {
   "src": "tools/src-images/ttmc-more/tm-lm1450b.jpg",
@@ -24605,7 +24605,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-lm1450d": {
   "src": "tools/src-images/ttmc-more/tm-lm1450d.jpg",
@@ -24614,7 +24614,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-lock-forms": {
   "src": "tools/src-images/ttmc-more/tm-lock-forms.jpg",
@@ -25518,21 +25518,21 @@
  },
  "tm-t25": {
   "src": "tools/src-images/ttmc-more/tm-t25.jpg",
-  "alt": "T-25 gear-head drill press with 8 speeds, floor model",
+  "alt": "T-25 / T-26 gear-head drill press, floor model, with spindle guard",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t25b": {
   "src": "tools/src-images/ttmc-more/tm-t25b.jpg",
-  "alt": "T-25B bench gear-head drill press",
+  "alt": "T-25B / T-26B bench gear-head drill press",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t25c": {
   "src": "tools/src-images/ttmc-more/tm-t25c.jpg",
@@ -25541,7 +25541,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t28": {
   "src": "tools/src-images/ttmc-more/tm-t28.jpg",
@@ -25550,16 +25550,16 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t32": {
   "src": "tools/src-images/ttmc-more/tm-t32.jpg",
-  "alt": "T-35 gear-head drill press with electric power feed",
+  "alt": "T-32 / T-35 gear-head drill press with power feed",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t40": {
   "src": "tools/src-images/ttmc-more/tm-t40.jpg",
@@ -25572,12 +25572,12 @@
  },
  "tm-t4025": {
   "src": "tools/src-images/ttmc-more/tm-t4025.jpg",
-  "alt": "T4025 bench gear-head drill press",
+  "alt": "T4025 gear-head drill press with box column base",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t50": {
   "src": "tools/src-images/ttmc-more/tm-t50.jpg",
@@ -25586,7 +25586,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t5025": {
   "src": "tools/src-images/ttmc-more/tm-t5025.jpg",
@@ -25604,7 +25604,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-t50e": {
   "src": "tools/src-images/ttmc-more/tm-t50e.jpg",
@@ -25613,7 +25613,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-tb": {
   "src": "tools/src-images/ttmc-more/tm-tb.jpg",
@@ -25622,7 +25622,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-tb12": {
   "src": "tools/src-images/ttmc-more/tm-tb12.jpg",
@@ -25703,7 +25703,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-tfs": {
   "src": "tools/src-images/ttmc-more/tm-tfs.jpg",
@@ -25833,12 +25833,12 @@
  },
  "tm-tx530": {
   "src": "tools/src-images/ttmc-more/tm-tx530.jpg",
-  "alt": "TX530A inverter-drive drill press with power feed and coolant",
+  "alt": "TX530A inverter-drive drill press with power feed, work light and coolant",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-txk160": {
   "src": "tools/src-images/ttmc-more/tm-txk160.jpg",
@@ -26117,7 +26117,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wtz16t": {
   "src": "tools/src-images/ttmc-more/tm-wtz16t.jpg",
@@ -26126,7 +26126,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wu": {
   "src": "tools/src-images/ttmc-more/tm-wu.jpg",
@@ -26139,12 +26139,12 @@
  },
  "tm-x5750": {
   "src": "tools/src-images/ttmc-more/tm-x5750.jpg",
-  "alt": "X5750 universal milling machine with ball screws and three servo motors",
+  "alt": "X5750 / X5750A universal milling machine with ball screws and three servo motors",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-x6325": {
   "src": "tools/src-images/ttmc-more/tm-x6325.jpg",
@@ -26153,7 +26153,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-x6332": {
   "src": "tools/src-images/ttmc-more/tm-x6332.jpg",
@@ -26162,16 +26162,16 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-x6336": {
   "src": "tools/src-images/ttmc-more/tm-x6336.jpg",
-  "alt": "Turret milling machine with horizontal spindle, as the X6336WA",
+  "alt": "X6336 turret milling machine with horizontal spindle and power feed",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-x6436": {
   "src": "tools/src-images/ttmc-more/tm-x6436.jpg",
@@ -26198,7 +26198,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-xq6226w": {
   "src": "tools/src-images/ttmc-more/tm-xq6226w.jpg",
@@ -26207,7 +26207,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-yp38": {
   "src": "tools/src-images/ttmc-more/tm-yp38.jpg",
@@ -26229,12 +26229,12 @@
  },
  "tm-zx5325": {
   "src": "tools/src-images/ttmc-more/tm-zx5325.jpg",
-  "alt": "ZX5325C gear-head drilling and milling machine",
+  "alt": "ZX5325C gear-head drilling and milling machine with DRO",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-zx6350": {
   "src": "tools/src-images/ttmc-more/tm-zx6350.jpg",
@@ -26243,7 +26243,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-zx7550": {
   "src": "tools/src-images/ttmc-more/tm-zx7550.jpg",
@@ -26252,7 +26252,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "es-am-intermediate": {
   "src": "tools/src-images/eurostamp/es-am-intermediate.png",
@@ -26646,7 +26646,7 @@
   "cut_size": 768
  },
  "tm-hbv1250": {
-  "src": "tools/src-images/ttmc-more/tm-hbv1250-clean.jpg",
+  "src": "tools/src-images/ttmc-more/tm-hbv1250.jpg",
   "alt": "HBV-1250 hydraulic press brake with two cylinders and foot pedal",
   "section": "ttmc-more",
   "trim": true,
@@ -28874,5 +28874,140 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "tm-lm1450c": {
+  "src": "tools/src-images/ttmc-more/tm-lm1450c.jpg",
+  "alt": "LM-1450C universal milling machine with DRO",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-t25a": {
+  "src": "tools/src-images/ttmc-more/tm-t25a.jpg",
+  "alt": "T-25A gear-head drill press with the control box on the front",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-t25ch": {
+  "src": "tools/src-images/ttmc-more/tm-t25ch.jpg",
+  "alt": "T-25C-H gear-head drill press with digital depth readout and wire spindle guard",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-t30": {
+  "src": "tools/src-images/ttmc-more/tm-t30.jpg",
+  "alt": "T-30 gear-head drill press with round swivelling table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-t5025-3a": {
+  "src": "tools/src-images/ttmc-more/tm-t5025-3a.jpg",
+  "alt": "T5025-3A gear-head drill press with ±50° tilting table",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tb24": {
+  "src": "tools/src-images/ttmc-more/tm-tb24.jpg",
+  "alt": "TB24 belt-drive column drill with work light",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tb24v": {
+  "src": "tools/src-images/ttmc-more/tm-tb24v.jpg",
+  "alt": "TB24V inverter-drive column drill with digital speed display",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tb28": {
+  "src": "tools/src-images/ttmc-more/tm-tb28.jpg",
+  "alt": "TB28 belt-drive column drill",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tb28v": {
+  "src": "tools/src-images/ttmc-more/tm-tb28v.jpg",
+  "alt": "TB28V inverter-drive column drill with coolant",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-tx530m": {
+  "src": "tools/src-images/ttmc-more/tm-tx530m.jpg",
+  "alt": "TX530 inverter-drive drill press with two-range gearbox and coolant",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-wtz13j": {
+  "src": "tools/src-images/ttmc-more/tm-wtz13j.jpg",
+  "alt": "WTZ-13J variable-speed bench drill press, 1/2″",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-wtz16j": {
+  "src": "tools/src-images/ttmc-more/tm-wtz16j.jpg",
+  "alt": "WTZ-16J variable-speed bench drill press with round table, 5/8″",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-x6336wa": {
+  "src": "tools/src-images/ttmc-more/tm-x6336wa.jpg",
+  "alt": "X6336WA turret milling machine with horizontal ram, power feed and DRO",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-xq6226b": {
+  "src": "tools/src-images/ttmc-more/tm-xq6226b.jpg",
+  "alt": "XQ6226B universal milling machine with power feed",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-zx7550c": {
+  "src": "tools/src-images/ttmc-more/tm-zx7550c.jpg",
+  "alt": "ZX7550C drilling and milling machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
  }
 }

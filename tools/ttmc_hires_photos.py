@@ -116,6 +116,69 @@ PHOTOS.update({
     "tm-bfm2560": dict(dir=GRIND, src="BFM-2560.jpg", alt="BFM-2560 wide-belt finishing and deburring machine, 24″ working width"),
     "tm-wd1800": dict(dir=GRIND, src="WD-1800.png", alt="WD-1800 stainless-steel wet dust collector for metal grinding dust", boxes=[(557, 445, 656, 508)]),
 })
+# ---------------------------------------------------------------- the owner's fourth set (Oct 30 2026): drill presses and milling machines
+# (WeTransfer "pictures for drilling and milling").  A photo replaces the catalogue crop where it is larger or cleaner (the crops of the
+# T-32, T-25B and TX530A still carried catalogue text) and photos are added for models on the site that had none.  Not used: T-40.png,
+# WTZ-16JF.jpg and TX-20.png (the same pictures as the crops on the site, at the same or a smaller size) and "T25BC.png" (byte for byte
+# the same file as "T25 T26.png").  boxes: the TTMC logo, and other model names on the badges (S28M on the T-28, S35ME on the T-35, T32
+# on the T-30, T5025-3A on the T5025-1A, TBH24 / SBH28 on the TB column drills) so no badge contradicts the caption.
+DRILLMILL = "/home/claude/ttmc-new/drill_mill_2026-10-30/"
+PHOTOS.update({
+    # ---- T-25 – T-40 gear-head drill presses (tt-t25)
+    "tm-t25": dict(dir=DRILLMILL, src="T25 T26.png", alt="T-25 / T-26 gear-head drill press, floor model, with spindle guard"),
+    "tm-t25a": dict(dir=DRILLMILL, src="T25A.png", alt="T-25A gear-head drill press with the control box on the front"),
+    "tm-t25b": dict(dir=DRILLMILL, src="T-25B T26B.png", alt="T-25B / T-26B bench gear-head drill press"),
+    "tm-t25c": dict(dir=DRILLMILL, src="T-25C.jpg", alt="T-25C gear-head drill press with 24 V control and spindle guard switch"),
+    "tm-t25ch": dict(dir=DRILLMILL, src="T25C-H.png", alt="T-25C-H gear-head drill press with digital depth readout and wire spindle guard",
+                     boxes=[(594, 162, 695, 206)]),
+    "tm-t28": dict(dir=DRILLMILL, src="T-28.jpg", alt="T-28 gear-head drill press with mechanical power feed", boxes=[(782, 222, 838, 252)]),
+    "tm-t30": dict(dir=DRILLMILL, src="T-30.png", alt="T-30 gear-head drill press with round swivelling table", boxes=[(449, 172, 483, 202)]),
+    "tm-t32": dict(dir=DRILLMILL, src="T32 T-35.jpg", alt="T-32 / T-35 gear-head drill press with power feed", boxes=[(464, 112, 528, 140)]),
+    # ---- T5025 / T4025 (tt-t5025)
+    "tm-t5025-1a": dict(dir=DRILLMILL, src="T5025-1A.jpg", alt="T5025-1A gear-head drill press with round table", boxes=[(790, 298, 836, 325)]),
+    "tm-t5025-3a": dict(dir=DRILLMILL, src="T5025-3A.png", alt="T5025-3A gear-head drill press with ±50° tilting table"),
+    "tm-t4025": dict(dir=DRILLMILL, src="T4025.png", alt="T4025 gear-head drill press with box column base"),
+    # ---- T-50 / TX530 (tt-t50)
+    "tm-t50": dict(dir=DRILLMILL, src="T-50.jpg", alt="T-50 heavy-duty gear-head drill press, 2″ in steel, 12 speeds and power feed"),
+    "tm-t50e": dict(dir=DRILLMILL, src="T-50E.png", alt="T-50E heavy-duty drill press with 400 mm throat and swivelling table", boxes=[(641, 283, 720, 320)]),
+    "tm-tx530": dict(dir=DRILLMILL, src="TX530A.png", alt="TX530A inverter-drive drill press with power feed, work light and coolant", boxes=[(275, 298, 297, 316)]),
+    "tm-tx530m": dict(dir=DRILLMILL, src="TX530.jpg", alt="TX530 inverter-drive drill press with two-range gearbox and coolant"),
+    # ---- TB column drills (tt-tb)
+    "tm-tb": dict(dir=DRILLMILL, src="TB36.png", alt="TB36 belt-drive industrial column drill"),
+    "tm-tbv": dict(dir=DRILLMILL, src="TB36V.png", alt="TB36V inverter-drive column drill with coolant"),
+    "tm-tb24": dict(dir=DRILLMILL, src="TB24.png", alt="TB24 belt-drive column drill with work light", boxes=[(364, 185, 406, 203)]),
+    "tm-tb28": dict(dir=DRILLMILL, src="TB28.png", alt="TB28 belt-drive column drill", boxes=[(356, 93, 399, 111)]),
+    "tm-tb24v": dict(dir=DRILLMILL, src="TB24V.png", alt="TB24V inverter-drive column drill with digital speed display", boxes=[(572, 340, 684, 366)]),
+    "tm-tb28v": dict(dir=DRILLMILL, src="TB28V.png", alt="TB28V inverter-drive column drill with coolant", boxes=[(382, 114, 428, 129)]),
+    # ---- WTZ variable-speed drill presses (tt-wtz)
+    "tm-wtz13j": dict(dir=DRILLMILL, src="WTZ-13J.png", alt="WTZ-13J variable-speed bench drill press, 1/2″"),
+    "tm-wtz16j": dict(dir=DRILLMILL, src="WTZ-16J.png", alt="WTZ-16J variable-speed bench drill press with round table, 5/8″"),
+    "tm-wtz16q": dict(dir=DRILLMILL, src="WTZ-16Q.png", alt="WTZ-16Q bench drill press with variable speed"),
+    "tm-wtz16t": dict(dir=DRILLMILL, src="WTZ-16T.png", alt="WTZ-16T drilling and tapping press with automatic reverse"),
+    # ---- turret mills (tt-mill-turret)
+    "tm-x6332": dict(dir=DRILLMILL, src="X6332WA.png", alt="X6332WA vertical and horizontal turret milling machine"),
+    "tm-x6325": dict(dir=DRILLMILL, src="X6325W.png", alt="X6325W turret milling machine with horizontal spindle"),
+    "tm-x6336": dict(dir=DRILLMILL, src="X6336.png", alt="X6336 turret milling machine with horizontal spindle and power feed"),
+    "tm-x6336wa": dict(dir=DRILLMILL, src="X6336WA.png", alt="X6336WA turret milling machine with horizontal ram, power feed and DRO"),
+    # ---- universal mills (tt-mill-univ, tt-mill-heavy)
+    "tm-xq6226": dict(dir=DRILLMILL, src="XQ6226A.png", alt="XQ6226A universal milling machine with swivel head"),
+    "tm-xq6226b": dict(dir=DRILLMILL, src="XQ6226B.png", alt="XQ6226B universal milling machine with power feed"),
+    "tm-xq6226w": dict(dir=DRILLMILL, src="XQ6226W.png", alt="XQ6226W universal milling machine"),
+    "tm-lm1450": dict(dir=DRILLMILL, src="LM-1450A.jpg", alt="LM-1450A universal milling machine, ISO50, with DRO"),
+    "tm-lm1450b": dict(dir=DRILLMILL, src="LM-1450B.jpg", alt="LM-1450B universal milling machine with servo feed"),
+    "tm-lm1450c": dict(dir=DRILLMILL, src="LM-1450C.jpg", alt="LM-1450C universal milling machine with DRO"),
+    "tm-lm1450d": dict(dir=DRILLMILL, src="LM-1450D.jpg", alt="LM-1450D universal milling machine for production work"),
+    "tm-x5750": dict(dir=DRILLMILL, src="X5750 X5750A.jpg", alt="X5750 / X5750A universal milling machine with ball screws and three servo motors"),
+    # ---- drill-mills (tt-zx, tt-mill-small)
+    "tm-zx5325": dict(dir=DRILLMILL, src="ZX5325C.jpg", alt="ZX5325C gear-head drilling and milling machine with DRO"),
+    "tm-zx7550": dict(dir=DRILLMILL, src="ZX7550CW.png", alt="ZX7550CW drilling and milling machine with vertical and horizontal spindles"),
+    "tm-zx7550c": dict(dir=DRILLMILL, src="ZX7550C.png", alt="ZX7550C drilling and milling machine"),
+    "tm-zx6350": dict(dir=DRILLMILL, src="ZX6350C.png", alt="ZX6350C drilling and milling machine with vertical and horizontal spindles"),
+    "tm-dm20": dict(dir=DRILLMILL, src="DM-20.png", alt="DM-20 radial drill-mill with cross table and box table"),
+    # ---- keyseater and slotter (tt-slot)
+    "tm-b5013": dict(dir=DRILLMILL, src="B5013.png", alt="B5013 slotting machine with swivel head for keyways and splines", boxes=[(3425, 1612, 3825, 1797)]),
+    "tm-b5012": dict(dir=DRILLMILL, src="B5012.tif", alt="B5012 keyseater for keyways in single and small-batch work"),
+})
 BIG = 1800           # px: a source bigger than this is scaled down before the cut-out
 
 
@@ -148,6 +211,11 @@ def fill_boxes(im, boxes):
 def process(key):
     p = PHOTOS[key]
     im = Image.open(p.get("dir", SRC) + p["src"])
+    if im.mode == "CMYK" and im.info.get("icc_profile"):     # print files (B5012.tif): through their own profile, not the naive formula
+        import io
+        from PIL import ImageCms
+        src_prof = ImageCms.ImageCmsProfile(io.BytesIO(im.info["icc_profile"]))
+        im = ImageCms.profileToProfile(im, src_prof, ImageCms.createProfile("sRGB"), outputMode="RGB")
     im = im.convert("RGBA") if im.mode == "RGBA" else im.convert("RGB")
     if im.mode == "RGBA" and im.getchannel("A").getextrema()[0] == 255:
         im = im.convert("RGB")

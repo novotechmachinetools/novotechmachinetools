@@ -21,7 +21,7 @@ NOTE = ("Metric values in brackets are the manufacturer's figures; thin sheet is
         "L × W × H and weight is the net weight of the machine.")
 NOTE_HZ = (NOTE + " Speeds marked “rated at 50 Hz” are the manufacturer's 50 Hz figures — motors run about 20 % faster on 60 Hz power.")
 MANUAL_TAG = ("NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts "
-              "and support from Mississauga, ON, Canada")
+              "and support in Canada")
 
 
 def F(fid, page, group, name, short, tables, summary, features, images, optional=(), headline="", cap=None, note=NOTE, manual=False,
@@ -351,7 +351,7 @@ DRILL = [
       ["Drilling capacity 1 – 1-9/16″ (25 – 40 mm) in steel; MT3 or MT4 spindle", "8 spindle speeds, about 90 – 3,600 rpm at 60 Hz",
        "Power feed 0.004 – 0.013″/rev on the T-28, T-32, T-35, T-40", "Two-speed motors 0.9 – 2.4 HP; 3 HP on the T-40",
        "Safety spindle guard; C models with 24 V control and guard micro-switch; T-25C-H with depth readout"],
-      ["tm-t25", "tm-t28", "tm-t32", "tm-t40", "tm-t25c", "tm-t25b"], headline="1 – 1-9/16″ in steel", cap="drills [Drilling capacity in steel] in steel",
+      ["tm-t25", "tm-t25a", "tm-t25c", "tm-t25ch", "tm-t25b", "tm-t28", "tm-t30", "tm-t32", "tm-t40"], headline="1 – 1-9/16″ in steel", cap="drills [Drilling capacity in steel] in steel",
       optional=["Tapping (T-25, T-25A, T-25B, T-26, T-26B, T-28B, T-30, T-30B)"]),
     F("tt-t5025", P_DRILL, "gear", "T5025 · T4025 gear-head drill presses with tilting table, 1″", "T5025 / T4025", T["tt-t5025"],
       "Compact gear-head drill presses for 1″ (25 mm) in steel with eight speeds, a forward / reverse switch, preset drilling depth and a "
@@ -359,7 +359,7 @@ DRILL = [
       "have a 12.4″ deep throat.",
       ["1″ (25 mm) in steel; MT3; 5.5″ (140 mm) spindle travel", "8 speeds, 120 – 3,480 rpm at 60 Hz; two-speed 3/4 / 1 HP motor",
        "Tilting table ±50° (T5025-3A, T5025H); T-slotted base", "Forward / reverse switch; preset drilling depth; spindle cover micro-switch"],
-      ["tm-t5025", "tm-t5025-1a", "tm-t4025"], headline="1″ in steel", cap="throat [Throat (spindle to column)]"),
+      ["tm-t5025-1a", "tm-t5025-3a", "tm-t4025", "tm-t5025"], headline="1″ in steel", cap="throat [Throat (spindle to column)]"),
     F("tt-t50", P_DRILL, "gear", "T-50 heavy gear-head drill presses, 2″, and TX530 inverter drill presses", "T-50 / TX530 heavy-duty", T["tt-t50"],
       "The heavy end of the range: the T-50 and T-50E drill 2″ (50 mm) in steel and tap M30, with twelve speeds, a three-step power feed, "
       "hardened gears and an MT4 spindle; the T-50E has a 15.7″ deep throat, a 23.6 × 21.7″ table that swivels and coolant built into "
@@ -368,7 +368,7 @@ DRILL = [
       ["T-50 / T-50E: 2″ (50 mm) in steel, 2-1/4″ in cast iron; taps M30 in steel", "12 speeds 75 – 1,525 rpm at 60 Hz; power feed 0.004 / 0.008 / 0.012″/rev",
        "T-50E: 15.7″ (400 mm) throat, swivelling table, coolant in the base", "TX530 / TX530A: inverter speed control with high / low gear range; 3 HP; coolant; guard micro-switch",
        "TX530A: mechanical power feed"],
-      ["tm-t50", "tm-t50e", "tm-tx530"], headline="To 2″ in steel", cap="[Drilling capacity]"),
+      ["tm-t50", "tm-t50e", "tm-tx530m", "tm-tx530"], headline="To 2″ in steel", cap="[Drilling capacity]"),
     F("tt-tb", P_DRILL, "column", "TB24 · TB28 · TB36 column drills — belt drive or inverter", "TB column drills", T["tt-tb"],
       "Industrial column drills with a V-belt drive and a quality motor, a digital speed display, forward / reverse, a precisely finished "
       "table with cross T-slots, a large base plate, an adjustable chuck guard and a work light, for 15/16 to 1-5/16″ (24 – 34 mm) in steel. "
@@ -377,14 +377,14 @@ DRILL = [
       ["24, 28 and 34 mm (15/16, 1-1/8 and 1-5/16″) in steel; MT2, MT3, MT4", "TB: 7 – 16 belt speeds; TB…V: stepless 35 – 6,500 rpm by frequency converter, 1-phase",
        "Digital speed display; forward / reverse; easy tool change", "T-slotted table and base; adjustable chuck guard; work light",
        "Coolant on the TB28V and TB36V"],
-      ["tm-tb", "tm-tbv"], headline="15/16 – 1-5/16″ in steel", cap="drills [Drilling capacity in steel] in steel"),
+      ["tm-tb", "tm-tbv", "tm-tb24", "tm-tb24v", "tm-tb28", "tm-tb28v"], headline="15/16 – 1-5/16″ in steel", cap="drills [Drilling capacity in steel] in steel"),
     F("tt-wtz", P_DRILL, "vs", "WTZ variable-speed drill presses, 1/2″ and 5/8″, and WTZ-16T drilling and tapping press", "WTZ variable-speed", T["tt-wtz"],
       "Variable-speed bench and floor drill presses with a digital speed display for 1/2″ and 5/8″ holes in steel, and the WTZ-16T, "
       "which drills 5/8″ and taps M12: switched to tapping, the spindle stops in 0.2 s and reverses to back the tap out, with a laser "
       "cross-hair and a digital depth readout in mm or inch.",
       ["1/2″ (13 mm) and 5/8″ (16 mm) in steel; MT2", "Variable speed 500 – 2,600 rpm with digital display",
        "Bench models and the WTZ-16JF floor model", "WTZ-16T: taps M12 with automatic reverse; spindle runout under 0.0004″; laser cross-hair; digital depth readout"],
-      ["tm-wtz", "tm-wtz16q", "tm-wtz16t"], headline="1/2 – 5/8″ in steel", cap="drills [Drilling capacity in steel] in steel"),
+      ["tm-wtz16j", "tm-wtz13j", "tm-wtz16q", "tm-wtz", "tm-wtz16t"], headline="1/2 – 5/8″ in steel", cap="drills [Drilling capacity in steel] in steel"),
     F("tt-vise", P_DRILL, "vise", "Drill press vises and welding angle clamps", "Vises and clamps", T["tt-vise"],
       "Vises for the drill press and the mill: the BSM-N drill press vises with changeable prismatic jaws, the TSL vises (Q models with a "
       "quick lock), the TMS vises with slotted bases, the TQ tilting, swivel and compound precision vises, and the AC welding angle clamps "
@@ -407,14 +407,14 @@ MILL = [
       ["Tables 50 × 10″ to 64.2 × 14.2″; X travel 23.6 – 51.2″", "Vertical head 60 – 3,600, 80 – 5,440 or 70 – 7,200 rpm; horizontal spindle 40 – 1,800 rpm (W models)",
        "Power feed X, Y; motorized Z — or power feed on all three axes (X6336, X6336WA), with rapid traverse on the X6336",
        "3 – 5.5 HP; quill travel 5″ (127 mm)", "Table swivel ±45° (X6332WA, X6336WA)"],
-      ["tm-x6332", "tm-4h", "tm-x6325", "tm-x6336b", "tm-x6336-dro", "tm-x6336"], headline="Tables to 64 × 14″", cap="[Table]"),
+      ["tm-x6332", "tm-4h", "tm-x6325", "tm-x6336", "tm-x6336wa", "tm-x6336b", "tm-x6336-dro"], headline="Tables to 64 × 14″", cap="[Table]"),
     F("tt-mill-univ", P_MILL, "univ", "XQ6226 · X6436 universal milling machines, ISO40 / ISO50", "XQ6226 / X6436 universal", [T["tt-mill"][1]],
       "Universal milling machines with a horizontal spindle and a vertical head that swivels through 360°: the XQ6226 range with a "
       "44 – 50″ table, hardened ways, an ISO40 spindle and power feed on X and Y (motorized knee on the B), and the X6436 with ISO40 "
       "vertical and ISO50 horizontal spindles, a 52″ table and servo feeds with rapid traverse on all three axes.",
       ["Horizontal milling to Ø5″ (125 mm); vertical milling to Ø1 – 1-1/8″", "XQ6226: 40 – 1,600 rpm; table 44 – 50″; power feed X, Y",
        "X6436: servo feed and rapid traverse X, Y, Z; 5.5 / 7.5 HP", "Hardened guideways; head swivels 360°"],
-      ["tm-xq6226", "tm-xq6226w", "tm-x6436"], headline="Tables 44 – 52″", cap="[Table]"),
+      ["tm-xq6226", "tm-xq6226b", "tm-xq6226w", "tm-x6436"], headline="Tables 44 – 52″", cap="[Table]"),
     F("tt-mill-heavy", P_MILL, "univ", "LM-1450 · X5750 heavy universal milling machines, ISO50", "LM-1450 / X5750 heavy", [T["tt-mill"][2]],
       "Heavy ISO50 universal mills for production and large parts: the LM-1450 range with power feed and rapid traverse on all three "
       "axes, a head that swivels 360°, hardened three-axis ways and a hardened and ground table — 64 to 79″ long, with up to 15 HP on "
@@ -423,14 +423,14 @@ MILL = [
       ["Tables 63 – 79″ (1,600 – 2,000 mm); X travel 31.5 – 55.1″", "ISO50 spindles; horizontal 30 – 1,800 rpm, vertical 60 – 1,700 rpm",
        "Power feed and rapid traverse on X, Y, Z; servo feed on the LM-1450B; ball screws and servo motors on the X5750",
        "5.5 – 15 HP; 5,842 – 9,921 lb", "Digital readout at extra cost"],
-      ["tm-lm1450", "tm-lm1450b", "tm-lm1450d", "tm-x5750"], headline="Tables 63 – 79″, ISO50", cap="[Table]", optional=["Digital readout (DRO)"]),
+      ["tm-lm1450", "tm-lm1450b", "tm-lm1450c", "tm-lm1450d", "tm-x5750"], headline="Tables 63 – 79″, ISO50", cap="[Table]", optional=["Digital readout (DRO)"]),
     F("tt-zx", P_MILL, "drill", "ZX drilling and milling machines, 2″ drilling", "ZX drill-mills", T["tt-zx"],
       "Drilling and milling machines that drill 2″ (50 mm), face-mill Ø4 – 5″ and tap M16 on one column: the ZX5325 with a rotary milling "
       "head and a table that swivels ±45°, belt drive (ZX5325) or gear head (ZX5325C); the ZX7550C, ZX7550CW, ZX6350C and ZX6350Z on a "
       "knee, the W and 6350 models with a horizontal spindle as well.",
       ["Drilling 2″ (50 mm); face milling Ø4 – 5″; tapping M16", "Tables 31.5 × 9.4″ to 49.2 × 12.6″",
        "Vertical spindle 90 – 2,400 rpm; horizontal spindle 38 – 1,335 rpm on the W and 6350 models", "1.5 – 3 HP"],
-      ["tm-zx5325", "tm-zx7550", "tm-zx6350"], headline="2″ drilling", cap="[Table]", optional=["Power feed on Y and Z", "Digital readout (DRO)"]),
+      ["tm-zx5325", "tm-zx7550c", "tm-zx7550", "tm-zx6350"], headline="2″ drilling", cap="[Table]", optional=["Power feed on Y and Z", "Digital readout (DRO)"]),
     F("tt-mill-small", P_MILL, "drill", "TX-20 mini mill-drill and DM-20 radial drill-mill", "TX-20 / DM-20", T["tt-mill-small"],
       "Small machines for the bench and the repair shop: the TX-20 mill-drill with a 27.6 × 7.1″ X-Y table and variable speed for "
       "recessing, surface and end milling, grooving and angled drilling; the DM-20 radial drill-mill with a 19.7″ arm reach, a cross "
