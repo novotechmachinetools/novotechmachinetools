@@ -18,7 +18,7 @@ import laser_nav as LN
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 COPY = json.load(open(os.path.join(ROOT, "tools", "laser_copy.json"), encoding="utf-8"))
 
-BRAND_LINE = ("The premium lasers are built by Dener Makina in Kayseri, Turkey (Dener Canada parts in Mississauga, ON, Canada); NovoTech's own value line is built in "
+BRAND_LINE = ("The premium lasers are built by Dener Makina in Kayseri, Turkey; NovoTech's own value line is built in "
               "China to our specification; the Senfeng value line in Jinan, China (CE / FDA / ETL). All sold, installed and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Premium and value lines, one supplier", "text": "Every laser comes with a CSA-approved panel, a chiller, nesting software, a 1-year warranty, and installation, training, parts and remote diagnostics from Mississauga, ON, Canada — whichever line you choose."}
 SHEET_RANGE = {"range_pick": [["working_area", "area"], "power", "speed", "accel", "load"], "range_cols": ["Working area", "Laser power", "Max. speed", "Acceleration", "Max. sheet load"]}

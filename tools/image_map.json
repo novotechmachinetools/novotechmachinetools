@@ -26646,7 +26646,7 @@
   "cut_size": 768
  },
  "tm-hbv1250": {
-  "src": "tools/src-images/ttmc-more/tm-hbv1250.jpg",
+  "src": "tools/src-images/ttmc-more/tm-hbv1250-clean.jpg",
   "alt": "HBV-1250 hydraulic press brake with two cylinders and foot pedal",
   "section": "ttmc-more",
   "trim": true,
@@ -27628,10 +27628,10 @@
   "quality": 84
  },
  "dn-xl1560-control": {
-  "src": "tools/src-images/dener-xl1560/dn-xl1560-control.png",
-  "alt": "ESA touch-screen control pendant of the Dener XL 1560 — start, stop, muting lamp and general reset",
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-control.jpg",
+  "alt": "ESA touch-screen control pendant of the Dener XL 1560 — emergency stop, start, stop, muting lamp and general reset",
   "section": "dener-xl1560",
-  "trim": true,
+  "trim": false,
   "quality": 84,
   "cutout": false
  },
@@ -28768,5 +28768,53 @@
   "trim": true,
   "quality": 84,
   "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, with the ESA S840 control pendant — studio photo"
+ },
+ "dn-xl1560-photo-left": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-photo-left.png",
+  "section": "dener-xl1560",
+  "trim": true,
+  "quality": 84,
+  "alt": "Dener XL 1560 compact CNC press brake from the left, 66 US tons × 5 ft, with the ESA control pendant on its swing arm"
+ },
+ "dn-xl1560-photo-front": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-photo-front.png",
+  "section": "dener-xl1560",
+  "trim": true,
+  "quality": 84,
+  "alt": "Dener XL 1560 compact CNC press brake, front view: segmented top tools, side guards and the ESA control pendant"
+ },
+ "dn-xl1560-photo-right": {
+  "src": "tools/src-images/dener-xl1560/dn-xl1560-photo-right.png",
+  "section": "dener-xl1560",
+  "trim": true,
+  "quality": 84,
+  "alt": "Dener XL 1560 compact CNC press brake from the right, with the side guard door and the ESA control pendant"
+ },
+ "vl-cp-nc-adh": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-adh.jpg",
+  "alt": "NovoTech WC67K compact NC hydraulic press brake with torsion-bar synchronisation, segmented top tools and foot pedal",
+  "section": "value-compact",
+  "trim": true,
+  "quality": 84,
+  "cutout": true,
+  "cut_spec": "tools/cutout-specs/birefnet/vl-cp-nc-adh.json",
+  "upscale": 1.5
+ },
+ "vl-cp-nc-cabinet": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-cabinet.jpg",
+  "alt": "Electrical cabinet of the NC press brake: Schneider TeSys contactors and motor protection, numbered wiring",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-mini-1": {
+  "src": "tools/src-images/value-sheet/vl-wadg-mini-1.png",
+  "alt": "NovoTech compact electric servo press brake — bench-size WADG for small parts, with touchscreen control, two-axis back gauge and foot pedal",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 84,
+  "cutout": false,
+  "upscale": 1.25
  }
 }

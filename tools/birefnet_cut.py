@@ -95,6 +95,18 @@ def apply_spec(alpha, im, spec):
         alpha = np.maximum(alpha, (np.asarray(m) > 0).astype(np.float32))
     for poly in spec.get('drop', []):
         alpha = np.where(poly_mask(poly), 0.0, alpha)
+    if spec.get('fill_holes_lt'):
+        # speckles: small see-through specks inside the machine where a light panel matched the white backdrop;
+        # holes larger than the threshold (real openings) stay transparent
+        from scipy import ndimage
+        solid = alpha > 0.5
+        holes = ndimage.binary_fill_holes(solid) & ~solid
+        lab, n = ndimage.label(holes)
+        if n:
+            sizes = ndimage.sum(holes, lab, range(1, n + 1))
+            small = np.isin(lab, [i + 1 for i, sz in enumerate(sizes) if sz < spec['fill_holes_lt']])
+            small = ndimage.binary_dilation(small, iterations=1) & ~(alpha > 0.98)
+            alpha = np.where(small, 1.0, alpha)
     return alpha
 
 

@@ -1,7 +1,6 @@
 {
  "order": [
-  "dn-xl-small",
-  "dn-xl-large",
+  "dn-xl",
   "dn-xl-1560",
   "dn-xh",
   "dn-ddm",
@@ -34,8 +33,8 @@
   "vn-ult"
  ],
  "families": {
-  "dn-xl-small": {
-   "id": "dn-xl-small",
+  "dn-xl": {
+   "id": "dn-xl",
    "control": {
     "title": "ESA S840 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
     "text": "Every XL comes with the 15″ ESA S840 touch screen: numeric and 2D graphic programming, automatic calculation of tonnage, bend sequence and back-gauge positions, tool library, up to 6 axes, USB and network. For shops that program from CAD or run many different parts, Dener fits the 21″ ESA S875 W (3D programming and simulation, DXF / STEP import, EsaBend 3D), the 24″ Delem DA-66S (2D graphic programming with a 3D machine view, Profile-S2D offline) or the 24″ Delem DA-69S (full 3D programming and simulation, Profile-S3D) — the same four controls on every Dener press brake.",
@@ -47,12 +46,13 @@
     ]
    },
    "brand": "dener",
-   "name": "XL hydraulic CNC press brakes, 66 – 353 US tons × 5 – 10 ft",
-   "short": "XL hydraulic press brakes 5 – 10 ft",
-   "models_label": "XL 1560 – XL 30320 · 8 models",
-   "summary": "The Dener XL is the hydraulic press brake most Canadian shops buy from us: a stress-relieved monoblock frame, Hawe hydraulics at constant pressure, Y1-Y2 ram axes and an X back gauge on ball screw and linear guides, driven from a 15″ ESA S840 2D graphic control — the operator draws the part and the control works out the sequence, tonnage and back-gauge positions. Eight models from 66 US tons × 5 ft to 353 US tons × 10 ft, with European-style tooling, front supports and the full list of options from CNC crowning and 6-axis back gauges to angle measurement and robot cells.",
+   "name": "XL hydraulic CNC press brakes, 66 – 661 US tons × 5 – 20 ft",
+   "short": "XL hydraulic press brakes",
+   "models_label": "XL 1560 – XL 60600 · 18 models",
+   "summary": "The Dener XL is the hydraulic press brake most Canadian shops buy from us: a stress-relieved monoblock frame, Hawe hydraulics at constant pressure, Y1-Y2 ram axes and an X back gauge on ball screw and linear guides, driven from a 15″ ESA S840 2D graphic control — the operator draws the part and the control works out the sequence, tonnage and back-gauge positions. Eighteen models from 66 US tons × 5 ft to 661 US tons × 20 ft on the same frame design: the 5 to 10 ft machines to 353 US tons for job-shop sheet work, the 12, 13 and 20 ft machines to 661 US tons with up to 26.8″ daylight, 17.7″ stroke and a 23.6″ throat on the 400 and 600-ton sizes for deep boxes and large profiles (the 60600 sits in a pit). European-style tooling and front supports come with every machine; the options run from CNC crowning and 6-axis back gauges to angle measurement, sheet followers and robot cells, and for longer work Dener builds tandem machines — two XLs on one control bending to 60 ft and 1,800 US tons.",
    "features": [
     "Monoblock welded frame, stress-relieved and machined in one setting; fixed upper table, 100 % free bending area between the housings",
+    "5 to 20 ft bending lengths, 66 to 661 US tons; 23.6″ (600 mm) throat on the 400 and 600 t machines",
     "X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes",
     "15″ ESA S840 2D graphic touch-screen CNC control",
     "European-style segmented punch and die with European-style holders",
@@ -77,10 +77,15 @@
    "images": [
     "dn-xl-1",
     "dn-xl-2",
+    "dn-xl-3",
     "dn-xf-1",
+    "dn-xf-2",
     "dn-xl-video-1",
+    "dn-xl-video-2",
     "dn-xl-backgauge",
+    "dn-xl-follower",
     "dn-xh-4",
+    "dn-xf-3",
     "dn-xl-control"
    ],
    "videos": [
@@ -115,6 +120,42 @@
      "thumb": "video-dXorm3f4fBY"
     },
     {
+     "id": "_rdb1prKsxc",
+     "title": "20 ft × 600 ton DENER Puma XL heavy-duty press brake",
+     "duration": "PT1M22S",
+     "thumb": "video-_rdb1prKsxc"
+    },
+    {
+     "id": "MkaKtgulHKw",
+     "title": "Heavy-duty CNC hydraulic press brake PUMA XL 20 ft × 600 ton with sheet follower",
+     "duration": "PT1M33S",
+     "thumb": "video-MkaKtgulHKw"
+    },
+    {
+     "id": "FpHkRYeceyA",
+     "title": "20 ft × 1,000 ton 9-axis CNC heavy-duty press brake",
+     "duration": "PT3M30S",
+     "thumb": "video-FpHkRYeceyA"
+    },
+    {
+     "id": "AGifmIGQOso",
+     "title": "DENER 60 ft × 1,800 ton tandem press brake with auto feeder",
+     "duration": "PT1M4S",
+     "thumb": "video-AGifmIGQOso"
+    },
+    {
+     "id": "jMqwk_yyCBo",
+     "title": "DENER 1,600 ton × 40 ft tandem press brake installation time-lapse",
+     "duration": "PT3M4S",
+     "thumb": "video-jMqwk_yyCBo"
+    },
+    {
+     "id": "dsZ8f7BKP84",
+     "title": "Tandem press brake PUMA XL 2 × 20 ft × 320 ton",
+     "duration": "PT1M4S",
+     "thumb": "video-dsZ8f7BKP84"
+    },
+    {
      "id": "fG6TQ8TseSo",
      "title": "Hydraulic press brake with ATF 6-axis back gauge",
      "duration": "PT1M39S",
@@ -137,8 +178,8 @@
     "kind": "table",
     "tables": [
      {
-      "title": "XL hydraulic press brakes · 5 – 10 ft",
-      "sub": "8 models · 66 – 353 US tons",
+      "title": "XL hydraulic CNC press brakes · 5 – 20 ft",
+      "sub": "18 models · 66 – 661 US tons",
       "models": [
        "XL 1560",
        "XL 2060",
@@ -147,7 +188,17 @@
        "XL 30135",
        "XL 30175",
        "XL 30220",
-       "XL 30320"
+       "XL 30320",
+       "XL 36175",
+       "XL 36220",
+       "XL 40175",
+       "XL 40220",
+       "XL 40320",
+       "XL 40400",
+       "XL 60220",
+       "XL 60320",
+       "XL 60400",
+       "XL 60600"
       ],
       "rows": [
        {
@@ -161,7 +212,17 @@
          "149 US tons (135 t)",
          "193 US tons (175 t)",
          "243 US tons (220 t)",
-         "353 US tons (320 t)"
+         "353 US tons (320 t)",
+         "193 US tons (175 t)",
+         "243 US tons (220 t)",
+         "193 US tons (175 t)",
+         "243 US tons (220 t)",
+         "353 US tons (320 t)",
+         "441 US tons (400 t)",
+         "243 US tons (220 t)",
+         "353 US tons (320 t)",
+         "441 US tons (400 t)",
+         "661 US tons (600 t)"
         ],
         "key": true
        },
@@ -176,7 +237,17 @@
          "9.9 ft · 118.9″ (3,020 mm)",
          "9.9 ft · 118.9″ (3,020 mm)",
          "9.9 ft · 118.9″ (3,020 mm)",
-         "9.9 ft · 118.9″ (3,020 mm)"
+         "9.9 ft · 118.9″ (3,020 mm)",
+         "12 ft · 143.7″ (3,650 mm)",
+         "12 ft · 143.7″ (3,650 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "13.3 ft · 159.4″ (4,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)",
+         "19.8 ft · 238.2″ (6,050 mm)"
         ],
         "key": true
        },
@@ -191,7 +262,17 @@
          "100.6″ (2,555 mm)",
          "100.6″ (2,555 mm)",
          "100.6″ (2,555 mm)",
-         "100.6″ (2,555 mm)"
+         "100.6″ (2,555 mm)",
+         "122.0″ (3,100 mm)",
+         "122.0″ (3,100 mm)",
+         "139.8″ (3,550 mm)",
+         "139.8″ (3,550 mm)",
+         "139.8″ (3,550 mm)",
+         "139.8″ (3,550 mm)",
+         "200.8″ (5,100 mm)",
+         "200.8″ (5,100 mm)",
+         "200.8″ (5,100 mm)",
+         "200.8″ (5,100 mm)"
         ],
         "key": false
        },
@@ -206,7 +287,17 @@
          "12.6″ (320 mm)",
          "13.8″ (350 mm)",
          "13.8″ (350 mm)",
-         "15.7″ (400 mm)"
+         "15.7″ (400 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "13.8″ (350 mm)",
+         "13.8″ (350 mm)",
+         "15.7″ (400 mm)",
+         "17.7″ (450 mm)"
         ],
         "key": false
        },
@@ -221,7 +312,17 @@
          "21.7″ (550 mm)",
          "23.6″ (600 mm)",
          "23.6″ (600 mm)",
-         "25.6″ (650 mm)"
+         "25.6″ (650 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "23.6″ (600 mm)",
+         "25.6″ (650 mm)",
+         "25.6″ (650 mm)",
+         "26.8″ (680 mm)"
         ],
         "key": false
        },
@@ -236,7 +337,17 @@
          "17.7″ (450 mm)",
          "17.7″ (450 mm)",
          "17.7″ (450 mm)",
-         "17.7″ (450 mm)"
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "23.6″ (600 mm)",
+         "17.7″ (450 mm)",
+         "17.7″ (450 mm)",
+         "23.6″ (600 mm)",
+         "23.6″ (600 mm)"
         ],
         "key": false
        },
@@ -251,7 +362,17 @@
          "6.30 in/s (160 mm/s)",
          "5.91 in/s (150 mm/s)",
          "5.51 in/s (140 mm/s)",
-         "4.92 in/s (125 mm/s)"
+         "4.92 in/s (125 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "5.91 in/s (150 mm/s)",
+         "5.51 in/s (140 mm/s)",
+         "4.92 in/s (125 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "2.36 in/s (60 mm/s)",
+         "2.36 in/s (60 mm/s)"
         ],
         "key": false
        },
@@ -266,7 +387,17 @@
          "0.39 in/s (10 mm/s)",
          "0.39 in/s (10 mm/s)",
          "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)"
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.39 in/s (10 mm/s)",
+         "0.31 in/s (8 mm/s)"
         ],
         "key": false
        },
@@ -281,7 +412,17 @@
          "5.12 in/s (130 mm/s)",
          "5.12 in/s (130 mm/s)",
          "5.12 in/s (130 mm/s)",
-         "4.72 in/s (120 mm/s)"
+         "4.72 in/s (120 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "5.12 in/s (130 mm/s)",
+         "4.72 in/s (120 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "3.94 in/s (100 mm/s)",
+         "3.15 in/s (80 mm/s)",
+         "2.36 in/s (60 mm/s)",
+         "2.36 in/s (60 mm/s)"
         ],
         "key": false
        },
@@ -296,7 +437,17 @@
          "35.4″ (900 mm)",
          "35.4″ (900 mm)",
          "36.2″ (920 mm)",
-         "36.2″ (920 mm)"
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "43.1″ (1,095 mm)",
+         "36.2″ (920 mm)",
+         "36.2″ (920 mm)",
+         "43.1″ (1,095 mm)",
+         "39.4″ (1,000 mm)"
         ],
         "key": false
        },
@@ -311,7 +462,17 @@
          "20.1 HP (15 kW)",
          "29.5 HP (22 kW)",
          "29.5 HP (22 kW)",
-         "40.2 HP (30 kW)"
+         "40.2 HP (30 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "29.5 HP (22 kW)",
+         "40.2 HP (30 kW)",
+         "49.6 HP (37 kW)",
+         "60.3 HP (45 kW)"
         ],
         "key": false
        },
@@ -326,7 +487,17 @@
          "50 US gal (190 L)",
          "79 US gal (300 L)",
          "79 US gal (300 L)",
-         "106 US gal (400 L)"
+         "106 US gal (400 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "79 US gal (300 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "79 US gal (300 L)",
+         "106 US gal (400 L)",
+         "106 US gal (400 L)",
+         "159 US gal (600 L)"
         ],
         "key": false
        },
@@ -341,7 +512,17 @@
          "147 × 90 × 112″ (3,745 × 2,280 × 2,835 mm)",
          "147 × 90 × 119″ (3,745 × 2,280 × 3,030 mm)",
          "147 × 90 × 120″ (3,745 × 2,290 × 3,055 mm)",
-         "149 × 90 × 122″ (3,785 × 2,290 × 3,100 mm)"
+         "149 × 90 × 122″ (3,785 × 2,290 × 3,100 mm)",
+         "169 × 90 × 119″ (4,290 × 2,290 × 3,030 mm)",
+         "169 × 90 × 120″ (4,290 × 2,290 × 3,055 mm)",
+         "187 × 90 × 119″ (4,740 × 2,290 × 3,030 mm)",
+         "187 × 90 × 120″ (4,740 × 2,290 × 3,050 mm)",
+         "188 × 90 × 122″ (4,780 × 2,290 × 3,100 mm)",
+         "197 × 109 × 140″ (5,000 × 2,770 × 3,560 mm)",
+         "269 × 91 × 119″ (6,825 × 2,300 × 3,010 mm)",
+         "270 × 90 × 122″ (6,865 × 2,280 × 3,110 mm)",
+         "272 × 109 × 142″ (6,905 × 2,780 × 3,615 mm)",
+         "281 × 129 × 154″ (7,145 × 3,275 × 3,910 mm)"
         ],
         "key": false
        },
@@ -356,7 +537,17 @@
          "67.7″ (1,720 mm)",
          "67.7″ (1,720 mm)",
          "67.7″ (1,720 mm)",
-         "69.1″ (1,755 mm)"
+         "69.1″ (1,755 mm)",
+         "67.7″ (1,720 mm)",
+         "68.1″ (1,730 mm)",
+         "67.7″ (1,720 mm)",
+         "68.1″ (1,730 mm)",
+         "69.3″ (1,760 mm)",
+         "90.2″ (2,290 mm)",
+         "69.3″ (1,760 mm)",
+         "69.3″ (1,760 mm)",
+         "91.7″ (2,330 mm)",
+         "110.2″ (2,800 mm)"
         ],
         "key": false
        },
@@ -371,7 +562,17 @@
          "21,164 lb (9,600 kg)",
          "25,574 lb (11,600 kg)",
          "26,015 lb (11,800 kg)",
-         "32,628 lb (14,800 kg)"
+         "32,628 lb (14,800 kg)",
+         "27,558 lb (12,500 kg)",
+         "27,999 lb (12,700 kg)",
+         "31,306 lb (14,200 kg)",
+         "31,526 lb (14,300 kg)",
+         "38,581 lb (17,500 kg)",
+         "55,115 lb (25,000 kg)",
+         "41,888 lb (19,000 kg)",
+         "50,927 lb (23,100 kg)",
+         "70,548 lb (32,000 kg)",
+         "113,979 lb (51,700 kg)"
         ],
         "key": false
        }
@@ -458,388 +659,7 @@
        "25.6″ (650 mm)",
        "32,628 lb (14,800 kg)"
       ]
-     }
-    ],
-    "glance_keys": [
-     "bending_force",
-     "bending_length",
-     "stroke",
-     "daylight",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Bending force in US tons (metric tons in brackets); the model number is Dener's — metric bending length × metric tonnage. Capacities vary with the V-die opening, material and sheet length: check the bending chart or ask us for the tonnage your part needs. Dimensions are overall L (along the bed) × W × H with the standard front supports."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
-    "label": "Download the hydraulic & hybrid press brake brochure",
-    "size": "PDF · 9 MB · imperial units"
-   },
-   "group": "pb-hydraulic"
-  },
-  "dn-xl-large": {
-   "id": "dn-xl-large",
-   "control": {
-    "title": "ESA S840 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
-    "text": "Every XL comes with the 15″ ESA S840 touch screen: numeric and 2D graphic programming, automatic calculation of tonnage, bend sequence and back-gauge positions, tool library, up to 6 axes, USB and network. For shops that program from CAD or run many different parts, Dener fits the 21″ ESA S875 W (3D programming and simulation, DXF / STEP import, EsaBend 3D), the 24″ Delem DA-66S (2D graphic programming with a 3D machine view, Profile-S2D offline) or the 24″ Delem DA-69S (full 3D programming and simulation, Profile-S3D) — the same four controls on every Dener press brake.",
-    "images": [
-     "ctl-esa-s840-card",
-     "ctl-esa-s875w-card",
-     "ctl-delem-da66s",
-     "ctl-delem-da69s"
-    ]
-   },
-   "brand": "dener",
-   "name": "XL hydraulic CNC press brakes, 193 – 661 US tons × 12 – 20 ft",
-   "short": "XL hydraulic press brakes 12 – 20 ft",
-   "models_label": "XL 36175 – XL 60600 · 10 models",
-   "summary": "The same XL press brake in the long and heavy sizes: 12, 13 and 20 ft bending lengths from 193 to 661 US tons, with up to 26.8″ daylight, 17.7″ stroke and a 23.6″ throat on the 400 and 600-ton machines for deep boxes and large profiles. The 60600 sits in a pit. For longer work Dener builds tandem machines — two XLs on one control bending to 60 ft and 1,800 US tons, with sheet followers and automatic feeders.",
-   "features": [
-    "Monoblock frame to 661 US tons; 23.6″ (600 mm) throat on the 400 and 600 t machines",
-    "X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes",
-    "15″ ESA S840 2D graphic touch-screen CNC control",
-    "European-style segmented punch and die with European-style holders",
-    "Hawe hydraulic system; constant pressure",
-    "Anti-panic foot pedal with emergency stop",
-    "Front support arms on linear rail",
-    "Side and rear safety guards",
-    "CSA-approved electrical panel, 600 V 3-phase standard"
-   ],
-   "optional": [
-    "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control",
-    "CE-certified light barrier (DSP laser finger protection)",
-    "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)",
-    "Manual or CNC motorised crowning",
-    "Automatic angle measurement (bending accuracy 0.05°)",
-    "Sheet follower support",
-    "Hydraulic oil cooler; electrical panel cooler; automatic lubrication",
-    "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
-    "Tandem configuration to 60 ft and 1,800 US tons",
-    "Custom voltage: 208 V, 240 V or 480 V 3-phase"
-   ],
-   "images": [
-    "dn-xl-3",
-    "dn-xf-2",
-    "dn-xl-video-2",
-    "dn-xl-follower",
-    "dn-xf-3"
-   ],
-   "videos": [
-    {
-     "id": "_rdb1prKsxc",
-     "title": "20 ft × 600 ton DENER Puma XL heavy-duty press brake",
-     "duration": "PT1M22S",
-     "thumb": "video-_rdb1prKsxc"
-    },
-    {
-     "id": "MkaKtgulHKw",
-     "title": "Heavy-duty CNC hydraulic press brake PUMA XL 20 ft × 600 ton with sheet follower",
-     "duration": "PT1M33S",
-     "thumb": "video-MkaKtgulHKw"
-    },
-    {
-     "id": "FpHkRYeceyA",
-     "title": "20 ft × 1,000 ton 9-axis CNC heavy-duty press brake",
-     "duration": "PT3M30S",
-     "thumb": "video-FpHkRYeceyA"
-    },
-    {
-     "id": "AGifmIGQOso",
-     "title": "DENER 60 ft × 1,800 ton tandem press brake with auto feeder",
-     "duration": "PT1M4S",
-     "thumb": "video-AGifmIGQOso"
-    },
-    {
-     "id": "jMqwk_yyCBo",
-     "title": "DENER 1,600 ton × 40 ft tandem press brake installation time-lapse",
-     "duration": "PT3M4S",
-     "thumb": "video-jMqwk_yyCBo"
-    },
-    {
-     "id": "dsZ8f7BKP84",
-     "title": "Tandem press brake PUMA XL 2 × 20 ft × 320 ton",
-     "duration": "PT1M4S",
-     "thumb": "video-dsZ8f7BKP84"
-    }
-   ],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "XL hydraulic press brakes · 12 – 20 ft",
-      "sub": "10 models · 193 – 661 US tons",
-      "models": [
-       "XL 36175",
-       "XL 36220",
-       "XL 40175",
-       "XL 40220",
-       "XL 40320",
-       "XL 40400",
-       "XL 60220",
-       "XL 60320",
-       "XL 60400",
-       "XL 60600"
-      ],
-      "rows": [
-       {
-        "label": "Bending force",
-        "sub": "",
-        "cells": [
-         "193 US tons (175 t)",
-         "243 US tons (220 t)",
-         "193 US tons (175 t)",
-         "243 US tons (220 t)",
-         "353 US tons (320 t)",
-         "441 US tons (400 t)",
-         "243 US tons (220 t)",
-         "353 US tons (320 t)",
-         "441 US tons (400 t)",
-         "661 US tons (600 t)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending length",
-        "sub": "",
-        "cells": [
-         "12 ft · 143.7″ (3,650 mm)",
-         "12 ft · 143.7″ (3,650 mm)",
-         "13.3 ft · 159.4″ (4,050 mm)",
-         "13.3 ft · 159.4″ (4,050 mm)",
-         "13.3 ft · 159.4″ (4,050 mm)",
-         "13.3 ft · 159.4″ (4,050 mm)",
-         "19.8 ft · 238.2″ (6,050 mm)",
-         "19.8 ft · 238.2″ (6,050 mm)",
-         "19.8 ft · 238.2″ (6,050 mm)",
-         "19.8 ft · 238.2″ (6,050 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Distance between frames",
-        "sub": "",
-        "cells": [
-         "122.0″ (3,100 mm)",
-         "122.0″ (3,100 mm)",
-         "139.8″ (3,550 mm)",
-         "139.8″ (3,550 mm)",
-         "139.8″ (3,550 mm)",
-         "139.8″ (3,550 mm)",
-         "200.8″ (5,100 mm)",
-         "200.8″ (5,100 mm)",
-         "200.8″ (5,100 mm)",
-         "200.8″ (5,100 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "13.8″ (350 mm)",
-         "13.8″ (350 mm)",
-         "13.8″ (350 mm)",
-         "13.8″ (350 mm)",
-         "15.7″ (400 mm)",
-         "15.7″ (400 mm)",
-         "13.8″ (350 mm)",
-         "13.8″ (350 mm)",
-         "15.7″ (400 mm)",
-         "17.7″ (450 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Daylight",
-        "sub": "open height",
-        "cells": [
-         "23.6″ (600 mm)",
-         "23.6″ (600 mm)",
-         "23.6″ (600 mm)",
-         "23.6″ (600 mm)",
-         "25.6″ (650 mm)",
-         "25.6″ (650 mm)",
-         "23.6″ (600 mm)",
-         "25.6″ (650 mm)",
-         "25.6″ (650 mm)",
-         "26.8″ (680 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "17.7″ (450 mm)",
-         "17.7″ (450 mm)",
-         "17.7″ (450 mm)",
-         "17.7″ (450 mm)",
-         "17.7″ (450 mm)",
-         "23.6″ (600 mm)",
-         "17.7″ (450 mm)",
-         "17.7″ (450 mm)",
-         "23.6″ (600 mm)",
-         "23.6″ (600 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Approach speed",
-        "sub": "",
-        "cells": [
-         "5.91 in/s (150 mm/s)",
-         "5.51 in/s (140 mm/s)",
-         "5.91 in/s (150 mm/s)",
-         "5.51 in/s (140 mm/s)",
-         "4.92 in/s (125 mm/s)",
-         "3.15 in/s (80 mm/s)",
-         "3.94 in/s (100 mm/s)",
-         "3.15 in/s (80 mm/s)",
-         "2.36 in/s (60 mm/s)",
-         "2.36 in/s (60 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Bending speed",
-        "sub": "",
-        "cells": [
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.39 in/s (10 mm/s)",
-         "0.31 in/s (8 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Return speed",
-        "sub": "",
-        "cells": [
-         "5.12 in/s (130 mm/s)",
-         "5.12 in/s (130 mm/s)",
-         "5.12 in/s (130 mm/s)",
-         "5.12 in/s (130 mm/s)",
-         "4.72 in/s (120 mm/s)",
-         "3.15 in/s (80 mm/s)",
-         "3.94 in/s (100 mm/s)",
-         "3.15 in/s (80 mm/s)",
-         "2.36 in/s (60 mm/s)",
-         "2.36 in/s (60 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Table height",
-        "sub": "",
-        "cells": [
-         "36.2″ (920 mm)",
-         "36.2″ (920 mm)",
-         "36.2″ (920 mm)",
-         "36.2″ (920 mm)",
-         "36.2″ (920 mm)",
-         "43.1″ (1,095 mm)",
-         "36.2″ (920 mm)",
-         "36.2″ (920 mm)",
-         "43.1″ (1,095 mm)",
-         "39.4″ (1,000 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Main motor",
-        "sub": "",
-        "cells": [
-         "29.5 HP (22 kW)",
-         "29.5 HP (22 kW)",
-         "29.5 HP (22 kW)",
-         "29.5 HP (22 kW)",
-         "40.2 HP (30 kW)",
-         "49.6 HP (37 kW)",
-         "29.5 HP (22 kW)",
-         "40.2 HP (30 kW)",
-         "49.6 HP (37 kW)",
-         "60.3 HP (45 kW)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Hydraulic oil tank",
-        "sub": "",
-        "cells": [
-         "79 US gal (300 L)",
-         "79 US gal (300 L)",
-         "79 US gal (300 L)",
-         "79 US gal (300 L)",
-         "106 US gal (400 L)",
-         "106 US gal (400 L)",
-         "79 US gal (300 L)",
-         "106 US gal (400 L)",
-         "106 US gal (400 L)",
-         "159 US gal (600 L)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "sub": "",
-        "cells": [
-         "169 × 90 × 119″ (4,290 × 2,290 × 3,030 mm)",
-         "169 × 90 × 120″ (4,290 × 2,290 × 3,055 mm)",
-         "187 × 90 × 119″ (4,740 × 2,290 × 3,030 mm)",
-         "187 × 90 × 120″ (4,740 × 2,290 × 3,050 mm)",
-         "188 × 90 × 122″ (4,780 × 2,290 × 3,100 mm)",
-         "197 × 109 × 140″ (5,000 × 2,770 × 3,560 mm)",
-         "269 × 91 × 119″ (6,825 × 2,300 × 3,010 mm)",
-         "270 × 90 × 122″ (6,865 × 2,280 × 3,110 mm)",
-         "272 × 109 × 142″ (6,905 × 2,780 × 3,615 mm)",
-         "281 × 129 × 154″ (7,145 × 3,275 × 3,910 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Width without front supports",
-        "sub": "",
-        "cells": [
-         "67.7″ (1,720 mm)",
-         "68.1″ (1,730 mm)",
-         "67.7″ (1,720 mm)",
-         "68.1″ (1,730 mm)",
-         "69.3″ (1,760 mm)",
-         "90.2″ (2,290 mm)",
-         "69.3″ (1,760 mm)",
-         "69.3″ (1,760 mm)",
-         "91.7″ (2,330 mm)",
-         "110.2″ (2,800 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "27,558 lb (12,500 kg)",
-         "27,999 lb (12,700 kg)",
-         "31,306 lb (14,200 kg)",
-         "31,526 lb (14,300 kg)",
-         "38,581 lb (17,500 kg)",
-         "55,115 lb (25,000 kg)",
-         "41,888 lb (19,000 kg)",
-         "50,927 lb (23,100 kg)",
-         "70,548 lb (32,000 kg)",
-         "113,979 lb (51,700 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
+     },
      {
       "name": "XL 36175",
       "glance": [
@@ -1004,15 +824,15 @@
    ],
    "images": [
     "dn-xl1560-studio",
+    "dn-xl1560-photo-left",
+    "dn-xl1560-photo-front",
+    "dn-xl1560-photo-right",
     "dn-xl1560-control",
     "dn-xl1560-tooling",
     "dn-xl1560-tooling-2",
     "dn-xl1560-backgauge",
     "dn-xl1560-backgauge-2",
-    "dn-det-eurostamp-tools",
-    "dn-det-tool-1281",
-    "dn-det-tool-2067",
-    "dn-det-front-supports"
+    "dn-det-eurostamp-tools"
    ],
    "videos": [
     {

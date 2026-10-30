@@ -189,12 +189,14 @@ PHOTOS = {
                                        dict(poly=[(830, 613), (958, 613), (958, 640), (850, 640)], min_l=100, max_l=200)],         # the grey block under the cover
                                 stickers="angle-right")),
                ("wm_lama", dict())]),
+    # the owner's call (Oct 29 2026): the pendant stays in its showroom photo, uncut — only the watermark goes (and the small
+    # "S640" badge under the screen, since every XL ships with the ESA S840).  The earlier hand-drawn cut-out is one switch
+    # away: cutout="polys" uses the keep / drop polygons below; it also hid the Turkish warning sticker with the steps
+    # ("copy_cols", dict(box=(414, 846, 614, 912), dx=250)) and ("frame_strip", dict(x=(378, 422), rows=(846, 1048), shift=-200)).
     "dn-xl1560-control": dict(
-        src="control.jpg", cutout="polys",
-        alt="ESA touch-screen control pendant of the Dener XL 1560 — start, stop, muting lamp and general reset",
-        steps=[("copy_cols", dict(box=(414, 846, 614, 912), dx=250)),             # the warning sticker over the button panel
-               ("frame_strip", dict(x=(378, 422), rows=(846, 1048), shift=-200)),  # … and over the left frame
-               ("patch", dict(box=(798, 632, 874, 700), dx=154)),                   # the model mark under the screen: carbon weave copied
+        src="control.jpg", cutout=False,
+        alt="ESA touch-screen control pendant of the Dener XL 1560 — emergency stop, start, stop, muting lamp and general reset",
+        steps=[("patch", dict(box=(796, 630, 876, 708), dx=154)),                   # the model mark under the screen: carbon weave copied
                                                                                    # from 154 px (22 weave periods) to the right
                ("wm_cover", dict(faces=[[(540, 540), (1130, 540), (1130, 615), (540, 615)]], min_l=0)),   # the watermark on the screen
                ("wm_telea", dict(rows=(615, 622)))],                               # its last rows on the bezel edge
@@ -347,6 +349,15 @@ def register():
         imap["dn-xl1560-studio"] = {"src": "tools/src-images/dener-xl1560/dn-xl1560-studio.png", "section": "dener-xl1560", "trim": True, "quality": 84,
                                     "alt": "Dener XL 1560 compact CNC press brake, 66 US tons × 5 ft, with the ESA S840 control pendant — studio photo"}
         keys.append("dn-xl1560-studio")
+    # three showroom photos of the XL 1500 × 60 supplied by NovoTech (Oct 29 2026): background removed with Pixelcut, the
+    # dealer's watermark and name plate replaced by repainted panel (gpt-image edit of a crop, pasted back only inside the
+    # lettering), the neighbouring machine and wall poster masked out by hand — final RGBA, used as they are
+    for key, alt in (("dn-xl1560-photo-left", "Dener XL 1560 compact CNC press brake from the left, 66 US tons × 5 ft, with the ESA control pendant on its swing arm"),
+                     ("dn-xl1560-photo-front", "Dener XL 1560 compact CNC press brake, front view: segmented top tools, side guards and the ESA control pendant"),
+                     ("dn-xl1560-photo-right", "Dener XL 1560 compact CNC press brake from the right, with the side guard door and the ESA control pendant")):
+        if os.path.exists(os.path.join(D, key + ".png")):
+            imap[key] = {"src": f"tools/src-images/dener-xl1560/{key}.png", "section": "dener-xl1560", "trim": True, "quality": 84, "alt": alt}
+            keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "dener_xl1560_keys.txt"), "w").write(",".join(keys))
     return keys

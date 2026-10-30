@@ -44,10 +44,10 @@ def round_up(x, step):
     return int(math.ceil(x / step) * step)
 
 
-# (label, thickness mm) — North American gauges and fractions with the metric sizes between them
-ROWS = [("20 ga", 0.9), ("1 mm", 1.0), ("16 ga", 1.5), ("14 ga", 1.9), ("2 mm", 2.0), ("12 ga", 2.7), ("3 mm", 3.0), ("10 ga", 3.4),
-        ("4 mm", 4.0), ("3/16″", 4.76), ("5 mm", 5.0), ("6 mm", 6.0), ("1/4″", 6.35), ("8 mm", 8.0), ("5/16″", 7.94), ("3/8″", 9.53),
-        ("10 mm", 10.0), ("12 mm", 12.0), ("1/2″", 12.7), ("16 mm", 16.0), ("5/8″", 15.88), ("3/4″", 19.05), ("20 mm", 20.0), ("1″", 25.4)]
+# (label, thickness mm) — North American gauges and fractions only (the owner asked for no metric thickness rows: the mm sizes
+# between them made the table repetitive); the formula still works in mm underneath
+ROWS = [("20 ga", 0.9), ("18 ga", 1.2), ("16 ga", 1.5), ("14 ga", 1.9), ("12 ga", 2.7), ("11 ga", 3.0), ("10 ga", 3.4),
+        ("3/16″", 4.76), ("1/4″", 6.35), ("5/16″", 7.94), ("3/8″", 9.53), ("1/2″", 12.7), ("5/8″", 15.88), ("3/4″", 19.05), ("1″", 25.4)]
 ROWS.sort(key=lambda r: r[1])
 
 
@@ -61,7 +61,8 @@ def row_html(label, s):
     ft = f * US_T_PER_FT
     total = f * LEN_10FT
     machine = round_up(total * RESERVE, 5)
-    return (f'<tr><th scope="row">{label}<small>{s:g} mm · {inch(s)}</small></th>'
+    sub = f'<small>{inch(s)}</small>' if "ga" in label else ""      # gauges show their decimal inch; fractions are inches already
+    return (f'<tr><th scope="row">{label}{sub}</th>'
             f'<td>{v} mm<small>{v / 25.4:.2f}″</small></td>'
             f'<td>{f:.0f} t/m</td><td>{ft:.1f} US t/ft</td>'
             f'<td>{total:.0f} t<small>{total * 1.1023113:.0f} US tons</small></td>'

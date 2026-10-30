@@ -37,8 +37,8 @@ PDF_SHEAR_FILE = "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf"
 PDF_VL_PANEL_FILE = "files/NovoTech-Panel-Benders-Value-Line-2026.pdf"
 COPY_PDFS = {PDF_PB_FILE: "nt-hydraulic-pb.pdf", PDF_SERVO_FILE: "pdf2/NovoTech_Dener_Servo_Press_Brakes (1).pdf", PDF_LASER_FILE: "nt-fiber-laser.pdf"}
 
-BRAND_LINE = ("Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries, "
-              "Dener Canada in Mississauga, ON, Canada. Sold, installed and supported in Canada by NovoTech.")
+BRAND_LINE = ("Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries. "
+              "Sold, installed and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Made in Turkey by Dener Makina", "text": "Dener has built sheet-metal machinery in Kayseri since 1974 — a 1.3 million m² campus, "
           "its own design awards (Good Design, European Product Design, Design Turkey) and offices in the USA, Canada, Germany and India."}
 INTRO_VIDEO = {"intro_video": {"id": "A1i_NljuVQo", "title": "DENER Group introduction video", "thumb": "video-A1i_NljuVQo", "duration": "PT2M52S"},

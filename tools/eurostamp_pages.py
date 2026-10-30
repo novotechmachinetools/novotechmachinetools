@@ -30,7 +30,7 @@ CAT_FILE = "files/NovoTech-Press-Brake-Tooling-Catalogue-2026.pdf"
 CATALOGUE = {"file": CAT_FILE, "label": "Download the EUROSTAMP catalogue — inch edition", "size": "PDF · {mb} MB · mm and inches"}
 
 BRAND_LINE = ("EUROSTAMP tooling is made in Gragnano Trebbiense, Italy, by a company that has built nothing but press brake tools "
-              "since 1970 — sold, shipped and supported in Canada by NovoTech from Mississauga, ON, Canada.")
+              "since 1970 — sold, shipped and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Made in Italy since 1970", "text": "EUROSTAMP has built press brake tooling in Gragnano Trebbiense, near Piacenza, since 1970."}
 WHY = [
     {"title": "Made in Italy since 1970", "text": "EUROSTAMP builds only press brake tooling — punches, dies, adapters and clamping — in Gragnano Trebbiense, near Piacenza.", "icon": "factory"},

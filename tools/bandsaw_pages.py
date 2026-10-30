@@ -204,7 +204,7 @@ BRAND = {
                     brand_line="Bekamak band saws are made in Turkey by Bekamak Makina. Sold, installed and supported in Canada by NovoTech — the premium line of our band saw range.",
                     related_title="More Bekamak band saws from NovoTech"),
     "novotech": dict(key="novotech", slug="novotech", line="value", name="NovoTech", pdf=PDF_NF, page_label="NovoTech",
-                    brand_line="NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada parts and support as every machine we sell.",
+                    brand_line="NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and parts and support in Canada as every machine we sell.",
                     related_title="More NovoTech value line band saws"),
 }
 
@@ -277,7 +277,7 @@ def main():
                              "image": p["hero_image"], "blurb": specs[cat]["lead"], "families": fams(brand, cat)})
         lines.append({"id": b["line"], "brand": b["key"], "label": f"{b['line'].title()} line", "name": b["name"], "short": b["page_label"], "pdf": b["pdf"],
                       "blurb": ("Built in Turkey since 1990 with European components and the heaviest construction in their class — the saws we recommend for production and heavy sections." if brand == "bekamak"
-                                else "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada parts and support as every machine we sell."),
+                                else "NovoTech's own brand: manufactured in China to high North American quality standards, with the same CSA-approved panel, 1-year warranty and parts and support in Canada as every machine we sell."),
                       "subpages": subpages})
     # ---- hub
     hp = os.path.join(PAGES, "band-saw.json")

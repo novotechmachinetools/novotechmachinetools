@@ -27,7 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "ttmc-more"
 BRAND = "novotech"
 BRAND_LINE = ("NovoTech value line — NovoTech's own brand, manufactured in China to high North American quality standards and sold with a "
-              "1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support from Mississauga, ON, Canada.")
+              "1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support in Canada.")
 ORIGIN = {"title": "NovoTech value line — built in China",
           "text": "Built in China to NovoTech's specification by a maker that exports metalworking machinery to more than 70 countries; inspected "
                   "before shipping, wired for Canadian power and supported by NovoTech's technicians in Mississauga, ON, Canada."}

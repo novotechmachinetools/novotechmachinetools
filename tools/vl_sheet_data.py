@@ -120,6 +120,7 @@ T_WAD_S = table("CNC hydraulic press brakes · 4 – 13.5 ft", "9 models · 55 �
 T_WAD_C = table("Compact CNC press brakes · 4.3 and 5.2 ft", "2 models · 55 US tons", [r[0] for r in WAD[:2]], pb_rows(WAD[:2]))
 T_WAD_M = table("CNC hydraulic press brakes · 170 – 220 t", "8 models · 187 – 243 US tons · 10 – 20 ft", [r[0] for r in WAD_M], pb_rows(WAD_M))
 T_WAD_L = table("CNC hydraulic press brakes · 250 – 300 t", "8 models · 276 – 331 US tons · 10 – 20 ft", [r[0] for r in WAD_L], pb_rows(WAD_L))
+T_WAD = table("CNC hydraulic press brakes · 50 – 300 t", "25 models · 55 – 331 US tons · 4 – 20 ft", [r[0] for r in WAD], pb_rows(WAD))
 T_WAD_H1 = table("Heavy-duty CNC press brakes · 400 – 600 t", "9 models · 441 – 661 US tons · 13 – 20 ft", [r[0] for r in WAD_H1], pb_rows(WAD_H1))
 T_WAD_H2 = table("Heavy-duty CNC press brakes · 800 – 1,200 t", "12 models · 882 – 1,323 US tons · 13 – 26 ft · twin pumps", [r[0] for r in WAD_H2], pb_rows(WAD_H2))
 
@@ -182,6 +183,7 @@ T_NC_S = table("NC press brakes · 30 – 125 t", "13 models · 33 – 138 US to
 T_NC_C = table("Compact NC press brake · 5.2 ft", "1 model · 33 US tons", [NC[0][0]], nc_rows(NC[:1]))
 T_NC_M = table("NC press brakes · 160 – 200 t", "9 models · 176 – 220 US tons · 8 – 20 ft", [r[0] for r in NC_M], nc_rows(NC_M))
 T_NC_L = table("NC press brakes · 250 – 400 t", "12 models · 276 – 441 US tons · 10 – 20 ft", [r[0] for r in NC_L], nc_rows(NC_L))
+T_NC = table("NC press brakes · 30 – 400 t", "34 models · 33 – 441 US tons · 5 – 20 ft", [r[0] for r in NC], nc_rows(NC))
 
 # electric WADG: (model, kN, length, approach, bend, return, X stroke, X speed, R stroke, R speed, columns, throat, stroke, open, kW, weight t, L, W, H)
 WADG = [("WADG-10T/500", 100, 500, 180, "0.15-30", 180, 200, 400, 80, 200, 510, 200, 150, 420, "5.5", 0.8, 640, 980, 1250),
@@ -537,32 +539,23 @@ CTL_EPB = {"title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S84
            "images": ["ctl-delem-da53tx", "ctl-delem-da58tx", "ctl-delem-da66s", "ctl-delem-da69s", "ctl-esa-s875w-card", "ctl-cybelec-ct12"]}
 
 HPB_FAMILIES = [
-    dict(id="vl-wad-small", control=CTL_WAD, group="pb-cnc", page=P_HPB, brand=BRAND,
-         name="CNC hydraulic press brakes, 55 – 149 US tons × 4 – 13.5 ft",
-         short="CNC press brakes 50 – 135 t",
-         models_label="WAD-50T/1300 – WAD-135T/4100 · 9 models",
+    dict(id="vl-wad", control=CTL_WAD, group="pb-cnc", page=P_HPB, brand=BRAND,
+         name="CNC hydraulic press brakes, 55 – 331 US tons × 4 – 20 ft",
+         short="CNC press brakes 50 – 300 t",
+         models_label="WAD-50T/1300 – WAD-300T/6000 · 25 models",
          summary="The value-line CNC press brake: electro-hydraulic servo synchronisation with Hawe valves and linear scales, a servo-driven pump that "
                  "only runs while the ram moves, a Delem DA-53Tx control and a servo back gauge on ball screws — the same architecture as the European "
-                 "machines, built to a price that lets a small shop own a real CNC brake. Nine models from 55 US tons × 4 ft to 149 US tons × 13.5 ft; "
-                 "the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for, with the DA-53Tx or DA-58Tx and 4+1 axes. "
-                 "Delem DA-66S / 69S controls, 6-axis back gauges, DSP laser protection, sheet followers and Wila clamping are options.",
-         features=["Mild steel to 1/4″ over 10 ft on the 110 t, 5/16″ on the 135 t (V = 8 × thickness)"] + PB_STD,
+                 "machines, built to a price that lets a small shop own a real CNC brake. Twenty-five models on one design, from 55 US tons × 4 ft to "
+                 "331 US tons × 20 ft: the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for; from 170 t up the machines have "
+                 "17.7 – 19.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.4″ daylight for deep boxes, with 25 – 40 cc pumps and 13 – 21 kW servo main "
+                 "motors, and the 220 and 250 t × 13 ft bend 3/8″ plate the full length. Delem DA-53Tx standard with 4+1 axes and CNC crowning; "
+                 "DA-58Tx, DA-66S / 69S controls, 6-axis back gauges, DSP laser protection, sheet followers and Wila clamping are options.",
+         features=["Mild steel to 1/4″ over 10 ft on the 110 t, 5/16″ on the 135 t, 3/8″ over 13 ft on the 220 t and 1/2″ over 13 ft on the 300 t (V = 8 × thickness)"] + PB_STD,
          optional=PB_OPT,
-         images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-pb-da53", "vl-pb-backgauge", "vl-pb-clamps", "vl-pb-quickclamp", "vl-pb-cylinders", "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-crowning", "vl-pb-dsp"],
+         images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-wad-robot", "vl-pb-da53", "vl-pb-da58", "vl-pb-backgauge", "vl-pb-clamps", "vl-pb-quickclamp",
+                 "vl-pb-hydclamp", "vl-pb-clamp-open", "vl-pb-cylinders", "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-crowning", "vl-pb-dsp", "vl-pb-follower-detail"],
          videos=vids(("KyNWOyaBKDM", "How to align press brake dies")),      # the channel's WADE / DSP-laser videos show the supplier's badges, so they stay off the page
-         specs=spec([T_WAD_S], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="vl-wad-large", control=CTL_WAD, group="pb-cnc", page=P_HPB, brand=BRAND,
-         name="CNC hydraulic press brakes, 187 – 331 US tons × 10 – 20 ft",
-         short="CNC press brakes 170 – 300 t",
-         models_label="WAD-170T/3200 – WAD-300T/6000 · 16 models",
-         summary="The same CNC press brake from 170 to 300 t: 10, 13.5, 16 and 20 ft bending lengths, 17.7 – 19.7″ throats, 7.9 – 9.8″ strokes and "
-                 "18.9 – 22.4″ daylight for deep boxes, with 25 – 40 cc pumps and 13 – 21 kW servo main motors. The 220 t × 13 ft and 250 t × 13 ft "
-                 "machines bend 3/8″ plate the full length; the 300 t × 20 ft bends 1/2″ over 13 ft. Delem DA-53Tx standard, 4+1 axes with CNC crowning.",
-         features=["Mild steel to 3/8″ over 13 ft on the 220 t, 1/2″ over 13 ft on the 300 t (V = 8 × thickness)"] + PB_STD,
-         optional=PB_OPT,
-         images=["vl-wad-robot", "vl-pb-da58", "vl-pb-hydclamp", "vl-pb-clamp-open", "vl-pb-follower-detail"],
-         videos=[],
-         specs=spec([T_WAD_M, T_WAD_L], PB_GK, PB_G_FROM, NOTE_PB)),
+         specs=spec([T_WAD], PB_GK, PB_G_FROM, NOTE_PB)),
     dict(id="vl-wad-heavy", control=CTL_WAD, group="pb-cnc", page=P_HPB, brand=BRAND,
          name="Heavy-duty CNC press brakes, 441 – 1,323 US tons × 13 – 26 ft, and tandems",
          short="Heavy-duty & tandem press brakes",
@@ -576,31 +569,22 @@ HPB_FAMILIES = [
          images=["vl-wad-heavy", "vl-wad-follower", "vl-wad-tandem", "vl-wad-tandem-2"],
          videos=[],
          specs=spec([T_WAD_H1, T_WAD_H2], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="vl-nc-small", control=CTL_NC, group="pb-nc", page=P_HPB, brand=BRAND,
-         name="NC hydraulic press brakes, 33 – 138 US tons × 5 – 20 ft — torsion bar",
-         short="NC press brakes 30 – 125 t",
-         models_label="WC67K-30t/1600 – WC67K/E-125t/6000 · 13 models",
+    dict(id="vl-nc", control=CTL_NC, group="pb-nc", page=P_HPB, brand=BRAND,
+         name="NC hydraulic press brakes, 33 – 441 US tons × 5 – 20 ft — torsion bar",
+         short="NC press brakes 30 – 400 t",
+         models_label="WC67K-30t/1600 – WC67K/E-400T/6000 · 34 models",
          summary="The simplest press brake we sell: a torsion bar keeps the two ram cylinders in step mechanically, mechanical stops set the depth "
                  "and an Estun E21PS control positions the back gauge and the ram for 40 stored programs. No servo valves, no linear scales — nothing "
                  "that needs a technician — which is why these machines run for decades in general fabrication shops bending brackets, boxes, "
-                 "channels and roofing. Thirteen models from 33 tons × 5 ft to 138 tons × 20 ft; the 100 t × 10 ft and 125 t × 13 ft are the standard sizes.",
-         features=["Mild steel to 1/4″ over 10 ft on the 100 t, 5/16″ over 10 ft on the 125 t (V = 8 × thickness)"] + NC_STD,
+                 "channels, roofing and plate. Thirty-four models on one design, from 33 tons × 5 ft to 441 tons × 20 ft: the 100 t × 10 ft and "
+                 "125 t × 13 ft are the standard sizes, and from 160 t up the machines have 13.8 – 15.7″ throats, 7.9 – 9.8″ strokes, 18.9 – 22.8″ "
+                 "daylight, 20 – 50 cc pumps and 11 – 22 kW motors for 3/8″ and 1/2″ plate in simple shapes.",
+         features=["Mild steel to 1/4″ over 10 ft on the 100 t, 5/16″ over 10 ft on the 125 t, 3/8″ over 10 ft on the 200 t, 1/2″ over 13 ft on the 300 t "
+                   "and 1/2″ over 20 ft on the 400 t (V = 8 × thickness)"] + NC_STD,
          optional=NC_OPT,
          images=["vl-nc-1", "vl-nc-backgauge", "vl-nc-torsion", "vl-nc-bg-motor", "vl-nc-photo-1", "vl-nc-photo-2", "vl-nc-photo-3"],
          videos=vids(("0imM4bArpBc", "5 ft × 50 ton hydraulic press brake with Estun NC control")),
-         specs=spec([T_NC_S], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="vl-nc-large", control=CTL_NC, group="pb-nc", page=P_HPB, brand=BRAND,
-         name="NC hydraulic press brakes, 176 – 441 US tons × 8 – 20 ft — torsion bar",
-         short="NC press brakes 160 – 400 t",
-         models_label="WC67K/E-160t/2500 – WC67K/E-400T/6000 · 21 models",
-         summary="The torsion-bar press brake in the heavy sizes: 160 to 400 t over 8 to 20 ft, with 13.8 – 15.7″ throats, 7.9 – 9.8″ strokes and "
-                 "18.9 – 22.8″ daylight, 20 – 50 cc pumps and 11 – 22 kW motors. The right machine for a shop that bends 3/8″ and 1/2″ plate in "
-                 "simple shapes and does not need a CNC — the E21PS control still stores 40 programs and positions the back gauge and depth automatically.",
-         features=["Mild steel to 3/8″ over 10 ft on the 200 t, 1/2″ over 13 ft on the 300 t, 1/2″ over 20 ft on the 400 t (V = 8 × thickness)"] + NC_STD,
-         optional=NC_OPT,
-         images=["vl-nc-1", "vl-nc-backgauge"],
-         videos=[],
-         specs=spec([T_NC_M, T_NC_L], PB_GK, PB_G_FROM, NOTE_PB)),
+         specs=spec([T_NC], PB_GK, PB_G_FROM, NOTE_PB)),
 ]
 
 COMPACT_FAMILIES = [
@@ -639,7 +623,7 @@ COMPACT_FAMILIES = [
          features=["Mild steel to 14 ga (2 mm) over 5.2 ft and 1/8″ (3 mm) over 4 ft (V = 8 × thickness); 51″ (1,300 mm) between the frames, 7.9″ (200 mm) throat, 13.2″ (335 mm) daylight",
                    "23.6″ (600 mm) motorised X back gauge on ball screw and linear guide; 5.5 kW (7.5 HP) motor"] + NC_STD,
          optional=NC_OPT,
-         images=["vl-cp-wc67k", "vl-cp-e21", "vl-cp-nc-screw", "vl-cp-nc-valve", "vl-nc-torsion", "vl-nc-bg-motor"],
+         images=["vl-cp-nc-adh", "vl-cp-e21", "vl-cp-nc-cabinet", "vl-cp-nc-screw", "vl-cp-nc-valve", "vl-nc-torsion", "vl-nc-bg-motor"],
          videos=vids(("0imM4bArpBc", "5 ft × 50 ton hydraulic press brake with Estun NC control")),
          specs=spec([T_NC_C], PB_GK, PB_G_FROM, NOTE_PB)),
 ]
@@ -669,7 +653,9 @@ EPB_FAMILIES = [
                  "as the big machines, with 50 % less energy and 40 % less noise than a small hydraulic brake.",
          features=["Single-phase or 3-phase supply; 20 % smaller footprint than a hydraulic brake of the same tonnage"] + EPB_STD[:3] + ["Touchscreen CNC with X and R back gauge axes on cylindrical guides", "Manual top-tool clamp and 2-V die; foot pedal with emergency stop"],
          optional=["Single-V mechanical die clamping", "Light curtain", "Custom voltage"],
-         images=["vl-wadg-tooling", "vl-wadg-parts"],
+         # the compact model itself (ADH product photo, background removed with Pixelcut, supplier logo and model label painted out —
+         # tools/src-images/value-sheet/vl-wadg-mini-1.png), then the standard tooling and typical parts
+         images=["vl-wadg-mini-1", "vl-wadg-tooling", "vl-wadg-parts"],
          videos=[],
          specs=spec([T_WADG_MINI], PB_GK, PB_G_FROM, NOTE_EPB)),
 ]

@@ -105,7 +105,7 @@ def build():
               fams, SET, SN.SECTION, SN.subpages(),
               extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": [["capacity", "capacity_mild_steel"], ["length", "working_width"], "strokes", ["motor", "operation"], "weight"],
                      "hero_brand_line": "Dener Makina builds the premium hydraulic shears in Kayseri, Turkey; the premium-line mechanical shears are built in Turkey and the value-line shears in China, all to NovoTech's specification. Every line sold, installed and supported in Canada by NovoTech.",
-                     "origin_feature": {"title": "Three kinds, two lines, one supplier", "text": "Hydraulic, mechanical or sheet metal shear, premium or value line — every one with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
+                     "origin_feature": {"title": "Three kinds, two lines, one supplier", "text": "Hydraulic, mechanical or sheet metal shears in two lines: the premium line, built in Turkey, and the NovoTech value line, manufactured in China to high North American quality standards."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                      "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"],
                      "hub_compact": True, "compare": COMPARE, "subpage_link": "all models, specifications and photos"})

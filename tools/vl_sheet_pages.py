@@ -30,7 +30,7 @@ PDF_PANEL = "files/NovoTech-Panel-Benders-Value-Line-2026.pdf"
 PDF_IRON = "files/NovoTech-Ironworkers-Value-Line-2026.pdf"
 
 BRAND_LINE = ("NovoTech's own value line: manufactured in China to high North American quality standards, with Delem, Estun, Hawe, Rexroth and "
-              "Schneider components, the same CSA-approved panel, 1-year warranty and Mississauga, ON, Canada parts and support as every machine we sell.")
+              "Schneider components, the same CSA-approved panel, 1-year warranty and parts and support in Canada as every machine we sell.")
 ORIGIN = {"title": "Built in China to North American standards", "text": "NovoTech's own brand — European controls and hydraulics, inspected before shipping, "
           "same CSA panel, warranty and Mississauga, ON, Canada support as every machine we sell."}
 WADE_VIDEO = {"intro_video": {"id": "-rFs4TdGvds", "title": "10 ft × 110 ton CNC press brake with Delem control", "thumb": "video--rFs4TdGvds", "duration": "PT2M23S"},

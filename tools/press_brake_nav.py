@@ -15,10 +15,10 @@ SECTION = "Press brakes"
 # (page slug, [(family set, family id, group id)]) — display order within the page follows this list
 PAGES = {
     "hydraulic-press-brake": [
-        ("dener", "dn-xl-small", "pb-premium"), ("dener", "dn-xl-large", "pb-premium"),
-        ("value-sheet", "vl-wad-small", "pb-value"), ("value-sheet", "vl-wad-large", "pb-value"), ("value-sheet", "vl-wad-heavy", "pb-value"),
+        ("dener", "dn-xl", "pb-premium"),
+        ("value-sheet", "vl-wad", "pb-value"), ("value-sheet", "vl-wad-heavy", "pb-value"),
         ("dener", "dn-xh", "pb-hybrid"),
-        ("value-sheet", "vl-nc-small", "pb-nc"), ("value-sheet", "vl-nc-large", "pb-nc"),
+        ("value-sheet", "vl-nc", "pb-nc"),
     ],
     "electric-press-brake": [
         ("dener", "dn-ddm", "pb-servo"), ("dener", "dn-dds", "pb-servo"),

@@ -104,7 +104,7 @@ def build():
               fams, SET, PBN.SECTION, subpages,
               extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": ["bending_force", "bending_length", "stroke", "daylight", "weight"],
                      "hero_brand_line": "The premium line is built by Dener Makina in Kayseri, Turkey; the NovoTech value line is built in China to our specification. All sold, installed and supported in Canada by NovoTech.",
-                     "origin_feature": {"title": "Three kinds, two lines, one supplier", "text": "Hydraulic, electric or compact, premium or value — every press brake comes with a CSA-approved panel, a 1-year warranty and parts and technicians in Mississauga, ON, Canada."},
+                     "origin_feature": {"title": "Three kinds, two lines, one supplier", "text": "Hydraulic, electric or compact press brakes in two lines: the premium line, built by Dener in Kayseri, Turkey, and the NovoTech value line, manufactured in China to high North American quality standards."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                      "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"],
                      "why_title": "Included with every press brake from NovoTech", "why_features": PBN.why_features(),

@@ -138,6 +138,7 @@ NOTE_PB = ("Bending force in US tons (metric tons in brackets); the model number
 T_XL_SMALL = table("XL hydraulic press brakes · 5 – 10 ft", "8 models · 66 – 353 US tons", [r[0] for r in XL_SMALL], pb_rows(XL_SMALL))
 T_XL_1560 = table("XL 1560 compact CNC press brake", "1 model · 66 US tons × 5 ft", [XL[0][0]], pb_rows(XL[:1]))
 T_XL_LARGE = table("XL hydraulic press brakes · 12 – 20 ft", "10 models · 193 – 661 US tons", [r[0] for r in XL_LARGE], pb_rows(XL_LARGE))
+T_XL = table("XL hydraulic CNC press brakes · 5 – 20 ft", "18 models · 66 – 661 US tons", [r[0] for r in XL], pb_rows(XL))
 
 # hybrid: (model, t, approach, bend, return, kW, energy saving %) — frame, stroke, daylight and dimensions as the XL of the same tonnage
 XH = [("SVP 60", 60, 120, 10, 160, 5, None), ("SVP 80 XF", 80, 130, 10, 125, 8.7, None), ("SVP 100", 100, 200, 10, 200, 8.7, 45),
@@ -233,38 +234,33 @@ CTL_DDS = {"title": "ESA S840 2D as standard; ESA S875 W as an option",
            "images": ["ctl-esa-s840-card", "ctl-esa-s875w-card"]}
 
 PB_FAMILIES = [
-    dict(id="dn-xl-small", control=CTL_XL, group="pb-hydraulic", page=P_PB, brand=BRAND,
-         name="XL hydraulic CNC press brakes, 66 – 353 US tons × 5 – 10 ft",
-         short="XL hydraulic press brakes 5 – 10 ft",
-         models_label="XL 1560 – XL 30320 · 8 models",
+    dict(id="dn-xl", control=CTL_XL, group="pb-hydraulic", page=P_PB, brand=BRAND,
+         name="XL hydraulic CNC press brakes, 66 – 661 US tons × 5 – 20 ft",
+         short="XL hydraulic press brakes",
+         models_label="XL 1560 – XL 60600 · 18 models",
          summary="The Dener XL is the hydraulic press brake most Canadian shops buy from us: a stress-relieved monoblock frame, Hawe hydraulics "
                  "at constant pressure, Y1-Y2 ram axes and an X back gauge on ball screw and linear guides, driven from a 15″ ESA S840 2D "
                  "graphic control — the operator draws the part and the control works out the sequence, tonnage and back-gauge positions. "
-                 "Eight models from 66 US tons × 5 ft to 353 US tons × 10 ft, with European-style tooling, front supports and the full list "
-                 "of options from CNC crowning and 6-axis back gauges to angle measurement and robot cells.",
-         features=["Monoblock welded frame, stress-relieved and machined in one setting; fixed upper table, 100 % free bending area between the housings"] + PB_STD_XL,
+                 "Eighteen models from 66 US tons × 5 ft to 661 US tons × 20 ft on the same frame design: the 5 to 10 ft machines to 353 US tons "
+                 "for job-shop sheet work, the 12, 13 and 20 ft machines to 661 US tons with up to 26.8″ daylight, 17.7″ stroke and a 23.6″ throat "
+                 "on the 400 and 600-ton sizes for deep boxes and large profiles (the 60600 sits in a pit). European-style tooling and front "
+                 "supports come with every machine; the options run from CNC crowning and 6-axis back gauges to angle measurement, sheet "
+                 "followers and robot cells, and for longer work Dener builds tandem machines — two XLs on one control bending to 60 ft and "
+                 "1,800 US tons.",
+         features=["Monoblock welded frame, stress-relieved and machined in one setting; fixed upper table, 100 % free bending area between the housings",
+                   "5 to 20 ft bending lengths, 66 to 661 US tons; 23.6″ (600 mm) throat on the 400 and 600 t machines"] + PB_STD_XL,
          optional=PB_OPT_XL,
-         images=["dn-xl-1", "dn-xl-2", "dn-xf-1", "dn-xl-video-1", "dn-xl-backgauge", "dn-xh-4", "dn-xl-control"],
+         images=["dn-xl-1", "dn-xl-2", "dn-xl-3", "dn-xf-1", "dn-xf-2", "dn-xl-video-1", "dn-xl-video-2", "dn-xl-backgauge", "dn-xl-follower",
+                 "dn-xh-4", "dn-xf-3", "dn-xl-control"],
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),
                      ("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake"), ("pRxr7CB2pDQ", "XL 13 ft × 220 ton with laser angle measurement and sheet follower"),
-                     ("dXorm3f4fBY", "DENER XL 13 ft × 320 ton CNC hydraulic press brake"), ("fG6TQ8TseSo", "Hydraulic press brake with ATF 6-axis back gauge"),
-                     ("BUFzeYAAE_Y", "Laser angle measurement system on the XL press brake"), ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
-         specs=spec([T_XL_SMALL], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="dn-xl-large", control=CTL_XL, group="pb-hydraulic", page=P_PB, brand=BRAND,
-         name="XL hydraulic CNC press brakes, 193 – 661 US tons × 12 – 20 ft",
-         short="XL hydraulic press brakes 12 – 20 ft",
-         models_label="XL 36175 – XL 60600 · 10 models",
-         summary="The same XL press brake in the long and heavy sizes: 12, 13 and 20 ft bending lengths from 193 to 661 US tons, with up to "
-                 "26.8″ daylight, 17.7″ stroke and a 23.6″ throat on the 400 and 600-ton machines for deep boxes and large profiles. The 60600 "
-                 "sits in a pit. For longer work Dener builds tandem machines — two XLs on one control bending to 60 ft and 1,800 US tons, "
-                 "with sheet followers and automatic feeders.",
-         features=["Monoblock frame to 661 US tons; 23.6″ (600 mm) throat on the 400 and 600 t machines"] + PB_STD_XL,
-         optional=PB_OPT_XL,
-         images=["dn-xl-3", "dn-xf-2", "dn-xl-video-2", "dn-xl-follower", "dn-xf-3"],
-         videos=vids(("_rdb1prKsxc", "20 ft × 600 ton DENER Puma XL heavy-duty press brake"), ("MkaKtgulHKw", "Heavy-duty CNC hydraulic press brake PUMA XL 20 ft × 600 ton with sheet follower"),
+                     ("dXorm3f4fBY", "DENER XL 13 ft × 320 ton CNC hydraulic press brake"), ("_rdb1prKsxc", "20 ft × 600 ton DENER Puma XL heavy-duty press brake"),
+                     ("MkaKtgulHKw", "Heavy-duty CNC hydraulic press brake PUMA XL 20 ft × 600 ton with sheet follower"),
                      ("FpHkRYeceyA", "20 ft × 1,000 ton 9-axis CNC heavy-duty press brake"), ("AGifmIGQOso", "DENER 60 ft × 1,800 ton tandem press brake with auto feeder"),
-                     ("jMqwk_yyCBo", "DENER 1,600 ton × 40 ft tandem press brake installation time-lapse"), ("dsZ8f7BKP84", "Tandem press brake PUMA XL 2 × 20 ft × 320 ton")),
-         specs=spec([T_XL_LARGE], PB_GK, PB_G_FROM, NOTE_PB)),
+                     ("jMqwk_yyCBo", "DENER 1,600 ton × 40 ft tandem press brake installation time-lapse"), ("dsZ8f7BKP84", "Tandem press brake PUMA XL 2 × 20 ft × 320 ton"),
+                     ("fG6TQ8TseSo", "Hydraulic press brake with ATF 6-axis back gauge"), ("BUFzeYAAE_Y", "Laser angle measurement system on the XL press brake"),
+                     ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
+         specs=spec([T_XL], PB_GK, PB_G_FROM, NOTE_PB)),
     dict(id="dn-xl-1560", control=CTL_XL, group="pb-compact-dener", page=P_PB, brand=BRAND,
          name="XL 1560 compact CNC press brake, 66 US tons × 5 ft",
          short="XL 1560 compact press brake",
@@ -283,8 +279,8 @@ PB_FAMILIES = [
                    "8.7″ (220 mm) stroke, 16.1″ (410 mm) daylight, 15.7″ (400 mm) throat for boxes and deep flanges",
                    "Ball-screw X back gauge with 25.6″ (650 mm) travel, fingers with manual R and Z adjustment and micro vernier"] + PB_STD_XL,
          optional=PB_OPT_XL,
-         images=["dn-xl1560-studio", "dn-xl1560-control", "dn-xl1560-tooling", "dn-xl1560-tooling-2",
-                 "dn-xl1560-backgauge", "dn-xl1560-backgauge-2", "dn-det-eurostamp-tools", "dn-det-tool-1281", "dn-det-tool-2067", "dn-det-front-supports"],
+         images=["dn-xl1560-studio", "dn-xl1560-photo-left", "dn-xl1560-photo-front", "dn-xl1560-photo-right", "dn-xl1560-control",
+                 "dn-xl1560-tooling", "dn-xl1560-tooling-2", "dn-xl1560-backgauge", "dn-xl1560-backgauge-2", "dn-det-eurostamp-tools"],
          videos=vids(("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake — the same 5 ft frame class"), ("5FWxGB6hoJI", "XL series hydraulic CNC press brakes"),
                      ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
          specs=spec([T_XL_1560], PB_GK, PB_G_FROM, NOTE_PB)),

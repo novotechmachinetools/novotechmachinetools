@@ -124,7 +124,7 @@ COMPACT = dict(
     points=["Dener XL 1560: 66 US tons × 5 ft, 15.7″ throat, ESA S840 2D control, Y1-Y2-X axes on linear scales, EUROSTAMP 1281 punch and 2067 4-way die included — premium line, made in Turkey",
             "Value line: WAD-50T/1300 and 1600 CNC brakes, 55 US tons × 4.3 – 5.2 ft, 4 axes with Delem DA-53Tx; WC67K-30T/1600 NC torsion-bar brake, 33 US tons × 5.2 ft with Estun E21PS",
             "Value-line HBV bending brakes: 16.5 – 35 US tons, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″, four-way V-block or two cylinders"],
-    hero="dn-xl1560-studio", minis=["vl-cp-wad1600", "vl-cp-wc67k"],
+    hero="dn-xl1560-studio", minis=["vl-cp-wad1600", "vl-cp-nc-adh"],
     groups=[("pb-compact-dener", "Compact CNC press brake · Dener premium line", "The XL 1560: the smallest Dener XL — 66 US tons over 5 ft, the frame, hydraulics, axes and ESA control of the 10 ft machines in a footprint that goes through a shop door.", "dener"),
             ("pb-compact-cnc", "Compact CNC press brakes · NovoTech value line", "The WAD-50T/1300 and 1600: 55 US tons over 4.3 and 5.2 ft, electro-hydraulic servo control with Hawe valves, linear scales and the Delem DA-53Tx, on a servo-driven pump.", "novotech"),
             ("pb-compact-nc", "Compact NC press brake · NovoTech value line", "The WC67K-30T/1600: 33 US tons over 5.2 ft, torsion-bar synchronised ram, mechanical stops and the Estun E21PS for 40 stored programs — the simplest press brake to own.", "novotech")],

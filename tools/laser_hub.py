@@ -17,7 +17,7 @@ import laser_nav as LN
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-BRAND_LINE = ("Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974, Dener Canada in Mississauga, ON, Canada); NovoTech's own value line is built in "
+BRAND_LINE = ("Dener Makina builds the premium lasers in Kayseri, Turkey (since 1974); NovoTech's own value line is built in "
               "China to our specification; Senfeng Laser builds its value line in Jinan, China (CE / FDA / ETL). All sold, installed and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Premium and value lines, one supplier", "text": "Premium Dener lasers from Turkey, NovoTech's own value line and the Senfeng value line from China — every machine with a "
           "CSA-approved panel, a chiller, nesting software, a 1-year warranty, and installation, training, parts and remote diagnostics from Mississauga, ON, Canada."}
