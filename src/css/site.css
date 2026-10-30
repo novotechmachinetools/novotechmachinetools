@@ -1021,3 +1021,8 @@ body.ai-locked { overflow: hidden; }
 .calc-other .calc-r-unit { align-self: center; padding: 0 8px; font-family: var(--sans); font-style: normal; font-weight: 600; font-size: 14px; color: var(--steel); text-transform: none; }
 .calc-other-back { border: 0; border-left: 1px solid var(--line); background: var(--paper); color: var(--charcoal); font-size: 20px; line-height: 1; padding: 0 12px; cursor: pointer; }
 .calc-other-back:hover, .calc-other-back:focus-visible { background: var(--orange); color: var(--ink); }
+/* calculator: one-line captions, so every box in a row starts at the same height (the owner: the boxes looked stepped) */
+.calc-row { align-items: flex-start; }
+.calc-row label { grid-template-rows: auto auto; align-content: start; }
+.calc-row .calc-cap { white-space: nowrap; line-height: 1.2; }
+.calc-row label small { font-family: var(--sans); font-weight: 400; font-size: 12.5px; text-transform: none; letter-spacing: 0; color: var(--steel); }
