@@ -28842,5 +28842,37 @@
   "trim": true,
   "quality": 84,
   "cutout": false
+ },
+ "vl-cp-nc-bg-fingers": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-bg-fingers.jpg",
+  "alt": "Back gauge of the WC67K compact NC press brake seen from the rear: three stop fingers on the beam, the lead screws and the drive motor",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-nc-bg-drive": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-bg-drive.jpg",
+  "alt": "Back gauge drive of the WC67K compact: a geared motor and two chains turn the lead screws, behind the hydraulic pump unit",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-nc-pedal": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-pedal.jpg",
+  "alt": "Foot pedal of the WC67K compact NC press brake: up and down pedals under a steel guard",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-cp-nc-buttons": {
+  "src": "tools/src-images/value-compact/vl-cp-nc-buttons.jpg",
+  "alt": "Operator buttons of the WC67K compact: key selectors, start and reset, and the Schneider emergency stop",
+  "section": "value-compact",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
  }
 }

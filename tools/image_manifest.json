@@ -96900,5 +96900,119 @@
    "file": "img/dener-detail/dn-det-crowning-motor-thumb.webp",
    "bytes": 3606
   }
+ },
+ "vl-cp-nc-bg-fingers": {
+  "alt": "Back gauge of the WC67K compact NC press brake seen from the rear: three stop fingers on the beam, the lead screws and the drive motor",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/value-compact/vl-cp-nc-bg-fingers-1200.webp",
+    "bytes": 39624
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/value-compact/vl-cp-nc-bg-fingers-800.webp",
+    "bytes": 25012
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/value-compact/vl-cp-nc-bg-fingers-480.webp",
+    "bytes": 13230
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/value-compact/vl-cp-nc-bg-fingers-thumb.webp",
+   "bytes": 2608
+  }
+ },
+ "vl-cp-nc-bg-drive": {
+  "alt": "Back gauge drive of the WC67K compact: a geared motor and two chains turn the lead screws, behind the hydraulic pump unit",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/value-compact/vl-cp-nc-bg-drive-1200.webp",
+    "bytes": 55734
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/value-compact/vl-cp-nc-bg-drive-800.webp",
+    "bytes": 35330
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/value-compact/vl-cp-nc-bg-drive-480.webp",
+    "bytes": 18030
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/value-compact/vl-cp-nc-bg-drive-thumb.webp",
+   "bytes": 3304
+  }
+ },
+ "vl-cp-nc-pedal": {
+  "alt": "Foot pedal of the WC67K compact NC press brake: up and down pedals under a steel guard",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 831,
+    "file": "img/value-compact/vl-cp-nc-pedal-1200.webp",
+    "bytes": 65354
+   },
+   {
+    "w": 800,
+    "h": 554,
+    "file": "img/value-compact/vl-cp-nc-pedal-800.webp",
+    "bytes": 39654
+   },
+   {
+    "w": 480,
+    "h": 332,
+    "file": "img/value-compact/vl-cp-nc-pedal-480.webp",
+    "bytes": 19394
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 111,
+   "file": "img/value-compact/vl-cp-nc-pedal-thumb.webp",
+   "bytes": 2936
+  }
+ },
+ "vl-cp-nc-buttons": {
+  "alt": "Operator buttons of the WC67K compact: key selectors, start and reset, and the Schneider emergency stop",
+  "variants": [
+   {
+    "w": 800,
+    "h": 923,
+    "file": "img/value-compact/vl-cp-nc-buttons-800.webp",
+    "bytes": 19446
+   },
+   {
+    "w": 480,
+    "h": 554,
+    "file": "img/value-compact/vl-cp-nc-buttons-480.webp",
+    "bytes": 10690
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 139,
+   "h": 160,
+   "file": "img/value-compact/vl-cp-nc-buttons-thumb.webp",
+   "bytes": 2280
+  }
  }
 }

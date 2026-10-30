@@ -624,7 +624,10 @@ COMPACT_FAMILIES = [
          features=["Mild steel to 14 ga (2 mm) over 5.2 ft and 1/8″ (3 mm) over 4 ft (V = 8 × thickness); 51″ (1,300 mm) between the frames, 7.9″ (200 mm) throat, 13.2″ (335 mm) daylight",
                    "23.6″ (600 mm) motorised X back gauge on ball screw and linear guide; 5.5 kW (7.5 HP) motor"] + NC_STD,
          optional=NC_OPT,
-         images=["vl-cp-nc-adh", "vl-cp-e21", "vl-cp-nc-cabinet", "vl-cp-nc-screw", "vl-cp-nc-valve", "vl-nc-torsion", "vl-nc-bg-motor"],
+         # frames of the WC67K video (captured in the browser, the supplier's logo painted out) for the operator controls, pedal and
+         # back gauge; the generic back-gauge-motor photo gave way to the real drive
+         images=["vl-cp-nc-adh", "vl-cp-e21", "vl-cp-nc-buttons", "vl-cp-nc-pedal", "vl-cp-nc-bg-fingers", "vl-cp-nc-bg-drive",
+                 "vl-cp-nc-cabinet", "vl-cp-nc-screw", "vl-cp-nc-valve", "vl-nc-torsion"],
          videos=vids(("0imM4bArpBc", "5 ft × 50 ton hydraulic press brake with Estun NC control")),
          specs=spec([T_NC_C], PB_GK, PB_G_FROM, NOTE_PB)),
 ]
