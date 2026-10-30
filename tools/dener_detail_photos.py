@@ -26,9 +26,10 @@ CTL = os.path.join(ROOT, "tools", "src-images", "controls")
 SMALL = 900            # px: a source whose longest side is under this is upscaled 2x
 
 
-def D(src, alt, mask=None, up=True, cutout=False, crop=None, up2=False, arrows=False, upscale=None):
+def D(src, alt, mask=None, up=True, cutout=False, crop=None, up2=False, arrows=False, upscale=None, rotate=0, min_width=0):
     """arrows=True: the figure is drawn with its axis arrows by tools/dener_bg_arrows.py (from the PDF page), not here"""
-    return dict(src=src, alt=alt, mask=mask, up=up, cutout=cutout, crop=crop, up2=up2, arrows=arrows, upscale=upscale)
+    return dict(src=src, alt=alt, mask=mask, up=up, cutout=cutout, crop=crop, up2=up2, arrows=arrows, upscale=upscale, rotate=rotate,
+                min_width=min_width)
 
 
 DETAIL = {
@@ -50,7 +51,8 @@ DETAIL = {
     "dn-det-crowning-motor": D("xl-crowning-motor.jpg", "CNC motorised crowning on a Dener press brake: a gear motor at the end of the bed drives the crowning wedges, set by the control for every bend", up=False),
     "dn-det-eurostamp-tools": D("xl-eurostamp-tools.png", "The standard tooling delivered with a Dener press brake: EUROSTAMP 85° punch 1281 (R 0.8 mm, 100 t/m) and 4-way die 2067 with 16, 22, 35 and 50 mm openings"),
     "dn-det-quick-release-plate": D("xl-quick-release-plate.png", "Dener quick-release punch holder front clamp plates with lever bar action, for European and American punches"),
-    "dn-det-eurostamp-quick-clamp": D("xl-eurostamp-quick-clamp.png", "EUROSTAMP quick clamp (Z1 / Z2 models): the European punch is inserted from below and self-seats when the lever closes"),
+    # photographed lying on a table; turned 90° so the punch hangs from the clamp as it does on the ram (the owner's request)
+    "dn-det-eurostamp-quick-clamp": D("xl-eurostamp-quick-clamp.png", "EUROSTAMP quick clamp (Z1 / Z2 models) as mounted on the ram: the European punch is inserted from below and self-seats when the lever closes", rotate=90, min_width=820),
     "dn-det-eurostamp-quick-clamp-2": D("xl-eurostamp-quick-clamp-2.png", "EUROSTAMP quick clamp on the ram — European tools only, lever action"),
     "dn-det-sheet-followers": D("xl-sheet-followers.png", "AP 01 CNC mechanical sheet followers: 0 – 60° inclination, 150 kg (330 lb) each, for long and heavy sheets"),
     "dn-det-oil-cooler": D("xl-oil-cooler.png", "Hydraulic oil cooler: the fan starts at 60 °C oil temperature and stops at 55 °C"),
@@ -105,6 +107,8 @@ def process_image(spec, srcdir, dst, key):
     im = im.convert("RGBA") if (im.mode in ("RGBA", "LA", "P") or spec.get("mask")) else im.convert("RGB")
     if spec.get("crop"):
         im = im.crop(spec["crop"])
+    if spec.get("rotate"):                              # degrees counter-clockwise (a tool photographed lying down, shown as mounted)
+        im = im.rotate(spec["rotate"], expand=True, resample=Image.BICUBIC)
     if spec.get("mask"):
         m = Image.open(os.path.join(srcdir, spec["mask"])).convert("L")
         im = im.convert("RGBA")
@@ -119,6 +123,9 @@ def process_image(spec, srcdir, dst, key):
         im = upscale2(im)
         if spec.get("up2") and max(im.size) < SMALL:
             im = upscale2(im)
+    if spec.get("min_width") and im.width < spec["min_width"]:     # a portrait photo shown half-width: enough pixels for the 800 px variant
+        f = spec["min_width"] / im.width
+        im = im.resize((spec["min_width"], round(im.height * f)), Image.LANCZOS)
     os.makedirs(dst, exist_ok=True)
     if im.mode == "RGBA":
         path = os.path.join(dst, key + ".png")

@@ -993,3 +993,15 @@ body.ai-locked { overflow: hidden; }
 .force-chart tr.fc-s-row th { background: #3a3c3f; }
 .force-chart tr.fc-f-row td { background: var(--paper); text-align: left; padding: 8px 12px; font-size: 13.5px; color: var(--ink); border-top: 2px solid var(--line); }
 .force-chart .fc-badge.is-f { background: var(--orange-deep); color: #fff; }
+/* controls table: automatic bend sequence and collision check, side by side */
+.ctl-table th.ctl-key { background: var(--orange-deep); color: #fff; }
+.ctl-table .yn { display: inline-block; font-weight: 700; white-space: normal; }
+.ctl-table .yn::before { display: inline-block; width: 1.15em; font-weight: 700; }
+.ctl-table .yn.is-yes { color: var(--ink); }
+.ctl-table .yn.is-yes::before { content: "✓"; color: var(--orange-deep); }
+.ctl-table .yn.is-no { color: var(--steel); font-weight: 600; }
+.ctl-table .yn.is-no::before { content: "✕"; color: var(--mist); }
+.ctl-table .yn.is-opt { color: var(--orange-ink); }
+.ctl-table .yn.is-opt::before { content: "+"; color: var(--orange-deep); }
+.ctl-table .yn.is-unk { color: var(--mist); font-weight: 500; font-style: italic; }
+.ctl-table .yn.is-unk::before { content: "?"; font-style: normal; }
