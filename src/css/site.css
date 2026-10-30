@@ -1010,3 +1010,14 @@ body.ai-locked { overflow: hidden; }
 .btn-guide small { font-size: 13.5px; font-weight: 500; letter-spacing: 0; opacity: .82; }
 .btn-guide:hover, .btn-guide:focus-visible { background: var(--ink); border-color: var(--orange); color: #fff; }
 .btn-guide:hover svg, .btn-guide:focus-visible svg { color: var(--orange); }
+/* calculator: "Other" material — the number is typed in the material field itself */
+.calc-row .calc-material-box { display: block; min-width: 260px; }
+.calc-row .calc-material-box select, .calc-row .calc-other { width: 100%; box-sizing: border-box; }
+.calc-other { display: flex; align-items: stretch; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+.calc-other[hidden], .calc-material-box select[hidden] { display: none; }
+.calc-row .calc-other input[type=number] { flex: 1 1 auto; width: auto; min-width: 0; border: 0; border-radius: 4px 0 0 4px; background: transparent; }
+.calc-row .calc-other input[type=number]:focus { outline: none; }
+.calc-other:focus-within { outline: 2px solid var(--focus); outline-offset: 1px; }
+.calc-other .calc-r-unit { align-self: center; padding: 0 8px; font-family: var(--sans); font-style: normal; font-weight: 600; font-size: 14px; color: var(--steel); text-transform: none; }
+.calc-other-back { border: 0; border-left: 1px solid var(--line); background: var(--paper); color: var(--charcoal); font-size: 20px; line-height: 1; padding: 0 12px; cursor: pointer; }
+.calc-other-back:hover, .calc-other-back:focus-visible { background: var(--orange); color: var(--ink); }

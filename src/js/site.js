@@ -509,6 +509,7 @@
     return (whole ? whole + '-' : '') + num + '/' + den + '″';
   }
   var units = form.elements.units, material = form.elements.material, rIn = form.elements.r, rUnit = box.querySelector('.calc-r-unit');
+  var other = box.querySelector('.calc-other'), back = box.querySelector('.calc-other-back');
   var PSI = 1422.334;   // psi per kg/mm²
   var NAMES = { '47': 'Mild steel', '70': 'Stainless steel', '25': 'Aluminum' };
   function roundPsi(kg) { return Math.round(kg * PSI / 1000) * 1000; }
@@ -518,7 +519,7 @@
       if (!NAMES[o.value]) return;
       o.textContent = NAMES[o.value] + (imperial ? ' (' + o.getAttribute('data-psi') + ' psi)' : ' (' + o.value + ' kg/mm²)');
     });
-    if (rUnit) rUnit.textContent = imperial ? '(psi)' : '(kg/mm²)';
+    if (rUnit) rUnit.textContent = imperial ? 'psi' : 'kg/mm²';
     var cur = parseFloat(rIn.value);
     if (imperial) { rIn.min = '14000'; rIn.max = '213000'; rIn.step = '1000'; }
     else { rIn.min = '10'; rIn.max = '150'; rIn.step = '1'; }
@@ -535,11 +536,16 @@
     else { t.step = '0.1'; t.value = '6'; l.step = '1'; l.value = '3000'; v.step = '0.1'; v.value = ''; }
   }
   units.addEventListener('change', setUnits);
-  material.addEventListener('change', function () {        // a listed material fills in its strength; "Other" leaves it to the user
-    if (material.value !== 'custom') rIn.value = units.value === 'in' ? roundPsi(parseFloat(material.value)) : material.value;
-    else rIn.focus();
+  // "Other" turns the material field itself into a number entry (no second box beside it); × returns to the list
+  var lastKg = '47';
+  material.addEventListener('change', function () {
+    if (material.value !== 'custom') { lastKg = material.value; rIn.value = units.value === 'in' ? roundPsi(parseFloat(lastKg)) : lastKg; return; }
+    rIn.value = units.value === 'in' ? roundPsi(parseFloat(lastKg)) : lastKg;
+    material.hidden = true; other.hidden = false; rIn.focus(); rIn.select();
   });
-  rIn.addEventListener('input', function () { material.value = 'custom'; });
+  back.addEventListener('click', function () {
+    material.value = lastKg; other.hidden = true; material.hidden = false; material.focus();
+  });
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var imperial = units.value === 'in';
