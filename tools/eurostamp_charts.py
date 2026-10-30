@@ -91,9 +91,20 @@ def chart_html(chart, title, imperial, note=""):
         body.append(f'<tr><th scope="row">{vv}</th><td class="fc-side">{bb}</td><td class="fc-side">{rr}</td>{"".join(tds)}</tr>')
     cap = (f'{title} <small>Thickness S across the top ({unit_s}); V opening, shortest flange B and inside radius Ri down the side ({unit_s}); '
            f'force F in {unit_f} in the cells.{(" " + note) if note else ""}</small>')
+    # two header rows: a banner over the thickness columns says what the numbers under it are (the owner: "make it clear that the
+    # top row is the sheet thickness S"), and V / B / Ri carry their names; a last row names the cells, as F in the catalogue
+    n = len(cols)
+    unit_long = "inches" if imperial else "mm"
+    s_banner = (f'<th scope="colgroup" colspan="{n}" class="fc-s"><span class="fc-badge">S</span> Sheet thickness ({unit_long}) '
+                f'<span class="fc-arrow" aria-hidden="true">→</span></th>')
+    keys = (f'<th scope="col" rowspan="2" class="fc-key">V<small>V opening</small></th>'
+            f'<th scope="col" rowspan="2" class="fc-key">B<small>shortest flange</small></th>'
+            f'<th scope="col" rowspan="2" class="fc-key">Ri<small>inside radius</small></th>')
+    f_row = (f'<tr class="fc-f-row"><td colspan="3"></td><td colspan="{n}"><span class="fc-badge is-f">F</span> Bending force in the cells, '
+             f'{unit_f} — read down from the thickness S and across from the V opening</td></tr>')
     return (f'<div class="table-scroll" tabindex="0" aria-label="{title}"><table class="force-chart{" is-inch" if imperial else ""}">'
-            f'<caption>{cap}</caption><thead><tr><th scope="col" class="fc-key">V</th><th scope="col" class="fc-key">B</th>'
-            f'<th scope="col" class="fc-key">Ri</th>{head}</tr></thead><tbody>{"".join(body)}</tbody></table></div>')
+            f'<caption>{cap}</caption><thead><tr>{keys}{s_banner}</tr><tr class="fc-s-row">{head}</tr></thead>'
+            f'<tbody>{"".join(body)}{f_row}</tbody></table></div>')
 
 
 DIAGRAM = """<svg class="bend-diagram" viewBox="0 0 360 445" role="img" aria-labelledby="bend-diagram-t">

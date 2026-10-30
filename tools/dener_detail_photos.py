@@ -77,7 +77,9 @@ CONTROLS = {
     "ctl-delem-da66s": D("delem-da-66s.webp", "Delem DA-66S: 24″ multi-touch 2D graphical control with 3D machine view, Profile-S2D offline software", up=False, cutout=True),
     "ctl-delem-da58tx": D("delem-da-58tx.webp", "Delem DA-58Tx: 18.5″ touch 2D graphical control with automatic bend sequence and collision detection", up=False, cutout=True),
     "ctl-delem-da53tx": D("delem-da-53tx.webp", "Delem DA-53Tx: 15″ touch numerical control with 2D product and tool programming, up to 4 axes", up=False, cutout=True),
-    "ctl-delem-da41t": D("delem-da-41t.webp", "Delem DA-41T: 7″ touch NC control for torsion-bar press brakes — Y and X axes, 100 programs", up=False, cutout=True),
+    # the owner's photo of a DA-41T on a press brake pendant (Oct 29 2026), background removed with Pixelcut and approved as it is —
+    # the mounting tube runs to the top edge; it replaced Delem's product cut-out delem-da-41t.webp
+    "ctl-delem-da41t": D("delem-da41t-pendant.png", "Delem DA-41T 7″ touch NC control on a press brake pendant, with the emergency stop and handle — Y and X axes, 100 programs, for torsion-bar press brakes", up=True),
     "ctl-cybelec-ct12": D("cybelec-ct12.webp", "Cybelec CybTouch 12 PS: 12″ touch control for synchronised press brakes with TouchProfile 2D programming", up=False),
     # ESA's own product photos of the S875 W and S840 on their swing-arm stands (the owner's choice, Oct 29 2026; the earlier
     # cards were esa-s875w-card.webp / esa-s840-card.webp)

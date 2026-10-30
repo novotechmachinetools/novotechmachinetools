@@ -985,3 +985,11 @@ body.ai-locked { overflow: hidden; }
   .bend-figure { max-width: 300px; margin: 0 auto; }
   .bend-formula p { font-size: 19px; }
 }
+/* force charts: the banner that names the thickness row (S) and the row that names the cells (F) */
+.force-chart thead th.fc-s { background: var(--charcoal); color: #fff; font-family: var(--cond); font-size: 18px; font-weight: 600; text-align: left; padding: 7px 12px; letter-spacing: .01em; border-bottom: 1px solid #44464a; }
+.force-chart thead th.fc-key small { display: block; font-family: var(--sans); font-size: 10.5px; font-weight: 500; line-height: 1.15; margin-top: 1px; color: #fff; opacity: .92; }
+.force-chart .fc-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; height: 26px; padding: 0 4px; margin-right: 6px; background: var(--orange); color: var(--ink); font-family: var(--cond); font-weight: 700; font-size: 18px; vertical-align: middle; }
+.force-chart .fc-arrow { color: var(--orange); font-weight: 700; margin-left: 4px; }
+.force-chart tr.fc-s-row th { background: #3a3c3f; }
+.force-chart tr.fc-f-row td { background: var(--paper); text-align: left; padding: 8px 12px; font-size: 13.5px; color: var(--ink); border-top: 2px solid var(--line); }
+.force-chart .fc-badge.is-f { background: var(--orange-deep); color: #fff; }

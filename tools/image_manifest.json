@@ -94578,33 +94578,27 @@
   }
  },
  "ctl-delem-da41t": {
-  "alt": "Delem DA-41T: 7″ touch NC control for torsion-bar press brakes — Y and X axes, 100 programs",
+  "alt": "Delem DA-41T 7″ touch NC control on a press brake pendant, with the emergency stop and handle — Y and X axes, 100 programs, for torsion-bar press brakes",
   "variants": [
    {
-    "w": 1200,
-    "h": 637,
-    "file": "img/controls/ctl-delem-da41t-1200.webp",
-    "bytes": 24438
-   },
-   {
     "w": 800,
-    "h": 424,
+    "h": 1388,
     "file": "img/controls/ctl-delem-da41t-800.webp",
-    "bytes": 15848
+    "bytes": 47974
    },
    {
     "w": 480,
-    "h": 255,
+    "h": 833,
     "file": "img/controls/ctl-delem-da41t-480.webp",
-    "bytes": 9018
+    "bytes": 29852
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 85,
+   "w": 92,
+   "h": 160,
    "file": "img/controls/ctl-delem-da41t-thumb.webp",
-   "bytes": 2530
+   "bytes": 4418
   }
  },
  "ctl-cybelec-ct12": {
