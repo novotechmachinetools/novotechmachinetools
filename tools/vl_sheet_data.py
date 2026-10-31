@@ -461,14 +461,16 @@ NOTE_IW = ("Capacities are the supplier's ratings for steel of up to 65,000 psi 
 PB_STD = ["Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
           "Electro-hydraulic servo synchronisation: proportional servo valves, linear scales on both sides, ± 0.01 mm ram repeatability",
           "Mild hybrid drive as standard: a servo motor and servo pump in place of the conventional motor and pump — the pump turns only while the ram "
-          "moves and stops while the machine waits, loads or unloads: 40 – 60 % less energy, cooler oil, about 60 dB, longer life for the pump, seals and valves",
+          "moves and stops while the machine waits, loads or unloads: 40 – 60 % less energy, cooler oil, much less noise for a quieter shop (about 60 dB, "
+          "and silent while the ram waits), longer life for the pump, seals and valves",
           "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
           "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
           "Manual top-tool clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
+          "DSP laser finger protection under the punch (EN 12622 CAT 4 / SIL 3) with its safety PLC",   # standard on the WAD (owner, Oct 31 2026)
           "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop", VOLT]
 PB_OPT = ["Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
           "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
-          "DSP laser finger protection (EN 12622 CAT 4 / SIL 3) or light curtains", "CNC sheet follower supports", "Quick-release top clamps, double-sided quick clamps or Rolleri pneumatic clamps; Wila hydraulic clamping",
+          "CNC sheet follower supports", "Quick-release top clamps, double-sided quick clamps or Rolleri pneumatic clamps; Wila hydraulic clamping",
           "Automatic angle measurement", "Hydraulic oil cooler; automatic lubrication", "Tandem machines on one control; robot bending cells", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 NC_STD = ["Estun E21PS NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, one-way / two-way positioning, stroke counter; inches or millimetres",
           "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
@@ -553,14 +555,17 @@ HPB_FAMILIES = [
                  "machines, built to a price that lets a small shop own a real CNC brake. Twenty-five models on one design, from 55 US tons × 4 ft to "
                  "331 US tons × 20 ft: the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for; from 170 t up the machines have "
                  "17.7 – 19.7″ throats, 7.9 – 9.8″ strokes and 18.9 – 22.4″ daylight for deep boxes, with 25 – 40 cc pumps and 13 – 21 kW servo main "
-                 "motors, and the 220 and 250 t × 13 ft bend 3/8″ plate the full length. Delem DA-53Tx standard with 4+1 axes and CNC crowning; "
-                 "DA-58Tx, DA-66S / 69S controls, 6-axis back gauges, DSP laser protection, sheet followers and Wila clamping are options.",
-         features=["Mild steel to 1/4″ over 10 ft on the 110 t, 5/16″ on the 135 t, 3/8″ over 13 ft on the 220 t and 1/2″ over 13 ft on the 300 t (V = 8 × thickness)"] + PB_STD,
+                 "motors, and the 220 and 250 t × 13 ft bend 3/8″ plate the full length. Delem DA-53Tx with 4+1 axes, CNC crowning and DSP laser finger "
+                 "protection are standard; DA-58Tx, DA-66S / 69S controls, 6-axis back gauges, sheet followers and Wila clamping are options.",
+         features=list(PB_STD),      # the capacity line is off the WAD list (the owner, Oct 31 2026)
          optional=PB_OPT,
          # the two Delem control photos (shown in the control box below), the hydraulic-clamp, open-clamp, crowning and sheet-follower
-         # renders are off the gallery (the owner, Oct 31 2026)
-         images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-wad-robot", "vl-pb-backgauge", "vl-pb-clamps", "vl-pb-quickclamp",
-                 "vl-pb-cylinders", "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-dsp"],
+         # renders are off the gallery (the owner, Oct 31 2026); the factory photos of the WAD 110T/3200 (tools/wad_photos.py) are
+         # the side photos (the owner, Oct 31 2026)
+         images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-wad-front", "vl-wad-34", "vl-wad-side", "vl-wad-robot", "vl-wad-arm",
+                 "vl-wad-pedal", "vl-pb-backgauge", "vl-wad-bg-beam", "vl-wad-bg-rear", "vl-wad-bg-chain", "vl-wad-finger",
+                 "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-clamps", "vl-pb-quickclamp", "vl-pb-dsp", "vl-wad-throat", "vl-pb-cylinders",
+                 "vl-wad-valve-top", "vl-wad-servo", "vl-wad-crown-motor", "vl-wad-cabinet", "vl-wad-cabinet-in"],
          videos=vids(("gYyQIv5HRME", "WAD-110T/3200 CNC press brake — 10 ft × 121 US tons, Delem DA-53TX, mild-hybrid servo drive")),
          # the die-alignment video (KyNWOyaBKDM) was filmed on a Dener brake: off the WAD section (owner, Oct 30 2026); the channel's
          # WADE / DSP-laser videos show the supplier's badges, so they stay off the page too

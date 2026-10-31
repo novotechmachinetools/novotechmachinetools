@@ -95,7 +95,7 @@ def overflowing(pg, sel="section.page[data-fam]"):
         return bottom > f.getBoundingClientRect().top - 4; }).map(p => p.dataset.fam || p.dataset.spec)""", sel)
 
 
-def render(spec, no_inline, budgets=None):
+def render(spec, no_inline, budgets=None, tight=None):
     fams_all = {}
     for s in spec["family_sets"]:
         fams_all.update(json.load(open(os.path.join(ROOT, "content", "families", f"{s}.json"), encoding="utf-8"))["families"])
@@ -106,6 +106,7 @@ def render(spec, no_inline, budgets=None):
         f["minis"] = [img(k) for k in f["images"][1:3]]
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]
         f["series"] = f.get("short", f["name"]).split(" ")[0] if not f.get("series") else f["series"]
+        f["tight"] = (tight or {}).get(fid, 0)       # 1 / 2: smaller photo band and type when the equipment lists overflow
         families.append(f)
     layout(families, no_inline, budgets)
     # page numbering: cover 1, contents 2, about 3, then families, back cover
@@ -134,8 +135,8 @@ def render(spec, no_inline, budgets=None):
 def build(spec_path, html_only=False):
     spec = json.load(open(spec_path, encoding="utf-8"))
     no_inline = set(spec.get("no_inline", []))
-    budgets = {}
-    out_html, total = render(spec, no_inline, budgets)
+    budgets, tight = {}, {}
+    out_html, total = render(spec, no_inline, budgets, tight)
     if html_only:
         print("html:", out_html); return
     from playwright.sync_api import sync_playwright
@@ -149,10 +150,14 @@ def build(spec_path, html_only=False):
             over = set(overflowing(pg))
             new = over - no_inline
             spec_over = set(overflowing(pg, "section.page[data-spec]"))
-            if not new and not spec_over:
+            squeeze = {fid for fid in over - new if tight.get(fid, 0) < 2}     # inline table already gone: tighten the page
+            if not new and not spec_over and not squeeze:
                 if over:
                     print("!! pages still overflow:", sorted(over))
                 break
+            for fid in squeeze:
+                tight[fid] = tight.get(fid, 0) + 1
+                print(f"family page of {fid} still overflows — tightening (level {tight[fid]})")
             if new:
                 print("inline table does not fit, moved to a specifications page:", ", ".join(sorted(new)))
                 no_inline |= new
@@ -160,7 +165,7 @@ def build(spec_path, html_only=False):
                 budgets[fid] = budgets.get(fid, 34) * 0.75
                 print(f"specifications page of {fid} runs into the footer — paginating at {budgets[fid]:.0f}")
             pg.close()
-            out_html, total = render(spec, no_inline, budgets)
+            out_html, total = render(spec, no_inline, budgets, tight)
         else:
             print("!! still overflowing after 6 passes")
             pg = b.new_page()

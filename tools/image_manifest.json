@@ -105515,5 +105515,455 @@
    "file": "img/dener/dn-gfl-sheet-thumb.webp",
    "bytes": 2286
   }
+ },
+ "vl-wad-front": {
+  "alt": "WAD 110T/3200 CNC hydraulic press brake: 10 ft \u00d7 121 US tons, with the Delem DA-53Tx on its swing arm, the front support arms and the foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-front-1200.webp",
+    "bytes": 108882
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-front-800.webp",
+    "bytes": 57196
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-front-480.webp",
+    "bytes": 25858
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-front-thumb.webp",
+   "bytes": 4282
+  }
+ },
+ "vl-wad-34": {
+  "alt": "WAD 110T/3200 from the side: the Delem control on its swing arm, the hinged side guards and the electrical cabinet",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-34-1200.webp",
+    "bytes": 131424
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-34-800.webp",
+    "bytes": 70004
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-34-480.webp",
+    "bytes": 31498
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-34-thumb.webp",
+   "bytes": 4860
+  }
+ },
+ "vl-wad-side": {
+  "alt": "Side frame of the WAD with the hinged side guard and its window",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-side-1200.webp",
+    "bytes": 114326
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-side-800.webp",
+    "bytes": 62478
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-side-480.webp",
+    "bytes": 28002
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-side-thumb.webp",
+   "bytes": 4700
+  }
+ },
+ "vl-wad-arm": {
+  "alt": "Front sheet support arm sliding on a linear rail along the bed",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-arm-1200.webp",
+    "bytes": 100638
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-arm-800.webp",
+    "bytes": 58464
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-arm-480.webp",
+    "bytes": 28070
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-arm-thumb.webp",
+   "bytes": 4474
+  }
+ },
+ "vl-wad-pedal": {
+  "alt": "Foot pedal on a movable stand, with the emergency stop on top",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-pedal-1200.webp",
+    "bytes": 78146
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-pedal-800.webp",
+    "bytes": 39706
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-pedal-480.webp",
+    "bytes": 17426
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-pedal-thumb.webp",
+   "bytes": 2960
+  }
+ },
+ "vl-wad-bg-beam": {
+  "alt": "Back gauge from the rear: the beam with a stop finger on its linear rail, and the X-axis ball screw and linear guide that move it front to back",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-bg-beam-1200.webp",
+    "bytes": 64636
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-bg-beam-800.webp",
+    "bytes": 34498
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-bg-beam-480.webp",
+    "bytes": 15564
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-bg-beam-thumb.webp",
+   "bytes": 2838
+  }
+ },
+ "vl-wad-bg-rear": {
+  "alt": "X-axis drive behind the frame: one servo motor and a timing belt turn the ball screws on both sides together, so the back gauge beam stays parallel",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-bg-rear-1200.webp",
+    "bytes": 129120
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-bg-rear-800.webp",
+    "bytes": 59646
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-bg-rear-480.webp",
+    "bytes": 22458
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-bg-rear-thumb.webp",
+   "bytes": 2930
+  }
+ },
+ "vl-wad-bg-chain": {
+  "alt": "Back gauge from the side: the X-axis carriage on its ball screw and linear guide, with the cable chain that follows the beam",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-bg-chain-1200.webp",
+    "bytes": 94956
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-bg-chain-800.webp",
+    "bytes": 49668
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-bg-chain-480.webp",
+    "bytes": 22694
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-bg-chain-thumb.webp",
+   "bytes": 3852
+  }
+ },
+ "vl-wad-finger": {
+  "alt": "Back gauge stop finger: it slides along the beam on a linear rail and locks with the knob",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-finger-1200.webp",
+    "bytes": 89600
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-finger-800.webp",
+    "bytes": 47740
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-finger-480.webp",
+    "bytes": 22226
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-finger-thumb.webp",
+   "bytes": 4070
+  }
+ },
+ "vl-wad-throat": {
+  "alt": "Throat in the side frame: a flange can pass into it when the part is longer than the distance between the frames",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-throat-1200.webp",
+    "bytes": 48856
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-throat-800.webp",
+    "bytes": 30708
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-throat-480.webp",
+    "bytes": 17488
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-throat-thumb.webp",
+   "bytes": 4092
+  }
+ },
+ "vl-wad-valve-top": {
+  "alt": "Valve block on top of a ram cylinder, inside the top cover",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 667,
+    "file": "img/value-sheet/vl-wad-valve-top-1200.webp",
+    "bytes": 63822
+   },
+   {
+    "w": 800,
+    "h": 444,
+    "file": "img/value-sheet/vl-wad-valve-top-800.webp",
+    "bytes": 35886
+   },
+   {
+    "w": 480,
+    "h": 267,
+    "file": "img/value-sheet/vl-wad-valve-top-480.webp",
+    "bytes": 17970
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 89,
+   "file": "img/value-sheet/vl-wad-valve-top-thumb.webp",
+   "bytes": 3500
+  }
+ },
+ "vl-wad-servo": {
+  "alt": "Servo motor and pump of the mild-hybrid hydraulic drive, with the oil filter",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-servo-1200.webp",
+    "bytes": 66504
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-servo-800.webp",
+    "bytes": 38770
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-servo-480.webp",
+    "bytes": 20076
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-servo-thumb.webp",
+   "bytes": 4084
+  }
+ },
+ "vl-wad-crown-motor": {
+  "alt": "Crowning motor at the end of the bed: the control sets the crowning wedges for each bend",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-crown-motor-1200.webp",
+    "bytes": 56658
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-crown-motor-800.webp",
+    "bytes": 33586
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-crown-motor-480.webp",
+    "bytes": 17454
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-crown-motor-thumb.webp",
+   "bytes": 3486
+  }
+ },
+ "vl-wad-cabinet": {
+  "alt": "Electrical cabinet on the side of the machine, door open",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-cabinet-1200.webp",
+    "bytes": 117178
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-cabinet-800.webp",
+    "bytes": 64784
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-cabinet-480.webp",
+    "bytes": 29656
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-cabinet-thumb.webp",
+   "bytes": 5094
+  }
+ },
+ "vl-wad-cabinet-in": {
+  "alt": "Inside the electrical cabinet: the main switch, the two servo drives of the back gauge axes and the drive of the main hydraulic motor",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wad-cabinet-in-1200.webp",
+    "bytes": 86744
+   },
+   {
+    "w": 800,
+    "h": 533,
+    "file": "img/value-sheet/vl-wad-cabinet-in-800.webp",
+    "bytes": 50948
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wad-cabinet-in-480.webp",
+    "bytes": 24164
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wad-cabinet-in-thumb.webp",
+   "bytes": 3820
+  }
  }
 }
