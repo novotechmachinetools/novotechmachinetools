@@ -473,7 +473,7 @@ PANEL_FAMILIES = [
          features=["0.2 s per bend; 14 ga mild steel; 59 – 126″ (push-down) or 47 – 59″ (suction-cup); auxiliary tools and clamps optional",
                    "Bus-based CNC with offline programming; automatic thickness compensation", "Safety fencing and light curtains; " + VOLT],
          optional=["6-axis robot loading / unloading cell (BDC1500 – 2500)", "Auxiliary bending tool and clamps", "300 mm bending height"],
-         images=["sf-bdc-1", "sf-bdc-2", "sf-bdc-3", "sf-bdc-suction", "sf-bdc-robot", "sf-bdc-robot-2", "sf-bdc-tool", "sf-bdc-clamps", "sf-bdc-bends", "sf-bdc-parts", "sf-bdc-parts-2"],
+         images=["sf-bdc-1", "sf-bdc-3", "sf-bdc-suction", "sf-bdc-robot", "sf-bdc-robot-2", "sf-bdc-tool", "sf-bdc-clamps", "sf-bdc-bends", "sf-bdc-parts", "sf-bdc-parts-2"],
          videos=[],
          specs=spec([T_BDC, T_BDC_S], PN_GK, PN_G_FROM, "Capacities are Senfeng's ratings; the model number is the metric bending width.")),
 ]
