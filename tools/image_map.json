@@ -30839,5 +30839,29 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "dn-xl-p-dsp-laser": {
+  "src": "tools/src-images/dener/dn-xl-p-dsp-laser.png",
+  "alt": "DSP-AP laser safety system, standard: the emitter and receiver on the ends of the ram guard the zone under the punch tip and stop the ram if a finger or an obstacle breaks the beam",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-p-crowning": {
+  "src": "tools/src-images/dener/dn-xl-p-crowning.png",
+  "alt": "CNC motorised crowning, option: the control sets the crowning of the lower table for every bend, compensating the deflection under load so the angle is the same along the whole bend",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-p-die-channel": {
+  "src": "tools/src-images/dener/dn-xl-p-die-channel.png",
+  "alt": "Die holder channel for quick die changes, option: the dies slide in and are clamped in seconds — also available in a Euro-American version for European and American dies",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
  }
 }

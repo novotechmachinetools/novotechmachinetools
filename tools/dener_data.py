@@ -283,12 +283,13 @@ PB_FAMILIES = [
          # no XF photos (the owner, Oct 30 2026: the XF model is out of the gallery and the tables)
          # Dener's six XL detail photos with their captions (denerusa.com, the owner, Oct 30 2026); the blurry video frame of the
          # punch holders and the ATF back-gauge frame are out (the owner, Oct 30 2026)
-         # + the detail photos of NovoTech's XL quote with their standard / option status (the owner, Oct 30 2026); dn-xh-4, the
+         # + the detail photos of NovoTech's XL quote and the owner's own photos of a delivered XL (DSP-AP laser, CNC crowning, die
+         # holder channel) with their standard / option status (the owner, Oct 30 2026); dn-xh-4, the
          # blurry tooling photo, is out (the owner, Oct 30 2026)
          images=["dn-xl-1", "dn-xl-2", "dn-xl-3", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-esa-screen", "dn-xl-ram-slide",
                  "dn-xl-front-arms", "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-q-front-supports",
-                 "dn-xl-q-rear-gates", "dn-xl-q-punch-1281", "dn-xl-q-die-2067", "dn-xl-q-quick-release", "dn-xl-q-euro-american",
-                 "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-control",
+                 "dn-xl-q-rear-gates", "dn-xl-p-dsp-laser", "dn-xl-q-punch-1281", "dn-xl-q-die-2067", "dn-xl-p-crowning",
+                 "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-control",
                  # the back gauge options with their axis arrows (tools/dener_bg_arrows.py)
                  "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis", "dn-det-bg-6axis-atf"],
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),

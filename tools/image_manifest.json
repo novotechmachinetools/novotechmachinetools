@@ -104319,5 +104319,95 @@
    "file": "img/dener/dn-xl-q-es-clamp-2-thumb.webp",
    "bytes": 1366
   }
+ },
+ "dn-xl-p-dsp-laser": {
+  "alt": "DSP-AP laser safety system, standard: the emitter and receiver on the ends of the ram guard the zone under the punch tip and stop the ram if a finger or an obstacle breaks the beam",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1138,
+    "file": "img/dener/dn-xl-p-dsp-laser-1200.webp",
+    "bytes": 92588
+   },
+   {
+    "w": 800,
+    "h": 758,
+    "file": "img/dener/dn-xl-p-dsp-laser-800.webp",
+    "bytes": 58560
+   },
+   {
+    "w": 480,
+    "h": 455,
+    "file": "img/dener/dn-xl-p-dsp-laser-480.webp",
+    "bytes": 30680
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 152,
+   "file": "img/dener/dn-xl-p-dsp-laser-thumb.webp",
+   "bytes": 5216
+  }
+ },
+ "dn-xl-p-crowning": {
+  "alt": "CNC motorised crowning, option: the control sets the crowning of the lower table for every bend, compensating the deflection under load so the angle is the same along the whole bend",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 877,
+    "file": "img/dener/dn-xl-p-crowning-1200.webp",
+    "bytes": 69834
+   },
+   {
+    "w": 800,
+    "h": 584,
+    "file": "img/dener/dn-xl-p-crowning-800.webp",
+    "bytes": 43260
+   },
+   {
+    "w": 480,
+    "h": 351,
+    "file": "img/dener/dn-xl-p-crowning-480.webp",
+    "bytes": 21818
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 117,
+   "file": "img/dener/dn-xl-p-crowning-thumb.webp",
+   "bytes": 3828
+  }
+ },
+ "dn-xl-p-die-channel": {
+  "alt": "Die holder channel for quick die changes, option: the dies slide in and are clamped in seconds \u2014 also available in a Euro-American version for European and American dies",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1117,
+    "file": "img/dener/dn-xl-p-die-channel-1200.webp",
+    "bytes": 50106
+   },
+   {
+    "w": 800,
+    "h": 745,
+    "file": "img/dener/dn-xl-p-die-channel-800.webp",
+    "bytes": 31546
+   },
+   {
+    "w": 480,
+    "h": 447,
+    "file": "img/dener/dn-xl-p-die-channel-480.webp",
+    "bytes": 17168
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/dener/dn-xl-p-die-channel-thumb.webp",
+   "bytes": 4086
+  }
  }
 }
