@@ -30,10 +30,14 @@ def inch(mm, nd=1):
 
 def feet(mm):
     f = mm / 304.8
+    if round(f, 1) == 9.9:              # the 3,020 mm machines are 10 ft machines (the owner, Oct 31 2026): never "9.9 ft"
+        return "10 ft"
     return f"{f:.0f} ft" if abs(f - round(f)) < 0.06 else f"{f:.1f} ft"
 
 
 def length(mm):
+    if feet(mm) == "10 ft" and round(mm / 25.4) < 120:
+        return f"10 ft · 120″ ({mm:,} mm)"          # and 120″ with it, not 118.9″ (the owner, Oct 31 2026)
     return f"{feet(mm)} · {mm / 25.4:.1f}″ ({mm:,} mm)"
 
 
