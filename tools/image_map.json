@@ -32051,5 +32051,14 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "dn-xl-servo-pump": {
+  "src": "tools/src-images/dealer-pl/dn-xl-servo-pump.jpg",
+  "alt": "Mild hybrid option on the XL: the servo motor and the servo pump on top of the oil tank — the pump turns only while the ram moves, for 42 – 58 % less energy, 17 – 75 % faster approach and return, cooler oil and a quieter shop",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
  }
 }

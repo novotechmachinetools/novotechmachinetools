@@ -310,7 +310,7 @@ PB_FAMILIES = [
          # details — the owner's own set of XL singles, tandems, throat, fingers and sheet followers added the same day
          images=["dn-xl-1", "dn-xl-3", "dn-xl-3000x220", "dn-xl-4000x320", "dn-xl-4000x600", "dn-xl-tandem-3000x320", "dn-xl-tandem-4000x320",
                  "dn-tandem-6000x600", "dn-xl-tandem-4000x320-shop", "dn-xl-p-tandem-9200", "dn-xl-throat", "dn-xl-throat-frames",
-                 "dn-xl-xr-gauge", "dn-xl-bg-fingers", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports", "dn-xl-p-dsp-laser",
+                 "dn-xl-xr-gauge", "dn-xl-bg-fingers", "dn-xl-servo-pump", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports", "dn-xl-p-dsp-laser",
                  "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning", "dn-xl-p-manual-crowning", "dn-xl-p-laser-angle",
                  "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-sheet-followers", "dn-xl-control", "dn-xl-g-esa-s840",
                  "dn-xl-g-esa-s875w", "dn-xl-g-delem-da66s", "dn-xl-g-delem-da69s", "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis",

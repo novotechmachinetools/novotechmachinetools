@@ -63,6 +63,9 @@ PHOTOS = {
     "dn-xl-throat-frames": P("Deep throats in the XL side frames, seen along the machine: tall flanges on long parts pass into the frames",
                              cut=False),
     "dn-xl-bg-fingers": P("Back gauge fingers of the XL, sliding along the beam on its linear guide", cut=False),
+    "dn-xl-servo-pump": P("Mild hybrid option on the XL: the servo motor and the servo pump on top of the oil tank — the pump turns only while "
+                          "the ram moves, for 42 – 58 % less energy, 17 – 75 % faster approach and return, cooler oil and a quieter shop",
+                          [(1368, 362, 1450, 442)], cut=False, crop=(0, 340, 1450, 1290)),   # the owner's photo (Oct 31 2026)
     "dn-sheet-followers": P("Two CNC sheet followers in front of a Dener press brake: they rise with the sheet through the bend, so large, "
                             "thin sheets do not sag or whip back", [(580, 82, 642, 125)], cut=False),
     # ---- Dener DDM servo-electric and DDS ball-screw press brakes

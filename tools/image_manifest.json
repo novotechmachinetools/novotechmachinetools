@@ -106333,5 +106333,35 @@
    "file": "img/value-sheet/vl-nc-crowning-thumb.webp",
    "bytes": 2970
   }
+ },
+ "dn-xl-servo-pump": {
+  "alt": "Mild hybrid option on the XL: the servo motor and the servo pump on top of the oil tank \u2014 the pump turns only while the ram moves, for 42 \u2013 58 % less energy, 17 \u2013 75 % faster approach and return, cooler oil and a quieter shop",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 786,
+    "file": "img/dener/dn-xl-servo-pump-1200.webp",
+    "bytes": 68116
+   },
+   {
+    "w": 800,
+    "h": 524,
+    "file": "img/dener/dn-xl-servo-pump-800.webp",
+    "bytes": 41746
+   },
+   {
+    "w": 480,
+    "h": 314,
+    "file": "img/dener/dn-xl-servo-pump-480.webp",
+    "bytes": 22210
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 105,
+   "file": "img/dener/dn-xl-servo-pump-thumb.webp",
+   "bytes": 4102
+  }
  }
 }
