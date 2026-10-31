@@ -292,7 +292,7 @@ PB_FAMILIES = [
          # picture, and the CNC crowning photo his second picture; the front support arms of the XL under 175 t and the manual
          # crowning (option) his pictures too, upscaled 4x, his photo of the back safety covers (standard) and of the sheet followers
          # with extended parking (option) (Oct 30 2026)
-         images=["dn-xl-1", "dn-xl-3", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-ram-slide",
+         images=["dn-xl-1", "dn-xl-3", "dn-xl-p-tandem-9200", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-ram-slide",
                  "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports",
                  "dn-xl-p-dsp-laser", "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning",
                  "dn-xl-p-manual-crowning", "dn-xl-p-laser-angle", "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-xl-control",
@@ -309,7 +309,7 @@ PB_FAMILIES = [
                      # XLs with the mild hybrid option (the owner: the hybrid on the XL is the mild hybrid; the XH is the full hybrid)
                      ("vIWys546tWY", "DENER XL 10 ft × 220 ton mild hybrid CNC press brake"), ("nKbuxZGSjdQ", "DENER XL 12 ft × 175 ton mild hybrid press brake"),
                      ("-tAymdJwXjU", "DENER XL 13 ft × 220 ton mild hybrid press brake"), ("Msy6YHM5dIU", "DENER XL mild hybrid press brake"),
-                     ("Ymz5qW36zTs", "DENER tandem 60 ft × 1,600 ton mild hybrid press brake with sheet following support")),
+                     ("Ymz5qW36zTs", "DENER tandem 60 ft × 1,764 US tons (1,600 t) mild hybrid press brake with sheet following support")),
          # the SVP table sits under the XL table; the model list (compare, all models) stays the 18 XL machines
          specs=dict(spec([T_XL], PB_GK, PB_G_FROM, NOTE_PB), tables=[T_XL, T_SVP], note=NOTE_PB + " " + NOTE_SVP)),
     dict(id="dn-xl-1560", control=CTL_XL, group="pb-compact-dener", page=P_PB, brand=BRAND,

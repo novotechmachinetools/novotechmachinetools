@@ -104560,5 +104560,35 @@
    "bytes": 6970
   },
   "cut": "birefnet"
+ },
+ "dn-xl-p-tandem-9200": {
+  "alt": "Dener tandem press brake, 60 ft \u00d7 1,764 US tons (18.4 m \u00d7 1,600 t): two XL 9200 \u00d7 800 machines working as one, with the mild hybrid drive and sheet followers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 603,
+    "file": "img/dener/dn-xl-p-tandem-9200-1200.webp",
+    "bytes": 103004
+   },
+   {
+    "w": 800,
+    "h": 402,
+    "file": "img/dener/dn-xl-p-tandem-9200-800.webp",
+    "bytes": 60130
+   },
+   {
+    "w": 480,
+    "h": 241,
+    "file": "img/dener/dn-xl-p-tandem-9200-480.webp",
+    "bytes": 27196
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 80,
+   "file": "img/dener/dn-xl-p-tandem-9200-thumb.webp",
+   "bytes": 3700
+  }
  }
 }

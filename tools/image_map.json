@@ -30904,5 +30904,13 @@
   "trim": true,
   "quality": 82,
   "alt": "Sheet followers with extended parking, option: CNC followers rise with the sheet and carry large parts through the bend, and the extended rail lets them park beside the machine, leaving the front free"
+ },
+ "dn-xl-p-tandem-9200": {
+  "src": "tools/src-images/dener/dn-xl-p-tandem-9200.png",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "alt": "Dener tandem press brake, 60 ft × 1,764 US tons (18.4 m × 1,600 t): two XL 9200 × 800 machines working as one, with the mild hybrid drive and sheet followers"
  }
 }
