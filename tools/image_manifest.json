@@ -50340,7 +50340,7 @@
   }
  },
  "dn-ddm-video-1": {
-  "alt": "Dener DDM 15030 \u2014 10 ft \u00d7 165 US tons servo-electric press brake",
+  "alt": "Dener DDM 15030, 10 ft \u00d7 165 US tons: the lower die holder, the back gauge fingers behind it and a front support on its linear guide",
   "variants": [
    {
     "w": 1200,
@@ -50550,7 +50550,7 @@
   }
  },
  "dn-dds-4": {
-  "alt": "Dener DDS \u2014 ESA S840 15.6\u2033 touch-screen control pendant",
+  "alt": "Dener DDS \u2014 ESA S640 15\u2033 colour touch-screen control on its pendant",
   "variants": [
    {
     "w": 1200,
@@ -94395,6 +94395,12 @@
   "alt": "Standard 2-axis back gauge (X, R) of the DDM on linear guides, ball-screw X axis with 500 mm reach",
   "variants": [
    {
+    "w": 674,
+    "h": 555,
+    "file": "img/dener-detail/dn-det-bg-2axis-ddm-674.webp",
+    "bytes": 32308
+   },
+   {
     "w": 480,
     "h": 395,
     "file": "img/dener-detail/dn-det-bg-2axis-ddm-480.webp",
@@ -109869,5 +109875,335 @@
    "bytes": 5418
   },
   "cut": "birefnet"
+ },
+ "video-GptvkfBO9GQ": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-GptvkfBO9GQ-1200.webp",
+    "bytes": 50918
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-GptvkfBO9GQ-800.webp",
+    "bytes": 32156
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-GptvkfBO9GQ-480.webp",
+    "bytes": 16348
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-GptvkfBO9GQ-thumb.webp",
+   "bytes": 4000
+  }
+ },
+ "vl-wadg-crowning": {
+  "alt": "CNC crowning drive of the WADG (60 t and up): a gear motor at the end of the table sets the deflection compensation for the bend length, so the angle is the same from end to end",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 799,
+    "file": "img/value-sheet/vl-wadg-crowning-1200.webp",
+    "bytes": 42260
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/value-sheet/vl-wadg-crowning-800.webp",
+    "bytes": 25426
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wadg-crowning-480.webp",
+    "bytes": 13292
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wadg-crowning-thumb.webp",
+   "bytes": 2958
+  }
+ },
+ "vl-wadg-backgauge": {
+  "alt": "CNC back gauge on HIWIN linear guides with servo-driven finger carriages and drag chains \u2014 X and R as standard, more axes (Z1, Z2, X1, X2, R1, R2) by configuration",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 774,
+    "file": "img/value-sheet/vl-wadg-backgauge-1200.webp",
+    "bytes": 211726
+   },
+   {
+    "w": 800,
+    "h": 516,
+    "file": "img/value-sheet/vl-wadg-backgauge-800.webp",
+    "bytes": 109350
+   },
+   {
+    "w": 480,
+    "h": 309,
+    "file": "img/value-sheet/vl-wadg-backgauge-480.webp",
+    "bytes": 49928
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/value-sheet/vl-wadg-backgauge-thumb.webp",
+   "bytes": 10088
+  }
+ },
+ "vl-wadg-front-supports": {
+  "alt": "Front support arms on a linear guide along the table, moved to where the part needs support",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-sheet/vl-wadg-front-supports-1200.webp",
+    "bytes": 80618
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-sheet/vl-wadg-front-supports-800.webp",
+    "bytes": 47040
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-sheet/vl-wadg-front-supports-480.webp",
+    "bytes": 23056
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-sheet/vl-wadg-front-supports-thumb.webp",
+   "bytes": 4188
+  }
+ },
+ "vl-wadg-angle": {
+  "alt": "Checking the bend angle of the first part with a protractor \u2014 the servo ram repeats to \u00b1 0.01 mm, so the next parts follow it",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 800,
+    "file": "img/value-sheet/vl-wadg-angle-1200.webp",
+    "bytes": 61792
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/value-sheet/vl-wadg-angle-800.webp",
+    "bytes": 30548
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-sheet/vl-wadg-angle-480.webp",
+    "bytes": 14864
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-sheet/vl-wadg-angle-thumb.webp",
+   "bytes": 3240
+  }
+ },
+ "dn-det-ddm-motors": {
+  "alt": "Servo synchronous motors and gearboxes on top of the DDM frame, one for each side of the ram (Y1, Y2): they turn the belt pulleys that pull the ram down, for up to 220 US tons (200 t)",
+  "variants": [
+   {
+    "w": 980,
+    "h": 630,
+    "file": "img/dener-detail/dn-det-ddm-motors-980.webp",
+    "bytes": 49678
+   },
+   {
+    "w": 800,
+    "h": 514,
+    "file": "img/dener-detail/dn-det-ddm-motors-800.webp",
+    "bytes": 38068
+   },
+   {
+    "w": 480,
+    "h": 309,
+    "file": "img/dener-detail/dn-det-ddm-motors-480.webp",
+    "bytes": 20856
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/dener-detail/dn-det-ddm-motors-thumb.webp",
+   "bytes": 3768
+  }
+ },
+ "dn-det-ddm-springs": {
+  "alt": "Ram return springs in the side frame of a DDM 15030: the belts pull the ram down, the springs lift it back and save energy \u2014 with the receiver of the optional Fiessler AKAS laser guard",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/dener-detail/dn-det-ddm-springs-1200.webp",
+    "bytes": 74630
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/dener-detail/dn-det-ddm-springs-800.webp",
+    "bytes": 46064
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/dener-detail/dn-det-ddm-springs-480.webp",
+    "bytes": 24186
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/dener-detail/dn-det-ddm-springs-thumb.webp",
+   "bytes": 4060
+  }
+ },
+ "dn-det-ddm-esa": {
+  "alt": "21.5\u2033 ESA S875 W 3D touch control on its swing arm at the end of a DDM 10030",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1167,
+    "file": "img/dener-detail/dn-det-ddm-esa-1200.webp",
+    "bytes": 107916
+   },
+   {
+    "w": 800,
+    "h": 778,
+    "file": "img/dener-detail/dn-det-ddm-esa-800.webp",
+    "bytes": 65322
+   },
+   {
+    "w": 480,
+    "h": 467,
+    "file": "img/dener-detail/dn-det-ddm-esa-480.webp",
+    "bytes": 34322
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 156,
+   "file": "img/dener-detail/dn-det-ddm-esa-thumb.webp",
+   "bytes": 5598
+  }
+ },
+ "dn-det-ddm-delem": {
+  "alt": "Delem DA-66T 3D touch control on a DDM 15030 \u2014 Delem DA-66S or DA-69S is an option on the DDM",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/dener-detail/dn-det-ddm-delem-1200.webp",
+    "bytes": 64696
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/dener-detail/dn-det-ddm-delem-800.webp",
+    "bytes": 40514
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/dener-detail/dn-det-ddm-delem-480.webp",
+    "bytes": 21554
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/dener-detail/dn-det-ddm-delem-thumb.webp",
+   "bytes": 3868
+  }
+ },
+ "dn-det-ddm-eurostamp": {
+  "alt": "European-type segmented upper tool holders of a DDM 15030 with EUROSTAMP punches \u2014 the segments slide out from the front",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/dener-detail/dn-det-ddm-eurostamp-1200.webp",
+    "bytes": 87084
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/dener-detail/dn-det-ddm-eurostamp-800.webp",
+    "bytes": 55492
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/dener-detail/dn-det-ddm-eurostamp-480.webp",
+    "bytes": 28856
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/dener-detail/dn-det-ddm-eurostamp-thumb.webp",
+   "bytes": 4960
+  }
+ },
+ "dn-det-ddm-die-change": {
+  "alt": "Changing the lower die from the front: European-type segmented upper and lower tool holders as standard, Wila mechanical or hydraulic clamping as options",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 771,
+    "file": "img/dener-detail/dn-det-ddm-die-change-1200.webp",
+    "bytes": 89850
+   },
+   {
+    "w": 800,
+    "h": 514,
+    "file": "img/dener-detail/dn-det-ddm-die-change-800.webp",
+    "bytes": 56898
+   },
+   {
+    "w": 480,
+    "h": 309,
+    "file": "img/dener-detail/dn-det-ddm-die-change-480.webp",
+    "bytes": 28416
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 103,
+   "file": "img/dener-detail/dn-det-ddm-die-change-thumb.webp",
+   "bytes": 4428
+  }
  }
 }

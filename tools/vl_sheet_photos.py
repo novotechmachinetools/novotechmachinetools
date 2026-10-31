@@ -92,6 +92,15 @@ PHOTOS = {
     "vl-wadg-support": R("04_w1600-12.webp", "Front support arms on linear rails", cutout=False),
     "vl-wadg-tooling": R("50.05_w1600.webp", "Standard punches and dies supplied with the press brakes", cutout=False),
     "vl-wadg-parts": R("68.05_w1600.webp", "Typical parts bent on the electric press brake — brackets, channels and boxes", cutout=False),
+    # the side photos of the supplier's WADG page itself (Oct 31 2026; the four above came from other machines' pages)
+    "vl-wadg-crowning": R("02_w1600-13.webp", "CNC crowning drive of the WADG (60 t and up): a gear motor at the end of the table sets the deflection "
+                                            "compensation for the bend length, so the angle is the same from end to end", cutout=False),
+    "vl-wadg-backgauge": R("h%E5%90%8E%E6%8C%A1%E6%96%99_w1600.webp", "CNC back gauge on HIWIN linear guides with servo-driven finger carriages and "
+                                                                     "drag chains — X and R as standard, more axes (Z1, Z2, X1, X2, R1, R2) by configuration", cutout=False),
+    "vl-wadg-front-supports": R("%E5%89%8D%E6%89%98%E6%96%99_w1600.webp", "Front support arms on a linear guide along the table, moved to where the part "
+                                                                          "needs support", cutout=False),
+    "vl-wadg-angle": R("05_w1600.webp", "Checking the bend angle of the first part with a protractor — the servo ram repeats to ± 0.01 mm, so the "
+                                       "next parts follow it", cutout=False),
     # ---------------------------------------------------------------- swing beam shears (QC12K / E)
     "vl-qc12k-1": R("%E5%89%AA%E6%9D%BF%E6%9C%BA3_w1600_w1600.webp", "NovoTech QC12K hydraulic swing beam shear — 10 ft × 1/4″ with the Estun E21S control", boxes=[(895, 250, 1030, 325)]),
     "vl-qc12k-2": R("%E5%89%AA%E6%9D%BF%E6%9C%BA-16.9_w1600.webp", "Hydraulic swing beam shear with the control on a swing arm and front ball-transfer tables", boxes=[(775, 265, 900, 345)], cutout=True),

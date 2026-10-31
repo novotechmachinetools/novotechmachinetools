@@ -62,7 +62,7 @@ PHOTOS = {
     "dn-ddm-2": R("DDM-2 copy.png", "Dener DDM servo-electric press brake — three-quarter view"),
     "dn-ddm-3": R("DDM-2.png", "Dener DDM servo-electric press brake, 13 ft — side view"),
     "dn-ddm-control": R("DDM-3.png", "Dener DDM — ESA S875 W 21.5″ 3D touchscreen control"),
-    "dn-ddm-video-1": V("DENER SERVO BRAKE 3 MT. 150 TON_Moment17.jpg", "Dener DDM 15030 — 10 ft × 165 US tons servo-electric press brake"),
+    "dn-ddm-video-1": V("DENER SERVO BRAKE 3 MT. 150 TON_Moment17.jpg", "Dener DDM 15030, 10 ft × 165 US tons: the lower die holder, the back gauge fingers behind it and a front support on its linear guide"),
     "dn-ddm-video-2": V("Dener Servo Brake 200x40_Moment22.jpg", "Dener DDM 4015 servo-electric press brake bending"),
     "dn-ddm-web-1": W("Servo Brake 4015 + ESA675 + KUKA Robot.png", "Dener DDM 4015 servo-electric press brake in a KUKA robot bending cell"),
     "dn-ddm-web-2": W("Servo 10030 Front BG.JPG", "Dener DDM 10030 servo-electric press brake with the back gauge — front view"),
@@ -70,7 +70,7 @@ PHOTOS = {
     "dn-dds-1": R("DDS-1.png", "Dener DDS ball-screw electric press brake — three-quarter view"),
     "dn-dds-2": R("DDS-2.png", "Dener DDS 2090 ball-screw press brake — compact front view"),
     "dn-dds-3": R("DDS-3.png", "Dener DDS — ball-screw drive and back gauge"),
-    "dn-dds-4": R("DDS-4.png", "Dener DDS — ESA S840 15.6″ touch-screen control pendant"),
+    "dn-dds-4": R("DDS-4.png", "Dener DDS — ESA S640 15″ colour touch-screen control on its pendant"),
     "dn-dds-video": V("Ball Screw Press Brake DDS-4013_Moment3.jpg", "Dener DDS 4013 ball-screw press brake bending a bracket"),
     # shears
     "dn-bs-1": R("BS-1.png", "Dener BS hydraulic swing beam shear — front view"),

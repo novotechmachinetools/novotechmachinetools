@@ -4043,21 +4043,31 @@
    "features": [
     "Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability",
     "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake",
+    "European-type segmented upper punch holder",
+    "European-type segmented lower die holder",
     "21.5″ ESA S875 W 3D CNC control",
     "4 axes: Y1, Y2, X, R",
-    "European-type segmented punch and die clamping",
-    "Side and rear safety guards; anti-panic emergency-stop pedal",
-    "Electrical cabinet cooling; 380/600 V 3-phase, CSA-approved panel",
-    "Servo-electric drive — no hydraulic oil, start/stop energy use"
+    "X-R back gauge: ball-screw X axis on two linear guides, 29.5″ (750 mm) X and 9.8″ (250 mm) R stroke, 2 manual fingers, ± 0.03 mm positioning and repeatability",
+    "DSP front laser finger protection",
+    "Side and rear safety guards",
+    "Anti-panic foot pedal with emergency stop",
+    "Electrical cabinet cooling system",
+    "380 V or 600 V 3-phase, 50 / 60 Hz, CSA-approved electrical panel"
    ],
    "optional": [
     "Delem DA-66S or DA-69S 3D control",
-    "X-R-Z1-Z2, X1-X2-R-Z1-Z2, ATF X1-X2-R1-R2-Z1-Z2 or X-Prime back gauge",
-    "Fiessler AKAS 2 M(P) safety barrier or DSP front laser safety",
-    "Manual or automatic crowning",
-    "CE-standard light barrier; sheet follower",
+    "ATF X1-X2-R1-R2-Z1-Z2 back gauge",
+    "X1-X2-R-Z1-Z2 back gauge",
+    "X-R-Z1-Z2 back gauge",
+    "X-Prime back gauge",
+    "Fiessler AKAS 2 M(P) laser safety barrier",
+    "CE-standard light barrier",
+    "Manual or automatic (CNC) crowning",
+    "Sheet followers",
     "Automatic angle measurement",
-    "Pneumatic or Wila mechanical / hydraulic clamping",
+    "Pneumatic punch and die clamping",
+    "Wila mechanical upper and lower tool clamping",
+    "Wila hydraulic upper and lower tool clamping",
     "Robot bending cell",
     "Custom voltage: 208 V, 240 V or 480 V 3-phase"
    ],
@@ -4067,8 +4077,25 @@
     "dn-ddm-5020",
     "dn-ddm-5020-side",
     "dn-det-ddm-rear",
+    "dn-det-ddm-motors",
+    "dn-det-ddm-springs",
+    "dn-ddm-control",
+    "dn-det-ddm-esa",
+    "dn-det-esabend-3d",
+    "dn-det-ddm-delem",
+    "dn-det-quick-release-plate",
+    "dn-det-ddm-eurostamp",
+    "dn-det-ddm-die-change",
+    "dn-det-wila-tools",
     "dn-ddm-video-1",
-    "dn-ddm-control"
+    "dn-det-bg-2axis-ddm",
+    "dn-det-bg-6axis-atf",
+    "dn-det-front-support-single",
+    "dn-det-foot-pedal",
+    "dn-det-rear-gates",
+    "dn-det-cabinet-cooling",
+    "dn-det-crowning-motor",
+    "dn-det-sheet-followers"
    ],
    "videos": [
     {
@@ -4408,38 +4435,50 @@
     "label": "Download the servo-electric press brake brochure",
     "size": "PDF · 14 MB · imperial units"
    },
+   "show_optional": true,
    "group": "pb-servo"
   },
   "dn-dds": {
    "id": "dn-dds",
    "control": {
-    "title": "ESA S840 2D as standard; ESA S875 W as an option",
-    "text": "The small DDS carries the 15.6″ ESA S840 2D touch-screen control — numeric and 2D graphic programming with automatic tonnage and sequence calculation — and can be ordered with the 21.5″ ESA S875 W 3D control and a 5-axis back gauge. Both have collision control: the control checks the drawn part against the punch, the die and the machine before the first bend.",
+    "title": "ESA S640 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
+    "text": "The small DDS carries the 15″ ESA S640 2D colour touch-screen control — numeric and 2D graphic programming with automatic tonnage and sequence calculation. It can be ordered with the 21.5″ ESA S875 W 3D control, the Delem DA-66S or DA-69S, or the ESA S660 with a 5-axis back gauge. The graphic controls check the drawn part against the punch, the die and the machine before the first bend.",
     "images": [
-     "ctl-esa-s840-card",
-     "ctl-esa-s875w-card"
+     "ctl-esa-s875w-card",
+     "ctl-delem-da66s",
+     "ctl-delem-da69s"
     ]
    },
    "brand": "dener",
    "name": "DDS ball-screw electric press brakes, 22 and 44 US tons × 3 – 4.3 ft",
    "short": "DDS ball-screw press brakes",
    "models_label": "DDS 2090 · DDS 4013 · 2 models",
-   "summary": "The small electric press brake: Lenze servo motors on ball screws move the ram — no oil, no cylinders — in a compact monoblock frame with a small throat for precise bends on brackets, boxes, enclosures and pans. 22 US tons × 3 ft or 44 US tons × 4.3 ft, 14.8″ daylight, the 15.6″ ESA S840 control and a 2-axis back gauge as standard, a 5-axis gauge, Wila clamping and a laser finger guard as options. Plugs into a standard panel and goes through a normal door.",
+   "summary": "The small electric press brake: Lenze servo motors on ball screws move the ram — no oil, no cylinders — in a compact monoblock frame with a small throat for precise bends on brackets, boxes, enclosures and pans. 22 US tons × 3 ft or 44 US tons × 4.3 ft, 14.8″ daylight, the 15″ ESA S640 control, a 2-axis back gauge and a DSP laser finger guard as standard; a 5-axis gauge, Delem controls, pneumatic or Wila clamping and a Fiessler AKAS laser guard as options. Plugs into a standard panel and goes through a normal door.",
    "features": [
     "Ball-screw ram drive with Lenze servo technology; up to 50 % energy saving",
     "Monoblock frame, small throat, 14.8″ daylight for box bending",
-    "15.6″ ESA S840 2D graphic touch-screen CNC control",
-    "2-axis back gauge (X, R)",
-    "European-type punch and die clamping",
-    "Electrical cabinet cooling",
-    "Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders"
+    "European-type segmented upper punch holder",
+    "European-type segmented lower die holder",
+    "15″ ESA S640 2D colour touch-screen CNC control",
+    "4 axes: Y1, Y2, X, R — 2-axis back gauge (X, R)",
+    "DSP front laser finger protection",
+    "Side and rear safety guards",
+    "Foot pedal with emergency stop",
+    "Electrical cabinet cooling system",
+    "380 V 3-phase, 50 / 60 Hz, CSA-approved electrical panel"
    ],
    "optional": [
-    "ESA 875 W CNC control; 5-axis back gauge (X, R, Z1, Z2, X-Prime) with ESA S660",
+    "21.5″ ESA S875 W 3D control",
+    "Delem DA-66S or DA-69S 3D control",
+    "5-axis back gauge (X, R, Z1, Z2, X-Prime) with the ESA S660 control",
+    "Fiessler AKAS 2 M(P) laser safety barrier",
+    "CE-standard light barrier",
+    "Pneumatic punch and die clamping",
+    "Wila mechanical upper and lower tool clamping",
+    "Wila hydraulic upper and lower tool clamping",
+    "Double-wedge adjustable European punch holder",
     "Foldable, height-adjustable work table",
-    "Wila mechanical / hydraulic clamping; double-wedge adjustable European punch holder",
     "Punches and dies",
-    "DSP-AP laser finger protection",
     "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
    ],
    "images": [
@@ -4452,6 +4491,12 @@
     "dn-dds-ballscrew"
    ],
    "videos": [
+    {
+     "id": "GptvkfBO9GQ",
+     "title": "DENER DDS 40130 — 4 ft × 30 ton ball-screw servo-electric press brake",
+     "duration": "PT0M39S",
+     "thumb": "video-GptvkfBO9GQ"
+    },
     {
      "id": "JVG9kw1nIGk",
      "title": "DENER DDS 4 ft × 30 ton ball-screw electric press brake",
@@ -4624,6 +4669,7 @@
     "label": "Download the servo-electric press brake brochure",
     "size": "PDF · 14 MB · imperial units"
    },
+   "show_optional": true,
    "group": "pb-servo"
   },
   "vl-wadg": {
@@ -4646,7 +4692,6 @@
    "models_label": "WADG-10T/500 – WADG-160T/3200 · 10 models",
    "summary": "A press brake without hydraulics: servo motors drive the ram through timing belts and dual lead ball screws, so there is no oil, no pump running between bends, no valves to drift and no warm-up — the ram repeats to ± 0.01 mm from the first part, bends at any speed from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53Tx control and X-R servo back gauge; the 40 and 50 t machines are also sold in robot bending cells.",
    "features": [
-    "Mild steel to 1/4″ over 10 ft on the 100 t; 5/16″ over 10 ft on the 160 t (V = 8 × thickness)",
     "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
     "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
     "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
@@ -4666,11 +4711,11 @@
     "vl-wadg-1",
     "vl-wadg-robot",
     "vl-wadg-motors",
-    "vl-wadg-ram",
     "vl-wadg-drawing",
-    "vl-wadg-support",
-    "vl-wadg-tooling",
-    "vl-wadg-parts"
+    "vl-wadg-crowning",
+    "vl-wadg-backgauge",
+    "vl-wadg-front-supports",
+    "vl-wadg-angle"
    ],
    "videos": [],
    "specs": {
@@ -5056,9 +5101,7 @@
     "Custom voltage"
    ],
    "images": [
-    "vl-wadg-mini-1",
-    "vl-wadg-tooling",
-    "vl-wadg-parts"
+    "vl-wadg-mini-1"
    ],
    "videos": [],
    "specs": {

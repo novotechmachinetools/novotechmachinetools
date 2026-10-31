@@ -216,6 +216,19 @@ small { font-size: .85em; }
 /* the options list of a family that shows it (the XL, Oct 30 2026): the same list with an outlined marker */
 .features-title { margin: 16px 0 4px; font-family: var(--cond); font-weight: 700; font-size: 18px; letter-spacing: .02em; color: var(--charcoal); }
 .features-optional li::before { background: transparent; border: 2px solid var(--orange); height: 8px; width: 8px; top: 13px; border-radius: 50%; }
+/* standard / optional equipment as two tabs (the owner, Oct 31 2026): both lists are in the HTML, the script shows one at a time */
+.equip-tabs { display: flex; flex-wrap: wrap; gap: 0 22px; margin: 18px 0 6px; border-bottom: 1px solid var(--line); }
+.equip-tabs[hidden], .equip [role="tabpanel"][hidden] { display: none; }
+.equip-tab { appearance: none; -webkit-appearance: none; background: none; border: 0; border-bottom: 3px solid transparent; margin: 0 0 -1px; padding: 8px 0 7px;
+  font-family: var(--cond); font-weight: 700; font-size: 18px; letter-spacing: .02em; color: var(--steel); cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.equip-tab:hover { color: var(--charcoal); }
+.equip-tab[aria-selected="true"] { color: var(--charcoal); border-bottom-color: var(--orange); }
+.equip-tab:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; border-radius: 2px; }
+.equip-count { min-width: 24px; padding: 1px 7px; border-radius: 11px; background: var(--paper); border: 1px solid var(--line); color: var(--steel); font-family: var(--sans, inherit); font-weight: 600; font-size: 13px; line-height: 18px; text-align: center; }
+.equip-tab[aria-selected="true"] .equip-count { background: var(--orange); border-color: var(--orange); color: var(--charcoal); }
+.equip.tabs-on .features-title { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+/* phones: the two tab labels shrink to "Standard" / "Optional" so they stay on one row (screen readers still hear "equipment") */
+@media (max-width: 520px) { .equip-tabs { flex-wrap: nowrap; gap: 0 26px; } .equip-word { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; } }
 .cta-row-sm { margin: 16px 0 0; }
 
 /* gallery */

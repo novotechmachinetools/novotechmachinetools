@@ -3551,7 +3551,6 @@
    "models_label": "WADG-10T/500 – WADG-160T/3200 · 10 models",
    "summary": "A press brake without hydraulics: servo motors drive the ram through timing belts and dual lead ball screws, so there is no oil, no pump running between bends, no valves to drift and no warm-up — the ram repeats to ± 0.01 mm from the first part, bends at any speed from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53Tx control and X-R servo back gauge; the 40 and 50 t machines are also sold in robot bending cells.",
    "features": [
-    "Mild steel to 1/4″ over 10 ft on the 100 t; 5/16″ over 10 ft on the 160 t (V = 8 × thickness)",
     "Servo motors driving the ram through timing belts (Maco, Italy) and dual lead ball screws — no hydraulic oil, no pump, no valves",
     "± 0.01 mm ram repeatability from Givi / Fagor magnetic scales on both sides; 95 % transmission efficiency, about 70 % less energy",
     "Programmable bending speed 0.15 – 30 mm/s; 180 – 250 mm/s approach and return",
@@ -3571,11 +3570,11 @@
     "vl-wadg-1",
     "vl-wadg-robot",
     "vl-wadg-motors",
-    "vl-wadg-ram",
     "vl-wadg-drawing",
-    "vl-wadg-support",
-    "vl-wadg-tooling",
-    "vl-wadg-parts"
+    "vl-wadg-crowning",
+    "vl-wadg-backgauge",
+    "vl-wadg-front-supports",
+    "vl-wadg-angle"
    ],
    "videos": [],
    "specs": {
@@ -3961,9 +3960,7 @@
     "Custom voltage"
    ],
    "images": [
-    "vl-wadg-mini-1",
-    "vl-wadg-tooling",
-    "vl-wadg-parts"
+    "vl-wadg-mini-1"
    ],
    "videos": [],
    "specs": {

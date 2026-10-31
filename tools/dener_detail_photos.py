@@ -59,7 +59,7 @@ DETAIL = {
     "dn-det-tandem": D("xl-tandem.png", "Tandem press brakes: two machines on one control for long parts, cheaper than one large machine and more versatile for small jobs"),
     # ---- from the DDM quotation (ddm-*.png)
     "dn-det-ddm-rear": D("ddm-rear.png", "Dener DDM servo-electric press brake from the rear: belt-and-pulley ram drive, no hydraulic oil"),
-    "dn-det-bg-2axis-ddm": D("ddm-bg-2axis.png", "Standard 2-axis back gauge (X, R) of the DDM on linear guides, ball-screw X axis with 500 mm reach"),
+    "dn-det-bg-2axis-ddm": D("ddm-bg-2axis.png", "Standard X-R back gauge of the DDM: ball-screw X axis on two linear guides, 29.5″ (750 mm) X and 9.8″ (250 mm) R stroke, ± 0.03 mm positioning and repeatability"),
     "dn-det-finger-steps": D("ddm-finger-steps.png", "Multi-step finger design: three X-axis stops extend the gauging range to 764 mm (30.1″) and ease long flanges"),
     "dn-det-front-support-single": D("ddm-front-support.png", "Linear-guided front sheet support with hardened rod, T-slot, ball transfers and inch / mm scale"),
     "dn-det-cabinet-cooling": D("ddm-cabinet-cooling.png", "Electrical cabinet cooling system — a sealed cabinet with air conditioning"),
@@ -69,6 +69,18 @@ DETAIL = {
     "dn-det-wila-clamp": D("ddm-wila-clamp.png", "Wila hydraulic tool clamping with CNC crowning — option on every Dener press brake"),
     "dn-det-wila-tools": D("ddm-wila-tools.png", "Wila New Standard tooling and hydraulic clamping for fast tool changes"),
     "dn-det-wilson-clamp": D("ddm-wilson-clamp.png", "Wilson Express Clamp: manual quick-release clamping for European punches"),
+    # ---- the DDM side photos of Dener's own pages (Dener USA / Dener Turkey: servo-brake-*.jpg) and frames of Dener's DDM 15030
+    # video (the owner, Oct 31 2026)
+    "dn-det-ddm-motors": D("ddm-servo-motors.webp", "Servo synchronous motors and gearboxes on top of the DDM frame, one for each side of the ram (Y1, Y2): "
+                                                   "they turn the belt pulleys that pull the ram down, for up to 220 US tons (200 t)"),
+    "dn-det-ddm-springs": D("ddm-springs.jpg", "Ram return springs in the side frame of a DDM 15030: the belts pull the ram down, the springs lift it back "
+                                              "and save energy — with the receiver of the optional Fiessler AKAS laser guard"),
+    "dn-det-ddm-esa": D("ddm-esa-10030.webp", "21.5″ ESA S875 W 3D touch control on its swing arm at the end of a DDM 10030"),
+    "dn-det-ddm-delem": D("ddm-delem-66t.jpg", "Delem DA-66T 3D touch control on a DDM 15030 — Delem DA-66S or DA-69S is an option on the DDM"),
+    "dn-det-ddm-eurostamp": D("ddm-eurostamp-clamps.jpg", "European-type segmented upper tool holders of a DDM 15030 with EUROSTAMP punches — "
+                                                          "the segments slide out from the front"),
+    "dn-det-ddm-die-change": D("ddm-die-change.jpg", "Changing the lower die from the front: European-type segmented upper and lower tool holders as "
+                                                     "standard, Wila mechanical or hydraulic clamping as options"),
 }
 DXF = {   # EUROSTAMP tool profiles drawn from the DXF files: (file, alt)
     "dn-det-tool-1281": ("eurostamp-1281.dxf", "EUROSTAMP punch 1281 — the 85° gooseneck-free straight punch, R 0.8 mm, H 104.65 mm, 100 t/m, supplied with Dener press brakes"),

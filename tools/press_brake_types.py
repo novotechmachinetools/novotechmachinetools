@@ -162,9 +162,12 @@ VIDEOS = {
                               "intro_video_2": {"id": "6DnKdsLx5iA", "title": "A walk through Dener's press brake hall in Kayseri", "thumb": "video-6DnKdsLx5iA", "duration": "PT0M26S", "short": True},
                               "intro_video_heading": "Inside the factory where the machines are built",
                               "intro_video_text": "Dener Makina's introduction film, and a short walk through the press brake hall: the plant in Kayseri, Turkey, where Dener has built press brakes since 1974 — the premium-line machines NovoTech sells, installs and supports in Canada."},
-    "electric-press-brake": {"intro_video": {"id": "ZujRJUhckG4", "title": "DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake", "thumb": "video-ZujRJUhckG4", "duration": "PT0M51S"},
-                             "intro_video_heading": "The servo-electric press brake at work",
-                             "intro_video_text": "A 10 ft × 100 ton DDM bending sheet: no hydraulic oil, servo drive, ±0.01 mm repeatability."},
+    # the same factory film and Short as the hydraulic page, in place of the DDM 10030 clip (the owner, Oct 31 2026) — the DDM
+    # 10030 video stays in the DDM family's own videos
+    "electric-press-brake": {"intro_video": {"id": "A1i_NljuVQo", "title": "Dener introduction film — the plant in Kayseri, Turkey, where the DDM and DDS electric press brakes are built", "thumb": "video-A1i_NljuVQo", "duration": "PT2M52S"},
+                             "intro_video_2": {"id": "6DnKdsLx5iA", "title": "A walk through Dener's press brake hall in Kayseri", "thumb": "video-6DnKdsLx5iA", "duration": "PT0M26S", "short": True},
+                             "intro_video_heading": "Inside the factory where the machines are built",
+                             "intro_video_text": "Dener Makina's introduction film, and a short walk through the press brake hall: the plant in Kayseri, Turkey, where Dener builds the DDM servo-electric and DDS ball-screw press brakes — the premium-line machines NovoTech sells, installs and supports in Canada."},
 }
 
 

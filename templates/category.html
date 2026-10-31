@@ -140,15 +140,24 @@
       {% endif %}
       <div class="family-text">
         <p class="summary">{{ f.summary }}</p>
-        <div class="equip">
-          <div class="equip-std">
+        {# standard / optional equipment as two tabs beside the gallery (the owner, Oct 31 2026); both lists stay in the HTML and the
+           script shows one at a time — the stacked layout (XL) keeps them side by side #}
+        {% set eq_tabs = f.show_optional and f.optional and f.layout != 'stacked' %}
+        <div class="equip{{ ' has-tabs' if eq_tabs else '' }}"{% if eq_tabs %} data-equip-tabs{% endif %}>
+          {% if eq_tabs %}
+          <div class="equip-tabs" role="tablist" aria-label="Standard and optional equipment" hidden>
+            <button type="button" class="equip-tab" role="tab" id="{{ f.id }}-tab-std" aria-controls="{{ f.id }}-std" aria-selected="true">Standard<span class="equip-word"> equipment</span><span class="equip-count">{{ f.features|length }}</span></button>
+            <button type="button" class="equip-tab" role="tab" id="{{ f.id }}-tab-opt" aria-controls="{{ f.id }}-opt" aria-selected="false" tabindex="-1">Optional<span class="equip-word"> equipment</span><span class="equip-count">{{ f.optional|length }}</span></button>
+          </div>
+          {% endif %}
+          <div class="equip-std" id="{{ f.id }}-std"{% if eq_tabs %} role="tabpanel" aria-labelledby="{{ f.id }}-tab-std"{% endif %}>
             {% if f.show_optional and f.optional %}<h4 class="features-title">Standard equipment</h4>{% endif %}
             <ul class="features">
               {% for feat in f.features %}<li>{{ feat|safe if '<a ' in feat else feat }}</li>{% endfor %}
             </ul>
           </div>
           {% if f.show_optional and f.optional %}
-          <div class="equip-opt">
+          <div class="equip-opt" id="{{ f.id }}-opt"{% if eq_tabs %} role="tabpanel" aria-labelledby="{{ f.id }}-tab-opt"{% endif %}>
             <h4 class="features-title">Optional equipment</h4>
             <ul class="features features-optional">
               {% for o in f.optional %}<li>{{ o }}</li>{% endfor %}

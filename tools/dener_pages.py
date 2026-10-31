@@ -77,7 +77,7 @@ PAGE_PB = dict(
          {"q": "How much tonnage do I need?",
           "a": "Air bending mild steel takes about 575 × t² ÷ V US tons per foot, with the thickness t and the V opening in inches: in the standard V = 8 × thickness die that is about 4 tons per foot for 16 ga, 9 for 1/8″, 13.5 for 3/16″, 18 for 1/4″ and 36 for 1/2″ (29 in a 10 × t die); stainless needs about 50 % more, aluminum about half. With about 20 % headroom, a 10 ft × 1/4″ job is therefore a 175 – 220 ton machine, and 10 ft × 1/2″, bent in a 5 – 6″ V, a 300 – 400 ton machine. Tell us the thickest and longest bend you make and we size the brake and the tooling."},
          {"q": "Which control comes with the machine?",
-          "a": "The XL and DDS come with the 15.6″ ESA S840 2D graphic touch-screen control: draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The DDM comes with the 21.5″ ESA S875 W 3D control with 3D simulation and offline programming. Delem DA-66S (2D) and DA-69S (3D) are options on every machine, as is the ESA S875 W on the XL. All of them program in inches or millimetres and import DXF files."},
+          "a": "The XL comes with the 15.6″ ESA S840 2D graphic touch-screen control (the small DDS with the 15″ ESA S640): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The DDM comes with the 21.5″ ESA S875 W 3D control with 3D simulation and offline programming. Delem DA-66S (2D) and DA-69S (3D) are options on every machine, as is the ESA S875 W on the XL. All of them program in inches or millimetres and import DXF files."},
          {"q": "What is a hybrid press brake?",
           "a": "On a conventional hydraulic brake the motor and pump run at full speed all day, whether the ram moves or not. The XH hybrid replaces the AC motor and fixed pump with a servo motor driving an inverter pump: the pump turns only while the ram moves, at the speed the ram needs. Dener measures 42 – 58 % energy saving and 17 – 75 % faster approach and return against the XL of the same tonnage, with less heat in the oil and a quieter shop. Everything else — frame, cylinders, valves, tooling, controls — is the XL."},
          {"q": "What back gauge and axes are available?",
@@ -204,7 +204,7 @@ PAGE_SHEAR = dict(
 PAGE_PANEL = dict(
     title="CNC Panel Benders, 47–165″ Wide, 0.2 s per Bend | NovoTech",
     meta="CNC panel benders sold in Canada: the Dener 79″ machine, Senfeng BDC push-down and suction-cup benders 47 – 126″, NovoTech value-line PB-M and PB-A to 165″.",
-    h1="CNC panel benders — four-side bending with no tooling changes, 47 to 165″ bend width",
+    h1="CNC panel benders — four-side bending, 47 to 165″ bend width",
     intro="A panel bender is the machine that replaces a press brake for boxes, doors, enclosures, panels and HVAC parts: the blank is clamped "
           "by a blank-holder and a bending blade folds the flange up or down, hems it or forms a box corner in 0.2 s, while the manipulator "
           "turns the part to bend the next side — all four sides in one setup, no tooling changes, no skilled operator. NovoTech sells the "

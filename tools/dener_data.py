@@ -244,15 +244,27 @@ PB_OPT_XL = [_PB_OPT_ALL[0],
              "Automatic angle measurement (bending accuracy 0.05°)", "Tandem configuration to 60 ft and 1,800 US tons",
              "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 PB_OPT_XH = _PB_OPT_ALL[1:]
-PB_STD_DDM = ["21.5″ ESA S875 W 3D CNC control", "4 axes: Y1, Y2, X, R", "European-type segmented punch and die clamping", "Side and rear safety guards; anti-panic emergency-stop pedal",
-              "Electrical cabinet cooling; 380/600 V 3-phase, CSA-approved panel", "Servo-electric drive — no hydraulic oil, start/stop energy use"]
-PB_OPT_DDM = ["Delem DA-66S or DA-69S 3D control", "X-R-Z1-Z2, X1-X2-R-Z1-Z2, ATF X1-X2-R1-R2-Z1-Z2 or X-Prime back gauge", "Fiessler AKAS 2 M(P) safety barrier or DSP front laser safety",
-              "Manual or automatic crowning", "CE-standard light barrier; sheet follower", "Automatic angle measurement", "Pneumatic or Wila mechanical / hydraulic clamping",
-              "Robot bending cell", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
-PB_STD_DDS = ["15.6″ ESA S840 2D graphic touch-screen CNC control", "2-axis back gauge (X, R)", "European-type punch and die clamping", "Electrical cabinet cooling",
-              "Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders"]
-PB_OPT_DDS = ["ESA 875 W CNC control; 5-axis back gauge (X, R, Z1, Z2, X-Prime) with ESA S660", "Foldable, height-adjustable work table",
-              "Wila mechanical / hydraulic clamping; double-wedge adjustable European punch holder", "Punches and dies", "DSP-AP laser finger protection", "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"]
+# DDM and DDS standard and optional equipment as Dener USA lists it on denerusa.com (the owner, Oct 31 2026), shown in the
+# "Standard equipment / Optional equipment" tabs of the family
+PB_STD_DDM = ["European-type segmented upper punch holder", "European-type segmented lower die holder", "21.5″ ESA S875 W 3D CNC control",
+              "4 axes: Y1, Y2, X, R",
+              "X-R back gauge: ball-screw X axis on two linear guides, 29.5″ (750 mm) X and 9.8″ (250 mm) R stroke, 2 manual fingers, "
+              "± 0.03 mm positioning and repeatability",
+              "DSP front laser finger protection", "Side and rear safety guards", "Anti-panic foot pedal with emergency stop",
+              "Electrical cabinet cooling system", "380 V or 600 V 3-phase, 50 / 60 Hz, CSA-approved electrical panel"]
+PB_OPT_DDM = ["Delem DA-66S or DA-69S 3D control", "ATF X1-X2-R1-R2-Z1-Z2 back gauge", "X1-X2-R-Z1-Z2 back gauge", "X-R-Z1-Z2 back gauge",
+              "X-Prime back gauge", "Fiessler AKAS 2 M(P) laser safety barrier", "CE-standard light barrier", "Manual or automatic (CNC) crowning",
+              "Sheet followers", "Automatic angle measurement", "Pneumatic punch and die clamping",
+              "Wila mechanical upper and lower tool clamping", "Wila hydraulic upper and lower tool clamping", "Robot bending cell",
+              "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+# the DDS control is the 15″ ESA S640 (Dener USA and NovoTech's own servo brochure), not the S840 of the XL
+PB_STD_DDS = ["European-type segmented upper punch holder", "European-type segmented lower die holder", "15″ ESA S640 2D colour touch-screen CNC control",
+              "4 axes: Y1, Y2, X, R — 2-axis back gauge (X, R)", "DSP front laser finger protection", "Side and rear safety guards",
+              "Foot pedal with emergency stop", "Electrical cabinet cooling system", "380 V 3-phase, 50 / 60 Hz, CSA-approved electrical panel"]
+PB_OPT_DDS = ["21.5″ ESA S875 W 3D control", "Delem DA-66S or DA-69S 3D control", "5-axis back gauge (X, R, Z1, Z2, X-Prime) with the ESA S660 control",
+              "Fiessler AKAS 2 M(P) laser safety barrier", "CE-standard light barrier", "Pneumatic punch and die clamping",
+              "Wila mechanical upper and lower tool clamping", "Wila hydraulic upper and lower tool clamping", "Double-wedge adjustable European punch holder",
+              "Foldable, height-adjustable work table", "Punches and dies", "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"]
 
 # the controls Dener fits — a short note under every press brake (the buying guide on press-brake.html explains them)
 CTL_XL = {"title": "ESA S840 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
@@ -270,11 +282,12 @@ CTL_DDM = {"title": "ESA S875 W 3D as standard; Delem DA-66S or DA-69S as option
                    "the alternatives for shops standardised on Delem. All three have collision control: the control simulates the bend "
                    "sequence and checks the part against the punch, the die and the machine before the first bend.",
            "images": ["ctl-esa-s875w-card", "dn-det-esabend-3d", "ctl-delem-da66s", "ctl-delem-da69s"]}
-CTL_DDS = {"title": "ESA S840 2D as standard; ESA S875 W as an option",
-           "text": "The small DDS carries the 15.6″ ESA S840 2D touch-screen control — numeric and 2D graphic programming with automatic tonnage and "
-                   "sequence calculation — and can be ordered with the 21.5″ ESA S875 W 3D control and a 5-axis back gauge. Both have collision "
-                   "control: the control checks the drawn part against the punch, the die and the machine before the first bend.",
-           "images": ["ctl-esa-s840-card", "ctl-esa-s875w-card"]}
+CTL_DDS = {"title": "ESA S640 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
+           "text": "The small DDS carries the 15″ ESA S640 2D colour touch-screen control — numeric and 2D graphic programming with automatic "
+                   "tonnage and sequence calculation. It can be ordered with the 21.5″ ESA S875 W 3D control, the Delem DA-66S or DA-69S, or "
+                   "the ESA S660 with a 5-axis back gauge. The graphic controls check the drawn part against the punch, the die and the "
+                   "machine before the first bend.",
+           "images": ["ctl-esa-s875w-card", "ctl-delem-da66s", "ctl-delem-da69s"]}
 
 PB_FAMILIES = [
     dict(id="dn-xl", control=CTL_XL, show_optional=True, layout="stacked",   # trial: gallery and videos across the page (owner, Oct 31 2026)
@@ -371,7 +384,7 @@ PB_FAMILIES = [
          images=["dn-xh-1", "dn-xh-2", "dn-xh-3"],
          videos=[],
          specs=None),
-    dict(id="dn-ddm", control=CTL_DDM, group="pb-servo", page=P_PB, brand=BRAND,
+    dict(id="dn-ddm", control=CTL_DDM, show_optional=True, group="pb-servo", page=P_PB, brand=BRAND,
          name="DDM servo-electric CNC press brakes, 44 – 220 US tons × 5 – 13.4 ft",
          short="DDM servo-electric press brakes",
          models_label="DDM 4015 – DDM 20040 · 9 models",
@@ -382,24 +395,31 @@ PB_FAMILIES = [
                  "fast — the machine for a job shop that bends all day.",
          features=["Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability", "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake"] + PB_STD_DDM,
          optional=PB_OPT_DDM,
-         images=["dn-ddm-2", "dn-ddm-1", "dn-ddm-5020", "dn-ddm-5020-side", "dn-det-ddm-rear", "dn-ddm-video-1", "dn-ddm-control"],
+         images=["dn-ddm-2", "dn-ddm-1", "dn-ddm-5020", "dn-ddm-5020-side",
+                 "dn-det-ddm-rear", "dn-det-ddm-motors", "dn-det-ddm-springs",
+                 "dn-ddm-control", "dn-det-ddm-esa", "dn-det-esabend-3d", "dn-det-ddm-delem",
+                 "dn-det-quick-release-plate", "dn-det-ddm-eurostamp", "dn-det-ddm-die-change", "dn-det-wila-tools",
+                 "dn-ddm-video-1", "dn-det-bg-2axis-ddm", "dn-det-bg-6axis-atf",
+                 "dn-det-front-support-single", "dn-det-foot-pedal", "dn-det-rear-gates", "dn-det-cabinet-cooling",
+                 "dn-det-crowning-motor", "dn-det-sheet-followers"],
          videos=vids(("_Aqyyfk97KI", "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake"), ("dlmcihzfRuI", "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake"),
                      ("ZujRJUhckG4", "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake"), ("da7UnOripzc", "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake"),
                      ("30squAhhy_o", "CNC hydraulic press brake vs. servo-electric press brake"), ("qLRQDobmnXQ", "DENER DDM servo-electric press brake robot cell"),
                      ("2_Vz-v-rFqU", "DDM electric press brake with Wila hydraulic clamping"), ("IGgudJFrO-I", "DDM electric press brake bending demonstration")),
          specs=spec([T_DDM], PB_GK, PB_G_FROM, NOTE_DDM)),
-    dict(id="dn-dds", control=CTL_DDS, group="pb-servo", page=P_PB, brand=BRAND,
+    dict(id="dn-dds", control=CTL_DDS, show_optional=True, group="pb-servo", page=P_PB, brand=BRAND,
          name="DDS ball-screw electric press brakes, 22 and 44 US tons × 3 – 4.3 ft",
          short="DDS ball-screw press brakes",
          models_label="DDS 2090 · DDS 4013 · 2 models",
          summary="The small electric press brake: Lenze servo motors on ball screws move the ram — no oil, no cylinders — in a compact "
                  "monoblock frame with a small throat for precise bends on brackets, boxes, enclosures and pans. 22 US tons × 3 ft or 44 US "
-                 "tons × 4.3 ft, 14.8″ daylight, the 15.6″ ESA S840 control and a 2-axis back gauge as standard, a 5-axis gauge, Wila clamping "
-                 "and a laser finger guard as options. Plugs into a standard panel and goes through a normal door.",
+                 "tons × 4.3 ft, 14.8″ daylight, the 15″ ESA S640 control, a 2-axis back gauge and a DSP laser finger guard as standard; a 5-axis gauge, Delem controls, "
+                 "pneumatic or Wila clamping and a Fiessler AKAS laser guard as options. Plugs into a standard panel and goes through a normal door.",
          features=["Ball-screw ram drive with Lenze servo technology; up to 50 % energy saving", "Monoblock frame, small throat, 14.8″ daylight for box bending"] + PB_STD_DDS,
          optional=PB_OPT_DDS,
          images=["dn-dds-1", "dn-dds-2", "dn-dds-4013", "dn-dds-video", "dn-dds-3", "dn-dds-4", "dn-dds-ballscrew"],
-         videos=vids(("JVG9kw1nIGk", "DENER DDS 4 ft × 30 ton ball-screw electric press brake"), ("R5D3JCTN-Ww", "Small press brake — DDS 4013 ball-screw press brake"),
+         videos=vids(("GptvkfBO9GQ", "DENER DDS 40130 — 4 ft × 30 ton ball-screw servo-electric press brake"),
+                     ("JVG9kw1nIGk", "DENER DDS 4 ft × 30 ton ball-screw electric press brake"), ("R5D3JCTN-Ww", "Small press brake — DDS 4013 ball-screw press brake"),
                      ("Myd9TVSUFj8", "DENER DDS 2050 — 1.6 ft × 20 ton ball-screw servo-electric press brake"), ("sq1YPi0sQTU", "Bending a water-sealed pan on the DDS ball-screw press brake"),
                      ("nlCZhY7olZ8", "DDS 4013 — 100 % electric ball-screw press brake")),
          specs=spec([T_DDS], PB_GK, PB_G_FROM, NOTE_DDS)),

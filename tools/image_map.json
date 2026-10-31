@@ -13536,7 +13536,7 @@
  },
  "dn-ddm-video-1": {
   "src": "tools/src-images/dener/dn-ddm-video-1.jpg",
-  "alt": "Dener DDM 15030 — 10 ft × 165 US tons servo-electric press brake",
+  "alt": "Dener DDM 15030, 10 ft × 165 US tons: the lower die holder, the back gauge fingers behind it and a front support on its linear guide",
   "section": "dener",
   "trim": false,
   "quality": 82,
@@ -13592,7 +13592,7 @@
  },
  "dn-dds-4": {
   "src": "tools/src-images/dener/dn-dds-4.png",
-  "alt": "Dener DDS — ESA S840 15.6″ touch-screen control pendant",
+  "alt": "Dener DDS — ESA S640 15″ colour touch-screen control on its pendant",
   "section": "dener",
   "trim": true,
   "quality": 82,
@@ -28003,7 +28003,7 @@
  },
  "dn-det-bg-2axis-ddm": {
   "src": "tools/src-images/dener-detail/dn-det-bg-2axis-ddm.jpg",
-  "alt": "Standard 2-axis back gauge (X, R) of the DDM on linear guides, ball-screw X axis with 500 mm reach",
+  "alt": "Standard X-R back gauge of the DDM: ball-screw X axis on two linear guides, 29.5″ (750 mm) X and 9.8″ (250 mm) R stroke, ± 0.03 mm positioning and repeatability",
   "section": "dener-detail",
   "trim": true,
   "quality": 84,
@@ -32509,5 +32509,92 @@
   "quality": 82,
   "cutout": false,
   "cut_size": 1024
+ },
+ "video-GptvkfBO9GQ": {
+  "src": "/home/claude/gms-site/yt/GptvkfBO9GQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "vl-wadg-crowning": {
+  "src": "tools/src-images/value-sheet/vl-wadg-crowning.jpg",
+  "alt": "CNC crowning drive of the WADG (60 t and up): a gear motor at the end of the table sets the deflection compensation for the bend length, so the angle is the same from end to end",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-backgauge": {
+  "src": "tools/src-images/value-sheet/vl-wadg-backgauge.png",
+  "alt": "CNC back gauge on HIWIN linear guides with servo-driven finger carriages and drag chains — X and R as standard, more axes (Z1, Z2, X1, X2, R1, R2) by configuration",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-front-supports": {
+  "src": "tools/src-images/value-sheet/vl-wadg-front-supports.jpg",
+  "alt": "Front support arms on a linear guide along the table, moved to where the part needs support",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-wadg-angle": {
+  "src": "tools/src-images/value-sheet/vl-wadg-angle.jpg",
+  "alt": "Checking the bend angle of the first part with a protractor — the servo ram repeats to ± 0.01 mm, so the next parts follow it",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-det-ddm-motors": {
+  "src": "tools/src-images/dener-detail/dn-det-ddm-motors.jpg",
+  "alt": "Servo synchronous motors and gearboxes on top of the DDM frame, one for each side of the ram (Y1, Y2): they turn the belt pulleys that pull the ram down, for up to 220 US tons (200 t)",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-ddm-springs": {
+  "src": "tools/src-images/dener-detail/dn-det-ddm-springs.jpg",
+  "alt": "Ram return springs in the side frame of a DDM 15030: the belts pull the ram down, the springs lift it back and save energy — with the receiver of the optional Fiessler AKAS laser guard",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-ddm-esa": {
+  "src": "tools/src-images/dener-detail/dn-det-ddm-esa.jpg",
+  "alt": "21.5″ ESA S875 W 3D touch control on its swing arm at the end of a DDM 10030",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-ddm-delem": {
+  "src": "tools/src-images/dener-detail/dn-det-ddm-delem.jpg",
+  "alt": "Delem DA-66T 3D touch control on a DDM 15030 — Delem DA-66S or DA-69S is an option on the DDM",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-ddm-eurostamp": {
+  "src": "tools/src-images/dener-detail/dn-det-ddm-eurostamp.jpg",
+  "alt": "European-type segmented upper tool holders of a DDM 15030 with EUROSTAMP punches — the segments slide out from the front",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
+ },
+ "dn-det-ddm-die-change": {
+  "src": "tools/src-images/dener-detail/dn-det-ddm-die-change.jpg",
+  "alt": "Changing the lower die from the front: European-type segmented upper and lower tool holders as standard, Wila mechanical or hydraulic clamping as options",
+  "section": "dener-detail",
+  "trim": true,
+  "quality": 84,
+  "cutout": false
  }
 }

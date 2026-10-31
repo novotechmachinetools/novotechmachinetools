@@ -11,6 +11,37 @@
     a.href = "mailto:" + e; a.textContent = e; EMAIL = EMAIL || e;
   });
 
+  /* ---------- standard / optional equipment tabs (both lists are in the HTML; one is shown at a time) ---------- */
+  d.querySelectorAll("[data-equip-tabs]").forEach(function (box) {
+    var list = box.querySelector(".equip-tabs");
+    if (!list) return;
+    var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return d.getElementById(t.getAttribute("aria-controls")); });
+    function select(i, focus) {
+      tabs.forEach(function (t, j) {
+        var on = j === i;
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        if (panels[j]) panels[j].hidden = !on;
+      });
+      if (focus) tabs[i].focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { select(i); });
+      t.addEventListener("keydown", function (e) {
+        var n = tabs.length, k = e.key, to = null;
+        if (k === "ArrowRight") to = (i + 1) % n;
+        else if (k === "ArrowLeft") to = (i + n - 1) % n;
+        else if (k === "Home") to = 0;
+        else if (k === "End") to = n - 1;
+        if (to !== null) { e.preventDefault(); select(to, true); }
+      });
+    });
+    list.hidden = false;
+    box.classList.add("tabs-on");
+    select(0);
+  });
+
   /* ---------- "AI machine finder" assistant: panel opens on demand, script loaded once ---------- */
   var aiPanel = d.getElementById("ai-panel");
   if (aiPanel) {

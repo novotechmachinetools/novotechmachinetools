@@ -703,9 +703,12 @@ EPB_FAMILIES = [
                  "from 0.15 to 30 mm/s and the machine draws power only while it moves (about 70 % less than a hydraulic brake). Ten models from 11 "
                  "tons × 20″ for small parts to 176 tons × 10.5 ft, all with a Delem DA-53Tx control and X-R servo back gauge; the 40 and 50 t machines "
                  "are also sold in robot bending cells.",
-         features=["Mild steel to 1/4″ over 10 ft on the 100 t; 5/16″ over 10 ft on the 160 t (V = 8 × thickness)"] + EPB_STD,
+         features=list(EPB_STD),      # the capacity line is off the WADG list (the owner, Oct 31 2026)
          optional=EPB_OPT,
-         images=["vl-wadg-1", "vl-wadg-robot", "vl-wadg-motors", "vl-wadg-ram", "vl-wadg-drawing", "vl-wadg-support", "vl-wadg-tooling", "vl-wadg-parts"],
+         # vl-wadg-ram (a hydraulic brake's cylinders), vl-wadg-support (a laser table), vl-wadg-tooling and vl-wadg-parts are off the
+         # gallery — not this machine (the owner, Oct 31 2026)
+         images=["vl-wadg-1", "vl-wadg-robot", "vl-wadg-motors", "vl-wadg-drawing", "vl-wadg-crowning", "vl-wadg-backgauge", "vl-wadg-front-supports",
+                 "vl-wadg-angle"],
          videos=[],
          specs=spec([T_WADG], PB_GK, PB_G_FROM, NOTE_EPB)),
     dict(id="vl-wadg-mini", group="pb-electric", page=P_EPB, brand=BRAND,
@@ -719,8 +722,8 @@ EPB_FAMILIES = [
          features=["Single-phase or 3-phase supply; 20 % smaller footprint than a hydraulic brake of the same tonnage"] + EPB_STD[:3] + ["Touchscreen CNC with X and R back gauge axes on cylindrical guides", "Manual top-tool clamp and 2-V die; foot pedal with emergency stop"],
          optional=["Single-V mechanical die clamping", "Light curtain", "Custom voltage"],
          # the compact model itself (ADH product photo, background removed with Pixelcut, supplier logo and model label painted out —
-         # tools/src-images/value-sheet/vl-wadg-mini-1.png), then the standard tooling and typical parts
-         images=["vl-wadg-mini-1", "vl-wadg-tooling", "vl-wadg-parts"],
+         # tools/src-images/value-sheet/vl-wadg-mini-1.png); the tooling and parts pictures are off — not this machine (the owner, Oct 31 2026)
+         images=["vl-wadg-mini-1"],
          videos=[],
          specs=spec([T_WADG_MINI], PB_GK, PB_G_FROM, NOTE_EPB)),
 ]
