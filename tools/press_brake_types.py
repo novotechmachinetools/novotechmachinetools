@@ -54,8 +54,8 @@ HYDRAULIC = dict(
     hero="dn-xl-1", minis=["vl-wad-1", "vl-nc-1"],
     groups=[("pb-premium", "CNC hydraulic press brakes · premium line", "", "dener"),   # no lead line (the owner, Oct 31 2026)
             ("pb-value", "CNC hydraulic press brakes · value line", "", "novotech"),   # no lead line (the owner, Oct 31 2026)
-            ("pb-hybrid", "Full hybrid press brakes · premium line", "Dener's XH full hybrid, designed around its servo-driven hydraulics. The mild hybrid — a servo motor and pump in the XL circuit — is an option on every XL above.", "dener"),
-            ("pb-nc", "NC hydraulic press brakes — torsion bar · value line", "The simple machine: torsion-bar synchronised ram, mechanical stops and an Estun NC control for the back gauge and depth, 33 to 441 US tons.", "novotech")],
+            ("pb-hybrid", "Full hybrid press brakes · premium line", "", "dener"),   # no lead line (the owner, Oct 31 2026)
+            ("pb-nc", "NC hydraulic press brakes — torsion bar · value line", "", "novotech")],   # no lead line (the owner, Oct 31 2026)
     faq=[{"q": "CNC, hybrid or NC — which hydraulic press brake do I need?",
           "a": "A CNC brake measures the ram on linear scales and corrects it through servo valves, calculates the bend from the drawing, crowns the bed and changes material in the program — the machine for mixed work, tight angles and multi-bend parts, and the one most Canadian shops buy. The hybrid is a CNC brake with a servo pump: it costs a little more and pays it back in power, speed and noise when the brake runs all day. An NC brake positions the back gauge and the ram depth from a stored program with the cylinders kept in step by a torsion bar — rigid, cheap to maintain, right for the same parts in one material every day. For 4 – 7 ft work in sheet up to 8 ga, where a 100-ton machine is more than you need, see the compact press brakes."},
          {"q": "Premium line or value line?",
@@ -93,8 +93,8 @@ ELECTRIC = dict(
             '<a href="#vl-wadg-mini">3 – 13 ton bench brakes</a>',
             "±0.01 mm, power only while the ram moves, no hydraulic oil or filters — about twice the speed of a hydraulic brake on sheet"],
     hero="dn-ddm-2", minis=["vl-wadg-1", "dn-dds-1"],
-    groups=[("pb-servo", "Servo-electric and ball-screw press brakes · premium line", "No hydraulic oil: the Dener DDM servo-electric brake for production to 220 tons and the DDS ball-screw brake for small parts.", "dener"),
-            ("pb-value-electric", "Electric press brakes · value line", "NovoTech's own electric brakes: ball-screw servo drive from 3 to 176 US tons — the clean, quiet, accurate brake for sheet work at a value-line price.", "novotech")],
+    groups=[("pb-servo", "Servo-electric and ball-screw press brakes · premium line", "", "dener"),   # no lead line (the owner, Oct 31 2026)
+            ("pb-value-electric", "Electric press brakes · value line", "", "novotech")],   # no lead line (the owner, Oct 31 2026)
     faq=[{"q": "Electric or hydraulic — which press brake should I buy?",
           "a": "Electric when the work is sheet — 20 ga to 1/4″, brackets, enclosures, panels, stainless and aluminum — and when accuracy, speed, energy and a clean floor matter: the servo drive repeats to ±0.01 mm, bends at about twice the speed of a hydraulic brake and draws power only while the ram moves. Hydraulic when the work is plate, 3/8″ and up, long parts over 13 ft, or tonnage above 220 US tons, and when the lowest price per ton decides. Many shops run one of each; the hydraulic press brakes have their own page."},
          {"q": "Servo-electric or ball-screw — what is the difference?",
@@ -133,9 +133,9 @@ COMPACT = dict(
             '<a href="#vl-nc-compact">WC67K-30T/1600 NC torsion-bar brake</a>, 33 US tons × 5.2 ft with Estun E21PS',
             'Value-line <a href="#tt-hbv">HBV bending brakes</a>: 16.5 – 35 US tons, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″, four-way V-block or two cylinders'],
     hero="dn-xl1560-studio", minis=["vl-cp-wad1600", "vl-cp-nc-adh"],
-    groups=[("pb-compact-dener", "Compact CNC press brake · Dener premium line", "The XL 1560: the smallest Dener XL — 66 US tons over 5 ft, the frame, hydraulics, axes and ESA control of the 10 ft machines in a footprint that goes through a shop door.", "dener"),
-            ("pb-compact-cnc", "Compact CNC press brakes · NovoTech value line", "The WAD-50T/1300 and 1600: 55 US tons over 4.3 and 5.2 ft, electro-hydraulic servo control, linear scales and the Delem DA-53Tx, on a servo-driven pump.", "novotech"),
-            ("pb-compact-nc", "Compact NC press brake · NovoTech value line", "The WC67K-30T/1600: 33 US tons over 5.2 ft, torsion-bar synchronised ram, mechanical stops and the Estun E21PS for 40 stored programs — the simplest press brake to own.", "novotech")],
+    groups=[("pb-compact-dener", "Compact CNC press brake · Dener premium line", "", "dener"),   # no lead line (the owner, Oct 31 2026)
+            ("pb-compact-cnc", "Compact CNC press brakes · NovoTech value line", "", "novotech"),   # no lead line (the owner, Oct 31 2026)
+            ("pb-compact-nc", "Compact NC press brake · NovoTech value line", "", "novotech")],   # no lead line (the owner, Oct 31 2026)
     faq=[{"q": "What tonnage do I need?",
           "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening: F = S² × 2 × R ÷ (1.4 × V) tonnes per metre with S and V in millimetres and R = 47 kg/mm² for mild steel — in inches and US tons per foot about 575 × t² ÷ V. In a V of 8 × the thickness, a 4 ft bend takes about 16 US tons in 16 ga, 39 tons in 10 ga and 47 tons in 8 ga (0.16″); a wider die lowers the force — 8 ga in a 2″ V takes about 31 tons over 4 ft — at the cost of a larger inside radius. The control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we size the machine."},
          {"q": "Dener XL 1560 or a value-line compact?",
