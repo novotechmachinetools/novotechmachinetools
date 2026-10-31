@@ -326,6 +326,13 @@ small { font-size: .85em; }
 .video-poster .play::after { content: ""; position: absolute; left: 31px; top: 15px; border-left: 20px solid var(--charcoal); border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
 .video-poster:hover .play { background: var(--orange-deep); }
 .video iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; display: block; }
+/* a YouTube Short is 9:16; beside a 16:9 film its column is 9/16 × 9/16 ≈ 0.316 of the film's, so both stand the same height */
+.video.is-short .video-poster, .video.is-short iframe { aspect-ratio: 9 / 16; }
+.intro-vids { display: grid; grid-template-columns: minmax(0, 3.16fr) minmax(0, 1fr); gap: 14px; align-items: start; }
+.intro-vids .video { max-width: none; }
+.intro-vids .video.is-short .play { width: 54px; height: 40px; }
+.intro-vids .video.is-short .play::after { left: 21px; top: 10px; border-left-width: 15px; border-top-width: 10px; border-bottom-width: 10px; }
+@media (max-width: 700px) { .intro-vids { grid-template-columns: minmax(0, 1fr); } .intro-vids .video.is-short { width: min(260px, 70%); justify-self: center; } }
 .video-title { font-size: 15px; color: var(--steel); margin: 8px 0 0; }
 
 /* spec tables */

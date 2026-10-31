@@ -217,7 +217,7 @@
       <p>{{ page.intro_video_text or "A tour of the manufacturer's plant, where every machine on this page is built." }} More videos are on <a href="{{ page.youtube_playlist or site.youtube_rebar_playlist }}" rel="noopener">NovoTech's YouTube playlist</a>.</p>
       {% if page.related_article %}{% if page.article %}<p><a class="arrow" href="#{{ page.article_id or 'buying-guide' }}">{{ page.article_title or 'Buying guide' }}</a></p>{% else %}<p><a class="arrow" href="{{ page.related_article.href }}">{{ page.related_article.label }}</a></p>{% endif %}{% endif %}
     </div>
-    {{ video(page.intro_video) }}
+    {% if page.intro_video_2 %}<div class="intro-vids">{{ video(page.intro_video) }}{{ video(page.intro_video_2) }}</div>{% else %}{{ video(page.intro_video) }}{% endif %}
   </div>
 </section>
 {% endif %}

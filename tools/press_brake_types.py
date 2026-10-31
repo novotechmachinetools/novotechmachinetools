@@ -157,8 +157,10 @@ COMPACT = dict(
 VIDEOS = {
     # Dener's introduction film from NovoTech's channel in place of the XL 4000 × 220 clip (the owner, Oct 31 2026)
     "hydraulic-press-brake": {"intro_video": {"id": "A1i_NljuVQo", "title": "Dener introduction film — the plant in Kayseri, Turkey, where the XL press brakes are built", "thumb": "video-A1i_NljuVQo", "duration": "PT2M52S"},
+                              # + the short walk through Dener's press brake hall, beside it (the owner, Oct 31 2026)
+                              "intro_video_2": {"id": "6DnKdsLx5iA", "title": "A walk through Dener's press brake hall in Kayseri", "thumb": "video-6DnKdsLx5iA", "duration": "PT0M26S", "short": True},
                               "intro_video_heading": "Inside the factory where the machines are built",
-                              "intro_video_text": "Dener Makina's introduction film: the plant in Kayseri, Turkey, where Dener has built press brakes since 1974 — the premium-line machines NovoTech sells, installs and supports in Canada."},
+                              "intro_video_text": "Dener Makina's introduction film, and a short walk through the press brake hall: the plant in Kayseri, Turkey, where Dener has built press brakes since 1974 — the premium-line machines NovoTech sells, installs and supports in Canada."},
     "electric-press-brake": {"intro_video": {"id": "ZujRJUhckG4", "title": "DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake", "thumb": "video-ZujRJUhckG4", "duration": "PT0M51S"},
                              "intro_video_heading": "The servo-electric press brake at work",
                              "intro_video_text": "A 10 ft × 100 ton DDM bending sheet: no hydraulic oil, servo drive, ±0.01 mm repeatability."},
