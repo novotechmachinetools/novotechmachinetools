@@ -30792,22 +30792,6 @@
   "quality": 82,
   "cutout": false
  },
- "dn-xl-q-punch-1281": {
-  "src": "tools/src-images/dener/dn-xl-q-punch-1281.png",
-  "alt": "EUROSTAMP 1281 European ground punch, 85°, standard: the full length of the ram, ground to ±0.0004″",
-  "section": "dener",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "dn-xl-q-die-2067": {
-  "src": "tools/src-images/dener/dn-xl-q-die-2067.png",
-  "alt": "EUROSTAMP 2067 four-way V-die, standard: one 85° segmented block on the lower table with 5/8″, 7/8″, 1-3/8″ and 2″ (16, 22, 35, 50 mm) openings for 16 ga to 1/4″ plate (±0.005″)",
-  "section": "dener",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
  "dn-xl-q-quick-release": {
   "src": "tools/src-images/dener/dn-xl-q-quick-release.png",
   "alt": "Dener quick-release punch holder clamp plates, option: lever-bar action for European and American punches — the punch is not self-seating",
@@ -30863,5 +30847,55 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "dn-xl-es-1281": {
+  "src": "tools/src-images/dener/dn-xl-es-1281.png",
+  "alt": "EUROSTAMP 1281 European ground punch, standard: 85°, R .031″ (0.8 mm), H 4.12″ (104.65 mm), the full length of the ram, ground to ±0.0004″",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "trim_white": false
+ },
+ "dn-xl-es-2067": {
+  "src": "tools/src-images/dener/dn-xl-es-2067.png",
+  "alt": "EUROSTAMP 2067 four-way V-die, standard: one 85° segmented block on the lower table with 5/8″, 7/8″, 1-3/8″ and 2″ (16, 22, 35, 50 mm) openings for 16 ga to 1/4″ plate (±0.005″)",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "trim_white": false
+ },
+ "dn-xl-p-laser-angle": {
+  "src": "tools/src-images/dener/dn-xl-p-laser-angle.png",
+  "alt": "Laser angle measurement, option: lasers read the angle on the part during the bend, and the control corrects the ram depth automatically, so the angle is right from the first part",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-p-front-arms-std": {
+  "src": "tools/src-images/dener/dn-xl-p-front-arms-std.png",
+  "alt": "Front support arms on the XL under 193 US tons (175 t): two arms that slide along a linear rail on the front of the machine and carry the sheet while it is bent",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-p-manual-crowning": {
+  "src": "tools/src-images/dener/dn-xl-p-manual-crowning.png",
+  "alt": "Manual crowning, option: the crowning of the lower table is set by hand with the handle and read on the counter, compensating the deflection under load",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-xl-p-back-covers": {
+  "src": "tools/src-images/dener/dn-xl-p-back-covers.png",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "alt": "Back safety covers, standard: interlocked mesh guards close off the back of the machine, so no one can reach the back-gauge area while it runs"
  }
 }

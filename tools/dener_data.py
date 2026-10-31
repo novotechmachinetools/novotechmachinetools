@@ -287,11 +287,14 @@ PB_FAMILIES = [
          # holder channel) with their standard / option status (the owner, Oct 30 2026); dn-xh-4, the
          # blurry tooling photo, is out (the owner, Oct 30 2026)
          # dn-xl-2 (three-quarter render), dn-xl-esa-screen (an ESA S660 W, not the XL's S840) and dn-xl-front-arms (the same
-         # front supports as dn-xl-q-front-supports) and dn-xl-q-rear-gates out — the owner, Oct 30 2026
+         # front supports as dn-xl-q-front-supports) and dn-xl-q-rear-gates out — the owner, Oct 30 2026; the 1281 punch and 2067 die
+         # are EUROSTAMP's drawings with the inch values added (tools/eurostamp_photos.drawing), the laser angle measurement the owner's
+         # picture, and the CNC crowning photo his second picture; the front support arms of the XL under 175 t and the manual
+         # crowning (option) his pictures too, upscaled 4x, and his photo of the back safety covers (standard) (Oct 30 2026)
          images=["dn-xl-1", "dn-xl-3", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-ram-slide",
-                 "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-q-front-supports",
-                 "dn-xl-p-dsp-laser", "dn-xl-q-punch-1281", "dn-xl-q-die-2067", "dn-xl-p-crowning",
-                 "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-control",
+                 "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports",
+                 "dn-xl-p-dsp-laser", "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning",
+                 "dn-xl-p-manual-crowning", "dn-xl-p-laser-angle", "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-control",
                  # the back gauge options with their axis arrows (tools/dener_bg_arrows.py)
                  "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis", "dn-det-bg-6axis-atf"],
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),

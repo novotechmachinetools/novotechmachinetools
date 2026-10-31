@@ -104146,60 +104146,6 @@
    "bytes": 4508
   }
  },
- "dn-xl-q-punch-1281": {
-  "alt": "EUROSTAMP 1281 European ground punch, 85\u00b0, standard: the full length of the ram, ground to \u00b10.0004\u2033",
-  "variants": [
-   {
-    "w": 1016,
-    "h": 808,
-    "file": "img/dener/dn-xl-q-punch-1281-1016.webp",
-    "bytes": 30178
-   },
-   {
-    "w": 800,
-    "h": 636,
-    "file": "img/dener/dn-xl-q-punch-1281-800.webp",
-    "bytes": 24970
-   },
-   {
-    "w": 480,
-    "h": 382,
-    "file": "img/dener/dn-xl-q-punch-1281-480.webp",
-    "bytes": 14318
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 127,
-   "file": "img/dener/dn-xl-q-punch-1281-thumb.webp",
-   "bytes": 2226
-  }
- },
- "dn-xl-q-die-2067": {
-  "alt": "EUROSTAMP 2067 four-way V-die, standard: one 85\u00b0 segmented block on the lower table with 5/8\u2033, 7/8\u2033, 1-3/8\u2033 and 2\u2033 (16, 22, 35, 50 mm) openings for 16 ga to 1/4\u2033 plate (\u00b10.005\u2033)",
-  "variants": [
-   {
-    "w": 800,
-    "h": 756,
-    "file": "img/dener/dn-xl-q-die-2067-800.webp",
-    "bytes": 32906
-   },
-   {
-    "w": 480,
-    "h": 454,
-    "file": "img/dener/dn-xl-q-die-2067-480.webp",
-    "bytes": 18216
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 151,
-   "file": "img/dener/dn-xl-q-die-2067-thumb.webp",
-   "bytes": 3674
-  }
- },
  "dn-xl-q-quick-release": {
   "alt": "Dener quick-release punch holder clamp plates, option: lever-bar action for European and American punches \u2014 the punch is not self-seating",
   "variants": [
@@ -104354,30 +104300,30 @@
   "alt": "CNC motorised crowning, option: the control sets the crowning of the lower table for every bend, compensating the deflection under load so the angle is the same along the whole bend",
   "variants": [
    {
-    "w": 1200,
-    "h": 877,
-    "file": "img/dener/dn-xl-p-crowning-1200.webp",
-    "bytes": 69834
+    "w": 1134,
+    "h": 704,
+    "file": "img/dener/dn-xl-p-crowning-1134.webp",
+    "bytes": 38578
    },
    {
     "w": 800,
-    "h": 584,
+    "h": 497,
     "file": "img/dener/dn-xl-p-crowning-800.webp",
-    "bytes": 43260
+    "bytes": 26402
    },
    {
     "w": 480,
-    "h": 351,
+    "h": 298,
     "file": "img/dener/dn-xl-p-crowning-480.webp",
-    "bytes": 21818
+    "bytes": 15112
    }
   ],
   "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 117,
+   "h": 99,
    "file": "img/dener/dn-xl-p-crowning-thumb.webp",
-   "bytes": 3828
+   "bytes": 3256
   }
  },
  "dn-xl-p-die-channel": {
@@ -104408,6 +104354,180 @@
    "h": 149,
    "file": "img/dener/dn-xl-p-die-channel-thumb.webp",
    "bytes": 4086
+  }
+ },
+ "dn-xl-es-1281": {
+  "alt": "EUROSTAMP 1281 European ground punch, standard: 85\u00b0, R .031\u2033 (0.8 mm), H 4.12\u2033 (104.65 mm), the full length of the ram, ground to \u00b10.0004\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 861,
+    "file": "img/dener/dn-xl-es-1281-800.webp",
+    "bytes": 50270
+   },
+   {
+    "w": 480,
+    "h": 517,
+    "file": "img/dener/dn-xl-es-1281-480.webp",
+    "bytes": 26198
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 149,
+   "h": 160,
+   "file": "img/dener/dn-xl-es-1281-thumb.webp",
+   "bytes": 3694
+  }
+ },
+ "dn-xl-es-2067": {
+  "alt": "EUROSTAMP 2067 four-way V-die, standard: one 85\u00b0 segmented block on the lower table with 5/8\u2033, 7/8\u2033, 1-3/8\u2033 and 2\u2033 (16, 22, 35, 50 mm) openings for 16 ga to 1/4\u2033 plate (\u00b10.005\u2033)",
+  "variants": [
+   {
+    "w": 934,
+    "h": 869,
+    "file": "img/dener/dn-xl-es-2067-934.webp",
+    "bytes": 33734
+   },
+   {
+    "w": 800,
+    "h": 744,
+    "file": "img/dener/dn-xl-es-2067-800.webp",
+    "bytes": 27230
+   },
+   {
+    "w": 480,
+    "h": 447,
+    "file": "img/dener/dn-xl-es-2067-480.webp",
+    "bytes": 15878
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 149,
+   "file": "img/dener/dn-xl-es-2067-thumb.webp",
+   "bytes": 3248
+  }
+ },
+ "dn-xl-p-laser-angle": {
+  "alt": "Laser angle measurement, option: lasers read the angle on the part during the bend, and the control corrects the ram depth automatically, so the angle is right from the first part",
+  "variants": [
+   {
+    "w": 1158,
+    "h": 1340,
+    "file": "img/dener/dn-xl-p-laser-angle-1158.webp",
+    "bytes": 103266
+   },
+   {
+    "w": 800,
+    "h": 926,
+    "file": "img/dener/dn-xl-p-laser-angle-800.webp",
+    "bytes": 56336
+   },
+   {
+    "w": 480,
+    "h": 555,
+    "file": "img/dener/dn-xl-p-laser-angle-480.webp",
+    "bytes": 29304
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 138,
+   "h": 160,
+   "file": "img/dener/dn-xl-p-laser-angle-thumb.webp",
+   "bytes": 4996
+  }
+ },
+ "dn-xl-p-front-arms-std": {
+  "alt": "Front support arms on the XL under 193 US tons (175 t): two arms that slide along a linear rail on the front of the machine and carry the sheet while it is bent",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1109,
+    "file": "img/dener/dn-xl-p-front-arms-std-1200.webp",
+    "bytes": 87400
+   },
+   {
+    "w": 800,
+    "h": 739,
+    "file": "img/dener/dn-xl-p-front-arms-std-800.webp",
+    "bytes": 53144
+   },
+   {
+    "w": 480,
+    "h": 444,
+    "file": "img/dener/dn-xl-p-front-arms-std-480.webp",
+    "bytes": 26362
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 148,
+   "file": "img/dener/dn-xl-p-front-arms-std-thumb.webp",
+   "bytes": 3994
+  }
+ },
+ "dn-xl-p-manual-crowning": {
+  "alt": "Manual crowning, option: the crowning of the lower table is set by hand with the handle and read on the counter, compensating the deflection under load",
+  "variants": [
+   {
+    "w": 952,
+    "h": 988,
+    "file": "img/dener/dn-xl-p-manual-crowning-952.webp",
+    "bytes": 32300
+   },
+   {
+    "w": 800,
+    "h": 830,
+    "file": "img/dener/dn-xl-p-manual-crowning-800.webp",
+    "bytes": 26358
+   },
+   {
+    "w": 480,
+    "h": 498,
+    "file": "img/dener/dn-xl-p-manual-crowning-480.webp",
+    "bytes": 15818
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 154,
+   "h": 160,
+   "file": "img/dener/dn-xl-p-manual-crowning-thumb.webp",
+   "bytes": 3858
+  }
+ },
+ "dn-xl-p-back-covers": {
+  "alt": "Back safety covers, standard: interlocked mesh guards close off the back of the machine, so no one can reach the back-gauge area while it runs",
+  "variants": [
+   {
+    "w": 1180,
+    "h": 770,
+    "file": "img/dener/dn-xl-p-back-covers-1180.webp",
+    "bytes": 67478
+   },
+   {
+    "w": 800,
+    "h": 522,
+    "file": "img/dener/dn-xl-p-back-covers-800.webp",
+    "bytes": 38760
+   },
+   {
+    "w": 480,
+    "h": 313,
+    "file": "img/dener/dn-xl-p-back-covers-480.webp",
+    "bytes": 18364
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 104,
+   "file": "img/dener/dn-xl-p-back-covers-thumb.webp",
+   "bytes": 2996
   }
  }
 }
