@@ -441,9 +441,10 @@ small { font-size: .85em; }
 .group-cards .group-head { margin-bottom: 14px; }
 .family-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .family-card { display: grid; grid-template-rows: auto 1fr; border: 1px solid var(--line); background: var(--white); scroll-margin-top: calc(var(--header-h) + 16px); }
-.family-card-art { display: flex; align-items: center; justify-content: center; height: 210px; padding: 12px; border-bottom: 1px solid var(--line-soft); background: var(--paper); }
+.family-card-art { display: flex; align-items: center; justify-content: center; height: 210px; padding: 10px; border-bottom: 1px solid var(--line-soft); background: var(--paper); }
 .family-card-art.is-cutout { background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); }
-.family-card-art img { max-height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+/* the machine fills its frame (the owner, Oct 31 2026): the image box is the whole art area, contain keeps the proportions */
+.family-card-art img { width: 100%; height: 100%; object-fit: contain; }
 .family-card-body { padding: 14px 16px 16px; display: grid; align-content: start; gap: 4px; }
 .family-card-body h3 { font-size: 23px; margin: 0; line-height: 1.1; }
 .family-card-body h3 a { color: var(--charcoal); text-decoration: none; }

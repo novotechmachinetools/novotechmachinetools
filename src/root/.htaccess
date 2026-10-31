@@ -53,9 +53,13 @@ RedirectMatch 301 ^/novotech-cnc-press-brakes(\.html)?$ /hydraulic-press-brake
 RedirectMatch 301 ^/dener-shears(\.html)?$ /hydraulic-shearing-machine
 RedirectMatch 301 ^/novotech-mechanical-shears(\.html)?$ /mechanical-guillotine-shear
 # lasers are split by kind of machine, not by supplier (Oct 2026)
-RedirectMatch 301 ^/dener-fiber-lasers(\.html)?$ /enclosed-fiber-laser
-RedirectMatch 301 ^/novotech-fiber-lasers(\.html)?$ /open-type-fiber-laser
-RedirectMatch 301 ^/senfeng-fiber-lasers(\.html)?$ /enclosed-fiber-laser
+RedirectMatch 301 ^/dener-fiber-lasers(\.html)?$ /fiber-laser-cutting-machine
+RedirectMatch 301 ^/novotech-fiber-lasers(\.html)?$ /fiber-laser-cutting-machine
+RedirectMatch 301 ^/senfeng-fiber-lasers(\.html)?$ /fiber-laser-cutting-machine
+# the laser kind pages renamed (the owner, Oct 31 2026): no open-type machines, no "enclosed" in the names, 3D and coil-fed apart
+RedirectMatch 301 ^/enclosed-fiber-laser(\.html)?$ /fiber-laser-cutting-machine
+RedirectMatch 301 ^/open-type-fiber-laser(\.html)?$ /laser-cutting-machine
+RedirectMatch 301 ^/3d-laser-and-coil-fed-line(\.html)?$ /3d-laser-cutting-machine
 RedirectMatch 301 ^/dener-tube-lasers(\.html)?$ /tube-laser-cutter
 RedirectMatch 301 ^/novotech-tube-lasers(\.html)?$ /tube-laser-cutter
 RedirectMatch 301 ^/senfeng-tube-lasers(\.html)?$ /tube-laser-cutter

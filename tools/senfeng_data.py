@@ -76,11 +76,11 @@ ACC = "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
 
 # ------------------------------------------------------------------------------------------------ sheet lasers
 # compact: (model, kW lo, kW hi, L in, W in, speed ft/min, G, load lb, dims in (l,w,h), notes)
-COMPACT = [("SF1313G", 1.5, 3, 51.2, 51.2, 262, 1, 485, (118, 85, 79), "enclosed, 4 × 4 ft, single table"),
-           ("SF1530G", 1.5, 4, 120, 60, 262, 1, 1543, (191, 159, 82), "enclosed, single table"),
-           ("SF1530N", 1.5, 12, 120, 60, 328, 1, 2425, (197, 91, 81), "enclosed, pull-out single table"),
-           ("SF1530NP", 1.5, 6, 119.2, 59.4, 328, 1, 2425, (193.7, 87.5, 91.2), "fully enclosed, electric lifting door, integrated source")]
-T_COMPACT = table("Compact enclosed sheet lasers", "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW", [r[0] for r in COMPACT], [
+COMPACT = [("SF1313G", 1.5, 3, 51.2, 51.2, 262, 1, 485, (118, 85, 79), "full cover, 4 × 4 ft, single table"),
+           ("SF1530G", 1.5, 4, 120, 60, 262, 1, 1543, (191, 159, 82), "full cover, single table"),
+           ("SF1530N", 1.5, 12, 120, 60, 328, 1, 2425, (197, 91, 81), "full cover, pull-out single table"),
+           ("SF1530NP", 1.5, 6, 119.2, 59.4, 328, 1, 2425, (193.7, 87.5, 91.2), "full cover, electric lifting door, integrated source")]
+T_COMPACT = table("Compact sheet lasers", "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW", [r[0] for r in COMPACT], [
     ("Working area", [area_in(r[3], r[4], r[0]) for r in COMPACT]),
     ("Laser power", [kw(r[1], r[2]) for r in COMPACT]),
     ("Type", [r[9] for r in COMPACT]),
@@ -101,7 +101,7 @@ T_SFP = table("High-precision small-part lasers", "3 models · 24 – 49″ squa
 
 NP = [("SF3015NP", 120.1, 60.2, 2425, (177.2, 114.2, 82.7)), ("SF4015NP", 159.4, 60.2, 3086, (216.5, 114.2, 82.7)), ("SF4020NP", 159.4, 80, 4189, (216.5, 133.9, 74.8)),
       ("SF6015NP", 238.2, 60.2, 4630, (318.9, 114.2, 74.8)), ("SF6020NP", 238.2, 80, 6173, (318.9, 133.9, 74.8))]
-T_NP = table("NP open-type single-table sheet lasers", "5 models · 5 × 10 to 6.6 × 20 ft · 3 – 12 kW", [r[0] for r in NP], [
+T_NP = table("NP single-table sheet lasers with gantry cover", "5 models · 5 × 10 to 6.6 × 20 ft · 3 – 12 kW", [r[0] for r in NP], [
     ("Working area", [area_in(r[1], r[2], r[0]) for r in NP]),
     ("Laser power", ["3 – 12 kW"] * len(NP)),
     ("Max. no-load speed", [ftmin(394)] * len(NP)),
@@ -112,7 +112,7 @@ T_NP = table("NP open-type single-table sheet lasers", "5 models · 5 × 10 to 6
 
 HC = [("SF3015H", 120, 60.2, 2425, (27.9, 7.4, 7.1)), ("SF4015H", 159.4, 60.2, 3307, (35.8, 7.4, 7.2)), ("SF4020H", 159.4, 79.9, 4189, (36.2, 10.6, 7.4)),
       ("SF6015H", 238.1, 60.2, 4850, (48.3, 7.4, 7.2)), ("SF6020H", 238.1, 79.9, 6393, (48.8, 10.6, 7.4))]
-T_HC = table("H series space-saver enclosed lasers · 1.5 – 12 kW", "5 models · 5 × 10 to 6.6 × 20 ft · pallet changer", [r[0] for r in HC], [
+T_HC = table("H series space-saver lasers · 1.5 – 12 kW", "5 models · 5 × 10 to 6.6 × 20 ft · pallet changer", [r[0] for r in HC], [
     ("Working area", [area_in(r[1], r[2], r[0]) for r in HC]),
     ("Laser power", ["1.5 – 12 kW"] * len(HC)),
     ("Max. no-load speed", [ftmin(426.5)] * len(HC)),
@@ -122,7 +122,7 @@ T_HC = table("H series space-saver enclosed lasers · 1.5 – 12 kW", "5 models 
     ("Dimensions L × W × H", [dims_ft(*r[4]) for r in HC])])
 H4 = [("SF3015H", 121.3, 60.2, 6614, (332.3, 89.4, 92.1)), ("SF4020H", 161.4, 80, 11023, (424.8, 125.2, 94.9)), ("SF6020H", 240.2, 80, 16645, (589.7, 125.2, 94.9)),
       ("SF6025H", 240.2, 100, 19842, (580.1, 148.9, 94.9)), ("SF8025H", 318.9, 100, 26455, (743.1, 148.9, 94.9)), ("SF12025H", 476.4, 100, 41579, (1093.3, 148.9, 94.9))]
-T_H4 = table("H4 series high-power enclosed lasers · 6 – 30 kW", "6 models · 5 × 10 to 8.3 × 40 ft · pallet changer, 2 G", [r[0] for r in H4], [
+T_H4 = table("H4 series high-power lasers · 6 – 30 kW", "6 models · 5 × 10 to 8.3 × 40 ft · pallet changer, 2 G", [r[0] for r in H4], [
     ("Working area", [area_in(r[1], r[2], r[0]) for r in H4]),
     ("Laser power", ["6 – 30 kW"] * len(H4)),
     ("Max. no-load speed", [ftmin(656)] * len(H4)),
@@ -186,16 +186,16 @@ T_RC = table("RC series robot laser cutting cells", "4 models · 6-axis robot ·
     ("Robot", ["6 axes · 72.9″ (1,850 mm) reach · repeat ±0.0008″"] * 4), ("Fiber length", [f"{r[3]:g} ft ({round(r[3] * 0.3048):g} m)" for r in RC]),
     ("Robot weight", ["463 lb (210 kg)"] * 4)])
 
-T_COIL = table("Coil-fed laser cutting lines", "3 lines · thin sheet to 9/16″ plate", ["SF15015C", "SF1503CH", "SF2012CH"], [
-    ("Coil thickness", ["0.031 – 0.047″ (0.8 – 1.2 mm)", "to 1/8″ (3 mm)", "5/16″ – 9/16″ (8 – 14 mm)"]),
-    ("Sheet width", ["31.4 – 59″ (800 – 1,500 mm)", "to 59″ (1,500 mm)", "to 78.7″ (2,000 mm)"]),
-    ("Cutting area", ["open-type 5 × 10 ft laser", area_in(118.1, 59.0), area_in(157.4, 78.7)]),
-    ("Laser power", ["1.5 – 6 kW", "3 – 6 kW", "12 – 80 kW"]),
-    ("Coil inside Ø · max. outside Ø", ["20 / 24″ · 59″", "20″ · 55″", "24 / 30″ · 71″"]),
-    ("Max. coil weight", ["3 – 15 t", "16.5 US tons (15 t)", "22 US tons (20 t)"]),
-    ("Max. feeding speed", [ftmin(49.2), ftmin(49.2), ftmin(32.8)]),
-    ("Levelling accuracy", ["±0.08″ per ft²", "±0.00007 in/ft²", "±0.0002 in/ft²"]),
-    ("Positioning accuracy", ["—", "±0.00006 in/ft · repeat ±0.0008″", "±0.002″ · repeat ±0.0008″"])])
+T_COIL = table("Coil-fed laser cutting lines", "2 lines · coil to 9/16″ plate", ["SF1503CH", "SF2012CH"], [
+    ("Coil thickness", ["to 1/8″ (3 mm)", "5/16″ – 9/16″ (8 – 14 mm)"]),
+    ("Sheet width", ["to 59″ (1,500 mm)", "to 78.7″ (2,000 mm)"]),
+    ("Cutting area", [area_in(118.1, 59.0), area_in(157.4, 78.7)]),
+    ("Laser power", ["3 – 6 kW", "12 – 80 kW"]),
+    ("Coil inside Ø · max. outside Ø", ["20″ · 55″", "24 / 30″ · 71″"]),
+    ("Max. coil weight", ["16.5 US tons (15 t)", "22 US tons (20 t)"]),
+    ("Max. feeding speed", [ftmin(49.2), ftmin(32.8)]),
+    ("Levelling accuracy", ["±0.00007 in/ft²", "±0.0002 in/ft²"]),
+    ("Positioning accuracy", ["±0.00006 in/ft · repeat ±0.0008″", "±0.002″ · repeat ±0.0008″"])])
 
 # ------------------------------------------------------------------------------------------------ tube lasers
 # (model, kW lo, kW hi, length lo ft, length hi ft, round lo, round hi, square hi, load lb, speed, rpm, dims)
@@ -321,11 +321,11 @@ TB_OPT = ["Automatic bundle loader and unloading conveyor", "45° bevel head (GP
 # ------------------------------------------------------------------------------------------------ families
 LASER_FAMILIES = [
     dict(id="sf-compact", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="Compact enclosed sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
+         name="Compact sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
          short="Compact sheet lasers",
          models_label="SF1313G · SF1530G · SF1530N · SF1530NP · SFP600 – 1250",
-         summary="The entry into fiber laser cutting: single-table enclosed machines that ship in one container, plug in and cut the day they "
-                 "arrive. The SF1313G is a 4 × 4 ft machine for small parts; the SF1530G, SF1530N and the fully enclosed SF1530NP with its "
+         summary="The entry into fiber laser cutting: single-table machines with a full cover that ship in one container, plug in and cut the day they "
+                 "arrive. The SF1313G is a 4 × 4 ft machine for small parts; the SF1530G, SF1530N and the SF1530NP with its "
                  "electric lifting door take a 5 × 10 ft sheet with 1.5 to 12 kW sources — enough for 3/4″ mild steel at 6 kW. The pull-out "
                  "table loads from the front with a forklift; the integrated source and cabinet keep the footprint under 200 × 90″. For "
                  "jewellery, electronics and precision small parts the SFP series adds 24 to 49″ square tables with ±0.005 mm repeatability.",
@@ -335,24 +335,24 @@ LASER_FAMILIES = [
          videos=[],
          specs=spec([T_COMPACT, T_SFP], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-np", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="NP open-type single-table sheet lasers, 5 × 10 to 6.6 × 20 ft, 3 – 12 kW",
-         short="NP open-type lasers",
+         name="NP single-table sheet lasers with gantry cover, 5 × 10 to 6.6 × 20 ft, 3 – 12 kW",
+         short="NP lasers with gantry cover",
          models_label="SF3015NP – SF6020NP · 5 models",
-         summary="The open-type laser for the shop that wants a 10 or 20 ft table without an enclosure: full visibility of the cut, loading from "
-                 "three sides over ball-transfer units, a built-in source and cabinet, and double ventilation ducts that keep the open "
-                 "machine clean. Five table sizes from 5 × 10 to 6.6 × 20 ft, 3 to 12 kW, 394 ft/min and 1.2 G; six 3015NP machines "
+         summary="A single-table laser with a laser cover on the gantry that travels with the head over the cut: the table stays open for "
+                 "loading from three sides over ball-transfer units, the cover keeps the beam and the spatter in, and a built-in source and "
+                 "cabinet and double ventilation ducts keep the machine clean. Five table sizes from 5 × 10 to 6.6 × 20 ft, 3 to 12 kW, 394 ft/min and 1.2 G; six 3015NP machines "
                  "fit in one 40 ft container, which is why it is the lowest-priced 12 kW laser in Senfeng's range. The intelligent "
                  "air-cutting package cuts sheet to 3/8″ on compressed air.",
          features=["3 – 12 kW; 5 × 10 to 6.6 × 20 ft; 394 ft/min, 1.2 G; 2,400 – 6,200 lb table load"] + LZ_STD,
          optional=LZ_OPT,
-         images=["sf-np-1", "sf-np-2", "sf-np-3", "sf-np-4", "sf-np-scene"],
+         images=["sf-np-1", "sf-np-2", "sf-np-3", "sf-np-4"],
          videos=[],
          specs=spec([T_NP], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-h", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="H series enclosed sheet lasers with pallet changer, 5 × 10 to 8.3 × 40 ft, 1.5 – 80 kW",
+         name="H series sheet lasers with pallet changer, 5 × 10 to 8.3 × 40 ft, 1.5 – 80 kW",
          short="H series production lasers",
          models_label="SF3015H – SF12025H · HC, H4 and H5 · 14 models",
-         summary="Senfeng's production laser: a fully enclosed cabin, a double pallet changer that swaps tables in 20 seconds and a "
+         summary="Senfeng's production laser: a full-cover cabin, a double pallet changer that swaps tables in 20 seconds and a "
                  "thermally isolated hollow bed with graphite protection for high-power cutting. Three builds on the same platform — the "
                  "HC space saver with 1.5 to 12 kW in a 19 m² footprint, the fourth-generation H4 with 6 to 30 kW, 656 ft/min and 2 G on "
                  "tables to 8.3 × 40 ft, and the H5 heavy-load machine with hydraulic table lifts to 30 t for 40 to 80 kW sources and "
@@ -366,7 +366,7 @@ LASER_FAMILIES = [
          name="HM sheet and tube combination lasers, 5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 6 – 30 kW",
          short="Sheet + tube combo lasers",
          models_label="SF3015HM – SF6025HM · 4 models",
-         summary="One machine for sheet and tube: the enclosed H series laser with pallet changer and, on the side, a rotary chuck and tube "
+         summary="One machine for sheet and tube: the H series laser with pallet changer and, on the side, a rotary chuck and tube "
                  "supports for round, square and rectangular tube from Ø0.7 to 8.6″ and up to 20 ft long. The same 6 to 30 kW source and "
                  "cutting head serve both; switching takes the time to load the tube. Four sheet sizes from 5 × 10 to 8.3 × 20 ft.",
          features=["Sheet 5 × 10 to 8.3 × 20 ft with pallet changer; tube Ø0.7 – 8.6″ × 20 ft; 6 – 30 kW; 656 ft/min"] + LZ_STD,
@@ -402,17 +402,16 @@ LASER_FAMILIES = [
          videos=[],
          specs=spec([T_3D, T_RC], ["area", "power", "speed", "axes", "dims"], ["Travel X × Y", "Laser power", "Max. no-load speed", "A axis · C axis", "Dimensions L × W × H"], POWER_NOTE)),
     dict(id="sf-coil", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="Coil-fed laser cutting lines, 0.03″ sheet to 9/16″ plate, 1.5 – 80 kW",
+         name="Coil-fed laser cutting lines, coil to 9/16″ plate, 3 – 80 kW",
          short="Coil-fed laser lines",
-         models_label="SF15015C · SF1503CH · SF2012CH · TOP line",
+         models_label="SF1503CH · SF2012CH · TOP line",
          summary="Cut straight from the coil: a decoiler, straightener and leveller feed the sheet onto the laser table so there is no sheet "
-                 "handling, no offcuts and no limit on part length. The SF15015C runs thin coil (0.031 – 0.047″) through an open-type "
-                 "laser; the SF1503CH takes coil to 1/8″ and 16.5 tons on a 5 × 10 ft machine; the SF2012CH levels and cuts 5/16″ to 9/16″ "
+                 "handling, no offcuts and no limit on part length. The SF1503CH takes coil to 1/8″ and 16.5 tons on a 5 × 10 ft machine; the SF2012CH levels and cuts 5/16″ to 9/16″ "
                  "plate from 22-ton coils with 12 to 80 kW. The TOP line adds robot sorting, panel bending and welding for a complete "
                  "coil-to-part cell.",
-         features=["Decoiler, leveller and laser on one control; coil to 22 US tons; feeding to 49 ft/min; 1.5 – 80 kW"] + LZ_STD[:2],
+         features=["Decoiler, leveller and laser on one control; coil to 22 US tons; feeding to 49 ft/min; 3 – 80 kW"] + LZ_STD[:2],
          optional=["Robot sorting and stacking", "Panel bender and welding stations (TOP line)", "Stereo pallet racks"],
-         images=["sf-coil-1", "sf-coil-2", "sf-coil-3", "sf-coil-top", "sf-coil-scene", "sf-coil-parts"],
+         images=["sf-coil-1", "sf-coil-2", "sf-coil-top", "sf-coil-scene", "sf-coil-parts"],
          videos=[],
          specs=spec([T_COIL], ["thickness", "width", "power", "coil", "speed"], ["Coil thickness", "Sheet width", "Laser power", "Max. coil weight", "Max. feeding speed"], POWER_NOTE)),
 ]

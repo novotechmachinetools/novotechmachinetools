@@ -69,7 +69,7 @@ PHOTOS = {
     "vn-ulf-skyeye": R("ULF-003", (2945, 295, 3205, 705), "Camera nesting over the table — scan the remnant, nest the parts on it (optional)"),
     "vn-ipg": R("ULE-004", (655, 450, 1015, 805), "IPG fiber laser source (optional)"),
     # ---------------------------------------------------------------- ULE enclosed exchange-table lasers
-    "vn-ule-1": A("q-01-27.png", "NovoTech ULE enclosed fiber laser with exchange table — 20 × 8.5 ft working area, full enclosure, front console",
+    "vn-ule-1": A("q-01-27.png", "NovoTech ULE fiber laser with exchange table — 20 × 8.5 ft working area, laser-safe cabin, front console",
                   boxes=[(235, 265, 350, 365), (1040, 365, 1095, 395), (1178, 262, 1222, 668), (950, 474, 1004, 502, "all"), (578, 322, 628, 535),
                          (1690, 420, 1880, 535), (2108, 332, 2150, 402), (1525, 340, 1568, 500)]),
     "vn-ule-console": P("q-04-58.png", None, "ULE operator station — touchscreen CNC with the cutting database, emergency stop and hand pendant"),
@@ -84,7 +84,7 @@ PHOTOS = {
     "vn-fms-gantry": P("GEN-006", (1360, 880, 2380, 1280), "Gantry loading and unloading with suction cups (optional)"),
     "vn-precitec": R("ULE-004", (245, 435, 415, 820), "Precitec ProCutter autofocus cutting head (optional)"),
     # ---------------------------------------------------------------- ULG ground-rail plate lasers (photos from the supplier's website)
-    "vn-ulg-1": R(UG + "ulg-hero.webp", None, "NovoTech ULG ground-rail plate laser — enclosed gantry cabin running on floor rails, plate table behind, console in front",
+    "vn-ulg-1": R(UG + "ulg-hero.webp", None, "NovoTech ULG ground-rail plate laser — the cabin travels with the gantry on floor rails, plate table behind, console in front",
                   boxes=[(332, 286, 416, 390), (1278, 278, 1312, 470)]),
     "vn-ulg-beam": P(UG + "ulg-beam.webp", None, "ULG gantry and cutting head over the slat table — the gantry runs on its own ground rails"),
     "vn-ulg-rails": P(UG + "ulg-bed.webp", None, "Ground rails and plate-support table set side by side — the motion axis never carries the plate load"),
@@ -106,7 +106,7 @@ PHOTOS = {
     "vn-ulft-head": R("ULFT-002", (155, 218, 365, 670), "Autofocus cutting head — anti-collision, micro-joints so parts stay in the sheet"),
     "vn-ulft-sources": R("ULFT-002", (155, 728, 605, 1100), "MAX and Raycus fiber laser sources — chosen at order"),
     # ---------------------------------------------------------------- ULET enclosed sheet + tube lasers
-    "vn-ulet-1": R("ULET-000", (1055, 262, 2590, 1050), "NovoTech ULET enclosed sheet-and-tube fiber laser — full enclosure with the tube chuck at the end",
+    "vn-ulet-1": R("ULET-000", (1055, 262, 2590, 1050), "NovoTech ULET sheet-and-tube fiber laser — exchange table and cabin, the tube chuck at the end",
                    boxes=[(1072, 370, 1135, 432), (1825, 322, 2035, 428)]),
     "vn-ulet-beam": R("ULET-001", (2515, 135, 3160, 525), "Crossbeam and Z axis of the ULET — manganese steel, heat-treated"),
     "vn-ulet-chuck": P("ULET-002", (1350, 115, 1800, 575), "Pneumatic chuck clamping a square tube"),

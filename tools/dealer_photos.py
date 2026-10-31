@@ -90,7 +90,7 @@ PHOTOS = {
     "dn-bs-panel": P("HT 071 NC control on the BS: back gauge position, programs and stroke counter, with the mode switches below",
                      cut=False),
     # ---- Dener GFL fiber laser
-    "dn-gfl-3015": P("Dener GFL 3015 fiber laser cutting machine: 5 × 10 ft table, enclosed cabin and pallet changer"),
+    "dn-gfl-3015": P("Dener GFL 3015 fiber laser cutting machine: 5 × 10 ft table, laser-safe cabin and pallet changer"),
     "dn-gfl-6020": P("Dener GFL 6020 fiber laser cutting machine: 6.6 × 20 ft table with the pallet changer",
                      clone=[(254, 238, 292, 272, 0, 44)]),
     "dn-gfl-open": P("GFL with the cabin door open: the cutting head on the gantry, and the CNC control on its arm"),

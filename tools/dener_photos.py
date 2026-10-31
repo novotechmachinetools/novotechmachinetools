@@ -93,8 +93,11 @@ PHOTOS = {
     "dn-gfl-video-2": V("Fiber Laser FL-6020-6KW - New Features for High Speed and Performance_Moment4.jpg", "Dener 6 kW fiber laser cutting mild steel"),
     "dn-laser-web": W("Lazer (1).JPG", "Dener fiber laser cutting machine on the shop floor"),
     # Smart
-    "dn-smart-1": R("smart etiketli.png", "Dener Smart Laser 6020 fiber laser cutting machine — closed type with exchange table"),
+    "dn-smart-1": R("smart etiketli.png", "Dener Smart Laser 6020 fiber laser cutting machine with double exchange table"),
     "dn-smart-2": R("smart arka.png", "Dener Smart fiber laser — exchange table out, rear view"),
+    # the semi-closed Smart, from Dener's Smart brochure (render with its soft mask, 2× Real-ESRGAN) — the owner, Oct 31 2026
+    "dn-smart-semi-1": R("smart-semi-1.png", "Dener Smart semi-closed fiber laser — the cabin travels with the gantry over a long single table"),
+    "dn-smart-semi-2": R("smart-semi-2.png", "Dener Smart semi-closed fiber laser — the single table is loaded from the side; the cabin rides on the gantry"),
     # tube lasers
     "dn-tube-1": R("6025.png", "Dener E-FTL tube and profile fiber laser — chucks and following supports"),
     "dn-tube-2": R("6025G.png", "Dener E-FTL tube laser with the automatic bundle loader"),

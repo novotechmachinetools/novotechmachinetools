@@ -570,12 +570,10 @@ def laser_table(title, sub, prefix, codes, power, precision, speed_mmin, accel, 
 
 T_GFL = laser_table("GFL fiber laser cutting machines", "3 table sizes · 3 – 40 kW · pallet changer", "GFL", ["3015", "4020", "6020"], POWERS, "±0.03 mm (±0.0012″)", 120, "1.5 G",
                     "pallet changer, 2 tables", [("Z-axis stroke", "13.8″ (350 mm)")])
-T_SMART_C = laser_table("Smart closed-type fiber lasers · double table", "6 table sizes · 3 – 40 kW", "Smart", ["3015", "4020", "6020", "6025", "8025", "12526"], POWERS,
+T_SMART_C = laser_table("Smart fiber lasers with double table", "6 table sizes · 3 – 40 kW", "Smart", ["3015", "4020", "6020", "6025", "8025", "12526"], POWERS,
                         "±0.03 mm (±0.0012″)", 140, "1 G", "double exchange table")
 T_SMART_S = laser_table("Smart semi-closed fiber lasers · single table", "7 table sizes · 3 – 40 kW", "Smart", ["6025", "8025", "12525", "14035", "16045", "25031", "25040"],
                         POWERS, "±0.01 mm (±0.0004″)", 75, "0.6 G", "single table, semi-closed cabin")
-T_SMART_O = laser_table("Smart open-type fiber lasers · single table", "3 table sizes · 3 – 6 kW", "Smart", ["3015", "4020", "6020"], "3 / 6 kW", "±0.03 mm (±0.0012″)", 110, "1 G",
-                        "single table, open")
 LS_GK = ["working_area", "power", "speed", "accel", "worktable"]
 LS_G_FROM = ["Working area L × W", "Laser source power", "Max. axis speed", "Max. acceleration", "Worktable"]
 NOTE_LS = ("The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed "
@@ -605,14 +603,14 @@ LASER_FAMILIES = [
                      ("EFTY5a-Ri1Q", "Intelligent air cutting — a smarter solution beyond traditional air cutting")),
          specs=spec([T_GFL], LS_GK, LS_G_FROM, NOTE_LS)),
     dict(id="dn-smart-closed", group="laser-smart", page=P_LASER, brand=BRAND,
-         name="Smart closed-type fiber lasers with double table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
-         short="Smart closed-type lasers",
+         name="Smart fiber lasers with double table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
+         short="Smart lasers with double table",
          models_label="Smart 3015 – 12526 · 6 table sizes · 3 – 40 kW",
-         summary="The Smart series is the economy sheet laser from the same Turkish factory: a fully enclosed cabin with laser-safe glass, a double "
+         summary="The Smart series is the economy sheet laser from the same Turkish factory: a cabin with laser-safe glass, a double "
                  "exchange table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting "
                  "heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting "
                  "area, control and remote handset.",
-         features=["Closed cabin with laser-safe viewing glass; double exchange table", "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning"] + LS_STD,
+         features=["Cabin with laser-safe viewing glass; double exchange table", "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning"] + LS_STD,
          optional=LS_OPT,
          images=["dn-smart-1", "dn-smart-2", "dn-laser-web"],
          videos=vids(("4Yp6X9tP6J8", "DENER SMART series laser cutting machine"), ("zDGupa7NevE", "Dener fiber laser cutting machine"),
@@ -622,26 +620,14 @@ LASER_FAMILIES = [
          name="Smart semi-closed fiber lasers with single table, 8.2 × 20 to 13 × 82 ft, 3 – 40 kW",
          short="Smart semi-closed lasers",
          models_label="Smart 6025 – 25040 · 7 table sizes · 3 – 40 kW",
-         summary="The large-format Smart: a single table from 8.2 × 20 ft to 13 × 82 ft under a semi-closed cabin, for long plates, beams and "
-                 "parts that do not fit a standard sheet. ±0.01 mm positioning, 246 ft/min and 3 to 40 kW sources — the 20 – 40 kW machines "
+         summary="The large-format Smart: a single table from 8.2 × 20 ft to 13 × 82 ft with a semi-closed cabin that travels with the gantry "
+                 "over the cut, for long plates, beams and parts that do not fit a standard sheet. ±0.01 mm positioning, 246 ft/min and 3 to 40 kW sources — the 20 – 40 kW machines "
                  "cut 1-1/2″ plate and thicker.",
-         features=["Single table to 13 × 82 ft (4 × 25 m) under a semi-closed cabin", "±0.01 mm positioning, 246 ft/min (75 m/min), 0.6 G"] + LS_STD,
+         features=["Single table to 13 × 82 ft (4 × 25 m); semi-closed cabin on the gantry, loading from any side", "±0.01 mm positioning, 246 ft/min (75 m/min), 0.6 G"] + LS_STD[:2] + LS_STD[3:],
          optional=LS_OPT,
-         images=["dn-smart-2"],
+         images=["dn-smart-semi-1", "dn-smart-semi-2"],
          videos=[],
          specs=spec([T_SMART_S], LS_GK, LS_G_FROM, NOTE_LS)),
-    dict(id="dn-smart-open", group="laser-smart", page=P_LASER, brand=BRAND,
-         name="Smart open-type fiber lasers, 5 × 10 to 6.6 × 20 ft, 3 – 6 kW",
-         short="Smart open-type lasers",
-         models_label="Smart 3015 · 4020 · 6020 · 3 – 6 kW",
-         summary="The entry sheet laser: an open single-table machine with a 3 or 6 kW source, 361 ft/min at 1 G, in 5 × 10, 6.6 × 13 and 6.6 × "
-                 "20 ft. Maximum access to the table for odd sheets and manual loading; the lowest-cost way into fiber laser cutting from a "
-                 "builder that also makes the 40 kW machines.",
-         features=["Open single table — full access for loading; 3 or 6 kW source", "1 G acceleration, 361 ft/min (110 m/min), ±0.03 mm positioning"] + LS_STD[:1] + LS_STD[3:],
-         optional=LS_OPT,
-         images=["dn-smart-1"],
-         videos=[],
-         specs=spec([T_SMART_O], LS_GK, LS_G_FROM, NOTE_LS)),
 ]
 
 # ------------------------------------------------------------------------------------------------ tube lasers

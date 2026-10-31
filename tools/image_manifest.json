@@ -51150,7 +51150,7 @@
   }
  },
  "dn-smart-1": {
-  "alt": "Dener Smart Laser 6020 fiber laser cutting machine \u2014 closed type with exchange table",
+  "alt": "Dener Smart Laser 6020 fiber laser cutting machine with double exchange table",
   "variants": [
    {
     "w": 1200,
@@ -56340,7 +56340,7 @@
   }
  },
  "sf-h-1": {
-  "alt": "Senfeng SF3015H4 enclosed fiber laser cutting machine with pallet changer \u2014 5 \u00d7 10 ft, 6 \u2013 30 kW",
+  "alt": "Senfeng SF3015H4 fiber laser cutting machine with pallet changer \u2014 5 \u00d7 10 ft, 6 \u2013 30 kW",
   "variants": [
    {
     "w": 1200,
@@ -56370,7 +56370,7 @@
   }
  },
  "sf-h-2": {
-  "alt": "Senfeng SF3015H space-saver enclosed fiber laser \u2014 5 \u00d7 10 ft, 1.5 \u2013 12 kW",
+  "alt": "Senfeng SF3015H space-saver fiber laser \u2014 5 \u00d7 10 ft, 1.5 \u2013 12 kW",
   "variants": [
    {
     "w": 1200,
@@ -56588,38 +56588,45 @@
   }
  },
  "sf-np-1": {
-  "alt": "Senfeng SF3015NP open-type single-table fiber laser \u2014 5 \u00d7 10 ft, 3 \u2013 12 kW",
+  "alt": "Senfeng SF3015NP fiber laser with the laser cover on the gantry \u2014 5 \u00d7 10 ft, 3 \u2013 12 kW",
   "variants": [
    {
     "w": 1200,
-    "h": 752,
+    "h": 578,
     "file": "img/senfeng/sf-np-1-1200.webp",
-    "bytes": 72358
+    "bytes": 63712
    },
    {
     "w": 800,
-    "h": 501,
+    "h": 386,
     "file": "img/senfeng/sf-np-1-800.webp",
-    "bytes": 43332
+    "bytes": 39104
    },
    {
     "w": 480,
-    "h": 301,
+    "h": 231,
     "file": "img/senfeng/sf-np-1-480.webp",
-    "bytes": 23248
+    "bytes": 20434
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 100,
+   "h": 77,
    "file": "img/senfeng/sf-np-1-thumb.webp",
-   "bytes": 5762
-  }
+   "bytes": 5054
+  },
+  "cut": "birefnet"
  },
  "sf-np-2": {
-  "alt": "NP series open-type laser \u2014 the table seen from the loading side",
+  "alt": "NP series laser \u2014 the laser cover travels with the gantry over the table, seen from the loading side",
   "variants": [
+   {
+    "w": 1152,
+    "h": 733,
+    "file": "img/senfeng/sf-np-2-1152.webp",
+    "bytes": 72196
+   },
    {
     "w": 800,
     "h": 509,
@@ -56643,58 +56650,64 @@
   "cut": "birefnet"
  },
  "sf-np-3": {
-  "alt": "NP series laser with the optional servo swing-arm loading manipulator",
+  "alt": "NP series laser from the rear \u2014 the gantry cover over the table and the control console",
   "variants": [
    {
+    "w": 1200,
+    "h": 521,
+    "file": "img/senfeng/sf-np-3-1200.webp",
+    "bytes": 51624
+   },
+   {
     "w": 800,
-    "h": 580,
+    "h": 347,
     "file": "img/senfeng/sf-np-3-800.webp",
-    "bytes": 53804
+    "bytes": 31956
    },
    {
     "w": 480,
-    "h": 348,
+    "h": 208,
     "file": "img/senfeng/sf-np-3-480.webp",
-    "bytes": 29642
+    "bytes": 17696
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 116,
+   "h": 69,
    "file": "img/senfeng/sf-np-3-thumb.webp",
-   "bytes": 7192
+   "bytes": 4342
   },
   "cut": "birefnet"
  },
  "sf-np-4": {
-  "alt": "NP series laser with the optional loading and unloading unit",
+  "alt": "NP series laser \u2014 the open table under the gantry cover, loaded from three sides",
   "variants": [
    {
-    "w": 1200,
-    "h": 413,
-    "file": "img/senfeng/sf-np-4-1200.webp",
-    "bytes": 66158
+    "w": 1116,
+    "h": 627,
+    "file": "img/senfeng/sf-np-4-1116.webp",
+    "bytes": 54500
    },
    {
     "w": 800,
-    "h": 276,
+    "h": 449,
     "file": "img/senfeng/sf-np-4-800.webp",
-    "bytes": 40088
+    "bytes": 38976
    },
    {
     "w": 480,
-    "h": 165,
+    "h": 270,
     "file": "img/senfeng/sf-np-4-480.webp",
-    "bytes": 21062
+    "bytes": 20452
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 55,
+   "h": 90,
    "file": "img/senfeng/sf-np-4-thumb.webp",
-   "bytes": 4982
+   "bytes": 4688
   },
   "cut": "birefnet"
  },
@@ -56766,7 +56779,7 @@
   "cut": "birefnet"
  },
  "sf-1530g": {
-  "alt": "Senfeng SF1530G enclosed fiber laser \u2014 5 \u00d7 10 ft, 1.5 \u2013 4 kW",
+  "alt": "Senfeng SF1530G fiber laser with full cover \u2014 5 \u00d7 10 ft, 1.5 \u2013 4 kW",
   "variants": [
    {
     "w": 1200,
@@ -56797,7 +56810,7 @@
   "cut": "birefnet"
  },
  "sf-1530n": {
-  "alt": "Senfeng SF1530N enclosed fiber laser with pull-out single table \u2014 5 \u00d7 10 ft, 1.5 \u2013 12 kW",
+  "alt": "Senfeng SF1530N fiber laser with full cover and pull-out single table \u2014 5 \u00d7 10 ft, 1.5 \u2013 12 kW",
   "variants": [
    {
     "w": 1200,
@@ -56853,7 +56866,7 @@
   "cut": "birefnet"
  },
  "sf-1530np": {
-  "alt": "Senfeng SF1530NP fully enclosed compact fiber laser with electric lifting door \u2014 5 \u00d7 10 ft, 1.5 \u2013 6 kW",
+  "alt": "Senfeng SF1530NP compact fiber laser with electric lifting door \u2014 5 \u00d7 10 ft, 1.5 \u2013 6 kW",
   "variants": [
    {
     "w": 800,
@@ -56952,7 +56965,7 @@
   "cut": "birefnet"
  },
  "sf-hm-1": {
-  "alt": "Senfeng SF3015HM enclosed sheet and tube fiber laser \u2014 5 \u00d7 10 ft table plus \u00d88.6\u2033 \u00d7 20 ft tube attachment",
+  "alt": "Senfeng SF3015HM sheet and tube fiber laser \u2014 5 \u00d7 10 ft table plus \u00d88.6\u2033 \u00d7 20 ft tube attachment",
   "variants": [
    {
     "w": 1200,
@@ -56983,7 +56996,7 @@
   "cut": "birefnet"
  },
  "sf-hm-2": {
-  "alt": "SF3015HM \u2014 the tube attachment on the side of the enclosure",
+  "alt": "SF3015HM \u2014 the tube attachment on the side of the cabin",
   "variants": [
    {
     "w": 1200,
@@ -57045,7 +57058,7 @@
   "cut": "birefnet"
  },
  "sf-hm-4": {
-  "alt": "Sheet and tube laser \u2014 enclosure doors open",
+  "alt": "Sheet and tube laser \u2014 cabin doors open",
   "variants": [
    {
     "w": 1200,
@@ -57382,7 +57395,7 @@
   "cut": "birefnet"
  },
  "sf-3d-2": {
-  "alt": "SF3015TD \u2014 the enclosed five-axis cell",
+  "alt": "SF3015TD \u2014 the five-axis cell in its safety cabin",
   "variants": [
    {
     "w": 800,
@@ -75180,7 +75193,7 @@
   }
  },
  "vn-ule-1": {
-  "alt": "NovoTech ULE enclosed fiber laser with exchange table \u2014 20 \u00d7 8.5 ft working area, full enclosure, front console",
+  "alt": "NovoTech ULE fiber laser with exchange table \u2014 20 \u00d7 8.5 ft working area, laser-safe cabin, front console",
   "variants": [
    {
     "w": 1200,
@@ -75636,7 +75649,7 @@
   }
  },
  "vn-ulet-1": {
-  "alt": "NovoTech ULET enclosed sheet-and-tube fiber laser \u2014 full enclosure with the tube chuck at the end",
+  "alt": "NovoTech ULET sheet-and-tube fiber laser \u2014 exchange table and cabin, the tube chuck at the end",
   "variants": [
    {
     "w": 1200,
@@ -76038,7 +76051,7 @@
   }
  },
  "vn-ulg-1": {
-  "alt": "NovoTech ULG ground-rail plate laser \u2014 enclosed gantry cabin running on floor rails, plate table behind, console in front",
+  "alt": "NovoTech ULG ground-rail plate laser \u2014 the cabin travels with the gantry on floor rails, plate table behind, console in front",
   "variants": [
    {
     "w": 1200,
@@ -105290,7 +105303,7 @@
   }
  },
  "dn-gfl-3015": {
-  "alt": "Dener GFL 3015 fiber laser cutting machine: 5 \u00d7 10 ft table, enclosed cabin and pallet changer",
+  "alt": "Dener GFL 3015 fiber laser cutting machine: 5 \u00d7 10 ft table, laser-safe cabin and pallet changer",
   "variants": [
    {
     "w": 968,
@@ -110474,6 +110487,66 @@
    "h": 90,
    "file": "img/bandsaw/video-7CzWdd1uY9w-thumb.webp",
    "bytes": 3332
+  }
+ },
+ "dn-smart-semi-1": {
+  "alt": "Dener Smart semi-closed fiber laser \u2014 the cabin travels with the gantry over a long single table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 266,
+    "file": "img/dener/dn-smart-semi-1-1200.webp",
+    "bytes": 34928
+   },
+   {
+    "w": 800,
+    "h": 177,
+    "file": "img/dener/dn-smart-semi-1-800.webp",
+    "bytes": 21052
+   },
+   {
+    "w": 480,
+    "h": 106,
+    "file": "img/dener/dn-smart-semi-1-480.webp",
+    "bytes": 11354
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 35,
+   "file": "img/dener/dn-smart-semi-1-thumb.webp",
+   "bytes": 2910
+  }
+ },
+ "dn-smart-semi-2": {
+  "alt": "Dener Smart semi-closed fiber laser \u2014 the single table is loaded from the side; the cabin rides on the gantry",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 277,
+    "file": "img/dener/dn-smart-semi-2-1200.webp",
+    "bytes": 36652
+   },
+   {
+    "w": 800,
+    "h": 185,
+    "file": "img/dener/dn-smart-semi-2-800.webp",
+    "bytes": 22506
+   },
+   {
+    "w": 480,
+    "h": 111,
+    "file": "img/dener/dn-smart-semi-2-480.webp",
+    "bytes": 11842
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 37,
+   "file": "img/dener/dn-smart-semi-2-thumb.webp",
+   "bytes": 3052
   }
  }
 }

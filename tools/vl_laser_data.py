@@ -115,7 +115,7 @@ T_ULF_L = table("ULF-E large-format plate lasers · 6 – 60 kW", "6 models · 2
 # (model, L, W, load both tables kg (single chain), dims, delta speed)
 ULE_S = [("ULE-3015E", 3100, 1550, 1500, (8800, 2950, 2300), 100), ("ULE-4015E", 4100, 1550, 1900, (10800, 2950, 2300), 100),
          ("ULE-4020E", 4100, 2050, 2600, (10800, 3500, 2300), None), ("ULE-6020E", 6100, 2050, 4000, (15000, 3500, 2300), None)]
-T_ULE_S = table("ULE enclosed exchange-table fiber lasers · 3 – 20 kW", "4 models · 10 × 5 to 20 × 6.7 ft · table swap in 15 s", [r[0] for r in ULE_S], [
+T_ULE_S = table("ULE exchange-table fiber lasers · 3 – 20 kW", "4 models · 10 × 5 to 20 × 6.7 ft · table swap in 15 s", [r[0] for r in ULE_S], [
     ("Working area", [area(r[1], r[2]) for r in ULE_S]),
     ("Laser power", "3 – 20 kW"),
     ("Max. speed", "no load", mmin(140)),
@@ -189,7 +189,7 @@ T_ULFT = table("ULFT open-type sheet-and-tube fiber lasers", "13 table sizes · 
     ("Max. acceleration", "1 – 1.5 G"),
     ("Positioning accuracy", acc_m(0.03)),
     ("Repeat accuracy", acc_m(0.02))])
-T_ULET = table("ULET enclosed sheet-and-tube fiber lasers", "8 table sizes · 10 × 5 to 41 × 8.5 ft · tube to Ø13.8″ · 1.5 – 40 kW", ["ULET series"], [
+T_ULET = table("ULET sheet-and-tube fiber lasers with exchange table", "8 table sizes · 10 × 5 to 41 × 8.5 ft · tube to Ø13.8″ · 1.5 – 40 kW", ["ULET series"], [
     ("Working area", "sheet", "10 × 5 ft to 41 × 8.5 ft (3,000 × 1,500 – 12,500 × 2,600 mm)"),
     ("Table sizes", "sheet", "10 × 5, 13 × 5, 20 × 5, 13 × 6.6 and 20 × 6.6 ft; 20, 26 or 41 ft × 8.5 ft (3 × 1.5 to 12.5 × 2.6 m)"),
     ("Tube capacity", "round / square", TUBE_CHUCK),
@@ -257,26 +257,11 @@ TB_OPT = ["Pneumatic loader or automatic bundle loader (bundles to 11,000 lb / 5
 
 # ------------------------------------------------------------------------------------------------ families
 SHEET_FAMILIES = [
-    dict(id="vn-ulf", group="laser-novotech", page=P_SHEET, brand=BRAND,
-         name="ULF open-type single-table fiber lasers, 10 × 5 to 85 × 10.5 ft, 1.5 – 60 kW",
-         short="ULF open-type lasers",
-         models_label="ULF-3015G – 6020G · ULF-3015E – 6022E · ULF-6026E – 26032E · 16 models",
-         summary="The open-type laser: a single table loaded from three sides, the source and cabinet built into the machine, and the "
-                 "price that makes a first fiber laser possible. The ULF-G takes 1.5 to 6 kW at 295 ft/min and 1.4 G on 10 × 5 to "
-                 "20 × 6.7 ft tables — the machine for a shop that cuts sheet and light plate a few hours a day. The ULF-E is the heavier build: "
-                 "1.5 to 12 kW, 459 ft/min, 1.7 G, tables to 7.2 ft wide and up to 6,600 lb of plate. The large-format ULF-E machines "
-                 "run 6 to 60 kW over plate tables from 20 × 8.5 to 85 × 10.5 ft for structural, trailer and heavy-equipment work, "
-                 "with up to 79,000 lb (36 t) on the table.",
-         features=["1.5 – 60 kW; 10 × 5 to 85 × 10.5 ft; 295 – 459 ft/min, 1.4 – 1.7 G; table loads to 79,000 lb"] + LZ_STD,
-         optional=LZ_OPT,
-         images=["vn-ulf-1", "vn-ulf-frame", "vn-ulf-beam", "vn-ulf-console", "vn-ulf-head", "vn-ulf-source", "vn-ulf-chiller", "vn-ipg", "vn-ulf-skyeye"],
-         videos=[],
-         specs=spec([T_ULF_G, T_ULF_E, T_ULF_L], LZ_GK, LZ_G_FROM, NOTE_SHEET)),
     dict(id="vn-ule", group="laser-novotech", page=P_SHEET, brand=BRAND,
-         name="ULE enclosed fiber lasers with exchange table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW",
+         name="ULE fiber lasers with exchange table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW",
          short="ULE exchange-table lasers",
          models_label="ULE-3015E – 6020E · ULE-6026E – 12526E · 7 models",
-         summary="The production laser: a full enclosure with laser-safe windows keeps the beam, sparks and fumes in, and two tables "
+         summary="The production laser: a cabin with laser-safe windows keeps the beam, sparks and fumes in, and two tables "
                  "swap in 15 seconds so the operator loads one sheet while the other is cut. Four sizes from 10 × 5 to 20 × 6.7 ft "
                  "take 3 to 20 kW with 11.8″ of Z travel; three large-format machines from 20 × 8.5 to 41 × 8.5 ft take 6 to 40 kW and "
                  "16.5″ of Z for heavy plate. 459 ft/min and 1.7 G, ±0.03 mm/m positioning, a bed flat to 0.05 mm per square metre "
@@ -310,28 +295,15 @@ SHEET_FAMILIES = [
                  "vn-ulg-extraction", "vn-ulg-flanges"],
          videos=[],
          specs=spec([T_ULG_A, T_ULG_C], LZ_GK, LZ_G_FROM, NOTE_ULG)),
-    dict(id="vn-ulft", group="laser-novotech", page=P_SHEET, brand=BRAND,
-         name="ULFT open-type sheet-and-tube fiber lasers, 10 × 5 to 85 × 10.5 ft plus tube to Ø13.8″, 1.5 – 60 kW",
-         short="ULFT sheet + tube lasers",
-         models_label="ULFT 3015 – 26032 · 13 table sizes",
-         summary="Sheet and tube on one open-type machine: the ULF table for sheet and plate, and along its side a rotary pneumatic "
-                 "chuck and supports for round, square and rectangular tube to Ø8.7″ or Ø13.8″ in 20, 29.5 or 39 ft lengths. The same "
-                 "source and head cut both, so a shop that cuts a few tubes a week does not need a second laser. Thirteen table sizes "
-                 "from 10 × 5 to 85 × 10.5 ft, 1.5 to 60 kW, 459 ft/min.",
-         features=["Sheet 10 × 5 to 85 × 10.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 60 kW; 459 ft/min, 1 – 1.5 G"] + LZ_STD,
-         optional=LZ_OPT + ["Tube supports and unloading for 39 ft lengths"],
-         images=["vn-ulft-1", "vn-ulft-chuck", "vn-ulft-frame", "vn-ulft-beam", "vn-ulft-head", "vn-ulft-sources"],
-         videos=[],
-         specs=spec([T_ULFT], LZ_GK, LZ_G_FROM, NOTE_SHEET)),
     dict(id="vn-ulet", group="laser-novotech", page=P_SHEET, brand=BRAND,
-         name="ULET enclosed sheet-and-tube fiber lasers, 10 × 5 to 41 × 8.5 ft plus tube to Ø13.8″, 1.5 – 40 kW",
+         name="ULET sheet-and-tube fiber lasers with exchange table, 10 × 5 to 41 × 8.5 ft plus tube to Ø13.8″, 1.5 – 40 kW",
          short="ULET sheet + tube lasers",
          models_label="ULET 3015 – 12526 · 8 table sizes",
-         summary="The enclosed version of the sheet-and-tube laser: the ULE cabin with its exchange table for sheet, and at the end "
+         summary="Sheet and tube on one machine: the ULE cabin with its exchange table for sheet, and at the end "
                  "of the machine a pneumatic chuck — three times faster to clamp than an electric one — for round, square and "
                  "rectangular tube to Ø8.7″ or Ø13.8″ and 39 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; "
-                 "quieter and cleaner than an open machine, for shops where the laser stands next to assembly or welding.",
-         features=["Enclosed sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 40 kW; 459 ft/min"] + LZ_STD,
+                 "the same source and head cut both, so a shop that cuts tube a few times a week does not need a second laser.",
+         features=["Sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 40 kW; 459 ft/min"] + LZ_STD,
          optional=LZ_OPT + ["Tube supports and unloading for 39 ft lengths"],
          images=["vn-ulet-1", "vn-ulet-chuck", "vn-ulet-beam", "vn-ulet-head", "vn-ulet-source"],
          videos=[],

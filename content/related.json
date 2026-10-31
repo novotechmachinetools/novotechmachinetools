@@ -263,16 +263,9 @@
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "cnc-plasma-table"
   ],
-  "enclosed-fiber-laser": [
+  "fiber-laser-cutting-machine": [
    "press-brake",
    "panel-bender",
-   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
-   "laser-welding-machine",
-   "tube-laser-cutting-machine"
-  ],
-  "open-type-fiber-laser": [
-   "press-brake",
-   "shear-cutting",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "laser-welding-machine",
    "tube-laser-cutting-machine"
@@ -292,12 +285,19 @@
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "laser-welding-machine"
   ],
-  "3d-laser-and-coil-fed-line": [
+  "3d-laser-cutting-machine": [
    "press-brake",
+   "laser-welding-machine",
    "panel-bender",
    "tube-laser-cutting-machine",
-   "laser-welding-machine",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
+  ],
+  "coil-fed-laser-cutting-line": [
+   "panel-bender",
+   "press-brake",
+   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+   "laser-welding-machine",
+   "tube-laser-cutting-machine"
   ],
   "tube-laser-cutting-machine": [
    "pipe-benders",

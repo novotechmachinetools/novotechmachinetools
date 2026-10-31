@@ -35,7 +35,8 @@ PDF_TUBE_FILE = "files/NovoTech-Dener-Tube-Lasers-2026.pdf"
 PDF_PANEL_FILE = "files/NovoTech-Dener-Panel-Bender-2026.pdf"
 PDF_SHEAR_FILE = "files/NovoTech-Dener-Hydraulic-Shears-2026.pdf"
 PDF_VL_PANEL_FILE = "files/NovoTech-Panel-Benders-Value-Line-2026.pdf"
-COPY_PDFS = {PDF_PB_FILE: "nt-hydraulic-pb.pdf", PDF_SERVO_FILE: "pdf2/NovoTech_Dener_Servo_Press_Brakes (1).pdf", PDF_LASER_FILE: "nt-fiber-laser.pdf"}
+# the fiber laser brochure is built from the site data now (tools/brochure/specs/dener-fiber-lasers.json — no open-type Smart, Oct 31 2026)
+COPY_PDFS = {PDF_PB_FILE: "nt-hydraulic-pb.pdf", PDF_SERVO_FILE: "pdf2/NovoTech_Dener_Servo_Press_Brakes (1).pdf"}
 
 BRAND_LINE = ("Dener Makina builds press brakes, shears and fiber lasers in Kayseri, Turkey — 52 years, exports to more than 100 countries. "
               "Sold, installed and supported in Canada by NovoTech.")
