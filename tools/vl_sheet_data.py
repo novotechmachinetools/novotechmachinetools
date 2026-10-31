@@ -590,8 +590,8 @@ HPB_FAMILIES = [
          # the side photos (the owner, Oct 31 2026)
          images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-wad-front", "vl-wad-34", "vl-wad-side", "vl-wad-robot", "vl-wad-arm",
                  "vl-wad-pedal", "vl-pb-backgauge", "vl-wad-bg-beam", "vl-wad-bg-rear", "vl-wad-bg-chain", "vl-wad-finger",
-                 "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-clamps", "vl-pb-quickclamp", "vl-pb-dsp", "vl-wad-throat", "vl-pb-cylinders",
-                 "vl-wad-valve-top", "vl-wad-servo", "vl-wad-crown-motor", "vl-wad-cabinet", "vl-wad-cabinet-in"],
+                 "vl-pb-fingers", "vl-pb-clamps", "vl-pb-quickclamp", "vl-pb-dsp", "vl-wad-throat", "vl-pb-cylinders",
+                 "vl-wad-valve-top", "vl-wad-servo", "vl-wad-crown-motor", "vl-pb-servo-bg", "vl-wad-cabinet", "vl-wad-cabinet-in"],
          videos=vids(("gYyQIv5HRME", "WAD-110T/3200 CNC press brake — 10 ft × 121 US tons, Delem DA-53TX, mild-hybrid servo drive")),
          # the die-alignment video (KyNWOyaBKDM) was filmed on a Dener brake: off the WAD section (owner, Oct 30 2026); the channel's
          # WADE / DSP-laser videos show the supplier's badges, so they stay off the page too

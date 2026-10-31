@@ -53876,7 +53876,7 @@
   }
  },
  "vl-pb-servo-bg": {
-  "alt": "Servo motor and ball screw of the back gauge X axis",
+  "alt": "CNC motorised crowning: the motor and gearbox at the end of the table drive the crowning wedges under the die holder, and the control sets the crowning for every bend, for the same angle along the whole part",
   "variants": [
    {
     "w": 1200,
@@ -105847,7 +105847,7 @@
   }
  },
  "vl-wad-servo": {
-  "alt": "Servo motor and pump of the mild-hybrid hydraulic drive, with the oil filter",
+  "alt": "Servo motor and pump of the mild-hybrid drive, with the oil filter: the servo motor turns the pump only while the ram moves and stops it while the machine waits, loads or unloads \u2014 that is where the mild hybrid's gains come from: 40 \u2013 60 % less energy, oil 18 \u2013 36 \u00b0F (10 \u2013 20 \u00b0C) cooler, a quieter shop (about 60 dB, silent while the ram waits) and longer life for the pump, seals and valves",
   "variants": [
    {
     "w": 1200,

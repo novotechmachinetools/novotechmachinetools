@@ -54,7 +54,10 @@ PHOTOS = {
     "vl-wad-valve-top": P("Valve block on top of a ram cylinder, inside the top cover",                   # 101A0862
                           strokes=[[(1036, 768), (1057, 758), (1093, 783), (1133, 836), (1126, 844), (1081, 833), (1038, 776)]],
                           crop=(120, 90, 2280, 1290)),
-    "vl-wad-servo": P("Servo motor and pump of the mild-hybrid hydraulic drive, with the oil filter"),     # 101A0840
+    "vl-wad-servo": P("Servo motor and pump of the mild-hybrid drive, with the oil filter: the servo motor turns the pump only while "
+                     "the ram moves and stops it while the machine waits, loads or unloads — that is where the mild hybrid's "
+                     "gains come from: 40 – 60 % less energy, oil 18 – 36 °F (10 – 20 °C) cooler, a quieter shop (about 60 dB, "
+                     "silent while the ram waits) and longer life for the pump, seals and valves"),     # 101A0840
     "vl-wad-crown-motor": P("Crowning motor at the end of the bed: the control sets the crowning wedges for each bend"),   # 101A0792
     "vl-wad-cabinet": P("Electrical cabinet on the side of the machine, door open", [(2020, 398, 2070, 448)]),   # 101A0797
     "vl-wad-cabinet-in": P("Inside the electrical cabinet: the main switch, the two servo drives of the back gauge axes and the "

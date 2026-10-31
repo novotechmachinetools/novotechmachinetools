@@ -69,7 +69,9 @@ PHOTOS = {
     "vl-pb-hydclamp": R("05_w1600-12.webp", "Hydraulic tool clamping — one lever locks the whole ram", cutout=False),
     "vl-pb-dsp": R("04_w1600_w1600.webp", "DSP laser finger protection under the punch", cutout=False),
     "vl-pb-crowning": R("04_w1600-3-1.webp", "CNC crowning cylinders under the table compensate deflection along the bend", cutout=False),
-    "vl-pb-servo-bg": R("03_w1600-10.webp", "Servo motor and ball screw of the back gauge X axis", cutout=False),
+    "vl-pb-servo-bg": R("03_w1600-10.webp", "CNC motorised crowning: the motor and gearbox at the end of the table drive the "
+                       "crowning wedges under the die holder, and the control sets the crowning for every bend, for the same "
+                       "angle along the whole part", cutout=False),   # a crowning unit, not the back gauge (the owner, Oct 31 2026)
     "vl-pb-follower-detail": R("03_w1600-6.webp", "CNC sheet follower supporting a large blank through the bend", cutout=False),
     # ---------------------------------------------------------------- NC press brakes (WC67K / E)
     "vl-nc-1": R("nc-16.9_w1600.webp", "NovoTech WC67E 100T/3200 NC hydraulic press brake — 10 ft × 110 US tons, torsion-bar synchronised, with the Estun control",
