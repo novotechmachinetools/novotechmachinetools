@@ -104529,5 +104529,36 @@
    "file": "img/dener/dn-xl-p-back-covers-thumb.webp",
    "bytes": 2996
   }
+ },
+ "dn-xl-p-follower-parking": {
+  "alt": "Sheet followers with extended parking, option: CNC followers rise with the sheet and carry large parts through the bend, and the extended rail lets them park beside the machine, leaving the front free",
+  "variants": [
+   {
+    "w": 1088,
+    "h": 950,
+    "file": "img/dener/dn-xl-p-follower-parking-1088.webp",
+    "bytes": 65296
+   },
+   {
+    "w": 800,
+    "h": 699,
+    "file": "img/dener/dn-xl-p-follower-parking-800.webp",
+    "bytes": 52198
+   },
+   {
+    "w": 480,
+    "h": 419,
+    "file": "img/dener/dn-xl-p-follower-parking-480.webp",
+    "bytes": 29032
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 140,
+   "file": "img/dener/dn-xl-p-follower-parking-thumb.webp",
+   "bytes": 6970
+  },
+  "cut": "birefnet"
  }
 }
