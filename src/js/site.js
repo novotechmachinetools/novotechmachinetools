@@ -337,18 +337,53 @@
     });
   });
 
-  /* ---------- YouTube players: poster first; when a video scrolls into view it autoplays muted,
-     when it scrolls away the player is removed again so only one player runs at a time ---------- */
+  /* ---------- YouTube players: poster first (a light image, nothing from YouTube loads with the page). A video that stays
+     at least half in view for a moment starts muted; one that leaves the view pauses, and plays on from the same second
+     when it comes back (owner, Oct 30 2026). Players talk through the IFrame API's postMessage interface (enablejsapi=1)
+     so no YouTube script is loaded; at most LIVE players stay in memory, the least recently seen paused one gives its
+     place back to the poster and later starts again where it stopped. ---------- */
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var saveData = navigator.connection && navigator.connection.saveData;
+  var LIVE = 4, live = [], YT_ORIGIN = "https://www.youtube-nocookie.com";
   function makePlayer(v, muted) {
     var f = d.createElement("iframe");
-    f.src = "https://www.youtube-nocookie.com/embed/" + v.dataset.video + "?autoplay=1&rel=0&modestbranding=1&playsinline=1" + (muted ? "&mute=1" : "");
+    var start = v._time ? "&start=" + Math.floor(v._time) : "";
+    f.src = YT_ORIGIN + "/embed/" + v.dataset.video + "?autoplay=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=" +
+      encodeURIComponent(location.origin) + start + (muted ? "&mute=1" : "");
     f.title = v.dataset.title || "Video";
     f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
     f.setAttribute("allowfullscreen", "");
+    f.addEventListener("load", function () {               // ask the player to report its state and time
+      try { f.contentWindow.postMessage(JSON.stringify({ event: "listening", id: v.dataset.video, channel: "widget" }), YT_ORIGIN); } catch (err) {}
+    });
+    v._state = -1;
+    live = live.filter(function (x) { return x !== v; }); live.push(v);
+    if (live.length > LIVE) {                              // free the oldest paused player
+      for (var i = 0; i < live.length - 1 && live.length > LIVE; i++) {
+        var o = live[i], of = o.querySelector("iframe");
+        if (of && !o._inView) { of.replaceWith(o._poster); live.splice(i, 1); i--; }
+      }
+    }
     return f;
   }
+  function ytCommand(v, func) {
+    var f = v.querySelector("iframe");
+    if (f && f.contentWindow) {
+      try { f.contentWindow.postMessage(JSON.stringify({ event: "command", func: func, args: [] }), YT_ORIGIN); } catch (err) {}
+    }
+  }
+  window.addEventListener("message", function (e) {       // player state (1 playing, 2 paused, 3 buffering) and current time
+    if (e.origin !== YT_ORIGIN || typeof e.data !== "string") return;
+    var m; try { m = JSON.parse(e.data); } catch (err) { return; }
+    if (!m || !m.info) return;
+    videos.forEach(function (v) {
+      var f = v.querySelector("iframe");
+      if (!f || f.contentWindow !== e.source) return;
+      if (typeof m.info.playerState === "number") v._state = m.info.playerState;
+      if (typeof m.info.currentTime === "number") v._time = m.info.currentTime;
+      if (v._state === 1 && v._inView === false && !v._autoPaused) { ytCommand(v, "pauseVideo"); v._autoPaused = true; }   // started after it left the view
+    });
+  });
   var videos = Array.prototype.slice.call(d.querySelectorAll(".video[data-video]"));
   videos.forEach(function (v) {
     var poster = v.querySelector(".video-poster");
@@ -358,7 +393,7 @@
       e.preventDefault();
       var f = makePlayer(v, false);     // a click is a user gesture: play with sound
       (v.querySelector("iframe") || poster).replaceWith(f);
-      v.dataset.userStarted = "1";
+      v.dataset.userStarted = "1"; v._autoPaused = false;
     });
   });
   /* more than three videos: a carousel — three in view (two on tablets, one on phones), arrows page through the rest */
@@ -377,42 +412,39 @@
       var first = Math.min(items.length, Math.round(track.scrollLeft / step()) + 1), last = Math.min(items.length, first + per() - 1);
       status.textContent = "Videos " + first + (last > first ? " – " + last : "") + " of " + items.length;
     }
-    function stopHidden() {                     // a player that left the view stops (its poster comes back)
-      var tr = track.getBoundingClientRect();
-      items.forEach(function (v) {
-        var fr = v.querySelector("iframe"), r = v.getBoundingClientRect();
-        if (fr && v._poster && (r.right < tr.left + 20 || r.left > tr.right - 20)) { fr.replaceWith(v._poster); delete v.dataset.userStarted; }
-      });
-    }
     prev.addEventListener("click", function () { track.scrollBy({ left: -per() * step(), behavior: "smooth" }); });
     next.addEventListener("click", function () { track.scrollBy({ left: per() * step(), behavior: "smooth" }); });
     var t;
-    track.addEventListener("scroll", function () { clearTimeout(t); t = setTimeout(function () { update(); stopHidden(); }, 120); }, { passive: true });
+    track.addEventListener("scroll", function () { clearTimeout(t); t = setTimeout(update, 120); }, { passive: true });
     window.addEventListener("resize", update);
     update();
   });
-  /* muted autoplay for the videos in view when the page opens: all of a family's videos when it has three or fewer, the
-     first three of a carousel (two on tablets, one on phones); the ones behind the arrows play only when clicked */
-  var autoVideos = videos.filter(function (v) {
-    var c = v.closest(".vid-carousel");
-    if (!c) return true;
-    var items = Array.prototype.slice.call(c.querySelectorAll(".video"));
-    return items.indexOf(v) < (c._per ? c._per() : 3);
-  });
-  if (autoVideos.length && "IntersectionObserver" in window && !reduceMotion && !saveData && !PREVIEW) {
+  /* in view (half or more, for 350 ms — a fast scroll past starts nothing): start muted, or resume where it paused;
+     out of view: pause. A video in a carousel counts only while it is on the visible part of the strip. */
+  if (videos.length && "IntersectionObserver" in window && !reduceMotion && !saveData && !PREVIEW) {
     var vio = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         var v = e.target;
         if (!v._poster) return;
-        var frame = v.querySelector("iframe");
-        if (e.isIntersecting && e.intersectionRatio >= 0.5 && !frame) {
-          v.querySelector(".video-poster").replaceWith(makePlayer(v, true));   // autoplay, muted
-        } else if (!e.isIntersecting && frame && !v.dataset.userStarted) {
-          frame.replaceWith(v._poster);                                         // stop and free the player
+        var seen = e.isIntersecting && e.intersectionRatio >= 0.5;
+        v._inView = seen;
+        clearTimeout(v._t);
+        if (seen) {
+          v._t = setTimeout(function () {
+            if (!v._inView) return;
+            var frame = v.querySelector("iframe");
+            if (!frame) { (v.querySelector(".video-poster") || v._poster).replaceWith(makePlayer(v, !v.dataset.userStarted)); }
+            else if (v._autoPaused) { ytCommand(v, "playVideo"); }
+            v._autoPaused = false;
+            live = live.filter(function (x) { return x !== v; }); live.push(v);
+          }, 350);
+        } else if (!v._autoPaused && v.querySelector("iframe") && (v._state === 1 || v._state === 3 || v._state === -1)) {
+          ytCommand(v, "pauseVideo");                         // a video the viewer paused stays paused
+          v._autoPaused = true;
         }
       });
     }, { threshold: [0, 0.5] });
-    autoVideos.forEach(function (v) { vio.observe(v); });
+    videos.forEach(function (v) { vio.observe(v); });
   }
 
   /* ---------- "Request a quote" buttons pre-select the machine ---------- */
