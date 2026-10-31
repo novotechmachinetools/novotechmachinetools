@@ -355,7 +355,7 @@ PB_FAMILIES = [
          videos=vids(("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake — the same 5 ft frame class"), ("5FWxGB6hoJI", "XL series hydraulic CNC press brakes"),
                      ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
          specs=spec([T_XL_1560], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="dn-xh", control=CTL_XL, group="pb-hybrid", page=P_PB, brand=BRAND,
+    dict(id="dn-xh", group="pb-hybrid", page=P_PB, brand=BRAND,   # no control box on the XH (the owner, Oct 31 2026)
          name="XH full hybrid press brakes — Dener's hybrid series",
          short="XH full hybrid press brakes",
          models_label="XH full hybrid series",
@@ -404,6 +404,7 @@ PB_FAMILIES = [
                      ("nlCZhY7olZ8", "DDS 4013 — 100 % electric ball-screw press brake")),
          specs=spec([T_DDS], PB_GK, PB_G_FROM, NOTE_DDS)),
 ]
+PB_FAMILIES = [f for f in PB_FAMILIES if f["id"] != "dn-xh"]   # the XH full hybrid is off the site (the owner, Oct 31 2026)
 
 # ------------------------------------------------------------------------------------------------ shears
 # DAS: (model, length, ms, ss, al, angle, holddowns, kW, cuts/min, oil, L, throat, W no support, W, H, kg)

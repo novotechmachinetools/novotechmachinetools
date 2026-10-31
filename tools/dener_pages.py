@@ -68,7 +68,7 @@ PAGE_PB = dict(
     points=["XL hydraulic: 18 models, 66 – 661 US tons × 5 – 20 ft; tandem to 60 ft and 1,800 tons",
             "XH hybrid: servo pump on the XL frame — 42 – 58 % less energy, faster approach and return",
             "DDM servo-electric 44 – 220 tons and DDS ball-screw 22 / 44 tons — no hydraulic oil"],
-    hero="dn-xl-1", minis=["dn-ddm-2", "dn-xh-1"],
+    hero="dn-xl-1", minis=["dn-ddm-2", "dn-xl-3"],   # the XH is off the site
     groups=[("pb-hydraulic", "XL hydraulic CNC press brakes", "The standard: a monoblock frame, servo-valve hydraulics and an ESA 2D control, 5 to 20 ft and 66 to 661 US tons.", BRAND),
             ("pb-hybrid", "XH hybrid press brakes", "The XL with a servo-driven pump — the same frame and cylinders, less energy, more speed, less noise.", BRAND),
             ("pb-servo", "Servo-electric and ball-screw press brakes", "No hydraulic oil: the DDM servo-electric brake for production to 220 tons and the DDS ball-screw brake for small parts.", BRAND)],
@@ -265,7 +265,7 @@ def copy_pdfs():
 
 def build():
     copy_pdfs()
-    pdf_pb = pdf(PDF_PB_FILE, "Download the hydraulic & hybrid press brake brochure")
+    pdf_pb = pdf(PDF_PB_FILE, "Download the hydraulic press brake brochure")
     pdf_servo = pdf(PDF_SERVO_FILE, "Download the servo-electric press brake brochure")
     pdf_laser = pdf(PDF_LASER_FILE, "Download the fiber laser brochure")
     pdf_tube = pdf(PDF_TUBE_FILE, "Download the tube laser brochure")

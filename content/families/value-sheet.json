@@ -936,6 +936,318 @@
     "kind": "table",
     "tables": [
      {
+      "title": "Heavy-duty CNC press brakes · bending force and length",
+      "sub": "21 models · 441 – 1,323 US tons (400 – 1,200 t) · 13 – 26 ft",
+      "models": [
+       "13.1 ft (4,000 mm)",
+       "16.4 ft (5,000 mm)",
+       "19.7 ft (6,000 mm)",
+       "23.0 ft (7,000 mm)",
+       "26.2 ft (8,000 mm)"
+      ],
+      "rows": [
+       {
+        "label": "441 US tons (400 t)",
+        "sub": "",
+        "cells": [
+         "✓",
+         "✓",
+         "✓",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "551 US tons (500 t)",
+        "sub": "",
+        "cells": [
+         "✓",
+         "✓",
+         "✓",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "661 US tons (600 t)",
+        "sub": "",
+        "cells": [
+         "✓",
+         "✓",
+         "✓",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "882 US tons (800 t)",
+        "sub": "",
+        "cells": [
+         "✓",
+         "✓",
+         "✓",
+         "—",
+         "✓"
+        ],
+        "key": false
+       },
+       {
+        "label": "1,102 US tons (1,000 t)",
+        "sub": "",
+        "cells": [
+         "—",
+         "✓",
+         "✓",
+         "✓",
+         "✓"
+        ],
+        "key": false
+       },
+       {
+        "label": "1,323 US tons (1,200 t)",
+        "sub": "",
+        "cells": [
+         "—",
+         "✓",
+         "✓",
+         "✓",
+         "✓"
+        ],
+        "key": false
+       }
+      ],
+      "corner": "Bending force"
+     }
+    ],
+    "models": [
+     {
+      "name": "WAD-400T/4000",
+      "glance": [
+       "441 US tons (400 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "54,675 lb (24,800 kg)"
+      ]
+     },
+     {
+      "name": "WAD-400T/5000",
+      "glance": [
+       "441 US tons (400 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "66,139 lb (30,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-400T/6000",
+      "glance": [
+       "441 US tons (400 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "78,264 lb (35,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-500T/4000",
+      "glance": [
+       "551 US tons (500 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "73,855 lb (33,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-500T/5000",
+      "glance": [
+       "551 US tons (500 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "79,807 lb (36,200 kg)"
+      ]
+     },
+     {
+      "name": "WAD-500T/6000",
+      "glance": [
+       "551 US tons (500 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "11.8″ (300 mm)",
+       "24.0″ (610 mm)",
+       "92,153 lb (41,800 kg)"
+      ]
+     },
+     {
+      "name": "WAD-600T/4000",
+      "glance": [
+       "661 US tons (600 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12.6″ (320 mm)",
+       "25.6″ (650 mm)",
+       "95,019 lb (43,100 kg)"
+      ]
+     },
+     {
+      "name": "WAD-600T/5000",
+      "glance": [
+       "661 US tons (600 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "12.6″ (320 mm)",
+       "25.6″ (650 mm)",
+       "106,483 lb (48,300 kg)"
+      ]
+     },
+     {
+      "name": "WAD-600T/6000",
+      "glance": [
+       "661 US tons (600 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "12.6″ (320 mm)",
+       "25.6″ (650 mm)",
+       "123,900 lb (56,200 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/4000",
+      "glance": [
+       "882 US tons (800 t)",
+       "13.1 ft · 157.5″ (4,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "125,663 lb (57,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/5000",
+      "glance": [
+       "882 US tons (800 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "145,505 lb (66,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/6000",
+      "glance": [
+       "882 US tons (800 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "163,142 lb (74,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-800T/8000",
+      "glance": [
+       "882 US tons (800 t)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "12.6″ (320 mm)",
+       "31.5″ (800 mm)",
+       "192,904 lb (87,500 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/5000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "171,960 lb (78,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/6000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "194,007 lb (88,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/7000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "23 ft · 275.6″ (7,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "211,644 lb (96,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1000T/8000",
+      "glance": [
+       "1,102 US tons (1000 t)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "233,690 lb (106,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/5000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "16.4 ft · 196.9″ (5,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "213,848 lb (97,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/6000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "19.7 ft · 236.2″ (6,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "233,690 lb (106,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/7000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "23 ft · 275.6″ (7,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "249,122 lb (113,000 kg)"
+      ]
+     },
+     {
+      "name": "WAD-1200T/8000",
+      "glance": [
+       "1,323 US tons (1200 t)",
+       "26.2 ft · 315.0″ (8,000 mm)",
+       "15.7″ (400 mm)",
+       "36.2″ (920 mm)",
+       "271,168 lb (123,000 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_force",
+     "bending_length",
+     "stroke",
+     "daylight",
+     "weight"
+    ],
+    "caps": {},
+    "note": "✓ = a model we build. The full specifications of every model — speeds, stroke, throat, daylight, back gauge, motors, dimensions and weights — are in the hydraulic press brake brochure."
+   },
+   "brochure_specs": {
+    "kind": "table",
+    "tables": [
+     {
       "title": "Heavy-duty CNC press brakes · 400 – 600 t",
       "sub": "9 models · 441 – 661 US tons · 13 – 20 ft",
       "models": [
@@ -1745,7 +2057,6 @@
    "models_label": "WC67K-30t/1600 – WC67K/E-400T/6000 · 34 models",
    "summary": "The simplest press brake we sell: a torsion bar keeps the two ram cylinders in step mechanically, mechanical stops set the depth and an Estun E21PS control positions the back gauge and the ram for 40 stored programs. No servo valves, no linear scales — nothing that needs a technician — which is why these machines run for decades in general fabrication shops bending brackets, boxes, channels, roofing and plate. Thirty-four models on one design, from 33 tons × 5 ft to 441 tons × 20 ft: the 100 t × 10 ft and 125 t × 13 ft are the standard sizes, and from 160 t up the machines have 13.8 – 15.7″ throats, 7.9 – 9.8″ strokes, 18.9 – 22.8″ daylight, 20 – 50 cc pumps and 11 – 22 kW motors for 3/8″ and 1/2″ plate in simple shapes.",
    "features": [
-    "Mild steel to 1/4″ over 10 ft on the 100 t, 5/16″ over 10 ft on the 125 t, 3/8″ over 10 ft on the 200 t, 1/2″ over 13 ft on the 300 t and 1/2″ over 20 ft on the 400 t (V = 8 × thickness)",
     "Estun E21PS NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, one-way / two-way positioning, stroke counter; inches or millimetres",
     "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
     "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",

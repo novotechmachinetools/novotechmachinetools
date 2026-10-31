@@ -124,6 +124,22 @@ T_WAD = table("CNC hydraulic press brakes · 50 – 300 t", "25 models · 55 –
 T_WAD_H1 = table("Heavy-duty CNC press brakes · 400 – 600 t", "9 models · 441 – 661 US tons · 13 – 20 ft", [r[0] for r in WAD_H1], pb_rows(WAD_H1))
 T_WAD_H2 = table("Heavy-duty CNC press brakes · 800 – 1,200 t", "12 models · 882 – 1,323 US tons · 13 – 26 ft · twin pumps", [r[0] for r in WAD_H2], pb_rows(WAD_H2))
 
+def avail_matrix(data, title, sub):
+    """Bending force × bending length, a check where a model exists — the short table the site shows for a long range (the full
+    tables stay in the brochure)."""
+    lengths = sorted({r[2] for r in data}); forces = sorted({r[1] for r in data}); have = {(r[1], r[2]) for r in data}
+    cols = [f"{L / 304.8:.1f} ft ({L:,} mm)" for L in lengths]
+    t = table(title, sub, cols, [(f"{round(F / 10 * 1.10231):,} US tons ({F // 10:,} t)", ["✓" if (F, L) in have else "—" for L in lengths])
+                                 for F in forces])
+    t["corner"] = "Bending force"
+    return t
+
+
+T_WAD_H_SUM = avail_matrix(WAD_H, "Heavy-duty CNC press brakes · bending force and length",
+                           "21 models · 441 – 1,323 US tons (400 – 1,200 t) · 13 – 26 ft")
+NOTE_PB_SUM = ("✓ = a model we build. The full specifications of every model — speeds, stroke, throat, daylight, back gauge, motors, "
+               "dimensions and weights — are in the hydraulic press brake brochure.")
+
 # NC torsion bar: (model, kN, length, oil, approach, bend, return, X stroke, X speed, columns, throat, stroke, open, kW, pump, weight t, L, W, H)
 NC = [("WC67K-30t/1600", 300, 1600, 80, 120, 17, 160, 600, 150, 1300, 200, 80, 335, 5.5, 11, 2.1, 1800, 1200, 1700),
       ("WC67K/E-30t/2000", 300, 2000, 100, 140, 17, 160, 600, 150, 1600, 200, 80, 335, 5.5, 11, 2.3, 2200, 1200, 1700),
@@ -609,7 +625,9 @@ HPB_FAMILIES = [
          optional=PB_OPT + ["Extra-long front supports and CNC sheet followers for plate", "Tandem and tridem machines to 60 ft on one control"],
          images=["vl-wad-heavy", "vl-wad-follower", "vl-wad-tandem", "vl-wad-tandem-2"],
          videos=[],
-         specs=spec([T_WAD_H1, T_WAD_H2], PB_GK, PB_G_FROM, NOTE_PB)),
+         # the site shows only the force × length matrix; the brochure keeps both full tables (the owner, Oct 31 2026)
+         specs=dict(spec([T_WAD_H1, T_WAD_H2], PB_GK, PB_G_FROM, NOTE_PB_SUM), tables=[T_WAD_H_SUM]),
+         brochure_specs=spec([T_WAD_H1, T_WAD_H2], PB_GK, PB_G_FROM, NOTE_PB)),
     dict(id="vl-nc", control=CTL_NC, group="pb-nc", page=P_HPB, brand=BRAND,
          name="NC hydraulic press brakes, 33 – 441 US tons × 5 – 20 ft — torsion bar",
          short="NC press brakes 30 – 400 t",
@@ -620,8 +638,7 @@ HPB_FAMILIES = [
                  "channels, roofing and plate. Thirty-four models on one design, from 33 tons × 5 ft to 441 tons × 20 ft: the 100 t × 10 ft and "
                  "125 t × 13 ft are the standard sizes, and from 160 t up the machines have 13.8 – 15.7″ throats, 7.9 – 9.8″ strokes, 18.9 – 22.8″ "
                  "daylight, 20 – 50 cc pumps and 11 – 22 kW motors for 3/8″ and 1/2″ plate in simple shapes.",
-         features=["Mild steel to 1/4″ over 10 ft on the 100 t, 5/16″ over 10 ft on the 125 t, 3/8″ over 10 ft on the 200 t, 1/2″ over 13 ft on the 300 t "
-                   "and 1/2″ over 20 ft on the 400 t (V = 8 × thickness)"] + NC_STD,
+         features=list(NC_STD),      # the capacity line is off the NC list (the owner, Oct 31 2026)
          optional=NC_OPT,
          images=["vl-nc-1", "vl-nc-backgauge", "vl-nc-torsion", "vl-nc-bg-motor", "vl-nc-photo-1", "vl-nc-photo-2", "vl-nc-photo-3"],
          videos=vids(("0imM4bArpBc", "5 ft × 50 ton hydraulic press brake with Estun NC control")),

@@ -79,7 +79,7 @@ def layout(families, no_inline, budgets=None):
     """A short first table goes on the family page itself unless the page overflowed on the previous pass; a family whose
     specification page ran into the footer gets a smaller per-page budget (budgets[fid]) and is paginated again."""
     for f in families:
-        tables = list(f["specs"]["tables"])
+        tables = list((f.get("brochure_specs") or f["specs"])["tables"])      # brochure_specs: the site shows a shorter table
         f["inline_table"] = None
         if tables and f["id"] not in no_inline and table_weight(tables[0]) <= 20:
             f["inline_table"] = tables.pop(0)
@@ -102,6 +102,8 @@ def render(spec, no_inline, budgets=None, tight=None):
     families = []
     for fid in spec["families"]:
         f = dict(fams_all[fid])
+        if f.get("brochure_specs"):
+            f["specs"] = f["brochure_specs"]
         f["hero"] = img(f["images"][0]) if f["images"] else None
         f["minis"] = [img(k) for k in f["images"][1:3]]
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]

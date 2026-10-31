@@ -34,14 +34,13 @@ OIL_FAQ = {"q": "Is the hydraulic oil included?", "a": "No — the hydraulic oil
 
 HYDRAULIC = dict(
     title="Hydraulic Press Brakes for Sale in Canada — CNC, Hybrid & NC, 33–1,323 Tons | NovoTech",
-    meta="Hydraulic press brakes sold, installed and supported in Canada: CNC brakes 55 – 1,323 US tons, the mild hybrid XL and the XH full hybrid, and NC torsion-bar brakes from 33 tons — premium and value lines, CSA panels, Delem and ESA controls.",
+    meta="Hydraulic press brakes sold, installed and supported in Canada: CNC brakes 55 – 1,323 US tons, the mild hybrid XL, and NC torsion-bar brakes from 33 tons — premium and value lines, CSA panels, Delem and ESA controls.",
     h1="Hydraulic press brakes — CNC, hybrid and NC, 33 to 1,323 US tons",
     intro="A hydraulic press brake bends sheet and plate between a punch and a V-die with two hydraulic cylinders, giving full force over the whole "
           "stroke at the lowest price per ton — the machine for plate, long parts and production. NovoTech sells three kinds in Canada, all on this "
           "page: CNC hydraulic press brakes with linear scales, servo valves, crowning and a graphic control — the premium Dener XL in 18 models "
           "from 66 to 661 US tons and 5 to 20 ft, and NovoTech's own value line from 55 to 331 tons, heavy-duty and tandem to 1,323 tons and 26 ft; "
-          "hybrid press brakes — the mild hybrid servo motor and pump, an option on every XL that cuts energy by 42 – 58 %, and Dener's XH full "
-          "hybrid; and NC torsion-bar press brakes from 33 to 441 tons for "
+          "hybrid press brakes — the mild hybrid servo motor and pump, an option on every XL that cuts energy by 42 – 58 %; and NC torsion-bar press brakes from 33 to 441 tons for "
           "repeat parts in one material. Every machine comes with a CSA-approved panel and a 1-year warranty, and is "
           "installed, trained and supported from Mississauga, ON, Canada. For a brake with no hydraulic oil see the electric press brakes; for "
           "33 – 66 ton machines over 4 – 5 ft, the compact press brakes.",
@@ -49,20 +48,21 @@ HYDRAULIC = dict(
     points=['CNC hydraulic: <a href="#dn-xl">premium line 66 – 661 US tons × 5 – 20 ft</a> (ESA / Delem, 6-axis gauges); '
             '<a href="#vl-wad">value line 55 – 331 tons</a>, <a href="#vl-wad-heavy">heavy-duty to 1,323 tons × 26 ft</a>',
             'Hybrid: the <a href="#dn-xl">mild hybrid servo pump on any XL</a> — 42 – 58 % less energy, 17 – 75 % faster approach and return, '
-            'quieter — and the <a href="#dn-xh">XH full hybrid</a>',
+            'quieter — and standard on every <a href="#vl-wad">value-line WAD</a>',
             '<a href="#vl-nc">NC torsion-bar 33 – 441 tons</a> with Estun control for repeat parts in one material — the simplest hydraulic brake to run and maintain'],
     hero="dn-xl-1", minis=["vl-wad-1", "vl-nc-1"],
     groups=[("pb-premium", "CNC hydraulic press brakes · premium line", "", "dener"),   # no lead line (the owner, Oct 31 2026)
             ("pb-value", "CNC hydraulic press brakes · value line", "", "novotech"),   # no lead line (the owner, Oct 31 2026)
-            ("pb-hybrid", "Full hybrid press brakes · premium line", "", "dener"),   # no lead line (the owner, Oct 31 2026)
-            ("pb-nc", "NC hydraulic press brakes — torsion bar · value line", "", "novotech")],   # no lead line (the owner, Oct 31 2026)
+            ("pb-nc", "NC hydraulic press brakes — torsion bar · value line", "", "novotech"),   # no lead line (the owner, Oct 31 2026)
+            # the heavy-duty and tandem machines are the last product on the page (the owner, Oct 31 2026)
+            ("pb-heavy", "Heavy-duty and tandem CNC press brakes · value line", "", "novotech")],
     faq=[{"q": "CNC, hybrid or NC — which hydraulic press brake do I need?",
           "a": "A CNC brake measures the ram on linear scales and corrects it through servo valves, calculates the bend from the drawing, crowns the bed and changes material in the program — the machine for mixed work, tight angles and multi-bend parts, and the one most Canadian shops buy. The hybrid is a CNC brake with a servo pump: it costs a little more and pays it back in power, speed and noise when the brake runs all day. An NC brake positions the back gauge and the ram depth from a stored program with the cylinders kept in step by a torsion bar — rigid, cheap to maintain, right for the same parts in one material every day. For 4 – 7 ft work in sheet up to 8 ga, where a 100-ton machine is more than you need, see the compact press brakes."},
          {"q": "Premium line or value line?",
-          "a": "The premium Dener XL and XH are built in Turkey on the heaviest frame, with ESA or Delem controls, back gauges to 6 axes, sheet followers, robot cells and parts stocked in Canada — the machines for plate, 3/8″ and 1/2″ over 10 to 20 ft, two shifts, a long options list. NovoTech's value line is the same architecture — monoblock frame, servo valves, linear scales, Delem control — built in China to our specification at about two-thirds of the price: the right buy for a job shop that needs a 100 – 300 ton CNC brake or an NC brake for repeat parts, and the only line that goes to 1,323 tons and 26 ft. Both are installed and supported by the same NovoTech technicians."},
+          "a": "The premium Dener XL is built in Turkey on the heaviest frame, with ESA or Delem controls, back gauges to 6 axes, sheet followers, robot cells and parts stocked in Canada — the machines for plate, 3/8″ and 1/2″ over 10 to 20 ft, two shifts, a long options list. NovoTech's value line is the same architecture — monoblock frame, servo valves, linear scales, Delem control — built in China to our specification at about two-thirds of the price: the right buy for a job shop that needs a 100 – 300 ton CNC brake or an NC brake for repeat parts, and the only line that goes to 1,323 tons and 26 ft. Both are installed and supported by the same NovoTech technicians."},
          TONNAGE_FAQ,
          {"q": "What is a hybrid press brake?",
-          "a": "On a conventional hydraulic brake the motor and pump run at full speed all day, whether the ram moves or not. A hybrid drives the hydraulics with servo motors, so the pump turns only while the ram moves, at the speed the ram needs. Dener builds it two ways. The mild hybrid, an option on every XL, keeps the XL's hydraulic circuit and replaces only the AC motor and fixed pump with a servo motor and servo pump: Dener measures 42 – 58 % energy saving and 17 – 75 % faster approach and return against the standard XL, with less heat in the oil and a quieter shop, and everything else — frame, cylinders, valves, tooling, controls — is the XL. The XH is the full hybrid, a series designed around its servo-driven hydraulics. On NovoTech's value line, every WAD CNC brake has the mild hybrid drive as standard."},
+          "a": "On a conventional hydraulic brake the motor and pump run at full speed all day, whether the ram moves or not. A hybrid drives the hydraulics with servo motors, so the pump turns only while the ram moves, at the speed the ram needs. Dener builds it two ways. The mild hybrid, an option on every XL, keeps the XL's hydraulic circuit and replaces only the AC motor and fixed pump with a servo motor and servo pump: Dener measures 42 – 58 % energy saving and 17 – 75 % faster approach and return against the standard XL, with less heat in the oil and a quieter shop, and everything else — frame, cylinders, valves, tooling, controls — is the XL. On NovoTech's value line, every WAD CNC brake has the mild hybrid drive as standard."},
          {"q": "Which control comes with the machine?",
           "a": "The premium XL comes with the 15.6″ ESA S840 2D graphic touch-screen control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning and checks the part for collisions with the tools and the machine. The value-line CNC brakes come with the 15″ Delem DA-53Tx — the 18.5″ DA-58Tx (2D graphic), the 24″ DA-66S and DA-69S, the ESA S840 and S875 W and the Cybelec CybTouch 12 are options; the NC brakes with the Estun E21PS (E315PS, Delem DA-41T or ESA S630 as options). All program in inches or millimetres, and the buying guide on the press brake page compares every one of them."},
          {"q": "What back gauge and axes are available?",

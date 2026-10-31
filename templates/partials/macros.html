@@ -105,7 +105,7 @@
       <caption>{{ t.title }}{% if t.sub %} <small>{{ t.sub }}</small>{% endif %}</caption>
       <thead>
         <tr>
-          <th scope="col" class="label-col">Model</th>
+          <th scope="col" class="label-col">{{ t.corner or 'Model' }}</th>
           {% for m in t.models %}<th scope="col">{{ m }}</th>{% endfor %}
         </tr>
       </thead>

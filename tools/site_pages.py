@@ -122,7 +122,7 @@ BRANDS = [
 
 # PDFs on the brochures page, in the order shown, under the catalog groups: file → title
 BROCHURES = [
-    ("bending", "NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf", "Dener hydraulic and hybrid CNC press brakes"),
+    ("bending", "NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf", "Dener hydraulic CNC press brakes"),
     ("bending", "NovoTech-Dener-Servo-Press-Brakes-2026.pdf", "Dener servo-electric press brakes"),
     ("bending", "NovoTech-Hydraulic-Press-Brakes-2026.pdf", "NovoTech value-line hydraulic press brakes"),
     ("bending", "NovoTech-Electric-Press-Brakes-2026.pdf", "NovoTech value-line electric press brakes"),
