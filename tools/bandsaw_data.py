@@ -33,10 +33,31 @@ def site_rec(model):
             return site_by_name[cand]
     return None, None
 
+# Bekamak's website option labels, as typed there (typos, Turkish words, metres only, Title Case) → the site's wording,
+# imperial first (found while comparing the Polish dealer's pages, Oct 31 2026)
+OPT_LABEL = {
+    "3 Mt Material Roller Table": "10 ft (3 m) material roller table", "3 Mt Roller Table": "10 ft (3 m) material roller table",
+    "3 Mt. Roller Table": "10 ft (3 m) material roller table", "3 Mt Motorized Material Roller Table": "10 ft (3 m) motorized roller table",
+    "3 Mt Motorized Roller Table": "10 ft (3 m) motorized roller table", "4 Mt Motorized Roller Table": "13 ft (4 m) motorized roller table",
+    "45° / 60° 1,2 Mt Metarial Roller Table": "4 ft (1.2 m) roller table for 45° and 60° miter cuts",
+    "15 Kw Main Drive Motor": "15 kW (20 HP) main drive motor", "Optional Main Derive Motor 15 kW": "15 kW (20 HP) main drive motor",
+    "Chip Conveyor": "Chip conveyor", "Chip Conveyor Motor": "Motorized chip conveyor", "Chip Conveyor Motoru": "Motorized chip conveyor",
+    "Palet Type Chip Conveyor": "Pallet-type chip conveyor", "Pallet Type Chip Conveyor": "Pallet-type chip conveyor",
+    "Cutting Speed Display": "Blade speed display", "Deflection Control": "Blade deflection control", "Feeder Servo Motor": "Servo motor on the feeder",
+    "Height Adjustable Control Panel": "Height-adjustable control panel", "Hexagonal Vices": "Hexagonal vise jaws", "Hexagonal Vise": "Hexagonal vise jaws",
+    "High Vice": "High vise jaws", "Hydraulic Blade Tension": "Hydraulic blade tension", "Hydraulic Top Clamping": "Hydraulic top clamp",
+    "Hydraulic Vise": "Hydraulic vise", "Inverter": "Inverter for stepless blade speed", "Laser Line Pointer": "Laser line pointer",
+    "Lazer Line Pointer": "Laser line pointer", "Micro Spray": "Micro-spray lubrication", "Microspray Coolant": "Micro-spray lubrication",
+    "Microspray Device": "Micro-spray lubrication", "Microsprey Device": "Micro-spray lubrication", "Mikcrospray Device": "Micro-spray lubrication",
+    "Mikrosprey Device": "Micro-spray lubrication", "Multiple Segments": "Multi-segment vise jaws", "Second Vice": "Second vise",
+    "Split Vice": "Split vise jaws", "Tilt Adjustment Lever": "Tilt adjustment lever", "Turn Table": "Turntable",
+}
+
+
 def dedupe(items):
     out = []
     for i in items:
-        i = i.strip()
+        i = OPT_LABEL.get(i.strip(), i.strip())
         if i and i not in out:
             out.append(i)
     return out
