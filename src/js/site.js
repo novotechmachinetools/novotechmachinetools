@@ -145,6 +145,12 @@
   }
 
   /* ---------- jump nav: highlight the section in view ---------- */
+  // the kinds-of-machine row scrolls sideways on phones: bring the current kind into view so its arrow meets the family bar
+  var secNav = d.querySelector(".section-nav-row .section-nav");
+  var secCur = secNav && secNav.querySelector("a[aria-current='page']");
+  if (secCur && secNav.scrollWidth > secNav.clientWidth + 2) {
+    secNav.scrollLeft = Math.max(0, secCur.offsetLeft - (secNav.clientWidth - secCur.offsetWidth) / 2);
+  }
   var jumpLinks = Array.prototype.slice.call(d.querySelectorAll(".jump-list a[href^='#']"));
   if (jumpLinks.length && "IntersectionObserver" in window) {
     var byId = {};

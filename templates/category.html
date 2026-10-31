@@ -3,7 +3,7 @@
 
 {% block content %}
 {% set hero = img(page.hero_image) %}
-<section class="hero">
+<section class="hero{{ ' has-section-nav' if page.section else '' }}">
   <div class="wrap hero-grid{{ ' has-large-hero' if page.hero_large else '' }}">
     <div class="hero-copy">
       <nav class="crumbs" aria-label="Breadcrumb">
@@ -29,14 +29,6 @@
       {% if page.brand %}<p class="hero-brand">Manufactured by {{ page.brand.name }}, {{ page.brand.country }} — rebar machinery since {{ page.brand.since }}. Sold, installed and supported in Canada by NovoTech.</p>
       {% elif page.hero_brand_line %}<p class="hero-brand">{{ page.hero_brand_line }}</p>{% endif %}
       <p class="hero-updated">Specifications checked against the manufacturer's current catalogue · page updated <time datetime="{{ page.date_modified }}">{{ page.updated_label }}</time></p>
-      {% if page.section %}
-      <nav class="section-nav" aria-label="{{ page.section.label }} pages">
-        <span class="section-nav-label">{{ page.section.label }}:</span>
-        {% for s in page.section.pages %}<a href="{{ s.href }}"{% if s.current %} aria-current="page"{% endif %}>{{ s.label }}</a>{% endfor %}
-        <a href="{{ page.section.hub.href }}" class="section-nav-hub">{{ page.section.hub.label }}</a>
-        {% if page.section.alt %}<a href="{{ page.section.alt.href }}" class="section-nav-alt line-{{ page.section.alt.brand }}">{{ page.section.alt.line_label }} {{ page.section.alt.label|lower }} saws →</a>{% endif %}
-      </nav>
-      {% endif %}
     </div>
     {% set hl = page.hero_links or {} %}
     <div class="hero-art{{ ' is-large' if page.hero_large else '' }}">
@@ -49,11 +41,24 @@
       {% endif %}
     </div>
   </div>
+  {% if page.section %}
+  {# the kinds of machine in this section; the current one points down into the dark bar of its families below (the owner, Oct 31 2026) #}
+  <div class="wrap section-nav-row">
+    <nav class="section-nav" aria-label="{{ page.section.label }} pages">
+      <span class="section-nav-label">{{ page.section.label }}:</span>
+      {% for s in page.section.pages %}<a href="{{ s.href }}"{% if s.current %} aria-current="page"{% endif %}>{{ s.label }}</a>{% endfor %}
+      <a href="{{ page.section.hub.href }}" class="section-nav-hub">{{ page.section.hub.label }}</a>
+      {% if page.section.alt %}<a href="{{ page.section.alt.href }}" class="section-nav-alt line-{{ page.section.alt.brand }}">{{ page.section.alt.line_label }} {{ page.section.alt.label|lower }} saws →</a>{% endif %}
+    </nav>
+  </div>
+  {% endif %}
 </section>
 
-<nav class="jump" aria-label="On this page">
+{% set sec_cur = (page.section.pages | selectattr('current') | list | first) if page.section else none %}
+<nav class="jump{{ ' has-parent' if sec_cur else '' }}" aria-label="On this page">
   <div class="wrap">
     <ul class="jump-list">
+      {% if sec_cur %}{% set sl = page.section.label|lower %}{% set cl = sec_cur.label %}{% set short = cl[:cl|length - sl|length].rstrip() if (cl|lower).endswith(' ' ~ sl) else '' %}<li class="jump-parent"><span class="jump-parent-name">{% if short %}{{ short }}<span class="jump-parent-rest"> {{ cl[short|length:].strip() }}</span>{% else %}{{ cl }}{% endif %}</span><svg class="jump-parent-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>{% endif %}
       {% for j in page.jump_links %}<li><a href="{{ j.href }}">{{ j.label }}</a></li>{% endfor %}
     </ul>
   </div>

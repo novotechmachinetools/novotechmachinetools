@@ -476,6 +476,18 @@ small { font-size: .85em; }
 .card-line.line-novotech { color: var(--orange-ink); border-color: var(--orange); }
 /* ---------- section switcher: benders / cutters / automatic lines ---------- */
 .section-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+/* the section's kinds of machine sit at the foot of the hero, right on the dark bar of the page's families: the current kind
+   points down into the bar, and the bar opens with its name — the families read as its branches (the owner, Oct 31 2026) */
+.hero.has-section-nav { border-bottom: 0; }
+.hero.has-section-nav .hero-grid { padding-bottom: 20px; }
+.section-nav-row .section-nav { position: relative; margin-top: 0; padding: 13px 0 25px; }
+.section-nav a[aria-current="page"] { position: relative; }
+.section-nav-row .section-nav a[aria-current="page"]::before { content: ""; position: absolute; left: 50%; top: 100%; width: 2px; height: 14px; margin-left: -1px; background: var(--orange); }
+.section-nav-row .section-nav a[aria-current="page"]::after { content: ""; position: absolute; left: 50%; top: calc(100% + 13px); margin-left: -7px; border-style: solid; border-width: 9px 7px 0; border-color: var(--orange) transparent transparent; }
+.jump-list .jump-parent { display: flex; align-items: center; gap: 4px; padding: 10px 6px 8px 0; margin-right: 6px; font-family: var(--cond); font-weight: 700; font-size: 17px; color: var(--orange); white-space: nowrap; }
+.jump-parent-arrow { color: rgba(255, 255, 255, .6); flex: none; }
+.jump.has-parent .jump-list a { padding-left: 7px; padding-right: 7px; font-size: 16px; }   /* room for the kind's name */
+@media (max-width: 1500px) { .jump-parent-rest { display: none; } }   /* "Hydraulic ›" — the section's noun is in every family name */
 .section-nav-label { font-family: var(--cond); font-weight: 600; font-size: 15px; letter-spacing: .02em; text-transform: uppercase; color: var(--steel); margin-right: 2px; }
 .section-nav a { display: inline-block; padding: 7px 13px; border: 1px solid var(--line); border-radius: 999px; font-weight: 600; font-size: 14.5px; color: var(--charcoal); background: var(--white); text-decoration: none; line-height: 1.2; }
 .section-nav a:hover, .section-nav a:focus-visible { border-color: var(--orange); color: var(--orange); }
@@ -579,6 +591,12 @@ small { font-size: .85em; }
   .hero-band { inset: 10% -20% 6% 20%; }
   .hero-minis { display: none; }
   .jump-list { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+  /* phones: the kinds of machine on one line that scrolls sideways (site.js brings the current one into view), so its arrow
+     drops straight into the bar; the bar keeps the kind's name pinned at its left while the families scroll */
+  .section-nav-row .section-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .section-nav-row .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav-row .section-nav > * { flex: none; }
+  .jump-list .jump-parent { position: sticky; left: 0; z-index: 1; background: var(--charcoal); font-size: 15.5px; padding-right: 8px; box-shadow: 10px 0 10px -6px var(--charcoal); }
   .family-grid, .videos-grid, .quote-grid, .agents-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
   .subpage-grid, .line-block .subpage-grid, .subpage-grid.is-4 { grid-template-columns: 1fr 1fr; }
   .family-cards { grid-template-columns: 1fr 1fr; }
