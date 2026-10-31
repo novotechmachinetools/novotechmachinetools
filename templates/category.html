@@ -113,7 +113,9 @@
     <div class="family-grid">
       <div class="family-media">
         {{ gallery(f.gallery, f.id) }}
-        {% if f.videos %}
+      </div>
+      {% if f.videos %}
+      <div class="family-vids">
         {% set nv = f.videos|length %}
         {% if nv > 3 %}
         <div class="vid-carousel" id="{{ f.id }}-video" role="region" aria-roledescription="carousel" aria-label="{{ f.short or f.name }} videos ({{ nv }})">
@@ -129,8 +131,8 @@
           {% for v in f.videos %}{{ video(v) }}{% endfor %}
         </div>
         {% endif %}
-        {% endif %}
       </div>
+      {% endif %}
       <div class="family-text">
         <p class="summary">{{ f.summary }}</p>
         <ul class="features">
