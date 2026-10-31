@@ -87,9 +87,18 @@ def spec(tables, gk, g_from, note):
     return {"kind": "table", "tables": tables, "models": models, "glance_keys": gk, "caps": {}, "note": note}
 
 
+# Shorts are not on the channel's Videos tab (tools/novotech-youtube-videos.tsv): their lengths here, their publish dates in
+# tools/video_dates.json (build.py places them by date)
+SHORTS = {"xv_iM-ZcEWw": "0:42", "rjqRtcExlmU": "0:44"}
+
+
 def vids(*ids_titles):
-    from sahinler_lib import vids as _vids      # NovoTech's own channel: id → video dict with thumb
-    return _vids(*ids_titles)
+    from sahinler_lib import vids as _vids, vid, yt_dur      # NovoTech's own channel: id → video dict with thumb
+    out = []
+    for it in ids_titles:
+        i = it if isinstance(it, str) else it[0]
+        out += [vid(i, it[1], yt_dur(SHORTS[i]))] if i in SHORTS else _vids(it)
+    return out
 
 
 # ------------------------------------------------------------------------------------------------ press brakes
@@ -403,9 +412,11 @@ PB_FAMILIES = [
                  "dn-det-front-support-single", "dn-det-cabinet-cooling",
                  "dn-det-crowning-motor"],
          videos=vids(("_Aqyyfk97KI", "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake"), ("dlmcihzfRuI", "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake"),
-                     ("ZujRJUhckG4", "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake"), ("da7UnOripzc", "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake"),
-                     ("30squAhhy_o", "CNC hydraulic press brake vs. servo-electric press brake"), ("qLRQDobmnXQ", "DENER DDM servo-electric press brake robot cell"),
-                     ("2_Vz-v-rFqU", "DDM electric press brake with Wila hydraulic clamping"), ("IGgudJFrO-I", "DDM electric press brake bending demonstration")),
+                     ("ZujRJUhckG4", "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake"), ("qLRQDobmnXQ", "DENER DDM servo-electric press brake robot cell"),
+                     ("xv_iM-ZcEWw", "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake with the ESA 3D control and a 4-axis back gauge"),
+                     ("rjqRtcExlmU", "DENER DDM 4015 — 5 ft × 40 ton servo-electric press brake on its way to a shop in Canada"),
+                     ("7CzWdd1uY9w", "DENER DDM — 10 ft × 100 ton servo-electric press brake"),
+                     ("30squAhhy_o", "CNC hydraulic press brake vs. servo-electric press brake")),
          specs=spec([T_DDM], PB_GK, PB_G_FROM, NOTE_DDM)),
     dict(id="dn-dds", control=CTL_DDS, show_optional=True, group="pb-servo", page=P_PB, brand=BRAND,
          name="DDS ball-screw electric press brakes, 22 and 44 US tons × 3 – 4.3 ft",

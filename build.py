@@ -637,15 +637,15 @@ def video_tier(v):
 
 
 def sort_videos(f):
-    """Every family shows its most relevant and newest video first (owner, Oct 30 2026): videos of the machine before
-    general ones (how-tos, instructions, factory tours, comparisons), each group newest first (channel upload order)."""
+    """Every family lists its videos by upload date, newest first (the owner, Oct 31 2026 - he had asked for upload order
+    before; the Oct 30 rule that put the machine's own clips ahead of newer how-tos and comparisons is gone)."""
     vs = f.get("videos") or []
     # "_first" in content/videos.json: videos the owner wants at the front of a family, in his order (the XL, Oct 30 2026);
-    # the rest follow by relevance, then newest first
+    # the rest follow newest first (the channel's upload order; Shorts placed by their publish date)
     first = {vid: i for i, vid in enumerate((VIDEO_MAP.get("_first") or {}).get(f["id"]) or [])}
     if len(vs) > 1:
         f["videos"] = sorted(vs, key=lambda v: (0, first[v["id"]]) if v["id"] in first
-                             else (1, video_tier(v), YT_ORDER.get(v["id"], 1e9)))[:MAX_VIDEOS]
+                             else (1, YT_ORDER.get(v["id"], 1e9)))[:MAX_VIDEOS]
 
 
 MAX_VIDEOS = 10        # per product (owner, Oct 30 2026): three in view on desktop, the rest in the carousel

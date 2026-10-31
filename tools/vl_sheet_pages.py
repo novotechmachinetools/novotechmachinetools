@@ -143,7 +143,7 @@ PAGE_VG = dict(
     points=["Horizontal: 7 sizes, 10.5 – 20 ft × 49 – 59″, sheet 0.016″ – 5/32″, four-tool head at 295 ft/min",
             "Vertical: 4 sizes, 10.5 – 13 ft × 49 – 59″, plate to 1/4″, rear feeding, half the footprint",
             "± 0.01 mm positioning, 0.001 mm resolution; hydraulic blank holder; CNC with touchscreen"],
-    hero="vl-vg-h-1", minis=["vl-vg-v-1", "vl-vg-corner"],
+    hero="vl-vg-h-1", minis=["vl-vg-v-1", "vl-vg-trial"],
     groups=[("vg-h", "Horizontal CNC V-grooving machines", "The sheet lies flat on the table: the longest sheets, the four-tool head and the fastest grooving.", BRAND),
             ("vg-v", "Vertical CNC V-grooving machines", "The sheet stands against the beam: half the floor space, no bed sag, plate to 1/4″.", BRAND)],
     faq=[{"q": "What is V-grooving for?",
