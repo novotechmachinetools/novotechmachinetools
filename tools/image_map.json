@@ -14902,16 +14902,16 @@
   "cutout": false
  },
  "vl-vg-clamps": {
-  "src": "tools/src-images/value-sheet/vl-vg-clamps.png",
+  "src": "tools/src-images/value-sheet/vl-vg-clamps.jpg",
   "alt": "Pneumatic sheet clamps along the table",
   "section": "value-sheet",
-  "trim": true,
+  "trim": false,
   "quality": 82,
   "cutout": false
  },
  "vl-vg-corner": {
   "src": "tools/src-images/value-sheet/vl-vg-corner.jpg",
-  "alt": "Sharp outside corner bent after V-grooving",
+  "alt": "Vertical machine — the row of pneumatic clamps that hold the sheet while it is grooved",
   "section": "value-sheet",
   "trim": false,
   "quality": 82,
@@ -32595,6 +32595,54 @@
   "section": "dener-detail",
   "trim": true,
   "quality": 84,
+  "cutout": false
+ },
+ "vl-vg-front": {
+  "src": "tools/src-images/value-sheet/vl-vg-front.png",
+  "alt": "Horizontal machine — the grooving gantry runs on rails over the full-length table",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-clean": {
+  "src": "tools/src-images/value-sheet/vl-vg-clean.jpg",
+  "alt": "Blowing the chips off the table and the clamps after grooving",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-bent": {
+  "src": "tools/src-images/value-sheet/vl-vg-bent.png",
+  "alt": "Parts bent after V-grooving — boxes, channels and angles with sharp outside corners",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-v-rear": {
+  "src": "tools/src-images/value-sheet/vl-vg-v-rear.png",
+  "alt": "Vertical machine from the rear — the roller frame that carries the sheet",
+  "section": "value-sheet",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-v-groove": {
+  "src": "tools/src-images/value-sheet/vl-vg-v-groove.jpg",
+  "alt": "Vertical machine — four cutters in a row cut the groove progressively deeper in one pass",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vl-vg-v-clean": {
+  "src": "tools/src-images/value-sheet/vl-vg-v-clean.jpg",
+  "alt": "Blowing the chips out from under the clamps with an air gun",
+  "section": "value-sheet",
+  "trim": false,
+  "quality": 82,
   "cutout": false
  }
 }

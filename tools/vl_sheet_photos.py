@@ -121,7 +121,7 @@ PHOTOS = {
     "vl-q11k-controls": R("%E9%97%B8%E5%BC%8F%E5%89%AA%E6%9D%BF%E6%9C%BA-05_w1600.webp", "Estun E21S NC control and the optional Delem DAC-360T", cutout=False),
     "vl-q11k-valve": R("%E9%97%B8%E5%BC%8F%E5%89%AA%E6%9D%BF%E6%9C%BA-03_w1600.webp", "hydraulic valve block with pressure gauge", cutout=False),
     "vl-q11k-measure": R("%E9%97%B8%E5%BC%8F%E5%89%AA%E6%9D%BF%E6%9C%BA-06_w1600.webp", "Checking the cut strip — straight, burr-free edges", cutout=False),
-    "vl-q11k-feed": R("q11k-feed-opening.webp", "Feed opening with the hold-down cylinders and the roller table", cutout=False),
+    "vl-q11k-feed": R("q11k-feed-opening.webp", "Feed opening with the hold-down cylinders and the roller table", boxes=[(1365, 0, 1600, 245)], cutout=False),
     "vl-q11k-rexroth": R("01.1_w1600.webp", "Directional valve of the hydraulic system", cutout=False),
     "vl-q11k-holddown": R("01_w1600-1.webp", "Hydraulic hold-down cylinders of the guillotine shear", cutout=False),
     "vl-g-photo-1": H(SH_G + "REI00065.JPG", "Guillotine shear — rake angle cylinders behind the blade beam"),
@@ -150,8 +150,18 @@ PHOTOS = {
     "vl-vg-head": R("vg-h-four-tool.webp", "Four-tool grooving head of the horizontal machine", cutout=False),
     "vl-vg-cutters": R("vg-v-cutters.webp", "Grooving cutters of the vertical machine", cutout=False),
     "vl-vg-trial": R("GROOVE-TRIAL-%E8%AF%95%E5%8A%A0%E5%B7%A5_w1600.webp", "V-groove cut into stainless sheet before bending", cutout=False),
-    "vl-vg-clamps": R("%E5%A4%B9%E7%B4%A7_w1600.webp", "Pneumatic sheet clamps along the table", cutout=False),
-    "vl-vg-corner": R("%E5%A4%B9%E8%A7%92_w1600.webp", "Sharp outside corner bent after V-grooving", cutout=False),
+    "vl-vg-clamps": R("%E5%A4%B9%E7%B4%A7_w1600.webp", "Pneumatic sheet clamps along the table",  # the supplier logo printed on each clamp (the owner, Oct 31 2026)
+                      prints=[(941, 658, 1072, 744, "warm"), (826, 566, 921, 650, "warm"), (731, 491, 820, 570, "warm"), (579, 372, 666, 439, "warm"), (464, 282, 542, 345, "warm"),
+                              (372, 210, 445, 269, "warm"), (295, 156, 367, 214, "warm"), (192, 80, 232, 104, "warm"), (250, 124, 288, 150, "warm")], cutout=False),
+    "vl-vg-corner": R("%E5%A4%B9%E8%A7%92_w1600.webp", "Vertical machine — the row of pneumatic clamps that hold the sheet while it is grooved", cutout=False),
+    # the rest of the supplier's V-grooving pages (horizontal: 04, 清洁, 68.05; vertical: 02, 板材开槽, 清理) — the owner, Oct 31 2026
+    "vl-vg-front": R("04_w1600-12.webp", "Horizontal machine — the grooving gantry runs on rails over the full-length table", boxes=[(796, 203, 859, 227)], cutout=False),
+    "vl-vg-clean": R("%E6%B8%85%E6%B4%81_w1600.webp", "Blowing the chips off the table and the clamps after grooving",
+                     prints=[(815, 880, 857, 902, "light"), (1010, 776, 1056, 798, "light"), (1186, 686, 1230, 706, "light")], cutout=False),
+    "vl-vg-bent": R("68.05_w1600.webp", "Parts bent after V-grooving — boxes, channels and angles with sharp outside corners", cutout=False),
+    "vl-vg-v-rear": R("02_w1600-31.webp", "Vertical machine from the rear — the roller frame that carries the sheet", cutout=False),
+    "vl-vg-v-groove": R("%E6%9D%BF%E6%9D%90%E5%BC%80%E6%A7%BD_w1600.webp", "Vertical machine — four cutters in a row cut the groove progressively deeper in one pass", cutout=False),
+    "vl-vg-v-clean": R("%E6%B8%85%E7%90%86_w1600.webp", "Blowing the chips out from under the clamps with an air gun", cutout=False),
     "vl-vg-table": R("01_w1600-26.webp", "Horizontal V-grooving machine — table and gantry", cutout=False),
     "vl-vg-beam": R("03_w1600-31.webp", "Vertical machine — grooving beam and clamping bar", cutout=False),
     "vl-vg-control": R("04_w1600-13.webp", "Touchscreen CNC control of the V-grooving machine", cutout=False),
@@ -170,7 +180,7 @@ PHOTOS = {
     "vl-pbm-profiles": R("06_w1600-3.webp", "Profiles, hems and channels bent on the PB-M", cutout=False),
     "vl-pba-1": R("PB-M-16.9_w1600.webp", "NovoTech PB-A CNC panel bender with automatic tool change — tool magazine on top, 98″ bend width", boxes=[(455, 205, 545, 260)], cutout=True),
     "vl-pba-head": R("%E5%AE%9A%E8%BD%B4_w1600-1.webp", "Automatic tool changer of the PB-A placing a tool segment", cutout=False),
-    "vl-pb-robot-cell": R("%E5%9C%B0%E6%8E%A5_w1600.webp", "PB-A panel bender loaded and unloaded by two robots", boxes=[(510, 150, 605, 210)], crop=(0, 60, 1600, 1065), cutout=False),
+    "vl-pb-robot-cell": R("%E5%9C%B0%E6%8E%A5_w1600.webp", "PB-A panel bender loaded and unloaded by two robots", boxes=[(508, 86, 604, 150)], crop=(0, 60, 1600, 1065), cutout=False),  # boxes are in cropped pixels
     "vl-pb-operator": R("05_w1600-23.webp", "Operator at the tool magazine of the automatic tool-change panel bender", boxes=[(920, 170, 1080, 245)], cutout=False),
     "vl-pb-unit": R("01_w1600-32.webp", "Bending unit — upper and lower blades, blank-holder and the sheet manipulator", cutout=False),
     "vl-pb-tools": R("%E7%BB%B4%E6%8A%A4_w1600_2.webp", "Automatic tool-change magazine of the PB-A", boxes=[(1272, 652, 1352, 712)], cutout=False),  # the supplier logo on the operator's shirt (the owner, Oct 31 2026)
@@ -178,6 +188,27 @@ PHOTOS = {
     "vl-pb-frame": R("05_w1600-5.webp", "High-grade cast body of the PB-M panel bender", cutout=False),
     "vl-pb-tool-diagram": R("26-28_w1600-1.webp", "Tool-change diagram of the PB-A bending unit", cutout=False),
 }
+
+
+def print_fill(im, prints, grow=3):
+    """Small logos printed on dark anodised parts (clamp tops): inpaint only the pixels that stand out from the part itself -
+    warmer (R - B, a gold print) or lighter (a grey print) than the box median - so the slots and holes around the print keep
+    their shape.  LaMa on the whole box rebuilt them badly (the owner, Oct 31 2026)."""
+    import cv2
+    rgb = np.asarray(im.convert("RGB")).copy()
+    f = rgb.astype(np.float32)
+    warm, v = f[..., 0] - f[..., 2], f.max(axis=2)
+    mask = np.zeros(rgb.shape[:2], np.uint8)
+    for x0, y0, x1, y1, kind in prints:
+        val = (warm if kind == "warm" else v)[y0:y1, x0:x1]
+        m = (val > np.median(val) + (16 if kind == "warm" else 22)) & (v[y0:y1, x0:x1] > 30)
+        mask[y0:y1, x0:x1] = np.maximum(mask[y0:y1, x0:x1], m.astype(np.uint8) * 255)
+    mask = cv2.dilate(mask, np.ones((2 * grow + 1, 2 * grow + 1), np.uint8))
+    out = cv2.cvtColor(cv2.inpaint(cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR), mask, 4, cv2.INPAINT_TELEA), cv2.COLOR_BGR2RGB)
+    res = Image.fromarray(out)
+    if im.mode == "RGBA":
+        res.putalpha(im.getchannel("A"))
+    return res
 
 
 def white_alpha(im, tol=14):
@@ -219,6 +250,8 @@ def process(key, check_only=False):
         im.convert("RGB").save(WORK + f"check-{key}.jpg", quality=80)
         print(f"{key:20s} {im.size} alpha={has_alpha} boxes={boxes}")
         return
+    if p.get("prints"):
+        im = print_fill(im, p["prints"])
     if boxes:
         im = delogo(im, boxes)
     if p.get("white") and not has_alpha:

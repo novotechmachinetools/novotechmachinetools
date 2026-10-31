@@ -251,7 +251,7 @@ PB_STD_DDM = ["European-type segmented upper punch holder", "European-type segme
               "X-R back gauge: ball-screw X axis on two linear guides, 29.5″ (750 mm) X and 9.8″ (250 mm) R stroke, 2 manual fingers, "
               "± 0.03 mm positioning and repeatability",
               "DSP front laser finger protection", "Side and rear safety guards", "Anti-panic foot pedal with emergency stop",
-              "Electrical cabinet cooling system", "380 V or 600 V 3-phase, 50 / 60 Hz, CSA-approved electrical panel"]
+              "Electrical cabinet cooling system", "600 V 3-phase, 60 Hz, CSA-approved electrical panel"]
 PB_OPT_DDM = ["Delem DA-66S or DA-69S 3D control", "ATF X1-X2-R1-R2-Z1-Z2 back gauge", "X1-X2-R-Z1-Z2 back gauge", "X-R-Z1-Z2 back gauge",
               "X-Prime back gauge", "Fiessler AKAS 2 M(P) laser safety barrier", "CE-standard light barrier", "Manual or automatic (CNC) crowning",
               "Sheet followers", "Automatic angle measurement", "Pneumatic punch and die clamping",
@@ -260,11 +260,11 @@ PB_OPT_DDM = ["Delem DA-66S or DA-69S 3D control", "ATF X1-X2-R1-R2-Z1-Z2 back g
 # the DDS control is the 15″ ESA S640 (Dener USA and NovoTech's own servo brochure), not the S840 of the XL
 PB_STD_DDS = ["European-type segmented upper punch holder", "European-type segmented lower die holder", "15″ ESA S640 2D colour touch-screen CNC control",
               "4 axes: Y1, Y2, X, R — 2-axis back gauge (X, R)", "DSP front laser finger protection", "Side and rear safety guards",
-              "Foot pedal with emergency stop", "Electrical cabinet cooling system", "380 V 3-phase, 50 / 60 Hz, CSA-approved electrical panel"]
+              "Foot pedal with emergency stop", "Electrical cabinet cooling system", "600 V 3-phase, 60 Hz, CSA-approved electrical panel"]
 PB_OPT_DDS = ["21.5″ ESA S875 W 3D control", "Delem DA-66S or DA-69S 3D control", "5-axis back gauge (X, R, Z1, Z2, X-Prime) with the ESA S660 control",
               "Fiessler AKAS 2 M(P) laser safety barrier", "CE-standard light barrier", "Pneumatic punch and die clamping",
               "Wila mechanical upper and lower tool clamping", "Wila hydraulic upper and lower tool clamping", "Double-wedge adjustable European punch holder",
-              "Foldable, height-adjustable work table", "Punches and dies", "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"]
+              "Foldable, height-adjustable work table", "Punches and dies", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 
 # the controls Dener fits — a short note under every press brake (the buying guide on press-brake.html explains them)
 CTL_XL = {"title": "ESA S840 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
@@ -400,8 +400,8 @@ PB_FAMILIES = [
                  "dn-ddm-control", "dn-det-ddm-esa", "dn-det-esabend-3d", "dn-det-ddm-delem",
                  "dn-det-quick-release-plate", "dn-det-ddm-eurostamp", "dn-det-ddm-die-change", "dn-det-wila-tools",
                  "dn-ddm-video-1", "dn-det-bg-2axis-ddm", "dn-det-bg-6axis-atf",
-                 "dn-det-front-support-single", "dn-det-foot-pedal", "dn-det-rear-gates", "dn-det-cabinet-cooling",
-                 "dn-det-crowning-motor", "dn-det-sheet-followers"],
+                 "dn-det-front-support-single", "dn-det-cabinet-cooling",
+                 "dn-det-crowning-motor"],
          videos=vids(("_Aqyyfk97KI", "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake"), ("dlmcihzfRuI", "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake"),
                      ("ZujRJUhckG4", "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake"), ("da7UnOripzc", "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake"),
                      ("30squAhhy_o", "CNC hydraulic press brake vs. servo-electric press brake"), ("qLRQDobmnXQ", "DENER DDM servo-electric press brake robot cell"),

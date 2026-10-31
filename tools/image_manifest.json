@@ -54917,19 +54917,19 @@
     "w": 1200,
     "h": 896,
     "file": "img/value-sheet/vl-q11k-feed-1200.webp",
-    "bytes": 73618
+    "bytes": 71328
    },
    {
     "w": 800,
     "h": 597,
     "file": "img/value-sheet/vl-q11k-feed-800.webp",
-    "bytes": 42854
+    "bytes": 41350
    },
    {
     "w": 480,
     "h": 358,
     "file": "img/value-sheet/vl-q11k-feed-480.webp",
-    "bytes": 21262
+    "bytes": 20354
    }
   ],
   "alpha": false,
@@ -54937,7 +54937,7 @@
    "w": 160,
    "h": 119,
    "file": "img/value-sheet/vl-q11k-feed-thumb.webp",
-   "bytes": 4008
+   "bytes": 3790
   }
  },
  "vl-q11k-rexroth": {
@@ -55625,19 +55625,19 @@
     "w": 1200,
     "h": 750,
     "file": "img/value-sheet/vl-vg-clamps-1200.webp",
-    "bytes": 80252
+    "bytes": 79148
    },
    {
     "w": 800,
     "h": 500,
     "file": "img/value-sheet/vl-vg-clamps-800.webp",
-    "bytes": 43210
+    "bytes": 42118
    },
    {
     "w": 480,
     "h": 300,
     "file": "img/value-sheet/vl-vg-clamps-480.webp",
-    "bytes": 19666
+    "bytes": 19250
    }
   ],
   "alpha": false,
@@ -55645,11 +55645,11 @@
    "w": 160,
    "h": 100,
    "file": "img/value-sheet/vl-vg-clamps-thumb.webp",
-   "bytes": 3006
+   "bytes": 2994
   }
  },
  "vl-vg-corner": {
-  "alt": "Sharp outside corner bent after V-grooving",
+  "alt": "Vertical machine \u2014 the row of pneumatic clamps that hold the sheet while it is grooved",
   "variants": [
    {
     "w": 1200,
@@ -55926,25 +55926,25 @@
   "cut": "birefnet"
  },
  "vl-pb-robot-cell": {
-  "alt": "PB-M2500 panel bender loaded and unloaded by two robots",
+  "alt": "PB-A panel bender loaded and unloaded by two robots",
   "variants": [
    {
     "w": 1200,
     "h": 754,
     "file": "img/value-sheet/vl-pb-robot-cell-1200.webp",
-    "bytes": 157724
+    "bytes": 156642
    },
    {
     "w": 800,
     "h": 502,
     "file": "img/value-sheet/vl-pb-robot-cell-800.webp",
-    "bytes": 83300
+    "bytes": 82684
    },
    {
     "w": 480,
     "h": 302,
     "file": "img/value-sheet/vl-pb-robot-cell-480.webp",
-    "bytes": 35234
+    "bytes": 34964
    }
   ],
   "alpha": false,
@@ -55952,7 +55952,7 @@
    "w": 160,
    "h": 101,
    "file": "img/value-sheet/vl-pb-robot-cell-thumb.webp",
-   "bytes": 5082
+   "bytes": 5104
   }
  },
  "vl-pb-operator": {
@@ -110204,6 +110204,186 @@
    "h": 103,
    "file": "img/dener-detail/dn-det-ddm-die-change-thumb.webp",
    "bytes": 4428
+  }
+ },
+ "vl-vg-front": {
+  "alt": "Horizontal machine \u2014 the grooving gantry runs on rails over the full-length table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 708,
+    "file": "img/value-sheet/vl-vg-front-1200.webp",
+    "bytes": 88214
+   },
+   {
+    "w": 800,
+    "h": 472,
+    "file": "img/value-sheet/vl-vg-front-800.webp",
+    "bytes": 44690
+   },
+   {
+    "w": 480,
+    "h": 283,
+    "file": "img/value-sheet/vl-vg-front-480.webp",
+    "bytes": 20890
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 94,
+   "file": "img/value-sheet/vl-vg-front-thumb.webp",
+   "bytes": 4512
+  }
+ },
+ "vl-vg-clean": {
+  "alt": "Blowing the chips off the table and the clamps after grooving",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-sheet/vl-vg-clean-1200.webp",
+    "bytes": 69000
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-sheet/vl-vg-clean-800.webp",
+    "bytes": 39312
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-sheet/vl-vg-clean-480.webp",
+    "bytes": 19128
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-sheet/vl-vg-clean-thumb.webp",
+   "bytes": 3506
+  }
+ },
+ "vl-vg-bent": {
+  "alt": "Parts bent after V-grooving \u2014 boxes, channels and angles with sharp outside corners",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 847,
+    "file": "img/value-sheet/vl-vg-bent-1200.webp",
+    "bytes": 234872
+   },
+   {
+    "w": 800,
+    "h": 565,
+    "file": "img/value-sheet/vl-vg-bent-800.webp",
+    "bytes": 129050
+   },
+   {
+    "w": 480,
+    "h": 339,
+    "file": "img/value-sheet/vl-vg-bent-480.webp",
+    "bytes": 59250
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 113,
+   "file": "img/value-sheet/vl-vg-bent-thumb.webp",
+   "bytes": 12842
+  }
+ },
+ "vl-vg-v-rear": {
+  "alt": "Vertical machine from the rear \u2014 the roller frame that carries the sheet",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 746,
+    "file": "img/value-sheet/vl-vg-v-rear-1200.webp",
+    "bytes": 173002
+   },
+   {
+    "w": 800,
+    "h": 497,
+    "file": "img/value-sheet/vl-vg-v-rear-800.webp",
+    "bytes": 91326
+   },
+   {
+    "w": 480,
+    "h": 298,
+    "file": "img/value-sheet/vl-vg-v-rear-480.webp",
+    "bytes": 41756
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/value-sheet/vl-vg-v-rear-thumb.webp",
+   "bytes": 8198
+  }
+ },
+ "vl-vg-v-groove": {
+  "alt": "Vertical machine \u2014 four cutters in a row cut the groove progressively deeper in one pass",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-sheet/vl-vg-v-groove-1200.webp",
+    "bytes": 62988
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-sheet/vl-vg-v-groove-800.webp",
+    "bytes": 34820
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-sheet/vl-vg-v-groove-480.webp",
+    "bytes": 16322
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-sheet/vl-vg-v-groove-thumb.webp",
+   "bytes": 3356
+  }
+ },
+ "vl-vg-v-clean": {
+  "alt": "Blowing the chips out from under the clamps with an air gun",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-sheet/vl-vg-v-clean-1200.webp",
+    "bytes": 65546
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-sheet/vl-vg-v-clean-800.webp",
+    "bytes": 34610
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-sheet/vl-vg-v-clean-480.webp",
+    "bytes": 16614
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-sheet/vl-vg-v-clean-thumb.webp",
+   "bytes": 3082
   }
  }
 }

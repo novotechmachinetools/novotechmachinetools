@@ -760,20 +760,21 @@ SHEAR_FAMILIES = [
 ]
 
 VG_FAMILIES = [
-    dict(id="vl-vg-h", group="vg-h", page=P_VG, brand=BRAND,
+    dict(id="vl-vg-h", group="vg-h", page=P_VG, brand=BRAND, show_optional=True,
          name="Horizontal CNC V-grooving machines, 10.5 – 20 ft × 49 – 59″, to 5/32″ stainless",
          short="Horizontal V-grooving",
          models_label="3200 × 1250 – 6000 × 1500 · 7 models",
          summary="V-grooving cuts a V-shaped channel along the bend line so the sheet folds to a sharp, zero-radius corner with no springback and no "
                  "cracking of the finish — the way stainless elevator doors, column cladding, appliance panels and architectural trim are made. "
                  "On the horizontal machine the sheet lies flat on a 49 or 59″ table, pneumatic clamps hold it and a four-tool head on ball screws "
-                 "planes the groove at up to 295 ft/min, ± 0.01 mm. Seven table sizes from 10.5 to 20 ft; sheet from 0.016″ to 5/32″.",
+                 "planes the groove at up to 295 ft/min, ± 0.01 mm. Seven table sizes from 10.5 to 20 ft; sheet from 0.016″ to 5/32″. "
+                 "A rotary grooving head that turns 90° to groove both lengthwise and crosswise without turning the sheet is available as an option.",
          features=["Sheet 0.016″ – 5/32″ (0.4 – 4 mm); 10.5 – 20 ft table lengths; 5.5 kW servo"] + VG_STD,
-         optional=VG_OPT,
-         images=["vl-vg-h-1", "vl-vg-head", "vl-vg-trial", "vl-vg-clamps", "vl-vg-table", "vl-vg-control", "vl-vg-ruler", "vl-vg-parts", "vl-vg-corner"],
+         optional=["Rotary grooving head: turns 90° to groove lengthwise and crosswise (horizontal and vertical lines) without turning the sheet"] + VG_OPT,
+         images=["vl-vg-h-1", "vl-vg-front", "vl-vg-head", "vl-vg-trial", "vl-vg-clamps", "vl-vg-table", "vl-vg-control-2", "vl-vg-ruler", "vl-vg-clean", "vl-vg-bent"],
          videos=[],
          specs=spec([T_VG_H], VG_GK, VG_G_FROM, NOTE_VG)),
-    dict(id="vl-vg-v", group="vg-v", page=P_VG, brand=BRAND,
+    dict(id="vl-vg-v", group="vg-v", page=P_VG, brand=BRAND, show_optional=True,
          name="Vertical CNC V-grooving machines, 10.5 – 13 ft × 49 – 59″, to 1/4″",
          short="Vertical V-grooving",
          models_label="3200 × 1250 – 4000 × 1500 · 4 models",
@@ -782,7 +783,7 @@ VG_FAMILIES = [
                  "Taiwan servo CNC, four-cutter head and hydraulic blank holder. Four sizes: 10.5 and 13 ft × 49 or 59″.",
          features=["Sheet 0.016″ – 1/4″ (0.4 – 6 mm); rear feeding with replaceable worktable; 4.4 kW servo"] + VG_STD,
          optional=VG_OPT,
-         images=["vl-vg-v-1", "vl-vg-v-scene", "vl-vg-cutters", "vl-vg-beam", "vl-vg-control-2", "vl-vg-parts-2"],
+         images=["vl-vg-v-1", "vl-vg-v-scene", "vl-vg-v-rear", "vl-vg-cutters", "vl-vg-v-groove", "vl-vg-corner", "vl-vg-control", "vl-vg-v-clean"],
          videos=[],
          specs=spec([T_VG_V], VG_GK, VG_G_FROM, NOTE_VG)),
 ]
