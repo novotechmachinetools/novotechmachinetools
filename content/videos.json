@@ -1,61 +1,605 @@
 {
-  "_comment": "Per family, every NovoTech YouTube video that shows it, in display order (first ones autoplay). Titles given here replace YouTube's for new videos; families not listed keep their own lists.",
-  "nt-press-hsa": [
-    {"id": "VdbVx4nhkgo", "title": "882 US ton (800 t) single-action H-frame hydraulic press", "new": true},
-    {"id": "it0KTE6sg-s", "title": "Single-action H-frame hydraulic press", "new": true},
-    {"id": "fSdmPXUmoHg", "title": "441 US ton (400 t) straight-side hydraulic press", "new": true},
-    {"id": "_r3sQJLDazM", "title": "331 US ton (300 t) straight-side hydraulic press with NC control", "new": true},
-    {"id": "HpwW6b_kDBE", "title": "High-speed H-frame hydraulic press", "new": true},
-    {"id": "grXtQ_VGLak", "title": "1,653 US ton (1,500 t) H-frame hydraulic press", "new": true},
-    {"id": "QfNYUGpyxcI", "title": "High-speed hydraulic blanking and forming press line", "new": true},
-    {"id": "gRXd4s95G0c", "title": "Production hydraulic presses — factory tour", "new": true}
+ "_comment": "Per family, every NovoTech YouTube video that shows it, in display order (first ones autoplay). Titles given here replace YouTube's for new videos; families not listed keep their own lists.",
+ "nt-press-hsa": [
+  {
+   "id": "VdbVx4nhkgo",
+   "title": "882 US ton (800 t) single-action H-frame hydraulic press",
+   "new": true
+  },
+  {
+   "id": "it0KTE6sg-s",
+   "title": "Single-action H-frame hydraulic press",
+   "new": true
+  },
+  {
+   "id": "fSdmPXUmoHg",
+   "title": "441 US ton (400 t) straight-side hydraulic press",
+   "new": true
+  },
+  {
+   "id": "_r3sQJLDazM",
+   "title": "331 US ton (300 t) straight-side hydraulic press with NC control",
+   "new": true
+  },
+  {
+   "id": "HpwW6b_kDBE",
+   "title": "High-speed H-frame hydraulic press",
+   "new": true
+  },
+  {
+   "id": "grXtQ_VGLak",
+   "title": "1,653 US ton (1,500 t) H-frame hydraulic press",
+   "new": true
+  },
+  {
+   "id": "QfNYUGpyxcI",
+   "title": "High-speed hydraulic blanking and forming press line",
+   "new": true
+  },
+  {
+   "id": "gRXd4s95G0c",
+   "title": "Production hydraulic presses — factory tour",
+   "new": true
+  }
+ ],
+ "nt-press-hdd": [
+  {
+   "id": "K5dpZ5_W7iE",
+   "title": "HDD 1,653 US ton (1,500 t) H-frame deep drawing press",
+   "new": true
+  },
+  {
+   "id": "x9ogEc9YYzY",
+   "title": "Double-action hydraulic deep drawing press",
+   "new": true
+  },
+  {
+   "id": "Y72oabNAhmE",
+   "title": "386 US ton (350 t) deep drawing hydraulic press",
+   "new": true
+  },
+  {
+   "id": "L8bsv2gxNkY",
+   "title": "661 US ton (600 t) deep drawing press for tank heads",
+   "new": true
+  },
+  {
+   "id": "pWzujfOwmnQ",
+   "title": "Tank-head deep drawing press",
+   "new": true
+  }
+ ],
+ "nt-press-hcfp": [
+  {
+   "id": "ClUhjzRKJF8",
+   "title": "551 US ton (500 t) four-post hydraulic deep drawing press",
+   "new": true
+  },
+  {
+   "id": "c2fMRgjAzl4",
+   "title": "1,102 US ton (1,000 t) hydraulic press",
+   "new": true
+  },
+  {
+   "id": "9T3sd_XqMcE",
+   "title": "1,102 US ton (1,000 t) custom-built hydraulic press",
+   "new": true
+  }
+ ],
+ "nt-press-cfss": [
+  {
+   "id": "UjxsbcXzoqY",
+   "title": "CFSS 100 C-frame hydraulic press, 110 US ton",
+   "new": true
+  },
+  {
+   "id": "kkhUUIDGN50",
+   "title": "High-speed gap-frame hydraulic press",
+   "new": true
+  }
+ ],
+ "nt-press-cfs": [
+  {
+   "id": "VhzXxWADDNA",
+   "title": "C-frame (gap-frame) hydraulic presses",
+   "new": true
+  }
+ ],
+ "nt-press-cfdd": [
+  {
+   "id": "q30gJnYWeqg",
+   "title": "C-frame hydraulic deep drawing press",
+   "new": true
+  }
+ ],
+ "nt-press-hhrp": [
+  {
+   "id": "ac1TutVMA-4",
+   "title": "SMC compression molding hydraulic press",
+   "new": true
+  },
+  {
+   "id": "yqKZzDr-en4",
+   "title": "772 US ton (700 t) heated-platen hydraulic press",
+   "new": true
+  }
+ ],
+ "nt-press-hsps": [
+  {
+   "id": "GoGbWr2HkEs",
+   "title": "Portal hydraulic plate straightening press",
+   "new": true
+  }
+ ],
+ "sahinler-at": [
+  "A0-KkaGnAaM",
+  "CDDqTYn6SU0",
+  {
+   "id": "PL145ukB2uc",
+   "title": "AT-S 3200 × 150 t straight-side hydraulic press (165 US ton)",
+   "new": true
+  },
+  {
+   "id": "e1XCBGXiYe8",
+   "title": "AT-S straight-side (H-frame) hydraulic press",
+   "new": true
+  }
+ ],
+ "sahinler-ap": [
+  "3NVkGji2fEY",
+  "WVxN1BFnKsk",
+  {
+   "id": "AkX-C-rRVlI",
+   "title": "AP hydraulic press brake in action",
+   "new": true
+  }
+ ],
+ "tubend-hp": [
+  "pxJvddrvYeg",
+  "D9CKQFKn78E",
+  "njyMkBwLGQk",
+  "RgLqznLX8QI",
+  {
+   "id": "oUENvgl3IFs",
+   "title": "HP 40 NC horizontal press brake",
+   "new": true
+  },
+  {
+   "id": "J7IXCAa8z8k",
+   "title": "HP 40 NC horizontal press",
+   "new": true
+  },
+  {
+   "id": "7sXuRTyb7vw",
+   "title": "HP 40 horizontal press",
+   "new": true
+  },
+  {
+   "id": "WHD8-duXT4M",
+   "title": "HP 20 horizontal press brake, 22 US ton",
+   "new": true
+  },
+  {
+   "id": "-qd0QAVvuCs",
+   "title": "HP 20 horizontal press, 22 US ton",
+   "new": true
+  },
+  {
+   "id": "hOb1mcKYON0",
+   "title": "HP 20 horizontal press with pipe bending tools, 22 US ton",
+   "new": true
+  },
+  {
+   "id": "GShJnd2QrJ4",
+   "title": "HP horizontal press",
+   "new": true
+  }
+ ],
+ "_add": {
+  "vl-nc": [
+   {
+    "id": "xO7jX7Rvhpg",
+    "title": "WC67K 10 ft × 441 US tons 2-axis NC press brake with Estun E21 control"
+   }
   ],
-  "nt-press-hdd": [
-    {"id": "K5dpZ5_W7iE", "title": "HDD 1,653 US ton (1,500 t) H-frame deep drawing press", "new": true},
-    {"id": "x9ogEc9YYzY", "title": "Double-action hydraulic deep drawing press", "new": true},
-    {"id": "Y72oabNAhmE", "title": "386 US ton (350 t) deep drawing hydraulic press", "new": true},
-    {"id": "L8bsv2gxNkY", "title": "661 US ton (600 t) deep drawing press for tank heads", "new": true},
-    {"id": "pWzujfOwmnQ", "title": "Tank-head deep drawing press", "new": true}
+  "vl-qc12k": [
+   {
+    "id": "lvbQ-_l3wfc",
+    "title": "QC12K 10 ft × 3/8″ hydraulic swing beam shear"
+   }
   ],
-  "nt-press-hcfp": [
-    {"id": "ClUhjzRKJF8", "title": "551 US ton (500 t) four-post hydraulic deep drawing press", "new": true},
-    {"id": "c2fMRgjAzl4", "title": "1,102 US ton (1,000 t) hydraulic press", "new": true},
-    {"id": "9T3sd_XqMcE", "title": "1,102 US ton (1,000 t) custom-built hydraulic press", "new": true}
+  "sahinler-bt-114-s": [
+   {
+    "id": "Iaj6Ix2q910",
+    "title": "BT 114-S sanding grooved pipe"
+   },
+   {
+    "id": "ylAOnhJgnmY",
+    "title": "Sanding grooved pipe on the BT 114-S pipe polisher"
+   },
+   {
+    "id": "fMMq2PnKX90",
+    "title": "BT 114-S pipe sander — sanding pipe with grooves"
+   }
   ],
-  "nt-press-cfss": [
-    {"id": "UjxsbcXzoqY", "title": "CFSS 100 C-frame hydraulic press, 110 US ton", "new": true},
-    {"id": "kkhUUIDGN50", "title": "High-speed gap-frame hydraulic press", "new": true}
+  "tt-rbm": [
+   {
+    "id": "3QuZQhQIX6o",
+    "title": "RBM 50 HV profile and tube roll bender, horizontal and vertical"
+   },
+   {
+    "id": "aS0I_iNanNA",
+    "title": "HRBM 50 HV hydraulic profile and tube roll bender, 2″ shafts"
+   }
   ],
-  "nt-press-cfs": [
-    {"id": "VhzXxWADDNA", "title": "C-frame (gap-frame) hydraulic presses", "new": true}
+  "novotech-bs300x370": [
+   {
+    "id": "ZK2mzm-OAoI",
+    "title": "BS 300 × 370 12″ auto-feed band saw at work"
+   },
+   {
+    "id": "-sHF4F2vy0I",
+    "title": "BS 300 × 370 12″ fully automatic horizontal band saw"
+   },
+   {
+    "id": "Htz0nH8eTOY",
+    "title": "BS 300 × 370 12″ auto-feed band saw — inverter drive, hydraulic uplift and vise"
+   }
   ],
-  "nt-press-cfdd": [
-    {"id": "q30gJnYWeqg", "title": "C-frame hydraulic deep drawing press", "new": true}
+  "tt-qcs400": [
+   {
+    "id": "qYchuFpKN0Q",
+    "title": "QCS-400A aluminum upcut saw with pneumatic clamps"
+   }
   ],
-  "nt-press-hhrp": [
-    {"id": "ac1TutVMA-4", "title": "SMC compression molding hydraulic press", "new": true},
-    {"id": "yqKZzDr-en4", "title": "772 US ton (700 t) heated-platen hydraulic press", "new": true}
+  "novotech-bs-460g": [
+   {
+    "id": "hG1iT3Xjk_Q",
+    "title": "BS-460G 13″ double-miter band saw"
+   }
   ],
-  "nt-press-hsps": [
-    {"id": "GoGbWr2HkEs", "title": "Portal hydraulic plate straightening press", "new": true}
+  "sf-heavy": [
+   {
+    "id": "IeCYg6U4M4w",
+    "title": "SF6024NT three-chuck tube laser cutting machine"
+   }
   ],
-  "sahinler-at": [
-    "A0-KkaGnAaM", "CDDqTYn6SU0",
-    {"id": "PL145ukB2uc", "title": "AT-S 3200 × 150 t straight-side hydraulic press (165 US ton)", "new": true},
-    {"id": "e1XCBGXiYe8", "title": "AT-S straight-side (H-frame) hydraulic press", "new": true}
+  "sf-plus": [
+   {
+    "id": "cEMA3qs8J34",
+    "title": "SF6012 Plus tube laser cutting machine with automatic loader"
+   }
   ],
-  "sahinler-ap": [
-    "3NVkGji2fEY", "WVxN1BFnKsk",
-    {"id": "AkX-C-rRVlI", "title": "AP hydraulic press brake in action", "new": true}
+  "sf-t": [
+   {
+    "id": "-ZDS57aIfHY",
+    "title": "SF6024T tube laser with variable-pitch tube supports"
+   }
   ],
-  "tubend-hp": [
-    "pxJvddrvYeg", "D9CKQFKn78E", "njyMkBwLGQk", "RgLqznLX8QI",
-    {"id": "oUENvgl3IFs", "title": "HP 40 NC horizontal press brake", "new": true},
-    {"id": "J7IXCAa8z8k", "title": "HP 40 NC horizontal press", "new": true},
-    {"id": "7sXuRTyb7vw", "title": "HP 40 horizontal press", "new": true},
-    {"id": "WHD8-duXT4M", "title": "HP 20 horizontal press brake, 22 US ton", "new": true},
-    {"id": "-qd0QAVvuCs", "title": "HP 20 horizontal press, 22 US ton", "new": true},
-    {"id": "hOb1mcKYON0", "title": "HP 20 horizontal press with pipe bending tools, 22 US ton", "new": true},
-    {"id": "GShJnd2QrJ4", "title": "HP horizontal press", "new": true}
+  "sf-hm": [
+   {
+    "id": "OxT-DcxocA0",
+    "title": "SF3015HM combined sheet and tube laser, 6 – 30 kW"
+   }
+  ],
+  "sf-h": [
+   {
+    "id": "2GtBJRXEt8s",
+    "title": "SF3015H laser cutting machine, 3 – 80 kW"
+   }
+  ],
+  "sf-compact": [
+   {
+    "id": "GdMrZ7JJ0vg",
+    "title": "SF1530NP compact laser cutting machine with pull-out table"
+   }
+  ],
+  "isitan-bk": [
+   {
+    "id": "0DxTQzyPxEw",
+    "title": "BK-050 programmable pipe bender, 2-3/8″"
+   },
+   {
+    "id": "_UA_qs5qKss",
+    "title": "BK-050 programmable NC draw bender"
+   }
+  ],
+  "tt-mgm300": [
+   {
+    "id": "DZNUhlPdM5I",
+    "title": "MGM-300 metal finishing and deburring machine"
+   }
+  ],
+  "tt-alb": [
+   {
+    "id": "k7X2h4MZkwg",
+    "title": "ALB-3200 10 ft × 22 ga aluminum roofing brake with slitter"
+   }
+  ],
+  "Hydraulic-rebar-cutter": [
+   {
+    "id": "HXKE4Cx1LuU",
+    "title": "GMS POWER 24 rebar cutter — Ø15/16″ (24 mm)"
+   }
+  ],
+  "automatic-stirrup-bender": [
+   {
+    "id": "pmgZhfY1KIE",
+    "title": "GMS SLS 12 automatic stirrup bending machine"
+   },
+   {
+    "id": "lOGCq4bfC1k",
+    "title": "GMS SLS 12 CNC rebar bending machine"
+   }
+  ],
+  "Automatic-rebar-double-bender-ROBOBENDER-45S": [
+   {
+    "id": "XDcjo8LJbzU",
+    "title": "GMS SYNCLONE 45 S rebar double bender"
+   }
+  ],
+  "bekamak-bmdo-xs": [
+   {
+    "id": "c2pSsIcY2R8",
+    "title": "Bekamak BMDO 75XS automatic cold saw with servo-driven transfer"
+   },
+   {
+    "id": "qz3_hKA5mgg",
+    "title": "Bekamak BMDO 100XS high-speed cold saw"
+   },
+   {
+    "id": "ud0YXSJ6XYA",
+    "title": "Bekamak BMDO 150XS high-speed cold saw with automatic loading and unloading"
+   }
+  ],
+  "isitan-ikm": [
+   {
+    "id": "V1K0Z2kdy9k",
+    "title": "IBKS 1.8 bead roller, 14 ga"
+   },
+   {
+    "id": "VEL0-3z10OQ",
+    "title": "IKMP 1.2 bead roller"
+   }
+  ],
+  "sahinler-hpk-50-60": [
+   {
+    "id": "b1G40mejOhY",
+    "title": "HPK 60 angle roll"
+   }
+  ],
+  "bekamak-bmsy-dg-nc": [
+   {
+    "id": "aSgfPQISPcw",
+    "title": "Bekamak BMSY 560 DG NC dual-column double-miter band saw"
+   }
+  ],
+  "sahinler-4r-hs": [
+   {
+    "id": "J4p8bp2gjsk",
+    "title": "4R HS 20-245 NC plate roll"
+   },
+   {
+    "id": "XL_C-S0Hyb0",
+    "title": "4R HS 25-200 NC 4-roll plate rolling machine"
+   }
+  ],
+  "sahinler-hpk-100-120": [
+   {
+    "id": "n3jAu-Osqfo",
+    "title": "HPK 100 angle roll"
+   }
+  ],
+  "sahinler-hkm-single": [
+   {
+    "id": "YzEKOaNtOPI",
+    "title": "HKM 60 ironworker"
+   },
+   {
+    "id": "gBdw8nMRdEU",
+    "title": "Punching with off-centre dies on the HKM 60 ironworker"
+   }
+  ],
+  "isitan-pn": [
+   {
+    "id": "ipxJE8Ug2xg",
+    "title": "PN 20-76 3″ pipe notcher with flat belt sander"
+   },
+   {
+    "id": "aTGdxOgp8Z4",
+    "title": "PN 17-90 pipe notching machine"
+   }
+  ],
+  "bekamak-bmso-gs": [
+   {
+    "id": "ksRc1C72Uvw",
+    "title": "Bekamak BMSO 320 GS 12.6″ fully automatic miter band saw with shuttle vise"
+   }
+  ],
+  "isitan-hibks": [
+   {
+    "id": "6iC9KiO-r_A",
+    "title": "HIBKS 4.0 hydraulic bead roller, 3/16″ (4 mm)"
+   },
+   {
+    "id": "Uy0DaiL-Jgk",
+    "title": "HIBKS 4.0 hydraulic bead roller"
+   },
+   {
+    "id": "8vkspWW4hR4",
+    "title": "IBKS 2.5 bead roller"
+   }
+  ],
+  "csm-tncb": [
+   {
+    "id": "D9oqlzNjMqU",
+    "title": "75 TNCB — bumper guard"
+   },
+   {
+    "id": "wr6ebb6h4KU",
+    "title": "89 TNCB NC pipe bender"
+   }
+  ],
+  "isitan-sfb-32": [
+   {
+    "id": "OSHBCFzISbU",
+    "title": "SFB 32-HD mandrel tube bender with NC control"
+   },
+   {
+    "id": "BiJgC0yWgPc",
+    "title": "SFB 32-HD mandrel pipe bender"
+   }
+  ],
+  "isitan-sfb-nc": [
+   {
+    "id": "EzqBqDKpoXM",
+    "title": "SFB 51-NC mandrel pipe bender"
+   },
+   {
+    "id": "1-RVkxL9lOc",
+    "title": "SFB 90-NC mandrel tube bender"
+   },
+   {
+    "id": "mJFDa7XoLZs",
+    "title": "SFB 51-NC 1-axis NC mandrel pipe bender"
+   }
+  ],
+  "isitan-idk": [
+   {
+    "id": "4NIkjvP05Kc",
+    "title": "IDK-2 motorized circular cutting shear"
+   },
+   {
+    "id": "IJU7HGhrtMI",
+    "title": "IDK-2 circular shear"
+   },
+   {
+    "id": "HCxY12pHsGQ",
+    "title": "IDK-5 circular cutting shear"
+   }
+  ],
+  "isitan-mrm-s": [
+   {
+    "id": "kJd0rPRFykY",
+    "title": "MRM-S 1550 × 170 plate roll with powered bottom roll — walk-around"
+   },
+   {
+    "id": "dR_99NBw1AY",
+    "title": "MRM-S 2050 × 170 mechanical 3-roll plate roll"
+   },
+   {
+    "id": "2BH0khI5Sls",
+    "title": "MRM-S 2050 × 170 initial-pinch mechanical plate roll"
+   }
+  ],
+  "isitan-irm": [
+   {
+    "id": "KLgrj9v1r6M",
+    "title": "IRM 1550 × 140 plate roller"
+   },
+   {
+    "id": "PuiJoqFyUjQ",
+    "title": "IRM 1270 × 140 plate roller with DRO"
+   },
+   {
+    "id": "7zwp8pcCS4Y",
+    "title": "IRM 2050 × 130 motorized 3-roll slip roll"
+   }
+  ],
+  "bekamak-bmso-xs": [
+   {
+    "id": "DRjfLK6LJbU",
+    "title": "Bekamak BMSO 420XS fully automatic smart band saw"
+   },
+   {
+    "id": "__8Sc_xxd4o",
+    "title": "Bekamak BMSO 420XS smart metal cutting band saw"
+   },
+   {
+    "id": "EXNGkwAyKJ4",
+    "title": "Bekamak BMSO 420XS dual-column CNC band saw"
+   }
+  ],
+  "stirrup-benders": [
+   {
+    "id": "3FgTDyXCjTk",
+    "title": "GMS SL 36 stirrup bending machine"
+   },
+   {
+    "id": "TR8R9ORI4oo",
+    "title": "GMS SL 36 stirrup bender at work"
+   }
+  ],
+  "bekamak-bmdo-cs": [
+   {
+    "id": "fntRmcKb3sU",
+    "title": "Bekamak BMDO 100CS high-speed tube cutting cold saw"
+   },
+   {
+    "id": "7f4ZKiSSDL0",
+    "title": "Bekamak BMDO 80CS automatic cold saw"
+   }
+  ],
+  "sahinler-4r-hc": [
+   {
+    "id": "UPEbmpT7900",
+    "title": "4R HC 10-155 4-roll hydraulic conical plate roll"
+   }
+  ],
+  "isitan-4r-corrugated": [
+   {
+    "id": "KYQ6ixREGRA",
+    "title": "4R OM 2050 × 260 4-roll corrugated sheet roll"
+   },
+   {
+    "id": "c8Y7nHt12Kc",
+    "title": "4R OM 4-roll corrugated plate roller"
+   }
+  ],
+  "isitan-rm": [
+   {
+    "id": "tJn06TYSLIU",
+    "title": "RM 1270 × 90 motorized 3-roll plate roll"
+   },
+   {
+    "id": "AbrYP4Xy4Yo",
+    "title": "RM 1270 × 90 powered slip roll"
+   }
+  ],
+  "isitan-sfb-38-nc-a": [
+   {
+    "id": "4O3qbHL9_Z4",
+    "title": "SFB 38-NC 2-axis pipe bender with pipe feeder"
+   }
+  ],
+  "spiral-benders": [
+   {
+    "id": "PxXi2sy9dIM",
+    "title": "GMS SX 40 S spiral bar bending machine"
+   }
+  ],
+  "bekamak-bmsy-straight": [
+   {
+    "id": "5I5RKqJ07pc",
+    "title": "Bekamak BMSY 280, 320 and 320L semi-automatic straight-cut band saws"
+   }
+  ],
+  "bekamak-bmsy-g": [
+   {
+    "id": "BQ6cvMJxniE",
+    "title": "Bekamak BMSY 320G semi-automatic miter band saw"
+   },
+   {
+    "id": "B-8VLjN8O50",
+    "title": "Bekamak BMSY 320GL band saw"
+   }
+  ],
+  "bekamak-bmh-170": [
+   {
+    "id": "cpmfdUR8MOI",
+    "title": "Bekamak BMH 170"
+   }
   ]
+ },
+ "_add_comment": "Videos added to a family's own list (Oct 30 2026: every product shows its most relevant and newest video first). build.py sorts each family's videos: machine videos before general ones, newest first by the channel's upload order."
 }

@@ -1,0 +1,16 @@
+{
+ "_comment": "Publish dates (UTC) from YouTube, Oct 30 2026. 'shorts': site videos that are Shorts, so not on the channel's Videos tab (tools/novotech-youtube-videos.tsv). 'anchors': videos of that list with their exact date. build.py places each Short among the regular uploads by interpolating its date between the anchors.",
+ "shorts": {
+  "CK7wVdTG_8I": "2020-06-09T12:52:06Z",
+  "LAJ4t_c1XAw": "2026-04-27T21:33:23Z",
+  "obbCib0YB24": "2026-08-22T01:28:39Z",
+  "2lI0nHlPBHA": "2026-08-22T23:08:56Z",
+  "l6q3ImmJhEE": "2021-10-03T20:54:41Z"
+ },
+ "anchors": {
+  "gYyQIv5HRME": "2026-10-31T00:23:51Z",
+  "fUZQp6XiXqc": "2024-10-18T19:19:01Z",
+  "PxXi2sy9dIM": "2020-06-09T16:57:56Z",
+  "HeqQhGr7vRo": "2020-06-09T13:42:58Z"
+ }
+}

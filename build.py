@@ -570,8 +570,13 @@ def _iso_dur(mmss):
 
 def family_videos(f):
     lst = VIDEO_MAP.get(f["id"])
+    extra = (VIDEO_MAP.get("_add") or {}).get(f["id"]) or []
+    if lst is None and extra:                      # "_add": videos appended to the family's own list
+        lst = [v["id"] for v in f.get("videos") or []]
     if lst is None:
         return
+    have = {(it if isinstance(it, str) else it["id"]) for it in lst}
+    lst = list(lst) + [dict(it, new=True) for it in extra if it["id"] not in have]
     cur = {v["id"]: v for v in f.get("videos") or []}
     out = []
     for it in lst:
@@ -588,12 +593,31 @@ def family_videos(f):
 
 
 # Upload order of the channel: tools/novotech-youtube-videos.tsv lists the regular uploads newest first (the channel's
-# Videos tab). The few Shorts on the site are not on that tab and go after the regular videos of their group.
+# Videos tab). Shorts are not on that tab: tools/video_dates.json gives their publish dates and a few dated anchors from the
+# list, and each Short gets the rank its date falls at between the anchors.
 YT_ORDER = {}
 for _n, _l in enumerate(open(os.path.join(ROOT, "tools", "novotech-youtube-videos.tsv"), encoding="utf-8")):
     _p = _l.split("\t", 1)
     if _p[0].strip():
         YT_ORDER.setdefault(_p[0].strip(), float(_n))
+_vd = os.path.join(ROOT, "tools", "video_dates.json")
+if os.path.exists(_vd):
+    _d = json.load(open(_vd, encoding="utf-8"))
+    _when = lambda t: datetime.datetime.fromisoformat(t.replace("Z", "+00:00")).timestamp()
+    _anc = sorted(((_when(t), YT_ORDER[i]) for i, t in _d.get("anchors", {}).items() if i in YT_ORDER), reverse=True)  # newest first
+    for _i, _t in _d.get("shorts", {}).items():
+        if _i in YT_ORDER or not _anc:
+            continue
+        _x = _when(_t)
+        if _x >= _anc[0][0]:
+            YT_ORDER[_i] = _anc[0][1] - 0.5
+        elif _x <= _anc[-1][0]:
+            YT_ORDER[_i] = _anc[-1][1] + 0.5
+        else:
+            for (_t0, _r0), (_t1, _r1) in zip(_anc, _anc[1:]):
+                if _t1 <= _x <= _t0:
+                    YT_ORDER[_i] = _r0 + (_r1 - _r0) * (_t0 - _x) / ((_t0 - _t1) or 1) + 0.01
+                    break
 
 GENERAL_VIDEO = re.compile(r"\b(factory|assembly line|tour|instructions?|how to|how-to|vs\.?|versus|comparison|compar\w+|install\w*|"
                            r"operating|training|tutorial|exhibition|trade fair|catalogue|overview)\b", re.I)
