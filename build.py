@@ -332,6 +332,7 @@ def img(name, max_w=None):
         "srcset": ", ".join(f"{x['file']} {x['w']}w" for x in v),
         "small": v[0]["file"],
         "thumb": (e.get("thumb") or v[0])["file"],
+        "thumb_srcset": ", ".join(f"{x['file']} {x['w']}w" for x in ([e["thumb"]] if e.get("thumb") else []) + [v[0]]),
         "alpha": e["alpha"],
     }
 

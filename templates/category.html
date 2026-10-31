@@ -264,7 +264,7 @@
   {% endif %}
   {% if page.related_pages %}
   <ul class="related-list">
-    {% for r in page.related_pages %}<li><a class="related-link" href="{{ r.href }}">{% if r.image %}<span class="related-thumb{{ ' is-cutout' if r.image.alpha else '' }}"><img src="{{ r.image.thumb }}" width="64" height="48" alt="" loading="lazy" decoding="async"></span>{% endif %}<span class="arrow">{{ r.label }}</span></a></li>{% endfor %}
+    {% for r in page.related_pages %}<li><a class="related-link" href="{{ r.href }}">{% if r.image %}<span class="related-thumb{{ ' is-cutout' if r.image.alpha else '' }}"><img src="{{ r.image.thumb }}" srcset="{{ r.image.thumb_srcset }}" sizes="(max-width: 700px) 92px, 112px" width="112" height="84" alt="" loading="lazy" decoding="async"></span>{% endif %}<span class="arrow">{{ r.label }}</span></a></li>{% endfor %}
   </ul>
   {% endif %}
 </section>
