@@ -8,7 +8,10 @@
 {% if images %}
 <div class="gallery" data-gallery="{{ fid }}">
   {% set first = images[0] %}
-  <figure class="gallery-main{{ ' is-cutout' if first.alpha else '' }}">
+  {# the caption band fits the longest description of the gallery: a first guess for a desktop-wide gallery (about 95 characters a
+     line), refined by site.js for the real width #}
+  {% set ns = namespace(n=0) %}{% for im in images %}{% set L = (im.cap2 or im.alt or '')|length %}{% if L > ns.n %}{% set ns.n = L %}{% endif %}{% endfor %}
+  <figure class="gallery-main{{ ' is-cutout' if first.alpha else '' }}" style="--cap-lines: {{ 1 if ns.n <= 95 else (2 if ns.n <= 190 else 3) }}">
     <a class="gallery-link" href="{{ first.src }}" data-index="0">
       <img src="{{ first.src }}" srcset="{{ first.srcset }}" sizes="(max-width: 900px) 92vw, 740px" width="{{ first.w }}" height="{{ first.h }}" alt="{{ first.alt }}" loading="lazy" decoding="async">
     </a>

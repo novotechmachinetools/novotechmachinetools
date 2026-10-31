@@ -147,7 +147,7 @@
           <p>{{ f.control.text }}</p>
           {% if f.control.images %}
           <ul class="control-thumbs">
-            {% for im in f.control.images %}<li><a href="{{ im.src }}" class="control-thumb{{ ' is-cutout' if im.alpha else '' }}" data-lightbox="{{ f.id }}-controls" aria-label="{{ im.alt }}"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="150px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></a><span>{{ im.caption }}</span></li>{% endfor %}
+            {% for im in f.control.images %}<li><a href="{{ im.src }}" class="control-thumb{{ ' is-cutout' if im.alpha else '' }}" data-lightbox="{{ f.id }}-controls" aria-label="{{ im.alt }}"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="150px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}" loading="lazy" decoding="async"></a><span>{{ im.caption }}{% if im.prog %}<small>{{ im.prog }}</small>{% endif %}</span></li>{% endfor %}
           </ul>
           {% endif %}
           <p class="control-more"><a class="arrow" href="press-brake.html#controls">Compare every control in the buying guide</a></p>

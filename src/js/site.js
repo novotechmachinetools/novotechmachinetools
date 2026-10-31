@@ -174,7 +174,7 @@
      at the largest size the window allows (each photo is scaled into it with object-fit: contain). So the stage, the
      arrows and the close button never move or resize while stepping through a set — only when the window itself is
      resized (NovoTech, Oct 30 2026: "the left and right arrows must stay in the same place for every photo"). */
-  var lightbox = null, lbStage, lbFrame, lbImg, lbText, lbCount, lbItems = [], lbIndex = 0, lbNavAt = 0, lbDownOnBackdrop = false;
+  var lightbox = null, lbStage, lbFrame, lbImg, lbText, lbCap, lbCount, lbItems = [], lbIndex = 0, lbNavAt = 0, lbDownOnBackdrop = false;
   var LB_MAX_W = 1216, LB_MIN_W = 560, LB_PAD = 12, LB_CAP = 52;   // px: widest photo, narrowest stage, white margin, caption band
   function ensureLightbox() {
     if (lightbox) return;
@@ -192,6 +192,7 @@
     lbFrame = lightbox.querySelector(".lb-frame");
     lbImg = lightbox.querySelector("img");
     lbText = lightbox.querySelector(".lb-text");
+    lbCap = lightbox.querySelector(".lightbox-caption");
     lbCount = lightbox.querySelector(".lb-count");
     var step = function (dir) { lbNavAt = Date.now(); showLb(lbIndex + dir); };
     lightbox.querySelector(".lb-prev").addEventListener("click", function () { step(-1); });
@@ -212,20 +213,43 @@
     // empty the frame on close, so the next set never flashes the last photo of the previous one
     lightbox.addEventListener("close", function () { lbImg.removeAttribute("srcset"); lbImg.removeAttribute("src"); lbImg.alt = ""; });
   }
+  function lbCapHeight(width) {
+    // the tallest caption of the set at this stage width: the band keeps that height for every photo of the set, so a long
+    // description shows in full (up to five lines) and the photo and the arrows never move (the owner, Oct 30 2026)
+    // measured in the page, not in the dialog: the viewer is laid out before it opens, while it still has no layout
+    var probe = d.createElement("p");
+    probe.style.cssText = "position:absolute;visibility:hidden;left:-9999px;top:0;margin:0;box-sizing:border-box;padding:0 8px;" +
+      "font-size:15px;line-height:20px;text-align:center;white-space:normal;width:" + Math.max(120, width) + "px";
+    d.body.appendChild(probe);
+    var hmax = 0;
+    lbItems.forEach(function (it) {
+      probe.textContent = (it.cap2 || it.alt || "") + (it.cap1 ? " — " : "");
+      if (it.cap1) { var bb = d.createElement("b"); bb.textContent = it.cap1; probe.appendChild(bb); }
+      hmax = Math.max(hmax, probe.scrollHeight);
+    });
+    probe.remove();
+    return Math.max(LB_CAP, Math.min(hmax, (width < 500 ? 8 : 5) * 20) + 12);   // five lines at most, eight on a phone
+  }
   function layoutLb() {
     var vw = d.documentElement.clientWidth || window.innerWidth, vh = window.innerHeight;
     var gap = vw < 600 ? 12 : 28;                                  // dark margin around the stage
     var maxW = Math.min(vw - 2 * gap - 2 * LB_PAD, LB_MAX_W);
-    var maxH = Math.max(120, vh - 2 * gap - LB_PAD - LB_CAP);
-    var w = 0, h = 0;
-    lbItems.forEach(function (it) {                                // each photo at its largest size; the stage holds them all
-      var r = (+it.w > 0 && +it.h > 0) ? it.h / it.w : 0.75;
-      var iw = Math.min(maxW, maxH / r);
-      w = Math.max(w, iw); h = Math.max(h, iw * r);
-    });
-    w = Math.floor(Math.max(w, Math.min(maxW, LB_MIN_W))); h = Math.floor(h);   // room for the caption and the arrows
+    function fit(cap) {
+      var maxH = Math.max(120, vh - 2 * gap - LB_PAD - cap), w = 0, h = 0;
+      lbItems.forEach(function (it) {                              // each photo at its largest size; the stage holds them all
+        var r = (+it.w > 0 && +it.h > 0) ? it.h / it.w : 0.75;
+        var iw = Math.min(maxW, maxH / r);
+        w = Math.max(w, iw); h = Math.max(h, iw * r);
+      });
+      return [Math.floor(Math.max(w, Math.min(maxW, LB_MIN_W))), Math.floor(h)];   // room for the caption and the arrows
+    }
+    var cap = lbCapHeight(maxW), wh = fit(cap);                    // first at the widest stage, then at the stage it gets
+    var cap2 = lbCapHeight(wh[0]);                                 // (the caption spans the photo frame's width)
+    if (cap2 !== cap) { cap = cap2; wh = fit(cap); }
+    var w = wh[0], h = wh[1];
     lbFrame.style.width = w + "px"; lbFrame.style.height = h + "px";
-    lbStage.style.width = (w + 2 * LB_PAD) + "px";                 // a long caption wraps (two lines at most), it never widens the stage
+    lbStage.style.width = (w + 2 * LB_PAD) + "px";                 // a long caption wraps, it never widens the stage
+    lbCap.style.height = cap + "px";
     lbImg.sizes = w + "px";
   }
   function showLb(i) {
@@ -273,6 +297,25 @@
       return { src: t.dataset.src, srcset: t.dataset.srcset, w: t.dataset.w, h: t.dataset.h, alt: t.dataset.alt, cap1: t.dataset.cap1, cap2: t.dataset.cap2, cutout: t.classList.contains("is-cutout") };
     }) : [{ src: main.currentSrc || main.src, srcset: main.srcset, w: main.getAttribute("width"), h: main.getAttribute("height"), alt: main.alt, cap1: capModel && capModel.textContent, cap2: capDesc && capDesc.textContent, cutout: figure.classList.contains("is-cutout") }];
     var index = 0;
+    // the caption band is as tall as the longest description of this gallery needs at the current width (1 – 3 lines,
+    // up to 5 on a phone), so a long caption is shown in full and nothing below moves when the photo changes
+    function fitCaption() {
+      if (!capDesc || !items.length) return;
+      var probe = d.createElement("span"), cw = capDesc.clientWidth;
+      if (!cw) return;
+      probe.style.cssText = "position:absolute;visibility:hidden;left:-9999px;top:0;display:block;white-space:normal;font-size:13px;line-height:20px;width:" + cw + "px";
+      figure.appendChild(probe);
+      var lines = 1;
+      items.forEach(function (it) { probe.textContent = it.cap2 || it.alt || ""; lines = Math.max(lines, Math.round(probe.scrollHeight / 20)); });
+      probe.remove();
+      figure.style.setProperty("--cap-lines", Math.min(cw < 460 ? 5 : 3, lines));
+    }
+    fitCaption();
+    var fitW = window.innerWidth, fitT;
+    window.addEventListener("resize", function () {
+      if (window.innerWidth === fitW) return;          // a phone's toolbar showing or hiding changes only the height
+      fitW = window.innerWidth; clearTimeout(fitT); fitT = setTimeout(fitCaption, 150);
+    });
     function show(i) {
       index = (i + items.length) % items.length;
       var it = items[index];

@@ -681,9 +681,20 @@ def prepare_family(f):
             key, cap = (k, None) if isinstance(k, str) else (k[0], k[1])
             if key in manifest:
                 im = img(key)
-                ims.append(dict(im, caption=cap or re.split(r"[:—–,]", im["alt"])[0].strip()))
+                ims.append(dict(im, caption=cap or re.split(r"[:—–,]", im["alt"])[0].strip(), prog=CONTROL_PROG.get(key)))
         f["control"] = dict(f["control"], images=ims)
     return f
+
+
+# a short line under each control in the control note: how it is programmed (the owner, Oct 30 2026: "2D or 3D under each model");
+# the kinds follow the control comparison in the press brake buying guide
+CONTROL_PROG = {
+    "ctl-esa-s840-card": "2D programming", "ctl-esa-s875w-card": "3D programming",
+    "ctl-delem-da66s": "2D programming", "ctl-delem-da69s": "3D programming",
+    "ctl-delem-da53tx": "Numeric programming", "ctl-delem-da58tx": "2D programming", "ctl-cybelec-ct12": "2D programming",
+    "ctl-scs920": "Graphic programming", "ctl-estun-e21ps": "Numeric (NC)", "ctl-estun-e315ps": "Numeric (NC)",
+    "ctl-delem-da41t": "Numeric (NC)", "ctl-esa-s630": "Numeric and 2D", "dn-det-esabend-3d": "3D offline software",
+}
 
 
 def feature_gallery(f):
