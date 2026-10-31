@@ -98,6 +98,9 @@
     "dn-xl-1",
     "dn-xl-3",
     "dn-xl-p-tandem-9200",
+    "dn-xl-4000x600",
+    "dn-xl-4000x320",
+    "dn-tandem-6000x600",
     "dn-xl-throat",
     "dn-xl-xr-gauge",
     "dn-xl-p-front-arms-std",
@@ -126,6 +129,7 @@
     "dn-xl-q-finger",
     "dn-xl-ram-slide",
     "dn-xl-p-die-channel",
+    "dn-xl-wila",
     "dn-xl-q-quick-release",
     "dn-xl-q-euro-american",
     "dn-xl-q-es-clamp",
@@ -977,7 +981,8 @@
     "size": "PDF · 9 MB · imperial units"
    },
    "group": "pb-hydraulic",
-   "show_optional": true
+   "show_optional": true,
+   "layout": "stacked"
   },
   "dn-xl-1560": {
    "id": "dn-xl-1560",
@@ -1334,6 +1339,9 @@
     "dn-ddm-2",
     "dn-ddm-1",
     "dn-ddm-3",
+    "dn-ddm-5020",
+    "dn-ddm-5020-side",
+    "dn-det-ddm-rear",
     "dn-ddm-web-1",
     "dn-ddm-video-1",
     "dn-ddm-control"
@@ -1713,9 +1721,11 @@
    "images": [
     "dn-dds-1",
     "dn-dds-2",
+    "dn-dds-4013",
     "dn-dds-video",
     "dn-dds-3",
-    "dn-dds-4"
+    "dn-dds-4",
+    "dn-dds-ballscrew"
    ],
    "videos": [
     {
@@ -1923,9 +1933,16 @@
     "dn-gfl-3",
     "dn-gfl-2",
     "dn-gfl-1",
+    "dn-gfl-3015",
+    "dn-gfl-6020",
+    "dn-gfl-open",
+    "dn-gfl-frame",
+    "dn-gfl-head",
     "dn-gfl-video-1",
     "dn-gfl-video-2",
-    "dn-gfl-control"
+    "dn-gfl-control",
+    "dn-gfl-part",
+    "dn-gfl-sheet"
    ],
    "videos": [
     {

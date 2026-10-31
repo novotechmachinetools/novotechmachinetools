@@ -30982,5 +30982,194 @@
   "quality": 82,
   "cutout": true,
   "cut_size": 1024
+ },
+ "dn-xl-4000x600": {
+  "src": "tools/src-images/dealer-pl/dn-xl-4000x600.jpg",
+  "alt": "Dener XL 4000 × 600: 661 US tons (600 t) × 13 ft hydraulic CNC press brake, with the CNC control on its swing arm and the foot pedal",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-xl-4000x320": {
+  "src": "tools/src-images/dealer-pl/dn-xl-4000x320.jpg",
+  "alt": "Dener XL 4000 × 320: 353 US tons (320 t) × 13 ft, front view with the front sheet supports, the foot pedal and the CNC control on its swing arm",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-tandem-6000x600": {
+  "src": "tools/src-images/dealer-pl/dn-tandem-6000x600.jpg",
+  "alt": "Tandem of two XL 6000 × 600 press brakes: 40 ft and 1,323 US tons (1,200 t) bent from one control",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-xl-wila": {
+  "src": "tools/src-images/dealer-pl/dn-xl-wila.jpg",
+  "alt": "Wila New Standard upper tool holder on the ram — Wila mechanical or hydraulic tool clamping is optional on the XL",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-ddm-5020": {
+  "src": "tools/src-images/dealer-pl/dn-ddm-5020.jpg",
+  "alt": "Dener DDM 5020 servo-electric press brake: 55 US tons (50 t) × 6.7 ft, front view",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-ddm-5020-side": {
+  "src": "tools/src-images/dealer-pl/dn-ddm-5020-side.jpg",
+  "alt": "Dener DDM 5020 servo-electric press brake — three-quarter view with the front supports and the foot pedal",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-dds-4013": {
+  "src": "tools/src-images/dealer-pl/dn-dds-4013.jpg",
+  "alt": "Dener DDS 4013 ball-screw electric press brake: 44 US tons (40 t) × 4.3 ft, with the CNC control on its swing arm and the foot pedal",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-dds-ballscrew": {
+  "src": "tools/src-images/dealer-pl/dn-dds-ballscrew.jpg",
+  "alt": "DDS ram drive: the servo motor turns a ball screw that moves the ram — no cylinders, no hydraulic oil",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-das-3006": {
+  "src": "tools/src-images/dealer-pl/dn-das-3006.jpg",
+  "alt": "Dener DAS 3006 CNC hydraulic guillotine shear: 1/4″ (6 mm) × 10 ft, with the CNC control on its arm",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-das-6006": {
+  "src": "tools/src-images/dealer-pl/dn-das-6006.jpg",
+  "alt": "Dener DAS 6006 CNC hydraulic guillotine shear: 1/4″ (6 mm) × 20 ft, with the front support arms",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-bs-3013": {
+  "src": "tools/src-images/dealer-pl/dn-bs-3013.jpg",
+  "alt": "Dener BS 3013 hydraulic swing beam shear: 1/2″ (13 mm) × 10 ft, with the NC control and the foot pedal",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-bs-3010": {
+  "src": "tools/src-images/dealer-pl/dn-bs-3010.jpg",
+  "alt": "Dener BS 3010 hydraulic swing beam shear: 3/8″ (10 mm) × 10 ft",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-bs-3006": {
+  "src": "tools/src-images/dealer-pl/dn-bs-3006.jpg",
+  "alt": "Dener BS 3006 hydraulic swing beam shear: 1/4″ (6 mm) × 10 ft, with the rear guard fence",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-bs-panel": {
+  "src": "tools/src-images/dealer-pl/dn-bs-panel.jpg",
+  "alt": "HT 071 NC control on the BS: back gauge position, programs and stroke counter, with the mode switches below",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-gfl-3015": {
+  "src": "tools/src-images/dealer-pl/dn-gfl-3015.jpg",
+  "alt": "Dener GFL 3015 fiber laser cutting machine: 5 × 10 ft table, enclosed cabin and pallet changer",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-gfl-6020": {
+  "src": "tools/src-images/dealer-pl/dn-gfl-6020.jpg",
+  "alt": "Dener GFL 6020 fiber laser cutting machine: 6.6 × 20 ft table with the pallet changer",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-gfl-open": {
+  "src": "tools/src-images/dealer-pl/dn-gfl-open.jpg",
+  "alt": "GFL with the cabin door open: the cutting head on the gantry, and the CNC control on its arm",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-gfl-frame": {
+  "src": "tools/src-images/dealer-pl/dn-gfl-frame.jpg",
+  "alt": "GFL frame: stress-relieved welded bed, the gantry with the cutting head, and the pallet changer",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-gfl-head": {
+  "src": "tools/src-images/dealer-pl/dn-gfl-head.jpg",
+  "alt": "GFL cutting head on the Z axis, with the status light strips",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-gfl-part": {
+  "src": "tools/src-images/dealer-pl/dn-gfl-part.jpg",
+  "alt": "Sample part cut from thick steel plate on a GFL fiber laser",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-gfl-sheet": {
+  "src": "tools/src-images/dealer-pl/dn-gfl-sheet.jpg",
+  "alt": "Sample nest: S-shaped parts cut from one steel sheet on a GFL fiber laser",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
  }
 }

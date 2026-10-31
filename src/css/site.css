@@ -289,6 +289,17 @@ small { font-size: .85em; }
 .family-text { grid-area: text; }
 .family-vids { grid-area: vids; min-width: 0; }
 .family-vids .family-videos, .family-vids .vid-carousel { margin-top: 0; }
+/* trial layout, Dener XL only (the owner, Oct 31 2026): on desktop the gallery runs across the page, the video strip under it,
+   then the text — standard and optional equipment side by side; phones and tablets keep the usual stacked order */
+@media (min-width: 961px) {
+  .family.is-stacked .family-grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "vids" "text"; gap: 28px; }
+  .family.is-stacked .gallery-main .gallery-link::before { padding-top: 46%; }
+  .family.is-stacked .gallery-thumbs { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .family.is-stacked .gallery-thumbs .thumb { height: 78px; }
+  .family.is-stacked .family-text > .summary { max-width: 96ch; }
+  .family.is-stacked .equip { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; align-items: start; margin-bottom: 8px; }
+  .family.is-stacked .equip .features { max-width: none; }
+}
 @media (max-width: 960px) {
   .family-grid { grid-template-areas: "media" "vids" "text"; }
   .family-text { display: flex; flex-direction: column; }

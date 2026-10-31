@@ -557,8 +557,10 @@ HPB_FAMILIES = [
                  "DA-58Tx, DA-66S / 69S controls, 6-axis back gauges, DSP laser protection, sheet followers and Wila clamping are options.",
          features=["Mild steel to 1/4″ over 10 ft on the 110 t, 5/16″ on the 135 t, 3/8″ over 13 ft on the 220 t and 1/2″ over 13 ft on the 300 t (V = 8 × thickness)"] + PB_STD,
          optional=PB_OPT,
-         images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-wad-robot", "vl-pb-da53", "vl-pb-da58", "vl-pb-backgauge", "vl-pb-clamps", "vl-pb-quickclamp",
-                 "vl-pb-hydclamp", "vl-pb-clamp-open", "vl-pb-cylinders", "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-crowning", "vl-pb-dsp", "vl-pb-follower-detail"],
+         # the two Delem control photos (shown in the control box below), the hydraulic-clamp, open-clamp, crowning and sheet-follower
+         # renders are off the gallery (the owner, Oct 31 2026)
+         images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-wad-robot", "vl-pb-backgauge", "vl-pb-clamps", "vl-pb-quickclamp",
+                 "vl-pb-cylinders", "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-dsp"],
          videos=vids(("gYyQIv5HRME", "WAD-110T/3200 CNC press brake — 10 ft × 121 US tons, Delem DA-53TX, mild-hybrid servo drive")),
          # the die-alignment video (KyNWOyaBKDM) was filmed on a Dener brake: off the WAD section (owner, Oct 30 2026); the channel's
          # WADE / DSP-laser videos show the supplier's badges, so they stay off the page too

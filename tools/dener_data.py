@@ -277,7 +277,8 @@ CTL_DDS = {"title": "ESA S840 2D as standard; ESA S875 W as an option",
            "images": ["ctl-esa-s840-card", "ctl-esa-s875w-card"]}
 
 PB_FAMILIES = [
-    dict(id="dn-xl", control=CTL_XL, show_optional=True, group="pb-hydraulic", page=P_PB, brand=BRAND,
+    dict(id="dn-xl", control=CTL_XL, show_optional=True, layout="stacked",   # trial: gallery and videos across the page (owner, Oct 31 2026)
+         group="pb-hydraulic", page=P_PB, brand=BRAND,
          name="XL hydraulic CNC press brakes, 66 – 661 US tons × 5 – 20 ft",
          short="XL hydraulic press brakes",
          models_label="XL 1560 – XL 60600 · 18 models",
@@ -305,11 +306,11 @@ PB_FAMILIES = [
          # picture, and the CNC crowning photo his second picture; the front support arms of the XL under 175 t and the manual
          # crowning (option) his pictures too, upscaled 4x in one Real-ESRGAN x4plus pass (tools/esrgan4.py), his photo of the back safety covers (standard) and of the sheet followers
          # with extended parking (option) (Oct 30 2026)
-         images=["dn-xl-1", "dn-xl-3", "dn-xl-p-tandem-9200", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports",
+         images=["dn-xl-1", "dn-xl-3", "dn-xl-p-tandem-9200", "dn-xl-4000x600", "dn-xl-4000x320", "dn-tandem-6000x600", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports",
                  "dn-xl-p-dsp-laser", "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning", "dn-xl-p-manual-crowning",
                  "dn-xl-p-laser-angle", "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-xl-control", "dn-xl-g-esa-s840",
                  "dn-xl-g-esa-s875w", "dn-xl-g-delem-da66s", "dn-xl-g-delem-da69s", "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis",
-                 "dn-det-bg-6axis-atf", "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-ram-slide", "dn-xl-p-die-channel",
+                 "dn-det-bg-6axis-atf", "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-ram-slide", "dn-xl-p-die-channel", "dn-xl-wila",
                  "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2"],
          # the last nine photos at the end of the gallery, in the owner's order (Oct 31 2026)
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),
@@ -376,7 +377,7 @@ PB_FAMILIES = [
                  "fast — the machine for a job shop that bends all day.",
          features=["Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability", "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake"] + PB_STD_DDM,
          optional=PB_OPT_DDM,
-         images=["dn-ddm-2", "dn-ddm-1", "dn-ddm-3", "dn-ddm-web-1", "dn-ddm-video-1", "dn-ddm-control"],
+         images=["dn-ddm-2", "dn-ddm-1", "dn-ddm-3", "dn-ddm-5020", "dn-ddm-5020-side", "dn-det-ddm-rear", "dn-ddm-web-1", "dn-ddm-video-1", "dn-ddm-control"],
          videos=vids(("_Aqyyfk97KI", "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake"), ("dlmcihzfRuI", "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake"),
                      ("ZujRJUhckG4", "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake"), ("da7UnOripzc", "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake"),
                      ("30squAhhy_o", "CNC hydraulic press brake vs. servo-electric press brake"), ("qLRQDobmnXQ", "DENER DDM servo-electric press brake robot cell"),
@@ -392,7 +393,7 @@ PB_FAMILIES = [
                  "and a laser finger guard as options. Plugs into a standard panel and goes through a normal door.",
          features=["Ball-screw ram drive with Lenze servo technology; up to 50 % energy saving", "Monoblock frame, small throat, 14.8″ daylight for box bending"] + PB_STD_DDS,
          optional=PB_OPT_DDS,
-         images=["dn-dds-1", "dn-dds-2", "dn-dds-video", "dn-dds-3", "dn-dds-4"],
+         images=["dn-dds-1", "dn-dds-2", "dn-dds-4013", "dn-dds-video", "dn-dds-3", "dn-dds-4", "dn-dds-ballscrew"],
          videos=vids(("JVG9kw1nIGk", "DENER DDS 4 ft × 30 ton ball-screw electric press brake"), ("R5D3JCTN-Ww", "Small press brake — DDS 4013 ball-screw press brake"),
                      ("Myd9TVSUFj8", "DENER DDS 2050 — 1.6 ft × 20 ton ball-screw servo-electric press brake"), ("sq1YPi0sQTU", "Bending a water-sealed pan on the DDS ball-screw press brake"),
                      ("nlCZhY7olZ8", "DDS 4013 — 100 % electric ball-screw press brake")),
@@ -489,7 +490,7 @@ SHEAR_FAMILIES = [
                  "Single-point blade-gap adjustment, sheet slider table and squaring arm are standard.",
          features=["1/4″ to 5/8″ (6 – 16 mm) mild steel; 5/32″ to 15/32″ stainless; 5/16″ to 7/8″ aluminum"] + SH_STD_BS,
          optional=SH_OPT_BS,
-         images=["dn-bs-2", "dn-bs-1", "dn-bs-3", "dn-shear-video-2"],
+         images=["dn-bs-2", "dn-bs-1", "dn-bs-3", "dn-bs-3013", "dn-bs-3010", "dn-bs-3006", "dn-bs-panel", "dn-shear-video-2"],
          videos=vids(("dla5MjevgT0", "DENER BS 3006 — 10 ft × 1/4″ swing beam shear with NC control"), ("3zHK_2sp3U0", "DENER BS 3006 — 10 ft × 1/4″ hydraulic shear"),
                      ("hnrRt3WFhqw", "DENER BS 3006 NC shear — 10 ft × 1/4″"), ("54vb6tx96aI", "NC / CNC hydraulic shears — DENER AS and BS series"),
                      ("WhowsXg9Z84", "NC hydraulic shear with pneumatic sheet support")),
@@ -504,7 +505,7 @@ SHEAR_FAMILIES = [
                  "standard. Thirteen models: 1/4″ to 3/4″ (6 – 20 mm) mild steel over 10, 13 and 20 ft, from 8,000 to 55,000 kg.",
          features=["1/4″ to 3/4″ (6 – 20 mm) mild steel, 5/32″ to 9/16″ stainless, over 10 – 20 ft; up to 25 cuts a minute"] + SH_STD_DAS,
          optional=SH_OPT_DAS,
-         images=["dn-das-3", "dn-das-1", "dn-das-2", "dn-shear-web", "dn-shear-video-1"],
+         images=["dn-das-3", "dn-das-1", "dn-das-2", "dn-das-3006", "dn-das-6006", "dn-shear-web", "dn-shear-video-1"],
          videos=vids(("wtCPgw_5GaY", "DENER DAS 3006 — 10 ft × 1/4″ CNC hydraulic shear with pneumatic back support"), ("eQ7NqRHVSvM", "CNC hydraulic metal shear AS 3006 DENER"),
                      ("54vb6tx96aI", "NC / CNC hydraulic shears — DENER AS and BS series")),
          specs=spec([T_DAS], SH_GK, SH_G_FROM, NOTE_SH)),
@@ -560,7 +561,7 @@ LASER_FAMILIES = [
                  "pneumatic extraction and scrap boxes that keep the floor clean. The machine for a job shop that cuts all day.",
          features=["1.5 G acceleration, 394 ft/min (120 m/min) axis speed, ±0.03 mm positioning", "3 to 40 kW fiber sources; 6 kW cuts 3/4″ mild steel, 12 kW 1″"] + LS_STD,
          optional=LS_OPT,
-         images=["dn-gfl-3", "dn-gfl-2", "dn-gfl-1", "dn-gfl-video-1", "dn-gfl-video-2", "dn-gfl-control"],
+         images=["dn-gfl-3", "dn-gfl-2", "dn-gfl-1", "dn-gfl-3015", "dn-gfl-6020", "dn-gfl-open", "dn-gfl-frame", "dn-gfl-head", "dn-gfl-video-1", "dn-gfl-video-2", "dn-gfl-control", "dn-gfl-part", "dn-gfl-sheet"],
          videos=vids(("P3ynLUu2VYU", "DENER GFL 10 × 5 ft 6 kW laser cutting machine"), ("VjuvZWb_O_g", "DENER GFL laser cutting machine"),
                      ("0Cz5xYoNVec", "DENER GFL laser cutting machine"), ("NxTq4uw3n5k", "DENER GFL laser cutting machine"),
                      ("L9fTrifVFiA", "DENER 6 kW / 4 kW / 2 kW fiber laser cutting comparison"), ("C0mG6rJkHdU", "6 kW fiber laser cutting 15 mm mild steel"),
