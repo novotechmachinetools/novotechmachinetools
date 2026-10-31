@@ -597,7 +597,7 @@ HPB_FAMILIES = [
          # the die-alignment video (KyNWOyaBKDM) was filmed on a Dener brake: off the WAD section (owner, Oct 30 2026); the channel's
          # WADE / DSP-laser videos show the supplier's badges, so they stay off the page too
          specs=spec([T_WAD], PB_GK, PB_G_FROM, NOTE_PB)),
-    dict(id="vl-wad-heavy", control=CTL_WAD, group="pb-cnc", page=P_HPB, brand=BRAND,
+    dict(id="vl-wad-heavy", group="pb-cnc", page=P_HPB, brand=BRAND,   # no control box on the heavy-duty machines (the owner, Oct 31 2026)
          name="Heavy-duty CNC press brakes, 441 – 1,323 US tons × 13 – 26 ft, and tandems",
          short="Heavy-duty & tandem press brakes",
          models_label="WAD-400T/4000 – WAD-1200T/8000 · 21 models · tandem to 60 ft",
