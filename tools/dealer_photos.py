@@ -32,6 +32,10 @@ def P(alt, boxes=(), cut=True, section="dener", clone=(), crop=None, polys=(), s
                 strokes=list(strokes), plates=list(plates))
 
 
+def BK(alt, boxes=(), cut=True, **kw):   # Bekamak, sold under its own brand: the photos are used as they are
+    return P(alt, boxes, cut=cut, section="bandsaw", **kw)
+
+
 def S(alt, boxes=(), cut=True, **kw):    # NovoTech premium line (Şahinler-built): the maker's name and the distributor's marks go
     return P(alt, boxes, cut=cut, section="sahinler", **kw)
 
@@ -207,6 +211,65 @@ PHOTOS = {
                                 cut=False),
     "shd-efm6-clamping": S("Vacuum cups of the EFM 6 holding the sheet", cut=False),
     "shd-efm6-part": S("Elliptical head cut and flanged on the EFM 6", cut=False),
+    # Bekamak band saws and circular saws: the maker's own photos from the dealer's site, chosen where they add a model,
+    # a view or a detail the galleries did not have (repeats, people, plant floors and Polish screens left out)
+    "bkd-bmso-330cs-rear": BK("Bekamak BMSO 330CS from the rear: the band wheel housing, the drive and the roller table", cut=False),
+    "bkd-bmso-420cs-rear": BK("Bekamak BMSO 420CS from the rear, with the electrical cabinet and the mesh guards"),
+    "bkd-bmso-820cs-vise": BK("Hydraulic vise and the cutting area of the Bekamak BMSO 820CS", cut=False),
+    "bkd-bmso-420cs-drive": BK("Drive motor and gearbox of the Bekamak BMSO 420CS", cut=False),
+    "bkd-bmso-570cs-blade": BK("Bekamak BMSO 570CS: the blade between its guide arms, over the infeed rollers", cut=False),
+    "bkd-bmso-270dgs-1": BK("Bekamak BMSO 270DGS motorized-feed double-miter band saw with its safety fences and control panel"),
+    "bkd-bmso-270dgs-2": BK("Bekamak BMSO 270DGS from the infeed side, with the safety fences"),
+    "bkd-bmso-270dgs-vise": BK("Bekamak BMSO 270DGS: the feed vise and the cutting vise on their linear guides", cut=False),
+    "bkd-bmso-270dgs-cut": BK("Cutting area of the Bekamak BMSO 270DGS: blade guides, coolant lines and the chip grid", cut=False),
+    "bkd-bmso-270dgs-panel": BK("Control panel of the Bekamak BMSO 270DGS: touch screen, selector switches and emergency stop", cut=False),
+    "bkd-bmso-270dgs-screw": BK("Ball screw and linear guide of the Bekamak BMSO 270DGS feed", cut=False),
+    "bkd-bmso-440cgs-1": BK("Bekamak BMSO 440CGS NC automatic miter double-column band saw with its console"),
+    "bkd-bmso-cgs-screw": BK("Ball screw of the Bekamak BMSO CGS feed", cut=False),
+    "bkd-bmso-540cgs-drive": BK("Drive motor and gearbox of the Bekamak BMSO 540CGS", cut=False),
+    "bkd-bmso-540cgs-panel": BK("Console of the Bekamak BMSO 540CGS: Omron touch screen, selector switches and emergency stop", cut=False),
+    "bkd-bmso-320gs-bundle": BK("Bekamak BMSO 320GS cutting a bundle of rectangular tubes", cut=False),
+    "bkd-bmso-335xs-1": BK("Bekamak BMSO 335XS production band saw with its console"),
+    "bkd-bmso-335xs-2": BK("Bekamak BMSO 335XS from the front"),
+    "bkd-bmso-420xs-1": BK("Bekamak BMSO 420XS production band saw"),
+    "bkd-bmso-420xs-2": BK("Bekamak BMSO 420XS with its mobile console"),
+    "bkd-bmso-420xs-rear": BK("Bekamak BMSO 420XS from the rear, with the electrical cabinet and the mesh guards"),
+    "bkd-bmso-825xs-rear": BK("Bekamak BMSO 825XS from the rear: the columns, the drive and the infeed", cut=False),
+    "bkd-bmso-660xs-open": BK("Bekamak BMSO 660XS with the wheel guards open: the band wheels and the blade path", cut=False),
+    "bkd-bmso-825xs-vise": BK("Vise and blade guide arms of the Bekamak BMSO 825XS", cut=False),
+    "bkd-bmso-825xs-screw": BK("Servo motor and ball screw of the Bekamak BMSO 825XS bow feed", cut=False),
+    "bkd-bmsy-440cdgh-1": BK("Bekamak BMSY 440CDGH twin-miter double-column band saw with its control cabinet"),
+    "bkd-bmsy-440cdgh-2": BK("Bekamak BMSY 440CDGH swung to a miter"),
+    "bkd-bmsy-440cdgh-rear": BK("Bekamak BMSY 440CDGH from the rear: the drive motor and gearbox on the bow", cut=False),
+    "bkd-bmsy-440cdgh-vise": BK("Vise and turntable of the Bekamak BMSY 440CDGH", cut=False),
+    "bkd-bmsy-750dg-drive": BK("Drive motor and gearbox of the Bekamak BMSY 750DG", cut=False),
+    "bkd-bmsy-dg-pendant": BK("Pendant control of the Bekamak BMSY DG NC", cut=False),
+    "bkd-bmsy-810cgh-cut": BK("Bekamak BMSY 810CGH blade cutting a solid block", cut=False),
+    "bkd-bmsy-810cgh-drive": BK("Motor and planetary gearbox of the Bekamak BMSY 810CGH", cut=False),
+    "bkd-bmsy-810cgh-open": BK("Bekamak BMSY 810CGH with both wheel guards open"),
+    "bkd-bmsy-1020c-rear": BK("Bekamak BMSY 1020C from the rear"),
+    "bkd-bmsy-1020c-panel": BK("Control panel of the Bekamak BMSY 1020C", cut=False),
+    "bkd-bmsy-810c-rear": BK("Bekamak BMSY 810C from the rear, with the roller table"),
+    "bkd-bmsy-810c-open": BK("Bekamak BMSY 810C with the wheel guards open"),
+    "bkd-bmsy-460c-vise": BK("Vise and blade guides of the Bekamak BMSY 460C", cut=False),
+    "bkd-bmsy-330c-drive": BK("Drive motor and gearbox of the Bekamak BMSY 330C", cut=False),
+    "bkd-bmsy-1515c-drive": BK("Drive motor and gearbox of the Bekamak BMSY 1515C", cut=False),
+    "bkd-bmsy-1515c-vise": BK("Vise jaws and the roller table of the Bekamak BMSY 1515C", cut=False),
+    "bkd-bmsy-1313c-vise": BK("Bekamak BMSY 1313C: the vise and the blade guide arm", cut=False),
+    "bkd-bmsy-1313c-rollers": BK("Vise jaw and infeed rollers of the Bekamak BMSY 1313C", cut=False),
+    "bkd-bms-dg-vise": BK("Vise and handwheel of the Bekamak BMS DG", cut=False),
+    "bkd-bmsy-360dgh-miter": BK("Bekamak BMSY 360DGH turned to a miter: the bow swivels both ways"),
+    "bkd-bmsy-360dgh-rear": BK("Bekamak BMSY 360DGH from the rear"),
+    "bkd-bmsy-440dgh-tables": BK("Bekamak BMSY 440DGH between its infeed and outfeed roller tables, with the length stop"),
+    "bkd-bmsy-440dgh-drive": BK("Drive motor and gearbox on the bow of the Bekamak BMSY 440DGH", cut=False),
+    "bkd-bmsy-270dgh-table": BK("Bekamak BMSY 270DGH with its roller table"),
+    "bkd-bmsy-270dgh-vise": BK("Vise and miter turntable of the Bekamak BMSY 270DGH", cut=False),
+    "bkd-bmdo-150xs-loader": BK("Bekamak BMDO 150XS with the bundle loading magazine and the outfeed"),
+    "bkd-bmdo-150xs-2": BK("Bekamak BMDO 150XS carbide circular saw"),
+    "bkd-bmdo-100xs-table": BK("Bekamak BMDO 100XS with its outfeed roller table"),
+    "bkd-bmdo-loader": BK("Gravity bundle loading table of the Bekamak BMDO XS"),
+    "bkd-bmdo-75xs-panel": BK("Smart Cutting touch control of the Bekamak BMDO 75XS", cut=False),
+    "bkd-bmdo-blade": BK("Carbide-tipped saw blade and the vise jaws of a Bekamak BMDO XS", cut=False),
 }
 
 

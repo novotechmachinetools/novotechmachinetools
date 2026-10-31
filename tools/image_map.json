@@ -31995,5 +31995,518 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "bkd-bmso-330cs-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-330cs-rear.jpg",
+  "alt": "Bekamak BMSO 330CS from the rear: the band wheel housing, the drive and the roller table",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-420cs-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-420cs-rear.jpg",
+  "alt": "Bekamak BMSO 420CS from the rear, with the electrical cabinet and the mesh guards",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-820cs-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-820cs-vise.jpg",
+  "alt": "Hydraulic vise and the cutting area of the Bekamak BMSO 820CS",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-420cs-drive": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-420cs-drive.jpg",
+  "alt": "Drive motor and gearbox of the Bekamak BMSO 420CS",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-570cs-blade": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-570cs-blade.jpg",
+  "alt": "Bekamak BMSO 570CS: the blade between its guide arms, over the infeed rollers",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-270dgs-1": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-270dgs-1.jpg",
+  "alt": "Bekamak BMSO 270DGS motorized-feed double-miter band saw with its safety fences and control panel",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-270dgs-2": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-270dgs-2.jpg",
+  "alt": "Bekamak BMSO 270DGS from the infeed side, with the safety fences",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-270dgs-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-270dgs-vise.jpg",
+  "alt": "Bekamak BMSO 270DGS: the feed vise and the cutting vise on their linear guides",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-270dgs-cut": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-270dgs-cut.jpg",
+  "alt": "Cutting area of the Bekamak BMSO 270DGS: blade guides, coolant lines and the chip grid",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-270dgs-panel": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-270dgs-panel.jpg",
+  "alt": "Control panel of the Bekamak BMSO 270DGS: touch screen, selector switches and emergency stop",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-270dgs-screw": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-270dgs-screw.jpg",
+  "alt": "Ball screw and linear guide of the Bekamak BMSO 270DGS feed",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-440cgs-1": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-440cgs-1.jpg",
+  "alt": "Bekamak BMSO 440CGS NC automatic miter double-column band saw with its console",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-cgs-screw": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-cgs-screw.jpg",
+  "alt": "Ball screw of the Bekamak BMSO CGS feed",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-540cgs-drive": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-540cgs-drive.jpg",
+  "alt": "Drive motor and gearbox of the Bekamak BMSO 540CGS",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-540cgs-panel": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-540cgs-panel.jpg",
+  "alt": "Console of the Bekamak BMSO 540CGS: Omron touch screen, selector switches and emergency stop",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-320gs-bundle": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-320gs-bundle.jpg",
+  "alt": "Bekamak BMSO 320GS cutting a bundle of rectangular tubes",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-335xs-1": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-335xs-1.jpg",
+  "alt": "Bekamak BMSO 335XS production band saw with its console",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-335xs-2": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-335xs-2.jpg",
+  "alt": "Bekamak BMSO 335XS from the front",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-420xs-1": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-420xs-1.jpg",
+  "alt": "Bekamak BMSO 420XS production band saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-420xs-2": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-420xs-2.jpg",
+  "alt": "Bekamak BMSO 420XS with its mobile console",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-420xs-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-420xs-rear.jpg",
+  "alt": "Bekamak BMSO 420XS from the rear, with the electrical cabinet and the mesh guards",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmso-825xs-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-825xs-rear.jpg",
+  "alt": "Bekamak BMSO 825XS from the rear: the columns, the drive and the infeed",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-660xs-open": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-660xs-open.jpg",
+  "alt": "Bekamak BMSO 660XS with the wheel guards open: the band wheels and the blade path",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-825xs-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-825xs-vise.jpg",
+  "alt": "Vise and blade guide arms of the Bekamak BMSO 825XS",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmso-825xs-screw": {
+  "src": "tools/src-images/dealer-pl/bkd-bmso-825xs-screw.jpg",
+  "alt": "Servo motor and ball screw of the Bekamak BMSO 825XS bow feed",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-440cdgh-1": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-440cdgh-1.jpg",
+  "alt": "Bekamak BMSY 440CDGH twin-miter double-column band saw with its control cabinet",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-440cdgh-2": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-440cdgh-2.jpg",
+  "alt": "Bekamak BMSY 440CDGH swung to a miter",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-440cdgh-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-440cdgh-rear.jpg",
+  "alt": "Bekamak BMSY 440CDGH from the rear: the drive motor and gearbox on the bow",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-440cdgh-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-440cdgh-vise.jpg",
+  "alt": "Vise and turntable of the Bekamak BMSY 440CDGH",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-750dg-drive": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-750dg-drive.jpg",
+  "alt": "Drive motor and gearbox of the Bekamak BMSY 750DG",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-dg-pendant": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-dg-pendant.jpg",
+  "alt": "Pendant control of the Bekamak BMSY DG NC",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-810cgh-cut": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-810cgh-cut.jpg",
+  "alt": "Bekamak BMSY 810CGH blade cutting a solid block",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-810cgh-drive": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-810cgh-drive.jpg",
+  "alt": "Motor and planetary gearbox of the Bekamak BMSY 810CGH",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-810cgh-open": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-810cgh-open.jpg",
+  "alt": "Bekamak BMSY 810CGH with both wheel guards open",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-1020c-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-1020c-rear.jpg",
+  "alt": "Bekamak BMSY 1020C from the rear",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-1020c-panel": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-1020c-panel.jpg",
+  "alt": "Control panel of the Bekamak BMSY 1020C",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-810c-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-810c-rear.jpg",
+  "alt": "Bekamak BMSY 810C from the rear, with the roller table",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-810c-open": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-810c-open.jpg",
+  "alt": "Bekamak BMSY 810C with the wheel guards open",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-460c-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-460c-vise.jpg",
+  "alt": "Vise and blade guides of the Bekamak BMSY 460C",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-330c-drive": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-330c-drive.jpg",
+  "alt": "Drive motor and gearbox of the Bekamak BMSY 330C",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-1515c-drive": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-1515c-drive.jpg",
+  "alt": "Drive motor and gearbox of the Bekamak BMSY 1515C",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-1515c-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-1515c-vise.jpg",
+  "alt": "Vise jaws and the roller table of the Bekamak BMSY 1515C",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-1313c-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-1313c-vise.jpg",
+  "alt": "Bekamak BMSY 1313C: the vise and the blade guide arm",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-1313c-rollers": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-1313c-rollers.jpg",
+  "alt": "Vise jaw and infeed rollers of the Bekamak BMSY 1313C",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bms-dg-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bms-dg-vise.jpg",
+  "alt": "Vise and handwheel of the Bekamak BMS DG",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-360dgh-miter": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-360dgh-miter.jpg",
+  "alt": "Bekamak BMSY 360DGH turned to a miter: the bow swivels both ways",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-360dgh-rear": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-360dgh-rear.jpg",
+  "alt": "Bekamak BMSY 360DGH from the rear",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-440dgh-tables": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-440dgh-tables.jpg",
+  "alt": "Bekamak BMSY 440DGH between its infeed and outfeed roller tables, with the length stop",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-440dgh-drive": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-440dgh-drive.jpg",
+  "alt": "Drive motor and gearbox on the bow of the Bekamak BMSY 440DGH",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-270dgh-table": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-270dgh-table.jpg",
+  "alt": "Bekamak BMSY 270DGH with its roller table",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmsy-270dgh-vise": {
+  "src": "tools/src-images/dealer-pl/bkd-bmsy-270dgh-vise.jpg",
+  "alt": "Vise and miter turntable of the Bekamak BMSY 270DGH",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmdo-150xs-loader": {
+  "src": "tools/src-images/dealer-pl/bkd-bmdo-150xs-loader.jpg",
+  "alt": "Bekamak BMDO 150XS with the bundle loading magazine and the outfeed",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmdo-150xs-2": {
+  "src": "tools/src-images/dealer-pl/bkd-bmdo-150xs-2.jpg",
+  "alt": "Bekamak BMDO 150XS carbide circular saw",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmdo-100xs-table": {
+  "src": "tools/src-images/dealer-pl/bkd-bmdo-100xs-table.jpg",
+  "alt": "Bekamak BMDO 100XS with its outfeed roller table",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmdo-loader": {
+  "src": "tools/src-images/dealer-pl/bkd-bmdo-loader.jpg",
+  "alt": "Gravity bundle loading table of the Bekamak BMDO XS",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "bkd-bmdo-75xs-panel": {
+  "src": "tools/src-images/dealer-pl/bkd-bmdo-75xs-panel.jpg",
+  "alt": "Smart Cutting touch control of the Bekamak BMDO 75XS",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "bkd-bmdo-blade": {
+  "src": "tools/src-images/dealer-pl/bkd-bmdo-blade.jpg",
+  "alt": "Carbide-tipped saw blade and the vise jaws of a Bekamak BMDO XS",
+  "section": "bandsaw",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
  }
 }
