@@ -1638,6 +1638,21 @@ def main():
                         p["related_article"] = {"href": f"{hub['slug']}.html#{hub.get('article_id') or 'buying-guide'}", "label": hub.get("article_title") or "Buying guide"}
                     covered = {m["href"] for m in g["members"]} | {hub["slug"] + ".html"} | ({alt["href"]} if alt else set())
                     p["related_pages"] = [r for r in p.get("related_pages", []) if r["href"] not in covered]   # cards already link to these
+    # the related links ("More … from NovoTech", "Machines in this article") show a small picture of the page they open (the owner,
+    # Oct 31 2026): the target page's hero image
+    for p in loaded:
+        for key in ("related_pages", "related"):
+            items = p.get(key)
+            if not isinstance(items, list):
+                continue
+            out = []
+            for r in items:
+                if isinstance(r, dict) and r.get("href"):
+                    t = by_slug_all.get(r["href"].split("#")[0].replace(".html", "")) or {}
+                    k = t.get("hero_image") or t.get("image")
+                    r = dict(r, image=img(k) if isinstance(k, str) and k in manifest else None)
+                out.append(r)
+            p[key] = out
     CATALOG.update(build_catalog(loaded))
     json.dump(build_nav_preview(loaded), open(os.path.join(DIST, "nav-preview.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     shown = set()

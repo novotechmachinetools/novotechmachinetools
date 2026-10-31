@@ -645,7 +645,7 @@ HPB_FAMILIES = [
          # caption) are off the gallery (the owner, Oct 31 2026)
          images=["vl-nc-1", "vl-nc-front", "vl-nc-34", "vl-nc-34c", "vl-nc-rear", "vl-nc-backgauge", "vl-nc-torsion", "vl-nc-crowning",
                  "vl-nc-photo-2", "vl-nc-photo-3"],
-         videos=vids(("0imM4bArpBc", "5 ft × 50 ton hydraulic press brake with Estun NC control")),
+         videos=[],      # the 5 ft × 50 ton NC video (0imM4bArpBc) is off the site (the owner, Oct 31 2026)
          specs=spec([T_NC], PB_GK, PB_G_FROM, NOTE_PB)),
 ]
 
@@ -689,7 +689,7 @@ COMPACT_FAMILIES = [
          # back gauge; the generic back-gauge-motor photo gave way to the real drive
          images=["vl-cp-nc-adh", "vl-cp-e21", "vl-cp-nc-buttons", "vl-cp-nc-pedal", "vl-cp-nc-bg-fingers", "vl-cp-nc-bg-drive",
                  "vl-cp-nc-cabinet", "vl-cp-nc-screw", "vl-cp-nc-valve", "vl-nc-torsion"],
-         videos=vids(("0imM4bArpBc", "5 ft × 50 ton hydraulic press brake with Estun NC control")),
+         videos=[],      # the 5 ft × 50 ton NC video (0imM4bArpBc) is off the site (the owner, Oct 31 2026)
          specs=spec([T_NC_C], PB_GK, PB_G_FROM, NOTE_PB)),
 ]
 
