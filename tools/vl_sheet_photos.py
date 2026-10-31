@@ -173,7 +173,7 @@ PHOTOS = {
     "vl-pb-robot-cell": R("%E5%9C%B0%E6%8E%A5_w1600.webp", "PB-A panel bender loaded and unloaded by two robots", boxes=[(510, 150, 605, 210)], crop=(0, 60, 1600, 1065), cutout=False),
     "vl-pb-operator": R("05_w1600-23.webp", "Operator at the tool magazine of the automatic tool-change panel bender", boxes=[(920, 170, 1080, 245)], cutout=False),
     "vl-pb-unit": R("01_w1600-32.webp", "Bending unit — upper and lower blades, blank-holder and the sheet manipulator", cutout=False),
-    "vl-pb-tools": R("%E7%BB%B4%E6%8A%A4_w1600_2.webp", "Automatic tool-change magazine of the PB-A", cutout=False),
+    "vl-pb-tools": R("%E7%BB%B4%E6%8A%A4_w1600_2.webp", "Automatic tool-change magazine of the PB-A", boxes=[(1272, 652, 1352, 712)], cutout=False),  # the supplier logo on the operator's shirt (the owner, Oct 31 2026)
     "vl-pb-blades": R("02_w1600-4.webp", "Bending blades forming a flange upward", cutout=False),
     "vl-pb-frame": R("05_w1600-5.webp", "High-grade cast body of the PB-M panel bender", cutout=False),
     "vl-pb-tool-diagram": R("26-28_w1600-1.webp", "Tool-change diagram of the PB-A bending unit", cutout=False),
