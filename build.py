@@ -1435,6 +1435,11 @@ def render_page(page):
         art = re.sub(r'<figure class="guide-figure((?: [a-z-]+)*)" data-img="([^"]+)"(?: data-caption="([^"]*)")?(?: data-alt="([^"]*)")?></figure>', fig, art)
         # two or more half-width figures in a row sit side by side in a grid row (clear of any floated figure above)
         art = re.sub(r'((?:<figure class="guide-figure[^"]*\bis-half\b[^"]*">.*?</figure>\s*){2,})', r'<div class="guide-figure-row">\1</div>', art, flags=re.S)
+        # a small figure floats beside the paragraph that follows it: the pair is one block (display: flow-root), so the photo
+        # stays beside its own topic and never runs down beside the next one; on phones the photo goes under the text (the owner,
+        # Oct 31 2026: "the photo of each topic under it or beside it")
+        art = re.sub(r'((?:<figure class="guide-figure[^"]*\bis-small\b[^"]*">.*?</figure>\s*)+)(<p>.*?</p>)',
+                     r'<div class="guide-pair">\1\2</div>', art, flags=re.S)
         page["article_html"] = art
         page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
         gid = "#" + (page.get("article_id") or "buying-guide")

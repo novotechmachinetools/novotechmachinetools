@@ -350,7 +350,8 @@ PB_FAMILIES = [
                    "Ball-screw X back gauge with 25.6″ (650 mm) travel, fingers with manual R and Z adjustment and micro vernier"] + PB_STD_XL,
          optional=[x for x in PB_OPT_XL if not x.startswith("Tandem")],     # a 5 ft machine is not built in tandem
          images=["dn-xl1560-studio", "dn-xl1560-photo-left", "dn-xl1560-photo-front", "dn-xl1560-photo-right", "dn-xl1560-control",
-                 "dn-xl1560-tooling", "dn-xl1560-tooling-2", "dn-xl1560-backgauge", "dn-xl1560-backgauge-2", "dn-det-eurostamp-tools"],
+                 "dn-xl1560-tooling", "dn-xl1560-tooling-2", "dn-xl1560-backgauge", "dn-xl1560-backgauge-2",
+                 "dn-xl-es-1281", "dn-xl-es-2067"],   # the inch drawings of the standard tools (the owner, Oct 31 2026)
          videos=vids(("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake — the same 5 ft frame class"), ("5FWxGB6hoJI", "XL series hydraulic CNC press brakes"),
                      ("VGd39pN2zBM", "CNC press brake instruction with the ESA control")),
          specs=spec([T_XL_1560], PB_GK, PB_G_FROM, NOTE_PB)),
