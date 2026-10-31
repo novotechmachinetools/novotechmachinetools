@@ -155,9 +155,10 @@ COMPACT = dict(
 )
 
 VIDEOS = {
-    "hydraulic-press-brake": {"intro_video": {"id": "pRxr7CB2pDQ", "title": "XL 13 ft × 220 ton CNC hydraulic press brake with laser angle measurement and sheet follower", "thumb": "video-pRxr7CB2pDQ", "duration": "PT1M30S"},
-                              "intro_video_heading": "The CNC hydraulic press brake at work",
-                              "intro_video_text": "A 13 ft × 220 ton XL bending plate with laser angle measurement and a sheet follower — the premium hydraulic brake in production."},
+    # Dener's introduction film from NovoTech's channel in place of the XL 4000 × 220 clip (the owner, Oct 31 2026)
+    "hydraulic-press-brake": {"intro_video": {"id": "A1i_NljuVQo", "title": "Dener introduction film — the plant in Kayseri, Turkey, where the XL press brakes are built", "thumb": "video-A1i_NljuVQo", "duration": "PT2M52S"},
+                              "intro_video_heading": "Inside the factory where the machines are built",
+                              "intro_video_text": "Dener Makina's introduction film: the plant in Kayseri, Turkey, where Dener has built press brakes since 1974 — the premium-line machines NovoTech sells, installs and supports in Canada."},
     "electric-press-brake": {"intro_video": {"id": "ZujRJUhckG4", "title": "DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake", "thumb": "video-ZujRJUhckG4", "duration": "PT0M51S"},
                              "intro_video_heading": "The servo-electric press brake at work",
                              "intro_video_text": "A 10 ft × 100 ton DDM bending sheet: no hydraulic oil, servo drive, ±0.01 mm repeatability."},
