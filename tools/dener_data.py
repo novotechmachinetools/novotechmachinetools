@@ -382,7 +382,7 @@ PB_FAMILIES = [
                  "fast — the machine for a job shop that bends all day.",
          features=["Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability", "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake"] + PB_STD_DDM,
          optional=PB_OPT_DDM,
-         images=["dn-ddm-2", "dn-ddm-1", "dn-ddm-5020", "dn-ddm-5020-side", "dn-det-ddm-rear", "dn-ddm-web-1", "dn-ddm-video-1", "dn-ddm-control"],
+         images=["dn-ddm-2", "dn-ddm-1", "dn-ddm-5020", "dn-ddm-5020-side", "dn-det-ddm-rear", "dn-ddm-video-1", "dn-ddm-control"],
          videos=vids(("_Aqyyfk97KI", "DENER DDM 4015 — 5 ft × 40 ton servo-electric CNC press brake"), ("dlmcihzfRuI", "DENER DDM 5020 — 7 ft × 50 ton servo-electric press brake"),
                      ("ZujRJUhckG4", "DENER DDM 10030 — 10 ft × 100 ton servo-electric CNC press brake"), ("da7UnOripzc", "DENER DDM 15030 — 10 ft × 150 ton servo-electric press brake"),
                      ("30squAhhy_o", "CNC hydraulic press brake vs. servo-electric press brake"), ("qLRQDobmnXQ", "DENER DDM servo-electric press brake robot cell"),
