@@ -47,7 +47,7 @@ WAD = [("WAD-50T/1300", 500, 1300, 130, 160, 13, 160, 500, 350, 200, 200, 1120, 
        ("WAD-80T/2500", 800, 2500, 170, 220, 12, 145, 500, 350, 200, 200, 2050, 300, 150, 460, 8.7, 16, 5.6, 3100, 1600, 2460),
        ("WAD-110T/3200", 1100, 3200, 170, 220, 12, 160, 500, 350, 200, 200, 2700, 400, 200, 480, 10.8, 19, 7.5, 3750, 2202, 2700),
        ("WAD-110T/4100", 1100, 4100, 170, 220, 12, 160, 500, 350, 200, 200, 3600, 400, 200, 480, 10.8, 19, 8.7, 4700, 1800, 2700),
-       ("WAD-135T/3200", 1350, 3200, 170, 220, 10, 130, 500, 350, 200, 200, 2700, 400, 200, 480, 10.8, 19, 8.3, 3800, 1800, 2700),
+       ("WAD-135T/3200", 1350, 3200, 170, 220, 10, 130, 500, 350, 200, 200, 2700, 400, 200, 480, 10.8, 19, 8.8, 3800, 1800, 2700),
        ("WAD-135T/4100", 1350, 4100, 170, 220, 10, 130, 500, 350, 200, 200, 3600, 400, 200, 480, 10.8, 19, 10.5, 4700, 1800, 2700),
        ("WAD-170T/3200", 1700, 3200, 300, 160, 10, 100, 500, 350, 200, 200, 2700, 450, 200, 480, 13.2, 25, 10.8, 3800, 2000, 2800),
        ("WAD-170T/4100", 1700, 4100, 300, 160, 10, 100, 500, 350, 200, 200, 3600, 450, 200, 480, 13.2, 25, 12.5, 4700, 2000, 2800),
@@ -458,20 +458,42 @@ NOTE_IW = ("Capacities are the supplier's ratings for steel of up to 65,000 psi 
            "the Q35Y-60 and up have the five stations and the section-shear capacities shown. The model number is the metric tonnage.")
 
 # ------------------------------------------------------------------------------------------------ families
+# WAD standard and optional equipment: the supplier's list, completed from the WAD-135T/3200 quotation sheet (Jan 2026) the owner sent
+# on Oct 31 2026 — without the supplier's name, the valve and pump makers or any price
+PB_CLAMPS = ("Quick-release top-tool clamps — punches load and change from the front without tools; a segmented 2-V die and a sectioned "
+             "punch set (42CrMo, HRC 47), each piece marked with its material and hardness")
 PB_STD = ["Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
-          "Electro-hydraulic servo synchronisation: proportional servo valves, linear scales on both sides, ± 0.01 mm ram repeatability",
+          "Welded mono-block frame of high-yield steel, designed by finite-element analysis and stress-relieved by heat treatment after welding, "
+          "so it keeps its accuracy",
+          "Electro-hydraulic servo synchronisation: proportional servo valves on one integrated manifold (few pipes, few leak points) and linear "
+          "scales on both sides keep the ram parallel to the table — ± 0.01 mm ram repeatability",
           "Mild hybrid drive as standard: a servo motor and servo pump in place of the conventional motor and pump — the pump turns only while the ram "
-          "moves and stops while the machine waits, loads or unloads: 40 – 60 % less energy, cooler oil, much less noise for a quieter shop (about 60 dB, "
-          "and silent while the ram waits), longer life for the pump, seals and valves",
-          "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
-          "Motorised CNC crowning (V axis) on 110 t and up; Schneider electrics; Estun servo drives",
-          "Manual top-tool clamps, a segmented 2-V die and a sectioned punch set (42CrMo, HRC 47); front support arms on linear rail",
-          "DSP laser finger protection under the punch (EN 12622 CAT 4 / SIL 3) with its safety PLC",   # standard on the WAD (owner, Oct 31 2026)
-          "Side guards, enclosed rear guard, anti-panic foot pedal with emergency stop", VOLT]
+          "moves and stops while the machine waits, loads or unloads: 40 – 60 % less energy, oil 18 – 36 °F (10 – 20 °C) cooler, much less noise for a "
+          "quieter shop (about 60 dB, and silent while the ram waits), longer life for the pump, seals and valves",
+          "Servo back gauge on ball screws and linear guides, ± 0.01 mm: one servo motor and a timing belt turn the X screws on both sides together; "
+          "two large stop fingers with four positioning steps",
+          "Motorised CNC crowning (V axis) on 110 t and up: the control works out how the ram and the table deflect and sets the crowning for each "
+          "bend, for the same angle along the whole part",
+          PB_CLAMPS,
+          "Two front sheet support arms that slide on linear guides along the bed",
+          "Schneider electrics, with spare parts available anywhere; Estun servo drives",
+          "DSP laser finger protection under the punch (EN 12622 CAT 4 / SIL 3) with its safety PLC: the ram slows to bending speed just above "
+          "the sheet, and sections of the beam can be muted for box bends",   # standard on the WAD (owner, Oct 31 2026)
+          "Side guards, rear guard, anti-panic foot pedal with emergency stop on a movable stand", VOLT]
+# the heavy-duty machines take tooling sized for their tonnage (the quotation sheet covers the 135 t)
+PB_STD_H = [("Top-tool clamps, segmented die and sectioned punch set sized for the tonnage (42CrMo, HRC 47)" if x == PB_CLAMPS else x) for x in PB_STD]
 PB_OPT = ["Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
           "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
-          "CNC sheet follower supports", "Quick-release top clamps, double-sided quick clamps or Rolleri pneumatic clamps; Wila hydraulic clamping",
-          "Automatic angle measurement", "Hydraulic oil cooler; automatic lubrication", "Tandem machines on one control; robot bending cells", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+          "CNC sheet followers: two arms rise with the sheet through the bend, so large, thin sheets do not sag or whip back",
+          "Double-sided quick clamps for European-style punches with the 8.4 × 3.5 mm safety groove: front clamping for a vertical tool change, "
+          "rear clamping to slide the punches out horizontally",
+          "Rolleri ROL200 PN POWER pneumatic clamping: vertical tool change from the front with full anti-fall safety for European (R1) punches; "
+          "also in a hydraulic version",
+          "Wila New Standard hydraulic clamping: one push-button clamps and seats the whole tool line — up to 80 % less tool-change time",
+          "Safety light curtain: stops the machine when anyone enters the guarded area",
+          "Automatic angle measurement",
+          "Segmented and special tooling: punch and die sections for boxes, acute- and obtuse-angle tools, designed from your part drawings",
+          "Hydraulic oil cooler; automatic lubrication", "Tandem machines on one control; robot bending cells", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 NC_STD = ["Estun E21PS NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, one-way / two-way positioning, stroke counter; inches or millimetres",
           "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
           "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
@@ -550,7 +572,7 @@ HPB_FAMILIES = [
          name="CNC hydraulic press brakes, 55 – 331 US tons × 4 – 20 ft",
          short="CNC press brakes 50 – 300 t",
          models_label="WAD-50T/1300 – WAD-300T/6000 · 25 models",
-         summary="The value-line CNC press brake: electro-hydraulic servo synchronisation with servo valves and linear scales, a servo-driven pump that "
+         summary="The value-line CNC press brake: a welded, stress-relieved mono-block frame, electro-hydraulic servo synchronisation with servo valves and linear scales, a servo-driven pump that "
                  "only runs while the ram moves, a Delem DA-53Tx control and a servo back gauge on ball screws — the same architecture as the European "
                  "machines, built to a price that lets a small shop own a real CNC brake. Twenty-five models on one design, from 55 US tons × 4 ft to "
                  "331 US tons × 20 ft: the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for; from 170 t up the machines have "
@@ -578,7 +600,7 @@ HPB_FAMILIES = [
                  "to 15.7″ and 36″ daylight, twin pumps and twin servo motors from 800 t up, and a 38.6″ (980 mm) back gauge stroke as standard. CNC "
                  "sheet followers, extra-long front supports and tandem configurations — two machines on one control bending to 60 ft — are built to "
                  "order; the 3,000 t × 30 ft machine in the photos shows how far the range goes.",
-         features=["Twin cylinders and twin pumps from 800 t; 38.6″ (980 mm) X back gauge stroke; 11 – 15 ft bed widths"] + PB_STD,
+         features=["Twin cylinders and twin pumps from 800 t; 38.6″ (980 mm) X back gauge stroke; 11 – 15 ft bed widths"] + PB_STD_H,
          optional=PB_OPT + ["Extra-long front supports and CNC sheet followers for plate", "Tandem and tridem machines to 60 ft on one control"],
          images=["vl-wad-heavy", "vl-wad-follower", "vl-wad-tandem", "vl-wad-tandem-2"],
          videos=[],

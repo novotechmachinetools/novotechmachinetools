@@ -80,7 +80,7 @@ PAGE_PB = dict(
          {"q": "Which control comes with the machine?",
           "a": "The Delem DA-53Tx: a 15″ multi-touch numerical control for Y1, Y2, X and R (plus the V crowning axis on the hydraulic brakes from 110 t) with a graphic view of the tools and the product, a tool and material library, and programs with the angle, depth and gauge positions in inches or millimetres. The 18.5″ DA-58Tx adds 2D graphic programming with automatic bend sequencing and collision checks; the 24″ DA-66S 2D graphic programming with a 3D machine view, and the 24″ DA-69S full 3D programming and simulation. The ESA S840 (15.6″, up to 6 axes) and S875 W (21.5″, 3D, Windows PC), the Cybelec CybTouch 12 PS and the 21.5″ SCS920 can be fitted to order. All of them take offline programs from the maker's software (Delem Profile, EsaBend, Cybelec OFT). The NC brakes carry the Estun E21PS — the touch-screen Estun E315PS, the Delem DA-41T and the ESA S630 are the options. The buying guide on the press brake page compares them all."},
          {"q": "What tooling fits?",
-          "a": "A sectioned punch set with a segmented 2-V die and manual top-tool clamps is in the crate — tell us which tooling standard your shop uses and we match the clamping; quick-release clamps, double-sided quick clamps, Rolleri pneumatic clamps and Wila hydraulic clamping are options, and American-style tooling can be fitted with an adapter. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools — and sizes it to your machine."},
+          "a": "A sectioned punch set with a segmented 2-V die is in the crate, held by quick-release top clamps on the WAD CNC press brakes (the punches load and change from the front without tools) and by manual clamps on the NC and electric machines — tell us which tooling standard your shop uses and we match the clamping; double-sided quick clamps, Rolleri pneumatic clamps and Wila hydraulic clamping are options, and American-style tooling can be fitted with an adapter. NovoTech stocks Eurostamp press brake tooling in Canada — punches, dies, radius, hemming and joggle tools — and sizes it to your machine."},
          {"q": "What safety equipment is included?",
           "a": "Side guards, an enclosed rear guard, interlocked doors and an anti-panic foot pedal with emergency stop are standard, and on the WAD CNC press brakes so is DSP laser finger protection (EN 12622 CAT 4 / SIL 3), which watches the zone under the punch and stops the ram if a finger enters it; on the NC and electric machines DSP protection or a light curtain is an option we recommend; in Ontario the machine also needs the pre-start health and safety review, which we prepare the documentation for."},
          {"q": "Can the press brake be automated?",
@@ -198,7 +198,10 @@ def build():
     unused = sorted(set(keys) - used)
     if unused:
         print("photos not used on a page:", unused)
-    missing = sorted(k for k in used - set(keys) if not k.startswith("vl-cp-"))      # vl-cp-*: tools/vl_compact_photos.py
+    # photos registered by other scripts count too: vl-cp-* (tools/vl_compact_photos.py), the WAD factory photos (tools/wad_photos.py),
+    # vl-wadg-mini-1 (painted by hand) — anything already in tools/image_map.json
+    imap = json.load(open(os.path.join(ROOT, "tools", "image_map.json"), encoding="utf-8"))
+    missing = sorted(k for k in used - set(keys) if not k.startswith("vl-cp-") and k not in imap)
     if missing:
         raise SystemExit(f"image keys without a photo: {missing}")
     vids = sorted({v["id"] for f in D.ALL for v in f["videos"]})

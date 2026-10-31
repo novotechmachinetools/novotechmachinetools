@@ -106,7 +106,7 @@ def render(spec, no_inline, budgets=None, tight=None):
         f["minis"] = [img(k) for k in f["images"][1:3]]
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]
         f["series"] = f.get("short", f["name"]).split(" ")[0] if not f.get("series") else f["series"]
-        f["tight"] = (tight or {}).get(fid, 0)       # 1 / 2: smaller photo band and type when the equipment lists overflow
+        f["tight"] = (tight or {}).get(fid, 0)       # 1 / 2 / 3: smaller photo band and type when the equipment lists overflow
         families.append(f)
     layout(families, no_inline, budgets)
     # page numbering: cover 1, contents 2, about 3, then families, back cover
@@ -150,7 +150,7 @@ def build(spec_path, html_only=False):
             over = set(overflowing(pg))
             new = over - no_inline
             spec_over = set(overflowing(pg, "section.page[data-spec]"))
-            squeeze = {fid for fid in over - new if tight.get(fid, 0) < 2}     # inline table already gone: tighten the page
+            squeeze = {fid for fid in over - new if tight.get(fid, 0) < 3}     # inline table already gone: tighten the page
             if not new and not spec_over and not squeeze:
                 if over:
                     print("!! pages still overflow:", sorted(over))

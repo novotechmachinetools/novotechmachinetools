@@ -24,7 +24,7 @@ SECTION = "value-compact"
 PHOTOS = {
     # ---- WAD-50T/1600 (shop photos 1,099 px)
     "vl-cp-wad1600": dict(src="ZHUTU-3.webp", cutout=True, boxes=[(355, 112, 475, 165)], alt="NovoTech WAD-50T/1600 compact CNC press brake, 55 US tons × 5.2 ft, with Delem control"),
-    "vl-cp-clamps": dict(src="2-4.webp", alt="Segmented top-tool holders with quick clamps on the compact CNC press brake (quick clamps are an option)"),
+    "vl-cp-clamps": dict(src="2-4.webp", alt="Segmented top-tool holders with the quick-release clamps of the compact CNC press brake"),
     "vl-cp-backgauge": dict(src="3-4.webp", alt="X-R back gauge of the compact CNC press brake on linear guides and ball screw, with the cable chain"),
     "vl-cp-laser": dict(src="4-3.webp", boxes=[(505, 935, 615, 1010)], alt="DSP laser finger-protection receiver on the compact CNC press brake"),
     "vl-cp-servo": dict(src="5-3.webp", alt="Servo motor of the back gauge axis"),

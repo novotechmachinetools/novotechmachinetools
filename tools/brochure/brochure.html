@@ -103,7 +103,7 @@ h2.title::after { content: ""; display: block; width: .9in; height: 3.5pt; backg
 .fam.inl .cols { margin-top: 4pt; }
 .fam.inl .sub { display: none; }
 .fam.inl h3.tbl { margin-top: 7pt; margin-bottom: 3pt; }
-/* equipment lists that still run into the footer: a lower photo band and smaller type (build_brochure.py, level 1 / 2) */
+/* equipment lists that still run into the footer: a lower photo band and smaller type (build_brochure.py, level 1 / 2 / 3) */
 .fam.tight .photos { height: 2.75in; margin-bottom: 6pt; }
 .fam.tight .summary { font-size: 8.8pt; }
 .fam.tight ul { font-size: 8.1pt; }
@@ -113,6 +113,10 @@ h2.title::after { content: ""; display: block; width: .9in; height: 3.5pt; backg
 .fam.tighter ul { font-size: 7.7pt; }
 .fam.tighter li { margin-bottom: 1.2pt; }
 .fam.tighter h3 { margin: 4pt 0 3pt; }
+.fam.tightest .photos { height: 1.55in; margin-bottom: 4pt; }
+.fam.tightest .summary { font-size: 8.2pt; line-height: 1.38; }
+.fam.tightest ul { font-size: 7.4pt; line-height: 1.32; }
+.fam.tightest li { margin-bottom: 0.9pt; }
 .fam.inl table { margin-bottom: 3pt; }
 .fam.inl th, .fam.inl td { padding: 2pt 4pt; }
 .fam.inl .note, .fam.inl .volt { margin-top: 2pt; }
@@ -204,7 +208,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
 
 {# ---------------------------------------------------------------- families #}
 {% for f in families %}
-<section class="page fam{{ " inl" if f.inline_table else "" }}{{ " tight" if f.tight == 1 else (" tighter" if f.tight >= 2 else "") }}" data-fam="{{ f.id }}">
+<section class="page fam{{ " inl" if f.inline_table else "" }}{{ " tight" if f.tight == 1 else (" tighter" if f.tight == 2 else (" tighter tightest" if f.tight >= 3 else "")) }}" data-fam="{{ f.id }}">
   <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ f.name }}</div><div class="tab"><span>{{ f.series }} series</span></div></div>
   <div class="body">
     <div class="kicker">{{ f.models_label }}</div>
