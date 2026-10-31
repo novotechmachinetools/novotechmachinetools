@@ -1612,6 +1612,16 @@ def main():
     brand_all_pdf_labels(loaded)
     load_catalogue_tons(loaded)
     by_slug_all = {p["slug"]: p for p in loaded}
+    # cross-selling links at the foot of every product page — the machines its buyers also use (content/related.json, the owner,
+    # Oct 31 2026); the section cards below drop the links they already cover
+    rel = json.load(open(os.path.join(ROOT, "content", "related.json"), encoding="utf-8"))
+    for slug, targets in rel["pages"].items():
+        if slug not in by_slug_all:
+            raise SystemExit(f"content/related.json: no page {slug}")
+        for t in targets:
+            if t not in by_slug_all or t not in rel["labels"]:
+                raise SystemExit(f"content/related.json: {slug} → {t}: no such page or no label")
+        by_slug_all[slug]["related_pages"] = [{"href": t + ".html", "label": rel["labels"][t]} for t in targets if t != slug]
     for hub in [p for p in loaded if p.get("hub_compact") and p.get("subpages")]:   # short hubs list every family by brand
         hub["lineup_spec"] = hub_lineup_spec(hub, by_slug_all)
     # every page of a hub's section gets links to the hub and to its sibling pages (cross-linking the benders / cutters / lines pages)

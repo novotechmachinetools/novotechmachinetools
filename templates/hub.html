@@ -333,5 +333,14 @@
 </section>
 {% endif %}
 
+{% if page.related_pages %}
+<section class="related wrap" aria-labelledby="related-title">
+  <h2 id="related-title">{{ page.related_title or 'More machinery from NovoTech' }}</h2>
+  <ul class="related-list">
+    {% for r in page.related_pages %}<li><a class="related-link" href="{{ r.href }}">{% if r.image %}<span class="related-thumb{{ ' is-cutout' if r.image.alpha else '' }}"><img src="{{ r.image.thumb }}" srcset="{{ r.image.thumb_srcset }}" sizes="(max-width: 700px) 92px, 112px" width="112" height="84" alt="" loading="lazy" decoding="async"></span>{% endif %}<span class="arrow">{{ r.label }}</span></a></li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% include "partials/quote.html" %}
 {% endblock %}

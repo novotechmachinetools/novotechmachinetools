@@ -79,9 +79,10 @@ ELECTRIC = dict(
     title="Electric Press Brakes for Sale in Canada — Servo-Electric & Ball-Screw, 3–220 Tons | NovoTech",
     meta="Servo-electric and ball-screw press brakes sold, installed and supported in Canada: 3 to 220 US tons, no hydraulic oil, ±0.01 mm repeatability, about twice the speed and 70 % less power — premium and value lines with CSA panels.",
     h1="Electric press brakes — servo-electric and ball-screw, 3 to 220 US tons",
-    intro="An electric press brake drives the ram with servo motors and ball screws or belts instead of hydraulic cylinders: no oil, no pump "
-          "running idle, ±0.01 mm repeatability, bending speeds to 30 mm/s and about 70 % less power — usually the better buy for 20 ga to 1/4″ "
-          "sheet in a job shop, an enclosure or HVAC plant, or anywhere clean and quiet matters. NovoTech sells two lines in Canada, both on this "
+    intro="An electric press brake drives the ram with servo motors and ball screws or belts instead of hydraulic cylinders, so it needs no "
+          "hydraulic oil and no pump running idle. It repeats to ±0.0004″ (±0.01 mm), bends at up to 1.2″/s (30 mm/s), about twice as fast as a "
+          "hydraulic press brake, and draws about 70 % less power. It is usually the better buy for 20 ga to 1/4″ sheet in a job shop, an "
+          "enclosure or HVAC plant, or anywhere clean and quiet matters. NovoTech sells two lines in Canada, both on this "
           "page: the premium Dener DDM servo-electric press brakes from 44 to 220 US tons and 5 to 13 ft with the ESA S875 3D control, and the "
           "DDS ball-screw brakes of 22 and 44 tons for small parts; and NovoTech's own value-line electric press brakes, ball-screw driven, from "
           "11 to 176 US tons and 1.6 to 10.5 ft with Delem control, plus 3 to 13 ton bench machines. Every machine comes with a CSA-approved "
