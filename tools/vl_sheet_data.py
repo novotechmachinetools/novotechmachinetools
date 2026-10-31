@@ -641,9 +641,9 @@ HPB_FAMILIES = [
          features=list(NC_STD),      # the capacity line is off the NC list (the owner, Oct 31 2026)
          optional=NC_OPT,
          # + the factory photos of a 200/3200 NC brake (tools/nc_photos.py) as side photos (the owner, Oct 31 2026)
-         # vl-nc-34b (a person behind the machine), vl-nc-bg-motor and vl-nc-photo-1 (the same picture as vl-nc-crowning, with the wrong
-         # caption) are off the gallery (the owner, Oct 31 2026)
-         images=["vl-nc-1", "vl-nc-front", "vl-nc-34", "vl-nc-34c", "vl-nc-rear", "vl-nc-backgauge", "vl-nc-torsion", "vl-nc-crowning",
+         # vl-nc-34b (a person behind the machine), vl-nc-bg-motor, vl-nc-photo-1 and the manual crowning crank (vl-nc-crowning)
+         # are off the gallery (the owner, Oct 31 2026)
+         images=["vl-nc-1", "vl-nc-front", "vl-nc-34", "vl-nc-34c", "vl-nc-rear", "vl-nc-backgauge", "vl-nc-torsion",
                  "vl-nc-photo-2", "vl-nc-photo-3"],
          videos=[],      # the 5 ft × 50 ton NC video (0imM4bArpBc) is off the site (the owner, Oct 31 2026)
          specs=spec([T_NC], PB_GK, PB_G_FROM, NOTE_PB)),
