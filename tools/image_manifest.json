@@ -59972,19 +59972,19 @@
     "w": 1200,
     "h": 760,
     "file": "img/shears/tt-ps-1200.webp",
-    "bytes": 76130
+    "bytes": 72544
    },
    {
     "w": 800,
-    "h": 507,
+    "h": 506,
     "file": "img/shears/tt-ps-800.webp",
-    "bytes": 50194
+    "bytes": 50848
    },
    {
     "w": 480,
     "h": 304,
     "file": "img/shears/tt-ps-480.webp",
-    "bytes": 26696
+    "bytes": 27482
    }
   ],
   "alpha": true,
@@ -59992,7 +59992,7 @@
    "w": 160,
    "h": 101,
    "file": "img/shears/tt-ps-thumb.webp",
-   "bytes": 6298
+   "bytes": 6440
   },
   "cut": "birefnet"
  },
@@ -60100,33 +60100,33 @@
   }
  },
  "tt-q11a": {
-  "alt": "Q11-3x1250A electric shear with light curtain, pneumatic sheet catcher and the mobile foot pedal",
+  "alt": "Q11-3x1250A electric shear, 49\u2033 \u00d7 1/8\u2033, with front support arms, side control box and the mobile foot pedal",
   "variants": [
    {
     "w": 1200,
-    "h": 793,
+    "h": 818,
     "file": "img/shears/tt-q11a-1200.webp",
-    "bytes": 75076
+    "bytes": 80646
    },
    {
     "w": 800,
-    "h": 528,
+    "h": 545,
     "file": "img/shears/tt-q11a-800.webp",
-    "bytes": 48686
+    "bytes": 49640
    },
    {
     "w": 480,
-    "h": 317,
+    "h": 327,
     "file": "img/shears/tt-q11a-480.webp",
-    "bytes": 26800
+    "bytes": 26618
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 106,
+   "h": 109,
    "file": "img/shears/tt-q11a-thumb.webp",
-   "bytes": 6402
+   "bytes": 6520
   },
   "cut": "birefnet"
  },
@@ -83398,21 +83398,27 @@
   "cut": "birefnet"
  },
  "tm-pnm": {
-  "alt": "PNM-130 pneumatic 90\u00b0 corner notcher on stand",
+  "alt": "PNM-130 / PNM-150 pneumatic 90\u00b0 corner notcher on stand with foot pedal",
   "variants": [
    {
+    "w": 648,
+    "h": 902,
+    "file": "img/ttmc-more/tm-pnm-648.webp",
+    "bytes": 46480
+   },
+   {
     "w": 480,
-    "h": 672,
+    "h": 668,
     "file": "img/ttmc-more/tm-pnm-480.webp",
-    "bytes": 36446
+    "bytes": 35758
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 114,
+   "w": 115,
    "h": 160,
    "file": "img/ttmc-more/tm-pnm-thumb.webp",
-   "bytes": 6048
+   "bytes": 6170
   },
   "cut": "birefnet"
  },
@@ -86452,40 +86458,64 @@
   "cut": "birefnet"
  },
  "tm-3in1-1016": {
-  "alt": "3-IN-1/1016 shear, brake and roll with segmented fingers",
+  "alt": "3-IN-1/1016, 1067 and 1320 shear, brake and roll machine with segmented fingers and two crank handles",
   "variants": [
    {
+    "w": 1200,
+    "h": 646,
+    "file": "img/ttmc-more/tm-3in1-1016-1200.webp",
+    "bytes": 61934
+   },
+   {
+    "w": 800,
+    "h": 431,
+    "file": "img/ttmc-more/tm-3in1-1016-800.webp",
+    "bytes": 35704
+   },
+   {
     "w": 480,
-    "h": 297,
+    "h": 258,
     "file": "img/ttmc-more/tm-3in1-1016-480.webp",
-    "bytes": 25680
+    "bytes": 18830
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 99,
+   "h": 86,
    "file": "img/ttmc-more/tm-3in1-1016-thumb.webp",
-   "bytes": 6148
+   "bytes": 4370
   },
   "cut": "birefnet"
  },
  "tm-3in1-305": {
-  "alt": "3-IN-1/305 bench shear, brake and roll",
+  "alt": "3-IN-1/200 and 305 bench shear, brake and slip roll with crank handle",
   "variants": [
    {
+    "w": 1200,
+    "h": 1004,
+    "file": "img/ttmc-more/tm-3in1-305-1200.webp",
+    "bytes": 104612
+   },
+   {
+    "w": 800,
+    "h": 669,
+    "file": "img/ttmc-more/tm-3in1-305-800.webp",
+    "bytes": 62660
+   },
+   {
     "w": 480,
-    "h": 382,
+    "h": 402,
     "file": "img/ttmc-more/tm-3in1-305-480.webp",
-    "bytes": 33306
+    "bytes": 32438
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 127,
+   "h": 134,
    "file": "img/ttmc-more/tm-3in1-305-thumb.webp",
-   "bytes": 8000
+   "bytes": 7498
   },
   "cut": "birefnet"
  },
@@ -87586,40 +87616,64 @@
   "cut": "birefnet"
  },
  "tm-ebq01": {
-  "alt": "EBQ01-1.25\u00d7650 motorized bench shear with foot switch",
+  "alt": "EBQ01 motorized bench shear with rear safety cage and foot switch",
   "variants": [
    {
+    "w": 1200,
+    "h": 880,
+    "file": "img/ttmc-more/tm-ebq01-1200.webp",
+    "bytes": 113190
+   },
+   {
+    "w": 800,
+    "h": 586,
+    "file": "img/ttmc-more/tm-ebq01-800.webp",
+    "bytes": 70582
+   },
+   {
     "w": 480,
-    "h": 328,
+    "h": 352,
     "file": "img/ttmc-more/tm-ebq01-480.webp",
-    "bytes": 24322
+    "bytes": 33198
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 109,
+   "h": 117,
    "file": "img/ttmc-more/tm-ebq01-thumb.webp",
-   "bytes": 5954
+   "bytes": 6554
   },
   "cut": "birefnet"
  },
  "tm-ecs": {
-  "alt": "ECS10/10 two-speed electric circle shear and flanging machine",
+  "alt": "ECS10/10 two-speed electric circle shear and flanging machine on stand, with pedestal control and foot pedal",
   "variants": [
    {
+    "w": 1200,
+    "h": 909,
+    "file": "img/ttmc-more/tm-ecs-1200.webp",
+    "bytes": 97038
+   },
+   {
+    "w": 800,
+    "h": 606,
+    "file": "img/ttmc-more/tm-ecs-800.webp",
+    "bytes": 59842
+   },
+   {
     "w": 480,
-    "h": 365,
+    "h": 363,
     "file": "img/ttmc-more/tm-ecs-480.webp",
-    "bytes": 34806
+    "bytes": 32618
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 122,
+   "h": 121,
    "file": "img/ttmc-more/tm-ecs-thumb.webp",
-   "bytes": 8882
+   "bytes": 8420
   },
   "cut": "birefnet"
  },
@@ -88323,32 +88377,50 @@
   "cut": "birefnet"
  },
  "tm-hnm6": {
-  "alt": "HNM-6 hydraulic 90\u00b0 corner notcher",
+  "alt": "HNM-6 hydraulic 90\u00b0 corner notcher with emergency-stop pedestal and foot pedal",
   "variants": [
    {
+    "w": 761,
+    "h": 865,
+    "file": "img/ttmc-more/tm-hnm6-761.webp",
+    "bytes": 62020
+   },
+   {
     "w": 480,
-    "h": 589,
+    "h": 546,
     "file": "img/ttmc-more/tm-hnm6-480.webp",
-    "bytes": 35792
+    "bytes": 39314
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 130,
+   "w": 141,
    "h": 160,
    "file": "img/ttmc-more/tm-hnm6-thumb.webp",
-   "bytes": 7034
+   "bytes": 8134
   },
   "cut": "birefnet"
  },
  "tm-hnm6a": {
-  "alt": "HNM-6A hydraulic adjustable-angle notcher, 30 \u2013 135\u00b0",
+  "alt": "HNM-6A hydraulic adjustable-angle notcher, 30 \u2013 135\u00b0, with control pedestal and foot pedal",
   "variants": [
+   {
+    "w": 1200,
+    "h": 1280,
+    "file": "img/ttmc-more/tm-hnm6a-1200.webp",
+    "bytes": 90928
+   },
+   {
+    "w": 800,
+    "h": 854,
+    "file": "img/ttmc-more/tm-hnm6a-800.webp",
+    "bytes": 55350
+   },
    {
     "w": 480,
     "h": 512,
     "file": "img/ttmc-more/tm-hnm6a-480.webp",
-    "bytes": 30482
+    "bytes": 29434
    }
   ],
   "alpha": true,
@@ -88356,7 +88428,7 @@
    "w": 150,
    "h": 160,
    "file": "img/ttmc-more/tm-hnm6a-thumb.webp",
-   "bytes": 7006
+   "bytes": 6920
   },
   "cut": "birefnet"
  },
@@ -89323,27 +89395,33 @@
   "cut": "birefnet"
  },
  "tm-mcs1250e": {
-  "alt": "MCS-1250E motorized circle shear with pneumatic blank clamping",
+  "alt": "MCS-1250E motorized circle shear with pneumatic blank clamping, pedestal control and foot pedal",
   "variants": [
    {
+    "w": 1200,
+    "h": 844,
+    "file": "img/ttmc-more/tm-mcs1250e-1200.webp",
+    "bytes": 107260
+   },
+   {
     "w": 800,
-    "h": 564,
+    "h": 562,
     "file": "img/ttmc-more/tm-mcs1250e-800.webp",
-    "bytes": 64028
+    "bytes": 64062
    },
    {
     "w": 480,
-    "h": 338,
+    "h": 337,
     "file": "img/ttmc-more/tm-mcs1250e-480.webp",
-    "bytes": 33520
+    "bytes": 33406
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 113,
+   "h": 112,
    "file": "img/ttmc-more/tm-mcs1250e-thumb.webp",
-   "bytes": 7326
+   "bytes": 7198
   },
   "cut": "birefnet"
  },
@@ -104698,5 +104776,129 @@
    "file": "img/dener/dn-xl-g-delem-da69s-thumb.webp",
    "bytes": 7498
   }
+ },
+ "tm-3in1-610": {
+  "alt": "3-IN-1/610 and 760 shear, brake and roll machine on cast side frames",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 777,
+    "file": "img/ttmc-more/tm-3in1-610-1200.webp",
+    "bytes": 69664
+   },
+   {
+    "w": 800,
+    "h": 518,
+    "file": "img/ttmc-more/tm-3in1-610-800.webp",
+    "bytes": 46296
+   },
+   {
+    "w": 480,
+    "h": 311,
+    "file": "img/ttmc-more/tm-3in1-610-480.webp",
+    "bytes": 25376
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 104,
+   "file": "img/ttmc-more/tm-3in1-610-thumb.webp",
+   "bytes": 6126
+  },
+  "cut": "birefnet"
+ },
+ "tt-q11nc-4x1300": {
+  "alt": "Q11-4x1300NC electric shear with PLC control and motorised back gauge, 51\u2033 \u00d7 5/32\u2033",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 741,
+    "file": "img/shears/tt-q11nc-4x1300-1200.webp",
+    "bytes": 59844
+   },
+   {
+    "w": 800,
+    "h": 494,
+    "file": "img/shears/tt-q11nc-4x1300-800.webp",
+    "bytes": 38202
+   },
+   {
+    "w": 480,
+    "h": 296,
+    "file": "img/shears/tt-q11nc-4x1300-480.webp",
+    "bytes": 20662
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/shears/tt-q11nc-4x1300-thumb.webp",
+   "bytes": 4938
+  },
+  "cut": "birefnet"
+ },
+ "tt-hq01-2500": {
+  "alt": "HQ01-1.6x2500B light hydraulic shear, 98\u2033 \u00d7 16 ga, with front sheet supports and side guards",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 611,
+    "file": "img/shears/tt-hq01-2500-1200.webp",
+    "bytes": 52998
+   },
+   {
+    "w": 800,
+    "h": 407,
+    "file": "img/shears/tt-hq01-2500-800.webp",
+    "bytes": 32566
+   },
+   {
+    "w": 480,
+    "h": 244,
+    "file": "img/shears/tt-hq01-2500-480.webp",
+    "bytes": 16680
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 81,
+   "file": "img/shears/tt-hq01-2500-thumb.webp",
+   "bytes": 3722
+  },
+  "cut": "birefnet"
+ },
+ "tt-hq11-1300": {
+  "alt": "HQ11-6.5x1300 hydraulic shear, 51\u2033 \u00d7 1/4\u2033, with hold-downs, beam-mounted controls and the foot pedal",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 590,
+    "file": "img/shears/tt-hq11-1300-1200.webp",
+    "bytes": 41456
+   },
+   {
+    "w": 800,
+    "h": 394,
+    "file": "img/shears/tt-hq11-1300-800.webp",
+    "bytes": 25552
+   },
+   {
+    "w": 480,
+    "h": 236,
+    "file": "img/shears/tt-hq11-1300-480.webp",
+    "bytes": 14400
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 79,
+   "file": "img/shears/tt-hq11-1300-thumb.webp",
+   "bytes": 3704
+  },
+  "cut": "birefnet"
  }
 }

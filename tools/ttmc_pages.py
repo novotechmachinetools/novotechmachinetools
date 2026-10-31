@@ -14,6 +14,7 @@ from isitan_lib import VOLT_FAQ_GENERIC, write_category, write_families  # noqa:
 import shear_nav as SN
 import ttmc_data as D
 import ttmc_photos as PH
+import ttmc_hires_photos as HP   # the supplier's high-resolution shear photos (Oct 31 2026), in tools/src-images/ttmc-hires
 import ttmc_more_data2 as D2   # EBQ01 motorized bench shears (value line, sample photos in section 'ttmc-more')
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -96,6 +97,17 @@ def register_images():
         ext = os.path.splitext(f[0])[1]
         imap[key] = {"src": f"tools/src-images/ttmc/{key}{ext}", "alt": p["alt"], "section": "shears", "trim": False, "quality": 82, "cutout": bool(p.get("cutout"))}
         keys.append(key)
+    # the supplier's high-resolution photos (the owner's WeTransfer, Oct 31 2026) replace the catalogue crops, or add a photo for a model
+    for key, p in HP.PHOTOS.items():
+        if not key.startswith("tt-"):
+            continue
+        src = f"tools/src-images/ttmc-hires/{key}.jpg"
+        if not os.path.exists(os.path.join(ROOT, src)):
+            print("!! missing high-resolution photo for", key, "— run tools/ttmc_hires_photos.py", key)
+            continue
+        imap[key] = {"src": src, "alt": p["alt"], "section": "shears", "trim": True, "quality": 82, "cutout": not p.get("detail"), "cut_size": 1024}
+        if key not in keys:
+            keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "ttmc_keys.txt"), "w").write(",".join(keys))
     return keys

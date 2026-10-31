@@ -16020,12 +16020,13 @@
   "cutout": true
  },
  "tt-ps": {
-  "src": "tools/src-images/ttmc/tt-ps.jpg",
+  "src": "tools/src-images/ttmc-hires/tt-ps.jpg",
   "alt": "PS-1.5x1320 pneumatic shear, 52″ × 16 ga, with front gauge arms and the mobile foot pedal",
   "section": "shears",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "cut_size": 1024
  },
  "tt-ps-gauge": {
   "src": "tools/src-images/ttmc/tt-ps-gauge.jpg",
@@ -16068,12 +16069,13 @@
   "cutout": false
  },
  "tt-q11a": {
-  "src": "tools/src-images/ttmc/tt-q11a.jpg",
-  "alt": "Q11-3x1250A electric shear with light curtain, pneumatic sheet catcher and the mobile foot pedal",
+  "src": "tools/src-images/ttmc-hires/tt-q11a.jpg",
+  "alt": "Q11-3x1250A electric shear, 49″ × 1/8″, with front support arms, side control box and the mobile foot pedal",
   "section": "shears",
-  "trim": false,
+  "trim": true,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "cut_size": 1024
  },
  "tt-q11a-rear": {
   "src": "tools/src-images/ttmc/tt-q11a-rear.jpg",
@@ -23422,21 +23424,21 @@
  },
  "tm-3in1-1016": {
   "src": "tools/src-images/ttmc-more/tm-3in1-1016.jpg",
-  "alt": "3-IN-1/1016 shear, brake and roll with segmented fingers",
+  "alt": "3-IN-1/1016, 1067 and 1320 shear, brake and roll machine with segmented fingers and two crank handles",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-3in1-305": {
   "src": "tools/src-images/ttmc-more/tm-3in1-305.jpg",
-  "alt": "3-IN-1/305 bench shear, brake and roll",
+  "alt": "3-IN-1/200 and 305 bench shear, brake and slip roll with crank handle",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-3in1a": {
   "src": "tools/src-images/ttmc-more/tm-3in1a.jpg",
@@ -23890,21 +23892,21 @@
  },
  "tm-ebq01": {
   "src": "tools/src-images/ttmc-more/tm-ebq01.jpg",
-  "alt": "EBQ01-1.25×650 motorized bench shear with foot switch",
+  "alt": "EBQ01 motorized bench shear with rear safety cage and foot switch",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-ecs": {
   "src": "tools/src-images/ttmc-more/tm-ecs.jpg",
-  "alt": "ECS10/10 two-speed electric circle shear and flanging machine",
+  "alt": "ECS10/10 two-speed electric circle shear and flanging machine on stand, with pedestal control and foot pedal",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-efm": {
   "src": "tools/src-images/ttmc-more/tm-efm.jpg",
@@ -24214,21 +24216,21 @@
  },
  "tm-hnm6": {
   "src": "tools/src-images/ttmc-more/tm-hnm6.jpg",
-  "alt": "HNM-6 hydraulic 90° corner notcher",
+  "alt": "HNM-6 hydraulic 90° corner notcher with emergency-stop pedestal and foot pedal",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hnm6a": {
   "src": "tools/src-images/ttmc-more/tm-hnm6a.jpg",
-  "alt": "HNM-6A hydraulic adjustable-angle notcher, 30 – 135°",
+  "alt": "HNM-6A hydraulic adjustable-angle notcher, 30 – 135°, with control pedestal and foot pedal",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hp100": {
   "src": "tools/src-images/ttmc-more/tm-hp100.jpg",
@@ -24664,12 +24666,12 @@
  },
  "tm-mcs1250e": {
   "src": "tools/src-images/ttmc-more/tm-mcs1250e.jpg",
-  "alt": "MCS-1250E motorized circle shear with pneumatic blank clamping",
+  "alt": "MCS-1250E motorized circle shear with pneumatic blank clamping, pedestal control and foot pedal",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-md380": {
   "src": "tools/src-images/ttmc-more/tm-md380.jpg",
@@ -24934,12 +24936,12 @@
  },
  "tm-pnm": {
   "src": "tools/src-images/ttmc-more/tm-pnm.jpg",
-  "alt": "PNM-130 pneumatic 90° corner notcher on stand",
+  "alt": "PNM-130 / PNM-150 pneumatic 90° corner notcher on stand with foot pedal",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-pnm15": {
   "src": "tools/src-images/ttmc-more/tm-pnm15.jpg",
@@ -30944,5 +30946,41 @@
   "trim": true,
   "quality": 84,
   "cutout": false
+ },
+ "tm-3in1-610": {
+  "src": "tools/src-images/ttmc-more/tm-3in1-610.jpg",
+  "alt": "3-IN-1/610 and 760 shear, brake and roll machine on cast side frames",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tt-q11nc-4x1300": {
+  "src": "tools/src-images/ttmc-hires/tt-q11nc-4x1300.jpg",
+  "alt": "Q11-4x1300NC electric shear with PLC control and motorised back gauge, 51″ × 5/32″",
+  "section": "shears",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tt-hq01-2500": {
+  "src": "tools/src-images/ttmc-hires/tt-hq01-2500.jpg",
+  "alt": "HQ01-1.6x2500B light hydraulic shear, 98″ × 16 ga, with front sheet supports and side guards",
+  "section": "shears",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tt-hq11-1300": {
+  "src": "tools/src-images/ttmc-hires/tt-hq11-1300.jpg",
+  "alt": "HQ11-6.5x1300 hydraulic shear, 51″ × 1/4″, with hold-downs, beam-mounted controls and the foot pedal",
+  "section": "shears",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
  }
 }

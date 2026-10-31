@@ -183,7 +183,7 @@ BRAKES = [
        "Removable segmented upper dies (fingers) for boxes and pans; back gauge",
        "Wire grooves in the rolls; two handle positions",
        "A models: independent bending section; mini shear brake 8″ for copper, brass and aluminum"],
-      ["tm-3in1", "tm-3in1-1016", "tm-3in1a", "tm-3in1-305", "tm-minibrake"], headline="20 – 16 ga × 8 – 52″", cap="[Working width] × [Shear / brake / roll capacity, mild steel]",
+      ["tm-3in1", "tm-3in1-1016", "tm-3in1-610", "tm-3in1a", "tm-3in1-305", "tm-minibrake"], headline="20 – 16 ga × 8 – 52″", cap="[Working width] × [Shear / brake / roll capacity, mild steel]",
       manual=True),
     F("tt-e3in1", P_BRAKE, "combo", "E3-IN-1 motorized shear, brake and roll machines, 1/8″ × 52″ and 80″", "E3-IN-1 motorized", T["tt-e3in1"],
       "The motorized combination machine: a 4.7 or 5.5 HP motor drives a shear that cuts 1/8″ (3 mm) mild steel at 30 strokes a minute, "

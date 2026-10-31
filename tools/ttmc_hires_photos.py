@@ -9,6 +9,8 @@ under 700 px is upscaled 2x with Real-ESRGAN (tools/esrgan.py).  Product photos 
 
     python3 tools/ttmc_hires_photos.py [key …]
         tm-* keys  → tools/src-images/ttmc-more/<key>.jpg   (registered by tools/ttmc_more_pages.py)
+        tt-* keys  → tools/src-images/ttmc-hires/<key>.jpg  (registered by tools/ttmc_pages.py; they replace the catalogue crops
+                     of tools/ttmc_photos.py, which stay in tools/src-images/ttmc)
         nt-* keys  → tools/src-images/value-line/<key>.png  (registered by tools/value_line_data.py)
 """
 import os
@@ -20,6 +22,7 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = "/home/claude/ttmc-new/band_saw_2026-10-28/"
 DST_TM = os.path.join(ROOT, "tools", "src-images", "ttmc-more")
+DST_TT = os.path.join(ROOT, "tools", "src-images", "ttmc-hires")
 DST_NT = os.path.join(ROOT, "tools", "src-images", "value-line")
 SMALL = 700          # px, longest side of the machine: below it the photo is upscaled 2x
 
@@ -179,6 +182,29 @@ PHOTOS.update({
     "tm-b5013": dict(dir=DRILLMILL, src="B5013.png", alt="B5013 slotting machine with swivel head for keyways and splines", boxes=[(3425, 1612, 3825, 1797)]),
     "tm-b5012": dict(dir=DRILLMILL, src="B5012.tif", alt="B5012 keyseater for keyways in single and small-batch work"),
 })
+
+# the owner's WeTransfer "pictures for shearing machine" (Oct 31 2026): only the photos sharper than the site's catalogue crops,
+# and photos of models that had none; the red TTMC logo on the Q11-3x1250A top guard and the HNM-6 nameplate are filled by LaMa
+SHEAR = "/home/claude/ttmc-new/shear_2026-10-31/"
+PHOTOS.update({
+    # ---- bench machines (tt-3in1, tt-ebq01 …) — tools/ttmc_more_data*.py
+    "tm-3in1-1016": dict(dir=SHEAR, src="3 IN1 1016 1067 1320.jpg", alt="3-IN-1/1016, 1067 and 1320 shear, brake and roll machine with segmented fingers and two crank handles"),
+    "tm-3in1-610": dict(dir=SHEAR, src="3-IN-1 610 760.png", alt="3-IN-1/610 and 760 shear, brake and roll machine on cast side frames", up=True),
+    "tm-3in1-305": dict(dir=SHEAR, src="3-IN-1 200 305.jpg", alt="3-IN-1/200 and 305 bench shear, brake and slip roll with crank handle"),
+    "tm-ebq01": dict(dir=SHEAR, src="EBQ01-1.25X650 EBQ01-1.0X1050.png", alt="EBQ01 motorized bench shear with rear safety cage and foot switch"),
+    "tm-mcs1250e": dict(dir=SHEAR, src="MCS-1250E.jpg", alt="MCS-1250E motorized circle shear with pneumatic blank clamping, pedestal control and foot pedal"),
+    "tm-ecs": dict(dir=SHEAR, src="ECS10-10.jpg", alt="ECS10/10 two-speed electric circle shear and flanging machine on stand, with pedestal control and foot pedal", up=True),
+    "tm-hnm6": dict(dir=SHEAR, src="HNM-6.jpg", alt="HNM-6 hydraulic 90° corner notcher with emergency-stop pedestal and foot pedal", boxes=[(756, 766, 817, 828)]),
+    "tm-hnm6a": dict(dir=SHEAR, src="HNM-6A.png", alt="HNM-6A hydraulic adjustable-angle notcher, 30 – 135°, with control pedestal and foot pedal"),
+    "tm-pnm": dict(dir=SHEAR, src="PNM-130 PNM-150.png", alt="PNM-130 / PNM-150 pneumatic 90° corner notcher on stand with foot pedal"),
+    # ---- shears (tt-ps, tt-q11, tt-q11nc, tt-hq01, tt-hq11) — tools/ttmc_data.py
+    "tt-ps": dict(dir=SHEAR, src="386030 PS-1.5X1320.jpg", alt="PS-1.5x1320 pneumatic shear, 52″ × 16 ga, with front gauge arms and the mobile foot pedal"),
+    "tt-q11a": dict(dir=SHEAR, src="Q11-3x1250A.png", alt="Q11-3x1250A electric shear, 49″ × 1/8″, with front support arms, side control box and the mobile foot pedal",
+                    boxes=[(1727, 371, 2130, 533)]),
+    "tt-q11nc-4x1300": dict(dir=SHEAR, src="386103 Q11-4X1300NC.png", alt="Q11-4x1300NC electric shear with PLC control and motorised back gauge, 51″ × 5/32″", up=True),
+    "tt-hq01-2500": dict(dir=SHEAR, src="HQ01-1.6X2500B.jpg", alt="HQ01-1.6x2500B light hydraulic shear, 98″ × 16 ga, with front sheet supports and side guards"),
+    "tt-hq11-1300": dict(dir=SHEAR, src="HQ11-1300X6.5.jpg", alt="HQ11-6.5x1300 hydraulic shear, 51″ × 1/4″, with hold-downs, beam-mounted controls and the foot pedal"),
+})
 BIG = 1800           # px: a source bigger than this is scaled down before the cut-out
 
 
@@ -219,7 +245,7 @@ def process(key):
     im = im.convert("RGBA") if im.mode == "RGBA" else im.convert("RGB")
     if im.mode == "RGBA" and im.getchannel("A").getextrema()[0] == 255:
         im = im.convert("RGB")
-    elif im.mode == "RGBA" and key.startswith("tm-"):
+    elif im.mode == "RGBA" and key.startswith(("tm-", "tt-")):
         # a supplier cut-out: the pixels under the transparent area are the old studio background (grey wall, floor
         # shadow), which a plain RGB conversion would bring back — composite on white so BiRefNet sees a clean photo
         im = Image.alpha_composite(Image.new("RGBA", im.size, (255, 255, 255, 255)), im).convert("RGB")
@@ -234,6 +260,9 @@ def process(key):
     if key.startswith("tm-"):
         os.makedirs(DST_TM, exist_ok=True)
         im.convert("RGB").save(os.path.join(DST_TM, key + ".jpg"), quality=92)
+    elif key.startswith("tt-"):
+        os.makedirs(DST_TT, exist_ok=True)
+        im.convert("RGB").save(os.path.join(DST_TT, key + ".jpg"), quality=92)
     else:
         os.makedirs(DST_NT, exist_ok=True)
         im.save(os.path.join(DST_NT, key + ".png"), optimize=True)
