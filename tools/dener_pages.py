@@ -69,7 +69,7 @@ PAGE_PB = dict(
             "XH hybrid: servo pump on the XL frame — 42 – 58 % less energy, faster approach and return",
             "DDM servo-electric 44 – 220 tons and DDS ball-screw 22 / 44 tons — no hydraulic oil"],
     hero="dn-xl-1", minis=["dn-ddm-2", "dn-xh-1"],
-    groups=[("pb-hydraulic", "XL hydraulic CNC press brakes", "The standard: a monoblock frame, Hawe hydraulics and an ESA 2D control, 5 to 20 ft and 66 to 661 US tons.", BRAND),
+    groups=[("pb-hydraulic", "XL hydraulic CNC press brakes", "The standard: a monoblock frame, servo-valve hydraulics and an ESA 2D control, 5 to 20 ft and 66 to 661 US tons.", BRAND),
             ("pb-hybrid", "XH hybrid press brakes", "The XL with a servo-driven pump — the same frame and cylinders, less energy, more speed, less noise.", BRAND),
             ("pb-servo", "Servo-electric and ball-screw press brakes", "No hydraulic oil: the DDM servo-electric brake for production to 220 tons and the DDS ball-screw brake for small parts.", BRAND)],
     faq=[{"q": "Hydraulic, hybrid or servo-electric — which press brake should I buy?",
@@ -171,7 +171,7 @@ PAGE_SHEAR = dict(
     title="Dener Hydraulic Shears, 1/4″ to 3/4″ × 20 ft | NovoTech",
     meta="BS / BSY hydraulic swing beam shears with NC back gauge, 1/4″ – 5/8″ × 6.8 – 13.5 ft; DAS CNC guillotines with variable angle, 1/4″ – 3/4″ × 10 – 20 ft.",
     h1="Dener hydraulic shears — BS / BSY swing beam to 5/8″ and DAS CNC guillotine to 3/4″ × 20 ft",
-    intro="Dener's shears are the premium plate shears of NovoTech's shear section: built in Kayseri, Turkey, with Rexroth or Hoerbiger hydraulics, "
+    intro="Dener's shears are the premium plate shears of NovoTech's shear section: built in Kayseri, Turkey, with European hydraulics, "
           "ESA or Delem controls and parts stocked in Canada. The BS / BSY swing beam shears are the rugged everyday plate shear: a beam "
           "on two bearings swung through the cut by two cylinders, 8 to 22 strokes a minute, with an NC back gauge, hydraulic hold-downs and "
           "single-point blade-gap adjustment — the light BSY 2006 – 3006 for 1/4″ over 6.8 to 10 ft and the BS 3006 – 4016 to 5/8″ (16 mm) over "

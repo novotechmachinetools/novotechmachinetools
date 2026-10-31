@@ -20,7 +20,7 @@ SET = "all-shears"
 COPY = json.load(open(os.path.join(ROOT, "tools", "shear_copy.json"), encoding="utf-8"))
 
 BRAND_LINE = ("The premium hydraulic shears are built by Dener Makina in Kayseri, Turkey, and the premium mechanical shears in Turkey with European motors and electrics; "
-              "NovoTech's value-line shears are built in China to our specification with Estun controls and Rexroth hydraulics. All sold, installed and supported in Canada by NovoTech.")
+              "NovoTech's value-line shears are built in China to our specification with Estun controls. All sold, installed and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Premium and value lines, one supplier", "text": "Every shear comes with a CSA-approved panel, a 1-year warranty and blades, parts and technicians in Mississauga, ON, Canada — whichever line you choose."}
 RANGE = {"range_pick": [["capacity", "capacity_mild_steel"], ["length", "working_width"], "strokes", ["motor", "operation"], "weight"],
          "range_cols": ["Capacity (mild steel)", "Shearing length", "Strokes / min", "Motor", "Weight"]}
@@ -58,12 +58,12 @@ HYDRAULIC = dict(
     hero="dn-das-1", minis=["vl-qc12k-1", "tt-hq11"],
     groups=[("sh-premium-swing", "Swing beam shears · premium line", "BS / BSY: a beam on two bearings swung through the cut by two cylinders, 8 to 22 strokes a minute, NC back gauge, hydraulic hold-downs and single-point blade-gap adjustment — 1/4″ to 5/8″ over 6.8 to 13.5 ft."),
             ("sh-premium-cnc", "CNC guillotine shears · premium line", "DAS: a beam on linear rollers with a variable cutting angle set by the ESA 630 CNC from the thickness keyed in — 1/4″ to 3/4″ over 10, 13 and 20 ft, for production."),
-            ("sh-value-swing", "Swing beam shears · value line", "QC12K: NovoTech's own everyday plate shear with Estun E21S control, Rexroth hydraulics and a motorised back gauge — 5/32″ to 3/4″ over 8 to 20 ft."),
+            ("sh-value-swing", "Swing beam shears · value line", "QC12K: NovoTech's own everyday plate shear with Estun E21S control and a motorised back gauge — 5/32″ to 3/4″ over 8 to 20 ft."),
             ("sh-value-guillotine", "Guillotine shears · value line", "Q11K: variable rake angle and blade gap from the control, 1/4″ to 1-9/16″ over 8 to 26 ft — the value-line machine for thick plate."),
             ("sh-light-hydraulic", "Light hydraulic shears · value line", "THS and HQ11: hydraulic shears from 12 ga to 1/4″ over 51 to 120″ with quick-set blade clearance and an electric or NC back gauge — for the sheet-metal shop.")],
     faq=[faq("hydraulic-shearing-machine", "Swing beam or guillotine shear?")[0],
          {"q": "Premium line or value line?",
-          "a": "The premium BS / BSY and DAS shears are built by Dener in Turkey with Rexroth or Hoerbiger hydraulics, ESA or Delem controls, the heaviest frames and parts stocked in Canada — the machines for two shifts a day and the tightest, flattest cut, with the DAS CNC setting rake, gap and gauge from the material keyed in. NovoTech's value-line QC12K and Q11K are the same two designs — swing beam and variable-rake guillotine — built in China to our specification with Estun controls, Rexroth hydraulics and Siemens motors at about two-thirds of the price, in more sizes (to 1-9/16″ and 26 ft). Both lines are installed and supported by the same NovoTech technicians, and the light hydraulic shears below them are the value-line answer for 12 ga to 1/4″."},
+          "a": "The premium BS / BSY and DAS shears are built by Dener in Turkey with European hydraulics, ESA or Delem controls, the heaviest frames and parts stocked in Canada — the machines for two shifts a day and the tightest, flattest cut, with the DAS CNC setting rake, gap and gauge from the material keyed in. NovoTech's value-line QC12K and Q11K are the same two designs — swing beam and variable-rake guillotine — built in China to our specification with Estun controls and Siemens motors at about two-thirds of the price, in more sizes (to 1-9/16″ and 26 ft). Both lines are installed and supported by the same NovoTech technicians, and the light hydraulic shears below them are the value-line answer for 12 ga to 1/4″."},
          faq("hydraulic-shearing-machine", "What thickness and length do I need?")[0],
          faq("dener-shears", "Which control?")[0],
          faq("hydraulic-shearing-machine", "What does the Estun E21S control do?")[0],

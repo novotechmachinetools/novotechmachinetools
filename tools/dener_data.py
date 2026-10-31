@@ -215,7 +215,7 @@ PB_STD_XL = ['<a href="https://www.esautomotion.com/prodotti/vis-840/">ESA S840<
              "European (Promecam) tool clamping with segmented punch and die holders",
              '<a href="press-brake-tooling-punch-and-die.html#es-eu-straight">EUROSTAMP 1281 punch</a> (Italy)',
              '<a href="press-brake-tooling-punch-and-die.html#es-eu-multiv">EUROSTAMP 2067 4-V die</a> (Italy)',
-             "Side and rear safety covers with safety interlocks", "Heavy-duty ram guideways", "Hawe hydraulic system; constant pressure",
+             "Side and rear safety covers with safety interlocks", "Heavy-duty ram guideways", "Proportional servo-valve hydraulic system; constant pressure",
              "Anti-panic foot pedal with emergency stop button", "Large daylight and throat depth",
              "CSA-approved electrical panel; 600 V 3-phase transformer included", "Aluminum-foil waterproof overseas packaging",
              "Made in Turkey with European components"]
@@ -268,7 +268,7 @@ PB_FAMILIES = [
          name="XL hydraulic CNC press brakes, 66 – 661 US tons × 5 – 20 ft",
          short="XL hydraulic press brakes",
          models_label="XL 1560 – XL 60600 · 18 models",
-         summary="The Dener XL is the hydraulic press brake most Canadian shops buy from us: a stress-relieved monoblock frame, Hawe hydraulics "
+         summary="The Dener XL is the hydraulic press brake most Canadian shops buy from us: a stress-relieved monoblock frame, servo-valve hydraulics "
                  "at constant pressure, Y1-Y2 ram axes and an X back gauge on ball screw and linear guides, driven from a 15.6″ ESA S840 2D "
                  "graphic control — the operator draws the part and the control works out the sequence, tonnage and back-gauge positions. "
                  "Eighteen models from 66 US tons × 5 ft to 661 US tons × 20 ft on the same frame design: the 5 to 10 ft machines to 353 US tons "
@@ -286,7 +286,8 @@ PB_FAMILIES = [
          # + the detail photos of NovoTech's XL quote and the owner's own photos of a delivered XL (DSP-AP laser, CNC crowning, die
          # holder channel) with their standard / option status (the owner, Oct 30 2026); dn-xh-4, the
          # blurry tooling photo, is out (the owner, Oct 30 2026)
-         images=["dn-xl-1", "dn-xl-2", "dn-xl-3", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-esa-screen", "dn-xl-ram-slide",
+         # dn-xl-2 (three-quarter render) and dn-xl-esa-screen (an ESA S660 W, not the XL's S840) out — the owner, Oct 30 2026
+         images=["dn-xl-1", "dn-xl-3", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-ram-slide",
                  "dn-xl-front-arms", "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-q-front-supports",
                  "dn-xl-q-rear-gates", "dn-xl-p-dsp-laser", "dn-xl-q-punch-1281", "dn-xl-q-die-2067", "dn-xl-p-crowning",
                  "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-control",
@@ -312,7 +313,7 @@ PB_FAMILIES = [
          models_label="XL 1560 · 1 model",
          summary="The smallest XL is the compact press brake of the premium line: 60 metric tons (66 US tons) over 1,550 mm (5 ft), "
                  "49″ between the frames, a 15.7″ throat and 16.1″ of daylight, on a 96 × 87″ footprint (64″ wide without the front supports) that goes through a shop door and "
-                 "weighs 9,480 lb — the same stress-relieved monoblock frame, Hawe hydraulics, Y1-Y2 ram with linear scales and ball-screw X "
+                 "weighs 9,480 lb — the same stress-relieved monoblock frame, servo-valve hydraulics, Y1-Y2 ram with linear scales and ball-screw X "
                  "back gauge as the big XLs, with the 15.6″ ESA S840 2D control, front supports on linear rail and a sectioned EUROSTAMP punch "
                  "1281 with the 4-way die 2067 in the crate. 7.5 kW, 600 V with a CSA panel. For HVAC fittings, enclosures, brackets, "
                  "signage and job-shop sheet work up to 5 ft where a 100-ton machine is more than you need — and a real CNC press brake, "

@@ -29,7 +29,7 @@ PDF_VG = "files/NovoTech-V-Grooving-Machines-2026.pdf"
 PDF_PANEL = "files/NovoTech-Panel-Benders-Value-Line-2026.pdf"
 PDF_IRON = "files/NovoTech-Ironworkers-Value-Line-2026.pdf"
 
-BRAND_LINE = ("NovoTech's own value line: manufactured in China to high North American quality standards, with Delem, Estun, Hawe, Rexroth and "
+BRAND_LINE = ("NovoTech's own value line: manufactured in China to high North American quality standards, with Delem, Estun and "
               "Schneider components, the same CSA-approved panel, 1-year warranty and parts and support in Canada as every machine we sell.")
 ORIGIN = {"title": "Built in China to North American standards", "text": "NovoTech's own brand — European controls and hydraulics, inspected before shipping, "
           "same CSA panel, warranty and Mississauga, ON, Canada support as every machine we sell."}
@@ -53,14 +53,14 @@ PAGE_PB = dict(
     title="NovoTech CNC Press Brakes, Hydraulic & Electric · Value Line",
     meta="NovoTech's own CNC press brakes sold in Canada: hydraulic CNC 55 – 331 US tons with Delem control, heavy-duty and tandem to 1,323 tons, NC brakes from 33 tons, servo-electric 3 – 176 tons.",
     h1="NovoTech CNC press brakes — hydraulic and electric · value line, 3 to 1,323 US tons",
-    intro="These are NovoTech's own press brakes — the value line: built in China to our specification with Delem controls, Hawe and Rexroth "
+    intro="These are NovoTech's own press brakes — the value line: built in China to our specification with Delem controls, European "
           "hydraulics, Estun servos and Schneider electrics, inspected before they ship and sold under NovoTech's name at a price a small shop "
           "can justify. Three families on one page: the hydraulic CNC press brakes from 55 to 331 US tons over 4 to 20 ft, with heavy-duty and "
           "tandem machines to 1,323 tons and 26 ft; the NC torsion-bar brakes from 33 to 441 tons for shops that bend the same parts every day; and "
           "the electric servo press brakes — no hydraulic oil, ball-screw drive, ±0.01 mm — from 11 to 176 US tons, plus 3 to 12 ton bench "
           "machines. For the Turkish-built premium machines see the Dener CNC press brakes; for the compact 4 – 7 ft shop brakes see the ISITAN "
           "page. Every machine is installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a 1-year warranty.",
-    points=["Hydraulic CNC: Delem DA-53Tx, Hawe servo valves, servo back gauge, 4+1 axes — 55 – 331 US tons × 4 – 20 ft; heavy-duty to 1,323 tons",
+    points=["Hydraulic CNC: Delem DA-53Tx, servo valves, servo back gauge, 4+1 axes — 55 – 331 US tons × 4 – 20 ft; heavy-duty to 1,323 tons",
             "Electric: servo motors, belts and ball screws, ±0.01 mm, 70 % less energy — 11 – 176 US tons × 20″ – 10.5 ft, 3 – 12 t bench",
             "NC torsion-bar brakes with Estun E21PS control — 33 – 441 tons × 5 – 20 ft; robot bending cells on hydraulic and electric"],
     hero="vl-wad-1", minis=["vl-wadg-1", "vl-nc-1"],
@@ -72,7 +72,7 @@ PAGE_PB = dict(
          {"q": "CNC or NC press brake — what is the difference?",
           "a": "An NC press brake positions the back gauge and the ram depth from a stored program, but the two cylinders are kept in step by a torsion bar and the depth is set by mechanical stops: accurate enough for brackets, boxes, channels and roofing in one material. A CNC press brake measures the ram on linear scales and corrects it through servo valves, calculates the bend from the drawing, crowns the bed automatically and changes material and thickness in the program — the machine for mixed work, tight angles and multi-bend parts."},
          {"q": "How does the value line differ from the Dener press brakes?",
-          "a": "The architecture is the same — monoblock frame, Hawe servo valves, linear scales, servo back gauge, Delem control — and both are installed and supported by the same NovoTech technicians in Mississauga, ON, Canada. The Dener XL is built in Turkey on a heavier frame with a longer options list (ESA controls, 6-axis ATF gauge, hybrid drive, 20 ft and 661 tons in the catalogue) and carries the Dener name and parts stocked in Canada; the value-line machine is built in China to our specification, sold under NovoTech's name and inspected before it ships, at about two-thirds of the price. Both come with the CSA panel and the same warranty."},
+          "a": "The architecture is the same — monoblock frame, servo valves, linear scales, servo back gauge, Delem control — and both are installed and supported by the same NovoTech technicians in Mississauga, ON, Canada. The Dener XL is built in Turkey on a heavier frame with a longer options list (ESA controls, 6-axis ATF gauge, hybrid drive, 20 ft and 661 tons in the catalogue) and carries the Dener name and parts stocked in Canada; the value-line machine is built in China to our specification, sold under NovoTech's name and inspected before it ships, at about two-thirds of the price. Both come with the CSA panel and the same warranty."},
          {"q": "How much tonnage do I need?",
           "a": "Air bending mild steel takes about 575 × t² ÷ V US tons per foot, with the thickness t and the V opening in inches: in the standard V = 8 × thickness die that is about 4 tons per foot for 16 ga, 9 for 1/8″, 13.5 for 3/16″, 18 for 1/4″ and 36 for 1/2″ (29 in a 10 × t die); stainless needs about 50 % more, aluminum about half. With about 20 % headroom, a 10 ft × 1/4″ job is therefore a 175 – 220 ton machine, 10 ft × 3/8″ a 250 – 320 ton machine and 13 ft × 1/2″, bent in a 5 – 6″ V, a 400 – 450 ton machine. Tell us the thickest and longest bend you make and we size the brake and the tooling."},
          {"q": "How does the electric ball-screw drive work?",
@@ -86,7 +86,7 @@ PAGE_PB = dict(
          {"q": "Can the press brake be automated?",
           "a": "Yes — the 40 and 50 ton electric machines and the 110 – 220 ton hydraulic brakes are sold as complete robot bending cells with an Estun robot, gripper, loading table and unloading stack, and every CNC model has the robot interface; CNC sheet followers support large blanks through the bend on the hydraulic machines."},
          {"q": "Do you deliver, install and service in Canada?",
-          "a": "Yes. Machines are inspected before they leave the factory, shipped to Mississauga, ON, Canada, unloaded, levelled, commissioned and the operators trained by NovoTech; parts for the Delem, Hawe, Rexroth, Estun and Schneider components are standard items and the machine-specific parts are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
+          "a": "Yes. Machines are inspected before they leave the factory, shipped to Mississauga, ON, Canada, unloaded, levelled, commissioned and the operators trained by NovoTech; parts for the Delem, Estun and Schneider components and the hydraulics are standard items and the machine-specific parts are stocked here. Every machine comes with a CSA-approved panel, 600 V standard (208 / 240 / 480 V on request), a 1-year warranty and remote diagnostics through the control."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about the NovoTech press brakes",
     related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "hydraulic-shearing-machine.html", "label": "Hydraulic shears"},
@@ -100,7 +100,7 @@ PAGE_SHEAR = dict(
     h1="NovoTech hydraulic shears — QC12K swing beam to 3/4″, Q11K guillotine to 1-9/16″ plate, the value line",
     intro="A hydraulic shear cuts sheet and plate to size in one stroke between a fixed lower blade and a moving upper blade; the back gauge sets the "
           "width, hydraulic hold-downs keep the sheet flat and the control counts the strokes. NovoTech's value-line hydraulic shears are our own "
-          "brand, built in China with Estun controls, Rexroth hydraulics and Siemens motors: the swing beam shears from 5/32″ to 3/4″ over 8 to "
+          "brand, built in China with Estun controls and Siemens motors: the swing beam shears from 5/32″ to 3/4″ over 8 to "
           "20 ft — the rugged everyday plate shear — and the guillotine shears with a variable rake angle from 1/4″ to 1-9/16″ over 8 to 26 ft for "
           "production and thick plate. The Dener premium plate shears, the premium-line mechanical shears and the value-line sheet metal shears "
           "have their own pages, and the shears overview puts every line in one table. Installed and supported from Mississauga, ON, Canada, with a "
@@ -120,7 +120,7 @@ PAGE_SHEAR = dict(
          {"q": "How is the sheet supported?",
           "a": "Ball-transfer front tables, a squaring arm with scale and front support arms are standard; the back gauge carries support fingers and the cut strip drops onto the rear slide. A pneumatic sheet support that holds the piece during the cut and returns it to the front, a conveyor for strips and longer front arms are options for thin, large or finished sheet."},
          {"q": "How does the value line compare with the Dener shears?",
-          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and parts stocked in Canada; the value-line shears are built in China to our specification with Estun controls and Rexroth valves, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
+          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and parts stocked in Canada; the value-line shears are built in China to our specification with Estun controls, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about hydraulic shears",
     related_pages=[{"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"},

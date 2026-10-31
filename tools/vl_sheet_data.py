@@ -459,7 +459,7 @@ NOTE_IW = ("Capacities are the supplier's ratings for steel of up to 65,000 psi 
 
 # ------------------------------------------------------------------------------------------------ families
 PB_STD = ["Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (independent ram cylinders), X and R back gauge",
-          "Electro-hydraulic servo synchronisation: Hawe (Germany) valves, linear scales on both sides, ± 0.01 mm ram repeatability",
+          "Electro-hydraulic servo synchronisation: proportional servo valves, linear scales on both sides, ± 0.01 mm ram repeatability",
           "Mild hybrid drive as standard: a servo motor and servo pump in place of the conventional motor and pump — the pump turns only while the ram "
           "moves and stops while the machine waits, loads or unloads: 40 – 60 % less energy, cooler oil, about 60 dB, longer life for the pump, seals and valves",
           "Servo back gauge on ball screws and linear guides, ± 0.01 mm; two stop fingers with four positioning steps",
@@ -473,7 +473,7 @@ PB_OPT = ["Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or
 NC_STD = ["Estun E21PS NC control — programs the back gauge (X) and ram depth (Y), 40 programs × 25 steps, one-way / two-way positioning, stroke counter; inches or millimetres",
           "Torsion-bar synchronised ram with mechanical depth stops — simple, rigid and easy to service",
           "Motorised X back gauge on ball screw and linear guide, 23.6″ (600 mm) stroke; manual crowning",
-          "Welded, stress-relieved monoblock frame machined in one setting; Rexroth-type hydraulic block; Schneider electrics",
+          "Welded, stress-relieved monoblock frame machined in one setting; compact hydraulic block; Schneider electrics",
           "Manual top-tool clamps, segmented 2-V die and sectioned punch set; front support arms", "Side and rear guards; foot pedal with emergency stop", VOLT]
 NC_OPT = ["Estun E315PS 15.6″ touch NC control (6+1 axes, tool and material database), Delem DA-41T 7″ touch or ESA S630 10″ touch control", "Y-axis CNC upgrade (closed-loop ram) to the WAD series", "DSP laser finger protection or light curtain",
           "Sheet follower support; longer back gauge", "Hydraulic oil cooler", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
@@ -486,7 +486,7 @@ EPB_STD = ["Servo motors driving the ram through timing belts (Maco, Italy) and 
 EPB_OPT = ["Delem DA-58Tx 2D graphic, DA-66S or DA-69S control; ESA S840 or S875 W; Cybelec CybTouch 12", "Wila hydraulic clamping; DSP laser finger protection", "Angle measurement; CNC crowning on 60 t and up",
            "Robot bending cell with Estun robot", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 QC_STD = ["Estun E21S NC control: motorised back gauge, cutting-angle and blade-gap setting, stroke counter, 40 programs × 25 steps, inches or millimetres",
-          "Swing beam on two cylinders with accumulator return; Rexroth hydraulic valve block with pressure gauge and overload protection",
+          "Swing beam on two cylinders with accumulator return; hydraulic valve block with pressure gauge and overload protection",
           "Motorised back gauge on ball screws, 0.8 – 25.6″ (20 – 650 mm), 31.5″ (800 mm) on 13 ft and up, with support fingers and retract",
           "Hydraulic hold-downs every 100 mm; four-edge rectangular blades; manual single-point blade-gap adjustment",
           "Shadow-line light, ball-transfer front tables, squaring arm, front guard with light barrier, rear safety barrier", "Siemens or Wannan main motor; Schneider electrics; NOK seals", VOLT]
@@ -495,7 +495,7 @@ QC_OPT = ["Estun E200PS or Delem DAC-360T control with programmable blade gap", 
 Q11_STD = ["Estun E21S NC control: motorised back gauge, variable rake angle and blade gap set from the control, stroke counter, inches or millimetres",
            "Guillotine beam on linear rollers with a variable rake angle — thin sheet cut fast and flat at 0.5°, thick plate at the high angle with less distortion",
            "Motorised ball-screw back gauge to 31.5″ (800 mm), 39.4″ (1,000 mm) on the large machines, with sheet support",
-           "Hydraulic hold-downs; four-edge blades; Rexroth valve block with overload protection; accumulator return",
+           "Hydraulic hold-downs; four-edge blades; valve block with overload protection; accumulator return",
            "Shadow-line light, ball-transfer front tables, squaring arm, front guard with light barrier, rear safety barrier", "Siemens or Wannan main motor; Schneider electrics", VOLT]
 Q11_OPT = ["Delem DAC-360T or Estun E200PS control", "Pneumatic sheet support; conveyor for cut strips", "Longer front support arms; roller tables", "Hydraulic oil cooler", "Spare blade set",
            "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
@@ -548,7 +548,7 @@ HPB_FAMILIES = [
          name="CNC hydraulic press brakes, 55 – 331 US tons × 4 – 20 ft",
          short="CNC press brakes 50 – 300 t",
          models_label="WAD-50T/1300 – WAD-300T/6000 · 25 models",
-         summary="The value-line CNC press brake: electro-hydraulic servo synchronisation with Hawe valves and linear scales, a servo-driven pump that "
+         summary="The value-line CNC press brake: electro-hydraulic servo synchronisation with servo valves and linear scales, a servo-driven pump that "
                  "only runs while the ram moves, a Delem DA-53Tx control and a servo back gauge on ball screws — the same architecture as the European "
                  "machines, built to a price that lets a small shop own a real CNC brake. Twenty-five models on one design, from 55 US tons × 4 ft to "
                  "331 US tons × 20 ft: the 110 and 135 t × 10 ft machines are the ones most Canadian shops ask for; from 170 t up the machines have "
@@ -601,7 +601,7 @@ COMPACT_FAMILIES = [
          models_label="WAD-50T/1300 · WAD-50T/1600 · 2 models",
          summary="The two smallest WAD machines are the value line's compact CNC press brakes: 50 metric tons (55 US tons) over 1,300 or "
                  "1,600 mm (4.3 and 5.2 ft), 44 or 51″ between the frames, a 9.8″ throat, 5.9″ stroke and 18.1″ daylight, on a 69 – 85 × 59″ "
-                 "footprint at 7,700 lb. The same electro-hydraulic servo architecture as the big machines — Hawe valves, linear scales on "
+                 "footprint at 7,700 lb. The same electro-hydraulic servo architecture as the big machines — servo valves, linear scales on "
                  "both sides, a servo-driven pump that only runs while the ram moves, Y1-Y2-X-R axes and the 15″ Delem DA-53Tx — with a "
                  "sectioned punch set and a 2-V die in the crate. Mild steel to 1/8″ (3 mm) over the full length and 5/32″ (4 mm) over 4.3 ft; stainless to 3/32″. For "
                  "enclosures, HVAC fittings, brackets and small-part production where a 10 ft machine would stand idle — and the lowest-priced "

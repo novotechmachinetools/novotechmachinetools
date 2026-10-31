@@ -30,8 +30,8 @@ PHOTOS = {
     "vl-cp-servo": dict(src="5-3.webp", alt="Servo motor of the back gauge axis"),
     "vl-cp-fingers": dict(src="6-3.webp", alt="Back gauge fingers on linear guides with the four-step stops"),
     "vl-cp-pump-motor": dict(src="7-1.webp", alt="Servo main motor on the pump — the pump turns only while the ram moves"),
-    "vl-cp-hawe": dict(src="8-1.webp", alt="Hawe PVR 6 proportional valve regulation in the electrical cabinet"),
-    "vl-cp-valve": dict(src="9-2.webp", alt="Hawe hydraulic valve block with pressure gauge"),
+    "vl-cp-hawe": dict(src="8-1.webp", alt="Proportional valve regulation in the electrical cabinet"),
+    "vl-cp-valve": dict(src="9-2.webp", alt="Hydraulic valve block with pressure gauge"),
     # ---- WAD-50T/1300
     "vl-cp-wad1300": dict(src="ZHUTU-2.webp", cutout=True, alt="NovoTech WAD-50T/1300 compact CNC press brake, 55 US tons × 4.3 ft"),
     "vl-cp-clamps-2": dict(src="1-3.webp", alt="Top-tool holders along the ram of the compact CNC press brake"),
