@@ -490,6 +490,11 @@ FAMILY_SETS = {}
 for fn in os.listdir(os.path.join(ROOT, "content", "families")):
     if fn.endswith(".json"):
         FAMILY_SETS[fn[:-5]] = json.load(open(os.path.join(ROOT, "content", "families", fn), encoding="utf-8"))["families"]
+# the nameplate badge names the model only when a family has one model: "DB 2017", not "DB 2017 · 1 model" (the owner, Oct 31 2026)
+for _fs in FAMILY_SETS.values():
+    for _f in (_fs.values() if isinstance(_fs, dict) else _fs):
+        if isinstance(_f, dict) and _f.get("models_label"):
+            _f["models_label"] = re.sub(r"\s*·\s*1 model\s*$", "", _f["models_label"])
 
 
 def family(page, fid, fset=None):
