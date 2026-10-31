@@ -555,7 +555,9 @@ HPB_FAMILIES = [
          optional=PB_OPT,
          images=["vl-wad-1", "vl-wad-2", "vl-wade-1", "vl-wad-robot", "vl-pb-da53", "vl-pb-da58", "vl-pb-backgauge", "vl-pb-clamps", "vl-pb-quickclamp",
                  "vl-pb-hydclamp", "vl-pb-clamp-open", "vl-pb-cylinders", "vl-pb-fingers", "vl-pb-servo-bg", "vl-pb-crowning", "vl-pb-dsp", "vl-pb-follower-detail"],
-         videos=vids(("KyNWOyaBKDM", "How to align press brake dies")),      # the channel's WADE / DSP-laser videos show the supplier's badges, so they stay off the page
+         videos=vids(("gYyQIv5HRME", "WAD-110T/3200 CNC press brake — 10 ft × 121 US tons, Delem DA-53TX, mild-hybrid servo drive")),
+         # the die-alignment video (KyNWOyaBKDM) was filmed on a Dener brake: off the WAD section (owner, Oct 30 2026); the channel's
+         # WADE / DSP-laser videos show the supplier's badges, so they stay off the page too
          specs=spec([T_WAD], PB_GK, PB_G_FROM, NOTE_PB)),
     dict(id="vl-wad-heavy", control=CTL_WAD, group="pb-cnc", page=P_HPB, brand=BRAND,
          name="Heavy-duty CNC press brakes, 441 – 1,323 US tons × 13 – 26 ft, and tandems",

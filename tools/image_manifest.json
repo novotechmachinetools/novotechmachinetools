@@ -97479,5 +97479,35 @@
    "bytes": 6136
   },
   "cut": "birefnet"
+ },
+ "video-gYyQIv5HRME": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-gYyQIv5HRME-1200.webp",
+    "bytes": 46750
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-gYyQIv5HRME-800.webp",
+    "bytes": 29898
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-gYyQIv5HRME-480.webp",
+    "bytes": 15818
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-gYyQIv5HRME-thumb.webp",
+   "bytes": 3844
+  }
  }
 }
