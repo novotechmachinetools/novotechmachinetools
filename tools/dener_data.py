@@ -143,8 +143,9 @@ T_XL = table("XL hydraulic CNC press brakes · 5 – 20 ft", "18 models · 66 �
 # mild hybrid option on the XL — Dener's SVP packages (Mild hybrid presentation, Dener 2026): (package, t, approach, bend, return, kW,
 # energy saving %); frame, stroke, daylight and dimensions stay those of the XL of the same tonnage.  The XH is a different machine:
 # Dener's full hybrid series (the owner, Oct 29 2026) — no SVP data belongs to it.
-XH = [("SVP 60", 60, 120, 10, 160, 5, None), ("SVP 80 XF", 80, 130, 10, 125, 8.7, None), ("SVP 100", 100, 200, 10, 200, 8.7, 45),
-      ("SVP 125 XF", 125, 120, 10, 190, 10.8, None), ("SVP 135", 135, 170, 10, 160, 10.8, 42), ("SVP 175", 175, 170, 10, 150, 13.2, 45),
+# the XF model is not sold (the owner, Oct 30 2026): its SVP 80 XF and SVP 125 XF packages are left out
+XH = [("SVP 60", 60, 120, 10, 160, 5, None), ("SVP 100", 100, 200, 10, 200, 8.7, 45),
+      ("SVP 135", 135, 170, 10, 160, 10.8, 42), ("SVP 175", 175, 170, 10, 150, 13.2, 45),
       ("SVP 220", 220, 175, 10, 160, 16.7, 51), ("SVP 320", 320, 130, 10, 150, 21.4, 55), ("SVP 400", 400, 100, 10, 100, 26.9, 58)]
 XL_BY_T = {r[2]: r for r in XL}
 
@@ -201,41 +202,65 @@ T_DDS = table("DDS ball-screw electric press brakes", "2 models · 22 and 44 US 
 NOTE_DDS = ("Bending force in US tons (metric tons in brackets). Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders; "
             "a compact machine for small parts, boxes and brackets.")
 
-PB_STD_XL = ["X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes", "15″ ESA S840 2D graphic touch-screen CNC control",
-             "European-style segmented punch and die with European-style holders", "Hawe hydraulic system; constant pressure",
+# The XL standard equipment: NovoTech's own list for the XL series (the owner's quote, Oct 30 2026) combined with the items from
+# Dener's brochure.  The ESA control and the DSP-AP guard link to their makers' pages (the owner's links); the EUROSTAMP punch and die
+# link to the tooling page on this site, which sells them.  The DSP-AP laser guard is standard now, so it left the XL options.
+# The S840 has a 15.6″ screen and the S875 W a 21.5″ one (the owner, Oct 30 2026; ESA's data) — never "15″" / "21″".
+PB_STD_XL = ['<a href="https://www.esautomotion.com/prodotti/vis-840/">ESA S840</a> 15.6″ 2D graphic touch-screen CNC control (Italy)',
+             "2D offline programming software for the CNC control",
+             "Heavy-duty X-axis back gauge on servo motor, ball screw and linear guides, with 2 finger stops adjustable by hand in height and lateral position",
+             "Y1, Y2 ram axes on linear scales",
+             '<a href="https://www.nuova-elettronica.com/en/products/mcs--dsp-laser-ap">DSP-AP laser finger protection with MCS safety PLC</a>',
+             "2 front supports: sliding arms on linear rail with manual height adjustment",
+             "European (Promecam) tool clamping with segmented punch and die holders",
+             '<a href="press-brake-tooling-punch-and-die.html#es-eu-straight">EUROSTAMP 1281 punch</a> (Italy)',
+             '<a href="press-brake-tooling-punch-and-die.html#es-eu-multiv">EUROSTAMP 2067 4-V die</a> (Italy)',
+             "Side and rear safety covers with safety interlocks", "Heavy-duty ram guideways", "Hawe hydraulic system; constant pressure",
+             "Anti-panic foot pedal with emergency stop button", "Large daylight and throat depth",
+             "CSA-approved electrical panel; 600 V 3-phase transformer included", "Aluminum-foil waterproof overseas packaging",
+             "Made in Turkey with European components"]
+# the XH full hybrid keeps the brochure list (the owner's list above is for the XL series)
+PB_STD_XH = ["X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes", "15.6″ ESA S840 2D graphic touch-screen CNC control",
+             "European-style segmented punch and die with European-style holders",
              "Anti-panic foot pedal with emergency stop", "Front support arms on linear rail", "Side and rear safety guards", "CSA-approved electrical panel, 600 V 3-phase standard"]
-PB_OPT_XL = ["Mild hybrid drive (Dener SVP package): a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine "
-             "waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft)",
-             "21″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control", "CE-certified light barrier (DSP laser finger protection)",
-             "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)", "Manual or CNC motorised crowning", "Automatic angle measurement (bending accuracy 0.05°)",
-             "Sheet follower support", "Hydraulic oil cooler; electrical panel cooler; automatic lubrication", "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
-             "Tandem configuration to 60 ft and 1,800 US tons", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
-PB_STD_DDM = ["21″ ESA S875 W 3D CNC control", "4 axes: Y1, Y2, X, R", "European-type segmented punch and die clamping", "Side and rear safety guards; anti-panic emergency-stop pedal",
+_PB_OPT_ALL = ["Mild hybrid drive (Dener SVP package): a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine "
+               "waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft)",
+               "21.5″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control", "CE-certified light barrier (DSP laser finger protection)",
+               "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)", "Manual or CNC motorised crowning", "Automatic angle measurement (bending accuracy 0.05°)",
+               "Sheet follower support", "Hydraulic oil cooler; electrical panel cooler; automatic lubrication", "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
+               "Tandem configuration to 60 ft and 1,800 US tons", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+PB_OPT_XL = [x for x in _PB_OPT_ALL if not x.startswith("CE-certified light barrier")]
+PB_OPT_XH = _PB_OPT_ALL[1:]
+PB_STD_DDM = ["21.5″ ESA S875 W 3D CNC control", "4 axes: Y1, Y2, X, R", "European-type segmented punch and die clamping", "Side and rear safety guards; anti-panic emergency-stop pedal",
               "Electrical cabinet cooling; 380/600 V 3-phase, CSA-approved panel", "Servo-electric drive — no hydraulic oil, start/stop energy use"]
 PB_OPT_DDM = ["Delem DA-66S or DA-69S 3D control", "X-R-Z1-Z2, X1-X2-R-Z1-Z2, ATF X1-X2-R1-R2-Z1-Z2 or X-Prime back gauge", "Fiessler AKAS 2 M(P) safety barrier or DSP front laser safety",
               "Manual or automatic crowning", "CE-standard light barrier; sheet follower", "Automatic angle measurement", "Pneumatic or Wila mechanical / hydraulic clamping",
               "Robot bending cell", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
-PB_STD_DDS = ["15″ ESA S840 2D graphic touch-screen CNC control", "2-axis back gauge (X, R)", "European-type punch and die clamping", "Electrical cabinet cooling",
+PB_STD_DDS = ["15.6″ ESA S840 2D graphic touch-screen CNC control", "2-axis back gauge (X, R)", "European-type punch and die clamping", "Electrical cabinet cooling",
               "Ball-screw drive with Lenze servo technology — no hydraulic oil or cylinders"]
 PB_OPT_DDS = ["ESA 875 W CNC control; 5-axis back gauge (X, R, Z1, Z2, X-Prime) with ESA S660", "Foldable, height-adjustable work table",
               "Wila mechanical / hydraulic clamping; double-wedge adjustable European punch holder", "Punches and dies", "DSP-AP laser finger protection", "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"]
 
 # the controls Dener fits — a short note under every press brake (the buying guide on press-brake.html explains them)
 CTL_XL = {"title": "ESA S840 2D as standard; ESA S875 W, Delem DA-66S or DA-69S as options",
-          "text": "Every XL comes with the 15″ ESA S840 touch screen: numeric and 2D graphic programming, automatic calculation of tonnage, "
+          "text": "Every XL comes with the 15.6″ ESA S840 touch screen: numeric and 2D graphic programming, automatic calculation of tonnage, "
                   "bend sequence and back-gauge positions, tool library, up to 6 axes, USB and network. For shops that program from CAD or run "
-                  "many different parts, Dener fits the 21″ ESA S875 W (3D programming and simulation, DXF / STEP import, EsaBend 3D), "
+                  "many different parts, Dener fits the 21.5″ ESA S875 W (3D programming and simulation, DXF / STEP import, EsaBend 3D), "
                   "the 24″ Delem DA-66S (2D graphic programming with a 3D machine view, Profile-S2D offline) or the 24″ Delem DA-69S "
-                  "(full 3D programming and simulation, Profile-S3D) — the same four controls on every Dener press brake.",
+                  "(full 3D programming and simulation, Profile-S3D) — the same four controls on every Dener press brake. All four have "
+                  "collision control: once the part is drawn or imported, the control simulates the bend sequence and checks the part against "
+                  "the punch, the die and the machine before the first bend.",
           "images": ["ctl-esa-s840-card", "ctl-esa-s875w-card", "ctl-delem-da66s", "ctl-delem-da69s"]}
 CTL_DDM = {"title": "ESA S875 W 3D as standard; Delem DA-66S or DA-69S as options",
-           "text": "The DDM is delivered with the 21″ ESA S875 W: 3D programming and simulation, automatic bend sequence with collision "
-                   "control, DXF / STEP import and EsaBend 3D offline software on a Windows PC. The 24″ Delem DA-66S (2D graphic, 3D "
-                   "machine view) and DA-69S (3D) are the alternatives for shops standardised on Delem.",
+           "text": "The DDM is delivered with the 21.5″ ESA S875 W: 3D programming and simulation, automatic bend sequence, DXF / STEP import "
+                   "and EsaBend 3D offline software on a Windows PC. The 24″ Delem DA-66S (2D graphic, 3D machine view) and DA-69S (3D) are "
+                   "the alternatives for shops standardised on Delem. All three have collision control: the control simulates the bend "
+                   "sequence and checks the part against the punch, the die and the machine before the first bend.",
            "images": ["ctl-esa-s875w-card", "dn-det-esabend-3d", "ctl-delem-da66s", "ctl-delem-da69s"]}
 CTL_DDS = {"title": "ESA S840 2D as standard; ESA S875 W as an option",
-           "text": "The small DDS carries the 15″ ESA S840 2D touch-screen control — numeric and 2D graphic programming with automatic tonnage and "
-                   "sequence calculation — and can be ordered with the 21″ ESA S875 W 3D control and a 5-axis back gauge.",
+           "text": "The small DDS carries the 15.6″ ESA S840 2D touch-screen control — numeric and 2D graphic programming with automatic tonnage and "
+                   "sequence calculation — and can be ordered with the 21.5″ ESA S875 W 3D control and a 5-axis back gauge. Both have collision "
+                   "control: the control checks the drawn part against the punch, the die and the machine before the first bend.",
            "images": ["ctl-esa-s840-card", "ctl-esa-s875w-card"]}
 
 PB_FAMILIES = [
@@ -244,7 +269,7 @@ PB_FAMILIES = [
          short="XL hydraulic press brakes",
          models_label="XL 1560 – XL 60600 · 18 models",
          summary="The Dener XL is the hydraulic press brake most Canadian shops buy from us: a stress-relieved monoblock frame, Hawe hydraulics "
-                 "at constant pressure, Y1-Y2 ram axes and an X back gauge on ball screw and linear guides, driven from a 15″ ESA S840 2D "
+                 "at constant pressure, Y1-Y2 ram axes and an X back gauge on ball screw and linear guides, driven from a 15.6″ ESA S840 2D "
                  "graphic control — the operator draws the part and the control works out the sequence, tonnage and back-gauge positions. "
                  "Eighteen models from 66 US tons × 5 ft to 661 US tons × 20 ft on the same frame design: the 5 to 10 ft machines to 353 US tons "
                  "for job-shop sheet work, the 12, 13 and 20 ft machines to 661 US tons with up to 26.8″ daylight, 17.7″ stroke and a 23.6″ throat "
@@ -252,11 +277,14 @@ PB_FAMILIES = [
                  "supports come with every machine; the options run from CNC crowning and 6-axis back gauges to angle measurement, sheet "
                  "followers and robot cells, and for longer work Dener builds tandem machines — two XLs on one control bending to 60 ft and "
                  "1,800 US tons.",
-         features=["Monoblock welded frame, stress-relieved and machined in one setting; fixed upper table, 100 % free bending area between the housings",
+         features=["Monoblock welded frame, stress-relieved and machined in one setting",
                    "5 to 20 ft bending lengths, 66 to 661 US tons; 23.6″ (600 mm) throat on the 400 and 600 t machines"] + PB_STD_XL,
          optional=PB_OPT_XL,
-         images=["dn-xl-1", "dn-xl-2", "dn-xl-3", "dn-xf-1", "dn-xf-2", "dn-xl-video-1", "dn-xl-video-2", "dn-xl-backgauge", "dn-xl-follower",
-                 "dn-xh-4", "dn-xf-3", "dn-xl-control",
+         # no XF photos (the owner, Oct 30 2026: the XF model is out of the gallery and the tables)
+         # Dener's six XL detail photos with their captions (denerusa.com, the owner, Oct 30 2026); the blurry video frame of the
+         # punch holders and the ATF back-gauge frame are out (the owner, Oct 30 2026)
+         images=["dn-xl-1", "dn-xl-2", "dn-xl-3", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-esa-screen", "dn-xl-ram-slide",
+                 "dn-xl-front-arms", "dn-xl-euro-tooling", "dn-xl-video-2", "dn-xl-follower", "dn-xh-4", "dn-xl-control",
                  # the back gauge options with their axis arrows (tools/dener_bg_arrows.py)
                  "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis", "dn-det-bg-6axis-atf"],
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),
@@ -280,11 +308,11 @@ PB_FAMILIES = [
          summary="The smallest XL is the compact press brake of the premium line: 60 metric tons (66 US tons) over 1,550 mm (5 ft), "
                  "49″ between the frames, a 15.7″ throat and 16.1″ of daylight, on a 96 × 87″ footprint (64″ wide without the front supports) that goes through a shop door and "
                  "weighs 9,480 lb — the same stress-relieved monoblock frame, Hawe hydraulics, Y1-Y2 ram with linear scales and ball-screw X "
-                 "back gauge as the big XLs, with the 15″ ESA S840 2D control, front supports on linear rail and a sectioned EUROSTAMP punch "
+                 "back gauge as the big XLs, with the 15.6″ ESA S840 2D control, front supports on linear rail and a sectioned EUROSTAMP punch "
                  "1281 with the 4-way die 2067 in the crate. 7.5 kW, 600 V with a CSA panel. For HVAC fittings, enclosures, brackets, "
                  "signage and job-shop sheet work up to 5 ft where a 100-ton machine is more than you need — and a real CNC press brake, "
-                 "not a bending brake: the control calculates tonnage, sequence and gauge positions, and the DSP laser guard, 4- to 6-axis "
-                 "back gauges, CNC crowning and Wila clamping are the same options as on the 10 ft machines.",
+                 "not a bending brake: the control calculates tonnage, sequence and gauge positions, the DSP-AP laser finger guard comes as "
+                 "standard, and 4- to 6-axis back gauges, CNC crowning and Wila clamping are the same options as on the 10 ft machines.",
          headline="66 US tons × 5 ft · 15.7″ throat · ESA S840 2D · 9,480 lb · EUROSTAMP 1281 / 2067 tooling included",
          features=["60 t × 1,550 mm — 16 ga to 3/16″ mild steel over the full 5 ft, 1/4″ over 4 ft (V = 8 × thickness)",
                    "Monoblock welded frame, stress-relieved and machined in one setting; 49.2″ (1,250 mm) between the frames",
@@ -307,8 +335,8 @@ PB_FAMILIES = [
                  "tonnage, length and speeds are confirmed per machine, so ask us for the XH data in your size.",
          features=["Full hybrid: the servo-driven hydraulic system is designed into the machine, not added to an XL",
                    "The pumps turn only while the ram moves — low energy use, quiet operation and cool oil",
-                   "Its own frame and covers — the XH design won a Bronze International Design Award"] + [x for x in PB_STD_XL if not x.startswith("Hawe")],
-         optional=PB_OPT_XL[1:],
+                   "Its own frame and covers — the XH design won a Bronze International Design Award"] + PB_STD_XH,
+         optional=PB_OPT_XH,
          images=["dn-xh-1", "dn-xh-2", "dn-xh-3"],
          videos=[],
          specs=None),
@@ -318,7 +346,7 @@ PB_FAMILIES = [
          models_label="DDM 4015 – DDM 20040 · 9 models",
          summary="A full-electric press brake with no hydraulic oil: servo motors drive the ram through belts and pulleys, bending at 20 mm/s on "
                  "every model — twice the speed of a hydraulic — with 0.01 mm ram repeatability and power drawn only while the ram moves. Nine "
-                 "models from 44 US tons × 5 ft to 220 US tons × 13.4 ft, all with the 21″ ESA S875 W 3D control, four axes (Y1, Y2, X, R) and "
+                 "models from 44 US tons × 5 ft to 220 US tons × 13.4 ft, all with the 21.5″ ESA S875 W 3D control, four axes (Y1, Y2, X, R) and "
                  "European tooling as standard; robot cells, 6-axis back gauges and angle measurement as options. Quiet, clean and "
                  "fast — the machine for a job shop that bends all day.",
          features=["Servo-electric ram drive — 0.79 in/s bending speed on every model, 0.01 mm repeatability", "No hydraulic oil, pump or valves; 50 – 70 % less energy than a hydraulic brake"] + PB_STD_DDM,
@@ -335,7 +363,7 @@ PB_FAMILIES = [
          models_label="DDS 2090 · DDS 4013 · 2 models",
          summary="The small electric press brake: Lenze servo motors on ball screws move the ram — no oil, no cylinders — in a compact "
                  "monoblock frame with a small throat for precise bends on brackets, boxes, enclosures and pans. 22 US tons × 3 ft or 44 US "
-                 "tons × 4.3 ft, 14.8″ daylight, the 15″ ESA S840 control and a 2-axis back gauge as standard, a 5-axis gauge, Wila clamping "
+                 "tons × 4.3 ft, 14.8″ daylight, the 15.6″ ESA S840 control and a 2-axis back gauge as standard, a 5-axis gauge, Wila clamping "
                  "and a laser finger guard as options. Plugs into a standard panel and goes through a normal door.",
          features=["Ball-screw ram drive with Lenze servo technology; up to 50 % energy saving", "Monoblock frame, small throat, 14.8″ daylight for box bending"] + PB_STD_DDS,
          optional=PB_OPT_DDS,

@@ -524,9 +524,11 @@ LINE = "NovoTech value line — built in China to North American standards and s
 CTL_WAD = {"title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W, Cybelec CybTouch 12 or SCS920 to order",
            "text": "The value-line CNC brakes ship with the 15″ Delem DA-53Tx — touch-screen numeric programming with a 2D tool and product view, "
                    "crowning and servo control, up to 4 axes — the control most Canadian job shops know. Order the machine with the 18.5″ "
-                   "DA-58Tx (2D graphic programming with automatic bend sequence and collision check), the 24″ DA-66S (2D with a 3D machine view) "
+                   "DA-58Tx (2D graphic programming with automatic bend sequence), the 24″ DA-66S (2D with a 3D machine view) "
                    "or DA-69S (full 3D), the ESA S840 (15.6″, 6 axes) or S875 W (21.5″ 3D), the Cybelec CybTouch 12 (12″ 2D) or the SCS920 "
-                   "(21.5″, 6+1 axes) when the work calls for graphic programming, more axes or a control your operators already run.",
+                   "(21.5″, 6+1 axes) when the work calls for graphic programming, more axes or a control your operators already run. The "
+                   "DA-58Tx, DA-66S, DA-69S, S840 and S875 W also have collision control: they simulate the bend sequence and check the part "
+                   "against the punch, the die and the machine before the first bend.",
            "images": ["ctl-delem-da53tx", "ctl-delem-da58tx", "ctl-delem-da66s", "ctl-delem-da69s", "ctl-esa-s840-card", "ctl-esa-s875w-card", "ctl-cybelec-ct12", "ctl-scs920"]}
 CTL_NC = {"title": "Estun E21PS as standard; Estun E315PS, Delem DA-41T or ESA S630 to order",
           "text": "The torsion-bar brakes carry the Estun E21PS: a two-axis NC that positions the back gauge (X) and the ram depth (Y) from 40 stored "
@@ -536,7 +538,9 @@ CTL_NC = {"title": "Estun E21PS as standard; Estun E315PS, Delem DA-41T or ESA S
           "images": ["ctl-estun-e21ps", "ctl-estun-e315ps", "ctl-delem-da41t", "ctl-esa-s630"]}
 CTL_EPB = {"title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W or Cybelec CybTouch 12 to order",
            "text": "The electric brakes use the same 15″ Delem DA-53Tx as the hydraulic CNC line, driving the servo ram and the X-R back gauge; "
-                   "the 2D graphic DA-58Tx, the 24″ DA-66S and DA-69S, the ESA S840 and S875 W and the Cybelec CybTouch 12 are the options.",
+                   "the 2D graphic DA-58Tx, the 24″ DA-66S and DA-69S, the ESA S840 and S875 W and the Cybelec CybTouch 12 are the options. The "
+                   "DA-58Tx, DA-66S, DA-69S, S840 and S875 W also have collision control: they simulate the bend sequence and check the part "
+                   "against the punch, the die and the machine before the first bend.",
            "images": ["ctl-delem-da53tx", "ctl-delem-da58tx", "ctl-delem-da66s", "ctl-delem-da69s", "ctl-esa-s875w-card", "ctl-cybelec-ct12"]}
 
 HPB_FAMILIES = [

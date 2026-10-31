@@ -220,6 +220,20 @@ GUIDES = [
       "capacity tables, bend diameters and pins, output per shift, and power and winter work. " + BY,
       "Canadian bar sizes and grades in one table, reading the 45 / 65 / 85 kg/mm² capacity columns, bend diameters and pins, and "
       "output per shift."),
+    # the rebar bender and rebar cutter pages carry the full guide of the old site's rebar article, split by machine (the owner,
+    # Oct 30 2026: "transfer all of that information to the buying guides of the rebar bender and rebar cutter pages")
+    G("rebar-bender", "rebar-bender-guide.html", "Rebar bender buying guide", "rebar",
+      "What we explain to customers before they buy a rebar bender: why bend with a machine, the types of benders, capacity and "
+      "power, programmable angles, spiral and stirrup attachments, stack bending, tooling, what to look for inside the machine, "
+      "portable or stationary, and the budget. " + BY,
+      "Why bend with a machine, the types, capacity and power, PLC angles, spiral and stirrup attachments, stack bending, tooling, "
+      "CSA panels and motors, and the budget.", image="rg-bending"),
+    G("rebar-cutter", "rebar-cutter-guide.html", "Rebar cutter buying guide", "rebar",
+      "What we explain to customers before they buy a rebar cutter: why cut with a machine, hydraulic, mechanical and portable "
+      "cutters, capacity and power, stack cutting, blades, what to look for inside the machine, portable or stationary, and the "
+      "budget. " + BY,
+      "Why cut with a machine, hydraulic, mechanical and portable cutters, capacity and power, stack cutting, blades, CSA panels and "
+      "motors, and the budget.", image="h-head"),
     # ------------------------------------------------------------------------------------------- windows
     G("pvc-aluminum-window-machines", "window-machinery-guide.html", "Window and door machinery buying guide", "windows",
       "What we explain to customers before they set up a window and door shop: the steps and their machines, sizing the line by "

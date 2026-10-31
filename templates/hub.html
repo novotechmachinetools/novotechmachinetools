@@ -18,7 +18,7 @@
       </ul>
       {% set guide_icon %}<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 6.5C10.2 5.2 7.6 4.6 3.5 4.7v13.6c4.1-.1 6.7.5 8.5 1.8 1.8-1.3 4.4-1.9 8.5-1.8V4.7c-4.1-.1-6.7.5-8.5 1.8Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M12 6.5v13.6" fill="none" stroke="currentColor" stroke-width="1.9"/></svg>{% endset %}
       {% if page.article %}<p class="hero-guide"><a class="btn btn-guide" href="#{{ page.article_id or 'buying-guide' }}">{{ guide_icon }}<span>{{ page.article_title or 'Buying guide' }}<small>{{ page.guide_teaser or 'What to check before you buy' }}</small></span></a></p>
-      {% elif page.related_article %}{% set ra = page.related_article.label.split(':', 1) %}<p class="hero-guide"><a class="btn btn-guide" href="{{ page.related_article.href }}">{{ guide_icon }}<span>{{ ra[0] }}{% if ra|length > 1 %}<small>{{ ra[1].strip()[:1]|upper }}{{ ra[1].strip()[1:] }}</small>{% endif %}</span></a></p>{% endif %}
+      {% elif page.related_article %}{% set ra = page.related_article.label.split(':', 1) %}<p class="hero-guide"><a class="btn btn-guide" href="{{ page.related_article.href }}" target="_blank" rel="noopener">{{ guide_icon }}<span>{{ ra[0] }}{% if ra|length > 1 %}<small>{{ ra[1].strip()[:1]|upper }}{{ ra[1].strip()[1:] }}</small>{% endif %}</span></a></p>{% endif %}
       <div class="cta-row{{ ' cta-stack' if (page.catalogue_pdfs or [])|length > 1 else '' }}">
         <a class="btn btn-primary" href="#reques-a-quote">Request a quote</a>
         {% if page.catalogue_pdf %}<a class="btn btn-ghost" href="{{ page.catalogue_pdf.file }}" download>{{ page.catalogue_pdf.label }} <small>({{ page.catalogue_pdf.size }})</small></a>{% endif %}

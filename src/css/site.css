@@ -254,8 +254,9 @@ small { font-size: .85em; }
 .family-videos.is-multi { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .family-videos.is-multi .video { max-width: none; }
 .video { max-width: 720px; }
-/* more than three videos: a carousel showing three at a time (two on tablets, one on phones), arrows for the rest */
-.vid-carousel { position: relative; margin-top: 26px; --vc-gap: 18px; --vc-per: 3; container-type: inline-size; }
+/* two or more videos: a carousel showing three at a time on desktop, two on tablets, one on phones (never more than the family
+   has: --vc-n is its number of videos), the arrows slide to the rest (owner, Oct 30 2026) */
+.vid-carousel { position: relative; margin-top: 26px; --vc-gap: 18px; --vc-per: min(3, var(--vc-n, 3)); container-type: inline-size; }
 .vid-carousel .vc-track { margin-top: 0; display: grid; grid-auto-flow: column; grid-template-columns: none;
   grid-auto-columns: calc((100% - (var(--vc-per) - 1) * var(--vc-gap)) / var(--vc-per)); gap: var(--vc-gap);
   overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
@@ -271,8 +272,9 @@ small { font-size: .85em; }
 .vc-btn:hover { background: var(--orange-deep); }
 .vc-btn:disabled { opacity: 0; pointer-events: none; }
 .vc-status { margin: 10px 0 0; font-size: 14px; color: var(--steel); text-align: center; }
-@media (max-width: 1000px) { .vid-carousel { --vc-per: 2; } }
-@media (max-width: 640px) { .vid-carousel { --vc-per: 1.15; --vc-gap: 12px; } .vc-prev { left: -6px; } .vc-next { right: -6px; } }
+@media (max-width: 1000px) { .vid-carousel { --vc-per: min(2, var(--vc-n, 2)); } }
+@media (max-width: 640px) { .vid-carousel { --vc-per: 1; --vc-gap: 12px; } .vc-prev { left: -6px; } .vc-next { right: -6px; } }
+.vid-carousel.is-static .vc-status { display: none; }   /* every video in view: nothing to slide */
 /* family videos (owner, Oct 30 2026): on desktop a full-width row under the gallery and the text — three in view, the rest in
    the carousel (the .vid-carousel rules above); on phones and tablets the order is gallery, videos, quote / brochure buttons,
    text, tables (grid areas, so the videos are in the page only once) */

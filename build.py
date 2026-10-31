@@ -634,8 +634,15 @@ def sort_videos(f):
     """Every family shows its most relevant and newest video first (owner, Oct 30 2026): videos of the machine before
     general ones (how-tos, instructions, factory tours, comparisons), each group newest first (channel upload order)."""
     vs = f.get("videos") or []
+    # "_first" in content/videos.json: videos the owner wants at the front of a family, in his order (the XL, Oct 30 2026);
+    # the rest follow by relevance, then newest first
+    first = {vid: i for i, vid in enumerate((VIDEO_MAP.get("_first") or {}).get(f["id"]) or [])}
     if len(vs) > 1:
-        f["videos"] = sorted(vs, key=lambda v: (video_tier(v), YT_ORDER.get(v["id"], 1e9)))
+        f["videos"] = sorted(vs, key=lambda v: (0, first[v["id"]]) if v["id"] in first
+                             else (1, video_tier(v), YT_ORDER.get(v["id"], 1e9)))[:MAX_VIDEOS]
+
+
+MAX_VIDEOS = 10        # per product (owner, Oct 30 2026): three in view on desktop, the rest in the carousel
 
 
 def prepare_family(f):
@@ -1488,7 +1495,7 @@ def ai_catalogue(pages):
                     "id": f["id"], "name": f["name"], "short": f["short"], "models_label": f.get("models_label", ""),
                     "brand": brand.get("name") or (page.get("brand") or {}).get("name", ""), "line": brand.get("line"),
                     "category": g["title"], "page_title": page["h1"], "page": page["slug"], "href": f"{page['slug']}#{f['id']}",
-                    "headline": f.get("headline", ""), "summary": f.get("summary", ""), "features": f.get("features", [])[:7],
+                    "headline": f.get("headline", ""), "summary": f.get("summary", ""), "features": [re.sub(r"<[^>]+>", "", x) for x in f.get("features", [])[:7]],
                     "automation": f.get("group"), "models": models, "image": thumb,
                 })
     return items

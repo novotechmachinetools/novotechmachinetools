@@ -45,9 +45,12 @@ HYDRAULIC = dict(
           "repeat parts in one material. Every machine comes with a CSA-approved panel and a 1-year warranty, and is "
           "installed, trained and supported from Mississauga, ON, Canada. For a brake with no hydraulic oil see the electric press brakes; for "
           "33 – 66 ton machines over 4 – 5 ft, the compact press brakes.",
-    points=["CNC hydraulic: premium line 66 – 661 US tons × 5 – 20 ft (ESA / Delem, 6-axis gauges); value line 55 – 331 tons, heavy-duty to 1,323 tons × 26 ft",
-            "Hybrid: the mild hybrid servo pump on any XL — 42 – 58 % less energy, 17 – 75 % faster approach and return, quieter — and the XH full hybrid",
-            "NC torsion-bar 33 – 441 tons with Estun control for repeat parts in one material — the simplest hydraulic brake to run and maintain"],
+    # the hero bullets link to the products further down the page (the owner, Oct 30 2026)
+    points=['CNC hydraulic: <a href="#dn-xl">premium line 66 – 661 US tons × 5 – 20 ft</a> (ESA / Delem, 6-axis gauges); '
+            '<a href="#vl-wad">value line 55 – 331 tons</a>, <a href="#vl-wad-heavy">heavy-duty to 1,323 tons × 26 ft</a>',
+            'Hybrid: the <a href="#dn-xl">mild hybrid servo pump on any XL</a> — 42 – 58 % less energy, 17 – 75 % faster approach and return, '
+            'quieter — and the <a href="#dn-xh">XH full hybrid</a>',
+            '<a href="#vl-nc">NC torsion-bar 33 – 441 tons</a> with Estun control for repeat parts in one material — the simplest hydraulic brake to run and maintain'],
     hero="dn-xl-1", minis=["vl-wad-1", "vl-nc-1"],
     groups=[("pb-premium", "CNC hydraulic press brakes · premium line", "The Dener XL: a monoblock frame, Hawe hydraulics and an ESA 2D control, 5 to 20 ft and 66 to 661 US tons — the standard for plate and production.", "dener"),
             ("pb-value", "CNC hydraulic press brakes · value line", "NovoTech's own brakes: the same architecture — servo valves, linear scales, Delem control — from 55 to 331 US tons, heavy-duty and tandem machines to 1,323 tons.", "novotech"),
@@ -61,7 +64,7 @@ HYDRAULIC = dict(
          {"q": "What is a hybrid press brake?",
           "a": "On a conventional hydraulic brake the motor and pump run at full speed all day, whether the ram moves or not. A hybrid drives the hydraulics with servo motors, so the pump turns only while the ram moves, at the speed the ram needs. Dener builds it two ways. The mild hybrid, an option on every XL, keeps the XL's hydraulic circuit and replaces only the AC motor and fixed pump with a servo motor and servo pump: Dener measures 42 – 58 % energy saving and 17 – 75 % faster approach and return against the standard XL, with less heat in the oil and a quieter shop, and everything else — frame, cylinders, valves, tooling, controls — is the XL. The XH is the full hybrid, a series designed around its servo-driven hydraulics. On NovoTech's value line, every WAD CNC brake has the mild hybrid drive as standard."},
          {"q": "Which control comes with the machine?",
-          "a": "The premium XL comes with the 15″ ESA S840 2D graphic touch-screen control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning. The value-line CNC brakes come with the 15″ Delem DA-53Tx — the 18.5″ DA-58Tx (2D graphic), the 24″ DA-66S and DA-69S, the ESA S840 and S875 W, the Cybelec CybTouch 12 and the SCS920 are options; the NC brakes with the Estun E21PS (E315PS, Delem DA-41T or ESA S630 as options). All program in inches or millimetres, and the buying guide on the press brake page compares every one of them."},
+          "a": "The premium XL comes with the 15.6″ ESA S840 2D graphic touch-screen control (Delem DA-66S / 69S and the ESA S875 W 3D control are options): draw the profile, the control calculates the bend sequence, tonnage, back-gauge positions and crowning and checks the part for collisions with the tools and the machine. The value-line CNC brakes come with the 15″ Delem DA-53Tx — the 18.5″ DA-58Tx (2D graphic), the 24″ DA-66S and DA-69S, the ESA S840 and S875 W, the Cybelec CybTouch 12 and the SCS920 are options; the NC brakes with the Estun E21PS (E315PS, Delem DA-41T or ESA S630 as options). All program in inches or millimetres, and the buying guide on the press brake page compares every one of them."},
          {"q": "What back gauge and axes are available?",
           "a": "Every CNC machine has the Y1 and Y2 ram axes and an X back-gauge axis on a ball screw and linear guides. Options go up to the 6-axis gauge with X1, X2, R1, R2, Z1 and Z2 — two independently positioned fingers for angled flanges — plus a CNC crowning axis; the NC brakes have X and the depth stop. The back gauge is set by the control for every bend of the program."},
          TOOLING_FAQ, SAFETY_FAQ, SERVICE_FAQ, DELIVERY_FAQ, OIL_FAQ, VOLT_FAQ_GENERIC],
@@ -84,8 +87,10 @@ ELECTRIC = dict(
           "11 to 176 US tons and 1.6 to 10.5 ft with Delem control, plus 3 to 13 ton bench machines. Every machine comes with a CSA-approved "
           "panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For 3/8″ plate, "
           "tonnage above 220 tons or the lowest price per ton, see the hydraulic press brakes.",
-    points=["Premium line: DDM servo-electric 44 – 220 US tons × 5 – 13 ft, ESA S875 W 3D control; DDS ball-screw 22 and 44 tons",
-            "Value line: electric ball-screw brakes 11 – 176 US tons × 1.6 – 10.5 ft with Delem control; 3 – 13 ton bench brakes",
+    points=['Premium line: <a href="#dn-ddm">DDM servo-electric 44 – 220 US tons × 5 – 13 ft</a>, ESA S875 W 3D control; '
+            '<a href="#dn-dds">DDS ball-screw 22 and 44 tons</a>',
+            'Value line: <a href="#vl-wadg">electric ball-screw brakes 11 – 176 US tons × 1.6 – 10.5 ft</a> with Delem control; '
+            '<a href="#vl-wadg-mini">3 – 13 ton bench brakes</a>',
             "±0.01 mm, power only while the ram moves, no hydraulic oil or filters — about twice the speed of a hydraulic brake on sheet"],
     hero="dn-ddm-2", minis=["vl-wadg-1", "dn-dds-1"],
     groups=[("pb-servo", "Servo-electric and ball-screw press brakes · premium line", "No hydraulic oil: the Dener DDM servo-electric brake for production to 220 tons and the DDS ball-screw brake for small parts.", "dener"),
@@ -95,7 +100,7 @@ ELECTRIC = dict(
          {"q": "Servo-electric or ball-screw — what is the difference?",
           "a": "Both are electric. The DDM servo-electric brake drives the ram through servo motors and a belt-and-pulley system across the whole bending length, which is how it reaches 220 US tons and 13 ft with the force distributed evenly along the beam. The DDS and the value-line brakes drive the ram with two ball screws, one per side, each on its own servo motor — simpler, very accurate, and the right construction up to about 176 tons and 10 ft."},
          {"q": "Premium line or value line?",
-          "a": "The premium DDM is built in Turkey by Dener with the 21″ ESA S875 W 3D control, 6-axis back gauges, laser angle measurement and robot cells as options, and parts stocked in Canada — the production electric brake. NovoTech's value-line electric brakes are built in China to our specification with Delem control and the same Estun servo components, at about two-thirds of the price — the electric brake for a job shop or a second machine for small parts. Both are installed and supported by the same NovoTech technicians."},
+          "a": "The premium DDM is built in Turkey by Dener with the 21.5″ ESA S875 W 3D control, 6-axis back gauges, laser angle measurement and robot cells as options, and parts stocked in Canada — the production electric brake. NovoTech's value-line electric brakes are built in China to our specification with Delem control and the same Estun servo components, at about two-thirds of the price — the electric brake for a job shop or a second machine for small parts. Both are installed and supported by the same NovoTech technicians."},
          TONNAGE_FAQ,
          {"q": "What does an electric press brake cost to run?",
           "a": "There is no hydraulic oil to buy, filter, cool or dispose of, no pump motor idling between bends, and the servo motors regenerate on the return stroke: Dener measures about 70 % less energy than a hydraulic brake of the same tonnage on sheet work, and the maintenance schedule is lubrication of the ball screws and guides. The machines are also quieter, which matters in a shop that runs the brake all day."},
@@ -114,7 +119,7 @@ COMPACT = dict(
     intro="A compact hydraulic press brake bends sheet between a punch and a V-die like its big brothers, at the size that fits a sheet-metal "
           "shop rather than a steel-fabrication plant: 2 to 8 ft of bending length and 16 to 66 US tons, on a footprint that goes through a "
           "door and runs on a 600 V or 208 V supply. NovoTech sells three on this page: the Dener XL 1560 — the smallest machine of the "
-          "premium line, 66 US tons over 5 ft with the 15″ ESA S840 2D control, Y1-Y2 ram on linear scales, a ball-screw X back gauge and "
+          "premium line, 66 US tons over 5 ft with the 15.6″ ESA S840 2D control, Y1-Y2 ram on linear scales, a ball-screw X back gauge and "
           "EUROSTAMP tooling in the crate, built in Turkey; NovoTech's own value-line compacts, built to our specification — the WAD-50T "
           "CNC brakes, 55 US tons over 4.3 and 5.2 ft with Hawe servo valves and a Delem DA-53Tx, and the WC67K-30T torsion-bar NC brake, "
           "33 US tons over 5.2 ft with an Estun E21PS; and the value-line HBV bending brakes, 16 to 35 tons, with a four-way V-block "
@@ -122,9 +127,11 @@ COMPACT = dict(
           "enclosures, signage, brackets and job-shop work where a 100-ton machine is more than you need. Every machine comes with a "
           "CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For 10 ft and longer, or "
           "1/4″ plate and up, see the hydraulic press brakes; for a brake with no hydraulic oil the electric press brakes.",
-    points=["Dener XL 1560: 66 US tons × 5 ft, 15.7″ throat, ESA S840 2D control, Y1-Y2-X axes on linear scales, EUROSTAMP 1281 punch and 2067 4-way die included — premium line, made in Turkey",
-            "Value line: WAD-50T/1300 and 1600 CNC brakes, 55 US tons × 4.3 – 5.2 ft, 4 axes with Delem DA-53Tx; WC67K-30T/1600 NC torsion-bar brake, 33 US tons × 5.2 ft with Estun E21PS",
-            "Value-line HBV bending brakes: 16.5 – 35 US tons, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″, four-way V-block or two cylinders"],
+    points=['<a href="#dn-xl-1560">Dener XL 1560: 66 US tons × 5 ft</a>, 15.7″ throat, ESA S840 2D control, Y1-Y2-X axes on linear scales, '
+            'EUROSTAMP 1281 punch and 2067 4-way die included — premium line, made in Turkey',
+            'Value line: <a href="#vl-wad-compact">WAD-50T/1300 and 1600 CNC brakes</a>, 55 US tons × 4.3 – 5.2 ft, 4 axes with Delem DA-53Tx; '
+            '<a href="#vl-nc-compact">WC67K-30T/1600 NC torsion-bar brake</a>, 33 US tons × 5.2 ft with Estun E21PS',
+            'Value-line <a href="#tt-hbv">HBV bending brakes</a>: 16.5 – 35 US tons, 5/32″ × 24 – 48″, 3/16″ × 49″ and 1/8″ × 100″, four-way V-block or two cylinders'],
     hero="dn-xl1560-studio", minis=["vl-cp-wad1600", "vl-cp-nc-adh"],
     groups=[("pb-compact-dener", "Compact CNC press brake · Dener premium line", "The XL 1560: the smallest Dener XL — 66 US tons over 5 ft, the frame, hydraulics, axes and ESA control of the 10 ft machines in a footprint that goes through a shop door.", "dener"),
             ("pb-compact-cnc", "Compact CNC press brakes · NovoTech value line", "The WAD-50T/1300 and 1600: 55 US tons over 4.3 and 5.2 ft, electro-hydraulic servo control with Hawe valves, linear scales and the Delem DA-53Tx, on a servo-driven pump.", "novotech"),
@@ -132,14 +139,14 @@ COMPACT = dict(
     faq=[{"q": "What tonnage do I need?",
           "a": "Bending force depends on the sheet thickness, the bend length and the V-die opening: F = S² × 2 × R ÷ (1.4 × V) tonnes per metre with S and V in millimetres and R = 47 kg/mm² for mild steel — in inches and US tons per foot about 575 × t² ÷ V. In a V of 8 × the thickness, a 4 ft bend takes about 16 US tons in 16 ga, 39 tons in 10 ga and 47 tons in 8 ga (0.16″); a wider die lowers the force — 8 ga in a 2″ V takes about 31 tons over 4 ft — at the cost of a larger inside radius. The control calculates the exact force for the tool and material you enter; send us your thickest and longest bend and we size the machine."},
          {"q": "Dener XL 1560 or a value-line compact?",
-          "a": "The XL 1560 is the premium machine: the heaviest frame, Hawe hydraulics, an ESA 2D control with every Dener option open to it — 3D controls, 4- to 6-axis back gauges, CNC crowning, Wila clamping, laser guards, robot cells — and parts stocked in Canada; it bends 3/16″ over the full 5 ft and 1/4″ over 4 ft. The value-line WAD-50T is the same electro-hydraulic servo architecture (Hawe valves, linear scales, Delem control) built to our specification at a lower price, for 1/8″ over 5.2 ft; the WC67K-30T is the simple torsion-bar NC brake for one material and repeat parts. If the brake runs all day or you program from CAD, the XL; if it bends brackets and enclosures a few hours a day, the value line."},
+          "a": "The XL 1560 is the premium machine: the heaviest frame, Hawe hydraulics, an ESA 2D control with collision control, the DSP-AP laser finger guard as standard, every Dener option open to it — 3D controls, 4- to 6-axis back gauges, CNC crowning, Wila clamping, robot cells — and parts stocked in Canada; it bends 3/16″ over the full 5 ft and 1/4″ over 4 ft. The value-line WAD-50T is the same electro-hydraulic servo architecture (Hawe valves, linear scales, Delem control) built to our specification at a lower price, for 1/8″ over 5.2 ft; the WC67K-30T is the simple torsion-bar NC brake for one material and repeat parts. If the brake runs all day or you program from CAD, the XL; if it bends brackets and enclosures a few hours a day, the value line."},
          {"q": "NC or CNC?",
           "a": "An NC brake (the WC67K-30T) sets the ram depth and the back gauge from a stored program, with the two cylinders kept in step by a torsion bar — enough for the same parts in one material. A CNC brake (the XL 1560 and the WAD-50T) measures the ram on linear scales and corrects it through servo valves, calculates tonnage, bend sequence and gauge positions from the drawing, and changes material and tool in the program — the machine for mixed work, tight angles and multi-bend parts. The buying guide on the press brake page compares every control these machines are sold with."},
          {"q": "Press brake or HBV bending brake?",
           "a": "The XL 1560, WAD-50T and WC67K-30T are press brakes: a programmable ram, a motorised back gauge, segmented tooling and a guard, for sheet work all day. The HBV is a hydraulic bending brake for short parts in plate — brackets, clips, tabs — bent on a four-way V-block (HBV24 / 48) or between two cylinders (HBV-1250 / 2540) with a hand-wheel back gauge, at a fraction of the price. If you bend panels and enclosures, a press brake; if you bend 3/16″ plate brackets a few at a time, the HBV."},
          TOOLING_FAQ,
          {"q": "Are they safe to run without a separate guarding system?",
-          "a": "Every compact press brake carries side guards, an enclosed rear guard with interlocked doors and a foot pedal with emergency stop; the Dener XL 1560 is shown with the DSP laser finger guard, which — like the Fiessler AKAS and light curtains — is an option we recommend on every CNC machine. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs."},
+          "a": "Every compact press brake carries side guards, an enclosed rear guard with interlocked doors and a foot pedal with emergency stop; the Dener XL 1560 comes with the DSP-AP laser finger guard and an MCS safety PLC as standard, and on the value-line machines a laser guard — DSP, Fiessler AKAS or a light curtain — is an option we recommend. In Ontario a new press brake needs a pre-start health and safety review (PSR) under Regulation 851 before it runs."},
          SERVICE_FAQ, DELIVERY_FAQ, OIL_FAQ, VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about compact press brakes",
     related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes & folders"},

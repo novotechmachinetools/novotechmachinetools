@@ -405,15 +405,24 @@
     function step() { return items[0].getBoundingClientRect().width + gap(); }
     function per() { return Math.max(1, Math.floor((track.clientWidth + gap() + 2) / step())); }
     c._per = per;
+    var goal = null;    // where a click is still scrolling to, so a quick second click pages on from there instead of mid-way
     function update() {
       var max = track.scrollWidth - track.clientWidth;
+      goal = null;
+      c.classList.toggle("is-static", max <= 2);
       prev.disabled = track.scrollLeft <= 2;
       next.disabled = track.scrollLeft >= max - 2;
       var first = Math.min(items.length, Math.round(track.scrollLeft / step()) + 1), last = Math.min(items.length, first + per() - 1);
       status.textContent = "Videos " + first + (last > first ? " – " + last : "") + " of " + items.length;
     }
-    prev.addEventListener("click", function () { track.scrollBy({ left: -per() * step(), behavior: "smooth" }); });
-    next.addEventListener("click", function () { track.scrollBy({ left: per() * step(), behavior: "smooth" }); });
+    function go(dir) {
+      var s = step(), max = track.scrollWidth - track.clientWidth;
+      var at = Math.round((goal !== null ? goal : track.scrollLeft) / s);
+      goal = Math.max(0, Math.min(max, (at + dir * per()) * s));
+      track.scrollTo({ left: goal, behavior: "smooth" });
+    }
+    prev.addEventListener("click", function () { go(-1); });
+    next.addEventListener("click", function () { go(1); });
     var t;
     track.addEventListener("scroll", function () { clearTimeout(t); t = setTimeout(update, 120); }, { passive: true });
     window.addEventListener("resize", update);
