@@ -145,6 +145,10 @@
   }
 
   /* ---------- jump nav: highlight the section in view ---------- */
+  // smooth scrolling only after the page has loaded: the first jump to a #anchor in the address bar is instant, so it is not
+  // thrown off by photos loading above the target while the scroll is still animating
+  var markLoaded = function () { setTimeout(function () { d.documentElement.classList.add("is-loaded"); }, 400); };
+  if (d.readyState === "complete") { markLoaded(); } else { window.addEventListener("load", markLoaded); }
   // the kinds-of-machine row scrolls sideways on phones: bring the current kind into view so its arrow meets the family bar
   var secNav = d.querySelector(".section-nav-row .section-nav");
   var secCur = secNav && secNav.querySelector("a[aria-current='page']");

@@ -1431,7 +1431,7 @@ def render_page(page):
             cap = f"<figcaption>{html_mod.escape(m.group(3))}</figcaption>" if m.group(3) else ""
             sizes = "(max-width: 700px) 92vw, 330px" if "is-small" in extra else ("(max-width: 700px) 92vw, 560px" if "is-half" in extra else "(max-width: 700px) 92vw, 760px")
             return (f'<figure class="{cls}"><img src="{im["small"]}" srcset="{im["srcset"]}" sizes="{sizes}" '
-                    f'width="{im["w"]}" height="{im["h"]}" alt="{alt}" loading="lazy" decoding="async">{cap}</figure>')
+                    f'width="{im["w"]}" height="{im["h"]}" style="--ar: {im["w"] / im["h"]:.4f}" alt="{alt}" loading="lazy" decoding="async">{cap}</figure>')
         art = re.sub(r'<figure class="guide-figure((?: [a-z-]+)*)" data-img="([^"]+)"(?: data-caption="([^"]*)")?(?: data-alt="([^"]*)")?></figure>', fig, art)
         # two or more half-width figures in a row sit side by side in a grid row (clear of any floated figure above)
         art = re.sub(r'((?:<figure class="guide-figure[^"]*\bis-half\b[^"]*">.*?</figure>\s*){2,})', r'<div class="guide-figure-row">\1</div>', art, flags=re.S)

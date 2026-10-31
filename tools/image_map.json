@@ -28171,14 +28171,6 @@
   "quality": 84,
   "cutout": false
  },
- "ctl-scs920": {
-  "src": "tools/src-images/controls/ctl-scs920.jpg",
-  "alt": "SCS920: 21.5″ capacitive touch CNC, 6+1 axes standard (8+1 optional), for hydraulic, electric and dual-pump press brakes",
-  "section": "controls",
-  "trim": false,
-  "quality": 84,
-  "cutout": true
- },
  "ctl-estun-e21ps": {
   "src": "tools/src-images/controls/ctl-estun-e21ps.jpg",
   "alt": "Estun E21PS: NC control for torsion-bar press brakes — back gauge and ram positioning, one-way / two-way positioning, 2D graphic programming",
@@ -31286,7 +31278,7 @@
  },
  "vl-wad-cabinet-in": {
   "src": "tools/src-images/value-wad/vl-wad-cabinet-in.jpg",
-  "alt": "Inside the electrical cabinet: the main switch, the two servo drives of the back gauge axes and the drive of the main hydraulic motor",
+  "alt": "CSA / UL approved electrical components — inside the cabinet: the main switch, the two servo drives of the back gauge axes and the drive of the main hydraulic motor",
   "section": "value-sheet",
   "trim": false,
   "quality": 82,

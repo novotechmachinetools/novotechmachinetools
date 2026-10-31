@@ -6,7 +6,7 @@
     tandem; and the two EUROSTAMP tool profiles as DXF (the owner's files) → clean line drawings.
   * tools/src-images/controls/src/      — press brake controls: Delem's own cut-outs (DA-69S, DA-66S, DA-53Tx, DA-58Tx, DA-41T),
     Cybelec's CybTouch 12 photo, ESA cards and brochure images (S630, S840, S875 W), the value-line supplier's
-    controller page (SCS920, Estun E21PS / E315PS crops).
+    controller page (Estun E21PS / E315PS crops).
 
 Small images are upscaled 2x with Real-ESRGAN (tools/esrgan.py); a PDF image with a soft mask keeps its alpha.
 Registered by tools/press_brake_hub.py (register_detail_images) — section "dener-detail" / "controls".
@@ -91,7 +91,7 @@ CONTROLS = {
     "ctl-esa-s630": D("esa-s630-pendant.png", "ESA S630: 10″ resistive touch control on its pendant with the handle — up to 4 axes, numeric and 2D programming, the bend calculation on screen", up=True),
     "ctl-esa-pendant": D("xl1560-esa-s640.jpg", "ESA touch-screen control pendant on the Dener XL 1560", up=False, cutout=True, crop=(340, 80, 1300, 1150)),
     # the value-line supplier's controller page (a scan): crops of the controls that have no maker's photo
-    "ctl-scs920": D("adh-controllers-page.png", "SCS920: 21.5″ capacitive touch CNC, 6+1 axes standard (8+1 optional), for hydraulic, electric and dual-pump press brakes", crop=(30, 290, 340, 680), up=True, up2=True, cutout=True),
+    # ctl-scs920 (the SCS920 control) is off the site (the owner, Oct 31 2026)
     "ctl-estun-e21ps": D("adh-controllers-page.png", "Estun E21PS: NC control for torsion-bar press brakes — back gauge and ram positioning, one-way / two-way positioning, 2D graphic programming", crop=(1850, 320, 2080, 640), up=True, up2=True, cutout=True),
     # Estun's product photo of the E315PS on its pendant arm, background removed with Pixelcut (the owner's choice, Oct 29 2026;
     # earlier a crop of the supplier's controller page)

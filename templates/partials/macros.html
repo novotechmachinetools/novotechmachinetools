@@ -58,7 +58,6 @@
   <a class="btn btn-primary btn-sm" href="#reques-a-quote" data-machine="{{ f.name }}">Request a quote</a>
   {% set fpdf = None if f.no_pdf else (f.pdf or (site.brands[f.brand].pdf if f.brand and site.brands.get(f.brand) and site.brands[f.brand].pdf else page.catalogue_pdf)) %}
   {% if fpdf %}<a class="btn btn-ghost btn-sm" href="{{ fpdf.file }}" download>{{ f.pdf_cta or 'Download PDF brochure' }}</a>{% endif %}
-  {% if f.videos %}<a class="btn btn-link btn-sm" href="#{{ f.id }}-video">Watch the video{{ 's' if f.videos|length > 1 else '' }}</a>{% endif %}
 </div>
 {%- endmacro %}
 

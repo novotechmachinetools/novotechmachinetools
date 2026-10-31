@@ -60,8 +60,8 @@ PHOTOS = {
                      "silent while the ram waits) and longer life for the pump, seals and valves"),     # 101A0840
     "vl-wad-crown-motor": P("Crowning motor at the end of the bed: the control sets the crowning wedges for each bend"),   # 101A0792
     "vl-wad-cabinet": P("Electrical cabinet on the side of the machine, door open", [(2020, 398, 2070, 448)]),   # 101A0797
-    "vl-wad-cabinet-in": P("Inside the electrical cabinet: the main switch, the two servo drives of the back gauge axes and the "
-                           "drive of the main hydraulic motor"),                                          # 101A0803
+    "vl-wad-cabinet-in": P("CSA / UL approved electrical components — inside the cabinet: the main switch, the two servo drives of "
+                           "the back gauge axes and the drive of the main hydraulic motor"),          # 101A0803 (wording: the owner)
 }
 
 

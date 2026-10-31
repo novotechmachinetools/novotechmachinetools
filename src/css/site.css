@@ -64,7 +64,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 56px); }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 56px); }
+html.is-loaded { scroll-behavior: smooth; }   /* not during the first jump to #anchor (site.js adds the class after load) */
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
 body { margin: 0; font-family: var(--sans); font-size: 17px; line-height: 1.55; color: var(--ink); background: var(--white); }
 img { max-width: 100%; height: auto; display: block; }
@@ -1002,6 +1003,18 @@ body.ai-locked { overflow: hidden; }
 .guide-figure.is-half { margin: 0; text-align: center; }
 .guide-figure.is-half img { display: block; margin: 0 auto; max-height: 400px; width: auto; max-width: 100%; }
 .guide-figure.is-half figcaption { text-align: left; }
+/* guide photos are lazy and sized width:auto, so before loading they had no height: a link into the guide
+   (press-brake.html#controls) scrolled to where the section was before the photos above it loaded, and landed above it.
+   Each photo now carries its aspect ratio (--ar, build.py) and gets the width it will have once loaded — the image slot
+   (sizes), the column and its max-height — so the guide does not move while it loads (the owner, Oct 31 2026) */
+.guide-figure { --fig-w: 760px; --fig-mh: 560px; }
+.guide-figure.is-cutout { --fig-mh: 460px; }
+.guide-section .guide-figure { --fig-mh: 420px; }
+.guide-section .guide-figure.is-cutout { --fig-mh: 380px; }
+.guide-figure.is-small { --fig-w: 330px; }
+.guide-figure.is-small.is-cutout { --fig-mh: 240px; }
+.guide-figure.is-half { --fig-w: 560px; --fig-mh: 400px; }
+.guide-figure img[style*="--ar"] { aspect-ratio: var(--ar); width: min(100%, var(--fig-w), calc(var(--fig-mh) * var(--ar))); height: auto; }
 .guide-section h3, .guide-section h4 { clear: both; }
 .guide-section .control-card { clear: both; }
 .guide-section .ctl-table th, .guide-section .ctl-table td { font-size: 14px; vertical-align: top; }

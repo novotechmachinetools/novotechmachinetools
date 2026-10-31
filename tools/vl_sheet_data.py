@@ -482,7 +482,7 @@ PB_STD = ["Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (inde
           "Side guards, rear guard, anti-panic foot pedal with emergency stop on a movable stand", VOLT]
 # the heavy-duty machines take tooling sized for their tonnage (the quotation sheet covers the 135 t)
 PB_STD_H = [("Top-tool clamps, segmented die and sectioned punch set sized for the tonnage (42CrMo, HRC 47)" if x == PB_CLAMPS else x) for x in PB_STD]
-PB_OPT = ["Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
+PB_OPT = ["Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12",
           # the back gauge, follower and Wila items in the owner's words (Oct 31 2026)
           "X-R-Z1-Z2 back gauge: the two fingers also move sideways along the beam under CNC (Z1, Z2)",
           "X1-X2-R-Z1-Z2 back gauge: each finger also sets its own depth (X1, X2) — for tapered and stepped flanges",
@@ -549,15 +549,16 @@ IW_OPT = ["Tee, I-beam and channel blades; V-notching; pipe notching; bending to
 LINE = "NovoTech value line — built in China to North American standards and sold under NovoTech's name"
 
 # the controls the value line is built with — a short note under every press brake (the buying guide on press-brake.html compares them)
-CTL_WAD = {"title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W, Cybelec CybTouch 12 or SCS920 to order",
+# the SCS920 is off the site (the owner, Oct 31 2026)
+CTL_WAD = {"title": "Delem DA-53Tx as standard; DA-58Tx, DA-66S, DA-69S, ESA S840 / S875 W or Cybelec CybTouch 12 to order",
            "text": "The value-line CNC brakes ship with the 15″ Delem DA-53Tx — touch-screen numeric programming with a 2D tool and product view, "
                    "crowning and servo control, up to 4 axes — the control most Canadian job shops know. Order the machine with the 18.5″ "
                    "DA-58Tx (2D graphic programming with automatic bend sequence), the 24″ DA-66S (2D with a 3D machine view) "
-                   "or DA-69S (full 3D), the ESA S840 (15.6″, 6 axes) or S875 W (21.5″ 3D), the Cybelec CybTouch 12 (12″ 2D) or the SCS920 "
-                   "(21.5″, 6+1 axes) when the work calls for graphic programming, more axes or a control your operators already run. The "
+                   "or DA-69S (full 3D), the ESA S840 (15.6″, 6 axes) or S875 W (21.5″ 3D) or the Cybelec CybTouch 12 (12″ 2D) "
+                   "when the work calls for graphic programming, more axes or a control your operators already run. The "
                    "DA-58Tx, DA-66S, DA-69S, S840 and S875 W also have collision control: they simulate the bend sequence and check the part "
                    "against the punch, the die and the machine before the first bend.",
-           "images": ["ctl-delem-da53tx", "ctl-delem-da58tx", "ctl-delem-da66s", "ctl-delem-da69s", "ctl-esa-s840-card", "ctl-esa-s875w-card", "ctl-cybelec-ct12", "ctl-scs920"]}
+           "images": ["ctl-delem-da53tx", "ctl-delem-da58tx", "ctl-delem-da66s", "ctl-delem-da69s", "ctl-esa-s840-card", "ctl-esa-s875w-card", "ctl-cybelec-ct12"]}
 CTL_NC = {"title": "Estun E21PS as standard; Estun E315PS, Delem DA-41T or ESA S630 to order",
           "text": "The torsion-bar brakes carry the Estun E21PS: a two-axis NC that positions the back gauge (X) and the ram depth (Y) from 40 stored "
                   "programs of 25 steps, with one-way or two-way positioning, retract, a stroke counter and inch / mm display — simple to learn in "
