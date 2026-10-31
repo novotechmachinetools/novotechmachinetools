@@ -212,6 +212,9 @@ small { font-size: .85em; }
 .features li { position: relative; padding: 6px 0 6px 24px; border-top: 1px solid var(--line-soft); }
 .features li:last-child { border-bottom: 1px solid var(--line-soft); }
 .features li::before { content: ""; position: absolute; left: 2px; top: 15px; width: 12px; height: 4px; background: var(--orange); }
+/* the options list of a family that shows it (the XL, Oct 30 2026): the same list with an outlined marker */
+.features-title { margin: 16px 0 4px; font-family: var(--cond); font-weight: 700; font-size: 18px; letter-spacing: .02em; color: var(--charcoal); }
+.features-optional li::before { background: transparent; border: 2px solid var(--orange); height: 8px; width: 8px; top: 13px; border-radius: 50%; }
 .cta-row-sm { margin: 16px 0 0; }
 
 /* gallery */

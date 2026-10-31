@@ -224,12 +224,21 @@ PB_STD_XH = ["X back gauge axis on ball screw and linear guides; Y1, Y2 ram axes
              "European-style segmented punch and die with European-style holders",
              "Anti-panic foot pedal with emergency stop", "Front support arms on linear rail", "Side and rear safety guards", "CSA-approved electrical panel, 600 V 3-phase standard"]
 _PB_OPT_ALL = ["Mild hybrid drive (Dener SVP package): a servo motor and servo pump replace the AC motor and pump — the pump stops while the machine "
-               "waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear (to 400 t and 13 ft)",
+               "waits or is loaded and unloaded: 42 – 58 % less energy, faster approach and return, cooler oil, less noise and wear; on machines up to 441 US tons (400 t) and 13 ft",
                "21.5″ ESA S875 W 3D CNC control; Delem DA-66S or DA-69S 3D control", "CE-certified light barrier (DSP laser finger protection)",
                "X-R, X-R-Z1-Z2, X1-X2-R-Z1-Z2 or ATF X1-X2-R1-R2-Z1-Z2 back gauge (6 axes)", "Manual or CNC motorised crowning", "Automatic angle measurement (bending accuracy 0.05°)",
                "Sheet follower support", "Hydraulic oil cooler; electrical panel cooler; automatic lubrication", "Quick, pneumatic or Wila mechanical / hydraulic tool clamping",
                "Tandem configuration to 60 ft and 1,800 US tons", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
-PB_OPT_XL = [x for x in _PB_OPT_ALL if not x.startswith("CE-certified light barrier")]
+# the XL options: NovoTech's list for the XL series (the owner, Oct 30 2026) with the mild hybrid, angle measurement, tandem and
+# voltage items of Dener's brochure; the XH keeps the brochure list (PB_OPT_XH)
+PB_OPT_XL = [_PB_OPT_ALL[0],
+             "21.5″ ESA S875 W 3D CNC control", "Delem DA-66S 2D CNC control", "Delem DA-69S 3D CNC control",
+             "X-R back gauge", "X-R-Z1-Z2 back gauge", "X1-X2-R-Z1-Z2 back gauge", "ATF X1-X2-R1-R2-Z1-Z2 back gauge",
+             "Bar-type X1-X2-R1-R2-Z1-Z2 back gauge", "Sheet followers", "Hydraulic oil cooling system", "Electrical panel cooling system",
+             "Automatic lubrication system", "CNC motorised or manual crowning", "Quick punch clamping", "Pneumatic punch and die clamping",
+             "Wila mechanical upper and lower tool clamping", "Wila hydraulic upper and lower tool clamping",
+             "Automatic angle measurement (bending accuracy 0.05°)", "Tandem configuration to 60 ft and 1,800 US tons",
+             "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 PB_OPT_XH = _PB_OPT_ALL[1:]
 PB_STD_DDM = ["21.5″ ESA S875 W 3D CNC control", "4 axes: Y1, Y2, X, R", "European-type segmented punch and die clamping", "Side and rear safety guards; anti-panic emergency-stop pedal",
               "Electrical cabinet cooling; 380/600 V 3-phase, CSA-approved panel", "Servo-electric drive — no hydraulic oil, start/stop energy use"]
@@ -264,7 +273,7 @@ CTL_DDS = {"title": "ESA S840 2D as standard; ESA S875 W as an option",
            "images": ["ctl-esa-s840-card", "ctl-esa-s875w-card"]}
 
 PB_FAMILIES = [
-    dict(id="dn-xl", control=CTL_XL, group="pb-hydraulic", page=P_PB, brand=BRAND,
+    dict(id="dn-xl", control=CTL_XL, show_optional=True, group="pb-hydraulic", page=P_PB, brand=BRAND,
          name="XL hydraulic CNC press brakes, 66 – 661 US tons × 5 – 20 ft",
          short="XL hydraulic press brakes",
          models_label="XL 1560 – XL 60600 · 18 models",
@@ -313,7 +322,7 @@ PB_FAMILIES = [
                      ("Ymz5qW36zTs", "DENER tandem 60 ft × 1,764 US tons (1,600 t) mild hybrid press brake with sheet following support")),
          # the SVP table sits under the XL table; the model list (compare, all models) stays the 18 XL machines
          specs=dict(spec([T_XL], PB_GK, PB_G_FROM, NOTE_PB), tables=[T_XL, T_SVP], note=NOTE_PB + " " + NOTE_SVP)),
-    dict(id="dn-xl-1560", control=CTL_XL, group="pb-compact-dener", page=P_PB, brand=BRAND,
+    dict(id="dn-xl-1560", control=CTL_XL, show_optional=True, group="pb-compact-dener", page=P_PB, brand=BRAND,
          name="XL 1560 compact CNC press brake, 66 US tons × 5 ft",
          short="XL 1560 compact press brake",
          models_label="XL 1560 · 1 model",
@@ -330,7 +339,7 @@ PB_FAMILIES = [
                    "Monoblock welded frame, stress-relieved and machined in one setting; 49.2″ (1,250 mm) between the frames",
                    "8.7″ (220 mm) stroke, 16.1″ (410 mm) daylight, 15.7″ (400 mm) throat for boxes and deep flanges",
                    "Ball-screw X back gauge with 25.6″ (650 mm) travel, fingers with manual R and Z adjustment and micro vernier"] + PB_STD_XL,
-         optional=PB_OPT_XL,
+         optional=[x for x in PB_OPT_XL if not x.startswith("Tandem")],     # a 5 ft machine is not built in tandem
          images=["dn-xl1560-studio", "dn-xl1560-photo-left", "dn-xl1560-photo-front", "dn-xl1560-photo-right", "dn-xl1560-control",
                  "dn-xl1560-tooling", "dn-xl1560-tooling-2", "dn-xl1560-backgauge", "dn-xl1560-backgauge-2", "dn-det-eurostamp-tools"],
          videos=vids(("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake — the same 5 ft frame class"), ("5FWxGB6hoJI", "XL series hydraulic CNC press brakes"),
