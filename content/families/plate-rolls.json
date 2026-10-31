@@ -4059,10 +4059,15 @@
    "images": [
     "sh-4rhss-30-380-nc",
     "sh-4rhss-heavy",
+    "shd-4rhss-render",
     "sh-4rhss-crane",
     "sh-4rhss-side-supports",
     "sh-4rhss-dro",
-    "sh-4rhss-cone"
+    "sh-4rhss-cone",
+    "shd-4rhss-40-550",
+    "shd-4rhss-30-350",
+    "shd-4rhss-cone",
+    "shd-4rhss-shell"
    ],
    "videos": [
     {
@@ -5440,7 +5445,13 @@
    ],
    "images": [
     "sh-4rhs-30-190",
-    "sh-4rhs-20-260-crane"
+    "sh-4rhs-20-260-crane",
+    "shd-4rhsl-render",
+    "shd-4rhsl-650-110",
+    "shd-4rhsl-rolls",
+    "shd-4rhsl-guides",
+    "shd-4rhsl-lube",
+    "shd-4rhsl-parts"
    ],
    "videos": [
     {
@@ -5723,7 +5734,11 @@
    ],
    "images": [
     "sh-4rhs-25-245",
-    "sh-4rhs-cone-device"
+    "shd-4rhs-render",
+    "sh-4rhs-cone-device",
+    "shd-4rhs-25-260",
+    "shd-4rhs-25-260-b",
+    "shd-4rhs-cone-part"
    ],
    "videos": [
     {
@@ -6608,8 +6623,12 @@
    "images": [
     "sh-4rh-10-90-nc",
     "sh-4rh-10-130-nc",
+    "shd-4rh-render",
     "sh-4rh-10-90-detail",
-    "sh-4rh-10-90-side"
+    "sh-4rh-10-90-side",
+    "shd-4rh-top",
+    "shd-4rh-table",
+    "shd-4rh-rolled"
    ],
    "videos": [
     {
@@ -6880,7 +6899,11 @@
     "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
    ],
    "images": [
-    "sh-4rhc-10-155"
+    "sh-4rhc-10-155",
+    "shd-4rhc-render-b",
+    "shd-4rhc-console",
+    "shd-4rhc-cone",
+    "shd-4rhc-parts"
    ],
    "videos": [
     {
@@ -7331,6 +7354,7 @@
    ],
    "images": [
     "sh-3rhs-20-210",
+    "shd-3rhs-render",
     "sh-3rhs-detail",
     "sh-3rhs-drop-end"
    ],

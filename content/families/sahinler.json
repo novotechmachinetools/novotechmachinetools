@@ -357,7 +357,10 @@
    ],
    "images": [
     "sh-hpk40",
-    "sh-hpk40-coil"
+    "shd-hpk40-render",
+    "sh-hpk40-coil",
+    "shd-hpk40-rolls",
+    "shd-hpk40-horizontal"
    ],
    "videos": [
     {
@@ -627,7 +630,13 @@
    ],
    "images": [
     "sh-hpk60",
-    "sh-hpk50"
+    "sh-hpk50",
+    "shd-hpk60-render",
+    "shd-hpk50-render",
+    "shd-hpk50-render-b",
+    "shd-hpk60-cylinder",
+    "shd-hpk60-guides",
+    "shd-hpk50-nc"
    ],
    "videos": [
     {
@@ -946,9 +955,13 @@
    "images": [
     "sh-hpk80",
     "sh-hpk65",
+    "shd-hpk80-render",
     "sh-hpk65-horizontal",
     "sh-hpk-guide-detail",
-    "sh-hpk-console"
+    "sh-hpk-console",
+    "shd-hpk65-poly-rolls",
+    "shd-hpk65-spiral",
+    "shd-hpk80-rolls-h"
    ],
    "videos": [
     {
@@ -1306,6 +1319,10 @@
    "images": [
     "sh-hpk100",
     "sh-hpk120nc",
+    "shd-hpk100-render",
+    "shd-hpk120-render",
+    "shd-hpk120-render-b",
+    "shd-hpk120-rear",
     "sh-hpk100-rolls",
     "sh-hpk100-guide",
     "sh-hpk100-handwheel",
@@ -1662,8 +1679,12 @@
    "images": [
     "sh-hpk160dp",
     "sh-hpk240dp",
+    "shd-hpk160-render",
+    "shd-hpk200-render",
+    "shd-hpk360-render",
     "sh-hpkdp-top",
-    "sh-ipn-attachment"
+    "sh-ipn-attachment",
+    "shd-hpk160-rolls"
    ],
    "videos": [
     {
@@ -2153,7 +2174,12 @@
    ],
    "images": [
     "sh-tc42",
-    "sh-tc42-coil"
+    "sh-tc42-coil",
+    "shd-tc42-render",
+    "shd-tc42-render-b",
+    "shd-tc42-control",
+    "shd-tc42-rolls",
+    "shd-tc42-bending-rolls"
    ],
    "videos": [
     {
@@ -5769,7 +5795,10 @@
    "images": [
     "sh-dks400",
     "sh-dks200",
-    "sh-dks-remote"
+    "sh-dks-remote",
+    "shd-dks-side",
+    "shd-dks-table",
+    "shd-dks-piston"
    ],
    "videos": [
     {

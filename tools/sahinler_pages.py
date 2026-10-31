@@ -216,7 +216,7 @@ def build():
     unused = sorted(set(keys) - used)
     if unused:
         print("photos not used on any page:", unused)
-    missing = sorted(used - set(keys))
+    missing = sorted(k for k in used - set(keys) if not k.startswith("shd-"))   # shd-*: dealer photos, registered by tools/dealer_photos.py
     if missing:
         raise SystemExit(f"image keys without a photo: {missing}")
     print(f"sahinler pages: {len(PAGES)} · families: {len(FAMILIES)} · models: {sum(len(f['specs']['models']) for f in FAMILIES)} · images: {len(keys)}")

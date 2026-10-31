@@ -113,129 +113,156 @@ PHOTOS = {
     "shd-4rhs-cone-part": S("Cone rolled on a 4R HS", cut=False),
     # 4R HS-L linear
     "shd-4rhsl-render": S("4R HS-L linear 4-roll plate roll with the NC console", [(182, 76, 224, 105), (82, 133, 122, 172)]),
-    "shd-4rhsl-650-110": S("4R HS-L NC with its electrical cabinet", [(406, 188, 476, 234, "flat"), (262, 322, 362, 404, "flat")], cut=False),
+    "shd-4rhsl-650-110": S("4R HS-L NC with its electrical cabinet", clone=[(406, 182, 480, 238, -70, 10)],
+                           polys=[{"pts": [(265, 349), (338, 327), (358, 387), (285, 410)], "fill": "flat"}], cut=False),
     "shd-4rhsl-rolls": S("4R HS-L from above: the top roll, the pinch roll and the two side rolls, with the pinch pressure regulator",
-                         strokes=[([(828, 731), (888, 731), (888, 766), (828, 766)], "dark")], cut=False),
+                         polys=[{"pts": [(834, 740), (880, 740), (884, 759), (838, 759)], "fill": "flat", "ring": 4}], cut=False),
     "shd-4rhsl-guides": S("Linear guides of the side rolls on the 4R HS-L", cut=False),
     "shd-4rhsl-lube": S("Central lubrication pump on the 4R HS-L", crop=(0, 0, 540, 1000), cut=False),
     "shd-4rhsl-parts": S("Tubes rolled on a 4R HS-L", cut=False),
     # 4R HC conical
-    "shd-4rhc-render": S("4R HC 10-155 conical 4-roll plate roll with its console", [(354, 280, 430, 331)]),
     "shd-4rhc-render-b": S("4R HC from the roll end: the conical rolls between the feed tables",
-                           polys=[{"pts": [(347, 558), (418, 558), (418, 616), (347, 616)], "keep": "yellow"}],
-                           strokes=[([(686, 560), (714, 560), (714, 582), (686, 582)], "dark")]),
-    "shd-4rhc-console": S("4R HC 10-185 with its console: digital read-outs for every roll", [(782, 127, 836, 180, "flat"), (150, 328, 186, 398)],
-                          cut=False),
+                           polys=[{"pts": [(336, 556), (399, 556), (401, 602), (336, 602)], "keep": "yellow", "fill": "flat"},
+                                  {"pts": [(684, 559), (717, 562), (715, 584), (683, 578)], "fill": "flat"}]),
+    "shd-4rhc-console": S("4R HC 10-185 with its console: digital read-outs for every roll", [(150, 328, 186, 398)],
+                          polys=[{"pts": [(785, 141), (821, 127), (834, 176), (795, 190)], "fill": "flat"}], cut=False),
     "shd-4rhc-cone": S("Rolling a cone on the 4R HC", cut=False),
     "shd-4rhc-parts": S("Cones rolled on the 4R HC", cut=False),
     # 4RH cassette
     "shd-4rh-render": S("4RH 10-75 NC cassette-type 4-roll plate roll with the feed table and the NC console",
-                        [(327, 311, 357, 326)], polys=[{"pts": [(354, 293), (409, 293), (409, 351), (354, 351)], "keep": "dark"}]),
+                        [(327, 311, 357, 326)],
+                        polys=[{"pts": [(357, 306), (411, 306), (411, 353), (357, 353)], "fill": "flat",      # the plate behind the two cables
+                                "lines": [{"pts": [(362.9, 306), (370.8, 355)], "w": 3}, {"pts": [(379, 306), (370.8, 353)], "w": 3}]}]),
     "shd-4rh-top": S("4RH 10-75 NC from above: the rolls in their cassette frame and the feed table", cut=False),
     "shd-4rh-table": S("4RH from the drop end: the pressure gauges and the feed table", [(223, 318, 252, 331)], cut=False),
     "shd-4rh-rolled": S("Sheet rolled on the 4RH, with the pinch pressure regulator in front",
-                        strokes=[([(518, 822), (572, 822), (572, 852), (518, 852)], "dark")], cut=False),
+                        polys=[{"pts": [(524, 828), (572, 830), (570, 848), (521, 844)], "fill": "flat", "ring": 4}], cut=False),
     # 3R HS
-    "shd-3rhs-render": S("3R HS 20-240 3-roll hydraulic plate roll with its console", [(92, 46, 149, 77, "flat")]),
+    "shd-3rhs-render": S("3R HS 20-240 3-roll hydraulic plate roll with its console", polys=[{"pts": [(95, 52), (148, 52), (145, 79.5), (90, 79.5)], "fill": "flat"}]),
     # HPK section benders
-    "shd-hpk40-render": S("HPK 40 NC hydraulic section and pipe bender with the NC console", [(462, 396, 546, 538, "flat")]),
+    "shd-hpk40-render": S("HPK 40 NC hydraulic section and pipe bender with the NC console",
+                          polys=[{"pts": [(466, 400), (544, 430), (546, 538), (470, 513)], "fill": "flat"}]),
     "shd-hpk40-rolls": S("HPK 40 rolls with the side guide rolls", crop=(0, 130, 1000, 720), cut=False),
-    "shd-hpk40-horizontal": S("HPK 40 tipped over to bend horizontally", [(564, 433, 599, 474, "flat"), (404, 44, 464, 64)], cut=False),
-    "shd-hpk50-render": S("HPK 50 hydraulic section and pipe bender with the foot pedal", [(89, 457, 181, 511, "flat")]),
+    "shd-hpk40-horizontal": S("HPK 40 tipped over to bend horizontally", [(564, 433, 599, 474, "flat"), (398, 42, 467, 66, "flat")], cut=False),
+    "shd-hpk50-render": S("HPK 50 hydraulic section and pipe bender with the foot pedal",
+                          polys=[{"pts": [(91, 460), (182, 466), (183, 514), (91, 509)], "fill": "flat"}]),
     "shd-hpk50-render-b": S("HPK 50 NC with the NC console", [(468, 545, 548, 735)]),
-    "shd-hpk60-render": S("HPK 60 NC with the NC console", [(136, 600, 264, 668, "flat"), (154, 671, 246, 768, "flat"), (402, 718, 432, 760)]),
+    "shd-hpk60-render": S("HPK 60 NC with the NC console",      # both plates on the front, down to the HPK 60 NC label; the side sticker
+                          polys=[{"pts": [(138, 611), (264, 633), (262, 697), (247, 694), (247, 759.5), (157, 741), (156, 671), (139, 671)],
+                                  "fill": "flat"},
+                                 {"pts": [(403, 724), (430, 718), (430, 754), (404, 761)], "fill": "flat", "ring": 4}]),
     "shd-hpk60-cylinder": S("HPK 60 from above: the hydraulic cylinder of the top roll", [(618, 252, 730, 442)], cut=False),
     "shd-hpk60-guides": S("HPK 60 rolls and the side guide roll", cut=False),
     "shd-hpk50-nc": S("NC control of the HPK 50 and 60: the roll positions on the touch screen", [(384, 159, 444, 181)], cut=False),
-    "shd-hpk80-render": S("HPK 80 NC hydraulic section and pipe bender with the NC console", [(350, 598, 510, 702, "flat"), (48, 88, 76, 188)]),
+    "shd-hpk80-render": S("HPK 80 NC hydraulic section and pipe bender with the NC console", [(350, 598, 510, 702, "flat"), (48, 88, 76, 188)],
+                          polys=[{"pts": [(149, 45), (217, 45), (217, 133), (149, 133)], "keep": "yellow"},   # Polish
+                                 {"pts": [(548, 68), (595, 68), (595, 125), (548, 125)], "keep": "yellow", "fill": "flat"}]),  # warning stickers
     "shd-hpk65-poly-rolls": S("HPK 65 with polyamide rolls, for stainless and aluminum profiles that must not be marked",
-                              [(505, 590, 752, 738), (852, 372, 1000, 428)],
-                              polys=[[(0, 115), (162, 115), (312, 150), (312, 228), (110, 228), (0, 198)]], cut=False),
+                              polys=[[(0, 115), (162, 115), (312, 150), (312, 228), (110, 228), (0, 198)],
+                                     {"pts": [(575, 601), (760, 636), (748, 749), (680, 749), (503, 671)], "keep": "yellow", "fill": "flat",
+                                      "keep_polys": [[(722.5, 584), (663, 628.5), (765, 633.5)]]},
+                                     {"pts": [(853, 398), (871, 388), (903, 379), (935, 371), (966, 371), (1000, 374), (1000, 437), (975, 429), (925, 416),
+                                              (884, 413), (856, 405)],
+                                      "keep": "yellow", "fill": "flat", "keep_polys": [[(924, 414), (881, 443), (978, 452.5)]]}], cut=False),
     "shd-hpk65-spiral": S("Spiral rolled from bar on the HPK 65", crop=(0, 0, 1000, 870), cut=False),
     "shd-hpk80-rolls-h": S("HPK 80 rolls bending horizontally, with the side guide roll", cut=False),
-    "shd-hpk100-render": S("HPK 100 NC with the NC console", [(500, 462, 572, 552, "flat")]),
-    "shd-hpk120-render": S("HPK 120 with its hydraulic side guides and the console", [(310, 505, 392, 575, "flat"), (527, 540, 616, 618, "flat")]),
-    "shd-hpk120-render-b": S("HPK 120 from the side, with the console", [(70, 116, 162, 196, "flat"), (420, 515, 482, 602, "flat")]),
-    "shd-hpk120-rear": S("HPK 120 from the rear: the electrical cabinet and the hydraulic unit", [(366, 61, 534, 161)]),
-    "shd-hpk120-guide": S("Hydraulic side guide of the HPK 120", [(574, 600, 642, 708)], cut=False),
-    "shd-hpk160-horizontal": S("HPK 160 bending horizontally, with the oil cooler and the console",
-                               strokes=[([(694, 259), (750, 259), (750, 305), (694, 305)], "light")]),
-    "shd-hpk160-render": S("HPK 160 bending an I-beam vertically between its hydraulic side guides", [(506, 551, 606, 620, "flat")]),
+    "shd-hpk100-render": S("HPK 100 NC with the NC console", [(326, 62, 378, 140, "flat")],      # a Polish warning sticker; the plates
+                           polys=[[(488, 486), (497, 475), (556, 442), (600, 436), (600, 505), (488, 585)]]),
+    "shd-hpk120-render": S("HPK 120 with its hydraulic side guides and the console", polys=[{"pts": [(224, 90), (270, 90), (270, 152), (224, 152)], "keep": "yellow", "fill": "flat"},
+                                                                                           {"pts": [(692, 111), (751, 111), (751, 189), (692, 189)], "keep": "yellow", "fill": "flat"},
+                                                                                           {"pts": [(313, 498), (387, 506), (388, 562), (316, 555)], "fill": "flat"},
+                                                                                           {"pts": [(531, 533), (612, 545), (612, 603), (530, 589)], "fill": "flat"}]),
+    "shd-hpk120-render-b": S("HPK 120 from the side, with the console", polys=[{"pts": [(254, 62), (307, 62), (307, 143), (254, 143)], "keep": "yellow", "fill": "flat",
+                                     "keep_polys": [[(238, 40), (256, 40), (256, 160), (238, 160)]]},
+                                                                    {"pts": [(74, 127), (150, 110), (159, 183), (81, 191)], "fill": "flat"},
+                                                                    {"pts": [(420, 518), (480, 498), (482, 560), (423, 583)], "fill": "flat"}]),
+    "shd-hpk120-rear": S("HPK 120 from the rear: the electrical cabinet and the hydraulic unit",
+                         polys=[{"pts": [(364, 61), (532, 59), (533, 164), (366, 153)], "fill": "flat"}]),
+    "shd-hpk160-render": S("HPK 160 bending an I-beam vertically between its hydraulic side guides", polys=[{"pts": [(509, 565), (613, 554), (615, 611), (510, 620)], "fill": "flat"}]),
     "shd-hpk200-render": S("HPK 200 heavy-duty section and beam bender", [(810, 305, 890, 366, "flat")]),
-    "shd-hpk360-render": S("HPK 360 heavy-duty section and beam bender", [(742, 280, 890, 358, "flat")]),
+    "shd-hpk360-render": S("HPK 360 heavy-duty section and beam bender", polys=[{"pts": [(746, 287), (887, 284), (885, 356), (745, 362)], "fill": "flat"}]),
     "shd-hpk160-rolls": S("HPK 160 from above: the three rolls and the hydraulic side guides", cut=False),
     # TC-42 NC tube coiler
     "shd-tc42-render": S("TC-42 NC tube coiling machine with a coil, the NC console and the coil support", plates=[(360, 568, 610, 692)]),
     "shd-tc42-render-b": S("TC-42 NC from the side", plates=[(470, 450, 655, 615)]),
-    "shd-tc42-coil": S("Tube coil on the TC-42 NC", cut=False),
     "shd-tc42-control": S("TC-42 NC console", [(150, 212, 218, 274), (340, 216, 396, 248)], cut=False),
     "shd-tc42-rolls": S("TC-42 rolls and the side supports", cut=False),
     "shd-tc42-bending-rolls": S("Bending rolls of the TC-42", cut=False),
     # DK-S straightening presses
-    "shd-dks-render": S("DK-S 300 3-axis moving straightening press", [(308, 205, 334, 224, "flat"), (776, 331, 819, 360, "flat")],
-                        strokes=[([(498, 213), (597, 213), (597, 268), (498, 268)], "light")]),
-    "shd-dks300-render": S("DK-S 300 from the front, with the pendant control", [(230, 180, 258, 195), (649, 290, 670, 303)],
-                           strokes=[([(457, 195), (539, 195), (539, 243), (457, 243)], "light")]),
     "shd-dks-side": S("DK-S from the side: the press head travels over the table", cut=False),
     "shd-dks-table": S("DK-S grid table under the press head", cut=False),
     "shd-dks-piston": S("DK-S pressing tool", cut=False),
     # SDK circle cutting and flanging
-    "shd-sdk8-render": S("SDK 8 circular sheet cutting and flanging machine", [(306, 166, 340, 200, "flat")]),
-    "shd-sdk8-rolls": S("SDK 8 cutting and flanging rolls", [(700, 2, 750, 78), (742, 104, 771, 139)], cut=False),
-    "shd-sdk8-panel": S("SDK 8 control panel with the touch screen and the pendant", [(468, 132, 498, 147), (772, 166, 836, 218, "flat"),
-                                                                                      (784, 211, 823, 237, "flat")], cut=False),
+    "shd-sdk8-render": S("SDK 8 circular sheet cutting and flanging machine", [(311, 173, 335, 192, "flat")]),
+    "shd-sdk8-rolls": S("SDK 8 cutting and flanging rolls", [(742, 106, 770, 139, "flat")],
+                        polys=[[(712, 31), (728, 31), (728, 16), (746, 16), (746, 55), (712, 55)]], cut=False),
     "shd-sdk8-part": S("Dished head flanged on the SDK 8", cut=False),
     "shd-sdk8-edge": S("Flanged edge of a dished head made on the SDK 8", cut=False),
     "shd-sdk8-head": S("Dished head on the SDK 8", cut=False),
     # EFM elliptical cutting and flanging
-    "shd-efm6-render": S("EFM 6 elliptical cutting and flanging machine",
-                         strokes=[([(113, 375), (223, 348), (225, 377), (116, 408)], "light")]),
     "shd-efm6-render-b": S("EFM 6 with a sheet held on the vacuum cups",
-                           strokes=[([(200, 258), (254, 258), (254, 274), (200, 274)], "light")], cut=False),
+                           polys=[{"pts": [(200, 259), (255, 260), (254, 278), (201, 277)], "fill": "flat", "ring": 2}], cut=False),
     "shd-efm6-bending-rolls": S("EFM 6 flanging head", crop=(240, 60, 1000, 786), cut=False),
-    "shd-efm6-cutting-rolls": S("EFM 6 cutting head", [(510, 478, 615, 566, "flat")], cut=False),
+    "shd-efm6-cutting-rolls": S("EFM 6 cutting head", polys=[{"pts": [(524, 503), (604, 489), (600, 540), (523, 553)], "fill": "flat", "ring": 3}],
+                                cut=False),
     "shd-efm6-clamping": S("Vacuum cups of the EFM 6 holding the sheet", cut=False),
     "shd-efm6-part": S("Elliptical head cut and flanged on the EFM 6", cut=False),
 }
 
 
-def flat_fill(rgb, x0, y0, x1, y1, ring=5, seed=7):
-    """A plate on a plain painted panel: fit a plane (per channel) to a ring of panel pixels around the box, rejecting outliers
-    (the edge of a neighbouring label, a cable), and fill the box with it plus grain of the same strength, feathered by 2 px.
-    LaMa tends to invent textures or a new badge on a large plain area; this does not."""
+def plane_fill(rgb, mask, ring=6, avoid=None, seed=7, ring_max=None):
+    """Fill the mask with a plane fitted (per channel) to the ring of pixels around it, rejecting outliers (the edge of a
+    neighbouring label, a cable, a screw), plus a fine monochrome grain as strong as the panel's own (at most 3 levels).
+    For plates and stickers on a plain painted panel: LaMa tends to invent textures or a new badge on a large plain area.
+    avoid: pixels that are neither filled nor used for the fit (a cable or a guard bar in front of the plate)."""
+    import cv2
     import numpy as np
     H, W = rgb.shape[:2]
-    X0, Y0, X1, Y1 = max(0, x0 - ring), max(0, y0 - ring), min(W, x1 + ring), min(H, y1 + ring)
-    yy, xx = np.mgrid[Y0:Y1, X0:X1]
-    sel = ~((xx >= x0) & (xx < x1) & (yy >= y0) & (yy < y1))
-    px, py = xx[sel].astype(float), yy[sel].astype(float)
-    val = rgb[Y0:Y1, X0:X1][sel].astype(float)
-    A = np.stack([np.ones_like(px), px - x0, py - y0], 1)
-    keep = np.ones(len(px), bool)
-    for _ in range(3):
+    m8 = mask.astype(np.uint8)
+    around = cv2.dilate(m8, np.ones((2 * ring + 1, 2 * ring + 1), np.uint8)).astype(bool) & ~mask
+    if avoid is not None:
+        around &= ~avoid
+    if ring_max is not None:                # a black panel next to a light part: fit to the dark pixels only
+        around &= cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) < ring_max
+    yy, xx = np.nonzero(around)
+    val = rgb[yy, xx].astype(float)
+    cx, cy = xx.mean(), yy.mean()
+    A = np.stack([np.ones(len(xx)), xx - cx, yy - cy], 1)
+    keep = np.ones(len(xx), bool)
+    for _ in range(4):
         coef, *_ = np.linalg.lstsq(A[keep], val[keep], rcond=None)
         res = np.abs(val - A @ coef).max(1)
         mad = np.median(res[keep]) + 1e-6
-        keep = res < max(6.0, 3.0 * mad)
-    resid = (val - A @ coef)[keep]
-    noise = resid.std(0) * 0.8
-    gy, gx = np.mgrid[y0:y1, x0:x1]
-    fill = coef[0] + (gx - x0)[..., None] * coef[1] + (gy - y0)[..., None] * coef[2]
-    rng = np.random.default_rng(seed)
-    import cv2
-    grain = cv2.GaussianBlur(rng.normal(0, 1, fill.shape).astype(np.float32), (0, 0), 0.7) * noise
-    fill = np.clip(fill + grain, 0, 255)
-    m = np.zeros((y1 - y0, x1 - x0), np.float32); m[2:-2, 2:-2] = 1
-    m = cv2.GaussianBlur(m, (0, 0), 1.2)[..., None]
-    region = rgb[y0:y1, x0:x1].astype(float)
-    rgb[y0:y1, x0:x1] = np.clip(region * (1 - m) + fill * m, 0, 255).astype(np.uint8)
-    # the 2 px border keeps a blend of the old pixels: overwrite it with the fill where the old pixel was far from the panel
-    return rgb
+        keep = res < max(5.0, 2.5 * mad)
+    noise = float(min(3.0, np.median((val - A @ coef)[keep].std(0)) * 0.7))
+    ys, xs = np.nonzero(mask)
+    fill = coef[0] + (xs - cx)[:, None] * coef[1] + (ys - cy)[:, None] * coef[2]
+    grain = cv2.GaussianBlur(np.random.default_rng(seed).normal(0, 1, (H, W)).astype(np.float32), (0, 0), 0.7)
+    grain *= noise / (grain.std() + 1e-6)
+    fill = fill + grain[ys, xs][:, None]
+    out = rgb.copy()
+    out[ys, xs] = np.clip(fill, 0, 255).astype(np.uint8)
+    # a 1 px feather on the outer edge, so the fill does not end in a hard step
+    soft = cv2.GaussianBlur(m8.astype(np.float32), (0, 0), 0.8)
+    edge = (soft > 0.02) & ~mask
+    if avoid is not None:
+        edge &= ~avoid
+    a = soft[edge][:, None]
+    blur = cv2.GaussianBlur(out, (0, 0), 1.0)
+    out[edge] = np.clip(rgb[edge] * (1 - a) + blur[edge] * a, 0, 255).astype(np.uint8)
+    return out
+
+
+def flat_fill(rgb, x0, y0, x1, y1, ring=5):
+    import numpy as np
+    m = np.zeros(rgb.shape[:2], bool)
+    m[y0:y1, x0:x1] = True
+    return plane_fill(rgb, m, ring)
 
 
 def fill_boxes(im, boxes):
     """One box at a time: LaMa (lama_inpaint works on a window around the whole mask, so boxes far apart — the plates on two
-    machines of a tandem — would share one big, downscaled window), or "flat" (flat_fill) for a plate on a plain panel."""
+    machines of a tandem — would share one big, downscaled window), or "flat" (plane_fill) for a plate on a plain panel."""
     import numpy as np
     from lama_inpaint import inpaint
     rgb = np.asarray(im.convert("RGB")).copy()
@@ -250,11 +277,46 @@ def fill_boxes(im, boxes):
     return Image.fromarray(rgb)
 
 
+def keep_mask(rgb, how):
+    """Pixels a fill must leave alone: "dark" (cables), "yellow" (a yellow or orange guard bar), "white" (the white
+    background of a cut-out render)."""
+    import cv2
+    r, g, b = (rgb[..., i].astype(int) for i in range(3))
+    if how == "dark":
+        return cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) <= 90
+    if how == "yellow":
+        return (r > 100) & (r - b > 60) & (g > 0.55 * r) & (b < 0.6 * g)
+    if how == "white":                       # the white background: white pixels connected to the border of the picture
+        import numpy as np
+        w = ((r > 238) & (g > 238) & (b > 238)).astype(np.uint8)
+        n, lab = cv2.connectedComponents(w)
+        edge = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))) - {0}
+        return np.isin(lab, list(edge))
+    raise ValueError(how)
+
+
+def draw_line(rgb, before, pts, w, ss=4):
+    """An anti-aliased polyline in the median colour of the dark pixels under it in the picture before the fill."""
+    import cv2
+    import numpy as np
+    from PIL import ImageDraw
+    H, W = rgb.shape[:2]
+    big = Image.new("L", (W * ss, H * ss), 0)
+    ImageDraw.Draw(big).line([(x * ss, y * ss) for x, y in pts], fill=255, width=int(round(w * ss)), joint="curve")
+    a = np.asarray(big.resize((W, H), Image.LANCZOS)).astype(np.float32)[..., None] / 255
+    core = a[..., 0] > 0.6
+    gray = cv2.cvtColor(before, cv2.COLOR_RGB2GRAY)
+    sel = core & (gray < 80)
+    color = np.median(before[sel], 0) if sel.sum() > 5 else np.array([30, 30, 30])
+    return np.clip(rgb * (1 - a) + color * a, 0, 255).astype(np.uint8)
+
+
 def fill_masks(im, p):
-    """Polygons (LaMa; {"pts": [...], "keep": "dark" | "yellow"} leaves the cables or a yellow guard bar crossing the plate out of
-    the mask), text strokes inside a polygon (mode "dark": letters darker than their label, "light": lighter than their plate —
-    the label or plate itself stays; filled by OpenCV TELEA, which leaves no ghost letters on a plain plate) and cream plates
-    (the letters inside the largest cream area of a box: the octagonal name plate of the TC-42, TELEA as well)."""
+    """Polygons: a list of points (LaMa), or {"pts": [...], "fill": "flat" | "lama", "keep": "dark" | "yellow" | "white" (or a
+    list of them), "keep_polys": [[...], ...] (a cable or a pictogram crossing the plate, left as it is), "ring": px of panel
+    around the polygon the flat fill is fitted to}.  Text strokes inside a polygon (mode "dark": letters darker than their
+    label, "light": lighter than their plate) are filled by OpenCV TELEA.  Plates: the largest cream area inside a box (the
+    hexagonal name plate of the TC-42) goes as a whole, filled flat from the black panel around it."""
     import cv2
     import numpy as np
     from PIL import ImageDraw
@@ -267,16 +329,29 @@ def fill_masks(im, p):
         return np.asarray(m) > 0
 
     for poly in p.get("polys", []):
-        pts, keep = (poly["pts"], poly.get("keep")) if isinstance(poly, dict) else (poly, None)
-        m = poly_mask(pts)
-        if keep == "dark":
-            m &= cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) > 90
-        elif keep == "yellow":
-            r, g, b = rgb[..., 0].astype(int), rgb[..., 1].astype(int), rgb[..., 2].astype(int)
-            m &= ~((r > 150) & (g > 120) & (b < 110) & (r - b > 80))
-        m = cv2.dilate(m.astype(np.uint8) * 255, np.ones((3, 3), np.uint8))
-        if m.any():
-            rgb = inpaint(rgb, m)
+        poly = poly if isinstance(poly, dict) else {"pts": poly}
+        m = poly_mask(poly["pts"])
+        avoid = np.zeros_like(m)
+        keeps = poly.get("keep") or []
+        for how in [keeps] if isinstance(keeps, str) else keeps:
+            avoid |= keep_mask(rgb, how)
+        for kp in poly.get("keep_polys", []):
+            kp = kp if isinstance(kp, dict) else {"pts": kp}
+            km = poly_mask(kp["pts"])
+            if kp.get("only") == "dark":          # a cable: its dark pixels stay, the plate seen beside it goes
+                km &= cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) < 90
+            avoid |= km
+        m &= ~avoid
+        if not m.any():
+            continue
+        before = rgb
+        if poly.get("fill") == "flat":
+            rgb = plane_fill(rgb, m, poly.get("ring", 6), avoid, ring_max=poly.get("ring_max"))
+        else:
+            m8 = cv2.dilate(m.astype(np.uint8) * 255, np.ones((3, 3), np.uint8)) & ~(avoid.astype(np.uint8) * 255)
+            rgb = inpaint(rgb, m8)
+        for ln in poly.get("lines", []):        # a cable crossing the plate, filled with it and drawn again over the fill
+            rgb = draw_line(rgb, before, ln["pts"], ln.get("w", 3))
     for poly, mode in p.get("strokes", []):
         inside = poly_mask(poly)
         gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY).astype(int)
@@ -288,18 +363,18 @@ def fill_masks(im, p):
             rgb = cv2.inpaint(rgb, m, 4, cv2.INPAINT_TELEA)
     for x0, y0, x1, y1 in p.get("plates", []):
         sub = rgb[y0:y1, x0:x1].astype(int)
-        cream = (((sub.max(2) - sub.min(2)) < 45) & (sub.max(2) > 150)).astype(np.uint8) * 255
+        cream = (((sub.max(2) - sub.min(2)) < 45) & (sub.max(2) > 150) & (sub.min(2) < 236)).astype(np.uint8) * 255
         cream = cv2.morphologyEx(cream, cv2.MORPH_CLOSE, np.ones((25, 25), np.uint8))
         n, lab, stats, _ = cv2.connectedComponentsWithStats(cream)
         comp = (lab == 1 + int(np.argmax(stats[1:, cv2.CC_STAT_AREA]))).astype(np.uint8)
         cnts, _ = cv2.findContours(comp, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         hm = np.zeros_like(comp); cv2.fillConvexPoly(hm, cv2.convexHull(np.vstack(cnts)), 1)
-        hm = cv2.erode(hm, np.ones((7, 7), np.uint8))
-        gray = cv2.cvtColor(sub.astype(np.uint8), cv2.COLOR_RGB2GRAY)
-        text = cv2.dilate(((hm > 0) & (gray < 130)).astype(np.uint8) * 255, np.ones((7, 7), np.uint8)) & (hm * 255)
-        m = np.zeros((H, W), np.uint8); m[y0:y1, x0:x1] = text
+        hm = cv2.dilate(hm, np.ones((7, 7), np.uint8))
+        m = np.zeros((H, W), bool); m[y0:y1, x0:x1] = hm > 0
+        avoid = keep_mask(rgb, "yellow") | keep_mask(rgb, "white")
+        m &= ~avoid
         if m.any():
-            rgb = cv2.inpaint(rgb, m, 5, cv2.INPAINT_TELEA)
+            rgb = plane_fill(rgb, m, 6, avoid)
     return Image.fromarray(rgb)
 
 

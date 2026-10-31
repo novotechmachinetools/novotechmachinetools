@@ -267,10 +267,15 @@
     "sh-sdk8",
     "sh-sdk6",
     "sh-sdk6-b",
+    "shd-sdk8-render",
     "sh-sdk8-head",
     "sh-sdk-rolls",
     "sh-sdk-control",
-    "sh-sdk8-lcd"
+    "sh-sdk8-lcd",
+    "shd-sdk8-rolls",
+    "shd-sdk8-part",
+    "shd-sdk8-edge",
+    "shd-sdk8-head"
    ],
    "videos": [
     {
@@ -486,7 +491,12 @@
    ],
    "images": [
     "sh-efm6",
-    "sh-efm-vacuum"
+    "sh-efm-vacuum",
+    "shd-efm6-render-b",
+    "shd-efm6-bending-rolls",
+    "shd-efm6-cutting-rolls",
+    "shd-efm6-clamping",
+    "shd-efm6-part"
    ],
    "videos": [
     {
