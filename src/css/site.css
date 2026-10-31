@@ -557,6 +557,14 @@ small { font-size: .85em; }
   .tree-toggle { width: 34px; height: 34px; top: 0; }
   .hero-grid, .hero-grid.has-large-hero { grid-template-columns: 1fr; gap: 20px; padding: 24px 0 20px; }
   .hero-art { min-height: 0; margin-top: 8px; }
+  /* phones and tablets: the title, then the hero photo, then the description and the rest (the owner, Oct 31 2026) —
+     the copy column dissolves into the hero's flex column so the photo can sit between the h1 and the text */
+  .hero-grid, .hero-grid.has-large-hero { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .hero-copy { display: contents; }
+  .hero-copy > * { order: 4; }
+  .hero-copy > .crumbs, .hero-copy > .kicker { order: 1; }
+  .hero-copy > h1 { order: 2; }
+  .hero-art { order: 3; margin: 4px 0 18px; }
   .hero-band { inset: 10% -20% 6% 20%; }
   .hero-minis { display: none; }
   .jump-list { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
@@ -852,6 +860,13 @@ body.ai-locked { overflow: hidden; }
 @media (max-width: 1000px) {
   .facts-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .showroom-grid, .contact-grid, .contact-visit, .about-hero-grid, .home-learn { grid-template-columns: minmax(0, 1fr); }
+  /* about page, single column: the title, then the photo, then the intro and buttons (as the product heroes) */
+  .about-hero-grid { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .about-hero-copy { display: contents; }
+  .about-hero-copy > * { order: 4; }
+  .about-hero-copy > .crumbs { order: 1; }
+  .about-hero-copy > h1 { order: 2; }
+  .about-hero-photo { order: 3; margin: 4px 0 18px; }
   .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .story-row { grid-template-columns: minmax(0, 1fr); gap: 6px; }
 }
@@ -872,6 +887,8 @@ body.ai-locked { overflow: hidden; }
 .guide-figure img { max-height: 560px; width: auto; }
 .article-page { max-width: 1000px; }
 .article-lead-figure img { max-height: none; width: 100%; }
+.article-lead-mobile { display: none; }
+@media (max-width: 960px) { .article-lead-mobile { display: block; margin: 14px 0 16px; } .article-lead-desktop { display: none; } }
 .article-related { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line-soft); }
 
 /* Hub: the kinds of machine compared (press brakes: hydraulic / electric / horizontal) */

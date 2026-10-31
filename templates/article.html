@@ -7,13 +7,15 @@
   <div class="wrap page-hero-inner article-head">
     {{ crumbs(page) }}
     <h1>{{ page.h1 }}</h1>
+    {# phones and tablets: the lead photo sits between the title and the intro (the owner, Oct 31 2026); same image URL as the desktop figure below, so it downloads once #}
+    <figure class="guide-figure article-lead-figure article-lead-mobile">{{ photo(hero, "(max-width: 900px) 92vw, 860px", eager=True) }}</figure>
     <p class="lead">{{ page.intro }}</p>
     <p class="hero-updated">{{ page.byline }} · updated <time datetime="{{ page.date_modified }}">{{ page.updated_label }}</time></p>
   </div>
 </section>
 
 <section class="guide wrap article-page" aria-label="Article">
-  <figure class="guide-figure article-lead-figure">{{ photo(hero, "(max-width: 900px) 92vw, 860px", eager=True) }}</figure>
+  <figure class="guide-figure article-lead-figure article-lead-desktop">{{ photo(hero, "(max-width: 900px) 92vw, 860px", eager=True) }}</figure>
   <nav class="guide-toc" aria-label="Contents">
     <ol>{% for t in page.article_toc %}<li><a href="#{{ t.id }}">{{ t.label }}</a></li>{% endfor %}</ol>
   </nav>
