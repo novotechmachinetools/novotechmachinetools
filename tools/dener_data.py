@@ -203,18 +203,18 @@ NOTE_DDS = ("Bending force in US tons (metric tons in brackets). Ball-screw driv
             "a compact machine for small parts, boxes and brackets.")
 
 # The XL standard equipment: NovoTech's own list for the XL series (the owner's quote, Oct 30 2026) combined with the items from
-# Dener's brochure.  The ESA control and the DSP-AP guard link to their makers' pages (the owner's links); the EUROSTAMP punch and die
-# link to the tooling page on this site, which sells them.  The DSP-AP laser guard is standard now, so it left the XL options.
+# Dener's brochure, as plain text (the owner, Oct 30 2026: no links in this list).  The DSP-AP laser guard is standard now, so it
+# left the XL options.
 # The S840 has a 15.6″ screen and the S875 W a 21.5″ one (the owner, Oct 30 2026; ESA's data) — never "15″" / "21″".
-PB_STD_XL = ['<a href="https://www.esautomotion.com/prodotti/vis-840/">ESA S840</a> 15.6″ 2D graphic touch-screen CNC control (Italy)',
+PB_STD_XL = ["ESA S840 15.6″ 2D graphic touch-screen CNC control (Italy)",
              "2D offline programming software for the CNC control",
              "Heavy-duty X-axis back gauge on servo motor, ball screw and linear guides, with 2 finger stops adjustable by hand in height and lateral position",
              "Y1, Y2 ram axes on linear scales",
-             '<a href="https://www.nuova-elettronica.com/en/products/mcs--dsp-laser-ap">DSP-AP laser finger protection with MCS safety PLC</a>',
+             "DSP-AP laser finger protection with MCS safety PLC",
              "2 front supports: sliding arms on linear rail with manual height adjustment",
              "European (Promecam) tool clamping with segmented punch and die holders",
-             '<a href="press-brake-tooling-punch-and-die.html#es-eu-straight">EUROSTAMP 1281 punch</a> (Italy)',
-             '<a href="press-brake-tooling-punch-and-die.html#es-eu-multiv">EUROSTAMP 2067 4-V die</a> (Italy)',
+             "EUROSTAMP 1281 punch (Italy)",
+             "EUROSTAMP 2067 4-V die (Italy)",
              "Side and rear safety covers with safety interlocks", "Heavy-duty ram guideways", "Proportional servo-valve hydraulic system; constant pressure",
              "Anti-panic foot pedal with emergency stop button", "Large daylight and throat depth",
              "CSA-approved electrical panel; 600 V 3-phase transformer included", "Aluminum-foil waterproof overseas packaging",
@@ -295,7 +295,8 @@ PB_FAMILIES = [
          images=["dn-xl-1", "dn-xl-3", "dn-xl-p-tandem-9200", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-ram-slide",
                  "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports",
                  "dn-xl-p-dsp-laser", "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning",
-                 "dn-xl-p-manual-crowning", "dn-xl-p-laser-angle", "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-xl-control",
+                 "dn-xl-p-manual-crowning", "dn-xl-p-laser-angle", "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-xl-control", "dn-xl-g-esa-s840", "dn-xl-g-esa-s875w",
+                 "dn-xl-g-delem-da66s", "dn-xl-g-delem-da69s",
                  # the back gauge options with their axis arrows (tools/dener_bg_arrows.py)
                  "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis", "dn-det-bg-6axis-atf"],
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),

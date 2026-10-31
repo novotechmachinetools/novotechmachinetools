@@ -104590,5 +104590,113 @@
    "file": "img/dener/dn-xl-p-tandem-9200-thumb.webp",
    "bytes": 3700
   }
+ },
+ "dn-xl-g-esa-s840": {
+  "alt": "ESA S840, standard \u2014 15.6\u2033 touch screen, 2D programming",
+  "variants": [
+   {
+    "w": 798,
+    "h": 780,
+    "file": "img/dener/dn-xl-g-esa-s840-798.webp",
+    "bytes": 51426
+   },
+   {
+    "w": 480,
+    "h": 469,
+    "file": "img/dener/dn-xl-g-esa-s840-480.webp",
+    "bytes": 28918
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 156,
+   "file": "img/dener/dn-xl-g-esa-s840-thumb.webp",
+   "bytes": 7236
+  }
+ },
+ "dn-xl-g-esa-s875w": {
+  "alt": "ESA S875 W, option \u2014 21.5\u2033 touch screen, 3D programming",
+  "variants": [
+   {
+    "w": 787,
+    "h": 770,
+    "file": "img/dener/dn-xl-g-esa-s875w-787.webp",
+    "bytes": 65698
+   },
+   {
+    "w": 480,
+    "h": 470,
+    "file": "img/dener/dn-xl-g-esa-s875w-480.webp",
+    "bytes": 35392
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 157,
+   "file": "img/dener/dn-xl-g-esa-s875w-thumb.webp",
+   "bytes": 7960
+  }
+ },
+ "dn-xl-g-delem-da66s": {
+  "alt": "Delem DA-66S, option \u2014 24\u2033 touch screen, 2D programming",
+  "variants": [
+   {
+    "w": 1070,
+    "h": 1023,
+    "file": "img/dener/dn-xl-g-delem-da66s-1070.webp",
+    "bytes": 77438
+   },
+   {
+    "w": 800,
+    "h": 765,
+    "file": "img/dener/dn-xl-g-delem-da66s-800.webp",
+    "bytes": 55852
+   },
+   {
+    "w": 480,
+    "h": 459,
+    "file": "img/dener/dn-xl-g-delem-da66s-480.webp",
+    "bytes": 30098
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 153,
+   "file": "img/dener/dn-xl-g-delem-da66s-thumb.webp",
+   "bytes": 7382
+  }
+ },
+ "dn-xl-g-delem-da69s": {
+  "alt": "Delem DA-69S, option \u2014 24\u2033 touch screen, 3D programming",
+  "variants": [
+   {
+    "w": 1069,
+    "h": 1023,
+    "file": "img/dener/dn-xl-g-delem-da69s-1069.webp",
+    "bytes": 76156
+   },
+   {
+    "w": 800,
+    "h": 766,
+    "file": "img/dener/dn-xl-g-delem-da69s-800.webp",
+    "bytes": 56132
+   },
+   {
+    "w": 480,
+    "h": 459,
+    "file": "img/dener/dn-xl-g-delem-da69s-480.webp",
+    "bytes": 30156
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 153,
+   "file": "img/dener/dn-xl-g-delem-da69s-thumb.webp",
+   "bytes": 7498
+  }
  }
 }
