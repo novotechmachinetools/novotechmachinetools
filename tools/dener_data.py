@@ -287,10 +287,10 @@ PB_FAMILIES = [
          # holder channel) with their standard / option status (the owner, Oct 30 2026); dn-xh-4, the
          # blurry tooling photo, is out (the owner, Oct 30 2026)
          # dn-xl-2 (three-quarter render), dn-xl-esa-screen (an ESA S660 W, not the XL's S840) and dn-xl-front-arms (the same
-         # front supports as dn-xl-q-front-supports) out — the owner, Oct 30 2026
+         # front supports as dn-xl-q-front-supports) and dn-xl-q-rear-gates out — the owner, Oct 30 2026
          images=["dn-xl-1", "dn-xl-3", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-ram-slide",
                  "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-q-front-supports",
-                 "dn-xl-q-rear-gates", "dn-xl-p-dsp-laser", "dn-xl-q-punch-1281", "dn-xl-q-die-2067", "dn-xl-p-crowning",
+                 "dn-xl-p-dsp-laser", "dn-xl-q-punch-1281", "dn-xl-q-die-2067", "dn-xl-p-crowning",
                  "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-control",
                  # the back gauge options with their axis arrows (tools/dener_bg_arrows.py)
                  "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis", "dn-det-bg-6axis-atf"],
