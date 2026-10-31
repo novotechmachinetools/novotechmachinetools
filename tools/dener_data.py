@@ -299,17 +299,15 @@ PB_FAMILIES = [
          # front supports as dn-xl-q-front-supports) and dn-xl-q-rear-gates out — the owner, Oct 30 2026; the 1281 punch and 2067 die
          # are EUROSTAMP's drawings with the inch values added (tools/eurostamp_photos.drawing), the laser angle measurement the owner's
          # picture, and the CNC crowning photo his second picture; the front support arms of the XL under 175 t and the manual
-         # crowning (option) his pictures too, upscaled 4x, his photo of the back safety covers (standard) and of the sheet followers
+         # crowning (option) his pictures too, upscaled 4x in one Real-ESRGAN x4plus pass (tools/esrgan4.py), his photo of the back safety covers (standard) and of the sheet followers
          # with extended parking (option) (Oct 30 2026)
-         images=["dn-xl-1", "dn-xl-3", "dn-xl-p-tandem-9200", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-p-front-arms-std",
-                 "dn-xl-q-front-supports", "dn-xl-p-dsp-laser", "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning",
-                 "dn-xl-p-manual-crowning", "dn-xl-p-laser-angle", "dn-xl-p-die-channel", "dn-xl-q-quick-release", "dn-xl-q-euro-american",
-                 "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2", "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-xl-control",
-                 "dn-xl-g-esa-s840", "dn-xl-g-esa-s875w", "dn-xl-g-delem-da66s", "dn-xl-g-delem-da69s",
-                 # the back gauge options with their axis arrows (tools/dener_bg_arrows.py)
-                 "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis", "dn-det-bg-6axis-atf",
-                 # these four at the end of the gallery (the owner, Oct 31 2026)
-                 "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-ram-slide"],
+         images=["dn-xl-1", "dn-xl-3", "dn-xl-p-tandem-9200", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports",
+                 "dn-xl-p-dsp-laser", "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning", "dn-xl-p-manual-crowning",
+                 "dn-xl-p-laser-angle", "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-xl-control", "dn-xl-g-esa-s840",
+                 "dn-xl-g-esa-s875w", "dn-xl-g-delem-da66s", "dn-xl-g-delem-da69s", "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis",
+                 "dn-det-bg-6axis-atf", "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-ram-slide", "dn-xl-p-die-channel",
+                 "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2"],
+         # the last nine photos at the end of the gallery, in the owner's order (Oct 31 2026)
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),
                      ("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake"), ("pRxr7CB2pDQ", "XL 13 ft × 220 ton with laser angle measurement and sheet follower"),
                      ("dXorm3f4fBY", "DENER XL 13 ft × 320 ton CNC hydraulic press brake"), ("_rdb1prKsxc", "20 ft × 600 ton DENER Puma XL heavy-duty press brake"),
