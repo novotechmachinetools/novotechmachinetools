@@ -273,6 +273,19 @@ small { font-size: .85em; }
 .vc-status { margin: 10px 0 0; font-size: 14px; color: var(--steel); text-align: center; }
 @media (max-width: 1000px) { .vid-carousel { --vc-per: 2; } }
 @media (max-width: 640px) { .vid-carousel { --vc-per: 1.15; --vc-gap: 12px; } .vc-prev { left: -6px; } .vc-next { right: -6px; } }
+/* family videos sit under the photo gallery (Oct 30 2026): one column of the family grid, so two videos a row on desktop;
+   on phones and tablets the order is gallery, videos, quote / brochure buttons, text, tables */
+.family-media .family-videos:not(.vc-track), .family-media .vid-carousel { margin-top: 18px; }
+.family-media .family-videos.is-multi:not(.vc-track) { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.family-media .vid-carousel { --vc-per: 2; --vc-gap: 14px; }
+.family-media .video { max-width: none; }
+@media (max-width: 960px) {
+  .family-text { display: flex; flex-direction: column; }
+  .family-text > .cta-row { order: -1; margin: 0 0 16px; }
+  .family-text > .cta-row .btn-link[href$="-video"] { display: none; }
+  .family-media .vid-carousel { --vc-per: 2; }
+}
+@media (max-width: 640px) { .family-media .vid-carousel { --vc-per: 1.15; --vc-gap: 12px; } }
 .video-poster { position: relative; display: block; aspect-ratio: 16 / 9; background: #000; overflow: hidden; border: 1px solid var(--line); }
 .video-poster img { width: 100%; height: 100%; object-fit: cover; opacity: .92; }
 .video-poster .play { position: absolute; left: 50%; top: 50%; width: 76px; height: 54px; transform: translate(-50%, -50%); background: var(--orange); border-radius: 10px; }
