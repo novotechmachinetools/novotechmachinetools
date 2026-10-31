@@ -587,8 +587,36 @@ def family_videos(f):
     f["videos"] = out
 
 
+# Upload order of the channel: tools/novotech-youtube-videos.tsv lists the regular uploads newest first (the channel's
+# Videos tab). The few Shorts on the site are not on that tab and go after the regular videos of their group.
+YT_ORDER = {}
+for _n, _l in enumerate(open(os.path.join(ROOT, "tools", "novotech-youtube-videos.tsv"), encoding="utf-8")):
+    _p = _l.split("\t", 1)
+    if _p[0].strip():
+        YT_ORDER.setdefault(_p[0].strip(), float(_n))
+
+GENERAL_VIDEO = re.compile(r"\b(factory|assembly line|tour|instructions?|how to|how-to|vs\.?|versus|comparison|compar\w+|install\w*|"
+                           r"operating|training|tutorial|exhibition|trade fair|catalogue|overview)\b", re.I)
+
+
+def video_tier(v):
+    """0: a video of the machine itself; 1: a general one — how-to, operating instructions, factory or plant tour,
+    installation, comparison"""
+    text = (v.get("title") or "") + " " + YT_CHANNEL.get(v["id"], ("", ""))[0]
+    return 1 if GENERAL_VIDEO.search(text) else 0
+
+
+def sort_videos(f):
+    """Every family shows its most relevant and newest video first (owner, Oct 30 2026): videos of the machine before
+    general ones (how-tos, instructions, factory tours, comparisons), each group newest first (channel upload order)."""
+    vs = f.get("videos") or []
+    if len(vs) > 1:
+        f["videos"] = sorted(vs, key=lambda v: (video_tier(v), YT_ORDER.get(v["id"], 1e9)))
+
+
 def prepare_family(f):
     family_videos(f)
+    sort_videos(f)
     if f.get("specs") and f["specs"].get("kind") == "tools":
         # press brake tooling: the data generator supplies the tool tables (rows = tools) as f["tool_tables"]
         f["headline"] = f.get("headline") or f["specs"].get("headline", "")
