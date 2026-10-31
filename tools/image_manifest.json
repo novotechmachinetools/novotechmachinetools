@@ -53540,7 +53540,7 @@
   }
  },
  "vl-pb-backgauge": {
-  "alt": "CNC back gauge on ball screws and linear guides \u2014 X and R axes, servo driven",
+  "alt": "4-axis CNC back gauge X-R-Z1-Z2, option: the fingers move in depth (X) and height (R), and each finger tower travels along the beam on its own (Z1, Z2) \u2014 ball screws, linear guides and servo drives",
   "variants": [
    {
     "w": 1200,
@@ -105964,6 +105964,219 @@
    "h": 107,
    "file": "img/value-sheet/vl-wad-cabinet-in-thumb.webp",
    "bytes": 3820
+  }
+ },
+ "dn-xl-3000x220": {
+  "alt": "Dener XL 3000 \u00d7 220: 243 US tons (220 t) \u00d7 10 ft hydraulic CNC press brake, with the CNC control on its swing arm, the front sheet supports and the foot pedal",
+  "variants": [
+   {
+    "w": 937,
+    "h": 730,
+    "file": "img/dener/dn-xl-3000x220-937.webp",
+    "bytes": 72026
+   },
+   {
+    "w": 800,
+    "h": 623,
+    "file": "img/dener/dn-xl-3000x220-800.webp",
+    "bytes": 63502
+   },
+   {
+    "w": 480,
+    "h": 374,
+    "file": "img/dener/dn-xl-3000x220-480.webp",
+    "bytes": 32552
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 125,
+   "file": "img/dener/dn-xl-3000x220-thumb.webp",
+   "bytes": 7000
+  },
+  "cut": "birefnet"
+ },
+ "dn-xl-tandem-3000x320": {
+  "alt": "Tandem of two XL 3000 \u00d7 320 press brakes: 20 ft and 706 US tons (640 t) bent from one control, or each machine on its own",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 581,
+    "file": "img/dener/dn-xl-tandem-3000x320-1200.webp",
+    "bytes": 101944
+   },
+   {
+    "w": 800,
+    "h": 388,
+    "file": "img/dener/dn-xl-tandem-3000x320-800.webp",
+    "bytes": 59154
+   },
+   {
+    "w": 480,
+    "h": 233,
+    "file": "img/dener/dn-xl-tandem-3000x320-480.webp",
+    "bytes": 29274
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 78,
+   "file": "img/dener/dn-xl-tandem-3000x320-thumb.webp",
+   "bytes": 6334
+  },
+  "cut": "birefnet"
+ },
+ "dn-xl-tandem-4000x320": {
+  "alt": "Tandem of two XL 4000 \u00d7 320 press brakes: 26 ft and 706 US tons (640 t) bent from one control, with a CNC control at each end",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 429,
+    "file": "img/dener/dn-xl-tandem-4000x320-1200.webp",
+    "bytes": 65488
+   },
+   {
+    "w": 800,
+    "h": 286,
+    "file": "img/dener/dn-xl-tandem-4000x320-800.webp",
+    "bytes": 37470
+   },
+   {
+    "w": 480,
+    "h": 172,
+    "file": "img/dener/dn-xl-tandem-4000x320-480.webp",
+    "bytes": 18348
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 57,
+   "file": "img/dener/dn-xl-tandem-4000x320-thumb.webp",
+   "bytes": 3838
+  },
+  "cut": "birefnet"
+ },
+ "dn-xl-tandem-4000x320-shop": {
+  "alt": "Tandem XL 4000 \u00d7 320 press brakes in the shop: two 13 ft machines that bend 26 ft parts together or work apart",
+  "variants": [
+   {
+    "w": 1000,
+    "h": 750,
+    "file": "img/dener/dn-xl-tandem-4000x320-shop-1000.webp",
+    "bytes": 109736
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/dener/dn-xl-tandem-4000x320-shop-800.webp",
+    "bytes": 78448
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/dener/dn-xl-tandem-4000x320-shop-480.webp",
+    "bytes": 30430
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/dener/dn-xl-tandem-4000x320-shop-thumb.webp",
+   "bytes": 3596
+  }
+ },
+ "dn-xl-throat-frames": {
+  "alt": "Deep throats in the XL side frames, seen along the machine: tall flanges on long parts pass into the frames",
+  "variants": [
+   {
+    "w": 1000,
+    "h": 768,
+    "file": "img/dener/dn-xl-throat-frames-1000.webp",
+    "bytes": 53694
+   },
+   {
+    "w": 800,
+    "h": 614,
+    "file": "img/dener/dn-xl-throat-frames-800.webp",
+    "bytes": 37694
+   },
+   {
+    "w": 480,
+    "h": 369,
+    "file": "img/dener/dn-xl-throat-frames-480.webp",
+    "bytes": 20110
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 123,
+   "file": "img/dener/dn-xl-throat-frames-thumb.webp",
+   "bytes": 3650
+  }
+ },
+ "dn-xl-bg-fingers": {
+  "alt": "Back gauge fingers of the XL, sliding along the beam on its linear guide",
+  "variants": [
+   {
+    "w": 1000,
+    "h": 751,
+    "file": "img/dener/dn-xl-bg-fingers-1000.webp",
+    "bytes": 112158
+   },
+   {
+    "w": 800,
+    "h": 601,
+    "file": "img/dener/dn-xl-bg-fingers-800.webp",
+    "bytes": 76050
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/dener/dn-xl-bg-fingers-480.webp",
+    "bytes": 34934
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/dener/dn-xl-bg-fingers-thumb.webp",
+   "bytes": 5384
+  }
+ },
+ "dn-sheet-followers": {
+  "alt": "Two CNC sheet followers in front of a Dener press brake: they rise with the sheet through the bend, so large, thin sheets do not sag or whip back",
+  "variants": [
+   {
+    "w": 1000,
+    "h": 750,
+    "file": "img/dener/dn-sheet-followers-1000.webp",
+    "bytes": 84716
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/dener/dn-sheet-followers-800.webp",
+    "bytes": 60372
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/dener/dn-sheet-followers-480.webp",
+    "bytes": 27248
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/dener/dn-sheet-followers-thumb.webp",
+   "bytes": 4020
   }
  }
 }

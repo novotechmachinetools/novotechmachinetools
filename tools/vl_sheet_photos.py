@@ -56,7 +56,8 @@ PHOTOS = {
     "vl-wad-tandem-2": R("01_w1600-7.webp", "Tandem press brake with CNC sheet followers for long, heavy plate"),
     "vl-wad-follower": R("05_w1600-11.webp", "Heavy-duty CNC press brake with a CNC sheet follower table", boxes=[(800, 205, 885, 290), (610, 340, 665, 360)]),
     "vl-wad-robot": R("44.05_w1600.webp", "WAD 110T/3200 CNC press brake in a robot bending cell", boxes=[(800, 110, 890, 195)], cutout=False),
-    "vl-pb-backgauge": R("03_w1600-8.webp", "CNC back gauge on ball screws and linear guides — X and R axes, servo driven", cutout=False),
+    "vl-pb-backgauge": R("03_w1600-8.webp", ("4-axis CNC back gauge X-R-Z1-Z2, option: the fingers move in depth (X) and height (R), and each finger tower travels along "
+                         "the beam on its own (Z1, Z2) — ball screws, linear guides and servo drives"), cutout=False),
     "vl-pb-clamps": R("04_w1600-17.webp", "European-style tool clamping along the ram with the light curtain at the side", cutout=False),
     "vl-pb-quickclamp": R("04_w1600-18.webp", "Quick-release tool clamps — the punch changes without tools", boxes=[(980, 275, 1180, 355), (585, 365, 705, 425)], cutout=False),
     "vl-pb-clamp-open": R("%E6%B8%85%E7%90%86_w1600.webp", "Quick clamp opened for a punch change", cutout=False),

@@ -43,6 +43,22 @@ PHOTOS = {
                             [(402, 342, 434, 364), (1050, 337, 1083, 357)]),
     "dn-xl-wila": P("Wila New Standard upper tool holder on the ram — Wila mechanical or hydraulic tool clamping is optional on the XL",
                     cut=False),
+    # the owner's set (sent in the chat, Oct 31 2026): the distributor's plate on each ram and its logo on the control screens filled
+    "dn-xl-3000x220": P("Dener XL 3000 × 220: 243 US tons (220 t) × 10 ft hydraulic CNC press brake, with the CNC control on its swing arm, "
+                        "the front sheet supports and the foot pedal", [(432, 251, 480, 290)]),
+    "dn-xl-tandem-3000x320": P("Tandem of two XL 3000 × 320 press brakes: 20 ft and 706 US tons (640 t) bent from one control, or each "
+                               "machine on its own", [(424, 271, 471, 307), (122, 441, 155, 455), (1305, 443, 1338, 456)],
+                               clone=[(1015, 268, 1076, 316, 70, 0)]),
+    "dn-xl-tandem-4000x320": P("Tandem of two XL 4000 × 320 press brakes: 26 ft and 706 US tons (640 t) bent from one control, with a CNC "
+                               "control at each end", [(1405, 397, 1434, 411)],
+                               clone=[(403, 317, 454, 358, 60, 0), (1007, 317, 1057, 358, 60, 0)]),
+    "dn-xl-tandem-4000x320-shop": P("Tandem XL 4000 × 320 press brakes in the shop: two 13 ft machines that bend 26 ft parts together or work "
+                                    "apart", cut=False, clone=[(247, 317, 278, 346, 40, 0), (611, 310, 649, 343, 45, 0)]),
+    "dn-xl-throat-frames": P("Deep throats in the XL side frames, seen along the machine: tall flanges on long parts pass into the frames",
+                             cut=False),
+    "dn-xl-bg-fingers": P("Back gauge fingers of the XL, sliding along the beam on its linear guide", cut=False),
+    "dn-sheet-followers": P("Two CNC sheet followers in front of a Dener press brake: they rise with the sheet through the bend, so large, "
+                            "thin sheets do not sag or whip back", [(580, 82, 642, 125)], cut=False),
     # ---- Dener DDM servo-electric and DDS ball-screw press brakes
     "dn-ddm-5020": P("Dener DDM 5020 servo-electric press brake: 55 US tons (50 t) × 6.7 ft, front view", PLATE_DDM),
     "dn-ddm-5020-side": P("Dener DDM 5020 servo-electric press brake — three-quarter view with the front supports and the foot pedal",
@@ -73,13 +89,16 @@ PHOTOS = {
 
 
 def fill_boxes(im, boxes):
+    """LaMa, one box at a time: lama_inpaint works on a window around the whole mask, so boxes far apart (the plates on two
+    machines of a tandem) would share one big, downscaled window."""
     import numpy as np
     from lama_inpaint import inpaint
     rgb = np.asarray(im.convert("RGB")).copy()
-    mask = np.zeros(rgb.shape[:2], np.uint8)
     for x0, y0, x1, y1 in boxes:
+        mask = np.zeros(rgb.shape[:2], np.uint8)
         mask[y0:y1, x0:x1] = 255
-    return Image.fromarray(inpaint(rgb, mask))
+        rgb = inpaint(rgb, mask)
+    return Image.fromarray(rgb)
 
 
 def trim(im, thr=242, pad=14):

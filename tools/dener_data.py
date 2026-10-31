@@ -306,12 +306,16 @@ PB_FAMILIES = [
          # picture, and the CNC crowning photo his second picture; the front support arms of the XL under 175 t and the manual
          # crowning (option) his pictures too, upscaled 4x in one Real-ESRGAN x4plus pass (tools/esrgan4.py), his photo of the back safety covers (standard) and of the sheet followers
          # with extended parking (option) (Oct 30 2026)
-         images=["dn-xl-1", "dn-xl-3", "dn-xl-p-tandem-9200", "dn-xl-4000x600", "dn-xl-4000x320", "dn-tandem-6000x600", "dn-xl-throat", "dn-xl-xr-gauge", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports",
-                 "dn-xl-p-dsp-laser", "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning", "dn-xl-p-manual-crowning",
-                 "dn-xl-p-laser-angle", "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-xl-control", "dn-xl-g-esa-s840",
+         # gallery order (the owner, Oct 31 2026): single machines, then the tandems on white, then the tandems in the shop, then the
+         # details — the owner's own set of XL singles, tandems, throat, fingers and sheet followers added the same day
+         images=["dn-xl-1", "dn-xl-3", "dn-xl-3000x220", "dn-xl-4000x320", "dn-xl-4000x600", "dn-xl-tandem-3000x320", "dn-xl-tandem-4000x320",
+                 "dn-tandem-6000x600", "dn-xl-tandem-4000x320-shop", "dn-xl-p-tandem-9200", "dn-xl-throat", "dn-xl-throat-frames",
+                 "dn-xl-xr-gauge", "dn-xl-bg-fingers", "dn-xl-p-front-arms-std", "dn-xl-q-front-supports", "dn-xl-p-dsp-laser",
+                 "dn-xl-p-back-covers", "dn-xl-es-1281", "dn-xl-es-2067", "dn-xl-p-crowning", "dn-xl-p-manual-crowning", "dn-xl-p-laser-angle",
+                 "dn-xl-video-2", "dn-xl-follower", "dn-xl-p-follower-parking", "dn-sheet-followers", "dn-xl-control", "dn-xl-g-esa-s840",
                  "dn-xl-g-esa-s875w", "dn-xl-g-delem-da66s", "dn-xl-g-delem-da69s", "dn-det-bg-2axis", "dn-det-bg-4axis", "dn-det-bg-5axis",
-                 "dn-det-bg-6axis-atf", "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-ram-slide", "dn-xl-p-die-channel", "dn-xl-wila",
-                 "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2"],
+                 "dn-det-bg-6axis-atf", "dn-xl-euro-tooling", "dn-xl-q-cylinder", "dn-xl-q-finger", "dn-xl-ram-slide", "dn-xl-p-die-channel",
+                 "dn-xl-wila", "dn-xl-q-quick-release", "dn-xl-q-euro-american", "dn-xl-q-es-clamp", "dn-xl-q-es-clamp-2"],
          # the last nine photos at the end of the gallery, in the owner's order (Oct 31 2026)
          videos=vids(("0pvdG-DYO-E", "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"), ("CFkFmrRCaFc", "DENER PUMA XL 10 ft × 135 ton 6-axis CNC press brake"),
                      ("qUb8fUZr0A4", "DENER XL 5 ft × 160 ton press brake"), ("pRxr7CB2pDQ", "XL 13 ft × 220 ton with laser angle measurement and sheet follower"),

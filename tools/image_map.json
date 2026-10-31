@@ -14343,7 +14343,7 @@
  },
  "vl-pb-backgauge": {
   "src": "tools/src-images/value-sheet/vl-pb-backgauge.jpg",
-  "alt": "CNC back gauge on ball screws and linear guides — X and R axes, servo driven",
+  "alt": "4-axis CNC back gauge X-R-Z1-Z2, option: the fingers move in depth (X) and height (R), and each finger tower travels along the beam on its own (Z1, Z2) — ball screws, linear guides and servo drives",
   "section": "value-sheet",
   "trim": false,
   "quality": 82,
@@ -31291,5 +31291,68 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "dn-xl-3000x220": {
+  "src": "tools/src-images/dealer-pl/dn-xl-3000x220.jpg",
+  "alt": "Dener XL 3000 × 220: 243 US tons (220 t) × 10 ft hydraulic CNC press brake, with the CNC control on its swing arm, the front sheet supports and the foot pedal",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-xl-tandem-3000x320": {
+  "src": "tools/src-images/dealer-pl/dn-xl-tandem-3000x320.jpg",
+  "alt": "Tandem of two XL 3000 × 320 press brakes: 20 ft and 706 US tons (640 t) bent from one control, or each machine on its own",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-xl-tandem-4000x320": {
+  "src": "tools/src-images/dealer-pl/dn-xl-tandem-4000x320.jpg",
+  "alt": "Tandem of two XL 4000 × 320 press brakes: 26 ft and 706 US tons (640 t) bent from one control, with a CNC control at each end",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "dn-xl-tandem-4000x320-shop": {
+  "src": "tools/src-images/dealer-pl/dn-xl-tandem-4000x320-shop.jpg",
+  "alt": "Tandem XL 4000 × 320 press brakes in the shop: two 13 ft machines that bend 26 ft parts together or work apart",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-xl-throat-frames": {
+  "src": "tools/src-images/dealer-pl/dn-xl-throat-frames.jpg",
+  "alt": "Deep throats in the XL side frames, seen along the machine: tall flanges on long parts pass into the frames",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-xl-bg-fingers": {
+  "src": "tools/src-images/dealer-pl/dn-xl-bg-fingers.jpg",
+  "alt": "Back gauge fingers of the XL, sliding along the beam on its linear guide",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "dn-sheet-followers": {
+  "src": "tools/src-images/dealer-pl/dn-sheet-followers.jpg",
+  "alt": "Two CNC sheet followers in front of a Dener press brake: they rise with the sheet through the bend, so large, thin sheets do not sag or whip back",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
  }
 }

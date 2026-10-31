@@ -483,13 +483,17 @@ PB_STD = ["Delem DA-53Tx 15″ touch-screen CNC control; 4 axes — Y1, Y2 (inde
 # the heavy-duty machines take tooling sized for their tonnage (the quotation sheet covers the 135 t)
 PB_STD_H = [("Top-tool clamps, segmented die and sectioned punch set sized for the tonnage (42CrMo, HRC 47)" if x == PB_CLAMPS else x) for x in PB_STD]
 PB_OPT = ["Delem DA-58Tx (18.5″ 2D graphic), DA-66S (24″ 2D with 3D view) or DA-69S (24″ 3D) control; ESA S840 or S875 W; Cybelec CybTouch 12; SCS920 21.5″",
-          "6-axis back gauge X1, X2, R1, R2, Z1, Z2 on ball screws; back gauge strokes to 39″ (1,000 mm)",
-          "CNC sheet followers: two arms rise with the sheet through the bend, so large, thin sheets do not sag or whip back",
+          # the back gauge, follower and Wila items in the owner's words (Oct 31 2026)
+          "X-R-Z1-Z2 back gauge: the two fingers also move sideways along the beam under CNC (Z1, Z2)",
+          "X1-X2-R-Z1-Z2 back gauge: each finger also sets its own depth (X1, X2) — for tapered and stepped flanges",
+          "ATF X1-X2-R1-R2-Z1-Z2 back gauge: each finger tower moves in depth, height and sideways on its own; back gauge strokes to 39″ (1,000 mm)",
+          "Sheet followers: CNC arms rise with the sheet through the bend, so large, thin sheets do not sag or whip back",
           "Double-sided quick clamps for European-style punches with the 8.4 × 3.5 mm safety groove: front clamping for a vertical tool change, "
           "rear clamping to slide the punches out horizontally",
           "Rolleri ROL200 PN POWER pneumatic clamping: vertical tool change from the front with full anti-fall safety for European (R1) punches; "
           "also in a hydraulic version",
-          "Wila New Standard hydraulic clamping: one push-button clamps and seats the whole tool line — up to 80 % less tool-change time",
+          "Wila hydraulic upper and lower tool clamping (New Standard): one push-button clamps and seats the punches and the dies — up to 80 % "
+          "less tool-change time",
           "Safety light curtain: stops the machine when anyone enters the guarded area",
           "Automatic angle measurement",
           "Segmented and special tooling: punch and die sections for boxes, acute- and obtuse-angle tools, designed from your part drawings",
