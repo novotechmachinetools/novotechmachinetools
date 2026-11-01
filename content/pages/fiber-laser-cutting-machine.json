@@ -10,7 +10,7 @@
  "hero_points": [
   "Premium: GFL 1.5 G with shuttle table, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with shuttle table, six sizes to 8.5 × 41 ft",
   "Value: ULE with 15 s shuttle table 10 × 5 to 41 × 8.5 ft, 3 – 40 kW; Senfeng H series with pallet changer to 8.3 × 40 ft and 80 kW",
-  "Senfeng NP single tables with a gantry cover, 5 × 10 to 6.6 × 20 ft, and compact 4 × 4 and 5 × 10 ft lasers from 1.5 kW; towers and storage"
+  "Senfeng compact G, N and NP 5 × 10 ft lasers from 1.5 kW, NP single tables with a gantry cover to 6.6 × 20 ft, and the 4 × 4 ft SF1313G; towers and storage"
  ],
  "hero_image": "dn-gfl-1",
  "hero_image_secondary": [
@@ -73,6 +73,15 @@
    ]
   },
   {
+   "id": "ls-value-compact-group",
+   "title": "Compact single-table lasers G, N and NP · value line",
+   "lead": "",
+   "brand": "senfeng",
+   "families": [
+    "sf-compact"
+   ]
+  },
+  {
    "id": "ls-value-np-group",
    "title": "NP lasers with gantry cover · value line",
    "lead": "",
@@ -82,12 +91,12 @@
    ]
   },
   {
-   "id": "ls-value-compact-group",
-   "title": "Compact single-table lasers · value line",
+   "id": "ls-value-1313g-group",
+   "title": "SF1313G 4 × 4 ft compact laser · value line",
    "lead": "",
    "brand": "senfeng",
    "families": [
-    "sf-compact"
+    "sf-1313g"
    ]
   }
  ],
@@ -196,7 +205,7 @@
    },
    {
     "href": "large-format-plate-laser.html",
-    "label": "Plate lasers",
+    "label": "Large-format lasers",
     "current": false
    },
    {
@@ -227,12 +236,6 @@
    "size": "PDF · 2.5 MB · imperial units"
   },
   {
-   "file": "files/NovoTech-Dener-GFL-Fiber-Laser-Technical-Specification-2026.pdf",
-   "label": "Download the GFL full technical specification",
-   "size": "PDF · 3.5 MB · imperial units",
-   "cta": "Download full technical specification"
-  },
-  {
    "file": "files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf",
    "label": "Download the Smart fiber laser brochure",
    "size": "PDF · 2.7 MB · imperial units"
@@ -243,15 +246,28 @@
    "size": "PDF · 2 MB · imperial units"
   },
   {
+   "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
+   "label": "Download the Senfeng fiber laser brochure",
+   "size": "PDF · 1 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Senfeng-SF1313G-Fiber-Laser-2026.pdf",
+   "label": "Download the SF1313G brochure",
+   "size": "PDF · 1.3 MB · imperial units"
+  }
+ ],
+ "spec_downloads": [
+  {
+   "file": "files/NovoTech-Dener-GFL-Fiber-Laser-Technical-Specification-2026.pdf",
+   "label": "Download the GFL full technical specification",
+   "size": "PDF · 3.5 MB · imperial units",
+   "cta": "Download full technical specification"
+  },
+  {
    "file": "files/NovoTech-ULE-Fiber-Laser-Technical-Specification-2026.pdf",
    "label": "Download the ULE full technical specification",
    "size": "PDF · 4.8 MB · imperial units",
    "cta": "Download full technical specification"
-  },
-  {
-   "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
-   "label": "Download the Senfeng fiber laser brochure",
-   "size": "PDF · 1 MB · imperial units"
   },
   {
    "file": "files/NovoTech-Senfeng-SF3015H-Medium-High-Power-Laser-Technical-Specification-2026.pdf",
@@ -264,6 +280,12 @@
    "label": "Download the SF3015H high-power full technical specification (12 – 30 kW)",
    "size": "PDF · 2.1 MB · imperial units",
    "cta": "Download full technical specification · 12 – 30 kW"
+  },
+  {
+   "file": "files/NovoTech-Senfeng-SF1530NP-Fiber-Laser-Technical-Specification-2026.pdf",
+   "label": "Download the SF1530NP full technical specification (3 – 6 kW)",
+   "size": "PDF · 2.3 MB · imperial units",
+   "cta": "Download full technical specification"
   }
  ]
 }

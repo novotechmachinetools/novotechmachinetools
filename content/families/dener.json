@@ -14,6 +14,7 @@
   "vl-pba",
   "sf-compact",
   "sf-np",
+  "sf-1313g",
   "sf-h",
   "sf-hm",
   "sf-r",
@@ -4194,12 +4195,16 @@
    "id": "sf-compact",
    "group": "laser-senfeng",
    "brand": "senfeng",
-   "name": "Compact single-table sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
-   "short": "Compact sheet lasers",
-   "models_label": "SF1313G · SF1530G · SF1530N · SF1530NP · SFP600 – 1250",
-   "summary": "The entry into fiber laser cutting: single-table machines with a full cover that ship in one container, plug in and cut the day they arrive. The SF1313G is a 4 × 4 ft machine for small parts; the SF1530G, SF1530N and the SF1530NP with its electric lifting door take a 5 × 10 ft sheet with 1.5 to 12 kW sources — enough for 3/4″ mild steel at 6 kW. The pull-out table loads from the front with a forklift; the integrated source and cabinet keep the footprint under 200 × 90″. For jewellery, electronics and precision small parts the SFP series adds 24 to 49″ square tables with ±0.005 mm repeatability.",
+   "name": "Compact single-table sheet lasers G, N and NP, 5 × 10 ft, 1.5 – 12 kW",
+   "short": "Compact 5 × 10 ft lasers",
+   "models_label": "SF1530G · SF1530N · SF1530NP",
+   "summary": "The entry into production laser cutting: fully enclosed 5 × 10 ft single-table machines that ship in one 20 ft container without disassembly, plug in and cut the day they arrive. The SF1530G takes 1.5 to 4 kW, the SF1530N with its pull-out platform 1.5 to 12 kW — enough for 3/4″ mild steel at 6 kW — and the new-generation SF1530NP 1.5 to 6 kW, with the source and a thermostatic electrical cabinet built in, an electric lifting door, integrated leg supports and a pick-up trolley with an inner hopper. Smoke-free extraction through a double air duct with three zones and follow-up air valves, an anti-burning platform, safety light curtains at the front and rear of the beam and smart cameras with a safety-lock alarm; 328 ft/min, 1 G and 2,425 lb on the table (N and NP).",
    "features": [
-    "1.5 – 12 kW; 4 × 4 or 5 × 10 ft single table; 262 – 328 ft/min; 1,100 kg table load",
+    "1.5 – 12 kW; 5 × 10 ft single table; 262 – 328 ft/min, 1 G; 1,543 – 2,425 lb table load",
+    "SF1530NP: electric lifting door with CE protective acrylic laser shields and safety locks on both sides; source and thermostatic electrical cabinet built in",
+    "Pull-out platform (N) or push-pull platform with integrated leg supports and a pick-up trolley with an inner hopper (NP)",
+    "Smoke-free extraction: double air duct, three zones and follow-up air valves; anti-burning platform protects the dust cover",
+    "Safety light curtains at the front and rear of the beam; smart cameras with a safety-lock alarm",
     "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
     "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
     "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
@@ -4216,23 +4221,36 @@
    ],
    "images": [
     "sf-1530np",
+    "sf-1530np-showroom",
     "sf-1530n",
     "sf-1530g",
-    "sf-1313g",
+    "sf-1530np-side",
+    "sf-1530n-rear",
+    "sf-1530g-table",
     "sf-1530n-table",
     "sf-1530np-2",
+    "sf-1530np-trolley",
     "sf-1530np-head",
-    "sf-sfp"
+    "sf-1530np-safety",
+    "sf-1530-antiburn",
+    "sf-1530-dust",
+    "sf-1530np-cabinet",
+    "sf-1530np-container"
    ],
    "videos": [],
+   "spec_pdf": {
+    "file": "files/NovoTech-Senfeng-SF1530NP-Fiber-Laser-Technical-Specification-2026.pdf",
+    "label": "Download the SF1530NP full technical specification (3 – 6 kW)",
+    "size": "PDF · 2.3 MB · imperial units",
+    "cta": "Download full technical specification"
+   },
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "Compact single-table sheet lasers",
-      "sub": "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW",
+      "title": "Compact single-table sheet lasers G · N · NP",
+      "sub": "3 models · 5 × 10 ft · 1.5 – 12 kW",
       "models": [
-       "SF1313G",
        "SF1530G",
        "SF1530N",
        "SF1530NP"
@@ -4242,7 +4260,6 @@
         "label": "Working area",
         "sub": "",
         "cells": [
-         "4.3 × 4.3 ft (1,300 × 1,300 mm)",
          "10 × 5 ft (3,000 × 1,500 mm)",
          "10 × 5 ft (3,000 × 1,500 mm)",
          "10 × 5 ft (3,000 × 1,500 mm)"
@@ -4253,7 +4270,6 @@
         "label": "Laser power",
         "sub": "",
         "cells": [
-         "1.5 – 3 kW",
          "1.5 – 4 kW",
          "1.5 – 12 kW",
          "1.5 – 6 kW"
@@ -4264,7 +4280,6 @@
         "label": "Type",
         "sub": "",
         "cells": [
-         "full cover, 4 × 4 ft, single table",
          "full cover, single table",
          "full cover, pull-out single table",
          "full cover, electric lifting door, integrated source"
@@ -4275,7 +4290,6 @@
         "label": "Max. no-load speed",
         "sub": "",
         "cells": [
-         "262 ft/min (80 m/min)",
          "262 ft/min (80 m/min)",
          "328 ft/min (100 m/min)",
          "328 ft/min (100 m/min)"
@@ -4288,7 +4302,6 @@
         "cells": [
          "1 G",
          "1 G",
-         "1 G",
          "1 G"
         ],
         "key": false
@@ -4299,7 +4312,6 @@
         "cells": [
          "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
          "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
-         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
          "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
         ],
         "key": false
@@ -4308,7 +4320,6 @@
         "label": "Max. table load",
         "sub": "",
         "cells": [
-         "485 lb (220 kg)",
          "1,543 lb (700 kg)",
          "2,425 lb (1,100 kg)",
          "2,425 lb (1,100 kg)"
@@ -4316,10 +4327,59 @@
         "key": false
        },
        {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "5.1″ (130 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "by source power",
+        "cells": [
+         "—",
+         "—",
+         "10,381 lb (4,709 kg) at 3 kW · 11,530 lb (5,230 kg) at 6 kW with fire bricks"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser source · cutting head",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "Maxphotonics · Raytools"
+        ],
+        "key": false
+       },
+       {
+        "label": "CNC",
+        "sub": "",
+        "cells": [
+         "FSCUT2000E",
+         "FSCUT2000",
+         "FSCUT"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply protection",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "IP54"
+        ],
+        "key": false
+       },
+       {
         "label": "Dimensions L × W × H",
         "sub": "",
         "cells": [
-         "118 × 85 × 79″ (3,000 × 2,160 × 2,010 mm)",
          "191 × 159 × 82″ (4,850 × 4,040 × 2,080 mm)",
          "197 × 91 × 81″ (5,000 × 2,310 × 2,060 mm)",
          "194 × 88 × 91″ (4,920 × 2,220 × 2,320 mm)"
@@ -4327,100 +4387,9 @@
         "key": false
        }
       ]
-     },
-     {
-      "title": "High-precision small-part lasers",
-      "sub": "3 models · 24 – 49″ square tables · 1.5 – 3 kW",
-      "models": [
-       "SFP600",
-       "SFP1010",
-       "SFP1250"
-      ],
-      "rows": [
-       {
-        "label": "Working area",
-        "sub": "",
-        "cells": [
-         "23.6 × 23.6″ (600 × 600 mm)",
-         "39.4 × 39.4″ (1,000 × 1,000 mm)",
-         "49.2 × 49.2″ (1,250 × 1,250 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Laser power",
-        "sub": "",
-        "cells": [
-         "1.5 – 3 kW",
-         "1.5 – 3 kW",
-         "1.5 – 3 kW"
-        ],
-        "key": false
-       },
-       {
-        "label": "Z travel",
-        "sub": "",
-        "cells": [
-         "3.9″ (100 mm)",
-         "3.9″ (100 mm)",
-         "3.9″ (100 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Positioning accuracy",
-        "sub": "",
-        "cells": [
-         "±0.0008″ (±0.02 mm)",
-         "±0.0012″ (±0.03 mm)",
-         "±0.0008″ (±0.02 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Repeat accuracy",
-        "sub": "",
-        "cells": [
-         "±0.0002″ (±0.005 mm)",
-         "±0.0002″ (±0.005 mm)",
-         "±0.0002″ (±0.005 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dimensions L × W × H",
-        "sub": "",
-        "cells": [
-         "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)",
-         "94 × 82 × 75″ (2,400 × 2,090 × 1,900 mm)",
-         "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "3,086 lb (1,400 kg)",
-         "6,614 lb (3,000 kg)",
-         "7,716 lb (3,500 kg)"
-        ],
-        "key": false
-       }
-      ]
      }
     ],
     "models": [
-     {
-      "name": "SF1313G",
-      "glance": [
-       "4.3 × 4.3 ft (1,300 × 1,300 mm)",
-       "1.5 – 3 kW",
-       "262 ft/min (80 m/min)",
-       "485 lb (220 kg)",
-       "118 × 85 × 79″ (3,000 × 2,160 × 2,010 mm)"
-      ]
-     },
      {
       "name": "SF1530G",
       "glance": [
@@ -4450,36 +4419,6 @@
        "2,425 lb (1,100 kg)",
        "194 × 88 × 91″ (4,920 × 2,220 × 2,320 mm)"
       ]
-     },
-     {
-      "name": "SFP600",
-      "glance": [
-       "23.6 × 23.6″ (600 × 600 mm)",
-       "1.5 – 3 kW",
-       "",
-       "",
-       "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)"
-      ]
-     },
-     {
-      "name": "SFP1010",
-      "glance": [
-       "39.4 × 39.4″ (1,000 × 1,000 mm)",
-       "1.5 – 3 kW",
-       "",
-       "",
-       "94 × 82 × 75″ (2,400 × 2,090 × 1,900 mm)"
-      ]
-     },
-     {
-      "name": "SFP1250",
-      "glance": [
-       "49.2 × 49.2″ (1,250 × 1,250 mm)",
-       "1.5 – 3 kW",
-       "",
-       "",
-       "71 × 56 × 71″ (1,800 × 1,430 × 1,800 mm)"
-      ]
      }
     ],
     "glance_keys": [
@@ -4492,7 +4431,7 @@
     "caps": {},
     "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
    },
-   "series": "G · N · NP · SFP",
+   "series": "G · N · NP",
    "pdf": {
     "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
     "label": "Download the Senfeng fiber laser brochure",
@@ -9780,6 +9719,171 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "tube-novotech"
+  },
+  "sf-1313g": {
+   "id": "sf-1313g",
+   "group": "laser-senfeng",
+   "brand": "senfeng",
+   "name": "SF1313G compact fiber laser, 4 × 4 ft, 1.5 – 3 kW",
+   "short": "4 × 4 ft SF1313G",
+   "models_label": "SF1313G",
+   "summary": "The smallest Senfeng laser, for the small shop: a fully enclosed single-table machine with a 4 × 4 ft working area and a 1.5 to 3 kW source that cuts small, thin and light parts at high precision. Laser energy is controlled to the sheet thickness, so thin sheet comes out free of overburning and burr, and the compact custom source with anti-back-reflection modules cuts aluminum, stainless, copper and brass with an electro-optical efficiency above 40 %. The sidewise push-pull table saves floor space and makes loading easy, the zoned smoke exhaust follows the cut, and the whole machine — 118 × 85 × 79″ — ships in one 20 ft container without disassembly.",
+   "features": [
+    "1.5 – 3 kW; 4 × 4 ft (1,300 × 1,300 mm) single table; 262 ft/min; 485 lb table load; cuts sheet to 0.787″ (20 mm)",
+    "Fully enclosed with a top cover — no laser radiation outside the machine",
+    "Sidewise push-pull table: small footprint, easy loading and unloading",
+    "Zoned smoke exhaust synchronized with the cut keeps the shop clean",
+    "Compact custom source with anti-back-reflection modules for aluminum, stainless, copper and brass; electro-optical efficiency above 40 %",
+    "FSCUT2000 CNC with a cutting-process database for each thickness and material",
+    "Water chiller, transformer, voltage stabilizer and fan supplied",
+    "CE, FDA and ETL certified and CSA approved; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Dust collector and compressor sized to the machine",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-1313g-2",
+    "sf-1313g-scene",
+    "sf-1313g-front",
+    "sf-1313g-3",
+    "sf-1313g-4",
+    "sf-1313g-head",
+    "sf-1313g-samples",
+    "sf-1313g-table",
+    "sf-1313g-container"
+   ],
+   "videos": [],
+   "pdf": {
+    "file": "files/NovoTech-Senfeng-SF1313G-Fiber-Laser-2026.pdf",
+    "label": "Download the SF1313G brochure",
+    "size": "PDF · 1.3 MB · imperial units"
+   },
+   "pdf_cta": "Download SF1313G brochure",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SF1313G compact sheet laser",
+      "sub": "4 × 4 ft · 1.5 – 3 kW · single table",
+      "models": [
+       "SF1313G"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "4 × 4 ft (1,300 × 1,300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 3 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "X / Y travel",
+        "sub": "",
+        "cells": [
+         "4 × 4 ft"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "4″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "262 ft/min (80 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "485 lb (220 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. cutting thickness",
+        "sub": "",
+        "cells": [
+         "0.787″ (20 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "CNC",
+        "sub": "",
+        "cells": [
+         "FSCUT2000"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "118 × 85 × 79″ (2,985 × 2,160 × 2,000 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF1313G",
+      "glance": [
+       "4 × 4 ft (1,300 × 1,300 mm)",
+       "1.5 – 3 kW",
+       "262 ft/min (80 m/min)",
+       "485 lb (220 kg)",
+       "118 × 85 × 79″ (2,985 × 2,160 × 2,000 mm)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "area",
+     "power",
+     "speed",
+     "load",
+     "dims"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "G"
   }
  }
 }

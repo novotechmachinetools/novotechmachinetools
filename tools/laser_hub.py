@@ -130,7 +130,7 @@ COMPARE = {
         "rows": [
             ["Fiber lasers with shuttle table", "Shuttle table or pallet changer, laser-safe cabin; NP and compact single tables", "4 × 4 to 8.5 × 41 ft, 1.5 – 80 kW", "Production: cuts while you load, two shifts a day", {"href": "fiber-laser-cutting-machine.html", "label": "Fiber laser cutters"}],
             ["Sheet-and-tube lasers", "Table plus a rotary chuck", "to 41 × 8.5 ft sheet, tube to Ø13.8″, 1.5 – 40 kW", "One machine for sheet and tube", {"href": "sheet-and-tube-laser.html", "label": "Sheet & tube lasers"}],
-            ["Large-format plate lasers", "Single table loaded by crane; semi-closed cover on the gantry; bevel heads, oxy-fuel", "to 13 × 82 ft and 10 × 164 ft, 3 – 60 kW", "Heavy plate, shipyards, structural, very long beds", {"href": "large-format-plate-laser.html", "label": "Plate lasers"}],
+            ["Large-format plate lasers", "Single table loaded by crane; semi-closed cover on the gantry; bevel heads, oxy-fuel", "to 13 × 82 ft and 10 × 164 ft, 3 – 60 kW", "Heavy plate, shipyards, structural, very long beds", {"href": "large-format-plate-laser.html", "label": "Large-format lasers"}],
             ["3D laser cells", "Five-axis gantry head or six-axis robot", "5 × 10 ft envelope, 1.5 – 20 kW", "Trimming and cutting formed parts", {"href": "3d-laser-cutting-machine.html", "label": "3D laser cells"}],
             ["Coil-fed laser lines", "Decoiler, leveller and laser on one control", "coil to 9/16″ plate, 3 – 80 kW", "High-volume blanks straight from coil", {"href": "coil-fed-laser-cutting-line.html", "label": "Coil-fed laser lines"}],
         ],
@@ -153,14 +153,14 @@ def build():
         sec = LN.SECTIONS[kind]
         fams = [dict(src[fid], page=slug, group=LN.group_of(kind, fid)) for slug, ids in h["families"] for fid in ids]
         write_families(h["set"], fams)
-        pdfs, seen = [], set()
+        pdfs, specs, seen = [], [], set()      # hero: brochures only (the owner, Nov 1 2026)
         for f in fams:
             for p in (f.get("pdf"), f.get("spec_pdf"), *(f.get("spec_pdfs") or [])):
                 if p and p["file"] not in seen:
-                    seen.add(p["file"]); pdfs.append(p)
+                    seen.add(p["file"]); (pdfs if p is f.get("pdf") else specs).append(p)
         pg = h["page"]
         write_hub(sec["hub"], {**pg, "related_blurb": sec["blurb"]}, fams, h["set"], sec["section"], LN.subpages(kind),
-                  extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": pg["range_pick"], "hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN,
+                  extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "spec_downloads": specs, "range_pick": pg["range_pick"], "hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN,
                          "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                          "related_pages": pg["related_pages"], "related_title": pg["related_title"],
                          "hub_compact": True, "compare": COMPARE[kind], "subpage_link": "all models, specifications and photos",

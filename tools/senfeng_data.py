@@ -86,12 +86,14 @@ def kw(lo, hi=None):
 ACC = "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
 
 # ------------------------------------------------------------------------------------------------ sheet lasers
-# compact: (model, kW lo, kW hi, L in, W in, speed ft/min, G, load lb, dims in (l,w,h), notes)
-COMPACT = [("SF1313G", 1.5, 3, 51.2, 51.2, 262, 1, 485, (118, 85, 79), "full cover, 4 × 4 ft, single table"),
-           ("SF1530G", 1.5, 4, 120, 60, 262, 1, 1543, (191, 159, 82), "full cover, single table"),
+# compact 5 × 10 ft single-table lasers G, N and NP: (model, kW lo, kW hi, L in, W in, speed ft/min, G, load lb, dims in (l,w,h), notes)
+# — SF1530N and SF1530NP checked on senfenglaserusa.com (November 2026); the NP's Z travel, weight, protection, source, head and CNC
+# from its 3 – 6 kW technical solution (the owner, Nov 1 2026).  The SF1313G has its own item below; the SFP precision lasers
+# are no longer offered (the owner, Nov 1 2026).
+COMPACT = [("SF1530G", 1.5, 4, 120, 60, 262, 1, 1543, (191, 159, 82), "full cover, single table"),
            ("SF1530N", 1.5, 12, 120, 60, 328, 1, 2425, (197, 91, 81), "full cover, pull-out single table"),
            ("SF1530NP", 1.5, 6, 119.2, 59.4, 328, 1, 2425, (193.7, 87.5, 91.2), "full cover, electric lifting door, integrated source")]
-T_COMPACT = table("Compact single-table sheet lasers", "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW", [r[0] for r in COMPACT], [
+T_COMPACT = table("Compact single-table sheet lasers G · N · NP", "3 models · 5 × 10 ft · 1.5 – 12 kW", [r[0] for r in COMPACT], [
     ("Working area", [area_in(r[3], r[4], r[0]) for r in COMPACT]),
     ("Laser power", [kw(r[1], r[2]) for r in COMPACT]),
     ("Type", [r[9] for r in COMPACT]),
@@ -99,16 +101,25 @@ T_COMPACT = table("Compact single-table sheet lasers", "4 models · 4 × 4 and 5
     ("Max. acceleration", [f"{r[6]:g} G" for r in COMPACT]),
     ("Positioning accuracy", [ACC] * len(COMPACT)),
     ("Max. table load", [lb(r[7]) for r in COMPACT]),
+    ("Z travel", ["—", "—", "5.1″ (130 mm)"]),
+    ("Machine weight", "by source power", ["—", "—", "10,381 lb (4,709 kg) at 3 kW · 11,530 lb (5,230 kg) at 6 kW with fire bricks"]),
+    ("Laser source · cutting head", ["—", "—", "Maxphotonics · Raytools"]),
+    ("CNC", ["FSCUT2000E", "FSCUT2000", "FSCUT"]),
+    ("Power supply protection", ["—", "—", "IP54"]),
     ("Dimensions L × W × H", [dims_in(*r[8]) for r in COMPACT])])
-SFP = [("SFP600", 23.62, 1.4, (70.87, 56.3, 70.87)), ("SFP1010", 39.37, 3.0, (94.49, 82.28, 74.8)), ("SFP1250", 49.21, 3.5, (70.87, 56.3, 70.87))]
-T_SFP = table("High-precision small-part lasers", "3 models · 24 – 49″ square tables · 1.5 – 3 kW", [r[0] for r in SFP], [
-    ("Working area", [f"{r[1]:.1f} × {r[1]:.1f}″ ({round(r[1] * 25.4):,} × {round(r[1] * 25.4):,} mm)" for r in SFP]),
-    ("Laser power", ["1.5 – 3 kW"] * 3),
-    ("Z travel", ["3.9″ (100 mm)"] * 3),
-    ("Positioning accuracy", ["±0.0008″ (±0.02 mm)", "±0.0012″ (±0.03 mm)", "±0.0008″ (±0.02 mm)"]),
-    ("Repeat accuracy", ["±0.0002″ (±0.005 mm)"] * 3),
-    ("Dimensions L × W × H", [dims_in(*r[3]) for r in SFP]),
-    ("Weight", [weight(round(r[2] * 1000)) for r in SFP])])
+# SF1313G 4 × 4 ft — its senfenglaserusa.com page and catalogue (the owner, Nov 1 2026)
+T_1313G = table("SF1313G compact sheet laser", "4 × 4 ft · 1.5 – 3 kW · single table", ["SF1313G"], [
+    ("Working area", ["4 × 4 ft (1,300 × 1,300 mm)"]),
+    ("Laser power", ["1.5 – 3 kW"]),
+    ("X / Y travel", ["4 × 4 ft"]),
+    ("Z travel", ["4″ (100 mm)"]),
+    ("Max. no-load speed", [ftmin(262)]),
+    ("Max. acceleration", ["1 G"]),
+    ("Positioning accuracy", [ACC]),
+    ("Max. table load", ["485 lb (220 kg)"]),
+    ("Max. cutting thickness", ["0.787″ (20 mm)"]),
+    ("CNC", ["FSCUT2000"]),
+    ("Dimensions L × W × H", ["118 × 85 × 79″ (2,985 × 2,160 × 2,000 mm)"])])
 
 NP = [("SF3015NP", 120.1, 60.2, 2425, (177.2, 114.2, 82.7)), ("SF4015NP", 159.4, 60.2, 3086, (216.5, 114.2, 82.7)), ("SF4020NP", 159.4, 80, 4189, (216.5, 133.9, 74.8)),
       ("SF6015NP", 238.2, 60.2, 4630, (318.9, 114.2, 74.8)), ("SF6020NP", 238.2, 80, 6173, (318.9, 133.9, 74.8))]
@@ -338,19 +349,32 @@ TB_OPT = ["Automatic bundle loader and unloading conveyor", "45° bevel head (GP
 # ------------------------------------------------------------------------------------------------ families
 LASER_FAMILIES = [
     dict(id="sf-compact", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="Compact single-table sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
-         short="Compact sheet lasers",
-         models_label="SF1313G · SF1530G · SF1530N · SF1530NP · SFP600 – 1250",
-         summary="The entry into fiber laser cutting: single-table machines with a full cover that ship in one container, plug in and cut the day they "
-                 "arrive. The SF1313G is a 4 × 4 ft machine for small parts; the SF1530G, SF1530N and the SF1530NP with its "
-                 "electric lifting door take a 5 × 10 ft sheet with 1.5 to 12 kW sources — enough for 3/4″ mild steel at 6 kW. The pull-out "
-                 "table loads from the front with a forklift; the integrated source and cabinet keep the footprint under 200 × 90″. For "
-                 "jewellery, electronics and precision small parts the SFP series adds 24 to 49″ square tables with ±0.005 mm repeatability.",
-         features=["1.5 – 12 kW; 4 × 4 or 5 × 10 ft single table; 262 – 328 ft/min; 1,100 kg table load"] + LZ_STD,
+         name="Compact single-table sheet lasers G, N and NP, 5 × 10 ft, 1.5 – 12 kW",
+         short="Compact 5 × 10 ft lasers",
+         models_label="SF1530G · SF1530N · SF1530NP",
+         summary="The entry into production laser cutting: fully enclosed 5 × 10 ft single-table machines that ship in one 20 ft container "
+                 "without disassembly, plug in and cut the day they arrive. The SF1530G takes 1.5 to 4 kW, the SF1530N with its pull-out "
+                 "platform 1.5 to 12 kW — enough for 3/4″ mild steel at 6 kW — and the new-generation SF1530NP 1.5 to 6 kW, with the source "
+                 "and a thermostatic electrical cabinet built in, an electric lifting door, integrated leg supports and a pick-up trolley "
+                 "with an inner hopper. Smoke-free extraction through a double air duct with three zones and follow-up air valves, an "
+                 "anti-burning platform, safety light curtains at the front and rear of the beam and smart cameras with a safety-lock "
+                 "alarm; 328 ft/min, 1 G and 2,425 lb on the table (N and NP).",
+         features=["1.5 – 12 kW; 5 × 10 ft single table; 262 – 328 ft/min, 1 G; 1,543 – 2,425 lb table load",
+                   "SF1530NP: electric lifting door with CE protective acrylic laser shields and safety locks on both sides; source and "
+                   "thermostatic electrical cabinet built in",
+                   "Pull-out platform (N) or push-pull platform with integrated leg supports and a pick-up trolley with an inner hopper (NP)",
+                   "Smoke-free extraction: double air duct, three zones and follow-up air valves; anti-burning platform protects the dust cover",
+                   "Safety light curtains at the front and rear of the beam; smart cameras with a safety-lock alarm"] + LZ_STD,
          optional=LZ_OPT,
-         images=["sf-1530np", "sf-1530n", "sf-1530g", "sf-1313g", "sf-1530n-table", "sf-1530np-2", "sf-1530np-head", "sf-sfp"],
+         images=["sf-1530np", "sf-1530np-showroom", "sf-1530n", "sf-1530g", "sf-1530np-side", "sf-1530n-rear", "sf-1530g-table", "sf-1530n-table",
+                 "sf-1530np-2", "sf-1530np-trolley", "sf-1530np-head", "sf-1530np-safety", "sf-1530-antiburn", "sf-1530-dust",
+                 "sf-1530np-cabinet", "sf-1530np-container"],
          videos=[],
-         specs=spec([T_COMPACT, T_SFP], LZ_GK, LZ_G_FROM, POWER_NOTE)),
+         # the SF1530NP 3 – 6 kW technical solution in NovoTech format (tools/brochure/senfeng_h_editions.py) — the owner, Nov 1 2026
+         spec_pdf=dict(file="files/NovoTech-Senfeng-SF1530NP-Fiber-Laser-Technical-Specification-2026.pdf",
+                       label="Download the SF1530NP full technical specification (3 – 6 kW)", size="PDF · 2.3 MB · imperial units",
+                       cta="Download full technical specification"),
+         specs=spec([T_COMPACT], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-np", group="laser-senfeng", page=P_LASER, brand=BRAND,
          name="NP single-table sheet lasers with gantry cover, 5 × 10 to 6.6 × 20 ft, 3 – 12 kW",
          short="NP lasers with gantry cover",
@@ -365,6 +389,32 @@ LASER_FAMILIES = [
          images=["sf-np-1", "sf-np-2", "sf-np-3", "sf-np-4"],
          videos=[],
          specs=spec([T_NP], LZ_GK, LZ_G_FROM, POWER_NOTE)),
+    dict(id="sf-1313g", group="laser-senfeng", page=P_LASER, brand=BRAND,
+         name="SF1313G compact fiber laser, 4 × 4 ft, 1.5 – 3 kW",
+         short="4 × 4 ft SF1313G",
+         models_label="SF1313G",
+         summary="The smallest Senfeng laser, for the small shop: a fully enclosed single-table machine with a 4 × 4 ft working area and a "
+                 "1.5 to 3 kW source that cuts small, thin and light parts at high precision. Laser energy is controlled to the sheet "
+                 "thickness, so thin sheet comes out free of overburning and burr, and the compact custom source with anti-back-reflection "
+                 "modules cuts aluminum, stainless, copper and brass with an electro-optical efficiency above 40 %. The sidewise push-pull "
+                 "table saves floor space and makes loading easy, the zoned smoke exhaust follows the cut, and the whole machine — "
+                 "118 × 85 × 79″ — ships in one 20 ft container without disassembly.",
+         features=["1.5 – 3 kW; 4 × 4 ft (1,300 × 1,300 mm) single table; 262 ft/min; 485 lb table load; cuts sheet to 0.787″ (20 mm)",
+                   "Fully enclosed with a top cover — no laser radiation outside the machine",
+                   "Sidewise push-pull table: small footprint, easy loading and unloading",
+                   "Zoned smoke exhaust synchronized with the cut keeps the shop clean",
+                   "Compact custom source with anti-back-reflection modules for aluminum, stainless, copper and brass; electro-optical efficiency above 40 %",
+                   "FSCUT2000 CNC with a cutting-process database for each thickness and material",
+                   "Water chiller, transformer, voltage stabilizer and fan supplied",
+                   CERT + "; " + VOLT],
+         optional=["Dust collector and compressor sized to the machine", "Custom voltage transformer"],
+         images=["sf-1313g-2", "sf-1313g-scene", "sf-1313g-front", "sf-1313g-3", "sf-1313g-4", "sf-1313g-head", "sf-1313g-samples",
+                 "sf-1313g-table", "sf-1313g-container"],
+         videos=[],
+         # Senfeng's SF1313G catalogue in NovoTech format (tools/brochure/senfeng_h_editions.py) — the owner, Nov 1 2026
+         pdf=dict(file="files/NovoTech-Senfeng-SF1313G-Fiber-Laser-2026.pdf", label="Download the SF1313G brochure", size="PDF · 1.3 MB · imperial units"),
+         pdf_cta="Download SF1313G brochure",
+         specs=spec([T_1313G], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-h", group="laser-senfeng", page=P_LASER, brand=BRAND,
          name="H series sheet lasers with pallet changer, 5 × 10 to 8.3 × 40 ft, 1.5 – 80 kW",
          short="H series production lasers",
@@ -553,7 +603,7 @@ WELD_FAMILIES = [
 
 ALL = LASER_FAMILIES + TUBE_FAMILIES + PANEL_FAMILIES + WELD_FAMILIES
 
-SERIES = {"sf-compact": "G · N · NP · SFP", "sf-np": "NP", "sf-h": "H", "sf-hm": "HM", "sf-r": "R · TX · TXP", "sf-3d": "TD · RC", "sf-coil": "C · CH",
+SERIES = {"sf-compact": "G · N · NP", "sf-1313g": "G", "sf-np": "NP", "sf-h": "H", "sf-hm": "HM", "sf-r": "R · TX · TXP", "sf-3d": "TD · RC", "sf-coil": "C · CH",
           "sf-t": "T", "sf-plus": "PLUS · GT", "sf-heavy": "NT · ST · HT · CH", "sf-bdc": "BDC", "sf-handheld": "S · HWM", "sf-robot-weld": "RW · RMW · CMW", "sf-cladding": "SFR · SFHS · SFMR"}
 for _f in ALL:
     _f["series"] = SERIES[_f["id"]]

@@ -56945,25 +56945,6 @@
    "bytes": 2520
   }
  },
- "sf-sfp": {
-  "alt": "Senfeng SFP600 high-precision fiber laser for small parts \u2014 24 \u00d7 24\u2033 table",
-  "variants": [
-   {
-    "w": 480,
-    "h": 505,
-    "file": "img/senfeng/sf-sfp-480.webp",
-    "bytes": 18436
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 152,
-   "h": 160,
-   "file": "img/senfeng/sf-sfp-thumb.webp",
-   "bytes": 4698
-  },
-  "cut": "birefnet"
- },
  "sf-hm-1": {
   "alt": "Senfeng SF3015HM sheet and tube fiber laser \u2014 5 \u00d7 10 ft table plus \u00d88.6\u2033 \u00d7 20 ft tube attachment",
   "variants": [
@@ -112257,6 +112238,595 @@
    "h": 61,
    "file": "img/senfeng/sf-h-swingarm-thumb.webp",
    "bytes": 1846
+  }
+ },
+ "pdf-novotech-senfeng-sf1530np-fiber-laser-technical-specification-2026": {
+  "alt": "Cover of the Senfeng SF1530NP compact fiber laser, 3 \u2013 6 kW \u2014 full technical specification PDF",
+  "variants": [
+   {
+    "w": 640,
+    "h": 818,
+    "file": "img/site/pdf-novotech-senfeng-sf1530np-fiber-laser-technical-specification-2026-640.webp",
+    "bytes": 31122
+   },
+   {
+    "w": 480,
+    "h": 614,
+    "file": "img/site/pdf-novotech-senfeng-sf1530np-fiber-laser-technical-specification-2026-480.webp",
+    "bytes": 21534
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 125,
+   "h": 160,
+   "file": "img/site/pdf-novotech-senfeng-sf1530np-fiber-laser-technical-specification-2026-thumb.webp",
+   "bytes": 3572
+  }
+ },
+ "pdf-novotech-senfeng-sf1313g-fiber-laser-2026": {
+  "alt": "Cover of the Senfeng SF1313G compact fiber laser, 4 \u00d7 4 ft, 1.5 \u2013 3 kW PDF",
+  "variants": [
+   {
+    "w": 640,
+    "h": 818,
+    "file": "img/site/pdf-novotech-senfeng-sf1313g-fiber-laser-2026-640.webp",
+    "bytes": 45890
+   },
+   {
+    "w": 480,
+    "h": 614,
+    "file": "img/site/pdf-novotech-senfeng-sf1313g-fiber-laser-2026-480.webp",
+    "bytes": 31226
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 125,
+   "h": 160,
+   "file": "img/site/pdf-novotech-senfeng-sf1313g-fiber-laser-2026-thumb.webp",
+   "bytes": 4492
+  }
+ },
+ "sf-1530np-showroom": {
+  "alt": "SF1530NP in Senfeng's showroom \u2014 CE and FDA certified",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 424,
+    "file": "img/senfeng/sf-1530np-showroom-1200.webp",
+    "bytes": 33248
+   },
+   {
+    "w": 800,
+    "h": 282,
+    "file": "img/senfeng/sf-1530np-showroom-800.webp",
+    "bytes": 20652
+   },
+   {
+    "w": 480,
+    "h": 169,
+    "file": "img/senfeng/sf-1530np-showroom-480.webp",
+    "bytes": 10558
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 56,
+   "file": "img/senfeng/sf-1530np-showroom-thumb.webp",
+   "bytes": 1968
+  }
+ },
+ "sf-1530np-side": {
+  "alt": "SF1530NP \u2014 fully enclosed cabin with the integrated source and control cabinet",
+  "variants": [
+   {
+    "w": 1177,
+    "h": 706,
+    "file": "img/senfeng/sf-1530np-side-1177.webp",
+    "bytes": 40310
+   },
+   {
+    "w": 800,
+    "h": 480,
+    "file": "img/senfeng/sf-1530np-side-800.webp",
+    "bytes": 27654
+   },
+   {
+    "w": 480,
+    "h": 288,
+    "file": "img/senfeng/sf-1530np-side-480.webp",
+    "bytes": 15302
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 96,
+   "file": "img/senfeng/sf-1530np-side-thumb.webp",
+   "bytes": 4088
+  },
+  "cut": "birefnet"
+ },
+ "sf-1530n-rear": {
+  "alt": "SF1530N \u2014 full cover with the pull-out platform rails",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 605,
+    "file": "img/senfeng/sf-1530n-rear-1200.webp",
+    "bytes": 44000
+   },
+   {
+    "w": 800,
+    "h": 403,
+    "file": "img/senfeng/sf-1530n-rear-800.webp",
+    "bytes": 27560
+   },
+   {
+    "w": 480,
+    "h": 242,
+    "file": "img/senfeng/sf-1530n-rear-480.webp",
+    "bytes": 14662
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 81,
+   "file": "img/senfeng/sf-1530n-rear-thumb.webp",
+   "bytes": 3874
+  },
+  "cut": "birefnet"
+ },
+ "sf-1530g-table": {
+  "alt": "SF1530G with the single table pulled out for loading",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 676,
+    "file": "img/senfeng/sf-1530g-table-1200.webp",
+    "bytes": 57116
+   },
+   {
+    "w": 800,
+    "h": 451,
+    "file": "img/senfeng/sf-1530g-table-800.webp",
+    "bytes": 36252
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/senfeng/sf-1530g-table-480.webp",
+    "bytes": 19952
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/senfeng/sf-1530g-table-thumb.webp",
+   "bytes": 5212
+  },
+  "cut": "birefnet"
+ },
+ "sf-1530np-trolley": {
+  "alt": "SF1530NP \u2014 pick-up trolley with an inner hopper and the integrated leg supports",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 402,
+    "file": "img/senfeng/sf-1530np-trolley-1200.webp",
+    "bytes": 16320
+   },
+   {
+    "w": 800,
+    "h": 268,
+    "file": "img/senfeng/sf-1530np-trolley-800.webp",
+    "bytes": 10198
+   },
+   {
+    "w": 480,
+    "h": 161,
+    "file": "img/senfeng/sf-1530np-trolley-480.webp",
+    "bytes": 5210
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 54,
+   "file": "img/senfeng/sf-1530np-trolley-thumb.webp",
+   "bytes": 1144
+  }
+ },
+ "sf-1530np-safety": {
+  "alt": "Safety light curtains at the front and rear of the beam and a smart camera with safety-lock alarm",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 400,
+    "file": "img/senfeng/sf-1530np-safety-1200.webp",
+    "bytes": 21192
+   },
+   {
+    "w": 800,
+    "h": 267,
+    "file": "img/senfeng/sf-1530np-safety-800.webp",
+    "bytes": 13052
+   },
+   {
+    "w": 480,
+    "h": 160,
+    "file": "img/senfeng/sf-1530np-safety-480.webp",
+    "bytes": 6906
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 53,
+   "file": "img/senfeng/sf-1530np-safety-thumb.webp",
+   "bytes": 1492
+  }
+ },
+ "sf-1530-antiburn": {
+  "alt": "Anti-burning platform \u2014 side guards keep the sparks off the dust cover",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 424,
+    "file": "img/senfeng/sf-1530-antiburn-1200.webp",
+    "bytes": 31804
+   },
+   {
+    "w": 800,
+    "h": 282,
+    "file": "img/senfeng/sf-1530-antiburn-800.webp",
+    "bytes": 20058
+   },
+   {
+    "w": 480,
+    "h": 169,
+    "file": "img/senfeng/sf-1530-antiburn-480.webp",
+    "bytes": 10350
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 56,
+   "file": "img/senfeng/sf-1530-antiburn-thumb.webp",
+   "bytes": 1716
+  }
+ },
+ "sf-1530-dust": {
+  "alt": "Smoke-free extraction \u2014 double air duct, three zones and follow-up air valves",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 565,
+    "file": "img/senfeng/sf-1530-dust-1200.webp",
+    "bytes": 9394
+   },
+   {
+    "w": 800,
+    "h": 377,
+    "file": "img/senfeng/sf-1530-dust-800.webp",
+    "bytes": 5972
+   },
+   {
+    "w": 480,
+    "h": 226,
+    "file": "img/senfeng/sf-1530-dust-480.webp",
+    "bytes": 3494
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 75,
+   "file": "img/senfeng/sf-1530-dust-thumb.webp",
+   "bytes": 974
+  }
+ },
+ "sf-1530np-cabinet": {
+  "alt": "SF1530NP thermostatic electrical cabinet \u2014 no air-conditioned room needed",
+  "variants": [
+   {
+    "w": 800,
+    "h": 406,
+    "file": "img/senfeng/sf-1530np-cabinet-800.webp",
+    "bytes": 16398
+   },
+   {
+    "w": 480,
+    "h": 244,
+    "file": "img/senfeng/sf-1530np-cabinet-480.webp",
+    "bytes": 8986
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 81,
+   "file": "img/senfeng/sf-1530np-cabinet-thumb.webp",
+   "bytes": 2120
+  }
+ },
+ "sf-1530np-container": {
+  "alt": "SF1530NP fits one 20 ft container without disassembly",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 470,
+    "file": "img/senfeng/sf-1530np-container-1200.webp",
+    "bytes": 15560
+   },
+   {
+    "w": 800,
+    "h": 314,
+    "file": "img/senfeng/sf-1530np-container-800.webp",
+    "bytes": 10066
+   },
+   {
+    "w": 480,
+    "h": 188,
+    "file": "img/senfeng/sf-1530np-container-480.webp",
+    "bytes": 5838
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 63,
+   "file": "img/senfeng/sf-1530np-container-thumb.webp",
+   "bytes": 1238
+  }
+ },
+ "sf-1313g-scene": {
+  "alt": "Senfeng SF1313G in a workshop \u2014 4 \u00d7 4 ft, fully enclosed, 1.5 \u2013 3 kW",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1131,
+    "file": "img/senfeng/sf-1313g-scene-800.webp",
+    "bytes": 147306
+   },
+   {
+    "w": 480,
+    "h": 678,
+    "file": "img/senfeng/sf-1313g-scene-480.webp",
+    "bytes": 73324
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 113,
+   "h": 160,
+   "file": "img/senfeng/sf-1313g-scene-thumb.webp",
+   "bytes": 7804
+  }
+ },
+ "sf-1313g-2": {
+  "alt": "SF1313G \u2014 top cover, lifting door and the console on its arm",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 878,
+    "file": "img/senfeng/sf-1313g-2-1200.webp",
+    "bytes": 48862
+   },
+   {
+    "w": 800,
+    "h": 585,
+    "file": "img/senfeng/sf-1313g-2-800.webp",
+    "bytes": 32150
+   },
+   {
+    "w": 480,
+    "h": 351,
+    "file": "img/senfeng/sf-1313g-2-480.webp",
+    "bytes": 18398
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 117,
+   "file": "img/senfeng/sf-1313g-2-thumb.webp",
+   "bytes": 4900
+  },
+  "cut": "birefnet"
+ },
+ "sf-1313g-front": {
+  "alt": "SF1313G from the front",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 817,
+    "file": "img/senfeng/sf-1313g-front-1200.webp",
+    "bytes": 41150
+   },
+   {
+    "w": 800,
+    "h": 544,
+    "file": "img/senfeng/sf-1313g-front-800.webp",
+    "bytes": 26654
+   },
+   {
+    "w": 480,
+    "h": 327,
+    "file": "img/senfeng/sf-1313g-front-480.webp",
+    "bytes": 14742
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 109,
+   "file": "img/senfeng/sf-1313g-front-thumb.webp",
+   "bytes": 4040
+  },
+  "cut": "birefnet"
+ },
+ "sf-1313g-3": {
+  "alt": "SF1313G from the side \u2014 compact single-table body",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 722,
+    "file": "img/senfeng/sf-1313g-3-1200.webp",
+    "bytes": 38434
+   },
+   {
+    "w": 800,
+    "h": 481,
+    "file": "img/senfeng/sf-1313g-3-800.webp",
+    "bytes": 25374
+   },
+   {
+    "w": 480,
+    "h": 289,
+    "file": "img/senfeng/sf-1313g-3-480.webp",
+    "bytes": 14054
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 96,
+   "file": "img/senfeng/sf-1313g-3-thumb.webp",
+   "bytes": 3794
+  },
+  "cut": "birefnet"
+ },
+ "sf-1313g-4": {
+  "alt": "SF1313G from the rear \u2014 extraction fan and service doors",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 690,
+    "file": "img/senfeng/sf-1313g-4-1200.webp",
+    "bytes": 38178
+   },
+   {
+    "w": 800,
+    "h": 460,
+    "file": "img/senfeng/sf-1313g-4-800.webp",
+    "bytes": 25474
+   },
+   {
+    "w": 480,
+    "h": 276,
+    "file": "img/senfeng/sf-1313g-4-480.webp",
+    "bytes": 14602
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 92,
+   "file": "img/senfeng/sf-1313g-4-thumb.webp",
+   "bytes": 4092
+  },
+  "cut": "birefnet"
+ },
+ "sf-1313g-head": {
+  "alt": "Cutting thin sheet \u2014 laser energy matched to the thickness, no overburning or burr",
+  "variants": [
+   {
+    "w": 800,
+    "h": 536,
+    "file": "img/senfeng/sf-1313g-head-800.webp",
+    "bytes": 24514
+   },
+   {
+    "w": 480,
+    "h": 322,
+    "file": "img/senfeng/sf-1313g-head-480.webp",
+    "bytes": 14172
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/senfeng/sf-1313g-head-thumb.webp",
+   "bytes": 3160
+  }
+ },
+ "sf-1313g-samples": {
+  "alt": "Aluminum, brass and steel cut on the SF1313G \u2014 anti-back-reflection source",
+  "variants": [
+   {
+    "w": 764,
+    "h": 744,
+    "file": "img/senfeng/sf-1313g-samples-764.webp",
+    "bytes": 33278
+   },
+   {
+    "w": 480,
+    "h": 467,
+    "file": "img/senfeng/sf-1313g-samples-480.webp",
+    "bytes": 20556
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 156,
+   "file": "img/senfeng/sf-1313g-samples-thumb.webp",
+   "bytes": 5080
+  }
+ },
+ "sf-1313g-table": {
+  "alt": "Sidewise push-pull table with zoned smoke exhaust",
+  "variants": [
+   {
+    "w": 800,
+    "h": 507,
+    "file": "img/senfeng/sf-1313g-table-800.webp",
+    "bytes": 43866
+   },
+   {
+    "w": 480,
+    "h": 304,
+    "file": "img/senfeng/sf-1313g-table-480.webp",
+    "bytes": 24022
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 101,
+   "file": "img/senfeng/sf-1313g-table-thumb.webp",
+   "bytes": 5956
+  }
+ },
+ "sf-1313g-container": {
+  "alt": "SF1313G ships in one 20 ft container",
+  "variants": [
+   {
+    "w": 800,
+    "h": 224,
+    "file": "img/senfeng/sf-1313g-container-800.webp",
+    "bytes": 23744
+   },
+   {
+    "w": 480,
+    "h": 135,
+    "file": "img/senfeng/sf-1313g-container-480.webp",
+    "bytes": 13008
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 45,
+   "file": "img/senfeng/sf-1313g-container-thumb.webp",
+   "bytes": 3184
   }
  }
 }

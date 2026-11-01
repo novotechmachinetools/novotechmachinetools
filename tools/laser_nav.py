@@ -16,7 +16,8 @@ PAGES = {
     # No fully open machines: the Smart open-type, ULF and ULFT are gone; the NP has a cover on its gantry.
     "sheet": {
         "fiber-laser-cutting-machine": [("dn-gfl", "ls-premium-gfl"), ("dn-smart-closed", "ls-premium-closed"),
-                                        ("vn-ule", "ls-value-ule"), ("sf-h", "ls-value-h"), ("sf-np", "ls-value-np"), ("sf-compact", "ls-value-compact")],
+                                        ("vn-ule", "ls-value-ule"), ("sf-h", "ls-value-h"), ("sf-compact", "ls-value-compact"), ("sf-np", "ls-value-np"),
+                                        ("sf-1313g", "ls-value-1313g")],     # compact G / N / NP above the NP, SF1313G last (the owner, Nov 1 2026)
         "sheet-and-tube-laser": [("vn-ulet", "ls-value-ulet"), ("sf-hm", "ls-value-hm")],
         "large-format-plate-laser": [("dn-smart-semi", "ls-premium-semi"), ("vn-ulg", "ls-value-ulg"), ("sf-r", "ls-value-r")],
         "3d-laser-cutting-machine": [("sf-3d", "ls-value-3d")],
@@ -42,7 +43,7 @@ SECTIONS = {
              "Sheet & tube lasers", ""),
             ("large-format-plate-laser", "Large-format plate lasers — semi-closed, ground-rail and gantry machines to 13 × 82 ft and 10 × 164 ft, 3 to 60 kW", "vn-ulg-1",
              "For long and heavy plate: the premium Smart semi-closed single tables to 13 × 82 ft, ground-rail lasers with 42.7 or 85.3 ft beds and gantry plate lasers to 10 × 164 ft with ±45° bevel heads, 3 to 60 kW.",
-             "Plate lasers", ""),
+             "Large-format lasers", ""),      # was "Plate lasers" (the owner, Nov 1 2026)
             ("3d-laser-cutting-machine", "3D laser cutting machines — five-axis gantry lasers and robot laser cells, 1.5 to 20 kW", "sf-3d-1",
              "For formed parts: the five-axis SF3015TD gantry laser and RC robot cells trim and cut stamped, drawn and bent parts after forming, 1.5 to 20 kW — the value line.",
              "3D laser cells", ""),

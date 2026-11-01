@@ -57,14 +57,15 @@ SHEET = {
               "Canada. For long and heavy plate see the large-format plate lasers.",
         points=["Premium: GFL 1.5 G with shuttle table, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with shuttle table, six sizes to 8.5 × 41 ft",
                 "Value: ULE with 15 s shuttle table 10 × 5 to 41 × 8.5 ft, 3 – 40 kW; Senfeng H series with pallet changer to 8.3 × 40 ft and 80 kW",
-                "Senfeng NP single tables with a gantry cover, 5 × 10 to 6.6 × 20 ft, and compact 4 × 4 and 5 × 10 ft lasers from 1.5 kW; towers and storage"],
+                "Senfeng compact G, N and NP 5 × 10 ft lasers from 1.5 kW, NP single tables with a gantry cover to 6.6 × 20 ft, and the 4 × 4 ft SF1313G; towers and storage"],
         hero="dn-gfl-1", minis=["vn-ule-1", "sf-h-1"],
         groups=[("ls-premium-gfl", "GFL production fiber lasers · premium line", "Dener's premium sheet laser: 1.5 G, shuttle table, 3 – 40 kW — built for a job shop that cuts all day."),
                 ("ls-premium-closed", "Smart fiber lasers with shuttle table · premium line", "The economy line from the same Turkish factory: a shuttle table and 1 G in six sizes to 8.5 × 41 ft."),
                 ("ls-value-ule", "ULE fiber lasers with shuttle table · value line", "NovoTech's own laser with a 15-second shuttle table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW."),
                 ("ls-value-h", "H series lasers with pallet changer · value line", "The widest range: 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, with towers and storage."),
+                ("ls-value-compact", "Compact single-table lasers G, N and NP · value line", "Fully enclosed 5 × 10 ft single tables from 1.5 kW — the laser for the small shop."),
                 ("ls-value-np", "NP lasers with gantry cover · value line", "Single tables 5 × 10 to 6.6 × 20 ft, 3 to 12 kW: the cover travels with the gantry, the table stays open for loading."),
-                ("ls-value-compact", "Compact single-table lasers · value line", "4 × 4 and 5 × 10 ft machines from 1.5 kW — the laser for the small shop.")],
+                ("ls-value-1313g", "SF1313G 4 × 4 ft compact laser · value line", "The smallest enclosed laser, 1.5 to 3 kW, for small, thin parts.")],
         faq=[{"q": "Shuttle table or pallet changer — what is the difference?",
               "a": "Both load the next sheet while the first is cut. A shuttle table (GFL, Smart, ULE, compact) has two tables that swap places in 15 – 30 seconds, one in the cabin cutting and one outside being loaded. A pallet changer (Senfeng H series) lifts the pallet with the cut sheet out of the cabin and slides the loaded pallet in, which is the arrangement a loading tower and sheet storage connect to for lights-out production. For a few sheets an hour the shuttle table is enough; for automation, the pallet changer. Some makers call the shuttle table an exchange table, a double table or a dual table — it is the same thing."},
              {"q": "Premium line or value line?",
@@ -89,7 +90,7 @@ SHEET = {
         points=["ULET: sheet 10 × 5 to 41 × 8.5 ft on a shuttle table plus tube to Ø13.8″ and 39 ft, 1.5 – 40 kW",
                 "HM series: sheet 5 × 10 to 8.3 × 20 ft on a pallet changer plus Ø8.6″ × 20 ft tube, from 6 kW",
                 "One head, one source, one footprint — tube supports and chuck fold away when cutting sheet"],
-        hero="vn-ulet-1", minis=["sf-hm-1", "vn-ulet-tube-head"],
+        hero="sf-hm-1", minis=["vn-ulet-1", "vn-ulet-tube-head"],      # Senfeng large, the ULET small (the owner, Nov 1 2026)
         groups=[("ls-value-ulet", "ULET sheet-and-tube lasers with shuttle table · value line", "The ULE with shuttle table and a tube chuck — sheet to 41 × 8.5 ft and tube to Ø13.8″."),
                 ("ls-value-hm", "HM sheet and tube combination lasers · value line", "5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, from 6 kW.")],
         faq=[faq("novotech-fiber-lasers", "Sheet and tube on one machine")[0],
@@ -229,7 +230,7 @@ TUBE = {
              faq("tube-laser-cutting-machine", "Floor space and power?")[0],
              VOLT_FAQ_GENERIC],
         related=[{"href": "tube-laser-cutter.html", "label": "Tube laser cutters"}, {"href": "band-saw.html", "label": "Band saws"},
-                 {"href": "plate-beveler.html", "label": "Plate bevelers"}, {"href": "large-format-plate-laser.html", "label": "Plate lasers"}],
+                 {"href": "plate-beveler.html", "label": "Plate bevelers"}, {"href": "large-format-plate-laser.html", "label": "Large-format lasers"}],
     ),
 }
 
@@ -244,11 +245,11 @@ def build():
         fams = {fid: dict(fs["families"][fid], id=fid) for fid in fs["order"]}
         for slug, page in pages.items():
             members = [dict(fams[fid], group=g) for fid, g in LN.PAGES[kind][slug]]
-            pdfs, seen = [], set()
+            pdfs, specs, seen = [], [], set()      # hero: brochures only (the owner, Nov 1 2026); specifications on the products' buttons
             for f in members:
                 for pd in (f.get("pdf"), f.get("spec_pdf"), *(f.get("spec_pdfs") or [])):
                     if pd and pd["file"] not in seen:
-                        seen.add(pd["file"]); pdfs.append(pd)
+                        seen.add(pd["file"]); (pdfs if pd is f.get("pdf") else specs).append(pd)
             n = sum(len(f["specs"]["models"]) for f in members)
             for key in [page["hero"]] + page["minis"]:
                 if key not in manifest:
@@ -273,7 +274,7 @@ def build():
             write_category(slug, p, members, set_name, LN.SECTIONS[kind]["section"], hub=LN.hub(kind), siblings=LN.siblings(kind),
                            extra={"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **video,
                                   "nav_label": next(nav for s, _, _, _, nav, _ in LN.SECTIONS[kind]["subpages"] if s == slug),
-                                  "catalogue_pdf": None, "catalogue_pdfs": pdfs})
+                                  "catalogue_pdf": None, "catalogue_pdfs": pdfs, "spec_downloads": specs})
             print(f"{slug}: {len(members)} families, {n} models, {len(pdfs)} brochures")
 
 

@@ -198,7 +198,7 @@ BROCHURES = {
                     "plate to 10 × 164 ft with ±45° bevels; the TD five-axis machine and RC robot cells trim formed parts; and the coil-fed lines cut straight from the "
                     "coil with no sheet handling.", ABOUT_SENFENG],
         country="China", families=[f["id"] for f in D.LASER_FAMILIES], family_sets=["dener"],
-        groups=[{"title": "Sheet lasers", "families": ["sf-compact", "sf-np", "sf-h", "sf-hm"]}, {"title": "Plate, 3D and coil-fed lasers", "families": ["sf-r", "sf-3d", "sf-coil"]}],
+        groups=[{"title": "Sheet lasers", "families": ["sf-h", "sf-compact", "sf-np", "sf-1313g", "sf-hm"]}, {"title": "Plate, 3D and coil-fed lasers", "families": ["sf-r", "sf-3d", "sf-coil"]}],
         cover_photos=["sf-h-1", "sf-np-1", "sf-r-1"], out="src/" + PDF_LASER),
     "senfeng-tube-lasers": dict(
         title="Tube laser cutting machines", subtitle="Senfeng T, PLUS, GT, NT, ST and HT tube and profile fiber lasers · Ø0.5″ to 25″ · 20 to 49 ft · 1.5 to 20 kW",

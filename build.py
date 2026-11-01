@@ -312,6 +312,24 @@ def build_spec_table(spec):
 MISSING_IMAGES = set()   # filled only with LENIENT_IMAGES=1 (preview builds; never deployed)
 
 
+def hub_card(hub, hub_info, g, groups, p, alt, by_slug_all):
+    """The "All …" card at the foot of a section page shows a photo that no other card there shows, and not the page's own hero
+    either (the owner, Nov 1 2026): the hub's hero, else its small hero pictures, else the section pages' card and hero photos."""
+    used = {m["image"]["name"] for m in g["members"] if m.get("image") and m["slug"] != p["slug"]}
+    if alt and alt.get("image"):
+        used.add(alt["image"]["name"])
+    used |= {k for k in [p.get("hero_image")] + list(p.get("hero_image_secondary") or []) if isinstance(k, str)}
+    cands = [hub.get("hero_image")] + list(hub.get("hero_image_secondary") or [])
+    for x in groups:
+        for m in x["members"]:
+            t = by_slug_all.get(m["slug"], {})
+            cands += [m["image"]["name"] if m.get("image") else None, t.get("hero_image")] + list(t.get("hero_image_secondary") or [])
+    for k in cands:
+        if isinstance(k, str) and k in manifest and k not in used:
+            return dict(hub_info, image=img(k)) if (hub_info.get("image") or {}).get("name") != k else hub_info
+    return hub_info
+
+
 def img(name, max_w=None):
     """Variants of an image for the templates; max_w drops the variants wider than that (the header logo: 360 px is plenty)."""
     e = manifest.get(name)
@@ -1288,7 +1306,7 @@ def unique_pdfs(fams):
     """the brochures of a set of families, each once, in order"""
     out, seen = [], set()
     for f in fams:
-        for p in (f.get("pdf"), f.get("spec_pdf"), *(f.get("spec_pdfs") or [])):   # spec_pdf(s): full technical specifications, beside the brochure
+        for p in (f.get("pdf"),):          # brochures only — the full technical specifications stay on their product's buttons (the owner, Nov 1 2026)
             if p and p.get("file") and p["file"] not in seen:
                 seen.add(p["file"]); out.append(p)
     return out
@@ -1717,7 +1735,7 @@ def main():
                         og = next(x for x in groups if x is not g)
                         alt_m = next((m for m in og["members"] if m.get("cat") == me.get("cat")), None)
                         alt = dict(alt_m, line_label=og["label"], line=og.get("line"), brand=og.get("brand")) if alt_m else None
-                    p["section"] = {"hub": hub_info, "label": (g["label"] + " band saws") if g.get("label") else hub.get("section_label", "Rebar machinery"),
+                    p["section"] = {"hub": hub_card(hub, hub_info, g, groups, p, alt, by_slug_all), "label": (g["label"] + " band saws") if g.get("label") else hub.get("section_label", "Rebar machinery"),
                                     "line": g.get("line"), "brand": g.get("brand"), "line_name": g.get("label"),
                                     "pages": [dict(m, current=(m["slug"] == p["slug"])) for m in g["members"]], "alt": alt,
                                     "related_title": hub.get("related_title_" + (g.get("line") or ""), None)}

@@ -29,6 +29,7 @@ import dener_laser_editions as D   # noqa: E402
 
 ROOT = D.ROOT
 S = os.path.join(ROOT, "tools", "src-images", "senfeng-h-spec") + "/"
+SF = os.path.join(ROOT, "tools", "src-images", "senfeng") + "/"      # the site's own Senfeng product photos
 title, P, checks, h2, h3, fig, row, grid, card, kv = D.title, D.P, D.checks, D.h2, D.h3, D.fig, D.row, D.grid, D.card, D.kv
 
 D.INCLUDED[:] = [("Made in China by Senfeng Laser — CE, FDA and ETL certified and CSA approved", False), ("CSA-approved electrical panel", False),
@@ -727,7 +728,282 @@ def book_g4():
     return b
 
 
-BOOKS = {"g3": book_g3, "g4": book_g4}
+
+# ======================================================================================== SF1530NP, 3 – 6 kW (the owner, Nov 1 2026)
+def after_sales(b, first_no, cust_prefix, n_cust=16):
+    """the after-sales pages shared by Senfeng's technical solutions: automated fabrication solutions, training / packaging /
+    installation, premium customization, five-star fast service, customer testimonials"""
+    n = first_no
+    body = (title(f"{n} · After-sales service", "Providing global users with automated metal fabrication solutions")
+            + row(P("Senfeng provides automated metal fabrication solutions globally, integrating cutting, bending, welding, cladding, automation "
+                    "and new energy. With core technologies in laser cutting, welding and cladding, the company also offers intelligent "
+                    "manufacturing systems such as flexible laser processing lines and panel benders. These solutions serve industries including "
+                    "automotive, construction, energy and petrochemicals, and are used in over 100 countries."),
+                  fig(S + "solutions.jpg", h=230, px=1000), cols="1fr 1fr", gap=18, align="center")
+            + '<div class="pat"><div><b>03</b><span>International PCT patents</span></div><div><b>577</b><span>Chinese technology patents</span></div></div>'
+            + '<div style="height:10pt"></div>'
+            + P("Senfeng has developed key components such as laser generators, processing heads, the Feng Cloud system and CNC systems, used in "
+                "cutting, welding, cladding and automation. The company offers a complete industry chain, including laser cutting, welding, "
+                "cladding and cleaning machines, bending centers and flexible production lines. These solutions are used in sectors such as power "
+                "towers, construction machinery, shipbuilding, bridges and aerospace, helping businesses accelerate production and reduce costs for "
+                "greater economic benefit.") + D.included())
+    b.page("After-sales service", body, key="solutions")
+    pack = [("Packaging", "Standard packaging, suitable for long-distance transportation, moisture-proof, rust-proof and shock-resistant. Designed "
+             "for full lifting, with marked lifting points and center of gravity."),
+            ("Transportation", "Domestic transportation within China is fully handled by Senfeng, including freight and insurance."),
+            ("Packing list &amp; certificate", "Each package includes a packing list and a certificate of conformity. The user manual and other "
+             "documents are inside the box; the packing list is on the outside.")]
+    body = (title(f"{n + 1} · After-sales service", "Training · packaging · installation")
+            + h2("Technical training", "to enhance customer production efficiency") + steps(TRAINING)
+            + h2("Packaging &amp; transportation", "to ensure equipment quality")
+            + row(fig(S + "pack-1.jpg", h=62, fit="cover", px=700), fig(S + "pack-2.jpg", h=62, fit="cover", px=700), fig(S + "pack-3.jpg", h=62, fit="cover", px=700), gap=10)
+            + '<div style="height:5pt"></div>' + steps(pack).replace("repeat(4,1fr)", "repeat(3,1fr)")
+            + h2("Installation", "professional and high-quality") + steps(INSTALL))
+    b.page("After-sales service", body, key="training")
+    cust = [("custom-1.jpg", "Senfeng understands the client's industry status and specific production processes, identifies issues and assesses their needs."),
+            ("custom-2.jpg", "Through in-depth on-site communication, metal fabrication automation solutions are customized to the client's pain points and needs."),
+            ("custom-3.jpg", "A tailored solution, different from competitors' standardized models."),
+            ("custom-4.jpg", "A one-stop R&amp;D and production service from design to final machine, with thorough quality checks until customer "
+             "satisfaction and acceptance.")]
+    body = (title(f"{n + 2} · After-sales service", "Premium customization")
+            + P("In the digital era, intelligent transformation in metal processing is essential. Building unmanned factories is key to "
+                "upgrading, with customized automation solutions a top priority.")
+            + grid([fig(S + f, h=150, fit="cover", px=1000) + P(f"<b>{i:02d}</b> · {t}", cls="sm") for i, (f, t) in enumerate(cust, 1)], 2, 16)
+            + D.included())
+    b.page("Customization", body, key="custom")
+    body = (title(f"{n + 3} · After-sales service", "Five-star fast service")
+            + fig(S + "service-bg.jpg", h=150, fit="cover", px=1600)
+            + row(h2("Efficient") + checks(["Senfeng's repair hotline is available 24/7.",
+                                           "A professional engineer responds to customer inquiries within 10 minutes and provides a repair plan within 1 hour."], cls="sm"),
+                  fig(S + "service-1.jpg", h=92, fit="cover", px=700), cols="1.6fr 1fr", gap=14, align="center")
+            + row(h2("Professional") + checks(["<b>Custom service:</b> service plans tailored to the customer's specific needs.",
+                                              "<b>Service engineer certification:</b> each service engineer is rigorously trained and assessed before being certified to work.",
+                                              "<b>Common issues training:</b> a manual of common issues for each equipment model, with certified engineers training customers.",
+                                              "<b>Online guidance:</b> experienced senior engineers support customers by phone or video call.",
+                                              "<b>Professional technical support:</b> the equipment is properly calibrated at the first installation, and similar issues are resolved in one go."], cls="sm"),
+                  row(fig(S + "service-2.jpg", h=70, fit="cover", px=700), fig(S + "service-3.jpg", h=70, fit="cover", px=700), cols="1fr", gap=6),
+                  cols="1.6fr 1fr", gap=14, align="center")
+            + row(h2("Comprehensive") + checks(["<b>Pre-service:</b> theoretical and hands-on operation training, common fault self-diagnosis training, "
+                                               "quick repair guidance and usage reminders.",
+                                               "<b>Regular service:</b> regular maintenance reminders, on-site services and periodic promotional activities.",
+                                               "<b>Value-added service:</b> equipment software and hardware upgrades, financing lease services and extended warranty services."], cls="sm"),
+                  fig(S + "service-4.jpg", h=92, fit="cover", px=700), cols="1.6fr 1fr", gap=14, align="center"))
+    b.page("Five-star service", body, key="service")
+    body = (title(f"{n + 4} · After-sales service", "Customer testimonials")
+            + P("Senfeng machines and customers around the world.", cls="sm")
+            + '<div class="cust">' + "".join(f'<img src="{D.im(S + f"{cust_prefix}{i:02d}.jpg", 600)}">' for i in range(1, n_cust + 1)) + "</div>")
+    b.page("Testimonials", body, key="cust")
+
+
+def book_np():
+    data = json.load(open(os.path.join(HERE, "data-senfeng-sf1530np-cutting.json")))
+    b = D.Book("sf-np", "SF1530NP fiber laser — full technical specification", "Senfeng · the new-generation NP series · 3 &amp; 6 kW",
+               os.path.join(ROOT, "src", "files", "NovoTech-Senfeng-SF1530NP-Fiber-Laser-Technical-Specification-2026.pdf"))
+    b.title = "Senfeng SF1530NP Fiber Laser — Full Technical Specification — NovoTech Machine Tools"
+    b.subject = "Senfeng SF1530NP compact fiber laser cutting machine, 3 and 6 kW — full technical specification, imperial edition"
+    b.cover("Senfeng · full technical specification", "SF1530NP · the new-generation NP series · 3 &amp; 6 kW", "SF1530NP fiber laser",
+            "Technical specification", "Fiber laser cutting machine", S + "np-cover.jpg",
+            [("10 × 5 ft", "Working area"), ("3 &amp; 6 kW", "Maxphotonics source"), ("328 ft/min", "Maximum speed"), ("1 G", "Maximum acceleration")],
+            hero_h=320, minis=[S + "np-head-6kw.jpg", S + "np-source-1.jpg", S + "np-bed.jpg", S + "np-builtin.jpg"])
+    b.page("Contents", "@@TOC@@", sub="Contents")
+    feats = ["High-strength machine tool bed", "High-strength aluminum alloy beam", "Fully automatic focusing technology", "Intelligent following system"]
+    body = (title("01 · Model · the new-generation NP series", "SF1530NP")
+            + P("Fiber laser cutting machine.", cls="sm")
+            + row(fig(S + "np-machine.jpg", h=270, px=1600), fig(S + "campus.jpg", "Senfeng's campus in Jinan, China", h=270, px=900), cols="1.6fr 1fr", gap=14)
+            + '<div class="feat">' + "".join(f"<div><b>{i}</b>{t}</div>" for i, t in enumerate(feats, 1)) + "</div>"
+            + P("*The image is for reference only; the appearance and dimensions are subject to the actual product from the factory.", cls="note")
+            + D.included())
+    b.page("Model", body, key="model")
+    pw = ["3 kW", "6 kW"]
+    rows = [("Working area (L × W)", ["10 × 5 ft (3,000 × 1,500 mm)"]), ("X-axis travel", ["119.3″ (3,030 mm)"]), ("Y-axis travel", ["59.4″ (1,510 mm)"]),
+            ("Z-axis travel", ["5.1″ (130 mm)"]), ("X / Y axis positioning accuracy", ["±0.002″ (±0.05 mm)"]),
+            ("X / Y axis repeated positioning accuracy", ["±0.0008″ (±0.02 mm)"]), ("Maximum speed", ["328 ft/min (100 m/min)"]),
+            ("Maximum acceleration", ["1 G"]), ("Dimensions (L × W × H)", ["16.1 × 7.3 × 7.6 ft (4,921 × 2,225 × 2,317 mm)"]),
+            ("Maximum load", ["2,425 lb (1,100 kg)"]), ("Weight", [lb(4709), lb(5230) + "<br><small>including fire bricks</small>"]), ("Phase", ["Three-phase"]),
+            ("Power supply rated voltage", ["380 V" + VOLT_NOTE]), ("Frequency", ["50 / 60 Hz"]), ("Overall power supply protection level", ["IP54"])]
+    trs = "".join(f"<tr><th>{l}</th>" + (f'<td colspan="2">{v[0]}</td>' if len(v) == 1 else "".join(f"<td>{x}</td>" for x in v)) + "</tr>" for l, v in rows)
+    body = (title("02 · Technical parameters", "Technical parameters · SF1530NP")
+            + f'<table class="kv spec3"><thead><tr><th>Item</th>{"".join(f"<th>{p}</th>" for p in pw)}</tr></thead><tbody>{trs}</tbody></table>'
+            + '<p class="small-note">1. Workpiece accuracy depends on factors like type, pre-treatment, sheet size and position.</p>'
+            + '<p class="small-note">2. Technical parameters are subject to change without notice. Final parameters are based on the order agreement.</p>'
+            + D.included())
+    b.page("Technical parameters", body, key="tech")
+    cut_page(b, data, 5, (0, 1), "1 of 3")     # Senfeng's page 03 (stainless + carbon) on two pages so the tables fit
+    cut_page(b, data, 5, (1, 2), "2 of 3")
+    cut_page(b, data, 6, None, "3 of 3")
+    body = (title("05 · Cost-benefit analysis", "Cost-benefit analysis · SF1530NP")
+            + P("If the cutting auxiliary gas is dried compressed air, the cost includes the air compressor's electricity, the machine's power "
+                "consumption and the consumables (protective lenses, cutting nozzles).", cls="sm")
+            + cost_table(pw, [10, 16], [3, 6], ["15", "/", "/"] * 2, 7, 1.5, ["0.5", "4.5", "60.5"], [37, 22, 22, 46, 31, 31],
+                         [22.2, 13.2, 13.2, 27.6, 18.6, 18.6], [22.7, 17.7, 73.7, 28.1, 23.1, 79.1])
+            + '<p class="small-note">1. The electricity and gas prices are Senfeng\'s reference values in China (RMB) and may vary by region.</p>'
+            + '<p class="small-note">2. Auxiliary gas consumption varies with plate thickness; the values are based on 0.630″ (16 mm) carbon steel for '
+              "oxygen and 0.039″ (1 mm) stainless steel for nitrogen, for reference.</p>" + D.included())
+    b.page("Cost-benefit analysis", body, key="cost")
+    body = (title("06 · Configuration list", "Configuration list · SF1530NP")
+            + conf_table([("Laser source", [(1, "Laser source", 1, "Maxphotonics")]), ("Laser cutting head", [(1, "Laser cutting head", 1, "RayTools")]),
+                          ("Machine tool &amp; host", [(1, "Transmission system", 4, "SENFENG"), (2, "Machine tool and accessories", 1, "SENFENG"),
+                                                     (3, "Reducer", 3, "SHIMPO, Japan"), (4, "Electrical and pneumatic systems", 1, "SCHNEIDER, France · XINGYU ELECTRON"),
+                                                     (5, "AC servo motor and driver", 4, "SCHNEIDER, France"), (6, "Water chiller", 1, "HANLI")]),
+                          ("CNC cutting system", [(1, "CNC laser system", 1, "FSCUT")])],
+                         ["This is Senfeng's optimized configuration. Changes in brand or configuration may cause irreversible effects.",
+                          "The warranty period for the entire machine (excluding consumables, force majeure natural disasters, war, improper operation "
+                          "and human damage) is 1 year."]) + D.included())
+    b.page("Configuration", body, key="config")
+    heads = row(fig(S + "np-head-3kw.jpg", "3 kW and below", h=200, px=600), fig(S + "np-head-6kw.jpg", "4 – 6 kW", h=200, px=600), gap=14)
+    body = (title("07 · Core components", "Laser source · laser head")
+            + h2("SF1530NP laser source")
+            + row(row(fig(S + "np-source-1.jpg", h=95, px=700), fig(S + "np-source-2.jpg", h=95, px=700), gap=10),
+                  '<ol class="num">' + "".join(f"<li>{x}</li>" for x in ["High-power and high-quality laser output", "Uniformly distributed beam energy",
+                                                                         "Excellent performance and strong processing ability",
+                                                                         "Compact structure and maintenance-free", "Wide range of applications"]) + "</ol>",
+                  cols="1.3fr 1fr", gap=16, align="center")
+            + h2("SF1530NP laser head")
+            + row(heads, '<ol class="num">' + "".join(f"<li>{x}</li>" for x in [
+                "<b>Superior design:</b> optimized optical configuration and smooth, efficient airflow significantly improve cutting quality and efficiency.",
+                "<b>Auto focus:</b> automatic focusing minimizes manual intervention, with a focus range of −0.47″ to +0.39″ (−12 to +10 mm) and a "
+                "positioning accuracy of 0.002″ (0.05 mm).",
+                "<b>Multiple protective lenses:</b> an additional protective lens safeguards the collimating lens, extending its service life.",
+                "<b>Drawer-type lens holder:</b> fast and easy replacement of the protective lenses.",
+                "<b>High compatibility:</b> multiple fiber interfaces, including QBH and QD, for a wide range of mainstream laser sources."]) + "</ol>",
+                  cols="1fr 1.25fr", gap=16, align="center"))
+    b.page("Laser source · head", body, key="source")
+    body = (title("08 · Machine bed system", "SF1530NP machine bed system")
+            + fig(S + "np-front.jpg", h=230, px=1400)
+            + row(h2("1 · Brand-new appearance") + checks(["The machine has an integrated screen and a platform leg-support design; the platform "
+                                                          "frame has transfer balls for easier loading."], cls="sm"),
+                  h2("2 · Fully enclosed lift door") + checks(["Improves the main unit's sealing and the dust removal. CE protective acrylic laser "
+                                                              "shields; the lift door has safety locks on both sides for personnel safety."], cls="sm"), gap=18)
+            + D.included())
+    b.page("Machine bed system", body, key="bed")
+    bed = [("3", "Tube welding bed", "durable and non-deformable", S + "np-bed.jpg", [
+                "The reinforced welded bed frame is designed for high-speed movement, with aging treatment for precision and stability in long-term operation.",
+                "The bed frame is annealed to eliminate internal stress and increase rigidity, then given secondary vibration aging and precision machining.",
+                "The semi-hollow bed frame reduces thermal deformation, extends service life and keeps the cutting accurate."]),
+           ("4", "High-strength aluminum alloy beam", "light weight and good dynamic performance", S + "np-beam.jpg", [
+                "The high-strength aluminum alloy beam is lightweight and has excellent dynamic performance.",
+                "The beam is precision-machined after secondary vibration aging, ensuring its overall strength and stability."]),
+           ("5", "Intelligent spiral negative pressure dust removal", "green and smart manufacturing", S + "np-dust.jpg", [
+                "The dust removal system controls the exhaust vents from the current cutting position, with time-based, zoned and segmented ventilation.",
+                "With the return-type sealing structure at the bottom of the base, it achieves smoke-free cutting."]),
+           ("6", "Visual monitoring safety protection", "ensures personal safety", S + "np-monitor.jpg", [
+                "The all-around monitoring system significantly reduces blind spots, so cutting runs safely and stably."])]
+    cards = [card(img, f"{n} · {t}", checks(x, cls="sm"), sub=sb, h=100) for n, t, sb, img, x in bed]
+    body = title("09 · Machine bed system", "SF1530NP machine bed system") + grid(cards[:2], 2, 18) + '<div style="height:8pt"></div>' + grid(cards[2:], 2, 18)
+    b.page("Machine bed system", body, key="bed2")
+    bed2 = [("7", "Thermostatic electric control cabinet", "makes laser cutting more stable", S + "np-cabinet.jpg", [
+                 "The temperature-controlled electrical cabinet eliminates the need for an air-conditioned room.",
+                 "The constant-temperature, constant-humidity interior adapts the equipment to various conditions.",
+                 "It significantly extends the life of the control system's electronic components, ensuring stable cutting."]),
+            ("8", "Fully enclosed lift door", "green and environmentally friendly", S + "np-builtin.jpg", ["Built-in laser source saves valuable floor space."]),
+            ("9", "Modular Z axis", "safety protection, easy maintenance", S + "np-zaxis.jpg", [
+                 "The Z axis is modular, with excellent sealing that resists contamination and lowers the failure rate.",
+                 "Modular installation and replacement significantly reduce maintenance time and difficulty."]),
+            ("10", "Internal material cart", "easy to clean", S + "np-cart.jpg", [
+                 "The material cart has an internal compartment, which makes collecting waste material and cleaning more convenient."])]
+    cards = [card(img, f"{n} · {t}", checks(x, cls="sm"), sub=sb, h=100) for n, t, sb, img, x in bed2]
+    body = title("10 · Machine bed system", "SF1530NP machine bed system") + grid(cards[:2], 2, 18) + '<div style="height:8pt"></div>' + grid(cards[2:], 2, 18)
+    b.page("Machine bed system", body, key="bed3")
+    labels = [("Nitrogen (300 psi)", "Adjustable 15 – 435 psi (0.1 – 3 MPa)", 23.3, 36.8), ("Oxygen", "Adjustable 7 – 131 psi (0.05 – 0.9 MPa)", 35.1, 69.3),
+              ("Compressed air", "Adjustable 15 – 435 psi (0.1 – 3 MPa)", 83.3, 60.2)]
+    gas = (f'<div class="lab" style="height:300pt"><img src="{D.im(S + "h3-gas.jpg", 1600)}">'
+           + "".join(f'<div class="gasl" style="left:{x}%;top:{y}%"><b>{t}</b><span>{s}</span></div>' for t, s, x, y in labels) + "</div>")
+    body = (title("11 · Auto gas distribution system", "Precise control of each gas flow") + gas
+            + P("The CNC laser cutting machine has two separate gas lines: nitrogen (air) and oxygen. Each gas line can be independently "
+                "controlled for flow rate and pressure.")
+            + checks(["The equipment software terminal has an automatic auxiliary gas selection feature.",
+                      "The type and pressure of the auxiliary gases are set and selected automatically through the CNC program — no manual operation.",
+                      "The actual gas pressure at the cutting head outlet is read and displayed on the panel in real time."]) + D.included())
+    b.page("Gas distribution", body, key="gas")
+    body = (title("12 · CNC system", "SF1530NP CNC system") + fig(S + "h3-cnc.jpg", "Bus cutting system — quick operation &amp; efficient cutting", h=200, px=1400)
+            + P("This intelligent bus system is designed specifically for fiber laser cutting. It integrates motion control, laser source control "
+                "and cutting gas control, offering stability, reliability, easy deployment, simple debugging, production safety and a rich set of "
+                "features with excellent performance. It offers modular, customizable, automated and informational solutions. The system has "
+                "memory buffering and a comprehensive cutting process database with optimized parameters for various materials and thicknesses, "
+                "for fast operation and efficient cutting — ideal for sheet metal, kitchenware and lighting.")
+            + checks(["Supported file formats: direct processing of DXF files and high-speed reading and writing of LXDS and NRP files generated by CypNest.",
+                      "A cutting database allows real-time adjustments during cutting for optimal processing quality.",
+                      "Multi-stage piercing, sharp-corner entry and centering significantly improve high-power cutting efficiency and stability.",
+                      "Optimized rapid travel modes, including the “LeapFrog” function."]) + D.included())
+    b.page("CNC system", body, key="cnc")
+    after_sales(b, 13, "np-cust-")
+    b.back("Fiber laser for your shop.", [S + "np-machine.jpg", S + "np-front.jpg", S + "np-head-6kw.jpg", S + "np-bed.jpg"])
+    toc_page(b, [("01 · Model", "model"), ("02 · Technical parameters", "tech"), ("03 · Cutting parameters — stainless steel", "cut1 of 3"),
+                 ("03 · Cutting parameters — carbon steel", "cut2 of 3"), ("04 · Cutting parameters — brass, aluminum", "cut3 of 3"), ("05 · Cost-benefit analysis", "cost"), ("06 · Configuration list", "config"),
+                 ("07 · Laser source, laser head", "source"), ("08 – 10 · Machine bed system", "bed"), ("11 · Auto gas distribution system", "gas"),
+                 ("12 · CNC system", "cnc"), ("13 · Automated metal fabrication solutions", "solutions"),
+                 ("14 · Personnel training, packaging and transportation, installation", "training"), ("15 · Customization", "custom"),
+                 ("16 · Five-star fast service", "service"), ("17 · Customer testimonials", "cust")],
+             "Full technical specification · SF1530NP · 3 &amp; 6 kW")
+    return b
+
+
+# ======================================================================================== SF1313G catalogue (the owner, Nov 1 2026)
+def book_g13():
+    b = D.Book("sf-1313g", "SF1313G compact fiber laser", "Senfeng · 4 × 4 ft · 1.5 – 3 kW · compact-sized single-platform sheet laser",
+               os.path.join(ROOT, "src", "files", "NovoTech-Senfeng-SF1313G-Fiber-Laser-2026.pdf"))
+    b.title = "Senfeng SF1313G Compact Fiber Laser — NovoTech Machine Tools"
+    b.subject = "Senfeng SF1313G compact-sized single-platform sheet laser cutting machine, 4 × 4 ft, 1.5 – 3 kW — imperial edition"
+    b.cover("Senfeng · SF1313G", "Cutting · welding · cleaning · cladding · bending · milling · automation", "SF1313G · 1.5 – 3 kW",
+            "Compact fiber laser", "Compact-sized single-platform sheet laser cutting machine", SF + "sf-1313g-2.jpg",
+            [("4 × 4 ft", "Working area"), ("1.5 – 3 kW", "Laser power"), ("262 ft/min", "Max. no-load speed"), ("485 lb", "Max. platform load")],
+            hero_h=330, minis=[S + "g13-enclosed.jpg", S + "g13-table.jpg", S + "g13-head.jpg", S + "g13-container.jpg"])
+    body = (title("SF1313G · 1.5 – 3 kW", "Compact-sized single-platform sheet laser cutting machine")
+            + row(P("This machine has a small body and fits to cut pony-size, relatively thin and light-weight sheet. With it, users enjoy small "
+                    "metal workpieces at high precision.")
+                  + '<div class="feat" style="grid-template-columns:1fr">' + "".join(f"<div><b>{i}</b>{t}</div>" for i, t in enumerate(
+                      ["Fully-enclosed structure", "Sidewise push-pull platform", "Only needs a 20 ft (20GP) container", "Zoning smoke exhaust system"], 1)) + "</div>",
+                  fig(S + "g13-scene.jpg", h=420, fit="cover", px=1400), cols="1fr 1fr", gap=18)
+            + '<div class="chips">' + "".join(f"<div>{x}</div>" for x in ["Cutting", "Welding", "Cleaning", "Cladding", "Bending", "Milling · automation"]) + "</div>"
+            + D.included())
+    b.page("SF1313G", body)
+    spec = kv([("Laser power", "1.5 – 3 kW"), ("Working area (L × W)", "4 × 4 ft (1,300 × 1,300 mm)"),
+               ("X / Y-axis positioning accuracy", "±0.002″ (±0.05 mm)"), ("X / Y-axis repositioning accuracy", "±0.0008″ (±0.02 mm)"),
+               ("Max. no-load speed", "262 ft/min (80 m/min)"), ("Max. load of platform", "485 lb (220 kg)"),
+               ("Overall dimensions (L × W × H)", "117.5 × 85.0 × 78.7″ (2,985 × 2,160 × 2,000 mm)"),
+               ("Power supply", "Three-phase 380 V, 50 / 60 Hz" + VOLT_NOTE)], head=["Model", "SF1313G"])
+    body = title("Specifications", "SF1313G technical parameters") + fig(S + "g13-hero.jpg", h=200, fit="cover", px=1864) + '<div style="height:10pt"></div>' + spec + D.included()
+    b.page("Specifications", body)
+    head = (f'<div class="lab" style="height:190pt"><img src="{D.im(S + "g13-head.jpg", 900)}" style="object-fit:cover">'
+            '<div class="gasl" style="left:70%;top:82%"><b>Cuts sheet up to 0.787″ (20 mm) thick</b></div></div>')
+    body = (title("Precision · high-reflectivity metals", "Cut thin sheet at high precision")
+            + row(P("Laser energy precise-control technology takes accurate control of the laser beam output, entirely based on the sheet "
+                    "thickness. Thin sheet is free from overburning or burr, and the cut section is much smoother."), head, cols="1fr 1.2fr", gap=18, align="center")
+            + h2("Also deals with high-reflectivity metals")
+            + row(P("The custom-made laser generator is small, light and compactly designed. With the new generation of laser pumping source and "
+                    "optical elements, it has a high anti-back-reflection ability while cutting aluminum, stainless steel, copper and other "
+                    "high-reflectivity metals.")
+                  + '<div class="stats" style="margin-top:8pt"><div><b>Anti-back-reflection</b><span>modules</span></div><div><b>&gt; 40%</b>'
+                    '<span>electro-optical conversion rate</span></div></div>',
+                  fig(S + "g13-samples.jpg", h=210, px=1000), cols="1.2fr 1fr", gap=18, align="center") + D.included())
+    b.page("Precision", body)
+    green = [("Fully-enclosed structure", "Equipped with a top cover to form a fully-enclosed structure and prevent laser radiation.", "g13-enclosed.jpg"),
+             ("Keep the workshop clean", "Its zoning smoke exhaust system synchronizes smoke exhaust and cutting to prevent its diffusion.", "g13-table.jpg"),
+             ("Make loading &amp; unloading easier", "Its sidewise push-pull platform not only saves space, but also makes loading and unloading "
+              "easier for further efficiency gains.", "g13-loading.jpg")]
+    body = (title("Shipping · safe and green production", "Make easy overseas shipment")
+            + P("The mini model is much smaller than others of the same type. Thanks to its small footprint, the workshop is better used, and "
+                "overseas transport is more flexible at lower freight cost.")
+            + row('<div class="stp" style="grid-template-columns:1fr"><div><b>01</b><div class="ittl">Machine size</div><p>117.5 × 85.0 × 78.7″ '
+                  "(2,985 × 2,160 × 2,000 mm) (L × W × H)</p></div><div><b>02</b><div class='ittl'>Easily packed in a 20 ft (20GP) container</div></div></div>",
+                  fig(S + "g13-container.jpg", h=120, px=1000), cols="1fr 1.6fr", gap=16, align="center")
+            + h2("Carry out safe and green production")
+            + grid([card(S + f, t, P(x, cls="sm"), h=110) for t, x, f in green], 3, 14) + D.included())
+    b.page("Shipping · production", body)
+    body = (title("Company profile", "Senfeng Laser")
+            + P("SENFENG Laser Technology Co., Ltd., founded in 2004 as a globe-spanning metal forming manufacturer, has devoted itself to laser "
+                "cutting, welding, bending, cleaning, cladding, flexible automation and new energy for years.",
+                "During production, all its machines go through natural aging, heat treatment, shot blasting, powder coating, finish machining, "
+                "quality inspection and many other professional treatments so they keep working for a long time.")
+            + fig(S + "g13-campus.jpg", "Senfeng's campus in Jinan, China", h=230, fit="cover", px=1000)
+            + row(fig(S + "g13-building.jpg", h=130, fit="cover", px=700), fig(S + "g13-showroom.jpg", h=130, fit="cover", px=700), gap=12)
+            + P("Note: the pictures and parameters are for reference only; the actual product prevails. Senfeng catalogue, January 2025. "
+                "Sold, installed and serviced in Canada by NovoTech Machine Tools.", cls="note") + D.included())
+    b.page("Company profile", body)
+    b.back("Fiber laser for your shop.", [SF + "sf-1313g-front.jpg", S + "g13-enclosed.jpg", S + "g13-head.jpg", S + "g13-samples.jpg"])
+    return b
+
+BOOKS = {"g3": book_g3, "g4": book_g4, "np": book_np, "g13": book_g13}
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")] or list(BOOKS)

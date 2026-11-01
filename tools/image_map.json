@@ -15203,14 +15203,6 @@
   "quality": 82,
   "cutout": false
  },
- "sf-sfp": {
-  "src": "tools/src-images/senfeng/sf-sfp.jpg",
-  "alt": "Senfeng SFP600 high-precision fiber laser for small parts — 24 × 24″ table",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": true
- },
  "sf-hm-1": {
   "src": "tools/src-images/senfeng/sf-hm-1.jpg",
   "alt": "Senfeng SF3015HM sheet and tube fiber laser — 5 × 10 ft table plus Ø8.6″ × 20 ft tube attachment",
@@ -33149,6 +33141,174 @@
  "sf-h-swingarm": {
   "src": "tools/src-images/senfeng/sf-h-swingarm.jpg",
   "alt": "Servo swing-arm loading system for 1,100 lb sheets (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pdf-novotech-senfeng-sf1530np-fiber-laser-technical-specification-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-senfeng-sf1530np-fiber-laser-technical-specification-2026.jpg",
+  "alt": "Cover of the Senfeng SF1530NP compact fiber laser, 3 – 6 kW — full technical specification PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false
+ },
+ "pdf-novotech-senfeng-sf1313g-fiber-laser-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-senfeng-sf1313g-fiber-laser-2026.jpg",
+  "alt": "Cover of the Senfeng SF1313G compact fiber laser, 4 × 4 ft, 1.5 – 3 kW PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false
+ },
+ "sf-1530np-showroom": {
+  "src": "tools/src-images/senfeng/sf-1530np-showroom.jpg",
+  "alt": "SF1530NP in Senfeng's showroom — CE and FDA certified",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1530np-side": {
+  "src": "tools/src-images/senfeng/sf-1530np-side.jpg",
+  "alt": "SF1530NP — fully enclosed cabin with the integrated source and control cabinet",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530n-rear": {
+  "src": "tools/src-images/senfeng/sf-1530n-rear.jpg",
+  "alt": "SF1530N — full cover with the pull-out platform rails",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530g-table": {
+  "src": "tools/src-images/senfeng/sf-1530g-table.jpg",
+  "alt": "SF1530G with the single table pulled out for loading",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1530np-trolley": {
+  "src": "tools/src-images/senfeng/sf-1530np-trolley.jpg",
+  "alt": "SF1530NP — pick-up trolley with an inner hopper and the integrated leg supports",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1530np-safety": {
+  "src": "tools/src-images/senfeng/sf-1530np-safety.jpg",
+  "alt": "Safety light curtains at the front and rear of the beam and a smart camera with safety-lock alarm",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1530-antiburn": {
+  "src": "tools/src-images/senfeng/sf-1530-antiburn.jpg",
+  "alt": "Anti-burning platform — side guards keep the sparks off the dust cover",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1530-dust": {
+  "src": "tools/src-images/senfeng/sf-1530-dust.jpg",
+  "alt": "Smoke-free extraction — double air duct, three zones and follow-up air valves",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1530np-cabinet": {
+  "src": "tools/src-images/senfeng/sf-1530np-cabinet.png",
+  "alt": "SF1530NP thermostatic electrical cabinet — no air-conditioned room needed",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1530np-container": {
+  "src": "tools/src-images/senfeng/sf-1530np-container.jpg",
+  "alt": "SF1530NP fits one 20 ft container without disassembly",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1313g-scene": {
+  "src": "tools/src-images/senfeng/sf-1313g-scene.png",
+  "alt": "Senfeng SF1313G in a workshop — 4 × 4 ft, fully enclosed, 1.5 – 3 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1313g-2": {
+  "src": "tools/src-images/senfeng/sf-1313g-2.jpg",
+  "alt": "SF1313G — top cover, lifting door and the console on its arm",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1313g-front": {
+  "src": "tools/src-images/senfeng/sf-1313g-front.jpg",
+  "alt": "SF1313G from the front",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1313g-3": {
+  "src": "tools/src-images/senfeng/sf-1313g-3.jpg",
+  "alt": "SF1313G from the side — compact single-table body",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1313g-4": {
+  "src": "tools/src-images/senfeng/sf-1313g-4.jpg",
+  "alt": "SF1313G from the rear — extraction fan and service doors",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-1313g-head": {
+  "src": "tools/src-images/senfeng/sf-1313g-head.jpg",
+  "alt": "Cutting thin sheet — laser energy matched to the thickness, no overburning or burr",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1313g-samples": {
+  "src": "tools/src-images/senfeng/sf-1313g-samples.png",
+  "alt": "Aluminum, brass and steel cut on the SF1313G — anti-back-reflection source",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1313g-table": {
+  "src": "tools/src-images/senfeng/sf-1313g-table.png",
+  "alt": "Sidewise push-pull table with zoned smoke exhaust",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-1313g-container": {
+  "src": "tools/src-images/senfeng/sf-1313g-container.png",
+  "alt": "SF1313G ships in one 20 ft container",
   "section": "senfeng",
   "trim": false,
   "quality": 82,

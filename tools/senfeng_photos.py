@@ -94,6 +94,8 @@ HW = "Handheld-Welder-HW-Series"
 LW = "Laser-Welding-Machines-brochure"
 G3 = "SF3015H-Solution"            # third generation, medium and high power (SF3015H_solution.pdf)
 G4 = "SF3015H-Gen4"                # fourth generation, high power (SF3015H_fourth_generation_solution.pdf)
+NPS = "SF1530NP-Solution"            # the SF1530NP 3 – 6 kW technical solution
+G13C = "SF1313G-Catalogue"           # the SF1313G catalogue (Metal-Sheet-Laser-Cutter-SF1313G.pdf)
 
 PHOTOS = {
     # ---------------------------------------------------------------- sheet lasers
@@ -129,7 +131,27 @@ PHOTOS = {
     "sf-1530np": R("1530NP-1.webp", "Senfeng SF1530NP compact fiber laser with electric lifting door — 5 × 10 ft, 1.5 – 6 kW", up=True),
     "sf-1530np-2": R("1530NP-4.webp", "SF1530NP — pull-out platform with integrated leg supports", up=True),
     "sf-1530np-head": W("1530NP-6.webp", "SF1530NP — autofocus cutting head over the slat table", up=True),
-    "sf-sfp": R("P600-1.png", "Senfeng SFP600 high-precision fiber laser for small parts — 24 × 24″ table", up=True),
+    # more G / N / NP photos from senfenglaserusa.com and the SF1530NP 3 – 6 kW technical solution; the SF1313G's own item with the photos
+    # of its USA page and catalogue (the owner, Nov 1 2026)
+    "sf-1530np-showroom": W("1530NP-adv-1-rmiktlx9jphgt1yflewtavluz84zzin1s333a2ogmw.webp", "SF1530NP in Senfeng's showroom — CE and FDA certified", up=True),
+    "sf-1530np-side": R("1530NP-3.webp", "SF1530NP — fully enclosed cabin with the integrated source and control cabinet", up=True),
+    "sf-1530n-rear": R("1530N-3.webp", "SF1530N — full cover with the pull-out platform rails", up=True),
+    "sf-1530g-table": R("1530G-3.webp", "SF1530G with the single table pulled out for loading", up=True),
+    "sf-1530np-trolley": W("1530NP-adv-2-rmilai2uzfzx1gtrzmvseln9n9r70mbneupwublvaw.webp", "SF1530NP — pick-up trolley with an inner hopper and the integrated leg supports", up=True),
+    "sf-1530np-safety": W("1530NP-adv-6-rmilbkm8rngo9h9sqljhqtx602h8s7kn85gtio0q7s.webp", "Safety light curtains at the front and rear of the beam and a smart camera with safety-lock alarm", up=True),
+    "sf-1530-antiburn": W("1530G-advantage-04-rk8gekokhlf7nqz030i5fdmxop5sfkt6vdhmnx19o8.webp", "Anti-burning platform — side guards keep the sparks off the dust cover", up=True),
+    "sf-1530-dust": W("1530G-advantage-05-rk8gelmeofghzcxmxiwrzveea315n9wx7i5456zvi0.webp", "Smoke-free extraction — double air duct, three zones and follow-up air valves", up=True),
+    "sf-1530np-cabinet": PP(NPS, "cabinet.png", "SF1530NP thermostatic electrical cabinet — no air-conditioned room needed", up=True),
+    "sf-1530np-container": W("1530NP-adv-7-rmilev1w2ukvbn31hln4oij2ivds150k1a4bxb5zy0.webp", "SF1530NP fits one 20 ft container without disassembly", up=True),
+    "sf-1313g-scene": PP(G13C, "scene.png", "Senfeng SF1313G in a workshop — 4 × 4 ft, fully enclosed, 1.5 – 3 kW"),
+    "sf-1313g-2": R("99_画板-1-副本-27.jpg", "SF1313G — top cover, lifting door and the console on its arm", up=True),
+    "sf-1313g-front": R("99_画板-1-副本-28.jpg", "SF1313G from the front", up=True),
+    "sf-1313g-3": R("99_画板-1-副本-29.jpg", "SF1313G from the side — compact single-table body", up=True),
+    "sf-1313g-4": R("99_画板-1-副本-30.jpg", "SF1313G from the rear — extraction fan and service doors", up=True),
+    "sf-1313g-head": PP(G13C, "head.png", "Cutting thin sheet — laser energy matched to the thickness, no overburning or burr", up=True),
+    "sf-1313g-samples": PP(G13C, "samples.png", "Aluminum, brass and steel cut on the SF1313G — anti-back-reflection source", up=True),
+    "sf-1313g-table": PP(G13C, "table.png", "Sidewise push-pull table with zoned smoke exhaust", up=True),
+    "sf-1313g-container": PP(G13C, "container.png", "SF1313G ships in one 20 ft container", up=True),
     "sf-hm-1": R("HM-01.webp", "Senfeng SF3015HM sheet and tube fiber laser — 5 × 10 ft table plus Ø8.6″ × 20 ft tube attachment", up=True),
     "sf-hm-2": R("HM-02.webp", "SF3015HM — the tube attachment on the side of the cabin", up=True),
     "sf-hm-3": R("HM-03.webp", "SF3015HM — rear view with the tube support", up=True),
