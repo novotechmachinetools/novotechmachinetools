@@ -947,7 +947,7 @@ def book_g13():
     b.cover("Senfeng · SF1313G", "Cutting · welding · cleaning · cladding · bending · milling · automation", "SF1313G · 1.5 – 3 kW",
             "Compact fiber laser", "Compact-sized single-platform sheet laser cutting machine", SF + "sf-1313g-2.jpg",
             [("4 × 4 ft", "Working area"), ("1.5 – 3 kW", "Laser power"), ("262 ft/min", "Max. no-load speed"), ("485 lb", "Max. platform load")],
-            hero_h=330, minis=[S + "g13-enclosed.jpg", S + "g13-table.jpg", S + "g13-head.jpg", S + "g13-container.jpg"])
+            hero_h=330, minis=[SF + "sf-1313g-4.jpg", S + "g13-table.jpg", S + "g13-head.jpg", S + "g13-container.jpg"])
     body = (title("SF1313G · 1.5 – 3 kW", "Compact-sized single-platform sheet laser cutting machine")
             + row(P("This machine has a small body and fits to cut pony-size, relatively thin and light-weight sheet. With it, users enjoy small "
                     "metal workpieces at high precision.")
