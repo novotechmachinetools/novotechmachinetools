@@ -205,14 +205,11 @@ T_TXP = table("TXP laser and flame hybrid plate cutter", "1 model · 10 × 39 ft
     ("Max. no-load speed", [ftmin(328)]), ("Max. acceleration", ["0.8 G"]), ("Max. table load", [lb(62355)]), ("Dimensions L × W × H", [dims_ft(51.3, 15.6, 6.4)])])
 
 T_3D = table("SF3015TD five-axis 3D laser", "1 model · 5 × 10 ft travel · 3 – 20 kW", ["SF3015TD"], [
-    ("Travel X × Y", [area_in(118.1, 59.0)]), ("Laser power", ["3 – 20 kW"]), ("A axis · C axis", ["±135° · n × 361°"]),
+    ("Travel range X × Y", [area_in(118.1, 59.0)]), ("Stroke X / Y / Z", ["118.1 × 59.1 × 27.6″ (3,000 × 1,500 × 700 mm)"]),
+    ("Laser power", ["3 – 20 kW"]), ("A axis · C axis", ["±135° · n × 360° (endless)"]),
     ("Positioning accuracy", ["±0.004″ (±0.1 mm) · repeat ±0.002″ (±0.05 mm)"]), ("Max. no-load speed", [ftmin(328)]), ("Max. acceleration", ["1 G"]),
-    ("Cooling", ["air-cooled head"]), ("Dimensions L × W × H", [dims_ft(19.6, 9.1, 9.0)])])
-RC = [("SF1500RC", 1.5, 0.1, 32.8), ("SF2000RC", 2, 0.1, 32.8), ("SF3000RC", 3, 0.2, 65.6), ("SF6000RC", 6, 0.2, 65.6)]
-T_RC = table("RC series robot laser cutting cells", "4 models · 6-axis robot · 1.5 – 6 kW", [r[0] for r in RC], [
-    ("Laser power", [kw(r[1]) for r in RC]), ("Cutting thickness", [f"to {r[2]:g}″ ({round(r[2] * 25.4):g} mm)" for r in RC]),
-    ("Robot", ["6 axes · 72.9″ (1,850 mm) reach · repeat ±0.0008″"] * 4), ("Fiber length", [f"{r[3]:g} ft ({round(r[3] * 0.3048):g} m)" for r in RC]),
-    ("Robot weight", ["463 lb (210 kg)"] * 4)])
+    ("Machine cooling", ["air-cooled"]), ("Worktable", ["180° dual-station rotary table, or dual-drive servo shuttle table"]),
+    ("Dimensions L × W × H", [dims_ft(19.6, 9.1, 9.0)])])
 
 T_COIL = table("Coil-fed laser cutting lines", "2 lines · coil to 9/16″ plate", ["SF1503CH", "SF2012CH"], [
     ("Coil thickness", ["to 1/8″ (3 mm)", "5/16″ – 9/16″ (8 – 14 mm)"]),
@@ -505,18 +502,31 @@ LASER_FAMILIES = [
          videos=[],
          specs=spec([T_R, T_TX, T_TXP], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-3d", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="3D laser cutting — five-axis SF3015TD and RC robot cells, 1.5 – 20 kW",
+         name="3D laser cutting — five-axis SF3015TD, 5 × 10 ft, 3 – 20 kW",
          short="3D laser cutting",
-         models_label="SF3015TD · SF1500RC – SF6000RC",
-         summary="Trimming and piercing formed parts: the SF3015TD five-axis machine moves a 3 to 20 kW head over a 5 × 10 ft envelope with "
-                 "±135° A and endless C rotation at 328 ft/min for automotive, hot-stamping and pressing work; the RC series puts a 1.5 to "
-                 "6 kW fiber head on a 6-axis robot with 72″ reach for parts to 0.2″ thick — the economical 3D cell for brackets, covers "
-                 "and tube assemblies.",
-         features=["Five-axis gantry 5 × 10 ft envelope, 3 – 20 kW, air-cooled head; robot cells 1.5 – 6 kW with 72″ reach"] + LZ_STD[:2] + [CERT],
-         optional=["Rotary tables and fixtures", "Second robot station", "Safety enclosure with light curtains"],
-         images=["sf-3d-1", "sf-3d-2", "sf-rc-1", "sf-rc-2", "sf-3d-head", "sf-3d-cut"],
+         models_label="SF3015TD",
+         # Senfeng USA's SF3015TD page, the SF3015TD leaflet and Senfeng's 3D five-axis catalogue; the RC robot cells are off the
+         # site (the owner, Nov 1 2026)
+         summary="Trimming and piercing formed parts: the SF3015TD carries a 3 to 20 kW five-axis head that turns endlessly (n × 360°) and "
+                 "swings ±135° over a 5 × 10 ft envelope at 328 ft/min, so it cuts trim lines, holes and slots in hot-stamped, pressed and "
+                 "drawn parts and pipe fittings where a flat-bed laser cannot reach — in place of trimming and piercing dies. A marble "
+                 "base with marble guide rails and racks damps vibration for accuracy, the 180° dual-station rotary table loads one part "
+                 "while the other is cut, and the fully enclosed cabin with interlocked doors and a light curtain keeps the operator out "
+                 "of the work zone.",
+         features=["Five-axis head: endless C rotation (n × 360°) and ±135° A swing; 3 – 20 kW; 5 × 10 ft travel, 27.6″ Z stroke; 328 ft/min, 1 G; air-cooled",
+                   "Collision-proof, self-resetting 3D cutting head with autofocus and fast follow-up",
+                   "Marble base with marble guide rails and racks — less resonance, more rigidity, higher positioning accuracy; modular build, easy to service",
+                   "Senfeng 3D five-axis CNC with a cutting-process database, dual-screen monitoring, teaching, speed limiting and RTCP; offline "
+                   "programming software from the 3D model; remote assistance module (optional)",
+                   "180° dual-station rotary table, or a dual-drive servo high-speed shuttle table",
+                   "Fully enclosed cabin with safety-interlocked doors and an intelligent light curtain",
+                   "For hot-stamped and pressed automotive parts, pipe fittings, exhaust parts and stainless metalwork",
+                   CERT + "; " + VOLT],
+         optional=["Fixtures made for your parts", "Remote assistance module", "Dual-drive servo shuttle table in place of the rotary table"],
+         images=["sf-3d-1", "sf-3d-2", "sf-3d-3", "sf-3d-rear", "sf-3d-head", "sf-3d-cut", "sf-3d-semi", "sf-3d-enclosed", "sf-3d-forming",
+                 "sf-3d-pipe", "sf-3d-pressed", "sf-3d-metalwork"],
          videos=[],
-         specs=spec([T_3D, T_RC], ["area", "power", "speed", "axes", "dims"], ["Travel X × Y", "Laser power", "Max. no-load speed", "A axis · C axis", "Dimensions L × W × H"], POWER_NOTE)),
+         specs=spec([T_3D], ["area", "power", "speed", "axes", "dims"], ["Travel X × Y", "Laser power", "Max. no-load speed", "A axis · C axis", "Dimensions L × W × H"], POWER_NOTE)),
     dict(id="sf-coil", group="laser-senfeng", page=P_LASER, brand=BRAND,
          name="Coil-fed laser cutting lines, coil to 9/16″ plate, 3 – 80 kW",
          short="Coil-fed laser lines",
@@ -643,7 +653,7 @@ WELD_FAMILIES = [
 
 ALL = LASER_FAMILIES + TUBE_FAMILIES + PANEL_FAMILIES + WELD_FAMILIES
 
-SERIES = {"sf-compact": "G · N · NP", "sf-1313g": "G", "sf-np": "NP", "sf-h": "H", "sf-hm": "HM", "sf-r": "R · TX · TXP", "sf-3d": "TD · RC", "sf-coil": "C · CH",
+SERIES = {"sf-compact": "G · N · NP", "sf-1313g": "G", "sf-np": "NP", "sf-h": "H", "sf-hm": "HM", "sf-r": "R · TX · TXP", "sf-3d": "TD", "sf-coil": "C · CH",
           "sf-t": "T", "sf-plus": "PLUS · GT", "sf-heavy": "NT · ST · HT · CH", "sf-bdc": "BDC", "sf-handheld": "S · HWM", "sf-robot-weld": "RW · RMW · CMW", "sf-cladding": "SFR · SFHS · SFMR"}
 for _f in ALL:
     _f["series"] = SERIES[_f["id"]]

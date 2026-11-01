@@ -15323,22 +15323,6 @@
   "quality": 82,
   "cutout": false
  },
- "sf-rc-1": {
-  "src": "tools/src-images/senfeng/sf-rc-1.jpg",
-  "alt": "Senfeng RC series robot fiber laser cutting cell — 6-axis robot with a 1.5 – 6 kW source",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": true
- },
- "sf-rc-2": {
-  "src": "tools/src-images/senfeng/sf-rc-2.jpg",
-  "alt": "RC series robot laser cutting system",
-  "section": "senfeng",
-  "trim": false,
-  "quality": 82,
-  "cutout": true
- },
  "sf-coil-1": {
   "src": "tools/src-images/senfeng/sf-coil-1.png",
   "alt": "Senfeng SF1503CH coil-fed fiber laser cutting line — decoiler, leveller and 5 × 10 ft laser, 3 – 6 kW",
@@ -33309,6 +33293,70 @@
  "sf-1313g-container": {
   "src": "tools/src-images/senfeng/sf-1313g-container.png",
   "alt": "SF1313G ships in one 20 ft container",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-3d-3": {
+  "src": "tools/src-images/senfeng/sf-3d-3.jpg",
+  "alt": "SF3015TD — dual-station table behind the light curtains, the console on its stand",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-3d-rear": {
+  "src": "tools/src-images/senfeng/sf-3d-rear.jpg",
+  "alt": "SF3015TD from the rear — the fully enclosed cabin and its service doors",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-3d-enclosed": {
+  "src": "tools/src-images/senfeng/sf-3d-enclosed.jpg",
+  "alt": "SF3015TD fully-enclosed model — front view",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-3d-semi": {
+  "src": "tools/src-images/senfeng/sf-3d-semi.png",
+  "alt": "SF3015TD semi-enclosed model with open guarded sides",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-3d-forming": {
+  "src": "tools/src-images/senfeng/sf-3d-forming.jpg",
+  "alt": "Hot-formed automotive parts — body frame, door ring and pillars — trimmed on a five-axis laser",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-3d-pipe": {
+  "src": "tools/src-images/senfeng/sf-3d-pipe.jpg",
+  "alt": "Pipe fittings cut on a five-axis laser — tees, laterals, elbows and reducers",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-3d-metalwork": {
+  "src": "tools/src-images/senfeng/sf-3d-metalwork.jpg",
+  "alt": "Stainless metalwork cut in 3D — pots, trays, dishes and perforated covers",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-3d-pressed": {
+  "src": "tools/src-images/senfeng/sf-3d-pressed.jpg",
+  "alt": "Pressed parts and exhaust pipes cut in 3D",
   "section": "senfeng",
   "trim": false,
   "quality": 82,

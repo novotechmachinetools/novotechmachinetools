@@ -44,8 +44,8 @@ SECTIONS = {
             ("large-format-plate-laser", "Large-format plate lasers — semi-closed, ground-rail and gantry machines to 13 × 82 ft and 10 × 164 ft, 3 to 60 kW", "vn-ulg-1",
              "For long and heavy plate: the premium Smart semi-closed single tables to 13 × 82 ft, ground-rail lasers with 42.7 or 85.3 ft beds and gantry plate lasers to 10 × 164 ft with ±45° bevel heads, 3 to 60 kW.",
              "Large-format lasers", ""),      # was "Plate lasers" (the owner, Nov 1 2026)
-            ("3d-laser-cutting-machine", "3D laser cutting machines — five-axis gantry lasers and robot laser cells, 1.5 to 20 kW", "sf-3d-1",
-             "For formed parts: the five-axis SF3015TD gantry laser and RC robot cells trim and cut stamped, drawn and bent parts after forming, 1.5 to 20 kW — the value line.",
+            ("3d-laser-cutting-machine", "3D laser cutting machines — five-axis SF3015TD, 5 × 10 ft, 3 to 20 kW", "sf-3d-1",
+             "For formed parts: the five-axis SF3015TD trims and cuts stamped, drawn and bent parts and pipe fittings after forming, 3 to 20 kW — the value line.",
              "3D laser cells", ""),
             ("coil-fed-laser-cutting-line", "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW", "sf-coil-1",
              "Cut blanks straight from the coil: decoiler, leveller and laser on one control for coil to 1/8″ and to 9/16″ plate, and the TOP line with robot sorting, panel bending and welding — the value line.",

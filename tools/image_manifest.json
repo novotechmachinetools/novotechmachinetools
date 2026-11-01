@@ -57460,56 +57460,6 @@
    "bytes": 3200
   }
  },
- "sf-rc-1": {
-  "alt": "Senfeng RC series robot fiber laser cutting cell \u2014 6-axis robot with a 1.5 \u2013 6 kW source",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 370,
-    "file": "img/senfeng/sf-rc-1-1200.webp",
-    "bytes": 67854
-   },
-   {
-    "w": 800,
-    "h": 247,
-    "file": "img/senfeng/sf-rc-1-800.webp",
-    "bytes": 40744
-   },
-   {
-    "w": 480,
-    "h": 148,
-    "file": "img/senfeng/sf-rc-1-480.webp",
-    "bytes": 21758
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 49,
-   "file": "img/senfeng/sf-rc-1-thumb.webp",
-   "bytes": 4260
-  },
-  "cut": "birefnet"
- },
- "sf-rc-2": {
-  "alt": "RC series robot laser cutting system",
-  "variants": [
-   {
-    "w": 307,
-    "h": 310,
-    "file": "img/senfeng/sf-rc-2-307.webp",
-    "bytes": 19318
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 158,
-   "h": 160,
-   "file": "img/senfeng/sf-rc-2-thumb.webp",
-   "bytes": 8288
-  },
-  "cut": "birefnet"
- },
  "sf-coil-1": {
   "alt": "Senfeng SF1503CH coil-fed fiber laser cutting line \u2014 decoiler, leveller and 5 \u00d7 10 ft laser, 3 \u2013 6 kW",
   "variants": [
@@ -112827,6 +112777,243 @@
    "h": 45,
    "file": "img/senfeng/sf-1313g-container-thumb.webp",
    "bytes": 3184
+  }
+ },
+ "sf-3d-3": {
+  "alt": "SF3015TD \u2014 dual-station table behind the light curtains, the console on its stand",
+  "variants": [
+   {
+    "w": 1095,
+    "h": 669,
+    "file": "img/senfeng/sf-3d-3-1095.webp",
+    "bytes": 41552
+   },
+   {
+    "w": 800,
+    "h": 489,
+    "file": "img/senfeng/sf-3d-3-800.webp",
+    "bytes": 32034
+   },
+   {
+    "w": 480,
+    "h": 293,
+    "file": "img/senfeng/sf-3d-3-480.webp",
+    "bytes": 17356
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 98,
+   "file": "img/senfeng/sf-3d-3-thumb.webp",
+   "bytes": 4412
+  },
+  "cut": "birefnet"
+ },
+ "sf-3d-rear": {
+  "alt": "SF3015TD from the rear \u2014 the fully enclosed cabin and its service doors",
+  "variants": [
+   {
+    "w": 1133,
+    "h": 654,
+    "file": "img/senfeng/sf-3d-rear-1133.webp",
+    "bytes": 32594
+   },
+   {
+    "w": 800,
+    "h": 462,
+    "file": "img/senfeng/sf-3d-rear-800.webp",
+    "bytes": 24852
+   },
+   {
+    "w": 480,
+    "h": 277,
+    "file": "img/senfeng/sf-3d-rear-480.webp",
+    "bytes": 14144
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 92,
+   "file": "img/senfeng/sf-3d-rear-thumb.webp",
+   "bytes": 3990
+  },
+  "cut": "birefnet"
+ },
+ "sf-3d-enclosed": {
+  "alt": "SF3015TD fully-enclosed model \u2014 front view",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 515,
+    "file": "img/senfeng/sf-3d-enclosed-1200.webp",
+    "bytes": 35190
+   },
+   {
+    "w": 800,
+    "h": 343,
+    "file": "img/senfeng/sf-3d-enclosed-800.webp",
+    "bytes": 21610
+   },
+   {
+    "w": 480,
+    "h": 206,
+    "file": "img/senfeng/sf-3d-enclosed-480.webp",
+    "bytes": 12164
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 69,
+   "file": "img/senfeng/sf-3d-enclosed-thumb.webp",
+   "bytes": 3228
+  },
+  "cut": "birefnet"
+ },
+ "sf-3d-semi": {
+  "alt": "SF3015TD semi-enclosed model with open guarded sides",
+  "variants": [
+   {
+    "w": 747,
+    "h": 421,
+    "file": "img/senfeng/sf-3d-semi-747.webp",
+    "bytes": 18548
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/senfeng/sf-3d-semi-480.webp",
+    "bytes": 11852
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/senfeng/sf-3d-semi-thumb.webp",
+   "bytes": 3466
+  }
+ },
+ "sf-3d-forming": {
+  "alt": "Hot-formed automotive parts \u2014 body frame, door ring and pillars \u2014 trimmed on a five-axis laser",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 582,
+    "file": "img/senfeng/sf-3d-forming-1200.webp",
+    "bytes": 39394
+   },
+   {
+    "w": 800,
+    "h": 388,
+    "file": "img/senfeng/sf-3d-forming-800.webp",
+    "bytes": 22936
+   },
+   {
+    "w": 480,
+    "h": 233,
+    "file": "img/senfeng/sf-3d-forming-480.webp",
+    "bytes": 11070
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 78,
+   "file": "img/senfeng/sf-3d-forming-thumb.webp",
+   "bytes": 1968
+  }
+ },
+ "sf-3d-pipe": {
+  "alt": "Pipe fittings cut on a five-axis laser \u2014 tees, laterals, elbows and reducers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 483,
+    "file": "img/senfeng/sf-3d-pipe-1200.webp",
+    "bytes": 19432
+   },
+   {
+    "w": 800,
+    "h": 322,
+    "file": "img/senfeng/sf-3d-pipe-800.webp",
+    "bytes": 11856
+   },
+   {
+    "w": 480,
+    "h": 193,
+    "file": "img/senfeng/sf-3d-pipe-480.webp",
+    "bytes": 6548
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 64,
+   "file": "img/senfeng/sf-3d-pipe-thumb.webp",
+   "bytes": 1646
+  }
+ },
+ "sf-3d-metalwork": {
+  "alt": "Stainless metalwork cut in 3D \u2014 pots, trays, dishes and perforated covers",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 483,
+    "file": "img/senfeng/sf-3d-metalwork-1200.webp",
+    "bytes": 28722
+   },
+   {
+    "w": 800,
+    "h": 322,
+    "file": "img/senfeng/sf-3d-metalwork-800.webp",
+    "bytes": 16910
+   },
+   {
+    "w": 480,
+    "h": 193,
+    "file": "img/senfeng/sf-3d-metalwork-480.webp",
+    "bytes": 8428
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 64,
+   "file": "img/senfeng/sf-3d-metalwork-thumb.webp",
+   "bytes": 1672
+  }
+ },
+ "sf-3d-pressed": {
+  "alt": "Pressed parts and exhaust pipes cut in 3D",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 483,
+    "file": "img/senfeng/sf-3d-pressed-1200.webp",
+    "bytes": 21032
+   },
+   {
+    "w": 800,
+    "h": 322,
+    "file": "img/senfeng/sf-3d-pressed-800.webp",
+    "bytes": 12134
+   },
+   {
+    "w": 480,
+    "h": 193,
+    "file": "img/senfeng/sf-3d-pressed-480.webp",
+    "bytes": 6208
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 64,
+   "file": "img/senfeng/sf-3d-pressed-thumb.webp",
+   "bytes": 1386
   }
  }
 }

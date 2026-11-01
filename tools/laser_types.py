@@ -129,22 +129,22 @@ SHEET = {
                  {"href": "plate-rollers.html", "label": "Plate rollers"}, {"href": "press-brake.html", "label": "Press brakes"}],
     ),
     "3d-laser-cutting-machine": dict(
-        title="3D Laser Cutting Machines for Sale in Canada — Five-Axis & Robot Laser Cells, 1.5–20 kW | NovoTech",
-        meta="Five-axis 3D fiber lasers and robot laser cells that trim and cut formed, stamped, drawn and bent parts — the SF3015TD gantry laser and RC robot cells, 1.5 to 20 kW, sold, installed and supported in Canada.",
-        h1="3D laser cutting machines — five-axis gantry lasers and robot laser cells, 1.5 to 20 kW",
+        title="3D Laser Cutting Machines for Sale in Canada — Five-Axis SF3015TD, 3–20 kW | NovoTech",
+        meta="Five-axis 3D fiber laser that trims and cuts formed, stamped, drawn and bent parts and pipe fittings — the SF3015TD with endless C and ±135° A rotation over a 5 × 10 ft envelope, 3 to 20 kW, sold, installed and supported in Canada.",
+        h1="3D laser cutting machines — five-axis SF3015TD, 5 × 10 ft, 3 to 20 kW",
         intro="A 3D laser cuts formed parts — stamped, drawn, hot-stamped or bent — with a five-axis head that follows the surface: it trims "
               "edges and cuts holes and slots after forming, where a flat-bed laser cannot reach and a trimming die would cost more than the "
-              "run. NovoTech sells two families in Canada, both on this page and both from the value line: the five-axis SF3015TD gantry "
-              "laser with ±135° A and endless C rotation over a 5 × 10 ft envelope, 3 to 20 kW; and the RC robot cells that carry a 1.5 to 6 kW "
-              "fiber head on a six-axis robot with 72″ reach. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and "
+              "run. NovoTech sells Senfeng's five-axis SF3015TD in Canada, from the value line: a 3 to 20 kW head with endless C rotation and "
+              "±135° A swing over a 5 × 10 ft envelope, on a marble base, with a 180° dual-station rotary table and a fully enclosed cabin. "
+              "The family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and "
               "offline programming software, installed, trained and supported from Mississauga, ON, Canada.",
-        points=["SF3015TD five-axis gantry laser: 5 × 10 ft envelope, ±135° A, endless C, 328 ft/min, 3 – 20 kW",
-                "RC robot cells: 1.5 – 6 kW head on a six-axis robot, 72″ reach — trimming, piercing and welding",
-                "Offline programming from the 3D model; fixtures, rotary tables and a second station to order"],
-        hero="sf-3d-1", minis=["sf-3d-2", "sf-rc-1"],
-        groups=[("ls-value-3d", "3D laser cutting cells · value line", "Five-axis gantry and robot cells for formed parts, 1.5 to 20 kW.")],
-        faq=[{"q": "Gantry five-axis or robot cell?",
-              "a": "A five-axis gantry (SF3015TD) carries the head over a fixed table with the accuracy of a flat-bed laser — for larger formed parts and tight tolerances. A robot cell (RC) carries the head on a six-axis robot around a fixture — more reach around a deep part, a smaller footprint, and the cell can also weld; it is the usual choice for automotive and appliance trimming. Both are programmed offline from the 3D model."},
+        points=["SF3015TD five-axis laser: 5 × 10 ft envelope, 27.6″ Z, endless C and ±135° A, 328 ft/min, 3 – 20 kW",
+                "Marble base and marble guide rails for accuracy; 180° dual-station rotary table or a servo shuttle table",
+                "Offline programming from the 3D model; fully enclosed cabin with interlocked doors and a light curtain"],
+        hero="sf-3d-1", minis=["sf-3d-3", "sf-3d-cut"],
+        groups=[("ls-value-3d", "SF3015TD five-axis 3D laser · value line", "The five-axis laser for formed parts, 5 × 10 ft, 3 to 20 kW.")],
+        faq=[{"q": "What parts suit a five-axis 3D laser?",
+              "a": "Formed parts that a flat-bed laser cannot reach: hot-stamped and cold-pressed automotive parts such as pillars, door rings and bumper beams, drawn covers and housings, pipe fittings and exhaust parts, and stainless metalwork such as pots and trays. The SF3015TD trims edges and cuts holes and slots after forming in place of trimming and piercing dies; it is programmed offline from the 3D model, and its 180° dual-station table loads one part while the other is cut."},
              POWER_FAQ, GAS_FAQ, SITE_FAQ, VOLT_FAQ_GENERIC],
         related=[{"href": "fiber-laser-cutting-machine.html", "label": "Fiber laser cutting machines"}, {"href": "laser-welding-machine.html", "label": "Laser welding & cladding"},
                  {"href": "press-brake.html", "label": "Press brakes"}],

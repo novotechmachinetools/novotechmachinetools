@@ -2,11 +2,7 @@
  "_comment": "Hero bullet points link their product names to the family on the page (#id) or, on a hub, to the page of that kind. Each pair is [exact phrase, target]; build.py wraps the first occurrence outside an existing link and stops if a phrase or target is missing (the owner, Nov 1 2026).",
  "3d-laser-cutting-machine": [
   [
-   "SF3015TD five-axis gantry laser",
-   "sf-3d"
-  ],
-  [
-   "RC robot cells",
+   "SF3015TD five-axis laser",
    "sf-3d"
   ]
  ],

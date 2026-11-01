@@ -95,7 +95,7 @@ PAGE_LASER = dict(
           "and NovoTech's warranty.",
     points=["Compact SF1313G / SF1530 series 4 × 4 and 5 × 10 ft, 1.5 – 12 kW; NP open-type 5 × 10 to 6.6 × 20 ft, 3 – 12 kW",
             "H series enclosed lasers with pallet changer: HC 1.5 – 12 kW, H4 6 – 30 kW to 8.3 × 40 ft, H5 heavy-load 40 – 80 kW for 2″ plate",
-            "HM sheet + tube combos, R / TX plate gantries to 10 × 164 ft with ±45° bevel, TD five-axis and RC robot 3D lasers, coil-fed lines"],
+            "HM sheet + tube combos, R / TX plate gantries to 10 × 164 ft with ±45° bevel, the TD five-axis 3D laser, coil-fed lines"],
     hero="sf-h-1", minis=["sf-np-1", "sf-r-1"],
     groups=[("laser-senfeng", "Senfeng fiber lasers — the value line", "From the first 4 × 4 ft machine to 60 kW plate gantries: compact, NP open-type, H series with pallet changer, sheet + tube, plate, 3D and coil-fed.", BRAND)],
     faq=[{"q": "Which Senfeng laser for a first machine?",
@@ -195,7 +195,7 @@ BROCHURES = {
                     "speeds no plasma or punch can match, with a clean edge and no tooling. Senfeng's range starts with single-table enclosed machines that ship in one "
                     "container and plug in the day they arrive, and the NP open-type laser that is the lowest-priced 12 kW machine in the catalogue; the H series adds a "
                     "full enclosure and a 20-second pallet changer for production, in 1.5 to 80 kW; the HM cuts sheet and tube on one machine; the R and TX gantries take "
-                    "plate to 10 × 164 ft with ±45° bevels; the TD five-axis machine and RC robot cells trim formed parts; and the coil-fed lines cut straight from the "
+                    "plate to 10 × 164 ft with ±45° bevels; the TD five-axis machine trims formed parts; and the coil-fed lines cut straight from the "
                     "coil with no sheet handling.", ABOUT_SENFENG],
         country="China", families=[f["id"] for f in D.LASER_FAMILIES], family_sets=["dener"],
         groups=[{"title": "Sheet lasers", "families": ["sf-h", "sf-compact", "sf-np", "sf-1313g", "sf-hm"]}, {"title": "Plate, 3D and coil-fed lasers", "families": ["sf-r", "sf-3d", "sf-coil"]}],
