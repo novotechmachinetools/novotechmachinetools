@@ -21,25 +21,35 @@
    "name": "GFL fiber laser cutting machines, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
    "short": "GFL fiber lasers",
    "models_label": "GFL 3015 · 4020 · 6020 · 3 – 40 kW",
-   "summary": "The GFL is Dener's production sheet laser: a gantry on a stress-relieved frame accelerating at 1.5 G to 394 ft/min, with a pallet changer so the next sheet is loaded while the first is cut. Three table sizes — 5 × 10, 6.6 × 13 and 6.6 × 20 ft — with fiber sources from 3 to 40 kW, a Precitec autofocus head, nesting software and production reports on the control, and the pneumatic extraction and scrap boxes that keep the floor clean. The machine for a job shop that cuts all day.",
+   "summary": "The GFL is Dener's production sheet laser: a gantry on a stress-relieved, one-piece welded frame that moves at 394 ft/min with 1.5 G acceleration, and a shuttle table whose two tables change in 16 to 30 seconds, so the next sheet is loaded while the first is cut. Three table sizes — 10 × 5, 13 × 6.6 and 20 × 6.6 ft — with fiber sources from 3 to 40 kW (Raycus, IPG optional), a Boji BLT autofocus head, the FSCUT control with CypCut and CypNest nesting, six pneumatic extraction compartments and six scrap boxes on wheels. The machine for a job shop that cuts all day.",
    "features": [
-    "1.5 G acceleration, 394 ft/min (120 m/min) axis speed, ±0.03 mm positioning",
-    "3 to 40 kW fiber sources; 6 kW cuts 3/4″ mild steel, 12 kW 1″",
-    "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
-    "Stress-relieved welded frame; space-frame bridge for high acceleration",
-    "Shuttle table / pallet changer so loading overlaps cutting",
-    "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
-    "CNC control with nesting software, cutting database and production reports; remote diagnostics",
-    "Laser-safe viewing glass; CE safety",
-    "Chiller, air/nitrogen/oxygen assist-gas system",
+    "X, Y 394 ft/min (120 m/min) at 1.5 G; Z axis 1 G with a 13.8″ (350 mm) stroke; ±0.05 mm positioning, ±0.03 mm repeatability",
+    "Shuttle table: two exchangeable tables, changed in 16 s (3015), 22 s (4020) or 30 s (6020) while the next sheet is loaded",
+    "Raycus fiber laser source (IPG optional); Boji BLT autofocus cutting head — BLT 421S for 3 – 8 kW, BLT 643H for 12 – 15 kW, BLT 662H for 20 kW — with capacitive height sensing and a quick-change optics drawer: lens change in 2 minutes",
+    "FSCUT 4000 (3 – 8 kW) or FSCUT 8000 (12 – 20 kW) EtherCAT control with CypCut or HypCut, CypNest nesting, a camera view of the working area and air cutting",
+    "Stress-relieved one-piece welded frame finish-machined on a 5-axis portal mill; space-geometry bridge for high acceleration",
+    "Framo Morat rack and pinion with planetary gearboxes, THK linear guides, Yaskawa servo drives, central automatic lubrication",
+    "Six pneumatic extraction compartments switched by cutting position; six scrap boxes on wheels",
+    "S&A dual-circuit chiller; proportional cutting-gas pressure control for oxygen, nitrogen and air",
+    "Light curtain, emergency stops and status buzzer; front sliding door with laser-safe glass, rear pneumatic door",
+    "Automatic nozzle cleaning and calibration on the sheet; starting kit of nozzles, ceramics and protective windows",
     "CSA-approved electrical panel; 600 V with transformer"
    ],
    "optional": [
+    "Precitec ProCutter 2.0 cutting head",
+    "IPG YLS fiber laser source",
+    "Fanuc CNC control",
+    "Air conditioner for the electrical cabinet",
+    "Chemical air dryer",
+    "Metalix cncKad CAD/CAM software",
+    "CNC-controlled scrap conveyor",
+    "Fume extraction filter",
+    "UPS",
+    "Voltage stabilizer",
     "Automatic loading / unloading tower",
     "Sheet storage automation",
     "Bevel cutting head",
     "Film-removal and marking functions",
-    "Dust collector",
     "Custom voltage: 208 V, 240 V or 480 V 3-phase"
    ],
    "images": [
@@ -52,6 +62,15 @@
     "dn-gfl-frame",
     "dn-gfl-head",
     "dn-gfl-control",
+    "dn-gfl-cutting",
+    "dn-gfl-blt-head",
+    "dn-gfl-tables",
+    "dn-gfl-zaxis",
+    "dn-gfl-scrap",
+    "dn-gfl-lube",
+    "dn-gfl-pneumatic",
+    "dn-gfl-cypnest",
+    "dn-gfl-fanuc",
     "dn-gfl-part",
     "dn-gfl-sheet"
    ],
@@ -93,12 +112,24 @@
      "thumb": "video-C0mG6rJkHdU"
     }
    ],
+   "pdf": {
+    "file": "files/NovoTech-Dener-GFL-Fiber-Laser-2026.pdf",
+    "label": "Download the GFL brochure",
+    "size": "PDF · 2.5 MB · imperial units"
+   },
+   "pdf_cta": "Download GFL brochure",
+   "spec_pdf": {
+    "file": "files/NovoTech-Dener-GFL-Fiber-Laser-Technical-Specification-2026.pdf",
+    "label": "Download the GFL full technical specification",
+    "size": "PDF · 3.5 MB · imperial units",
+    "cta": "Download full technical specification"
+   },
    "specs": {
     "kind": "table",
     "tables": [
      {
       "title": "GFL fiber laser cutting machines",
-      "sub": "3 table sizes · 3 – 40 kW · pallet changer",
+      "sub": "3 table sizes · 3 – 40 kW · shuttle table",
       "models": [
        "GFL 3015",
        "GFL 4020",
@@ -107,11 +138,11 @@
       "rows": [
        {
         "label": "Working area L × W",
-        "sub": "nominal",
+        "sub": "nominal · net cutting size",
         "cells": [
-         "10 × 5 ft (3,000 × 1,500 mm)",
-         "13 × 6.6 ft (4,000 × 2,000 mm)",
-         "20 × 6.6 ft (6,000 × 2,000 mm)"
+         "10 × 5 ft (3,050 × 1,530 mm)",
+         "13 × 6.6 ft (4,050 × 2,040 mm)",
+         "20 × 6.6 ft (6,050 × 2,040 mm)"
         ],
         "key": true
        },
@@ -119,9 +150,19 @@
         "label": "Worktable",
         "sub": "",
         "cells": [
-         "pallet changer, 2 tables",
-         "pallet changer, 2 tables",
-         "pallet changer, 2 tables"
+         "shuttle table, 2 tables",
+         "shuttle table, 2 tables",
+         "shuttle table, 2 tables"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table change time",
+        "sub": "",
+        "cells": [
+         "16 s",
+         "22 s",
+         "30 s"
         ],
         "key": false
        },
@@ -136,18 +177,58 @@
         "key": false
        },
        {
+        "label": "Laser source",
+        "sub": "",
+        "cells": [
+         "Raycus · IPG optional",
+         "Raycus · IPG optional",
+         "Raycus · IPG optional"
+        ],
+        "key": false
+       },
+       {
+        "label": "Cutting head",
+        "sub": "",
+        "cells": [
+         "Boji BLT autofocus · Precitec optional",
+         "Boji BLT autofocus · Precitec optional",
+         "Boji BLT autofocus · Precitec optional"
+        ],
+        "key": false
+       },
+       {
+        "label": "CNC control",
+        "sub": "",
+        "cells": [
+         "FSCUT · CypCut / HypCut · Fanuc optional",
+         "FSCUT · CypCut / HypCut · Fanuc optional",
+         "FSCUT · CypCut / HypCut · Fanuc optional"
+        ],
+        "key": false
+       },
+       {
         "label": "Positioning accuracy",
         "sub": "",
         "cells": [
-         "±0.03 mm (±0.0012″)",
-         "±0.03 mm (±0.0012″)",
-         "±0.03 mm (±0.0012″)"
+         "±0.002″ (±0.05 mm)",
+         "±0.002″ (±0.05 mm)",
+         "±0.002″ (±0.05 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Repeatability",
+        "sub": "",
+        "cells": [
+         "±0.0012″ (±0.03 mm)",
+         "±0.0012″ (±0.03 mm)",
+         "±0.0012″ (±0.03 mm)"
         ],
         "key": false
        },
        {
         "label": "Max. axis speed",
-        "sub": "",
+        "sub": "X, Y",
         "cells": [
          "394 ft/min (120 m/min)",
          "394 ft/min (120 m/min)",
@@ -156,12 +237,32 @@
         "key": false
        },
        {
-        "label": "Max. acceleration",
+        "label": "Max. Z-axis speed",
         "sub": "",
+        "cells": [
+         "164 ft/min (50 m/min)",
+         "164 ft/min (50 m/min)",
+         "164 ft/min (50 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "X, Y",
         "cells": [
          "1.5 G",
          "1.5 G",
          "1.5 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z-axis acceleration",
+        "sub": "",
+        "cells": [
+         "1 G",
+         "1 G",
+         "1 G"
         ],
         "key": false
        },
@@ -176,6 +277,46 @@
         "key": false
        },
        {
+        "label": "Axis drives",
+        "sub": "",
+        "cells": [
+         "X, Y rack and pinion · Z ball screw",
+         "X, Y rack and pinion · Z ball screw",
+         "X, Y rack and pinion · Z ball screw"
+        ],
+        "key": false
+       },
+       {
+        "label": "Drive components",
+        "sub": "",
+        "cells": [
+         "Framo Morat · Yaskawa · THK",
+         "Framo Morat · Yaskawa · THK",
+         "Framo Morat · Yaskawa · THK"
+        ],
+        "key": false
+       },
+       {
+        "label": "Assist gas",
+        "sub": "",
+        "cells": [
+         "oxygen, nitrogen, air",
+         "oxygen, nitrogen, air",
+         "oxygen, nitrogen, air"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "approx.",
+        "cells": [
+         "18,739 lb (8,500 kg)",
+         "22,487 lb (10,200 kg)",
+         "27,778 lb (12,600 kg)"
+        ],
+        "key": false
+       },
+       {
         "label": "Voltage",
         "sub": "",
         "cells": [
@@ -186,37 +327,167 @@
         "key": false
        }
       ]
+     },
+     {
+      "title": "GFL maximum cutting thickness by laser source power",
+      "sub": "Dener cutting chart · 3 – 20 kW",
+      "models": [
+       "3 kW",
+       "4 kW",
+       "6 kW",
+       "8 kW",
+       "12 kW",
+       "15 kW",
+       "20 kW"
+      ],
+      "rows": [
+       {
+        "label": "Mild steel",
+        "sub": "",
+        "cells": [
+         "11/16″ (18 mm)",
+         "13/16″ (20 mm)",
+         "1″ (25 mm)",
+         "1-3/16″ (30 mm)",
+         "1-3/8″ (35 mm)",
+         "1-9/16″ (40 mm)",
+         "1-15/16″ (50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stainless steel",
+        "sub": "",
+        "cells": [
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "9/16″ (15 mm)",
+         "1″ (25 mm)",
+         "1-3/16″ (30 mm)",
+         "1-3/8″ (35 mm)",
+         "1-15/16″ (50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Aluminum",
+        "sub": "",
+        "cells": [
+         "1/4″ (6 mm)",
+         "5/16″ (8 mm)",
+         "9/16″ (15 mm)",
+         "1″ (25 mm)",
+         "1-3/16″ (30 mm)",
+         "1-3/8″ (35 mm)",
+         "1-9/16″ (40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Copper",
+        "sub": "",
+        "cells": [
+         "3/16″ (4 mm)",
+         "1/4″ (6 mm)",
+         "5/16″ (8 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (12 mm)",
+         "1/2″ (12 mm)",
+         "1/2″ (12 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Brass",
+        "sub": "",
+        "cells": [
+         "3/16″ (4 mm)",
+         "1/4″ (6 mm)",
+         "3/8″ (10 mm)",
+         "1/2″ (12 mm)",
+         "9/16″ (15 mm)",
+         "11/16″ (18 mm)",
+         "13/16″ (20 mm)"
+        ],
+        "key": false
+       }
+      ],
+      "corner": "Material"
+     },
+     {
+      "title": "GFL electrical consumption by laser source power",
+      "sub": "machine total, kW",
+      "models": [
+       "3 kW",
+       "4 kW",
+       "6 kW",
+       "8 kW",
+       "12 kW",
+       "15 kW",
+       "20 kW"
+      ],
+      "rows": [
+       {
+        "label": "Power consumption",
+        "sub": "",
+        "cells": [
+         "35.8 kW",
+         "39.7 kW",
+         "46.4 kW",
+         "51.45 kW",
+         "64 kW",
+         "80 kW",
+         "96 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Fiber core diameter",
+        "sub": "",
+        "cells": [
+         "50 µm",
+         "50 µm",
+         "50 µm",
+         "100 µm",
+         "100 µm",
+         "100 µm",
+         "100 µm"
+        ],
+        "key": false
+       }
+      ],
+      "corner": "Laser source"
      }
     ],
     "models": [
      {
       "name": "GFL 3015",
       "glance": [
-       "10 × 5 ft (3,000 × 1,500 mm)",
+       "10 × 5 ft (3,050 × 1,530 mm)",
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "394 ft/min (120 m/min)",
        "1.5 G",
-       "pallet changer, 2 tables"
+       "shuttle table, 2 tables"
       ]
      },
      {
       "name": "GFL 4020",
       "glance": [
-       "13 × 6.6 ft (4,000 × 2,000 mm)",
+       "13 × 6.6 ft (4,050 × 2,040 mm)",
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "394 ft/min (120 m/min)",
        "1.5 G",
-       "pallet changer, 2 tables"
+       "shuttle table, 2 tables"
       ]
      },
      {
       "name": "GFL 6020",
       "glance": [
-       "20 × 6.6 ft (6,000 × 2,000 mm)",
+       "20 × 6.6 ft (6,050 × 2,040 mm)",
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "394 ft/min (120 m/min)",
        "1.5 G",
-       "pallet changer, 2 tables"
+       "shuttle table, 2 tables"
       ]
      }
     ],
@@ -228,12 +499,7 @@
      "worktable"
     ],
     "caps": {},
-    "note": "The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us for the cutting chart for your material."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
-    "label": "Download the fiber laser brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "note": "Working area: the nominal table size (3015 = 10 × 5 ft) and Dener's net cutting size in mm. Every table size is available with any of the listed laser sources; the maximum cutting thickness for 3 to 20 kW sources is in the cutting chart below — thickness varies with material quality, operator settings and cutting speed."
    },
    "group": "ls-premium-gfl"
   },
@@ -245,15 +511,16 @@
    "models_label": "Smart 3015 – 12526 · 6 table sizes · 3 – 40 kW",
    "summary": "The Smart series is the economy sheet laser from the same Turkish factory: a cabin with laser-safe glass, a shuttle table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting area, control and remote handset.",
    "features": [
-    "Cabin with laser-safe viewing glass; shuttle table",
-    "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning",
-    "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
-    "Stress-relieved welded frame; space-frame bridge for high acceleration",
-    "Shuttle table / pallet changer so loading overlaps cutting",
-    "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
-    "CNC control with nesting software, cutting database and production reports; remote diagnostics",
-    "Laser-safe viewing glass; CE safety",
-    "Chiller, air/nitrogen/oxygen assist-gas system",
+    "Cabin with laser-safe viewing glass; shuttle table so loading overlaps cutting",
+    "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm precision",
+    "Raycus RFL series fiber laser source; BLT series autofocus cutting head with a quick-change optics drawer — lens change in 2 minutes",
+    "FSCUT control with CypNest nesting software; handwheel for fine axis moves; resume cutting from any point after an alarm",
+    "Inovance servo motors and drives, Techmech reducers, TWEBOLUN rack and pinion, SMC gas pressure regulators",
+    "S&A CWFL dual-circuit chiller",
+    "Stress-relieved welded frame; space-geometry bridge for high acceleration",
+    "Six pneumatic fume-extraction compartments and six scrap boxes on wheels; prepared for a fume extraction system",
+    "Light safety barriers, emergency stops and status buzzer; the head stops before it hits a part or the pallet",
+    "Air, nitrogen and oxygen assist gas",
     "CSA-approved electrical panel; 600 V with transformer"
    ],
    "optional": [
@@ -266,8 +533,15 @@
    ],
    "images": [
     "dn-smart-1",
-    "dn-smart-2"
+    "dn-smart-2",
+    "dn-smart-open-front",
+    "dn-smart-cutting"
    ],
+   "pdf": {
+    "file": "files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf",
+    "label": "Download the Smart fiber laser brochure",
+    "size": "PDF · 2.7 MB · imperial units"
+   },
    "videos": [
     {
      "id": "4Yp6X9tP6J8",
@@ -456,11 +730,6 @@
     ],
     "caps": {},
     "note": "The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us for the cutting chart for your material."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
-    "label": "Download the fiber laser brochure",
-    "size": "PDF · 1 MB · imperial units"
    },
    "group": "ls-premium-closed"
   },
@@ -2208,13 +2477,15 @@
    "summary": "The large-format Smart: a single table from 8.2 × 20 ft to 13 × 82 ft with a semi-closed cabin that travels with the gantry over the cut, for long plates, beams and parts that do not fit a standard sheet. ±0.01 mm positioning, 246 ft/min and 3 to 40 kW sources — the 20 – 40 kW machines cut 1-1/2″ plate and thicker.",
    "features": [
     "Single table to 13 × 82 ft (4 × 25 m); semi-closed cabin on the gantry, loading from any side",
-    "±0.01 mm positioning, 246 ft/min (75 m/min), 0.6 G",
-    "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
-    "Stress-relieved welded frame; space-frame bridge for high acceleration",
-    "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
-    "CNC control with nesting software, cutting database and production reports; remote diagnostics",
-    "Laser-safe viewing glass; CE safety",
-    "Chiller, air/nitrogen/oxygen assist-gas system",
+    "±0.01 mm precision, 246 ft/min (75 m/min), 0.6 G",
+    "Raycus RFL series fiber laser source; BLT series autofocus cutting head with a quick-change optics drawer — lens change in 2 minutes",
+    "FSCUT control with CypNest nesting software; handwheel for fine axis moves; resume cutting from any point after an alarm",
+    "Inovance servo motors and drives, Techmech reducers, TWEBOLUN rack and pinion, SMC gas pressure regulators",
+    "S&A CWFL dual-circuit chiller",
+    "Stress-relieved welded frame; space-geometry bridge for high acceleration",
+    "Six pneumatic fume-extraction compartments and six scrap boxes on wheels; prepared for a fume extraction system",
+    "Light safety barriers, emergency stops and status buzzer; the head stops before it hits a part or the pallet",
+    "Air, nitrogen and oxygen assist gas",
     "CSA-approved electrical panel; 600 V with transformer"
    ],
    "optional": [
@@ -2227,8 +2498,14 @@
    ],
    "images": [
     "dn-smart-semi-1",
-    "dn-smart-semi-2"
+    "dn-smart-semi-2",
+    "dn-smart-semi-close"
    ],
+   "pdf": {
+    "file": "files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf",
+    "label": "Download the Smart fiber laser brochure",
+    "size": "PDF · 2.7 MB · imperial units"
+   },
    "videos": [],
    "specs": {
     "kind": "table",
@@ -2428,11 +2705,6 @@
     ],
     "caps": {},
     "note": "The model number gives the nominal working area (3015 = 3,000 × 1,500 mm); every table size is available with any of the listed laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us for the cutting chart for your material."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
-    "label": "Download the fiber laser brochure",
-    "size": "PDF · 1 MB · imperial units"
    },
    "group": "ls-premium-semi"
   },

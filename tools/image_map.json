@@ -32777,5 +32777,181 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "video-TLcK4UruV6Q": {
+  "src": "/home/claude/gms-site/yt/TLcK4UruV6Q.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-N4kq8pCHfiE": {
+  "src": "/home/claude/gms-site/yt/N4kq8pCHfiE.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-jburIQ8nq7M": {
+  "src": "/home/claude/gms-site/yt/jburIQ8nq7M.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-c2qVgjnRMtA": {
+  "src": "/home/claude/gms-site/yt/c2qVgjnRMtA.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-bZn_-YbHRbY": {
+  "src": "/home/claude/gms-site/yt/bZn_-YbHRbY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-ADlHPXm2XMY": {
+  "src": "/home/claude/gms-site/yt/ADlHPXm2XMY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-r104ym5WTCg": {
+  "src": "/home/claude/gms-site/yt/r104ym5WTCg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-mWr3geTlk8s": {
+  "src": "/home/claude/gms-site/yt/mWr3geTlk8s.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "dn-gfl-cutting": {
+  "src": "tools/src-images/dener-brochure/gfl/laser-power.jpg",
+  "alt": "GFL cutting head at work over the sheet, sparks falling through the slats",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-blt-head": {
+  "src": "tools/src-images/dener-brochure/gfl/head-leds.jpg",
+  "alt": "Boji BLT autofocus cutting head (standard) with LED indicators for power, run, link and sensor",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-tables": {
+  "src": "tools/src-images/dener-brochure/pro/cutting-tables.jpg",
+  "alt": "Shuttle table (standard): the two exchangeable tables change places in 16 – 30 seconds",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-zaxis": {
+  "src": "tools/src-images/dener-brochure/pro/z-axis.png",
+  "alt": "GFL Z axis on the gantry: 1 G acceleration, 13.8″ (350 mm) stroke",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-pneumatic": {
+  "src": "tools/src-images/dener-brochure/pro/pneumatic.png",
+  "alt": "Pneumatic system with the air treatment unit (standard; chemical dryer optional)",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-lube": {
+  "src": "tools/src-images/dener-brochure/pro/lubrication.jpg",
+  "alt": "Central automatic lubrication: the pump and the distributors (standard)",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-scrap": {
+  "src": "tools/src-images/dener-brochure/pro/scrap-boxes.jpg",
+  "alt": "Six scrap boxes on wheels pull out of the frame (standard)",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-cypnest": {
+  "src": "tools/src-images/dener-brochure/gfl/cypnest.png",
+  "alt": "CypNest nesting software (standard)",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-gfl-fanuc": {
+  "src": "tools/src-images/dener-brochure/pro/fanuc.jpg",
+  "alt": "Fanuc CNC control with handwheel pendant (optional)",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-smart-open-front": {
+  "src": "tools/src-images/dener-brochure/smart/open-front.png",
+  "alt": "Smart with the front open: cutting area, CNC control unit and remote handset",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-smart-cutting": {
+  "src": "tools/src-images/dener-brochure/smart/precision.jpg",
+  "alt": "Smart cutting head at work, sparks under the nozzle",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-smart-semi-close": {
+  "src": "tools/src-images/dener-brochure/smart/semi-close.jpg",
+  "alt": "Smart semi-closed: the cabin rides on the gantry over the single table",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pdf-novotech-dener-gfl-fiber-laser-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-dener-gfl-fiber-laser-2026.jpg",
+  "alt": "Cover of the Dener GFL Fiber Laser 2026 PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false
+ },
+ "pdf-novotech-dener-gfl-fiber-laser-technical-specification-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-dener-gfl-fiber-laser-technical-specification-2026.jpg",
+  "alt": "Cover of the Dener GFL Fiber Laser Technical Specification 2026 PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false
+ },
+ "pdf-novotech-dener-smart-fiber-laser-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-dener-smart-fiber-laser-2026.jpg",
+  "alt": "Cover of the Dener Smart Fiber Laser 2026 PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false
  }
 }

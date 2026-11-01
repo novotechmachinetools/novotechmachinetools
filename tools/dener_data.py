@@ -578,8 +578,60 @@ def laser_table(title, sub, prefix, codes, power, precision, speed_mmin, accel, 
     return table(title, sub, models, rows)
 
 
-T_GFL = laser_table("GFL fiber laser cutting machines", "3 table sizes · 3 – 40 kW · pallet changer", "GFL", ["3015", "4020", "6020"], POWERS, "±0.03 mm (±0.0012″)", 120, "1.5 G",
-                    "pallet changer, 2 tables", [("Z-axis stroke", "13.8″ (350 mm)")])
+# GFL — the "Pro DC" gantry fiber laser on dener.com. Where Dener's GFL catalogue (GFL_EN, Oct 2026) and the PRO offer
+# (PRO Laser 3015 6 & 12 kW) disagree, the catalogue's figure is used (the owner, Nov 1 2026: 1.5 G, 350 mm Z travel), checked
+# against en.dener.com/urun/5/gantry-fiber-lazer (X-Y 1.5 G, Z 1 G, Z travel 350 mm, positioning 0.05, repeatability 0.03 mm,
+# pallet change 16 / 22 / 30 s); details only the PRO offer gives (net cutting size, Z speed, drives, gases, weights, the
+# cutting chart and the power consumption) are added from it.
+GFL = [("GFL 3015", 3050, 1530, 16, 8500), ("GFL 4020", 4050, 2040, 22, 10200), ("GFL 6020", 6050, 2040, 30, 12600)]
+GFL_KW = [3, 4, 6, 8, 12, 15, 20]
+GFL_CUT = {"Mild steel": [18, 20, 25, 30, 35, 40, 50], "Stainless steel": [8, 10, 15, 25, 30, 35, 50],
+           "Aluminum": [6, 8, 15, 25, 30, 35, 40], "Copper": [4, 6, 8, 10, 12, 12, 12], "Brass": [4, 6, 10, 12, 15, 18, 20]}
+GFL_KWH = ["35.8", "39.7", "46.4", "51.45", "64", "80", "96"]
+GFL_CORE = [50, 50, 50, 100, 100, 100, 100]
+
+
+def frac_in(mm):
+    """plate thickness in the nearest 1/16″ (denominators 2, 4, 8, 16 only): 18 → 11/16, 35 → 1-3/8, 50 → 1-15/16"""
+    from fractions import Fraction
+    n = round(mm / 25.4 * 16)
+    w, r = divmod(n, 16)
+    f = Fraction(r, 16)
+    if not r:
+        return f"{w}″"
+    return (f"{w}-" if w else "") + f"{f.numerator}/{f.denominator}″"
+
+
+T_GFL = table("GFL fiber laser cutting machines", "3 table sizes · 3 – 40 kW · shuttle table", [g[0] for g in GFL], [
+    ("Working area L × W", "nominal · net cutting size", [f"{nom_ft(int(m[-4:-2]) * 100)} × {nom_ft(int(m[-2:]) * 100)} ft ({l:,} × {w:,} mm)"
+                                                          for m, l, w, _, _ in GFL]),
+    ("Worktable", "shuttle table, 2 tables"),
+    ("Table change time", [f"{t} s" for *_, t, _ in GFL]),
+    ("Laser source power", "options", "3 / 6 / 12 / 20 / 30 / 40 kW"),
+    ("Laser source", "Raycus · IPG optional"),
+    ("Cutting head", "Boji BLT autofocus · Precitec optional"),
+    ("CNC control", "FSCUT · CypCut / HypCut · Fanuc optional"),
+    ("Positioning accuracy", "±0.002″ (±0.05 mm)"),
+    ("Repeatability", "±0.0012″ (±0.03 mm)"),
+    ("Max. axis speed", "X, Y", mmin(120)),
+    ("Max. Z-axis speed", mmin(50)),
+    ("Max. acceleration", "X, Y", "1.5 G"),
+    ("Z-axis acceleration", "1 G"),
+    ("Z-axis stroke", inch(350)),
+    ("Axis drives", "X, Y rack and pinion · Z ball screw"),
+    ("Drive components", "Framo Morat · Yaskawa · THK"),
+    ("Assist gas", "oxygen, nitrogen, air"),
+    ("Weight", "approx.", [weight(kg) for *_, kg in GFL]),
+    ("Voltage", "380 V 50/60 Hz · 600 V with transformer")])
+T_GFL_CUT = table("GFL maximum cutting thickness by laser source power", "Dener cutting chart · 3 – 20 kW",
+                  [f"{k} kW" for k in GFL_KW], [(m, [f"{frac_in(v)} ({v} mm)" for v in vals]) for m, vals in GFL_CUT.items()])
+T_GFL_CUT["corner"] = "Material"
+T_GFL_POWER = table("GFL electrical consumption by laser source power", "machine total, kW", [f"{k} kW" for k in GFL_KW],
+                    [("Power consumption", [f"{v} kW" for v in GFL_KWH]), ("Fiber core diameter", [f"{v} µm" for v in GFL_CORE])])
+T_GFL_POWER["corner"] = "Laser source"
+NOTE_GFL = ("Working area: the nominal table size (3015 = 10 × 5 ft) and Dener's net cutting size in mm. Every table size is available with "
+            "any of the listed laser sources; the maximum cutting thickness for 3 to 20 kW sources is in the cutting chart below — "
+            "thickness varies with material quality, operator settings and cutting speed.")
 T_SMART_C = laser_table("Smart fiber lasers with shuttle table", "6 table sizes · 3 – 40 kW", "Smart", ["3015", "4020", "6020", "6025", "8025", "12526"], POWERS,
                         "±0.03 mm (±0.0012″)", 140, "1 G", "shuttle table")
 T_SMART_S = laser_table("Smart semi-closed fiber lasers · single table", "7 table sizes · 3 – 40 kW", "Smart", ["6025", "8025", "12525", "14035", "16045", "25031", "25040"],
@@ -594,24 +646,54 @@ LS_STD = ["Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutt
           "CNC control with nesting software, cutting database and production reports; remote diagnostics", "Laser-safe viewing glass; CE safety",
           "Chiller, air/nitrogen/oxygen assist-gas system", "CSA-approved electrical panel; 600 V with transformer"]
 LS_OPT = ["Automatic loading / unloading tower", "Sheet storage automation", "Bevel cutting head", "Film-removal and marking functions", "Dust collector", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+GFL_STD = ["X, Y 394 ft/min (120 m/min) at 1.5 G; Z axis 1 G with a 13.8″ (350 mm) stroke; ±0.05 mm positioning, ±0.03 mm repeatability",
+           "Shuttle table: two exchangeable tables, changed in 16 s (3015), 22 s (4020) or 30 s (6020) while the next sheet is loaded",
+           "Raycus fiber laser source (IPG optional); Boji BLT autofocus cutting head — BLT 421S for 3 – 8 kW, BLT 643H for 12 – 15 kW, BLT 662H for 20 kW — "
+           "with capacitive height sensing and a quick-change optics drawer: lens change in 2 minutes",
+           "FSCUT 4000 (3 – 8 kW) or FSCUT 8000 (12 – 20 kW) EtherCAT control with CypCut or HypCut, CypNest nesting, a camera view of the working "
+           "area and air cutting",
+           "Stress-relieved one-piece welded frame finish-machined on a 5-axis portal mill; space-geometry bridge for high acceleration",
+           "Framo Morat rack and pinion with planetary gearboxes, THK linear guides, Yaskawa servo drives, central automatic lubrication",
+           "Six pneumatic extraction compartments switched by cutting position; six scrap boxes on wheels",
+           "S&A dual-circuit chiller; proportional cutting-gas pressure control for oxygen, nitrogen and air",
+           "Light curtain, emergency stops and status buzzer; front sliding door with laser-safe glass, rear pneumatic door",
+           "Automatic nozzle cleaning and calibration on the sheet; starting kit of nozzles, ceramics and protective windows",
+           "CSA-approved electrical panel; 600 V with transformer"]
+GFL_OPT = ["Precitec ProCutter 2.0 cutting head", "IPG YLS fiber laser source", "Fanuc CNC control", "Air conditioner for the electrical cabinet",
+           "Chemical air dryer", "Metalix cncKad CAD/CAM software", "CNC-controlled scrap conveyor", "Fume extraction filter", "UPS",
+           "Voltage stabilizer"] + [o for o in LS_OPT if o != "Dust collector"]
+SMART_STD = ["Raycus RFL series fiber laser source; BLT series autofocus cutting head with a quick-change optics drawer — lens change in 2 minutes",
+             "FSCUT control with CypNest nesting software; handwheel for fine axis moves; resume cutting from any point after an alarm",
+             "Inovance servo motors and drives, Techmech reducers, TWEBOLUN rack and pinion, SMC gas pressure regulators",
+             "S&A CWFL dual-circuit chiller", "Stress-relieved welded frame; space-geometry bridge for high acceleration",
+             "Six pneumatic fume-extraction compartments and six scrap boxes on wheels; prepared for a fume extraction system",
+             "Light safety barriers, emergency stops and status buzzer; the head stops before it hits a part or the pallet",
+             "Air, nitrogen and oxygen assist gas", "CSA-approved electrical panel; 600 V with transformer"]
 
 LASER_FAMILIES = [
     dict(id="dn-gfl", group="laser-gfl", page=P_LASER, brand=BRAND,
          name="GFL fiber laser cutting machines, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
          short="GFL fiber lasers",
          models_label="GFL 3015 · 4020 · 6020 · 3 – 40 kW",
-         summary="The GFL is Dener's production sheet laser: a gantry on a stress-relieved frame accelerating at 1.5 G to 394 ft/min, with a "
-                 "pallet changer so the next sheet is loaded while the first is cut. Three table sizes — 5 × 10, 6.6 × 13 and 6.6 × 20 ft — with "
-                 "fiber sources from 3 to 40 kW, a Precitec autofocus head, nesting software and production reports on the control, and the "
-                 "pneumatic extraction and scrap boxes that keep the floor clean. The machine for a job shop that cuts all day.",
-         features=["1.5 G acceleration, 394 ft/min (120 m/min) axis speed, ±0.03 mm positioning", "3 to 40 kW fiber sources; 6 kW cuts 3/4″ mild steel, 12 kW 1″"] + LS_STD,
-         optional=LS_OPT,
-         images=["dn-gfl-1", "dn-gfl-3", "dn-gfl-2", "dn-gfl-3015", "dn-gfl-6020", "dn-gfl-open", "dn-gfl-frame", "dn-gfl-head", "dn-gfl-control", "dn-gfl-part", "dn-gfl-sheet"],
+         summary="The GFL is Dener's production sheet laser: a gantry on a stress-relieved, one-piece welded frame that moves at 394 ft/min "
+                 "with 1.5 G acceleration, and a shuttle table whose two tables change in 16 to 30 seconds, so the next sheet is loaded while "
+                 "the first is cut. Three table sizes — 10 × 5, 13 × 6.6 and 20 × 6.6 ft — with fiber sources from 3 to 40 kW (Raycus, IPG "
+                 "optional), a Boji BLT autofocus head, the FSCUT control with CypCut and CypNest nesting, six pneumatic extraction "
+                 "compartments and six scrap boxes on wheels. The machine for a job shop that cuts all day.",
+         features=GFL_STD, optional=GFL_OPT,
+         # the detail photos after dn-gfl-control come from Dener's GFL catalogue and the PRO offer (the owner, Nov 1 2026)
+         images=["dn-gfl-1", "dn-gfl-3", "dn-gfl-2", "dn-gfl-3015", "dn-gfl-6020", "dn-gfl-open", "dn-gfl-frame", "dn-gfl-head", "dn-gfl-control",
+                 "dn-gfl-cutting", "dn-gfl-blt-head", "dn-gfl-tables", "dn-gfl-zaxis", "dn-gfl-scrap", "dn-gfl-lube", "dn-gfl-pneumatic",
+                 "dn-gfl-cypnest", "dn-gfl-fanuc", "dn-gfl-part", "dn-gfl-sheet"],
          videos=vids(("P3ynLUu2VYU", "DENER GFL 10 × 5 ft 6 kW laser cutting machine"), ("VjuvZWb_O_g", "DENER GFL laser cutting machine"),
                      ("0Cz5xYoNVec", "DENER GFL laser cutting machine"), ("NxTq4uw3n5k", "DENER GFL laser cutting machine"),
                      ("L9fTrifVFiA", "DENER 6 kW / 4 kW / 2 kW fiber laser cutting comparison"), ("C0mG6rJkHdU", "6 kW fiber laser cutting 15 mm mild steel")),
          # the "Intelligent air cutting" film (EFTY5a-Ri1Q) is Senfeng's, not Dener's — off the GFL (the owner, Nov 1 2026)
-         specs=spec([T_GFL], LS_GK, LS_G_FROM, NOTE_LS)),
+         pdf=dict(file="files/NovoTech-Dener-GFL-Fiber-Laser-2026.pdf", label="Download the GFL brochure", size="PDF · 2.5 MB · imperial units"),
+         pdf_cta="Download GFL brochure",
+         spec_pdf=dict(file="files/NovoTech-Dener-GFL-Fiber-Laser-Technical-Specification-2026.pdf", label="Download the GFL full technical specification",
+                       size="PDF · 3.5 MB · imperial units", cta="Download full technical specification"),
+         specs=dict(spec([T_GFL], LS_GK, LS_G_FROM, NOTE_GFL), tables=[T_GFL, T_GFL_CUT, T_GFL_POWER])),
     dict(id="dn-smart-closed", group="laser-smart", page=P_LASER, brand=BRAND,
          name="Smart fiber lasers with shuttle table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
          short="Smart lasers with shuttle table",
@@ -620,10 +702,11 @@ LASER_FAMILIES = [
                  "shuttle table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting "
                  "heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting "
                  "area, control and remote handset.",
-         features=["Cabin with laser-safe viewing glass; shuttle table", "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning"] + LS_STD,
+         features=["Cabin with laser-safe viewing glass; shuttle table so loading overlaps cutting", "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm precision"] + SMART_STD,
          optional=LS_OPT,
          # the Legend shop-floor photo (dn-laser-web) and videos zDGupa7NevE, 9J_m5e1Z7-M, oM9GCeSY9EI are off the Smart (the owner, Nov 1 2026)
-         images=["dn-smart-1", "dn-smart-2"],
+         images=["dn-smart-1", "dn-smart-2", "dn-smart-open-front", "dn-smart-cutting"],
+         pdf=dict(file="files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf", label="Download the Smart fiber laser brochure", size="PDF · 2.7 MB · imperial units"),
          videos=vids(("4Yp6X9tP6J8", "DENER SMART series laser cutting machine")),
          specs=spec([T_SMART_C], LS_GK, LS_G_FROM, NOTE_LS)),
     dict(id="dn-smart-semi", group="laser-smart", page=P_LASER, brand=BRAND,
@@ -633,9 +716,10 @@ LASER_FAMILIES = [
          summary="The large-format Smart: a single table from 8.2 × 20 ft to 13 × 82 ft with a semi-closed cabin that travels with the gantry "
                  "over the cut, for long plates, beams and parts that do not fit a standard sheet. ±0.01 mm positioning, 246 ft/min and 3 to 40 kW sources — the 20 – 40 kW machines "
                  "cut 1-1/2″ plate and thicker.",
-         features=["Single table to 13 × 82 ft (4 × 25 m); semi-closed cabin on the gantry, loading from any side", "±0.01 mm positioning, 246 ft/min (75 m/min), 0.6 G"] + LS_STD[:2] + LS_STD[3:],
+         features=["Single table to 13 × 82 ft (4 × 25 m); semi-closed cabin on the gantry, loading from any side", "±0.01 mm precision, 246 ft/min (75 m/min), 0.6 G"] + SMART_STD,
          optional=LS_OPT,
-         images=["dn-smart-semi-1", "dn-smart-semi-2"],
+         images=["dn-smart-semi-1", "dn-smart-semi-2", "dn-smart-semi-close"],
+         pdf=dict(file="files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf", label="Download the Smart fiber laser brochure", size="PDF · 2.7 MB · imperial units"),
          videos=[],
          specs=spec([T_SMART_S], LS_GK, LS_G_FROM, NOTE_LS)),
 ]

@@ -115,7 +115,7 @@
   },
   {
    "q": "Premium line or value line?",
-   "a": "The premium Dener lasers are built in Turkey on frames rated for 1.5 G, with Precitec heads, IPG / nLIGHT sources, the longest life at high duty and parts stocked in Canada — for two shifts a day. NovoTech's own value line and the Senfeng value line are built in China with their own or Raycus sources, in a wider range — 4 × 4 ft compact machines, 60 – 80 kW plate gantries, sheet-and-tube combos, coil-fed lines — at a lower price; NovoTech stocks the parts and does the service for all of them. Same cut quality at the same power; the premium machine is faster between parts and lasts longer at high duty."
+   "a": "The premium Dener lasers are built in Turkey on frames rated for up to 1.5 G, with Boji BLT autofocus heads and Raycus sources (Precitec and IPG on request), the longest life at high duty and parts stocked in Canada — for two shifts a day. NovoTech's own value line and the Senfeng value line are built in China with their own or Raycus sources, in a wider range — 4 × 4 ft compact machines, 60 – 80 kW plate gantries, sheet-and-tube combos, coil-fed lines — at a lower price; NovoTech stocks the parts and does the service for all of them. Same cut quality at the same power; the premium machine is faster between parts and lasts longer at high duty."
   },
   {
    "q": "What laser power do I need?",
@@ -127,7 +127,7 @@
   },
   {
    "q": "Single table, shuttle table or pallet changer?",
-   "a": "A single-table machine (Senfeng NP and compact, and the large-format Smart semi-closed, ULG and R / TX plate lasers) stops while you unload and load — fine for a few sheets an hour, the lowest price, and the only way to carry very long or heavy plate. A shuttle table or pallet changer (Dener GFL and Smart with shuttle table, NovoTech ULE, Senfeng H series) swaps tables in 15 to 20 seconds, so the laser cuts while the operator loads: the difference between 40 and 70 % spindle time on a busy machine, and the base for a loading tower later."
+   "a": "A single-table machine (Senfeng NP and compact, and the large-format Smart semi-closed, ULG and R / TX plate lasers) stops while you unload and load — fine for a few sheets an hour, the lowest price, and the only way to carry very long or heavy plate. A shuttle table or pallet changer (Dener GFL and Smart with shuttle table, NovoTech ULE, Senfeng H series) swaps tables in 15 to 30 seconds, so the laser cuts while the operator loads: the difference between 40 and 70 % spindle time on a busy machine, and the base for a loading tower later."
   },
   {
    "q": "What about assist gas and fume extraction?",
@@ -139,7 +139,7 @@
   },
   {
    "q": "What does the machine need on site?",
-   "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas, a dust collector and a compressed-air supply for air cutting. A 6 kW 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with a pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada, and the Ontario pre-start health and safety review is prepared by us."
+   "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas, a dust collector and a compressed-air supply for air cutting. A 6 kW 3015 draws about 46 kW in total (Dener's figure for the GFL) and needs roughly 33 × 20 ft with its shuttle table. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada, and the Ontario pre-start health and safety review is prepared by us."
   },
   {
    "q": "What voltage do these machines run on?",
@@ -185,9 +185,20 @@
  "intro_video_text": null,
  "catalogue_pdfs": [
   {
-   "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
-   "label": "Download the fiber laser brochure",
-   "size": "PDF · 1 MB · imperial units"
+   "file": "files/NovoTech-Dener-GFL-Fiber-Laser-2026.pdf",
+   "label": "Download the GFL brochure",
+   "size": "PDF · 2.5 MB · imperial units"
+  },
+  {
+   "file": "files/NovoTech-Dener-GFL-Fiber-Laser-Technical-Specification-2026.pdf",
+   "label": "Download the GFL full technical specification",
+   "size": "PDF · 3.5 MB · imperial units",
+   "cta": "Download full technical specification"
+  },
+  {
+   "file": "files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf",
+   "label": "Download the Smart fiber laser brochure",
+   "size": "PDF · 2.7 MB · imperial units"
   },
   {
    "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",

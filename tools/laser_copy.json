@@ -3,7 +3,7 @@
   "faq": [
    {
     "q": "Dener, NovoTech or Senfeng — which laser should I buy?",
-    "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, parts stocked in Canada and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed shuttle-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."
+    "a": "Dener is the premium line: Turkish-built, with Boji BLT autofocus heads and Raycus sources (Precitec and IPG on request) and a heavier frame rated for 1.5 G, parts stocked in Canada and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed shuttle-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."
    },
    {
     "q": "What laser power do I need?",
@@ -15,7 +15,7 @@
    },
    {
     "q": "Single table, shuttle table or pallet changer?",
-    "a": "A single-table machine (Dener Smart open and semi-closed, NovoTech ULF, Senfeng compact and NP) stops while you unload and load — fine for a few sheets an hour and the lowest price. A shuttle table or pallet changer (Dener GFL and Smart closed, NovoTech ULE, Senfeng H series) swaps tables in 15 to 20 seconds, so the laser cuts while the operator loads: the difference between 40 and 70 % spindle time on a busy machine, and the base for a loading tower later."
+    "a": "A single-table machine (Dener Smart open and semi-closed, NovoTech ULF, Senfeng compact and NP) stops while you unload and load — fine for a few sheets an hour and the lowest price. A shuttle table or pallet changer (Dener GFL and Smart closed, NovoTech ULE, Senfeng H series) swaps tables in 15 to 30 seconds, so the laser cuts while the operator loads: the difference between 40 and 70 % spindle time on a busy machine, and the base for a loading tower later."
    },
    {
     "q": "What about assist gas and fume extraction?",
@@ -27,16 +27,16 @@
    },
    {
     "q": "What does the machine need on site?",
-    "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas, a dust collector and a compressed-air supply for air cutting. A 6 kW 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with a pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada, and the Ontario pre-start health and safety review is prepared by us."
+    "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas, a dust collector and a compressed-air supply for air cutting. A 6 kW 3015 draws about 46 kW in total (Dener's figure for the GFL) and needs roughly 33 × 20 ft with its shuttle table. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada, and the Ontario pre-start health and safety review is prepared by us."
    },
    {
     "q": "What voltage do these machines run on?",
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″ and beyond with the high-power sources, stainless and aluminum to 1″ — at speeds no plasma or punch can match, with a clean edge and no tooling. NovoTech sells three lines of fiber lasers in Canada, each on its own page: the Dener lasers — the premium line, made in Turkey, the GFL production laser with a 1.5 G gantry and pallet changer and the Smart series to 13 × 82 ft, 3 to 40 kW; NovoTech's own value line — the open ULF single-table lasers, the enclosed ULE with a 15-second shuttle table, the ULG ground-rail plate lasers, the ULFT and ULET that cut sheet and tube on one machine, and plate tables to 85 ft with up to 60 kW; and the Senfeng lasers — a value line under its own brand, from 4 × 4 ft compact machines and the NP open-type to the H series with pallet changer to 80 kW, plate gantries to 10 × 164 ft, 3D and coil-fed lines. Below, each line in brief, the laser power guide, and every model in one table of working area, power and speed; every machine comes with a CSA-approved panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
+  "intro": "A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″ and beyond with the high-power sources, stainless and aluminum to 1″ — at speeds no plasma or punch can match, with a clean edge and no tooling. NovoTech sells three lines of fiber lasers in Canada, each on its own page: the Dener lasers — the premium line, made in Turkey, the GFL production laser with a 1.5 G gantry and shuttle table and the Smart series to 13 × 82 ft, 3 to 40 kW; NovoTech's own value line — the open ULF single-table lasers, the enclosed ULE with a 15-second shuttle table, the ULG ground-rail plate lasers, the ULFT and ULET that cut sheet and tube on one machine, and plate tables to 85 ft with up to 60 kW; and the Senfeng lasers — a value line under its own brand, from 4 × 4 ft compact machines and the NP open-type to the H series with pallet changer to 80 kW, plate gantries to 10 × 164 ft, 3D and coil-fed lines. Below, each line in brief, the laser power guide, and every model in one table of working area, power and speed; every machine comes with a CSA-approved panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
   "points": [
-   "Dener premium line: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft; Smart closed, semi-closed and open lasers to 13 × 82 ft; 3 – 40 kW",
+   "Dener premium line: GFL 1.5 G with shuttle table, 5 × 10 to 6.6 × 20 ft; Smart closed, semi-closed and open lasers to 13 × 82 ft; 3 – 40 kW",
    "NovoTech value line: open ULF from 10 × 5 ft, enclosed ULE with 15 s shuttle table to 41 ft, ULG ground-rail to 85 × 14.8 ft, ULFT / ULET sheet + tube, 1.5 – 60 kW",
    "Senfeng value line: compact 4 × 4 ft from 1.5 kW, NP open-type, H series with pallet changer to 80 kW, plate gantries to 164 ft, 3D, coil-fed"
   ],
@@ -155,7 +155,7 @@
   "faq": [
    {
     "q": "GFL or Smart — what is the difference?",
-    "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a pallet changer and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a shuttle table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."
+    "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a shuttle table that changes in 16 to 30 seconds and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a shuttle table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."
    },
    {
     "q": "Which Smart — closed, semi-closed or open?",
@@ -163,7 +163,7 @@
    },
    {
     "q": "What is in a Dener laser as standard?",
-    "a": "An IPG, Raycus or nLIGHT fiber source, a Precitec or Raytools autofocus cutting head with capacitive height sensing and collision protection, a stress-relieved welded frame, pneumatic fume-extraction compartments under the table and scrap boxes on wheels, a chiller, a CNC with nesting software, cutting database and production reports, and a remote handset. Cutting gas regulators, dust collector connections and the CSA-approved panel with a 600 V transformer are included in the NovoTech package."
+    "a": "A Raycus fiber source, a Boji BLT autofocus cutting head with capacitive height sensing, collision protection and a quick-change optics drawer, a stress-relieved welded frame, six pneumatic fume-extraction compartments under the table and six scrap boxes on wheels, an S&A dual-circuit chiller, the FSCUT control with CypNest nesting software, a handwheel, a light curtain and automatic nozzle cleaning. Cutting gas regulators, dust collector connections and the CSA-approved panel with a 600 V transformer are included in the NovoTech package."
    },
    {
     "q": "What can be added later?",
@@ -171,20 +171,20 @@
    },
    {
     "q": "How does Dener compare with the Senfeng value line?",
-    "a": "Dener is the premium line — heavier frame rated for 1.5 G, Precitec heads, IPG / nLIGHT sources, longer life at high duty and parts stocked in Canada. Senfeng builds its own sources and heads and sells for less, with a range Dener does not cover (4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, coil-fed lines). The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."
+    "a": "Dener is the premium line — heavier frame rated for 1.5 G, Boji BLT heads and Raycus sources (Precitec and IPG on request), longer life at high duty and parts stocked in Canada. Senfeng builds its own sources and heads and sells for less, with a range Dener does not cover (4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, coil-fed lines). The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."
    },
    {
     "q": "What does the machine need on site?",
-    "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas — oxygen for mild steel, nitrogen or compressed air for stainless and aluminum — a dust collector and a compressed-air supply. A 6 kW GFL 3015 draws about 30 kW in total and needs roughly 33 × 20 ft with the pallet changer. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada."
+    "a": "A level floor, 600 V 3-phase (with the transformer we supply) or 480 V, a chiller (included), assist gas — oxygen for mild steel, nitrogen or compressed air for stainless and aluminum — a dust collector and a compressed-air supply. A 6 kW GFL 3015 draws about 46 kW in total and needs roughly 33 × 20 ft with its shuttle table. Delivery, installation and operator training are done by NovoTech from Mississauga, ON, Canada."
    },
    {
     "q": "What voltage do these machines run on?",
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "Dener's sheet lasers are the premium line of NovoTech's laser section: built in Kayseri, Turkey, on stress-relieved frames with IPG, Raycus or nLIGHT sources, Precitec autofocus heads and nesting software, and backed by parts stocked in Canada. The GFL is the production machine — a space-frame gantry rated for 1.5 G and 394 ft/min, a pallet changer that loads the next sheet while the first is cut, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft with 3 to 40 kW. The Smart series comes from the same factory at a lower price: the closed-type with laser-safe cabin and shuttle table in six sizes to a 41 ft bed, the semi-closed single-table machines from 8.2 × 20 to 13 × 82 ft for long plate, and the open-type 3 – 6 kW entry laser. Loading towers, sheet storage, bevel heads and air-cutting packages are available for all of them. A 6 kW machine cuts 3/4″ mild steel; 12 kW cuts 1″, 20 – 40 kW 1-1/2″ and beyond. Installed, trained and supported from Mississauga, ON, Canada.",
+  "intro": "Dener's sheet lasers are the premium line of NovoTech's laser section: built in Kayseri, Turkey, on stress-relieved frames with Raycus fiber sources, Boji BLT autofocus heads and CypNest nesting software, and backed by parts stocked in Canada. The GFL is the production machine — a space-frame gantry rated for 1.5 G and 394 ft/min, a shuttle table that loads the next sheet while the first is cut, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft with 3 to 40 kW. The Smart series comes from the same factory at a lower price: the closed-type with laser-safe cabin and shuttle table in six sizes to a 41 ft bed, the semi-closed single-table machines from 8.2 × 20 to 13 × 82 ft for long plate, and the open-type 3 – 6 kW entry laser. Loading towers, sheet storage, bevel heads and air-cutting packages are available for all of them. A 6 kW machine cuts 3/4″ mild steel; 12 kW cuts 1″, 20 – 40 kW 1-1/2″ and beyond. Installed, trained and supported from Mississauga, ON, Canada.",
   "points": [
-   "GFL: 1.5 G, 394 ft/min, ±0.03 mm, pallet changer — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
+   "GFL: 1.5 G, 394 ft/min, ±0.03 mm, shuttle table — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
    "Smart closed-type: shuttle table, 1 G, 459 ft/min, six sizes to 8.5 × 41 ft; semi-closed single table to 13 × 82 ft",
    "Smart open-type: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft — the lowest-priced Dener laser; towers, storage and bevel heads optional"
   ],
@@ -192,7 +192,7 @@
    {
     "id": "laser-gfl-group",
     "title": "GFL production fiber lasers",
-    "lead": "Dener's premium sheet laser: 1.5 G, pallet changer, 3 – 40 kW — built for a job shop that cuts all day.",
+    "lead": "Dener's premium sheet laser: 1.5 G, shuttle table, 3 – 40 kW — built for a job shop that cuts all day.",
     "families": [
      "dn-gfl"
     ]
@@ -289,7 +289,7 @@
    },
    {
     "q": "How does the NovoTech value line compare with Dener and Senfeng?",
-    "a": "Dener is the premium line: built in Turkey with Precitec heads, IPG or nLIGHT sources and parts stocked in Canada, for the shop that cuts two shifts a day for twenty years. Senfeng is a value line sold under its own brand, with the widest range — 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. The NovoTech lasers are our own brand, built in China to our specification with Raycus or IPG sources, Cypcut controls and Hiwin, YYC and Schneider components, at the lowest price of the three; all are installed, warranted and serviced by the same NovoTech technicians. We quote all three so you can compare."
+    "a": "Dener is the premium line: built in Turkey with Boji BLT heads and Raycus sources (Precitec and IPG on request) and parts stocked in Canada, for the shop that cuts two shifts a day for twenty years. Senfeng is a value line sold under its own brand, with the widest range — 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. The NovoTech lasers are our own brand, built in China to our specification with Raycus or IPG sources, Cypcut controls and Hiwin, YYC and Schneider components, at the lowest price of the three; all are installed, warranted and serviced by the same NovoTech technicians. We quote all three so you can compare."
    },
    {
     "q": "What voltage do these machines run on?",
@@ -393,7 +393,7 @@
    },
    {
     "q": "How does Senfeng compare with the Dener premium line?",
-    "a": "Dener is the premium line: Turkish-built with Precitec heads, IPG / nLIGHT sources, a heavier frame rated for 1.5 G and parts stocked in Canada — the longer life at high duty. Senfeng costs less and covers sizes and powers Dener does not: 4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, 3D and coil-fed lasers. The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."
+    "a": "Dener is the premium line: Turkish-built with Boji BLT heads and Raycus sources (Precitec and IPG on request), a heavier frame rated for 1.5 G and parts stocked in Canada — the longer life at high duty. Senfeng costs less and covers sizes and powers Dener does not: 4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, 3D and coil-fed lasers. The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."
    },
    {
     "q": "What voltage do these machines run on?",

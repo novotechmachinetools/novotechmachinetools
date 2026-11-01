@@ -49,26 +49,26 @@ SHEET = {
         intro="A fiber laser cutting machine cuts inside a laser-safe cabin with fume extraction, and its shuttle table or pallet changer loads "
               "the next sheet while the first is being cut — the production laser that keeps cutting while the operator unloads, and the kind "
               "most shops buy from 5 × 10 ft up. NovoTech sells two lines in Canada, both on this page: the premium Dener lasers made in Turkey "
-              "— the GFL with a space-frame gantry rated for 1.5 G and a pallet changer in 5 × 10 to 6.6 × 20 ft, 3 to 40 kW, and the Smart "
+              "— the GFL with a space-frame gantry rated for 1.5 G and a shuttle table in 5 × 10 to 6.6 × 20 ft, 3 to 40 kW, and the Smart "
               "with a shuttle table in six sizes to 8.5 × 41 ft; and the value line — NovoTech's own ULE with a 15-second shuttle "
               "table to 41 ft, the Senfeng H series with pallet changer from 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, the NP single-table "
               "lasers with a cover on the gantry, and compact lasers of 4 × 4 and 5 × 10 ft from 1.5 kW. Each family below has its full specification table, photos and brochure. Every machine "
               "comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, "
               "Canada. For long and heavy plate see the large-format plate lasers.",
-        points=["Premium: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with shuttle table, six sizes to 8.5 × 41 ft",
+        points=["Premium: GFL 1.5 G with shuttle table, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with shuttle table, six sizes to 8.5 × 41 ft",
                 "Value: ULE with 15 s shuttle table 10 × 5 to 41 × 8.5 ft, 3 – 40 kW; Senfeng H series with pallet changer to 8.3 × 40 ft and 80 kW",
                 "Senfeng NP single tables with a gantry cover, 5 × 10 to 6.6 × 20 ft, and compact 4 × 4 and 5 × 10 ft lasers from 1.5 kW; towers and storage"],
         hero="dn-gfl-1", minis=["vn-ule-1", "sf-h-1"],
-        groups=[("ls-premium-gfl", "GFL production fiber lasers · premium line", "Dener's premium sheet laser: 1.5 G, pallet changer, 3 – 40 kW — built for a job shop that cuts all day."),
+        groups=[("ls-premium-gfl", "GFL production fiber lasers · premium line", "Dener's premium sheet laser: 1.5 G, shuttle table, 3 – 40 kW — built for a job shop that cuts all day."),
                 ("ls-premium-closed", "Smart fiber lasers with shuttle table · premium line", "The economy line from the same Turkish factory: a shuttle table and 1 G in six sizes to 8.5 × 41 ft."),
                 ("ls-value-ule", "ULE fiber lasers with shuttle table · value line", "NovoTech's own laser with a 15-second shuttle table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW."),
                 ("ls-value-h", "H series lasers with pallet changer · value line", "The widest range: 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, with towers and storage."),
                 ("ls-value-np", "NP lasers with gantry cover · value line", "Single tables 5 × 10 to 6.6 × 20 ft, 3 to 12 kW: the cover travels with the gantry, the table stays open for loading."),
                 ("ls-value-compact", "Compact single-table lasers · value line", "4 × 4 and 5 × 10 ft machines from 1.5 kW — the laser for the small shop.")],
         faq=[{"q": "Shuttle table or pallet changer — what is the difference?",
-              "a": "Both load the next sheet while the first is cut. A shuttle table (Smart, ULE, compact) has two tables that swap places in 15 – 25 seconds, one in the cabin cutting and one outside being loaded. A pallet changer (GFL, H series) lifts the pallet with the cut sheet out of the cabin and slides the loaded pallet in, which is the arrangement a loading tower and sheet storage connect to for lights-out production. For a few sheets an hour the shuttle table is enough; for automation, the pallet changer. Some makers call the shuttle table an exchange table, a double table or a dual table — it is the same thing."},
+              "a": "Both load the next sheet while the first is cut. A shuttle table (GFL, Smart, ULE, compact) has two tables that swap places in 15 – 30 seconds, one in the cabin cutting and one outside being loaded. A pallet changer (Senfeng H series) lifts the pallet with the cut sheet out of the cabin and slides the loaded pallet in, which is the arrangement a loading tower and sheet storage connect to for lights-out production. For a few sheets an hour the shuttle table is enough; for automation, the pallet changer. Some makers call the shuttle table an exchange table, a double table or a dual table — it is the same thing."},
              {"q": "Premium line or value line?",
-              "a": "The premium GFL and Smart are built by Dener in Turkey on stress-relieved frames — the GFL rated for 1.5 G — with Precitec heads, IPG / nLIGHT sources, longer life at high duty and parts stocked in Canada: the machines for two shifts a day. NovoTech's value-line ULE and the Senfeng H series, NP and compact lasers are built in China with their own or Raycus sources in a wider range — 4 × 4 ft machines, 60 – 80 kW — at a lower price; NovoTech stocks the parts and does the service. Same cut quality at the same power."},
+              "a": "The premium GFL and Smart are built by Dener in Turkey on stress-relieved frames — the GFL rated for 1.5 G — with Boji BLT autofocus heads and Raycus sources (Precitec and IPG on request), longer life at high duty and parts stocked in Canada: the machines for two shifts a day. NovoTech's value-line ULE and the Senfeng H series, NP and compact lasers are built in China with their own or Raycus sources in a wider range — 4 × 4 ft machines, 60 – 80 kW — at a lower price; NovoTech stocks the parts and does the service. Same cut quality at the same power."},
              POWER_FAQ, TABLE_FAQ, AUTO_FAQ, GAS_FAQ,
              faq("dener-fiber-lasers", "What is in a Dener laser as standard?")[0],
              SITE_FAQ, VOLT_FAQ_GENERIC],
@@ -246,9 +246,9 @@ def build():
             members = [dict(fams[fid], group=g) for fid, g in LN.PAGES[kind][slug]]
             pdfs, seen = [], set()
             for f in members:
-                pd = f.get("pdf")
-                if pd and pd["file"] not in seen:
-                    seen.add(pd["file"]); pdfs.append(pd)
+                for pd in (f.get("pdf"), f.get("spec_pdf")):
+                    if pd and pd["file"] not in seen:
+                        seen.add(pd["file"]); pdfs.append(pd)
             n = sum(len(f["specs"]["models"]) for f in members)
             for key in [page["hero"]] + page["minis"]:
                 if key not in manifest:
