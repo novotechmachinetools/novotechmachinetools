@@ -25,6 +25,7 @@ ORIGIN = {"title": "Premium and value lines, one supplier", "text": "Premium Den
 HUBS = {
     "sheet": dict(
         set="sheet-lasers", families=LN.families("sheet"),
+        lineup_swaps=[["sf-np", "sf-hm"]],      # Senfeng line-up: H, HM, compact, then NP (the owner, Nov 1 2026)
         page=dict(
             title="Fiber Laser Cutting Machines for Sale in Canada — Exchange Table, Sheet & Tube, Plate, 3D & Coil-Fed, 1.5–80 kW | NovoTech",
             meta="Every fiber laser NovoTech sells in Canada, by kind: lasers with exchange table or pallet changer, sheet-and-tube combination lasers, large-format plate lasers to 10 × 164 ft, 3D laser cells and coil-fed lines — 1.5 to 80 kW, premium and value lines, the kinds compared and every model in one table.",
@@ -162,7 +163,8 @@ def build():
                   extra={"catalogue_pdf": None, "catalogue_pdfs": pdfs, "range_pick": pg["range_pick"], "hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN,
                          "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                          "related_pages": pg["related_pages"], "related_title": pg["related_title"],
-                         "hub_compact": True, "compare": COMPARE[kind], "subpage_link": "all models, specifications and photos"})
+                         "hub_compact": True, "compare": COMPARE[kind], "subpage_link": "all models, specifications and photos",
+                         "lineup_swaps": h.get("lineup_swaps", [])})
         path = os.path.join(ROOT, "content", "pages", f"{sec['hub']}.json")
         page = json.load(open(path, encoding="utf-8"))
         for sp, line in zip(page["subpages"], LN.lines(kind)):

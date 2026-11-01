@@ -1208,6 +1208,15 @@ def hub_lineup_spec(hub, by_slug):
                     order.append(brand)
                 groups[brand].append({"slug": slug, "type": label, "set": fset, "fid": fid})
 
+    # a hub may swap two cards of a brand's line-up ("lineup_swaps": [[fid, fid]]) — the sheet-laser hub shows the Senfeng
+    # HM sheet-and-tube laser beside the H series and the NP after the compact lasers (the owner, Nov 1 2026)
+    for a, b in hub.get("lineup_swaps") or []:
+        for items in groups.values():
+            ids = [it["fid"] for it in items]
+            if a in ids and b in ids:
+                i, j = ids.index(a), ids.index(b)
+                items[i], items[j] = items[j], items[i]
+
     def rank(b):
         line = site["brands"].get(b, {}).get("line", "")
         return 0 if line == "Premium line" else 2 if line == "Value line" else 1
