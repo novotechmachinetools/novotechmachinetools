@@ -80,7 +80,7 @@ COMPACT = [("SF1313G", 1.5, 3, 51.2, 51.2, 262, 1, 485, (118, 85, 79), "full cov
            ("SF1530G", 1.5, 4, 120, 60, 262, 1, 1543, (191, 159, 82), "full cover, single table"),
            ("SF1530N", 1.5, 12, 120, 60, 328, 1, 2425, (197, 91, 81), "full cover, pull-out single table"),
            ("SF1530NP", 1.5, 6, 119.2, 59.4, 328, 1, 2425, (193.7, 87.5, 91.2), "full cover, electric lifting door, integrated source")]
-T_COMPACT = table("Compact sheet lasers", "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW", [r[0] for r in COMPACT], [
+T_COMPACT = table("Compact single-table sheet lasers", "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW", [r[0] for r in COMPACT], [
     ("Working area", [area_in(r[3], r[4], r[0]) for r in COMPACT]),
     ("Laser power", [kw(r[1], r[2]) for r in COMPACT]),
     ("Type", [r[9] for r in COMPACT]),
@@ -321,7 +321,7 @@ TB_OPT = ["Automatic bundle loader and unloading conveyor", "45° bevel head (GP
 # ------------------------------------------------------------------------------------------------ families
 LASER_FAMILIES = [
     dict(id="sf-compact", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="Compact sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
+         name="Compact single-table sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
          short="Compact sheet lasers",
          models_label="SF1313G · SF1530G · SF1530N · SF1530NP · SFP600 – 1250",
          summary="The entry into fiber laser cutting: single-table machines with a full cover that ship in one container, plug in and cut the day they "

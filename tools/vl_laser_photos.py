@@ -70,8 +70,8 @@ PHOTOS = {
     "vn-ulf-chiller": R("ULF-003", (125, 255, 485, 805), "Hanli water chiller for the laser source and the cutting head"),
     "vn-ulf-skyeye": R("ULF-003", (2945, 295, 3205, 705), "Camera nesting over the table — scan the remnant, nest the parts on it (optional)"),
     "vn-ipg": R("ULE-004", (655, 450, 1015, 805), "IPG fiber laser source (optional)"),
-    # ---------------------------------------------------------------- ULE enclosed exchange-table lasers
-    "vn-ule-1": A("q-01-27.png", "NovoTech ULE fiber laser with exchange table — 20 × 8.5 ft working area, laser-safe cabin, front console",
+    # ---------------------------------------------------------------- ULE enclosed shuttle-table lasers
+    "vn-ule-1": A("q-01-27.png", "NovoTech ULE fiber laser with shuttle table — 20 × 8.5 ft working area, laser-safe cabin, front console",
                   boxes=[(235, 265, 350, 365), (1040, 365, 1095, 395), (1178, 262, 1222, 668), (950, 474, 1004, 502, "all"), (578, 322, 628, 535),
                          (1690, 420, 1880, 535), (2108, 332, 2150, 402), (1525, 340, 1568, 500)]),
     "vn-ule-console": P("q-04-58.png", None, "ULE operator station — touchscreen CNC with the cutting database, emergency stop and hand pendant"),
@@ -82,7 +82,7 @@ PHOTOS = {
     "vn-ule-rack": P("q-06-73.png", None, "Precision-ground rack beside the linear guide rail"),
     "vn-ule-chiller": P("q-07-77.png", None, "Hanli 12000 water chiller, sized for a 12 kW source"),
     "vn-ule-cabinet": P("q-07-78.png", None, "Electrical cabinet — Schneider components, servo drives and the CNC, two cooling fans"),
-    "vn-fms-tower": P("GEN-006", (140, 560, 1150, 1080), "Sheet storage tower feeding an exchange-table laser — flexible manufacturing system (optional)"),
+    "vn-fms-tower": P("GEN-006", (140, 560, 1150, 1080), "Sheet storage tower feeding a shuttle-table laser — flexible manufacturing system (optional)"),
     "vn-fms-gantry": P("GEN-006", (1360, 880, 2380, 1280), "Gantry loading and unloading with suction cups (optional)"),
     "vn-precitec": R("ULE-004", (245, 435, 415, 820), "Precitec ProCutter autofocus cutting head (optional)"),
     # ---------------------------------------------------------------- ULG ground-rail plate lasers (photos from the supplier's website)

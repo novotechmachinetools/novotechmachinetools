@@ -570,8 +570,8 @@ def laser_table(title, sub, prefix, codes, power, precision, speed_mmin, accel, 
 
 T_GFL = laser_table("GFL fiber laser cutting machines", "3 table sizes · 3 – 40 kW · pallet changer", "GFL", ["3015", "4020", "6020"], POWERS, "±0.03 mm (±0.0012″)", 120, "1.5 G",
                     "pallet changer, 2 tables", [("Z-axis stroke", "13.8″ (350 mm)")])
-T_SMART_C = laser_table("Smart fiber lasers with double table", "6 table sizes · 3 – 40 kW", "Smart", ["3015", "4020", "6020", "6025", "8025", "12526"], POWERS,
-                        "±0.03 mm (±0.0012″)", 140, "1 G", "double exchange table")
+T_SMART_C = laser_table("Smart fiber lasers with shuttle table", "6 table sizes · 3 – 40 kW", "Smart", ["3015", "4020", "6020", "6025", "8025", "12526"], POWERS,
+                        "±0.03 mm (±0.0012″)", 140, "1 G", "shuttle table")
 T_SMART_S = laser_table("Smart semi-closed fiber lasers · single table", "7 table sizes · 3 – 40 kW", "Smart", ["6025", "8025", "12525", "14035", "16045", "25031", "25040"],
                         POWERS, "±0.01 mm (±0.0004″)", 75, "0.6 G", "single table, semi-closed cabin")
 LS_GK = ["working_area", "power", "speed", "accel", "worktable"]
@@ -580,7 +580,7 @@ NOTE_LS = ("The model number gives the nominal working area (3015 = 3,000 × 1,5
            "laser sources. Cutting thickness depends on the source: as a guide, 6 kW cuts 3/4″ mild steel, 12 kW 1″ and 20 kW 1-1/2″ — ask us "
            "for the cutting chart for your material.")
 LS_STD = ["Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus", "Stress-relieved welded frame; space-frame bridge for high acceleration",
-          "Exchange table / pallet changer so loading overlaps cutting", "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
+          "Shuttle table / pallet changer so loading overlaps cutting", "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
           "CNC control with nesting software, cutting database and production reports; remote diagnostics", "Laser-safe viewing glass; CE safety",
           "Chiller, air/nitrogen/oxygen assist-gas system", "CSA-approved electrical panel; 600 V with transformer"]
 LS_OPT = ["Automatic loading / unloading tower", "Sheet storage automation", "Bevel cutting head", "Film-removal and marking functions", "Dust collector", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
@@ -603,14 +603,14 @@ LASER_FAMILIES = [
                      ("EFTY5a-Ri1Q", "Intelligent air cutting — a smarter solution beyond traditional air cutting")),
          specs=spec([T_GFL], LS_GK, LS_G_FROM, NOTE_LS)),
     dict(id="dn-smart-closed", group="laser-smart", page=P_LASER, brand=BRAND,
-         name="Smart fiber lasers with double table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
-         short="Smart lasers with double table",
+         name="Smart fiber lasers with shuttle table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
+         short="Smart lasers with shuttle table",
          models_label="Smart 3015 – 12526 · 6 table sizes · 3 – 40 kW",
-         summary="The Smart series is the economy sheet laser from the same Turkish factory: a cabin with laser-safe glass, a double "
-                 "exchange table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting "
+         summary="The Smart series is the economy sheet laser from the same Turkish factory: a cabin with laser-safe glass, a "
+                 "shuttle table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting "
                  "heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting "
                  "area, control and remote handset.",
-         features=["Cabin with laser-safe viewing glass; double exchange table", "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning"] + LS_STD,
+         features=["Cabin with laser-safe viewing glass; shuttle table", "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning"] + LS_STD,
          optional=LS_OPT,
          images=["dn-smart-1", "dn-smart-2", "dn-laser-web"],
          videos=vids(("4Yp6X9tP6J8", "DENER SMART series laser cutting machine"), ("zDGupa7NevE", "Dener fiber laser cutting machine"),

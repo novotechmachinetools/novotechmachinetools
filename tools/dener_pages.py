@@ -103,20 +103,20 @@ PAGE_LASER = dict(
           "Raycus or nLIGHT sources, Precitec autofocus heads and nesting software, and backed by parts stocked in Canada. The GFL is "
           "the production machine — a space-frame gantry rated for 1.5 G and 394 ft/min, a pallet changer that loads the next sheet while the "
           "first is cut, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft with 3 to 40 kW. The Smart series comes from the same factory at a lower price: "
-          "the closed-type with laser-safe cabin and double exchange table in six sizes to a 41 ft bed, the semi-closed single-table machines "
+          "the closed-type with laser-safe cabin and shuttle table in six sizes to a 41 ft bed, the semi-closed single-table machines "
           "from 8.2 × 20 to 13 × 82 ft for long plate, and the open-type 3 – 6 kW entry laser. Loading towers, sheet storage, bevel heads and "
           "air-cutting packages are available for all of them. A 6 kW machine cuts 3/4″ mild steel; 12 kW cuts 1″, 20 – 40 kW 1-1/2″ and beyond. "
           "Installed, trained and supported from Mississauga, ON, Canada.",
     points=["GFL: 1.5 G, 394 ft/min, ±0.03 mm, pallet changer — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
-            "Smart closed-type: double table, 1 G, 459 ft/min, six sizes to 8.5 × 41 ft; semi-closed single table to 13 × 82 ft",
+            "Smart closed-type: shuttle table, 1 G, 459 ft/min, six sizes to 8.5 × 41 ft; semi-closed single table to 13 × 82 ft",
             "Smart open-type: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft — the lowest-priced Dener laser; towers, storage and bevel heads optional"],
     hero="dn-gfl-3", minis=["dn-smart-1", "dn-gfl-2"],
     groups=[("laser-gfl", "GFL production fiber lasers", "Dener's premium sheet laser: 1.5 G, pallet changer, 3 – 40 kW — built for a job shop that cuts all day.", BRAND),
             ("laser-smart", "Smart fiber lasers", "The economy line from the same factory: closed, semi-closed and open machines in table sizes to 13 × 82 ft.", BRAND)],
     faq=[{"q": "GFL or Smart — what is the difference?",
-          "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a pallet changer and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a double exchange table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."},
+          "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a pallet changer and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a shuttle table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."},
          {"q": "Which Smart — closed, semi-closed or open?",
-          "a": "Closed-type when you cut all day: the double exchange table keeps the laser cutting while you load, and the cabin keeps fumes and the beam inside. Semi-closed when the parts are long — 20 to 82 ft single tables for beams, ship sections and plate that no standard laser takes. Open-type when the budget comes first and the sheets are loaded by hand or forklift from any side: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft, the lowest-priced Dener laser."},
+          "a": "Closed-type when you cut all day: the shuttle table keeps the laser cutting while you load, and the cabin keeps fumes and the beam inside. Semi-closed when the parts are long — 20 to 82 ft single tables for beams, ship sections and plate that no standard laser takes. Open-type when the budget comes first and the sheets are loaded by hand or forklift from any side: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft, the lowest-priced Dener laser."},
          {"q": "What is in a Dener laser as standard?",
           "a": "An IPG, Raycus or nLIGHT fiber source, a Precitec or Raytools autofocus cutting head with capacitive height sensing and collision protection, a stress-relieved welded frame, pneumatic fume-extraction compartments under the table and scrap boxes on wheels, a chiller, a CNC with nesting software, cutting database and production reports, and a remote handset. Cutting gas regulators, dust collector connections and the CSA-approved panel with a 600 V transformer are included in the NovoTech package."},
          {"q": "What can be added later?",

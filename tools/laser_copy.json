@@ -3,7 +3,7 @@
   "faq": [
    {
     "q": "Dener, NovoTech or Senfeng — which laser should I buy?",
-    "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, parts stocked in Canada and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed exchange-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."
+    "a": "Dener is the premium line: Turkish-built, with Precitec heads, IPG / nLIGHT sources and a heavier frame rated for 1.5 G, parts stocked in Canada and the longer life at high duty — the machine for a job shop that cuts two shifts a day. NovoTech's own value line is built in China to our specification — Raycus or IPG sources, Cypcut controls, Hiwin, YYC and Schneider components — at the lowest price of the three, in open, enclosed shuttle-table, ground-rail and sheet-and-tube versions to 60 kW. Senfeng is a value line under its own brand from a very large Chinese manufacturer (about 15,000 machines a year) that builds its own sources and heads, CE / FDA / ETL certified, with the widest range: 4 × 4 ft compact machines, 80 kW, 3D and coil-fed lasers. All three are sold, installed and supported by NovoTech with the same CSA panel and warranty; we quote them side by side so you can compare."
    },
    {
     "q": "What laser power do I need?",
@@ -14,8 +14,8 @@
     "a": "The model number is the nominal working area in centimetres: 3015 = 10 × 5 ft (3,000 × 1,500 mm) — a standard 4 × 8 or 5 × 10 sheet; 4020 = 13 × 6.6 ft; 6020 = 20 × 6.6 ft for 6 × 20 plate; 6025 and 8025 = 20 and 26 ft × 8.2 ft; 12526 = 41 × 8.5 ft. The 5 × 10 machine is the Canadian standard; buy the 6020 if you cut 20 ft plate or want to nest several sheets without reloading; the 4 × 4 ft Senfeng compact is for small parts in a small shop."
    },
    {
-    "q": "Single table, double table or pallet changer?",
-    "a": "A single-table machine (Dener Smart open and semi-closed, NovoTech ULF, Senfeng compact and NP) stops while you unload and load — fine for a few sheets an hour and the lowest price. A double table or pallet changer (Dener GFL and Smart closed, NovoTech ULE, Senfeng H series) swaps tables in 15 to 20 seconds, so the laser cuts while the operator loads: the difference between 40 and 70 % spindle time on a busy machine, and the base for a loading tower later."
+    "q": "Single table, shuttle table or pallet changer?",
+    "a": "A single-table machine (Dener Smart open and semi-closed, NovoTech ULF, Senfeng compact and NP) stops while you unload and load — fine for a few sheets an hour and the lowest price. A shuttle table or pallet changer (Dener GFL and Smart closed, NovoTech ULE, Senfeng H series) swaps tables in 15 to 20 seconds, so the laser cuts while the operator loads: the difference between 40 and 70 % spindle time on a busy machine, and the base for a loading tower later."
    },
    {
     "q": "What about assist gas and fume extraction?",
@@ -23,7 +23,7 @@
    },
    {
     "q": "Can the laser be automated?",
-    "a": "Yes — a loading / unloading tower that feeds the pallet changer, sheet storage with several shelves for lights-out production, part sorting, and bevel heads for weld preparation. The Dener GFL and the Smart with double table, the NovoTech ULE and the Senfeng H series are prepared for the tower; the Senfeng coil-fed lines go further and cut straight from the coil. Ask us for the automation layout."
+    "a": "Yes — a loading / unloading tower that feeds the pallet changer, sheet storage with several shelves for lights-out production, part sorting, and bevel heads for weld preparation. The Dener GFL and the Smart with shuttle table, the NovoTech ULE and the Senfeng H series are prepared for the tower; the Senfeng coil-fed lines go further and cut straight from the coil. Ask us for the automation layout."
    },
    {
     "q": "What does the machine need on site?",
@@ -34,10 +34,10 @@
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″ and beyond with the high-power sources, stainless and aluminum to 1″ — at speeds no plasma or punch can match, with a clean edge and no tooling. NovoTech sells three lines of fiber lasers in Canada, each on its own page: the Dener lasers — the premium line, made in Turkey, the GFL production laser with a 1.5 G gantry and pallet changer and the Smart series to 13 × 82 ft, 3 to 40 kW; NovoTech's own value line — the open ULF single-table lasers, the enclosed ULE with a 15-second exchange table, the ULG ground-rail plate lasers, the ULFT and ULET that cut sheet and tube on one machine, and plate tables to 85 ft with up to 60 kW; and the Senfeng lasers — a value line under its own brand, from 4 × 4 ft compact machines and the NP open-type to the H series with pallet changer to 80 kW, plate gantries to 10 × 164 ft, 3D and coil-fed lines. Below, each line in brief, the laser power guide, and every model in one table of working area, power and speed; every machine comes with a CSA-approved panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
+  "intro": "A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″ and beyond with the high-power sources, stainless and aluminum to 1″ — at speeds no plasma or punch can match, with a clean edge and no tooling. NovoTech sells three lines of fiber lasers in Canada, each on its own page: the Dener lasers — the premium line, made in Turkey, the GFL production laser with a 1.5 G gantry and pallet changer and the Smart series to 13 × 82 ft, 3 to 40 kW; NovoTech's own value line — the open ULF single-table lasers, the enclosed ULE with a 15-second shuttle table, the ULG ground-rail plate lasers, the ULFT and ULET that cut sheet and tube on one machine, and plate tables to 85 ft with up to 60 kW; and the Senfeng lasers — a value line under its own brand, from 4 × 4 ft compact machines and the NP open-type to the H series with pallet changer to 80 kW, plate gantries to 10 × 164 ft, 3D and coil-fed lines. Below, each line in brief, the laser power guide, and every model in one table of working area, power and speed; every machine comes with a CSA-approved panel, chiller, nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
   "points": [
    "Dener premium line: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft; Smart closed, semi-closed and open lasers to 13 × 82 ft; 3 – 40 kW",
-   "NovoTech value line: open ULF from 10 × 5 ft, enclosed ULE with 15 s exchange table to 41 ft, ULG ground-rail to 85 × 14.8 ft, ULFT / ULET sheet + tube, 1.5 – 60 kW",
+   "NovoTech value line: open ULF from 10 × 5 ft, enclosed ULE with 15 s shuttle table to 41 ft, ULG ground-rail to 85 × 14.8 ft, ULFT / ULET sheet + tube, 1.5 – 60 kW",
    "Senfeng value line: compact 4 × 4 ft from 1.5 kW, NP open-type, H series with pallet changer to 80 kW, plate gantries to 164 ft, 3D, coil-fed"
   ],
   "groups": [],
@@ -155,11 +155,11 @@
   "faq": [
    {
     "q": "GFL or Smart — what is the difference?",
-    "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a pallet changer and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a double exchange table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."
+    "a": "Both come from Dener's Kayseri plant with the same sources, heads and software. The GFL is the production machine: a heavier stress-relieved frame and space-frame bridge rated for 1.5 G, a pallet changer and the full option list — the machine for two shifts a day. The Smart series is built to a lower price: the closed-type still has a shuttle table and 1 G, the semi-closed machines offer very large single tables, and the open-type is the entry-level 3 – 6 kW laser. Same cut quality; the GFL is faster between parts and lasts longer at high duty."
    },
    {
     "q": "Which Smart — closed, semi-closed or open?",
-    "a": "Closed-type when you cut all day: the double exchange table keeps the laser cutting while you load, and the cabin keeps fumes and the beam inside. Semi-closed when the parts are long — 20 to 82 ft single tables for beams, ship sections and plate that no standard laser takes. Open-type when the budget comes first and the sheets are loaded by hand or forklift from any side: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft, the lowest-priced Dener laser."
+    "a": "Closed-type when you cut all day: the shuttle table keeps the laser cutting while you load, and the cabin keeps fumes and the beam inside. Semi-closed when the parts are long — 20 to 82 ft single tables for beams, ship sections and plate that no standard laser takes. Open-type when the budget comes first and the sheets are loaded by hand or forklift from any side: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft, the lowest-priced Dener laser."
    },
    {
     "q": "What is in a Dener laser as standard?",
@@ -182,10 +182,10 @@
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "Dener's sheet lasers are the premium line of NovoTech's laser section: built in Kayseri, Turkey, on stress-relieved frames with IPG, Raycus or nLIGHT sources, Precitec autofocus heads and nesting software, and backed by parts stocked in Canada. The GFL is the production machine — a space-frame gantry rated for 1.5 G and 394 ft/min, a pallet changer that loads the next sheet while the first is cut, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft with 3 to 40 kW. The Smart series comes from the same factory at a lower price: the closed-type with laser-safe cabin and double exchange table in six sizes to a 41 ft bed, the semi-closed single-table machines from 8.2 × 20 to 13 × 82 ft for long plate, and the open-type 3 – 6 kW entry laser. Loading towers, sheet storage, bevel heads and air-cutting packages are available for all of them. A 6 kW machine cuts 3/4″ mild steel; 12 kW cuts 1″, 20 – 40 kW 1-1/2″ and beyond. Installed, trained and supported from Mississauga, ON, Canada.",
+  "intro": "Dener's sheet lasers are the premium line of NovoTech's laser section: built in Kayseri, Turkey, on stress-relieved frames with IPG, Raycus or nLIGHT sources, Precitec autofocus heads and nesting software, and backed by parts stocked in Canada. The GFL is the production machine — a space-frame gantry rated for 1.5 G and 394 ft/min, a pallet changer that loads the next sheet while the first is cut, in 5 × 10, 6.6 × 13 and 6.6 × 20 ft with 3 to 40 kW. The Smart series comes from the same factory at a lower price: the closed-type with laser-safe cabin and shuttle table in six sizes to a 41 ft bed, the semi-closed single-table machines from 8.2 × 20 to 13 × 82 ft for long plate, and the open-type 3 – 6 kW entry laser. Loading towers, sheet storage, bevel heads and air-cutting packages are available for all of them. A 6 kW machine cuts 3/4″ mild steel; 12 kW cuts 1″, 20 – 40 kW 1-1/2″ and beyond. Installed, trained and supported from Mississauga, ON, Canada.",
   "points": [
    "GFL: 1.5 G, 394 ft/min, ±0.03 mm, pallet changer — 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
-   "Smart closed-type: double table, 1 G, 459 ft/min, six sizes to 8.5 × 41 ft; semi-closed single table to 13 × 82 ft",
+   "Smart closed-type: shuttle table, 1 G, 459 ft/min, six sizes to 8.5 × 41 ft; semi-closed single table to 13 × 82 ft",
    "Smart open-type: 3 or 6 kW, 5 × 10 to 6.6 × 20 ft — the lowest-priced Dener laser; towers, storage and bevel heads optional"
   ],
   "groups": [
@@ -265,7 +265,7 @@
   "faq": [
    {
     "q": "Open ULF or enclosed ULE?",
-    "a": "The ULF is the open machine: a single table loaded from three sides, the lowest price per kilowatt and the right choice for a shop that cuts a few hours a day and unloads by hand. The ULE puts the cutting area in a full enclosure — laser-safe windows, fumes extracted from inside the cabin, less noise — and adds an exchange table that swaps in 15 seconds, so the laser cuts while the operator loads the next sheet. Above 6 kW, for two shifts, or with a storage tower in mind, buy the ULE."
+    "a": "The ULF is the open machine: a single table loaded from three sides, the lowest price per kilowatt and the right choice for a shop that cuts a few hours a day and unloads by hand. The ULE puts the cutting area in a full enclosure — laser-safe windows, fumes extracted from inside the cabin, less noise — and adds a shuttle table that swaps in 15 seconds, so the laser cuts while the operator loads the next sheet. Above 6 kW, for two shifts, or with a storage tower in mind, buy the ULE."
    },
    {
     "q": "ULF-G or ULF-E?",
@@ -281,7 +281,7 @@
    },
    {
     "q": "Sheet and tube on one machine — what does the ULET add?",
-    "a": "The ULET adds a pneumatic rotary chuck and tube supports to the sheet laser with exchange table: round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 20, 29.5 or 39 ft long, cut with the same source and head, and sheet to 41 × 8.5 ft and 40 kW. A shop that cuts tube every day is better served by a dedicated ULT tube laser with a loader."
+    "a": "The ULET adds a pneumatic rotary chuck and tube supports to the sheet laser with shuttle table: round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 20, 29.5 or 39 ft long, cut with the same source and head, and sheet to 41 × 8.5 ft and 40 kW. A shop that cuts tube every day is better served by a dedicated ULT tube laser with a loader."
    },
    {
     "q": "What does the laser need on site?",
@@ -296,10 +296,10 @@
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "These are NovoTech's own fiber lasers — the value line: built in China to our specification with Raycus, MAX or IPG sources, Raytools, BOCI or Precitec heads, Cypcut controls, Hiwin guides and Schneider electrics, inspected before they ship and sold under NovoTech's name. Five families on one page: the open-type ULF single-table lasers — the G build from 1.5 to 6 kW, the heavier E build to 12 kW and large-format plate tables from 20 × 8.5 to 85 × 10.5 ft with up to 60 kW; the enclosed ULE with an exchange table that swaps in 15 seconds, from 10 × 5 to 41 × 8.5 ft and 3 to 40 kW; the ULG ground-rail plate lasers, whose gantry runs on floor rails over a table 42.7 or 85.3 ft long and up to 14.8 ft wide, with 12 to 60 kW; and the ULFT and ULET, which cut sheet and tube to Ø13.8″ on one machine, open or enclosed. For the Turkish-built premium lasers see the Dener page; for 4 × 4 ft compact machines, 80 kW and coil-fed lines see Senfeng. Every machine is installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a 1-year warranty.",
+  "intro": "These are NovoTech's own fiber lasers — the value line: built in China to our specification with Raycus, MAX or IPG sources, Raytools, BOCI or Precitec heads, Cypcut controls, Hiwin guides and Schneider electrics, inspected before they ship and sold under NovoTech's name. Five families on one page: the open-type ULF single-table lasers — the G build from 1.5 to 6 kW, the heavier E build to 12 kW and large-format plate tables from 20 × 8.5 to 85 × 10.5 ft with up to 60 kW; the enclosed ULE with a shuttle table that swaps in 15 seconds, from 10 × 5 to 41 × 8.5 ft and 3 to 40 kW; the ULG ground-rail plate lasers, whose gantry runs on floor rails over a table 42.7 or 85.3 ft long and up to 14.8 ft wide, with 12 to 60 kW; and the ULFT and ULET, which cut sheet and tube to Ø13.8″ on one machine, open or enclosed. For the Turkish-built premium lasers see the Dener page; for 4 × 4 ft compact machines, 80 kW and coil-fed lines see Senfeng. Every machine is installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a 1-year warranty.",
   "points": [
    "ULF open-type: G build 1.5 – 6 kW, E build to 12 kW and 1.7 G on 10 × 5 to 20 × 7.2 ft; large-format plate tables to 85 × 10.5 ft and 60 kW",
-   "ULE enclosed with exchange table, 15 s swap: 10 × 5 to 41 × 8.5 ft, 3 – 40 kW, Z travel to 16.5″, ready for a storage tower",
+   "ULE enclosed with shuttle table, 15 s swap: 10 × 5 to 41 × 8.5 ft, 3 – 40 kW, Z travel to 16.5″, ready for a storage tower",
    "ULG ground-rail plate lasers: 42.7 or 85.3 ft × up to 14.8 ft, 12 – 60 kW, up to 202,000 lb of plate on the table",
    "ULFT and ULET sheet + tube: the laser table plus a pneumatic chuck for tube to Ø13.8″ and 39 ft, open or enclosed, 1.5 – 60 kW"
   ],
@@ -307,7 +307,7 @@
    {
     "id": "laser-novotech-group",
     "title": "NovoTech fiber lasers — the value line",
-    "lead": "Open single-table, enclosed exchange-table, ground-rail plate and sheet + tube lasers from 10 × 5 to 85 × 14.8 ft, 1.5 to 60 kW.",
+    "lead": "Open single-table, enclosed shuttle-table, ground-rail plate and sheet + tube lasers from 10 × 5 to 85 × 14.8 ft, 1.5 to 60 kW.",
     "families": [
      "vn-ulf",
      "vn-ule",

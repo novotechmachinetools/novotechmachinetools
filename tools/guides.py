@@ -86,9 +86,9 @@ GUIDES = [
       "lines."),
     # ------------------------------------------------------------------------------------------- cutting
     G("laser-cutting-machine", "fiber-laser-guide.html", "Fiber laser cutting machine buying guide", "cutting",
-      "What we go through with customers before they buy a fiber laser: the power for your thicknesses, bed size and exchange "
+      "What we go through with customers before they buy a fiber laser: the power for your thicknesses, bed size and shuttle "
       "tables, oxygen, nitrogen or air, laser safety, the source and head, and what the laser needs on site. " + BY,
-      "Laser power and thickness at a glance, single or exchange table, oxygen, nitrogen or air assist, laser safety "
+      "Laser power and thickness at a glance, single or shuttle table, oxygen, nitrogen or air assist, laser safety "
       "and the running costs.", featured=True),
     G("tube-laser-cutting-machine", "tube-laser-guide.html", "Tube laser buying guide", "cutting",
       "What we explain to customers before they buy a tube laser: what it replaces, the chuck size, bar length and power you need, "

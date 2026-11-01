@@ -27,7 +27,7 @@
     "3 to 40 kW fiber sources; 6 kW cuts 3/4″ mild steel, 12 kW 1″",
     "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
     "Stress-relieved welded frame; space-frame bridge for high acceleration",
-    "Exchange table / pallet changer so loading overlaps cutting",
+    "Shuttle table / pallet changer so loading overlaps cutting",
     "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
     "CNC control with nesting software, cutting database and production reports; remote diagnostics",
     "Laser-safe viewing glass; CE safety",
@@ -248,16 +248,16 @@
   "dn-smart-closed": {
    "id": "dn-smart-closed",
    "brand": "dener",
-   "name": "Smart fiber lasers with double table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
-   "short": "Smart lasers with double table",
+   "name": "Smart fiber lasers with shuttle table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",
+   "short": "Smart lasers with shuttle table",
    "models_label": "Smart 3015 – 12526 · 6 table sizes · 3 – 40 kW",
-   "summary": "The Smart series is the economy sheet laser from the same Turkish factory: a cabin with laser-safe glass, a double exchange table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting area, control and remote handset.",
+   "summary": "The Smart series is the economy sheet laser from the same Turkish factory: a cabin with laser-safe glass, a shuttle table and 459 ft/min at 1 G, in six table sizes from 5 × 10 ft to a 41 ft long bed. The same fiber sources, cutting heads and software as the GFL, built to a lower price with a lighter frame and simpler cabin. Open front for the cutting area, control and remote handset.",
    "features": [
-    "Cabin with laser-safe viewing glass; double exchange table",
+    "Cabin with laser-safe viewing glass; shuttle table",
     "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning",
     "Fiber laser source (IPG, Raycus or nLIGHT), Precitec or Raytools cutting head with autofocus",
     "Stress-relieved welded frame; space-frame bridge for high acceleration",
-    "Exchange table / pallet changer so loading overlaps cutting",
+    "Shuttle table / pallet changer so loading overlaps cutting",
     "Pneumatic fume-extraction compartments and scrap boxes on wheels; prepared for a dust collector",
     "CNC control with nesting software, cutting database and production reports; remote diagnostics",
     "Laser-safe viewing glass; CE safety",
@@ -307,7 +307,7 @@
     "kind": "table",
     "tables": [
      {
-      "title": "Smart fiber lasers with double table",
+      "title": "Smart fiber lasers with shuttle table",
       "sub": "6 table sizes · 3 – 40 kW",
       "models": [
        "Smart 3015",
@@ -335,12 +335,12 @@
         "label": "Worktable",
         "sub": "",
         "cells": [
-         "double exchange table",
-         "double exchange table",
-         "double exchange table",
-         "double exchange table",
-         "double exchange table",
-         "double exchange table"
+         "shuttle table",
+         "shuttle table",
+         "shuttle table",
+         "shuttle table",
+         "shuttle table",
+         "shuttle table"
         ],
         "key": false
        },
@@ -420,7 +420,7 @@
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "459 ft/min (140 m/min)",
        "1 G",
-       "double exchange table"
+       "shuttle table"
       ]
      },
      {
@@ -430,7 +430,7 @@
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "459 ft/min (140 m/min)",
        "1 G",
-       "double exchange table"
+       "shuttle table"
       ]
      },
      {
@@ -440,7 +440,7 @@
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "459 ft/min (140 m/min)",
        "1 G",
-       "double exchange table"
+       "shuttle table"
       ]
      },
      {
@@ -450,7 +450,7 @@
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "459 ft/min (140 m/min)",
        "1 G",
-       "double exchange table"
+       "shuttle table"
       ]
      },
      {
@@ -460,7 +460,7 @@
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "459 ft/min (140 m/min)",
        "1 G",
-       "double exchange table"
+       "shuttle table"
       ]
      },
      {
@@ -470,7 +470,7 @@
        "3 / 6 / 12 / 20 / 30 / 40 kW",
        "459 ft/min (140 m/min)",
        "1 G",
-       "double exchange table"
+       "shuttle table"
       ]
      }
     ],
@@ -494,12 +494,12 @@
   "vn-ule": {
    "id": "vn-ule",
    "brand": "novotech",
-   "name": "ULE fiber lasers with exchange table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW",
-   "short": "ULE exchange-table lasers",
+   "name": "ULE fiber lasers with shuttle table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW",
+   "short": "ULE shuttle-table lasers",
    "models_label": "ULE-3015E – 6020E · ULE-6026E – 12526E · 7 models",
    "summary": "The production laser: a cabin with laser-safe windows keeps the beam, sparks and fumes in, and two tables swap in 15 seconds so the operator loads one sheet while the other is cut. Four sizes from 10 × 5 to 20 × 6.7 ft take 3 to 20 kW with 11.8″ of Z travel; three large-format machines from 20 × 8.5 to 41 × 8.5 ft take 6 to 40 kW and 16.5″ of Z for heavy plate. 459 ft/min and 1.7 G, ±0.03 mm/m positioning, a bed flat to 0.05 mm per square metre and a twin-chain exchange that doubles the table load. Ready for a sheet storage tower and gantry loading.",
    "features": [
-    "3 – 40 kW; 10 × 5 to 41 × 8.5 ft; exchange tables, 15 s swap; 459 ft/min, 1.7 G; Z travel 11.8 – 16.5″",
+    "3 – 40 kW; 10 × 5 to 41 × 8.5 ft; shuttle tables, 15 s swap; 459 ft/min, 1.7 G; Z travel 11.8 – 16.5″",
     "Fiber laser source chosen at order — Raycus, MAX or IPG — with an autofocus cutting head (Raytools or BOCI) and capacitive height sensing",
     "Cypcut bus control with nesting, the cutting-parameter database and power-based speed adjustment; hand pendant",
     "Welded bed annealed and shot-blasted to relieve stress; Inovance or Delta servos, YYC racks, Hiwin linear guides, DESBOER gearboxes",
@@ -532,7 +532,7 @@
     "kind": "table",
     "tables": [
      {
-      "title": "ULE exchange-table fiber lasers · 3 – 20 kW",
+      "title": "ULE shuttle-table fiber lasers · 3 – 20 kW",
       "sub": "4 models · 10 × 5 to 20 × 6.7 ft · table swap in 15 s",
       "models": [
        "ULE-3015E",
@@ -676,7 +676,7 @@
       ]
      },
      {
-      "title": "ULE large-format exchange-table fiber lasers · 6 – 40 kW",
+      "title": "ULE large-format shuttle-table fiber lasers · 6 – 40 kW",
       "sub": "3 models · 20 × 8.5 to 41 × 8.5 ft",
       "models": [
        "ULE-6026E",
@@ -877,7 +877,7 @@
      "load"
     ],
     "caps": {},
-    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both exchange tables together."
+    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both shuttle tables together."
    },
    "pdf": {
     "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
@@ -1559,7 +1559,7 @@
   "sf-compact": {
    "id": "sf-compact",
    "brand": "senfeng",
-   "name": "Compact sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
+   "name": "Compact single-table sheet lasers, 4 × 4 and 5 × 10 ft, 1.5 – 12 kW",
    "short": "Compact sheet lasers",
    "models_label": "SF1313G · SF1530G · SF1530N · SF1530NP · SFP600 – 1250",
    "summary": "The entry into fiber laser cutting: single-table machines with a full cover that ship in one container, plug in and cut the day they arrive. The SF1313G is a 4 × 4 ft machine for small parts; the SF1530G, SF1530N and the SF1530NP with its electric lifting door take a 5 × 10 ft sheet with 1.5 to 12 kW sources — enough for 3/4″ mild steel at 6 kW. The pull-out table loads from the front with a forklift; the integrated source and cabinet keep the footprint under 200 × 90″. For jewellery, electronics and precision small parts the SFP series adds 24 to 49″ square tables with ±0.005 mm repeatability.",
@@ -1594,7 +1594,7 @@
     "kind": "table",
     "tables": [
      {
-      "title": "Compact sheet lasers",
+      "title": "Compact single-table sheet lasers",
       "sub": "4 models · 4 × 4 and 5 × 10 ft · 1.5 – 12 kW",
       "models": [
        "SF1313G",
@@ -1868,10 +1868,10 @@
   "vn-ulet": {
    "id": "vn-ulet",
    "brand": "novotech",
-   "name": "ULET sheet-and-tube fiber lasers with exchange table, 10 × 5 to 41 × 8.5 ft plus tube to Ø13.8″, 1.5 – 40 kW",
+   "name": "ULET sheet-and-tube fiber lasers with shuttle table, 10 × 5 to 41 × 8.5 ft plus tube to Ø13.8″, 1.5 – 40 kW",
    "short": "ULET sheet + tube lasers",
    "models_label": "ULET 3015 – 12526 · 8 table sizes",
-   "summary": "Sheet and tube on one machine: the ULE cabin with its exchange table for sheet, and at the end of the machine a pneumatic chuck — three times faster to clamp than an electric one — for round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 39 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; the same source and head cut both, so a shop that cuts tube a few times a week does not need a second laser.",
+   "summary": "Sheet and tube on one machine: the ULE cabin with its shuttle table for sheet, and at the end of the machine a pneumatic chuck — three times faster to clamp than an electric one — for round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 39 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; the same source and head cut both, so a shop that cuts tube a few times a week does not need a second laser.",
    "features": [
     "Sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 40 kW; 459 ft/min",
     "Fiber laser source chosen at order — Raycus, MAX or IPG — with an autofocus cutting head (Raytools or BOCI) and capacitive height sensing",
@@ -1913,7 +1913,7 @@
     "kind": "table",
     "tables": [
      {
-      "title": "ULET sheet-and-tube fiber lasers with exchange table",
+      "title": "ULET sheet-and-tube fiber lasers with shuttle table",
       "sub": "8 table sizes · 10 × 5 to 41 × 8.5 ft · tube to Ø13.8″ · 1.5 – 40 kW",
       "models": [
        "ULET series"
@@ -2022,7 +2022,7 @@
      "load"
     ],
     "caps": {},
-    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both exchange tables together."
+    "note": "Laser source power is chosen at order (Raycus, MAX or IPG); the model number gives the nominal working area in decimetres (3015 = 3,000 × 1,500 mm). Speeds and accelerations are no-load values; the table load is the largest sheet the table carries, on the ULE for both shuttle tables together."
    },
    "pdf": {
     "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",

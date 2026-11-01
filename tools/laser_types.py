@@ -43,31 +43,31 @@ AUTO_FAQ = faq("laser-cutting-machine", "Can the laser be automated?")[0]
 
 SHEET = {
     "fiber-laser-cutting-machine": dict(
-        title="Fiber Laser Cutting Machines for Sale in Canada — Exchange Table & Pallet Changer, 1.5–80 kW | NovoTech",
-        meta="Fiber laser cutting machines sold, installed and supported in Canada: exchange table or pallet changer, laser-safe cabin, 4 × 4 ft compact machines to 8.5 × 41 ft, 1.5 to 80 kW — premium GFL and Smart made in Turkey, value-line ULE, Senfeng H series, NP and compact lasers. Every model in one table.",
-        h1="Fiber laser cutting machines — exchange table and pallet changer, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW",
-        intro="A fiber laser cutting machine cuts inside a laser-safe cabin with fume extraction, and its exchange table or pallet changer loads "
+        title="Fiber Laser Cutting Machines for Sale in Canada — Shuttle Table & Pallet Changer, 1.5–80 kW | NovoTech",
+        meta="Fiber laser cutting machines sold, installed and supported in Canada: shuttle table or pallet changer, laser-safe cabin, 4 × 4 ft compact machines to 8.5 × 41 ft, 1.5 to 80 kW — premium GFL and Smart made in Turkey, value-line ULE, Senfeng H series, NP and compact lasers. Every model in one table.",
+        h1="Fiber laser cutting machines — shuttle table and pallet changer, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW",
+        intro="A fiber laser cutting machine cuts inside a laser-safe cabin with fume extraction, and its shuttle table or pallet changer loads "
               "the next sheet while the first is being cut — the production laser that keeps cutting while the operator unloads, and the kind "
               "most shops buy from 5 × 10 ft up. NovoTech sells two lines in Canada, both on this page: the premium Dener lasers made in Turkey "
               "— the GFL with a space-frame gantry rated for 1.5 G and a pallet changer in 5 × 10 to 6.6 × 20 ft, 3 to 40 kW, and the Smart "
-              "with a double exchange table in six sizes to 8.5 × 41 ft; and the value line — NovoTech's own ULE with a 15-second exchange "
+              "with a shuttle table in six sizes to 8.5 × 41 ft; and the value line — NovoTech's own ULE with a 15-second shuttle "
               "table to 41 ft, the Senfeng H series with pallet changer from 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, the NP single-table "
               "lasers with a cover on the gantry, and compact lasers of 4 × 4 and 5 × 10 ft from 1.5 kW. Every model is in the table below "
               "with its working area, power and speed, then each family with its full specification, photos and brochure. Every machine "
               "comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, "
               "Canada. For long and heavy plate see the large-format plate lasers.",
-        points=["Premium: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with double table, six sizes to 8.5 × 41 ft",
-                "Value: ULE with 15 s exchange table 10 × 5 to 41 × 8.5 ft, 3 – 40 kW; Senfeng H series with pallet changer to 8.3 × 40 ft and 80 kW",
+        points=["Premium: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with shuttle table, six sizes to 8.5 × 41 ft",
+                "Value: ULE with 15 s shuttle table 10 × 5 to 41 × 8.5 ft, 3 – 40 kW; Senfeng H series with pallet changer to 8.3 × 40 ft and 80 kW",
                 "Senfeng NP single tables with a gantry cover, 5 × 10 to 6.6 × 20 ft, and compact 4 × 4 and 5 × 10 ft lasers from 1.5 kW; towers and storage"],
         hero="dn-gfl-1", minis=["vn-ule-1", "sf-h-1"],
         groups=[("ls-premium-gfl", "GFL production fiber lasers · premium line", "Dener's premium sheet laser: 1.5 G, pallet changer, 3 – 40 kW — built for a job shop that cuts all day."),
-                ("ls-premium-closed", "Smart fiber lasers with double table · premium line", "The economy line from the same Turkish factory: a double exchange table and 1 G in six sizes to 8.5 × 41 ft."),
-                ("ls-value-ule", "ULE fiber lasers with exchange table · value line", "NovoTech's own laser with a 15-second exchange table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW."),
+                ("ls-premium-closed", "Smart fiber lasers with shuttle table · premium line", "The economy line from the same Turkish factory: a shuttle table and 1 G in six sizes to 8.5 × 41 ft."),
+                ("ls-value-ule", "ULE fiber lasers with shuttle table · value line", "NovoTech's own laser with a 15-second shuttle table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW."),
                 ("ls-value-h", "H series lasers with pallet changer · value line", "The widest range: 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, with towers and storage."),
                 ("ls-value-np", "NP lasers with gantry cover · value line", "Single tables 5 × 10 to 6.6 × 20 ft, 3 to 12 kW: the cover travels with the gantry, the table stays open for loading."),
-                ("ls-value-compact", "Compact lasers · value line", "4 × 4 and 5 × 10 ft machines from 1.5 kW — the laser for the small shop.")],
-        faq=[{"q": "Exchange table or pallet changer — what is the difference?",
-              "a": "Both load the next sheet while the first is cut. An exchange table (Smart, ULE, compact) has two tables that swap places in 15 – 25 seconds, one in the cabin cutting and one outside being loaded. A pallet changer (GFL, H series) lifts the pallet with the cut sheet out of the cabin and slides the loaded pallet in, which is the arrangement a loading tower and sheet storage connect to for lights-out production. For a few sheets an hour the exchange table is enough; for automation, the pallet changer."},
+                ("ls-value-compact", "Compact single-table lasers · value line", "4 × 4 and 5 × 10 ft machines from 1.5 kW — the laser for the small shop.")],
+        faq=[{"q": "Shuttle table or pallet changer — what is the difference?",
+              "a": "Both load the next sheet while the first is cut. A shuttle table (Smart, ULE, compact) has two tables that swap places in 15 – 25 seconds, one in the cabin cutting and one outside being loaded. A pallet changer (GFL, H series) lifts the pallet with the cut sheet out of the cabin and slides the loaded pallet in, which is the arrangement a loading tower and sheet storage connect to for lights-out production. For a few sheets an hour the shuttle table is enough; for automation, the pallet changer. Some makers call the shuttle table an exchange table, a double table or a dual table — it is the same thing."},
              {"q": "Premium line or value line?",
               "a": "The premium GFL and Smart are built by Dener in Turkey on stress-relieved frames — the GFL rated for 1.5 G — with Precitec heads, IPG / nLIGHT sources, longer life at high duty and parts stocked in Canada: the machines for two shifts a day. NovoTech's value-line ULE and the Senfeng H series, NP and compact lasers are built in China with their own or Raycus sources in a wider range — 4 × 4 ft machines, 60 – 80 kW — at a lower price; NovoTech stocks the parts and does the service. Same cut quality at the same power."},
              POWER_FAQ, TABLE_FAQ, AUTO_FAQ, GAS_FAQ,
@@ -78,21 +78,21 @@ SHEET = {
     ),
     "sheet-and-tube-laser": dict(
         title="Sheet and Tube Combination Lasers for Sale in Canada — One Machine for Sheet and Tube to Ø13.8″ | NovoTech",
-        meta="Sheet-and-tube fiber lasers sold, installed and supported in Canada: a sheet laser with a rotary chuck beside the table — the ULET with exchange table to 41 × 8.5 ft sheet and Ø13.8″ tube, and the HM series to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube, 1.5 to 40 kW. Every model in one table.",
+        meta="Sheet-and-tube fiber lasers sold, installed and supported in Canada: a sheet laser with a rotary chuck beside the table — the ULET with shuttle table to 41 × 8.5 ft sheet and Ø13.8″ tube, and the HM series to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube, 1.5 to 40 kW. Every model in one table.",
         h1="Sheet and tube combination lasers — one machine for sheet and tube to Ø13.8″",
         intro="A sheet-and-tube laser puts a rotary chuck and tube supports beside the cutting table, so the same head cuts flat sheet from the "
               "table and holes, copes and lengths in round, square and rectangular tube from the chuck — one machine, one source and one "
               "footprint for a shop that cuts both. NovoTech sells two families in Canada, both on this page and both from the value line: "
-              "the ULET with its exchange table for sheet from 10 × 5 to 41 × 8.5 ft and tube to Ø13.8″, 1.5 to 40 kW; and the Senfeng HM "
+              "the ULET with its shuttle table for sheet from 10 × 5 to 41 × 8.5 ft and tube to Ø13.8″, 1.5 to 40 kW; and the Senfeng HM "
               "series with a pallet changer for 5 × 10 to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube, 6 kW and up. Every model is in the table "
               "below with its working area, power and speed, then each family with its full specification, photos and brochure. Every machine "
               "comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, Canada. "
               "For a dedicated tube machine with bundle loading see the tube laser cutters.",
-        points=["ULET: sheet 10 × 5 to 41 × 8.5 ft on an exchange table plus tube to Ø13.8″ and 39 ft, 1.5 – 40 kW",
+        points=["ULET: sheet 10 × 5 to 41 × 8.5 ft on a shuttle table plus tube to Ø13.8″ and 39 ft, 1.5 – 40 kW",
                 "HM series: sheet 5 × 10 to 8.3 × 20 ft on a pallet changer plus Ø8.6″ × 20 ft tube, from 6 kW",
                 "One head, one source, one footprint — tube supports and chuck fold away when cutting sheet"],
         hero="vn-ulet-1", minis=["sf-hm-1", "vn-ulet-tube-head"],
-        groups=[("ls-value-ulet", "ULET sheet-and-tube lasers with exchange table · value line", "The ULE with exchange table and a tube chuck — sheet to 41 × 8.5 ft and tube to Ø13.8″."),
+        groups=[("ls-value-ulet", "ULET sheet-and-tube lasers with shuttle table · value line", "The ULE with shuttle table and a tube chuck — sheet to 41 × 8.5 ft and tube to Ø13.8″."),
                 ("ls-value-hm", "HM sheet and tube combination lasers · value line", "5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, from 6 kW.")],
         faq=[faq("novotech-fiber-lasers", "Sheet and tube on one machine")[0],
              faq("senfeng-fiber-lasers", "What is the HM sheet-and-tube combination?")[0],
@@ -115,7 +115,7 @@ SHEET = {
               "and 12 to 60 kW, and the R / TX gantry plate lasers from 10 × 20 to 10 × 164 ft with 6 to 60 kW and bevel cutting. Every model "
               "is in the table below with its working area, power and speed, then each family with its full specification, photos and "
               "brochure. Every machine comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from "
-              "Mississauga, ON, Canada. For sheet work on an exchange table see the fiber laser cutting machines.",
+              "Mississauga, ON, Canada. For sheet work on a shuttle table see the fiber laser cutting machines.",
         points=["Premium: Smart semi-closed single tables 8.2 × 20 to 13 × 82 ft, 3 – 40 kW, ±0.01 mm — the cabin travels with the gantry",
                 "Value: ULG ground-rail lasers, 42.7 or 85.3 ft beds × up to 14.8 ft, 12 – 60 kW; R / TX gantry plate lasers 10 × 20 to 10 × 164 ft, 6 – 60 kW, ±45° bevel, oxy-fuel",
                 "For shipyards, structural steel, heavy equipment and plate service centres — 1-1/2″ and beyond"],
@@ -124,7 +124,7 @@ SHEET = {
                 ("ls-value-ulg", "ULG ground-rail plate lasers · value line", "NovoTech's own ground-rail laser: 42.7 or 85.3 ft × up to 14.8 ft, 12 to 60 kW."),
                 ("ls-value-r", "R / TX gantry plate lasers · value line", "Ultra-large plate lasers 10 × 20 to 10 × 164 ft, 6 – 60 kW, with ±45° bevel and oxy-fuel.")],
         faq=[{"q": "Semi-closed — what does it mean?",
-              "a": "The table stays open and the cover rides on the gantry: the laser-safe cabin or hood moves with the cutting head over the plate, so the beam, the spatter and most of the fumes stay under it while the crane or forklift can reach the table from any side. It is the arrangement for plate too long or too heavy for an exchange table; the fume extraction runs in zones under the slats along the whole bed."},
+              "a": "The table stays open and the cover rides on the gantry: the laser-safe cabin or hood moves with the cutting head over the plate, so the beam, the spatter and most of the fumes stay under it while the crane or forklift can reach the table from any side. It is the arrangement for plate too long or too heavy for a shuttle table; the fume extraction runs in zones under the slats along the whole bed."},
              faq("novotech-fiber-lasers", "When does a ground-rail laser make sense?")[0],
              faq("senfeng-fiber-lasers", "Plate gantries, bevels and oxy-fuel?")[0],
              POWER_FAQ, GAS_FAQ, SITE_FAQ, VOLT_FAQ_GENERIC],
