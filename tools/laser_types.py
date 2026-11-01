@@ -42,7 +42,7 @@ SITE_FAQ = faq("laser-cutting-machine", "What does the machine need on site?")[0
 AUTO_FAQ = faq("laser-cutting-machine", "Can the laser be automated?")[0]
 
 # the small names under the hero pictures — what the machine is, not its model code (the owner, Nov 1 2026)
-HERO_NAMES = {"dn-gfl": "High-speed laser with shuttle table", "dn-smart-closed": "Large-format laser with shuttle table",
+HERO_NAMES = {"dn-gfl": "High-speed laser with shuttle table", "dn-smart-closed": "Smart laser with shuttle table",
               "vn-ule": "Laser with 15-second shuttle table", "sf-h": "Production laser with pallet changer",
               "sf-compact": "Compact 5 × 10 ft fiber laser", "sf-np": "Single-table laser with gantry cover",
               "sf-1313g": "Compact 4 × 4 ft fiber laser"}
