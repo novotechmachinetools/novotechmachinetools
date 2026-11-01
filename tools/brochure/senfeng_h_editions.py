@@ -1003,7 +1003,147 @@ def book_g13():
     b.back("Fiber laser for your shop.", [SF + "sf-1313g-front.jpg", S + "g13-enclosed.jpg", S + "g13-head.jpg", S + "g13-samples.jpg"])
     return b
 
-BOOKS = {"g3": book_g3, "g4": book_g4, "np": book_np, "g13": book_g13}
+
+# ======================================================================================== SF3015HM tube and plate, 1.5 – 6 kW (the owner, Nov 1 2026)
+def book_hm():
+    data = json.load(open(os.path.join(HERE, "data-senfeng-sf3015hm-cutting.json")))
+    b = D.Book("sf-hm", "SF3015HM tube and plate fiber laser — full technical specification", "Senfeng · tube and plate laser cutting machine · 1.5 – 6 kW",
+               os.path.join(ROOT, "src", "files", "NovoTech-Senfeng-SF3015HM-Tube-Plate-Laser-Technical-Specification-2026.pdf"))
+    b.title = "Senfeng SF3015HM Tube and Plate Laser — Full Technical Specification — NovoTech Machine Tools"
+    b.subject = "Senfeng SF3015HM tube and plate fiber laser cutting machine, 1.5 – 6 kW — full technical specification, imperial edition"
+    b.cover("Senfeng · full technical specification", "SF3015HM · tube and plate laser cutting machine · 1.5 – 6 kW", "SF3015HM",
+            "Technical specification", "Tube and plate laser cutting machine", S + "hm-machine.jpg",
+            [("10 × 5 ft", "Working area"), ("Ø0.8 – 8.7″", "Tube diameter"), ("427 ft/min", "Maximum speed"), ("1 G", "Maximum acceleration")],
+            hero_h=300, minis=[S + "hm-head-6kw.jpg", S + "hm-source-1.jpg", S + "hm-bed.jpg", S + "hm-zaxis.jpg"])
+    b.page("Contents", "@@TOC@@", sub="Contents")
+    feats = ["High-strength machine tool bed", "Aircraft-grade aluminum beam", "One machine, double the functionality, efficiency multiplied",
+             "Automatic following technology"]
+    body = (title("01 · Model · tube &amp; plate cutting", "SF3015HM")
+            + P("Medium power laser cutting machine.", cls="sm")
+            + row(fig(S + "hm-machine.jpg", h=250, px=1600), fig(S + "hm-campus.jpg", "Senfeng's campus in Jinan, China", h=250, px=900), cols="1.7fr 1fr", gap=14)
+            + '<div class="feat">' + "".join(f"<div><b>{i}</b>{t}</div>" for i, t in enumerate(feats, 1)) + "</div>"
+            + P("*The image is for reference only; the appearance and dimensions are subject to the actual product from the factory.", cls="note")
+            + D.included())
+    b.page("Model", body, key="model")
+    pw = ["1.5 kW", "2 kW", "3 kW", "4 kW", "6 kW"]
+    rows = [("Working area (L × W)", ["120.1 × 60.2″ (3,050 × 1,530 mm)"]), ("X-axis travel", ["60.2″ (1,530 mm)"]), ("Y-axis travel", ["120.1″ (3,050 mm)"]),
+            ("Z-axis travel", ["13.0″ (330 mm)"]), ("Tube length", ["1.6 – 19.7 ft (500 – 6,000 mm)"]), ("Tube diameter", ["Ø0.8 – 8.7″ (Ø20 – 220 mm)"]),
+            ("X / Y axis positioning accuracy", ["±0.002″ (±0.05 mm)"]), ("X / Y axis repeated positioning accuracy", ["±0.0008″ (±0.02 mm)"]),
+            ("Maximum speed", ["427 ft/min (130 m/min)"]), ("Maximum acceleration", ["1 G"]),
+            ("Dimensions (L × W × H)", ["30.5 × 11.4 × 7.2 ft (9,300 × 3,460 × 2,180 mm)"]), ("Maximum load", ["2,425 lb (1,100 kg)"]),
+            ("Weight", [lb(7100), lb(7110), lb(7130), lb(7190), lb(7190)]), ("Phase", ["Three-phase"]),
+            ("Power supply rated voltage", ["380 V" + VOLT_NOTE]), ("Frequency", ["50 Hz"]), ("Overall power supply protection level", ["IP54"])]
+    trs = "".join(f"<tr><th>{l}</th>" + (f'<td colspan="5">{v[0]}</td>' if len(v) == 1 else "".join(f"<td>{x}</td>" for x in v)) + "</tr>" for l, v in rows)
+    body = (title("02 · Technical parameters", "Technical parameters · SF3015HM")
+            + f'<table class="kv spec3 spec5"><thead><tr><th>Item</th>{"".join(f"<th>{p}</th>" for p in pw)}</tr></thead><tbody>{trs}</tbody></table>'
+            + '<p class="small-note">1. Workpiece accuracy depends on factors like type, pre-treatment, sheet size and position.</p>'
+            + '<p class="small-note">2. Technical parameters are subject to change without notice. Final parameters are based on the order agreement.</p>'
+            + D.included())
+    b.page("Technical parameters", body, key="tech")
+    cut_page(b, data, 5, (0, 1), "1 of 3")     # Senfeng's page 03 (stainless + carbon) on two pages so the tables fit
+    cut_page(b, data, 5, (1, 2), "2 of 3")
+    cut_page(b, data, 6, None, "3 of 3")
+    body = (title("05 · Cost-benefit analysis", "Cost-benefit analysis · SF3015HM")
+            + P("If the cutting auxiliary gas is dried compressed air, the cost includes the air compressor's electricity, the machine's power "
+                "consumption and the consumables (protective lenses, cutting nozzles).", cls="sm")
+            + cost_table(pw, [5, 6, 10, 16, 16], [3, 3, 3, 6, 6], ["15", "/", "/"] * 5, 12, 3, ["0.5", "4.5", "60.5"],
+                         [38, 23, 23, 39, 24, 24, 43, 28, 28, 52, 37, 37, 52, 37, 37],
+                         [22.8, 13.8, 13.8, 23.4, 14.4, 14.4, 25.8, 16.8, 16.8, 31.2, 22.2, 22.2, 31.2, 22.2, 22.2],
+                         [23.3, 18.3, 74.3, 23.9, 18.9, 74.9, 26.3, 21.3, 77.3, 31.7, 26.7, 82.7, 31.7, 26.7, 82.7])
+            + '<p class="small-note">1. The electricity and gas prices are Senfeng\'s reference values in China (RMB) and may vary by region.</p>'
+            + '<p class="small-note">2. Auxiliary gas consumption varies with plate thickness; the values are based on 0.630″ (16 mm) carbon steel for '
+              "oxygen and 0.039″ (1 mm) stainless steel for nitrogen, for reference.</p>" + D.included())
+    b.page("Cost-benefit analysis", body, key="cost")
+    body = (title("06 · Configuration list", "Configuration list · SF3015HM")
+            + conf_table([("Laser source", [(1, "Laser source", 1, "Max")]), ("Laser cutting head", [(1, "Laser cutting head", 1, "Raytools")]),
+                          ("Machine tool &amp; host", [(1, "Transmission system", 4, "SENFENG"), (2, "Machine tool and accessory", 1, "SENFENG"),
+                                                     (3, "Reducer", 3, "SHIMPO, Japan"), (4, "Electrical and pneumatic systems", 1, "SCHNEIDER, France · AVENTICS, Germany"),
+                                                     (5, "AC servo motor and driver", 4, "Fuji Electric, Japan"), (6, "Water chiller", 1, "Hanli")]),
+                          ("CNC cutting system", [(1, "CNC laser cutting system", 1, "FSCUT")])],
+                         ["This is Senfeng's optimized configuration. Changes in brand or configuration may cause irreversible effects.",
+                          "The warranty period for the entire machine (excluding consumables, force majeure natural disasters, war, improper operation "
+                          "and human damage) is 1 year."]) + D.included())
+    b.page("Configuration", body, key="config")
+    heads = row(fig(S + "hm-head-3kw.jpg", "1.5 – 3 kW", h=190, px=600), fig(S + "hm-head-6kw.jpg", "4 – 6 kW", h=190, px=600), gap=14)
+    body = (title("07 · Core components", "Laser source · laser head")
+            + h2("SF3015HM laser source")
+            + row(row(fig(S + "hm-source-1.jpg", h=95, px=700), fig(S + "hm-source-2.jpg", h=95, px=700), gap=10),
+                  '<ol class="num">' + "".join(f"<li>{x}</li>" for x in ["High-power and high-quality laser output", "Uniformly distributed beam energy",
+                                                                         "Excellent performance and strong processing ability",
+                                                                         "Compact structure and maintenance-free", "Wide range of applications"]) + "</ol>",
+                  cols="1.3fr 1fr", gap=16, align="center")
+            + h2("SF3015HM laser head")
+            + row(heads, '<ol class="num">' + "".join(f"<li>{x}</li>" for x in [
+                "<b>Efficient cooling:</b> the collimating and focusing lenses have cooling structures, and the nozzle has a cooling airflow that "
+                "protects the nozzle and the ceramic body and extends operating time.",
+                "<b>Fast focusing:</b> collimated focusing moves faster and over a larger adjustment range than traditional focusing.",
+                "<b>Multiple protective lenses:</b> four protective lenses reduce contamination when the fiber and the lower protective lenses are "
+                "changed, extending the life of the collimating and focusing lenses.",
+                "<b>Optimized structure:</b> the integrated body is sealed; improved QBH, QD and G5 fiber interfaces fit more laser sources and "
+                "prevent jamming from rust or water leaks."]) + "</ol>",
+                  cols="1fr 1.25fr", gap=16, align="center"))
+    b.page("Laser source · head", body, key="source")
+    bed = [("1", "High-strength machine tool bed", S + "hm-bed.jpg", [
+                "The high-strength machine bed is welded from high-quality steel plates and tubes.",
+                "After welding it is stress-relief annealed, given a secondary aging treatment and precision-machined on a large milling machine, "
+                "for structural stability and vibration resistance under high acceleration.",
+                "The bed has no internal connections, which blocks heat transfer and keeps cutting heat from affecting the machining accuracy — "
+                "long-term resistance to deformation and a longer service life."]),
+           ("2", "Aircraft-grade high-strength aluminum beam", S + "hm-beam.jpg", [
+                "The beam is made of aerospace-grade high-strength aluminum alloy — extruded, quenched and aged — for rigidity, surface quality, "
+                "corrosion resistance and light, durable construction.",
+                "The internally optimized structure gives excellent dynamic performance at high speed, keeping the precision for cutting all shapes."]),
+           ("3", "Pneumatic system", S + "hm-pneumatic.jpg", [
+                "Control valves and proportional regulators from AVENTICS control the pressure and flow of each gas path electrically.",
+                "Cutting auxiliary gases: O₂, N₂, compressed air and others."]),
+           ("4", "Plate and tube cutting in one machine", S + "hm-machine.jpg", [
+                "The SF3015HM cuts both plate and tube, doubling efficiency."])]
+    cards = [card(img, f"{n} · {t}", checks(x, cls="sm"), h=100) for n, t, img, x in bed]
+    body = title("08 · Machine bed system", "SF3015HM machine bed system") + grid(cards[:2], 2, 18) + '<div style="height:8pt"></div>' + grid(cards[2:], 2, 18)
+    b.page("Machine bed system", body, key="bed")
+    bed2 = [("5", "Intelligent spiral negative-pressure dust removal system", S + "hm-dust.jpg", [
+                 "Smart control of the exhaust vents from the cutting position, with timed, zoned and sectional ventilation.",
+                 "The U-shaped sealed base at the bottom keeps the cutting smoke-free."]),
+            ("6", "Modular Z-axis", S + "hm-zaxis.jpg", [
+                 "The Z axis is modular, with good sealing that prevents contamination and lowers the failure rate.",
+                 "Modular installation and replacement greatly reduce maintenance time and difficulty."])]
+    cards = [card(img, f"{n} · {t}", checks(x, cls="sm"), h=150) for n, t, img, x in bed2]
+    body = title("09 · Machine bed system", "SF3015HM machine bed system") + grid(cards, 2, 18) + D.included()
+    b.page("Machine bed system", body, key="bed2")
+    labels = [("Nitrogen (300 psi)", "Adjustable 15 – 435 psi (0.1 – 3 MPa)", 23.3, 36.8), ("Oxygen", "Adjustable 7 – 131 psi (0.05 – 0.9 MPa)", 35.1, 69.3),
+              ("Compressed air", "Adjustable 15 – 435 psi (0.1 – 3 MPa)", 83.3, 60.2)]
+    gas = (f'<div class="lab" style="height:300pt"><img src="{D.im(S + "h3-gas.jpg", 1600)}">'
+           + "".join(f'<div class="gasl" style="left:{x}%;top:{y}%"><b>{t}</b><span>{s}</span></div>' for t, s, x, y in labels) + "</div>")
+    body = (title("10 · Auto gas distribution system", "Precise control of each gas flow") + gas
+            + P("The CNC laser cutting machine has two separate gas lines: nitrogen (air) and oxygen. Each gas line can be independently "
+                "controlled for flow rate and pressure.")
+            + checks(["The equipment software terminal has an automatic auxiliary gas selection feature.",
+                      "The type and pressure of the auxiliary gases are set and selected automatically through the CNC program — no manual operation.",
+                      "The actual gas pressure at the cutting head outlet is read and displayed on the panel in real time."]) + D.included())
+    b.page("Gas distribution", body, key="gas")
+    body = (title("11 · CNC system", "SF3015HM CNC system") + fig(S + "h3-cnc.jpg", "Bus cutting system — quick operation &amp; efficient cutting", h=200, px=1400)
+            + P("This intelligent bus system is designed specifically for fiber laser cutting. It integrates motion control, laser source control "
+                "and cutting gas control, offering stability, reliability, easy deployment, simple debugging, production safety and a rich set of "
+                "features with excellent performance. It offers modular, customizable, automated and informational solutions. The system has "
+                "memory buffering and a comprehensive cutting process database with optimized parameters for various materials and thicknesses, "
+                "for fast operation and efficient cutting — ideal for sheet metal, kitchenware and lighting.")
+            + checks(["Supported file formats: direct processing of DXF files and high-speed reading and writing of LXDS and NRP files generated by CypNest.",
+                      "A cutting database allows real-time adjustments during cutting for optimal processing quality.",
+                      "Multi-stage piercing, sharp-corner entry and centering significantly improve high-power cutting efficiency and stability.",
+                      "Optimized rapid travel modes, including the “LeapFrog” function."]) + D.included())
+    b.page("CNC system", body, key="cnc")
+    after_sales(b, 12, "hm-cust-")
+    b.back("Fiber laser for your shop.", [S + "hm-machine.jpg", S + "hm-head-6kw.jpg", S + "hm-bed.jpg", S + "hm-zaxis.jpg"])
+    toc_page(b, [("01 · Model", "model"), ("02 · Technical parameters", "tech"), ("03 · Cutting parameters — stainless steel", "cut1 of 3"),
+                 ("03 · Cutting parameters — carbon steel", "cut2 of 3"), ("04 · Cutting parameters — brass, aluminum", "cut3 of 3"),
+                 ("05 · Cost-benefit analysis", "cost"), ("06 · Configuration list", "config"), ("07 · Laser source, laser head", "source"),
+                 ("08 – 09 · Machine bed system", "bed"), ("10 · Auto gas distribution system", "gas"), ("11 · CNC system", "cnc"),
+                 ("12 · Automated metal fabrication solutions", "solutions"), ("13 · Personnel training, packaging and transportation", "training"),
+                 ("14 · Installation and customization", "custom"), ("15 · Five-star fast service", "service"), ("16 · Customer testimonials", "cust")],
+             "Full technical specification · SF3015HM · 1.5 – 6 kW")
+    return b
+
+BOOKS = {"g3": book_g3, "g4": book_g4, "np": book_np, "g13": book_g13, "hm": book_hm}
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")] or list(BOOKS)

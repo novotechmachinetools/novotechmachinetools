@@ -143,6 +143,7 @@ BROCHURES = [
     ("laser", "NovoTech-Senfeng-SF3015H-High-Power-Laser-Technical-Specification-2026.pdf", "Senfeng SF3015H high-power fiber laser, 12 – 30 kW — full technical specification"),
     ("laser", "NovoTech-Senfeng-SF1530NP-Fiber-Laser-Technical-Specification-2026.pdf", "Senfeng SF1530NP compact fiber laser, 3 – 6 kW — full technical specification"),
     ("laser", "NovoTech-Senfeng-SF1313G-Fiber-Laser-2026.pdf", "Senfeng SF1313G compact fiber laser, 4 × 4 ft, 1.5 – 3 kW"),
+    ("laser", "NovoTech-Senfeng-SF3015HM-Tube-Plate-Laser-Technical-Specification-2026.pdf", "Senfeng SF3015HM tube and plate fiber laser, 1.5 – 6 kW — full technical specification"),
     ("laser", "NovoTech-Dener-Tube-Lasers-2026.pdf", "Dener tube laser cutting machines"),
     ("laser", "NovoTech-Tube-Lasers-Value-Line-2026.pdf", "NovoTech value-line tube lasers"),
     ("laser", "NovoTech-Senfeng-Tube-Lasers-2026.pdf", "Senfeng tube laser cutting machines"),

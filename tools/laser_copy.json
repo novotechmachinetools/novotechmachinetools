@@ -108,10 +108,10 @@
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells three lines of tube lasers in Canada, each on its own page: the Dener tube lasers — the premium line, made in Turkey, the E-FTL with 1 G servo chucks for Ø0.3″ to 13.8″ and the heavy FTL for structural tube, pipe and beams to Ø25.2″ and 12 m bars of 2,600 kg; NovoTech's own ULT — the value line, two or three pneumatic chucks for Ø0.4″ to 14.2″ on 20 to 39 ft tubes with 1.5 to 40 kW; and the Senfeng tube lasers — a value line under its own brand, from the Ø0.5″ two-chuck T series with 1.5 kW to the high-speed PLUS, the 45° bevel GT, the zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft. For trailer, railing, furniture, agricultural, HVAC and steel-construction work. Below, each line in brief and every model in one table of tube range, power, speed and bar length; every machine comes with a CSA-approved panel, chiller, tube nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
+  "intro": "A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells three lines of tube lasers in Canada, each on its own page: the Dener tube lasers — the premium line, made in Turkey, the E-FTL with 1 G servo chucks for Ø0.3″ to 13.8″ and the heavy FTL for structural tube, pipe and beams to Ø25.2″ and 12 m bars of 2,600 kg; NovoTech's own ULT — the value line, two or three pneumatic chucks for Ø0.4″ to 14.2″ on 20 to 40 ft tubes with 1.5 to 40 kW; and the Senfeng tube lasers — a value line under its own brand, from the Ø0.5″ two-chuck T series with 1.5 kW to the high-speed PLUS, the 45° bevel GT, the zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft. For trailer, railing, furniture, agricultural, HVAC and steel-construction work. Below, each line in brief and every model in one table of tube range, power, speed and bar length; every machine comes with a CSA-approved panel, chiller, tube nesting software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
   "points": [
-   "Dener premium line: E-FTL Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm; FTL Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb",
-   "NovoTech value line: ULT two- and three-chuck lasers Ø0.4″ – 14.2″, square to 13.8″, 20 – 39 ft tubes to 2,205 lb, 1.5 – 40 kW",
+   "Dener premium line: E-FTL Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm; FTL Ø0.6″ – 25.2″, bars to 40 ft and 5,732 lb",
+   "NovoTech value line: ULT two- and three-chuck lasers Ø0.4″ – 14.2″, square to 13.8″, 20 – 40 ft tubes to 2,205 lb, 1.5 – 40 kW",
    "Senfeng value line: T, PLUS and 45° bevel GT lasers Ø0.5″ – 14″; NT zero-tailing, ST / HT three- and four-chuck lasers to Ø25″ and 49 ft"
   ],
   "groups": [],
@@ -281,7 +281,7 @@
    },
    {
     "q": "Sheet and tube on one machine — what does the ULET add?",
-    "a": "The ULET adds a pneumatic rotary chuck and tube supports to the sheet laser with shuttle table: round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 20, 29.5 or 39 ft long, cut with the same source and head, and sheet to 41 × 8.5 ft and 40 kW. A shop that cuts tube every day is better served by a dedicated ULT tube laser with a loader."
+    "a": "The ULET adds a pneumatic rotary chuck and tube supports to the sheet laser with shuttle table: round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 20, 30 or 40 ft long, cut with the same source and head, and sheet to 41 × 8.5 ft and 40 kW. A shop that cuts tube every day is better served by a dedicated ULT tube laser with a loader."
    },
    {
     "q": "What does the laser need on site?",
@@ -301,7 +301,7 @@
    "ULF open-type: G build 1.5 – 6 kW, E build to 12 kW and 1.7 G on 10 × 5 to 20 × 7.2 ft; large-format plate tables to 85 × 10.5 ft and 60 kW",
    "ULE enclosed with shuttle table, 15 s swap: 10 × 5 to 41 × 8.5 ft, 3 – 40 kW, Z travel to 16.5″, ready for a storage tower",
    "ULG ground-rail plate lasers: 42.7 or 85.3 ft × up to 14.8 ft, 12 – 60 kW, up to 202,000 lb of plate on the table",
-   "ULFT and ULET sheet + tube: the laser table plus a pneumatic chuck for tube to Ø13.8″ and 39 ft, open or enclosed, 1.5 – 60 kW"
+   "ULFT and ULET sheet + tube: the laser table plus a pneumatic chuck for tube to Ø13.8″ and 40 ft, open or enclosed, 1.5 – 60 kW"
   ],
   "groups": [
    {
@@ -504,8 +504,8 @@
   ],
   "intro": "Dener's tube lasers are the premium line of NovoTech's tube laser section: built in Kayseri, Turkey, with servo chucks, Precitec heads and 3 to 20 kW sources, and backed by parts stocked in Canada. The E-FTL is the fast machine for the sizes most fabricators use — railings, frames, furniture, trailers, exhaust: four chuck sizes from Ø0.3″ to 13.8″, servo axes accelerating at 1 G to 394 ft/min and ±0.05 mm repeatability on 7, 9 or 12 m bars. The FTL is built for weight: structural tube, pipe and beams to Ø25.2″ and 12 m bars of 2,600 kg — 12,000 kg on the long-bed 250 — with ±0.1 mm on the large chucks and a 5-axis bevel head for weld preparations. Both load from a bundle automatically, support the tube as it is cut, nest parts along the bar from STEP / IGES models and unload finished pieces. Installed, trained and supported from Mississauga, ON, Canada.",
   "points": [
-   "E-FTL 120 / 180 / 250 / 350: Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm, bars to 39.4 ft",
-   "FTL 250 / 350 / 500 / 640: Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb (12,000 kg on the long-bed 250), 5-axis bevel head",
+   "E-FTL 120 / 180 / 250 / 350: Ø0.3″ – 13.8″, 1 G, 394 ft/min, ±0.05 mm, bars to 40 ft",
+   "FTL 250 / 350 / 500 / 640: Ø0.6″ – 25.2″, bars to 40 ft and 5,732 lb (12,000 kg on the long-bed 250), 5-axis bevel head",
    "3 – 20 kW sources, bundle loaders, following supports, STEP / IGES tube nesting; made in Turkey, parts stocked in Canada"
   ],
   "groups": [
@@ -587,7 +587,7 @@
    },
    {
     "q": "Two chucks or three?",
-    "a": "With two chucks the rear chuck has to keep hold of the bar, so the last few inches of every bar are scrap. The three-chuck ULT adds a chuck that takes over the bar as it shortens and cuts the last part with no remnant — on 20 to 39 ft tubes of stainless or heavy-wall tube that saves material on every bundle. It is built on the 024, 028 and 036 chucks."
+    "a": "With two chucks the rear chuck has to keep hold of the bar, so the last few inches of every bar are scrap. The three-chuck ULT adds a chuck that takes over the bar as it shortens and cuts the last part with no remnant — on 20 to 40 ft tubes of stainless or heavy-wall tube that saves material on every bundle. It is built on the 024, 028 and 036 chucks."
    },
    {
     "q": "How is the tube loaded?",
@@ -610,9 +610,9 @@
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass, straight from the 3D model. The ULT is NovoTech's own tube laser — the value line, built in China to our specification and sold under NovoTech's name: pneumatic self-centring chucks at both ends of the bar, servo-following supports, 1.5 to 40 kW sources and four chuck sizes for round tube from Ø0.4 to 14.2″ and square to 13.8″, on 20, 29.5 or 39 ft tubes of up to 2,205 lb. The three-chuck version cuts the last part without a remnant; pneumatic loaders, bundle feeding to 5 tonnes, a ±45° five-axis bevel head and TubesT nesting are options. For sheet and tube on one machine see the ULFT and ULET on the NovoTech fiber laser page; for the premium Turkish tube lasers see Dener. Installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a 1-year warranty.",
+  "intro": "A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass, straight from the 3D model. The ULT is NovoTech's own tube laser — the value line, built in China to our specification and sold under NovoTech's name: pneumatic self-centring chucks at both ends of the bar, servo-following supports, 1.5 to 40 kW sources and four chuck sizes for round tube from Ø0.4 to 14.2″ and square to 13.8″, on 20, 30 or 40 ft tubes of up to 2,205 lb. The three-chuck version cuts the last part without a remnant; pneumatic loaders, bundle feeding to 5 tonnes, a ±45° five-axis bevel head and TubesT nesting are options. For sheet and tube on one machine see the ULFT and ULET on the NovoTech fiber laser page; for the premium Turkish tube lasers see Dener. Installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a 1-year warranty.",
   "points": [
-   "Four chuck sizes: Ø6.3, 9.4, 11 and 14.2″ round, square to 13.8″; 20, 29.5 or 39 ft tubes to 2,205 lb",
+   "Four chuck sizes: Ø6.3, 9.4, 11 and 14.2″ round, square to 13.8″; 20, 30 or 40 ft tubes to 2,205 lb",
    "1.5 – 40 kW; 328 ft/min and 1.2 G on the small chucks; ±0.04 mm/m positioning; double-acting pneumatic chucks",
    "Three-chuck zero-tail version; pneumatic loader, bundle feeding to 5 t, ±45° five-axis bevel head, TubesT nesting"
   ],
@@ -620,7 +620,7 @@
    {
     "id": "tube-novotech-group",
     "title": "NovoTech tube lasers — the value line",
-    "lead": "Two- and three-chuck ULT tube lasers in four chuck sizes, Ø0.4 to 14.2″, 20 to 39 ft tubes.",
+    "lead": "Two- and three-chuck ULT tube lasers in four chuck sizes, Ø0.4 to 14.2″, 20 to 40 ft tubes.",
     "families": [
      "vn-ult"
     ]
@@ -678,11 +678,11 @@
   "faq": [
    {
     "q": "T series or PLUS?",
-    "a": "The T series is the all-round two-chuck machine: 1.5 to 6 kW, Ø0.5 to 14″, 20 to 39 ft, fifteen models — the one most shops buy first. The PLUS is tuned for speed on small and medium tube — 394 to 492 ft/min, 180 rpm chucks, 3 to 6 kW — for furniture, fitness equipment and racking where thousands of short parts are cut a shift. If you also need mitres and weld preparations, the GPLUS (Ø0.6 – 4.7″) or GT (Ø2.3 – 14.1″) add the 45° bevel head."
+    "a": "The T series is the all-round two-chuck machine: 1.5 to 6 kW, Ø0.5 to 14″, 20 to 40 ft, fifteen models — the one most shops buy first. The PLUS is tuned for speed on small and medium tube — 394 to 492 ft/min, 180 rpm chucks, 3 to 6 kW — for furniture, fitness equipment and racking where thousands of short parts are cut a shift. If you also need mitres and weld preparations, the GPLUS (Ø0.6 – 4.7″) or GT (Ø2.3 – 14.1″) add the 45° bevel head."
    },
    {
     "q": "What is zero-tailing — the NT series?",
-    "a": "A two-chuck machine cannot cut the last part of the bar because the rear chuck has to hold something, so a remnant of the chuck length is scrapped from every bar. The NT puts a third chuck in the middle that takes over the bar as it shortens, so the last part is cut and the tail is near zero — on 20 to 39 ft stock to Ø14″ that is several percent of material saved on every bundle."
+    "a": "A two-chuck machine cannot cut the last part of the bar because the rear chuck has to hold something, so a remnant of the chuck length is scrapped from every bar. The NT puts a third chuck in the middle that takes over the bar as it shortens, so the last part is cut and the tail is near zero — on 20 to 40 ft stock to Ø14″ that is several percent of material saved on every bundle."
    },
    {
     "q": "When do I need three or four chucks — ST and HT?",
@@ -705,9 +705,9 @@
     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
    }
   ],
-  "intro": "Senfeng's tube lasers are the value line of NovoTech's tube laser section, sold under the Senfeng brand: thirty models that start where most shops start — a 6 m two-chuck machine with a 1.5 kW source for the railings, frames, furniture and racking tube that make up most tube work — and go where few others do. The T series two-chuck machines cover Ø0.5 to 14″ and 20 to 39 ft with 1.5 to 6 kW; the PLUS runs to 492 ft/min on small tube and the GPLUS / GT add a 45° bevel head for mitred corners and weld preparations; the NT puts a third chuck in the middle so the last part is cut without a tail; and the ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over 29 to 49 ft with 6 to 20 kW, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for H-beams, channels and angles. Pneumatic self-centring chucks, following supports, tube nesting from 3D files, bundle loaders and unloading conveyors; CE / FDA / ETL certified and CSA approved. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel and NovoTech's warranty.",
+  "intro": "Senfeng's tube lasers are the value line of NovoTech's tube laser section, sold under the Senfeng brand: thirty models that start where most shops start — a 6 m two-chuck machine with a 1.5 kW source for the railings, frames, furniture and racking tube that make up most tube work — and go where few others do. The T series two-chuck machines cover Ø0.5 to 14″ and 20 to 40 ft with 1.5 to 6 kW; the PLUS runs to 492 ft/min on small tube and the GPLUS / GT add a 45° bevel head for mitred corners and weld preparations; the NT puts a third chuck in the middle so the last part is cut without a tail; and the ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over 29 to 49 ft with 6 to 20 kW, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for H-beams, channels and angles. Pneumatic self-centring chucks, following supports, tube nesting from 3D files, bundle loaders and unloading conveyors; CE / FDA / ETL certified and CSA approved. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel and NovoTech's warranty.",
   "points": [
-   "T series: Ø0.5 – 14.1″, 20 – 39 ft, 1.5 – 6 kW, 15 models in two bed lengths; PLUS to 492 ft/min; GPLUS / GT with ±45° bevel head",
+   "T series: Ø0.5 – 14.1″, 20 – 40 ft, 1.5 – 6 kW, 15 models in two bed lengths; PLUS to 492 ft/min; GPLUS / GT with ±45° bevel head",
    "NT zero-tailing three-chuck machines Ø0.7 – 14.1″; ST three-chuck and HT four-chuck to Ø25.1″, 6,600 lb and 49 ft, 6 – 20 kW",
    "SF1500CH H-beam and profile line with visual scanning; bundle loaders and unloading conveyors for every model"
   ],

@@ -188,7 +188,7 @@ NOTE_ULG = ("The model number gives the table in decimetres (13035 = 13,000 × 3
 
 # ------------------------------------------------------------------------------------------------ sheet + tube combinations
 TUBE_CHUCK = "Ø8.7″ or Ø13.8″ chuck (Ø220 / 350 mm); square tube to 12.6″ (320 mm) on the large chuck"
-TUBE_LEN = "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+TUBE_LEN = "19.7, 29.5 or 40 ft (6, 9 or 12 m)"
 T_ULFT = table("ULFT open-type sheet-and-tube fiber lasers", "13 table sizes · 10 × 5 to 85 × 10.5 ft · tube to Ø13.8″ · 1.5 – 60 kW", ["ULFT series"], [
     ("Working area", "sheet", "10 × 5 ft to 85 × 10.5 ft (3,000 × 1,500 – 26,000 × 3,200 mm)"),
     ("Table sizes", "sheet", "10 × 5, 13 × 5, 20 × 5, 13 × 6.6 and 20 × 6.6 ft; 20, 26, 43 or 85 ft × 8.5 or 10.5 ft (3 × 1.5 to 26 × 3.2 m)"),
@@ -227,7 +227,7 @@ def ult_rows(rows, three):
         ("Round tube", [dia(r[1], r[2]) for r in rows]),
         ("Square tube", "max. side", [mm_in(r[3]) for r in rows]),
         ("Laser power", "1.5 – 40 kW"),
-        ("Bar length", "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"),
+        ("Bar length", "19.7, 29.5 or 40 ft (6, 9 or 12 m)"),
         ("Max. tube weight", "on the chucks", [weight(r[11]) for r in rows]),
         ("Max. speed", [mmin(r[8]) for r in rows]),
         ("Max. acceleration", [f"{r[9]:g} G" for r in rows]),
@@ -238,7 +238,7 @@ def ult_rows(rows, three):
         ("Loading", [r[12] for r in rows])]
 
 
-T_ULT2 = table("ULT two-chuck tube lasers", "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft tubes · 1.5 – 40 kW", [f"ULT-{r[0]}" for r in ULT], ult_rows(ULT, False))
+T_ULT2 = table("ULT two-chuck tube lasers", "6 chuck versions · Ø0.4 – 14.2″ · 20 – 40 ft tubes · 1.5 – 40 kW", [f"ULT-{r[0]}" for r in ULT], ult_rows(ULT, False))
 ULT3 = [r for r in ULT if r[6]]
 T_ULT3 = table("ULT three-chuck tube lasers · zero-tail", "4 chuck versions · Ø0.4 – 14.2″ · the last part cut without a remnant", [f"ULT-{r[0]} · 3 chucks" for r in ULT3], ult_rows(ULT3, True))
 
@@ -315,10 +315,10 @@ SHEET_FAMILIES = [
          models_label="ULET 3015 – 12526 · 8 table sizes",
          summary="Sheet and tube on one machine: the ULE cabin with its shuttle table for sheet, and at the end "
                  "of the machine a pneumatic chuck — three times faster to clamp than an electric one — for round, square and "
-                 "rectangular tube to Ø8.7″ or Ø13.8″ and 39 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; "
+                 "rectangular tube to Ø8.7″ or Ø13.8″ and 40 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; "
                  "the same source and head cut both, so a shop that cuts tube a few times a week does not need a second laser.",
-         features=["Sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 40 kW; 459 ft/min"] + LZ_STD,
-         optional=LZ_OPT + ["Tube supports and unloading for 39 ft lengths"],
+         features=["Sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 40 ft; 1.5 – 40 kW; 459 ft/min"] + LZ_STD,
+         optional=LZ_OPT + ["Tube supports and unloading for 40 ft lengths"],
          images=["vn-ulet-1", "vn-ulet-side", "vn-ulet-open", "vn-ulet-factory", "vn-ulet-inside", "vn-ulet-gantry", "vn-ulet-table-chuck",
                  "vn-ulet-table", "vn-ulet-head", "vn-ulet-cutting", "vn-ulet-sample", "vn-ulet-tube-unit", "vn-ulet-chuck", "vn-ulet-tube-head",
                  "vn-ulet-tube-zone", "vn-ulet-tube-parts", "vn-ulet-source"],
@@ -328,16 +328,16 @@ SHEET_FAMILIES = [
 
 TUBE_FAMILIES = [
     dict(id="vn-ult", group="tube-novotech", page=P_TUBE, brand=BRAND,
-         name="ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft tubes, 1.5 – 40 kW",
+         name="ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 40 ft tubes, 1.5 – 40 kW",
          short="ULT tube lasers",
          models_label="ULT-016A – 036A · two- and three-chuck · 10 versions",
          summary="The tube laser for round, square, rectangular, oval and open profiles: pneumatic self-centring chucks at both ends "
                  "of the bar, servo-following supports under it, and a 1.5 to 40 kW source that cuts holes, slots, copes and notches "
-                 "and parts the tube in one pass. Four chuck sizes — Ø6.3″, 9.4″, 11″ and 14.2″ — for bars of 20, 29.5 or 39 ft and "
+                 "and parts the tube in one pass. Four chuck sizes — Ø6.3″, 9.4″, 11″ and 14.2″ — for bars of 20, 30 or 40 ft and "
                  "up to 2,205 lb; 328 ft/min and 1.2 G on the small chucks. The three-chuck version takes over the bar as it "
                  "shortens, so the last part is cut with no remnant. Pneumatic loaders, bundle feeding, a ±45° five-axis bevel head "
                  "and TubesT nesting are options.",
-         features=["Ø0.4 – 14.2″ round, square to 13.8″; bars 20 – 39 ft and to 2,205 lb; 1.5 – 40 kW; to 328 ft/min, 1.2 G"] + TB_STD,
+         features=["Ø0.4 – 14.2″ round, square to 13.8″; bars 20 – 40 ft and to 2,205 lb; 1.5 – 40 kW; to 328 ft/min, 1.2 G"] + TB_STD,
          optional=TB_OPT,
          images=["vn-ult-1", "vn-ult-chuck", "vn-ult-frame", "vn-ult-beam", "vn-ult-head", "vn-ult-console", "vn-ult-loader", "vn-ult-zero",
                  "vn-ult-feeder", "vn-ult-dualy", "vn-ult-tubest"],

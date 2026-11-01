@@ -17,7 +17,7 @@
    "summary": "The fast tube laser: servo axes accelerating at 1 G move the chucks at up to 394 ft/min, cutting round, square, rectangular and open profiles from Ø0.3″ to 13.8″ in 7, 9 or 12 m lengths with ±0.05 mm repeatability. Four chuck sizes and 3 to 20 kW sources, with the bundle loader, following supports and tube nesting software that turn a bar of tube into finished parts without an operator at the machine.",
    "features": [
     "Ø0.3 – 13.8″ (8 – 350 mm) round and profile; 1 G, 394 ft/min (120 m/min)",
-    "Tube length to 39.4 ft (12 m) with automatic bundle loader",
+    "Tube length to 40 ft (12 m) with automatic bundle loader",
     "Fiber laser source 3 – 20 kW, autofocus cutting head",
     "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
     "Automatic loader for bundles; tube supports that follow the cut; unloading table",
@@ -28,7 +28,7 @@
    ],
    "optional": [
     "Bevel (3D) cutting head",
-    "Longer loading and unloading, 29.5 and 39.4 ft (9 / 12 m)",
+    "Longer loading and unloading, 30 and 40 ft (9 / 12 m)",
     "Seam detection; tapping and drilling attachments",
     "Dust collector",
     "Custom voltage: 208 V, 240 V or 480 V 3-phase"
@@ -104,8 +104,8 @@
         "cells": [
          "23 ft, 265 lb (7 m, 120 kg)",
          "23 ft, 529 lb (7 m, 240 kg)",
-         "23 ft, 661 lb · 29.5 ft, 970 lb · 39.4 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)",
-         "23 ft, 1,323 lb · 29.5 ft, 2,646 lb · 39.4 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"
+         "23 ft, 661 lb · 30 ft, 970 lb · 40 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)",
+         "23 ft, 1,323 lb · 30 ft, 2,646 lb · 40 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"
         ],
         "key": false
        },
@@ -184,7 +184,7 @@
        "0.6 – 9.8″ (15 – 250 mm)",
        "3 / 6 / 12 / 20 kW",
        "262 ft/min (80 m/min)",
-       "23 ft, 661 lb · 29.5 ft, 970 lb · 39.4 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)"
+       "23 ft, 661 lb · 30 ft, 970 lb · 40 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)"
       ]
      },
      {
@@ -194,7 +194,7 @@
        "1.2 – 13.8″ (30 – 350 mm)",
        "3 / 6 / 12 / 20 kW",
        "177 ft/min (54 m/min)",
-       "23 ft, 1,323 lb · 29.5 ft, 2,646 lb · 39.4 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"
+       "23 ft, 1,323 lb · 30 ft, 2,646 lb · 40 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"
       ]
      }
     ],
@@ -218,12 +218,12 @@
   "vn-ult": {
    "id": "vn-ult",
    "brand": "novotech",
-   "name": "ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft tubes, 1.5 – 40 kW",
+   "name": "ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 40 ft tubes, 1.5 – 40 kW",
    "short": "ULT tube lasers",
    "models_label": "ULT-016A – 036A · two- and three-chuck · 10 versions",
-   "summary": "The tube laser for round, square, rectangular, oval and open profiles: pneumatic self-centring chucks at both ends of the bar, servo-following supports under it, and a 1.5 to 40 kW source that cuts holes, slots, copes and notches and parts the tube in one pass. Four chuck sizes — Ø6.3″, 9.4″, 11″ and 14.2″ — for bars of 20, 29.5 or 39 ft and up to 2,205 lb; 328 ft/min and 1.2 G on the small chucks. The three-chuck version takes over the bar as it shortens, so the last part is cut with no remnant. Pneumatic loaders, bundle feeding, a ±45° five-axis bevel head and TubesT nesting are options.",
+   "summary": "The tube laser for round, square, rectangular, oval and open profiles: pneumatic self-centring chucks at both ends of the bar, servo-following supports under it, and a 1.5 to 40 kW source that cuts holes, slots, copes and notches and parts the tube in one pass. Four chuck sizes — Ø6.3″, 9.4″, 11″ and 14.2″ — for bars of 20, 30 or 40 ft and up to 2,205 lb; 328 ft/min and 1.2 G on the small chucks. The three-chuck version takes over the bar as it shortens, so the last part is cut with no remnant. Pneumatic loaders, bundle feeding, a ±45° five-axis bevel head and TubesT nesting are options.",
    "features": [
-    "Ø0.4 – 14.2″ round, square to 13.8″; bars 20 – 39 ft and to 2,205 lb; 1.5 – 40 kW; to 328 ft/min, 1.2 G",
+    "Ø0.4 – 14.2″ round, square to 13.8″; bars 20 – 40 ft and to 2,205 lb; 1.5 – 40 kW; to 328 ft/min, 1.2 G",
     "Double-acting pneumatic self-centring chucks — the standard chuck clamps Ø0.6 to 8.7″ (15 – 220 mm) without changing the jaws",
     "Fiber laser source 1.5 – 40 kW (Raycus, MAX or IPG) with an autofocus tube cutting head and anti-collision protection",
     "Cypcut tube control with the cutting database and power-based speed adjustment",
@@ -257,7 +257,7 @@
     "tables": [
      {
       "title": "ULT two-chuck tube lasers",
-      "sub": "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft tubes · 1.5 – 40 kW",
+      "sub": "6 chuck versions · Ø0.4 – 14.2″ · 20 – 40 ft tubes · 1.5 – 40 kW",
       "models": [
        "ULT-016A",
        "ULT-016B",
@@ -310,12 +310,12 @@
         "label": "Bar length",
         "sub": "",
         "cells": [
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)"
         ],
         "key": false
        },
@@ -472,10 +472,10 @@
         "label": "Bar length",
         "sub": "",
         "cells": [
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)"
         ],
         "key": false
        },
@@ -577,7 +577,7 @@
        "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
        "1.5 – 40 kW",
        "328 ft/min (100 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "331 lb (150 kg)"
       ]
      },
@@ -587,7 +587,7 @@
        "Ø0.4 – 6.3″ (Ø10 – 160 mm)",
        "1.5 – 40 kW",
        "328 ft/min (100 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "353 lb (160 kg)"
       ]
      },
@@ -597,7 +597,7 @@
        "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
        "1.5 – 40 kW",
        "328 ft/min (100 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "882 lb (400 kg)"
       ]
      },
@@ -607,7 +607,7 @@
        "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
        "1.5 – 40 kW",
        "328 ft/min (100 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "573 lb (260 kg)"
       ]
      },
@@ -617,7 +617,7 @@
        "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
        "1.5 – 40 kW",
        "246 ft/min (75 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "1,323 lb (600 kg)"
       ]
      },
@@ -627,7 +627,7 @@
        "Ø0.4 – 14.2″ (Ø10 – 360 mm)",
        "1.5 – 40 kW",
        "197 ft/min (60 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "2,205 lb (1,000 kg)"
       ]
      },
@@ -637,7 +637,7 @@
        "Ø0.4 – 9.4″ (Ø10 – 240 mm)",
        "1.5 – 40 kW",
        "328 ft/min (100 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "882 lb (400 kg)"
       ]
      },
@@ -647,7 +647,7 @@
        "Ø0.4 – 9.1″ (Ø10 – 230 mm)",
        "1.5 – 40 kW",
        "328 ft/min (100 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "573 lb (260 kg)"
       ]
      },
@@ -657,7 +657,7 @@
        "Ø0.4 – 11.0″ (Ø10 – 280 mm)",
        "1.5 – 40 kW",
        "246 ft/min (75 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "1,323 lb (600 kg)"
       ]
      },
@@ -667,7 +667,7 @@
        "Ø0.4 – 14.2″ (Ø10 – 360 mm)",
        "1.5 – 40 kW",
        "197 ft/min (60 m/min)",
-       "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)",
+       "19.7, 29.5 or 40 ft (6, 9 or 12 m)",
        "2,205 lb (1,000 kg)"
       ]
      }
@@ -692,12 +692,12 @@
   "sf-t": {
    "id": "sf-t",
    "brand": "senfeng",
-   "name": "T series two-chuck tube lasers, Ø0.5 – 14″, 20 – 39 ft, 1.5 – 6 kW",
+   "name": "T series two-chuck tube lasers, Ø0.5 – 14″, 20 – 40 ft, 1.5 – 6 kW",
    "short": "T series tube lasers",
    "models_label": "SF6012T – SF12035T · SF7012T – SF7524T · 15 models",
-   "summary": "The tube laser most shops start with: two pneumatic self-centring chucks, following supports, a 1.5 to 6 kW source and a CNC with tube nesting that imports 3D files, cutting round, square, rectangular and profile tube to 14″ and 39 ft. Fifteen models in two bed lengths — the 7 m / 7.5 m beds take 23 and 24.6 ft stock, the 6, 9 and 12 m beds 20, 29.5 and 39 ft — with chucks for Ø4.7, 6.6, 9 and 14″. An automatic bundle loader and an unloading conveyor turn it into an unattended cell.",
+   "summary": "The tube laser most shops start with: two pneumatic self-centring chucks, following supports, a 1.5 to 6 kW source and a CNC with tube nesting that imports 3D files, cutting round, square, rectangular and profile tube to 14″ and 40 ft. Fifteen models in two bed lengths — the 7 m / 7.5 m beds take 23 and 24.6 ft stock, the 6, 9 and 12 m beds 20, 29.5 and 40 ft — with chucks for Ø4.7, 6.6, 9 and 14″. An automatic bundle loader and an unloading conveyor turn it into an unattended cell.",
    "features": [
-    "Ø0.5 – 14.1″ round, □0.5 – 14.1″ square; 20 – 39 ft; 1.5 – 6 kW; to 492 ft/min, 180 rpm",
+    "Ø0.5 – 14.1″ round, □0.5 – 14.1″ square; 20 – 40 ft; 1.5 – 6 kW; to 492 ft/min, 180 rpm",
     "Pneumatic self-centring chucks; following supports along the bed; automatic tube length measuring",
     "Fiber laser source 1.5 – 20 kW with autofocus head; bus-based CNC with tube nesting software and 3D import",
     "Safety fencing and light curtains; chip and part collection",
@@ -725,7 +725,7 @@
     "kind": "table",
     "tables": [
      {
-      "title": "T series two-chuck tube lasers · 20 – 39 ft",
+      "title": "T series two-chuck tube lasers · 20 – 40 ft",
       "sub": "7 models · Ø0.5 – 14.1″ · 1.5 – 6 kW",
       "models": [
        "SF6012T",
@@ -745,9 +745,9 @@
          "3.3 – 21.3 ft (1 – 6.5 m)",
          "6.6 – 21.3 ft (2 – 6.5 m)",
          "6.6 – 20.3 ft (2 – 6.2 m)",
-         "6.6 – 29.5 ft (2 – 9 m)",
-         "6.6 – 29.5 ft (2 – 9 m)",
-         "6.6 – 39.4 ft (2 – 12 m)"
+         "6.6 – 30 ft (2 – 9.1 m)",
+         "6.6 – 30 ft (2 – 9.1 m)",
+         "6.6 – 40 ft (2 – 12.2 m)"
         ],
         "key": true
        },
@@ -1061,7 +1061,7 @@
      {
       "name": "SF9024T",
       "glance": [
-       "6.6 – 29.5 ft (2 – 9 m)",
+       "6.6 – 30 ft (2 – 9.1 m)",
        "Ø0.7 – 9″ (Ø18 – 229 mm)",
        "1.5 – 6 kW",
        "573 lb (260 kg)",
@@ -1071,7 +1071,7 @@
      {
       "name": "SF9035T",
       "glance": [
-       "6.6 – 29.5 ft (2 – 9 m)",
+       "6.6 – 30 ft (2 – 9.1 m)",
        "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
        "1.5 – 6 kW",
        "1,102 lb (500 kg)",
@@ -1081,7 +1081,7 @@
      {
       "name": "SF12035T",
       "glance": [
-       "6.6 – 39.4 ft (2 – 12 m)",
+       "6.6 – 40 ft (2 – 12.2 m)",
        "Ø1.9 – 13.7″ (Ø48 – 348 mm)",
        "1.5 – 6 kW",
        "1,102 lb (500 kg)",
@@ -1541,7 +1541,7 @@
    "models_label": "FTL 250 · 350 · 500 · 640",
    "summary": "The heavy tube laser: four chuck sizes from Ø250 to Ø640 mm for structural tube, pipe and beams to 25.2″ across and 12 m long, up to 2,600 kg per bar on the 640 chuck and 12,000 kg on the long-bed 250 version. 3 to 20 kW sources cut wall thicknesses to 1″; the 5-axis head cuts bevels and weld preparations. For steel-construction, trailer, agricultural and equipment builders.",
    "features": [
-    "Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 39.4 ft (12 m) and 5,732 lb",
+    "Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 40 ft (12 m) and 5,732 lb",
     "3 to 20 kW sources; 5-axis bevel head",
     "Fiber laser source 3 – 20 kW, autofocus cutting head",
     "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
@@ -1553,7 +1553,7 @@
    ],
    "optional": [
     "Bevel (3D) cutting head",
-    "Longer loading and unloading, 29.5 and 39.4 ft (9 / 12 m)",
+    "Longer loading and unloading, 30 and 40 ft (9 / 12 m)",
     "Seam detection; tapping and drilling attachments",
     "Dust collector",
     "Custom voltage: 208 V, 240 V or 480 V 3-phase"
@@ -1622,10 +1622,10 @@
         "label": "Max. tube length and weight",
         "sub": "",
         "cells": [
-         "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)",
-         "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)",
-         "39.4 ft, 4,630 lb (12 m, 2,100 kg)",
-         "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
+         "20 ft, 1,323 lb (6 m, 600 kg) · 40 ft, 26,455 lb (12 m, 12,000 kg)",
+         "30 ft, 2,205 lb (9 m, 1,000 kg) · 40 ft, 3,086 lb (12 m, 1,400 kg)",
+         "40 ft, 4,630 lb (12 m, 2,100 kg)",
+         "40 ft, 5,732 lb (12 m, 2,600 kg)"
         ],
         "key": false
        },
@@ -1684,7 +1684,7 @@
        "0.6 – 9.8″ (15 – 250 mm)",
        "3 / 6 / 12 / 20 kW",
        "262 ft/min (80 m/min)",
-       "19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)"
+       "20 ft, 1,323 lb (6 m, 600 kg) · 40 ft, 26,455 lb (12 m, 12,000 kg)"
       ]
      },
      {
@@ -1694,7 +1694,7 @@
        "1.2 – 13.8″ (30 – 350 mm)",
        "3 / 6 / 12 / 20 kW",
        "177 ft/min (54 m/min)",
-       "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)"
+       "30 ft, 2,205 lb (9 m, 1,000 kg) · 40 ft, 3,086 lb (12 m, 1,400 kg)"
       ]
      },
      {
@@ -1704,7 +1704,7 @@
        "1.2 – 19.7″ (30 – 500 mm)",
        "3 / 6 / 12 / 20 kW",
        "82 ft/min (25 m/min)",
-       "39.4 ft, 4,630 lb (12 m, 2,100 kg)"
+       "40 ft, 4,630 lb (12 m, 2,100 kg)"
       ]
      },
      {
@@ -1714,7 +1714,7 @@
        "4.7 – 25.2″ (120 – 640 mm)",
        "3 / 6 / 12 / 20 kW",
        "82 ft/min (25 m/min)",
-       "39.4 ft, 5,732 lb (12 m, 2,600 kg)"
+       "40 ft, 5,732 lb (12 m, 2,600 kg)"
       ]
      }
     ],
@@ -1741,7 +1741,7 @@
    "name": "NT / ST / HT three- and four-chuck tube lasers to Ø25″ and 49 ft, and the SF1500CH profile line",
    "short": "Heavy-duty tube lasers",
    "models_label": "SF6024NT – SF12035NT · SF9035ST – SF12065ST · SF12035HT – SF15056HT · SF1500CH · 18 models",
-   "summary": "For long and heavy tube: the NT series puts a third chuck in the middle so the last piece is cut without a tail — zero waste on 20 to 39 ft stock to Ø14″. The ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over 29 to 49 ft with 6 to 20 kW sources, bevel heads and automatic loaders, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for H-beams to 39 × 16 ft section, channels and angles, with visual scanning of each beam before cutting.",
+   "summary": "For long and heavy tube: the NT series puts a third chuck in the middle so the last piece is cut without a tail — zero waste on 20 to 40 ft stock to Ø14″. The ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over 29 to 49 ft with 6 to 20 kW sources, bevel heads and automatic loaders, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for H-beams to 39 × 16 ft section, channels and angles, with visual scanning of each beam before cutting.",
    "features": [
     "NT: zero-tailing, Ø0.7 – 14.1″; ST / HT: Ø1.9 – 25.1″, 6 – 20 kW, to 6,600 lb; CH: H-beams to 1.9″ web",
     "Pneumatic self-centring chucks; following supports along the bed; automatic tube length measuring",
@@ -1771,7 +1771,7 @@
     "tables": [
      {
       "title": "NT series three-chuck zero-tailing tube lasers",
-      "sub": "5 models · Ø0.7 – 14.1″ · 20 – 39 ft · 3 – 12 kW",
+      "sub": "5 models · Ø0.7 – 14.1″ · 20 – 40 ft · 3 – 12 kW",
       "models": [
        "SF6024NT",
        "SF6035NT",
@@ -1786,9 +1786,9 @@
         "cells": [
          "9.8 – 21.3 ft (3 – 6.5 m)",
          "9.8 – 20.3 ft (3 – 6.2 m)",
-         "9.8 – 29.5 ft (3 – 9 m)",
-         "9.8 – 29.5 ft (3 – 9 m)",
-         "9.8 – 39.4 ft (3 – 12 m)"
+         "9.8 – 30 ft (3 – 9.1 m)",
+         "9.8 – 30 ft (3 – 9.1 m)",
+         "9.8 – 40 ft (3 – 12.2 m)"
         ],
         "key": true
        },
@@ -1892,7 +1892,7 @@
      },
      {
       "title": "ST series three-chuck heavy-duty tube lasers",
-      "sub": "7 models · Ø1.9 – 25.1″ · 29 – 39 ft · 6 – 20 kW",
+      "sub": "7 models · Ø1.9 – 25.1″ · 30 – 40 ft · 6 – 20 kW",
       "models": [
        "SF9035ST",
        "SF9050ST",
@@ -1907,13 +1907,13 @@
         "label": "Tube length",
         "sub": "",
         "cells": [
-         "19.6 – 29.5 ft (6 – 9 m)",
-         "19.6 – 29.5 ft (6 – 9 m)",
-         "19.6 – 29.5 ft (6 – 9 m)",
-         "19.6 – 39.4 ft (6 – 12 m)",
-         "19.6 – 39.4 ft (6 – 12 m)",
-         "19.6 – 39.4 ft (6 – 12 m)",
-         "19.6 – 39.4 ft (6 – 12 m)"
+         "20 – 30 ft (6.1 – 9.1 m)",
+         "20 – 30 ft (6.1 – 9.1 m)",
+         "20 – 30 ft (6.1 – 9.1 m)",
+         "20 – 40 ft (6.1 – 12.2 m)",
+         "20 – 40 ft (6.1 – 12.2 m)",
+         "20 – 40 ft (6.1 – 12.2 m)",
+         "20 – 40 ft (6.1 – 12.2 m)"
         ],
         "key": true
        },
@@ -2046,11 +2046,11 @@
         "label": "Tube length",
         "sub": "",
         "cells": [
-         "19.6 – 39.4 ft (6 – 12 m)",
-         "19.6 – 39.4 ft (6 – 12 m)",
-         "19.6 – 39.4 ft (6 – 12 m)",
-         "19.6 – 39.4 ft (6 – 12 m)",
-         "19.6 – 49.2 ft (6 – 15 m)"
+         "20 – 40 ft (6.1 – 12.2 m)",
+         "20 – 40 ft (6.1 – 12.2 m)",
+         "20 – 40 ft (6.1 – 12.2 m)",
+         "20 – 40 ft (6.1 – 12.2 m)",
+         "20 – 49.2 ft (6.1 – 15 m)"
         ],
         "key": true
        },
@@ -2234,7 +2234,7 @@
      {
       "name": "SF9024NT",
       "glance": [
-       "9.8 – 29.5 ft (3 – 9 m)",
+       "9.8 – 30 ft (3 – 9.1 m)",
        "Ø0.7 – 9″ (Ø18 – 229 mm)",
        "3 – 6 kW",
        "573 lb (260 kg)",
@@ -2244,7 +2244,7 @@
      {
       "name": "SF9035NT",
       "glance": [
-       "9.8 – 29.5 ft (3 – 9 m)",
+       "9.8 – 30 ft (3 – 9.1 m)",
        "Ø0.7 – 14.1″ (Ø18 – 358 mm)",
        "3 – 6 kW",
        "1,543 lb (700 kg)",
@@ -2254,7 +2254,7 @@
      {
       "name": "SF12035NT",
       "glance": [
-       "9.8 – 39.4 ft (3 – 12 m)",
+       "9.8 – 40 ft (3 – 12.2 m)",
        "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
        "3 – 6 kW",
        "1,543 lb (700 kg)",
@@ -2264,7 +2264,7 @@
      {
       "name": "SF9035ST",
       "glance": [
-       "19.6 – 29.5 ft (6 – 9 m)",
+       "20 – 30 ft (6.1 – 9.1 m)",
        "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
        "6 – 20 kW",
        "2,205 lb (1,000 kg)",
@@ -2274,7 +2274,7 @@
      {
       "name": "SF9050ST",
       "glance": [
-       "19.6 – 29.5 ft (6 – 9 m)",
+       "20 – 30 ft (6.1 – 9.1 m)",
        "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
        "6 – 20 kW",
        "4,409 lb (2,000 kg)",
@@ -2284,7 +2284,7 @@
      {
       "name": "SF9056ST",
       "glance": [
-       "19.6 – 29.5 ft (6 – 9 m)",
+       "20 – 30 ft (6.1 – 9.1 m)",
        "Ø1.9 – 22″ (Ø48 – 559 mm)",
        "6 – 20 kW",
        "3,968 lb (1,800 kg)",
@@ -2294,7 +2294,7 @@
      {
       "name": "SF12035ST",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
        "6 – 20 kW",
        "2,205 lb (1,000 kg)",
@@ -2304,7 +2304,7 @@
      {
       "name": "SF12050ST",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
        "6 – 20 kW",
        "4,409 lb (2,000 kg)",
@@ -2314,7 +2314,7 @@
      {
       "name": "SF12056ST",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 22″ (Ø48 – 559 mm)",
        "6 – 20 kW",
        "3,968 lb (1,800 kg)",
@@ -2324,7 +2324,7 @@
      {
       "name": "SF12065ST",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 25.1″ (Ø48 – 638 mm)",
        "6 – 20 kW",
        "6,614 lb (3,000 kg)",
@@ -2334,7 +2334,7 @@
      {
       "name": "SF12035HT",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 14.1″ (Ø48 – 358 mm)",
        "6 – 20 kW",
        "2,646 lb (1,200 kg)",
@@ -2344,7 +2344,7 @@
      {
       "name": "SF12050HT",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 19.6″ (Ø48 – 498 mm)",
        "6 – 20 kW",
        "4,409 lb (2,000 kg)",
@@ -2354,7 +2354,7 @@
      {
       "name": "SF12056HT",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 22″ (Ø48 – 559 mm)",
        "6 – 20 kW",
        "3,968 lb (1,800 kg)",
@@ -2364,7 +2364,7 @@
      {
       "name": "SF12065HT",
       "glance": [
-       "19.6 – 39.4 ft (6 – 12 m)",
+       "20 – 40 ft (6.1 – 12.2 m)",
        "Ø1.9 – 25.1″ (Ø48 – 638 mm)",
        "6 – 20 kW",
        "6,614 lb (3,000 kg)",
@@ -2374,7 +2374,7 @@
      {
       "name": "SF15056HT",
       "glance": [
-       "19.6 – 49.2 ft (6 – 15 m)",
+       "20 – 49.2 ft (6.1 – 15 m)",
        "Ø1.9 – 22″ (Ø48 – 559 mm)",
        "6 – 20 kW",
        "3,968 lb (1,800 kg)",

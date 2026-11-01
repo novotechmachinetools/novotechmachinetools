@@ -2484,9 +2484,9 @@
    "name": "ULET sheet-and-tube fiber lasers with shuttle table, 10 × 5 to 41 × 8.5 ft plus tube to Ø13.8″, 1.5 – 40 kW",
    "short": "ULET sheet + tube lasers",
    "models_label": "ULET 3015 – 12526 · 8 table sizes",
-   "summary": "Sheet and tube on one machine: the ULE cabin with its shuttle table for sheet, and at the end of the machine a pneumatic chuck — three times faster to clamp than an electric one — for round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 39 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; the same source and head cut both, so a shop that cuts tube a few times a week does not need a second laser.",
+   "summary": "Sheet and tube on one machine: the ULE cabin with its shuttle table for sheet, and at the end of the machine a pneumatic chuck — three times faster to clamp than an electric one — for round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 40 ft long. Eight table sizes from 10 × 5 to 41 × 8.5 ft, 1.5 to 40 kW; the same source and head cut both, so a shop that cuts tube a few times a week does not need a second laser.",
    "features": [
-    "Sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 40 kW; 459 ft/min",
+    "Sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 40 ft; 1.5 – 40 kW; 459 ft/min",
     "Fiber laser source chosen at order — Raycus, MAX or IPG — with an autofocus cutting head (Raytools or BOCI) and capacitive height sensing",
     "Cypcut bus control with nesting, the cutting-parameter database and power-based speed adjustment; hand pendant",
     "Welded bed annealed and shot-blasted to relieve stress; Inovance or Delta servos, YYC racks, Hiwin linear guides, DESBOER gearboxes",
@@ -2500,7 +2500,7 @@
     "Sheet storage tower and gantry loading / unloading (flexible manufacturing system)",
     "Dust collector, air compressor and nitrogen generator sized to the machine",
     "Custom voltage: 208, 240 or 480 V 3-phase",
-    "Tube supports and unloading for 39 ft lengths"
+    "Tube supports and unloading for 40 ft lengths"
    ],
    "images": [
     "vn-ulet-1",
@@ -2560,7 +2560,7 @@
         "label": "Tube length",
         "sub": "",
         "cells": [
-         "19.7, 29.5 or 39.4 ft (6, 9 or 12 m)"
+         "19.7, 29.5 or 40 ft (6, 9 or 12 m)"
         ],
         "key": true
        },
@@ -2647,17 +2647,17 @@
   "sf-hm": {
    "id": "sf-hm",
    "brand": "senfeng",
-   "name": "HM sheet and tube combination lasers, 5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 6 – 30 kW",
+   "name": "HM sheet and tube combination lasers, 5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 1.5 – 30 kW",
    "short": "Sheet + tube combo lasers",
    "models_label": "SF3015HM – SF6025HM · 4 models",
-   "summary": "One machine for sheet and tube: the H series laser with pallet changer and, on the side, a rotary chuck and tube supports for round, square and rectangular tube from Ø0.7 to 8.6″ and up to 20 ft long. The same 6 to 30 kW source and cutting head serve both; switching takes the time to load the tube. Four sheet sizes from 5 × 10 to 8.3 × 20 ft.",
+   "summary": "One machine for sheet and tube: the fully enclosed H series laser with a dual exchange table and, on the side, a rotary chuck and tube supports for round, square and rectangular tube from Ø0.7 to 8.6″ and up to 20 ft long. The same source and autofocus head serve both, so a shop cuts plate and tube on one machine at an affordable price, and the two exchange tables load one sheet while the other is cut. Four sheet sizes from 5 × 10 to 8.3 × 20 ft with 6 to 30 kW, and the SF3015HM also as a medium-power machine from 1.5 to 6 kW with its own full technical specification.",
    "features": [
-    "Sheet 5 × 10 to 8.3 × 20 ft with pallet changer; tube Ø0.7 – 8.6″ × 20 ft; 6 – 30 kW; 656 ft/min",
-    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
-    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
-    "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
-    "Zoned negative-pressure dust extraction under the table; double air ducts; water chiller included",
-    "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″",
+    "Sheet 5 × 10 to 8.3 × 20 ft on a dual exchange table; tube Ø0.7 – 8.6″ × 20 ft; 1.5 – 30 kW; to 656 ft/min",
+    "Fully enclosed cabin around both tables — no laser radiation outside the machine",
+    "Autofocus cutting head sets the focus for each material and thickness",
+    "FSCUT3000 CNC for sheet and tube, with a cutting-process database for each thickness, sheet and tube",
+    "High-strength welded bed, annealed and aged; aircraft-grade aluminum beam; AVENTICS gas valves",
+    "Zoned negative-pressure dust extraction; modular sealed Z axis; water chiller included",
     "CE, FDA and ETL certified and CSA approved; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
    ],
    "optional": [
@@ -2672,9 +2672,25 @@
     "sf-hm-1",
     "sf-hm-2",
     "sf-hm-3",
-    "sf-hm-4"
+    "sf-hm-4",
+    "sf-hm-5",
+    "sf-hm-pdf",
+    "sf-hm-head-6kw",
+    "sf-hm-head-3kw",
+    "sf-hm-source",
+    "sf-hm-bed",
+    "sf-hm-beam",
+    "sf-hm-gas",
+    "sf-hm-dust",
+    "sf-hm-zaxis"
    ],
    "videos": [],
+   "spec_pdf": {
+    "file": "files/NovoTech-Senfeng-SF3015HM-Tube-Plate-Laser-Technical-Specification-2026.pdf",
+    "label": "Download the SF3015HM full technical specification (1.5 – 6 kW)",
+    "size": "PDF · 3.3 MB · imperial units",
+    "cta": "Download full technical specification"
+   },
    "specs": {
     "kind": "table",
     "tables": [
@@ -2714,10 +2730,10 @@
         "label": "Max. tube length",
         "sub": "",
         "cells": [
-         "19.7 ft (6,000 mm)",
-         "19.7 ft (6,000 mm)",
-         "19.7 ft (6,000 mm)",
-         "19.7 ft (6,000 mm)"
+         "20 ft (6,000 mm)",
+         "20 ft (6,000 mm)",
+         "20 ft (6,000 mm)",
+         "20 ft (6,000 mm)"
         ],
         "key": false
        },
@@ -2777,6 +2793,111 @@
         "key": false
        }
       ]
+     },
+     {
+      "title": "SF3015HM medium power, 1.5 – 6 kW",
+      "sub": "from the SF3015HM technical solution · 5 kW steps 1.5 / 2 / 3 / 4 / 6 kW",
+      "models": [
+       "SF3015HM 1.5 – 6 kW"
+      ],
+      "rows": [
+       {
+        "label": "Sheet working area",
+        "sub": "",
+        "cells": [
+         "120.1 × 60.2″ (3,050 × 1,530 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "X / Y / Z travel",
+        "sub": "",
+        "cells": [
+         "60.2 × 120.1 × 13.0″ (1,530 × 3,050 × 330 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tube diameter",
+        "sub": "",
+        "cells": [
+         "Ø0.8 – 8.7″ (Ø20 – 220 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tube length",
+        "sub": "",
+        "cells": [
+         "1.6 – 20 ft (500 – 6,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. no-load speed",
+        "sub": "",
+        "cells": [
+         "427 ft/min (130 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. acceleration",
+        "sub": "",
+        "cells": [
+         "1 G"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. table load",
+        "sub": "",
+        "cells": [
+         "2,425 lb (1,100 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "",
+        "cells": [
+         "15,653 – 15,851 lb (7,100 – 7,190 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply protection",
+        "sub": "",
+        "cells": [
+         "IP54"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "30.5 × 11.4 × 7.2 ft (9.3 × 3.5 × 2.2 m)"
+        ],
+        "key": false
+       }
+      ]
      }
     ],
     "models": [
@@ -2818,6 +2939,16 @@
        "656 ft/min (200 m/min)",
        "19,842 lb (9,000 kg)",
        "48.6 × 16 × 7.9 ft (14.8 × 4.9 × 2.4 m)"
+      ]
+     },
+     {
+      "name": "SF3015HM 1.5 – 6 kW",
+      "glance": [
+       "",
+       "1.5 – 6 kW",
+       "427 ft/min (130 m/min)",
+       "2,425 lb (1,100 kg)",
+       "30.5 × 11.4 × 7.2 ft (9.3 × 3.5 × 2.2 m)"
       ]
      }
     ],
@@ -3850,7 +3981,7 @@
      },
      {
       "title": "TXP laser and flame hybrid plate cutter",
-      "sub": "1 model · 10 × 39 ft · 20 kW laser + oxy-fuel bevel torch",
+      "sub": "1 model · 10 × 40 ft · 20 kW laser + oxy-fuel bevel torch",
       "models": [
        "SF12030TXP"
       ],

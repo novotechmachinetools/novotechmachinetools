@@ -56,7 +56,7 @@ SECTIONS = {
         hub="tube-laser-cutting-machine", section="Tube laser cutters", label="All tube lasers", image="dn-tube-2",
         blurb="Standard or heavy-duty? Every tube and profile laser NovoTech sells on one page, with the two kinds compared and the tube range, power, speed and bar length of the whole range in one table.",
         subpages=[
-            ("tube-laser-cutter", "Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 39 ft tubes, 1.5 to 40 kW", "dn-tube-2",
+            ("tube-laser-cutter", "Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 40 ft tubes, 1.5 to 40 kW", "dn-tube-2",
              "The tube laser for round, square and rectangular tube to Ø14″: the premium E-FTL with 1 G servo chucks made in Turkey, NovoTech's value-line ULT with two or three chucks, and the T series and high-speed PLUS / bevel-cutting GT — bundle loaders and ±45° bevel heads.",
              "Tube laser cutters", ""),
             ("heavy-duty-tube-laser", "Heavy-duty tube and profile lasers — three and four chucks, to Ø25″ and 49 ft", "dn-tube-6",

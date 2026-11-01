@@ -730,8 +730,8 @@ T_FTL = table("FTL tube and profile fiber lasers", "4 chuck sizes · Ø0.6″ �
     ("Tube diameter", "round", ["Ø0.6 – 9.8″ (Ø15 – 250 mm)", "Ø1.2 – 13.8″ (Ø30 – 350 mm)", "Ø1.2 – 19.7″ (Ø30 – 500 mm)", "Ø4.7 – 25.2″ (Ø120 – 640 mm)"]),
     ("Profile size", "square / rectangular", ["0.6 – 9.8″ (15 – 250 mm)", "1.2 – 13.8″ (30 – 350 mm)", "1.2 – 19.7″ (30 – 500 mm)", "4.7 – 25.2″ (120 – 640 mm)"]),
     ("Laser source power", "options", TL_POWERS),
-    ("Max. tube length and weight", ["19.7 ft, 1,323 lb (6 m, 600 kg) · 39.4 ft, 26,455 lb (12 m, 12,000 kg)", "29.5 ft, 2,205 lb (9 m, 1,000 kg) · 39.4 ft, 3,086 lb (12 m, 1,400 kg)",
-                                     "39.4 ft, 4,630 lb (12 m, 2,100 kg)", "39.4 ft, 5,732 lb (12 m, 2,600 kg)"]),
+    ("Max. tube length and weight", ["20 ft, 1,323 lb (6 m, 600 kg) · 40 ft, 26,455 lb (12 m, 12,000 kg)", "30 ft, 2,205 lb (9 m, 1,000 kg) · 40 ft, 3,086 lb (12 m, 1,400 kg)",
+                                     "40 ft, 4,630 lb (12 m, 2,100 kg)", "40 ft, 5,732 lb (12 m, 2,600 kg)"]),
     ("Max. speed", [mmin(80), mmin(54), mmin(25), mmin(25)]),
     ("Max. acceleration", "0.6 G"),
     ("Repeatability", ["±0.05 mm (±0.002″)", "±0.05 mm (±0.002″)", "±0.1 mm (±0.004″)", "±0.1 mm (±0.004″)"]),
@@ -740,8 +740,8 @@ T_EFTL = table("E-FTL tube and profile fiber lasers", "4 chuck sizes · Ø0.3″
     ("Tube diameter", "round", ["Ø0.3 – 4.7″ (Ø8 – 120 mm)", "Ø0.4 – 7.1″ (Ø10 – 180 mm)", "Ø0.6 – 9.8″ (Ø15 – 250 mm)", "Ø1.2 – 13.8″ (Ø30 – 350 mm)"]),
     ("Profile size", "square / rectangular", ["0.3 – 4.7″ (8 – 120 mm)", "0.4 – 7.1″ (10 – 180 mm)", "0.6 – 9.8″ (15 – 250 mm)", "1.2 – 13.8″ (30 – 350 mm)"]),
     ("Laser source power", "options", TL_POWERS),
-    ("Max. tube length and weight", ["23 ft, 265 lb (7 m, 120 kg)", "23 ft, 529 lb (7 m, 240 kg)", "23 ft, 661 lb · 29.5 ft, 970 lb · 39.4 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)",
-                                     "23 ft, 1,323 lb · 29.5 ft, 2,646 lb · 39.4 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"]),
+    ("Max. tube length and weight", ["23 ft, 265 lb (7 m, 120 kg)", "23 ft, 529 lb (7 m, 240 kg)", "23 ft, 661 lb · 30 ft, 970 lb · 40 ft, 2,646 lb (7 / 9 / 12 m, 300 / 440 / 1,200 kg)",
+                                     "23 ft, 1,323 lb · 30 ft, 2,646 lb · 40 ft, 3,968 lb (7 / 9 / 12 m, 600 / 1,200 / 1,800 kg)"]),
     ("Max. speed", [mmin(120), mmin(120), mmin(80), mmin(54)]),
     ("Max. acceleration", "1 G"),
     ("Repeatability", "±0.05 mm (±0.002″)"),
@@ -753,7 +753,7 @@ NOTE_TL = ("Chuck size is the model number (250 = Ø250 mm); every chuck size is
 TL_STD = ["Fiber laser source 3 – 20 kW, autofocus cutting head", "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
           "Automatic loader for bundles; tube supports that follow the cut; unloading table", "CNC with tube nesting and import of STEP / IGES files; cutting database",
           "Fume extraction through the tube; chip and slug collection", "CE safety enclosure", "CSA-approved electrical panel; 600 V with transformer"]
-TL_OPT = ["Bevel (3D) cutting head", "Longer loading and unloading, 29.5 and 39.4 ft (9 / 12 m)", "Seam detection; tapping and drilling attachments", "Dust collector", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+TL_OPT = ["Bevel (3D) cutting head", "Longer loading and unloading, 30 and 40 ft (9 / 12 m)", "Seam detection; tapping and drilling attachments", "Dust collector", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
 
 TUBE_FAMILIES = [
     dict(id="dn-eftl", group="tube-eftl", page=P_TUBE, brand=BRAND,
@@ -764,7 +764,7 @@ TUBE_FAMILIES = [
                  "open profiles from Ø0.3″ to 13.8″ in 7, 9 or 12 m lengths with ±0.05 mm repeatability. Four chuck sizes and 3 to 20 kW sources, "
                  "with the bundle loader, following supports and tube nesting software that turn a bar of tube into finished parts without an "
                  "operator at the machine.",
-         features=["Ø0.3 – 13.8″ (8 – 350 mm) round and profile; 1 G, 394 ft/min (120 m/min)", "Tube length to 39.4 ft (12 m) with automatic bundle loader"] + TL_STD,
+         features=["Ø0.3 – 13.8″ (8 – 350 mm) round and profile; 1 G, 394 ft/min (120 m/min)", "Tube length to 40 ft (12 m) with automatic bundle loader"] + TL_STD,
          optional=TL_OPT,
          images=["dn-tube-2", "dn-tube-1", "dn-tube-3"],
          videos=vids(("n4gFLrlC-es", "DENER E-FTL tube laser cutting machine with auto loader"), ("6_UQ6NBUUO4", "DENER E-FTL tube laser cutting machine")),
@@ -777,7 +777,7 @@ TUBE_FAMILIES = [
                  "up to 2,600 kg per bar on the 640 chuck and 12,000 kg on the long-bed 250 version. 3 to 20 kW sources cut wall thicknesses to "
                  "1″; the 5-axis head cuts bevels and weld preparations. For steel-construction, trailer, agricultural and equipment "
                  "builders.",
-         features=["Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 39.4 ft (12 m) and 5,732 lb", "3 to 20 kW sources; 5-axis bevel head"] + TL_STD,
+         features=["Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 40 ft (12 m) and 5,732 lb", "3 to 20 kW sources; 5-axis bevel head"] + TL_STD,
          optional=TL_OPT,
          images=["dn-tube-6", "dn-tube-4", "dn-tube-5", "dn-tube-7"],
          videos=vids(("zPexjUvz7jg", "DENER FTL tube laser cutting machine")),

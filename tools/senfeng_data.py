@@ -171,12 +171,19 @@ HM = [("SF3015HM", 120, 60.2, 6614, (30.3, 11.4, 7.7)), ("SF4020HM", 159.4, 79.9
 T_HM = table("HM sheet and tube combination lasers", "4 models · 5 × 10 to 8.3 × 20 ft sheet · Ø0.7 – 8.6″ × 20 ft tube · 6 – 30 kW", [r[0] for r in HM], [
     ("Sheet working area", [area_in(r[1], r[2], r[0]) for r in HM]),
     ("Tube diameter", [dia(0.7, 8.6)] * 4),
-    ("Max. tube length", ["19.7 ft (6,000 mm)"] * 4),
+    ("Max. tube length", ["20 ft (6,000 mm)"] * 4),
     ("Laser power", ["6 – 30 kW"] * 4),
     ("Max. no-load speed", [ftmin(656)] * 4),
     ("Positioning accuracy", [ACC] * 4),
     ("Max. table load", [lb(r[3]) for r in HM]),
     ("Dimensions L × W × H", [dims_ft(*r[4]) for r in HM])])
+# the medium-power SF3015HM, 1.5 – 6 kW, from its technical solution (the owner, Nov 1 2026)
+T_HM_M = table("SF3015HM medium power, 1.5 – 6 kW", "from the SF3015HM technical solution · 5 kW steps 1.5 / 2 / 3 / 4 / 6 kW", ["SF3015HM 1.5 – 6 kW"], [
+    ("Sheet working area", ["120.1 × 60.2″ (3,050 × 1,530 mm)"]), ("X / Y / Z travel", ["60.2 × 120.1 × 13.0″ (1,530 × 3,050 × 330 mm)"]),
+    ("Tube diameter", ["Ø0.8 – 8.7″ (Ø20 – 220 mm)"]), ("Tube length", ["1.6 – 20 ft (500 – 6,000 mm)"]), ("Laser power", ["1.5 – 6 kW"]),
+    ("Max. no-load speed", [ftmin(427)]), ("Max. acceleration", ["1 G"]), ("Positioning accuracy", [ACC]),
+    ("Max. table load", ["2,425 lb (1,100 kg)"]), ("Machine weight", ["15,653 – 15,851 lb (7,100 – 7,190 kg)"]),
+    ("Power supply protection", ["IP54"]), ("Dimensions L × W × H", [dims_ft(30.5, 11.4, 7.2)])])
 
 R = [("SF6030R", 236.2, 118.1, "6 – 60 kW", 31184, (27.4, 15.6, 6.4)), ("SF8030R", 314.9, 118.1, "6 – 60 kW", 41570, (35.0, 15.6, 6.4)), ("SF12030R", 472.4, 118.1, "6 – 60 kW", 62355, (51.3, 15.6, 6.4)),
      ("SF14030R", 551.1, 118.1, "6 – 60 kW", 72741, (58.5, 15.6, 6.4)), ("SF24040R", 944.8, 157.4, "6 – 60 kW", 166156, (98.0, 15.6, 6.4)), ("SF30040R", 1181.1, 157.4, "6 – 60 kW", 103620, (121.3, 15.6, 6.4)),
@@ -199,7 +206,7 @@ T_TX = table("TX series bevel plate lasers · ±45°", "7 models · 10 × 20 to 
     ("Max. no-load speed", [ftmin(328)] * len(TX)),
     ("Max. table load", [lb(r[5]) for r in TX]),
     ("Dimensions L × W × H", [dims_ft(*r[6]) for r in TX])])
-T_TXP = table("TXP laser and flame hybrid plate cutter", "1 model · 10 × 39 ft · 20 kW laser + oxy-fuel bevel torch", ["SF12030TXP"], [
+T_TXP = table("TXP laser and flame hybrid plate cutter", "1 model · 10 × 40 ft · 20 kW laser + oxy-fuel bevel torch", ["SF12030TXP"], [
     ("Working area, straight cut", [area_in(472.4, 118.1)]), ("Working area, bevel cut", [area_in(448.8, 78.7)]),
     ("Laser power", ["20 kW"]), ("Flame cutting", ["oxy-fuel torch for plate to 4″ (100 mm) with bevels"]),
     ("Max. no-load speed", [ftmin(328)]), ("Max. acceleration", ["0.8 G"]), ("Max. table load", [lb(62355)]), ("Dimensions L × W × H", [dims_ft(51.3, 15.6, 6.4)])])
@@ -251,8 +258,8 @@ T_COIL_HEAVY = table("SF2012CH coil-fed laser blanking line for thick coil", "1 
 # (model, kW lo, kW hi, length lo ft, length hi ft, round lo, round hi, square hi, load lb, speed, rpm, dims)
 T6 = [("SF6012T", 1.5, 3, 3.3, 21.3, 0.5, 4.7, 4.7, 265, 492, 180, (358.2, 70.8, 82.6)), ("SF6016T", 1.5, 3, 3.3, 21.3, 0.5, 6.6, 6.6, 353, 361, 140, (358.2, 70.8, 82.6)),
       ("SF6024T", 1.5, 6, 6.6, 21.3, 0.7, 9.0, 9.0, 573, 328, 100, (375.1, 76.7, 86.6)), ("SF6035T", 1.5, 6, 6.6, 20.3, 0.7, 14.1, 14.1, 1102, 197, 60, (374, 80.7, 100.3)),
-      ("SF9024T", 1.5, 6, 6.6, 29.5, 0.7, 9.0, 9.0, 573, 328, 100, (493.3, 76.7, 86.6)), ("SF9035T", 1.5, 6, 6.6, 29.5, 0.7, 14.1, 14.1, 1102, 197, 60, (485, 80.7, 100.3)),
-      ("SF12035T", 1.5, 6, 6.6, 39.4, 1.9, 13.7, 13.7, 1102, 197, 60, (603.5, 80.7, 100.3))]
+      ("SF9024T", 1.5, 6, 6.6, 30, 0.7, 9.0, 9.0, 573, 328, 100, (493.3, 76.7, 86.6)), ("SF9035T", 1.5, 6, 6.6, 30, 0.7, 14.1, 14.1, 1102, 197, 60, (485, 80.7, 100.3)),
+      ("SF12035T", 1.5, 6, 6.6, 40, 1.9, 13.7, 13.7, 1102, 197, 60, (603.5, 80.7, 100.3))]
 T7 = [("SF7012T", 1.5, 3, 3.3, 23, 0.59, 4.72, 4.72, 265, 492, 180, (33.1, 5.9, 6.9)), ("SF7016T", 1.5, 3, 3.3, 23, 0.59, 6.69, 6.69, 353, 361, 140, (33.1, 5.9, 6.9)),
       ("SF7020T", 1.5, 6, 6.6, 23, 0.79, 8.66, 5.91, 441, 328, 100, (34.5, 6.4, 7.2)), ("SF7024T", 1.5, 6, 6.6, 23, 0.79, 9.06, 9.06, 573, 328, 100, (34.5, 6.4, 7.2)),
       ("SF7512T", 1.5, 3, 3.3, 24.6, 0.59, 4.72, 4.72, 265, 492, 180, (34.8, 5.9, 6.9)), ("SF7516T", 1.5, 3, 3.3, 24.6, 0.59, 6.69, 6.69, 353, 361, 140, (34.8, 5.9, 6.9)),
@@ -271,7 +278,7 @@ def tube_rows(data, dims_fn):
             ("Dimensions L × W × H", [dims_fn(*r[11]) for r in data])]
 
 
-T_T6 = table("T series two-chuck tube lasers · 20 – 39 ft", "7 models · Ø0.5 – 14.1″ · 1.5 – 6 kW", [r[0] for r in T6], tube_rows(T6, dims_in))
+T_T6 = table("T series two-chuck tube lasers · 20 – 40 ft", "7 models · Ø0.5 – 14.1″ · 1.5 – 6 kW", [r[0] for r in T6], tube_rows(T6, dims_in))
 T_T7 = table("T series two-chuck tube lasers · 23 – 24.6 ft", "8 models · Ø0.6 – 9.1″ · 1.5 – 6 kW", [r[0] for r in T7], tube_rows(T7, dims_ft))
 
 PLUS = [("SF6012PLUS", 3, 6, 3.3, 21.3, 0.5, 4.7, 4.7, 265, 394, 180, (29.8, 7.3, 7.5)), ("SF6016PLUS", 3, 6, 3.3, 21.3, 0.5, 6.6, 6.6, 331, 394, 180, (29.8, 7.3, 7.5)),
@@ -282,17 +289,17 @@ GT = [("SF6012GPLUS", 1.5, 3, 3.3, 21.3, 0.6, 4.7, 4.7, 265, 492, 240, (358.3, 8
 T_GT = table("GPLUS / GT bevel-cutting tube lasers · 45°", "3 models · Ø0.6 – 14.1″ · 20 ft · 1.5 – 6 kW", [r[0] for r in GT], tube_rows(GT, dims_in) + [("Bevel cutting", ["±45° on all four sides"] * 3)])
 
 NT = [("SF6024NT", 3, 12, 9.8, 21.3, 0.7, 9.0, 9.0, 573, 246, 100, (543.3, 108.2, 124)), ("SF6035NT", 3, 6, 9.8, 20.3, 0.7, 14.1, 14.1, 1543, 197, 60, (543.3, 108.2, 131.8)),
-      ("SF9024NT", 3, 6, 9.8, 29.5, 0.7, 9.0, 9.0, 573, 246, 100, (663.3, 108.2, 124)), ("SF9035NT", 3, 6, 9.8, 29.5, 0.7, 14.1, 14.1, 1543, 197, 60, (663.3, 108.2, 131.8)),
-      ("SF12035NT", 3, 6, 9.8, 39.4, 1.9, 14.1, 14.1, 1543, 197, 60, (779.5, 108.2, 131.8))]
-T_NT = table("NT series three-chuck zero-tailing tube lasers", "5 models · Ø0.7 – 14.1″ · 20 – 39 ft · 3 – 12 kW", [r[0] for r in NT], tube_rows(NT, dims_in))
-ST = [("SF9035ST", 6, 20, 19.6, 29.5, 1.9, 14.1, 14.1, 2205, 197, 60, (60.7, 21.3, 14.7)), ("SF9050ST", 6, 20, 19.6, 29.5, 1.9, 19.6, 19.6, 4409, 131, 40, (62.3, 23.6, 13.7)),
-      ("SF9056ST", 6, 20, 19.6, 29.5, 1.9, 22.0, 15.7, 3968, 98, 30, (62.3, 23.6, 13.7)), ("SF12035ST", 6, 20, 19.6, 39.4, 1.9, 14.1, 14.1, 2205, 197, 60, (70.5, 21.3, 14.7)),
-      ("SF12050ST", 6, 20, 19.6, 39.4, 1.9, 19.6, 19.6, 4409, 131, 40, (72.1, 23.6, 13.7)), ("SF12056ST", 6, 20, 19.6, 39.4, 1.9, 22.0, 15.7, 3968, 98, 30, (72.1, 23.6, 13.7)),
-      ("SF12065ST", 6, 20, 19.6, 39.4, 1.9, 25.1, 25.1, 6614, 98, 30, (72.1, 23.6, 13.7))]
-T_ST = table("ST series three-chuck heavy-duty tube lasers", "7 models · Ø1.9 – 25.1″ · 29 – 39 ft · 6 – 20 kW", [r[0] for r in ST], tube_rows(ST, dims_ft))
-HT = [("SF12035HT", 6, 20, 19.6, 39.4, 1.9, 14.1, 14.1, 2646, 197, 60, (93.5, 21.3, 14.7)), ("SF12050HT", 6, 20, 19.6, 39.4, 1.9, 19.6, 19.6, 4409, 131, 40, (95.1, 23.6, 13.7)),
-      ("SF12056HT", 6, 20, 19.6, 39.4, 1.9, 22.0, 15.7, 3968, 98, 30, (95.1, 23.6, 13.7)), ("SF12065HT", 6, 20, 19.6, 39.4, 1.9, 25.1, 25.1, 6614, 98, 30, (95.1, 23.6, 13.7)),
-      ("SF15056HT", 6, 20, 19.6, 49.2, 1.9, 22.0, 15.7, 3968, 98, 30, (118.1, 23.6, 13.7))]
+      ("SF9024NT", 3, 6, 9.8, 30, 0.7, 9.0, 9.0, 573, 246, 100, (663.3, 108.2, 124)), ("SF9035NT", 3, 6, 9.8, 30, 0.7, 14.1, 14.1, 1543, 197, 60, (663.3, 108.2, 131.8)),
+      ("SF12035NT", 3, 6, 9.8, 40, 1.9, 14.1, 14.1, 1543, 197, 60, (779.5, 108.2, 131.8))]
+T_NT = table("NT series three-chuck zero-tailing tube lasers", "5 models · Ø0.7 – 14.1″ · 20 – 40 ft · 3 – 12 kW", [r[0] for r in NT], tube_rows(NT, dims_in))
+ST = [("SF9035ST", 6, 20, 20, 30, 1.9, 14.1, 14.1, 2205, 197, 60, (60.7, 21.3, 14.7)), ("SF9050ST", 6, 20, 20, 30, 1.9, 19.6, 19.6, 4409, 131, 40, (62.3, 23.6, 13.7)),
+      ("SF9056ST", 6, 20, 20, 30, 1.9, 22.0, 15.7, 3968, 98, 30, (62.3, 23.6, 13.7)), ("SF12035ST", 6, 20, 20, 40, 1.9, 14.1, 14.1, 2205, 197, 60, (70.5, 21.3, 14.7)),
+      ("SF12050ST", 6, 20, 20, 40, 1.9, 19.6, 19.6, 4409, 131, 40, (72.1, 23.6, 13.7)), ("SF12056ST", 6, 20, 20, 40, 1.9, 22.0, 15.7, 3968, 98, 30, (72.1, 23.6, 13.7)),
+      ("SF12065ST", 6, 20, 20, 40, 1.9, 25.1, 25.1, 6614, 98, 30, (72.1, 23.6, 13.7))]
+T_ST = table("ST series three-chuck heavy-duty tube lasers", "7 models · Ø1.9 – 25.1″ · 30 – 40 ft · 6 – 20 kW", [r[0] for r in ST], tube_rows(ST, dims_ft))
+HT = [("SF12035HT", 6, 20, 20, 40, 1.9, 14.1, 14.1, 2646, 197, 60, (93.5, 21.3, 14.7)), ("SF12050HT", 6, 20, 20, 40, 1.9, 19.6, 19.6, 4409, 131, 40, (95.1, 23.6, 13.7)),
+      ("SF12056HT", 6, 20, 20, 40, 1.9, 22.0, 15.7, 3968, 98, 30, (95.1, 23.6, 13.7)), ("SF12065HT", 6, 20, 20, 40, 1.9, 25.1, 25.1, 6614, 98, 30, (95.1, 23.6, 13.7)),
+      ("SF15056HT", 6, 20, 20, 49.2, 1.9, 22.0, 15.7, 3968, 98, 30, (118.1, 23.6, 13.7))]
 T_HT = table("HT series four-chuck tube lasers", "5 models · Ø1.9 – 25.1″ · 39 – 49 ft · 6 – 20 kW", [r[0] for r in HT], tube_rows(HT, dims_ft))
 T_CH = table("SF1500CH profile laser line for structural steel", "1 model · H-beams to 39 × 16 ft section, channels, angles · 12 – 30 kW", ["SF1500CH"], [
     ("Max. H-beam width · height", ["472″ (12,000 mm) · 197″ (5,000 mm)"]), ("Max. thickness", ["1.9″ (48 mm) straight · 1.3″ (32 mm) flange bevel"]),
@@ -504,17 +511,30 @@ LASER_FAMILIES = [
                          size="PDF · 2.1 MB · imperial units", cta="Download full technical specification · 12 – 30 kW")],
          specs=spec([T_HC, T_H4, T_H5], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-hm", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="HM sheet and tube combination lasers, 5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 6 – 30 kW",
+         name="HM sheet and tube combination lasers, 5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 1.5 – 30 kW",
          short="Sheet + tube combo lasers",
          models_label="SF3015HM – SF6025HM · 4 models",
-         summary="One machine for sheet and tube: the H series laser with pallet changer and, on the side, a rotary chuck and tube "
-                 "supports for round, square and rectangular tube from Ø0.7 to 8.6″ and up to 20 ft long. The same 6 to 30 kW source and "
-                 "cutting head serve both; switching takes the time to load the tube. Four sheet sizes from 5 × 10 to 8.3 × 20 ft.",
-         features=["Sheet 5 × 10 to 8.3 × 20 ft with pallet changer; tube Ø0.7 – 8.6″ × 20 ft; 6 – 30 kW; 656 ft/min"] + LZ_STD,
+         # Senfeng USA's SF3015HM page and the SF3015HM technical solution (the owner, Nov 1 2026)
+         summary="One machine for sheet and tube: the fully enclosed H series laser with a dual exchange table and, on the side, a rotary "
+                 "chuck and tube supports for round, square and rectangular tube from Ø0.7 to 8.6″ and up to 20 ft long. The same source "
+                 "and autofocus head serve both, so a shop cuts plate and tube on one machine at an affordable price, and the two exchange "
+                 "tables load one sheet while the other is cut. Four sheet sizes from 5 × 10 to 8.3 × 20 ft with 6 to 30 kW, and the "
+                 "SF3015HM also as a medium-power machine from 1.5 to 6 kW with its own full technical specification.",
+         features=["Sheet 5 × 10 to 8.3 × 20 ft on a dual exchange table; tube Ø0.7 – 8.6″ × 20 ft; 1.5 – 30 kW; to 656 ft/min",
+                   "Fully enclosed cabin around both tables — no laser radiation outside the machine",
+                   "Autofocus cutting head sets the focus for each material and thickness",
+                   "FSCUT3000 CNC for sheet and tube, with a cutting-process database for each thickness, sheet and tube",
+                   "High-strength welded bed, annealed and aged; aircraft-grade aluminum beam; AVENTICS gas valves",
+                   "Zoned negative-pressure dust extraction; modular sealed Z axis; water chiller included",
+                   CERT + "; " + VOLT],
          optional=LZ_OPT + ["Tube bundle loader"],
-         images=["sf-hm-1", "sf-hm-2", "sf-hm-3", "sf-hm-4"],
+         images=["sf-hm-1", "sf-hm-2", "sf-hm-3", "sf-hm-4", "sf-hm-5", "sf-hm-pdf", "sf-hm-head-6kw", "sf-hm-head-3kw", "sf-hm-source",
+                 "sf-hm-bed", "sf-hm-beam", "sf-hm-gas", "sf-hm-dust", "sf-hm-zaxis"],
          videos=[],
-         specs=spec([T_HM], LZ_GK, LZ_G_FROM, POWER_NOTE)),
+         spec_pdf=dict(file="files/NovoTech-Senfeng-SF3015HM-Tube-Plate-Laser-Technical-Specification-2026.pdf",
+                       label="Download the SF3015HM full technical specification (1.5 – 6 kW)", size="PDF · 3.3 MB · imperial units",
+                       cta="Download full technical specification"),
+         specs=spec([T_HM, T_HM_M], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-r", group="laser-senfeng", page=P_LASER, brand=BRAND,
          name="R / TX ultra-large plate lasers, 10 × 20 to 10 × 164 ft, 6 – 60 kW, ±45° bevel",
          short="Large-format plate lasers",
@@ -667,15 +687,15 @@ LASER_FAMILIES = [
 
 TUBE_FAMILIES = [
     dict(id="sf-t", group="tube-senfeng", page=P_TUBE, brand=BRAND,
-         name="T series two-chuck tube lasers, Ø0.5 – 14″, 20 – 39 ft, 1.5 – 6 kW",
+         name="T series two-chuck tube lasers, Ø0.5 – 14″, 20 – 40 ft, 1.5 – 6 kW",
          short="T series tube lasers",
          models_label="SF6012T – SF12035T · SF7012T – SF7524T · 15 models",
          summary="The tube laser most shops start with: two pneumatic self-centring chucks, following supports, a 1.5 to 6 kW source and a "
-                 "CNC with tube nesting that imports 3D files, cutting round, square, rectangular and profile tube to 14″ and 39 ft. "
+                 "CNC with tube nesting that imports 3D files, cutting round, square, rectangular and profile tube to 14″ and 40 ft. "
                  "Fifteen models in two bed lengths — the 7 m / 7.5 m beds take 23 and 24.6 ft stock, the 6, 9 and 12 m beds 20, 29.5 "
-                 "and 39 ft — with chucks for Ø4.7, 6.6, 9 and 14″. An automatic bundle loader and an unloading conveyor turn it into "
+                 "and 40 ft — with chucks for Ø4.7, 6.6, 9 and 14″. An automatic bundle loader and an unloading conveyor turn it into "
                  "an unattended cell.",
-         features=["Ø0.5 – 14.1″ round, □0.5 – 14.1″ square; 20 – 39 ft; 1.5 – 6 kW; to 492 ft/min, 180 rpm"] + TB_STD,
+         features=["Ø0.5 – 14.1″ round, □0.5 – 14.1″ square; 20 – 40 ft; 1.5 – 6 kW; to 492 ft/min, 180 rpm"] + TB_STD,
          optional=TB_OPT,
          images=["sf-t-1", "sf-t-2", "sf-t-3", "sf-t-4", "sf-t-head", "sf-t-chuck", "sf-t-cutting", "sf-t-profiles", "sf-t-thickness"],
          videos=[],
@@ -698,7 +718,7 @@ TUBE_FAMILIES = [
          short="Heavy-duty tube lasers",
          models_label="SF6024NT – SF12035NT · SF9035ST – SF12065ST · SF12035HT – SF15056HT · SF1500CH · 18 models",
          summary="For long and heavy tube: the NT series puts a third chuck in the middle so the last piece is cut without a tail — zero "
-                 "waste on 20 to 39 ft stock to Ø14″. The ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over "
+                 "waste on 20 to 40 ft stock to Ø14″. The ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over "
                  "29 to 49 ft with 6 to 20 kW sources, bevel heads and automatic loaders, for structural steel, towers, cranes and "
                  "trailers. The SF1500CH is the profile line for H-beams to 39 × 16 ft section, channels and angles, with visual "
                  "scanning of each beam before cutting.",

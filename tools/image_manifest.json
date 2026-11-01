@@ -113865,5 +113865,300 @@
    "file": "img/senfeng/sf-coil-2012-waste-thumb.webp",
    "bytes": 2638
   }
+ },
+ "sf-hm-5": {
+  "alt": "SF3015HM from the tube side \u2014 the exchange table and the enclosed cabin",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 270,
+    "file": "img/senfeng/sf-hm-5-1200.webp",
+    "bytes": 27828
+   },
+   {
+    "w": 800,
+    "h": 180,
+    "file": "img/senfeng/sf-hm-5-800.webp",
+    "bytes": 17234
+   },
+   {
+    "w": 480,
+    "h": 108,
+    "file": "img/senfeng/sf-hm-5-480.webp",
+    "bytes": 9328
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 36,
+   "file": "img/senfeng/sf-hm-5-thumb.webp",
+   "bytes": 2554
+  },
+  "cut": "birefnet"
+ },
+ "sf-hm-pdf": {
+  "alt": "SF3015HM tube and plate laser \u2014 the tube chuck and supports beside the enclosed cabin",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 524,
+    "file": "img/senfeng/sf-hm-pdf-1200.webp",
+    "bytes": 85138
+   },
+   {
+    "w": 800,
+    "h": 349,
+    "file": "img/senfeng/sf-hm-pdf-800.webp",
+    "bytes": 40784
+   },
+   {
+    "w": 480,
+    "h": 210,
+    "file": "img/senfeng/sf-hm-pdf-480.webp",
+    "bytes": 17626
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 70,
+   "file": "img/senfeng/sf-hm-pdf-thumb.webp",
+   "bytes": 3608
+  }
+ },
+ "sf-hm-bed": {
+  "alt": "SF3015HM high-strength welded bed \u2014 annealed, aged and precision-milled",
+  "variants": [
+   {
+    "w": 1040,
+    "h": 616,
+    "file": "img/senfeng/sf-hm-bed-1040.webp",
+    "bytes": 43372
+   },
+   {
+    "w": 800,
+    "h": 474,
+    "file": "img/senfeng/sf-hm-bed-800.webp",
+    "bytes": 38520
+   },
+   {
+    "w": 480,
+    "h": 284,
+    "file": "img/senfeng/sf-hm-bed-480.webp",
+    "bytes": 19320
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 95,
+   "file": "img/senfeng/sf-hm-bed-thumb.webp",
+   "bytes": 4818
+  }
+ },
+ "sf-hm-beam": {
+  "alt": "Aircraft-grade extruded aluminum beam",
+  "variants": [
+   {
+    "w": 748,
+    "h": 434,
+    "file": "img/senfeng/sf-hm-beam-748.webp",
+    "bytes": 16776
+   },
+   {
+    "w": 480,
+    "h": 279,
+    "file": "img/senfeng/sf-hm-beam-480.webp",
+    "bytes": 12546
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 93,
+   "file": "img/senfeng/sf-hm-beam-thumb.webp",
+   "bytes": 3176
+  }
+ },
+ "sf-hm-gas": {
+  "alt": "Pneumatic system \u2014 AVENTICS valves and proportional regulators for each gas path",
+  "variants": [
+   {
+    "w": 800,
+    "h": 800,
+    "file": "img/senfeng/sf-hm-gas-800.webp",
+    "bytes": 45554
+   },
+   {
+    "w": 480,
+    "h": 480,
+    "file": "img/senfeng/sf-hm-gas-480.webp",
+    "bytes": 20380
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 160,
+   "file": "img/senfeng/sf-hm-gas-thumb.webp",
+   "bytes": 3506
+  }
+ },
+ "sf-hm-dust": {
+  "alt": "Intelligent spiral negative-pressure dust removal, zoned by cutting position",
+  "variants": [
+   {
+    "w": 800,
+    "h": 442,
+    "file": "img/senfeng/sf-hm-dust-800.webp",
+    "bytes": 42544
+   },
+   {
+    "w": 480,
+    "h": 265,
+    "file": "img/senfeng/sf-hm-dust-480.webp",
+    "bytes": 21184
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 88,
+   "file": "img/senfeng/sf-hm-dust-thumb.webp",
+   "bytes": 4928
+  }
+ },
+ "sf-hm-zaxis": {
+  "alt": "Modular sealed Z axis",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1024,
+    "file": "img/senfeng/sf-hm-zaxis-1200.webp",
+    "bytes": 37246
+   },
+   {
+    "w": 800,
+    "h": 683,
+    "file": "img/senfeng/sf-hm-zaxis-800.webp",
+    "bytes": 22680
+   },
+   {
+    "w": 480,
+    "h": 410,
+    "file": "img/senfeng/sf-hm-zaxis-480.webp",
+    "bytes": 12114
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 137,
+   "file": "img/senfeng/sf-hm-zaxis-thumb.webp",
+   "bytes": 3030
+  }
+ },
+ "sf-hm-head-3kw": {
+  "alt": "Raytools autofocus cutting head, 1.5 \u2013 3 kW",
+  "variants": [
+   {
+    "w": 596,
+    "h": 800,
+    "file": "img/senfeng/sf-hm-head-3kw-596.webp",
+    "bytes": 21044
+   },
+   {
+    "w": 480,
+    "h": 644,
+    "file": "img/senfeng/sf-hm-head-3kw-480.webp",
+    "bytes": 19438
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 119,
+   "h": 160,
+   "file": "img/senfeng/sf-hm-head-3kw-thumb.webp",
+   "bytes": 3532
+  }
+ },
+ "sf-hm-head-6kw": {
+  "alt": "Raytools autofocus cutting head, 4 \u2013 6 kW",
+  "variants": [
+   {
+    "w": 731,
+    "h": 1562,
+    "file": "img/senfeng/sf-hm-head-6kw-731.webp",
+    "bytes": 35474
+   },
+   {
+    "w": 480,
+    "h": 1026,
+    "file": "img/senfeng/sf-hm-head-6kw-480.webp",
+    "bytes": 24656
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 75,
+   "h": 160,
+   "file": "img/senfeng/sf-hm-head-6kw-thumb.webp",
+   "bytes": 2986
+  }
+ },
+ "sf-hm-source": {
+  "alt": "Max fiber laser source",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1044,
+    "file": "img/senfeng/sf-hm-source-1200.webp",
+    "bytes": 42954
+   },
+   {
+    "w": 800,
+    "h": 696,
+    "file": "img/senfeng/sf-hm-source-800.webp",
+    "bytes": 25144
+   },
+   {
+    "w": 480,
+    "h": 417,
+    "file": "img/senfeng/sf-hm-source-480.webp",
+    "bytes": 13320
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 139,
+   "file": "img/senfeng/sf-hm-source-thumb.webp",
+   "bytes": 3396
+  }
+ },
+ "pdf-novotech-senfeng-sf3015hm-tube-plate-laser-technical-specification-2026": {
+  "alt": "Cover of the Senfeng SF3015HM tube and plate fiber laser, 1.5 \u2013 6 kW \u2014 full technical specification PDF",
+  "variants": [
+   {
+    "w": 640,
+    "h": 818,
+    "file": "img/site/pdf-novotech-senfeng-sf3015hm-tube-plate-laser-technical-specification-2026-640.webp",
+    "bytes": 29622
+   },
+   {
+    "w": 480,
+    "h": 614,
+    "file": "img/site/pdf-novotech-senfeng-sf3015hm-tube-plate-laser-technical-specification-2026-480.webp",
+    "bytes": 20240
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 125,
+   "h": 160,
+   "file": "img/site/pdf-novotech-senfeng-sf3015hm-tube-plate-laser-technical-specification-2026-thumb.webp",
+   "bytes": 3276
+  }
  }
 }

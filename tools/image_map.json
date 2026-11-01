@@ -15509,7 +15509,7 @@
  },
  "sf-st-1": {
   "src": "tools/src-images/senfeng/sf-st-1.png",
-  "alt": "Senfeng ST series three-chuck heavy-duty tube laser — Ø1.9 – 25″, 29 – 39 ft, 6 – 20 kW",
+  "alt": "Senfeng ST series three-chuck heavy-duty tube laser — Ø1.9 – 25″, 30 – 40 ft, 6 – 20 kW",
   "section": "senfeng",
   "trim": true,
   "quality": 82,
@@ -33592,6 +33592,94 @@
   "section": "senfeng",
   "trim": false,
   "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-5": {
+  "src": "tools/src-images/senfeng/sf-hm-5.jpg",
+  "alt": "SF3015HM from the tube side — the exchange table and the enclosed cabin",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-hm-pdf": {
+  "src": "tools/src-images/senfeng/sf-hm-pdf.png",
+  "alt": "SF3015HM tube and plate laser — the tube chuck and supports beside the enclosed cabin",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-bed": {
+  "src": "tools/src-images/senfeng/sf-hm-bed.png",
+  "alt": "SF3015HM high-strength welded bed — annealed, aged and precision-milled",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-beam": {
+  "src": "tools/src-images/senfeng/sf-hm-beam.png",
+  "alt": "Aircraft-grade extruded aluminum beam",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-gas": {
+  "src": "tools/src-images/senfeng/sf-hm-gas.png",
+  "alt": "Pneumatic system — AVENTICS valves and proportional regulators for each gas path",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-dust": {
+  "src": "tools/src-images/senfeng/sf-hm-dust.png",
+  "alt": "Intelligent spiral negative-pressure dust removal, zoned by cutting position",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-zaxis": {
+  "src": "tools/src-images/senfeng/sf-hm-zaxis.png",
+  "alt": "Modular sealed Z axis",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-head-3kw": {
+  "src": "tools/src-images/senfeng/sf-hm-head-3kw.png",
+  "alt": "Raytools autofocus cutting head, 1.5 – 3 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-head-6kw": {
+  "src": "tools/src-images/senfeng/sf-hm-head-6kw.png",
+  "alt": "Raytools autofocus cutting head, 4 – 6 kW",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-hm-source": {
+  "src": "tools/src-images/senfeng/sf-hm-source.png",
+  "alt": "Max fiber laser source",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pdf-novotech-senfeng-sf3015hm-tube-plate-laser-technical-specification-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-senfeng-sf3015hm-tube-plate-laser-technical-specification-2026.jpg",
+  "alt": "Cover of the Senfeng SF3015HM tube and plate fiber laser, 1.5 – 6 kW — full technical specification PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
   "cutout": false
  }
 }
