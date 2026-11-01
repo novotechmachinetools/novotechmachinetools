@@ -6,7 +6,7 @@
  "artifact_title": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW",
  "meta_description": "Coil-fed fiber laser cutting lines that uncoil, level and cut blanks straight from the coil — coil to 1/8″ and to 9/16″ plate, 3 to 80 kW, and the TOP line with robot sorting, panel bending and welding — sold, installed and supported in Canada.",
  "h1": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW",
- "intro": "A coil-fed laser line uncoils, levels and feeds strip straight into the laser, so blanks are cut without a sheet ever being handled, stacked or scrapped at the edges and with no limit on part length — the line for high-volume parts. NovoTech sells Senfeng's lines in Canada, on this page and from the value line: the SF1503CH for coil to 1/8″ and 16.5 tons on a 5 × 10 ft laser with 3 to 6 kW, the SF2012CH that levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW, and the TOP line that adds robot sorting, panel bending and welding for a complete coil-to-part cell. Every model is in the table below with its working area, power and speed, then the family with its full specification, photos and brochure. Every line comes with a CSA-approved panel, chiller and software, installed, trained and supported from Mississauga, ON, Canada.",
+ "intro": "A coil-fed laser line uncoils, levels and feeds strip straight into the laser, so blanks are cut without a sheet ever being handled, stacked or scrapped at the edges and with no limit on part length — the line for high-volume parts. NovoTech sells Senfeng's lines in Canada, on this page and from the value line: the SF1503CH for coil to 1/8″ and 16.5 tons on a 5 × 10 ft laser with 3 to 6 kW, the SF2012CH that levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW, and the TOP line that adds robot sorting, panel bending and welding for a complete coil-to-part cell. The family below has its full specification table, photos and brochure. Every line comes with a CSA-approved panel, chiller and software, installed, trained and supported from Mississauga, ON, Canada.",
  "hero_points": [
   "SF1503CH: coil to 1/8″ and 16.5 US tons, 5 × 10 ft laser, 3 – 6 kW",
   "SF2012CH: 5/16″ – 9/16″ plate from 22-ton coils, 6.6 × 13 ft cutting area, 12 – 80 kW",
@@ -39,7 +39,8 @@
   {
    "id": "ls-value-coil-group",
    "title": "Coil-fed laser cutting lines · value line",
-   "lead": "Uncoil, level and cut in one line — coil to 1/8″ and to 9/16″ plate, 3 to 80 kW.",
+   "lead": "",
+   "brand": "senfeng",
    "families": [
     "sf-coil"
    ]
@@ -155,25 +156,5 @@
    "label": "Download the Senfeng fiber laser brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "working_area",
-   "area"
-  ],
-  "power",
-  "speed",
-  "accel",
-  "load"
- ],
- "range_cols": [
-  "Working area",
-  "Laser power",
-  "Max. speed",
-  "Acceleration",
-  "Max. sheet load"
- ],
- "range_lead": "Every model on this page in one table — 2 machines. Each row links to the full specification below.",
- "range_caption": "Coil-fed laser cutting lines supplied by NovoTech",
- "range_title": "Every model at a glance"
+ ]
 }

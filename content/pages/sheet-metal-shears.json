@@ -4,7 +4,7 @@
  "family_set": "all-shears",
  "title": "Sheet Metal Shears for Sale in Canada — Pneumatic, Electric, Bench & Coil Machines, 20 to 14 ga | NovoTech",
  "artifact_title": "Sheet metal shears — pneumatic, electric, bench and coil machines, 20 to 14 ga",
- "meta_description": "Sheet metal shears sold, installed and supported in Canada: a pneumatic shear for 16 ga × 52″ on shop air, electric shears 14 ga – 5/32″ × 49 – 100″ with manual or NC back gauge, motorized bench shears and a 48″ coil slitting and cut-to-length machine. Every model in one table.",
+ "meta_description": "Sheet metal shears sold, installed and supported in Canada: a pneumatic shear for 16 ga × 52″ on shop air, electric shears 14 ga – 5/32″ × 49 – 100″ with manual or NC back gauge, motorized bench shears and a 48″ coil slitting and cut-to-length machine.",
  "h1": "Sheet metal shears — pneumatic, electric, bench and coil machines, 20 to 14 ga",
  "intro": "A sheet metal shear is the light shear for the HVAC, ductwork, signage, enclosure, roofing and repair shop — where a 10 ft × 1/4″ plate shear is more machine than the work needs — cutting 20 to 14 ga sheet to size between two blades from a pneumatic cylinder, an electric motor or a hand lever. NovoTech sells three kinds in Canada, all on this page: the PS pneumatic shear that cuts 16 ga over 52″ on 85 – 100 psi shop air, the HQ01 light hydraulic shears for 14 ga over 52″ and 16 ga over 98″, and the EBQ01 motorized bench shears for 18 ga × 26″ and 20 ga × 41″; the Q11 electric shears with a manual back gauge and counter or a PLC with motorised back gauge, 14 ga to 5/32″ over 49″ to 100″; and the PS-1220 coil slitting and cut-to-length machine that turns 16 ga × 48″ coil into blanks and strips. Every machine ships with front and back gauges, a foot pedal and two-edged blades, wired for Canadian voltage with a CSA-approved panel; installed, trained and supported from Mississauga, ON, Canada. For 1/8″ and 1/4″ all day see the mechanical guillotine shears; for plate, the hydraulic shears.",
  "hero_points": [
@@ -39,7 +39,8 @@
   {
    "id": "sh-light-group",
    "title": "Pneumatic, light hydraulic and bench shears, 20 – 14 ga",
-   "lead": "The PS pneumatic shear on shop air, the HQ01 light hydraulic shears and the EBQ01 motorized bench shears — the lowest-priced powered shears.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-ps",
     "tt-hq01",
@@ -49,7 +50,8 @@
   {
    "id": "sh-electric-group",
    "title": "Electric shears, 14 ga to 5/32″",
-   "lead": "Q11 electric shears with a manual back gauge and counter, or a PLC with motorised back gauge on the NC models, 49 to 100″.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-q11",
     "tt-q11nc"
@@ -58,7 +60,8 @@
   {
    "id": "sh-slit-group",
    "title": "Coil slitting and cut-to-length machine",
-   "lead": "The PS-1220×1.5GT decoils, slits and cuts 16 ga × 48″ coil to length — blanks and strips for the duct and panel shop.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-ps1220"
    ]
@@ -168,31 +171,5 @@
    "label": "Download the sheet metal shears brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "capacity",
-   "capacity_mild_steel"
-  ],
-  [
-   "length",
-   "working_width"
-  ],
-  "strokes",
-  [
-   "motor",
-   "operation"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Capacity (mild steel)",
-  "Shearing length",
-  "Strokes / min",
-  "Motor",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 14 machines: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification below.",
- "range_caption": "Sheet metal shears supplied by NovoTech — premium and value lines",
- "range_title": "Every model at a glance"
+ ]
 }

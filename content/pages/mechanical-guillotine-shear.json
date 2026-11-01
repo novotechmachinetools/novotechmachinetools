@@ -4,9 +4,9 @@
  "family_set": "all-shears",
  "title": "Mechanical Guillotine Shears for Sale in Canada — Direct-Gear & Flywheel, 1/8″ to 3/8″ | NovoTech",
  "artifact_title": "Mechanical guillotine shears — direct-gear and flywheel, 1/8″ to 3/8″",
- "meta_description": "Mechanical shearing machines sold, installed and supported in Canada: direct-gear SRGM guillotine shears, 1/8″ and 1/4″ from 43″ to 13.8 ft at 31 – 35 strokes a minute, return-to-sender and cut-to-length versions, and flywheel shears to 3/8″ — no hydraulics. Every model in one table.",
+ "meta_description": "Mechanical shearing machines sold, installed and supported in Canada: direct-gear SRGM guillotine shears, 1/8″ and 1/4″ from 43″ to 13.8 ft at 31 – 35 strokes a minute, return-to-sender and cut-to-length versions, and flywheel shears to 3/8″ — no hydraulics.",
  "h1": "Mechanical guillotine shears — direct-gear and flywheel, 1/8″ to 3/8″",
- "intro": "A mechanical shear drives the cutting beam from a motor instead of hydraulic cylinders — through a gearbox and crank (direct gear) or a flywheel and clutch — so there is no hydraulic power pack to leak or warm up, the cut is the same on the first and the thousandth stroke, and the machine runs 31 to 55 strokes a minute: the shear for sheet and light plate all day. NovoTech sells two kinds in Canada, both on this page: the premium-line SRGM direct-gear guillotines, built in Turkey with European motors, gearboxes and electrics — the light-type SRGM-H for 1/8″ mild steel and the SRGM for 1/4″ from 43″ to 13.8 ft, the SRGM-HFR / FR with a return-to-sender sheet support that brings the cut piece back to the operator, and the SRGM-HCL / CL built into cut-to-length coil lines; and the value-line Q11 flywheel shears for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Every model is in the table below with its capacity, length, strokes, motor and weight, then each family with its full specification and photos. Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For plate from 3/8″ up see the hydraulic shears; for 20 – 14 ga the sheet metal shears.",
+ "intro": "A mechanical shear drives the cutting beam from a motor instead of hydraulic cylinders — through a gearbox and crank (direct gear) or a flywheel and clutch — so there is no hydraulic power pack to leak or warm up, the cut is the same on the first and the thousandth stroke, and the machine runs 31 to 55 strokes a minute: the shear for sheet and light plate all day. NovoTech sells two kinds in Canada, both on this page: the premium-line SRGM direct-gear guillotines, built in Turkey with European motors, gearboxes and electrics — the light-type SRGM-H for 1/8″ mild steel and the SRGM for 1/4″ from 43″ to 13.8 ft, the SRGM-HFR / FR with a return-to-sender sheet support that brings the cut piece back to the operator, and the SRGM-HCL / CL built into cut-to-length coil lines; and the value-line Q11 flywheel shears for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Each family below has its full specification table and photos. Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For plate from 3/8″ up see the hydraulic shears; for 20 – 14 ga the sheet metal shears.",
  "hero_points": [
   "SRGM-H light type, 1/8″ × 3.6 – 10 ft, 35 strokes/min · SRGM standard, 1/4″ × 3.6 – 13.8 ft, 31 strokes/min — premium line, made in Turkey",
   "SRGM-HFR / SRGM-FR with return-to-sender: the cut blank comes back to the front, off-cuts drop to the rear; SRGM-HCL / CL for cut-to-length coil lines",
@@ -39,7 +39,8 @@
   {
    "id": "sh-srgm-group",
    "title": "Direct-gear mechanical guillotine shears · premium line",
-   "lead": "SRGM-H and SRGM: a 4 to 15 HP motor drives the cutting beam through a gearbox and crank — 1/8″ and 1/4″ from 43″ to 13.8 ft, welded frame, beam in teflon slideways.",
+   "lead": "",
+   "brand": "novotech-premium",
    "families": [
     "nt-shear-srgm-h",
     "nt-shear-srgm"
@@ -48,7 +49,8 @@
   {
    "id": "sh-srgm-return-group",
    "title": "Guillotine shears with return-to-sender · premium line",
-   "lead": "SRGM-HFR and SRGM-FR: a sheet support behind the blade tilts and brings the cut blank back to the operator; off-cuts drop to the rear.",
+   "lead": "",
+   "brand": "novotech-premium",
    "families": [
     "nt-shear-srgm-hfr",
     "nt-shear-srgm-fr"
@@ -57,7 +59,8 @@
   {
    "id": "sh-srgm-line-group",
    "title": "Shears for cut-to-length lines · premium line",
-   "lead": "SRGM-HCL and SRGM-CL: the same shears built into coil cut-to-length lines, with the line control and sheet stacker.",
+   "lead": "",
+   "brand": "novotech-premium",
    "families": [
     "nt-shear-srgm-hcl",
     "nt-shear-srgm-cl"
@@ -66,7 +69,8 @@
   {
    "id": "sh-flywheel-group",
    "title": "Flywheel mechanical shears · value line",
-   "lead": "Q11: a flywheel and clutch drive the beam for medium and thick steel, 1/8″ to 3/8″ at 45 – 55 strokes a minute, built in China to our specification.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-q11-mech"
    ]
@@ -198,31 +202,5 @@
    "label": "Download the sheet metal shears brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "capacity",
-   "capacity_mild_steel"
-  ],
-  [
-   "length",
-   "working_width"
-  ],
-  "strokes",
-  [
-   "motor",
-   "operation"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Capacity (mild steel)",
-  "Shearing length",
-  "Strokes / min",
-  "Motor",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 45 machines: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification below.",
- "range_caption": "Mechanical guillotine shears supplied by NovoTech — premium and value lines",
- "range_title": "Every model at a glance"
+ ]
 }

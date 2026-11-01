@@ -39,7 +39,7 @@ def faq(page, *questions):
 
 HYDRAULIC = dict(
     title="Hydraulic Shears for Sale in Canada — Swing Beam & Guillotine Plate Shears, 12 ga to 1-9/16″ | NovoTech",
-    meta="Hydraulic shearing machines sold, installed and supported in Canada: swing beam shears 12 ga – 3/4″ × 4 – 20 ft, variable-rake guillotines 1/4″ – 1-9/16″ × 8 – 26 ft, CNC shears with ESA control — premium line made in Turkey and NovoTech's value line, CSA panels. Every model in one table.",
+    meta="Hydraulic shearing machines sold, installed and supported in Canada: swing beam shears 12 ga – 3/4″ × 4 – 20 ft, variable-rake guillotines 1/4″ – 1-9/16″ × 8 – 26 ft, CNC shears with ESA control — premium line made in Turkey and NovoTech's value line, CSA panels.",
     h1="Hydraulic shears — swing beam and guillotine plate shears, 12 ga to 1-9/16″",
     intro="A hydraulic shear cuts sheet and plate to size in one stroke between a fixed lower blade and a moving upper blade driven by two "
           "hydraulic cylinders; the back gauge sets the width, hydraulic hold-downs keep the sheet flat and the control counts the strokes. "
@@ -48,8 +48,7 @@ HYDRAULIC = dict(
           "cut on two bearings — the premium BS / BSY to 5/8″ over 13.5 ft and the value-line QC12K from 5/32″ to 3/4″ over 20 ft; guillotine "
           "shears with a variable rake angle on a beam carried straight down on rollers, so thin sheet is cut flat and 3/4″ plate with less "
           "distortion — the premium DAS CNC to 3/4″ × 20 ft with the ESA 630 control and the value-line Q11K to 1-9/16″ × 26 ft; and light "
-          "hydraulic shears from 12 ga to 1/4″ over 51 – 120″ for the sheet-metal shop. Every model is in the table below with its capacity, "
-          "length, strokes, motor and weight, then each family with its full specification and photos. Every machine comes with a CSA-approved "
+          "hydraulic shears from 12 ga to 1/4″ over 51 – 120″ for the sheet-metal shop. Each family below has its full specification table and photos. Every machine comes with a CSA-approved "
           "panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For sheet to 1/4″ all day with no "
           "hydraulics, see the mechanical guillotine shears; for 20 – 14 ga, the sheet metal shears.",
     points=["Swing beam: premium BS / BSY 1/4″ – 5/8″ × 6.8 – 13.5 ft with NC back gauge; value QC12K 5/32″ – 3/4″ × 8 – 20 ft with Estun E21S",
@@ -80,7 +79,7 @@ HYDRAULIC = dict(
 
 MECHANICAL = dict(
     title="Mechanical Guillotine Shears for Sale in Canada — Direct-Gear & Flywheel, 1/8″ to 3/8″ | NovoTech",
-    meta="Mechanical shearing machines sold, installed and supported in Canada: direct-gear SRGM guillotine shears, 1/8″ and 1/4″ from 43″ to 13.8 ft at 31 – 35 strokes a minute, return-to-sender and cut-to-length versions, and flywheel shears to 3/8″ — no hydraulics. Every model in one table.",
+    meta="Mechanical shearing machines sold, installed and supported in Canada: direct-gear SRGM guillotine shears, 1/8″ and 1/4″ from 43″ to 13.8 ft at 31 – 35 strokes a minute, return-to-sender and cut-to-length versions, and flywheel shears to 3/8″ — no hydraulics.",
     h1="Mechanical guillotine shears — direct-gear and flywheel, 1/8″ to 3/8″",
     intro="A mechanical shear drives the cutting beam from a motor instead of hydraulic cylinders — through a gearbox and crank (direct gear) "
           "or a flywheel and clutch — so there is no hydraulic power pack to leak or warm up, the cut is the same on the first and the "
@@ -88,9 +87,7 @@ MECHANICAL = dict(
           "kinds in Canada, both on this page: the premium-line SRGM direct-gear guillotines, built in Turkey with European motors, gearboxes "
           "and electrics — the light-type SRGM-H for 1/8″ mild steel and the SRGM for 1/4″ from 43″ to 13.8 ft, the SRGM-HFR / FR with a "
           "return-to-sender sheet support that brings the cut piece back to the operator, and the SRGM-HCL / CL built into cut-to-length coil "
-          "lines; and the value-line Q11 flywheel shears for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Every model "
-          "is in the table below with its capacity, length, strokes, motor and weight, then each family with its full specification and "
-          "photos. Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, "
+          "lines; and the value-line Q11 flywheel shears for medium and thick steel, 1/8″ to 3/8″ at 45 to 55 strokes a minute. Each family below has its full specification table and photos. Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, "
           "Canada. For plate from 3/8″ up see the hydraulic shears; for 20 – 14 ga the sheet metal shears.",
     points=["SRGM-H light type, 1/8″ × 3.6 – 10 ft, 35 strokes/min · SRGM standard, 1/4″ × 3.6 – 13.8 ft, 31 strokes/min — premium line, made in Turkey",
             "SRGM-HFR / SRGM-FR with return-to-sender: the cut blank comes back to the front, off-cuts drop to the rear; SRGM-HCL / CL for cut-to-length coil lines",
@@ -110,7 +107,7 @@ MECHANICAL = dict(
 
 SHEET = dict(
     title="Sheet Metal Shears for Sale in Canada — Pneumatic, Electric, Bench & Coil Machines, 20 to 14 ga | NovoTech",
-    meta="Sheet metal shears sold, installed and supported in Canada: a pneumatic shear for 16 ga × 52″ on shop air, electric shears 14 ga – 5/32″ × 49 – 100″ with manual or NC back gauge, motorized bench shears and a 48″ coil slitting and cut-to-length machine. Every model in one table.",
+    meta="Sheet metal shears sold, installed and supported in Canada: a pneumatic shear for 16 ga × 52″ on shop air, electric shears 14 ga – 5/32″ × 49 – 100″ with manual or NC back gauge, motorized bench shears and a 48″ coil slitting and cut-to-length machine.",
     h1="Sheet metal shears — pneumatic, electric, bench and coil machines, 20 to 14 ga",
     intro="A sheet metal shear is the light shear for the HVAC, ductwork, signage, enclosure, roofing and repair shop — where a 10 ft × 1/4″ "
           "plate shear is more machine than the work needs — cutting 20 to 14 ga sheet to size between two blades from a pneumatic cylinder, "
@@ -161,12 +158,18 @@ def build():
             missing = [x for x in keys if x not in manifest]
             if missing:
                 raise SystemExit(f"{slug}: image keys not in manifest: {missing}")
+        # the press brake page format (the owner, Nov 1 2026): every group under its brand's line header with no lead line, and
+        # no page-level "every model" table — that table is on the hub
+        brand_of = {}
+        for f in members:
+            brand_of.setdefault(f["group"], set()).add(f.get("brand"))
+        page = dict(page, groups=[(g[0], g[1], "", next(iter(brand_of[g[0]]))) for g in page["groups"]])
+        if any(len(brand_of[g[0]]) != 1 or None in brand_of[g[0]] for g in page["groups"]):
+            raise SystemExit(f"{slug}: a group has families of several brands or none")
         write_category(slug, page, members, SET, SN.SECTION, hub=SN.hub(), siblings=SN.siblings(),
                        extra={"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **video,
                               "nav_label": next(nav for s, _, _, _, nav, _ in SN.SUBPAGES if s == slug),
-                              "catalogue_pdf": None, "catalogue_pdfs": pdfs, **RANGE,
-                              "range_lead": f"Every model on this page in one table — {n} machines: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification below.",
-                              "range_caption": f"{page['h1'].split(' — ')[0]} supplied by NovoTech — premium and value lines", "range_title": "Every model at a glance"})
+                              "catalogue_pdf": None, "catalogue_pdfs": pdfs})
         print(f"{slug}: {len(members)} families, {n} models, {len(pdfs)} brochures")
 
 

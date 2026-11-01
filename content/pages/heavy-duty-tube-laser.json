@@ -4,9 +4,9 @@
  "family_set": "tube-lasers",
  "title": "Heavy-Duty Tube & Profile Lasers for Sale in Canada — Three & Four Chucks, to Ø25″ and 49 ft | NovoTech",
  "artifact_title": "Heavy-duty tube and profile lasers — three and four chucks, to Ø25″ and 49 ft",
- "meta_description": "Heavy-duty tube laser cutting machines sold, installed and supported in Canada: three- and four-chuck lasers for structural tube, pipe, beams and profiles to Ø25″, bars to 49 ft and 6,600 lb, zero tailing, 3 to 40 kW — premium FTL made in Turkey, value-line NT / ST / HT and the H-beam profile line. Every model in one table.",
+ "meta_description": "Heavy-duty tube laser cutting machines sold, installed and supported in Canada: three- and four-chuck lasers for structural tube, pipe, beams and profiles to Ø25″, bars to 49 ft and 6,600 lb, zero tailing, 3 to 40 kW — premium FTL made in Turkey, value-line NT / ST / HT and the H-beam profile line.",
  "h1": "Heavy-duty tube and profile lasers — three and four chucks, to Ø25″ and 49 ft",
- "intro": "A heavy-duty tube laser carries beams, pipe and heavy profiles that a two-chuck machine cannot: three or four chucks hold a bar of up to 6,600 lb and 49 ft at both ends and in the middle, feed it through the cut without the tail dropping, and cut copes, holes and bevels in structural tube to Ø25″ straight from the steel-detailing model. NovoTech sells two lines in Canada, both on this page: the premium Dener FTL made in Turkey, for Ø0.6″ to 25.2″ and 12 m bars of 2,600 kg, 3 to 20 kW; and the value line — the zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft, plus the SF1500CH H-beam profile line. Every model is in the table below with its tube range, power, speed and bar length, then each family with its full specification, photos and brochure. Every machine comes with a CSA-approved panel, chiller and tube nesting software, installed, trained and supported from Mississauga, ON, Canada. For tube to Ø14″ see the tube laser cutters.",
+ "intro": "A heavy-duty tube laser carries beams, pipe and heavy profiles that a two-chuck machine cannot: three or four chucks hold a bar of up to 6,600 lb and 49 ft at both ends and in the middle, feed it through the cut without the tail dropping, and cut copes, holes and bevels in structural tube to Ø25″ straight from the steel-detailing model. NovoTech sells two lines in Canada, both on this page: the premium Dener FTL made in Turkey, for Ø0.6″ to 25.2″ and 12 m bars of 2,600 kg, 3 to 20 kW; and the value line — the zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft, plus the SF1500CH H-beam profile line. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and tube nesting software, installed, trained and supported from Mississauga, ON, Canada. For tube to Ø14″ see the tube laser cutters.",
  "hero_points": [
   "Premium FTL: Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb, 3 – 20 kW, 1 G servo chucks, following supports",
   "Value NT / ST / HT: three and four chucks, zero tailing, to Ø25″, 6,600 lb and 49 ft, 3 – 40 kW; SF1500CH H-beam profile line",
@@ -39,7 +39,8 @@
   {
    "id": "lt-premium-ftl-group",
    "title": "FTL heavy tube lasers · premium line",
-   "lead": "Dener's heavy machine for structural tube, pipe and beams — Ø0.6″ to 25.2″, 12 m bars of 2,600 kg.",
+   "lead": "",
+   "brand": "dener",
    "families": [
     "dn-ftl"
    ]
@@ -47,7 +48,8 @@
   {
    "id": "lt-value-heavy-group",
    "title": "NT, ST and HT three- and four-chuck tube lasers · value line",
-   "lead": "Zero-tailing and heavy-bar machines to Ø25″, 6,600 lb and 49 ft, and the H-beam profile line.",
+   "lead": "",
+   "brand": "senfeng",
    "families": [
     "sf-heavy"
    ]
@@ -162,25 +164,5 @@
    "label": "Download the Senfeng tube laser brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "tube",
-   "round"
-  ],
-  "power",
-  "speed",
-  "length",
-  "load"
- ],
- "range_cols": [
-  "Round tube",
-  "Laser power",
-  "Max. speed",
-  "Bar length",
-  "Max. bar weight"
- ],
- "range_lead": "Every model on this page in one table — 22 machines. Each row links to the full specification below.",
- "range_caption": "Heavy-duty tube and profile lasers supplied by NovoTech",
- "range_title": "Every model at a glance"
+ ]
 }

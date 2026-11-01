@@ -6,7 +6,7 @@
  "artifact_title": "Magnetic sheet metal brakes — 2 to 10 ft, 16 gauge, boxes of any depth",
  "meta_description": "Magnetic sheet metal brakes sold, installed and supported in Canada: EB625 to EB3200, 16 ga over 2 – 8 ft and 18 ga over 10 ft, 3.3 – 13.2 US tons of electromagnetic clamping — fold boxes of any depth, closed shapes and short return flanges.",
  "h1": "Magnetic sheet metal brakes — 2 to 10 ft, 16 gauge, boxes of any depth",
- "intro": "A magnetic sheet metal brake clamps the sheet with an electromagnet in the bed instead of a mechanical beam: a loose steel clamping bar is held down by 3.3 to 13.2 US tons of magnetic force, and because there is no beam frame at the ends, a short bar folds the side of a box of any depth, closed shapes, narrow channels and short return flanges that a box and pan brake cannot reach. NovoTech sells the EB range in Canada, all on this page: six models from the EB625 at 2 ft to the EB3200 at 10 ft, 16 ga mild steel over 2 to 8 ft and 18 ga over 10 ft, each with a set of clamping bars, a radius bar and a back stop, and the leaf angle read on a scale. Every model is in the table below with its length, clamping force and weight, then the family with its full specification and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
+ "intro": "A magnetic sheet metal brake clamps the sheet with an electromagnet in the bed instead of a mechanical beam: a loose steel clamping bar is held down by 3.3 to 13.2 US tons of magnetic force, and because there is no beam frame at the ends, a short bar folds the side of a box of any depth, closed shapes, narrow channels and short return flanges that a box and pan brake cannot reach. NovoTech sells the EB range in Canada, all on this page: six models from the EB625 at 2 ft to the EB3200 at 10 ft, 16 ga mild steel over 2 to 8 ft and 18 ga over 10 ft, each with a set of clamping bars, a radius bar and a back stop, and the leaf angle read on a scale. The family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Six models, 2 – 10 ft: 16 ga × 2 – 8 ft and 18 ga × 10 ft mild steel; 3.3 – 13.2 US tons of clamping",
   "No end frames: boxes of any depth, closed and narrow shapes, short return flanges; clamping bars from 1″ and a radius bar included",
@@ -39,7 +39,8 @@
   {
    "id": "mag-group",
    "title": "Magnetic sheet metal brakes",
-   "lead": "An electromagnet in the bed clamps the sheet under a steel bar — no beam frame at the ends, so a short bar folds the side of a box of any depth.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-eb"
    ]
@@ -161,31 +162,5 @@
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null,
- "nav_label": "Magnetic brakes",
- "range_pick": [
-  [
-   "bending_length",
-   "working_length",
-   "working_width",
-   "capacity_length_mild_steel",
-   "coil_width",
-   "bending_capacity_width"
-  ],
-  [
-   "capacity_mild_steel",
-   "capacity",
-   "shear_brake_roll_capacity_mild_steel",
-   "bending_and_shearing_capacity_mild_steel",
-   "capacity_length_mild_steel"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Length",
-  "Capacity (mild steel)",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 6 machines: bending length, capacity in mild steel and weight. Each row links to the full specification below.",
- "range_caption": "Magnetic sheet metal brakes supplied by NovoTech — value line",
- "range_title": "Every model at a glance"
+ "nav_label": "Magnetic brakes"
 }

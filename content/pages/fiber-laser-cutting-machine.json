@@ -4,9 +4,9 @@
  "family_set": "sheet-lasers",
  "title": "Fiber Laser Cutting Machines for Sale in Canada — Shuttle Table & Pallet Changer, 1.5–80 kW | NovoTech",
  "artifact_title": "Fiber laser cutting machines, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW",
- "meta_description": "Fiber laser cutting machines sold, installed and supported in Canada: shuttle table or pallet changer, laser-safe cabin, 4 × 4 ft compact machines to 8.5 × 41 ft, 1.5 to 80 kW — premium GFL and Smart made in Turkey, value-line ULE, Senfeng H series, NP and compact lasers. Every model in one table.",
+ "meta_description": "Fiber laser cutting machines sold, installed and supported in Canada: shuttle table or pallet changer, laser-safe cabin, 4 × 4 ft compact machines to 8.5 × 41 ft, 1.5 to 80 kW — premium GFL and Smart made in Turkey, value-line ULE, Senfeng H series, NP and compact lasers.",
  "h1": "Fiber laser cutting machines, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW",
- "intro": "A fiber laser cutting machine cuts inside a laser-safe cabin with fume extraction, and its shuttle table or pallet changer loads the next sheet while the first is being cut — the production laser that keeps cutting while the operator unloads, and the kind most shops buy from 5 × 10 ft up. NovoTech sells two lines in Canada, both on this page: the premium Dener lasers made in Turkey — the GFL with a space-frame gantry rated for 1.5 G and a pallet changer in 5 × 10 to 6.6 × 20 ft, 3 to 40 kW, and the Smart with a shuttle table in six sizes to 8.5 × 41 ft; and the value line — NovoTech's own ULE with a 15-second shuttle table to 41 ft, the Senfeng H series with pallet changer from 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, the NP single-table lasers with a cover on the gantry, and compact lasers of 4 × 4 and 5 × 10 ft from 1.5 kW. Every model is in the table below with its working area, power and speed, then each family with its full specification, photos and brochure. Every machine comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, Canada. For long and heavy plate see the large-format plate lasers.",
+ "intro": "A fiber laser cutting machine cuts inside a laser-safe cabin with fume extraction, and its shuttle table or pallet changer loads the next sheet while the first is being cut — the production laser that keeps cutting while the operator unloads, and the kind most shops buy from 5 × 10 ft up. NovoTech sells two lines in Canada, both on this page: the premium Dener lasers made in Turkey — the GFL with a space-frame gantry rated for 1.5 G and a pallet changer in 5 × 10 to 6.6 × 20 ft, 3 to 40 kW, and the Smart with a shuttle table in six sizes to 8.5 × 41 ft; and the value line — NovoTech's own ULE with a 15-second shuttle table to 41 ft, the Senfeng H series with pallet changer from 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, the NP single-table lasers with a cover on the gantry, and compact lasers of 4 × 4 and 5 × 10 ft from 1.5 kW. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, Canada. For long and heavy plate see the large-format plate lasers.",
  "hero_points": [
   "Premium: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with shuttle table, six sizes to 8.5 × 41 ft",
   "Value: ULE with 15 s shuttle table 10 × 5 to 41 × 8.5 ft, 3 – 40 kW; Senfeng H series with pallet changer to 8.3 × 40 ft and 80 kW",
@@ -39,7 +39,8 @@
   {
    "id": "ls-premium-gfl-group",
    "title": "GFL production fiber lasers · premium line",
-   "lead": "Dener's premium sheet laser: 1.5 G, pallet changer, 3 – 40 kW — built for a job shop that cuts all day.",
+   "lead": "",
+   "brand": "dener",
    "families": [
     "dn-gfl"
    ]
@@ -47,7 +48,8 @@
   {
    "id": "ls-premium-closed-group",
    "title": "Smart fiber lasers with shuttle table · premium line",
-   "lead": "The economy line from the same Turkish factory: a shuttle table and 1 G in six sizes to 8.5 × 41 ft.",
+   "lead": "",
+   "brand": "dener",
    "families": [
     "dn-smart-closed"
    ]
@@ -55,7 +57,8 @@
   {
    "id": "ls-value-ule-group",
    "title": "ULE fiber lasers with shuttle table · value line",
-   "lead": "NovoTech's own laser with a 15-second shuttle table, 10 × 5 to 41 × 8.5 ft, 3 – 40 kW.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "vn-ule"
    ]
@@ -63,7 +66,8 @@
   {
    "id": "ls-value-h-group",
    "title": "H series lasers with pallet changer · value line",
-   "lead": "The widest range: 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, with towers and storage.",
+   "lead": "",
+   "brand": "senfeng",
    "families": [
     "sf-h"
    ]
@@ -71,7 +75,8 @@
   {
    "id": "ls-value-np-group",
    "title": "NP lasers with gantry cover · value line",
-   "lead": "Single tables 5 × 10 to 6.6 × 20 ft, 3 to 12 kW: the cover travels with the gantry, the table stays open for loading.",
+   "lead": "",
+   "brand": "senfeng",
    "families": [
     "sf-np"
    ]
@@ -79,7 +84,8 @@
   {
    "id": "ls-value-compact-group",
    "title": "Compact single-table lasers · value line",
-   "lead": "4 × 4 and 5 × 10 ft machines from 1.5 kW — the laser for the small shop.",
+   "lead": "",
+   "brand": "senfeng",
    "families": [
     "sf-compact"
    ]
@@ -230,25 +236,5 @@
    "label": "Download the Senfeng fiber laser brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "working_area",
-   "area"
-  ],
-  "power",
-  "speed",
-  "accel",
-  "load"
- ],
- "range_cols": [
-  "Working area",
-  "Laser power",
-  "Max. speed",
-  "Acceleration",
-  "Max. sheet load"
- ],
- "range_lead": "Every model on this page in one table — 42 machines. Each row links to the full specification below.",
- "range_caption": "Fiber laser cutting machines, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW supplied by NovoTech",
- "range_title": "Every model at a glance"
+ ]
 }

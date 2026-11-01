@@ -33,14 +33,13 @@ PAGES = {
     "box-and-pan-brake": dict(
         nav="Box and pan brakes", hero="tm-bp1650", minis=["tm-w2540h2", "tm-hw2540h"],
         title="Box and Pan Brakes for Sale in Canada — 12″ to 13 ft, 22 to 12 Gauge | NovoTech",
-        meta="Box and pan brakes (finger brakes) sold, installed and supported in Canada: hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, and hydraulic box and pan brakes. Every model in one table.",
+        meta="Box and pan brakes (finger brakes) sold, installed and supported in Canada: hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, and hydraulic box and pan brakes.",
         h1="Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
         intro="A box and pan brake (finger brake) is a sheet metal brake whose upper clamping blade is made of removable fingers: take the fingers out "
               "where the sides of a box come up and the leaf folds all four sides of a box or a pan; with every finger in place it works as a "
               "straight brake. NovoTech sells three kinds in Canada, all on this page: hand-operated box and pan brakes from a 12″ bench model "
               "to 157″, in 22 to 12 ga; heavy box and pan brakes from 52 to 100″ with 2, 3 and 4″ fingers that fold 14 ga boxes 9″ deep; and "
-              "hydraulic box and pan brakes that clamp and fold 14 ga over 52 and 100″ from a foot pedal. Every model is listed in one table "
-              "below with its length, capacity and weight, then each family with its full specification, photos and the finger sets supplied. "
+              "hydraulic box and pan brakes that clamp and fold 14 ga over 52 and 100″ from a foot pedal. Each family below has its full specification table, photos and the finger sets supplied. "
               "NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
         points=["Hand-operated box and pan brakes 12 – 157″, 22 to 12 ga mild steel, removable fingers in 1 – 6″ widths",
                 "Heavy brakes 52 – 100″ with 2, 3 and 4″ finger sets — boxes to 9″ deep in 14 ga; counterweighted leaf",
@@ -65,15 +64,13 @@ PAGES = {
     "sheet-metal-hand-brake": dict(
         nav="Hand brakes & folders", hero="tm-hb2250", minis=["tm-pbb", "tm-bsm3150"],
         title="Sheet Metal Hand Brakes for Sale in Canada — Straight Brakes, Foot-Clamp Folders & Bench Brakes | NovoTech",
-        meta="Sheet metal hand brakes sold, installed and supported in Canada: straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines to 119″ in 12 ga, and bench, slitting and offset brakes. Every model in one table.",
+        meta="Sheet metal hand brakes sold, installed and supported in Canada: straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines to 119″ in 12 ga, and bench, slitting and offset brakes.",
         h1="Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
         intro="A sheet metal hand brake clamps the sheet under a one-piece beam and swings a folding leaf up around the edge by hand — long, "
               "straight, clean bends in thin sheet with no punch and die and no marks on painted material. NovoTech sells three kinds in "
               "Canada, all on this page: straight hand brakes from a 12″ bench model to 13 ft, in 22 to 12 ga, for flashing, trim and duct "
               "panels; foot-clamp folding machines from 40 to 119″ whose clamping beam closes from a foot pedal so both hands guide the sheet, "
-              "to 12 ga; and bench brakes, shear-and-brake machines, slitting brakes and offset tools for the bench and the job box. Every "
-              "model is listed in one table below with its length, capacity and weight, then each family with its full specification and "
-              "photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
+              "to 12 ga; and bench brakes, shear-and-brake machines, slitting brakes and offset tools for the bench and the job box. Each family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
         points=["Straight hand brakes 12″ – 13 ft, 22 to 12 ga mild steel; counterweighted leaf, adjustable clamping and radius",
                 "Foot-clamp folding machines 40 – 119″, 20 to 12 ga: pedal clamping, both hands on the sheet, angle stop",
                 "Bench brakes 14 – 124″, shear-and-brake machines, slitting brakes and offset brakes, 22 – 18 ga"],
@@ -104,8 +101,7 @@ PAGES = {
               "side of a box of any depth, closed shapes, narrow channels and short return flanges that a box and pan brake cannot reach. "
               "NovoTech sells the EB range in Canada, all on this page: six models from the EB625 at 2 ft to the EB3200 at 10 ft, 16 ga mild "
               "steel over 2 to 8 ft and 18 ga over 10 ft, each with a set of clamping bars, a radius bar and a back stop, and the leaf angle "
-              "read on a scale. Every model is in the table below with its length, clamping force and weight, then the family with its full "
-              "specification and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from "
+              "read on a scale. The family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from "
               "Mississauga, ON, Canada.",
         points=["Six models, 2 – 10 ft: 16 ga × 2 – 8 ft and 18 ga × 10 ft mild steel; 3.3 – 13.2 US tons of clamping",
                 "No end frames: boxes of any depth, closed and narrow shapes, short return flanges; clamping bars from 1″ and a radius bar included",
@@ -126,7 +122,7 @@ PAGES = {
     "hydraulic-folding-machine": dict(
         nav="Hydraulic & CNC folders", hero="tm-hwe", minis=["tm-tfm3100", "tm-efms2540l"],
         title="Hydraulic, Electric & CNC Folding Machines for Sale in Canada — 10 ga × 10 ft, 14 ga × 12 ft | NovoTech",
-        meta="Powered sheet metal folding machines sold, installed and supported in Canada: hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge. Every model in one table.",
+        meta="Powered sheet metal folding machines sold, installed and supported in Canada: hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge.",
         h1="Hydraulic, electric and CNC folding machines — 10 ga over 10 ft, 14 ga CNC over 12 ft",
         intro="A powered folding machine clamps and folds the sheet with hydraulic cylinders or electric drives, so a 10 ft bend in 10 ga takes "
               "a foot pedal instead of two people and a CNC folder runs a 99-bend program with its back gauge while the operator only turns "
@@ -134,8 +130,7 @@ PAGES = {
               "and 3/16″ over 80 – 100″, with a hydraulic clamping beam, a folding beam driven by cylinders and a segmented upper beam on the "
               "box models; EFM / EFMS electric folding machines, 16 to 20 ga over 80 – 120″, for the shop that wants power without hydraulics; "
               "and TFM / TFMS CNC electric folders, 14 ga over 122 and 145″, with a CNC back gauge to 48″ and ±0.004″ repeatability for "
-              "production panels, cassettes and enclosures. Every model is in the table below with its length, capacity and weight, then each "
-              "family with its full specification and photos. NovoTech's value-line machines are built in China to our specification, with "
+              "production panels, cassettes and enclosures. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with "
               "parts and support from Mississauga, ON, Canada.",
         points=["HW hydraulic folders: 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″; hydraulic clamping, foot pedal, segmented beam on the H models",
                 "EFM / EFMS electric folders 16 – 20 ga × 80 – 120″: motor-driven clamping and folding, no hydraulics",
@@ -166,8 +161,7 @@ PAGES = {
               "in 10 to 15 minutes, that clamps 24 ga steel or 0.032″ aluminum coil, bends it to 180° and slits the coil with a roller knife. "
               "NovoTech sells the ALB brakes in Canada, all on this page: six models from 7.2 to 12.5 ft with a silicone insert in the bending "
               "beam for pre-painted coil and copper, a slitter on a track and a carrying stand; and the CD-24 coil dispenser that feeds 24″ "
-              "trim coil to the brake. Every model is in the table below with its length, capacity and weight, then the family with its full "
-              "specification and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from "
+              "trim coil to the brake. The family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from "
               "Mississauga, ON, Canada.",
         points=["ALB brakes 7.2 – 12.5 ft: 24 ga steel, 0.032″ aluminum, 0.024″ copper; bend to 180°, 22.8″ throat",
                 "Roller slitter on a track cuts the coil to width on the brake; silicone insert protects painted and copper coil",
@@ -189,14 +183,13 @@ PAGES = {
     "shear-brake-roll-3-in-1": dict(
         nav="3-in-1 machines", hero="tm-3in1", minis=["tm-e3in1", "tm-3in1-1016"],
         title="3-in-1 Shear, Brake & Roll Machines for Sale in Canada — 8″ to 80″ | NovoTech",
-        meta="3-in-1 sheet metal machines sold, installed and supported in Canada: combination shear, brake and slip roll on one frame from 8″ to 52″ in 20 – 16 ga, and the motorized E3-IN-1 for 1/8″ × 52″ and 80″. Every model in one table.",
+        meta="3-in-1 sheet metal machines sold, installed and supported in Canada: combination shear, brake and slip roll on one frame from 8″ to 52″ in 20 – 16 ga, and the motorized E3-IN-1 for 1/8″ × 52″ and 80″.",
         h1="3-in-1 shear, brake and roll machines — 8″ to 80″",
         intro="A 3-in-1 machine puts a shear, a brake and a slip roll on one frame: the starter machine for the small sheet-metal, HVAC and "
               "hobby shop, and the compact machine for a maintenance department that cuts, folds and rolls a few parts a day. NovoTech sells "
               "two kinds in Canada, both on this page: hand-operated 3-in-1 machines from 8″ to 52″, 20 to 16 ga, with a guillotine shear, a "
               "finger brake and three rolls on one bench frame; and the motorized E3-IN-1 that shears 1/8″, bends 14 ga and rolls 12 ga over 52 "
-              "and 80″ with a 4.7 HP motor. Every model is in the table below with its width, capacity and weight, then each family with its "
-              "full specification and photos. NovoTech's value-line machines are built in China to our specification, with parts and support "
+              "and 80″ with a 4.7 HP motor. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with parts and support "
               "from Mississauga, ON, Canada.",
         points=["Hand-operated 3-in-1 machines 8 – 52″: shear, finger brake and slip roll, 20 – 16 ga mild steel on one bench frame",
                 "Motorized E3-IN-1, 52″ and 80″: shears 1/8″, bends 14 ga, rolls 12 ga, 4.7 HP",
@@ -277,14 +270,19 @@ def build():
             for fid in fids:
                 members.append(dict(fs[fid], id=fid, group=gid, page=slug))
         n = sum(len(f["specs"]["models"]) for f in members)
-        groups = [(gid, title, lead) for gid, title, lead, _, _ in p["groups"]]
+        # the press brake page format (the owner, Nov 1 2026): every group under its brand's line header with no lead line, and
+        # no page-level "every model" table — that table is on the hub
+        brand_of = {}
+        for f in members:
+            brand_of.setdefault(f["group"], set()).add(f.get("brand"))
+        if any(len(brand_of[gid]) != 1 or None in brand_of[gid] for gid, _, _, _, _ in p["groups"]):
+            raise SystemExit(f"{slug}: a group has families of several brands or none")
+        groups = [(gid, title, "", next(iter(brand_of[gid]))) for gid, title, lead, _, _ in p["groups"]]
         page = {"title": p["title"], "meta": p["meta"], "h1": p["h1"], "intro": p["intro"].replace("{n}", f"{n:,}"), "points": p["points"],
                 "hero": p["hero"], "minis": p["minis"], "groups": groups, "faq": p["faq"], "related_pages": p["related"],
                 "related_title": "More sheet-metal machinery from NovoTech"}
         write_category(slug, page, members, SET, SECTION, hub=hub(), siblings=siblings(),
-                       extra={"hero_brand_line": TP.BRAND_LINE, "origin_feature": TP.ORIGIN, **NO_VIDEO, "nav_label": p["nav"], "catalogue_pdf": None,
-                              **RANGE, "range_lead": f"Every model on this page in one table — {n} machines: bending length, capacity in mild steel and weight. Each row links to the full specification below.",
-                              "range_caption": f"{p['h1'].split(' — ')[0]} supplied by NovoTech — value line", "range_title": "Every model at a glance"})
+                       extra={"hero_brand_line": TP.BRAND_LINE, "origin_feature": TP.ORIGIN, **NO_VIDEO, "nav_label": p["nav"], "catalogue_pdf": None})
         # the manual-machine tagline the TTMC generator puts on hand-operated groups
         path = os.path.join(ROOT, "content", "pages", f"{slug}.json")
         d = json.load(open(path, encoding="utf-8"))

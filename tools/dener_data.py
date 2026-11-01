@@ -552,9 +552,19 @@ SHEAR_FAMILIES = [
 POWERS = "3 / 6 / 12 / 20 / 30 / 40 kW"
 
 
+def nom_ft(mm):
+    """a table dimension in nominal feet (the owner, Nov 1 2026: "10 × 5 ft", not "9.8 ft × 4.9 ft · 118 × 59″"): whole feet when
+    within 2 %, otherwise one decimal — 3,000 → 10, 1,500 → 5, 2,000 → 6.6, 2,500 → 8.2, 12,500 → 41"""
+    f = mm / 304.8
+    r = round(f)
+    if r and abs(f - r) / r <= 0.02:
+        return f"{r}"
+    return f"{f:.1f}".rstrip("0").rstrip(".")
+
+
 def area(code):
     l, w = int(code[:-2]) * 100, int(code[-2:]) * 100
-    return f"{feet(l)} × {feet(w)} · {l / 25.4:.0f} × {w / 25.4:.0f}″ ({l:,} × {w:,} mm)"
+    return f"{nom_ft(l)} × {nom_ft(w)} ft ({l:,} × {w:,} mm)"
 
 
 def laser_table(title, sub, prefix, codes, power, precision, speed_mmin, accel, worktable, extra=()):
@@ -596,11 +606,11 @@ LASER_FAMILIES = [
                  "pneumatic extraction and scrap boxes that keep the floor clean. The machine for a job shop that cuts all day.",
          features=["1.5 G acceleration, 394 ft/min (120 m/min) axis speed, ±0.03 mm positioning", "3 to 40 kW fiber sources; 6 kW cuts 3/4″ mild steel, 12 kW 1″"] + LS_STD,
          optional=LS_OPT,
-         images=["dn-gfl-1", "dn-gfl-3", "dn-gfl-2", "dn-gfl-3015", "dn-gfl-6020", "dn-gfl-open", "dn-gfl-frame", "dn-gfl-head", "dn-gfl-video-1", "dn-gfl-video-2", "dn-gfl-control", "dn-gfl-part", "dn-gfl-sheet"],
+         images=["dn-gfl-1", "dn-gfl-3", "dn-gfl-2", "dn-gfl-3015", "dn-gfl-6020", "dn-gfl-open", "dn-gfl-frame", "dn-gfl-head", "dn-gfl-control", "dn-gfl-part", "dn-gfl-sheet"],
          videos=vids(("P3ynLUu2VYU", "DENER GFL 10 × 5 ft 6 kW laser cutting machine"), ("VjuvZWb_O_g", "DENER GFL laser cutting machine"),
                      ("0Cz5xYoNVec", "DENER GFL laser cutting machine"), ("NxTq4uw3n5k", "DENER GFL laser cutting machine"),
-                     ("L9fTrifVFiA", "DENER 6 kW / 4 kW / 2 kW fiber laser cutting comparison"), ("C0mG6rJkHdU", "6 kW fiber laser cutting 15 mm mild steel"),
-                     ("EFTY5a-Ri1Q", "Intelligent air cutting — a smarter solution beyond traditional air cutting")),
+                     ("L9fTrifVFiA", "DENER 6 kW / 4 kW / 2 kW fiber laser cutting comparison"), ("C0mG6rJkHdU", "6 kW fiber laser cutting 15 mm mild steel")),
+         # the "Intelligent air cutting" film (EFTY5a-Ri1Q) is Senfeng's, not Dener's — off the GFL (the owner, Nov 1 2026)
          specs=spec([T_GFL], LS_GK, LS_G_FROM, NOTE_LS)),
     dict(id="dn-smart-closed", group="laser-smart", page=P_LASER, brand=BRAND,
          name="Smart fiber lasers with shuttle table, 5 × 10 to 8.5 × 41 ft, 3 – 40 kW",

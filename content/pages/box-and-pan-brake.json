@@ -4,9 +4,9 @@
  "family_set": "ttmc-more",
  "title": "Box and Pan Brakes for Sale in Canada — 12″ to 13 ft, 22 to 12 Gauge | NovoTech",
  "artifact_title": "Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
- "meta_description": "Box and pan brakes (finger brakes) sold, installed and supported in Canada: hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, and hydraulic box and pan brakes. Every model in one table.",
+ "meta_description": "Box and pan brakes (finger brakes) sold, installed and supported in Canada: hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, and hydraulic box and pan brakes.",
  "h1": "Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
- "intro": "A box and pan brake (finger brake) is a sheet metal brake whose upper clamping blade is made of removable fingers: take the fingers out where the sides of a box come up and the leaf folds all four sides of a box or a pan; with every finger in place it works as a straight brake. NovoTech sells three kinds in Canada, all on this page: hand-operated box and pan brakes from a 12″ bench model to 157″, in 22 to 12 ga; heavy box and pan brakes from 52 to 100″ with 2, 3 and 4″ fingers that fold 14 ga boxes 9″ deep; and hydraulic box and pan brakes that clamp and fold 14 ga over 52 and 100″ from a foot pedal. Every model is listed in one table below with its length, capacity and weight, then each family with its full specification, photos and the finger sets supplied. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
+ "intro": "A box and pan brake (finger brake) is a sheet metal brake whose upper clamping blade is made of removable fingers: take the fingers out where the sides of a box come up and the leaf folds all four sides of a box or a pan; with every finger in place it works as a straight brake. NovoTech sells three kinds in Canada, all on this page: hand-operated box and pan brakes from a 12″ bench model to 157″, in 22 to 12 ga; heavy box and pan brakes from 52 to 100″ with 2, 3 and 4″ fingers that fold 14 ga boxes 9″ deep; and hydraulic box and pan brakes that clamp and fold 14 ga over 52 and 100″ from a foot pedal. Each family below has its full specification table, photos and the finger sets supplied. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Hand-operated box and pan brakes 12 – 157″, 22 to 12 ga mild steel, removable fingers in 1 – 6″ widths",
   "Heavy brakes 52 – 100″ with 2, 3 and 4″ finger sets — boxes to 9″ deep in 14 ga; counterweighted leaf",
@@ -39,7 +39,8 @@
   {
    "id": "pb-group",
    "title": "Box and pan brakes",
-   "lead": "Hand-operated brakes from the 12″ bench model to 157″: the standard brake of the HVAC and sheet-metal shop.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-pb"
    ],
@@ -48,7 +49,8 @@
   {
    "id": "pb-heavy-group",
    "title": "Heavy box and pan brakes",
-   "lead": "Heavier beams and deeper fingers: 14 ga boxes up to 9″ deep over 52 – 100″.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-pb-heavy"
    ],
@@ -57,7 +59,8 @@
   {
    "id": "pb-hyd-group",
    "title": "Hydraulic box and pan brakes",
-   "lead": "Powered clamping and folding on a box and pan frame — a 100″ fold in 14 ga from a foot pedal.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-hw-h"
    ]
@@ -183,31 +186,5 @@
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null,
- "nav_label": "Box and pan brakes",
- "range_pick": [
-  [
-   "bending_length",
-   "working_length",
-   "working_width",
-   "capacity_length_mild_steel",
-   "coil_width",
-   "bending_capacity_width"
-  ],
-  [
-   "capacity_mild_steel",
-   "capacity",
-   "shear_brake_roll_capacity_mild_steel",
-   "bending_and_shearing_capacity_mild_steel",
-   "capacity_length_mild_steel"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Length",
-  "Capacity (mild steel)",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 28 machines: bending length, capacity in mild steel and weight. Each row links to the full specification below.",
- "range_caption": "Box and pan brakes supplied by NovoTech — value line",
- "range_title": "Every model at a glance"
+ "nav_label": "Box and pan brakes"
 }

@@ -6,7 +6,7 @@
  "artifact_title": "3D laser cutting machines — five-axis gantry lasers and robot laser cells, 1.5 to 20 kW",
  "meta_description": "Five-axis 3D fiber lasers and robot laser cells that trim and cut formed, stamped, drawn and bent parts — the SF3015TD gantry laser and RC robot cells, 1.5 to 20 kW, sold, installed and supported in Canada.",
  "h1": "3D laser cutting machines — five-axis gantry lasers and robot laser cells, 1.5 to 20 kW",
- "intro": "A 3D laser cuts formed parts — stamped, drawn, hot-stamped or bent — with a five-axis head that follows the surface: it trims edges and cuts holes and slots after forming, where a flat-bed laser cannot reach and a trimming die would cost more than the run. NovoTech sells two families in Canada, both on this page and both from the value line: the five-axis SF3015TD gantry laser with ±135° A and endless C rotation over a 5 × 10 ft envelope, 3 to 20 kW; and the RC robot cells that carry a 1.5 to 6 kW fiber head on a six-axis robot with 72″ reach. Every model is in the table below with its working area, power and speed, then each family with its full specification, photos and brochure. Every machine comes with a CSA-approved panel, chiller and offline programming software, installed, trained and supported from Mississauga, ON, Canada.",
+ "intro": "A 3D laser cuts formed parts — stamped, drawn, hot-stamped or bent — with a five-axis head that follows the surface: it trims edges and cuts holes and slots after forming, where a flat-bed laser cannot reach and a trimming die would cost more than the run. NovoTech sells two families in Canada, both on this page and both from the value line: the five-axis SF3015TD gantry laser with ±135° A and endless C rotation over a 5 × 10 ft envelope, 3 to 20 kW; and the RC robot cells that carry a 1.5 to 6 kW fiber head on a six-axis robot with 72″ reach. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and offline programming software, installed, trained and supported from Mississauga, ON, Canada.",
  "hero_points": [
   "SF3015TD five-axis gantry laser: 5 × 10 ft envelope, ±135° A, endless C, 328 ft/min, 3 – 20 kW",
   "RC robot cells: 1.5 – 6 kW head on a six-axis robot, 72″ reach — trimming, piercing and welding",
@@ -39,7 +39,8 @@
   {
    "id": "ls-value-3d-group",
    "title": "3D laser cutting cells · value line",
-   "lead": "Five-axis gantry and robot cells for formed parts, 1.5 to 20 kW.",
+   "lead": "",
+   "brand": "senfeng",
    "families": [
     "sf-3d"
    ]
@@ -155,25 +156,5 @@
    "label": "Download the Senfeng fiber laser brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "working_area",
-   "area"
-  ],
-  "power",
-  "speed",
-  "accel",
-  "load"
- ],
- "range_cols": [
-  "Working area",
-  "Laser power",
-  "Max. speed",
-  "Acceleration",
-  "Max. sheet load"
- ],
- "range_lead": "Every model on this page in one table — 5 machines. Each row links to the full specification below.",
- "range_caption": "3D laser cutting machines supplied by NovoTech",
- "range_title": "Every model at a glance"
+ ]
 }

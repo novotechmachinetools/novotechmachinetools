@@ -1223,6 +1223,64 @@ def hub_lineup_spec(hub, by_slug):
     return [{"brand": b, "items": groups[b]} for b in sorted(order, key=lambda b: (rank(b), order.index(b)))]
 
 
+def _outside_links(text, phrase):
+    """index of the first occurrence of phrase in text that is outside any tag or existing link and not part of a longer word"""
+    blocked = [(m.start(), m.end()) for m in re.finditer(r"<a\b.*?</a>|<[^>]+>", text, re.S)]
+    start = 0
+    while True:
+        i = text.find(phrase, start)
+        if i < 0:
+            return None
+        j = i + len(phrase)
+        inside = any(a < j and i < b for a, b in blocked)
+        word_before = phrase[0].isalnum() and i > 0 and text[i - 1].isalnum()
+        word_after = phrase[-1].isalnum() and j < len(text) and text[j].isalnum()
+        if not (inside or word_before or word_after):
+            return i
+        start = i + 1
+
+
+def link_hero_points(by_slug):
+    """The product names in the hero bullet points link to their family on the page (#id) or, on a hub, to the page of that
+    kind (the owner, Nov 1 2026) — content/point_links.json: {slug: [[phrase, target], ...]}, target a family id on the page or
+    'page.html' / 'page.html#family'.  The first occurrence of each phrase outside an existing link is wrapped; a phrase or
+    target that is not there stops the build, so a reworded point cannot silently lose its link."""
+    path = os.path.join(ROOT, "content", "point_links.json")
+    if not os.path.exists(path):
+        return
+    spec = json.load(open(path, encoding="utf-8"))
+    for slug, pairs in spec.items():
+        if slug.startswith("_"):
+            continue
+        p = by_slug.get(slug)
+        if not p:
+            raise SystemExit(f"content/point_links.json: no page {slug}")
+
+        def fams_of(pg):
+            return {f for g in pg.get("groups", []) for f in g.get("families", []) if isinstance(f, str)}
+        pts = list(p.get("hero_points") or [])
+        for phrase, target in pairs:
+            if ".html" in target:
+                page_slug, _, anchor = target.partition(".html")
+                if page_slug not in by_slug:
+                    raise SystemExit(f"content/point_links.json: {slug}: no page {page_slug}")
+                if anchor and anchor[1:] not in fams_of(by_slug[page_slug]):
+                    raise SystemExit(f"content/point_links.json: {slug}: {anchor[1:]} is not a family on {page_slug}")
+                href = target
+            else:
+                if target not in fams_of(p):
+                    raise SystemExit(f"content/point_links.json: {slug}: {target} is not a family on the page")
+                href = "#" + target
+            for k, t in enumerate(pts):
+                i = _outside_links(t, phrase)
+                if i is not None:
+                    pts[k] = t[:i] + f'<a href="{href}">{phrase}</a>' + t[i + len(phrase):]
+                    break
+            else:
+                raise SystemExit(f"content/point_links.json: {slug}: phrase not in the hero points: {phrase}")
+        p["hero_points"] = pts
+
+
 def unique_pdfs(fams):
     """the brochures of a set of families, each once, in order"""
     out, seen = [], set()
@@ -1626,6 +1684,7 @@ def main():
     brand_all_pdf_labels(loaded)
     load_catalogue_tons(loaded)
     by_slug_all = {p["slug"]: p for p in loaded}
+    link_hero_points(by_slug_all)
     # cross-selling links at the foot of every product page — the machines its buyers also use (content/related.json, the owner,
     # Oct 31 2026); the section cards below drop the links they already cover
     rel = json.load(open(os.path.join(ROOT, "content", "related.json"), encoding="utf-8"))

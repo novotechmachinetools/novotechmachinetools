@@ -36,9 +36,19 @@ def n1(v):
     return f"{v:.1f}".rstrip("0").rstrip(".")
 
 
+def nom_ft(mm):
+    """a table dimension in nominal feet (the owner, Nov 1 2026: "10 × 5 ft", not "9.8 ft × 4.9 ft · 118 × 59″"): whole feet when
+    within 2 %, otherwise one decimal — 3,000 → 10, 1,500 → 5, 2,000 → 6.6, 2,500 → 8.2, 12,500 → 41"""
+    f = mm / 304.8
+    r = round(f)
+    if r and abs(f - r) / r <= 0.02:
+        return f"{r}"
+    return f"{f:.1f}".rstrip("0").rstrip(".")
+
+
 def area(l, w, inches=True):
-    """working area like the Dener tables — feet, the inches (left out on the very long plate tables), the millimetres"""
-    return f"{feet(l)} × {feet(w)}" + (f" · {l / 25.4:.0f} × {w / 25.4:.0f}″" if inches else "") + f" ({l:,} × {w:,} mm)"
+    """working area like the Dener tables — nominal feet, then the millimetres (inches no longer shown)"""
+    return f"{nom_ft(l)} × {nom_ft(w)} ft ({l:,} × {w:,} mm)"
 
 
 def dims(l, w, h, ft=False):
@@ -156,7 +166,7 @@ ULG_C = [("ULG-13035C", 13000, 3500, 0.05, 70, 0.8, 35700, (16450, 5400, 2200)),
 
 def ulg_rows(rows, clearance):
     return [
-        ("Working area", [area(r[1], r[2], inches=False) for r in rows]),
+        ("Working area", [f"{n1(r[1] / 304.8)} × {n1(r[2] / 304.8)} ft ({r[1]:,} × {r[2]:,} mm)" for r in rows]),   # plate tables: exact feet, as in the ULG name
         ("Laser power", "12 – 60 kW"),
         ("Max. speed", "axes combined", [mmin(r[4]) for r in rows]),
         ("Max. acceleration", "axes combined", [f"{r[5]:g} G" for r in rows]),

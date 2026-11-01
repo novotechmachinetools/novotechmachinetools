@@ -4,9 +4,9 @@
  "family_set": "all-shears",
  "title": "Hydraulic Shears for Sale in Canada — Swing Beam & Guillotine Plate Shears, 12 ga to 1-9/16″ | NovoTech",
  "artifact_title": "Hydraulic shears — swing beam and guillotine plate shears, 12 ga to 1-9/16″",
- "meta_description": "Hydraulic shearing machines sold, installed and supported in Canada: swing beam shears 12 ga – 3/4″ × 4 – 20 ft, variable-rake guillotines 1/4″ – 1-9/16″ × 8 – 26 ft, CNC shears with ESA control — premium line made in Turkey and NovoTech's value line, CSA panels. Every model in one table.",
+ "meta_description": "Hydraulic shearing machines sold, installed and supported in Canada: swing beam shears 12 ga – 3/4″ × 4 – 20 ft, variable-rake guillotines 1/4″ – 1-9/16″ × 8 – 26 ft, CNC shears with ESA control — premium line made in Turkey and NovoTech's value line, CSA panels.",
  "h1": "Hydraulic shears — swing beam and guillotine plate shears, 12 ga to 1-9/16″",
- "intro": "A hydraulic shear cuts sheet and plate to size in one stroke between a fixed lower blade and a moving upper blade driven by two hydraulic cylinders; the back gauge sets the width, hydraulic hold-downs keep the sheet flat and the control counts the strokes. It is the shear for plate — from 12 ga to 1-9/16″ and 26 ft here — where tonnage matters more than strokes per minute. NovoTech sells three kinds in Canada, all on this page: swing beam shears, the rugged everyday plate shear with the beam swung through the cut on two bearings — the premium BS / BSY to 5/8″ over 13.5 ft and the value-line QC12K from 5/32″ to 3/4″ over 20 ft; guillotine shears with a variable rake angle on a beam carried straight down on rollers, so thin sheet is cut flat and 3/4″ plate with less distortion — the premium DAS CNC to 3/4″ × 20 ft with the ESA 630 control and the value-line Q11K to 1-9/16″ × 26 ft; and light hydraulic shears from 12 ga to 1/4″ over 51 – 120″ for the sheet-metal shop. Every model is in the table below with its capacity, length, strokes, motor and weight, then each family with its full specification and photos. Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For sheet to 1/4″ all day with no hydraulics, see the mechanical guillotine shears; for 20 – 14 ga, the sheet metal shears.",
+ "intro": "A hydraulic shear cuts sheet and plate to size in one stroke between a fixed lower blade and a moving upper blade driven by two hydraulic cylinders; the back gauge sets the width, hydraulic hold-downs keep the sheet flat and the control counts the strokes. It is the shear for plate — from 12 ga to 1-9/16″ and 26 ft here — where tonnage matters more than strokes per minute. NovoTech sells three kinds in Canada, all on this page: swing beam shears, the rugged everyday plate shear with the beam swung through the cut on two bearings — the premium BS / BSY to 5/8″ over 13.5 ft and the value-line QC12K from 5/32″ to 3/4″ over 20 ft; guillotine shears with a variable rake angle on a beam carried straight down on rollers, so thin sheet is cut flat and 3/4″ plate with less distortion — the premium DAS CNC to 3/4″ × 20 ft with the ESA 630 control and the value-line Q11K to 1-9/16″ × 26 ft; and light hydraulic shears from 12 ga to 1/4″ over 51 – 120″ for the sheet-metal shop. Each family below has its full specification table and photos. Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from Mississauga, ON, Canada. For sheet to 1/4″ all day with no hydraulics, see the mechanical guillotine shears; for 20 – 14 ga, the sheet metal shears.",
  "hero_points": [
   "Swing beam: premium BS / BSY 1/4″ – 5/8″ × 6.8 – 13.5 ft with NC back gauge; value QC12K 5/32″ – 3/4″ × 8 – 20 ft with Estun E21S",
   "Guillotine: premium DAS CNC 1/4″ – 3/4″ × 10 – 20 ft, variable angle, ESA 630, 1 m ball-screw gauge; value Q11K 1/4″ – 1-9/16″ × 8 – 26 ft",
@@ -39,7 +39,8 @@
   {
    "id": "sh-premium-swing-group",
    "title": "Swing beam shears · premium line",
-   "lead": "BS / BSY: a beam on two bearings swung through the cut by two cylinders, 8 to 22 strokes a minute, NC back gauge, hydraulic hold-downs and single-point blade-gap adjustment — 1/4″ to 5/8″ over 6.8 to 13.5 ft.",
+   "lead": "",
+   "brand": "dener",
    "families": [
     "dn-bs"
    ]
@@ -47,7 +48,8 @@
   {
    "id": "sh-premium-cnc-group",
    "title": "CNC guillotine shears · premium line",
-   "lead": "DAS: a beam on linear rollers with a variable cutting angle set by the ESA 630 CNC from the thickness keyed in — 1/4″ to 3/4″ over 10, 13 and 20 ft, for production.",
+   "lead": "",
+   "brand": "dener",
    "families": [
     "dn-das"
    ]
@@ -55,7 +57,8 @@
   {
    "id": "sh-value-swing-group",
    "title": "Swing beam shears · value line",
-   "lead": "QC12K: NovoTech's own everyday plate shear with Estun E21S control and a motorised back gauge — 5/32″ to 3/4″ over 8 to 20 ft.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "vl-qc12k"
    ]
@@ -63,7 +66,8 @@
   {
    "id": "sh-value-guillotine-group",
    "title": "Guillotine shears · value line",
-   "lead": "Q11K: variable rake angle and blade gap from the control, 1/4″ to 1-9/16″ over 8 to 26 ft — the value-line machine for thick plate.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "vl-q11k"
    ]
@@ -71,7 +75,8 @@
   {
    "id": "sh-light-hydraulic-group",
    "title": "Light hydraulic shears · value line",
-   "lead": "THS and HQ11: hydraulic shears from 12 ga to 1/4″ over 51 to 120″ with quick-set blade clearance and an electric or NC back gauge — for the sheet-metal shop.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-ths",
     "tt-hq11"
@@ -209,31 +214,5 @@
    "label": "Download the sheet metal shears brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "capacity",
-   "capacity_mild_steel"
-  ],
-  [
-   "length",
-   "working_width"
-  ],
-  "strokes",
-  [
-   "motor",
-   "operation"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Capacity (mild steel)",
-  "Shearing length",
-  "Strokes / min",
-  "Motor",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 100 machines: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification below.",
- "range_caption": "Hydraulic shears supplied by NovoTech — premium and value lines",
- "range_title": "Every model at a glance"
+ ]
 }

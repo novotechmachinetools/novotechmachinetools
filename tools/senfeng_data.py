@@ -26,6 +26,16 @@ POWER_NOTE = ("Laser source power is chosen at order (IPG, Raycus or Max sources
               "Speeds and accelerations are no-load values; platform loads are per table.")
 
 
+def nom_ft(mm):
+    """a table dimension in nominal feet (the owner, Nov 1 2026: "10 × 5 ft", not "9.8 ft × 4.9 ft · 118 × 59″"): whole feet when
+    within 2 %, otherwise one decimal — 3,000 → 10, 1,500 → 5, 2,000 → 6.6, 2,500 → 8.2, 12,500 → 41"""
+    f = mm / 304.8
+    r = round(f)
+    if r and abs(f - r) / r <= 0.02:
+        return f"{r}"
+    return f"{f:.1f}".rstrip("0").rstrip(".")
+
+
 def area_in(l_in, w_in, model=None):
     """working area given in inches on the USA site → inches (or feet from 20 ft) with the metric size; the metric comes from the
     model number when it carries one (SF3015 → 3,000 × 1,500 mm), otherwise from the inches"""
@@ -35,8 +45,7 @@ def area_in(l_in, w_in, model=None):
         L, W = max(a, b), min(a, b)  # SF1530 and SF3015 both mean 3,000 × 1,500 mm
     else:
         L, W = round(l_in * 25.4 / 10) * 10, round(w_in * 25.4 / 10) * 10
-    imp = f"{n1(l_in / 12)} × {n1(w_in / 12)} ft" if l_in >= 240 else f"{l_in:.0f} × {w_in:.0f}″"
-    return f"{imp} ({L:,} × {W:,} mm)"
+    return f"{nom_ft(L)} × {nom_ft(W)} ft ({L:,} × {W:,} mm)"          # nominal feet like the Dener tables (the owner, Nov 1 2026)
 
 
 def n1(v):

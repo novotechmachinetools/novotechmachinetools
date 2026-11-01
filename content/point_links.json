@@ -1,0 +1,1625 @@
+{
+ "_comment": "Hero bullet points link their product names to the family on the page (#id) or, on a hub, to the page of that kind. Each pair is [exact phrase, target]; build.py wraps the first occurrence outside an existing link and stops if a phrase or target is missing (the owner, Nov 1 2026).",
+ "3d-laser-cutting-machine": [
+  [
+   "SF3015TD five-axis gantry laser",
+   "sf-3d"
+  ],
+  [
+   "RC robot cells",
+   "sf-3d"
+  ]
+ ],
+ "affordable-semi-automatic-band-saws": [
+  [
+   "BS-315GF: full-hydraulic 10″ double-miter saw",
+   "novotech-bs-315gf"
+  ]
+ ],
+ "aluminum-and-pvc-upcut-saws": [
+  [
+   "Upcut saws Ø17-11/16″ – Ø25-9/16″ (450 – 650 mm)",
+   "plastmak-401"
+  ],
+  [
+   "automatic from the SÇ 402",
+   "plastmak-402-403"
+  ],
+  [
+   "Double-head saws",
+   "plastmak-double"
+  ],
+  [
+   "Glazing bead",
+   "plastmak-bead"
+  ],
+  [
+   "shutter box",
+   "plastmak-450"
+  ],
+  [
+   "miter saws",
+   "plastmak-miter"
+  ]
+ ],
+ "american-style-press-brake-tooling": [
+  [
+   "Punches 88°, 85°, 30° and 28°",
+   "es-am-punch"
+  ],
+  [
+   "1V dies V .375 – .875″ (9.53 – 22.23 mm)",
+   "es-am-die"
+  ],
+  [
+   "Z1 intermediate",
+   "es-am-inter"
+  ]
+ ],
+ "angle-rolls": [
+  [
+   "PK 30 / PK 35 motorized",
+   "sahinler-pk"
+  ],
+  [
+   "HPK 40 – 120 hydraulic angle rolls",
+   "sahinler-hpk-40"
+  ],
+  [
+   "HPK 160 – 360 DP heavy-duty beam benders",
+   "sahinler-hpk-dp"
+  ],
+  [
+   "RBM / HRBM motorized profile benders",
+   "tt-rbm"
+  ],
+  [
+   "ETR-50 tube roller",
+   "tt-tr"
+  ],
+  [
+   "CRB-76 decorative roller",
+   "tt-tr"
+  ]
+ ],
+ "automatic-band-saws": [
+  [
+   "Roller feed",
+   "bekamak-bmso-roller"
+  ],
+  [
+   "encoder feed",
+   "bekamak-bmso-e"
+  ],
+  [
+   "servo shuttle-vise feed",
+   "bekamak-bmso-s"
+  ],
+  [
+   "double-miter models",
+   "bekamak-bmso-dgs"
+  ]
+ ],
+ "automatic-feed-band-saws": [
+  [
+   "Roller feed",
+   "novotech-bs300x370"
+  ],
+  [
+   "NC feeder",
+   "novotech-bs-650g"
+  ],
+  [
+   "hydraulic shuttle vise",
+   "novotech-bs-5040"
+  ]
+ ],
+ "automatic-rebar-processing-lines": [
+  [
+   "Stirrups from 1/4″–1/2″ coil",
+   "automatic-stirrup-bender"
+  ],
+  [
+   "Shear lines cutting up to 35 bars at once",
+   "automatic-bar-shearing-line-MATRIX-45"
+  ],
+  [
+   "Servo double bender",
+   "Automatic-rebar-double-bender-ROBOBENDER-45S"
+  ]
+ ],
+ "band-saw-blades": [
+  [
+   "MARATHON® M42 bimetal blade",
+   "wk-marathon-m42"
+  ],
+  [
+   "FUTURA® carbide-tipped blade",
+   "wk-futura"
+  ]
+ ],
+ "bead-rollers": [
+  [
+   "Hydraulic HIBKS and motorized IBKS",
+   "isitan-hibks"
+  ],
+  [
+   "Motorized IKM / IKMP",
+   "isitan-ikm"
+  ],
+  [
+   "LS-13P lock seamer",
+   "isitan-ls-13p"
+  ],
+  [
+   "ETB beading machines 18 – 8 ga",
+   "tt-etb"
+  ],
+  [
+   "RM24 / 36 / 42 motorized deep-throat bead rollers",
+   "tt-rm-deep"
+  ]
+ ],
+ "belt-grinder": [
+  [
+   "Pedestal belt grinders 3 × 79″ and 6 × 79″",
+   "tt-s75"
+  ],
+  [
+   "dust collector built in on the HB models",
+   "tt-s75h"
+  ],
+  [
+   "Wide-belt grinders 4″ and 8″",
+   "tt-s100"
+  ],
+  [
+   "mobile floor grinder",
+   "tt-s75f"
+  ],
+  [
+   "knife grinders",
+   "tt-bgm50"
+  ],
+  [
+   "combination belt / disc / wheel machines",
+   "tt-sp"
+  ],
+  [
+   "Disc sanders 12″ and 20″",
+   "tt-ds20"
+  ],
+  [
+   "bench grinders 8 – 10″",
+   "tt-bg"
+  ],
+  [
+   "chamfering machines to 1/4″",
+   "tt-cmd"
+  ],
+  [
+   "metal dust collectors 494 – 650 CFM",
+   "tt-dc"
+  ]
+ ],
+ "box-and-pan-brake": [
+  [
+   "Hand-operated box and pan brakes 12 – 157″",
+   "tt-pb"
+  ],
+  [
+   "Heavy brakes 52 – 100″",
+   "tt-pb-heavy"
+  ],
+  [
+   "Hydraulic box and pan brakes 52″ and 100″",
+   "tt-hw-h"
+  ]
+ ],
+ "bystronic-lvd-press-brake-tooling": [
+  [
+   "Bystronic type R and RF-A punches 6.10 – 9.84″ (155 – 250 mm)",
+   "es-by-punch"
+  ],
+  [
+   "dies V .24 – 2.36″",
+   "es-by-die"
+  ],
+  [
+   "LVD-style punches 7.72″ (196 mm)",
+   "es-lvd-punch"
+  ],
+  [
+   "dies V .24 – 4.72″",
+   "es-lvd-die"
+  ]
+ ],
+ "circle-cutters-and-seamers": [
+  [
+   "IDK-5",
+   "isitan-idk"
+  ],
+  [
+   "SDK 6 / SDK 8",
+   "sahinler-sdk"
+  ],
+  [
+   "EFM 6 for elliptical heads",
+   "sahinler-efm"
+  ],
+  [
+   "MCS-1250E motorized circle shear",
+   "tt-mcs"
+  ],
+  [
+   "ECS10/10 circle shear with flanging",
+   "tt-hcs"
+  ]
+ ],
+ "circular-cold-saws": [
+  [
+   "Manual and semi-automatic circular cold saws",
+   "isitan-sfc-350-vx"
+  ],
+  [
+   "Automatic carbide cold saws",
+   "bekamak-bmdo-xs"
+  ],
+  [
+   "OPUS 300",
+   "bekamak-opus-300"
+  ],
+  [
+   "CSM CT325",
+   "csm-ct325"
+  ],
+  [
+   "Bekamak BMDO CS",
+   "bekamak-bmdo-cs"
+  ],
+  [
+   "CS cold saws 9 – 14″",
+   "tt-cs"
+  ],
+  [
+   "PDS-315H semi-automatic hydraulic",
+   "tt-pds315h"
+  ],
+  [
+   "PDS-400 heavy-duty 16″",
+   "tt-pds400"
+  ],
+  [
+   "TV abrasive saws 12 – 16″",
+   "tt-tv"
+  ]
+ ],
+ "cnc-lathe": [
+  [
+   "TTC-6 / TTC-8",
+   "dn-ttc"
+  ],
+  [
+   "TTH-8 / 10 / 12",
+   "dn-tth"
+  ]
+ ],
+ "cnc-plasma-table": [
+  [
+   "PC 4×4 and 5×10 CNC plasma tables",
+   "tt-plasma-servo"
+  ],
+  [
+   "PC 2×2 and 2×4 compact plasma tables",
+   "tt-plasma-compact"
+  ],
+  [
+   "PCP CNC plasma pipe cutters",
+   "tt-pcp"
+  ]
+ ],
+ "coil-fed-laser-cutting-line": [
+  [
+   "SF1503CH",
+   "sf-coil"
+  ],
+  [
+   "SF2012CH",
+   "sf-coil"
+  ],
+  [
+   "TOP line",
+   "sf-coil"
+  ]
+ ],
+ "corner-grinding-machines": [
+  [
+   "131",
+   "gecam-131"
+  ],
+  [
+   "136",
+   "gecam-136"
+  ],
+  [
+   "135",
+   "gecam-135"
+  ],
+  [
+   "Special PLC grinders",
+   "gecam-corner-special"
+  ]
+ ],
+ "corner-notcher": [
+  [
+   "HNM 4F and HNM 6F",
+   "sahinler-hnm-fixed"
+  ],
+  [
+   "HNM 6V",
+   "sahinler-hnm-variable"
+  ],
+  [
+   "HNM-6 / HNM-6A hydraulic 1/4″",
+   "tt-hnm"
+  ],
+  [
+   "PNM-130 / PNM-150 pneumatic",
+   "tt-pnm"
+  ]
+ ],
+ "corner-welding-machines": [
+  [
+   "CWS 200",
+   "gecam-cws"
+  ],
+  [
+   "CWS 300",
+   "gecam-cws"
+  ]
+ ],
+ "csm-tube-benders": [
+  [
+   "All-electric EMB / EMR",
+   "csm-emr"
+  ],
+  [
+   "Electric hybrid MBE / MRE",
+   "csm-mbe"
+  ],
+  [
+   "TBRE / TMRE, TSRE / TDRE",
+   "csm-tbre"
+  ],
+  [
+   "Hydraulic CNC TSR / TDR",
+   "csm-tsr"
+  ],
+  [
+   "NC TSRJ / TDRJ, TNCPB",
+   "csm-tsrj"
+  ],
+  [
+   "TNCB",
+   "csm-tncb"
+  ],
+  [
+   "F38 / F50 two-head symmetric benders",
+   "csm-f38"
+  ]
+ ],
+ "double-column-band-saws": [
+  [
+   "Semi-automatic",
+   "bekamak-bmsy-c"
+  ],
+  [
+   "roller-feed",
+   "bekamak-bmso-c"
+  ],
+  [
+   "servo-feed NC models",
+   "bekamak-bmso-cs"
+  ],
+  [
+   "GANTRY 2200XS",
+   "bekamak-gantry-2200xs"
+  ]
+ ],
+ "drill-press": [
+  [
+   "Gear-head drill presses T-25 – T-50",
+   "tt-t25"
+  ],
+  [
+   "TX530 inverter drill presses",
+   "tt-t50"
+  ],
+  [
+   "TB column drills",
+   "tt-tb"
+  ],
+  [
+   "WTZ variable-speed bench and floor drill presses",
+   "tt-wtz"
+  ]
+ ],
+ "european-press-brake-dies": [
+  [
+   "1V dies V18 – V220 mm (.71 – 8.66″)",
+   "es-eu-1v"
+  ],
+  [
+   "2V, 4V and 3U dies with holders",
+   "es-eu-multiv"
+  ],
+  [
+   "Self-centring 1V dies",
+   "es-eu-insert"
+  ],
+  [
+   "T dies 80 and 120 mm high",
+   "es-eu-tdie"
+  ],
+  [
+   "hemming dies",
+   "es-eu-hem"
+  ],
+  [
+   "ESH insert dies",
+   "es-esh-die"
+  ]
+ ],
+ "european-press-brake-punches": [
+  [
+   "Straight 45° – 88°",
+   "es-eu-straight"
+  ],
+  [
+   "acute 24° – 35°",
+   "es-eu-acute"
+  ],
+  [
+   "gooseneck and sash punches",
+   "es-eu-goose"
+  ],
+  [
+   "ESH same-height series",
+   "es-esh-punch"
+  ],
+  [
+   "Radius holders with round elements R3 – R50",
+   "es-eu-radius"
+  ],
+  [
+   "offset tools Z 1 – 15 mm",
+   "es-eu-joggle"
+  ]
+ ],
+ "fiber-laser-cutting-machine": [
+  [
+   "GFL 1.5 G with pallet changer",
+   "dn-gfl"
+  ],
+  [
+   "Smart with shuttle table",
+   "dn-smart-closed"
+  ],
+  [
+   "ULE with 15 s shuttle table",
+   "vn-ule"
+  ],
+  [
+   "Senfeng H series with pallet changer",
+   "sf-h"
+  ],
+  [
+   "Senfeng NP single tables with a gantry cover",
+   "sf-np"
+  ],
+  [
+   "compact 4 × 4 and 5 × 10 ft lasers",
+   "sf-compact"
+  ]
+ ],
+ "heavy-duty-tube-laser": [
+  [
+   "Premium FTL",
+   "dn-ftl"
+  ],
+  [
+   "Value NT / ST / HT",
+   "sf-heavy"
+  ],
+  [
+   "SF1500CH H-beam profile line",
+   "sf-heavy"
+  ]
+ ],
+ "horizontal-press-brake": [
+  [
+   "HP 10 – HP 100",
+   "tubend-hp"
+  ],
+  [
+   "HP 120 · HP 150",
+   "tubend-hp-heavy"
+  ],
+  [
+   "HB-10T / 25T / 40T hydraulic horizontal benders",
+   "tt-hb-horizontal"
+  ]
+ ],
+ "hydraulic-3-roll-plate-rollers": [
+  [
+   "ISITAN MRM-H",
+   "isitan-mrm-h"
+  ],
+  [
+   "3R HS double-pinch",
+   "sahinler-3r-hs"
+  ],
+  [
+   "3R UHS heavy-duty",
+   "sahinler-3r-uhs"
+  ]
+ ],
+ "hydraulic-4-roll-plate-rollers": [
+  [
+   "ISITAN 4R HMS",
+   "isitan-4r-hms"
+  ],
+  [
+   "4R HSS",
+   "sahinler-4r-hss"
+  ],
+  [
+   "4R HS-L",
+   "sahinler-4r-hsl"
+  ],
+  [
+   "4R HS",
+   "sahinler-4r-hs"
+  ]
+ ],
+ "hydraulic-folding-machine": [
+  [
+   "HW hydraulic folders",
+   "tt-hw"
+  ],
+  [
+   "EFM / EFMS electric folders",
+   "tt-efm"
+  ],
+  [
+   "TFM / TFMS CNC folders",
+   "tt-tfm"
+  ]
+ ],
+ "hydraulic-press": [
+  [
+   "DPM",
+   "sahinler-dpm"
+  ],
+  [
+   "mobile-cylinder DPM-K / DK",
+   "sahinler-dpm-k"
+  ],
+  [
+   "T-slot AT",
+   "sahinler-at"
+  ],
+  [
+   "AP press brake",
+   "sahinler-ap"
+  ],
+  [
+   "DK-S straightening",
+   "sahinler-dk-s"
+  ],
+  [
+   "H-frame",
+   "nt-press-hsa"
+  ],
+  [
+   "column",
+   "nt-press-hcfp"
+  ],
+  [
+   "C-frame",
+   "nt-press-cfs"
+  ],
+  [
+   "deep drawing with die cushion",
+   "nt-press-hdd"
+  ],
+  [
+   "hot plate SMC presses",
+   "nt-press-hhrp"
+  ],
+  [
+   "workshop presses 28 – 176 US tons",
+   "tt-shop-hs"
+  ],
+  [
+   "H-frame presses 33 – 551 US tons",
+   "tt-hp-h"
+  ],
+  [
+   "brake",
+   "tt-hpb"
+  ],
+  [
+   "sliding-table",
+   "tt-hp-m1"
+  ],
+  [
+   "C-frame",
+   "tt-hp-c"
+  ],
+  [
+   "four-column presses",
+   "tt-hp-f"
+  ],
+  [
+   "orbital riveters",
+   "tt-riveter"
+  ]
+ ],
+ "hydraulic-punching-machines": [
+  [
+   "HPM 30 – 175 single-station punches",
+   "sahinler-hpm"
+  ],
+  [
+   "HPM DP double-head",
+   "sahinler-hpm-dp"
+  ],
+  [
+   "HPM CNC",
+   "sahinler-hpm-cnc"
+  ],
+  [
+   "HPM / HKM NC feeding lines",
+   "sahinler-hpm-nc-line"
+  ]
+ ],
+ "hydraulic-shearing-machine": [
+  [
+   "premium BS / BSY",
+   "dn-bs"
+  ],
+  [
+   "value QC12K",
+   "vl-qc12k"
+  ],
+  [
+   "premium DAS CNC",
+   "dn-das"
+  ],
+  [
+   "value Q11K",
+   "vl-q11k"
+  ],
+  [
+   "Light hydraulic shears 12 ga – 1/4″ × 51 – 120″",
+   "tt-ths"
+  ]
+ ],
+ "ironworker-machines": [
+  [
+   "Single-piston HKM 40 · 45 · 60 · 65 V",
+   "sahinler-hkm-single"
+  ],
+  [
+   "Double-piston HKM 55 · 65 · 85 · 115 · 175",
+   "sahinler-hkm-double"
+  ],
+  [
+   "M50 – M60 compact ironworkers",
+   "tt-m55"
+  ]
+ ],
+ "large-format-plate-laser": [
+  [
+   "Smart semi-closed single tables",
+   "dn-smart-semi"
+  ],
+  [
+   "ULG ground-rail lasers",
+   "vn-ulg"
+  ],
+  [
+   "R / TX gantry plate lasers",
+   "sf-r"
+  ]
+ ],
+ "laser-welding-machine": [
+  [
+   "S series 0.8 – 1.5 kW air-cooled",
+   "sf-handheld"
+  ],
+  [
+   "HWM 1.5 – 3 kW",
+   "sf-handheld"
+  ],
+  [
+   "RW laser cells 1.5 – 20 kW",
+   "sf-robot-weld"
+  ],
+  [
+   "RMW teaching-free and CMW cobot MIG welders",
+   "sf-robot-weld"
+  ],
+  [
+   "6 / 12 kW robot cells",
+   "sf-cladding"
+  ]
+ ],
+ "lock-former": [
+  [
+   "PF20G and PF16G Pittsburgh lock formers",
+   "tt-lock"
+  ],
+  [
+   "AX20G roll former",
+   "tt-lock"
+  ],
+  [
+   "SL-10 electric seam closer",
+   "tt-hvac"
+  ],
+  [
+   "RM18E power beading machine",
+   "tt-duct"
+  ],
+  [
+   "LQ15 slitting and bending machine",
+   "tt-duct"
+  ]
+ ],
+ "magnetic-sheet-metal-brake": [
+  [
+   "Six models, 2 – 10 ft",
+   "tt-eb"
+  ]
+ ],
+ "manual-band-saws": [
+  [
+   "Double-miter head",
+   "bekamak-bms-dg"
+  ],
+  [
+   "BMH 170 hacksaw",
+   "bekamak-bmh-170"
+  ]
+ ],
+ "mechanical-guillotine-shear": [
+  [
+   "SRGM-H light type",
+   "nt-shear-srgm-h"
+  ],
+  [
+   "SRGM standard",
+   "nt-shear-srgm"
+  ],
+  [
+   "SRGM-HFR / SRGM-FR with return-to-sender",
+   "nt-shear-srgm-hfr"
+  ],
+  [
+   "SRGM-HCL / CL",
+   "nt-shear-srgm-hcl"
+  ],
+  [
+   "Value-line Q11 flywheel mechanical shears",
+   "tt-q11-mech"
+  ]
+ ],
+ "milling-machine": [
+  [
+   "Turret mills X6325W – X6336WA",
+   "tt-mill-turret"
+  ],
+  [
+   "Universal mills XQ6226, X6436",
+   "tt-mill-univ"
+  ],
+  [
+   "heavy ISO50 LM-1450 / X5750",
+   "tt-mill-heavy"
+  ],
+  [
+   "ZX drilling-milling machines",
+   "tt-zx"
+  ],
+  [
+   "TX-20 and DM-20",
+   "tt-mill-small"
+  ],
+  [
+   "B5012 keyseater and B5013 slotter",
+   "tt-slot"
+  ],
+  [
+   "KSM-850 head resurfacer",
+   "tt-ksm850"
+  ]
+ ],
+ "motorized-plate-rollers": [
+  [
+   "MRM-S",
+   "isitan-mrm-s"
+  ],
+  [
+   "IRM",
+   "isitan-irm"
+  ],
+  [
+   "RM",
+   "isitan-rm"
+  ],
+  [
+   "HER hydraulic slip rolls",
+   "tt-her"
+  ],
+  [
+   "ESR electric slip rolls",
+   "tt-esr"
+  ]
+ ],
+ "novotech-cnc-machine-tools": [
+  [
+   "VMC8046 and VMC10562 vertical machining centres",
+   "tt-vmc"
+  ],
+  [
+   "TXK68 – TXK160D CNC boring and milling machines",
+   "tt-boring"
+  ],
+  [
+   "TH-800 horizontal machining centre",
+   "tt-boring"
+  ],
+  [
+   "CTK6416 slant-bed CNC lathe",
+   "tt-cnc-lathe"
+  ],
+  [
+   "CNC100 / CNC120 slot machining centres",
+   "tt-cnc-slot"
+  ]
+ ],
+ "panel-bender": [
+  [
+   "Blanks to 78.7 × 49.2″",
+   "dn-panel"
+  ],
+  [
+   "Senfeng BDC",
+   "sf-bdc"
+  ],
+  [
+   "PB-M 63 – 165″ in nine sizes",
+   "vl-pbm"
+  ],
+  [
+   "PB-A with 0.5 s automatic tool change to 126″",
+   "vl-pba"
+  ]
+ ],
+ "pipe-notcher": [
+  [
+   "PN 17/90",
+   "isitan-pn"
+  ],
+  [
+   "PN 20/76",
+   "isitan-pn"
+  ],
+  [
+   "PTN-30 hole-saw notcher",
+   "tt-ptn"
+  ],
+  [
+   "UTN40 end-mill notchers",
+   "tt-ptn"
+  ],
+  [
+   "PRS belt tube-end grinders",
+   "tt-prs"
+  ]
+ ],
+ "pipe-sanding-polishing-machines": [
+  [
+   "BT 114-S",
+   "sahinler-bt-114-s"
+  ],
+  [
+   "141 · 144 orbital sanders",
+   "eurofintec-141-144"
+  ],
+  [
+   "128 centreless",
+   "eurofintec-128"
+  ],
+  [
+   "228 to Ø15-3/4″",
+   "eurofintec-228"
+  ],
+  [
+   "728 tube brushing",
+   "eurofintec-728-143"
+  ],
+  [
+   "143 tube-end deburring",
+   "eurofintec-728-143"
+  ]
+ ],
+ "plate-beveler": [
+  [
+   "Shearing bevellers CHP 7 – CHP 21G",
+   "cevisa-std"
+  ],
+  [
+   "Adjustable angle (20° – 45°)",
+   "cevisa-adj"
+  ],
+  [
+   "reversible (REV)",
+   "cevisa-rev"
+  ],
+  [
+   "Milling bevellers CHP 30G – CHP 100G",
+   "cevisa-mill"
+  ]
+ ],
+ "power-hammer": [
+  [
+   "Pneumatic planishing hammers PPH-12 / PPH-24 / PPH500 / PPH-610",
+   "tt-ph"
+  ],
+  [
+   "PH-20D and PH-30D electric power hammers",
+   "tt-ph"
+  ],
+  [
+   "C41 self-contained air forging hammers",
+   "tt-hammer"
+  ],
+  [
+   "PIC50 diamond roller former",
+   "tt-pic50"
+  ]
+ ],
+ "press-brake-tool-holders-adapters": [
+  [
+   "Intermediates Z1 / Z2 and upper adapters",
+   "es-acc-upper"
+  ],
+  [
+   "EUROGRIP manual and pneumatic clamping",
+   "es-acc-clamps"
+  ],
+  [
+   "lower adapters and die holders",
+   "es-acc-lower"
+  ],
+  [
+   "Adjustable dies V .94 – 15.75″",
+   "es-acc-adjustable"
+  ],
+  [
+   "urethane tooling, film",
+   "es-acc-urethane"
+  ],
+  [
+   "gauges and cabinets",
+   "es-acc-shop"
+  ]
+ ],
+ "profile-machining-centres-copy-routers": [
+  [
+   "SÇ 4550",
+   "plastmak-4550"
+  ],
+  [
+   "SÇ 5000 · 5000S",
+   "plastmak-5000"
+  ],
+  [
+   "Copy routers SÇ 501 · 502S · 512 · 521S · 542",
+   "plastmak-copy"
+  ],
+  [
+   "end mills SÇ 211 · 211S",
+   "plastmak-211"
+  ]
+ ],
+ "pvc-window-welding-machines": [
+  [
+   "SÇ 101 single-head",
+   "plastmak-100-101"
+  ],
+  [
+   "SÇ 100 double-head",
+   "plastmak-100-101"
+  ],
+  [
+   "SÇ 100 Gold Plus",
+   "plastmak-gold-plus"
+  ],
+  [
+   "SÇ 601 three-knife corner cleaner",
+   "plastmak-601"
+  ],
+  [
+   "SÇ 6000 and 6000S CNC cleaners",
+   "plastmak-6000"
+  ]
+ ],
+ "rebar-bender": [
+  [
+   "Stationary benders from Ø1″ (26 mm) to Ø2-3/8″ (60 mm)",
+   "Rebar-bending-machine-B-BS-MG-series"
+  ],
+  [
+   "Portable 110/220 V single-phase benders",
+   "Protable-rebar-bender-MG-BT-A-series"
+  ],
+  [
+   "Stirrup",
+   "stirrup-benders"
+  ],
+  [
+   "spiral",
+   "spiral-benders"
+  ],
+  [
+   "dowel bar bending",
+   "dowel-bar-benders"
+  ]
+ ],
+ "rebar-cutter": [
+  [
+   "Hydraulic",
+   "Hydraulic-rebar-cutter"
+  ],
+  [
+   "mechanical",
+   "mechanical-rebar-cutters"
+  ],
+  [
+   "double-acting hydraulic cutters",
+   "heavy-duty-rebar-cutters"
+  ],
+  [
+   "POWER 24",
+   "Hydraulic-rebar-cutter"
+  ]
+ ],
+ "roofing-siding-brake": [
+  [
+   "ALB brakes 7.2 – 12.5 ft",
+   "tt-alb"
+  ],
+  [
+   "CD-24 trim coil dispenser",
+   "tt-cd24"
+  ]
+ ],
+ "rotary-draw-tube-benders": [
+  [
+   "Touchscreen NC (PLC)",
+   "isitan-bk"
+  ],
+  [
+   "one-touch control",
+   "isitan-bk"
+  ],
+  [
+   "500-program NC (SPB)",
+   "sahinler-spb"
+  ],
+  [
+   "electric",
+   "tubend-tb34"
+  ],
+  [
+   "17-ton hydraulic TB benders",
+   "tubend-tb42"
+  ]
+ ],
+ "semi-automatic-band-saws": [
+  [
+   "DGH models",
+   "bekamak-bmsy-dgh"
+  ]
+ ],
+ "shear-brake-roll-3-in-1": [
+  [
+   "Hand-operated 3-in-1 machines 8 – 52″",
+   "tt-3in1"
+  ],
+  [
+   "Motorized E3-IN-1, 52″ and 80″",
+   "tt-e3in1"
+  ]
+ ],
+ "sheet-and-tube-laser": [
+  [
+   "ULET",
+   "vn-ulet"
+  ],
+  [
+   "HM series",
+   "sf-hm"
+  ]
+ ],
+ "sheet-metal-hand-brake": [
+  [
+   "Straight hand brakes 12″ – 13 ft",
+   "tt-hb"
+  ],
+  [
+   "Foot-clamp folding machines 40 – 119″",
+   "tt-folder"
+  ],
+  [
+   "Bench brakes 14 – 124″",
+   "tt-bench-brake"
+  ]
+ ],
+ "sheet-metal-plate-deburring-edge-rounding-finishing-grinding": [
+  [
+   "Wide-belt deburring and satin finishing",
+   "gecam-g65-g135"
+  ],
+  [
+   "dry or wet",
+   "gecam-wet"
+  ],
+  [
+   "Edge rounding to 5/64″ (2 mm)",
+   "gecam-g135rb8"
+  ],
+  [
+   "GT06 and GT13",
+   "gecam-gt"
+  ],
+  [
+   "G65DCC deslagging",
+   "gecam-g65dcc"
+  ],
+  [
+   "CUB conveyor brush machines",
+   "gecam-cub"
+  ],
+  [
+   "EASY T vacuum-table workstation",
+   "gecam-easy-t"
+  ],
+  [
+   "GCB crossed-belt benches",
+   "gecam-gcb"
+  ]
+ ],
+ "sheet-metal-shears": [
+  [
+   "PS pneumatic shear 16 ga × 52″",
+   "tt-ps"
+  ],
+  [
+   "HQ01 light hydraulic shears",
+   "tt-hq01"
+  ],
+  [
+   "EBQ01 bench shears",
+   "tt-bq01"
+  ],
+  [
+   "Q11 electric shears",
+   "tt-q11"
+  ],
+  [
+   "PLC / motorised back gauge",
+   "tt-q11nc"
+  ],
+  [
+   "PS-1220×1.5GT coil slitting and cut-to-length machine",
+   "tt-ps1220"
+  ]
+ ],
+ "surface-grinder": [
+  [
+   "17.7 × 35.4″ table",
+   "dn-tgh"
+  ]
+ ],
+ "trumpf-wila-press-brake-tooling": [
+  [
+   "Trumpf-style punches 5.51 – 11.81″ (140 – 300 mm)",
+   "es-tr-punch"
+  ],
+  [
+   "dies V .24 – 4.72″",
+   "es-tr-die"
+  ],
+  [
+   "Wila-style punches 5.31 – 9.33″ (135 – 237 mm)",
+   "es-wi-punch"
+  ],
+  [
+   "dies 55 and 100 mm (2.17 / 3.94″) high",
+   "es-wi-die"
+  ]
+ ],
+ "tube-bender": [
+  [
+   "JTB-40 / 50 / 80 hydraulic PLC tube benders",
+   "tt-jtb"
+  ],
+  [
+   "TBM-60 electric top bender",
+   "tt-tbm60"
+  ],
+  [
+   "HTB-25T 25-ton tubing bender",
+   "tt-tbm60"
+  ],
+  [
+   "TB-3 and HTB-1000",
+   "tt-tb3"
+  ],
+  [
+   "HTB-2000 exhaust bender and HTES-3000 expander-swager",
+   "tt-exhaust"
+  ],
+  [
+   "EHB-10 electric hydraulic pipe bender",
+   "tt-hb-pipe"
+  ]
+ ],
+ "tube-end-forming-machines": [
+  [
+   "ISITAN SFF hydraulic end formers",
+   "isitan-sff"
+  ],
+  [
+   "CSM EF six-station formers",
+   "csm-ef"
+  ],
+  [
+   "REF grooving and ER 30-5 end-finishing machines",
+   "csm-ef"
+  ],
+  [
+   "Wecotech compact expanders",
+   "wt-tubex"
+  ],
+  [
+   "reducers",
+   "wt-tubin"
+  ],
+  [
+   "Wecotech CNC inner / outer formers",
+   "wt-wecomatic-200"
+  ],
+  [
+   "Tubimatic machines for standard C and IO tools",
+   "wt-tubimatic-c"
+  ],
+  [
+   "beading, flanging",
+   "wt-tubiroll"
+  ],
+  [
+   "shearing",
+   "wt-tubeshear"
+  ],
+  [
+   "deburring",
+   "wt-rotobrush"
+  ]
+ ],
+ "tube-laser-cutter": [
+  [
+   "Premium E-FTL",
+   "dn-eftl"
+  ],
+  [
+   "Value ULT",
+   "vn-ult"
+  ],
+  [
+   "T series from Ø0.5″ and 1.5 kW",
+   "sf-t"
+  ],
+  [
+   "PLUS high-speed and GPLUS / GT ±45° bevel lasers",
+   "sf-plus"
+  ]
+ ],
+ "twin-column-band-saws": [
+  [
+   "Semi-automatic",
+   "novotech-tbk-4228"
+  ],
+  [
+   "fully automatic",
+   "novotech-tbk-4228b"
+  ]
+ ],
+ "v-grooving-machine": [
+  [
+   "Horizontal",
+   "vl-vg-h"
+  ],
+  [
+   "Vertical",
+   "vl-vg-v"
+  ]
+ ],
+ "vertical-band-saws": [
+  [
+   "BMSY 460VG tilting-frame miter saw",
+   "bekamak-bmsy-460vg"
+  ],
+  [
+   "BMSY 613VT",
+   "bekamak-bmsy-613vt"
+  ],
+  [
+   "VB 0814-8 block saws",
+   "bekamak-vb-0814-8"
+  ],
+  [
+   "CROSS 0626VT plate saw",
+   "bekamak-cross-0626vt"
+  ]
+ ],
+ "vertical-machining-center": [
+  [
+   "TMC 850 – 1600",
+   "dn-tmc"
+  ],
+  [
+   "TDC 2112 – 4120",
+   "dn-tdc"
+  ]
+ ],
+ "vertical-metal-band-saw": [
+  [
+   "Throat 12-1/4″ × 7-1/4″ to 23″ × 13-1/4″",
+   "novotech-vs"
+  ]
+ ],
+ "welding-positioners": [
+  [
+   "WP 100",
+   "tubend-wp"
+  ],
+  [
+   "WP 300",
+   "tubend-wp"
+  ],
+  [
+   "positioners 33 – 8,818 lb",
+   "tt-wp-bench"
+  ],
+  [
+   "TRS turning rolls",
+   "tt-trs"
+  ],
+  [
+   "Pipe stands and supports to 19,800 lb",
+   "tt-wtr"
+  ],
+  [
+   "WT-36X24 fixture table",
+   "tt-wt3624"
+  ],
+  [
+   "MDT downdraft tables",
+   "tt-mdt"
+  ]
+ ],
+ "window-assembly-machines": [
+  [
+   "SÇ 902 hydraulic corner crimper",
+   "plastmak-902"
+  ],
+  [
+   "Single and double-head screwing machines",
+   "plastmak-screw"
+  ],
+  [
+   "sash assembly machine",
+   "plastmak-screw"
+  ],
+  [
+   "SÇ 221 · SÇ 551 portable machines",
+   "plastmak-portable"
+  ],
+  [
+   "SÇ 1000 measuring conveyor",
+   "plastmak-conveyor"
+  ]
+ ],
+ "window-production-lines": [
+  [
+   "PVC single-head group",
+   "plastmak-line-pvc1"
+  ],
+  [
+   "PVC double-head",
+   "plastmak-line-pvc2"
+  ],
+  [
+   "aluminum double-head groups",
+   "plastmak-line-alu"
+  ],
+  [
+   "Complete PVC workshop with compressor",
+   "plastmak-line-shop"
+  ]
+ ],
+ "wire-bending-machines": [
+  [
+   "WB 10-A",
+   "csm-wb"
+  ],
+  [
+   "WB 14-A",
+   "csm-wb"
+  ]
+ ],
+ "woodworking-machinery": [
+  [
+   "Jointers 6 – 8″",
+   "tt-wj"
+  ],
+  [
+   "thickness planers 15 – 20″",
+   "tt-wjp"
+  ],
+  [
+   "jointer-planers 10 – 16″",
+   "tt-tdm"
+  ],
+  [
+   "WTS10 10″ cabinet table saws",
+   "tt-wts"
+  ],
+  [
+   "TBS 14″ and 18″ band saws",
+   "tt-tbs"
+  ],
+  [
+   "WM multifunction machines",
+   "tt-wm"
+  ],
+  [
+   "MS mortisers",
+   "tt-mortise"
+  ],
+  [
+   "MGX slot boring machines",
+   "tt-slotbore"
+  ],
+  [
+   "TL-406 lathe",
+   "tt-tl406"
+  ],
+  [
+   "DC900 dust collector",
+   "tt-dc900"
+  ]
+ ],
+ "cnc-machine-tools": [
+  [
+   "Dener CNC lathes",
+   "cnc-lathe.html"
+  ],
+  [
+   "TTC-6 / TTC-8",
+   "cnc-lathe.html#dn-ttc"
+  ],
+  [
+   "TTH-8 / 10 / 12",
+   "cnc-lathe.html#dn-tth"
+  ],
+  [
+   "Dener machining centres",
+   "vertical-machining-center.html"
+  ],
+  [
+   "TMC 850 – 1600",
+   "vertical-machining-center.html#dn-tmc"
+  ],
+  [
+   "TDC 2112 – 4120 double-column",
+   "vertical-machining-center.html#dn-tdc"
+  ],
+  [
+   "TGH-B 450 surface grinder",
+   "surface-grinder.html#dn-tgh"
+  ],
+  [
+   "NovoTech value line",
+   "novotech-cnc-machine-tools.html"
+  ],
+  [
+   "CTK6416 CNC lathe",
+   "novotech-cnc-machine-tools.html#tt-cnc-lathe"
+  ],
+  [
+   "VMC8046 / VMC10562",
+   "novotech-cnc-machine-tools.html#tt-vmc"
+  ],
+  [
+   "TXK BT50 boring mills",
+   "novotech-cnc-machine-tools.html#tt-boring"
+  ],
+  [
+   "TH-800 HMC",
+   "novotech-cnc-machine-tools.html#tt-boring"
+  ]
+ ],
+ "press-brake-tooling-punch-and-die": [
+  [
+   "punches",
+   "european-press-brake-punches.html"
+  ],
+  [
+   "dies",
+   "european-press-brake-dies.html"
+  ],
+  [
+   "holders and accessories",
+   "press-brake-tool-holders-adapters.html"
+  ],
+  [
+   "European",
+   "european-press-brake-punches.html"
+  ],
+  [
+   "Trumpf",
+   "trumpf-wila-press-brake-tooling.html"
+  ],
+  [
+   "Wila",
+   "trumpf-wila-press-brake-tooling.html#es-wi-punch"
+  ],
+  [
+   "Bystronic",
+   "bystronic-lvd-press-brake-tooling.html"
+  ],
+  [
+   "LVD",
+   "bystronic-lvd-press-brake-tooling.html#es-lvd-punch"
+  ],
+  [
+   "American styles",
+   "american-style-press-brake-tooling.html"
+  ],
+  [
+   "adapters between clamping styles",
+   "press-brake-tool-holders-adapters.html#es-acc-upper"
+  ]
+ ],
+ "rebar-bender-and-cutter": [
+  [
+   "Bend up to Ø2-3/8″ (60 mm)",
+   "rebar-bender.html"
+  ],
+  [
+   "cut up to Ø2-3/8″ (60 mm)",
+   "rebar-cutter.html"
+  ],
+  [
+   "Portable 110/220 V single-phase units for the job site",
+   "rebar-bender.html#Protable-rebar-bender-MG-BT-A-series"
+  ]
+ ]
+}

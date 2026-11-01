@@ -4,9 +4,9 @@
  "family_set": "sheet-lasers",
  "title": "Large-Format Plate Lasers for Sale in Canada — Semi-Closed, Ground-Rail & Gantry Lasers to 10 × 164 ft, 3–60 kW | NovoTech",
  "artifact_title": "Large-format plate lasers — semi-closed, ground-rail and gantry machines to 10 × 164 ft, 3 to 60 kW",
- "meta_description": "Large-format fiber plate lasers sold, installed and supported in Canada: Dener Smart semi-closed single tables to 13 × 82 ft, ground-rail lasers cutting 42.7 or 85.3 ft × 14.8 ft beds and gantry plate lasers to 10 × 164 ft with ±45° bevel heads and oxy-fuel, 3 to 60 kW. Every model in one table.",
+ "meta_description": "Large-format fiber plate lasers sold, installed and supported in Canada: Dener Smart semi-closed single tables to 13 × 82 ft, ground-rail lasers cutting 42.7 or 85.3 ft × 14.8 ft beds and gantry plate lasers to 10 × 164 ft with ±45° bevel heads and oxy-fuel, 3 to 60 kW.",
  "h1": "Large-format plate lasers — semi-closed, ground-rail and gantry machines to 10 × 164 ft, 3 to 60 kW",
- "intro": "A large-format plate laser cuts long and heavy plate on a bed too long and too heavy for a cabinet machine: the plate lies on a fixed single table loaded by crane or forklift from the side, the gantry runs over it on a long frame or on rails in the floor, and the cover that keeps the beam and the spatter in travels with the gantry — semi-closed. High-power sources of up to 60 kW cut 1-1/2″ and beyond, with ±45° bevel heads for weld preparation and an oxy-fuel torch for the thickest plate. NovoTech sells two lines in Canada, both on this page: the premium Dener Smart semi-closed lasers made in Turkey, single tables from 8.2 × 20 to 13 × 82 ft with 3 to 40 kW; and the value line — the ULG ground-rail lasers with 42.7 or 85.3 ft beds up to 14.8 ft wide and 12 to 60 kW, and the R / TX gantry plate lasers from 10 × 20 to 10 × 164 ft with 6 to 60 kW and bevel cutting. Every model is in the table below with its working area, power and speed, then each family with its full specification, photos and brochure. Every machine comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, Canada. For sheet work on a shuttle table see the fiber laser cutting machines.",
+ "intro": "A large-format plate laser cuts long and heavy plate on a bed too long and too heavy for a cabinet machine: the plate lies on a fixed single table loaded by crane or forklift from the side, the gantry runs over it on a long frame or on rails in the floor, and the cover that keeps the beam and the spatter in travels with the gantry — semi-closed. High-power sources of up to 60 kW cut 1-1/2″ and beyond, with ±45° bevel heads for weld preparation and an oxy-fuel torch for the thickest plate. NovoTech sells two lines in Canada, both on this page: the premium Dener Smart semi-closed lasers made in Turkey, single tables from 8.2 × 20 to 13 × 82 ft with 3 to 40 kW; and the value line — the ULG ground-rail lasers with 42.7 or 85.3 ft beds up to 14.8 ft wide and 12 to 60 kW, and the R / TX gantry plate lasers from 10 × 20 to 10 × 164 ft with 6 to 60 kW and bevel cutting. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, Canada. For sheet work on a shuttle table see the fiber laser cutting machines.",
  "hero_points": [
   "Premium: Smart semi-closed single tables 8.2 × 20 to 13 × 82 ft, 3 – 40 kW, ±0.01 mm — the cabin travels with the gantry",
   "Value: ULG ground-rail lasers, 42.7 or 85.3 ft beds × up to 14.8 ft, 12 – 60 kW; R / TX gantry plate lasers 10 × 20 to 10 × 164 ft, 6 – 60 kW, ±45° bevel, oxy-fuel",
@@ -39,7 +39,8 @@
   {
    "id": "ls-premium-semi-group",
    "title": "Smart semi-closed fiber lasers · premium line",
-   "lead": "Long single tables for plate — 8.2 × 20 to 13 × 82 ft — with the cabin on the gantry, from the same Turkish factory.",
+   "lead": "",
+   "brand": "dener",
    "families": [
     "dn-smart-semi"
    ]
@@ -47,7 +48,8 @@
   {
    "id": "ls-value-ulg-group",
    "title": "ULG ground-rail plate lasers · value line",
-   "lead": "NovoTech's own ground-rail laser: 42.7 or 85.3 ft × up to 14.8 ft, 12 to 60 kW.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "vn-ulg"
    ]
@@ -55,7 +57,8 @@
   {
    "id": "ls-value-r-group",
    "title": "R / TX gantry plate lasers · value line",
-   "lead": "Ultra-large plate lasers 10 × 20 to 10 × 164 ft, 6 – 60 kW, with ±45° bevel and oxy-fuel.",
+   "lead": "",
+   "brand": "senfeng",
    "families": [
     "sf-r"
    ]
@@ -198,25 +201,5 @@
    "label": "Download the Senfeng fiber laser brochure",
    "size": "PDF · 1 MB · imperial units"
   }
- ],
- "range_pick": [
-  [
-   "working_area",
-   "area"
-  ],
-  "power",
-  "speed",
-  "accel",
-  "load"
- ],
- "range_cols": [
-  "Working area",
-  "Laser power",
-  "Max. speed",
-  "Acceleration",
-  "Max. sheet load"
- ],
- "range_lead": "Every model on this page in one table — 35 machines. Each row links to the full specification below.",
- "range_caption": "Large-format plate lasers supplied by NovoTech",
- "range_title": "Every model at a glance"
+ ]
 }

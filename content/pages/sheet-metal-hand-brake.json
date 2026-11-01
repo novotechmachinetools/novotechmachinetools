@@ -4,9 +4,9 @@
  "family_set": "ttmc-more",
  "title": "Sheet Metal Hand Brakes for Sale in Canada — Straight Brakes, Foot-Clamp Folders & Bench Brakes | NovoTech",
  "artifact_title": "Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
- "meta_description": "Sheet metal hand brakes sold, installed and supported in Canada: straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines to 119″ in 12 ga, and bench, slitting and offset brakes. Every model in one table.",
+ "meta_description": "Sheet metal hand brakes sold, installed and supported in Canada: straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines to 119″ in 12 ga, and bench, slitting and offset brakes.",
  "h1": "Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
- "intro": "A sheet metal hand brake clamps the sheet under a one-piece beam and swings a folding leaf up around the edge by hand — long, straight, clean bends in thin sheet with no punch and die and no marks on painted material. NovoTech sells three kinds in Canada, all on this page: straight hand brakes from a 12″ bench model to 13 ft, in 22 to 12 ga, for flashing, trim and duct panels; foot-clamp folding machines from 40 to 119″ whose clamping beam closes from a foot pedal so both hands guide the sheet, to 12 ga; and bench brakes, shear-and-brake machines, slitting brakes and offset tools for the bench and the job box. Every model is listed in one table below with its length, capacity and weight, then each family with its full specification and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
+ "intro": "A sheet metal hand brake clamps the sheet under a one-piece beam and swings a folding leaf up around the edge by hand — long, straight, clean bends in thin sheet with no punch and die and no marks on painted material. NovoTech sells three kinds in Canada, all on this page: straight hand brakes from a 12″ bench model to 13 ft, in 22 to 12 ga, for flashing, trim and duct panels; foot-clamp folding machines from 40 to 119″ whose clamping beam closes from a foot pedal so both hands guide the sheet, to 12 ga; and bench brakes, shear-and-brake machines, slitting brakes and offset tools for the bench and the job box. Each family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Straight hand brakes 12″ – 13 ft, 22 to 12 ga mild steel; counterweighted leaf, adjustable clamping and radius",
   "Foot-clamp folding machines 40 – 119″, 20 to 12 ga: pedal clamping, both hands on the sheet, angle stop",
@@ -39,7 +39,8 @@
   {
    "id": "hb-group",
    "title": "Straight hand brakes",
-   "lead": "One-piece clamping blade for long, clean bends — flashing, trim, duct panels — from 12″ to 13 ft.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-hb"
    ],
@@ -48,7 +49,8 @@
   {
    "id": "folder-group",
    "title": "Foot-clamp folding machines",
-   "lead": "The clamping beam closes from a foot pedal, so both hands feed and hold the sheet; 20 to 12 ga over 40 – 119″.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-folder"
    ],
@@ -57,7 +59,8 @@
   {
    "id": "bench-group",
    "title": "Bench, slitting and offset brakes",
-   "lead": "Light brakes for the bench and the job box: bench brakes, shear-and-brake machines, slitting brakes and offset tools.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-bench-brake"
    ],
@@ -184,31 +187,5 @@
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null,
- "nav_label": "Hand brakes & folders",
- "range_pick": [
-  [
-   "bending_length",
-   "working_length",
-   "working_width",
-   "capacity_length_mild_steel",
-   "coil_width",
-   "bending_capacity_width"
-  ],
-  [
-   "capacity_mild_steel",
-   "capacity",
-   "shear_brake_roll_capacity_mild_steel",
-   "bending_and_shearing_capacity_mild_steel",
-   "capacity_length_mild_steel"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Length",
-  "Capacity (mild steel)",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 63 machines: bending length, capacity in mild steel and weight. Each row links to the full specification below.",
- "range_caption": "Sheet metal hand brakes supplied by NovoTech — value line",
- "range_title": "Every model at a glance"
+ "nav_label": "Hand brakes & folders"
 }

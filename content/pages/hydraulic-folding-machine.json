@@ -4,9 +4,9 @@
  "family_set": "ttmc-more",
  "title": "Hydraulic, Electric & CNC Folding Machines for Sale in Canada — 10 ga × 10 ft, 14 ga × 12 ft | NovoTech",
  "artifact_title": "Hydraulic, electric and CNC folding machines — 10 ga over 10 ft, 14 ga CNC over 12 ft",
- "meta_description": "Powered sheet metal folding machines sold, installed and supported in Canada: hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge. Every model in one table.",
+ "meta_description": "Powered sheet metal folding machines sold, installed and supported in Canada: hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge.",
  "h1": "Hydraulic, electric and CNC folding machines — 10 ga over 10 ft, 14 ga CNC over 12 ft",
- "intro": "A powered folding machine clamps and folds the sheet with hydraulic cylinders or electric drives, so a 10 ft bend in 10 ga takes a foot pedal instead of two people and a CNC folder runs a 99-bend program with its back gauge while the operator only turns and feeds the sheet. NovoTech sells three kinds in Canada, all on this page: HW hydraulic folding machines, 10 ga over 4 to 10 ft and 3/16″ over 80 – 100″, with a hydraulic clamping beam, a folding beam driven by cylinders and a segmented upper beam on the box models; EFM / EFMS electric folding machines, 16 to 20 ga over 80 – 120″, for the shop that wants power without hydraulics; and TFM / TFMS CNC electric folders, 14 ga over 122 and 145″, with a CNC back gauge to 48″ and ±0.004″ repeatability for production panels, cassettes and enclosures. Every model is in the table below with its length, capacity and weight, then each family with its full specification and photos. NovoTech's value-line machines are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
+ "intro": "A powered folding machine clamps and folds the sheet with hydraulic cylinders or electric drives, so a 10 ft bend in 10 ga takes a foot pedal instead of two people and a CNC folder runs a 99-bend program with its back gauge while the operator only turns and feeds the sheet. NovoTech sells three kinds in Canada, all on this page: HW hydraulic folding machines, 10 ga over 4 to 10 ft and 3/16″ over 80 – 100″, with a hydraulic clamping beam, a folding beam driven by cylinders and a segmented upper beam on the box models; EFM / EFMS electric folding machines, 16 to 20 ga over 80 – 120″, for the shop that wants power without hydraulics; and TFM / TFMS CNC electric folders, 14 ga over 122 and 145″, with a CNC back gauge to 48″ and ±0.004″ repeatability for production panels, cassettes and enclosures. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "HW hydraulic folders: 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″; hydraulic clamping, foot pedal, segmented beam on the H models",
   "EFM / EFMS electric folders 16 – 20 ga × 80 – 120″: motor-driven clamping and folding, no hydraulics",
@@ -39,7 +39,8 @@
   {
    "id": "hw-group",
    "title": "Hydraulic folding machines",
-   "lead": "Powered clamping and folding: a 10 ft bend in 10 ga takes a foot pedal instead of two people; the H models fold boxes with a segmented beam.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-hw"
    ]
@@ -47,7 +48,8 @@
   {
    "id": "efm-group",
    "title": "Electric folding machines",
-   "lead": "Motor-driven clamping and folding for 16 – 20 ga sheet over 80 – 120″ — power without hydraulics.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-efm"
    ]
@@ -55,7 +57,8 @@
   {
    "id": "tfm-group",
    "title": "CNC electric folding machines",
-   "lead": "The TFM and TFMS run a program of up to 99 bends with a CNC back gauge — the production folder for panels, cassettes and enclosures.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-tfm"
    ]
@@ -181,31 +184,5 @@
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null,
- "nav_label": "Hydraulic & CNC folders",
- "range_pick": [
-  [
-   "bending_length",
-   "working_length",
-   "working_width",
-   "capacity_length_mild_steel",
-   "coil_width",
-   "bending_capacity_width"
-  ],
-  [
-   "capacity_mild_steel",
-   "capacity",
-   "shear_brake_roll_capacity_mild_steel",
-   "bending_and_shearing_capacity_mild_steel",
-   "capacity_length_mild_steel"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Length",
-  "Capacity (mild steel)",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 18 machines: bending length, capacity in mild steel and weight. Each row links to the full specification below.",
- "range_caption": "Hydraulic, electric and CNC folding machines supplied by NovoTech — value line",
- "range_title": "Every model at a glance"
+ "nav_label": "Hydraulic & CNC folders"
 }

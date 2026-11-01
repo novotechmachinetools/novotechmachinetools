@@ -4,9 +4,9 @@
  "family_set": "ttmc-more",
  "title": "3-in-1 Shear, Brake & Roll Machines for Sale in Canada — 8″ to 80″ | NovoTech",
  "artifact_title": "3-in-1 shear, brake and roll machines — 8″ to 80″",
- "meta_description": "3-in-1 sheet metal machines sold, installed and supported in Canada: combination shear, brake and slip roll on one frame from 8″ to 52″ in 20 – 16 ga, and the motorized E3-IN-1 for 1/8″ × 52″ and 80″. Every model in one table.",
+ "meta_description": "3-in-1 sheet metal machines sold, installed and supported in Canada: combination shear, brake and slip roll on one frame from 8″ to 52″ in 20 – 16 ga, and the motorized E3-IN-1 for 1/8″ × 52″ and 80″.",
  "h1": "3-in-1 shear, brake and roll machines — 8″ to 80″",
- "intro": "A 3-in-1 machine puts a shear, a brake and a slip roll on one frame: the starter machine for the small sheet-metal, HVAC and hobby shop, and the compact machine for a maintenance department that cuts, folds and rolls a few parts a day. NovoTech sells two kinds in Canada, both on this page: hand-operated 3-in-1 machines from 8″ to 52″, 20 to 16 ga, with a guillotine shear, a finger brake and three rolls on one bench frame; and the motorized E3-IN-1 that shears 1/8″, bends 14 ga and rolls 12 ga over 52 and 80″ with a 4.7 HP motor. Every model is in the table below with its width, capacity and weight, then each family with its full specification and photos. NovoTech's value-line machines are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
+ "intro": "A 3-in-1 machine puts a shear, a brake and a slip roll on one frame: the starter machine for the small sheet-metal, HVAC and hobby shop, and the compact machine for a maintenance department that cuts, folds and rolls a few parts a day. NovoTech sells two kinds in Canada, both on this page: hand-operated 3-in-1 machines from 8″ to 52″, 20 to 16 ga, with a guillotine shear, a finger brake and three rolls on one bench frame; and the motorized E3-IN-1 that shears 1/8″, bends 14 ga and rolls 12 ga over 52 and 80″ with a 4.7 HP motor. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Hand-operated 3-in-1 machines 8 – 52″: shear, finger brake and slip roll, 20 – 16 ga mild steel on one bench frame",
   "Motorized E3-IN-1, 52″ and 80″: shears 1/8″, bends 14 ga, rolls 12 ga, 4.7 HP",
@@ -39,7 +39,8 @@
   {
    "id": "3in1-group",
    "title": "3-in-1 shear, brake and roll machines",
-   "lead": "Three machines on one frame — the starter machine for the small sheet-metal and HVAC shop.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-3in1"
    ]
@@ -47,7 +48,8 @@
   {
    "id": "e3in1-group",
    "title": "Motorized E3-IN-1 machines",
-   "lead": "The powered combination machine: 1/8″ shearing, 14 ga bending and 12 ga rolling over 52 and 80″.",
+   "lead": "",
+   "brand": "novotech",
    "families": [
     "tt-e3in1"
    ]
@@ -169,31 +171,5 @@
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null,
- "nav_label": "3-in-1 machines",
- "range_pick": [
-  [
-   "bending_length",
-   "working_length",
-   "working_width",
-   "capacity_length_mild_steel",
-   "coil_width",
-   "bending_capacity_width"
-  ],
-  [
-   "capacity_mild_steel",
-   "capacity",
-   "shear_brake_roll_capacity_mild_steel",
-   "bending_and_shearing_capacity_mild_steel",
-   "capacity_length_mild_steel"
-  ],
-  "weight"
- ],
- "range_cols": [
-  "Length",
-  "Capacity (mild steel)",
-  "Weight"
- ],
- "range_lead": "Every model on this page in one table — 15 machines: bending length, capacity in mild steel and weight. Each row links to the full specification below.",
- "range_caption": "3-in-1 shear, brake and roll machines supplied by NovoTech — value line",
- "range_title": "Every model at a glance"
+ "nav_label": "3-in-1 machines"
 }

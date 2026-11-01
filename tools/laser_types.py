@@ -44,7 +44,7 @@ AUTO_FAQ = faq("laser-cutting-machine", "Can the laser be automated?")[0]
 SHEET = {
     "fiber-laser-cutting-machine": dict(
         title="Fiber Laser Cutting Machines for Sale in Canada — Shuttle Table & Pallet Changer, 1.5–80 kW | NovoTech",
-        meta="Fiber laser cutting machines sold, installed and supported in Canada: shuttle table or pallet changer, laser-safe cabin, 4 × 4 ft compact machines to 8.5 × 41 ft, 1.5 to 80 kW — premium GFL and Smart made in Turkey, value-line ULE, Senfeng H series, NP and compact lasers. Every model in one table.",
+        meta="Fiber laser cutting machines sold, installed and supported in Canada: shuttle table or pallet changer, laser-safe cabin, 4 × 4 ft compact machines to 8.5 × 41 ft, 1.5 to 80 kW — premium GFL and Smart made in Turkey, value-line ULE, Senfeng H series, NP and compact lasers.",
         h1="Fiber laser cutting machines, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW",
         intro="A fiber laser cutting machine cuts inside a laser-safe cabin with fume extraction, and its shuttle table or pallet changer loads "
               "the next sheet while the first is being cut — the production laser that keeps cutting while the operator unloads, and the kind "
@@ -52,8 +52,7 @@ SHEET = {
               "— the GFL with a space-frame gantry rated for 1.5 G and a pallet changer in 5 × 10 to 6.6 × 20 ft, 3 to 40 kW, and the Smart "
               "with a shuttle table in six sizes to 8.5 × 41 ft; and the value line — NovoTech's own ULE with a 15-second shuttle "
               "table to 41 ft, the Senfeng H series with pallet changer from 5 × 10 to 8.3 × 40 ft and 1.5 to 80 kW, the NP single-table "
-              "lasers with a cover on the gantry, and compact lasers of 4 × 4 and 5 × 10 ft from 1.5 kW. Every model is in the table below "
-              "with its working area, power and speed, then each family with its full specification, photos and brochure. Every machine "
+              "lasers with a cover on the gantry, and compact lasers of 4 × 4 and 5 × 10 ft from 1.5 kW. Each family below has its full specification table, photos and brochure. Every machine "
               "comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, "
               "Canada. For long and heavy plate see the large-format plate lasers.",
         points=["Premium: GFL 1.5 G with pallet changer, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW; Smart with shuttle table, six sizes to 8.5 × 41 ft",
@@ -78,14 +77,13 @@ SHEET = {
     ),
     "sheet-and-tube-laser": dict(
         title="Sheet and Tube Combination Lasers for Sale in Canada — One Machine for Sheet and Tube to Ø13.8″ | NovoTech",
-        meta="Sheet-and-tube fiber lasers sold, installed and supported in Canada: a sheet laser with a rotary chuck beside the table — the ULET with shuttle table to 41 × 8.5 ft sheet and Ø13.8″ tube, and the HM series to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube, 1.5 to 40 kW. Every model in one table.",
+        meta="Sheet-and-tube fiber lasers sold, installed and supported in Canada: a sheet laser with a rotary chuck beside the table — the ULET with shuttle table to 41 × 8.5 ft sheet and Ø13.8″ tube, and the HM series to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube, 1.5 to 40 kW.",
         h1="Sheet and tube combination lasers — one machine for sheet and tube to Ø13.8″",
         intro="A sheet-and-tube laser puts a rotary chuck and tube supports beside the cutting table, so the same head cuts flat sheet from the "
               "table and holes, copes and lengths in round, square and rectangular tube from the chuck — one machine, one source and one "
               "footprint for a shop that cuts both. NovoTech sells two families in Canada, both on this page and both from the value line: "
               "the ULET with its shuttle table for sheet from 10 × 5 to 41 × 8.5 ft and tube to Ø13.8″, 1.5 to 40 kW; and the Senfeng HM "
-              "series with a pallet changer for 5 × 10 to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube, 6 kW and up. Every model is in the table "
-              "below with its working area, power and speed, then each family with its full specification, photos and brochure. Every machine "
+              "series with a pallet changer for 5 × 10 to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube, 6 kW and up. Each family below has its full specification table, photos and brochure. Every machine "
               "comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from Mississauga, ON, Canada. "
               "For a dedicated tube machine with bundle loading see the tube laser cutters.",
         points=["ULET: sheet 10 × 5 to 41 × 8.5 ft on a shuttle table plus tube to Ø13.8″ and 39 ft, 1.5 – 40 kW",
@@ -104,7 +102,7 @@ SHEET = {
     ),
     "large-format-plate-laser": dict(
         title="Large-Format Plate Lasers for Sale in Canada — Semi-Closed, Ground-Rail & Gantry Lasers to 10 × 164 ft, 3–60 kW | NovoTech",
-        meta="Large-format fiber plate lasers sold, installed and supported in Canada: Dener Smart semi-closed single tables to 13 × 82 ft, ground-rail lasers cutting 42.7 or 85.3 ft × 14.8 ft beds and gantry plate lasers to 10 × 164 ft with ±45° bevel heads and oxy-fuel, 3 to 60 kW. Every model in one table.",
+        meta="Large-format fiber plate lasers sold, installed and supported in Canada: Dener Smart semi-closed single tables to 13 × 82 ft, ground-rail lasers cutting 42.7 or 85.3 ft × 14.8 ft beds and gantry plate lasers to 10 × 164 ft with ±45° bevel heads and oxy-fuel, 3 to 60 kW.",
         h1="Large-format plate lasers — semi-closed, ground-rail and gantry machines to 10 × 164 ft, 3 to 60 kW",
         intro="A large-format plate laser cuts long and heavy plate on a bed too long and too heavy for a cabinet machine: the plate lies on a "
               "fixed single table loaded by crane or forklift from the side, the gantry runs over it on a long frame or on rails in the floor, "
@@ -112,9 +110,7 @@ SHEET = {
               "cut 1-1/2″ and beyond, with ±45° bevel heads for weld preparation and an oxy-fuel torch for the thickest plate. NovoTech sells "
               "two lines in Canada, both on this page: the premium Dener Smart semi-closed lasers made in Turkey, single tables from 8.2 × 20 "
               "to 13 × 82 ft with 3 to 40 kW; and the value line — the ULG ground-rail lasers with 42.7 or 85.3 ft beds up to 14.8 ft wide "
-              "and 12 to 60 kW, and the R / TX gantry plate lasers from 10 × 20 to 10 × 164 ft with 6 to 60 kW and bevel cutting. Every model "
-              "is in the table below with its working area, power and speed, then each family with its full specification, photos and "
-              "brochure. Every machine comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from "
+              "and 12 to 60 kW, and the R / TX gantry plate lasers from 10 × 20 to 10 × 164 ft with 6 to 60 kW and bevel cutting. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and nesting software, installed, trained and supported from "
               "Mississauga, ON, Canada. For sheet work on a shuttle table see the fiber laser cutting machines.",
         points=["Premium: Smart semi-closed single tables 8.2 × 20 to 13 × 82 ft, 3 – 40 kW, ±0.01 mm — the cabin travels with the gantry",
                 "Value: ULG ground-rail lasers, 42.7 or 85.3 ft beds × up to 14.8 ft, 12 – 60 kW; R / TX gantry plate lasers 10 × 20 to 10 × 164 ft, 6 – 60 kW, ±45° bevel, oxy-fuel",
@@ -139,8 +135,7 @@ SHEET = {
               "edges and cuts holes and slots after forming, where a flat-bed laser cannot reach and a trimming die would cost more than the "
               "run. NovoTech sells two families in Canada, both on this page and both from the value line: the five-axis SF3015TD gantry "
               "laser with ±135° A and endless C rotation over a 5 × 10 ft envelope, 3 to 20 kW; and the RC robot cells that carry a 1.5 to 6 kW "
-              "fiber head on a six-axis robot with 72″ reach. Every model is in the table below with its working area, power and speed, then "
-              "each family with its full specification, photos and brochure. Every machine comes with a CSA-approved panel, chiller and "
+              "fiber head on a six-axis robot with 72″ reach. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and "
               "offline programming software, installed, trained and supported from Mississauga, ON, Canada.",
         points=["SF3015TD five-axis gantry laser: 5 × 10 ft envelope, ±135° A, endless C, 328 ft/min, 3 – 20 kW",
                 "RC robot cells: 1.5 – 6 kW head on a six-axis robot, 72″ reach — trimming, piercing and welding",
@@ -161,8 +156,7 @@ SHEET = {
               "handled, stacked or scrapped at the edges and with no limit on part length — the line for high-volume parts. NovoTech sells "
               "Senfeng's lines in Canada, on this page and from the value line: the SF1503CH for coil to 1/8″ and 16.5 tons on a 5 × 10 ft "
               "laser with 3 to 6 kW, the SF2012CH that levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW, and the TOP "
-              "line that adds robot sorting, panel bending and welding for a complete coil-to-part cell. Every model is in the table below "
-              "with its working area, power and speed, then the family with its full specification, photos and brochure. Every line comes with "
+              "line that adds robot sorting, panel bending and welding for a complete coil-to-part cell. The family below has its full specification table, photos and brochure. Every line comes with "
               "a CSA-approved panel, chiller and software, installed, trained and supported from Mississauga, ON, Canada.",
         points=["SF1503CH: coil to 1/8″ and 16.5 US tons, 5 × 10 ft laser, 3 – 6 kW",
                 "SF2012CH: 5/16″ – 9/16″ plate from 22-ton coils, 6.6 × 13 ft cutting area, 12 – 80 kW",
@@ -179,15 +173,14 @@ SHEET = {
 TUBE = {
     "tube-laser-cutter": dict(
         title="Tube Laser Cutters for Sale in Canada — Two- & Three-Chuck, Ø0.3″ to 14″, 20–39 ft Bars | NovoTech",
-        meta="Tube laser cutting machines sold, installed and supported in Canada: two- and three-chuck lasers for round, square and rectangular tube Ø0.3″ to 14″ on 20 to 39 ft bars, 1.5 to 40 kW, bundle loaders and ±45° bevel heads — premium E-FTL made in Turkey, value-line ULT, T, PLUS and GT. Every model in one table.",
+        meta="Tube laser cutting machines sold, installed and supported in Canada: two- and three-chuck lasers for round, square and rectangular tube Ø0.3″ to 14″ on 20 to 39 ft bars, 1.5 to 40 kW, bundle loaders and ±45° bevel heads — premium E-FTL made in Turkey, value-line ULT, T, PLUS and GT.",
         h1="Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 39 ft bars, 1.5 to 40 kW",
         intro="A tube laser cutter holds the bar in two chucks — three on the zero-tail versions — turns and feeds it under the head and cuts "
               "lengths, holes, copes, slots and notches from the 3D model in one pass, with no saw, drill, notcher or layout; the bundle loader "
               "feeds the next bar. For tube to Ø14″ it is the machine most shops need. NovoTech sells two lines in Canada, both on this page: "
               "the premium Dener E-FTL made in Turkey, with 1 G servo chucks for Ø0.3″ to 13.8″ at 394 ft/min and ±0.05 mm, 3 to 20 kW; and the "
               "value line — NovoTech's own ULT with two or three pneumatic chucks for Ø0.4″ to 14.2″ on 20, 29.5 or 39 ft bars with 1.5 to 40 kW, "
-              "the two-chuck T series from Ø0.5″ and 1.5 kW, and the high-speed PLUS and ±45° bevel-cutting GPLUS / GT. Every model is in the "
-              "table below with its tube range, power, speed and bar length, then each family with its full specification, photos and brochure. "
+              "the two-chuck T series from Ø0.5″ and 1.5 kW, and the high-speed PLUS and ±45° bevel-cutting GPLUS / GT. Each family below has its full specification table, photos and brochure. "
               "Every machine comes with a CSA-approved panel, chiller and tube nesting software, installed, trained and supported from "
               "Mississauga, ON, Canada. For beams and pipe to Ø25″ and 49 ft see the heavy-duty tube lasers.",
         points=["Premium E-FTL: Ø0.3″ – 13.8″, 1 G servo chucks, 394 ft/min, ±0.05 mm, 3 – 20 kW, bars to 39 ft",
@@ -213,15 +206,13 @@ TUBE = {
     ),
     "heavy-duty-tube-laser": dict(
         title="Heavy-Duty Tube & Profile Lasers for Sale in Canada — Three & Four Chucks, to Ø25″ and 49 ft | NovoTech",
-        meta="Heavy-duty tube laser cutting machines sold, installed and supported in Canada: three- and four-chuck lasers for structural tube, pipe, beams and profiles to Ø25″, bars to 49 ft and 6,600 lb, zero tailing, 3 to 40 kW — premium FTL made in Turkey, value-line NT / ST / HT and the H-beam profile line. Every model in one table.",
+        meta="Heavy-duty tube laser cutting machines sold, installed and supported in Canada: three- and four-chuck lasers for structural tube, pipe, beams and profiles to Ø25″, bars to 49 ft and 6,600 lb, zero tailing, 3 to 40 kW — premium FTL made in Turkey, value-line NT / ST / HT and the H-beam profile line.",
         h1="Heavy-duty tube and profile lasers — three and four chucks, to Ø25″ and 49 ft",
         intro="A heavy-duty tube laser carries beams, pipe and heavy profiles that a two-chuck machine cannot: three or four chucks hold a bar of "
               "up to 6,600 lb and 49 ft at both ends and in the middle, feed it through the cut without the tail dropping, and cut copes, holes "
               "and bevels in structural tube to Ø25″ straight from the steel-detailing model. NovoTech sells two lines in Canada, both on this "
               "page: the premium Dener FTL made in Turkey, for Ø0.6″ to 25.2″ and 12 m bars of 2,600 kg, 3 to 20 kW; and the value line — the "
-              "zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft, plus the SF1500CH H-beam profile line. "
-              "Every model is in the table below with its tube range, power, speed and bar length, then each family with its full specification, "
-              "photos and brochure. Every machine comes with a CSA-approved panel, chiller and tube nesting software, installed, trained and "
+              "zero-tailing NT and the three- and four-chuck ST / HT machines to Ø25″, 6,600 lb and 49 ft, plus the SF1500CH H-beam profile line. Each family below has its full specification table, photos and brochure. Every machine comes with a CSA-approved panel, chiller and tube nesting software, installed, trained and "
               "supported from Mississauga, ON, Canada. For tube to Ø14″ see the tube laser cutters.",
         points=["Premium FTL: Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb, 3 – 20 kW, 1 G servo chucks, following supports",
                 "Value NT / ST / HT: three and four chucks, zero tailing, to Ø25″, 6,600 lb and 49 ft, 3 – 40 kW; SF1500CH H-beam profile line",
@@ -265,14 +256,24 @@ def build():
             premium = any(f.get("brand") == "dener" for f in members)
             video = VIDEO_DENER if premium and VIDEO_DENER["intro_video"] and VIDEO_DENER["intro_video"]["thumb"] in manifest else NO_VIDEO
             p = {k: page[k] for k in ("title", "meta", "h1", "intro", "points", "hero", "minis", "groups", "faq")}
+            # the press brake page format (the owner, Nov 1 2026): every group under its brand's line header (Dener premium line,
+            # NovoTech / Senfeng value line) with no lead line under the heading, and no page-level "every model" table — that
+            # table is on the hub
+            brand_of = {}
+            for f in members:
+                brand_of.setdefault(f["group"], set()).add(f.get("brand"))
+            p["groups"] = []
+            for g in page["groups"]:
+                brands = brand_of.get(g[0], set())
+                if len(brands) != 1 or None in brands:
+                    raise SystemExit(f"{slug}: group {g[0]} has families of several brands or none: {brands}")
+                p["groups"].append((g[0], g[1], "", next(iter(brands))))
             p["related_pages"] = page["related"]
             p["related_title"] = "More laser and cutting machinery from NovoTech"
             write_category(slug, p, members, set_name, LN.SECTIONS[kind]["section"], hub=LN.hub(kind), siblings=LN.siblings(kind),
                            extra={"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **video,
                                   "nav_label": next(nav for s, _, _, _, nav, _ in LN.SECTIONS[kind]["subpages"] if s == slug),
-                                  "catalogue_pdf": None, "catalogue_pdfs": pdfs, **rng,
-                                  "range_lead": f"Every model on this page in one table — {n} machines. Each row links to the full specification below.",
-                                  "range_caption": f"{page['h1'].split(' — ')[0]} supplied by NovoTech", "range_title": "Every model at a glance"})
+                                  "catalogue_pdf": None, "catalogue_pdfs": pdfs})
             print(f"{slug}: {len(members)} families, {n} models, {len(pdfs)} brochures")
 
 
