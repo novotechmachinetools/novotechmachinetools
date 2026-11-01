@@ -113015,5 +113015,855 @@
    "file": "img/senfeng/sf-3d-pressed-thumb.webp",
    "bytes": 1386
   }
+ },
+ "sf-h-air-1": {
+  "alt": "AI Intelligent Air Cutting (optional) \u2014 air monitoring, H8 head, A8 control and AI Process Cube",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 455,
+    "file": "img/senfeng/sf-h-air-1-1200.webp",
+    "bytes": 23328
+   },
+   {
+    "w": 800,
+    "h": 303,
+    "file": "img/senfeng/sf-h-air-1-800.webp",
+    "bytes": 12366
+   },
+   {
+    "w": 480,
+    "h": 182,
+    "file": "img/senfeng/sf-h-air-1-480.webp",
+    "bytes": 5724
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 61,
+   "file": "img/senfeng/sf-h-air-1-thumb.webp",
+   "bytes": 1104
+  }
+ },
+ "sf-h-air-2": {
+  "alt": "AI Intelligent Air Cutting (optional) \u2014 431 % faster than oxygen, 98 % lower gas cost than nitrogen",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 372,
+    "file": "img/senfeng/sf-h-air-2-1200.webp",
+    "bytes": 41276
+   },
+   {
+    "w": 800,
+    "h": 248,
+    "file": "img/senfeng/sf-h-air-2-800.webp",
+    "bytes": 24882
+   },
+   {
+    "w": 480,
+    "h": 149,
+    "file": "img/senfeng/sf-h-air-2-480.webp",
+    "bytes": 12542
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 50,
+   "file": "img/senfeng/sf-h-air-2-thumb.webp",
+   "bytes": 2116
+  }
+ },
+ "sf-h-air-3": {
+  "alt": "AI Intelligent Air Cutting (optional) \u2014 the A8 control runs gas, dust collection, motion and the AI Process Cube",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 372,
+    "file": "img/senfeng/sf-h-air-3-1200.webp",
+    "bytes": 73216
+   },
+   {
+    "w": 800,
+    "h": 248,
+    "file": "img/senfeng/sf-h-air-3-800.webp",
+    "bytes": 36744
+   },
+   {
+    "w": 480,
+    "h": 149,
+    "file": "img/senfeng/sf-h-air-3-480.webp",
+    "bytes": 14682
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 50,
+   "file": "img/senfeng/sf-h-air-3-thumb.webp",
+   "bytes": 1974
+  }
+ },
+ "sf-h-air-4": {
+  "alt": "AI Intelligent Air Cutting (optional) \u2014 bus-connected compressor and air check, 11.8 kWh saved per hour",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 372,
+    "file": "img/senfeng/sf-h-air-4-1200.webp",
+    "bytes": 54380
+   },
+   {
+    "w": 800,
+    "h": 248,
+    "file": "img/senfeng/sf-h-air-4-800.webp",
+    "bytes": 29418
+   },
+   {
+    "w": 480,
+    "h": 149,
+    "file": "img/senfeng/sf-h-air-4-480.webp",
+    "bytes": 12616
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 50,
+   "file": "img/senfeng/sf-h-air-4-thumb.webp",
+   "bytes": 1938
+  }
+ },
+ "sf-h-air-5": {
+  "alt": "AI Intelligent Air Cutting (optional) \u2014 M9 servo motors, M2 precision racks, P-class guideways",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 372,
+    "file": "img/senfeng/sf-h-air-5-1200.webp",
+    "bytes": 38582
+   },
+   {
+    "w": 800,
+    "h": 248,
+    "file": "img/senfeng/sf-h-air-5-800.webp",
+    "bytes": 20940
+   },
+   {
+    "w": 480,
+    "h": 149,
+    "file": "img/senfeng/sf-h-air-5-480.webp",
+    "bytes": 9736
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 50,
+   "file": "img/senfeng/sf-h-air-5-thumb.webp",
+   "bytes": 1724
+  }
+ },
+ "sf-coil-ch-1": {
+  "alt": "SF1503CH \u2014 decoiler, leveller and the 5 \u00d7 10 ft laser in one line",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 327,
+    "file": "img/senfeng/sf-coil-ch-1-1200.webp",
+    "bytes": 43314
+   },
+   {
+    "w": 800,
+    "h": 218,
+    "file": "img/senfeng/sf-coil-ch-1-800.webp",
+    "bytes": 27048
+   },
+   {
+    "w": 480,
+    "h": 131,
+    "file": "img/senfeng/sf-coil-ch-1-480.webp",
+    "bytes": 15534
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 44,
+   "file": "img/senfeng/sf-coil-ch-1-thumb.webp",
+   "bytes": 3978
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-ch-front": {
+  "alt": "SF1503CH coil-fed line from the front",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 237,
+    "file": "img/senfeng/sf-coil-ch-front-1200.webp",
+    "bytes": 42930
+   },
+   {
+    "w": 800,
+    "h": 158,
+    "file": "img/senfeng/sf-coil-ch-front-800.webp",
+    "bytes": 25644
+   },
+   {
+    "w": 480,
+    "h": 95,
+    "file": "img/senfeng/sf-coil-ch-front-480.webp",
+    "bytes": 13288
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 32,
+   "file": "img/senfeng/sf-coil-ch-front-thumb.webp",
+   "bytes": 3296
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-ch-side": {
+  "alt": "SF1503CH \u2014 the leveller feeding coil into the laser",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 272,
+    "file": "img/senfeng/sf-coil-ch-side-1200.webp",
+    "bytes": 39252
+   },
+   {
+    "w": 800,
+    "h": 181,
+    "file": "img/senfeng/sf-coil-ch-side-800.webp",
+    "bytes": 24426
+   },
+   {
+    "w": 480,
+    "h": 109,
+    "file": "img/senfeng/sf-coil-ch-side-480.webp",
+    "bytes": 13526
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 36,
+   "file": "img/senfeng/sf-coil-ch-side-thumb.webp",
+   "bytes": 3444
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-ch-stack": {
+  "alt": "SF1503CH line with automatic unloading and stacking",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 248,
+    "file": "img/senfeng/sf-coil-ch-stack-1200.webp",
+    "bytes": 52266
+   },
+   {
+    "w": 800,
+    "h": 165,
+    "file": "img/senfeng/sf-coil-ch-stack-800.webp",
+    "bytes": 32124
+   },
+   {
+    "w": 480,
+    "h": 99,
+    "file": "img/senfeng/sf-coil-ch-stack-480.webp",
+    "bytes": 16876
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 33,
+   "file": "img/senfeng/sf-coil-ch-stack-thumb.webp",
+   "bytes": 3896
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-ch-sort": {
+  "alt": "SF1503CH with sorting tables after the laser",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 221,
+    "file": "img/senfeng/sf-coil-ch-sort-1200.webp",
+    "bytes": 49976
+   },
+   {
+    "w": 800,
+    "h": 147,
+    "file": "img/senfeng/sf-coil-ch-sort-800.webp",
+    "bytes": 30168
+   },
+   {
+    "w": 480,
+    "h": 88,
+    "file": "img/senfeng/sf-coil-ch-sort-480.webp",
+    "bytes": 15756
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 29,
+   "file": "img/senfeng/sf-coil-ch-sort-thumb.webp",
+   "bytes": 3670
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-c-1": {
+  "alt": "SF15015C open-style thin-sheet coil-fed laser with its unloading table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 358,
+    "file": "img/senfeng/sf-coil-c-1-1200.webp",
+    "bytes": 54652
+   },
+   {
+    "w": 800,
+    "h": 239,
+    "file": "img/senfeng/sf-coil-c-1-800.webp",
+    "bytes": 34470
+   },
+   {
+    "w": 480,
+    "h": 143,
+    "file": "img/senfeng/sf-coil-c-1-480.webp",
+    "bytes": 18298
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 48,
+   "file": "img/senfeng/sf-coil-c-1-thumb.webp",
+   "bytes": 4374
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-c-front": {
+  "alt": "SF15015C \u2014 decoiler, leveller and open laser built as one unit",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 354,
+    "file": "img/senfeng/sf-coil-c-front-1200.webp",
+    "bytes": 60380
+   },
+   {
+    "w": 800,
+    "h": 236,
+    "file": "img/senfeng/sf-coil-c-front-800.webp",
+    "bytes": 36850
+   },
+   {
+    "w": 480,
+    "h": 142,
+    "file": "img/senfeng/sf-coil-c-front-480.webp",
+    "bytes": 18740
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 47,
+   "file": "img/senfeng/sf-coil-c-front-thumb.webp",
+   "bytes": 4214
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-c-2": {
+  "alt": "SF15015C with a longer unloading conveyor (optional)",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 484,
+    "file": "img/senfeng/sf-coil-c-2-1200.webp",
+    "bytes": 39546
+   },
+   {
+    "w": 800,
+    "h": 323,
+    "file": "img/senfeng/sf-coil-c-2-800.webp",
+    "bytes": 24252
+   },
+   {
+    "w": 480,
+    "h": 194,
+    "file": "img/senfeng/sf-coil-c-2-480.webp",
+    "bytes": 12446
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 65,
+   "file": "img/senfeng/sf-coil-c-2-thumb.webp",
+   "bytes": 3158
+  },
+  "cut": "birefnet"
+ },
+ "sf-top-modules": {
+  "alt": "TOP flexible metal processing line \u2014 decoiler, coil straightener, laser cutting, transfer, panel bending and laser welding modules",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 469,
+    "file": "img/senfeng/sf-top-modules-1200.webp",
+    "bytes": 25734
+   },
+   {
+    "w": 800,
+    "h": 313,
+    "file": "img/senfeng/sf-top-modules-800.webp",
+    "bytes": 14672
+   },
+   {
+    "w": 480,
+    "h": 188,
+    "file": "img/senfeng/sf-top-modules-480.webp",
+    "bytes": 7444
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 63,
+   "file": "img/senfeng/sf-top-modules-thumb.webp",
+   "bytes": 1356
+  }
+ },
+ "sf-top-1": {
+  "alt": "TOP line \u2014 coil feeding the laser, robots and the panel bender downstream",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 513,
+    "file": "img/senfeng/sf-top-1-1200.webp",
+    "bytes": 61432
+   },
+   {
+    "w": 800,
+    "h": 342,
+    "file": "img/senfeng/sf-top-1-800.webp",
+    "bytes": 39376
+   },
+   {
+    "w": 480,
+    "h": 205,
+    "file": "img/senfeng/sf-top-1-480.webp",
+    "bytes": 20888
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 68,
+   "file": "img/senfeng/sf-top-1-thumb.webp",
+   "bytes": 4704
+  },
+  "cut": "birefnet"
+ },
+ "sf-top-3": {
+  "alt": "TOP line from the side \u2014 coil to finished parts",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 210,
+    "file": "img/senfeng/sf-top-3-1200.webp",
+    "bytes": 46308
+   },
+   {
+    "w": 800,
+    "h": 140,
+    "file": "img/senfeng/sf-top-3-800.webp",
+    "bytes": 29108
+   },
+   {
+    "w": 480,
+    "h": 84,
+    "file": "img/senfeng/sf-top-3-480.webp",
+    "bytes": 15168
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 28,
+   "file": "img/senfeng/sf-top-3-thumb.webp",
+   "bytes": 3686
+  },
+  "cut": "birefnet"
+ },
+ "sf-top-cell": {
+  "alt": "TOP line \u2014 robot cell at the panel bender",
+  "variants": [
+   {
+    "w": 650,
+    "h": 300,
+    "file": "img/senfeng/sf-top-cell-650.webp",
+    "bytes": 46482
+   },
+   {
+    "w": 480,
+    "h": 222,
+    "file": "img/senfeng/sf-top-cell-480.webp",
+    "bytes": 29322
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/senfeng/sf-top-cell-thumb.webp",
+   "bytes": 4370
+  }
+ },
+ "sf-top-process": {
+  "alt": "Cutting, bending and welding in one line",
+  "variants": [
+   {
+    "w": 650,
+    "h": 300,
+    "file": "img/senfeng/sf-top-process-650.webp",
+    "bytes": 17006
+   },
+   {
+    "w": 480,
+    "h": 222,
+    "file": "img/senfeng/sf-top-process-480.webp",
+    "bytes": 12224
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/senfeng/sf-top-process-thumb.webp",
+   "bytes": 2614
+  }
+ },
+ "sf-top-pendant": {
+  "alt": "Teach pendant of the TOP line's robots",
+  "variants": [
+   {
+    "w": 650,
+    "h": 300,
+    "file": "img/senfeng/sf-top-pendant-650.webp",
+    "bytes": 23270
+   },
+   {
+    "w": 480,
+    "h": 222,
+    "file": "img/senfeng/sf-top-pendant-480.webp",
+    "bytes": 16580
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/senfeng/sf-top-pendant-thumb.webp",
+   "bytes": 3210
+  }
+ },
+ "sf-coil-clh-1": {
+  "alt": "SF1503CLH aluminum coil-fed laser \u2014 decoiler, aluminum straightener and 6 kW laser",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 202,
+    "file": "img/senfeng/sf-coil-clh-1-1200.webp",
+    "bytes": 61042
+   },
+   {
+    "w": 800,
+    "h": 135,
+    "file": "img/senfeng/sf-coil-clh-1-800.webp",
+    "bytes": 36128
+   },
+   {
+    "w": 480,
+    "h": 81,
+    "file": "img/senfeng/sf-coil-clh-1-480.webp",
+    "bytes": 18238
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 27,
+   "file": "img/senfeng/sf-coil-clh-1-thumb.webp",
+   "bytes": 3604
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-blank-line": {
+  "alt": "Senfeng sheet-coil laser blanking line \u2014 enclosed laser, leveller and decoiler",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 179,
+    "file": "img/senfeng/sf-coil-blank-line-1200.webp",
+    "bytes": 16208
+   },
+   {
+    "w": 800,
+    "h": 120,
+    "file": "img/senfeng/sf-coil-blank-line-800.webp",
+    "bytes": 9732
+   },
+   {
+    "w": 480,
+    "h": 72,
+    "file": "img/senfeng/sf-coil-blank-line-480.webp",
+    "bytes": 5106
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 24,
+   "file": "img/senfeng/sf-coil-blank-line-thumb.webp",
+   "bytes": 1050
+  }
+ },
+ "sf-coil-2012-1": {
+  "alt": "SF2012CH \u2014 double-sided decoiler, leveller and enclosed 12 \u2013 80 kW laser",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 338,
+    "file": "img/senfeng/sf-coil-2012-1-1200.webp",
+    "bytes": 50968
+   },
+   {
+    "w": 800,
+    "h": 225,
+    "file": "img/senfeng/sf-coil-2012-1-800.webp",
+    "bytes": 31818
+   },
+   {
+    "w": 480,
+    "h": 135,
+    "file": "img/senfeng/sf-coil-2012-1-480.webp",
+    "bytes": 17694
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 45,
+   "file": "img/senfeng/sf-coil-2012-1-thumb.webp",
+   "bytes": 4262
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-2012-2": {
+  "alt": "SF2012CH from the laser end",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 352,
+    "file": "img/senfeng/sf-coil-2012-2-1200.webp",
+    "bytes": 51462
+   },
+   {
+    "w": 800,
+    "h": 234,
+    "file": "img/senfeng/sf-coil-2012-2-800.webp",
+    "bytes": 31308
+   },
+   {
+    "w": 480,
+    "h": 141,
+    "file": "img/senfeng/sf-coil-2012-2-480.webp",
+    "bytes": 17598
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 47,
+   "file": "img/senfeng/sf-coil-2012-2-thumb.webp",
+   "bytes": 4206
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-2012-3": {
+  "alt": "SF2012CH \u2014 the double-sided decoiler and the leveller",
+  "variants": [
+   {
+    "w": 1196,
+    "h": 509,
+    "file": "img/senfeng/sf-coil-2012-3-1196.webp",
+    "bytes": 58700
+   },
+   {
+    "w": 800,
+    "h": 340,
+    "file": "img/senfeng/sf-coil-2012-3-800.webp",
+    "bytes": 42806
+   },
+   {
+    "w": 480,
+    "h": 204,
+    "file": "img/senfeng/sf-coil-2012-3-480.webp",
+    "bytes": 24056
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 68,
+   "file": "img/senfeng/sf-coil-2012-3-thumb.webp",
+   "bytes": 5518
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-2012-4": {
+  "alt": "SF2012CH from the side",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 301,
+    "file": "img/senfeng/sf-coil-2012-4-1200.webp",
+    "bytes": 46058
+   },
+   {
+    "w": 800,
+    "h": 201,
+    "file": "img/senfeng/sf-coil-2012-4-800.webp",
+    "bytes": 28184
+   },
+   {
+    "w": 480,
+    "h": 121,
+    "file": "img/senfeng/sf-coil-2012-4-480.webp",
+    "bytes": 15070
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 40,
+   "file": "img/senfeng/sf-coil-2012-4-thumb.webp",
+   "bytes": 3728
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-2012-5": {
+  "alt": "SF2012CH with unloading and sorting conveyors (optional)",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 599,
+    "file": "img/senfeng/sf-coil-2012-5-1200.webp",
+    "bytes": 70416
+   },
+   {
+    "w": 800,
+    "h": 399,
+    "file": "img/senfeng/sf-coil-2012-5-800.webp",
+    "bytes": 42798
+   },
+   {
+    "w": 480,
+    "h": 240,
+    "file": "img/senfeng/sf-coil-2012-5-480.webp",
+    "bytes": 21686
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 80,
+   "file": "img/senfeng/sf-coil-2012-5-thumb.webp",
+   "bytes": 4212
+  },
+  "cut": "birefnet"
+ },
+ "sf-coil-2012-decoiler": {
+  "alt": "Double-sided decoiler \u2014 66,138 lb (30 t) loading capacity",
+  "variants": [
+   {
+    "w": 650,
+    "h": 300,
+    "file": "img/senfeng/sf-coil-2012-decoiler-650.webp",
+    "bytes": 14308
+   },
+   {
+    "w": 480,
+    "h": 222,
+    "file": "img/senfeng/sf-coil-2012-decoiler-480.webp",
+    "bytes": 13196
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/senfeng/sf-coil-2012-decoiler-thumb.webp",
+   "bytes": 2878
+  }
+ },
+ "sf-coil-2012-head": {
+  "alt": "Plate positioning and correction under the cutting head",
+  "variants": [
+   {
+    "w": 650,
+    "h": 300,
+    "file": "img/senfeng/sf-coil-2012-head-650.webp",
+    "bytes": 22226
+   },
+   {
+    "w": 480,
+    "h": 222,
+    "file": "img/senfeng/sf-coil-2012-head-480.webp",
+    "bytes": 20954
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/senfeng/sf-coil-2012-head-thumb.webp",
+   "bytes": 4898
+  }
+ },
+ "sf-coil-2012-waste": {
+  "alt": "Fully automated line \u2014 close to zero waste",
+  "variants": [
+   {
+    "w": 650,
+    "h": 300,
+    "file": "img/senfeng/sf-coil-2012-waste-650.webp",
+    "bytes": 16036
+   },
+   {
+    "w": 480,
+    "h": 222,
+    "file": "img/senfeng/sf-coil-2012-waste-480.webp",
+    "bytes": 11684
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/senfeng/sf-coil-2012-waste-thumb.webp",
+   "bytes": 2638
+  }
  }
 }

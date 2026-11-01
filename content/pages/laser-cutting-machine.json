@@ -88,11 +88,15 @@
   },
   {
    "slug": "coil-fed-laser-cutting-line",
-   "title": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW",
+   "title": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 1.5 to 80 kW",
    "image": "sf-coil-1",
-   "blurb": "Cut blanks straight from the coil: decoiler, leveller and laser on one control for coil to 1/8″ and to 9/16″ plate, and the TOP line with robot sorting, panel bending and welding — the value line.",
+   "blurb": "Cut blanks straight from the coil: five lines for thin, aluminum and 5/16 – 9/16″ coil from 1.5 to 80 kW, and the TOP line with robot sorting, panel bending and welding — the value line.",
    "families": [
-    "sf-coil"
+    "sf-coil",
+    "sf-coil-c",
+    "sf-top",
+    "sf-coil-clh",
+    "sf-coil-2012"
    ],
    "nav_label": "Coil-fed laser lines",
    "cards_title": "Coil-fed laser cutting lines — every family"
@@ -309,7 +313,7 @@
    [
     "Coil-fed laser lines",
     "Decoiler, leveller and laser on one control",
-    "coil to 9/16″ plate, 3 – 80 kW",
+    "thin, aluminum and 9/16″ coil, 1.5 – 80 kW",
     "High-volume blanks straight from coil",
     {
      "href": "coil-fed-laser-cutting-line.html",

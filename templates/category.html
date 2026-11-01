@@ -31,10 +31,18 @@
       <p class="hero-updated">Specifications checked against the manufacturer's current catalogue · page updated <time datetime="{{ page.date_modified }}">{{ page.updated_label }}</time></p>
     </div>
     {% set hl = page.hero_links or {} %}
-    <div class="hero-art{{ ' is-large' if page.hero_large else '' }}">
+    {% set many = page.hero_minis_all and (page.hero_image_secondary or [])|length > 2 %}
+    <div class="hero-art{{ ' is-large' if page.hero_large else '' }}{{ ' has-many' if many else '' }}">
+      {% if many %}<div class="hero-stage">{% endif %}
       <div class="hero-band" aria-hidden="true"></div>
       {% if hl.get(page.hero_image) %}<a class="hero-link" href="{{ hl[page.hero_image] }}">{% endif %}<img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, {{ 820 if page.hero_large else 680 }}px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">{% if hl.get(page.hero_image) %}</a>{% endif %}
-      {% if page.hero_image_secondary %}
+      {% if many %}</div>
+      {# every product item of the page, small, with its name (the owner, Nov 1 2026) #}
+      {% set nm = page.hero_image_secondary|length %}
+      <ul class="hero-minis is-many" style="--n: {{ nm if nm <= 4 else (3 if nm <= 6 else 4) }}">
+        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 96 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 190 %}{% set mw = 190 %}{% set mh = (190 * m.h / m.w) | round | int %}{% endif %}<li>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{{ page.hero_mini_labels[n] }}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>{% endfor %}
+      </ul>
+      {% elif page.hero_image_secondary %}
       <div class="hero-minis">
         {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
       </div>
@@ -151,7 +159,7 @@
           <div class="equip-tabs" role="tablist" aria-label="Standard equipment and options" hidden>
             <button type="button" class="equip-tab" role="tab" id="{{ f.id }}-tab-std" aria-controls="{{ f.id }}-std" aria-selected="true">Standard<span class="equip-word"> equipment</span><span class="equip-count">{{ f.features|length }}</span></button>
             {% if opt_tab %}<button type="button" class="equip-tab" role="tab" id="{{ f.id }}-tab-opt" aria-controls="{{ f.id }}-opt" aria-selected="false" tabindex="-1">Optional<span class="equip-word"> equipment</span><span class="equip-count">{{ f.optional|length }}</span></button>{% endif %}
-            {% for t in x_tabs %}<button type="button" class="equip-tab" role="tab" id="{{ f.id }}-tab-{{ t.id }}" aria-controls="{{ f.id }}-{{ t.id }}" aria-selected="false" tabindex="-1"><span class="equip-word">{{ t.label_pre }}</span>{{ t.label_main }}<span class="equip-chip">Option</span></button>{% endfor %}
+            {% for t in x_tabs %}<button type="button" class="equip-tab is-option" role="tab" id="{{ f.id }}-tab-{{ t.id }}" aria-controls="{{ f.id }}-{{ t.id }}" aria-selected="false" tabindex="-1"><span class="equip-word">{{ t.label_pre }}</span>{{ t.label_main }}<span class="equip-chip">Option</span></button>{% endfor %}
           </div>
           {% endif %}
           <div class="equip-std" id="{{ f.id }}-std"{% if eq_tabs %} role="tabpanel" aria-labelledby="{{ f.id }}-tab-std"{% endif %}>

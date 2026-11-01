@@ -185,6 +185,15 @@ small { font-size: .85em; }
 .hero-art.is-large .hero-main { width: min(100%, 820px); }
 .hero-minis { position: relative; z-index: 2; display: flex; align-items: flex-end; gap: 10px; justify-self: end; margin-top: -6px; }
 .hero-minis img { object-fit: contain; object-position: bottom; filter: drop-shadow(0 10px 14px rgba(30, 30, 30, .32)); }
+/* every product item small under the hero, with its name (trial on the fiber laser page, the owner, Nov 1 2026) */
+.hero-stage { position: relative; width: 100%; display: grid; justify-items: center; }
+.hero-art.has-many .hero-band { top: 8%; height: 100%; }
+.hero-minis.is-many { list-style: none; margin: 6px 0 0; padding: 0; width: min(100%, 700px); justify-self: center; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 14px 12px; align-items: end; }
+.hero-minis.is-many li { display: flex; justify-content: center; }
+.hero-minis.is-many .hero-mini-link { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; line-height: 1.2; text-decoration: none; color: var(--charcoal); }
+.hero-minis.is-many img { filter: drop-shadow(0 8px 10px rgba(30, 30, 30, .28)); }
+.hero-mini-cap { font-family: var(--cond); font-weight: 600; font-size: 15px; text-align: center; color: var(--charcoal); }
+.hero-minis.is-many a.hero-mini-link:hover .hero-mini-cap { color: var(--orange-ink); text-decoration: underline; }
 
 /* ---------- jump nav ---------- */
 .jump { position: sticky; top: var(--header-h); z-index: 40; background: var(--charcoal); color: #fff; }
@@ -227,8 +236,13 @@ small { font-size: .85em; }
 .equip-count { min-width: 24px; padding: 1px 7px; border-radius: 11px; background: var(--paper); border: 1px solid var(--line); color: var(--steel); font-family: var(--sans, inherit); font-weight: 600; font-size: 13px; line-height: 18px; text-align: center; }
 .equip-tab[aria-selected="true"] .equip-count { background: var(--orange); border-color: var(--orange); color: var(--charcoal); }
 /* an option tab (the Senfeng air-cutting package, the owner, Nov 1 2026): a small "Option" chip and a short write-up */
-.equip-chip { padding: 1px 7px; border-radius: 11px; border: 1px solid var(--orange); background: #fff4e8; color: var(--charcoal); font-family: var(--sans, inherit); font-weight: 700; font-size: 11px; line-height: 16px; letter-spacing: .06em; text-transform: uppercase; }
-.equip-tab[aria-selected="true"] .equip-chip { background: var(--orange); }
+/* the option tab stands out (the owner, Nov 1 2026): an orange button, and its panel on an orange-tinted card with an orange frame */
+.equip-tab.is-option { background: var(--orange); color: var(--ink); border-radius: 6px 6px 0 0; padding: 8px 14px 7px; border-bottom-color: var(--orange-deep); }
+.equip-tab.is-option:hover { background: var(--orange-deep); color: var(--ink); }
+.equip-tab.is-option[aria-selected="true"] { background: var(--orange-deep); color: var(--white); border-bottom-color: var(--ink); }
+.equip-chip { padding: 1px 7px; border-radius: 11px; background: var(--white); color: var(--orange-ink); font-family: var(--sans, inherit); font-weight: 700; font-size: 11px; line-height: 16px; letter-spacing: .06em; text-transform: uppercase; }
+.equip-x { background: var(--orange-tint); border: 2px solid var(--orange); border-radius: 8px; padding: 6px 18px 16px; margin-top: 12px; }
+.equip-x .features li { border-top-color: rgba(242, 138, 31, .28); }
 .equip-x-lead { margin: 12px 0 2px; }
 .equip-x-h { margin: 14px 0 0; font-family: var(--cond); font-weight: 700; font-size: 17px; letter-spacing: .02em; color: var(--charcoal); }
 .equip-x .features { margin-top: 2px; }
@@ -437,8 +451,9 @@ small { font-size: .85em; }
 .subpages { padding: 34px 0 6px; }
 .subpage-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .subpage-card { border: 1px solid var(--line); border-top: 5px solid var(--orange); background: var(--white); display: grid; grid-template-rows: auto 1fr; }
-.subpage-art { display: flex; align-items: center; justify-content: center; height: 250px; padding: 16px; background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); }
-.subpage-art img { max-height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+.subpage-art { display: flex; align-items: center; justify-content: center; height: 250px; padding: 12px; background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); }
+/* the machine fills its frame (the owner, Nov 1 2026): a long tube laser used to show at its 360 px srcset width */
+.subpage-art img { width: 100%; height: 100%; object-fit: contain; }
 .subpage-body { padding: 14px 18px 18px; }
 .subpage-body h2 { font-size: 28px; margin-bottom: 6px; }
 .subpage-body h2 a { color: var(--charcoal); text-decoration: none; }
@@ -552,7 +567,7 @@ small { font-size: .85em; }
 .related-cards a { display: flex; flex-direction: column; height: 100%; border: 1px solid var(--line); border-top: 4px solid var(--orange); background: var(--white); color: var(--charcoal); text-decoration: none; border-radius: var(--radius); overflow: hidden; }
 .related-cards a:hover, .related-cards a:focus-visible { border-color: var(--orange); box-shadow: 0 6px 18px rgba(30, 30, 30, .08); }
 .related-art { display: flex; align-items: center; justify-content: center; height: 190px; padding: 14px; background: linear-gradient(180deg, #fff 0%, #f3f3f4 100%); border-bottom: 1px solid var(--line-soft); }
-.related-art img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.related-art img { width: 100%; height: 100%; object-fit: contain; }
 .related-cards a:hover .related-art img { transform: scale(1.03); transition: transform .2s; }
 .related-body { display: block; padding: 14px 18px 18px; }
 .related-cards strong { display: block; font-family: var(--cond); font-size: 21px; font-weight: 600; margin-bottom: 6px; }

@@ -150,20 +150,28 @@ SHEET = {
                  {"href": "press-brake.html", "label": "Press brakes"}],
     ),
     "coil-fed-laser-cutting-line": dict(
-        title="Coil-Fed Laser Cutting Lines for Sale in Canada — Uncoil, Level and Cut to 9/16″, 3–80 kW | NovoTech",
-        meta="Coil-fed fiber laser cutting lines that uncoil, level and cut blanks straight from the coil — coil to 1/8″ and to 9/16″ plate, 3 to 80 kW, and the TOP line with robot sorting, panel bending and welding — sold, installed and supported in Canada.",
-        h1="Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW",
+        title="Coil-Fed Laser Cutting Lines for Sale in Canada — Thin, Aluminum and 9/16″ Coil, TOP Automated Line, 1.5–80 kW | NovoTech",
+        meta="Five Senfeng coil-fed fiber laser lines sold, installed and supported in Canada: the SF1503CH for thin coil, the open-style SF15015C, the TOP line from coil to bent and welded parts, the SF1503CLH for aluminum coil and the SF2012CH for 5/16 – 9/16″ coil to 80 kW.",
+        h1="Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 1.5 to 80 kW",
         intro="A coil-fed laser line uncoils, levels and feeds strip straight into the laser, so blanks are cut without a sheet ever being "
-              "handled, stacked or scrapped at the edges and with no limit on part length — the line for high-volume parts. NovoTech sells "
-              "Senfeng's lines in Canada, on this page and from the value line: the SF1503CH for coil to 1/8″ and 16.5 tons on a 5 × 10 ft "
-              "laser with 3 to 6 kW, the SF2012CH that levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW, and the TOP "
-              "line that adds robot sorting, panel bending and welding for a complete coil-to-part cell. The family below has its full specification table, photos and brochure. Every line comes with "
-              "a CSA-approved panel, chiller and software, installed, trained and supported from Mississauga, ON, Canada.",
-        points=["SF1503CH: coil to 1/8″ and 16.5 US tons, 5 × 10 ft laser, 3 – 6 kW",
-                "SF2012CH: 5/16″ – 9/16″ plate from 22-ton coils, 6.6 × 13 ft cutting area, 12 – 80 kW",
-                "TOP line: coil, laser, robot sorting, panel bending and welding in one cell — for automotive, appliance, enclosure and HVAC volume"],
+              "handled, stacked or scrapped at the edges and with no limit on part length — and coil costs less than cut-to-length sheet. "
+              "NovoTech sells five Senfeng lines in Canada, all on this page and from the value line: the SF1503CH for thin coil to 0.118″ "
+              "on a 5 × 10 ft laser with 3 to 6 kW; the open-style SF15015C, the affordable line for 0.031 to 0.047″ coil; the TOP line "
+              "that takes coil to cut, bent, welded and stacked parts; the SF1503CLH with a straightener made for aluminum coil; and the "
+              "SF2012CH that levels and cuts 0.314 to 0.551″ coil from 22-ton coils with 12 to 80 kW. Each line below has its full "
+              "specification table and photos. Every line comes with a CSA-approved panel, chiller and software, installed, trained and "
+              "supported from Mississauga, ON, Canada.",
+        points=["SF1503CH: thin coil 0.031 – 0.118″ to 16.5 US tons, 5 × 10 ft laser, 3 – 6 kW",
+                "SF15015C: open-style line for 0.031 – 0.047″ coil in half the floor space, 1.5 – 3 kW",
+                "TOP line: coil, laser, robot sorting, panel bending and welding in one unmanned line",
+                "SF1503CLH: aluminum coil 0.023 – 0.118″ with a straightener built for aluminum, 6 kW",
+                "SF2012CH: 5/16 – 9/16″ coil to 22 US tons on a 13 × 6.6 ft laser, 12 – 80 kW"],
         hero="sf-coil-1", minis=["sf-coil-2", "sf-coil-top"],
-        groups=[("ls-value-coil", "Coil-fed laser cutting lines · value line", "Uncoil, level and cut in one line — coil to 1/8″ and to 9/16″ plate, 3 to 80 kW.")],
+        groups=[("ls-value-coil", "SF1503CH coil-fed laser for thin coil · value line", "Thin coil 0.031 – 0.118″ to 16.5 US tons, 5 × 10 ft, 3 – 6 kW."),
+                ("ls-value-coil-c", "SF15015C open-style thin-sheet coil line · value line", "The affordable line for 0.031 – 0.047″ coil, 1.5 – 3 kW."),
+                ("ls-value-top", "TOP series automated metal processing line · value line", "Coil to cut, bent, welded and stacked parts in one line."),
+                ("ls-value-clh", "SF1503CLH aluminum coil-fed laser · value line", "Aluminum coil 0.023 – 0.118″ with a straightener built for aluminum, 6 kW."),
+                ("ls-value-coil-heavy", "SF2012CH coil-fed line for thick coil · value line", "5/16 – 9/16″ coil to 22 US tons, 13 × 6.6 ft, 12 – 80 kW.")],
         faq=[faq("senfeng-fiber-lasers", "When does a coil-fed line pay off?")[0],
              POWER_FAQ, GAS_FAQ, SITE_FAQ, VOLT_FAQ_GENERIC],
         related=[{"href": "fiber-laser-cutting-machine.html", "label": "Fiber laser cutting machines"}, {"href": "panel-bender.html", "label": "CNC panel benders"},
@@ -173,24 +181,24 @@ SHEET = {
 
 TUBE = {
     "tube-laser-cutter": dict(
-        title="Tube Laser Cutters for Sale in Canada — Two- & Three-Chuck, Ø0.3″ to 14″, 20–39 ft Bars | NovoTech",
-        meta="Tube laser cutting machines sold, installed and supported in Canada: two- and three-chuck lasers for round, square and rectangular tube Ø0.3″ to 14″ on 20 to 39 ft bars, 1.5 to 40 kW, bundle loaders and ±45° bevel heads — premium E-FTL made in Turkey, value-line ULT, T, PLUS and GT.",
-        h1="Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 39 ft bars, 1.5 to 40 kW",
+        title="Tube Laser Cutters for Sale in Canada — Two- & Three-Chuck, Ø0.3″ to 14″, 20–39 ft Tubes | NovoTech",
+        meta="Tube laser cutting machines sold, installed and supported in Canada: two- and three-chuck lasers for round, square and rectangular tube Ø0.3″ to 14″ on 20 to 39 ft tubes, 1.5 to 40 kW, bundle loaders and ±45° bevel heads — premium E-FTL made in Turkey, value-line ULT, T, PLUS and GT.",
+        h1="Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 39 ft tubes, 1.5 to 40 kW",
         intro="A tube laser cutter holds the bar in two chucks — three on the zero-tail versions — turns and feeds it under the head and cuts "
               "lengths, holes, copes, slots and notches from the 3D model in one pass, with no saw, drill, notcher or layout; the bundle loader "
               "feeds the next bar. For tube to Ø14″ it is the machine most shops need. NovoTech sells two lines in Canada, both on this page: "
               "the premium Dener E-FTL made in Turkey, with 1 G servo chucks for Ø0.3″ to 13.8″ at 394 ft/min and ±0.05 mm, 3 to 20 kW; and the "
-              "value line — NovoTech's own ULT with two or three pneumatic chucks for Ø0.4″ to 14.2″ on 20, 29.5 or 39 ft bars with 1.5 to 40 kW, "
+              "value line — NovoTech's own ULT with two or three pneumatic chucks for Ø0.4″ to 14.2″ on 20, 29.5 or 39 ft tubes with 1.5 to 40 kW, "
               "the two-chuck T series from Ø0.5″ and 1.5 kW, and the high-speed PLUS and ±45° bevel-cutting GPLUS / GT. Each family below has its full specification table, photos and brochure. "
               "Every machine comes with a CSA-approved panel, chiller and tube nesting software, installed, trained and supported from "
               "Mississauga, ON, Canada. For beams and pipe to Ø25″ and 49 ft see the heavy-duty tube lasers.",
         points=["Premium E-FTL: Ø0.3″ – 13.8″, 1 G servo chucks, 394 ft/min, ±0.05 mm, 3 – 20 kW, bars to 39 ft",
-                "Value ULT: two or three chucks, Ø0.4″ – 14.2″, square to 13.8″, 20 – 39 ft bars to 2,205 lb, 1.5 – 40 kW; T series from Ø0.5″ and 1.5 kW",
+                "Value ULT: two or three chucks, Ø0.4″ – 14.2″, square to 13.8″, 20 – 39 ft tubes to 2,205 lb, 1.5 – 40 kW; T series from Ø0.5″ and 1.5 kW",
                 "PLUS high-speed and GPLUS / GT ±45° bevel lasers Ø0.5″ – 14″; bundle loaders, following supports and unloaders on every machine"],
         hero="dn-tube-2", minis=["vn-ult-1", "sf-t-1"],
         groups=[("lt-premium-eftl", "E-FTL tube lasers · premium line", "Dener's tube laser with 1 G servo chucks — Ø0.3″ to 13.8″, 3 to 20 kW, ±0.05 mm."),
-                ("lt-value-ult", "ULT tube and pipe lasers · value line", "NovoTech's own two- and three-chuck tube lasers, Ø0.4″ to 14.2″, 20 – 39 ft bars, 1.5 to 40 kW."),
-                ("lt-value-t", "T series two-chuck tube lasers · value line", "The entry tube laser from Ø0.5″ and 1.5 kW, 20 – 39 ft bars."),
+                ("lt-value-ult", "ULT tube and pipe lasers · value line", "NovoTech's own two- and three-chuck tube lasers, Ø0.4″ to 14.2″, 20 – 39 ft tubes, 1.5 to 40 kW."),
+                ("lt-value-t", "T series two-chuck tube lasers · value line", "The entry tube laser from Ø0.5″ and 1.5 kW, 20 – 39 ft tubes."),
                 ("lt-value-plus", "PLUS high-speed and GT bevel-cutting tube lasers · value line", "Faster chucks and ±45° bevel cutting for weld preparation, Ø0.5″ to 14″.")],
         faq=[faq("tube-laser-cutting-machine", "What can a tube laser cut?")[0],
              faq("novotech-tube-lasers", "Two chucks or three?")[0],
@@ -274,7 +282,9 @@ def build():
             write_category(slug, p, members, set_name, LN.SECTIONS[kind]["section"], hub=LN.hub(kind), siblings=LN.siblings(kind),
                            extra={"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **video,
                                   "nav_label": next(nav for s, _, _, _, nav, _ in LN.SECTIONS[kind]["subpages"] if s == slug),
-                                  "catalogue_pdf": None, "catalogue_pdfs": pdfs, "spec_downloads": specs})
+                                  "catalogue_pdf": None, "catalogue_pdfs": pdfs, "spec_downloads": specs,
+                                  # trial (the owner, Nov 1 2026): every product item small under the hero
+                                  **({"hero_minis_all": True} if slug == "fiber-laser-cutting-machine" else {})})
             print(f"{slug}: {len(members)} families, {n} models, {len(pdfs)} brochures")
 
 

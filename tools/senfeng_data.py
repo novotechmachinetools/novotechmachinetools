@@ -211,16 +211,41 @@ T_3D = table("SF3015TD five-axis 3D laser", "1 model · 5 × 10 ft travel · 3 �
     ("Machine cooling", ["air-cooled"]), ("Worktable", ["180° dual-station rotary table, or dual-drive servo shuttle table"]),
     ("Dimensions L × W × H", [dims_ft(19.6, 9.1, 9.0)])])
 
-T_COIL = table("Coil-fed laser cutting lines", "2 lines · coil to 9/16″ plate", ["SF1503CH", "SF2012CH"], [
-    ("Coil thickness", ["to 1/8″ (3 mm)", "5/16″ – 9/16″ (8 – 14 mm)"]),
-    ("Sheet width", ["to 59″ (1,500 mm)", "to 78.7″ (2,000 mm)"]),
-    ("Cutting area", [area_in(118.1, 59.0), area_in(157.4, 78.7)]),
-    ("Laser power", ["3 – 6 kW", "12 – 80 kW"]),
-    ("Coil inside Ø · max. outside Ø", ["20″ · 55″", "24 / 30″ · 71″"]),
-    ("Max. coil weight", ["16.5 US tons (15 t)", "22 US tons (20 t)"]),
-    ("Max. feeding speed", [ftmin(49.2), ftmin(32.8)]),
-    ("Levelling accuracy", ["±0.00007 in/ft²", "±0.0002 in/ft²"]),
-    ("Positioning accuracy", ["±0.00006 in/ft · repeat ±0.0008″", "±0.002″ · repeat ±0.0008″"])])
+# coil-fed lines, five series as Senfeng USA lists them (the owner, Nov 1 2026): the series pages on senfenglaserusa.com, the
+# one-page leaflets and the "Sheet Coil Laser Blanking Line" brochure; where the pages and leaflets differ the USA page is used
+CL_GK = ["thickness", "area", "power", "coil", "speed"]
+CL_G_FROM = ["Coil thickness", "Working area", "Laser power", "Max. coil weight", "Max. feeding speed"]
+T_COIL = table("SF1503CH coil-fed fiber laser", "1 model · thin coil 0.031 – 0.118″ · 5 × 10 ft · 3 – 6 kW", ["SF1503CH"], [
+    ("Coil thickness", ["0.031 – 0.118″ (0.8 – 3 mm)"]), ("Working area", [area_in(118.1, 59.0)]),
+    ("Coil inside Ø · max. outside Ø", ["Ø20″ (508 mm) · Ø55.1″ (1,400 mm)"]), ("Max. coil weight", ["16.5 US tons (15 t)"]),
+    ("Max. feeding speed", [ftmin(49.2)]), ("Levelling accuracy", ["±0.00007 in/ft²"]), ("Laser power", ["3 – 6 kW"]),
+    ("Positioning accuracy", [ACC])])
+T_COIL_C = table("SF15015C open-style thin-sheet coil-fed laser", "1 model · coil 0.031 – 0.047″ · 5 × 10 ft · 1.5 – 3 kW", ["SF15015C"], [
+    ("Coil thickness", ["0.031 – 0.047″ (0.8 – 1.2 mm)"]), ("Sheet width", ["31.4 – 59.0″ (800 – 1,500 mm)"]), ("Working area", [area_in(118.1, 59.0)]),
+    ("Coil inside Ø · outside Ø", ["Ø20 or 24″ (508 / 610 mm) · Ø31.4 – 59.0″ (800 – 1,500 mm)"]),
+    ("Max. coil weight", ["3, 8, 10 or 15 t (3.3 – 16.5 US tons)"]), ("Max. feeding speed", ["0 – 49 ft/min (0 – 15 m/min)"]),
+    ("Sheet flatness", ["±0.079″ per ft² (±2 mm/m²)"]), ("Levelling rollers", ["11"]), ("Laser power", ["1.5 – 3 kW"]),
+    ("Electro-optical efficiency", ["37 %"]), ("Positioning accuracy", [ACC])])
+T_TOP = table("TOP series flexible metal processing line", "SF1503CH-TOP RC3000W · coil 0.024 – 0.079″ · 5 × 10 ft laser", ["SF1503CH-TOP RC3000W"], [
+    ("Coil thickness", ["0.024 – 0.079″ (0.6 – 2 mm); max. coil 118.1 × 59.0 × 0.12″ (3,000 × 1,500 × 3 mm)"]),
+    ("Coil width", ["23.6 – 59.1″ (600 – 1,500 mm)"]), ("Working area", [area_in(118.1, 59.0)]),
+    ("Coil inside Ø · max. outside Ø", ["Ø20″ (508 mm) · Ø55.1″ (1,400 mm)"]), ("Max. coil weight", ["11 US tons (10 t)"]),
+    ("Max. feeding speed", [ftmin(32.8)]), ("Levelling accuracy", ["±0.00007 in/ft²"]), ("Laser power", ["3 kW"]),
+    ("Positioning accuracy", [ACC]),
+    ("Stations", ["decoiler and leveller, laser cutting, robot unloading and sorting, panel bending, laser welding, stacking"])])
+T_CLH = table("SF1503CLH aluminum coil-fed fiber laser", "1 model · aluminum coil 0.023 – 0.118″ · 6 kW", ["SF1503CLH"], [
+    ("Coil thickness", ["0.023 – 0.118″ (0.6 – 3 mm)"]),
+    ("Working area", [area_in(118.1, 59.0) + "; 19.7 × 4.9 ft (6,000 × 1,500 mm) long-table version"]),
+    ("Coil inside Ø · max. outside Ø", ["Ø20″ (508 mm) · Ø55.1″ (1,400 mm)"]),
+    ("Max. coil weight", ["11 US tons (10 t); 16.5 US tons (15 t) on the long-table version"]),
+    ("Max. feeding speed", [ftmin(32.8)]), ("Levelling accuracy", ["±0.00005 in/ft²"]), ("Laser power", ["6 kW"]),
+    ("Positioning accuracy", [ACC])])
+T_COIL_HEAVY = table("SF2012CH coil-fed laser blanking line for thick coil", "1 model · coil 5/16 – 9/16″ · 13 × 6.6 ft · 12 – 80 kW", ["SF2012CH"], [
+    ("Coil thickness", ["0.314 – 0.551″ (8 – 14 mm)"]), ("Working area", [area_in(157.4, 78.7)]),
+    ("Coil inside Ø · outside Ø", ["Ø24 or 30″ (610 / 762 mm) · Ø39.3 – 70.8″ (1,000 – 1,800 mm)"]),
+    ("Max. coil weight", ["22 US tons (20 t); the double-sided decoiler holds 66,138 lb (30 t)"]),
+    ("Max. feeding speed", [ftmin(32.8)]), ("Levelling accuracy", ["±0.00019 in/ft²"]), ("Laser power", ["12 – 80 kW"]),
+    ("Positioning accuracy", [ACC])])
 
 # ------------------------------------------------------------------------------------------------ tube lasers
 # (model, kW lo, kW hi, length lo ft, length hi ft, round lo, round hi, square hi, load lb, speed, rpm, dims)
@@ -400,9 +425,11 @@ LASER_FAMILIES = [
                    "Smoke-free extraction: double air duct, three zones and follow-up air valves; anti-burning platform protects the dust cover",
                    "Safety light curtains at the front and rear of the beam; smart cameras with a safety-lock alarm"] + LZ_STD,
          optional=LZ_OPT,
-         images=["sf-1530np", "sf-1530np-showroom", "sf-1530n", "sf-1530g", "sf-1530np-side", "sf-1530n-rear", "sf-1530g-table", "sf-1530n-table",
-                 "sf-1530np-2", "sf-1530np-trolley", "sf-1530np-head", "sf-1530np-safety", "sf-1530-antiburn", "sf-1530-dust",
-                 "sf-1530np-cabinet", "sf-1530np-container"],
+         extra_tabs=[air_tab("Offered on the compact machines with a 6 kW or larger source — the SF1530N and SF1530NP.")],   # (the owner, Nov 1 2026)
+         images=["sf-1530np", "sf-1530np-showroom", "sf-1530np-side", "sf-1530np-2", "sf-1530np-trolley", "sf-1530np-head", "sf-1530np-safety",
+                 "sf-1530np-cabinet", "sf-1530np-container",          # NP, then N, then G, each series together (the owner, Nov 1 2026)
+                 "sf-1530n", "sf-1530n-rear", "sf-1530n-table",
+                 "sf-1530g", "sf-1530g-table", "sf-1530-antiburn", "sf-1530-dust"],
          videos=[],
          # the SF1530NP 3 – 6 kW technical solution in NovoTech format (tools/brochure/senfeng_h_editions.py) — the owner, Nov 1 2026
          spec_pdf=dict(file="files/NovoTech-Senfeng-SF1530NP-Fiber-Laser-Technical-Specification-2026.pdf",
@@ -462,9 +489,11 @@ LASER_FAMILIES = [
          features=["Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2.8 G"] + LZ_STD,
          optional=LZ_OPT,
          extra_tabs=[air_tab("Offered on the H4 machines of this series.")],
-         images=["sf-h-1", "sf-h-2", "sf-h-hollow-bed", "sf-h-beam", "sf-h-dust", "sf-h-door", "sf-h-zaxis", "sf-h-monitor", "sf-h-raycus",
-                 "sf-h-max", "sf-h-boci", "sf-h-raytools", "sf-h-sample", "sf-h-sample-2", "sf-h-tower", "sf-h-loader", "sf-h-swingarm",
-                 "sf-h-line", "sf-h5"],
+         images=["sf-h-1", "sf-h-2", "sf-h5",                 # the owner's order, Nov 1 2026: machines, automation, air cutting, parts
+                 "sf-h-tower", "sf-h-loader", "sf-h-swingarm", "sf-h-line",
+                 "sf-h-air-1", "sf-h-air-2", "sf-h-air-3", "sf-h-air-4", "sf-h-air-5",
+                 "sf-h-hollow-bed", "sf-h-beam", "sf-h-dust", "sf-h-door", "sf-h-zaxis", "sf-h-monitor", "sf-h-raycus",
+                 "sf-h-max", "sf-h-boci", "sf-h-raytools", "sf-h-sample", "sf-h-sample-2"],
          videos=[],
          # Senfeng's two SF3015H technical solutions in NovoTech format (tools/brochure/senfeng_h_editions.py) — the owner, Nov 1 2026
          spec_pdfs=[dict(file="files/NovoTech-Senfeng-SF3015H-Medium-High-Power-Laser-Technical-Specification-2026.pdf",
@@ -528,18 +557,112 @@ LASER_FAMILIES = [
          videos=[],
          specs=spec([T_3D], ["area", "power", "speed", "axes", "dims"], ["Travel X × Y", "Laser power", "Max. no-load speed", "A axis · C axis", "Dimensions L × W × H"], POWER_NOTE)),
     dict(id="sf-coil", group="laser-senfeng", page=P_LASER, brand=BRAND,
-         name="Coil-fed laser cutting lines, coil to 9/16″ plate, 3 – 80 kW",
-         short="Coil-fed laser lines",
-         models_label="SF1503CH · SF2012CH · TOP line",
-         summary="Cut straight from the coil: a decoiler, straightener and leveller feed the sheet onto the laser table so there is no sheet "
-                 "handling, no offcuts and no limit on part length. The SF1503CH takes coil to 1/8″ and 16.5 tons on a 5 × 10 ft machine; the SF2012CH levels and cuts 5/16″ to 9/16″ "
-                 "plate from 22-ton coils with 12 to 80 kW. The TOP line adds robot sorting, panel bending and welding for a complete "
-                 "coil-to-part cell.",
-         features=["Decoiler, leveller and laser on one control; coil to 22 US tons; feeding to 49 ft/min; 3 – 80 kW"] + LZ_STD[:2] + [CERT],
-         optional=["Robot sorting and stacking", "Panel bender and welding stations (TOP line)", "Stereo pallet racks"],
-         images=["sf-coil-1", "sf-coil-2", "sf-coil-top", "sf-coil-scene", "sf-coil-parts"],
+         name="SF1503CH coil-fed fiber laser, thin coil 0.031 – 0.118″, 5 × 10 ft, 3 – 6 kW",
+         short="SF1503CH coil-fed laser",
+         models_label="SF1503CH",
+         summary="Thin coil cut to net size with no sheet handling: a feeding trolley, single-support decoiler, leveller, positioning and "
+                 "correction device and a 5 × 10 ft laser run on one control, so coil from 0.031 to 0.118″ (0.8 – 3 mm) and up to 16.5 US "
+                 "tons goes from loading to finished blanks automatically. Levelling relieves the coil's internal stress for flatter sheet "
+                 "and cleaner cuts, lead-screw correction rollers guide the strip without scratching it and position it without laser "
+                 "edge-finding, and the line works at least 30 % faster than cutting sheets, with close to zero waste — on coil that costs "
+                 "less than cut-to-length sheet. Made for high-variety, small-batch thin work: automotive sheet-metal parts, aluminum "
+                 "veneer, electrical cabinets, metal doors, kitchenware and equipment enclosures.",
+         features=["Coil 0.031 – 0.118″ (0.8 – 3 mm) to 16.5 US tons; 5 × 10 ft working area; feeding to 49 ft/min; 3 – 6 kW",
+                   "Feeding trolley, single-support decoiler for 22,000 lb, auxiliary support, feeder, leveller, positioning and correction "
+                   "device and laser on one electronic control",
+                   "Stepless speed regulation: a geared motor drives the support roller so the strip hangs free between decoiler and feeder "
+                   "and its stress is relieved",
+                   "Ultra-precision correction: lead-screw-driven rollers straighten and guide the sheet without scratches and position it "
+                   "without laser edge-finding",
+                   "Process package for fast, mirror-finish cutting of thin stainless; at least 30 % faster than cutting sheets, close to zero waste",
+                   CERT + "; " + VOLT],
+         optional=["Automatic unloading, sorting and stacking", "Nesting software", "Custom voltage transformer"],
+         images=["sf-coil-1", "sf-coil-ch-1", "sf-coil-ch-front", "sf-coil-ch-side", "sf-coil-ch-stack", "sf-coil-ch-sort", "sf-coil-scene", "sf-coil-parts"],
          videos=[],
-         specs=spec([T_COIL], ["thickness", "width", "power", "coil", "speed"], ["Coil thickness", "Sheet width", "Laser power", "Max. coil weight", "Max. feeding speed"], POWER_NOTE)),
+         specs=spec([T_COIL], CL_GK, CL_G_FROM, POWER_NOTE)),
+    dict(id="sf-coil-c", group="laser-senfeng", page=P_LASER, brand=BRAND,
+         name="SF15015C open-style thin-sheet coil-fed laser, coil 0.031 – 0.047″, 5 × 10 ft, 1.5 – 3 kW",
+         short="SF15015C thin-coil laser",
+         models_label="SF15015C",
+         summary="The affordable way into coil-fed cutting: an open-style, low-power line for regular-sized thin coil from 0.031 to 0.047″ "
+                 "(0.8 – 1.2 mm) that loads, decoils, levels, feeds, cuts and unloads with basically no manual work. The leveller and the "
+                 "cutter are built as one unit, so the line needs at most half the floor space of others and ships, installs and "
+                 "commissions as one machine. Correcting rollers follow the coil's width for accurate positioning without scratches, the "
+                 "control picks the assist gas and its pressure for each job, and Senfeng puts the total running cost about 10 % below "
+                 "comparable lines — at least 30 % faster than before, with no coil wasted.",
+         features=["Coil 0.031 – 0.047″ (0.8 – 1.2 mm), 31.4 – 59″ wide, 3 to 15 t; 5 × 10 ft working area; 1.5 – 3 kW at 37 % electro-optical efficiency",
+                   "Fully automatic loading, decoiling, levelling, feeding, cutting and unloading — at least 30 % faster, no coil wasted",
+                   "Leveller and cutter built as one unit: half the footprint, easier to ship, install and commission",
+                   "Real-time correction rollers set the coil position by its width for accurate cuts without scratches",
+                   "Assist gas and pressure chosen automatically; total running cost about 10 % below comparable lines",
+                   "11 levelling rollers; feeding 0 – 49 ft/min",
+                   CERT + "; " + VOLT],
+         optional=["Longer unloading conveyor", "Custom voltage transformer"],
+         images=["sf-coil-3", "sf-coil-c-1", "sf-coil-c-front", "sf-coil-c-2"],
+         videos=[],
+         specs=spec([T_COIL_C], CL_GK, CL_G_FROM, POWER_NOTE)),
+    dict(id="sf-top", group="laser-senfeng", page=P_LASER, brand=BRAND,
+         name="TOP series automated metal processing line — coil to cut, bent, welded and stacked parts",
+         short="TOP automated line",
+         models_label="SF1503CH-TOP RC3000W",
+         summary="From coil to finished parts with no one at the machine: the TOP line puts a coil-fed laser, robot sorting, a panel "
+                 "bending centre, a laser welding station and stacking in one line, so coil from 0.024 to 0.079″ is decoiled, levelled, "
+                 "cut, unloaded, bent, welded and stacked in one run — 24/7 unmanned production at lower labour cost and consistent "
+                 "quality. It is an open line: modules can be added for more processes as production changes, and any module or the whole "
+                 "line connects to an MES for unified management. Several industrial robots move the parts and safety monitoring is built "
+                 "in. For automotive, sheet-metal, furniture and signage work in mild and stainless steel, aluminum and brass.",
+         features=["Coil 0.024 – 0.079″ (0.6 – 2 mm), 23.6 – 59.1″ wide, to 11 US tons; 5 × 10 ft laser, 3 kW; feeding to 33 ft/min",
+                   "Decoiling, levelling, cutting, unloading, panel bending, laser welding and stacking in one line",
+                   "Several industrial robots between the stations; built-in safety monitoring",
+                   "Open line: add modules as production changes; each module or the whole line connects to an MES",
+                   "High-power laser cutting, an automatic bending centre and a laser welding platform for the most output",
+                   CERT + "; " + VOLT],
+         optional=["Nesting software", "Film laminating", "Ink-jet marking", "Safety fencing"],
+         images=["sf-coil-top", "sf-top-modules", "sf-top-1", "sf-top-3", "sf-top-cell", "sf-top-process", "sf-top-pendant"],
+         videos=[],
+         specs=spec([T_TOP], CL_GK, CL_G_FROM, POWER_NOTE)),
+    dict(id="sf-coil-clh", group="laser-senfeng", page=P_LASER, brand=BRAND,
+         name="SF1503CLH aluminum coil-fed fiber laser, coil 0.023 – 0.118″, 6 kW",
+         short="SF1503CLH aluminum coil laser",
+         models_label="SF1503CLH",
+         summary="Made for aluminum coil: a decoiler, a high-precision straightener built for aluminum, a feeding system and a 6 kW laser "
+                 "flatten the coil into sheet and cut it with no treatment in between, for coil from 0.023 to 0.118″ (0.6 – 3 mm). The "
+                 "processes are coordinated so modules can be added for a chain from coil to finished product, the open system connects to "
+                 "an MES, and a film laminating or a spraying machine can join the line. The laser source has protection against back "
+                 "reflection for aluminum and other non-ferrous metals. For aluminum panels, kitchenware, doors, appliances and cabinets, "
+                 "automotive components and construction machinery.",
+         features=["Aluminum coil 0.023 – 0.118″ (0.6 – 3 mm) to 11 US tons; 10 × 5 ft working area (19.7 × 4.9 ft long-table version); 6 kW",
+                   "High-precision straightener built for aluminum: the coil is flattened and cut with no treatment in between",
+                   "Decoiler, straightener, feeding system and laser in one line; modules can be added from coil to finished product",
+                   "Open system that connects to an MES",
+                   "Laser source protected against back reflection from aluminum and other non-ferrous metals",
+                   CERT + "; " + VOLT],
+         optional=["Film laminating machine", "Spraying machine", "Custom voltage transformer"],
+         images=["sf-coil-clh-1", "sf-coil-blank-line"],
+         videos=[],
+         specs=spec([T_CLH], CL_GK, CL_G_FROM, POWER_NOTE)),
+    dict(id="sf-coil-2012", group="laser-senfeng", page=P_LASER, brand=BRAND,
+         name="SF2012CH coil-fed laser blanking line for thick coil 5/16 – 9/16″, 13 × 6.6 ft, 12 – 80 kW",
+         short="SF2012CH thick-coil line",
+         models_label="SF2012CH",
+         summary="Coil-fed cutting for medium-thick plate: Senfeng pushed coil thickness to 0.551″ (14 mm) and was the first to put it "
+                 "into production. The SF2012CH combines a double-sided decoiler, a leveller, a 12 to 80 kW laser and automatic stacking for "
+                 "0.314 to 0.551″ (8 – 14 mm) coil up to 22 US tons on a 13 × 6.6 ft working area. The double-sided decoiler holds up to "
+                 "66,138 lb, so one loading runs for a long time; a positioning and correction device sets the plate precisely; the fully "
+                 "enclosed laser keeps the fume in; and the line runs with close to zero waste. Coil costs less than cut plate, and the "
+                 "line is made to the material. For sheet-metal processing, machinery, auto parts, electrical and elevator manufacturing, "
+                 "petroleum and food machinery, and signage.",
+         features=["Coil 0.314 – 0.551″ (8 – 14 mm) to 22 US tons; 13 × 6.6 ft (4,000 × 2,000 mm) working area; 12 – 80 kW; feeding to 33 ft/min",
+                   "Double-sided decoiler holding up to 66,138 lb (30 t): one loading runs for hours",
+                   "Plate positioning and correction device — a correction-roller slider and wheel set the plate precisely",
+                   "Fully enclosed laser keeps the fume in; automatic stacking; fully automated for close to zero waste",
+                   "Line made to the material: coil width, thickness and weight",
+                   CERT + "; " + VOLT],
+         optional=["Safety light curtain", "Nesting software", "Ink-jet marking", "Custom voltage transformer"],
+         images=["sf-coil-2", "sf-coil-2012-1", "sf-coil-2012-2", "sf-coil-2012-3", "sf-coil-2012-4", "sf-coil-2012-5", "sf-coil-2012-decoiler",
+                 "sf-coil-2012-head", "sf-coil-2012-waste"],
+         videos=[],
+         specs=spec([T_COIL_HEAVY], CL_GK, CL_G_FROM, POWER_NOTE)),
 ]
 
 TUBE_FAMILIES = [
@@ -653,7 +776,7 @@ WELD_FAMILIES = [
 
 ALL = LASER_FAMILIES + TUBE_FAMILIES + PANEL_FAMILIES + WELD_FAMILIES
 
-SERIES = {"sf-compact": "G · N · NP", "sf-1313g": "G", "sf-np": "NP", "sf-h": "H", "sf-hm": "HM", "sf-r": "R · TX · TXP", "sf-3d": "TD", "sf-coil": "C · CH",
+SERIES = {"sf-compact": "G · N · NP", "sf-1313g": "G", "sf-np": "NP", "sf-h": "H", "sf-hm": "HM", "sf-r": "R · TX · TXP", "sf-3d": "TD", "sf-coil": "CH", "sf-coil-c": "C", "sf-top": "TOP", "sf-coil-clh": "CLH", "sf-coil-2012": "CH",
           "sf-t": "T", "sf-plus": "PLUS · GT", "sf-heavy": "NT · ST · HT · CH", "sf-bdc": "BDC", "sf-handheld": "S · HWM", "sf-robot-weld": "RW · RMW · CMW", "sf-cladding": "SFR · SFHS · SFMR"}
 for _f in ALL:
     _f["series"] = SERIES[_f["id"]]

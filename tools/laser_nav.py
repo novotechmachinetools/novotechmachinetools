@@ -21,7 +21,8 @@ PAGES = {
         "sheet-and-tube-laser": [("vn-ulet", "ls-value-ulet"), ("sf-hm", "ls-value-hm")],
         "large-format-plate-laser": [("dn-smart-semi", "ls-premium-semi"), ("vn-ulg", "ls-value-ulg"), ("sf-r", "ls-value-r")],
         "3d-laser-cutting-machine": [("sf-3d", "ls-value-3d")],
-        "coil-fed-laser-cutting-line": [("sf-coil", "ls-value-coil")],
+        "coil-fed-laser-cutting-line": [("sf-coil", "ls-value-coil"), ("sf-coil-c", "ls-value-coil-c"), ("sf-top", "ls-value-top"),
+                                        ("sf-coil-clh", "ls-value-clh"), ("sf-coil-2012", "ls-value-coil-heavy")],   # five lines (the owner, Nov 1 2026)
     },
     "tube": {
         "tube-laser-cutter": [("dn-eftl", "lt-premium-eftl"), ("vn-ult", "lt-value-ult"), ("sf-t", "lt-value-t"), ("sf-plus", "lt-value-plus")],
@@ -47,15 +48,15 @@ SECTIONS = {
             ("3d-laser-cutting-machine", "3D laser cutting machines — five-axis SF3015TD, 5 × 10 ft, 3 to 20 kW", "sf-3d-1",
              "For formed parts: the five-axis SF3015TD trims and cuts stamped, drawn and bent parts and pipe fittings after forming, 3 to 20 kW — the value line.",
              "3D laser cells", ""),
-            ("coil-fed-laser-cutting-line", "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW", "sf-coil-1",
-             "Cut blanks straight from the coil: decoiler, leveller and laser on one control for coil to 1/8″ and to 9/16″ plate, and the TOP line with robot sorting, panel bending and welding — the value line.",
+            ("coil-fed-laser-cutting-line", "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 1.5 to 80 kW", "sf-coil-1",
+             "Cut blanks straight from the coil: five lines for thin, aluminum and 5/16 – 9/16″ coil from 1.5 to 80 kW, and the TOP line with robot sorting, panel bending and welding — the value line.",
              "Coil-fed laser lines", ""),
         ]),
     "tube": dict(
         hub="tube-laser-cutting-machine", section="Tube laser cutters", label="All tube lasers", image="dn-tube-2",
         blurb="Standard or heavy-duty? Every tube and profile laser NovoTech sells on one page, with the two kinds compared and the tube range, power, speed and bar length of the whole range in one table.",
         subpages=[
-            ("tube-laser-cutter", "Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 39 ft bars, 1.5 to 40 kW", "dn-tube-2",
+            ("tube-laser-cutter", "Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 39 ft tubes, 1.5 to 40 kW", "dn-tube-2",
              "The tube laser for round, square and rectangular tube to Ø14″: the premium E-FTL with 1 G servo chucks made in Turkey, NovoTech's value-line ULT with two or three chucks, and the T series and high-speed PLUS / bevel-cutting GT — bundle loaders and ±45° bevel heads.",
              "Tube laser cutters", ""),
             ("heavy-duty-tube-laser", "Heavy-duty tube and profile lasers — three and four chucks, to Ø25″ and 49 ft", "dn-tube-6",

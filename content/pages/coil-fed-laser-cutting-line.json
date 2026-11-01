@@ -2,15 +2,17 @@
  "slug": "coil-fed-laser-cutting-line",
  "template": "category.html",
  "family_set": "sheet-lasers",
- "title": "Coil-Fed Laser Cutting Lines for Sale in Canada — Uncoil, Level and Cut to 9/16″, 3–80 kW | NovoTech",
- "artifact_title": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW",
- "meta_description": "Coil-fed fiber laser cutting lines that uncoil, level and cut blanks straight from the coil — coil to 1/8″ and to 9/16″ plate, 3 to 80 kW, and the TOP line with robot sorting, panel bending and welding — sold, installed and supported in Canada.",
- "h1": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW",
- "intro": "A coil-fed laser line uncoils, levels and feeds strip straight into the laser, so blanks are cut without a sheet ever being handled, stacked or scrapped at the edges and with no limit on part length — the line for high-volume parts. NovoTech sells Senfeng's lines in Canada, on this page and from the value line: the SF1503CH for coil to 1/8″ and 16.5 tons on a 5 × 10 ft laser with 3 to 6 kW, the SF2012CH that levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW, and the TOP line that adds robot sorting, panel bending and welding for a complete coil-to-part cell. The family below has its full specification table, photos and brochure. Every line comes with a CSA-approved panel, chiller and software, installed, trained and supported from Mississauga, ON, Canada.",
+ "title": "Coil-Fed Laser Cutting Lines for Sale in Canada — Thin, Aluminum and 9/16″ Coil, TOP Automated Line, 1.5–80 kW | NovoTech",
+ "artifact_title": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 1.5 to 80 kW",
+ "meta_description": "Five Senfeng coil-fed fiber laser lines sold, installed and supported in Canada: the SF1503CH for thin coil, the open-style SF15015C, the TOP line from coil to bent and welded parts, the SF1503CLH for aluminum coil and the SF2012CH for 5/16 – 9/16″ coil to 80 kW.",
+ "h1": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 1.5 to 80 kW",
+ "intro": "A coil-fed laser line uncoils, levels and feeds strip straight into the laser, so blanks are cut without a sheet ever being handled, stacked or scrapped at the edges and with no limit on part length — and coil costs less than cut-to-length sheet. NovoTech sells five Senfeng lines in Canada, all on this page and from the value line: the SF1503CH for thin coil to 0.118″ on a 5 × 10 ft laser with 3 to 6 kW; the open-style SF15015C, the affordable line for 0.031 to 0.047″ coil; the TOP line that takes coil to cut, bent, welded and stacked parts; the SF1503CLH with a straightener made for aluminum coil; and the SF2012CH that levels and cuts 0.314 to 0.551″ coil from 22-ton coils with 12 to 80 kW. Each line below has its full specification table and photos. Every line comes with a CSA-approved panel, chiller and software, installed, trained and supported from Mississauga, ON, Canada.",
  "hero_points": [
-  "SF1503CH: coil to 1/8″ and 16.5 US tons, 5 × 10 ft laser, 3 – 6 kW",
-  "SF2012CH: 5/16″ – 9/16″ plate from 22-ton coils, 6.6 × 13 ft cutting area, 12 – 80 kW",
-  "TOP line: coil, laser, robot sorting, panel bending and welding in one cell — for automotive, appliance, enclosure and HVAC volume"
+  "SF1503CH: thin coil 0.031 – 0.118″ to 16.5 US tons, 5 × 10 ft laser, 3 – 6 kW",
+  "SF15015C: open-style line for 0.031 – 0.047″ coil in half the floor space, 1.5 – 3 kW",
+  "TOP line: coil, laser, robot sorting, panel bending and welding in one unmanned line",
+  "SF1503CLH: aluminum coil 0.023 – 0.118″ with a straightener built for aluminum, 6 kW",
+  "SF2012CH: 5/16 – 9/16″ coil to 22 US tons on a 13 × 6.6 ft laser, 12 – 80 kW"
  ],
  "hero_image": "sf-coil-1",
  "hero_image_secondary": [
@@ -31,25 +33,61 @@
    "href": "laser-cutting-machine.html"
   },
   {
-   "label": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 3 to 80 kW"
+   "label": "Coil-fed laser cutting lines — uncoil, level and cut coil to 9/16″ plate, 1.5 to 80 kW"
   }
  ],
  "hero_brand_line": "The premium lasers are built by Dener Makina in Kayseri, Turkey; NovoTech's own value line is built in China to our specification; the Senfeng value line in Jinan, China (CE / FDA / ETL certified and CSA approved). All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
    "id": "ls-value-coil-group",
-   "title": "Coil-fed laser cutting lines · value line",
+   "title": "SF1503CH coil-fed laser for thin coil · value line",
    "lead": "",
    "brand": "senfeng",
    "families": [
     "sf-coil"
+   ]
+  },
+  {
+   "id": "ls-value-coil-c-group",
+   "title": "SF15015C open-style thin-sheet coil line · value line",
+   "lead": "",
+   "brand": "senfeng",
+   "families": [
+    "sf-coil-c"
+   ]
+  },
+  {
+   "id": "ls-value-top-group",
+   "title": "TOP series automated metal processing line · value line",
+   "lead": "",
+   "brand": "senfeng",
+   "families": [
+    "sf-top"
+   ]
+  },
+  {
+   "id": "ls-value-clh-group",
+   "title": "SF1503CLH aluminum coil-fed laser · value line",
+   "lead": "",
+   "brand": "senfeng",
+   "families": [
+    "sf-coil-clh"
+   ]
+  },
+  {
+   "id": "ls-value-coil-heavy-group",
+   "title": "SF2012CH coil-fed line for thick coil · value line",
+   "lead": "",
+   "brand": "senfeng",
+   "families": [
+    "sf-coil-2012"
    ]
   }
  ],
  "faq": [
   {
    "q": "When does a coil-fed line pay off?",
-   "a": "When the same thin material runs all day: enclosures, HVAC, appliance and automotive parts. The decoiler, leveller and laser work on one control, there is no sheet handling, no offcuts and no limit on part length. The SF1503CH takes coil to 1/8″ and 16.5 tons; the SF2012CH levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW."
+   "a": "When the same material runs all day: enclosures, HVAC, appliance and automotive parts. The decoiler, leveller and laser work on one control, there is no sheet handling, no offcuts and no limit on part length, and coil costs less than cut-to-length sheet. The SF15015C runs 0.031 – 0.047″ coil through an open-style laser in half the floor space; the SF1503CH takes coil to 0.118″ and 16.5 tons; the SF1503CLH has a straightener made for aluminum coil; the SF2012CH levels and cuts 5/16″ to 9/16″ coil from 22-ton coils with 12 to 80 kW; and the TOP line carries on to robot sorting, panel bending, welding and stacking."
   },
   {
    "q": "What laser power do I need?",

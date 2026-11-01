@@ -20,6 +20,10 @@
   "sf-r",
   "sf-3d",
   "sf-coil",
+  "sf-coil-c",
+  "sf-top",
+  "sf-coil-clh",
+  "sf-coil-2012",
   "sf-t",
   "sf-plus",
   "sf-heavy",
@@ -4219,23 +4223,70 @@
     "Higher laser power at order; nitrogen generator",
     "Custom voltage transformer"
    ],
+   "extra_tabs": [
+    {
+     "id": "air-cut",
+     "label_pre": "AI Intelligent",
+     "label_main": "Air Cutting",
+     "title": "AI Intelligent Air Cutting (optional)",
+     "lead": "Senfeng's Intelligent Air Cutting, co-developed with BOCHU Automation for the H4, NP and R series from 6 to 60 kW, lets the laser cut with clean, dry compressed air from its own bus-connected compressor instead of bottled nitrogen or oxygen — and keeps oxygen and nitrogen for the jobs that need them. Hardware, control system, cutting software and service are upgraded together: faster, cleaner cuts at a much lower running cost, and simpler operation.",
+     "groups": [
+      {
+       "title": "Lower running cost",
+       "items": [
+        "Assist gas close to free — no nitrogen or oxygen to buy for most work; Senfeng quotes overall cutting expenses down by up to 92 %",
+        "15 kW high-efficiency air compressor with variable-frequency dust extraction: the whole machine uses 11.8 kWh less per hour, 20.3 % less energy",
+        "Clean air protects the optics — protective-lens use drops from 5 a day to 2",
+        "No gas deliveries: no delays, shortages or price swings, even for shops far from a gas supplier"
+       ]
+      },
+      {
+       "title": "Faster, cleaner cuts",
+       "items": [
+        "Carbon steel cuts much faster than with oxygen; thin-sheet throughput up by more than 30 %",
+        "Small heat-affected zone and little distortion, so less rework",
+        "Edges far less oxidized than oxygen cuts — many parts are welded or fitted straight from the machine, without grinding",
+        "Sharp corners without burning and well-formed small holes: a higher yield on complex parts",
+        "Little cutting fume, and no high-pressure gas cylinders to store or have inspected every year"
+       ]
+      },
+      {
+       "title": "Everything on one control",
+       "items": [
+        "One screen starts and runs the laser, the air compressor and the dust collector",
+        "Variable-frequency dust extraction sets the fan to the material and the cutting speed",
+        "Sensors in the cutting head check the air for dirt, oil and moisture around the clock, and warn and stop the machine before the lenses are damaged"
+       ]
+      },
+      {
+       "title": "Control and AI",
+       "items": [
+        "Senfeng-exclusive BOCHU FSCUT8000 control, preloaded with the full 6 – 60 kW air-cutting process database",
+        "AI Process Cube (optional): scans the part and picks the best recipe from the process library in one click, reads a photo of the cut edge for burrs, burning or incomplete cuts and corrects the parameters — setup time down by more than 80 %, and new operators make good parts without an experienced programmer",
+        "Cuts carbon steel, stainless steel, aluminum and brass"
+       ]
+      }
+     ],
+     "note": "Offered on the compact machines with a 6 kW or larger source — the SF1530N and SF1530NP. It needs Senfeng's intelligent air compressor and original Senfeng nozzles and lenses (third-party consumables void the warranty). Ask NovoTech for sample cuts in your material and thickness."
+    }
+   ],
    "images": [
     "sf-1530np",
     "sf-1530np-showroom",
-    "sf-1530n",
-    "sf-1530g",
     "sf-1530np-side",
-    "sf-1530n-rear",
-    "sf-1530g-table",
-    "sf-1530n-table",
     "sf-1530np-2",
     "sf-1530np-trolley",
     "sf-1530np-head",
     "sf-1530np-safety",
-    "sf-1530-antiburn",
-    "sf-1530-dust",
     "sf-1530np-cabinet",
-    "sf-1530np-container"
+    "sf-1530np-container",
+    "sf-1530n",
+    "sf-1530n-rear",
+    "sf-1530n-table",
+    "sf-1530g",
+    "sf-1530g-table",
+    "sf-1530-antiburn",
+    "sf-1530-dust"
    ],
    "videos": [],
    "spec_pdf": {
@@ -4760,6 +4811,16 @@
    "images": [
     "sf-h-1",
     "sf-h-2",
+    "sf-h5",
+    "sf-h-tower",
+    "sf-h-loader",
+    "sf-h-swingarm",
+    "sf-h-line",
+    "sf-h-air-1",
+    "sf-h-air-2",
+    "sf-h-air-3",
+    "sf-h-air-4",
+    "sf-h-air-5",
     "sf-h-hollow-bed",
     "sf-h-beam",
     "sf-h-dust",
@@ -4771,12 +4832,7 @@
     "sf-h-boci",
     "sf-h-raytools",
     "sf-h-sample",
-    "sf-h-sample-2",
-    "sf-h-tower",
-    "sf-h-loader",
-    "sf-h-swingarm",
-    "sf-h-line",
-    "sf-h5"
+    "sf-h-sample-2"
    ],
    "videos": [],
    "spec_pdfs": [
@@ -6219,25 +6275,30 @@
    "id": "sf-coil",
    "group": "laser-senfeng",
    "brand": "senfeng",
-   "name": "Coil-fed laser cutting lines, coil to 9/16″ plate, 3 – 80 kW",
-   "short": "Coil-fed laser lines",
-   "models_label": "SF1503CH · SF2012CH · TOP line",
-   "summary": "Cut straight from the coil: a decoiler, straightener and leveller feed the sheet onto the laser table so there is no sheet handling, no offcuts and no limit on part length. The SF1503CH takes coil to 1/8″ and 16.5 tons on a 5 × 10 ft machine; the SF2012CH levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW. The TOP line adds robot sorting, panel bending and welding for a complete coil-to-part cell.",
+   "name": "SF1503CH coil-fed fiber laser, thin coil 0.031 – 0.118″, 5 × 10 ft, 3 – 6 kW",
+   "short": "SF1503CH coil-fed laser",
+   "models_label": "SF1503CH",
+   "summary": "Thin coil cut to net size with no sheet handling: a feeding trolley, single-support decoiler, leveller, positioning and correction device and a 5 × 10 ft laser run on one control, so coil from 0.031 to 0.118″ (0.8 – 3 mm) and up to 16.5 US tons goes from loading to finished blanks automatically. Levelling relieves the coil's internal stress for flatter sheet and cleaner cuts, lead-screw correction rollers guide the strip without scratching it and position it without laser edge-finding, and the line works at least 30 % faster than cutting sheets, with close to zero waste — on coil that costs less than cut-to-length sheet. Made for high-variety, small-batch thin work: automotive sheet-metal parts, aluminum veneer, electrical cabinets, metal doors, kitchenware and equipment enclosures.",
    "features": [
-    "Decoiler, leveller and laser on one control; coil to 22 US tons; feeding to 49 ft/min; 3 – 80 kW",
-    "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
-    "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
-    "CE, FDA and ETL certified and CSA approved"
+    "Coil 0.031 – 0.118″ (0.8 – 3 mm) to 16.5 US tons; 5 × 10 ft working area; feeding to 49 ft/min; 3 – 6 kW",
+    "Feeding trolley, single-support decoiler for 22,000 lb, auxiliary support, feeder, leveller, positioning and correction device and laser on one electronic control",
+    "Stepless speed regulation: a geared motor drives the support roller so the strip hangs free between decoiler and feeder and its stress is relieved",
+    "Ultra-precision correction: lead-screw-driven rollers straighten and guide the sheet without scratches and position it without laser edge-finding",
+    "Process package for fast, mirror-finish cutting of thin stainless; at least 30 % faster than cutting sheets, close to zero waste",
+    "CE, FDA and ETL certified and CSA approved; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
    ],
    "optional": [
-    "Robot sorting and stacking",
-    "Panel bender and welding stations (TOP line)",
-    "Stereo pallet racks"
+    "Automatic unloading, sorting and stacking",
+    "Nesting software",
+    "Custom voltage transformer"
    ],
    "images": [
     "sf-coil-1",
-    "sf-coil-2",
-    "sf-coil-top",
+    "sf-coil-ch-1",
+    "sf-coil-ch-front",
+    "sf-coil-ch-side",
+    "sf-coil-ch-stack",
+    "sf-coil-ch-sort",
     "sf-coil-scene",
     "sf-coil-parts"
    ],
@@ -6246,55 +6307,33 @@
     "kind": "table",
     "tables": [
      {
-      "title": "Coil-fed laser cutting lines",
-      "sub": "2 lines · coil to 9/16″ plate",
+      "title": "SF1503CH coil-fed fiber laser",
+      "sub": "1 model · thin coil 0.031 – 0.118″ · 5 × 10 ft · 3 – 6 kW",
       "models": [
-       "SF1503CH",
-       "SF2012CH"
+       "SF1503CH"
       ],
       "rows": [
        {
         "label": "Coil thickness",
         "sub": "",
         "cells": [
-         "to 1/8″ (3 mm)",
-         "5/16″ – 9/16″ (8 – 14 mm)"
+         "0.031 – 0.118″ (0.8 – 3 mm)"
         ],
         "key": false
        },
        {
-        "label": "Sheet width",
+        "label": "Working area",
         "sub": "",
         "cells": [
-         "to 59″ (1,500 mm)",
-         "to 78.7″ (2,000 mm)"
+         "10 × 5 ft (3,000 × 1,500 mm)"
         ],
-        "key": false
-       },
-       {
-        "label": "Cutting area",
-        "sub": "",
-        "cells": [
-         "10 × 5 ft (3,000 × 1,500 mm)",
-         "13 × 6.6 ft (4,000 × 2,000 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Laser power",
-        "sub": "",
-        "cells": [
-         "3 – 6 kW",
-         "12 – 80 kW"
-        ],
-        "key": false
+        "key": true
        },
        {
         "label": "Coil inside Ø · max. outside Ø",
         "sub": "",
         "cells": [
-         "20″ · 55″",
-         "24 / 30″ · 71″"
+         "Ø20″ (508 mm) · Ø55.1″ (1,400 mm)"
         ],
         "key": false
        },
@@ -6302,8 +6341,7 @@
         "label": "Max. coil weight",
         "sub": "",
         "cells": [
-         "16.5 US tons (15 t)",
-         "22 US tons (20 t)"
+         "16.5 US tons (15 t)"
         ],
         "key": false
        },
@@ -6311,8 +6349,7 @@
         "label": "Max. feeding speed",
         "sub": "",
         "cells": [
-         "49 ft/min (15 m/min)",
-         "33 ft/min (10 m/min)"
+         "49 ft/min (15 m/min)"
         ],
         "key": false
        },
@@ -6320,8 +6357,15 @@
         "label": "Levelling accuracy",
         "sub": "",
         "cells": [
-         "±0.00007 in/ft²",
-         "±0.0002 in/ft²"
+         "±0.00007 in/ft²"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "3 – 6 kW"
         ],
         "key": false
        },
@@ -6329,8 +6373,7 @@
         "label": "Positioning accuracy",
         "sub": "",
         "cells": [
-         "±0.00006 in/ft · repeat ±0.0008″",
-         "±0.002″ · repeat ±0.0008″"
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
         ],
         "key": false
        }
@@ -6341,27 +6384,17 @@
      {
       "name": "SF1503CH",
       "glance": [
-       "to 1/8″ (3 mm)",
-       "to 59″ (1,500 mm)",
+       "0.031 – 0.118″ (0.8 – 3 mm)",
+       "10 × 5 ft (3,000 × 1,500 mm)",
        "3 – 6 kW",
        "16.5 US tons (15 t)",
        "49 ft/min (15 m/min)"
-      ]
-     },
-     {
-      "name": "SF2012CH",
-      "glance": [
-       "5/16″ – 9/16″ (8 – 14 mm)",
-       "to 78.7″ (2,000 mm)",
-       "12 – 80 kW",
-       "22 US tons (20 t)",
-       "33 ft/min (10 m/min)"
       ]
      }
     ],
     "glance_keys": [
      "thickness",
-     "width",
+     "area",
      "power",
      "coil",
      "speed"
@@ -6369,7 +6402,7 @@
     "caps": {},
     "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
    },
-   "series": "C · CH",
+   "series": "CH",
    "pdf": {
     "file": "files/NovoTech-Senfeng-Fiber-Lasers-2026.pdf",
     "label": "Download the Senfeng fiber laser brochure",
@@ -9308,8 +9341,9 @@
   },
   "vn-ult": {
    "id": "vn-ult",
+   "group": "tube-novotech",
    "brand": "novotech",
-   "name": "ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft bars, 1.5 – 40 kW",
+   "name": "ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft tubes, 1.5 – 40 kW",
    "short": "ULT tube lasers",
    "models_label": "ULT-016A – 036A · two- and three-chuck · 10 versions",
    "summary": "The tube laser for round, square, rectangular, oval and open profiles: pneumatic self-centring chucks at both ends of the bar, servo-following supports under it, and a 1.5 to 40 kW source that cuts holes, slots, copes and notches and parts the tube in one pass. Four chuck sizes — Ø6.3″, 9.4″, 11″ and 14.2″ — for bars of 20, 29.5 or 39 ft and up to 2,205 lb; 328 ft/min and 1.2 G on the small chucks. The three-chuck version takes over the bar as it shortens, so the last part is cut with no remnant. Pneumatic loaders, bundle feeding, a ±45° five-axis bevel head and TubesT nesting are options.",
@@ -9348,7 +9382,7 @@
     "tables": [
      {
       "title": "ULT two-chuck tube lasers",
-      "sub": "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft bars · 1.5 – 40 kW",
+      "sub": "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft tubes · 1.5 – 40 kW",
       "models": [
        "ULT-016A",
        "ULT-016B",
@@ -9777,8 +9811,7 @@
     "file": "files/NovoTech-Tube-Lasers-Value-Line-2026.pdf",
     "label": "Download the NovoTech tube laser brochure",
     "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "tube-novotech"
+   }
   },
   "sf-1313g": {
    "id": "sf-1313g",
@@ -9944,6 +9977,570 @@
     "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
    },
    "series": "G"
+  },
+  "sf-coil-c": {
+   "id": "sf-coil-c",
+   "group": "laser-senfeng",
+   "brand": "senfeng",
+   "name": "SF15015C open-style thin-sheet coil-fed laser, coil 0.031 – 0.047″, 5 × 10 ft, 1.5 – 3 kW",
+   "short": "SF15015C thin-coil laser",
+   "models_label": "SF15015C",
+   "summary": "The affordable way into coil-fed cutting: an open-style, low-power line for regular-sized thin coil from 0.031 to 0.047″ (0.8 – 1.2 mm) that loads, decoils, levels, feeds, cuts and unloads with basically no manual work. The leveller and the cutter are built as one unit, so the line needs at most half the floor space of others and ships, installs and commissions as one machine. Correcting rollers follow the coil's width for accurate positioning without scratches, the control picks the assist gas and its pressure for each job, and Senfeng puts the total running cost about 10 % below comparable lines — at least 30 % faster than before, with no coil wasted.",
+   "features": [
+    "Coil 0.031 – 0.047″ (0.8 – 1.2 mm), 31.4 – 59″ wide, 3 to 15 t; 5 × 10 ft working area; 1.5 – 3 kW at 37 % electro-optical efficiency",
+    "Fully automatic loading, decoiling, levelling, feeding, cutting and unloading — at least 30 % faster, no coil wasted",
+    "Leveller and cutter built as one unit: half the footprint, easier to ship, install and commission",
+    "Real-time correction rollers set the coil position by its width for accurate cuts without scratches",
+    "Assist gas and pressure chosen automatically; total running cost about 10 % below comparable lines",
+    "11 levelling rollers; feeding 0 – 49 ft/min",
+    "CE, FDA and ETL certified and CSA approved; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Longer unloading conveyor",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-coil-3",
+    "sf-coil-c-1",
+    "sf-coil-c-front",
+    "sf-coil-c-2"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SF15015C open-style thin-sheet coil-fed laser",
+      "sub": "1 model · coil 0.031 – 0.047″ · 5 × 10 ft · 1.5 – 3 kW",
+      "models": [
+       "SF15015C"
+      ],
+      "rows": [
+       {
+        "label": "Coil thickness",
+        "sub": "",
+        "cells": [
+         "0.031 – 0.047″ (0.8 – 1.2 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sheet width",
+        "sub": "",
+        "cells": [
+         "31.4 – 59.0″ (800 – 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "10 × 5 ft (3,000 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Coil inside Ø · outside Ø",
+        "sub": "",
+        "cells": [
+         "Ø20 or 24″ (508 / 610 mm) · Ø31.4 – 59.0″ (800 – 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. coil weight",
+        "sub": "",
+        "cells": [
+         "3, 8, 10 or 15 t (3.3 – 16.5 US tons)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. feeding speed",
+        "sub": "",
+        "cells": [
+         "0 – 49 ft/min (0 – 15 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sheet flatness",
+        "sub": "",
+        "cells": [
+         "±0.079″ per ft² (±2 mm/m²)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Levelling rollers",
+        "sub": "",
+        "cells": [
+         "11"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "1.5 – 3 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Electro-optical efficiency",
+        "sub": "",
+        "cells": [
+         "37 %"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF15015C",
+      "glance": [
+       "0.031 – 0.047″ (0.8 – 1.2 mm)",
+       "10 × 5 ft (3,000 × 1,500 mm)",
+       "1.5 – 3 kW",
+       "3, 8, 10 or 15 t (3.3 – 16.5 US tons)",
+       "0 – 49 ft/min (0 – 15 m/min)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "thickness",
+     "area",
+     "power",
+     "coil",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "C"
+  },
+  "sf-top": {
+   "id": "sf-top",
+   "group": "laser-senfeng",
+   "brand": "senfeng",
+   "name": "TOP series automated metal processing line — coil to cut, bent, welded and stacked parts",
+   "short": "TOP automated line",
+   "models_label": "SF1503CH-TOP RC3000W",
+   "summary": "From coil to finished parts with no one at the machine: the TOP line puts a coil-fed laser, robot sorting, a panel bending centre, a laser welding station and stacking in one line, so coil from 0.024 to 0.079″ is decoiled, levelled, cut, unloaded, bent, welded and stacked in one run — 24/7 unmanned production at lower labour cost and consistent quality. It is an open line: modules can be added for more processes as production changes, and any module or the whole line connects to an MES for unified management. Several industrial robots move the parts and safety monitoring is built in. For automotive, sheet-metal, furniture and signage work in mild and stainless steel, aluminum and brass.",
+   "features": [
+    "Coil 0.024 – 0.079″ (0.6 – 2 mm), 23.6 – 59.1″ wide, to 11 US tons; 5 × 10 ft laser, 3 kW; feeding to 33 ft/min",
+    "Decoiling, levelling, cutting, unloading, panel bending, laser welding and stacking in one line",
+    "Several industrial robots between the stations; built-in safety monitoring",
+    "Open line: add modules as production changes; each module or the whole line connects to an MES",
+    "High-power laser cutting, an automatic bending centre and a laser welding platform for the most output",
+    "CE, FDA and ETL certified and CSA approved; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Nesting software",
+    "Film laminating",
+    "Ink-jet marking",
+    "Safety fencing"
+   ],
+   "images": [
+    "sf-coil-top",
+    "sf-top-modules",
+    "sf-top-1",
+    "sf-top-3",
+    "sf-top-cell",
+    "sf-top-process",
+    "sf-top-pendant"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TOP series flexible metal processing line",
+      "sub": "SF1503CH-TOP RC3000W · coil 0.024 – 0.079″ · 5 × 10 ft laser",
+      "models": [
+       "SF1503CH-TOP RC3000W"
+      ],
+      "rows": [
+       {
+        "label": "Coil thickness",
+        "sub": "",
+        "cells": [
+         "0.024 – 0.079″ (0.6 – 2 mm); max. coil 118.1 × 59.0 × 0.12″ (3,000 × 1,500 × 3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coil width",
+        "sub": "",
+        "cells": [
+         "23.6 – 59.1″ (600 – 1,500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "10 × 5 ft (3,000 × 1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Coil inside Ø · max. outside Ø",
+        "sub": "",
+        "cells": [
+         "Ø20″ (508 mm) · Ø55.1″ (1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. coil weight",
+        "sub": "",
+        "cells": [
+         "11 US tons (10 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. feeding speed",
+        "sub": "",
+        "cells": [
+         "33 ft/min (10 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Levelling accuracy",
+        "sub": "",
+        "cells": [
+         "±0.00007 in/ft²"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "3 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stations",
+        "sub": "",
+        "cells": [
+         "decoiler and leveller, laser cutting, robot unloading and sorting, panel bending, laser welding, stacking"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF1503CH-TOP RC3000W",
+      "glance": [
+       "0.024 – 0.079″ (0.6 – 2 mm); max. coil 118.1 × 59.0 × 0.12″ (3,000 × 1,500 × 3 mm)",
+       "10 × 5 ft (3,000 × 1,500 mm)",
+       "3 kW",
+       "11 US tons (10 t)",
+       "33 ft/min (10 m/min)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "thickness",
+     "area",
+     "power",
+     "coil",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "TOP"
+  },
+  "sf-coil-clh": {
+   "id": "sf-coil-clh",
+   "group": "laser-senfeng",
+   "brand": "senfeng",
+   "name": "SF1503CLH aluminum coil-fed fiber laser, coil 0.023 – 0.118″, 6 kW",
+   "short": "SF1503CLH aluminum coil laser",
+   "models_label": "SF1503CLH",
+   "summary": "Made for aluminum coil: a decoiler, a high-precision straightener built for aluminum, a feeding system and a 6 kW laser flatten the coil into sheet and cut it with no treatment in between, for coil from 0.023 to 0.118″ (0.6 – 3 mm). The processes are coordinated so modules can be added for a chain from coil to finished product, the open system connects to an MES, and a film laminating or a spraying machine can join the line. The laser source has protection against back reflection for aluminum and other non-ferrous metals. For aluminum panels, kitchenware, doors, appliances and cabinets, automotive components and construction machinery.",
+   "features": [
+    "Aluminum coil 0.023 – 0.118″ (0.6 – 3 mm) to 11 US tons; 10 × 5 ft working area (19.7 × 4.9 ft long-table version); 6 kW",
+    "High-precision straightener built for aluminum: the coil is flattened and cut with no treatment in between",
+    "Decoiler, straightener, feeding system and laser in one line; modules can be added from coil to finished product",
+    "Open system that connects to an MES",
+    "Laser source protected against back reflection from aluminum and other non-ferrous metals",
+    "CE, FDA and ETL certified and CSA approved; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Film laminating machine",
+    "Spraying machine",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-coil-clh-1",
+    "sf-coil-blank-line"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SF1503CLH aluminum coil-fed fiber laser",
+      "sub": "1 model · aluminum coil 0.023 – 0.118″ · 6 kW",
+      "models": [
+       "SF1503CLH"
+      ],
+      "rows": [
+       {
+        "label": "Coil thickness",
+        "sub": "",
+        "cells": [
+         "0.023 – 0.118″ (0.6 – 3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "10 × 5 ft (3,000 × 1,500 mm); 19.7 × 4.9 ft (6,000 × 1,500 mm) long-table version"
+        ],
+        "key": true
+       },
+       {
+        "label": "Coil inside Ø · max. outside Ø",
+        "sub": "",
+        "cells": [
+         "Ø20″ (508 mm) · Ø55.1″ (1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. coil weight",
+        "sub": "",
+        "cells": [
+         "11 US tons (10 t); 16.5 US tons (15 t) on the long-table version"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. feeding speed",
+        "sub": "",
+        "cells": [
+         "33 ft/min (10 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Levelling accuracy",
+        "sub": "",
+        "cells": [
+         "±0.00005 in/ft²"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "6 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF1503CLH",
+      "glance": [
+       "0.023 – 0.118″ (0.6 – 3 mm)",
+       "10 × 5 ft (3,000 × 1,500 mm); 19.7 × 4.9 ft (6,000 × 1,500 mm) long-table version",
+       "6 kW",
+       "11 US tons (10 t); 16.5 US tons (15 t) on the long-table version",
+       "33 ft/min (10 m/min)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "thickness",
+     "area",
+     "power",
+     "coil",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "CLH"
+  },
+  "sf-coil-2012": {
+   "id": "sf-coil-2012",
+   "group": "laser-senfeng",
+   "brand": "senfeng",
+   "name": "SF2012CH coil-fed laser blanking line for thick coil 5/16 – 9/16″, 13 × 6.6 ft, 12 – 80 kW",
+   "short": "SF2012CH thick-coil line",
+   "models_label": "SF2012CH",
+   "summary": "Coil-fed cutting for medium-thick plate: Senfeng pushed coil thickness to 0.551″ (14 mm) and was the first to put it into production. The SF2012CH combines a double-sided decoiler, a leveller, a 12 to 80 kW laser and automatic stacking for 0.314 to 0.551″ (8 – 14 mm) coil up to 22 US tons on a 13 × 6.6 ft working area. The double-sided decoiler holds up to 66,138 lb, so one loading runs for a long time; a positioning and correction device sets the plate precisely; the fully enclosed laser keeps the fume in; and the line runs with close to zero waste. Coil costs less than cut plate, and the line is made to the material. For sheet-metal processing, machinery, auto parts, electrical and elevator manufacturing, petroleum and food machinery, and signage.",
+   "features": [
+    "Coil 0.314 – 0.551″ (8 – 14 mm) to 22 US tons; 13 × 6.6 ft (4,000 × 2,000 mm) working area; 12 – 80 kW; feeding to 33 ft/min",
+    "Double-sided decoiler holding up to 66,138 lb (30 t): one loading runs for hours",
+    "Plate positioning and correction device — a correction-roller slider and wheel set the plate precisely",
+    "Fully enclosed laser keeps the fume in; automatic stacking; fully automated for close to zero waste",
+    "Line made to the material: coil width, thickness and weight",
+    "CE, FDA and ETL certified and CSA approved; 208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+   ],
+   "optional": [
+    "Safety light curtain",
+    "Nesting software",
+    "Ink-jet marking",
+    "Custom voltage transformer"
+   ],
+   "images": [
+    "sf-coil-2",
+    "sf-coil-2012-1",
+    "sf-coil-2012-2",
+    "sf-coil-2012-3",
+    "sf-coil-2012-4",
+    "sf-coil-2012-5",
+    "sf-coil-2012-decoiler",
+    "sf-coil-2012-head",
+    "sf-coil-2012-waste"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SF2012CH coil-fed laser blanking line for thick coil",
+      "sub": "1 model · coil 5/16 – 9/16″ · 13 × 6.6 ft · 12 – 80 kW",
+      "models": [
+       "SF2012CH"
+      ],
+      "rows": [
+       {
+        "label": "Coil thickness",
+        "sub": "",
+        "cells": [
+         "0.314 – 0.551″ (8 – 14 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working area",
+        "sub": "",
+        "cells": [
+         "13 × 6.6 ft (4,000 × 2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Coil inside Ø · outside Ø",
+        "sub": "",
+        "cells": [
+         "Ø24 or 30″ (610 / 762 mm) · Ø39.3 – 70.8″ (1,000 – 1,800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. coil weight",
+        "sub": "",
+        "cells": [
+         "22 US tons (20 t); the double-sided decoiler holds 66,138 lb (30 t)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Max. feeding speed",
+        "sub": "",
+        "cells": [
+         "33 ft/min (10 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Levelling accuracy",
+        "sub": "",
+        "cells": [
+         "±0.00019 in/ft²"
+        ],
+        "key": false
+       },
+       {
+        "label": "Laser power",
+        "sub": "",
+        "cells": [
+         "12 – 80 kW"
+        ],
+        "key": false
+       },
+       {
+        "label": "Positioning accuracy",
+        "sub": "",
+        "cells": [
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SF2012CH",
+      "glance": [
+       "0.314 – 0.551″ (8 – 14 mm)",
+       "13 × 6.6 ft (4,000 × 2,000 mm)",
+       "12 – 80 kW",
+       "22 US tons (20 t); the double-sided decoiler holds 66,138 lb (30 t)",
+       "33 ft/min (10 m/min)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "thickness",
+     "area",
+     "power",
+     "coil",
+     "speed"
+    ],
+    "caps": {},
+    "note": "Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area (3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). Speeds and accelerations are no-load values; platform loads are per table."
+   },
+   "series": "CH"
   }
  }
 }

@@ -33361,5 +33361,237 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "sf-h-air-1": {
+  "src": "tools/src-images/senfeng/sf-h-air-1.png",
+  "alt": "AI Intelligent Air Cutting (optional) — air monitoring, H8 head, A8 control and AI Process Cube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-air-2": {
+  "src": "tools/src-images/senfeng/sf-h-air-2.png",
+  "alt": "AI Intelligent Air Cutting (optional) — 431 % faster than oxygen, 98 % lower gas cost than nitrogen",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-air-3": {
+  "src": "tools/src-images/senfeng/sf-h-air-3.png",
+  "alt": "AI Intelligent Air Cutting (optional) — the A8 control runs gas, dust collection, motion and the AI Process Cube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-air-4": {
+  "src": "tools/src-images/senfeng/sf-h-air-4.png",
+  "alt": "AI Intelligent Air Cutting (optional) — bus-connected compressor and air check, 11.8 kWh saved per hour",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-h-air-5": {
+  "src": "tools/src-images/senfeng/sf-h-air-5.png",
+  "alt": "AI Intelligent Air Cutting (optional) — M9 servo motors, M2 precision racks, P-class guideways",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-ch-1": {
+  "src": "tools/src-images/senfeng/sf-coil-ch-1.jpg",
+  "alt": "SF1503CH — decoiler, leveller and the 5 × 10 ft laser in one line",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-ch-front": {
+  "src": "tools/src-images/senfeng/sf-coil-ch-front.jpg",
+  "alt": "SF1503CH coil-fed line from the front",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-ch-side": {
+  "src": "tools/src-images/senfeng/sf-coil-ch-side.jpg",
+  "alt": "SF1503CH — the leveller feeding coil into the laser",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-ch-stack": {
+  "src": "tools/src-images/senfeng/sf-coil-ch-stack.jpg",
+  "alt": "SF1503CH line with automatic unloading and stacking",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-ch-sort": {
+  "src": "tools/src-images/senfeng/sf-coil-ch-sort.jpg",
+  "alt": "SF1503CH with sorting tables after the laser",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-c-1": {
+  "src": "tools/src-images/senfeng/sf-coil-c-1.jpg",
+  "alt": "SF15015C open-style thin-sheet coil-fed laser with its unloading table",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-c-front": {
+  "src": "tools/src-images/senfeng/sf-coil-c-front.jpg",
+  "alt": "SF15015C — decoiler, leveller and open laser built as one unit",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-c-2": {
+  "src": "tools/src-images/senfeng/sf-coil-c-2.jpg",
+  "alt": "SF15015C with a longer unloading conveyor (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-top-modules": {
+  "src": "tools/src-images/senfeng/sf-top-modules.jpg",
+  "alt": "TOP flexible metal processing line — decoiler, coil straightener, laser cutting, transfer, panel bending and laser welding modules",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-top-1": {
+  "src": "tools/src-images/senfeng/sf-top-1.jpg",
+  "alt": "TOP line — coil feeding the laser, robots and the panel bender downstream",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-top-3": {
+  "src": "tools/src-images/senfeng/sf-top-3.jpg",
+  "alt": "TOP line from the side — coil to finished parts",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-top-cell": {
+  "src": "tools/src-images/senfeng/sf-top-cell.png",
+  "alt": "TOP line — robot cell at the panel bender",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-top-process": {
+  "src": "tools/src-images/senfeng/sf-top-process.png",
+  "alt": "Cutting, bending and welding in one line",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-top-pendant": {
+  "src": "tools/src-images/senfeng/sf-top-pendant.png",
+  "alt": "Teach pendant of the TOP line's robots",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-clh-1": {
+  "src": "tools/src-images/senfeng/sf-coil-clh-1.jpg",
+  "alt": "SF1503CLH aluminum coil-fed laser — decoiler, aluminum straightener and 6 kW laser",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-blank-line": {
+  "src": "tools/src-images/senfeng/sf-coil-blank-line.jpg",
+  "alt": "Senfeng sheet-coil laser blanking line — enclosed laser, leveller and decoiler",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-2012-1": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-1.jpg",
+  "alt": "SF2012CH — double-sided decoiler, leveller and enclosed 12 – 80 kW laser",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-2012-2": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-2.jpg",
+  "alt": "SF2012CH from the laser end",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-2012-3": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-3.jpg",
+  "alt": "SF2012CH — the double-sided decoiler and the leveller",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-2012-4": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-4.jpg",
+  "alt": "SF2012CH from the side",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-2012-5": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-5.jpg",
+  "alt": "SF2012CH with unloading and sorting conveyors (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "sf-coil-2012-decoiler": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-decoiler.png",
+  "alt": "Double-sided decoiler — 66,138 lb (30 t) loading capacity",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-2012-head": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-head.png",
+  "alt": "Plate positioning and correction under the cutting head",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-coil-2012-waste": {
+  "src": "tools/src-images/senfeng/sf-coil-2012-waste.png",
+  "alt": "Fully automated line — close to zero waste",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
  }
 }

@@ -77,18 +77,18 @@ HUBS = {
     "tube": dict(
         set="tube-lasers", families=LN.families("tube"),
         page=dict(
-            title="Tube Laser Cutting Machines for Sale in Canada — Ø0.3″ to 25″, 20 to 49 ft Bars | NovoTech",
+            title="Tube Laser Cutting Machines for Sale in Canada — Ø0.3″ to 25″, 20 to 49 ft Tubes | NovoTech",
             meta="Every tube and profile laser NovoTech sells in Canada, by kind: tube laser cutters to Ø14″ with two or three chucks and heavy-duty three- and four-chuck machines to Ø25″ and 49 ft, 1.5 to 40 kW — premium and value lines, the two kinds compared and every model in one table.",
-            h1="Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 20 to 49 ft bars, 1.5 to 40 kW",
+            h1="Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 20 to 49 ft tubes, 1.5 to 40 kW",
             intro="A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one "
                   "pass — no saw, no drill, no notcher, no layout — straight from the 3D model. NovoTech sells two kinds in Canada, each on its own "
-                  "page: tube laser cutters for tube to Ø14″ with two or three chucks on 20 to 39 ft bars — the premium E-FTL with 1 G servo chucks "
+                  "page: tube laser cutters for tube to Ø14″ with two or three chucks on 20 to 39 ft tubes — the premium E-FTL with 1 G servo chucks "
                   "made in Turkey, NovoTech's value-line ULT and the T series, high-speed PLUS and bevel-cutting GT; and heavy-duty tube and profile "
                   "lasers with three and four chucks for structural tube, pipe and beams to Ø25″, 6,600 lb and 49 ft, plus the H-beam profile line. "
                   "For trailer, railing, furniture, agricultural, HVAC and steel-construction work. Below, the two kinds compared and every model in "
                   "one table of tube range, power, speed and bar length; every machine comes with a CSA-approved panel, chiller, tube nesting "
                   "software, a 1-year warranty and installation, training and parts from Mississauga, ON, Canada.",
-            points=['<a href="tube-laser-cutter.html">Tube laser cutters</a>: premium <a href="tube-laser-cutter.html#dn-eftl">E-FTL</a> Ø0.3″ – 13.8″, 1 G, ±0.05 mm; value <a href="tube-laser-cutter.html#vn-ult">ULT</a> Ø0.4″ – 14.2″ two or three chucks; <a href="tube-laser-cutter.html#sf-t">T</a> / <a href="tube-laser-cutter.html#sf-plus">PLUS / GT</a> Ø0.5″ – 14″ — 20 – 39 ft bars, 1.5 – 40 kW',
+            points=['<a href="tube-laser-cutter.html">Tube laser cutters</a>: premium <a href="tube-laser-cutter.html#dn-eftl">E-FTL</a> Ø0.3″ – 13.8″, 1 G, ±0.05 mm; value <a href="tube-laser-cutter.html#vn-ult">ULT</a> Ø0.4″ – 14.2″ two or three chucks; <a href="tube-laser-cutter.html#sf-t">T</a> / <a href="tube-laser-cutter.html#sf-plus">PLUS / GT</a> Ø0.5″ – 14″ — 20 – 39 ft tubes, 1.5 – 40 kW',
                     '<a href="heavy-duty-tube-laser.html">Heavy-duty</a>: premium <a href="heavy-duty-tube-laser.html#dn-ftl">FTL</a> Ø0.6″ – 25.2″, bars to 39.4 ft and 5,732 lb; <a href="heavy-duty-tube-laser.html#sf-heavy">NT zero-tailing, ST / HT three- and four-chuck lasers</a> to Ø25″, 6,600 lb and 49 ft',
                     "Bundle loaders, following supports, ±45° bevel heads, STEP / IGES import and tube nesting on every machine"],
             hero="dn-tube-2", minis=["vn-ult-1", "sf-t-1"],
@@ -99,13 +99,13 @@ HUBS = {
             range_note="Round tube as the chuck's minimum to maximum diameter; square and rectangular tube is limited by the diagonal. Dener bar lengths list the bar weight with them. "
                        "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel and transformer; 208, 240 and 480 V on request.",
             faq=[{"q": "Tube laser cutter or heavy-duty tube laser — which should I buy?",
-                  "a": "By the biggest bar you cut. A two- or three-chuck tube laser cutter covers tube to Ø14″ on 20 to 39 ft bars — railing, furniture, trailer, HVAC, agricultural and most steel-construction work — and is the machine most shops need; the premium E-FTL and the value-line ULT, T and PLUS are on one page, side by side. A heavy-duty machine with three or four chucks holds beams and pipe to Ø25″, bars of 2,600 – 3,000 kg and 49 ft, and cuts them without tailing — for structural steel, pipe and heavy profiles. Both kinds load from a bundle, support the bar as it is cut and take bevel heads."},
+                  "a": "By the biggest bar you cut. A two- or three-chuck tube laser cutter covers tube to Ø14″ on 20 to 39 ft tubes — railing, furniture, trailer, HVAC, agricultural and most steel-construction work — and is the machine most shops need; the premium E-FTL and the value-line ULT, T and PLUS are on one page, side by side. A heavy-duty machine with three or four chucks holds beams and pipe to Ø25″, bars of 2,600 – 3,000 kg and 49 ft, and cuts them without tailing — for structural steel, pipe and heavy profiles. Both kinds load from a bundle, support the bar as it is cut and take bevel heads."},
                  {"q": "Premium line or value line?",
                   "a": "The premium Dener E-FTL and FTL are built in Turkey with 1 G servo chucks, Precitec heads, ±0.05 mm and parts stocked in Canada — for the shop that runs the tube laser all day. NovoTech's value-line ULT and the Senfeng T / PLUS / GT / NT / ST / HT are built in China with pneumatic chucks, in a wider range of sizes and powers at a lower price; NovoTech stocks the parts and does the service. The premium machine is faster between parts and holds tighter tolerance at high duty."},
                  {"q": "What can a tube laser cut?",
                   "a": "Round, square, rectangular, oval and open profiles — angle, channel, flat bar — in mild steel, stainless, aluminum, copper and brass, from the chuck's minimum to its maximum size, in wall thicknesses to about 1/2″ (12 kW) or 3/4″ (20 kW). Holes, slots, copes for tube-to-tube joints, tabs and notches for folding, engraving — anything you can draw on the surface of the profile. A 5-axis or 45° bevel head adds weld preparations and mitred corners."},
                  {"q": "Two, three or four chucks?",
-                  "a": "Two chucks (Dener E-FTL / FTL, NovoTech ULT, Senfeng T / PLUS) hold the bar at both ends and cover tube to Ø25″ — the machine most shops need. A third chuck in the middle (NovoTech ULT three-chuck, Senfeng NT) takes over the bar as it shortens, so the last part is cut without a tail. Three and four chucks on the heavy machines (Senfeng ST / HT) carry 49 ft bars of 6,600 lb without sag for structural sections and towers."},
+                  "a": "Two chucks (Dener E-FTL / FTL, NovoTech ULT, Senfeng T / PLUS) hold the bar at both ends and cover tube to Ø25″ — the machine most shops need. A third chuck in the middle (NovoTech ULT three-chuck, Senfeng NT) takes over the bar as it shortens, so the last part is cut without a tail. Three and four chucks on the heavy machines (Senfeng ST / HT) carry 49 ft tubes of 6,600 lb without sag for structural sections and towers."},
                  {"q": "How is the tube loaded?",
                   "a": "From a bundle: the automatic loader separates one bar, measures it and feeds it to the rear chuck; the front chuck and following supports hold the bar as it is cut; finished parts drop onto the unloading table or conveyor and the remnant is ejected. One operator runs the machine while loading the next bundle. Loading lengths of 7, 9 and 12 m — or manual loading on the small Senfeng T series."},
                  {"q": "What about software?",
@@ -132,7 +132,7 @@ COMPARE = {
             ["Sheet-and-tube lasers", "Table plus a rotary chuck", "to 41 × 8.5 ft sheet, tube to Ø13.8″, 1.5 – 40 kW", "One machine for sheet and tube", {"href": "sheet-and-tube-laser.html", "label": "Sheet & tube lasers"}],
             ["Large-format plate lasers", "Single table loaded by crane; semi-closed cover on the gantry; bevel heads, oxy-fuel", "to 13 × 82 ft and 10 × 164 ft, 3 – 60 kW", "Heavy plate, shipyards, structural, very long beds", {"href": "large-format-plate-laser.html", "label": "Large-format lasers"}],
             ["3D laser cells", "Five-axis head over a dual-station table", "5 × 10 ft envelope, 3 – 20 kW", "Trimming and cutting formed parts", {"href": "3d-laser-cutting-machine.html", "label": "3D laser cells"}],
-            ["Coil-fed laser lines", "Decoiler, leveller and laser on one control", "coil to 9/16″ plate, 3 – 80 kW", "High-volume blanks straight from coil", {"href": "coil-fed-laser-cutting-line.html", "label": "Coil-fed laser lines"}],
+            ["Coil-fed laser lines", "Decoiler, leveller and laser on one control", "thin, aluminum and 9/16″ coil, 1.5 – 80 kW", "High-volume blanks straight from coil", {"href": "coil-fed-laser-cutting-line.html", "label": "Coil-fed laser lines"}],
         ],
     },
     "tube": {
@@ -140,7 +140,7 @@ COMPARE = {
         "lead": "The two kinds NovoTech sells, side by side. The biggest bar you cut decides; each page lists every model, premium and value lines together.",
         "cols": ["Kind", "Chucks", "Tube range and bars", "Best for", "Page"],
         "rows": [
-            ["Tube laser cutters", "Two or three chucks", "Ø0.3″ – 14″, 20 – 39 ft bars, 1.5 – 40 kW", "Railing, furniture, trailer, HVAC, agricultural, most steel construction", {"href": "tube-laser-cutter.html", "label": "Tube laser cutters"}],
+            ["Tube laser cutters", "Two or three chucks", "Ø0.3″ – 14″, 20 – 39 ft tubes, 1.5 – 40 kW", "Railing, furniture, trailer, HVAC, agricultural, most steel construction", {"href": "tube-laser-cutter.html", "label": "Tube laser cutters"}],
             ["Heavy-duty tube and profile lasers", "Three or four chucks, zero tailing", "Ø0.6″ – 25.2″, bars to 49 ft and 6,600 lb, 3 – 40 kW", "Structural tube, pipe, beams and heavy profiles", {"href": "heavy-duty-tube-laser.html", "label": "Heavy-duty tube lasers"}],
         ],
     },

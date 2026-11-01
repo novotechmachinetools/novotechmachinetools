@@ -238,7 +238,7 @@ def ult_rows(rows, three):
         ("Loading", [r[12] for r in rows])]
 
 
-T_ULT2 = table("ULT two-chuck tube lasers", "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft bars · 1.5 – 40 kW", [f"ULT-{r[0]}" for r in ULT], ult_rows(ULT, False))
+T_ULT2 = table("ULT two-chuck tube lasers", "6 chuck versions · Ø0.4 – 14.2″ · 20 – 39 ft tubes · 1.5 – 40 kW", [f"ULT-{r[0]}" for r in ULT], ult_rows(ULT, False))
 ULT3 = [r for r in ULT if r[6]]
 T_ULT3 = table("ULT three-chuck tube lasers · zero-tail", "4 chuck versions · Ø0.4 – 14.2″ · the last part cut without a remnant", [f"ULT-{r[0]} · 3 chucks" for r in ULT3], ult_rows(ULT3, True))
 
@@ -328,7 +328,7 @@ SHEET_FAMILIES = [
 
 TUBE_FAMILIES = [
     dict(id="vn-ult", group="tube-novotech", page=P_TUBE, brand=BRAND,
-         name="ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft bars, 1.5 – 40 kW",
+         name="ULT tube and pipe lasers, two or three chucks, Ø0.4 – 14.2″, 20 – 39 ft tubes, 1.5 – 40 kW",
          short="ULT tube lasers",
          models_label="ULT-016A – 036A · two- and three-chuck · 10 versions",
          summary="The tube laser for round, square, rectangular, oval and open profiles: pneumatic self-centring chucks at both ends "

@@ -1330,6 +1330,21 @@ def hub_lineup(page):
     return out
 
 
+def all_item_minis(page):
+    """Every product item on the page small under the hero (the owner, Nov 1 2026): the first photo of each family, in page
+    order, except the family the large photo already shows."""
+    hero, keys, labels = page.get("hero_image"), [], {}
+    for g in page.get("groups") or []:
+        for f in g["families"]:
+            if not isinstance(f, dict) or not f.get("images") or hero in f["images"]:
+                continue
+            k = f["images"][0]
+            if k in manifest and k not in keys:
+                keys.append(k)
+                labels[k] = f.get("short") or f["name"]
+    return keys, labels
+
+
 def hero_links(page):
     """Where each hero photo (the large one and the two small ones) links to: the family section that shows the same photo —
     on a hub the section page and its anchor, on a category page the anchor on the page itself; on a hub without such a family,
@@ -1508,7 +1523,9 @@ def render_page(page):
                               + [{"href": x["href"], "label": x.get("nav_label") or x["title"].split(" — ")[0]} for x in page.get("extra_cards", [])]
                               + ([{"href": "#lineup", "label": "Line-up"}] if page.get("lineup") else [])
                               + ([{"href": "#compare", "label": "Compare"}] if page.get("compare") else [])
-                              + [{"href": "#range-at-a-glance", "label": "All models"}, {"href": "#faq-title", "label": "Questions"}, {"href": "#reques-a-quote", "label": "Request a quote"}])
+                              + [{"href": "#faq-title", "label": "Questions"}, {"href": "#reques-a-quote", "label": "Request a quote"}])   # no range table on hubs (the owner, Nov 1 2026)
+    if page.get("template") == "category.html" and page.get("hero_minis_all") and page.get("groups"):
+        page["hero_image_secondary"], page["hero_mini_labels"] = all_item_minis(page)
     if page.get("template") in ("hub.html", "category.html") and page.get("hero_image"):
         page["hero_links"] = hero_links(page)
     page["url"] = f"{site['domain']}/{page['slug']}" if page["slug"] != "index" else site["domain"] + "/"   # clean URLs: pages are served without .html

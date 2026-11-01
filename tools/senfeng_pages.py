@@ -90,7 +90,7 @@ PAGE_LASER = dict(
           "container and cut the day they arrive; the NP open-type laser, six of which fit in a 40 ft container, the lowest-priced 12 kW machine "
           "in the catalogue; the enclosed H series with a 20-second pallet changer from 1.5 to 80 kW on tables to 8.3 × 40 ft; the HM that cuts "
           "sheet and Ø8.6″ tube on one machine; the R and TX plate gantries to 10 × 164 ft with ±45° bevel heads for shipyards and structural "
-          "steel; five-axis and robot 3D lasers for formed parts; and coil-fed lines that cut straight from the coil. Loading towers, sheet "
+          "steel; five-axis 3D lasers for formed parts; and coil-fed lines that cut straight from the coil. Loading towers, sheet "
           "storage and air-cutting packages for every model. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel "
           "and NovoTech's warranty.",
     points=["Compact SF1313G / SF1530 series 4 × 4 and 5 × 10 ft, 1.5 – 12 kW; NP open-type 5 × 10 to 6.6 × 20 ft, 3 – 12 kW",
@@ -109,7 +109,7 @@ PAGE_LASER = dict(
          {"q": "Plate gantries, bevels and oxy-fuel?",
           "a": "The R and TX series are gantry lasers with 10 and 13 ft wide tables from 20 to 164 ft long and 6 to 60 kW sources, replacing plasma and flame cutting of plate to 2″ and beyond. The TX carries a ±45° bevel head so weld preparations are cut in the same pass; the TXP adds an oxy-fuel torch for plate to 4″ on the same table. Shipyards, structural steel, bridges and heavy equipment are the customers."},
          {"q": "When does a coil-fed line pay off?",
-          "a": "When the same thin material runs all day: enclosures, HVAC, appliance and automotive parts. The decoiler, leveller and laser work on one control, there is no sheet handling, no offcuts and no limit on part length. The SF15015C runs thin coil through an open-type laser; the SF1503CH takes coil to 1/8″ and 16.5 tons; the SF2012CH levels and cuts 5/16″ to 9/16″ plate from 22-ton coils with 12 to 80 kW."},
+          "a": "When the same material runs all day: enclosures, HVAC, appliance and automotive parts. The decoiler, leveller and laser work on one control, there is no sheet handling, no offcuts and no limit on part length, and coil costs less than cut-to-length sheet. The SF15015C runs 0.031 – 0.047″ coil through an open-style laser in half the floor space; the SF1503CH takes coil to 0.118″ and 16.5 tons; the SF1503CLH has a straightener made for aluminum coil; the SF2012CH levels and cuts 5/16″ to 9/16″ coil from 22-ton coils with 12 to 80 kW; and the TOP line carries on to robot sorting, panel bending, welding and stacking."},
          {"q": "How does Senfeng compare with the Dener premium line?",
           "a": "Dener is the premium line: Turkish-built with Precitec heads, IPG / nLIGHT sources, a heavier frame rated for 1.5 G and parts stocked in Canada — the longer life at high duty. Senfeng costs less and covers sizes and powers Dener does not: 4 × 4 ft compact machines, 60 kW plate gantries, sheet-and-tube combos, 3D and coil-fed lasers. The comparison, the laser power guide and the capacity table for both lines are on the sheet laser cutters overview."},
          VOLT_FAQ_GENERIC],
@@ -198,7 +198,7 @@ BROCHURES = {
                     "plate to 10 × 164 ft with ±45° bevels; the TD five-axis machine trims formed parts; and the coil-fed lines cut straight from the "
                     "coil with no sheet handling.", ABOUT_SENFENG],
         country="China", families=[f["id"] for f in D.LASER_FAMILIES], family_sets=["dener"],
-        groups=[{"title": "Sheet lasers", "families": ["sf-h", "sf-compact", "sf-np", "sf-1313g", "sf-hm"]}, {"title": "Plate, 3D and coil-fed lasers", "families": ["sf-r", "sf-3d", "sf-coil"]}],
+        groups=[{"title": "Sheet lasers", "families": ["sf-h", "sf-compact", "sf-np", "sf-1313g", "sf-hm"]}, {"title": "Plate, 3D and coil-fed lasers", "families": ["sf-r", "sf-3d", "sf-coil", "sf-coil-c", "sf-top", "sf-coil-clh", "sf-coil-2012"]}],
         cover_photos=["sf-h-1", "sf-np-1", "sf-r-1"], out="src/" + PDF_LASER),
     "senfeng-tube-lasers": dict(
         title="Tube laser cutting machines", subtitle="Senfeng T, PLUS, GT, NT, ST and HT tube and profile fiber lasers · Ø0.5″ to 25″ · 20 to 49 ft · 1.5 to 20 kW",
