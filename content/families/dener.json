@@ -4707,9 +4707,9 @@
    "name": "H series sheet lasers with pallet changer, 5 × 10 to 8.3 × 40 ft, 1.5 – 80 kW",
    "short": "H series production lasers",
    "models_label": "SF3015H – SF12025H · HC, H4 and H5 · 14 models",
-   "summary": "Senfeng's production laser: a full-cover cabin, a double pallet changer that swaps tables in 20 seconds and a thermally isolated hollow bed with graphite protection for high-power cutting. Three builds on the same platform — the HC space saver with 1.5 to 12 kW in a 19 m² footprint, the fourth-generation H4 with 6 to 30 kW, 656 ft/min and 2 G on tables to 8.3 × 40 ft, and the H5 heavy-load machine with hydraulic table lifts to 30 t for 40 to 80 kW sources and 2″ plate. CE / FDA / ETL certified and CSA approved, with loading towers, sheet storage and loading arms as options.",
+   "summary": "Senfeng's production laser: a full-cover cabin, a double pallet changer that swaps tables in 20 seconds and a thermally isolated hollow bed with graphite protection for high-power cutting. Three builds on the same platform — the HC space saver with 1.5 to 12 kW in a 19 m² footprint, the fourth-generation H4 with 6 to 30 kW, 656 ft/min and up to 2.8 G on tables to 8.3 × 40 ft, and the H5 heavy-load machine with hydraulic table lifts to 30 t for 40 to 80 kW sources and 2″ plate. CE / FDA / ETL certified and CSA approved, with loading towers, sheet storage and loading arms as options.",
    "features": [
-    "Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2 G",
+    "Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2.8 G",
     "Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofocus cutting head (Raytools / BOCI) and capacitive height sensing",
     "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
     "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
@@ -4727,12 +4727,39 @@
    "images": [
     "sf-h-1",
     "sf-h-2",
+    "sf-h-hollow-bed",
+    "sf-h-beam",
+    "sf-h-dust",
+    "sf-h-door",
+    "sf-h-zaxis",
+    "sf-h-monitor",
+    "sf-h-raycus",
+    "sf-h-max",
+    "sf-h-boci",
+    "sf-h-raytools",
+    "sf-h-sample",
+    "sf-h-sample-2",
     "sf-h-tower",
     "sf-h-loader",
+    "sf-h-swingarm",
     "sf-h-line",
     "sf-h5"
    ],
    "videos": [],
+   "spec_pdfs": [
+    {
+     "file": "files/NovoTech-Senfeng-SF3015H-Medium-High-Power-Laser-Technical-Specification-2026.pdf",
+     "label": "Download the SF3015H medium and high power full technical specification (1.5 – 6 kW)",
+     "size": "PDF · 3.6 MB · imperial units",
+     "cta": "Download full technical specification · 1.5 – 6 kW"
+    },
+    {
+     "file": "files/NovoTech-Senfeng-SF3015H-High-Power-Laser-Technical-Specification-2026.pdf",
+     "label": "Download the SF3015H high-power full technical specification (12 – 30 kW)",
+     "size": "PDF · 2.1 MB · imperial units",
+     "cta": "Download full technical specification · 12 – 30 kW"
+    }
+   ],
    "specs": {
     "kind": "table",
     "tables": [
@@ -4820,6 +4847,42 @@
         "key": false
        },
        {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "8.7″ (220 mm)",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "by source power",
+        "cells": [
+         "11,552 – 11,729 lb (5,240 – 5,320 kg)",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply protection",
+        "sub": "",
+        "cells": [
+         "IP54",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
         "label": "Dimensions L × W × H",
         "sub": "",
         "cells": [
@@ -4888,7 +4951,7 @@
         "label": "Max. acceleration",
         "sub": "",
         "cells": [
-         "2 G",
+         "2.8 G",
          "2 G",
          "2 G",
          "2 G",
@@ -4901,7 +4964,7 @@
         "label": "Positioning accuracy",
         "sub": "",
         "cells": [
-         "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
+         "±0.002″ (±0.05 mm) · repeat ±0.0008″ (±0.02 mm)",
          "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
          "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
          "±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)",
@@ -4920,6 +4983,45 @@
          "19,842 lb (9,000 kg)",
          "26,455 lb (12,000 kg)",
          "41,579 lb (18,860 kg)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Z travel",
+        "sub": "",
+        "cells": [
+         "15.4″ (390 mm)",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Machine weight",
+        "sub": "by source power",
+        "cells": [
+         "13,735 – 15,763 lb (6,230 – 7,150 kg)",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply protection",
+        "sub": "",
+        "cells": [
+         "IP54",
+         "—",
+         "—",
+         "—",
+         "—",
+         "—"
         ],
         "key": false
        },

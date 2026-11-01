@@ -155,7 +155,7 @@ def build():
         write_families(h["set"], fams)
         pdfs, seen = [], set()
         for f in fams:
-            for p in (f.get("pdf"), f.get("spec_pdf")):
+            for p in (f.get("pdf"), f.get("spec_pdf"), *(f.get("spec_pdfs") or [])):
                 if p and p["file"] not in seen:
                     seen.add(p["file"]); pdfs.append(p)
         pg = h["page"]

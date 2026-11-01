@@ -92,6 +92,8 @@ PB = "Panel-Benders-brochure"
 HWM = "Handheld-Welder-HWM-Series"
 HW = "Handheld-Welder-HW-Series"
 LW = "Laser-Welding-Machines-brochure"
+G3 = "SF3015H-Solution"            # third generation, medium and high power (SF3015H_solution.pdf)
+G4 = "SF3015H-Gen4"                # fourth generation, high power (SF3015H_fourth_generation_solution.pdf)
 
 PHOTOS = {
     # ---------------------------------------------------------------- sheet lasers
@@ -101,6 +103,20 @@ PHOTOS = {
     "sf-h-loader": PP("3015H-Automatic-Loading-Unloading", "i-001-000.png", "SF3015H with the automatic loading and unloading gantry", crop=(1270, 860, 2516, 1510)),
     "sf-h-line": PP("Automation-Machines-brochure", "i-003-003.png", "Automated laser line — gantry loader and sorting robot behind the laser"),
     "sf-h5": R("H5-01.png", "SF3015H5 heavy-load fiber laser for 40 – 80 kW sources", up=True),
+    # from Senfeng's SF3015H technical solutions — third generation 1.5 – 6 kW (G3) and fourth generation 12 – 30 kW (G4); the owner, Nov 1 2026
+    "sf-h-hollow-bed": PP(G4, "hollow-bed.png", "Heavy-duty, thermally isolated hollow bed of the high-power H — no internal joints, stress-relieved and aged"),
+    "sf-h-beam": PP(G4, "beam.png", "Aviation-grade high-strength aluminum crossbeam — extruded, quenched, aged and precision-machined"),
+    "sf-h-dust": PP(G4, "dust-bed.png", "Bed with zoned spiral negative-pressure dust extraction and a sealed bottom for smoke-free cutting"),
+    "sf-h-door": PP(G3, "door.png", "Fully enclosed lift door of the SF3015H — better sealing for dust and smoke extraction"),
+    "sf-h-zaxis": PP(G3, "zaxis.png", "Modular Z axis — sealed against contamination, replaced as one unit"),
+    "sf-h-monitor": PP(G3, "monitor.png", "Visual monitoring of the cutting area on the CNC screen", up=True),
+    "sf-h-max": PP(G3, "max-source.png", "MAX fiber laser source of the 1.5 – 6 kW SF3015H", up=True),
+    "sf-h-raytools": PP(G3, "raytools-6kw.png", "Raytools autofocus cutting head for 4 – 6 kW", up=True),
+    "sf-h-raycus": PP(G4, "raycus-30kw.png", "Raycus RFL-C30000 fiber laser source — 12 to 30 kW on the high-power SF3015H"),
+    "sf-h-boci": PP(G4, "boci-30kw.png", "BOCI cutting head for 30 kW — anti-collision, lens temperature and gas pressure monitoring", up=True),
+    "sf-h-sample": PP(G4, "sample-caliper.png", "Thick-plate sample cut on the high-power SF3015H, checked with a caliper", up=True),
+    "sf-h-sample-2": PP(G4, "sample-part.png", "Thick-plate sample part cut on the high-power SF3015H", up=True),
+    "sf-h-swingarm": PP(G3, "swing-arm.png", "Servo swing-arm loading system for 1,100 lb sheets (optional)"),
     "sf-np-1": R("NP-1.webp", "Senfeng SF3015NP fiber laser with the laser cover on the gantry — 5 × 10 ft, 3 – 12 kW", up=True),   # the NP with its gantry cover (the owner, Oct 31 2026)
     "sf-np-2": R("NP-2.webp", "NP series laser — the laser cover travels with the gantry over the table, seen from the loading side", up=True),
     "sf-np-3": R("NP-3.webp", "NP series laser from the rear — the gantry cover over the table and the control console", up=True),

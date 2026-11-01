@@ -130,6 +130,9 @@ T_HC = table("H series space-saver lasers · 1.5 – 12 kW", "5 models · 5 × 1
     ("Max. acceleration", ["1.2 G"] * len(HC)),
     ("Positioning accuracy", [ACC] * len(HC)),
     ("Max. table load", [lb(r[3]) for r in HC]),
+    ("Z travel", ["8.7″ (220 mm)"] + ["—"] * 4),
+    ("Machine weight", "by source power", ["11,552 – 11,729 lb (5,240 – 5,320 kg)"] + ["—"] * 4),
+    ("Power supply protection", ["IP54"] + ["—"] * 4),
     ("Dimensions L × W × H", [dims_ft(*r[4]) for r in HC])])
 H4 = [("SF3015H", 121.3, 60.2, 6614, (332.3, 89.4, 92.1)), ("SF4020H", 161.4, 80, 11023, (424.8, 125.2, 94.9)), ("SF6020H", 240.2, 80, 16645, (589.7, 125.2, 94.9)),
       ("SF6025H", 240.2, 100, 19842, (580.1, 148.9, 94.9)), ("SF8025H", 318.9, 100, 26455, (743.1, 148.9, 94.9)), ("SF12025H", 476.4, 100, 41579, (1093.3, 148.9, 94.9))]
@@ -137,9 +140,12 @@ T_H4 = table("H4 series high-power lasers · 6 – 30 kW", "6 models · 5 × 10 
     ("Working area", [area_in(r[1], r[2], r[0]) for r in H4]),
     ("Laser power", ["6 – 30 kW"] * len(H4)),
     ("Max. no-load speed", [ftmin(656)] * len(H4)),
-    ("Max. acceleration", ["2 G"] * len(H4)),
-    ("Positioning accuracy", ["±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)"] * len(H4)),
+    ("Max. acceleration", ["2.8 G"] + ["2 G"] * (len(H4) - 1)),
+    ("Positioning accuracy", [ACC] + ["±0.004″ per 33 ft (±0.1 mm / 10 m) · repeat ±0.001″ (±0.02 mm)"] * (len(H4) - 1)),
     ("Max. table load", [lb(r[3]) for r in H4]),
+    ("Z travel", ["15.4″ (390 mm)"] + ["—"] * (len(H4) - 1)),
+    ("Machine weight", "by source power", ["13,735 – 15,763 lb (6,230 – 7,150 kg)"] + ["—"] * (len(H4) - 1)),
+    ("Power supply protection", ["IP54"] + ["—"] * (len(H4) - 1)),
     ("Dimensions L × W × H", [dims_in(*r[4]) for r in H4])])
 H5 = [("SF3015H5", 120, 60.2, "12 – 30 kW", 44092, (28.1, 9.4, 7.8)), ("SF4020H5", 159.4, 79.9, "40 – 80 kW", 66139, (35.2, 11.1, 7.8)), ("SF6025H5", 238.1, 99.6, "12 – 30 kW", 66139, (49.5, 12.7, 7.8))]
 T_H5 = table("H5 heavy-load lasers · 12 – 80 kW", "3 models · hydraulic table lift to 30 t · 2″ plate", [r[0] for r in H5], [
@@ -365,13 +371,22 @@ LASER_FAMILIES = [
          models_label="SF3015H – SF12025H · HC, H4 and H5 · 14 models",
          summary="Senfeng's production laser: a full-cover cabin, a double pallet changer that swaps tables in 20 seconds and a "
                  "thermally isolated hollow bed with graphite protection for high-power cutting. Three builds on the same platform — the "
-                 "HC space saver with 1.5 to 12 kW in a 19 m² footprint, the fourth-generation H4 with 6 to 30 kW, 656 ft/min and 2 G on "
+                 "HC space saver with 1.5 to 12 kW in a 19 m² footprint, the fourth-generation H4 with 6 to 30 kW, 656 ft/min and up to 2.8 G on "
                  "tables to 8.3 × 40 ft, and the H5 heavy-load machine with hydraulic table lifts to 30 t for 40 to 80 kW sources and "
                  "2″ plate. CE / FDA / ETL certified and CSA approved, with loading towers, sheet storage and loading arms as options.",
-         features=["Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2 G"] + LZ_STD,
+         features=["Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2.8 G"] + LZ_STD,
          optional=LZ_OPT,
-         images=["sf-h-1", "sf-h-2", "sf-h-tower", "sf-h-loader", "sf-h-line", "sf-h5"],
+         images=["sf-h-1", "sf-h-2", "sf-h-hollow-bed", "sf-h-beam", "sf-h-dust", "sf-h-door", "sf-h-zaxis", "sf-h-monitor", "sf-h-raycus",
+                 "sf-h-max", "sf-h-boci", "sf-h-raytools", "sf-h-sample", "sf-h-sample-2", "sf-h-tower", "sf-h-loader", "sf-h-swingarm",
+                 "sf-h-line", "sf-h5"],
          videos=[],
+         # Senfeng's two SF3015H technical solutions in NovoTech format (tools/brochure/senfeng_h_editions.py) — the owner, Nov 1 2026
+         spec_pdfs=[dict(file="files/NovoTech-Senfeng-SF3015H-Medium-High-Power-Laser-Technical-Specification-2026.pdf",
+                         label="Download the SF3015H medium and high power full technical specification (1.5 – 6 kW)",
+                         size="PDF · 3.6 MB · imperial units", cta="Download full technical specification · 1.5 – 6 kW"),
+                    dict(file="files/NovoTech-Senfeng-SF3015H-High-Power-Laser-Technical-Specification-2026.pdf",
+                         label="Download the SF3015H high-power full technical specification (12 – 30 kW)",
+                         size="PDF · 2.1 MB · imperial units", cta="Download full technical specification · 12 – 30 kW")],
          specs=spec([T_HC, T_H4, T_H5], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-hm", group="laser-senfeng", page=P_LASER, brand=BRAND,
          name="HM sheet and tube combination lasers, 5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 6 – 30 kW",

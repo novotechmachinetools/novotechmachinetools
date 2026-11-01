@@ -871,6 +871,8 @@ def brand_all_pdf_labels(loaded):
         for f in fs.values():
             pdf_brand_label(f.get("pdf"))
             pdf_brand_label(f.get("spec_pdf"))
+            for x in f.get("spec_pdfs") or []:
+                pdf_brand_label(x)
     for b in site["brands"].values():
         pdf_brand_label(b.get("pdf"))
 
@@ -1286,7 +1288,7 @@ def unique_pdfs(fams):
     """the brochures of a set of families, each once, in order"""
     out, seen = [], set()
     for f in fams:
-        for p in (f.get("pdf"), f.get("spec_pdf")):            # spec_pdf: a family's full technical specification, beside its brochure
+        for p in (f.get("pdf"), f.get("spec_pdf"), *(f.get("spec_pdfs") or [])):   # spec_pdf(s): full technical specifications, beside the brochure
             if p and p.get("file") and p["file"] not in seen:
                 seen.add(p["file"]); out.append(p)
     return out

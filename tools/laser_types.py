@@ -246,7 +246,7 @@ def build():
             members = [dict(fams[fid], group=g) for fid, g in LN.PAGES[kind][slug]]
             pdfs, seen = [], set()
             for f in members:
-                for pd in (f.get("pdf"), f.get("spec_pdf")):
+                for pd in (f.get("pdf"), f.get("spec_pdf"), *(f.get("spec_pdfs") or [])):
                     if pd and pd["file"] not in seen:
                         seen.add(pd["file"]); pdfs.append(pd)
             n = sum(len(f["specs"]["models"]) for f in members)

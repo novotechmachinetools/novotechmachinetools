@@ -139,6 +139,8 @@ BROCHURES = [
     ("laser", "NovoTech-Fiber-Lasers-Value-Line-2026.pdf", "NovoTech value-line fiber lasers"),
     ("laser", "NovoTech-ULE-Fiber-Laser-Technical-Specification-2026.pdf", "NovoTech ULE fiber laser — full technical specification"),
     ("laser", "NovoTech-Senfeng-Fiber-Lasers-2026.pdf", "Senfeng fiber laser cutting machines"),
+    ("laser", "NovoTech-Senfeng-SF3015H-Medium-High-Power-Laser-Technical-Specification-2026.pdf", "Senfeng SF3015H medium and high power fiber laser, 1.5 – 6 kW — full technical specification"),
+    ("laser", "NovoTech-Senfeng-SF3015H-High-Power-Laser-Technical-Specification-2026.pdf", "Senfeng SF3015H high-power fiber laser, 12 – 30 kW — full technical specification"),
     ("laser", "NovoTech-Dener-Tube-Lasers-2026.pdf", "Dener tube laser cutting machines"),
     ("laser", "NovoTech-Tube-Lasers-Value-Line-2026.pdf", "NovoTech value-line tube lasers"),
     ("laser", "NovoTech-Senfeng-Tube-Lasers-2026.pdf", "Senfeng tube laser cutting machines"),
