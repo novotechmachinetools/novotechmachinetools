@@ -45,7 +45,7 @@ SHEET = {
     "fiber-laser-cutting-machine": dict(
         title="Fiber Laser Cutting Machines for Sale in Canada — Shuttle Table & Pallet Changer, 1.5–80 kW | NovoTech",
         meta="Fiber laser cutting machines sold, installed and supported in Canada: shuttle table or pallet changer, laser-safe cabin, 4 × 4 ft compact machines to 8.5 × 41 ft, 1.5 to 80 kW — premium GFL and Smart made in Turkey, value-line ULE, Senfeng H series, NP and compact lasers. Every model in one table.",
-        h1="Fiber laser cutting machines — shuttle table and pallet changer, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW",
+        h1="Fiber laser cutting machines, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW",
         intro="A fiber laser cutting machine cuts inside a laser-safe cabin with fume extraction, and its shuttle table or pallet changer loads "
               "the next sheet while the first is being cut — the production laser that keeps cutting while the operator unloads, and the kind "
               "most shops buy from 5 × 10 ft up. NovoTech sells two lines in Canada, both on this page: the premium Dener lasers made in Turkey "
