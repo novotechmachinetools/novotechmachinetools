@@ -20810,15 +20810,7 @@
  },
  "vn-ulet-1": {
   "src": "tools/src-images/value-laser/vn-ulet-1.webp",
-  "alt": "NovoTech ULET sheet-and-tube fiber laser — exchange table and cabin, the tube chuck at the end",
-  "section": "value-laser",
-  "trim": true,
-  "quality": 82,
-  "cutout": false
- },
- "vn-ulet-beam": {
-  "src": "tools/src-images/value-laser/vn-ulet-beam.webp",
-  "alt": "Crossbeam and Z axis of the ULET — manganese steel, heat-treated",
+  "alt": "NovoTech ULET 6020 sheet-and-tube fiber laser — laser-safe cabin with viewing windows, the operator console on the front",
   "section": "value-laser",
   "trim": true,
   "quality": 82,
@@ -20826,7 +20818,7 @@
  },
  "vn-ulet-chuck": {
   "src": "tools/src-images/value-laser/vn-ulet-chuck.jpg",
-  "alt": "Pneumatic chuck clamping a square tube",
+  "alt": "Pneumatic four-jaw chuck — self-centring on round, square and rectangular tube",
   "section": "value-laser",
   "trim": false,
   "quality": 82,
@@ -20834,7 +20826,7 @@
  },
  "vn-ulet-head": {
   "src": "tools/src-images/value-laser/vn-ulet-head.webp",
-  "alt": "Autofocus cutting head with anti-collision protection",
+  "alt": "Autofocus cutting head on the Z axis of the gantry",
   "section": "value-laser",
   "trim": true,
   "quality": 82,
@@ -32679,6 +32671,110 @@
   "alt": "Dener Smart semi-closed fiber laser — the single table is loaded from the side; the cabin rides on the gantry",
   "section": "dener",
   "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-side": {
+  "src": "tools/src-images/value-laser/vn-ulet-side.webp",
+  "alt": "ULET from the side — one cabin over the sheet table and the tube unit, with sliding doors along its length",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-open": {
+  "src": "tools/src-images/value-laser/vn-ulet-open.webp",
+  "alt": "ULET with the long side door slid open — the sheet table and the gantry inside the cabin",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-factory": {
+  "src": "tools/src-images/value-laser/vn-ulet-factory.jpg",
+  "alt": "ULET 6020 with a 12 kW source at the factory before shipping",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-inside": {
+  "src": "tools/src-images/value-laser/vn-ulet-inside.jpg",
+  "alt": "Inside the cabin through the open door: the slat table, and at the far end the chuck of the tube unit",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-gantry": {
+  "src": "tools/src-images/value-laser/vn-ulet-gantry.jpg",
+  "alt": "Gantry and cutting head over the sheet table, seen from the loading end",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-table-chuck": {
+  "src": "tools/src-images/value-laser/vn-ulet-table-chuck.jpg",
+  "alt": "Sheet table and tube chuck under one cabin — the same gantry and head serve both",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-table": {
+  "src": "tools/src-images/value-laser/vn-ulet-table.jpg",
+  "alt": "Cutting head over the sheet-support slats",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-cutting": {
+  "src": "tools/src-images/value-laser/vn-ulet-cutting.jpg",
+  "alt": "Cutting a pattern of round and square holes in thin carbon steel",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-sample": {
+  "src": "tools/src-images/value-laser/vn-ulet-sample.jpg",
+  "alt": "Thin sheet with round and square holes cut on the ULET",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-tube-unit": {
+  "src": "tools/src-images/value-laser/vn-ulet-tube-unit.jpg",
+  "alt": "Tube unit at the end of the bed — the rear chuck runs on its own rack and guide rail",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-tube-head": {
+  "src": "tools/src-images/value-laser/vn-ulet-tube-head.jpg",
+  "alt": "Cutting head over a stainless round tube held in the chuck",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-tube-zone": {
+  "src": "tools/src-images/value-laser/vn-ulet-tube-zone.jpg",
+  "alt": "Tube cutting zone — the tube is cut in front of the chuck by the head on the gantry",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ulet-tube-parts": {
+  "src": "tools/src-images/value-laser/vn-ulet-tube-parts.jpg",
+  "alt": "Round and square tube cut on the ULET — a saddle cut and window openings",
+  "section": "value-laser",
+  "trim": false,
   "quality": 82,
   "cutout": false
  }

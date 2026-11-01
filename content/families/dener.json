@@ -1895,6 +1895,7 @@
   },
   "dn-gfl": {
    "id": "dn-gfl",
+   "group": "laser-gfl",
    "brand": "dener",
    "name": "GFL fiber laser cutting machines, 5 × 10 to 6.6 × 20 ft, 3 – 40 kW",
    "short": "GFL fiber lasers",
@@ -1921,9 +1922,9 @@
     "Custom voltage: 208 V, 240 V or 480 V 3-phase"
    ],
    "images": [
+    "dn-gfl-1",
     "dn-gfl-3",
     "dn-gfl-2",
-    "dn-gfl-1",
     "dn-gfl-3015",
     "dn-gfl-6020",
     "dn-gfl-open",
@@ -2120,8 +2121,7 @@
     "file": "files/NovoTech-Dener-Fiber-Lasers-2026.pdf",
     "label": "Download the fiber laser brochure",
     "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "laser-gfl"
+   }
   },
   "dn-smart-closed": {
    "id": "dn-smart-closed",
@@ -8778,6 +8778,7 @@
   },
   "vn-ulet": {
    "id": "vn-ulet",
+   "group": "laser-novotech",
    "brand": "novotech",
    "name": "ULET sheet-and-tube fiber lasers with exchange table, 10 × 5 to 41 × 8.5 ft plus tube to Ø13.8″, 1.5 – 40 kW",
    "short": "ULET sheet + tube lasers",
@@ -8802,9 +8803,21 @@
    ],
    "images": [
     "vn-ulet-1",
-    "vn-ulet-chuck",
-    "vn-ulet-beam",
+    "vn-ulet-side",
+    "vn-ulet-open",
+    "vn-ulet-factory",
+    "vn-ulet-inside",
+    "vn-ulet-gantry",
+    "vn-ulet-table-chuck",
+    "vn-ulet-table",
     "vn-ulet-head",
+    "vn-ulet-cutting",
+    "vn-ulet-sample",
+    "vn-ulet-tube-unit",
+    "vn-ulet-chuck",
+    "vn-ulet-tube-head",
+    "vn-ulet-tube-zone",
+    "vn-ulet-tube-parts",
     "vn-ulet-source"
    ],
    "videos": [],
@@ -8927,8 +8940,7 @@
     "file": "files/NovoTech-Fiber-Lasers-Value-Line-2026.pdf",
     "label": "Download the NovoTech fiber laser brochure",
     "size": "PDF · 2 MB · imperial units"
-   },
-   "group": "laser-novotech"
+   }
   },
   "vn-ult": {
    "id": "vn-ult",

@@ -91,7 +91,7 @@ SHEET = {
         points=["ULET: sheet 10 × 5 to 41 × 8.5 ft on an exchange table plus tube to Ø13.8″ and 39 ft, 1.5 – 40 kW",
                 "HM series: sheet 5 × 10 to 8.3 × 20 ft on a pallet changer plus Ø8.6″ × 20 ft tube, from 6 kW",
                 "One head, one source, one footprint — tube supports and chuck fold away when cutting sheet"],
-        hero="vn-ulet-1", minis=["sf-hm-1", "vn-ulet-chuck"],
+        hero="vn-ulet-1", minis=["sf-hm-1", "vn-ulet-tube-head"],
         groups=[("ls-value-ulet", "ULET sheet-and-tube lasers with exchange table · value line", "The ULE with exchange table and a tube chuck — sheet to 41 × 8.5 ft and tube to Ø13.8″."),
                 ("ls-value-hm", "HM sheet and tube combination lasers · value line", "5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, from 6 kW.")],
         faq=[faq("novotech-fiber-lasers", "Sheet and tube on one machine")[0],

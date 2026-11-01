@@ -305,7 +305,9 @@ SHEET_FAMILIES = [
                  "the same source and head cut both, so a shop that cuts tube a few times a week does not need a second laser.",
          features=["Sheet 10 × 5 to 41 × 8.5 ft; tube Ø8.7 / 13.8″ chuck, 20 – 39 ft; 1.5 – 40 kW; 459 ft/min"] + LZ_STD,
          optional=LZ_OPT + ["Tube supports and unloading for 39 ft lengths"],
-         images=["vn-ulet-1", "vn-ulet-chuck", "vn-ulet-beam", "vn-ulet-head", "vn-ulet-source"],
+         images=["vn-ulet-1", "vn-ulet-side", "vn-ulet-open", "vn-ulet-factory", "vn-ulet-inside", "vn-ulet-gantry", "vn-ulet-table-chuck",
+                 "vn-ulet-table", "vn-ulet-head", "vn-ulet-cutting", "vn-ulet-sample", "vn-ulet-tube-unit", "vn-ulet-chuck", "vn-ulet-tube-head",
+                 "vn-ulet-tube-zone", "vn-ulet-tube-parts", "vn-ulet-source"],
          videos=[],
          specs=spec([T_ULET], LZ_GK, LZ_G_FROM, NOTE_SHEET)),
 ]

@@ -57,7 +57,7 @@ PAGE_SHEET = dict(
             "ULE enclosed with exchange table, 15 s swap: 10 × 5 to 41 × 8.5 ft, 3 – 40 kW, Z travel to 16.5″, ready for a storage tower",
             "ULG ground-rail plate lasers: 42.7 or 85.3 ft × up to 14.8 ft, 12 – 60 kW, up to 202,000 lb of plate on the table",
             "ULFT and ULET sheet + tube: the laser table plus a pneumatic chuck for tube to Ø13.8″ and 39 ft, open or enclosed, 1.5 – 60 kW"],
-    hero="vn-ule-1", minis=["vn-ulf-1", "vn-ulft-1"],
+    hero="vn-ule-1", minis=["vn-ulg-1", "vn-ulet-1"],
     groups=[("laser-novotech", "NovoTech fiber lasers — the value line", "Open single-table, enclosed exchange-table, ground-rail plate and sheet + tube lasers from 10 × 5 to 85 × 14.8 ft, 1.5 to 60 kW.", BRAND)],
     faq=[{"q": "Open ULF or enclosed ULE?",
           "a": "The ULF is the open machine: a single table loaded from three sides, the lowest price per kilowatt and the right choice for a shop that cuts a few hours a day and unloads by hand. The ULE puts the cutting area in a full enclosure — laser-safe windows, fumes extracted from inside the cabin, less noise — and adds an exchange table that swaps in 15 seconds, so the laser cuts while the operator loads the next sheet. Above 6 kW, for two shifts, or with a storage tower in mind, buy the ULE."},
@@ -97,7 +97,7 @@ PAGE_TUBE = dict(
     points=["Four chuck sizes: Ø6.3, 9.4, 11 and 14.2″ round, square to 13.8″; 20, 29.5 or 39 ft bars to 2,205 lb",
             "1.5 – 40 kW; 328 ft/min and 1.2 G on the small chucks; ±0.04 mm/m positioning; double-acting pneumatic chucks",
             "Three-chuck zero-tail version; pneumatic loader, bundle feeding to 5 t, ±45° five-axis bevel head, TubesT nesting"],
-    hero="vn-ult-1", minis=["vn-ult-chuck", "vn-ulft-1"],
+    hero="vn-ult-1", minis=["vn-ult-chuck", "vn-ult-head"],
     groups=[("tube-novotech", "NovoTech tube lasers — the value line", "Two- and three-chuck ULT tube lasers in four chuck sizes, Ø0.4 to 14.2″, 20 to 39 ft bars.", BRAND)],
     faq=[{"q": "Which ULT chuck size do I need?",
           "a": "Size the chuck to the largest tube you cut. The 016 takes round tube from Ø0.4 to 6.3″ and square to 6.3″ — furniture, fitness equipment, racking and railings; the 024 takes Ø9.4″ and square to 8.9″, the size most fabrication shops buy; the 028 takes Ø11″ and the 036 Ø14.2″ and square to 13.8″, with bars to 2,205 lb for structural tube and pipe. The smaller chucks turn faster — 53.5 rpm against 23 rpm on the 036 — and accelerate harder, so they are quicker on small tube."},
@@ -125,20 +125,20 @@ ABOUT_NT = ("NovoTech Machine Tools sells, installs and supports sheet-metal and
             "before they ship, with a CSA-approved panel, a 1-year warranty, operator training and parts and service from Mississauga, ON, Canada.")
 
 BROCHURES = {
+    # the fully open ULF and ULFT are no longer sold (the owner, Oct 31 2026): the brochure covers the ULE, ULG and ULET
     "novotech-fiber-lasers": dict(
-        title="Fiber laser cutting machines", subtitle="NovoTech value line · ULF open-type, ULE enclosed with exchange table, ULG ground-rail, ULFT and ULET sheet + tube · 10 × 5 to 85 × 14.8 ft · 1.5 – 60 kW",
+        title="Fiber laser cutting machines", subtitle="NovoTech value line · ULE with exchange table, ULG ground-rail plate lasers, ULET sheet + tube · 10 × 5 to 85 × 14.8 ft · 1.5 – 60 kW",
         cover_line="NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech", range_label="NovoTech fiber lasers",
-        about_for="NovoTech fiber lasers", about_kicker="NovoTech value line", about_title="Open, enclosed and sheet + tube fiber lasers at a price a small shop can justify",
+        about_for="NovoTech fiber lasers", about_kicker="NovoTech value line", about_title="Production, plate and sheet + tube fiber lasers at a price a small shop can justify",
         about_text=["A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1″ with 6 kW and to 2″ and beyond "
-                    "with 20 to 30 kW — at speeds no plasma or punch can match, with a clean edge and no tooling. The ULF is the open single-table laser: "
-                    "the G build from 1.5 to 6 kW, the heavier E build to 12 kW and 1.7 G, and large-format plate tables to 85 × 10.5 ft with up to 60 kW. "
-                    "The ULE puts the cutting area in a full enclosure and swaps two tables in 15 seconds, from 10 × 5 to 41 × 8.5 ft and 3 to 40 kW. The "
-                    "ULG runs its gantry on floor rails over a plate table 42.7 or 85.3 ft long and up to 14.8 ft wide, with 12 to 60 kW. The "
-                    "ULFT and ULET add a pneumatic chuck for tube to Ø13.8″ and 39 ft, so one machine cuts sheet and tube.", ABOUT_NT],
+                    "with 20 to 30 kW — at speeds no plasma or punch can match, with a clean edge and no tooling. The ULE cuts inside a laser-safe cabin "
+                    "and swaps two tables in 15 seconds, from 10 × 5 to 41 × 8.5 ft and 3 to 40 kW. The ULG runs its gantry and cabin on floor rails over a "
+                    "plate table 42.7 or 85.3 ft long and up to 14.8 ft wide, with 12 to 60 kW. The ULET adds a pneumatic chuck for tube to Ø13.8″ and 39 ft "
+                    "to the exchange-table laser, so one machine cuts sheet and tube.", ABOUT_NT],
         country="China", made_in="Built in China to North American standards", families=[f["id"] for f in D.SHEET_FAMILIES], family_sets=["dener"],
-        groups=[{"title": "Sheet lasers", "families": ["vn-ulf", "vn-ule"]}, {"title": "Ground-rail plate lasers", "families": ["vn-ulg"]},
-                {"title": "Sheet + tube lasers", "families": ["vn-ulft", "vn-ulet"]}],
-        cover_photos=["vn-ule-1", "vn-ulf-1", "vn-ulft-1"], out="src/" + PDF_SHEET),
+        groups=[{"title": "Sheet lasers with exchange table", "families": ["vn-ule"]}, {"title": "Ground-rail plate lasers", "families": ["vn-ulg"]},
+                {"title": "Sheet + tube lasers", "families": ["vn-ulet"]}],
+        cover_photos=["vn-ule-1", "vn-ulg-1", "vn-ulet-1"], out="src/" + PDF_SHEET),
     "novotech-tube-lasers": dict(
         title="Tube laser cutting machines", subtitle="NovoTech value line · ULT two- and three-chuck tube and pipe lasers · Ø0.4 to 14.2″ · 20 to 39 ft bars · 1.5 to 40 kW",
         cover_line="NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech", range_label="NovoTech tube lasers",

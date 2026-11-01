@@ -596,7 +596,7 @@ LASER_FAMILIES = [
                  "pneumatic extraction and scrap boxes that keep the floor clean. The machine for a job shop that cuts all day.",
          features=["1.5 G acceleration, 394 ft/min (120 m/min) axis speed, ±0.03 mm positioning", "3 to 40 kW fiber sources; 6 kW cuts 3/4″ mild steel, 12 kW 1″"] + LS_STD,
          optional=LS_OPT,
-         images=["dn-gfl-3", "dn-gfl-2", "dn-gfl-1", "dn-gfl-3015", "dn-gfl-6020", "dn-gfl-open", "dn-gfl-frame", "dn-gfl-head", "dn-gfl-video-1", "dn-gfl-video-2", "dn-gfl-control", "dn-gfl-part", "dn-gfl-sheet"],
+         images=["dn-gfl-1", "dn-gfl-3", "dn-gfl-2", "dn-gfl-3015", "dn-gfl-6020", "dn-gfl-open", "dn-gfl-frame", "dn-gfl-head", "dn-gfl-video-1", "dn-gfl-video-2", "dn-gfl-control", "dn-gfl-part", "dn-gfl-sheet"],
          videos=vids(("P3ynLUu2VYU", "DENER GFL 10 × 5 ft 6 kW laser cutting machine"), ("VjuvZWb_O_g", "DENER GFL laser cutting machine"),
                      ("0Cz5xYoNVec", "DENER GFL laser cutting machine"), ("NxTq4uw3n5k", "DENER GFL laser cutting machine"),
                      ("L9fTrifVFiA", "DENER 6 kW / 4 kW / 2 kW fiber laser cutting comparison"), ("C0mG6rJkHdU", "6 kW fiber laser cutting 15 mm mild steel"),

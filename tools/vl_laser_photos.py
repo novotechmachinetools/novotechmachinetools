@@ -34,6 +34,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = "/home/claude/adhlaser/src/"
 QD = "/home/claude/adhlaser/q/"
 UG = "/home/claude/adhlaser/ulg/s/"          # ULG photos from the supplier's website (October 2026), see the ULG block below
+UT = "/home/claude/adhlaser/ulet/s/"         # ULET photos from the supplier's website and frames of its ULET-6020 video (November 2026)
+WM = (2268, 60, 2512, 212)                   # the supplier's watermark in the top-right corner of the video frames (2560 × 1440)
 WORK = "/home/claude/adhlaser/work/"
 OUT = os.path.join(ROOT, "tools", "src-images", "value-laser")
 MAX_SIDE = 1800
@@ -105,12 +107,27 @@ PHOTOS = {
     "vn-ulft-chuck": R("ULFT-002", (1175, 128, 1705, 660), "Pneumatic chuck of the tube unit — one-key self-centring, three times faster than an electric chuck"),
     "vn-ulft-head": R("ULFT-002", (155, 218, 365, 670), "Autofocus cutting head — anti-collision, micro-joints so parts stay in the sheet"),
     "vn-ulft-sources": R("ULFT-002", (155, 728, 605, 1100), "MAX and Raycus fiber laser sources — chosen at order"),
-    # ---------------------------------------------------------------- ULET enclosed sheet + tube lasers
-    "vn-ulet-1": R("ULET-000", (1055, 262, 2590, 1050), "NovoTech ULET sheet-and-tube fiber laser — exchange table and cabin, the tube chuck at the end",
-                   boxes=[(1072, 370, 1135, 432), (1825, 322, 2035, 428)]),
-    "vn-ulet-beam": R("ULET-001", (2515, 135, 3160, 525), "Crossbeam and Z axis of the ULET — manganese steel, heat-treated"),
-    "vn-ulet-chuck": P("ULET-002", (1350, 115, 1800, 575), "Pneumatic chuck clamping a square tube"),
-    "vn-ulet-head": R("ULET-002", (185, 228, 365, 770), "Autofocus cutting head with anti-collision protection"),
+    # ---------------------------------------------------------------- ULET sheet + tube lasers: the supplier's product photos (its website,
+    # November 2026) and frames of its ULET-6020 12 kW video (2560 × 1440, the watermark WM filled) — the owner, Nov 1 2026.  The badge
+    # on the blue end panel and the model strip beside the console are filled; frames with a caption are not used.
+    "vn-ulet-1": R(UT + "ulet-hero.webp", None, "NovoTech ULET 6020 sheet-and-tube fiber laser — laser-safe cabin with viewing windows, the operator console on the front",
+                   boxes=[(203, 316, 294, 444), (591, 314, 613, 460)]),
+    "vn-ulet-side": A(UT + "ulet-side.webp", "ULET from the side — one cabin over the sheet table and the tube unit, with sliding doors along its length"),
+    "vn-ulet-open": A(UT + "ulet-open.webp", "ULET with the long side door slid open — the sheet table and the gantry inside the cabin"),
+    "vn-ulet-factory": P(UT + "ulet-v-factory.webp", (400, 520, 2300, 1440), "ULET 6020 with a 12 kW source at the factory before shipping",
+                         boxes=[(466, 1016, 568, 1166), (986, 982, 1012, 1156)]),
+    "vn-ulet-inside": P(UT + "ulet-inside.webp", (276, 0, 1600, 1000), "Inside the cabin through the open door: the slat table, and at the far end the chuck of the tube unit"),
+    "vn-ulet-gantry": P(UT + "ulet-v-gantry.webp", None, "Gantry and cutting head over the sheet table, seen from the loading end", boxes=[WM]),
+    "vn-ulet-table-chuck": P(UT + "ulet-v-table-chuck.webp", None, "Sheet table and tube chuck under one cabin — the same gantry and head serve both", boxes=[WM]),
+    "vn-ulet-table": P(UT + "ulet-table.webp", None, "Cutting head over the sheet-support slats"),
+    "vn-ulet-head": A(UT + "ulet-head.webp", "Autofocus cutting head on the Z axis of the gantry"),
+    "vn-ulet-cutting": P(UT + "ulet-v-cutting.webp", None, "Cutting a pattern of round and square holes in thin carbon steel", boxes=[WM]),
+    "vn-ulet-sample": P(UT + "ulet-sample.webp", None, "Thin sheet with round and square holes cut on the ULET"),
+    "vn-ulet-tube-unit": P(UT + "ulet-v-tube-unit.webp", None, "Tube unit at the end of the bed — the rear chuck runs on its own rack and guide rail", boxes=[WM]),
+    "vn-ulet-chuck": P(UT + "ulet-v-chuck.webp", (600, 0, 2560, 1440), "Pneumatic four-jaw chuck — self-centring on round, square and rectangular tube", boxes=[WM]),
+    "vn-ulet-tube-head": P(UT + "ulet-tube-head.webp", None, "Cutting head over a stainless round tube held in the chuck"),
+    "vn-ulet-tube-zone": P(UT + "ulet-v-tube-zone.webp", None, "Tube cutting zone — the tube is cut in front of the chuck by the head on the gantry", boxes=[WM]),
+    "vn-ulet-tube-parts": P(UT + "ulet-v-tube-parts.webp", None, "Round and square tube cut on the ULET — a saddle cut and window openings", boxes=[WM]),
     "vn-ulet-source": R("ULET-002", (145, 850, 645, 1140), "Raycus fiber laser source, 1.5 to 40 kW"),
     # ---------------------------------------------------------------- ULT tube lasers
     "vn-ult-1": R("TUBE-000", (735, 225, 2545, 960), "NovoTech ULT tube laser — two pneumatic chucks, bundle loader on the left, unloading table in front",
