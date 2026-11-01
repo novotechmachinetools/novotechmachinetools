@@ -622,9 +622,9 @@ LASER_FAMILIES = [
                  "area, control and remote handset.",
          features=["Cabin with laser-safe viewing glass; shuttle table", "1 G acceleration, 459 ft/min (140 m/min) axis speed, ±0.03 mm positioning"] + LS_STD,
          optional=LS_OPT,
-         images=["dn-smart-1", "dn-smart-2", "dn-laser-web"],
-         videos=vids(("4Yp6X9tP6J8", "DENER SMART series laser cutting machine"), ("zDGupa7NevE", "Dener fiber laser cutting machine"),
-                     ("9J_m5e1Z7-M", "Fiber laser FL 6020 6 kW — new features for high speed and performance"), ("oM9GCeSY9EI", "Very fast fiber laser cut steel by Dener")),
+         # the Legend shop-floor photo (dn-laser-web) and videos zDGupa7NevE, 9J_m5e1Z7-M, oM9GCeSY9EI are off the Smart (the owner, Nov 1 2026)
+         images=["dn-smart-1", "dn-smart-2"],
+         videos=vids(("4Yp6X9tP6J8", "DENER SMART series laser cutting machine")),
          specs=spec([T_SMART_C], LS_GK, LS_G_FROM, NOTE_LS)),
     dict(id="dn-smart-semi", group="laser-smart", page=P_LASER, brand=BRAND,
          name="Smart semi-closed fiber lasers with single table, 8.2 × 20 to 13 × 82 ft, 3 – 40 kW",
