@@ -346,6 +346,43 @@ TB_STD = ["Pneumatic self-centring chucks; following supports along the bed; aut
           "Safety fencing and light curtains; chip and part collection", "CE, FDA and ETL certified and CSA approved; " + VOLT]
 TB_OPT = ["Automatic bundle loader and unloading conveyor", "45° bevel head (GPLUS / GT, ST / HT)", "Higher laser power; nitrogen generator; dust collector", "Custom voltage transformer"]
 
+# ------------------------------------------------------------------------------------------------ intelligent air cutting
+# the optional "AI Intelligent Air Cutting" tab on the H4, NP and R items (the owner, Nov 1 2026): from Senfeng's launch note,
+# senfenglaser.com/knowledge/senfeng-intelligent-air-cutting and the three Senfeng USA air-cutting series pages
+def air_tab(where):
+    return dict(
+        id="air-cut", label_pre="AI Intelligent", label_main="Air Cutting", title="AI Intelligent Air Cutting (optional)",
+        lead="Senfeng's Intelligent Air Cutting, co-developed with BOCHU Automation for the H4, NP and R series from 6 to 60 kW, lets the "
+             "laser cut with clean, dry compressed air from its own bus-connected compressor instead of bottled nitrogen or oxygen — and "
+             "keeps oxygen and nitrogen for the jobs that need them. Hardware, control system, cutting software and service are upgraded "
+             "together: faster, cleaner cuts at a much lower running cost, and simpler operation.",
+        groups=[dict(title="Lower running cost", items=[
+                    "Assist gas close to free — no nitrogen or oxygen to buy for most work; Senfeng quotes overall cutting expenses down by up to 92 %",
+                    "15 kW high-efficiency air compressor with variable-frequency dust extraction: the whole machine uses 11.8 kWh less per "
+                    "hour, 20.3 % less energy",
+                    "Clean air protects the optics — protective-lens use drops from 5 a day to 2",
+                    "No gas deliveries: no delays, shortages or price swings, even for shops far from a gas supplier"]),
+                dict(title="Faster, cleaner cuts", items=[
+                    "Carbon steel cuts much faster than with oxygen; thin-sheet throughput up by more than 30 %",
+                    "Small heat-affected zone and little distortion, so less rework",
+                    "Edges far less oxidized than oxygen cuts — many parts are welded or fitted straight from the machine, without grinding",
+                    "Sharp corners without burning and well-formed small holes: a higher yield on complex parts",
+                    "Little cutting fume, and no high-pressure gas cylinders to store or have inspected every year"]),
+                dict(title="Everything on one control", items=[
+                    "One screen starts and runs the laser, the air compressor and the dust collector",
+                    "Variable-frequency dust extraction sets the fan to the material and the cutting speed",
+                    "Sensors in the cutting head check the air for dirt, oil and moisture around the clock, and warn and stop the machine "
+                    "before the lenses are damaged"]),
+                dict(title="Control and AI", items=[
+                    "Senfeng-exclusive BOCHU FSCUT8000 control, preloaded with the full 6 – 60 kW air-cutting process database",
+                    "AI Process Cube (optional): scans the part and picks the best recipe from the process library in one click, reads a "
+                    "photo of the cut edge for burrs, burning or incomplete cuts and corrects the parameters — setup time down by more "
+                    "than 80 %, and new operators make good parts without an experienced programmer",
+                    "Cuts carbon steel, stainless steel, aluminum and brass"])],
+        note=where + " It needs Senfeng's intelligent air compressor and original Senfeng nozzles and lenses (third-party consumables "
+                     "void the warranty). Ask NovoTech for sample cuts in your material and thickness.")
+
+
 # ------------------------------------------------------------------------------------------------ families
 LASER_FAMILIES = [
     dict(id="sf-compact", group="laser-senfeng", page=P_LASER, brand=BRAND,
@@ -386,6 +423,7 @@ LASER_FAMILIES = [
                  "air-cutting package cuts sheet to 3/8″ on compressed air.",
          features=["3 – 12 kW; 5 × 10 to 6.6 × 20 ft; 394 ft/min, 1.2 G; 2,400 – 6,200 lb table load"] + LZ_STD,
          optional=LZ_OPT,
+         extra_tabs=[air_tab("Offered on every NP size, SF3015NP to SF6020NP.")],
          images=["sf-np-1", "sf-np-2", "sf-np-3", "sf-np-4"],
          videos=[],
          specs=spec([T_NP], LZ_GK, LZ_G_FROM, POWER_NOTE)),
@@ -426,6 +464,7 @@ LASER_FAMILIES = [
                  "2″ plate. CE / FDA / ETL certified and CSA approved, with loading towers, sheet storage and loading arms as options.",
          features=["Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2.8 G"] + LZ_STD,
          optional=LZ_OPT,
+         extra_tabs=[air_tab("Offered on the H4 machines of this series.")],
          images=["sf-h-1", "sf-h-2", "sf-h-hollow-bed", "sf-h-beam", "sf-h-dust", "sf-h-door", "sf-h-zaxis", "sf-h-monitor", "sf-h-raycus",
                  "sf-h-max", "sf-h-boci", "sf-h-raytools", "sf-h-sample", "sf-h-sample-2", "sf-h-tower", "sf-h-loader", "sf-h-swingarm",
                  "sf-h-line", "sf-h5"],
@@ -461,6 +500,7 @@ LASER_FAMILIES = [
                  "beam with a protective chamber are standard.",
          features=["10 × 20 to 10 × 164 ft tables; 6 – 60 kW; ±45° bevel (TX); laser + flame (TXP); 328 – 394 ft/min"] + LZ_STD,
          optional=LZ_OPT,
+         extra_tabs=[air_tab("Offered on the R series plate lasers.")],
          images=["sf-r-1", "sf-tx-1", "sf-r-2", "sf-tx-2", "sf-txp", "sf-r-cut", "sf-tx-flame"],
          videos=[],
          specs=spec([T_R, T_TX, T_TXP], LZ_GK, LZ_G_FROM, POWER_NOTE)),

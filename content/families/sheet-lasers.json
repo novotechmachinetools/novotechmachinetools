@@ -1167,6 +1167,53 @@
     "Higher laser power at order; nitrogen generator",
     "Custom voltage transformer"
    ],
+   "extra_tabs": [
+    {
+     "id": "air-cut",
+     "label_pre": "AI Intelligent",
+     "label_main": "Air Cutting",
+     "title": "AI Intelligent Air Cutting (optional)",
+     "lead": "Senfeng's Intelligent Air Cutting, co-developed with BOCHU Automation for the H4, NP and R series from 6 to 60 kW, lets the laser cut with clean, dry compressed air from its own bus-connected compressor instead of bottled nitrogen or oxygen — and keeps oxygen and nitrogen for the jobs that need them. Hardware, control system, cutting software and service are upgraded together: faster, cleaner cuts at a much lower running cost, and simpler operation.",
+     "groups": [
+      {
+       "title": "Lower running cost",
+       "items": [
+        "Assist gas close to free — no nitrogen or oxygen to buy for most work; Senfeng quotes overall cutting expenses down by up to 92 %",
+        "15 kW high-efficiency air compressor with variable-frequency dust extraction: the whole machine uses 11.8 kWh less per hour, 20.3 % less energy",
+        "Clean air protects the optics — protective-lens use drops from 5 a day to 2",
+        "No gas deliveries: no delays, shortages or price swings, even for shops far from a gas supplier"
+       ]
+      },
+      {
+       "title": "Faster, cleaner cuts",
+       "items": [
+        "Carbon steel cuts much faster than with oxygen; thin-sheet throughput up by more than 30 %",
+        "Small heat-affected zone and little distortion, so less rework",
+        "Edges far less oxidized than oxygen cuts — many parts are welded or fitted straight from the machine, without grinding",
+        "Sharp corners without burning and well-formed small holes: a higher yield on complex parts",
+        "Little cutting fume, and no high-pressure gas cylinders to store or have inspected every year"
+       ]
+      },
+      {
+       "title": "Everything on one control",
+       "items": [
+        "One screen starts and runs the laser, the air compressor and the dust collector",
+        "Variable-frequency dust extraction sets the fan to the material and the cutting speed",
+        "Sensors in the cutting head check the air for dirt, oil and moisture around the clock, and warn and stop the machine before the lenses are damaged"
+       ]
+      },
+      {
+       "title": "Control and AI",
+       "items": [
+        "Senfeng-exclusive BOCHU FSCUT8000 control, preloaded with the full 6 – 60 kW air-cutting process database",
+        "AI Process Cube (optional): scans the part and picks the best recipe from the process library in one click, reads a photo of the cut edge for burrs, burning or incomplete cuts and corrects the parameters — setup time down by more than 80 %, and new operators make good parts without an experienced programmer",
+        "Cuts carbon steel, stainless steel, aluminum and brass"
+       ]
+      }
+     ],
+     "note": "Offered on the H4 machines of this series. It needs Senfeng's intelligent air compressor and original Senfeng nozzles and lenses (third-party consumables void the warranty). Ask NovoTech for sample cuts in your material and thickness."
+    }
+   ],
    "images": [
     "sf-h-1",
     "sf-h-2",
@@ -1984,6 +2031,53 @@
     "Dust collector and compressor sized to the machine",
     "Higher laser power at order; nitrogen generator",
     "Custom voltage transformer"
+   ],
+   "extra_tabs": [
+    {
+     "id": "air-cut",
+     "label_pre": "AI Intelligent",
+     "label_main": "Air Cutting",
+     "title": "AI Intelligent Air Cutting (optional)",
+     "lead": "Senfeng's Intelligent Air Cutting, co-developed with BOCHU Automation for the H4, NP and R series from 6 to 60 kW, lets the laser cut with clean, dry compressed air from its own bus-connected compressor instead of bottled nitrogen or oxygen — and keeps oxygen and nitrogen for the jobs that need them. Hardware, control system, cutting software and service are upgraded together: faster, cleaner cuts at a much lower running cost, and simpler operation.",
+     "groups": [
+      {
+       "title": "Lower running cost",
+       "items": [
+        "Assist gas close to free — no nitrogen or oxygen to buy for most work; Senfeng quotes overall cutting expenses down by up to 92 %",
+        "15 kW high-efficiency air compressor with variable-frequency dust extraction: the whole machine uses 11.8 kWh less per hour, 20.3 % less energy",
+        "Clean air protects the optics — protective-lens use drops from 5 a day to 2",
+        "No gas deliveries: no delays, shortages or price swings, even for shops far from a gas supplier"
+       ]
+      },
+      {
+       "title": "Faster, cleaner cuts",
+       "items": [
+        "Carbon steel cuts much faster than with oxygen; thin-sheet throughput up by more than 30 %",
+        "Small heat-affected zone and little distortion, so less rework",
+        "Edges far less oxidized than oxygen cuts — many parts are welded or fitted straight from the machine, without grinding",
+        "Sharp corners without burning and well-formed small holes: a higher yield on complex parts",
+        "Little cutting fume, and no high-pressure gas cylinders to store or have inspected every year"
+       ]
+      },
+      {
+       "title": "Everything on one control",
+       "items": [
+        "One screen starts and runs the laser, the air compressor and the dust collector",
+        "Variable-frequency dust extraction sets the fan to the material and the cutting speed",
+        "Sensors in the cutting head check the air for dirt, oil and moisture around the clock, and warn and stop the machine before the lenses are damaged"
+       ]
+      },
+      {
+       "title": "Control and AI",
+       "items": [
+        "Senfeng-exclusive BOCHU FSCUT8000 control, preloaded with the full 6 – 60 kW air-cutting process database",
+        "AI Process Cube (optional): scans the part and picks the best recipe from the process library in one click, reads a photo of the cut edge for burrs, burning or incomplete cuts and corrects the parameters — setup time down by more than 80 %, and new operators make good parts without an experienced programmer",
+        "Cuts carbon steel, stainless steel, aluminum and brass"
+       ]
+      }
+     ],
+     "note": "Offered on every NP size, SF3015NP to SF6020NP. It needs Senfeng's intelligent air compressor and original Senfeng nozzles and lenses (third-party consumables void the warranty). Ask NovoTech for sample cuts in your material and thickness."
+    }
    ],
    "images": [
     "sf-np-1",
@@ -3418,6 +3512,53 @@
     "Dust collector and compressor sized to the machine",
     "Higher laser power at order; nitrogen generator",
     "Custom voltage transformer"
+   ],
+   "extra_tabs": [
+    {
+     "id": "air-cut",
+     "label_pre": "AI Intelligent",
+     "label_main": "Air Cutting",
+     "title": "AI Intelligent Air Cutting (optional)",
+     "lead": "Senfeng's Intelligent Air Cutting, co-developed with BOCHU Automation for the H4, NP and R series from 6 to 60 kW, lets the laser cut with clean, dry compressed air from its own bus-connected compressor instead of bottled nitrogen or oxygen — and keeps oxygen and nitrogen for the jobs that need them. Hardware, control system, cutting software and service are upgraded together: faster, cleaner cuts at a much lower running cost, and simpler operation.",
+     "groups": [
+      {
+       "title": "Lower running cost",
+       "items": [
+        "Assist gas close to free — no nitrogen or oxygen to buy for most work; Senfeng quotes overall cutting expenses down by up to 92 %",
+        "15 kW high-efficiency air compressor with variable-frequency dust extraction: the whole machine uses 11.8 kWh less per hour, 20.3 % less energy",
+        "Clean air protects the optics — protective-lens use drops from 5 a day to 2",
+        "No gas deliveries: no delays, shortages or price swings, even for shops far from a gas supplier"
+       ]
+      },
+      {
+       "title": "Faster, cleaner cuts",
+       "items": [
+        "Carbon steel cuts much faster than with oxygen; thin-sheet throughput up by more than 30 %",
+        "Small heat-affected zone and little distortion, so less rework",
+        "Edges far less oxidized than oxygen cuts — many parts are welded or fitted straight from the machine, without grinding",
+        "Sharp corners without burning and well-formed small holes: a higher yield on complex parts",
+        "Little cutting fume, and no high-pressure gas cylinders to store or have inspected every year"
+       ]
+      },
+      {
+       "title": "Everything on one control",
+       "items": [
+        "One screen starts and runs the laser, the air compressor and the dust collector",
+        "Variable-frequency dust extraction sets the fan to the material and the cutting speed",
+        "Sensors in the cutting head check the air for dirt, oil and moisture around the clock, and warn and stop the machine before the lenses are damaged"
+       ]
+      },
+      {
+       "title": "Control and AI",
+       "items": [
+        "Senfeng-exclusive BOCHU FSCUT8000 control, preloaded with the full 6 – 60 kW air-cutting process database",
+        "AI Process Cube (optional): scans the part and picks the best recipe from the process library in one click, reads a photo of the cut edge for burrs, burning or incomplete cuts and corrects the parameters — setup time down by more than 80 %, and new operators make good parts without an experienced programmer",
+        "Cuts carbon steel, stainless steel, aluminum and brass"
+       ]
+      }
+     ],
+     "note": "Offered on the R series plate lasers. It needs Senfeng's intelligent air compressor and original Senfeng nozzles and lenses (third-party consumables void the warranty). Ask NovoTech for sample cuts in your material and thickness."
+    }
    ],
    "images": [
     "sf-r-1",
