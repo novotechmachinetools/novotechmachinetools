@@ -137,6 +137,7 @@ BROCHURES = [
     ("laser", "NovoTech-Dener-GFL-Fiber-Laser-Technical-Specification-2026.pdf", "Dener GFL fiber laser — full technical specification"),
     ("laser", "NovoTech-Dener-Smart-Fiber-Laser-2026.pdf", "Dener Smart fiber laser cutting machines"),
     ("laser", "NovoTech-Fiber-Lasers-Value-Line-2026.pdf", "NovoTech value-line fiber lasers"),
+    ("laser", "NovoTech-ULE-Fiber-Laser-Technical-Specification-2026.pdf", "NovoTech ULE fiber laser — full technical specification"),
     ("laser", "NovoTech-Senfeng-Fiber-Lasers-2026.pdf", "Senfeng fiber laser cutting machines"),
     ("laser", "NovoTech-Dener-Tube-Lasers-2026.pdf", "Dener tube laser cutting machines"),
     ("laser", "NovoTech-Tube-Lasers-Value-Line-2026.pdf", "NovoTech value-line tube lasers"),

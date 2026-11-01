@@ -21,6 +21,8 @@ P_PANEL = "panel-bender"
 P_WELD = "laser-welding-machine"
 
 VOLT = "208 / 240 / 480 / 600 V 3-phase 60 Hz (transformer supplied); single-phase not available"
+# every Senfeng machine: "CE, FDA and ETL certified and CSA approved" (the owner, Nov 1 2026)
+CERT = "CE, FDA and ETL certified and CSA approved"
 POWER_NOTE = ("Laser source power is chosen at order (IPG, Raycus or Max sources); the model number is the metric working area "
               "(3015 = 3,000 × 1,500 mm) or, on tube lasers, the metric tube length × maximum diameter (6024 = 6 m × Ø240 mm). "
               "Speeds and accelerations are no-load values; platform loads are per table.")
@@ -319,12 +321,12 @@ LZ_STD = ["Fiber laser source 1.5 – 80 kW (IPG, Raycus or Max) with the autofo
           "Bus-based CNC with a 21.5″ touchscreen (Cypcut / BOCHU), nesting software and a cutting-parameter database; one-click centring, collision avoidance",
           "Stress-relieved welded bed, aerospace-grade aluminum beam, Schneider servo drives, HIWIN / rack-and-pinion drives",
           "Zoned negative-pressure dust extraction under the table; double air ducts; water chiller included",
-          "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″", "CE, FDA and ETL certified; " + VOLT]
+          "Intelligent air-cutting option: compressed air instead of nitrogen on sheet to about 3/8″", "CE, FDA and ETL certified and CSA approved; " + VOLT]
 LZ_OPT = ["Loading / unloading unit, servo swing-arm loader or storage tower", "Automatic pallet changer (NP) and bevel head (R / TX)", "Dust collector and compressor sized to the machine",
           "Higher laser power at order; nitrogen generator", "Custom voltage transformer"]
 TB_STD = ["Pneumatic self-centring chucks; following supports along the bed; automatic tube length measuring",
           "Fiber laser source 1.5 – 20 kW with autofocus head; bus-based CNC with tube nesting software and 3D import",
-          "Safety fencing and light curtains; chip and part collection", "CE, FDA and ETL certified; " + VOLT]
+          "Safety fencing and light curtains; chip and part collection", "CE, FDA and ETL certified and CSA approved; " + VOLT]
 TB_OPT = ["Automatic bundle loader and unloading conveyor", "45° bevel head (GPLUS / GT, ST / HT)", "Higher laser power; nitrogen generator; dust collector", "Custom voltage transformer"]
 
 # ------------------------------------------------------------------------------------------------ families
@@ -365,7 +367,7 @@ LASER_FAMILIES = [
                  "thermally isolated hollow bed with graphite protection for high-power cutting. Three builds on the same platform — the "
                  "HC space saver with 1.5 to 12 kW in a 19 m² footprint, the fourth-generation H4 with 6 to 30 kW, 656 ft/min and 2 G on "
                  "tables to 8.3 × 40 ft, and the H5 heavy-load machine with hydraulic table lifts to 30 t for 40 to 80 kW sources and "
-                 "2″ plate. CE / FDA / ETL certified, with loading towers, sheet storage and loading arms as options.",
+                 "2″ plate. CE / FDA / ETL certified and CSA approved, with loading towers, sheet storage and loading arms as options.",
          features=["Pallet changer, 20 s table exchange; 1.5 – 80 kW; 5 × 10 to 8.3 × 40 ft; to 656 ft/min and 2 G"] + LZ_STD,
          optional=LZ_OPT,
          images=["sf-h-1", "sf-h-2", "sf-h-tower", "sf-h-loader", "sf-h-line", "sf-h5"],
@@ -405,7 +407,7 @@ LASER_FAMILIES = [
                  "±135° A and endless C rotation at 328 ft/min for automotive, hot-stamping and pressing work; the RC series puts a 1.5 to "
                  "6 kW fiber head on a 6-axis robot with 72″ reach for parts to 0.2″ thick — the economical 3D cell for brackets, covers "
                  "and tube assemblies.",
-         features=["Five-axis gantry 5 × 10 ft envelope, 3 – 20 kW, air-cooled head; robot cells 1.5 – 6 kW with 72″ reach"] + LZ_STD[:2],
+         features=["Five-axis gantry 5 × 10 ft envelope, 3 – 20 kW, air-cooled head; robot cells 1.5 – 6 kW with 72″ reach"] + LZ_STD[:2] + [CERT],
          optional=["Rotary tables and fixtures", "Second robot station", "Safety enclosure with light curtains"],
          images=["sf-3d-1", "sf-3d-2", "sf-rc-1", "sf-rc-2", "sf-3d-head", "sf-3d-cut"],
          videos=[],
@@ -418,7 +420,7 @@ LASER_FAMILIES = [
                  "handling, no offcuts and no limit on part length. The SF1503CH takes coil to 1/8″ and 16.5 tons on a 5 × 10 ft machine; the SF2012CH levels and cuts 5/16″ to 9/16″ "
                  "plate from 22-ton coils with 12 to 80 kW. The TOP line adds robot sorting, panel bending and welding for a complete "
                  "coil-to-part cell.",
-         features=["Decoiler, leveller and laser on one control; coil to 22 US tons; feeding to 49 ft/min; 3 – 80 kW"] + LZ_STD[:2],
+         features=["Decoiler, leveller and laser on one control; coil to 22 US tons; feeding to 49 ft/min; 3 – 80 kW"] + LZ_STD[:2] + [CERT],
          optional=["Robot sorting and stacking", "Panel bender and welding stations (TOP line)", "Stereo pallet racks"],
          images=["sf-coil-1", "sf-coil-2", "sf-coil-top", "sf-coil-scene", "sf-coil-parts"],
          videos=[],
@@ -479,7 +481,7 @@ PANEL_FAMILIES = [
                  "manipulator that turns the blank for all four sides; the suction-cup BDC1200 and 1500 are the light machines for door "
                  "and appliance panels to 20 ga. Robot loading and unloading cells are available on the 1500 to 2500.",
          features=["0.2 s per bend; 14 ga mild steel; 59 – 126″ (push-down) or 47 – 59″ (suction-cup); auxiliary tools and clamps optional",
-                   "Bus-based CNC with offline programming; automatic thickness compensation", "Safety fencing and light curtains; " + VOLT],
+                   "Bus-based CNC with offline programming; automatic thickness compensation", "Safety fencing and light curtains", CERT + "; " + VOLT],
          optional=["6-axis robot loading / unloading cell (BDC1500 – 2500)", "Auxiliary bending tool and clamps", "300 mm bending height"],
          images=["sf-bdc-1", "sf-bdc-3", "sf-bdc-suction", "sf-bdc-robot", "sf-bdc-robot-2", "sf-bdc-tool", "sf-bdc-clamps", "sf-bdc-bends", "sf-bdc-parts", "sf-bdc-parts-2"],
          videos=[],
@@ -498,7 +500,7 @@ WELD_FAMILIES = [
                  "cleans, cuts and seam-welds. CE face shield, protective clothing and an optional welding booth come with it.",
          features=["S series: 0.8 / 1.2 / 1.5 kW air-cooled, 99 – 121 lb; HWM: 1.5 / 2 / 3 kW, welds to 9/32″, wire feeder",
                    "1.5 lb (0.7 kg) welding gun with wire feed; 16 – 33 ft cable", "Self-developed laser source and 4-in-1 welding head (weld, clean, cut, seam)",
-                   "Safety: CE face shield, laser-resistant clothing and gloves supplied; optional booth with protective glass", "CE / FDA certified; S series 220 V single-phase, HWM 3-phase"],
+                   "Safety: CE face shield, laser-resistant clothing and gloves supplied; optional booth with protective glass", "CE / FDA certified and CSA approved; S series 220 V single-phase, HWM 3-phase"],
          optional=["Laser welding booth", "Robot + handheld combination (robot CRP-RH18-20 with the same source)", "Cleaning head; extra wire feeder"],
          images=["sf-hwm-1", "sf-hw-1", "sf-hwm-gun", "sf-hw-gun", "sf-hwm-2", "sf-hw-weld", "sf-hwm-weld", "sf-hwm-weld-2", "sf-hw-safety", "sf-hw-booth", "sf-weld-samples"],
          videos=[],
@@ -512,7 +514,7 @@ WELD_FAMILIES = [
                  "teaching-free robot that scans the part and programs the weld itself, and the CMW is a collaborative robot on a mobile "
                  "cart with a 59 × 59″ 3D fixture table — 350 or 500 A, programmed by hand-guiding, moved to the job on wheels.",
          features=["RW: 6-axis robot, 1.5 – 20 kW, welds to 9/16″ (14 mm); positioners and linear tracks", "RMW: teaching-free 500 A MIG/MAG; CMW: cobot 350 / 500 A on a cart with 3D fixture table",
-                   "Safety fencing, light curtains and fume extraction interfaces; " + VOLT],
+                   "Safety fencing, light curtains and fume extraction interfaces", CERT + "; " + VOLT],
          optional=["Horizontal or dual-axis positioner", "7 – 9 axis cells with linear track", "Second welding station; fume extraction"],
          images=["sf-rw-1", "sf-rw-2", "sf-rw-positioner", "sf-rw-cell", "sf-rmw-1", "sf-cmw-1", "sf-cmw-2"],
          videos=[],
@@ -527,7 +529,7 @@ WELD_FAMILIES = [
                  "to 10 and 20 ft; the SFMR02 is the portable system that goes to the machine for on-site repair. All with Senfeng's "
                  "high-speed cladding head, dual-cylinder powder feeder and an inner-bore head as an option.",
          features=["6 or 12 kW; high-speed cladding head; dual-cylinder pneumatic powder feeder, 20 – 300 µm, to 150 g/min", "KUKA / FANUC robot (SFR, SFMR) or lathe bed with Ø19.7″ three-jaw chuck (SFHS)",
-                   "Coatings to 25/64″ (10 mm) with metallurgical bonding and small heat-affected zone; " + VOLT],
+                   "Coatings to 25/64″ (10 mm) with metallurgical bonding and small heat-affected zone", CERT + "; " + VOLT],
          optional=["Inner-bore cladding head", "Dual-axis positioner", "Powder recovery and fume extraction"],
          images=["sf-clad-1", "sf-clad-2", "sf-clad-3", "sf-clad-robot", "sf-clad-positioner", "sf-clad-head", "sf-clad-bore"],
          videos=[],

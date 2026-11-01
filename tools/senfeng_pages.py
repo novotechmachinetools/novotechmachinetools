@@ -29,7 +29,7 @@ PDF_WELD = "files/NovoTech-Senfeng-Laser-Welding-Cladding-2026.pdf"
 PDF_PANEL = "files/NovoTech-Senfeng-Panel-Benders-2026.pdf"
 
 BRAND_LINE = ("Senfeng Laser builds fiber laser cutting, welding and cladding machines in Jinan, China — 20 years, 15,000 machines a year, "
-              "CE / FDA / ETL certified, with Senfeng Laser USA. Sold, installed and supported in Canada by NovoTech.")
+              "CE / FDA / ETL certified and CSA approved, with Senfeng Laser USA. Sold, installed and supported in Canada by NovoTech.")
 ORIGIN = {"title": "Made in China by Senfeng Laser", "text": "Senfeng has built fiber laser machines in Jinan since 2004 — a 1.8 million ft² campus, its own laser "
           "sources and cutting heads, 20 overseas branches and a USA warehouse — with NovoTech's CSA panel, warranty and Mississauga, ON, Canada support."}
 NO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
@@ -50,7 +50,7 @@ PAGE_WELD = dict(
           "all shift. NovoTech sells Senfeng laser welding equipment in Canada: the portable air-cooled S series at 0.8 to 1.5 kW on wheels, "
           "the HWM handheld welders at 1.5 to 3 kW with wire feed for joints to 9/32″, robotic laser welding cells from 1.5 to 20 kW with "
           "positioners and tracks, teaching-free and collaborative MIG robots, and the laser cladding machines that rebuild shafts, rolls and "
-          "bores with a metallurgically bonded wear layer. Senfeng makes its own sources and heads in Jinan, China; CE / FDA / ETL certified. "
+          "bores with a metallurgically bonded wear layer. Senfeng makes its own sources and heads in Jinan, China; CE / FDA / ETL certified and CSA approved. "
           "Installed and supported from Mississauga, ON, Canada.",
     points=["Handheld: S series 0.8 – 1.5 kW air-cooled, 99 – 121 lb · HWM 1.5 – 3 kW, welds to 9/32″, 4-in-1 head",
             "Robotic: RW laser cells 1.5 – 20 kW · RMW teaching-free and CMW cobot MIG welders 350 / 500 A",
@@ -85,7 +85,7 @@ PAGE_LASER = dict(
     meta="Compact 4 × 4 ft lasers from 1.5 kW, NP open-type to 12 kW, H series with pallet changer to 80 kW, sheet + tube combos, plate gantries to 164 ft, 3D, coil-fed.",
     h1="Senfeng fiber lasers — compact 4 × 4 ft machines to 80 kW plate gantries, the value line",
     intro="Senfeng is the value line of NovoTech's laser section, sold under its own brand: a very large manufacturer in Jinan, China — about "
-          "15,000 machines a year — that builds its own fiber sources and cutting heads, CE / FDA / ETL certified, at a price that puts a 12 kW "
+          "15,000 machines a year — that builds its own fiber sources and cutting heads, CE / FDA / ETL certified and CSA approved, at a price that puts a 12 kW "
           "laser within reach of a small shop. The range starts where few others do: single-table compact machines from 4 × 4 ft that ship in one "
           "container and cut the day they arrive; the NP open-type laser, six of which fit in a 40 ft container, the lowest-priced 12 kW machine "
           "in the catalogue; the enclosed H series with a 20-second pallet changer from 1.5 to 80 kW on tables to 8.3 × 40 ft; the HM that cuts "
@@ -132,7 +132,7 @@ PAGE_TUBE = dict(
           "chuck in the middle so the last part is cut without a tail; and the ST three-chuck and HT four-chuck machines carry tube to Ø25″ and "
           "6,600 lb over 29 to 49 ft with 6 to 20 kW, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for "
           "H-beams, channels and angles. Pneumatic self-centring chucks, following supports, tube nesting from 3D files, bundle loaders and "
-          "unloading conveyors; CE / FDA / ETL certified. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel and "
+          "unloading conveyors; CE / FDA / ETL certified and CSA approved. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel and "
           "NovoTech's warranty.",
     points=["T series: Ø0.5 – 14.1″, 20 – 39 ft, 1.5 – 6 kW, 15 models in two bed lengths; PLUS to 492 ft/min; GPLUS / GT with ±45° bevel head",
             "NT zero-tailing three-chuck machines Ø0.7 – 14.1″; ST three-chuck and HT four-chuck to Ø25.1″, 6,600 lb and 49 ft, 6 – 20 kW",
@@ -183,7 +183,7 @@ def register_images():
 
 ABOUT_SENFENG = ("Senfeng Laser has built fiber laser machines in Jinan, Shandong, since 2004: a 1.8 million ft² campus, its own laser sources, "
                  "cutting heads and welding guns, around 15,000 machines a year, 20 overseas branches and Senfeng Laser USA with a warehouse "
-                 "and service team. CE, FDA and ETL certified. NovoTech sells, installs and supports the machines in Canada from Mississauga, ON, Canada "
+                 "and service team. CE, FDA and ETL certified and CSA approved. NovoTech sells, installs and supports the machines in Canada from Mississauga, ON, Canada "
                  "— layout for your building, installation, operator training, a CSA-approved panel, a 1-year warranty and parts and "
                  "technical support in Canada.")
 BROCHURES = {
@@ -241,7 +241,7 @@ BROCHURES = {
 def write_brochure_specs():
     d = os.path.join(ROOT, "tools", "brochure", "specs")
     for name, spec in BROCHURES.items():
-        spec = dict(spec, single_phase=False, year="2026", made_in="Made in China by Senfeng Laser — CE, FDA and ETL certified")
+        spec = dict(spec, single_phase=False, year="2026", made_in="Made in China by Senfeng Laser — CE, FDA and ETL certified and CSA approved")
         json.dump(spec, open(os.path.join(d, name + ".json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 

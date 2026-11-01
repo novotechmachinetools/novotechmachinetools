@@ -32953,5 +32953,85 @@
   "trim": false,
   "quality": 80,
   "cutout": false
+ },
+ "vn-ule-cutting": {
+  "src": "tools/src-images/value-laser/vn-ule-cutting.jpg",
+  "alt": "ULE cutting head over the slat table — gantry carriage, bellows covers and cable chain",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-head": {
+  "src": "tools/src-images/value-laser/vn-ule-head.jpg",
+  "alt": "BOCI BLT autofocus cutting head — focus set from the material thickness, anti-collision protection",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-source": {
+  "src": "tools/src-images/value-laser/vn-ule-source.jpg",
+  "alt": "Raycus RFL-C6000 fiber laser source — 6 kW in the quoted ULE-3015 configuration",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-drive": {
+  "src": "tools/src-images/value-laser/vn-ule-drive.jpg",
+  "alt": "Worm gearmotor and chain sprocket of the table-exchange drive",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-lube": {
+  "src": "tools/src-images/value-laser/vn-ule-lube.jpg",
+  "alt": "Timed automatic lubrication pump — oils the racks and guides by running hours",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-aircon": {
+  "src": "tools/src-images/value-laser/vn-ule-aircon.jpg",
+  "alt": "Air conditioner on the electrical cabinet — keeps the drives and the CNC at a steady temperature",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-nozzles": {
+  "src": "tools/src-images/value-laser/vn-ule-nozzles.jpg",
+  "alt": "Single- and double-layer cutting nozzles, 0.8 to 4.0 mm bore — consumables",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-ipg": {
+  "src": "tools/src-images/value-laser/vn-ule-ipg.jpg",
+  "alt": "IPG fiber laser sources (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ule-albeam": {
+  "src": "tools/src-images/value-laser/vn-ule-albeam.jpg",
+  "alt": "Die-cast crossbeam in aerospace-grade aluminum alloy (optional)",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "pdf-novotech-ule-fiber-laser-technical-specification-2026": {
+  "src": "tools/src-images/brochures/pdf-novotech-ule-fiber-laser-technical-specification-2026.jpg",
+  "alt": "Cover of the NovoTech ULE Fiber Laser Technical Specification 2026 PDF",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false
  }
 }
