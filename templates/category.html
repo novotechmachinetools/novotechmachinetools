@@ -36,7 +36,7 @@
       {% if many %}<div class="hero-stage">{% endif %}
       <div class="hero-band" aria-hidden="true"></div>
       {% if hl.get(page.hero_image) %}<a class="hero-link" href="{{ hl[page.hero_image] }}">{% endif %}<img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, {{ 820 if page.hero_large else 680 }}px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">{% if hl.get(page.hero_image) %}</a>{% endif %}
-      {% if many %}</div>
+      {% if many %}{% if page.hero_caption %}<p class="hero-main-cap">{{ page.hero_caption }}</p>{% endif %}</div>
       {# every product item of the page, small, with its name (the owner, Nov 1 2026) #}
       {% set nm = page.hero_image_secondary|length %}
       <ul class="hero-minis is-many" style="--n: {{ nm if nm <= 4 else (3 if nm <= 6 else 4) }}">

@@ -483,6 +483,7 @@ LASER_FAMILIES = [
          # Senfeng's SF1313G catalogue in NovoTech format (tools/brochure/senfeng_h_editions.py) — the owner, Nov 1 2026
          pdf=dict(file="files/NovoTech-Senfeng-SF1313G-Fiber-Laser-2026.pdf", label="Download the SF1313G brochure", size="PDF · 1.3 MB · imperial units"),
          pdf_cta="Download SF1313G brochure",
+         pdf_item_only=True,      # its button on the item only, not in the page's hero list (the owner, Nov 1 2026)
          specs=spec([T_1313G], LZ_GK, LZ_G_FROM, POWER_NOTE)),
     dict(id="sf-h", group="laser-senfeng", page=P_LASER, brand=BRAND,
          name="H series sheet lasers with pallet changer, 5 × 10 to 8.3 × 40 ft, 1.5 – 80 kW",

@@ -1332,16 +1332,20 @@ def hub_lineup(page):
 
 def all_item_minis(page):
     """Every product item on the page small under the hero (the owner, Nov 1 2026): the first photo of each family, in page
-    order, except the family the large photo already shows."""
-    hero, keys, labels = page.get("hero_image"), [], {}
+    order, except the family the large photo already shows (its name goes under the large photo); the names say what the
+    machine is (page["hero_names"]), not its model code."""
+    hero, keys, labels, names = page.get("hero_image"), [], {}, page.get("hero_names") or {}
     for g in page.get("groups") or []:
         for f in g["families"]:
-            if not isinstance(f, dict) or not f.get("images") or hero in f["images"]:
+            if not isinstance(f, dict) or not f.get("images"):
+                continue
+            if hero in f["images"]:
+                page["hero_caption"] = names.get(f["id"]) or f.get("short") or f["name"]
                 continue
             k = f["images"][0]
             if k in manifest and k not in keys:
                 keys.append(k)
-                labels[k] = f.get("short") or f["name"]
+                labels[k] = names.get(f["id"]) or f.get("short") or f["name"]
     return keys, labels
 
 

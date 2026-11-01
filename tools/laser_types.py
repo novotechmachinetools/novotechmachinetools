@@ -41,6 +41,12 @@ GAS_FAQ = faq("laser-cutting-machine", "What about assist gas and fume extractio
 SITE_FAQ = faq("laser-cutting-machine", "What does the machine need on site?")[0]
 AUTO_FAQ = faq("laser-cutting-machine", "Can the laser be automated?")[0]
 
+# the small names under the hero pictures — what the machine is, not its model code (the owner, Nov 1 2026)
+HERO_NAMES = {"dn-gfl": "High-speed laser with shuttle table", "dn-smart-closed": "Large-format laser with shuttle table",
+              "vn-ule": "Laser with 15-second shuttle table", "sf-h": "Production laser with pallet changer",
+              "sf-compact": "Compact 5 × 10 ft fiber laser", "sf-np": "Single-table laser with gantry cover",
+              "sf-1313g": "Compact 4 × 4 ft fiber laser"}
+
 SHEET = {
     "fiber-laser-cutting-machine": dict(
         title="Fiber Laser Cutting Machines for Sale in Canada — Shuttle Table & Pallet Changer, 1.5–80 kW | NovoTech",
@@ -257,7 +263,7 @@ def build():
             for f in members:
                 for pd in (f.get("pdf"), f.get("spec_pdf"), *(f.get("spec_pdfs") or [])):
                     if pd and pd["file"] not in seen:
-                        seen.add(pd["file"]); (pdfs if pd is f.get("pdf") else specs).append(pd)
+                        seen.add(pd["file"]); (pdfs if pd is f.get("pdf") and not f.get("pdf_item_only") else specs).append(pd)
             n = sum(len(f["specs"]["models"]) for f in members)
             for key in [page["hero"]] + page["minis"]:
                 if key not in manifest:
@@ -284,7 +290,7 @@ def build():
                                   "nav_label": next(nav for s, _, _, _, nav, _ in LN.SECTIONS[kind]["subpages"] if s == slug),
                                   "catalogue_pdf": None, "catalogue_pdfs": pdfs, "spec_downloads": specs,
                                   # trial (the owner, Nov 1 2026): every product item small under the hero
-                                  **({"hero_minis_all": True} if slug == "fiber-laser-cutting-machine" else {})})
+                                  **({"hero_minis_all": True, "hero_names": HERO_NAMES} if slug == "fiber-laser-cutting-machine" else {})})
             print(f"{slug}: {len(members)} families, {n} models, {len(pdfs)} brochures")
 
 
