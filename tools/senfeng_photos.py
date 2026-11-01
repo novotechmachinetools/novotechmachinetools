@@ -199,7 +199,7 @@ PHOTOS = {
     "sf-h-air-5": W("air-h-5.png", "AI Intelligent Air Cutting (optional) — M9 servo motors, M2 precision racks, P-class guideways"),
     # the five coil-fed series (the owner, Nov 1 2026): Senfeng USA renders and the blanking-line brochure
     "sf-coil-ch-1": R("1503CH-01.webp", "SF1503CH — decoiler, leveller and the 5 × 10 ft laser in one line", up=True),
-    "sf-coil-ch-front": R("Coil-Fed-Fiber-Laser-Cutting-Machine-SF1503CH.webp", "SF1503CH coil-fed line from the front", up=True),
+    "sf-coil-ch-front": W("Coil-Fed-Fiber-Laser-Cutting-Machine-SF1503CH.webp", "SF1503CH coil-fed line from the front"),   # already cut out
     "sf-coil-ch-side": R("1503CH-05.webp", "SF1503CH — the leveller feeding coil into the laser", up=True),
     "sf-coil-ch-stack": R("1503CH-03.webp", "SF1503CH line with automatic unloading and stacking", up=True),
     "sf-coil-ch-sort": R("1503CH-04.webp", "SF1503CH with sorting tables after the laser", up=True),
@@ -212,7 +212,7 @@ PHOTOS = {
     "sf-top-cell": W("TOP-adv-3-rg4w62iba61gpcu85krchb4juxqr3ksei55kgbc2ew.png", "TOP line — robot cell at the panel bender"),
     "sf-top-process": W("TOP-adv-2-rg4w62iba61gpcu85krchb4juxqr3ksei55kgbc2ew.png", "Cutting, bending and welding in one line"),
     "sf-top-pendant": W("TOP-adv-1-rg4w62iba61gpcu85krchb4juxqr3ksei55kgbc2ew.png", "Teach pendant of the TOP line's robots"),
-    "sf-coil-clh-1": R("1503CLH.webp", "SF1503CLH aluminum coil-fed laser — decoiler, aluminum straightener and 6 kW laser", up=True),
+    "sf-coil-clh-1": W("1503CLH.webp", "SF1503CLH aluminum coil-fed laser — decoiler, aluminum straightener and 6 kW laser"),   # already cut out: kept as it is
     "sf-coil-blank-line": PP("Sheet-Coil-Laser-Blanking-Line", "blank-line.png", "Senfeng sheet-coil laser blanking line — enclosed laser, leveller and decoiler"),
     "sf-coil-2012-1": R("2012CH-01.webp", "SF2012CH — double-sided decoiler, leveller and enclosed 12 – 80 kW laser", up=True),
     "sf-coil-2012-2": R("2012CH-02.webp", "SF2012CH from the laser end", up=True),

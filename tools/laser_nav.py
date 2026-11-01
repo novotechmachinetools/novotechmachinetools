@@ -39,7 +39,7 @@ SECTIONS = {
             ("fiber-laser-cutting-machine", "Fiber laser cutting machines — shuttle table or pallet changer, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW", "dn-gfl-1",
              "The production laser: a shuttle table or pallet changer loads the next sheet while the first is cut — the premium GFL and Smart made in Turkey, NovoTech's value-line ULE with a 15-second shuttle table, the Senfeng H series to 80 kW, the NP with a cover on its gantry and compact 4 × 4 ft machines.",
              "Fiber laser cutters", ""),
-            ("sheet-and-tube-laser", "Sheet and tube combination lasers — one machine for sheet and tube to Ø13.8″", "vn-ulet-1",
+            ("sheet-and-tube-laser", "Sheet and tube combination lasers — one machine for sheet and tube to Ø13.8″", "sf-hm-1",
              "A sheet laser with a rotary chuck beside the table: the ULET with shuttle table to 41 × 8.5 ft sheet and Ø13.8″ tube, and the HM series to 8.3 × 20 ft sheet and Ø8.6″ × 20 ft tube — the value line.",
              "Sheet & tube lasers", ""),
             ("large-format-plate-laser", "Large-format plate lasers — semi-closed, ground-rail and gantry machines to 13 × 82 ft and 10 × 164 ft, 3 to 60 kW", "vn-ulg-1",

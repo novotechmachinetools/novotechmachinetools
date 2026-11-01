@@ -113202,31 +113202,30 @@
   "variants": [
    {
     "w": 1200,
-    "h": 237,
+    "h": 268,
     "file": "img/senfeng/sf-coil-ch-front-1200.webp",
-    "bytes": 42930
+    "bytes": 17358
    },
    {
     "w": 800,
-    "h": 158,
+    "h": 179,
     "file": "img/senfeng/sf-coil-ch-front-800.webp",
-    "bytes": 25644
+    "bytes": 9702
    },
    {
     "w": 480,
-    "h": 95,
+    "h": 107,
     "file": "img/senfeng/sf-coil-ch-front-480.webp",
-    "bytes": 13288
+    "bytes": 4760
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 32,
+   "h": 36,
    "file": "img/senfeng/sf-coil-ch-front-thumb.webp",
-   "bytes": 3296
-  },
-  "cut": "birefnet"
+   "bytes": 1132
+  }
  },
  "sf-coil-ch-side": {
   "alt": "SF1503CH \u2014 the leveller feeding coil into the laser",
@@ -113582,32 +113581,25 @@
   "alt": "SF1503CLH aluminum coil-fed laser \u2014 decoiler, aluminum straightener and 6 kW laser",
   "variants": [
    {
-    "w": 1200,
-    "h": 202,
-    "file": "img/senfeng/sf-coil-clh-1-1200.webp",
-    "bytes": 61042
-   },
-   {
     "w": 800,
-    "h": 135,
+    "h": 160,
     "file": "img/senfeng/sf-coil-clh-1-800.webp",
-    "bytes": 36128
+    "bytes": 9540
    },
    {
     "w": 480,
-    "h": 81,
+    "h": 96,
     "file": "img/senfeng/sf-coil-clh-1-480.webp",
-    "bytes": 18238
+    "bytes": 4888
    }
   ],
-  "alpha": true,
+  "alpha": false,
   "thumb": {
    "w": 160,
-   "h": 27,
+   "h": 32,
    "file": "img/senfeng/sf-coil-clh-1-thumb.webp",
-   "bytes": 3604
-  },
-  "cut": "birefnet"
+   "bytes": 1104
+  }
  },
  "sf-coil-blank-line": {
   "alt": "Senfeng sheet-coil laser blanking line \u2014 enclosed laser, leveller and decoiler",
