@@ -97,6 +97,7 @@ SHEET = {
                 "HM series: sheet 5 × 10 to 8.3 × 20 ft on a dual exchange table plus Ø8.6″ × 20 ft tube, 1.5 – 30 kW",
                 "One head, one source, one footprint — tube supports and chuck fold away when cutting sheet"],
         hero="sf-hm-1", minis=["vn-ulet-1", "vn-ulet-tube-head"],      # Senfeng large, the ULET small (the owner, Nov 1 2026)
+        minis_same_h=True,      # the chuck close-up no bigger than the ULET beside it (the owner, Nov 1 2026)
         groups=[("ls-value-ulet", "ULET sheet-and-tube lasers with shuttle table · value line", "The ULE with shuttle table and a tube chuck — sheet to 41 × 8.5 ft and tube to Ø13.8″."),
                 ("ls-value-hm", "HM sheet and tube combination lasers · value line", "5 × 10 to 8.3 × 20 ft sheet plus Ø8.6″ × 20 ft tube, 1.5 to 30 kW.")],
         faq=[faq("novotech-fiber-lasers", "Sheet and tube on one machine")[0],
@@ -290,7 +291,8 @@ def build():
                                   "nav_label": next(nav for s, _, _, _, nav, _ in LN.SECTIONS[kind]["subpages"] if s == slug),
                                   "catalogue_pdf": None, "catalogue_pdfs": pdfs, "spec_downloads": specs,
                                   # trial (the owner, Nov 1 2026): every product item small under the hero
-                                  **({"hero_minis_all": True, "hero_names": HERO_NAMES} if slug == "fiber-laser-cutting-machine" else {})})
+                                  **({"hero_minis_all": True, "hero_names": HERO_NAMES} if slug == "fiber-laser-cutting-machine" else {}),
+                                  **({"hero_minis_same_h": True} if page.get("minis_same_h") else {})})
             print(f"{slug}: {len(members)} families, {n} models, {len(pdfs)} brochures")
 
 

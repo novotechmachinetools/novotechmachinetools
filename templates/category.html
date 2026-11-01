@@ -43,8 +43,11 @@
         {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 96 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 190 %}{% set mw = 190 %}{% set mh = (190 * m.h / m.w) | round | int %}{% endif %}<li>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{{ page.hero_mini_labels[n] }}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>{% endfor %}
       </ul>
       {% elif page.hero_image_secondary %}
+      {# hero_minis_same_h: every small image as tall as the shortest one, so a close-up photo is no bigger than the machine beside it (the owner, Nov 1 2026) #}
+      {% set ns = namespace(h=150) %}
+      {% if page.hero_minis_same_h %}{% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set ch = [150, (210 * m.h / m.w) | round | int] | min %}{% if ch < ns.h %}{% set ns.h = ch %}{% endif %}{% endfor %}{% endif %}
       <div class="hero-minis">
-        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
+        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}{% if page.hero_minis_same_h and mh > ns.h %}{% set mh = ns.h %}{% set mw = (mh * m.w / m.h) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
       </div>
       {% endif %}
     </div>
