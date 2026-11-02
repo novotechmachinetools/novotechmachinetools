@@ -109,9 +109,10 @@ def render(spec, no_inline, budgets=None, tight=None):
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]
         f["series"] = f.get("short", f["name"]).split(" ")[0] if not f.get("series") else f["series"]
         f["tight"] = (tight or {}).get(fid, 0)       # 1 / 2 / 3: smaller photo band and type when the equipment lists overflow
-        # spec "gallery": every other photo of the family on detail pages after the family page, nine to a page with their
-        # captions — the brochure carries all the photos and details, not a summary (the owner, Nov 1 2026)
-        gal = [g for g in (img(k) for k in f["images"][3:]) if g] if spec.get("gallery") else []
+        # every other photo of the family on detail pages after the family page, nine to a page with their captions — the
+        # brochure carries all the photos and details, not a summary (the owner, Nov 1 2026: "summarize no PDF catalogue");
+        # a spec can turn it off with "gallery": false
+        gal = [g for g in (img(k) for k in f["images"][3:]) if g] if spec.get("gallery", True) else []
         f["gallery_pages"] = [gal[i:i + 9] for i in range(0, len(gal), 9)]
         families.append(f)
     layout(families, no_inline, budgets)

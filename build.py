@@ -508,6 +508,25 @@ FAMILY_SETS = {}
 for fn in os.listdir(os.path.join(ROOT, "content", "families")):
     if fn.endswith(".json"):
         FAMILY_SETS[fn[:-5]] = json.load(open(os.path.join(ROOT, "content", "families", fn), encoding="utf-8"))["families"]
+
+
+def refresh_pdf_sizes(obj):
+    """every {"file": "files/….pdf", "size": "PDF · 1 MB · imperial units"} shows the PDF's real size — the brochures are rebuilt
+    more often than the page data that names them (the owner, Nov 1 2026: brochures with every photo are larger)"""
+    if isinstance(obj, dict):
+        f, sz = obj.get("file"), obj.get("size")
+        if isinstance(f, str) and f.endswith(".pdf") and isinstance(sz, str) and "MB" in sz:
+            fp = os.path.join(ROOT, "src", f)
+            if os.path.exists(fp):
+                obj["size"] = re.sub(r"[\d.]+ MB", f"{os.path.getsize(fp) / 1e6:.1f} MB", sz, count=1)
+        for v in obj.values():
+            refresh_pdf_sizes(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            refresh_pdf_sizes(v)
+
+
+refresh_pdf_sizes(FAMILY_SETS)
 # the nameplate badge names the model only when a family has one model: "DB 2017", not "DB 2017 · 1 model" (the owner, Oct 31 2026)
 for _fs in FAMILY_SETS.values():
     for _f in (_fs.values() if isinstance(_fs, dict) else _fs):
@@ -1799,6 +1818,7 @@ def main():
     pdir = os.path.join(ROOT, "content", "pages")
     loaded = [json.load(open(os.path.join(pdir, fn), encoding="utf-8")) for fn in sorted(os.listdir(pdir)) if fn.endswith(".json") and not fn.startswith("_")]
     apply_extra_groups(loaded)
+    refresh_pdf_sizes(loaded)
     brand_all_pdf_labels(loaded)
     load_catalogue_tons(loaded)
     by_slug_all = {p["slug"]: p for p in loaded}
