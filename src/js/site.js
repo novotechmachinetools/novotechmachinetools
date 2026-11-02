@@ -152,6 +152,31 @@
     };
     topItem.addEventListener("mouseenter", opened);
     topItem.addEventListener("focusin", opened);
+    // desktop: the panel stays open for half a second after the pointer leaves the Products item, so a curved path down to the
+    // panel (left first, then down) does not close it (the owner, Nov 1 2026)
+    var closeTimer = 0;
+    topItem.addEventListener("mouseenter", function () {
+      clearTimeout(closeTimer);
+      if (wide.matches) topItem.classList.add("is-hover");
+    });
+    topItem.addEventListener("mouseleave", function () {
+      clearTimeout(closeTimer);
+      if (!wide.matches) return;
+      closeTimer = setTimeout(function () { topItem.classList.remove("is-hover"); }, 500);
+    });
+    // desktop: a category's pages open beside it on hover (CSS, a fixed flyout placed here): to its right, or to its left in the
+    // last column, and kept inside the window
+    mega.querySelectorAll(".sub-menu > li.has-tree").forEach(function (li) {
+      li.addEventListener("mouseenter", function () {
+        if (!wide.matches || li.classList.contains("open")) return;
+        var box = li.parentNode.getBoundingClientRect(), r = li.getBoundingClientRect(), t = li.querySelector(".tree"), w = 250;
+        var x = r.right + w > box.right + 4 ? r.left - w + 6 : r.right - 6;
+        li.style.setProperty("--fx", Math.round(x) + "px");
+        li.style.setProperty("--fy", Math.round(r.top - 2) + "px");
+        var h = t ? t.offsetHeight : 0;
+        if (h && r.top - 2 + h > window.innerHeight - 8) li.style.setProperty("--fy", Math.round(Math.max(8, window.innerHeight - 8 - h)) + "px");
+      });
+    });
     mega.addEventListener("mouseover", function (e) {
       if (!wide.matches) return;
       if (e.target.closest && e.target.closest(".mega-preview")) { clearTimeout(hoverTimer); return; }   // on the photos: keep them

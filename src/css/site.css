@@ -110,10 +110,14 @@ small { font-size: .85em; }
 .nav-menu > li { position: relative; }
 .nav-menu > li > a { display: block; padding: 10px 12px; font-family: var(--cond); font-weight: 600; font-size: 19px; color: var(--charcoal); text-decoration: none; border-bottom: 3px solid transparent; }
 .nav-menu > li:hover > a, .nav-menu > li.current > a, .nav-menu > li:focus-within > a { border-bottom-color: var(--orange); }
-/* Products mega menu: the category list and, beside it, photos of the category under the pointer (1 – 4 by width; site.js) */
+/* Products mega menu: the category list and, beside it, the photos of every product of the category under the pointer (site.js) —
+   no limit (the owner, Nov 1 2026), 4 / 3 / 2 / 1 to a row by width */
 .header-row { position: relative; }
 .mega { display: none; position: absolute; left: 0; right: 0; top: 100%; z-index: 60; background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--orange); box-shadow: 0 14px 30px rgba(20, 20, 20, .12); padding: 16px 18px 18px; grid-template-columns: minmax(0, 1fr) var(--mega-w); gap: 26px; align-items: start; max-height: calc(100vh - var(--header-h) - 12px); overflow-y: auto; overscroll-behavior: contain; --mega-w: 780px; }
 .nav-menu > li:hover .mega, .nav-menu > li:focus-within .mega, .nav-menu > li.open .mega { display: grid; }
+/* desktop: the panel stays open for a moment after the pointer leaves the Products item (site.js adds .is-hover), so a curved
+   path down to it does not close it (the owner, Nov 1 2026) */
+@media (min-width: 961px) { .nav-menu > li.is-hover .mega { display: grid; } }
 .sub-menu { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 18px; }
 .mega-preview { min-width: 0; padding-left: 26px; border-left: 1px solid var(--line-soft); }
 .mega-preview:empty { align-self: stretch; min-height: 280px; background: var(--paper); border-left: 0; }
@@ -140,9 +144,9 @@ small { font-size: .85em; }
   .nav-menu > li { display: flex; align-items: center; }
   .nav-menu > li.has-children { position: static; }
 }
-@media (max-width: 1499px) { .mega { --mega-w: 580px; } .mega-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } .mega-card:nth-child(n+4) { display: none; } }
-@media (max-width: 1279px) { .mega { --mega-w: 400px; } .mega-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mega-card:nth-child(n+3) { display: none; } }
-@media (max-width: 1099px) { .mega { --mega-w: 236px; } .mega-cards { grid-template-columns: minmax(0, 1fr); } .mega-card:nth-child(n+2) { display: none; } }
+@media (max-width: 1499px) { .mega { --mega-w: 580px; } .mega-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 1279px) { .mega { --mega-w: 400px; } .mega-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 1099px) { .mega { --mega-w: 236px; } .mega-cards { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { .mega-cards { animation: none; } }
 .sub-menu li { break-inside: avoid; }
 .sub-menu a { display: block; padding: 5px 8px; font-size: 16px; color: var(--ink); text-decoration: none; border-radius: var(--radius); }
@@ -155,6 +159,15 @@ small { font-size: .85em; }
 .sub-menu li.has-tree.open > .tree-toggle { transform: rotate(180deg); }
 .tree { display: none; list-style: none; margin: 0 0 6px 10px; padding: 2px 0 2px 10px; border-left: 2px solid var(--line); }
 .sub-menu li.has-tree.open > .tree { display: block; }
+/* desktop: resting the pointer on a category opens its pages beside it, no click on the arrow needed (the owner, Nov 1 2026) — a
+   flyout over the next column, or over the previous one for the last column; fixed and placed by site.js (--fx, --fy), so the
+   three-column list neither reflows nor splits the flyout between its columns */
+@media (min-width: 961px) {
+  .sub-menu li.has-tree:not(.open):hover > .tree { display: block; position: fixed; left: var(--fx, -9999px); top: var(--fy, 0); z-index: 70;
+    width: 250px; max-height: calc(100vh - 16px); overflow-y: auto; margin: 0; padding: 6px 6px 6px 8px; background: var(--white);
+    border: 1px solid var(--line); border-top: 3px solid var(--orange); border-radius: var(--radius); box-shadow: 0 12px 26px rgba(20, 20, 20, .16); }
+  .sub-menu li.has-tree:not(.open):hover > .tree-toggle { transform: rotate(180deg); background: var(--orange-tint); border-color: var(--orange); color: var(--orange-ink); }
+}
 .tree a { font-size: 14.5px; padding: 4px 8px; }
 .tree-group { margin-top: 2px; }
 .tree-group ul { list-style: none; margin: 0; padding: 0 0 2px 6px; }

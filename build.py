@@ -931,8 +931,8 @@ def build_catalog(loaded):
 
 
 def build_nav_preview(loaded):
-    """nav-preview.json — the photos of every category of the Products menu: the desktop menu shows those of the category under
-    the pointer (1 – 4 by screen width) and the mobile menu a thumbnail beside each category (src/js/site.js). Loaded on the first
+    """nav-preview.json — the photos of every category of the Products menu: the desktop menu shows all of those of the category
+    under the pointer (no limit, the owner, Nov 1 2026) and the mobile menu a thumbnail beside each category (src/js/site.js). Loaded on the first
     open of the menu, so the pages carry none of it.  Per category: the pages and sections of its menu entries (their hero photo,
     or for an anchor to a product group the photo of the group's first family), then the product families of its own page, then
     the section pages of a hub."""
@@ -958,7 +958,7 @@ def build_nav_preview(loaded):
         cards, keys, hrefs = [], set(), set()
 
         def add(label, href, key, note=""):
-            if not key or key not in manifest or key in keys or href in hrefs or len(cards) >= 4:
+            if not key or key not in manifest or key in keys or href in hrefs:      # every product, no limit (the owner, Nov 1 2026)
                 return
             keys.add(key); hrefs.add(href)
             im = img(key, 800)
@@ -1006,7 +1006,7 @@ def build_nav_preview(loaded):
             scards, skeys, shrefs = [], set(), set()
 
             def sadd(label, href, k, note=""):
-                if not k or k not in manifest or k in skeys or href in shrefs or len(scards) >= 4:
+                if not k or k not in manifest or k in skeys or href in shrefs:
                     return
                 skeys.add(k); shrefs.add(href)
                 im = img(k, 800)
