@@ -7,8 +7,8 @@ tools/dener_mt_photos.py (section 'dener').
     python3 tools/dener_mt_pages.py                       # families + pages + image_map entries (tools/dener_mt_keys.txt)
     python3 tools/yt_thumbs.py $(cat tools/dener_mt_vids.txt)
     python3 tools/make_images.py --only $(cat tools/dener_mt_keys.txt)
-    python3 tools/brochure/build_brochure.py tools/brochure/specs/dener-surface-grinder.json; the lathe and machining-centre
-    catalogues are the complete NovoTech editions of tools/brochure/dener_mt_editions.py
+    python3 tools/brochure/dener_mt_editions.py           # the lathe, machining-centre and grinder catalogues: the complete
+                                                          # NovoTech editions of Dener's own (no family brochures)
     python3 tools/machine_tools_hub.py                    # the hub, after this and tools/ttmc_more_pages.py
 """
 import json

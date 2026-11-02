@@ -8,6 +8,8 @@ delete nothing, only the units become imperial — every PDF converted to the No
   lathe  TTC-TTH CNC Torna Tezgahı (R-2404-TR)            → src/files/NovoTech-Dener-CNC-Lathes-2026.pdf
   mc     CNC Dikey İşleme Merkezi (TMC) and Çift Kolonlu İşleme Merkezi (TDC), R-2404-TR
                                                             → src/files/NovoTech-Dener-Machining-Centres-2026.pdf
+  grind  NC Taşlama Tezgahı (TGH-B 450), R-2404-TR          → src/files/NovoTech-Dener-Surface-Grinder-2026.pdf
+         (its last page, a blank notes page, is left out)
 
 Drawings, working ranges, tool interference and the power / torque charts are the catalogue's own, dimensioned in millimetres
 (a note on each page gives the conversion).  Left out, and why: Dener's addresses, phone numbers and QR code (NovoTech's contact
@@ -626,7 +628,145 @@ def book_mc():
     return b
 
 
-BOOKS = {"lathe": book_lathe, "mc": book_mc}
+# ------------------------------------------------------------------------------------------------------------- grinder
+GR_FEATURES = ["Easy to use with a 10″ touchscreen", "Movement on the cross and vertical axes with precision ball screws",
+               "Precise infeed with the NC control unit on the cross and vertical axes", "Electronic-hydraulic control of the longitudinal feed",
+               "Vibration-free, direct-drive, super-precise, powerful and rigid spindle supported at many points",
+               "Special coating and precise scraping on the V guideways", "Precise scraping on the prismatic box guideways",
+               "Fast service and spare parts support"]
+GR_STD = ["Movement with AC servo motors on the cross and vertical axes", "10″ touchscreen", "External wired handwheel", "Table guard sheet",
+          "Wheel flange", "Electromagnetic table (15.7 × 31.5″, 400 × 800 mm)", "Wheel balancing stand", "Balancing arbor",
+          "Grinding wheel (Ø13.8 × Ø5 × 1.57″, Ø350 × Ø127 × 40 mm)", "Wheel flange puller", "Wheel dressing device on the table (diamond)",
+          "Coolant equipment", "Paper-filter coolant equipment (manual)", "Alarm / warning and lighting lamps", "Front door safety switch",
+          "Tools and tool kit", "Hydraulic unit and hydraulic oil (26 US gal, 100 L)", "Demagnetizing unit for the electromagnetic table",
+          "Lifting bolts", "Levelling bolts and plates", "User manual", "Mitsubishi NC control on the cross and vertical axes"]
+GR_OPT = ["Additional wheel flange", "Wheel dressing device on the wheel head (diamond)", "Magnetic sine plate (V-S 100M)",
+          "Magnetic and paper-filter coolant equipment", "Precision toolmaker's vise (VMV-40)", "Demagnetizer for the workpiece (VDM-68)",
+          "Sine bar (VS-100)", "Profile grinding and dressing device (V-PB-BS)"]
+
+
+def grind_rows():
+    return [("Work table", None),
+            ("Table size", two("17.7 × 35.4″", "450 × 900 mm")),
+            ("Max. grinding length (longitudinal)", mm(900)),
+            ("Max. grinding width (cross)", mm(450)),
+            ("Max. distance from the spindle centre to the table surface", mm(550)),
+            ("Min. distance from the spindle centre to the table surface", mm(75)),
+            ("Table guideways", "V &amp; flat way"),
+            ("T-slots — number / size", "1 / 14H7"),
+            ("Max. table load", kg(400)),
+            ("Ball screws", None),
+            ("Ball screw for the vertical axis", two("C3, Ø0.98″", "C3 25 mm")),
+            ("Ball screw for the cross axis", two("C6, Ø0.98″", "C6 25 mm")),
+            ("Axis movements", None),
+            ("Rapid traverse up / down", two("236 in/min", "6,000 mm/min")),
+            ("Rapid traverse cross", two("236 in/min", "6,000 mm/min")),
+            ("Min. feed setting", two("0.00004″", "0.001 mm")),
+            ("Table speed, approx. — longitudinal", mmin_range(5, 25)),
+            ("Automatic feed — cross", two("0.002 – 0.79″", "0.05 – 20 mm")),
+            ("Automatic feed — vertical", two("0.00004″", "0.001 mm")),
+            ("Motors", None),
+            ("AC spindle motor power", kw(4)),
+            ("AC spindle motor speed", "1,450 rpm"),
+            ("Servo motor power — vertical movement", kw(0.7)),
+            ("Servo motor speed — vertical movement", "3,000 rpm"),
+            ("Servo motor torque — vertical movement", nm(2.4)),
+            ("Servo motor power — cross movement", kw(0.7)),
+            ("Servo motor speed — cross movement", "3,000 rpm"),
+            ("Servo motor torque — cross movement", nm(2.4)),
+            ("AC motor power — longitudinal movement", kw(4)),
+            ("AC motor speed — longitudinal movement", "1,440 rpm"),
+            ("AC lubrication pump motor power", two("0.064 HP", "0.048 kW")),
+            ("Grinding wheel", None),
+            ("Frequency converter type", "FR-F840"),
+            ("Speed", "100 – 1,450 rpm"),
+            ("Max. speed", "1,450 rpm"),
+            ("Dimensions (outer Ø / inner Ø / thickness)", two("Ø13.8 × Ø5 × 1.57″", "Ø350 × Ø127 × 40 mm")),
+            ("Power connection", None),
+            ("Electrical power connection", "22.3 kVA"),
+            ("Machine dimensions", None),
+            ("Length", mm(3280)), ("Width", mm(2750)), ("Height", mm(2151)), ("Weight", kg(3700)),
+            ("Coolant — capacity, motor, pressure", None),
+            ("Coolant pump power (pressure)", two("0.27 HP (5.8 psi)", "0.2 kW (0.4 bar)")),
+            ("Coolant tank capacity", litre(100)),
+            ("Hydraulics — capacity, motor, pressure", None),
+            ("Hydraulic pump power (pressure)", two("5.4 HP (580 psi)", "4 kW (40 bar)")),
+            ("Hydraulic tank capacity", litre(100)),
+            ("Control unit", None),
+            ("NC system", "Mitsubishi FX5U"),
+            ("Screen", "10″ colour LCD touch screen")]
+
+
+def book_grind():
+    b = Book("grind", "NC surface grinder", "Dener TGH-B 450 NC surface grinding machine",
+             os.path.join(ROOT, "src", "files", "NovoTech-Dener-Surface-Grinder-2026.pdf"))
+    b.title = "Dener TGH-B 450 NC Surface Grinder — NovoTech Machine Tools"
+    b.subject = "Dener TGH series NC surface grinding machine catalogue, English imperial edition"
+    b.cover("Dener · NC surface grinder", "“The future is here” · sold &amp; serviced in Canada by NovoTech", "NC surface", "grinder · TGH",
+            "Precision surface grinding, crosswise and lengthwise", "grind/tgh.png",
+            [("Since 1974", "Manufacturing experience"), ("17.7 × 35.4″", "Table (450 × 900 mm)"), ("10″", "Touchscreen"),
+             ("Canada", "Parts &amp; technical support")], hero_h=300, minis=("grind/guard.png", "grind/cover-b.png", "grind/cover-a.png"))
+    D.about_page(b)
+    campus(b, "grind/campus.jpg")
+    head = "TGH series NC surface grinding machine"
+    body = (CSS + title(head, "Overview")
+            + row(fig("grind/tgh.png", "TGH-B 450 NC surface grinder", h=300, px=1400), fig("grind/guard.png", "The wheel guard and the coolant nozzles", h=300, fit="cover", px=1000),
+                  cols="1.2fr 1fr", gap=14)
+            + P("With the precision surface grinding machine, all kinds of materials can be ground smoothly, crosswise and lengthwise.")
+            + checks(GR_FEATURES))
+    b.page("Overview", body, toc="Overview")
+    body = (CSS + title(head, "Standard / optional equipment")
+            + row(h2("Standard equipment") + checks(GR_STD, cls="sm"),
+                  h2("Optional equipment") + checks(GR_OPT, cls="sm") + '<div style="height:10pt"></div>'
+                  + fig("grind/machine.png", h=230, fit="cover", px=900) + '<div style="height:8pt"></div>' + fig("grind/cover-c.png", h=160, fit="cover", px=700), gap=20))
+    b.page("Equipment", body, toc="Standard / Optional Equipment")
+
+    def cd(img, ttl, text, h=112, extra=""):
+        return (f'<div>{fig(img, h=h, px=900)}{extra}<div class="cd" style="margin-top:5pt"><div class="ittl">{ttl}</div>'
+                f'<p class="sm" style="font-size:8.6pt">{text}</p></div></div>')
+    body = (CSS + title(head, "Body and column structure")
+            + h2("Body structure") + P("Stress-relieved cast body structure for working in heavy conditions, vibration damping, high precision and "
+                                      "high durability.", cls="sm")
+            + row(fig("grind/body-1.png", h=130, px=900), fig("grind/body-2.png", h=130, px=900), gap=14)
+            + '<div style="height:8pt"></div>'
+            + grid([cd("grind/fem.png", "Finite element method", "The optimum body structure obtained using the finite element method.", h=150),
+                    cd("grind/column.png", "Column structure", "High durability and vibration damping thanks to the honeycomb ribs inside the column.", h=150)], 2, 14)
+            + h2("Bearing system") + P("Precise support, positioning and vibration-free operation with the Turcite-B coated box-prismatic guideway "
+                                      "system machined and scraped on the cast body.", cls="sm")
+            + row(fig("grind/bearing-1.png", h=110, fit="cover", px=900), fig("grind/bearing-2.png", h=110, fit="cover", px=900), gap=14))
+    b.page("Body · column", body, toc="Body and Column Structure")
+    body = (CSS + title(head, "Working area and table dimensions")
+            + fig("grind/work-area.png", "Table 35.4 × 17.7″ (900 × 450 mm); parts up to 882 lb (400 kg) loaded by crane", h=200, px=1600)
+            + h2("Magnetic table") + fig("grind/magnetic.png", "Electromagnetic table 15.7 × 31.5″ (400 × 800 mm)", h=110, px=1000)
+            + row(cd("grind/column-axis.png", "Column axis", "Rigid support on hardened, Turcite-B coated rails, and precise positioning and "
+                     "repeatability with a high-precision, preloaded, ground ball screw.", h=120),
+                  cd("grind/spindle.png", "Direct-drive spindle", "An excellent surface and precise machining with the spindle supported on "
+                     "preloaded precision bearings and the direct-drive motor connection.", h=120), gap=14))
+    b.page("Working area", body, toc="Working Area and Table Dimensions")
+    body = (CSS + title(head, "Control and hydraulic unit")
+            + h2("Control unit") + P("Easy to use, with up-to-date technological modules, an operator-friendly interface and an ergonomic design.", cls="sm")
+            + row(fig("grind/control-1.png", h=130, fit="cover", px=900), fig("grind/control-2.png", h=130, fit="cover", px=900), gap=14)
+            + row(h2("Coolant tank (option)") + P("Optimum cooling and easy maintenance with a 26 US gal (100 L) tank with paper and magnetic "
+                                                  "filters and electronic level control.", cls="sm") + fig("grind/coolant.png", h=120, fit="cover", px=900),
+                  h2("Hydraulic unit") + P("Fast, stable operation even in difficult conditions, with the electronically controlled hydraulic unit "
+                                           "driving the table axis.", cls="sm") + fig("grind/hydraulic.png", h=120, px=900), gap=16)
+            + h2("Automatic central lubrication system") + P("Efficient lubrication of the table axis and all the other axes with two separate "
+                                                             "pumps, extending the life of the equipment.", cls="sm")
+            + row(fig("grind/lube-1.png", h=115, fit="cover", px=900), fig("grind/lube-2.png", h=115, fit="cover", px=900), gap=14))
+    b.page("Control · hydraulics", body, toc="Control and Hydraulic Unit")
+    rows = grind_rows()
+    cut = next(i for i, r in enumerate(rows) if r[0] == "Grinding wheel")
+    for n, rr in enumerate((rows[:cut], rows[cut:])):
+        b.page("Technical data", CSS + title(head, f"Technical data · {n + 1} of 2") + ttable(["TGH-B 450 (M)"], rr, corner="Model")
+               + (P("The values in the table may change with renewals and revisions of the machines. " + VOLT, cls="note") + included() if n else ""),
+               toc="Technical Data" if n == 0 else None)
+    D.range_page(b)
+    b.back("Grinder for your shop.", ["grind/tgh.png", "grind/guard.png", "grind/machine.png", "grind/magnetic.png"])
+    D.fill_about(b)
+    return b
+
+
+BOOKS = {"lathe": book_lathe, "mc": book_mc, "grind": book_grind}
 
 
 def main():
