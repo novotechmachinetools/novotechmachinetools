@@ -60,9 +60,12 @@ RedirectMatch 301 ^/senfeng-fiber-lasers(\.html)?$ /fiber-laser-cutting-machine
 RedirectMatch 301 ^/enclosed-fiber-laser(\.html)?$ /fiber-laser-cutting-machine
 RedirectMatch 301 ^/open-type-fiber-laser(\.html)?$ /laser-cutting-machine
 RedirectMatch 301 ^/3d-laser-and-coil-fed-line(\.html)?$ /3d-laser-cutting-machine
-RedirectMatch 301 ^/dener-tube-lasers(\.html)?$ /tube-laser-cutter
-RedirectMatch 301 ^/novotech-tube-lasers(\.html)?$ /tube-laser-cutter
-RedirectMatch 301 ^/senfeng-tube-lasers(\.html)?$ /tube-laser-cutter
+RedirectMatch 301 ^/dener-tube-lasers(\.html)?$ /tube-laser-cutting-machine
+RedirectMatch 301 ^/novotech-tube-lasers(\.html)?$ /tube-laser-cutting-machine
+RedirectMatch 301 ^/senfeng-tube-lasers(\.html)?$ /tube-laser-cutting-machine
+# the tube lasers are one page (the owner, Nov 1 2026)
+RedirectMatch 301 ^/tube-laser-cutter(\.html)?$ /tube-laser-cutting-machine
+RedirectMatch 301 ^/heavy-duty-tube-laser(\.html)?$ /tube-laser-cutting-machine
 RedirectMatch 301 ^/slip-rolls(\.html)?$ /plate-rollers
 RedirectMatch 301 ^/cold-saw-carbide-saw-cutting(\.html)?$ /circular-cold-saws#bekamak-circular-group
 

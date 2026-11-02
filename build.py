@@ -1330,23 +1330,91 @@ def hub_lineup(page):
     return out
 
 
+HERO_NAMES_PATH = os.path.join(ROOT, "content", "hero_names.json")
+HERO_NAMES = {k: v for k, v in json.load(open(HERO_NAMES_PATH, encoding="utf-8")).items() if not k.startswith("_")}
+HERO_OF = {k[5:]: v for k, v in HERO_NAMES.items() if k.startswith("hero:")}      # hero photo → the family it shows
+NO_HERO_NAME = set()
+
+
+def hero_name(key, fallback):
+    """the short name under a small hero photo — content/hero_names.json says what the machine is, never its model code"""
+    if key in HERO_NAMES:
+        return HERO_NAMES[key]
+    NO_HERO_NAME.add(key)
+    return fallback
+
+
+def hero_cols(n):
+    """columns of the small photos under the hero: (desktop, phone) — full rows where possible"""
+    desk = n if n <= 4 else 3 if n in (5, 6, 9) else 4 if n in (7, 8, 11, 12) else 5
+    return desk, (n if n <= 3 else 2 if n == 4 else 3)
+
+
+def set_hero_many(page, keys, labels, links=None):
+    """every product of the page small under the large photo, each with its short name (the owner, Nov 1 2026)"""
+    page["hero_image_secondary"], page["hero_mini_labels"], page["hero_many"] = keys, labels, True
+    page["hero_cols"] = hero_cols(len(keys))
+    page["hero_mini_h"] = 96 if len(keys) <= 4 else 84 if len(keys) <= 8 else 72      # desktop height of a small photo, px
+    page["hero_mini_hm"] = 80 if page["hero_cols"][1] <= 2 else 58                    # phone height: bigger when two a row or fewer
+    page["hero_mini_links"] = links or {}
+    # many products (more than 8): on a desktop the strip runs the full width under the hero instead of under the photo only,
+    # so the hero stays as tall as its text — balanced rows of up to 8
+    n = len(keys)
+    if n > 8:
+        rows = -(-n // 8)
+        page["hero_wide"], page["hero_cols_wide"] = True, -(-n // rows)
+        page["hero_mini_h"] = 96                       # the full-width strip has room for the larger photos
+
+
+def hero_keys(hero):
+    """the large photo and the photo it was made from ("…-hero", "…-cut" versions of a family photo)"""
+    return {hero} | {hero[: -len(s)] for s in ("-cut", "-hero") if hero and hero.endswith(s)} if hero else set()
+
+
 def all_item_minis(page):
     """Every product item on the page small under the hero (the owner, Nov 1 2026): the first photo of each family, in page
     order, except the family the large photo already shows (its name goes under the large photo); the names say what the
-    machine is (page["hero_names"]), not its model code."""
-    hero, keys, labels, names = page.get("hero_image"), [], {}, page.get("hero_names") or {}
+    machine is (content/hero_names.json, by family id), not its model code."""
+    hero, keys, labels = page.get("hero_image"), [], {}
+    hc = hero_keys(hero)
     for g in page.get("groups") or []:
         for f in g["families"]:
             if not isinstance(f, dict) or not f.get("images"):
                 continue
-            if hero in f["images"]:
-                page["hero_caption"] = names.get(f["id"]) or f.get("short") or f["name"]
+            if hc & set(f["images"]) or f["id"] == HERO_OF.get(hero):
+                page.setdefault("hero_caption", hero_name(f["id"], f.get("short") or f["name"]))
                 continue
-            k = f["images"][0]
-            if k in manifest and k not in keys:
+            k = next((k for k in f["images"] if k in manifest), None)
+            if k and k not in keys and k not in hc:
                 keys.append(k)
-                labels[k] = names.get(f["id"]) or f.get("short") or f["name"]
+                labels[k] = hero_name(f["id"], f.get("short") or f["name"])
     return keys, labels
+
+
+def hub_item_minis(page):
+    """On a hub the products are its section pages: each card's photo small under the hero with the page's short name, linking
+    to the page; the card whose photo (or one of whose families) the large photo shows names the large photo instead."""
+    hero, keys, labels, links = page.get("hero_image"), [], {}, {}
+    cards = [(sp.get("image"), sp["slug"], sp.get("nav_label") or sp["title"].split(" — ")[0], sp["slug"] + ".html",
+              [f.get("images") or [] for f in sp.get("families") or [] if isinstance(f, dict)]) for sp in page.get("subpages") or []]
+    cards += [(x.get("image"), x["href"].split(".html")[0].split("#")[0], x.get("nav_label") or x["title"].split(" — ")[0], x["href"], [])
+              for x in page.get("extra_cards") or []]
+    hc = hero_keys(hero)
+    for im, slug, lab, href, fims in cards:
+        if not im or im not in manifest:
+            continue
+        if im in hc:
+            page.setdefault("hero_caption", hero_name("page:" + slug, lab))
+            continue
+        if im not in keys:
+            keys.append(im)
+            labels[im], links[im] = hero_name("page:" + slug, lab), href
+    if "hero_caption" not in page:
+        for im, slug, lab, href, fims in cards:
+            if any(hc & set(ims) for ims in fims):
+                page["hero_caption"] = hero_name("page:" + slug, lab)
+                break
+    return keys, labels, links
 
 
 def hero_links(page):
@@ -1528,10 +1596,18 @@ def render_page(page):
                               + ([{"href": "#lineup", "label": "Line-up"}] if page.get("lineup") else [])
                               + ([{"href": "#compare", "label": "Compare"}] if page.get("compare") else [])
                               + [{"href": "#faq-title", "label": "Questions"}, {"href": "#reques-a-quote", "label": "Request a quote"}])   # no range table on hubs (the owner, Nov 1 2026)
-    if page.get("template") == "category.html" and page.get("hero_minis_all") and page.get("groups"):
-        page["hero_image_secondary"], page["hero_mini_labels"] = all_item_minis(page)
+    # every page: the large hero photo and, under it, every product of the page small with a short name, from desktop to
+    # phone (the owner, Nov 1 2026); a page with one product keeps its two small photos
+    if page.get("template") == "category.html" and page.get("groups") and page.get("hero_minis_all", True) is not False:
+        keys, labels = all_item_minis(page)
+        if keys:
+            set_hero_many(page, keys, labels)
+    if page.get("template") == "hub.html" and page.get("subpages") and page.get("hero_image") and page.get("hero_minis_all", True) is not False:
+        keys, labels, links = hub_item_minis(page)
+        if keys:
+            set_hero_many(page, keys, labels, links)
     if page.get("template") in ("hub.html", "category.html") and page.get("hero_image"):
-        page["hero_links"] = hero_links(page)
+        page["hero_links"] = {**hero_links(page), **(page.get("hero_mini_links") or {})}
     page["url"] = f"{site['domain']}/{page['slug']}" if page["slug"] != "index" else site["domain"] + "/"   # clean URLs: pages are served without .html
     page["date_published"], page["date_modified"] = page_dates(page["slug"])
     page["updated_label"] = datetime.date.fromisoformat(page["date_modified"]).strftime("%B %Y")
@@ -1826,6 +1902,8 @@ def main():
         open(os.path.join(DIST, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
     if MISSING_IMAGES:
         print(f"PREVIEW ONLY: {len(MISSING_IMAGES)} images missing, logo shown instead: " + ", ".join(sorted(MISSING_IMAGES)[:12]) + " …")
+    if NO_HERO_NAME:
+        print(f"WARNING: {len(NO_HERO_NAME)} small hero photos have no short name in content/hero_names.json: " + ", ".join(sorted(NO_HERO_NAME)))
     print("done", "(staging)" if STAGING else "")
 
 

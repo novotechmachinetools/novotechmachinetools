@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""The two laser sections, each a hub over one page per kind of machine — not per supplier.
+"""The two laser sections — not per supplier.
 
-Sheet lasers (laser-cutting-machine.html): fiber lasers with shuttle table or pallet changer, sheet-and-tube combination
-lasers, large-format plate lasers (semi-closed, ground-rail, gantry), 3D laser cells, and coil-fed lines.  Tube lasers (tube-laser-cutting-machine.html): tube laser cutters to Ø14″ with two or three chucks, and heavy-duty
-three- and four-chuck tube and profile lasers to Ø25″ and 49 ft.  The premium (Dener) and value (NovoTech, Senfeng) lines are
-sections inside each page.
+Sheet lasers (laser-cutting-machine.html): a hub over one page per kind — fiber lasers with shuttle table or pallet changer,
+sheet-and-tube combination lasers, large-format plate lasers (semi-closed, ground-rail, gantry), 3D laser cells, and coil-fed
+lines.  Tube lasers (tube-laser-cutting-machine.html): ONE page, no hub — the tube laser cutters to Ø14″ and the heavy-duty
+three- and four-chuck machines to Ø25″ and 49 ft together, with the tube laser buying guide (the owner, Nov 1 2026).  The
+premium (Dener) and value (NovoTech, Senfeng) lines are sections inside each page.
 
 Shared by tools/laser_hub.py (the hubs and the merged family sets) and tools/laser_types.py (the pages); tools/dener_pages.py,
 tools/senfeng_pages.py and tools/vl_laser_pages.py only write the families."""
@@ -24,9 +25,10 @@ PAGES = {
         "coil-fed-laser-cutting-line": [("sf-coil", "ls-value-coil"), ("sf-coil-c", "ls-value-coil-c"), ("sf-top", "ls-value-top"),
                                         ("sf-coil-clh", "ls-value-clh"), ("sf-coil-2012", "ls-value-coil-heavy")],   # five lines (the owner, Nov 1 2026)
     },
+    # one page for every tube laser, standard and heavy-duty (the owner, Nov 1 2026: no hub, no split)
     "tube": {
-        "tube-laser-cutter": [("dn-eftl", "lt-premium-eftl"), ("vn-ult", "lt-value-ult"), ("sf-t", "lt-value-t"), ("sf-plus", "lt-value-plus")],
-        "heavy-duty-tube-laser": [("dn-ftl", "lt-premium-ftl"), ("sf-heavy", "lt-value-heavy")],
+        "tube-laser-cutting-machine": [("dn-eftl", "lt-premium-eftl"), ("dn-ftl", "lt-premium-ftl"), ("vn-ult", "lt-value-ult"),
+                                       ("sf-t", "lt-value-t"), ("sf-plus", "lt-value-plus"), ("sf-heavy", "lt-value-heavy")],
     },
 }
 
@@ -52,26 +54,27 @@ SECTIONS = {
              "Cut blanks straight from the coil: five lines for thin, aluminum and 5/16 – 9/16″ coil from 1.5 to 80 kW, and the TOP line with robot sorting, panel bending and welding — the value line.",
              "Coil-fed laser lines", ""),
         ]),
+    # a single page: no hub, no section bar of sibling pages
     "tube": dict(
-        hub="tube-laser-cutting-machine", section="Tube laser cutters", label="All tube lasers", image="dn-tube-2",
-        blurb="Standard or heavy-duty? Every tube and profile laser NovoTech sells on one page, with the two kinds compared and the tube range, power, speed and bar length of the whole range in one table.",
+        hub=None, section="Tube laser cutters", label="Tube laser cutters", image="dn-tube-2", blurb="",
         subpages=[
-            ("tube-laser-cutter", "Tube laser cutters — two- and three-chuck, Ø0.3″ to 14″, 20 to 40 ft tubes, 1.5 to 40 kW", "dn-tube-2",
-             "The tube laser for round, square and rectangular tube to Ø14″: the premium E-FTL with 1 G servo chucks made in Turkey, NovoTech's value-line ULT with two or three chucks, and the T series and high-speed PLUS / bevel-cutting GT — bundle loaders and ±45° bevel heads.",
+            ("tube-laser-cutting-machine", "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 20 to 49 ft tubes, 1.5 to 40 kW", "dn-tube-2",
+             "Every tube and profile laser NovoTech sells: two- and three-chuck tube laser cutters to Ø14″ and heavy-duty three- and four-chuck machines to Ø25″ and 49 ft.",
              "Tube laser cutters", ""),
-            ("heavy-duty-tube-laser", "Heavy-duty tube and profile lasers — three and four chucks, to Ø25″ and 49 ft", "dn-tube-6",
-             "For structural tube, pipe, beams and heavy profiles: the premium FTL to Ø25.2″ and 12 m bars of 2,600 kg, the three- and four-chuck NT / ST / HT machines to Ø25″, 6,600 lb and 49 ft, and the H-beam profile line.",
-             "Heavy-duty tube lasers", ""),
         ]),
 }
 
 
 def hub(kind):
     s = SECTIONS[kind]
+    if not s["hub"]:
+        return None
     return {"slug": s["hub"], "label": s["label"], "image": s["image"], "blurb": s["blurb"]}
 
 
 def siblings(kind):
+    if not SECTIONS[kind]["hub"]:
+        return None
     return [(slug, nav, title.split(" — ")[0]) for slug, title, _, _, nav, _ in SECTIONS[kind]["subpages"]]
 
 

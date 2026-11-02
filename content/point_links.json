@@ -530,20 +530,6 @@
    "sf-1313g"
   ]
  ],
- "heavy-duty-tube-laser": [
-  [
-   "Premium FTL",
-   "dn-ftl"
-  ],
-  [
-   "Value NT / ST / HT",
-   "sf-heavy"
-  ],
-  [
-   "SF1500CH H-beam profile line",
-   "sf-heavy"
-  ]
- ],
  "horizontal-press-brake": [
   [
    "HP 10 – HP 100",
@@ -1330,13 +1316,13 @@
    "wt-rotobrush"
   ]
  ],
- "tube-laser-cutter": [
+ "tube-laser-cutting-machine": [
   [
    "Premium E-FTL",
    "dn-eftl"
   ],
   [
-   "Value ULT",
+   "value ULT",
    "vn-ult"
   ],
   [
@@ -1346,6 +1332,18 @@
   [
    "PLUS high-speed and GPLUS / GT ±45° bevel lasers",
    "sf-plus"
+  ],
+  [
+   "premium FTL",
+   "dn-ftl"
+  ],
+  [
+   "value NT / ST / HT",
+   "sf-heavy"
+  ],
+  [
+   "SF1500CH H-beam profile line",
+   "sf-heavy"
   ]
  ],
  "twin-column-band-saws": [

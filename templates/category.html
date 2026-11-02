@@ -30,27 +30,7 @@
       {% elif page.hero_brand_line %}<p class="hero-brand">{{ page.hero_brand_line }}</p>{% endif %}
       <p class="hero-updated">Specifications checked against the manufacturer's current catalogue · page updated <time datetime="{{ page.date_modified }}">{{ page.updated_label }}</time></p>
     </div>
-    {% set hl = page.hero_links or {} %}
-    {% set many = page.hero_minis_all and (page.hero_image_secondary or [])|length > 2 %}
-    <div class="hero-art{{ ' is-large' if page.hero_large else '' }}{{ ' has-many' if many else '' }}">
-      {% if many %}<div class="hero-stage">{% endif %}
-      <div class="hero-band" aria-hidden="true"></div>
-      {% if hl.get(page.hero_image) %}<a class="hero-link" href="{{ hl[page.hero_image] }}">{% endif %}<img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, {{ 820 if page.hero_large else 680 }}px" width="{{ hero.w }}" height="{{ hero.h }}" alt="{{ hero.alt }}" fetchpriority="high" decoding="async">{% if hl.get(page.hero_image) %}</a>{% endif %}
-      {% if many %}{% if page.hero_caption %}<p class="hero-main-cap">{{ page.hero_caption }}</p>{% endif %}</div>
-      {# every product item of the page, small, with its name (the owner, Nov 1 2026) #}
-      {% set nm = page.hero_image_secondary|length %}
-      <ul class="hero-minis is-many" style="--n: {{ nm if nm <= 4 else (3 if nm <= 6 else 4) }}">
-        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 96 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 190 %}{% set mw = 190 %}{% set mh = (190 * m.h / m.w) | round | int %}{% endif %}<li>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{{ page.hero_mini_labels[n] }}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>{% endfor %}
-      </ul>
-      {% elif page.hero_image_secondary %}
-      {# hero_minis_same_h: every small image as tall as the shortest one, so a close-up photo is no bigger than the machine beside it (the owner, Nov 1 2026) #}
-      {% set ns = namespace(h=150) %}
-      {% if page.hero_minis_same_h %}{% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set ch = [150, (210 * m.h / m.w) | round | int] | min %}{% if ch < ns.h %}{% set ns.h = ch %}{% endif %}{% endfor %}{% endif %}
-      <div class="hero-minis">
-        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 150 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 210 %}{% set mw = 210 %}{% set mh = (210 * m.h / m.w) | round | int %}{% endif %}{% if page.hero_minis_same_h and mh > ns.h %}{% set mh = ns.h %}{% set mw = (mh * m.w / m.h) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
-      </div>
-      {% endif %}
-    </div>
+    {% include "partials/hero_art.html" %}
   </div>
   {% if page.section %}
   {# the kinds of machine in this section; the current one points down into the dark bar of its families below (the owner, Oct 31 2026) #}
