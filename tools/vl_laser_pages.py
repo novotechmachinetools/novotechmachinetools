@@ -110,7 +110,7 @@ PAGE_TUBE = dict(
          {"q": "What about software?",
           "a": "The Cypcut tube control holds the cutting database and adjusts the power to the speed through corners. TubesT, BOCHU's tube nesting software, imports the 3D parts, unfolds them onto the profile and nests them along the bar to use the remnant; it is an option and also runs on a PC in the office."},
          {"q": "How does the ULT compare with the Dener and Senfeng tube lasers?",
-          "a": "Dener's E-FTL and FTL are the premium machines — built in Turkey with 1 G servo chucks and parts stocked in Canada — and the FTL goes to Ø25.2″. Senfeng's value line covers Ø0.5 to 25″ with three- and four-chuck machines and an H-beam line. The ULT is NovoTech's own tube laser for the sizes most shops cut, Ø0.4 to 14.2″, at the lowest price of the three; every model of the three lines is in one table on the tube laser cutters overview."},
+          "a": "Dener's E-FTL and FTL are the premium machines — built in Turkey with 1 G servo chucks and parts stocked in Canada — and the FTL goes to Ø25.2″. Senfeng's value line covers Ø0.5 to 25″ with three- and four-chuck machines and an H-beam line. The ULT is NovoTech's own tube laser for the sizes most shops cut, Ø0.4 to 14.2″, at the lowest price of the three; the tube laser cutters overview compares the series of the three lines side by side."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about the NovoTech tube lasers",
     related_pages=[{"href": "laser-cutting-machine.html", "label": "Sheet laser cutters"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"},
@@ -161,6 +161,25 @@ def write_brochure_specs():
         json.dump(spec, open(os.path.join(d, name + ".json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 
+CUT_KEYS = ("cutout", "orig", "cut_size", "cut_spec", "upscale", "sizes")
+
+
+def keep_cut(old, new):
+    """the cut-out work done on a photo in image_map.json (a cut-out PNG as its source, the cutout engine, sizes — Nov 1 2026, the
+    'no white boxes' pass) survives a re-registration of the value-laser photos"""
+    if not old:
+        return new
+    out = dict(new)
+    if "/cutouts/" in old.get("src", ""):
+        out["src"] = old["src"]
+    for k in CUT_KEYS:
+        if k in old:
+            out[k] = old[k]
+        elif k in out and "/cutouts/" in old.get("src", ""):
+            del out[k]
+    return out
+
+
 def register_images():
     imap_path = os.path.join(ROOT, "tools", "image_map.json")
     imap = json.load(open(imap_path, encoding="utf-8"))
@@ -170,8 +189,9 @@ def register_images():
         if not os.path.exists(os.path.join(PH.OUT, key + ext)):
             print("!! missing export for", key)
             continue
-        imap[key] = {"src": f"tools/src-images/value-laser/{key}{ext}", "alt": p["alt"], "section": "value-laser", "trim": ext == ".webp", "quality": 82,
-                     "cutout": False}
+        new = {"src": f"tools/src-images/value-laser/{key}{ext}", "alt": p["alt"], "section": "value-laser", "trim": ext == ".webp", "quality": 82,
+               "cutout": False}
+        imap[key] = keep_cut(imap.get(key), new)
         keys.append(key)
     extra = json.load(open(os.path.join(ROOT, "tools", "vl_laser_extra_images.json"), encoding="utf-8"))
     for key, entry in extra.items():          # the ADH photos of the ULT (Nov 1 2026) — they replace or add to the brochure crops
@@ -180,7 +200,7 @@ def register_images():
         if not os.path.exists(os.path.join(ROOT, entry["src"])):
             print("!! missing source for", key)
             continue
-        imap[key] = entry
+        imap[key] = keep_cut(imap.get(key), entry)
         if key not in keys:
             keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)

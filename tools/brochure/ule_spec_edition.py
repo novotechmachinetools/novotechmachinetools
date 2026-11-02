@@ -317,6 +317,22 @@ def book():
     cards = [card(i, t, checks(x), h=118, cls="svc") for i, t, x in svc]
     body = title("Service", "Service") + grid(cards[:3], 3, 14) + '<div style="height:8pt"></div>' + grid(cards[3:], 3, 14)
     b.page("Service", body, key="service")
+    # the ULE photos of the supplier's website, logos removed (the owner, Nov 1 2026: "add these photos to their PDF catalogue")
+    pics = [("vn-ule-machine-2026.webp", "The ULE: the enclosed cutting cabin, its viewing windows and the shuttle table at the end"),
+            ("vn-ule-exchange-2026.webp", "Exchange table — the second table runs out of the cabin, so the next sheet is loaded while the first is cut"),
+            ("vn-ule-loading-2026.webp", "Sheets laid on the outside exchange table, ready to go into the cabin"),
+            ("vn-ule-unloading-2026.webp", "Cut parts taken off the exchange table while the other table is in the cabin"),
+            ("vn-ule-slats-2026.webp", "Sheet on the replaceable support slats of the table"),
+            ("vn-ule-loader-2026.webp", "Automatic sheet loading beside an enclosed ULE (option)"),
+            ("vn-ule-gantry-2026.webp", "Gantry with the cutting head, the cable carrier and the bellows over the guides"),
+            ("vn-ule-frame-2026.webp", "Welded bed with the rails of the shuttle table"),
+            ("vn-ule-heads-2026.webp", "Cutting heads matched to the laser power"),
+            ("vn-ule-chillers-2026.webp", "Water chillers sized to the laser source"),
+            ("vn-ule-screen-2026.webp", "CNC touchscreen with the camera view of the table and the cutting program")]
+    for i, part in enumerate((pics[:6], pics[6:])):
+        cells = [D.fig(V + f, cap, h=150, fit="contain", px=1200) for f, cap in part]
+        b.page("Photos", title("Double table fiber laser cutting machine", "ULE in pictures" + (" (continued)" if i else ""))
+               + D.grid(cells, 2, 14), key="photos" if i == 0 else None)
     b.back("Fiber laser for your shop.", [V + "vn-ule-1.webp", V + "vn-ule-cutting.jpg", V + "vn-ule-console.jpg", V + "vn-ule-bed.jpg"])
     toc = [("Company profile", "profile"), ("Equipment", "equipment"), ("Mechanical bed · crossbeam · control system", "details1"),
            ("Cutting head · laser source · servo motor", "details2"), ("Gear, rack, linear guide · gearbox · automatic lubrication", "details3"),
@@ -324,7 +340,7 @@ def book():
            ("Specifications · configuration", "spec"), ("Cutting parameters — carbon steel, oxygen", "cs"),
            ("Cutting parameters — stainless steel, nitrogen", "ss"), ("Cutting parameters — aluminum, nitrogen", "al"),
            ("Cutting parameters — copper, nitrogen", "cu"), ("Conditions for on-site installation · consumables", "install"),
-           ("Quality control · delivery", "quality"), ("Service", "service")]
+           ("Quality control · delivery", "quality"), ("Service", "service"), ("ULE in pictures", "photos")]
     rows_ = "".join(f'<div><span>{t}</span><i></i><b>{b.num(k):02d}</b></div>' for t, k in toc)
     body = (title("Full technical specification · ULE-3015 · 6,000 W", "Contents")
             + f'<div class="toc" style="columns:1">{rows_}</div>'

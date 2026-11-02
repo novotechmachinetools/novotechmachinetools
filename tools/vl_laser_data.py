@@ -134,6 +134,7 @@ T_ULE_S = table("ULE shuttle-table fiber lasers · 3 – 20 kW", "4 models · 10
     ("Positioning accuracy", acc_m(0.03)),
     ("Repeat accuracy", acc_m(0.02)),
     ("Z travel", mm_in(300)),
+    ("Beam clearance", "upper / lower table", "3.9 / 9.8″ (100 / 250 mm)"),
     ("Max. table load", "both tables, single chain", [weight(r[3]) for r in ULE_S]),
     ("Max. table load, twin chain", "both tables", [weight(2 * r[3]) for r in ULE_S]),
     ("Table exchange", "15 s"),
@@ -149,6 +150,7 @@ T_ULE_L = table("ULE large-format shuttle-table fiber lasers · 6 – 40 kW", "3
     ("Positioning accuracy", [r[3] for r in ULE_L]),
     ("Repeat accuracy", [r[4] for r in ULE_L]),
     ("Z travel", mm_in(420)),
+    ("Beam clearance", "upper / lower table", "4.7 / 14.2″ (120 / 360 mm)"),
     ("Max. table load", "both tables, single chain", [weight(r[5]) for r in ULE_L]),
     ("Max. table load, twin chain", "both tables", [weight(2 * r[5]) for r in ULE_L]),
     ("Table exchange", "15 s"),
@@ -277,10 +279,13 @@ SHEET_FAMILIES = [
                  "16.5″ of Z for heavy plate. 459 ft/min and 1.7 G, ±0.03 mm/m positioning, a bed flat to 0.05 mm per square metre "
                  "and a twin-chain exchange that doubles the table load. Ready for a sheet storage tower and gantry loading.",
          features=["3 – 40 kW; 10 × 5 to 41 × 8.5 ft; shuttle tables, 15 s swap; 459 ft/min, 1.7 G; Z travel 11.8 – 16.5″"] + LZ_STD,
-         optional=LZ_OPT,
-         images=["vn-ule-1", "vn-ule-cutting", "vn-ule-console", "vn-ule-bed", "vn-ule-frame", "vn-ule-head", "vn-ule-source", "vn-ule-servo",
-                 "vn-ule-rack", "vn-ule-drive", "vn-ule-lube", "vn-ule-cabinet", "vn-ule-aircon", "vn-ule-chiller", "vn-ule-nozzles",
-                 "vn-fms-tower", "vn-fms-gantry", "vn-precitec", "vn-ule-ipg", "vn-ule-albeam"],
+         optional=LZ_OPT[:-1] + ["MES connection to the shop's production system", LZ_OPT[-1]],   # MES: the supplier's ULE page, Nov 1 2026
+         # ADH's ULE photos added (the owner, Nov 1 2026): the machine, the exchange table, loading and unloading, the gantry, heads,
+         # chillers, the CNC screen, the slats and the automatic loader
+         images=["vn-ule-1", "vn-ule-exchange", "vn-ule-cutting", "vn-ule-machine", "vn-ule-loading", "vn-ule-unloading", "vn-ule-console",
+                 "vn-ule-screen", "vn-ule-bed", "vn-ule-frame", "vn-ule-slats", "vn-ule-gantry", "vn-ule-head", "vn-ule-heads", "vn-ule-source",
+                 "vn-ule-servo", "vn-ule-rack", "vn-ule-drive", "vn-ule-lube", "vn-ule-cabinet", "vn-ule-aircon", "vn-ule-chiller",
+                 "vn-ule-chillers", "vn-ule-nozzles", "vn-ule-loader", "vn-fms-tower", "vn-fms-gantry", "vn-precitec", "vn-ule-ipg", "vn-ule-albeam"],
          videos=[],
          # the ULE 3015 quotation sheet in NovoTech format (tools/brochure/ule_spec_edition.py) — the owner, Nov 1 2026
          spec_pdf=dict(file="files/NovoTech-ULE-Fiber-Laser-Technical-Specification-2026.pdf", label="Download the ULE full technical specification",

@@ -1,12 +1,11 @@
 {
  "_about": "ULT photos from ADH's website (the owner, Nov 1 2026): better copies of vn-ult-1 / -chuck / -head / -console and 17 more detail photos. tools/vl_laser_pages.py registers these after tools/vl_laser_photos.py's, so they win.",
  "vn-ult-1": {
-  "src": "tools/src-images/value-laser/vn-ult-hero-2026.webp",
+  "src": "tools/src-images/cutouts/vn-ult-1-cut.png",
   "alt": "NovoTech ULT tube laser cutting machine — the cutting cell, two pneumatic chucks and the tube supports along the bed",
   "section": "value-laser",
   "trim": true,
-  "quality": 82,
-  "cutout": false
+  "quality": 82
  },
  "vn-ult-console": {
   "src": "tools/src-images/value-laser/vn-ult-console-2026.webp",
@@ -167,5 +166,83 @@
   "trim": false,
   "quality": 82,
   "cutout": false
+ },
+ "_about_ule": "ULE photos from ADH's website (the owner, Nov 1 2026: 'take the photos and add them to the gallery'): the supplier's logos inpainted out (LaMa) on the machine render, the loading photo, the loader photo and the control screen; vn-ule-frame is the same bed render at a higher resolution.",
+ "vn-ule-machine": {
+  "src": "tools/src-images/value-laser/vn-ule-machine-2026.webp",
+  "alt": "ULE fiber laser cutting machine — the enclosed cutting cabin with its viewing windows and the shuttle table at the end",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-exchange": {
+  "src": "tools/src-images/value-laser/vn-ule-exchange-2026.webp",
+  "alt": "ULE exchange table: the second table runs out of the cabin on its rails, so the next sheet is loaded while the first is cut",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-frame": {
+  "src": "tools/src-images/value-laser/vn-ule-frame-2026.webp",
+  "alt": "Welded bed of the ULE — precision-welded and heat-treated, flat to 0.05 mm per square metre",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-gantry": {
+  "src": "tools/src-images/value-laser/vn-ule-gantry-2026.webp",
+  "alt": "ULE gantry with the cutting head, the cable carrier and the bellows over the motion guides",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-heads": {
+  "src": "tools/src-images/value-laser/vn-ule-heads-2026.webp",
+  "alt": "Cutting heads offered on the ULE — autofocus heads matched to the laser power",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-chillers": {
+  "src": "tools/src-images/value-laser/vn-ule-chillers-2026.webp",
+  "alt": "Water chillers for the ULE, sized to the laser source",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-screen": {
+  "src": "tools/src-images/value-laser/vn-ule-screen-2026.webp",
+  "alt": "ULE CNC console: the touchscreen with the camera view of the table and the cutting program",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-loader": {
+  "src": "tools/src-images/value-laser/vn-ule-loader-2026.webp",
+  "alt": "Automatic sheet loading beside an enclosed ULE — the vacuum loader lifts each sheet onto the roller table",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-loading": {
+  "src": "tools/src-images/value-laser/vn-ule-loading-2026.webp",
+  "alt": "Sheets laid on the outside exchange table of a ULE, ready to go into the cabin",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-unloading": {
+  "src": "tools/src-images/value-laser/vn-ule-unloading-2026.webp",
+  "alt": "Taking the cut parts off the exchange table while the other table is in the cabin",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
+ },
+ "vn-ule-slats": {
+  "src": "tools/src-images/value-laser/vn-ule-slats-2026.webp",
+  "alt": "Sheet on the replaceable support slats of the ULE table",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82
  }
 }

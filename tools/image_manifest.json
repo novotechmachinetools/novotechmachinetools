@@ -75220,29 +75220,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 534,
+    "h": 612,
     "file": "img/value-laser/vn-ule-frame-1200.webp",
-    "bytes": 56286
+    "bytes": 144778
    },
    {
     "w": 800,
-    "h": 356,
+    "h": 408,
     "file": "img/value-laser/vn-ule-frame-800.webp",
-    "bytes": 36492
+    "bytes": 78420
    },
    {
     "w": 480,
-    "h": 214,
+    "h": 245,
     "file": "img/value-laser/vn-ule-frame-480.webp",
-    "bytes": 20048
+    "bytes": 36068
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 71,
+   "h": 82,
    "file": "img/value-laser/vn-ule-frame-thumb.webp",
-   "bytes": 4530
+   "bytes": 7286
   }
  },
  "vn-ule-servo": {
@@ -115746,6 +115746,301 @@
    "h": 160,
    "file": "img/site/pdf-novotech-senfeng-sf6012plus-tube-laser-technical-specification-2026-thumb.webp",
    "bytes": 3594
+  }
+ },
+ "vn-ule-machine": {
+  "alt": "ULE fiber laser cutting machine \u2014 the enclosed cutting cabin with its viewing windows and the shuttle table at the end",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 496,
+    "file": "img/value-laser/vn-ule-machine-1200.webp",
+    "bytes": 52056
+   },
+   {
+    "w": 800,
+    "h": 331,
+    "file": "img/value-laser/vn-ule-machine-800.webp",
+    "bytes": 30676
+   },
+   {
+    "w": 480,
+    "h": 198,
+    "file": "img/value-laser/vn-ule-machine-480.webp",
+    "bytes": 15990
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 66,
+   "file": "img/value-laser/vn-ule-machine-thumb.webp",
+   "bytes": 4016
+  },
+  "cut": "birefnet"
+ },
+ "vn-ule-exchange": {
+  "alt": "ULE exchange table: the second table runs out of the cabin on its rails, so the next sheet is loaded while the first is cut",
+  "variants": [
+   {
+    "w": 973,
+    "h": 880,
+    "file": "img/value-laser/vn-ule-exchange-973.webp",
+    "bytes": 157262
+   },
+   {
+    "w": 800,
+    "h": 724,
+    "file": "img/value-laser/vn-ule-exchange-800.webp",
+    "bytes": 118984
+   },
+   {
+    "w": 480,
+    "h": 434,
+    "file": "img/value-laser/vn-ule-exchange-480.webp",
+    "bytes": 48906
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 145,
+   "file": "img/value-laser/vn-ule-exchange-thumb.webp",
+   "bytes": 8200
+  }
+ },
+ "vn-ule-gantry": {
+  "alt": "ULE gantry with the cutting head, the cable carrier and the bellows over the motion guides",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 678,
+    "file": "img/value-laser/vn-ule-gantry-1200.webp",
+    "bytes": 86076
+   },
+   {
+    "w": 800,
+    "h": 452,
+    "file": "img/value-laser/vn-ule-gantry-800.webp",
+    "bytes": 44862
+   },
+   {
+    "w": 480,
+    "h": 271,
+    "file": "img/value-laser/vn-ule-gantry-480.webp",
+    "bytes": 22074
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/value-laser/vn-ule-gantry-thumb.webp",
+   "bytes": 4740
+  }
+ },
+ "vn-ule-heads": {
+  "alt": "Cutting heads offered on the ULE \u2014 autofocus heads matched to the laser power",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 585,
+    "file": "img/value-laser/vn-ule-heads-1200.webp",
+    "bytes": 175854
+   },
+   {
+    "w": 800,
+    "h": 390,
+    "file": "img/value-laser/vn-ule-heads-800.webp",
+    "bytes": 93344
+   },
+   {
+    "w": 480,
+    "h": 234,
+    "file": "img/value-laser/vn-ule-heads-480.webp",
+    "bytes": 43664
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 78,
+   "file": "img/value-laser/vn-ule-heads-thumb.webp",
+   "bytes": 9470
+  }
+ },
+ "vn-ule-chillers": {
+  "alt": "Water chillers for the ULE, sized to the laser source",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 535,
+    "file": "img/value-laser/vn-ule-chillers-1200.webp",
+    "bytes": 144750
+   },
+   {
+    "w": 800,
+    "h": 357,
+    "file": "img/value-laser/vn-ule-chillers-800.webp",
+    "bytes": 75324
+   },
+   {
+    "w": 480,
+    "h": 214,
+    "file": "img/value-laser/vn-ule-chillers-480.webp",
+    "bytes": 33996
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 71,
+   "file": "img/value-laser/vn-ule-chillers-thumb.webp",
+   "bytes": 6774
+  }
+ },
+ "vn-ule-screen": {
+  "alt": "ULE CNC console: the touchscreen with the camera view of the table and the cutting program",
+  "variants": [
+   {
+    "w": 714,
+    "h": 875,
+    "file": "img/value-laser/vn-ule-screen-714.webp",
+    "bytes": 96924
+   },
+   {
+    "w": 480,
+    "h": 588,
+    "file": "img/value-laser/vn-ule-screen-480.webp",
+    "bytes": 52604
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 131,
+   "h": 160,
+   "file": "img/value-laser/vn-ule-screen-thumb.webp",
+   "bytes": 6720
+  }
+ },
+ "vn-ule-loader": {
+  "alt": "Automatic sheet loading beside an enclosed ULE \u2014 the vacuum loader lifts each sheet onto the roller table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-laser/vn-ule-loader-1200.webp",
+    "bytes": 116316
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-laser/vn-ule-loader-800.webp",
+    "bytes": 65440
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-laser/vn-ule-loader-480.webp",
+    "bytes": 29832
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-laser/vn-ule-loader-thumb.webp",
+   "bytes": 4610
+  }
+ },
+ "vn-ule-loading": {
+  "alt": "Sheets laid on the outside exchange table of a ULE, ready to go into the cabin",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-laser/vn-ule-loading-1200.webp",
+    "bytes": 116092
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-laser/vn-ule-loading-800.webp",
+    "bytes": 62172
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-laser/vn-ule-loading-480.webp",
+    "bytes": 26334
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-laser/vn-ule-loading-thumb.webp",
+   "bytes": 3760
+  }
+ },
+ "vn-ule-unloading": {
+  "alt": "Taking the cut parts off the exchange table while the other table is in the cabin",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 750,
+    "file": "img/value-laser/vn-ule-unloading-1200.webp",
+    "bytes": 128104
+   },
+   {
+    "w": 800,
+    "h": 500,
+    "file": "img/value-laser/vn-ule-unloading-800.webp",
+    "bytes": 70250
+   },
+   {
+    "w": 480,
+    "h": 300,
+    "file": "img/value-laser/vn-ule-unloading-480.webp",
+    "bytes": 31908
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 100,
+   "file": "img/value-laser/vn-ule-unloading-thumb.webp",
+   "bytes": 4926
+  }
+ },
+ "vn-ule-slats": {
+  "alt": "Sheet on the replaceable support slats of the ULE table",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 799,
+    "file": "img/value-laser/vn-ule-slats-1200.webp",
+    "bytes": 142612
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/value-laser/vn-ule-slats-800.webp",
+    "bytes": 75596
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/value-laser/vn-ule-slats-480.webp",
+    "bytes": 35394
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/value-laser/vn-ule-slats-thumb.webp",
+   "bytes": 5854
   }
  }
 }

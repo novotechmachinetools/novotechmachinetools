@@ -8203,15 +8203,24 @@
     "Camera nesting over the table for remnants",
     "Sheet storage tower and gantry loading / unloading (flexible manufacturing system)",
     "Dust collector, air compressor and nitrogen generator sized to the machine",
+    "MES connection to the shop's production system",
     "Custom voltage: 208, 240 or 480 V 3-phase"
    ],
    "images": [
     "vn-ule-1",
+    "vn-ule-exchange",
     "vn-ule-cutting",
+    "vn-ule-machine",
+    "vn-ule-loading",
+    "vn-ule-unloading",
     "vn-ule-console",
+    "vn-ule-screen",
     "vn-ule-bed",
     "vn-ule-frame",
+    "vn-ule-slats",
+    "vn-ule-gantry",
     "vn-ule-head",
+    "vn-ule-heads",
     "vn-ule-source",
     "vn-ule-servo",
     "vn-ule-rack",
@@ -8220,7 +8229,9 @@
     "vn-ule-cabinet",
     "vn-ule-aircon",
     "vn-ule-chiller",
+    "vn-ule-chillers",
     "vn-ule-nozzles",
+    "vn-ule-loader",
     "vn-fms-tower",
     "vn-fms-gantry",
     "vn-precitec",
@@ -8332,6 +8343,17 @@
          "11.8″ (300 mm)",
          "11.8″ (300 mm)",
          "11.8″ (300 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Beam clearance",
+        "sub": "upper / lower table",
+        "cells": [
+         "3.9 / 9.8″ (100 / 250 mm)",
+         "3.9 / 9.8″ (100 / 250 mm)",
+         "3.9 / 9.8″ (100 / 250 mm)",
+         "3.9 / 9.8″ (100 / 250 mm)"
         ],
         "key": false
        },
@@ -8457,6 +8479,16 @@
          "16.5″ (420 mm)",
          "16.5″ (420 mm)",
          "16.5″ (420 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Beam clearance",
+        "sub": "upper / lower table",
+        "cells": [
+         "4.7 / 14.2″ (120 / 360 mm)",
+         "4.7 / 14.2″ (120 / 360 mm)",
+         "4.7 / 14.2″ (120 / 360 mm)"
         ],
         "key": false
        },
