@@ -152,7 +152,7 @@ BROCHURES = [
     ("laser", "NovoTech-Senfeng-SF6024NT-Tube-Laser-Technical-Specification-2026.pdf", "Senfeng SF6024NT three-chuck zero-tail tube laser, 1.5 – 6 kW — full technical specification"),
     ("laser", "NovoTech-Senfeng-SF6012PLUS-Tube-Laser-Technical-Specification-2026.pdf", "Senfeng SF6012PLUS high-speed tube laser, 3 – 6 kW — full technical specification"),
     ("laser", "NovoTech-Senfeng-Laser-Welding-Cladding-2026.pdf", "Senfeng laser welding and cladding machines"),
-    ("cutting", "NovoTech-Dener-Hydraulic-Shears-2026.pdf", "Dener hydraulic guillotine shears"),
+    ("cutting", "NovoTech-Dener-Hydraulic-Shears-2026.pdf", "Dener swing beam and guillotine shears"),
     ("cutting", "NovoTech-Guillotine-Shears-2026.pdf", "NovoTech premium-line mechanical guillotine shears"),
     ("cutting", "NovoTech-Hydraulic-Shearing-Machines-2026.pdf", "NovoTech value-line hydraulic shears"),
     ("cutting", "NovoTech-Sheet-Metal-Shears-2026.pdf", "NovoTech value-line sheet metal shears"),

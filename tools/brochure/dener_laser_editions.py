@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""NovoTech editions of Dener's fiber laser documents — every page, picture and detail of the original, in NovoTech's catalogue
+"""NovoTech editions of Dener's laser and shear documents — every page, picture and detail of the original, in NovoTech's catalogue
 format, with the units in imperial (metric in brackets).  The owner, Nov 1 2026: "change nothing, delete nothing, only the units
 become imperial — every PDF converted to the NovoTech format is converted completely".
 
-    python3 tools/brochure/dener_laser_editions.py [gfl] [smart] [spec] [tube] [--html]
+    python3 tools/brochure/dener_laser_editions.py [gfl] [smart] [spec] [tube] [shear] [--html]
 
   gfl    Dener's GFL catalogue (GFL_EN, Oct 2026)           → src/files/NovoTech-Dener-GFL-Fiber-Laser-2026.pdf
   smart  Dener's Smart catalogue (SMART_EN, Oct 2026)       → src/files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf
+  shear  Dener's shearing catalogue (SHEARING_EN, 2026): DAS CNC guillotine and BSY / BS swing beam shears
+                                                            → src/files/NovoTech-Dener-Hydraulic-Shears-2026.pdf
   tube   Dener's tube catalogue (TUBE_EN) with the extra details of the Turkish one (dener_borulazer — capacities by chuck,
          the model list, the BOCI head, photos; their weights, powers and accelerations differ from TUBE_EN's, which are kept)
                                                             → src/files/NovoTech-Dener-Tube-Lasers-2026.pdf
@@ -1656,7 +1658,216 @@ def book_tube():
     return b
 
 
-BOOKS = {"gfl": book_gfl, "smart": book_smart, "spec": book_spec, "tube": book_tube}
+# ----------------------------------------------------------------------------------------------------- shearing catalogue
+ESA630 = ["10″ LCD touch screen", "Back gauge control", "Blade gap control", "Cutting angle control", "Programmable up to 100 steps",
+          "Positioning correction", "Step repetition", "Inch / mm selection", "2 USB (2.0) ports · 128 MB silicon disk"]
+HT071 = ["LCD display", "Back gauge control", "Actual position visualization", "Stock counter", "Program memory up to 99 parts",
+         "Programmable up to 20 steps", "User-friendly one-touch programming", "Retract", "Semi-automatic and automatic function",
+         "Stroke limitation"]
+SH_STD = [("das-std-slider", "bs-std-slider", "Sheet slider"),
+          ("das-std-backgauge", "bs-std-backgauge", "Motorized back gauge — ±0.004″ (±0.1 mm) accuracy"),
+          ("das-std-frame", "bs-std-frame", "Front protection frame"), ("das-std-holddown", "bs-std-holddown", "Hold down pads")]
+SH_OPT = [("arms", "Longer front support arms 6.6 ft / 9.8 ft (2 m / 3 m)"), ("blade", "Spare blade"), ("cooler", "Hydraulic oil cooler system"),
+          ("support", "Sheet support system"), ("laserline", "Laser cutting line"), ("curtain", "Light curtain")]
+SH_NOTE = ("*Cutting thicknesses may vary due to factors such as material quality, operator settings, and cutting speed.")
+
+
+def book_shear():
+    """Dener's SHEARING_EN catalogue (2026): DAS CNC guillotine shears and BSY / BS swing beam shears, every page, picture and figure"""
+    from dener_data import DAS, BS, cap, hp, gal, weight, feet
+
+    def two(main, metric):
+        return f"{main}<br><small>({metric})</small>"
+
+    def inch_(mm):
+        return two(f"{mm / 25.4:,.1f}″", f"{mm:,} mm")
+
+    def length_(mm):
+        return two(f"{feet(mm)} · {mm / 25.4:,.1f}″", f"{mm:,} mm")
+
+    def cap_(mm):
+        c = cap(mm)
+        return two(c.split(" (")[0], f"{mm} mm")
+
+    def unit2(s):
+        a, b_ = s.split(" (", 1)
+        return two(a, b_.rstrip(")"))
+
+    def strip(img, cap_txt):
+        return (f'<figure class="fig"><div class="im" style="height:88pt"><img src="{im("shear/" + img + ".png", 900)}" '
+                f'style="object-fit:cover"></div><div class="shl">{cap_txt}</div></figure>')
+
+    def pcard(img, label, h):
+        return (f'<figure class="fig"><div class="shl">{label}</div><div class="im" style="height:{h}pt"><img src="{im("shear/" + img + ".png", 900)}" '
+                f'style="object-fit:cover"></div></figure>')
+
+    def panel(img, top_html, overlay_html, pos="50% 55%"):
+        return ('<div class="photo-panel" style="height:654pt;margin-top:-4pt"><img src="%s" style="object-position:%s">'
+                '<div style="position:absolute;left:0;top:0;right:0;height:52%%;background:linear-gradient(180deg,rgba(24,25,27,.86) 0%%,'
+                'rgba(24,25,27,.6) 45%%,rgba(24,25,27,0) 100%%)"></div>'
+                '<div style="position:absolute;left:18pt;top:16pt;right:18pt">%s</div>%s</div>' % (im("shear/" + img + ".png", 1600), pos, top_html, overlay_html))
+
+    def head(t1, t2):
+        return (f'<div style="font:700 30pt/1.05 Oswald;color:#fff;text-transform:uppercase">{t1}</div>'
+                f'<div style="font:700 30pt/1.05 Oswald;color:{ORANGE};text-transform:uppercase">{t2}</div>'
+                f'<div style="width:60pt;height:3.7pt;background:{ORANGE};margin-top:8pt"></div>')
+
+    b = Book("shear", "Swing beam &amp; guillotine shears", "Dener DAS CNC guillotine and BSY / BS swing beam hydraulic shears",
+             os.path.join(ROOT, "src", "files", "NovoTech-Dener-Hydraulic-Shears-2026.pdf"))
+    b.title = "Dener Swing Beam & Guillotine Shears — NovoTech Machine Tools"
+    b.subject = "Dener DAS CNC guillotine and BSY / BS swing beam shear catalogue, imperial edition"
+    b.cover("Dener · Hydraulic shears", "“The future is here” · sold &amp; serviced in Canada by NovoTech", "Swing beam &amp;",
+            "Guillotine shearing", "Precision cutting · perfect results · high productivity", "shear/cover.png",
+            [("Since 1974", "Manufacturing experience"), ("1/4 – 3/4″", "Mild steel capacity"), ("6.8 – 20 ft", "Cutting length"),
+             ("Canada", "Parts &amp; technical support")], hero_h=300, minis=("shear/bs-machine.png", "shear/esa630.png"))
+    about_page(b)
+    campus_page(b)
+    css = ('<style>.shl{font:600 8.4pt/1.2 Oswald;color:#fff;background:%s;text-transform:uppercase;letter-spacing:.04em;padding:4pt 7pt;'
+           'border-left:3.7pt solid %s}.wck li{color:#fff;font:500 12pt/1.35 Barlow;margin-bottom:5pt}'
+           '.mt.sh tbody th{width:122pt}.mt.sh th,.mt.sh td{padding:2.6pt 3pt}</style>' % (CHAR, ORANGE))
+
+    # catalogue p3 — DAS series CNC guillotine shear
+    body = (css + title("Dener · CNC guillotine shear", "DAS series CNC guillotine shear")
+            + row(fig("shear/das-machine.png", "DAS CNC guillotine shear with the ESA 630 control on its arm", h=300, px=1400),
+                  fig("shear/das-pedal.png", "Foot pedal", h=150, px=400), cols="1fr 64pt", gap=8, align="end")
+            + P("Dener CNC guillotine shears provide rock-solid mechanics, hydraulics, an accurate ball-screw back gauge and a user-friendly "
+                "CNC controller — highly productive shearing machines. Dener shears start from 1/4″ (6 mm) up to 3/4″ (20 mm) thickness and "
+                "cutting lengths from 10 ft (3 m) up to 20 ft (6 m) as standard, and higher-capacity machines are available on special demand.",
+                "Dener guillotine shears have a strong welded steel construction suitable for long operating times. The frame, cutting beam "
+                "and back gauge are designed for the highest rigidity and resistance to torsion and deformation. With this strong design, "
+                "customers get the maximum cutting quality.",
+                "With the easy-to-use CNC controller the operator enters the thickness and the type of the material, and the controller "
+                "automatically adjusts the cutting angle and the blade gap."))
+    b.page("DAS series", body, toc="DAS Series — CNC Guillotine Shear")
+    # catalogue p4 — photo panel
+    body = panel("das-blade", head("DAS series", "CNC guillotine shear"),
+                 '<div class="overlay"><p style="margin:0;font:600 15pt/1.2 Oswald;text-transform:uppercase">Optimal solution '
+                 f'<span style="color:{ORANGE}">for shearing.</span></p></div>', pos="50% 40%")
+    b.page("DAS series", body)
+    # catalogue p5 — DAS standard equipment
+    esa = ('<div class="box" style="padding:10pt 12pt">' + h3("ESA 630 controller") + checks(ESA630, cls="sm") + "</div>")
+    body = (css + title("DAS series · CNC guillotine shear", "Standard equipment")
+            + row(esa, fig("shear/esa630.png", "ESA 630 controller", h=170, px=600), cols="1.15fr 1fr", gap=16, align="center")
+            + '<div style="height:8pt"></div>'
+            + row(fig("shear/pedal.png", h=96, px=400), h3("Foot pedal") + P("Remote foot control pedal with emergency stop button.", cls="sm"),
+                  cols="70pt 1fr", gap=12, align="center")
+            + '<div style="height:10pt"></div>'
+            + grid([strip(d, t) for d, _, t in SH_STD], 2, 12))
+    b.page("Standard equipment", body, toc="DAS Series — Standard Equipment")
+    # catalogue p6 — DAS optional equipment
+    cards = [pcard(f"das-opt-{k}", t, 165) for k, t in SH_OPT]
+    body = css + title("DAS series · CNC guillotine shear", "Optional equipment") + grid(cards, 2, 14)
+    b.page("Optional equipment", body, toc="DAS Series — Optional Equipment")
+    # catalogue p7 — advantages
+    adv = ["Low maintenance cost", "Automatic blade gap adjustment", "Faster working system", "New design body structure and working system"]
+    body = css + panel("das-advantages", head("Advantages", "") + '<div class="wck" style="margin-top:12pt">' + checks(adv) + "</div>",
+                       "", pos="50% 70%")
+    b.page("Advantages", body, toc="DAS Series — Advantages")
+    # catalogue p8 — CE with photocell
+    body = panel("das-ce", head("CE confirmation", "with photocell system"), "", pos="50% 50%")
+    b.page("CE · photocell", body, toc="DAS Series — CE Confirmation with Photocell")
+
+    # catalogue p9-10 — DAS technical specifications, 13 models on two pages
+    def das_rows(ms):
+        return [("Cutting length", "", [length_(m[1]) for m in ms]),
+                ("Cutting capacity — mild steel<br><small>60,000 psi · 42 kg/mm²</small>", "", [cap_(m[2]) for m in ms]),
+                ("Cutting capacity — stainless steel<br><small>100,000 psi · 70 kg/mm²</small>", "", [cap_(m[3]) for m in ms]),
+                ("Cutting capacity — aluminum<br><small>28,400 psi · 20 kg/mm²</small>", "", [cap_(m[4]) for m in ms]),
+                ("Cutting angle", "", [m[5] for m in ms]),
+                ("Number of hold-down cylinders", "", [str(m[6]) for m in ms]),
+                ("Main motor", "", [unit2(hp(m[7])) for m in ms]),
+                ("Cuts per minute (0.5 – 3°)", "", [m[8] for m in ms]),
+                ("Oil tank", "", [unit2(gal(m[9])) for m in ms]),
+                ("Length L", "", [inch_(m[10]) for m in ms]),
+                ("Throat depth E", "", [inch_(m[11]) for m in ms]),
+                ("Width without front support B", "", [inch_(m[12]) for m in ms]),
+                ("Width W", "", [inch_(m[13]) for m in ms]),
+                ("Height H", "", [inch_(m[14]) for m in ms]),
+                ("Weight", "", [unit2(weight(m[15])) for m in ms])]
+    note = (P(SH_NOTE, cls="note")
+            + P("Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase. CSA-approved electrical panel.", cls="note"))
+    for i, ms in enumerate((DAS[:7], DAS[7:])):
+        drw = ""
+        if i == 0:
+            drw = ('<div style="margin-top:8pt">' + row(fig("shear/das-drawing-front.png", "Front view — length L, height H", h=84, px=900),
+                                                                  fig("shear/das-drawing-side.png", "Side view — width W, B (without front support), throat depth E", h=84, px=700),
+                                                                  cols="1.35fr 1fr", gap=14) + "</div>")
+        body = (css + title("DAS series CNC guillotine shear", f"Technical specifications · {i + 1} of 2")
+                + mtable([m[0].split(" ")[1] for m in ms], das_rows(ms), corner="DAS", cls="tight sh") + drw + note + included())
+        b.page("Technical specifications", body, toc="DAS Series — Technical Specifications" if i == 0 else None)
+
+    # catalogue p11 — BS series swing beam shear
+    body = (title("Dener · swing beam shear", "BS series swing beam shear")
+            + fig("shear/bs-machine.png", "BS swing beam shear", h=300, px=1600)
+            + P("Easy, accurate, rock-solid welded steel construction — a proven design that thousands of customers across the world have "
+                "come to rely on.",
+                "Dener swing beam shears start from 5/32″ (4 mm) up to 5/8″ (16 mm) thickness and cutting lengths from 6.6 ft (2 m) up to "
+                "20 ft (6 m) as standard, and higher-capacity machines are available on special demand.",
+                "Main features of the swing beam shears are: NC controller for the back gauge, single-point manual blade gap adjustment, a "
+                "39.4″ (1,000 mm) motorized ball-screw back gauge, cutting length adjustment by timer, a 3.3 ft (1 m) flip-up front guard, "
+                "sheet support arms and squaring support, a sheet slider table and a back slider."))
+    b.page("BS series", body, toc="BS Series — Swing Beam Shear")
+    # catalogue p12 — NC controller HT 071, foot pedal, front arms
+    body = (title("BS series · swing beam shear", "NC controller HT 071")
+            + row(P("The HT 071 is a very compact, simply programmable single-axis controller for swing beam shears. It has back gauge "
+                    "control, retract, a stroke counter and a program memory of up to 99 programs with 20 steps.",
+                    "Back gauge axis control is two-speed AC control. Referencing is not necessary — the controller always remembers the "
+                    "last position. The back gauge can be moved manually with push buttons at 2 different speeds. A total working hours "
+                    "and total cut counter is also standard with the controller.", cls="sm")
+                  + h2("HT 071 featuring") + checks(HT071, cols=2, cls="sm"),
+                  fig("shear/ht071.png", "HT 071 NC controller", h=200, px=500), cols="1fr 120pt", gap=16, align="start")
+            + fig("shear/bs-pedal-machine.png", "BS swing beam shear with the foot pedal", h=200, px=1400)
+            + row(row(fig("shear/bs-pedal.png", h=80, px=300), h3("Foot pedal") + P("Remote foot control pedal with emergency stop button.", cls="sm"),
+                      cols="44pt 1fr", gap=10, align="center"),
+                  h3("Front arms") + checks(["Table equipped with sheet slider balls", "Operations square arm with rear supporting nail in T-slot",
+                                            "Front support arms with T-slots"], cls="sm"), gap=18, align="start"))
+    b.page("NC controller", body, toc="BS Series — NC Controller HT 071")
+    # catalogue p13 + the photo of p15 — BS standard equipment
+    body = (css + title("BS series · swing beam shear", "Standard equipment") + grid([strip(s, t) for _, s, t in SH_STD], 2, 12)
+            + '<div class="photo-panel" style="height:352pt;margin-top:14pt"><img src="%s" style="object-position:50%% 66%%">'
+              '<div class="overlay"><p style="margin:0"><b>BS series</b> swing beam shear</p></div></div>' % im("shear/bs-hall.png", 1600))
+    b.page("Standard equipment", body, toc="BS Series — Standard Equipment")
+    # catalogue p14 — BS optional equipment
+    cards = [pcard(f"bs-opt-{k}", t, 148) for k, t in SH_OPT] + [pcard("bs-opt-blade-gap", "Motorized blade clearance adjustment via CNC control unit", 148)]
+    body = css + title("BS series · swing beam shear", "Optional equipment") + grid(cards, 3, 12)
+    b.page("Optional equipment", body, toc="BS Series — Optional Equipment")
+    # catalogue p16 — ESA 630 controller (standard) and the drawings
+    body = (title("BS series · swing beam shear", "ESA 630 controller (standard)")
+            + row('<div class="box" style="padding:10pt 12pt">' + checks(ESA630, cls="sm") + "</div>",
+                  fig("shear/esa630.png", "ESA 630 controller", h=160, px=600), cols="1.15fr 1fr", gap=16, align="center")
+            + h2("BS series", "drawings")
+            + fig("shear/bs-drawing-front.png", "Front view", h=170, px=1200)
+            + row(fig("shear/bs-drawing-side.png", "Side view", h=140, px=800), fig("shear/bs-drawing-top.png", "Top view", h=170, px=900),
+                  cols="1fr 1.2fr", gap=16, align="end"))
+    b.page("ESA 630 controller", body, toc="BS Series — ESA 630 Controller · Drawings")
+
+    # catalogue p17-18 — BSY-BS technical specifications, 11 models on two pages
+    def bs_rows(ms):
+        return [("Max. sheet thickness — mild steel<br><small>60,000 psi · 42 kg/mm²</small>", "", [cap_(m[1]) for m in ms]),
+                ("Max. sheet thickness — stainless steel<br><small>100,000 psi · 70 kg/mm²</small>", "", [cap_(m[2]) for m in ms]),
+                ("Max. sheet thickness — aluminum<br><small>28,400 psi · 20 kg/mm²</small>", "", [cap_(m[3]) for m in ms]),
+                ("Cutting length", "", [length_(m[4]) for m in ms]),
+                ("Strokes per minute", "", [str(m[5]) for m in ms]),
+                ("Swing beam angle", "", [f"{m[6]:g}°" for m in ms]),
+                ("Tank capacity", "", [unit2(gal(m[7])) for m in ms]),
+                ("Motor", "", [unit2(hp(m[8])) for m in ms]),
+                ("Length", "", [inch_(m[9]) for m in ms]),
+                ("Throat depth", "", [inch_(m[10]) for m in ms]),
+                ("Width without front support", "", [inch_(m[11]) for m in ms]),
+                ("Width", "", [inch_(m[12]) for m in ms]),
+                ("Height", "", [inch_(m[13]) for m in ms]),
+                ("Weight", "", [unit2(weight(m[14])) for m in ms])]
+    for i, ms in enumerate((BS[:5], BS[5:])):
+        body = (css + title("BSY-BS series swing beam shear", f"Technical specifications · {i + 1} of 2")
+                + mtable([m[0] for m in ms], bs_rows(ms), corner="BSY-BS", cls="tight sh") + note + included())
+        b.page("Technical specifications", body, toc="BSY-BS Series — Technical Specifications" if i == 0 else None)
+    range_page(b)
+    b.back("Shear for your shop.", ["shear/cover.png", "shear/bs-machine.png", "shear/das-advantages.png", "shear/bs-hall.png"])
+    fill_about(b)
+    return b
+
+
+BOOKS = {"gfl": book_gfl, "smart": book_smart, "spec": book_spec, "tube": book_tube, "shear": book_shear}
 
 
 def main():
