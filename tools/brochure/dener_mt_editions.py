@@ -6,6 +6,8 @@ delete nothing, only the units become imperial — every PDF converted to the No
     python3 tools/brochure/dener_mt_editions.py [lathe] [--html]
 
   lathe  TTC-TTH CNC Torna Tezgahı (R-2404-TR)            → src/files/NovoTech-Dener-CNC-Lathes-2026.pdf
+  mc     CNC Dikey İşleme Merkezi (TMC) and Çift Kolonlu İşleme Merkezi (TDC), R-2404-TR
+                                                            → src/files/NovoTech-Dener-Machining-Centres-2026.pdf
 
 Drawings, working ranges, tool interference and the power / torque charts are the catalogue's own, dimensioned in millimetres
 (a note on each page gives the conversion).  Left out, and why: Dener's addresses, phone numbers and QR code (NovoTech's contact
@@ -21,7 +23,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import dener_laser_editions as D   # noqa: E402
-from dener_laser_editions import Book, title, P, checks, h2, h3, fig, row, grid, im, included, ORANGE, OR2, CHAR  # noqa: E402
+from dener_laser_editions import Book, title, P, checks, h2, h3, fig, row, grid, im, included, stats, ORANGE, OR2, CHAR  # noqa: E402
 
 ROOT = D.ROOT
 
@@ -84,7 +86,7 @@ VOLT = "Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase. CSA-appr
 CSS = ("<style>.lt{font-size:7.3pt}.lt th,.lt td{padding:2.1pt 3.5pt;line-height:1.18}.lt tbody th{width:146pt;font-size:7.3pt}"
        ".lt tr.grp th{background:#e3e4e6;font:600 7.4pt Oswald;color:%s;text-transform:uppercase;letter-spacing:.07em;padding:3pt 5pt}"
        ".lt td small{font-size:6.4pt;white-space:nowrap}.lt tbody th small{display:block}.cap2{font:500 7.6pt Oswald;color:%s;text-transform:uppercase;letter-spacing:.05em}"
-       ".ovl{position:absolute;font:600 6.6pt/1 Barlow;color:%s;background:rgba(255,255,255,.92);padding:1pt 2pt;transform:translate(-50%%,-50%%);white-space:nowrap}"
+       ".ovl.la{transform:translate(0,-50%%)}.ovl{position:absolute;font:600 6.6pt/1 Barlow;color:%s;background:rgba(255,255,255,.92);padding:1pt 2pt;transform:translate(-50%%,-50%%);white-space:nowrap}"
        ".cd{background:#f4f4f5;border-left:3.7pt solid %s;padding:8pt 10pt}.cd p{margin:3pt 0 0}</style>"
        % (CHAR, CHAR, CHAR, ORANGE))
 
@@ -342,7 +344,289 @@ def book_lathe():
     return b
 
 
-BOOKS = {"lathe": book_lathe}
+# ----------------------------------------------------------------------------------------------------- machining centres
+TMC = ["TMC 850", "TMC 1000", "TMC 1200", "TMC 1300", "TMC 1600"]
+MC_FEATURES = ["Specially manufactured precision, backlash-free double-nut ball screws", "Fast, serial automatic tool changer",
+               "Precise, rigid direct-drive or belt-and-pulley driven spindles", "High-precision, economical linear motion",
+               "Stable travel on linear or friction guideways", "Above-standard positioning and repeatability accuracy",
+               "Stress-relieved Meehanite cast body", "Quiet, vibration-free, high cutting capability", "Fast service and spare parts support"]
+MC_STD = ["Mitsubishi M80A-8A (15″ touchscreen panel)", "Dialog programming (Navi-Mill)", "BT 40 / 10,000 rpm direct-drive spindle",
+          "BT 40 arm-type 24-tool ATC", "C3 class double-nut ball screws", "Ball or roller linear guides", "Fully enclosed cabin",
+          "Steel belt chip conveyor (with its bucket)", "Automatic lubrication system", "Spindle air blow system",
+          "Coolant through nozzles around the spindle", "Oil and water separator unit", "Rigid tapping", "In-cabin chip washing system",
+          "Electrical cabinet cooling system", "3-phase 380 / 200 V – 50 / 60 Hz external transformer",
+          "In-cabin lighting and alarm / warning lamps", "Front door safety switch", "Air and water gun", "Coolant system",
+          "Portable handwheel", "4th axis preparation", "Automatic power on / off", "Levelling bolts and plates", "Tool bag &amp; tools", "CE"]
+MC_OPT = ["FANUC 0i MF (15″ LCD colour screen panel)", "BT 40 / 12,000 rpm and BT 40 / 15,000 rpm direct-drive spindles",
+          "Through-tool coolant (435 psi, 30 bar)", "Air conditioner for the electrical cabinet", "CNC rotary table with the 4th axis",
+          "Tool measuring system", "Workpiece measuring system", "Automatic door"]
+
+
+def pm(v, per=300):
+    return two(f"±{num(v / 25.4, 5)}″ / {num(per / 25.4)}″", f"±{num(v, 3)} / {per} mm")
+
+
+def pump(k, bar):
+    return two(f"{num(k * 1.341, 2)} HP ({num(bar * 14.504, 0)} psi)", f"{num(k, 2)} kW ({num(bar)} bar)")
+
+
+def tmc_rows():
+    return [("Movements", None),
+            ("X-axis travel", [mm(v) for v in (850, 1020, 1200, 1300, 1600)]),
+            ("Y-axis travel", [mm(v) for v in (510, 510, 600, 700, 700)]),
+            ("Z-axis travel", [mm(v) for v in (560, 560, 600, 700, 700)]),
+            ("Ball screws X / Y", "C3"),
+            ("Distance from the column face to the spindle centre", [mm_pair(150, 710), mm_pair(150, 710), mm_pair(150, 750), mm_pair(130, 830), mm_pair(130, 830)]),
+            ("Guideway type", "Roller type"),
+            ("Guideway size X / Y / Z", [two(f"{num(a / 25.4, 2)} / {num(b / 25.4, 2)} / {num(c / 25.4, 2)}″", f"{a} / {b} / {c} mm")
+                                         for a, b, c in ((30, 35, 35), (30, 35, 35), (35, 45, 45), (35, 45, 45), (35, 45, 45))]),
+            ("Work table", None),
+            ("Table size (X direction)", [mm(v) for v in (1000, 1200, 1300, 1450, 1750)]),
+            ("Table size (Y direction)", [mm(v) for v in (500, 500, 600, 700, 700)]),
+            ("T-slot size", mm(18, 2)),
+            ("Number of T-slots", "5"),
+            ("T-slot spacing", [mm(v) for v in (100, 100, 100, 125, 125)]),
+            ("Table load capacity", [kg(v) for v in (500, 500, 1000, 1200, 1200)]),
+            ("Spindle", None),
+            ("Spindle taper (7/24 taper)", "BBT40"),
+            ("Spindle drive", "Direct"),
+            ("Feeds", None),
+            ("Rapid traverse X / Y", mmin(36)),
+            ("Rapid traverse Z", mmin(36)),
+            ("Cutting feed", mmin_range(1, 15)),
+            ("Tool magazine capacity", "24"),
+            ("Tool magazine", None),
+            ("Tool change method", "Arm type"),
+            ("Tool shank type", "BBT"),
+            ("Tool change time (tool to tool)", "1.3 s"),
+            ("Tool change time (chip to chip)", ["3.1 s", "3.1 s", "3.7 s", "3.7 s", "3.7 s"]),
+            ("Pull stud angle", "45°"),
+            ("Max. tool diameter", two("Ø3.9 / Ø5.9″", "Ø100 / Ø150 mm")),
+            ("Max. tool length", mm(300)),
+            ("Max. tool weight", kg(7)),
+            ("Accuracy", None),
+            ("Positioning accuracy", [pm(0.004)] * 4 + [pm(0.005)]),
+            ("Repeatability", pm(0.002)),
+            ("Coolant — capacity, motor, pressure", None),
+            ("Coolant pump", pump(0.55, 3)),
+            ("Coolant pump for the gun", pump(0.37, 2)),
+            ("Coolant pump for chip cleaning", pump(1.10, 2.5)),
+            ("Coolant tank capacity", [litre(v) for v in (350, 350, 400, 400, 400)]),
+            ("Machine dimensions (machine working area)", None),
+            ("Length", [mm(v) for v in (3965, 4300, 4685, 4945, 5690)]),
+            ("Width", [mm(v) for v in (2200, 2200, 2400, 2370, 2400)]),
+            ("Height", [mm(v) for v in (3185, 3185, 3145, 3280, 3280)]),
+            ("Weight (approx.)", [kg(v) for v in (6500, 7500, 8000, 9500, 10000)])]
+
+
+def tmc_ctl_rows(c):
+    return [("Screen", c["scr"]),
+            ("Spindle motor", None),
+            ("Code", c["sm"]), ("Speed", [f"{v:,} rpm" for v in c["rpm"]]), ("CTS readiness", c["cts"]),
+            ("Torque (continuous / max.)", [nm_pair(*v) for v in c["st"]]), ("Power (continuous / max.)", [kw_pair(*v) for v in c["sp"]]),
+            ("Axis motors", None),
+            ("Code X / Y", c["axy"]), ("Torque X / Y (continuous / max.)", [nm_pair(*v) for v in c["txy"]]), ("Power X / Y", [kw(v) for v in c["pxy"]]),
+            ("Code Z", c["az"]), ("Torque Z (continuous / max.)", [nm_pair(*v) for v in c["tz"]]), ("Power Z", [kw(v) for v in c["pz"]]),
+            ("Air and power connection", None),
+            ("Air pressure", two("73 / 87 psi", "5.0 / 6.0 bar")), ("Power connection", [f"{v} kVA" for v in c["kva"]])]
+
+
+TMC_M = dict(scr=["10.4″ / 15″", "10.4″ / 15″", "15″", "15″", "15″"],
+             sm=["SJ-DG11/100-03T", "SJ-DG11/100-03T", "SJ-DG11/120-03T", "SJ-DG15/120-02T-K-S", "SJ-DG15/120-02T-K-S"],
+             rpm=[10000, 10000, 12000, 12000, 12000], cts=["–*", "–*", "+", "+", "+"],
+             st=[(47.7, 115)] * 3 + [(77.8, 191)] * 2, sp=[(7.5, 18)] * 3 + [(11, 30)] * 2,
+             axy=["HG224S-D48", "HG224S-D48", "HG354S-D48", "HG354S-D48", "HG354S-D48"],
+             txy=[(7, 46.5), (7, 46.5), (11.1, 75), (11.1, 75), (14.3, 122)], pxy=[2.2, 2.2, 3.5, 3.5, 3.5],
+             az=["HG354BS-D48"] * 3 + ["HG453BS-D48"] * 2, tz=[(11.1, 75)] * 3 + [(14.3, 122)] * 2, pz=[3.5, 3.5, 3.5, 4.5, 4.5],
+             kva=[32, 32, 32, 43, 43])
+TMC_F = dict(scr=["10.4″", "10.4″", "15″", "15″", "15″"],
+             sm=["βiI 8/12000-B", "βiI 8/12000-B", "βiIT 12/10000-B", "βiIT 12/10000-B", "βiIT 12/10000-B"],
+             rpm=[12000, 12000, 10000, 10000, 10000], cts=["–**", "–**", "+", "+", "+"],
+             st=[(35.8, 105)] * 2 + [(52.5, 130)] * 3, sp=[(7.5, 16.5)] * 2 + [(11, 20.4)] * 3,
+             axy=["βiS 22/3000-B"] * 5, txy=[(20, 45)] * 5, pxy=[3] * 5,
+             az=["βiS 22/3000-B"] * 3 + ["βiS 40/2000-B"] * 2, tz=[(20, 45)] * 3 + [(36, 90)] * 2, pz=[3] * 5, kva=[32] * 5)
+
+TDC = ["TDC 2112", "TDC 3116", "TDC 4120"]
+
+
+def tdc_rows():
+    return [("X axis", [mm(v) for v in (2100, 3100, 4100)]),
+            ("Y axis", [mm(v) for v in (1220, 1600, 2020)]),
+            ("Z axis", [two("23.6″ (opt. 31.5″)", "600 mm, opt. 800 mm"), mm(1020), mm(1020)]),
+            ("Distance between the two columns", [mm(v) for v in (1400, 1700, 2100)]),
+            ("Table size", [two(f"{num(a / 25.4)} × {num(b / 25.4)}″", f"{a:,} × {b:,} mm") for a, b in ((2000, 1200), (3000, 1500), (4000, 1800))]),
+            ("T-slots (number × slot width × distance)", [two(f"{n} × 0.87″ × 5.9″", f"{n} × 22 × 150 mm") for n in (7, 9, 9)]),
+            ("Max. table load", [kg(v) for v in (4000, 10000, 12000)]),
+            ("Spindle taper", "BBT50"),
+            ("Spindle speed", "10,000 rpm"),
+            ("Spindle motor", kw_pair(22, 26)),
+            ("Rapid traverse X / Y / Z", two("39 / 39 / 39 ft/min", "12 / 12 / 12 m/min")),
+            ("Cutting feed", mmin_range(1, 10)),
+            ("Axis motors X, Y, Z", [two("12.1 / 6 / 6 HP", "9 / 4.5 / 4.5 kW"), two("12.1 / 9.4 / 9.4 HP", "9 / 7 / 7 kW"), two("12.1 / 9.4 / 9.4 HP", "9 / 7 / 7 kW")]),
+            ("Tool capacity", ["Arm type, 24 tools", "Chain type, 40 tools", "Chain type, 40 tools"]),
+            ("Coolant tank capacity", [litre(v) for v in (300, 800, 800)]),
+            ("Guideway types", "X, Y, Z roller linear guides"),
+            ("Control unit", "Mitsubishi (Fanuc option)"),
+            ("Positioning accuracy X / Y / Z", two("±0.0003″", "±0.008 mm")),
+            ("Repeatability X / Y / Z", two("±0.00016″", "±0.004 mm")),
+            ("Guarding", "Semi-open enclosure"),
+            ("Width", [mm(v) for v in (3640, 4340, 4740)]),
+            ("Length", [mm(v) for v in (5965, 8315, 10315)]),
+            ("Height", [mm(v) for v in (3372, 4390, 4390)]),
+            ("Weight (approx.)", [kg(v) for v in (21000, 32000, 40000)])]
+
+
+def book_mc():
+    b = Book("mc", "CNC machining centres", "Dener TMC vertical and TDC double-column machining centres",
+             os.path.join(ROOT, "src", "files", "NovoTech-Dener-Machining-Centres-2026.pdf"))
+    b.title = "Dener TMC Vertical and TDC Double-Column Machining Centres — NovoTech Machine Tools"
+    b.subject = "Dener TMC vertical and TDC double-column CNC machining centre catalogues, English imperial edition"
+    b.cover("Dener · Machining centres", "“The future is here” · sold &amp; serviced in Canada by NovoTech", "Machining centres",
+            "TMC · TDC series", "Vertical and double-column CNC machining centres", "mc/tmc.png",
+            [("Since 1974", "Manufacturing experience"), ("33.5 – 161″", "X-axis travel"), ("BBT40 · BBT50", "Spindle taper"),
+             ("Canada", "Parts &amp; technical support")], hero_h=290, minis=("mc/tdc-a.png", "mc/cover-b.png", "mc/spindle.png"))
+    D.about_page(b)
+    campus(b, "mc/campus.jpg")
+    head = "TMC series CNC vertical machining centres"
+    # vertical catalogue p3 — overview
+    body = (CSS + title(head, "Overview") + fig("mc/tmc.png", "TMC CNC vertical machining centre", h=250, px=1600)
+            + P("With CNC vertical machining centres, precision milling, drilling, pocketing and synchronized tapping without an adapter are "
+                "possible, as well as the machining of forms defined by free-hand drawing.")
+            + row(checks(MC_FEATURES), fig("mc/machining.png", h=190, fit="cover", px=900), cols="1.15fr 1fr", gap=16, align="start"))
+    b.page("Overview", body, toc="TMC — Overview")
+    # p4 — standard / optional equipment
+    body = (CSS + title(head, "Standard / optional equipment")
+            + row(h2("Standard equipment") + checks(MC_STD, cls="sm"),
+                  h2("Optional equipment") + checks(MC_OPT, cls="sm") + '<div style="height:8pt"></div>'
+                  + fig("mc/cover-a.png", h=150, fit="cover", px=700) + '<div style="height:8pt"></div>' + fig("mc/cover-d.png", h=150, fit="cover", px=600), gap=20))
+    b.page("Equipment", body, toc="TMC — Standard / Optional Equipment")
+    # p5 — body structure, working area, idle axis speeds
+    xyz = lambda a, b_, c: two(f"{num(a / 25.4)} / {num(b_ / 25.4)} / {num(c / 25.4)}″", f"{a:,} / {b_:,} / {c:,} mm")
+    body = (CSS + title(head, "Body structure and working area")
+            + row(D.diagram("Rigid and<br>optimized<br>massive cast<br>body", [("tl", "High speed"), ("tr", "High durability"), ("l", "Precision"),
+                                                                            ("r", "Long life"), ("b", "Vibration damping")]),
+                  fig("mc/body.png", "The cast column, base and table", h=240, px=1200), cols="1fr 1fr", gap=16, align="center")
+            + h2("Working area") + ttable(TMC, [("Stroke X / Y / Z", [xyz(*v) for v in ((850, 510, 560), (1020, 510, 560), (1200, 600, 600),
+                                                                                        (1300, 700, 700), (1600, 700, 700))])], corner="Stroke")
+            + h2("Idle axis speeds") + ttable(TMC, [("Rapid X / Y / Z", two("118 / 118 / 118 ft/min", "36 / 36 / 36 m/min"))], corner="Rapid"))
+    b.page("Body · working area", body, toc="TMC — Body Structure and Working Area")
+    # p6 — part loading and table dimensions
+    body = (CSS + title(head, "Part loading and table dimensions")
+            + h2("Part loading") + ttable(TMC, [("Load capacity", [kg(v) for v in (500, 500, 1000, 1200, 1200)])], corner="Capacity")
+            + fig("mc/loading.png", "Loading a part by crane", h=210, px=1200)
+            + h2("Table dimensions") + ttable(TMC, [("Table L × W", [two(f"{num(a / 25.4)} × {num(c / 25.4)}″", f"{a:,} × {c} mm")
+                                                                     for a, c in ((1000, 500), (1200, 500), (1300, 600), (1450, 700), (1750, 700))])], corner="Table")
+            + fig("mc/table-dims.png", "Table length L and width W", h=170, px=1100))
+    b.page("Loading · table", body, toc="TMC — Part Loading and Table Dimensions")
+
+    def cd(img, ttl, text, h=112):
+        return (f'<div>{fig(img, h=h, px=900)}<div class="cd" style="margin-top:5pt"><div class="ittl">{ttl}</div>'
+                f'<p class="sm" style="font-size:8.6pt">{text}</p></div></div>')
+    body = (CSS + title(head, "Structure")
+            + grid([cd("mc/rigid.png", "Rigid structure", "Excellent vibration damping and cutting-load distribution thanks to the combined "
+                       "design of the deltoid column and the main body.", h=190),
+                    cd("mc/fem.png", "Finite element method", "The optimum body structure obtained using the finite element method.", h=190),
+                    cd("mc/linear.png", "Ultra-precise linear equipment", "Ultra-precise, ground, preloaded and backlash-free ball screws and "
+                       "linear bearing elements for precise positioning, repeatability, minimum friction, rigid support and quiet operation.", h=150),
+                    cd("mc/servo.png", "Direct-drive servo motors", "Direct connection between the motor and the ball screw for backlash-free, "
+                       "precise motion.", h=150)], 2, 14))
+    b.page("Structure", body)
+    # p7 — tool change, spindle, spindle cooling, through-tool coolant
+    body = (CSS + title(head, "Tool change and spindle")
+            + h2("Tool change system") + P("Fast, stable and functional tool change with the 24-tool, cam-type, inverter-controlled ATC.", cls="sm")
+            + row(fig("mc/atc-1.png", h=140, fit="cover", px=900), fig("mc/atc-2.png", h=140, fit="cover", px=900), gap=14)
+            + h2("Direct-drive spindle") + row(P("Powerful machining capability with high heat dissipation, low vibration, quiet operation and easy "
+                                                "maintenance.", cls="sm"), fig("mc/spindle.png", h=130, px=1000), cols="1fr 1.3fr", gap=14, align="center")
+            + row(h2("Spindle cooling system") + P("Automatically controlled cooling system to prevent thermal deformation and extend the spindle's "
+                                                    "life.", cls="sm") + row(fig("mc/spcool-1.png", h=120, px=400), fig("mc/spcool-2.png", h=120, px=400), gap=8),
+                  h2("Through-tool coolant (option)") + P("Excellent cutting capability and long tool life with coolant through the tool.", cls="sm")
+                  + fig("mc/tsc.png", h=120, px=500), gap=18))
+    b.page("Tool change · spindle", body, toc="TMC — Tool Change System and Spindle")
+    # p8 — chip conveyor, coolant tank, chip cart, control unit
+    labels = [("Tool coolant pump", 6.5, 10.3), ("Chip washing pump", 6.5, 17.2), ("Hand gun pump", 6.5, 24.1), ("Oil separator", 32.7, 36.7),
+              ("Chip filter", 50.1, 87.4), ("Level indicator", 71.8, 87.6), ("Electronic level control", 24.2, 95.4)]
+    tank = ('<div style="position:relative"><img src="%s" style="width:100%%;display:block">' % im("mc/coolant.png", 1100)
+            + "".join(f'<span class="ovl la" style="left:{x}%;top:{y}%">{t}</span>' for t, x, y in labels) + "</div>")
+    body = (CSS + title(head, "Chip conveyor, coolant and control unit")
+            + h2("Chip conveyor") + P("Trouble-free transport and discharge of the long, coarse and spiral chips of metal, fiber, teflon, delrin and "
+                                     "similar materials.", cls="sm")
+            + row(fig("mc/conveyor-1.png", h=62, fit="cover", px=700) + '<div style="height:6pt"></div>' + fig("mc/conveyor-2.png", h=62, fit="cover", px=700),
+                  fig("mc/conveyor-3.png", h=130, px=1000), cols="1fr 2fr", gap=10)
+            + row(h2("Coolant tank") + P("Optimum cooling and easy maintenance with a 132 US gal (500 L), self-filtering, functional tank "
+                                         "design.", cls="sm") + tank,
+                  h2("Chip cart") + P("Easy storage and discharge of all kinds of chips, with its tilting and braking features.", cls="sm")
+                  + fig("mc/cart.png", h=110, px=900), gap=16)
+            + h2("Control unit") + P("Easy to use, with up-to-date technological modules, an operator-friendly interface and an ergonomic design.", cls="sm")
+            + row(fig("mc/control-1.png", h=110, fit="cover", px=900), fig("mc/control-2.png", h=110, fit="cover", px=900), gap=14))
+    b.page("Conveyor · control", body, toc="TMC — Chip Conveyor, Coolant and Control Unit")
+    # p9-10 — technical data
+    rows = tmc_rows()
+    cut = next(i for i, r in enumerate(rows) if r[0] == "Tool magazine")
+    for n, rr in enumerate((rows[:cut], rows[cut:])):
+        b.page("Technical data", CSS + title(head, f"Technical data · {n + 1} of 4") + ttable(TMC, rr, corner="Model")
+               + (P("The values in the table may change with renewals and revisions of the machines.", cls="note") if n else ""),
+               toc="TMC — Technical Data" if n == 0 else None)
+    b.page("Technical data", CSS + title(head, "Technical data · 3 of 4") + h3("Mitsubishi control unit (standard)")
+           + ttable([m + " (M)" for m in TMC], tmc_ctl_rows(TMC_M), corner="Model") + P("* CTS = SJ-DG11/120-03T-S (12,000 rpm).", cls="note"))
+    b.page("Technical data", CSS + title(head, "Technical data · 4 of 4") + h3("Fanuc control unit (option)")
+           + ttable([m + " (F)" for m in TMC], tmc_ctl_rows(TMC_F), corner="Model")
+           + P("** CTS = βiIT 12/10000-B (10,000 rpm). The values in the table may change with renewals and revisions of the machines. " + VOLT,
+               cls="note") + included())
+    # double-column catalogue — cover and inner spread
+    hd = "TDC series double-column CNC machining centres"
+    body = (CSS + title("Dener · CNC machining centre", "Double-column machining centre")
+            + fig("mc/tdc-b.png", "TDC double-column machining centre", h=270, px=1800)
+            + stats([("2×", "Motor power compared to competitors"), ("Long", "Distance between the two columns")])
+            + '<div style="height:10pt"></div>'
+            + P("The Dener double-column CNC machining centre increases the competitiveness of your business by combining creative design, "
+                "technological superiority and productivity. With this machine, which meets your precision machining needs at the highest "
+                "level, you can produce quickly and efficiently without compromising on quality."))
+    b.page("Double column", body, toc="TDC — Double-Column Machining Centre")
+    body = (CSS + title(hd, "Control unit, chip conveyor and tool change")
+            + row(fig("mc/tdc-control.png", h=150, px=900),
+                  h3("Control unit") + P("The Mitsubishi control unit makes your production and machining processes more efficient and flexible "
+                                         "with its powerful performance, advanced features and reliability.", cls="sm")
+                  + checks(["Advanced control capabilities", "Fast response time", "Comprehensive connection options", "User-friendly interface"], cls="sm"),
+                  cols="1fr 1.4fr", gap=16, align="center")
+            + row(fig("mc/tdc-conveyor.png", h=150, px=900),
+                  h3("Chip conveyor") + P("The chip conveyor controls your machining processes and keeps them running steadily, increasing your "
+                                          "machining efficiency. Thanks to this solution, the preparation time for complex operations is shorter, "
+                                          "and your ability to handle a wide variety of workpieces grows.", cls="sm"), cols="1fr 1.4fr", gap=16, align="center")
+            + row(fig("mc/tdc-atc.png", h=150, px=900),
+                  h3("Tool change") + P("The tool change system optimizes efficiency with fast, automatic tool change. Fast, automatic tool change "
+                                        "shortens machining times and raises productivity while keeping the quality.", cls="sm"),
+                  cols="1fr 1.4fr", gap=16, align="center"))
+    b.page("Double column", body)
+    rpm = ('<table class="mt lt" style="width:auto"><thead><tr><th class="corner">RPM</th><th>BBT-50</th><th>CTS</th></tr></thead><tbody>'
+           '<tr><th>6,000 rpm</th><td>○</td><td>○</td></tr><tr><th>8,000 rpm</th><td>○</td><td>○</td></tr>'
+           '<tr><th>10,000 rpm</th><td>●</td><td>●</td></tr></tbody></table><p class="note">std. ● · opt. ○</p>')
+    body = (CSS + title(hd, "Linear equipment, coolant and spindle")
+            + row(fig("mc/tdc-linear.png", h=135, px=900),
+                  h3("Precise linear equipment") + P("Precise linear equipment offers excellent accuracy, smooth movement and long life. It keeps the "
+                                                     "precision of your machining processes stable and so gives higher-quality workpieces.", cls="sm"),
+                  cols="1fr 1.4fr", gap=16, align="center")
+            + row(fig("mc/tdc-coolant.png", h=110, px=900),
+                  h3("Coolant tank") + P("The coolant tank optimizes your machining processes while extending tool life, keeping the machining "
+                                         "conditions efficient and contributing to excellent results.", cls="sm"), cols="1fr 1.4fr", gap=16, align="center")
+            + row(fig("mc/tdc-spindle.png", h=105, px=900),
+                  h3("Direct-drive spindle") + P("High torque, fast acceleration and excellent precision: this advanced spindle technology takes "
+                                                 "the performance of your CNC machining centre to new levels, bringing speed and precision together "
+                                                 "for outstanding machining results.", cls="sm") + rpm, cols="1fr 1.4fr", gap=16, align="center")
+            + row(row(fig("mc/tdc-spcool.png", h=110, px=400), h3("Spindle cooling system") + P("Extends tool life by controlling the "
+                      "temperature, and keeps the machining process stable. This cooling solution maximizes the performance of your CNC "
+                      "machining centre.", cls="xs"), cols="54pt 1fr", gap=10, align="center"),
+                  row(fig("mc/tdc-tsc.png", h=110, px=500), h3("Through-tool coolant") + P("Automatically controlled cooling system to prevent "
+                      "thermal deformation and extend the spindle's life.", cls="xs"), cols="80pt 1fr", gap=10, align="center"), gap=16))
+    b.page("Double column", body)
+    body = (CSS + title(hd, "Technical data") + ttable(TDC, tdc_rows(), corner="TDC double column") + P(VOLT, cls="note") + included())
+    b.page("Technical data", body, toc="TDC — Technical Data")
+    D.range_page(b)
+    b.back("Machining centre for your shop.", ["mc/tmc.png", "mc/tdc-a.png", "mc/spindle.png", "mc/machining.png"])
+    D.fill_about(b)
+    return b
+
+
+BOOKS = {"lathe": book_lathe, "mc": book_mc}
 
 
 def main():
