@@ -75692,29 +75692,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 632,
+    "h": 609,
     "file": "img/value-laser/vn-ult-1-1200.webp",
-    "bytes": 86900
+    "bytes": 194242
    },
    {
     "w": 800,
-    "h": 421,
+    "h": 406,
     "file": "img/value-laser/vn-ult-1-800.webp",
-    "bytes": 43722
+    "bytes": 101074
    },
    {
     "w": 480,
-    "h": 253,
+    "h": 243,
     "file": "img/value-laser/vn-ult-1-480.webp",
-    "bytes": 18056
+    "bytes": 43106
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 84,
+   "h": 81,
    "file": "img/value-laser/vn-ult-1-thumb.webp",
-   "bytes": 2618
+   "bytes": 7432
   }
  },
  "vn-ult-frame": {
