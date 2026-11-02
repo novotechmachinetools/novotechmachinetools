@@ -127,22 +127,22 @@ PAGE_TUBE = dict(
     h1="Senfeng tube lasers — two-chuck T series to four-chuck heavy-duty machines, Ø0.5″ to 25″, the value line",
     intro="Senfeng's tube lasers are the value line of NovoTech's tube laser section, sold under the Senfeng brand: thirty models that start where "
           "most shops start — a 6 m two-chuck machine with a 1.5 kW source for the railings, frames, furniture and racking tube that make up most "
-          "tube work — and go where few others do. The T series two-chuck machines cover Ø0.5 to 14″ and 20 to 39 ft with 1.5 to 6 kW; the PLUS "
+          "tube work — and go where few others do. The T series two-chuck machines cover Ø0.5 to 14″ and 20 to 40 ft with 1.5 to 6 kW; the PLUS "
           "runs to 492 ft/min on small tube and the GPLUS / GT add a 45° bevel head for mitred corners and weld preparations; the NT puts a third "
           "chuck in the middle so the last part is cut without a tail; and the ST three-chuck and HT four-chuck machines carry tube to Ø25″ and "
           "6,600 lb over 29 to 49 ft with 6 to 20 kW, for structural steel, towers, cranes and trailers. The SF1500CH is the profile line for "
           "H-beams, channels and angles. Pneumatic self-centring chucks, following supports, tube nesting from 3D files, bundle loaders and "
           "unloading conveyors; CE / FDA / ETL certified and CSA approved. Installed, trained and supported from Mississauga, ON, Canada, with a CSA-approved panel and "
           "NovoTech's warranty.",
-    points=["T series: Ø0.5 – 14.1″, 20 – 39 ft, 1.5 – 6 kW, 15 models in two bed lengths; PLUS to 492 ft/min; GPLUS / GT with ±45° bevel head",
+    points=["T series: Ø0.5 – 14.1″, 20 – 40 ft, 1.5 – 6 kW, 15 models in two bed lengths; PLUS to 492 ft/min; GPLUS / GT with ±45° bevel head",
             "NT zero-tailing three-chuck machines Ø0.7 – 14.1″; ST three-chuck and HT four-chuck to Ø25.1″, 6,600 lb and 49 ft, 6 – 20 kW",
             "SF1500CH H-beam and profile line with visual scanning; bundle loaders and unloading conveyors for every model"],
     hero="sf-t-1", minis=["sf-plus-1", "sf-st-1"],
     groups=[("tube-senfeng", "Senfeng tube lasers — the value line", "Thirty models from the Ø0.5″ two-chuck T series to four-chuck machines for Ø25″ tube and H-beams.", BRAND)],
     faq=[{"q": "T series or PLUS?",
-          "a": "The T series is the all-round two-chuck machine: 1.5 to 6 kW, Ø0.5 to 14″, 20 to 39 ft, fifteen models — the one most shops buy first. The PLUS is tuned for speed on small and medium tube — 394 to 492 ft/min, 180 rpm chucks, 3 to 6 kW — for furniture, fitness equipment and racking where thousands of short parts are cut a shift. If you also need mitres and weld preparations, the GPLUS (Ø0.6 – 4.7″) or GT (Ø2.3 – 14.1″) add the 45° bevel head."},
+          "a": "The T series is the all-round two-chuck machine: 1.5 to 6 kW, Ø0.5 to 14″, 20 to 40 ft, fifteen models — the one most shops buy first. The PLUS is tuned for speed on small and medium tube — 394 to 492 ft/min, 180 rpm chucks, 3 to 6 kW — for furniture, fitness equipment and racking where thousands of short parts are cut a shift. If you also need mitres and weld preparations, the GPLUS (Ø0.6 – 4.7″) or GT (Ø2.3 – 14.1″) add the 45° bevel head."},
          {"q": "What is zero-tailing — the NT series?",
-          "a": "A two-chuck machine cannot cut the last part of the bar because the rear chuck has to hold something, so a remnant of the chuck length is scrapped from every bar. The NT puts a third chuck in the middle that takes over the bar as it shortens, so the last part is cut and the tail is near zero — on 20 to 39 ft stock to Ø14″ that is several percent of material saved on every bundle."},
+          "a": "A two-chuck machine cannot cut the last part of the bar because the rear chuck has to hold something, so a remnant of the chuck length is scrapped from every bar. The NT puts a third chuck in the middle that takes over the bar as it shortens, so the last part is cut and the tail is near zero — on 20 to 40 ft stock to Ø14″ that is several percent of material saved on every bundle."},
          {"q": "When do I need three or four chucks — ST and HT?",
           "a": "When the tube is long and heavy: the ST (three chucks) and HT (four chucks) carry tube to Ø25″ and 6,600 lb over 29 to 49 ft without sag, so round, square and large rectangular sections for structural steel, towers, cranes and trailers are cut straight and square. Sources of 6 to 20 kW cut walls to 3/4″; bevel heads and automatic loaders are available. The SF1500CH is the version for H-beams, channels and angles, with a camera that scans each beam before cutting."},
          {"q": "How is the tube loaded and unloaded?",
@@ -211,7 +211,7 @@ BROCHURES = {
                     "and trailers. Every machine can be loaded by hand, or with a semi-automatic or a fully automatic loader.", ABOUT_SENFENG],
         country="China", families=[f["id"] for f in D.TUBE_FAMILIES], family_sets=["dener"],
         groups=[{"title": "Two-chuck tube lasers", "families": ["sf-t", "sf-plus", "sf-gt"]}, {"title": "Three-chuck tube lasers", "families": ["sf-nt", "sf-st"]}],
-        cover_photos=["sf-t-1", "sf-plus-1", "sf-st-1"], out="src/" + PDF_TUBE),
+        cover_photos=["sf-t-1", "sf-plus-1", "sf-st-1"], gallery=True, out="src/" + PDF_TUBE),
     "senfeng-welding": dict(
         title="Laser welding and cladding machines", subtitle="Senfeng handheld laser welders 0.8 – 3 kW · robotic laser welding cells 1.5 – 20 kW · cobot MIG welders · laser cladding 6 / 12 kW",
         cover_line="Senfeng Laser · made in China · sold & serviced in Canada by NovoTech", range_label="Senfeng laser welding", about_for="Senfeng laser welding and cladding machines",
@@ -238,10 +238,47 @@ BROCHURES = {
 }
 
 
+def tube_intro_pages():
+    """The two overview pages of the Senfeng tube brochure — the five series side by side and the three ways to load them
+    (the owner, Nov 1 2026: make the differences and the loaders clear).  The rows and cards are the tube page's
+    (tools/laser_types.py), cut to the Senfeng series."""
+    import laser_types as LT
+    page = LT.TUBE["tube-laser-cutting-machine"]
+    cmp, load = page["compare"], page["loading"]
+    rows = [[r[0].replace(" · value", "")] + r[1:-1] for r in cmp["rows"] if r[0].split(" ")[0] in ("T", "PLUS", "GPLUS", "NT", "ST")]
+    cards = [dict(c) for c in load["cards"]]
+    cards[0]["items"] = ["Standard on the T, PLUS, GPLUS / GT and NT"] + cards[0]["items"][1:]
+    cards[1]["items"] = cards[1]["items"][:-1] + ["Takes special shapes and open profiles that a bundle loader cannot; included on the ST"]
+    return [
+        dict(tab="Compare", kicker="Senfeng tube lasers · five series", title="Which Senfeng tube laser? The five series side by side",
+             lead=cmp["lead"].replace(" Each row opens the machine's section with its full specification table.", " Each series has its own pages "
+                  "further on, with the full specification table of every model."),
+             table=dict(cols=["Series"] + cmp["cols"][1:-1], rows=rows),
+             paras=[("T series", "The all-round two-chuck machine and the first tube laser of most shops: 1.5 to 6 kW, Ø0.5 to 14″, 20 to 40 ft bars, "
+                                 "fifteen models on 20, 23, 24.6, 30 and 40 ft beds."),
+                    ("PLUS", "Tuned for speed on small and medium tube — 492 ft/min and 240 rpm chucks, 3 to 6 kW — for furniture, fitness equipment, "
+                             "racking and automotive parts cut by the thousand, with a very short to zero tail."),
+                    ("GPLUS / GT", "Two chucks and a 3D head that tilts ±45°, so mitres, chamfers and weld preparations are cut in the same pass as the "
+                                   "holes: the GPLUS for Ø0.6 to 4.7″, the GT for Ø2.3 to 14.1″."),
+                    ("NT", "A third chuck takes over the bar as it shortens, so the last part is cut with zero tail — several percent of material saved "
+                           "on every bundle of 20 to 40 ft stock, Ø0.7 to 14.1″, 3 to 12 kW."),
+                    ("ST", "Three heavy chucks carry pipe, large tube and structural sections to Ø25.1″ and 6,614 lb over 30 to 40 ft without sag, "
+                           "with 6 to 20 kW sources; semi-automatic loading and unloading are included.")],
+             note=cmp["note"]),
+        dict(tab="Loading", kicker="Loading options", title=load["title"], lead=load["lead"].replace("on this page", "in this catalogue"),
+             cards=cards, photos=["sf-load-sloped", "sf-load-chain", "sf-load-auto-simple", "sf-tube-loading"],
+             note="Unloading: a 6.6 ft (2 m) unloading rack that sorts scrap from parts is standard on the T and PLUS (10 or 13 ft optional) and a "
+                  "10 ft (3 m) unloading system on the NT (20 ft optional); the ST comes with semi-automatic loading and unloading. The loader "
+                  "for each model is listed in its specification table."),
+    ]
+
+
 def write_brochure_specs():
     d = os.path.join(ROOT, "tools", "brochure", "specs")
     for name, spec in BROCHURES.items():
         spec = dict(spec, single_phase=False, year="2026", made_in="Made in China by Senfeng Laser — CE, FDA and ETL certified and CSA approved")
+        if name == "senfeng-tube-lasers":
+            spec["intro_pages"] = tube_intro_pages()
         json.dump(spec, open(os.path.join(d, name + ".json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 

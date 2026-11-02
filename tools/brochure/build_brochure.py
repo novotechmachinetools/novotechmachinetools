@@ -109,13 +109,24 @@ def render(spec, no_inline, budgets=None, tight=None):
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]
         f["series"] = f.get("short", f["name"]).split(" ")[0] if not f.get("series") else f["series"]
         f["tight"] = (tight or {}).get(fid, 0)       # 1 / 2 / 3: smaller photo band and type when the equipment lists overflow
+        # spec "gallery": every other photo of the family on detail pages after the family page, nine to a page with their
+        # captions — the brochure carries all the photos and details, not a summary (the owner, Nov 1 2026)
+        gal = [g for g in (img(k) for k in f["images"][3:]) if g] if spec.get("gallery") else []
+        f["gallery_pages"] = [gal[i:i + 9] for i in range(0, len(gal), 9)]
         families.append(f)
     layout(families, no_inline, budgets)
-    # page numbering: cover 1, contents 2, about 3, then families, back cover
-    page = 4
+    # spec "intro_pages": overview pages after About — the series side by side, the loading options (the owner, Nov 1 2026)
+    intro = []
+    for ip in spec.get("intro_pages") or []:
+        ip = dict(ip)
+        ip["cards"] = [dict(c, img=img(c["image"], 800) if c.get("image") else None) for c in ip.get("cards", [])]
+        ip["photos"] = [g for g in (img(k, 800) for k in ip.get("photos", [])) if g]
+        intro.append(ip)
+    # page numbering: cover 1, contents 2, about 3, overview pages, then families, back cover
+    page = 4 + len(intro)
     for f in families:
         f["page"] = page
-        page += 1 + len(f["spec_pages"])
+        page += 1 + len(f["gallery_pages"]) + len(f["spec_pages"])
     total = page
     groups = []
     for g in spec.get("groups", []):
@@ -125,7 +136,7 @@ def render(spec, no_inline, budgets=None, tight=None):
     env = Environment(loader=FileSystemLoader(HERE), autoescape=False)
     env.filters["img"] = img
     included = [(spec["made_in"], "")] + INCLUDED[1:] if spec.get("made_in") else INCLUDED   # value line: "Built in China to North American standards"
-    html = env.get_template("brochure.html").render(spec=spec, site=SITE, families=families, groups=groups, total=total, included=included,
+    html = env.get_template("brochure.html").render(spec=spec, site=SITE, families=families, groups=groups, total=total, included=included, intro=intro,
                                                      fonts="file://" + os.path.join(ROOT, "src", "fonts"), logo=img("novotech-logo", 800, png=True),
                                                      cover_imgs=[img(k) for k in spec["cover_photos"]], year=spec.get("year", "2026"))
     out_html = os.path.join(HERE, "out", os.path.basename(spec["out"]).replace(".pdf", ".html"))

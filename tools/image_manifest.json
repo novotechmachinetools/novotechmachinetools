@@ -81688,21 +81688,27 @@
   }
  },
  "pdf-novotech-dener-tube-lasers-2026": {
-  "alt": "Cover of the Dener Tube Lasers 2026 PDF",
+  "alt": "Cover of the Dener tube laser cutting machines PDF",
   "variants": [
    {
+    "w": 640,
+    "h": 818,
+    "file": "img/site/pdf-novotech-dener-tube-lasers-2026-640.webp",
+    "bytes": 26698
+   },
+   {
     "w": 480,
-    "h": 622,
+    "h": 614,
     "file": "img/site/pdf-novotech-dener-tube-lasers-2026-480.webp",
-    "bytes": 14244
+    "bytes": 17322
    }
   ],
   "alpha": false,
   "thumb": {
-   "w": 124,
+   "w": 125,
    "h": 160,
    "file": "img/site/pdf-novotech-dener-tube-lasers-2026-thumb.webp",
-   "bytes": 1992
+   "bytes": 2480
   }
  },
  "pdf-novotech-electric-press-brakes-2026": {
@@ -82066,13 +82072,19 @@
   }
  },
  "pdf-novotech-senfeng-tube-lasers-2026": {
-  "alt": "Cover of the Senfeng Tube Lasers 2026 PDF",
+  "alt": "Cover of the Senfeng tube laser cutting machines PDF",
   "variants": [
+   {
+    "w": 640,
+    "h": 829,
+    "file": "img/site/pdf-novotech-senfeng-tube-lasers-2026-640.webp",
+    "bytes": 21680
+   },
    {
     "w": 480,
     "h": 622,
     "file": "img/site/pdf-novotech-senfeng-tube-lasers-2026-480.webp",
-    "bytes": 14532
+    "bytes": 14544
    }
   ],
   "alpha": false,
@@ -82080,7 +82092,7 @@
    "w": 124,
    "h": 160,
    "file": "img/site/pdf-novotech-senfeng-tube-lasers-2026-thumb.webp",
-   "bytes": 2018
+   "bytes": 2046
   }
  },
  "pdf-novotech-sheet-metal-shears-2026": {
@@ -82102,13 +82114,19 @@
   }
  },
  "pdf-novotech-tube-lasers-value-line-2026": {
-  "alt": "Cover of the Tube Lasers Value Line 2026 PDF",
+  "alt": "Cover of the NovoTech value-line tube lasers PDF",
   "variants": [
+   {
+    "w": 640,
+    "h": 829,
+    "file": "img/site/pdf-novotech-tube-lasers-value-line-2026-640.webp",
+    "bytes": 30582
+   },
    {
     "w": 480,
     "h": 622,
     "file": "img/site/pdf-novotech-tube-lasers-value-line-2026-480.webp",
-    "bytes": 20474
+    "bytes": 20208
    }
   ],
   "alpha": false,
@@ -82116,7 +82134,7 @@
    "w": 124,
    "h": 160,
    "file": "img/site/pdf-novotech-tube-lasers-value-line-2026-thumb.webp",
-   "bytes": 2956
+   "bytes": 2728
   }
  },
  "pdf-novotech-v-grooving-machines-2026": {

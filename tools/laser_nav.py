@@ -4,7 +4,7 @@
 Sheet lasers (laser-cutting-machine.html): a hub over one page per kind — fiber lasers with shuttle table or pallet changer,
 sheet-and-tube combination lasers, large-format plate lasers (semi-closed, ground-rail, gantry), 3D laser cells, and coil-fed
 lines.  Tube lasers (tube-laser-cutting-machine.html): ONE page, no hub — the tube laser cutters to Ø14″ and the heavy-duty
-three- and four-chuck machines to Ø25″ and 49 ft together, with the tube laser buying guide (the owner, Nov 1 2026).  The
+three-chuck machines to Ø25″ and 40 ft together, with the tube laser buying guide (the owner, Nov 1 2026).  The
 premium (Dener) and value (NovoTech, Senfeng) lines are sections inside each page.
 
 Shared by tools/laser_hub.py (the hubs and the merged family sets) and tools/laser_types.py (the pages); tools/dener_pages.py,
@@ -59,8 +59,8 @@ SECTIONS = {
     "tube": dict(
         hub=None, section="Tube laser cutters", label="Tube laser cutters", image="dn-tube-2", blurb="",
         subpages=[
-            ("tube-laser-cutting-machine", "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 20 to 49 ft tubes, 1.5 to 40 kW", "dn-tube-2",
-             "Every tube and profile laser NovoTech sells: two- and three-chuck tube laser cutters to Ø14″ and heavy-duty three- and four-chuck machines to Ø25″ and 49 ft.",
+            ("tube-laser-cutting-machine", "Tube and profile laser cutting machines — Ø0.3″ to 25.2″, 20 to 40 ft tubes, 1.5 to 40 kW", "dn-tube-2",
+             "Every tube and profile laser NovoTech sells: two- and three-chuck tube laser cutters to Ø14″ and heavy-duty three-chuck machines to Ø25″ and 40 ft.",
              "Tube laser cutters", ""),
         ]),
 }

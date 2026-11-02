@@ -727,7 +727,7 @@ LASER_FAMILIES = [
 # ------------------------------------------------------------------------------------------------ tube lasers
 # Main tables: Dener's English tube catalogue (TUBE_EN 2026), by chuck size.  Model lists: Dener's Turkish tube catalogue
 # (dener_borulazer.pdf), by model — length code × chuck (6025 = 6 m bed, Ø250 chuck); only the rows that do not contradict the
-# English catalogue (the owner, Nov 1 2026: add the extra details and photos).  The 12,000 kg on the 12 m FTL 250 in TUBE_EN is a
+# English catalogue (the owner, Nov 1 2026: add the extra details and photos) — components as the English catalogue names them.  The 12,000 kg on the 12 m FTL 250 in TUBE_EN is a
 # typing error for 1,200 kg (the Turkish model list: FTL 12025, 12,300 mm, 1,200 kg).
 TL_POWERS = "3 / 6 / 12 / 20 kW"
 T_FTL = table("FTL tube and profile fiber lasers", "4 chuck sizes · Ø0.6″ – 25.2″ · 3 – 20 kW", ["FTL 250", "FTL 350", "FTL 500", "FTL 640"], [
@@ -821,7 +821,7 @@ NOTE_TL = ("Chuck size is the model number (250 = Ø250 mm); every chuck size is
 _TL_STD_ALL = ["Maxphotonics fiber laser source; BOCI BLT autofocus tube cutting head, chosen by source power",
                "Servo-driven supports that follow the tube as it turns; automatic lubrication",
                "TubePro operator interface; imports IGS and SAT files of the tube parts",
-               "HIWIN and YYC racks, pinions and reducers; Inovance servo motors and drives; Motoreducer, Faston or Shimpo gearboxes",
+               "TWEBOLUN rack and pinion, Techmech gearboxes, Inovance servo motors and drives; SMC gas regulator; S&A CWFL chiller",
                "Fume extraction through the tube; chip and slug collection", "CE safety enclosure", "CSA-approved electrical panel; 600 V with transformer"]
 EFTL_STD = ["Two moving pneumatic chucks with automatic centring; remnant from 1.4″ (35 mm)",
             "FSCUT3000 control; TubeST nesting software, small-tube version",

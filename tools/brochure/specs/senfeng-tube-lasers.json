@@ -43,8 +43,149 @@
   "sf-plus-1",
   "sf-st-1"
  ],
+ "gallery": true,
  "out": "src/files/NovoTech-Senfeng-Tube-Lasers-2026.pdf",
  "single_phase": false,
  "year": "2026",
- "made_in": "Made in China by Senfeng Laser — CE, FDA and ETL certified and CSA approved"
+ "made_in": "Made in China by Senfeng Laser — CE, FDA and ETL certified and CSA approved",
+ "intro_pages": [
+  {
+   "tab": "Compare",
+   "kicker": "Senfeng tube lasers · five series",
+   "title": "Which Senfeng tube laser? The five series side by side",
+   "lead": "The number of chucks decides what is left of each bar and how heavy a tube the machine carries; the chuck size decides the largest tube; the loader decides how much of the operator's time each bar takes. Each series has its own pages further on, with the full specification table of every model.",
+   "table": {
+    "cols": [
+     "Series",
+     "Chucks",
+     "Tube",
+     "Bar length · max. tube weight",
+     "Speed",
+     "Loading",
+     "Best for"
+    ],
+    "rows": [
+     [
+      "T series",
+      "2 pneumatic chucks; short tail",
+      "Ø0.5 – 14.1″",
+      "20 – 40 ft · to 1,102 lb",
+      "to 492 ft/min, 1.5 G",
+      "By hand; semi-automatic or fully automatic loader optional",
+      "The first tube laser of a job shop"
+     ],
+     [
+      "PLUS",
+      "2 pneumatic chucks; very short to zero tail",
+      "Ø0.4 – 9.4″",
+      "20 – 23 ft · to 661 lb",
+      "492 ft/min, 240 rpm, 1.5 G",
+      "By hand; semi-automatic or fully automatic loader optional",
+      "Small tube in volume — furniture, fitness, racking, automotive"
+     ],
+     [
+      "GPLUS / GT",
+      "2 chucks and a ±45° 3D head",
+      "Ø0.6 – 14.1″",
+      "20 ft · to 1,102 lb",
+      "to 492 ft/min",
+      "By hand; the GT usually with an automatic loader",
+      "Weld preparations, mitres and bevelled ends"
+     ],
+     [
+      "NT",
+      "3 pneumatic chucks; zero tail",
+      "Ø0.7 – 14.1″",
+      "20 – 40 ft · to 1,543 lb",
+      "246 ft/min, 0.8 G",
+      "By hand or crane; semi-automatic or fully automatic loader optional",
+      "Long bars and costly material — no remnant"
+     ],
+     [
+      "ST",
+      "3 heavy chucks",
+      "Ø1.9 – 25.1″",
+      "30 – 40 ft · to 6,614 lb",
+      "to 197 ft/min",
+      "Semi-automatic loading and unloading included; fully automatic optional",
+      "Pipe, large tube and structural sections"
+     ]
+    ]
+   },
+   "paras": [
+    [
+     "T series",
+     "The all-round two-chuck machine and the first tube laser of most shops: 1.5 to 6 kW, Ø0.5 to 14″, 20 to 40 ft bars, fifteen models on 20, 23, 24.6, 30 and 40 ft beds."
+    ],
+    [
+     "PLUS",
+     "Tuned for speed on small and medium tube — 492 ft/min and 240 rpm chucks, 3 to 6 kW — for furniture, fitness equipment, racking and automotive parts cut by the thousand, with a very short to zero tail."
+    ],
+    [
+     "GPLUS / GT",
+     "Two chucks and a 3D head that tilts ±45°, so mitres, chamfers and weld preparations are cut in the same pass as the holes: the GPLUS for Ø0.6 to 4.7″, the GT for Ø2.3 to 14.1″."
+    ],
+    [
+     "NT",
+     "A third chuck takes over the bar as it shortens, so the last part is cut with zero tail — several percent of material saved on every bundle of 20 to 40 ft stock, Ø0.7 to 14.1″, 3 to 12 kW."
+    ],
+    [
+     "ST",
+     "Three heavy chucks carry pipe, large tube and structural sections to Ø25.1″ and 6,614 lb over 30 to 40 ft without sag, with 6 to 20 kW sources; semi-automatic loading and unloading are included."
+    ]
+   ],
+   "note": "Ranges are for the series; each model's chuck size, bar length and weight are in its specification table. Tail: the piece of each bar that a two-chuck machine cannot cut because the rear chuck holds it."
+  },
+  {
+   "tab": "Loading",
+   "kicker": "Loading options",
+   "title": "Loading the tube: by hand, semi-automatic or fully automatic",
+   "lead": "Every tube laser in this catalogue can be loaded three ways. The loader does not change what the machine can cut — it decides how much of the operator's time each bar takes, and whether the machine keeps cutting while nobody stands at it.",
+   "cards": [
+    {
+     "tag": "Standard",
+     "title": "By hand or crane — no loader",
+     "image": "sf-t-1",
+     "text": "The operator lifts each tube onto the infeed supports — by hand for light tube, with a hoist or crane for heavy bars. The rear chuck pulls it in, the chucks centre and clamp it, the following supports carry it and the machine cuts the whole bar on its own; the finished parts drop onto the unloading rack.",
+     "items": [
+      "Standard on the T, PLUS, GPLUS / GT and NT",
+      "The lowest price and the shortest machine",
+      "Any profile the chucks hold — angle, channel and special shapes too",
+      "Right for short runs, mixed jobs and light tube"
+     ]
+    },
+    {
+     "tag": "Option",
+     "title": "Semi-automatic loader",
+     "image": "sf-load-semi",
+     "text": "The operator lays a row of tubes on the loader's sloped rack or chains and keeps it filled; the loader separates one tube at a time, lifts it to the chuck centre and feeds it in. A tube outside the loader's size or weight is still loaded by hand.",
+     "items": [
+      "Sloped loader: 17 – 20 ft (5.2 – 6.2 m) tubes up to 265 lb (120 kg) — round, square, rectangular and channel",
+      "Dual-arm chain loader: 13 – 20 ft (4 – 6.1 m) tubes up to 529 lb (240 kg) — also angle, channel and I-beam",
+      "Chain loader: 13 – 40 ft (4 – 12 m) tubes and profiles up to 1,543 lb (700 kg)",
+      "Takes special shapes and open profiles that a bundle loader cannot; included on the ST"
+     ]
+    },
+    {
+     "tag": "Option",
+     "title": "Fully automatic bundle loader",
+     "image": "sf-load-auto",
+     "text": "The crane sets a whole bundle — up to 3 t (6,600 lb) — into the loader; it separates the tubes, aligns each one and feeds it to the chuck with no operator, while the unloading system sorts the parts from the scrap. One person runs the machine and prepares the next bundle while it cuts, and the machine keeps cutting through breaks.",
+     "items": [
+      "Fully automatic loader: 11.5 – 20 ft (3.5 – 6.1 m) tubes, 15 – 30 ft (4.5 – 9 m) on the 9 m machines",
+      "Simplified fully automatic loader: the same 3 t bundle on a lighter frame, also for 20 – 40 ft (6 – 12 m) tubes",
+      "Round, square and rectangular tube of standard section, 265 – 573 lb (120 – 260 kg) per tube",
+      "The choice for production runs and two-shift work"
+     ]
+    }
+   ],
+   "photos": [
+    "sf-load-sloped",
+    "sf-load-chain",
+    "sf-load-auto-simple",
+    "sf-tube-loading"
+   ],
+   "note": "Unloading: a 6.6 ft (2 m) unloading rack that sorts scrap from parts is standard on the T and PLUS (10 or 13 ft optional) and a 10 ft (3 m) unloading system on the NT (20 ft optional); the ST comes with semi-automatic loading and unloading. The loader for each model is listed in its specification table."
+  }
+ ]
 }

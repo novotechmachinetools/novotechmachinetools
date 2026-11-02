@@ -125,6 +125,33 @@ h2.title::after { content: ""; display: block; width: .9in; height: 3.5pt; backg
 .fam.inl li { margin-bottom: 1.5pt; }
 .fam .sub { font-size: 8pt; color: var(--steel); margin-bottom: 4pt; }
 .fam .headline { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 10.5pt; color: var(--orange-ink); margin-bottom: 6pt; }
+/* overview pages (spec "intro_pages") */
+.intro .lead { font-size: 9.4pt; max-width: 7.5in; margin: 0 0 9pt; }
+table.cmp { font-size: 7.5pt; } table.cmp tbody th { width: 1.05in; } table.cmp td { line-height: 1.3; }
+.intro .para { font-size: 8.7pt; margin: 4pt 0; max-width: 7.6in; }
+.intro .para b { font-family: "Barlow Condensed", sans-serif; font-size: 10pt; color: var(--charcoal); margin-right: 3pt; }
+.intro .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9pt; }
+.intro .card { border: 1pt solid var(--line); border-top: 3pt solid var(--orange); padding: 7pt 8pt; font-size: 7.9pt; line-height: 1.34; }
+.intro .card .ci { height: 1.3in; display: flex; align-items: center; justify-content: center; margin-bottom: 5pt; }
+.intro .card .ci img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.intro .card .ctag { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 7.6pt; letter-spacing: .12em; text-transform: uppercase; color: var(--orange-ink); }
+.intro .card h3 { font-size: 11.5pt; margin: 2pt 0 4pt; }
+.intro .card p { margin: 0 0 5pt; }
+.intro .card ul { list-style: none; margin: 0; padding: 0; font-size: 7.5pt; }
+.intro .card li { padding-left: 9pt; position: relative; margin-bottom: 2.2pt; border-top: .5pt solid var(--line); padding-top: 2.2pt; }
+.intro .card li::before { content: "–"; position: absolute; left: 0; color: var(--orange-ink); font-weight: 700; }
+.intro .strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8pt; margin-top: 9pt; }
+.intro .strip figure { margin: 0; border: 1pt solid var(--line); background: #fff; height: 1.55in; display: flex; flex-direction: column; }
+.intro .strip figure .ph { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 4pt; }
+.intro .strip figure img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.intro .strip figcaption { font-size: 6.7pt; line-height: 1.25; color: var(--steel); padding: 3pt 5pt; border-top: 1pt solid var(--line); background: var(--paper); }
+/* detail photo pages (spec "gallery") */
+.gal h2 { font-size: 21pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 8pt; }
+.gal .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9pt; }
+.gal figure { margin: 0; border: 1pt solid var(--line); background: #fff; height: 2.42in; display: flex; flex-direction: column; break-inside: avoid; }
+.gal figure .ph { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 6pt; }
+.gal figure img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.gal figcaption { font-size: 7.2pt; line-height: 1.3; color: var(--steel); padding: 4pt 7pt 5pt; border-top: 1pt solid var(--line); background: var(--paper); min-height: .42in; }
 /* spec page */
 .spec h2 { font-size: 21pt; font-weight: 700; text-transform: uppercase; margin: 2pt 0 8pt; }
 .spec h3 { font-size: 10.5pt; letter-spacing: .08em; text-transform: uppercase; margin: 10pt 0 2pt; }
@@ -178,6 +205,8 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
   <div class="body toc{{ ' compact' if ntoc > 14 else '' }}">
     <div class="kicker">{{ spec.range_label }}</div>
     <h2 class="title">Contents</h2>
+    {% if intro %}<h3>Overview</h3>
+    {% for ip in intro %}<div class="row"><span>{{ ip.title }}</span><span class="dots"></span><span class="pg">{{ '%02d' % (3 + loop.index) }}</span></div>{% endfor %}{% endif %}
     {% for g in groups %}
     <h3>{{ g.title }}</h3>
     {% for f in g.families %}
@@ -205,6 +234,27 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
   </div>
   <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">03</div></div>
 </section>
+
+{# ---------------------------------------------------------------- overview pages #}
+{% for ip in intro %}
+<section class="page intro" data-intro="{{ loop.index }}">
+  <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ ip.title }}</div><div class="tab"><span>{{ ip.tab }}</span></div></div>
+  <div class="body">
+    <div class="kicker">{{ ip.kicker }}</div>
+    <h2 class="title">{{ ip.title }}</h2>
+    {% if ip.lead %}<p class="lead">{{ ip.lead }}</p>{% endif %}
+    {% if ip.table %}<table class="cmp">
+      <thead><tr>{% for c in ip.table.cols %}<th>{{ c }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for r in ip.table.rows %}<tr><th>{{ r[0] }}</th>{% for c in r[1:] %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table>{% endif %}
+    {% for t, x in ip.paras or [] %}<p class="para"><b>{{ t }}</b> {{ x }}</p>{% endfor %}
+    {% if ip.cards %}<div class="cards">{% for c in ip.cards %}<div class="card">{% if c.img %}<div class="ci"><img src="{{ c.img.src }}" alt=""></div>{% endif %}<div class="ctag">{{ c.tag }}</div><h3>{{ c.title }}</h3><p>{{ c.text }}</p><ul>{% for x in c['items'] %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endfor %}</div>{% endif %}
+    {% if ip.photos %}<div class="strip">{% for im in ip.photos %}<figure><div class="ph"><img src="{{ im.src }}" alt=""></div><figcaption>{{ im.alt }}</figcaption></figure>{% endfor %}</div>{% endif %}
+    {% if ip.note %}<p class="note">{{ ip.note }}</p>{% endif %}
+  </div>
+  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % (3 + loop.index) }}</div></div>
+</section>
+{% endfor %}
 
 {# ---------------------------------------------------------------- families #}
 {% for f in families %}
@@ -234,6 +284,17 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
   </div>
   <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % f.page }}</div></div>
 </section>
+{% for photos in f.gallery_pages %}
+<section class="page gal" data-gal="{{ f.id }}">
+  <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ f.name }}</div><div class="tab"><span>Details</span></div></div>
+  <div class="body">
+    <div class="kicker">Details, components and options{% if f.gallery_pages|length > 1 %} · {{ loop.index }} / {{ f.gallery_pages|length }}{% endif %}</div>
+    <h2>{{ f.name }}</h2>
+    <div class="grid">{% for im in photos %}<figure><div class="ph"><img src="{{ im.src }}" alt=""></div><figcaption>{{ im.alt }}</figcaption></figure>{% endfor %}</div>
+  </div>
+  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % (f.page + loop.index) }}</div></div>
+</section>
+{% endfor %}
 {% for tables in f.spec_pages %}
 <section class="page spec" data-spec="{{ f.id }}">
   <div class="band"><div class="t1">{{ spec.range_label }}</div><div class="t2">{{ f.name }}</div><div class="tab"><span>Specifications</span></div></div>
@@ -250,7 +311,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
     {% if loop.last %}<p class="note">{{ f.specs.note }}</p><p class="volt">{% if f.volt_note %}{{ f.volt_note }}{% else %}Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase{{ ', or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less' if spec.single_phase else '' }}.{% endif %}</p>
     <div class="included"><div class="lbl">Included with every NovoTech machine</div><ul>{% for t_, s in included %}<li>{{ t_.format(country=spec.country) }}{% if s %}<small>{{ s }}</small>{% endif %}</li>{% endfor %}</ul></div>{% endif %}
   </div>
-  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % (f.page + loop.index) }}</div></div>
+  <div class="foot"><img src="{{ logo.src }}" alt=""><div class="addr"><b>NovoTech Machine Tools Inc.</b><br>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postal }}, {{ site.address.country }}<br>NovoTechMachineTools.com | info@NovoTechMachineTools.com | {{ site.phone }}</div><div class="num">{{ '%02d' % (f.page + f.gallery_pages|length + loop.index) }}</div></div>
 </section>
 {% endfor %}
 {% endfor %}

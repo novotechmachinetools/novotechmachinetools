@@ -56,7 +56,7 @@ PAGE_SHEET = dict(
     points=["ULF open-type: G build 1.5 – 6 kW, E build to 12 kW and 1.7 G on 10 × 5 to 20 × 7.2 ft; large-format plate tables to 85 × 10.5 ft and 60 kW",
             "ULE enclosed with shuttle table, 15 s swap: 10 × 5 to 41 × 8.5 ft, 3 – 40 kW, Z travel to 16.5″, ready for a storage tower",
             "ULG ground-rail plate lasers: 42.7 or 85.3 ft × up to 14.8 ft, 12 – 60 kW, up to 202,000 lb of plate on the table",
-            "ULFT and ULET sheet + tube: the laser table plus a pneumatic chuck for tube to Ø13.8″ and 39 ft, open or enclosed, 1.5 – 60 kW"],
+            "ULFT and ULET sheet + tube: the laser table plus a pneumatic chuck for tube to Ø13.8″ and 40 ft, open or enclosed, 1.5 – 60 kW"],
     hero="vn-ule-1", minis=["vn-ulg-1", "vn-ulet-1"],
     groups=[("laser-novotech", "NovoTech fiber lasers — the value line", "Open single-table, enclosed shuttle-table, ground-rail plate and sheet + tube lasers from 10 × 5 to 85 × 14.8 ft, 1.5 to 60 kW.", BRAND)],
     faq=[{"q": "Open ULF or enclosed ULE?",
@@ -68,7 +68,7 @@ PAGE_SHEET = dict(
          {"q": "When does a ground-rail laser make sense?",
           "a": "When the plate is longer than about 40 ft, wider than 10 ft or heavier than a table machine carries. On the ULG the gantry runs on rails set in the floor and the plate lies on a separate support table, so the table takes up to 202,000 lb (91.8 t) — a 2″ plate the full 85 × 14.8 ft weighs about 103,000 lb — without loading the axes. Structural, bridge, tower, mining and heavy-equipment fabricators use it for thick plate that used to go to plasma or oxy-fuel. It needs a prepared foundation for the rails, crane access along the table and extraction sized to the cutting zones; we plan the layout with you. The ULG-A is the faster gantry (262 ft/min, 1.1 G); the ULG-C leaves 11.8″ under the beam with a 60 kW source."},
          {"q": "Sheet and tube on one machine — ULFT or ULET?",
-          "a": "Both add a pneumatic rotary chuck and tube supports to the sheet laser: round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 20, 29.5 or 39 ft long, cut with the same source and head. The ULFT is the open version on the ULF table, to 85 × 10.5 ft and 60 kW; the ULET is the enclosed version with the shuttle table, to 41 × 8.5 ft and 40 kW. A shop that cuts tube every day is better served by a dedicated ULT tube laser with a loader."},
+          "a": "Both add a pneumatic rotary chuck and tube supports to the sheet laser: round, square and rectangular tube to Ø8.7″ or Ø13.8″ and 20, 30 or 40 ft long, cut with the same source and head. The ULFT is the open version on the ULF table, to 85 × 10.5 ft and 60 kW; the ULET is the enclosed version with the shuttle table, to 41 × 8.5 ft and 40 kW. A shop that cuts tube every day is better served by a dedicated ULT tube laser with a loader."},
          {"q": "What does the laser need on site?",
           "a": "Three-phase power (600 V with the CSA panel, or 208 / 240 / 480 V on request), compressed air at 185 psi (13 bar) and 53 cfm (1.5 m³/min) for air cutting, oxygen and nitrogen of 99.96 % purity, a dust collector, and a shop between 41 and 86 °F (5 – 30 °C) with humidity under 70 % — the water chiller is included. We lay the machine out for your building and size the compressor and dust collector with the quote."},
          {"q": "How does the NovoTech value line compare with Dener and Senfeng?",
@@ -84,25 +84,25 @@ PAGE_SHEET = dict(
 
 PAGE_TUBE = dict(
     title="NovoTech Tube Laser Cutters, Ø0.4–14″ · Value Line",
-    meta="ULT tube and pipe lasers with two or three pneumatic chucks: round Ø0.4–14.2″, square to 13.8″, 20–39 ft bars to 2,205 lb, loaders and ±45° bevel heads.",
+    meta="ULT tube and pipe lasers with two or three pneumatic chucks: round Ø0.4–14.2″, square to 13.8″, 20–40 ft bars to 2,205 lb, loaders and ±45° bevel heads.",
     h1="NovoTech tube lasers — ULT two- and three-chuck tube and pipe lasers, Ø0.4″ to 14.2″ · value line",
     intro="A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one "
           "pass, straight from the 3D model. The ULT is NovoTech's own tube laser — the value line, built in China to our specification and "
           "sold under NovoTech's name: pneumatic self-centring chucks at both ends of the bar, servo-following supports, 1.5 to 40 kW sources "
-          "and four chuck sizes for round tube from Ø0.4 to 14.2″ and square to 13.8″, on 20, 29.5 or 39 ft bars of up to 2,205 lb. The "
+          "and four chuck sizes for round tube from Ø0.4 to 14.2″ and square to 13.8″, on 20, 30 or 40 ft bars of up to 2,205 lb. The "
           "three-chuck version cuts the last part without a remnant; pneumatic loaders, bundle feeding to 5 tonnes, a ±45° five-axis bevel "
           "head and TubesT nesting are options. For sheet and tube on one machine see the ULFT and ULET on the NovoTech fiber laser page; "
           "for the premium Turkish tube lasers see Dener. Installed and supported from Mississauga, ON, Canada, with a CSA-approved panel and a "
           "1-year warranty.",
-    points=["Four chuck sizes: Ø6.3, 9.4, 11 and 14.2″ round, square to 13.8″; 20, 29.5 or 39 ft bars to 2,205 lb",
+    points=["Four chuck sizes: Ø6.3, 9.4, 11 and 14.2″ round, square to 13.8″; 20, 30 or 40 ft bars to 2,205 lb",
             "1.5 – 40 kW; 328 ft/min and 1.2 G on the small chucks; ±0.04 mm/m positioning; double-acting pneumatic chucks",
             "Three-chuck zero-tail version; pneumatic loader, bundle feeding to 5 t, ±45° five-axis bevel head, TubesT nesting"],
     hero="vn-ult-1", minis=["vn-ult-chuck", "vn-ult-head"],
-    groups=[("tube-novotech", "NovoTech tube lasers — the value line", "Two- and three-chuck ULT tube lasers in four chuck sizes, Ø0.4 to 14.2″, 20 to 39 ft bars.", BRAND)],
+    groups=[("tube-novotech", "NovoTech tube lasers — the value line", "Two- and three-chuck ULT tube lasers in four chuck sizes, Ø0.4 to 14.2″, 20 to 40 ft bars.", BRAND)],
     faq=[{"q": "Which ULT chuck size do I need?",
           "a": "Size the chuck to the largest tube you cut. The 016 takes round tube from Ø0.4 to 6.3″ and square to 6.3″ — furniture, fitness equipment, racking and railings; the 024 takes Ø9.4″ and square to 8.9″, the size most fabrication shops buy; the 028 takes Ø11″ and the 036 Ø14.2″ and square to 13.8″, with bars to 2,205 lb for structural tube and pipe. The smaller chucks turn faster — 53.5 rpm against 23 rpm on the 036 — and accelerate harder, so they are quicker on small tube."},
          {"q": "Two chucks or three?",
-          "a": "With two chucks the rear chuck has to keep hold of the bar, so the last few inches of every bar are scrap. The three-chuck ULT adds a chuck that takes over the bar as it shortens and cuts the last part with no remnant — on 20 to 39 ft bars of stainless or heavy-wall tube that saves material on every bundle. It is built on the 024, 028 and 036 chucks."},
+          "a": "With two chucks the rear chuck has to keep hold of the bar, so the last few inches of every bar are scrap. The three-chuck ULT adds a chuck that takes over the bar as it shortens and cuts the last part with no remnant — on 20 to 40 ft bars of stainless or heavy-wall tube that saves material on every bundle. It is built on the 024, 028 and 036 chucks."},
          {"q": "How is the tube loaded?",
           "a": "The pneumatic loader of the 016 and 024 machines separates one bar from the rack and feeds it to the rear chuck — round tube to Ø8.7″ and square to 8.7″ across the corners. The automatic feeding system takes bundles of up to 5 tonnes and bars up to 606 lb (275 kg), sorting and positioning each bar in a 19-second cycle. The heavy tube of the 028 and 036 machines is placed on the infeed supports by crane. Finished parts slide onto the unloading table."},
          {"q": "Can it cut bevels for welding?",
@@ -133,24 +133,24 @@ BROCHURES = {
         about_text=["A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1″ with 6 kW and to 2″ and beyond "
                     "with 20 to 30 kW — at speeds no plasma or punch can match, with a clean edge and no tooling. The ULE cuts inside a laser-safe cabin "
                     "and swaps two tables in 15 seconds, from 10 × 5 to 41 × 8.5 ft and 3 to 40 kW. The ULG runs its gantry and cabin on floor rails over a "
-                    "plate table 42.7 or 85.3 ft long and up to 14.8 ft wide, with 12 to 60 kW. The ULET adds a pneumatic chuck for tube to Ø13.8″ and 39 ft "
+                    "plate table 42.7 or 85.3 ft long and up to 14.8 ft wide, with 12 to 60 kW. The ULET adds a pneumatic chuck for tube to Ø13.8″ and 40 ft "
                     "to the shuttle-table laser, so one machine cuts sheet and tube.", ABOUT_NT],
         country="China", made_in="Built in China to North American standards", families=[f["id"] for f in D.SHEET_FAMILIES], family_sets=["dener"],
         groups=[{"title": "Sheet lasers with shuttle table", "families": ["vn-ule"]}, {"title": "Ground-rail plate lasers", "families": ["vn-ulg"]},
                 {"title": "Sheet + tube lasers", "families": ["vn-ulet"]}],
         cover_photos=["vn-ule-1", "vn-ulg-1", "vn-ulet-1"], out="src/" + PDF_SHEET),
     "novotech-tube-lasers": dict(
-        title="Tube laser cutting machines", subtitle="NovoTech value line · ULT two- and three-chuck tube and pipe lasers · Ø0.4 to 14.2″ · 20 to 39 ft bars · 1.5 to 40 kW",
+        title="Tube laser cutting machines", subtitle="NovoTech value line · ULT two- and three-chuck tube and pipe lasers · Ø0.4 to 14.2″ · 20 to 40 ft bars · 1.5 to 40 kW",
         cover_line="NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech", range_label="NovoTech tube lasers",
         about_for="NovoTech tube lasers", about_kicker="NovoTech value line", about_title="Round, square and profile tube cut to length with every hole, cope and notch in one pass",
         about_text=["A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass, "
                     "straight from the 3D model — no saw, no drill, no notcher, no layout. The ULT carries the bar in double-acting pneumatic chucks with "
                     "servo-following supports and cuts it with a 1.5 to 40 kW source: four chuck sizes for round tube from Ø0.4 to 14.2″ and square to 13.8″, "
-                    "bars of 20, 29.5 or 39 ft and up to 2,205 lb. The three-chuck version cuts the last part without a remnant; pneumatic loaders, bundle "
+                    "bars of 20, 30 or 40 ft and up to 2,205 lb. The three-chuck version cuts the last part without a remnant; pneumatic loaders, bundle "
                     "feeding to 5 tonnes, a ±45° five-axis bevel head and TubesT nesting are options.", ABOUT_NT],
         country="China", made_in="Built in China to North American standards", families=[f["id"] for f in D.TUBE_FAMILIES], family_sets=["dener"],
         groups=[{"title": "Tube lasers", "families": ["vn-ult"]}],
-        cover_photos=["vn-ult-1", "vn-ult-chuck", "vn-ult-head"], out="src/" + PDF_TUBE),
+        cover_photos=["vn-ult-1", "vn-ult-chuck", "vn-ult-head"], gallery=True, out="src/" + PDF_TUBE),
 }
 
 
@@ -173,6 +173,16 @@ def register_images():
         imap[key] = {"src": f"tools/src-images/value-laser/{key}{ext}", "alt": p["alt"], "section": "value-laser", "trim": ext == ".webp", "quality": 82,
                      "cutout": False}
         keys.append(key)
+    extra = json.load(open(os.path.join(ROOT, "tools", "vl_laser_extra_images.json"), encoding="utf-8"))
+    for key, entry in extra.items():          # the ADH photos of the ULT (Nov 1 2026) — they replace or add to the brochure crops
+        if key.startswith("_"):
+            continue
+        if not os.path.exists(os.path.join(ROOT, entry["src"])):
+            print("!! missing source for", key)
+            continue
+        imap[key] = entry
+        if key not in keys:
+            keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     open(os.path.join(ROOT, "tools", "vl_laser_keys.txt"), "w").write(",".join(keys))
     return keys

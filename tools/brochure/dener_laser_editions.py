@@ -3,10 +3,13 @@
 format, with the units in imperial (metric in brackets).  The owner, Nov 1 2026: "change nothing, delete nothing, only the units
 become imperial — every PDF converted to the NovoTech format is converted completely".
 
-    python3 tools/brochure/dener_laser_editions.py [gfl] [smart] [spec] [--html]
+    python3 tools/brochure/dener_laser_editions.py [gfl] [smart] [spec] [tube] [--html]
 
   gfl    Dener's GFL catalogue (GFL_EN, Oct 2026)           → src/files/NovoTech-Dener-GFL-Fiber-Laser-2026.pdf
   smart  Dener's Smart catalogue (SMART_EN, Oct 2026)       → src/files/NovoTech-Dener-Smart-Fiber-Laser-2026.pdf
+  tube   Dener's tube catalogue (TUBE_EN) with the extra details of the Turkish one (dener_borulazer — capacities by chuck,
+         the model list, the BOCI head, photos; their weights, powers and accelerations differ from TUBE_EN's, which are kept)
+                                                            → src/files/NovoTech-Dener-Tube-Lasers-2026.pdf
   spec   the PRO Laser 3015 6 & 12 kW offer (GFL 3015 L / 4020 L / 6020 L)
                                                             → src/files/NovoTech-Dener-GFL-Fiber-Laser-Technical-Specification-2026.pdf
          where the offer contradicts the catalogue, the catalogue's figure is used, checked on en.dener.com (the owner, Nov 1 2026):
@@ -409,6 +412,14 @@ h3{font:600 10.5pt/1.2 Oswald;color:%(C)s;text-transform:uppercase;letter-spacin
 .kv.spec3 thead th:first-child{text-align:left}
 .kv.spec3 td{text-align:center}
 .mt-auto{margin-top:auto}
+.capt{border-collapse:collapse;width:100%%;margin-top:4pt;font:400 7.4pt/1.22 Barlow,BarlowX;color:%(C)s}
+.capt th,.capt td{padding:2.4pt 4pt;border-bottom:.6pt solid #e2e3e5;text-align:left;vertical-align:top}
+.capt th{font:600 7.6pt Barlow;width:52pt;color:%(C)s}
+.capt tr:nth-child(odd){background:#f4f4f5}
+.mt.tight{font-size:7.1pt;line-height:1.2}
+.mt.tight th,.mt.tight td{padding:3.2pt 3pt}
+.mt.tight thead th{font-size:7.6pt}
+.mt.tight tbody th{font-size:7.2pt;width:84pt}
 ol.num{margin:0 0 6pt 16pt;font:400 9.6pt/1.42 Barlow;color:%(C)s}
 ol.num li{margin-bottom:5pt;padding-left:3pt}
 .faq{border-left:3.7pt solid %(O1)s;background:#f4f4f5;padding:8pt 12pt;margin-bottom:8pt}
@@ -1376,7 +1387,276 @@ def book_spec():
     return b
 
 
-BOOKS = {"gfl": book_gfl, "smart": book_smart, "spec": book_spec}
+# ---------------------------------------------------------------------------------------------------------- tube catalogue
+TUBE_EQUIP_1 = [
+    ("tube/resonator.png", "Resonator", "MAX series", "The MAX fiber laser resonator delivers fast, precise and reliable cutting performance with its high "
+     "beam quality, energy-efficient operation, and stable power output. Its compact design and low maintenance requirements help support "
+     "production continuity."),
+    ("tube/chiller.png", "Chiller", "S&amp;A CWFL series", "Specially developed for fiber laser cutting machines, S&amp;A chillers provide stable "
+     "temperature control for resonators and optical systems, enhancing cutting quality and machine lifespan. Thanks to its dual-circuit "
+     "cooling design, it independently balances the resonator and optical path. Its compact design allows for easy integration, while quiet "
+     "operation and energy-efficient performance help lower operating costs. With low maintenance requirements, it is an ideal solution for "
+     "long-term, uninterrupted operation."),
+    ("tube/fscut.png", "FSCUT control unit", "", "The FSCUT system is a control unit designed for tube and profile cutting operations. Based on "
+     "EtherCAT technology, it features a visual control interface, laser control functions, and gas management capabilities. Widely used in "
+     "the industry, it includes a specially developed interface optimized for tube and profile cutting applications, providing reliable and "
+     "efficient operation."),
+    ("tube/servo.png", "Servo motor and motor driver", "Inovance", "For high-precision motion control in fiber laser cutting machines, Inovance "
+     "motor and drive systems deliver superior performance and reliability. With high response speeds and stable torque output, they ensure "
+     "maximum accuracy in axis movements. Advanced control algorithms minimize vibration, improving cutting quality and extending machine "
+     "lifespan. Their compact design allows for easy installation and wiring. With energy-efficient operation and high dynamic performance, "
+     "Inovance systems bring power.")]
+TUBE_EQUIP_2 = [
+    ("tube/reducer.png", "Reducer", "Techmech", "Techmech gearboxes are specially preferred in fiber laser cutting machines for high-precision "
+     "motion transmission. With their high torque capacity and low backlash design, they ensure maximum accuracy in axis movements. Their "
+     "compact structure provides space efficiency in machine design, while the durable materials and high efficiency rate offer long-lasting "
+     "and trouble-free operation."),
+    ("tube/pinion.png", "Rack and pinion", "TWEBOLUN", "TWEBOLUN pinion and rack systems are specially designed for high-precision axis movements "
+     "in fiber laser cutting machines. With low backlash and stable power transmission, they accurately follow cutting paths, ensuring high "
+     "precision even in complex geometries. Durable materials and long-lasting design provide uninterrupted performance in production. Easy "
+     "installation and low maintenance requirements enhance operational efficiency."),
+    ("tube/smc.png", "Gas regulator", "SMC", "SMC regulators provide high precision and stability in pressure control for fiber laser cutting "
+     "machines. They contribute to the safe, efficient, and long-lasting operation of air systems, optimizing the overall performance of the "
+     "machine. Produced by Japan-based SMC Corporation, these regulators offer a reliable solution worldwide for industrial automation and "
+     "pneumatic control systems."),
+    # from Dener's Turkish tube laser catalogue (dener_borulazer), translated
+    ("tube/boci.png", "Tube laser cutting head", "BOCI", "The BOCI tube laser cutting head is designed to deliver high performance and reliability "
+     "in tube and profile cutting. It cuts round, square, rectangular and special-shaped profiles precisely and fast, and its compact, rigid "
+     "structure guarantees stability even at high speeds. The autofocus system adapts quickly to different material thicknesses and cutting "
+     "requirements. An advanced dust-protection design, optimized gas channels and highly durable optical components give a long service "
+     "life and continuous performance — high precision, superior cut quality and higher production efficiency.")]
+TUBEST = ("TubeST is a professional 3D nesting solution for tube and profile laser cutting. Its intelligent automation simplifies drawing, nesting "
+          "and toolpath creation, helping manufacturers reduce material waste, shorten programming time and achieve reliable results across "
+          "complex parts.")
+TUBEST_LIST = ["Imports IGS and SAT files and exports compatible files for TubeST, CypTube and TubePro.",
+               "Detects tiny or redundant geometry and processes it automatically.",
+               "Creates rectangular, L-shaped, H-shaped, I-shaped and custom profiles.",
+               "Optimized auto nesting uses remnants first and minimizes tube-tail waste.",
+               "Advanced toolpaths include lead-ins, compensation, cooling points, micro joints and weld kerf.",
+               "Automatic toolpath checks help prevent cutting-head interference and support safer production."]
+# cutting capacity by chuck (the Turkish catalogue's charts): chuck → [(profile, size)] in mm; d = the diagonal limit
+TUBE_CAPS = [(120, "8 – 120", None), (180, "10 – 180", None), (250, "15 – 250", None), (350, "30 – 350", None)]
+
+
+def book_tube():
+    from dener_data import weight, mmin, EFTL_M, FTL_M, dims
+
+    def mm_in(a, b):
+        return f"{a / 25.4:.1f} – {b / 25.4:.1f}″"
+
+    def dia(a, b):
+        return f"Ø{mm_in(a, b)} <small>(Ø{a} – Ø{b} mm)</small>"
+
+    def prof(a, b):
+        return f"{a / 25.4:.1f} × {a / 25.4:.1f} – {b / 25.4:.1f} × {b / 25.4:.1f}″ profile <small>({a}×{a} – {b}×{b} mm)</small>"
+
+    FT = {6000: "20 ft", 7000: "23 ft", 9000: "30 ft", 12000: "40 ft"}
+
+    def lw(mm, kg, chuck):
+        return f"{FT[mm]}, {weight(kg).split(' (')[0]} <small>({mm:,} mm, {kg:,} kg)</small> · {chuck} chuck"
+
+    def spd(v, chuck):
+        return f"{mmin(v)} · {chuck} chuck"
+
+    def badges(*names):
+        return '<div class="badges" style="margin-top:10pt">' + "".join(f'<img src="{im("gfl/badge-" + n + ".jpg", 700)}">' for n in names) + "</div>"
+
+    b = Book("tube", "Tube fiber laser", "Dener FTL and E-FTL tube profile fiber laser cutting machines",
+             os.path.join(ROOT, "src", "files", "NovoTech-Dener-Tube-Lasers-2026.pdf"))
+    b.title, b.subject = "Dener Tube Fiber Laser — NovoTech Machine Tools", "Dener FTL and E-FTL tube fiber laser catalogue, imperial edition"
+    b.cover("Dener · Tube fiber laser", "“The future is here” · sold &amp; serviced in Canada by NovoTech", "Tube", "Fiber laser",
+            "Faster cutting · higher precision · maximum efficiency", "tube/cover.png",
+            [("Since 1974", "Manufacturing experience"), ("Ø0.3 – 25.2″", "Round tube and profile"), ("20 – 40 ft", "Tube length"),
+             ("Canada", "Parts &amp; technical support")], hero_h=200, minis=("tube/ftl-2.png", "tube/eftl-side.png"))
+    about_page(b)
+    campus_page(b)
+    # catalogue p3 — design advantages
+    body = (title("Tube series", "Tube series — design advantages")
+            + fig("tube/cabin.png", "The cutting cabin: control unit on its arm, laser-safe viewing window and unloading chute", h=300, px=1400)
+            + P("DENER FTL and E-FTL are specially designed for metal tube processing applications. With the semi-automatic loading system, it "
+                "reduces the operator’s workload and increases production efficiency. Thanks to the optional angled cutting feature, precise "
+                "cuts can be performed at various angles. The machine is capable of fast and precise cutting on metal tubes of different "
+                "diameters, shapes, and lengths. Its user-friendly interface and safe operating system streamline workflows and optimize "
+                "production processes.",
+                "Equipped with advanced fiber laser technology, DENER FTL and E-FTL deliver high-quality cutting results with smooth edges and "
+                "minimal material deformation. Their robust construction ensures reliable performance even under demanding production "
+                "conditions, while optimized cutting parameters help reduce material waste and operating costs. Offering flexibility, "
+                "precision, and productivity in a single solution, these machines are ideal for a wide range of industries, including "
+                "automotive, construction, furniture, and general metal fabrication."))
+    b.page("Design advantages", body, toc="Design Advantages")
+    # catalogue p4 — the machine
+    labels = pct((563, 352, 1190, 742), [("Chuck", (643.3, 396.4, 687.9, 417.3)), ("Servo support", (742.3, 384.3, 842.3, 405.2)),
+                                         ("Loading system", (675.1, 457.7, 787.2, 478.5)), ("Protective glass", (832.6, 457.7, 945.8, 478.5)),
+                                         ("Unloading system", (971.5, 482.1, 1099.2, 503.0)), ("Control unit", (803.8, 698.8, 888.8, 719.7))])
+    body = (title("Tube fiber laser cutting machine", "Tube fiber laser cutting machine")
+            + row(h2("Design advantages") + checks(["Precise cutting and clamping", "Energy saving", "User-friendly operation",
+                                                  "Cost-effective", "Flawless performance"]),
+                  diagram("Rigid and<br>optimized<br>body structure", [("tl", "High speed"), ("tr", "High cutting quality"),
+                                                                     ("l", "Low cost"), ("r", "High technology"), ("b", "Quality components")]),
+                  cols="1fr 1fr", gap=20, align="center")
+            + '<div style="margin-top:14pt">' + labelled("tube/machine-labelled.jpg", labels, h=330) + "</div>")
+    b.page("Tube fiber laser", body, toc="Tube Fiber Laser Cutting Machine")
+    # catalogue p5 — engineered for every profile
+    body = ('<div class="photo-panel" style="height:654pt;margin-top:-4pt"><img src="%s" style="object-position:50%% 55%%">'
+            '<div style="position:absolute;left:0;top:0;right:0;height:62%%;background:linear-gradient(180deg,rgba(24,25,27,.86) 0%%,'
+            'rgba(24,25,27,.62) 45%%,rgba(24,25,27,0) 100%%)"></div>'
+            '<div style="position:absolute;left:18pt;top:16pt;right:18pt"><div style="font:700 30pt/1.05 Oswald;color:#fff;text-transform:uppercase">'
+            'Engineered for<br>every profile</div><div style="font:500 17pt/1.2 Oswald;color:#fff;margin-top:4pt">Tube &amp; profile laser cutting</div>'
+            '<div style="width:60pt;height:3.7pt;background:%s;margin-top:8pt"></div>'
+            '<p style="color:#fff;font-size:10.5pt;max-width:330pt;margin-top:10pt;text-shadow:0 1pt 3pt rgba(0,0,0,.7)">The Tube Laser Series '
+            'delivers fast, precise, and flexible cutting for tubes and profiles. Designed for modern production, it simplifies complex operations, '
+            'improves material efficiency, and ensures consistent results across every part.</p></div>'
+            '<div class="overlay"><div class="st"><div><b>Complex</b><span>Profile cutting</span></div><div><b>High-speed</b><span>Production</span></div>'
+            '<div><b>Precise &amp; clean</b><span>Results</span></div><div><b>Reduced</b><span>Material waste</span></div></div>'
+            '<p><b>Tube Series</b> delivers speed, precision and efficiency for modern production.</p></div></div>'
+            % (im("tube/cutting.png", 1400), ORANGE))
+    b.page("Engineered for every profile", body, toc="Engineered for Every Profile")
+    # catalogue p6 — software
+    body = (title("Software", "TubeST nesting solution") + P(TUBEST)
+            + fig("tube/tubest.png", "TubeST — tube and profile parts nested along a 39.4 ft (12,000 mm) bar", h=290, px=1600)
+            + h2("Optimize tube &amp; profile cutting") + checks(TUBEST_LIST))
+    b.page("Software", body, toc="Software — TubeST")
+    head_page(b)
+    cards = [card(i, t, P(x, cls="sm"), sub=s, h=118) for i, t, s, x in TUBE_EQUIP_1]
+    b.page("Equipment", title("Resonator · chiller · FSCUT control · servo drives", "Equipment") + grid(cards, 2, 20), toc="Equipment")
+    cards = [card(i, t, P(x, cls="sm"), sub=s, h=118) for i, t, s, x in TUBE_EQUIP_2]
+    b.page("Equipment", title("Reducer · rack and pinion · gas regulator · cutting head", "Equipment") + grid(cards, 2, 20))
+    ease_page(b)
+    note = (P("*Cutting thicknesses may vary due to factors such as material quality, operator settings, and cutting speed.", cls="note")
+            + P("Custom voltage available: 208 V, 240 V, 480 V or 600 V 3-phase. CSA-approved electrical panel.", cls="note"))
+    power = "3,000 W · 6,000 W · 12,000 W · 20,000 W"
+    # catalogue p11-12 — FTL, 250 and 350 chucks
+    body = (title("Tube profile fiber laser · FTL series", "FTL series")
+            + fig("tube/ftl-1.png", "FTL with the loading system", h=150, px=2000) + fig("tube/ftl-2.png", "FTL — loading, cutting cabin and unloading", h=220, px=2000)
+            + badges("speed", "support"))
+    b.page("FTL series", body, toc="FTL Series")
+    body = ('<div class="eyebrow" style="margin-bottom:2pt">Technical specifications · FTL series</div>'
+            '<h1>Tube profile</h1><h1 style="color:%s">Fiber laser</h1><div class="rule" style="margin-bottom:14pt"></div>' % OR2
+            + kv([("Machine model", "FTL"), ("Resonator power options", power),
+                  ("Tube diameters", f"{dia(15, 250)}<br>{prof(15, 250)}<br>{dia(30, 350)}<br>{prof(30, 350)}"),
+                  ("Repeatability", "±0.002″ (±0.05 mm)"), ("Max. speed", f"{spd(80, 250)}<br>{spd(54, 350)}"), ("Max. acceleration", "0.6 G"),
+                  ("Voltage and frequency", "380 V 50 Hz / 60 Hz"),
+                  ("Max. profile length and weight capacity", f"{lw(6000, 600, 250)}<br>{lw(9000, 1000, 350)}<br>{lw(12000, 1200, 250)}")],
+                 head=["Technical specifications", "FTL series"])
+            + note + included())
+    b.page("Technical specifications", body)
+    # catalogue p13-14 — FTL, 350, 500 and 640 chucks
+    body = (title("Tube profile fiber laser · FTL series", "FTL series")
+            + fig("tube/ftl-3.png", h=110, px=2000) + fig("tube/ftl-4.png", "FTL — the cutting cabin between the loading and unloading beds", h=150, px=2400)
+            + fig("tube/ftl-5.png", "FTL for long, heavy tube — bars to 40 ft (12 m)", h=170, px=2000) + badges("cost", "support"))
+    b.page("FTL series", body)
+    body = ('<div class="eyebrow" style="margin-bottom:2pt">Technical specifications · FTL series</div>'
+            '<h1>Tube profile</h1><h1 style="color:%s">Fiber laser</h1><div class="rule" style="margin-bottom:14pt"></div>' % OR2
+            + kv([("Machine model", "FTL"), ("Resonator power options", power),
+                  ("Tube diameters", f"{dia(30, 350)}<br>{prof(30, 350)}<br>{dia(30, 500)}<br>{prof(30, 500)}<br>{dia(120, 640)}<br>{prof(120, 640)}"),
+                  ("Repeatability", "±0.004″ (±0.1 mm)"), ("Max. speed", f"{spd(54, 350)}<br>{spd(25, 500)}<br>{spd(25, 640)}"),
+                  ("Max. acceleration", "0.6 G"), ("Voltage and frequency", "380 V 50 Hz / 60 Hz"),
+                  ("Max. profile length and weight capacity", f"{lw(12000, 1400, 350)}<br>{lw(12000, 2100, 500)}<br>{lw(12000, 2600, 640)}")],
+                 head=["Technical specifications", "FTL series"])
+            + note + included())
+    b.page("Technical specifications", body)
+    # catalogue p15-16 — E-FTL
+    body = (title("Tube profile fiber laser · E-FTL series", "E-FTL series")
+            + fig("tube/eftl-side.png", "E-FTL — the cutting cabin and the bed", h=170, px=2000)
+            + fig("tube/eftl-rear.png", "E-FTL — the loading side with the tube supports", h=180, px=2000) + badges("cost", "support", "speed"))
+    b.page("E-FTL series", body, toc="E-FTL Series")
+    body = ('<div class="eyebrow" style="margin-bottom:2pt">Technical specifications · E-FTL series</div>'
+            '<h1>Tube profile</h1><h1 style="color:%s">Fiber laser</h1><div class="rule" style="margin-bottom:12pt"></div>' % OR2
+            + kv([("Machine model", "E-FTL"), ("Resonator power options", power),
+                  ("Tube diameters", "<br>".join(f"{dia(a, c)} · {prof(a, c)}" for a, c in ((8, 120), (10, 180), (15, 250), (30, 350)))),
+                  ("Repeatability", "±0.002″ (±0.05 mm)"), ("Max. speed", f"{spd(120, '120 / 180')}<br>{spd(80, 250)}<br>{spd(54, 350)}"),
+                  ("Max. acceleration", "1 G"), ("Voltage and frequency", "380 V 50 Hz / 60 Hz"),
+                  ("Max. profile length and weight capacity", "<br>".join(lw(m, k, c) for m, k, c in
+                   ((7000, 120, 120), (7000, 240, 180), (7000, 300, 250), (7000, 600, 350), (9000, 440, 250), (9000, 1200, 350),
+                    (12000, 1200, 250), (12000, 1800, 350))))],
+                 head=["Technical specifications", "E-FTL series"])
+            + note + included())
+    b.page("Technical specifications", body)
+
+    # ---- the extra details of Dener's Turkish tube laser catalogue (the owner, Nov 1 2026): capacities by chuck, the model list, photos
+    def cap_rows(n):
+        """[(profile, size in mm, diagonal limit in mm or None)] as Dener charts them"""
+        if n == 540:
+            return [("Round", "Ø30 – 540", None), ("Square", "30 – 500", 710), ("Rectangular", "30 – 500 × 30 – 500", 710),
+                    ("U profile", "30 – 500 × 30 – 540", 710), ("H profile", "30 – 500 × 30 – 540", 710), ("L profile", "30 – 500 × 30 – 540", None)]
+        if n == 640:
+            return [("Round", "Ø120 – 640", None), ("Square", "120 – 640", 640), ("Rectangular", "120 – 640 × 120 – 640", 640),
+                    ("U profile", "120 – 570 × 120 – 640", 640), ("H profile", "120 – 570 × 120 – 640", 640), ("L profile", "120 – 570 × 120 – 570", 640)]
+        r = next(x for c, x, _ in TUBE_CAPS if c == n)
+        return [("Round", "Ø" + r, None), ("Square", r, None), ("Rectangular", f"{r} × {r}", None)] + [
+            (p_, f"{r} × {r}", None) for p_ in ("U profile", "H profile", "L profile")]
+
+    def to_in(t):
+        import re
+        return re.sub(r"(\d+)", lambda m: f"{int(m.group(1)) / 25.4:.1f}", t) + "″"
+
+    def cap_card(n):
+        rows = "".join(f"<tr><th>{p_}</th><td>{to_in(v)}{f' · diagonal ≤{d / 25.4:.1f}″' if d else ''}<br>"
+                       f"<small>{v} mm{f' · ≤{d} mm' if d else ''}</small></td></tr>" for p_, v, d in cap_rows(n))
+        return (f'<div class="card"><div class="cim" style="height:58pt"><img src="{im(f"tube/chuck-{n}.png", 600)}"></div>'
+                f'<div class="ctl">Ø{n / 25.4:.1f}″ chuck <small style="font:400 8pt Barlow;color:#7a7c80">({n} mm)</small></div>'
+                f'<table class="capt"><tbody>{rows}</tbody></table></div>')
+    body = (title("Tube profile laser cutting machine", "Cutting capacity by chuck")
+            + P("The sections each chuck clamps — round, square and rectangular tube and the open U, H and L profiles. The model number "
+                "gives the chuck: 6025 = Ø250 mm chuck.", cls="xs")
+            + grid([cap_card(n) for n in (120, 180, 250, 350, 540, 640)], 3, 12)
+            + P("Sizes as charted by Dener, in inches with the millimetres below. Ask NovoTech to check a large or unusual section against the "
+                "chuck before ordering.", cls="note"))
+    b.page("Cutting capacity", body, toc="Cutting Capacity by Chuck")
+
+    def model_page(series, ms, common, extra):
+        def tl(mm):
+            from dener_data import _ft_m
+            return _ft_m(mm).replace(" (", "<br><small>(") + "</small>"
+        rows = [("Chuck", "", [f"Ø{m[1] / 25.4:.1f}″<br><small>Ø{m[1]} mm</small>" for m in ms]),
+                ("Max. tube length", "", [tl(m[2]) for m in ms])] + extra(ms) + [
+            ("Axis travel X · Y · Z", "", [f"{m[3] / 25.4:.1f} · {m[4] / 25.4:,.0f} · {m[5] / 25.4:.1f}″<br><small>{m[3]:,} · {m[4]:,} · {m[5]:,} mm</small>" for m in ms]),
+            ("Tube feed speed", "", [mmin(m[6]).replace(" (", "<br><small>(") + "</small>" for m in ms]),
+            ("Chuck rotation", "", [f"{m[7]} rpm" for m in ms]),
+            ("Loading + unloading length", "", [_lu_cell(*m[9]) for m in ms]),
+            ("Machine size L × W × H", "", [dims(*m[8]).replace(" (", "<br><small>(") + "</small>" for m in ms])]
+        return (title(f"Tube profile laser cutting machine · {series}", f"{series} models")
+                + kv(common, head=[f"{series} series", "Every model"])
+                + '<div style="margin-top:10pt">' + mtable([m[0].split(" ")[-1] for m in ms], rows, corner=series, cls="tight") + "</div>"
+                + P("The model number is the bed length and the chuck: 6025 = 6 m (20 ft) bed, Ø250 mm chuck. Laser source power, acceleration, "
+                    "repeatability and tube weight: see the technical specifications of the series.", cls="note"))
+
+    def _lu_cell(a, b_):
+        from dener_data import _NOM_FT
+        return f"{_NOM_FT[a]} + {_NOM_FT[b_]} ft<br><small>{a} + {b_} m</small>"
+
+    def _unl_cell(m_):
+        from dener_data import _NOM_FT
+        return f"{_NOM_FT[m_]} ft<br><small>{m_} m</small>"
+
+    common_e = [("Chucks", "2 moving chucks · minimum remnant 1.4″ (35 mm)"), ("Tube support", "Servo-following support system"),
+                ("Automatic lubrication", "Standard"), ("Resonator", "Maxphotonics"), ("Control", "FSCUT3000 · TubePro interface"),
+                ("Nesting software", "TubeST, small-tube version"), ("Motor and drive", "Inovance"), ("Unloading length", "6.6 ft (2 m)")]
+    extra_e = lambda ms: [("Bevel cutting", "", ["Option"] * len(ms)),
+                          ("Loading system", "", ["Semi-automatic or fully automatic · option"] * 2 + ["Fully automatic · option"] * 4),
+                          ("Cutting head", "BOCI", ["≤3 kW BLT310T<br>6 kW BLT421TS"] * 2 + ["≤3 kW BLT310T<br>6 kW BLT421TS<br>12 kW BLT442T"] * 4)]
+    b.page("Model list", model_page("E-FTL", EFTL_M, common_e, extra_e), toc="E-FTL Models")
+    common_f = [("Chucks", "3 moving chucks · minimum remnant 0″ — the last part is cut with no tail"), ("Tube support", "Servo-following support system"),
+                ("Automatic lubrication", "Standard"), ("Resonator", "Maxphotonics"), ("Cutting head", "BOCI: ≤3 kW BLT310T · 6 kW BLT421TS · 12 kW BLT442T · 20 kW BLT560H"),
+                ("Control", "FSCUT5000A · TubePro interface"), ("Nesting software", "TubeST, professional version"), ("Motor and drive", "Inovance"),
+                ("Loading system", "Semi-automatic loading system · option")]
+    extra_f = lambda ms: [("Bevel cutting", "", ["Option"] * 6 + ["Standard"] * 3),
+                          ("Unloading length", "", [_unl_cell(m[9][1]) for m in ms])]
+    b.page("Model list", model_page("FTL", FTL_M, common_f, extra_f), toc="FTL Models")
+    body = (title("Dener tube profile laser cutting machine", "Perfect cut")
+            + fig("tube/hall.jpg", "A Dener FTL tube laser in a production hall", h=300, fit="cover", px=2000)
+            + row(fig("tube/head-cut.png", "The BOCI head cutting a tube held in the chuck", h=262, fit="cover", px=1200),
+                  fig("tube/cutting.png", "Sparks fly clear of the chuck jaws", h=262, fit="cover", px=1200), gap=14))
+    b.page("In production", body, toc="In Production")
+    service_page(b)
+    world_page(b)
+    range_page(b)
+    b.back("Tube laser for your shop.", ["tube/cover.png", "tube/ftl-5.png", "tube/cabin.png", "tube/hall.jpg"])
+    fill_about(b)
+    return b
+
+
+BOOKS = {"gfl": book_gfl, "smart": book_smart, "spec": book_spec, "tube": book_tube}
 
 
 def main():

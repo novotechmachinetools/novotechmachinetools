@@ -1,0 +1,171 @@
+{
+ "_about": "ULT photos from ADH's website (the owner, Nov 1 2026): better copies of vn-ult-1 / -chuck / -head / -console and 17 more detail photos. tools/vl_laser_pages.py registers these after tools/vl_laser_photos.py's, so they win.",
+ "vn-ult-1": {
+  "src": "tools/src-images/value-laser/vn-ult-hero-2026.webp",
+  "alt": "NovoTech ULT tube laser cutting machine — the cutting cell, two pneumatic chucks and the tube supports along the bed",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-console": {
+  "src": "tools/src-images/value-laser/vn-ult-console-2026.webp",
+  "alt": "ULT control console with the cutting-program display",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-chuck": {
+  "src": "tools/src-images/value-laser/vn-ult-chucks-2026.webp",
+  "alt": "Front and rear pneumatic chucks of the ULT — self-centring, they clamp round, square and rectangular tube",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-head": {
+  "src": "tools/src-images/value-laser/vn-ult-head-2026.webp",
+  "alt": "Autofocus fiber laser cutting head of the ULT",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-photo": {
+  "src": "tools/src-images/value-laser/vn-ult-photo.jpg",
+  "alt": "ULT 12035 in the factory: the cutting cell with its viewing window, the console on its arm and the carts that collect the finished parts",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-bed": {
+  "src": "tools/src-images/value-laser/vn-ult-bed.jpg",
+  "alt": "ULT 12035: the 40 ft (12 m) bed with the following tube supports, the cutting cell at the far end",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-3chuck": {
+  "src": "tools/src-images/value-laser/vn-ult-3chuck.webp",
+  "alt": "Three-chuck layout: the middle chuck takes over the tube as it shortens, so the last part is cut with no remnant (three-chuck versions)",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-chuck-front": {
+  "src": "tools/src-images/value-laser/vn-ult-chuck-front.jpg",
+  "alt": "Front chuck of the ULT 12035 inside the cutting cell",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-chuck-jaws": {
+  "src": "tools/src-images/value-laser/vn-ult-chuck-jaws.jpg",
+  "alt": "Looking through the chuck: the four jaws centre a square tube",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-servo": {
+  "src": "tools/src-images/value-laser/vn-ult-servo.jpg",
+  "alt": "Servo motor driving the chuck's gear ring — it turns the tube under the head",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-supports": {
+  "src": "tools/src-images/value-laser/vn-ult-supports.jpg",
+  "alt": "Following tube supports on the ULT bed: they rise and fall with the tube so a long bar does not sag",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-transfer": {
+  "src": "tools/src-images/value-laser/vn-ult-transfer.webp",
+  "alt": "Tube support and transfer modules under a long profile",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-head-z": {
+  "src": "tools/src-images/value-laser/vn-ult-head-z.jpg",
+  "alt": "Cutting head on the Z axis, the bellows protecting the guides",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-rack": {
+  "src": "tools/src-images/value-laser/vn-ult-rack.jpg",
+  "alt": "Rack and pinion with the linear guide that drive the chuck carriage along the bed",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-screen": {
+  "src": "tools/src-images/value-laser/vn-ult-screen.jpg",
+  "alt": "Tube cutting software on the ULT control screen",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-unload": {
+  "src": "tools/src-images/value-laser/vn-ult-unload.webp",
+  "alt": "Roller tables that collect the cut tube and profile parts",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-cable": {
+  "src": "tools/src-images/value-laser/vn-ult-cable.webp",
+  "alt": "Cable carrier protecting the cables of the motion system",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-fan": {
+  "src": "tools/src-images/value-laser/vn-ult-fan.jpg",
+  "alt": "Cooling fan on the chuck's electrical housing",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-rect": {
+  "src": "tools/src-images/value-laser/vn-ult-rect.webp",
+  "alt": "Rectangular tube held by the chuck above a profile support",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-long": {
+  "src": "tools/src-images/value-laser/vn-ult-long.webp",
+  "alt": "A long profile held between the chucks during a trial cut",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-sample": {
+  "src": "tools/src-images/value-laser/vn-ult-sample.webp",
+  "alt": "Round tube cut on the ULT: the holes along the side and the open end",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ }
+}
