@@ -57,8 +57,6 @@
 
 <div class="wrap page-body">
 {# no "every model at a glance" table on any page (the owner, Nov 1 2026: delete it everywhere, hubs included) #}
-</section>
-{% endif %}
 {% for g in page.groups %}
 <section class="group{{ (' line-' ~ g.brand ~ (' line-value' if g.brand == 'novotech' else ' line-premium')) if g.brand else '' }}" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
   {% if g.brand %}{% set br = site.brands[g.brand] %}
