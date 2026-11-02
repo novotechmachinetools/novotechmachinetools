@@ -227,6 +227,71 @@ PHOTOS.update({
     "tm-ehb10": dict(dir=TUBE, src="EHB-10.png", alt="EHB-10 electric-hydraulic pipe bender"),
     "tm-etr50": dict(dir=TUBE, src="ETR-50.png", alt="ETR-50 electric tube roller with foot pedal"),
 })
+
+# the owner's RAR "Bending brakes" (Nov 2 2026): brakes, folders, lock formers, beading machines, roller stands.  As for the tube benders:
+# a photo replaces the catalogue crop where it is larger or cleaner (the BP-1648H and BSM3150 crops had cut-out holes in the white blades),
+# and models on the site with no photo get theirs.  Kept on the site (its photo is as large or larger, or the new one is not a product
+# shot): ALB, EFMS, HW1830, MFS, TFS, TSB2060, TSBS, W1.2×1500, W2.5×2540A, W2.0×2040, W2.5×1220, PBB2020 (an outdoor photo on a pallet),
+# WF and W1.2×1010 (TTMC advertising frames), ZWJ (text printed over the photo).  Not on the site, left out: RS018, CB24, CHB-24, RM-A,
+# RM-B, RM08, RM18, RM24HM, RM24M, TB12.  boxes: the TTMC logo on the M55, the HW2040E apron plate and touch-screen start page and the
+# WU2.0×2500 beam; the KAKA importer plate on the EB2500.  The BSM2540 photo is the supplier's BSM2540A — the same machine, grey.
+BRAKE = "/home/claude/ttmc-new/brakes_2026-11-02/"
+PHOTOS.update({
+    # ---- replacements (tools/ttmc_more_data.py, ttmc_more_data2.py)
+    "tm-pf16g": dict(dir=BRAKE, src="373903 PF16G.png", alt="PF16G lock former for Pittsburgh locks, double seams, drive cleats and Z shapes"),
+    "tm-lq15": dict(dir=BRAKE, src="373930 LQ-15.png", alt="LQ15 power slitting and bending machine for duct"),
+    "tm-stand-rv": dict(dir=BRAKE, src="378201 RV1100.JPG", alt="RV1100 V-roller stand"),
+    "tm-bp1648h": dict(dir=BRAKE, src="BP-1648H.png", alt="BP-1648H pan and box brake on stand"),
+    "tm-bp1650": dict(dir=BRAKE, src="BP-1650.jpg", alt="BP-1650 pan and box brake, 16 ga × 50″"),
+    "tm-bsm1016": dict(dir=BRAKE, src="BSM1016.png", alt="BSM1016 folding brake with slitter on folding stand"),
+    "tm-bsm2540": dict(dir=BRAKE, src="BSM2540A.png", alt="BSM2540 folding brake with slitter, 100″"),
+    "tm-bsm3150": dict(dir=BRAKE, src="BSM3150X0.8.png", alt="BSM3150 shear and brake machine on its mobile stand"),
+    "tm-eb1250": dict(dir=BRAKE, src="EB1000 RB1250.png", alt="EB1250 magnetic sheet metal brake, 4 ft × 16 ga, with foot switch"),
+    "tm-eb2500": dict(dir=BRAKE, src="EB2000 EB2500 EB3200.jpg", alt="EB2500 magnetic sheet metal brake, 8 ft × 16 ga", boxes=[(837, 766, 878, 802)]),
+    "tm-efm": dict(dir=BRAKE, src="EFM2020 EFM2520 EFM3020.jpg", alt="EFM 3020 electric folding machine, 10 ft"),
+    "tm-etb12": dict(dir=BRAKE, src="ETB12.png", alt="ETB-12 motorized beading machine with foot pedal"),
+    "tm-etb25": dict(dir=BRAKE, src="ETB25 ETB40.png", alt="ETB-25 beading machine, 12 ga, with brake motor and foot pedal"),
+    "tm-hb2248": dict(dir=BRAKE, src="HB-2248.png", alt="HB-2248 all-steel hand brake on folding stand"),
+    "tm-hb2250": dict(dir=BRAKE, src="HB-2250.png", alt="HB-2250 hand brake on stand, 50″"),
+    "tm-hwe": dict(dir=BRAKE, src="HW2040X4.5E HW2540X4.5E HW3050X3.5E.jpg",
+                   alt="HW2040×4.5E hydraulic folding machine with touch screen, servo back gauge and light curtains",
+                   boxes=[(1172, 1306, 1248, 1339), (1985, 906, 2032, 919)]),
+    "tm-hw2440": dict(dir=BRAKE, src="HW2440X3.5 HW3050X3.5.jpg", alt="HW2440×3.5 hydraulic folding machine"),
+    "tm-m55": dict(dir=BRAKE, src="M55 M60.png", alt="M55 compact single-cylinder ironworker with punch, shear and notcher", boxes=[(569, 73, 699, 128)]),
+    "tm-pbb1020": dict(dir=BRAKE, src="PBB1020 2.5 PBB1270 2 PBB15201.5.jpg", alt="PBB1020/2.5 folding machine with foot clamping"),
+    "tm-pbb3sh": dict(dir=BRAKE, src="PBB1020 3SH PBB1270 3SH PBB2050 3SH.jpg", alt="PBB1020/3SH folding machine with quick-release clamp segments"),
+    "tm-stand-rb365": dict(dir=BRAKE, src="RB365.JPG", alt="RB365 roller conveyor"),
+    "tm-rm36": dict(dir=BRAKE, src="RM-24 RM-36 RM-42.jpg", alt="RM24 · RM36 · RM42 power-drive bead roller with variable-speed foot pedal"),
+    "tm-rm18e": dict(dir=BRAKE, src="RM18E.jpg", alt="RM18E power beading machine for round duct"),
+    "tm-rm42h": dict(dir=BRAKE, src="RM24H RM36H RM42H.JPG", alt="RM-24H · RM-36H · RM-42H high-throat variable-speed bead roller"),
+    "tm-w1220": dict(dir=BRAKE, src="W1.2X1220.jpg", alt="W1.2×1220 bench hand brake"),
+    "tm-w1500h": dict(dir=BRAKE, src="W1.2X1500H.png", alt="W1.2×1500H pan and box brake with 125 mm fingers"),
+    "tm-pb1220z": dict(dir=BRAKE, src="W1.5X1220Z.psd", alt="W1.5×1220Z heavy-duty pan and box brake"),
+    "tm-w2540h": dict(dir=BRAKE, src="W1.5X2540H.png", alt="W1.5×2540H heavy pan and box brake for pans to 5-1/8″ deep"),
+    "tm-w1050": dict(dir=BRAKE, src="W1.5x1050.psd", alt="W1.5×1050 floor brake with sliding segments"),
+    "tm-pb1220": dict(dir=BRAKE, src="W1.5x1220.png", alt="W1.5×1220 pan and box brake with removable fingers"),
+    "tm-w1830p": dict(dir=BRAKE, src="W1830X1.5P.png", alt="W1830×1.5P pan and box brake, 72″ × 16 ga"),
+    "tm-wb14": dict(dir=BRAKE, src="WB-14.png", alt="WB-14 bench hand brake"),
+    "tm-wu": dict(dir=BRAKE, src="WU2.0X2500.psd", alt="WU2.0×2500 pan and box brake with two counterweights", boxes=[(1768, 553, 1968, 648)]),
+    # ---- models on the site that had no photo
+    "tm-eb625": dict(dir=BRAKE, src="EB625.jpg", alt="EB625 magnetic sheet metal brake on pedestal stand with foot switch"),
+    "tm-hb1650": dict(dir=BRAKE, src="HB-1650.png", alt="HB-1650 hand brake on stand"),
+    "tm-bsm1220": dict(dir=BRAKE, src="BSM1220.png", alt="BSM1220 folding brake with slitter on stand"),
+    "tm-w305a": dict(dir=BRAKE, src="W1.0X305A,W1.0X610A W1.0X915A.png", alt="W1.0×305A / W1.0×610A / W1.0×915A bench pan and box brake"),
+    "tm-w610": dict(dir=BRAKE, src="W1.0x610.png", alt="W1.0×610 bench hand brake, 24″"),
+    "tm-w460": dict(dir=BRAKE, src="W1.2X460 W1.2X760.png", alt="W1.2×460 / W1.2×760 bench hand brake"),
+    "tm-w610b": dict(dir=BRAKE, src="W1.2X610.png", alt="W1.2×610 bench brake with toggle clamps"),
+    "tm-pbb1020a": dict(dir=BRAKE, src="1020 2A PBB1270 2A PBB1520 1.5A.jpg", alt="PBB1020/2A · PBB1270/2A · PBB1520/1.5A folding machine with foot clamping"),
+    "tm-pbb1020-1a": dict(dir=BRAKE, src="PBB1020 1A  PBB1250 1A.jpg", alt="PBB1020/1A · PBB1250/1A folding machine on stand"),
+    "tm-tsb2020": dict(dir=BRAKE, src="TSB2020 2.jpg", alt="TSB 2020/2 manual folding machine"),
+    "tm-mf3020": dict(dir=BRAKE, src="MF3020.jpg", alt="MF 3020 folding machine, 10 ft"),
+    "tm-brake36": dict(dir=BRAKE, src="36  40 48 72 inch.jpg", alt="36″, 40″, 48″ and 72″ manual bending brake on stand"),
+    "tm-w1220n": dict(dir=BRAKE, src="W2.5X1220N.png", alt="W2.5×1220N floor brake with counterweights"),
+    "tm-w1060": dict(dir=BRAKE, src="W1.2x1060.jpg", alt="W1.2×1060 hand brake on stand"),
+    "tm-w1050f": dict(dir=BRAKE, src="W1.5x1050F.jpg", alt="W1.5×1050F floor brake"),
+    "tm-rb1100": dict(dir=BRAKE, src="RB1100.JPG", alt="RB1100 roller stand"),
+    "tm-rb1000": dict(dir=BRAKE, src="RB1000.jpg", alt="RB1000 roller stand with tripod base"),
+})
 BIG = 1800           # px: a source bigger than this is scaled down before the cut-out
 
 

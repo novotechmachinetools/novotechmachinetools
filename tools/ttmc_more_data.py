@@ -47,7 +47,7 @@ BRAKES = [
        "Unlimited box depth; return flanges down to 3/4″ (19 mm)",
        "Four sets of clamping bars — full length, short set for boxes, narrow and slotted",
        "Foot switch, easy-raise clamp bar and bending stop standard; back gauge 15.4 – 25.2″ (390 – 640 mm)"],
-      ["tm-eb2500", "tm-eb1250", "tm-eb-bars"], headline="16 ga × 2 – 8 ft, 18 ga × 10 ft", cap="[Capacity, length × mild steel]"),
+      ["tm-eb2500", "tm-eb1250", "tm-eb625", "tm-eb-bars"], headline="16 ga × 2 – 8 ft, 18 ga × 10 ft", cap="[Capacity, length × mild steel]"),
     F("tt-hw", P_BRAKE, "hyd", "HW hydraulic folding machines, 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″", "HW hydraulic folders", T["tt-hw"],
       "Hydraulic folding machines for the production sheet-metal shop. The HW…×3.5 models fold 10 ga (3.5 mm) mild steel and 12 ga "
       "stainless over 4, 6, 8 and 10 ft, with segmented upper tools for boxes up to 5.9″ deep, a bending angle stop from 0 to 135°, foot "
@@ -102,7 +102,7 @@ BRAKES = [
        "Floor brakes with counterweights: 12 ga × 48 – 100″, 14 ga × 80 – 120″, 18 ga × 146″, 22 ga × 157″",
        "Bending angle to 135°, 140° on the W1.5×1500 and W1.2×2000",
        "BP-1648H: all-steel welded, adjustable truss bars, bronze bushings, removable nose bar and stop rod for repeat bends"],
-      ["tm-bp1650", "tm-pb1220", "tm-w2540a", "tm-pb1220z", "tm-bp1648h", "tm-w1220pb"], headline="22 ga – 12 ga × 12 – 157″",
+      ["tm-bp1650", "tm-pb1220", "tm-w2540a", "tm-pb1220z", "tm-bp1648h", "tm-w1220pb", "tm-w305a"], headline="22 ga – 12 ga × 12 – 157″",
       cap="[Bending length] × [Capacity, mild steel]", manual=True),
     F("tt-pb-heavy", P_BRAKE, "panbox", "Heavy box and pan brakes, 18 – 14 ga × 52 – 100″, boxes to 9″ deep", "Heavy box and pan brakes",
       [T["tt-pb-heavy"][0]] + NT["tt-pb-heavy2"],
@@ -127,7 +127,8 @@ BRAKES = [
        "W1.2 / W1.5 floor brakes 40 – 51″ with a one-piece blade or sliding segments, bending to 150°",
        "Heavy floor brakes with counterweights and stop rod: 12 ga × 48 – 100″, 14 ga × 120″, 18 ga × 146″, 22 ga × 157″",
        "HB-2248: all-steel welded, adjustable truss bars and bronze bushings, removable nose bar, stop rod, folding stand"],
-      ["tm-hb2250", "tm-w2040", "tm-w1500", "tm-hb2248", "tm-w1050", "tm-w1220"], headline="22 ga – 12 ga × 12″ – 13 ft",
+      ["tm-hb2250", "tm-w2040", "tm-w1500", "tm-hb2248", "tm-w1050", "tm-w1220", "tm-hb1650", "tm-w610", "tm-w1220n", "tm-w1060",
+       "tm-w1050f"], headline="22 ga – 12 ga × 12″ – 13 ft",
       cap="[Bending length] × [Capacity, mild steel]", manual=True),
     F("tt-folder", P_BRAKE, "hand", "Foot-clamp folding machines, 20 – 12 ga × 40 – 119″", "Manual folding machines",
       [T["tt-pbb"][0], T["tt-pbb"][1], T["tt-pb-heavy"][2]],
@@ -140,7 +141,8 @@ BRAKES = [
        "TSBS / MFS: segments 25 – 400 / 500 mm for boxes; TSB 2060/2 cast-iron frame with counterweight",
        "Bending angle to 135°, 150° on the 3SH models",
        "Back gauge on pre-drilled points (3SH) and gas spring in the arm (PBB) as options"],
-      ["tm-pbb", "tm-pbb3sh", "tm-tsbs", "tm-mfs", "tm-wf", "tm-pbb1020", "tm-tsb2060", "tm-tfs"], headline="20 – 12 ga × 40 – 119″",
+      ["tm-pbb", "tm-pbb3sh", "tm-tsbs", "tm-mfs", "tm-wf", "tm-pbb1020", "tm-tsb2060", "tm-tfs", "tm-pbb1020a", "tm-pbb1020-1a",
+       "tm-tsb2020", "tm-mf3020", "tm-brake36"], headline="20 – 12 ga × 40 – 119″",
       cap="[Bending length] × [Capacity, mild steel]", manual=True),
     F("tt-alb", P_BRAKE, "roof", "ALB portable roofing brakes with slitter, 24 ga × 7 – 12.5 ft", "ALB roofing brakes", T["tt-alb"],
       "Portable roofing brakes for flashing, drip edge, sills, cornices and trim on the job site: an anodized aluminum frame on folding "
@@ -171,7 +173,7 @@ BRAKES = [
        "W1.2 bench brakes 18 – 39″ in 18 ga; WB-14 14″ in 20 ga",
        "ZWJ-20 / ZWJ-36 offset brakes: 1/2″ jogs to 90° in 20 ga steel and 18 ga aluminum",
        "Aluminum, copper and steel"],
-      ["tm-bsm3150", "tm-bsm1016", "tm-bsm2540", "tm-bsm3150-head", "tm-w1000", "tm-wb14", "tm-zwj"], headline="22 – 18 ga × 14 – 124″",
+      ["tm-bsm3150", "tm-bsm1016", "tm-bsm1220", "tm-bsm2540", "tm-bsm3150-head", "tm-w1000", "tm-w460", "tm-w610b", "tm-wb14", "tm-zwj"], headline="22 – 18 ga × 14 – 124″",
       cap="[Working length]", manual=True),
     F("tt-3in1", P_BRAKE, "combo", "3-in-1 shear, brake and roll machines, 20 – 16 ga × 8 – 52″", "3-in-1 machines", T["tt-3in1"] + T["tt-3in1a"],
       "Hand-operated combination machines that shear, bend and roll sheet on one frame: 20 ga (1 mm) mild steel over 8 to 52″ and 16 ga "

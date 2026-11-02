@@ -55,7 +55,7 @@ COLD = [
       ["Height-adjustable stands 23 – 43″; loads to 728 lb", "Roller conveyors 1,323 – 1,543 lb; extensions of 79″, 118″ and more",
        "RB365×3000D: 120″ conveyor with a digital length stop, 882 lb", "SRB-320×1000D / 2000D: 39″ and 79″ stands with vertical side rollers, 1,323 lb",
        "RA785: 79″ roller table with measuring feed, ±0.012″ (0.3 mm)"],
-      ["tm-stand-ra785", "tm-rb3653000d", "tm-srb3202000d", "tm-stand-rb365", "tm-stand-rv", "tm-rb3653000d-stop"],
+      ["tm-stand-ra785", "tm-rb3653000d", "tm-srb3202000d", "tm-stand-rb365", "tm-stand-rv", "tm-rb1100", "tm-rb1000", "tm-rb3653000d-stop"],
       headline="Stands, conveyors and roller tables", cap="[Type]", manual=True),
 ]
 

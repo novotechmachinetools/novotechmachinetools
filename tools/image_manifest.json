@@ -83301,18 +83301,30 @@
   "alt": "PF16G lock former for Pittsburgh locks, double seams, drive cleats and Z shapes",
   "variants": [
    {
+    "w": 1200,
+    "h": 1135,
+    "file": "img/ttmc-more/tm-pf16g-1200.webp",
+    "bytes": 71132
+   },
+   {
+    "w": 800,
+    "h": 757,
+    "file": "img/ttmc-more/tm-pf16g-800.webp",
+    "bytes": 42736
+   },
+   {
     "w": 480,
-    "h": 502,
+    "h": 454,
     "file": "img/ttmc-more/tm-pf16g-480.webp",
-    "bytes": 30942
+    "bytes": 23146
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 153,
-   "h": 160,
+   "w": 160,
+   "h": 151,
    "file": "img/ttmc-more/tm-pf16g-thumb.webp",
-   "bytes": 6922
+   "bytes": 5876
   },
   "cut": "birefnet"
  },
@@ -84030,18 +84042,30 @@
   "alt": "RM18E power beading machine for round duct",
   "variants": [
    {
-    "w": 409,
-    "h": 455,
-    "file": "img/ttmc-more/tm-rm18e-409.webp",
-    "bytes": 26886
+    "w": 1194,
+    "h": 1336,
+    "file": "img/ttmc-more/tm-rm18e-1194.webp",
+    "bytes": 93406
+   },
+   {
+    "w": 800,
+    "h": 895,
+    "file": "img/ttmc-more/tm-rm18e-800.webp",
+    "bytes": 69464
+   },
+   {
+    "w": 480,
+    "h": 537,
+    "file": "img/ttmc-more/tm-rm18e-480.webp",
+    "bytes": 38920
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 144,
+   "w": 143,
    "h": 160,
    "file": "img/ttmc-more/tm-rm18e-thumb.webp",
-   "bytes": 8804
+   "bytes": 9040
   },
   "cut": "birefnet"
  },
@@ -84084,40 +84108,64 @@
   "cut": "birefnet"
  },
  "tm-rm36": {
-  "alt": "RM36 power-drive bead roller with 36\u2033 throat and variable-speed foot pedal",
+  "alt": "RM24 \u00b7 RM36 \u00b7 RM42 power-drive bead roller with variable-speed foot pedal",
   "variants": [
    {
+    "w": 944,
+    "h": 1430,
+    "file": "img/ttmc-more/tm-rm36-944.webp",
+    "bytes": 94718
+   },
+   {
+    "w": 800,
+    "h": 1212,
+    "file": "img/ttmc-more/tm-rm36-800.webp",
+    "bytes": 88310
+   },
+   {
     "w": 480,
-    "h": 474,
+    "h": 727,
     "file": "img/ttmc-more/tm-rm36-480.webp",
-    "bytes": 32648
+    "bytes": 50768
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 158,
+   "w": 106,
+   "h": 160,
    "file": "img/ttmc-more/tm-rm36-thumb.webp",
-   "bytes": 8814
+   "bytes": 7748
   },
   "cut": "birefnet"
  },
  "tm-rm42h": {
-  "alt": "RM-42H high-throat variable-speed bead roller, 42\u2033",
+  "alt": "RM-24H \u00b7 RM-36H \u00b7 RM-42H high-throat variable-speed bead roller",
   "variants": [
    {
+    "w": 1080,
+    "h": 1495,
+    "file": "img/ttmc-more/tm-rm42h-1080.webp",
+    "bytes": 88294
+   },
+   {
+    "w": 800,
+    "h": 1107,
+    "file": "img/ttmc-more/tm-rm42h-800.webp",
+    "bytes": 72166
+   },
+   {
     "w": 480,
-    "h": 609,
+    "h": 664,
     "file": "img/ttmc-more/tm-rm42h-480.webp",
-    "bytes": 35934
+    "bytes": 40182
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 126,
+   "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-rm42h-thumb.webp",
-   "bytes": 7022
+   "bytes": 7160
   },
   "cut": "birefnet"
  },
@@ -84728,18 +84776,30 @@
   "alt": "RB365 roller conveyor",
   "variants": [
    {
-    "w": 417,
-    "h": 322,
-    "file": "img/ttmc-more/tm-stand-rb365-417.webp",
-    "bytes": 23388
+    "w": 1200,
+    "h": 1020,
+    "file": "img/ttmc-more/tm-stand-rb365-1200.webp",
+    "bytes": 98898
+   },
+   {
+    "w": 800,
+    "h": 680,
+    "file": "img/ttmc-more/tm-stand-rb365-800.webp",
+    "bytes": 64274
+   },
+   {
+    "w": 480,
+    "h": 408,
+    "file": "img/ttmc-more/tm-stand-rb365-480.webp",
+    "bytes": 34294
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 124,
+   "h": 136,
    "file": "img/ttmc-more/tm-stand-rb365-thumb.webp",
-   "bytes": 8186
+   "bytes": 8718
   },
   "cut": "birefnet"
  },
@@ -84747,18 +84807,24 @@
   "alt": "RV1100 V-roller stand",
   "variants": [
    {
-    "w": 199,
-    "h": 401,
-    "file": "img/ttmc-more/tm-stand-rv-199.webp",
-    "bytes": 10944
+    "w": 800,
+    "h": 1654,
+    "file": "img/ttmc-more/tm-stand-rv-800.webp",
+    "bytes": 67368
+   },
+   {
+    "w": 480,
+    "h": 993,
+    "file": "img/ttmc-more/tm-stand-rv-480.webp",
+    "bytes": 37900
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 79,
+   "w": 77,
    "h": 160,
    "file": "img/ttmc-more/tm-stand-rv-thumb.webp",
-   "bytes": 4342
+   "bytes": 4302
   },
   "cut": "birefnet"
  },
@@ -85857,10 +85923,22 @@
   "alt": "W1.5\u00d71050 floor brake with sliding segments",
   "variants": [
    {
-    "w": 416,
-    "h": 417,
-    "file": "img/ttmc-more/tm-w1050-416.webp",
-    "bytes": 37040
+    "w": 1200,
+    "h": 1204,
+    "file": "img/ttmc-more/tm-w1050-1200.webp",
+    "bytes": 131752
+   },
+   {
+    "w": 800,
+    "h": 802,
+    "file": "img/ttmc-more/tm-w1050-800.webp",
+    "bytes": 88434
+   },
+   {
+    "w": 480,
+    "h": 481,
+    "file": "img/ttmc-more/tm-w1050-480.webp",
+    "bytes": 49438
    }
   ],
   "alpha": true,
@@ -85868,7 +85946,7 @@
    "w": 160,
    "h": 160,
    "file": "img/ttmc-more/tm-w1050-thumb.webp",
-   "bytes": 13048
+   "bytes": 12384
   },
   "cut": "birefnet"
  },
@@ -85876,10 +85954,16 @@
   "alt": "W1.2\u00d71220 bench hand brake",
   "variants": [
    {
+    "w": 780,
+    "h": 352,
+    "file": "img/ttmc-more/tm-w1220-780.webp",
+    "bytes": 31114
+   },
+   {
     "w": 480,
-    "h": 216,
+    "h": 217,
     "file": "img/ttmc-more/tm-w1220-480.webp",
-    "bytes": 23840
+    "bytes": 22028
    }
   ],
   "alpha": true,
@@ -85887,7 +85971,7 @@
    "w": 160,
    "h": 72,
    "file": "img/ttmc-more/tm-w1220-thumb.webp",
-   "bytes": 5498
+   "bytes": 5656
   },
   "cut": "birefnet"
  },
@@ -85933,10 +86017,22 @@
   "alt": "W1.2\u00d71500H pan and box brake with 125 mm fingers",
   "variants": [
    {
+    "w": 1200,
+    "h": 941,
+    "file": "img/ttmc-more/tm-w1500h-1200.webp",
+    "bytes": 88270
+   },
+   {
+    "w": 800,
+    "h": 627,
+    "file": "img/ttmc-more/tm-w1500h-800.webp",
+    "bytes": 56070
+   },
+   {
     "w": 480,
     "h": 376,
     "file": "img/ttmc-more/tm-w1500h-480.webp",
-    "bytes": 31658
+    "bytes": 30912
    }
   ],
   "alpha": true,
@@ -85944,7 +86040,7 @@
    "w": 160,
    "h": 125,
    "file": "img/ttmc-more/tm-w1500h-thumb.webp",
-   "bytes": 7290
+   "bytes": 7246
   },
   "cut": "birefnet"
  },
@@ -85952,18 +86048,30 @@
   "alt": "W1830\u00d71.5P pan and box brake, 72\u2033 \u00d7 16 ga",
   "variants": [
    {
+    "w": 1200,
+    "h": 804,
+    "file": "img/ttmc-more/tm-w1830p-1200.webp",
+    "bytes": 73746
+   },
+   {
+    "w": 800,
+    "h": 536,
+    "file": "img/ttmc-more/tm-w1830p-800.webp",
+    "bytes": 47666
+   },
+   {
     "w": 480,
-    "h": 323,
+    "h": 322,
     "file": "img/ttmc-more/tm-w1830p-480.webp",
-    "bytes": 26960
+    "bytes": 25554
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 108,
+   "h": 107,
    "file": "img/ttmc-more/tm-w1830p-thumb.webp",
-   "bytes": 6244
+   "bytes": 6280
   },
   "cut": "birefnet"
  },
@@ -86021,18 +86129,30 @@
   "alt": "W1.5\u00d72540H heavy pan and box brake for pans to 5-1/8\u2033 deep",
   "variants": [
    {
+    "w": 1200,
+    "h": 614,
+    "file": "img/ttmc-more/tm-w2540h-1200.webp",
+    "bytes": 71276
+   },
+   {
+    "w": 800,
+    "h": 409,
+    "file": "img/ttmc-more/tm-w2540h-800.webp",
+    "bytes": 43500
+   },
+   {
     "w": 480,
-    "h": 248,
+    "h": 246,
     "file": "img/ttmc-more/tm-w2540h-480.webp",
-    "bytes": 23956
+    "bytes": 22996
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 83,
+   "h": 82,
    "file": "img/ttmc-more/tm-w2540h-thumb.webp",
-   "bytes": 5800
+   "bytes": 5852
   },
   "cut": "birefnet"
  },
@@ -86040,18 +86160,24 @@
   "alt": "WB-14 bench hand brake",
   "variants": [
    {
+    "w": 800,
+    "h": 662,
+    "file": "img/ttmc-more/tm-wb14-800.webp",
+    "bytes": 61926
+   },
+   {
     "w": 480,
-    "h": 279,
+    "h": 397,
     "file": "img/ttmc-more/tm-wb14-480.webp",
-    "bytes": 23912
+    "bytes": 34262
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 93,
+   "h": 132,
    "file": "img/ttmc-more/tm-wb14-thumb.webp",
-   "bytes": 5902
+   "bytes": 8568
   },
   "cut": "birefnet"
  },
@@ -86166,18 +86292,30 @@
   "alt": "WU2.0\u00d72500 pan and box brake with two counterweights",
   "variants": [
    {
+    "w": 1200,
+    "h": 793,
+    "file": "img/ttmc-more/tm-wu-1200.webp",
+    "bytes": 78526
+   },
+   {
+    "w": 800,
+    "h": 529,
+    "file": "img/ttmc-more/tm-wu-800.webp",
+    "bytes": 49500
+   },
+   {
     "w": 480,
-    "h": 330,
+    "h": 317,
     "file": "img/ttmc-more/tm-wu-480.webp",
-    "bytes": 27252
+    "bytes": 26516
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 110,
+   "h": 106,
    "file": "img/ttmc-more/tm-wu-thumb.webp",
-   "bytes": 6518
+   "bytes": 6458
   },
   "cut": "birefnet"
  },
@@ -86967,23 +87105,23 @@
   "variants": [
    {
     "w": 800,
-    "h": 534,
+    "h": 591,
     "file": "img/ttmc-more/tm-bp1648h-800.webp",
-    "bytes": 63762
+    "bytes": 50718
    },
    {
     "w": 480,
-    "h": 320,
+    "h": 354,
     "file": "img/ttmc-more/tm-bp1648h-480.webp",
-    "bytes": 35288
+    "bytes": 28650
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 107,
+   "h": 118,
    "file": "img/ttmc-more/tm-bp1648h-thumb.webp",
-   "bytes": 8484
+   "bytes": 7498
   },
   "cut": "birefnet"
  },
@@ -86991,16 +87129,22 @@
   "alt": "BP-1650 pan and box brake, 16 ga \u00d7 50\u2033",
   "variants": [
    {
+    "w": 1048,
+    "h": 466,
+    "file": "img/ttmc-more/tm-bp1650-1048.webp",
+    "bytes": 42028
+   },
+   {
     "w": 800,
-    "h": 355,
+    "h": 356,
     "file": "img/ttmc-more/tm-bp1650-800.webp",
-    "bytes": 35334
+    "bytes": 35872
    },
    {
     "w": 480,
     "h": 213,
     "file": "img/ttmc-more/tm-bp1650-480.webp",
-    "bytes": 20220
+    "bytes": 19792
    }
   ],
   "alpha": true,
@@ -87008,7 +87152,7 @@
    "w": 160,
    "h": 71,
    "file": "img/ttmc-more/tm-bp1650-thumb.webp",
-   "bytes": 4590
+   "bytes": 4666
   },
   "cut": "birefnet"
  },
@@ -87111,18 +87255,24 @@
   "alt": "BSM1016 folding brake with slitter on folding stand",
   "variants": [
    {
-    "w": 401,
-    "h": 338,
-    "file": "img/ttmc-more/tm-bsm1016-401.webp",
-    "bytes": 20196
+    "w": 800,
+    "h": 685,
+    "file": "img/ttmc-more/tm-bsm1016-800.webp",
+    "bytes": 51406
+   },
+   {
+    "w": 480,
+    "h": 411,
+    "file": "img/ttmc-more/tm-bsm1016-480.webp",
+    "bytes": 29372
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 135,
+   "h": 137,
    "file": "img/ttmc-more/tm-bsm1016-thumb.webp",
-   "bytes": 7918
+   "bytes": 8400
   },
   "cut": "birefnet"
  },
@@ -87130,16 +87280,22 @@
   "alt": "BSM2540 folding brake with slitter, 100\u2033",
   "variants": [
    {
+    "w": 1200,
+    "h": 466,
+    "file": "img/ttmc-more/tm-bsm2540-1200.webp",
+    "bytes": 41310
+   },
+   {
     "w": 800,
-    "h": 308,
+    "h": 311,
     "file": "img/ttmc-more/tm-bsm2540-800.webp",
-    "bytes": 28786
+    "bytes": 25062
    },
    {
     "w": 480,
-    "h": 185,
+    "h": 186,
     "file": "img/ttmc-more/tm-bsm2540-480.webp",
-    "bytes": 17596
+    "bytes": 13656
    }
   ],
   "alpha": true,
@@ -87147,7 +87303,7 @@
    "w": 160,
    "h": 62,
    "file": "img/ttmc-more/tm-bsm2540-thumb.webp",
-   "bytes": 4590
+   "bytes": 3742
   },
   "cut": "birefnet"
  },
@@ -87593,18 +87749,30 @@
   "alt": "EB1250 magnetic sheet metal brake, 4 ft \u00d7 16 ga, with foot switch",
   "variants": [
    {
+    "w": 1200,
+    "h": 1222,
+    "file": "img/ttmc-more/tm-eb1250-1200.webp",
+    "bytes": 107658
+   },
+   {
+    "w": 800,
+    "h": 814,
+    "file": "img/ttmc-more/tm-eb1250-800.webp",
+    "bytes": 71740
+   },
+   {
     "w": 480,
-    "h": 507,
+    "h": 489,
     "file": "img/ttmc-more/tm-eb1250-480.webp",
-    "bytes": 37964
+    "bytes": 40652
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 152,
+   "w": 157,
    "h": 160,
    "file": "img/ttmc-more/tm-eb1250-thumb.webp",
-   "bytes": 9278
+   "bytes": 9716
   },
   "cut": "birefnet"
  },
@@ -87612,16 +87780,22 @@
   "alt": "EB2500 magnetic sheet metal brake, 8 ft \u00d7 16 ga",
   "variants": [
    {
+    "w": 1200,
+    "h": 493,
+    "file": "img/ttmc-more/tm-eb2500-1200.webp",
+    "bytes": 48608
+   },
+   {
     "w": 800,
     "h": 329,
     "file": "img/ttmc-more/tm-eb2500-800.webp",
-    "bytes": 30830
+    "bytes": 29664
    },
    {
     "w": 480,
-    "h": 198,
+    "h": 197,
     "file": "img/ttmc-more/tm-eb2500-480.webp",
-    "bytes": 17674
+    "bytes": 15334
    }
   ],
   "alpha": true,
@@ -87629,7 +87803,7 @@
    "w": 160,
    "h": 66,
    "file": "img/ttmc-more/tm-eb2500-thumb.webp",
-   "bytes": 4808
+   "bytes": 4026
   },
   "cut": "birefnet"
  },
@@ -87737,24 +87911,30 @@
   "alt": "EFM 3020 electric folding machine, 10 ft",
   "variants": [
    {
+    "w": 1200,
+    "h": 557,
+    "file": "img/ttmc-more/tm-efm-1200.webp",
+    "bytes": 61294
+   },
+   {
     "w": 800,
-    "h": 397,
+    "h": 371,
     "file": "img/ttmc-more/tm-efm-800.webp",
-    "bytes": 41238
+    "bytes": 41152
    },
    {
     "w": 480,
-    "h": 238,
+    "h": 223,
     "file": "img/ttmc-more/tm-efm-480.webp",
-    "bytes": 23872
+    "bytes": 22984
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 79,
+   "h": 74,
    "file": "img/ttmc-more/tm-efm-thumb.webp",
-   "bytes": 5898
+   "bytes": 5840
   },
   "cut": "birefnet"
  },
@@ -87906,18 +88086,24 @@
   "alt": "ETB-12 motorized beading machine with foot pedal",
   "variants": [
    {
-    "w": 312,
-    "h": 470,
-    "file": "img/ttmc-more/tm-etb12-312.webp",
-    "bytes": 23102
+    "w": 800,
+    "h": 1223,
+    "file": "img/ttmc-more/tm-etb12-800.webp",
+    "bytes": 71550
+   },
+   {
+    "w": 480,
+    "h": 734,
+    "file": "img/ttmc-more/tm-etb12-480.webp",
+    "bytes": 42828
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 106,
+   "w": 105,
    "h": 160,
    "file": "img/ttmc-more/tm-etb12-thumb.webp",
-   "bytes": 7226
+   "bytes": 7050
   },
   "cut": "birefnet"
  },
@@ -87925,18 +88111,24 @@
   "alt": "ETB-25 beading machine, 12 ga, with brake motor and foot pedal",
   "variants": [
    {
+    "w": 800,
+    "h": 649,
+    "file": "img/ttmc-more/tm-etb25-800.webp",
+    "bytes": 56104
+   },
+   {
     "w": 480,
-    "h": 380,
+    "h": 389,
     "file": "img/ttmc-more/tm-etb25-480.webp",
-    "bytes": 30130
+    "bytes": 31026
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 127,
+   "h": 130,
    "file": "img/ttmc-more/tm-etb25-thumb.webp",
-   "bytes": 7626
+   "bytes": 7830
   },
   "cut": "birefnet"
  },
@@ -88228,18 +88420,24 @@
   "alt": "HB-2248 all-steel hand brake on folding stand",
   "variants": [
    {
+    "w": 800,
+    "h": 542,
+    "file": "img/ttmc-more/tm-hb2248-800.webp",
+    "bytes": 46424
+   },
+   {
     "w": 480,
-    "h": 324,
+    "h": 325,
     "file": "img/ttmc-more/tm-hb2248-480.webp",
-    "bytes": 28414
+    "bytes": 27426
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 108,
+   "h": 109,
    "file": "img/ttmc-more/tm-hb2248-thumb.webp",
-   "bytes": 6918
+   "bytes": 6930
   },
   "cut": "birefnet"
  },
@@ -88247,18 +88445,24 @@
   "alt": "HB-2250 hand brake on stand, 50\u2033",
   "variants": [
    {
+    "w": 800,
+    "h": 299,
+    "file": "img/ttmc-more/tm-hb2250-800.webp",
+    "bytes": 29322
+   },
+   {
     "w": 480,
-    "h": 182,
+    "h": 179,
     "file": "img/ttmc-more/tm-hb2250-480.webp",
-    "bytes": 17382
+    "bytes": 17064
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 61,
+   "h": 60,
    "file": "img/ttmc-more/tm-hb2250-thumb.webp",
-   "bytes": 4538
+   "bytes": 4528
   },
   "cut": "birefnet"
  },
@@ -89134,49 +89338,61 @@
   "alt": "HW2440\u00d73.5 hydraulic folding machine",
   "variants": [
    {
+    "w": 1200,
+    "h": 447,
+    "file": "img/ttmc-more/tm-hw2440-1200.webp",
+    "bytes": 50102
+   },
+   {
     "w": 800,
-    "h": 400,
+    "h": 298,
     "file": "img/ttmc-more/tm-hw2440-800.webp",
-    "bytes": 43598
+    "bytes": 29778
    },
    {
     "w": 480,
-    "h": 240,
+    "h": 179,
     "file": "img/ttmc-more/tm-hw2440-480.webp",
-    "bytes": 23570
+    "bytes": 15774
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 80,
+   "h": 60,
    "file": "img/ttmc-more/tm-hw2440-thumb.webp",
-   "bytes": 5822
+   "bytes": 3984
   },
   "cut": "birefnet"
  },
  "tm-hwe": {
-  "alt": "HW2040\u00d74.5E hydraulic folding machine with touch screen, servo back gauge and light curtain",
+  "alt": "HW2040\u00d74.5E hydraulic folding machine with touch screen, servo back gauge and light curtains",
   "variants": [
    {
+    "w": 1200,
+    "h": 745,
+    "file": "img/ttmc-more/tm-hwe-1200.webp",
+    "bytes": 61314
+   },
+   {
     "w": 800,
-    "h": 489,
+    "h": 496,
     "file": "img/ttmc-more/tm-hwe-800.webp",
-    "bytes": 38424
+    "bytes": 37748
    },
    {
     "w": 480,
-    "h": 293,
+    "h": 298,
     "file": "img/ttmc-more/tm-hwe-480.webp",
-    "bytes": 21102
+    "bytes": 20532
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 98,
+   "h": 99,
    "file": "img/ttmc-more/tm-hwe-thumb.webp",
-   "bytes": 5070
+   "bytes": 5082
   },
   "cut": "birefnet"
  },
@@ -89433,10 +89649,22 @@
   "alt": "LQ15 power slitting and bending machine for duct",
   "variants": [
    {
+    "w": 1200,
+    "h": 793,
+    "file": "img/ttmc-more/tm-lq15-1200.webp",
+    "bytes": 83384
+   },
+   {
+    "w": 800,
+    "h": 529,
+    "file": "img/ttmc-more/tm-lq15-800.webp",
+    "bytes": 52202
+   },
+   {
     "w": 480,
-    "h": 319,
+    "h": 317,
     "file": "img/ttmc-more/tm-lq15-480.webp",
-    "bytes": 30372
+    "bytes": 28440
    }
   ],
   "alpha": true,
@@ -89444,7 +89672,7 @@
    "w": 160,
    "h": 106,
    "file": "img/ttmc-more/tm-lq15-thumb.webp",
-   "bytes": 7644
+   "bytes": 7206
   },
   "cut": "birefnet"
  },
@@ -89452,18 +89680,30 @@
   "alt": "M55 compact single-cylinder ironworker with punch, shear and notcher",
   "variants": [
    {
+    "w": 1200,
+    "h": 1440,
+    "file": "img/ttmc-more/tm-m55-1200.webp",
+    "bytes": 122370
+   },
+   {
+    "w": 800,
+    "h": 960,
+    "file": "img/ttmc-more/tm-m55-800.webp",
+    "bytes": 81618
+   },
+   {
     "w": 480,
-    "h": 630,
+    "h": 576,
     "file": "img/ttmc-more/tm-m55-480.webp",
-    "bytes": 48872
+    "bytes": 44658
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 122,
+   "w": 133,
    "h": 160,
    "file": "img/ttmc-more/tm-m55-thumb.webp",
-   "bytes": 8528
+   "bytes": 8376
   },
   "cut": "birefnet"
  },
@@ -89679,18 +89919,24 @@
   "alt": "W1.5\u00d71220 pan and box brake with removable fingers",
   "variants": [
    {
+    "w": 776,
+    "h": 442,
+    "file": "img/ttmc-more/tm-pb1220-776.webp",
+    "bytes": 44426
+   },
+   {
     "w": 480,
-    "h": 275,
+    "h": 273,
     "file": "img/ttmc-more/tm-pb1220-480.webp",
-    "bytes": 27224
+    "bytes": 27676
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 92,
+   "h": 91,
    "file": "img/ttmc-more/tm-pb1220-thumb.webp",
-   "bytes": 6430
+   "bytes": 6260
   },
   "cut": "birefnet"
  },
@@ -89698,18 +89944,30 @@
   "alt": "W1.5\u00d71220Z heavy-duty pan and box brake",
   "variants": [
    {
+    "w": 1200,
+    "h": 516,
+    "file": "img/ttmc-more/tm-pb1220z-1200.webp",
+    "bytes": 58038
+   },
+   {
+    "w": 800,
+    "h": 344,
+    "file": "img/ttmc-more/tm-pb1220z-800.webp",
+    "bytes": 36620
+   },
+   {
     "w": 480,
-    "h": 199,
+    "h": 206,
     "file": "img/ttmc-more/tm-pb1220z-480.webp",
-    "bytes": 19612
+    "bytes": 19786
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 66,
+   "h": 69,
    "file": "img/ttmc-more/tm-pb1220z-thumb.webp",
-   "bytes": 4622
+   "bytes": 4736
   },
   "cut": "birefnet"
  },
@@ -89736,18 +89994,24 @@
   "alt": "PBB1020/2.5 folding machine with foot clamping",
   "variants": [
    {
-    "w": 471,
-    "h": 466,
-    "file": "img/ttmc-more/tm-pbb1020-471.webp",
-    "bytes": 32706
+    "w": 772,
+    "h": 706,
+    "file": "img/ttmc-more/tm-pbb1020-772.webp",
+    "bytes": 56768
+   },
+   {
+    "w": 480,
+    "h": 439,
+    "file": "img/ttmc-more/tm-pbb1020-480.webp",
+    "bytes": 41282
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 158,
+   "h": 146,
    "file": "img/ttmc-more/tm-pbb1020-thumb.webp",
-   "bytes": 11046
+   "bytes": 11070
   },
   "cut": "birefnet"
  },
@@ -89755,18 +90019,30 @@
   "alt": "PBB1020/3SH folding machine with quick-release clamp segments",
   "variants": [
    {
+    "w": 1200,
+    "h": 1150,
+    "file": "img/ttmc-more/tm-pbb3sh-1200.webp",
+    "bytes": 106618
+   },
+   {
+    "w": 800,
+    "h": 766,
+    "file": "img/ttmc-more/tm-pbb3sh-800.webp",
+    "bytes": 66180
+   },
+   {
     "w": 480,
-    "h": 493,
+    "h": 460,
     "file": "img/ttmc-more/tm-pbb3sh-480.webp",
-    "bytes": 45314
+    "bytes": 36744
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 156,
-   "h": 160,
+   "w": 160,
+   "h": 153,
    "file": "img/ttmc-more/tm-pbb3sh-thumb.webp",
-   "bytes": 11134
+   "bytes": 9472
   },
   "cut": "birefnet"
  },
@@ -90698,29 +90974,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 396,
+    "h": 378,
     "file": "img/ttmc-more/tm-bsm3150-1200.webp",
-    "bytes": 45716
+    "bytes": 49726
    },
    {
     "w": 800,
-    "h": 264,
+    "h": 252,
     "file": "img/ttmc-more/tm-bsm3150-800.webp",
-    "bytes": 28986
+    "bytes": 30358
    },
    {
     "w": 480,
-    "h": 159,
+    "h": 151,
     "file": "img/ttmc-more/tm-bsm3150-480.webp",
-    "bytes": 15784
+    "bytes": 17578
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 53,
+   "h": 50,
    "file": "img/ttmc-more/tm-bsm3150-thumb.webp",
-   "bytes": 4200
+   "bytes": 4516
   },
   "cut": "birefnet"
  },
@@ -116216,6 +116492,479 @@
    "h": 160,
    "file": "img/ttmc-more/tm-tb3a-thumb.webp",
    "bytes": 5068
+  },
+  "cut": "birefnet"
+ },
+ "tm-brake36": {
+  "alt": "36\u2033, 40\u2033, 48\u2033 and 72\u2033 manual bending brake on stand",
+  "variants": [
+   {
+    "w": 1128,
+    "h": 1014,
+    "file": "img/ttmc-more/tm-brake36-1128.webp",
+    "bytes": 67892
+   },
+   {
+    "w": 800,
+    "h": 719,
+    "file": "img/ttmc-more/tm-brake36-800.webp",
+    "bytes": 56680
+   },
+   {
+    "w": 480,
+    "h": 431,
+    "file": "img/ttmc-more/tm-brake36-480.webp",
+    "bytes": 31752
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 144,
+   "file": "img/ttmc-more/tm-brake36-thumb.webp",
+   "bytes": 7858
+  },
+  "cut": "birefnet"
+ },
+ "tm-bsm1220": {
+  "alt": "BSM1220 folding brake with slitter on stand",
+  "variants": [
+   {
+    "w": 800,
+    "h": 445,
+    "file": "img/ttmc-more/tm-bsm1220-800.webp",
+    "bytes": 42142
+   },
+   {
+    "w": 480,
+    "h": 267,
+    "file": "img/ttmc-more/tm-bsm1220-480.webp",
+    "bytes": 24402
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 89,
+   "file": "img/ttmc-more/tm-bsm1220-thumb.webp",
+   "bytes": 6266
+  },
+  "cut": "birefnet"
+ },
+ "tm-eb625": {
+  "alt": "EB625 magnetic sheet metal brake on pedestal stand with foot switch",
+  "variants": [
+   {
+    "w": 1107,
+    "h": 1308,
+    "file": "img/ttmc-more/tm-eb625-1107.webp",
+    "bytes": 79194
+   },
+   {
+    "w": 800,
+    "h": 945,
+    "file": "img/ttmc-more/tm-eb625-800.webp",
+    "bytes": 62808
+   },
+   {
+    "w": 480,
+    "h": 567,
+    "file": "img/ttmc-more/tm-eb625-480.webp",
+    "bytes": 35424
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 135,
+   "h": 160,
+   "file": "img/ttmc-more/tm-eb625-thumb.webp",
+   "bytes": 7160
+  },
+  "cut": "birefnet"
+ },
+ "tm-hb1650": {
+  "alt": "HB-1650 hand brake on stand",
+  "variants": [
+   {
+    "w": 800,
+    "h": 299,
+    "file": "img/ttmc-more/tm-hb1650-800.webp",
+    "bytes": 29256
+   },
+   {
+    "w": 480,
+    "h": 179,
+    "file": "img/ttmc-more/tm-hb1650-480.webp",
+    "bytes": 17394
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 60,
+   "file": "img/ttmc-more/tm-hb1650-thumb.webp",
+   "bytes": 4272
+  },
+  "cut": "birefnet"
+ },
+ "tm-mf3020": {
+  "alt": "MF 3020 folding machine, 10 ft",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 529,
+    "file": "img/ttmc-more/tm-mf3020-1200.webp",
+    "bytes": 80924
+   },
+   {
+    "w": 800,
+    "h": 353,
+    "file": "img/ttmc-more/tm-mf3020-800.webp",
+    "bytes": 54460
+   },
+   {
+    "w": 480,
+    "h": 212,
+    "file": "img/ttmc-more/tm-mf3020-480.webp",
+    "bytes": 30232
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 71,
+   "file": "img/ttmc-more/tm-mf3020-thumb.webp",
+   "bytes": 6768
+  },
+  "cut": "birefnet"
+ },
+ "tm-pbb1020-1a": {
+  "alt": "PBB1020/1A \u00b7 PBB1250/1A folding machine on stand",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1189,
+    "file": "img/ttmc-more/tm-pbb1020-1a-1200.webp",
+    "bytes": 95330
+   },
+   {
+    "w": 800,
+    "h": 793,
+    "file": "img/ttmc-more/tm-pbb1020-1a-800.webp",
+    "bytes": 66592
+   },
+   {
+    "w": 480,
+    "h": 476,
+    "file": "img/ttmc-more/tm-pbb1020-1a-480.webp",
+    "bytes": 36436
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 159,
+   "file": "img/ttmc-more/tm-pbb1020-1a-thumb.webp",
+   "bytes": 9748
+  },
+  "cut": "birefnet"
+ },
+ "tm-pbb1020a": {
+  "alt": "PBB1020/2A \u00b7 PBB1270/2A \u00b7 PBB1520/1.5A folding machine with foot clamping",
+  "variants": [
+   {
+    "w": 992,
+    "h": 787,
+    "file": "img/ttmc-more/tm-pbb1020a-992.webp",
+    "bytes": 62124
+   },
+   {
+    "w": 800,
+    "h": 635,
+    "file": "img/ttmc-more/tm-pbb1020a-800.webp",
+    "bytes": 54888
+   },
+   {
+    "w": 480,
+    "h": 381,
+    "file": "img/ttmc-more/tm-pbb1020a-480.webp",
+    "bytes": 30468
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/ttmc-more/tm-pbb1020a-thumb.webp",
+   "bytes": 8120
+  },
+  "cut": "birefnet"
+ },
+ "tm-rb1000": {
+  "alt": "RB1000 roller stand with tripod base",
+  "variants": [
+   {
+    "w": 316,
+    "h": 728,
+    "file": "img/ttmc-more/tm-rb1000-316.webp",
+    "bytes": 21748
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 69,
+   "h": 160,
+   "file": "img/ttmc-more/tm-rb1000-thumb.webp",
+   "bytes": 4448
+  },
+  "cut": "birefnet"
+ },
+ "tm-rb1100": {
+  "alt": "RB1100 roller stand",
+  "variants": [
+   {
+    "w": 1014,
+    "h": 1789,
+    "file": "img/ttmc-more/tm-rb1100-1014.webp",
+    "bytes": 62602
+   },
+   {
+    "w": 800,
+    "h": 1411,
+    "file": "img/ttmc-more/tm-rb1100-800.webp",
+    "bytes": 52676
+   },
+   {
+    "w": 480,
+    "h": 847,
+    "file": "img/ttmc-more/tm-rb1100-480.webp",
+    "bytes": 29336
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 91,
+   "h": 160,
+   "file": "img/ttmc-more/tm-rb1100-thumb.webp",
+   "bytes": 4480
+  },
+  "cut": "birefnet"
+ },
+ "tm-tsb2020": {
+  "alt": "TSB 2020/2 manual folding machine",
+  "variants": [
+   {
+    "w": 761,
+    "h": 452,
+    "file": "img/ttmc-more/tm-tsb2020-761.webp",
+    "bytes": 31992
+   },
+   {
+    "w": 480,
+    "h": 285,
+    "file": "img/ttmc-more/tm-tsb2020-480.webp",
+    "bytes": 25082
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 95,
+   "file": "img/ttmc-more/tm-tsb2020-thumb.webp",
+   "bytes": 6712
+  },
+  "cut": "birefnet"
+ },
+ "tm-w1050f": {
+  "alt": "W1.5\u00d71050F floor brake",
+  "variants": [
+   {
+    "w": 997,
+    "h": 1243,
+    "file": "img/ttmc-more/tm-w1050f-997.webp",
+    "bytes": 131006
+   },
+   {
+    "w": 800,
+    "h": 997,
+    "file": "img/ttmc-more/tm-w1050f-800.webp",
+    "bytes": 113760
+   },
+   {
+    "w": 480,
+    "h": 598,
+    "file": "img/ttmc-more/tm-w1050f-480.webp",
+    "bytes": 63172
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 128,
+   "h": 160,
+   "file": "img/ttmc-more/tm-w1050f-thumb.webp",
+   "bytes": 11762
+  },
+  "cut": "birefnet"
+ },
+ "tm-w1060": {
+  "alt": "W1.2\u00d71060 hand brake on stand",
+  "variants": [
+   {
+    "w": 708,
+    "h": 641,
+    "file": "img/ttmc-more/tm-w1060-708.webp",
+    "bytes": 47256
+   },
+   {
+    "w": 480,
+    "h": 435,
+    "file": "img/ttmc-more/tm-w1060-480.webp",
+    "bytes": 37426
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 145,
+   "file": "img/ttmc-more/tm-w1060-thumb.webp",
+   "bytes": 10290
+  },
+  "cut": "birefnet"
+ },
+ "tm-w1220n": {
+  "alt": "W2.5\u00d71220N floor brake with counterweights",
+  "variants": [
+   {
+    "w": 800,
+    "h": 688,
+    "file": "img/ttmc-more/tm-w1220n-800.webp",
+    "bytes": 50508
+   },
+   {
+    "w": 480,
+    "h": 413,
+    "file": "img/ttmc-more/tm-w1220n-480.webp",
+    "bytes": 30112
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 138,
+   "file": "img/ttmc-more/tm-w1220n-thumb.webp",
+   "bytes": 7352
+  },
+  "cut": "birefnet"
+ },
+ "tm-w305a": {
+  "alt": "W1.0\u00d7305A / W1.0\u00d7610A / W1.0\u00d7915A bench pan and box brake",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 689,
+    "file": "img/ttmc-more/tm-w305a-1200.webp",
+    "bytes": 59694
+   },
+   {
+    "w": 800,
+    "h": 460,
+    "file": "img/ttmc-more/tm-w305a-800.webp",
+    "bytes": 38772
+   },
+   {
+    "w": 480,
+    "h": 276,
+    "file": "img/ttmc-more/tm-w305a-480.webp",
+    "bytes": 20998
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 92,
+   "file": "img/ttmc-more/tm-w305a-thumb.webp",
+   "bytes": 5458
+  },
+  "cut": "birefnet"
+ },
+ "tm-w460": {
+  "alt": "W1.2\u00d7460 / W1.2\u00d7760 bench hand brake",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 944,
+    "file": "img/ttmc-more/tm-w460-1200.webp",
+    "bytes": 57770
+   },
+   {
+    "w": 800,
+    "h": 629,
+    "file": "img/ttmc-more/tm-w460-800.webp",
+    "bytes": 36084
+   },
+   {
+    "w": 480,
+    "h": 378,
+    "file": "img/ttmc-more/tm-w460-480.webp",
+    "bytes": 18550
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 126,
+   "file": "img/ttmc-more/tm-w460-thumb.webp",
+   "bytes": 4788
+  },
+  "cut": "birefnet"
+ },
+ "tm-w610": {
+  "alt": "W1.0\u00d7610 bench hand brake, 24\u2033",
+  "variants": [
+   {
+    "w": 800,
+    "h": 448,
+    "file": "img/ttmc-more/tm-w610-800.webp",
+    "bytes": 30620
+   },
+   {
+    "w": 480,
+    "h": 269,
+    "file": "img/ttmc-more/tm-w610-480.webp",
+    "bytes": 17866
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/ttmc-more/tm-w610-thumb.webp",
+   "bytes": 4748
+  },
+  "cut": "birefnet"
+ },
+ "tm-w610b": {
+  "alt": "W1.2\u00d7610 bench brake with toggle clamps",
+  "variants": [
+   {
+    "w": 798,
+    "h": 570,
+    "file": "img/ttmc-more/tm-w610b-798.webp",
+    "bytes": 26402
+   },
+   {
+    "w": 480,
+    "h": 343,
+    "file": "img/ttmc-more/tm-w610b-480.webp",
+    "bytes": 18806
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 114,
+   "file": "img/ttmc-more/tm-w610b-thumb.webp",
+   "bytes": 5180
   },
   "cut": "birefnet"
  }
