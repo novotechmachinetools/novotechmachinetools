@@ -20817,8 +20817,8 @@
   "cutout": false
  },
  "vn-ult-1": {
-  "src": "tools/src-images/value-laser/vn-ult-1.webp",
-  "alt": "NovoTech ULT tube laser — two pneumatic chucks, bundle loader on the left, unloading table in front",
+  "src": "tools/src-images/value-laser/vn-ult-hero-2026.webp",
+  "alt": "NovoTech ULT tube laser cutting machine — the cutting cell, two pneumatic chucks and the tube supports along the bed",
   "section": "value-laser",
   "trim": true,
   "quality": 82,
@@ -20841,24 +20841,24 @@
   "cutout": false
  },
  "vn-ult-console": {
-  "src": "tools/src-images/value-laser/vn-ult-console.webp",
-  "alt": "CNC console with Cypcut tube software",
+  "src": "tools/src-images/value-laser/vn-ult-console-2026.webp",
+  "alt": "ULT control console with the cutting-program display",
   "section": "value-laser",
   "trim": true,
   "quality": 82,
   "cutout": false
  },
  "vn-ult-chuck": {
-  "src": "tools/src-images/value-laser/vn-ult-chuck.webp",
-  "alt": "Double-acting pneumatic chuck — clamps tube from Ø0.6 to 8.7″ without changing jaws",
+  "src": "tools/src-images/value-laser/vn-ult-chucks-2026.webp",
+  "alt": "Front and rear pneumatic chucks of the ULT — self-centring, they clamp round, square and rectangular tube",
   "section": "value-laser",
   "trim": true,
   "quality": 82,
   "cutout": false
  },
  "vn-ult-head": {
-  "src": "tools/src-images/value-laser/vn-ult-head.webp",
-  "alt": "Autofocus cutting head for tube",
+  "src": "tools/src-images/value-laser/vn-ult-head-2026.webp",
+  "alt": "Autofocus fiber laser cutting head of the ULT",
   "section": "value-laser",
   "trim": true,
   "quality": 82,
@@ -33680,6 +33680,422 @@
   "section": "site",
   "trim": false,
   "quality": 80,
+  "cutout": false
+ },
+ "vn-ult-photo": {
+  "src": "tools/src-images/value-laser/vn-ult-photo.jpg",
+  "alt": "ULT 12035 in the factory: the cutting cell with its viewing window, the console on its arm and the carts that collect the finished parts",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-bed": {
+  "src": "tools/src-images/value-laser/vn-ult-bed.jpg",
+  "alt": "ULT 12035: the 40 ft (12 m) bed with the following tube supports, the cutting cell at the far end",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-3chuck": {
+  "src": "tools/src-images/value-laser/vn-ult-3chuck.webp",
+  "alt": "Three-chuck layout: the middle chuck takes over the tube as it shortens, so the last part is cut with no remnant (three-chuck versions)",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-chuck-front": {
+  "src": "tools/src-images/value-laser/vn-ult-chuck-front.jpg",
+  "alt": "Front chuck of the ULT 12035 inside the cutting cell",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-chuck-jaws": {
+  "src": "tools/src-images/value-laser/vn-ult-chuck-jaws.jpg",
+  "alt": "Looking through the chuck: the four jaws centre a square tube",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-servo": {
+  "src": "tools/src-images/value-laser/vn-ult-servo.jpg",
+  "alt": "Servo motor driving the chuck's gear ring — it turns the tube under the head",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-supports": {
+  "src": "tools/src-images/value-laser/vn-ult-supports.jpg",
+  "alt": "Following tube supports on the ULT bed: they rise and fall with the tube so a long bar does not sag",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-transfer": {
+  "src": "tools/src-images/value-laser/vn-ult-transfer.webp",
+  "alt": "Tube support and transfer modules under a long profile",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-head-z": {
+  "src": "tools/src-images/value-laser/vn-ult-head-z.jpg",
+  "alt": "Cutting head on the Z axis, the bellows protecting the guides",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-rack": {
+  "src": "tools/src-images/value-laser/vn-ult-rack.jpg",
+  "alt": "Rack and pinion with the linear guide that drive the chuck carriage along the bed",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-screen": {
+  "src": "tools/src-images/value-laser/vn-ult-screen.jpg",
+  "alt": "Tube cutting software on the ULT control screen",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-unload": {
+  "src": "tools/src-images/value-laser/vn-ult-unload.webp",
+  "alt": "Roller tables that collect the cut tube and profile parts",
+  "section": "value-laser",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-cable": {
+  "src": "tools/src-images/value-laser/vn-ult-cable.webp",
+  "alt": "Cable carrier protecting the cables of the motion system",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-fan": {
+  "src": "tools/src-images/value-laser/vn-ult-fan.jpg",
+  "alt": "Cooling fan on the chuck's electrical housing",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-rect": {
+  "src": "tools/src-images/value-laser/vn-ult-rect.webp",
+  "alt": "Rectangular tube held by the chuck above a profile support",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-long": {
+  "src": "tools/src-images/value-laser/vn-ult-long.webp",
+  "alt": "A long profile held between the chucks during a trial cut",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "vn-ult-sample": {
+  "src": "tools/src-images/value-laser/vn-ult-sample.webp",
+  "alt": "Round tube cut on the ULT: the holes along the side and the open end",
+  "section": "value-laser",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-cabin": {
+  "src": "tools/src-images/dener-brochure/tube/cabin.png",
+  "alt": "Dener E-FTL cutting cabin: the laser-safe window, the control unit on its arm and the unloading chute",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-eftl-side": {
+  "src": "tools/src-images/dener-brochure/tube/eftl-side.png",
+  "alt": "Dener E-FTL tube laser — the cutting cabin and the bed from the operator's side",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-eftl-rear": {
+  "src": "tools/src-images/dener-brochure/tube/eftl-rear.png",
+  "alt": "Dener E-FTL tube laser — the loading side with the tube supports",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-cutting": {
+  "src": "tools/src-images/dener-brochure/tube/cutting.png",
+  "alt": "Cutting a tube held in the chuck — the sparks fly clear of the jaws",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-head-cut": {
+  "src": "tools/src-images/dener-brochure/tube/head-cut.png",
+  "alt": "The cutting head over a tube in the chuck, at work",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-tubest": {
+  "src": "tools/src-images/dener-brochure/tube/tubest.png",
+  "alt": "TubeST 3D nesting: tube and profile parts nested along the bar (standard)",
+  "section": "dener",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dn-tube-head": {
+  "src": "tools/src-images/dener-brochure/gfl/head-leds.jpg",
+  "alt": "BOCI BLT autofocus cutting head — LED indicators for power, run, link and sensor",
+  "section": "dener",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-7524": {
+  "src": "tools/src-images/senfeng/sf-t-7524.jpg",
+  "alt": "Senfeng SF7524T two-chuck tube laser — the 24.6 ft (7.5 m) bed for long stock",
+  "section": "senfeng",
+  "trim": true,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-semi": {
+  "src": "tools/src-images/senfeng/sf-t-semi.jpg",
+  "alt": "SF6024T with the semi-automatic chain loader beside the bed (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-loading": {
+  "src": "tools/src-images/senfeng/sf-t-loading.jpg",
+  "alt": "T series with the semi-automatic loading device (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-factory": {
+  "src": "tools/src-images/senfeng/sf-t-factory.jpg",
+  "alt": "T series tube laser in a factory: the automatic loader, the fenced cell and the unloading tables (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-cell": {
+  "src": "tools/src-images/senfeng/sf-t-cell.jpg",
+  "alt": "The cutting cell with its laser-safe window and curtains",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-unload": {
+  "src": "tools/src-images/senfeng/sf-t-unload.jpg",
+  "alt": "Unloading tables collecting the finished parts (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-holes": {
+  "src": "tools/src-images/senfeng/sf-t-holes.jpg",
+  "alt": "Cutting holes in a round tube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-t-software": {
+  "src": "tools/src-images/senfeng/sf-t-software.jpg",
+  "alt": "Tube nesting software: the part drawn in 3D before it is nested along the tube",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-loader": {
+  "src": "tools/src-images/senfeng/sf-plus-loader.jpg",
+  "alt": "PLUS series with the loading and unloading equipment inside the safety fence (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-profiles": {
+  "src": "tools/src-images/senfeng/sf-plus-profiles.jpg",
+  "alt": "PLUS head cutting open profiles — round, square, rectangular, oval, L, H, U, C and T sections",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-bed": {
+  "src": "tools/src-images/senfeng/sf-plus-bed.jpg",
+  "alt": "PLUS series welded bed",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-gantry": {
+  "src": "tools/src-images/senfeng/sf-plus-gantry.jpg",
+  "alt": "PLUS series: the cutting head on its gantry over the chucks",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-plus-chuck": {
+  "src": "tools/src-images/senfeng/sf-plus-chuck.jpg",
+  "alt": "PLUS pneumatic chuck",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-tube-loading": {
+  "src": "tools/src-images/senfeng/sf-tube-loading.jpg",
+  "alt": "Semi-automatic loader for special shapes — round, square, rectangular and U profiles — and fully automatic loader for standard round, square and rectangular tube (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-gt-6024-loader": {
+  "src": "tools/src-images/senfeng/sf-gt-6024-loader.jpg",
+  "alt": "SF6024GT with the automatic loader and unloading tables (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-gt-6035-loader": {
+  "src": "tools/src-images/senfeng/sf-gt-6035-loader.jpg",
+  "alt": "SF6035GT with the loading and unloading equipment (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-gplus-loader": {
+  "src": "tools/src-images/senfeng/sf-gplus-loader.jpg",
+  "alt": "GPLUS bevel tube laser in its safety fence with the loader (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-nt-semi": {
+  "src": "tools/src-images/senfeng/sf-nt-semi.jpg",
+  "alt": "SF6035NT with the semi-automatic loader (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-nt-chain": {
+  "src": "tools/src-images/senfeng/sf-nt-chain.jpg",
+  "alt": "SF6035NT with the chain loader (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-nt-bundle": {
+  "src": "tools/src-images/senfeng/sf-nt-bundle.jpg",
+  "alt": "SF6035NT with the fully automatic bundle loader (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-st-2": {
+  "src": "tools/src-images/senfeng/sf-st-2.jpg",
+  "alt": "ST series heavy-duty tube laser — the 40 ft bed with its side supports",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-st-line": {
+  "src": "tools/src-images/senfeng/sf-st-line.jpg",
+  "alt": "ST series with the loading and unloading line (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-st-thickness": {
+  "src": "tools/src-images/senfeng/sf-st-thickness.jpg",
+  "alt": "ST series: tube wall thickness by laser power — stainless, carbon steel, aluminum",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-load-semi": {
+  "src": "tools/src-images/senfeng/sf-load-semi.png",
+  "alt": "Semi-automatic dual-arm chain loader: the tubes are laid on the arms and fed to the chuck one at a time (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-load-auto-simple": {
+  "src": "tools/src-images/senfeng/sf-load-auto-simple.png",
+  "alt": "Simplified fully automatic loader: a bundle of up to 3 t is set in it and the tubes are separated and fed automatically (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-load-auto": {
+  "src": "tools/src-images/senfeng/sf-load-auto.png",
+  "alt": "Fully automatic bundle loader: separates, aligns and feeds every tube of a bundle of up to 3 t (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-load-sloped": {
+  "src": "tools/src-images/senfeng/sf-load-sloped.png",
+  "alt": "Semi-automatic sloped loader for 17 – 20 ft tubes up to 265 lb each (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "sf-load-chain": {
+  "src": "tools/src-images/senfeng/sf-load-chain.png",
+  "alt": "Semi-automatic chain loader for 13 – 40 ft tubes and profiles up to 1,543 lb each (optional)",
+  "section": "senfeng",
+  "trim": false,
+  "quality": 82,
   "cutout": false
  }
 }

@@ -188,7 +188,7 @@ NOTE_ULG = ("The model number gives the table in decimetres (13035 = 13,000 × 3
 
 # ------------------------------------------------------------------------------------------------ sheet + tube combinations
 TUBE_CHUCK = "Ø8.7″ or Ø13.8″ chuck (Ø220 / 350 mm); square tube to 12.6″ (320 mm) on the large chuck"
-TUBE_LEN = "19.7, 29.5 or 40 ft (6, 9 or 12 m)"
+TUBE_LEN = "20, 30 or 40 ft (6, 9 or 12 m)"
 T_ULFT = table("ULFT open-type sheet-and-tube fiber lasers", "13 table sizes · 10 × 5 to 85 × 10.5 ft · tube to Ø13.8″ · 1.5 – 60 kW", ["ULFT series"], [
     ("Working area", "sheet", "10 × 5 ft to 85 × 10.5 ft (3,000 × 1,500 – 26,000 × 3,200 mm)"),
     ("Table sizes", "sheet", "10 × 5, 13 × 5, 20 × 5, 13 × 6.6 and 20 × 6.6 ft; 20, 26, 43 or 85 ft × 8.5 or 10.5 ft (3 × 1.5 to 26 × 3.2 m)"),
@@ -227,7 +227,7 @@ def ult_rows(rows, three):
         ("Round tube", [dia(r[1], r[2]) for r in rows]),
         ("Square tube", "max. side", [mm_in(r[3]) for r in rows]),
         ("Laser power", "1.5 – 40 kW"),
-        ("Bar length", "19.7, 29.5 or 40 ft (6, 9 or 12 m)"),
+        ("Bar length", "20, 30 or 40 ft (6, 9 or 12 m)"),
         ("Max. tube weight", "on the chucks", [weight(r[11]) for r in rows]),
         ("Max. speed", [mmin(r[8]) for r in rows]),
         ("Max. acceleration", [f"{r[9]:g} G" for r in rows]),
@@ -339,8 +339,12 @@ TUBE_FAMILIES = [
                  "and TubesT nesting are options.",
          features=["Ø0.4 – 14.2″ round, square to 13.8″; bars 20 – 40 ft and to 2,205 lb; 1.5 – 40 kW; to 328 ft/min, 1.2 G"] + TB_STD,
          optional=TB_OPT,
-         images=["vn-ult-1", "vn-ult-chuck", "vn-ult-frame", "vn-ult-beam", "vn-ult-head", "vn-ult-console", "vn-ult-loader", "vn-ult-zero",
-                 "vn-ult-feeder", "vn-ult-dualy", "vn-ult-tubest"],
+         # the supplier's 2026 photos (product page and ULT 12035 gallery) replace the older renders of the machine, chucks, head and
+         # console, and add the detail photos (the owner, Nov 1 2026)
+         images=["vn-ult-1", "vn-ult-photo", "vn-ult-bed", "vn-ult-3chuck", "vn-ult-chuck", "vn-ult-chuck-front", "vn-ult-chuck-jaws",
+                 "vn-ult-servo", "vn-ult-supports", "vn-ult-transfer", "vn-ult-head", "vn-ult-head-z", "vn-ult-rack", "vn-ult-console",
+                 "vn-ult-screen", "vn-ult-tubest", "vn-ult-loader", "vn-ult-feeder", "vn-ult-unload", "vn-ult-zero", "vn-ult-dualy",
+                 "vn-ult-frame", "vn-ult-beam", "vn-ult-cable", "vn-ult-fan", "vn-ult-rect", "vn-ult-long", "vn-ult-sample"],
          videos=[],
          specs=spec([T_ULT2, T_ULT3], TB_GK, TB_G_FROM, NOTE_TUBE)),
 ]

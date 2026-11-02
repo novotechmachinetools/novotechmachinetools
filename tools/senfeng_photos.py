@@ -245,6 +245,36 @@ PHOTOS = {
     "sf-ht-1": M("Four-chuck-Ultra-Heavy-Tube-Laser-Cutter", "i-001-000.png", "i-001-001.png", "Senfeng HT series four-chuck tube laser — Ø1.9 – 25″, 39 – 49 ft tubes to 6,600 lb"),
     "sf-ch-1": M("Large-H-shaped-Steel-Laser-Cutter-SF1500", "i-001-000.png", "i-001-001.png", "Senfeng SF1500CH profile laser line for H-beams, channels and angles — 12 – 30 kW"),
     "sf-nt-chucks": PP(TUBE, "i-004-003.png", "Cutting a square tube in the chuck — sparks at the cut"),
+    # the tube lasers by series, with their loading equipment (the owner, Nov 1 2026): Senfeng USA's series renders and photos,
+    # and the loaders of the SF6024NT proposal and the 2026 catalogue (img/sf-load-*.png, already cut out)
+    "sf-t-7524": W("7524T.webp", "Senfeng SF7524T two-chuck tube laser — the 24.6 ft (7.5 m) bed for long stock", up=True, trim=True),
+    "sf-t-semi": W("6024T-04.webp", "SF6024T with the semi-automatic chain loader beside the bed (optional)", delabel=True, up=True),
+    "sf-t-loading": W("loading-device.webp", "T series with the semi-automatic loading device (optional)", delabel=True, up=True),
+    "sf-t-factory": W("7m-tube-laser-cutter-2.webp", "T series tube laser in a factory: the automatic loader, the fenced cell and the unloading tables (optional)", delabel=True),
+    "sf-t-cell": W("7m-tube-laser-cutter-3.webp", "The cutting cell with its laser-safe window and curtains", delabel=True),
+    "sf-t-unload": W("7m-tube-laser-cutter-4.webp", "Unloading tables collecting the finished parts (optional)", delabel=True),
+    "sf-t-holes": W("Cost-Effective-Entry-Level-Tube-Cutter.webp", "Cutting holes in a round tube"),
+    "sf-t-software": W("tube-laser-machine5.jpg", "Tube nesting software: the part drawn in 3D before it is nested along the tube"),
+    "sf-plus-loader": W("PLUS-04.webp", "PLUS series with the loading and unloading equipment inside the safety fence (optional)", delabel=True, up=True),
+    "sf-plus-profiles": W("advantage01-PLUS-rkl1482cehoc97q699gfa81xxa4cjscl990g62cit4.webp", "PLUS head cutting open profiles — round, square, rectangular, oval, L, H, U, C and T sections"),
+    "sf-plus-bed": W("advantage02-PLUS-rkl16b9fl8ja20oy25yktp2tg3tpnkn47l7ak790zc.webp", "PLUS series welded bed"),
+    "sf-plus-gantry": W("advantage03-PLUS-rkl176a3urpqp5fw11d9lz911tktpl29buqbebz1a0.webp", "PLUS series: the cutting head on its gantry over the chucks"),
+    "sf-plus-chuck": W("advantage04-PLUS-rkl18524vn1cmq1ddyego8h312temdwbsmva5kjgvs.webp", "PLUS pneumatic chuck"),
+    "sf-tube-loading": W("advantage05-PLUS-rkl194s03ce8vwlhlduaazgllpxcqvu4ljnqe32ibc.webp", "Semi-automatic loader for special shapes — round, square, rectangular and U profiles — and fully automatic loader for standard round, square and rectangular tube (optional)"),
+    "sf-gt-6024-loader": W("6024GT-4.webp", "SF6024GT with the automatic loader and unloading tables (optional)", delabel=True, up=True),
+    "sf-gt-6035-loader": W("6035GT-04.webp", "SF6035GT with the loading and unloading equipment (optional)", delabel=True, up=True),
+    "sf-gplus-loader": W("GPLUS-04.webp", "GPLUS bevel tube laser in its safety fence with the loader (optional)", delabel=True, up=True),
+    "sf-nt-semi": W("6035NT-04.webp", "SF6035NT with the semi-automatic loader (optional)", delabel=True, up=True),
+    "sf-nt-chain": W("6035NT-05.webp", "SF6035NT with the chain loader (optional)", delabel=True, up=True),
+    "sf-nt-bundle": W("6035NT-06.webp", "SF6035NT with the fully automatic bundle loader (optional)", delabel=True, up=True),
+    "sf-st-2": W("ST-02.webp", "ST series heavy-duty tube laser — the 40 ft bed with its side supports", up=True),
+    "sf-st-line": W("ST-04.webp", "ST series with the loading and unloading line (optional)", delabel=True, up=True),
+    "sf-st-thickness": W("ST-tube-cutting-thickness-scaled.jpg", "ST series: tube wall thickness by laser power — stainless, carbon steel, aluminum"),
+    "sf-load-semi": W("sf-load-semi.png", "Semi-automatic dual-arm chain loader: the tubes are laid on the arms and fed to the chuck one at a time (optional)"),
+    "sf-load-auto-simple": W("sf-load-auto-simple.png", "Simplified fully automatic loader: a bundle of up to 3 t is set in it and the tubes are separated and fed automatically (optional)"),
+    "sf-load-auto": W("sf-load-auto.png", "Fully automatic bundle loader: separates, aligns and feeds every tube of a bundle of up to 3 t (optional)"),
+    "sf-load-sloped": W("sf-load-sloped.png", "Semi-automatic sloped loader for 17 – 20 ft tubes up to 265 lb each (optional)"),
+    "sf-load-chain": W("sf-load-chain.png", "Semi-automatic chain loader for 13 – 40 ft tubes and profiles up to 1,543 lb each (optional)"),
     "sf-ht-tube": PP(TUBE, "i-005-005.png", "Heavy-wall tube held in the chuck under the cutting head"),
     "sf-ch-scan": W("CH-05.webp", "Optional visual scanning of the H-beam before cutting", up=True),
     "sf-ch-render": W("features4.jpg", "H-beam laser line — the gantry cutting a beam", up=True),
@@ -315,6 +345,10 @@ def export(keys=None):
                 im = im.resize((3000, round(im.height * 3000 / im.width)), Image.LANCZOS)
         elif ext == ".png":
             im = im.convert("RGBA")
+        elif im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
+            bg = Image.new("RGB", im.size, (255, 255, 255))      # a website cut-out (webp with alpha) goes on white, not on the
+            bg.paste(im.convert("RGBA"), mask=im.convert("RGBA").getchannel("A"))    # black hidden under its transparent pixels
+            im = bg
         else:
             im = im.convert("RGB")
         if p.get("crop"):

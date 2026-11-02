@@ -78,6 +78,48 @@
   {% if page.range_note %}<p class="table-note">{{ page.range_note }}</p>{% endif %}
 </section>
 {% endif %}
+{% if page.compare %}
+{# the kinds or series of the page side by side (the owner, Nov 1 2026: the differences must be plain) #}
+<section class="group compare" id="compare" aria-labelledby="compare-title">
+  <header class="group-head">
+    <h2 id="compare-title">{{ page.compare.title }}</h2>
+    <p class="group-lead">{{ page.compare.lead }}</p>
+  </header>
+  <div class="specs">
+    <section class="table-scroll" tabindex="0" aria-label="{{ page.compare.title }}">
+      <table class="spec-table compare-table">
+        <thead><tr>{% for c in page.compare.cols %}<th scope="col"{% if loop.first %} class="label-col"{% endif %}>{{ c }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for r in page.compare.rows %}
+          <tr>{% for c in r %}{% if loop.first %}<th scope="row">{{ c }}</th>{% elif c is mapping %}<td><a class="arrow" href="{{ c.href }}">{{ c.label }}</a></td>{% else %}<td>{{ c }}</td>{% endif %}{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </div>
+  {% if page.compare.note %}<p class="table-note">{{ page.compare.note }}</p>{% endif %}
+</section>
+{% endif %}
+{% if page.loading %}
+{# how the tube gets into the machine: by hand, semi-automatic or fully automatic (the owner, Nov 1 2026) #}
+<section class="group loading-options" id="loading-options" aria-labelledby="loading-title">
+  <header class="group-head">
+    <h2 id="loading-title">{{ page.loading.title }}</h2>
+    <p class="group-lead">{{ page.loading.lead }}</p>
+  </header>
+  <ul class="loading-cards">
+    {% for c in page.loading.cards %}{% set m = img(c.image) %}
+    <li class="loading-card">
+      <div class="loading-img"><img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="(max-width: 700px) 92vw, 420px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async"></div>
+      <p class="loading-tag">{{ c.tag }}</p>
+      <h3>{{ c.title }}</h3>
+      <p>{{ c.text }}</p>
+      {% if c['items'] %}<ul class="features">{% for i in c['items'] %}<li>{{ i }}</li>{% endfor %}</ul>{% endif %}
+    </li>{% endfor %}
+  </ul>
+  {% if page.loading.note %}<p class="table-note">{{ page.loading.note }}</p>{% endif %}
+</section>
+{% endif %}
 {% for g in page.groups %}
 <section class="group{{ (' line-' ~ g.brand ~ (' line-value' if g.brand == 'novotech' else ' line-premium')) if g.brand else '' }}" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
   {% if g.brand %}{% set br = site.brands[g.brand] %}

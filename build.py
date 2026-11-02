@@ -1587,7 +1587,7 @@ def render_page(page):
     if page.get("range_pick") and page.get("groups") and not page.get("subpages"):   # a category page with every model in one table under the hero
         page["range_rows"] = range_table([{"slug": page["slug"], "families": g["families"], "nav_label": g["title"].split(" — ")[0]} for g in page["groups"]], page["range_pick"])
     if not page.get("jump_links") and page.get("groups") and not page.get("subpages"):
-        page["jump_links"] = ([{"href": "#range-at-a-glance", "label": "All models"}] if page.get("range_rows") else []) + [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
+        page["jump_links"] = ([{"href": "#range-at-a-glance", "label": "All models"}] if page.get("range_rows") else []) + ([{"href": "#compare", "label": "Compare"}] if page.get("compare") else []) + ([{"href": "#loading-options", "label": "Loading options"}] if page.get("loading") else []) + [{"href": "#" + f["id"], "label": f["short"]} for g in page["groups"] for f in g["families"]] + [{"href": "#reques-a-quote", "label": "Request a quote"}]
     if page.get("lineup_spec"):
         page["lineup"] = hub_lineup(page)
     if not page.get("jump_links") and page.get("hub_compact"):   # a short hub: its pages, then the parts of the page

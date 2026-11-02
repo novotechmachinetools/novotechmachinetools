@@ -725,16 +725,21 @@ LASER_FAMILIES = [
 ]
 
 # ------------------------------------------------------------------------------------------------ tube lasers
+# Main tables: Dener's English tube catalogue (TUBE_EN 2026), by chuck size.  Model lists: Dener's Turkish tube catalogue
+# (dener_borulazer.pdf), by model — length code × chuck (6025 = 6 m bed, Ø250 chuck); only the rows that do not contradict the
+# English catalogue (the owner, Nov 1 2026: add the extra details and photos).  The 12,000 kg on the 12 m FTL 250 in TUBE_EN is a
+# typing error for 1,200 kg (the Turkish model list: FTL 12025, 12,300 mm, 1,200 kg).
 TL_POWERS = "3 / 6 / 12 / 20 kW"
 T_FTL = table("FTL tube and profile fiber lasers", "4 chuck sizes · Ø0.6″ – 25.2″ · 3 – 20 kW", ["FTL 250", "FTL 350", "FTL 500", "FTL 640"], [
     ("Tube diameter", "round", ["Ø0.6 – 9.8″ (Ø15 – 250 mm)", "Ø1.2 – 13.8″ (Ø30 – 350 mm)", "Ø1.2 – 19.7″ (Ø30 – 500 mm)", "Ø4.7 – 25.2″ (Ø120 – 640 mm)"]),
     ("Profile size", "square / rectangular", ["0.6 – 9.8″ (15 – 250 mm)", "1.2 – 13.8″ (30 – 350 mm)", "1.2 – 19.7″ (30 – 500 mm)", "4.7 – 25.2″ (120 – 640 mm)"]),
     ("Laser source power", "options", TL_POWERS),
-    ("Max. tube length and weight", ["20 ft, 1,323 lb (6 m, 600 kg) · 40 ft, 26,455 lb (12 m, 12,000 kg)", "30 ft, 2,205 lb (9 m, 1,000 kg) · 40 ft, 3,086 lb (12 m, 1,400 kg)",
+    ("Max. tube length and weight", ["20 ft, 1,323 lb (6 m, 600 kg) · 40 ft, 2,646 lb (12 m, 1,200 kg)", "30 ft, 2,205 lb (9 m, 1,000 kg) · 40 ft, 3,086 lb (12 m, 1,400 kg)",
                                      "40 ft, 4,630 lb (12 m, 2,100 kg)", "40 ft, 5,732 lb (12 m, 2,600 kg)"]),
     ("Max. speed", [mmin(80), mmin(54), mmin(25), mmin(25)]),
     ("Max. acceleration", "0.6 G"),
     ("Repeatability", ["±0.05 mm (±0.002″)", "±0.05 mm (±0.002″)", "±0.1 mm (±0.004″)", "±0.1 mm (±0.004″)"]),
+    ("Chucks", "3 moving chucks · zero remnant"),
     ("Voltage", "380 V 50/60 Hz · 600 V with transformer")])
 T_EFTL = table("E-FTL tube and profile fiber lasers", "4 chuck sizes · Ø0.3″ – 13.8″ · 3 – 20 kW · 1 G", ["E-FTL 120", "E-FTL 180", "E-FTL 250", "E-FTL 350"], [
     ("Tube diameter", "round", ["Ø0.3 – 4.7″ (Ø8 – 120 mm)", "Ø0.4 – 7.1″ (Ø10 – 180 mm)", "Ø0.6 – 9.8″ (Ø15 – 250 mm)", "Ø1.2 – 13.8″ (Ø30 – 350 mm)"]),
@@ -745,43 +750,120 @@ T_EFTL = table("E-FTL tube and profile fiber lasers", "4 chuck sizes · Ø0.3″
     ("Max. speed", [mmin(120), mmin(120), mmin(80), mmin(54)]),
     ("Max. acceleration", "1 G"),
     ("Repeatability", "±0.05 mm (±0.002″)"),
+    ("Chucks", "2 moving chucks · remnant ≥1.4″ (35 mm)"),
     ("Voltage", "380 V 50/60 Hz · 600 V with transformer")])
+
+
+_NOM_FT = {2: "6.6", 6: "20", 7: "23", 9: "30", 12: "40"}       # bed and table lengths in nominal feet (6 / 9 / 12 m → 20 / 30 / 40 ft)
+
+
+def _ft_m(mm):
+    m = mm / 1000
+    f = _NOM_FT.get(m) if m == int(m) else None
+    return f"{f or f'{mm / 304.8:.1f}'} ft ({m:g} m)"
+
+
+def _mm3(x, y, z):
+    return f"{x / 25.4:.1f} · {y / 25.4:,.0f} · {z / 25.4:.1f}″ ({x:,} · {y:,} · {z:,} mm)"
+
+
+def _rpm(v):
+    return f"{v} rpm"
+
+
+def _lu(a, b):
+    return f"{_NOM_FT[a]} + {_NOM_FT[b]} ft ({a} + {b} m)"
+
+
+# E-FTL models: (model, chuck mm, bar length mm, X, Y, Z travel mm, tube feed m/min, chuck rpm, (L, W, H) mm, loading + unloading m)
+EFTL_M = [("E-FTL 6012", 120, 7000, 290, 7850, 450, 131, 200, (11850, 2720, 2200), (7, 2)),
+          ("E-FTL 6018", 180, 7000, 290, 7850, 450, 94, 180, (12150, 2720, 2200), (7, 2)),
+          ("E-FTL 6025", 250, 7000, 860, 7800, 380, 115, 85, (12200, 2800, 3100), (7, 2)),
+          ("E-FTL 6035", 350, 7000, 750, 7800, 460, 81, 54, (13200, 3450, 3600), (7, 2)),
+          ("E-FTL 9025", 250, 9300, 860, 10300, 380, 115, 85, (14700, 2800, 3100), (9, 2)),
+          ("E-FTL 9035", 350, 9300, 750, 10300, 460, 81, 54, (15800, 3450, 3600), (9, 2))]
+FTL_M = [("FTL 6018", 180, 6200, 900, 7000, 250, 104, 180, (16100, 2800, 3000), (6, 6)),
+         ("FTL 6025", 250, 6200, 850, 7200, 300, 92, 85, (16100, 2800, 3000), (6, 6)),
+         ("FTL 6035", 350, 6200, 900, 7500, 300, 81, 54, (16100, 2800, 3000), (6, 6)),
+         ("FTL 9025", 250, 9300, 850, 10000, 300, 92, 85, (19000, 2800, 3000), (9, 9)),
+         ("FTL 9035", 350, 9300, 850, 10100, 300, 81, 54, (19000, 2800, 3000), (9, 9)),
+         ("FTL 12025", 250, 12300, 850, 13100, 300, 92, 85, (28200, 2800, 2800), (12, 12)),
+         ("FTL 12035", 350, 12300, 760, 13000, 460, 81, 54, (29100, 3400, 3400), (12, 12)),
+         ("FTL 12050", 500, 12300, 1200, 13500, 540, 50, 25, (30500, 3950, 3750), (12, 12)),
+         ("FTL 12064", 640, 12300, 1300, 13400, 540, 50, 25, (30500, 3900, 3400), (12, 12))]
+
+
+def _model_rows(ms, extra):
+    return [("Chuck", "max. tube Ø", [f"Ø{m[1] / 25.4:.1f}″ (Ø{m[1]} mm)" for m in ms]),
+            ("Max. tube length", [_ft_m(m[2]) for m in ms])] + extra(ms) + [
+            ("Axis travel", "X · Y · Z", [_mm3(m[3], m[4], m[5]) for m in ms]),
+            ("Tube feed speed", [mmin(m[6]) for m in ms]),
+            ("Chuck rotation", [_rpm(m[7]) for m in ms]),
+            ("Loading + unloading length", [_lu(*m[9]) for m in ms]),
+            ("Machine size", "L × W × H", [dims(*m[8]) for m in ms])]
+
+
+T_EFTL_M = table("E-FTL models", "6 models · 23 and 30.5 ft (7 and 9.3 m) bars · Ø4.7″ to 13.8″ chucks", [m[0] for m in EFTL_M], _model_rows(EFTL_M, lambda ms: [
+    ("Bevel cutting", "option"),
+    ("Loading system", "option", ["Semi-automatic or fully automatic"] * 2 + ["Fully automatic bundle loader"] * 4),
+    ("Cutting head", "BOCI, by source power", ["≤3 kW BLT310T · 6 kW BLT421TS"] * 2 + ["≤3 kW BLT310T · 6 kW BLT421TS · 12 kW BLT442T"] * 4),
+    ("Unloading length", "6.6 ft (2 m)")]))
+T_FTL_M = table("FTL models", "9 models · 20.3, 30.5 and 40.4 ft (6.2, 9.3 and 12.3 m) bars · Ø7.1″ to 25.2″ chucks", [m[0] for m in FTL_M], _model_rows(FTL_M, lambda ms: [
+    ("Bevel cutting", ["option"] * 6 + ["standard"] * 3),
+    ("Loading system", "option", "Semi-automatic loader"),
+    ("Cutting head", "BOCI, by source power", "≤3 kW BLT310T · 6 kW BLT421TS · 12 kW BLT442T · 20 kW BLT560H"),
+    ("Unloading length", [_ft_m(m[9][1] * 1000) for m in ms])]))
 TL_GK = ["tube", "profile", "power", "speed", "length"]
 TL_G_FROM = ["Tube diameter", "Profile size", "Laser source power", "Max. speed", "Max. tube length and weight"]
-NOTE_TL = ("Chuck size is the model number (250 = Ø250 mm); every chuck size is available with any of the listed laser sources. Loading length "
-           "and bundle loader to suit the tube length; ask us for the cutting chart for your tube wall and material.")
-TL_STD = ["Fiber laser source 3 – 20 kW, autofocus cutting head", "Front and rear pneumatic chucks with automatic centring; 3D cutting head for bevels and copes on the 5-axis versions",
-          "Automatic loader for bundles; tube supports that follow the cut; unloading table", "CNC with tube nesting and import of STEP / IGES files; cutting database",
-          "Fume extraction through the tube; chip and slug collection", "CE safety enclosure", "CSA-approved electrical panel; 600 V with transformer"]
-TL_OPT = ["Bevel (3D) cutting head", "Longer loading and unloading, 30 and 40 ft (9 / 12 m)", "Seam detection; tapping and drilling attachments", "Dust collector", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+NOTE_TL = ("Chuck size is the model number (250 = Ø250 mm); every chuck size is available with any of the listed laser sources. In the "
+           "model lists the model number is bed length × chuck (6025 = 6 m bed, Ø250 chuck). Ask us for the cutting chart for your "
+           "tube wall and material.")
+_TL_STD_ALL = ["Maxphotonics fiber laser source; BOCI BLT autofocus tube cutting head, chosen by source power",
+               "Servo-driven supports that follow the tube as it turns; automatic lubrication",
+               "TubePro operator interface; imports IGS and SAT files of the tube parts",
+               "HIWIN and YYC racks, pinions and reducers; Inovance servo motors and drives; Motoreducer, Faston or Shimpo gearboxes",
+               "Fume extraction through the tube; chip and slug collection", "CE safety enclosure", "CSA-approved electrical panel; 600 V with transformer"]
+EFTL_STD = ["Two moving pneumatic chucks with automatic centring; remnant from 1.4″ (35 mm)",
+            "FSCUT3000 control; TubeST nesting software, small-tube version",
+            "6.6 ft (2 m) unloading table"] + _TL_STD_ALL
+FTL_STD = ["Three moving chucks: the third takes over the bar so the last part is cut with zero remnant",
+           "FSCUT5000A control; TubeST nesting software, professional version",
+           "Unloading table as long as the bar: 20, 30 or 40 ft (6, 9 or 12 m)",
+           "Bevel (3D) cutting head standard on the FTL 12035, 12050 and 12064"] + _TL_STD_ALL
+EFTL_OPT = ["Fully automatic bundle loader; on the 120 and 180 chucks a semi-automatic or fully automatic loader", "Bevel (3D) cutting head",
+            "Seam detection; tapping and drilling attachments", "Dust collector", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+FTL_OPT = ["Semi-automatic loader", "Bevel (3D) cutting head (FTL 6018 to 12025)",
+           "Seam detection; tapping and drilling attachments", "Dust collector", "Custom voltage: 208 V, 240 V or 480 V 3-phase"]
+TL_STD = EFTL_STD           # kept for older callers
+TL_OPT = EFTL_OPT
 
 TUBE_FAMILIES = [
     dict(id="dn-eftl", group="tube-eftl", page=P_TUBE, brand=BRAND,
          name="E-FTL tube and profile laser cutters, Ø0.3″ – 13.8″, 3 – 20 kW",
          short="E-FTL tube lasers",
          models_label="E-FTL 120 · 180 · 250 · 350",
-         summary="The fast tube laser: servo axes accelerating at 1 G move the chucks at up to 394 ft/min, cutting round, square, rectangular and "
-                 "open profiles from Ø0.3″ to 13.8″ in 7, 9 or 12 m lengths with ±0.05 mm repeatability. Four chuck sizes and 3 to 20 kW sources, "
-                 "with the bundle loader, following supports and tube nesting software that turn a bar of tube into finished parts without an "
-                 "operator at the machine.",
-         features=["Ø0.3 – 13.8″ (8 – 350 mm) round and profile; 1 G, 394 ft/min (120 m/min)", "Tube length to 40 ft (12 m) with automatic bundle loader"] + TL_STD,
-         optional=TL_OPT,
-         images=["dn-tube-2", "dn-tube-1", "dn-tube-3"],
+         summary="The fast tube laser: servo axes accelerating at 1 G move two chucks at up to 394 ft/min, cutting round, square, "
+                 "rectangular and open profiles from Ø0.3″ to 13.8″ in 7, 9 or 12 m lengths with ±0.05 mm repeatability. Four chuck "
+                 "sizes and 3 to 20 kW sources; servo supports follow the tube, TubeST nests the parts along the bar and a fully "
+                 "automatic bundle loader can be added (on the 120 and 180 chucks a semi-automatic one as well).",
+         features=["Ø0.3 – 13.8″ (8 – 350 mm) round and profile; 1 G, 394 ft/min (120 m/min)", "Tube length 23, 30 or 40 ft (7, 9 or 12 m)"] + EFTL_STD,
+         optional=EFTL_OPT,
+         images=["dn-tube-2", "dn-tube-1", "dn-tube-3", "dn-tube-eftl-side", "dn-tube-eftl-rear", "dn-tube-cabin", "dn-tube-tubest"],
          videos=vids(("n4gFLrlC-es", "DENER E-FTL tube laser cutting machine with auto loader"), ("6_UQ6NBUUO4", "DENER E-FTL tube laser cutting machine")),
-         specs=spec([T_EFTL], TL_GK, TL_G_FROM, NOTE_TL)),
+         specs=spec([T_EFTL, T_EFTL_M], TL_GK, TL_G_FROM, NOTE_TL)),
     dict(id="dn-ftl", group="tube-ftl", page=P_TUBE, brand=BRAND,
          name="FTL tube and profile laser cutters, Ø0.6″ – 25.2″, 3 – 20 kW",
          short="FTL tube lasers",
          models_label="FTL 250 · 350 · 500 · 640",
-         summary="The heavy tube laser: four chuck sizes from Ø250 to Ø640 mm for structural tube, pipe and beams to 25.2″ across and 12 m long, "
-                 "up to 2,600 kg per bar on the 640 chuck and 12,000 kg on the long-bed 250 version. 3 to 20 kW sources cut wall thicknesses to "
-                 "1″; the 5-axis head cuts bevels and weld preparations. For steel-construction, trailer, agricultural and equipment "
-                 "builders.",
-         features=["Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 40 ft (12 m) and 5,732 lb", "3 to 20 kW sources; 5-axis bevel head"] + TL_STD,
-         optional=TL_OPT,
-         images=["dn-tube-6", "dn-tube-4", "dn-tube-5", "dn-tube-7"],
+         summary="The heavy tube laser: three moving chucks hold the bar to the last part, so it is cut with zero remnant, and carry "
+                 "structural tube, pipe and beams to 25.2″ across and 40 ft (12 m) long — up to 2,600 kg per bar on the 640 chuck. 3 to "
+                 "20 kW sources; the bevel head cuts weld preparations and is standard on the 12 m 350, 500 and 640 machines. For "
+                 "steel-construction, trailer, agricultural and equipment builders.",
+         features=["Ø0.6 – 25.2″ (15 – 640 mm) round and profile; bars to 40 ft (12 m) and 5,732 lb", "3 to 20 kW sources; BOCI heads to the 20 kW BLT560H"] + FTL_STD,
+         optional=FTL_OPT,
+         images=["dn-tube-6", "dn-tube-4", "dn-tube-5", "dn-tube-7", "dn-tube-cutting", "dn-tube-head-cut", "dn-tube-head"],
          videos=vids(("zPexjUvz7jg", "DENER FTL tube laser cutting machine")),
-         specs=spec([T_FTL], TL_GK, TL_G_FROM, NOTE_TL)),
+         specs=spec([T_FTL, T_FTL_M], TL_GK, TL_G_FROM, NOTE_TL)),
 ]
 
 # ------------------------------------------------------------------------------------------------ panel bender

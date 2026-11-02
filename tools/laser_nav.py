@@ -28,7 +28,8 @@ PAGES = {
     # one page for every tube laser, standard and heavy-duty (the owner, Nov 1 2026: no hub, no split)
     "tube": {
         "tube-laser-cutting-machine": [("dn-eftl", "lt-premium-eftl"), ("dn-ftl", "lt-premium-ftl"), ("vn-ult", "lt-value-ult"),
-                                       ("sf-t", "lt-value-t"), ("sf-plus", "lt-value-plus"), ("sf-heavy", "lt-value-heavy")],
+                                       ("sf-t", "lt-value-t"), ("sf-plus", "lt-value-plus"), ("sf-gt", "lt-value-gt"),
+                                       ("sf-nt", "lt-value-nt"), ("sf-st", "lt-value-st")],
     },
 }
 

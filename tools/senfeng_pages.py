@@ -201,16 +201,16 @@ BROCHURES = {
         groups=[{"title": "Sheet lasers", "families": ["sf-h", "sf-compact", "sf-np", "sf-1313g", "sf-hm"]}, {"title": "Plate, 3D and coil-fed lasers", "families": ["sf-r", "sf-3d", "sf-coil", "sf-coil-c", "sf-top", "sf-coil-clh", "sf-coil-2012"]}],
         cover_photos=["sf-h-1", "sf-np-1", "sf-r-1"], out="src/" + PDF_LASER),
     "senfeng-tube-lasers": dict(
-        title="Tube laser cutting machines", subtitle="Senfeng T, PLUS, GT, NT, ST and HT tube and profile fiber lasers · Ø0.5″ to 25″ · 20 to 49 ft · 1.5 to 20 kW",
+        title="Tube laser cutting machines", subtitle="Senfeng T, PLUS, GPLUS / GT, NT and ST tube and profile fiber lasers · Ø0.4″ to 25″ · 20 to 40 ft · 1.5 to 20 kW",
         cover_line="Senfeng Laser · made in China · sold & serviced in Canada by NovoTech", range_label="Senfeng tube lasers", about_for="Senfeng tube lasers",
         about_kicker="Senfeng Laser · Jinan, China", about_title="Round, square and profile tube cut to length with every hole, cope and notch in one pass",
         about_text=["A tube laser cuts round, square, rectangular and open profiles to length and cuts the holes, copes, slots and notches in them in one pass, straight from "
-                    "the 3D model — no saw, no drill, no notcher, no layout. The T series two-chuck machines cover Ø0.5 to 14″ and 20 to 39 ft with 1.5 to 6 kW; the PLUS "
-                    "series runs to 492 ft/min on small tube and the GPLUS / GT add a 45° bevel head; the NT three-chuck machines cut the last part without a tail; and the "
-                    "ST and HT three- and four-chuck machines carry tube to Ø25″ and 6,600 lb over 29 to 49 ft with 6 to 20 kW sources, for structural steel, towers and "
-                    "trailers. Automatic bundle loaders and unloading conveyors are available for every model.", ABOUT_SENFENG],
+                    "the 3D model — no saw, no drill, no notcher, no layout. The T series two-chuck machines cover Ø0.5 to 14″ and 20 to 40 ft with 1.5 to 6 kW; the PLUS "
+                    "series runs to 492 ft/min and 240 rpm on small tube; the GPLUS / GT cut ±45° bevels for weld preparation; the NT three-chuck machines cut the last part "
+                    "without a tail; and the ST three-chuck machines carry tube to Ø25″ and 6,614 lb over 30 to 40 ft with 6 to 20 kW sources, for structural steel, towers "
+                    "and trailers. Every machine can be loaded by hand, or with a semi-automatic or a fully automatic loader.", ABOUT_SENFENG],
         country="China", families=[f["id"] for f in D.TUBE_FAMILIES], family_sets=["dener"],
-        groups=[{"title": "Two-chuck tube lasers", "families": ["sf-t", "sf-plus"]}, {"title": "Three- and four-chuck tube lasers", "families": ["sf-heavy"]}],
+        groups=[{"title": "Two-chuck tube lasers", "families": ["sf-t", "sf-plus", "sf-gt"]}, {"title": "Three-chuck tube lasers", "families": ["sf-nt", "sf-st"]}],
         cover_photos=["sf-t-1", "sf-plus-1", "sf-st-1"], out="src/" + PDF_TUBE),
     "senfeng-welding": dict(
         title="Laser welding and cladding machines", subtitle="Senfeng handheld laser welders 0.8 – 3 kW · robotic laser welding cells 1.5 – 20 kW · cobot MIG welders · laser cladding 6 / 12 kW",

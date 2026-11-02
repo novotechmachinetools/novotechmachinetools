@@ -256,8 +256,8 @@ T_COIL_HEAVY = table("SF2012CH coil-fed laser blanking line for thick coil", "1 
 
 # ------------------------------------------------------------------------------------------------ tube lasers
 # (model, kW lo, kW hi, length lo ft, length hi ft, round lo, round hi, square hi, load lb, speed, rpm, dims)
-T6 = [("SF6012T", 1.5, 3, 3.3, 21.3, 0.5, 4.7, 4.7, 265, 492, 180, (358.2, 70.8, 82.6)), ("SF6016T", 1.5, 3, 3.3, 21.3, 0.5, 6.6, 6.6, 353, 361, 140, (358.2, 70.8, 82.6)),
-      ("SF6024T", 1.5, 6, 6.6, 21.3, 0.7, 9.0, 9.0, 573, 328, 100, (375.1, 76.7, 86.6)), ("SF6035T", 1.5, 6, 6.6, 20.3, 0.7, 14.1, 14.1, 1102, 197, 60, (374, 80.7, 100.3)),
+T6 = [("SF6012T", 1.5, 3, 3.3, 21.3, 0.6, 4.7, 4.7, 265, 492, 180, (358.2, 70.8, 82.6)), ("SF6016T", 1.5, 3, 3.3, 21.3, 0.5, 6.6, 6.6, 353, 361, 140, (358.2, 70.8, 82.6)),
+      ("SF6024T", 1.5, 6, 6.6, 21.3, 0.8, 9.1, 9.1, 573, 328, 100, (375.1, 76.7, 86.6)), ("SF6035T", 1.5, 6, 6.6, 20.3, 0.7, 14.1, 14.1, 1102, 197, 60, (374, 80.7, 100.3)),
       ("SF9024T", 1.5, 6, 6.6, 30, 0.7, 9.0, 9.0, 573, 328, 100, (493.3, 76.7, 86.6)), ("SF9035T", 1.5, 6, 6.6, 30, 0.7, 14.1, 14.1, 1102, 197, 60, (485, 80.7, 100.3)),
       ("SF12035T", 1.5, 6, 6.6, 40, 1.9, 13.7, 13.7, 1102, 197, 60, (603.5, 80.7, 100.3))]
 T7 = [("SF7012T", 1.5, 3, 3.3, 23, 0.59, 4.72, 4.72, 265, 492, 180, (33.1, 5.9, 6.9)), ("SF7016T", 1.5, 3, 3.3, 23, 0.59, 6.69, 6.69, 353, 361, 140, (33.1, 5.9, 6.9)),
@@ -281,14 +281,14 @@ def tube_rows(data, dims_fn):
 T_T6 = table("T series two-chuck tube lasers · 20 – 40 ft", "7 models · Ø0.5 – 14.1″ · 1.5 – 6 kW", [r[0] for r in T6], tube_rows(T6, dims_in))
 T_T7 = table("T series two-chuck tube lasers · 23 – 24.6 ft", "8 models · Ø0.6 – 9.1″ · 1.5 – 6 kW", [r[0] for r in T7], tube_rows(T7, dims_ft))
 
-PLUS = [("SF6012PLUS", 3, 6, 3.3, 21.3, 0.5, 4.7, 4.7, 265, 394, 180, (29.8, 7.3, 7.5)), ("SF6016PLUS", 3, 6, 3.3, 21.3, 0.5, 6.6, 6.6, 331, 394, 180, (29.8, 7.3, 7.5)),
+PLUS = [("SF6012PLUS", 3, 6, 3.3, 21.3, 0.4, 4.7, 4.7, 265, 492, 240, (29.8, 7.3, 7.5)), ("SF6016PLUS", 3, 6, 3.3, 21.3, 0.5, 6.6, 6.6, 331, 394, 180, (29.8, 7.3, 7.5)),
         ("SF6024PLUS", 3, 6, 3.3, 21.3, 0.7, 9.4, 9.4, 661, 492, 90, (30.5, 10.1, 8.2)), ("SF7012PLUS", 3, 6, 3.3, 23, 0.5, 4.7, 4.7, 265, 394, 180, (31.4, 7.3, 7.5))]
-T_PLUS = table("PLUS series high-speed tube lasers", "4 models · Ø0.5 – 9.4″ · 20 – 23 ft · 3 – 6 kW", [r[0] for r in PLUS], tube_rows(PLUS, dims_ft))
+T_PLUS = table("PLUS series high-speed tube lasers", "4 models · Ø0.4 – 9.4″ · 20 – 23 ft · 3 – 6 kW", [r[0] for r in PLUS], tube_rows(PLUS, dims_ft))
 GT = [("SF6012GPLUS", 1.5, 3, 3.3, 21.3, 0.6, 4.7, 4.7, 265, 492, 240, (358.3, 87.8, 90.6)), ("SF6024GT", 3, 6, 6.6, 21.3, 2.3, 9.0, 9.0, 573, 328, 100, (401.5, 89.7, 99.6)),
       ("SF6035GT", 3, 6, 6.6, 21, 3.1, 14.1, 14.1, 1102, 197, 60, (400.8, 88.8, 99.6))]
 T_GT = table("GPLUS / GT bevel-cutting tube lasers · 45°", "3 models · Ø0.6 – 14.1″ · 20 ft · 1.5 – 6 kW", [r[0] for r in GT], tube_rows(GT, dims_in) + [("Bevel cutting", ["±45° on all four sides"] * 3)])
 
-NT = [("SF6024NT", 3, 12, 9.8, 21.3, 0.7, 9.0, 9.0, 573, 246, 100, (543.3, 108.2, 124)), ("SF6035NT", 3, 6, 9.8, 20.3, 0.7, 14.1, 14.1, 1543, 197, 60, (543.3, 108.2, 131.8)),
+NT = [("SF6024NT", 3, 12, 9.8, 21.3, 0.8, 9.1, 9.1, 573, 246, 100, (543.3, 108.2, 124)), ("SF6035NT", 3, 6, 9.8, 20.3, 0.7, 14.1, 14.1, 1543, 197, 60, (543.3, 108.2, 131.8)),
       ("SF9024NT", 3, 6, 9.8, 30, 0.7, 9.0, 9.0, 573, 246, 100, (663.3, 108.2, 124)), ("SF9035NT", 3, 6, 9.8, 30, 0.7, 14.1, 14.1, 1543, 197, 60, (663.3, 108.2, 131.8)),
       ("SF12035NT", 3, 6, 9.8, 40, 1.9, 14.1, 14.1, 1543, 197, 60, (779.5, 108.2, 131.8))]
 T_NT = table("NT series three-chuck zero-tailing tube lasers", "5 models · Ø0.7 – 14.1″ · 20 – 40 ft · 3 – 12 kW", [r[0] for r in NT], tube_rows(NT, dims_in))
@@ -373,7 +373,7 @@ LZ_OPT = ["Loading / unloading unit, servo swing-arm loader or storage tower", "
 TB_STD = ["Pneumatic self-centring chucks; following supports along the bed; automatic tube length measuring",
           "Fiber laser source 1.5 – 20 kW with autofocus head; bus-based CNC with tube nesting software and 3D import",
           "Safety fencing and light curtains; chip and part collection", "CE, FDA and ETL certified and CSA approved; " + VOLT]
-TB_OPT = ["Automatic bundle loader and unloading conveyor", "45° bevel head (GPLUS / GT, ST / HT)", "Higher laser power; nitrogen generator; dust collector", "Custom voltage transformer"]
+TB_OPT = ["Semi-automatic or fully automatic loader; longer unloading system", "±45° bevel head (PLUS, NT, ST)", "Higher laser power; nitrogen generator; dust collector", "Custom voltage transformer"]
 
 # ------------------------------------------------------------------------------------------------ intelligent air cutting
 # the optional "AI Intelligent Air Cutting" tab on the H4, NP and R items (the owner, Nov 1 2026): from Senfeng's launch note,
@@ -686,48 +686,94 @@ LASER_FAMILIES = [
          specs=spec([T_COIL_HEAVY], CL_GK, CL_G_FROM, POWER_NOTE)),
 ]
 
+# one family per series so the differences are plain (the owner, Nov 1 2026): T two-chuck, PLUS high-speed, GPLUS / GT bevel,
+# NT three-chuck zero-tail and ST three-chuck heavy.  The HT four-chuck machines and the SF1500CH H-beam line are off the site —
+# super-heavy structural-steel machines rarely bought in Canada.  Loading on every series: by hand or crane as standard on the
+# T, PLUS, GT and NT, with a semi-automatic, simplified fully automatic or fully automatic loader as options (the SF6012T,
+# SF6024T, SF6024NT and SF6012PLUS technical solutions); the ST comes with semi-automatic loading and unloading.
+TUBE_LOAD_STD = "Loading by hand or crane as standard — a semi-automatic or fully automatic loader can be added (see the loading options)"
 TUBE_FAMILIES = [
     dict(id="sf-t", group="tube-senfeng", page=P_TUBE, brand=BRAND,
          name="T series two-chuck tube lasers, Ø0.5 – 14″, 20 – 40 ft, 1.5 – 6 kW",
-         short="T series tube lasers",
+         short="T series two-chuck tube lasers",
          models_label="SF6012T – SF12035T · SF7012T – SF7524T · 15 models",
-         summary="The tube laser most shops start with: two pneumatic self-centring chucks, following supports, a 1.5 to 6 kW source and a "
-                 "CNC with tube nesting that imports 3D files, cutting round, square, rectangular and profile tube to 14″ and 40 ft. "
-                 "Fifteen models in two bed lengths — the 7 m / 7.5 m beds take 23 and 24.6 ft stock, the 6, 9 and 12 m beds 20, 29.5 "
-                 "and 40 ft — with chucks for Ø4.7, 6.6, 9 and 14″. An automatic bundle loader and an unloading conveyor turn it into "
-                 "an unattended cell.",
-         features=["Ø0.5 – 14.1″ round, □0.5 – 14.1″ square; 20 – 40 ft; 1.5 – 6 kW; to 492 ft/min, 180 rpm"] + TB_STD,
+         summary="The tube laser most shops start with, and the simplest of the Senfeng range: two pneumatic self-centring chucks "
+                 "hold the tube at both ends, servo following supports carry it, and a 1.5 to 6 kW source cuts round, square, "
+                 "rectangular and open profiles from Ø0.5″ to 14″. Fifteen models: chucks for Ø4.7, 6.6, 9 and 14″ on 20, 30 and "
+                 "40 ft beds, and 23 and 24.6 ft (7 / 7.5 m) beds for long stock. The tube is loaded by hand or crane as standard; a "
+                 "semi-automatic or fully automatic loader can be added. Two chucks leave a short tail on every bar — the NT cuts "
+                 "with zero tail, the PLUS is faster on small tube and the GT cuts bevels.",
+         features=["Two pneumatic self-centring chucks and servo following supports; Ø0.5 – 14.1″ round, □0.5 – 14.1″ square; "
+                   "20 – 40 ft; 1.5 – 6 kW; to 492 ft/min, 180 rpm and 1.5 G on the SF6012T", TUBE_LOAD_STD,
+                   "Unloading rack 6.6 ft (2 m) with automatic sorting of scrap and parts; 10 or 13 ft (3 / 4 m) optional"] + TB_STD,
          optional=TB_OPT,
-         images=["sf-t-1", "sf-t-2", "sf-t-3", "sf-t-4", "sf-t-head", "sf-t-chuck", "sf-t-cutting", "sf-t-profiles", "sf-t-thickness"],
+         images=["sf-t-1", "sf-t-2", "sf-t-7524", "sf-t-3", "sf-t-4", "sf-t-semi", "sf-t-loading", "sf-t-factory", "sf-t-cell",
+                 "sf-t-unload", "sf-t-head", "sf-t-chuck", "sf-t-cutting", "sf-t-holes", "sf-t-profiles", "sf-t-software", "sf-t-thickness"],
          videos=[],
          specs=spec([T_T6, T_T7], TB_GK, TB_G_FROM, POWER_NOTE)),
     dict(id="sf-plus", group="tube-senfeng", page=P_TUBE, brand=BRAND,
-         name="PLUS high-speed and GPLUS / GT bevel-cutting tube lasers, Ø0.5 – 14″, 20 – 23 ft",
-         short="High-speed & bevel tube lasers",
-         models_label="SF6012PLUS – SF7012PLUS · SF6012GPLUS · SF6024GT · SF6035GT · 7 models",
-         summary="The PLUS series is built for speed on small and medium tube: 394 to 492 ft/min, 180 rpm chucks and a 3 to 6 kW source for "
-                 "furniture, fitness equipment and racking. The GPLUS and GT machines add a 45° bevel head that cuts weld preparations and "
-                 "mitred corners on all four sides of the tube — the GPLUS for Ø0.6 to 4.7″ at 240 rpm, the GT for Ø2.3 to 14.1″ with a "
-                 "bundle loader.",
-         features=["PLUS: Ø0.5 – 9.4″, to 492 ft/min; GPLUS / GT: ±45° bevel, Ø0.6 – 14.1″; 1.5 – 6 kW"] + TB_STD,
+         name="PLUS series high-speed tube lasers, Ø0.4 – 9.4″, 20 – 23 ft, 3 – 6 kW",
+         short="PLUS high-speed tube lasers",
+         models_label="SF6012PLUS · SF6016PLUS · SF6024PLUS · SF7012PLUS",
+         summary="The fast machine for small and medium tube in volume — furniture, fitness equipment, racking, automotive and "
+                 "medical tube: chucks that turn at up to 240 rpm, 492 ft/min (150 m/min) and 1.5 G, so short parts come off every "
+                 "few seconds. The head cuts past the front chuck's jaws, which leaves a very short tail, down to zero. Ø0.4 – 9.4″ "
+                 "tube 10 – 21 ft (3 – 6.5 m) long, 23 ft on the SF7012PLUS, 3 to 6 kW; a 45° bevel head is optional. Loaded by "
+                 "hand as standard, with a semi-automatic or fully automatic loader as an option.",
+         features=["Ø0.4 – 9.4″ round and square; to 240 rpm chucks, 492 ft/min (150 m/min), 1.5 G; ±0.002″ (±0.05 mm) positioning",
+                   "Over-position cutting past the front chuck — very short tail, down to zero; 45° bevel head optional", TUBE_LOAD_STD,
+                   "Unloading rack 6.6 ft (2 m) standard; 10 or 13 ft (3 / 4 m) optional"] + TB_STD,
          optional=TB_OPT,
-         images=["sf-plus-1", "sf-gplus-1", "sf-gt-1", "sf-gt-2", "sf-plus-parts-1", "sf-plus-parts-2", "sf-plus-parts-3"],
+         images=["sf-plus-1", "sf-plus-loader", "sf-plus-gantry", "sf-plus-chuck", "sf-plus-bed", "sf-plus-profiles", "sf-tube-loading"],
          videos=[],
-         specs=spec([T_PLUS, T_GT], TB_GK, TB_G_FROM, POWER_NOTE)),
-    dict(id="sf-heavy", group="tube-senfeng", page=P_TUBE, brand=BRAND,
-         name="NT / ST / HT three- and four-chuck tube lasers to Ø25″ and 49 ft, and the SF1500CH profile line",
-         short="Heavy-duty tube lasers",
-         models_label="SF6024NT – SF12035NT · SF9035ST – SF12065ST · SF12035HT – SF15056HT · SF1500CH · 18 models",
-         summary="For long and heavy tube: the NT series puts a third chuck in the middle so the last piece is cut without a tail — zero "
-                 "waste on 20 to 40 ft stock to Ø14″. The ST three-chuck and HT four-chuck machines carry tube to Ø25″ and 6,600 lb over "
-                 "29 to 49 ft with 6 to 20 kW sources, bevel heads and automatic loaders, for structural steel, towers, cranes and "
-                 "trailers. The SF1500CH is the profile line for H-beams to 39 × 16 ft section, channels and angles, with visual "
-                 "scanning of each beam before cutting.",
-         features=["NT: zero-tailing, Ø0.7 – 14.1″; ST / HT: Ø1.9 – 25.1″, 6 – 20 kW, to 6,600 lb; CH: H-beams to 1.9″ web"] + TB_STD,
+         specs=spec([T_PLUS], TB_GK, TB_G_FROM, POWER_NOTE)),
+    dict(id="sf-gt", group="tube-senfeng", page=P_TUBE, brand=BRAND,
+         name="GPLUS and GT bevel-cutting tube lasers, ±45°, Ø0.6 – 14.1″, 20 ft, 1.5 – 6 kW",
+         short="GPLUS / GT bevel tube lasers",
+         models_label="SF6012GPLUS · SF6024GT · SF6035GT",
+         summary="Tube lasers with a 3D head that tilts to ±45°, so weld preparations, mitred corners and bevelled ends are cut in "
+                 "the same pass as the part, on all four sides of a square tube — no grinding or sawing before welding. The GPLUS "
+                 "is the fast two-chuck machine for small tube, Ø0.6 – 4.7″ at 240 rpm; the GT takes tube from Ø2.3 to 14.1″ for "
+                 "pipe, structural frames, trailers and equipment that is welded after cutting. Loaded by hand as standard; the "
+                 "GT is usually ordered with an automatic loader and unloading tables.",
+         features=["±45° bevel cutting on all four sides of the tube; GPLUS Ø0.6 – 4.7″ at 240 rpm, GT Ø2.3 – 14.1″; 20 ft; 1.5 – 6 kW",
+                   TUBE_LOAD_STD] + TB_STD,
          optional=TB_OPT,
-         images=["sf-nt-1", "sf-st-1", "sf-ht-1", "sf-ch-1", "sf-nt-chucks", "sf-ht-tube", "sf-ch-scan", "sf-ch-render"],
+         images=["sf-gplus-1", "sf-gt-1", "sf-gt-2", "sf-gt-6024-loader", "sf-gt-6035-loader", "sf-gplus-loader",
+                 "sf-plus-parts-1", "sf-plus-parts-2", "sf-plus-parts-3"],
          videos=[],
-         specs=spec([T_NT, T_ST, T_HT, T_CH], TB_GK, TB_G_FROM, POWER_NOTE)),
+         specs=spec([T_GT], TB_GK, TB_G_FROM, POWER_NOTE)),
+    dict(id="sf-nt", group="tube-senfeng", page=P_TUBE, brand=BRAND,
+         name="NT series three-chuck zero-tail tube lasers, Ø0.7 – 14.1″, 20 – 40 ft, 3 – 12 kW",
+         short="NT zero-tail tube lasers",
+         models_label="SF6024NT · SF6035NT · SF9024NT · SF9035NT · SF12035NT",
+         summary="Three chucks instead of two: the middle chuck takes over the tube as it gets shorter, so the last part is cut and "
+                 "almost nothing is left — zero tail. On 20 to 40 ft bars of stainless, aluminum or heavy-wall tube that saves "
+                 "material on every bar, and the third chuck also supports long tube so it is cut straight. Ø0.7 – 14.1″ round and "
+                 "square, bars to 40 ft and 1,543 lb, 3 to 12 kW; a ±45° bevel head is optional. Loaded by hand or crane as "
+                 "standard — semi-automatic and fully automatic loaders are options — with a 10 ft (3 m) unloading system (20 ft "
+                 "optional).",
+         features=["Three pneumatic chucks — the last part cut with zero tail; Ø0.7 – 14.1″; bars 20 – 40 ft to 1,543 lb; 3 – 12 kW; "
+                   "bevel Ø2 – 9.1″ with the optional ±45° head", TUBE_LOAD_STD,
+                   "Unloading system 10 ft (3 m) with automatic sorting of scrap and parts; 20 ft (6 m) optional"] + TB_STD,
+         optional=TB_OPT,
+         images=["sf-nt-1", "sf-nt-semi", "sf-nt-chain", "sf-nt-bundle", "sf-load-semi", "sf-load-auto-simple", "sf-load-auto", "sf-nt-chucks"],
+         videos=[],
+         specs=spec([T_NT], TB_GK, TB_G_FROM, POWER_NOTE)),
+    dict(id="sf-st", group="tube-senfeng", page=P_TUBE, brand=BRAND,
+         name="ST series three-chuck heavy-duty tube lasers, Ø1.9 – 25.1″, 30 – 40 ft, 6 – 20 kW",
+         short="ST heavy-duty tube lasers",
+         models_label="SF9035ST – SF12065ST · 7 models",
+         summary="The heavy machine of the Senfeng range, for pipe, large tube and structural sections: three chucks carry tube up "
+                 "to Ø25″ and 6,614 lb over 30 to 40 ft without sag and cut it straight and square, with 6 to 20 kW sources for thick "
+                 "walls and a ±45° bevel head as an option. The ST comes with semi-automatic loading and an unloading system; a fully "
+                 "automatic bundle loader is optional. For steel construction, towers, cranes, trailers and heavy equipment.",
+         features=["Three chucks; Ø1.9 – 25.1″ round and square; 30 – 40 ft tube to 6,614 lb; 6 – 20 kW; ±45° bevel head optional",
+                   "Semi-automatic loading and an unloading system included; fully automatic bundle loader optional"] + TB_STD,
+         optional=TB_OPT,
+         images=["sf-st-1", "sf-st-2", "sf-st-line", "sf-st-thickness"],
+         videos=[],
+         specs=spec([T_ST], TB_GK, TB_G_FROM, POWER_NOTE)),
 ]
 
 PANEL_FAMILIES = [
@@ -798,6 +844,6 @@ WELD_FAMILIES = [
 ALL = LASER_FAMILIES + TUBE_FAMILIES + PANEL_FAMILIES + WELD_FAMILIES
 
 SERIES = {"sf-compact": "G · N · NP", "sf-1313g": "G", "sf-np": "NP", "sf-h": "H", "sf-hm": "HM", "sf-r": "R · TX · TXP", "sf-3d": "TD", "sf-coil": "CH", "sf-coil-c": "C", "sf-top": "TOP", "sf-coil-clh": "CLH", "sf-coil-2012": "CH",
-          "sf-t": "T", "sf-plus": "PLUS · GT", "sf-heavy": "NT · ST · HT · CH", "sf-bdc": "BDC", "sf-handheld": "S · HWM", "sf-robot-weld": "RW · RMW · CMW", "sf-cladding": "SFR · SFHS · SFMR"}
+          "sf-t": "T", "sf-plus": "PLUS", "sf-gt": "GPLUS · GT", "sf-nt": "NT", "sf-st": "ST", "sf-bdc": "BDC", "sf-handheld": "S · HWM", "sf-robot-weld": "RW · RMW · CMW", "sf-cladding": "SFR · SFHS · SFMR"}
 for _f in ALL:
     _f["series"] = SERIES[_f["id"]]

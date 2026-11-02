@@ -1223,3 +1223,14 @@ body.ai-locked { overflow: hidden; }
 
 /* tablets: the tiles under the hero are wider than on a phone, so their photos are taller (the owner, Nov 1 2026) */
 @media (min-width: 600px) and (max-width: 960px) { .hero-minis.is-many img { height: calc(var(--mhm, 58px) * 1.5); } }
+
+/* loading options of the tube lasers: by hand, semi-automatic, fully automatic (the owner, Nov 1 2026) */
+.loading-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.loading-card { background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--orange); border-radius: var(--radius); padding: 14px 16px 16px; display: flex; flex-direction: column; }
+.loading-img { height: 170px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.loading-img img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.loading-tag { margin: 0 0 2px; font-family: var(--cond); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--orange-ink); }
+.loading-card h3 { margin: 0 0 8px; font-family: var(--cond); font-size: 21px; line-height: 1.2; color: var(--charcoal); }
+.loading-card > p { margin: 0 0 10px; }
+.compare-table th[scope="row"] { white-space: normal; min-width: 9em; }
+@media (max-width: 960px) { .loading-cards { grid-template-columns: minmax(0, 1fr); } .loading-img { height: 150px; } }
