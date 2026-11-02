@@ -688,6 +688,14 @@ def sort_videos(f):
 MAX_VIDEOS = 10        # per product (owner, Oct 30 2026): three in view on desktop, the rest in the carousel
 
 
+def family_thumb(f):
+    """the family's photo on the other pages — the menu, the cards, the photos under the hero, the AI catalogue: its first
+    gallery photo, or "thumb_image" when the owner picked another gallery photo for it (the owner, Nov 1 2026: the Senfeng
+    compact lasers' thumbnail is gallery photo 5)"""
+    th = f.get("thumb_image")
+    return th if th and th in manifest else (f.get("images") or [None])[0]
+
+
 def prepare_family(f):
     family_videos(f)
     sort_videos(f)
@@ -716,7 +724,8 @@ def prepare_family(f):
     f["gallery"] = [img(n) for n in f.get("images", [])]
     for im in f["gallery"]:
         im["cap1"], im["cap2"] = caption_for(f, im["alt"])
-    f["card_image"] = f["gallery"][0] if f["gallery"] else None
+    th = f.get("thumb_image")
+    f["card_image"] = img(th) if th and th in manifest else (f["gallery"][0] if f["gallery"] else None)
     f["gallery"] += feature_gallery(f)
     if f.get("control") and f["control"].get("images"):       # the control note under the summary (press brakes, Oct 28 2026)
         ims = []
@@ -980,12 +989,12 @@ def build_nav_preview(loaded):
             if anchor:
                 g = next((g for g in ep.get("groups", []) if g.get("id") == anchor), None)
                 f = group_family(ep, g) if g else None
-                key = f["images"][0] if f else None
+                key = family_thumb(f) if f else None
             add(e["label"], e["href"], key or ep.get("hero_image"))
         for g in p.get("groups", []):
             f = group_family(p, g)
             if f:
-                add(f.get("short") or g.get("title", ""), f"{slug}.html#{f['id']}", f["images"][0], f.get("headline", ""))
+                add(f.get("short") or g.get("title", ""), f"{slug}.html#{f['id']}", family_thumb(f), f.get("headline", ""))
         for sp in p.get("subpages", []):
             add(sp.get("nav_label") or sp["title"], f"{sp['slug']}.html", sp.get("image"))
         if not cards:
@@ -1028,7 +1037,7 @@ def build_nav_preview(loaded):
                     for fid in g.get("families", []):
                         f = fs.get(fid) if isinstance(fid, str) else None
                         if f and f.get("images"):
-                            sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", f["images"][0], f.get("headline", ""))
+                            sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", family_thumb(f), f.get("headline", ""))
             else:                                                  # a section page: the families of its groups, or its hub sections
                 blurb = ep.get("meta_description", "")
                 for g in ep.get("groups", []):
@@ -1036,7 +1045,7 @@ def build_nav_preview(loaded):
                     for fid in g.get("families", []):
                         f = fs.get(fid) if isinstance(fid, str) else None
                         if f and f.get("images"):
-                            sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", f["images"][0], f.get("headline", ""))
+                            sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", family_thumb(f), f.get("headline", ""))
                 for sp in ep.get("subpages", []):
                     sadd(sp.get("nav_label") or sp["title"], f"{sp['slug']}.html", sp.get("image"))
             if not scards:
@@ -1403,7 +1412,7 @@ def all_item_minis(page):
             if hc & set(f["images"]) or f["id"] == HERO_OF.get(hero):
                 page.setdefault("hero_caption", hero_name(f["id"], f.get("short") or f["name"]))
                 continue
-            k = next((k for k in f["images"] if k in manifest), None)
+            k = next((k for k in [family_thumb(f)] + f["images"] if k in manifest), None)
             if k and k not in keys and k not in hc:
                 keys.append(k)
                 labels[k] = hero_name(f["id"], f.get("short") or f["name"])
@@ -1559,7 +1568,7 @@ def both_tons(text):
 
 def both_tons_page(page, everything):
     """walk the page dict; convert every string on a press brake page, elsewhere only strings about press brakes"""
-    skip = {"slug", "href", "src", "id", "url", "image", "hero", "minis", "canonical", "file", "template", "section", "thumb", "small", "srcset", "key"}
+    skip = {"slug", "href", "src", "id", "url", "image", "hero", "minis", "canonical", "file", "template", "section", "thumb", "thumb_image", "small", "srcset", "key"}
 
     def walk(x, key=None):
         if isinstance(x, str):
@@ -1715,7 +1724,8 @@ def ai_catalogue(pages):
                         if m.get("voltage"):
                             entry["voltage"] = m["voltage"]
                     models.append({k: v for k, v in entry.items() if v})
-                thumb = f["gallery"][0]["thumb"] if f.get("gallery") and f["gallery"][0].get("thumb") else (f["gallery"][0]["small"] if f.get("gallery") else None)
+                ci = f.get("card_image")
+                thumb = (ci.get("thumb") or ci.get("small")) if ci else None
                 brand = site.get("brands", {}).get(f.get("brand"), {})
                 items.append({
                     "id": f["id"], "name": f["name"], "short": f["short"], "models_label": f.get("models_label", ""),
