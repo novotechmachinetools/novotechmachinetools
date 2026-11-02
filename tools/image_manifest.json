@@ -40391,28 +40391,29 @@
     "w": 1200,
     "h": 800,
     "file": "img/sahinler/sh-tc42-1200.webp",
-    "bytes": 62978
+    "bytes": 107728
    },
    {
     "w": 800,
     "h": 533,
     "file": "img/sahinler/sh-tc42-800.webp",
-    "bytes": 31874
+    "bytes": 59522
    },
    {
     "w": 480,
     "h": 320,
     "file": "img/sahinler/sh-tc42-480.webp",
-    "bytes": 14718
+    "bytes": 30000
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
    "h": 107,
    "file": "img/sahinler/sh-tc42-thumb.webp",
-   "bytes": 2840
-  }
+   "bytes": 6796
+  },
+  "cut": "auto"
  },
  "sh-tc42-coil": {
   "alt": "TC-42 NC \u2014 variable-pitch spiral coil",
@@ -62660,30 +62661,31 @@
   "variants": [
    {
     "w": 1200,
-    "h": 253,
+    "h": 255,
     "file": "img/csm/cs-wb-line-1200.webp",
-    "bytes": 26050
+    "bytes": 69778
    },
    {
     "w": 800,
-    "h": 168,
+    "h": 170,
     "file": "img/csm/cs-wb-line-800.webp",
-    "bytes": 15108
+    "bytes": 41984
    },
    {
     "w": 480,
-    "h": 101,
+    "h": 102,
     "file": "img/csm/cs-wb-line-480.webp",
-    "bytes": 7524
+    "bytes": 21484
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
    "h": 34,
    "file": "img/csm/cs-wb-line-thumb.webp",
-   "bytes": 1434
-  }
+   "bytes": 4846
+  },
+  "cut": "auto"
  },
  "cs-wb-screen": {
   "alt": "IPC control with 3D simulation of the wire bending machine",
@@ -76447,25 +76449,32 @@
   "alt": "Sectioned European-style acute punch 1311 (26\u00b0), 805 mm set \u2014 horns at both ends and short sections between",
   "variants": [
    {
+    "w": 1064,
+    "h": 347,
+    "file": "img/tooling/es-p-c077a-1064.webp",
+    "bytes": 28164
+   },
+   {
     "w": 800,
-    "h": 279,
+    "h": 261,
     "file": "img/tooling/es-p-c077a-800.webp",
-    "bytes": 10792
+    "bytes": 22832
    },
    {
     "w": 480,
-    "h": 167,
+    "h": 157,
     "file": "img/tooling/es-p-c077a-480.webp",
-    "bytes": 5886
+    "bytes": 12558
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 56,
+   "h": 52,
    "file": "img/tooling/es-p-c077a-thumb.webp",
-   "bytes": 1198
-  }
+   "bytes": 2960
+  },
+  "cut": "auto"
  },
  "es-p-c077b": {
   "alt": "European-style (Amada-Promecam) punch sections \u2014 the narrow 13 mm tang with its safety groove",
@@ -76525,19 +76534,26 @@
   "alt": "Gooseneck punches standing in a row, sections and full lengths",
   "variants": [
    {
+    "w": 712,
+    "h": 1034,
+    "file": "img/tooling/es-p-c015-712.webp",
+    "bytes": 154638
+   },
+   {
     "w": 480,
-    "h": 690,
+    "h": 697,
     "file": "img/tooling/es-p-c015-480.webp",
-    "bytes": 41940
+    "bytes": 80122
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 111,
+   "w": 110,
    "h": 160,
    "file": "img/tooling/es-p-c015-thumb.webp",
-   "bytes": 1870
-  }
+   "bytes": 5664
+  },
+  "cut": "auto"
  },
  "es-p-c136": {
   "alt": "Punches stored in a tooling rack, tips forward",
@@ -76567,25 +76583,32 @@
   "alt": "ESH punches \u2014 every profile 120 mm (4.72\u2033) high",
   "variants": [
    {
+    "w": 1083,
+    "h": 666,
+    "file": "img/tooling/es-p-c078a-1083.webp",
+    "bytes": 33082
+   },
+   {
     "w": 800,
-    "h": 511,
+    "h": 492,
     "file": "img/tooling/es-p-c078a-800.webp",
-    "bytes": 12008
+    "bytes": 28242
    },
    {
     "w": 480,
-    "h": 307,
+    "h": 295,
     "file": "img/tooling/es-p-c078a-480.webp",
-    "bytes": 6846
+    "bytes": 15808
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 102,
+   "h": 98,
    "file": "img/tooling/es-p-c078a-thumb.webp",
-   "bytes": 1520
-  }
+   "bytes": 4160
+  },
+  "cut": "auto"
  },
  "es-p-radius-press": {
   "alt": "Radius holder with a round element in the press brake beam",
@@ -77155,25 +77178,32 @@
   "alt": "ESH insert dies in the 3173 holder",
   "variants": [
    {
+    "w": 1194,
+    "h": 665,
+    "file": "img/tooling/es-p-c078b-1194.webp",
+    "bytes": 37590
+   },
+   {
     "w": 800,
-    "h": 456,
+    "h": 446,
     "file": "img/tooling/es-p-c078b-800.webp",
-    "bytes": 11240
+    "bytes": 26152
    },
    {
     "w": 480,
-    "h": 273,
+    "h": 267,
     "file": "img/tooling/es-p-c078b-480.webp",
-    "bytes": 6336
+    "bytes": 14302
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 91,
+   "h": 89,
    "file": "img/tooling/es-p-c078b-thumb.webp",
-   "bytes": 1494
-  }
+   "bytes": 3776
+  },
+  "cut": "auto"
  },
  "es-p-c110": {
   "alt": "Trumpf-style dies \u2014 the 3244 1V die with sections and pieces",
@@ -77365,25 +77395,26 @@
   "alt": "4221 \u2014 adjustable intermediate Z1, H100, with the crowning wedge (drawing)",
   "variants": [
    {
-    "w": 800,
-    "h": 630,
-    "file": "img/tooling/es-w-4221-800.webp",
-    "bytes": 18546
+    "w": 797,
+    "h": 617,
+    "file": "img/tooling/es-w-4221-797.webp",
+    "bytes": 32052
    },
    {
     "w": 480,
-    "h": 378,
+    "h": 372,
     "file": "img/tooling/es-w-4221-480.webp",
-    "bytes": 10310
+    "bytes": 24432
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 126,
+   "h": 124,
    "file": "img/tooling/es-w-4221-thumb.webp",
-   "bytes": 2044
-  }
+   "bytes": 6412
+  },
+  "cut": "auto"
  },
  "es-w-4411": {
   "alt": "4411 \u2014 heavy-duty adjustable intermediate Z2, H120, 160 t/m (drawing)",
@@ -77515,25 +77546,32 @@
   "alt": "EUROGRIP clamps along the upper beam of a press brake",
   "variants": [
    {
+    "w": 922,
+    "h": 925,
+    "file": "img/tooling/es-p-eg-row-922.webp",
+    "bytes": 89642
+   },
+   {
     "w": 800,
-    "h": 800,
+    "h": 803,
     "file": "img/tooling/es-p-eg-row-800.webp",
-    "bytes": 53330
+    "bytes": 66276
    },
    {
     "w": 480,
-    "h": 480,
+    "h": 482,
     "file": "img/tooling/es-p-eg-row-480.webp",
-    "bytes": 20054
+    "bytes": 25832
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 160,
+   "w": 159,
    "h": 160,
    "file": "img/tooling/es-p-eg-row-thumb.webp",
-   "bytes": 3850
-  }
+   "bytes": 5308
+  },
+  "cut": "auto"
  },
  "es-p-eg-measy": {
   "alt": "EUROGRIP M-EASY clamp on an intermediate, recessed handle on top",
@@ -77870,30 +77908,31 @@
   "variants": [
    {
     "w": 1200,
-    "h": 518,
+    "h": 475,
     "file": "img/tooling/es-w-3191-1200.webp",
-    "bytes": 21328
+    "bytes": 76800
    },
    {
     "w": 800,
-    "h": 345,
+    "h": 317,
     "file": "img/tooling/es-w-3191-800.webp",
-    "bytes": 12672
+    "bytes": 44446
    },
    {
     "w": 480,
-    "h": 207,
+    "h": 190,
     "file": "img/tooling/es-w-3191-480.webp",
-    "bytes": 6288
+    "bytes": 22438
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 69,
+   "h": 63,
    "file": "img/tooling/es-w-3191-thumb.webp",
-   "bytes": 1256
-  }
+   "bytes": 5024
+  },
+  "cut": "auto"
  },
  "es-w-3190": {
   "alt": "3190 \u2014 adjustable die V 24 \u2013 124 mm, closed and open (drawing)",
@@ -78013,19 +78052,26 @@
   "alt": "Urethane protective film unrolled over a die",
   "variants": [
    {
+    "w": 764,
+    "h": 615,
+    "file": "img/tooling/es-w-4308-764.webp",
+    "bytes": 25744
+   },
+   {
     "w": 480,
-    "h": 390,
+    "h": 386,
     "file": "img/tooling/es-w-4308-480.webp",
-    "bytes": 10708
+    "bytes": 15300
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 130,
+   "h": 129,
    "file": "img/tooling/es-w-4308-thumb.webp",
-   "bytes": 2400
-  }
+   "bytes": 3448
+  },
+  "cut": "auto"
  },
  "es-w-4309": {
   "alt": "Film tighteners holding the protective film over the die",
@@ -78200,24 +78246,25 @@
   "variants": [
    {
     "w": 800,
-    "h": 340,
+    "h": 328,
     "file": "img/tooling/es-w-4384-800.webp",
-    "bytes": 13962
+    "bytes": 32770
    },
    {
     "w": 480,
-    "h": 204,
+    "h": 197,
     "file": "img/tooling/es-w-4384-480.webp",
-    "bytes": 7166
+    "bytes": 16358
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 68,
+   "h": 66,
    "file": "img/tooling/es-w-4384-thumb.webp",
-   "bytes": 1338
-  }
+   "bytes": 3922
+  },
+  "cut": "auto"
  },
  "es-p-gauge-hand": {
   "alt": "Reading a bend radius with the digital gauge",
@@ -78554,30 +78601,31 @@
   "variants": [
    {
     "w": 1200,
-    "h": 698,
+    "h": 671,
     "file": "img/tooling/es-std-by-die-1200.webp",
-    "bytes": 47616
+    "bytes": 150554
    },
    {
     "w": 800,
-    "h": 465,
+    "h": 448,
     "file": "img/tooling/es-std-by-die-800.webp",
-    "bytes": 28474
+    "bytes": 85402
    },
    {
     "w": 480,
-    "h": 279,
+    "h": 269,
     "file": "img/tooling/es-std-by-die-480.webp",
-    "bytes": 13388
+    "bytes": 41026
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 93,
+   "h": 90,
    "file": "img/tooling/es-std-by-die-thumb.webp",
-   "bytes": 1844
-  }
+   "bytes": 8616
+  },
+  "cut": "auto"
  },
  "es-am-sect": {
   "alt": "American-style sectioned sets: punch and die sections in inches, 35.75\u2033 in all",
@@ -78643,19 +78691,26 @@
   "alt": "S28932 \u2014 American-style 88\u00b0 straight punch, tip R .059\u2033, 3.779\u2033 high (drawing, inches and millimetres)",
   "variants": [
    {
+    "w": 588,
+    "h": 1207,
+    "file": "img/tooling/es-am-s28932-588.webp",
+    "bytes": 37376
+   },
+   {
     "w": 480,
-    "h": 763,
+    "h": 985,
     "file": "img/tooling/es-am-s28932-480.webp",
-    "bytes": 9198
+    "bytes": 41646
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 101,
+   "w": 78,
    "h": 160,
    "file": "img/tooling/es-am-s28932-thumb.webp",
-   "bytes": 960
-  }
+   "bytes": 3986
+  },
+  "cut": "auto"
  },
  "es-am-s28881": {
   "alt": "S28881 \u2014 American-style 88\u00b0 gooseneck punch, tip R .031\u2033, 3.779\u2033 high (drawing, inches and millimetres)",
@@ -78782,24 +78837,25 @@
   "variants": [
    {
     "w": 800,
-    "h": 737,
+    "h": 821,
     "file": "img/tooling/es-am-s28946-800.webp",
-    "bytes": 13800
+    "bytes": 55152
    },
    {
     "w": 480,
-    "h": 442,
+    "h": 493,
     "file": "img/tooling/es-am-s28946-480.webp",
-    "bytes": 7570
+    "bytes": 30808
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 160,
-   "h": 147,
+   "w": 156,
+   "h": 160,
    "file": "img/tooling/es-am-s28946-thumb.webp",
-   "bytes": 1488
-  }
+   "bytes": 7112
+  },
+  "cut": "auto"
  },
  "es-am-s29269": {
   "alt": "S29269 \u2014 American-style 88\u00b0 1V die, V .500\u2033, 1.000\u2033 wide (drawing, inches and millimetres)",
@@ -80653,25 +80709,32 @@
   "alt": "European-style two-V self-centring dies",
   "variants": [
    {
+    "w": 1131,
+    "h": 580,
+    "file": "img/tooling/es-p-c047-1131.webp",
+    "bytes": 32958
+   },
+   {
     "w": 800,
     "h": 410,
     "file": "img/tooling/es-p-c047-800.webp",
-    "bytes": 14034
+    "bytes": 24188
    },
    {
     "w": 480,
     "h": 246,
     "file": "img/tooling/es-p-c047-480.webp",
-    "bytes": 7616
+    "bytes": 13466
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
    "h": 82,
    "file": "img/tooling/es-p-c047-thumb.webp",
-   "bytes": 1678
-  }
+   "bytes": 3264
+  },
+  "cut": "auto"
  },
  "es-p-c066": {
   "alt": "Rail with a self-centring die insert, bolted in the European-style lower beam",
@@ -89739,30 +89802,31 @@
   "variants": [
    {
     "w": 1200,
-    "h": 1548,
+    "h": 1580,
     "file": "img/tooling/es-am-intermediate-1200.webp",
-    "bytes": 19572
+    "bytes": 62756
    },
    {
     "w": 800,
-    "h": 1032,
+    "h": 1053,
     "file": "img/tooling/es-am-intermediate-800.webp",
-    "bytes": 12766
+    "bytes": 42486
    },
    {
     "w": 480,
-    "h": 619,
+    "h": 632,
     "file": "img/tooling/es-am-intermediate-480.webp",
-    "bytes": 7360
+    "bytes": 24798
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
-   "w": 124,
+   "w": 122,
    "h": 160,
    "file": "img/tooling/es-am-intermediate-thumb.webp",
-   "bytes": 1742
-  }
+   "bytes": 5812
+  },
+  "cut": "auto"
  },
  "es-am-intermediate-tang": {
   "alt": "The American-style punch tang the Z1 intermediate takes: .500\u2033 wide, .622\u2033 with the safety lip (drawing, inches and millimetres)",
@@ -113612,24 +113676,25 @@
   "variants": [
    {
     "w": 800,
-    "h": 160,
+    "h": 134,
     "file": "img/senfeng/sf-coil-clh-1-800.webp",
-    "bytes": 9540
+    "bytes": 10824
    },
    {
     "w": 480,
-    "h": 96,
+    "h": 80,
     "file": "img/senfeng/sf-coil-clh-1-480.webp",
-    "bytes": 4888
+    "bytes": 5792
    }
   ],
-  "alpha": false,
+  "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 32,
+   "h": 27,
    "file": "img/senfeng/sf-coil-clh-1-thumb.webp",
-   "bytes": 1104
-  }
+   "bytes": 1410
+  },
+  "cut": "auto"
  },
  "sf-coil-blank-line": {
   "alt": "Senfeng sheet-coil laser blanking line \u2014 enclosed laser, leveller and decoiler",

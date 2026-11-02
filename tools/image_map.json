@@ -11080,7 +11080,7 @@
   "section": "sahinler",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "sh-tc42-coil": {
   "src": "tools/src-images/sahinler/sh-tc42-coil.png",
@@ -16979,7 +16979,7 @@
   "section": "csm",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "cs-wb-screen": {
   "src": "tools/src-images/csm/cs-wb-screen.jpg",
@@ -21027,7 +21027,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-p-c077b": {
   "src": "tools/src-images/eurostamp/es-p-c077b.webp",
@@ -21052,7 +21052,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-p-c078a": {
   "src": "tools/src-images/eurostamp/es-p-c078a.jpg",
@@ -21060,7 +21060,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-p-radius-press": {
   "src": "tools/src-images/eurostamp/es-p-radius-press.jpg",
@@ -21254,7 +21254,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-p-c110": {
   "src": "tools/src-images/eurostamp/es-p-c110.webp",
@@ -21328,7 +21328,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false,
+  "cutout": "threshold",
   "trim_white": false
  },
  "es-w-4411": {
@@ -21391,7 +21391,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-p-eg-measy": {
   "src": "tools/src-images/eurostamp/es-p-eg-measy.jpg",
@@ -21504,7 +21504,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false,
+  "cutout": "threshold",
   "trim_white": false
  },
  "es-w-3190": {
@@ -21549,7 +21549,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-w-4309": {
   "src": "tools/src-images/eurostamp/es-w-4309.jpg",
@@ -21616,7 +21616,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-p-gauge-hand": {
   "src": "tools/src-images/eurostamp/es-p-gauge-hand.jpg",
@@ -21734,7 +21734,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false,
+  "cutout": "threshold",
   "trim_white": false
  },
  "es-am-sect": {
@@ -21759,7 +21759,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false,
+  "cutout": "threshold",
   "trim_white": false
  },
  "es-am-s28881": {
@@ -21813,7 +21813,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false,
+  "cutout": "threshold",
   "trim_white": false
  },
  "es-am-s29269": {
@@ -22549,7 +22549,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "es-p-c066": {
   "src": "tools/src-images/eurostamp/es-p-c066.jpg",
@@ -26230,7 +26230,7 @@
   "section": "tooling",
   "trim": false,
   "quality": 82,
-  "cutout": false,
+  "cutout": "threshold",
   "trim_white": false
  },
  "es-am-intermediate-tang": {
@@ -33519,7 +33519,7 @@
   "section": "senfeng",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": "threshold"
  },
  "sf-coil-blank-line": {
   "src": "tools/src-images/senfeng/sf-coil-blank-line.jpg",
