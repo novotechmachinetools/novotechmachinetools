@@ -664,7 +664,12 @@ small { font-size: .85em; }
   .nav-menu.is-open { display: flex; }
   .nav-menu > li > a { border-bottom: 1px solid var(--line-soft); padding: 12px 4px; }
   .nav-menu > li.has-children { display: grid; grid-template-columns: 1fr auto; }
-  .sub-toggle { display: inline-block; background: none; border: 0; font-size: 18px; padding: 0 12px; cursor: pointer; color: var(--charcoal); }
+  /* the Products arrow too: an orange circle, easy to see and to tap (the owner, Nov 1 2026) */
+  .sub-toggle { display: inline-flex; align-items: center; justify-content: center; align-self: center; width: 40px; height: 40px;
+    margin: 0 4px 0 8px; padding: 0; background: var(--orange); border: 1px solid var(--orange); border-radius: 50%; color: #fff; font-size: 18px;
+    line-height: 1; cursor: pointer; box-shadow: 0 1px 3px rgba(0, 0, 0, .18); transition: transform .15s; }
+  .sub-toggle:hover, .sub-toggle:active, .sub-toggle:focus-visible { background: var(--orange-deep); border-color: var(--orange-deep); }
+  .nav-menu > li.open > .sub-toggle { transform: rotate(180deg); }
   .mega { position: static; grid-column: 1 / -1; padding: 0; border: 0; box-shadow: none; max-height: none; overflow: visible; }
   .nav-menu > li:hover .mega, .nav-menu > li:focus-within .mega { display: none; }
   .nav-menu > li.open .mega { display: block; }
