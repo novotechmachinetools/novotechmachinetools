@@ -433,10 +433,10 @@ LASER_FAMILIES = [
                    "Safety light curtains at the front and rear of the beam; smart cameras with a safety-lock alarm"] + LZ_STD,
          optional=LZ_OPT,
          extra_tabs=[air_tab("Offered on the compact machines with a 6 kW or larger source — the SF1530N and SF1530NP.")],   # (the owner, Nov 1 2026)
-         # photo 2 (the showroom) deleted, and the N and G machines (photos 10 – 14) right after photo 3 (the owner, Nov 1 2026)
-         images=["sf-1530np", "sf-1530np-side", "sf-1530n", "sf-1530n-rear", "sf-1530n-table", "sf-1530g", "sf-1530g-table",
-                 "sf-1530np-2", "sf-1530np-trolley", "sf-1530np-head", "sf-1530np-safety", "sf-1530np-cabinet", "sf-1530np-container",
-                 "sf-1530-antiburn", "sf-1530-dust"],
+         # photo 2 (the showroom) deleted, the N and G machines (photos 10 – 14) right after photo 3; then the safety banner and the
+         # cabinet photo deleted and photo 5 (the N with its pull-out table) first — the main photo and thumbnail (the owner, Nov 1 2026)
+         images=["sf-1530n-table", "sf-1530np", "sf-1530np-side", "sf-1530n", "sf-1530n-rear", "sf-1530g", "sf-1530g-table",
+                 "sf-1530np-2", "sf-1530np-trolley", "sf-1530np-head", "sf-1530np-container", "sf-1530-antiburn", "sf-1530-dust"],
          videos=[],
          # the SF1530NP 3 – 6 kW technical solution in NovoTech format (tools/brochure/senfeng_h_editions.py) — the owner, Nov 1 2026
          spec_pdf=dict(file="files/NovoTech-Senfeng-SF1530NP-Fiber-Laser-Technical-Specification-2026.pdf",
