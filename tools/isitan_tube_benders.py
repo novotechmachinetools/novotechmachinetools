@@ -402,7 +402,7 @@ PAGES = {
 
 HUB_PAGE = dict(
     title="Pipe & Tube Benders, CNC, Electric & Hydraulic | NovoTech",
-    meta="ISITAN and CSM mandrel benders — all-electric, hybrid and hydraulic CNC, NC, symmetric and rotary draw — from Ø15/32″ tube to Ø8-5/8″ pipe, in one table.",
+    meta="ISITAN and CSM mandrel benders — all-electric, hybrid and hydraulic CNC, NC, symmetric and rotary draw — from Ø15/32″ tube to Ø8-5/8″ pipe.",
     h1="Pipe benders and tube bending machines — CNC, NC, all-electric and hydraulic, Ø15/32″ to Ø8-5/8″",
     intro="A pipe bender or tube bending machine draws a tube around a bend die to a set angle; a mandrel bender adds an internal mandrel so thin-wall tube bends to a tight radius without wrinkling or collapsing. NovoTech sells two lines of mandrel benders in Canada, each on its own pages: ISITAN, built in Turkey since 1959 — servo CNC mandrel benders with 3D simulation, NC hydraulic mandrel benders with a 10″ touchscreen, compact SFB 32 and aluminum-profile benders, and BK rotary draw benders for pipe, bar and box section, with the premium-line SPB NC draw benders and TB 34 and TB 42 mandrel-less pipe benders beside them; and CSM, built in Taiwan since 1982 — all-electric EMB / EMR benders that bend left- and right-hand in one part, MBE / MRE and T-series electric hybrids with stacked tools, TSR / TDR hydraulic CNC and TNCB NC pipe benders to Ø8-5/8″ and two-head symmetric benders. From a 1 HP bench bender for 1-1/4″ pipe to a 20 ft hydraulic CNC pipe bender for shipyard pipe, every machine is supplied with a CSA-approved panel, tooling and installation, and supported from Mississauga, ON, Canada. Below, each page in brief and every model in one capacity table.",
     points=[f"<a href=\"{P_CNC}\">ISITAN CNC tube benders</a> — 3- and 5-axis servo mandrel benders, Ø1-1/2″ to Ø3-1/2″",
@@ -436,7 +436,7 @@ ALL_FAMILIES = FAMILIES + SPB_FAMILIES + TB.families(P_BK) + CSM.families(P_CSM)
 def build():
     write_families(SET, ALL_FAMILIES)
     sib = [(s, SUBPAGE_META[s][3], SUBPAGE_META[s][0]) for s in ORDER]
-    hub = {"slug": HUB, "label": "All pipe & tube benders", "image": "is-sfb-38-cnc-a5", "blurb": "Every ISITAN tube and pipe bender NovoTech supplies, with the capacity table for the whole range."}
+    hub = {"slug": HUB, "label": "All pipe & tube benders", "image": "is-sfb-38-cnc-a5", "blurb": "Every ISITAN tube and pipe bender NovoTech supplies."}
     related = [{"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "tube-end-forming-machines.html", "label": "Tube end forming machines"}, {"href": "circular-cold-saws.html", "label": "Circular cold saws"}]
     shared = {"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf("premium-sheet-metal"), TB.pdf()) if p],
               "hero_brand_line": "ISITAN BK benders are made in Turkey by ISITAN Makine, since 1959; the SPB draw benders and TB pipe benders are NovoTech's premium line, built in Turkey to NovoTech's specification — all with European components. Sold, installed and supported in Canada by NovoTech.",

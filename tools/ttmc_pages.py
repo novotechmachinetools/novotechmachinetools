@@ -41,7 +41,7 @@ PAGE = dict(
           "For small parts on the bench, the EBQ01 motorized bench shears cut 18 ga over 26″ and 20 ga over 41″ from a foot switch; for "
           "coil, the PS-1220×1.5GT slits 48″ coil into strips and cuts them to length on one machine. "
           "For plate shears from 5/32″ to 1-9/16″ see the NovoTech hydraulic shears, for the premium direct-gear mechanical shears the "
-          "NovoTech mechanical shears, and for every line in one table the shears overview.",
+          "NovoTech mechanical shears, and for the kinds compared the shears overview.",
     points=["PS pneumatic shear 16 ga × 52″ on 85 – 100 psi shop air · HQ01 light hydraulic shears 14 ga × 52″ and 16 ga × 98″, 3 HP",
             "THS and HQ11 hydraulic shears 12 ga – 1/4″ × 51 – 120″, 12 – 20 strokes/min, quick-set blade clearance, electric or NC back gauge",
             "Q11 electric shears 14 ga – 5/32″ × 49 – 100″ with manual or PLC / motorised back gauge · Q11 mechanical shears 1/8″ – 3/8″, 45 – 55 strokes/min",
@@ -67,7 +67,7 @@ PAGE = dict(
          {"q": "When is a coil slitter worth it?",
           "a": "When you buy sheet in coil, or cut the same strips and blanks every day — roofing and siding trim, flashing, duct, cable tray. The PS-1220×1.5GT pays off coil up to 48″ wide, slits it into up to seven strips in thin sheet (two in 16 ga) and cuts them to length at 35 strokes a minute, so blanks come off the outfeed table without a shear operator squaring each sheet. Coil costs less per pound than cut sheet and has no drop at the end of every sheet."},
          {"q": "How do these compare with the premium SRGM shears and the hydraulic value line?",
-          "a": "The NovoTech mechanical shears (SRGM) are the premium direct-gear machines from Turkey — heavier, 31 to 35 strokes a minute, NC back gauge and photocell guard as standard — for the shop that shears all day. The NovoTech hydraulic shears (QC12K / Q11K) are plate shears from 5/32″ to 1-9/16″ over 8 to 26 ft with Estun controls. The sheet metal shears on this page are the smaller, lower-priced machines for sheet to 1/4″ and widths to 120″ — the same NovoTech installation, warranty and support. The comparison and the capacity table for every line are on the shears overview."},
+          "a": "The NovoTech mechanical shears (SRGM) are the premium direct-gear machines from Turkey — heavier, 31 to 35 strokes a minute, NC back gauge and photocell guard as standard — for the shop that shears all day. The NovoTech hydraulic shears (QC12K / Q11K) are plate shears from 5/32″ to 1-9/16″ over 8 to 26 ft with Estun controls. The sheet metal shears on this page are the smaller, lower-priced machines for sheet to 1/4″ and widths to 120″ — the same NovoTech installation, warranty and support. The kinds are compared on the shears overview."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about sheet metal shears",
     related_pages=[{"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "corner-notcher.html", "label": "Corner notchers"},

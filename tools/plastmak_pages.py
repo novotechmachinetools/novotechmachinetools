@@ -275,7 +275,7 @@ HUB_PAGE = dict(
           "end milling machines; a hydraulic corner crimper, screwing and sash assembly machines, portable machines and "
           "conveyors; and complete production groups for 40 to 220 windows a shift. The saws have their own page — upcut, "
           "double-head, bead and miter saws. Every machine is supplied with a CSA-approved panel, installed and supported from "
-          "Mississauga, ON, Canada. Below, each page in brief and every model in one table.",
+          "Mississauga, ON, Canada. Below, each page in brief.",
     points=[f"<a href=\"{D.P_WELD}\">PVC welding & corner cleaning</a> — 1, 2 and 4-corner welders, knife and CNC corner cleaners",
             f"<a href=\"{D.P_CNC}\">CNC centres & copy routers</a> — 9-axis centre, 3-axis CNC, copy routers, end mills · "
             f"<a href=\"{D.P_ASSY}\">assembly machines & conveyors</a>",
@@ -354,7 +354,7 @@ def build():
     write_families(SET, allf)
     write_category(D.P_SAWS, PAGE_SAWS, allf, SET, "Aluminum & PVC saws", extra={**SHARED, "nav_label": "Aluminum & PVC saws"})
     hub = {"slug": D.P_HUB, "label": "All aluminum & PVC processing machines", "image": "pm-100gp",
-           "blurb": "Every Plastmak welding, cleaning, machining and assembly machine and production group NovoTech supplies, in one table."}
+           "blurb": "Every Plastmak welding, cleaning, machining and assembly machine and production group NovoTech supplies."}
     sib = [(s, nav, title) for s, title, _, _, nav in SUBPAGES]
     for slug, p in PAGES.items():
         extra = dict(SHARED, nav_label=dict((s, nav) for s, _, _, _, nav in SUBPAGES)[slug])

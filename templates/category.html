@@ -56,26 +56,7 @@
 </nav>
 
 <div class="wrap page-body">
-{% if page.range_rows %}
-<section class="group" id="range-at-a-glance" aria-labelledby="range-title">
-  <header class="group-head">
-    <h2 id="range-title">{{ page.range_title or 'Every model at a glance' }}</h2>
-    <p class="group-lead">{{ page.range_lead }}</p>
-  </header>
-  <div class="specs">
-    <section class="table-scroll" tabindex="0" aria-label="All models at a glance">
-      <table class="spec-table spec-table-range">
-        <caption>{{ page.range_caption }}</caption>
-        <thead><tr><th scope="col" class="label-col">Model</th><th scope="col">{{ page.range_second_col or 'Group' }}</th>{% for c in page.range_cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
-        <tbody>
-          {% for r in page.range_rows %}
-          <tr><th scope="row"><a href="{{ r.href }}">{{ r.model }}</a><small>{{ r.family }}</small></th><td>{{ r.kind }}</td>{% for c in r.cols %}<td>{{ c }}</td>{% endfor %}</tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </section>
-  </div>
-  {% if page.range_note %}<p class="table-note">{{ page.range_note }}</p>{% endif %}
+{# no "every model at a glance" table on any page (the owner, Nov 1 2026: delete it everywhere, hubs included) #}
 </section>
 {% endif %}
 {% for g in page.groups %}
@@ -89,7 +70,7 @@
     <h2 id="{{ g.id }}-title" class="line-title">{{ g.title }}</h2>
     {% if g.lead %}<p class="group-lead">{{ g.lead }}</p>{% endif %}
     <p class="group-lead">{{ g.tagline or br.tagline }}</p>
-    {% if g.pdfs or page.range_rows %}<p class="line-links">{% for pd in g.pdfs %}<a class="btn btn-ghost btn-small" href="{{ pd.file }}" download>{{ pd.label }} <small>({{ pd.size }})</small></a> {% endfor %}{% if page.range_rows %}<a class="arrow" href="#range-at-a-glance">Capacity table</a>{% endif %}</p>{% endif %}
+    {% if g.pdfs %}<p class="line-links">{% for pd in g.pdfs %}<a class="btn btn-ghost btn-small" href="{{ pd.file }}" download>{{ pd.label }} <small>({{ pd.size }})</small></a> {% endfor %}</p>{% endif %}
   </header>
   {% else %}
   <header class="group-head">

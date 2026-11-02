@@ -31,8 +31,7 @@ SUBPAGES = [
 
 def hub():
     return {"slug": HUB, "label": "All CNC machine tools", "image": "dn-tmc-1",
-            "blurb": "Every CNC lathe, machining centre and surface grinder NovoTech sells — Dener premium and NovoTech value lines — on one "
-                     "page, with the whole range in one table."}
+            "blurb": "Every CNC lathe, machining centre and surface grinder NovoTech sells — Dener premium and NovoTech value lines — on one page."}
 
 
 def siblings():

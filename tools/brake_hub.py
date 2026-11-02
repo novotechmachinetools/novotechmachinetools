@@ -212,14 +212,14 @@ PAGES = {
 
 HUB_PAGE = dict(
     title="Sheet Metal Brakes & Folding Machines for Sale in Canada — Box & Pan, Hand, Magnetic, Hydraulic & CNC | NovoTech",
-    meta="Every sheet metal brake and folding machine NovoTech sells in Canada, by kind: box and pan brakes, hand brakes and foot-clamp folders, magnetic brakes, hydraulic / electric / CNC folding machines, portable roofing and siding brakes and 3-in-1 machines — 137 models in one table, with a buying guide.",
+    meta="Every sheet metal brake and folding machine NovoTech sells in Canada, by kind: box and pan brakes, hand brakes and foot-clamp folders, magnetic brakes, hydraulic / electric / CNC folding machines, portable roofing and siding brakes and 3-in-1 machines — the six kinds compared, with a buying guide.",
     h1="Sheet metal brakes and folding machines — box and pan, hand, magnetic, hydraulic, roofing and 3-in-1",
     intro="A sheet metal brake (folder) bends sheet by clamping it under a straight beam and swinging a folding leaf up around the edge — no punch "
           "and die, no marks on painted sheet, and long, straight bends in thin material that a press brake cannot hold flat. NovoTech sells six "
           "kinds in Canada, each on its own page: box and pan brakes with removable fingers for boxes and pans; straight hand brakes, foot-clamp "
           "folding machines and bench brakes for flashing, trim and duct; magnetic brakes that fold boxes of any depth; hydraulic, electric and "
           "CNC folding machines for 10 ga over 10 ft and production panels; portable roofing and siding brakes for the job site; and 3-in-1 "
-          "shear, brake and roll machines for the small shop. Below, the six kinds compared, every one of the {n} models in one table, the "
+          "shear, brake and roll machines for the small shop. Below, the six kinds compared, the "
           "questions we get asked and the buying guide. NovoTech's value-line brakes are built in China to our specification, with parts and "
           "support from Mississauga, ON, Canada.",
     points=['<a href="box-and-pan-brake.html">Box and pan brakes</a> 12 – 157″ to 12 ga and 14 ga boxes 9″ deep; <a href="sheet-metal-hand-brake.html">hand brakes and foot-clamp folders</a> to 13 ft; <a href="sheet-metal-hand-brake.html#tt-bench-brake">bench brakes</a>',
@@ -254,7 +254,7 @@ COMPARE = {
 
 def hub():
     return {"slug": HUB, "label": "All sheet metal brakes", "image": "tm-eb2500",
-            "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared, all 137 models in one table and the buying guide."}
+            "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared and the buying guide."}
 
 
 def siblings():

@@ -28,7 +28,7 @@ HUBS = {
         lineup_swaps=[["sf-np", "sf-hm"]],      # Senfeng line-up: H, HM, compact, then NP (the owner, Nov 1 2026)
         page=dict(
             title="Fiber Laser Cutting Machines for Sale in Canada — Shuttle Table, Sheet & Tube, Plate, 3D & Coil-Fed, 1.5–80 kW | NovoTech",
-            meta="Every fiber laser NovoTech sells in Canada, by kind: lasers with shuttle table or pallet changer, sheet-and-tube combination lasers, large-format plate lasers to 10 × 164 ft, 3D laser cells and coil-fed lines — 1.5 to 80 kW, premium and value lines, the kinds compared and every model in one table.",
+            meta="Every fiber laser NovoTech sells in Canada, by kind: lasers with shuttle table or pallet changer, sheet-and-tube combination lasers, large-format plate lasers to 10 × 164 ft, 3D laser cells and coil-fed lines — 1.5 to 80 kW, premium and value lines and the kinds compared.",
             h1="Laser cutting machines for sheet and plate, 1.5 to 80 kW",
             intro="A fiber laser cutting machine cuts sheet and plate from a DXF file with a focused beam — mild steel to 1-1/2″ and beyond with the "
                   "high-power sources, stainless and aluminum to 1″ — at speeds no plasma or punch can match, with a clean edge and no tooling. "
@@ -37,7 +37,7 @@ HUBS = {
                   "combination lasers with a rotary chuck beside the table; large-format plate lasers — semi-closed single tables, ground-rail and "
                   "gantry machines to 10 × 164 ft with bevel heads; 3D laser cells for formed parts; and coil-fed lines that cut straight from the "
                   "coil. Each kind comes in a premium line made in Turkey or a value line built to our specification, as sections on the same page. "
-                  "Below, the kinds compared, the laser power guide and every model in one table of working area, power and speed; every machine "
+                  "Below, the kinds compared and the laser power guide; every machine "
                   "comes with a CSA-approved panel, chiller, nesting software, a 1-year warranty and installation, training and parts from "
                   "Mississauga, ON, Canada.",
             points=['<a href="fiber-laser-cutting-machine.html">Fiber lasers</a> with shuttle table or pallet changer, 4 × 4 ft compact to 8.5 × 41 ft, 1.5 – 80 kW — premium <a href="fiber-laser-cutting-machine.html#dn-gfl">GFL</a> / <a href="fiber-laser-cutting-machine.html#dn-smart-closed">Smart</a>, value <a href="fiber-laser-cutting-machine.html#vn-ule">ULE</a>, <a href="fiber-laser-cutting-machine.html#sf-h">H series</a>, <a href="fiber-laser-cutting-machine.html#sf-np">NP</a>, <a href="fiber-laser-cutting-machine.html#sf-compact">compact</a>',

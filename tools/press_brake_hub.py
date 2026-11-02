@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The press-brake hub (press-brake.html, hub.html template): a short page that sends the buyer to the right kind of
 machine — hydraulic, electric or compact press brakes (tools/press_brake_nav.py) — with a comparison of the three, every family
-by brand (the line-up, built by build.py), the whole range in one capacity table and the questions we get asked.
+by brand (the line-up, built by build.py), and the questions we get asked.
 
 The hub reads the families the two supplier generators wrote (content/families/dener.json, value-sheet.json) into its own
 set content/families/press-brakes.json, so run it AFTER tools/dener_pages.py and tools/vl_sheet_pages.py, and BEFORE
@@ -23,14 +23,14 @@ SOURCES = PBN.family_sources()
 
 HUB_PAGE = dict(
     title="Press Brakes for Sale in Canada — Hydraulic, Electric & Compact, 16–1,323 Tons | NovoTech",
-    meta="Every press brake NovoTech sells in Canada, by kind: hydraulic CNC, hybrid and NC press brakes to 1,323 US tons, servo-electric and ball-screw press brakes to 220 tons and compact press brakes from 16 tons — every family by brand and the capacity table for the whole range.",
+    meta="Every press brake NovoTech sells in Canada, by kind: hydraulic CNC, hybrid and NC press brakes to 1,323 US tons, servo-electric and ball-screw press brakes to 220 tons and compact press brakes from 16 tons — every family by brand.",
     h1="Press brakes — hydraulic, electric and compact, 16 to 1,323 US tons",
     intro="A press brake bends sheet and plate between a punch and a V-die; the control sets the back gauge, the ram depth and the angle, and the "
           "operator loads the sheet and presses the pedal. NovoTech sells three kinds in Canada, each on its own page: hydraulic press brakes — "
           "the lowest price per ton and full force over the whole stroke, from 33-ton NC machines to CNC brakes of 1,323 US tons and 26 ft, in a "
           "premium line made in Turkey and a value line built to our specification; electric press brakes, servo-driven with no hydraulic oil, "
           "3 to 220 US tons, which bend sheet about twice as fast as a hydraulic brake and draw about 70 % less power; and compact press brakes from 16 to 66 tons over 2 to 8 ft "
-          "for the sheet-metal shop. Below, the three kinds compared, every family by brand, every model in one table and the questions we get "
+          "for the sheet-metal shop. Below, the three kinds compared, every family by brand and the questions we get "
           "asked; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts "
           "from Mississauga, ON, Canada.",
     # one link per line, so each line has one unbroken underline (the owner: the separate links made the underlines look chopped up)

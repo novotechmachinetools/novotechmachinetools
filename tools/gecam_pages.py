@@ -327,7 +327,7 @@ HUB_PAGE = dict(
           "machines and benches for shops that do not need a wide-belt line; and corner grinders for the welds of boxes, cabinets and "
           "tube frames. Pipe sanders and polishers have a page of their own. Every machine is supplied with a CSA-approved panel, "
           "installed, and supported from Mississauga, ON, Canada. "
-          "Below, each page in brief and every model in one table.",
+          "Below, each page in brief.",
     points=[f"<a href=\"{D.P_SHEET}\">Sheet metal deburring machines</a> — wide-belt deburring and satin finishing, 5-7/8″ to 53-1/8″, dry or wet",
             f"<a href=\"{D.P_EDGE}\">Edge rounding & deslagging</a> — radius to 5/64″, both sides in one pass · <a href=\"{D.P_BRUSH}\">brush deburring machines & benches</a>",
             f"<a href=\"{D.P_CORNER}\">Corner grinders</a> for the welds of boxes, cabinets, doors and tube frames"],

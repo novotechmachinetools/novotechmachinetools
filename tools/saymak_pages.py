@@ -38,8 +38,8 @@ PAGE = dict(
           "support that brings the cut piece back to the operator; and the SRGM-HCL and SRGM-CL built into cut-to-length coil lines. "
           "Welded steel frame, cutting beam in teflon slideways, high-carbon high-chrome blades with two and four cutting edges, "
           "front blade-gap adjustment, NC back gauge, shadow-line light and photocell guards. For plate from 1/4″ to 1-9/16″ see the Dener "
-          "and NovoTech value-line hydraulic shears, for lighter sheet the value-line sheet metal shears — every line in one table on the "
-          "shears overview. All supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
+          "and NovoTech value-line hydraulic shears, for lighter sheet the value-line sheet metal shears — the shears overview compares the "
+          "kinds. All supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
     points=["SRGM-H light type, 1/8″ × 3.6 – 10 ft, 35 strokes/min · SRGM standard, 1/4″ × 3.6 – 13.8 ft, 31 strokes/min",
             "SRGM-HFR / SRGM-FR with return-to-sender: the cut blank comes back to the front, off-cuts drop to the rear",
             "SRGM-HCL / SRGM-CL built into cut-to-length coil lines; Turkish-built with European motors, gearboxes and electrics"],
@@ -48,7 +48,7 @@ PAGE = dict(
             ("shear-return", "Guillotine shears with return-to-sender", "The same two machines with a sheet support behind the blade that returns the cut piece to the operator — blanks and strips cut by one person.", BRAND),
             ("shear-line", "Shears for cut-to-length lines", "Open at the rear for the strip from a decoiler and straightener, cut to length by the line control.", BRAND)],
     faq=[{"q": "Mechanical or hydraulic shear — which is better?",
-          "a": "For sheet to 1/4″ a direct-gear mechanical shear is the faster and simpler machine: 31 – 35 strokes a minute from a motor and gearbox, no hydraulic power pack, no oil to heat up, no valves or seals to service, and the same cut quality on the first and the thousandth stroke. Hydraulic shears earn their price from 3/8″ plate upwards, where the beam needs tonnage rather than speed — those are the Dener BS / DAS and the NovoTech value-line QC12K / Q11K on their own pages; the shears overview compares all four lines in one table."},
+          "a": "For sheet to 1/4″ a direct-gear mechanical shear is the faster and simpler machine: 31 – 35 strokes a minute from a motor and gearbox, no hydraulic power pack, no oil to heat up, no valves or seals to service, and the same cut quality on the first and the thousandth stroke. Hydraulic shears earn their price from 3/8″ plate upwards, where the beam needs tonnage rather than speed — those are the Dener BS / DAS and the NovoTech value-line QC12K / Q11K on their own pages; the shears overview compares the three kinds of shear."},
          {"q": "What does direct-gear mean?",
           "a": "The motor drives the cutting beam through a gearbox and crank directly — there is no flywheel and clutch between them, as on an older mechanical shear. The beam makes one stroke per pedal press, stops at top dead centre and cannot repeat a stroke on its own; the motor runs only while the beam cycles, which also makes the machine quiet and economical."},
          {"q": "How is the capacity rated, and what about stainless and aluminum?",

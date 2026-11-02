@@ -37,7 +37,7 @@ PAGES = {
 SECTIONS = {
     "sheet": dict(
         hub="laser-cutting-machine", section="Sheet laser cutters", label="All sheet lasers", image="dn-gfl-1",
-        blurb="Shuttle table, sheet and tube, large-format plate, 3D or coil-fed? Every fiber laser NovoTech sells for sheet and plate on one page, with the kinds compared and the working area, power and speed of the whole range in one table.",
+        blurb="Shuttle table, sheet and tube, large-format plate, 3D or coil-fed? Every fiber laser NovoTech sells for sheet and plate on one page, with the kinds compared.",
         subpages=[
             ("fiber-laser-cutting-machine", "Fiber laser cutting machines — shuttle table or pallet changer, 4 × 4 ft to 8.5 × 41 ft, 1.5 to 80 kW", "dn-gfl-1",
              "The production laser: a shuttle table or pallet changer loads the next sheet while the first is cut — the premium GFL and Smart made in Turkey, NovoTech's value-line ULE with a 15-second shuttle table, the Senfeng H series to 80 kW, the NP with a cover on its gantry and compact 4 × 4 ft machines.",

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The shear hub (shear-cutting.html, hub.html template): a short page that sends the buyer to the right kind of shear —
-hydraulic shears, mechanical guillotine shears or sheet metal shears (tools/shear_nav.py) — with the three compared, the
-whole range in one capacity table and the questions we get asked.
+hydraulic shears, mechanical guillotine shears or sheet metal shears (tools/shear_nav.py) — with the three compared
+and the questions we get asked.
 
 The hub reads the families the four supplier generators wrote (content/families/shears.json, value-sheet.json, ttmc.json)
 into its own set content/families/all-shears.json, so run it AFTER tools/saymak_pages.py, tools/dener_pages.py,
@@ -23,7 +23,7 @@ SOURCES = SN.family_sources()
 
 HUB_PAGE = dict(
     title="Metal Shears for Sale in Canada — Hydraulic, Mechanical & Sheet Metal Shears, 20 ga to 1-9/16″ | NovoTech",
-    meta="Every metal shear NovoTech sells in Canada, by kind: hydraulic swing beam and guillotine plate shears to 1-9/16″, direct-gear and flywheel mechanical shears to 3/8″, and sheet metal shears for the HVAC and signage shop — the three kinds compared and every model in one table.",
+    meta="Every metal shear NovoTech sells in Canada, by kind: hydraulic swing beam and guillotine plate shears to 1-9/16″, direct-gear and flywheel mechanical shears to 3/8″, and sheet metal shears for the HVAC and signage shop — the three kinds compared.",
     h1="Metal shears — hydraulic, mechanical and sheet metal shears, 20 ga to 1-9/16″",
     intro="A metal shear (sheet metal shearing machine, guillotine shear, shear cutter) cuts plate and sheet to size in one stroke between a "
           "fixed bottom blade and a top blade on the moving beam — the first machine in every sheet-metal, HVAC, signage and fabrication shop, "
@@ -31,7 +31,7 @@ HUB_PAGE = dict(
           "guillotine plate shears from 12 ga to 1-9/16″ and 26 ft, in a premium line made in Turkey and a value line built to our "
           "specification; mechanical guillotine shears — direct-gear SRGM machines for 1/8″ and 1/4″ at 31 to 35 strokes a minute and flywheel "
           "shears to 3/8″, with no hydraulics at all; and sheet metal shears — pneumatic, electric and bench shears and a coil slitter for the "
-          "sheet-metal shop. Below, the three kinds compared, every model in one table of capacity, length, strokes, motor and weight, and the "
+          "sheet-metal shop. Below, the three kinds compared and the "
           "questions we get asked; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts from "
           "Mississauga, ON, Canada.",
     points=['<a href="hydraulic-shearing-machine.html">Hydraulic</a>: swing beam 12 ga – 3/4″ × 4 – 20 ft and guillotine 1/4″ – 1-9/16″ × 8 – 26 ft; premium <a href="hydraulic-shearing-machine.html#dn-bs">BS / BSY</a> and <a href="hydraulic-shearing-machine.html#dn-das">DAS CNC</a>, value <a href="hydraulic-shearing-machine.html#vl-qc12k">QC12K</a> / <a href="hydraulic-shearing-machine.html#vl-q11k">Q11K</a>',

@@ -103,7 +103,7 @@ PAGE_SHEAR = dict(
           "brand, built in China with Estun controls and Siemens motors: the swing beam shears from 5/32″ to 3/4″ over 8 to "
           "20 ft — the rugged everyday plate shear — and the guillotine shears with a variable rake angle from 1/4″ to 1-9/16″ over 8 to 26 ft for "
           "production and thick plate. The Dener premium plate shears, the premium-line mechanical shears and the value-line sheet metal shears "
-          "have their own pages, and the shears overview puts every line in one table. Installed and supported from Mississauga, ON, Canada, with a "
+          "have their own pages, and the shears overview compares the kinds. Installed and supported from Mississauga, ON, Canada, with a "
           "CSA-approved panel.",
     points=["Swing beam: 32 models, 5/32″ – 3/4″ × 8 – 20 ft, Estun E21S control, motorised back gauge",
             "Guillotine: 34 models, 1/4″ – 1-9/16″ × 8 – 26 ft, variable rake angle and blade gap from the control",
@@ -120,7 +120,7 @@ PAGE_SHEAR = dict(
          {"q": "How is the sheet supported?",
           "a": "Ball-transfer front tables, a squaring arm with scale and front support arms are standard; the back gauge carries support fingers and the cut strip drops onto the rear slide. A pneumatic sheet support that holds the piece during the cut and returns it to the front, a conveyor for strips and longer front arms are options for thin, large or finished sheet."},
          {"q": "How does the value line compare with the Dener shears?",
-          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and parts stocked in Canada; the value-line shears are built in China to our specification with Estun controls, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The capacity table for all four lines is on the shears overview."},
+          "a": "Same architecture — welded frame, swing beam or roller-guided guillotine beam, motorised ball-screw back gauge, hydraulic hold-downs — and the same NovoTech installation, warranty and support. The Dener machines are built in Turkey with the ESA 630 CNC, 1 m back gauge and parts stocked in Canada; the value-line shears are built in China to our specification with Estun controls, sold under NovoTech's name at a lower price and in a wider range of sizes, to 1-9/16″ and 26 ft. The shears overview compares the three kinds of shear."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about hydraulic shears",
     related_pages=[{"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"},

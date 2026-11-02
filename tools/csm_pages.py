@@ -88,7 +88,7 @@ PAGE_BEND = dict(
          {"q": "Can the bender be automated?",
           "a": "Yes: bundle loaders that feed the tube to the carriage, punching units on the head for holes in furniture tube (the P versions), an integrated circular saw that cuts each part off the bar, end-forming stations, robot transfer and checking fixtures. The videos under each series show most of them in production, and we lay out the cell for your parts."},
          {"q": "CSM or ISITAN?",
-          "a": "Both are mandrel benders sold, installed and supported by NovoTech. The ISITAN SFB benders (Turkey) cover Ø1-1/4″ to Ø3-1/2″ with NC and CNC models for the job shop and fabricator. CSM covers a far wider range — from Ø15/32″ brake line to Ø8-5/8″ pipe — with all-electric and hybrid machines, stacked tools, boosters and automation for series production. Send us the part drawing and the tube and we quote the right machine from either range; the capacity table for every bender is on the pipe and tube benders overview."},
+          "a": "Both are mandrel benders sold, installed and supported by NovoTech. The ISITAN SFB benders (Turkey) cover Ø1-1/4″ to Ø3-1/2″ with NC and CNC models for the job shop and fabricator. CSM covers a far wider range — from Ø15/32″ brake line to Ø8-5/8″ pipe — with all-electric and hybrid machines, stacked tools, boosters and automation for series production. Send us the part drawing and the tube and we quote the right machine from either range."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about CSM tube benders",
     related_pages=[{"href": "wire-bending-machines.html", "label": "CNC wire bending machines"}, {"href": "tube-end-forming-machines.html", "label": "Tube end formers"},

@@ -47,7 +47,7 @@ SUBPAGES = [
 
 def hub():
     return {"slug": HUB, "label": "All press brakes", "image": "dn-xl-1",
-            "blurb": "Hydraulic, electric or compact? Every press brake NovoTech sells in Canada on one page, with the three kinds compared and the capacity table for the whole range."}
+            "blurb": "Hydraulic, electric or compact? Every press brake NovoTech sells in Canada on one page, with the three kinds compared."}
 
 
 def siblings():

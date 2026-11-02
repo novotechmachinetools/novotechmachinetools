@@ -285,7 +285,7 @@ SHARED = {"catalogue_pdf": None, "catalogue_pdfs": [p for p in (PDF, premium_pdf
 def build():
     write_families(SET, ALL_FAMILIES)
     sib = [(s, SUBPAGE_META[s][3], SUBPAGE_META[s][0]) for s in ORDER]
-    hub = {"slug": HUB, "label": "All plate rollers", "image": "is-4rhms-3100-250", "blurb": "Every ISITAN and NovoTech premium-line plate roller NovoTech supplies, with the capacity table for the whole range."}
+    hub = {"slug": HUB, "label": "All plate rollers", "image": "is-4rhms-3100-250", "blurb": "Every ISITAN and NovoTech premium-line plate roller NovoTech supplies."}
     for slug in ORDER:
         write_category(slug, PAGES[slug], ALL_FAMILIES, SET, SECTION, hub=hub, siblings=sib, guide=GUIDE, extra=SHARED if slug in (SH.P4, SH.P3) else None)
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Plate Rollers", "faq_title": "Questions we get asked about plate rollers", "nav_label": "All plate rollers", "related_blurb": hub["blurb"]},

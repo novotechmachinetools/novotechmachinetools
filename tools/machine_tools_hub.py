@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The CNC machine-tool hub (cnc-machine-tools.html, hub.html template): four product pages — Dener CNC lathes, Dener machining
 centres and the Dener surface grinder (premium line, made in Turkey) and NovoTech's value-line CNC machine tools (built in China)
-— introduced separately with their family cards, plus the whole range in one table.
+— introduced separately with their family cards, each with its own specifications.
 
 The hub reads the families the generators wrote (content/families/dener-mt.json, ttmc-more.json) into its own set
 content/families/machine-tools.json, so run it AFTER tools/dener_mt_pages.py and tools/ttmc_more_pages.py:
@@ -26,7 +26,7 @@ SOURCES = [("dener-mt", "cnc-lathe", ["dn-ttc", "dn-tth"]),
 HUB_PAGE = dict(
     title="CNC Lathes, Machining Centers & Surface Grinders | NovoTech",
     meta="CNC lathes, vertical and double-column machining centers and surface grinders for sale in Canada — the Dener premium line from "
-         "Turkey and NovoTech's value line, with every model in one table.",
+         "Turkey and NovoTech's value line.",
     h1="CNC machine tools — CNC lathes, vertical and double-column machining centres and surface grinders",
     intro="CNC machine tools turn, mill, drill, bore, tap and grind the parts a fabrication shop or a machine shop makes from bar, plate and "
           "castings. NovoTech sells two lines in Canada, each on its own pages: the Dener machine tools — the premium line, built in Kayseri, "
@@ -34,7 +34,7 @@ HUB_PAGE = dict(
           "X travel, the TDC double-column machining centres to 161.4″ and 26,455 lb on the table, and the TGH-B 450 NC surface grinder; and "
           "NovoTech's own value-line CNC machine tools, built in China to our specification — a slant-bed CNC lathe with gang tooling, "
           "BT40 vertical machining centres, BT50 CNC boring and milling machines, a horizontal machining centre and slot machining centres. "
-          "Below, each line in brief and every model in one table; every machine comes with a CSA-approved panel, a 1-year warranty and "
+          "Below, each line in brief; every machine comes with a CSA-approved panel, a 1-year warranty and "
           "installation, training and parts from Mississauga, ON, Canada.",
     points=["Dener CNC lathes: TTC-6 / TTC-8 and TTH-8 / 10 / 12, Ø22 – 27.6″ swing, 6″ – 12″ chucks, Fanuc control, C-axis live tooling",
             "Dener machining centres: TMC 850 – 1600 (BBT40, X 33.5 – 63″) and TDC 2112 – 4120 double-column (BBT50, X to 161.4″); TGH-B 450 surface grinder",
