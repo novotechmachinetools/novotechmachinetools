@@ -574,7 +574,8 @@ TUBE = [
       ["2″ schedule 40 pipe (0.154″ wall); centre-line radius 3 – 6″", "Standard dies 1″ × 3″, 1-1/2″ × 5″, 1-3/4″ × 6″ (120°)",
        "Optional round dies 3/4 – 2″ and square dies 3/4 – 1-1/2″; 120°, 180° and 240° dies",
        "TB-3B / TB-3C: 10-ton cylinder, 12″ stroke, caster stand with die rack", "HTB-1000: 1 HP electric-hydraulic, aluminum-bronze bushings at the pivots"],
-      ["tm-htb1000", "tm-tb3b", "tm-tb3c"], headline="2″ schedule 40 pipe", cap="[Drive]"),
+      # the TB-3A photo from the owner's "tube bender" set (Nov 2 2026), with the other TB-3 models
+      ["tm-htb1000", "tm-tb3a", "tm-tb3b", "tm-tb3c"], headline="2″ schedule 40 pipe", cap="[Drive]"),
     F("tt-exhaust", P_TUBE, "power", "HTB-2000 exhaust tube bender and HTES-3000 expander-swager", "Exhaust benders", [TB[5]],
       "For the exhaust and muffler shop: the HTB-2000 hydraulic bender bends tube from 1 to 3″ with 58,000 lb of force, with a built-in "
       "swager / expander for end finishing, a knee-pad control, a depth-of-bend indicator and a complete tooling package; the HTES-3000 "

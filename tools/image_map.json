@@ -23900,7 +23900,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-erbm10": {
   "src": "tools/src-images/ttmc-more/tm-erbm10.jpg",
@@ -23963,7 +23963,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-f1210": {
   "src": "tools/src-images/ttmc-more/tm-f1210.jpg",
@@ -24422,7 +24422,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-htb2000": {
   "src": "tools/src-images/ttmc-more/tm-htb2000.jpg",
@@ -24431,7 +24431,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-htb25t": {
   "src": "tools/src-images/ttmc-more/tm-htb25t.jpg",
@@ -24512,7 +24512,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-jtb50": {
   "src": "tools/src-images/ttmc-more/tm-jtb50.jpg",
@@ -24521,7 +24521,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-jtb80": {
   "src": "tools/src-images/ttmc-more/tm-jtb80.jpg",
@@ -24530,7 +24530,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-jtr30": {
   "src": "tools/src-images/ttmc-more/tm-jtr30.jpg",
@@ -25623,21 +25623,21 @@
  },
  "tm-tb3b": {
   "src": "tools/src-images/ttmc-more/tm-tb3b.jpg",
-  "alt": "TB-3B air-hydraulic pipe bender on caster stand with die rack",
+  "alt": "TB-3B air-hydraulic pipe bender on caster stand with the foot-operated air pump",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-tb3c": {
   "src": "tools/src-images/ttmc-more/tm-tb3c.jpg",
-  "alt": "TB-3C electric-hydraulic pipe bender on caster stand",
+  "alt": "TB-3C electric-hydraulic pipe bender on caster stand with power pack and foot switch",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-tb500": {
   "src": "tools/src-images/ttmc-more/tm-tb500.jpg",
@@ -34222,5 +34222,14 @@
   "trim": false,
   "quality": 80,
   "cutout": false
+ },
+ "tm-tb3a": {
+  "src": "tools/src-images/ttmc-more/tm-tb3a.jpg",
+  "alt": "TB-3A pipe bender with 10-ton hydraulic jack on a floor pedestal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
  }
 }

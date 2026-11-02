@@ -205,6 +205,28 @@ PHOTOS.update({
     "tt-hq01-2500": dict(dir=SHEAR, src="HQ01-1.6X2500B.jpg", alt="HQ01-1.6x2500B light hydraulic shear, 98″ × 16 ga, with front sheet supports and side guards"),
     "tt-hq11-1300": dict(dir=SHEAR, src="HQ11-1300X6.5.jpg", alt="HQ11-6.5x1300 hydraulic shear, 51″ × 1/4″, with hold-downs, beam-mounted controls and the foot pedal"),
 })
+
+# the owner's WeTransfer "tube bender" (Nov 2 2026): only models already on the site, where the photo is larger or cleaner than the
+# catalogue crop (the HTB-1000 and ETR-50 crops were print scans, the ETR-50 with a callout line across the pedal), and the TB-3A, on the
+# site with no photo.  Not used: YP-9, YP-38, MY22, W-1/2, SBG30, SBG-40, UB-70/100, UB-100A, PBS-3, PR-3, TR-40/50/60, HB-8, HB-10,
+# HB-12/16 and the plain TB-3 (not on the site).  boxes: the KAKA importer logo on the HTB-2000 control box; the JTB-40 panel's maker
+# code "JGWG-40BZ" and its "Metalcraft Pipe Bender" line, so no name contradicts the caption.
+TUBE = "/home/claude/ttmc-new/tube_bender_2026-11-02/"
+PHOTOS.update({
+    # ---- JTB hydraulic PLC tube benders (tt-jtb)
+    "tm-jtb40": dict(dir=TUBE, src="JTB-40.jpg", alt="JTB-40 hydraulic tube bender with foot pedal", boxes=[(825, 525, 875, 541), (799, 631, 888, 644)]),
+    "tm-jtb50": dict(dir=TUBE, src="JTB-50.jpg", alt="JTB-50 hydraulic PLC tube bender"),
+    "tm-jtb80": dict(dir=TUBE, src="JTB-80.jpg", alt="JTB-80 hydraulic PLC tube bender for 3-1/8″ tube"),
+    # ---- TB-3 / HTB-1000 pipe benders (tt-tb3)
+    "tm-htb1000": dict(dir=TUBE, src="HTB1000.jpg", alt="HTB-1000 electric-hydraulic pipe bender on caster stand"),
+    "tm-tb3a": dict(dir=TUBE, src="TB-3A.png", alt="TB-3A pipe bender with 10-ton hydraulic jack on a floor pedestal"),
+    "tm-tb3b": dict(dir=TUBE, src="TB-3B.png", alt="TB-3B air-hydraulic pipe bender on caster stand with the foot-operated air pump"),
+    "tm-tb3c": dict(dir=TUBE, src="TB-3C.png", alt="TB-3C electric-hydraulic pipe bender on caster stand with power pack and foot switch"),
+    # ---- HTB-2000 exhaust bender (tt-exhaust), EHB-10 (tt-hb-pipe), ETR-50 (tt-tr)
+    "tm-htb2000": dict(dir=TUBE, src="HTB-2000.jpg", alt="HTB-2000 hydraulic exhaust tube bender with tooling package", boxes=[(113, 522, 148, 551)]),
+    "tm-ehb10": dict(dir=TUBE, src="EHB-10.png", alt="EHB-10 electric-hydraulic pipe bender"),
+    "tm-etr50": dict(dir=TUBE, src="ETR-50.png", alt="ETR-50 electric tube roller with foot pedal"),
+})
 BIG = 1800           # px: a source bigger than this is scaled down before the cut-out
 
 

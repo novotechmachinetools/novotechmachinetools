@@ -85066,40 +85066,64 @@
   "cut": "birefnet"
  },
  "tm-tb3b": {
-  "alt": "TB-3B air-hydraulic pipe bender on caster stand with die rack",
+  "alt": "TB-3B air-hydraulic pipe bender on caster stand with the foot-operated air pump",
   "variants": [
    {
-    "w": 288,
-    "h": 360,
-    "file": "img/ttmc-more/tm-tb3b-288.webp",
-    "bytes": 21596
+    "w": 1200,
+    "h": 1512,
+    "file": "img/ttmc-more/tm-tb3b-1200.webp",
+    "bytes": 144348
+   },
+   {
+    "w": 800,
+    "h": 1008,
+    "file": "img/ttmc-more/tm-tb3b-800.webp",
+    "bytes": 90770
+   },
+   {
+    "w": 480,
+    "h": 605,
+    "file": "img/ttmc-more/tm-tb3b-480.webp",
+    "bytes": 46990
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 128,
+   "w": 127,
    "h": 160,
    "file": "img/ttmc-more/tm-tb3b-thumb.webp",
-   "bytes": 8122
+   "bytes": 8196
   },
   "cut": "birefnet"
  },
  "tm-tb3c": {
-  "alt": "TB-3C electric-hydraulic pipe bender on caster stand",
+  "alt": "TB-3C electric-hydraulic pipe bender on caster stand with power pack and foot switch",
   "variants": [
    {
-    "w": 297,
-    "h": 358,
-    "file": "img/ttmc-more/tm-tb3c-297.webp",
-    "bytes": 25688
+    "w": 1200,
+    "h": 1463,
+    "file": "img/ttmc-more/tm-tb3c-1200.webp",
+    "bytes": 157962
+   },
+   {
+    "w": 800,
+    "h": 976,
+    "file": "img/ttmc-more/tm-tb3c-800.webp",
+    "bytes": 98262
+   },
+   {
+    "w": 480,
+    "h": 585,
+    "file": "img/ttmc-more/tm-tb3c-480.webp",
+    "bytes": 52342
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 133,
+   "w": 131,
    "h": 160,
    "file": "img/ttmc-more/tm-tb3c-thumb.webp",
-   "bytes": 9676
+   "bytes": 9580
   },
   "cut": "birefnet"
  },
@@ -87763,18 +87787,18 @@
   "alt": "EHB-10 electric-hydraulic pipe bender",
   "variants": [
    {
-    "w": 350,
-    "h": 491,
-    "file": "img/ttmc-more/tm-ehb10-350.webp",
-    "bytes": 26040
+    "w": 480,
+    "h": 649,
+    "file": "img/ttmc-more/tm-ehb10-480.webp",
+    "bytes": 39730
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 114,
+   "w": 118,
    "h": 160,
    "file": "img/ttmc-more/tm-ehb10-thumb.webp",
-   "bytes": 7018
+   "bytes": 7052
   },
   "cut": "birefnet"
  },
@@ -87920,18 +87944,18 @@
   "alt": "ETR-50 electric tube roller with foot pedal",
   "variants": [
    {
-    "w": 427,
-    "h": 636,
-    "file": "img/ttmc-more/tm-etr50-427.webp",
-    "bytes": 34620
+    "w": 461,
+    "h": 705,
+    "file": "img/ttmc-more/tm-etr50-461.webp",
+    "bytes": 41364
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 107,
+   "w": 105,
    "h": 160,
    "file": "img/ttmc-more/tm-etr50-thumb.webp",
-   "bytes": 7142
+   "bytes": 6844
   },
   "cut": "birefnet"
  },
@@ -88930,18 +88954,24 @@
   "alt": "HTB-1000 electric-hydraulic pipe bender on caster stand",
   "variants": [
    {
+    "w": 752,
+    "h": 757,
+    "file": "img/ttmc-more/tm-htb1000-752.webp",
+    "bytes": 88820
+   },
+   {
     "w": 480,
-    "h": 538,
+    "h": 483,
     "file": "img/ttmc-more/tm-htb1000-480.webp",
-    "bytes": 66900
+    "bytes": 57576
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 143,
+   "w": 159,
    "h": 160,
    "file": "img/ttmc-more/tm-htb1000-thumb.webp",
-   "bytes": 12404
+   "bytes": 12506
   },
   "cut": "birefnet"
  },
@@ -88949,18 +88979,30 @@
   "alt": "HTB-2000 hydraulic exhaust tube bender with tooling package",
   "variants": [
    {
+    "w": 1200,
+    "h": 1046,
+    "file": "img/ttmc-more/tm-htb2000-1200.webp",
+    "bytes": 197628
+   },
+   {
+    "w": 800,
+    "h": 697,
+    "file": "img/ttmc-more/tm-htb2000-800.webp",
+    "bytes": 116940
+   },
+   {
     "w": 480,
-    "h": 481,
+    "h": 418,
     "file": "img/ttmc-more/tm-htb2000-480.webp",
-    "bytes": 46270
+    "bytes": 57434
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 160,
+   "h": 139,
    "file": "img/ttmc-more/tm-htb2000-thumb.webp",
-   "bytes": 9848
+   "bytes": 10880
   },
   "cut": "birefnet"
  },
@@ -89142,18 +89184,24 @@
   "alt": "JTB-40 hydraulic tube bender with foot pedal",
   "variants": [
    {
-    "w": 463,
-    "h": 590,
-    "file": "img/ttmc-more/tm-jtb40-463.webp",
-    "bytes": 32914
+    "w": 800,
+    "h": 855,
+    "file": "img/ttmc-more/tm-jtb40-800.webp",
+    "bytes": 48170
+   },
+   {
+    "w": 480,
+    "h": 513,
+    "file": "img/ttmc-more/tm-jtb40-480.webp",
+    "bytes": 27882
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 126,
+   "w": 150,
    "h": 160,
    "file": "img/ttmc-more/tm-jtb40-thumb.webp",
-   "bytes": 7312
+   "bytes": 6826
   },
   "cut": "birefnet"
  },
@@ -89161,18 +89209,24 @@
   "alt": "JTB-50 hydraulic PLC tube bender",
   "variants": [
    {
+    "w": 800,
+    "h": 593,
+    "file": "img/ttmc-more/tm-jtb50-800.webp",
+    "bytes": 44650
+   },
+   {
     "w": 480,
-    "h": 432,
+    "h": 356,
     "file": "img/ttmc-more/tm-jtb50-480.webp",
-    "bytes": 28112
+    "bytes": 24426
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 144,
+   "h": 119,
    "file": "img/ttmc-more/tm-jtb50-thumb.webp",
-   "bytes": 6960
+   "bytes": 6536
   },
   "cut": "birefnet"
  },
@@ -89180,24 +89234,30 @@
   "alt": "JTB-80 hydraulic PLC tube bender for 3-1/8\u2033 tube",
   "variants": [
    {
+    "w": 1200,
+    "h": 729,
+    "file": "img/ttmc-more/tm-jtb80-1200.webp",
+    "bytes": 65100
+   },
+   {
     "w": 800,
-    "h": 509,
+    "h": 486,
     "file": "img/ttmc-more/tm-jtb80-800.webp",
-    "bytes": 47076
+    "bytes": 40748
    },
    {
     "w": 480,
-    "h": 306,
+    "h": 292,
     "file": "img/ttmc-more/tm-jtb80-480.webp",
-    "bytes": 26056
+    "bytes": 22536
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 102,
+   "h": 97,
    "file": "img/ttmc-more/tm-jtb80-thumb.webp",
-   "bytes": 6766
+   "bytes": 6064
   },
   "cut": "birefnet"
  },
@@ -116127,5 +116187,36 @@
    "file": "img/site/pdf-novotech-dener-surface-grinder-2026-thumb.webp",
    "bytes": 3094
   }
+ },
+ "tm-tb3a": {
+  "alt": "TB-3A pipe bender with 10-ton hydraulic jack on a floor pedestal",
+  "variants": [
+   {
+    "w": 947,
+    "h": 1800,
+    "file": "img/ttmc-more/tm-tb3a-947.webp",
+    "bytes": 103652
+   },
+   {
+    "w": 800,
+    "h": 1521,
+    "file": "img/ttmc-more/tm-tb3a-800.webp",
+    "bytes": 89586
+   },
+   {
+    "w": 480,
+    "h": 912,
+    "file": "img/ttmc-more/tm-tb3a-480.webp",
+    "bytes": 47880
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 84,
+   "h": 160,
+   "file": "img/ttmc-more/tm-tb3a-thumb.webp",
+   "bytes": 5068
+  },
+  "cut": "birefnet"
  }
 }
