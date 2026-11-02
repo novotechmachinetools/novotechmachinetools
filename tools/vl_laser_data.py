@@ -282,8 +282,9 @@ SHEET_FAMILIES = [
          optional=LZ_OPT[:-1] + ["MES connection to the shop's production system", LZ_OPT[-1]],   # MES: the supplier's ULE page, Nov 1 2026
          # ADH's ULE photos added (the owner, Nov 1 2026): the machine, the exchange table, loading and unloading, the gantry, heads,
          # chillers, the CNC screen, the slats and the automatic loader
-         # photo 4 and photo 2 swapped, photo 3 (cutting) moved to ninth place (the owner, Nov 1 2026)
-         images=["vn-ule-1", "vn-ule-machine", "vn-ule-exchange", "vn-ule-loading", "vn-ule-unloading", "vn-ule-console", "vn-ule-screen",
+         # photo 4 and photo 2 swapped, photo 3 (cutting) moved to ninth place; then the old photo 1 deleted and vn-ule-1 is the
+         # supplier-site render that was photo 2 — main photo and thumbnail everywhere (the owner, Nov 1 2026)
+         images=["vn-ule-1", "vn-ule-exchange", "vn-ule-loading", "vn-ule-unloading", "vn-ule-console", "vn-ule-screen",
                  "vn-ule-bed", "vn-ule-cutting", "vn-ule-frame", "vn-ule-slats", "vn-ule-gantry", "vn-ule-head", "vn-ule-heads", "vn-ule-source",
                  "vn-ule-servo", "vn-ule-rack", "vn-ule-drive", "vn-ule-lube", "vn-ule-cabinet", "vn-ule-aircon", "vn-ule-chiller",
                  "vn-ule-chillers", "vn-ule-nozzles", "vn-ule-loader", "vn-fms-tower", "vn-fms-gantry", "vn-precitec", "vn-ule-ipg", "vn-ule-albeam"],

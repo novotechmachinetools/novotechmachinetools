@@ -164,15 +164,18 @@ def write_brochure_specs():
 CUT_KEYS = ("cutout", "orig", "cut_size", "cut_spec", "upscale", "sizes")
 
 
-def keep_cut(old, new):
+def keep_cut(old, new, explicit=()):
     """the cut-out work done on a photo in image_map.json (a cut-out PNG as its source, the cutout engine, sizes — Nov 1 2026, the
-    'no white boxes' pass) survives a re-registration of the value-laser photos"""
+    'no white boxes' pass) survives a re-registration of the value-laser photos; the keys in `explicit` (set in
+    vl_laser_extra_images.json on purpose) win"""
     if not old:
         return new
     out = dict(new)
-    if "/cutouts/" in old.get("src", ""):
+    if "/cutouts/" in old.get("src", "") and "src" not in explicit:
         out["src"] = old["src"]
     for k in CUT_KEYS:
+        if k in explicit:
+            continue
         if k in old:
             out[k] = old[k]
         elif k in out and "/cutouts/" in old.get("src", ""):
@@ -200,7 +203,7 @@ def register_images():
         if not os.path.exists(os.path.join(ROOT, entry["src"])):
             print("!! missing source for", key)
             continue
-        imap[key] = keep_cut(imap.get(key), entry)
+        imap[key] = keep_cut(imap.get(key), entry, explicit=tuple(entry))
         if key not in keys:
             keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)

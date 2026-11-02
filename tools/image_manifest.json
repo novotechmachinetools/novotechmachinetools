@@ -75126,34 +75126,35 @@
   }
  },
  "vn-ule-1": {
-  "alt": "NovoTech ULE fiber laser with shuttle table \u2014 20 \u00d7 8.5 ft working area, laser-safe cabin, front console",
+  "alt": "NovoTech ULE fiber laser cutting machine with shuttle table \u2014 the enclosed cutting cabin, its viewing windows and the shuttle table at the end",
   "variants": [
    {
     "w": 1200,
-    "h": 485,
+    "h": 496,
     "file": "img/value-laser/vn-ule-1-1200.webp",
-    "bytes": 40288
+    "bytes": 52056
    },
    {
     "w": 800,
-    "h": 324,
+    "h": 331,
     "file": "img/value-laser/vn-ule-1-800.webp",
-    "bytes": 24302
+    "bytes": 30676
    },
    {
     "w": 480,
-    "h": 194,
+    "h": 198,
     "file": "img/value-laser/vn-ule-1-480.webp",
-    "bytes": 13298
+    "bytes": 15990
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 65,
+   "h": 66,
    "file": "img/value-laser/vn-ule-1-thumb.webp",
-   "bytes": 3534
-  }
+   "bytes": 4016
+  },
+  "cut": "birefnet"
  },
  "vn-ule-console": {
   "alt": "ULE operator station \u2014 touchscreen CNC with the cutting database, emergency stop and hand pendant",
@@ -81799,13 +81800,19 @@
   }
  },
  "pdf-novotech-fiber-lasers-value-line-2026": {
-  "alt": "Cover of the Fiber Lasers Value Line 2026 PDF",
+  "alt": "Cover of the NovoTech value-line fiber laser brochure PDF",
   "variants": [
+   {
+    "w": 640,
+    "h": 829,
+    "file": "img/site/pdf-novotech-fiber-lasers-value-line-2026-640.webp",
+    "bytes": 26090
+   },
    {
     "w": 480,
     "h": 622,
     "file": "img/site/pdf-novotech-fiber-lasers-value-line-2026-480.webp",
-    "bytes": 19314
+    "bytes": 17742
    }
   ],
   "alpha": false,
@@ -81813,7 +81820,7 @@
    "w": 124,
    "h": 160,
    "file": "img/site/pdf-novotech-fiber-lasers-value-line-2026-thumb.webp",
-   "bytes": 2684
+   "bytes": 2562
   }
  },
  "pdf-novotech-gms-rebar-bending-cutting-machines-catalogue": {
@@ -111853,19 +111860,19 @@
   }
  },
  "pdf-novotech-ule-fiber-laser-technical-specification-2026": {
-  "alt": "Cover of the NovoTech ULE Fiber Laser Technical Specification 2026 PDF",
+  "alt": "Cover of the NovoTech ULE fiber laser full technical specification PDF",
   "variants": [
    {
     "w": 640,
     "h": 818,
     "file": "img/site/pdf-novotech-ule-fiber-laser-technical-specification-2026-640.webp",
-    "bytes": 34496
+    "bytes": 34342
    },
    {
     "w": 480,
     "h": 614,
     "file": "img/site/pdf-novotech-ule-fiber-laser-technical-specification-2026-480.webp",
-    "bytes": 23406
+    "bytes": 23222
    }
   ],
   "alpha": false,
@@ -111873,7 +111880,7 @@
    "w": 125,
    "h": 160,
    "file": "img/site/pdf-novotech-ule-fiber-laser-technical-specification-2026-thumb.webp",
-   "bytes": 3772
+   "bytes": 3614
   }
  },
  "pdf-novotech-senfeng-sf3015h-medium-high-power-laser-technical-specification-2026": {

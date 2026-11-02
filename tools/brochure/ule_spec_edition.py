@@ -136,7 +136,7 @@ def book():
     b.title = "NovoTech ULE Fiber Laser — Full Technical Specification — NovoTech Machine Tools"
     b.subject = "NovoTech ULE-3015 6,000 W double table fiber laser cutting machine — full technical specification, imperial edition"
     b.cover("Value line · full technical specification", "ULE-3015 · 6,000 W · double table fiber laser cutting machine", "ULE fiber laser",
-            "Technical specification", "Built in China to North American standards", V + "vn-ule-1.webp",
+            "Technical specification", "Built in China to North American standards", V + "vn-ule-machine-2026.webp",
             [("10 × 5 ft", "Cutting range"), ("6,000 W", "Raycus fiber laser"), ("492 ft/min", "Max. moving speed"), ("1.5 G", "Max. acceleration")],
             hero_h=330, minis=[V + "vn-ule-cutting.jpg", V + "vn-ule-console.jpg", V + "vn-ule-head.jpg", V + "vn-ule-chiller.jpg"])
     b.page("Contents", "@@TOC@@", sub="Contents")
@@ -333,7 +333,7 @@ def book():
         cells = [D.fig(V + f, cap, h=150, fit="contain", px=1200) for f, cap in part]
         b.page("Photos", title("Double table fiber laser cutting machine", "ULE in pictures" + (" (continued)" if i else ""))
                + D.grid(cells, 2, 14), key="photos" if i == 0 else None)
-    b.back("Fiber laser for your shop.", [V + "vn-ule-1.webp", V + "vn-ule-cutting.jpg", V + "vn-ule-console.jpg", V + "vn-ule-bed.jpg"])
+    b.back("Fiber laser for your shop.", [V + "vn-ule-machine-2026.webp", V + "vn-ule-cutting.jpg", V + "vn-ule-console.jpg", V + "vn-ule-bed.jpg"])
     toc = [("Company profile", "profile"), ("Equipment", "equipment"), ("Mechanical bed · crossbeam · control system", "details1"),
            ("Cutting head · laser source · servo motor", "details2"), ("Gear, rack, linear guide · gearbox · automatic lubrication", "details3"),
            ("Water chiller · air cooler · electric components", "details4"), ("Optional: Precitec head · IPG laser · aluminum crossbeam", "options"),

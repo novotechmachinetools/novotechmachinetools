@@ -659,7 +659,11 @@ small { font-size: .85em; }
   .sub-menu { columns: 1; border-left: 3px solid var(--orange); padding: 6px 0 6px 12px; }
   .sub-menu > li > a { display: flex; align-items: center; gap: 10px; }
   .nav-thumb { display: block; flex: none; width: 46px; height: 35px; object-fit: contain; background: var(--white); border: 1px solid var(--line-soft); border-radius: var(--radius); }
-  .tree-toggle { width: 34px; height: 34px; top: 0; }
+  /* phones and tablets: the expand circle always orange and a little bigger, easier to see and to tap (the owner, Nov 1 2026) */
+  .sub-menu li.has-tree > a { padding-right: 48px; }
+  .tree-toggle { width: 38px; height: 38px; top: 4px; background: var(--orange); border-color: var(--orange); color: #fff; font-size: 17px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .18); }
+  .tree-toggle:hover, .tree-toggle:active, .tree-toggle:focus-visible { background: var(--orange-deep); border-color: var(--orange-deep); color: #fff; }
   .hero-grid, .hero-grid.has-large-hero { grid-template-columns: 1fr; gap: 20px; padding: 24px 0 20px; }
   .hero-art { min-height: 0; margin-top: 8px; }
   /* phones and tablets: the title, then the hero photo, then the description and the rest (the owner, Oct 31 2026) —
