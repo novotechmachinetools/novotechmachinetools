@@ -17,7 +17,8 @@ nothing, delete nothing, only the units become imperial".
 Cutting tables: tools/brochure/data-senfeng-tube-cutting.json (read from the PDFs); speeds in inches per minute with Senfeng's metres
 per minute below, wall thicknesses in decimal inches with the millimetres.  Images: tools/src-images/senfeng-tube-spec/ (from the
 PDFs) and the shared after-sales pictures of tools/src-images/senfeng-h-spec/.
-Adapted, and why: the warranty line states NovoTech's 1-year warranty (the PLUS sheet says 2 years); installation at the customer's
+Adapted, and why: the warranty line states NovoTech's 1-year warranty (the PLUS sheet says 2 years); the PLUS's fully automatic
+loader is optional, as its configuration list says (one page calls it standard — the owner, Nov 1 2026); installation at the customer's
 site is by NovoTech with Senfeng; the 380 V supply keeps the note on the transformer NovoTech supplies for 208 / 240 / 480 / 600 V;
 the operating costs stay in RMB as Senfeng gives them (Chinese prices, for reference); Senfeng's document number and its China
 contact page are left out (NovoTech's contact details are on every page).
@@ -816,7 +817,8 @@ def book_plus():
     units = [unit_box(f"{p}-opt1.jpg", "1 · Unloading unit", "optional", [("Dimensions", "78.7 × 44.1 × 31.5″ (2,000 × 1,120 × 800 mm)"), ("Maximum tube length", "9.8 ft (3,000 mm)")],
                       "1. The material separation system automatically separates waste from finished tubes without manual intervention; the receiving cart and drop rack are one integrated structure — high integration and space saving.<br>"
                       "2. Servo control automatically aligns the tube center with the chuck center so tube sag does not affect machining accuracy. After processing, the plate flips and the finished product slides into the material cart."),
-             unit_box(f"{p}-opt2.jpg", "2 · Fully automatic loading unit", "standard", [("Tube length", "14.8 – 21.3 ft (4,500 – 6,500 mm)"),
+             # Senfeng's page says "(standard)", its configuration list "optional" — optional (the owner, Nov 1 2026)
+             unit_box(f"{p}-opt2.jpg", "2 · Fully automatic loading unit", "optional", [("Tube length", "14.8 – 21.3 ft (4,500 – 6,500 mm)"),
                                                                                        ("Side length (or diameter) of tube section", "0.8 × 0.8 – 4.7 × 4.7″ (20 × 20 – 120 × 120 mm); Ø0.8 – 4.7″ (Ø20 – 120 mm)"),
                                                                                        ("Max. load of a single tube", lb(120)), ("Warehouse load bearing", "4,409 lb (2 t)")])]
     body = title("12 · Optional units", f"{m} optional units") + f'<div class="u4">{"".join(units)}</div>' + D.included()
