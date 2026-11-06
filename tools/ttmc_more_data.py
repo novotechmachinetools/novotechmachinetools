@@ -534,7 +534,7 @@ SHAPE = [
       ["PPH-12 / PPH-24: 18 ga, 12 / 24″ throat, 9 radius anvils from 3/4″ to 12″ and flat, foot pedal", "PPH-610: 16 ga, 24″ throat, 90 – 120 psi, 3-position air flow",
        "PPH500: 1, 2 and 3″ radius anvils, 875 – 1,350 blows/min, 50 – 100 psi", "PH-20D / PH-30D: 2 HP electric, variable 0 – 1,700 / 0 – 1,400 blows/min, 16 ga steel, 12 ga aluminum",
        "UFP-2: planishing hammer and English wheel on one stand"],
-      ["tm-ph20d", "tm-pph610", "tm-pph12", "tm-ph30d", "tm-ufp2", "tm-anvils"], headline="18 – 16 ga", cap="throat [Throat depth]"),
+      ["tm-ph20d", "tm-pph610", "tm-pph12", "tm-ph30d", "tm-ufp2", "tm-pph500", "tm-anvils"], headline="18 – 16 ga", cap="throat [Throat depth]"),
     F("tt-pic50", P_SHAPE, "former", "PIC50 diamond roller former, 20 ga × 50″", "PIC50 diamond roller", [T["tt-ew2"][1]],
       "A motorized roller former that embosses a 2-3/4″ (70 mm) diamond pattern into 20 ga sheet up to 50″ wide — decorative panels for "
       "doors, cabinets, food trucks and restorations — on a welded frame with a 1 HP motor and 9 – 16 rpm adjustable speed.",

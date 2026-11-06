@@ -24935,7 +24935,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-pr3": {
   "src": "tools/src-images/ttmc-more/tm-pr3.jpg",
@@ -24998,7 +24998,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-ptn30": {
   "src": "tools/src-images/ttmc-more/tm-ptn30.jpg",
@@ -25007,7 +25007,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-q01": {
   "src": "tools/src-images/ttmc-more/tm-q01.jpg",
@@ -25871,7 +25871,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-utn40": {
   "src": "tools/src-images/ttmc-more/tm-utn40.jpg",
@@ -34379,6 +34379,15 @@
  "tm-w610b": {
   "src": "tools/src-images/ttmc-more/tm-w610b.jpg",
   "alt": "W1.2×610 bench brake with toggle clamps",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "tm-pph500": {
+  "src": "tools/src-images/ttmc-more/tm-pph500.jpg",
+  "alt": "PPH500 pneumatic planishing hammer, 19-5/8″ throat, on stand",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,

@@ -26,7 +26,7 @@ DST_TT = os.path.join(ROOT, "tools", "src-images", "ttmc-hires")
 DST_NT = os.path.join(ROOT, "tools", "src-images", "value-line")
 SMALL = 700          # px, longest side of the machine: below it the photo is upscaled 2x
 
-# key: dict(src, alt, boxes=[(x0, y0, x1, y1) in source pixels — nameplates / logo, filled by LaMa], detail=False)
+# key: dict(src, alt, boxes=[(x0, y0, x1, y1) in source pixels — nameplates / logo, filled by LaMa], white=[… painted white], detail=False)
 # NB: the supplier named two files the wrong way round — "VS-500.jpg" carries the VS-400 nameplate and is the catalogue's VS-400
 # photo (blue, with the lamp); "VS400.jpg" is the grey machine the catalogue shows as the VS-500.
 PHOTOS = {
@@ -292,6 +292,20 @@ PHOTOS.update({
     "tm-rb1100": dict(dir=BRAKE, src="RB1100.JPG", alt="RB1100 roller stand"),
     "tm-rb1000": dict(dir=BRAKE, src="RB1000.jpg", alt="RB1000 roller stand with tripod base"),
 })
+
+# the owner's WeTransfer "pictures for English wheel" (Nov 6 2026): of its 24 photos only the planishing hammers and the notchers are on the
+# site — the English wheels (F-series), shrinker-stretchers (SS-, FSM-16, SM-16B), SG18 and RS018 are not, so they are left out.  The
+# PPH500, on the site with no photo, gets its photo.  white: the "Optional stand" note and its arrow printed on the UFP-2 photo; boxes: the
+# arrow tip where it touches the stand.
+WHEEL = "/home/claude/ttmc-new/english_wheel_2026-11-06/"
+PHOTOS.update({
+    "tm-pph610": dict(dir=WHEEL, src="PPH610.psd", alt="PPH-610 pneumatic planishing hammer, 24″ throat, 16 ga"),
+    "tm-pph500": dict(dir=WHEEL, src="PPH500.png", alt="PPH500 pneumatic planishing hammer, 19-5/8″ throat, on stand"),
+    "tm-ufp2": dict(dir=WHEEL, src="UFP-2.png", alt="UFP-2 planishing hammer and English wheel in one",
+                    white=[(806, 944, 1116, 1003), (940, 990, 1446, 1058)], boxes=[(797, 950, 808, 978)]),
+    "tm-ptn30": dict(dir=WHEEL, src="PTN-30.png", alt="PTN-30 motorized tube and pipe notcher with hole saw and degree wheel"),
+    "tm-ptn12u": dict(dir=WHEEL, src="PTN-12U.png", alt="PTN-12U electric pipe notcher"),
+})
 BIG = 1800           # px: a source bigger than this is scaled down before the cut-out
 
 
@@ -336,6 +350,11 @@ def process(key):
         # a supplier cut-out: the pixels under the transparent area are the old studio background (grey wall, floor
         # shadow), which a plain RGB conversion would bring back — composite on white so BiRefNet sees a clean photo
         im = Image.alpha_composite(Image.new("RGBA", im.size, (255, 255, 255, 255)), im).convert("RGB")
+    if p.get("white"):         # a note or arrow printed on the white background: painted white, so no red is left for LaMa to spread
+        from PIL import ImageDraw
+        draw = ImageDraw.Draw(im)
+        for box in p["white"]:
+            draw.rectangle((box[0], box[1], box[2] - 1, box[3] - 1), fill=(255, 255, 255, 255) if im.mode == "RGBA" else (255, 255, 255))
     if p.get("boxes"):
         im = fill_boxes(im, p["boxes"])
     im = trim(im)

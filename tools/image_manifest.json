@@ -83508,18 +83508,30 @@
   "alt": "PPH-610 pneumatic planishing hammer, 24\u2033 throat, 16 ga",
   "variants": [
    {
-    "w": 294,
-    "h": 531,
-    "file": "img/ttmc-more/tm-pph610-294.webp",
-    "bytes": 25358
+    "w": 1200,
+    "h": 1653,
+    "file": "img/ttmc-more/tm-pph610-1200.webp",
+    "bytes": 126754
+   },
+   {
+    "w": 800,
+    "h": 1102,
+    "file": "img/ttmc-more/tm-pph610-800.webp",
+    "bytes": 81914
+   },
+   {
+    "w": 480,
+    "h": 661,
+    "file": "img/ttmc-more/tm-pph610-480.webp",
+    "bytes": 46068
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 89,
+   "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-pph610-thumb.webp",
-   "bytes": 6940
+   "bytes": 7572
   },
   "cut": "birefnet"
  },
@@ -83658,18 +83670,24 @@
   "alt": "PTN-12U electric pipe notcher",
   "variants": [
    {
-    "w": 432,
-    "h": 230,
-    "file": "img/ttmc-more/tm-ptn12u-432.webp",
-    "bytes": 18044
+    "w": 800,
+    "h": 428,
+    "file": "img/ttmc-more/tm-ptn12u-800.webp",
+    "bytes": 38194
+   },
+   {
+    "w": 480,
+    "h": 257,
+    "file": "img/ttmc-more/tm-ptn12u-480.webp",
+    "bytes": 21572
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 85,
+   "h": 86,
    "file": "img/ttmc-more/tm-ptn12u-thumb.webp",
-   "bytes": 5724
+   "bytes": 5644
   },
   "cut": "birefnet"
  },
@@ -83677,24 +83695,30 @@
   "alt": "PTN-30 motorized tube and pipe notcher with hole saw and degree wheel",
   "variants": [
    {
+    "w": 1200,
+    "h": 898,
+    "file": "img/ttmc-more/tm-ptn30-1200.webp",
+    "bytes": 99958
+   },
+   {
     "w": 800,
-    "h": 595,
+    "h": 599,
     "file": "img/ttmc-more/tm-ptn30-800.webp",
-    "bytes": 61946
+    "bytes": 62710
    },
    {
     "w": 480,
-    "h": 357,
+    "h": 359,
     "file": "img/ttmc-more/tm-ptn30-480.webp",
-    "bytes": 33030
+    "bytes": 33090
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 119,
+   "h": 120,
    "file": "img/ttmc-more/tm-ptn30-thumb.webp",
-   "bytes": 7698
+   "bytes": 7702
   },
   "cut": "birefnet"
  },
@@ -85714,18 +85738,30 @@
   "alt": "UFP-2 planishing hammer and English wheel in one",
   "variants": [
    {
-    "w": 415,
-    "h": 456,
-    "file": "img/ttmc-more/tm-ufp2-415.webp",
-    "bytes": 32032
+    "w": 1200,
+    "h": 1132,
+    "file": "img/ttmc-more/tm-ufp2-1200.webp",
+    "bytes": 105504
+   },
+   {
+    "w": 800,
+    "h": 755,
+    "file": "img/ttmc-more/tm-ufp2-800.webp",
+    "bytes": 69500
+   },
+   {
+    "w": 480,
+    "h": 453,
+    "file": "img/ttmc-more/tm-ufp2-480.webp",
+    "bytes": 37946
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 146,
-   "h": 160,
+   "w": 160,
+   "h": 151,
    "file": "img/ttmc-more/tm-ufp2-thumb.webp",
-   "bytes": 10186
+   "bytes": 9738
   },
   "cut": "birefnet"
  },
@@ -116965,6 +117001,31 @@
    "h": 114,
    "file": "img/ttmc-more/tm-w610b-thumb.webp",
    "bytes": 5180
+  },
+  "cut": "birefnet"
+ },
+ "tm-pph500": {
+  "alt": "PPH500 pneumatic planishing hammer, 19-5/8\u2033 throat, on stand",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1796,
+    "file": "img/ttmc-more/tm-pph500-800.webp",
+    "bytes": 115776
+   },
+   {
+    "w": 480,
+    "h": 1077,
+    "file": "img/ttmc-more/tm-pph500-480.webp",
+    "bytes": 64996
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 71,
+   "h": 160,
+   "file": "img/ttmc-more/tm-pph500-thumb.webp",
+   "bytes": 5948
   },
   "cut": "birefnet"
  }
