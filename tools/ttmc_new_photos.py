@@ -21,6 +21,7 @@ NI, BR = SRC + "new_items_rar/", SRC + "brochure_rar/"
 BEND, SAW, WELD = NI + "折弯类/", NI + "锯床类/", NI + "焊接变位机或旋转台/"
 PDF_A, PDF_B = SRC + "pdf_a/a.pdf", SRC + "pdf_b/b.pdf"
 YQ = SRC + "yq/"                      # the right-angle grinder sheet (Nov 7 2026): its photos, extracted
+DFM = SRC + "dfm/"                    # the dry deburring sander sheet (Nov 7 2026): its photos, cropped at 250 dpi
 TFM_PDF = BR + "TFM3100x2E TFMS3100X2E.pdf"
 DST = P.DST
 
@@ -105,6 +106,18 @@ PHOTOS = {
                  logo=[(495, 214, 555, 260), (456, 91, 500, 102)]),
     "tm-yq-v": S(YQ + "yq450.png", None, "YQ-450 vertical right-corner grinding and polishing machine",
                  logo=[(286, 66, 402, 182), (946, 82, 1032, 168), (972, 588, 1008, 668)]),
+    # dry deburring and finishing sanders (the owner's sheet, Nov 7 2026): the Chinese labels on the sanding heads are filled
+    "tm-dfm1300": S(DFM + "dfm-main.png", None, "R-R1300 two-head dry deburring and finishing sander with its dust collector",
+                    white=[(1175, 696, 1222, 709)]),
+    "tm-dfm-head1": S(DFM + "dfm-head1.png", None, "One sanding head with its belt-tension cylinder", detail=True,
+                      logo=[(458, 462, 507, 556)]),
+    "tm-dfm-head2": S(DFM + "dfm-head2.png", None, "Two sanding heads, one behind the other", detail=True,
+                      logo=[(376, 573, 418, 664), (589, 569, 632, 662)]),
+    "tm-dfm-head3": S(DFM + "dfm-head3.png", None, "Three sanding heads with their belt-tension and tracking units", detail=True,
+                      logo=[(307, 560, 360, 635), (608, 548, 661, 626), (912, 545, 969, 626)]),
+    "tm-dfm-cabinet": S(DFM + "dfm-cabinet.png", None, "Electrical cabinet with the conveyor's variable-frequency drive", detail=True),
+    "tm-dfm-sample": S(DFM + "dfm-sample-block.png", None, "Machined steel part, the left half sanded", detail=True),
+    "tm-dfm-plates": S(DFM + "dfm-sample-plates.png", None, "Laser-cut frames after sanding (left) and before (right)", detail=True),
     "tm-ksm850": S(NI + "KSM-850.jpg", (590, 295, 1900, 1478), "KSM-850 cylinder head and block resurfacing machine", clean=True, logo_out=[(690, 573, 811, 626)]),
     "tm-ksm850-panel": S(NI + "KSM-850.jpg", (133, 1939, 674, 2295), "Control panel with variable head and table speeds", detail=True),
     "tm-x6336b": S(NI + "X6336.jpg", (1100, 318, 2264, 1696), "X6336 turret milling machine with power feed and digital readout", clean=True),

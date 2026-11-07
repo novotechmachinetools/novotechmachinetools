@@ -118115,5 +118115,198 @@
    "bytes": 8972
   },
   "cut": "birefnet"
+ },
+ "tm-dfm-cabinet": {
+  "alt": "Electrical cabinet with the conveyor's variable-frequency drive",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 903,
+    "file": "img/ttmc-more/tm-dfm-cabinet-1200.webp",
+    "bytes": 92282
+   },
+   {
+    "w": 800,
+    "h": 602,
+    "file": "img/ttmc-more/tm-dfm-cabinet-800.webp",
+    "bytes": 58094
+   },
+   {
+    "w": 480,
+    "h": 361,
+    "file": "img/ttmc-more/tm-dfm-cabinet-480.webp",
+    "bytes": 30132
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/ttmc-more/tm-dfm-cabinet-thumb.webp",
+   "bytes": 4876
+  }
+ },
+ "tm-dfm-head1": {
+  "alt": "One sanding head with its belt-tension cylinder",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1071,
+    "file": "img/ttmc-more/tm-dfm-head1-800.webp",
+    "bytes": 46052
+   },
+   {
+    "w": 480,
+    "h": 643,
+    "file": "img/ttmc-more/tm-dfm-head1-480.webp",
+    "bytes": 25250
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/ttmc-more/tm-dfm-head1-thumb.webp",
+   "bytes": 3492
+  }
+ },
+ "tm-dfm-head2": {
+  "alt": "Two sanding heads, one behind the other",
+  "variants": [
+   {
+    "w": 928,
+    "h": 1160,
+    "file": "img/ttmc-more/tm-dfm-head2-928.webp",
+    "bytes": 69688
+   },
+   {
+    "w": 800,
+    "h": 1000,
+    "file": "img/ttmc-more/tm-dfm-head2-800.webp",
+    "bytes": 53360
+   },
+   {
+    "w": 480,
+    "h": 600,
+    "file": "img/ttmc-more/tm-dfm-head2-480.webp",
+    "bytes": 24460
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 128,
+   "h": 160,
+   "file": "img/ttmc-more/tm-dfm-head2-thumb.webp",
+   "bytes": 3074
+  }
+ },
+ "tm-dfm-head3": {
+  "alt": "Three sanding heads with their belt-tension and tracking units",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 902,
+    "file": "img/ttmc-more/tm-dfm-head3-1200.webp",
+    "bytes": 70466
+   },
+   {
+    "w": 800,
+    "h": 601,
+    "file": "img/ttmc-more/tm-dfm-head3-800.webp",
+    "bytes": 43638
+   },
+   {
+    "w": 480,
+    "h": 361,
+    "file": "img/ttmc-more/tm-dfm-head3-480.webp",
+    "bytes": 22498
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/ttmc-more/tm-dfm-head3-thumb.webp",
+   "bytes": 4380
+  }
+ },
+ "tm-dfm-plates": {
+  "alt": "Laser-cut frames after sanding (left) and before (right)",
+  "variants": [
+   {
+    "w": 784,
+    "h": 780,
+    "file": "img/ttmc-more/tm-dfm-plates-784.webp",
+    "bytes": 37800
+   },
+   {
+    "w": 480,
+    "h": 478,
+    "file": "img/ttmc-more/tm-dfm-plates-480.webp",
+    "bytes": 18038
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 159,
+   "file": "img/ttmc-more/tm-dfm-plates-thumb.webp",
+   "bytes": 3150
+  }
+ },
+ "tm-dfm-sample": {
+  "alt": "Machined steel part, the left half sanded",
+  "variants": [
+   {
+    "w": 734,
+    "h": 980,
+    "file": "img/ttmc-more/tm-dfm-sample-734.webp",
+    "bytes": 117460
+   },
+   {
+    "w": 480,
+    "h": 641,
+    "file": "img/ttmc-more/tm-dfm-sample-480.webp",
+    "bytes": 61908
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/ttmc-more/tm-dfm-sample-thumb.webp",
+   "bytes": 3314
+  }
+ },
+ "tm-dfm1300": {
+  "alt": "R-R1300 two-head dry deburring and finishing sander with its dust collector",
+  "variants": [
+   {
+    "w": 1153,
+    "h": 649,
+    "file": "img/ttmc-more/tm-dfm1300-1153.webp",
+    "bytes": 47962
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/ttmc-more/tm-dfm1300-800.webp",
+    "bytes": 35122
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/ttmc-more/tm-dfm1300-480.webp",
+    "bytes": 19752
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/ttmc-more/tm-dfm1300-thumb.webp",
+   "bytes": 5300
+  },
+  "cut": "birefnet"
  }
 }

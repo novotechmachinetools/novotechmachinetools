@@ -346,6 +346,20 @@ DEBURR = [
        "Conveyor 4.9 – 23 ft/min (1.5 – 7 m/min), variable", "Digital table height; four-post synchronous lifting; electric-eye belt tracking",
        "4″ dust port; 5.4 HP (4 kW); 1,190 lb"],
       ["tm-mgm300", "tm-mgm300-conveyor"], headline="12″ working width", cap="[Working width, max]"),
+    F("tt-dfm", P_DEBURR, "tt-bfm", "R series dry deburring and finishing sanders, 1 – 3 heads, 24.8″ and 51.2″ wide", "R series dry sanders", NT["tt-dfm"],
+      "Dry wide-belt sanders that take the burrs, slag and rust off laser-, plasma- and flame-cut, sheared, punched and machined steel "
+      "and aluminum plate in one pass — one side at a time, all round — for pre-grinding the surface, deburring holes and edges and "
+      "brushed (hairline) finishing, without the dust and the uneven results of hand grinding. Two widths with one, two or three "
+      "sanding heads: the 630 series for parts up to 24.8″ wide and the 1300 series for parts to 51.2″, both for parts from 0.04 to "
+      "4.3″ thick, with a dry dust collector.",
+      ["630 series: 24.8″ (630 mm) wide, 1 – 3 heads of 10 HP (7.5 kW), parts from 10.2″ long",
+       "1300 series: 51.2″ (1,300 mm) wide, 1 – 3 heads of 25 HP (18.5 kW), 52 × 87″ belts, conveyor 6.6 – 82 ft/min by VFD",
+       "Parts 0.04 – 4.3″ (1 – 110 mm) thick; motorized table lifting",
+       "Dry dust collector, 600 V with CSA, UL and RU-listed components",
+       "Deburring holes and edges, removing slag and rust, pre-grinding and brushed finishing"],
+      ["tm-dfm1300", "tm-dfm-head1", "tm-dfm-head2", "tm-dfm-head3", "tm-dfm-cabinet", "tm-dfm-plates", "tm-dfm-sample"],
+      headline="24.8″ and 51.2″ wide, 1 – 3 heads", cap="[Working width, max] · [Sanding heads] head(s)",
+      models_label="R-630 – R-R-R1300 · 6 models + dust collector"),
 ]
 
 # =============================================================================================== motorized bench shears (mechanical-guillotine-shear.html, family set "ttmc")

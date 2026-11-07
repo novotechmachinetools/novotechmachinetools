@@ -378,9 +378,10 @@ EXTRA = {
                                 "China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_DEBURR: dict(
-        groups=[("tt-bfm", "Wide-belt deburring machines · value line", "Entry-level wide-belt deburring and finishing machines, 12″ and 24″ — NovoTech value line, built in China.", False, None)],
+        groups=[("tt-bfm", "Wide-belt deburring machines · value line", "Wide-belt deburring and finishing machines from 12″ to 51.2″ wide, with one to three sanding heads — NovoTech value line, built in China.", False, None)],
         intro_add="For the shop that starts deburring by machine, the NovoTech value-line MGM-300 (12″) and BFM-2560 (24″, with a wet dust "
-                  "collector) are wide-belt machines for laser-cut and punched parts.",
+                  "collector) are wide-belt machines for laser-cut and punched parts, and the R series dry sanders take one to three "
+                  "sanding heads over 24.8″ or 51.2″.",
         related_add=[{"href": "belt-grinder.html", "label": "Belt grinders and sanders"}],
     ),
     # D2.P_WELD (welding-positioners): the positioners, turning rolls, stands and tables are on the welding automation pages

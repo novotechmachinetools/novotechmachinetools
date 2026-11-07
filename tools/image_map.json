@@ -34697,5 +34697,68 @@
   "quality": 82,
   "cutout": true,
   "cut_size": 768
+ },
+ "tm-dfm-cabinet": {
+  "src": "tools/src-images/ttmc-more/tm-dfm-cabinet.jpg",
+  "alt": "Electrical cabinet with the conveyor's variable-frequency drive",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "tm-dfm-head1": {
+  "src": "tools/src-images/ttmc-more/tm-dfm-head1.jpg",
+  "alt": "One sanding head with its belt-tension cylinder",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-dfm-head2": {
+  "src": "tools/src-images/ttmc-more/tm-dfm-head2.jpg",
+  "alt": "Two sanding heads, one behind the other",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-dfm-head3": {
+  "src": "tools/src-images/ttmc-more/tm-dfm-head3.jpg",
+  "alt": "Three sanding heads with their belt-tension and tracking units",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 1024
+ },
+ "tm-dfm-plates": {
+  "src": "tools/src-images/ttmc-more/tm-dfm-plates.jpg",
+  "alt": "Laser-cut frames after sanding (left) and before (right)",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-dfm-sample": {
+  "src": "tools/src-images/ttmc-more/tm-dfm-sample.jpg",
+  "alt": "Machined steel part, the left half sanded",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-dfm1300": {
+  "src": "tools/src-images/ttmc-more/tm-dfm1300.jpg",
+  "alt": "R-R1300 two-head dry deburring and finishing sander with its dust collector",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
  }
 }

@@ -97,6 +97,7 @@
   "tt-esr",
   "tt-bfm2560",
   "tt-mgm300",
+  "tt-dfm",
   "tt-wp-bench",
   "tt-wp-chuck",
   "tt-wp-tilt",
@@ -21584,6 +21585,423 @@
     ],
     "caps": {
      "MGM-300": "12″ (300 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-bfm"
+  },
+  "tt-dfm": {
+   "id": "tt-dfm",
+   "brand": "novotech",
+   "name": "R series dry deburring and finishing sanders, 1 – 3 heads, 24.8″ and 51.2″ wide",
+   "short": "R series dry sanders",
+   "models_label": "R-630 – R-R-R1300 · 6 models + dust collector",
+   "summary": "Dry wide-belt sanders that take the burrs, slag and rust off laser-, plasma- and flame-cut, sheared, punched and machined steel and aluminum plate in one pass — one side at a time, all round — for pre-grinding the surface, deburring holes and edges and brushed (hairline) finishing, without the dust and the uneven results of hand grinding. Two widths with one, two or three sanding heads: the 630 series for parts up to 24.8″ wide and the 1300 series for parts to 51.2″, both for parts from 0.04 to 4.3″ thick, with a dry dust collector.",
+   "features": [
+    "630 series: 24.8″ (630 mm) wide, 1 – 3 heads of 10 HP (7.5 kW), parts from 10.2″ long",
+    "1300 series: 51.2″ (1,300 mm) wide, 1 – 3 heads of 25 HP (18.5 kW), 52 × 87″ belts, conveyor 6.6 – 82 ft/min by VFD",
+    "Parts 0.04 – 4.3″ (1 – 110 mm) thick; motorized table lifting",
+    "Dry dust collector, 600 V with CSA, UL and RU-listed components",
+    "Deburring holes and edges, removing slag and rust, pre-grinding and brushed finishing"
+   ],
+   "optional": [],
+   "images": [
+    "tm-dfm1300",
+    "tm-dfm-head1",
+    "tm-dfm-head2",
+    "tm-dfm-head3",
+    "tm-dfm-cabinet",
+    "tm-dfm-plates",
+    "tm-dfm-sample"
+   ],
+   "videos": [],
+   "headline": "24.8″ and 51.2″ wide, 1 – 3 heads",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "R-630 · R-R630 · R-R-R630",
+      "sub": "630 series metal sanders, 1 – 3 heads",
+      "models": [
+       "R-630",
+       "R-R630",
+       "R-R-R630"
+      ],
+      "rows": [
+       {
+        "label": "Sanding heads",
+        "sub": "",
+        "cells": [
+         "1",
+         "2",
+         "3"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working width, max",
+        "sub": "",
+        "cells": [
+         "Under 24.8″ (630 mm)",
+         "Under 24.8″ (630 mm)",
+         "Under 24.8″ (630 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Workpiece thickness",
+        "sub": "",
+        "cells": [
+         "0.04 – 4.3″ (1 – 110 mm)",
+         "0.04 – 4.3″ (1 – 110 mm)",
+         "0.04 – 4.3″ (1 – 110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Workpiece length, min",
+        "sub": "",
+        "cells": [
+         "Over 10.2″ (260 mm)",
+         "Over 10.2″ (260 mm)",
+         "Over 10.2″ (260 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "1st sanding motor",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW), 4-pole, copper-wound",
+         "10 HP (7.5 kW), 4-pole, copper-wound",
+         "10 HP (7.5 kW), 4-pole, copper-wound"
+        ],
+        "key": false
+       },
+       {
+        "label": "2nd sanding motor",
+        "sub": "",
+        "cells": [
+         "—",
+         "10 HP (7.5 kW), 4-pole, copper-wound",
+         "10 HP (7.5 kW), 4-pole, copper-wound"
+        ],
+        "key": false
+       },
+       {
+        "label": "3rd sanding motor",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "10 HP (7.5 kW), 4-pole"
+        ],
+        "key": false
+       },
+       {
+        "label": "Conveyor motor",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW), stepless speed, copper-wound",
+         "1.5 HP (1.1 kW), stepless speed, copper-wound",
+         "2 HP (1.5 kW), stepless speed, copper-wound"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table lifting motor",
+        "sub": "",
+        "cells": [
+         "1/2 HP (0.37 kW), copper-wound",
+         "1/2 HP (0.37 kW), copper-wound",
+         "1/2 HP (0.37 kW), copper-wound"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,984 lb (900 kg)",
+         "2,646 lb (1,200 kg)",
+         "3,968 lb (1,800 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "R-1300 · R-R1300 · R-R-R1300",
+      "sub": "1300 series heavy-duty metal sanders, 1 – 3 heads",
+      "models": [
+       "R-1300",
+       "R-R1300",
+       "R-R-R1300"
+      ],
+      "rows": [
+       {
+        "label": "Sanding heads",
+        "sub": "",
+        "cells": [
+         "1",
+         "2",
+         "3"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working width, max",
+        "sub": "",
+        "cells": [
+         "51.2″ (1,300 mm)",
+         "51.2″ (1,300 mm)",
+         "51.2″ (1,300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Workpiece thickness",
+        "sub": "max",
+        "cells": [
+         "4.3″ (110 mm)",
+         "4.3″ (110 mm)",
+         "4.3″ (110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Workpiece length, min",
+        "sub": "",
+        "cells": [
+         "Over 13.8″ (350 mm)",
+         "Over 13.8″ (350 mm)",
+         "Over 13.8″ (350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sanding rollers",
+        "sub": "",
+        "cells": [
+         "Ø8.3″ (210 mm) rubber × 1",
+         "Ø8.3″ (210 mm) rubber × 2",
+         "Ø8.3″ (210 mm) rubber × 3"
+        ],
+        "key": false
+       },
+       {
+        "label": "Conveyor speed",
+        "sub": "",
+        "cells": [
+         "6.6 – 82 ft/min (2 – 25 m/min)",
+         "6.6 – 82 ft/min (2 – 25 m/min)",
+         "6.6 – 82 ft/min (2 – 25 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Sanding motors",
+        "sub": "",
+        "cells": [
+         "25 HP (18.5 kW)",
+         "2 × 25 HP (2 × 18.5 kW)",
+         "3 × 25 HP (3 × 18.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Conveyor motor",
+        "sub": "hypoid gearmotor",
+        "cells": [
+         "3 HP (2.2 kW), VFD speed control",
+         "5.5 HP (4 kW), VFD speed control",
+         "5.5 HP (4 kW), VFD speed control"
+        ],
+        "key": false
+       },
+       {
+        "label": "Total motor power",
+        "sub": "",
+        "cells": [
+         "36 HP (27 kW)",
+         "56 HP (42 kW)",
+         "80 HP (60 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working air pressure",
+        "sub": "",
+        "cells": [
+         "116 psi (0.8 MPa)",
+         "116 psi (0.8 MPa)",
+         "116 psi (0.8 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "",
+        "cells": [
+         "52 × 87″ (1,320 × 2,200 mm)",
+         "52 × 87″ (1,320 × 2,200 mm)",
+         "52 × 87″ (1,320 × 2,200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "80.7 × 63 × 92.5″ (2,050 × 1,600 × 2,350 mm)",
+         "80.7 × 86.6 × 92.5″ (2,050 × 2,200 × 2,350 mm)",
+         "80.7 × 102.4 × 92.5″ (2,050 × 2,600 × 2,350 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "4,189 lb (1,900 kg)",
+         "6,173 lb (2,800 kg)",
+         "8,818 lb (4,000 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "Dust collector",
+      "sub": "Dry dust collector for the sanders",
+      "models": [
+       "Dust collector"
+      ],
+      "rows": [
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1.5 HP (1.1 kW) or 3 HP (2.2 kW); full-load current 6 / 9 A"
+        ],
+        "key": true
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "600 V 60 Hz 3-phase; CSA, UL and RU-listed electrical components"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "38 × 24 × 72″ (97 × 62 × 184 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "gross",
+        "cells": [
+         "602 lb (273 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "R-630",
+      "glance": [
+       "1",
+       "Under 24.8″ (630 mm)",
+       "0.04 – 4.3″ (1 – 110 mm)",
+       "1,984 lb (900 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "R-R630",
+      "glance": [
+       "2",
+       "Under 24.8″ (630 mm)",
+       "0.04 – 4.3″ (1 – 110 mm)",
+       "2,646 lb (1,200 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "R-R-R630",
+      "glance": [
+       "3",
+       "Under 24.8″ (630 mm)",
+       "0.04 – 4.3″ (1 – 110 mm)",
+       "3,968 lb (1,800 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "R-1300",
+      "glance": [
+       "1",
+       "51.2″ (1,300 mm)",
+       "4.3″ (110 mm)",
+       "4,189 lb (1,900 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "R-R1300",
+      "glance": [
+       "2",
+       "51.2″ (1,300 mm)",
+       "4.3″ (110 mm)",
+       "6,173 lb (2,800 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "R-R-R1300",
+      "glance": [
+       "3",
+       "51.2″ (1,300 mm)",
+       "4.3″ (110 mm)",
+       "8,818 lb (4,000 kg)",
+       "—"
+      ]
+     },
+     {
+      "name": "Dust collector",
+      "glance": [
+       "—",
+       "—",
+       "—",
+       "602 lb (273 kg)",
+       "1.5 HP (1.1 kW) or 3 HP (2.2 kW); full-load current 6 / 9 A"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "sanding_heads",
+     "working_width_max",
+     "workpiece_thickness",
+     "weight",
+     "motor"
+    ],
+    "caps": {
+     "R-630": "Under 24.8″ (630 mm) · 1 head(s)",
+     "R-R630": "Under 24.8″ (630 mm) · 2 head(s)",
+     "R-R-R630": "Under 24.8″ (630 mm) · 3 head(s)",
+     "R-1300": "51.2″ (1,300 mm) · 1 head(s)",
+     "R-R1300": "51.2″ (1,300 mm) · 2 head(s)",
+     "R-R-R1300": "51.2″ (1,300 mm) · 3 head(s)",
+     "Dust collector": ""
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },

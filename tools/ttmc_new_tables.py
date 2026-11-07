@@ -521,3 +521,44 @@ TAB["tt-yq-v"] = [
         ("Packing size L × W × H", "PK", (181, 89, 136)),
     ]),
 ]
+
+# Dry deburring and finishing sanders (the owner's sheet "Dry Finishing-Deburring Machine", Nov 7 2026): the 630 and 1300 series,
+# one to three sanding heads, and the dust collector — every row of the sheet, metric in brackets.  The sheet's dust collector row
+# "maximum vise clamping range 140 mm" is not a collector figure (left out); prices, delivery and installation terms are not shown.
+TAB["tt-dfm"] = [
+    table("R-630 · R-R630 · R-R-R630", "630 series metal sanders, 1 – 3 heads", ["R-630", "R-R630", "R-R-R630"], [
+        ("*Sanding heads", "TXT", ["1", "2", "3"]),
+        ("*Working width, max", "TXT", "Under 24.8″ (630 mm)"),
+        ("*Workpiece thickness", "TXT", "0.04 – 4.3″ (1 – 110 mm)"),
+        ("Workpiece length, min", "TXT", "Over 10.2″ (260 mm)"),
+        ("1st sanding motor", "TXT", "10 HP (7.5 kW), 4-pole, copper-wound"),
+        ("2nd sanding motor", "TXT", ["—", "10 HP (7.5 kW), 4-pole, copper-wound", "10 HP (7.5 kW), 4-pole, copper-wound"]),
+        ("3rd sanding motor", "TXT", ["—", "—", "10 HP (7.5 kW), 4-pole"]),
+        ("Conveyor motor", "TXT", ["1.5 HP (1.1 kW), stepless speed, copper-wound", "1.5 HP (1.1 kW), stepless speed, copper-wound",
+                                   "2 HP (1.5 kW), stepless speed, copper-wound"]),
+        ("Table lifting motor", "TXT", "1/2 HP (0.37 kW), copper-wound"),
+        ("*Weight", "KG", [900, 1200, 1800]),
+    ]),
+    table("R-1300 · R-R1300 · R-R-R1300", "1300 series heavy-duty metal sanders, 1 – 3 heads", ["R-1300", "R-R1300", "R-R-R1300"], [
+        ("*Sanding heads", "TXT", ["1", "2", "3"]),
+        ("*Working width, max", "TXT", "51.2″ (1,300 mm)"),
+        ("*Workpiece thickness", "max", "TXT", "4.3″ (110 mm)"),
+        ("Workpiece length, min", "TXT", "Over 13.8″ (350 mm)"),
+        ("Sanding rollers", "TXT", ["Ø8.3″ (210 mm) rubber × 1", "Ø8.3″ (210 mm) rubber × 2", "Ø8.3″ (210 mm) rubber × 3"]),
+        ("Conveyor speed", "TXT", "6.6 – 82 ft/min (2 – 25 m/min)"),
+        ("Sanding motors", "TXT", ["25 HP (18.5 kW)", "2 × 25 HP (2 × 18.5 kW)", "3 × 25 HP (3 × 18.5 kW)"]),
+        ("Conveyor motor", "hypoid gearmotor", "TXT", ["3 HP (2.2 kW), VFD speed control", "5.5 HP (4 kW), VFD speed control", "5.5 HP (4 kW), VFD speed control"]),
+        ("Total motor power", "TXT", ["36 HP (27 kW)", "56 HP (42 kW)", "80 HP (60 kW)"]),
+        ("Working air pressure", "MPA", 0.8),
+        ("Abrasive belt", "BELT", (2200, 1320)),
+        ("Dimensions L × W × H", "TXT", ["80.7 × 63 × 92.5″ (2,050 × 1,600 × 2,350 mm)", "80.7 × 86.6 × 92.5″ (2,050 × 2,200 × 2,350 mm)",
+                                        "80.7 × 102.4 × 92.5″ (2,050 × 2,600 × 2,350 mm)"]),
+        ("*Weight", "KG", [1900, 2800, 4000]),
+    ]),
+    table("Dust collector", "Dry dust collector for the sanders", ["Dust collector"], [
+        ("*Motor", "TXT", "1.5 HP (1.1 kW) or 3 HP (2.2 kW); full-load current 6 / 9 A"),
+        ("Power supply", "TXT", "600 V 60 Hz 3-phase; CSA, UL and RU-listed electrical components"),
+        ("Packing size L × W × H", "PK", (97, 62, 184)),
+        ("*Weight", "gross", "KG", 273),
+    ]),
+]
