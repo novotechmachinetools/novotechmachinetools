@@ -22,7 +22,7 @@
     <p class="group-lead">{{ g.lead }}</p>
   </div>
   <ul class="cat-grid">
-    {% for c in g.cards %}{{ cat_card(c) }}{% endfor %}
+    {% for c in g.cards %}{{ cat_card(c, subs=True) }}{% endfor %}
   </ul>
 </section>
 {% endfor %}

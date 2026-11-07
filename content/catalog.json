@@ -1,6 +1,14 @@
 {
  "groups": [
   {
+   "id": "rebar",
+   "title": "Rebar machinery",
+   "lead": "Benders, cutters and processing lines for reinforcing steel.",
+   "slugs": [
+    "rebar-bender-and-cutter"
+   ]
+  },
+  {
    "id": "bending",
    "title": "Sheet metal bending",
    "lead": "Press brakes, panel benders, sheet metal brakes and the tooling that goes in them.",
@@ -30,8 +38,22 @@
    "slugs": [
     "shear-cutting",
     "ironworker-machines",
-    "corner-notcher",
-    "plate-beveler"
+    "plate-beveler",
+    "corner-notcher"
+   ]
+  },
+  {
+   "id": "rolling",
+   "title": "Rolling, pressing and forming",
+   "lead": "Plate and section rolling, presses, HVAC forming machines and metal shaping.",
+   "slugs": [
+    "plate-rollers",
+    "angle-rolls",
+    "hydraulic-press",
+    "riveting-machine",
+    "circle-cutters-and-seamers",
+    "bead-rollers",
+    "lock-former"
    ]
   },
   {
@@ -46,28 +68,23 @@
    ]
   },
   {
-   "id": "rolling",
-   "title": "Rolling, pressing and forming",
-   "lead": "Plate and section rolling, presses, HVAC forming machines and metal shaping.",
-   "slugs": [
-    "plate-rollers",
-    "angle-rolls",
-    "hydraulic-press",
-    "riveting-machine",
-    "bead-rollers",
-    "lock-former",
-    "circle-cutters-and-seamers"
-   ]
-  },
-  {
    "id": "tube",
    "title": "Tube and pipe",
    "lead": "Bending, notching and end forming of tube and pipe, and CNC wire bending.",
    "slugs": [
     "pipe-benders",
+    "wire-bending-machines",
     "pipe-notcher",
-    "tube-end-forming-machines",
-    "wire-bending-machines"
+    "tube-end-forming-machines"
+   ]
+  },
+  {
+   "id": "welding",
+   "title": "Welding",
+   "lead": "Positioners, turning rolls, column and boom manipulators, welding tables and corner welders that take the hand work out of repeat welds.",
+   "slugs": [
+    "welding-automation",
+    "corner-welding-machines"
    ]
   },
   {
@@ -92,23 +109,6 @@
     "cnc-lathe",
     "vertical-machining-center",
     "surface-grinder"
-   ]
-  },
-  {
-   "id": "welding",
-   "title": "Welding",
-   "lead": "Positioners, turning rolls, column and boom manipulators, welding tables and corner welders that take the hand work out of repeat welds.",
-   "slugs": [
-    "welding-automation",
-    "corner-welding-machines"
-   ]
-  },
-  {
-   "id": "rebar",
-   "title": "Rebar machinery",
-   "lead": "Benders, cutters and processing lines for reinforcing steel.",
-   "slugs": [
-    "rebar-bender-and-cutter"
    ]
   },
   {

@@ -889,6 +889,17 @@ body.ai-locked { overflow: hidden; }
 .cat-sub { list-style: none; margin: auto 0 0; padding: 10px 0 0; border-top: 1px dashed var(--line); display: grid; gap: 4px; }
 .cat-sub a { font-size: 14.5px; color: var(--orange-ink); text-decoration: none; }
 .cat-sub a:hover { text-decoration: underline; }
+/* the Products page: each category's sub-pages, sections and products with a photo (the owner, Nov 7 2026) */
+.cat-subs { list-style: none; margin: auto 0 0; padding: 10px 0 0; border-top: 1px dashed var(--line); display: grid; gap: 2px; }
+.cat-subs a { display: flex; align-items: center; gap: 10px; padding: 4px 6px 4px 4px; border-radius: 4px; color: var(--charcoal-2); text-decoration: none; font-size: 14.5px; line-height: 1.25; transition: background-color .12s, color .12s; }
+.cat-subs a:hover, .cat-subs a:focus-visible, .cat-subs a.is-on { background: var(--orange-tint); color: var(--ink); }
+.cat-subs a:hover .sub-label, .cat-subs a.is-on .sub-label { text-decoration: underline; text-decoration-color: var(--orange); }
+.sub-img { flex: none; display: grid; place-items: center; width: 56px; height: 42px; background: #fff; border: 1px solid var(--line-soft); border-radius: 3px; overflow: hidden; }
+.sub-img img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.cat-more { margin-top: 8px; font-size: 14.5px; font-weight: 600; color: var(--orange-ink); text-decoration: none; }
+.cat-more::after { content: " →"; color: var(--orange); }
+.cat-more:hover { text-decoration: underline; }
+.cat-art img.is-swapping { opacity: .35; }
 
 /* brand cards */
 .home-brands, .about-brands { padding: 46px 0 6px; }

@@ -499,6 +499,27 @@
     });
   });
 
+  /* ---------- Products page: a category's sub-page, section or product under the pointer shows in the card's large photo ---------- */
+  d.querySelectorAll(".cat-card.has-subs").forEach(function (card) {
+    var art = card.querySelector(".cat-art"), main = art && art.querySelector("img");
+    if (!main) return;
+    var orig = { src: main.getAttribute("src"), srcset: main.getAttribute("srcset") || "", cut: art.classList.contains("is-cutout") }, on = null;
+    var show = function (src, srcset, cut, link) {
+      if (on) on.classList.remove("is-on");
+      on = link; if (link) link.classList.add("is-on");
+      if (main.getAttribute("src") === src) return;
+      main.removeAttribute("width"); main.removeAttribute("height");
+      main.srcset = srcset; main.src = src;
+      art.classList.toggle("is-cutout", cut);
+    };
+    card.querySelectorAll(".cat-subs a").forEach(function (a) {
+      var go = function () { show(a.dataset.s, a.dataset.ss || "", a.dataset.a === "1", a); };
+      a.addEventListener("mouseenter", go);
+      a.addEventListener("focus", go);
+    });
+    card.addEventListener("mouseleave", function () { show(orig.src, orig.srcset, orig.cut, null); });
+  });
+
   /* ---------- control thumbnails under a family, and photo grids (the About page's showroom): open in the lightbox as one set ---------- */
   d.querySelectorAll(".control-thumbs, [data-lightbox]").forEach(function (ul) {
     var links = Array.prototype.slice.call(ul.querySelectorAll("a.control-thumb, a.grid-photo"));

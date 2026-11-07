@@ -1003,7 +1003,8 @@ def build_nav_preview(loaded):
                 return
             keys.add(key); hrefs.add(href)
             im = img(key, 800)
-            cards.append({"l": label, "n": note or "", "h": clean(href), "s": img(key, 480)["src"], "ss": im["srcset"], "a": bool(im["alpha"]), "k": key})
+            cards.append({"l": label, "n": note or "", "h": clean(href), "s": img(key, 480)["src"], "ss": im["srcset"], "a": bool(im["alpha"]),
+                          "t": im["thumb"], "k": key})
 
         entries, lines = [], []
         for t in c.get("children") or []:
@@ -1953,7 +1954,12 @@ def main():
                 out.append(r)
             p[key] = out
     CATALOG.update(build_catalog(loaded))
-    json.dump(build_nav_preview(loaded), open(os.path.join(DIST, "nav-preview.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    nav_preview = build_nav_preview(loaded)
+    json.dump(nav_preview, open(os.path.join(DIST, "nav-preview.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    # the Products page shows each category's sub-pages, sections and products with their photos, the same as the menu (the
+    # owner, Nov 7 2026: every main page and hub on the Products page, their sub-branches' photos under the pointer)
+    for c in CATALOG.values():
+        c["subs"] = (nav_preview.get(re.sub(r"\.html$", "", c["href"].split("#")[0])) or {}).get("c") or []
     shown = set()
     for p in loaded:
         if p.get("template") in SITE_TEMPLATES:

@@ -209,8 +209,16 @@ def write(slug, data):
     json.dump(data, open(os.path.join(ROOT, "content", "pages", slug + ".json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 
+def menu_order(groups):
+    """the Products page in the order of the Products menu (the owner, Nov 7 2026: "arrange the products page neatly"): each group
+    where its first category stands in the menu, the categories inside a group in their menu order"""
+    pos = {c["href"].split("#")[0][:-5]: i for i, c in enumerate(SITE["nav"][0]["children"])}
+    ordered = [(g, t, l, sorted(s, key=lambda x: pos.get(x, 999))) for g, t, l, s in groups]
+    return sorted(ordered, key=lambda g: min(pos.get(x, 999) for x in g[3]))
+
+
 def main():
-    json.dump({"groups": [{"id": g, "title": t, "lead": l, "slugs": s} for g, t, l, s in GROUPS], "blurbs": BLURBS,
+    json.dump({"groups": [{"id": g, "title": t, "lead": l, "slugs": s} for g, t, l, s in menu_order(GROUPS)], "blurbs": BLURBS,
                "card_image": CARD_IMAGE, "featured": FEATURED, "brands": BRANDS,
                "brochures": [{"group": g, "file": "files/" + f, "title": t} for g, f, t in BROCHURES]},
               open(os.path.join(ROOT, "content", "catalog.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)

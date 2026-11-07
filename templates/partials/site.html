@@ -20,13 +20,18 @@
 </section>
 {%- endmacro %}
 
-{% macro cat_card(c, h="h3", sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 360px") -%}
-<li class="cat-card">
+{% macro cat_card(c, h="h3", sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 360px", subs=False, max_subs=6) -%}
+{% set show = c.subs if subs and c.subs and (c.subs | length > 1 or c.children) else [] %}
+<li class="cat-card{{ ' has-subs' if show else '' }}">
   <a class="cat-art{{ ' is-cutout' if c.image and c.image.alpha else '' }}" href="{{ c.href }}" tabindex="-1" aria-hidden="true">{% if c.image %}<img src="{{ c.image.small }}" srcset="{{ c.image.srcset }}" sizes="{{ sizes }}" width="{{ c.image.w }}" height="{{ c.image.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
   <div class="cat-body">
     <{{ h }} class="cat-title"><a href="{{ c.href }}">{{ c.label }}</a></{{ h }}>
     <p>{{ c.blurb }}</p>
-    {% if c.children %}<ul class="cat-sub">{% for x in c.children %}<li><a href="{{ x.href }}">{{ x.label }}</a></li>{% endfor %}</ul>{% endif %}
+    {% if show %}{# the Products page: its pages, sections and products with their photos; under the pointer the card's large
+    photo shows the one pointed at (the owner, Nov 7 2026) #}
+    <ul class="cat-subs">{% for x in show[:max_subs] %}<li><a href="{{ x.h }}" data-s="{{ x.s }}" data-ss="{{ x.ss }}"{{ ' data-a="1"' if x.a else '' }}{% if x.n %} title="{{ x.n }}"{% endif %}><span class="sub-img"><img src="{{ x.t }}" alt="" width="56" height="42" loading="lazy" decoding="async"></span><span class="sub-label">{{ x.l }}</span></a></li>{% endfor %}</ul>
+    {% if show | length > max_subs %}<a class="cat-more" href="{{ c.href }}">All {{ show | length }} in {{ c.label | lower if c.label[1:] != c.label[1:].upper() else c.label }}</a>{% endif %}
+    {% elif c.children %}<ul class="cat-sub">{% for x in c.children %}<li><a href="{{ x.href }}">{{ x.label }}</a></li>{% endfor %}</ul>{% endif %}
   </div>
 </li>
 {%- endmacro %}
