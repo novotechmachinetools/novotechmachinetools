@@ -430,13 +430,22 @@ EXTRA = {
         set={"hero_brand_line": "The HP horizontal presses are built in Turkey for NovoTech's premium line, with European hydraulics and controls; NovoTech's value-line benders are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_ROLL: dict(
-        groups=[("tt-slip", "Slip rolls · value line", "Hydraulic and electric slip rolls for sheet to 1/2″ — NovoTech value line, built in China.", False, None)],
-        intro_add="For sheet and light plate, NovoTech's value-line slip rolls, built in China, roll 22 ga to 1/2″: HER hydraulic slip rolls with "
-                  "all three rolls driven and ESR electric slip rolls with cone rolling for the HVAC and sheet-metal shop.",
-        points_add=["NovoTech value line: HER hydraulic slip rolls to 1/2″, ESR electric slip rolls 22 ga – 1/4″"],
+        groups=[("tt-slip", "Slip rolls · value line", "Electric slip rolls for sheet to 1/4″ — NovoTech value line, built in China.", False, None)],
+        intro_add="For sheet, NovoTech's value-line ESR electric slip rolls, built in China, roll 22 ga to 1/4″ with cone rolling for the "
+                  "HVAC and sheet-metal shop.",
+        points_add=["NovoTech value line: ESR electric slip rolls 22 ga – 1/4″"],
         faq_add=[{"q": "Plate roller or slip roll?",
-                  "a": "A slip roll is a light three-roll machine for sheet — duct, flues, tanks, hoppers, signage — in 22 ga to 1/4″, with a top roll that swings out to slip the finished cylinder off. A plate roller rolls heavier plate and pre-bends the edges so the cylinder closes round. The HER hydraulic slip rolls bridge the two, to 1/2″ over 6′7″."}],
+                  "a": "A slip roll is a light three-roll machine for sheet — duct, flues, tanks, hoppers, signage — in 22 ga to 1/4″, with a top roll that swings out to slip the finished cylinder off. A plate roller rolls heavier plate and pre-bends the edges so the cylinder closes round. The HER hydraulic slip rolls, with the hydraulic 3-roll plate rollers, bridge the two, to 1/2″ over 6′7″."}],
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line slip rolls are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
+    ),
+    D2.P_ROLL_HYD: dict(
+        groups=[("tt-slip-hyd", "Hydraulic slip rolls · value line", "HER slip rolls with all three rolls driven hydraulically, 12 ga to 1/2″ over 4 to 10 ft — NovoTech value line, built in China.", False, None)],
+        intro_add="For sheet and light plate, NovoTech's value-line HER hydraulic slip rolls, built in China, roll 12 ga to 1/2″ over 4 to "
+                  "10 ft with all three rolls driven hydraulically.",
+        points_add=["NovoTech value line: HER hydraulic slip rolls, 12 ga – 1/2″ × 4 – 10 ft"],
+        faq_add=[{"q": "Plate roller or slip roll?",
+                  "a": "A slip roll is a light three-roll machine for sheet — duct, flues, tanks, hoppers, signage — with a top roll that swings out to slip the finished cylinder off. A plate roller rolls heavier plate and pre-bends the edges so the cylinder closes round. The HER hydraulic slip rolls bridge the two: all three rolls driven hydraulically, 12 ga to 1/2″ over 6′7″."}],
+        set={"hero_brand_line": "ISITAN and NovoTech premium line plate rolls are made in Turkey — ISITAN Makine since 1959, the NovoTech premium line built to NovoTech's specification — with European components; NovoTech's value-line slip rolls are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_DEBURR: dict(
         groups=[("tt-bfm", "Wide-belt deburring machines · value line", "Entry-level wide-belt deburring and finishing machines, 12″ and 24″ — NovoTech value line, built in China.", False, None)],

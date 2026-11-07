@@ -301,10 +301,13 @@ HORIZ = [
 ]
 
 # =============================================================================================== slip rolls
+# the ESR electric slip rolls with the motorized plate rollers; the HER hydraulic slip rolls with the hydraulic 3-roll plate
+# rollers — they are hydraulic (the owner, Nov 7 2026)
 P_ROLL = "motorized-plate-rollers"
+P_ROLL_HYD = "hydraulic-3-roll-plate-rollers"
 SL = T["tt-slip"]
 ROLL = [
-    F("tt-her", P_ROLL, "tt-slip", "HER hydraulic slip rolls, 12 ga – 1/2″ × 4 – 10 ft", "HER hydraulic slip rolls", [SL[3]],
+    F("tt-her", P_ROLL_HYD, "tt-slip-hyd", "HER hydraulic slip rolls, 12 ga – 1/2″ × 4 – 10 ft", "HER hydraulic slip rolls", [SL[3]],
       "Three-roll slip rolls with all three rolls driven hydraulically: the pinch-roll cylinders move in sync, a digital counter shows "
       "the pinch-roll position, the rolls are alloy steel hardened to HRC 55, the top roll swings out to take off a closed cylinder, and a "
       "foot pedal runs forward and reverse. 1/4″ over 4′3″ to 8′2″, 3/16″ over 5′1″ and 6′8″, 5/16″ over 8′2″, 1/2″ over 6′7″, and "
