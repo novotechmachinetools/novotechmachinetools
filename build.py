@@ -1747,8 +1747,12 @@ def render_page(page):
 
 
 def ai_catalogue(pages):
-    """Compact machine catalogue for the AI assistant (dist/ai/catalogue.json): one entry per family,
-    with the page it lives on, its models and their headline capacities in inches and mm."""
+    """Machine-finder index (dist/ai/catalogue.json): one entry per family, with the page it lives on, its models and
+    their headline capacities, and — for the finder to know everything the site says (the owner, Nov 7 2026) — every
+    feature and option, every spec table, the words of its PDF brochure and structured capacities per model
+    (tools/ai_index.py); plus every page with its introduction, key points and questions and answers."""
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import ai_index
     items = []
     seen = set()
     for page in pages:
@@ -1764,6 +1768,9 @@ def ai_catalogue(pages):
                 for i, m in enumerate(spec.get("models", [])):
                     entry = {"name": m["name"]}
                     if spec.get("kind") in ("table", "tools"):
+                        if spec.get("tables"):
+                            models.append(entry)    # the full tables follow in "specs"
+                            continue
                         for k, v in zip(spec.get("glance_keys", []), m.get("glance", [])):
                             entry[k] = v
                     elif spec.get("kind") == "bandsaw":
@@ -1794,14 +1801,69 @@ def ai_catalogue(pages):
                 ci = f.get("card_image")
                 thumb = (ci.get("thumb") or ci.get("small")) if ci else None
                 brand = site.get("brands", {}).get(f.get("brand"), {})
+                pdf = f.get("pdf") if isinstance(f.get("pdf"), dict) else None
+                strip = lambda x: html_mod.unescape(re.sub(r"<[^>]+>", "", x)) if isinstance(x, str) else ""
                 items.append({
                     "id": f["id"], "name": f["name"], "short": f["short"], "models_label": f.get("models_label", ""),
                     "brand": brand.get("name") or (page.get("brand") or {}).get("name", ""), "line": brand.get("line"),
-                    "category": g["title"], "page_title": page["h1"], "page": page["slug"], "href": f"{page['slug']}#{f['id']}",
-                    "headline": f.get("headline", ""), "summary": f.get("summary", ""), "features": [re.sub(r"<[^>]+>", "", x) for x in f.get("features", [])[:7]],
+                    "category": g["title"], "page_title": page["h1"], "page": page["slug"], "page_nav": page.get("nav_label") or "",
+                    "href": f"{page['slug']}#{f['id']}",
+                    "headline": f.get("headline", ""), "summary": strip(f.get("summary", "")),
+                    "features": [strip(x) for x in f.get("features", [])],
+                    "optional": [strip(x) for x in (f.get("optional") or []) if isinstance(x, str)],
                     "automation": f.get("group"), "models": models, "image": thumb,
+                    "pdf": pdf.get("file") if pdf else None,
+                    "specs": ai_index.table_rows(spec) or None,
+                    "caps": ai_index.family_caps(f, model_single, bandsaw_round0),
                 })
     return items
+
+
+def ai_pages(pages, families):
+    """Every page for the finder: title, description, introduction, key points, questions and answers, photo, and the
+    words of the page (and of the PDF brochures) that the product entries do not already hold."""
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import ai_index
+    fam_words = {}
+    for f in families:
+        txt = " ".join([f["name"], f["short"], f["models_label"], f["category"], f["headline"], f["summary"]] + f["features"] + f["optional"]
+                       + [m["name"] for m in f["models"]] + [" ".join(r) for t in (f.get("specs") or []) for r in t["rows"]])
+        fam_words[f["id"]] = set(ai_index.words(txt))
+    by_page = {}
+    for f in families:
+        by_page.setdefault(f["page"], set()).update(fam_words[f["id"]])
+    out = []
+    for p in pages:
+        if p.get("noindex") or p.get("draft"):
+            continue
+        fp = os.path.join(DIST, p["slug"] + ".html")
+        html = open(fp, encoding="utf-8").read() if os.path.exists(fp) else ""
+        known = by_page.get(p["slug"], set())
+        extra = []
+        for w in ai_index.page_words(html):
+            if w not in known and w not in extra:
+                extra.append(w)
+        hero = p.get("hero_image")
+        im = img(hero) if isinstance(hero, str) and hero in manifest else None
+        out.append({
+            "slug": p["slug"], "nav": p.get("nav_label") or "", "h1": re.sub(r"<[^>]+>", "", p.get("h1") or ""),
+            "desc": p.get("meta_description") or "", "intro": re.sub(r"<[^>]+>", "", p.get("intro") or ""),
+            "points": [re.sub(r"<[^>]+>", "", x) if isinstance(x, str) else re.sub(r"<[^>]+>", "", x.get("text") or "") for x in (p.get("hero_points") or [])],
+            "faq": [[re.sub(r"<[^>]+>", "", q.get("q", "")), re.sub(r"<[^>]+>", "", q.get("a", ""))] for q in (p.get("faq") or []) if isinstance(q, dict)],
+            "kind": p.get("template", "page.html").replace(".html", ""), "hub": bool(p.get("subpages")),
+            "image": (im.get("thumb") or im.get("small")) if im else None,
+            "words": " ".join(extra[:400]),
+        })
+    pdfs = {}
+    users = {}
+    for f in families:
+        if f.get("pdf"):
+            users.setdefault(f["pdf"], set()).update(fam_words[f["id"]])
+    for file, known in users.items():
+        src = os.path.join(ROOT, "src", file)
+        if os.path.exists(src):
+            pdfs[file] = " ".join(sorted(w for w in ai_index.pdf_words(src) if w not in known))
+    return out, pdfs
 
 
 def clean_urls(html):
@@ -1990,9 +2052,13 @@ def main():
     # AI assistant catalogue (read by ask.php on the server and by the search panel in the browser)
     os.makedirs(os.path.join(DIST, "ai"), exist_ok=True)
     cat = ai_catalogue(PREPARED)
-    json.dump({"generated": datetime.date.today().isoformat(), "site": site["domain"], "families": cat},
+    ai_pg, ai_pdfs = ai_pages(PREPARED, cat)
+    json.dump({"generated": datetime.date.today().isoformat(), "site": site["domain"], "families": cat, "pages": ai_pg, "pdfs": ai_pdfs,
+               "contact": {"phone": site["phone"], "phone_tel": site["phone_tel"], "email": f"{site['email_user']}@{site['email_domain']}",
+                           "hours": site["hours"], "address": site["address"]}},
               open(os.path.join(DIST, "ai", "catalogue.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    print(f"ai catalogue: {len(cat)} families, {os.path.getsize(os.path.join(DIST, 'ai', 'catalogue.json'))//1024} KB")
+    print(f"ai catalogue: {len(cat)} families, {len(ai_pg)} pages, {len(ai_pdfs)} brochures, "
+          f"{os.path.getsize(os.path.join(DIST, 'ai', 'catalogue.json'))//1024} KB")
     # sitemap
     today = datetime.date.today().isoformat()
     def loc(p):
