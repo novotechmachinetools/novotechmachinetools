@@ -9,14 +9,14 @@
  "intro": "A box and pan brake (finger brake) is a sheet metal brake whose upper clamping blade is made of removable fingers: take the fingers out where the sides of a box come up and the leaf folds all four sides of a box or a pan; with every finger in place it works as a straight brake. NovoTech sells four kinds in Canada, all on this page: hand-operated box and pan brakes from a 12″ bench model to 157″, in 22 to 12 ga; heavy box and pan brakes from 52 to 100″ with 2, 3 and 4″ fingers that fold 14 ga boxes 9″ deep; box and pan folding machines with segmented blades — the PBB A and 3SH foot-clamp folders and the TSBS and MFS heavy folders — in 20 to 14 ga over 40 to 119″; and hydraulic box and pan brakes that clamp and fold 14 ga over 52 and 100″ from a foot pedal. Each family below has its full specification table, photos and the finger sets supplied. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Hand-operated box and pan brakes 12 – 157″, 22 to 12 ga mild steel, removable fingers in 1 – 6″ widths",
+  "Hydraulic box and pan brakes 52″ and 100″: 14 ga, foot-pedal clamping and folding",
   "Heavy brakes 52 – 100″ with 2, 3 and 4″ finger sets — boxes to 9″ deep in 14 ga; counterweighted leaf",
-  "Box and pan folding machines 40 – 119″, 20 – 14 ga: segmented blades, foot or lever clamping",
-  "Hydraulic box and pan brakes 52″ and 100″: 14 ga, foot-pedal clamping and folding"
+  "Box and pan folding machines 40 – 119″, 20 – 14 ga: segmented blades, foot or lever clamping"
  ],
- "hero_image": "tm-bp1650",
+ "hero_image": "tm-w2540a",
  "hero_image_secondary": [
-  "tm-w2540h2",
-  "tm-hw2540h"
+  "tm-hw2540h",
+  "tm-w2540h2"
  ],
  "breadcrumb": [
   {
@@ -48,6 +48,15 @@
    "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support in Canada"
   },
   {
+   "id": "pb-hyd-group",
+   "title": "Hydraulic box and pan brakes",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "tt-hw-h"
+   ]
+  },
+  {
    "id": "pb-heavy-group",
    "title": "Heavy box and pan brakes",
    "lead": "",
@@ -66,15 +75,6 @@
     "tt-folder-bp"
    ],
    "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support in Canada"
-  },
-  {
-   "id": "pb-hyd-group",
-   "title": "Hydraulic box and pan brakes",
-   "lead": "",
-   "brand": "novotech",
-   "families": [
-    "tt-hw-h"
-   ]
   }
  ],
  "faq": [
@@ -112,16 +112,16 @@
  "section_label": "Sheet metal brakes",
  "related_pages": [
   {
+   "href": "hydraulic-folding-machine.html",
+   "label": "Hydraulic, electric and CNC folding machines"
+  },
+  {
    "href": "sheet-metal-hand-brake.html",
    "label": "Sheet metal hand brakes"
   },
   {
    "href": "magnetic-sheet-metal-brake.html",
    "label": "Magnetic sheet metal brakes"
-  },
-  {
-   "href": "hydraulic-folding-machine.html",
-   "label": "Hydraulic, electric and CNC folding machines"
   },
   {
    "href": "roofing-siding-brake.html",
@@ -158,10 +158,15 @@
   "hub": {
    "href": "folder-sheet-metal-brake.html",
    "label": "All sheet metal brakes",
-   "image": "tm-eb2500",
+   "image": "tm-hw",
    "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared and the buying guide."
   },
   "pages": [
+   {
+    "href": "hydraulic-folding-machine.html",
+    "label": "Hydraulic & CNC folders",
+    "current": false
+   },
    {
     "href": "box-and-pan-brake.html",
     "label": "Box and pan brakes",
@@ -169,17 +174,12 @@
    },
    {
     "href": "sheet-metal-hand-brake.html",
-    "label": "Hand brakes & folders",
+    "label": "Straight brakes and folders",
     "current": false
    },
    {
     "href": "magnetic-sheet-metal-brake.html",
     "label": "Magnetic brakes",
-    "current": false
-   },
-   {
-    "href": "hydraulic-folding-machine.html",
-    "label": "Hydraulic & CNC folders",
     "current": false
    },
    {

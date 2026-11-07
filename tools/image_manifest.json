@@ -15994,10 +15994,22 @@
   "alt": "ISITAN SFC 350-VX semi-automatic circular cold saw, 13-3/4\u2033 blade, \u00d84-1/2\u2033 round",
   "variants": [
    {
+    "w": 1200,
+    "h": 1526,
+    "file": "img/forming/is-sfc-350-vx-1200.webp",
+    "bytes": 132848
+   },
+   {
+    "w": 800,
+    "h": 1017,
+    "file": "img/forming/is-sfc-350-vx-800.webp",
+    "bytes": 86104
+   },
+   {
     "w": 480,
-    "h": 608,
+    "h": 610,
     "file": "img/forming/is-sfc-350-vx-480.webp",
-    "bytes": 49078
+    "bytes": 49610
    }
   ],
   "alpha": true,
@@ -16005,7 +16017,7 @@
    "w": 126,
    "h": 160,
    "file": "img/forming/is-sfc-350-vx-thumb.webp",
-   "bytes": 8118
+   "bytes": 8232
   },
   "cut": "birefnet"
  },
@@ -90733,29 +90745,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 378,
+    "h": 396,
     "file": "img/ttmc-more/tm-bsm3150-1200.webp",
-    "bytes": 49726
+    "bytes": 45338
    },
    {
     "w": 800,
-    "h": 252,
+    "h": 264,
     "file": "img/ttmc-more/tm-bsm3150-800.webp",
-    "bytes": 30358
+    "bytes": 28612
    },
    {
     "w": 480,
-    "h": 151,
+    "h": 159,
     "file": "img/ttmc-more/tm-bsm3150-480.webp",
-    "bytes": 17578
+    "bytes": 15498
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 50,
+   "h": 53,
    "file": "img/ttmc-more/tm-bsm3150-thumb.webp",
-   "bytes": 4516
+   "bytes": 4144
   },
   "cut": "birefnet"
  },
@@ -118922,6 +118934,36 @@
    "h": 160,
    "file": "img/gecam/gc-welcor-4-panel-thumb.webp",
    "bytes": 2438
+  }
+ },
+ "video-pJR-lUCF3gE": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-pJR-lUCF3gE-1200.webp",
+    "bytes": 20178
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-pJR-lUCF3gE-800.webp",
+    "bytes": 12562
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-pJR-lUCF3gE-480.webp",
+    "bytes": 6648
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-pJR-lUCF3gE-thumb.webp",
+   "bytes": 1670
   }
  }
 }

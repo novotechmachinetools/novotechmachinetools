@@ -13,10 +13,10 @@
   "<a href=\"magnetic-sheet-metal-brake.html\">Magnetic brakes</a> 2 – 10 ft, 16 ga, boxes of any depth; <a href=\"hydraulic-folding-machine.html\">hydraulic folders</a> 10 ga × 10 ft; <a href=\"hydraulic-folding-machine.html#tt-tfm\">TFM / TFMS CNC folders</a> 14 ga × 12 ft",
   "<a href=\"roofing-siding-brake.html\">Portable roofing and siding brakes</a> 40″ – 12.5 ft with slitter; <a href=\"shear-brake-roll-3-in-1.html\">3-in-1 shear, brake and roll machines</a> 8 – 80″"
  ],
- "hero_image": "tm-eb2500",
+ "hero_image": "tm-hw",
  "hero_image_secondary": [
-  "tm-hwe",
-  "tm-bp1650"
+  "tm-w2540a",
+  "tm-tfs"
  ],
  "breadcrumb": [
   {
@@ -34,15 +34,28 @@
  "hero_brand_line": "NovoTech value line — NovoTech's own brand, manufactured in China to high North American quality standards and sold with a 1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support in Canada.",
  "subpages": [
   {
+   "slug": "hydraulic-folding-machine",
+   "title": "Hydraulic, electric and CNC folding machines — 10 ga over 10 ft, 14 ga CNC over 12 ft",
+   "image": "tm-hw",
+   "blurb": "Hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge.",
+   "families": [
+    "tt-hw",
+    "tt-tfm",
+    "tt-efm"
+   ],
+   "nav_label": "Hydraulic & CNC folders",
+   "cards_title": "Hydraulic, electric and CNC folding machines — every family"
+  },
+  {
    "slug": "box-and-pan-brake",
    "title": "Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
-   "image": "tm-bp1650",
+   "image": "tm-w2540a",
    "blurb": "Hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, folding machines with segmented blades to 119″ and hydraulic box and pan brakes.",
    "families": [
     "tt-pb",
+    "tt-hw-h",
     "tt-pb-heavy",
-    "tt-folder-bp",
-    "tt-hw-h"
+    "tt-folder-bp"
    ],
    "nav_label": "Box and pan brakes",
    "cards_title": "Box and pan brakes — every family"
@@ -50,14 +63,14 @@
   {
    "slug": "sheet-metal-hand-brake",
    "title": "Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
-   "image": "tm-hb2250",
+   "image": "tm-tfs",
    "blurb": "Straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines with one-piece blades to 119″ in 12 ga, and bench and offset brakes.",
    "families": [
     "tt-hb",
     "tt-folder",
     "tt-bench-brake"
    ],
-   "nav_label": "Hand brakes & folders",
+   "nav_label": "Straight brakes and folders",
    "cards_title": "Sheet metal hand brakes — every family"
   },
   {
@@ -72,26 +85,13 @@
    "cards_title": "Magnetic sheet metal brakes — every family"
   },
   {
-   "slug": "hydraulic-folding-machine",
-   "title": "Hydraulic, electric and CNC folding machines — 10 ga over 10 ft, 14 ga CNC over 12 ft",
-   "image": "tm-hwe",
-   "blurb": "Hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge.",
-   "families": [
-    "tt-hw",
-    "tt-efm",
-    "tt-tfm"
-   ],
-   "nav_label": "Hydraulic & CNC folders",
-   "cards_title": "Hydraulic, electric and CNC folding machines — every family"
-  },
-  {
    "slug": "roofing-siding-brake",
    "title": "Portable roofing and siding brakes — brakes with slitter, 40″ to 12.5 ft",
-   "image": "tm-alb",
+   "image": "tm-bsm3150",
    "blurb": "ALB aluminum brakes with roller slitter, 24 ga steel over 7.2 – 12.5 ft; BSM1550 / BSM3150 shear and brake machines, 22 ga over 61″ and 124″; BSM folding brakes with slitter, 22 – 20 ga over 40 – 100″; and a 24″ trim coil dispenser.",
    "families": [
-    "tt-alb",
     "tt-bsm-sb",
+    "tt-alb",
     "tt-bsm",
     "tt-cd24"
    ],
@@ -101,11 +101,11 @@
   {
    "slug": "shear-brake-roll-3-in-1",
    "title": "3-in-1 shear, brake and roll machines — 8″ to 80″",
-   "image": "tm-3in1",
+   "image": "tm-3in1-610",
    "blurb": "Combination shear, brake and slip roll on one frame from 8″ to 52″ in 20 – 16 ga, and the motorized E3-IN-1 for 1/8″ × 52″ and 80″.",
    "families": [
-    "tt-3in1",
-    "tt-e3in1"
+    "tt-e3in1",
+    "tt-3in1"
    ],
    "nav_label": "3-in-1 machines",
    "cards_title": "3-in-1 shear, brake and roll machines — every family"
@@ -220,6 +220,16 @@
   ],
   "rows": [
    [
+    "Hydraulic, electric and CNC folders",
+    "Heavy and long panels, powered; programs on the CNC",
+    "10 ga × 10 ft, 3/16″ × 8 ft; CNC 14 ga × 12 ft",
+    "Cladding, cassettes, enclosures, production duct",
+    {
+     "href": "hydraulic-folding-machine.html",
+     "label": "Hydraulic and CNC folders"
+    }
+   ],
+   [
     "Box and pan brakes",
     "Boxes, pans and straight bends; removable fingers",
     "22 – 12 ga × 12 – 157″; 14 ga boxes 9″ deep",
@@ -230,13 +240,13 @@
     }
    ],
    [
-    "Hand brakes and folders",
+    "Straight brakes and folders",
     "Long straight bends; foot-clamp folders; bench brakes",
     "22 – 12 ga × 12″ – 13 ft",
     "Flashing, trim, duct panels, job boxes",
     {
      "href": "sheet-metal-hand-brake.html",
-     "label": "Hand brakes and folders"
+     "label": "Straight brakes and folders"
     }
    ],
    [
@@ -247,16 +257,6 @@
     {
      "href": "magnetic-sheet-metal-brake.html",
      "label": "Magnetic brakes"
-    }
-   ],
-   [
-    "Hydraulic, electric and CNC folders",
-    "Heavy and long panels, powered; programs on the CNC",
-    "10 ga × 10 ft, 3/16″ × 8 ft; CNC 14 ga × 12 ft",
-    "Cladding, cassettes, enclosures, production duct",
-    {
-     "href": "hydraulic-folding-machine.html",
-     "label": "Hydraulic and CNC folders"
     }
    ],
    [
@@ -281,6 +281,7 @@
    ]
   ]
  },
+ "range_big_first": true,
  "subpage_link": "all models, specifications and photos",
  "family_noun": "machine",
  "intro_video": null,

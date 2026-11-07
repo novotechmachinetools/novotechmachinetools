@@ -31,7 +31,7 @@ RANGE = {"range_pick": [LENGTH, CAPACITY, "weight"], "range_cols": ["Length", "C
 # the six pages: slug, nav label, hero, minis, groups [(gid, title, lead, manual, [family ids])]
 PAGES = {
     "box-and-pan-brake": dict(
-        nav="Box and pan brakes", hero="tm-bp1650", minis=["tm-w2540h2", "tm-hw2540h"],
+        nav="Box and pan brakes", hero="tm-w2540a", minis=["tm-hw2540h", "tm-w2540h2"],
         title="Box and Pan Brakes for Sale in Canada — 12″ to 13 ft, 22 to 12 Gauge | NovoTech",
         meta="Box and pan brakes (finger brakes) sold, installed and supported in Canada: hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, folding machines with segmented blades to 119″ and hydraulic box and pan brakes.",
         h1="Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
@@ -44,13 +44,13 @@ PAGES = {
               "foot pedal. Each family below has its full specification table, photos and the finger sets supplied. "
               "NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
         points=["Hand-operated box and pan brakes 12 – 157″, 22 to 12 ga mild steel, removable fingers in 1 – 6″ widths",
+                "Hydraulic box and pan brakes 52″ and 100″: 14 ga, foot-pedal clamping and folding",
                 "Heavy brakes 52 – 100″ with 2, 3 and 4″ finger sets — boxes to 9″ deep in 14 ga; counterweighted leaf",
-                "Box and pan folding machines 40 – 119″, 20 – 14 ga: segmented blades, foot or lever clamping",
-                "Hydraulic box and pan brakes 52″ and 100″: 14 ga, foot-pedal clamping and folding"],
+                "Box and pan folding machines 40 – 119″, 20 – 14 ga: segmented blades, foot or lever clamping"],
         groups=[("pb", "Box and pan brakes", "Hand-operated brakes from the 12″ bench model to 157″: the standard brake of the HVAC and sheet-metal shop.", True, ["tt-pb"]),
+                ("pb-hyd", "Hydraulic box and pan brakes", "Powered clamping and folding on a box and pan frame — a 100″ fold in 14 ga from a foot pedal.", False, ["tt-hw-h"]),
                 ("pb-heavy", "Heavy box and pan brakes", "Heavier beams and deeper fingers: 14 ga boxes up to 9″ deep over 52 – 100″.", True, ["tt-pb-heavy"]),
-                ("pb-folder", "Box and pan folding machines", "Folding machines with segmented blades — take the segments out where the sides of a box come up: PBB A and 3SH, TSBS and MFS, 40 to 119″.", True, ["tt-folder-bp"]),
-                ("pb-hyd", "Hydraulic box and pan brakes", "Powered clamping and folding on a box and pan frame — a 100″ fold in 14 ga from a foot pedal.", False, ["tt-hw-h"])],
+                ("pb-folder", "Box and pan folding machines", "Folding machines with segmented blades — take the segments out where the sides of a box come up: PBB A and 3SH, TSBS and MFS, 40 to 119″.", True, ["tt-folder-bp"])],
         faq=[{"q": "Box and pan brake or straight hand brake?",
               "a": "A straight (hand) brake has a one-piece clamping blade: the best choice for long straight bends such as flashing, trim and duct panels, and a little stiffer for its length. A box and pan brake has a blade of removable fingers, so it also folds the four sides of a box or a pan; with all the fingers in place it does everything the straight brake does. Most shops that make boxes, pans, enclosures and ducts buy the box and pan brake; the straight brakes are on the hand brake page."},
              {"q": "How deep a box can I fold?",
@@ -66,7 +66,7 @@ PAGES = {
                  {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}, {"href": "bead-rollers.html", "label": "Bead rollers"}],
     ),
     "sheet-metal-hand-brake": dict(
-        nav="Hand brakes & folders", hero="tm-hb2250", minis=["tm-pbb", "tm-w1000"],
+        nav="Straight brakes and folders", hero="tm-w2040", card="tm-tfs", minis=["tm-tsb2060", "tm-w1000"],
         title="Sheet Metal Hand Brakes for Sale in Canada — Straight Brakes, Foot-Clamp Folders & Bench Brakes | NovoTech",
         meta="Sheet metal hand brakes sold, installed and supported in Canada: straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines with one-piece blades to 119″ in 12 ga, and bench and offset brakes.",
         h1="Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
@@ -126,7 +126,7 @@ PAGES = {
                  {"href": "corner-notcher.html", "label": "Corner notchers"}, {"href": "motorized-plate-rollers.html", "label": "Slip rolls"}],
     ),
     "hydraulic-folding-machine": dict(
-        nav="Hydraulic & CNC folders", hero="tm-hwe", minis=["tm-tfm3100", "tm-efms2540l"],
+        nav="Hydraulic & CNC folders", hero="tm-hw", card="tm-hw", minis=["tm-tfm3100", "tm-efm"],
         title="Hydraulic, Electric & CNC Folding Machines for Sale in Canada — 10 ga × 10 ft, 14 ga × 12 ft | NovoTech",
         meta="Powered sheet metal folding machines sold, installed and supported in Canada: hydraulic folders 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″, electric folders 16 – 20 ga to 120″, and TFM / TFMS CNC folders 14 ga × 122 – 145″ with a programmable back gauge.",
         h1="Hydraulic, electric and CNC folding machines — 10 ga over 10 ft, 14 ga CNC over 12 ft",
@@ -139,11 +139,11 @@ PAGES = {
               "production panels, cassettes and enclosures. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with "
               "parts and support from Mississauga, ON, Canada.",
         points=["HW hydraulic folders: 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″; hydraulic clamping, foot pedal, segmented beam on the H models",
-                "EFM / EFMS electric folders 16 – 20 ga × 80 – 120″: motor-driven clamping and folding, no hydraulics",
-                "TFM / TFMS CNC folders 14 ga × 122 – 145″: CNC back gauge 1/2 – 48-3/8″, ±0.004″, 99-bend programs, segmented beam on the TFMS"],
+                "TFM / TFMS CNC folders 14 ga × 122 – 145″: CNC back gauge 1/2 – 48-3/8″, ±0.004″, 99-bend programs, segmented beam on the TFMS",
+                "EFM / EFMS electric folders 16 – 20 ga × 80 – 120″: motor-driven clamping and folding, no hydraulics"],
         groups=[("hw", "Hydraulic folding machines", "Powered clamping and folding: a 10 ft bend in 10 ga takes a foot pedal instead of two people; the H models fold boxes with a segmented beam.", False, ["tt-hw"]),
-                ("efm", "Electric folding machines", "Motor-driven clamping and folding for 16 – 20 ga sheet over 80 – 120″ — power without hydraulics.", False, ["tt-efm"]),
-                ("tfm", "CNC electric folding machines", "The TFM and TFMS run a program of up to 99 bends with a CNC back gauge — the production folder for panels, cassettes and enclosures.", False, ["tt-tfm"])],
+                ("tfm", "CNC electric folding machines", "The TFM and TFMS run a program of up to 99 bends with a CNC back gauge — the production folder for panels, cassettes and enclosures.", False, ["tt-tfm"]),
+                ("efm", "Electric folding machines", "Motor-driven clamping and folding for 16 – 20 ga sheet over 80 – 120″ — power without hydraulics.", False, ["tt-efm"])],
         faq=[{"q": "When should I buy a folding machine instead of a press brake?",
               "a": "When the work is long panels in thin and medium sheet — duct, enclosures, architectural cladding, flashing — up to 10 ga. A folder bends from one side with the sheet lying flat, so a long panel needs no support or second person, there are no punch and die to change, and painted sheet is not marked. A press brake is the better machine for short heavy parts, for thick plate, for many different bends in one part and for tight tolerances on small flanges."},
              {"q": "Hydraulic, electric or CNC?",
@@ -159,7 +159,7 @@ PAGES = {
                  {"href": "corner-notcher.html", "label": "Corner notchers"}, {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring machines"}],
     ),
     "roofing-siding-brake": dict(
-        nav="Roofing & siding brakes", hero="tm-alb", minis=["tm-bsm3150", "tm-alb-work"],
+        nav="Roofing & siding brakes", hero="tm-bsm3150", minis=["tm-alb", "tm-bsm2540"],
         title="Portable Roofing & Siding Brakes for Sale in Canada — Brakes with Slitter, 40″ to 12.5 ft | NovoTech",
         meta="Portable roofing and siding brakes sold, installed and supported in Canada: ALB aluminum brakes with roller slitter, 24 ga steel over 7.2 – 12.5 ft; BSM1550 / BSM3150 shear and brake machines, 22 ga over 61″ and 124″; BSM folding brakes with slitter, 22 – 20 ga over 40 – 100″; and a 24″ trim coil dispenser.",
         h1="Portable roofing and siding brakes — brakes with slitter, 40″ to 12.5 ft",
@@ -172,11 +172,11 @@ PAGES = {
               "fold-away stand, 20 – 22 ga over 40 to 100″. The CD-24 coil dispenser feeds 24″ trim coil to the brake. Each family below has "
               "its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from "
               "Mississauga, ON, Canada.",
-        points=["ALB brakes 7.2 – 12.5 ft: 24 ga steel, 0.032″ aluminum, 0.024″ copper; bend to 180°, 22.8″ throat",
+        points=["BSM1550 / BSM3150 shear and brake machines 22 ga × 61″ and 124″, slitter head on gas springs · BSM folding brakes with slitter 22 – 20 ga × 40 – 100″",
+                "ALB brakes 7.2 – 12.5 ft: 24 ga steel, 0.032″ aluminum, 0.024″ copper; bend to 180°, 22.8″ throat",
                 "Roller slitter on a track cuts the coil to width on the brake; silicone insert protects painted and copper coil",
-                "Aluminum frame on folding legs, 132 – 220 lb, carried on the truck; CD-24 trim coil dispenser",
-                "BSM1550 / BSM3150 shear and brake machines 22 ga × 61″ and 124″, slitter head on gas springs · BSM folding brakes with slitter 22 – 20 ga × 40 – 100″"],
-        groups=[("alb", "Portable roofing and siding brakes", "Light brakes that go to the job: aluminum roofing brakes, shear and brake machines and folding brakes with a slitter for flashing and trim.", True, ["tt-alb", "tt-bsm-sb", "tt-bsm"]),
+                "Aluminum frame on folding legs, 132 – 220 lb, carried on the truck; CD-24 trim coil dispenser"],
+        groups=[("alb", "Portable roofing and siding brakes", "Light brakes that go to the job: aluminum roofing brakes, shear and brake machines and folding brakes with a slitter for flashing and trim.", True, ["tt-bsm-sb", "tt-alb", "tt-bsm"]),
                 ("cd", "Trim coil dispenser", "The CD-24 holds a 24″ trim coil on two non-marring rollers and feeds it to the brake.", True, ["tt-cd24"])],
         faq=[{"q": "What do I need to bend roofing flashing on site?",
               "a": "A portable roofing brake: the ALB brakes have an aluminum frame on folding legs, set up in 10 – 15 minutes, take 24 ga steel and 0.032″ aluminum over 7.2 – 12.5 ft, bend to 180° and slit the coil with a roller knife. Add the CD-24 dispenser for trim coil. For the shop, a box and pan brake or a magnetic brake does the same work in heavier gauges."},
@@ -189,11 +189,11 @@ PAGES = {
              {"q": "Will it mark painted coil?",
               "a": "No — the bending beam has a silicone insert and the clamping surfaces are smooth aluminum, made for pre-painted steel and aluminum coil and for copper. Keep the protective film on the coil for a flawless finish."},
              VOLT_FAQ_GENERIC],
-        related=[{"href": "sheet-metal-hand-brake.html", "label": "Hand brakes and bench brakes"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
+        related=[{"href": "sheet-metal-hand-brake.html", "label": "Straight brakes and folders"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
                  {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}],
     ),
     "shear-brake-roll-3-in-1": dict(
-        nav="3-in-1 machines", hero="tm-3in1", minis=["tm-e3in1", "tm-3in1-1016"],
+        nav="3-in-1 machines", hero="tm-e3in1", card="tm-3in1-610", minis=["tm-3in1", "tm-3in1-1016"],
         title="3-in-1 Shear, Brake & Roll Machines for Sale in Canada — 8″ to 80″ | NovoTech",
         meta="3-in-1 sheet metal machines sold, installed and supported in Canada: combination shear, brake and slip roll on one frame from 8″ to 52″ in 20 – 16 ga, and the motorized E3-IN-1 for 1/8″ × 52″ and 80″.",
         h1="3-in-1 shear, brake and roll machines — 8″ to 80″",
@@ -203,11 +203,11 @@ PAGES = {
               "finger brake and three rolls on one bench frame; and the motorized E3-IN-1 that shears 1/8″, bends 14 ga and rolls 12 ga over 52 "
               "and 80″ with a 4.7 HP motor. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with parts and support "
               "from Mississauga, ON, Canada.",
-        points=["Hand-operated 3-in-1 machines 8 – 52″: shear, finger brake and slip roll, 20 – 16 ga mild steel on one bench frame",
-                "Motorized E3-IN-1, 52″ and 80″: shears 1/8″, bends 14 ga, rolls 12 ga, 4.7 HP",
+        points=["Motorized E3-IN-1, 52″ and 80″: shears 1/8″, bends 14 ga, rolls 12 ga, 4.7 HP",
+                "Hand-operated 3-in-1 machines 8 – 52″: shear, finger brake and slip roll, 20 – 16 ga mild steel on one bench frame",
                 "Minimum rolling diameters per model; removable fingers for boxes; back gauge for the shear"],
-        groups=[("3in1", "3-in-1 shear, brake and roll machines", "Three machines on one frame — the starter machine for the small sheet-metal and HVAC shop.", False, ["tt-3in1"]),
-                ("e3in1", "Motorized E3-IN-1 machines", "The powered combination machine: 1/8″ shearing, 14 ga bending and 12 ga rolling over 52 and 80″.", False, ["tt-e3in1"])],
+        groups=[("e3in1", "Motorized E3-IN-1 machines", "The powered combination machine: 1/8″ shearing, 14 ga bending and 12 ga rolling over 52 and 80″.", False, ["tt-e3in1"]),
+                ("3in1", "3-in-1 shear, brake and roll machines", "Three machines on one frame — the starter machine for the small sheet-metal and HVAC shop.", False, ["tt-3in1"])],
         faq=[{"q": "Is a 3-in-1 machine as good as three separate machines?",
               "a": "No — it is as good as the three machines a small shop would otherwise not have. The shear, brake and roll share one frame and one capacity rating, so each is lighter than a dedicated machine of the same width, and changing from one function to another takes a minute. For a shop that cuts, folds and rolls a few parts a day in 20 – 16 ga it is the right buy; for production, buy the dedicated shear, box and pan brake and slip roll."},
              {"q": "Which size do I need?",
@@ -221,6 +221,12 @@ PAGES = {
                  {"href": "motorized-plate-rollers.html", "label": "Slip rolls"}, {"href": "bead-rollers.html", "label": "Bead rollers"}],
     ),
 }
+
+# the kinds from the largest machines to the smallest — on the hub, in its tables and in the Products menu (the owner, Nov 7 2026:
+# "the big machine first, at the top, then down to the smaller one", on every page of the sheet metal brakes); on every page the
+# groups go from the largest machine to the smallest too, and each family's photos (tools/ttmc_more_data.py BIG_FIRST)
+PAGES = {k: PAGES[k] for k in ("hydraulic-folding-machine", "box-and-pan-brake", "sheet-metal-hand-brake", "magnetic-sheet-metal-brake",
+                              "roofing-siding-brake", "shear-brake-roll-3-in-1")}
 
 HUB_PAGE = dict(
     title="Sheet Metal Brakes & Folding Machines for Sale in Canada — Box & Pan, Hand, Magnetic, Hydraulic & CNC | NovoTech",
@@ -237,7 +243,7 @@ HUB_PAGE = dict(
     points=['<a href="box-and-pan-brake.html">Box and pan brakes</a> 12 – 157″ to 12 ga and 14 ga boxes 9″ deep; <a href="sheet-metal-hand-brake.html">hand brakes and foot-clamp folders</a> to 13 ft; <a href="sheet-metal-hand-brake.html#tt-bench-brake">bench brakes</a>',
             '<a href="magnetic-sheet-metal-brake.html">Magnetic brakes</a> 2 – 10 ft, 16 ga, boxes of any depth; <a href="hydraulic-folding-machine.html">hydraulic folders</a> 10 ga × 10 ft; <a href="hydraulic-folding-machine.html#tt-tfm">TFM / TFMS CNC folders</a> 14 ga × 12 ft',
             '<a href="roofing-siding-brake.html">Portable roofing and siding brakes</a> 40″ – 12.5 ft with slitter; <a href="shear-brake-roll-3-in-1.html">3-in-1 shear, brake and roll machines</a> 8 – 80″'],
-    hero="tm-eb2500", minis=["tm-hwe", "tm-bp1650"],
+    hero="tm-hw", minis=["tm-w2540a", "tm-tfs"],
     range_cols=RANGE["range_cols"],
     range_lead="Every brake and folding machine NovoTech sells — all {n} models in one table: bending length, capacity in mild steel and weight. Each row links to the model's full specification on its page.",
     range_caption="Sheet metal brakes and folding machines supplied by NovoTech — value line, built to our specification",
@@ -254,10 +260,10 @@ COMPARE = {
     "lead": "The six kinds NovoTech sells, side by side. The parts you make — boxes, long flashing, deep enclosures, production panels, site work — decide the kind; the pages list every model of each.",
     "cols": ["Kind", "What it folds", "Capacity and length", "Best for", "Page"],
     "rows": [
-        ["Box and pan brakes", "Boxes, pans and straight bends; removable fingers", "22 – 12 ga × 12 – 157″; 14 ga boxes 9″ deep", "HVAC, enclosures, sheet-metal shops", {"href": "box-and-pan-brake.html", "label": "Box and pan brakes"}],
-        ["Hand brakes and folders", "Long straight bends; foot-clamp folders; bench brakes", "22 – 12 ga × 12″ – 13 ft", "Flashing, trim, duct panels, job boxes", {"href": "sheet-metal-hand-brake.html", "label": "Hand brakes and folders"}],
-        ["Magnetic brakes", "Boxes of any depth, closed shapes, return flanges", "16 ga × 2 – 8 ft, 18 ga × 10 ft", "Enclosures, signage, prototypes, mobile shops", {"href": "magnetic-sheet-metal-brake.html", "label": "Magnetic brakes"}],
         ["Hydraulic, electric and CNC folders", "Heavy and long panels, powered; programs on the CNC", "10 ga × 10 ft, 3/16″ × 8 ft; CNC 14 ga × 12 ft", "Cladding, cassettes, enclosures, production duct", {"href": "hydraulic-folding-machine.html", "label": "Hydraulic and CNC folders"}],
+        ["Box and pan brakes", "Boxes, pans and straight bends; removable fingers", "22 – 12 ga × 12 – 157″; 14 ga boxes 9″ deep", "HVAC, enclosures, sheet-metal shops", {"href": "box-and-pan-brake.html", "label": "Box and pan brakes"}],
+        ["Straight brakes and folders", "Long straight bends; foot-clamp folders; bench brakes", "22 – 12 ga × 12″ – 13 ft", "Flashing, trim, duct panels, job boxes", {"href": "sheet-metal-hand-brake.html", "label": "Straight brakes and folders"}],
+        ["Magnetic brakes", "Boxes of any depth, closed shapes, return flanges", "16 ga × 2 – 8 ft, 18 ga × 10 ft", "Enclosures, signage, prototypes, mobile shops", {"href": "magnetic-sheet-metal-brake.html", "label": "Magnetic brakes"}],
         ["Roofing and siding brakes", "Flashing, drip edge, fascia from coil, on site", "24 ga steel, 0.032″ aluminum × 7 – 12.5 ft", "Roofers, siding and eavestrough contractors", {"href": "roofing-siding-brake.html", "label": "Roofing and siding brakes"}],
         ["3-in-1 machines", "Shear, fold and roll on one frame", "20 – 16 ga × 8 – 52″; motorized 1/8″ × 52 – 80″", "Small shops, maintenance, schools", {"href": "shear-brake-roll-3-in-1.html", "label": "3-in-1 machines"}],
     ],
@@ -265,7 +271,7 @@ COMPARE = {
 
 
 def hub():
-    return {"slug": HUB, "label": "All sheet metal brakes", "image": "tm-eb2500",
+    return {"slug": HUB, "label": "All sheet metal brakes", "image": "tm-hw",
             "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared and the buying guide."}
 
 
@@ -304,7 +310,7 @@ def build():
         write_json(path, d)
         all_fams += members
         blurb = p["meta"].split(": ", 1)[-1].split(" Every model")[0].strip()
-        subpages.append({"slug": slug, "title": p["h1"], "image": p["hero"], "blurb": blurb[0].upper() + blurb[1:], "families": [f["id"] for f in members], "nav_label": p["nav"],
+        subpages.append({"slug": slug, "title": p["h1"], "image": p.get("card") or p["hero"], "blurb": blurb[0].upper() + blurb[1:], "families": [f["id"] for f in members], "nav_label": p["nav"],
                          "cards_title": p["h1"].split(" — ")[0] + " — every family"})
         print(f"{slug}: {len(members)} families, {n} models")
     n_all = sum(len(f["specs"]["models"]) for f in all_fams)
@@ -320,7 +326,7 @@ def build():
         "faq": TP.PAGES[D.P_BRAKE]["faq"], "faq_title": h["faq_title"],
         "catalogue_pdf": None, "origin_feature": TP.ORIGIN, "section_label": SECTION,
         "related_blurb": hub()["blurb"], "related_pages": h["related_pages"], "related_title": h["related_title"],
-        "hub_compact": True, "compare": COMPARE, "subpage_link": "all models, specifications and photos", "family_noun": "machine",
+        "hub_compact": True, "compare": COMPARE, "range_big_first": True, "subpage_link": "all models, specifications and photos", "family_noun": "machine",
         **NO_VIDEO,
     }
     write_json(os.path.join(ROOT, "content", "pages", f"{HUB}.json"), page)

@@ -26,16 +26,18 @@ TFM_PDF = BR + "TFM3100x2E TFMS3100X2E.pdf"
 DST = P.DST
 
 
-def S(src, box=None, alt="", white=(), logo=(), clean=False, detail=False, xref=None, logo_out=(), lines=(), poly=()):
+def S(src, box=None, alt="", white=(), logo=(), clean=False, detail=False, xref=None, logo_out=(), lines=(), poly=(), red_out=()):
     """src: an image file, or a PDF with xref; box: crop (x0, y0, x1, y1) in source pixels, None = whole image;
     white / logo: boxes (x0, y0, x1, y1) in source pixels painted white / filled from the surface around the badge;
     logo_out: badge boxes in the pixels of the finished (cropped and trimmed) photo, padded by PAD;
     lines: thin frame or dash lines of the catalogue layout on the finished photo, ("h", y0, y1) or ("v", x0, x1) —
     erased wherever there is white on both sides of the line (not where the machine crosses it);
     poly: polygons [(x, y), …] in source pixels painted white — what stands under or around the machine and is not part of it
-    (the YQ-450's shipping pallet, Nov 7 2026), so the cut-out leaves it out"""
+    (the YQ-450's shipping pallet, Nov 7 2026), so the cut-out leaves it out;
+    red_out: boxes in the pixels of the finished photo where the red of a catalogue leader line is inpainted from around it — also
+    where the line crosses the machine (the BSM3150's leg, Nov 7 2026)"""
     return dict(src=src, xref=xref, box=box, alt=alt, white=list(white), logo=list(logo), clean=clean, detail=detail,
-                logo_out=list(logo_out), lines=list(lines), poly=[list(q) for q in poly])
+                logo_out=list(logo_out), lines=list(lines), poly=[list(q) for q in poly], red_out=list(red_out))
 
 
 def erase_lines(im, lines):
@@ -67,7 +69,7 @@ PHOTOS = {
                     clean=True),
     "tm-hw2540h-panel": S(BEND + "HW2.0x2540H.jpg", (710, 1868, 1251, 2224), "NC control panel: open height, bending angle and dwell time", detail=True),
     "tm-bsm3150": S(BEND + "BSM3150.jpg", (150, 380, 2330, 1095), "BSM3150 shear and brake machine on its mobile stand", clean=True,
-                    white=[(370, 770, 732, 800), (370, 770, 412, 1100)]),
+                    white=[(370, 770, 732, 800), (370, 770, 412, 1100)], red_out=[(540, 398, 630, 412)]),
     "tm-bsm3150-head": S(BEND + "BSM3150.jpg", (767, 1160, 1522, 1703), "Slitter head of the shear and brake machine", detail=True),
     "tm-bsm3150-spring": S(BEND + "BSM3150.jpg", (122, 1170, 654, 2236), "Gas spring that lifts the bending beam of the shear and brake machine", detail=True),
     "tm-bsm3150-caster": S(BEND + "BSM3150.jpg", (1637, 1170, 2370, 1692), "Caster mounting of the shear and brake machine's mobile stand", detail=True),
@@ -299,6 +301,15 @@ def process(key):
     im = P.trim(im)
     if p["lines"]:
         im = P.trim(erase_lines(im, p["lines"]))
+    if p["red_out"]:                                    # a red leader line of the sheet, also where it crosses the machine
+        import cv2
+        a = np.asarray(im).copy()
+        mask = np.zeros(a.shape[:2], np.uint8)
+        for x0, y0, x1, y1 in p["red_out"]:
+            sub = a[y0:y1, x0:x1].astype(int)
+            mask[y0:y1, x0:x1] = ((sub[..., 0] - sub[..., 1] > 40) & (sub[..., 0] - sub[..., 2] > 40)).astype(np.uint8) * 255
+        mask = cv2.dilate(mask, np.ones((3, 3), np.uint8))
+        im = Image.fromarray(cv2.inpaint(a[:, :, ::-1].copy(), mask, 3, cv2.INPAINT_TELEA)[:, :, ::-1])
     if p["logo_out"]:                                   # the maker's badge on the machine, located on the finished photo
         im = paint(im, [(max(0, x0 - PAD), max(0, y0 - PAD), min(im.width, x1 + PAD), min(im.height, y1 + PAD))
                         for x0, y0, x1, y1 in p["logo_out"]], "logo")

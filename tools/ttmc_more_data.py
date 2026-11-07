@@ -650,3 +650,26 @@ _ws25 = next(f for f in WOOD if f["id"] == "tt-ws25")
 WOOD.remove(_ws25)
 GRIND.insert(next(i for i, f in enumerate(GRIND) if f["id"] == "tt-sp"), _ws25)
 NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + SHAPE + WOOD
+
+# the sheet metal brake pages show the big machines first (the owner, Nov 7 2026): each brake family's photos from the largest model
+# pictured to the smallest (by the weight of the model in the photo), close-ups after the machines
+BIG_FIRST = {
+    "tt-pb": ["tm-w2540a", "tm-w1220pb", "tm-bp1648h", "tm-bp1650", "tm-pb1220z", "tm-pb1220", "tm-w305a"],
+    "tt-pb-heavy": ["tm-w2540h2", "tm-wu", "tm-w2540h", "tm-w1830p", "tm-w1500h", "tm-w2540h2-fingers", "tm-w2540h2-gauge"],
+    "tt-folder-bp": ["tm-tsbs", "tm-mfs", "tm-pbb1020a", "tm-pbb3sh"],
+    "tt-hb": ["tm-w2040", "tm-w1220n", "tm-w1050f", "tm-w1500", "tm-hb1650", "tm-w1050", "tm-hb2250", "tm-w1060", "tm-hb2248", "tm-w1220",
+              "tm-w610"],
+    "tt-folder": ["tm-tsb2060", "tm-tsb2020", "tm-mf3020", "tm-tfs", "tm-wf", "tm-pbb", "tm-pbb1020", "tm-pbb1020-1a", "tm-brake36"],
+    "tt-bench-brake": ["tm-w1000", "tm-w610b", "tm-wb14", "tm-w460", "tm-zwj"],
+    "tt-hw": ["tm-hwe", "tm-hw2440", "tm-hw", "tm-hw-box", "tm-hw-angle"],
+    "tt-efm": ["tm-efm", "tm-efms2540l", "tm-efms", "tm-efms2540l-angle"],
+    "tt-bsm": ["tm-bsm2540", "tm-bsm1220", "tm-bsm1016"],
+    "tt-3in1": ["tm-3in1", "tm-3in1-1016", "tm-3in1a", "tm-3in1-610", "tm-3in1-305", "tm-minibrake"],
+}
+for _f in NEW_FAMILIES:
+    if _f["id"] in BIG_FIRST:
+        if sorted(BIG_FIRST[_f["id"]]) != sorted(_f["images"]):
+            raise SystemExit(f"BIG_FIRST {_f['id']}: not the family's photos")
+        _f["images"] = list(BIG_FIRST[_f["id"]])
+    if _f["id"] == "tt-hw":
+        _f["thumb_image"] = "tm-hw"      # the HW1830 photo stands for the HW folders on cards and in the menu (the owner, Nov 7 2026)

@@ -4233,7 +4233,8 @@
   "alt": "ISITAN SFC 350-VX semi-automatic circular cold saw, 13-3/4″ blade, Ø4-1/2″ round",
   "section": "forming",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "cut_size": 1024
  },
  "is-sfc-315-vp": {
   "src": "tools/src-images/isitan/is-sfc-315-vp.png",
@@ -34920,6 +34921,13 @@
  },
  "video-5XFJvC0i3sQ": {
   "src": "/home/claude/gms-site/yt/5XFJvC0i3sQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-pJR-lUCF3gE": {
+  "src": "/home/claude/gms-site/yt/pJR-lUCF3gE.jpg",
   "alt": "Video thumbnail",
   "trim": false,
   "quality": 72,

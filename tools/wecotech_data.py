@@ -285,7 +285,7 @@ FAMILIES = [
         ["Slots and holes in tube ends from Ø3/4″ (20 mm), wall to 5/32″ (4 mm)", "10 US tons (9 t) · 1/2″ (13 mm) punch stroke · ~0.3 s per punch",
          "Punch and die interface (tooling to the part); adjustable punching length by stop plate", "Compact housing with the electrics and hydraulics built in; foot switch"],
         ["Special electrical connection; fan in the control cabinet", VOLT_OPT],
-        ["wt-tubepunch", "wt-tubepunch-unit", "wt-tubepunch-part"], [TUBEPUNCH], videos=vids(("PB9W3SniXDk", "IO forming and 8-fold punching combined"))),
+        ["wt-tubepunch", "wt-tubepunch-unit", "wt-tubepunch-part"], [TUBEPUNCH], videos=vids(("PB9W3SniXDk", "IO forming and 8-fold punching combined"), ("pJR-lUCF3gE", "Tubepunch — punching a tube end"))),
     # Universal line
     fam("wt-tubex-u", "wt-universal", "Tubex-U universal production expander, from Ø3/4″", "Tubex-U", "Tubex-U · from Ø20 mm",
         "The all-purpose production expander: a modular HW-Flex housing with the hydraulic unit bolted on, 26 US tons on a 5.9″ "

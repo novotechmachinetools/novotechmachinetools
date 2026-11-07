@@ -77,16 +77,16 @@
  "section_label": "Sheet metal brakes",
  "related_pages": [
   {
+   "href": "hydraulic-folding-machine.html",
+   "label": "Hydraulic, electric and CNC folding machines"
+  },
+  {
    "href": "box-and-pan-brake.html",
    "label": "Box and pan brakes"
   },
   {
    "href": "sheet-metal-hand-brake.html",
    "label": "Sheet metal hand brakes"
-  },
-  {
-   "href": "hydraulic-folding-machine.html",
-   "label": "Hydraulic, electric and CNC folding machines"
   },
   {
    "href": "roofing-siding-brake.html",
@@ -123,10 +123,15 @@
   "hub": {
    "href": "folder-sheet-metal-brake.html",
    "label": "All sheet metal brakes",
-   "image": "tm-eb2500",
+   "image": "tm-hw",
    "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared and the buying guide."
   },
   "pages": [
+   {
+    "href": "hydraulic-folding-machine.html",
+    "label": "Hydraulic & CNC folders",
+    "current": false
+   },
    {
     "href": "box-and-pan-brake.html",
     "label": "Box and pan brakes",
@@ -134,18 +139,13 @@
    },
    {
     "href": "sheet-metal-hand-brake.html",
-    "label": "Hand brakes & folders",
+    "label": "Straight brakes and folders",
     "current": false
    },
    {
     "href": "magnetic-sheet-metal-brake.html",
     "label": "Magnetic brakes",
     "current": true
-   },
-   {
-    "href": "hydraulic-folding-machine.html",
-    "label": "Hydraulic & CNC folders",
-    "current": false
    },
    {
     "href": "roofing-siding-brake.html",

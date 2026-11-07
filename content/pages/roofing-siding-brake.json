@@ -8,15 +8,15 @@
  "h1": "Portable roofing and siding brakes — brakes with slitter, 40″ to 12.5 ft",
  "intro": "A portable roofing and siding brake folds flashing, trim, drip edge and fascia on site: an aluminum frame on folding legs, set up in 10 to 15 minutes, that clamps 24 ga steel or 0.032″ aluminum coil, bends it to 180° and slits the coil with a roller knife. NovoTech sells three kinds in Canada, all on this page: the ALB aluminum brakes, six models from 7.2 to 12.5 ft with a silicone insert in the bending beam for pre-painted coil and copper, a slitter on a track and a carrying stand; the BSM1550 and BSM3150 shear and brake machines that bend 22 ga over 61″ and 124″ and slit it over 59″ and 122″, with gas springs that lift the bending beam and carry the slitter head, on a mobile stand; and the BSM1016, BSM1220 and BSM2540 folding brakes with a slitter on a fold-away stand, 20 – 22 ga over 40 to 100″. The CD-24 coil dispenser feeds 24″ trim coil to the brake. Each family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
+  "BSM1550 / BSM3150 shear and brake machines 22 ga × 61″ and 124″, slitter head on gas springs · BSM folding brakes with slitter 22 – 20 ga × 40 – 100″",
   "ALB brakes 7.2 – 12.5 ft: 24 ga steel, 0.032″ aluminum, 0.024″ copper; bend to 180°, 22.8″ throat",
   "Roller slitter on a track cuts the coil to width on the brake; silicone insert protects painted and copper coil",
-  "Aluminum frame on folding legs, 132 – 220 lb, carried on the truck; CD-24 trim coil dispenser",
-  "BSM1550 / BSM3150 shear and brake machines 22 ga × 61″ and 124″, slitter head on gas springs · BSM folding brakes with slitter 22 – 20 ga × 40 – 100″"
+  "Aluminum frame on folding legs, 132 – 220 lb, carried on the truck; CD-24 trim coil dispenser"
  ],
- "hero_image": "tm-alb",
+ "hero_image": "tm-bsm3150",
  "hero_image_secondary": [
-  "tm-bsm3150",
-  "tm-alb-work"
+  "tm-alb",
+  "tm-bsm2540"
  ],
  "breadcrumb": [
   {
@@ -43,8 +43,8 @@
    "lead": "",
    "brand": "novotech",
    "families": [
-    "tt-alb",
     "tt-bsm-sb",
+    "tt-alb",
     "tt-bsm"
    ],
    "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support in Canada"
@@ -95,6 +95,10 @@
  "section_label": "Sheet metal brakes",
  "related_pages": [
   {
+   "href": "hydraulic-folding-machine.html",
+   "label": "Hydraulic, electric and CNC folding machines"
+  },
+  {
    "href": "box-and-pan-brake.html",
    "label": "Box and pan brakes"
   },
@@ -107,10 +111,6 @@
    "label": "Magnetic sheet metal brakes"
   },
   {
-   "href": "hydraulic-folding-machine.html",
-   "label": "Hydraulic, electric and CNC folding machines"
-  },
-  {
    "href": "shear-brake-roll-3-in-1.html",
    "label": "3-in-1 shear, brake and roll machines"
   },
@@ -120,7 +120,7 @@
   },
   {
    "href": "sheet-metal-hand-brake.html",
-   "label": "Hand brakes and bench brakes"
+   "label": "Straight brakes and folders"
   },
   {
    "href": "bead-rollers.html",
@@ -137,10 +137,15 @@
   "hub": {
    "href": "folder-sheet-metal-brake.html",
    "label": "All sheet metal brakes",
-   "image": "tm-eb2500",
+   "image": "tm-hw",
    "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared and the buying guide."
   },
   "pages": [
+   {
+    "href": "hydraulic-folding-machine.html",
+    "label": "Hydraulic & CNC folders",
+    "current": false
+   },
    {
     "href": "box-and-pan-brake.html",
     "label": "Box and pan brakes",
@@ -148,17 +153,12 @@
    },
    {
     "href": "sheet-metal-hand-brake.html",
-    "label": "Hand brakes & folders",
+    "label": "Straight brakes and folders",
     "current": false
    },
    {
     "href": "magnetic-sheet-metal-brake.html",
     "label": "Magnetic brakes",
-    "current": false
-   },
-   {
-    "href": "hydraulic-folding-machine.html",
-    "label": "Hydraulic & CNC folders",
     "current": false
    },
    {

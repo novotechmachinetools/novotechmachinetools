@@ -18,7 +18,9 @@ IMAGES = {
     "is-sff-90-1": ("img/ISITAN-SFF-90.jpg", "ISITAN SFF 90-1 single-station hydraulic pipe-end former, expand and reduce to Ø3-1/2″"),
     "is-sff-60-1": ("img/ISITAN-SFF-60-2.jpg", "ISITAN SFF 60-1 single-station hydraulic pipe-end former, expand and reduce to Ø2-3/8″"),
     "is-sff-tooling": ("cut/p51-386.png", "SFF end former — easy tool-changing system with the end-forming tooling set"),
-    "is-sfc-350-vx": ("img/VX-350.jpg", "ISITAN SFC 350-VX semi-automatic circular cold saw, 13-3/4″ blade, Ø4-1/2″ round"),
+    # isitan.com has no larger photo than VX-350.jpg (1366 × 840) and the 2025 catalogue only 328 × 527: Real-ESRGAN 2x of the
+    # website photo (tools/esrgan.py), so the hero and the gallery stay sharp on high-density screens (the owner, Nov 7 2026)
+    "is-sfc-350-vx": ("img/VX-350-x2.jpg", "ISITAN SFC 350-VX semi-automatic circular cold saw, 13-3/4″ blade, Ø4-1/2″ round", {"cut_size": 1024}),
     "is-sfc-315-vp": ("cut/p52-392.png", "ISITAN SFC 315-VP circular cold saw with pneumatic vise, 12-1/2″ blade"),
     "is-sfc-275-v": ("cut/p52-394.png", "ISITAN SFC 275-V manual circular cold saw, 10-3/4″ blade, Ø3-3/8″ round"),
 }

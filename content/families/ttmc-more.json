@@ -347,8 +347,8 @@
    "optional": [],
    "images": [
     "tm-hwe",
-    "tm-hw",
     "tm-hw2440",
+    "tm-hw",
     "tm-hw-box",
     "tm-hw-angle"
    ],
@@ -704,6 +704,7 @@
    },
    "manual": false,
    "no_pdf": true,
+   "thumb_image": "tm-hw",
    "group": "hyd"
   },
   "tt-hw-h": {
@@ -1119,9 +1120,9 @@
    ],
    "optional": [],
    "images": [
+    "tm-efm",
     "tm-efms2540l",
     "tm-efms",
-    "tm-efm",
     "tm-efms2540l-angle"
    ],
    "videos": [],
@@ -1423,12 +1424,12 @@
    ],
    "optional": [],
    "images": [
-    "tm-bp1650",
-    "tm-pb1220",
     "tm-w2540a",
-    "tm-pb1220z",
-    "tm-bp1648h",
     "tm-w1220pb",
+    "tm-bp1648h",
+    "tm-bp1650",
+    "tm-pb1220z",
+    "tm-pb1220",
     "tm-w305a"
    ],
    "videos": [],
@@ -1961,12 +1962,12 @@
    "optional": [],
    "images": [
     "tm-w2540h2",
-    "tm-w2540h",
-    "tm-w2540h2-fingers",
-    "tm-w2540h2-gauge",
     "tm-wu",
+    "tm-w2540h",
     "tm-w1830p",
-    "tm-w1500h"
+    "tm-w1500h",
+    "tm-w2540h2-fingers",
+    "tm-w2540h2-gauge"
    ],
    "videos": [],
    "headline": "18 – 14 ga × 52 – 100″",
@@ -2228,17 +2229,17 @@
    ],
    "optional": [],
    "images": [
-    "tm-hb2250",
     "tm-w2040",
-    "tm-w1500",
-    "tm-hb2248",
-    "tm-w1050",
-    "tm-w1220",
-    "tm-hb1650",
-    "tm-w610",
     "tm-w1220n",
+    "tm-w1050f",
+    "tm-w1500",
+    "tm-hb1650",
+    "tm-w1050",
+    "tm-hb2250",
     "tm-w1060",
-    "tm-w1050f"
+    "tm-hb2248",
+    "tm-w1220",
+    "tm-w610"
    ],
    "videos": [],
    "headline": "22 ga – 12 ga × 12″ – 13 ft",
@@ -2817,14 +2818,14 @@
    ],
    "optional": [],
    "images": [
-    "tm-pbb",
-    "tm-pbb1020",
-    "tm-wf",
     "tm-tsb2060",
-    "tm-tfs",
-    "tm-pbb1020-1a",
     "tm-tsb2020",
     "tm-mf3020",
+    "tm-tfs",
+    "tm-wf",
+    "tm-pbb",
+    "tm-pbb1020",
+    "tm-pbb1020-1a",
     "tm-brake36"
    ],
    "videos": [],
@@ -3298,10 +3299,10 @@
    ],
    "optional": [],
    "images": [
-    "tm-pbb3sh",
-    "tm-pbb1020a",
     "tm-tsbs",
-    "tm-mfs"
+    "tm-mfs",
+    "tm-pbb1020a",
+    "tm-pbb3sh"
    ],
    "videos": [],
    "headline": "20 – 14 ga × 40 – 119″",
@@ -4035,9 +4036,9 @@
    ],
    "optional": [],
    "images": [
-    "tm-bsm1016",
+    "tm-bsm2540",
     "tm-bsm1220",
-    "tm-bsm2540"
+    "tm-bsm1016"
    ],
    "videos": [],
    "headline": "22 – 20 ga × 40 – 100″",
@@ -4173,9 +4174,9 @@
    "optional": [],
    "images": [
     "tm-w1000",
-    "tm-w460",
     "tm-w610b",
     "tm-wb14",
+    "tm-w460",
     "tm-zwj"
    ],
    "videos": [],
@@ -4365,8 +4366,8 @@
    "images": [
     "tm-3in1",
     "tm-3in1-1016",
-    "tm-3in1-610",
     "tm-3in1a",
+    "tm-3in1-610",
     "tm-3in1-305",
     "tm-minibrake"
    ],

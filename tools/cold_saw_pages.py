@@ -180,6 +180,8 @@ def build():
         pdfs = [PDF] if slug == P_COLD else [CSM.pdf("csm-ct325"), PDF_BK]
         extra = {"nav_label": next(nav for s, _, _, _, nav in SUBPAGES if s == slug), "catalogue_pdf": None, "catalogue_pdfs": pdfs}
         if slug == P_COLD:
+            extra["hero_width"] = 380        # the VX 350 smaller (the owner, Nov 7 2026); isitan.com has no larger photo of it
+        if slug == P_COLD:
             extra.update({"hero_brand_line": "ISITAN circular cold saws are made in Turkey by ISITAN Makine; NovoTech's value-line saws are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
                           "origin_feature": {"title": "Made in Turkey, value line from China", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959; NovoTech's value line is built in China to our specification — CSA-approved panels, a 1-year warranty and parts and support in Canada."}})
         else:
@@ -191,7 +193,7 @@ def build():
     in_range = [f for f in fams if f["id"] not in ACCESSORIES]
     write_hub(HUB, {**HUB_PAGE, "artifact_title": "Circular Cold Saws", "nav_label": "All cold saws", "related_blurb": hub()["blurb"]},
               in_range, SET, SECTION, [(s, t, im, b, nav) for s, t, im, b, nav in SUBPAGES],
-              extra={"catalogue_pdf": None, "catalogue_pdfs": [PDF, CSM.pdf("csm-ct325"), PDF_BK], "range_pick": RANGE_PICK,
+              extra={"catalogue_pdf": None, "catalogue_pdfs": [PDF, CSM.pdf("csm-ct325"), PDF_BK], "range_pick": RANGE_PICK, "hero_width": 380,
                      "hero_brand_line": "ISITAN and Bekamak saws are made in Turkey, the CT325 in Taiwan by CSM and NovoTech's value-line saws in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
                      "origin_feature": {"title": "Two kinds, one supplier", "text": "Manual, semi-automatic and automatic cold saws from Turkey, Taiwan and NovoTech's value line — installed, trained and supported by the same NovoTech technicians in Canada."},
                      **NO_VIDEO, "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"],

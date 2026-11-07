@@ -1613,6 +1613,22 @@ def render_page(page):
                 ln["range_rows"] = range_table(ln["subpages"])
                 ln["brand_info"] = site["brands"].get(ln["brand"], {})
         page["range_rows"] = range_table([sp for sp in page["subpages"] if sp.get("in_range", True)], page.get("range_pick"))
+        if page.get("range_big_first"):
+            # the sheet metal brake hub (the owner, Nov 7 2026: the big machine first): in each family the heaviest model first
+            def row_lb(r):
+                for c in reversed(r.get("cols") or []):
+                    m = re.search(r"([\d,]+) lb", str(c))
+                    if m:
+                        return int(m.group(1).replace(",", ""))
+                return -1
+            rows, block = [], []
+            for r in page["range_rows"] + [None]:
+                if block and (r is None or r["href"] != block[0]["href"]):
+                    rows += sorted(block, key=row_lb, reverse=True)
+                    block = []
+                if r is not None:
+                    block.append(r)
+            page["range_rows"] = rows
         if page.get("range_groups"):   # e.g. rebar hub: benders and cutters in separate tables
             for rg in page["range_groups"]:
                 rg["rows"] = [row for row in page["range_rows"] if row.get("kind") == rg["kind"]]

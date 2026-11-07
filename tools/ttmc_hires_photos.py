@@ -251,7 +251,7 @@ PHOTOS.update({
     "tm-bp1650": dict(dir=BRAKE, src="BP-1650.jpg", alt="BP-1650 pan and box brake, 16 ga × 50″"),
     "tm-bsm1016": dict(dir=BRAKE, src="BSM1016.png", alt="BSM1016 folding brake with slitter on folding stand"),
     "tm-bsm2540": dict(dir=BRAKE, src="BSM2540A.png", alt="BSM2540 folding brake with slitter, 100″"),
-    "tm-bsm3150": dict(dir=BRAKE, src="BSM3150X0.8.png", alt="BSM3150 shear and brake machine on its mobile stand"),
+    # tm-bsm3150: the grey machine of the TTMC sheet again, not the blue BSM3150X0.8 photo (the owner, Nov 7 2026) — tools/ttmc_new_photos.py
     "tm-eb1250": dict(dir=BRAKE, src="EB1000 RB1250.png", alt="EB1250 magnetic sheet metal brake, 4 ft × 16 ga, with foot switch"),
     "tm-eb2500": dict(dir=BRAKE, src="EB2000 EB2500 EB3200.jpg", alt="EB2500 magnetic sheet metal brake, 8 ft × 16 ga", boxes=[(837, 766, 878, 802)]),
     "tm-efm": dict(dir=BRAKE, src="EFM2020 EFM2520 EFM3020.jpg", alt="EFM 3020 electric folding machine, 10 ft"),

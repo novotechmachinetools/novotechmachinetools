@@ -8,13 +8,13 @@
  "h1": "3-in-1 shear, brake and roll machines — 8″ to 80″",
  "intro": "A 3-in-1 machine puts a shear, a brake and a slip roll on one frame: the starter machine for the small sheet-metal, HVAC and hobby shop, and the compact machine for a maintenance department that cuts, folds and rolls a few parts a day. NovoTech sells two kinds in Canada, both on this page: hand-operated 3-in-1 machines from 8″ to 52″, 20 to 16 ga, with a guillotine shear, a finger brake and three rolls on one bench frame; and the motorized E3-IN-1 that shears 1/8″, bends 14 ga and rolls 12 ga over 52 and 80″ with a 4.7 HP motor. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
-  "Hand-operated 3-in-1 machines 8 – 52″: shear, finger brake and slip roll, 20 – 16 ga mild steel on one bench frame",
   "Motorized E3-IN-1, 52″ and 80″: shears 1/8″, bends 14 ga, rolls 12 ga, 4.7 HP",
+  "Hand-operated 3-in-1 machines 8 – 52″: shear, finger brake and slip roll, 20 – 16 ga mild steel on one bench frame",
   "Minimum rolling diameters per model; removable fingers for boxes; back gauge for the shear"
  ],
- "hero_image": "tm-3in1",
+ "hero_image": "tm-e3in1",
  "hero_image_secondary": [
-  "tm-e3in1",
+  "tm-3in1",
   "tm-3in1-1016"
  ],
  "breadcrumb": [
@@ -37,21 +37,21 @@
  "hero_brand_line": "NovoTech value line — NovoTech's own brand, manufactured in China to high North American quality standards and sold with a 1-year warranty, a CSA-approved panel on every 3-phase machine and parts and support in Canada.",
  "groups": [
   {
-   "id": "3in1-group",
-   "title": "3-in-1 shear, brake and roll machines",
-   "lead": "",
-   "brand": "novotech",
-   "families": [
-    "tt-3in1"
-   ]
-  },
-  {
    "id": "e3in1-group",
    "title": "Motorized E3-IN-1 machines",
    "lead": "",
    "brand": "novotech",
    "families": [
     "tt-e3in1"
+   ]
+  },
+  {
+   "id": "3in1-group",
+   "title": "3-in-1 shear, brake and roll machines",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "tt-3in1"
    ]
   }
  ],
@@ -86,6 +86,10 @@
  "section_label": "Sheet metal brakes",
  "related_pages": [
   {
+   "href": "hydraulic-folding-machine.html",
+   "label": "Hydraulic, electric and CNC folding machines"
+  },
+  {
    "href": "box-and-pan-brake.html",
    "label": "Box and pan brakes"
   },
@@ -96,10 +100,6 @@
   {
    "href": "magnetic-sheet-metal-brake.html",
    "label": "Magnetic sheet metal brakes"
-  },
-  {
-   "href": "hydraulic-folding-machine.html",
-   "label": "Hydraulic, electric and CNC folding machines"
   },
   {
    "href": "roofing-siding-brake.html",
@@ -132,10 +132,15 @@
   "hub": {
    "href": "folder-sheet-metal-brake.html",
    "label": "All sheet metal brakes",
-   "image": "tm-eb2500",
+   "image": "tm-hw",
    "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared and the buying guide."
   },
   "pages": [
+   {
+    "href": "hydraulic-folding-machine.html",
+    "label": "Hydraulic & CNC folders",
+    "current": false
+   },
    {
     "href": "box-and-pan-brake.html",
     "label": "Box and pan brakes",
@@ -143,17 +148,12 @@
    },
    {
     "href": "sheet-metal-hand-brake.html",
-    "label": "Hand brakes & folders",
+    "label": "Straight brakes and folders",
     "current": false
    },
    {
     "href": "magnetic-sheet-metal-brake.html",
     "label": "Magnetic brakes",
-    "current": false
-   },
-   {
-    "href": "hydraulic-folding-machine.html",
-    "label": "Hydraulic & CNC folders",
     "current": false
    },
    {

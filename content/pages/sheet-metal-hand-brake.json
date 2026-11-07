@@ -12,9 +12,9 @@
   "Foot-clamp folding machines 36 – 119″, 22 to 12 ga: pedal clamping, both hands on the sheet, one-piece blades",
   "Bench brakes 14 – 39″ and offset brakes, 20 – 18 ga"
  ],
- "hero_image": "tm-hb2250",
+ "hero_image": "tm-w2040",
  "hero_image_secondary": [
-  "tm-pbb",
+  "tm-tsb2060",
   "tm-w1000"
  ],
  "breadcrumb": [
@@ -102,16 +102,16 @@
  "section_label": "Sheet metal brakes",
  "related_pages": [
   {
+   "href": "hydraulic-folding-machine.html",
+   "label": "Hydraulic, electric and CNC folding machines"
+  },
+  {
    "href": "box-and-pan-brake.html",
    "label": "Box and pan brakes"
   },
   {
    "href": "magnetic-sheet-metal-brake.html",
    "label": "Magnetic sheet metal brakes"
-  },
-  {
-   "href": "hydraulic-folding-machine.html",
-   "label": "Hydraulic, electric and CNC folding machines"
   },
   {
    "href": "roofing-siding-brake.html",
@@ -148,10 +148,15 @@
   "hub": {
    "href": "folder-sheet-metal-brake.html",
    "label": "All sheet metal brakes",
-   "image": "tm-eb2500",
+   "image": "tm-hw",
    "blurb": "Every sheet metal brake and folding machine NovoTech sells, by kind — the six kinds compared and the buying guide."
   },
   "pages": [
+   {
+    "href": "hydraulic-folding-machine.html",
+    "label": "Hydraulic & CNC folders",
+    "current": false
+   },
    {
     "href": "box-and-pan-brake.html",
     "label": "Box and pan brakes",
@@ -159,17 +164,12 @@
    },
    {
     "href": "sheet-metal-hand-brake.html",
-    "label": "Hand brakes & folders",
+    "label": "Straight brakes and folders",
     "current": true
    },
    {
     "href": "magnetic-sheet-metal-brake.html",
     "label": "Magnetic brakes",
-    "current": false
-   },
-   {
-    "href": "hydraulic-folding-machine.html",
-    "label": "Hydraulic & CNC folders",
     "current": false
    },
    {
@@ -187,5 +187,5 @@
  "intro_video": null,
  "intro_video_heading": null,
  "intro_video_text": null,
- "nav_label": "Hand brakes & folders"
+ "nav_label": "Straight brakes and folders"
 }

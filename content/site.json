@@ -271,20 +271,23 @@
      "href": "folder-sheet-metal-brake.html",
      "children": [
       {
-       "label": "Box and pan brakes",
-       "href": "box-and-pan-brake.html"
+       "label": "Hydraulic & CNC folders",
+       "href": "hydraulic-folding-machine.html",
+       "image": "tm-hw"
       },
       {
-       "label": "Hand brakes & folders",
-       "href": "sheet-metal-hand-brake.html"
+       "label": "Box and pan brakes",
+       "href": "box-and-pan-brake.html",
+       "image": "tm-w2540a"
+      },
+      {
+       "label": "Straight brakes and folders",
+       "href": "sheet-metal-hand-brake.html",
+       "image": "tm-tfs"
       },
       {
        "label": "Magnetic brakes",
        "href": "magnetic-sheet-metal-brake.html"
-      },
-      {
-       "label": "Hydraulic & CNC folders",
-       "href": "hydraulic-folding-machine.html"
       },
       {
        "label": "Roofing & siding brakes",
@@ -292,7 +295,8 @@
       },
       {
        "label": "3-in-1 shear, brake & roll",
-       "href": "shear-brake-roll-3-in-1.html"
+       "href": "shear-brake-roll-3-in-1.html",
+       "image": "tm-3in1-610"
       }
      ]
     },
