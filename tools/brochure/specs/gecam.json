@@ -1,6 +1,6 @@
 {
  "title": "Deburring, finishing and pipe sanding machines",
- "subtitle": "Gecam wide-belt deburring, edge rounding, deslagging and brush machines · corner grinders and CWS corner welders · Eurofintec orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring",
+ "subtitle": "Gecam wide-belt deburring, edge rounding, deslagging and brush machines · corner grinders and CWS and WELCOR corner welders · Eurofintec orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring",
  "cover_line": "Gecam · Eurofintec · made in Italy · sold & serviced in Canada by NovoTech",
  "range_label": "Gecam & Eurofintec machinery",
  "about_for": "Gecam and Eurofintec machinery",
@@ -27,6 +27,9 @@
   "gecam-135",
   "gecam-corner-special",
   "gecam-cws",
+  "gecam-cws-xy",
+  "gecam-welcor-xyz",
+  "gecam-welcor-4",
   "eurofintec-141-144",
   "eurofintec-128",
   "eurofintec-128dl",
@@ -75,7 +78,10 @@
   {
    "title": "Corner welding machines",
    "families": [
-    "gecam-cws"
+    "gecam-cws",
+    "gecam-cws-xy",
+    "gecam-welcor-xyz",
+    "gecam-welcor-4"
    ]
   },
   {

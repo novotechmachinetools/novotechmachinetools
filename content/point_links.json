@@ -338,12 +338,20 @@
  ],
  "corner-welding-machines": [
   [
-   "CWS 200",
+   "1-axis CWS 200 · CWS 300 · WELCOR 400 X",
    "gecam-cws"
   ],
   [
-   "CWS 300",
-   "gecam-cws"
+   "2-axis CWS 300 XY · WELCOR 400 XY",
+   "gecam-cws-xy"
+  ],
+  [
+   "3-axis WELCOR 400 XYZ",
+   "gecam-welcor-xyz"
+  ],
+  [
+   "4-axis WELCOR 400 XYZ-Φ",
+   "gecam-welcor-4"
   ]
  ],
  "double-column-band-saws": [
@@ -370,16 +378,16 @@
    "tt-t25"
   ],
   [
+   "T5025 / T4025 compact gear-head drill presses",
+   "tt-t5025"
+  ],
+  [
    "TX530 inverter drill presses",
    "tt-t50"
   ],
   [
    "TB column drills",
    "tt-tb"
-  ],
-  [
-   "WTZ variable-speed bench and floor drill presses",
-   "tt-wtz"
   ]
  ],
  "european-press-brake-dies": [

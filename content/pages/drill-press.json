@@ -4,13 +4,13 @@
  "family_set": "ttmc-more",
  "title": "Drill Presses — Gear-Head, Floor & Bench, to 2″ | NovoTech",
  "artifact_title": "Drill presses — gear-head, column, floor and bench drill presses",
- "meta_description": "Industrial drill presses: gear-head drill presses 1 – 2″ in steel with power feed and tapping, belt and inverter column drills, variable-speed bench and floor drill presses, vises.",
+ "meta_description": "Industrial drill presses: gear-head drill presses 1 – 2″ in steel with power feed and tapping, inverter drill presses, belt-drive and stepless column drills.",
  "h1": "Drill presses — gear-head, column, floor and bench drill presses",
- "intro": "A drill press holds the drill square to the work and feeds it with the force and control a hand drill cannot give — the first machine tool in most fabrication and maintenance shops. NovoTech's value-line drill presses are built in China to our specification: gear-head drill presses from 1″ to 2″ in steel with eight or twelve speeds, power feed and tapping, inverter drill presses that keep full torque at low speed, belt-drive and stepless column drills, variable-speed bench and floor drill presses with a digital speed display, a drilling and tapping press with automatic reverse, and the vises to go with them. Parts and support from Mississauga, ON, Canada.",
+ "intro": "A drill press holds the drill square to the work and feeds it with the force and control a hand drill cannot give — the first machine tool in most fabrication and maintenance shops. NovoTech's value-line drill presses are built in China to our specification: gear-head drill presses from 1″ to 2″ in steel with eight or twelve speeds, power feed and tapping, inverter drill presses that keep full torque at low speed, and belt-drive and stepless column drills. Parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Gear-head drill presses T-25 – T-50: 1″ to 2″ in steel, 8 – 12 speeds, power feed, tapping to M30",
-  "TX530 inverter drill presses with two-range gearbox; TB column drills, belt drive or stepless by frequency converter",
-  "WTZ variable-speed bench and floor drill presses, 1/2 – 5/8″; WTZ-16T drilling and tapping with automatic reverse"
+  "T5025 / T4025 compact gear-head drill presses: 1″ in steel, table tilting ±50°, forward / reverse, preset depth",
+  "TX530 inverter drill presses with two-range gearbox; TB column drills, belt drive or stepless by frequency converter"
  ],
  "hero_image": "tm-t50e",
  "hero_width": 340,
@@ -53,25 +53,6 @@
    "families": [
     "tt-tb"
    ]
-  },
-  {
-   "id": "vs-group",
-   "title": "Variable-speed bench and floor drill presses",
-   "lead": "Light drill presses with variable speed for holes to 5/8″, and a drilling and tapping press.",
-   "brand": "novotech",
-   "families": [
-    "tt-wtz"
-   ]
-  },
-  {
-   "id": "vise-group",
-   "title": "Drill press vises and welding clamps",
-   "lead": "Vises for the drill press and the mill, and angle clamps for welding.",
-   "brand": "novotech",
-   "families": [
-    "tt-vise"
-   ],
-   "tagline": "NovoTech's own brand: manufactured in China to high North American quality standards, with a 1-year warranty and parts and support in Canada"
   }
  ],
  "faq": [
@@ -85,11 +66,11 @@
   },
   {
    "q": "Which drill presses tap?",
-   "a": "The WTZ-16T taps M12 with automatic reverse; the TX530 range taps 3/4 – 1″ with forward and reverse; the T-50 and T-50E tap M30 in steel; tapping is an option on most T-25, T-26, T-28 and T-30 models. Tapping needs a reversing spindle and low speed — tell us the largest tap and the material."
+   "a": "The TX530 range taps 3/4 – 1″ with forward and reverse; the T-50 and T-50E tap M30 in steel; tapping is an option on most T-25, T-26, T-28 and T-30 models. Tapping needs a reversing spindle and low speed — tell us the largest tap and the material."
   },
   {
    "q": "Single-phase or 3-phase?",
-   "a": "The WTZ bench and floor drill presses and the TB…V inverter column drills run on single-phase power; the gear-head drill presses have 3-phase two-speed motors, supplied for 600 V with a CSA-approved panel or for 208 / 240 / 480 V on request."
+   "a": "The TB…V inverter column drills run on single-phase power; the gear-head drill presses have 3-phase two-speed motors, supplied for 600 V with a CSA-approved panel or for 208 / 240 / 480 V on request."
   },
   {
    "q": "What voltage do these machines run on?",
@@ -97,7 +78,11 @@
   }
  ],
  "faq_title": "Questions we get asked about drill presses",
- "catalogue_pdf": null,
+ "catalogue_pdf": {
+  "file": "files/NovoTech-Drill-Presses-Value-Line-2026.pdf",
+  "label": "Download the value-line drill press brochure",
+  "size": "PDF · 2 MB · imperial units"
+ },
  "origin_feature": {
   "title": "NovoTech value line — built in China",
   "text": "Built in China to NovoTech's specification by a maker that exports metalworking machinery to more than 70 countries; inspected before shipping, wired for Canadian power and supported by NovoTech's technicians in Mississauga, ON, Canada."

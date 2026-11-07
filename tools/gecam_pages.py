@@ -10,12 +10,16 @@ premium-line BT 114-S) and the corner welding page; image registration (section 
     Pipe sanding & polishing        pipe-sanding-polishing-machines           BT 114-S (NovoTech premium line, first) · Eurofintec 141 · 144 ·
                                                                               128 S · SL / 128 DL · 228 · 728 — a menu item of its own, no hub
     Tube end deburring machine      tube-end-deburring-machine                Eurofintec 143 — its own page (the owner, Nov 7 2026)
-    Corner welders                  corner-welding-machines                   CWS 200 · CWS 300
+    Corner welders                  corner-welding-machines                   1-axis CWS 200 · CWS 300 · WELCOR 400 X, 2-axis CWS 300 XY ·
+                                                                              WELCOR 400 XY, 3-axis WELCOR 400 XYZ, 4-axis WELCOR 400
+                                                                              XYZ-Φ — a section each, 1 to 4 axes (the owner, Nov 7 2026);
+                                                                              their own brochure as well
 
     python3 tools/gecam_photos.py                    # gecam.com, catalogue and brochure images → tools/src-images/gecam
-    python3 tools/gecam_pages.py                     # families, pages, image_map entries (tools/gecam_keys.txt), brochure spec
+    python3 tools/gecam_pages.py                     # families, pages, image_map entries (tools/gecam_keys.txt), brochure specs
     python3 tools/make_images.py --only $(cat tools/gecam_keys.txt)
     python3 tools/brochure/build_brochure.py tools/brochure/specs/gecam.json
+    python3 tools/brochure/build_brochure.py tools/brochure/specs/gecam-corner-welders.json
 
 All families live in the 'gecam' family set (the BT 114-S is copied in from the NovoTech premium line so the pipe page and the hub
 can show it; tools/sahinler_pages.py no longer writes the pipe page).
@@ -34,12 +38,16 @@ SET = "gecam"
 SECTION = "Deburring & finishing"
 PDF_FILE = "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf"
 PDF_LABEL = "Download the Gecam & Eurofintec deburring and finishing brochure"
+WELD_PDF_FILE = "files/NovoTech-GECAM-Corner-Welding-Machines-2026.pdf"      # the corner welders' own brochure (the owner, Nov 7 2026)
+WELD_PDF_LABEL = "Download the GECAM corner welding machines brochure"
 
 
 def pdf(fid=None):
-    f = os.path.join(ROOT, "src", PDF_FILE)
-    size = f"PDF · {os.path.getsize(f) / 1e6:.0f} MB · imperial units" if os.path.exists(f) else "PDF · imperial units"
-    return {"file": PDF_FILE, "label": PDF_LABEL, "size": size}
+    weld = fid is not None and any(f["id"] == fid and f["page"] == D.P_WELD for f in D.FAMILIES)
+    name, label = (WELD_PDF_FILE, WELD_PDF_LABEL) if weld or fid == "weld" else (PDF_FILE, PDF_LABEL)
+    f = os.path.join(ROOT, "src", name)
+    size = f"PDF · {max(1, round(os.path.getsize(f) / 1e6)):.0f} MB · imperial units" if os.path.exists(f) else "PDF · imperial units"
+    return {"file": name, "label": label, "size": size}
 
 
 def families(page=None):
@@ -47,7 +55,9 @@ def families(page=None):
 
 
 BT114 = [dict(f, page=D.P_PIPE) for f in POLISH_FAMILIES]          # its own premium-line brochure is attached in write_families
-ALL = families(D.P_SHEET) + families(D.P_EDGE) + families(D.P_BRUSH) + families(D.P_CORNER) + BT114 + families(D.P_PIPE) + families(D.P_WELD)
+# the tube-end family has to be in the set too, or the tube end deburring page has no product (missing Nov 7 2026, fixed)
+ALL = (families(D.P_SHEET) + families(D.P_EDGE) + families(D.P_BRUSH) + families(D.P_CORNER) + BT114 + families(D.P_PIPE)
+       + families(D.P_TUBE_END) + families(D.P_WELD))
 
 BRAND_LINE = ("Gecam machines are designed and built in Parma, Italy, by GECAM — deburring, grinding and finishing machines made 100 % in "
               "Italy, with components from Italian suppliers within 125 miles of the plant. Sold, installed and supported in Canada by NovoTech.")
@@ -319,35 +329,62 @@ PAGE_TUBE_END = dict(
 
 # ------------------------------------------------------------------------------------------------ corner welders
 PAGE_WELD = dict(
-    title="Corner Welding Machines for Boxes, to 59 × 59″ | NovoTech",
-    meta="TIG and plasma corner welders for bent boxes, cabinets and enclosures in steel, stainless and aluminum: copper clamping, guided torch, CNC touch screen.",
-    h1="Corner welding machines — TIG and plasma corner welders for bent boxes, cabinets and enclosures",
-    intro="A corner welding machine welds the corners of bent sheet-metal parts — boxes, cabinets, trays, enclosures, hoods — with the "
-          "torch carried by the machine at a set speed instead of by hand, so every corner is the same and the welder is free while it "
-          "runs. NovoTech sells the CWS 200 and CWS 300 of Gecam, built in Parma, Italy: the part is clamped from inside against copper "
-          "blocks that hold the corner square and draw off the heat, the TIG or plasma torch runs along a guide at 0 to 118 in/min, and "
-          "the CNC touch screen stores the parameters of every part. Mild steel, stainless steel and aluminum; corners 7-7/8″ or "
-          "11-13/16″ high, parts from 3-15/16″ to 59″ square. The welded corner then goes to a corner grinder. Supplied with a "
-          "CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
-    points=["Corners 7-7/8″ (CWS 200) or 11-13/16″ (CWS 300) high · parts 3-15/16″ to 59″ square",
-            "TIG or plasma · guided torch, 0 – 118 in/min · two-axis torch movement available",
-            "Pneumatic clamping on copper blocks · CNC touch screen with stored parameters"],
-    hero="gc-cws", minis=["gc-cws-welding", "gc-cws-welded"],
-    groups=[("gc-weld", "CWS corner welding machines", "Two corner heights, the same machine: clamp, start, and the torch welds the corner.", D.GECAM)],
+    title="Corner Welding Machines, 1 to 4 Axes, for Boxes | NovoTech",
+    meta="1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes in steel, stainless and aluminum: GECAM CWS and WELCOR, laser seam reading.",
+    h1="Corner welding machines — 1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes",
+    intro="A corner welding machine welds the corners of bent sheet-metal parts — boxes, cabinets, trays, enclosures, doors — with the "
+          "torch driven by the machine at a set speed instead of by hand, so every corner comes out the same and the welder is free "
+          "while it runs. NovoTech sells the corner welders of GECAM, built in Parma, Italy, from one axis to four: the part is clamped "
+          "from inside against copper guides that hold the corner square and draw off the heat, the TIG or plasma torch welds at 0 to "
+          "47 in/min, and the parameters of every part are stored. One axis welds a straight corner seam — the CWS 200 and CWS 300 on "
+          "parts to 59″ square, the WELCOR 400 X on corners to 15-3/4″ high; two and three axes weld a seam that runs in two or three "
+          "directions in one cycle; the four-axis WELCOR adds torch rotation and a laser that reads the seam before welding. Mild "
+          "steel, stainless steel and aluminum. The welded corner then goes to a corner grinder. Supplied with a CSA-approved panel, "
+          "installed and supported from Mississauga, ON, Canada.",
+    points=["1-axis CWS 200 · CWS 300 · WELCOR 400 X for straight corner seams 7-7/8″ to 15-3/4″ high, parts to 59″ square",
+            "2-axis CWS 300 XY · WELCOR 400 XY and 3-axis WELCOR 400 XYZ for seams in two or three directions",
+            "4-axis WELCOR 400 XYZ-Φ with torch rotation and laser seam reading · TIG or plasma, 0 – 47 in/min"],
+    hero="gc-cws", minis=["gc-cws-xy", "gc-welcor-4"],
+    groups=[("gc-weld-1", "1-axis corner welders",
+             "The torch travels one axis along the corner: the CWS 200 and CWS 300 for parts to 59″ square, the WELCOR 400 X for corners "
+             "to 15-3/4″ high.", D.GECAM),
+            ("gc-weld-2", "2-axis corner welders",
+             "The torch driven on X and Y: the CWS 300 XY for parts to 59″ square, the WELCOR 400 XY for seams 15-3/4″ on X and "
+             "4-5/16″ on Y.", D.GECAM),
+            ("gc-weld-3", "3-axis corner welder",
+             "X, Y and Z: a seam that runs in three directions — 15-3/4″, 4-5/16″ and 1-15/16″ — welded in one cycle.", D.GECAM),
+            ("gc-weld-4", "4-axis corner welder",
+             "The three axes, torch rotation and a laser that reads the seam before welding.", D.GECAM)],
     faq=[{"q": "What does a corner welding machine do?",
-          "a": "It welds the corner seam of a bent part with the torch on a guide, moved by the machine at a set speed: the operator "
-               "places the part, clamps it with a button and presses start. The result is a straight, even weld on every corner, made in "
-               "the flat position whatever the operator's skill, and the welder can prepare the next part while it runs."},
-         {"q": "What do the copper blocks do?",
-          "a": "The part is pressed from inside against copper blocks — an external guide 7-7/8″ or 11-13/16″ high and an internal unit "
-               "matched to the corner height. They hold the corner square during welding and draw the heat away, keeping the part cool "
-               "and the weld zone clean; a cooling unit for the copper is available and recommended against discoloration."},
+          "a": "It welds the corner seam of a bent part with the torch driven by the machine at a set speed: the operator places the "
+               "part with its corner against the copper squaring guide, locks it with a button and presses start. The result is a "
+               "straight, even weld on every corner whatever the operator's skill, and the welder can prepare the next part while it "
+               "runs."},
+         {"q": "1, 2, 3 or 4 axes — which do I need?",
+          "a": "One axis welds a straight corner seam — the corner of a plain box, up to 7-7/8″ high on the CWS 200, 11-13/16″ on the "
+               "CWS 300 and 15-3/4″ on the WELCOR 400 X. On two axes (X and Y) the torch is driven in two directions: the WELCOR 400 "
+               "XY welds seams up to 15-3/4″ on X and 4-5/16″ on Y. Three axes add Z — up to 1-15/16″ — so a seam that runs in three "
+               "directions is welded in one cycle. The four-axis WELCOR adds torch rotation, from vertical to about 120°, and a laser "
+               "that checks the edges and memorizes the path before welding. Send us a drawing of your part and we will tell you which "
+               "one it needs."},
+         {"q": "What do the copper groups do?",
+          "a": "The part is pressed from inside against copper — an outer unit 7-7/8″ or 11-13/16″ high and an inner unit from 1-15/16″ "
+               "to 11-13/16″ chosen for the corner on the CWS and the WELCOR 400 to three axes; modular aluminum and copper pads from "
+               "3/8″ to 7-7/8″ thick, matched to the box, on the four-axis WELCOR. They hold the corner square during welding and draw "
+               "the heat away, keeping the heat of the part down; cooled inner groups are recommended to avoid dark marks on the "
+               "parts."},
+         {"q": "How must the corner be bent?",
+          "a": "The two edges should meet on the corner — .0004″ (0.01 mm) apart and centred on it. Where the bend does not allow it, "
+               "they may overlap by half the sheet thickness at most; on the CWS the gap between the edges must not exceed .008″ "
+               "(0.2 mm). Good press brake work upstream pays off at the welder."},
          {"q": "TIG or plasma — and is the power source included?",
-          "a": "The CWS works with a TIG or a plasma welding power source, which carries the torch on the machine's guide. Tell us the "
-               "material, thickness and corner you weld and we will quote the CWS with a matching power source, or connect yours."},
+          "a": "The machines work with a TIG or a plasma welding power source, which is not included. GECAM offers the Lorch T 250 — "
+               "T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum — with a cooling unit and a torch group with a "
+               "9′10″ cable. Tell us the material, thickness and corner you weld and we will quote the machine with its power source."},
          {"q": "Which parts fit?",
-          "a": "Bent parts from 3-15/16 × 3-15/16″ to 59 × 59″ with corners up to 7-7/8″ high (CWS 200) or 11-13/16″ (CWS 300), on a "
-               "32-5/16 × 32-5/16″ table. Mild steel, stainless steel and aluminum."},
+          "a": "Bent parts from 3-15/16 × 3-15/16″ to 59-1/16 × 59-1/16″ on the CWS 200, CWS 300 and CWS 300 XY (32-5/16″ square work "
+               "table, 39-3/8″ to order), and to 39-3/8 × 39-3/8″ on the WELCOR 400 — on the four-axis the smallest box 1-15/16″ high. "
+               "Mild steel, stainless steel and aluminum."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about corner welding machines",
     related_pages=[{"href": "corner-grinding-machines.html", "label": "Corner grinders"}, {"href": "welding-positioners.html", "label": "Welding positioners"},
@@ -453,7 +490,7 @@ ABOUT_NT = ("NovoTech sells, installs and supports Gecam and Eurofintec machines
             "in Canada.")
 BROCHURE = dict(
     title="Deburring, finishing and pipe sanding machines",
-    subtitle="Gecam wide-belt deburring, edge rounding, deslagging and brush machines · corner grinders and CWS corner welders · Eurofintec orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring",
+    subtitle="Gecam wide-belt deburring, edge rounding, deslagging and brush machines · corner grinders and CWS and WELCOR corner welders · Eurofintec orbital, centreless and large-pipe sanders, tube brushing and tube-end deburring",
     cover_line="Gecam · Eurofintec · made in Italy · sold & serviced in Canada by NovoTech", range_label="Gecam & Eurofintec machinery",
     about_for="Gecam and Eurofintec machinery", about_kicker="Gecam · Parma, Italy", about_title="Deburring and finishing, made in Italy",
     about_text=["Gecam designs and builds machines for deburring, grinding and finishing metal at Vicofertile, Parma — 100 % made in Italy, "
@@ -472,10 +509,60 @@ BROCHURE = dict(
     cover_photos=["gc-g135", "gc-135", "ef-144"], out="src/" + PDF_FILE)
 
 
+WELD_IDS = [f["id"] for f in D.families(D.P_WELD)]
+WELD_TITLES = {"gecam-cws": "1-axis corner welders", "gecam-cws-xy": "2-axis corner welders", "gecam-welcor-xyz": "3-axis corner welder",
+               "gecam-welcor-4": "4-axis corner welder"}
+# the corner welders' own brochure (the owner, Nov 7 2026: "one PDF brochure for all of them, NovoTech format, specs from the
+# catalogues"): about, an overview page with every model side by side, then a section per number of axes
+WELD_BROCHURE = dict(
+    title="Corner welding machines",
+    subtitle="GECAM 1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes — CWS 200 · CWS 300 · CWS 300 XY · WELCOR 400 X · XY · XYZ · XYZ-Φ",
+    cover_line="GECAM · made in Italy · sold & serviced in Canada by NovoTech", range_label="GECAM corner welding machines",
+    about_for="GECAM corner welding machines", about_kicker="GECAM · Parma, Italy", about_title="Corner welding, made in Italy",
+    about_text=["GECAM has designed and built machines for deburring, grinding and finishing metal at Vicofertile, Parma, since 1994 — "
+                "100 % made in Italy, with components from Italian suppliers within 125 miles of the plant, and CE-conforming to the "
+                "Machinery, EMC and Low Voltage directives. Its corner welders weld the corners of bent boxes, cabinets, trays and "
+                "enclosures with the torch driven by the machine: from the one-axis CWS for a straight corner seam to the four-axis "
+                "WELCOR that reads the seam with a laser before it welds.",
+                "NovoTech sells, installs and supports GECAM corner welders in Canada from Mississauga, Ontario — copper groups and the "
+                "welding power source chosen for your parts, installation, operator training, a CSA-approved panel, a 1-year warranty "
+                "and parts and technical support in Canada."],
+    country="Italy", families=WELD_IDS, family_sets=["gecam"],
+    groups=[{"title": WELD_TITLES[fid], "families": [fid]} for fid in WELD_IDS],
+    intro_pages=[{
+        "tab": "Compare", "kicker": "GECAM corner welders · 1 to 4 axes",
+        "title": "Which corner welder? Every model side by side",
+        "lead": "The number of axes decides what kind of corner the machine welds in one cycle: one axis a straight seam, two and three "
+                "axes a seam that runs in two or three directions, four axes adds torch rotation and a laser that reads the seam. Every "
+                "model welds mild steel, stainless steel and aluminum with a TIG or plasma source at 0 – 47 in/min (0 – 20 mm/s), the "
+                "part clamped pneumatically from inside against copper. Each section has its own pages further on, with the full "
+                "specification table.",
+        "table": {"cols": ["Model", "Axes", "Max. corner height", "Part size", "Control", "Best for"],
+                  "rows": [["CWS 200", "1 — X", "7-7/8″ (200 mm)", "3-15/16″ – 59-1/16″ square", "Touch panel, recipes", "Plain boxes, corners to 7-7/8″"],
+                           ["CWS 300", "1 — X", "11-13/16″ (300 mm)", "3-15/16″ – 59-1/16″ square", "Touch panel, recipes", "Plain boxes, corners to 11-13/16″"],
+                           ["WELCOR 400 X", "1 — X", "15-3/4″ (400 mm)", "3-15/16″ – 39-3/8″ square", "Numerical control, 10 parameters", "Deeper boxes, corners to 15-3/4″"],
+                           ["CWS 300 XY", "2 — X, Y", "7-7/8″ – 11-13/16″ (200 – 300 mm)", "3-15/16″ – 59-1/16″ square", "Touch panel: X, Y positions, recipes", "Large parts, torch driven on X and Y"],
+                           ["WELCOR 400 XY", "2 — X, Y", "X 15-3/4″ · Y 4-5/16″ (400 · 110 mm)", "3-15/16″ – 39-3/8″ square", "Numerical control, 10 parameters", "Seams in two directions"],
+                           ["WELCOR 400 XYZ", "3 — X, Y, Z", "X 15-3/4″ · Y 4-5/16″ · Z 1-15/16″ (400 · 110 · 50 mm)", "3-15/16″ – 39-3/8″ square", "Numerical control, 10 parameters", "Seams in three directions"],
+                           ["WELCOR 400 XYZ-Φ", "4 — X, Y, Z, torch rotation", "X 15-3/4″ · Y 4-5/16″ · Z 1-15/16″ (400 · 110 · 50 mm)", "3-15/16″ – 39-3/8″ square", "Color touch screen, laser seam reading", "Repeat series, self-learning seam path"]]},
+        "paras": [["Copper groups", "The corner is held square and kept cool by copper: on the CWS and the WELCOR 400 to three axes an outer unit "
+                   "7-7/8″ or 11-13/16″ (200 or 300 mm) high and an inner unit of 1-15/16″, 2-15/16″, 3-15/16″, 4-15/16″, 5-7/8″, 7-7/8″ "
+                   "or 11-13/16″ (50 – 300 mm), cooled or not; on the four-axis WELCOR modular aluminum and copper pads 3/8″ to 7-7/8″ "
+                   "(10 – 200 mm) thick. Cooled inner groups are recommended to avoid dark marks on the parts."],
+                  ["Corner preparation", D.BEND_RULE + " On the CWS the gap between the edges must not exceed .008″ (0.2 mm)."],
+                  ["Welding power source", "Not included. GECAM offers the Lorch T 250 TIG source — T 250 DC for mild and stainless steel, "
+                   "T 250 AC/DC also for aluminum — with a cooling unit and a torch group with a 9′10″ (3 m) cable; the machines also "
+                   "work with a plasma source."]],
+        "photos": ["gc-cws", "gc-cws-xy", "gc-welcor", "gc-welcor-4"]}],
+    cover_photos=["gc-welcor-4", "gc-cws-xy", "gc-cws"], out="src/" + WELD_PDF_FILE)
+
+
 def write_brochure_specs():
     d = os.path.join(ROOT, "tools", "brochure", "specs")
     spec = dict(BROCHURE, single_phase=False, year="2026", made_in="Made in Italy by Gecam — 100 % Italian")
     json.dump(spec, open(os.path.join(d, "gecam.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    spec = dict(WELD_BROCHURE, single_phase=False, year="2026", made_in="Made in Italy by GECAM — 100 % Italian")
+    json.dump(spec, open(os.path.join(d, "gecam-corner-welders.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 
 def register_images():
@@ -523,7 +610,7 @@ def build():
                    ALL, SET, "Corner grinders", extra={**SHARED, "nav_label": "Corner grinders"})
     write_category(D.P_PIPE, {**PAGE_PIPE, "related_title": RELATED_TITLE, "related_pages": pipe_related},
                    ALL, SET, "Pipe sanding & polishing machines", extra={**SHARED, **PIPE_EXTRA, "nav_label": "Pipe sanding & polishing machines"})
-    write_category(D.P_WELD, PAGE_WELD, ALL, SET, "Corner welders", extra={**SHARED, "nav_label": "Corner welders"})
+    write_category(D.P_WELD, PAGE_WELD, ALL, SET, "Corner welders", extra={**SHARED, "nav_label": "Corner welders", "catalogue_pdf": pdf("weld")})
     write_category(D.P_TUBE_END, {**PAGE_TUBE_END, "related_title": RELATED_TITLE,
                                   "related_pages": [{"href": f"{D.P_PIPE}.html", "label": "Pipe sanding & polishing machines"},
                                                     {"href": "pipe-notcher.html", "label": "Tube notchers"},

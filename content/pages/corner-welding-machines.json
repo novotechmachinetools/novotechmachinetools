@@ -2,20 +2,20 @@
  "slug": "corner-welding-machines",
  "template": "category.html",
  "family_set": "gecam",
- "title": "Corner Welding Machines for Boxes, to 59 × 59″ | NovoTech",
- "artifact_title": "Corner welding machines — TIG and plasma corner welders for bent boxes, cabinets and enclosures",
- "meta_description": "TIG and plasma corner welders for bent boxes, cabinets and enclosures in steel, stainless and aluminum: copper clamping, guided torch, CNC touch screen.",
- "h1": "Corner welding machines — TIG and plasma corner welders for bent boxes, cabinets and enclosures",
- "intro": "A corner welding machine welds the corners of bent sheet-metal parts — boxes, cabinets, trays, enclosures, hoods — with the torch carried by the machine at a set speed instead of by hand, so every corner is the same and the welder is free while it runs. NovoTech sells the CWS 200 and CWS 300 of Gecam, built in Parma, Italy: the part is clamped from inside against copper blocks that hold the corner square and draw off the heat, the TIG or plasma torch runs along a guide at 0 to 118 in/min, and the CNC touch screen stores the parameters of every part. Mild steel, stainless steel and aluminum; corners 7-7/8″ or 11-13/16″ high, parts from 3-15/16″ to 59″ square. The welded corner then goes to a corner grinder. Supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
+ "title": "Corner Welding Machines, 1 to 4 Axes, for Boxes | NovoTech",
+ "artifact_title": "Corner welding machines — 1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes",
+ "meta_description": "1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes in steel, stainless and aluminum: GECAM CWS and WELCOR, laser seam reading.",
+ "h1": "Corner welding machines — 1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes",
+ "intro": "A corner welding machine welds the corners of bent sheet-metal parts — boxes, cabinets, trays, enclosures, doors — with the torch driven by the machine at a set speed instead of by hand, so every corner comes out the same and the welder is free while it runs. NovoTech sells the corner welders of GECAM, built in Parma, Italy, from one axis to four: the part is clamped from inside against copper guides that hold the corner square and draw off the heat, the TIG or plasma torch welds at 0 to 47 in/min, and the parameters of every part are stored. One axis welds a straight corner seam — the CWS 200 and CWS 300 on parts to 59″ square, the WELCOR 400 X on corners to 15-3/4″ high; two and three axes weld a seam that runs in two or three directions in one cycle; the four-axis WELCOR adds torch rotation and a laser that reads the seam before welding. Mild steel, stainless steel and aluminum. The welded corner then goes to a corner grinder. Supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
  "hero_points": [
-  "Corners 7-7/8″ (CWS 200) or 11-13/16″ (CWS 300) high · parts 3-15/16″ to 59″ square",
-  "TIG or plasma · guided torch, 0 – 118 in/min · two-axis torch movement available",
-  "Pneumatic clamping on copper blocks · CNC touch screen with stored parameters"
+  "1-axis CWS 200 · CWS 300 · WELCOR 400 X for straight corner seams 7-7/8″ to 15-3/4″ high, parts to 59″ square",
+  "2-axis CWS 300 XY · WELCOR 400 XY and 3-axis WELCOR 400 XYZ for seams in two or three directions",
+  "4-axis WELCOR 400 XYZ-Φ with torch rotation and laser seam reading · TIG or plasma, 0 – 47 in/min"
  ],
  "hero_image": "gc-cws",
  "hero_image_secondary": [
-  "gc-cws-welding",
-  "gc-cws-welded"
+  "gc-cws-xy",
+  "gc-welcor-4"
  ],
  "breadcrumb": [
   {
@@ -27,37 +27,72 @@
    "href": "products.html"
   },
   {
-   "label": "Corner welding machines — TIG and plasma corner welders for bent boxes, cabinets and enclosures"
+   "label": "Corner welding machines — 1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes"
   }
  ],
  "hero_brand_line": "Gecam machines are designed and built in Parma, Italy, by GECAM — deburring, grinding and finishing machines made 100 % in Italy, with components from Italian suppliers within 125 miles of the plant. Sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
-   "id": "gc-weld-group",
-   "title": "CWS corner welding machines",
-   "lead": "Two corner heights, the same machine: clamp, start, and the torch welds the corner.",
+   "id": "gc-weld-1-group",
+   "title": "1-axis corner welders",
+   "lead": "The torch travels one axis along the corner: the CWS 200 and CWS 300 for parts to 59″ square, the WELCOR 400 X for corners to 15-3/4″ high.",
    "brand": "gecam",
    "families": [
     "gecam-cws"
+   ]
+  },
+  {
+   "id": "gc-weld-2-group",
+   "title": "2-axis corner welders",
+   "lead": "The torch driven on X and Y: the CWS 300 XY for parts to 59″ square, the WELCOR 400 XY for seams 15-3/4″ on X and 4-5/16″ on Y.",
+   "brand": "gecam",
+   "families": [
+    "gecam-cws-xy"
+   ]
+  },
+  {
+   "id": "gc-weld-3-group",
+   "title": "3-axis corner welder",
+   "lead": "X, Y and Z: a seam that runs in three directions — 15-3/4″, 4-5/16″ and 1-15/16″ — welded in one cycle.",
+   "brand": "gecam",
+   "families": [
+    "gecam-welcor-xyz"
+   ]
+  },
+  {
+   "id": "gc-weld-4-group",
+   "title": "4-axis corner welder",
+   "lead": "The three axes, torch rotation and a laser that reads the seam before welding.",
+   "brand": "gecam",
+   "families": [
+    "gecam-welcor-4"
    ]
   }
  ],
  "faq": [
   {
    "q": "What does a corner welding machine do?",
-   "a": "It welds the corner seam of a bent part with the torch on a guide, moved by the machine at a set speed: the operator places the part, clamps it with a button and presses start. The result is a straight, even weld on every corner, made in the flat position whatever the operator's skill, and the welder can prepare the next part while it runs."
+   "a": "It welds the corner seam of a bent part with the torch driven by the machine at a set speed: the operator places the part with its corner against the copper squaring guide, locks it with a button and presses start. The result is a straight, even weld on every corner whatever the operator's skill, and the welder can prepare the next part while it runs."
   },
   {
-   "q": "What do the copper blocks do?",
-   "a": "The part is pressed from inside against copper blocks — an external guide 7-7/8″ or 11-13/16″ high and an internal unit matched to the corner height. They hold the corner square during welding and draw the heat away, keeping the part cool and the weld zone clean; a cooling unit for the copper is available and recommended against discoloration."
+   "q": "1, 2, 3 or 4 axes — which do I need?",
+   "a": "One axis welds a straight corner seam — the corner of a plain box, up to 7-7/8″ high on the CWS 200, 11-13/16″ on the CWS 300 and 15-3/4″ on the WELCOR 400 X. On two axes (X and Y) the torch is driven in two directions: the WELCOR 400 XY welds seams up to 15-3/4″ on X and 4-5/16″ on Y. Three axes add Z — up to 1-15/16″ — so a seam that runs in three directions is welded in one cycle. The four-axis WELCOR adds torch rotation, from vertical to about 120°, and a laser that checks the edges and memorizes the path before welding. Send us a drawing of your part and we will tell you which one it needs."
+  },
+  {
+   "q": "What do the copper groups do?",
+   "a": "The part is pressed from inside against copper — an outer unit 7-7/8″ or 11-13/16″ high and an inner unit from 1-15/16″ to 11-13/16″ chosen for the corner on the CWS and the WELCOR 400 to three axes; modular aluminum and copper pads from 3/8″ to 7-7/8″ thick, matched to the box, on the four-axis WELCOR. They hold the corner square during welding and draw the heat away, keeping the heat of the part down; cooled inner groups are recommended to avoid dark marks on the parts."
+  },
+  {
+   "q": "How must the corner be bent?",
+   "a": "The two edges should meet on the corner — .0004″ (0.01 mm) apart and centred on it. Where the bend does not allow it, they may overlap by half the sheet thickness at most; on the CWS the gap between the edges must not exceed .008″ (0.2 mm). Good press brake work upstream pays off at the welder."
   },
   {
    "q": "TIG or plasma — and is the power source included?",
-   "a": "The CWS works with a TIG or a plasma welding power source, which carries the torch on the machine's guide. Tell us the material, thickness and corner you weld and we will quote the CWS with a matching power source, or connect yours."
+   "a": "The machines work with a TIG or a plasma welding power source, which is not included. GECAM offers the Lorch T 250 — T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum — with a cooling unit and a torch group with a 9′10″ cable. Tell us the material, thickness and corner you weld and we will quote the machine with its power source."
   },
   {
    "q": "Which parts fit?",
-   "a": "Bent parts from 3-15/16 × 3-15/16″ to 59 × 59″ with corners up to 7-7/8″ high (CWS 200) or 11-13/16″ (CWS 300), on a 32-5/16 × 32-5/16″ table. Mild steel, stainless steel and aluminum."
+   "a": "Bent parts from 3-15/16 × 3-15/16″ to 59-1/16 × 59-1/16″ on the CWS 200, CWS 300 and CWS 300 XY (32-5/16″ square work table, 39-3/8″ to order), and to 39-3/8 × 39-3/8″ on the WELCOR 400 — on the four-axis the smallest box 1-15/16″ high. Mild steel, stainless steel and aluminum."
   },
   {
    "q": "What voltage do these machines run on?",
@@ -66,9 +101,9 @@
  ],
  "faq_title": "Questions we get asked about corner welding machines",
  "catalogue_pdf": {
-  "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
-  "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-  "size": "PDF · 8 MB · imperial units"
+  "file": "files/NovoTech-GECAM-Corner-Welding-Machines-2026.pdf",
+  "label": "Download the GECAM corner welding machines brochure",
+  "size": "PDF · 2 MB · imperial units"
  },
  "origin_feature": {
   "title": "Made in Italy by Gecam",

@@ -407,20 +407,8 @@ DRILL = [
        "Digital speed display; forward / reverse; easy tool change", "T-slotted table and base; adjustable chuck guard; work light",
        "Coolant on the TB28V and TB36V"],
       ["tm-tb", "tm-tbv", "tm-tb24", "tm-tb24v", "tm-tb28", "tm-tb28v"], headline="15/16 – 1-5/16″ in steel", cap="drills [Drilling capacity in steel] in steel"),
-    F("tt-wtz", P_DRILL, "vs", "WTZ variable-speed drill presses, 1/2″ and 5/8″, and WTZ-16T drilling and tapping press", "WTZ variable-speed", T["tt-wtz"],
-      "Variable-speed bench and floor drill presses with a digital speed display for 1/2″ and 5/8″ holes in steel, and the WTZ-16T, "
-      "which drills 5/8″ and taps M12: switched to tapping, the spindle stops in 0.2 s and reverses to back the tap out, with a laser "
-      "cross-hair and a digital depth readout in mm or inch.",
-      ["1/2″ (13 mm) and 5/8″ (16 mm) in steel; MT2", "Variable speed 500 – 2,600 rpm with digital display",
-       "Bench models and the WTZ-16JF floor model", "WTZ-16T: taps M12 with automatic reverse; spindle runout under 0.0004″; laser cross-hair; digital depth readout"],
-      ["tm-wtz16j", "tm-wtz13j", "tm-wtz16q", "tm-wtz", "tm-wtz16t"], headline="1/2 – 5/8″ in steel", cap="drills [Drilling capacity in steel] in steel"),
-    F("tt-vise", P_DRILL, "vise", "Drill press vises and welding angle clamps", "Vises and clamps", T["tt-vise"],
-      "Vises for the drill press and the mill: the BSM-N drill press vises with changeable prismatic jaws, the TSL vises (Q models with a "
-      "quick lock), the TMS vises with slotted bases, the TQ tilting, swivel and compound precision vises, and the AC welding angle clamps "
-      "that hold tube and angle at 90° for welding.",
-      ["BSM / TSL / TMS: jaw widths 3-1/8 – 7-7/8″ (80 – 200 mm)", "TQ: 4 – 6″ precision vises — tilting (TQA), swivel (TQB), compound (TQC)",
-       "AC-60 / AC-100 / AC-100H welding angle clamps; AC-100H for box and round tubing"],
-      ["tm-vise", "tm-vise-tq", "tm-ac100h"], headline="Vises 3 – 8″", cap="[Jaw width] jaws", manual=True),
+    # the WTZ variable-speed bench and floor drill presses (tt-wtz) and the drill press vises and welding angle clamps (tt-vise)
+    # are off the site (the owner, Nov 7 2026); their tables stay in ttmc_more_tables
 ]
 
 # =============================================================================================== milling machines

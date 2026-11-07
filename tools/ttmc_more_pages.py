@@ -35,6 +35,62 @@ MANUAL_TAG = D.MANUAL_TAG
 NO_VIDEO = {"intro_video": None, "intro_video_heading": None, "intro_video_text": None}
 VOLT = VOLT_FAQ_GENERIC
 
+# NovoTech-format brochures of value-line pages (the owner, Nov 7 2026: the drill presses, then the milling machines), linked on
+# the page and on every item of the page; the spec of each in tools/brochure/specs/
+PAGE_PDFS = {D.P_DRILL: ("files/NovoTech-Drill-Presses-Value-Line-2026.pdf", "Download the value-line drill press brochure"),
+             D.P_MILL: ("files/NovoTech-Milling-Machines-Value-Line-2026.pdf", "Download the value-line milling machine brochure")}
+
+
+def page_pdf(slug):
+    if slug not in PAGE_PDFS:
+        return None
+    file, label = PAGE_PDFS[slug]
+    f = os.path.join(ROOT, "src", file)
+    size = f"PDF · {max(1, round(os.path.getsize(f) / 1e6))} MB · imperial units" if os.path.exists(f) else "PDF · imperial units"
+    return {"file": file, "label": label, "size": size}
+
+
+VALUE_ABOUT = ("NovoTech's value line is our own brand: machines built in China to our specification by a maker that exports metalworking "
+               "machinery to more than 70 countries, inspected before they ship and sold under NovoTech's name with a CSA-approved panel on "
+               "every 3-phase machine, a 1-year warranty and parts and technical support from Mississauga, Ontario, Canada.")
+VALUE_COMMON = dict(cover_line="NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech",
+                    about_kicker="NovoTech value line", country="China", made_in="Built in China to North American standards",
+                    family_sets=[SET], single_phase=False, year="2026")
+BROCHURES = {
+    "value-drill-presses.json": dict(
+        VALUE_COMMON, title="Drill presses",
+        subtitle="Gear-head drill presses 1 – 2″ in steel with power feed and tapping · TX530 inverter drill presses · TB belt-drive and stepless column drills",
+        range_label="Value-line drill presses", about_for="value-line drill presses",
+        about_title="Drill presses for the fabrication and maintenance shop",
+        about_text=[VALUE_ABOUT,
+                    "A drill press holds the drill square to the work and feeds it with the force and control a hand drill cannot give. The "
+                    "gear-head drill presses change speed through a gearbox — no belts to move — with the torque for large holes and tapping, "
+                    "from 1″ to 2″ in steel; the TX530 runs on a frequency inverter with a two-range gearbox; the TB column drills have a "
+                    "V-belt drive, or stepless speed by frequency converter on single-phase power."],
+        families=["tt-t25", "tt-t5025", "tt-t50", "tt-tb"],
+        groups=[{"title": "Gear-head drill presses", "families": ["tt-t25", "tt-t5025", "tt-t50"]},
+                {"title": "Column drills — belt drive and inverter", "families": ["tt-tb"]}],
+        cover_photos=["tm-t50e", "tm-t25", "tm-tbv"], out="src/" + PAGE_PDFS[D.P_DRILL][0]),
+    "value-milling-machines.json": dict(
+        VALUE_COMMON, title="Milling machines",
+        subtitle="Turret and universal milling machines, ISO40 and ISO50 · drilling-milling machines and mini mills · keyseater and slotting machine · cylinder head resurfacer",
+        range_label="Value-line milling machines", about_for="value-line milling machines",
+        about_title="Milling machines for the toolroom and the fabrication shop",
+        about_text=[VALUE_ABOUT,
+                    "Milling machines cut flat faces, slots, steps, pockets and keyways with rotating cutters while the table moves the work "
+                    "under them: knee-type turret mills with a horizontal spindle as well as the vertical head, universal mills with a head "
+                    "that swivels through 360°, heavy ISO50 universal mills with power feed and rapid traverse on all axes and tables up to "
+                    "79″, drilling-milling machines that drill 2″, a mini mill-drill and a radial drill-mill, a keyseater and a slotting "
+                    "machine for keyways and splines, and the KSM-850 resurfacing machine for cylinder heads and blocks."],
+        families=["tt-mill-turret", "tt-mill-univ", "tt-mill-heavy", "tt-zx", "tt-mill-small", "tt-slot", "tt-ksm850"],
+        groups=[{"title": "Turret milling machines", "families": ["tt-mill-turret"]},
+                {"title": "Universal milling machines", "families": ["tt-mill-univ", "tt-mill-heavy"]},
+                {"title": "Drilling-milling machines and mini mills", "families": ["tt-zx", "tt-mill-small"]},
+                {"title": "Keyseaters and slotting machines", "families": ["tt-slot"]},
+                {"title": "Cylinder head resurfacing machine", "families": ["tt-ksm850"]}],
+        cover_photos=["tm-x6332", "tm-lm1450", "tm-zx5325"], out="src/" + PAGE_PDFS[D.P_MILL][0]),
+}
+
 # ---------------------------------------------------------------------------------------------------------------- new pages
 # groups: (group id, title, lead, manual?) — every group is NovoTech value line
 PAGES = {
@@ -144,31 +200,29 @@ PAGES = {
     ),
     D.P_DRILL: dict(
         title="Drill Presses — Gear-Head, Floor & Bench, to 2″ | NovoTech",
-        meta="Industrial drill presses: gear-head drill presses 1 – 2″ in steel with power feed and tapping, belt and inverter column drills, variable-speed bench and floor drill presses, vises.",
+        meta="Industrial drill presses: gear-head drill presses 1 – 2″ in steel with power feed and tapping, inverter drill presses, belt-drive and stepless column drills.",
         h1="Drill presses — gear-head, column, floor and bench drill presses",
         nav="Drill presses",
+        # the WTZ variable-speed drill presses and the vises / welding clamps are off the page (the owner, Nov 7 2026)
         intro="A drill press holds the drill square to the work and feeds it with the force and control a hand drill cannot give — the "
               "first machine tool in most fabrication and maintenance shops. NovoTech's value-line drill presses are built in China to our "
               "specification: gear-head drill presses from 1″ to 2″ in steel with eight or twelve speeds, power feed and tapping, inverter "
-              "drill presses that keep full torque at low speed, belt-drive and stepless column drills, variable-speed bench and floor drill "
-              "presses with a digital speed display, a drilling and tapping press with automatic reverse, and the vises to go with them. "
+              "drill presses that keep full torque at low speed, and belt-drive and stepless column drills. "
               "Parts and support from Mississauga, ON, Canada.",
         points=["Gear-head drill presses T-25 – T-50: 1″ to 2″ in steel, 8 – 12 speeds, power feed, tapping to M30",
-                "TX530 inverter drill presses with two-range gearbox; TB column drills, belt drive or stepless by frequency converter",
-                "WTZ variable-speed bench and floor drill presses, 1/2 – 5/8″; WTZ-16T drilling and tapping with automatic reverse"],
+                "T5025 / T4025 compact gear-head drill presses: 1″ in steel, table tilting ±50°, forward / reverse, preset depth",
+                "TX530 inverter drill presses with two-range gearbox; TB column drills, belt drive or stepless by frequency converter"],
         hero="tm-t50e", minis=["tm-t25", "tm-tbv"],
         groups=[("gear", "Gear-head drill presses", "Speeds through a gearbox — no belts to move — with the torque for large holes and tapping, from 1″ to 2″ in steel.", False),
-                ("column", "Column drills — belt drive and inverter", "Industrial column drills with a digital speed display; the V models with stepless speed on single-phase power.", False),
-                ("vs", "Variable-speed bench and floor drill presses", "Light drill presses with variable speed for holes to 5/8″, and a drilling and tapping press.", False),
-                ("vise", "Drill press vises and welding clamps", "Vises for the drill press and the mill, and angle clamps for welding.", True)],
+                ("column", "Column drills — belt drive and inverter", "Industrial column drills with a digital speed display; the V models with stepless speed on single-phase power.", False)],
         faq=[{"q": "Gear-head or belt-drive drill press?",
               "a": "A gear-head drill press changes speed with levers on a gearbox and transmits more torque at low speed — the speeds you need for 1″ and larger holes and for tapping — and it does not slip. A belt-drive drill press is quieter and smoother at high speed for small holes but needs the belts moved to change speed. Inverter (V) machines change speed steplessly from the panel and keep their torque at low speed with a two-range gearbox (TX530)."},
              {"q": "What drilling capacity do I need?",
               "a": "The rated capacity is the largest hole drilled in mild steel in one pass with a twist drill. Choose a machine one size above your largest everyday hole: a 1″ machine for general fabrication, 1-1/4 to 1-9/16″ for structural work and tapping, 2″ for heavy plates and flanges. Larger holes are faster and safer with an annular cutter on a magnetic drill or on the drill press."},
              {"q": "Which drill presses tap?",
-              "a": "The WTZ-16T taps M12 with automatic reverse; the TX530 range taps 3/4 – 1″ with forward and reverse; the T-50 and T-50E tap M30 in steel; tapping is an option on most T-25, T-26, T-28 and T-30 models. Tapping needs a reversing spindle and low speed — tell us the largest tap and the material."},
+              "a": "The TX530 range taps 3/4 – 1″ with forward and reverse; the T-50 and T-50E tap M30 in steel; tapping is an option on most T-25, T-26, T-28 and T-30 models. Tapping needs a reversing spindle and low speed — tell us the largest tap and the material."},
              {"q": "Single-phase or 3-phase?",
-              "a": "The WTZ bench and floor drill presses and the TB…V inverter column drills run on single-phase power; the gear-head drill presses have 3-phase two-speed motors, supplied for 600 V with a CSA-approved panel or for 208 / 240 / 480 V on request."},
+              "a": "The TB…V inverter column drills run on single-phase power; the gear-head drill presses have 3-phase two-speed motors, supplied for 600 V with a CSA-approved panel or for 208 / 240 / 480 V on request."},
              VOLT],
         related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes, machining centres and grinders"},
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}, {"href": "band-saw.html", "label": "Band saws"},
@@ -417,7 +471,7 @@ def write_page(slug, p, fams):
         "hero_points": p["points"], "hero_image": p["hero"], "hero_image_secondary": p["minis"],
         "breadcrumb": crumbs, "hero_brand_line": BRAND_LINE, "nav_label": p["nav"],
         "groups": groups, "faq": p["faq"], "faq_title": p.get("faq_title") or f"Questions we get asked about {lower_keep_acronyms(p['h1'].split(' — ')[0])}",
-        "catalogue_pdf": None, "origin_feature": ORIGIN, "section_label": p["nav"],
+        "catalogue_pdf": page_pdf(slug), "origin_feature": ORIGIN, "section_label": p["nav"],
         "related_pages": p["related"], "related_title": "More machinery from NovoTech", **NO_VIDEO,
     }
     if section:
@@ -472,8 +526,10 @@ def register_images(used):
 
 
 def build():
-    fams = D.NEW_FAMILIES + D2.GROUP_FAMILIES
+    fams = [dict(f, pdf=page_pdf(f["page"]), no_pdf=False) if f["page"] in PAGE_PDFS else f for f in D.NEW_FAMILIES] + D2.GROUP_FAMILIES
     write_families(SET, fams)
+    for name, spec in BROCHURES.items():
+        json.dump(spec, open(os.path.join(ROOT, "tools", "brochure", "specs", name), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     for slug, p in PAGES.items():
         if slug == D.P_BRAKE:     # the brakes are a hub with one page per kind now — tools/brake_hub.py writes them (after this script)
             continue

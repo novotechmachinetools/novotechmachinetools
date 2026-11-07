@@ -24,6 +24,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DST = os.path.join(ROOT, "tools", "src-images", "gecam")
 W, CAT, BOX = "/home/claude/gecam/img/", "/home/claude/gecam/catimg/", "/home/claude/gecam/boximg/"
 OWN = "/home/claude/gecam/owner/"     # photos the owner sent (Nov 7 2026), turned upright from their EXIF orientation
+WEL = "/home/claude/gecam/welcor/"    # images of GECAM's corner welder offers to NovoTech and the WELCOR 4-axis brochure (Nov 7 2026);
+                                      # welcor-4-copper-group.png: the two halves of the offer's photo joined, the phone watermark removed
 MAX_SIDE = 2600
 
 
@@ -180,14 +182,38 @@ PHOTOS = {
     "gc-corner-before": P(W + "campione-prima.jpg", "Welded box corner before grinding"),
     "gc-corner-after": P(W + "campione-dopo.jpg", "The same corner after grinding"),
     # ---- CWS corner welding machines ------------------------------------------------------------------------------------------
-    "gc-cws": B(W + "CWS-300.jpg", "Gecam CWS 300 corner welding machine"),
+    "gc-cws": B(W + "CWS-300.jpg", "GECAM CWS 300 one-axis corner welding machine"),
     "gc-cws-welding": P(W + "lavorazione.jpg", "TIG torch welding a corner along the copper guide"),
-    "gc-cws-copper": P(W + "gruppo-rame.jpg", "Copper blocks that hold the corner and draw off the heat"),
-    "gc-cws-stop": P(W + "riscontro.jpg", "External copper guide the corner rests against"),
-    "gc-cws-touch": P(BOX + "x-002-031.png", "CNC touch screen of the CWS", up=True),
+    "gc-cws-copper": P(W + "gruppo-rame.jpg", "Copper groups that hold the corner and draw off the heat"),
+    "gc-cws-stop": P(W + "riscontro.jpg", "External copper squaring guide the corner rests against"),
+    "gc-cws-touch": P(BOX + "x-002-031.png", "Touch panel of the CWS", up=True),
     "gc-cws-bent": P(W + "piega.jpg", "Bent corner before welding"),
     "gc-cws-welded": P(W + "saldato.jpg", "Welded corner"),
     "gc-cws-boxes": P(BOX + "x-002-030.png", "Corner-welded boxes", up=True),
+    "gc-cws-bend": P(WEL + "bend-rule.png", "How the corner is bent for welding: the edges .0004″ (0.01 mm) apart and centred, or "
+                     "overlapping by half the sheet thickness at most"),
+    "gc-lorch-t250": B(WEL + "lorch-t250.png", "Lorch T-series TIG power source — GECAM offers the T 250 with its corner welders",
+                       up=True),          # the photo of the offers shows a T 220
+    # 2-axis: GECAM's CWS 300 2 axes XY offer
+    "gc-cws-xy": B(WEL + "cws-300-xy.png", "GECAM CWS 300 XY two-axis corner welding machine", up=True),
+    "gc-cws-xy-corner": P(WEL + "cws-xy-corner.png", "Box corner clamped against the copper groups, TIG torch at the seam"),
+    "gc-cws-xy-head": P(WEL + "cws-xy-head.png", "Torch and copper corner group of the CWS 300 XY"),
+    "gc-cws-xy-touch": P(WEL + "cws-xy-touch.png", "Touch panel of the CWS 300 XY: X and Y positions, part counter, recipe number"),
+    "gc-cws-xy-copper": P(WEL + "cws-xy-copper.png", "Inner copper group pressing the corner from inside, torch below", up=True),
+    # WELCOR 400: the 3-axis offer (render, drawings) and the 4-axis offer (photos)
+    "gc-welcor": B(WEL + "welcor-400-render.png", "GECAM WELCOR 400 corner welder", up=True),
+    "gc-welcor-front": P(WEL + "welcor-400-front.png", "WELCOR 400 front view with the largest box, 39-3/8 × 39-3/8″ (1,000 × 1,000 mm), "
+                         "corner up — machine 43-5/16″ (1,100 mm) wide", up=True),
+    "gc-welcor-side": P(WEL + "welcor-400-side.png", "WELCOR 400 side view: torch axes, welding torch and pneumatic block — machine "
+                        "87″ (2,210 mm) high, 61-3/4″ (1,569 mm) deep", up=True),
+    "gc-welcor-4": P(WEL + "welcor-4-frame.png", "GECAM WELCOR 400 4-axis welding the corner of a square frame"),
+    "gc-welcor-4-laser": P(WEL + "welcor-4-laser.png", "Laser sensor beside the TIG torch on the rotary actuator"),
+    "gc-welcor-4-clamps": P(WEL + "welcor-4-clamps.png", "Pneumatic clamps and copper pads holding the corner"),
+    "gc-welcor-4-panel": P(WEL + "welcor-4-panel.png", "Control panel with color touch screen and signal tower"),
+    "gc-welcor-4-copper": P(WEL + "welcor-4-copper-group.png", "Copper group: aluminum support and copper unit, 3/8″ to 7-7/8″ "
+                            "(10 – 200 mm) thick"),
+    "gc-welcor-4-path": P(WEL + "welcor-4-path.png", "Largest torch path, 15-3/4 × 1-7/8 × 4-7/16″ (400 × 48 × 112 mm), on a box up "
+                          "to 39-3/8 × 39-3/8″ (1,000 × 1,000 mm)"),
     # ---- Eurofintec 141 · 144 orbital pipe sanders ---------------------------------------------------------------------------
     "ef-141": B(W + "141.jpg", "Eurofintec 141 orbital pipe sander, Ø3/8″ – 3-1/8″"),
     "ef-144": B(W + "144alimentatore.jpg", "Eurofintec 144 orbital pipe sander, Ø9/16″ – 5-7/8″, with feeder (optional)", up=True),

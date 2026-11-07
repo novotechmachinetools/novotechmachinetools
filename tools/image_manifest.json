@@ -67349,7 +67349,7 @@
   }
  },
  "gc-cws": {
-  "alt": "Gecam CWS 300 corner welding machine",
+  "alt": "GECAM CWS 300 one-axis corner welding machine",
   "variants": [
    {
     "w": 800,
@@ -67398,7 +67398,7 @@
   }
  },
  "gc-cws-copper": {
-  "alt": "Copper blocks that hold the corner and draw off the heat",
+  "alt": "Copper groups that hold the corner and draw off the heat",
   "variants": [
    {
     "w": 800,
@@ -67422,7 +67422,7 @@
   }
  },
  "gc-cws-stop": {
-  "alt": "External copper guide the corner rests against",
+  "alt": "External copper squaring guide the corner rests against",
   "variants": [
    {
     "w": 800,
@@ -67446,8 +67446,14 @@
   }
  },
  "gc-cws-touch": {
-  "alt": "CNC touch screen of the CWS",
+  "alt": "Touch panel of the CWS",
   "variants": [
+   {
+    "w": 646,
+    "h": 336,
+    "file": "img/gecam/gc-cws-touch-646.webp",
+    "bytes": 10078
+   },
    {
     "w": 480,
     "h": 250,
@@ -118337,6 +118343,579 @@
    "h": 90,
    "file": "img/bandsaw/video-nLKcG6h40f0-thumb.webp",
    "bytes": 3660
+  }
+ },
+ "gc-cws-xy-head": {
+  "alt": "Torch and copper corner group of the CWS 300 XY",
+  "variants": [
+   {
+    "w": 1134,
+    "h": 754,
+    "file": "img/gecam/gc-cws-xy-head-1134.webp",
+    "bytes": 47890
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-cws-xy-head-800.webp",
+    "bytes": 28134
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-cws-xy-head-480.webp",
+    "bytes": 14498
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-cws-xy-head-thumb.webp",
+   "bytes": 3412
+  }
+ },
+ "gc-welcor-4-path": {
+  "alt": "Largest torch path, 15-3/4 \u00d7 1-7/8 \u00d7 4-7/16\u2033 (400 \u00d7 48 \u00d7 112 mm), on a box up to 39-3/8 \u00d7 39-3/8\u2033 (1,000 \u00d7 1,000 mm)",
+  "variants": [
+   {
+    "w": 1055,
+    "h": 781,
+    "file": "img/gecam/gc-welcor-4-path-1055.webp",
+    "bytes": 32252
+   },
+   {
+    "w": 800,
+    "h": 592,
+    "file": "img/gecam/gc-welcor-4-path-800.webp",
+    "bytes": 21256
+   },
+   {
+    "w": 480,
+    "h": 355,
+    "file": "img/gecam/gc-welcor-4-path-480.webp",
+    "bytes": 10174
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 118,
+   "file": "img/gecam/gc-welcor-4-path-thumb.webp",
+   "bytes": 1754
+  }
+ },
+ "gc-cws-xy-touch": {
+  "alt": "Touch panel of the CWS 300 XY: X and Y positions, part counter, recipe number",
+  "variants": [
+   {
+    "w": 800,
+    "h": 531,
+    "file": "img/gecam/gc-cws-xy-touch-800.webp",
+    "bytes": 23232
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-cws-xy-touch-480.webp",
+    "bytes": 12084
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-cws-xy-touch-thumb.webp",
+   "bytes": 2114
+  }
+ },
+ "gc-welcor-side": {
+  "alt": "WELCOR 400 side view: torch axes, welding torch and pneumatic block \u2014 machine 87\u2033 (2,210 mm) high, 61-3/4\u2033 (1,569 mm) deep",
+  "variants": [
+   {
+    "w": 1004,
+    "h": 1210,
+    "file": "img/gecam/gc-welcor-side-1004.webp",
+    "bytes": 38676
+   },
+   {
+    "w": 800,
+    "h": 964,
+    "file": "img/gecam/gc-welcor-side-800.webp",
+    "bytes": 27808
+   },
+   {
+    "w": 480,
+    "h": 578,
+    "file": "img/gecam/gc-welcor-side-480.webp",
+    "bytes": 13972
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 133,
+   "h": 160,
+   "file": "img/gecam/gc-welcor-side-thumb.webp",
+   "bytes": 2202
+  }
+ },
+ "gc-cws-xy-copper": {
+  "alt": "Inner copper group pressing the corner from inside, torch below",
+  "variants": [
+   {
+    "w": 1068,
+    "h": 798,
+    "file": "img/gecam/gc-cws-xy-copper-1068.webp",
+    "bytes": 32046
+   },
+   {
+    "w": 800,
+    "h": 598,
+    "file": "img/gecam/gc-cws-xy-copper-800.webp",
+    "bytes": 22478
+   },
+   {
+    "w": 480,
+    "h": 359,
+    "file": "img/gecam/gc-cws-xy-copper-480.webp",
+    "bytes": 12508
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-cws-xy-copper-thumb.webp",
+   "bytes": 2964
+  }
+ },
+ "video-coxOZ3pw5P8": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-coxOZ3pw5P8-1200.webp",
+    "bytes": 30964
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-coxOZ3pw5P8-800.webp",
+    "bytes": 18904
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-coxOZ3pw5P8-480.webp",
+    "bytes": 9394
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-coxOZ3pw5P8-thumb.webp",
+   "bytes": 2330
+  }
+ },
+ "gc-welcor-front": {
+  "alt": "WELCOR 400 front view with the largest box, 39-3/8 \u00d7 39-3/8\u2033 (1,000 \u00d7 1,000 mm), corner up \u2014 machine 43-5/16\u2033 (1,100 mm) wide",
+  "variants": [
+   {
+    "w": 704,
+    "h": 1190,
+    "file": "img/gecam/gc-welcor-front-704.webp",
+    "bytes": 38444
+   },
+   {
+    "w": 480,
+    "h": 811,
+    "file": "img/gecam/gc-welcor-front-480.webp",
+    "bytes": 22828
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 95,
+   "h": 160,
+   "file": "img/gecam/gc-welcor-front-thumb.webp",
+   "bytes": 2132
+  }
+ },
+ "video-5XFJvC0i3sQ": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-5XFJvC0i3sQ-1200.webp",
+    "bytes": 20488
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-5XFJvC0i3sQ-800.webp",
+    "bytes": 12978
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-5XFJvC0i3sQ-480.webp",
+    "bytes": 7516
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-5XFJvC0i3sQ-thumb.webp",
+   "bytes": 2262
+  }
+ },
+ "video-S75RezUSMhk": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-S75RezUSMhk-1200.webp",
+    "bytes": 15978
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-S75RezUSMhk-800.webp",
+    "bytes": 9806
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-S75RezUSMhk-480.webp",
+    "bytes": 5348
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-S75RezUSMhk-thumb.webp",
+   "bytes": 1680
+  }
+ },
+ "gc-welcor": {
+  "alt": "GECAM WELCOR 400 corner welder",
+  "variants": [
+   {
+    "w": 423,
+    "h": 504,
+    "file": "img/gecam/gc-welcor-423.webp",
+    "bytes": 33136
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 134,
+   "h": 160,
+   "file": "img/gecam/gc-welcor-thumb.webp",
+   "bytes": 7222
+  },
+  "cut": "birefnet"
+ },
+ "gc-cws-xy-corner": {
+  "alt": "Box corner clamped against the copper groups, TIG torch at the seam",
+  "variants": [
+   {
+    "w": 1083,
+    "h": 719,
+    "file": "img/gecam/gc-cws-xy-corner-1083.webp",
+    "bytes": 40438
+   },
+   {
+    "w": 800,
+    "h": 531,
+    "file": "img/gecam/gc-cws-xy-corner-800.webp",
+    "bytes": 27514
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-cws-xy-corner-480.webp",
+    "bytes": 14462
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-cws-xy-corner-thumb.webp",
+   "bytes": 3366
+  }
+ },
+ "gc-cws-bend": {
+  "alt": "How the corner is bent for welding: the edges .0004\u2033 (0.01 mm) apart and centred, or overlapping by half the sheet thickness at most",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 537,
+    "file": "img/gecam/gc-cws-bend-1200.webp",
+    "bytes": 15198
+   },
+   {
+    "w": 800,
+    "h": 358,
+    "file": "img/gecam/gc-cws-bend-800.webp",
+    "bytes": 8394
+   },
+   {
+    "w": 480,
+    "h": 215,
+    "file": "img/gecam/gc-cws-bend-480.webp",
+    "bytes": 3786
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/gecam/gc-cws-bend-thumb.webp",
+   "bytes": 808
+  }
+ },
+ "gc-welcor-4-laser": {
+  "alt": "Laser sensor beside the TIG torch on the rotary actuator",
+  "variants": [
+   {
+    "w": 1000,
+    "h": 1103,
+    "file": "img/gecam/gc-welcor-4-laser-1000.webp",
+    "bytes": 65972
+   },
+   {
+    "w": 800,
+    "h": 882,
+    "file": "img/gecam/gc-welcor-4-laser-800.webp",
+    "bytes": 49802
+   },
+   {
+    "w": 480,
+    "h": 529,
+    "file": "img/gecam/gc-welcor-4-laser-480.webp",
+    "bytes": 26212
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 145,
+   "h": 160,
+   "file": "img/gecam/gc-welcor-4-laser-thumb.webp",
+   "bytes": 5090
+  }
+ },
+ "video-g3Vk4MZNTv8": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-g3Vk4MZNTv8-1200.webp",
+    "bytes": 24014
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-g3Vk4MZNTv8-800.webp",
+    "bytes": 14978
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-g3Vk4MZNTv8-480.webp",
+    "bytes": 7590
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-g3Vk4MZNTv8-thumb.webp",
+   "bytes": 1856
+  }
+ },
+ "gc-welcor-4-clamps": {
+  "alt": "Pneumatic clamps and copper pads holding the corner",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1070,
+    "file": "img/gecam/gc-welcor-4-clamps-1200.webp",
+    "bytes": 78382
+   },
+   {
+    "w": 800,
+    "h": 713,
+    "file": "img/gecam/gc-welcor-4-clamps-800.webp",
+    "bytes": 49140
+   },
+   {
+    "w": 480,
+    "h": 428,
+    "file": "img/gecam/gc-welcor-4-clamps-480.webp",
+    "bytes": 26008
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 143,
+   "file": "img/gecam/gc-welcor-4-clamps-thumb.webp",
+   "bytes": 5080
+  }
+ },
+ "gc-lorch-t250": {
+  "alt": "Lorch T-series TIG power source \u2014 GECAM offers the T 250 with its corner welders",
+  "variants": [
+   {
+    "w": 800,
+    "h": 1033,
+    "file": "img/gecam/gc-lorch-t250-800.webp",
+    "bytes": 65176
+   },
+   {
+    "w": 480,
+    "h": 620,
+    "file": "img/gecam/gc-lorch-t250-480.webp",
+    "bytes": 36616
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 124,
+   "h": 160,
+   "file": "img/gecam/gc-lorch-t250-thumb.webp",
+   "bytes": 6492
+  },
+  "cut": "birefnet"
+ },
+ "gc-welcor-4": {
+  "alt": "GECAM WELCOR 400 4-axis welding the corner of a square frame",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 801,
+    "file": "img/gecam/gc-welcor-4-1200.webp",
+    "bytes": 61088
+   },
+   {
+    "w": 800,
+    "h": 534,
+    "file": "img/gecam/gc-welcor-4-800.webp",
+    "bytes": 36900
+   },
+   {
+    "w": 480,
+    "h": 320,
+    "file": "img/gecam/gc-welcor-4-480.webp",
+    "bytes": 19824
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 107,
+   "file": "img/gecam/gc-welcor-4-thumb.webp",
+   "bytes": 3802
+  }
+ },
+ "gc-cws-xy": {
+  "alt": "GECAM CWS 300 XY two-axis corner welding machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1516,
+    "file": "img/gecam/gc-cws-xy-1200.webp",
+    "bytes": 82286
+   },
+   {
+    "w": 800,
+    "h": 1011,
+    "file": "img/gecam/gc-cws-xy-800.webp",
+    "bytes": 53112
+   },
+   {
+    "w": 480,
+    "h": 606,
+    "file": "img/gecam/gc-cws-xy-480.webp",
+    "bytes": 30728
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 127,
+   "h": 160,
+   "file": "img/gecam/gc-cws-xy-thumb.webp",
+   "bytes": 5970
+  },
+  "cut": "birefnet"
+ },
+ "gc-welcor-4-copper": {
+  "alt": "Copper group: aluminum support and copper unit, 3/8\u2033 to 7-7/8\u2033 (10 \u2013 200 mm) thick",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 541,
+    "file": "img/gecam/gc-welcor-4-copper-1200.webp",
+    "bytes": 27436
+   },
+   {
+    "w": 800,
+    "h": 360,
+    "file": "img/gecam/gc-welcor-4-copper-800.webp",
+    "bytes": 13846
+   },
+   {
+    "w": 480,
+    "h": 216,
+    "file": "img/gecam/gc-welcor-4-copper-480.webp",
+    "bytes": 6124
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/gecam/gc-welcor-4-copper-thumb.webp",
+   "bytes": 1214
+  }
+ },
+ "gc-welcor-4-panel": {
+  "alt": "Control panel with color touch screen and signal tower",
+  "variants": [
+   {
+    "w": 1000,
+    "h": 1499,
+    "file": "img/gecam/gc-welcor-4-panel-1000.webp",
+    "bytes": 60144
+   },
+   {
+    "w": 800,
+    "h": 1199,
+    "file": "img/gecam/gc-welcor-4-panel-800.webp",
+    "bytes": 42844
+   },
+   {
+    "w": 480,
+    "h": 720,
+    "file": "img/gecam/gc-welcor-4-panel-480.webp",
+    "bytes": 20170
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 107,
+   "h": 160,
+   "file": "img/gecam/gc-welcor-4-panel-thumb.webp",
+   "bytes": 2438
   }
  }
 }

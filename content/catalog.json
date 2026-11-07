@@ -160,7 +160,7 @@
   "welding-turning-rolls": "Light, adjustable and self-aligning turning rolls to 220,462 lb, pipe and fit-up rotators, pipe stands.",
   "column-and-boom-welding-manipulators": "Column and boom manipulators, 31.5 to 275.6″ lift and 39.4 to 315″ boom.",
   "welding-tables": "A fixture welding table with a 2″ hole grid and downdraft tables to 3,700 CFM.",
-  "corner-welding-machines": "Gecam TIG and plasma corner welders for bent boxes, cabinets and enclosures.",
+  "corner-welding-machines": "GECAM 1- to 4-axis TIG and plasma corner welders for bent boxes, cabinets and enclosures.",
   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding": "Gecam wide-belt deburring, edge rounding, deslagging and brush machines, 5-7/8″ to 53-1/8″ wide.",
   "corner-grinding-machines": "Gecam corner grinders for the weld seams of boxes, cabinets, doors and tube frames.",
   "pipe-sanding-polishing-machines": "Automatic, orbital and centreless pipe sanders and polishers, Ø3/16″ to Ø15-3/4″.",
@@ -168,7 +168,7 @@
   "rebar-bender-and-cutter": "GMS rebar benders, stirrup benders, rebar cutters and automatic processing lines, made in Turkey.",
   "pvc-aluminum-window-machines": "Plastmak aluminum and PVC window and door machinery — welding, cleaning, CNC machining, assembly and complete lines.",
   "belt-grinder": "Metal belt grinders with 2 – 8″ belts, disc sanders, bench grinders, chamfering machines and dust collectors.",
-  "drill-press": "Gear-head, column and variable-speed drill presses, 1/2″ to 2″ in steel, with power feed and tapping.",
+  "drill-press": "Gear-head, inverter and column drill presses, 15/16″ to 2″ in steel, with power feed and tapping.",
   "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines, keyseaters and a head resurfacer.",
   "cnc-machine-tools": "Dener CNC lathes, vertical and double-column machining centres and a surface grinder; value-line CNC lathe, VMCs and boring mills.",
   "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, multifunction machines, mortisers, a lathe and dust collection."
@@ -556,6 +556,16 @@
   },
   {
    "group": "machining",
+   "file": "files/NovoTech-Drill-Presses-Value-Line-2026.pdf",
+   "title": "NovoTech value-line drill presses"
+  },
+  {
+   "group": "machining",
+   "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+   "title": "NovoTech value-line milling machines"
+  },
+  {
+   "group": "machining",
    "file": "files/NovoTech-Dener-CNC-Lathes-2026.pdf",
    "title": "Dener CNC lathes"
   },
@@ -568,6 +578,11 @@
    "group": "machining",
    "file": "files/NovoTech-Dener-Surface-Grinder-2026.pdf",
    "title": "Dener NC surface grinder"
+  },
+  {
+   "group": "welding",
+   "file": "files/NovoTech-GECAM-Corner-Welding-Machines-2026.pdf",
+   "title": "GECAM corner welding machines, 1 to 4 axes"
   },
   {
    "group": "rebar",

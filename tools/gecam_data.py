@@ -6,10 +6,16 @@ Eurofintec name) — sold under their own brands.
 Sources: the 2026 Gecam catalogue (Catalogo_Gecam_EN_26.pdf) for every deburring machine in it; gecam.com (Oct 25) for the GT13,
 the corner grinders' belt speeds, rollers and weights, the special corner grinders and what the catalogues leave out (feed
 speeds of the pipe machines, weights, motor details); the metal-box brochure (metal_box_deburring_and_grinding_machine.pdf) for
-the CWS 200/300, 135, 136 and 131; the Eurofintec catalogue (pipe_and_sheet_metal_deburing_polishing_and_grinding_machines_
+the 135, 136 and 131; the Eurofintec catalogue (pipe_and_sheet_metal_deburing_polishing_and_grinding_machines_
 GECAM_EUROFINTEC.pdf) for the pipe machines.  Where gecam.com differs from a catalogue (older G65 / G135 / GE30 figures on the
-site, 141 Ø10 – 76 mm, 144 Ø10 – 150 mm, CWS welding speed 0 – 20 mm/s) the catalogue figure is used.  Only the pipe polishing,
-finishing and sanding machines of the Eurofintec catalogue are on the site; its ordinary belt grinders are not.
+site, 141 Ø10 – 76 mm, 144 Ø10 – 150 mm) the catalogue figure is used.  Only the pipe polishing, finishing and sanding
+machines of the Eurofintec catalogue are on the site; its ordinary belt grinders are not.
+
+Corner welders (the owner, Nov 7 2026: one section each for 1, 2, 3 and 4 axes): GECAM's technical offers to NovoTech — CWS 200 -
+300 (Feb 2024), CWS 300 2 axes XY (Sep 2020), WELCOR 400 3 axes XYZ with the 1-axis X and 2-axis XY versions (Oct 2020), WELCOR
+400 4 axis XYZ-Φ (Nov 2024) — and the WELCOR 4-axis brochure; gecam.com for the CWS work table.  Welding speed 0 – 20 mm/s in
+every offer (the metal-box brochure's 0 – 50 mm/s is no longer used).  Prices, delivery and sales terms of the offers are not
+published.
 
 Shown as imperial (metric); lengths to the nearest 1/16″ (1/32″ below 1/4″), sheet below 1/8″ as decimal inch.
 """
@@ -300,15 +306,83 @@ T_SPECIAL = table("Special corner grinders", "PLC-controlled corner grinders for
     row("Control", ["Touch-screen PLC: time and pressure", "PLC recipes", "Touch-screen PLC: time for each head"], True)])
 
 # ================================================================================================ corner welders
-T_CWS = table("CWS 200 · CWS 300", "Corner welding machines", ["CWS 200", "CWS 300"], [
-    row("Max. corner height", [one(200), one(300)], True, "external copper unit"),
-    row("Part size", ["3-15/16 × 3-15/16″ – 59-1/16 × 59-1/16″ (100 × 100 – 1,500 × 1,500 mm)"] * 2, True, "min – max"),
-    row("Work table", [size(820, 820)] * 2),
-    row("Welding speed", ["0 – 118 in/min (0 – 50 mm/s), variable"] * 2, True),
+WELD_SPEED = "0 – 47 in/min (0 – 20 mm/s), variable"
+MATERIALS = "Mild steel, stainless steel, aluminum"
+CLAMP = "Pneumatic, from inside, against copper squaring guides"
+INNER_MM = (50, 75, 100, 125, 150, 200, 300)                    # inner copper group heights of the CWS and WELCOR 400 offers
+INNER_RANGE = f"{inch(50)} – {inch(300)} (50 – 300 mm), 7 heights"
+INNER_LIST = ", ".join(inch(h) for h in INNER_MM) + f" ({', '.join(str(h) for h in INNER_MM)} mm)"
+OUTER = f"{inch(200)} or {inch(300)} (200 or 300 mm)"
+NC10 = "Numerical control, 10 work parameters stored per job"
+SIGNALS = "Missing torch, welding gas, gas protection, welding power, electrical connection or part"
+PART_MIN = size(100, 100)
+
+T_AX1 = table("1-axis corner welders", "CWS 200 · CWS 300 · WELCOR 400 X", ["CWS 200", "CWS 300", "WELCOR 400 X"], [
+    row("Torch axes", ["1 — X"] * 3, True),
+    row("Max. corner height", [one(200), one(300), one(400)], True),
+    row("Part size, min.", [PART_MIN] * 3),
+    row("Part size, max.", [size(1500, 1500)] * 2 + [size(1000, 1000)], True),
+    row("Welding speed", [WELD_SPEED] * 3, True),
+    row("Max. gap between the edges", [f"{thin(0.2)} (0.2 mm)"] * 2 + ["—"]),
+    row("Copper groups", [f"Outer {one(200)} · inner {INNER_RANGE}", f"Outer {one(300)} · inner {INNER_RANGE}",
+                          f"Outer {OUTER} · inner {INNER_RANGE}"]),
+    row("Welding process", ["TIG or plasma"] * 3, True),
+    row("Materials", [MATERIALS] * 3),
+    row("Clamping", [CLAMP] * 3),
+    row("Control", ["Touch panel, parameters stored as recipes"] * 2 + [NC10]),
+    row("Work table", [size(820, 820)] * 2 + ["—"])])
+
+T_AX2 = table("2-axis corner welders", "CWS 300 XY · WELCOR 400 XY", ["CWS 300 XY", "WELCOR 400 XY"], [
+    row("Torch axes", ["2 — X, Y"] * 2, True),
+    row("Max. corner height", [f"{inch(200)} – {inch(300)} (200 – 300 mm)", f"X {one(400)} · Y {one(110)}"], True),
+    row("Part size, min.", [PART_MIN] * 2),
+    row("Part size, max.", [size(1500, 1500), size(1000, 1000)], True),
+    row("Welding speed", [WELD_SPEED] * 2, True),
+    row("Copper groups", [f"Outer {OUTER} · inner {INNER_RANGE}"] * 2),
     row("Welding process", ["TIG or plasma"] * 2, True),
-    row("Clamping", ["Pneumatic, from inside, on copper blocks"] * 2),
-    row("Torch movement", ["Guided · 2-axis (X, Y) available"] * 2),
-    row("Control", ["CNC touch screen, stored parameters"] * 2)])
+    row("Materials", [MATERIALS] * 2),
+    row("Clamping", [CLAMP] * 2),
+    row("Control", ["Touch panel: X and Y positions, part counter, recipes", NC10]),
+    row("Work table", [size(820, 820), "—"]),
+    row("Work table, to order", [size(1000, 1000)] * 2)])
+
+T_AX3 = table("3-axis corner welder", "WELCOR 400 XYZ", ["WELCOR 400 XYZ"], [
+    row("Torch axes", ["3 — X, Y, Z"], True),
+    row("Max. corner height, X axis", [one(400)], True),
+    row("Max. corner height, Y axis", [one(110)], True),
+    row("Max. corner height, Z axis", [one(50)], True),
+    row("Part size, min.", [PART_MIN]),
+    row("Part size, max.", [size(1000, 1000)], True),
+    row("Welding speed", [WELD_SPEED], True),
+    row("Copper groups", [f"Outer {OUTER} · inner {INNER_RANGE}"]),
+    row("Welding process", ["TIG or plasma"], True),
+    row("Materials", [MATERIALS]),
+    row("Clamping", [CLAMP]),
+    row("Control", [NC10]),
+    row("Signals", [SIGNALS]),
+    row("Work table, to order", [size(1000, 1000)])])
+
+T_AX4 = table("4-axis corner welder", "WELCOR 400 XYZ-Φ", ["WELCOR 400 XYZ-Φ"], [
+    row("Torch axes", ["4 — X, Y, Z and torch rotation Φ"], True),
+    row("Max. corner height, X axis", [one(400)], True),
+    row("Max. corner height, Y axis", [one(110)], True),
+    row("Max. corner height, Z axis", [one(50)], True),
+    row("Axis travel", [f"X {inch(400)} · Y {inch(110)} · Z {inch(200)} (400 · 110 · 200 mm)"]),
+    row("Working range of an axis", [f"{inch(10)} – {inch(400)} (10 – 400 mm)"]),
+    row("Torch rotation", ["0 – 90° · from vertical to about 120° to the job"], True),
+    row("Part size, min.", [f"{PART_MIN} · smallest box {one(50)} high"]),
+    row("Part size, max.", [size(1000, 1000)], True),
+    row("Max. torch path", [f"{inch(400)[:-1]} × {inch(48)[:-1]} × {inch(112)} (400 × 48 × 112 mm)"]),
+    row("Welding speed", [WELD_SPEED], True),
+    row("Seam reading", ["Laser sensor beside the torch: edges checked, path memorized, then welded"], True),
+    row("Control", ["Color touch screen with a drawing of the welding process · programs saved · automatic welding program"]),
+    row("Work parameters", ["10 per job"]),
+    row("Signals", [SIGNALS]),
+    row("Clamping", ["Pneumatic, positioning the flaps"]),
+    row("Copper groups", [f"Modular: aluminum support + copper unit, {inch(10)} – {inch(200)} (10 – 200 mm) thick"]),
+    row("Welding process", ["TIG or plasma"], True),
+    row("Materials", [MATERIALS]),
+    row("Dimensions L × W × H", [dims(1500, 1200, 2500)])])
 
 # ================================================================================================ pipe (Eurofintec)
 T_141_144 = table("141 · 144", "Orbital pipe sanders", ["141", "144"], [
@@ -373,7 +447,13 @@ NOTE_PIPE = ("Tube capacities are outside diameters. Metric values in brackets a
              "speeds. Dimensions are overall L × W × H.")
 NOTE_CORNER = ("Belt speeds are surface speeds; the corner grinders run at two speeds, the higher for steel and the lower for stainless "
                "and aluminum. Metric values in brackets are the manufacturer's figures.")
-NOTE_WELD = ("The CWS works with a TIG or plasma welding power source. Metric values in brackets are the manufacturer's figures.")
+BEND_RULE = ("Bend the corner so the two edges meet on it — .0004″ (0.01 mm) apart and centred on the corner — or, where the "
+             "bend does not allow it, so they overlap by half the sheet thickness at most.")
+NOTE_WELD = ("Corner height is the longest corner seam the torch welds, on each axis. The welding power source is not included: GECAM "
+             "offers the Lorch T 250 TIG source, and the machines also work with a plasma source. " + BEND_RULE +
+             " Metric values in brackets are the manufacturer's figures.")
+NOTE_WELD4 = (NOTE_WELD + f" The WELCOR 4-axis brochure gives {size(150, 150)} as the smallest workable part, the technical "
+              f"specification {PART_MIN} — send us the part to confirm.")
 NOTE_SPECIAL = ("Special machines are configured for the part: send a drawing of the box or frame and the weld to be removed for a quote. "
                 "Metric values in brackets are the manufacturer's figures.")
 
@@ -661,26 +741,138 @@ FAMILIES = [
                          "Six-head grinder": ["Boxes to 5-7/8″ high", "—", "~30 s per 2 corners", "6 belt heads", "—"],
                          "Tube-frame grinder": ["Tube 3/4″ – 3-1/8″ square", "—", "4 sides per cycle", "4 belt heads", "—"]}, NOTE_SPECIAL)),
     # ------------------------------------------------------------------------------------------ corner welders
-    fam("gecam-cws", "gc-weld", P_WELD, GECAM,
-        "CWS 200 · CWS 300 corner welding machines for bent boxes, parts to 59 × 59″", "CWS 200 · CWS 300", "CWS 200 · CWS 300 · 2 models",
-        "Welds the corners of bent boxes, cabinets, trays and enclosures in mild steel, stainless and aluminum with a TIG or plasma "
-        "torch moved by the machine instead of by hand. The operator places the part with its corner against the external copper "
-        "guide and presses the clamp button — a pneumatic cylinder anchors it from inside against copper blocks that hold the corner "
-        "and draw the heat away — then presses start: the torch goes to the start point and welds the corner at the set speed. The "
-        "parameters of each part are stored on the CNC touch screen. Corners 7-7/8″ high on the CWS 200 and 11-13/16″ on the CWS "
-        "300, parts from 3-15/16 × 3-15/16″ to 59 × 59″; two-axis torch movement is available.",
-        "Corners 7-7/8″ and 11-13/16″ high · parts 3-15/16″ – 59″ square · TIG or plasma · CNC touch screen",
-        ["Guide system for the torch; welding speed variable 0 – 118 in/min (0 – 50 mm/s)",
-         "Pneumatic clamping from inside against copper blocks: the corner is held in place and kept cool",
-         "Copper group: external unit 7-7/8″ or 11-13/16″ (200 / 300 mm) high and an internal unit matched to the corner height",
-         "CNC with touch screen; work and torch parameters stored for repeat parts",
-         "Mild steel, stainless steel and aluminum; for a TIG or plasma welding power source",
-         "Work table 32-5/16 × 32-5/16″ (820 × 820 mm)",
+    # one section each for 1, 2, 3 and 4 axes, top to bottom (the owner, Nov 7 2026)
+    fam("gecam-cws", "gc-weld-1", P_WELD, GECAM,
+        "CWS 200 · CWS 300 · WELCOR 400 X 1-axis corner welders, corners to 15-3/4″ high", "CWS 200 · CWS 300 · WELCOR 400 X",
+        "CWS 200 · CWS 300 · WELCOR 400 X · 3 models",
+        "The torch is driven along one axis at a set speed and welds the straight corner seam of bent boxes, cabinets, trays and "
+        "enclosures in mild steel, stainless steel and aluminum — with a TIG or a plasma source, instead of by hand. The operator "
+        "places the part on the table with its corner against the external copper squaring guide and presses the lock button: a "
+        "pneumatic cylinder presses it from inside against the copper guides, which hold the corner square and keep the heat of the "
+        "part down. Start, and the machine welds the corner with the parameters of the recipe; release, and the next part goes in. The "
+        "CWS 200 and CWS 300 take parts from 3-15/16 × 3-15/16″ to 59-1/16 × 59-1/16″ with corners 7-7/8″ or 11-13/16″ high; the "
+        "WELCOR 400 X welds corners up to 15-3/4″ high on parts to 39-3/8 × 39-3/8″.",
+        "One axis · corners 7-7/8″, 11-13/16″ or 15-3/4″ high · parts to 59″ square · TIG or plasma, 0 – 47 in/min",
+        ["Welded steel base with guides that carry and move the torch unit",
+         "Torch speed variable 0 – 47 in/min (0 – 20 mm/s), with acceleration and deceleration ramps",
+         "Pneumatic clamping from inside against copper squaring guides that keep the heat of the part down",
+         f"Copper groups: outer unit {OUTER} high; inner unit {INNER_LIST}",
+         "CWS recipes: torch speed and its acceleration and deceleration ramps on the touch panel; welding current, start and end "
+         "current ramps and gas pre-flow and post-flow on the welding power source",
+         "WELCOR 400 X: numerical control storing 10 work parameters per job; signals a missing torch, gas, power or part",
+         "Mild steel, stainless steel and aluminum; works with a TIG or a plasma welding power source",
+         f"CWS: work table {size(820, 820)}; gap between the edges {thin(0.2)} (0.2 mm) at most",
          VOLT],
-        ["Two-axis (X, Y) torch movement", "Cooling unit for the copper blocks — recommended to avoid discoloration of the weld zone", VOLT_OPT],
-        ["gc-cws", "gc-cws-welding", "gc-cws-copper", "gc-cws-stop", "gc-cws-touch", "gc-cws-bent", "gc-cws-welded", "gc-cws-boxes"],
-        spec(T_CWS, {"CWS 200": ["Corners to 7-7/8″ high", "Parts to 59 × 59″", "0 – 118 in/min", "TIG or plasma torch", "—"],
-                     "CWS 300": ["Corners to 11-13/16″ high", "Parts to 59 × 59″", "0 – 118 in/min", "TIG or plasma torch", "—"]}, NOTE_WELD)),
+        ["Inner copper groups with cooling — recommended to avoid dark marks on the parts",
+         "Special inner copper group designed for your part",
+         f"Work table {size(1000, 1000)} (WELCOR 400 X)",
+         "Lorch T 250 TIG power source with cooling unit: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+         "Torch group with 9′10″ (3 m) cable",
+         VOLT_OPT],
+        ["gc-cws", "gc-cws-welding", "gc-cws-welded", "gc-cws-copper", "gc-cws-stop", "gc-cws-touch", "gc-cws-bent", "gc-cws-boxes",
+         "gc-cws-bend", "gc-welcor", "gc-lorch-t250"],
+        spec(T_AX1, {"CWS 200": ["Corners to 7-7/8″ high", "Parts to 59 × 59″", "0 – 47 in/min", "1 axis · TIG or plasma", "—"],
+                     "CWS 300": ["Corners to 11-13/16″ high", "Parts to 59 × 59″", "0 – 47 in/min", "1 axis · TIG or plasma", "—"],
+                     "WELCOR 400 X": ["Corners to 15-3/4″ high", "Parts to 39-3/8 × 39-3/8″", "0 – 47 in/min", "1 axis · TIG or plasma", "—"]},
+             NOTE_WELD)),
+    fam("gecam-cws-xy", "gc-weld-2", P_WELD, GECAM,
+        "CWS 300 XY · WELCOR 400 XY 2-axis corner welders, parts to 59 × 59″", "CWS 300 XY · WELCOR 400 XY",
+        "CWS 300 XY · WELCOR 400 XY · 2 models",
+        "Here the torch is driven on two axes, X and Y. The CWS 300 XY takes parts from 3-15/16 × 3-15/16″ to 59-1/16 × 59-1/16″ with "
+        "corners 7-7/8″ to 11-13/16″ high; its touch panel shows the X and Y positions, counts the parts and calls up the recipe. The "
+        "WELCOR 400 XY welds corners up to 15-3/4″ on X and 4-5/16″ on Y — a seam that runs in two directions, in one cycle — on parts "
+        "to 39-3/8 × 39-3/8″. The rest works as on the one-axis machines: the part is clamped pneumatically from inside against copper "
+        "squaring guides, the torch welds at 0 to 47 in/min with a TIG or a plasma source, and the parameters of each part are stored.",
+        "Two axes, X and Y · CWS 300 XY parts to 59″ square · WELCOR 400 XY corners 15-3/4″ on X, 4-5/16″ on Y",
+        ["Torch driven on two axes, X and Y; on the WELCOR 400 XY corners up to 15-3/4″ (400 mm) on X and 4-5/16″ (110 mm) on Y",
+         "Welding speed variable 0 – 47 in/min (0 – 20 mm/s), with acceleration and deceleration ramps",
+         "Welded steel base with guides that carry and move the torch unit",
+         "Pneumatic clamping from inside against copper squaring guides that keep the heat of the part down",
+         f"Copper groups: outer unit {OUTER} high; inner unit {INNER_LIST}",
+         "CWS 300 XY: touch panel with the X and Y positions, part counter and recipe number; welding current, current ramps and gas "
+         "flow set on the welding power source",
+         "WELCOR 400 XY: numerical control storing 10 work parameters per job; signals a missing torch, gas, power or part",
+         "Mild steel, stainless steel and aluminum; TIG or plasma",
+         f"CWS 300 XY: work table {size(820, 820)}",
+         VOLT],
+        [f"Work table {size(1000, 1000)}",
+         "Special inner copper group designed for your part",
+         "Inner copper group with cooling",
+         "Lorch T 250 TIG power source with cooling unit: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+         "Torch group with 9′10″ (3 m) cable",
+         VOLT_OPT],
+        ["gc-cws-xy", "gc-cws-xy-corner", "gc-cws-xy-head", "gc-cws-xy-touch", "gc-cws-xy-copper", "gc-welcor"],
+        spec(T_AX2, {"CWS 300 XY": ["Corners to 11-13/16″ high", "Parts to 59 × 59″", "0 – 47 in/min", "2 axes · TIG or plasma", "—"],
+                     "WELCOR 400 XY": ["Corners 15-3/4″ X · 4-5/16″ Y", "Parts to 39-3/8 × 39-3/8″", "0 – 47 in/min", "2 axes · TIG or plasma", "—"]},
+             NOTE_WELD)),
+    fam("gecam-welcor-xyz", "gc-weld-3", P_WELD, GECAM,
+        "WELCOR 400 XYZ 3-axis corner welder for seams in three directions, parts to 39-3/8 × 39-3/8″", "WELCOR 400 XYZ",
+        "WELCOR 400 XYZ · 3 axes",
+        "With three driven axes — X, Y and Z — the torch follows a corner seam that runs in three directions and welds it in one cycle: "
+        "up to 15-3/4″ on X, 4-5/16″ on Y and 1-15/16″ on Z, on parts from 3-15/16 × 3-15/16″ to 39-3/8 × 39-3/8″. The numerical "
+        "control stores the work parameters of each job — torch speed with its acceleration and deceleration ramps, the welding speed "
+        "set on the machine, interruptions of the weld, welding power and welding speed ramps up and down, power supply, shielding gas "
+        "and cooling of the part during welding — and the machine signals a missing torch, welding gas, gas protection, welding power, "
+        "electrical connection or part. The part is clamped pneumatically from inside against copper squaring guides; TIG or plasma, "
+        "0 to 47 in/min.",
+        "Three axes, X, Y and Z · corners 15-3/4″ X, 4-5/16″ Y, 1-15/16″ Z · parts to 39-3/8″ square",
+        ["Torch driven on three axes: corners up to 15-3/4″ (400 mm) on X, 4-5/16″ (110 mm) on Y and 1-15/16″ (50 mm) on Z",
+         "Welding speed variable 0 – 47 in/min (0 – 20 mm/s), adjusted directly on the machine",
+         "Ten work parameters stored per job: torch speed, acceleration and deceleration ramps, welding speed, weld interruption, "
+         "welding power ramps up and down, welding speed ramps up and down, power supply on/off, shielding gas on/off, cooling of the "
+         "part during welding",
+         "Signals a missing torch, welding gas, gas protection, welding power, electrical connection or part",
+         "Welded steel base with guides that carry and move the torch unit",
+         f"Pneumatic clamping from inside against copper squaring guides; outer copper unit {OUTER}, inner unit {INNER_LIST}",
+         "Mild steel, stainless steel and aluminum; TIG or plasma",
+         VOLT],
+        [f"Work table {size(1000, 1000)}",
+         "Special inner copper group designed to the drawing of your part",
+         "Cooling unit for the inner copper group",
+         "External cooling unit",
+         "Lorch T 250 TIG power source: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+         "Torch group with 9′10″ (3 m) cable",
+         VOLT_OPT],
+        ["gc-welcor", "gc-welcor-front", "gc-welcor-side"],
+        spec(T_AX3, {"WELCOR 400 XYZ": ["Corners 15-3/4″ X · 4-5/16″ Y · 1-15/16″ Z", "Parts to 39-3/8 × 39-3/8″", "0 – 47 in/min",
+                                        "3 axes · TIG or plasma", "—"]}, NOTE_WELD)),
+    fam("gecam-welcor-4", "gc-weld-4", P_WELD, GECAM,
+        "WELCOR 400 XYZ-Φ 4-axis corner welder with laser seam reading, parts to 39-3/8 × 39-3/8″", "WELCOR 400 XYZ-Φ",
+        "WELCOR 400 XYZ-Φ · 4 axes",
+        "The three axes of the WELCOR 400 XYZ and a fourth: the torch is mounted on a rotary actuator that sets its angle in each phase "
+        "of the weld, from vertical to about 120° as the job needs. Before it welds, the torch runs along the weld line while a laser "
+        "sensor beside it checks that the edges are straight and how long they are; the machine memorizes the path and then welds it — "
+        "a self-learning system that finds the corners by itself. Programs are saved for repeat work, the automatic welding program "
+        "makes the machine easy to run even for operators who are not welders, and the color touch screen draws the welding process to "
+        "help pick the right parameters. Pneumatic clamping positions the flaps; modular copper pads, matched to the size of the box, "
+        "carry off the heat and limit burning of the part. Parts from 3-15/16 × 3-15/16″ to 39-3/8 × 39-3/8″, the smallest box "
+        "1-15/16″ high; torch path up to 15-3/4 × 1-7/8 × 4-7/16″.",
+        "Four axes, X, Y, Z and torch rotation · laser seam reading · parts to 39-3/8″ square · 0 – 47 in/min",
+        ["Four axes: X, Y, Z and torch rotation Φ — travel 15-3/4″ (400 mm) on X, 4-5/16″ (110 mm) on Y, 7-7/8″ (200 mm) on Z",
+         "Torch on a rotary actuator, 0 – 90°: its angle is set for each phase of the weld, from vertical to about 120° to the job",
+         "Laser sensor beside the torch: the torch runs the weld line first, the laser checks the straightness and length of the "
+         "edges, the path is memorized, then welded",
+         "Color touch screen with a drawing of the welding process; programs saved for repeat parts; automatic welding program for "
+         "operators who are not welders",
+         "Ten work parameters per job — torch speed and its ramps, welding speed, weld interruption, welding power and speed ramps, "
+         "power supply, shielding gas, cooling of the part",
+         "Signals a missing torch, welding gas, gas protection, welding power, electrical connection or part",
+         "Pneumatic clamping that positions the flaps; modular copper groups — aluminum support and copper unit — "
+         + ", ".join(inch(t) for t in (10, 20, 25, 30, 50, 100, 200)) + " (10, 20, 25, 30, 50, 100, 200 mm) thick, matched to the box",
+         "Welding speed variable 0 – 47 in/min (0 – 20 mm/s)",
+         "Mild steel, stainless steel and aluminum; TIG or plasma",
+         f"Overall dimensions {dims(1500, 1200, 2500)}",
+         VOLT],
+        ["Lorch T 250 TIG power source: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+         "External cooling unit",
+         "Torch group with 9′10″ (3 m) cable",
+         "Special inner copper group designed to the drawing of your part",
+         "Cooling unit for the inner copper group",
+         VOLT_OPT],
+        ["gc-welcor-4", "gc-welcor-4-laser", "gc-welcor-4-clamps", "gc-welcor-4-panel", "gc-welcor-4-copper", "gc-welcor-4-path",
+         "gc-welcor-side"],
+        spec(T_AX4, {"WELCOR 400 XYZ-Φ": ["Corners 15-3/4″ X · 4-5/16″ Y · 1-15/16″ Z", "Parts to 39-3/8 × 39-3/8″", "0 – 47 in/min",
+                                          "4 axes · laser seam reading", "—"]}, NOTE_WELD4)),
     # ------------------------------------------------------------------------------------------ pipe sanding & polishing (Eurofintec)
     fam("eurofintec-141-144", "ef-orbital", P_PIPE, EURO,
         "141 · 144 orbital pipe sanders for straight and bent tube, Ø3/8″ – 5-7/8″", "141 · 144", "141 · 144 · 2 models",
@@ -805,7 +997,8 @@ VIDEOS = {
     "gecam-gcb": [("8wLm7uOQRnA", "GCB 25 RR cross-belt deburring"), ("8Z8EFZOkpXI", "Double crossed belt on bent plate")],
     "gecam-135": [("tOxkUm2lGZo", "GECAM 135 grinding box corners"), ("J6m2o9B1Ka4", "GECAM 135 on a corner weld seam"),
                   ("ZzlXT-qjUOc", "GECAM 135 two-head version"), ("TTCL4SnvtKI", "GECAM 135 PLUS"), ("VPEpu74z84I", "GECAM 135 corner seam grinding"),
-                  ("7RM52FGLZag", "GECAM 135 belt change")],
+                  ("7RM52FGLZag", "GECAM 135 belt change"),
+                  ("S75RezUSMhk", "GECAM 135 weld seam corner sander")],      # NovoTech channel short, added Nov 7 2026 (the owner)
     "gecam-131": [("bDsDqFoJ5l4", "GECAM 131 corner grinder"), ("cnQful7fLsI", "GECAM 131 with oscillating head"),
                   ("XSrlMJ_lmME", "GECAM 131 box weld seam sanding"), ("pRvYJVhLOkE", "GECAM 131 on a stainless box"),
                   ("y0gMB7J6F_E", "GECAM 131 box seam grinding"), ("7sG_9LqdVNM", "GECAM 131 on a door corner"),
@@ -814,8 +1007,12 @@ VIDEOS = {
                   ("1MDSGr0PKgg", "GECAM 136 oscillating head on a box seam")],      # NovoTech channel short, added Nov 7 2026
     "gecam-corner-special": [("J5LT42sqaRw", "Six-head corner grinder"), ("QLv9H4YqNoc", "Automatic weld seam grinder for electrical panels"),
                              ("CK-pAsAkwrg", "Weld seam grinder for electrical panels"), ("YH0_0xBvYb4", "Special weld seam corner grinder")],
-    "gecam-cws": [("31eDB7VrF6I", "CWS 200 / 300 one-axis corner welding"), ("x_qoKWRnEwA", "Two-axis corner welding"),
-                  ("R48m8-Np9XU", "Automatic corner welding"), ("QTZDWAw4wu0", "Corner welding system at work")],
+    "gecam-cws": [("31eDB7VrF6I", "CWS 200 / 300 one-axis corner welding"), ("R48m8-Np9XU", "Automatic corner welding"),
+                  ("QTZDWAw4wu0", "Corner welding system at work")],
+    "gecam-cws-xy": [("x_qoKWRnEwA", "Two-axis corner welding system")],
+    # no 3-axis video on NovoTech's channel; dS1XpDtHjDM (Jun 2025) is a re-upload of g3Vk4MZNTv8
+    "gecam-welcor-4": [("g3Vk4MZNTv8", "WELCOR 4-axis: laser scanning of the seam, then welding"),
+                       ("coxOZ3pw5P8", "4-axis WELCOR corner welding machine")],
     "eurofintec-141-144": [("bBTOXVG-XkA", "141 pipe sander"), ("Ct6iF4KiDts", "141 small tube deburring and finishing"),
                            ("Ds_wymTW1Bs", "144 orbital pipe sander"), ("qsHhvHH5IOw", "144 pipe polishing"),
                            ("reRZfVQBCF8", "144 polishing aluminum tube")],
@@ -830,6 +1027,9 @@ VIDEOS = {
 }
 for _f in FAMILIES:
     _f["videos"] = vids(*VIDEOS.get(_f["id"], ()))
+# the brochure's series tab of the corner welders: the number of axes, as the page's sections
+for _f, _s in zip([f for f in FAMILIES if f["page"] == P_WELD], ("1-axis", "2-axis", "3-axis", "4-axis")):
+    _f["series"] = _s
 
 
 def families(page=None):

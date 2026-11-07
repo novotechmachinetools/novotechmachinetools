@@ -178,10 +178,10 @@ GUIDES = [
       "Positioner or turning rolls, rating for weight and off-centre loads, the table speed formula, chucks and torch holders, and "
       "pipe stands and supports."),
     G("corner-welding-machines", "corner-welding-guide.html", "Corner welding machine buying guide", "welding",
-      "What we explain to customers before they buy a corner welding machine: what it does, why the copper blocks matter, which "
-      "parts fit, and TIG or plasma. " + BY,
-      "Welding the corners of bent boxes by machine: the copper blocks, part sizes, and TIG or plasma with the right power "
-      "source."),
+      "What we explain to customers before they buy a corner welding machine: what it does, 1, 2, 3 or 4 axes, why the copper "
+      "matters, how to bend the corner, which parts fit, and TIG or plasma. " + BY,
+      "Welding the corners of bent boxes by machine: 1, 2, 3 or 4 axes, the copper groups, how to bend the corner, part sizes, and "
+      "TIG or plasma with the right power source."),
     # ------------------------------------------------------------------------------------------- presses
     G("hydraulic-press", "hydraulic-press-guide.html", "Hydraulic press buying guide", "presses",
       "What we explain to customers before they buy a hydraulic press: the tonnage for pressing, straightening and bending, "

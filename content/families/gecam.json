@@ -20,7 +20,11 @@
   "eurofintec-128dl",
   "eurofintec-228",
   "eurofintec-728",
-  "gecam-cws"
+  "eurofintec-143",
+  "gecam-cws",
+  "gecam-cws-xy",
+  "gecam-welcor-xyz",
+  "gecam-welcor-4"
  ],
  "families": {
   "gecam-g15-g30": {
@@ -223,7 +227,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-belt"
   },
@@ -486,7 +490,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-belt"
   },
@@ -659,7 +663,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-belt"
   },
@@ -843,7 +847,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-wet"
   },
@@ -1031,7 +1035,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-round"
   },
@@ -1252,7 +1256,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-round"
   },
@@ -1432,7 +1436,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-slag"
   },
@@ -1616,7 +1620,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-brush"
   },
@@ -1741,7 +1745,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-bench"
   },
@@ -1927,7 +1931,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-bench"
   },
@@ -2126,7 +2130,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-corner"
   },
@@ -2313,7 +2317,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-corner"
   },
@@ -2500,12 +2504,18 @@
      "title": "GECAM 135 belt change",
      "duration": "PT0M48S",
      "thumb": "video-7RM52FGLZag"
+    },
+    {
+     "id": "S75RezUSMhk",
+     "title": "GECAM 135 weld seam corner sander",
+     "duration": "PT0M54S",
+     "thumb": "video-S75RezUSMhk"
     }
    ],
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-corner"
   },
@@ -2685,7 +2695,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "gc-corner-special"
   },
@@ -3041,7 +3051,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "ef-orbital"
   },
@@ -3251,7 +3261,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "ef-centreless"
   },
@@ -3422,7 +3432,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "ef-centreless"
   },
@@ -3546,7 +3556,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "ef-centreless"
   },
@@ -3677,113 +3687,289 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "size": "PDF · 12 MB · imperial units"
    },
    "group": "ef-brush"
   },
-  "gecam-cws": {
-   "id": "gecam-cws",
-   "brand": "gecam",
-   "name": "CWS 200 · CWS 300 corner welding machines for bent boxes, parts to 59 × 59″",
-   "short": "CWS 200 · CWS 300",
-   "models_label": "CWS 200 · CWS 300 · 2 models",
-   "summary": "Welds the corners of bent boxes, cabinets, trays and enclosures in mild steel, stainless and aluminum with a TIG or plasma torch moved by the machine instead of by hand. The operator places the part with its corner against the external copper guide and presses the clamp button — a pneumatic cylinder anchors it from inside against copper blocks that hold the corner and draw the heat away — then presses start: the torch goes to the start point and welds the corner at the set speed. The parameters of each part are stored on the CNC touch screen. Corners 7-7/8″ high on the CWS 200 and 11-13/16″ on the CWS 300, parts from 3-15/16 × 3-15/16″ to 59 × 59″; two-axis torch movement is available.",
-   "headline": "Corners 7-7/8″ and 11-13/16″ high · parts 3-15/16″ – 59″ square · TIG or plasma · CNC touch screen",
+  "eurofintec-143": {
+   "id": "eurofintec-143",
+   "brand": "eurofintec",
+   "name": "143 tube end deburring machine — pipe and tube ends deburred inside and outside, Ø13/16″ – 4-3/4″",
+   "short": "143 tube end deburring",
+   "models_label": "143",
+   "summary": "Deburrs the cut ends of stainless tube and profiles inside and outside in one cycle: the tube end goes into an adjustable central prism against a wire brush that turns while its own axis rotates, changing direction so every edge is deburred evenly — on ends cut at 90° or 45° and on bent parts, round tube Ø13/16″ to Ø4-3/4″ and square 13/16″ to 4-3/4″.",
+   "headline": "Tube ends Ø13/16″ – 4-3/4″, round and square · inside and outside in one cycle",
    "features": [
-    "Guide system for the torch; welding speed variable 0 – 118 in/min (0 – 50 mm/s)",
-    "Pneumatic clamping from inside against copper blocks: the corner is held in place and kept cool",
-    "Copper group: external unit 7-7/8″ or 11-13/16″ (200 / 300 mm) high and an internal unit matched to the corner height",
-    "CNC with touch screen; work and torch parameters stored for repeat parts",
-    "Mild steel, stainless steel and aluminum; for a TIG or plasma welding power source",
-    "Work table 32-5/16 × 32-5/16″ (820 × 820 mm)",
+    "Wire brush Ø9-13/16 × 3-15/16″ (250 × 100 mm); two brush speeds and two speeds of brush-axis rotation",
+    "Inside and outside of the tube end in one cycle; ends cut at 90° and 45°, bent parts too",
+    "Entry with adjustable central prism",
+    "Round tube Ø13/16″ – 4-3/4″ (20 – 120 mm), square 13/16″ – 4-3/4″",
     "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Two-axis (X, Y) torch movement",
-    "Cooling unit for the copper blocks — recommended to avoid discoloration of the weld zone",
     "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
    ],
    "images": [
-    "gc-cws",
-    "gc-cws-welding",
-    "gc-cws-copper",
-    "gc-cws-stop",
-    "gc-cws-touch",
-    "gc-cws-bent",
-    "gc-cws-welded",
-    "gc-cws-boxes"
+    "ef-143",
+    "ef-143-front",
+    "ef-143-brush",
+    "ef-143-45"
    ],
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "CWS 200 · CWS 300",
-      "sub": "Corner welding machines",
+      "title": "143",
+      "sub": "Tube-end deburring machine",
       "models": [
-       "CWS 200",
-       "CWS 300"
+       "143"
       ],
       "rows": [
        {
-        "label": "Max. corner height",
-        "sub": "external copper unit",
-        "cells": [
-         "7-7/8″ (200 mm)",
-         "11-13/16″ (300 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Part size",
-        "sub": "min – max",
-        "cells": [
-         "3-15/16 × 3-15/16″ – 59-1/16 × 59-1/16″ (100 × 100 – 1,500 × 1,500 mm)",
-         "3-15/16 × 3-15/16″ – 59-1/16 × 59-1/16″ (100 × 100 – 1,500 × 1,500 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Work table",
+        "label": "Tube size",
         "sub": "",
         "cells": [
-         "32-5/16 × 32-5/16″ (820 × 820 mm)",
-         "32-5/16 × 32-5/16″ (820 × 820 mm)"
+         "Round Ø13/16″ – 4-3/4″ (20 – 120 mm) · square 13/16″ – 4-3/4″ (20 – 120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Brush",
+        "sub": "",
+        "cells": [
+         "Wire, Ø9-13/16″ (250 mm), 3-15/16″ (100 mm) wide"
+        ],
+        "key": true
+       },
+       {
+        "label": "Brush speed",
+        "sub": "",
+        "cells": [
+         "2 speeds · brush axis rotation 2 speeds"
         ],
         "key": false
+       },
+       {
+        "label": "Work",
+        "sub": "",
+        "cells": [
+         "Tube ends cut at 90° and 45°, inside and outside in one cycle"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "4.4 / 6 HP (3.3 / 4.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 37 × 55″ (700 × 930 × 1,400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "816 lb (370 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "143",
+      "glance": [
+       "Tube ends Ø13/16″ – 4-3/4″",
+       "—",
+       "Hand-fed",
+       "Wire brush Ø9-13/16″",
+       "816 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Tube capacities are outside diameters. Metric values in brackets are the manufacturer's figures; belt speeds are surface speeds. Dimensions are overall L × W × H."
+   },
+   "videos": [
+    {
+     "id": "3-jRbQS-rs4",
+     "title": "143 tube-end deburring",
+     "duration": "PT1M50S",
+     "thumb": "video-3-jRbQS-rs4"
+    }
+   ],
+   "pdf": {
+    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
+    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
+    "size": "PDF · 12 MB · imperial units"
+   },
+   "group": "ef-tube-end"
+  },
+  "gecam-cws": {
+   "id": "gecam-cws",
+   "brand": "gecam",
+   "name": "CWS 200 · CWS 300 · WELCOR 400 X 1-axis corner welders, corners to 15-3/4″ high",
+   "short": "CWS 200 · CWS 300 · WELCOR 400 X",
+   "models_label": "CWS 200 · CWS 300 · WELCOR 400 X · 3 models",
+   "summary": "The torch is driven along one axis at a set speed and welds the straight corner seam of bent boxes, cabinets, trays and enclosures in mild steel, stainless steel and aluminum — with a TIG or a plasma source, instead of by hand. The operator places the part on the table with its corner against the external copper squaring guide and presses the lock button: a pneumatic cylinder presses it from inside against the copper guides, which hold the corner square and keep the heat of the part down. Start, and the machine welds the corner with the parameters of the recipe; release, and the next part goes in. The CWS 200 and CWS 300 take parts from 3-15/16 × 3-15/16″ to 59-1/16 × 59-1/16″ with corners 7-7/8″ or 11-13/16″ high; the WELCOR 400 X welds corners up to 15-3/4″ high on parts to 39-3/8 × 39-3/8″.",
+   "headline": "One axis · corners 7-7/8″, 11-13/16″ or 15-3/4″ high · parts to 59″ square · TIG or plasma, 0 – 47 in/min",
+   "features": [
+    "Welded steel base with guides that carry and move the torch unit",
+    "Torch speed variable 0 – 47 in/min (0 – 20 mm/s), with acceleration and deceleration ramps",
+    "Pneumatic clamping from inside against copper squaring guides that keep the heat of the part down",
+    "Copper groups: outer unit 7-7/8″ or 11-13/16″ (200 or 300 mm) high; inner unit 1-15/16″, 2-15/16″, 3-15/16″, 4-15/16″, 5-7/8″, 7-7/8″, 11-13/16″ (50, 75, 100, 125, 150, 200, 300 mm)",
+    "CWS recipes: torch speed and its acceleration and deceleration ramps on the touch panel; welding current, start and end current ramps and gas pre-flow and post-flow on the welding power source",
+    "WELCOR 400 X: numerical control storing 10 work parameters per job; signals a missing torch, gas, power or part",
+    "Mild steel, stainless steel and aluminum; works with a TIG or a plasma welding power source",
+    "CWS: work table 32-5/16 × 32-5/16″ (820 × 820 mm); gap between the edges .008″ (0.2 mm) at most",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Inner copper groups with cooling — recommended to avoid dark marks on the parts",
+    "Special inner copper group designed for your part",
+    "Work table 39-3/8 × 39-3/8″ (1,000 × 1,000 mm) (WELCOR 400 X)",
+    "Lorch T 250 TIG power source with cooling unit: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+    "Torch group with 9′10″ (3 m) cable",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-cws",
+    "gc-cws-welding",
+    "gc-cws-welded",
+    "gc-cws-copper",
+    "gc-cws-stop",
+    "gc-cws-touch",
+    "gc-cws-bent",
+    "gc-cws-boxes",
+    "gc-cws-bend",
+    "gc-welcor",
+    "gc-lorch-t250"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "1-axis corner welders",
+      "sub": "CWS 200 · CWS 300 · WELCOR 400 X",
+      "models": [
+       "CWS 200",
+       "CWS 300",
+       "WELCOR 400 X"
+      ],
+      "rows": [
+       {
+        "label": "Torch axes",
+        "sub": "",
+        "cells": [
+         "1 — X",
+         "1 — X",
+         "1 — X"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height",
+        "sub": "",
+        "cells": [
+         "7-7/8″ (200 mm)",
+         "11-13/16″ (300 mm)",
+         "15-3/4″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part size, min.",
+        "sub": "",
+        "cells": [
+         "3-15/16 × 3-15/16″ (100 × 100 mm)",
+         "3-15/16 × 3-15/16″ (100 × 100 mm)",
+         "3-15/16 × 3-15/16″ (100 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Part size, max.",
+        "sub": "",
+        "cells": [
+         "59-1/16 × 59-1/16″ (1,500 × 1,500 mm)",
+         "59-1/16 × 59-1/16″ (1,500 × 1,500 mm)",
+         "39-3/8 × 39-3/8″ (1,000 × 1,000 mm)"
+        ],
+        "key": true
        },
        {
         "label": "Welding speed",
         "sub": "",
         "cells": [
-         "0 – 118 in/min (0 – 50 mm/s), variable",
-         "0 – 118 in/min (0 – 50 mm/s), variable"
+         "0 – 47 in/min (0 – 20 mm/s), variable",
+         "0 – 47 in/min (0 – 20 mm/s), variable",
+         "0 – 47 in/min (0 – 20 mm/s), variable"
         ],
         "key": true
+       },
+       {
+        "label": "Max. gap between the edges",
+        "sub": "",
+        "cells": [
+         ".008″ (0.2 mm)",
+         ".008″ (0.2 mm)",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Copper groups",
+        "sub": "",
+        "cells": [
+         "Outer 7-7/8″ (200 mm) · inner 1-15/16″ – 11-13/16″ (50 – 300 mm), 7 heights",
+         "Outer 11-13/16″ (300 mm) · inner 1-15/16″ – 11-13/16″ (50 – 300 mm), 7 heights",
+         "Outer 7-7/8″ or 11-13/16″ (200 or 300 mm) · inner 1-15/16″ – 11-13/16″ (50 – 300 mm), 7 heights"
+        ],
+        "key": false
        },
        {
         "label": "Welding process",
         "sub": "",
         "cells": [
          "TIG or plasma",
+         "TIG or plasma",
          "TIG or plasma"
         ],
         "key": true
        },
        {
-        "label": "Clamping",
+        "label": "Materials",
         "sub": "",
         "cells": [
-         "Pneumatic, from inside, on copper blocks",
-         "Pneumatic, from inside, on copper blocks"
+         "Mild steel, stainless steel, aluminum",
+         "Mild steel, stainless steel, aluminum",
+         "Mild steel, stainless steel, aluminum"
         ],
         "key": false
        },
        {
-        "label": "Torch movement",
+        "label": "Clamping",
         "sub": "",
         "cells": [
-         "Guided · 2-axis (X, Y) available",
-         "Guided · 2-axis (X, Y) available"
+         "Pneumatic, from inside, against copper squaring guides",
+         "Pneumatic, from inside, against copper squaring guides",
+         "Pneumatic, from inside, against copper squaring guides"
         ],
         "key": false
        },
@@ -3791,8 +3977,19 @@
         "label": "Control",
         "sub": "",
         "cells": [
-         "CNC touch screen, stored parameters",
-         "CNC touch screen, stored parameters"
+         "Touch panel, parameters stored as recipes",
+         "Touch panel, parameters stored as recipes",
+         "Numerical control, 10 work parameters stored per job"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "32-5/16 × 32-5/16″ (820 × 820 mm)",
+         "32-5/16 × 32-5/16″ (820 × 820 mm)",
+         "—"
         ],
         "key": false
        }
@@ -3805,8 +4002,8 @@
       "glance": [
        "Corners to 7-7/8″ high",
        "Parts to 59 × 59″",
-       "0 – 118 in/min",
-       "TIG or plasma torch",
+       "0 – 47 in/min",
+       "1 axis · TIG or plasma",
        "—"
       ]
      },
@@ -3815,8 +4012,18 @@
       "glance": [
        "Corners to 11-13/16″ high",
        "Parts to 59 × 59″",
-       "0 – 118 in/min",
-       "TIG or plasma torch",
+       "0 – 47 in/min",
+       "1 axis · TIG or plasma",
+       "—"
+      ]
+     },
+     {
+      "name": "WELCOR 400 X",
+      "glance": [
+       "Corners to 15-3/4″ high",
+       "Parts to 39-3/8 × 39-3/8″",
+       "0 – 47 in/min",
+       "1 axis · TIG or plasma",
        "—"
       ]
      }
@@ -3829,7 +4036,7 @@
      "weight"
     ],
     "caps": {},
-    "note": "The CWS works with a TIG or plasma welding power source. Metric values in brackets are the manufacturer's figures."
+    "note": "Corner height is the longest corner seam the torch welds, on each axis. The welding power source is not included: GECAM offers the Lorch T 250 TIG source, and the machines also work with a plasma source. Bend the corner so the two edges meet on it — .0004″ (0.01 mm) apart and centred on the corner — or, where the bend does not allow it, so they overlap by half the sheet thickness at most. Metric values in brackets are the manufacturer's figures."
    },
    "videos": [
     {
@@ -3837,12 +4044,6 @@
      "title": "CWS 200 / 300 one-axis corner welding",
      "duration": "PT2M28S",
      "thumb": "video-31eDB7VrF6I"
-    },
-    {
-     "id": "x_qoKWRnEwA",
-     "title": "Two-axis corner welding",
-     "duration": "PT2M5S",
-     "thumb": "video-x_qoKWRnEwA"
     },
     {
      "id": "R48m8-Np9XU",
@@ -3857,12 +4058,662 @@
      "thumb": "video-QTZDWAw4wu0"
     }
    ],
+   "series": "1-axis",
    "pdf": {
-    "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
-    "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 8 MB · imperial units"
+    "file": "files/NovoTech-GECAM-Corner-Welding-Machines-2026.pdf",
+    "label": "Download the GECAM corner welding machines brochure",
+    "size": "PDF · 2 MB · imperial units"
    },
-   "group": "gc-weld"
+   "group": "gc-weld-1"
+  },
+  "gecam-cws-xy": {
+   "id": "gecam-cws-xy",
+   "brand": "gecam",
+   "name": "CWS 300 XY · WELCOR 400 XY 2-axis corner welders, parts to 59 × 59″",
+   "short": "CWS 300 XY · WELCOR 400 XY",
+   "models_label": "CWS 300 XY · WELCOR 400 XY · 2 models",
+   "summary": "Here the torch is driven on two axes, X and Y. The CWS 300 XY takes parts from 3-15/16 × 3-15/16″ to 59-1/16 × 59-1/16″ with corners 7-7/8″ to 11-13/16″ high; its touch panel shows the X and Y positions, counts the parts and calls up the recipe. The WELCOR 400 XY welds corners up to 15-3/4″ on X and 4-5/16″ on Y — a seam that runs in two directions, in one cycle — on parts to 39-3/8 × 39-3/8″. The rest works as on the one-axis machines: the part is clamped pneumatically from inside against copper squaring guides, the torch welds at 0 to 47 in/min with a TIG or a plasma source, and the parameters of each part are stored.",
+   "headline": "Two axes, X and Y · CWS 300 XY parts to 59″ square · WELCOR 400 XY corners 15-3/4″ on X, 4-5/16″ on Y",
+   "features": [
+    "Torch driven on two axes, X and Y; on the WELCOR 400 XY corners up to 15-3/4″ (400 mm) on X and 4-5/16″ (110 mm) on Y",
+    "Welding speed variable 0 – 47 in/min (0 – 20 mm/s), with acceleration and deceleration ramps",
+    "Welded steel base with guides that carry and move the torch unit",
+    "Pneumatic clamping from inside against copper squaring guides that keep the heat of the part down",
+    "Copper groups: outer unit 7-7/8″ or 11-13/16″ (200 or 300 mm) high; inner unit 1-15/16″, 2-15/16″, 3-15/16″, 4-15/16″, 5-7/8″, 7-7/8″, 11-13/16″ (50, 75, 100, 125, 150, 200, 300 mm)",
+    "CWS 300 XY: touch panel with the X and Y positions, part counter and recipe number; welding current, current ramps and gas flow set on the welding power source",
+    "WELCOR 400 XY: numerical control storing 10 work parameters per job; signals a missing torch, gas, power or part",
+    "Mild steel, stainless steel and aluminum; TIG or plasma",
+    "CWS 300 XY: work table 32-5/16 × 32-5/16″ (820 × 820 mm)",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Work table 39-3/8 × 39-3/8″ (1,000 × 1,000 mm)",
+    "Special inner copper group designed for your part",
+    "Inner copper group with cooling",
+    "Lorch T 250 TIG power source with cooling unit: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+    "Torch group with 9′10″ (3 m) cable",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-cws-xy",
+    "gc-cws-xy-corner",
+    "gc-cws-xy-head",
+    "gc-cws-xy-touch",
+    "gc-cws-xy-copper",
+    "gc-welcor"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "2-axis corner welders",
+      "sub": "CWS 300 XY · WELCOR 400 XY",
+      "models": [
+       "CWS 300 XY",
+       "WELCOR 400 XY"
+      ],
+      "rows": [
+       {
+        "label": "Torch axes",
+        "sub": "",
+        "cells": [
+         "2 — X, Y",
+         "2 — X, Y"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height",
+        "sub": "",
+        "cells": [
+         "7-7/8″ – 11-13/16″ (200 – 300 mm)",
+         "X 15-3/4″ (400 mm) · Y 4-5/16″ (110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part size, min.",
+        "sub": "",
+        "cells": [
+         "3-15/16 × 3-15/16″ (100 × 100 mm)",
+         "3-15/16 × 3-15/16″ (100 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Part size, max.",
+        "sub": "",
+        "cells": [
+         "59-1/16 × 59-1/16″ (1,500 × 1,500 mm)",
+         "39-3/8 × 39-3/8″ (1,000 × 1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Welding speed",
+        "sub": "",
+        "cells": [
+         "0 – 47 in/min (0 – 20 mm/s), variable",
+         "0 – 47 in/min (0 – 20 mm/s), variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Copper groups",
+        "sub": "",
+        "cells": [
+         "Outer 7-7/8″ or 11-13/16″ (200 or 300 mm) · inner 1-15/16″ – 11-13/16″ (50 – 300 mm), 7 heights",
+         "Outer 7-7/8″ or 11-13/16″ (200 or 300 mm) · inner 1-15/16″ – 11-13/16″ (50 – 300 mm), 7 heights"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding process",
+        "sub": "",
+        "cells": [
+         "TIG or plasma",
+         "TIG or plasma"
+        ],
+        "key": true
+       },
+       {
+        "label": "Materials",
+        "sub": "",
+        "cells": [
+         "Mild steel, stainless steel, aluminum",
+         "Mild steel, stainless steel, aluminum"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping",
+        "sub": "",
+        "cells": [
+         "Pneumatic, from inside, against copper squaring guides",
+         "Pneumatic, from inside, against copper squaring guides"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Touch panel: X and Y positions, part counter, recipes",
+         "Numerical control, 10 work parameters stored per job"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work table",
+        "sub": "",
+        "cells": [
+         "32-5/16 × 32-5/16″ (820 × 820 mm)",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work table, to order",
+        "sub": "",
+        "cells": [
+         "39-3/8 × 39-3/8″ (1,000 × 1,000 mm)",
+         "39-3/8 × 39-3/8″ (1,000 × 1,000 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CWS 300 XY",
+      "glance": [
+       "Corners to 11-13/16″ high",
+       "Parts to 59 × 59″",
+       "0 – 47 in/min",
+       "2 axes · TIG or plasma",
+       "—"
+      ]
+     },
+     {
+      "name": "WELCOR 400 XY",
+      "glance": [
+       "Corners 15-3/4″ X · 4-5/16″ Y",
+       "Parts to 39-3/8 × 39-3/8″",
+       "0 – 47 in/min",
+       "2 axes · TIG or plasma",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Corner height is the longest corner seam the torch welds, on each axis. The welding power source is not included: GECAM offers the Lorch T 250 TIG source, and the machines also work with a plasma source. Bend the corner so the two edges meet on it — .0004″ (0.01 mm) apart and centred on the corner — or, where the bend does not allow it, so they overlap by half the sheet thickness at most. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [
+    {
+     "id": "x_qoKWRnEwA",
+     "title": "Two-axis corner welding system",
+     "duration": "PT2M5S",
+     "thumb": "video-x_qoKWRnEwA"
+    }
+   ],
+   "series": "2-axis",
+   "pdf": {
+    "file": "files/NovoTech-GECAM-Corner-Welding-Machines-2026.pdf",
+    "label": "Download the GECAM corner welding machines brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "gc-weld-2"
+  },
+  "gecam-welcor-xyz": {
+   "id": "gecam-welcor-xyz",
+   "brand": "gecam",
+   "name": "WELCOR 400 XYZ 3-axis corner welder for seams in three directions, parts to 39-3/8 × 39-3/8″",
+   "short": "WELCOR 400 XYZ",
+   "models_label": "WELCOR 400 XYZ · 3 axes",
+   "summary": "With three driven axes — X, Y and Z — the torch follows a corner seam that runs in three directions and welds it in one cycle: up to 15-3/4″ on X, 4-5/16″ on Y and 1-15/16″ on Z, on parts from 3-15/16 × 3-15/16″ to 39-3/8 × 39-3/8″. The numerical control stores the work parameters of each job — torch speed with its acceleration and deceleration ramps, the welding speed set on the machine, interruptions of the weld, welding power and welding speed ramps up and down, power supply, shielding gas and cooling of the part during welding — and the machine signals a missing torch, welding gas, gas protection, welding power, electrical connection or part. The part is clamped pneumatically from inside against copper squaring guides; TIG or plasma, 0 to 47 in/min.",
+   "headline": "Three axes, X, Y and Z · corners 15-3/4″ X, 4-5/16″ Y, 1-15/16″ Z · parts to 39-3/8″ square",
+   "features": [
+    "Torch driven on three axes: corners up to 15-3/4″ (400 mm) on X, 4-5/16″ (110 mm) on Y and 1-15/16″ (50 mm) on Z",
+    "Welding speed variable 0 – 47 in/min (0 – 20 mm/s), adjusted directly on the machine",
+    "Ten work parameters stored per job: torch speed, acceleration and deceleration ramps, welding speed, weld interruption, welding power ramps up and down, welding speed ramps up and down, power supply on/off, shielding gas on/off, cooling of the part during welding",
+    "Signals a missing torch, welding gas, gas protection, welding power, electrical connection or part",
+    "Welded steel base with guides that carry and move the torch unit",
+    "Pneumatic clamping from inside against copper squaring guides; outer copper unit 7-7/8″ or 11-13/16″ (200 or 300 mm), inner unit 1-15/16″, 2-15/16″, 3-15/16″, 4-15/16″, 5-7/8″, 7-7/8″, 11-13/16″ (50, 75, 100, 125, 150, 200, 300 mm)",
+    "Mild steel, stainless steel and aluminum; TIG or plasma",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Work table 39-3/8 × 39-3/8″ (1,000 × 1,000 mm)",
+    "Special inner copper group designed to the drawing of your part",
+    "Cooling unit for the inner copper group",
+    "External cooling unit",
+    "Lorch T 250 TIG power source: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+    "Torch group with 9′10″ (3 m) cable",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-welcor",
+    "gc-welcor-front",
+    "gc-welcor-side"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "3-axis corner welder",
+      "sub": "WELCOR 400 XYZ",
+      "models": [
+       "WELCOR 400 XYZ"
+      ],
+      "rows": [
+       {
+        "label": "Torch axes",
+        "sub": "",
+        "cells": [
+         "3 — X, Y, Z"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height, X axis",
+        "sub": "",
+        "cells": [
+         "15-3/4″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height, Y axis",
+        "sub": "",
+        "cells": [
+         "4-5/16″ (110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height, Z axis",
+        "sub": "",
+        "cells": [
+         "1-15/16″ (50 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part size, min.",
+        "sub": "",
+        "cells": [
+         "3-15/16 × 3-15/16″ (100 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Part size, max.",
+        "sub": "",
+        "cells": [
+         "39-3/8 × 39-3/8″ (1,000 × 1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Welding speed",
+        "sub": "",
+        "cells": [
+         "0 – 47 in/min (0 – 20 mm/s), variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Copper groups",
+        "sub": "",
+        "cells": [
+         "Outer 7-7/8″ or 11-13/16″ (200 or 300 mm) · inner 1-15/16″ – 11-13/16″ (50 – 300 mm), 7 heights"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding process",
+        "sub": "",
+        "cells": [
+         "TIG or plasma"
+        ],
+        "key": true
+       },
+       {
+        "label": "Materials",
+        "sub": "",
+        "cells": [
+         "Mild steel, stainless steel, aluminum"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping",
+        "sub": "",
+        "cells": [
+         "Pneumatic, from inside, against copper squaring guides"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Numerical control, 10 work parameters stored per job"
+        ],
+        "key": false
+       },
+       {
+        "label": "Signals",
+        "sub": "",
+        "cells": [
+         "Missing torch, welding gas, gas protection, welding power, electrical connection or part"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work table, to order",
+        "sub": "",
+        "cells": [
+         "39-3/8 × 39-3/8″ (1,000 × 1,000 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WELCOR 400 XYZ",
+      "glance": [
+       "Corners 15-3/4″ X · 4-5/16″ Y · 1-15/16″ Z",
+       "Parts to 39-3/8 × 39-3/8″",
+       "0 – 47 in/min",
+       "3 axes · TIG or plasma",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Corner height is the longest corner seam the torch welds, on each axis. The welding power source is not included: GECAM offers the Lorch T 250 TIG source, and the machines also work with a plasma source. Bend the corner so the two edges meet on it — .0004″ (0.01 mm) apart and centred on the corner — or, where the bend does not allow it, so they overlap by half the sheet thickness at most. Metric values in brackets are the manufacturer's figures."
+   },
+   "videos": [],
+   "series": "3-axis",
+   "pdf": {
+    "file": "files/NovoTech-GECAM-Corner-Welding-Machines-2026.pdf",
+    "label": "Download the GECAM corner welding machines brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "gc-weld-3"
+  },
+  "gecam-welcor-4": {
+   "id": "gecam-welcor-4",
+   "brand": "gecam",
+   "name": "WELCOR 400 XYZ-Φ 4-axis corner welder with laser seam reading, parts to 39-3/8 × 39-3/8″",
+   "short": "WELCOR 400 XYZ-Φ",
+   "models_label": "WELCOR 400 XYZ-Φ · 4 axes",
+   "summary": "The three axes of the WELCOR 400 XYZ and a fourth: the torch is mounted on a rotary actuator that sets its angle in each phase of the weld, from vertical to about 120° as the job needs. Before it welds, the torch runs along the weld line while a laser sensor beside it checks that the edges are straight and how long they are; the machine memorizes the path and then welds it — a self-learning system that finds the corners by itself. Programs are saved for repeat work, the automatic welding program makes the machine easy to run even for operators who are not welders, and the color touch screen draws the welding process to help pick the right parameters. Pneumatic clamping positions the flaps; modular copper pads, matched to the size of the box, carry off the heat and limit burning of the part. Parts from 3-15/16 × 3-15/16″ to 39-3/8 × 39-3/8″, the smallest box 1-15/16″ high; torch path up to 15-3/4 × 1-7/8 × 4-7/16″.",
+   "headline": "Four axes, X, Y, Z and torch rotation · laser seam reading · parts to 39-3/8″ square · 0 – 47 in/min",
+   "features": [
+    "Four axes: X, Y, Z and torch rotation Φ — travel 15-3/4″ (400 mm) on X, 4-5/16″ (110 mm) on Y, 7-7/8″ (200 mm) on Z",
+    "Torch on a rotary actuator, 0 – 90°: its angle is set for each phase of the weld, from vertical to about 120° to the job",
+    "Laser sensor beside the torch: the torch runs the weld line first, the laser checks the straightness and length of the edges, the path is memorized, then welded",
+    "Color touch screen with a drawing of the welding process; programs saved for repeat parts; automatic welding program for operators who are not welders",
+    "Ten work parameters per job — torch speed and its ramps, welding speed, weld interruption, welding power and speed ramps, power supply, shielding gas, cooling of the part",
+    "Signals a missing torch, welding gas, gas protection, welding power, electrical connection or part",
+    "Pneumatic clamping that positions the flaps; modular copper groups — aluminum support and copper unit — 3/8″, 13/16″, 1″, 1-3/16″, 1-15/16″, 3-15/16″, 7-7/8″ (10, 20, 25, 30, 50, 100, 200 mm) thick, matched to the box",
+    "Welding speed variable 0 – 47 in/min (0 – 20 mm/s)",
+    "Mild steel, stainless steel and aluminum; TIG or plasma",
+    "Overall dimensions 59 × 47 × 98″ (1,500 × 1,200 × 2,500 mm)",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Lorch T 250 TIG power source: T 250 DC for mild and stainless steel, T 250 AC/DC also for aluminum",
+    "External cooling unit",
+    "Torch group with 9′10″ (3 m) cable",
+    "Special inner copper group designed to the drawing of your part",
+    "Cooling unit for the inner copper group",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "gc-welcor-4",
+    "gc-welcor-4-laser",
+    "gc-welcor-4-clamps",
+    "gc-welcor-4-panel",
+    "gc-welcor-4-copper",
+    "gc-welcor-4-path",
+    "gc-welcor-side"
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "4-axis corner welder",
+      "sub": "WELCOR 400 XYZ-Φ",
+      "models": [
+       "WELCOR 400 XYZ-Φ"
+      ],
+      "rows": [
+       {
+        "label": "Torch axes",
+        "sub": "",
+        "cells": [
+         "4 — X, Y, Z and torch rotation Φ"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height, X axis",
+        "sub": "",
+        "cells": [
+         "15-3/4″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height, Y axis",
+        "sub": "",
+        "cells": [
+         "4-5/16″ (110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. corner height, Z axis",
+        "sub": "",
+        "cells": [
+         "1-15/16″ (50 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Axis travel",
+        "sub": "",
+        "cells": [
+         "X 15-3/4″ · Y 4-5/16″ · Z 7-7/8″ (400 · 110 · 200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working range of an axis",
+        "sub": "",
+        "cells": [
+         "3/8″ – 15-3/4″ (10 – 400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Torch rotation",
+        "sub": "",
+        "cells": [
+         "0 – 90° · from vertical to about 120° to the job"
+        ],
+        "key": true
+       },
+       {
+        "label": "Part size, min.",
+        "sub": "",
+        "cells": [
+         "3-15/16 × 3-15/16″ (100 × 100 mm) · smallest box 1-15/16″ (50 mm) high"
+        ],
+        "key": false
+       },
+       {
+        "label": "Part size, max.",
+        "sub": "",
+        "cells": [
+         "39-3/8 × 39-3/8″ (1,000 × 1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max. torch path",
+        "sub": "",
+        "cells": [
+         "15-3/4 × 1-7/8 × 4-7/16″ (400 × 48 × 112 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding speed",
+        "sub": "",
+        "cells": [
+         "0 – 47 in/min (0 – 20 mm/s), variable"
+        ],
+        "key": true
+       },
+       {
+        "label": "Seam reading",
+        "sub": "",
+        "cells": [
+         "Laser sensor beside the torch: edges checked, path memorized, then welded"
+        ],
+        "key": true
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "Color touch screen with a drawing of the welding process · programs saved · automatic welding program"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work parameters",
+        "sub": "",
+        "cells": [
+         "10 per job"
+        ],
+        "key": false
+       },
+       {
+        "label": "Signals",
+        "sub": "",
+        "cells": [
+         "Missing torch, welding gas, gas protection, welding power, electrical connection or part"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping",
+        "sub": "",
+        "cells": [
+         "Pneumatic, positioning the flaps"
+        ],
+        "key": false
+       },
+       {
+        "label": "Copper groups",
+        "sub": "",
+        "cells": [
+         "Modular: aluminum support + copper unit, 3/8″ – 7-7/8″ (10 – 200 mm) thick"
+        ],
+        "key": false
+       },
+       {
+        "label": "Welding process",
+        "sub": "",
+        "cells": [
+         "TIG or plasma"
+        ],
+        "key": true
+       },
+       {
+        "label": "Materials",
+        "sub": "",
+        "cells": [
+         "Mild steel, stainless steel, aluminum"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "59 × 47 × 98″ (1,500 × 1,200 × 2,500 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WELCOR 400 XYZ-Φ",
+      "glance": [
+       "Corners 15-3/4″ X · 4-5/16″ Y · 1-15/16″ Z",
+       "Parts to 39-3/8 × 39-3/8″",
+       "0 – 47 in/min",
+       "4 axes · laser seam reading",
+       "—"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "thickness",
+     "feed",
+     "tools",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Corner height is the longest corner seam the torch welds, on each axis. The welding power source is not included: GECAM offers the Lorch T 250 TIG source, and the machines also work with a plasma source. Bend the corner so the two edges meet on it — .0004″ (0.01 mm) apart and centred on the corner — or, where the bend does not allow it, so they overlap by half the sheet thickness at most. Metric values in brackets are the manufacturer's figures. The WELCOR 4-axis brochure gives 5-7/8 × 5-7/8″ (150 × 150 mm) as the smallest workable part, the technical specification 3-15/16 × 3-15/16″ (100 × 100 mm) — send us the part to confirm."
+   },
+   "videos": [
+    {
+     "id": "g3Vk4MZNTv8",
+     "title": "WELCOR 4-axis: laser scanning of the seam, then welding",
+     "duration": "PT2M1S",
+     "thumb": "video-g3Vk4MZNTv8"
+    },
+    {
+     "id": "coxOZ3pw5P8",
+     "title": "4-axis WELCOR corner welding machine",
+     "duration": "PT1M9S",
+     "thumb": "video-coxOZ3pw5P8"
+    }
+   ],
+   "series": "4-axis",
+   "pdf": {
+    "file": "files/NovoTech-GECAM-Corner-Welding-Machines-2026.pdf",
+    "label": "Download the GECAM corner welding machines brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "gc-weld-4"
   }
  }
 }

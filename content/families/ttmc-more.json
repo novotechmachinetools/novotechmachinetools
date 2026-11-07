@@ -39,8 +39,6 @@
   "tt-t5025",
   "tt-t50",
   "tt-tb",
-  "tt-wtz",
-  "tt-vise",
   "tt-mill-turret",
   "tt-mill-univ",
   "tt-mill-heavy",
@@ -8236,7 +8234,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Drill-Presses-Value-Line-2026.pdf",
+    "label": "Download the value-line drill press brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
    "group": "gear"
   },
   "tt-t5025": {
@@ -8479,7 +8482,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Drill-Presses-Value-Line-2026.pdf",
+    "label": "Download the value-line drill press brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
    "group": "gear"
   },
   "tt-t50": {
@@ -8866,7 +8874,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Drill-Presses-Value-Line-2026.pdf",
+    "label": "Download the value-line drill press brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
    "group": "gear"
   },
   "tt-tb": {
@@ -9250,854 +9263,13 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Drill-Presses-Value-Line-2026.pdf",
+    "label": "Download the value-line drill press brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
    "group": "column"
-  },
-  "tt-wtz": {
-   "id": "tt-wtz",
-   "brand": "novotech",
-   "name": "WTZ variable-speed drill presses, 1/2″ and 5/8″, and WTZ-16T drilling and tapping press",
-   "short": "WTZ variable-speed",
-   "models_label": "WTZ-13J – WTZ-16T · 5 models",
-   "summary": "Variable-speed bench and floor drill presses with a digital speed display for 1/2″ and 5/8″ holes in steel, and the WTZ-16T, which drills 5/8″ and taps M12: switched to tapping, the spindle stops in 0.2 s and reverses to back the tap out, with a laser cross-hair and a digital depth readout in mm or inch.",
-   "features": [
-    "1/2″ (13 mm) and 5/8″ (16 mm) in steel; MT2",
-    "Variable speed 500 – 2,600 rpm with digital display",
-    "Bench models and the WTZ-16JF floor model",
-    "WTZ-16T: taps M12 with automatic reverse; spindle runout under 0.0004″; laser cross-hair; digital depth readout"
-   ],
-   "optional": [],
-   "images": [
-    "tm-wtz16j",
-    "tm-wtz13j",
-    "tm-wtz16q",
-    "tm-wtz",
-    "tm-wtz16t"
-   ],
-   "videos": [],
-   "headline": "1/2 – 5/8″ in steel",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "WTZ-13J · WTZ-16J · WTZ-16Q · WTZ-16JF",
-      "sub": "Variable-speed drill presses with digital speed display",
-      "models": [
-       "WTZ-13J",
-       "WTZ-16J",
-       "WTZ-16Q",
-       "WTZ-16JF"
-      ],
-      "rows": [
-       {
-        "label": "Drilling capacity in steel",
-        "sub": "",
-        "cells": [
-         "1/2″ (13 mm)",
-         "5/8″ (16 mm)",
-         "5/8″ (16 mm)",
-         "5/8″ (16 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Chuck",
-        "sub": "",
-        "cells": [
-         "1 – 13 mm (0.04 – 1/2″)",
-         "3 – 16 mm (1/8 – 5/8″)",
-         "3 – 16 mm (1/8 – 5/8″)",
-         "3 – 16 mm (1/8 – 5/8″)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Spindle taper",
-        "sub": "",
-        "cells": [
-         "MT2",
-         "MT2",
-         "MT2",
-         "MT2"
-        ],
-        "key": false
-       },
-       {
-        "label": "Spindle travel",
-        "sub": "",
-        "cells": [
-         "1-15/16″ (50 mm)",
-         "3-1/8″ (80 mm)",
-         "2-3/8″ (60 mm)",
-         "3-1/8″ (80 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Spindle speeds",
-        "sub": "",
-        "cells": [
-         "Variable, 500 – 2,600 rpm",
-         "Variable, 500 – 2,600 rpm",
-         "Variable, 500 – 2,600 rpm",
-         "Variable, 500 – 2,600 rpm"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat (spindle to column)",
-        "sub": "",
-        "cells": [
-         "4-1/2″ (114 mm)",
-         "7-1/8″ (182 mm)",
-         "6″ (152 mm)",
-         "7-1/8″ (182 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Table size",
-        "sub": "",
-        "cells": [
-         "6-1/2 × 6-1/2″ (165 × 165 mm)",
-         "Ø11-3/4″ (300 mm)",
-         "Ø11-3/4″ (300 mm)",
-         "Ø11-3/4″ (300 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Table travel",
-        "sub": "",
-        "cells": [
-         "5-1/2″ (140 mm)",
-         "14-1/4″ (360 mm)",
-         "14-1/4″ (360 mm)",
-         "23-1/2″ (600 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Column diameter",
-        "sub": "",
-        "cells": [
-         "1-7/8″ (48 mm)",
-         "2-7/8″ (72 mm)",
-         "2-7/8″ (72 mm)",
-         "2-7/8″ (72 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Mounting",
-        "sub": "",
-        "cells": [
-         "Bench",
-         "Bench",
-         "Bench",
-         "Floor"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor",
-        "sub": "",
-        "cells": [
-         "0.6 HP (450 W)",
-         "3/4 HP (550 W)",
-         "0.6 HP (450 W)",
-         "3/4 HP (550 W)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "20 × 17 × 11″ (50 × 43 × 28 cm)",
-         "31 × 20 × 11″ (78 × 52 × 29 cm)",
-         "25 × 19 × 12″ (63 × 49 × 30 cm)",
-         "56 × 22 × 9″ (141 × 56 × 24 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "66 lb (30 kg)",
-         "121 lb (55 kg)",
-         "104 lb (47 kg)",
-         "143 lb (65 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "WTZ-16T",
-      "sub": "Drilling and tapping press — drills 5/8″, taps M12 with automatic reverse",
-      "models": [
-       "WTZ-16T"
-      ],
-      "rows": [
-       {
-        "label": "Drilling capacity in steel",
-        "sub": "",
-        "cells": [
-         "5/8″ (16 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Tapping capacity",
-        "sub": "",
-        "cells": [
-         "M12 (1/2″)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Chuck",
-        "sub": "",
-        "cells": [
-         "1 – 16 mm (0.04 – 5/8″) on B18 taper"
-        ],
-        "key": false
-       },
-       {
-        "label": "Spindle travel",
-        "sub": "",
-        "cells": [
-         "3-3/8″ (85 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Spindle speeds",
-        "sub": "",
-        "cells": [
-         "Variable, 260 – 1,800 rpm"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat (spindle to column)",
-        "sub": "",
-        "cells": [
-         "7-1/4″ (185 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Spindle to table / to base",
-        "sub": "",
-        "cells": [
-         "13″ (330 mm) / 20″ (510 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Table size",
-        "sub": "",
-        "cells": [
-         "11 × 11″ (280 × 280 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Base size",
-        "sub": "",
-        "cells": [
-         "11.2 × 9.4″ (285 × 240 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Column diameter",
-        "sub": "",
-        "cells": [
-         "2-7/8″ (72 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor",
-        "sub": "",
-        "cells": [
-         "1 HP (750 W)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "37 × 23 × 14″ (95 × 59 × 35 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "126 lb (57 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "WTZ-13J",
-      "glance": [
-       "1/2″ (13 mm)",
-       "1-15/16″ (50 mm)",
-       "Variable, 500 – 2,600 rpm",
-       "0.6 HP (450 W)",
-       "66 lb (30 kg)"
-      ]
-     },
-     {
-      "name": "WTZ-16J",
-      "glance": [
-       "5/8″ (16 mm)",
-       "3-1/8″ (80 mm)",
-       "Variable, 500 – 2,600 rpm",
-       "3/4 HP (550 W)",
-       "121 lb (55 kg)"
-      ]
-     },
-     {
-      "name": "WTZ-16Q",
-      "glance": [
-       "5/8″ (16 mm)",
-       "2-3/8″ (60 mm)",
-       "Variable, 500 – 2,600 rpm",
-       "0.6 HP (450 W)",
-       "104 lb (47 kg)"
-      ]
-     },
-     {
-      "name": "WTZ-16JF",
-      "glance": [
-       "5/8″ (16 mm)",
-       "3-1/8″ (80 mm)",
-       "Variable, 500 – 2,600 rpm",
-       "3/4 HP (550 W)",
-       "143 lb (65 kg)"
-      ]
-     },
-     {
-      "name": "WTZ-16T",
-      "glance": [
-       "5/8″ (16 mm)",
-       "3-3/8″ (85 mm)",
-       "Variable, 260 – 1,800 rpm",
-       "1 HP (750 W)",
-       "126 lb (57 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "drilling_capacity_in_steel",
-     "spindle_travel",
-     "spindle_speeds",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "WTZ-13J": "drills 1/2″ (13 mm) in steel",
-     "WTZ-16J": "drills 5/8″ (16 mm) in steel",
-     "WTZ-16Q": "drills 5/8″ (16 mm) in steel",
-     "WTZ-16JF": "drills 5/8″ (16 mm) in steel",
-     "WTZ-16T": "drills 5/8″ (16 mm) in steel"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "vs"
-  },
-  "tt-vise": {
-   "id": "tt-vise",
-   "brand": "novotech",
-   "name": "Drill press vises and welding angle clamps",
-   "short": "Vises and clamps",
-   "models_label": "BSM75N – AC-100H · 22 models",
-   "summary": "Vises for the drill press and the mill: the BSM-N drill press vises with changeable prismatic jaws, the TSL vises (Q models with a quick lock), the TMS vises with slotted bases, the TQ tilting, swivel and compound precision vises, and the AC welding angle clamps that hold tube and angle at 90° for welding.",
-   "features": [
-    "BSM / TSL / TMS: jaw widths 3-1/8 – 7-7/8″ (80 – 200 mm)",
-    "TQ: 4 – 6″ precision vises — tilting (TQA), swivel (TQB), compound (TQC)",
-    "AC-60 / AC-100 / AC-100H welding angle clamps; AC-100H for box and round tubing"
-   ],
-   "optional": [],
-   "images": [
-    "tm-vise",
-    "tm-vise-tq",
-    "tm-ac100h"
-   ],
-   "videos": [],
-   "headline": "Vises 3 – 8″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "BSM · TSL · TMS",
-      "sub": "Drill press vises",
-      "models": [
-       "BSM75N",
-       "BSM100N",
-       "BSM125N",
-       "BSM150N",
-       "BSM100",
-       "BSM125",
-       "TSL-100",
-       "TSL-100Q",
-       "TSL-140",
-       "TSL-140Q",
-       "TSL-200",
-       "TSL-200Q",
-       "TMS135",
-       "TMS180"
-      ],
-      "rows": [
-       {
-        "label": "Jaw width",
-        "sub": "",
-        "cells": [
-         "3-1/8″ (80 mm)",
-         "4-1/8″ (105 mm)",
-         "4-7/8″ (125 mm)",
-         "5-7/8″ (150 mm)",
-         "4-1/8″ (105 mm)",
-         "4-7/8″ (125 mm)",
-         "3-7/8″ (100 mm)",
-         "3-7/8″ (100 mm)",
-         "5-1/2″ (140 mm)",
-         "5-1/2″ (140 mm)",
-         "7-7/8″ (200 mm)",
-         "7-7/8″ (200 mm)",
-         "5-3/8″ (135 mm)",
-         "7-1/8″ (180 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Jaw opening",
-        "sub": "",
-        "cells": [
-         "2-1/8″ (55 mm)",
-         "3-3/4″ (95 mm)",
-         "4-1/2″ (115 mm)",
-         "5-3/8″ (135 mm)",
-         "3-7/8″ (100 mm)",
-         "4-7/8″ (125 mm)",
-         "3-7/8″ (100 mm)",
-         "3-7/8″ (100 mm)",
-         "5-1/2″ (140 mm)",
-         "5-1/2″ (140 mm)",
-         "7-7/8″ (200 mm)",
-         "7-7/8″ (200 mm)",
-         "5-3/4″ (145 mm)",
-         "10-1/4″ (260 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Jaw height",
-        "sub": "",
-        "cells": [
-         "1-1/16″ (27 mm)",
-         "1-1/16″ (27 mm)",
-         "1-9/16″ (39 mm)",
-         "1-9/16″ (39 mm)",
-         "1-3/16″ (30 mm)",
-         "1-15/16″ (49 mm)",
-         "1-9/16″ (40 mm)",
-         "1-7/16″ (37 mm)",
-         "1-15/16″ (50 mm)",
-         "1-15/16″ (50 mm)",
-         "2-1/2″ (64 mm)",
-         "2-1/4″ (58 mm)",
-         "—",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "5 lb (2.1 kg)",
-         "7 lb (3.2 kg)",
-         "10 lb (4.5 kg)",
-         "14 lb (6.2 kg)",
-         "11 lb (5 kg)",
-         "26 lb (12 kg)",
-         "20 lb (9 kg)",
-         "13 lb (6 kg)",
-         "33 lb (15 kg)",
-         "26 lb (12 kg)",
-         "79 lb (36 kg)",
-         "55 lb (25 kg)",
-         "33 lb (15 kg)",
-         "71 lb (32 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "TQ",
-      "sub": "Tilting and swivelling precision vises (inch)",
-      "models": [
-       "TQC4″",
-       "TQC5″",
-       "TQC6″",
-       "TQB6″",
-       "TQA6″"
-      ],
-      "rows": [
-       {
-        "label": "Jaw width",
-        "sub": "",
-        "cells": [
-         "4″",
-         "5″",
-         "6″",
-         "6″",
-         "6″"
-        ],
-        "key": true
-       },
-       {
-        "label": "Jaw depth",
-        "sub": "",
-        "cells": [
-         "1-1/2″",
-         "1-3/4″",
-         "2″",
-         "1-3/4″",
-         "2″"
-        ],
-        "key": false
-       },
-       {
-        "label": "Jaw opening",
-        "sub": "",
-        "cells": [
-         "4″",
-         "5″",
-         "6″",
-         "9″",
-         "6″"
-        ],
-        "key": true
-       },
-       {
-        "label": "Height",
-        "sub": "",
-        "cells": [
-         "4-9/16″",
-         "5-1/2″",
-         "6″",
-         "6-1/4″",
-         "7-1/4″"
-        ],
-        "key": false
-       },
-       {
-        "label": "Base size",
-        "sub": "",
-        "cells": [
-         "7-3/4 × 5-3/4″",
-         "10-1/2 × 7-1/2″",
-         "11-1/2 × 8-7/16″",
-         "12-3/4 × 11-3/4″",
-         "9 × 11-1/2″"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "31 lb (14 kg)",
-         "62 lb (28 kg)",
-         "86 lb (39 kg)",
-         "106 lb (48 kg)",
-         "112 lb (51 kg)"
-        ],
-        "key": true
-       }
-      ]
-     },
-     {
-      "title": "AC",
-      "sub": "Welding angle clamps",
-      "models": [
-       "AC-60",
-       "AC-100",
-       "AC-100H"
-      ],
-      "rows": [
-       {
-        "label": "Jaw opening",
-        "sub": "",
-        "cells": [
-         "2-3/8″ (60 mm)",
-         "3-7/8″ (100 mm)",
-         "3-7/8″ (100 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Jaw width",
-        "sub": "",
-        "cells": [
-         "2-3/8″ (60 mm)",
-         "3-1/2″ (90 mm)",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Jaw height",
-        "sub": "",
-        "cells": [
-         "1-3/8″ (35 mm)",
-         "2-3/8″ (60 mm)",
-         "2-3/8″ (60 mm) bottom clamp, 7-1/2″ (190 mm) with the top clamp"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "11 lb (5 kg)",
-         "31 lb (14 kg)",
-         "53 lb (24 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "BSM75N",
-      "glance": [
-       "3-1/8″ (80 mm)",
-       "2-1/8″ (55 mm)",
-       "5 lb (2.1 kg)"
-      ]
-     },
-     {
-      "name": "BSM100N",
-      "glance": [
-       "4-1/8″ (105 mm)",
-       "3-3/4″ (95 mm)",
-       "7 lb (3.2 kg)"
-      ]
-     },
-     {
-      "name": "BSM125N",
-      "glance": [
-       "4-7/8″ (125 mm)",
-       "4-1/2″ (115 mm)",
-       "10 lb (4.5 kg)"
-      ]
-     },
-     {
-      "name": "BSM150N",
-      "glance": [
-       "5-7/8″ (150 mm)",
-       "5-3/8″ (135 mm)",
-       "14 lb (6.2 kg)"
-      ]
-     },
-     {
-      "name": "BSM100",
-      "glance": [
-       "4-1/8″ (105 mm)",
-       "3-7/8″ (100 mm)",
-       "11 lb (5 kg)"
-      ]
-     },
-     {
-      "name": "BSM125",
-      "glance": [
-       "4-7/8″ (125 mm)",
-       "4-7/8″ (125 mm)",
-       "26 lb (12 kg)"
-      ]
-     },
-     {
-      "name": "TSL-100",
-      "glance": [
-       "3-7/8″ (100 mm)",
-       "3-7/8″ (100 mm)",
-       "20 lb (9 kg)"
-      ]
-     },
-     {
-      "name": "TSL-100Q",
-      "glance": [
-       "3-7/8″ (100 mm)",
-       "3-7/8″ (100 mm)",
-       "13 lb (6 kg)"
-      ]
-     },
-     {
-      "name": "TSL-140",
-      "glance": [
-       "5-1/2″ (140 mm)",
-       "5-1/2″ (140 mm)",
-       "33 lb (15 kg)"
-      ]
-     },
-     {
-      "name": "TSL-140Q",
-      "glance": [
-       "5-1/2″ (140 mm)",
-       "5-1/2″ (140 mm)",
-       "26 lb (12 kg)"
-      ]
-     },
-     {
-      "name": "TSL-200",
-      "glance": [
-       "7-7/8″ (200 mm)",
-       "7-7/8″ (200 mm)",
-       "79 lb (36 kg)"
-      ]
-     },
-     {
-      "name": "TSL-200Q",
-      "glance": [
-       "7-7/8″ (200 mm)",
-       "7-7/8″ (200 mm)",
-       "55 lb (25 kg)"
-      ]
-     },
-     {
-      "name": "TMS135",
-      "glance": [
-       "5-3/8″ (135 mm)",
-       "5-3/4″ (145 mm)",
-       "33 lb (15 kg)"
-      ]
-     },
-     {
-      "name": "TMS180",
-      "glance": [
-       "7-1/8″ (180 mm)",
-       "10-1/4″ (260 mm)",
-       "71 lb (32 kg)"
-      ]
-     },
-     {
-      "name": "TQC4″",
-      "glance": [
-       "4″",
-       "4″",
-       "31 lb (14 kg)"
-      ]
-     },
-     {
-      "name": "TQC5″",
-      "glance": [
-       "5″",
-       "5″",
-       "62 lb (28 kg)"
-      ]
-     },
-     {
-      "name": "TQC6″",
-      "glance": [
-       "6″",
-       "6″",
-       "86 lb (39 kg)"
-      ]
-     },
-     {
-      "name": "TQB6″",
-      "glance": [
-       "6″",
-       "9″",
-       "106 lb (48 kg)"
-      ]
-     },
-     {
-      "name": "TQA6″",
-      "glance": [
-       "6″",
-       "6″",
-       "112 lb (51 kg)"
-      ]
-     },
-     {
-      "name": "AC-60",
-      "glance": [
-       "2-3/8″ (60 mm)",
-       "2-3/8″ (60 mm)",
-       "11 lb (5 kg)"
-      ]
-     },
-     {
-      "name": "AC-100",
-      "glance": [
-       "3-1/2″ (90 mm)",
-       "3-7/8″ (100 mm)",
-       "31 lb (14 kg)"
-      ]
-     },
-     {
-      "name": "AC-100H",
-      "glance": [
-       "—",
-       "3-7/8″ (100 mm)",
-       "53 lb (24 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "jaw_width",
-     "jaw_opening",
-     "weight"
-    ],
-    "caps": {
-     "BSM75N": "3-1/8″ (80 mm) jaws",
-     "BSM100N": "4-1/8″ (105 mm) jaws",
-     "BSM125N": "4-7/8″ (125 mm) jaws",
-     "BSM150N": "5-7/8″ (150 mm) jaws",
-     "BSM100": "4-1/8″ (105 mm) jaws",
-     "BSM125": "4-7/8″ (125 mm) jaws",
-     "TSL-100": "3-7/8″ (100 mm) jaws",
-     "TSL-100Q": "3-7/8″ (100 mm) jaws",
-     "TSL-140": "5-1/2″ (140 mm) jaws",
-     "TSL-140Q": "5-1/2″ (140 mm) jaws",
-     "TSL-200": "7-7/8″ (200 mm) jaws",
-     "TSL-200Q": "7-7/8″ (200 mm) jaws",
-     "TMS135": "5-3/8″ (135 mm) jaws",
-     "TMS180": "7-1/8″ (180 mm) jaws",
-     "TQC4″": "4″ jaws",
-     "TQC5″": "5″ jaws",
-     "TQC6″": "6″ jaws",
-     "TQB6″": "6″ jaws",
-     "TQA6″": "6″ jaws",
-     "AC-60": "2-3/8″ (60 mm) jaws",
-     "AC-100": "3-1/2″ (90 mm) jaws",
-     "AC-100H": ""
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": true,
-   "no_pdf": true,
-   "group": "vise"
   },
   "tt-mill-turret": {
    "id": "tt-mill-turret",
@@ -10343,7 +9515,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+    "label": "Download the value-line milling machine brochure",
+    "size": "PDF · 3 MB · imperial units"
+   },
    "group": "turret"
   },
   "tt-mill-univ": {
@@ -10552,7 +9729,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+    "label": "Download the value-line milling machine brochure",
+    "size": "PDF · 3 MB · imperial units"
+   },
    "group": "univ"
   },
   "tt-mill-heavy": {
@@ -10822,7 +10004,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+    "label": "Download the value-line milling machine brochure",
+    "size": "PDF · 3 MB · imperial units"
+   },
    "group": "univ"
   },
   "tt-zx": {
@@ -11198,7 +10385,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+    "label": "Download the value-line milling machine brochure",
+    "size": "PDF · 3 MB · imperial units"
+   },
    "group": "drill"
   },
   "tt-mill-small": {
@@ -11361,7 +10553,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+    "label": "Download the value-line milling machine brochure",
+    "size": "PDF · 3 MB · imperial units"
+   },
    "group": "drill"
   },
   "tt-ksm850": {
@@ -11495,7 +10692,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+    "label": "Download the value-line milling machine brochure",
+    "size": "PDF · 3 MB · imperial units"
+   },
    "group": "resurf"
   },
   "tt-slot": {
@@ -11645,7 +10847,12 @@
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },
    "manual": false,
-   "no_pdf": true,
+   "no_pdf": false,
+   "pdf": {
+    "file": "files/NovoTech-Milling-Machines-Value-Line-2026.pdf",
+    "label": "Download the value-line milling machine brochure",
+    "size": "PDF · 3 MB · imperial units"
+   },
    "group": "slot"
   },
   "tt-vmc": {

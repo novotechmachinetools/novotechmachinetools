@@ -1,0 +1,69 @@
+{
+ "cover_line": "NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech",
+ "about_kicker": "NovoTech value line",
+ "country": "China",
+ "made_in": "Built in China to North American standards",
+ "family_sets": [
+  "ttmc-more"
+ ],
+ "single_phase": false,
+ "year": "2026",
+ "title": "Milling machines",
+ "subtitle": "Turret and universal milling machines, ISO40 and ISO50 · drilling-milling machines and mini mills · keyseater and slotting machine · cylinder head resurfacer",
+ "range_label": "Value-line milling machines",
+ "about_for": "value-line milling machines",
+ "about_title": "Milling machines for the toolroom and the fabrication shop",
+ "about_text": [
+  "NovoTech's value line is our own brand: machines built in China to our specification by a maker that exports metalworking machinery to more than 70 countries, inspected before they ship and sold under NovoTech's name with a CSA-approved panel on every 3-phase machine, a 1-year warranty and parts and technical support from Mississauga, Ontario, Canada.",
+  "Milling machines cut flat faces, slots, steps, pockets and keyways with rotating cutters while the table moves the work under them: knee-type turret mills with a horizontal spindle as well as the vertical head, universal mills with a head that swivels through 360°, heavy ISO50 universal mills with power feed and rapid traverse on all axes and tables up to 79″, drilling-milling machines that drill 2″, a mini mill-drill and a radial drill-mill, a keyseater and a slotting machine for keyways and splines, and the KSM-850 resurfacing machine for cylinder heads and blocks."
+ ],
+ "families": [
+  "tt-mill-turret",
+  "tt-mill-univ",
+  "tt-mill-heavy",
+  "tt-zx",
+  "tt-mill-small",
+  "tt-slot",
+  "tt-ksm850"
+ ],
+ "groups": [
+  {
+   "title": "Turret milling machines",
+   "families": [
+    "tt-mill-turret"
+   ]
+  },
+  {
+   "title": "Universal milling machines",
+   "families": [
+    "tt-mill-univ",
+    "tt-mill-heavy"
+   ]
+  },
+  {
+   "title": "Drilling-milling machines and mini mills",
+   "families": [
+    "tt-zx",
+    "tt-mill-small"
+   ]
+  },
+  {
+   "title": "Keyseaters and slotting machines",
+   "families": [
+    "tt-slot"
+   ]
+  },
+  {
+   "title": "Cylinder head resurfacing machine",
+   "families": [
+    "tt-ksm850"
+   ]
+  }
+ ],
+ "cover_photos": [
+  "tm-x6332",
+  "tm-lm1450",
+  "tm-zx5325"
+ ],
+ "out": "src/files/NovoTech-Milling-Machines-Value-Line-2026.pdf"
+}

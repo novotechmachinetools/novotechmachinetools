@@ -18446,7 +18446,7 @@
  },
  "gc-cws": {
   "src": "tools/src-images/gecam/gc-cws.jpg",
-  "alt": "Gecam CWS 300 corner welding machine",
+  "alt": "GECAM CWS 300 one-axis corner welding machine",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18462,7 +18462,7 @@
  },
  "gc-cws-copper": {
   "src": "tools/src-images/gecam/gc-cws-copper.jpg",
-  "alt": "Copper blocks that hold the corner and draw off the heat",
+  "alt": "Copper groups that hold the corner and draw off the heat",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18470,7 +18470,7 @@
  },
  "gc-cws-stop": {
   "src": "tools/src-images/gecam/gc-cws-stop.jpg",
-  "alt": "External copper guide the corner rests against",
+  "alt": "External copper squaring guide the corner rests against",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18478,7 +18478,7 @@
  },
  "gc-cws-touch": {
   "src": "tools/src-images/gecam/gc-cws-touch.jpg",
-  "alt": "CNC touch screen of the CWS",
+  "alt": "Touch panel of the CWS",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -34768,5 +34768,161 @@
   "quality": 82,
   "cutout": true,
   "cut_size": 768
+ },
+ "gc-cws-bend": {
+  "src": "tools/src-images/gecam/gc-cws-bend.jpg",
+  "alt": "How the corner is bent for welding: the edges .0004″ (0.01 mm) apart and centred, or overlapping by half the sheet thickness at most",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-lorch-t250": {
+  "src": "tools/src-images/gecam/gc-lorch-t250.jpg",
+  "alt": "Lorch T-series TIG power source — GECAM offers the T 250 with its corner welders",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-cws-xy": {
+  "src": "tools/src-images/gecam/gc-cws-xy.jpg",
+  "alt": "GECAM CWS 300 XY two-axis corner welding machine",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-cws-xy-corner": {
+  "src": "tools/src-images/gecam/gc-cws-xy-corner.jpg",
+  "alt": "Box corner clamped against the copper groups, TIG torch at the seam",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-xy-head": {
+  "src": "tools/src-images/gecam/gc-cws-xy-head.jpg",
+  "alt": "Torch and copper corner group of the CWS 300 XY",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-xy-touch": {
+  "src": "tools/src-images/gecam/gc-cws-xy-touch.jpg",
+  "alt": "Touch panel of the CWS 300 XY: X and Y positions, part counter, recipe number",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-cws-xy-copper": {
+  "src": "tools/src-images/gecam/gc-cws-xy-copper.jpg",
+  "alt": "Inner copper group pressing the corner from inside, torch below",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor": {
+  "src": "tools/src-images/gecam/gc-welcor.jpg",
+  "alt": "GECAM WELCOR 400 corner welder",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-welcor-front": {
+  "src": "tools/src-images/gecam/gc-welcor-front.jpg",
+  "alt": "WELCOR 400 front view with the largest box, 39-3/8 × 39-3/8″ (1,000 × 1,000 mm), corner up — machine 43-5/16″ (1,100 mm) wide",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor-side": {
+  "src": "tools/src-images/gecam/gc-welcor-side.jpg",
+  "alt": "WELCOR 400 side view: torch axes, welding torch and pneumatic block — machine 87″ (2,210 mm) high, 61-3/4″ (1,569 mm) deep",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor-4": {
+  "src": "tools/src-images/gecam/gc-welcor-4.jpg",
+  "alt": "GECAM WELCOR 400 4-axis welding the corner of a square frame",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor-4-laser": {
+  "src": "tools/src-images/gecam/gc-welcor-4-laser.jpg",
+  "alt": "Laser sensor beside the TIG torch on the rotary actuator",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor-4-clamps": {
+  "src": "tools/src-images/gecam/gc-welcor-4-clamps.jpg",
+  "alt": "Pneumatic clamps and copper pads holding the corner",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor-4-panel": {
+  "src": "tools/src-images/gecam/gc-welcor-4-panel.jpg",
+  "alt": "Control panel with color touch screen and signal tower",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor-4-copper": {
+  "src": "tools/src-images/gecam/gc-welcor-4-copper.jpg",
+  "alt": "Copper group: aluminum support and copper unit, 3/8″ to 7-7/8″ (10 – 200 mm) thick",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-welcor-4-path": {
+  "src": "tools/src-images/gecam/gc-welcor-4-path.jpg",
+  "alt": "Largest torch path, 15-3/4 × 1-7/8 × 4-7/16″ (400 × 48 × 112 mm), on a box up to 39-3/8 × 39-3/8″ (1,000 × 1,000 mm)",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "video-S75RezUSMhk": {
+  "src": "/home/claude/gms-site/yt/S75RezUSMhk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-g3Vk4MZNTv8": {
+  "src": "/home/claude/gms-site/yt/g3Vk4MZNTv8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-coxOZ3pw5P8": {
+  "src": "/home/claude/gms-site/yt/coxOZ3pw5P8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-5XFJvC0i3sQ": {
+  "src": "/home/claude/gms-site/yt/5XFJvC0i3sQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }
