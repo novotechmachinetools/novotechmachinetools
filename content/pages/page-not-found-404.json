@@ -3,17 +3,44 @@
   "template": "notfound.html",
   "noindex": true,
   "base_href": "/",
+  "no_quote": true,
   "title": "Page not found | NovoTech Machine Tools",
   "meta_description": "This page has moved or no longer exists. Browse NovoTech's metal fabrication machinery, brochures or contact us in Mississauga, ON, Canada.",
   "h1": "Page not found",
   "intro": "This page has moved or no longer exists. The machine you are looking for is probably still here under a new address.",
-  "breadcrumb": [{"label": "Home", "href": "index.html"}, {"label": "Page not found"}],
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "index.html"
+    },
+    {
+      "label": "Page not found"
+    }
+  ],
   "links_title": "Where to go next",
   "links": [
-    {"label": "All machines", "href": "products.html", "note": "every kind of machine we sell, from press brakes to rebar benders"},
-    {"label": "Brochures", "href": "brochures.html", "note": "PDF catalogues of every machine line"},
-    {"label": "Articles", "href": "metal-fabricating-articles.html"},
-    {"label": "Contact us", "href": "contact-us.html", "note": "+1 647 526 5510 · info@NovoTechMachineTools.com"},
-    {"label": "Home page", "href": "index.html"}
+    {
+      "label": "All machines",
+      "href": "products.html",
+      "note": "every kind of machine we sell, from press brakes to rebar benders"
+    },
+    {
+      "label": "Brochures",
+      "href": "brochures.html",
+      "note": "PDF catalogues of every machine line"
+    },
+    {
+      "label": "Articles",
+      "href": "metal-fabricating-articles.html"
+    },
+    {
+      "label": "Contact us",
+      "href": "contact-us.html",
+      "note": "+1 647 526 5510 · info@NovoTechMachineTools.com"
+    },
+    {
+      "label": "Home page",
+      "href": "index.html"
+    }
   ]
 }
