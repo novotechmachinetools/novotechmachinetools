@@ -176,7 +176,8 @@ PHOTOS = {
     # ---------------------------------------------------------------- American style
     "es-am-sect": photo(AM + "x35.png", "American-style sectioned sets: punch and die sections in inches, 35.75″ in all"),
     "es-am-hero": dict(kind="amhero", src=AM, alt="American-style punches and dies with the .500″ tang — gooseneck, straight and acute profiles",
-                       codes=["S29084", "S28881", "S28932", "S29083", "S28946", "S28947", "S29144"]),
+                       # the 85° gooseneck, straight and 28° acute punches and three 88° dies whose drawings give clean outlines
+                       codes=["S28880", "S28932", "S29252", "S28946", "S29145", "S28947"]),
     # the drawings as they are in the catalogue edition (tools/catalogue/american.py --web): inches with the millimetres
     **{f"es-am-{c.lower()}": dict(kind="am", src=AM + f"{x}.png", alt=f"{c} — American-style {d} (drawing, inches and millimetres)")
        for c, (x, d) in AM_DRAW.items()},
@@ -376,28 +377,88 @@ def am_drawing(path):
     return Image.fromarray(rgb.clip(0, 255).astype(np.uint8), "RGB")
 
 
-def am_profile(path):
-    """the tool's body only, steel-filled with a charcoal outline, on transparent"""
+def _disk(r):
+    y, x = np.ogrid[-r:r + 1, -r:r + 1]
+    return x * x + y * y <= r * r
+
+
+def am_solid(path, r=10):
+    """the tool's body as drawn, without the dimension lines: the lines that cross the body (width arrows, angle arcs at the
+    tip) cut it, and leader lines and arrowheads stuck out of it — closed, filled and opened away (r px ≈ .03″), largest part"""
     v, body, filled = am_layers(path)
-    solid = ndimage.binary_fill_holes(body)
-    st = steel(v.shape, solid)
-    ring = ndimage.binary_dilation(solid, iterations=3) & ~solid
-    H, W = v.shape
-    out = np.zeros((H, W, 4), np.float32)
-    out[..., :3] = np.where(solid[..., None], st, CHARCOAL[None, None])
-    out[..., 3] = np.where(solid | ring, 255, 0)
+    s = ndimage.binary_closing(body, structure=_disk(r))
+    s = ndimage.binary_fill_holes(s)
+    s = ndimage.binary_opening(s, structure=_disk(r))
+    lab, n = ndimage.label(s)
+    sizes = ndimage.sum(s, lab, range(1, n + 1))
+    s = lab == (int(np.argmax(sizes)) + 1)
+    ys, xs = np.nonzero(s)
+    return s[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+def am_punch(s, gooseneck=False, r=16):
+    """below the tang, what is left of the angle lines smoothed away; the tang with its safety lip as drawn.  A straight or
+    acute blade is convex: its outline is the convex hull; a gooseneck's nose below the neck is too"""
+    from skimage.morphology import convex_hull_image
+    width = s.sum(axis=1)
+    tang_w = np.median(width[: int(s.shape[0] * 0.08)])
+    cut = int(np.argmax(width > 1.5 * tang_w)) + 2 * r + 4
+    low = np.pad(s, 2 * r)
+    low = ndimage.binary_opening(ndimage.binary_closing(low, structure=_disk(r)), structure=_disk(r))[2 * r:-2 * r, 2 * r:-2 * r]
+    out = s.copy()
+    out[cut:] = low[cut:]
+    if gooseneck:
+        left = np.array([np.argmax(row) if row.any() else 0 for row in out])
+        neck = cut + int(np.argmax(left[cut:]))           # the neck: the left edge furthest right
+        y0 = max(cut, neck - 40)
+    else:
+        y0 = cut
+    out[y0:] = convex_hull_image(out[y0:])
+    return out
+
+
+def am_die(s):
+    """an American die is symmetric about its V: the left half — clear of the radius and angle notes at the right shoulder — mirrored,
+    the body's side straight"""
+    H, W = s.shape
+    left = np.array([np.argmax(r) if r.any() else W for r in s])
+    right = np.array([W - 1 - np.argmax(r[::-1]) if r.any() else -1 for r in s])
+    width = right - left
+    body = np.nonzero(width > 0.85 * width.max())[0]
+    xl = int(np.median(left[body]))
+    top = np.array([np.argmax(s[:, x]) if s[:, x].any() else H for x in range(W)])
+    a, b = int(W * 0.25), int(W * 0.75)
+    xc = int(np.argmax(top[a:b])) + a                     # the bottom of the V
+    half = s[:, :xc + 1].copy()
+    for y in range(body.min(), body.max() + 1):
+        if half[y].any():
+            half[y, xl:np.nonzero(half[y])[0].max() + 1] = True
+    return np.concatenate([half, half[:, :-1][:, ::-1]], axis=1)
+
+
+def am_render(solid):
+    """steel-filled with a charcoal outline, anti-aliased, on transparent"""
+    s = np.pad(solid.astype(np.float32), 12)
+    soft = ndimage.gaussian_filter(s, 1.0)
+    ring = ndimage.gaussian_filter(ndimage.binary_dilation(s > 0.5, structure=_disk(3)).astype(np.float32), 1.0)
+    st = steel(s.shape, s > 0.5)
+    inner = np.clip((soft - 0.5) * 2.5 + 0.5, 0, 1)[..., None]
+    out = np.zeros(s.shape + (4,), np.float32)
+    out[..., :3] = st * inner + CHARCOAL[None, None] * (1 - inner)
+    out[..., 3] = np.clip((ring - 0.5) * 2.5 + 0.5, 0, 1) * 255
     im = Image.fromarray(out.clip(0, 255).astype(np.uint8), "RGBA")
-    return im.crop(im.getchannel("A").getbbox()), solid
+    return im.crop(im.getchannel("A").getbbox())
 
 
 def am_hero(codes):
-    """profiles side by side on one baseline at one scale (pixels per inch from each drawing's known height)"""
+    """profiles side by side on one baseline at one scale (pixels per inch from each drawing's known height) — clean outlines
+    (the owner, Nov 7 2026: the dimension lines had left jagged teeth on the dies and the tall punch's tip was lost)"""
     heights = {"S29084": 5.125 + 0.752, "S28881": 4.531, "S28880": 4.531, "S28932": 4.531, "S29083": 4.531, "S29252": 4.531}
     parts = []
     for c in codes:
-        im, solid = am_profile(AM + AM_DRAW[c][0] + ".png")
-        h_in = heights.get(c, 2.563)
-        parts.append((im, im.height / h_in))
+        s = am_solid(AM + AM_DRAW[c][0] + ".png")
+        im = am_render(am_punch(s, gooseneck=c in ("S28880", "S28881", "S29084")) if c in heights else am_die(s))
+        parts.append((im, im.height / heights.get(c, 2.563)))
     ppi = min(p for _, p in parts)
     parts = [im.resize((round(im.width * ppi / p), round(im.height * ppi / p)), Image.LANCZOS) for im, p in parts]
     gap = round(0.32 * ppi)
