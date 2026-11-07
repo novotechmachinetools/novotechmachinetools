@@ -10,7 +10,10 @@
   /* ---------- header video: starts once the page has loaded; phones get the small file; a still picture on
      Save-Data, slow connections and reduced motion; pauses when it scrolls out of view; a button pauses it ---------- */
   var hero = d.querySelector(".hp-hero"), vid = hero && hero.querySelector("video"), toggle = hero && hero.querySelector(".hp-video-toggle");
-  var userPaused = false, inView = true;
+  var userPaused = false, inView = true, aiPanel = d.getElementById("ai-panel");
+  // it plays only while it is on screen and nothing covers it (the AI machine finder, a video lightbox)
+  function covered() { return (aiPanel && !aiPanel.hidden) || !!d.querySelector(".hp-modal"); }
+  function resume() { if (vid.src && vid.paused && inView && !userPaused && !d.hidden && !covered()) play(); }
   function label(paused) {
     if (!toggle) return;
     toggle.setAttribute("aria-pressed", paused ? "true" : "false");
@@ -22,7 +25,7 @@
     var small = Math.min(screen.width || 9999, w.innerWidth) < 900;
     vid.src = small ? vid.dataset.srcSmall : vid.dataset.src;
     vid.preload = "auto";
-    play();
+    if (!covered()) play();
     if (toggle) toggle.hidden = false;
   }
   if (vid) {
@@ -34,12 +37,14 @@
     if ("IntersectionObserver" in w) {
       new IntersectionObserver(function (es) {
         inView = es[0].isIntersecting;
-        if (!vid.src) return;
-        if (!inView && !vid.paused) vid.pause();
-        else if (inView && vid.paused && !userPaused) play();
+        if (!inView) { if (!vid.paused) vid.pause(); } else resume();
       }, { threshold: 0.15 }).observe(hero);
     }
-    d.addEventListener("visibilitychange", function () { if (d.hidden && vid.src && !vid.paused) vid.pause(); else if (!d.hidden && inView && !userPaused && vid.src) play(); });
+    d.addEventListener("visibilitychange", function () { if (d.hidden) { if (!vid.paused) vid.pause(); } else resume(); });
+    if (aiPanel && "MutationObserver" in w) {        // the finder covers the page: pause behind it, play again when it closes
+      new MutationObserver(function () { if (covered()) { if (!vid.paused) vid.pause(); } else resume(); })
+        .observe(aiPanel, { attributes: true, attributeFilter: ["hidden"] });
+    }
     if (d.readyState === "complete") setTimeout(startVideo, 300);
     else w.addEventListener("load", function () { setTimeout(startVideo, 300); });
   }
@@ -148,7 +153,7 @@
         if (m.parentNode) m.parentNode.removeChild(m);
         d.body.classList.remove("ai-locked");
         if (back && back.focus) back.focus();
-        if (vid && vid.src && inView && !userPaused) play();
+        if (vid) resume();
       }
       function onKey(e) { if (e.key === "Escape") close(); }
       m.addEventListener("click", function (e) { if (e.target === m || e.target.closest(".hp-modal-close")) close(); });
