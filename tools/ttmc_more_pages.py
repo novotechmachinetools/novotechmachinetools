@@ -82,20 +82,20 @@ PAGES = {
     ),
     D.P_LOCK: dict(
         title="Lock Formers — Pittsburgh Machines & HVAC Duct Tools | NovoTech",
-        meta="Pittsburgh lock formers for 26 – 16 ga duct, an auxiliary roll former for button lock and drive cleat, a power beading machine, a slitting machine and a pneumatic lock seamer for round duct.",
+        meta="Pittsburgh lock formers for 26 – 16 ga duct, an auxiliary roll former for button lock and drive cleat, a pneumatic lock seamer for round duct and a diamond roller former for 20 ga sheet.",
         h1="Lock formers and HVAC duct machines — Pittsburgh lock formers, roll formers and duct tools",
         nav="Lock formers & HVAC",
         intro="A lock former (Pittsburgh machine) rolls the edge of a duct panel into the Pittsburgh lock — the pocket the matching flange is "
               "hammered into to close a rectangular duct — and, with other roll sets, double seams, drive cleats, button locks and flanges. "
               "NovoTech's value-line HVAC machines are built in China to our specification: the PF20G lock former for 26 – 20 ga, the PF16G "
               "for 25 – 16 ga with six roll forms as standard, and the AX20G auxiliary roll former whose roll sets change in under five "
-              "minutes; and the machines for round duct — the RM18E power beading machine and the LQ15 slitting and bending machine. "
-              "Parts and support from Mississauga, ON, Canada.",
+              "minutes; and the PIC50 diamond roller former, which embosses a 2-3/4″ diamond pattern into 20 ga sheet up to 50″ wide "
+              "for decorative panels. Parts and support from Mississauga, ON, Canada.",
         points=["PF20G and PF16G Pittsburgh lock formers, 26 – 16 ga; AX20G roll former with button lock, drive cleat and 6-in-1 flange rolls",
-                "RM18E power beading machine for round duct, 15 ga; LQ15 slitting and bending machine, 16 ga × 47″"],
+                "PIC50 diamond roller former: 2-3/4″ diamonds embossed in 20 ga sheet up to 50″ wide"],
         hero="tm-pf16g", minis=["tm-ax20g", "tm-pf20g"],
         groups=[("lock", "Lock formers and roll formers", "The machines that roll the joints of rectangular duct: Pittsburgh locks, double seams, drive cleats, button locks and flanges.", False),
-                ("round", "Power beading and slitting machines", "For round duct and pipe: a power beading machine and a slitting and bending machine.", False)],
+                ("pic", "Diamond roller former · value line", "A motorized roller that embosses a diamond pattern into sheet for decorative panels — NovoTech value line, built in China.", False)],
         faq=[{"q": "What is a Pittsburgh lock, and what gauge can a lock former take?",
               "a": "The Pittsburgh lock is the standard longitudinal seam of rectangular duct: the lock former rolls a pocket on one edge of the panel, the other edge is bent to a 90° flange, the flange goes into the pocket and the lip is hammered (or closed with a seam closer) over it. The PF20G forms it in 26 to 20 ga, the PF16G in 25 to 16 ga mild steel; galvanized steel is the usual material."},
              {"q": "PF20G, PF16G or AX20G?",
@@ -233,38 +233,7 @@ PAGES = {
         related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "drill-press.html", "label": "Drill presses"},
                  {"href": "laser-cutting-machine.html", "label": "Fiber laser cutting machines"}],
     ),
-    D.P_SHAPE: dict(
-        title="Power Hammers & Planishing Hammers for Metal | NovoTech",
-        meta="Pneumatic planishing hammers with 12 – 24″ throats, electric power hammers to 1,700 blows/min, a diamond roller former and C41 air forging hammers, 35 – 165 lb ram.",
-        h1="Power hammers and planishing hammers — pneumatic, electric and air forging hammers",
-        nav="Power & planishing hammers",
-        intro="Hammers for the metal shaper and the blacksmith. Auto body, hot-rod, motorcycle and aircraft panel builders smooth and "
-              "shape sheet with a planishing hammer — fast, light blows between an upper die and a crowned lower anvil — and with an "
-              "electric power hammer that has the force to shape, bead and shrink as well; blacksmiths and forges draw out, upset, punch "
-              "and forge-weld hot stock under a self-contained air hammer that needs no compressor. NovoTech's value-line hammers are "
-              "built in China to our specification: PPH pneumatic planishing hammers with 12″ and 24″ throats, the UFP-2 planishing hammer "
-              "and wheel on one stand, the PH-20D and PH-30D electric power hammers with 20″ and 30″ throats, the PIC50 diamond roller "
-              "former for embossed panels and the C41 air forging hammers from 35 to 165 lb ram. Parts and support from Mississauga, ON, Canada.",
-        points=["Pneumatic planishing hammers PPH-12 / PPH-24 / PPH500 / PPH-610: 18 – 16 ga, 12 – 24″ throats, radius anvils",
-                "PH-20D and PH-30D electric power hammers: 2 HP, 0 – 1,700 blows/min, 16 ga steel and 12 ga aluminum",
-                "C41 self-contained air forging hammers, 35 – 165 lb ram, 210 – 270 blows/min; PIC50 diamond roller former, 20 ga × 50″"],
-        hero="tm-ph20d", minis=["tm-pph610", "tm-c41-40"],
-        groups=[("hammer", "Planishing hammers and power hammers", "Smoothing, shaping and beading panels with fast, light blows — on shop air or with an electric drive.", False),
-                ("former", "Diamond roller former", "A motorized roller that embosses a diamond pattern into sheet for decorative panels.", False),
-                ("forge", "Air forging hammers", "Self-contained pneumatic hammers for blacksmiths and forges.", False)],
-        faq=[{"q": "Planishing hammer or power hammer?",
-              "a": "A pneumatic planishing hammer (PPH) runs on shop air and delivers fast, light blows that smooth a panel and take out the marks of earlier shaping — the finishing tool of the auto body and restoration shop. An electric power hammer (PH-20D / PH-30D) has variable speed and more force: it shapes as well as planishes, and with shaping dies it shrinks, stretches and beads. Many shops have both."},
-             {"q": "Which throat depth do I need?",
-              "a": "The throat is the distance from the dies to the frame — it limits how far into a panel you can reach. A 12″ throat suits brackets, patch panels and motorcycle parts; 20 – 24″ most car panels; the 30″ throat of the PH-30D reaches the middle of hoods, roofs and large aircraft and boat skins."},
-             {"q": "What does a planishing hammer need from the compressor?",
-              "a": "The PPH500 runs at 50 – 100 psi and the PPH-610 at 90 – 120 psi; the foot pedal or the 3-position air flow valve sets the blow rate. Use clean, dry air — a filter, regulator and lubricator at the hammer keep the valve and the piston working."},
-             {"q": "Does an air forging hammer need shop air?",
-              "a": "No — the C41 hammers are self-contained: a 2 – 9.4 HP motor drives a compressor cylinder in the hammer itself, and that air drives the ram. They stand on a solid concrete foundation — the larger hammers on a separate anvil block of 441 to 1,874 lb — and forge stock heated in a forge. Choose the ram by the largest stock: the 35 – 55 lb rams for blades, tools and ornamental work up to about 1-1/2″ square, the 88 and 165 lb rams for 2 – 2-1/2″ square bar."},
-             VOLT],
-        related=[{"href": "bead-rollers.html", "label": "Bead rollers"}, {"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes"},
-                 {"href": "angle-rolls.html", "label": "Angle rolls and ring rollers"}, {"href": "rotary-draw-tube-benders.html", "label": "Hydraulic & rotary draw benders"},
-                 {"href": "belt-grinder.html", "label": "Belt grinders"}],
-    ),
+    # D.P_SHAPE (power-hammer): removed with its hammers (the owner, Nov 7 2026); the PIC50 is on the lock former page
     D.P_WOOD: dict(
         # keyword research (Ubersuggest, Canada, Oct 2026): "woodworking machinery" 320/mo, CPC $1.47; "woodworking machines" 320/mo, CPC $1.08
         title="Woodworking Machinery — Planers, Jointers & Saws | NovoTech",
@@ -346,13 +315,16 @@ EXTRA = {
         set={"hero_brand_line": "Premium-line angle rolls are built in Turkey to NovoTech's specification with European hydraulic and electrical components; the value-line ring rollers and tube rollers are built in China to NovoTech's specification. All sold with a 1-year warranty and supported from Mississauga, ON, Canada."},
     ),
     D2.P_BEAD: dict(
-        groups=[("tt-bead", "Beading machines and bead rollers · value line", "Motorized beading machines to 8 ga and motorized deep-throat bead rollers to 42″ — NovoTech value line, built in China.", False, None)],
-        intro_add="NovoTech's value-line bead rollers, built in China, add ETB beading machines to 8 ga and RM24 – RM42 deep-throat bead "
-                  "rollers with variable-speed drive for auto body panels.",
-        points_add=["NovoTech value line: ETB beading machines 18 – 8 ga, RM24 / 36 / 42 motorized deep-throat bead rollers"],
+        groups=[("tt-bead", "Beading machines and bead rollers · value line", "Motorized beading machines to 8 ga and motorized deep-throat bead rollers to 42″ — NovoTech value line, built in China.", False, None),
+                ("tt-round", "Power beading and slitting machines for round duct · value line", "For round duct and pipe: the RM18E power beading machine and the LQ15 slitting and bending machine — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value-line bead rollers, built in China, add ETB beading machines to 8 ga, RM24 – RM42 deep-throat bead "
+                  "rollers with variable-speed drive for auto body panels, and for round duct the RM18E power beading machine and the "
+                  "LQ15 slitting and bending machine.",
+        points_add=["NovoTech value line: ETB beading machines 18 – 8 ga, RM24 / 36 / 42 motorized deep-throat bead rollers",
+                    "Round duct: RM18E power beading machine, 15 ga; LQ15 slitting and bending machine, 16 ga × 47″"],
         faq_add=[{"q": "Which throat depth for auto body panels?",
                   "a": "The throat is how far from the edge of the panel the bead can go: 24″ reaches the centre of a 48″ panel, 36″ and 42″ reach into floor pans, hoods and truck beds. The RM-H models also have a 4″ high throat so formed panels clear the frame. For duct, ends of tanks and edge beads, the 8 – 12″ throat of the ETB beading machines is enough."}],
-        related_add=[{"href": "power-hammer.html", "label": "Power and planishing hammers"}, {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
+        related_add=[{"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line bead rollers are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     # D2.P_PRESS: the value-line presses and riveters are on the press pages of tools/press_pages.py (Nov 7 2026)

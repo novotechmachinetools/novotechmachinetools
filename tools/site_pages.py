@@ -36,8 +36,8 @@ BLURBS = {
     "angle-rolls": "Angle rolls, profile benders, ring rollers and tube rollers for angle, flat bar, pipe and profiles.",
     "hydraulic-press": "Hydraulic shop and bench presses from 10 tons, H-frame and four-column presses to 661 US tons, C-frame presses and straightening presses.",
     "riveting-machine": "Hydraulic orbital riveting machines for solid rivets from Ø3/16″ to Ø1-3/16″.",
-    "bead-rollers": "Bead rollers and beading machines for HVAC duct, auto body and sheet metal work.",
-    "lock-former": "Pittsburgh lock formers, roll formers, round duct beading and slitting machines and a pneumatic lock seamer for HVAC ductwork.",
+    "bead-rollers": "Bead rollers, beading machines and round-duct beading and slitting machines for HVAC duct, auto body and sheet metal work.",
+    "lock-former": "Pittsburgh lock formers, roll formers and a pneumatic lock seamer for HVAC ductwork.",
     "circle-cutters-and-seamers": "Circle cutting and flanging machines for tank ends, dished heads and duct fittings.",
     "pipe-benders": "CNC, NC, all-electric and hydraulic pipe and tube benders, Ø15/32″ to Ø8-5/8″.",
     "pipe-notcher": "Tube notchers, hole-saw and end-mill notchers and belt tube-end grinders for frames, railings and roll cages.",
@@ -54,7 +54,6 @@ BLURBS = {
     "drill-press": "Gear-head, column and variable-speed drill presses, 1/2″ to 2″ in steel, with power feed and tapping.",
     "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines, keyseaters and a head resurfacer.",
     "cnc-machine-tools": "Dener CNC lathes, vertical and double-column machining centres and a surface grinder; value-line CNC lathe, VMCs and boring mills.",
-    "power-hammer": "Pneumatic planishing hammers, electric power hammers, a diamond roller former and air forging hammers.",
     "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, multifunction machines, mortisers, a lathe and dust collection.",
 }
 GROUPS = [
@@ -67,7 +66,7 @@ GROUPS = [
     ("sawing", "Sawing", "Band saws, cold saws and the blades that go in them.",
      ["band-saw", "band-saw-blades", "circular-cold-saws", "aluminum-and-pvc-upcut-saws"]),
     ("rolling", "Rolling, pressing and forming", "Plate and section rolling, presses, HVAC forming machines and metal shaping.",
-     ["plate-rollers", "angle-rolls", "hydraulic-press", "riveting-machine", "bead-rollers", "lock-former", "circle-cutters-and-seamers", "power-hammer"]),
+     ["plate-rollers", "angle-rolls", "hydraulic-press", "riveting-machine", "bead-rollers", "lock-former", "circle-cutters-and-seamers"]),
     ("tube", "Tube and pipe", "Bending, notching and end forming of tube and pipe, and CNC wire bending.",
      ["pipe-benders", "pipe-notcher", "tube-end-forming-machines", "wire-bending-machines"]),
     ("finishing", "Deburring, grinding and finishing", "Deburring and edge rounding, belt grinders and sanders, corner grinding and pipe polishing.",

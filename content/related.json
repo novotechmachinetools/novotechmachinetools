@@ -26,7 +26,6 @@
   "angle-rolls": "Angle rolls & section benders",
   "bead-rollers": "Bead rollers",
   "lock-former": "Lock formers & HVAC machines",
-  "power-hammer": "Power & planishing hammers",
   "circle-cutters-and-seamers": "Circle shears & flanging machines",
   "ironworker-machines": "Hydraulic ironworkers",
   "hydraulic-punching-machines": "Hydraulic punching machines",
@@ -198,13 +197,11 @@
    "bead-rollers",
    "lock-former",
    "corner-notcher",
-   "power-hammer",
    "circle-cutters-and-seamers"
   ],
   "magnetic-sheet-metal-brake": [
    "mechanical-guillotine-shear",
    "bead-rollers",
-   "power-hammer",
    "corner-notcher",
    "compact-hydraulic-press-brakes"
   ],
@@ -227,7 +224,6 @@
    "mechanical-guillotine-shear",
    "motorized-plate-rollers",
    "bead-rollers",
-   "power-hammer",
    "corner-notcher"
   ],
   "shear-cutting": [
@@ -350,7 +346,6 @@
   "bead-rollers": [
    "sheet-metal-hand-brake",
    "mechanical-guillotine-shear",
-   "power-hammer",
    "lock-former",
    "circle-cutters-and-seamers",
    "box-and-pan-brake"
@@ -362,13 +357,6 @@
    "circle-cutters-and-seamers",
    "corner-notcher",
    "folder-sheet-metal-brake"
-  ],
-  "power-hammer": [
-   "bead-rollers",
-   "mechanical-guillotine-shear",
-   "magnetic-sheet-metal-brake",
-   "shear-brake-roll-3-in-1",
-   "belt-grinder"
   ],
   "circle-cutters-and-seamers": [
    "plate-rollers",

@@ -247,7 +247,8 @@ LOCK = [
        "Single-phase or 3-phase motors: 1 HP (PF20G), 3 HP (PF16G), 4 HP (AX20G)"],
       ["tm-pf16g", "tm-pf20g", "tm-ax20g", "tm-lock-forms"], headline="26 – 16 ga mild steel", cap="[Capacity, mild steel] · [Speed]"),
     # the SL-10 electric seam closer is not sold any more (the owner, Nov 7 2026)
-    F("tt-duct", P_LOCK, "round", "RM18E power beading machine and LQ15 slitting and bending machine", "Duct beading and slitting", [T["tt-etb"][1]],
+    # the RM18E / LQ15 are at the bottom of the bead roller page (the owner, Nov 7 2026)
+    F("tt-duct", "bead-rollers", "tt-round", "RM18E power beading machine and LQ15 slitting and bending machine", "Duct beading and slitting", [T["tt-etb"][1]],
       "Two powered machines for round duct: the RM18E puts single and offset beads on round duct — 15 ga (1.8 mm) with a 9-3/8″ throat, "
       "three standard roll sets and a foot pedal; the LQ15 slits 16 ga (1.5 mm) sheet up to 47″ wide and bends it for duct work.",
       ["RM18E: 15 ga (1.8 mm), 9-3/8″ (238 mm) throat, 3 standard roll sets (E1 – E3), 3 more to order, foot pedal",
@@ -522,28 +523,13 @@ CNC = [
 # =============================================================================================== power and planishing hammers
 P_SHAPE = "power-hammer"     # was english-wheel: English wheels and shrinker-stretchers are manual — not sold (Oct 2026)
 SHAPE = [
-    F("tt-ph", P_SHAPE, "hammer", "Planishing hammers and power hammers, 18 – 16 ga, 12 – 30″ throat", "Planishing and power hammers",
-      [T["tt-ph"][0], pick(T["tt-ph"][1], ["PH-20D", "PH-30D"], title="PH-20D · PH-30D", sub="Electric power hammers")],
-      "Hammers that smooth and shape sheet-metal panels: the PPH pneumatic planishing hammers with 12″ and 24″ throats, nine "
-      "radius anvils and a foot pedal; the PPH-610 that forms and beads 16 ga with quick-change upper dies; the UFP-2 that is a planishing "
-      "hammer and an English wheel in one; and the PH-20D and PH-30D electric power hammers with 20″ and 30″ throats, variable speed up "
-      "to 1,700 blows a minute and 16 ga steel or 12 ga aluminum capacity.",
-      ["PPH-12 / PPH-24: 18 ga, 12 / 24″ throat, 9 radius anvils from 3/4″ to 12″ and flat, foot pedal", "PPH-610: 16 ga, 24″ throat, 90 – 120 psi, 3-position air flow",
-       "PPH500: 1, 2 and 3″ radius anvils, 875 – 1,350 blows/min, 50 – 100 psi", "PH-20D / PH-30D: 2 HP electric, variable 0 – 1,700 / 0 – 1,400 blows/min, 16 ga steel, 12 ga aluminum",
-       "UFP-2: planishing hammer and English wheel on one stand"],
-      ["tm-ph20d", "tm-pph610", "tm-pph12", "tm-ph30d", "tm-ufp2", "tm-pph500", "tm-anvils"], headline="18 – 16 ga", cap="throat [Throat depth]"),
-    F("tt-pic50", P_SHAPE, "former", "PIC50 diamond roller former, 20 ga × 50″", "PIC50 diamond roller", [T["tt-ew2"][1]],
+    # the power-hammer page is gone (the owner, Nov 7 2026): the planishing / power hammers and the C41 air forging hammers are not
+    # sold any more; the PIC50 diamond roller former is at the bottom of the lock former page
+    F("tt-pic50", P_LOCK, "pic", "PIC50 diamond roller former, 20 ga × 50″", "PIC50 diamond roller", [T["tt-ew2"][1]],
       "A motorized roller former that embosses a 2-3/4″ (70 mm) diamond pattern into 20 ga sheet up to 50″ wide — decorative panels for "
       "doors, cabinets, food trucks and restorations — on a welded frame with a 1 HP motor and 9 – 16 rpm adjustable speed.",
       ["20 ga mild steel × 50″ (1,270 mm)", "2-3/4 × 2-3/4″ (70 × 70 mm) diamonds", "1 HP; 9 – 16 rpm adjustable"],
       ["tm-pic50", "tm-pic50-sample"], headline="20 ga × 50″", cap="[Capacity]"),
-    F("tt-hammer", P_SHAPE, "forge", "C41 self-contained pneumatic forging hammers, 35 – 165 lb ram", "C41 air forging hammers", T["tt-hammer"],
-      "Self-contained air hammers for blacksmiths and forges: the motor drives a compressor cylinder in the hammer itself — no shop air "
-      "needed — and the ram strikes 210 to 270 blows a minute. Drawing out, upsetting, punching, chiselling, forge welding, bending and "
-      "twisting, or forging in bolster dies, from 3/4″ square stock on the C41-16KG to 2-1/2″ square and Ø3-3/8″ round on the C41-75KG.",
-      ["Ram weight 35 – 165 lb (16 – 75 kg); 210 – 270 blows/min", "Blow energy 133 – 664 ft·lbf (180 – 900 J)",
-       "Stock to 2-1/2″ (65 mm) square, Ø3-3/8″ (85 mm) round", "2 – 9.4 HP; separate anvil block 441 – 1,874 lb"],
-      ["tm-c41-40", "tm-c41-16"], headline="35 – 165 lb ram", cap="[Ram (falling) weight] ram"),
 ]
 
 # =============================================================================================== tube & pipe benders

@@ -146,12 +146,6 @@ GUIDES = [
       "allowance and set-up, and the machines of a duct shop. " + BY,
       "Pittsburgh locks, snap locks, seams and cleats, choosing the gauge range, material allowance, and the machines of a duct "
       "line."),
-    G("power-hammer", "power-hammer-guide.html", "Power and planishing hammer buying guide", "sheet",
-      "What we explain to customers before they buy a power hammer or a planishing hammer: what each hammer does, throat, frame "
-      "and dies, air and power, and sizing an air forging hammer. " + BY,
-      "Planishing hammer, power hammer or air forging hammer: what each does, throat and frame stiffness, dies and anvils, and "
-      "ram weight for forging."),
-    # ------------------------------------------------------------------------------------------- finishing
     G("sheet-metal-plate-deburring-edge-rounding-finishing-grinding", "deburring-machine-guide.html", "Deburring machine buying guide",
       "finishing",
       "What we explain to customers before they buy a deburring machine: why deburr and round edges, belts and brushes, which "
