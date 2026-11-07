@@ -512,76 +512,6 @@
    "tt-tfm"
   ]
  ],
- "hydraulic-press": [
-  [
-   "DPM",
-   "sahinler-dpm"
-  ],
-  [
-   "mobile-cylinder DPM-K / DK",
-   "sahinler-dpm-k"
-  ],
-  [
-   "T-slot AT",
-   "sahinler-at"
-  ],
-  [
-   "AP press brake",
-   "sahinler-ap"
-  ],
-  [
-   "DK-S straightening",
-   "sahinler-dk-s"
-  ],
-  [
-   "H-frame",
-   "nt-press-hsa"
-  ],
-  [
-   "column",
-   "nt-press-hcfp"
-  ],
-  [
-   "C-frame",
-   "nt-press-cfs"
-  ],
-  [
-   "deep drawing with die cushion",
-   "nt-press-hdd"
-  ],
-  [
-   "hot plate SMC presses",
-   "nt-press-hhrp"
-  ],
-  [
-   "workshop presses 28 – 176 US tons",
-   "tt-shop-hs"
-  ],
-  [
-   "H-frame presses 33 – 551 US tons",
-   "tt-hp-h"
-  ],
-  [
-   "brake",
-   "tt-hpb"
-  ],
-  [
-   "sliding-table",
-   "tt-hp-m1"
-  ],
-  [
-   "C-frame",
-   "tt-hp-c"
-  ],
-  [
-   "four-column presses",
-   "tt-hp-f"
-  ],
-  [
-   "orbital riveters",
-   "tt-riveter"
-  ]
- ],
  "hydraulic-punching-machines": [
   [
    "HPM 30 – 175 single-station punches",
@@ -1648,6 +1578,108 @@
   [
    "TNCB NC pipe benders",
    "csm-tncb"
+  ]
+ ],
+ "hydraulic-shop-press": [
+  [
+   "DPM shop presses",
+   "sahinler-dpm"
+  ],
+  [
+   "DPM-K and DK",
+   "sahinler-dpm-k"
+  ],
+  [
+   "EBP-10T bench press",
+   "tt-ebp10t"
+  ],
+  [
+   "EBP-25T workshop press",
+   "tt-shop-small"
+  ],
+  [
+   "HPP-60 – HPP-160 motorized workshop presses",
+   "tt-shop-hs"
+  ]
+ ],
+ "h-frame-hydraulic-press": [
+  [
+   "AT T-slot presses",
+   "sahinler-at"
+  ],
+  [
+   "AP press brakes",
+   "sahinler-ap"
+  ],
+  [
+   "HDT Eco H-frame",
+   "nt-press-hdt"
+  ],
+  [
+   "HSA single action",
+   "nt-press-hsa"
+  ],
+  [
+   "HDD deep drawing",
+   "nt-press-hdd"
+  ],
+  [
+   "SMC / HHRP hot plate",
+   "nt-press-hhrp"
+  ],
+  [
+   "HCFP four-column",
+   "nt-press-hcfp"
+  ],
+  [
+   "HP-M1 sliding-table",
+   "tt-hp-m1"
+  ],
+  [
+   "HPB brake",
+   "tt-hpb"
+  ],
+  [
+   "HP H-frame",
+   "tt-hp-h"
+  ],
+  [
+   "HP-F four-column presses",
+   "tt-hp-f"
+  ]
+ ],
+ "c-frame-hydraulic-press": [
+  [
+   "CFS single action",
+   "nt-press-cfs"
+  ],
+  [
+   "CFSS enclosed",
+   "nt-press-cfss"
+  ],
+  [
+   "CFDD deep drawing",
+   "nt-press-cfdd"
+  ],
+  [
+   "HP-C C-frame presses",
+   "tt-hp-c"
+  ]
+ ],
+ "hydraulic-straightening-press": [
+  [
+   "HSPS portal straightening presses",
+   "nt-press-hsps"
+  ],
+  [
+   "DK-S 3-axis moving straightening presses",
+   "sahinler-dk-s"
+  ]
+ ],
+ "riveting-machine": [
+  [
+   "XM-5 to XM-30 orbital riveters",
+   "tt-riveter"
   ]
  ]
 }

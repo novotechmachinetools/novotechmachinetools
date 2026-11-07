@@ -31,7 +31,7 @@
   "ironworker-machines": "Hydraulic ironworkers",
   "hydraulic-punching-machines": "Hydraulic punching machines",
   "corner-notcher": "Corner notchers",
-  "hydraulic-press": "Hydraulic shop presses",
+  "hydraulic-press": "Hydraulic press",
   "plate-beveler": "Plate bevelers",
   "welding-positioners": "Welding positioners & turning rolls",
   "drill-press": "Drill presses",
@@ -63,7 +63,12 @@
   "mechanical-guillotine-shear": "Mechanical shears",
   "cnc-tube-benders": "CNC tube benders",
   "nc-tube-benders": "NC mandrel benders",
-  "rotary-draw-tube-benders": "Hydraulic & rotary draw benders"
+  "rotary-draw-tube-benders": "Hydraulic & rotary draw benders",
+  "hydraulic-shop-press": "Hydraulic shop presses",
+  "h-frame-hydraulic-press": "H-frame hydraulic presses",
+  "c-frame-hydraulic-press": "C-frame hydraulic presses",
+  "hydraulic-straightening-press": "Hydraulic straightening presses",
+  "riveting-machine": "Orbital riveting machines"
  },
  "pages": {
   "press-brake": [
@@ -397,6 +402,7 @@
    "corner-welding-machines"
   ],
   "hydraulic-press": [
+   "riveting-machine",
    "horizontal-press-brake",
    "ironworker-machines",
    "hydraulic-punching-machines",

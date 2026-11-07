@@ -14,7 +14,7 @@ from isitan_lib import CRUMBS, SAHINLER_INTRO_VIDEO, VOLT_FAQ_GENERIC, lower_kee
 from sahinler_lib import premium_pdf
 from sahinler_families import *  # noqa: F401,F403
 import sahinler_plate_rolls
-import hidroliksan_data  # NovoTech premium-line production presses below the premium-line group on hydraulic-press.html
+import hidroliksan_data  # NovoTech premium-line production presses — on the press pages of tools/press_pages.py
 import vl_sheet_data     # NovoTech value-line Q35Y ironworker below the premium-line group on ironworker-machines.html
 
 SET = "sahinler"
@@ -98,29 +98,7 @@ PAGES = {
         related_pages=[{"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "corner-notcher.html", "label": "Corner notchers"}, {"href": "hydraulic-press.html", "label": "Hydraulic presses"}, {"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}],
         related_title="More cutting and punching machinery from NovoTech",
     ),
-    P_PRESS: dict(
-        title="Hydraulic Shop Presses, H-Frame, 33–441 Tons | NovoTech",
-        meta="H-frame presses with two-speed joystick, mobile-cylinder, T-slot die and straightening presses and garage press brakes; production presses to 3,307 tons.",
-        h1="Hydraulic shop presses — H-frame, T-slot and straightening presses, 33 to 441 US tons",
-        intro="A hydraulic shop press is the machine every repair shop, truck and equipment dealer and fabricator reaches for several times a day: pressing bearings, bushings and pins, straightening shafts and bar, bending flat bar and short plate, pushing a die for the odd forming job. NovoTech's premium-line shop presses are H-frame presses built in Turkey from 33 to 441 US tons, all with a pressure gauge, relief valve and a CSA-approved panel: the DPM series with two-speed joystick control, the DPM-K and DK with a cylinder that slides across the frame so the ram meets the work instead of the work being shifted under the ram, the AT presses with T-slot tables for your own dies, the AP garage-type press brake that bends 1/4″ and 3/8″ plate, and the DK-S 3-axis straightening presses from 220 to 441 US tons. Further down the page, for the plant that runs a die under PLC control cycle after cycle, is NovoTech's premium line of production hydraulic presses: HSA and HDD deep-drawing H-frame presses to 3,307 US tons, HCFP column presses, CFS / CFSS / CFDD C-frame presses, SMC and HHRP hot plate presses, HSPS portal straightening presses and the HDT Eco. Parts, installation and service for every press from Mississauga, ON, Canada.",
-        points=["Premium-line shop presses 33 – 441 US tons: DPM, mobile-cylinder DPM-K / DK, T-slot AT, AP press brake, DK-S straightening", "NovoTech premium-line production presses: H-frame, column and C-frame to 3,307 US tons, deep drawing with die cushion, hot plate SMC presses", "Siemens PLC, HMI touchscreen and light barriers on the production line; two-speed joystick control on the shop presses"],
-        hero="sh-dpm", minis=["hk-hdd", "sh-dks400"],
-        groups=[("sahinler-press", "Hydraulic shop presses · premium line", "DPM shop presses first, then the mobile-cylinder DPM-K / DK, the T-slot AT, the AP press brake and the DK-S straightening presses — small to large.", "sahinler"),
-                ("novotech-production", "Production hydraulic presses — NovoTech premium line", "Built in Turkey to NovoTech's specification: H-frame single and double action presses to 3,307 US tons, column presses, C-frame and C-frame deep drawing presses, SMC hot plate presses, portal straightening presses and the HDT Eco H-frame — small to large.", "novotech-premium")],
-        faq=[{"q": "What tonnage shop press do I need?", "a": "Most truck, equipment and fabrication shops run a 66 – 110 US ton press (DPM 1040-60 to DPM 1570-100): enough for pressing bearings and bushings, straightening shafts to Ø3″ and bending flat bar. Go to 165 – 220 US tons for large bearings, track pins, heavy shafts and forming plate; the DK-S straightening presses from 220 to 441 US tons are for plates, beams and bar that need a moving ram."},
-             {"q": "What do the model numbers mean — DPM 1040-60?", "a": "The first number is the clear working width between the columns in millimetres (1040 mm = 40.9″) and the second the press force in metric tons (60 t = 66 US tons). A 1570-100 press is 61.8″ wide at 110 US tons."},
-             {"q": "Why a mobile (sliding) cylinder?", "a": "On the DPM-K and DK the cylinder head travels across the frame on a hand wheel, so the ram comes to the work — a long shaft, a frame rail or a plate stays clamped while you straighten it point by point instead of shifting the part under a fixed ram. The DK series adds a wider 61.8″ – 74.8″ frame."},
-             {"q": "Can a shop press bend plate?", "a": "The AP garage-type press brake is a hydraulic press delivered with a 5-face prism bottom die and hardened top blade for bending 1/4″ (110 US tons) or 3/8″ (165 US tons) mild steel over 40″ or 60″ — the economical way to bend brackets and short plate without a full press brake. The AT press has T-slot tables for bolting your own forming, blanking and coining dies."},
-             {"q": "Hand pump, foot pedal or two-hand control?", "a": "The DPM and DPM-K presses come with two-speed joystick control; a hand pump for fine pressing, a foot pedal and a limit switch that stops the stroke at a set height are options. The AT and AP presses are two-hand controlled with stepless stroke adjustment by limit switch, as die and bending work requires."},
-             {"q": "Shop press or production press?", "a": "A shop press is operated by hand — joystick or two-hand buttons — for one part at a time: pressing, straightening, bending. A production press runs a die under PLC control with programmed speeds, pressures, dwell and return, light barriers instead of guards, automatic lubrication and remote diagnostics, for thousands of cycles a shift. The NovoTech premium line starts at 33 US tons with the CFS C-frame and goes to 3,307 US tons on the H-frame presses."},
-             {"q": "Single action or double action — what is a die cushion?", "a": "A single action press has one ram. A double action (deep drawing) press adds a die cushion in the lower table — a second cylinder that holds the blank holder with its own programmed force — so a flat blank can be drawn into a deep cup, pan or housing without wrinkling. The HDD H-frame and CFDD C-frame presses have the cushion built in; it is an option on the HCFP column press."},
-             {"q": "H-frame, column or C-frame?", "a": "An H-frame (straight-side) press is the stiffest and takes the largest tables and tonnages — the choice for deep drawing and big dies. A column (four-post) press is open on all sides for die access and automation. A C-frame press is open on three sides, so small dies go in and out quickly and the press takes less floor space; its table size is limited because the C deflects, which is why the C-frame range stops at 276 US tons."},
-             {"q": "Can the press be built to my die?", "a": "Yes — every series of the premium line is built to order in the table size, stroke, daylight and tonnage the die needs, from a 33 US ton C-frame to a 3,307 US ton H-frame, with quick die change, die loading arms, ejector, heated platens or a die cushion as required. Send us the die drawing and the cycle you need and we quote the press around it."},
-             VOLT_FAQ_GENERIC],
-        faq_title="Questions we get asked about hydraulic presses",
-        related_pages=[{"href": "hydraulic-punching-machines.html", "label": "Hydraulic punching machines"}, {"href": "ironworker-machines.html", "label": "Hydraulic ironworkers"}, {"href": "hydraulic-press-brake.html", "label": "Hydraulic press brakes"}, {"href": "horizontal-press-brake.html", "label": "Horizontal press brakes"}],
-        related_title="More pressing and bending machinery from NovoTech",
-    ),
+    # P_PRESS (hydraulic-press) is the press hub with four pages of its own, written by tools/press_pages.py from these families (Nov 7 2026)
     P_NOTCH: dict(
         title="Hydraulic Corner Notchers, Fixed & Variable Angle | NovoTech",
         meta="Hydraulic corner notchers that cut a 90° or 30°–140° corner out of sheet to 1/4″ in one stroke: HNM 4F, 6F and 6V with T-slot table and automatic blade gap.",
@@ -176,6 +154,9 @@ def register_images():
             e = {"src": f"tools/src-images/{section}/{key}{ext}", "alt": p["alt"], "section": section, "trim": ext == ".png", "quality": 82}
             if p.get("cutout") is not None:      # True forces BiRefNet on photos with a grey studio background (shop presses)
                 e["cutout"] = bool(p["cutout"])
+            old = imap.get(key, {}).get("cutout")
+            if isinstance(old, str):             # a cutout method set by hand ("threshold", Nov 1 2026) is kept
+                e["cutout"] = old
             imap[key] = e
             keys.append(key)
     json.dump(imap, open(imap_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
@@ -200,10 +181,6 @@ def build():
     write_families_set()
     for slug, p in PAGES.items():
         extra = dict(EXTRA, **SAHINLER_INTRO_VIDEO, catalogue_pdf=premium_pdf(PAGE_PDF[slug]))
-        if slug == P_PRESS:
-            extra.update({"catalogue_pdf": None, "catalogue_pdfs": [premium_pdf(PAGE_PDF[slug]), PDF_PROD]})
-            extra.update({"hero_brand_line": "Premium-line shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses are built in Turkey with European components to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
-                          "origin_feature": {"title": "Made in Turkey", "text": "The shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses come from a Turkish press builder with 50 years of hydraulic press manufacturing, CE-certified with Siemens controls and European hydraulics."}})
         if slug == P_IRON:
             extra.update(IRON_GUIDE)
         for k in ("range_pick", "range_cols", "range_lead", "range_caption", "range_note"):   # the all-models table under the hero (angle rolls)

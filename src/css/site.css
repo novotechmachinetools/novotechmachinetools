@@ -740,7 +740,8 @@ small { font-size: .85em; }
 }
 /* ---------- band saw hub: premium (Bekamak) and value (NovoTech) line blocks ---------- */
 .line-block { padding-top: 30px; }
-.line-block .subpage-grid, .subpage-grid.is-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.line-block .subpage-grid, .subpage-grid.is-4 { gap: 16px; }
+@media (min-width: 961px) { .line-block .subpage-grid, .subpage-grid.is-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }   /* four in a row on wide screens only: the phone rules above stay in force (Nov 7 2026) */
 .line-block .subpage-art { height: 200px; }
 .line-block .subpage-body { padding: 12px 14px 16px; }
 .line-block .subpage-body p { font-size: 15px; }

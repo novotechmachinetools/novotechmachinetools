@@ -355,19 +355,7 @@ EXTRA = {
         related_add=[{"href": "power-hammer.html", "label": "Power and planishing hammers"}, {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line bead rollers are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
-    D2.P_PRESS: dict(
-        groups=[("tt-shop", "Shop presses · value line", "Motorized workshop presses from 28 to 176 US tons and a hydraulic bench press for sheet-metal tooling — NovoTech value line, built in China.", False, None),
-                ("tt-hp", "Hydraulic presses · value line", "Motorized H-frame, brake, sliding-table, C-frame and four-column presses from 22 to 551 US tons — NovoTech value line, built in China.", False, None),
-                ("tt-rivet", "Orbital riveting machines · value line", "Hydraulic orbital riveters that roll solid rivets from 3/16 to 1-3/16″ — NovoTech value line, built in China.", False, None)],
-        intro_add="NovoTech's value-line presses, built in China, add motorized workshop presses from 28 to 176 US tons, the EBP-10T hydraulic "
-                  "bench press, motorized H-frame presses to 551 US tons, presses with a brake function, sliding-table, C-frame and four-column "
-                  "presses — the HP-F1/PLC with a PLC touch screen — and XM orbital riveting machines.",
-        points_add=["NovoTech value line: workshop presses 28 – 176 US tons, H-frame presses 33 – 551 US tons, brake, sliding-table, C-frame and four-column presses, orbital riveters"],
-        faq_add=[{"q": "Premium-line or value-line press?",
-                  "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with built-on or separate power units."}],
-        related_add=[{"href": "lock-former.html", "label": "Lock formers and HVAC machines"}],
-        set={"hero_brand_line": "Premium-line shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses are built in Turkey with European components; the value-line presses are built in China — all to NovoTech's specification and sold, installed and supported in Canada by NovoTech."},
-    ),
+    # D2.P_PRESS: the value-line presses and riveters are on the press pages of tools/press_pages.py (Nov 7 2026)
     D2.P_CIRCLE: dict(
         groups=[("tt-circle", "Circle shears · value line", "Motorized circle shears, one with flanging rolls — NovoTech value line, built in China.", False, None)],
         intro_add="NovoTech's value-line circle shears, built in China, add the MCS-1250E motorized circle shear for discs to Ø49″ in 10 ga and "

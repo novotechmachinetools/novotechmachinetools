@@ -1,21 +1,22 @@
 {
  "slug": "hydraulic-press",
- "template": "category.html",
- "family_set": "sahinler",
- "title": "Hydraulic Shop Presses, H-Frame, 33–441 Tons | NovoTech",
- "artifact_title": "Hydraulic shop presses — H-frame, T-slot and straightening presses, 33 to 441 US tons",
- "meta_description": "H-frame presses with two-speed joystick, mobile-cylinder, T-slot die and straightening presses and garage press brakes; production presses to 3,307 tons.",
- "h1": "Hydraulic shop presses — H-frame, T-slot and straightening presses, 33 to 441 US tons",
- "intro": "A hydraulic shop press is the machine every repair shop, truck and equipment dealer and fabricator reaches for several times a day: pressing bearings, bushings and pins, straightening shafts and bar, bending flat bar and short plate, pushing a die for the odd forming job. NovoTech's premium-line shop presses are H-frame presses built in Turkey from 33 to 441 US tons, all with a pressure gauge, relief valve and a CSA-approved panel: the DPM series with two-speed joystick control, the DPM-K and DK with a cylinder that slides across the frame so the ram meets the work instead of the work being shifted under the ram, the AT presses with T-slot tables for your own dies, the AP garage-type press brake that bends 1/4″ and 3/8″ plate, and the DK-S 3-axis straightening presses from 220 to 441 US tons. Further down the page, for the plant that runs a die under PLC control cycle after cycle, is NovoTech's premium line of production hydraulic presses: HSA and HDD deep-drawing H-frame presses to 3,307 US tons, HCFP column presses, CFS / CFSS / CFDD C-frame presses, SMC and HHRP hot plate presses, HSPS portal straightening presses and the HDT Eco. Parts, installation and service for every press from Mississauga, ON, Canada.",
+ "template": "hub.html",
+ "family_set": "all-presses",
+ "nav_label": "All hydraulic presses",
+ "title": "Hydraulic Press for Sale in Canada — Hydraulic Presses: Shop, H-Frame, C-Frame & Straightening | NovoTech",
+ "artifact_title": "Hydraulic Press",
+ "meta_description": "Every hydraulic press NovoTech sells in Canada, by kind: shop and bench presses from 10 to 220 US tons, H-frame and four-column production presses to 661 US tons (3,307 to order), C-frame presses to 276 US tons and straightening presses to 441 US tons — every model in one table.",
+ "h1": "Hydraulic press — shop, H-frame, C-frame and straightening hydraulic presses",
+ "intro": "A hydraulic press drives its ram with an oil cylinder — slowly, with the full force available anywhere in the stroke and a pressure you set — which is why the same kind of machine presses bearings, straightens shafts, bends plate and punches, forms and deep-draws sheet in a die. NovoTech sells four kinds in Canada, each on its own page: hydraulic shop presses — the H-frame workshop press of every repair shop, dealer and fabricator, from a 10-ton bench press to 220 US tons; H-frame hydraulic presses — straight-side and four-column production presses for dies, deep drawing and composite moulding, from 22 to 661 US tons and to 3,307 US tons to order; C-frame hydraulic presses — open on three sides for small dies, punching and assembly, from 22 to 276 US tons; and hydraulic straightening presses — portal and 3-axis presses whose cylinder travels to the bend over beams, plate and shafts, from 110 to 441 US tons. The premium line is built in Turkey with European hydraulics and Siemens controls, the value line in China for the repair shop and lighter production; orbital riveting machines have a page of their own. Below, the four kinds compared, every model in one table, the buying guide and the questions we get asked; every press comes with a CSA-approved panel and support from Mississauga, ON, Canada.",
  "hero_points": [
-  "Premium-line shop presses 33 – 441 US tons: DPM, mobile-cylinder DPM-K / DK, T-slot AT, AP press brake, DK-S straightening",
-  "NovoTech premium-line production presses: H-frame, column and C-frame to 3,307 US tons, deep drawing with die cushion, hot plate SMC presses",
-  "Siemens PLC, HMI touchscreen and light barriers on the production line; two-speed joystick control on the shop presses"
+  "<a href=\"hydraulic-shop-press.html\">Hydraulic shop presses</a>: premium-line <a href=\"hydraulic-shop-press.html#sahinler-dpm\">DPM</a> and <a href=\"hydraulic-shop-press.html#sahinler-dpm-k\">mobile-cylinder DPM-K / DK</a>, 33 – 220 US tons; value-line <a href=\"hydraulic-shop-press.html#tt-ebp10t\">bench</a> and <a href=\"hydraulic-shop-press.html#tt-shop-hs\">workshop presses</a>",
+  "<a href=\"h-frame-hydraulic-press.html\">H-frame hydraulic presses</a>: premium-line <a href=\"h-frame-hydraulic-press.html#nt-press-hsa\">HSA</a>, <a href=\"h-frame-hydraulic-press.html#nt-press-hdd\">HDD deep drawing</a> and <a href=\"h-frame-hydraulic-press.html#nt-press-hcfp\">HCFP four-column</a> to 661 US tons; value-line <a href=\"h-frame-hydraulic-press.html#tt-hp-h\">HP</a> and <a href=\"h-frame-hydraulic-press.html#tt-hp-f\">HP-F</a>",
+  "<a href=\"c-frame-hydraulic-press.html\">C-frame presses</a> 22 – 276 US tons · <a href=\"hydraulic-straightening-press.html\">straightening presses</a> 110 – 441 US tons · <a href=\"riveting-machine.html\">orbital riveting machines</a>"
  ],
  "hero_image": "sh-dpm",
  "hero_image_secondary": [
-  "hk-hdd",
-  "sh-dks400"
+  "hk-hsa",
+  "hk-cfss"
  ],
  "breadcrumb": [
   {
@@ -27,74 +28,101 @@
    "href": "products.html"
   },
   {
-   "label": "Hydraulic shop presses — H-frame, T-slot and straightening presses, 33 to 441 US tons"
+   "label": "Hydraulic press"
   }
  ],
- "hero_brand_line": "Premium-line shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses are built in Turkey with European components to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
- "groups": [
+ "hero_brand_line": "The premium-line presses are built in Turkey with European hydraulics and Siemens controls; the value-line presses and riveters are built in China — all to NovoTech's specification and sold, installed and supported in Canada by NovoTech.",
+ "subpages": [
   {
-   "id": "sahinler-press-group",
-   "title": "Hydraulic shop presses · premium line",
-   "lead": "DPM shop presses first, then the mobile-cylinder DPM-K / DK, the T-slot AT, the AP press brake and the DK-S straightening presses — small to large.",
-   "brand": "sahinler",
+   "slug": "hydraulic-shop-press",
+   "title": "Hydraulic shop presses — H-frame workshop and bench presses, 10 to 220 US tons",
+   "image": "sh-dpm",
+   "blurb": "For the repair shop, dealer and fabricator: premium-line DPM and mobile-cylinder DPM-K / DK presses from 33 to 220 US tons, and value-line bench and motorized workshop presses from 10 to 176 tons.",
    "families": [
     "sahinler-dpm",
     "sahinler-dpm-k",
+    "tt-ebp10t",
+    "tt-shop-small",
+    "tt-shop-hs"
+   ],
+   "nav_label": "Hydraulic shop presses",
+   "cards_title": "Hydraulic shop presses — every family"
+  },
+  {
+   "slug": "h-frame-hydraulic-press",
+   "title": "H-frame hydraulic presses — H-frame and four-column production presses, 22 to 661 US tons",
+   "image": "hk-hsa",
+   "blurb": "For dies and production: premium-line AT, AP, HDT, HSA, HDD deep drawing, SMC hot plate and HCFP four-column presses to 661 US tons (3,307 to order), and value-line H-frame, brake, sliding-table and four-column presses.",
+   "families": [
     "sahinler-at",
     "sahinler-ap",
-    "sahinler-dk-s"
-   ]
+    "nt-press-hdt",
+    "nt-press-hsa",
+    "nt-press-hdd",
+    "nt-press-hhrp",
+    "nt-press-hcfp",
+    "tt-hp-m1",
+    "tt-hpb",
+    "tt-hp-h",
+    "tt-hp-f"
+   ],
+   "nav_label": "H-frame presses",
+   "cards_title": "H-frame hydraulic presses — every family"
   },
   {
-   "id": "novotech-production-group",
-   "title": "Production hydraulic presses — NovoTech premium line",
-   "lead": "Built in Turkey to NovoTech's specification: H-frame single and double action presses to 3,307 US tons, column presses, C-frame and C-frame deep drawing presses, SMC hot plate presses, portal straightening presses and the HDT Eco H-frame — small to large.",
-   "brand": "novotech-premium",
+   "slug": "c-frame-hydraulic-press",
+   "title": "C-frame hydraulic presses — open-gap presses, 22 to 276 US tons",
+   "image": "hk-cfss",
+   "blurb": "Open on three sides for small dies, punching and assembly: premium-line CFS, enclosed CFSS and CFDD deep drawing presses from 33 to 276 US tons, and value-line HP-C presses from 22 to 110 US tons.",
    "families": [
-    "nt-press-hdd",
-    "nt-press-hsa",
-    "nt-press-hcfp",
-    "nt-press-cfss",
     "nt-press-cfs",
+    "nt-press-cfss",
     "nt-press-cfdd",
-    "nt-press-hhrp",
+    "tt-hp-c"
+   ],
+   "nav_label": "C-frame presses",
+   "cards_title": "C-frame hydraulic presses — every family"
+  },
+  {
+   "slug": "hydraulic-straightening-press",
+   "title": "Hydraulic straightening presses — portal and 3-axis straightening presses, 110 to 441 US tons",
+   "image": "sh-dks400",
+   "blurb": "For beams, plate, rails and shafts that stay on the bed: premium-line HSPS portal straightening presses from 110 to 441 US tons and DK-S 3-axis moving straightening presses from 220 to 441 US tons.",
+   "families": [
     "nt-press-hsps",
-    "nt-press-hdt"
-   ]
+    "sahinler-dk-s"
+   ],
+   "nav_label": "Straightening presses",
+   "cards_title": "Hydraulic straightening presses — every family"
   }
  ],
+ "range_kind": "table",
+ "range_cols": [
+  "Force",
+  "Stroke",
+  "Table / working width",
+  "Motor",
+  "Weight"
+ ],
+ "range_lead": "Every hydraulic press NovoTech sells, in one table: force, stroke, table or working width, motor and weight. Each row links to the full specification table on its page.",
+ "range_caption": "Hydraulic presses supplied by NovoTech — shop, H-frame, four-column, C-frame and straightening presses",
+ "range_note": "Forces in US tons with metric tons in brackets. Three-phase presses are supplied for 600 V as standard with a CSA-approved panel; 208, 240 and 480 V on request. Larger tables, strokes and tonnages to order on the premium line.",
  "faq": [
   {
+   "q": "Which kind of hydraulic press do I need?",
+   "a": "By the work. For pressing bearings, bushings and pins, straightening shafts and bending flat bar one part at a time, a shop press. For dies — forming, blanking, coining, deep drawing — run cycle after cycle under PLC control, an H-frame or four-column press, or a C-frame press when the dies are small and quick access matters more than table size. For beams, plate and long parts straightened where they lie, a straightening press with a moving cylinder. Send us the part and the force and we size the press."
+  },
+  {
    "q": "What tonnage shop press do I need?",
-   "a": "Most truck, equipment and fabrication shops run a 66 – 110 US ton press (DPM 1040-60 to DPM 1570-100): enough for pressing bearings and bushings, straightening shafts to Ø3″ and bending flat bar. Go to 165 – 220 US tons for large bearings, track pins, heavy shafts and forming plate; the DK-S straightening presses from 220 to 441 US tons are for plates, beams and bar that need a moving ram."
+   "a": "Most truck, equipment and fabrication shops run a 66 – 110 US ton press (DPM 1040-60 to DPM 1570-100, or the value-line HPP-60 and HPP-100): enough for pressing bearings and bushings, straightening shafts to Ø3″ and bending flat bar. Go to 165 – 220 US tons for large bearings, track pins, heavy shafts and forming plate. Beams and plate that need a moving ram are on the straightening press page."
   },
   {
-   "q": "What do the model numbers mean — DPM 1040-60?",
-   "a": "The first number is the clear working width between the columns in millimetres (1040 mm = 40.9″) and the second the press force in metric tons (60 t = 66 US tons). A 1570-100 press is 61.8″ wide at 110 US tons."
+   "q": "H-frame, four-column or C-frame?",
+   "a": "An H-frame (straight-side) press is the stiffest and takes the largest tables and tonnages — the choice for deep drawing and big dies. A four-column (column) press is open on all sides for die access and automation. A C-frame press is open on three sides, so small dies go in and out quickly and the press takes less floor space; its table size is limited because the C deflects, which is why the premium-line C-frame range stops at 276 US tons."
   },
   {
-   "q": "Why a mobile (sliding) cylinder?",
-   "a": "On the DPM-K and DK the cylinder head travels across the frame on a hand wheel, so the ram comes to the work — a long shaft, a frame rail or a plate stays clamped while you straighten it point by point instead of shifting the part under a fixed ram. The DK series adds a wider 61.8″ – 74.8″ frame."
-  },
-  {
-   "q": "Can a shop press bend plate?",
-   "a": "The AP garage-type press brake is a hydraulic press delivered with a 5-face prism bottom die and hardened top blade for bending 1/4″ (110 US tons) or 3/8″ (165 US tons) mild steel over 40″ or 60″ — the economical way to bend brackets and short plate without a full press brake. The AT press has T-slot tables for bolting your own forming, blanking and coining dies."
-  },
-  {
-   "q": "Hand pump, foot pedal or two-hand control?",
-   "a": "The DPM and DPM-K presses come with two-speed joystick control; a hand pump for fine pressing, a foot pedal and a limit switch that stops the stroke at a set height are options. The AT and AP presses are two-hand controlled with stepless stroke adjustment by limit switch, as die and bending work requires."
-  },
-  {
-   "q": "Shop press or production press?",
-   "a": "A shop press is operated by hand — joystick or two-hand buttons — for one part at a time: pressing, straightening, bending. A production press runs a die under PLC control with programmed speeds, pressures, dwell and return, light barriers instead of guards, automatic lubrication and remote diagnostics, for thousands of cycles a shift. The NovoTech premium line starts at 33 US tons with the CFS C-frame and goes to 3,307 US tons on the H-frame presses."
-  },
-  {
-   "q": "Single action or double action — what is a die cushion?",
-   "a": "A single action press has one ram. A double action (deep drawing) press adds a die cushion in the lower table — a second cylinder that holds the blank holder with its own programmed force — so a flat blank can be drawn into a deep cup, pan or housing without wrinkling. The HDD H-frame and CFDD C-frame presses have the cushion built in; it is an option on the HCFP column press."
-  },
-  {
-   "q": "H-frame, column or C-frame?",
-   "a": "An H-frame (straight-side) press is the stiffest and takes the largest tables and tonnages — the choice for deep drawing and big dies. A column (four-post) press is open on all sides for die access and automation. A C-frame press is open on three sides, so small dies go in and out quickly and the press takes less floor space; its table size is limited because the C deflects, which is why the C-frame range stops at 276 US tons."
+   "q": "Premium-line or value-line press?",
+   "a": "The premium-line shop and production presses are built in Turkey with European hydraulics and Siemens controls, for daily production work, straightening lines and custom sizes. The value-line presses are built in China for the repair shop, the maintenance department and lighter production — the same tonnages at a lower price, with built-on or separate power units."
   },
   {
    "q": "Can the press be built to my die?",
@@ -108,29 +136,29 @@
  "faq_title": "Questions we get asked about hydraulic presses",
  "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey",
-  "text": "The shop presses are built in Turkey for NovoTech's premium line; the NovoTech premium-line production presses come from a Turkish press builder with 50 years of hydraulic press manufacturing, CE-certified with Siemens controls and European hydraulics."
+  "title": "Four kinds, two lines, one supplier",
+  "text": "Shop, H-frame, C-frame and straightening presses from NovoTech's premium line, built in Turkey, and its value line, built in China — installed, trained and supported by the same NovoTech technicians in Canada."
  },
- "section_label": "Hydraulic presses",
+ "section_label": "Hydraulic press",
+ "related_blurb": "Shop, H-frame, C-frame or straightening press? Every hydraulic press NovoTech sells in Canada on one page, with the four kinds compared.",
  "related_pages": [
   {
-   "href": "hydraulic-punching-machines.html",
-   "label": "Hydraulic punching machines"
-  },
-  {
-   "href": "ironworker-machines.html",
-   "label": "Hydraulic ironworkers"
+   "href": "riveting-machine.html",
+   "label": "Orbital riveting machines"
   },
   {
    "href": "hydraulic-press-brake.html",
    "label": "Hydraulic press brakes"
   },
   {
-   "href": "horizontal-press-brake.html",
-   "label": "Horizontal press brakes"
+   "href": "ironworker-machines.html",
+   "label": "Hydraulic ironworkers"
+  },
+  {
+   "href": "hydraulic-punching-machines.html",
+   "label": "Hydraulic punching machines"
   }
  ],
- "related_title": "More pressing and bending machinery from NovoTech",
  "intro_video": {
   "id": "nqgpctYOsyk",
   "title": "Factory introduction video",
@@ -143,12 +171,96 @@
   {
    "file": "files/NovoTech-Hydraulic-Shop-Presses-2026.pdf",
    "label": "Download the shop presses brochure",
-   "size": "PDF · 1 MB · imperial units"
+   "size": "PDF · 2 MB · imperial units"
   },
   {
    "file": "files/NovoTech-Production-Hydraulic-Presses-2026.pdf",
    "label": "Download the production hydraulic presses brochure",
-   "size": "PDF · 4 MB · imperial units"
+   "size": "PDF · 5 MB · imperial units"
   }
- ]
+ ],
+ "range_pick": [
+  [
+   "force",
+   "capacity"
+  ],
+  [
+   "stroke",
+   "travel",
+   "piston_travel_table_travel"
+  ],
+  [
+   "table",
+   "width",
+   "working_width_max",
+   "table_table_travel",
+   "throat_depth"
+  ],
+  "motor",
+  "weight"
+ ],
+ "related_title": "More pressing and bending machinery from NovoTech",
+ "hub_compact": true,
+ "compare": {
+  "title": "Which kind of hydraulic press?",
+  "lead": "The four kinds NovoTech sells, side by side; each page lists every model of its kind.",
+  "cols": [
+   "",
+   "Shop presses",
+   "H-frame presses",
+   "C-frame presses",
+   "Straightening presses"
+  ],
+  "rows": [
+   [
+    "Frame",
+    "Welded H-frame, open front; the table set at height",
+    "Straight-side H-frame or four columns, machined monoblock",
+    "Open on three sides — a C-shaped gap",
+    "Portal (gantry) or 3-axis head; the cylinder travels over the bed"
+   ],
+   [
+    "Control",
+    "Joystick or hand pump, one part at a time",
+    "PLC with programmed speed, pressure and dwell; light barriers",
+    "Two-hand control or PLC; light barrier",
+    "At the bend, by pendant or remote control"
+   ],
+   [
+    "Force",
+    "10 – 220 US tons",
+    "22 – 661 US tons, to 3,307 to order",
+    "22 – 276 US tons",
+    "110 – 441 US tons"
+   ],
+   [
+    "Typical work",
+    "Bearings, bushings and pins; straightening shafts; bending flat bar",
+    "Dies: forming, blanking, coining, deep drawing; composite moulding",
+    "Small dies, punching, assembly and press-fitting",
+    "Beams, plate, rails, shafts and pipe straightened where they lie"
+   ],
+   [
+    "Page",
+    {
+     "href": "hydraulic-shop-press.html",
+     "label": "Hydraulic shop presses"
+    },
+    {
+     "href": "h-frame-hydraulic-press.html",
+     "label": "H-frame presses"
+    },
+    {
+     "href": "c-frame-hydraulic-press.html",
+     "label": "C-frame presses"
+    },
+    {
+     "href": "hydraulic-straightening-press.html",
+     "label": "Straightening presses"
+    }
+   ]
+  ]
+ },
+ "subpage_link": "all models, specifications and photos",
+ "related_title_": "More hydraulic presses from NovoTech"
 }
