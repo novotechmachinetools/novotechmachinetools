@@ -335,10 +335,12 @@
     if ((m = /(\d[\d,]*(?:\.\d+)?)\s?(?:lbs?|pounds?)\b/.exec(n))) N.load = +m[1].replace(/,/g, "");
     if ((m = /(\d[\d,]*(?:\.\d+)?)\s?kgs?\b/.exec(n))) N.load = m[1].replace(/,/g, "") * 2.2046;
     if (N.ton && (req.ops.weld || /positioner|turning roll|rotator|load|weigh|tank|vessel/.test(n))) { N.load = N.ton * 2000; delete N.ton; }
-    if ((m = /\b(\d{2})\s?(?:°|deg|degrees?)\b/.exec(n))) N.angle = +m[1];
+    if ((m = /\b(\d{2})\s?(?:°|deg\b|degrees?\b)/.exec(n))) N.angle = +m[1];
     // "4x8 sheet", "5 x 10 ft" → bed; "6x4 tube" → rect; "1/4 x 10'" → thickness × length; "2x2x1/4 angle"
+    var used = [];
     re = new RegExp(NUMRX + "\\s?(\"|')?\\s?x\\s?" + NUMRX + "\\s?(\"|')?(?:\\s?x\\s?" + NUMRX + "\\s?(\"|')?)?", "g");
     while ((m = re.exec(n))) {
+      used.push([m.index, m.index + m[0].length]);
       var a = val(m[1]), ua = m[2], b = val(m[3]), ub = m[4], c = m[5] ? val(m[5]) : null;
       var after = n.slice(m.index + m[0].length, m.index + m[0].length + 24);
       if (c != null && (req.mat === "angle" || req.mat === "channel" || req.mat === "tee" || req.mat === "rect_tube" || req.mat === "sq_tube")) {
@@ -388,9 +390,9 @@
     q.forEach(function (x) {
       var before = n.slice(Math.max(0, x.at - 26), x.at), after = n.slice(x.end, x.end + 30);
       var aft = after.replace(/^\s*(dia(meter)?\s+)?/, "");
-      if (/^\s*(x\b)/.test(after) || /x\s*$/.test(before)) return;   // part of an A x B group, handled above
+      if (used.some(function (u) { return x.at >= u[0] && x.at < u[1]; })) return;   // part of an A x B group, read above
       if (/radius|\bclr\b|\br\s*$/.test(before + " " + after.slice(0, 8)) && !/dia/.test(after.slice(0, 10))) { N.radius = x.v; return; }
-      var dirDia = /^\s*(dia(meter)?|ring|circle|arc|hoop|radius|cylinders?|tanks?|shells?|cones?)\b/.test(after),
+      var dirDia = /^\s*(dia(meter)?|ring|circle|arc|hoop|radius)\b/.test(after) || x.unit !== "'" && /^\s*(cylinders?|tanks?|shells?|cones?)\b/.test(after),
         dirSize = /^\s*(dia(meter)?|od|o\.d\.)\s+(pipe|tube|tubing|bar|rod|round|solid|shaft)/.test(after) || /^\s*(dia(meter)?)\s+(of\s+)?\.?\d/.test(after);
       var rollCtx = req.ops.roll || req.ops.bend || /cylinder|tank|shell|ring|circle|arc/.test(req.n);
       if (dirSize && /^\s*(dia(meter)?)\s+(of\s+)?\.?\d/.test(after)) { N.size = N.size || x.v; if (req.mat === "pipe" && !N.nps) { N.nps = x.v; N.size = npsOd(x.v) || x.v; } return; }
@@ -415,7 +417,7 @@
       if (/(drill|tap)/.test(before + after)) { N.hole = x.v; return; }
       // still unassigned: a long number is a length, a small one a size
       if (!N.size && x.v <= 24 && (req.mat && LONG[req.mat] || req.ops.cut)) { N.size = x.v; if (req.mat === "pipe" && x.unit === '"') { N.nps = x.v; N.size = npsOd(x.v) || x.v; } return; }
-      if (!N.thk && x.v < 2 && (req.mat === "plate" || req.mat === "sheet" || req.ops.shear || x.frac && sheetCtx(req))) { N.thk = x.v; return; }
+      if (!N.thk && x.v < 2 && (req.mat === "plate" || req.mat === "sheet" || req.ops.shear || sheetCtx(req))) { N.thk = x.v; return; }
       if (x.v >= 24 && !N.len) { N.len = x.v; return; }
       if (!N.D && x.v >= 6 && (req.ops.roll || req.ops.bend) && N.size) { N.D = x.v; return; }
       if (!N.size) N.size = x.v;
@@ -1134,5 +1136,7 @@
     if (b) ask(b.textContent);
   });
   load().catch(function () {});
-  if (!("ontouchstart" in root)) input.focus();
+  root.NTFinderAsk = ask;                    // the home page's search boxes ask through the panel
+  if (root.NT_AI_PENDING) { var pending = root.NT_AI_PENDING; root.NT_AI_PENDING = null; ask(pending); }
+  else if (!("ontouchstart" in root)) input.focus();
 })(typeof window !== "undefined" ? window : globalThis);

@@ -1,39 +1,162 @@
 {
- "slug": "index",
- "template": "home.html",
- "title": "Metal Fabrication Machinery Supplier in Canada | NovoTech",
- "meta_description": "Press brakes, fiber lasers, band saws, rebar benders, plate rollers, ironworkers and deburring machines — sold, installed and supported in Canada from Mississauga, ON, Canada.",
- "h1": "Metal fabrication machinery, sold and supported in Canada",
- "intro": "Press brakes, fiber lasers, band saws, rebar benders, plate rollers, ironworkers, deburring machines and press brake tooling from manufacturers in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China. Every machine comes with a CSA-approved panel, and NovoTech installs it, trains your operators and keeps the parts in Mississauga, Ontario, Canada.",
- "hero_image": "dn-xl-1",
- "hero_image_secondary": [
-  "dn-gfl-3",
-  "bk-hero-auto-350ga",
-  "b-45x1"
- ],
- "hero_points": [
-  "Showroom and parts warehouse in Mississauga, Ontario, Canada",
-  "CSA-approved electrical panel and a 1-year warranty on every machine",
-  "Installation, operator training and technical support anywhere in Canada"
- ],
- "breadcrumb": [
-  {
-   "label": "Home"
-  }
- ],
- "intro_video": {
-  "id": "ZGo_n6-2_Qc",
-  "thumb": "video-ZGo_n6-2_Qc",
-  "title": "NovoTech Machine Tools — who we are and what we sell",
-  "duration": "PT2M55S"
- },
- "showroom": [
-  "nt-showroom-building",
-  "nt-showroom-band-saws",
-  "nt-showroom-ironworkers",
-  "nt-showroom-rebar"
- ],
- "quote": {
-  "intro": "Tell us what you need to cut, bend, roll or finish — material, thickness, length and how many parts — and we will recommend the machine and come back with pricing, delivery and the right voltage for your shop."
- }
+  "slug": "index",
+  "template": "home.html",
+  "title": "Metal Fabrication Machinery Supplier in Canada | NovoTech",
+  "meta_description": "Press brakes, fiber lasers, band saws, rebar benders, plate rollers, ironworkers and deburring machines — sold, installed and supported in Canada from Mississauga, ON, Canada.",
+  "h1": "Metal fabrication machinery, sold and supported in Canada",
+  "intro": "Press brakes, fiber lasers, band saws, rebar benders, plate rollers, ironworkers, deburring machines and press brake tooling from manufacturers in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China. Every machine comes with a CSA-approved panel, and NovoTech installs it, trains your operators and keeps the parts in Mississauga, Ontario, Canada.",
+  "hero_image": "dn-xl-1",
+  "hero_image_secondary": [
+    "dn-gfl-3",
+    "bk-hero-auto-350ga",
+    "b-45x1"
+  ],
+  "hero_points": [
+    "Showroom and parts warehouse in Mississauga, Ontario, Canada",
+    "CSA-approved electrical panel and a 1-year warranty on every machine",
+    "Installation, operator training and technical support anywhere in Canada"
+  ],
+  "breadcrumb": [
+    {
+      "label": "Home"
+    }
+  ],
+  "intro_video": {
+    "id": "ZGo_n6-2_Qc",
+    "thumb": "video-ZGo_n6-2_Qc",
+    "title": "NovoTech Machine Tools — who we are and what we sell",
+    "duration": "PT2M55S"
+  },
+  "showroom": [
+    "nt-about-ironworker-rebar",
+    "nt-about-band-saws",
+    "nt-about-bender-plate-rollers",
+    "nt-about-warehouse"
+  ],
+  "quote": {
+    "intro": "Tell us what you need to cut, bend, roll or finish — material, thickness, length and how many parts — and we will recommend the machine and come back with pricing, delivery and the right voltage for your shop."
+  },
+  "showcase": true,
+  "hero_video": {
+    "src": "files/video/nt-hero-1280.mp4",
+    "src_small": "files/video/nt-hero-854.mp4",
+    "poster": "nt-hero-poster",
+    "_note": "The owner's montage of NovoTech machines at work (Nov 7 2026): no sound, 1280×720 for large screens (≈15 MB), 854×480 for phones (≈7 MB); the maker's labels on the two section benders are blurred. It starts after the page has loaded and stays a still picture on Save-Data, slow connections and reduced motion."
+  },
+  "hero_examples": [
+    "Roll 2″ pipe into a 30″ diameter ring",
+    "Shear 1/4″ plate × 10 ft",
+    "Rebar bender for 25M bars",
+    "Press brake for 3/16″ × 8 ft"
+  ],
+  "work_slides": [
+    {
+      "image": "dn-gfl-video-2",
+      "kicker": "Cut sheet and plate",
+      "title": "Fiber laser cutting machines",
+      "short": "fiber lasers",
+      "line": "Sheet and plate fiber lasers from 4 × 4 ft to 10 × 164 ft and 1.5 to 80 kW, with shuttle tables, loaders and sorting.",
+      "href": "laser-cutting-machine.html",
+      "video": {
+        "id": "P3ynLUu2VYU",
+        "title": "DENER GFL 10 × 5 ft 6 kW laser cutting machine"
+      }
+    },
+    {
+      "image": "dn-xl-video-1",
+      "kicker": "Bend sheet and plate",
+      "title": "Press brakes",
+      "short": "press brakes",
+      "line": "CNC hydraulic, hybrid and servo-electric press brakes from 22 to 1,323 US tons and 4 to 20 ft.",
+      "href": "press-brake.html",
+      "video": {
+        "id": "0pvdG-DYO-E",
+        "title": "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake"
+      }
+    },
+    {
+      "image": "nt-work-band-saw",
+      "kicker": "Saw bar, tube and beam",
+      "title": "Band saws",
+      "short": "band saws",
+      "line": "Manual, semi-automatic, automatic and double-column band saws from Ø9″ to 87″ — whole bundles in one cut.",
+      "href": "band-saw.html",
+      "video": {
+        "id": "80A2SoXkzDU",
+        "title": "Bekamak BMSO 320GS NC automatic bundling and mitering band saw"
+      }
+    },
+    {
+      "image": "nt-work-plate-roll",
+      "kicker": "Roll plate into cylinders and cones",
+      "title": "Plate rollers",
+      "short": "plate rollers",
+      "line": "Hydraulic 4-roll and 3-roll plate rolls to 20 ft and 3-3/8″ plate, NC and CNC, plus motorized rolls from 3.4 ft.",
+      "href": "plate-rollers.html",
+      "video": {
+        "id": "TbSq2XpE5Zk",
+        "title": "4R HSS 30-350 NC heavy-duty plate roll"
+      }
+    },
+    {
+      "image": "nt-work-angle-roll",
+      "kicker": "Roll pipe, tube and profile",
+      "title": "Angle rolls and section benders",
+      "short": "angle rolls",
+      "line": "From a 2 HP ring roller to HEB 600 beam benders — rings, arcs and spirals in pipe, tube, angle and flat bar.",
+      "href": "angle-rolls.html",
+      "video": {
+        "id": "_ZMcJ7YJmTg",
+        "title": "HPK 80 NC roll bender — pipe"
+      }
+    },
+    {
+      "image": "nt-work-ironworker",
+      "kicker": "Punch, shear and notch",
+      "title": "Ironworkers",
+      "short": "ironworkers",
+      "line": "Hydraulic ironworkers from 44 to 276 US tons: punch plate, shear flat bar and angle, notch — single- and double-piston.",
+      "href": "ironworker-machines.html",
+      "video": {
+        "id": "wY5bTK1XnnE",
+        "title": "HKM 60, HKM 85 and HKM 115 hydraulic ironworkers"
+      }
+    },
+    {
+      "image": "nt-work-rebar",
+      "kicker": "Bend and cut rebar",
+      "title": "Rebar benders and cutters",
+      "short": "rebar machines",
+      "line": "Stationary and portable rebar benders, hydraulic cutters, stirrup and spiral benders and automatic lines, #3 to #18.",
+      "href": "rebar-bender-and-cutter.html",
+      "video": {
+        "id": "YhbU43ypxRU",
+        "title": "GMS B 45 and B 36 rebar benders at work"
+      }
+    },
+    {
+      "image": "nt-work-tube-bender",
+      "kicker": "Bend tube and pipe",
+      "title": "Pipe and tube benders",
+      "short": "tube benders",
+      "line": "CNC, NC, all-electric and hydraulic mandrel and rotary-draw benders, from Ø15/32″ tube to Ø8-5/8″ pipe.",
+      "href": "pipe-benders.html",
+      "video": {
+        "id": "8fi_4Ccsh00",
+        "title": "38 TSR CNC hydraulic pipe bender"
+      }
+    },
+    {
+      "image": "nt-work-pipe-polish",
+      "kicker": "Sand and polish pipe",
+      "title": "Pipe sanding and polishing machines",
+      "short": "pipe polishers",
+      "line": "Tube sanders and pipe polishers for straight and bent tube — automatic feed, orbital, centreless and large-pipe sanders.",
+      "href": "pipe-sanding-polishing-machines.html",
+      "video": {
+        "id": "j8vE5Dmc4QI",
+        "title": "BT 114-S pipe sander — pipe polishing machine"
+      }
+    }
+  ]
 }

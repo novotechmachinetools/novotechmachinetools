@@ -1,61 +1,160 @@
 {% extends "base.html" %}
 {% from "partials/macros.html" import video with context %}
-{% from "partials/site.html" import cat_card, brand_grid, why_section, photo, pdf_card with context %}
+{% from "partials/site.html" import brand_grid, why_section, photo with context %}
+{# The home page (the owner, Nov 7 2026): his machines-at-work video full width at the top, slides of the machines
+   cutting, bending and rolling, and every main product reachable from the first screens. #}
+{% block body_attrs %} class="is-home"{% endblock %}
+{% block head %}{% set poster = img(page.hero_video.poster) %}<style>{{ css_text("home-page.css") | safe }}</style>
+<link rel="preload" as="image" href="{{ poster.src }}" imagesrcset="{{ poster.srcset }}" imagesizes="100vw" fetchpriority="high">{% endblock %}
+{% block scripts %}<script src="js/home-page.js?v={{ asset_v('js/home-page.js') }}" defer></script>{% endblock %}
 
 {% block content %}
-{% set hero = img(page.hero_image) %}
-<section class="hero home-hero">
-  <div class="wrap hero-grid has-large-hero">
-    <div class="hero-copy">
-      <p class="kicker">NovoTech Machine Tools · Mississauga, Ontario, Canada</p>
-      <h1>{{ page.h1 }}</h1>
-      <p class="lead">{{ page.intro }}</p>
-      <ul class="hero-points">
-        {% for p in page.hero_points %}<li>{{ p }}</li>{% endfor %}
-      </ul>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="products.html">Browse all machines</a>
-        <a class="btn btn-ghost" href="#reques-a-quote">Request a quote</a>
-      </div>
+{% set hv = page.hero_video %}{% set poster = img(hv.poster) %}
+{# ---------- hero: the owner's video, full width ---------- #}
+<section class="hp-hero" aria-labelledby="hp-title">
+  <div class="hp-hero-media" aria-hidden="true">
+    <img src="{{ poster.src }}" srcset="{{ poster.srcset }}" sizes="100vw" width="{{ poster.w }}" height="{{ poster.h }}" alt="" fetchpriority="high" decoding="async">
+    <video muted playsinline loop preload="none" disablepictureinpicture tabindex="-1" data-src="{{ hv.src }}" data-src-small="{{ hv.src_small }}"></video>
+  </div>
+  <div class="wrap hp-hero-inner">
+    <p class="hp-kicker"><span class="hp-kick-name">NovoTech Machine Tools · </span>Mississauga, Ontario, Canada</p>
+    <h1 id="hp-title">{{ page.h1 }}</h1>
+    <p class="hp-lead">Press brakes, fiber lasers, band saws, rebar benders, plate rolls, angle rolls, ironworkers and finishing machines — installed, serviced and stocked with parts from our Mississauga showroom.</p>
+    <form class="hp-ask" role="search" action="#find-a-machine">
+      <span class="hp-ask-badge" aria-hidden="true">AI</span>
+      <label class="sr-only" for="hp-q">Describe your job or the machine you need</label>
+      <input id="hp-q" type="text" name="q" autocomplete="off" enterkeyhint="search" placeholder="Describe your job — e.g. roll 2″ pipe into a 30″ ring" data-short="Describe your job…">
+      <button type="submit" class="btn btn-primary">Find my machine</button>
+    </form>
+    <p class="hp-try"><span>Try:</span>{% for q in page.hero_examples %}<button type="button" data-ask="{{ q }}">{{ q }}</button>{% endfor %}</p>
+    <div class="hp-hero-cta">
+      <a class="btn btn-light" href="products.html">Browse all {{ page.category_count }} kinds of machine</a>
+      <a class="hp-link" href="#reques-a-quote">Request a quote</a>
     </div>
-    <div class="hero-art is-large" aria-hidden="true">
-      <div class="hero-band"></div>
-      <img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, 820px" width="{{ hero.w }}" height="{{ hero.h }}" alt="" fetchpriority="high" decoding="async">
-      <div class="hero-minis">
-        {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 140 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 200 %}{% set mw = 200 %}{% set mh = (200 * m.h / m.w) | round | int %}{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="" loading="lazy" decoding="async">{% endfor %}
+  </div>
+  <div class="hp-hero-foot">
+    <ul class="wrap hp-trust">
+      {% for p in page.hero_points %}<li>{{ p }}</li>{% endfor %}
+      <li class="hp-trust-video"><button type="button" class="hp-video-toggle" aria-pressed="false" hidden><span class="hp-ico-pause" aria-hidden="true"></span><span class="hp-video-label">Pause video</span></button></li>
+    </ul>
+  </div>
+</section>
+
+{# ---------- the main products, right under the video ---------- #}
+<section class="hp-cats" aria-labelledby="hp-cats-title">
+  <div class="wrap">
+    <div class="hp-head">
+      <div>
+        <p class="hp-eyebrow">Shop by machine</p>
+        <h2 id="hp-cats-title">Find your machine</h2>
+      </div>
+      <p class="hp-head-lead">The machines Canadian shops ask us for most. Every page has specifications in inches and millimetres, photos, videos and a PDF brochure.</p>
+    </div>
+    <ul class="hp-tiles">
+      {% for g in page.showcase.groups[:12] %}
+      <li><a class="hp-tile" href="{{ g.href }}">
+        <span class="hp-tile-art{{ ' is-cutout' if g.img.alpha else '' }}"><img src="{{ g.img.small }}" srcset="{{ g.img.srcset }}" sizes="(max-width: 640px) 46vw, (max-width: 1100px) 31vw, 360px" width="{{ g.img.w }}" height="{{ g.img.h }}" alt="" loading="lazy" decoding="async"></span>
+        <span class="hp-tile-body"><strong>{{ g.name }}</strong><span>{{ g.fact }}</span></span>
+        <span class="hp-tile-go" aria-hidden="true"></span>
+      </a></li>
+      {% endfor %}
+    </ul>
+    {# every kind of machine, grouped as in the Products menu: nothing on the site is more than one click away #}
+    <div class="hp-index" aria-labelledby="hp-index-title">
+      <h3 id="hp-index-title" class="hp-index-title">Every kind of machine we sell</h3>
+      <div class="hp-index-grid">
+        {% for g in page.catalog_groups if g.cards %}
+        <details class="hp-idx" open>
+          <summary>{{ g.title }} <span>{{ g.cards | length }}</span></summary>
+          <ul>
+            {% for c in g.cards %}<li><a href="{{ c.href }}">{% if c.image %}<span class="hp-idx-img{{ ' is-cutout' if c.image.alpha else '' }}"><img src="{{ c.image.thumb }}" alt="" width="48" height="36" loading="lazy" decoding="async"></span>{% endif %}<span>{{ c.label }}</span></a></li>{% endfor %}
+          </ul>
+        </details>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
 
-<section class="facts" aria-label="NovoTech at a glance">
+{# ---------- machines at work: slides ---------- #}
+{% set slides = page.work_slides %}
+<section class="hp-work" aria-labelledby="hp-work-title">
+  <div class="wrap">
+    <div class="hp-head is-dark">
+      <div>
+        <p class="hp-eyebrow">Machines at work</p>
+        <h2 id="hp-work-title">See them cut, bend and roll</h2>
+      </div>
+      <p class="hp-head-lead">Machines from NovoTech's range in production. Open one for its specifications, or watch it run.</p>
+    </div>
+    <div class="hp-slider" data-slider>
+      <div class="hp-slides" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Machines at work">
+        {% for s in slides %}{% set im = img(s.image) %}
+        <figure class="hp-slide" role="group" aria-roledescription="slide" aria-label="{{ loop.index }} of {{ slides | length }}: {{ s.title }}">
+          <img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 1100px) 100vw, 1400px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
+          <figcaption class="hp-cap">
+            <p class="hp-cap-kicker">{{ s.kicker }}</p>
+            <h3>{{ s.title }}</h3>
+            <p class="hp-cap-line">{{ s.line }}</p>
+            <div class="hp-cap-cta">
+              <a class="btn btn-primary" href="{{ s.href }}">See the {{ s.short }}</a>
+              {% if s.video %}<button type="button" class="hp-watch" data-yt="{{ s.video.id }}" data-title="{{ s.video.title }}"><span class="hp-play" aria-hidden="true"></span>Watch it run</button>{% endif %}
+            </div>
+          </figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+      <button type="button" class="hp-arrow hp-prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="hp-arrow hp-next" aria-label="Next slide"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <ol class="hp-thumbs" aria-label="Choose a slide">
+        {% for s in slides %}{% set im = img(s.image) %}
+        <li><button type="button" data-go="{{ loop.index0 }}" aria-label="Slide {{ loop.index }}: {{ s.title }}"><img src="{{ im.thumb }}" alt="" width="96" height="54" loading="lazy" decoding="async"><span>{{ s.kicker }}</span><i class="hp-bar" aria-hidden="true"></i></button></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="facts hp-facts" aria-label="NovoTech at a glance">
   <ul class="wrap facts-list">
     <li><strong>{{ page.category_count }}</strong><span>kinds of machine, from press brakes to rebar benders</span></li>
     <li><strong>{{ page.family_count }}</strong><span>machine families with full specifications in inches and mm</span></li>
-    <li><strong>{{ page.maker_count }}</strong><span>brands from {{ page.country_count }} countries, plus NovoTech's own lines</span></li>
+    <li><strong>{{ page.maker_count }}</strong><span>manufacturers in {{ page.country_count }} countries, plus NovoTech's own lines</span></li>
     <li><strong>20+</strong><span>years supplying Canadian fabrication shops</span></li>
   </ul>
 </section>
 
-<section class="wrap home-cats" aria-labelledby="cats-title">
-  <div class="section-head">
-    <h2 id="cats-title">Machines for every step of the job</h2>
-    <p class="group-lead">Cutting, bending, rolling, punching, sawing and finishing — the machines Canadian shops ask us for most. Every page has the specifications, photos, videos and a PDF brochure.</p>
-  </div>
-  <ul class="cat-grid">
-    {% for c in page.featured %}{{ cat_card(c) }}{% endfor %}
-  </ul>
-  <p class="section-more"><a class="btn btn-ghost" href="products.html">See all {{ page.category_count }} kinds of machine</a></p>
-</section>
-
 {{ why_section() }}
 
-<section class="wrap home-brands" aria-labelledby="brands-title">
-  <div class="section-head">
-    <h2 id="brands-title">Manufacturers we represent</h2>
-    <p class="group-lead">Long-standing partners in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China — each building the machines it knows best — and NovoTech's own premium and value lines.</p>
+{# ---------- the AI machine finder, a second time for those who scrolled ---------- #}
+<section class="hp-ai" aria-labelledby="hp-ai-title">
+  <div class="wrap hp-ai-grid">
+    <div class="hp-ai-copy">
+      <span class="hp-ai-logo" aria-hidden="true">AI</span>
+      <h2 id="hp-ai-title">Not sure which machine fits the job?</h2>
+      <p>Describe the part — the material, its size and what you need to do with it — and the AI machine finder checks every model, every spec table and every brochure on this site, then shows the machine that fits and the ones like it.</p>
+    </div>
+    <div class="hp-ai-box">
+      <form class="hp-ask is-light" role="search" action="#find-a-machine">
+        <span class="hp-ask-badge" aria-hidden="true">AI</span>
+        <label class="sr-only" for="hp-q2">Describe your job or the machine you need</label>
+        <input id="hp-q2" type="text" name="q" autocomplete="off" enterkeyhint="search" placeholder="e.g. punch 1″ holes in 1/2″ plate">
+        <button type="submit" class="btn btn-primary">Ask</button>
+      </form>
+      <p class="hp-try is-light">{% for q in ["Automatic band saw for 6″ tube at 45°", "Plate roll for 3/8″ × 8 ft tanks", "Welding positioner for 2,000 lb", "CNC tube bender for 2″ OD"] %}<button type="button" data-ask="{{ q }}">{{ q }}</button>{% endfor %}</p>
+    </div>
   </div>
-  {{ brand_grid(page.brands) }}
+</section>
+
+<section class="wrap home-brands" aria-labelledby="brands-title">
+  <div class="hp-head">
+    <div>
+      <p class="hp-eyebrow">Partners</p>
+      <h2 id="brands-title">Manufacturers we represent</h2>
+    </div>
+    <p class="hp-head-lead">Long-standing partners in Turkey, Italy, Spain, Switzerland, Germany, Taiwan and China — each building the machines it knows best — and NovoTech's own premium and value lines.</p>
+  </div>
+  {{ brand_grid(page.brands, logos=True) }}
 </section>
 
 <section class="showroom-band" aria-labelledby="showroom-title">

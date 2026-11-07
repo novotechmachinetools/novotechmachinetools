@@ -35328,5 +35328,131 @@
   "cutout": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "nt-hero-poster": {
+  "src": "tools/src-images/site/work/nt-hero-poster.jpg",
+  "alt": "A 4-roll plate roll rolling a steel cylinder — the first frame of NovoTech's header video",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-band-saw": {
+  "src": "tools/src-images/site/work/nt-work-band-saw.jpg",
+  "alt": "Band saw cutting a bundle of round tubes in one pass",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-plate-roll": {
+  "src": "tools/src-images/site/work/nt-work-plate-roll.jpg",
+  "alt": "Operator rolling a sheet on a CNC 4-roll plate roll",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-angle-roll": {
+  "src": "tools/src-images/site/work/nt-work-angle-roll.jpg",
+  "alt": "Angle roll bending round bar into a spiral ring",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-ironworker": {
+  "src": "tools/src-images/site/work/nt-work-ironworker.jpg",
+  "alt": "Operator punching plate on a hydraulic ironworker",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-rebar": {
+  "src": "tools/src-images/site/work/nt-work-rebar.jpg",
+  "alt": "Bending rebar on a stationary rebar bender",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-tube-bender": {
+  "src": "tools/src-images/site/work/nt-work-tube-bender.jpg",
+  "alt": "CNC tube bender bending a tube around the bend die",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-pipe-polish": {
+  "src": "tools/src-images/site/work/nt-work-pipe-polish.jpg",
+  "alt": "Pipe sanding machine polishing a large-diameter pipe",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
+ },
+ "nt-work-section-bender": {
+  "src": "tools/src-images/site/work/nt-work-section-bender.jpg",
+  "alt": "Heavy section bender rolling an HEB 240 beam",
+  "section": "site",
+  "trim": false,
+  "quality": 82,
+  "cutout": false,
+  "sizes": [
+   1280,
+   960,
+   640,
+   480
+  ]
  }
 }

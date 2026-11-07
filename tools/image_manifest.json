@@ -120345,5 +120345,329 @@
    "file": "img/bandsaw/video-rqTIVjsvUWo-thumb.webp",
    "bytes": 3310
   }
+ },
+ "nt-hero-poster": {
+  "alt": "A 4-roll plate roll rolling a steel cylinder \u2014 the first frame of NovoTech's header video",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-hero-poster-1280.webp",
+    "bytes": 34224
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-hero-poster-960.webp",
+    "bytes": 24242
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-hero-poster-640.webp",
+    "bytes": 14966
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-hero-poster-480.webp",
+    "bytes": 10584
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-hero-poster-thumb.webp",
+   "bytes": 2178
+  }
+ },
+ "nt-work-band-saw": {
+  "alt": "Band saw cutting a bundle of round tubes in one pass",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-band-saw-1280.webp",
+    "bytes": 71552
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-band-saw-960.webp",
+    "bytes": 51476
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-band-saw-640.webp",
+    "bytes": 30672
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-band-saw-480.webp",
+    "bytes": 20510
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-band-saw-thumb.webp",
+   "bytes": 3804
+  }
+ },
+ "nt-work-plate-roll": {
+  "alt": "Operator rolling a sheet on a CNC 4-roll plate roll",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-plate-roll-1280.webp",
+    "bytes": 57656
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-plate-roll-960.webp",
+    "bytes": 42008
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-plate-roll-640.webp",
+    "bytes": 25694
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-plate-roll-480.webp",
+    "bytes": 18084
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-plate-roll-thumb.webp",
+   "bytes": 3380
+  }
+ },
+ "nt-work-angle-roll": {
+  "alt": "Angle roll bending round bar into a spiral ring",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-angle-roll-1280.webp",
+    "bytes": 44156
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-angle-roll-960.webp",
+    "bytes": 32750
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-angle-roll-640.webp",
+    "bytes": 20960
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-angle-roll-480.webp",
+    "bytes": 14600
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-angle-roll-thumb.webp",
+   "bytes": 2906
+  }
+ },
+ "nt-work-ironworker": {
+  "alt": "Operator punching plate on a hydraulic ironworker",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-ironworker-1280.webp",
+    "bytes": 53170
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-ironworker-960.webp",
+    "bytes": 39622
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-ironworker-640.webp",
+    "bytes": 24200
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-ironworker-480.webp",
+    "bytes": 18206
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-ironworker-thumb.webp",
+   "bytes": 4144
+  }
+ },
+ "nt-work-rebar": {
+  "alt": "Bending rebar on a stationary rebar bender",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-rebar-1280.webp",
+    "bytes": 56738
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-rebar-960.webp",
+    "bytes": 41516
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-rebar-640.webp",
+    "bytes": 25616
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-rebar-480.webp",
+    "bytes": 18190
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-rebar-thumb.webp",
+   "bytes": 3666
+  }
+ },
+ "nt-work-tube-bender": {
+  "alt": "CNC tube bender bending a tube around the bend die",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-tube-bender-1280.webp",
+    "bytes": 90354
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-tube-bender-960.webp",
+    "bytes": 68910
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-tube-bender-640.webp",
+    "bytes": 42758
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-tube-bender-480.webp",
+    "bytes": 29810
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-tube-bender-thumb.webp",
+   "bytes": 5348
+  }
+ },
+ "nt-work-pipe-polish": {
+  "alt": "Pipe sanding machine polishing a large-diameter pipe",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-pipe-polish-1280.webp",
+    "bytes": 62104
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-pipe-polish-960.webp",
+    "bytes": 45508
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-pipe-polish-640.webp",
+    "bytes": 28718
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-pipe-polish-480.webp",
+    "bytes": 20270
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-pipe-polish-thumb.webp",
+   "bytes": 3990
+  }
+ },
+ "nt-work-section-bender": {
+  "alt": "Heavy section bender rolling an HEB 240 beam",
+  "variants": [
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "img/site/nt-work-section-bender-1280.webp",
+    "bytes": 60662
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-section-bender-960.webp",
+    "bytes": 46110
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-section-bender-640.webp",
+    "bytes": 26522
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/site/nt-work-section-bender-480.webp",
+    "bytes": 19076
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-section-bender-thumb.webp",
+   "bytes": 3292
+  }
  }
 }

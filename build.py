@@ -375,6 +375,7 @@ def css_text(name):
 
 env.globals.update(site=site, img=img, staging=STAGING, year=datetime.date.today().year, dia=dia, inch=inch, bar_sizes=bar_sizes,
                    nav_contains=nav_contains, nav_is=nav_is, css_text=css_text)
+env.globals["asset_v"] = lambda name: hashlib.md5(open(os.path.join(ROOT, "src", name), "rb").read()).hexdigest()[:8]   # ?v= for any src/ file
 
 
 def asset_hash(path):
