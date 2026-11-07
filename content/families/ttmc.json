@@ -1,6 +1,5 @@
 {
  "order": [
-  "tt-ps",
   "tt-hq01",
   "tt-ths",
   "tt-hq11",
@@ -11,145 +10,6 @@
   "tt-ps1220"
  ],
  "families": {
-  "tt-ps": {
-   "id": "tt-ps",
-   "brand": "novotech",
-   "name": "PS pneumatic shear, 16 ga × 52″",
-   "short": "PS pneumatic shear",
-   "models_label": "PS-1.5x1320 · 1 model",
-   "summary": "The shear for a shop that already has compressed air: a pneumatic cylinder drives the cutting beam through 16 ga (1.5 mm) mild steel over 52″ at 40 strokes a minute, with no motor, no hydraulics and nothing to warm up. A low cutting angle cuts narrow strips without twisting; the bed and beam are aligned at the factory for accuracy; front and back gauges with fine adjustment, a mobile 24 V foot pedal and a complete pneumatic control set are standard. 1,257 lb, runs on 85 – 100 psi shop air.",
-   "features": [
-    "16 ga (1.5 mm) mild steel × 52″ (1,320 mm); 40 strokes per minute on 85 – 100 psi shop air",
-    "Pneumatic cylinder drive with filter, regulator and lubricator",
-    "Low cutting angle for narrow strips without twist; factory-aligned bed and beam",
-    "Back gauge 29.5″ (750 mm) with indicator; front gauge 21″ (535 mm)",
-    "Mobile 24 V foot pedal switch"
-   ],
-   "optional": [
-    "Photoelectric rear protection",
-    "Sheet support arms"
-   ],
-   "images": [
-    "tt-ps",
-    "tt-ps-gauge",
-    "tt-ps-control",
-    "tt-ps-cylinder"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "PS",
-      "sub": "Pneumatic shear",
-      "models": [
-       "PS-1.5x1320"
-      ],
-      "rows": [
-       {
-        "label": "Shearing capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "16 ga (1.5 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Max shearing width",
-        "sub": "",
-        "cells": [
-         "52.0″ (1,320 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Strokes per minute",
-        "sub": "",
-        "cells": [
-         "40 strokes/min"
-        ],
-        "key": true
-       },
-       {
-        "label": "Back gauge",
-        "sub": "",
-        "cells": [
-         "29.5″ (750 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Front gauge",
-        "sub": "",
-        "cells": [
-         "21.1″ (535 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Air pressure",
-        "sub": "",
-        "cells": [
-         "85 – 100 psi (0.6 – 0.7 MPa)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Air consumption per stroke",
-        "sub": "",
-        "cells": [
-         "1.4 CFM"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "69 × 30 × 48″ (175 × 75 × 123 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "1,257 lb (570 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "PS-1.5x1320",
-      "glance": [
-       "16 ga (1.5 mm)",
-       "52.0″ (1,320 mm)",
-       "40 strokes/min",
-       "85 – 100 psi (0.6 – 0.7 MPa)",
-       "1,257 lb (570 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "length",
-     "strokes",
-     "motor",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
-    "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "sh-light"
-  },
   "tt-hq01": {
    "id": "tt-hq01",
    "brand": "novotech",
@@ -288,7 +148,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-light"
   },
@@ -514,7 +374,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-hydraulic"
   },
@@ -709,7 +569,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-hydraulic"
   },
@@ -920,7 +780,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-electric"
   },
@@ -1094,7 +954,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-electric"
   },
@@ -1397,7 +1257,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-mechanical"
   },

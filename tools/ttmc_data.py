@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""NovoTech sheet metal shears — the value-line shears for the sheet-metal shop, built in China (by TTMC) and sold under
-NovoTech's name without the supplier's brand (sheet-metal-shears.html, under the shear-cutting hub).
+"""NovoTech value-line shears for the sheet-metal shop, built in China (by TTMC) and sold under NovoTech's name without the
+supplier's brand — on the hydraulic shear page (THS, HQ11, HQ01 light hydraulic shears) and the mechanical shear page (Q11
+electric and NC electric shears, Q11 flywheel shears), under the shear-cutting hub (tools/shear_nav.py).
 
-Metric data from the supplier's Vol. 23 catalogue, pages 107 – 114: PS pneumatic shear, THS / HQ01 / HQ11 hydraulic shears,
-Q11 electric shears (manual and NC) and the Q11 mechanical shears.  Shown as imperial (metric) like the rest of the site.
-The supplier's QC11Y guillotine and QC12Y swing beam ranges are NOT listed — they are the same machines as the NovoTech
-value-line QC12K / Q11K hydraulic shears on hydraulic-shearing-machine.html.
+Metric data from the supplier's Vol. 23 catalogue, pages 107 – 114: THS / HQ01 / HQ11 hydraulic shears, Q11 electric shears
+(manual and NC) and the Q11 mechanical shears.  Shown as imperial (metric) like the rest of the site.  The PS pneumatic shear is
+not sold (the owner, Nov 7 2026).  The supplier's QC11Y guillotine and QC12Y swing beam ranges are NOT listed — they are the same
+machines as the NovoTech value-line QC12K / Q11K hydraulic shears on hydraulic-shearing-machine.html.
 """
-P_SHEAR = "sheet-metal-shears"
+P_HYD = "hydraulic-shearing-machine"
+P_MECH = "mechanical-guillotine-shear"
 BRAND = "novotech"
 
 CAP = {1.5: "16 ga", 1.6: "16 ga", 2.0: "14 ga", 2.5: "12 ga", 3.0: "1/8″", 4.0: "5/32″", 4.5: "3/16″", 6.0: "1/4″", 6.5: "1/4″", 8.0: "5/16″", 10.0: "3/8″"}
@@ -60,13 +62,6 @@ def spec(tables, glance_rows, note=NOTE):
             models.append({"name": m, "glance": [rr[l][i] if l else "—" for l in glance_rows]})
     return {"kind": "table", "tables": tables, "models": models, "glance_keys": GK, "caps": {}, "note": note}
 
-
-# ---------------------------------------------------------------------------------------------------------- pneumatic
-PS = table("PS", "Pneumatic shear", ["PS-1.5x1320"],
-           [("Shearing capacity, mild steel", [cap(1.5)], True), ("Max shearing width", [inch(1320)], True),
-            ("Strokes per minute", ["40 strokes/min"], True), ("Back gauge", [inch(750)], False), ("Front gauge", [inch(535)], False),
-            ("Air pressure", ["85 – 100 psi (0.6 – 0.7 MPa)"], True), ("Air consumption per stroke", ["1.4 CFM"], False),
-            ("Packing size L × W × H", [packing((175, 75, 123))], False), ("Weight", [weight(570)], False)])
 
 # ---------------------------------------------------------------------------------------------------------- hydraulic
 # (model, cap mm, width mm, strokes, kW, packing cm, kg)
@@ -125,7 +120,6 @@ Q11M = [("Q11-3x1300", 3.0, 1300, "2°", 55, 3.0, 350, (220, 132, 145), 1350), (
 
 G5 = ["Shearing capacity, mild steel", "Max shearing width", "Strokes per minute", "Motor power", "Weight"]
 G5_HQ01 = ["Shearing capacity, mild steel", "Max shearing length", None, "Motor power", "Weight"]
-G5_PS = ["Shearing capacity, mild steel", "Max shearing width", "Strokes per minute", "Air pressure", "Weight"]
 
 STD_HYD = ["Mobile 24 V foot pedal switch with emergency stop", "Front gauge arms with squaring guide and back gauge, both with fine adjustment",
            "High-chromium blades with two cutting edges — turn the blade for a second life", "Steel-welded frame; hydraulic hold-downs ahead of the blade",
@@ -145,22 +139,7 @@ STD_MECH = ["Flywheel and clutch drive — one stroke per pedal press, 45 to 55 
 OPT_MECH = ["Rear guard with photocell", "Front sheet support arms", "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"]
 
 FAMILIES = [
-    dict(id="tt-ps", group="sh-light", page=P_SHEAR, brand=BRAND,
-         name="PS pneumatic shear, 16 ga × 52″",
-         short="PS pneumatic shear",
-         models_label="PS-1.5x1320 · 1 model",
-         summary="The shear for a shop that already has compressed air: a pneumatic cylinder drives the cutting beam through 16 ga (1.5 mm) mild "
-                 "steel over 52″ at 40 strokes a minute, with no motor, no hydraulics and nothing to warm up. A low cutting angle cuts narrow strips "
-                 "without twisting; the bed and beam are aligned at the factory for accuracy; front and back gauges with fine adjustment, a mobile "
-                 "24 V foot pedal and a complete pneumatic control set are standard. 1,257 lb, runs on 85 – 100 psi shop air.",
-         features=["16 ga (1.5 mm) mild steel × 52″ (1,320 mm); 40 strokes per minute on 85 – 100 psi shop air", "Pneumatic cylinder drive with filter, regulator and lubricator",
-                   "Low cutting angle for narrow strips without twist; factory-aligned bed and beam", "Back gauge 29.5″ (750 mm) with indicator; front gauge 21″ (535 mm)",
-                   "Mobile 24 V foot pedal switch"],
-         optional=["Photoelectric rear protection", "Sheet support arms"],
-         images=["tt-ps", "tt-ps-gauge", "tt-ps-control", "tt-ps-cylinder"],
-         videos=[],
-         specs=spec([PS], G5_PS)),
-    dict(id="tt-hq01", group="sh-light", page=P_SHEAR, brand=BRAND,
+    dict(id="tt-hq01", group="sh-light", page=P_HYD, brand=BRAND,
          name="HQ01 light hydraulic shears, 16 – 14 ga × 52 – 98″",
          short="HQ01 light hydraulic shears",
          models_label="HQ01-2x1320B · HQ01-1.6x2500B · 2 models",
@@ -175,7 +154,7 @@ FAMILIES = [
          images=["tt-hq01", "tt-hq01-2500", "tt-hq01-gauge", "tt-hq01-switch", "tt-hq01-photocell"],
          videos=[],
          specs=spec([T_HQ01], G5_HQ01)),
-    dict(id="tt-ths", group="sh-hydraulic", page=P_SHEAR, brand=BRAND,
+    dict(id="tt-ths", group="sh-hydraulic", page=P_HYD, brand=BRAND,
          name="THS hydraulic shears, 12 ga – 5/32″ × 52 – 120″",
          short="THS hydraulic shears",
          models_label="THS-1320X2.5 – THS-3050X4 · 6 models",
@@ -189,7 +168,7 @@ FAMILIES = [
          images=["tt-ths", "tt-ths-gauge"],
          videos=[],
          specs=spec([T_THS], G5)),
-    dict(id="tt-hq11", group="sh-hydraulic", page=P_SHEAR, brand=BRAND,
+    dict(id="tt-hq11", group="sh-hydraulic", page=P_HYD, brand=BRAND,
          name="HQ11 hydraulic shears, 5/32″ – 1/4″ × 51 – 120″",
          short="HQ11 hydraulic shears",
          models_label="HQ11-6.5x1300 – HQ11-6.5x3050 · 4 models",
@@ -204,7 +183,7 @@ FAMILIES = [
          images=["tt-hq11", "tt-hq11-1300", "tt-hq11-table", "tt-hq11-egauge", "tt-hq11-mgauge", "tt-hq11-pump"],
          videos=[],
          specs=spec([T_HQ11], G5)),
-    dict(id="tt-q11", group="sh-electric", page=P_SHEAR, brand=BRAND,
+    dict(id="tt-q11", group="sh-electric", page=P_MECH, brand=BRAND,
          name="Q11 electric shears, 14 ga – 5/32″ × 49 – 81″",
          short="Q11 electric shears",
          models_label="Q11-3x1250 – Q11-3x1250A · 5 models",
@@ -218,7 +197,7 @@ FAMILIES = [
          images=["tt-q11a", "tt-q11", "tt-q11a-rear", "tt-q11-gauge", "tt-q11-stop"],
          videos=[],
          specs=spec([t_q11("Q11", "Electric shears with manual back gauge", Q11)], G5)),
-    dict(id="tt-q11nc", group="sh-electric", page=P_SHEAR, brand=BRAND,
+    dict(id="tt-q11nc", group="sh-electric", page=P_MECH, brand=BRAND,
          name="Q11 NC electric shears with PLC control, 14 ga – 5/32″ × 51 – 100″",
          short="Q11 NC electric shears",
          models_label="Q11-4x1300NC · Q11-2x2550NC · Q11-4x2550NC · 3 models",
@@ -231,7 +210,7 @@ FAMILIES = [
          images=["tt-q11nc", "tt-q11nc-4x1300", "tt-q11nc-rear", "tt-q11nc-screen", "tt-q11nc-gauge", "tt-q11nc-balls", "tt-q11nc-light"],
          videos=[],
          specs=spec([t_q11("Q11 NC", "Electric shears with PLC control and motorised back gauge", Q11NC)], G5)),
-    dict(id="tt-q11-mech", group="sh-mechanical", page=P_SHEAR, brand=BRAND,
+    dict(id="tt-q11-mech", group="sh-mechanical", page=P_MECH, brand=BRAND,
          name="Q11 mechanical shears, 1/8″ – 3/8″ × 39 – 98″",
          short="Q11 mechanical shears",
          models_label="Q11-3x1300 – Q11-10x1500 · 10 models",

@@ -15995,39 +15995,6 @@
   "quality": 82,
   "cutout": true
  },
- "tt-ps": {
-  "src": "tools/src-images/ttmc-hires/tt-ps.jpg",
-  "alt": "PS-1.5x1320 pneumatic shear, 52″ × 16 ga, with front gauge arms and the mobile foot pedal",
-  "section": "shears",
-  "trim": true,
-  "quality": 82,
-  "cutout": true,
-  "cut_size": 1024
- },
- "tt-ps-gauge": {
-  "src": "tools/src-images/ttmc/tt-ps-gauge.jpg",
-  "alt": "Back gauge with indicator on the pneumatic shear",
-  "section": "shears",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "tt-ps-control": {
-  "src": "tools/src-images/ttmc/tt-ps-control.jpg",
-  "alt": "Pneumatic control unit — filter, regulator and lubricator",
-  "section": "shears",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
- "tt-ps-cylinder": {
-  "src": "tools/src-images/ttmc/tt-ps-cylinder.jpg",
-  "alt": "Pneumatic cylinder driving the cutting beam",
-  "section": "shears",
-  "trim": false,
-  "quality": 82,
-  "cutout": false
- },
  "tt-ths": {
   "src": "tools/src-images/ttmc/tt-ths.jpg",
   "alt": "THS-1320X4 hydraulic shear, 52″ × 8 ga, with front gauge arms and the mobile foot pedal",
@@ -24769,51 +24736,6 @@
  "tm-pbs9": {
   "src": "tools/src-images/ttmc-more/tm-pbs9.jpg",
   "alt": "PBS-9 bar and section shear with punching station",
-  "section": "ttmc-more",
-  "trim": true,
-  "quality": 82,
-  "cutout": true,
-  "cut_size": 768
- },
- "tm-pc-console": {
-  "src": "tools/src-images/ttmc-more/tm-pc-console.jpg",
-  "alt": "CNC console of the plasma table",
-  "section": "ttmc-more",
-  "trim": true,
-  "quality": 82,
-  "cutout": false,
-  "cut_size": 768
- },
- "tm-pc24": {
-  "src": "tools/src-images/ttmc-more/tm-pc24.jpg",
-  "alt": "PC 2′×4′ compact CNC plasma table with stepper drives",
-  "section": "ttmc-more",
-  "trim": true,
-  "quality": 82,
-  "cutout": true,
-  "cut_size": 768
- },
- "tm-pc510": {
-  "src": "tools/src-images/ttmc-more/tm-pc510.jpg",
-  "alt": "PC 5′×10′ CNC plasma table with servo drives, torch height control and downdraft table",
-  "section": "ttmc-more",
-  "trim": true,
-  "quality": 82,
-  "cutout": true,
-  "cut_size": 768
- },
- "tm-pcp3000e": {
-  "src": "tools/src-images/ttmc-more/tm-pcp3000e.jpg",
-  "alt": "PCP 300×3000E CNC plasma pipe cutting machine with chucks at both ends",
-  "section": "ttmc-more",
-  "trim": true,
-  "quality": 82,
-  "cutout": true,
-  "cut_size": 768
- },
- "tm-pcp6000": {
-  "src": "tools/src-images/ttmc-more/tm-pcp6000.jpg",
-  "alt": "PCP 300×6000 CNC plasma pipe cutting machine with ball-transfer cradles",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,

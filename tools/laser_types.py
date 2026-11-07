@@ -128,7 +128,7 @@ SHEET = {
              faq("novotech-fiber-lasers", "When does a ground-rail laser make sense?")[0],
              faq("senfeng-fiber-lasers", "Plate gantries, bevels and oxy-fuel?")[0],
              POWER_FAQ, GAS_FAQ, SITE_FAQ, VOLT_FAQ_GENERIC],
-        related=[{"href": "cnc-plasma-table.html", "label": "CNC plasma tables"}, {"href": "plate-beveler.html", "label": "Plate bevelers"},
+        related=[{"href": "plate-beveler.html", "label": "Plate bevelers"},
                  {"href": "plate-rollers.html", "label": "Plate rollers"}, {"href": "press-brake.html", "label": "Press brakes"}],
     ),
     "3d-laser-cutting-machine": dict(

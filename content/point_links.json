@@ -300,20 +300,6 @@
    "dn-tth"
   ]
  ],
- "cnc-plasma-table": [
-  [
-   "PC 4×4 and 5×10 CNC plasma tables",
-   "tt-plasma-servo"
-  ],
-  [
-   "PC 2×2 and 2×4 compact plasma tables",
-   "tt-plasma-compact"
-  ],
-  [
-   "PCP CNC plasma pipe cutters",
-   "tt-pcp"
-  ]
- ],
  "coil-fed-laser-cutting-line": [
   [
    "SF1503CH",
@@ -696,8 +682,16 @@
    "vl-q11k"
   ],
   [
-   "Light hydraulic shears 12 ga – 1/4″ × 51 – 120″",
+   "THS",
    "tt-ths"
+  ],
+  [
+   "HQ11",
+   "tt-hq11"
+  ],
+  [
+   "HQ01",
+   "tt-hq01"
   ]
  ],
  "ironworker-machines": [
@@ -808,6 +802,22 @@
   [
    "Value-line Q11 flywheel mechanical shears",
    "tt-q11-mech"
+  ],
+  [
+   "Q11 electric shears",
+   "tt-q11"
+  ],
+  [
+   "NC back gauge",
+   "tt-q11nc"
+  ],
+  [
+   "EBQ01 motorized bench shears",
+   "tt-bq01"
+  ],
+  [
+   "PS-1220×1.5GT coil slitting and cut-to-length machine",
+   "tt-ps1220"
   ]
  ],
  "milling-machine": [
@@ -1196,32 +1206,6 @@
   [
    "GCB crossed-belt benches",
    "gecam-gcb"
-  ]
- ],
- "sheet-metal-shears": [
-  [
-   "PS pneumatic shear 16 ga × 52″",
-   "tt-ps"
-  ],
-  [
-   "HQ01 light hydraulic shears",
-   "tt-hq01"
-  ],
-  [
-   "EBQ01 bench shears",
-   "tt-bq01"
-  ],
-  [
-   "Q11 electric shears",
-   "tt-q11"
-  ],
-  [
-   "PLC / motorised back gauge",
-   "tt-q11nc"
-  ],
-  [
-   "PS-1220×1.5GT coil slitting and cut-to-length machine",
-   "tt-ps1220"
   ]
  ],
  "surface-grinder": [

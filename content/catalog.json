@@ -25,12 +25,11 @@
   },
   {
    "id": "cutting",
-   "title": "Shearing, punching, plasma cutting and notching",
-   "lead": "Shears, ironworkers, CNC plasma tables, notchers and plate bevellers.",
+   "title": "Shearing, punching and notching",
+   "lead": "Shears, ironworkers, notchers and plate bevellers.",
    "slugs": [
     "shear-cutting",
     "ironworker-machines",
-    "cnc-plasma-table",
     "corner-notcher",
     "plate-beveler"
    ]
@@ -136,7 +135,7 @@
   "laser-cutting-machine": "Fiber laser cutting machines for sheet and plate, 4 × 4 ft to 10 × 164 ft beds, 1.5 to 80 kW.",
   "tube-laser-cutting-machine": "Tube and profile fiber lasers for Ø0.3″ to 25.2″, 20 to 40 ft bars, 1.5 to 40 kW.",
   "laser-welding-machine": "Handheld laser welders from 0.8 kW, robotic laser welding cells to 20 kW, and laser cladding.",
-  "shear-cutting": "Sheet metal shears, mechanical guillotines and hydraulic plate shears, 16 ga to 1-9/16″.",
+  "shear-cutting": "Hydraulic and mechanical shears — swing beam and guillotine plate shears, electric, bench and light hydraulic shears, 20 ga to 1-9/16″.",
   "ironworker-machines": "Hydraulic ironworkers and punching machines that punch, shear, notch and bend in one machine.",
   "corner-notcher": "Hydraulic and pneumatic corner notchers for the corners of boxes, cabinets and panels.",
   "plate-beveler": "Cevisa portable cold bevellers for weld preparation on plate and pipe, 1/8″ to 4-3/4″ thick.",
@@ -165,7 +164,6 @@
   "drill-press": "Gear-head, column and variable-speed drill presses, 1/2″ to 2″ in steel, with power feed and tapping.",
   "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines, keyseaters and a head resurfacer.",
   "cnc-machine-tools": "Dener CNC lathes, vertical and double-column machining centres and a surface grinder; value-line CNC lathe, VMCs and boring mills.",
-  "cnc-plasma-table": "CNC plasma tables 2 × 2 ft to 5 × 10 ft and CNC plasma pipe cutters for Ø2 – 11-3/4″ pipe.",
   "power-hammer": "Pneumatic planishing hammers, electric power hammers, a diamond roller former and air forging hammers.",
   "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, multifunction machines, mortisers, a lathe and dust collection."
  },

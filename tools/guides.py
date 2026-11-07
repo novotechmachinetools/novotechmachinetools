@@ -95,11 +95,6 @@ GUIDES = [
       "two or three chucks and the tail, loading, bevels, software and floor space. " + BY,
       "What a tube laser replaces, how to size the chucks, bar length and power, two or three chucks and the tail, loading, bevels "
       "and floor space."),
-    G("cnc-plasma-table", "cnc-plasma-guide.html", "CNC plasma table buying guide", "cutting",
-      "What we explain to customers before they buy a CNC plasma table: plasma, laser or oxy-fuel, the plasma source for your plate, "
-      "drives and torch height control, water or downdraft tables, software and pipe cutting. " + BY,
-      "Plasma, laser or oxy-fuel, the source for your plate, piercing and consumables, torch height control, water or downdraft "
-      "tables and pipe cutting."),
     G("circular-cold-saws", "cold-saw-guide.html", "Cold saw buying guide", "cutting",
       "What we explain to customers before they buy a cold saw: cold saw, abrasive saw or band saw, HSS or carbide blades, "
       "capacity at 90° and on the miter, manual to automatic saws, and speed and coolant. " + BY,

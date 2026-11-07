@@ -6,6 +6,7 @@
   "vl-q11k",
   "tt-ths",
   "tt-hq11",
+  "tt-hq01",
   "nt-shear-srgm-h",
   "nt-shear-srgm",
   "nt-shear-srgm-hfr",
@@ -13,11 +14,9 @@
   "nt-shear-srgm-hcl",
   "nt-shear-srgm-cl",
   "tt-q11-mech",
-  "tt-ps",
-  "tt-hq01",
-  "tt-bq01",
   "tt-q11",
   "tt-q11nc",
+  "tt-bq01",
   "tt-ps1220"
  ],
  "families": {
@@ -3040,7 +3039,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-light-hydraulic"
   },
@@ -3235,7 +3234,149 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "sh-light-hydraulic"
+  },
+  "tt-hq01": {
+   "id": "tt-hq01",
+   "brand": "novotech",
+   "name": "HQ01 light hydraulic shears, 16 – 14 ga × 52 – 98″",
+   "short": "HQ01 light hydraulic shears",
+   "models_label": "HQ01-2x1320B · HQ01-1.6x2500B · 2 models",
+   "summary": "The light hydraulic shear for HVAC, ductwork and signage: a 3 HP power pack and one cylinder cut 14 ga (2 mm) over 52″ or 16 ga over 98″ with hydraulic control, a roving foot pedal, an adjustable back gauge for repeatable widths and front sheet supports with a squaring guide. A fenced rear guard is standard; photoelectric protection is optional. From 1,213 lb — the lowest-priced powered shear in the range.",
+   "features": [
+    "14 ga (2 mm) × 52″ or 16 ga (1.6 mm) × 98″ mild steel; 3 HP hydraulic power pack",
+    "Adjustable back gauge, 31.5″ (800 mm) travel, for precise repeatability",
+    "Roving foot pedal control; automatic and single-stroke switching",
+    "Front sheet supports and squaring guide; rear guard fence",
+    "Work table height 34.6″ (880 mm)"
+   ],
+   "optional": [
+    "Photoelectric rear protection",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "tt-hq01",
+    "tt-hq01-2500",
+    "tt-hq01-gauge",
+    "tt-hq01-switch",
+    "tt-hq01-photocell"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HQ01",
+      "sub": "Light hydraulic shears",
+      "models": [
+       "HQ01-2x1320B",
+       "HQ01-1.6x2500B"
+      ],
+      "rows": [
+       {
+        "label": "Shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm)",
+         "16 ga (1.6 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Max shearing length",
+        "sub": "",
+        "cells": [
+         "52.0″ (1,320 mm)",
+         "98.4″ (2,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor power",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge",
+        "sub": "",
+        "cells": [
+         "31.5″ (800 mm)",
+         "31.5″ (800 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Work table height",
+        "sub": "",
+        "cells": [
+         "34.6″ (880 mm)",
+         "34.6″ (880 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "78 × 36 × 56″ (198 × 92 × 143 cm)",
+         "124 × 39 × 56″ (314 × 99 × 143 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,213 lb (550 kg)",
+         "2,513 lb (1,140 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HQ01-2x1320B",
+      "glance": [
+       "14 ga (2 mm)",
+       "52.0″ (1,320 mm)",
+       "—",
+       "3 HP (2.2 kW)",
+       "1,213 lb (550 kg)"
+      ]
+     },
+     {
+      "name": "HQ01-1.6x2500B",
+      "glance": [
+       "16 ga (1.6 mm)",
+       "98.4″ (2,500 mm)",
+       "—",
+       "3 HP (2.2 kW)",
+       "2,513 lb (1,140 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "length",
+     "strokes",
+     "motor",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
+   },
+   "pdf": {
+    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
+    "label": "Download the sheet metal shears brochure",
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-light-hydraulic"
   },
@@ -4944,413 +5085,9 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-flywheel"
-  },
-  "tt-ps": {
-   "id": "tt-ps",
-   "brand": "novotech",
-   "name": "PS pneumatic shear, 16 ga × 52″",
-   "short": "PS pneumatic shear",
-   "models_label": "PS-1.5x1320 · 1 model",
-   "summary": "The shear for a shop that already has compressed air: a pneumatic cylinder drives the cutting beam through 16 ga (1.5 mm) mild steel over 52″ at 40 strokes a minute, with no motor, no hydraulics and nothing to warm up. A low cutting angle cuts narrow strips without twisting; the bed and beam are aligned at the factory for accuracy; front and back gauges with fine adjustment, a mobile 24 V foot pedal and a complete pneumatic control set are standard. 1,257 lb, runs on 85 – 100 psi shop air.",
-   "features": [
-    "16 ga (1.5 mm) mild steel × 52″ (1,320 mm); 40 strokes per minute on 85 – 100 psi shop air",
-    "Pneumatic cylinder drive with filter, regulator and lubricator",
-    "Low cutting angle for narrow strips without twist; factory-aligned bed and beam",
-    "Back gauge 29.5″ (750 mm) with indicator; front gauge 21″ (535 mm)",
-    "Mobile 24 V foot pedal switch"
-   ],
-   "optional": [
-    "Photoelectric rear protection",
-    "Sheet support arms"
-   ],
-   "images": [
-    "tt-ps",
-    "tt-ps-gauge",
-    "tt-ps-control",
-    "tt-ps-cylinder"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "PS",
-      "sub": "Pneumatic shear",
-      "models": [
-       "PS-1.5x1320"
-      ],
-      "rows": [
-       {
-        "label": "Shearing capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "16 ga (1.5 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Max shearing width",
-        "sub": "",
-        "cells": [
-         "52.0″ (1,320 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Strokes per minute",
-        "sub": "",
-        "cells": [
-         "40 strokes/min"
-        ],
-        "key": true
-       },
-       {
-        "label": "Back gauge",
-        "sub": "",
-        "cells": [
-         "29.5″ (750 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Front gauge",
-        "sub": "",
-        "cells": [
-         "21.1″ (535 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Air pressure",
-        "sub": "",
-        "cells": [
-         "85 – 100 psi (0.6 – 0.7 MPa)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Air consumption per stroke",
-        "sub": "",
-        "cells": [
-         "1.4 CFM"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "69 × 30 × 48″ (175 × 75 × 123 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "1,257 lb (570 kg)"
-        ],
-        "key": false
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "PS-1.5x1320",
-      "glance": [
-       "16 ga (1.5 mm)",
-       "52.0″ (1,320 mm)",
-       "40 strokes/min",
-       "85 – 100 psi (0.6 – 0.7 MPa)",
-       "1,257 lb (570 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "length",
-     "strokes",
-     "motor",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
-    "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "sh-light"
-  },
-  "tt-hq01": {
-   "id": "tt-hq01",
-   "brand": "novotech",
-   "name": "HQ01 light hydraulic shears, 16 – 14 ga × 52 – 98″",
-   "short": "HQ01 light hydraulic shears",
-   "models_label": "HQ01-2x1320B · HQ01-1.6x2500B · 2 models",
-   "summary": "The light hydraulic shear for HVAC, ductwork and signage: a 3 HP power pack and one cylinder cut 14 ga (2 mm) over 52″ or 16 ga over 98″ with hydraulic control, a roving foot pedal, an adjustable back gauge for repeatable widths and front sheet supports with a squaring guide. A fenced rear guard is standard; photoelectric protection is optional. From 1,213 lb — the lowest-priced powered shear in the range.",
-   "features": [
-    "14 ga (2 mm) × 52″ or 16 ga (1.6 mm) × 98″ mild steel; 3 HP hydraulic power pack",
-    "Adjustable back gauge, 31.5″ (800 mm) travel, for precise repeatability",
-    "Roving foot pedal control; automatic and single-stroke switching",
-    "Front sheet supports and squaring guide; rear guard fence",
-    "Work table height 34.6″ (880 mm)"
-   ],
-   "optional": [
-    "Photoelectric rear protection",
-    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
-   ],
-   "images": [
-    "tt-hq01",
-    "tt-hq01-2500",
-    "tt-hq01-gauge",
-    "tt-hq01-switch",
-    "tt-hq01-photocell"
-   ],
-   "videos": [],
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "HQ01",
-      "sub": "Light hydraulic shears",
-      "models": [
-       "HQ01-2x1320B",
-       "HQ01-1.6x2500B"
-      ],
-      "rows": [
-       {
-        "label": "Shearing capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "14 ga (2 mm)",
-         "16 ga (1.6 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Max shearing length",
-        "sub": "",
-        "cells": [
-         "52.0″ (1,320 mm)",
-         "98.4″ (2,500 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Motor power",
-        "sub": "",
-        "cells": [
-         "3 HP (2.2 kW)",
-         "3 HP (2.2 kW)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Back gauge",
-        "sub": "",
-        "cells": [
-         "31.5″ (800 mm)",
-         "31.5″ (800 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Work table height",
-        "sub": "",
-        "cells": [
-         "34.6″ (880 mm)",
-         "34.6″ (880 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "78 × 36 × 56″ (198 × 92 × 143 cm)",
-         "124 × 39 × 56″ (314 × 99 × 143 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "1,213 lb (550 kg)",
-         "2,513 lb (1,140 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "HQ01-2x1320B",
-      "glance": [
-       "14 ga (2 mm)",
-       "52.0″ (1,320 mm)",
-       "—",
-       "3 HP (2.2 kW)",
-       "1,213 lb (550 kg)"
-      ]
-     },
-     {
-      "name": "HQ01-1.6x2500B",
-      "glance": [
-       "16 ga (1.6 mm)",
-       "98.4″ (2,500 mm)",
-       "—",
-       "3 HP (2.2 kW)",
-       "2,513 lb (1,140 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "length",
-     "strokes",
-     "motor",
-     "weight"
-    ],
-    "caps": {},
-    "note": "Capacities are the manufacturer's ratings for mild steel over the full blade length; count on about 60 % of the thickness in stainless steel and the full thickness and more in aluminum. Metric values in brackets are the manufacturer's nominal figures; packing size is the shipping crate L × W × H, weight is the net weight of the machine."
-   },
-   "pdf": {
-    "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
-    "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
-   },
-   "group": "sh-light"
-  },
-  "tt-bq01": {
-   "id": "tt-bq01",
-   "brand": "novotech",
-   "name": "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″",
-   "short": "EBQ01 bench shears",
-   "models_label": "EBQ01-1.25x650 · EBQ01-1.0x1050 · 2 models",
-   "summary": "Compact motorized shears for the bench: a 1 HP motor drives the blade from a foot switch, so both hands hold the sheet — 18 ga over 26″ and 20 ga over 41″, with a 19.7″ back gauge, a front angle stop and a working light. For duct parts, flashing, signs and small panels where a floor shear is more machine than the work needs.",
-   "features": [
-    "18 ga (1.25 mm) × 26″ (650 mm); 20 ga (1 mm) × 41″ (1,050 mm)",
-    "1 HP (0.75 kW) motor; foot switch",
-    "Back gauge 0 – 19.7″ (0 – 500 mm); front angle stop",
-    "Working light"
-   ],
-   "optional": [],
-   "images": [
-    "tm-ebq01"
-   ],
-   "videos": [],
-   "headline": "18 – 20 ga × 26 – 41″",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "EBQ01-1.25x650 · EBQ01-1.0x1050",
-      "sub": "Motorized bench shears, 18 ga × 26″ and 20 ga × 41″",
-      "models": [
-       "EBQ01-1.25x650",
-       "EBQ01-1.0x1050"
-      ],
-      "rows": [
-       {
-        "label": "Working width",
-        "sub": "",
-        "cells": [
-         "25.6″ (650 mm)",
-         "41.3″ (1,050 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "18 ga (1.25 mm)",
-         "20 ga (1 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Operation",
-        "sub": "",
-        "cells": [
-         "Motor 1 HP (0.75 kW), foot switch",
-         "Motor 1 HP (0.75 kW), foot switch"
-        ],
-        "key": true
-       },
-       {
-        "label": "Back gauge range",
-        "sub": "",
-        "cells": [
-         "0 – 19.7″ (0 – 500 mm)",
-         "0 – 19.7″ (0 – 500 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "41 × 26 × 25″ (105 × 65 × 63 cm)",
-         "55 × 26 × 26″ (140 × 65 × 65 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "408 lb (185 kg)",
-         "525 lb (238 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "EBQ01-1.25x650",
-      "glance": [
-       "25.6″ (650 mm)",
-       "18 ga (1.25 mm)",
-       "Motor 1 HP (0.75 kW), foot switch",
-       "408 lb (185 kg)"
-      ]
-     },
-     {
-      "name": "EBQ01-1.0x1050",
-      "glance": [
-       "41.3″ (1,050 mm)",
-       "20 ga (1 mm)",
-       "Motor 1 HP (0.75 kW), foot switch",
-       "525 lb (238 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "working_width",
-     "capacity_mild_steel",
-     "operation",
-     "weight"
-    ],
-    "caps": {
-     "EBQ01-1.25x650": "25.6″ (650 mm) × 18 ga (1.25 mm)",
-     "EBQ01-1.0x1050": "41.3″ (1,050 mm) × 20 ga (1 mm)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "sh-light"
   },
   "tt-q11": {
    "id": "tt-q11",
@@ -5559,7 +5296,7 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-electric"
   },
@@ -5733,9 +5470,132 @@
    "pdf": {
     "file": "files/NovoTech-Sheet-Metal-Shears-2026.pdf",
     "label": "Download the sheet metal shears brochure",
-    "size": "PDF · 1 MB · imperial units"
+    "size": "PDF · 2 MB · imperial units"
    },
    "group": "sh-electric"
+  },
+  "tt-bq01": {
+   "id": "tt-bq01",
+   "brand": "novotech",
+   "name": "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″",
+   "short": "EBQ01 bench shears",
+   "models_label": "EBQ01-1.25x650 · EBQ01-1.0x1050 · 2 models",
+   "summary": "Compact motorized shears for the bench: a 1 HP motor drives the blade from a foot switch, so both hands hold the sheet — 18 ga over 26″ and 20 ga over 41″, with a 19.7″ back gauge, a front angle stop and a working light. For duct parts, flashing, signs and small panels where a floor shear is more machine than the work needs.",
+   "features": [
+    "18 ga (1.25 mm) × 26″ (650 mm); 20 ga (1 mm) × 41″ (1,050 mm)",
+    "1 HP (0.75 kW) motor; foot switch",
+    "Back gauge 0 – 19.7″ (0 – 500 mm); front angle stop",
+    "Working light"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ebq01"
+   ],
+   "videos": [],
+   "headline": "18 – 20 ga × 26 – 41″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "EBQ01-1.25x650 · EBQ01-1.0x1050",
+      "sub": "Motorized bench shears, 18 ga × 26″ and 20 ga × 41″",
+      "models": [
+       "EBQ01-1.25x650",
+       "EBQ01-1.0x1050"
+      ],
+      "rows": [
+       {
+        "label": "Working width",
+        "sub": "",
+        "cells": [
+         "25.6″ (650 mm)",
+         "41.3″ (1,050 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "18 ga (1.25 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Operation",
+        "sub": "",
+        "cells": [
+         "Motor 1 HP (0.75 kW), foot switch",
+         "Motor 1 HP (0.75 kW), foot switch"
+        ],
+        "key": true
+       },
+       {
+        "label": "Back gauge range",
+        "sub": "",
+        "cells": [
+         "0 – 19.7″ (0 – 500 mm)",
+         "0 – 19.7″ (0 – 500 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "41 × 26 × 25″ (105 × 65 × 63 cm)",
+         "55 × 26 × 26″ (140 × 65 × 65 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "408 lb (185 kg)",
+         "525 lb (238 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EBQ01-1.25x650",
+      "glance": [
+       "25.6″ (650 mm)",
+       "18 ga (1.25 mm)",
+       "Motor 1 HP (0.75 kW), foot switch",
+       "408 lb (185 kg)"
+      ]
+     },
+     {
+      "name": "EBQ01-1.0x1050",
+      "glance": [
+       "41.3″ (1,050 mm)",
+       "20 ga (1 mm)",
+       "Motor 1 HP (0.75 kW), foot switch",
+       "525 lb (238 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_width",
+     "capacity_mild_steel",
+     "operation",
+     "weight"
+    ],
+    "caps": {
+     "EBQ01-1.25x650": "25.6″ (650 mm) × 18 ga (1.25 mm)",
+     "EBQ01-1.0x1050": "41.3″ (1,050 mm) × 20 ga (1 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "sh-bench"
   },
   "tt-ps1220": {
    "id": "tt-ps1220",

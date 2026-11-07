@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """NovoTech value-line machines built by TTMC (sold under NovoTech's name, TTMC model codes) — families of the NEW pages:
-sheet metal brakes, lock formers, belt grinders, drill presses, milling machines, CNC machine tools, CNC plasma tables, power and
-planishing hammers, tube benders and woodworking machinery.  Spec tables in tools/ttmc_more_tables.py (Vol. 23 catalogue) and
+sheet metal brakes, lock formers, belt grinders, drill presses, milling machines, CNC machine tools, power and
+planishing hammers, tube benders and woodworking machinery (the CNC plasma tables page was deleted, the owner, Nov 7 2026).  Spec tables in tools/ttmc_more_tables.py (Vol. 23 catalogue) and
 tools/ttmc_new_tables.py (2026 new-item sheets, welding and woodworking catalogues), photos in tools/ttmc_more_photos.py and
 tools/ttmc_new_photos.py, pages in tools/ttmc_more_pages.py; families of the existing pages in tools/ttmc_more_data2.py.
 
@@ -493,35 +493,6 @@ CNC = [
       ["tm-cnc100"], headline="Saw discs Ø4 – 7″", cap="[Table]"),
 ]
 
-# =============================================================================================== CNC plasma
-P_PLASMA = "cnc-plasma-table"
-PLASMA = [
-    F("tt-plasma-servo", P_PLASMA, "table", "PC 4′×4′ · PC 5′×10′ CNC plasma tables with servo drives", "PC 4×4 / 5×10 plasma tables", [T["tt-plasma"][1]],
-      "Industrial CNC plasma tables: servo motors on X and Y over precision guides, a Z axis with automatic torch height detection, a "
-      "welded frame that carries plate up to 1″ thick and a control console with the programming software. The 4×4 cuts over water "
-      "pans; the 5×10 has rack-and-gear drives and a downdraft dust-collection table. With a 45, 65 or 85 A plasma source they cut "
-      "5/16″, 3/8″ or 1/2″ — Hypertherm and other sources on request.",
-      ["Cutting area 48 × 48″ or 60 × 120″", "Servo drives; accuracy ±0.006″, repeatability ±0.004″",
-       "Automatic torch height control; 5.9″ (150 mm) Z stroke", "Cutting thickness 5/16 – 1/2″ (8 – 12 mm) with 45 – 85 A sources",
-       "4×4: water pans; 5×10: downdraft dust collection"],
-      ["tm-pc510", "tm-pc-console"], headline="4 × 4 ft and 5 × 10 ft", cap="[Cutting area]", optional=["Plasma source of another brand (Hypertherm …)"]),
-    F("tt-plasma-compact", P_PLASMA, "table", "PC 2′×2′ · PC 2′×4′ compact CNC plasma tables", "PC 2×2 / 2×4 plasma tables", [T["tt-plasma"][0]],
-      "Compact CNC plasma tables for steel, aluminum, galvanized and coated sheet: a fully welded frame, hardened and ground slideways "
-      "with wipers, stepper motors on X and Y, water-assisted cooling and a hand-held controller that runs programs from a USB stick — "
-      "no computer needed — with easy programming software; supplied with the plasma source and torch.",
-      ["Cutting area 24 × 24″ or 24 × 48″", "3/8″ (10 mm) with a 40 A source, 1″ (26 mm) with 100 A",
-       "Stepper motors; ±0.04″ per 39″", "Hand-held USB controller; plasma source and torch included"],
-      ["tm-pc24"], headline="2 × 2 ft and 2 × 4 ft", cap="[Cutting area]"),
-    F("tt-pcp", P_PLASMA, "pipe", "PCP CNC plasma pipe cutting machines, Ø2 – 11-3/4″ × 10 – 20 ft", "PCP pipe cutters", T["tt-pcp"],
-      "CNC plasma pipe cutting for pipe and tube from Ø2 to 11-3/4″ (50 – 300 mm) with walls to 1/2″: copes, saddles, holes and "
-      "cut-offs for structural and process piping, programmed without special skills. The PCP 300×3000E holds the pipe in chucks at both "
-      "ends with a dust exhaust on both sides; the 300×3000 and 300×6000 rotate the pipe on gas-spring chuck supports and ball-transfer "
-      "cradles; modular bed extensions take longer pipe.",
-      ["Pipe Ø2 – 11-3/4″ (50 – 300 mm), wall 0.04 – 1/2″ (1 – 12 mm)", "Pipe length 10 ft (3 m) or 20 ft (6 m); modular bed extensions",
-       "Cutting 200 ipm; rotation up to 100 rpm", "Removable chip tray and dust exhaust (3000E); gas-spring supports and ball cradles (3000, 6000)"],
-      ["tm-pcp3000e", "tm-pcp6000"], headline="Pipe Ø2 – 11-3/4″", cap="[Pipe length]"),
-]
-
 # =============================================================================================== power and planishing hammers
 P_SHAPE = "power-hammer"     # was english-wheel: English wheels and shrinker-stretchers are manual — not sold (Oct 2026)
 SHAPE = [
@@ -685,4 +656,4 @@ WOOD = [
       ["tm-dc900"], headline="940 CFM"),
 ]
 
-NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + PLASMA + SHAPE + TUBE + WOOD
+NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + SHAPE + TUBE + WOOD

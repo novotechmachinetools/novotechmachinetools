@@ -197,8 +197,7 @@ PHOTOS.update({
     "tm-hnm6": dict(dir=SHEAR, src="HNM-6.jpg", alt="HNM-6 hydraulic 90° corner notcher with emergency-stop pedestal and foot pedal", boxes=[(756, 766, 817, 828)]),
     "tm-hnm6a": dict(dir=SHEAR, src="HNM-6A.png", alt="HNM-6A hydraulic adjustable-angle notcher, 30 – 135°, with control pedestal and foot pedal"),
     "tm-pnm": dict(dir=SHEAR, src="PNM-130 PNM-150.png", alt="PNM-130 / PNM-150 pneumatic 90° corner notcher on stand with foot pedal"),
-    # ---- shears (tt-ps, tt-q11, tt-q11nc, tt-hq01, tt-hq11) — tools/ttmc_data.py
-    "tt-ps": dict(dir=SHEAR, src="386030 PS-1.5X1320.jpg", alt="PS-1.5x1320 pneumatic shear, 52″ × 16 ga, with front gauge arms and the mobile foot pedal"),
+    # ---- shears (tt-q11, tt-q11nc, tt-hq01, tt-hq11) — tools/ttmc_data.py; the PS pneumatic shear is not sold (Nov 7 2026)
     "tt-q11a": dict(dir=SHEAR, src="Q11-3x1250A.png", alt="Q11-3x1250A electric shear, 49″ × 1/8″, with front support arms, side control box and the mobile foot pedal",
                     boxes=[(1727, 371, 2130, 533)]),
     "tt-q11nc-4x1300": dict(dir=SHEAR, src="386103 Q11-4X1300NC.png", alt="Q11-4x1300NC electric shear with PLC control and motorised back gauge, 51″ × 5/32″", up=True),

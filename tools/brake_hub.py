@@ -58,7 +58,7 @@ PAGES = {
              {"q": "Can a brake fold painted or coated sheet without marking it?",
               "a": "Yes — that is one of the reasons to fold instead of press-brake bending. The sheet is clamped and the leaf swings around the clamp edge without sliding over a die; a strip of protective film on the sheet keeps pre-painted and stainless finishes perfect."},
              VOLT_FAQ_GENERIC],
-        related=[{"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}, {"href": "corner-notcher.html", "label": "Corner notchers"},
+        related=[{"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "corner-notcher.html", "label": "Corner notchers"},
                  {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}, {"href": "bead-rollers.html", "label": "Bead rollers"}],
     ),
     "sheet-metal-hand-brake": dict(
@@ -88,7 +88,7 @@ PAGES = {
              {"q": "What is a slitting brake and an offset brake?",
               "a": "A slitting brake has a roller knife that runs along the clamping beam to cut a strip from a sheet before folding it — the tool for trim and flashing from coil. An offset brake makes the small Z-shaped step (offset) at the edge of a panel in one stroke, for lap joints and door panels."},
              VOLT_FAQ_GENERIC],
-        related=[{"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
+        related=[{"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
                  {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}, {"href": "motorized-plate-rollers.html", "label": "Slip rolls"}],
     ),
     "magnetic-sheet-metal-brake": dict(
@@ -116,7 +116,7 @@ PAGES = {
              {"q": "What power does a magnetic brake need?",
               "a": "Single-phase 120 or 240 V — a wall outlet: the electromagnet draws power only while the foot switch is pressed. No hydraulics, no three-phase, so the brake can go anywhere in the shop or on a trailer."},
              VOLT_FAQ_GENERIC],
-        related=[{"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
+        related=[{"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
                  {"href": "corner-notcher.html", "label": "Corner notchers"}, {"href": "motorized-plate-rollers.html", "label": "Slip rolls"}],
     ),
     "hydraulic-folding-machine": dict(
@@ -178,7 +178,7 @@ PAGES = {
               "a": "No — the bending beam has a silicone insert and the clamping surfaces are smooth aluminum, made for pre-painted steel and aluminum coil and for copper. Keep the protective film on the coil for a flawless finish."},
              VOLT_FAQ_GENERIC],
         related=[{"href": "sheet-metal-hand-brake.html", "label": "Hand brakes and bench brakes"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
-                 {"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}],
+                 {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}],
     ),
     "shear-brake-roll-3-in-1": dict(
         nav="3-in-1 machines", hero="tm-3in1", minis=["tm-e3in1", "tm-3in1-1016"],
@@ -205,7 +205,7 @@ PAGES = {
              {"q": "How are the capacities rated, and what about stainless and aluminum?",
               "a": "In gauge of mild steel over the full width; stainless about two gauges lighter, aluminum about two gauges heavier. The hand-operated models rate copper, brass and aluminum separately in the specification table."},
              VOLT_FAQ_GENERIC],
-        related=[{"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}, {"href": "box-and-pan-brake.html", "label": "Box and pan brakes"},
+        related=[{"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "box-and-pan-brake.html", "label": "Box and pan brakes"},
                  {"href": "motorized-plate-rollers.html", "label": "Slip rolls"}, {"href": "bead-rollers.html", "label": "Bead rollers"}],
     ),
 }
@@ -231,7 +231,7 @@ HUB_PAGE = dict(
     range_caption="Sheet metal brakes and folding machines supplied by NovoTech — value line, built to our specification",
     range_note="Capacities are rated in gauge of mild steel over the full bending length; stainless about two gauges lighter, aluminum about two gauges heavier. Single-phase and three-phase machines are supplied with a CSA-approved panel; voltages on request.",
     faq_title="Questions we get asked about sheet metal brakes",
-    related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "sheet-metal-shears.html", "label": "Sheet metal shears"},
+    related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"},
                    {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
                    {"href": "motorized-plate-rollers.html", "label": "Plate rollers and slip rolls"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
     related_title="Machinery that works alongside a sheet metal brake",

@@ -2,7 +2,7 @@
 """NovoTech value-line machines built by TTMC — families added as value-line groups to EXISTING pages (cold saws, aluminum saws,
 corner notchers, ironworkers, angle rolls, bead rollers, tube notchers, hydraulic presses, circle shears, compact press brakes,
 horizontal press brakes, plate rollers, deburring machines, welding positioners) and the EBQ01 motorized bench shears and the
-PS-1220 coil slitter on sheet-metal-shears.html.
+PS-1220 coil slitter on mechanical-guillotine-shear.html (the sheet-metal-shears page was merged into it, Nov 7 2026).
 Manual machines are not sold (see the scope note in ttmc_more_data.py): the families pick only the powered models.
 """
 from ttmc_conv import pick
@@ -345,8 +345,8 @@ DEBURR = [
       ["tm-mgm300", "tm-mgm300-conveyor"], headline="12″ working width", cap="[Working width, max]"),
 ]
 
-# =============================================================================================== motorized bench shears (sheet-metal-shears.html, family set "ttmc")
-P_SHEAR = "sheet-metal-shears"
+# =============================================================================================== motorized bench shears (mechanical-guillotine-shear.html, family set "ttmc")
+P_SHEAR = "mechanical-guillotine-shear"
 SHEAR = [
     F("tt-bq01", P_SHEAR, "sh-light", "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″", "EBQ01 bench shears",
       [pick(T["tt-bq01"][0], ["EBQ01-1.25x650", "EBQ01-1.0x1050"], title="EBQ01-1.25x650 · EBQ01-1.0x1050", sub="Motorized bench shears, 18 ga × 26″ and 20 ga × 41″")],

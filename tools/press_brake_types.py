@@ -151,7 +151,7 @@ COMPACT = dict(
          SERVICE_FAQ, DELIVERY_FAQ, OIL_FAQ, VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about compact press brakes",
     related_pages=[{"href": "press-brake-tooling-punch-and-die.html", "label": "Press brake tooling"}, {"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes & folders"},
-                   {"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
+                   {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
     related_title="More sheet-metal machinery from NovoTech",
 )
 

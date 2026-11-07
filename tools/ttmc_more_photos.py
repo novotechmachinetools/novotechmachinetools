@@ -132,11 +132,7 @@ PLAN = {
  "tm-fn": (54, "L4", [], "FN1.5×80 foot-operated corner notcher on stand"),
  "tm-pnm": (54, "R1", [], "PNM-130 pneumatic 90° corner notcher on stand"),
  "tm-hnm6a": (55, "L1", [(368, 68, 414, 196), (118, 438, 178, 458)], "HNM-6A hydraulic adjustable-angle notcher, 30 – 135°"),
- "tm-hnm6": (55, "R1", [(896, 420, 940, 438)], "HNM-6 hydraulic 90° corner notcher"), "tm-pc24": (61, "L1", [(296, 400, 332, 430)], "PC 2′×4′ compact CNC plasma table with stepper drives"),
- "tm-pc510": (61, "R1", [(1082, 356, 1174, 382)], "PC 5′×10′ CNC plasma table with servo drives, torch height control and downdraft table"),
- "tm-pc-console": (61, "R5", [], "CNC console of the plasma table"),
- "tm-pcp3000e": (62, "L1", [(114, 324, 216, 350)], "PCP 300×3000E CNC plasma pipe cutting machine with chucks at both ends"),
- "tm-pcp6000": (62, "R1", [], "PCP 300×6000 CNC plasma pipe cutting machine with ball-transfer cradles"),
+ "tm-hnm6": (55, "R1", [(896, 420, 940, 438)], "HNM-6 hydraulic 90° corner notcher"),
  "tm-eb1250": (63, "L1", [], "EB1250 magnetic sheet metal brake, 4 ft × 16 ga, with foot switch"),
  "tm-eb2500": (63, "R1", [], "EB2500 magnetic sheet metal brake, 8 ft × 16 ga"),
  "tm-eb-bars": (63, "R3", [], "Standard clamping bars of the magnetic brake — full length, short set, narrow and slotted"),
@@ -334,7 +330,7 @@ PLAN = {
 }
 
 DETAIL = {"tm-eb-bars", "tm-alb-work", "tm-hw-angle", "tm-hw-box", "tm-rbm-rolls", "tm-crb-rolls", "tm-lock-forms", "tm-ss-jaws", "tm-anvils",
-          "tm-pic50-sample", "tm-ptn-work", "tm-louver", "tm-hb-vee", "tm-pc-console", "tm-q01b-gauge", "tm-dollies", "tm-wg", "tm-ns1", "tm-fr120"}
+          "tm-pic50-sample", "tm-ptn-work", "tm-louver", "tm-hb-vee", "tm-q01b-gauge", "tm-dollies", "tm-wg", "tm-ns1", "tm-fr120"}
 
 
 def to_page(box, page_side):
@@ -375,7 +371,7 @@ LOGO = {
     "tm-vmc10562": [(119, 143, 28, 68)], "tm-vmc8046": [(44, 56, 347, 363)], "tm-wtz16t": [(73, 85, 126, 143)],
     "tm-wd1800": [(136, 160, 126, 168)],
 }
-SCREEN = {"tm-pc-console": [(55, 84, 66, 158)]}   # the supplier's name on a control screen
+SCREEN = {}   # the supplier's name on a control screen, painted over (none since the plasma console photo went, Nov 7 2026)
 # what clean_marks cannot separate from the machine (labels and leader lines that touch it, insets), painted white after it —
 # (top, bottom, left, right, mode) in the cleaned photo; mode "w" paints the box white, "d" only the dark grey and black pixels
 WHITE = {

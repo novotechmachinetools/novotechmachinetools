@@ -476,6 +476,7 @@ small { font-size: .85em; }
 /* ---------- hub: sub-page panels and family cards ---------- */
 .subpages { padding: 34px 0 6px; }
 .subpage-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.subpage-grid.is-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }   /* a hub of two kinds (shears, Nov 7 2026) fills the row */
 .subpage-card { border: 1px solid var(--line); border-top: 5px solid var(--orange); background: var(--white); display: grid; grid-template-rows: auto 1fr; }
 .subpage-art { display: flex; align-items: center; justify-content: center; height: 250px; padding: 12px; background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); }
 /* the machine fills its frame (the owner, Nov 1 2026): a long tube laser used to show at its 360 px srcset width */
@@ -717,7 +718,7 @@ small { font-size: .85em; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
-  .subpage-grid, .line-block .subpage-grid, .subpage-grid.is-4 { grid-template-columns: 1fr; }
+  .subpage-grid, .line-block .subpage-grid, .subpage-grid.is-4, .subpage-grid.is-2 { grid-template-columns: 1fr; }
   body { font-size: 16px; }
   .header-contact .phone { font-size: 18px; }
   .why-grid, .footer-grid, .quote-form { grid-template-columns: 1fr; }

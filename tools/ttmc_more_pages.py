@@ -5,8 +5,8 @@
   content/extra_groups/ttmc-<slug>.json      value-line groups on pages other generators write (build.py apply_extra_groups)
   tools/image_map.json, tools/ttmc_more_keys.txt   the photos (tools/ttmc_more_photos.py — Vol. 23 catalogue, and
                                              tools/ttmc_new_photos.py — 2026 sheets and catalogues), section 'ttmc-more'
-The EBQ01 bench shears and the PS-1220 coil slitter (ttmc_more_data2.SHEAR) go on sheet-metal-shears.html through
-tools/ttmc_pages.py (family set 'ttmc').
+The EBQ01 bench shears and the PS-1220 coil slitter (ttmc_more_data2.SHEAR) go on mechanical-guillotine-shear.html through
+tools/ttmc_pages.py (family set 'ttmc').  The CNC plasma tables page was deleted (the owner, Nov 7 2026).
 
     python3 tools/ttmc_more_photos.py && python3 tools/ttmc_new_photos.py && python3 tools/ttmc_more_pages.py && python3 tools/ttmc_pages.py
     python3 tools/make_images.py --only $(cat tools/ttmc_more_keys.txt) && python3 build.py
@@ -76,7 +76,7 @@ PAGES = {
              {"q": "Do you still sell the brakes from the old website?",
               "a": "The brakes on this page replace the earlier roofing and box and pan brakes. If you need parts or service for a brake you bought from NovoTech before, call us at 647-526-5510 with the model and serial number."},
              VOLT],
-        related=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "sheet-metal-shears.html", "label": "Sheet metal shears"},
+        related=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"},
                  {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
                  {"href": "motorized-plate-rollers.html", "label": "Plate rollers and slip rolls"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
     ),
@@ -108,7 +108,7 @@ PAGES = {
               "a": "For a few ducts a week the lip is closed with a hammer. For production the SL-10 runs along the seam and closes it in three stages — 30°, 75°, 90° — adjusting itself to the sheet thickness: faster, quieter and a neater seam than hammering."},
              VOLT],
         related=[{"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes"}, {"href": "bead-rollers.html", "label": "Bead rollers and beading machines"},
-                 {"href": "sheet-metal-shears.html", "label": "Sheet metal shears"}, {"href": "circle-cutters-and-seamers.html", "label": "Circle shears and flanging"},
+                 {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "circle-cutters-and-seamers.html", "label": "Circle shears and flanging"},
                  {"href": "motorized-plate-rollers.html", "label": "Plate rollers and slip rolls"}, {"href": "corner-notcher.html", "label": "Corner notchers"}],
     ),
     D.P_GRIND: dict(
@@ -235,35 +235,7 @@ PAGES = {
               "a": "Yes — NovoTech delivers, levels and commissions the machine, checks the geometry, and trains your operator on the control; we help with the first programs and the post-processor for your CAM software. Ask us for the foundation drawing and the power requirements before the machine ships."},
              VOLT],
         related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "drill-press.html", "label": "Drill presses"},
-                 {"href": "laser-cutting-machine.html", "label": "Fiber laser cutting machines"}, {"href": "cnc-plasma-table.html", "label": "CNC plasma tables"}],
-    ),
-    D.P_PLASMA: dict(
-        title="CNC Plasma Tables & Plasma Pipe Cutting Machines | NovoTech",
-        meta="CNC plasma tables 2 × 2 ft to 5 × 10 ft with servo drives and torch height control, compact plasma tables with USB control and CNC plasma pipe cutters for Ø2 – 11-3/4″ pipe.",
-        h1="CNC plasma tables and CNC plasma pipe cutting machines",
-        nav="CNC plasma tables",
-        intro="A CNC plasma table cuts steel, stainless and aluminum plate to any shape from a drawing — brackets, gussets, base plates, signs "
-              "and art — at a fraction of the price of a laser, and cuts thicker plate than a small laser. NovoTech's value-line plasma "
-              "machines are built in China to our specification: industrial 4 × 4 and 5 × 10 ft tables with servo drives, automatic torch "
-              "height control and water or downdraft tables, compact 2 × 2 and 2 × 4 ft tables that run from a USB stick, and CNC plasma pipe "
-              "cutters that cope and saddle pipe from Ø2 to 11-3/4″. Supplied with the plasma source or ready for a Hypertherm; installed and "
-              "supported from Mississauga, ON, Canada.",
-        points=["PC 4×4 and 5×10 CNC plasma tables: servo drives, torch height control, plate to 1″ on the table, cuts to 1/2″ with 85 A",
-                "PC 2×2 and 2×4 compact plasma tables with stepper drives and USB hand-held control",
-                "PCP CNC plasma pipe cutters for pipe Ø2 – 11-3/4″, 10 and 20 ft"],
-        hero="tm-pc510", minis=["tm-pcp3000e", "tm-pc24"],
-        groups=[("table", "CNC plasma tables", "Cut plate to shape from a drawing — 2 × 2 ft to 5 × 10 ft.", False),
-                ("pipe", "CNC plasma pipe cutting machines", "Copes, saddles, holes and cut-offs in round pipe.", False)],
-        faq=[{"q": "Plasma or fiber laser?",
-              "a": "A plasma table costs much less, cuts thicker plate for the money and is simple to run; its cut is wider with a slight bevel and some dross, which is fine for structural, agricultural and repair work. A fiber laser cuts thin and medium sheet faster with a narrow, square, clean edge and small holes — the choice for sheet-metal parts and enclosures. See the fiber laser cutting machines page for the laser line-up."},
-             {"q": "How thick does it cut?",
-              "a": "The plasma source sets the thickness, not the table: a 45 A source cuts about 5/16″ cleanly, 65 A 3/8″, 85 A 1/2″, 100 A 1″ (severance). The 4×4 and 5×10 tables carry plate up to 1″ thick. Tell us your usual and thickest plate and we will match the source."},
-             {"q": "Water table or downdraft table?",
-              "a": "A water table catches the sparks and most of the fumes in water under the plate — simple and quiet; a downdraft table draws the fumes down through the slats into a dust collector and keeps the plate dry. The 4×4 table cuts over water pans, the 5×10 has downdraft collection."},
-             VOLT],
-        related=[{"href": "laser-cutting-machine.html", "label": "Fiber laser cutting machines"}, {"href": "tube-laser-cutting-machine.html", "label": "Tube laser cutting machines"},
-                 {"href": "plate-beveler.html", "label": "Plate bevelers"}, {"href": "shear-cutting.html", "label": "Metal shears"},
-                 {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}],
+                 {"href": "laser-cutting-machine.html", "label": "Fiber laser cutting machines"}],
     ),
     D.P_SHAPE: dict(
         title="Power Hammers & Planishing Hammers for Metal | NovoTech",

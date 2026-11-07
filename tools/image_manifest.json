@@ -59910,91 +59910,6 @@
   },
   "cut": "birefnet"
  },
- "tt-ps": {
-  "alt": "PS-1.5x1320 pneumatic shear, 52\u2033 \u00d7 16 ga, with front gauge arms and the mobile foot pedal",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 760,
-    "file": "img/shears/tt-ps-1200.webp",
-    "bytes": 72544
-   },
-   {
-    "w": 800,
-    "h": 506,
-    "file": "img/shears/tt-ps-800.webp",
-    "bytes": 50848
-   },
-   {
-    "w": 480,
-    "h": 304,
-    "file": "img/shears/tt-ps-480.webp",
-    "bytes": 27482
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 101,
-   "file": "img/shears/tt-ps-thumb.webp",
-   "bytes": 6440
-  },
-  "cut": "birefnet"
- },
- "tt-ps-gauge": {
-  "alt": "Back gauge with indicator on the pneumatic shear",
-  "variants": [
-   {
-    "w": 480,
-    "h": 309,
-    "file": "img/shears/tt-ps-gauge-480.webp",
-    "bytes": 13264
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 103,
-   "file": "img/shears/tt-ps-gauge-thumb.webp",
-   "bytes": 3336
-  }
- },
- "tt-ps-control": {
-  "alt": "Pneumatic control unit \u2014 filter, regulator and lubricator",
-  "variants": [
-   {
-    "w": 480,
-    "h": 315,
-    "file": "img/shears/tt-ps-control-480.webp",
-    "bytes": 13212
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 105,
-   "file": "img/shears/tt-ps-control-thumb.webp",
-   "bytes": 2932
-  }
- },
- "tt-ps-cylinder": {
-  "alt": "Pneumatic cylinder driving the cutting beam",
-  "variants": [
-   {
-    "w": 480,
-    "h": 408,
-    "file": "img/shears/tt-ps-cylinder-480.webp",
-    "bytes": 13118
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 136,
-   "file": "img/shears/tt-ps-cylinder-thumb.webp",
-   "bytes": 3426
-  }
- },
  "tt-ths": {
   "alt": "THS-1320X4 hydraulic shear, 52\u2033 \u00d7 8 ga, with front gauge arms and the mobile foot pedal",
   "variants": [
@@ -82178,7 +82093,7 @@
     "w": 480,
     "h": 622,
     "file": "img/site/pdf-novotech-sheet-metal-shears-2026-480.webp",
-    "bytes": 21288
+    "bytes": 19608
    }
   ],
   "alpha": false,
@@ -82186,7 +82101,7 @@
    "w": 124,
    "h": 160,
    "file": "img/site/pdf-novotech-sheet-metal-shears-2026-thumb.webp",
-   "bytes": 2878
+   "bytes": 2786
   }
  },
  "pdf-novotech-tube-lasers-value-line-2026": {
@@ -83208,56 +83123,6 @@
    "file": "img/guide/rg-stirrup-thumb.webp",
    "bytes": 2248
   }
- },
- "tm-pcp3000e": {
-  "alt": "PCP 300\u00d73000E CNC plasma pipe cutting machine with chucks at both ends",
-  "variants": [
-   {
-    "w": 800,
-    "h": 431,
-    "file": "img/ttmc-more/tm-pcp3000e-800.webp",
-    "bytes": 53938
-   },
-   {
-    "w": 480,
-    "h": 259,
-    "file": "img/ttmc-more/tm-pcp3000e-480.webp",
-    "bytes": 28330
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 86,
-   "file": "img/ttmc-more/tm-pcp3000e-thumb.webp",
-   "bytes": 6774
-  },
-  "cut": "birefnet"
- },
- "tm-pcp6000": {
-  "alt": "PCP 300\u00d76000 CNC plasma pipe cutting machine with ball-transfer cradles",
-  "variants": [
-   {
-    "w": 800,
-    "h": 326,
-    "file": "img/ttmc-more/tm-pcp6000-800.webp",
-    "bytes": 55742
-   },
-   {
-    "w": 480,
-    "h": 196,
-    "file": "img/ttmc-more/tm-pcp6000-480.webp",
-    "bytes": 28610
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 65,
-   "file": "img/ttmc-more/tm-pcp6000-thumb.webp",
-   "bytes": 6140
-  },
-  "cut": "birefnet"
  },
  "tm-pds315h": {
   "alt": "PDS-315H semi-automatic hydraulic cold saw with coolant and hydraulic clamping",
@@ -90117,68 +89982,6 @@
    "h": 160,
    "file": "img/ttmc-more/tm-pbs9-thumb.webp",
    "bytes": 7278
-  },
-  "cut": "birefnet"
- },
- "tm-pc-console": {
-  "alt": "CNC console of the plasma table",
-  "variants": [
-   {
-    "w": 314,
-    "h": 218,
-    "file": "img/ttmc-more/tm-pc-console-314.webp",
-    "bytes": 9214
-   }
-  ],
-  "alpha": false,
-  "thumb": {
-   "w": 160,
-   "h": 111,
-   "file": "img/ttmc-more/tm-pc-console-thumb.webp",
-   "bytes": 2742
-  }
- },
- "tm-pc24": {
-  "alt": "PC 2\u2032\u00d74\u2032 compact CNC plasma table with stepper drives",
-  "variants": [
-   {
-    "w": 480,
-    "h": 590,
-    "file": "img/ttmc-more/tm-pc24-480.webp",
-    "bytes": 36800
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 130,
-   "h": 160,
-   "file": "img/ttmc-more/tm-pc24-thumb.webp",
-   "bytes": 6890
-  },
-  "cut": "birefnet"
- },
- "tm-pc510": {
-  "alt": "PC 5\u2032\u00d710\u2032 CNC plasma table with servo drives, torch height control and downdraft table",
-  "variants": [
-   {
-    "w": 800,
-    "h": 510,
-    "file": "img/ttmc-more/tm-pc510-800.webp",
-    "bytes": 52102
-   },
-   {
-    "w": 480,
-    "h": 306,
-    "file": "img/ttmc-more/tm-pc510-480.webp",
-    "bytes": 29456
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 102,
-   "file": "img/ttmc-more/tm-pc510-thumb.webp",
-   "bytes": 6788
   },
   "cut": "birefnet"
  },

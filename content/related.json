@@ -17,12 +17,10 @@
   "shear-brake-roll-3-in-1": "3-in-1 shear, brake & roll machines",
   "shear-cutting": "Metal shears",
   "hydraulic-shearing-machine": "Hydraulic shears",
-  "sheet-metal-shears": "Sheet metal shears",
   "laser-cutting-machine": "Sheet laser cutters",
   "large-format-plate-laser": "Large-format plate lasers",
   "tube-laser-cutting-machine": "Tube laser cutters",
   "laser-welding-machine": "Laser welding machines",
-  "cnc-plasma-table": "CNC plasma tables",
   "plate-rollers": "Plate rollers",
   "motorized-plate-rollers": "Motorized plate rollers",
   "angle-rolls": "Angle rolls & section benders",
@@ -62,7 +60,8 @@
   "milling-machine": "Milling machines",
   "rebar-bender-and-cutter": "Rebar benders & cutters",
   "pvc-aluminum-window-machines": "Aluminum & PVC window machines",
-  "woodworking-machinery": "Woodworking machinery"
+  "woodworking-machinery": "Woodworking machinery",
+  "mechanical-guillotine-shear": "Mechanical shears"
  },
  "pages": {
   "press-brake": [
@@ -91,7 +90,7 @@
   ],
   "compact-hydraulic-press-brakes": [
    "press-brake-tooling-punch-and-die",
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "corner-notcher",
    "laser-cutting-machine",
    "folder-sheet-metal-brake",
@@ -180,7 +179,7 @@
    "panel-bender"
   ],
   "box-and-pan-brake": [
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "corner-notcher",
    "compact-hydraulic-press-brakes",
    "bead-rollers",
@@ -188,7 +187,7 @@
    "corner-welding-machines"
   ],
   "sheet-metal-hand-brake": [
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "bead-rollers",
    "lock-former",
    "corner-notcher",
@@ -196,7 +195,7 @@
    "circle-cutters-and-seamers"
   ],
   "magnetic-sheet-metal-brake": [
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "bead-rollers",
    "power-hammer",
    "corner-notcher",
@@ -211,14 +210,14 @@
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
   ],
   "roofing-siding-brake": [
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "lock-former",
    "bead-rollers",
    "circle-cutters-and-seamers",
    "corner-notcher"
   ],
   "shear-brake-roll-3-in-1": [
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "motorized-plate-rollers",
    "bead-rollers",
    "power-hammer",
@@ -228,7 +227,6 @@
    "press-brake",
    "folder-sheet-metal-brake",
    "laser-cutting-machine",
-   "cnc-plasma-table",
    "corner-notcher",
    "plate-rollers"
   ],
@@ -236,7 +234,6 @@
    "hydraulic-press-brake",
    "plate-rollers",
    "laser-cutting-machine",
-   "cnc-plasma-table",
    "corner-notcher",
    "plate-beveler"
   ],
@@ -247,21 +244,12 @@
    "laser-cutting-machine",
    "plate-rollers"
   ],
-  "sheet-metal-shears": [
-   "box-and-pan-brake",
-   "sheet-metal-hand-brake",
-   "corner-notcher",
-   "bead-rollers",
-   "compact-hydraulic-press-brakes",
-   "circle-cutters-and-seamers"
-  ],
   "laser-cutting-machine": [
    "press-brake",
    "panel-bender",
    "tube-laser-cutting-machine",
    "laser-welding-machine",
-   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
-   "cnc-plasma-table"
+   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
   ],
   "fiber-laser-cutting-machine": [
    "press-brake",
@@ -275,7 +263,6 @@
    "plate-rollers",
    "plate-beveler",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
-   "cnc-plasma-table",
    "welding-positioners"
   ],
   "sheet-and-tube-laser": [
@@ -316,20 +303,11 @@
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "corner-welding-machines"
   ],
-  "cnc-plasma-table": [
-   "large-format-plate-laser",
-   "plate-beveler",
-   "plate-rollers",
-   "press-brake",
-   "shear-cutting",
-   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
-  ],
   "plate-rollers": [
    "angle-rolls",
    "plate-beveler",
    "welding-positioners",
    "press-brake",
-   "cnc-plasma-table",
    "shear-cutting"
   ],
   "hydraulic-4-roll-plate-rollers": [
@@ -345,12 +323,11 @@
    "plate-beveler",
    "welding-positioners",
    "hydraulic-shearing-machine",
-   "cnc-plasma-table",
    "hydraulic-press-brake"
   ],
   "motorized-plate-rollers": [
    "angle-rolls",
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "bead-rollers",
    "welding-positioners",
    "compact-hydraulic-press-brakes"
@@ -365,14 +342,14 @@
   ],
   "bead-rollers": [
    "sheet-metal-hand-brake",
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "power-hammer",
    "lock-former",
    "circle-cutters-and-seamers",
    "box-and-pan-brake"
   ],
   "lock-former": [
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "box-and-pan-brake",
    "bead-rollers",
    "circle-cutters-and-seamers",
@@ -381,7 +358,7 @@
   ],
   "power-hammer": [
    "bead-rollers",
-   "sheet-metal-shears",
+   "mechanical-guillotine-shear",
    "magnetic-sheet-metal-brake",
    "shear-brake-roll-3-in-1",
    "belt-grinder"
@@ -407,8 +384,7 @@
    "corner-notcher",
    "band-saw",
    "drill-press",
-   "horizontal-press-brake",
-   "cnc-plasma-table"
+   "horizontal-press-brake"
   ],
   "corner-notcher": [
    "shear-cutting",
@@ -429,7 +405,6 @@
   "plate-beveler": [
    "welding-positioners",
    "plate-rollers",
-   "cnc-plasma-table",
    "large-format-plate-laser",
    "hydraulic-shearing-machine",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
@@ -565,8 +540,7 @@
    "band-saw-blades",
    "cnc-machine-tools",
    "milling-machine",
-   "drill-press",
-   "cnc-plasma-table"
+   "drill-press"
   ],
   "affordable-semi-automatic-band-saws": [
    "band-saw-blades",
@@ -621,7 +595,6 @@
   ],
   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding": [
    "laser-cutting-machine",
-   "cnc-plasma-table",
    "press-brake",
    "belt-grinder",
    "corner-grinding-machines",

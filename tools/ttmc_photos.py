@@ -21,12 +21,6 @@ P = "/home/claude/ttmc/img/"
 
 # key: dict(src, crop=(x0,y0,x1,y1), fill=[(x0,y0,x1,y1)…] painted white (printed captions), alt, cutout, up)
 PHOTOS = {
-    # pneumatic shear
-    "tt-ps": dict(src=P + "p56-000.png", crop=(165, 105, 1195, 795), fill=[(95, 440, 325, 492), (55, 598, 665, 835)], cutout=True, up=True,
-                  alt="PS-1.5x1320 pneumatic shear, 52″ × 16 ga, with front gauge arms and the mobile foot pedal"),
-    "tt-ps-gauge": dict(src=P + "p56-000.png", crop=(115, 878, 472, 1108), cutout=False, alt="Back gauge with indicator on the pneumatic shear"),
-    "tt-ps-control": dict(src=P + "p56-000.png", crop=(497, 878, 848, 1108), cutout=False, alt="Pneumatic control unit — filter, regulator and lubricator"),
-    "tt-ps-cylinder": dict(src=P + "p56-000.png", crop=(873, 878, 1215, 1108), cutout=False, alt="Pneumatic cylinder driving the cutting beam"),
     # THS hydraulic shears
     "tt-ths": dict(src=P + "p56-001.png", crop=(195, 105, 1165, 765), cutout=True, up=True,
                    alt="THS-1320X4 hydraulic shear, 52″ × 8 ga, with front gauge arms and the mobile foot pedal"),
