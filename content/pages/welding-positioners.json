@@ -1,22 +1,19 @@
 {
  "slug": "welding-positioners",
  "template": "category.html",
- "family_set": "tubend",
- "title": "Welding Positioners, Tilting, 220 – 661 lb | NovoTech",
- "artifact_title": "Welding positioners — tilting turntables for round welds, 220 to 661 lb",
- "meta_description": "Tilting welding positioners that turn the part under the torch at 1 – 5.5 rpm: NovoTech premium-line WP 100 and WP 300, 120° or 90° tilt, foot pedal, single-phase power.",
- "h1": "Welding positioners — tilting turntables for round welds, 220 to 661 lb",
- "intro": "A welding positioner holds the part on a turntable and turns it under the torch at a steady, adjustable speed, so a round weld on a flange, pipe-to-plate joint, hub, tank head or wheel is laid in one continuous pass in the flat position — no stopping, repositioning and restarting around the part, and a more even bead whether the torch is held by hand or clamped in a holder. Tilting the table brings the joint to the best angle for the torch. NovoTech's premium-line WP 100 and WP 300 are built in Turkey: the WP 100 carries 220 lb on a Ø13-3/4″ table that tilts 120°, the WP 300 661 lb on a Ø18-7/8″ table that tilts 90°. Both turn 360° at 1 to 5.5 rpm, set on the control box and run from the standard foot pedal, with T-slots for clamps and fixtures, an optional 3-jaw lathe chuck and, on the WP 300, a custom fixture plate. They run on single-phase 220 V. Supplied and supported from Mississauga, ON, Canada.",
+ "family_set": "welding-automation",
+ "title": "Welding Positioners for Sale in Canada — Tilting, Rotary & Lift Positioners, 22 to 44,092 lb | NovoTech",
+ "artifact_title": "Welding positioners — benchtop, tilting, heavy, rotary-table and lift positioners, 22 to 44,092 lb",
+ "meta_description": "Welding positioners from 22 to 44,092 lb — benchtop, tilting, heavy, rotary-table, lift and headstock positioners, sold and supported in Canada.",
+ "h1": "Welding positioners — benchtop, tilting, heavy, rotary-table and lift positioners, 22 to 44,092 lb",
+ "intro": "A welding positioner holds the part on a turntable and turns it under the torch at a steady, adjustable speed, so a round weld on a flange, pipe-to-plate joint, hub, tank head or wheel is laid in one continuous pass in the flat position — no stopping, repositioning and restarting around the part, and a more even bead whether the torch is held by hand or clamped in a holder. Tilting the table brings the joint to the best angle for the torch. NovoTech has positioners for every size of part, all on this page, small to large: light and benchtop positioners from 22 to 247 lb, with chucks, hollow bores and foot pedals; the premium-line WP 100 and WP 300 tilting positioners, built in Turkey, 220 and 661 lb on single-phase power; value-line tilting positioners from 485 to 2,646 lb; HBT rotary welding tables and HBJ lift positioners that also adjust in height, to 44,092 lb; heavy tilting positioners from 3,307 to 44,092 lb with motorized tilt; headstock and tailstock, L-type and hydraulic positioners built to order; and the chucks and torch holders that go on them. Each family below has its full specification table and photos. Parts, installation and service from Mississauga, ON, Canada.",
  "hero_points": [
-  "WP 100: 220 lb on a Ø13-3/4″ table, 120° tilt · WP 300: 661 lb on a Ø18-7/8″ table, 90° tilt",
-  "360° rotation at 1 – 5.5 rpm, variable · foot pedal standard · single-phase 220 V",
-  "T-slotted turntable · optional Ø6-1/4″ or Ø7-7/8″ 3-jaw chuck · custom fixture plate (WP 300)"
+  "Light and benchtop positioners 22 – 247 lb · premium-line WP 100 and WP 300 tilting positioners, 220 and 661 lb, single-phase",
+  "Tilting positioners to 2,646 lb · heavy HB and WP positioners to 44,092 lb with motorized tilt",
+  "HBT rotary welding tables and HBJ lift positioners to 44,092 lb · headstock and tailstock positioners built to order"
  ],
- "hero_image": "tb-wp300",
- "hero_image_secondary": [
-  "tb-wp100",
-  "tb-wp300-plate"
- ],
+ "hero_image": "dt-hb",
+ "hero_image_secondary": [],
  "breadcrumb": [
   {
    "label": "Home",
@@ -27,18 +24,82 @@
    "href": "products.html"
   },
   {
-   "label": "Welding positioners — tilting turntables for round welds, 220 to 661 lb"
+   "label": "Welding automation",
+   "href": "welding-automation.html"
+  },
+  {
+   "label": "Welding positioners — benchtop, tilting, heavy, rotary-table and lift positioners, 22 to 44,092 lb"
   }
  ],
- "hero_brand_line": "The TB pipe benders and WP welding positioners are built in Turkey for NovoTech's premium line, with European components. Sold, installed and supported in Canada by NovoTech.",
+ "hero_brand_line": "The WP tilting positioners are built in Turkey for NovoTech's premium line with European components; NovoTech's value-line positioners are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech.",
  "groups": [
   {
-   "id": "tubend-wp-group",
+   "id": "vl-light-group",
+   "title": "Light and benchtop welding positioners · value line",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "dt-hb-light",
+    "tt-wp-bench",
+    "tt-wp-chuck"
+   ]
+  },
+  {
+   "id": "pl-tilt-group",
    "title": "WP tilting welding positioners · premium line",
-   "lead": "Two tilting positioners with variable-speed rotation for MIG, TIG and stick welding of round joints — on the bench or the floor.",
+   "lead": "",
    "brand": "novotech-premium",
    "families": [
     "tubend-wp"
+   ]
+  },
+  {
+   "id": "vl-tilt-group",
+   "title": "Tilting welding positioners · value line",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "tt-wp-tilt",
+    "dt-hb"
+   ]
+  },
+  {
+   "id": "vl-tables-group",
+   "title": "Rotary welding tables and lift positioners · value line",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "dt-hbt",
+    "dt-hbj"
+   ]
+  },
+  {
+   "id": "vl-heavy-group",
+   "title": "Heavy welding positioners · value line",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "tt-wp-heavy",
+    "dt-hb-heavy"
+   ]
+  },
+  {
+   "id": "vl-order-group",
+   "title": "Headstock, tailstock and special positioners · value line, built to order",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "dt-headtail",
+    "dt-special-pos"
+   ]
+  },
+  {
+   "id": "vl-acc-group",
+   "title": "Welding chucks and torch holders · value line",
+   "lead": "",
+   "brand": "novotech",
+   "families": [
+    "tt-wp-acc"
    ]
   }
  ],
@@ -48,34 +109,54 @@
    "a": "It turns the part under a stationary torch at a set speed, so a circumferential weld is made in one pass in the flat position — the easiest position to weld and the one that gives the most even bead. The welder no longer walks around the part or stops to reposition it; with the torch in a holder the travel speed is as steady as the table, which makes repeat parts faster and more uniform."
   },
   {
-   "q": "WP 100 or WP 300?",
-   "a": "By the weight and size of the part. The WP 100 carries 220 lb on its Ø13-3/4″ table (110 lb with the table tilted) and tilts to 120°; the WP 300 carries 661 lb on a Ø18-7/8″ table (331 lb tilted) and tilts to 90°. The ratings are for a part centred on the table: a part whose centre of gravity sits off the table or far above it loads the drive more, so leave margin for long or overhanging parts."
+   "q": "How do I size a positioner for my part?",
+   "a": "By the weight and where its centre of gravity sits. The rating is for the centre of gravity close to the table centre and face: the further it is from the axis (an off-centre bracket) or from the table (a tall part), the more torque the drive and the tilt need. The tables give the limits — the HB positioners up to 3.9 – 9.8″ off the axis and 5.9 – 23.6″ above the table, the heavy WP positioners 12″ and 12″. For off-centre or tall parts choose the next size up, and send us a sketch with the weight."
   },
   {
    "q": "How fast should the table turn?",
-   "a": "Table speed (rpm) = travel speed ÷ (π × weld diameter). Across the WP's 1 – 5.5 rpm, a weld on Ø4″ pipe passes the torch at about 12.6 to 69 in/min and one on a Ø8″ flange at 25 to 138 in/min; set the speed on the control box for the process, wire and joint, and run the table from the foot pedal."
+   "a": "Table speed (rpm) = travel speed ÷ (π × weld diameter). A MIG weld at 20 in/min around a Ø6″ flange needs about 1.1 rpm; a submerged-arc weld at 20 in/min on a Ø60″ tank head about 0.1 rpm. Check that the positioner's speed range covers your smallest and largest weld diameters: the light positioners turn up to 8 – 18 rpm, the heavy ones as slowly as 0.03 rpm."
+  },
+  {
+   "q": "Tilting positioner, rotary table, lift or headstock positioner?",
+   "a": "A tilting positioner turns and tilts the part on a table — the most versatile. A rotary welding table (HBT) only turns, for parts that stand upright: tanks, drums, rings and hubs. A lift positioner (HBJ) also adjusts the table height, so the work comes to the welder or the welding head. Headstock and tailstock positioners turn long parts — beams, columns, frames and shafts — about their own length."
   },
   {
    "q": "What can be mounted on the turntable?",
-   "a": "The table is T-slotted (M10) for clamps, angle plates and fixtures. A 3-jaw lathe chuck of Ø6-1/4″ or Ø7-7/8″ (160 or 200 mm) holds pipe, shafts and round parts; the WP 300 also takes a custom perforated work plate for welding fixtures."
+   "a": "The tables are T-slotted for clamps, angle plates and fixtures. A self-centring 3-jaw welding chuck holds pipe, shafts and round parts on centre — the WPC chucks on this page grip from Ø0.4″ inside to Ø15″ outside — and a torch holder on an adjustable arm keeps the torch in one place while the part turns."
   },
   {
-   "q": "What power do they need?",
-   "a": "Single-phase 220 V — no three-phase supply is needed. The turntable motors are 0.33 HP (WP 100) and 0.5 HP (WP 300), and the foot pedal is standard."
+   "q": "Premium-line or value-line?",
+   "a": "The WP 100 and WP 300 tilting positioners are built in Turkey for NovoTech's premium line and run on single-phase 220 V with a foot pedal. The other positioners, the turning rolls, the column and boom manipulators, the pipe stands and the tables are NovoTech's value line, built in China to NovoTech's specification — with the same CSA-approved panel, 1-year warranty and parts and support in Canada."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
   }
  ],
  "faq_title": "Questions we get asked about welding positioners",
- "catalogue_pdf": {
-  "file": "files/NovoTech-Pipe-Benders-Welding-Positioners-2026.pdf",
-  "label": "Download the NovoTech pipe bender & welding positioner brochure",
-  "size": "PDF · imperial units"
- },
+ "catalogue_pdf": null,
  "origin_feature": {
-  "title": "Made in Turkey for NovoTech",
-  "text": "NovoTech's premium-line pipe benders and welding positioners are built in Turkey to our specification — welded steel frames, hardened dies and simple, robust controls — with a 1-year warranty and parts and technicians in Mississauga, ON, Canada."
+  "title": "Made in Turkey, value line from China",
+  "text": "The WP tilting positioners are built in Turkey for NovoTech's premium line with European components; NovoTech's value line is built in China to our specification. CSA-approved panels, a 1-year warranty and parts and support in Canada."
  },
- "section_label": "Welding positioners",
+ "section_label": "Welding automation",
  "related_pages": [
+  {
+   "href": "welding-turning-rolls.html",
+   "label": "Welding turning rolls"
+  },
+  {
+   "href": "column-and-boom-welding-manipulators.html",
+   "label": "Column and boom welding manipulators"
+  },
+  {
+   "href": "welding-tables.html",
+   "label": "Welding tables and downdraft tables"
+  },
+  {
+   "href": "welding-automation.html",
+   "label": "All welding automation"
+  },
   {
    "href": "pipe-notcher.html",
    "label": "Tube notchers"
@@ -87,20 +168,49 @@
   {
    "href": "laser-welding-machine.html",
    "label": "Laser welding & cladding"
-  },
-  {
-   "href": "horizontal-press-brake.html",
-   "label": "Horizontal press brakes"
-  },
-  {
-   "href": "pipe-benders.html",
-   "label": "Pipe & tube benders"
   }
  ],
- "related_title": "More fabrication machinery from NovoTech",
+ "related_title": "More welding and fabrication machinery from NovoTech",
+ "section": {
+  "label": "Welding automation",
+  "hub": {
+   "href": "welding-automation.html",
+   "label": "All welding automation",
+   "image": "dt-hb",
+   "blurb": "Positioner, turning rolls, column and boom or welding table? Every machine NovoTech sells for moving the work under the torch, with the four kinds compared."
+  },
+  "pages": [
+   {
+    "href": "welding-positioners.html",
+    "label": "Welding positioners",
+    "current": true
+   },
+   {
+    "href": "welding-turning-rolls.html",
+    "label": "Welding turning rolls",
+    "current": false
+   },
+   {
+    "href": "column-and-boom-welding-manipulators.html",
+    "label": "Column & boom manipulators",
+    "current": false
+   },
+   {
+    "href": "welding-tables.html",
+    "label": "Welding tables",
+    "current": false
+   }
+  ]
+ },
  "intro_video": null,
- "intro_video_heading": "Inside the factory — where the machines are built",
- "intro_video_text": "A tour of the ISITAN plant in Bursa, Turkey, where the sheet-metal and tube machinery on these pages has been built since 1959.",
- "catalogue_pdfs": null,
+ "intro_video_heading": null,
+ "intro_video_text": null,
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Pipe-Benders-Welding-Positioners-2026.pdf",
+   "label": "Download the NovoTech pipe bender & welding positioner brochure",
+   "size": "PDF · imperial units"
+  }
+ ],
  "nav_label": "Welding positioners"
 }

@@ -172,7 +172,7 @@ GUIDES = [
       "portable or production welders, laser safety in the shop, and robots and cladding. " + BY,
       "When a laser welder beats TIG and MIG, the power for your thickness, air-cooled or water-cooled welders, laser safety and "
       "robotic cells."),
-    G("welding-positioners", "welding-positioner-guide.html", "Welding positioner and turning roll buying guide", "welding",
+    G("welding-automation", "welding-positioner-guide.html", "Welding positioner and turning roll buying guide", "welding",
       "What we explain to customers before they buy a welding positioner or turning rolls: what each does, the weight and "
       "off-centre load it takes, the table speed formula, chucks, torch holders and grounding, and supports for long work. " + BY,
       "Positioner or turning rolls, rating for weight and off-centre loads, the table speed formula, chucks and torch holders, and "

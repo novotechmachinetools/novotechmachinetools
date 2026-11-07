@@ -383,30 +383,8 @@ EXTRA = {
                   "collector) are wide-belt machines for laser-cut and punched parts.",
         related_add=[{"href": "belt-grinder.html", "label": "Belt grinders and sanders"}],
     ),
-    D2.P_WELD: dict(
-        groups=[("tt-wp-small", "Benchtop and chuck positioners · value line", "Positioners for tube, pipe and small parts from 33 to 247 lb, with chucks, hollow bores and foot pedals — NovoTech value line, built in China.", False, None),
-                ("tt-wp-big", "Tilting and heavy welding positioners · value line", "Turntable positioners from 485 to 8,818 lb with tilt by hand or motor, and the chucks and torch holders that go on them — NovoTech value line, built in China.", False, None),
-                ("tt-rolls", "Welding turning rolls · value line", "Turning rolls that turn pipe, tanks and vessels from Ø1-1/2 to 96″ under the torch — NovoTech value line, built in China.", False, None),
-                ("tt-supports", "Pipe stands and supports", "Outboard supports, pipe stands, pipe jacks and roller stands for fit-up and welding.", True, None),
-                ("tt-weld-tables", "Welding table and downdraft tables", "A fixture table with a 2″ hole grid, and downdraft tables that take grinding dust and welding fumes away from the operator.", True, None)],
-        intro_add="NovoTech's value-line welding equipment, built in China, adds benchtop and chuck positioners from 33 lb, tilting positioners "
-                  "to 1,102 lb and heavy positioners with motorized tilt to 8,818 lb, welding chucks and torch holders, TRS turning rolls for "
-                  "pipe and vessels to 11,023 lb per set, pipe stands, supports and pipe jacks, a fixture welding table and downdraft tables.",
-        points_add=["NovoTech value line: positioners 33 – 8,818 lb with chucks, hollow bores and motorized tilt; TRS turning rolls 2,205 – 11,023 lb",
-                    "Pipe stands and supports to 19,800 lb, the WT-36X24 fixture table and MDT downdraft tables 1,350 – 3,700 CFM"],
-        faq_add=[{"q": "Positioner or turning rolls?",
-                  "a": "A positioner holds the part on a turntable or in a chuck and turns it about its own axis, tilted to bring the joint to the flat position: the machine for flanges, short pipe spools, hubs and parts up to about the size of the table. Turning rolls carry a long round part — pipe, a tank shell, a pressure vessel — on wheels and turn it under the torch: the machine for long and heavy work. Long pipe in a positioner chuck needs an outboard support stand at the far end."},
-                 {"q": "How do I size a positioner for my part?",
-                  "a": "By the weight and where its centre of gravity sits. The rating is for the centre of gravity close to the table centre and face: the further it is from the axis (an off-centre bracket) or from the table (a tall part), the more torque the drive and the tilt need. The heavy WP positioners are rated with the centre of gravity up to 12″ from the table centre and 12″ above it. For off-centre or tall parts choose the next size up, and send us a sketch with the weight."}],
-        related_add=[{"href": "pipe-sanding-polishing-machines.html", "label": "Pipe sanding & polishing"}],
-        set={"title": "Welding Positioners, Turning Rolls & Pipe Stands | NovoTech",
-             "meta_description": "Welding positioners 33 – 8,818 lb, turning rolls to 11,023 lb, pipe stands and supports, a welding table and downdraft tables — NovoTech premium and value lines.",
-             "h1": "Welding positioners, turning rolls, pipe stands and welding tables",
-             "artifact_title": "Welding positioners, turning rolls, pipe stands and welding tables",
-             "faq_title": "Questions we get asked about welding positioners and turning rolls",
-             "breadcrumb": CRUMBS + [{"label": "Welding positioners & turning rolls"}],
-             "hero_brand_line": "The WP tilting positioners are built in Turkey for NovoTech's premium line, with European components; NovoTech's value-line positioners, turning rolls, stands and tables are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
-    ),
+    # D2.P_WELD (welding-positioners): the positioners, turning rolls, stands and tables are on the welding automation pages
+    # now (tools/welding_pages.py, Nov 7 2026)
 }
 
 def group_entry(page_slug, gid, title, lead, manual, fams):

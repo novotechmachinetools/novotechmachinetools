@@ -350,8 +350,26 @@
      "href": "plate-beveler.html"
     },
     {
-     "label": "Welding positioners & turning rolls",
-     "href": "welding-positioners.html"
+     "label": "Welding automation",
+     "href": "welding-automation.html",
+     "children": [
+      {
+       "label": "Welding positioners",
+       "href": "welding-positioners.html"
+      },
+      {
+       "label": "Welding turning rolls",
+       "href": "welding-turning-rolls.html"
+      },
+      {
+       "label": "Column & boom manipulators",
+       "href": "column-and-boom-welding-manipulators.html"
+      },
+      {
+       "label": "Welding & downdraft tables",
+       "href": "welding-tables.html"
+      }
+     ]
     },
     {
      "label": "Corner welders",

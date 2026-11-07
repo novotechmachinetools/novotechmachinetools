@@ -243,7 +243,8 @@ def build():
     shared = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **NO_FACTORY_VIDEO, "catalogue_pdf": pdf(), "catalogue_pdfs": None}
     write_category(D.P_HP, PAGE_HP, fams, SET, "Horizontal press brakes", extra={**shared, "hero_brand_line": HP_BRAND_LINE, "origin_feature": HP_ORIGIN,
                                                                                    "catalogue_pdf": pdf("tubend-hp"), "nav_label": "Horizontal press brakes"})
-    write_category(D.P_WP, PAGE_WP, fams, SET, "Welding positioners", extra={**shared, "nav_label": "Welding positioners"})
+    # welding-positioners.html is written by tools/welding_pages.py now (the welding automation section, Nov 7 2026); the WP 100 /
+    # WP 300 family stays in this set for it
     keys = register_images()
     write_brochure_specs()
     used = {k for f in D.FAMILIES for k in f["images"]} | {PAGE_HP["hero"], PAGE_WP["hero"]} | set(PAGE_HP["minis"]) | set(PAGE_WP["minis"])

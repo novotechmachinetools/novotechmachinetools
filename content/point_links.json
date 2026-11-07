@@ -1238,36 +1238,6 @@
    "novotech-vs"
   ]
  ],
- "welding-positioners": [
-  [
-   "WP 100",
-   "tubend-wp"
-  ],
-  [
-   "WP 300",
-   "tubend-wp"
-  ],
-  [
-   "positioners 33 – 8,818 lb",
-   "tt-wp-bench"
-  ],
-  [
-   "TRS turning rolls",
-   "tt-trs"
-  ],
-  [
-   "Pipe stands and supports to 19,800 lb",
-   "tt-wtr"
-  ],
-  [
-   "WT-36X24 fixture table",
-   "tt-wt3624"
-  ],
-  [
-   "MDT downdraft tables",
-   "tt-mdt"
-  ]
- ],
  "window-assembly-machines": [
   [
    "SÇ 902 hydraulic corner crimper",
@@ -1670,6 +1640,86 @@
   [
    "XM-5 to XM-30 orbital riveters",
    "tt-riveter"
+  ]
+ ],
+ "welding-positioners": [
+  [
+   "Light and benchtop positioners",
+   "dt-hb-light"
+  ],
+  [
+   "WP 100 and WP 300",
+   "tubend-wp"
+  ],
+  [
+   "Tilting positioners to 2,646 lb",
+   "dt-hb"
+  ],
+  [
+   "heavy HB and WP positioners",
+   "dt-hb-heavy"
+  ],
+  [
+   "HBT rotary welding tables",
+   "dt-hbt"
+  ],
+  [
+   "HBJ lift positioners",
+   "dt-hbj"
+  ],
+  [
+   "headstock and tailstock positioners",
+   "dt-headtail"
+  ]
+ ],
+ "welding-turning-rolls": [
+  [
+   "Light DZG and TRS turning rolls",
+   "dt-dzg-light"
+  ],
+  [
+   "DKG bolt-adjustable",
+   "dt-dkg"
+  ],
+  [
+   "DSK lead-screw rolls",
+   "dt-dsk"
+  ],
+  [
+   "DZG self-aligning rolls",
+   "dt-dzg"
+  ],
+  [
+   "GGLJ pinch-type pipe rotators",
+   "dt-pipe-rot"
+  ],
+  [
+   "pipe stands",
+   "tt-wtr"
+  ]
+ ],
+ "column-and-boom-welding-manipulators": [
+  [
+   "Small DLH0810 – DLH2020",
+   "dt-dlh-small"
+  ],
+  [
+   "Medium DLH2030 – DLH4050",
+   "dt-dlh-medium"
+  ],
+  [
+   "heavy DLH5060 – DLH7080",
+   "dt-dlh-heavy"
+  ]
+ ],
+ "welding-tables": [
+  [
+   "WT-36X24 fixture table",
+   "tt-wt3624"
+  ],
+  [
+   "MDT-4840 and MDT-6137 downdraft tables",
+   "tt-mdt"
   ]
  ]
 }

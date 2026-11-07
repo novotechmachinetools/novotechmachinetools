@@ -1,0 +1,271 @@
+{
+ "slug": "welding-automation",
+ "template": "hub.html",
+ "family_set": "welding-automation",
+ "nav_label": "All welding automation",
+ "title": "Welding Automation for Sale in Canada — Positioners, Turning Rolls, Column & Boom, Welding Tables | NovoTech",
+ "artifact_title": "Welding Automation",
+ "meta_description": "Welding positioners 22 – 44,092 lb, turning rolls to 220,462 lb, column and boom manipulators and welding tables — sold, installed and supported in Canada.",
+ "h1": "Welding automation — welding positioners, turning rolls, column and boom manipulators and welding tables",
+ "intro": "Welding automation moves the work, not the welder: the part turns under a fixed torch at the welding speed, so round and long welds are laid in one continuous pass in the flat position, by hand or with an automatic welding head. NovoTech sells four kinds in Canada, each on its own page: welding positioners — tilting turntables, rotary tables, lift positioners and headstock and tailstock positioners from 22 to 44,092 lb; welding turning rolls — light, adjustable and self-aligning rolls for pipe, tanks and vessels from Ø0.8 to 216.5″ and 2,205 to 220,462 lb per set, with pipe and fit-up rotators and pipe stands; column and boom manipulators that carry the welding head over the seam, 31.5 to 275.6″ of lift; and welding tables and downdraft tables. The premium-line WP positioners are built in Turkey, the value line in China. Below, the four kinds compared, every family by line, the buying guide and the questions we get asked; every machine comes with a CSA-approved panel and support from Mississauga, ON, Canada.",
+ "hero_points": [
+  "<a href=\"welding-positioners.html\">Welding positioners</a>: <a href=\"welding-positioners.html#dt-hb-light\">light</a>, <a href=\"welding-positioners.html#tubend-wp\">premium-line WP</a>, <a href=\"welding-positioners.html#dt-hb-heavy\">heavy</a>, <a href=\"welding-positioners.html#dt-hbt\">rotary-table</a> and <a href=\"welding-positioners.html#dt-hbj\">lift</a> positioners, 22 – 44,092 lb",
+  "<a href=\"welding-turning-rolls.html\">Welding turning rolls</a>: <a href=\"welding-turning-rolls.html#dt-dzg\">self-aligning</a> and <a href=\"welding-turning-rolls.html#dt-dkg\">adjustable</a> rolls to 220,462 lb per set, <a href=\"welding-turning-rolls.html#dt-pipe-rot\">pipe and fit-up rotators</a>, <a href=\"welding-turning-rolls.html#tt-wtr\">pipe stands</a>",
+  "<a href=\"column-and-boom-welding-manipulators.html\">Column and boom manipulators</a> 31.5 – 275.6″ lift · <a href=\"welding-tables.html\">welding and downdraft tables</a>"
+ ],
+ "hero_image": "dt-hb",
+ "hero_image_secondary": [
+  "dt-dzg",
+  "dt-dlh-medium"
+ ],
+ "breadcrumb": [
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Products",
+   "href": "products.html"
+  },
+  {
+   "label": "Welding automation"
+  }
+ ],
+ "hero_brand_line": "The premium-line WP positioners are built in Turkey with European components; the value-line positioners, turning rolls, manipulators, stands and tables are built in China — all to NovoTech's specification and sold, installed and supported in Canada by NovoTech.",
+ "subpages": [
+  {
+   "slug": "welding-positioners",
+   "title": "Welding positioners — benchtop, tilting, heavy, rotary-table and lift positioners, 22 to 44,092 lb",
+   "image": "dt-hb",
+   "blurb": "Every positioner on one page, small to large: light and benchtop positioners from 22 lb, premium-line WP tilting positioners, tilting and heavy positioners to 44,092 lb, rotary welding tables, lift and headstock positioners.",
+   "families": [
+    "dt-hb-light",
+    "tt-wp-bench",
+    "tt-wp-chuck",
+    "tubend-wp",
+    "tt-wp-tilt",
+    "dt-hb",
+    "dt-hbt",
+    "dt-hbj",
+    "tt-wp-heavy",
+    "dt-hb-heavy",
+    "dt-headtail",
+    "dt-special-pos",
+    "tt-wp-acc"
+   ],
+   "nav_label": "Welding positioners",
+   "cards_title": "Welding positioners — every family"
+  },
+  {
+   "slug": "welding-turning-rolls",
+   "title": "Welding turning rolls — welding rotators and pipe turning rolls, 2,205 to 220,462 lb per set",
+   "image": "dt-dzg",
+   "blurb": "Light, bolt- and lead-screw adjustable and self-aligning turning rolls for pipe, tanks and vessels to Ø216.5″, pipe and fit-up rotators, and pipe stands and supports.",
+   "families": [
+    "dt-dzg-light",
+    "tt-trs",
+    "dt-dkg",
+    "dt-dsk",
+    "dt-dzg",
+    "dt-pipe-rot",
+    "tt-wtr"
+   ],
+   "nav_label": "Welding turning rolls",
+   "cards_title": "Welding turning rolls — every family"
+  },
+  {
+   "slug": "column-and-boom-welding-manipulators",
+   "title": "Column and boom welding manipulators — 31.5 to 275.6″ lift, 39.4 to 315″ boom",
+   "image": "dt-dlh-medium",
+   "blurb": "Small, medium and heavy manipulators that carry the welding head over the seams of tanks and vessels — fixed, rotating or travelling.",
+   "families": [
+    "dt-dlh-small",
+    "dt-dlh-medium",
+    "dt-dlh-heavy"
+   ],
+   "nav_label": "Column & boom manipulators",
+   "cards_title": "Column and boom welding manipulators — every family"
+  },
+  {
+   "slug": "welding-tables",
+   "title": "Welding tables and downdraft tables — fixture welding table and downdraft grinding tables",
+   "image": "tm-wt3624",
+   "blurb": "The WT-36X24 mobile fixture table with a 2″ hole grid, and MDT downdraft tables that draw dust and fumes down at 1,350 – 3,700 CFM.",
+   "families": [
+    "tt-wt3624",
+    "tt-mdt"
+   ],
+   "nav_label": "Welding tables",
+   "cards_title": "Welding tables and downdraft tables — every family"
+  }
+ ],
+ "range_kind": "table",
+ "range_cols": [
+  "Load",
+  "Table or work Ø",
+  "Speed",
+  "Tilt or travel",
+  "Motor"
+ ],
+ "range_lead": "Every machine of the section in one table. Each row links to the full specification table on its page.",
+ "range_caption": "Welding automation supplied by NovoTech — positioners, turning rolls, column and boom manipulators and welding tables",
+ "range_note": "Loads in lb with kg in brackets.",
+ "faq": [
+  {
+   "q": "Which welding automation do I need?",
+   "a": "By the part. Round parts that fit on a table — flanges, hubs, pipe spools, tank heads — go on a positioner, tilted to bring the joint flat. Long round parts — pipe, tank shells, pressure vessels — turn on turning rolls. Long seams and circumferential seams welded by an automatic head need a column and boom over the part, usually with turning rolls under it. Fit-up, tacking and small parts go on a welding table. Send us the part and the welds and we size the set."
+  },
+  {
+   "q": "Positioner or turning rolls?",
+   "a": "A positioner holds the part on a turntable or in a chuck and turns it about its own axis, tilted to bring the joint to the flat position: the machine for flanges, short pipe spools, hubs and parts up to about the size of the table. Turning rolls carry a long round part — pipe, a tank shell, a pressure vessel — on wheels and turn it under the torch: the machine for long and heavy work. Long pipe in a positioner chuck needs an outboard support stand at the far end."
+  },
+  {
+   "q": "What does a column and boom do?",
+   "a": "It holds the welding head on a boom that moves up and down the column and in and out over the part, and feeds it along the seam at the welding speed: longitudinal seams of tanks and pipe and, with turning rolls under the part, circumferential seams inside and outside. The column turns ±180° and, on the travelling versions, the carriage runs on rails along the work."
+  },
+  {
+   "q": "How do I size a positioner for my part?",
+   "a": "By the weight and where its centre of gravity sits. The rating is for the centre of gravity close to the table centre and face: the further it is from the axis (an off-centre bracket) or from the table (a tall part), the more torque the drive and the tilt need. The tables give the limits — the HB positioners up to 3.9 – 9.8″ off the axis and 5.9 – 23.6″ above the table, the heavy WP positioners 12″ and 12″. For off-centre or tall parts choose the next size up, and send us a sketch with the weight."
+  },
+  {
+   "q": "Premium-line or value-line?",
+   "a": "The WP 100 and WP 300 tilting positioners are built in Turkey for NovoTech's premium line and run on single-phase 220 V with a foot pedal. The other positioners, the turning rolls, the column and boom manipulators, the pipe stands and the tables are NovoTech's value line, built in China to NovoTech's specification — with the same CSA-approved panel, 1-year warranty and parts and support in Canada."
+  },
+  {
+   "q": "What voltage do these machines run on?",
+   "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."
+  }
+ ],
+ "faq_title": "Questions we get asked about welding automation",
+ "catalogue_pdf": null,
+ "origin_feature": {
+  "title": "Four kinds, two lines, one supplier",
+  "text": "Positioners, turning rolls, column and boom manipulators and welding tables from NovoTech's premium line, built in Turkey, and its value line, built in China — installed, trained and supported by the same NovoTech technicians in Canada."
+ },
+ "section_label": "Welding automation",
+ "related_blurb": "Positioner, turning rolls, column and boom or welding table? Every machine NovoTech sells for moving the work under the torch, with the four kinds compared.",
+ "related_pages": [
+  {
+   "href": "corner-welding-machines.html",
+   "label": "Corner welders"
+  },
+  {
+   "href": "laser-welding-machine.html",
+   "label": "Laser welding & cladding"
+  },
+  {
+   "href": "plate-rollers.html",
+   "label": "Plate rollers"
+  },
+  {
+   "href": "plate-beveler.html",
+   "label": "Plate bevelers"
+  }
+ ],
+ "intro_video": null,
+ "intro_video_heading": null,
+ "intro_video_text": null,
+ "catalogue_pdfs": [
+  {
+   "file": "files/NovoTech-Pipe-Benders-Welding-Positioners-2026.pdf",
+   "label": "Download the NovoTech pipe bender & welding positioner brochure",
+   "size": "PDF · imperial units"
+  }
+ ],
+ "range_pick": [
+  [
+   "rated_load",
+   "load_horizontal_vertical",
+   "nominal_load_capacity",
+   "load_per_set",
+   "load_max",
+   "vertical_travel"
+  ],
+  [
+   "worktable_diameter",
+   "table_diameter",
+   "table_chuck",
+   "work_diameter",
+   "table",
+   "boom_travel"
+  ],
+  [
+   "rotation_speed",
+   "table_rotation",
+   "surface_speed",
+   "linear_speed",
+   "column_rotation_speed",
+   "air_flow"
+  ],
+  [
+   "tilt",
+   "boom_feed_speed",
+   "holes",
+   "filtration"
+  ],
+  [
+   "rotation_motor",
+   "motor",
+   "turntable_motor",
+   "weight"
+  ]
+ ],
+ "related_title": "More welding and fabrication machinery from NovoTech",
+ "hub_compact": true,
+ "compare": {
+  "title": "Which kind of welding automation?",
+  "lead": "The four kinds NovoTech sells, side by side; each page lists every model of its kind.",
+  "cols": [
+   "",
+   "Welding positioners",
+   "Turning rolls",
+   "Column & boom",
+   "Welding tables"
+  ],
+  "rows": [
+   [
+    "What it does",
+    "Turns and tilts the part on a table, or between a headstock and tailstock",
+    "Turns round work on wheels under the torch",
+    "Carries the welding head over the seam on a boom",
+    "Holds parts for fit-up and welding; downdraft tables draw off dust and fumes"
+   ],
+   [
+    "Typical work",
+    "Flanges, hubs, pipe spools, tank heads, weldments",
+    "Pipe, tank shells, pressure vessels",
+    "Longitudinal and circumferential seams of tanks and vessels",
+    "Fit-up, tacking, grinding and welding small parts"
+   ],
+   [
+    "Range",
+    "22 – 44,092 lb",
+    "2,205 – 220,462 lb per set · Ø0.8 – 216.5″",
+    "31.5 – 275.6″ lift · 39.4 – 315″ boom",
+    "36 × 24″ table · 1,350 – 3,700 CFM"
+   ],
+   [
+    "Page",
+    {
+     "href": "welding-positioners.html",
+     "label": "Welding positioners"
+    },
+    {
+     "href": "welding-turning-rolls.html",
+     "label": "Welding turning rolls"
+    },
+    {
+     "href": "column-and-boom-welding-manipulators.html",
+     "label": "Column & boom manipulators"
+    },
+    {
+     "href": "welding-tables.html",
+     "label": "Welding tables"
+    }
+   ]
+  ]
+ },
+ "subpage_link": "all models, specifications and photos",
+ "lineup_noun": "welding automation equipment",
+ "related_title_": "More welding automation from NovoTech"
+}

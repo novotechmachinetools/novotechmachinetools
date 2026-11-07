@@ -32,7 +32,7 @@
   "corner-notcher": "Corner notchers",
   "hydraulic-press": "Hydraulic press",
   "plate-beveler": "Plate bevelers",
-  "welding-positioners": "Welding positioners & turning rolls",
+  "welding-positioners": "Welding positioners",
   "drill-press": "Drill presses",
   "pipe-benders": "Pipe & tube benders",
   "pipe-notcher": "Tube notchers",
@@ -68,7 +68,11 @@
   "c-frame-hydraulic-press": "C-frame hydraulic presses",
   "hydraulic-straightening-press": "Hydraulic straightening presses",
   "riveting-machine": "Orbital riveting machines",
-  "tube-end-deburring-machine": "Tube end deburring machines"
+  "tube-end-deburring-machine": "Tube end deburring machines",
+  "welding-automation": "Welding automation",
+  "welding-turning-rolls": "Welding turning rolls",
+  "column-and-boom-welding-manipulators": "Column & boom manipulators",
+  "welding-tables": "Welding & downdraft tables"
  },
  "pages": {
   "press-brake": [
@@ -267,7 +271,7 @@
    "plate-rollers",
    "plate-beveler",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
-   "welding-positioners"
+   "welding-automation"
   ],
   "sheet-and-tube-laser": [
    "press-brake",
@@ -302,7 +306,7 @@
   "laser-welding-machine": [
    "laser-cutting-machine",
    "tube-laser-cutting-machine",
-   "welding-positioners",
+   "welding-automation",
    "press-brake",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "corner-welding-machines"
@@ -310,14 +314,14 @@
   "plate-rollers": [
    "angle-rolls",
    "plate-beveler",
-   "welding-positioners",
+   "welding-automation",
    "press-brake",
    "shear-cutting"
   ],
   "hydraulic-4-roll-plate-rollers": [
    "angle-rolls",
    "plate-beveler",
-   "welding-positioners",
+   "welding-automation",
    "hydraulic-shearing-machine",
    "large-format-plate-laser",
    "hydraulic-press-brake"
@@ -325,7 +329,7 @@
   "hydraulic-3-roll-plate-rollers": [
    "angle-rolls",
    "plate-beveler",
-   "welding-positioners",
+   "welding-automation",
    "hydraulic-shearing-machine",
    "hydraulic-press-brake"
   ],
@@ -333,7 +337,7 @@
    "angle-rolls",
    "mechanical-guillotine-shear",
    "bead-rollers",
-   "welding-positioners",
+   "welding-automation",
    "compact-hydraulic-press-brakes"
   ],
   "angle-rolls": [
@@ -361,7 +365,7 @@
   ],
   "circle-cutters-and-seamers": [
    "plate-rollers",
-   "welding-positioners",
+   "welding-automation",
    "plate-beveler",
    "shear-cutting",
    "bead-rollers",
@@ -396,23 +400,15 @@
    "ironworker-machines",
    "hydraulic-punching-machines",
    "drill-press",
-   "welding-positioners",
+   "welding-automation",
    "plate-rollers"
   ],
   "plate-beveler": [
-   "welding-positioners",
+   "welding-automation",
    "plate-rollers",
    "large-format-plate-laser",
    "hydraulic-shearing-machine",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
-  ],
-  "welding-positioners": [
-   "plate-rollers",
-   "plate-beveler",
-   "laser-welding-machine",
-   "pipe-notcher",
-   "pipe-benders",
-   "belt-grinder"
   ],
   "drill-press": [
    "milling-machine",
@@ -458,7 +454,7 @@
    "rotary-draw-tube-benders",
    "circular-cold-saws",
    "band-saw",
-   "welding-positioners",
+   "welding-automation",
    "belt-grinder"
   ],
   "tube-end-forming-machines": [
@@ -706,6 +702,38 @@
    "tube-end-forming-machines",
    "circular-cold-saws",
    "belt-grinder"
+  ],
+  "welding-automation": [
+   "plate-rollers",
+   "plate-beveler",
+   "laser-welding-machine",
+   "pipe-notcher",
+   "corner-welding-machines"
+  ],
+  "welding-positioners": [
+   "plate-beveler",
+   "laser-welding-machine",
+   "pipe-notcher",
+   "pipe-benders",
+   "belt-grinder"
+  ],
+  "welding-turning-rolls": [
+   "plate-rollers",
+   "plate-beveler",
+   "pipe-notcher",
+   "laser-welding-machine"
+  ],
+  "column-and-boom-welding-manipulators": [
+   "plate-rollers",
+   "plate-beveler",
+   "laser-welding-machine",
+   "corner-welding-machines"
+  ],
+  "welding-tables": [
+   "belt-grinder",
+   "pipe-notcher",
+   "corner-grinding-machines",
+   "laser-welding-machine"
   ]
  }
 }
