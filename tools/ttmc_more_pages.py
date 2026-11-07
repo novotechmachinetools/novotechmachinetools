@@ -213,6 +213,7 @@ PAGES = {
                 "T5025 / T4025 compact gear-head drill presses: 1″ in steel, table tilting ±50°, forward / reverse, preset depth",
                 "TX530 inverter drill presses with two-range gearbox; TB column drills, belt drive or stepless by frequency converter"],
         hero="tm-t50e", minis=["tm-t25", "tm-tbv"],
+        hero_width=340,          # the hero photo at half size (the other session, Nov 7 2026, set in the page JSON)
         groups=[("gear", "Gear-head drill presses", "Speeds through a gearbox — no belts to move — with the torque for large holes and tapping, from 1″ to 2″ in steel.", False),
                 ("column", "Column drills — belt drive and inverter", "Industrial column drills with a digital speed display; the V models with stepless speed on single-phase power.", False)],
         faq=[{"q": "Gear-head or belt-drive drill press?",
@@ -474,6 +475,8 @@ def write_page(slug, p, fams):
         "catalogue_pdf": page_pdf(slug), "origin_feature": ORIGIN, "section_label": p["nav"],
         "related_pages": p["related"], "related_title": "More machinery from NovoTech", **NO_VIDEO,
     }
+    if p.get("hero_width"):
+        page["hero_width"] = p["hero_width"]
     if section:
         page["section"] = section
         page["section_label"] = section["label"]
