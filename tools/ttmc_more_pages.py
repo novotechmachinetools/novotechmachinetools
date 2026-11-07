@@ -337,19 +337,6 @@ PAGES = {
 # groups: (group id, title, lead, manual?, after group id or None)
 VL = "NovoTech value line"
 EXTRA = {
-    D2.P_COLD: dict(
-        groups=[("tt-cold", "Cold saws · value line", "NovoTech's value-line cold saws, built in China: manual gear-driven cold saws with 9 – 14″ blades, a semi-automatic hydraulic saw and a 16″ heavy-duty saw.", False, None),
-                ("tt-abrasive", "Abrasive cut-off saws · value line", "Fast square and miter cuts in steel tube, pipe and profiles with 12 – 16″ abrasive wheels.", False, None),
-                ("tt-stands", "Roller stands, roller conveyors and roller tables", "Material support for every saw, shear and brake — stands with side rollers, a conveyor with a digital length stop and a measuring roller table.", True, None)],
-        intro_add="NovoTech's value-line cold saws, built in China, add gear-driven manual saws with 9 – 14″ blades, a semi-automatic hydraulic "
-                  "saw, a 16″ heavy-duty saw and abrasive cut-off saws, plus roller stands, a roller conveyor with a digital length stop and a "
-                  "measuring roller table.",
-        points_add=["NovoTech value line: CS cold saws 9 – 14″, PDS-315H semi-automatic hydraulic, PDS-400 heavy-duty 16″, TV abrasive saws 12 – 16″"],
-        faq_add=[{"q": "Cold saw or abrasive cut-off saw?",
-                  "a": "A cold saw cuts with a toothed HSS or carbide blade at low speed: a square, burr-free cut that is ready to weld, no sparks and no heat in the part, but the blade must suit the material. An abrasive saw grinds through with a 12 – 16″ wheel at high speed: a lower price, any steel including hardened, but a hot part, sparks, a burr and wheels that wear quickly. For production cutting of tube and profiles choose a cold saw; for occasional cutting of mixed steel the abrasive saw."}],
-        related_add=[{"href": "band-saw.html", "label": "Band saws"}, {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}],
-        set={"hero_brand_line": "ISITAN circular cold saws are made in Turkey by ISITAN Makine, the CT325 in Taiwan by CSM and the automatic BMDO saws by Bekamak Makina, Turkey; NovoTech's value-line cold saws are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
-    ),
     D2.P_ALU: dict(
         groups=[("tt-alu", "Aluminum cut-off saws · value line", "16″ and 20″ pneumatic-clamping saws for aluminum profiles — NovoTech value line, built in China.", False, None)],
         intro_add="For the shop that cuts aluminum profiles now and then, the NovoTech value-line QCS-400 is a 16″ saw with pneumatic clamping "

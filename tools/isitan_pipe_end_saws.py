@@ -1,6 +1,6 @@
 """ISITAN section: pipe-end processing (PN notchers, SFF end formers; catalogue pages 50–51)
-and SFC circular cold saws (pages 52–53) — three category pages: tube notchers (old-site URL pipe-notcher kept),
-tube end forming machines, cold saws."""
+and SFC circular cold saws (pages 52–53) — two category pages: tube notchers (old-site URL pipe-notcher kept) and
+tube end forming machines; the cold saw families are written here and their pages by tools/cold_saw_pages.py."""
 from isitan_lib import *  # noqa: F401,F403
 from bekamak_extra import CIRCULAR_FAMILIES, CIRCULAR_IMAGES  # noqa: E402  (Bekamak BMDO saws share the cold saw page)
 import wecotech_data  # Wecotech (Switzerland) tube end formers share the tube end forming page
@@ -210,7 +210,7 @@ PAGES = {
              VOLT_FAQ_GENERIC],
         faq_title="Questions we get asked about tube end formers",
     ),
-    P_SAW: dict(
+    P_SAW: dict(      # not written any more — tools/cold_saw_pages.py (hub + cold saws + automatic cold saws, Nov 7 2026); kept as the source copy
         title="Cold Saws — Circular & CNC Carbide Cold Saws | NovoTech",
         meta="Cold saws from a 10-3/4″ manual circular saw to automatic HSS and carbide production saws: wet cutting, burr-free ends, tube and bar to Ø6-1/4″ — solid bar to Ø11-3/4″ on the OPUS 300 — servo feed.",
         h1="Cold saws — circular cold saws, manual to CNC carbide",
@@ -288,8 +288,5 @@ def build():
                    extra={"nav_label": "Tube end formers", "catalogue_pdf": None, "catalogue_pdfs": [PDF, CSM.pdf("csm-ef"), PDF_WT],
                           "hero_brand_line": "ISITAN end formers are made in Turkey by ISITAN Makine, the CSM machines in Taiwan by Chiao Sheng Machinery and the Wecotech machines in Switzerland by Wecotech AG. All sold, installed and supported in Canada by NovoTech.",
                           "origin_feature": {"title": "Made in Turkey, Taiwan and Switzerland", "text": "ISITAN has built sheet-metal and tube machinery in Bursa since 1959; CSM has built tube benders and end formers in Tainan since 1982; Wecotech AG builds tube end forming machines in Switzerland for the exhaust, ventilation and automotive industries — CE-certified, with Siemens controls and Bosch Rexroth hydraulics and servo drives."}})
-    write_category(P_SAW, {**PAGES[P_SAW], "related_pages": related_saw, "related_title": "More cutting machinery from NovoTech"}, FAMILIES + CSM_FAMILIES, SET, SECTION,
-                   extra={"nav_label": "Cold saws", "catalogue_pdf": None, "catalogue_pdfs": [PDF, CSM.pdf("csm-ct325"), PDF_BK],
-                          "hero_brand_line": "ISITAN circular cold saws are made in Turkey by ISITAN Makine, the CT325 in Taiwan by CSM and the automatic BMDO saws by Bekamak Makina, Turkey. All sold, installed and supported in Canada by NovoTech.",
-                          "origin_feature": {"title": "Made in Turkey and Taiwan", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959, CSM tube machinery in Tainan since 1982 and Bekamak saws since 1990 — CE-certified machines with European components."}})
+    # the cold saws are a hub with two pages since Nov 7 2026 (the owner): tools/cold_saw_pages.py writes them from this family set
     return IMAGES

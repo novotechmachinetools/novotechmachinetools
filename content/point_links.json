@@ -256,44 +256,6 @@
    "tt-hcs"
   ]
  ],
- "circular-cold-saws": [
-  [
-   "Manual and semi-automatic circular cold saws",
-   "isitan-sfc-350-vx"
-  ],
-  [
-   "Automatic carbide cold saws",
-   "bekamak-bmdo-xs"
-  ],
-  [
-   "OPUS 300",
-   "bekamak-opus-300"
-  ],
-  [
-   "CSM CT325",
-   "csm-ct325"
-  ],
-  [
-   "Bekamak BMDO CS",
-   "bekamak-bmdo-cs"
-  ],
-  [
-   "CS cold saws 9 – 14″",
-   "tt-cs"
-  ],
-  [
-   "PDS-315H semi-automatic hydraulic",
-   "tt-pds315h"
-  ],
-  [
-   "PDS-400 heavy-duty 16″",
-   "tt-pds400"
-  ],
-  [
-   "TV abrasive saws 12 – 16″",
-   "tt-tv"
-  ]
- ],
  "cnc-lathe": [
   [
    "TTC-6 / TTC-8",
@@ -1626,6 +1588,54 @@
   [
    "Portable 110/220 V single-phase units for the job site",
    "rebar-bender.html#Protable-rebar-bender-MG-BT-A-series"
+  ]
+ ],
+ "cold-saws": [
+  [
+   "ISITAN SFC 275 / 315 pull-down saws",
+   "isitan-sfc-v"
+  ],
+  [
+   "SFC 350-VX semi-automatic",
+   "isitan-sfc-350-vx"
+  ],
+  [
+   "CS cold saws 9 – 14″",
+   "tt-cs"
+  ],
+  [
+   "PDS-315H semi-automatic hydraulic",
+   "tt-pds315h"
+  ],
+  [
+   "PDS-400 heavy-duty 16″",
+   "tt-pds400"
+  ],
+  [
+   "TV abrasive saws 12 – 16″",
+   "tt-tv"
+  ],
+  [
+   "Roller stands",
+   "tt-stand"
+  ]
+ ],
+ "automatic-cold-saws": [
+  [
+   "CSM CT325",
+   "csm-ct325"
+  ],
+  [
+   "Bekamak BMDO XS carbide saws",
+   "bekamak-bmdo-xs"
+  ],
+  [
+   "OPUS 300",
+   "bekamak-opus-300"
+  ],
+  [
+   "Bekamak BMDO CS HSS saws",
+   "bekamak-bmdo-cs"
   ]
  ]
 }

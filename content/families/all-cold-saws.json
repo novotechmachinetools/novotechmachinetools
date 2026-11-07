@@ -1,0 +1,2609 @@
+{
+ "order": [
+  "isitan-sfc-350-vx",
+  "isitan-sfc-v",
+  "tt-cs",
+  "tt-pds315h",
+  "tt-pds400",
+  "tt-tv",
+  "tt-stand",
+  "csm-ct325",
+  "bekamak-bmdo-xs",
+  "bekamak-bmdo-cs",
+  "bekamak-opus-300"
+ ],
+ "families": {
+  "isitan-sfc-350-vx": {
+   "id": "isitan-sfc-350-vx",
+   "name": "SFC 350-VX — semi-automatic circular cold saw",
+   "short": "SFC 350-VX",
+   "models_label": "SFC 350-VX · 13-3/4″ blade",
+   "summary": "A semi-automatic cold saw for short batch runs: foot-switch actuation, hydro-pneumatic head descent with a cutting-speed regulator and head stroke set to the material, so the operator loads and the saw cuts. Heavy-duty double gearbox, cast-iron base, two blade speeds and mitre cuts 45° each way — Ø4-1/2″ round and 3-7/8″ square mild steel on a 13-3/4″ HSS blade, burr-free and ready to weld.",
+   "features": [
+    "Semi-automatic cycle: foot-switch actuation, hydro-pneumatic head descent with cutting-speed regulator; head stroke adjustable to material size",
+    "Heavy-duty double gearbox; cast-iron base; two blade speeds 45 / 80 rpm",
+    "Mitre cuts 45° right to 45° left; self-centering double split vise grips both sides of the material",
+    "Wet-type cold sawing for clean, burr-free cuts; coolant pump and tank",
+    "24 V control voltage; CSA-approved panel; air supply 85 psi (8.5 cfm)"
+   ],
+   "optional": [
+    "Saw blades for specific materials — TiN for medium-hard steel, TiCN for high-strength steel, TiAlN for stainless",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
+   ],
+   "images": [
+    "is-sfc-350-vx"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFC circular cold saws",
+      "sub": "Cutting capacities at 90° / 45°",
+      "models": [
+       "SFC 350-VX"
+      ],
+      "rows": [
+       {
+        "label": "Blade Ø",
+        "sub": "",
+        "cells": [
+         "13-3/4″ (350 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round — 90° / 45°",
+        "sub": "mild steel",
+        "cells": [
+         "Ø4-1/2″ / Ø4-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 90°",
+        "sub": "",
+        "cells": [
+         "3-7/8″ × 3-7/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 45°",
+        "sub": "",
+        "cells": [
+         "3-1/2″ × 3-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 90°",
+        "sub": "",
+        "cells": [
+         "4-3/4″ × 3-1/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 45°",
+        "sub": "",
+        "cells": [
+         "3-1/2″ × 3-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mitre range",
+        "sub": "",
+        "cells": [
+         "0 – 45° left and right"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speeds",
+        "sub": "two-speed",
+        "cells": [
+         "45 / 80 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Saw motor",
+        "sub": "",
+        "cells": [
+         "2.4 – 3.0 HP (1.8 – 2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "incl. 0.08 HP coolant pump",
+        "cells": [
+         "7.8 HP (5.8 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "32 mm / 2 × Ø11 mm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "43 × 24 × 55″ (1100 × 600 × 1400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Net weight",
+        "sub": "",
+        "cells": [
+         "661 lb (300 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFC 350-VX",
+      "glance": [
+       "13-3/4″",
+       "Ø4-1/2″ · Ø4-3/8″ at 45°",
+       "3-7/8″",
+       "7.8 HP",
+       "661 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "installed_power",
+     "weight"
+    ],
+    "caps": {
+     "SFC 350-VX": "13-3/4″ blade · Ø4-1/2″ round · semi-automatic",
+     "SFC 315-VP": "12-1/2″ blade · Ø4-1/8″ round · pneumatic vise",
+     "SFC 275-VP": "10-3/4″ blade · Ø3-3/8″ round · pneumatic vise",
+     "SFC 315-V": "12-1/2″ blade · Ø4-1/8″ round · manual vise",
+     "SFC 275-V": "10-3/4″ blade · Ø3-3/8″ round · manual vise"
+    },
+    "note": "Cutting capacities are for mild steel at 90° and 45°. Wet-type cold sawing with the standard coolant pump; TiN, TiCN and TiAlN-coated HSS blades are available for medium-hard, high-strength and stainless steel. Air supply for the SFC 350-VX: 85 psi, 8.5 cfm."
+   },
+   "headline": "13-3/4″ blade · Ø4-1/2″ round · semi-automatic, 45 / 80 rpm",
+   "brand": "isitan",
+   "group": "semi"
+  },
+  "isitan-sfc-v": {
+   "id": "isitan-sfc-v",
+   "name": "SFC 275 / 315-VP · SFC 275 / 315-V — circular cold saws with pneumatic or manual vise",
+   "short": "SFC VP · V",
+   "models_label": "SFC 275-VP · 315-VP · 275-V · 315-V",
+   "summary": "Pull-down circular cold saws with a 10-3/4″ or 12-1/2″ blade, two speeds and mitre cuts 45° left and right: the VP models clamp with an air-operated vise, the V models with a manual vise. Low-voltage start/stop trigger in the handle, a robust double-hinged pivot, a double split vise that grips both sides of the cut and a large base for stability — the metal cutting saw for tube, bar and profile in the fabrication shop, with a clean, burr-free cut the band saw cannot match.",
+   "features": [
+    "SFC VP: air-operated material vise; SFC V: manually operated vise",
+    "Low-voltage start/stop trigger in the pull-down handle; robust double-hinged pivot",
+    "Mitre cuts 45° left and right; double split vise grips both sides of the material; self-centering vise optimizes the cutting position",
+    "Two blade speeds 45 / 90 rpm; wet-type cold sawing for burr-free cuts; coolant pump and tank",
+    "Large base for stability; 24 V control voltage; CSA-approved panel"
+   ],
+   "optional": [
+    "Saw blades for specific materials — TiN for medium-hard steel, TiCN for high-strength steel, TiAlN for stainless",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240 V single-phase on models with a main motor of 2.2 kW (3 HP) or less"
+   ],
+   "images": [
+    "is-sfc-315-vp",
+    "is-sfc-275-v"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "SFC circular cold saws",
+      "sub": "Cutting capacities at 90° / 45°",
+      "models": [
+       "SFC 275-VP",
+       "SFC 315-VP",
+       "SFC 275-V",
+       "SFC 315-V"
+      ],
+      "rows": [
+       {
+        "label": "Blade Ø",
+        "sub": "",
+        "cells": [
+         "10-3/4″ (275 mm)",
+         "12-1/2″ (315 mm)",
+         "10-3/4″ (275 mm)",
+         "12-1/2″ (315 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round — 90° / 45°",
+        "sub": "mild steel",
+        "cells": [
+         "Ø3-3/8″ / Ø2-3/4″",
+         "Ø4-1/8″ / Ø3-1/2″",
+         "Ø3-3/8″ / Ø2-3/4″",
+         "Ø4-1/8″ / Ø3-1/2″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 90°",
+        "sub": "",
+        "cells": [
+         "2-3/4″ × 2-3/4″",
+         "3-3/8″ × 3-3/8″",
+         "2-3/4″ × 2-3/4″",
+         "3-3/8″ × 3-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Square — 45°",
+        "sub": "",
+        "cells": [
+         "2-3/8″ × 2-3/8″",
+         "3-1/8″ × 3-1/8″",
+         "2-3/8″ × 2-3/8″",
+         "3-1/8″ × 3-1/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 90°",
+        "sub": "",
+        "cells": [
+         "3-3/4″ × 2-3/8″",
+         "4-3/4″ × 2-3/8″",
+         "3-3/4″ × 2-3/8″",
+         "4-3/4″ × 2-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular — 45°",
+        "sub": "",
+        "cells": [
+         "2-3/4″ × 2-1/8″",
+         "3-1/2″ × 2-3/8″",
+         "2-3/4″ × 2-1/8″",
+         "3-1/2″ × 2-3/8″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Mitre range",
+        "sub": "",
+        "cells": [
+         "0 – 45° left and right",
+         "0 – 45° left and right",
+         "0 – 45° left and right",
+         "0 – 45° left and right"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speeds",
+        "sub": "two-speed",
+        "cells": [
+         "45 / 90 rpm",
+         "45 / 90 rpm",
+         "45 / 90 rpm",
+         "45 / 90 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Saw motor",
+        "sub": "",
+        "cells": [
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)",
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)",
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)",
+         "1.7 – 2.4 HP (1.3 – 1.8 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "incl. 0.08 HP coolant pump",
+        "cells": [
+         "5.0 HP (3.7 kW)",
+         "6.3 HP (4.7 kW)",
+         "5.0 HP (3.7 kW)",
+         "6.3 HP (4.7 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "32 mm / 2 × Ø11 mm",
+         "32 mm / 2 × Ø11 mm",
+         "32 mm / 2 × Ø11 mm",
+         "32 mm / 2 × Ø11 mm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)",
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)",
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)",
+         "39 × 24 × 55″ (1000 × 600 × 1400 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Net weight",
+        "sub": "",
+        "cells": [
+         "463 lb (210 kg)",
+         "441 lb (200 kg)",
+         "419 lb (190 kg)",
+         "441 lb (200 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "SFC 275-VP",
+      "glance": [
+       "10-3/4″",
+       "Ø3-3/8″ · Ø2-3/4″ at 45°",
+       "2-3/4″",
+       "5.0 HP",
+       "463 lb"
+      ]
+     },
+     {
+      "name": "SFC 315-VP",
+      "glance": [
+       "12-1/2″",
+       "Ø4-1/8″ · Ø3-1/2″ at 45°",
+       "3-3/8″",
+       "6.3 HP",
+       "441 lb"
+      ]
+     },
+     {
+      "name": "SFC 275-V",
+      "glance": [
+       "10-3/4″",
+       "Ø3-3/8″ · Ø2-3/4″ at 45°",
+       "2-3/4″",
+       "5.0 HP",
+       "419 lb"
+      ]
+     },
+     {
+      "name": "SFC 315-V",
+      "glance": [
+       "12-1/2″",
+       "Ø4-1/8″ · Ø3-1/2″ at 45°",
+       "3-3/8″",
+       "6.3 HP",
+       "441 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "installed_power",
+     "weight"
+    ],
+    "caps": {
+     "SFC 350-VX": "13-3/4″ blade · Ø4-1/2″ round · semi-automatic",
+     "SFC 315-VP": "12-1/2″ blade · Ø4-1/8″ round · pneumatic vise",
+     "SFC 275-VP": "10-3/4″ blade · Ø3-3/8″ round · pneumatic vise",
+     "SFC 315-V": "12-1/2″ blade · Ø4-1/8″ round · manual vise",
+     "SFC 275-V": "10-3/4″ blade · Ø3-3/8″ round · manual vise"
+    },
+    "note": "Cutting capacities are for mild steel at 90° and 45°. Wet-type cold sawing with the standard coolant pump; TiN, TiCN and TiAlN-coated HSS blades are available for medium-hard, high-strength and stainless steel."
+   },
+   "headline": "10-3/4″ and 12-1/2″ blades · Ø3-3/8″ and Ø4-1/8″ round · pneumatic or manual vise",
+   "brand": "isitan",
+   "group": "manual"
+  },
+  "tt-cs": {
+   "id": "tt-cs",
+   "brand": "novotech",
+   "name": "CS cold saws, 9 – 14″ blade, cut Ø2-3/8 – 4-3/4″",
+   "short": "CS cold saws",
+   "models_label": "CS-225 – CS-350 · 5 models",
+   "summary": "Gear-driven cold saws for clean, burr-free cuts in tube, bar and profiles. The CS-225, CS-250 and CS-275 run a 9 – 11″ blade at 42 – 46 rpm through a gearbox in an oil bath, with a 24 V hold-to-run control and a vise with an anti-burr device, and swivel 45° left and right; the CS-315 and CS-350 on stands take 12-1/2 and 14″ blades, cut Ø3-7/8 and 4-3/4″ round, run at two speeds (18 / 36 rpm) and clamp in a quick-adjusting double vise.",
+   "features": [
+    "Round capacity at 90°: Ø2-3/8″ (CS-225, CS-250) to Ø4-3/4″ (CS-350); rectangular to 5-1/2 × 3-7/8″",
+    "Head swivels 45° left and right; angle cuts at 45° to Ø4-1/8″",
+    "Gear drive; reduction unit in an oil bath (CS-225 – 275); two blade speeds (CS-315, 350)",
+    "24 V low-voltage hold-to-run control; vise with anti-burr device; double vise on the CS-315 and 350",
+    "CS-315 / 350: 1 / 1.7 HP two-speed 3-phase or 1.5 HP single-phase motor"
+   ],
+   "optional": [],
+   "images": [
+    "tm-cs",
+    "tm-cs-250",
+    "tm-cs-225"
+   ],
+   "videos": [],
+   "headline": "Ø2-3/8 – 4-3/4″ round",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "CS-225 · CS-250 · CS-275",
+      "sub": "Bench and stand cold saws, 9 – 11″ blade",
+      "models": [
+       "CS-225",
+       "CS-250",
+       "CS-275"
+      ],
+      "rows": [
+       {
+        "label": "Blade diameter, max",
+        "sub": "",
+        "cells": [
+         "8.9″ (225 mm)",
+         "9.8″ (250 mm)",
+         "10.8″ (275 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round, 90°",
+        "sub": "",
+        "cells": [
+         "Ø2-3/8″ (60 mm)",
+         "Ø2-3/8″ (60 mm)",
+         "Ø2-3/4″ (70 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular, 90°",
+        "sub": "",
+        "cells": [
+         "1-15/16 × 1-15/16″ (50 × 50 mm)",
+         "3 × 1-3/4″ (75 × 45 mm)",
+         "3-1/2 × 1-3/4″ (90 × 45 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round, 45°",
+        "sub": "",
+        "cells": [
+         "Ø2″ (52 mm)",
+         "Ø2-1/8″ (55 mm)",
+         "Ø2-1/2″ (65 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular, 45°",
+        "sub": "",
+        "cells": [
+         "1-15/16 × 1-15/16″ (50 × 50 mm)",
+         "2-1/8 × 1-3/4″ (55 × 45 mm)",
+         "2-3/4 × 1-3/4″ (70 × 45 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speed",
+        "sub": "rated at 50 Hz",
+        "cells": [
+         "46 rpm",
+         "42 rpm",
+         "42 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Vise opening",
+        "sub": "",
+        "cells": [
+         "2.8″ (70 mm)",
+         "3.9″ (100 mm)",
+         "3.9″ (100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1 HP (0.75 kW)",
+         "1.5 HP (1.1 kW)",
+         "1.5 HP (1.1 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "Gear",
+         "Gear",
+         "Gear"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "28 × 20 × 24″ (71 × 50 × 62 cm)",
+         "34 × 23 × 30″ (86 × 58 × 77 cm) body + 31 × 19 × 13″ (78 × 47 × 33 cm) stand",
+         "34 × 23 × 31″ (86 × 58 × 78 cm) body + 31 × 19 × 13″ (78 × 47 × 33 cm) stand"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "139 lb (63 kg)",
+         "315 lb (143 kg)",
+         "326 lb (148 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "CS-315 · CS-350",
+      "sub": "Cold saws on stand, 12 – 14″ blade, two speeds",
+      "models": [
+       "CS-315",
+       "CS-350"
+      ],
+      "rows": [
+       {
+        "label": "Blade diameter, max",
+        "sub": "",
+        "cells": [
+         "12.4″ (315 mm)",
+         "13.8″ (350 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round, 90°",
+        "sub": "",
+        "cells": [
+         "Ø3-7/8″ (100 mm)",
+         "Ø4-3/4″ (120 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular, 90°",
+        "sub": "",
+        "cells": [
+         "5-1/2 × 3-1/2″ (140 × 90 mm)",
+         "5-1/2 × 3-7/8″ (140 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round, 45°",
+        "sub": "",
+        "cells": [
+         "Ø3-1/2″ (90 mm)",
+         "Ø4-1/8″ (105 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular, 45°",
+        "sub": "",
+        "cells": [
+         "3-7/8 × 3-1/2″ (100 × 90 mm)",
+         "3-7/8 × 3-7/8″ (100 × 100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speed",
+        "sub": "rated at 50 Hz",
+        "cells": [
+         "18 / 36 rpm",
+         "18 / 36 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Vise opening",
+        "sub": "",
+        "cells": [
+         "5.7″ (145 mm)",
+         "5.7″ (145 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1 / 1.7 HP (0.75 / 1.3 kW) two-speed, 3-phase · 1.5 HP (1.1 kW) 1-phase",
+         "1 / 1.7 HP (0.75 / 1.3 kW) two-speed, 3-phase · 1.5 HP (1.1 kW) 1-phase"
+        ],
+        "key": true
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "Gear",
+         "Gear"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 24 × 37″ (98 × 62 × 93 cm) body + 31 × 24 × 20″ (78 × 60 × 50 cm) stand",
+         "39 × 24 × 37″ (98 × 62 × 95 cm) body + 31 × 24 × 20″ (78 × 60 × 50 cm) stand"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "500 lb (227 kg)",
+         "520 lb (236 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CS-225",
+      "glance": [
+       "8.9″ (225 mm)",
+       "Ø2-3/8″ (60 mm)",
+       "46 rpm",
+       "1 HP (0.75 kW)",
+       "139 lb (63 kg)"
+      ]
+     },
+     {
+      "name": "CS-250",
+      "glance": [
+       "9.8″ (250 mm)",
+       "Ø2-3/8″ (60 mm)",
+       "42 rpm",
+       "1.5 HP (1.1 kW)",
+       "315 lb (143 kg)"
+      ]
+     },
+     {
+      "name": "CS-275",
+      "glance": [
+       "10.8″ (275 mm)",
+       "Ø2-3/4″ (70 mm)",
+       "42 rpm",
+       "1.5 HP (1.1 kW)",
+       "326 lb (148 kg)"
+      ]
+     },
+     {
+      "name": "CS-315",
+      "glance": [
+       "12.4″ (315 mm)",
+       "Ø3-7/8″ (100 mm)",
+       "18 / 36 rpm",
+       "1 / 1.7 HP (0.75 / 1.3 kW) two-speed, 3-phase · 1.5 HP (1.1 kW) 1-phase",
+       "500 lb (227 kg)"
+      ]
+     },
+     {
+      "name": "CS-350",
+      "glance": [
+       "13.8″ (350 mm)",
+       "Ø4-3/4″ (120 mm)",
+       "18 / 36 rpm",
+       "1 / 1.7 HP (0.75 / 1.3 kW) two-speed, 3-phase · 1.5 HP (1.1 kW) 1-phase",
+       "520 lb (236 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade_diameter_max",
+     "round_90",
+     "blade_speed",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "CS-225": "8.9″ (225 mm) blade · cuts Ø2-3/8″ (60 mm) round",
+     "CS-250": "9.8″ (250 mm) blade · cuts Ø2-3/8″ (60 mm) round",
+     "CS-275": "10.8″ (275 mm) blade · cuts Ø2-3/4″ (70 mm) round",
+     "CS-315": "12.4″ (315 mm) blade · cuts Ø3-7/8″ (100 mm) round",
+     "CS-350": "13.8″ (350 mm) blade · cuts Ø4-3/4″ (120 mm) round"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine. Speeds marked “rated at 50 Hz” are the manufacturer's 50 Hz figures — motors run about 20 % faster on 60 Hz power."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-cold"
+  },
+  "tt-pds315h": {
+   "id": "tt-pds315h",
+   "brand": "novotech",
+   "name": "PDS-315H semi-automatic hydraulic cold saw, 12-1/2″ blade",
+   "short": "PDS-315H semi-automatic",
+   "models_label": "PDS-315H · 1 model",
+   "summary": "The semi-automatic cold saw: hydraulic clamping and a hydraulic feed cylinder make the cut — the operator loads the bar and presses start. A 12-1/2″ blade at 60 or 120 rpm, a saw frame that swivels ±45°, a double vise, coolant and 24 V DC controls; Ø3-1/2″ round and 3-1/8″ square tube at 90°.",
+   "features": [
+    "Ø3-1/2″ (90 mm) round and 3-1/8 × 3-1/8″ tube at 90°; Ø3-1/8″ at 45°",
+    "Automatic cutting cycle: hydraulic feed and hydraulic clamping",
+    "Two-speed 3 / 4 HP motor, 60 / 120 rpm",
+    "Saw frame swivels ±45°; double vise; coolant system"
+   ],
+   "optional": [],
+   "images": [
+    "tm-pds315h"
+   ],
+   "videos": [],
+   "headline": "Ø3-1/2″ round",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PDS-315H",
+      "sub": "Semi-automatic hydraulic cold saw, 12-1/2″ blade",
+      "models": [
+       "PDS-315H"
+      ],
+      "rows": [
+       {
+        "label": "Blade diameter, max",
+        "sub": "",
+        "cells": [
+         "12.4″ (315 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round pipe, 90° / 45°",
+        "sub": "",
+        "cells": [
+         "Ø3-1/2″ (90 mm) / Ø3-1/8″ (80 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular pipe, 90° / 45°",
+        "sub": "",
+        "cells": [
+         "3-1/8 × 3-1/8″ (80 × 80 mm) / 2-3/8 × 2-3/8″ (60 × 60 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 / 4 HP (2.2 / 3 kW), two-speed"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade speed",
+        "sub": "rated at 50 Hz",
+        "cells": [
+         "60 / 120 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed cylinder stroke",
+        "sub": "",
+        "cells": [
+         "5.1″ (130 mm), max. 1,450 psi (10 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamping cylinder stroke",
+        "sub": "",
+        "cells": [
+         "0.4″ (10 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic power unit",
+        "sub": "",
+        "cells": [
+         "1 HP (750 W), 24 V DC control, 435 psi (3 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "Gear"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "57 × 30 × 65″ (146 × 75 × 166 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,014 lb (460 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PDS-315H",
+      "glance": [
+       "12.4″ (315 mm)",
+       "Ø3-1/2″ (90 mm) / Ø3-1/8″ (80 mm)",
+       "3 / 4 HP (2.2 / 3 kW), two-speed",
+       "60 / 120 rpm",
+       "1,014 lb (460 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade_diameter_max",
+     "round_pipe_90_45",
+     "motor",
+     "blade_speed",
+     "weight"
+    ],
+    "caps": {
+     "PDS-315H": "12.4″ (315 mm) blade"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine. Speeds marked “rated at 50 Hz” are the manufacturer's 50 Hz figures — motors run about 20 % faster on 60 Hz power."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-cold"
+  },
+  "tt-pds400": {
+   "id": "tt-pds400",
+   "brand": "novotech",
+   "name": "PDS-400 heavy-duty cold saw, 16″ blade",
+   "short": "PDS-400 heavy-duty",
+   "models_label": "PDS-400 · 1 model",
+   "summary": "The heavy-duty manual cold saw for structural sections: a 16″ blade at 20 or 40 rpm on a compact cabinet stand, a head that swivels 60° right and 45° left, and capacities up to Ø4-3/4″ round tube, 5-7/8 × 3″ channel and 4-1/2 × 4-1/2″ angle at 90°.",
+   "features": [
+    "Ø4-3/4″ round tube, 4-3/8″ square tube, 5-7/8 × 3″ channel and flat bar, 4-1/2″ angle at 90°",
+    "Miter cuts 45° left and 60° right",
+    "Two-speed 3 / 3.75 HP motor, 20 / 40 rpm",
+    "Electric power control; manual vise feed"
+   ],
+   "optional": [],
+   "images": [
+    "tm-pds400"
+   ],
+   "videos": [],
+   "headline": "Ø4-3/4″ round tube",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PDS-400",
+      "sub": "Heavy-duty cold saw, 16″ blade",
+      "models": [
+       "PDS-400"
+      ],
+      "rows": [
+       {
+        "label": "Blade diameter, max",
+        "sub": "",
+        "cells": [
+         "15.7″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round pipe, 90° / 45° / 60°",
+        "sub": "",
+        "cells": [
+         "Ø4-3/4″ (120 mm) / Ø4-1/2″ (115 mm) / Ø3-3/4″ (95 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular pipe, 90° / 45° / 60°",
+        "sub": "",
+        "cells": [
+         "4-3/8 × 4-3/8″ (110 × 110 mm) / 4-1/8 × 4-1/8″ (105 × 105 mm) / 3 × 3″ (75 × 75 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Channel, 90° / 45° / 60°",
+        "sub": "",
+        "cells": [
+         "5-7/8 × 3″ (150 × 75 mm) / 3-7/8 × 1-15/16″ (100 × 50 mm) / 3 × 1-9/16″ (75 × 40 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Angle, 90° / 45° / 60°",
+        "sub": "",
+        "cells": [
+         "4-1/2 × 4-1/2″ (115 × 115 mm) / 3-7/8 × 3-7/8″ (100 × 100 mm) / 2-3/4 × 2-3/4″ (70 × 70 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round bar, 90° / 45° / 60°",
+        "sub": "",
+        "cells": [
+         "Ø2-1/2″ (65 mm) / Ø2-1/2″ (65 mm) / Ø2-1/8″ (55 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Flat bar, 90° / 45° / 60°",
+        "sub": "",
+        "cells": [
+         "5-7/8 × 3″ (150 × 75 mm) / 3-7/8 × 1-15/16″ (100 × 50 mm) / 2-3/4 × 1-15/16″ (70 × 50 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 / 3.75 HP (2.2 / 2.8 kW), two-speed"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade speed",
+        "sub": "rated at 50 Hz",
+        "cells": [
+         "20 / 40 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "Gear"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "43 × 36 × 64″ (110 × 91 × 162 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "798 lb (362 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PDS-400",
+      "glance": [
+       "15.7″ (400 mm)",
+       "Ø4-3/4″ (120 mm) / Ø4-1/2″ (115 mm) / Ø3-3/4″ (95 mm)",
+       "3 / 3.75 HP (2.2 / 2.8 kW), two-speed",
+       "20 / 40 rpm",
+       "798 lb (362 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade_diameter_max",
+     "round_pipe_90_45_60",
+     "motor",
+     "blade_speed",
+     "weight"
+    ],
+    "caps": {
+     "PDS-400": "15.7″ (400 mm) blade"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine. Speeds marked “rated at 50 Hz” are the manufacturer's 50 Hz figures — motors run about 20 % faster on 60 Hz power."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-cold"
+  },
+  "tt-tv": {
+   "id": "tt-tv",
+   "brand": "novotech",
+   "name": "TV abrasive cut-off saws, 12 – 16″ wheel, and SQ-40-1 portable saw",
+   "short": "TV abrasive saws",
+   "models_label": "TV-300 – SQ-40-1 · 4 models",
+   "summary": "Abrasive cut-off saws on stands for fast square and miter cuts in tube, pipe, angle, flat and solid steel — construction, plumbing, electrical and petrochemical work: 12, 14 and 16″ wheels on belt drives with 5.5 – 7.5 HP, a vise with an anti-burr device and a 24 V hold-to-run control. The SQ-40-1 is a portable 16″ saw on wheels.",
+   "features": [
+    "Ø3-7/8″ (TV-300) to Ø5-1/2″ (TV-400, SQ-40-1) round at 90°",
+    "Miter cuts to 45°; vise opening 7.5 – 8.7″",
+    "Belt drive; 5.5 – 7.5 HP; wheel speed 3,200 – 5,400 rpm",
+    "24 V low-voltage hold-to-run control; anti-burr vise"
+   ],
+   "optional": [],
+   "images": [
+    "tm-tv",
+    "tm-tv-sq"
+   ],
+   "videos": [],
+   "headline": "Ø3-7/8 – 5-1/2″ round",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "TV-300 · TV-350 · TV-400",
+      "sub": "Abrasive cut-off saws on stand, 12 – 16″ wheel",
+      "models": [
+       "TV-300",
+       "TV-350",
+       "TV-400"
+      ],
+      "rows": [
+       {
+        "label": "Wheel diameter, max",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "13.8″ (350 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round, 90°",
+        "sub": "",
+        "cells": [
+         "Ø3-7/8″ (100 mm)",
+         "Ø4-3/4″ (120 mm)",
+         "Ø5-1/2″ (140 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Rectangular, 90°",
+        "sub": "",
+        "cells": [
+         "2-3/4 × 4-3/4″ (70 × 120 mm)",
+         "3-1/8 × 4-3/4″ (80 × 120 mm)",
+         "3-1/2 × 4-3/4″ (90 × 120 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Round, 45°",
+        "sub": "",
+        "cells": [
+         "Ø3-1/2″ (90 mm)",
+         "Ø4-1/8″ (105 mm)",
+         "Ø4-3/4″ (120 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Rectangular, 45°",
+        "sub": "",
+        "cells": [
+         "2-3/4 × 3-1/2″ (70 × 90 mm)",
+         "3-1/2 × 3-7/8″ (90 × 100 mm)",
+         "3-1/2 × 4-3/8″ (90 × 110 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Wheel speed",
+        "sub": "rated at 50 Hz",
+        "cells": [
+         "5,400 rpm",
+         "4,300 rpm",
+         "3,200 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Vise opening",
+        "sub": "",
+        "cells": [
+         "7.5″ (190 mm)",
+         "7.5″ (190 mm)",
+         "8.7″ (220 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "5.5 HP (4 kW)",
+         "5.5 HP (4 kW)",
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Drive",
+        "sub": "",
+        "cells": [
+         "Belt",
+         "Belt",
+         "Belt"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "34 × 22 × 34″ (87 × 57 × 86 cm) body + 24 × 20 × 30″ (60 × 50 × 77 cm) stand",
+         "34 × 25 × 36″ (86 × 64 × 92 cm) body + 24 × 20 × 30″ (60 × 50 × 77 cm) stand",
+         "44 × 30 × 41″ (112 × 76 × 103 cm) body + 31 × 25 × 22″ (80 × 64 × 57 cm) stand"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "309 lb (140 kg)",
+         "320 lb (145 kg)",
+         "357 lb (162 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "SQ-40-1",
+      "sub": "Portable abrasive cut-off saw, 16″ wheel",
+      "models": [
+       "SQ-40-1"
+      ],
+      "rows": [
+       {
+        "label": "Wheel diameter, max",
+        "sub": "",
+        "cells": [
+         "16″ × 1/8″ × 1″ bore (405 × 3 × 25.4 / 32 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Round, 90°",
+        "sub": "",
+        "cells": [
+         "Ø5-1/2″ (140 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Wheel speed",
+        "sub": "",
+        "cells": [
+         "2,242 rpm"
+        ],
+        "key": true
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "35 × 20 × 28″ (90 × 52 × 70 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "198 lb (90 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "TV-300",
+      "glance": [
+       "11.8″ (300 mm)",
+       "Ø3-7/8″ (100 mm)",
+       "5,400 rpm",
+       "5.5 HP (4 kW)",
+       "309 lb (140 kg)"
+      ]
+     },
+     {
+      "name": "TV-350",
+      "glance": [
+       "13.8″ (350 mm)",
+       "Ø4-3/4″ (120 mm)",
+       "4,300 rpm",
+       "5.5 HP (4 kW)",
+       "320 lb (145 kg)"
+      ]
+     },
+     {
+      "name": "TV-400",
+      "glance": [
+       "15.7″ (400 mm)",
+       "Ø5-1/2″ (140 mm)",
+       "3,200 rpm",
+       "7.5 HP (5.5 kW)",
+       "357 lb (162 kg)"
+      ]
+     },
+     {
+      "name": "SQ-40-1",
+      "glance": [
+       "16″ × 1/8″ × 1″ bore (405 × 3 × 25.4 / 32 mm)",
+       "Ø5-1/2″ (140 mm)",
+       "2,242 rpm",
+       "3 HP (2.2 kW)",
+       "198 lb (90 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "wheel_diameter_max",
+     "round_90",
+     "wheel_speed",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "TV-300": "11.8″ (300 mm) wheel · Ø3-7/8″ (100 mm) round",
+     "TV-350": "13.8″ (350 mm) wheel · Ø4-3/4″ (120 mm) round",
+     "TV-400": "15.7″ (400 mm) wheel · Ø5-1/2″ (140 mm) round",
+     "SQ-40-1": "16″ × 1/8″ × 1″ bore (405 × 3 × 25.4 / 32 mm) wheel · Ø5-1/2″ (140 mm) round"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine. Speeds marked “rated at 50 Hz” are the manufacturer's 50 Hz figures — motors run about 20 % faster on 60 Hz power."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-abrasive"
+  },
+  "tt-stand": {
+   "id": "tt-stand",
+   "brand": "novotech",
+   "name": "Roller stands, roller conveyors and measuring roller tables",
+   "short": "Roller stands and tables",
+   "models_label": "RV1100 – SRB-320×2000D · 9 models",
+   "summary": "Material support for saws, shears, brakes and drills: V-roller and flat roller stands, a tripod stand, roller conveyors in 41″ sections with 79″ and 118″ extensions, the RB365×3000D — a 120″ roller conveyor on a closed steel frame with a length stop that reads out digitally — the SRB-320 roller stands, 39″ and 79″ long, with adjustable vertical side rollers that guide the bar, and the RA785 roller table with a measuring feed system that positions the bar to ±0.012″ at 40 – 140 in/min.",
+   "features": [
+    "Height-adjustable stands 23 – 43″; loads to 728 lb",
+    "Roller conveyors 1,323 – 1,543 lb; extensions of 79″, 118″ and more",
+    "RB365×3000D: 120″ conveyor with a digital length stop, 882 lb",
+    "SRB-320×1000D / 2000D: 39″ and 79″ stands with vertical side rollers, 1,323 lb",
+    "RA785: 79″ roller table with measuring feed, ±0.012″ (0.3 mm)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-stand-ra785",
+    "tm-rb3653000d",
+    "tm-srb3202000d",
+    "tm-stand-rb365",
+    "tm-stand-rv",
+    "tm-rb1100",
+    "tm-rb1000",
+    "tm-rb3653000d-stop"
+   ],
+   "videos": [],
+   "headline": "Stands, conveyors and roller tables",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "Roller stands and conveyors",
+      "sub": "Material supports for saws, shears and brakes",
+      "models": [
+       "RV1100",
+       "RB1100",
+       "RB1000",
+       "RB365",
+       "RB2000",
+       "RA785"
+      ],
+      "rows": [
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "V-roller stand",
+         "Roller stand",
+         "Tripod roller stand",
+         "Roller conveyor, 41″ (1,040 mm) — 2,000 / 3,000 mm extensions",
+         "Roller conveyor",
+         "Roller table with measuring feed system, 79″ (2,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Height",
+        "sub": "",
+        "cells": [
+         "24.4 – 43.3″ (620 – 1,100 mm)",
+         "24.4 – 43.3″ (620 – 1,100 mm)",
+         "23 – 38.6″ (585 – 980 mm)",
+         "23.6 – 39.4″ (600 – 1,000 mm)",
+         "23 – 38.6″ (585 – 980 mm)",
+         "31.5 – 39.4″ (800 – 1,000 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roller width",
+        "sub": "",
+        "cells": [
+         "8.9″ (225 mm)",
+         "13.8″ (350 mm)",
+         "—",
+         "14.4″ (365 mm)",
+         "—",
+         "18.1″ (460 mm), rollers Ø2″ (50 mm) at 11″ (280 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "728 lb (330 kg)",
+         "661 lb (300 kg)",
+         "331 lb (150 kg)",
+         "1,323 lb (600 kg)",
+         "1,543 lb (700 kg)",
+         "336 lb/ft (500 kg/m)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed system",
+        "sub": "",
+        "cells": [
+         "—",
+         "—",
+         "—",
+         "—",
+         "—",
+         "40 – 140 ipm, accuracy ±0.012″ (0.3 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "35 lb (16 kg)",
+         "35 lb (16 kg)",
+         "18 lb (8 kg)",
+         "76 lb (34.5 kg)",
+         "115 lb (52 kg)",
+         "320 lb (145 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "RB365×3000D · SRB-320×1000D · SRB-320×2000D",
+      "sub": "Roller conveyor with digital length stop and roller stands with side rollers",
+      "models": [
+       "RB365×3000D",
+       "SRB-320×1000D",
+       "SRB-320×2000D"
+      ],
+      "rows": [
+       {
+        "label": "Type",
+        "sub": "",
+        "cells": [
+         "Roller conveyor 120″ (3,050 mm) with digital length stop",
+         "Roller stand 39″ (1,000 mm) with vertical side rollers",
+         "Roller stand 79″ (2,000 mm) with vertical side rollers"
+        ],
+        "key": true
+       },
+       {
+        "label": "Height",
+        "sub": "",
+        "cells": [
+         "29.9 – 41.7″ (760 – 1,060 mm)",
+         "25.8 – 29.3″ (655 – 745 mm)",
+         "25.8 – 29.3″ (655 – 745 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Roller width",
+        "sub": "",
+        "cells": [
+         "14.4″ (365 mm)",
+         "12.6″ (320 mm)",
+         "12.6″ (320 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Load, max",
+        "sub": "",
+        "cells": [
+         "882 lb (400 kg)",
+         "1,323 lb (600 kg)",
+         "1,323 lb (600 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Feed system",
+        "sub": "",
+        "cells": [
+         "Length stop moved by hand, with a digital readout; closed steel frame",
+         "—",
+         "—"
+        ],
+        "key": false
+       },
+       {
+        "label": "Side rollers",
+        "sub": "",
+        "cells": [
+         "—",
+         "Adjustable vertical side rollers guide the bar",
+         "Adjustable vertical side rollers guide the bar"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "254 lb (115 kg)",
+         "176 lb (80 kg)",
+         "271 lb (123 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "RV1100",
+      "glance": [
+       "V-roller stand",
+       "24.4 – 43.3″ (620 – 1,100 mm)",
+       "728 lb (330 kg)",
+       "35 lb (16 kg)"
+      ]
+     },
+     {
+      "name": "RB1100",
+      "glance": [
+       "Roller stand",
+       "24.4 – 43.3″ (620 – 1,100 mm)",
+       "661 lb (300 kg)",
+       "35 lb (16 kg)"
+      ]
+     },
+     {
+      "name": "RB1000",
+      "glance": [
+       "Tripod roller stand",
+       "23 – 38.6″ (585 – 980 mm)",
+       "331 lb (150 kg)",
+       "18 lb (8 kg)"
+      ]
+     },
+     {
+      "name": "RB365",
+      "glance": [
+       "Roller conveyor, 41″ (1,040 mm) — 2,000 / 3,000 mm extensions",
+       "23.6 – 39.4″ (600 – 1,000 mm)",
+       "1,323 lb (600 kg)",
+       "76 lb (34.5 kg)"
+      ]
+     },
+     {
+      "name": "RB2000",
+      "glance": [
+       "Roller conveyor",
+       "23 – 38.6″ (585 – 980 mm)",
+       "1,543 lb (700 kg)",
+       "115 lb (52 kg)"
+      ]
+     },
+     {
+      "name": "RA785",
+      "glance": [
+       "Roller table with measuring feed system, 79″ (2,000 mm)",
+       "31.5 – 39.4″ (800 – 1,000 mm)",
+       "336 lb/ft (500 kg/m)",
+       "320 lb (145 kg)"
+      ]
+     },
+     {
+      "name": "RB365×3000D",
+      "glance": [
+       "Roller conveyor 120″ (3,050 mm) with digital length stop",
+       "29.9 – 41.7″ (760 – 1,060 mm)",
+       "882 lb (400 kg)",
+       "254 lb (115 kg)"
+      ]
+     },
+     {
+      "name": "SRB-320×1000D",
+      "glance": [
+       "Roller stand 39″ (1,000 mm) with vertical side rollers",
+       "25.8 – 29.3″ (655 – 745 mm)",
+       "1,323 lb (600 kg)",
+       "176 lb (80 kg)"
+      ]
+     },
+     {
+      "name": "SRB-320×2000D",
+      "glance": [
+       "Roller stand 79″ (2,000 mm) with vertical side rollers",
+       "25.8 – 29.3″ (655 – 745 mm)",
+       "1,323 lb (600 kg)",
+       "271 lb (123 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "type",
+     "height",
+     "load_max",
+     "weight"
+    ],
+    "caps": {
+     "RV1100": "V-roller stand",
+     "RB1100": "Roller stand",
+     "RB1000": "Tripod roller stand",
+     "RB365": "Roller conveyor, 41″ (1,040 mm) — 2,000 / 3,000 mm extensions",
+     "RB2000": "Roller conveyor",
+     "RA785": "Roller table with measuring feed system, 79″ (2,000 mm)",
+     "RB365×3000D": "Roller conveyor 120″ (3,050 mm) with digital length stop",
+     "SRB-320×1000D": "Roller stand 39″ (1,000 mm) with vertical side rollers",
+     "SRB-320×2000D": "Roller stand 79″ (2,000 mm) with vertical side rollers"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "tt-stands"
+  },
+  "csm-ct325": {
+   "id": "csm-ct325",
+   "brand": "csm",
+   "name": "CT325 hydraulic circular saws with servo feed, Ø1/2″ to Ø4″ tube and bundles",
+   "short": "CT325 circular saws",
+   "models_label": "CT325 L · M · H · 3 models",
+   "summary": "The automatic circular saw CSM builds for its bending cells: hydraulic down-feed of a Ø10 – 12-3/4″ blade driven through planetary gears, hydraulic clamping, a servo carriage that feeds the tube to ±0.004″ and a PLC with touch-screen — round, square, rectangular and angle sections, single or in bundles with the customised vises. Three spindle-speed ranges for steel (L), stainless and alloy (M) and aluminum and non-ferrous (H), all at 3.8 HP.",
+   "headline": "Ø1/2″ – Ø4″ · bundle cutting · servo feed ±0.004″ · 3 speed ranges",
+   "features": [
+    "Hydraulic down-feed; blade driven through planetary transmission gears for low energy use",
+    "Hydraulic clamping; feeding by servo motor to ±0.004″ at 39 in/s",
+    "Standard vises for Ø1-3/4″ – Ø4″; customised vises for Ø1/2″ – Ø2-1/2″ and bundle cutting",
+    "PLC control with touch-screen; standing pedestal with emergency stop and remote control",
+    "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
+   ],
+   "optional": [
+    "Bundle-cutting vises",
+    "Saw blades for steel, stainless and aluminum",
+    "Integration into a bending cell",
+    "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
+   ],
+   "images": [
+    "cs-ct325",
+    "cs-ct325-bundle",
+    "cs-ct325-parts"
+   ],
+   "videos": [
+    {
+     "id": "Bf866DAmzuk",
+     "title": "CT325 automatic cold saw",
+     "duration": "PT1M10S",
+     "thumb": "video-Bf866DAmzuk"
+    },
+    {
+     "id": "gRXc_HnOVCQ",
+     "title": "CT325 automatic circular saw",
+     "duration": "PT1M42S",
+     "thumb": "video-gRXc_HnOVCQ"
+    },
+    {
+     "id": "H8WEu6EmeRk",
+     "title": "CT325 M automatic cold saw",
+     "duration": "PT1M35S",
+     "thumb": "video-H8WEu6EmeRk"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "installed_power",
+     "weight"
+    ],
+    "caps": {},
+    "note": "Capacities for mild steel (40 kgf/mm²); the three types differ in spindle speed range only.",
+    "tables": [
+     {
+      "title": "CT325",
+      "sub": "Hydraulic circular saws with servo feed",
+      "models": [
+       "CT325 L",
+       "CT325 M",
+       "CT325 H"
+      ],
+      "rows": [
+       {
+        "label": "Capacity, mild steel",
+        "sub": "standard vises / customised vises",
+        "key": true,
+        "cells": [
+         "Ø1-3/4″ – 4″ (44 – 101.6 mm) / Ø1/2″ – 2-1/2″ (12 – 63.5 mm)",
+         "Ø1-3/4″ – 4″ (44 – 101.6 mm) / Ø1/2″ – 2-1/2″ (12 – 63.5 mm)",
+         "Ø1-3/4″ – 4″ (44 – 101.6 mm) / Ø1/2″ – 2-1/2″ (12 – 63.5 mm)"
+        ]
+       },
+       {
+        "label": "Saw blade",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "Ø9-7/8″ – 12-3/4″ (250 – 325 mm)",
+         "Ø9-7/8″ – 12-3/4″ (250 – 325 mm)",
+         "Ø9-7/8″ – 12-3/4″ (250 – 325 mm)"
+        ]
+       },
+       {
+        "label": "Spindle speed",
+        "sub": "",
+        "key": true,
+        "cells": [
+         "22 – 62 rpm",
+         "47 – 135 rpm",
+         "80 – 220 rpm"
+        ]
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "3.8 HP (2.8 kW)",
+         "3.8 HP (2.8 kW)",
+         "3.8 HP (2.8 kW)"
+        ]
+       },
+       {
+        "label": "Feeding speed / accuracy",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "39 in/s (1,000 mm/s) / ±0.004″ (±0.1 mm)",
+         "39 in/s (1,000 mm/s) / ±0.004″ (±0.1 mm)",
+         "39 in/s (1,000 mm/s) / ±0.004″ (±0.1 mm)"
+        ]
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "37.4″ (950 mm)",
+         "37.4″ (950 mm)",
+         "37.4″ (950 mm)"
+        ]
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "67 × 30 × 63″ (1,700 × 760 × 1,600 mm)",
+         "67 × 30 × 63″ (1,700 × 760 × 1,600 mm)",
+         "67 × 30 × 63″ (1,700 × 760 × 1,600 mm)"
+        ]
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "key": false,
+        "cells": [
+         "1,764 lb (800 kg)",
+         "1,764 lb (800 kg)",
+         "1,764 lb (800 kg)"
+        ]
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "CT325 L",
+      "glance": [
+       "Ø9-7/8″ – 12-3/4″",
+       "Ø4″ (Ø1/2″ bundles)",
+       "—",
+       "3.8 HP · 22 – 62 rpm",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "CT325 M",
+      "glance": [
+       "Ø9-7/8″ – 12-3/4″",
+       "Ø4″ (Ø1/2″ bundles)",
+       "—",
+       "3.8 HP · 47 – 135 rpm",
+       "1,764 lb (800 kg)"
+      ]
+     },
+     {
+      "name": "CT325 H",
+      "glance": [
+       "Ø9-7/8″ – 12-3/4″",
+       "Ø4″ (Ø1/2″ bundles)",
+       "—",
+       "3.8 HP · 80 – 220 rpm",
+       "1,764 lb (800 kg)"
+      ]
+     }
+    ]
+   },
+   "pdf": {
+    "file": "files/NovoTech-CSM-Hydraulic-Tube-Benders-2026.pdf",
+    "label": "Download the CSM hydraulic bender, end former & saw brochure",
+    "size": "PDF · 2 MB · imperial units"
+   },
+   "group": "csm-saw"
+  },
+  "bekamak-bmdo-xs": {
+   "id": "bekamak-bmdo-xs",
+   "brand": "bekamak",
+   "name": "BMDO 75XS · 100XS · 130XS · 150XS — automatic TCT carbide circular saws, Ø3-1/8″ to Ø6-1/4″",
+   "short": "BMDO XS carbide saws",
+   "models_label": "BMDO 75XS · 100XS · 130XS · 150XS",
+   "summary": "High-speed carbide cold saws for mass production of cut-off pieces from solid steel and non-ferrous bar: a TCT circular blade at 130 – 920 ft/min, a servo saw-head feed and a servo material feed with a 31-1/2″ stroke, a hydraulic vise with top clamping, micro-spray lubrication and a 20 ft magazine loader. Load a bundle of bars, program the lengths and quantities on the control and the saw cuts unattended, to ±.004″, from Ø3-1/8″ bar on the BMDO 75XS up to Ø6-1/4″ on the BMDO 150XS. HSS blades fit the same machines for tube.",
+   "features": [
+    "TCT carbide circular blades Ø11-1/4″ to Ø18-1/8″ for high-speed cutting of solid bar; HSS blades for tube",
+    "Servo saw-head feed and AC-servo ball-screw material feed, 31-1/2″ (800 mm) stroke, lengths 3/8″ to 394″ — cuts to ±.004″",
+    "Hydraulic vise and hydraulic top clamping; heavy-duty gearbox; inverter-driven blade speed 130 – 655 ft/min (920 on the 75XS)",
+    "20 ft (6 m) magazine loader for 6 to 17 bars; chip conveyor; ILC micro-spray coolant; blade brush; cover safety switch",
+    "Options: 20 ft (6 m) material roller table, air filter"
+   ],
+   "optional": [
+    "20 ft (6 m) material roller table",
+    "Air filter",
+    "HSS circular blades for tube",
+    "208 / 240 / 480 V 3-phase"
+   ],
+   "images": [
+    "bk-bmdo-150xs-1",
+    "bk-bmdo-100xs-1",
+    "bk-bmdo-75xs-1",
+    "bk-bmdo-130xs-1",
+    "bk-bmdo-150xs-2",
+    "bk-bmdo-75xs-2",
+    "bk-bmdo-150xs-3",
+    "bk-bmdo-100xs-2",
+    "bk-bmdo-75xs-3",
+    "bkd-bmdo-150xs-loader",
+    "bkd-bmdo-150xs-2",
+    "bkd-bmdo-100xs-table",
+    "bkd-bmdo-loader",
+    "bkd-bmdo-75xs-panel",
+    "bkd-bmdo-blade"
+   ],
+   "videos": [
+    {
+     "id": "CV27CVffJ1s",
+     "title": "BMDO 100 XS high-speed carbide cold saw",
+     "duration": "PT2M",
+     "thumb": "video-CV27CVffJ1s"
+    },
+    {
+     "id": "OP3ktYgA7aw",
+     "title": "High-speed carbide saw BMDO 100XS",
+     "duration": "PT2M36S",
+     "thumb": "video-OP3ktYgA7aw"
+    },
+    {
+     "id": "_Gfo4BerI70",
+     "title": "High-speed carbide saw BMDO 100 XS CNC",
+     "duration": "PT1M27S",
+     "thumb": "video-_Gfo4BerI70"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BMDO XS — automatic TCT circular saws",
+      "sub": "Carbide (TCT) blades for solid bar · servo feeding · magazine loader",
+      "models": [
+       "BMDO 75XS",
+       "BMDO 100XS",
+       "BMDO 130XS",
+       "BMDO 150XS"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity — round",
+        "sub": "solid bar",
+        "cells": [
+         "Ø3/8″ – 3-1/8″ (10 – 80 mm)",
+         "Ø3/4″ – 4-1/8″ (20 – 105 mm)",
+         "Ø3/4″ – 5-1/8″ (20 – 130 mm)",
+         "Ø3/4″ – 6-1/4″ (20 – 160 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity — square",
+        "sub": "",
+        "cells": [
+         "3/8″ – 2″ (10 – 50 mm)",
+         "3/4″ – 2-3/4″ (20 – 70 mm)",
+         "3/4″ – 3-1/2″ (20 – 90 mm)",
+         "1-3/4″ – 4-3/8″ (45 – 110 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade Ø × T",
+        "sub": "TCT carbide",
+        "cells": [
+         "Ø11-1/4″ × .079″ (285 × 2.0 mm)",
+         "Ø14-1/8″ × .102″ (360 × 2.6 mm)",
+         "Ø14-1/8″ / 16-3/4″ × .102″ (360 / 425 × 2.6 mm)",
+         "Ø18-1/8″ × .106″ (460 × 2.7 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "32 mm / 2-11-63, 2-12-90, 2-15-80",
+         "40 mm / 2-11-63, 2-12-90, 2-15-80",
+         "40 mm / 2-11-63, 2-12-90, 2-15-80",
+         "40 mm / 2-11-63, 2-12-90, 2-15-80"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speed",
+        "sub": "stepless",
+        "cells": [
+         "130 – 920 ft/min (40 – 280 m/min)",
+         "130 – 655 ft/min (40 – 200 m/min)",
+         "130 – 655 ft/min (40 – 200 m/min)",
+         "130 – 655 ft/min (40 – 200 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "10 HP (7.5 kW)",
+         "20 HP (15 kW)",
+         "20 HP (15 kW)",
+         "20 HP (15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw-head feed / material feed",
+        "sub": "servo",
+        "cells": [
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)",
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)",
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)",
+         "2.7 HP (2 kW) / 2.7 HP (2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)",
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant pump / chip conveyor",
+        "sub": "",
+        "cells": [
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "19.6 HP (14.6 kW)",
+         "29.7 HP (22.1 kW)",
+         "29.7 HP (22.1 kW)",
+         "29.7 HP (22.1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Material feed",
+        "sub": "AC servo and ball screw",
+        "cells": [
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)",
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)",
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)",
+         "31-1/2″ (800 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Vise opening",
+        "sub": "",
+        "cells": [
+         "3-1/8″ (80 mm)",
+         "4-1/8″ (105 mm)",
+         "5-5/16″ (135 mm)",
+         "7-1/8″ (180 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "End-trim / remnant length",
+        "sub": "",
+        "cells": [
+         "3/8″ / 2-3/8″ (10 / 60 mm)",
+         "3/8″ / 2-3/8″ (10 / 60 mm)",
+         "3/8″ / 2-3/8″ (10 / 60 mm)",
+         "3/8″ / 2-3/8″ (10 / 60 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Magazine loader",
+        "sub": "bundle of 20 ft bars",
+        "cells": [
+         "17 × Ø3-1/8″ (80 mm) bars",
+         "10 × Ø4″ (100 mm) bars",
+         "7 × Ø5-1/8″ (130 mm) bars",
+         "6 × Ø6″ (150 mm) bars"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loader dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "221 × 65 × 49″ (5620 × 1660 × 1240 mm)",
+         "243 × 85 × 49″ (6175 × 2170 × 1245 mm)",
+         "243 × 73 × 50″ (6180 × 1860 × 1280 mm)",
+         "247 × 85 × 63″ (6280 × 2170 × 1600 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Compressed air",
+        "sub": "",
+        "cells": [
+         "73 psi (5 bar), 8.7 cfm (245 l/min)",
+         "73 psi (5 bar), 8.7 cfm (245 l/min)",
+         "73 psi (5 bar), 8.7 cfm (245 l/min)",
+         "73 psi (5 bar), 8.7 cfm (245 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic tank / oil-mist tank",
+        "sub": "",
+        "cells": [
+         "18.5 gal / 0.4 gal (70 / 1.5 l)",
+         "18.5 gal / 0.4 gal (70 / 1.5 l)",
+         "18.5 gal / 0.4 gal (70 / 1.5 l)",
+         "18.5 gal / 0.4 gal (70 / 1.5 l)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions W × L × H",
+        "sub": "",
+        "cells": [
+         "121 × 105 × 101″ (3070 × 2675 × 2575 mm)",
+         "134 × 105 × 106″ (3400 × 2660 × 2680 mm)",
+         "134 × 105 × 106″ (3400 × 2660 × 2680 mm)",
+         "134 × 105 × 106″ (3400 × 2660 × 2680 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "6,768 lb (3,070 kg)",
+         "7,937 lb (3,600 kg)",
+         "8,014 lb (3,635 kg)",
+         "8,113 lb (3,680 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BMDO 75XS",
+      "glance": [
+       "Ø11-1/4″ TCT",
+       "Ø3/8″ – 3-1/8″",
+       "3/8″ – 2″",
+       "10 HP",
+       "6,768 lb"
+      ]
+     },
+     {
+      "name": "BMDO 100XS",
+      "glance": [
+       "Ø14-1/8″ TCT",
+       "Ø3/4″ – 4-1/8″",
+       "3/4″ – 2-3/4″",
+       "20 HP",
+       "7,937 lb"
+      ]
+     },
+     {
+      "name": "BMDO 130XS",
+      "glance": [
+       "Ø14-1/8″ / 16-3/4″ TCT",
+       "Ø3/4″ – 5-1/8″",
+       "3/4″ – 3-1/2″",
+       "20 HP",
+       "8,014 lb"
+      ]
+     },
+     {
+      "name": "BMDO 150XS",
+      "glance": [
+       "Ø18-1/8″ TCT",
+       "Ø3/4″ – 6-1/4″",
+       "1-3/4″ – 4-3/8″",
+       "20 HP",
+       "8,113 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "main_motor",
+     "weight"
+    ],
+    "caps": {
+     "BMDO 75XS": "Automatic TCT circular saw · solid bar to Ø3-1/8″",
+     "BMDO 100XS": "Automatic TCT circular saw · solid bar to Ø4-1/8″",
+     "BMDO 130XS": "Automatic TCT circular saw · solid bar to Ø5-1/8″",
+     "BMDO 150XS": "Automatic TCT circular saw · solid bar to Ø6-1/4″"
+    },
+    "note": "Capacities are for solid steel bar with a TCT blade; HSS blades for tube are available. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request)."
+   },
+   "headline": "Solid bar Ø3/8″ to Ø6-1/4″ (10 – 160 mm) · TCT blades · servo feed · magazine loader",
+   "group": "bekamak-circular"
+  },
+  "bekamak-bmdo-cs": {
+   "id": "bekamak-bmdo-cs",
+   "brand": "bekamak",
+   "name": "BMDO 80CS · 100CS — automatic HSS circular saws, Ø3-1/8″ and Ø4″",
+   "short": "BMDO CS HSS saws",
+   "models_label": "BMDO 80CS · BMDO 100CS",
+   "summary": "Automatic HSS cold saws for tube and bar up to Ø4″: a vertical-slide saw head with a cemented and ground helical-gear drive for a vibration-free cut, an inverter for stepless blade speed and electric servo feeding with a flexible gripper and floating carriage that holds ±.002 – .004″ per stroke even in bar that is not perfectly straight. Several cutting lengths per bar are programmed on the touch screen; safety covers enclose the cut.",
+   "features": [
+    "HSS circular blades Ø10-1/4″ to 14-1/8″; tube and solid bar Ø3/4″ to 3-1/8″ (80CS) or 4″ (100CS)",
+    "Vertical-slide saw head for rigidity; helical-gear head without worm screw — no play or vibration at the blade",
+    "Electric servo feeding with flexible gripper and floating carriage: ±.002 – .004″ (0.05 – 0.1 mm) per stroke; 19-3/4″ or 39-3/8″ feed stroke",
+    "Touch-screen control with several cutting lengths per bar; inverter blade speed 72 – 425 ft/min",
+    "Hydraulic vise, heavy-duty gearbox, blade brush, chip conveyor, safety covers and switch",
+    "Options: micro-spray coolant, 20 ft (6 m) feed roller table"
+   ],
+   "optional": [
+    "Micro-spray coolant",
+    "20 ft (6 m) feed roller table",
+    "208 / 240 / 480 V 3-phase"
+   ],
+   "images": [
+    "bk-bmdo-80cs-1",
+    "bk-bmdo-100cs-1",
+    "bk-bmdo-80cs-2",
+    "bk-bmdo-100cs-2",
+    "bk-bmdo-80cs-3"
+   ],
+   "videos": [
+    {
+     "id": "FDPXXawic4o",
+     "title": "High-speed carbide cold saw BMDO 80CS CNC",
+     "duration": "PT51S",
+     "thumb": "video-FDPXXawic4o"
+    }
+   ],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BMDO CS — automatic HSS circular saws",
+      "sub": "HSS blades for tube and bar · servo gripper feed · touch-screen control",
+      "models": [
+       "BMDO 80CS",
+       "BMDO 100CS"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity — round",
+        "sub": "tube and solid bar",
+        "cells": [
+         "Ø3/4″ – 3-1/8″ (20 – 80 mm)",
+         "Ø3/4″ – 4″ (20 – 100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade Ø × T",
+        "sub": "HSS",
+        "cells": [
+         "Ø10-1/4″ – 13-3/4″ × .079 – .118″ (260 – 350 × 2.0 – 3.0 mm)",
+         "Ø10-1/4″ – 14-1/8″ × .079 – .118″ (260 – 360 × 2.0 – 3.0 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade speed",
+        "sub": "stepless, inverter",
+        "cells": [
+         "72 – 425 ft/min (22 – 130 m/min)",
+         "72 – 425 ft/min (22 – 130 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "7.5 HP (5.5 kW)",
+         "7.5 HP (5.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw-head servo / feeder servo",
+        "sub": "",
+        "cells": [
+         "2.7 HP / 1.3 HP (2 / 1 kW)",
+         "2.7 HP / 1.3 HP (2 / 1 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic motor",
+        "sub": "",
+        "cells": [
+         "2 HP (1.5 kW)",
+         "2 HP (1.5 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant pump / chip conveyor",
+        "sub": "",
+        "cells": [
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)",
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Clamp opening",
+        "sub": "",
+        "cells": [
+         "3-3/8″ (85 mm)",
+         "4-5/16″ (110 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed stroke",
+        "sub": "servo gripper feed",
+        "cells": [
+         "19-3/4″ (500 mm)",
+         "39-3/8″ (1000 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Feed accuracy",
+        "sub": "",
+        "cells": [
+         "±.002 – .004″ (±0.05 – 0.1 mm) per stroke",
+         "±.002 – .004″ (±0.05 – 0.1 mm) per stroke"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loader (option)",
+        "sub": "6 m roller magazine",
+        "cells": [
+         "203 × 30 × 4″ (5150 × 750 × 110 mm)",
+         "203 × 30 × 4″ (5150 × 750 × 110 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Working height",
+        "sub": "",
+        "cells": [
+         "35-1/2″ (900 mm)",
+         "35-1/2″ (900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "63 × 67 × 83″ (1600 × 1700 × 2100 mm)",
+         "85 × 79 × 83″ (2150 × 2000 × 2100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "3,142 lb (1,425 kg)",
+         "3,968 lb (1,800 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BMDO 80CS",
+      "glance": [
+       "Ø10-1/4″ – 13-3/4″ HSS",
+       "Ø3/4″ – 3-1/8″",
+       "—",
+       "7.5 HP",
+       "3,142 lb"
+      ]
+     },
+     {
+      "name": "BMDO 100CS",
+      "glance": [
+       "Ø10-1/4″ – 14-1/8″ HSS",
+       "Ø3/4″ – 4″",
+       "—",
+       "7.5 HP",
+       "3,968 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "main_motor",
+     "weight"
+    ],
+    "caps": {
+     "BMDO 80CS": "Automatic HSS circular saw · tube and bar to Ø3-1/8″",
+     "BMDO 100CS": "Automatic HSS circular saw · tube and bar to Ø4″"
+    },
+    "note": "Capacities are for mild steel tube and bar with an HSS blade. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request)."
+   },
+   "headline": "Tube and bar Ø3/4″ to Ø4″ (20 – 100 mm) · HSS blades · servo gripper feed · touch screen",
+   "group": "bekamak-circular"
+  },
+  "bekamak-opus-300": {
+   "id": "bekamak-opus-300",
+   "brand": "bekamak",
+   "name": "OPUS 300 — automatic TCT carbide circular saw, Ø11-3/4″",
+   "short": "OPUS 300 carbide saw",
+   "models_label": "OPUS 300",
+   "summary": "The largest of Bekamak's carbide cold saws: a Ø35-7/16″ (900 mm) TCT blade on a 50 HP (37 kW) spindle and a servo-driven saw head cut solid steel and non-ferrous bar from Ø2-3/4″ to Ø11-3/4″ (70 – 300 mm) in continuous production. The AC-servo ball-screw material feed positions the bar in a 27-1/2″ (700 mm) stroke to lengths from 3/8″ to 394″, the 20 ft (6 m) automatic loader holds five Ø11-3/4″ bars, and the enclosed cabin, hydraulic clamping, oil-mist lubrication and chip conveyor let the saw run unattended, down to a 3-3/8″ (85 mm) remnant.",
+   "features": [
+    "Solid bar Ø2-3/4″ – 11-3/4″ (70 – 300 mm) round and square to 9-1/2″ (240 mm), with a Ø35-7/16″ (900 mm) TCT carbide blade",
+    "50 HP (37 kW) main motor, blade speed 165 – 785 ft/min (50 – 240 m/min); 5.4 HP (4 kW) servo saw-head feed",
+    "AC-servo ball-screw material feed: 27-1/2″ (700 mm) stroke, lengths 3/8″ – 394″ (10 – 9999 mm) at up to 30 in/s; 3/8″ end trim, 3-3/8″ remnant",
+    "20 ft (6 m) automatic magazine loader for five Ø11-3/4″ bars; hydraulic clamping; enclosed cabin with chip conveyor and oil-mist lubrication",
+    "Options: air filter, 20 ft (6 m) automatic material stand"
+   ],
+   "optional": [
+    "Air filter",
+    "20 ft (6 m) automatic material stand",
+    "208 / 240 / 480 V 3-phase"
+   ],
+   "images": [
+    "bk-opus-300-1",
+    "bk-opus-300-2",
+    "bk-opus-300-3",
+    "bk-opus-300-4"
+   ],
+   "videos": [],
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "OPUS 300 — automatic TCT circular saw",
+      "sub": "Ø35-7/16″ (900 mm) carbide blade for solid bar to Ø11-3/4″ · servo feeding · magazine loader",
+      "models": [
+       "OPUS 300"
+      ],
+      "rows": [
+       {
+        "label": "Cutting capacity — round",
+        "sub": "solid bar",
+        "cells": [
+         "Ø2-3/4″ – 11-3/4″ (70 – 300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Cutting capacity — square",
+        "sub": "",
+        "cells": [
+         "to 9-1/2″ × 9-1/2″ (240 × 240 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade Ø × T",
+        "sub": "TCT carbide",
+        "cells": [
+         "Ø35-7/16″ × .142″ body / .165″ kerf (900 × 3.6 / 4.2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Blade bore / pin holes",
+        "sub": "",
+        "cells": [
+         "80 mm / 4-27-120, 2-12-64, 2-15-80"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blade speed",
+        "sub": "stepless",
+        "cells": [
+         "165 – 785 ft/min (50 – 240 m/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Main motor",
+        "sub": "",
+        "cells": [
+         "50 HP (37 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Saw-head feed / material feed",
+        "sub": "servo",
+        "cells": [
+         "5.4 HP (4 kW) / 2.7 HP (2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Coolant pump / chip conveyor",
+        "sub": "",
+        "cells": [
+         "0.27 HP / 0.33 HP (0.2 / 0.25 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Installed power",
+        "sub": "",
+        "cells": [
+         "63 HP (47.15 kW)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Material feed",
+        "sub": "AC servo and ball screw",
+        "cells": [
+         "27-1/2″ (700 mm) stroke · 3/8″ – 394″ (10 – 9999 mm) lengths · 0 – 30 in/s (750 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "End-trim / remnant length",
+        "sub": "",
+        "cells": [
+         "3/8″ / 3-3/8″ (10 / 85 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Magazine loader",
+        "sub": "bundle of 20 ft bars",
+        "cells": [
+         "5 × Ø11-3/4″ (300 mm) bars, 20 ft (6 m) long"
+        ],
+        "key": false
+       },
+       {
+        "label": "Loader dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "242 × 102 × 75″ (6150 × 2600 × 1900 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Compressed air",
+        "sub": "",
+        "cells": [
+         "73 psi (5 bar), 8.7 cfm (245 l/min)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic tank / oil-mist tank",
+        "sub": "",
+        "cells": [
+         "18.5 gal / 0.4 gal (70 / 1.5 l)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table height",
+        "sub": "",
+        "cells": [
+         "37″ (940 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dimensions W × L × H",
+        "sub": "",
+        "cells": [
+         "163 × 98 × 126″ (4150 × 2500 × 3200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "24,251 lb (11,000 kg)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "OPUS 300",
+      "glance": [
+       "Ø35-7/16″ TCT",
+       "Ø2-3/4″ – 11-3/4″",
+       "to 9-1/2″",
+       "50 HP",
+       "24,251 lb"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "blade",
+     "round",
+     "square",
+     "main_motor",
+     "weight"
+    ],
+    "caps": {
+     "OPUS 300": "Automatic TCT circular saw · solid bar to Ø11-3/4″"
+    },
+    "note": "Capacities are for solid steel bar with a TCT blade. Supplied for 600 V 3-phase with a CSA-approved panel (208 / 240 / 480 V on request)."
+   },
+   "headline": "Solid bar Ø2-3/4″ to Ø11-3/4″ (70 – 300 mm) · Ø35-7/16″ TCT blade · servo feed · 20 ft loader",
+   "group": "bekamak-circular"
+  }
+ }
+}

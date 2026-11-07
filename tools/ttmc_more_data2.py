@@ -14,7 +14,7 @@ T = TT.TAB
 NT = TN.TAB          # 2026 new items, welding positioners and supports
 
 # =============================================================================================== cold saws & abrasive saws
-P_COLD = "circular-cold-saws"
+P_COLD = "cold-saws"           # the cold saw page under the cold saw hub (tools/cold_saw_pages.py groups these families, Nov 7 2026)
 COLD = [
     F("tt-cs", P_COLD, "tt-cold", "CS cold saws, 9 – 14″ blade, cut Ø2-3/8 – 4-3/4″", "CS cold saws", T["tt-cs"],
       "Gear-driven cold saws for clean, burr-free cuts in tube, bar and profiles. The CS-225, CS-250 and CS-275 run a 9 – 11″ blade at "
