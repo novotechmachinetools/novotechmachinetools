@@ -18,7 +18,6 @@
   "tt-3in1",
   "tt-e3in1",
   "tt-lock",
-  "tt-hvac",
   "tt-duct",
   "tt-s75",
   "tt-s75h",
@@ -5090,94 +5089,6 @@
    "manual": false,
    "no_pdf": true,
    "group": "lock"
-  },
-  "tt-hvac": {
-   "id": "tt-hvac",
-   "brand": "novotech",
-   "name": "SL-10 electric seam closer for Pittsburgh seams, 26 – 20 ga",
-   "short": "SL-10 seam closer",
-   "models_label": "SL-10 · 1 model",
-   "summary": "The SL-10 runs along a Pittsburgh seam and closes it in three stages — 30°, 75° and 90° — adjusting itself to the sheet as it goes: faster, quieter and neater than closing the lip with a hammer, on straight and curved rectangular duct in 26 – 20 ga. It weighs 15 lb, so one hand guides it along the seam on the bench or on the job site.",
-   "features": [
-    "Closes Pittsburgh seams in 3 stages (30°, 75°, 90°)",
-    "26 – 20 ga (0.5 – 1 mm) sheet; flange 0.28 – 0.35″ (7 – 9 mm)",
-    "13 – 23 ft/min (4 – 7 m/min); 1,400 W motor, 120 V or 230 V",
-    "15 lb (6.6 kg) — portable"
-   ],
-   "optional": [],
-   "images": [
-    "tm-sl10"
-   ],
-   "videos": [],
-   "headline": "26 – 20 ga duct",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "SL-10",
-      "sub": "Electric seam closer for Pittsburgh seams",
-      "models": [
-       "SL-10"
-      ],
-      "rows": [
-       {
-        "label": "Job",
-        "sub": "",
-        "cells": [
-         "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "26 – 20 ga (0.5 – 1 mm); flange 0.28 – 0.35″ (7 – 9 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Drive",
-        "sub": "",
-        "cells": [
-         "1,400 W motor, 120 V or 230 V, 13 – 23 ft/min (4 – 7 m/min)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "15 lb (6.6 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "SL-10",
-      "glance": [
-       "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)",
-       "26 – 20 ga (0.5 – 1 mm); flange 0.28 – 0.35″ (7 – 9 mm)",
-       "15 lb (6.6 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "job",
-     "capacity",
-     "weight"
-    ],
-    "caps": {
-     "SL-10": "Closes Pittsburgh seams, 3 stages (30°, 75°, 90°)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "duct"
   },
   "tt-duct": {
    "id": "tt-duct",

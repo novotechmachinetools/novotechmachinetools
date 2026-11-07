@@ -82,21 +82,19 @@ PAGES = {
     ),
     D.P_LOCK: dict(
         title="Lock Formers — Pittsburgh Machines & HVAC Duct Tools | NovoTech",
-        meta="Pittsburgh lock formers for 26 – 16 ga duct, an auxiliary roll former for button lock and drive cleat, an electric seam closer, a power beading machine and a slitting machine.",
+        meta="Pittsburgh lock formers for 26 – 16 ga duct, an auxiliary roll former for button lock and drive cleat, a power beading machine, a slitting machine and a pneumatic lock seamer for round duct.",
         h1="Lock formers and HVAC duct machines — Pittsburgh lock formers, roll formers and duct tools",
         nav="Lock formers & HVAC",
         intro="A lock former (Pittsburgh machine) rolls the edge of a duct panel into the Pittsburgh lock — the pocket the matching flange is "
               "hammered into to close a rectangular duct — and, with other roll sets, double seams, drive cleats, button locks and flanges. "
               "NovoTech's value-line HVAC machines are built in China to our specification: the PF20G lock former for 26 – 20 ga, the PF16G "
               "for 25 – 16 ga with six roll forms as standard, and the AX20G auxiliary roll former whose roll sets change in under five "
-              "minutes; and the machines that finish the duct — the SL-10 electric seam closer, the RM18E power beading machine for round "
-              "duct and the LQ15 slitting and bending machine. Parts and support from Mississauga, ON, Canada.",
+              "minutes; and the machines for round duct — the RM18E power beading machine and the LQ15 slitting and bending machine. "
+              "Parts and support from Mississauga, ON, Canada.",
         points=["PF20G and PF16G Pittsburgh lock formers, 26 – 16 ga; AX20G roll former with button lock, drive cleat and 6-in-1 flange rolls",
-                "SL-10 electric seam closer: closes Pittsburgh seams in three stages, 26 – 20 ga, 13 – 23 ft/min",
                 "RM18E power beading machine for round duct, 15 ga; LQ15 slitting and bending machine, 16 ga × 47″"],
-        hero="tm-pf16g", minis=["tm-ax20g", "tm-sl10"],
+        hero="tm-pf16g", minis=["tm-ax20g", "tm-pf20g"],
         groups=[("lock", "Lock formers and roll formers", "The machines that roll the joints of rectangular duct: Pittsburgh locks, double seams, drive cleats, button locks and flanges.", False),
-                ("duct", "Electric seam closer", "The SL-10 closes the Pittsburgh seam after the lock former — faster and neater than a hammer.", False),
                 ("round", "Power beading and slitting machines", "For round duct and pipe: a power beading machine and a slitting and bending machine.", False)],
         faq=[{"q": "What is a Pittsburgh lock, and what gauge can a lock former take?",
               "a": "The Pittsburgh lock is the standard longitudinal seam of rectangular duct: the lock former rolls a pocket on one edge of the panel, the other edge is bent to a 90° flange, the flange goes into the pocket and the lip is hammered (or closed with a seam closer) over it. The PF20G forms it in 26 to 20 ga, the PF16G in 25 to 16 ga mild steel; galvanized steel is the usual material."},
@@ -104,8 +102,6 @@ PAGES = {
               "a": "The PF20G is the compact lock former for light duct — Pittsburgh, flange attachment and right angle in 26 – 20 ga, with double seam and drive cleat rolls as options. The PF16G takes duct to 16 ga and has six roll forms as standard — Pittsburgh, flange attachment, right angle, double seam, drive cleat and Z — on one machine. The AX20G is an auxiliary roll former for the joints a lock former does not make: button locks, Acme double seams, drive cleats and a 6-in-1 set of flanges and standing seams, with roll sets that change in five minutes."},
              {"q": "How much material does a Pittsburgh lock use?",
               "a": "About 1″ of sheet for the pocket; the adjustable auto-guides set the edge so the pocket depth is consistent and material waste stays at a minimum. Allow for it when you lay out the blanks."},
-             {"q": "Do I need a seam closer?",
-              "a": "For a few ducts a week the lip is closed with a hammer. For production the SL-10 runs along the seam and closes it in three stages — 30°, 75°, 90° — adjusting itself to the sheet thickness: faster, quieter and a neater seam than hammering."},
              VOLT],
         related=[{"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes"}, {"href": "bead-rollers.html", "label": "Bead rollers and beading machines"},
                  {"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "circle-cutters-and-seamers.html", "label": "Circle shears and flanging"},

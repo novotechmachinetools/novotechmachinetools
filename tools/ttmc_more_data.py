@@ -246,14 +246,7 @@ LOCK = [
        "AX20G: roll sets change without tools; quick jam release; roll sets at extra cost",
        "Single-phase or 3-phase motors: 1 HP (PF20G), 3 HP (PF16G), 4 HP (AX20G)"],
       ["tm-pf16g", "tm-pf20g", "tm-ax20g", "tm-lock-forms"], headline="26 – 16 ga mild steel", cap="[Capacity, mild steel] · [Speed]"),
-    F("tt-hvac", P_LOCK, "duct", "SL-10 electric seam closer for Pittsburgh seams, 26 – 20 ga", "SL-10 seam closer",
-      [pick(T["tt-hvac"][0], ["SL-10"], title="SL-10", sub="Electric seam closer for Pittsburgh seams")],
-      "The SL-10 runs along a Pittsburgh seam and closes it in three stages — 30°, 75° and 90° — adjusting itself to the sheet as it "
-      "goes: faster, quieter and neater than closing the lip with a hammer, on straight and curved rectangular duct in 26 – 20 ga. It "
-      "weighs 15 lb, so one hand guides it along the seam on the bench or on the job site.",
-      ["Closes Pittsburgh seams in 3 stages (30°, 75°, 90°)", "26 – 20 ga (0.5 – 1 mm) sheet; flange 0.28 – 0.35″ (7 – 9 mm)",
-       "13 – 23 ft/min (4 – 7 m/min); 1,400 W motor, 120 V or 230 V", "15 lb (6.6 kg) — portable"],
-      ["tm-sl10"], headline="26 – 20 ga duct", cap="[Job]"),
+    # the SL-10 electric seam closer is not sold any more (the owner, Nov 7 2026)
     F("tt-duct", P_LOCK, "round", "RM18E power beading machine and LQ15 slitting and bending machine", "Duct beading and slitting", [T["tt-etb"][1]],
       "Two powered machines for round duct: the RM18E puts single and offset beads on round duct — 15 ga (1.8 mm) with a 9-3/8″ throat, "
       "three standard roll sets and a foot pedal; the LQ15 slits 16 ga (1.5 mm) sheet up to 47″ wide and bends it for duct work.",
