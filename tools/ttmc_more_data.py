@@ -570,17 +570,8 @@ TUBE = [
 P_WOOD = "woodworking-machinery"
 WD = NT["tt-wood-dust"]
 WOOD = [
-    F("tt-wm", P_WOOD, "combo", "WM2000 · WM2200 · WM2200R · WM2500E multifunction woodworking machines, 8 – 10″ planing", "WM multifunction machines",
-      NT["tt-wm"],
-      "Four machines on one motor for the bench: a surface planer 7.9 or 9.8″ wide, a table saw with an 8-1/4 to 11″ blade, and on the "
-      "WM2200 models a milling and drilling table on the side for mortises and dowel holes — for the home shop, the small joinery and "
-      "the site where there is room for one machine. The WM2200R adds a 9.8 × 6.3″ thicknesser on its own legs; the WM2500E has a 3.4 HP "
-      "motor that starts at 160 V on a weak site supply. Planing and cutting angles from 0 to 45° with the fences and devices supplied.",
-      ["Surface planing 7.9″ (WM2000) or 9.8″ wide, up to 9/64″ (3.5 mm) per pass",
-       "Table saw: Ø8-1/4″ blade and 2-3/4″ cut (WM2000) to Ø11″ blade and 4″ cut (WM2500E)",
-       "Milling and drilling table 14.6 × 7.9″ on the WM2200, WM2200R and WM2500E",
-       "WM2200R: thicknesser 9.8 × 6.3″ (250 × 160 mm), on legs", "2.7 – 3.4 HP, 5,500 rpm; 95 – 172 lb"],
-      ["tm-wm2200", "tm-wm2000", "tm-wm2500e", "tm-wm2200r", "tm-wm-planing", "tm-wm-drilling"], headline="8 – 10″ planing", cap="[Planing width] planing"),
+    # the WM multifunction machines (tt-wm) and the MS hollow-chisel mortisers (tt-mortise) are off the site (the owner,
+    # Nov 7 2026); their tables stay in ttmc_new_tables
     F("tt-wj", P_WOOD, "planing", "WJ jointers with spiral cutterhead, 6″ and 8″, and WJ10X40 10″ surface planer", "WJ jointers", NT["tt-wj"],
       "Jointers flatten one face of a rough board and square an edge to it before the board goes through the thickness planer. The "
       "WJ-6x55 and WJ-8x76 have spiral cutterheads with indexable carbide inserts — quieter, a cleaner surface on figured wood, and an "
@@ -623,13 +614,6 @@ WOOD = [
       ["TBS-356: 14″, 13.6″ throat, 13″ resaw, 1.5 HP, 115 / 230 V", "TBS-457: 18″, 18.4″ throat, 12″ resaw, 3 HP",
        "Blades 1/8 – 3/4″ (TBS-356) and 1/4 – 1-1/4″ (TBS-457) wide", "Two blade speeds; table tilts 10° left and 45° right"],
       ["tm-tbs457", "tm-tbs356"], headline="14 – 18″", cap="[Resaw height] resaw"),
-    F("tt-mortise", P_WOOD, "boring", "MS 3-8 · MS 4-8 benchtop hollow-chisel mortisers", "MS mortisers", NT["tt-mortise"],
-      "Hollow-chisel mortisers cut the square mortise of a mortise-and-tenon joint: a bit turns inside a square hollow chisel that the "
-      "lever drives into the wood. The MS 3-8 comes with 1/4, 5/16, 3/8 and 1/2″ chisels and cuts mortises 3″ deep; the MS 4-8 has a "
-      "1/2″ chuck, a 3/4 HP motor and 4-1/2″ of depth.",
-      ["MS 3-8: 1/2 HP; chisels 1/4 – 1/2″ included; mortises 3″ deep", "MS 4-8: 3/4 HP; 1/2″ chuck; mortises 4-1/2″ deep",
-       "Stock 8 – 8-1/2″ wide and 6 – 7-3/8″ thick", "JT #2 spindle; 1,725 or 3,450 rpm at 60 Hz"],
-      ["tm-ms38", "tm-ms48"], headline="3 – 4-1/2″ deep", cap="[Mortise depth, max] deep"),
     F("tt-slotbore", P_WOOD, "boring", "MGX slot boring machines and WM-01 horizontal boring machine", "Slot and horizontal boring", NT["tt-slotbore"],
       "Slot mortisers and boring machines for joinery and furniture: the MGX16 and MGX20R bore slot mortises and dowel holes with the "
       "work clamped on the table while the motor table moves across, along and up — the MGX20R with two speeds and a head that swivels "
@@ -644,7 +628,8 @@ WOOD = [
       ["12″ (305 mm) swing; 16″ (406 mm) between centres", "6 speeds; 1/2 HP motor",
        "Spindle nose 1″ × 8 TPI; MT-2 headstock and tailstock; 2-1/2″ ram travel", "12-position index head; spindle lock; self-ejecting tailstock"],
       ["tm-tl406", "tm-tl406-bed"], headline="12 × 16″", cap="[Swing over bed] swing", optional=["Bed extension"]),
-    F("tt-ws25", P_WOOD, "finish", "WS25-200 belt and disc combination sander, 1 × 42″ belt and 8″ disc", "WS25-200 sander", [WD[0]],
+    # on the belt grinder page, first of the combination machines (the owner, Nov 7 2026: off the woodworking page)
+    F("tt-ws25", P_GRIND, "combo", "WS25-200 belt and disc combination sander, 1 × 42″ belt and 8″ disc", "WS25-200 sander", [WD[0]],
       "A bench sander for small parts and edges: a 1 × 42″ belt at 3,000 ft/min and an 8″ disc on one 1/3 HP motor, both with "
       "cast-iron tables that tilt 0 – 45° and have miter slots, and 1-1/2″ dust ports for a shop vacuum.",
       ["1 × 42″ belt at 3,000 ft/min; 8″ disc at 1,725 rpm", "Cast-iron tables with miter slots, both tilt 0 – 45°", "1-1/2″ dust ports; 1/3 HP; 57 lb"],
@@ -659,4 +644,8 @@ WOOD = [
 # TUBE is not in the value-line family set any more: the benders are a group on rotary-draw-tube-benders.html,
 # written with the CSM / ISITAN / premium-line benders by tools/isitan_tube_benders.py (Nov 7 2026)
 # CNC (the value-line CNC machine tools page) is off the site (the owner, Nov 7 2026)
+# the WS25-200 sander (defined with the woodworking machines, its tables are there) goes before the SP machines, smallest first
+_ws25 = next(f for f in WOOD if f["id"] == "tt-ws25")
+WOOD.remove(_ws25)
+GRIND.insert(next(i for i, f in enumerate(GRIND) if f["id"] == "tt-sp"), _ws25)
 NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + SHAPE + WOOD

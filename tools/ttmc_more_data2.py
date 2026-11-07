@@ -469,23 +469,24 @@ WELD = [
       ["tm-mdt4840", "tm-mdt6137", "tm-mdt6022", "tm-mdt-filter"], headline="1,350 – 3,700 CFM", cap="[Air flow]"),
 ]
 
-# =============================================================================================== right-angle (corner) grinders
+# =============================================================================================== corner grinders (the supplier's sheet
+# says "right angle grinding machine" — they are corner grinding machines, the owner, Nov 7 2026)
 P_CORNER_GRIND = "corner-grinding-machines"      # at the bottom of the GECAM corner grinder page (the owner, Nov 7 2026)
 CORNER_GRIND = [
-    F("tt-yq-h", P_CORNER_GRIND, "tt-yq", "YQ horizontal right-angle grinding machines for box weld seams, edges to 35.4 – 59.1″",
-      "YQ right-angle grinders", NT["tt-yq-h"],
-      "Grinds and polishes the right-angle weld seams and weld marks on square boxes — water tanks, battery boxes and other box-shaped "
+    F("tt-yq-h", P_CORNER_GRIND, "tt-yq", "YQ horizontal corner grinding machines for box weld seams, edges to 35.4 – 59.1″",
+      "YQ horizontal corner grinders", NT["tt-yq-h"],
+      "Grinds and polishes the corner weld seams and weld marks on square boxes — water tanks, battery boxes and other box-shaped "
       "parts — and grinds and polishes the R corner: the box lies on the table and the belt travels the edge at 0 – 236 in/min. Three "
       "lengths for edges up to 35.4, 47.2 or 59.1″, a 4 × 83″ abrasive belt and 4 HP in total; the machine is run from a separate "
       "control cabinet with a touch screen.",
       ["Edges up to 35.4″ (YQ-900), 47.2″ (YQ-1200) or 59.1″ (YQ-1500)", "Grinding speed 0 – 236 in/min (0 – 100 mm/s)",
        "Abrasive belt 4 × 83″ (100 × 2,100 mm); 4 HP (3 kW) in total",
-       "Right-angle weld seams and weld marks ground and polished; R corners on water tanks and battery boxes",
+       "Corner weld seams and weld marks ground and polished; R corners on water tanks and battery boxes",
        "Separate control cabinet with touch screen; foot pedal"],
       ["tm-yq-h"], headline="Edges to 35.4 – 59.1″", cap="[Processing length, max] edges"),
-    F("tt-yq-v", P_CORNER_GRIND, "tt-yq", "YQ-450 vertical right-corner grinding and polishing machine, corners to 17.7″ high",
+    F("tt-yq-v", P_CORNER_GRIND, "tt-yq", "YQ-450 vertical corner grinding and polishing machine, corners to 17.7″ high",
       "YQ-450 vertical corner grinder", NT["tt-yq-v"],
-      "The vertical machine grinds and polishes the right-angle corner of a box from the side, for corners up to 17.7″ high: the "
+      "The vertical machine grinds and polishes the corner of a box from the side, for corners up to 17.7″ high: the "
       "belt head swings on a 180 W motor with adjustable speed, the part rests on the work table against its fence, and the machine "
       "is controlled from a separate electrical cabinet.",
       ["Corners up to 17.7″ (450 mm) high", "Swinging belt head: 180 W motor, adjustable speed",

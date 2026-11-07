@@ -61,7 +61,7 @@ BLURBS = {
     "cnc-lathe": "TTC and TTH slant-bed CNC lathes, 6″ to 12″ chucks, Fanuc control, C-axis live tooling.",
     "vertical-machining-center": "TMC vertical machining centres, BBT40, and TDC double-column machining centres, BBT50.",
     "surface-grinder": "TGH-B 450 precision NC surface grinder, 17.7 × 35.4″ table.",
-    "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, multifunction machines, mortisers, a lathe and dust collection.",
+    "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, slot boring machines, a lathe and dust collection.",
 }
 GROUPS = [
     ("bending", "Sheet metal bending", "Press brakes, panel benders, sheet metal brakes and the tooling that goes in them.",

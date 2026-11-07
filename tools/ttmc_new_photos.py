@@ -20,7 +20,7 @@ SRC = "/home/claude/ttmc-new/"
 NI, BR = SRC + "new_items_rar/", SRC + "brochure_rar/"
 BEND, SAW, WELD = NI + "折弯类/", NI + "锯床类/", NI + "焊接变位机或旋转台/"
 PDF_A, PDF_B = SRC + "pdf_a/a.pdf", SRC + "pdf_b/b.pdf"
-YQ = SRC + "yq/"                      # the right-angle grinder sheet (Nov 7 2026): its photos, extracted
+YQ = SRC + "yq/"                      # the corner grinder sheet ("Right Angle Grinding Machine", Nov 7 2026): its photos, extracted
 DFM = SRC + "dfm/"                    # the dry deburring sander sheet (Nov 7 2026): its photos, cropped at 250 dpi
 TFM_PDF = BR + "TFM3100x2E TFMS3100X2E.pdf"
 DST = P.DST
@@ -100,11 +100,11 @@ PHOTOS = {
     # ------------------------------------------------------------------------------------------- deburring, milling, presses
     "tm-mgm300": S(NI + "MGM300.jpg", (112, 250, 1032, 1592), "MGM-300 finishing and deburring machine, 12″ working width", clean=True),
     "tm-mgm300-conveyor": S(NI + "MGM300.jpg", (1231, 1218, 1799, 1592), "Conveyor drive and abrasive belt of the MGM-300", detail=True),
-    # right-angle grinders (the owner's sheet, Nov 7 2026): the vertical machine's photo is the sheet's two halves stacked; the
+    # corner grinders (the owner's sheet, Nov 7 2026): the vertical machine's photo is the sheet's two halves stacked; the
     # Chinese warning labels are filled from the paint around them
-    "tm-yq-h": S(YQ + "yq-h.png", None, "YQ horizontal right-angle grinding machine with its control cabinet and foot pedal",
+    "tm-yq-h": S(YQ + "yq-h.png", None, "YQ horizontal corner grinding machine with its control cabinet and foot pedal",
                  logo=[(495, 214, 555, 260), (456, 91, 500, 102)]),
-    "tm-yq-v": S(YQ + "yq450.png", None, "YQ-450 vertical right-corner grinding and polishing machine",
+    "tm-yq-v": S(YQ + "yq450.png", None, "YQ-450 vertical corner grinding and polishing machine",
                  logo=[(286, 66, 402, 182), (946, 82, 1032, 168), (972, 588, 1008, 668)]),
     # dry deburring and finishing sanders (the owner's sheet, Nov 7 2026): the Chinese labels on the sanding heads are filled
     "tm-dfm1300": S(DFM + "dfm-main.png", None, "R-R1300 two-head dry deburring and finishing sander with its dust collector",

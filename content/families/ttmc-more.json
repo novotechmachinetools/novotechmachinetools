@@ -27,6 +27,7 @@
   "tt-s50v",
   "tt-sdd75",
   "tt-bgm50",
+  "tt-ws25",
   "tt-sp",
   "tt-btm250",
   "tt-ds20",
@@ -47,16 +48,13 @@
   "tt-ksm850",
   "tt-slot",
   "tt-pic50",
-  "tt-wm",
   "tt-wj",
   "tt-tdm",
   "tt-wjp",
   "tt-wts",
   "tt-tbs",
-  "tt-mortise",
   "tt-slotbore",
   "tt-tl406",
-  "tt-ws25",
   "tt-dc900",
   "tt-cs",
   "tt-pds315h",
@@ -6357,6 +6355,119 @@
    "no_pdf": true,
    "group": "belt"
   },
+  "tt-ws25": {
+   "id": "tt-ws25",
+   "brand": "novotech",
+   "name": "WS25-200 belt and disc combination sander, 1 × 42″ belt and 8″ disc",
+   "short": "WS25-200 sander",
+   "models_label": "WS25-200 · 1 model",
+   "summary": "A bench sander for small parts and edges: a 1 × 42″ belt at 3,000 ft/min and an 8″ disc on one 1/3 HP motor, both with cast-iron tables that tilt 0 – 45° and have miter slots, and 1-1/2″ dust ports for a shop vacuum.",
+   "features": [
+    "1 × 42″ belt at 3,000 ft/min; 8″ disc at 1,725 rpm",
+    "Cast-iron tables with miter slots, both tilt 0 – 45°",
+    "1-1/2″ dust ports; 1/3 HP; 57 lb"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ws25"
+   ],
+   "videos": [],
+   "headline": "1 × 42″ belt, 8″ disc",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "WS25-200",
+      "sub": "Belt and disc combination sander, 1 × 42″ belt and 8″ disc",
+      "models": [
+       "WS25-200"
+      ],
+      "rows": [
+       {
+        "label": "Belt",
+        "sub": "",
+        "cells": [
+         "1 × 42″ (25 × 1,067 mm), 3,000 ft/min"
+        ],
+        "key": true
+       },
+       {
+        "label": "Disc",
+        "sub": "",
+        "cells": [
+         "8″ (203 mm), 1,725 rpm at 60 Hz"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tables",
+        "sub": "",
+        "cells": [
+         "Cast iron with miter slots, both tilt 0 – 45°: belt 6 × 7″ (153 × 178 mm), disc 4 × 10″ (102 × 254 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Dust ports",
+        "sub": "",
+        "cells": [
+         "1-1/2″ (38 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "1/3 HP (0.25 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "25 × 15 × 20″ (64 × 38 × 50 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "57 lb (26 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "WS25-200",
+      "glance": [
+       "1 × 42″ (25 × 1,067 mm), 3,000 ft/min",
+       "8″ (203 mm), 1,725 rpm at 60 Hz",
+       "1/3 HP (0.25 kW)",
+       "57 lb (26 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "belt",
+     "disc",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "WS25-200": "1 × 42″ (25 × 1,067 mm), 3,000 ft/min"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "combo"
+  },
   "tt-sp": {
    "id": "tt-sp",
    "brand": "novotech",
@@ -10957,235 +11068,6 @@
    "no_pdf": true,
    "group": "pic"
   },
-  "tt-wm": {
-   "id": "tt-wm",
-   "brand": "novotech",
-   "name": "WM2000 · WM2200 · WM2200R · WM2500E multifunction woodworking machines, 8 – 10″ planing",
-   "short": "WM multifunction machines",
-   "models_label": "WM2000 – WM2500E · 4 models",
-   "summary": "Four machines on one motor for the bench: a surface planer 7.9 or 9.8″ wide, a table saw with an 8-1/4 to 11″ blade, and on the WM2200 models a milling and drilling table on the side for mortises and dowel holes — for the home shop, the small joinery and the site where there is room for one machine. The WM2200R adds a 9.8 × 6.3″ thicknesser on its own legs; the WM2500E has a 3.4 HP motor that starts at 160 V on a weak site supply. Planing and cutting angles from 0 to 45° with the fences and devices supplied.",
-   "features": [
-    "Surface planing 7.9″ (WM2000) or 9.8″ wide, up to 9/64″ (3.5 mm) per pass",
-    "Table saw: Ø8-1/4″ blade and 2-3/4″ cut (WM2000) to Ø11″ blade and 4″ cut (WM2500E)",
-    "Milling and drilling table 14.6 × 7.9″ on the WM2200, WM2200R and WM2500E",
-    "WM2200R: thicknesser 9.8 × 6.3″ (250 × 160 mm), on legs",
-    "2.7 – 3.4 HP, 5,500 rpm; 95 – 172 lb"
-   ],
-   "optional": [],
-   "images": [
-    "tm-wm2200",
-    "tm-wm2000",
-    "tm-wm2500e",
-    "tm-wm2200r",
-    "tm-wm-planing",
-    "tm-wm-drilling"
-   ],
-   "videos": [],
-   "headline": "8 – 10″ planing",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "WM2000 · WM2200 · WM2200R · WM2500E",
-      "sub": "Multifunction woodworking machines — planing, sawing, milling and drilling",
-      "models": [
-       "WM2000",
-       "WM2200",
-       "WM2200R",
-       "WM2500E"
-      ],
-      "rows": [
-       {
-        "label": "Planing width",
-        "sub": "",
-        "cells": [
-         "7.9″ (200 mm)",
-         "9.8″ (250 mm)",
-         "9.8″ (250 mm)",
-         "9.8″ (250 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Planing depth per pass",
-        "sub": "",
-        "cells": [
-         "0 – 1/8″ (0 – 3 mm)",
-         "0 – 9/64″ (0 – 3.5 mm)",
-         "0 – 9/64″ (0 – 3.5 mm)",
-         "0 – 9/64″ (0 – 3.5 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Saw blade / depth of cut",
-        "sub": "",
-        "cells": [
-         "Ø8-1/4″ (210 mm) / 2-3/4″ (70 mm)",
-         "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
-         "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
-         "Ø11″ (280 mm) / 4″ (100 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Saw table L × W",
-        "sub": "",
-        "cells": [
-         "28 × 19.7″ (710 × 500 mm)",
-         "29.5 × 20.1″ (750 × 510 mm)",
-         "29.5 × 20.1″ (750 × 510 mm)",
-         "29.5 × 20.1″ (750 × 510 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Planer tables L × W",
-        "sub": "",
-        "cells": [
-         "27.6 × 8.7″ (700 × 220 mm)",
-         "34.7 × 12.5″ (882 × 318 mm)",
-         "39.4 × 12.5″ (1,000 × 318 mm)",
-         "34.7 × 12.5″ (882 × 318 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Milling and drilling table",
-        "sub": "",
-        "cells": [
-         "—",
-         "14.6 × 7.9″ (370 × 200 mm)",
-         "14.6 × 7.9″ (370 × 200 mm)",
-         "14.6 × 7.9″ (370 × 200 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Thicknessing",
-        "sub": "",
-        "cells": [
-         "—",
-         "—",
-         "9.8 × 6.3″ (250 × 160 mm); table 22.8 × 9.8″ (580 × 250 mm)",
-         "—"
-        ],
-        "key": false
-       },
-       {
-        "label": "Cutting and planing angles",
-        "sub": "",
-        "cells": [
-         "0 – 45° with the devices",
-         "0 – 45° with the devices",
-         "0 – 45° with the devices",
-         "0 – 45° with the devices"
-        ],
-        "key": false
-       },
-       {
-        "label": "Knives",
-        "sub": "",
-        "cells": [
-         "2 × 7.9″ (200 mm), regrindable",
-         "2 × 9.8″ (250 mm), regrindable",
-         "2 × 9.8″ (250 mm), regrindable",
-         "2 × 9.8″ (250 mm), regrindable"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor",
-        "sub": "",
-        "cells": [
-         "2.7 HP (2 kW), 5,500 rpm",
-         "3 HP (2.2 kW), 5,500 rpm",
-         "3 HP (2.2 kW), 5,500 rpm",
-         "3.4 HP (2.5 kW), 5,500 rpm; starts at 160 V"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "34 × 20 × 10″ (86 × 52 × 25 cm)",
-         "36 × 23 × 12″ (92 × 58.5 × 30 cm)",
-         "41 × 21 × 21″ (104 × 52.5 × 53.5 cm)",
-         "36 × 23 × 13″ (92 × 58.5 × 33 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "95 lb (43 kg)",
-         "130 lb (59 kg)",
-         "172 lb (78 kg)",
-         "132 lb (60 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "WM2000",
-      "glance": [
-       "7.9″ (200 mm)",
-       "Ø8-1/4″ (210 mm) / 2-3/4″ (70 mm)",
-       "2.7 HP (2 kW), 5,500 rpm",
-       "95 lb (43 kg)"
-      ]
-     },
-     {
-      "name": "WM2200",
-      "glance": [
-       "9.8″ (250 mm)",
-       "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
-       "3 HP (2.2 kW), 5,500 rpm",
-       "130 lb (59 kg)"
-      ]
-     },
-     {
-      "name": "WM2200R",
-      "glance": [
-       "9.8″ (250 mm)",
-       "Ø9-7/8″ (250 mm) / 3-3/8″ (85 mm)",
-       "3 HP (2.2 kW), 5,500 rpm",
-       "172 lb (78 kg)"
-      ]
-     },
-     {
-      "name": "WM2500E",
-      "glance": [
-       "9.8″ (250 mm)",
-       "Ø11″ (280 mm) / 4″ (100 mm)",
-       "3.4 HP (2.5 kW), 5,500 rpm; starts at 160 V",
-       "132 lb (60 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "planing_width",
-     "saw_blade_depth_of_cut",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "WM2000": "7.9″ (200 mm) planing",
-     "WM2200": "9.8″ (250 mm) planing",
-     "WM2200R": "9.8″ (250 mm) planing",
-     "WM2500E": "9.8″ (250 mm) planing"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "combo"
-  },
   "tt-wj": {
    "id": "tt-wj",
    "brand": "novotech",
@@ -12124,151 +12006,6 @@
    "no_pdf": true,
    "group": "sawing"
   },
-  "tt-mortise": {
-   "id": "tt-mortise",
-   "brand": "novotech",
-   "name": "MS 3-8 · MS 4-8 benchtop hollow-chisel mortisers",
-   "short": "MS mortisers",
-   "models_label": "MS 3-8 · MS 4-8 · 2 models",
-   "summary": "Hollow-chisel mortisers cut the square mortise of a mortise-and-tenon joint: a bit turns inside a square hollow chisel that the lever drives into the wood. The MS 3-8 comes with 1/4, 5/16, 3/8 and 1/2″ chisels and cuts mortises 3″ deep; the MS 4-8 has a 1/2″ chuck, a 3/4 HP motor and 4-1/2″ of depth.",
-   "features": [
-    "MS 3-8: 1/2 HP; chisels 1/4 – 1/2″ included; mortises 3″ deep",
-    "MS 4-8: 3/4 HP; 1/2″ chuck; mortises 4-1/2″ deep",
-    "Stock 8 – 8-1/2″ wide and 6 – 7-3/8″ thick",
-    "JT #2 spindle; 1,725 or 3,450 rpm at 60 Hz"
-   ],
-   "optional": [],
-   "images": [
-    "tm-ms38",
-    "tm-ms48"
-   ],
-   "videos": [],
-   "headline": "3 – 4-1/2″ deep",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "MS 3-8 · MS 4-8",
-      "sub": "Benchtop hollow-chisel mortisers",
-      "models": [
-       "MS 3-8",
-       "MS 4-8"
-      ],
-      "rows": [
-       {
-        "label": "Chisel and chuck",
-        "sub": "",
-        "cells": [
-         "3/8″ (10 mm) chuck, 5/8″ (16 mm) collar; chisels 1/4, 5/16, 3/8 and 1/2″ included",
-         "1/2″ (12.7 mm) chuck, 5/8″ and 3/4″ (16, 19 mm) collars"
-        ],
-        "key": true
-       },
-       {
-        "label": "Stock, max width × thickness",
-        "sub": "",
-        "cells": [
-         "8-1/2 × 6″ (216 × 153 mm) with the riser block",
-         "8 × 7-3/8″ (203 × 187 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Mortise depth, max",
-        "sub": "",
-        "cells": [
-         "3″ (76 mm)",
-         "4-1/2″ (114 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Chisel travel",
-        "sub": "",
-        "cells": [
-         "4-5/8″ (118 mm)",
-         "4-3/4″ (120 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Spindle",
-        "sub": "",
-        "cells": [
-         "JT #2, 1,725 rpm at 60 Hz",
-         "JT #2, 3,450 rpm at 60 Hz"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor",
-        "sub": "",
-        "cells": [
-         "1/2 HP (0.37 kW)",
-         "3/4 HP (0.56 kW)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "14 × 29 × 32″ (35 × 74 × 82 cm)",
-         "26 × 17 × 14″ (66 × 43 × 36 cm) machine + 13 × 16 × 6″ (33 × 41 × 15 cm) base"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "71 lb (32 kg)",
-         "88 lb (40 kg) with the base, shipping weight"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "MS 3-8",
-      "glance": [
-       "3/8″ (10 mm) chuck, 5/8″ (16 mm) collar; chisels 1/4, 5/16, 3/8 and 1/2″ included",
-       "8-1/2 × 6″ (216 × 153 mm) with the riser block",
-       "3″ (76 mm)",
-       "1/2 HP (0.37 kW)",
-       "71 lb (32 kg)"
-      ]
-     },
-     {
-      "name": "MS 4-8",
-      "glance": [
-       "1/2″ (12.7 mm) chuck, 5/8″ and 3/4″ (16, 19 mm) collars",
-       "8 × 7-3/8″ (203 × 187 mm)",
-       "4-1/2″ (114 mm)",
-       "3/4 HP (0.56 kW)",
-       "88 lb (40 kg) with the base, shipping weight"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "chisel_and_chuck",
-     "stock_max_width_thickness",
-     "mortise_depth_max",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "MS 3-8": "3″ (76 mm) deep",
-     "MS 4-8": "4-1/2″ (114 mm) deep"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "boring"
-  },
   "tt-slotbore": {
    "id": "tt-slotbore",
    "brand": "novotech",
@@ -12562,119 +12299,6 @@
    "manual": false,
    "no_pdf": true,
    "group": "turning"
-  },
-  "tt-ws25": {
-   "id": "tt-ws25",
-   "brand": "novotech",
-   "name": "WS25-200 belt and disc combination sander, 1 × 42″ belt and 8″ disc",
-   "short": "WS25-200 sander",
-   "models_label": "WS25-200 · 1 model",
-   "summary": "A bench sander for small parts and edges: a 1 × 42″ belt at 3,000 ft/min and an 8″ disc on one 1/3 HP motor, both with cast-iron tables that tilt 0 – 45° and have miter slots, and 1-1/2″ dust ports for a shop vacuum.",
-   "features": [
-    "1 × 42″ belt at 3,000 ft/min; 8″ disc at 1,725 rpm",
-    "Cast-iron tables with miter slots, both tilt 0 – 45°",
-    "1-1/2″ dust ports; 1/3 HP; 57 lb"
-   ],
-   "optional": [],
-   "images": [
-    "tm-ws25"
-   ],
-   "videos": [],
-   "headline": "1 × 42″ belt, 8″ disc",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "WS25-200",
-      "sub": "Belt and disc combination sander, 1 × 42″ belt and 8″ disc",
-      "models": [
-       "WS25-200"
-      ],
-      "rows": [
-       {
-        "label": "Belt",
-        "sub": "",
-        "cells": [
-         "1 × 42″ (25 × 1,067 mm), 3,000 ft/min"
-        ],
-        "key": true
-       },
-       {
-        "label": "Disc",
-        "sub": "",
-        "cells": [
-         "8″ (203 mm), 1,725 rpm at 60 Hz"
-        ],
-        "key": true
-       },
-       {
-        "label": "Tables",
-        "sub": "",
-        "cells": [
-         "Cast iron with miter slots, both tilt 0 – 45°: belt 6 × 7″ (153 × 178 mm), disc 4 × 10″ (102 × 254 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Dust ports",
-        "sub": "",
-        "cells": [
-         "1-1/2″ (38 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor",
-        "sub": "",
-        "cells": [
-         "1/3 HP (0.25 kW)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "25 × 15 × 20″ (64 × 38 × 50 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "57 lb (26 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "WS25-200",
-      "glance": [
-       "1 × 42″ (25 × 1,067 mm), 3,000 ft/min",
-       "8″ (203 mm), 1,725 rpm at 60 Hz",
-       "1/3 HP (0.25 kW)",
-       "57 lb (26 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "belt",
-     "disc",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "WS25-200": "1 × 42″ (25 × 1,067 mm), 3,000 ft/min"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "finish"
   },
   "tt-dc900": {
    "id": "tt-dc900",
@@ -22354,15 +21978,15 @@
   "tt-yq-h": {
    "id": "tt-yq-h",
    "brand": "novotech",
-   "name": "YQ horizontal right-angle grinding machines for box weld seams, edges to 35.4 – 59.1″",
-   "short": "YQ right-angle grinders",
+   "name": "YQ horizontal corner grinding machines for box weld seams, edges to 35.4 – 59.1″",
+   "short": "YQ horizontal corner grinders",
    "models_label": "YQ-900 · YQ-1200 · YQ-1500 · 3 models",
-   "summary": "Grinds and polishes the right-angle weld seams and weld marks on square boxes — water tanks, battery boxes and other box-shaped parts — and grinds and polishes the R corner: the box lies on the table and the belt travels the edge at 0 – 236 in/min. Three lengths for edges up to 35.4, 47.2 or 59.1″, a 4 × 83″ abrasive belt and 4 HP in total; the machine is run from a separate control cabinet with a touch screen.",
+   "summary": "Grinds and polishes the corner weld seams and weld marks on square boxes — water tanks, battery boxes and other box-shaped parts — and grinds and polishes the R corner: the box lies on the table and the belt travels the edge at 0 – 236 in/min. Three lengths for edges up to 35.4, 47.2 or 59.1″, a 4 × 83″ abrasive belt and 4 HP in total; the machine is run from a separate control cabinet with a touch screen.",
    "features": [
     "Edges up to 35.4″ (YQ-900), 47.2″ (YQ-1200) or 59.1″ (YQ-1500)",
     "Grinding speed 0 – 236 in/min (0 – 100 mm/s)",
     "Abrasive belt 4 × 83″ (100 × 2,100 mm); 4 HP (3 kW) in total",
-    "Right-angle weld seams and weld marks ground and polished; R corners on water tanks and battery boxes",
+    "Corner weld seams and weld marks ground and polished; R corners on water tanks and battery boxes",
     "Separate control cabinet with touch screen; foot pedal"
    ],
    "optional": [],
@@ -22376,7 +22000,7 @@
     "tables": [
      {
       "title": "YQ-900 · YQ-1200 · YQ-1500",
-      "sub": "Horizontal right-angle grinding machines",
+      "sub": "Horizontal corner grinding machines",
       "models": [
        "YQ-900",
        "YQ-1200",
@@ -22515,10 +22139,10 @@
   "tt-yq-v": {
    "id": "tt-yq-v",
    "brand": "novotech",
-   "name": "YQ-450 vertical right-corner grinding and polishing machine, corners to 17.7″ high",
+   "name": "YQ-450 vertical corner grinding and polishing machine, corners to 17.7″ high",
    "short": "YQ-450 vertical corner grinder",
    "models_label": "YQ-450 · 1 model",
-   "summary": "The vertical machine grinds and polishes the right-angle corner of a box from the side, for corners up to 17.7″ high: the belt head swings on a 180 W motor with adjustable speed, the part rests on the work table against its fence, and the machine is controlled from a separate electrical cabinet.",
+   "summary": "The vertical machine grinds and polishes the corner of a box from the side, for corners up to 17.7″ high: the belt head swings on a 180 W motor with adjustable speed, the part rests on the work table against its fence, and the machine is controlled from a separate electrical cabinet.",
    "features": [
     "Corners up to 17.7″ (450 mm) high",
     "Swinging belt head: 180 W motor, adjustable speed",
@@ -22535,7 +22159,7 @@
     "tables": [
      {
       "title": "YQ-450",
-      "sub": "Vertical right-corner grinding and polishing machine",
+      "sub": "Vertical corner grinding and polishing machine",
       "models": [
        "YQ-450"
       ],

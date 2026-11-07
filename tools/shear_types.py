@@ -80,41 +80,40 @@ HYDRAULIC = dict(
 )
 
 MECHANICAL = dict(
-    title="Mechanical Shears for Sale in Canada — Guillotine, Electric, Bench & Coil Shears, 20 ga to 3/8″ | NovoTech",
-    meta="Mechanical shears sold, installed and supported in Canada: direct-gear SRGM guillotines, 1/8″ and 1/4″ to 13.8 ft with return-to-sender and cut-to-length versions, flywheel shears to 3/8″, electric and NC electric shears 14 ga – 5/32″, motorized bench shears and a 48″ coil slitter — no hydraulics.",
-    h1="Mechanical shears — guillotine, electric, bench and coil machines, 20 ga to 3/8″",
+    title="Mechanical Shears for Sale in Canada — Guillotine, Electric, Bench & Coil Shears, 20 ga to 1/4″ | NovoTech",
+    meta="Mechanical shears sold, installed and supported in Canada: direct-gear SRGM guillotines, 1/8″ and 1/4″ to 13.8 ft with return-to-sender and cut-to-length versions, electric and NC electric shears 14 ga – 5/32″, motorized bench shears and a 48″ coil slitter — no hydraulics.",
+    h1="Mechanical shears — guillotine, electric, bench and coil machines, 20 ga to 1/4″",
     intro="A mechanical shear drives the cutting beam from an electric motor instead of hydraulic cylinders — through a gearbox and crank "
-          "(direct gear) or a flywheel and clutch — so there is no hydraulic power pack to leak or warm up, the cut is the same on the first "
-          "and the thousandth stroke, and the machine runs up to 55 strokes a minute: the shear for sheet and light plate all day. NovoTech "
+          "(direct gear) or a gearbox — so there is no hydraulic power pack to leak or warm up, the cut is the same on the first "
+          "and the thousandth stroke, and the machine runs up to 35 strokes a minute: the shear for sheet and light plate all day. NovoTech "
           "sells them in Canada in two lines, all on this page: the premium-line SRGM direct-gear guillotines, built in Turkey with European "
           "motors, gearboxes and electrics — the light-type SRGM-H for 1/8″ mild steel and the SRGM for 1/4″ from 43″ to 13.8 ft, the "
           "SRGM-HFR / FR with a return-to-sender sheet support that brings the cut piece back to the operator, and the SRGM-HCL / CL built "
-          "into cut-to-length coil lines; and NovoTech's value line — the Q11 flywheel shears for medium and thick steel, 1/8″ to 3/8″ at 45 "
-          "to 55 strokes a minute, the Q11 electric shears for 14 ga to 5/32″ over 49″ to 100″ with a manual back gauge and counter or, on the "
+          "into cut-to-length coil lines; and NovoTech's value line — "
+          "the Q11 electric shears for 14 ga to 5/32″ over 49″ to 100″ with a manual back gauge and counter or, on the "
           "Q11 NC, a PLC and motorised back gauge, the EBQ01 motorized bench shears for 18 ga over 26″ and 20 ga over 41″, and the "
           "PS-1220×1.5GT that slits 16 ga × 48″ coil into strips and cuts them to length. Each family below has its full specification table "
           "and photos. Every machine comes with a CSA-approved panel and a 1-year warranty, installed, trained and supported from "
-          "Mississauga, ON, Canada. For plate from 3/8″ up, and for the light hydraulic shears, see the hydraulic shears.",
+          "Mississauga, ON, Canada. For plate thicker than 1/4″, and for the light hydraulic shears, see the hydraulic shears.",
     points=["SRGM-H light type, 1/8″ × 3.6 – 10 ft, 35 strokes/min · SRGM standard, 1/4″ × 3.6 – 13.8 ft, 31 strokes/min — premium line, made in Turkey",
             "SRGM-HFR / SRGM-FR with return-to-sender: the cut blank comes back to the front, off-cuts drop to the rear; SRGM-HCL / CL for cut-to-length coil lines",
-            "Value-line Q11 flywheel mechanical shears, 1/8″ – 3/8″ × 39 – 98″, 45 – 55 strokes/min · Q11 electric shears 14 ga – 5/32″ × 49 – 100″ with manual or NC back gauge",
+            "Value-line Q11 electric shears 14 ga – 5/32″ × 49 – 100″ with manual or NC back gauge",
             "EBQ01 motorized bench shears, 18 ga × 26″ and 20 ga × 41″ · PS-1220×1.5GT coil slitting and cut-to-length machine, 16 ga × 48″"],
-    hero="sm-srgm", minis=["sm-srgm-fr", "tt-q11-6x2000"],
+    hero="sm-srgm", minis=["sm-srgm-fr", "tt-q11nc"],
     groups=[("sh-srgm", "Direct-gear mechanical guillotine shears · premium line", "SRGM-H and SRGM: a 4 to 15 HP motor drives the cutting beam through a gearbox and crank — 1/8″ and 1/4″ from 43″ to 13.8 ft, welded frame, beam in teflon slideways."),
             ("sh-srgm-return", "Guillotine shears with return-to-sender · premium line", "SRGM-HFR and SRGM-FR: a sheet support behind the blade tilts and brings the cut blank back to the operator; off-cuts drop to the rear."),
             ("sh-srgm-line", "Shears for cut-to-length lines · premium line", "SRGM-HCL and SRGM-CL: the same shears built into coil cut-to-length lines, with the line control and sheet stacker."),
-            ("sh-flywheel", "Flywheel mechanical shears · value line", "Q11: a flywheel and clutch drive the beam for medium and thick steel, 1/8″ to 3/8″ at 45 – 55 strokes a minute, built in China to our specification."),
             ("sh-electric", "Electric and NC electric shears · value line", "Q11 and Q11 NC: a motor and gearbox drive the beam — 14 ga to 5/32″ over 49 to 100″, with a manual back gauge and counter, or a PLC touch-screen and motorised back gauge on the NC models."),
             ("sh-bench", "Motorized bench shears · value line", "EBQ01: a 1 HP motor and a foot switch drive the blade — 18 ga over 26″ and 20 ga over 41″, for small parts on the bench."),
             ("sh-slit", "Coil slitting and cut-to-length machine · value line", "PS-1220×1.5GT: decoils, slits and cuts 16 ga × 48″ coil to length — blanks and strips for the duct and panel shop.")],
     faq=faq("novotech-mechanical-shears", "Mechanical or hydraulic shear", "What does direct-gear mean?")
-        + [dict(q, a=q["a"] + " On the value line: 3/8″ on the Q11-10 flywheel shears, 5/32″ on the Q11-4 electric and NC shears, 14 ga on the Q11-2 models, 18 ga and 20 ga on the EBQ01 bench shears and 16 ga on the PS-1220 coil slitter.")
+        + [dict(q, a=q["a"] + " On the value line: 5/32″ on the Q11-4 electric and NC shears, 14 ga on the Q11-2 models, 18 ga and 20 ga on the EBQ01 bench shears and 16 ga on the PS-1220 coil slitter.")
            for q in faq("novotech-mechanical-shears", "How is the capacity rated")]
         + faq("novotech-mechanical-shears", "Which length do I need")
         + [dict(q, a=q["a"] + " On the value line, the Q11 electric shears have a manual back gauge with a millimetre counter, wound to the dimension by hand, with an electric gauge as an option; the Q11 NC takes the dimension from a touch-screen PLC and positions the gauge itself, with programs for the parts you cut every week (24.8″ of travel); the EBQ01 bench shears have a 0 – 19.7″ back gauge.")
            for q in faq("novotech-mechanical-shears", "What is the back gauge")]
         + faq("novotech-mechanical-shears", "What does return-to-sender do?", "How long do the blades last", "Can it cut at an angle?")
-        + faq("sheet-metal-shears", "What does the A model add", "Are the flywheel shears safe to run?", "When is a coil slitter worth it?") + [VOLT_FAQ_GENERIC],
+        + faq("sheet-metal-shears", "What does the A model add", "When is a coil slitter worth it?") + [VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about mechanical shears",
     related_pages=[{"href": "press-brake.html", "label": "Press brakes"}, {"href": "corner-notcher.html", "label": "Corner notchers"},
                    {"href": "circle-cutters-and-seamers.html", "label": "Circle shears & flanging machines"}, {"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes"}],

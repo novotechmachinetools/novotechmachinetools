@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """NovoTech value-line shears for the sheet-metal shop, built in China (by TTMC) and sold under NovoTech's name without the
 supplier's brand — on the hydraulic shear page (THS, HQ11, HQ01 light hydraulic shears) and the mechanical shear page (Q11
-electric and NC electric shears, Q11 flywheel shears), under the shear-cutting hub (tools/shear_nav.py).
+electric and NC electric shears; the Q11 flywheel shears are off the site since Nov 7 2026), under the shear-cutting hub
+(tools/shear_nav.py).
 
 Metric data from the supplier's Vol. 23 catalogue, pages 107 – 114: THS / HQ01 / HQ11 hydraulic shears, Q11 electric shears
 (manual and NC) and the Q11 mechanical shears.  Shown as imperial (metric) like the rest of the site.  The PS pneumatic shear is
@@ -210,17 +211,6 @@ FAMILIES = [
          images=["tt-q11nc", "tt-q11nc-4x1300", "tt-q11nc-rear", "tt-q11nc-screen", "tt-q11nc-gauge", "tt-q11nc-balls", "tt-q11nc-light"],
          videos=[],
          specs=spec([t_q11("Q11 NC", "Electric shears with PLC control and motorised back gauge", Q11NC)], G5)),
-    dict(id="tt-q11-mech", group="sh-mechanical", page=P_MECH, brand=BRAND,
-         name="Q11 mechanical shears, 1/8″ – 3/8″ × 39 – 98″",
-         short="Q11 mechanical shears",
-         models_label="Q11-3x1300 – Q11-10x1500 · 10 models",
-         summary="The classic flywheel shear for medium and thick steel: a 4 to 20 HP motor spins a flywheel and the clutch makes one stroke per "
-                 "pedal press, 45 to 55 strokes a minute — the fastest shears in the range. Ten models from 1/8″ (3 mm) over 51″ to 1/4″ over "
-                 "98″ and 3/8″ (10 mm) over 39″ and 59″, with a back gauge with fine adjustment, mechanical hold-downs and long-life blades, on a "
-                 "simple welded construction with low energy consumption. 2,976 to 14,991 lb.",
-         features=["1/8″ to 3/8″ (3 – 10 mm) mild steel × 39 – 98″ (1,000 – 2,500 mm); 45 – 55 strokes per minute"] + STD_MECH,
-         optional=OPT_MECH,
-         images=["tt-q11-6x2000", "tt-q11-4x2000", "tt-q11-3x1300"],
-         videos=[],
-         specs=spec([t_q11("Q11 mechanical", "Flywheel shears for medium and thick steel", Q11M)], G5)),
+    # the Q11 flywheel mechanical shears (tt-q11-mech, Q11-3x1300 – Q11-10x1500) are off the site (the owner, Nov 7 2026);
+    # their data (Q11M) stays above
 ]

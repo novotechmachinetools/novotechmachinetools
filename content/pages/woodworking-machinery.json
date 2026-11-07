@@ -3,14 +3,14 @@
  "template": "category.html",
  "family_set": "ttmc-more",
  "title": "Woodworking Machinery — Planers, Jointers & Saws | NovoTech",
- "artifact_title": "Woodworking machinery — jointers, planers, table saws, band saws and multifunction machines",
- "meta_description": "Woodworking machines in Canada: jointers, thickness planers, jointer-planers, 10″ table saws, band saws, multifunction machines, mortisers and a lathe.",
- "h1": "Woodworking machinery — jointers, planers, table saws, band saws and multifunction machines",
- "intro": "Woodworking machines for the cabinet shop, the joinery, the school shop and the serious home workshop. NovoTech's value-line woodworking machinery is built in China to our specification: multifunction machines that plane, saw, mortise and drill on one motor; 6″ and 8″ jointers and 15″ and 20″ thickness planers with spiral carbide cutterheads, and jointer-planers to 16″; 10″ cabinet table saws with 30″ and 52″ of rip, with touch-screen blade height and angle on the S models; 14″ and 18″ band saws for resawing; hollow-chisel mortisers, slot boring and horizontal boring machines; a 12 × 16″ wood lathe; a belt and disc sander and a dust collector — 27 models, with parts and support from Mississauga, ON, Canada.",
+ "artifact_title": "Woodworking machinery — jointers, planers, table saws and band saws",
+ "meta_description": "Woodworking machines in Canada: jointers, thickness planers, jointer-planers, 10″ table saws, band saws, slot boring machines, a lathe and a dust collector.",
+ "h1": "Woodworking machinery — jointers, planers, table saws and band saws",
+ "intro": "Woodworking machines for the cabinet shop, the joinery, the school shop and the serious home workshop. NovoTech's value-line woodworking machinery is built in China to our specification: 6″ and 8″ jointers and 15″ and 20″ thickness planers with spiral carbide cutterheads, and jointer-planers to 16″; 10″ cabinet table saws with 30″ and 52″ of rip, with touch-screen blade height and angle on the S models; 14″ and 18″ band saws for resawing; slot boring and horizontal boring machines; a 12 × 16″ wood lathe; and a dust collector — 20 models, with parts and support from Mississauga, ON, Canada.",
  "hero_points": [
   "Jointers 6 – 8″ and thickness planers 15 – 20″ with spiral carbide cutterheads; jointer-planers 10 – 16″",
   "WTS10 10″ cabinet table saws, 30″ and 52″ rip, touch-screen S models; TBS 14″ and 18″ band saws",
-  "WM multifunction machines, MS mortisers, MGX slot boring machines, TL-406 lathe, DC900 dust collector"
+  "MGX slot boring machines, WM-01 horizontal boring machine, TL-406 lathe, DC900 dust collector"
  ],
  "hero_image": "tm-tdm320",
  "hero_image_secondary": [
@@ -55,21 +55,11 @@
    ]
   },
   {
-   "id": "combo-group",
-   "title": "Multifunction woodworking machines",
-   "lead": "Planer, table saw, mortiser and drill on one motor — for the shop with room for one machine.",
-   "brand": "novotech",
-   "families": [
-    "tt-wm"
-   ]
-  },
-  {
    "id": "boring-group",
-   "title": "Mortisers and boring machines",
-   "lead": "Mortises, slots and dowel holes for joinery, doors and furniture.",
+   "title": "Slot mortisers and boring machines",
+   "lead": "Slot mortises and dowel holes for joinery, doors and furniture.",
    "brand": "novotech",
    "families": [
-    "tt-mortise",
     "tt-slotbore"
    ]
   },
@@ -84,11 +74,10 @@
   },
   {
    "id": "finish-group",
-   "title": "Sander and dust collector",
-   "lead": "Sand small parts and edges, and keep the chips and dust off the floor and out of the air.",
+   "title": "Dust collector",
+   "lead": "Keep the chips and dust off the floor and out of the air.",
    "brand": "novotech",
    "families": [
-    "tt-ws25",
     "tt-dc900"
    ]
   }
@@ -100,7 +89,7 @@
   },
   {
    "q": "Spiral carbide cutterhead or straight knives?",
-   "a": "A spiral (helical) cutterhead has many small carbide inserts set in a spiral: it cuts with a shearing action, so it is quieter, leaves a cleaner surface on figured and interlocked grain and tears out less, and a chipped insert is turned to a fresh edge in a minute instead of a set of knives reground and reset. Straight knives cost less to buy and are fine for softwood and general work. The WJ jointers and WJP planers have spiral carbide heads; the WJ10X40 and the multifunction machines have straight knives."
+   "a": "A spiral (helical) cutterhead has many small carbide inserts set in a spiral: it cuts with a shearing action, so it is quieter, leaves a cleaner surface on figured and interlocked grain and tears out less, and a chipped insert is turned to a fresh edge in a minute instead of a set of knives reground and reset. Straight knives cost less to buy and are fine for softwood and general work. The WJ jointers and WJP planers have spiral carbide heads; the WJ10X40 has straight knives."
   },
   {
    "q": "Which table saw — 30″ or 52″ rip, hand wheels or touch screen?",

@@ -1631,7 +1631,12 @@ def render_page(page):
         keys, labels = all_item_minis(page)
         if keys:
             set_hero_many(page, keys, labels)
-    if page.get("template") == "hub.html" and page.get("subpages") and page.get("hero_image") and page.get("hero_minis_all", True) is not False:
+    if page.get("template") == "hub.html" and page.get("hero_minis_pick"):
+        # the small photos under a hub's hero picked by the owner — [{image, label, href}] (shear hub, Nov 7 2026)
+        pick = [m for m in page["hero_minis_pick"] if m["image"] in manifest]
+        set_hero_many(page, [m["image"] for m in pick], {m["image"]: m["label"] for m in pick},
+                      {m["image"]: m["href"] for m in pick if m.get("href")})
+    elif page.get("template") == "hub.html" and page.get("subpages") and page.get("hero_image") and page.get("hero_minis_all", True) is not False:
         keys, labels, links = hub_item_minis(page)
         if keys:
             set_hero_many(page, keys, labels, links)

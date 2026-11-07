@@ -266,29 +266,28 @@ PAGES = {
     D.P_WOOD: dict(
         # keyword research (Ubersuggest, Canada, Oct 2026): "woodworking machinery" 320/mo, CPC $1.47; "woodworking machines" 320/mo, CPC $1.08
         title="Woodworking Machinery — Planers, Jointers & Saws | NovoTech",
-        meta="Woodworking machines in Canada: jointers, thickness planers, jointer-planers, 10″ table saws, band saws, multifunction machines, mortisers and a lathe.",
-        h1="Woodworking machinery — jointers, planers, table saws, band saws and multifunction machines",
+        meta="Woodworking machines in Canada: jointers, thickness planers, jointer-planers, 10″ table saws, band saws, slot boring machines, a lathe and a dust collector.",
+        h1="Woodworking machinery — jointers, planers, table saws and band saws",
         nav="Woodworking machinery",
         intro="Woodworking machines for the cabinet shop, the joinery, the school shop and the serious home workshop. NovoTech's value-line "
-              "woodworking machinery is built in China to our specification: multifunction machines that plane, saw, mortise and drill on "
-              "one motor; 6″ and 8″ jointers and 15″ and 20″ thickness planers with spiral carbide cutterheads, and jointer-planers to 16″; "
+              "woodworking machinery is built in China to our specification: "
+              "6″ and 8″ jointers and 15″ and 20″ thickness planers with spiral carbide cutterheads, and jointer-planers to 16″; "
               "10″ cabinet table saws with 30″ and 52″ of rip, with touch-screen blade height and angle on the S models; 14″ and 18″ band "
-              "saws for resawing; hollow-chisel mortisers, slot boring and horizontal boring machines; a 12 × 16″ wood lathe; a belt and "
-              "disc sander and a dust collector — {n} models, with parts and support from Mississauga, ON, Canada.",
+              "saws for resawing; slot boring and horizontal boring machines; a 12 × 16″ wood lathe; and a dust collector — {n} "
+              "models, with parts and support from Mississauga, ON, Canada.",
         points=["Jointers 6 – 8″ and thickness planers 15 – 20″ with spiral carbide cutterheads; jointer-planers 10 – 16″",
                 "WTS10 10″ cabinet table saws, 30″ and 52″ rip, touch-screen S models; TBS 14″ and 18″ band saws",
-                "WM multifunction machines, MS mortisers, MGX slot boring machines, TL-406 lathe, DC900 dust collector"],
+                "MGX slot boring machines, WM-01 horizontal boring machine, TL-406 lathe, DC900 dust collector"],
         hero="tm-tdm320", minis=["tm-wts1050", "tm-tbs457"],
         groups=[("planing", "Jointers, thickness planers and jointer-planers", "Flat, square and to thickness: the machines that turn rough lumber into stock.", False),
                 ("sawing", "Table saws and band saws", "Rip and crosscut on the table saw, resaw and cut curves on the band saw.", False),
-                ("combo", "Multifunction woodworking machines", "Planer, table saw, mortiser and drill on one motor — for the shop with room for one machine.", False),
-                ("boring", "Mortisers and boring machines", "Mortises, slots and dowel holes for joinery, doors and furniture.", False),
+                ("boring", "Slot mortisers and boring machines", "Slot mortises and dowel holes for joinery, doors and furniture.", False),
                 ("turning", "Wood lathe", "Bowls, spindles, pens and furniture parts.", False),
-                ("finish", "Sander and dust collector", "Sand small parts and edges, and keep the chips and dust off the floor and out of the air.", False)],
+                ("finish", "Dust collector", "Keep the chips and dust off the floor and out of the air.", False)],
         faq=[{"q": "Jointer, thickness planer or jointer-planer — what do I need?",
               "a": "A jointer flattens one face of a rough board and squares an edge to it; a thickness planer then makes the other face parallel and brings the board to thickness. You need both to mill rough lumber. A jointer-planer (TDM) does both jobs with one cutterblock in the space of one machine — the tables lift for thicknessing — at the cost of a changeover between the two; separate machines are faster when both run all day."},
              {"q": "Spiral carbide cutterhead or straight knives?",
-              "a": "A spiral (helical) cutterhead has many small carbide inserts set in a spiral: it cuts with a shearing action, so it is quieter, leaves a cleaner surface on figured and interlocked grain and tears out less, and a chipped insert is turned to a fresh edge in a minute instead of a set of knives reground and reset. Straight knives cost less to buy and are fine for softwood and general work. The WJ jointers and WJP planers have spiral carbide heads; the WJ10X40 and the multifunction machines have straight knives."},
+              "a": "A spiral (helical) cutterhead has many small carbide inserts set in a spiral: it cuts with a shearing action, so it is quieter, leaves a cleaner surface on figured and interlocked grain and tears out less, and a chipped insert is turned to a fresh edge in a minute instead of a set of knives reground and reset. Straight knives cost less to buy and are fine for softwood and general work. The WJ jointers and WJP planers have spiral carbide heads; the WJ10X40 has straight knives."},
              {"q": "Which table saw — 30″ or 52″ rip, hand wheels or touch screen?",
               "a": "The rip capacity is the widest cut to the right of the blade: 30″ is enough for solid wood and for cutting a sheet of plywood to 30″ parts; 52″ cuts a 4 × 8 sheet to any width, which a cabinet shop needs. All WTS10 saws take a 10″ blade with 3-3/8″ of cut at 90°; on the S models the blade height and angle are typed on a touch screen and shown digitally — faster and repeatable set-ups for production."},
              {"q": "Do I need a dust collector?",
@@ -393,17 +392,17 @@ EXTRA = {
         set={"hero_brand_line": "ISITAN and NovoTech premium line plate rolls are made in Turkey — ISITAN Makine since 1959, the NovoTech premium line built to NovoTech's specification — with European components; NovoTech's value-line slip rolls are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_CORNER_GRIND: dict(
-        groups=[("tt-yq", "Right-angle grinding machines · value line",
-                 "Belt machines that grind and polish the right-angle weld seams and R corners of square boxes — NovoTech value line, built in China.", False, None)],
-        intro_add="NovoTech's value line, built in China, adds the YQ right-angle grinding machines: horizontal machines for box edges up "
+        groups=[("tt-yq", "Corner grinding machines · value line",
+                 "Belt machines that grind and polish the corner weld seams and R corners of square boxes — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value line, built in China, adds the YQ corner grinding machines: horizontal machines for box edges up "
                   "to 35.4, 47.2 or 59.1″ long and the YQ-450 vertical machine for corners up to 17.7″ high.",
-        points_add=["NovoTech value line: YQ horizontal right-angle grinders for edges to 59.1″ and the YQ-450 vertical corner grinder"],
+        points_add=["NovoTech value line: YQ horizontal corner grinders for edges to 59.1″ and the YQ-450 vertical corner grinder"],
         faq_add=[{"q": "GECAM or the value-line YQ?",
                   "a": "The GECAM 131, 136 and 135 are built in Parma, Italy, for daily production on boxes, cabinets and doors, with an "
                        "oscillating belt fork for radii and the automatic head travel of the 135. The value-line YQ machines, built in China, "
-                       "are the lower-cost choice for right-angle weld seams and R corners on water tanks, battery boxes and similar boxes — "
+                       "are the lower-cost choice for corner weld seams and R corners on water tanks, battery boxes and similar boxes — "
                        "horizontal for edges up to 59.1″, vertical for corners up to 17.7″ high."}],
-        set={"hero_brand_line": "GECAM corner grinders are designed and built in Parma, Italy; NovoTech's value-line right-angle grinders are built in "
+        set={"hero_brand_line": "GECAM corner grinders are designed and built in Parma, Italy; NovoTech's value-line corner grinders are built in "
                                 "China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_DEBURR: dict(

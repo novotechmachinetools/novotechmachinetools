@@ -21,23 +21,34 @@ SET = "all-shears"
 # (family set, page slug, family ids in display order) — from the page map in shear_nav
 SOURCES = SN.family_sources()
 
+# under the hero (a hydraulic guillotine): the mechanical guillotine and one photo each of the value-line swing beam and guillotine
+# shears, the THS light hydraulic shears, the Q11 electric shears and the coil slitter (the owner, Nov 7 2026)
+HERO_MINIS = [
+    {"image": "sm-srgm", "label": "Mechanical guillotine shears", "href": "mechanical-guillotine-shear.html#nt-shear-srgm"},
+    {"image": "vl-qc12k-1", "label": "Swing beam shears · value line", "href": "hydraulic-shearing-machine.html#vl-qc12k"},
+    {"image": "vl-q11k-1", "label": "Guillotine shears · value line", "href": "hydraulic-shearing-machine.html#vl-q11k"},
+    {"image": "tt-ths", "label": "Light hydraulic shears", "href": "hydraulic-shearing-machine.html#tt-ths"},
+    {"image": "tt-q11a", "label": "Electric shears", "href": "mechanical-guillotine-shear.html#tt-q11"},
+    {"image": "tm-ps1220", "label": "Coil slitting and cut-to-length", "href": "mechanical-guillotine-shear.html#tt-ps1220"},
+]
+
 HUB_PAGE = dict(
     title="Metal Shears for Sale in Canada — Hydraulic & Mechanical Shears, 20 ga to 1-9/16″ | NovoTech",
-    meta="Every metal shear NovoTech sells in Canada, by kind: hydraulic swing beam, guillotine and light hydraulic shears from 16 ga to 1-9/16″, and mechanical shears — direct-gear and flywheel guillotines, electric, bench and coil machines from 20 ga to 3/8″ — the two kinds compared.",
+    meta="Every metal shear NovoTech sells in Canada, by kind: hydraulic swing beam, guillotine and light hydraulic shears from 16 ga to 1-9/16″, and mechanical shears — direct-gear guillotines, electric, bench and coil machines from 20 ga to 3/8″ — the two kinds compared.",
     h1="Metal shears — hydraulic and mechanical shears, 20 ga to 1-9/16″",
     intro="A metal shear (sheet metal shearing machine, guillotine shear, shear cutter) cuts plate and sheet to size in one stroke between a "
           "fixed bottom blade and a top blade on the moving beam — the first machine in every sheet-metal, HVAC, signage and fabrication shop, "
           "before the press brake. NovoTech sells two kinds in Canada, each on its own page: hydraulic shears — swing beam and variable-rake "
           "guillotine plate shears to 1-9/16″ and 26 ft, in a premium line made in Turkey and a value line built to our specification, and "
           "light hydraulic shears from 16 ga to 1/4″ for the sheet-metal shop; and mechanical shears, with no hydraulics at all — direct-gear "
-          "SRGM guillotines for 1/8″ and 1/4″ at 31 to 35 strokes a minute, flywheel shears to 3/8″, electric and NC electric shears, "
+          "SRGM guillotines for 1/8″ and 1/4″ at 31 to 35 strokes a minute, electric and NC electric shears, "
           "motorized bench shears and a coil slitting and cut-to-length machine. Below, the two kinds compared and the "
           "questions we get asked; every machine comes with a CSA-approved panel, a 1-year warranty and installation, training and parts from "
           "Mississauga, ON, Canada.",
     points=['<a href="hydraulic-shearing-machine.html">Hydraulic</a>: swing beam 5/32″ – 3/4″ × 6.8 – 20 ft and guillotine 1/4″ – 1-9/16″ × 8 – 26 ft; premium <a href="hydraulic-shearing-machine.html#dn-bs">BS / BSY</a> and <a href="hydraulic-shearing-machine.html#dn-das">DAS CNC</a>, value <a href="hydraulic-shearing-machine.html#vl-qc12k">QC12K</a> / <a href="hydraulic-shearing-machine.html#vl-q11k">Q11K</a>; <a href="hydraulic-shearing-machine.html#sh-light-hydraulic-group">light hydraulic shears 16 ga – 1/4″</a>',
-            '<a href="mechanical-guillotine-shear.html">Mechanical</a>: <a href="mechanical-guillotine-shear.html#sh-srgm-group">SRGM direct-gear guillotines</a> 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min; <a href="mechanical-guillotine-shear.html#tt-q11-mech">flywheel shears to 3/8″</a>',
+            '<a href="mechanical-guillotine-shear.html">Mechanical</a>: <a href="mechanical-guillotine-shear.html#sh-srgm-group">SRGM direct-gear guillotines</a> 1/8″ × 3.6 – 10 ft and 1/4″ × 3.6 – 13.8 ft, 31 – 35 strokes/min',
             '<a href="mechanical-guillotine-shear.html#sh-electric-group">Electric and NC electric shears</a> 14 ga – 5/32″ × 49 – 100″, <a href="mechanical-guillotine-shear.html#tt-bq01">motorized bench shears</a> and a <a href="mechanical-guillotine-shear.html#tt-ps1220">48″ coil slitting and cut-to-length machine</a>'],
-    hero="sm-srgm", minis=["dn-das-1", "tt-q11a"],
+    hero="dn-das-1", minis=["sm-srgm", "vl-qc12k-1"],        # the hydraulic guillotine large, the rest small (the owner, Nov 7 2026)
     range_cols=["Capacity (mild steel)", "Shearing length", "Strokes / min", "Motor", "Weight"],
     range_lead="Every shear model NovoTech sells, in one table: mild-steel capacity, shearing length, strokes per minute, motor and weight. Each row links to the full specification table on the hydraulic or mechanical shear page.",
     range_caption="Metal shears supplied by NovoTech — hydraulic and mechanical shears, premium and value lines",
@@ -46,7 +57,7 @@ HUB_PAGE = dict(
     faq=[{"q": "Hydraulic or mechanical shear — which should I buy?",
           "a": "By the material and the hours. For sheet to 14 ga in a sheet-metal, HVAC or signage shop, the lowest-priced powered machines are the motorized bench shears, the Q11 electric shears and the light hydraulic shears, 26″ to 120″. For 1/8″ and 1/4″ all day, a mechanical guillotine shear is the faster and simpler machine: direct-gear drive, 31 – 35 strokes a minute, no hydraulics, with return-to-sender and cut-to-length versions. From 1/4″ plate up — 3/8″, 1/2″, to 1-9/16″ over 20 and 26 ft — the hydraulic shears are the machines, swing beam for the everyday plate shear and a variable-rake guillotine for production and thick plate. A mechanical shear has no hydraulic power pack, no oil to heat up and no valves or seals to service, and cuts the same on the first and the thousandth stroke; a small hydraulic shear is the quietest way to cut 14 ga to 5/32″ a few times an hour. Each kind comes in a premium and a value line on its page, and every machine is installed and supported by the same NovoTech technicians."},
          {"q": "Premium line or value line?",
-          "a": "The premium hydraulic shears (Dener BS / BSY and DAS CNC) and mechanical shears (SRGM) are built in Turkey on the heaviest frames with European hydraulics, motors and controls and parts in Mississauga, ON, Canada — for two shifts a day and the tightest cut. NovoTech's value line — the QC12K / Q11K hydraulic shears with Estun controls, the light hydraulic shears and the flywheel, electric, bench and coil machines — is built in China to our specification at about two-thirds of the price, the right buy for a job shop. Both lines are sections on each page, so the comparison is side by side."},
+          "a": "The premium hydraulic shears (Dener BS / BSY and DAS CNC) and mechanical shears (SRGM) are built in Turkey on the heaviest frames with European hydraulics, motors and controls and parts in Mississauga, ON, Canada — for two shifts a day and the tightest cut. NovoTech's value line — the QC12K / Q11K hydraulic shears with Estun controls, the light hydraulic shears and the electric, bench and coil machines — is built in China to our specification at about two-thirds of the price, the right buy for a job shop. Both lines are sections on each page, so the comparison is side by side."},
          {"q": "Swing beam or guillotine?",
           "a": "On a swing beam shear the beam pivots on two bearings and the cylinders swing it through the cut — few parts, a low price and a rake angle fixed by the design, which is fine for plate. A guillotine shear carries the beam straight down on rollers with a variable rake angle, so the same machine cuts thin sheet flat and fast at a small angle and thick plate at a steeper one; it also keeps the blade gap set automatically. For a plate shop cutting mostly 3/8″ and up, a swing beam shear (Dener BS, NovoTech QC12K); for a job shop that cuts everything from 16 ga to 3/4″ and beyond, a guillotine (Dener DAS, NovoTech Q11K)."},
          {"q": "How is the capacity rated, and what about stainless and aluminum?",
@@ -73,9 +84,9 @@ COMPARE = {
     "lead": "The two kinds NovoTech sells, side by side. Thickness, length and hours a day decide; the pages list every model of each kind, premium and value lines together.",
     "cols": ["", "Hydraulic shears", "Mechanical shears"],
     "rows": [
-        ["Cuts", "Plate and sheet, 16 ga to 1-9/16″", "Sheet and light plate, 20 ga to 3/8″"],
+        ["Cuts", "Plate and sheet, 16 ga to 1-9/16″", "Sheet and light plate, 20 ga to 1/4″"],
         ["Length", "51″ – 26 ft", "26″ – 13.8 ft (48″ coil slitter)"],
-        ["Drive", "Hydraulic cylinders; swing beam, variable-rake guillotine or light hydraulic shear", "Electric motor through a gearbox and crank (direct gear), a flywheel and clutch, or a gearbox (electric and bench shears)"],
+        ["Drive", "Hydraulic cylinders; swing beam, variable-rake guillotine or light hydraulic shear", "Electric motor through a gearbox and crank (direct gear), or a gearbox (electric and bench shears)"],
         ["Speed", "8 – 22 strokes/min", "28 – 55 strokes/min"],
         ["Strengths", "Tonnage for plate, variable rake, CNC gauges; quiet light shears for sheet", "No hydraulics, fastest cycle, return-to-sender, NC electric shears, bench shears and coil machines"],
         ["Typical buyer", "Steel fabricators, plate shops, production; HVAC and sheet-metal shops for the light models", "Sheet-metal production, HVAC, signage and roofing shops, coil processors"],
@@ -106,7 +117,8 @@ def build():
                      "origin_feature": {"title": "Two kinds, two lines, one supplier", "text": "Hydraulic or mechanical shears in two lines: the premium line, built in Turkey, and the NovoTech value line, manufactured in China to high North American quality standards."},
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                      "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"],
-                     "hub_compact": True, "compare": COMPARE, "subpage_link": "all models, specifications and photos"})
+                     "hub_compact": True, "compare": COMPARE, "subpage_link": "all models, specifications and photos",
+                     "hero_caption": "Hydraulic guillotine shears", "hero_minis_pick": HERO_MINIS})
     path = os.path.join(ROOT, "content", "pages", f"{SN.HUB}.json")
     page = json.load(open(path, encoding="utf-8"))
     for sp, line in zip(page["subpages"], SN.lines()):

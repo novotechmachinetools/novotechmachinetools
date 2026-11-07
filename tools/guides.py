@@ -235,7 +235,7 @@ GUIDES = [
       "What we explain to customers before they equip a woodworking shop: which machines and in what order, choosing the jointer "
       "and the planer, spiral carbide cutterheads, table saw or band saw, joinery machines and dust collection. " + BY,
       "The machines a woodworking shop needs and in what order, jointer and planer widths, spiral carbide heads, table saw or band "
-      "saw, mortisers and dust collection."),
+      "saw, slot mortisers and dust collection."),
     G("corner-notcher", "corner-notcher-guide.html", "Corner notcher buying guide", "punching",
       "What we explain to customers before they buy a corner notcher: what it does, fixed or variable angle, thickness, notch "
       "size and material, hydraulic, pneumatic or manual drive, and how to size the notch. " + BY,

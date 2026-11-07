@@ -496,11 +496,11 @@ TAB["tt-wood-dust"] = [
     ]),
 ]
 
-# Right-angle weld seam grinders (the owner's sheet "Right Angle Grinding Machine", Nov 7 2026): the horizontal YQ-900 / 1200 / 1500
+# Corner grinders (the owner's sheet "Right Angle Grinding Machine" — corner grinding machines, the owner, Nov 7 2026): the horizontal YQ-900 / 1200 / 1500
 # and the vertical YQ-450 — every figure of the sheet, metric in brackets; the 380 V 50 Hz factory supply is kept beside the
 # 600 V 60 Hz the machines are supplied for in Canada
 TAB["tt-yq-h"] = [
-    table("YQ-900 · YQ-1200 · YQ-1500", "Horizontal right-angle grinding machines", ["YQ-900", "YQ-1200", "YQ-1500"], [
+    table("YQ-900 · YQ-1200 · YQ-1500", "Horizontal corner grinding machines", ["YQ-900", "YQ-1200", "YQ-1500"], [
         ("*Processing length, max", "TXT", ["35.4″ (900 mm)", "47.2″ (1,200 mm)", "59.1″ (1,500 mm)"]),
         ("*Total power", "KW", 3.0),
         ("*Grinding speed", "TXT", "0 – 236 in/min (0 – 100 mm/s)"),
@@ -513,7 +513,7 @@ TAB["tt-yq-h"] = [
     ]),
 ]
 TAB["tt-yq-v"] = [
-    table("YQ-450", "Vertical right-corner grinding and polishing machine", ["YQ-450"], [
+    table("YQ-450", "Vertical corner grinding and polishing machine", ["YQ-450"], [
         ("*Processing height, max", "TXT", "17.7″ (450 mm)"),
         ("*Swing motor", "TXT", "180 W (1/4 HP) × 1, adjustable speed"),
         ("Power connection", "TXT", "Hard-wired"),

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """The shear section: one hub (shear-cutting.html) over two pages, one per kind of shear — hydraulic shears (swing beam and
 guillotine plate shears, premium and value lines, and the light hydraulic shears at the bottom) and mechanical shears (direct-gear
-SRGM, flywheel, electric and NC electric, motorized bench shears and the coil slitting and cut-to-length machine).
+SRGM, electric and NC electric, motorized bench shears and the coil slitting and cut-to-length machine; the Q11 flywheel shears are
+off the site, the owner, Nov 7 2026).
 
 The sheet-metal-shears page was merged into these two (the owner, Nov 7 2026: two kinds only, no pneumatic shear; 301 in
 src/root/.htaccess).  Pages are split by the kind of machine the buyer searches for, not by supplier: the premium and value lines
@@ -22,7 +23,6 @@ PAGES = {
         ("shears", "nt-shear-srgm-h", "sh-srgm"), ("shears", "nt-shear-srgm", "sh-srgm"),
         ("shears", "nt-shear-srgm-hfr", "sh-srgm-return"), ("shears", "nt-shear-srgm-fr", "sh-srgm-return"),
         ("shears", "nt-shear-srgm-hcl", "sh-srgm-line"), ("shears", "nt-shear-srgm-cl", "sh-srgm-line"),
-        ("ttmc", "tt-q11-mech", "sh-flywheel"),
         ("ttmc", "tt-q11", "sh-electric"), ("ttmc", "tt-q11nc", "sh-electric"),
         ("ttmc", "tt-bq01", "sh-bench"),
         ("ttmc", "tt-ps1220", "sh-slit"),
@@ -34,8 +34,8 @@ SUBPAGES = [
     ("hydraulic-shearing-machine", "Hydraulic shears — swing beam and guillotine plate shears, 16 ga to 1-9/16″", "dn-das-1",
      "The plate shears: swing beam shears from 5/32″ to 3/4″ and variable-rake guillotines to 1-9/16″ over 26 ft, in a premium line made in Turkey (BS / BSY, DAS CNC) and NovoTech's value line (QC12K, Q11K) with Estun controls, plus light hydraulic shears from 16 ga to 1/4″ for the sheet-metal shop.",
      "Hydraulic shears", ""),
-    ("mechanical-guillotine-shear", "Mechanical shears — guillotine, electric, bench and coil machines, 20 ga to 3/8″", "sm-srgm",
-     "No hydraulics: the premium-line SRGM direct-gear guillotines, 1/8″ and 1/4″ to 13.8 ft, with return-to-sender and cut-to-length versions, and the value line: flywheel shears to 3/8″, electric and NC electric shears, motorized bench shears and a 48″ coil slitting and cut-to-length machine.",
+    ("mechanical-guillotine-shear", "Mechanical shears — guillotine, electric, bench and coil machines, 20 ga to 1/4″", "sm-srgm",
+     "No hydraulics: the premium-line SRGM direct-gear guillotines, 1/8″ and 1/4″ to 13.8 ft, with return-to-sender and cut-to-length versions, and the value line: electric and NC electric shears, motorized bench shears and a 48″ coil slitting and cut-to-length machine.",
      "Mechanical shears", ""),
 ]
 
