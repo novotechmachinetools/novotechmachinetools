@@ -618,6 +618,8 @@ def build():
                                                     {"href": "circular-cold-saws.html", "label": "Circular cold saws"}]},
                    ALL, SET, "Tube end deburring machine", extra={**SHARED, **PIPE_EXTRA, "nav_label": "Tube end deburring machines",
                                                                    "hero_width": 300,     # the tall 143 at under half size (the owner, Nov 7 2026)
+                                                                   # its guide: the tube end deburring section of the pipe sander guide (Nov 7 2026)
+                                                                   "related_article": {"href": f"{D.P_PIPE}.html#buying-guide", "label": "Pipe sander and tube end deburring buying guide: What to check before you buy"},
                                                                    "hero_brand_line": "Eurofintec machines are built in Parma, Italy, by Gecam — sold, installed and supported in Canada by NovoTech.",
                                                                    "origin_feature": ORIGIN, "catalogue_pdf": pdf(), "catalogue_pdfs": None,
                                                                    "intro_video_text": "A tour of Gecam at Vicofertile, Parma, where the Eurofintec 143 is built."})

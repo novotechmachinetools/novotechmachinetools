@@ -2,7 +2,7 @@
  "slug": "metal-fabricating-articles",
  "template": "articles.html",
  "title": "Metal Fabrication Buying Guides & Articles | NovoTech",
- "meta_description": "43 buying guides from NovoTech's technicians: press brakes, lasers, shears, band saws, plate rollers, tube benders, ironworkers, presses, grinders, CNC machines, rebar and window machinery.",
+ "meta_description": "44 buying guides from NovoTech's technicians: press brakes, lasers, shears, band saws, plate rollers, tube benders, ironworkers, presses, grinders, CNC machines, rebar and window machinery.",
  "h1": "Buying guides and articles",
  "intro": "What we explain to customers before they buy — how the machines work, how capacity is rated, which options matter and which do not — written by NovoTech's sales engineers and technicians from years of installing machines in Canada. Each guide sits at the bottom of its product page, next to the machines it describes.",
  "breadcrumb": [
@@ -53,7 +53,7 @@
   {
    "href": "folder-sheet-metal-brake.html#buying-guide",
    "title": "Sheet metal brake buying guide",
-   "image": "tm-eb2500",
+   "image": "tm-hw",
    "topic": "Bending and forming",
    "group": "bending",
    "text": "Hand, box and pan, magnetic and hydraulic brakes compared, how capacity is rated in gauges of steel, stainless and aluminum, and folder or press brake.",
@@ -281,7 +281,7 @@
    "image": "sh-bt114s",
    "topic": "Deburring, grinding and finishing",
    "group": "finishing",
-   "text": "Belt, orbital, centreless and large-pipe sanders, straight or bent tube, grits for a satin or mirror finish, and keeping stainless clean.",
+   "text": "Belt, orbital, centreless and large-pipe sanders, straight or bent tube, grits for a satin or mirror finish, deburring tube ends, and keeping stainless clean.",
    "featured": false
   },
   {
@@ -321,6 +321,15 @@
    "featured": false
   },
   {
+   "href": "riveting-machine.html#buying-guide",
+   "title": "Riveting machine buying guide",
+   "image": "tm-xm8",
+   "topic": "Presses",
+   "group": "presses",
+   "text": "Orbital or punch riveting, sizing the XM riveter by the rivet diameter and force, head forms and tools, stroke, opening and fixtures.",
+   "featured": false
+  },
+  {
    "href": "drill-press.html#buying-guide",
    "title": "Drill press buying guide",
    "image": "tm-t50e",
@@ -344,7 +353,7 @@
    "image": "dn-tmc-1",
    "topic": "Drilling, milling and CNC machining",
    "group": "machining",
-   "text": "CNC lathe, vertical or double-column machining centre, sizing the travels, BT40 or BT50, choosing the control, options and installation.",
+   "text": "CNC lathe, vertical or double-column machining centre, sizing the travels, BT40 or BT50, choosing the control, surface grinders, options and installation.",
    "featured": false
   },
   {
@@ -440,7 +449,7 @@
   {
    "id": "presses",
    "title": "Presses",
-   "count": 1
+   "count": 2
   },
   {
    "id": "machining",

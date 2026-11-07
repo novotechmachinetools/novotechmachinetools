@@ -207,8 +207,10 @@ def build():
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **INTRO_VIDEO}
     for slug, page in ((D.P_LATHE, PAGE_LATHE), (D.P_MC, PAGE_MC), (D.P_GRIND, PAGE_GRIND)):
-        write_category(slug, page, [f for f in fams if f["page"] == slug], SET, NAV[slug],
-                       extra={**common, "nav_label": NAV[slug], "catalogue_pdf": pdfs[slug]})
+        extra = {**common, "nav_label": NAV[slug], "catalogue_pdf": pdfs[slug]}
+        if slug != D.P_MC:      # the CNC machine tool guide is on the machining centres page (the owner, Nov 7 2026: every page a guide)
+            extra["related_article"] = {"href": f"{D.P_MC}.html#buying-guide", "label": "CNC machine tool buying guide: What to check before you buy"}
+        write_category(slug, page, [f for f in fams if f["page"] == slug], SET, NAV[slug], extra=extra)
     keys = register_images()
     used = {k for f in fams for k in f["images"]} | {p["hero"] for p in (PAGE_LATHE, PAGE_MC, PAGE_GRIND)} | \
            {m for p in (PAGE_LATHE, PAGE_MC, PAGE_GRIND) for m in p["minis"]}

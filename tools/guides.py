@@ -154,7 +154,7 @@ GUIDES = [
       "dust and wet machines."),
     G("belt-grinder", "belt-grinder-guide.html", "Belt grinder buying guide", "finishing",
       "What we explain to customers before they buy a belt grinder: platen, contact wheel and slack belt, belt width and motor "
-      "power, speeds and abrasives, disc sanders and chamfering machines, and dust and safety. " + BY,
+      "power, speeds and abrasives, disc sanders and end grinders, and dust and safety. " + BY,
       "Belt width and motor power, belt speeds for steel, stainless and aluminum, abrasives and grits, and dust and safety."),
     G("corner-grinding-machines", "corner-grinder-guide.html", "Corner grinder buying guide", "finishing",
       "What we explain to customers before they buy a corner grinder: what it does, hand-fed or automatic machines, radius, box "
@@ -162,10 +162,10 @@ GUIDES = [
       "Grinding the welded corners of boxes and doors: hand-fed or automatic, radius and box height, and abrasives for a finish "
       "that disappears."),
     G("pipe-sanding-polishing-machines", "pipe-sander-guide.html", "Pipe sander buying guide", "finishing",
-      "What we explain to customers before they buy a pipe sander: which machine for which tube, straight or bent, finish and "
-      "grit, and keeping stainless clean. " + BY,
-      "Belt, orbital, centreless and large-pipe sanders, straight or bent tube, grits for a satin or mirror finish, and keeping "
-      "stainless clean."),
+      "What we explain to customers before they buy a pipe sander or a tube end deburring machine: which machine for which tube, "
+      "straight or bent, finish and grit, deburring tube ends, and keeping stainless clean. " + BY,
+      "Belt, orbital, centreless and large-pipe sanders, straight or bent tube, grits for a satin or mirror finish, deburring "
+      "tube ends, and keeping stainless clean."),
     # ------------------------------------------------------------------------------------------- welding
     G("laser-welding-machine", "laser-welding-guide.html", "Laser welding machine buying guide", "welding",
       "What we explain to customers before they buy a laser welder: when laser welding beats TIG and MIG, the power you need, "
@@ -188,6 +188,12 @@ GUIDES = [
       "H-frame, C-frame or column presses, working space and controls, and shop or production presses. " + BY,
       "Sizing the tonnage for press fits, straightening and bending, H-frame, C-frame or column, working space, controls and "
       "safety."),
+    # riveting machines are a page of their own, not a kind of hydraulic press (the owner, Nov 7 2026): their own guide
+    G("riveting-machine", "riveting-machine-guide.html", "Riveting machine buying guide", "presses",
+      "What we explain to customers before they buy a riveting machine: what an orbital riveter does, choosing the size by the "
+      "rivet, head forms and riveting tools, stroke, height and work holding, and installation. " + BY,
+      "Orbital or punch riveting, sizing the XM riveter by the rivet diameter and force, head forms and tools, stroke, opening "
+      "and fixtures."),
     # ------------------------------------------------------------------------------------------- machining
     G("drill-press", "drill-press-guide.html", "Drill press buying guide", "machining",
       "What we explain to customers before they buy a drill press: the drilling capacity you need, gear-head, belt or inverter "
@@ -200,10 +206,11 @@ GUIDES = [
       "Turret, universal or drill-mill, table and travels, ISO40 or ISO50, power feed and DRO, and the tooling to budget for."),
     # on the CNC machining centres page since the cnc-machine-tools hub is off the site (the owner, Nov 7 2026)
     G("vertical-machining-center", "cnc-machine-tools-guide.html", "CNC machine tool buying guide", "machining",
-      "What we explain to customers before they buy a CNC lathe or machining centre: which machine for which parts, travels and "
-      "swing, spindle taper and power, the control, tool changers and options, and the foundation. " + BY,
-      "CNC lathe, vertical or double-column machining centre, sizing the travels, BT40 or BT50, choosing the control, options "
-      "and installation."),
+      "What we explain to customers before they buy a CNC lathe, machining centre or surface grinder: which machine for which "
+      "parts, travels and swing, spindle taper and power, the control, tool changers and options, surface grinders, and the "
+      "foundation. " + BY,
+      "CNC lathe, vertical or double-column machining centre, sizing the travels, BT40 or BT50, choosing the control, surface "
+      "grinders, options and installation."),
     # ------------------------------------------------------------------------------------------- rebar
     G("rebar-bender-and-cutter", "rebar-guide.html", "Rebar bender and cutter buying guide", "rebar",
       "What we explain to customers before they buy a rebar bender or cutter: Canadian bar sizes and grades, how to read the "
