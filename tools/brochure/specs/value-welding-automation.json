@@ -1,0 +1,149 @@
+{
+ "cover_line": "NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech",
+ "about_kicker": "NovoTech value line",
+ "country": "China",
+ "made_in": "Built in China to North American standards",
+ "single_phase": false,
+ "year": "2026",
+ "title": "Welding automation",
+ "subtitle": "Welding positioners · rotary tables and lift positioners · welding turning rolls and pipe rotators · column and boom manipulators · welding tables and downdraft tables",
+ "range_label": "Value-line welding automation",
+ "about_for": "value-line welding automation",
+ "about_title": "Positioners, rolls and manipulators for the welding shop",
+ "about_text": [
+  "NovoTech's value line is our own brand: machines built in China to our specification by a maker that exports metalworking machinery to more than 70 countries, inspected before they ship and sold under NovoTech's name with a CSA-approved panel on every 3-phase machine, a 1-year warranty and parts and technical support from Mississauga, Ontario, Canada.",
+  "Welding automation brings the seam to the welder: positioners tilt and turn the part so every weld is made flat, turning rolls rotate vessels, tanks and pipe under the torch, column and boom manipulators carry the welding head along the seam, and welding tables hold the parts square while downdraft tables draw off grinding dust and fumes."
+ ],
+ "family_sets": [
+  "welding-automation",
+  "ttmc-more"
+ ],
+ "families": [
+  "dt-hb-light",
+  "tt-wp-bench",
+  "tt-wp-chuck",
+  "tt-wp-tilt",
+  "dt-hb",
+  "dt-hbt",
+  "dt-hbj",
+  "tt-wp-heavy",
+  "dt-hb-heavy",
+  "dt-headtail",
+  "dt-special-pos",
+  "tt-wp-acc",
+  "dt-dzg-light",
+  "tt-trs",
+  "dt-dkg",
+  "dt-dsk",
+  "dt-dzg",
+  "dt-pipe-rot",
+  "tt-wtr",
+  "dt-dlh-small",
+  "dt-dlh-medium",
+  "dt-dlh-heavy",
+  "tt-wt3624",
+  "tt-mdt"
+ ],
+ "groups": [
+  {
+   "title": "Light and benchtop welding positioners",
+   "families": [
+    "dt-hb-light",
+    "tt-wp-bench",
+    "tt-wp-chuck"
+   ]
+  },
+  {
+   "title": "Tilting welding positioners",
+   "families": [
+    "tt-wp-tilt",
+    "dt-hb"
+   ]
+  },
+  {
+   "title": "Rotary welding tables and lift positioners",
+   "families": [
+    "dt-hbt",
+    "dt-hbj"
+   ]
+  },
+  {
+   "title": "Heavy welding positioners",
+   "families": [
+    "tt-wp-heavy",
+    "dt-hb-heavy"
+   ]
+  },
+  {
+   "title": "Headstock, tailstock and special positioners",
+   "families": [
+    "dt-headtail",
+    "dt-special-pos"
+   ]
+  },
+  {
+   "title": "Welding chucks and torch holders",
+   "families": [
+    "tt-wp-acc"
+   ]
+  },
+  {
+   "title": "Light welding turning rolls",
+   "families": [
+    "dt-dzg-light",
+    "tt-trs"
+   ]
+  },
+  {
+   "title": "Adjustable welding turning rolls",
+   "families": [
+    "dt-dkg",
+    "dt-dsk"
+   ]
+  },
+  {
+   "title": "Self-aligning welding turning rolls",
+   "families": [
+    "dt-dzg"
+   ]
+  },
+  {
+   "title": "Pipe rotators and fit-up rotators",
+   "families": [
+    "dt-pipe-rot"
+   ]
+  },
+  {
+   "title": "Pipe stands and supports",
+   "families": [
+    "tt-wtr"
+   ]
+  },
+  {
+   "title": "Column and boom welding manipulators",
+   "families": [
+    "dt-dlh-small",
+    "dt-dlh-medium",
+    "dt-dlh-heavy"
+   ]
+  },
+  {
+   "title": "Welding tables",
+   "families": [
+    "tt-wt3624"
+   ]
+  },
+  {
+   "title": "Downdraft tables",
+   "families": [
+    "tt-mdt"
+   ]
+  }
+ ],
+ "cover_photos": [
+  "tm-wp500",
+  "dt-hb-light",
+  "dt-hbt"
+ ],
+ "out": "src/files/NovoTech-Welding-Automation-Value-Line-2026.pdf"
+}

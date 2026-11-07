@@ -509,6 +509,29 @@ for fn in os.listdir(os.path.join(ROOT, "content", "families")):
     if fn.endswith(".json"):
         FAMILY_SETS[fn[:-5]] = json.load(open(os.path.join(ROOT, "content", "families", fn), encoding="utf-8"))["families"]
 
+# content/family_pdfs.json (tools/value_brochures.py): the NovoTech brochure on every family that has none of its own, and on every
+# page that shows none (the owner, Nov 7 2026: "no product without a PDF brochure") — the families here, as they load, the pages in
+# apply_family_pdfs()
+_fp = os.path.join(ROOT, "content", "family_pdfs.json")
+FAMILY_PDFS = json.load(open(_fp, encoding="utf-8")) if os.path.exists(_fp) else {"families": {}, "pages": {}}
+
+
+def family_pdf_entry(x):
+    f = os.path.join(ROOT, "src", x["file"])
+    if not os.path.exists(f):
+        if __name__ == "__main__":       # the site build stops; an import (the brochure builder, before the brochure exists) goes on
+            raise SystemExit(f"content/family_pdfs.json: {x['file']} is missing — build it with tools/brochure/build_brochure.py")
+        return None
+    units = "mm and inches" if "Tooling-Catalogue" in x["file"] else "imperial units"
+    return {"file": x["file"], "label": x["label"], "size": f"PDF · {os.path.getsize(f) / 1e6:.1f} MB · {units}"}
+
+
+for _fs in FAMILY_SETS.values():
+    for _fid, _f in _fs.items():
+        if _fid in FAMILY_PDFS["families"] and not _f.get("pdf") and family_pdf_entry(FAMILY_PDFS["families"][_fid]):
+            _f["pdf"] = family_pdf_entry(FAMILY_PDFS["families"][_fid])
+            _f["no_pdf"] = False                       # the value-line families were marked "no brochure yet"
+
 
 def refresh_pdf_sizes(obj):
     """every {"file": "files/….pdf", "size": "PDF · 1 MB · imperial units"} shows the PDF's real size — the brochures are rebuilt
@@ -906,6 +929,15 @@ def pdf_brand_label(pdf):
         pdf["label"] = "Download the " + brand + " " + pdf["label"][len("Download the "):]
 
 
+def apply_family_pdfs(loaded):
+    """the page half of content/family_pdfs.json (the families get theirs when the family sets load): a page that shows no
+    brochure gets the one of its families"""
+    for p in loaded:
+        x = FAMILY_PDFS["pages"].get(p["slug"])
+        if x and not p.get("catalogue_pdf") and not p.get("catalogue_pdfs"):
+            p["catalogue_pdf"] = family_pdf_entry(x)
+
+
 def brand_all_pdf_labels(loaded):
     for p in loaded:
         pdf_brand_label(p.get("catalogue_pdf"))
@@ -1093,6 +1125,12 @@ def build_pdf_index(loaded):
         if p.get("template") in SITE_TEMPLATES:
             continue
         walk(p, p)
+        # the brochures on the families' own buttons too (the value-line brochures of Nov 7 2026 are only there on some pages)
+        for g in p.get("groups") or []:
+            for fid in g.get("families") or []:
+                f = FAMILY_SETS.get(g.get("family_set") or p.get("family_set") or "", {}).get(fid) if isinstance(fid, str) else None
+                if f and f.get("pdf") and not f.get("no_pdf"):
+                    walk({"pdf": f["pdf"]}, p)
     top = {c["href"].split("#")[0] for c in site["nav"][0]["children"]}
     for f, e in idx.items():
         e["pages"].sort(key=lambda r: (r["href"] not in top, r["label"]))      # the main category pages first
@@ -1857,6 +1895,7 @@ def main():
     loaded = [json.load(open(os.path.join(pdir, fn), encoding="utf-8")) for fn in sorted(os.listdir(pdir)) if fn.endswith(".json") and not fn.startswith("_")]
     apply_extra_groups(loaded)
     refresh_pdf_sizes(loaded)
+    apply_family_pdfs(loaded)
     brand_all_pdf_labels(loaded)
     load_catalogue_tons(loaded)
     by_slug_all = {p["slug"]: p for p in loaded}

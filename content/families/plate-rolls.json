@@ -1253,7 +1253,7 @@
       "title": "4RH 10x90",
       "sub": "3.4 ft special sheet bending machine",
       "models": [
-       "4RH 10x90 + Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240"
+       "4RH 10x90"
       ],
       "rows": [
        {
@@ -1272,11 +1272,12 @@
         "key": false
        },
        {
-        "label": "Rolling capacity 12 ga on all",
-        "unit": "",
+        "label": "Rolling capacity",
+        "sub": "",
         "cells": [
-         "models."
-        ]
+         "12 ga (2.5 mm)"
+        ],
+        "key": true
        },
        {
         "label": "Roll Ø",
@@ -1307,23 +1308,16 @@
         "cells": [
          "1,984 lb (900 kg)"
         ]
-       },
-       {
-        "label": "1-year warranty readily available",
-        "unit": "in",
-        "cells": [
-         "Canada"
-        ]
        }
       ]
      }
     ],
     "models": [
      {
-      "name": "4RH 10x90 + Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240",
+      "name": "4RH 10x90",
       "glance": [
        "3.4 ft · 41.3″",
-       "—",
+       "12 ga (2.5 mm)",
        "3.54″ (90 mm)",
        "3 HP (2.2 kW)",
        "1,984 lb (900 kg)"
@@ -1338,7 +1332,7 @@
      "weight"
     ],
     "caps": {
-     "4RH 10x90 + Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase, or 240": "3.4 ft working length"
+     "4RH 10x90": "rolls up to 12 ga (2.5 mm) × 3.4 ft"
     },
     "note": "Capacities are for mild steel with a yield strength of 34,100 psi (24 kg/mm²); thin sheet is given in gauge with the manufacturer's nominal metric value in brackets. Dimensions are overall L × W × H. 4R OM and 4R HOM machines are built to order — ask for the data sheet of your profile."
    },
@@ -5418,7 +5412,7 @@
    "pdf": {
     "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
     "label": "Download the premium-line plate rolls brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-4r"
   },
@@ -5706,7 +5700,7 @@
    "pdf": {
     "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
     "label": "Download the premium-line plate rolls brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-4r"
   },
@@ -6598,7 +6592,7 @@
    "pdf": {
     "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
     "label": "Download the premium-line plate rolls brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-4r"
   },
@@ -6877,7 +6871,7 @@
    "pdf": {
     "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
     "label": "Download the premium-line plate rolls brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-4r"
   },
@@ -7074,7 +7068,7 @@
    "pdf": {
     "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
     "label": "Download the premium-line plate rolls brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-4r"
   },
@@ -7327,7 +7321,7 @@
    "pdf": {
     "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
     "label": "Download the premium-line plate rolls brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-3r"
   },
@@ -7858,7 +7852,7 @@
    "pdf": {
     "file": "files/NovoTech-Plate-Rolls-Premium-Line-2026.pdf",
     "label": "Download the premium-line plate rolls brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-3r"
   }

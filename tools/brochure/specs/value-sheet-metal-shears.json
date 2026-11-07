@@ -20,7 +20,9 @@
   "tt-ths",
   "tt-hq11",
   "tt-q11",
-  "tt-q11nc"
+  "tt-q11nc",
+  "tt-bq01",
+  "tt-ps1220"
  ],
  "groups": [
   {
@@ -41,6 +43,18 @@
    "families": [
     "tt-q11",
     "tt-q11nc"
+   ]
+  },
+  {
+   "title": "Bench shears",
+   "families": [
+    "tt-bq01"
+   ]
+  },
+  {
+   "title": "Coil slitting and cut-to-length machine",
+   "families": [
+    "tt-ps1220"
    ]
   }
  ],

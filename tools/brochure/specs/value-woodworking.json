@@ -1,0 +1,71 @@
+{
+ "cover_line": "NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech",
+ "about_kicker": "NovoTech value line",
+ "country": "China",
+ "made_in": "Built in China to North American standards",
+ "single_phase": false,
+ "year": "2026",
+ "title": "Woodworking machinery",
+ "subtitle": "Jointers, thickness planers and jointer-planers · table saws and band saws · slot boring machines · wood lathe · dust collector",
+ "range_label": "Value-line woodworking machinery",
+ "about_for": "value-line woodworking machinery",
+ "about_title": "Machines for the cabinet, furniture and millwork shop",
+ "about_text": [
+  "NovoTech's value line is our own brand: machines built in China to our specification by a maker that exports metalworking machinery to more than 70 countries, inspected before they ship and sold under NovoTech's name with a CSA-approved panel on every 3-phase machine, a 1-year warranty and parts and technical support from Mississauga, Ontario, Canada.",
+  "Rough lumber is milled in a fixed order: the jointer flattens a face and squares an edge, the thickness planer brings the board to thickness, the table saw rips and crosscuts it and the band saw cuts curves and resaws. Slot boring machines cut the joinery, the wood lathe turns, and the dust collector keeps the shop clean."
+ ],
+ "family_sets": [
+  "ttmc-more"
+ ],
+ "families": [
+  "tt-wj",
+  "tt-tdm",
+  "tt-wjp",
+  "tt-wts",
+  "tt-tbs",
+  "tt-slotbore",
+  "tt-tl406",
+  "tt-dc900"
+ ],
+ "groups": [
+  {
+   "title": "Jointers, thickness planers and jointer-planers",
+   "families": [
+    "tt-wj",
+    "tt-tdm",
+    "tt-wjp"
+   ]
+  },
+  {
+   "title": "Table saws and band saws",
+   "families": [
+    "tt-wts",
+    "tt-tbs"
+   ]
+  },
+  {
+   "title": "Slot mortisers and boring machines",
+   "families": [
+    "tt-slotbore"
+   ]
+  },
+  {
+   "title": "Wood lathe",
+   "families": [
+    "tt-tl406"
+   ]
+  },
+  {
+   "title": "Dust collector",
+   "families": [
+    "tt-dc900"
+   ]
+  }
+ ],
+ "cover_photos": [
+  "tm-wts1050",
+  "tm-wj876",
+  "tm-mgx20r"
+ ],
+ "out": "src/files/NovoTech-Woodworking-Machinery-Value-Line-2026.pdf"
+}

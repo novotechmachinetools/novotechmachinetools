@@ -41,8 +41,10 @@ GROUPS = [
     ("semi-automatic", "Semi-automatic band saws"),
     ("automatic", "Automatic band saws"),
     ("double-column", "Double column band saws"),
+    ("vertical", "Vertical band saws"),          # the VS saws (on the site since Oct 28 2026; in the catalogue since Nov 7 2026)
 ]
-GROUP_TYPE = {"manual": "Manual", "semi-automatic": "Semi-automatic", "automatic": "Automatic", "double-column": "Double column"}
+GROUP_TYPE = {"manual": "Manual", "semi-automatic": "Semi-automatic", "automatic": "Automatic", "double-column": "Double column",
+              "vertical": "Vertical"}
 
 COMPANY_LINE = ("NovoTech Machine Tools Inc. · 1365 Mid-Way Blvd, Unit 26, Mississauga, ON L5T 2J5, Canada · "
                 "NovoTechMachineTools.com · info@NovoTechMachineTools.com · +1 647 526 5510")
@@ -65,9 +67,13 @@ PDF_AUTHOR = "NovoTech Machine Tools Inc."
 
 
 # ---------------------------------------------------------------- images
+IMAGE_MAP = json.load(open(os.path.join(ROOT, "tools", "image_map.json"), encoding="utf-8"))
+
+
 def prepare_photo(key, out_dir):
-    """PNG (RGB, white background) -> JPEG, max 1400 px wide. Returns the relative file name."""
-    src = os.path.join(PHOTOS, key + ".png")
+    """PNG (RGB, white background) -> JPEG, max 1400 px wide. Returns the relative file name.  The source is the one the site
+    shows (tools/image_map.json — the cut-outs and the supplier photos that replaced damaged ones), else the value-line PNG."""
+    src = os.path.join(ROOT, IMAGE_MAP[key]["src"]) if key in IMAGE_MAP else os.path.join(PHOTOS, key + ".png")
     if not os.path.exists(src):
         raise SystemExit(f"photo missing: {src}")
     dst = os.path.join(out_dir, key + ".jpg")
@@ -94,7 +100,7 @@ def prepare_logo(src, name, out_dir, max_w):
     return "img/" + name
 
 
-MODEL_RE = re.compile(r"(?:BS-?\d{3,4}(?:x\d{3})?[A-Z]*(?:-JC)?|TBK-\d{4}[A-Z]?(?: \(improved\))?|TGK-\d{4}|GZ\d{4}/\d+)")
+MODEL_RE = re.compile(r"(?:VS-\d{3}|BS-?\d{3,4}(?:x\d{3})?[A-Z]*(?:-JC)?|TBK-\d{4}[A-Z]?(?: \(improved\))?|TGK-\d{4}|GZ\d{4}/\d+)")
 
 
 def caption(key):
@@ -194,8 +200,7 @@ def main():
     fams_all = data["families"]
     order = [k for k in data["order"] if fams_all[k].get("brand") == "novotech"]
     fams = [fams_all[k] for k in order]
-    if len(fams) != 14:
-        print(f"warning: expected 13 value-line families, found {len(fams)}", file=sys.stderr)
+    print(f"value-line families: {len(fams)}")
 
     # page numbering: 1 cover, 2 range, 3.. products, last = services
     first_product_page = 3

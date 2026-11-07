@@ -275,7 +275,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
     </div>
     {% if f.inline_table %}{% set t = f.inline_table %}
     <h3 class="tbl">{{ t.title }} — technical specifications</h3>{% if t.sub %}<div class="sub">{{ t.sub }}</div>{% endif %}
-    <table class="{{ 'n7' if t.models|length > 6 else '' }}">
+    <table class="{{ 'n7' if t.models|length > 6 else '' }}" data-fam="{{ f.id }}" data-t="{{ t.key }}">
       <thead><tr><th>Model</th>{% for m in t.models %}<th>{{ m }}</th>{% endfor %}</tr></thead>
       <tbody>{% for r in t.rows %}<tr class="{{ 'key' if r.key else '' }}"><th>{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>{% for c in r.cells %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
     </table>
@@ -303,7 +303,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
     <h2>{{ f.name }}</h2>
     {% for t in tables %}
     <h3>{{ t.title }}</h3>{% if t.sub %}<div class="sub">{{ t.sub }}</div>{% endif %}
-    <table class="{{ 'n7' if t.models|length > 6 else '' }}">
+    <table class="{{ 'n7' if t.models|length > 6 else '' }}" data-fam="{{ f.id }}" data-t="{{ t.key }}">
       <thead><tr><th>Model</th>{% for m in t.models %}<th>{{ m }}</th>{% endfor %}</tr></thead>
       <tbody>{% for r in t.rows %}<tr class="{{ 'key' if r.key else '' }}"><th>{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>{% for c in r.cells %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
     </table>

@@ -13,16 +13,24 @@
  "country": "China",
  "made_in": "Built in China to North American standards",
  "family_sets": [
-  "sahinler"
+  "sahinler",
+  "ttmc-more"
  ],
  "families": [
-  "vl-q35y"
+  "vl-q35y",
+  "tt-m55"
  ],
  "groups": [
   {
    "title": "Q35Y hydraulic ironworkers",
    "families": [
     "vl-q35y"
+   ]
+  },
+  {
+   "title": "Compact single-cylinder ironworkers",
+   "families": [
+    "tt-m55"
    ]
   }
  ],

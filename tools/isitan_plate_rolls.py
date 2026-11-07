@@ -5,6 +5,15 @@ from sahinler_lib import BRAND_LINE as SH_BRAND_LINE, premium_pdf
 
 SET = "plate-rolls"
 SECTION = "Plate rollers"
+
+# catalogue page 9: the table extraction caught the page's voltage note and the "Included" box into the 4RH 10x90 table (the
+# model read "4RH 10x90 + Custom voltage: …", rolling capacity "12 ga on all | models.", a "1-year warranty … | Canada" row) —
+# the table as printed (Nov 7 2026)
+_T9 = TABLES["9"][0]
+if _T9["models"][0].startswith("4RH 10x90 +"):
+    _T9["models"] = ["4RH 10x90"]
+    _T9["rows"] = [dict(r, label="Rolling capacity", cells=["12 ga"]) if r["label"].startswith("Rolling capacity") else r
+                   for r in _T9["rows"] if r["label"] not in ("V", "1-year warranty readily available")]
 # ------------------------------------------------------------------ images
 # key -> (source file, alt) ; sources: isitan.com photo (img/…) or catalogue cut-out (cut/…)
 IMAGES = {

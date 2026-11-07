@@ -131,11 +131,28 @@ def paginate_tables(tables, budget=34):
     return pages
 
 
-def layout(families, no_inline, budgets=None):
+def split_cols(t, n):
+    """A table too wide for the page (its model columns ran past the right edge — the owner's PDF check, Nov 7 2026) goes on as
+    n tables of the same rows, each with a share of the model columns; the later ones are titled "(continued)"."""
+    models = t["models"]
+    if n <= 1 or len(models) < 2:
+        return [t]
+    n = min(n, len(models))
+    per = -(-len(models) // n)
+    out = []
+    for k, i in enumerate(range(0, len(models), per)):
+        rows = [dict(r, cells=r["cells"][i:i + per]) if len(r["cells"]) == len(models) else r for r in t["rows"]]
+        out.append(dict(t, models=models[i:i + per], rows=rows, title=t["title"] + (" (continued)" if k else "")))
+    return out
+
+
+def layout(families, no_inline, budgets=None, colsplit=None):
     """A short first table goes on the family page itself unless the page overflowed on the previous pass; a family whose
-    specification page ran into the footer gets a smaller per-page budget (budgets[fid]) and is paginated again."""
+    specification page ran into the footer gets a smaller per-page budget (budgets[fid]) and is paginated again; a table
+    wider than the page is split by columns (colsplit[(fid, table index)] parts)."""
     for f in families:
-        tables = list((f.get("brochure_specs") or f["specs"])["tables"])      # brochure_specs: the site shows a shorter table
+        src = list((f.get("brochure_specs") or f["specs"])["tables"])        # brochure_specs: the site shows a shorter table
+        tables = [c for i, t in enumerate(src) for c in split_cols(dict(t, key=i), (colsplit or {}).get((f["id"], i), 1))]
         f["inline_table"] = None
         if tables and f["id"] not in no_inline and table_weight(tables[0]) <= 20:
             f["inline_table"] = tables.pop(0)
@@ -151,7 +168,25 @@ def overflowing(pg, sel="section.page[data-fam]"):
         return bottom > f.getBoundingClientRect().top - 4; }).map(p => p.dataset.fam || p.dataset.spec)""", sel)
 
 
-def render(spec, no_inline, budgets=None, tight=None):
+def too_wide(pg):
+    """(family id, table index) of every specification table that runs past the right edge of its page body."""
+    return [tuple(x) for x in pg.evaluate("""() => [...document.querySelectorAll('table[data-fam]')].filter(t => {
+        const b = t.parentElement.getBoundingClientRect(); return t.getBoundingClientRect().right > b.right + 1;
+    }).map(t => [t.dataset.fam, +t.dataset.t])""")]
+
+
+def bandsaw_tables(f):
+    """a band-saw family (spec kind "bandsaw": capacities per model, the site builds the table) with the site's table as the
+    brochure's (the Bekamak supplement, Nov 7 2026)"""
+    sys.path.insert(0, ROOT)
+    from build import build_bandsaw_table
+    t = build_bandsaw_table(f["specs"])
+    note = ("Capacities are the largest stock the saw passes at the stated angle, converted from the manufacturer's metric data and "
+            "rounded to the nearest 1/8″. Blade size is length × width × thickness.")          # the note under the site's band-saw tables
+    return dict(f["specs"], tables=[{"title": f.get("short") or f["name"], "sub": "", "models": t["models"], "rows": t["rows"]}], note=note)
+
+
+def render(spec, no_inline, budgets=None, tight=None, colsplit=None):
     fams_all = {}
     for s in spec["family_sets"]:
         fams_all.update(json.load(open(os.path.join(ROOT, "content", "families", f"{s}.json"), encoding="utf-8"))["families"])
@@ -160,6 +195,8 @@ def render(spec, no_inline, budgets=None, tight=None):
         f = dict(fams_all[fid])
         if f.get("brochure_specs"):
             f["specs"] = f["brochure_specs"]
+        elif (f.get("specs") or {}).get("kind") == "bandsaw" and "tables" not in f["specs"]:
+            f["specs"] = bandsaw_tables(f)
         f["hero"] = img(f["images"][0]) if f["images"] else None
         f["minis"] = [img(k) for k in f["images"][1:3]]
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]
@@ -171,7 +208,7 @@ def render(spec, no_inline, budgets=None, tight=None):
         gal = [g for g in (img(k) for k in f["images"][3:]) if g] if spec.get("gallery", True) else []
         f["gallery_pages"] = [gal[i:i + 9] for i in range(0, len(gal), 9)]
         families.append(f)
-    layout(families, no_inline, budgets)
+    layout(families, no_inline, budgets, colsplit)
     # spec "intro_pages": overview pages after About — the series side by side, the loading options (the owner, Nov 1 2026)
     intro = []
     for ip in spec.get("intro_pages") or []:
@@ -205,23 +242,27 @@ def render(spec, no_inline, budgets=None, tight=None):
 def build(spec_path, html_only=False):
     spec = json.load(open(spec_path, encoding="utf-8"))
     no_inline = set(spec.get("no_inline", []))
-    budgets, tight = {}, {}
-    out_html, total = render(spec, no_inline, budgets, tight)
+    budgets, tight, colsplit = {}, {}, {}
+    out_html, total = render(spec, no_inline, budgets, tight, colsplit)
     if html_only:
         print("html:", out_html); return
     from playwright.sync_api import sync_playwright
     out_pdf = os.path.join(ROOT, spec["out"])
     with sync_playwright() as p:
         b = p.chromium.launch()
-        for _ in range(6):      # inline tables that run into the footer go to a specifications page; specification pages that
-            pg = b.new_page()   # run into the footer are paginated with a smaller budget; then re-render
-            pg.goto("file://" + out_html, wait_until="networkidle")
+        for _ in range(10):     # inline tables that run into the footer go to a specifications page; specification pages that
+            pg = b.new_page()   # run into the footer are paginated with a smaller budget; tables wider than the page are split
+            pg.goto("file://" + out_html, wait_until="networkidle")   # by columns; then re-render
             pg.emulate_media(media="print")
             over = set(overflowing(pg))
             new = over - no_inline
             spec_over = set(overflowing(pg, "section.page[data-spec]"))
             squeeze = {fid for fid in over - new if tight.get(fid, 0) < 3}     # inline table already gone: tighten the page
-            if not new and not spec_over and not squeeze:
+            wide = set(too_wide(pg))
+            for key in wide:
+                colsplit[key] = colsplit.get(key, 1) + 1
+                print(f"table {key[1]} of {key[0]} is wider than the page — splitting its columns in {colsplit[key]}")
+            if not new and not spec_over and not squeeze and not wide:
                 if over:
                     print("!! pages still overflow:", sorted(over))
                 break
@@ -235,9 +276,9 @@ def build(spec_path, html_only=False):
                 budgets[fid] = budgets.get(fid, 34) * 0.75
                 print(f"specifications page of {fid} runs into the footer — paginating at {budgets[fid]:.0f}")
             pg.close()
-            out_html, total = render(spec, no_inline, budgets, tight)
+            out_html, total = render(spec, no_inline, budgets, tight, colsplit)
         else:
-            print("!! still overflowing after 6 passes")
+            print("!! still overflowing after 10 passes")
             pg = b.new_page()
             pg.goto("file://" + out_html, wait_until="networkidle")
             pg.emulate_media(media="print")

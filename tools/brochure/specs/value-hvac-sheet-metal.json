@@ -1,0 +1,78 @@
+{
+ "cover_line": "NovoTech value line · built in China to North American standards · sold & serviced in Canada by NovoTech",
+ "about_kicker": "NovoTech value line",
+ "country": "China",
+ "made_in": "Built in China to North American standards",
+ "single_phase": false,
+ "year": "2026",
+ "title": "HVAC and sheet metal machines",
+ "subtitle": "Bead rollers and beading machines · lock formers and roll formers · circle cutters and flanging · corner notchers",
+ "range_label": "Value-line HVAC and sheet metal machines",
+ "about_for": "value-line HVAC and sheet metal machines",
+ "about_title": "Machines for the HVAC and sheet-metal shop",
+ "about_text": [
+  "NovoTech's value line is our own brand: machines built in China to our specification by a maker that exports metalworking machinery to more than 70 countries, inspected before they ship and sold under NovoTech's name with a CSA-approved panel on every 3-phase machine, a 1-year warranty and parts and technical support from Mississauga, Ontario, Canada.",
+  "The machines that turn flat sheet into duct and fittings: bead rollers and beading machines that stiffen panels and roll the beads of round duct, lock formers and roll formers for the seams, circle cutters and flanging machines for discs and end caps, and corner notchers that cut the corners of panels and boxes before they are folded."
+ ],
+ "family_sets": [
+  "ttmc-more"
+ ],
+ "families": [
+  "tt-etb",
+  "tt-rm-deep",
+  "tt-duct",
+  "tt-lock",
+  "tt-pic50",
+  "tt-mcs",
+  "tt-hcs",
+  "tt-hnm",
+  "tt-pnm"
+ ],
+ "groups": [
+  {
+   "title": "Beading machines and bead rollers",
+   "families": [
+    "tt-etb",
+    "tt-rm-deep"
+   ]
+  },
+  {
+   "title": "Power beading and slitting machines for round duct",
+   "families": [
+    "tt-duct"
+   ]
+  },
+  {
+   "title": "Lock formers and roll formers",
+   "families": [
+    "tt-lock"
+   ]
+  },
+  {
+   "title": "Diamond roller former",
+   "families": [
+    "tt-pic50"
+   ]
+  },
+  {
+   "title": "Circle shears",
+   "families": [
+    "tt-mcs",
+    "tt-hcs"
+   ]
+  },
+  {
+   "title": "Corner notchers",
+   "families": [
+    "tt-hnm",
+    "tt-pnm"
+   ]
+  }
+ ],
+ "cover_photos": [
+  "tm-rm18e",
+  "tm-etb25",
+  "tm-pf16g"
+ ],
+ "out": "src/files/NovoTech-HVAC-Sheet-Metal-Machines-Value-Line-2026.pdf"
+}

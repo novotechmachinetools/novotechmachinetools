@@ -13,14 +13,16 @@
  "country": "China",
  "made_in": "Built in China to North American standards",
  "family_sets": [
-  "value-sheet"
+  "value-sheet",
+  "ttmc-more"
  ],
  "families": [
   "vl-wad-compact",
   "vl-wad",
   "vl-wad-heavy",
   "vl-nc-compact",
-  "vl-nc"
+  "vl-nc",
+  "tt-hbv"
  ],
  "groups": [
   {
@@ -36,6 +38,12 @@
    "families": [
     "vl-nc-compact",
     "vl-nc"
+   ]
+  },
+  {
+   "title": "Hydraulic bending brakes",
+   "families": [
+    "tt-hbv"
    ]
   }
  ],
