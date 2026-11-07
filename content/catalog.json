@@ -178,7 +178,6 @@
   "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, slot boring machines, a lathe and dust collection."
  },
  "card_image": {
-  "folder-sheet-metal-brake": "nt-card-roofing-brake",
   "lock-former": "nt-card-lock-former"
  },
  "featured": [
@@ -200,7 +199,7 @@
    "name": "Dener",
    "country": "Turkey",
    "since": "1974",
-   "logo": null,
+   "logo": "dener-logo",
    "href": "press-brake.html",
    "what": "CNC press brakes, panel benders, hydraulic shears, sheet and tube fiber lasers, CNC lathes, machining centres and surface grinders"
   },
@@ -208,7 +207,7 @@
    "name": "GMS",
    "country": "Turkey",
    "since": "1960",
-   "logo": null,
+   "logo": "gms-logo",
    "href": "rebar-bender-and-cutter.html",
    "what": "Rebar benders, stirrup benders, rebar cutters and automatic rebar processing lines"
   },
@@ -288,7 +287,7 @@
    "name": "Wecotech",
    "country": "Switzerland",
    "since": null,
-   "logo": null,
+   "logo": "wecotech-logo",
    "href": "tube-end-forming-machines.html",
    "what": "Tube end forming machines: expanders, reducers, inner and outer formers"
   },
@@ -296,7 +295,7 @@
    "name": "WIKUS",
    "country": "Germany",
    "since": null,
-   "logo": null,
+   "logo": "wikus-logo",
    "href": "band-saw-blades.html",
    "what": "Bimetal and carbide-tipped band saw blades, welded to length"
   },

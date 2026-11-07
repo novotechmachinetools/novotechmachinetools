@@ -499,9 +499,9 @@
     });
   });
 
-  /* ---------- control thumbnails under a family: open in the lightbox as one set ---------- */
-  d.querySelectorAll(".control-thumbs").forEach(function (ul) {
-    var links = Array.prototype.slice.call(ul.querySelectorAll("a.control-thumb"));
+  /* ---------- control thumbnails under a family, and photo grids (the About page's showroom): open in the lightbox as one set ---------- */
+  d.querySelectorAll(".control-thumbs, [data-lightbox]").forEach(function (ul) {
+    var links = Array.prototype.slice.call(ul.querySelectorAll("a.control-thumb, a.grid-photo"));
     var items = links.map(function (a) { var im = a.querySelector("img"); return { src: a.getAttribute("href"), srcset: im.getAttribute("srcset") || "", w: im.getAttribute("width"), h: im.getAttribute("height"), alt: im.alt, cap1: "", cap2: (a.nextElementSibling && a.nextElementSibling.textContent) || im.alt }; });
     links.forEach(function (a, i) {
       a.addEventListener("click", function (e) {

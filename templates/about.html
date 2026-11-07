@@ -29,9 +29,9 @@
 </section>
 
 <section class="wrap about-gallery" aria-labelledby="gallery-title">
-  <h2 id="gallery-title">Inside the showroom</h2>
-  <ul class="gallery-grid">
-    {% for im in page.showroom_imgs %}<li><figure>{{ photo(im, "(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 500px") }}<figcaption>{{ im.alt }}</figcaption></figure></li>{% endfor %}
+  <h2 id="gallery-title">Inside our showroom and warehouse</h2>
+  <ul class="gallery-grid" data-lightbox>
+    {% for im in page.showroom_imgs %}<li><figure><a class="grid-photo" href="{{ im.src }}" aria-label="Enlarge: {{ im.alt }}">{{ photo(im, "(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 500px") }}</a><figcaption>{{ im.alt }}</figcaption></figure></li>{% endfor %}
   </ul>
 </section>
 
@@ -40,7 +40,9 @@
     <h2 id="brands-title">The manufacturers behind our machines</h2>
     <p class="group-lead">Each of them builds the machines it knows best. We stock their spare parts in Mississauga, ON, Canada, and our technicians install and service their machines across Canada.</p>
   </div>
-  {{ brand_grid(page.brands) }}
+  {% if page.factory %}{% set fim = img(page.factory.image) %}
+  <figure class="about-factory">{{ photo(fim, "(max-width: 1240px) 92vw, 1180px") }}<figcaption>{{ page.factory.caption }}</figcaption></figure>{% endif %}
+  {{ brand_grid(page.brands, logos=True) }}
 </section>
 
 {% set nv = page.videos|length %}

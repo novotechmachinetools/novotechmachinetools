@@ -103,11 +103,12 @@ $phone   = $f('phone', 60);
 $machine = $f('machine', 200);
 $message = $f('message', 4000);
 $page    = $f('page', 200);
+$pageShort = $f('page_short', 80);    // the page in a word or two: "Rebar benders", "Ironworkers", "Contact us"
 
 if ($name === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     respond(false, 'Please add your name and a valid email address.', 422);
 }
-foreach ([$name, $company, $email, $phone, $machine, $page] as $v) {
+foreach ([$name, $company, $email, $phone, $machine, $page, $pageShort] as $v) {
     if (preg_match('/[\r\n]/', $v)) { respond(false, 'Invalid input.', 422); }
 }
 
@@ -159,7 +160,8 @@ $lines = [
     "Company:  $company",
     "Email:    $email",
     "Phone:    $phone",
-    "Machine:  $machine",
+    "Machine:  " . ($machine !== '' ? $machine : '(not chosen)'),
+    "Page:     " . ($pageShort !== '' ? $pageShort : $page),
     "",
     "Message:",
     $message,
@@ -199,7 +201,10 @@ if ($files) {
     $headers[] = "Content-Type: text/plain; charset=UTF-8";
     $body = $text;
 }
-$subject = $SUBJECT . ($machine !== '' ? " — $machine" : '') . ($files ? ' (' . count($files) . ' file' . (count($files) > 1 ? 's' : '') . ' attached)' : '');
+// the subject names the page the form was sent from in a word or two, and the machine when one was chosen (the owner,
+// Nov 7 2026: "so I know which page the form was filled on and which product the customer means")
+$subject = 'Quote request' . ($pageShort !== '' ? " — $pageShort" : '') . ($machine !== '' ? ": $machine" : '')
+         . ($files ? ' (' . count($files) . ' file' . (count($files) > 1 ? 's' : '') . ' attached)' : '');
 $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
 
 $sent = @mail($TO, $subject, $body, implode("\r\n", $headers), "-f$FROM");

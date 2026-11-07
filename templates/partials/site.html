@@ -31,10 +31,13 @@
 </li>
 {%- endmacro %}
 
-{% macro brand_grid(brands, h="h3") -%}
-<ul class="brand-grid">
+{% macro brand_grid(brands, h="h3", logos=False) -%}
+<ul class="brand-grid{{ ' with-logos' if logos else '' }}">
   {% for b in brands %}
   <li><a class="brand-card" href="{{ b.href }}">
+    {% if logos and b.logo_img %}{# every logo shown with about the same visual weight: the same area, a wide one capped in width #}
+    {%- set im = b.logo_img %}{% set r = im.w / im.h %}{% set lw = [190, (4600 * r) ** 0.5] | min %}{% set lh = [lw / r, 54] | min %}
+    <span class="brand-logo"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="{{ (lh * r) | round | int }}px" width="{{ (lh * r) | round | int }}" height="{{ lh | round | int }}" alt="" loading="lazy" decoding="async"></span>{% endif %}
     <{{ h }} class="brand-name">{{ b.name }}</{{ h }}>
     <span class="brand-origin">{{ b.country }}{% if b.since %} · since {{ b.since }}{% endif %}</span>
     <span class="brand-what">{{ b.what }}</span>

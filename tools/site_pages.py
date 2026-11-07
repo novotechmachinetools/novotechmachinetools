@@ -88,15 +88,17 @@ GROUPS = [
     ("wood", "Woodworking machinery", "Jointers, planers, saws and joinery machines for the cabinet shop and the joinery.",
      ["woodworking-machinery"]),
 ]
-CARD_IMAGE = {"folder-sheet-metal-brake": "nt-card-roofing-brake", "lock-former": "nt-card-lock-former"}
+# the brake hub's card shows the hub's own hero, the hydraulic folder (the owner, Nov 7 2026: the old hand brake photo carried
+# the EMSA name)
+CARD_IMAGE = {"lock-former": "nt-card-lock-former"}
 FEATURED = ["press-brake", "laser-cutting-machine", "tube-laser-cutting-machine", "band-saw", "rebar-bender-and-cutter", "plate-rollers",
             "ironworker-machines", "shear-cutting", "pipe-benders", "panel-bender",
             "sheet-metal-plate-deburring-edge-rounding-finishing-grinding", "press-brake-tooling-punch-and-die"]
 
 BRANDS = [
-    {"name": "Dener", "country": "Turkey", "since": "1974", "logo": None, "href": "press-brake.html",
+    {"name": "Dener", "country": "Turkey", "since": "1974", "logo": "dener-logo", "href": "press-brake.html",
      "what": "CNC press brakes, panel benders, hydraulic shears, sheet and tube fiber lasers, CNC lathes, machining centres and surface grinders"},
-    {"name": "GMS", "country": "Turkey", "since": "1960", "logo": None, "href": "rebar-bender-and-cutter.html",
+    {"name": "GMS", "country": "Turkey", "since": "1960", "logo": "gms-logo", "href": "rebar-bender-and-cutter.html",
      "what": "Rebar benders, stirrup benders, rebar cutters and automatic rebar processing lines"},
     {"name": "ISITAN", "country": "Turkey", "since": "1959", "logo": "isitan-logo", "href": "plate-rollers.html",
      "what": "Plate rollers, pipe benders, cold saws, tube notchers, bead rollers and circle cutters"},
@@ -116,9 +118,9 @@ BRANDS = [
      "what": "Shearing and milling plate bevellers for weld preparation"},
     {"name": "Plastmak", "country": "Turkey", "since": None, "logo": "plastmak-logo", "href": "pvc-aluminum-window-machines.html",
      "what": "Aluminum and PVC window and door machinery, from single machines to complete lines"},
-    {"name": "Wecotech", "country": "Switzerland", "since": None, "logo": None, "href": "tube-end-forming-machines.html",
+    {"name": "Wecotech", "country": "Switzerland", "since": None, "logo": "wecotech-logo", "href": "tube-end-forming-machines.html",
      "what": "Tube end forming machines: expanders, reducers, inner and outer formers"},
-    {"name": "WIKUS", "country": "Germany", "since": None, "logo": None, "href": "band-saw-blades.html",
+    {"name": "WIKUS", "country": "Germany", "since": None, "logo": "wikus-logo", "href": "band-saw-blades.html",
      "what": "Bimetal and carbide-tipped band saw blades, welded to length"},
     {"name": "NovoTech premium line", "country": "Turkey", "since": None, "logo": "novotech-logo", "href": "plate-rollers.html",
      "what": "Plate rollers, angle rolls, ironworkers, hydraulic presses, shears, pipe polishers, horizontal presses, pipe benders and welding positioners built to NovoTech's specification with European components"},
@@ -258,53 +260,74 @@ def main():
         "intro": "Send us drawings or photos of your parts and tell us what you need to make — we will recommend the right machine and "
                  "reply within one business day with pricing, delivery and voltage options. Or call us and talk to a product specialist.",
         "breadcrumb": [HOME, {"label": "Contact us"}],
-        "map_query": "1365 Mid-Way Blvd, Unit 26, Mississauga, ON L5T 2J5, Canada",
+        "map_query": "NovoTech Machine Tools inc., 1365 Mid-Way Blvd #26, Mississauga, ON L5T 2J5, Canada",
+        # the Google Maps listing (place 0x882b3ed8b0da523f:0x890e265534502c2a): the map opens on its card with the stars and
+        # the reviews (the owner, Nov 7 2026)
+        "map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.0!2d-79.6672477!3d43.6671856!2m3!1f0!2f0!3f0!3m2"
+                     "!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ed8b0da523f%3A0x890e265534502c2a!2sNovoTech%20Machine%20Tools%20inc.!5e0"
+                     "!3m2!1sen!2sca!4v1762553000000!5m2!1sen!2sca",
+        "hero_image": "nt-about-building",
+        "visit_image": "nt-about-ironworker-rebar",
         "whatsapp": "https://wa.me/16475265510",
         "visit": ["Our showroom and warehouse are at 1365 Mid-Way Blvd, Unit 26, in Mississauga, ON, Canada, with parking in front of the building.",
                   "Machines on the floor change as orders ship — call ahead and we will tell you what is in stock and make sure a "
                   "product specialist is there to run it for you.",
                   "Bring a sample part or drawing and we can talk through tooling, capacity and the options you need."],
-        "quote": {"intro": "Attach part drawings, sketches or photos — PDF, DWG, DXF, STEP, JPG or PNG — and tell us the material, "
-                           "thickness and quantities. We will recommend the machine and reply within one business day."},
+        # the owner, Nov 7 2026: ask for the size of the customer's parts so the machine fits the work; North American units
+        "quote": {"intro": "Send us the size of the parts you make: the material, the thickness in gauge or inches, the length and "
+                           "width, and how many you run. Add a drawing, sketch or photo if you have one (PDF, DWG, DXF, STEP, JPG or "
+                           "PNG). We will match the machine to your work and reply within one business day, wherever your shop is in "
+                           "Canada or the US."},
     })
 
     # ---------------------------------------------------------------------------------------------- about
     write("about-us", {
         "template": "about.html",
-        "title": "About NovoTech Machine Tools — Mississauga, Ontario, Canada",
+        "title": "About NovoTech Machine Tools — Mississauga, ON, Canada",
         "meta_description": "NovoTech Machine Tools imports and supports metal fabrication machinery in Canada: Dener, GMS, ISITAN, Bekamak, Gecam, EUROSTAMP, CSM and more, from Mississauga, ON, Canada.",
         "h1": "About NovoTech Machine Tools",
-        "intro": "NovoTech Machine Tools is a Canadian importer of metal fabrication machinery, based in Mississauga, Ontario, Canada. For more than "
-                 "20 years we have worked with manufacturers we trust to bring Canadian shops machines that are built well, priced "
-                 "right and supported here — with the parts, service and know-how to keep them running.",
-        "hero_image": "nt-showroom-building",
+        # the owner, Nov 7 2026: the old site's About text (his own) and what NovoTech sells and does today, in one text
+        "intro": "We help you get the right machines for your operation at a price that is right for your business. For more than "
+                 "20 years, NovoTech Machine Tools has imported metal fabrication machinery from manufacturers we trust, and we sell, "
+                 "install and support every machine from our showroom and warehouse in Mississauga, ON.",
+        "hero_image": "nt-about-building",
         "breadcrumb": [HOME, {"label": "About us"}],
         "story": [
-            {"title": "What we do",
-             "text": ["We sell, install and support the machines that metal fabricators, steel service centres, rebar shops, HVAC "
-                      "contractors and window manufacturers use every day: press brakes and panel benders, fiber lasers for sheet and "
-                      "tube, shears and ironworkers, band saws and cold saws, plate rollers and section benders, tube benders, deburring "
-                      "and finishing machines, rebar benders and cutters, aluminum and PVC window machinery, and press brake tooling.",
-                      "Our customers range from one-person welding shops to production plants in the steel structure, automotive, "
-                      "aerospace, die and mold, medical and general part production industries — in every province and territory."]},
-            {"title": "How we work",
-             "text": ["We start with your parts, not with a catalogue. Send us a drawing or a photo and tell us the material, thickness, "
-                      "length and volume, and we will recommend the machine and the options that fit the work — and tell you when a "
-                      "smaller machine will do the job.",
-                      "Every machine we sell is fitted with a CSA-approved electrical panel for Canadian voltage and comes with a "
-                      "one-year warranty. Our technicians commission machines, train operators and troubleshoot by video call, and spare "
-                      "parts are stocked in Mississauga, ON, Canada."]},
-            {"title": "Who we work with",
-             "text": ["We have built long partnerships with manufacturers on several continents: Dener, GMS, ISITAN, Bekamak and Plastmak "
-                      "in Turkey; Gecam, Eurofintec and EUROSTAMP in Italy; Cevisa in Spain; Wecotech in Switzerland; WIKUS in "
-                      "Germany; CSM in Taiwan; and Senfeng in China. Our own NovoTech premium line is built in Turkey to our "
-                      "specification with European components, and the NovoTech value line is built to North American quality "
-                      "standards."]},
+            {"title": "Practical, cost-effective solutions",
+             "text": ["NovoTech is a results-driven company. We start with your parts: the material, the thickness, the length and how "
+                      "many you make in a shift. Then we recommend the machine and the options that fit the work, and we tell you when "
+                      "a smaller machine will do the job.",
+                      "Many of our machines come in more than one line, so the budget fits as well as the work: brand-name machines "
+                      "from the manufacturers below, the NovoTech premium line built in Turkey to our specification with European "
+                      "components, and the NovoTech value line built to North American quality standards."]},
+            {"title": "Machines in stock in Mississauga, ON",
+             "text": ["Our showroom and warehouse hold ironworkers, section benders, plate rollers, folding brakes, band saws, pipe "
+                      "polishers and long rows of rebar benders and cutters, ready to ship. Come and see a machine run, and bring a "
+                      "sample part or a drawing.",
+                      "Machines in stock leave our warehouse within days, and we arrange the freight to your shop anywhere in Canada."]},
+            {"title": "Manufacturers we trust",
+             "text": ["We have built strong partnerships with highly respected manufacturers in Turkey, Italy, Spain, Switzerland, "
+                      "Germany, Taiwan and China. Each of them builds what it knows best: Dener its press brakes, fiber lasers and "
+                      "shears, GMS its rebar benders and cutters, ISITAN its plate rollers and pipe benders, Bekamak its band saws.",
+                      "We keep up with the technology and bring it to Canadian shops: servo-electric press brakes and panel benders, "
+                      "fiber lasers for sheet and tube, CNC tube benders and automatic rebar lines."]},
+            {"title": "Service after the sale",
+             "text": ["Every machine we sell has a CSA-approved electrical panel for Canadian voltage and a one-year warranty. We stock "
+                      "spare parts in Mississauga, ON, install machines and train operators on request, and troubleshoot by video call "
+                      "when a machine needs help.",
+                      "Our customers run one-person welding shops and production plants in steel structure, automotive, die and mold, "
+                      "medical and general part production, as well as rebar shops, HVAC contractors and window makers across Canada."]},
             {"title": "Our mission",
-             "text": ["To give every customer the right machine for the application at hand — and to stay with them after the sale, "
-                      "with the parts, service and advice that keep the machine making money for years."]},
+             "text": ["To provide our customers with the right solution every time we are called upon: the machine that is right for "
+                      "the application at hand, and the parts, service and advice that keep it making money for years."]},
         ],
-        "showroom": ["nt-showroom-building", "nt-showroom-band-saws", "nt-showroom-ironworkers", "nt-showroom-plate-rollers", "nt-showroom-rebar"],
+        # the owner's own photos of the showroom and the warehouse, Nov 7 2026 (tools/showroom_photos.py): the Şahinler name
+        # plates emptied, a light retouch
+        "showroom": ["nt-about-ironworker-rebar", "nt-about-ironworkers", "nt-about-bender-plate-rollers", "nt-about-ironworkers-benders",
+                     "nt-about-band-saws", "nt-about-pipe-polishers", "nt-about-bt26", "nt-about-rebar-machines",
+                     "nt-about-ironworkers-plate-rollers", "nt-about-rebar-cutters", "nt-about-warehouse", "nt-about-showroom-stock"],
+        "factory": {"image": "nt-about-dener-factory",
+                    "caption": "Press brakes on the assembly line in Dener's factory in Kayseri, Turkey"},
         "videos": [
             {"id": "ZGo_n6-2_Qc", "thumb": "video-ZGo_n6-2_Qc", "title": "NovoTech Machine Tools — introduction", "duration": "PT2M55S"},
             {"id": "A1i_NljuVQo", "thumb": "video-A1i_NljuVQo", "title": "Dener Group — introduction", "duration": "PT2M52S"},

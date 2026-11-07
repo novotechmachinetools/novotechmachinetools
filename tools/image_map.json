@@ -18723,7 +18723,12 @@
   "section": "site",
   "trim": true,
   "quality": 90,
-  "cutout": false
+  "cutout": false,
+  "sizes": [
+   600,
+   360,
+   180
+  ]
  },
  "eurofintec-logo": {
   "src": "tools/src-images/eurofintec-logo.png",
@@ -34964,5 +34969,156 @@
   "cutout": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "gms-logo": {
+  "src": "tools/src-images/gms-logo.png",
+  "alt": "GMS",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false,
+  "sizes": [
+   800,
+   360,
+   180
+  ]
+ },
+ "wecotech-logo": {
+  "src": "tools/src-images/wecotech-logo.png",
+  "alt": "Wecotech",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false,
+  "sizes": [
+   800,
+   360,
+   180
+  ]
+ },
+ "wikus-logo": {
+  "src": "tools/src-images/wikus-logo.png",
+  "alt": "WIKUS",
+  "section": "site",
+  "trim": true,
+  "quality": 90,
+  "cutout": false,
+  "sizes": [
+   800,
+   360,
+   180
+  ]
+ },
+ "nt-about-building": {
+  "src": "tools/src-images/site/showroom/nt-about-building.jpg",
+  "alt": "NovoTech Machine Tools at 1365 Mid-Way Blvd, Unit 26, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-ironworker-rebar": {
+  "src": "tools/src-images/site/showroom/nt-about-ironworker-rebar.jpg",
+  "alt": "HKM 85 ironworker, B 50 rebar bender, H 45S rebar cutters and more rebar machines in the NovoTech showroom, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-ironworkers": {
+  "src": "tools/src-images/site/showroom/nt-about-ironworkers.jpg",
+  "alt": "A row of hydraulic ironworkers, HKM 115 and HKM 85 among them, ready to ship from Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-bender-plate-rollers": {
+  "src": "tools/src-images/site/showroom/nt-about-bender-plate-rollers.jpg",
+  "alt": "HPK section bender, an ironworker and ISITAN plate rollers in the NovoTech showroom, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-ironworkers-benders": {
+  "src": "tools/src-images/site/showroom/nt-about-ironworkers-benders.jpg",
+  "alt": "HKM 115 ironworker, HPK 60 and HPK 50 section benders and more ironworkers in the NovoTech showroom, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-band-saws": {
+  "src": "tools/src-images/site/showroom/nt-about-band-saws.jpg",
+  "alt": "Bekamak BMSO 320E automatic band saws in stock at NovoTech, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-pipe-polishers": {
+  "src": "tools/src-images/site/showroom/nt-about-pipe-polishers.jpg",
+  "alt": "BT 114-S pipe polishing machines and a Gecam machine ready for delivery from Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-bt26": {
+  "src": "tools/src-images/site/showroom/nt-about-bt26.jpg",
+  "alt": "BT 26 rebar benders, the most popular rebar bender, in stock at NovoTech, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-rebar-machines": {
+  "src": "tools/src-images/site/showroom/nt-about-rebar-machines.jpg",
+  "alt": "MAX 40 combined rebar cutters and benders, BT 24x5, B 36 and B 45x1 rebar benders in stock at NovoTech, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-ironworkers-plate-rollers": {
+  "src": "tools/src-images/site/showroom/nt-about-ironworkers-plate-rollers.jpg",
+  "alt": "Ironworkers and ISITAN plate rollers in the NovoTech warehouse, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-rebar-cutters": {
+  "src": "tools/src-images/site/showroom/nt-about-rebar-cutters.jpg",
+  "alt": "H 45S rebar cutters, BT 26 rebar benders and a POWER 24 portable rebar cutter in stock at NovoTech, Mississauga, ON",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-warehouse": {
+  "src": "tools/src-images/site/showroom/nt-about-warehouse.jpg",
+  "alt": "New machines in the NovoTech warehouse, Mississauga, ON: folding brakes, plate rollers and ironworkers ready to ship",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-showroom-stock": {
+  "src": "tools/src-images/site/showroom/nt-about-showroom-stock.jpg",
+  "alt": "The NovoTech showroom floor, Mississauga, ON: section benders, folding brakes and plate rollers in stock",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
+ },
+ "nt-about-dener-factory": {
+  "src": "tools/src-images/site/showroom/nt-about-dener-factory.jpg",
+  "alt": "Press brakes on the assembly line in Dener's factory in Kayseri, Turkey",
+  "section": "site",
+  "trim": false,
+  "quality": 84,
+  "cutout": false
  }
 }

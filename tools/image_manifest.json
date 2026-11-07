@@ -68154,30 +68154,30 @@
   "alt": "Gecam",
   "variants": [
    {
-    "w": 1200,
-    "h": 444,
-    "file": "img/site/gecam-logo-1200.webp",
-    "bytes": 49522
+    "w": 600,
+    "h": 137,
+    "file": "img/site/gecam-logo-600.webp",
+    "bytes": 42366
    },
    {
-    "w": 800,
-    "h": 296,
-    "file": "img/site/gecam-logo-800.webp",
-    "bytes": 31020
+    "w": 360,
+    "h": 82,
+    "file": "img/site/gecam-logo-360.webp",
+    "bytes": 21528
    },
    {
-    "w": 480,
-    "h": 178,
-    "file": "img/site/gecam-logo-480.webp",
-    "bytes": 17454
+    "w": 180,
+    "h": 41,
+    "file": "img/site/gecam-logo-180.webp",
+    "bytes": 8500
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 59,
+   "h": 36,
    "file": "img/site/gecam-logo-thumb.webp",
-   "bytes": 3842
+   "bytes": 6218
   }
  },
  "eurofintec-logo": {
@@ -119060,6 +119060,510 @@
    "h": 120,
    "file": "img/bandsaw/video-2VfcYCIxKEM-thumb.webp",
    "bytes": 4478
+  }
+ },
+ "gms-logo": {
+  "alt": "GMS",
+  "variants": [
+   {
+    "w": 800,
+    "h": 144,
+    "file": "img/site/gms-logo-800.webp",
+    "bytes": 33810
+   },
+   {
+    "w": 360,
+    "h": 65,
+    "file": "img/site/gms-logo-360.webp",
+    "bytes": 12616
+   },
+   {
+    "w": 180,
+    "h": 32,
+    "file": "img/site/gms-logo-180.webp",
+    "bytes": 4816
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 29,
+   "file": "img/site/gms-logo-thumb.webp",
+   "bytes": 3594
+  }
+ },
+ "wecotech-logo": {
+  "alt": "Wecotech",
+  "variants": [
+   {
+    "w": 800,
+    "h": 353,
+    "file": "img/site/wecotech-logo-800.webp",
+    "bytes": 58730
+   },
+   {
+    "w": 360,
+    "h": 159,
+    "file": "img/site/wecotech-logo-360.webp",
+    "bytes": 17964
+   },
+   {
+    "w": 180,
+    "h": 79,
+    "file": "img/site/wecotech-logo-180.webp",
+    "bytes": 6642
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 71,
+   "file": "img/site/wecotech-logo-thumb.webp",
+   "bytes": 5054
+  }
+ },
+ "wikus-logo": {
+  "alt": "WIKUS",
+  "variants": [
+   {
+    "w": 360,
+    "h": 140,
+    "file": "img/site/wikus-logo-360.webp",
+    "bytes": 29316
+   },
+   {
+    "w": 180,
+    "h": 70,
+    "file": "img/site/wikus-logo-180.webp",
+    "bytes": 10824
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 62,
+   "file": "img/site/wikus-logo-thumb.webp",
+   "bytes": 7414
+  }
+ },
+ "nt-about-building": {
+  "alt": "NovoTech Machine Tools at 1365 Mid-Way Blvd, Unit 26, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/site/nt-about-building-1200.webp",
+    "bytes": 305930
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/site/nt-about-building-800.webp",
+    "bytes": 136064
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/site/nt-about-building-480.webp",
+    "bytes": 45908
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-building-thumb.webp",
+   "bytes": 4164
+  }
+ },
+ "nt-about-ironworker-rebar": {
+  "alt": "HKM 85 ironworker, B 50 rebar bender, H 45S rebar cutters and more rebar machines in the NovoTech showroom, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/site/nt-about-ironworker-rebar-1200.webp",
+    "bytes": 213766
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/site/nt-about-ironworker-rebar-800.webp",
+    "bytes": 83996
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/site/nt-about-ironworker-rebar-480.webp",
+    "bytes": 28784
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-ironworker-rebar-thumb.webp",
+   "bytes": 3762
+  }
+ },
+ "nt-about-ironworkers": {
+  "alt": "A row of hydraulic ironworkers, HKM 115 and HKM 85 among them, ready to ship from Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 725,
+    "file": "img/site/nt-about-ironworkers-1200.webp",
+    "bytes": 172712
+   },
+   {
+    "w": 800,
+    "h": 483,
+    "file": "img/site/nt-about-ironworkers-800.webp",
+    "bytes": 85738
+   },
+   {
+    "w": 480,
+    "h": 290,
+    "file": "img/site/nt-about-ironworkers-480.webp",
+    "bytes": 35080
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 97,
+   "file": "img/site/nt-about-ironworkers-thumb.webp",
+   "bytes": 4494
+  }
+ },
+ "nt-about-bender-plate-rollers": {
+  "alt": "HPK section bender, an ironworker and ISITAN plate rollers in the NovoTech showroom, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/site/nt-about-bender-plate-rollers-1200.webp",
+    "bytes": 114822
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/site/nt-about-bender-plate-rollers-800.webp",
+    "bytes": 54274
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/site/nt-about-bender-plate-rollers-480.webp",
+    "bytes": 22674
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-bender-plate-rollers-thumb.webp",
+   "bytes": 3312
+  }
+ },
+ "nt-about-ironworkers-benders": {
+  "alt": "HKM 115 ironworker, HPK 60 and HPK 50 section benders and more ironworkers in the NovoTech showroom, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 874,
+    "file": "img/site/nt-about-ironworkers-benders-1200.webp",
+    "bytes": 117830
+   },
+   {
+    "w": 800,
+    "h": 582,
+    "file": "img/site/nt-about-ironworkers-benders-800.webp",
+    "bytes": 59152
+   },
+   {
+    "w": 480,
+    "h": 349,
+    "file": "img/site/nt-about-ironworkers-benders-480.webp",
+    "bytes": 25602
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 116,
+   "file": "img/site/nt-about-ironworkers-benders-thumb.webp",
+   "bytes": 3520
+  }
+ },
+ "nt-about-band-saws": {
+  "alt": "Bekamak BMSO 320E automatic band saws in stock at NovoTech, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1159,
+    "h": 818,
+    "file": "img/site/nt-about-band-saws-1159.webp",
+    "bytes": 204342
+   },
+   {
+    "w": 800,
+    "h": 565,
+    "file": "img/site/nt-about-band-saws-800.webp",
+    "bytes": 100316
+   },
+   {
+    "w": 480,
+    "h": 339,
+    "file": "img/site/nt-about-band-saws-480.webp",
+    "bytes": 41256
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 113,
+   "file": "img/site/nt-about-band-saws-thumb.webp",
+   "bytes": 6004
+  }
+ },
+ "nt-about-pipe-polishers": {
+  "alt": "BT 114-S pipe polishing machines and a Gecam machine ready for delivery from Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/site/nt-about-pipe-polishers-1200.webp",
+    "bytes": 210790
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/site/nt-about-pipe-polishers-800.webp",
+    "bytes": 103716
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/site/nt-about-pipe-polishers-480.webp",
+    "bytes": 41224
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-pipe-polishers-thumb.webp",
+   "bytes": 5222
+  }
+ },
+ "nt-about-bt26": {
+  "alt": "BT 26 rebar benders, the most popular rebar bender, in stock at NovoTech, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/site/nt-about-bt26-1200.webp",
+    "bytes": 239754
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/site/nt-about-bt26-800.webp",
+    "bytes": 117372
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/site/nt-about-bt26-480.webp",
+    "bytes": 47986
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-bt26-thumb.webp",
+   "bytes": 6252
+  }
+ },
+ "nt-about-rebar-machines": {
+  "alt": "MAX 40 combined rebar cutters and benders, BT 24x5, B 36 and B 45x1 rebar benders in stock at NovoTech, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/site/nt-about-rebar-machines-1200.webp",
+    "bytes": 155380
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/site/nt-about-rebar-machines-800.webp",
+    "bytes": 76054
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/site/nt-about-rebar-machines-480.webp",
+    "bytes": 33164
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-rebar-machines-thumb.webp",
+   "bytes": 4440
+  }
+ },
+ "nt-about-ironworkers-plate-rollers": {
+  "alt": "Ironworkers and ISITAN plate rollers in the NovoTech warehouse, Mississauga, ON",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/site/nt-about-ironworkers-plate-rollers-1200.webp",
+    "bytes": 215926
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/site/nt-about-ironworkers-plate-rollers-800.webp",
+    "bytes": 106466
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/site/nt-about-ironworkers-plate-rollers-480.webp",
+    "bytes": 43484
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-ironworkers-plate-rollers-thumb.webp",
+   "bytes": 5678
+  }
+ },
+ "nt-about-rebar-cutters": {
+  "alt": "H 45S rebar cutters, BT 26 rebar benders and a POWER 24 portable rebar cutter in stock at NovoTech, Mississauga, ON",
+  "variants": [
+   {
+    "w": 960,
+    "h": 795,
+    "file": "img/site/nt-about-rebar-cutters-960.webp",
+    "bytes": 192050
+   },
+   {
+    "w": 800,
+    "h": 662,
+    "file": "img/site/nt-about-rebar-cutters-800.webp",
+    "bytes": 143654
+   },
+   {
+    "w": 480,
+    "h": 398,
+    "file": "img/site/nt-about-rebar-cutters-480.webp",
+    "bytes": 61076
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 133,
+   "file": "img/site/nt-about-rebar-cutters-thumb.webp",
+   "bytes": 7524
+  }
+ },
+ "nt-about-warehouse": {
+  "alt": "New machines in the NovoTech warehouse, Mississauga, ON: folding brakes, plate rollers and ironworkers ready to ship",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1096,
+    "file": "img/site/nt-about-warehouse-1200.webp",
+    "bytes": 244768
+   },
+   {
+    "w": 800,
+    "h": 731,
+    "file": "img/site/nt-about-warehouse-800.webp",
+    "bytes": 121674
+   },
+   {
+    "w": 480,
+    "h": 439,
+    "file": "img/site/nt-about-warehouse-480.webp",
+    "bytes": 47086
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 146,
+   "file": "img/site/nt-about-warehouse-thumb.webp",
+   "bytes": 5936
+  }
+ },
+ "nt-about-showroom-stock": {
+  "alt": "The NovoTech showroom floor, Mississauga, ON: section benders, folding brakes and plate rollers in stock",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 896,
+    "file": "img/site/nt-about-showroom-stock-1200.webp",
+    "bytes": 263548
+   },
+   {
+    "w": 800,
+    "h": 598,
+    "file": "img/site/nt-about-showroom-stock-800.webp",
+    "bytes": 134056
+   },
+   {
+    "w": 480,
+    "h": 359,
+    "file": "img/site/nt-about-showroom-stock-480.webp",
+    "bytes": 51324
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/site/nt-about-showroom-stock-thumb.webp",
+   "bytes": 5948
+  }
+ },
+ "nt-about-dener-factory": {
+  "alt": "Press brakes on the assembly line in Dener's factory in Kayseri, Turkey",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 637,
+    "file": "img/site/nt-about-dener-factory-1200.webp",
+    "bytes": 158944
+   },
+   {
+    "w": 800,
+    "h": 425,
+    "file": "img/site/nt-about-dener-factory-800.webp",
+    "bytes": 87962
+   },
+   {
+    "w": 480,
+    "h": 255,
+    "file": "img/site/nt-about-dener-factory-480.webp",
+    "bytes": 39100
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 85,
+   "file": "img/site/nt-about-dener-factory-thumb.webp",
+   "bytes": 4992
   }
  }
 }

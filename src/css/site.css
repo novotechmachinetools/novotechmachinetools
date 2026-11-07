@@ -446,23 +446,32 @@ small { font-size: .85em; }
 .faq details p { padding: 0 16px 14px; margin: 0; color: var(--charcoal-2); }
 .steel-note { font-size: 14px; color: var(--steel); max-width: 90ch; margin-top: 18px; }
 
-/* ---------- quote form ---------- */
-.quote { background: var(--paper); border-top: 4px solid var(--orange); padding: 46px 0 50px; margin-top: 40px; }
-.quote-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 36px; }
+/* ---------- quote form: in the brand's colours (the owner, Nov 7 2026: "plain and white — give it the brand's colours so it
+   stands out") — a warm orange band, the form a white card under a charcoal head with an orange rule ---------- */
+.quote { background: linear-gradient(180deg, var(--orange-tint) 0%, #FFF8F0 55%, var(--paper) 100%); border-top: 6px solid var(--orange); padding: 50px 0 56px; margin-top: 40px; }
+.quote-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 40px; align-items: start; }
+.quote-copy h2 { position: relative; padding-left: 18px; }
+.quote-copy h2::before { content: ""; position: absolute; left: 0; top: .12em; bottom: .12em; width: 7px; background: var(--orange); }
 .quote-contact { color: var(--charcoal-2); }
-.quote-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; background: var(--white); border: 1px solid var(--line); padding: 22px; }
-.field { display: grid; gap: 5px; }
+.quote-contact a { color: var(--orange-ink); font-weight: 600; }
+.quote-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 18px; background: var(--white); border: 1px solid #F1D9BD; border-radius: 6px; padding: 0 24px 24px; box-shadow: 0 18px 40px rgba(45, 46, 48, .14); overflow: hidden; }
+.quote-form-head { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; margin: 0 -24px 4px; padding: 15px 24px 13px; background: var(--charcoal); border-bottom: 5px solid var(--orange); color: #fff; font-family: var(--cond); font-weight: 700; font-size: 21px; letter-spacing: .02em; }
+.quote-form-head svg { flex: none; color: var(--orange); }
+.quote-form-head small { margin-left: auto; font-family: var(--sans); font-weight: 500; font-size: 13.5px; letter-spacing: 0; color: #D5D7DA; }
+.field { display: grid; gap: 6px; }
 .field-wide { grid-column: 1 / -1; }
 .field label { font-weight: 600; font-size: 15px; color: var(--charcoal); }
-.field label span { font-weight: 400; color: var(--steel); font-size: 13px; margin-left: 4px; }
-.field input, .field select, .field textarea { font: inherit; padding: 10px 12px; border: 1px solid var(--mist); border-radius: var(--radius); background: #fff; color: var(--ink); width: 100%; }
-.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--orange-deep); outline: 2px solid var(--orange); outline-offset: 0; }
+.field label span { font-weight: 600; color: var(--orange-ink); background: var(--orange-tint); border-radius: 20px; padding: 1px 8px; font-size: 12px; margin-left: 6px; }
+.field input, .field select, .field textarea { font: inherit; padding: 11px 13px; border: 1px solid var(--line); border-bottom: 2px solid #B9BCC1; border-radius: 4px; background: var(--paper); color: var(--ink); width: 100%; transition: border-color .15s, background-color .15s, box-shadow .15s; }
+.field input:hover, .field select:hover, .field textarea:hover { border-bottom-color: var(--orange); }
+.field input:focus, .field select:focus, .field textarea:focus { background: #fff; border-color: var(--orange); border-bottom-color: var(--orange-deep); outline: none; box-shadow: 0 0 0 3px rgba(242, 138, 31, .28); }
 .field input[aria-invalid="true"] { border-color: #C62828; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .field-note { margin: 0; font-size: 13px; color: var(--steel); }
-.field-files input[type="file"] { padding: 8px; border-style: dashed; background: var(--paper, #FAFAF9); cursor: pointer; }
-.field-files input[type="file"]::file-selector-button { font: inherit; font-weight: 600; margin-right: 12px; padding: 7px 14px; border: 1px solid var(--charcoal); border-radius: var(--radius); background: #fff; color: var(--charcoal); cursor: pointer; }
-.field-files input[type="file"]:hover::file-selector-button { border-color: var(--orange-deep); color: var(--orange-deep); }
+.field-files input[type="file"] { padding: 12px; border: 2px dashed var(--orange); background: var(--orange-tint); cursor: pointer; }
+.field-files input[type="file"]::file-selector-button { font: inherit; font-weight: 600; margin-right: 12px; padding: 8px 16px; border: 0; border-radius: 4px; background: var(--charcoal); color: #fff; cursor: pointer; }
+.field-files input[type="file"]:hover::file-selector-button { background: var(--orange-deep); }
+.quote-form .form-actions .btn-primary { font-size: 20px; padding: 14px 34px; box-shadow: 0 8px 18px rgba(217, 115, 26, .35); }
 .field-files input[aria-invalid="true"] { border-color: #C62828; }
 .recaptcha-note { flex-basis: 100%; font-size: 12px; }
 .recaptcha-note a { color: inherit; }
@@ -724,7 +733,10 @@ small { font-size: .85em; }
   .why-grid, .footer-grid, .quote-form { grid-template-columns: 1fr; }
   .related-cards { grid-template-columns: 1fr; }
   .guide-toc ol { columns: 1; }
-  .quote-form { padding: 16px; }
+  .quote-form { padding: 0 16px 18px; }
+  .quote-form-head { margin: 0 -16px 2px; padding: 13px 16px 11px; font-size: 19px; flex-wrap: wrap; }
+  .quote-form-head small { margin-left: 0; flex-basis: 100%; }
+  .quote-form .form-actions .btn-primary { width: 100%; }
   .gallery-thumbs { grid-template-columns: repeat(4, 1fr); }
   .gallery-thumbs.is-collapsed li:nth-child(n+9) { display: none; }
   .family-cards { grid-template-columns: 1fr; }
@@ -884,6 +896,15 @@ body.ai-locked { overflow: hidden; }
 .brand-card { display: grid; gap: 4px; align-content: start; height: 100%; padding: 16px 18px 18px; border: 1px solid var(--line); border-left: 5px solid var(--charcoal); background: var(--white); color: var(--ink); text-decoration: none; border-radius: var(--radius); transition: border-color .15s, box-shadow .15s; }
 .brand-card:hover, .brand-card:focus-visible { border-color: var(--orange); border-left-color: var(--orange); box-shadow: 0 6px 18px rgba(30, 30, 30, .08); color: var(--ink); }
 .brand-name { font-size: 26px; margin: 0; }
+/* the makers' logos on the About page's cards (the owner, Nov 7 2026), each at about the same visual weight */
+.brand-logo { display: flex; align-items: center; height: 58px; margin: 2px 0 10px; }
+.brand-logo img { display: block; max-width: 100%; height: auto; }
+.with-logos .brand-name { font-size: 20px; }
+.about-factory { margin: 0 0 22px; }
+.about-factory img { width: 100%; height: auto; border-radius: var(--radius); }
+.about-factory figcaption { font-size: 13.5px; color: var(--steel); margin-top: 8px; }
+.gallery-grid .grid-photo { display: block; cursor: zoom-in; }
+.gallery-grid .grid-photo:hover img { filter: brightness(1.05); }
 .brand-origin { font-family: var(--cond); font-weight: 600; font-size: 14px; letter-spacing: .05em; text-transform: uppercase; color: var(--orange-ink); }
 .brand-what { font-size: 14.5px; line-height: 1.45; color: var(--charcoal-2); }
 

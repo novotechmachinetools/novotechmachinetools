@@ -4,15 +4,18 @@
 
 {% block content %}
 {% set addr = site.address.street ~ ", " ~ site.address.city ~ ", " ~ site.address.region ~ " " ~ site.address.postal ~ ", " ~ site.address.country %}
-<section class="page-hero">
-  <div class="wrap page-hero-inner">
-    {{ crumbs(page) }}
-    <h1>{{ page.h1 }}</h1>
-    <p class="lead">{{ page.intro }}</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#reques-a-quote">Send your drawings</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_tel }}">Call {{ site.phone }}</a>
+<section class="page-hero about-hero">
+  <div class="wrap about-hero-grid">
+    <div class="about-hero-copy">
+      {{ crumbs(page) }}
+      <h1>{{ page.h1 }}</h1>
+      <p class="lead">{{ page.intro }}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#reques-a-quote">Send your drawings</a>
+        <a class="btn btn-ghost" href="tel:{{ site.phone_tel }}">Call {{ site.phone }}</a>
+      </div>
     </div>
+    {% if page.hero_image %}<figure class="about-hero-photo">{{ photo(img(page.hero_image), "(max-width: 900px) 92vw, 640px", eager=True) }}<figcaption>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }}, {{ site.address.country }}</figcaption></figure>{% endif %}
   </div>
 </section>
 
@@ -40,7 +43,7 @@
     </li>
   </ul>
   <div class="contact-map">
-    <iframe title="Map: NovoTech Machine Tools, {{ addr }}" src="https://maps.google.com/maps?q={{ page.map_query | urlencode }}&amp;z=14&amp;output=embed" width="600" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe title="Map: NovoTech Machine Tools, {{ addr }}" src="{{ page.map_embed if page.map_embed else 'https://maps.google.com/maps?q=' ~ (page.map_query | urlencode) ~ '&z=14&output=embed' }}" width="600" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
 
@@ -53,7 +56,7 @@
     <p class="footer-title footer-follow">Follow NovoTech</p>
     {{ social_links("social social-dark") }}
   </div>
-  <div class="visit-photo">{{ photo(img("nt-showroom-building"), "(max-width: 900px) 92vw, 640px") }}</div>
+  <div class="visit-photo">{{ photo(img(page.visit_image or "nt-showroom-building"), "(max-width: 900px) 92vw, 640px") }}</div>
 </section>
 
 {% include "partials/quote.html" %}
