@@ -49,6 +49,62 @@ def img(key, size=1200, png=False):
     return {"src": "file://" + out, "alpha": e.get("alpha"), "w": best["w"], "h": best["h"], "alt": e.get("alt", "")}
 
 
+def cover_layout(imgs, W=7.9, H=4.35, pad=0.2, gap=0.2):
+    """the cover photos placed whole in the white band (the owner, Nov 7 2026: in a flex row the side photos ran half off the
+    page and wide machines left the band empty above them).  The main photo is the second one (the first when there is one); the
+    candidate layouts — one justified row, the main photo large on the left / right / top with the others beside or under it,
+    a 2 × 2 grid — are tried and the one that shows the most photo wins, the main photo counting more.  Every photo is fitted
+    whole (contain) and centred in its cell: positions in inches inside the band."""
+    imgs = [i for i in imgs if i][:4]
+    n = len(imgs)
+    if not n:
+        return []
+    ar = [i["w"] / i["h"] for i in imgs]
+    m = 1 if n >= 2 else 0
+    w, h = W - 2 * pad, H - 2 * pad
+    others = [k for k in range(n) if k != m]
+
+    def fit(k, cell):
+        x, y, cw, ch = cell
+        fw = min(cw, ch * ar[k]); fh = fw / ar[k]
+        return {"k": k, "x": x + (cw - fw) / 2, "y": y + (ch - fh) / 2, "w": fw, "h": fh}
+
+    def score(place):
+        return sum(p["w"] * p["h"] * (1.7 if p["k"] == m else 1.0) for p in place)
+
+    cands = []
+    if n == 1:
+        cands.append([fit(0, (pad, pad, w, h))])
+    else:
+        # one justified row, the main photo 1.25 × the others' height
+        sc = [1.25 if k == m else 1.0 for k in range(n)]
+        row_h = min((w - gap * (n - 1)) / sum(a * s for a, s in zip(ar, sc)), h / max(sc))
+        total_w = sum(a * s * row_h for a, s in zip(ar, sc)) + gap * (n - 1)
+        x = pad + (w - total_w) / 2
+        place = []
+        for k in range(n):
+            cw, ch = ar[k] * sc[k] * row_h, sc[k] * row_h
+            place.append({"k": k, "x": x, "y": pad + (h - ch) / 2, "w": cw, "h": ch})
+            x += cw + gap
+        cands.append(place)
+        for f in (0.55, 0.62, 0.7):
+            bw = w * f
+            sw = w - bw - gap
+            sh = (h - gap * (len(others) - 1)) / len(others)
+            # main on the left, the others stacked on the right — and the mirror
+            cands.append([fit(m, (pad, pad, bw, h))] + [fit(k, (pad + bw + gap, pad + i * (sh + gap), sw, sh)) for i, k in enumerate(others)])
+            cands.append([fit(m, (pad + sw + gap, pad, bw, h))] + [fit(k, (pad, pad + i * (sh + gap), sw, sh)) for i, k in enumerate(others)])
+            # main across the top, the others in a row under it
+            bh = h * f
+            rw = (w - gap * (len(others) - 1)) / len(others)
+            cands.append([fit(m, (pad, pad, w, bh))] + [fit(k, (pad + i * (rw + gap), pad + bh + gap, rw, h - bh - gap)) for i, k in enumerate(others)])
+        if n == 4:
+            cw, ch = (w - gap) / 2, (h - gap) / 2
+            cands.append([fit(k, (pad + (k % 2) * (cw + gap), pad + (k // 2) * (ch + gap), cw, ch)) for k in range(4)])
+    best = max(cands, key=score)
+    return [dict(imgs[p["k"]], x=round(p["x"], 3), y=round(p["y"], 3), w_in=round(p["w"], 3), h_in=round(p["h"], 3)) for p in best]
+
+
 def table_weight(t):
     return 2 + len(t["rows"]) * (1.0 + 0.08 * max(0, len(t["models"]) - 4))
 
@@ -139,7 +195,7 @@ def render(spec, no_inline, budgets=None, tight=None):
     included = [(spec["made_in"], "")] + INCLUDED[1:] if spec.get("made_in") else INCLUDED   # value line: "Built in China to North American standards"
     html = env.get_template("brochure.html").render(spec=spec, site=SITE, families=families, groups=groups, total=total, included=included, intro=intro,
                                                      fonts="file://" + os.path.join(ROOT, "src", "fonts"), logo=img("novotech-logo", 800, png=True),
-                                                     cover_imgs=[img(k) for k in spec["cover_photos"]], year=spec.get("year", "2026"))
+                                                     cover_imgs=cover_layout([img(k) for k in spec["cover_photos"]]), year=spec.get("year", "2026"))
     out_html = os.path.join(HERE, "out", os.path.basename(spec["out"]).replace(".pdf", ".html"))
     os.makedirs(os.path.dirname(out_html), exist_ok=True)
     open(out_html, "w", encoding="utf-8").write(html)

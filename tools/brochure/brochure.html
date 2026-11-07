@@ -53,9 +53,9 @@ h1, h2, h3, h4 { font-family: "Barlow Condensed", "Barlow", sans-serif; margin: 
 .cover h1 { position: absolute; left: .55in; top: 1.85in; font-size: 44pt; font-weight: 700; text-transform: uppercase; letter-spacing: .01em; max-width: 7.2in; }
 .cover h1 small { display: block; font-size: 17pt; font-weight: 500; letter-spacing: .06em; color: #c9ccd3; margin-top: 10pt; }
 .cover .rule { position: absolute; left: .55in; top: 4.45in; width: 1.3in; height: 4pt; background: var(--orange); }
-.cover .photos { position: absolute; left: .3in; right: .3in; top: 5.2in; height: 4.35in; display: flex; align-items: flex-end; justify-content: center; gap: .25in; background: #fff; border-bottom: 1pt solid var(--line); }
-.cover .photos img { max-height: 4in; max-width: 2.6in; width: auto; object-fit: contain; }
-.cover .photos img.big { max-height: 4.2in; max-width: 3.3in; }
+/* the cover photos whole, each at the place build_brochure.cover_layout() computed (inches inside the white band) */
+.cover .photos { position: absolute; left: .3in; right: .3in; top: 5.2in; height: 4.35in; background: #fff; border-bottom: 1pt solid var(--line); overflow: hidden; }
+.cover .photos img { position: absolute; object-fit: contain; }
 .cover .stats { position: absolute; left: 0; right: 0; bottom: 0; height: 1.05in; background: var(--charcoal); color: #fff; display: flex; align-items: center; padding: 0 .55in; }
 .cover .stats div { flex: 1; border-left: 1pt solid #4a4e57; padding-left: 14pt; }
 .cover .stats div:first-child { border: 0; padding-left: 0; }
@@ -189,7 +189,7 @@ table.n7 { font-size: 6.8pt; } table.n7 th, table.n7 td { padding: 2.5pt 3.5pt; 
     <h1>{{ spec.title }}<small>{{ spec.subtitle }}</small></h1>
     <div class="rule"></div>
   </div>
-  <div class="photos">{% for im in cover_imgs if im %}<img class="{{ 'big' if loop.index == 2 else '' }}" src="{{ im.src }}" alt="">{% endfor %}</div>
+  <div class="photos">{% for im in cover_imgs %}<img src="{{ im.src }}" alt="" style="left: {{ im.x }}in; top: {{ im.y }}in; width: {{ im.w_in }}in; height: {{ im.h_in }}in">{% endfor %}</div>
   <div class="stats">
     <div><b>{{ spec.country }}</b><span>Made in {{ spec.country }}</span></div>
     <div><b>{{ families|length }}</b><span>machine families</span></div>
