@@ -11,7 +11,7 @@
  "hero_points": [
   "<a href=\"box-and-pan-brake.html\">Box and pan brakes</a> 12 – 157″ to 12 ga and 14 ga boxes 9″ deep; <a href=\"sheet-metal-hand-brake.html\">hand brakes and foot-clamp folders</a> to 13 ft; <a href=\"sheet-metal-hand-brake.html#tt-bench-brake\">bench brakes</a>",
   "<a href=\"magnetic-sheet-metal-brake.html\">Magnetic brakes</a> 2 – 10 ft, 16 ga, boxes of any depth; <a href=\"hydraulic-folding-machine.html\">hydraulic folders</a> 10 ga × 10 ft; <a href=\"hydraulic-folding-machine.html#tt-tfm\">TFM / TFMS CNC folders</a> 14 ga × 12 ft",
-  "<a href=\"roofing-siding-brake.html\">Portable roofing and siding brakes</a> 7 – 12.5 ft with slitter; <a href=\"shear-brake-roll-3-in-1.html\">3-in-1 shear, brake and roll machines</a> 8 – 80″"
+  "<a href=\"roofing-siding-brake.html\">Portable roofing and siding brakes</a> 40″ – 12.5 ft with slitter; <a href=\"shear-brake-roll-3-in-1.html\">3-in-1 shear, brake and roll machines</a> 8 – 80″"
  ],
  "hero_image": "tm-eb2500",
  "hero_image_secondary": [
@@ -37,10 +37,11 @@
    "slug": "box-and-pan-brake",
    "title": "Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
    "image": "tm-bp1650",
-   "blurb": "Hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, and hydraulic box and pan brakes.",
+   "blurb": "Hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, folding machines with segmented blades to 119″ and hydraulic box and pan brakes.",
    "families": [
     "tt-pb",
     "tt-pb-heavy",
+    "tt-folder-bp",
     "tt-hw-h"
    ],
    "nav_label": "Box and pan brakes",
@@ -50,7 +51,7 @@
    "slug": "sheet-metal-hand-brake",
    "title": "Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
    "image": "tm-hb2250",
-   "blurb": "Straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines to 119″ in 12 ga, and bench, slitting and offset brakes.",
+   "blurb": "Straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines with one-piece blades to 119″ in 12 ga, and bench and offset brakes.",
    "families": [
     "tt-hb",
     "tt-folder",
@@ -85,11 +86,13 @@
   },
   {
    "slug": "roofing-siding-brake",
-   "title": "Portable roofing and siding brakes — aluminum brakes with slitter, 7 to 12.5 ft",
+   "title": "Portable roofing and siding brakes — brakes with slitter, 40″ to 12.5 ft",
    "image": "tm-alb",
-   "blurb": "ALB brakes with roller slitter, 24 ga steel and 0.032″ aluminum over 7.2 – 12.5 ft, bend to 180°, set up in minutes, plus a 24″ trim coil dispenser.",
+   "blurb": "ALB aluminum brakes with roller slitter, 24 ga steel over 7.2 – 12.5 ft; BSM1550 / BSM3150 shear and brake machines, 22 ga over 61″ and 124″; BSM folding brakes with slitter, 22 – 20 ga over 40 – 100″; and a 24″ trim coil dispenser.",
    "families": [
     "tt-alb",
+    "tt-bsm-sb",
+    "tt-bsm",
     "tt-cd24"
    ],
    "nav_label": "Roofing & siding brakes",

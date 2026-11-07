@@ -34304,5 +34304,23 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 84
+ },
+ "tm-bsm3150-caster": {
+  "src": "tools/src-images/ttmc-more/tm-bsm3150-caster.jpg",
+  "alt": "Caster mounting of the shear and brake machine's mobile stand",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
+ },
+ "tm-bsm3150-spring": {
+  "src": "tools/src-images/ttmc-more/tm-bsm3150-spring.jpg",
+  "alt": "Gas spring that lifts the bending beam of the shear and brake machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": false,
+  "cut_size": 768
  }
 }

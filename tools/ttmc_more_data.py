@@ -130,19 +130,39 @@ BRAKES = [
       ["tm-hb2250", "tm-w2040", "tm-w1500", "tm-hb2248", "tm-w1050", "tm-w1220", "tm-hb1650", "tm-w610", "tm-w1220n", "tm-w1060",
        "tm-w1050f"], headline="22 ga – 12 ga × 12″ – 13 ft",
       cap="[Bending length] × [Capacity, mild steel]", manual=True),
-    F("tt-folder", P_BRAKE, "hand", "Foot-clamp folding machines, 20 – 12 ga × 40 – 119″", "Manual folding machines",
-      [T["tt-pbb"][0], T["tt-pbb"][1], T["tt-pb-heavy"][2]],
+    # the folders with segmented blades (A, 3SH, TSBS, MFS) fold boxes: they are on the box and pan brake page (the owner, Nov 7 2026)
+    F("tt-folder", P_BRAKE, "hand", "Foot-clamp folding machines, 22 – 12 ga × 36 – 119″", "Manual folding machines",
+      [pick(T["tt-pbb"][0], ["PBB1020/2.5", "PBB1270/2", "PBB1520/1.5", "PBB2020/1.2", "PBB2520/1.0"],
+            sub="Manual folding machines with foot-operated clamping beam and one-piece blades, 40 – 99″"),
+       pick(T["tt-pbb"][1], ["TSB 2020/2", "TSB 2060/2", "TFS 2020B", "MF 3020"], title="TSB · TFS · MF", sub="Heavy manual folding machines, 6.7 – 10 ft"),
+       T["tt-pb-heavy"][2]],
       "Folding machines with a foot-operated clamping beam: press the pedal to clamp, swing the folding beam with the handle, both hands "
-      "free to hold the sheet. The PBB machines fold 12 ga over 40″ down to 20 ga over 99″, with one-piece or segmented blades and "
-      "quick-release clamp segments on the 3SH models; the TSB, TSBS, MFS and MF heavy folding machines take 14 ga over 80″ and 18 – 20 ga "
-      "over 10 ft, with segments from 25 to 500 mm on the S models; the WF folders take 20 ga over 80 to 118″.",
-      ["Foot-operated clamping beam; counterbalanced folding beam with angle stop on the 3SH models",
-       "PBB: 12 ga × 40″, 14 ga × 40 – 50″, 16 ga × 60″, 18 ga × 80″, 20 ga × 99″",
-       "TSBS / MFS: segments 25 – 400 / 500 mm for boxes; TSB 2060/2 cast-iron frame with counterweight",
-       "Bending angle to 135°, 150° on the 3SH models",
-       "Back gauge on pre-drilled points (3SH) and gas spring in the arm (PBB) as options"],
-      ["tm-pbb", "tm-pbb3sh", "tm-tsbs", "tm-mfs", "tm-wf", "tm-pbb1020", "tm-tsb2060", "tm-tfs", "tm-pbb1020a", "tm-pbb1020-1a",
-       "tm-tsb2020", "tm-mf3020", "tm-brake36"], headline="20 – 12 ga × 40 – 119″",
+      "free to hold the sheet. The PBB machines fold 12 ga over 40″ down to 20 ga over 99″ with one-piece blades; the TSB, TFS and MF "
+      "heavy folding machines take 14 ga over 80″, 18 ga over 80″ and 20 ga over 10 ft — the TSB 2060/2 on a cast-iron frame with a "
+      "counterweight; the WF folders take 20 ga over 80 to 118″ and the light brakes fold 36 to 72″.",
+      ["Foot-operated clamping beam; counterbalanced folding beam; one-piece blades",
+       "PBB: 12 ga × 40″, 14 ga × 50″, 16 ga × 60″, 18 ga × 80″, 20 ga × 99″",
+       "TSB 14 ga × 80″ (TSB 2060/2: cast-iron frame with counterweight); TFS 2020B 18 ga × 80″; MF 3020 20 ga × 119″",
+       "WF1.0 folders 20 ga × 80 – 118″; light brakes 36 – 72″",
+       "Bending angle 0 – 135°; gas spring in the arm (PBB) as an option"],
+      ["tm-pbb", "tm-pbb1020", "tm-wf", "tm-tsb2060", "tm-tfs", "tm-pbb1020-1a", "tm-tsb2020", "tm-mf3020", "tm-brake36"],
+      headline="22 – 12 ga × 36 – 119″", cap="[Bending length] × [Capacity, mild steel]", manual=True),
+    F("tt-folder-bp", P_BRAKE, "panbox", "Box and pan folding machines with segmented blades, 20 – 14 ga × 40 – 119″", "Box and pan folding machines",
+      [pick(T["tt-pbb"][0], ["PBB1020/2A", "PBB1020/3SH", "PBB1270/2A", "PBB1270/3SH", "PBB1520/1.5A", "PBB2050/3SH"],
+            title="PBB A · PBB 3SH box and pan folding machines", sub="Foot-clamp folding machines with segmented blades, 40 – 80″"),
+       pick(T["tt-pbb"][1], ["TSBS 2020/2", "MFS 2020", "TSBS 2540/1.5", "TSBS 3020/1.2"], title="TSBS · MFS",
+            sub="Heavy folding machines with blade segments, 6.7 – 10 ft")],
+      "Folding machines that fold boxes and pans: the blade is made of segments, so they come out where the sides of a box come up, and "
+      "with every segment in place the machine folds straight. The PBB A and 3SH foot-clamp machines fold 14 ga over 40 and 50″, 16 ga "
+      "over 50 and 60″ and 20 ga over 80″ — segmented clamp and folding blades on the A models, quick-release clamp segments, an angle "
+      "stop and bending to 150° on the 3SH; the TSBS and MFS heavy folding machines take 14 ga over 80″, 16 ga over 80 and 100″ and "
+      "18 ga over 10 ft, with segments from 1″ to 15-3/4″ (TSBS) or 19-3/4″ (MFS).",
+      ["Segmented blades for boxes and pans; foot-operated clamping beam (PBB, MFS) or lever-swung beam (TSBS)",
+       "PBB A / 3SH: 14 ga × 40 – 50″, 16 ga × 50 – 60″, 20 ga × 80″; quick-release clamp segments on the 3SH",
+       "TSBS / MFS: 14 ga × 80″, 16 ga × 80 – 100″, 18 ga × 119″; segments 1 – 15-3/4″ / 19-3/4″ (25 – 400 / 500 mm)",
+       "Bending angle to 135°, 150° on the 3SH models, with an angle stop",
+       "Back gauge on pre-drilled points (3SH) as an option"],
+      ["tm-pbb3sh", "tm-pbb1020a", "tm-tsbs", "tm-mfs"], headline="20 – 14 ga × 40 – 119″",
       cap="[Bending length] × [Capacity, mild steel]", manual=True),
     F("tt-alb", P_BRAKE, "roof", "ALB portable roofing brakes with slitter, 24 ga × 7 – 12.5 ft", "ALB roofing brakes", T["tt-alb"],
       "Portable roofing brakes for flashing, drip edge, sills, cornices and trim on the job site: an anodized aluminum frame on folding "
@@ -161,20 +181,33 @@ BRAKES = [
       ["Trim coil to 24″ (610 mm) wide", "Two non-marring bottom rollers and a quick-release tension roller",
        "Folding support stand; 35 lb (16 kg)", "Works with the cutter of the portable brake; roller cutter optional"],
       ["tm-cd24", "tm-cd24-coil"], headline="Coil to 24″", cap="[Coil width]", manual=True, optional=["Roller cutter"]),
-    F("tt-bench-brake", P_BRAKE, "roof", "Bench, slitting and offset brakes, 22 – 18 ga × 14 – 124″", "Bench and slitting brakes",
-      T["tt-bsm"] + NT["tt-bsm-sb"] + T["tt-wb"],
-      "Small brakes for the bench and the van: the BSM folding brakes on a fold-away steel stand bend and slit 20 – 22 ga over 40, 48 and "
-      "100″, with a slitting device that comes off; the BSM1550 and BSM3150 shear and brake machines bend 22 ga over 61″ and 124″ on a "
-      "mobile stand, with gas springs that lift the bending beam and carry the slitter head along the sheet; the WB-14 and W1.2 bench "
-      "brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the ZWJ offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga "
-      "steel and 18 ga aluminum.",
-      ["BSM1016 / BSM1220 / BSM2540: bend and slit 20 – 22 ga over 40 – 100″, foldable steel stand",
-       "BSM1550 / BSM3150: bend 22 ga over 61″ and 124″, slit over 59″ and 122″; mobile stand with gas springs",
-       "W1.2 bench brakes 18 – 39″ in 18 ga; WB-14 14″ in 20 ga",
+    # the BSM slitting brakes and shear-and-brake machines are portable roofing and siding brakes (the owner, Nov 7 2026)
+    F("tt-bsm-sb", P_BRAKE, "roof", "BSM1550 and BSM3150 shear and brake machines, 22 ga × 61″ and 124″", "BSM shear and brake machines",
+      NT["tt-bsm-sb"],
+      "Shear and brake machines for roofing and siding trim on a mobile stand: the BSM1550 and BSM3150 bend 22 ga (0.8 mm) steel over 61″ "
+      "and 124″ to 135° and slit it over 59″ and 122″ with a slitter head that runs along the beam. The updated version is labor-saving: "
+      "a gas spring lifts the bending beam, two more carry the slitter head, and the casters have an improved mounting for a longer service "
+      "life and a steadier machine at work.",
+      ["Bends 22 ga (0.8 mm) over 61″ (BSM1550) and 124″ (BSM3150), 0 – 135°",
+       "Slitter head cuts over 59″ and 122″ along the beam",
+       "Gas spring lifts the bending beam; two more gas springs move the slitter head",
+       "Mobile stand on casters with an improved mounting structure",
+       "Aluminum, copper and steel"],
+      ["tm-bsm3150", "tm-bsm3150-head", "tm-bsm3150-spring", "tm-bsm3150-caster"], headline="22 ga × 61″ and 124″", cap="[Working length]", manual=True),
+    F("tt-bsm", P_BRAKE, "roof", "BSM folding brakes with slitter, 22 – 20 ga × 40 – 100″", "BSM folding brakes with slitter", T["tt-bsm"],
+      "Folding brakes with a slitter for the van and the job site: the BSM1016, BSM1220 and BSM2540 bend and slit 20 – 22 ga over 40, 48 "
+      "and 100″ to 135° on a fold-away steel stand, with a slitting device that comes off.",
+      ["BSM1016 20 ga × 40″; BSM1220 22 ga × 48″; BSM2540 22 ga × 100″", "Bends to 135°; slitting device that comes off",
+       "Foldable steel stand, 35.4″ or 25.6″ high", "Aluminum, copper and steel"],
+      ["tm-bsm1016", "tm-bsm1220", "tm-bsm2540"], headline="22 – 20 ga × 40 – 100″", cap="[Working length]", manual=True),
+    F("tt-bench-brake", P_BRAKE, "roof", "Bench and offset brakes, 20 – 18 ga × 14 – 39″", "Bench and offset brakes", T["tt-wb"],
+      "Small brakes for the bench and the van: the WB-14 and W1.2 bench brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the ZWJ "
+      "offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga steel and 18 ga aluminum.",
+      ["W1.2 bench brakes 18 – 39″ in 18 ga; WB-14 14″ in 20 ga",
        "ZWJ-20 / ZWJ-36 offset brakes: 1/2″ jogs to 90° in 20 ga steel and 18 ga aluminum",
        "Aluminum, copper and steel"],
-      ["tm-bsm3150", "tm-bsm1016", "tm-bsm1220", "tm-bsm2540", "tm-bsm3150-head", "tm-w1000", "tm-w460", "tm-w610b", "tm-wb14", "tm-zwj"], headline="22 – 18 ga × 14 – 124″",
-      cap="[Working length]", manual=True),
+      ["tm-w1000", "tm-w460", "tm-w610b", "tm-wb14", "tm-zwj"], headline="20 – 18 ga × 14 – 39″",
+      cap="[Bending length]", manual=True),
     F("tt-3in1", P_BRAKE, "combo", "3-in-1 shear, brake and roll machines, 20 – 16 ga × 8 – 52″", "3-in-1 machines", T["tt-3in1"] + T["tt-3in1a"],
       "Hand-operated combination machines that shear, bend and roll sheet on one frame: 20 ga (1 mm) mild steel over 8 to 52″ and 16 ga "
       "(1.5 mm) over 42 and 52″, folding to 90° and rolling down to 1-1/8″ diameter on the small models. The floor models have removable "

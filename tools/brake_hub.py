@@ -33,19 +33,23 @@ PAGES = {
     "box-and-pan-brake": dict(
         nav="Box and pan brakes", hero="tm-bp1650", minis=["tm-w2540h2", "tm-hw2540h"],
         title="Box and Pan Brakes for Sale in Canada — 12″ to 13 ft, 22 to 12 Gauge | NovoTech",
-        meta="Box and pan brakes (finger brakes) sold, installed and supported in Canada: hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, and hydraulic box and pan brakes.",
+        meta="Box and pan brakes (finger brakes) sold, installed and supported in Canada: hand-operated brakes from 12″ to 157″ in 22 – 12 ga, heavy brakes that fold 14 ga boxes 9″ deep, folding machines with segmented blades to 119″ and hydraulic box and pan brakes.",
         h1="Box and pan brakes — finger brakes from 12″ to 13 ft, 22 to 12 gauge",
         intro="A box and pan brake (finger brake) is a sheet metal brake whose upper clamping blade is made of removable fingers: take the fingers out "
               "where the sides of a box come up and the leaf folds all four sides of a box or a pan; with every finger in place it works as a "
-              "straight brake. NovoTech sells three kinds in Canada, all on this page: hand-operated box and pan brakes from a 12″ bench model "
-              "to 157″, in 22 to 12 ga; heavy box and pan brakes from 52 to 100″ with 2, 3 and 4″ fingers that fold 14 ga boxes 9″ deep; and "
-              "hydraulic box and pan brakes that clamp and fold 14 ga over 52 and 100″ from a foot pedal. Each family below has its full specification table, photos and the finger sets supplied. "
+              "straight brake. NovoTech sells four kinds in Canada, all on this page: hand-operated box and pan brakes from a 12″ bench model "
+              "to 157″, in 22 to 12 ga; heavy box and pan brakes from 52 to 100″ with 2, 3 and 4″ fingers that fold 14 ga boxes 9″ deep; "
+              "box and pan folding machines with segmented blades — the PBB A and 3SH foot-clamp folders and the TSBS and MFS heavy "
+              "folders — in 20 to 14 ga over 40 to 119″; and hydraulic box and pan brakes that clamp and fold 14 ga over 52 and 100″ from a "
+              "foot pedal. Each family below has its full specification table, photos and the finger sets supplied. "
               "NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
         points=["Hand-operated box and pan brakes 12 – 157″, 22 to 12 ga mild steel, removable fingers in 1 – 6″ widths",
                 "Heavy brakes 52 – 100″ with 2, 3 and 4″ finger sets — boxes to 9″ deep in 14 ga; counterweighted leaf",
+                "Box and pan folding machines 40 – 119″, 20 – 14 ga: segmented blades, foot or lever clamping",
                 "Hydraulic box and pan brakes 52″ and 100″: 14 ga, foot-pedal clamping and folding"],
         groups=[("pb", "Box and pan brakes", "Hand-operated brakes from the 12″ bench model to 157″: the standard brake of the HVAC and sheet-metal shop.", True, ["tt-pb"]),
                 ("pb-heavy", "Heavy box and pan brakes", "Heavier beams and deeper fingers: 14 ga boxes up to 9″ deep over 52 – 100″.", True, ["tt-pb-heavy"]),
+                ("pb-folder", "Box and pan folding machines", "Folding machines with segmented blades — take the segments out where the sides of a box come up: PBB A and 3SH, TSBS and MFS, 40 to 119″.", True, ["tt-folder-bp"]),
                 ("pb-hyd", "Hydraulic box and pan brakes", "Powered clamping and folding on a box and pan frame — a 100″ fold in 14 ga from a foot pedal.", False, ["tt-hw-h"])],
         faq=[{"q": "Box and pan brake or straight hand brake?",
               "a": "A straight (hand) brake has a one-piece clamping blade: the best choice for long straight bends such as flashing, trim and duct panels, and a little stiffer for its length. A box and pan brake has a blade of removable fingers, so it also folds the four sides of a box or a pan; with all the fingers in place it does everything the straight brake does. Most shops that make boxes, pans, enclosures and ducts buy the box and pan brake; the straight brakes are on the hand brake page."},
@@ -62,21 +66,23 @@ PAGES = {
                  {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}, {"href": "bead-rollers.html", "label": "Bead rollers"}],
     ),
     "sheet-metal-hand-brake": dict(
-        nav="Hand brakes & folders", hero="tm-hb2250", minis=["tm-pbb", "tm-bsm3150"],
+        nav="Hand brakes & folders", hero="tm-hb2250", minis=["tm-pbb", "tm-w1000"],
         title="Sheet Metal Hand Brakes for Sale in Canada — Straight Brakes, Foot-Clamp Folders & Bench Brakes | NovoTech",
-        meta="Sheet metal hand brakes sold, installed and supported in Canada: straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines to 119″ in 12 ga, and bench, slitting and offset brakes.",
+        meta="Sheet metal hand brakes sold, installed and supported in Canada: straight brakes from 12″ to 13 ft in 22 – 12 ga, foot-clamp folding machines with one-piece blades to 119″ in 12 ga, and bench and offset brakes.",
         h1="Sheet metal hand brakes — straight brakes, foot-clamp folders and bench brakes",
         intro="A sheet metal hand brake clamps the sheet under a one-piece beam and swings a folding leaf up around the edge by hand — long, "
               "straight, clean bends in thin sheet with no punch and die and no marks on painted material. NovoTech sells three kinds in "
               "Canada, all on this page: straight hand brakes from a 12″ bench model to 13 ft, in 22 to 12 ga, for flashing, trim and duct "
-              "panels; foot-clamp folding machines from 40 to 119″ whose clamping beam closes from a foot pedal so both hands guide the sheet, "
-              "to 12 ga; and bench brakes, shear-and-brake machines, slitting brakes and offset tools for the bench and the job box. Each family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
+              "panels; foot-clamp folding machines with one-piece blades from 36 to 119″ whose clamping beam closes from a foot pedal so both "
+              "hands guide the sheet, to 12 ga; and bench brakes and offset brakes for the bench and the job box. The folding machines with "
+              "segmented blades are with the box and pan brakes, and the BSM slitting brakes and shear and brake machines with the roofing and "
+              "siding brakes. Each family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from Mississauga, ON, Canada.",
         points=["Straight hand brakes 12″ – 13 ft, 22 to 12 ga mild steel; counterweighted leaf, adjustable clamping and radius",
-                "Foot-clamp folding machines 40 – 119″, 20 to 12 ga: pedal clamping, both hands on the sheet, angle stop",
-                "Bench brakes 14 – 124″, shear-and-brake machines, slitting brakes and offset brakes, 22 – 18 ga"],
+                "Foot-clamp folding machines 36 – 119″, 22 to 12 ga: pedal clamping, both hands on the sheet, one-piece blades",
+                "Bench brakes 14 – 39″ and offset brakes, 20 – 18 ga"],
         groups=[("hb", "Straight hand brakes", "One-piece clamping blade for long, clean bends — flashing, trim, duct panels — from 12″ to 13 ft.", True, ["tt-hb"]),
-                ("folder", "Foot-clamp folding machines", "The clamping beam closes from a foot pedal, so both hands feed and hold the sheet; 20 to 12 ga over 40 – 119″.", True, ["tt-folder"]),
-                ("bench", "Bench, slitting and offset brakes", "Light brakes for the bench and the job box: bench brakes, shear-and-brake machines, slitting brakes and offset tools.", True, ["tt-bench-brake"])],
+                ("folder", "Foot-clamp folding machines", "The clamping beam closes from a foot pedal, so both hands feed and hold the sheet; one-piece blades, 22 to 12 ga over 36 – 119″.", True, ["tt-folder"]),
+                ("bench", "Bench and offset brakes", "Light brakes for the bench and the job box: bench brakes and offset (jog) brakes.", True, ["tt-bench-brake"])],
         faq=[{"q": "Hand brake, box and pan brake or magnetic brake — which do I need?",
               "a": "A hand (straight) brake has a one-piece clamping blade: the best choice for long straight bends — flashing, trim, duct panels. A box and pan brake has a blade made of removable fingers, so it folds the four sides of a box or a pan; with all the fingers in it works as a straight brake too. A magnetic brake has no clamping beam at all — an electromagnet holds a loose steel bar on the sheet — so it folds boxes of any depth, closed and narrow shapes and short return flanges, at the cost of a lower capacity. For 14 ga and heavier, or for production, choose a hydraulic or electric folding machine. Each kind has its own page."},
              {"q": "What does a foot-clamp folding machine add over a hand brake?",
@@ -85,8 +91,8 @@ PAGES = {
               "a": "Capacities are given in gauge of mild steel over the full bending length. Stainless steel bends at about two gauges lighter (a 16 ga brake takes 20 ga stainless), aluminum at about two gauges heavier. Bending at less than full length lets a brake take somewhat heavier sheet; folding heavier material than rated bends the beams permanently."},
              {"q": "Can a brake fold painted or coated sheet without marking it?",
               "a": "Yes — the sheet is clamped and the leaf swings around the clamp edge without sliding over a die, so pre-painted and stainless sheet stays clean; a strip of protective film keeps a mirror finish perfect."},
-             {"q": "What is a slitting brake and an offset brake?",
-              "a": "A slitting brake has a roller knife that runs along the clamping beam to cut a strip from a sheet before folding it — the tool for trim and flashing from coil. An offset brake makes the small Z-shaped step (offset) at the edge of a panel in one stroke, for lap joints and door panels."},
+             {"q": "What is an offset brake?",
+              "a": "An offset brake makes the small Z-shaped step (offset) at the edge of a panel in one stroke, for lap joints and door panels. The ZWJ-20 and ZWJ-36 make 1/2″ offsets up to 90° in 20 ga steel and 18 ga aluminum. For slitting brakes, see the roofing and siding brakes."},
              VOLT_FAQ_GENERIC],
         related=[{"href": "mechanical-guillotine-shear.html", "label": "Mechanical shears"}, {"href": "bead-rollers.html", "label": "Bead rollers"},
                  {"href": "lock-former.html", "label": "Lock formers and HVAC machines"}, {"href": "motorized-plate-rollers.html", "label": "Slip rolls"}],
@@ -153,20 +159,24 @@ PAGES = {
                  {"href": "corner-notcher.html", "label": "Corner notchers"}, {"href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html", "label": "Deburring machines"}],
     ),
     "roofing-siding-brake": dict(
-        nav="Roofing & siding brakes", hero="tm-alb", minis=["tm-cd24", "tm-alb-work"],
-        title="Portable Roofing & Siding Brakes for Sale in Canada — 7 to 12.5 ft, 24 Gauge | NovoTech",
-        meta="Portable aluminum roofing and siding brakes sold, installed and supported in Canada: ALB brakes with roller slitter, 24 ga steel and 0.032″ aluminum over 7.2 – 12.5 ft, bend to 180°, set up in minutes, plus a 24″ trim coil dispenser.",
-        h1="Portable roofing and siding brakes — aluminum brakes with slitter, 7 to 12.5 ft",
+        nav="Roofing & siding brakes", hero="tm-alb", minis=["tm-bsm3150", "tm-alb-work"],
+        title="Portable Roofing & Siding Brakes for Sale in Canada — Brakes with Slitter, 40″ to 12.5 ft | NovoTech",
+        meta="Portable roofing and siding brakes sold, installed and supported in Canada: ALB aluminum brakes with roller slitter, 24 ga steel over 7.2 – 12.5 ft; BSM1550 / BSM3150 shear and brake machines, 22 ga over 61″ and 124″; BSM folding brakes with slitter, 22 – 20 ga over 40 – 100″; and a 24″ trim coil dispenser.",
+        h1="Portable roofing and siding brakes — brakes with slitter, 40″ to 12.5 ft",
         intro="A portable roofing and siding brake folds flashing, trim, drip edge and fascia on site: an aluminum frame on folding legs, set up "
               "in 10 to 15 minutes, that clamps 24 ga steel or 0.032″ aluminum coil, bends it to 180° and slits the coil with a roller knife. "
-              "NovoTech sells the ALB brakes in Canada, all on this page: six models from 7.2 to 12.5 ft with a silicone insert in the bending "
-              "beam for pre-painted coil and copper, a slitter on a track and a carrying stand; and the CD-24 coil dispenser that feeds 24″ "
-              "trim coil to the brake. The family below has its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from "
+              "NovoTech sells three kinds in Canada, all on this page: the ALB aluminum brakes, six models from 7.2 to 12.5 ft with a silicone "
+              "insert in the bending beam for pre-painted coil and copper, a slitter on a track and a carrying stand; the BSM1550 and BSM3150 "
+              "shear and brake machines that bend 22 ga over 61″ and 124″ and slit it over 59″ and 122″, with gas springs that lift the bending "
+              "beam and carry the slitter head, on a mobile stand; and the BSM1016, BSM1220 and BSM2540 folding brakes with a slitter on a "
+              "fold-away stand, 20 – 22 ga over 40 to 100″. The CD-24 coil dispenser feeds 24″ trim coil to the brake. Each family below has "
+              "its full specification table and photos. NovoTech's value-line brakes are built in China to our specification, with parts and support from "
               "Mississauga, ON, Canada.",
         points=["ALB brakes 7.2 – 12.5 ft: 24 ga steel, 0.032″ aluminum, 0.024″ copper; bend to 180°, 22.8″ throat",
                 "Roller slitter on a track cuts the coil to width on the brake; silicone insert protects painted and copper coil",
-                "Aluminum frame on folding legs, 132 – 220 lb, carried on the truck; CD-24 trim coil dispenser"],
-        groups=[("alb", "Portable roofing and siding brakes", "Light brakes that go to the job: aluminum roofing brakes for flashing and trim with a roller slitter.", True, ["tt-alb"]),
+                "Aluminum frame on folding legs, 132 – 220 lb, carried on the truck; CD-24 trim coil dispenser",
+                "BSM1550 / BSM3150 shear and brake machines 22 ga × 61″ and 124″, slitter head on gas springs · BSM folding brakes with slitter 22 – 20 ga × 40 – 100″"],
+        groups=[("alb", "Portable roofing and siding brakes", "Light brakes that go to the job: aluminum roofing brakes, shear and brake machines and folding brakes with a slitter for flashing and trim.", True, ["tt-alb", "tt-bsm-sb", "tt-bsm"]),
                 ("cd", "Trim coil dispenser", "The CD-24 holds a 24″ trim coil on two non-marring rollers and feeds it to the brake.", True, ["tt-cd24"])],
         faq=[{"q": "What do I need to bend roofing flashing on site?",
               "a": "A portable roofing brake: the ALB brakes have an aluminum frame on folding legs, set up in 10 – 15 minutes, take 24 ga steel and 0.032″ aluminum over 7.2 – 12.5 ft, bend to 180° and slit the coil with a roller knife. Add the CD-24 dispenser for trim coil. For the shop, a box and pan brake or a magnetic brake does the same work in heavier gauges."},
@@ -174,6 +184,8 @@ PAGES = {
               "a": "Long enough for the longest piece you make in one bend — 10 ft for fascia and drip edge is the common choice, 12.5 ft for commercial trim — and no longer, because the brake is carried: the 7.2 ft model weighs 132 lb, the 12.5 ft model about 220 lb. Longer pieces are made in two overlapping bends."},
              {"q": "Does the slitter come with the brake?",
               "a": "Yes: a roller slitter on a track cuts the coil to width on the brake before folding, so a 24″ coil becomes drip edge, J-channel and fascia without a separate shear. Replacement cutting wheels are stocked in Mississauga, ON, Canada."},
+             {"q": "What is a slitting brake, and what does a shear and brake machine add?",
+              "a": "A slitting brake has a slitter that runs along the clamping beam to cut a strip from the sheet before folding it — the tool for trim and flashing from coil. The BSM1016, BSM1220 and BSM2540 have a slitting device that comes off; the BSM1550 and BSM3150 shear and brake machines carry the slitter head on gas springs and slit 22 ga over 59″ and 122″, with a gas spring that lifts the bending beam, on a mobile stand."},
              {"q": "Will it mark painted coil?",
               "a": "No — the bending beam has a silicone insert and the clamping surfaces are smooth aluminum, made for pre-painted steel and aluminum coil and for copper. Keep the protective film on the coil for a flawless finish."},
              VOLT_FAQ_GENERIC],
@@ -224,7 +236,7 @@ HUB_PAGE = dict(
           "support from Mississauga, ON, Canada.",
     points=['<a href="box-and-pan-brake.html">Box and pan brakes</a> 12 – 157″ to 12 ga and 14 ga boxes 9″ deep; <a href="sheet-metal-hand-brake.html">hand brakes and foot-clamp folders</a> to 13 ft; <a href="sheet-metal-hand-brake.html#tt-bench-brake">bench brakes</a>',
             '<a href="magnetic-sheet-metal-brake.html">Magnetic brakes</a> 2 – 10 ft, 16 ga, boxes of any depth; <a href="hydraulic-folding-machine.html">hydraulic folders</a> 10 ga × 10 ft; <a href="hydraulic-folding-machine.html#tt-tfm">TFM / TFMS CNC folders</a> 14 ga × 12 ft',
-            '<a href="roofing-siding-brake.html">Portable roofing and siding brakes</a> 7 – 12.5 ft with slitter; <a href="shear-brake-roll-3-in-1.html">3-in-1 shear, brake and roll machines</a> 8 – 80″'],
+            '<a href="roofing-siding-brake.html">Portable roofing and siding brakes</a> 40″ – 12.5 ft with slitter; <a href="shear-brake-roll-3-in-1.html">3-in-1 shear, brake and roll machines</a> 8 – 80″'],
     hero="tm-eb2500", minis=["tm-hwe", "tm-bp1650"],
     range_cols=RANGE["range_cols"],
     range_lead="Every brake and folding machine NovoTech sells — all {n} models in one table: bending length, capacity in mild steel and weight. Each row links to the model's full specification on its page.",

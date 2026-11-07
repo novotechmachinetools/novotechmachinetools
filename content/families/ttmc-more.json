@@ -9,8 +9,11 @@
   "tt-pb-heavy",
   "tt-hb",
   "tt-folder",
+  "tt-folder-bp",
   "tt-alb",
   "tt-cd24",
+  "tt-bsm-sb",
+  "tt-bsm",
   "tt-bench-brake",
   "tt-3in1",
   "tt-e3in1",
@@ -2814,52 +2817,42 @@
   "tt-folder": {
    "id": "tt-folder",
    "brand": "novotech",
-   "name": "Foot-clamp folding machines, 20 – 12 ga × 40 – 119″",
+   "name": "Foot-clamp folding machines, 22 – 12 ga × 36 – 119″",
    "short": "Manual folding machines",
-   "models_label": "PBB1020/2.5 – WF1.0×3000 · 28 models",
-   "summary": "Folding machines with a foot-operated clamping beam: press the pedal to clamp, swing the folding beam with the handle, both hands free to hold the sheet. The PBB machines fold 12 ga over 40″ down to 20 ga over 99″, with one-piece or segmented blades and quick-release clamp segments on the 3SH models; the TSB, TSBS, MFS and MF heavy folding machines take 14 ga over 80″ and 18 – 20 ga over 10 ft, with segments from 25 to 500 mm on the S models; the WF folders take 20 ga over 80 to 118″.",
+   "models_label": "PBB1020/2.5 – WF1.0×3000 · 18 models",
+   "summary": "Folding machines with a foot-operated clamping beam: press the pedal to clamp, swing the folding beam with the handle, both hands free to hold the sheet. The PBB machines fold 12 ga over 40″ down to 20 ga over 99″ with one-piece blades; the TSB, TFS and MF heavy folding machines take 14 ga over 80″, 18 ga over 80″ and 20 ga over 10 ft — the TSB 2060/2 on a cast-iron frame with a counterweight; the WF folders take 20 ga over 80 to 118″ and the light brakes fold 36 to 72″.",
    "features": [
-    "Foot-operated clamping beam; counterbalanced folding beam with angle stop on the 3SH models",
-    "PBB: 12 ga × 40″, 14 ga × 40 – 50″, 16 ga × 60″, 18 ga × 80″, 20 ga × 99″",
-    "TSBS / MFS: segments 25 – 400 / 500 mm for boxes; TSB 2060/2 cast-iron frame with counterweight",
-    "Bending angle to 135°, 150° on the 3SH models",
-    "Back gauge on pre-drilled points (3SH) and gas spring in the arm (PBB) as options"
+    "Foot-operated clamping beam; counterbalanced folding beam; one-piece blades",
+    "PBB: 12 ga × 40″, 14 ga × 50″, 16 ga × 60″, 18 ga × 80″, 20 ga × 99″",
+    "TSB 14 ga × 80″ (TSB 2060/2: cast-iron frame with counterweight); TFS 2020B 18 ga × 80″; MF 3020 20 ga × 119″",
+    "WF1.0 folders 20 ga × 80 – 118″; light brakes 36 – 72″",
+    "Bending angle 0 – 135°; gas spring in the arm (PBB) as an option"
    ],
    "optional": [],
    "images": [
     "tm-pbb",
-    "tm-pbb3sh",
-    "tm-tsbs",
-    "tm-mfs",
-    "tm-wf",
     "tm-pbb1020",
+    "tm-wf",
     "tm-tsb2060",
     "tm-tfs",
-    "tm-pbb1020a",
     "tm-pbb1020-1a",
     "tm-tsb2020",
     "tm-mf3020",
     "tm-brake36"
    ],
    "videos": [],
-   "headline": "20 – 12 ga × 40 – 119″",
+   "headline": "22 – 12 ga × 36 – 119″",
    "specs": {
     "kind": "table",
     "tables": [
      {
       "title": "PBB foot-clamp folding machines",
-      "sub": "Manual folding machines with foot-operated clamping beam, 40 – 99″",
+      "sub": "Manual folding machines with foot-operated clamping beam and one-piece blades, 40 – 99″",
       "models": [
        "PBB1020/2.5",
-       "PBB1020/2A",
-       "PBB1020/3SH",
        "PBB1270/2",
-       "PBB1270/2A",
-       "PBB1270/3SH",
        "PBB1520/1.5",
-       "PBB1520/1.5A",
        "PBB2020/1.2",
-       "PBB2050/3SH",
        "PBB2520/1.0"
       ],
       "rows": [
@@ -2868,14 +2861,8 @@
         "sub": "",
         "cells": [
          "40.2″ (1,020 mm)",
-         "40.2″ (1,020 mm)",
-         "40.2″ (1,020 mm)",
-         "50″ (1,270 mm)",
-         "50″ (1,270 mm)",
          "50″ (1,270 mm)",
          "59.8″ (1,520 mm)",
-         "59.8″ (1,520 mm)",
-         "79.5″ (2,020 mm)",
          "79.5″ (2,020 mm)",
          "99.2″ (2,520 mm)"
         ],
@@ -2887,14 +2874,8 @@
         "cells": [
          "12 ga (2.5 mm)",
          "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "16 ga (1.5 mm)",
-         "16 ga (1.5 mm)",
          "16 ga (1.5 mm)",
          "18 ga (1.2 mm)",
-         "20 ga (1 mm)",
          "20 ga (1 mm)"
         ],
         "key": true
@@ -2903,12 +2884,6 @@
         "label": "Clamping beam lift",
         "sub": "",
         "cells": [
-         "1.9″ (47 mm)",
-         "1.9″ (47 mm)",
-         "1.8″ (45 mm)",
-         "1.9″ (47 mm)",
-         "1.9″ (47 mm)",
-         "1.8″ (45 mm)",
          "1.9″ (47 mm)",
          "1.9″ (47 mm)",
          "1.9″ (47 mm)",
@@ -2923,12 +2898,6 @@
         "cells": [
          "0 – 135°",
          "0 – 135°",
-         "0 – 150°",
-         "0 – 135°",
-         "0 – 135°",
-         "0 – 150°",
-         "0 – 135°",
-         "0 – 135°",
          "0 – 135°",
          "0 – 135°",
          "0 – 135°"
@@ -2940,15 +2909,9 @@
         "sub": "",
         "cells": [
          "One-piece",
-         "Segmented clamp and folding blades",
-         "Segmented, quick-release clamp segments",
          "One-piece",
-         "Segmented clamp and folding blades",
-         "Segmented, quick-release clamp segments",
          "One-piece",
-         "Segmented clamp and folding blades",
          "One-piece",
-         "Segmented, quick-release clamp segments",
          "One-piece"
         ],
         "key": false
@@ -2958,15 +2921,9 @@
         "sub": "",
         "cells": [
          "57 × 25 × 52″ (146 × 63 × 131 cm)",
-         "57 × 25 × 52″ (146 × 64 × 131 cm)",
-         "56 × 23 × 56″ (142 × 59 × 142 cm)",
          "67 × 28 × 52″ (171 × 71 × 131 cm)",
-         "67 × 28 × 52″ (171 × 71 × 131 cm)",
-         "66 × 26 × 56″ (167 × 66 × 142 cm)",
          "76 × 27 × 52″ (193 × 68 × 133 cm)",
-         "77 × 28 × 51″ (196 × 71 × 130 cm)",
          "97 × 37 × 53″ (246 × 95 × 134 cm)",
-         "98 × 38 × 61″ (248 × 97 × 154 cm)",
          "117 × 37 × 52″ (297 × 94 × 132 cm)"
         ],
         "key": false
@@ -2976,15 +2933,9 @@
         "sub": "",
         "cells": [
          "639 lb (290 kg)",
-         "717 lb (325 kg)",
-         "794 lb (360 kg)",
          "750 lb (340 kg)",
-         "816 lb (370 kg)",
-         "926 lb (420 kg)",
          "860 lb (390 kg)",
-         "871 lb (395 kg)",
          "1,190 lb (540 kg)",
-         "1,653 lb (750 kg)",
          "1,301 lb (590 kg)"
         ],
         "key": true
@@ -2992,16 +2943,12 @@
       ]
      },
      {
-      "title": "TSB · TSBS · TFS · MFS · MF",
+      "title": "TSB · TFS · MF",
       "sub": "Heavy manual folding machines, 6.7 – 10 ft",
       "models": [
        "TSB 2020/2",
-       "TSBS 2020/2",
        "TSB 2060/2",
        "TFS 2020B",
-       "MFS 2020",
-       "TSBS 2540/1.5",
-       "TSBS 3020/1.2",
        "MF 3020"
       ],
       "rows": [
@@ -3010,12 +2957,8 @@
         "sub": "",
         "cells": [
          "80″ (2,020 mm)",
-         "80″ (2,020 mm)",
          "81″ (2,060 mm)",
          "80″ (2,020 mm)",
-         "80″ (2,020 mm)",
-         "100″ (2,540 mm)",
-         "119″ (3,020 mm)",
          "119″ (3,020 mm)"
         ],
         "key": true
@@ -3026,10 +2969,6 @@
         "cells": [
          "14 ga (2 mm)",
          "14 ga (2 mm)",
-         "14 ga (2 mm)",
-         "18 ga (1.2 mm)",
-         "16 ga (1.5 mm)",
-         "16 ga (1.5 mm)",
          "18 ga (1.2 mm)",
          "20 ga (1 mm)"
         ],
@@ -3042,10 +2981,6 @@
          "0 – 135°",
          "0 – 135°",
          "0 – 135°",
-         "0 – 135°",
-         "0 – 135°",
-         "0 – 135°",
-         "0 – 135°",
          "0 – 135°"
         ],
         "key": false
@@ -3055,12 +2990,8 @@
         "sub": "",
         "cells": [
          "One-piece blade; lever-swung beam",
-         "Segments 25 – 400 mm; lever-swung beam",
          "One-piece; cast-iron frame, counterweight",
          "Foot clamping",
-         "Segments 25 – 500 mm; foot clamping",
-         "Segments 25 – 400 mm",
-         "Segments 25 – 400 mm",
          "One-piece; foot clamping"
         ],
         "key": false
@@ -3070,12 +3001,8 @@
         "sub": "",
         "cells": [
          "110 × 28 × 59″ (280 × 71 × 150 cm)",
-         "110 × 28 × 60″ (280 × 71 × 152 cm)",
          "122 × 30 × 59″ (310 × 76 × 150 cm)",
          "98 × 38 × 61″ (248 × 97 × 154 cm)",
-         "105 × 33 × 58″ (267 × 84 × 147 cm)",
-         "133 × 28 × 59″ (337 × 72 × 150 cm)",
-         "152 × 28 × 59″ (385 × 72 × 150 cm)",
          "144 × 33 × 58″ (365 × 84 × 147 cm)"
         ],
         "key": false
@@ -3085,12 +3012,8 @@
         "sub": "",
         "cells": [
          "2,227 lb (1,010 kg)",
-         "2,260 lb (1,025 kg)",
          "3,880 lb (1,760 kg)",
          "1,433 lb (650 kg)",
-         "1,797 lb (815 kg)",
-         "2,756 lb (1,250 kg)",
-         "3,053 lb (1,385 kg)",
          "2,161 lb (980 kg)"
         ],
         "key": true
@@ -3205,43 +3128,11 @@
       ]
      },
      {
-      "name": "PBB1020/2A",
-      "glance": [
-       "40.2″ (1,020 mm)",
-       "14 ga (2 mm)",
-       "717 lb (325 kg)"
-      ]
-     },
-     {
-      "name": "PBB1020/3SH",
-      "glance": [
-       "40.2″ (1,020 mm)",
-       "14 ga (2 mm)",
-       "794 lb (360 kg)"
-      ]
-     },
-     {
       "name": "PBB1270/2",
       "glance": [
        "50″ (1,270 mm)",
        "14 ga (2 mm)",
        "750 lb (340 kg)"
-      ]
-     },
-     {
-      "name": "PBB1270/2A",
-      "glance": [
-       "50″ (1,270 mm)",
-       "14 ga (2 mm)",
-       "816 lb (370 kg)"
-      ]
-     },
-     {
-      "name": "PBB1270/3SH",
-      "glance": [
-       "50″ (1,270 mm)",
-       "16 ga (1.5 mm)",
-       "926 lb (420 kg)"
       ]
      },
      {
@@ -3253,27 +3144,11 @@
       ]
      },
      {
-      "name": "PBB1520/1.5A",
-      "glance": [
-       "59.8″ (1,520 mm)",
-       "16 ga (1.5 mm)",
-       "871 lb (395 kg)"
-      ]
-     },
-     {
       "name": "PBB2020/1.2",
       "glance": [
        "79.5″ (2,020 mm)",
        "18 ga (1.2 mm)",
        "1,190 lb (540 kg)"
-      ]
-     },
-     {
-      "name": "PBB2050/3SH",
-      "glance": [
-       "79.5″ (2,020 mm)",
-       "20 ga (1 mm)",
-       "1,653 lb (750 kg)"
       ]
      },
      {
@@ -3293,14 +3168,6 @@
       ]
      },
      {
-      "name": "TSBS 2020/2",
-      "glance": [
-       "80″ (2,020 mm)",
-       "14 ga (2 mm)",
-       "2,260 lb (1,025 kg)"
-      ]
-     },
-     {
       "name": "TSB 2060/2",
       "glance": [
        "81″ (2,060 mm)",
@@ -3314,30 +3181,6 @@
        "80″ (2,020 mm)",
        "18 ga (1.2 mm)",
        "1,433 lb (650 kg)"
-      ]
-     },
-     {
-      "name": "MFS 2020",
-      "glance": [
-       "80″ (2,020 mm)",
-       "16 ga (1.5 mm)",
-       "1,797 lb (815 kg)"
-      ]
-     },
-     {
-      "name": "TSBS 2540/1.5",
-      "glance": [
-       "100″ (2,540 mm)",
-       "16 ga (1.5 mm)",
-       "2,756 lb (1,250 kg)"
-      ]
-     },
-     {
-      "name": "TSBS 3020/1.2",
-      "glance": [
-       "119″ (3,020 mm)",
-       "18 ga (1.2 mm)",
-       "3,053 lb (1,385 kg)"
       ]
      },
      {
@@ -3428,23 +3271,13 @@
     ],
     "caps": {
      "PBB1020/2.5": "40.2″ (1,020 mm) × 12 ga (2.5 mm)",
-     "PBB1020/2A": "40.2″ (1,020 mm) × 14 ga (2 mm)",
-     "PBB1020/3SH": "40.2″ (1,020 mm) × 14 ga (2 mm)",
      "PBB1270/2": "50″ (1,270 mm) × 14 ga (2 mm)",
-     "PBB1270/2A": "50″ (1,270 mm) × 14 ga (2 mm)",
-     "PBB1270/3SH": "50″ (1,270 mm) × 16 ga (1.5 mm)",
      "PBB1520/1.5": "59.8″ (1,520 mm) × 16 ga (1.5 mm)",
-     "PBB1520/1.5A": "59.8″ (1,520 mm) × 16 ga (1.5 mm)",
      "PBB2020/1.2": "79.5″ (2,020 mm) × 18 ga (1.2 mm)",
-     "PBB2050/3SH": "79.5″ (2,020 mm) × 20 ga (1 mm)",
      "PBB2520/1.0": "99.2″ (2,520 mm) × 20 ga (1 mm)",
      "TSB 2020/2": "80″ (2,020 mm) × 14 ga (2 mm)",
-     "TSBS 2020/2": "80″ (2,020 mm) × 14 ga (2 mm)",
      "TSB 2060/2": "81″ (2,060 mm) × 14 ga (2 mm)",
      "TFS 2020B": "80″ (2,020 mm) × 18 ga (1.2 mm)",
-     "MFS 2020": "80″ (2,020 mm) × 16 ga (1.5 mm)",
-     "TSBS 2540/1.5": "100″ (2,540 mm) × 16 ga (1.5 mm)",
-     "TSBS 3020/1.2": "119″ (3,020 mm) × 18 ga (1.2 mm)",
      "MF 3020": "119″ (3,020 mm) × 20 ga (1 mm)",
      "PBB1020/1A": "40.2″ (1,020 mm) × 20 ga (1 mm)",
      "PBB1250/1A": "49.2″ (1,250 mm) × 20 ga (1 mm)",
@@ -3461,6 +3294,321 @@
    "manual": true,
    "no_pdf": true,
    "group": "hand"
+  },
+  "tt-folder-bp": {
+   "id": "tt-folder-bp",
+   "brand": "novotech",
+   "name": "Box and pan folding machines with segmented blades, 20 – 14 ga × 40 – 119″",
+   "short": "Box and pan folding machines",
+   "models_label": "PBB1020/2A – TSBS 3020/1.2 · 10 models",
+   "summary": "Folding machines that fold boxes and pans: the blade is made of segments, so they come out where the sides of a box come up, and with every segment in place the machine folds straight. The PBB A and 3SH foot-clamp machines fold 14 ga over 40 and 50″, 16 ga over 50 and 60″ and 20 ga over 80″ — segmented clamp and folding blades on the A models, quick-release clamp segments, an angle stop and bending to 150° on the 3SH; the TSBS and MFS heavy folding machines take 14 ga over 80″, 16 ga over 80 and 100″ and 18 ga over 10 ft, with segments from 1″ to 15-3/4″ (TSBS) or 19-3/4″ (MFS).",
+   "features": [
+    "Segmented blades for boxes and pans; foot-operated clamping beam (PBB, MFS) or lever-swung beam (TSBS)",
+    "PBB A / 3SH: 14 ga × 40 – 50″, 16 ga × 50 – 60″, 20 ga × 80″; quick-release clamp segments on the 3SH",
+    "TSBS / MFS: 14 ga × 80″, 16 ga × 80 – 100″, 18 ga × 119″; segments 1 – 15-3/4″ / 19-3/4″ (25 – 400 / 500 mm)",
+    "Bending angle to 135°, 150° on the 3SH models, with an angle stop",
+    "Back gauge on pre-drilled points (3SH) as an option"
+   ],
+   "optional": [],
+   "images": [
+    "tm-pbb3sh",
+    "tm-pbb1020a",
+    "tm-tsbs",
+    "tm-mfs"
+   ],
+   "videos": [],
+   "headline": "20 – 14 ga × 40 – 119″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "PBB A · PBB 3SH box and pan folding machines",
+      "sub": "Foot-clamp folding machines with segmented blades, 40 – 80″",
+      "models": [
+       "PBB1020/2A",
+       "PBB1020/3SH",
+       "PBB1270/2A",
+       "PBB1270/3SH",
+       "PBB1520/1.5A",
+       "PBB2050/3SH"
+      ],
+      "rows": [
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "40.2″ (1,020 mm)",
+         "40.2″ (1,020 mm)",
+         "50″ (1,270 mm)",
+         "50″ (1,270 mm)",
+         "59.8″ (1,520 mm)",
+         "79.5″ (2,020 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm)",
+         "14 ga (2 mm)",
+         "14 ga (2 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "20 ga (1 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Clamping beam lift",
+        "sub": "",
+        "cells": [
+         "1.9″ (47 mm)",
+         "1.8″ (45 mm)",
+         "1.9″ (47 mm)",
+         "1.8″ (45 mm)",
+         "1.9″ (47 mm)",
+         "1.9″ (47 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 135°",
+         "0 – 150°",
+         "0 – 135°",
+         "0 – 150°",
+         "0 – 135°",
+         "0 – 135°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blades",
+        "sub": "",
+        "cells": [
+         "Segmented clamp and folding blades",
+         "Segmented, quick-release clamp segments",
+         "Segmented clamp and folding blades",
+         "Segmented, quick-release clamp segments",
+         "Segmented clamp and folding blades",
+         "Segmented, quick-release clamp segments"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "57 × 25 × 52″ (146 × 64 × 131 cm)",
+         "56 × 23 × 56″ (142 × 59 × 142 cm)",
+         "67 × 28 × 52″ (171 × 71 × 131 cm)",
+         "66 × 26 × 56″ (167 × 66 × 142 cm)",
+         "77 × 28 × 51″ (196 × 71 × 130 cm)",
+         "98 × 38 × 61″ (248 × 97 × 154 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "717 lb (325 kg)",
+         "794 lb (360 kg)",
+         "816 lb (370 kg)",
+         "926 lb (420 kg)",
+         "871 lb (395 kg)",
+         "1,653 lb (750 kg)"
+        ],
+        "key": true
+       }
+      ]
+     },
+     {
+      "title": "TSBS · MFS",
+      "sub": "Heavy folding machines with blade segments, 6.7 – 10 ft",
+      "models": [
+       "TSBS 2020/2",
+       "MFS 2020",
+       "TSBS 2540/1.5",
+       "TSBS 3020/1.2"
+      ],
+      "rows": [
+       {
+        "label": "Bending length",
+        "sub": "",
+        "cells": [
+         "80″ (2,020 mm)",
+         "80″ (2,020 mm)",
+         "100″ (2,540 mm)",
+         "119″ (3,020 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "14 ga (2 mm)",
+         "16 ga (1.5 mm)",
+         "16 ga (1.5 mm)",
+         "18 ga (1.2 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 135°",
+         "0 – 135°",
+         "0 – 135°",
+         "0 – 135°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Blades / clamping",
+        "sub": "",
+        "cells": [
+         "Segments 25 – 400 mm; lever-swung beam",
+         "Segments 25 – 500 mm; foot clamping",
+         "Segments 25 – 400 mm",
+         "Segments 25 – 400 mm"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "110 × 28 × 60″ (280 × 71 × 152 cm)",
+         "105 × 33 × 58″ (267 × 84 × 147 cm)",
+         "133 × 28 × 59″ (337 × 72 × 150 cm)",
+         "152 × 28 × 59″ (385 × 72 × 150 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "2,260 lb (1,025 kg)",
+         "1,797 lb (815 kg)",
+         "2,756 lb (1,250 kg)",
+         "3,053 lb (1,385 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "PBB1020/2A",
+      "glance": [
+       "40.2″ (1,020 mm)",
+       "14 ga (2 mm)",
+       "717 lb (325 kg)"
+      ]
+     },
+     {
+      "name": "PBB1020/3SH",
+      "glance": [
+       "40.2″ (1,020 mm)",
+       "14 ga (2 mm)",
+       "794 lb (360 kg)"
+      ]
+     },
+     {
+      "name": "PBB1270/2A",
+      "glance": [
+       "50″ (1,270 mm)",
+       "14 ga (2 mm)",
+       "816 lb (370 kg)"
+      ]
+     },
+     {
+      "name": "PBB1270/3SH",
+      "glance": [
+       "50″ (1,270 mm)",
+       "16 ga (1.5 mm)",
+       "926 lb (420 kg)"
+      ]
+     },
+     {
+      "name": "PBB1520/1.5A",
+      "glance": [
+       "59.8″ (1,520 mm)",
+       "16 ga (1.5 mm)",
+       "871 lb (395 kg)"
+      ]
+     },
+     {
+      "name": "PBB2050/3SH",
+      "glance": [
+       "79.5″ (2,020 mm)",
+       "20 ga (1 mm)",
+       "1,653 lb (750 kg)"
+      ]
+     },
+     {
+      "name": "TSBS 2020/2",
+      "glance": [
+       "80″ (2,020 mm)",
+       "14 ga (2 mm)",
+       "2,260 lb (1,025 kg)"
+      ]
+     },
+     {
+      "name": "MFS 2020",
+      "glance": [
+       "80″ (2,020 mm)",
+       "16 ga (1.5 mm)",
+       "1,797 lb (815 kg)"
+      ]
+     },
+     {
+      "name": "TSBS 2540/1.5",
+      "glance": [
+       "100″ (2,540 mm)",
+       "16 ga (1.5 mm)",
+       "2,756 lb (1,250 kg)"
+      ]
+     },
+     {
+      "name": "TSBS 3020/1.2",
+      "glance": [
+       "119″ (3,020 mm)",
+       "18 ga (1.2 mm)",
+       "3,053 lb (1,385 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_length",
+     "capacity_mild_steel",
+     "weight"
+    ],
+    "caps": {
+     "PBB1020/2A": "40.2″ (1,020 mm) × 14 ga (2 mm)",
+     "PBB1020/3SH": "40.2″ (1,020 mm) × 14 ga (2 mm)",
+     "PBB1270/2A": "50″ (1,270 mm) × 14 ga (2 mm)",
+     "PBB1270/3SH": "50″ (1,270 mm) × 16 ga (1.5 mm)",
+     "PBB1520/1.5A": "59.8″ (1,520 mm) × 16 ga (1.5 mm)",
+     "PBB2050/3SH": "79.5″ (2,020 mm) × 20 ga (1 mm)",
+     "TSBS 2020/2": "80″ (2,020 mm) × 14 ga (2 mm)",
+     "MFS 2020": "80″ (2,020 mm) × 16 ga (1.5 mm)",
+     "TSBS 2540/1.5": "100″ (2,540 mm) × 16 ga (1.5 mm)",
+     "TSBS 3020/1.2": "119″ (3,020 mm) × 18 ga (1.2 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "panbox"
   },
   "tt-alb": {
    "id": "tt-alb",
@@ -3761,35 +3909,151 @@
    "no_pdf": true,
    "group": "roof"
   },
-  "tt-bench-brake": {
-   "id": "tt-bench-brake",
+  "tt-bsm-sb": {
+   "id": "tt-bsm-sb",
    "brand": "novotech",
-   "name": "Bench, slitting and offset brakes, 22 – 18 ga × 14 – 124″",
-   "short": "Bench and slitting brakes",
-   "models_label": "BSM1016 – ZWJ-36 · 12 models",
-   "summary": "Small brakes for the bench and the van: the BSM folding brakes on a fold-away steel stand bend and slit 20 – 22 ga over 40, 48 and 100″, with a slitting device that comes off; the BSM1550 and BSM3150 shear and brake machines bend 22 ga over 61″ and 124″ on a mobile stand, with gas springs that lift the bending beam and carry the slitter head along the sheet; the WB-14 and W1.2 bench brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the ZWJ offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga steel and 18 ga aluminum.",
+   "name": "BSM1550 and BSM3150 shear and brake machines, 22 ga × 61″ and 124″",
+   "short": "BSM shear and brake machines",
+   "models_label": "BSM1550 · BSM3150 · 2 models",
+   "summary": "Shear and brake machines for roofing and siding trim on a mobile stand: the BSM1550 and BSM3150 bend 22 ga (0.8 mm) steel over 61″ and 124″ to 135° and slit it over 59″ and 122″ with a slitter head that runs along the beam. The updated version is labor-saving: a gas spring lifts the bending beam, two more carry the slitter head, and the casters have an improved mounting for a longer service life and a steadier machine at work.",
    "features": [
-    "BSM1016 / BSM1220 / BSM2540: bend and slit 20 – 22 ga over 40 – 100″, foldable steel stand",
-    "BSM1550 / BSM3150: bend 22 ga over 61″ and 124″, slit over 59″ and 122″; mobile stand with gas springs",
-    "W1.2 bench brakes 18 – 39″ in 18 ga; WB-14 14″ in 20 ga",
-    "ZWJ-20 / ZWJ-36 offset brakes: 1/2″ jogs to 90° in 20 ga steel and 18 ga aluminum",
+    "Bends 22 ga (0.8 mm) over 61″ (BSM1550) and 124″ (BSM3150), 0 – 135°",
+    "Slitter head cuts over 59″ and 122″ along the beam",
+    "Gas spring lifts the bending beam; two more gas springs move the slitter head",
+    "Mobile stand on casters with an improved mounting structure",
     "Aluminum, copper and steel"
    ],
    "optional": [],
    "images": [
     "tm-bsm3150",
-    "tm-bsm1016",
-    "tm-bsm1220",
-    "tm-bsm2540",
     "tm-bsm3150-head",
-    "tm-w1000",
-    "tm-w460",
-    "tm-w610b",
-    "tm-wb14",
-    "tm-zwj"
+    "tm-bsm3150-spring",
+    "tm-bsm3150-caster"
    ],
    "videos": [],
-   "headline": "22 – 18 ga × 14 – 124″",
+   "headline": "22 ga × 61″ and 124″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "BSM1550 · BSM3150",
+      "sub": "Shear and brake machines on a mobile stand, 22 ga × 61″ and 124″",
+      "models": [
+       "BSM1550",
+       "BSM3150"
+      ],
+      "rows": [
+       {
+        "label": "Working length",
+        "sub": "",
+        "cells": [
+         "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
+         "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending and shearing capacity, mild steel",
+        "sub": "",
+        "cells": [
+         "22 ga (0.8 mm)",
+         "22 ga (0.8 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Bending angle",
+        "sub": "",
+        "cells": [
+         "0 – 135°",
+         "0 – 135°"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stand",
+        "sub": "",
+        "cells": [
+         "Mobile stand on casters; gas springs lift the bending beam and move the slitter head",
+         "Mobile stand on casters; gas springs lift the bending beam and move the slitter head"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "80 × 34 × 20″ (203 × 87 × 50 cm)",
+         "143 × 35 × 20″ (363 × 89 × 52 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "430 lb (195 kg)",
+         "937 lb (425 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "BSM1550",
+      "glance": [
+       "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
+       "22 ga (0.8 mm)",
+       "430 lb (195 kg)"
+      ]
+     },
+     {
+      "name": "BSM3150",
+      "glance": [
+       "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)",
+       "22 ga (0.8 mm)",
+       "937 lb (425 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "bending_and_shearing_capacity_mild_steel",
+     "weight"
+    ],
+    "caps": {
+     "BSM1550": "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
+     "BSM3150": "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "roof"
+  },
+  "tt-bsm": {
+   "id": "tt-bsm",
+   "brand": "novotech",
+   "name": "BSM folding brakes with slitter, 22 – 20 ga × 40 – 100″",
+   "short": "BSM folding brakes with slitter",
+   "models_label": "BSM1016 · BSM1220 · BSM2540 · 3 models",
+   "summary": "Folding brakes with a slitter for the van and the job site: the BSM1016, BSM1220 and BSM2540 bend and slit 20 – 22 ga over 40, 48 and 100″ to 135° on a fold-away steel stand, with a slitting device that comes off.",
+   "features": [
+    "BSM1016 20 ga × 40″; BSM1220 22 ga × 48″; BSM2540 22 ga × 100″",
+    "Bends to 135°; slitting device that comes off",
+    "Foldable steel stand, 35.4″ or 25.6″ high",
+    "Aluminum, copper and steel"
+   ],
+   "optional": [],
+   "images": [
+    "tm-bsm1016",
+    "tm-bsm1220",
+    "tm-bsm2540"
+   ],
+   "videos": [],
+   "headline": "22 – 20 ga × 40 – 100″",
    "specs": {
     "kind": "table",
     "tables": [
@@ -3863,71 +4127,75 @@
         "key": true
        }
       ]
-     },
+     }
+    ],
+    "models": [
      {
-      "title": "BSM1550 · BSM3150",
-      "sub": "Shear and brake machines on a mobile stand, 22 ga × 61″ and 124″",
-      "models": [
-       "BSM1550",
-       "BSM3150"
-      ],
-      "rows": [
-       {
-        "label": "Working length",
-        "sub": "",
-        "cells": [
-         "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
-         "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending and shearing capacity, mild steel",
-        "sub": "",
-        "cells": [
-         "22 ga (0.8 mm)",
-         "22 ga (0.8 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Bending angle",
-        "sub": "",
-        "cells": [
-         "0 – 135°",
-         "0 – 135°"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stand",
-        "sub": "",
-        "cells": [
-         "Mobile stand on casters; gas springs lift the bending beam and move the slitter head",
-         "Mobile stand on casters; gas springs lift the bending beam and move the slitter head"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "80 × 34 × 20″ (203 × 87 × 50 cm)",
-         "143 × 35 × 20″ (363 × 89 × 52 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "430 lb (195 kg)",
-         "937 lb (425 kg)"
-        ],
-        "key": true
-       }
+      "name": "BSM1016",
+      "glance": [
+       "40″ (1,016 mm)",
+       "20 ga (1 mm)",
+       "137 lb (62 kg)"
       ]
      },
+     {
+      "name": "BSM1220",
+      "glance": [
+       "48″ (1,220 mm)",
+       "22 ga (0.8 mm)",
+       "181 lb (82 kg)"
+      ]
+     },
+     {
+      "name": "BSM2540",
+      "glance": [
+       "100″ (2,540 mm)",
+       "22 ga (0.8 mm)",
+       "507 lb (230 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "working_length",
+     "bending_and_shearing_capacity_mild_steel",
+     "weight"
+    ],
+    "caps": {
+     "BSM1016": "40″ (1,016 mm)",
+     "BSM1220": "48″ (1,220 mm)",
+     "BSM2540": "100″ (2,540 mm)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": true,
+   "no_pdf": true,
+   "group": "roof"
+  },
+  "tt-bench-brake": {
+   "id": "tt-bench-brake",
+   "brand": "novotech",
+   "name": "Bench and offset brakes, 20 – 18 ga × 14 – 39″",
+   "short": "Bench and offset brakes",
+   "models_label": "WB-14 – ZWJ-36 · 7 models",
+   "summary": "Small brakes for the bench and the van: the WB-14 and W1.2 bench brakes bend 20 – 18 ga over 14 to 39″ to 90° or 135°; the ZWJ offset brakes make accurate 1/2″ offsets (jogs) up to 90° in 20 ga steel and 18 ga aluminum.",
+   "features": [
+    "W1.2 bench brakes 18 – 39″ in 18 ga; WB-14 14″ in 20 ga",
+    "ZWJ-20 / ZWJ-36 offset brakes: 1/2″ jogs to 90° in 20 ga steel and 18 ga aluminum",
+    "Aluminum, copper and steel"
+   ],
+   "optional": [],
+   "images": [
+    "tm-w1000",
+    "tm-w460",
+    "tm-w610b",
+    "tm-wb14",
+    "tm-zwj"
+   ],
+   "videos": [],
+   "headline": "20 – 18 ga × 14 – 39″",
+   "specs": {
+    "kind": "table",
+    "tables": [
      {
       "title": "WB-14 · W1.2 bench brakes · ZWJ offset brakes",
       "sub": "Bench hand brakes and offset (jog) brakes, 14 – 40″",
@@ -4016,146 +4284,75 @@
     ],
     "models": [
      {
-      "name": "BSM1016",
-      "glance": [
-       "40″ (1,016 mm)",
-       "20 ga (1 mm)",
-       "137 lb (62 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "BSM1220",
-      "glance": [
-       "48″ (1,220 mm)",
-       "22 ga (0.8 mm)",
-       "181 lb (82 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "BSM2540",
-      "glance": [
-       "100″ (2,540 mm)",
-       "22 ga (0.8 mm)",
-       "507 lb (230 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "BSM1550",
-      "glance": [
-       "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
-       "22 ga (0.8 mm)",
-       "430 lb (195 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
-      "name": "BSM3150",
-      "glance": [
-       "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)",
-       "22 ga (0.8 mm)",
-       "937 lb (425 kg)",
-       "—",
-       "—"
-      ]
-     },
-     {
       "name": "WB-14",
       "glance": [
-       "—",
-       "—",
-       "53 lb (24 kg)",
        "14″ (356 mm)",
-       "20 ga (1 mm)"
+       "20 ga (1 mm)",
+       "53 lb (24 kg)"
       ]
      },
      {
       "name": "W1.2×460",
       "glance": [
-       "—",
-       "—",
-       "10 lb (4.5 kg)",
        "18″ (460 mm)",
-       "18 ga (1.2 mm)"
+       "18 ga (1.2 mm)",
+       "10 lb (4.5 kg)"
       ]
      },
      {
       "name": "W1.2×610",
       "glance": [
-       "—",
-       "—",
-       "53 lb (24 kg)",
        "24″ (610 mm)",
-       "18 ga (1.2 mm)"
+       "18 ga (1.2 mm)",
+       "53 lb (24 kg)"
       ]
      },
      {
       "name": "W1.2×760",
       "glance": [
-       "—",
-       "—",
-       "31 lb (14 kg)",
        "30″ (760 mm)",
-       "18 ga (1.2 mm)"
+       "18 ga (1.2 mm)",
+       "31 lb (14 kg)"
       ]
      },
      {
       "name": "W1.2×1000",
       "glance": [
-       "—",
-       "—",
-       "79 lb (36 kg)",
        "39.4″ (1,000 mm)",
-       "18 ga (1.2 mm)"
+       "18 ga (1.2 mm)",
+       "79 lb (36 kg)"
       ]
      },
      {
       "name": "ZWJ-20",
       "glance": [
-       "—",
-       "—",
-       "35 lb (16 kg)",
        "20″",
-       "20 ga — 1/2″ offsets to 90°; 18 ga aluminum"
+       "20 ga — 1/2″ offsets to 90°; 18 ga aluminum",
+       "35 lb (16 kg)"
       ]
      },
      {
       "name": "ZWJ-36",
       "glance": [
-       "—",
-       "—",
-       "75 lb (34 kg)",
        "36″",
-       "20 ga"
+       "20 ga",
+       "75 lb (34 kg)"
       ]
      }
     ],
     "glance_keys": [
-     "working_length",
-     "bending_and_shearing_capacity_mild_steel",
-     "weight",
      "bending_length",
-     "capacity_mild_steel"
+     "capacity_mild_steel",
+     "weight"
     ],
     "caps": {
-     "BSM1016": "40″ (1,016 mm)",
-     "BSM1220": "48″ (1,220 mm)",
-     "BSM2540": "100″ (2,540 mm)",
-     "BSM1550": "Bending 61″ (1,550 mm), shearing 59″ (1,500 mm)",
-     "BSM3150": "Bending 124″ (3,150 mm), shearing 122″ (3,100 mm)",
-     "WB-14": "",
-     "W1.2×460": "",
-     "W1.2×610": "",
-     "W1.2×760": "",
-     "W1.2×1000": "",
-     "ZWJ-20": "",
-     "ZWJ-36": ""
+     "WB-14": "14″ (356 mm)",
+     "W1.2×460": "18″ (460 mm)",
+     "W1.2×610": "24″ (610 mm)",
+     "W1.2×760": "30″ (760 mm)",
+     "W1.2×1000": "39.4″ (1,000 mm)",
+     "ZWJ-20": "20″",
+     "ZWJ-36": "36″"
     },
     "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
    },

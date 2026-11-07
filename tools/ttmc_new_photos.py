@@ -65,6 +65,8 @@ PHOTOS = {
     "tm-bsm3150": S(BEND + "BSM3150.jpg", (150, 380, 2330, 1095), "BSM3150 shear and brake machine on its mobile stand", clean=True,
                     white=[(370, 770, 732, 800), (370, 770, 412, 1100)]),
     "tm-bsm3150-head": S(BEND + "BSM3150.jpg", (767, 1160, 1522, 1703), "Slitter head of the shear and brake machine", detail=True),
+    "tm-bsm3150-spring": S(BEND + "BSM3150.jpg", (122, 1170, 654, 2236), "Gas spring that lifts the bending beam of the shear and brake machine", detail=True),
+    "tm-bsm3150-caster": S(BEND + "BSM3150.jpg", (1637, 1170, 2370, 1692), "Caster mounting of the shear and brake machine's mobile stand", detail=True),
     "tm-efms2540l": S(BEND + "EFMS-2540X1.5L.png", (40, 320, 1860, 965), "EFMS-2540×1.5L electric folding machine with segmented beams and foot pedals",
                       clean=True),
     "tm-efms2540l-angle": S(BEND + "EFMS-2540X1.5L.png", (1436, 1081, 1840, 1414), "Bending angle setting dial", detail=True),
