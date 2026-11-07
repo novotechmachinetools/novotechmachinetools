@@ -159,14 +159,15 @@ small { font-size: .85em; }
 .sub-menu li.has-tree.open > .tree-toggle { transform: rotate(180deg); }
 .tree { display: none; list-style: none; margin: 0 0 6px 10px; padding: 2px 0 2px 10px; border-left: 2px solid var(--line); }
 .sub-menu li.has-tree.open > .tree { display: block; }
-/* desktop: resting the pointer on a category opens its pages beside it, no click on the arrow needed (the owner, Nov 1 2026) — a
+/* desktop: resting the pointer on a category opens its pages beside it, no click on the arrow needed (the owner, Nov 1 2026) — shown
+   by site.js (.is-fly) once the category is chosen, not while the pointer only crosses it on its way to the photos (Nov 7 2026); a
    flyout over the next column, or over the previous one for the last column; fixed and placed by site.js (--fx, --fy), so the
    three-column list neither reflows nor splits the flyout between its columns */
 @media (min-width: 961px) {
-  .sub-menu li.has-tree:not(.open):hover > .tree { display: block; position: fixed; left: var(--fx, -9999px); top: var(--fy, 0); z-index: 70;
+  .mega:not(.js-aim) .sub-menu li.has-tree:not(.open):hover > .tree, .sub-menu li.has-tree.is-fly:not(.open) > .tree { display: block; position: fixed; left: var(--fx, -9999px); top: var(--fy, 0); z-index: 70;
     width: 250px; max-height: calc(100vh - 16px); overflow-y: auto; margin: 0; padding: 6px 6px 6px 8px; background: var(--white);
     border: 1px solid var(--line); border-top: 3px solid var(--orange); border-radius: var(--radius); box-shadow: 0 12px 26px rgba(20, 20, 20, .16); }
-  .sub-menu li.has-tree:not(.open):hover > .tree-toggle { transform: rotate(180deg); background: var(--orange-tint); border-color: var(--orange); color: var(--orange-ink); }
+  .mega:not(.js-aim) .sub-menu li.has-tree:not(.open):hover > .tree-toggle, .sub-menu li.has-tree.is-fly:not(.open) > .tree-toggle { transform: rotate(180deg); background: var(--orange-tint); border-color: var(--orange); color: var(--orange-ink); }
 }
 .tree a { font-size: 14.5px; padding: 4px 8px; }
 .tree-group { margin-top: 2px; }
