@@ -290,11 +290,12 @@ EXTRA = {
         set={"hero_brand_line": "Premium-line corner notchers are built in Turkey to NovoTech's specification with European hydraulic and electrical components; the value-line notchers are built in China to NovoTech's specification. All sold with a 1-year warranty and supported from Mississauga, ON, Canada."},
     ),
     D2.P_PIPE_NOTCH: dict(
-        groups=[("tt-tube-notch", "Tube and pipe notchers · value line", "Motorized hole-saw and end-mill notchers — NovoTech value line, built in China.", False, None),
-                ("tt-prs", "Tube end grinders · value line", "Belt grinders that notch tube ends at any angle with a contact roller the size of the mating tube.", False, None)],
-        intro_add="NovoTech's value-line notchers, built in China, add the motorized PTN-30 hole-saw notcher, the UTN40 end-mill notchers, "
-                  "the PTN-12U and the PRS tube end grinders that notch tube from Ø3/4 to 5-3/4″ with a belt.",
-        points_add=["NovoTech value line: PTN-30 hole-saw notcher, UTN40 end-mill notchers, PRS belt tube-end grinders to Ø5-3/4″"],
+        # the PRS belt notchers above the PTN / UTN notchers (the owner, Nov 7 2026)
+        groups=[("tt-prs", "Tube end grinders · value line", "Belt grinders that notch tube ends at any angle with a contact roller the size of the mating tube.", False, None),
+                ("tt-tube-notch", "Tube and pipe notchers · value line", "Motorized hole-saw and end-mill notchers — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value-line notchers, built in China, add the PRS tube end grinders that notch tube from Ø3/4 to 5-3/4″ with a "
+                  "belt, the motorized PTN-30 hole-saw notcher, the UTN40 end-mill notchers and the PTN-12U.",
+        points_add=["NovoTech value line: PRS belt tube-end grinders to Ø5-3/4″, PTN-30 hole-saw notcher, UTN40 end-mill notchers"],
         faq_add=[{"q": "Hole saw, end mill or belt — which notching method?",
                   "a": "A hole-saw notcher (PTN-30) is the lowest-cost way to cut a saddle: one inexpensive bi-metal hole saw per tube size, any angle, clean enough for most welding. An end-mill notcher (UTN40) cuts faster and more precisely, without coolant, and one cutter covers several sizes. A belt notcher (PRS) grinds the saddle against a contact roller: no burr, no sharp tooling, works on thin-wall stainless and aluminum and also finishes and deburrs. The premium-line PN machines are motorized notchers for production."}],
         related_add=[{"href": "rotary-draw-tube-benders.html", "label": "Hydraulic & rotary draw benders"}, {"href": "belt-grinder.html", "label": "Belt grinders"}],
@@ -361,6 +362,20 @@ EXTRA = {
         faq_add=[{"q": "Plate roller or slip roll?",
                   "a": "A slip roll is a light three-roll machine for sheet — duct, flues, tanks, hoppers, signage — with a top roll that swings out to slip the finished cylinder off. A plate roller rolls heavier plate and pre-bends the edges so the cylinder closes round. The HER hydraulic slip rolls bridge the two: all three rolls driven hydraulically, 12 ga to 1/2″ over 6′7″."}],
         set={"hero_brand_line": "ISITAN and NovoTech premium line plate rolls are made in Turkey — ISITAN Makine since 1959, the NovoTech premium line built to NovoTech's specification — with European components; NovoTech's value-line slip rolls are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
+    ),
+    D2.P_CORNER_GRIND: dict(
+        groups=[("tt-yq", "Right-angle grinding machines · value line",
+                 "Belt machines that grind and polish the right-angle weld seams and R corners of square boxes — NovoTech value line, built in China.", False, None)],
+        intro_add="NovoTech's value line, built in China, adds the YQ right-angle grinding machines: horizontal machines for box edges up "
+                  "to 35.4, 47.2 or 59.1″ long and the YQ-450 vertical machine for corners up to 17.7″ high.",
+        points_add=["NovoTech value line: YQ horizontal right-angle grinders for edges to 59.1″ and the YQ-450 vertical corner grinder"],
+        faq_add=[{"q": "GECAM or the value-line YQ?",
+                  "a": "The GECAM 131, 136 and 135 are built in Parma, Italy, for daily production on boxes, cabinets and doors, with an "
+                       "oscillating belt fork for radii and the automatic head travel of the 135. The value-line YQ machines, built in China, "
+                       "are the lower-cost choice for right-angle weld seams and R corners on water tanks, battery boxes and similar boxes — "
+                       "horizontal for edges up to 59.1″, vertical for corners up to 17.7″ high."}],
+        set={"hero_brand_line": "GECAM corner grinders are designed and built in Parma, Italy; NovoTech's value-line right-angle grinders are built in "
+                                "China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_DEBURR: dict(
         groups=[("tt-bfm", "Wide-belt deburring machines · value line", "Entry-level wide-belt deburring and finishing machines, 12″ and 24″ — NovoTech value line, built in China.", False, None)],

@@ -1382,8 +1382,9 @@ def set_hero_many(page, keys, labels, links=None):
     """every product of the page small under the large photo, each with its short name (the owner, Nov 1 2026)"""
     page["hero_image_secondary"], page["hero_mini_labels"], page["hero_many"] = keys, labels, True
     page["hero_cols"] = hero_cols(len(keys))
-    page["hero_mini_h"] = 96 if len(keys) <= 4 else 84 if len(keys) <= 8 else 72      # desktop height of a small photo, px
-    page["hero_mini_hm"] = 80 if page["hero_cols"][1] <= 2 else 58                    # phone height: bigger when two a row or fewer
+    # about 15 % larger than before (the owner, Nov 7 2026: "a little bigger, 10 – 20 %")
+    page["hero_mini_h"] = 110 if len(keys) <= 4 else 96 if len(keys) <= 8 else 84     # desktop height of a small photo, px
+    page["hero_mini_hm"] = 92 if page["hero_cols"][1] <= 2 else 66                    # phone height: bigger when two a row or fewer
     page["hero_mini_links"] = links or {}
     # many products (more than 8): on a desktop the strip runs the full width under the hero instead of under the photo only,
     # so the hero stays as tall as its text — balanced rows of up to 8
@@ -1391,7 +1392,7 @@ def set_hero_many(page, keys, labels, links=None):
     if n > 8:
         rows = -(-n // 8)
         page["hero_wide"], page["hero_cols_wide"] = True, -(-n // rows)
-        page["hero_mini_h"] = 96                       # the full-width strip has room for the larger photos
+        page["hero_mini_h"] = 110                      # the full-width strip has room for the larger photos
 
 
 def hero_keys(hero):

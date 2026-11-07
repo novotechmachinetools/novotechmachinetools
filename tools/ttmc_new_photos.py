@@ -20,6 +20,7 @@ SRC = "/home/claude/ttmc-new/"
 NI, BR = SRC + "new_items_rar/", SRC + "brochure_rar/"
 BEND, SAW, WELD = NI + "折弯类/", NI + "锯床类/", NI + "焊接变位机或旋转台/"
 PDF_A, PDF_B = SRC + "pdf_a/a.pdf", SRC + "pdf_b/b.pdf"
+YQ = SRC + "yq/"                      # the right-angle grinder sheet (Nov 7 2026): its photos, extracted
 TFM_PDF = BR + "TFM3100x2E TFMS3100X2E.pdf"
 DST = P.DST
 
@@ -98,6 +99,12 @@ PHOTOS = {
     # ------------------------------------------------------------------------------------------- deburring, milling, presses
     "tm-mgm300": S(NI + "MGM300.jpg", (112, 250, 1032, 1592), "MGM-300 finishing and deburring machine, 12″ working width", clean=True),
     "tm-mgm300-conveyor": S(NI + "MGM300.jpg", (1231, 1218, 1799, 1592), "Conveyor drive and abrasive belt of the MGM-300", detail=True),
+    # right-angle grinders (the owner's sheet, Nov 7 2026): the vertical machine's photo is the sheet's two halves stacked; the
+    # Chinese warning labels are filled from the paint around them
+    "tm-yq-h": S(YQ + "yq-h.png", None, "YQ horizontal right-angle grinding machine with its control cabinet and foot pedal",
+                 logo=[(495, 214, 555, 260), (456, 91, 500, 102)]),
+    "tm-yq-v": S(YQ + "yq450.png", None, "YQ-450 vertical right-corner grinding and polishing machine",
+                 logo=[(286, 66, 402, 182), (946, 82, 1032, 168), (972, 588, 1008, 668)]),
     "tm-ksm850": S(NI + "KSM-850.jpg", (590, 295, 1900, 1478), "KSM-850 cylinder head and block resurfacing machine", clean=True, logo_out=[(690, 573, 811, 626)]),
     "tm-ksm850-panel": S(NI + "KSM-850.jpg", (133, 1939, 674, 2295), "Control panel with variable head and table speeds", detail=True),
     "tm-x6336b": S(NI + "X6336.jpg", (1100, 318, 2264, 1696), "X6336 turret milling machine with power feed and digital readout", clean=True),

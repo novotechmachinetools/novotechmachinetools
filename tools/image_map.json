@@ -18246,7 +18246,7 @@
  },
  "gc-135": {
   "src": "tools/src-images/gecam/gc-135.jpg",
-  "alt": "Gecam 135 automatic corner grinder",
+  "alt": "GECAM 135 automatic corner grinder",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18254,7 +18254,7 @@
  },
  "gc-135-2h": {
   "src": "tools/src-images/gecam/gc-135-2h.jpg",
-  "alt": "135 two-head version",
+  "alt": "GECAM 135 two-head version",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18262,7 +18262,7 @@
  },
  "gc-135-head": {
   "src": "tools/src-images/gecam/gc-135-head.jpg",
-  "alt": "135 grinding head on its carriage",
+  "alt": "GECAM 135 grinding head on its carriage",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18294,7 +18294,7 @@
  },
  "gc-135-sample": {
   "src": "tools/src-images/gecam/gc-135-sample.jpg",
-  "alt": "Box edge after weld grinding on the 135",
+  "alt": "Box edge after weld grinding on the GECAM 135",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18302,7 +18302,7 @@
  },
  "gc-136": {
   "src": "tools/src-images/gecam/gc-136.jpg",
-  "alt": "Gecam 136 corner grinder",
+  "alt": "GECAM 136 corner grinder",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18310,7 +18310,7 @@
  },
  "gc-131": {
   "src": "tools/src-images/gecam/gc-131.jpg",
-  "alt": "Gecam 131 corner grinder",
+  "alt": "GECAM 131 corner grinder",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18318,7 +18318,7 @@
  },
  "gc-136-box": {
   "src": "tools/src-images/gecam/gc-136-box.jpg",
-  "alt": "136 grinding the welded corner of a box",
+  "alt": "GECAM 136 grinding the welded corner of a box",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18326,7 +18326,7 @@
  },
  "gc-136-head": {
   "src": "tools/src-images/gecam/gc-136-head.jpg",
-  "alt": "136 belt head with oscillating fork",
+  "alt": "GECAM 136 belt head with oscillating fork",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18334,7 +18334,7 @@
  },
  "gc-131-table": {
   "src": "tools/src-images/gecam/gc-131-table.jpg",
-  "alt": "131 work table with squaring guides",
+  "alt": "GECAM 131 work table with squaring guides",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -18342,7 +18342,7 @@
  },
  "gc-131-head": {
   "src": "tools/src-images/gecam/gc-131-head.jpg",
-  "alt": "131 belt fork at a box corner",
+  "alt": "GECAM 131 belt fork at a box corner",
   "section": "gecam",
   "trim": false,
   "quality": 82,
@@ -34321,6 +34321,381 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
+  "cut_size": 768
+ },
+ "dt-hb-light": {
+  "src": "tools/src-images/datang/dt-hb-light.jpg",
+  "alt": "Light welding positioner with its control box, 10 – 100 kg worktable load",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-hb": {
+  "src": "tools/src-images/datang/dt-hb.jpg",
+  "alt": "HB welding positioner — tilting worktable with T-slots, rotation gearbox and control box",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-hb-site": {
+  "src": "tools/src-images/datang/dt-hb-site.jpg",
+  "alt": "HB welding positioner with geared tilting and the pendant control box",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-hb-2": {
+  "src": "tools/src-images/datang/dt-hb-2.jpg",
+  "alt": "HB welding positioner — the tilting sector gear and the worktable",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-hb-big": {
+  "src": "tools/src-images/datang/dt-hb-big.jpg",
+  "alt": "Heavy HB welding positioners in final assembly",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dt-hbt": {
+  "src": "tools/src-images/datang/dt-hbt.jpg",
+  "alt": "HBT rotary welding table — a horizontal turntable with VFD speed control",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-hbj": {
+  "src": "tools/src-images/datang/dt-hbj.jpg",
+  "alt": "HBJ lift welding positioner — the worktable rises, tilts and turns",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-headstock": {
+  "src": "tools/src-images/datang/dt-headstock.jpg",
+  "alt": "Headstock welding positioner with a vertical faceplate",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-head-tail": {
+  "src": "tools/src-images/datang/dt-head-tail.jpg",
+  "alt": "Headstock and tailstock lifting positioner pair",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-head-tail-fixed": {
+  "src": "tools/src-images/datang/dt-head-tail-fixed.jpg",
+  "alt": "Fixed-height headstock and tailstock positioners",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-l-type": {
+  "src": "tools/src-images/datang/dt-l-type.jpg",
+  "alt": "L-type welding positioner — motor-tilted arm and a turning worktable",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-hydraulic": {
+  "src": "tools/src-images/datang/dt-hydraulic.jpg",
+  "alt": "Three-axis hydraulic welding positioner — lift, tilt and rotation",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-special": {
+  "src": "tools/src-images/datang/dt-special.jpg",
+  "alt": "Special welding positioner with a three-jaw welding chuck",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dzg-light": {
+  "src": "tools/src-images/datang/dt-dzg-light.jpg",
+  "alt": "Light welding turning rolls — one drive roll, one idler roll and a foot switch",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dzg": {
+  "src": "tools/src-images/datang/dt-dzg.jpg",
+  "alt": "DZG self-aligning welding turning rolls — the wheel pairs swing to the vessel diameter",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dzg-2": {
+  "src": "tools/src-images/datang/dt-dzg-2.jpg",
+  "alt": "DZG self-aligning turning rolls with their control boxes",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dt-dkg": {
+  "src": "tools/src-images/datang/dt-dkg.jpg",
+  "alt": "DKG bolt-adjustable welding turning rolls — drive and idler sections",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dkg-2": {
+  "src": "tools/src-images/datang/dt-dkg-2.jpg",
+  "alt": "DKG bolt-adjustable turning rolls, drive section",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dt-dsk": {
+  "src": "tools/src-images/datang/dt-dsk.jpg",
+  "alt": "DSK lead-screw-adjustable welding turning rolls with hand wheels",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dsk-2": {
+  "src": "tools/src-images/datang/dt-dsk-2.jpg",
+  "alt": "DSK lead-screw-adjustable turning rolls — the roll pairs move on the screw",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-gglj": {
+  "src": "tools/src-images/datang/dt-gglj.jpg",
+  "alt": "GGLJ pinch-type pipe rotator turning an elbow for flange and segment welding",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-fitup": {
+  "src": "tools/src-images/datang/dt-fitup.jpg",
+  "alt": "Hydraulic fit-up turning rolls — the lifting rolls align two shell sections",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dlh-small": {
+  "src": "tools/src-images/datang/dt-dlh-small.jpg",
+  "alt": "Small column and boom welding manipulator",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dlh-small-2": {
+  "src": "tools/src-images/datang/dt-dlh-small-2.jpg",
+  "alt": "Small column and boom manipulator with a welding head",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "dt-dlh-medium": {
+  "src": "tools/src-images/datang/dt-dlh-medium.jpg",
+  "alt": "Medium column and boom welding manipulator with flux recovery",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "dt-dlh-heavy": {
+  "src": "tools/src-images/datang/dt-dlh-heavy.jpg",
+  "alt": "Heavy column and boom welding manipulator on a travelling carriage",
+  "section": "datang",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-131-showroom": {
+  "src": "tools/src-images/gecam/gc-131-showroom.jpg",
+  "alt": "GECAM 131 with its control panel, work table and dust extraction",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-showroom-2": {
+  "src": "tools/src-images/gecam/gc-131-showroom-2.jpg",
+  "alt": "GECAM 131 work table and belt housing",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-belt": {
+  "src": "tools/src-images/gecam/gc-131-belt.jpg",
+  "alt": "GECAM 131 abrasive belt between the guide plates",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-dust": {
+  "src": "tools/src-images/gecam/gc-131-dust.jpg",
+  "alt": "GECAM 131 with its dust extraction fan",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-panel": {
+  "src": "tools/src-images/gecam/gc-131-panel.jpg",
+  "alt": "GECAM 131 control panel",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-extractor": {
+  "src": "tools/src-images/gecam/gc-131-extractor.jpg",
+  "alt": "Dust extraction fan on the GECAM 131",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-131-grinding": {
+  "src": "tools/src-images/gecam/gc-131-grinding.jpg",
+  "alt": "GECAM 131 grinding the corner weld of a steel box",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-studio": {
+  "src": "tools/src-images/gecam/gc-136-studio.jpg",
+  "alt": "GECAM 136 with a box on the work table",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": true
+ },
+ "gc-136-side": {
+  "src": "tools/src-images/gecam/gc-136-side.jpg",
+  "alt": "GECAM 136 inclined belt head, dust hood and drive motor",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-top": {
+  "src": "tools/src-images/gecam/gc-136-top.jpg",
+  "alt": "GECAM 136 work table, part stop and dust hood",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-table": {
+  "src": "tools/src-images/gecam/gc-136-table.jpg",
+  "alt": "GECAM 136 work table with guides and hand wheel",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-guide": {
+  "src": "tools/src-images/gecam/gc-136-guide.jpg",
+  "alt": "Abrasive belt and part guide of the GECAM 136",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-belt": {
+  "src": "tools/src-images/gecam/gc-136-belt.jpg",
+  "alt": "GECAM 136 belt under the work table edge",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-grinding": {
+  "src": "tools/src-images/gecam/gc-136-grinding.jpg",
+  "alt": "GECAM 136 grinding the weld of a steel box",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-corner": {
+  "src": "tools/src-images/gecam/gc-136-corner.jpg",
+  "alt": "Box corner radiused on the GECAM 136",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "gc-136-before-after": {
+  "src": "tools/src-images/gecam/gc-136-before-after.jpg",
+  "alt": "Welded box corner before and after grinding",
+  "section": "gecam",
+  "trim": false,
+  "quality": 82,
+  "cutout": false
+ },
+ "video-1MDSGr0PKgg": {
+  "src": "/home/claude/gms-site/yt/1MDSGr0PKgg.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-wbs6f9N3mNQ": {
+  "src": "/home/claude/gms-site/yt/wbs6f9N3mNQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-U1FdmwPbLGQ": {
+  "src": "/home/claude/gms-site/yt/U1FdmwPbLGQ.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "tm-yq-h": {
+  "src": "tools/src-images/ttmc-more/tm-yq-h.jpg",
+  "alt": "YQ horizontal right-angle grinding machine with its control cabinet and foot pedal",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 768
+ },
+ "tm-yq-v": {
+  "src": "tools/src-images/ttmc-more/tm-yq-v.jpg",
+  "alt": "YQ-450 vertical right-corner grinding and polishing machine",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
   "cut_size": 768
  }
 }

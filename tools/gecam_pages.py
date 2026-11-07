@@ -6,9 +6,10 @@ premium-line BT 114-S) and the corner welding page; image registration (section 
                                     wide-belt deburring G15 · G30 · G65 · G135 · GM65 · GM110 · G30 WET · G65/135 WET,
                                     edge rounding & deslagging G135RB8 · GT06 · GT13 · G65DCC,
                                     brush machines & benches CUB 30 · CUB 65BB · CUB 30B1B2 · EASY T · GCB 25 / 30 / 40
-    Corner grinders                 corner-grinding-machines                  131 · 136 · 135 · special corner grinders
+    Corner grinders                 corner-grinding-machines                  GECAM 131 · GECAM 136 · GECAM 135 · special corner grinders
     Pipe sanding & polishing        pipe-sanding-polishing-machines           BT 114-S (NovoTech premium line, first) · Eurofintec 141 · 144 ·
-                                                                              128 S · SL / 128 DL · 228 · 728 · 143 — a menu item of its own, no hub
+                                                                              128 S · SL / 128 DL · 228 · 728 — a menu item of its own, no hub
+    Tube end deburring machine      tube-end-deburring-machine                Eurofintec 143 — its own page (the owner, Nov 7 2026)
     Corner welders                  corner-welding-machines                   CWS 200 · CWS 300
 
     python3 tools/gecam_photos.py                    # gecam.com, catalogue and brochure images → tools/src-images/gecam
@@ -192,17 +193,17 @@ PAGE_CORNER = dict(
     h1="Corner grinders — corner grinding machines for the weld seams of boxes, cabinets, doors and tube frames",
     intro="A corner grinder (corner grinding machine, also called a corner sander or weld seam sander) grinds the weld on the corner of a welded box, cabinet, door or "
           "tray flush with the sheet, or to a neat radius, ready for paint or polishing — work that takes long minutes with a hand "
-          "grinder and never looks the same twice. NovoTech sells the corner grinders of Gecam, built in Parma, Italy: the hand-fed 131 "
-          "and 136, where an abrasive belt on an oscillating fork grinds corners up to 5-7/8″ and 11-13/16″ high to a radius of 3/64″ to "
-          "3/8″; the 135, whose head travels the full length of the edge by itself on boxes with edges up to 59″; and PLC-controlled "
+          "grinder and never looks the same twice. NovoTech sells GECAM corner grinders, built in Parma, Italy: the hand-fed GECAM 131 "
+          "and GECAM 136, where an abrasive belt on an oscillating fork grinds corners up to 5-7/8″ and 11-13/16″ high to a radius of 3/64″ to "
+          "3/8″; the GECAM 135, whose head travels the full length of the edge by itself on boxes with edges up to 59″; and PLC-controlled "
           "machines for series work — an upper-corner grinder, a six-head grinder and a grinder for the welds of 90° tube frames. "
           "Supplied with a CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
-    points=["131 · 136: hand-fed, corners to 5-7/8″ and 11-13/16″ high, radius 3/64″ – 3/8″ or sharp",
-            "135: automatic head travel along edges up to 31-1/2″ or 59″, one or two heads",
+    points=["GECAM 131 · GECAM 136: hand-fed, corners to 5-7/8″ and 11-13/16″ high, radius 3/64″ – 3/8″ or sharp",
+            "GECAM 135: automatic head travel along edges up to 31-1/2″ or 59″, one or two heads",
             "Special PLC grinders for upper corners, two corners at once and 90° tube frames"],
     hero="gc-131", minis=["gc-136", "gc-135"],
     groups=[("gc-corner", "Corner grinders for boxes, cabinets and doors",
-             "The hand-fed 131 and 136 and the automatic 135, each grinding the corner weld with a belt pressed on by rollers or a pad.", D.GECAM),
+             "The hand-fed GECAM 131 and GECAM 136 and the automatic GECAM 135, each grinding the corner weld with a belt pressed on by rollers or a pad.", D.GECAM),
             ("gc-corner-special", "Special corner grinders for series work",
              "PLC machines that run from a stored recipe: the operator places the part and starts the cycle.", D.GECAM)],
     faq=[{"q": "What does a corner grinder do?",
@@ -210,15 +211,15 @@ PAGE_CORNER = dict(
                "so the corner can be painted, powder-coated or polished without visible weld. The belt runs over rollers or a pad shaped "
                "for the corner, so the result is the same on every part, unlike hand grinding."},
          {"q": "Hand-fed or automatic?",
-          "a": "The 131 and 136 are hand-fed: the operator moves the corner along the belt — quick to set up for mixed boxes and doors. "
-               "The 135 clamps the box and runs the head along the whole edge by itself, which suits long edges and repeat work, and a "
+          "a": "The GECAM 131 and GECAM 136 are hand-fed: the operator moves the corner along the belt — quick to set up for mixed boxes and doors. "
+               "The GECAM 135 clamps the box and runs the head along the whole edge by itself, which suits long edges and repeat work, and a "
                "second head doubles its output. For high volumes of one part, the PLC machines grind two corners or a whole tube-frame "
                "corner per cycle."},
          {"q": "What radius can it make?",
-          "a": "The oscillating fork of the 131 and 136 grinds a radius from 3/64″ to 3/8″ (R1 – R10 mm), or a sharp corner. The 135 "
+          "a": "The oscillating fork of the GECAM 131 and GECAM 136 grinds a radius from 3/64″ to 3/8″ (R1 – R10 mm), or a sharp corner. The GECAM 135 "
                "grinds the weld flush; its PLUS version adds vertical, horizontal and oscillating head movement for radiusing."},
          {"q": "How high a box can it take?",
-          "a": "Corner height up to 5-7/8″ on the 131 and 7-7/8″ or 11-13/16″ on the 136 (19-11/16″ on request). The 135 is limited by "
+          "a": "Corner height up to 5-7/8″ on the GECAM 131 and 7-7/8″ or 11-13/16″ on the GECAM 136 (19-11/16″ on request). The GECAM 135 is limited by "
                "edge length — 31-1/2″ or 59″ — and the six-head grinder takes boxes up to 5-7/8″ high."},
          {"q": "Can you build a machine for my part?",
           "a": "Yes. Gecam designs special corner grinders around the part — the upper-corner, six-head and tube-frame machines on this "
@@ -239,22 +240,22 @@ PAGE_PIPE = dict(
           "plating. NovoTech has four kinds: the BT 114-S, NovoTech's premium-line sander with two belts and an automatic feeder for "
           "straight and bent tube Ø3/8″ to Ø4-1/2″; the Eurofintec 141 and 144 orbital sanders, whose belts orbit the tube so straight "
           "and bent round and oval tube is finished all round without turning, Ø3/8″ to Ø5-7/8″; the Eurofintec 128 S, 128 SL and 128 DL "
-          "centreless sanders for bar and tube Ø3/16″ to Ø5-7/8″ and the 228 for pipe up to Ø15-3/4″; and the 728 tube brushing machine "
-          "and 143 tube-end deburring machine. Eurofintec machines are built in Parma, Italy, by Gecam. Supplied with a CSA-approved "
+          "centreless sanders for bar and tube Ø3/16″ to Ø5-7/8″ and the 228 for pipe up to Ø15-3/4″; and the 728 tube brushing machine. "
+          "Cut tube ends are deburred on the 143, on a page of its own. Eurofintec machines are built in Parma, Italy, by Gecam. Supplied with a CSA-approved "
           "panel and supported from Mississauga, ON, Canada.",
     points=["BT 114-S: automatic feeder, two 37 × 2″ belts, straight and bent tube Ø3/8″ – 4-1/2″",
             "141 · 144 orbital sanders for bent tube Ø3/8″ – 5-7/8″ · 128 centreless Ø3/16″ – 5-7/8″ · 228 to Ø15-3/4″",
-            "728 tube brushing · 143 tube-end deburring, inside and outside, ends cut at 90° and 45°"],
+            "728 tube brushing machine for round tube Ø3/8″ – 5-7/8″: cleaning, satin finishing and polishing"],
     hero="sh-bt114s", minis=["ef-144", "ef-128sl"],
     groups=[("sahinler-polish", "Automatic pipe polishing and sanding machine", "The BT 114-S belt sander with automatic pipe feeder — NovoTech premium line, made in Turkey.", "sahinler"),
             ("ef-orbital", "Orbital pipe sanders", "Two belts orbit the tube in the head: straight and bent tube finished all round without turning.", D.EURO),
             ("ef-centreless", "Centreless and large-pipe sanders", "Round bar and tube turned against the belt as it passes — Ø3/16″ to Ø15-3/4″.", D.EURO),
-            ("ef-brush", "Tube brushing and tube-end deburring", "A heavy brushing machine for tube and a deburring machine for cut tube ends.", D.EURO)],
+            ("ef-brush", "Tube brushing machine", "A heavy brushing machine that cleans, satin-finishes and polishes round tube.", D.EURO)],
     faq=[{"q": "Which pipe sander do I need?",
           "a": "For handrail, furniture and fabrication work in mixed sizes, straight and bent: the BT 114-S with its automatic feeder "
                "(Ø3/8″ – 4-1/2″) or the 141 / 144 orbital sanders (Ø3/8″ – 5-7/8″, round and oval). For long runs of straight bar and "
                "tube to an even satin or polished finish: a 128 centreless sander, two heads on the 128 DL for two grits in one pass. "
-               "For pipe over Ø5-7/8″: the 228, to Ø15-3/4″. Tube ends go on the 143."},
+               "For pipe over Ø5-7/8″: the 228, to Ø15-3/4″. Cut tube ends go on the 143 tube end deburring machine."},
          {"q": "What finish does a belt pipe sander give?",
           "a": "The finish follows the belt: a coarse grit removes rust, scale and weld colour; 180 – 240 grit gives the brushed, satin "
                "finish of architectural stainless handrail; finer belts and non-woven belts prepare for mirror polishing. Two belts run "
@@ -265,15 +266,55 @@ PAGE_PIPE = dict(
                "bending. Centreless machines finish straight bar and tube only."},
          {"q": "Round and square tube on the same machine?",
           "a": "The BT 114-S takes round pipe from Ø3/8″ to Ø4-1/2″ and square tube, passed through flat side by side, two faces at a "
-               "time. The orbital and centreless sanders are for round tube (the orbital sanders oval too); the 143 deburrs the ends of "
-               "round and square tube."},
-         {"q": "How are cut tube ends deburred?",
-          "a": "On the 143: the tube end is pushed into a prism against a wire brush that turns while its own axis rotates, deburring "
-               "the inside and the outside of the end in one cycle — ends cut at 90° or 45°, round Ø13/16″ to Ø4-3/4″ and square to 4-3/4″."},
+               "time. The orbital and centreless sanders are for round tube (the orbital sanders oval too); the 143 tube end deburring "
+               "machine deburrs the ends of round and square tube."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about pipe polishing",
     related_pages=[{"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"},
                    {"href": "circular-cold-saws.html", "label": "Circular cold saws"}, {"href": "angle-rolls.html", "label": "Angle rolls & tube rollers"}],
+)
+
+# ------------------------------------------------------------------------------------------------ tube end deburring (the 143)
+# Its own page (the owner, Nov 7 2026).  Name: Google suggests both "tube end deburring machine" and "pipe end deburring machine",
+# and the industry lists the category as "tube deburring machine" — the title carries "tube end" first and "pipe" beside it;
+# Search Console had no queries for either yet and no volume tool was available on the day.
+PAGE_TUBE_END = dict(
+    title="Tube End Deburring Machine — Pipe & Tube End Deburring, Inside and Out | NovoTech",
+    meta="Tube end deburring machine for cut pipe and tube: the Eurofintec 143 deburrs the end inside and outside in one cycle, "
+         "Ø13/16″ – 4-3/4″, cut at 90° or 45°.",
+    h1="Tube end deburring machine — pipe and tube ends deburred inside and outside in one cycle",
+    intro="A tube end deburring machine (pipe end deburring machine) takes the burr off the cut end of a tube or pipe — inside and "
+          "outside — after the saw, the tube cutter or the laser, so the end is safe to handle, slides cleanly into a fitting or a "
+          "joint and takes paint or plating evenly. NovoTech sells the Eurofintec 143, built in Parma, Italy, by Gecam: the tube end "
+          "goes into an adjustable central prism against a Ø9-13/16 × 3-15/16″ wire brush that turns while its own axis rotates, "
+          "changing direction so every edge is deburred evenly — the inside and the outside of the end in one cycle, on stainless "
+          "tube and profiles, round Ø13/16″ to Ø4-3/4″ and square 13/16″ to 4-3/4″, cut at 90° or 45°, and on bent parts too. Two "
+          "brush speeds and two speeds of the brush-axis rotation. Supplied with a CSA-approved panel, installed and supported from "
+          "Mississauga, ON, Canada.",
+    points=["Inside and outside of the tube end deburred in one cycle — ends cut at 90° or 45°, bent parts too",
+            "Round tube Ø13/16″ – 4-3/4″ and square tube 13/16″ – 4-3/4″, stainless tube and profiles",
+            "Wire brush Ø9-13/16 × 3-15/16″: two brush speeds, two speeds of brush-axis rotation, adjustable central prism"],
+    hero="ef-143", minis=["ef-143-front", "ef-143-45"],
+    groups=[("ef-tube-end", "Tube end deburring machine",
+             "Wire-brush deburring of cut tube and profile ends — Eurofintec, built in Parma, Italy, by Gecam.", D.EURO)],
+    faq=[{"q": "What does a tube end deburring machine do?",
+          "a": "It removes the burr that the saw, the tube cutter or the laser leaves on the cut end of a tube or pipe, on the inside "
+               "and the outside edge, so the end is safe to handle, fits into a fitting or a joint and welds, paints and plates cleanly. "
+               "On the 143 the end is pushed against a wire brush that turns while its own axis rotates, so both edges are deburred "
+               "evenly in one cycle."},
+         {"q": "Which tube sizes and cuts does the 143 take?",
+          "a": "Round tube from Ø13/16″ to Ø4-3/4″ (20 – 120 mm) and square tube from 13/16″ to 4-3/4″, with ends cut at 90° or 45°, "
+               "and bent parts too. The adjustable central prism at the entry centres the tube at the brush."},
+         {"q": "How are cut tube ends deburred on the 143?",
+          "a": "The tube end is pushed into a prism against a wire brush that turns while its own axis rotates and changes direction, "
+               "deburring the inside and the outside of the end in one cycle. Two brush speeds and two speeds of the axis rotation set "
+               "the action for the material and the burr."},
+         {"q": "Does it polish the tube as well?",
+          "a": "No — the 143 works the cut end only. To clean, satin-finish or polish the length of the tube, see the pipe sanding and "
+               "polishing machines: the BT 114-S, the 141 and 144 orbital sanders, the 128 centreless sanders and the 728 tube "
+               "brushing machine."},
+         VOLT_FAQ_GENERIC],
+    faq_title="Questions we get asked about tube end deburring",
 )
 
 # ------------------------------------------------------------------------------------------------ corner welders
@@ -392,7 +433,7 @@ SUBPAGES = [  # slug, title, image, blurb, nav label
     (D.P_SHEET, "Sheet metal deburring machines", "gc-g65", "Gecam G15, G30, G65, G135 and GM wide-belt deburring and satin finishing machines, 5-7/8″ to 53-1/8″ wide, dry or wet.", "Sheet metal deburring"),
     (D.P_EDGE, "Edge rounding & deslagging machines", "gc-g135rb8", "G135RB8 brush-carousel edge rounding to 5/64″, GT06 and GT13 double-sided edge rounding, G65DCC deslagging for plasma parts.", "Edge rounding & deslagging"),
     (D.P_BRUSH, "Brush deburring machines & benches", "gc-cub", "CUB conveyor brush machines, the EASY T vacuum-table workstation and GCB crossed-belt benches for heavy and shaped parts.", "Brush deburring & benches"),
-    (D.P_CORNER, "Corner grinders", "gc-135", "Hand-fed 131 and 136, automatic 135 and PLC corner grinders for the welds of boxes, cabinets, doors and tube frames.", "Corner grinders"),
+    (D.P_CORNER, "Corner grinders", "gc-135", "Hand-fed GECAM 131 and GECAM 136, automatic GECAM 135 and PLC corner grinders for the welds of boxes, cabinets, doors and tube frames.", "Corner grinders"),
 ]
 PAGES = {D.P_SHEET: PAGE_SHEET, D.P_EDGE: PAGE_EDGE, D.P_BRUSH: PAGE_BRUSH, D.P_CORNER: PAGE_CORNER}
 
@@ -426,7 +467,8 @@ BROCHURE = dict(
             {"title": "Brush deburring machines & benches", "families": [f["id"] for f in D.families(D.P_BRUSH)]},
             {"title": "Corner grinders", "families": [f["id"] for f in D.families(D.P_CORNER)]},
             {"title": "Corner welding machines", "families": [f["id"] for f in D.families(D.P_WELD)]},
-            {"title": "Pipe sanding & polishing — Eurofintec", "families": [f["id"] for f in D.families(D.P_PIPE)]}],
+            {"title": "Pipe sanding & polishing — Eurofintec", "families": [f["id"] for f in D.families(D.P_PIPE)]},
+            {"title": "Tube end deburring — Eurofintec", "families": [f["id"] for f in D.families(D.P_TUBE_END)]}],
     cover_photos=["gc-g135", "gc-135", "ef-144"], out="src/" + PDF_FILE)
 
 
@@ -482,13 +524,22 @@ def build():
     write_category(D.P_PIPE, {**PAGE_PIPE, "related_title": RELATED_TITLE, "related_pages": pipe_related},
                    ALL, SET, "Pipe sanding & polishing machines", extra={**SHARED, **PIPE_EXTRA, "nav_label": "Pipe sanding & polishing machines"})
     write_category(D.P_WELD, PAGE_WELD, ALL, SET, "Corner welders", extra={**SHARED, "nav_label": "Corner welders"})
+    write_category(D.P_TUBE_END, {**PAGE_TUBE_END, "related_title": RELATED_TITLE,
+                                  "related_pages": [{"href": f"{D.P_PIPE}.html", "label": "Pipe sanding & polishing machines"},
+                                                    {"href": "pipe-notcher.html", "label": "Tube notchers"},
+                                                    {"href": "tube-end-forming-machines.html", "label": "Tube end formers"},
+                                                    {"href": "circular-cold-saws.html", "label": "Circular cold saws"}]},
+                   ALL, SET, "Tube end deburring machine", extra={**SHARED, **PIPE_EXTRA, "nav_label": "Tube end deburring machines",
+                                                                   "hero_brand_line": "Eurofintec machines are built in Parma, Italy, by Gecam — sold, installed and supported in Canada by NovoTech.",
+                                                                   "origin_feature": ORIGIN, "catalogue_pdf": pdf(), "catalogue_pdfs": None,
+                                                                   "intro_video_text": "A tour of Gecam at Vicofertile, Parma, where the Eurofintec 143 is built."})
     for old in (D.P_SHEET, D.P_EDGE, D.P_BRUSH):          # merged into the deburring page
         fp = os.path.join(ROOT, "content", "pages", f"{old}.json")
         if os.path.exists(fp):
             os.remove(fp)
     keys = register_images()
     write_brochure_specs()
-    pages = [PAGE_DEBUR, PAGE_CORNER, PAGE_PIPE, PAGE_WELD]
+    pages = [PAGE_DEBUR, PAGE_CORNER, PAGE_PIPE, PAGE_WELD, PAGE_TUBE_END]
     used = {k for f in D.FAMILIES for k in f["images"]} | {p["hero"] for p in pages} | {m for p in pages for m in p["minis"]}
     used |= set(BROCHURE["cover_photos"])
     used -= {k for f in BT114 for k in f["images"]} | {"sh-bt114s"}          # registered by tools/sahinler_pages.py
@@ -499,7 +550,7 @@ def build():
     if missing:
         print("!! image keys without a photo (export still running?):", missing)
     open(os.path.join(ROOT, "tools", "gecam_vids.txt"), "w").write(" ".join(video_ids()))
-    for name, p in [("deburring", PAGE_DEBUR), ("corner", PAGE_CORNER), ("pipe", PAGE_PIPE), ("weld", PAGE_WELD)]:
+    for name, p in [("deburring", PAGE_DEBUR), ("corner", PAGE_CORNER), ("pipe", PAGE_PIPE), ("weld", PAGE_WELD), ("tube end", PAGE_TUBE_END)]:
         print(f"{name:42s} title {len(p['title'])} · meta {len(p['meta'])}")
     print(f"gecam: {len(D.FAMILIES)} families · {sum(len(f['specs']['models']) for f in D.FAMILIES)} models · images: {len(keys)} · videos: {len(video_ids())}")
 

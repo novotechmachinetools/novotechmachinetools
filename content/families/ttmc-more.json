@@ -105,7 +105,9 @@
   "tt-trs",
   "tt-wtr",
   "tt-wt3624",
-  "tt-mdt"
+  "tt-mdt",
+  "tt-yq-h",
+  "tt-yq-v"
  ],
  "families": {
   "tt-eb": {
@@ -23463,6 +23465,260 @@
    "manual": false,
    "no_pdf": true,
    "group": "tt-weld-tables"
+  },
+  "tt-yq-h": {
+   "id": "tt-yq-h",
+   "brand": "novotech",
+   "name": "YQ horizontal right-angle grinding machines for box weld seams, edges to 35.4 – 59.1″",
+   "short": "YQ right-angle grinders",
+   "models_label": "YQ-900 · YQ-1200 · YQ-1500 · 3 models",
+   "summary": "Grinds and polishes the right-angle weld seams and weld marks on square boxes — water tanks, battery boxes and other box-shaped parts — and grinds and polishes the R corner: the box lies on the table and the belt travels the edge at 0 – 236 in/min. Three lengths for edges up to 35.4, 47.2 or 59.1″, a 4 × 83″ abrasive belt and 4 HP in total; the machine is run from a separate control cabinet with a touch screen.",
+   "features": [
+    "Edges up to 35.4″ (YQ-900), 47.2″ (YQ-1200) or 59.1″ (YQ-1500)",
+    "Grinding speed 0 – 236 in/min (0 – 100 mm/s)",
+    "Abrasive belt 4 × 83″ (100 × 2,100 mm); 4 HP (3 kW) in total",
+    "Right-angle weld seams and weld marks ground and polished; R corners on water tanks and battery boxes",
+    "Separate control cabinet with touch screen; foot pedal"
+   ],
+   "optional": [],
+   "images": [
+    "tm-yq-h"
+   ],
+   "videos": [],
+   "headline": "Edges to 35.4 – 59.1″",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "YQ-900 · YQ-1200 · YQ-1500",
+      "sub": "Horizontal right-angle grinding machines",
+      "models": [
+       "YQ-900",
+       "YQ-1200",
+       "YQ-1500"
+      ],
+      "rows": [
+       {
+        "label": "Processing length, max",
+        "sub": "",
+        "cells": [
+         "35.4″ (900 mm)",
+         "47.2″ (1,200 mm)",
+         "59.1″ (1,500 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Total power",
+        "sub": "",
+        "cells": [
+         "4 HP (3 kW)",
+         "4 HP (3 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Grinding speed",
+        "sub": "",
+        "cells": [
+         "0 – 236 in/min (0 – 100 mm/s)",
+         "0 – 236 in/min (0 – 100 mm/s)",
+         "0 – 236 in/min (0 – 100 mm/s)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Abrasive belt",
+        "sub": "",
+        "cells": [
+         "4 × 83″ (100 × 2,100 mm)",
+         "4 × 83″ (100 × 2,100 mm)",
+         "4 × 83″ (100 × 2,100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Ambient temperature",
+        "sub": "",
+        "cells": [
+         "5 – 113 °F (−15 – 45 °C)",
+         "5 – 113 °F (−15 – 45 °C)",
+         "5 – 113 °F (−15 – 45 °C)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Power supply",
+        "sub": "",
+        "cells": [
+         "3-phase, 600 V 60 Hz in Canada (factory standard 380 V ±5 %, 50 Hz)",
+         "3-phase, 600 V 60 Hz in Canada (factory standard 380 V ±5 %, 50 Hz)",
+         "3-phase, 600 V 60 Hz in Canada (factory standard 380 V ±5 %, 50 Hz)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "937 lb (425 kg)",
+         "1,069 lb (485 kg)",
+         "1,444 lb (655 kg)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Dimensions L × W × H",
+        "sub": "",
+        "cells": [
+         "53.1 × 61.8 × 45.7″ (1,350 × 1,570 × 1,160 mm)",
+         "65 × 61.8 × 45.7″ (1,650 × 1,570 × 1,160 mm)",
+         "80.7 × 61.8 × 45.7″ (2,050 × 1,570 × 1,160 mm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "YQ-900",
+      "glance": [
+       "35.4″ (900 mm)",
+       "4 HP (3 kW)",
+       "0 – 236 in/min (0 – 100 mm/s)",
+       "937 lb (425 kg)"
+      ]
+     },
+     {
+      "name": "YQ-1200",
+      "glance": [
+       "47.2″ (1,200 mm)",
+       "4 HP (3 kW)",
+       "0 – 236 in/min (0 – 100 mm/s)",
+       "1,069 lb (485 kg)"
+      ]
+     },
+     {
+      "name": "YQ-1500",
+      "glance": [
+       "59.1″ (1,500 mm)",
+       "4 HP (3 kW)",
+       "0 – 236 in/min (0 – 100 mm/s)",
+       "1,444 lb (655 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "processing_length_max",
+     "total_power",
+     "grinding_speed",
+     "weight"
+    ],
+    "caps": {
+     "YQ-900": "35.4″ (900 mm) edges",
+     "YQ-1200": "47.2″ (1,200 mm) edges",
+     "YQ-1500": "59.1″ (1,500 mm) edges"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-yq"
+  },
+  "tt-yq-v": {
+   "id": "tt-yq-v",
+   "brand": "novotech",
+   "name": "YQ-450 vertical right-corner grinding and polishing machine, corners to 17.7″ high",
+   "short": "YQ-450 vertical corner grinder",
+   "models_label": "YQ-450 · 1 model",
+   "summary": "The vertical machine grinds and polishes the right-angle corner of a box from the side, for corners up to 17.7″ high: the belt head swings on a 180 W motor with adjustable speed, the part rests on the work table against its fence, and the machine is controlled from a separate electrical cabinet.",
+   "features": [
+    "Corners up to 17.7″ (450 mm) high",
+    "Swinging belt head: 180 W motor, adjustable speed",
+    "Separate electrical cabinet; hard-wired power connection"
+   ],
+   "optional": [],
+   "images": [
+    "tm-yq-v"
+   ],
+   "videos": [],
+   "headline": "Corners to 17.7″ high",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "YQ-450",
+      "sub": "Vertical right-corner grinding and polishing machine",
+      "models": [
+       "YQ-450"
+      ],
+      "rows": [
+       {
+        "label": "Processing height, max",
+        "sub": "",
+        "cells": [
+         "17.7″ (450 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Swing motor",
+        "sub": "",
+        "cells": [
+         "180 W (1/4 HP) × 1, adjustable speed"
+        ],
+        "key": true
+       },
+       {
+        "label": "Power connection",
+        "sub": "",
+        "cells": [
+         "Hard-wired"
+        ],
+        "key": false
+       },
+       {
+        "label": "Control",
+        "sub": "",
+        "cells": [
+         "From a separate electrical cabinet"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "71 × 35 × 54″ (181 × 89 × 136 cm)"
+        ],
+        "key": false
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "YQ-450",
+      "glance": [
+       "17.7″ (450 mm)",
+       "180 W (1/4 HP) × 1, adjustable speed"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "processing_height_max",
+     "swing_motor"
+    ],
+    "caps": {
+     "YQ-450": "17.7″ (450 mm) corners"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "tt-yq"
   }
  }
 }

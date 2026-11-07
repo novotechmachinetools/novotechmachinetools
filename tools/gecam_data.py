@@ -23,6 +23,7 @@ P_BRUSH = "brush-deburring-machines"
 P_CORNER = "corner-grinding-machines"
 P_PIPE = "pipe-sanding-polishing-machines"
 P_WELD = "corner-welding-machines"
+P_TUBE_END = "tube-end-deburring-machine"      # the 143, off the pipe sanding page onto its own (the owner, Nov 7 2026)
 
 
 def vids(*ids_titles):
@@ -251,7 +252,7 @@ T_GCB = table("GCB 25 · GCB 30 · GCB 40", "Double crossed-belt deburring bench
     row("Weight", [lb(790, True)] * 3, True)])
 
 # ================================================================================================ corner grinders
-T_135 = table("135", "Automatic corner grinder", ["135"], [
+T_135 = table("GECAM 135", "Automatic corner grinder", ["GECAM 135"], [
     row("Max. edge length", ["31-1/2″ or 59-1/16″ (800 or 1,500 mm)"], True, "two base lengths"),
     row("Grinding heads", ["1 · 2 on the two-head version"], True),
     row("Abrasive belt", [size(150, 2000)], False, "width × length"),
@@ -263,7 +264,7 @@ T_135 = table("135", "Automatic corner grinder", ["135"], [
     row("Dimensions L × W × H", [dims(1850, 1600, 1500)], False, "one head"),
     row("Weight", [lb(480, True)], True)])
 
-T_131 = table("131", "Hand-fed corner grinder", ["131"], [
+T_131 = table("GECAM 131", "Hand-fed corner grinder", ["GECAM 131"], [
     row("Max. corner height", [f"{one(150)}"], True),
     row("Work table", [size(600, 250)], True),
     row("Table adjustment", ["Height and inclination by handwheel · squaring guides"]),
@@ -275,7 +276,7 @@ T_131 = table("131", "Hand-fed corner grinder", ["131"], [
     row("Dimensions L × W × H", [dims(700, 1400, 1500)]),
     row("Weight", [lb(120)], True)])
 
-T_136 = table("136", "Hand-fed corner grinder", ["136"], [
+T_136 = table("GECAM 136", "Hand-fed corner grinder", ["GECAM 136"], [
     row("Max. corner height", ["7-7/8″ or 11-13/16″ (200 / 300 mm) · 19-11/16″ (500 mm) on request"], True),
     row("Part depth", ["3-1/8″ – 19-11/16″ (80 – 500 mm)"]),
     row("Work table", [size(600, 400)], True),
@@ -350,14 +351,23 @@ T_228 = table("228", "Pipe sander for large pipe", ["228"], [
     row("Motor", [hp(3.2, 4)], True),
     row("Dimensions L × W × H", [dims(1380, 990, 2270)])])
 
-T_728_143 = table("728 · 143", "Tube brushing and tube-end deburring machines", ["728", "143"], [
-    row("Tube size", [f"Round {dia_rng(10, 150)}", f"Round {dia_rng(20, 120)} · square {inch(20)} – {inch(120)} (20 – 120 mm)"], True),
-    row("Brush", [f"{dia(300)}, {one(100)} wide", f"Wire, {dia(250)}, {one(100)} wide"], True),
-    row("Brush speed", ["275 – 825 rpm, 2-speed motor", "2 speeds · brush axis rotation 2 speeds"]),
-    row("Work", ["Cleaning, satin finishing and polishing along the tube", "Tube ends cut at 90° and 45°, inside and outside in one cycle"]),
-    row("Motor", [hp(2.5, 3.3), hp(3.3, 4.5)], True),
-    row("Dimensions L × W × H", [dims(800, 1300, 1400), dims(700, 930, 1400)]),
-    row("Weight", [lb(320), lb(370)], True)])
+T_728 = table("728", "Tube brushing machine", ["728"], [
+    row("Tube size", [f"Round {dia_rng(10, 150)}"], True),
+    row("Brush", [f"{dia(300)}, {one(100)} wide"], True),
+    row("Brush speed", ["275 – 825 rpm, 2-speed motor"]),
+    row("Work", ["Cleaning, satin finishing and polishing along the tube"]),
+    row("Motor", [hp(2.5, 3.3)], True),
+    row("Dimensions L × W × H", [dims(800, 1300, 1400)]),
+    row("Weight", [lb(320)], True)])
+
+T_143 = table("143", "Tube-end deburring machine", ["143"], [
+    row("Tube size", [f"Round {dia_rng(20, 120)} · square {inch(20)} – {inch(120)} (20 – 120 mm)"], True),
+    row("Brush", [f"Wire, {dia(250)}, {one(100)} wide"], True),
+    row("Brush speed", ["2 speeds · brush axis rotation 2 speeds"]),
+    row("Work", ["Tube ends cut at 90° and 45°, inside and outside in one cycle"]),
+    row("Motor", [hp(3.3, 4.5)], True),
+    row("Dimensions L × W × H", [dims(700, 930, 1400)]),
+    row("Weight", [lb(370)], True)])
 
 NOTE_PIPE = ("Tube capacities are outside diameters. Metric values in brackets are the manufacturer's figures; belt speeds are surface "
              "speeds. Dimensions are overall L × W × H.")
@@ -575,7 +585,7 @@ FAMILIES = [
                      "GCB 40": ["157-1/2 × 31-1/2″ table", "—", "—", "2 crossed belts 4-3/4″", "1,742 lb"]})),
     # ------------------------------------------------------------------------------------------ corner grinders
     fam("gecam-131", "gc-corner", P_CORNER, GECAM,
-        "131 corner grinder for box and door welds, corners to 5-7/8″ high", "131", "131 · hand-fed",
+        "GECAM 131 corner grinder for box and door welds, corners to 5-7/8″ high", "GECAM 131", "GECAM 131 · hand-fed",
         "The compact hand-fed corner grinder for welded boxes, cabinets, doors and trays: the abrasive belt runs over a fork with "
         "two rollers, and the operator slides the corner along it on the table. The fork oscillates both in angle and about its "
         "pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp corner. The "
@@ -589,10 +599,11 @@ FAMILIES = [
          "Dust hood; electrics in a sealed box",
          VOLT],
         ["Dust collector", VOLT_OPT],
-        ["gc-131", "gc-131-table", "gc-131-head", "gc-box-corner"],
-        spec(T_131, {"131": ["Corners to 5-7/8″ high", "—", "Hand-fed", "Belt 5-7/8″, oscillating fork", "265 lb"]}, NOTE_CORNER)),
+        ["gc-131", "gc-131-showroom", "gc-131-showroom-2", "gc-131-table", "gc-131-head", "gc-131-belt", "gc-131-dust", "gc-131-panel",
+         "gc-131-extractor", "gc-131-grinding", "gc-box-corner"],
+        spec(T_131, {"GECAM 131": ["Corners to 5-7/8″ high", "—", "Hand-fed", "Belt 5-7/8″, oscillating fork", "265 lb"]}, NOTE_CORNER)),
     fam("gecam-136", "gc-corner", P_CORNER, GECAM,
-        "136 corner grinder for box and cabinet welds, corners to 11-13/16″ high", "136", "136 · hand-fed",
+        "GECAM 136 corner grinder for box and cabinet welds, corners to 11-13/16″ high", "GECAM 136", "GECAM 136 · hand-fed",
         "The hand-fed corner grinder for taller boxes, cabinets and enclosures: the abrasive belt runs over a fork with two rollers, "
         "and the operator slides the corner along it on a 23-5/8 × 15-3/4″ table with a prismatic guide. The fork oscillates both "
         "in angle and about its pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp "
@@ -607,10 +618,11 @@ FAMILIES = [
          "Dust hood; electrics in a sealed box",
          VOLT],
         ["Cyclone dust collector", "Version for corners up to 19-11/16″ (500 mm) high", VOLT_OPT],
-        ["gc-136", "gc-136-box", "gc-136-head", "gc-box-corner"],
-        spec(T_136, {"136": ["Corners to 11-13/16″ high", "—", "Hand-fed", "Belt 5-7/8″, oscillating fork", "353 lb"]}, NOTE_CORNER)),
+        ["gc-136", "gc-136-box", "gc-136-studio", "gc-136-side", "gc-136-top", "gc-136-table", "gc-136-head", "gc-136-guide",
+         "gc-136-belt", "gc-136-grinding", "gc-136-corner", "gc-136-before-after", "gc-box-corner"],
+        spec(T_136, {"GECAM 136": ["Corners to 11-13/16″ high", "—", "Hand-fed", "Belt 5-7/8″, oscillating fork", "353 lb"]}, NOTE_CORNER)),
     fam("gecam-135", "gc-corner", P_CORNER, GECAM,
-        "135 automatic corner grinder for welded boxes, edges to 59″", "135", "135 · 1 or 2 heads",
+        "GECAM 135 automatic corner grinder for welded boxes, edges to 59″", "GECAM 135", "GECAM 135 · 1 or 2 heads",
         "Grinds the weld on the outside corner of a welded box or cabinet without the operator holding anything: the box is clamped "
         "pneumatically on a large support base, the belt head comes in on a pneumatic carriage and then travels the full length of "
         "the edge on recirculating-ball guides at an inverter-set speed, stops at the end and releases the part, so the operator "
@@ -626,7 +638,7 @@ FAMILIES = [
          VOLT],
         ["Touch-screen control", "Two-head version", "PLUS version: vertical, horizontal and oscillating head movement for radiusing (touch-screen models)", VOLT_OPT],
         ["gc-135", "gc-135-2h", "gc-135-head", "gc-135-pad", "gc-135-guides", "gc-135-touch", "gc-135-sample"],
-        spec(T_135, {"135": ["Edges to 31-1/2″ or 59″", "—", "Automatic head travel", "1 or 2 belt heads", "1,058 lb"]}, NOTE_CORNER)),
+        spec(T_135, {"GECAM 135": ["Edges to 31-1/2″ or 59″", "—", "Automatic head travel", "1 or 2 belt heads", "1,058 lb"]}, NOTE_CORNER)),
     fam("gecam-corner-special", "gc-corner-special", P_CORNER, GECAM,
         "Upper-corner, six-head and tube-frame corner grinders, boxes to 23-5/8″, tube to 3-1/8″",
         "Special corner grinders", "Upper-corner · six-head · tube-frame",
@@ -742,25 +754,33 @@ FAMILIES = [
         ["Roller stands for long and heavy pipe", VOLT_OPT],
         ["ef-228", "ef-228-rollers", "ef-228-work", "ef-228-large"],
         spec(T_228, {"228": ["Pipe Ø3/8″ – 15-3/4″", "—", "0 – 23 ft/min", "Free belt 3-15/16″", "—"]}, NOTE_PIPE)),
-    fam("eurofintec-728-143", "ef-brush", P_PIPE, EURO,
-        "728 tube brushing machine and 143 tube-end deburring machine, Ø3/8″ – 5-7/8″", "728 · 143", "728 · 143 · 2 machines",
-        "Two brush machines for the work around a tube shop's saw and polisher. The 728 brushes round tube: a Ø11-13/16″ brush on a "
-        "two-speed, self-braking motor works the tube while a grooved rubber contrast roller — tilted to feed it and pneumatically "
-        "compensated — carries it past, cleaning, satin-finishing or polishing tube from Ø3/8″ to Ø5-7/8″, with handwheel adjustment "
-        "as the brush wears. The 143 deburrs the cut ends of stainless tube and profiles inside and outside in one cycle: a wire brush "
-        "turns while its own axis rotates, changing direction so every edge is deburred evenly, on ends cut at 90° or 45° and on bent "
-        "parts — round tube Ø13/16″ to Ø4-3/4″, square 13/16″ to 4-3/4″.",
-        "728: tube Ø3/8″ – 5-7/8″ · 143: tube ends Ø13/16″ – 4-3/4″, round and square",
-        ["728: brush Ø11-13/16 × 3-15/16″ (300 × 100 mm), 275 – 825 rpm; two-speed motor with electronic brake, V-belt drive",
-         "728: contrast group with grooved rubber roller, tilt and diameter adjustment, pneumatic position compensation with adjustable pressure; steel work rest",
-         "728: column base, extraction hood, electrics in a sealed box with inverter",
-         "143: wire brush Ø9-13/16 × 3-15/16″ (250 × 100 mm); two brush speeds and two speeds of brush-axis rotation",
-         "143: inside and outside of the tube end in one cycle; ends cut at 90° and 45°, bent parts too; entry with adjustable central prism",
+    fam("eurofintec-728", "ef-brush", P_PIPE, EURO,
+        "728 tube brushing machine, Ø3/8″ – 5-7/8″", "728 tube brushing", "728",
+        "A heavy brushing machine for round tube: a Ø11-13/16″ brush on a two-speed, self-braking motor works the tube while a grooved "
+        "rubber contrast roller — tilted to feed it and pneumatically compensated — carries it past, cleaning, satin-finishing or "
+        "polishing tube from Ø3/8″ to Ø5-7/8″, with handwheel adjustment as the brush wears.",
+        "Tube Ø3/8″ – 5-7/8″ · cleaning, satin finishing and polishing",
+        ["Brush Ø11-13/16 × 3-15/16″ (300 × 100 mm), 275 – 825 rpm; two-speed motor with electronic brake, V-belt drive",
+         "Contrast group with grooved rubber roller, tilt and diameter adjustment, pneumatic position compensation with adjustable pressure; steel work rest",
+         "Column base, extraction hood, electrics in a sealed box with inverter",
          VOLT],
-        ["Self-filtering dust extraction (728)", VOLT_OPT],
-        ["ef-728", "ef-143", "ef-143-front", "ef-728-brush", "ef-728-adjust", "ef-728-pneumatic", "ef-728-contrast", "ef-143-brush", "ef-143-45"],
-        spec(T_728_143, {"728": ["Tube Ø3/8″ – 5-7/8″", "—", "Contrast-roller feed", "Brush Ø11-13/16″", "705 lb"],
-                         "143": ["Tube ends Ø13/16″ – 4-3/4″", "—", "Hand-fed", "Wire brush Ø9-13/16″", "816 lb"]}, NOTE_PIPE)),
+        ["Self-filtering dust extraction", VOLT_OPT],
+        ["ef-728", "ef-728-brush", "ef-728-adjust", "ef-728-pneumatic", "ef-728-contrast"],
+        spec(T_728, {"728": ["Tube Ø3/8″ – 5-7/8″", "—", "Contrast-roller feed", "Brush Ø11-13/16″", "705 lb"]}, NOTE_PIPE)),
+    fam("eurofintec-143", "ef-tube-end", P_TUBE_END, EURO,
+        "143 tube end deburring machine — pipe and tube ends deburred inside and outside, Ø13/16″ – 4-3/4″", "143 tube end deburring", "143",
+        "Deburrs the cut ends of stainless tube and profiles inside and outside in one cycle: the tube end goes into an adjustable "
+        "central prism against a wire brush that turns while its own axis rotates, changing direction so every edge is deburred "
+        "evenly — on ends cut at 90° or 45° and on bent parts, round tube Ø13/16″ to Ø4-3/4″ and square 13/16″ to 4-3/4″.",
+        "Tube ends Ø13/16″ – 4-3/4″, round and square · inside and outside in one cycle",
+        ["Wire brush Ø9-13/16 × 3-15/16″ (250 × 100 mm); two brush speeds and two speeds of brush-axis rotation",
+         "Inside and outside of the tube end in one cycle; ends cut at 90° and 45°, bent parts too",
+         "Entry with adjustable central prism",
+         "Round tube Ø13/16″ – 4-3/4″ (20 – 120 mm), square 13/16″ – 4-3/4″",
+         VOLT],
+        [VOLT_OPT],
+        ["ef-143", "ef-143-front", "ef-143-brush", "ef-143-45"],
+        spec(T_143, {"143": ["Tube ends Ø13/16″ – 4-3/4″", "—", "Hand-fed", "Wire brush Ø9-13/16″", "816 lb"]}, NOTE_PIPE)),
 ]
 
 
@@ -783,14 +803,15 @@ VIDEOS = {
                   ("TzeAYCddrUs", "CUB 30 BB brushing and finishing")],
     "gecam-easy-t": [("oIDa5QsHTG0", "EASY T deburring, grinding and polishing")],
     "gecam-gcb": [("8wLm7uOQRnA", "GCB 25 RR cross-belt deburring"), ("8Z8EFZOkpXI", "Double crossed belt on bent plate")],
-    "gecam-135": [("tOxkUm2lGZo", "135 grinding box corners"), ("J6m2o9B1Ka4", "135 on a corner weld seam"),
-                  ("ZzlXT-qjUOc", "135 two-head version"), ("TTCL4SnvtKI", "135 PLUS"), ("VPEpu74z84I", "135 corner seam grinding"),
-                  ("7RM52FGLZag", "135 belt change")],
-    "gecam-131": [("bDsDqFoJ5l4", "131 corner grinder"), ("cnQful7fLsI", "131 with oscillating head"),
-                  ("XSrlMJ_lmME", "131 box weld seam sanding"), ("pRvYJVhLOkE", "131 on a stainless box"),
-                  ("y0gMB7J6F_E", "131 box seam grinding"), ("7sG_9LqdVNM", "131 on a door corner"),
-                  ("eEYp5xXPNZo", "How to adjust and operate the 131")],
-    "gecam-136": [("lXGO65Ghwo0", "136 on an enclosure weld seam"), ("rrpQjvD7sEE", "136 weld seam grinding")],
+    "gecam-135": [("tOxkUm2lGZo", "GECAM 135 grinding box corners"), ("J6m2o9B1Ka4", "GECAM 135 on a corner weld seam"),
+                  ("ZzlXT-qjUOc", "GECAM 135 two-head version"), ("TTCL4SnvtKI", "GECAM 135 PLUS"), ("VPEpu74z84I", "GECAM 135 corner seam grinding"),
+                  ("7RM52FGLZag", "GECAM 135 belt change")],
+    "gecam-131": [("bDsDqFoJ5l4", "GECAM 131 corner grinder"), ("cnQful7fLsI", "GECAM 131 with oscillating head"),
+                  ("XSrlMJ_lmME", "GECAM 131 box weld seam sanding"), ("pRvYJVhLOkE", "GECAM 131 on a stainless box"),
+                  ("y0gMB7J6F_E", "GECAM 131 box seam grinding"), ("7sG_9LqdVNM", "GECAM 131 on a door corner"),
+                  ("eEYp5xXPNZo", "How to adjust and operate the GECAM 131")],
+    "gecam-136": [("lXGO65Ghwo0", "GECAM 136 on an enclosure weld seam"), ("rrpQjvD7sEE", "GECAM 136 weld seam grinding"),
+                  ("1MDSGr0PKgg", "GECAM 136 oscillating head on a box seam")],      # NovoTech channel short, added Nov 7 2026
     "gecam-corner-special": [("J5LT42sqaRw", "Six-head corner grinder"), ("QLv9H4YqNoc", "Automatic weld seam grinder for electrical panels"),
                              ("CK-pAsAkwrg", "Weld seam grinder for electrical panels"), ("YH0_0xBvYb4", "Special weld seam corner grinder")],
     "gecam-cws": [("31eDB7VrF6I", "CWS 200 / 300 one-axis corner welding"), ("x_qoKWRnEwA", "Two-axis corner welding"),
@@ -804,7 +825,8 @@ VIDEOS = {
     "eurofintec-128dl": [("f3f7-lNiEH0", "128 DL dry"), ("I27PlnO8OI8", "128 DL twin, wet"),
                          ("_jHJUG1jRWE", "128 DL centreless pipe sanders")],
     "eurofintec-228": [("RF_dHAi0IEE", "228 — pipe up to Ø15-3/4″")],
-    "eurofintec-728-143": [("pCPlP3ZAuyw", "728 pipe polishing and brushing"), ("3-jRbQS-rs4", "143 tube-end deburring")],
+    "eurofintec-728": [("pCPlP3ZAuyw", "728 pipe polishing and brushing")],
+    "eurofintec-143": [("3-jRbQS-rs4", "143 tube-end deburring")],
 }
 for _f in FAMILIES:
     _f["videos"] = vids(*VIDEOS.get(_f["id"], ()))

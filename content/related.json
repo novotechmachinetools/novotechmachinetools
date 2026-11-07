@@ -67,7 +67,8 @@
   "h-frame-hydraulic-press": "H-frame hydraulic presses",
   "c-frame-hydraulic-press": "C-frame hydraulic presses",
   "hydraulic-straightening-press": "Hydraulic straightening presses",
-  "riveting-machine": "Orbital riveting machines"
+  "riveting-machine": "Orbital riveting machines",
+  "tube-end-deburring-machine": "Tube end deburring machines"
  },
  "pages": {
   "press-brake": [
@@ -468,6 +469,7 @@
    "pipe-sanding-polishing-machines"
   ],
   "pipe-sanding-polishing-machines": [
+   "tube-end-deburring-machine",
    "belt-grinder",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "pipe-benders",
@@ -697,6 +699,13 @@
    "belt-grinder",
    "drill-press",
    "band-saw"
+  ],
+  "tube-end-deburring-machine": [
+   "pipe-sanding-polishing-machines",
+   "pipe-notcher",
+   "tube-end-forming-machines",
+   "circular-cold-saws",
+   "belt-grinder"
   ]
  }
 }

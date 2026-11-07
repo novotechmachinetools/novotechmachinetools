@@ -66747,19 +66747,25 @@
   }
  },
  "gc-135": {
-  "alt": "Gecam 135 automatic corner grinder",
+  "alt": "GECAM 135 automatic corner grinder",
   "variants": [
+   {
+    "w": 1200,
+    "h": 955,
+    "file": "img/gecam/gc-135-1200.webp",
+    "bytes": 59200
+   },
    {
     "w": 800,
     "h": 637,
     "file": "img/gecam/gc-135-800.webp",
-    "bytes": 33384
+    "bytes": 38560
    },
    {
     "w": 480,
     "h": 382,
     "file": "img/gecam/gc-135-480.webp",
-    "bytes": 21568
+    "bytes": 20916
    }
   ],
   "alpha": true,
@@ -66767,12 +66773,12 @@
    "w": 160,
    "h": 127,
    "file": "img/gecam/gc-135-thumb.webp",
-   "bytes": 5402
+   "bytes": 5424
   },
   "cut": "birefnet"
  },
  "gc-135-2h": {
-  "alt": "135 two-head version",
+  "alt": "GECAM 135 two-head version",
   "variants": [
    {
     "w": 800,
@@ -66797,7 +66803,7 @@
   "cut": "birefnet"
  },
  "gc-135-head": {
-  "alt": "135 grinding head on its carriage",
+  "alt": "GECAM 135 grinding head on its carriage",
   "variants": [
    {
     "w": 800,
@@ -66824,16 +66830,22 @@
   "alt": "Pad and contact roller pressing the belt on the weld",
   "variants": [
    {
+    "w": 1200,
+    "h": 798,
+    "file": "img/gecam/gc-135-pad-1200.webp",
+    "bytes": 54784
+   },
+   {
     "w": 800,
     "h": 532,
     "file": "img/gecam/gc-135-pad-800.webp",
-    "bytes": 35310
+    "bytes": 34188
    },
    {
     "w": 480,
     "h": 319,
     "file": "img/gecam/gc-135-pad-480.webp",
-    "bytes": 18632
+    "bytes": 18258
    }
   ],
   "alpha": false,
@@ -66841,23 +66853,29 @@
    "w": 160,
    "h": 106,
    "file": "img/gecam/gc-135-pad-thumb.webp",
-   "bytes": 3958
+   "bytes": 3952
   }
  },
  "gc-135-guides": {
   "alt": "Two grinding heads over the part support with plastic slides",
   "variants": [
    {
+    "w": 1200,
+    "h": 790,
+    "file": "img/gecam/gc-135-guides-1200.webp",
+    "bytes": 45210
+   },
+   {
     "w": 800,
     "h": 527,
     "file": "img/gecam/gc-135-guides-800.webp",
-    "bytes": 26820
+    "bytes": 27050
    },
    {
     "w": 480,
     "h": 316,
     "file": "img/gecam/gc-135-guides-480.webp",
-    "bytes": 14602
+    "bytes": 14650
    }
   ],
   "alpha": false,
@@ -66865,7 +66883,7 @@
    "w": 160,
    "h": 105,
    "file": "img/gecam/gc-135-guides-thumb.webp",
-   "bytes": 3302
+   "bytes": 3278
   }
  },
  "gc-135-touch": {
@@ -66893,7 +66911,7 @@
   }
  },
  "gc-135-sample": {
-  "alt": "Box edge after weld grinding on the 135",
+  "alt": "Box edge after weld grinding on the GECAM 135",
   "variants": [
    {
     "w": 800,
@@ -66917,7 +66935,7 @@
   }
  },
  "gc-136": {
-  "alt": "Gecam 136 corner grinder",
+  "alt": "GECAM 136 corner grinder",
   "variants": [
    {
     "w": 800,
@@ -66942,13 +66960,19 @@
   "cut": "birefnet"
  },
  "gc-131": {
-  "alt": "Gecam 131 corner grinder",
+  "alt": "GECAM 131 corner grinder",
   "variants": [
+   {
+    "w": 718,
+    "h": 1116,
+    "file": "img/gecam/gc-131-718.webp",
+    "bytes": 50070
+   },
    {
     "w": 480,
     "h": 746,
     "file": "img/gecam/gc-131-480.webp",
-    "bytes": 35304
+    "bytes": 35886
    }
   ],
   "alpha": true,
@@ -66956,12 +66980,12 @@
    "w": 103,
    "h": 160,
    "file": "img/gecam/gc-131-thumb.webp",
-   "bytes": 5380
+   "bytes": 5412
   },
   "cut": "birefnet"
  },
  "gc-136-box": {
-  "alt": "136 grinding the welded corner of a box",
+  "alt": "GECAM 136 grinding the welded corner of a box",
   "variants": [
    {
     "w": 800,
@@ -66986,7 +67010,7 @@
   "cut": "birefnet"
  },
  "gc-136-head": {
-  "alt": "136 belt head with oscillating fork",
+  "alt": "GECAM 136 belt head with oscillating fork",
   "variants": [
    {
     "w": 800,
@@ -67010,8 +67034,14 @@
   }
  },
  "gc-131-table": {
-  "alt": "131 work table with squaring guides",
+  "alt": "GECAM 131 work table with squaring guides",
   "variants": [
+   {
+    "w": 794,
+    "h": 532,
+    "file": "img/gecam/gc-131-table-794.webp",
+    "bytes": 25494
+   },
    {
     "w": 480,
     "h": 322,
@@ -67028,19 +67058,25 @@
   }
  },
  "gc-131-head": {
-  "alt": "131 belt fork at a box corner",
+  "alt": "GECAM 131 belt fork at a box corner",
   "variants": [
+   {
+    "w": 1200,
+    "h": 798,
+    "file": "img/gecam/gc-131-head-1200.webp",
+    "bytes": 62596
+   },
    {
     "w": 800,
     "h": 532,
     "file": "img/gecam/gc-131-head-800.webp",
-    "bytes": 35452
+    "bytes": 35572
    },
    {
     "w": 480,
     "h": 319,
     "file": "img/gecam/gc-131-head-480.webp",
-    "bytes": 17374
+    "bytes": 17324
    }
   ],
   "alpha": false,
@@ -67048,7 +67084,7 @@
    "w": 160,
    "h": 106,
    "file": "img/gecam/gc-131-head-thumb.webp",
-   "bytes": 3592
+   "bytes": 3570
   }
  },
  "gc-box-corner": {
@@ -116842,5 +116878,1242 @@
    "file": "img/ttmc-more/tm-bsm3150-spring-thumb.webp",
    "bytes": 1098
   }
+ },
+ "dt-hb-light": {
+  "alt": "Light welding positioner with its control box, 10 \u2013 100 kg worktable load",
+  "variants": [
+   {
+    "w": 480,
+    "h": 467,
+    "file": "img/datang/dt-hb-light-480.webp",
+    "bytes": 39572
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 156,
+   "file": "img/datang/dt-hb-light-thumb.webp",
+   "bytes": 9202
+  },
+  "cut": "birefnet"
+ },
+ "dt-hb": {
+  "alt": "HB welding positioner \u2014 tilting worktable with T-slots, rotation gearbox and control box",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1050,
+    "file": "img/datang/dt-hb-1200.webp",
+    "bytes": 117656
+   },
+   {
+    "w": 800,
+    "h": 700,
+    "file": "img/datang/dt-hb-800.webp",
+    "bytes": 69142
+   },
+   {
+    "w": 480,
+    "h": 420,
+    "file": "img/datang/dt-hb-480.webp",
+    "bytes": 34792
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 140,
+   "file": "img/datang/dt-hb-thumb.webp",
+   "bytes": 7648
+  },
+  "cut": "birefnet"
+ },
+ "dt-hb-site": {
+  "alt": "HB welding positioner with geared tilting and the pendant control box",
+  "variants": [
+   {
+    "w": 572,
+    "h": 490,
+    "file": "img/datang/dt-hb-site-572.webp",
+    "bytes": 41968
+   },
+   {
+    "w": 480,
+    "h": 411,
+    "file": "img/datang/dt-hb-site-480.webp",
+    "bytes": 35884
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 137,
+   "file": "img/datang/dt-hb-site-thumb.webp",
+   "bytes": 7674
+  },
+  "cut": "birefnet"
+ },
+ "dt-hb-2": {
+  "alt": "HB welding positioner \u2014 the tilting sector gear and the worktable",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1087,
+    "file": "img/datang/dt-hb-2-1200.webp",
+    "bytes": 100160
+   },
+   {
+    "w": 800,
+    "h": 725,
+    "file": "img/datang/dt-hb-2-800.webp",
+    "bytes": 60836
+   },
+   {
+    "w": 480,
+    "h": 435,
+    "file": "img/datang/dt-hb-2-480.webp",
+    "bytes": 31384
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 145,
+   "file": "img/datang/dt-hb-2-thumb.webp",
+   "bytes": 7742
+  },
+  "cut": "birefnet"
+ },
+ "dt-hb-big": {
+  "alt": "Heavy HB welding positioners in final assembly",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/datang/dt-hb-big-1200.webp",
+    "bytes": 106762
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/datang/dt-hb-big-800.webp",
+    "bytes": 55844
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/datang/dt-hb-big-480.webp",
+    "bytes": 26224
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/datang/dt-hb-big-thumb.webp",
+   "bytes": 4348
+  }
+ },
+ "dt-hbt": {
+  "alt": "HBT rotary welding table \u2014 a horizontal turntable with VFD speed control",
+  "variants": [
+   {
+    "w": 480,
+    "h": 373,
+    "file": "img/datang/dt-hbt-480.webp",
+    "bytes": 28538
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 124,
+   "file": "img/datang/dt-hbt-thumb.webp",
+   "bytes": 7042
+  },
+  "cut": "birefnet"
+ },
+ "dt-hbj": {
+  "alt": "HBJ lift welding positioner \u2014 the worktable rises, tilts and turns",
+  "variants": [
+   {
+    "w": 480,
+    "h": 480,
+    "file": "img/datang/dt-hbj-480.webp",
+    "bytes": 41964
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 160,
+   "file": "img/datang/dt-hbj-thumb.webp",
+   "bytes": 9830
+  },
+  "cut": "birefnet"
+ },
+ "dt-headstock": {
+  "alt": "Headstock welding positioner with a vertical faceplate",
+  "variants": [
+   {
+    "w": 389,
+    "h": 518,
+    "file": "img/datang/dt-headstock-389.webp",
+    "bytes": 15312
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/datang/dt-headstock-thumb.webp",
+   "bytes": 4636
+  },
+  "cut": "birefnet"
+ },
+ "dt-head-tail": {
+  "alt": "Headstock and tailstock lifting positioner pair",
+  "variants": [
+   {
+    "w": 435,
+    "h": 504,
+    "file": "img/datang/dt-head-tail-435.webp",
+    "bytes": 27132
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 138,
+   "h": 160,
+   "file": "img/datang/dt-head-tail-thumb.webp",
+   "bytes": 6966
+  },
+  "cut": "birefnet"
+ },
+ "dt-head-tail-fixed": {
+  "alt": "Fixed-height headstock and tailstock positioners",
+  "variants": [
+   {
+    "w": 562,
+    "h": 437,
+    "file": "img/datang/dt-head-tail-fixed-562.webp",
+    "bytes": 23486
+   },
+   {
+    "w": 480,
+    "h": 373,
+    "file": "img/datang/dt-head-tail-fixed-480.webp",
+    "bytes": 22190
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 124,
+   "file": "img/datang/dt-head-tail-fixed-thumb.webp",
+   "bytes": 6044
+  },
+  "cut": "birefnet"
+ },
+ "dt-l-type": {
+  "alt": "L-type welding positioner \u2014 motor-tilted arm and a turning worktable",
+  "variants": [
+   {
+    "w": 571,
+    "h": 479,
+    "file": "img/datang/dt-l-type-571.webp",
+    "bytes": 28970
+   },
+   {
+    "w": 480,
+    "h": 403,
+    "file": "img/datang/dt-l-type-480.webp",
+    "bytes": 26856
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 134,
+   "file": "img/datang/dt-l-type-thumb.webp",
+   "bytes": 6574
+  },
+  "cut": "birefnet"
+ },
+ "dt-hydraulic": {
+  "alt": "Three-axis hydraulic welding positioner \u2014 lift, tilt and rotation",
+  "variants": [
+   {
+    "w": 424,
+    "h": 547,
+    "file": "img/datang/dt-hydraulic-424.webp",
+    "bytes": 28912
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 124,
+   "h": 160,
+   "file": "img/datang/dt-hydraulic-thumb.webp",
+   "bytes": 6496
+  },
+  "cut": "birefnet"
+ },
+ "dt-special": {
+  "alt": "Special welding positioner with a three-jaw welding chuck",
+  "variants": [
+   {
+    "w": 471,
+    "h": 517,
+    "file": "img/datang/dt-special-471.webp",
+    "bytes": 32762
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 146,
+   "h": 160,
+   "file": "img/datang/dt-special-thumb.webp",
+   "bytes": 7528
+  },
+  "cut": "birefnet"
+ },
+ "dt-dzg-light": {
+  "alt": "Light welding turning rolls \u2014 one drive roll, one idler roll and a foot switch",
+  "variants": [
+   {
+    "w": 570,
+    "h": 432,
+    "file": "img/datang/dt-dzg-light-570.webp",
+    "bytes": 42948
+   },
+   {
+    "w": 480,
+    "h": 364,
+    "file": "img/datang/dt-dzg-light-480.webp",
+    "bytes": 38834
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 121,
+   "file": "img/datang/dt-dzg-light-thumb.webp",
+   "bytes": 8510
+  },
+  "cut": "birefnet"
+ },
+ "dt-dzg": {
+  "alt": "DZG self-aligning welding turning rolls \u2014 the wheel pairs swing to the vessel diameter",
+  "variants": [
+   {
+    "w": 587,
+    "h": 443,
+    "file": "img/datang/dt-dzg-587.webp",
+    "bytes": 63576
+   },
+   {
+    "w": 480,
+    "h": 362,
+    "file": "img/datang/dt-dzg-480.webp",
+    "bytes": 52510
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 121,
+   "file": "img/datang/dt-dzg-thumb.webp",
+   "bytes": 9666
+  },
+  "cut": "birefnet"
+ },
+ "dt-dzg-2": {
+  "alt": "DZG self-aligning turning rolls with their control boxes",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/datang/dt-dzg-2-1200.webp",
+    "bytes": 146324
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/datang/dt-dzg-2-800.webp",
+    "bytes": 77566
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/datang/dt-dzg-2-480.webp",
+    "bytes": 35234
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/datang/dt-dzg-2-thumb.webp",
+   "bytes": 5580
+  }
+ },
+ "dt-dkg": {
+  "alt": "DKG bolt-adjustable welding turning rolls \u2014 drive and idler sections",
+  "variants": [
+   {
+    "w": 610,
+    "h": 483,
+    "file": "img/datang/dt-dkg-610.webp",
+    "bytes": 37476
+   },
+   {
+    "w": 480,
+    "h": 380,
+    "file": "img/datang/dt-dkg-480.webp",
+    "bytes": 30902
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 127,
+   "file": "img/datang/dt-dkg-thumb.webp",
+   "bytes": 7414
+  },
+  "cut": "birefnet"
+ },
+ "dt-dkg-2": {
+  "alt": "DKG bolt-adjustable turning rolls, drive section",
+  "variants": [
+   {
+    "w": 800,
+    "h": 497,
+    "file": "img/datang/dt-dkg-2-800.webp",
+    "bytes": 35580
+   },
+   {
+    "w": 480,
+    "h": 298,
+    "file": "img/datang/dt-dkg-2-480.webp",
+    "bytes": 16662
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 99,
+   "file": "img/datang/dt-dkg-2-thumb.webp",
+   "bytes": 2926
+  }
+ },
+ "dt-dsk": {
+  "alt": "DSK lead-screw-adjustable welding turning rolls with hand wheels",
+  "variants": [
+   {
+    "w": 624,
+    "h": 483,
+    "file": "img/datang/dt-dsk-624.webp",
+    "bytes": 46012
+   },
+   {
+    "w": 480,
+    "h": 372,
+    "file": "img/datang/dt-dsk-480.webp",
+    "bytes": 36628
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 124,
+   "file": "img/datang/dt-dsk-thumb.webp",
+   "bytes": 7808
+  },
+  "cut": "birefnet"
+ },
+ "dt-dsk-2": {
+  "alt": "DSK lead-screw-adjustable turning rolls \u2014 the roll pairs move on the screw",
+  "variants": [
+   {
+    "w": 600,
+    "h": 448,
+    "file": "img/datang/dt-dsk-2-600.webp",
+    "bytes": 48798
+   },
+   {
+    "w": 480,
+    "h": 358,
+    "file": "img/datang/dt-dsk-2-480.webp",
+    "bytes": 38898
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/datang/dt-dsk-2-thumb.webp",
+   "bytes": 8372
+  },
+  "cut": "birefnet"
+ },
+ "dt-gglj": {
+  "alt": "GGLJ pinch-type pipe rotator turning an elbow for flange and segment welding",
+  "variants": [
+   {
+    "w": 451,
+    "h": 561,
+    "file": "img/datang/dt-gglj-451.webp",
+    "bytes": 38530
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 129,
+   "h": 160,
+   "file": "img/datang/dt-gglj-thumb.webp",
+   "bytes": 7672
+  },
+  "cut": "birefnet"
+ },
+ "dt-fitup": {
+  "alt": "Hydraulic fit-up turning rolls \u2014 the lifting rolls align two shell sections",
+  "variants": [
+   {
+    "w": 584,
+    "h": 472,
+    "file": "img/datang/dt-fitup-584.webp",
+    "bytes": 31924
+   },
+   {
+    "w": 480,
+    "h": 388,
+    "file": "img/datang/dt-fitup-480.webp",
+    "bytes": 27612
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 129,
+   "file": "img/datang/dt-fitup-thumb.webp",
+   "bytes": 6216
+  },
+  "cut": "birefnet"
+ },
+ "dt-dlh-small": {
+  "alt": "Small column and boom welding manipulator",
+  "variants": [
+   {
+    "w": 744,
+    "h": 660,
+    "file": "img/datang/dt-dlh-small-744.webp",
+    "bytes": 40328
+   },
+   {
+    "w": 480,
+    "h": 426,
+    "file": "img/datang/dt-dlh-small-480.webp",
+    "bytes": 26844
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 142,
+   "file": "img/datang/dt-dlh-small-thumb.webp",
+   "bytes": 6466
+  },
+  "cut": "birefnet"
+ },
+ "dt-dlh-small-2": {
+  "alt": "Small column and boom manipulator with a welding head",
+  "variants": [
+   {
+    "w": 960,
+    "h": 720,
+    "file": "img/datang/dt-dlh-small-2-960.webp",
+    "bytes": 75378
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/datang/dt-dlh-small-2-800.webp",
+    "bytes": 57780
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/datang/dt-dlh-small-2-480.webp",
+    "bytes": 28340
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/datang/dt-dlh-small-2-thumb.webp",
+   "bytes": 4180
+  }
+ },
+ "dt-dlh-medium": {
+  "alt": "Medium column and boom welding manipulator with flux recovery",
+  "variants": [
+   {
+    "w": 552,
+    "h": 453,
+    "file": "img/datang/dt-dlh-medium-552.webp",
+    "bytes": 30718
+   },
+   {
+    "w": 480,
+    "h": 394,
+    "file": "img/datang/dt-dlh-medium-480.webp",
+    "bytes": 29242
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 131,
+   "file": "img/datang/dt-dlh-medium-thumb.webp",
+   "bytes": 6974
+  },
+  "cut": "birefnet"
+ },
+ "dt-dlh-heavy": {
+  "alt": "Heavy column and boom welding manipulator on a travelling carriage",
+  "variants": [
+   {
+    "w": 564,
+    "h": 535,
+    "file": "img/datang/dt-dlh-heavy-564.webp",
+    "bytes": 41066
+   },
+   {
+    "w": 480,
+    "h": 455,
+    "file": "img/datang/dt-dlh-heavy-480.webp",
+    "bytes": 37758
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 152,
+   "file": "img/datang/dt-dlh-heavy-thumb.webp",
+   "bytes": 8132
+  },
+  "cut": "birefnet"
+ },
+ "gc-131-showroom": {
+  "alt": "GECAM 131 with its control panel, work table and dust extraction",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/gecam/gc-131-showroom-1200.webp",
+    "bytes": 109282
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/gecam/gc-131-showroom-800.webp",
+    "bytes": 58314
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/gecam/gc-131-showroom-480.webp",
+    "bytes": 27034
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/gecam/gc-131-showroom-thumb.webp",
+   "bytes": 3162
+  }
+ },
+ "gc-131-showroom-2": {
+  "alt": "GECAM 131 work table and belt housing",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/gecam/gc-131-showroom-2-1200.webp",
+    "bytes": 115754
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/gecam/gc-131-showroom-2-800.webp",
+    "bytes": 62864
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/gecam/gc-131-showroom-2-480.webp",
+    "bytes": 29670
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/gecam/gc-131-showroom-2-thumb.webp",
+   "bytes": 3450
+  }
+ },
+ "gc-131-belt": {
+  "alt": "GECAM 131 abrasive belt between the guide plates",
+  "variants": [
+   {
+    "w": 1128,
+    "h": 750,
+    "file": "img/gecam/gc-131-belt-1128.webp",
+    "bytes": 37960
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-131-belt-800.webp",
+    "bytes": 23820
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-131-belt-480.webp",
+    "bytes": 12740
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-131-belt-thumb.webp",
+   "bytes": 2840
+  }
+ },
+ "gc-131-dust": {
+  "alt": "GECAM 131 with its dust extraction fan",
+  "variants": [
+   {
+    "w": 682,
+    "h": 1026,
+    "file": "img/gecam/gc-131-dust-682.webp",
+    "bytes": 53258
+   },
+   {
+    "w": 480,
+    "h": 722,
+    "file": "img/gecam/gc-131-dust-480.webp",
+    "bytes": 34198
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 106,
+   "h": 160,
+   "file": "img/gecam/gc-131-dust-thumb.webp",
+   "bytes": 3994
+  }
+ },
+ "gc-131-panel": {
+  "alt": "GECAM 131 control panel",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/gecam/gc-131-panel-1200.webp",
+    "bytes": 75048
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/gecam/gc-131-panel-800.webp",
+    "bytes": 44792
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/gecam/gc-131-panel-480.webp",
+    "bytes": 22766
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/gecam/gc-131-panel-thumb.webp",
+   "bytes": 3274
+  }
+ },
+ "gc-131-extractor": {
+  "alt": "Dust extraction fan on the GECAM 131",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 900,
+    "file": "img/gecam/gc-131-extractor-1200.webp",
+    "bytes": 99374
+   },
+   {
+    "w": 800,
+    "h": 600,
+    "file": "img/gecam/gc-131-extractor-800.webp",
+    "bytes": 53840
+   },
+   {
+    "w": 480,
+    "h": 360,
+    "file": "img/gecam/gc-131-extractor-480.webp",
+    "bytes": 25234
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 120,
+   "file": "img/gecam/gc-131-extractor-thumb.webp",
+   "bytes": 4050
+  }
+ },
+ "gc-131-grinding": {
+  "alt": "GECAM 131 grinding the corner weld of a steel box",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 612,
+    "file": "img/gecam/gc-131-grinding-1200.webp",
+    "bytes": 40062
+   },
+   {
+    "w": 800,
+    "h": 408,
+    "file": "img/gecam/gc-131-grinding-800.webp",
+    "bytes": 25966
+   },
+   {
+    "w": 480,
+    "h": 245,
+    "file": "img/gecam/gc-131-grinding-480.webp",
+    "bytes": 14696
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 82,
+   "file": "img/gecam/gc-131-grinding-thumb.webp",
+   "bytes": 3128
+  }
+ },
+ "gc-136-studio": {
+  "alt": "GECAM 136 with a box on the work table",
+  "variants": [
+   {
+    "w": 686,
+    "h": 1013,
+    "file": "img/gecam/gc-136-studio-686.webp",
+    "bytes": 57010
+   },
+   {
+    "w": 480,
+    "h": 709,
+    "file": "img/gecam/gc-136-studio-480.webp",
+    "bytes": 39458
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 108,
+   "h": 160,
+   "file": "img/gecam/gc-136-studio-thumb.webp",
+   "bytes": 5794
+  },
+  "cut": "birefnet"
+ },
+ "gc-136-side": {
+  "alt": "GECAM 136 inclined belt head, dust hood and drive motor",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/gecam/gc-136-side-1200.webp",
+    "bytes": 116324
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/gecam/gc-136-side-800.webp",
+    "bytes": 69492
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/gecam/gc-136-side-480.webp",
+    "bytes": 35226
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/gecam/gc-136-side-thumb.webp",
+   "bytes": 4690
+  }
+ },
+ "gc-136-top": {
+  "alt": "GECAM 136 work table, part stop and dust hood",
+  "variants": [
+   {
+    "w": 720,
+    "h": 808,
+    "file": "img/gecam/gc-136-top-720.webp",
+    "bytes": 51720
+   },
+   {
+    "w": 480,
+    "h": 539,
+    "file": "img/gecam/gc-136-top-480.webp",
+    "bytes": 29410
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 143,
+   "h": 160,
+   "file": "img/gecam/gc-136-top-thumb.webp",
+   "bytes": 4336
+  }
+ },
+ "gc-136-table": {
+  "alt": "GECAM 136 work table with guides and hand wheel",
+  "variants": [
+   {
+    "w": 1090,
+    "h": 814,
+    "file": "img/gecam/gc-136-table-1090.webp",
+    "bytes": 23220
+   },
+   {
+    "w": 800,
+    "h": 597,
+    "file": "img/gecam/gc-136-table-800.webp",
+    "bytes": 15684
+   },
+   {
+    "w": 480,
+    "h": 358,
+    "file": "img/gecam/gc-136-table-480.webp",
+    "bytes": 8558
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 119,
+   "file": "img/gecam/gc-136-table-thumb.webp",
+   "bytes": 2000
+  }
+ },
+ "gc-136-guide": {
+  "alt": "Abrasive belt and part guide of the GECAM 136",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1600,
+    "file": "img/gecam/gc-136-guide-1200.webp",
+    "bytes": 44906
+   },
+   {
+    "w": 800,
+    "h": 1067,
+    "file": "img/gecam/gc-136-guide-800.webp",
+    "bytes": 25438
+   },
+   {
+    "w": 480,
+    "h": 640,
+    "file": "img/gecam/gc-136-guide-480.webp",
+    "bytes": 13198
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 120,
+   "h": 160,
+   "file": "img/gecam/gc-136-guide-thumb.webp",
+   "bytes": 1942
+  }
+ },
+ "gc-136-belt": {
+  "alt": "GECAM 136 belt under the work table edge",
+  "variants": [
+   {
+    "w": 976,
+    "h": 814,
+    "file": "img/gecam/gc-136-belt-976.webp",
+    "bytes": 20696
+   },
+   {
+    "w": 800,
+    "h": 667,
+    "file": "img/gecam/gc-136-belt-800.webp",
+    "bytes": 16382
+   },
+   {
+    "w": 480,
+    "h": 400,
+    "file": "img/gecam/gc-136-belt-480.webp",
+    "bytes": 9116
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 133,
+   "file": "img/gecam/gc-136-belt-thumb.webp",
+   "bytes": 2166
+  }
+ },
+ "gc-136-grinding": {
+  "alt": "GECAM 136 grinding the weld of a steel box",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 611,
+    "file": "img/gecam/gc-136-grinding-1200.webp",
+    "bytes": 42918
+   },
+   {
+    "w": 800,
+    "h": 407,
+    "file": "img/gecam/gc-136-grinding-800.webp",
+    "bytes": 28028
+   },
+   {
+    "w": 480,
+    "h": 244,
+    "file": "img/gecam/gc-136-grinding-480.webp",
+    "bytes": 15412
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 81,
+   "file": "img/gecam/gc-136-grinding-thumb.webp",
+   "bytes": 3140
+  }
+ },
+ "gc-136-corner": {
+  "alt": "Box corner radiused on the GECAM 136",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 798,
+    "file": "img/gecam/gc-136-corner-1200.webp",
+    "bytes": 28946
+   },
+   {
+    "w": 800,
+    "h": 532,
+    "file": "img/gecam/gc-136-corner-800.webp",
+    "bytes": 16142
+   },
+   {
+    "w": 480,
+    "h": 319,
+    "file": "img/gecam/gc-136-corner-480.webp",
+    "bytes": 7772
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 106,
+   "file": "img/gecam/gc-136-corner-thumb.webp",
+   "bytes": 1532
+  }
+ },
+ "gc-136-before-after": {
+  "alt": "Welded box corner before and after grinding",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 504,
+    "file": "img/gecam/gc-136-before-after-1200.webp",
+    "bytes": 20944
+   },
+   {
+    "w": 800,
+    "h": 336,
+    "file": "img/gecam/gc-136-before-after-800.webp",
+    "bytes": 12948
+   },
+   {
+    "w": 480,
+    "h": 202,
+    "file": "img/gecam/gc-136-before-after-480.webp",
+    "bytes": 6966
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 67,
+   "file": "img/gecam/gc-136-before-after-thumb.webp",
+   "bytes": 1388
+  }
+ },
+ "video-1MDSGr0PKgg": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-1MDSGr0PKgg-1200.webp",
+    "bytes": 16544
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-1MDSGr0PKgg-800.webp",
+    "bytes": 9882
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-1MDSGr0PKgg-480.webp",
+    "bytes": 5224
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-1MDSGr0PKgg-thumb.webp",
+   "bytes": 1596
+  }
+ },
+ "video-wbs6f9N3mNQ": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-wbs6f9N3mNQ-1200.webp",
+    "bytes": 32962
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-wbs6f9N3mNQ-800.webp",
+    "bytes": 21206
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-wbs6f9N3mNQ-480.webp",
+    "bytes": 11684
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-wbs6f9N3mNQ-thumb.webp",
+   "bytes": 2992
+  }
+ },
+ "video-U1FdmwPbLGQ": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-U1FdmwPbLGQ-1200.webp",
+    "bytes": 72244
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-U1FdmwPbLGQ-800.webp",
+    "bytes": 45306
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-U1FdmwPbLGQ-480.webp",
+    "bytes": 23360
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-U1FdmwPbLGQ-thumb.webp",
+   "bytes": 4994
+  }
+ },
+ "tm-yq-h": {
+  "alt": "YQ horizontal right-angle grinding machine with its control cabinet and foot pedal",
+  "variants": [
+   {
+    "w": 677,
+    "h": 410,
+    "file": "img/ttmc-more/tm-yq-h-677.webp",
+    "bytes": 37450
+   },
+   {
+    "w": 480,
+    "h": 291,
+    "file": "img/ttmc-more/tm-yq-h-480.webp",
+    "bytes": 27056
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 97,
+   "file": "img/ttmc-more/tm-yq-h-thumb.webp",
+   "bytes": 6354
+  },
+  "cut": "birefnet"
+ },
+ "tm-yq-v": {
+  "alt": "YQ-450 vertical right-corner grinding and polishing machine",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1102,
+    "file": "img/ttmc-more/tm-yq-v-1200.webp",
+    "bytes": 123210
+   },
+   {
+    "w": 800,
+    "h": 735,
+    "file": "img/ttmc-more/tm-yq-v-800.webp",
+    "bytes": 71452
+   },
+   {
+    "w": 480,
+    "h": 441,
+    "file": "img/ttmc-more/tm-yq-v-480.webp",
+    "bytes": 38320
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 147,
+   "file": "img/ttmc-more/tm-yq-v-thumb.webp",
+   "bytes": 8972
+  },
+  "cut": "birefnet"
  }
 }

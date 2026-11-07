@@ -23,6 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DST = os.path.join(ROOT, "tools", "src-images", "gecam")
 W, CAT, BOX = "/home/claude/gecam/img/", "/home/claude/gecam/catimg/", "/home/claude/gecam/boximg/"
+OWN = "/home/claude/gecam/owner/"     # photos the owner sent (Nov 7 2026), turned upright from their EXIF orientation
 MAX_SIDE = 2600
 
 
@@ -135,20 +136,37 @@ PHOTOS = {
     "gc-gcb-brush": P(W + "spazzola.jpg", "Single independent brush (T group) for edge rounding"),
     "gc-gcb-vacuum": P(W + "DSC_0192.jpg", "Suction-cup manipulator for shaped parts (optional)"),
     # ---- 135 automatic corner grinder -------------------------------------------------------------------------------------
-    "gc-135": B(W + "135.jpg", "Gecam 135 automatic corner grinder"),
-    "gc-135-2h": B(W + "135_2T.jpg", "135 two-head version"),
-    "gc-135-head": P(W + "testa-135.jpg", "135 grinding head on its carriage"),
-    "gc-135-pad": P(W + "pattino.jpg", "Pad and contact roller pressing the belt on the weld"),
-    "gc-135-guides": P(W + "DSC_0089.jpg", "Two grinding heads over the part support with plastic slides"),
+    "gc-135": B(OWN + "135-hd.jpg", "GECAM 135 automatic corner grinder"),          # the owner's larger copies (Nov 7 2026)
+    "gc-135-2h": B(W + "135_2T.jpg", "GECAM 135 two-head version"),
+    "gc-135-head": P(W + "testa-135.jpg", "GECAM 135 grinding head on its carriage"),
+    "gc-135-pad": P(OWN + "135-pad-hd.jpg", "Pad and contact roller pressing the belt on the weld"),
+    "gc-135-guides": P(OWN + "135-guides-hd.jpg", "Two grinding heads over the part support with plastic slides"),
     "gc-135-touch": P(W + "DSC_0095.jpg", "Touch-screen control (optional)"),
-    "gc-135-sample": P(W + "campione-135.jpg", "Box edge after weld grinding on the 135"),
+    "gc-135-sample": P(W + "campione-135.jpg", "Box edge after weld grinding on the GECAM 135"),
     # ---- 131 · 136 corner grinders ----------------------------------------------------------------------------------------
-    "gc-136": B(W + "136.jpg", "Gecam 136 corner grinder"),
-    "gc-131": B(W + "131.jpg", "Gecam 131 corner grinder", up=True),
-    "gc-136-box": B(W + "136-con-scatola.jpg", "136 grinding the welded corner of a box"),
-    "gc-136-head": P(W + "testa.jpg", "136 belt head with oscillating fork"),
-    "gc-131-table": P(W + "131-piano-guide.jpg", "131 work table with squaring guides"),
-    "gc-131-head": P(W + "particolare-131.jpg", "131 belt fork at a box corner"),
+    "gc-136": B(W + "136.jpg", "GECAM 136 corner grinder"),
+    "gc-131": B(OWN + "131-hd.jpg", "GECAM 131 corner grinder", up=True),
+    "gc-136-box": B(W + "136-con-scatola.jpg", "GECAM 136 grinding the welded corner of a box"),
+    "gc-136-head": P(W + "testa.jpg", "GECAM 136 belt head with oscillating fork"),
+    "gc-131-table": P(W + "131-piano-guide.jpg", "GECAM 131 work table with squaring guides"),
+    "gc-131-head": P(OWN + "131-head-hd.jpg", "GECAM 131 belt fork at a box corner"),
+    # the owner's photos (Nov 7 2026)
+    "gc-131-showroom": P(OWN + "131-showroom.jpg", "GECAM 131 with its control panel, work table and dust extraction"),
+    "gc-131-showroom-2": P(OWN + "131-showroom-2.jpg", "GECAM 131 work table and belt housing"),
+    "gc-131-belt": P(OWN + "131-belt.jpg", "GECAM 131 abrasive belt between the guide plates"),
+    "gc-131-dust": P(OWN + "131-dust-collector.jpg", "GECAM 131 with its dust extraction fan", up=True),
+    "gc-131-panel": P(OWN + "131-panel.jpg", "GECAM 131 control panel"),
+    "gc-131-extractor": P(OWN + "131-extractor.jpg", "Dust extraction fan on the GECAM 131"),
+    "gc-131-grinding": P(OWN + "131-grinding.jpg", "GECAM 131 grinding the corner weld of a steel box", crop=(0, 0, 2534, 1293)),
+    "gc-136-studio": B(OWN + "136-studio.jpg", "GECAM 136 with a box on the work table"),
+    "gc-136-side": P(OWN + "136-side.jpg", "GECAM 136 inclined belt head, dust hood and drive motor"),
+    "gc-136-top": P(OWN + "136-top.jpg", "GECAM 136 work table, part stop and dust hood"),
+    "gc-136-table": P(OWN + "136-table.jpg", "GECAM 136 work table with guides and hand wheel", up=True),
+    "gc-136-guide": P(OWN + "136-guide.jpg", "Abrasive belt and part guide of the GECAM 136"),
+    "gc-136-belt": P(OWN + "136-belt.jpg", "GECAM 136 belt under the work table edge", up=True),
+    "gc-136-grinding": P(OWN + "136-grinding.jpg", "GECAM 136 grinding the weld of a steel box"),
+    "gc-136-corner": P(OWN + "136-corner.jpg", "Box corner radiused on the GECAM 136"),
+    "gc-136-before-after": P(OWN + "136-before-after.jpg", "Welded box corner before and after grinding"),
     "gc-box-corner": P(BOX + "x-002-025.png", "Box corner after weld grinding", up=True),
     # ---- special corner grinders --------------------------------------------------------------------------------------------
     "gc-upper-corner": B(W + "GS059LV.jpg", "Gecam automatic upper-corner grinder with two heads"),

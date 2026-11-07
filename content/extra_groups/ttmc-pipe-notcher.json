@@ -3,15 +3,6 @@
  "family_set": "ttmc-more",
  "groups": [
   {
-   "id": "tt-tube-notch-group",
-   "title": "Tube and pipe notchers · value line",
-   "lead": "Motorized hole-saw and end-mill notchers — NovoTech value line, built in China.",
-   "brand": "novotech",
-   "families": [
-    "tt-ptn"
-   ]
-  },
-  {
    "id": "tt-prs-group",
    "title": "Tube end grinders · value line",
    "lead": "Belt grinders that notch tube ends at any angle with a contact roller the size of the mating tube.",
@@ -19,11 +10,20 @@
    "families": [
     "tt-prs"
    ]
+  },
+  {
+   "id": "tt-tube-notch-group",
+   "title": "Tube and pipe notchers · value line",
+   "lead": "Motorized hole-saw and end-mill notchers — NovoTech value line, built in China.",
+   "brand": "novotech",
+   "families": [
+    "tt-ptn"
+   ]
   }
  ],
- "intro_add": "NovoTech's value-line notchers, built in China, add the motorized PTN-30 hole-saw notcher, the UTN40 end-mill notchers, the PTN-12U and the PRS tube end grinders that notch tube from Ø3/4 to 5-3/4″ with a belt.",
+ "intro_add": "NovoTech's value-line notchers, built in China, add the PRS tube end grinders that notch tube from Ø3/4 to 5-3/4″ with a belt, the motorized PTN-30 hole-saw notcher, the UTN40 end-mill notchers and the PTN-12U.",
  "points_add": [
-  "NovoTech value line: PTN-30 hole-saw notcher, UTN40 end-mill notchers, PRS belt tube-end grinders to Ø5-3/4″"
+  "NovoTech value line: PRS belt tube-end grinders to Ø5-3/4″, PTN-30 hole-saw notcher, UTN40 end-mill notchers"
  ],
  "faq_add": [
   {

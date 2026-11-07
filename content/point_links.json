@@ -294,20 +294,28 @@
  ],
  "corner-grinding-machines": [
   [
-   "131",
+   "GECAM 131",
    "gecam-131"
   ],
   [
-   "136",
+   "GECAM 136",
    "gecam-136"
   ],
   [
-   "135",
+   "GECAM 135",
    "gecam-135"
   ],
   [
    "Special PLC grinders",
    "gecam-corner-special"
+  ],
+  [
+   "YQ horizontal right-angle grinders",
+   "tt-yq-h"
+  ],
+  [
+   "YQ-450 vertical corner grinder",
+   "tt-yq-v"
   ]
  ],
  "corner-notcher": [
@@ -818,12 +826,8 @@
    "eurofintec-228"
   ],
   [
-   "728 tube brushing",
-   "eurofintec-728-143"
-  ],
-  [
-   "143 tube-end deburring",
-   "eurofintec-728-143"
+   "728 tube brushing machine",
+   "eurofintec-728"
   ]
  ],
  "plate-beveler": [

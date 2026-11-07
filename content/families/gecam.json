@@ -19,7 +19,7 @@
   "eurofintec-128",
   "eurofintec-128dl",
   "eurofintec-228",
-  "eurofintec-728-143",
+  "eurofintec-728",
   "gecam-cws"
  ],
  "families": {
@@ -223,7 +223,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-belt"
   },
@@ -486,7 +486,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-belt"
   },
@@ -659,7 +659,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-belt"
   },
@@ -843,7 +843,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-wet"
   },
@@ -1031,7 +1031,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-round"
   },
@@ -1252,7 +1252,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-round"
   },
@@ -1432,7 +1432,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-slag"
   },
@@ -1616,7 +1616,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-brush"
   },
@@ -1741,7 +1741,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-bench"
   },
@@ -1927,16 +1927,16 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-bench"
   },
   "gecam-131": {
    "id": "gecam-131",
    "brand": "gecam",
-   "name": "131 corner grinder for box and door welds, corners to 5-7/8″ high",
-   "short": "131",
-   "models_label": "131 · hand-fed",
+   "name": "GECAM 131 corner grinder for box and door welds, corners to 5-7/8″ high",
+   "short": "GECAM 131",
+   "models_label": "GECAM 131 · hand-fed",
    "summary": "The compact hand-fed corner grinder for welded boxes, cabinets, doors and trays: the abrasive belt runs over a fork with two rollers, and the operator slides the corner along it on the table. The fork oscillates both in angle and about its pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp corner. The 23-5/8 × 9-13/16″ table is set in height and inclination by handwheel, with squaring guides adjusted by hand, for corners up to 5-7/8″ high. Two belt speeds: the higher for steel, the lower for stainless steel and aluminum.",
    "headline": "Corners to 5-7/8″ high · radius 3/64″ – 3/8″ or sharp · table adjustable in height and inclination",
    "features": [
@@ -1953,18 +1953,25 @@
    ],
    "images": [
     "gc-131",
+    "gc-131-showroom",
+    "gc-131-showroom-2",
     "gc-131-table",
     "gc-131-head",
+    "gc-131-belt",
+    "gc-131-dust",
+    "gc-131-panel",
+    "gc-131-extractor",
+    "gc-131-grinding",
     "gc-box-corner"
    ],
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "131",
+      "title": "GECAM 131",
       "sub": "Hand-fed corner grinder",
       "models": [
-       "131"
+       "GECAM 131"
       ],
       "rows": [
        {
@@ -2052,7 +2059,7 @@
     ],
     "models": [
      {
-      "name": "131",
+      "name": "GECAM 131",
       "glance": [
        "Corners to 5-7/8″ high",
        "—",
@@ -2075,43 +2082,43 @@
    "videos": [
     {
      "id": "bDsDqFoJ5l4",
-     "title": "131 corner grinder",
+     "title": "GECAM 131 corner grinder",
      "duration": "PT1M36S",
      "thumb": "video-bDsDqFoJ5l4"
     },
     {
      "id": "cnQful7fLsI",
-     "title": "131 with oscillating head",
+     "title": "GECAM 131 with oscillating head",
      "duration": "PT1M14S",
      "thumb": "video-cnQful7fLsI"
     },
     {
      "id": "XSrlMJ_lmME",
-     "title": "131 box weld seam sanding",
+     "title": "GECAM 131 box weld seam sanding",
      "duration": "PT4M13S",
      "thumb": "video-XSrlMJ_lmME"
     },
     {
      "id": "pRvYJVhLOkE",
-     "title": "131 on a stainless box",
+     "title": "GECAM 131 on a stainless box",
      "duration": "PT1M59S",
      "thumb": "video-pRvYJVhLOkE"
     },
     {
      "id": "y0gMB7J6F_E",
-     "title": "131 box seam grinding",
+     "title": "GECAM 131 box seam grinding",
      "duration": "PT5M43S",
      "thumb": "video-y0gMB7J6F_E"
     },
     {
      "id": "7sG_9LqdVNM",
-     "title": "131 on a door corner",
+     "title": "GECAM 131 on a door corner",
      "duration": "PT0M36S",
      "thumb": "video-7sG_9LqdVNM"
     },
     {
      "id": "eEYp5xXPNZo",
-     "title": "How to adjust and operate the 131",
+     "title": "How to adjust and operate the GECAM 131",
      "duration": "PT17M28S",
      "thumb": "video-eEYp5xXPNZo"
     }
@@ -2119,16 +2126,16 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-corner"
   },
   "gecam-136": {
    "id": "gecam-136",
    "brand": "gecam",
-   "name": "136 corner grinder for box and cabinet welds, corners to 11-13/16″ high",
-   "short": "136",
-   "models_label": "136 · hand-fed",
+   "name": "GECAM 136 corner grinder for box and cabinet welds, corners to 11-13/16″ high",
+   "short": "GECAM 136",
+   "models_label": "GECAM 136 · hand-fed",
    "summary": "The hand-fed corner grinder for taller boxes, cabinets and enclosures: the abrasive belt runs over a fork with two rollers, and the operator slides the corner along it on a 23-5/8 × 15-3/4″ table with a prismatic guide. The fork oscillates both in angle and about its pivot, so it grinds the weld flush and leaves a radius from 3/64″ to 3/8″ (R1 – R10 mm) or a sharp corner. Corners 7-7/8″ or 11-13/16″ high — 19-11/16″ on request — on parts 3-1/8″ to 19-11/16″ deep, and it also radiuses the edges of flat parts. Two belt speeds: the higher for steel, the lower for stainless steel and aluminum.",
    "headline": "Corners to 11-13/16″ high (19-11/16″ on request) · radius 3/64″ – 3/8″ or sharp · prismatic guide",
    "features": [
@@ -2148,17 +2155,26 @@
    "images": [
     "gc-136",
     "gc-136-box",
+    "gc-136-studio",
+    "gc-136-side",
+    "gc-136-top",
+    "gc-136-table",
     "gc-136-head",
+    "gc-136-guide",
+    "gc-136-belt",
+    "gc-136-grinding",
+    "gc-136-corner",
+    "gc-136-before-after",
     "gc-box-corner"
    ],
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "136",
+      "title": "GECAM 136",
       "sub": "Hand-fed corner grinder",
       "models": [
-       "136"
+       "GECAM 136"
       ],
       "rows": [
        {
@@ -2254,7 +2270,7 @@
     ],
     "models": [
      {
-      "name": "136",
+      "name": "GECAM 136",
       "glance": [
        "Corners to 11-13/16″ high",
        "—",
@@ -2277,30 +2293,36 @@
    "videos": [
     {
      "id": "lXGO65Ghwo0",
-     "title": "136 on an enclosure weld seam",
+     "title": "GECAM 136 on an enclosure weld seam",
      "duration": "PT2M1S",
      "thumb": "video-lXGO65Ghwo0"
     },
     {
      "id": "rrpQjvD7sEE",
-     "title": "136 weld seam grinding",
+     "title": "GECAM 136 weld seam grinding",
      "duration": "PT5M16S",
      "thumb": "video-rrpQjvD7sEE"
+    },
+    {
+     "id": "1MDSGr0PKgg",
+     "title": "GECAM 136 oscillating head on a box seam",
+     "duration": "PT0M28S",
+     "thumb": "video-1MDSGr0PKgg"
     }
    ],
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-corner"
   },
   "gecam-135": {
    "id": "gecam-135",
    "brand": "gecam",
-   "name": "135 automatic corner grinder for welded boxes, edges to 59″",
-   "short": "135",
-   "models_label": "135 · 1 or 2 heads",
+   "name": "GECAM 135 automatic corner grinder for welded boxes, edges to 59″",
+   "short": "GECAM 135",
+   "models_label": "GECAM 135 · 1 or 2 heads",
    "summary": "Grinds the weld on the outside corner of a welded box or cabinet without the operator holding anything: the box is clamped pneumatically on a large support base, the belt head comes in on a pneumatic carriage and then travels the full length of the edge on recirculating-ball guides at an inverter-set speed, stops at the end and releases the part, so the operator turns it to the next edge and starts again without returning to zero. One head as standard, a two-head version for more output, and a PLUS version with vertical, horizontal and oscillating head movement for radiusing. Edges up to 31-1/2″ or 59″.",
    "headline": "Edges to 31-1/2″ or 59″ · automatic head travel · 1 or 2 heads",
    "features": [
@@ -2331,10 +2353,10 @@
     "kind": "table",
     "tables": [
      {
-      "title": "135",
+      "title": "GECAM 135",
       "sub": "Automatic corner grinder",
       "models": [
-       "135"
+       "GECAM 135"
       ],
       "rows": [
        {
@@ -2422,7 +2444,7 @@
     ],
     "models": [
      {
-      "name": "135",
+      "name": "GECAM 135",
       "glance": [
        "Edges to 31-1/2″ or 59″",
        "—",
@@ -2445,37 +2467,37 @@
    "videos": [
     {
      "id": "tOxkUm2lGZo",
-     "title": "135 grinding box corners",
+     "title": "GECAM 135 grinding box corners",
      "duration": "PT4M10S",
      "thumb": "video-tOxkUm2lGZo"
     },
     {
      "id": "J6m2o9B1Ka4",
-     "title": "135 on a corner weld seam",
+     "title": "GECAM 135 on a corner weld seam",
      "duration": "PT3M15S",
      "thumb": "video-J6m2o9B1Ka4"
     },
     {
      "id": "ZzlXT-qjUOc",
-     "title": "135 two-head version",
+     "title": "GECAM 135 two-head version",
      "duration": "PT3M5S",
      "thumb": "video-ZzlXT-qjUOc"
     },
     {
      "id": "TTCL4SnvtKI",
-     "title": "135 PLUS",
+     "title": "GECAM 135 PLUS",
      "duration": "PT3M3S",
      "thumb": "video-TTCL4SnvtKI"
     },
     {
      "id": "VPEpu74z84I",
-     "title": "135 corner seam grinding",
+     "title": "GECAM 135 corner seam grinding",
      "duration": "PT2M2S",
      "thumb": "video-VPEpu74z84I"
     },
     {
      "id": "7RM52FGLZag",
-     "title": "135 belt change",
+     "title": "GECAM 135 belt change",
      "duration": "PT0M48S",
      "thumb": "video-7RM52FGLZag"
     }
@@ -2483,7 +2505,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-corner"
   },
@@ -2663,7 +2685,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-corner-special"
   },
@@ -2850,7 +2872,7 @@
    "pdf": {
     "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
     "label": "Download the notchers, circle cutters, polishers & benders brochure",
-    "size": "PDF · 2 MB · imperial units"
+    "size": "PDF · 5 MB · imperial units"
    },
    "group": "sahinler-polish"
   },
@@ -3019,7 +3041,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "ef-orbital"
   },
@@ -3229,7 +3251,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "ef-centreless"
   },
@@ -3400,7 +3422,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "ef-centreless"
   },
@@ -3524,58 +3546,50 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "ef-centreless"
   },
-  "eurofintec-728-143": {
-   "id": "eurofintec-728-143",
+  "eurofintec-728": {
+   "id": "eurofintec-728",
    "brand": "eurofintec",
-   "name": "728 tube brushing machine and 143 tube-end deburring machine, Ø3/8″ – 5-7/8″",
-   "short": "728 · 143",
-   "models_label": "728 · 143 · 2 machines",
-   "summary": "Two brush machines for the work around a tube shop's saw and polisher. The 728 brushes round tube: a Ø11-13/16″ brush on a two-speed, self-braking motor works the tube while a grooved rubber contrast roller — tilted to feed it and pneumatically compensated — carries it past, cleaning, satin-finishing or polishing tube from Ø3/8″ to Ø5-7/8″, with handwheel adjustment as the brush wears. The 143 deburrs the cut ends of stainless tube and profiles inside and outside in one cycle: a wire brush turns while its own axis rotates, changing direction so every edge is deburred evenly, on ends cut at 90° or 45° and on bent parts — round tube Ø13/16″ to Ø4-3/4″, square 13/16″ to 4-3/4″.",
-   "headline": "728: tube Ø3/8″ – 5-7/8″ · 143: tube ends Ø13/16″ – 4-3/4″, round and square",
+   "name": "728 tube brushing machine, Ø3/8″ – 5-7/8″",
+   "short": "728 tube brushing",
+   "models_label": "728",
+   "summary": "A heavy brushing machine for round tube: a Ø11-13/16″ brush on a two-speed, self-braking motor works the tube while a grooved rubber contrast roller — tilted to feed it and pneumatically compensated — carries it past, cleaning, satin-finishing or polishing tube from Ø3/8″ to Ø5-7/8″, with handwheel adjustment as the brush wears.",
+   "headline": "Tube Ø3/8″ – 5-7/8″ · cleaning, satin finishing and polishing",
    "features": [
-    "728: brush Ø11-13/16 × 3-15/16″ (300 × 100 mm), 275 – 825 rpm; two-speed motor with electronic brake, V-belt drive",
-    "728: contrast group with grooved rubber roller, tilt and diameter adjustment, pneumatic position compensation with adjustable pressure; steel work rest",
-    "728: column base, extraction hood, electrics in a sealed box with inverter",
-    "143: wire brush Ø9-13/16 × 3-15/16″ (250 × 100 mm); two brush speeds and two speeds of brush-axis rotation",
-    "143: inside and outside of the tube end in one cycle; ends cut at 90° and 45°, bent parts too; entry with adjustable central prism",
+    "Brush Ø11-13/16 × 3-15/16″ (300 × 100 mm), 275 – 825 rpm; two-speed motor with electronic brake, V-belt drive",
+    "Contrast group with grooved rubber roller, tilt and diameter adjustment, pneumatic position compensation with adjustable pressure; steel work rest",
+    "Column base, extraction hood, electrics in a sealed box with inverter",
     "CSA-approved electrical panel; 600 V 3-phase with transformer (208 / 240 / 480 V on request)"
    ],
    "optional": [
-    "Self-filtering dust extraction (728)",
+    "Self-filtering dust extraction",
     "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
    ],
    "images": [
     "ef-728",
-    "ef-143",
-    "ef-143-front",
     "ef-728-brush",
     "ef-728-adjust",
     "ef-728-pneumatic",
-    "ef-728-contrast",
-    "ef-143-brush",
-    "ef-143-45"
+    "ef-728-contrast"
    ],
    "specs": {
     "kind": "table",
     "tables": [
      {
-      "title": "728 · 143",
-      "sub": "Tube brushing and tube-end deburring machines",
+      "title": "728",
+      "sub": "Tube brushing machine",
       "models": [
-       "728",
-       "143"
+       "728"
       ],
       "rows": [
        {
         "label": "Tube size",
         "sub": "",
         "cells": [
-         "Round Ø3/8″ – 5-7/8″ (10 – 150 mm)",
-         "Round Ø13/16″ – 4-3/4″ (20 – 120 mm) · square 13/16″ – 4-3/4″ (20 – 120 mm)"
+         "Round Ø3/8″ – 5-7/8″ (10 – 150 mm)"
         ],
         "key": true
        },
@@ -3583,8 +3597,7 @@
         "label": "Brush",
         "sub": "",
         "cells": [
-         "Ø11-13/16″ (300 mm), 3-15/16″ (100 mm) wide",
-         "Wire, Ø9-13/16″ (250 mm), 3-15/16″ (100 mm) wide"
+         "Ø11-13/16″ (300 mm), 3-15/16″ (100 mm) wide"
         ],
         "key": true
        },
@@ -3592,8 +3605,7 @@
         "label": "Brush speed",
         "sub": "",
         "cells": [
-         "275 – 825 rpm, 2-speed motor",
-         "2 speeds · brush axis rotation 2 speeds"
+         "275 – 825 rpm, 2-speed motor"
         ],
         "key": false
        },
@@ -3601,8 +3613,7 @@
         "label": "Work",
         "sub": "",
         "cells": [
-         "Cleaning, satin finishing and polishing along the tube",
-         "Tube ends cut at 90° and 45°, inside and outside in one cycle"
+         "Cleaning, satin finishing and polishing along the tube"
         ],
         "key": false
        },
@@ -3610,8 +3621,7 @@
         "label": "Motor",
         "sub": "",
         "cells": [
-         "3.4 / 4.4 HP (2.5 / 3.3 kW)",
-         "4.4 / 6 HP (3.3 / 4.5 kW)"
+         "3.4 / 4.4 HP (2.5 / 3.3 kW)"
         ],
         "key": true
        },
@@ -3619,8 +3629,7 @@
         "label": "Dimensions L × W × H",
         "sub": "",
         "cells": [
-         "31 × 51 × 55″ (800 × 1,300 × 1,400 mm)",
-         "28 × 37 × 55″ (700 × 930 × 1,400 mm)"
+         "31 × 51 × 55″ (800 × 1,300 × 1,400 mm)"
         ],
         "key": false
        },
@@ -3628,8 +3637,7 @@
         "label": "Weight",
         "sub": "",
         "cells": [
-         "705 lb (320 kg)",
-         "816 lb (370 kg)"
+         "705 lb (320 kg)"
         ],
         "key": true
        }
@@ -3645,16 +3653,6 @@
        "Contrast-roller feed",
        "Brush Ø11-13/16″",
        "705 lb"
-      ]
-     },
-     {
-      "name": "143",
-      "glance": [
-       "Tube ends Ø13/16″ – 4-3/4″",
-       "—",
-       "Hand-fed",
-       "Wire brush Ø9-13/16″",
-       "816 lb"
       ]
      }
     ],
@@ -3674,18 +3672,12 @@
      "title": "728 pipe polishing and brushing",
      "duration": "PT1M17S",
      "thumb": "video-pCPlP3ZAuyw"
-    },
-    {
-     "id": "3-jRbQS-rs4",
-     "title": "143 tube-end deburring",
-     "duration": "PT1M50S",
-     "thumb": "video-3-jRbQS-rs4"
     }
    ],
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "ef-brush"
   },
@@ -3868,7 +3860,7 @@
    "pdf": {
     "file": "files/NovoTech-Gecam-Deburring-Finishing-Pipe-Sanding-2026.pdf",
     "label": "Download the Gecam & Eurofintec deburring and finishing brochure",
-    "size": "PDF · 4 MB · imperial units"
+    "size": "PDF · 8 MB · imperial units"
    },
    "group": "gc-weld"
   }

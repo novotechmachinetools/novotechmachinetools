@@ -495,3 +495,29 @@ TAB["tt-wood-dust"] = [
         ("*Weight", "KG", 49),
     ]),
 ]
+
+# Right-angle weld seam grinders (the owner's sheet "Right Angle Grinding Machine", Nov 7 2026): the horizontal YQ-900 / 1200 / 1500
+# and the vertical YQ-450 — every figure of the sheet, metric in brackets; the 380 V 50 Hz factory supply is kept beside the
+# 600 V 60 Hz the machines are supplied for in Canada
+TAB["tt-yq-h"] = [
+    table("YQ-900 · YQ-1200 · YQ-1500", "Horizontal right-angle grinding machines", ["YQ-900", "YQ-1200", "YQ-1500"], [
+        ("*Processing length, max", "TXT", ["35.4″ (900 mm)", "47.2″ (1,200 mm)", "59.1″ (1,500 mm)"]),
+        ("*Total power", "KW", 3.0),
+        ("*Grinding speed", "TXT", "0 – 236 in/min (0 – 100 mm/s)"),
+        ("Abrasive belt", "BELT", (2100, 100)),
+        ("Ambient temperature", "TXT", "5 – 113 °F (−15 – 45 °C)"),
+        ("Power supply", "TXT", "3-phase, 600 V 60 Hz in Canada (factory standard 380 V ±5 %, 50 Hz)"),
+        ("*Weight", "KG", [425, 485, 655]),
+        ("Dimensions L × W × H", "TXT", ["53.1 × 61.8 × 45.7″ (1,350 × 1,570 × 1,160 mm)", "65 × 61.8 × 45.7″ (1,650 × 1,570 × 1,160 mm)",
+                                        "80.7 × 61.8 × 45.7″ (2,050 × 1,570 × 1,160 mm)"]),
+    ]),
+]
+TAB["tt-yq-v"] = [
+    table("YQ-450", "Vertical right-corner grinding and polishing machine", ["YQ-450"], [
+        ("*Processing height, max", "TXT", "17.7″ (450 mm)"),
+        ("*Swing motor", "TXT", "180 W (1/4 HP) × 1, adjustable speed"),
+        ("Power connection", "TXT", "Hard-wired"),
+        ("Control", "TXT", "From a separate electrical cabinet"),
+        ("Packing size L × W × H", "PK", (181, 89, 136)),
+    ]),
+]
