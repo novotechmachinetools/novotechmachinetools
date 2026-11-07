@@ -11553,37 +11553,6 @@
    "bytes": 7642
   }
  },
- "nt-dc11-1": {
-  "alt": "NovoTech TBK-4228 double column band saw, 11\u2033",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 1222,
-    "file": "img/bandsaw/nt-dc11-1-1200.webp",
-    "bytes": 112540
-   },
-   {
-    "w": 800,
-    "h": 815,
-    "file": "img/bandsaw/nt-dc11-1-800.webp",
-    "bytes": 74408
-   },
-   {
-    "w": 480,
-    "h": 489,
-    "file": "img/bandsaw/nt-dc11-1-480.webp",
-    "bytes": 40766
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 157,
-   "h": 160,
-   "file": "img/bandsaw/nt-dc11-1-thumb.webp",
-   "bytes": 9662
-  },
-  "cut": "birefnet"
- },
  "nt-dc11t-1": {
   "alt": "NovoTech TBK-4228A double column miter band saw",
   "variants": [
@@ -11799,36 +11768,6 @@
    "h": 160,
    "file": "img/bandsaw/nt-dc11-stand-thumb.webp",
    "bytes": 9258
-  }
- },
- "nt-dc14-1": {
-  "alt": "NovoTech TGK-4235 / TGK-4240 gear-driven double column band saw",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 981,
-    "file": "img/bandsaw/nt-dc14-1-1200.webp",
-    "bytes": 86414
-   },
-   {
-    "w": 800,
-    "h": 654,
-    "file": "img/bandsaw/nt-dc14-1-800.webp",
-    "bytes": 55668
-   },
-   {
-    "w": 480,
-    "h": 392,
-    "file": "img/bandsaw/nt-dc14-1-480.webp",
-    "bytes": 31420
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 131,
-   "file": "img/bandsaw/nt-dc14-1-thumb.webp",
-   "bytes": 7884
   }
  },
  "nt-dc14-2": {
@@ -12164,67 +12103,6 @@
    "file": "img/bandsaw/nt-dc11a-1-cut-thumb.webp",
    "bytes": 8698
   }
- },
- "nt-dc14-1-cut": {
-  "alt": "NovoTech TGK-4235 / TGK-4240 gear-driven double column band saw",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 981,
-    "file": "img/bandsaw/nt-dc14-1-cut-1200.webp",
-    "bytes": 90602
-   },
-   {
-    "w": 800,
-    "h": 654,
-    "file": "img/bandsaw/nt-dc14-1-cut-800.webp",
-    "bytes": 58182
-   },
-   {
-    "w": 480,
-    "h": 392,
-    "file": "img/bandsaw/nt-dc14-1-cut-480.webp",
-    "bytes": 32668
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 160,
-   "h": 131,
-   "file": "img/bandsaw/nt-dc14-1-cut-thumb.webp",
-   "bytes": 7884
-  }
- },
- "nt-dc11-1-cut": {
-  "alt": "NovoTech TBK-4228 double column band saw, 11-inch",
-  "variants": [
-   {
-    "w": 1200,
-    "h": 1222,
-    "file": "img/bandsaw/nt-dc11-1-cut-1200.webp",
-    "bytes": 117104
-   },
-   {
-    "w": 800,
-    "h": 815,
-    "file": "img/bandsaw/nt-dc11-1-cut-800.webp",
-    "bytes": 78038
-   },
-   {
-    "w": 480,
-    "h": 489,
-    "file": "img/bandsaw/nt-dc11-1-cut-480.webp",
-    "bytes": 42250
-   }
-  ],
-  "alpha": true,
-  "thumb": {
-   "w": 157,
-   "h": 160,
-   "file": "img/bandsaw/nt-dc11-1-cut-thumb.webp",
-   "bytes": 9662
-  },
-  "cut": "birefnet"
  },
  "a-40-head": {
   "alt": "A 40 bending head with rollers bending a dowel bar",
@@ -116831,5 +116709,96 @@
    "bytes": 5948
   },
   "cut": "birefnet"
+ },
+ "nt-dc14-tgk4240": {
+  "alt": "NovoTech TGK-4240 gear-driven double column band saw, \u00d815-3/4\u2033",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 965,
+    "file": "img/bandsaw/nt-dc14-tgk4240-1200.webp",
+    "bytes": 104872
+   },
+   {
+    "w": 800,
+    "h": 643,
+    "file": "img/bandsaw/nt-dc14-tgk4240-800.webp",
+    "bytes": 62202
+   },
+   {
+    "w": 480,
+    "h": 386,
+    "file": "img/bandsaw/nt-dc14-tgk4240-480.webp",
+    "bytes": 32694
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 129,
+   "file": "img/bandsaw/nt-dc14-tgk4240-thumb.webp",
+   "bytes": 8074
+  }
+ },
+ "nt-dc14-tgk4235": {
+  "alt": "NovoTech TGK-4235 gear-driven double column band saw, \u00d813-3/4\u2033",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1077,
+    "file": "img/bandsaw/nt-dc14-tgk4235-1200.webp",
+    "bytes": 106232
+   },
+   {
+    "w": 800,
+    "h": 718,
+    "file": "img/bandsaw/nt-dc14-tgk4235-800.webp",
+    "bytes": 65424
+   },
+   {
+    "w": 480,
+    "h": 431,
+    "file": "img/bandsaw/nt-dc14-tgk4235-480.webp",
+    "bytes": 36430
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 144,
+   "file": "img/bandsaw/nt-dc14-tgk4235-thumb.webp",
+   "bytes": 9136
+  },
+  "cut": "birefnet"
+ },
+ "nt-dc11-tbk4228": {
+  "alt": "NovoTech TBK-4228 semi-automatic double column band saw, \u00d811\u2033",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 1260,
+    "file": "img/bandsaw/nt-dc11-tbk4228-1200.webp",
+    "bytes": 132898
+   },
+   {
+    "w": 800,
+    "h": 840,
+    "file": "img/bandsaw/nt-dc11-tbk4228-800.webp",
+    "bytes": 77782
+   },
+   {
+    "w": 480,
+    "h": 504,
+    "file": "img/bandsaw/nt-dc11-tbk4228-480.webp",
+    "bytes": 41440
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 152,
+   "h": 160,
+   "file": "img/bandsaw/nt-dc11-tbk4228-thumb.webp",
+   "bytes": 9376
+  }
  }
 }

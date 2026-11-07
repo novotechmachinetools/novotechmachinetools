@@ -44,6 +44,13 @@ PHOTOS = {
     "nt-vs500-1": dict(src="VS400.jpg", alt="NovoTech VS-500 vertical metal band saw, 19-3/4″ throat", boxes=[(396, 187, 476, 244)]),
     # ---------------------------------------------------------------- CNC double column saw (the catalogue crop had white blotches — Oct 28 2026)
     "nt-a14-1": dict(src="BS-500G-500GT.jpg", alt="NovoTech BS-500G / BS-500GT CNC automatic band saw", boxes=[(664, 430, 733, 468)], up=True),
+    # ---------------------------------------------------------------- double column saws (the catalogue cut-outs lost the top beam and kept
+    # white patches — the owner, Nov 7 2026): the supplier's own cut-outs (TGK-4240, TBK-4228) keep their alpha without the floor shadow;
+    # the TGK-4235 photo on white is cut out by make_images
+    "nt-dc14-tgk4240": dict(src="TGK-4240.png", alt="NovoTech TGK-4240 gear-driven double column band saw, Ø15-3/4″",
+                            boxes=[(737, 441, 804, 470)], noshadow=True, up=True),
+    "nt-dc14-tgk4235": dict(src="TGK-4235.jpg", alt="NovoTech TGK-4235 gear-driven double column band saw, Ø13-3/4″", up=True),
+    "nt-dc11-tbk4228": dict(src="TBK4228.png", alt="NovoTech TBK-4228 semi-automatic double column band saw, Ø11″", noshadow=True, up=True),
 }
 
 # ---------------------------------------------------------------- the owner's second and third sets (Oct 29 2026): slip rolls and ring / profile
@@ -334,6 +341,18 @@ def fill_boxes(im, boxes):
     return out
 
 
+def drop_shadow(im, keep=2):
+    """a supplier cut-out with its floor shadow in the alpha: semi-transparent pixels more than `keep` px from the solid machine go"""
+    import cv2
+    a = np.asarray(im.getchannel("A")).copy()
+    solid = (a >= 250).astype(np.uint8)
+    near = cv2.dilate(solid, np.ones((2 * keep + 1, 2 * keep + 1), np.uint8))
+    a[(a < 250) & (near == 0)] = 0
+    out = im.copy()
+    out.putalpha(Image.fromarray(a))
+    return out
+
+
 def process(key):
     p = PHOTOS[key]
     im = Image.open(p.get("dir", SRC) + p["src"])
@@ -356,10 +375,12 @@ def process(key):
             draw.rectangle((box[0], box[1], box[2] - 1, box[3] - 1), fill=(255, 255, 255, 255) if im.mode == "RGBA" else (255, 255, 255))
     if p.get("boxes"):
         im = fill_boxes(im, p["boxes"])
+    if p.get("noshadow") and im.mode == "RGBA":
+        im = drop_shadow(im)
     im = trim(im)
     if max(im.size) < SMALL or p.get("up"):
         from esrgan import upscale
-        im = upscale(im.convert("RGB"))
+        im = upscale(im if im.mode == "RGBA" else im.convert("RGB"))     # a cut-out keeps its alpha (upscaled with Lanczos)
     if max(im.size) > BIG:
         im = im.resize((round(im.width * BIG / max(im.size)), round(im.height * BIG / max(im.size))), Image.LANCZOS)
     if key.startswith("tm-"):

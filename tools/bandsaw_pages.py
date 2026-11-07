@@ -159,7 +159,7 @@ NF = {
         h1="NovoTech double-column band saws",
         intro="Twin-column saws at value-line prices: the bow travels vertically on two columns, so the cut stays square in solid bar, blocks and bundles. The TBK-4228 and the 45° miter (mitre) TBK-4228A are the semi-automatics, the TBK-4228B the automatic; the TGK-4235 and 4240 add gear drive and hydraulic blade tension; the BS-500G, 500GT and 850G are CNC production saws with servo feeding and stepless blade speed; the GZ4250/70 and GZ4260/120 are gantry saws for plate up to 47-1/4″ wide.",
         points=["Twin-column guidance for square cuts in heavy stock", "Semi-automatic and fully automatic models listed separately, smallest to largest", "Round capacities from Ø11″ (280 mm) to Ø23-5/8″ (600 mm)"],
-        hero="nt-dc11av-1-cut", minis=["nt-dc14-1-cut", "nt-dc11-1-cut"],
+        hero="nt-dc11av-1-cut", minis=["nt-dc14-tgk4240", "nt-dc11-tbk4228"],
         lead="Twin-column saws from Ø11″ to Ø23-5/8″ (280–600 mm): hydraulic semi-automatics, a miter version, automatics with shuttle vise, CNC production saws and gantry saws for plate and bundles.",
         subgroups=[("auto", "NovoTech fully automatic double-column band saws", "Automatic feeding, clamping and cutting from a program, from Ø11″ to Ø23-5/8″ (280–600 mm) — smallest to largest."),
                    ("semi", "NovoTech semi-automatic double-column band saws", "Hydraulic down-feed and clamping with manual material feed, from Ø11″ to Ø23-5/8″ (280–600 mm) — smallest to largest.")],

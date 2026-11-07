@@ -290,7 +290,7 @@ FAMILIES = [
              "Work light, coolant and material stand included",
          ],
          optional=["Roller stand", "Extra blades"],
-         images=["nt-dc11-1", "nt-dc11t-1", "nt-dc11t-2", "nt-dc11t-3", "nt-dc11-stand"],
+         images=["nt-dc11-tbk4228", "nt-dc11t-1", "nt-dc11t-2", "nt-dc11t-3", "nt-dc11-stand"],   # the supplier's photo (Nov 7 2026)
          videos=[],
          models=[
              model("TBK-4228", {"0": cap(280, [280, 280], 280)},
@@ -313,7 +313,7 @@ FAMILIES = [
              "Work light, coolant pump and material stand included",
          ],
          optional=["Three-position hydraulic clamping vise", "Roller stands"],
-         images=["nt-dc14-1", "nt-dc14-2", "nt-dc14-3"],
+         images=["nt-dc14-tgk4240", "nt-dc14-tgk4235", "nt-dc14-2", "nt-dc14-3"],   # the supplier's photos (Nov 7 2026)
          videos=[],
          models=[
              model("TGK-4235", {"0": cap(350, [350, 350], 350)},

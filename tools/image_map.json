@@ -2918,15 +2918,6 @@
   "quality": 82,
   "orig": "tools/src-images/value-line/nt-a24-1.png"
  },
- "nt-dc11-1": {
-  "src": "tools/src-images/cutouts/nt-dc11-1-cut.png",
-  "alt": "NovoTech TBK-4228 double column band saw, 11″",
-  "section": "bandsaw",
-  "trim": true,
-  "quality": 82,
-  "orig": "tools/src-images/value-line/nt-dc11-1.png",
-  "cut_spec": "tools/cutout-specs/birefnet/nt-dc11-1.json"
- },
  "nt-dc11t-1": {
   "src": "tools/src-images/cutouts/nt-dc11t-1-cut.png",
   "alt": "NovoTech TBK-4228A double column miter band saw",
@@ -2987,14 +2978,6 @@
   "trim": true,
   "quality": 82,
   "orig": "tools/src-images/value-line/nt-dc11-stand.png"
- },
- "nt-dc14-1": {
-  "src": "tools/src-images/cutouts/nt-dc14-1-cut.png",
-  "alt": "NovoTech TGK-4235 / TGK-4240 gear-driven double column band saw",
-  "section": "bandsaw",
-  "trim": true,
-  "quality": 82,
-  "orig": "tools/src-images/value-line/nt-dc14-1.png"
  },
  "nt-dc14-2": {
   "src": "tools/src-images/value-line/nt-dc14-2.png",
@@ -3086,23 +3069,6 @@
   "trim": true,
   "quality": 84,
   "orig": "tools/src-images/value-line/nt-dc11a-1.png"
- },
- "nt-dc14-1-cut": {
-  "src": "tools/src-images/cutouts/nt-dc14-1-cut.png",
-  "alt": "NovoTech TGK-4235 / TGK-4240 gear-driven double column band saw",
-  "section": "bandsaw",
-  "trim": true,
-  "quality": 84,
-  "orig": "tools/src-images/value-line/nt-dc14-1.png"
- },
- "nt-dc11-1-cut": {
-  "src": "tools/src-images/cutouts/nt-dc11-1-cut.png",
-  "alt": "NovoTech TBK-4228 double column band saw, 11-inch",
-  "section": "bandsaw",
-  "trim": true,
-  "quality": 84,
-  "orig": "tools/src-images/value-line/nt-dc11-1.png",
-  "cut_spec": "tools/cutout-specs/birefnet/nt-dc11-1-cut.json"
  },
  "a-40-head": {
   "src": "/home/claude/gms-site/dl/a-40-gms-filiz-demir-bukum.webp",
@@ -34315,5 +34281,28 @@
   "quality": 82,
   "cutout": true,
   "cut_size": 1024
+ },
+ "nt-dc14-tgk4240": {
+  "src": "tools/src-images/value-line/nt-dc14-tgk4240.png",
+  "alt": "NovoTech TGK-4240 gear-driven double column band saw, Ø15-3/4″",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
+ },
+ "nt-dc14-tgk4235": {
+  "src": "tools/src-images/value-line/nt-dc14-tgk4235.png",
+  "alt": "NovoTech TGK-4235 gear-driven double column band saw, Ø13-3/4″",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84,
+  "cutout": true,
+  "cut_size": 1024
+ },
+ "nt-dc11-tbk4228": {
+  "src": "tools/src-images/value-line/nt-dc11-tbk4228.png",
+  "alt": "NovoTech TBK-4228 semi-automatic double column band saw, Ø11″",
+  "section": "bandsaw",
+  "trim": true,
+  "quality": 84
  }
 }
