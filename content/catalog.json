@@ -89,7 +89,9 @@
    "slugs": [
     "drill-press",
     "milling-machine",
-    "cnc-machine-tools"
+    "cnc-lathe",
+    "vertical-machining-center",
+    "surface-grinder"
    ]
   },
   {
@@ -170,7 +172,9 @@
   "belt-grinder": "Metal belt grinders with 2 – 8″ belts, disc sanders, bench grinders, chamfering machines and dust collectors.",
   "drill-press": "Gear-head, inverter and column drill presses, 15/16″ to 2″ in steel, with power feed and tapping.",
   "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines, keyseaters and a head resurfacer.",
-  "cnc-machine-tools": "Dener CNC lathes, vertical and double-column machining centres and a surface grinder; value-line CNC lathe, VMCs and boring mills.",
+  "cnc-lathe": "TTC and TTH slant-bed CNC lathes, 6″ to 12″ chucks, Fanuc control, C-axis live tooling.",
+  "vertical-machining-center": "TMC vertical machining centres, BBT40, and TDC double-column machining centres, BBT50.",
+  "surface-grinder": "TGH-B 450 precision NC surface grinder, 17.7 × 35.4″ table.",
   "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, multifunction machines, mortisers, a lathe and dust collection."
  },
  "card_image": {

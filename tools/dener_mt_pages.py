@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Dener machine-tool pages: cnc-lathe (TTC / TTH), vertical-machining-center (TMC vertical, TDC double-column) and
-surface-grinder (TGH-B 450), under the cnc-machine-tools hub — family set content/families/dener-mt.json, photos from
+surface-grinder (TGH-B 450) — three pages of their own, named without "Dener", no hub (the owner, Nov 7 2026: the
+cnc-machine-tools hub and the value-line CNC page are off the site) — family set content/families/dener-mt.json, photos from
 tools/dener_mt_photos.py (section 'dener').
 
     python3 tools/dener_mt_photos.py                      # frames of NovoTech's videos → tools/src-images/dener, Shorts thumbnails
@@ -9,7 +10,6 @@ tools/dener_mt_photos.py (section 'dener').
     python3 tools/make_images.py --only $(cat tools/dener_mt_keys.txt)
     python3 tools/brochure/dener_mt_editions.py           # the lathe, machining-centre and grinder catalogues: the complete
                                                           # NovoTech editions of Dener's own (no family brochures)
-    python3 tools/machine_tools_hub.py                    # the hub, after this and tools/ttmc_more_pages.py
 """
 import json
 import os
@@ -18,7 +18,6 @@ from isitan_lib import VOLT_FAQ_GENERIC, write_category, write_families
 import dener_mt_data as D
 import dener_mt_photos as PH
 import dener_pages as DP
-import machine_tools_nav as MTN
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SET = "dener-mt"
@@ -37,6 +36,8 @@ INTRO_VIDEO = {"intro_video": {"id": "_bkvwzuOYW0", "title": "DENER machining ce
                                "duration": "PT0M25S"},
                "intro_video_heading": "Inside the factory — where the machines are built",
                "intro_video_text": "The assembly hall in Kayseri, Turkey, where Dener's machining centres and lathes are built up from their own castings."}
+# the menu and page names, without "Dener" (the owner, Nov 7 2026)
+NAV = {D.P_LATHE: "CNC lathes", D.P_MC: "CNC machining centres", D.P_GRIND: "Surface grinders"}
 COMMON_RELATED = [{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "drill-press.html", "label": "Drill presses"},
                   {"href": "band-saw.html", "label": "Band saws"}, {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}]
 INSTALL_FAQ = {"q": "Do you deliver, install and train in Canada?",
@@ -49,7 +50,7 @@ PAGE_LATHE = dict(
     title="CNC Lathes for Sale — Slant-Bed, 6″–12″ Chucks | NovoTech",
     meta="CNC lathes for sale in Canada: Dener TTC and TTH slant-bed CNC lathes with Fanuc control, 12-station servo turret, 6″ to 12″ "
          "chucks, Ø27.6″ swing and C-axis live tooling. Made in Turkey.",
-    h1="Dener CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks",
+    h1="CNC lathes — TTC and TTH slant-bed lathes, 6″ to 12″ chucks",
     intro="A CNC lathe turns, faces, bores, grooves and threads round parts from bar stock or chucked blanks, with its tools on a turret that "
           "brings the next one into position in a fraction of a second. NovoTech sells Dener's CNC lathes in Canada, built in Kayseri, "
           "Turkey, in the machine-tool plant Dener took over from Taksan in 2016. Both families share one design: a one-piece cast bed "
@@ -94,10 +95,10 @@ PAGE_LATHE = dict(
 )
 
 PAGE_MC = dict(
-    title="Vertical Machining Center, BT40 & Double-Column BT50 | NovoTech",
+    title="CNC Machining Centers, Vertical & Double-Column | NovoTech",
     meta="Vertical machining centers (VMC) for sale in Canada: Dener TMC, BBT40, 10,000 rpm, 24 tools, X 33.5 – 63″, and TDC double-column "
          "machining centers, BBT50, X to 161.4″. Made in Turkey.",
-    h1="Dener vertical machining centers — TMC VMCs and TDC double-column, BBT40 and BBT50",
+    h1="CNC machining centers — TMC vertical and TDC double-column, BBT40 and BBT50",
     intro="A machining centre mills, drills, bores and taps prismatic parts under CNC and changes its own tools from a magazine, so a part "
           "that once went from the mill to the drill press to the tapping arm is finished in one setup. NovoTech sells Dener's machining "
           "centres in Canada, built in Kayseri, Turkey: the TMC vertical machining centres (VMC) in five sizes, from the TMC 850 with 33.5 × 20.1 × "
@@ -147,10 +148,10 @@ PAGE_MC = dict(
 )
 
 PAGE_GRIND = dict(
-    title="Precision NC Surface Grinder, 18 × 35″ Table | NovoTech",
+    title="Surface Grinders — Precision NC, 18 × 35″ Table | NovoTech",
     meta="Surface grinder for sale in Canada: the Dener TGH-B 450 precision NC surface grinder, 17.7 × 35.4″ table, 15.7 × 31.5″ magnetic "
          "chuck, Ø13.8″ wheel, Mitsubishi NC down feed in 0.00004″ steps. Made in Turkey.",
-    h1="Dener NC surface grinder — TGH-B 450, 17.7 × 35.4″ table",
+    h1="Surface grinders — TGH-B 450 NC surface grinder, 17.7 × 35.4″ table",
     intro="A surface grinder finishes flat, parallel and square faces to tenths: the part sits on a magnetic chuck on a table that runs back "
           "and forth under a grinding wheel, the wheel steps across at each stroke and comes down a few tenths at a time until the face is "
           "true. NovoTech sells the Dener TGH-B 450 in Canada, built in Kayseri, Turkey: a 17.7 × 35.4″ (450 × 900 mm) table on scraped, "
@@ -205,14 +206,9 @@ def build():
     fams = [dict(f, pdf=pdfs[f["page"]]) for f in D.FAMILIES]
     write_families(SET, fams)
     common = {"hero_brand_line": BRAND_LINE, "origin_feature": ORIGIN, **INTRO_VIDEO}
-    nav = {s: n for s, n, _ in MTN.siblings()}
     for slug, page in ((D.P_LATHE, PAGE_LATHE), (D.P_MC, PAGE_MC), (D.P_GRIND, PAGE_GRIND)):
-        write_category(slug, page, [f for f in fams if f["page"] == slug], SET, MTN.SECTION, hub=MTN.hub(), siblings=MTN.siblings(),
-                       extra={**common, "nav_label": nav[slug], "catalogue_pdf": pdfs[slug]})
-        path = os.path.join(ROOT, "content", "pages", f"{slug}.json")
-        pj = json.load(open(path, encoding="utf-8"))
-        pj["section"]["related_title"] = MTN.RELATED_TITLE              # 'CNC', not 'cnc' (the template lower-cases the label)
-        json.dump(pj, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        write_category(slug, page, [f for f in fams if f["page"] == slug], SET, NAV[slug],
+                       extra={**common, "nav_label": NAV[slug], "catalogue_pdf": pdfs[slug]})
     keys = register_images()
     used = {k for f in fams for k in f["images"]} | {p["hero"] for p in (PAGE_LATHE, PAGE_MC, PAGE_GRIND)} | \
            {m for p in (PAGE_LATHE, PAGE_MC, PAGE_GRIND) for m in p["minis"]}

@@ -58,7 +58,9 @@ BLURBS = {
     "belt-grinder": "Metal belt grinders with 2 – 8″ belts, disc sanders, bench grinders, chamfering machines and dust collectors.",
     "drill-press": "Gear-head, inverter and column drill presses, 15/16″ to 2″ in steel, with power feed and tapping.",
     "milling-machine": "Turret, universal and heavy ISO50 milling machines, drilling-milling machines, keyseaters and a head resurfacer.",
-    "cnc-machine-tools": "Dener CNC lathes, vertical and double-column machining centres and a surface grinder; value-line CNC lathe, VMCs and boring mills.",
+    "cnc-lathe": "TTC and TTH slant-bed CNC lathes, 6″ to 12″ chucks, Fanuc control, C-axis live tooling.",
+    "vertical-machining-center": "TMC vertical machining centres, BBT40, and TDC double-column machining centres, BBT50.",
+    "surface-grinder": "TGH-B 450 precision NC surface grinder, 17.7 × 35.4″ table.",
     "woodworking-machinery": "Jointers, thickness planers, table saws, band saws, multifunction machines, mortisers, a lathe and dust collection.",
 }
 GROUPS = [
@@ -77,7 +79,7 @@ GROUPS = [
     ("finishing", "Deburring, grinding and finishing", "Deburring and edge rounding, belt grinders and sanders, corner grinding and pipe polishing.",
      ["sheet-metal-plate-deburring-edge-rounding-finishing-grinding", "belt-grinder", "corner-grinding-machines", "pipe-sanding-polishing-machines", "tube-end-deburring-machine"]),
     ("machining", "Drilling, milling and CNC machining", "Drill presses, milling machines, CNC lathes, machining centres and surface grinders.",
-     ["drill-press", "milling-machine", "cnc-machine-tools"]),
+     ["drill-press", "milling-machine", "cnc-lathe", "vertical-machining-center", "surface-grinder"]),
     ("welding", "Welding", "Positioners, turning rolls, column and boom manipulators, welding tables and corner welders that take the hand work out of repeat welds.",
      ["welding-automation", "corner-welding-machines"]),
     ("rebar", "Rebar machinery", "Benders, cutters and processing lines for reinforcing steel.", ["rebar-bender-and-cutter"]),

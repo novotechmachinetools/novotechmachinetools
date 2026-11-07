@@ -198,11 +198,12 @@ GUIDES = [
       "What we explain to customers before they buy a milling machine: turret, universal or drill-mill, table, travels and "
       "rigidity, spindle taper and power, power feed and DRO, and the tooling to start with. " + BY,
       "Turret, universal or drill-mill, table and travels, ISO40 or ISO50, power feed and DRO, and the tooling to budget for."),
-    G("cnc-machine-tools", "cnc-machine-tools-guide.html", "CNC machine tool buying guide", "machining",
+    # on the CNC machining centres page since the cnc-machine-tools hub is off the site (the owner, Nov 7 2026)
+    G("vertical-machining-center", "cnc-machine-tools-guide.html", "CNC machine tool buying guide", "machining",
       "What we explain to customers before they buy a CNC lathe or machining centre: which machine for which parts, travels and "
       "swing, spindle taper and power, the control, tool changers and options, and the foundation. " + BY,
-      "CNC lathe, vertical machining centre or boring mill, sizing the travels, BT40 or BT50, choosing the control, options and "
-      "installation."),
+      "CNC lathe, vertical or double-column machining centre, sizing the travels, BT40 or BT50, choosing the control, options "
+      "and installation."),
     # ------------------------------------------------------------------------------------------- rebar
     G("rebar-bender-and-cutter", "rebar-guide.html", "Rebar bender and cutter buying guide", "rebar",
       "What we explain to customers before they buy a rebar bender or cutter: Canadian bar sizes and grades, how to read the "

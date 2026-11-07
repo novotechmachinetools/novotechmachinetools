@@ -475,7 +475,7 @@ MILL = [
 ]
 
 # =============================================================================================== CNC machine tools
-P_CNC = "novotech-cnc-machine-tools"      # under the cnc-machine-tools hub (tools/machine_tools_nav.py) since the Dener machine tools came
+P_CNC = "novotech-cnc-machine-tools"      # the value-line CNC page — off the site (the owner, Nov 7 2026); data kept
 CNC = [
     F("tt-vmc", P_CNC, "vmc", "VMC8046 · VMC10562 vertical machining centres, BT40, 8,000 rpm", "VMC vertical machining centres", [T["tt-vmc"][0]],
       "Vertical machining centres with a 39.4 × 21.7″ table that carries 1,764 lb: the VMC8046 with linear rolling guideways on X and Y, "
@@ -658,4 +658,5 @@ WOOD = [
 
 # TUBE is not in the value-line family set any more: the benders are a group on rotary-draw-tube-benders.html,
 # written with the CSM / ISITAN / premium-line benders by tools/isitan_tube_benders.py (Nov 7 2026)
-NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + SHAPE + WOOD
+# CNC (the value-line CNC machine tools page) is off the site (the owner, Nov 7 2026)
+NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + SHAPE + WOOD

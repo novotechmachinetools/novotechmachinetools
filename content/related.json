@@ -51,9 +51,8 @@
   "belt-grinder": "Belt grinders & sanders",
   "corner-grinding-machines": "Corner grinders",
   "corner-welding-machines": "Corner welders",
-  "cnc-machine-tools": "CNC machine tools",
   "cnc-lathe": "CNC lathes",
-  "vertical-machining-center": "Machining centres",
+  "vertical-machining-center": "CNC machining centres",
   "surface-grinder": "Surface grinders",
   "milling-machine": "Milling machines",
   "rebar-bender-and-cutter": "Rebar benders & cutters",
@@ -505,18 +504,18 @@
    "circular-cold-saws",
    "drill-press",
    "ironworker-machines",
-   "cnc-machine-tools"
+   "cnc-lathe"
   ],
   "double-column-band-saws": [
    "band-saw-blades",
    "circular-cold-saws",
-   "cnc-machine-tools",
+   "cnc-lathe",
    "drill-press",
    "ironworker-machines"
   ],
   "vertical-band-saws": [
    "band-saw-blades",
-   "cnc-machine-tools",
+   "cnc-lathe",
    "milling-machine",
    "drill-press"
   ],
@@ -532,12 +531,12 @@
    "circular-cold-saws",
    "drill-press",
    "ironworker-machines",
-   "cnc-machine-tools"
+   "cnc-lathe"
   ],
   "twin-column-band-saws": [
    "band-saw-blades",
    "circular-cold-saws",
-   "cnc-machine-tools",
+   "cnc-lathe",
    "drill-press",
    "ironworker-machines"
   ],
@@ -545,7 +544,7 @@
    "band-saw-blades",
    "milling-machine",
    "drill-press",
-   "cnc-machine-tools",
+   "cnc-lathe",
    "belt-grinder"
   ],
   "circular-cold-saws": [
@@ -600,42 +599,28 @@
    "laser-welding-machine",
    "folder-sheet-metal-brake"
   ],
-  "cnc-machine-tools": [
-   "milling-machine",
-   "drill-press",
-   "band-saw",
-   "circular-cold-saws",
-   "belt-grinder"
-  ],
   "cnc-lathe": [
+   "vertical-machining-center",
+   "surface-grinder",
    "milling-machine",
-   "band-saw",
    "drill-press",
-   "circular-cold-saws",
-   "belt-grinder"
+   "band-saw"
   ],
   "vertical-machining-center": [
+   "cnc-lathe",
+   "surface-grinder",
    "milling-machine",
-   "band-saw",
    "drill-press",
-   "vertical-band-saws",
-   "belt-grinder"
+   "band-saw"
   ],
   "surface-grinder": [
+   "cnc-lathe",
+   "vertical-machining-center",
    "milling-machine",
-   "band-saw",
-   "drill-press",
-   "belt-grinder"
-  ],
-  "novotech-cnc-machine-tools": [
-   "milling-machine",
-   "band-saw",
-   "drill-press",
-   "circular-cold-saws",
-   "belt-grinder"
+   "belt-grinder",
+   "drill-press"
   ],
   "milling-machine": [
-   "cnc-machine-tools",
    "vertical-machining-center",
    "cnc-lathe",
    "drill-press",

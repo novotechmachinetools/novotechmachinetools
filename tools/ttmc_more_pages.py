@@ -225,7 +225,7 @@ PAGES = {
              {"q": "Single-phase or 3-phase?",
               "a": "The TB…V inverter column drills run on single-phase power; the gear-head drill presses have 3-phase two-speed motors, supplied for 600 V with a CSA-approved panel or for 208 / 240 / 480 V on request."},
              VOLT],
-        related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes, machining centres and grinders"},
+        related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "cnc-lathe.html", "label": "CNC lathes"}, {"href": "vertical-machining-center.html", "label": "CNC machining centres"},
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}, {"href": "band-saw.html", "label": "Band saws"},
                  {"href": "ironworker-machines.html", "label": "Ironworkers"}, {"href": "hydraulic-press.html", "label": "Hydraulic presses and shop presses"}],
     ),
@@ -258,37 +258,11 @@ PAGES = {
              {"q": "What does a cylinder head resurfacing machine do?",
               "a": "It mills the gasket face of a cylinder head or an engine block flat and smooth again after warping or corrosion, so the new head gasket seals. The KSM-850 feeds the part under a Ø13″ cutter head with CBN inserts for cast iron and PCD for aluminum, with variable head speed and table feed for the finish the gasket needs, on heads and blocks up to 33.5″ long."},
              VOLT],
-        related=[{"href": "drill-press.html", "label": "Drill presses"}, {"href": "cnc-machine-tools.html", "label": "CNC lathes, machining centres and grinders"},
+        related=[{"href": "drill-press.html", "label": "Drill presses"}, {"href": "cnc-lathe.html", "label": "CNC lathes"}, {"href": "vertical-machining-center.html", "label": "CNC machining centres"},
                  {"href": "belt-grinder.html", "label": "Belt grinders and sanders"}, {"href": "band-saw.html", "label": "Band saws"}],
     ),
-    D.P_CNC: dict(
-        title="NovoTech CNC Lathes, VMCs & Boring Mills · Value Line | NovoTech",
-        meta="NovoTech value-line CNC machine tools: a slant-bed CNC lathe, BT40 vertical machining centres with 16 – 24 tool changers, BT50 CNC boring and milling machines and a horizontal machining centre.",
-        h1="NovoTech CNC machine tools — CNC lathe, vertical machining centres and CNC boring mills, the value line",
-        nav="NovoTech CNC machine tools",
-        intro="CNC machine tools for the job shop and the production line, built in China to NovoTech's specification with Mitsubishi, Fanuc "
-              "or Siemens controls to order: the CTK6416 slant-bed CNC lathe with gang tooling, the VMC8046 and VMC10562 vertical machining "
-              "centres with BT40 spindles to 8,000 rpm and 16- and 24-tool changers, CNC boring and milling machines with BT50 spindles and "
-              "rotary B axes for large prismatic parts, the TH-800 horizontal machining centre with a 40-tool magazine, and slot machining "
-              "centres for quartz and glass. Installed, programmed with you and supported from Mississauga, ON, Canada.",
-        points=["VMC8046 and VMC10562 vertical machining centres: 39.4 × 21.7″ table, BT40, 8,000 rpm, 16 / 24 tools",
-                "TXK68 – TXK160D CNC boring and milling machines and TH-800 horizontal machining centre, BT50, 4-axis",
-                "CTK6416 slant-bed CNC lathe with gang tooling; CNC100 / CNC120 slot machining centres"],
-        hero="tm-vmc10562", minis=["tm-th800", "tm-ctk6416"],
-        groups=[("vmc", "Vertical machining centres", "Three-axis CNC milling, drilling and tapping with an automatic tool changer.", False),
-                ("boring", "CNC boring and milling machines", "Large parts machined on several faces in one set-up, with a rotary B axis.", False),
-                ("lathe", "CNC lathe", "A compact slant-bed lathe for small turned parts in series.", False)],
-        faq=[{"q": "Which CNC control do the machines have?",
-              "a": "Mitsubishi or Fanuc on every machine, Siemens on the machining centres — chosen when you order. All three are supported in North America, with programmers and spare parts available locally; we recommend the control your programmers already know."},
-             {"q": "BT40 or BT50?",
-              "a": "BT40 spindles (the same size as CAT40) are the standard for vertical machining centres up to about 15 HP — fast tool changes and a wide choice of holders. BT50 spindles carry larger face mills and boring bars and take heavier cuts: the boring and milling machines have them."},
-             {"q": "Do you install and train?",
-              "a": "Yes — NovoTech delivers, levels and commissions the machine, checks the geometry, and trains your operator on the control; we help with the first programs and the post-processor for your CAM software. Ask us for the foundation drawing and the power requirements before the machine ships."},
-             VOLT],
-        related=[{"href": "milling-machine.html", "label": "Milling machines"}, {"href": "drill-press.html", "label": "Drill presses"},
-                 {"href": "laser-cutting-machine.html", "label": "Fiber laser cutting machines"}],
-    ),
-    # D.P_SHAPE (power-hammer): removed with its hammers (the owner, Nov 7 2026); the PIC50 is on the lock former page
+    # D.P_CNC (novotech-cnc-machine-tools, the value-line CNC lathe, machining centres and boring mills) is off the site
+    # (the owner, Nov 7 2026)
     D.P_WOOD: dict(
         # keyword research (Ubersuggest, Canada, Oct 2026): "woodworking machinery" 320/mo, CPC $1.47; "woodworking machines" 320/mo, CPC $1.08
         title="Woodworking Machinery — Planers, Jointers & Saws | NovoTech",
@@ -455,16 +429,6 @@ def group_entry(page_slug, gid, title, lead, manual, fams):
 def write_page(slug, p, fams):
     groups = [group_entry(slug, gid, t, lead, manual, fams) for gid, t, lead, manual in p["groups"]]
     crumbs = CRUMBS + ([p["crumb"]] if p.get("crumb") else []) + [{"label": p["h1"].split(" — ")[0]}]
-    section = None
-    if slug == D.P_CNC:                               # the value line's page under the CNC machine-tool hub, beside the Dener pages
-        import machine_tools_nav as MTN
-        h = MTN.hub()
-        crumbs = CRUMBS + [{"label": MTN.SECTION, "href": f"{h['slug']}.html"}, {"label": p["h1"].split(" — ")[0]}]
-        section = {"label": MTN.SECTION, "related_title": MTN.RELATED_TITLE,
-                   "hub": {"href": f"{h['slug']}.html", "label": h["label"], "image": h["image"], "blurb": h["blurb"]},
-                   "pages": [{"href": f"{s}.html", "label": nav, "current": s == slug} for s, nav, _ in MTN.siblings()]}
-        p = dict(p, related=[{"href": f"{s}.html", "label": lab} for s, _, lab in MTN.siblings() if s != slug]
-                 + [{"href": f"{h['slug']}.html", "label": h["label"]}] + [r for r in p["related"] if r["href"] != f"{h['slug']}.html"])
     n_models = sum(len(f["specs"]["models"]) for f in fams)
     page = {
         "slug": slug, "template": "category.html", "family_set": SET,
@@ -477,9 +441,6 @@ def write_page(slug, p, fams):
     }
     if p.get("hero_width"):
         page["hero_width"] = p["hero_width"]
-    if section:
-        page["section"] = section
-        page["section_label"] = section["label"]
     write_json(os.path.join(ROOT, "content", "pages", f"{slug}.json"), page)
     return page
 
