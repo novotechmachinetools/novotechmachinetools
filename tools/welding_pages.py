@@ -233,7 +233,7 @@ TAB = dict(
     points=["WT-36X24 fixture table: 36 × 24 × 5/8″, flat to 0.006″, 216 holes of 5/8″ on a 2″ grid, 1,500 lb",
             "MDT-4840 and MDT-6137 downdraft tables: 1,350 CFM, three-stage filtration to HEPA H13",
             "MDT-6022 grinding table: 61 × 20″, 3,700 CFM through four panel filters"],
-    hero="tm-wt3624", minis=[],
+    hero="tm-mdt4840", minis=[],   # the downdraft table large, the welding table under it (the owner, Nov 7 2026)
     faq=[{"q": "What is a downdraft table for?",
           "a": "Grinding, sanding and welding small parts without the dust and fumes rising past the operator's face: a fan under the "
                "perforated top pulls the air down through the filters. The MDT-4840 and MDT-6137 filter it in three stages to HEPA H13, "

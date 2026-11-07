@@ -388,7 +388,11 @@ WHITE = {
 
 def clean_marks(im, keep=0.02, text_h=0.07):
     """paint out every separate blob next to the machine that is small (under `keep` of the machine's ink) or as low as a line
-    of text (under `text_h` of the photo height): captions, model labels, leader lines and specks on the white background"""
+    of text (under `text_h` of the photo height): captions, model labels, leader lines and specks on the white background.
+    Within the outline of the machine (the convex hull of its largest blob) only dark blobs go — text, labels — never a light
+    one: that is the machine's own light grey or white paint, broken into specks by the threshold (the owner, Nov 7 2026: the
+    MGM-300's cabinet door and the fingers of the heavy box and pan brakes came out speckled with white)"""
+    from skimage.morphology import convex_hull_image
     a = np.asarray(im).copy()
     ink = a.min(axis=2) < 225
     lab, n = ndimage.label(ndimage.binary_dilation(ink, iterations=3))
@@ -396,10 +400,15 @@ def clean_marks(im, keep=0.02, text_h=0.07):
         return im
     sizes = ndimage.sum(ink, lab, range(1, n + 1))
     main = int(np.argmax(sizes)) + 1
+    hull = convex_hull_image(lab == main)
+    dark = a.min(axis=2) < 150
     kill = np.zeros(ink.shape, bool)
     for i, sl in enumerate(ndimage.find_objects(lab), 1):
         if i != main and (sizes[i - 1] < keep * sizes[main - 1] or sl[0].stop - sl[0].start < text_h * a.shape[0]):
-            kill |= lab == i
+            blob = lab[sl] == i
+            if hull[sl][blob].any() and dark[sl][blob & ink[sl]].sum() <= 0.25 * max(1, (blob & ink[sl]).sum()):
+                continue                          # a light speck within the machine: its own paint
+            kill[sl] |= blob
     a[ndimage.binary_dilation(kill, iterations=2)] = 255
     return Image.fromarray(a)
 

@@ -165,24 +165,24 @@ PAGES = {
     ),
     D.P_GRIND: dict(
         title="Metal Belt Grinders, Disc Sanders & Bench Grinders | NovoTech",
-        meta="Belt grinders for metal with 2 – 8″ belts: pedestal, floor and wide-belt models, knife grinders, combination grinders, 12 – 20″ disc sanders, bench grinders, chamfering machines and dust collectors.",
+        meta="Belt grinders for metal with 2 – 8″ belts: pedestal, floor and wide-belt models, knife grinders, combination grinders, 12 – 20″ disc sanders, bench grinders, end-surface grinders and dust collectors.",
         h1="Metal belt grinders, disc sanders and bench grinders",
         nav="Belt grinders & sanders",
         intro="Belt grinders are the finishing machines of the fabrication shop: they take the burr off a cut, blend a weld, square an end "
               "and put a chamfer on an edge faster than a hand grinder and with a flatter result. NovoTech's value-line grinders are built in "
               "China to our specification: pedestal belt grinders with 3″ and 6″ belts up to 5.5 HP, a mobile floor grinder for weld seams, "
               "wide-belt grinders with 4″ and 8″ belts, knife and tool grinders, combination machines with a belt, a disc and a wheel on one "
-              "motor, disc sanders to 20″, bench grinders and wire-wheel machines, edge chamfering machines, end-surface grinders and the "
+              "motor, disc sanders to 20″, bench grinders and wire-wheel machines, end-surface grinders and the "
               "dust collectors that keep metal dust out of the shop. Parts and belts from Mississauga, ON, Canada.",
         points=["Pedestal belt grinders 3 × 79″ and 6 × 79″, 4 – 5.5 HP, to 6,693 ft/min; dust collector built in on the HB models",
                 "Wide-belt grinders 4″ and 8″, mobile floor grinder, knife grinders, combination belt / disc / wheel machines",
-                "Disc sanders 12″ and 20″, bench grinders 8 – 10″, chamfering machines to 1/4″, metal dust collectors 494 – 650 CFM"],
+                "Disc sanders 12″ and 20″, bench grinders 8 – 10″, MD-380 end-surface grinders, metal dust collectors 494 – 650 CFM"],
         hero="tm-s75h", minis=["tm-s220", "tm-sp6"],
         groups=[("belt", "Belt grinders", "Pedestal, floor, column and wide-belt grinders for deburring, blending welds and squaring ends — 1-1/2″ to 8″ belts.", False),
                 ("combo", "Combination grinders and sanders", "Two working ends on one motor: belt and disc, belt and wheel, belt sander and edge beveller.", False),
                 ("disc", "Disc sanders", "12″ and 20″ disc sanders for flat sanding, deburring and chamfering weld edges.", False),
                 ("bench", "Bench grinders and wire-wheel machines", "Cast-iron bench grinders and wire-wheel deburring and polishing machines.", False),
-                ("chamfer", "Chamfering machines and end grinders", "Weld preps and clean edges on plate and parts, and flat end faces on round work.", False),
+                ("chamfer", "End-surface grinders", "Flat end faces on round work and parts: a fixed or a rotary table under a 4 HP grinding spindle.", False),
                 ("dust", "Dust collectors", "Collectors for grinding and sanding dust — metal only.", False)],
         faq=[{"q": "Which belt width — 2″, 3″, 4″, 6″ or 8″?",
               "a": "2″ belts (2 × 72″, 2 × 79″) are for knives, tools and detail work; 3″ is the all-round width for deburring and blending in the fabrication shop; 4″ and 6″ belts grind wider parts flat and last longer; 8″ belts are for flat sanding of wide parts and for radius grinding. Most shops start with a 3″ or 6″ pedestal grinder and add a disc sander for flat faces."},
@@ -302,6 +302,14 @@ PAGES = {
 # groups: (group id, title, lead, manual?, after group id or None)
 VL = "NovoTech value line"
 EXTRA = {
+    D.P_BEVEL: dict(
+        # the edge chamfering machines, moved here from the belt grinder page, at the end of the page (the owner, Nov 7 2026)
+        groups=[("tt-chamfer", "Edge chamfering machines · value line", "Bench chamfering machines and hand chamfering units for weld preps and clean edges on plate, strip and parts — NovoTech value line, built in China.", False, None)],
+        intro_add="For chamfers on smaller parts, the NovoTech value-line CMD-80 and CMD-4 bench machines cut 15 – 45° chamfers up to 1/4″ "
+                  "and 5/32″, and the DM5 and DM5A hand units 3/16″ at 45°.",
+        related_add=[{"href": "belt-grinder.html", "label": "Belt grinders and sanders"}],
+        set={"hero_brand_line": "Cevisa bevellers are made in Vitoria, Spain, by CEVISA — plate bevelling machines since 1969, ISO 9001, exported to more than 60 countries; NovoTech's value-line chamfering machines are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
+    ),
     D2.P_ALU: dict(
         groups=[("tt-alu", "Aluminum cut-off saws · value line", "16″ and 20″ pneumatic-clamping saws for aluminum profiles — NovoTech value line, built in China.", False, None)],
         intro_add="For the shop that cuts aluminum profiles now and then, the NovoTech value-line QCS-400 is a 16″ saw with pneumatic clamping "

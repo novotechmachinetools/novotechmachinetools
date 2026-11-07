@@ -15,7 +15,7 @@
   </div>
   <ul class="hero-minis is-many" style="--n: {{ page.hero_cols[0] }}; --m: {{ page.hero_cols[1] }}; --nw: {{ page.hero_cols_wide or page.hero_cols[0] }}; --mh: {{ page.hero_mini_h }}px; --mhm: {{ page.hero_mini_hm }}px">
     {% for n in page.hero_image_secondary %}{% set m = img(n) %}
-    <li>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="(max-width: 960px) 31vw, 190px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{{ page.hero_mini_labels[n] }}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>
+    <li>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="(max-width: 960px) 31vw, 219px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{{ page.hero_mini_labels[n] }}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>
     {% endfor %}
   </ul>
   {% else %}
@@ -23,10 +23,10 @@
   {% if hl.get(page.hero_image) %}<a class="hero-link" href="{{ hl[page.hero_image] }}">{% endif %}<img class="hero-main" src="{{ hero.src }}" srcset="{{ hero.srcset }}" sizes="(max-width: 700px) 92vw, {{ page.hero_width or (820 if page.hero_large else 680) }}px" width="{{ hero.w }}" height="{{ hero.h }}"{% if page.hero_width %} style="width: min(100%, {{ page.hero_width }}px)"{% endif %} alt="{{ hero.alt }}" fetchpriority="high" decoding="async">{% if hl.get(page.hero_image) %}</a>{% endif %}
   {% if page.hero_image_secondary %}
   {# hero_minis_same_h: every small image as tall as the shortest one, so a close-up photo is no bigger than the machine beside it (the owner, Nov 1 2026) #}
-  {% set ns = namespace(h=172) %}
-  {% if page.hero_minis_same_h %}{% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set ch = [172, (242 * m.h / m.w) | round | int] | min %}{% if ch < ns.h %}{% set ns.h = ch %}{% endif %}{% endfor %}{% endif %}
+  {% set ns = namespace(h=198) %}
+  {% if page.hero_minis_same_h %}{% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set ch = [198, (278 * m.h / m.w) | round | int] | min %}{% if ch < ns.h %}{% set ns.h = ch %}{% endif %}{% endfor %}{% endif %}
   <div class="hero-minis">
-    {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 172 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 242 %}{% set mw = 242 %}{% set mh = (242 * m.h / m.w) | round | int %}{% endif %}{% if page.hero_minis_same_h and mh > ns.h %}{% set mh = ns.h %}{% set mw = (mh * m.w / m.h) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
+    {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 198 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 278 %}{% set mw = 278 %}{% set mh = (278 * m.h / m.w) | round | int %}{% endif %}{% if page.hero_minis_same_h and mh > ns.h %}{% set mh = ns.h %}{% set mw = (mh * m.w / m.h) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
   </div>
   {% endif %}
   {% endif %}

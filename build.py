@@ -990,9 +990,15 @@ def build_nav_preview(loaded):
                 g = next((g for g in ep.get("groups", []) if g.get("id") == anchor), None)
                 f = group_family(ep, g) if g else None
                 key = family_thumb(f) if f else None
-            add(e["label"], e["href"], key or ep.get("hero_image"))
-        for g in p.get("groups", []):
+            # "image" on a menu entry in content/site.json: the owner's pick for its card (Nov 7 2026: the CNC tube benders card
+            # shows the CSM 50 MRE2-RBE), otherwise the page's large photo
+            pick = e.get("image") if e.get("image") in manifest else None
+            add(e["label"], e["href"], pick or key or ep.get("hero_image"))
+        swap = c.get("menu_swap") or {}     # family id → the family whose card the menu shows instead (Nov 7 2026: Angle rolls shows
+        for g in p.get("groups", []):       # the HPK 80 instead of the TC-42 coiler)
             f = group_family(p, g)
+            if f and f["id"] in swap:
+                f = FAMILY_SETS.get(g.get("family_set") or p.get("family_set") or "", {}).get(swap[f["id"]]) or f
             if f:
                 add(f.get("short") or g.get("title", ""), f"{slug}.html#{f['id']}", family_thumb(f), f.get("headline", ""))
         for sp in p.get("subpages", []):
@@ -1382,9 +1388,9 @@ def set_hero_many(page, keys, labels, links=None):
     """every product of the page small under the large photo, each with its short name (the owner, Nov 1 2026)"""
     page["hero_image_secondary"], page["hero_mini_labels"], page["hero_many"] = keys, labels, True
     page["hero_cols"] = hero_cols(len(keys))
-    # about 15 % larger than before (the owner, Nov 7 2026: "a little bigger, 10 – 20 %")
-    page["hero_mini_h"] = 110 if len(keys) <= 4 else 96 if len(keys) <= 8 else 84     # desktop height of a small photo, px
-    page["hero_mini_hm"] = 92 if page["hero_cols"][1] <= 2 else 66                    # phone height: bigger when two a row or fewer
+    # about 15 % larger than before (the owner, Nov 7 2026: "a little bigger, 10 – 20 %"), and 15 % again the same afternoon
+    page["hero_mini_h"] = 127 if len(keys) <= 4 else 110 if len(keys) <= 8 else 97    # desktop height of a small photo, px
+    page["hero_mini_hm"] = 106 if page["hero_cols"][1] <= 2 else 76                   # phone height: bigger when two a row or fewer
     page["hero_mini_links"] = links or {}
     # many products (more than 8): on a desktop the strip runs the full width under the hero instead of under the photo only,
     # so the hero stays as tall as its text — balanced rows of up to 8
@@ -1392,7 +1398,7 @@ def set_hero_many(page, keys, labels, links=None):
     if n > 8:
         rows = -(-n // 8)
         page["hero_wide"], page["hero_cols_wide"] = True, -(-n // rows)
-        page["hero_mini_h"] = 110                      # the full-width strip has room for the larger photos
+        page["hero_mini_h"] = 127                      # the full-width strip has room for the larger photos
 
 
 def hero_keys(hero):

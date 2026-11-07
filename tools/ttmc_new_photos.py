@@ -26,14 +26,16 @@ TFM_PDF = BR + "TFM3100x2E TFMS3100X2E.pdf"
 DST = P.DST
 
 
-def S(src, box=None, alt="", white=(), logo=(), clean=False, detail=False, xref=None, logo_out=(), lines=()):
+def S(src, box=None, alt="", white=(), logo=(), clean=False, detail=False, xref=None, logo_out=(), lines=(), poly=()):
     """src: an image file, or a PDF with xref; box: crop (x0, y0, x1, y1) in source pixels, None = whole image;
     white / logo: boxes (x0, y0, x1, y1) in source pixels painted white / filled from the surface around the badge;
     logo_out: badge boxes in the pixels of the finished (cropped and trimmed) photo, padded by PAD;
     lines: thin frame or dash lines of the catalogue layout on the finished photo, ("h", y0, y1) or ("v", x0, x1) —
-    erased wherever there is white on both sides of the line (not where the machine crosses it)"""
+    erased wherever there is white on both sides of the line (not where the machine crosses it);
+    poly: polygons [(x, y), …] in source pixels painted white — what stands under or around the machine and is not part of it
+    (the YQ-450's shipping pallet, Nov 7 2026), so the cut-out leaves it out"""
     return dict(src=src, xref=xref, box=box, alt=alt, white=list(white), logo=list(logo), clean=clean, detail=detail,
-                logo_out=list(logo_out), lines=list(lines))
+                logo_out=list(logo_out), lines=list(lines), poly=[list(q) for q in poly])
 
 
 def erase_lines(im, lines):
@@ -98,14 +100,28 @@ PHOTOS = {
     "tm-rb3653000d-stop": S(SAW + "RB365x3000D.jpg", (1104, 1226, 1715, 1624), "Length stop with digital display", detail=True),
     "tm-srb3202000d": S(SAW + "SRB-320X2000D.jpg", (128, 332, 2404, 1750), "SRB-320×2000D roller stand with vertical side rollers", clean=True, logo_out=[(1318, 485, 1468, 560)]),
     # ------------------------------------------------------------------------------------------- deburring, milling, presses
-    "tm-mgm300": S(NI + "MGM300.jpg", (112, 250, 1032, 1592), "MGM-300 finishing and deburring machine, 12″ working width", clean=True),
+    # no clean_marks here: it took the light grey door of the cabinet for specks and painted it white (the owner, Nov 7 2026) —
+    # only the corner of the next photo at the bottom right is painted out
+    "tm-mgm300": S(NI + "MGM300.jpg", (112, 250, 1032, 1592), "MGM-300 finishing and deburring machine, 12″ working width",
+                   white=[(975, 1215, 1032, 1592)]),
     "tm-mgm300-conveyor": S(NI + "MGM300.jpg", (1231, 1218, 1799, 1592), "Conveyor drive and abrasive belt of the MGM-300", detail=True),
     # corner grinders (the owner's sheet, Nov 7 2026): the vertical machine's photo is the sheet's two halves stacked; the
     # Chinese warning labels are filled from the paint around them
     "tm-yq-h": S(YQ + "yq-h.png", None, "YQ horizontal corner grinding machine with its control cabinet and foot pedal",
                  logo=[(495, 214, 555, 260), (456, 91, 500, 102)]),
     "tm-yq-v": S(YQ + "yq450.png", None, "YQ-450 vertical corner grinding and polishing machine",
-                 logo=[(286, 66, 402, 182), (946, 82, 1032, 168), (972, 588, 1008, 668)]),
+                 logo=[(286, 66, 402, 182), (946, 82, 1032, 168), (972, 588, 1008, 668)],
+                 # the wooden shipping pallet under the machine and the floor around it painted out (the owner, Nov 7 2026): every-
+                 # thing below the column's base plate and the electrical cabinet, traced on the photo
+                 poly=[[(0, 620), (330, 620), (333, 745), (266, 779), (263, 817),
+                        (278, 816), (294, 822), (310, 828), (326, 832), (342, 839), (358, 841), (374, 847), (390, 851), (406, 856),
+                        (422, 862), (438, 867), (454, 872), (470, 878), (486, 882), (502, 888), (518, 902), (534, 909), (550, 915),
+                        (566, 923), (582, 932), (598, 937), (614, 942), (630, 948), (646, 953), (662, 960), (678, 964), (694, 968),
+                        (705, 968), (706, 941), (712, 943), (724, 947), (736, 952), (748, 956), (760, 960), (772, 964), (784, 968),
+                        (796, 973), (808, 977), (820, 981), (832, 985), (844, 989), (856, 993), (868, 998), (880, 1002), (892, 1006),
+                        (904, 1011), (916, 1014), (928, 1009), (940, 996), (952, 979), (964, 965), (976, 950), (988, 936), (1000, 921),
+                        (1012, 907), (1024, 893), (1036, 879), (1048, 865), (1060, 851), (1072, 837), (1084, 822), (1096, 803),
+                        (1108, 784), (1116, 772), (1269, 772), (1269, 1141), (0, 1141)]]),
     # dry deburring and finishing sanders (the owner's sheet, Nov 7 2026): the Chinese labels on the sanding heads are filled
     "tm-dfm1300": S(DFM + "dfm-main.png", None, "R-R1300 two-head dry deburring and finishing sander with its dust collector",
                     white=[(1175, 696, 1222, 709)]),
@@ -271,6 +287,11 @@ def process(key):
     im = pdf_image(p["src"], p["xref"]) if p["xref"] else Image.open(p["src"]).convert("RGB")
     im = paint(im, p["white"], "white")
     im = paint(im, p["logo"], "logo")
+    if p["poly"]:
+        from PIL import ImageDraw
+        dr = ImageDraw.Draw(im)
+        for q in p["poly"]:
+            dr.polygon([tuple(v) for v in q], fill=(255, 255, 255))
     if p["box"]:
         im = im.crop(p["box"])
     if p["clean"]:

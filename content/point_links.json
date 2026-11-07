@@ -194,8 +194,8 @@
    "tt-bg"
   ],
   [
-   "chamfering machines to 1/4″",
-   "tt-cmd"
+   "MD-380 end-surface grinders",
+   "tt-md380"
   ],
   [
    "metal dust collectors 494 – 650 CFM",
@@ -1474,6 +1474,14 @@
    "sahinler-dpm-k"
   ],
   [
+   "AT T-slot presses",
+   "sahinler-at"
+  ],
+  [
+   "AP press brakes",
+   "sahinler-ap"
+  ],
+  [
    "EBP-10T bench press",
    "tt-ebp10t"
   ],
@@ -1482,19 +1490,19 @@
    "tt-shop-small"
   ],
   [
+   "HPB brake presses",
+   "tt-hpb"
+  ],
+  [
+   "HP H-frame presses",
+   "tt-hp-h"
+  ],
+  [
    "HPP-60 – HPP-160 motorized workshop presses",
    "tt-shop-hs"
   ]
  ],
  "h-frame-hydraulic-press": [
-  [
-   "AT T-slot presses",
-   "sahinler-at"
-  ],
-  [
-   "AP press brakes",
-   "sahinler-ap"
-  ],
   [
    "HDT Eco H-frame",
    "nt-press-hdt"
@@ -1514,18 +1522,6 @@
   [
    "HCFP four-column",
    "nt-press-hcfp"
-  ],
-  [
-   "HP-M1 sliding-table",
-   "tt-hp-m1"
-  ],
-  [
-   "HPB brake",
-   "tt-hpb"
-  ],
-  [
-   "HP H-frame",
-   "tt-hp-h"
   ],
   [
    "HP-F four-column presses",
@@ -1558,6 +1554,10 @@
   [
    "DK-S 3-axis moving straightening presses",
    "sahinler-dk-s"
+  ],
+  [
+   "Value-line HP-M1 presses with a sliding table",
+   "tt-hp-m1"
   ]
  ],
  "riveting-machine": [

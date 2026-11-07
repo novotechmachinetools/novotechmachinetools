@@ -2,19 +2,18 @@
  "order": [
   "sahinler-dpm",
   "sahinler-dpm-k",
-  "tt-ebp10t",
-  "tt-shop-small",
-  "tt-shop-hs",
   "sahinler-at",
   "sahinler-ap",
+  "tt-ebp10t",
+  "tt-shop-small",
+  "tt-hpb",
+  "tt-hp-h",
+  "tt-shop-hs",
   "nt-press-hdt",
   "nt-press-hsa",
   "nt-press-hdd",
   "nt-press-hhrp",
   "nt-press-hcfp",
-  "tt-hp-m1",
-  "tt-hpb",
-  "tt-hp-h",
   "tt-hp-f",
   "nt-press-cfs",
   "nt-press-cfss",
@@ -22,6 +21,7 @@
   "tt-hp-c",
   "nt-press-hsps",
   "sahinler-dk-s",
+  "tt-hp-m1",
   "tt-riveter"
  ],
  "families": {
@@ -990,404 +990,6 @@
    },
    "group": "pl-shop"
   },
-  "tt-ebp10t": {
-   "id": "tt-ebp10t",
-   "brand": "novotech",
-   "name": "EBP-10T hydraulic bench press for sheet-metal tooling, 10 tons, 25″ throat",
-   "short": "EBP-10T bench press",
-   "models_label": "EBP-10T · 1 model",
-   "summary": "A 10-ton hydraulic bench press for the sheet-metal and HVAC shop: a 25″ throat and a 6″ tool opening take the industry-standard bench and louver press tooling — punch round, square and oblong holes, punch and flare or punch and bead, cut louvers, notch corners, bend 90° in 3/8″ mild steel and shear 16 ga — and it works as a hydraulic arbor press as well.",
-   "features": [
-    "10 tons hydraulic; 4″ stroke; 25″ throat; 6″ tool opening",
-    "Takes all standard bench press and louver press tooling",
-    "Tooling: shear 16 ga, 90° bend 3/8″, corner punch 16 ga, louver punches 1 – 5″, punch & flare and punch & bead 1 – 3″"
-   ],
-   "optional": [
-    "Shear kit",
-    "90° bend kit",
-    "Corner punch and corner radius punch",
-    "Louver punches",
-    "Punch & flare and punch & bead kits",
-    "Universal tool stand"
-   ],
-   "images": [
-    "tm-ebp10t",
-    "tm-louver"
-   ],
-   "videos": [],
-   "headline": "10 tons, 25″ throat",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "EBP-10T",
-      "sub": "Hydraulic bench press for punch, flare, bead, louver and bend tooling",
-      "models": [
-       "EBP-10T"
-      ],
-      "rows": [
-       {
-        "label": "Capacity",
-        "sub": "",
-        "cells": [
-         "10 tons, hydraulic, 4″ stroke"
-        ],
-        "key": true
-       },
-       {
-        "label": "Throat depth",
-        "sub": "",
-        "cells": [
-         "25″"
-        ],
-        "key": true
-       },
-       {
-        "label": "Tool opening",
-        "sub": "",
-        "cells": [
-         "6″"
-        ],
-        "key": false
-       },
-       {
-        "label": "Tooling",
-        "sub": "",
-        "cells": [
-         "All BP-3T bench and louver press tooling; adaptor and die plate included"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "53 × 45 × 25″ (135 × 115 × 63 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "739 lb (335 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "EBP-10T",
-      "glance": [
-       "10 tons, hydraulic, 4″ stroke",
-       "25″",
-       "All BP-3T bench and louver press tooling; adaptor and die plate included",
-       "739 lb (335 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "capacity",
-     "throat_depth",
-     "tooling",
-     "weight"
-    ],
-    "caps": {
-     "EBP-10T": "10 tons, hydraulic, 4″ stroke"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "vl-shop"
-  },
-  "tt-shop-small": {
-   "id": "tt-shop-small",
-   "brand": "novotech",
-   "name": "EBP-25T motorized workshop press, 28 US tons",
-   "short": "EBP-25T workshop press",
-   "models_label": "EBP-25T · 1 model",
-   "summary": "A compact workshop press with a motorized pump and infinitely variable pressure and speed — pressing bearings, bushings and shafts, and straightening on the two V-blocks — for the garage, the farm and the maintenance shop.",
-   "features": [
-    "28 US tons (250 kN); 7.9″ (200 mm) stroke",
-    "Motorized pump; infinitely variable pressure and speed; pressure gauge",
-    "Two V-blocks for straightening"
-   ],
-   "optional": [],
-   "images": [
-    "tm-ebp25t"
-   ],
-   "videos": [],
-   "headline": "28 US tons",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "EBP-25T",
-      "sub": "Motorized workshop press with two V-blocks",
-      "models": [
-       "EBP-25T"
-      ],
-      "rows": [
-       {
-        "label": "Force",
-        "sub": "",
-        "cells": [
-         "28 US tons (250 kN)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "7.9″ (200 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Pump",
-        "sub": "",
-        "cells": [
-         "Motorized pump, infinitely variable pressure and speed: 0.35 in/s (8.8 mm/s)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Return speed",
-        "sub": "",
-        "cells": [
-         "0.49 in/s (12.5 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Oil reservoir",
-        "sub": "",
-        "cells": [
-         "1.3 US gal (5 L)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "39 × 38 × 43″ (98 × 96 × 108 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "534 lb (242 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "EBP-25T",
-      "glance": [
-       "28 US tons (250 kN)",
-       "Motorized pump, infinitely variable pressure and speed: 0.35 in/s (8.8 mm/s)",
-       "534 lb (242 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "force",
-     "pump",
-     "weight"
-    ],
-    "caps": {
-     "EBP-25T": "28 US tons (250 kN)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "vl-shop"
-  },
-  "tt-shop-hs": {
-   "id": "tt-shop-hs",
-   "brand": "novotech",
-   "name": "HPP-60 · HPP-100 · HPP-160 motorized workshop presses, 66 – 176 US tons",
-   "short": "HPP motorized workshop presses",
-   "models_label": "HPP-60 · HPP-100 · HPP-160 · 3 models",
-   "summary": "Motorized H-frame workshop presses for repair, assembly and straightening: a two-step hydraulic unit with a 3 – 4 HP motor and a double-acting hand pump for fine positioning, a cylinder that moves across the frame, V-block worktables and 16″ of stroke, from 66 to 176 US tons with working widths to 43.3″.",
-   "features": [
-    "HPP-60 / 100 / 160: 66, 110 and 176 US tons",
-    "3 – 4 HP; two-step hydraulic unit; 16.1″ (410 mm) stroke",
-    "Cylinder moves across the frame; V-block worktable",
-    "Working width 29.5 – 43.3″ (750 – 1,100 mm)"
-   ],
-   "optional": [],
-   "images": [
-    "tm-hpp100"
-   ],
-   "videos": [],
-   "headline": "66 – 176 US tons",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "HPP-60 · HPP-100 · HPP-160",
-      "sub": "Motorized workshop presses with moving cylinder, 66 – 176 US tons",
-      "models": [
-       "HPP-60",
-       "HPP-100",
-       "HPP-160"
-      ],
-      "rows": [
-       {
-        "label": "Force",
-        "sub": "",
-        "cells": [
-         "66 US tons (600 kN)",
-         "110 US tons (1,000 kN)",
-         "176 US tons (1,600 kN)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Pressure, max",
-        "sub": "",
-        "cells": [
-         "3,408 psi (23.5 MPa)",
-         "3,916 psi (27 MPa)",
-         "4,496 psi (31 MPa)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "16.1″ (410 mm)",
-         "16.1″ (410 mm)",
-         "16.1″ (410 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Working width, max",
-        "sub": "",
-        "cells": [
-         "29.5″ (750 mm)",
-         "36.2″ (920 mm)",
-         "43.3″ (1,100 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Speeds: approach / press / return",
-        "sub": "",
-        "cells": [
-         "0.36 / 0.09 / 0.5 in/s (9.2 / 2.2 / 12.7 mm/s)",
-         "0.36 / 0.11 / 0.48 in/s (9.2 / 2.7 / 12.3 mm/s)",
-         "0.36 / 0.09 / 0.47 in/s (9.2 / 2.3 / 12 mm/s)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Motor",
-        "sub": "",
-        "cells": [
-         "3 HP (2.2 kW)",
-         "4 HP (3 kW)",
-         "4 HP (3 kW)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Oil tank",
-        "sub": "",
-        "cells": [
-         "7.9 US gal (30 L)",
-         "7.9 US gal (30 L)",
-         "7.9 US gal (30 L)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "67 × 39 × 83″ (170 × 100 × 210 cm)",
-         "74 × 39 × 98″ (187 × 100 × 248 cm)",
-         "85 × 47 × 102″ (215 × 120 × 258 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "1,852 lb (840 kg)",
-         "2,954 lb (1,340 kg)",
-         "4,189 lb (1,900 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "HPP-60",
-      "glance": [
-       "66 US tons (600 kN)",
-       "16.1″ (410 mm)",
-       "29.5″ (750 mm)",
-       "3 HP (2.2 kW)",
-       "1,852 lb (840 kg)"
-      ]
-     },
-     {
-      "name": "HPP-100",
-      "glance": [
-       "110 US tons (1,000 kN)",
-       "16.1″ (410 mm)",
-       "36.2″ (920 mm)",
-       "4 HP (3 kW)",
-       "2,954 lb (1,340 kg)"
-      ]
-     },
-     {
-      "name": "HPP-160",
-      "glance": [
-       "176 US tons (1,600 kN)",
-       "16.1″ (410 mm)",
-       "43.3″ (1,100 mm)",
-       "4 HP (3 kW)",
-       "4,189 lb (1,900 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "force",
-     "stroke",
-     "working_width_max",
-     "motor",
-     "weight"
-    ],
-    "caps": {
-     "HPP-60": "66 US tons (600 kN)",
-     "HPP-100": "110 US tons (1,000 kN)",
-     "HPP-160": "176 US tons (1,600 kN)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "vl-shop"
-  },
   "sahinler-at": {
    "id": "sahinler-at",
    "brand": "novotech-premium",
@@ -1627,7 +1229,7 @@
     "label": "Download the shop presses brochure",
     "size": "PDF · 1 MB · imperial units"
    },
-   "group": "pl-h"
+   "group": "pl-shop"
   },
   "sahinler-ap": {
    "id": "sahinler-ap",
@@ -1869,7 +1471,967 @@
     "label": "Download the shop presses brochure",
     "size": "PDF · 1 MB · imperial units"
    },
-   "group": "pl-h"
+   "group": "pl-shop"
+  },
+  "tt-ebp10t": {
+   "id": "tt-ebp10t",
+   "brand": "novotech",
+   "name": "EBP-10T hydraulic bench press for sheet-metal tooling, 10 tons, 25″ throat",
+   "short": "EBP-10T bench press",
+   "models_label": "EBP-10T · 1 model",
+   "summary": "A 10-ton hydraulic bench press for the sheet-metal and HVAC shop: a 25″ throat and a 6″ tool opening take the industry-standard bench and louver press tooling — punch round, square and oblong holes, punch and flare or punch and bead, cut louvers, notch corners, bend 90° in 3/8″ mild steel and shear 16 ga — and it works as a hydraulic arbor press as well.",
+   "features": [
+    "10 tons hydraulic; 4″ stroke; 25″ throat; 6″ tool opening",
+    "Takes all standard bench press and louver press tooling",
+    "Tooling: shear 16 ga, 90° bend 3/8″, corner punch 16 ga, louver punches 1 – 5″, punch & flare and punch & bead 1 – 3″"
+   ],
+   "optional": [
+    "Shear kit",
+    "90° bend kit",
+    "Corner punch and corner radius punch",
+    "Louver punches",
+    "Punch & flare and punch & bead kits",
+    "Universal tool stand"
+   ],
+   "images": [
+    "tm-ebp10t",
+    "tm-louver"
+   ],
+   "videos": [],
+   "headline": "10 tons, 25″ throat",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "EBP-10T",
+      "sub": "Hydraulic bench press for punch, flare, bead, louver and bend tooling",
+      "models": [
+       "EBP-10T"
+      ],
+      "rows": [
+       {
+        "label": "Capacity",
+        "sub": "",
+        "cells": [
+         "10 tons, hydraulic, 4″ stroke"
+        ],
+        "key": true
+       },
+       {
+        "label": "Throat depth",
+        "sub": "",
+        "cells": [
+         "25″"
+        ],
+        "key": true
+       },
+       {
+        "label": "Tool opening",
+        "sub": "",
+        "cells": [
+         "6″"
+        ],
+        "key": false
+       },
+       {
+        "label": "Tooling",
+        "sub": "",
+        "cells": [
+         "All BP-3T bench and louver press tooling; adaptor and die plate included"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "53 × 45 × 25″ (135 × 115 × 63 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "739 lb (335 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EBP-10T",
+      "glance": [
+       "10 tons, hydraulic, 4″ stroke",
+       "25″",
+       "All BP-3T bench and louver press tooling; adaptor and die plate included",
+       "739 lb (335 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "capacity",
+     "throat_depth",
+     "tooling",
+     "weight"
+    ],
+    "caps": {
+     "EBP-10T": "10 tons, hydraulic, 4″ stroke"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vl-shop"
+  },
+  "tt-shop-small": {
+   "id": "tt-shop-small",
+   "brand": "novotech",
+   "name": "EBP-25T motorized workshop press, 28 US tons",
+   "short": "EBP-25T workshop press",
+   "models_label": "EBP-25T · 1 model",
+   "summary": "A compact workshop press with a motorized pump and infinitely variable pressure and speed — pressing bearings, bushings and shafts, and straightening on the two V-blocks — for the garage, the farm and the maintenance shop.",
+   "features": [
+    "28 US tons (250 kN); 7.9″ (200 mm) stroke",
+    "Motorized pump; infinitely variable pressure and speed; pressure gauge",
+    "Two V-blocks for straightening"
+   ],
+   "optional": [],
+   "images": [
+    "tm-ebp25t"
+   ],
+   "videos": [],
+   "headline": "28 US tons",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "EBP-25T",
+      "sub": "Motorized workshop press with two V-blocks",
+      "models": [
+       "EBP-25T"
+      ],
+      "rows": [
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "28 US tons (250 kN)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "7.9″ (200 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Pump",
+        "sub": "",
+        "cells": [
+         "Motorized pump, infinitely variable pressure and speed: 0.35 in/s (8.8 mm/s)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Return speed",
+        "sub": "",
+        "cells": [
+         "0.49 in/s (12.5 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Oil reservoir",
+        "sub": "",
+        "cells": [
+         "1.3 US gal (5 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "39 × 38 × 43″ (98 × 96 × 108 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "534 lb (242 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "EBP-25T",
+      "glance": [
+       "28 US tons (250 kN)",
+       "Motorized pump, infinitely variable pressure and speed: 0.35 in/s (8.8 mm/s)",
+       "534 lb (242 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "pump",
+     "weight"
+    ],
+    "caps": {
+     "EBP-25T": "28 US tons (250 kN)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vl-shop"
+  },
+  "tt-hpb": {
+   "id": "tt-hpb",
+   "brand": "novotech",
+   "name": "HPB presses with brake function, 33 – 331 US tons — single and twin cylinder",
+   "short": "HPB brake presses",
+   "models_label": "HPB-580 – HPB-3000D · 11 models",
+   "summary": "H-frame presses set up as press brakes: replaceable top tools, a V-block and a support table with stops, a worktable lifted by a chain from the main cylinder, on a torsion-proof steel weldment. The HPB models have one cylinder; the D models two cylinders for bending widths of 47 – 71″, with a synchronizing device as an option and fine adjustment of the angle.",
+   "features": [
+    "33 – 220 US tons single cylinder; 33 – 331 US tons twin cylinder (D)",
+    "Tables 11.8 × 15.7″ to 70.9 × 27.6″",
+    "Replaceable top tools, V-block, support table with stops",
+    "Angle fine adjustment; synchronizing device optional (D models)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-hpb580",
+    "tm-hpb580d",
+    "tm-hpb1500",
+    "tm-hpb1500d"
+   ],
+   "videos": [],
+   "headline": "33 – 331 US tons",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPB-580 – HPB-2000 · HPB-580D – HPB-3000D",
+      "sub": "H-frame presses with brake function — single cylinder or two cylinders (D) for wide bending",
+      "models": [
+       "HPB-580",
+       "HPB-790",
+       "HPB-1010",
+       "HPB-1500",
+       "HPB-2000",
+       "HPB-580D",
+       "HPB-790D",
+       "HPB-1000D",
+       "HPB-1500D",
+       "HPB-2000D",
+       "HPB-3000D"
+      ],
+      "rows": [
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "33 US tons (300 kN)",
+         "55 US tons (500 kN)",
+         "110 US tons (1,000 kN)",
+         "165 US tons (1,500 kN)",
+         "220 US tons (2,000 kN)",
+         "33 US tons (300 kN)",
+         "55 US tons (500 kN)",
+         "110 US tons (1,000 kN)",
+         "165 US tons (1,500 kN)",
+         "220 US tons (2,000 kN)",
+         "331 US tons (3,000 kN)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pressure",
+        "sub": "",
+        "cells": [
+         "3,626 psi (25 MPa)",
+         "3,626 psi (25 MPa)",
+         "4,351 psi (30 MPa)",
+         "4,351 psi (30 MPa)",
+         "4,351 psi (30 MPa)",
+         "3,626 psi (25 MPa)",
+         "3,626 psi (25 MPa)",
+         "4,569 psi (31.5 MPa)",
+         "4,569 psi (31.5 MPa)",
+         "4,569 psi (31.5 MPa)",
+         "4,569 psi (31.5 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Travel",
+        "sub": "",
+        "cells": [
+         "11.8 + 10.6″ (300 + 270 mm)",
+         "8.7 + 15.9″ (220 + 405 mm)",
+         "9.8 + 15.9″ (250 + 405 mm)",
+         "9.8 + 15.9″ (250 + 405 mm)",
+         "11.8 + 15.9″ (300 + 405 mm)",
+         "8.7″ (220 mm)",
+         "8.7″ (220 mm)",
+         "9.8″ (250 mm)",
+         "9.8″ (250 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "11.8 × 15.7″ (300 × 400 mm)",
+         "15.7 × 31.5″ (400 × 800 mm)",
+         "18.1 × 38.6″ (460 × 980 mm)",
+         "18.1 × 38.6″ (460 × 980 mm)",
+         "19.7 × 39.4″ (500 × 1,000 mm)",
+         "47.2 × 11.8″ (1,200 × 300 mm)",
+         "51.2 × 14.2″ (1,300 × 360 mm)",
+         "59.1 × 17.3″ (1,500 × 440 mm)",
+         "59.1 × 17.3″ (1,500 × 440 mm)",
+         "63 × 19.7″ (1,600 × 500 mm)",
+         "70.9 × 27.6″ (1,800 × 700 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Machine size L × W × H",
+        "sub": "",
+        "cells": [
+         "47 × 22 × 66″ (120 × 55 × 168 cm)",
+         "56 × 26 × 78″ (143 × 65 × 197 cm)",
+         "69 × 30 × 87″ (175 × 75 × 220 cm)",
+         "69 × 28 × 87″ (175 × 72 × 220 cm)",
+         "72 × 31 × 89″ (184 × 80 × 225 cm)",
+         "73 × 22 × 67″ (186 × 55 × 170 cm)",
+         "79 × 25 × 79″ (200 × 64 × 200 cm)",
+         "94 × 30 × 87″ (240 × 75 × 220 cm)",
+         "94 × 30 × 87″ (240 × 75 × 220 cm)",
+         "106 × 33 × 87″ (270 × 85 × 220 cm)",
+         "116 × 43 × 98″ (295 × 110 × 250 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "624 lb (283 kg)",
+         "1,274 lb (578 kg)",
+         "2,818 lb (1,278 kg)",
+         "3,395 lb (1,540 kg)",
+         "4,480 lb (2,032 kg)",
+         "1,676 lb (760 kg)",
+         "2,425 lb (1,100 kg)",
+         "3,770 lb (1,710 kg)",
+         "4,299 lb (1,950 kg)",
+         "5,732 lb (2,600 kg)",
+         "9,083 lb (4,120 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPB-580",
+      "glance": [
+       "33 US tons (300 kN)",
+       "11.8 + 10.6″ (300 + 270 mm)",
+       "11.8 × 15.7″ (300 × 400 mm)",
+       "624 lb (283 kg)"
+      ]
+     },
+     {
+      "name": "HPB-790",
+      "glance": [
+       "55 US tons (500 kN)",
+       "8.7 + 15.9″ (220 + 405 mm)",
+       "15.7 × 31.5″ (400 × 800 mm)",
+       "1,274 lb (578 kg)"
+      ]
+     },
+     {
+      "name": "HPB-1010",
+      "glance": [
+       "110 US tons (1,000 kN)",
+       "9.8 + 15.9″ (250 + 405 mm)",
+       "18.1 × 38.6″ (460 × 980 mm)",
+       "2,818 lb (1,278 kg)"
+      ]
+     },
+     {
+      "name": "HPB-1500",
+      "glance": [
+       "165 US tons (1,500 kN)",
+       "9.8 + 15.9″ (250 + 405 mm)",
+       "18.1 × 38.6″ (460 × 980 mm)",
+       "3,395 lb (1,540 kg)"
+      ]
+     },
+     {
+      "name": "HPB-2000",
+      "glance": [
+       "220 US tons (2,000 kN)",
+       "11.8 + 15.9″ (300 + 405 mm)",
+       "19.7 × 39.4″ (500 × 1,000 mm)",
+       "4,480 lb (2,032 kg)"
+      ]
+     },
+     {
+      "name": "HPB-580D",
+      "glance": [
+       "33 US tons (300 kN)",
+       "8.7″ (220 mm)",
+       "47.2 × 11.8″ (1,200 × 300 mm)",
+       "1,676 lb (760 kg)"
+      ]
+     },
+     {
+      "name": "HPB-790D",
+      "glance": [
+       "55 US tons (500 kN)",
+       "8.7″ (220 mm)",
+       "51.2 × 14.2″ (1,300 × 360 mm)",
+       "2,425 lb (1,100 kg)"
+      ]
+     },
+     {
+      "name": "HPB-1000D",
+      "glance": [
+       "110 US tons (1,000 kN)",
+       "9.8″ (250 mm)",
+       "59.1 × 17.3″ (1,500 × 440 mm)",
+       "3,770 lb (1,710 kg)"
+      ]
+     },
+     {
+      "name": "HPB-1500D",
+      "glance": [
+       "165 US tons (1,500 kN)",
+       "9.8″ (250 mm)",
+       "59.1 × 17.3″ (1,500 × 440 mm)",
+       "4,299 lb (1,950 kg)"
+      ]
+     },
+     {
+      "name": "HPB-2000D",
+      "glance": [
+       "220 US tons (2,000 kN)",
+       "11.8″ (300 mm)",
+       "63 × 19.7″ (1,600 × 500 mm)",
+       "5,732 lb (2,600 kg)"
+      ]
+     },
+     {
+      "name": "HPB-3000D",
+      "glance": [
+       "331 US tons (3,000 kN)",
+       "11.8″ (300 mm)",
+       "70.9 × 27.6″ (1,800 × 700 mm)",
+       "9,083 lb (4,120 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "travel",
+     "table",
+     "weight"
+    ],
+    "caps": {
+     "HPB-580": "33 US tons (300 kN)",
+     "HPB-790": "55 US tons (500 kN)",
+     "HPB-1010": "110 US tons (1,000 kN)",
+     "HPB-1500": "165 US tons (1,500 kN)",
+     "HPB-2000": "220 US tons (2,000 kN)",
+     "HPB-580D": "33 US tons (300 kN)",
+     "HPB-790D": "55 US tons (500 kN)",
+     "HPB-1000D": "110 US tons (1,000 kN)",
+     "HPB-1500D": "165 US tons (1,500 kN)",
+     "HPB-2000D": "220 US tons (2,000 kN)",
+     "HPB-3000D": "331 US tons (3,000 kN)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vl-shop"
+  },
+  "tt-hp-h": {
+   "id": "tt-hp-h",
+   "brand": "novotech",
+   "name": "HP-30 – HP-500 motorized H-frame hydraulic presses, 33 – 551 US tons",
+   "short": "HP H-frame presses",
+   "models_label": "HP-30 – HP-500 · 10 models",
+   "summary": "Motorized H-frame hydraulic presses for production pressing, forming, straightening and assembly, from 33 to 551 US tons: a piston stroke of 7.9 – 11.8″ plus 10.6 – 25.6″ of table travel, tables up to 35.4 × 47.2″, the hydraulic unit built on to 88 US tons and a separate hydraulic station from 110 US tons up. CE equipment, complete guarding, a foot pedal and travel limit switches are available.",
+   "features": [
+    "33, 55, 69, 88, 110, 165, 220, 331, 441 and 551 US tons",
+    "Pressure 3,626 – 4,569 psi (25 – 31.5 MPa)",
+    "Tables 11.8 × 15.7″ to 35.4 × 47.2″",
+    "Hydraulic unit built on (HP-30 – HP-80) or separate (HP-100 and up)"
+   ],
+   "optional": [
+    "CE equipment",
+    "Complete guarding",
+    "Foot pedal switch",
+    "Travel limit switch",
+    "Table lift device (HP-30, 50, 63, 80)"
+   ],
+   "images": [
+    "tm-hp30",
+    "tm-hp100"
+   ],
+   "videos": [],
+   "headline": "33 – 551 US tons",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HP-30 – HP-500",
+      "sub": "Motorized H-frame hydraulic presses, 33 – 551 US tons",
+      "models": [
+       "HP-30",
+       "HP-50",
+       "HP-63",
+       "HP-80",
+       "HP-100",
+       "HP-150",
+       "HP-200",
+       "HP-300",
+       "HP-400",
+       "HP-500"
+      ],
+      "rows": [
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "33 US tons (300 kN)",
+         "55 US tons (500 kN)",
+         "69 US tons (630 kN)",
+         "88 US tons (800 kN)",
+         "110 US tons (1,000 kN)",
+         "165 US tons (1,500 kN)",
+         "220 US tons (2,000 kN)",
+         "331 US tons (3,000 kN)",
+         "441 US tons (4,000 kN)",
+         "551 US tons (5,000 kN)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pressure",
+        "sub": "",
+        "cells": [
+         "3,626 psi (25 MPa)",
+         "3,626 psi (25 MPa)",
+         "3,626 psi (25 MPa)",
+         "4,351 psi (30 MPa)",
+         "4,351 psi (30 MPa)",
+         "4,351 psi (30 MPa)",
+         "4,569 psi (31.5 MPa)",
+         "4,569 psi (31.5 MPa)",
+         "4,569 psi (31.5 MPa)",
+         "4,569 psi (31.5 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Piston travel + table travel",
+        "sub": "",
+        "cells": [
+         "7.9 + 10.6″ (200 + 270 mm)",
+         "8.7 + 15.9″ (220 + 405 mm)",
+         "8.7 + 15.9″ (220 + 405 mm)",
+         "10.2 + 25.6″ (260 + 650 mm)",
+         "9.8 + 15.9″ (250 + 405 mm)",
+         "9.8 + 15.9″ (250 + 405 mm)",
+         "11.8 + 15.9″ (300 + 405 mm)",
+         "11.8 + 15.9″ (300 + 405 mm)",
+         "11.8 + 15.9″ (300 + 405 mm)",
+         "11.8 + 15.9″ (300 + 405 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Table",
+        "sub": "",
+        "cells": [
+         "11.8 × 15.7″ (300 × 400 mm)",
+         "13.8 × 18.9″ (350 × 480 mm)",
+         "13.8 × 18.9″ (350 × 480 mm)",
+         "15.7 × 30.7″ (400 × 780 mm)",
+         "18.1 × 38.6″ (460 × 980 mm)",
+         "18.1 × 38.6″ (460 × 980 mm)",
+         "19.7 × 39.4″ (500 × 1,000 mm)",
+         "27.6 × 47.2″ (700 × 1,200 mm)",
+         "31.5 × 47.2″ (800 × 1,200 mm)",
+         "35.4 × 47.2″ (900 × 1,200 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Machine size L × W × H",
+        "sub": "",
+        "cells": [
+         "48 × 22 × 66″ (123 × 55 × 168 cm)",
+         "58 × 25 × 79″ (148 × 64 × 200 cm)",
+         "59 × 26 × 77″ (150 × 65 × 195 cm)",
+         "67 × 26 × 79″ (170 × 65 × 200 cm)",
+         "69 × 30 × 87″ (175 × 75 × 220 cm)",
+         "70 × 28 × 87″ (179 × 72 × 220 cm)",
+         "76 × 31 × 89″ (194 × 80 × 225 cm)",
+         "83 × 37 × 106″ (210 × 95 × 270 cm)",
+         "91 × 39 × 114″ (230 × 100 × 290 cm)",
+         "91 × 39 × 114″ (230 × 100 × 290 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Hydraulic station",
+        "sub": "",
+        "cells": [
+         "Built on",
+         "Built on",
+         "Built on",
+         "Built on",
+         "Separate, 29 × 25 × 38″ (73 × 63 × 96 cm)",
+         "Separate, 29 × 25 × 38″ (73 × 63 × 96 cm)",
+         "Separate, 35 × 31 × 42″ (90 × 80 × 106 cm)",
+         "Separate, 43 × 47 × 53″ (110 × 120 × 135 cm)",
+         "Separate, 43 × 47 × 53″ (110 × 120 × 135 cm)",
+         "Separate, 43 × 47 × 53″ (110 × 120 × 135 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "926 lb (420 kg)",
+         "1,146 lb (520 kg)",
+         "1,367 lb (620 kg)",
+         "2,194 lb (995 kg)",
+         "2,249 lb (1,020 kg)",
+         "2,998 lb (1,360 kg)",
+         "3,823 lb (1,734 kg)",
+         "9,259 lb (4,200 kg)",
+         "12,125 lb (5,500 kg)",
+         "14,330 lb (6,500 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HP-30",
+      "glance": [
+       "33 US tons (300 kN)",
+       "7.9 + 10.6″ (200 + 270 mm)",
+       "11.8 × 15.7″ (300 × 400 mm)",
+       "926 lb (420 kg)"
+      ]
+     },
+     {
+      "name": "HP-50",
+      "glance": [
+       "55 US tons (500 kN)",
+       "8.7 + 15.9″ (220 + 405 mm)",
+       "13.8 × 18.9″ (350 × 480 mm)",
+       "1,146 lb (520 kg)"
+      ]
+     },
+     {
+      "name": "HP-63",
+      "glance": [
+       "69 US tons (630 kN)",
+       "8.7 + 15.9″ (220 + 405 mm)",
+       "13.8 × 18.9″ (350 × 480 mm)",
+       "1,367 lb (620 kg)"
+      ]
+     },
+     {
+      "name": "HP-80",
+      "glance": [
+       "88 US tons (800 kN)",
+       "10.2 + 25.6″ (260 + 650 mm)",
+       "15.7 × 30.7″ (400 × 780 mm)",
+       "2,194 lb (995 kg)"
+      ]
+     },
+     {
+      "name": "HP-100",
+      "glance": [
+       "110 US tons (1,000 kN)",
+       "9.8 + 15.9″ (250 + 405 mm)",
+       "18.1 × 38.6″ (460 × 980 mm)",
+       "2,249 lb (1,020 kg)"
+      ]
+     },
+     {
+      "name": "HP-150",
+      "glance": [
+       "165 US tons (1,500 kN)",
+       "9.8 + 15.9″ (250 + 405 mm)",
+       "18.1 × 38.6″ (460 × 980 mm)",
+       "2,998 lb (1,360 kg)"
+      ]
+     },
+     {
+      "name": "HP-200",
+      "glance": [
+       "220 US tons (2,000 kN)",
+       "11.8 + 15.9″ (300 + 405 mm)",
+       "19.7 × 39.4″ (500 × 1,000 mm)",
+       "3,823 lb (1,734 kg)"
+      ]
+     },
+     {
+      "name": "HP-300",
+      "glance": [
+       "331 US tons (3,000 kN)",
+       "11.8 + 15.9″ (300 + 405 mm)",
+       "27.6 × 47.2″ (700 × 1,200 mm)",
+       "9,259 lb (4,200 kg)"
+      ]
+     },
+     {
+      "name": "HP-400",
+      "glance": [
+       "441 US tons (4,000 kN)",
+       "11.8 + 15.9″ (300 + 405 mm)",
+       "31.5 × 47.2″ (800 × 1,200 mm)",
+       "12,125 lb (5,500 kg)"
+      ]
+     },
+     {
+      "name": "HP-500",
+      "glance": [
+       "551 US tons (5,000 kN)",
+       "11.8 + 15.9″ (300 + 405 mm)",
+       "35.4 × 47.2″ (900 × 1,200 mm)",
+       "14,330 lb (6,500 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "piston_travel_table_travel",
+     "table",
+     "weight"
+    ],
+    "caps": {
+     "HP-30": "33 US tons (300 kN)",
+     "HP-50": "55 US tons (500 kN)",
+     "HP-63": "69 US tons (630 kN)",
+     "HP-80": "88 US tons (800 kN)",
+     "HP-100": "110 US tons (1,000 kN)",
+     "HP-150": "165 US tons (1,500 kN)",
+     "HP-200": "220 US tons (2,000 kN)",
+     "HP-300": "331 US tons (3,000 kN)",
+     "HP-400": "441 US tons (4,000 kN)",
+     "HP-500": "551 US tons (5,000 kN)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vl-shop"
+  },
+  "tt-shop-hs": {
+   "id": "tt-shop-hs",
+   "brand": "novotech",
+   "name": "HPP-60 · HPP-100 · HPP-160 motorized workshop presses, 66 – 176 US tons",
+   "short": "HPP motorized workshop presses",
+   "models_label": "HPP-60 · HPP-100 · HPP-160 · 3 models",
+   "summary": "Motorized H-frame workshop presses for repair, assembly and straightening: a two-step hydraulic unit with a 3 – 4 HP motor and a double-acting hand pump for fine positioning, a cylinder that moves across the frame, V-block worktables and 16″ of stroke, from 66 to 176 US tons with working widths to 43.3″.",
+   "features": [
+    "HPP-60 / 100 / 160: 66, 110 and 176 US tons",
+    "3 – 4 HP; two-step hydraulic unit; 16.1″ (410 mm) stroke",
+    "Cylinder moves across the frame; V-block worktable",
+    "Working width 29.5 – 43.3″ (750 – 1,100 mm)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-hpp100"
+   ],
+   "videos": [],
+   "headline": "66 – 176 US tons",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HPP-60 · HPP-100 · HPP-160",
+      "sub": "Motorized workshop presses with moving cylinder, 66 – 176 US tons",
+      "models": [
+       "HPP-60",
+       "HPP-100",
+       "HPP-160"
+      ],
+      "rows": [
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "66 US tons (600 kN)",
+         "110 US tons (1,000 kN)",
+         "176 US tons (1,600 kN)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pressure, max",
+        "sub": "",
+        "cells": [
+         "3,408 psi (23.5 MPa)",
+         "3,916 psi (27 MPa)",
+         "4,496 psi (31 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "16.1″ (410 mm)",
+         "16.1″ (410 mm)",
+         "16.1″ (410 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Working width, max",
+        "sub": "",
+        "cells": [
+         "29.5″ (750 mm)",
+         "36.2″ (920 mm)",
+         "43.3″ (1,100 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Speeds: approach / press / return",
+        "sub": "",
+        "cells": [
+         "0.36 / 0.09 / 0.5 in/s (9.2 / 2.2 / 12.7 mm/s)",
+         "0.36 / 0.11 / 0.48 in/s (9.2 / 2.7 / 12.3 mm/s)",
+         "0.36 / 0.09 / 0.47 in/s (9.2 / 2.3 / 12 mm/s)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Motor",
+        "sub": "",
+        "cells": [
+         "3 HP (2.2 kW)",
+         "4 HP (3 kW)",
+         "4 HP (3 kW)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Oil tank",
+        "sub": "",
+        "cells": [
+         "7.9 US gal (30 L)",
+         "7.9 US gal (30 L)",
+         "7.9 US gal (30 L)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "67 × 39 × 83″ (170 × 100 × 210 cm)",
+         "74 × 39 × 98″ (187 × 100 × 248 cm)",
+         "85 × 47 × 102″ (215 × 120 × 258 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,852 lb (840 kg)",
+         "2,954 lb (1,340 kg)",
+         "4,189 lb (1,900 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HPP-60",
+      "glance": [
+       "66 US tons (600 kN)",
+       "16.1″ (410 mm)",
+       "29.5″ (750 mm)",
+       "3 HP (2.2 kW)",
+       "1,852 lb (840 kg)"
+      ]
+     },
+     {
+      "name": "HPP-100",
+      "glance": [
+       "110 US tons (1,000 kN)",
+       "16.1″ (410 mm)",
+       "36.2″ (920 mm)",
+       "4 HP (3 kW)",
+       "2,954 lb (1,340 kg)"
+      ]
+     },
+     {
+      "name": "HPP-160",
+      "glance": [
+       "176 US tons (1,600 kN)",
+       "16.1″ (410 mm)",
+       "43.3″ (1,100 mm)",
+       "4 HP (3 kW)",
+       "4,189 lb (1,900 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "stroke",
+     "working_width_max",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "HPP-60": "66 US tons (600 kN)",
+     "HPP-100": "110 US tons (1,000 kN)",
+     "HPP-160": "176 US tons (1,600 kN)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vl-shop"
   },
   "nt-press-hdt": {
    "id": "nt-press-hdt",
@@ -3210,774 +3772,6 @@
     "size": "PDF · 4 MB · imperial units"
    },
    "group": "pl-column"
-  },
-  "tt-hp-m1": {
-   "id": "tt-hp-m1",
-   "brand": "novotech",
-   "name": "HP-M1 hydraulic presses with sliding table, 22 – 220 US tons",
-   "short": "HP-M1 sliding-table presses",
-   "models_label": "HP-20M1 – HP-200M1 · 6 models",
-   "summary": "Two-column presses whose table slides out of the frame — load and unload large, heavy parts outside the press and roll them in for press-fitting or dismantling. 22 to 220 US tons, 11.8 – 15.7″ stroke, tables to 31.5 × 27.6″ with 23.6″ of travel.",
-   "features": [
-    "22, 44, 69, 110, 165 and 220 US tons",
-    "Table slides 23.6″ (600 mm) out of the frame",
-    "Daylight 27.6 – 43.3″",
-    "Stroke 11.8 – 15.7″"
-   ],
-   "optional": [],
-   "images": [
-    "tm-hp20m1",
-    "tm-hp150m1",
-    "tm-hp200m1"
-   ],
-   "videos": [],
-   "headline": "22 – 220 US tons",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "HP-20M1 – HP-200M1",
-      "sub": "Presses with a sliding table, 22 – 220 US tons",
-      "models": [
-       "HP-20M1",
-       "HP-40M1",
-       "HP-63M1",
-       "HP-100M1",
-       "HP-150M1",
-       "HP-200M1"
-      ],
-      "rows": [
-       {
-        "label": "Force",
-        "sub": "",
-        "cells": [
-         "22 US tons (200 kN)",
-         "44 US tons (400 kN)",
-         "69 US tons (630 kN)",
-         "110 US tons (1,000 kN)",
-         "165 US tons (1,500 kN)",
-         "220 US tons (2,000 kN)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Pressure",
-        "sub": "",
-        "cells": [
-         "3,626 psi (25 MPa)",
-         "3,626 psi (25 MPa)",
-         "3,626 psi (25 MPa)",
-         "4,351 psi (30 MPa)",
-         "4,351 psi (30 MPa)",
-         "4,351 psi (30 MPa)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Stroke",
-        "sub": "",
-        "cells": [
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)",
-         "15.7″ (400 mm)",
-         "15.7″ (400 mm)",
-         "15.7″ (400 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Daylight, max",
-        "sub": "",
-        "cells": [
-         "27.6″ (700 mm)",
-         "27.6″ (700 mm)",
-         "31.5″ (800 mm)",
-         "35.4″ (900 mm)",
-         "35.4″ (900 mm)",
-         "43.3″ (1,100 mm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Table / table travel",
-        "sub": "",
-        "cells": [
-         "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
-         "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
-         "27.6 × 23.6″ (700 × 600 mm) / 23.6″ (600 mm)",
-         "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
-         "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
-         "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Packing size L × W × H",
-        "sub": "",
-        "cells": [
-         "55 × 47 × 79″ (140 × 120 × 200 cm)",
-         "59 × 55 × 83″ (150 × 140 × 210 cm)",
-         "63 × 63 × 87″ (160 × 160 × 220 cm)",
-         "67 × 67 × 93″ (170 × 170 × 235 cm)",
-         "67 × 67 × 93″ (170 × 170 × 235 cm)",
-         "102 × 75 × 71″ (260 × 190 × 180 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "1,433 lb (650 kg)",
-         "2,161 lb (980 kg)",
-         "2,249 lb (1,020 kg)",
-         "3,351 lb (1,520 kg)",
-         "3,858 lb (1,750 kg)",
-         "4,982 lb (2,260 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "HP-20M1",
-      "glance": [
-       "22 US tons (200 kN)",
-       "11.8″ (300 mm)",
-       "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
-       "1,433 lb (650 kg)"
-      ]
-     },
-     {
-      "name": "HP-40M1",
-      "glance": [
-       "44 US tons (400 kN)",
-       "11.8″ (300 mm)",
-       "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
-       "2,161 lb (980 kg)"
-      ]
-     },
-     {
-      "name": "HP-63M1",
-      "glance": [
-       "69 US tons (630 kN)",
-       "11.8″ (300 mm)",
-       "27.6 × 23.6″ (700 × 600 mm) / 23.6″ (600 mm)",
-       "2,249 lb (1,020 kg)"
-      ]
-     },
-     {
-      "name": "HP-100M1",
-      "glance": [
-       "110 US tons (1,000 kN)",
-       "15.7″ (400 mm)",
-       "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
-       "3,351 lb (1,520 kg)"
-      ]
-     },
-     {
-      "name": "HP-150M1",
-      "glance": [
-       "165 US tons (1,500 kN)",
-       "15.7″ (400 mm)",
-       "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
-       "3,858 lb (1,750 kg)"
-      ]
-     },
-     {
-      "name": "HP-200M1",
-      "glance": [
-       "220 US tons (2,000 kN)",
-       "15.7″ (400 mm)",
-       "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
-       "4,982 lb (2,260 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "force",
-     "stroke",
-     "table_table_travel",
-     "weight"
-    ],
-    "caps": {
-     "HP-20M1": "22 US tons (200 kN)",
-     "HP-40M1": "44 US tons (400 kN)",
-     "HP-63M1": "69 US tons (630 kN)",
-     "HP-100M1": "110 US tons (1,000 kN)",
-     "HP-150M1": "165 US tons (1,500 kN)",
-     "HP-200M1": "220 US tons (2,000 kN)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "vl-h"
-  },
-  "tt-hpb": {
-   "id": "tt-hpb",
-   "brand": "novotech",
-   "name": "HPB presses with brake function, 33 – 331 US tons — single and twin cylinder",
-   "short": "HPB brake presses",
-   "models_label": "HPB-580 – HPB-3000D · 11 models",
-   "summary": "H-frame presses set up as press brakes: replaceable top tools, a V-block and a support table with stops, a worktable lifted by a chain from the main cylinder, on a torsion-proof steel weldment. The HPB models have one cylinder; the D models two cylinders for bending widths of 47 – 71″, with a synchronizing device as an option and fine adjustment of the angle.",
-   "features": [
-    "33 – 220 US tons single cylinder; 33 – 331 US tons twin cylinder (D)",
-    "Tables 11.8 × 15.7″ to 70.9 × 27.6″",
-    "Replaceable top tools, V-block, support table with stops",
-    "Angle fine adjustment; synchronizing device optional (D models)"
-   ],
-   "optional": [],
-   "images": [
-    "tm-hpb580",
-    "tm-hpb580d",
-    "tm-hpb1500",
-    "tm-hpb1500d"
-   ],
-   "videos": [],
-   "headline": "33 – 331 US tons",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "HPB-580 – HPB-2000 · HPB-580D – HPB-3000D",
-      "sub": "H-frame presses with brake function — single cylinder or two cylinders (D) for wide bending",
-      "models": [
-       "HPB-580",
-       "HPB-790",
-       "HPB-1010",
-       "HPB-1500",
-       "HPB-2000",
-       "HPB-580D",
-       "HPB-790D",
-       "HPB-1000D",
-       "HPB-1500D",
-       "HPB-2000D",
-       "HPB-3000D"
-      ],
-      "rows": [
-       {
-        "label": "Force",
-        "sub": "",
-        "cells": [
-         "33 US tons (300 kN)",
-         "55 US tons (500 kN)",
-         "110 US tons (1,000 kN)",
-         "165 US tons (1,500 kN)",
-         "220 US tons (2,000 kN)",
-         "33 US tons (300 kN)",
-         "55 US tons (500 kN)",
-         "110 US tons (1,000 kN)",
-         "165 US tons (1,500 kN)",
-         "220 US tons (2,000 kN)",
-         "331 US tons (3,000 kN)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Pressure",
-        "sub": "",
-        "cells": [
-         "3,626 psi (25 MPa)",
-         "3,626 psi (25 MPa)",
-         "4,351 psi (30 MPa)",
-         "4,351 psi (30 MPa)",
-         "4,351 psi (30 MPa)",
-         "3,626 psi (25 MPa)",
-         "3,626 psi (25 MPa)",
-         "4,569 psi (31.5 MPa)",
-         "4,569 psi (31.5 MPa)",
-         "4,569 psi (31.5 MPa)",
-         "4,569 psi (31.5 MPa)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Travel",
-        "sub": "",
-        "cells": [
-         "11.8 + 10.6″ (300 + 270 mm)",
-         "8.7 + 15.9″ (220 + 405 mm)",
-         "9.8 + 15.9″ (250 + 405 mm)",
-         "9.8 + 15.9″ (250 + 405 mm)",
-         "11.8 + 15.9″ (300 + 405 mm)",
-         "8.7″ (220 mm)",
-         "8.7″ (220 mm)",
-         "9.8″ (250 mm)",
-         "9.8″ (250 mm)",
-         "11.8″ (300 mm)",
-         "11.8″ (300 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Table",
-        "sub": "",
-        "cells": [
-         "11.8 × 15.7″ (300 × 400 mm)",
-         "15.7 × 31.5″ (400 × 800 mm)",
-         "18.1 × 38.6″ (460 × 980 mm)",
-         "18.1 × 38.6″ (460 × 980 mm)",
-         "19.7 × 39.4″ (500 × 1,000 mm)",
-         "47.2 × 11.8″ (1,200 × 300 mm)",
-         "51.2 × 14.2″ (1,300 × 360 mm)",
-         "59.1 × 17.3″ (1,500 × 440 mm)",
-         "59.1 × 17.3″ (1,500 × 440 mm)",
-         "63 × 19.7″ (1,600 × 500 mm)",
-         "70.9 × 27.6″ (1,800 × 700 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Machine size L × W × H",
-        "sub": "",
-        "cells": [
-         "47 × 22 × 66″ (120 × 55 × 168 cm)",
-         "56 × 26 × 78″ (143 × 65 × 197 cm)",
-         "69 × 30 × 87″ (175 × 75 × 220 cm)",
-         "69 × 28 × 87″ (175 × 72 × 220 cm)",
-         "72 × 31 × 89″ (184 × 80 × 225 cm)",
-         "73 × 22 × 67″ (186 × 55 × 170 cm)",
-         "79 × 25 × 79″ (200 × 64 × 200 cm)",
-         "94 × 30 × 87″ (240 × 75 × 220 cm)",
-         "94 × 30 × 87″ (240 × 75 × 220 cm)",
-         "106 × 33 × 87″ (270 × 85 × 220 cm)",
-         "116 × 43 × 98″ (295 × 110 × 250 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "624 lb (283 kg)",
-         "1,274 lb (578 kg)",
-         "2,818 lb (1,278 kg)",
-         "3,395 lb (1,540 kg)",
-         "4,480 lb (2,032 kg)",
-         "1,676 lb (760 kg)",
-         "2,425 lb (1,100 kg)",
-         "3,770 lb (1,710 kg)",
-         "4,299 lb (1,950 kg)",
-         "5,732 lb (2,600 kg)",
-         "9,083 lb (4,120 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "HPB-580",
-      "glance": [
-       "33 US tons (300 kN)",
-       "11.8 + 10.6″ (300 + 270 mm)",
-       "11.8 × 15.7″ (300 × 400 mm)",
-       "624 lb (283 kg)"
-      ]
-     },
-     {
-      "name": "HPB-790",
-      "glance": [
-       "55 US tons (500 kN)",
-       "8.7 + 15.9″ (220 + 405 mm)",
-       "15.7 × 31.5″ (400 × 800 mm)",
-       "1,274 lb (578 kg)"
-      ]
-     },
-     {
-      "name": "HPB-1010",
-      "glance": [
-       "110 US tons (1,000 kN)",
-       "9.8 + 15.9″ (250 + 405 mm)",
-       "18.1 × 38.6″ (460 × 980 mm)",
-       "2,818 lb (1,278 kg)"
-      ]
-     },
-     {
-      "name": "HPB-1500",
-      "glance": [
-       "165 US tons (1,500 kN)",
-       "9.8 + 15.9″ (250 + 405 mm)",
-       "18.1 × 38.6″ (460 × 980 mm)",
-       "3,395 lb (1,540 kg)"
-      ]
-     },
-     {
-      "name": "HPB-2000",
-      "glance": [
-       "220 US tons (2,000 kN)",
-       "11.8 + 15.9″ (300 + 405 mm)",
-       "19.7 × 39.4″ (500 × 1,000 mm)",
-       "4,480 lb (2,032 kg)"
-      ]
-     },
-     {
-      "name": "HPB-580D",
-      "glance": [
-       "33 US tons (300 kN)",
-       "8.7″ (220 mm)",
-       "47.2 × 11.8″ (1,200 × 300 mm)",
-       "1,676 lb (760 kg)"
-      ]
-     },
-     {
-      "name": "HPB-790D",
-      "glance": [
-       "55 US tons (500 kN)",
-       "8.7″ (220 mm)",
-       "51.2 × 14.2″ (1,300 × 360 mm)",
-       "2,425 lb (1,100 kg)"
-      ]
-     },
-     {
-      "name": "HPB-1000D",
-      "glance": [
-       "110 US tons (1,000 kN)",
-       "9.8″ (250 mm)",
-       "59.1 × 17.3″ (1,500 × 440 mm)",
-       "3,770 lb (1,710 kg)"
-      ]
-     },
-     {
-      "name": "HPB-1500D",
-      "glance": [
-       "165 US tons (1,500 kN)",
-       "9.8″ (250 mm)",
-       "59.1 × 17.3″ (1,500 × 440 mm)",
-       "4,299 lb (1,950 kg)"
-      ]
-     },
-     {
-      "name": "HPB-2000D",
-      "glance": [
-       "220 US tons (2,000 kN)",
-       "11.8″ (300 mm)",
-       "63 × 19.7″ (1,600 × 500 mm)",
-       "5,732 lb (2,600 kg)"
-      ]
-     },
-     {
-      "name": "HPB-3000D",
-      "glance": [
-       "331 US tons (3,000 kN)",
-       "11.8″ (300 mm)",
-       "70.9 × 27.6″ (1,800 × 700 mm)",
-       "9,083 lb (4,120 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "force",
-     "travel",
-     "table",
-     "weight"
-    ],
-    "caps": {
-     "HPB-580": "33 US tons (300 kN)",
-     "HPB-790": "55 US tons (500 kN)",
-     "HPB-1010": "110 US tons (1,000 kN)",
-     "HPB-1500": "165 US tons (1,500 kN)",
-     "HPB-2000": "220 US tons (2,000 kN)",
-     "HPB-580D": "33 US tons (300 kN)",
-     "HPB-790D": "55 US tons (500 kN)",
-     "HPB-1000D": "110 US tons (1,000 kN)",
-     "HPB-1500D": "165 US tons (1,500 kN)",
-     "HPB-2000D": "220 US tons (2,000 kN)",
-     "HPB-3000D": "331 US tons (3,000 kN)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "vl-h"
-  },
-  "tt-hp-h": {
-   "id": "tt-hp-h",
-   "brand": "novotech",
-   "name": "HP-30 – HP-500 motorized H-frame hydraulic presses, 33 – 551 US tons",
-   "short": "HP H-frame presses",
-   "models_label": "HP-30 – HP-500 · 10 models",
-   "summary": "Motorized H-frame hydraulic presses for production pressing, forming, straightening and assembly, from 33 to 551 US tons: a piston stroke of 7.9 – 11.8″ plus 10.6 – 25.6″ of table travel, tables up to 35.4 × 47.2″, the hydraulic unit built on to 88 US tons and a separate hydraulic station from 110 US tons up. CE equipment, complete guarding, a foot pedal and travel limit switches are available.",
-   "features": [
-    "33, 55, 69, 88, 110, 165, 220, 331, 441 and 551 US tons",
-    "Pressure 3,626 – 4,569 psi (25 – 31.5 MPa)",
-    "Tables 11.8 × 15.7″ to 35.4 × 47.2″",
-    "Hydraulic unit built on (HP-30 – HP-80) or separate (HP-100 and up)"
-   ],
-   "optional": [
-    "CE equipment",
-    "Complete guarding",
-    "Foot pedal switch",
-    "Travel limit switch",
-    "Table lift device (HP-30, 50, 63, 80)"
-   ],
-   "images": [
-    "tm-hp30",
-    "tm-hp100"
-   ],
-   "videos": [],
-   "headline": "33 – 551 US tons",
-   "specs": {
-    "kind": "table",
-    "tables": [
-     {
-      "title": "HP-30 – HP-500",
-      "sub": "Motorized H-frame hydraulic presses, 33 – 551 US tons",
-      "models": [
-       "HP-30",
-       "HP-50",
-       "HP-63",
-       "HP-80",
-       "HP-100",
-       "HP-150",
-       "HP-200",
-       "HP-300",
-       "HP-400",
-       "HP-500"
-      ],
-      "rows": [
-       {
-        "label": "Force",
-        "sub": "",
-        "cells": [
-         "33 US tons (300 kN)",
-         "55 US tons (500 kN)",
-         "69 US tons (630 kN)",
-         "88 US tons (800 kN)",
-         "110 US tons (1,000 kN)",
-         "165 US tons (1,500 kN)",
-         "220 US tons (2,000 kN)",
-         "331 US tons (3,000 kN)",
-         "441 US tons (4,000 kN)",
-         "551 US tons (5,000 kN)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Pressure",
-        "sub": "",
-        "cells": [
-         "3,626 psi (25 MPa)",
-         "3,626 psi (25 MPa)",
-         "3,626 psi (25 MPa)",
-         "4,351 psi (30 MPa)",
-         "4,351 psi (30 MPa)",
-         "4,351 psi (30 MPa)",
-         "4,569 psi (31.5 MPa)",
-         "4,569 psi (31.5 MPa)",
-         "4,569 psi (31.5 MPa)",
-         "4,569 psi (31.5 MPa)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Piston travel + table travel",
-        "sub": "",
-        "cells": [
-         "7.9 + 10.6″ (200 + 270 mm)",
-         "8.7 + 15.9″ (220 + 405 mm)",
-         "8.7 + 15.9″ (220 + 405 mm)",
-         "10.2 + 25.6″ (260 + 650 mm)",
-         "9.8 + 15.9″ (250 + 405 mm)",
-         "9.8 + 15.9″ (250 + 405 mm)",
-         "11.8 + 15.9″ (300 + 405 mm)",
-         "11.8 + 15.9″ (300 + 405 mm)",
-         "11.8 + 15.9″ (300 + 405 mm)",
-         "11.8 + 15.9″ (300 + 405 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Table",
-        "sub": "",
-        "cells": [
-         "11.8 × 15.7″ (300 × 400 mm)",
-         "13.8 × 18.9″ (350 × 480 mm)",
-         "13.8 × 18.9″ (350 × 480 mm)",
-         "15.7 × 30.7″ (400 × 780 mm)",
-         "18.1 × 38.6″ (460 × 980 mm)",
-         "18.1 × 38.6″ (460 × 980 mm)",
-         "19.7 × 39.4″ (500 × 1,000 mm)",
-         "27.6 × 47.2″ (700 × 1,200 mm)",
-         "31.5 × 47.2″ (800 × 1,200 mm)",
-         "35.4 × 47.2″ (900 × 1,200 mm)"
-        ],
-        "key": true
-       },
-       {
-        "label": "Machine size L × W × H",
-        "sub": "",
-        "cells": [
-         "48 × 22 × 66″ (123 × 55 × 168 cm)",
-         "58 × 25 × 79″ (148 × 64 × 200 cm)",
-         "59 × 26 × 77″ (150 × 65 × 195 cm)",
-         "67 × 26 × 79″ (170 × 65 × 200 cm)",
-         "69 × 30 × 87″ (175 × 75 × 220 cm)",
-         "70 × 28 × 87″ (179 × 72 × 220 cm)",
-         "76 × 31 × 89″ (194 × 80 × 225 cm)",
-         "83 × 37 × 106″ (210 × 95 × 270 cm)",
-         "91 × 39 × 114″ (230 × 100 × 290 cm)",
-         "91 × 39 × 114″ (230 × 100 × 290 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Hydraulic station",
-        "sub": "",
-        "cells": [
-         "Built on",
-         "Built on",
-         "Built on",
-         "Built on",
-         "Separate, 29 × 25 × 38″ (73 × 63 × 96 cm)",
-         "Separate, 29 × 25 × 38″ (73 × 63 × 96 cm)",
-         "Separate, 35 × 31 × 42″ (90 × 80 × 106 cm)",
-         "Separate, 43 × 47 × 53″ (110 × 120 × 135 cm)",
-         "Separate, 43 × 47 × 53″ (110 × 120 × 135 cm)",
-         "Separate, 43 × 47 × 53″ (110 × 120 × 135 cm)"
-        ],
-        "key": false
-       },
-       {
-        "label": "Weight",
-        "sub": "",
-        "cells": [
-         "926 lb (420 kg)",
-         "1,146 lb (520 kg)",
-         "1,367 lb (620 kg)",
-         "2,194 lb (995 kg)",
-         "2,249 lb (1,020 kg)",
-         "2,998 lb (1,360 kg)",
-         "3,823 lb (1,734 kg)",
-         "9,259 lb (4,200 kg)",
-         "12,125 lb (5,500 kg)",
-         "14,330 lb (6,500 kg)"
-        ],
-        "key": true
-       }
-      ]
-     }
-    ],
-    "models": [
-     {
-      "name": "HP-30",
-      "glance": [
-       "33 US tons (300 kN)",
-       "7.9 + 10.6″ (200 + 270 mm)",
-       "11.8 × 15.7″ (300 × 400 mm)",
-       "926 lb (420 kg)"
-      ]
-     },
-     {
-      "name": "HP-50",
-      "glance": [
-       "55 US tons (500 kN)",
-       "8.7 + 15.9″ (220 + 405 mm)",
-       "13.8 × 18.9″ (350 × 480 mm)",
-       "1,146 lb (520 kg)"
-      ]
-     },
-     {
-      "name": "HP-63",
-      "glance": [
-       "69 US tons (630 kN)",
-       "8.7 + 15.9″ (220 + 405 mm)",
-       "13.8 × 18.9″ (350 × 480 mm)",
-       "1,367 lb (620 kg)"
-      ]
-     },
-     {
-      "name": "HP-80",
-      "glance": [
-       "88 US tons (800 kN)",
-       "10.2 + 25.6″ (260 + 650 mm)",
-       "15.7 × 30.7″ (400 × 780 mm)",
-       "2,194 lb (995 kg)"
-      ]
-     },
-     {
-      "name": "HP-100",
-      "glance": [
-       "110 US tons (1,000 kN)",
-       "9.8 + 15.9″ (250 + 405 mm)",
-       "18.1 × 38.6″ (460 × 980 mm)",
-       "2,249 lb (1,020 kg)"
-      ]
-     },
-     {
-      "name": "HP-150",
-      "glance": [
-       "165 US tons (1,500 kN)",
-       "9.8 + 15.9″ (250 + 405 mm)",
-       "18.1 × 38.6″ (460 × 980 mm)",
-       "2,998 lb (1,360 kg)"
-      ]
-     },
-     {
-      "name": "HP-200",
-      "glance": [
-       "220 US tons (2,000 kN)",
-       "11.8 + 15.9″ (300 + 405 mm)",
-       "19.7 × 39.4″ (500 × 1,000 mm)",
-       "3,823 lb (1,734 kg)"
-      ]
-     },
-     {
-      "name": "HP-300",
-      "glance": [
-       "331 US tons (3,000 kN)",
-       "11.8 + 15.9″ (300 + 405 mm)",
-       "27.6 × 47.2″ (700 × 1,200 mm)",
-       "9,259 lb (4,200 kg)"
-      ]
-     },
-     {
-      "name": "HP-400",
-      "glance": [
-       "441 US tons (4,000 kN)",
-       "11.8 + 15.9″ (300 + 405 mm)",
-       "31.5 × 47.2″ (800 × 1,200 mm)",
-       "12,125 lb (5,500 kg)"
-      ]
-     },
-     {
-      "name": "HP-500",
-      "glance": [
-       "551 US tons (5,000 kN)",
-       "11.8 + 15.9″ (300 + 405 mm)",
-       "35.4 × 47.2″ (900 × 1,200 mm)",
-       "14,330 lb (6,500 kg)"
-      ]
-     }
-    ],
-    "glance_keys": [
-     "force",
-     "piston_travel_table_travel",
-     "table",
-     "weight"
-    ],
-    "caps": {
-     "HP-30": "33 US tons (300 kN)",
-     "HP-50": "55 US tons (500 kN)",
-     "HP-63": "69 US tons (630 kN)",
-     "HP-80": "88 US tons (800 kN)",
-     "HP-100": "110 US tons (1,000 kN)",
-     "HP-150": "165 US tons (1,500 kN)",
-     "HP-200": "220 US tons (2,000 kN)",
-     "HP-300": "331 US tons (3,000 kN)",
-     "HP-400": "441 US tons (4,000 kN)",
-     "HP-500": "551 US tons (5,000 kN)"
-    },
-    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
-   },
-   "manual": false,
-   "no_pdf": true,
-   "group": "vl-h"
   },
   "tt-hp-f": {
    "id": "tt-hp-f",
@@ -5774,6 +5568,212 @@
     "size": "PDF · 1 MB · imperial units"
    },
    "group": "pl-str"
+  },
+  "tt-hp-m1": {
+   "id": "tt-hp-m1",
+   "brand": "novotech",
+   "name": "HP-M1 hydraulic presses with sliding table, 22 – 220 US tons",
+   "short": "HP-M1 sliding-table presses",
+   "models_label": "HP-20M1 – HP-200M1 · 6 models",
+   "summary": "Two-column presses whose table slides out of the frame — load and unload large, heavy parts outside the press and roll them in for press-fitting or dismantling. 22 to 220 US tons, 11.8 – 15.7″ stroke, tables to 31.5 × 27.6″ with 23.6″ of travel.",
+   "features": [
+    "22, 44, 69, 110, 165 and 220 US tons",
+    "Table slides 23.6″ (600 mm) out of the frame",
+    "Daylight 27.6 – 43.3″",
+    "Stroke 11.8 – 15.7″"
+   ],
+   "optional": [],
+   "images": [
+    "tm-hp20m1",
+    "tm-hp150m1",
+    "tm-hp200m1"
+   ],
+   "videos": [],
+   "headline": "22 – 220 US tons",
+   "specs": {
+    "kind": "table",
+    "tables": [
+     {
+      "title": "HP-20M1 – HP-200M1",
+      "sub": "Presses with a sliding table, 22 – 220 US tons",
+      "models": [
+       "HP-20M1",
+       "HP-40M1",
+       "HP-63M1",
+       "HP-100M1",
+       "HP-150M1",
+       "HP-200M1"
+      ],
+      "rows": [
+       {
+        "label": "Force",
+        "sub": "",
+        "cells": [
+         "22 US tons (200 kN)",
+         "44 US tons (400 kN)",
+         "69 US tons (630 kN)",
+         "110 US tons (1,000 kN)",
+         "165 US tons (1,500 kN)",
+         "220 US tons (2,000 kN)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Pressure",
+        "sub": "",
+        "cells": [
+         "3,626 psi (25 MPa)",
+         "3,626 psi (25 MPa)",
+         "3,626 psi (25 MPa)",
+         "4,351 psi (30 MPa)",
+         "4,351 psi (30 MPa)",
+         "4,351 psi (30 MPa)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Stroke",
+        "sub": "",
+        "cells": [
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "11.8″ (300 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)",
+         "15.7″ (400 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Daylight, max",
+        "sub": "",
+        "cells": [
+         "27.6″ (700 mm)",
+         "27.6″ (700 mm)",
+         "31.5″ (800 mm)",
+         "35.4″ (900 mm)",
+         "35.4″ (900 mm)",
+         "43.3″ (1,100 mm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Table / table travel",
+        "sub": "",
+        "cells": [
+         "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
+         "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
+         "27.6 × 23.6″ (700 × 600 mm) / 23.6″ (600 mm)",
+         "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
+         "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
+         "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)"
+        ],
+        "key": true
+       },
+       {
+        "label": "Packing size L × W × H",
+        "sub": "",
+        "cells": [
+         "55 × 47 × 79″ (140 × 120 × 200 cm)",
+         "59 × 55 × 83″ (150 × 140 × 210 cm)",
+         "63 × 63 × 87″ (160 × 160 × 220 cm)",
+         "67 × 67 × 93″ (170 × 170 × 235 cm)",
+         "67 × 67 × 93″ (170 × 170 × 235 cm)",
+         "102 × 75 × 71″ (260 × 190 × 180 cm)"
+        ],
+        "key": false
+       },
+       {
+        "label": "Weight",
+        "sub": "",
+        "cells": [
+         "1,433 lb (650 kg)",
+         "2,161 lb (980 kg)",
+         "2,249 lb (1,020 kg)",
+         "3,351 lb (1,520 kg)",
+         "3,858 lb (1,750 kg)",
+         "4,982 lb (2,260 kg)"
+        ],
+        "key": true
+       }
+      ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HP-20M1",
+      "glance": [
+       "22 US tons (200 kN)",
+       "11.8″ (300 mm)",
+       "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
+       "1,433 lb (650 kg)"
+      ]
+     },
+     {
+      "name": "HP-40M1",
+      "glance": [
+       "44 US tons (400 kN)",
+       "11.8″ (300 mm)",
+       "19.7 × 19.7″ (500 × 500 mm) / 23.6″ (600 mm)",
+       "2,161 lb (980 kg)"
+      ]
+     },
+     {
+      "name": "HP-63M1",
+      "glance": [
+       "69 US tons (630 kN)",
+       "11.8″ (300 mm)",
+       "27.6 × 23.6″ (700 × 600 mm) / 23.6″ (600 mm)",
+       "2,249 lb (1,020 kg)"
+      ]
+     },
+     {
+      "name": "HP-100M1",
+      "glance": [
+       "110 US tons (1,000 kN)",
+       "15.7″ (400 mm)",
+       "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
+       "3,351 lb (1,520 kg)"
+      ]
+     },
+     {
+      "name": "HP-150M1",
+      "glance": [
+       "165 US tons (1,500 kN)",
+       "15.7″ (400 mm)",
+       "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
+       "3,858 lb (1,750 kg)"
+      ]
+     },
+     {
+      "name": "HP-200M1",
+      "glance": [
+       "220 US tons (2,000 kN)",
+       "15.7″ (400 mm)",
+       "31.5 × 27.6″ (800 × 700 mm) / 23.6″ (600 mm)",
+       "4,982 lb (2,260 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "force",
+     "stroke",
+     "table_table_travel",
+     "weight"
+    ],
+    "caps": {
+     "HP-20M1": "22 US tons (200 kN)",
+     "HP-40M1": "44 US tons (400 kN)",
+     "HP-63M1": "69 US tons (630 kN)",
+     "HP-100M1": "110 US tons (1,000 kN)",
+     "HP-150M1": "165 US tons (1,500 kN)",
+     "HP-200M1": "220 US tons (2,000 kN)"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "group": "vl-str"
   },
   "tt-riveter": {
    "id": "tt-riveter",

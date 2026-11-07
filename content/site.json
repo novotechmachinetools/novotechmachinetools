@@ -189,7 +189,10 @@
     },
     {
      "label": "Angle rolls",
-     "href": "angle-rolls.html"
+     "href": "angle-rolls.html",
+     "menu_swap": {
+      "sahinler-tc-42": "sahinler-hpk-65-80"
+     }
     },
     {
      "label": "Band saws",
@@ -303,7 +306,8 @@
      "children": [
       {
        "label": "CNC tube benders",
-       "href": "cnc-tube-benders.html"
+       "href": "cnc-tube-benders.html",
+       "image": "cs-mre2-50"
       },
       {
        "label": "NC mandrel benders",
@@ -338,12 +342,12 @@
       {
        "label": "Straightening presses",
        "href": "hydraulic-straightening-press.html"
-      },
-      {
-       "label": "Riveting machines",
-       "href": "riveting-machine.html"
       }
      ]
+    },
+    {
+     "label": "Riveting machines",
+     "href": "riveting-machine.html"
     },
     {
      "label": "Plate bevelers",

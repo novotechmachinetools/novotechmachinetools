@@ -138,24 +138,16 @@
       if (!el) return;
       loadNav().then(function () { var key = keyOf(el); if (key) render(key); });
     };
-    // desktop "menu aim" (the owner, Nov 7 2026: crossing another category on the way to the photos changed them): while the
-    // pointer is heading for the photos — or for the open flyout of the current category — the categories it crosses are not
-    // switched to; a category is chosen once the pointer stops on it or moves along the list (the triangle test of jQuery-menu-aim)
-    var locs = [], aimTimer = 0, lastDelayLoc = null, activeLi = null;
-    var AIM_DELAY = 320, AIM_TOL = 70;
+    // desktop hover intent (the owner, Nov 7 2026: on the way from Angle rolls to its photos the menu switched to the categories
+    // the pointer crossed): a category is chosen only once the pointer rests on it — 110 ms, or 450 ms while it is heading for the
+    // photos or for the open flyout (the triangle test of jQuery-menu-aim) — so crossing other categories never changes the photos
+    var locs = [], aimTimer = 0, activeLi = null, pendingEl = null;
+    var REST = 110, AIM_REST = 450, AIM_TOL = 90;
     var lastMove = 0;
-    mega.addEventListener("mousemove", function (e) {
-      var t = Date.now();
-      if (t - lastMove > 90 && locs.length) locs = [locs[locs.length - 1]];   // after a rest the direction counts from the rest point
-      lastMove = t;
-      locs.push({ x: e.clientX, y: e.clientY });
-      if (locs.length > 4) locs.shift();
-    });
     var slope = function (a, b) { return (b.y - a.y) / ((b.x - a.x) || 0.0001); };
-    var aimDelay = function () {
+    var aiming = function () {             // the last moves point into the photos (or the flyout): the triangle test of menu-aim
       var loc = locs[locs.length - 1], prev = locs[0];
-      if (!loc || !prev || (prev.x === loc.x && prev.y === loc.y)) return 0;
-      if (lastDelayLoc && loc.x === lastDelayLoc.x && loc.y === lastDelayLoc.y) return 0;   // stopped here: this is the choice
+      if (!loc || !prev || (prev.x === loc.x && prev.y === loc.y)) return false;
       var fly = activeLi && activeLi.classList.contains("is-fly") ? activeLi.querySelector(".tree") : null;
       var targets = [preview, fly];
       for (var i = 0; i < targets.length; i++) {
@@ -164,15 +156,14 @@
         if (r.left >= prev.x) {               // a target to the right: the photos, or a flyout over the next column
           if (loc.x >= r.left) continue;
           var ul = { x: r.left, y: r.top - AIM_TOL }, ll = { x: r.left, y: r.bottom + AIM_TOL };
-          if (slope(loc, ul) < slope(prev, ul) && slope(loc, ll) > slope(prev, ll)) { lastDelayLoc = loc; return AIM_DELAY; }
+          if (slope(loc, ul) < slope(prev, ul) && slope(loc, ll) > slope(prev, ll)) return true;
         } else if (r.right <= prev.x) {        // a flyout over the previous column (the last column opens to the left)
           if (loc.x <= r.right) continue;
           var ur = { x: r.right, y: r.top - AIM_TOL }, lr = { x: r.right, y: r.bottom + AIM_TOL };
-          if (slope(loc, lr) < slope(prev, lr) && slope(loc, ur) > slope(prev, ur)) { lastDelayLoc = loc; return AIM_DELAY; }
+          if (slope(loc, lr) < slope(prev, lr) && slope(loc, ur) > slope(prev, ur)) return true;
         }
       }
-      lastDelayLoc = null;
-      return 0;
+      return false;
     };
     var setFly = function (li) {               // the flyout of the chosen category (CSS shows .is-fly; no flyout just for crossing it)
       if (li === activeLi) return;
@@ -180,13 +171,26 @@
       activeLi = li;
       if (li && li.classList.contains("has-tree") && !li.classList.contains("open")) li.classList.add("is-fly");
     };
-    var choose = function (el) {
-      clearTimeout(aimTimer);
-      var wait = aimDelay();
-      if (wait) { aimTimer = setTimeout(function () { choose(el); }, wait); return; }
-      setFly(el.closest ? el.closest(".sub-menu > li") : null);
+    var commit = function () {
+      var el = pendingEl, li = el && el.closest ? el.closest(".sub-menu > li") : null;
+      pendingEl = null;
+      if (!li) return;                         // a gap between the categories: keep what is shown
+      setFly(li);
       show(el);
     };
+    var schedule = function () {
+      clearTimeout(aimTimer);
+      if (pendingEl) aimTimer = setTimeout(commit, aiming() ? AIM_REST : REST);
+    };
+    var choose = function (el) { pendingEl = el; schedule(); };
+    mega.addEventListener("mousemove", function (e) {
+      var t = Date.now();
+      if (t - lastMove > 90 && locs.length) locs = [locs[locs.length - 1]];   // after a rest the direction counts from the rest point
+      lastMove = t;
+      locs.push({ x: e.clientX, y: e.clientY });
+      if (locs.length > 4) locs.shift();
+      if (pendingEl) schedule();               // still moving: wait until the pointer rests
+    });
     mega.classList.add("js-aim");
     var opened = function () {            // the menu opens on the current page's category, or the first one
       if (!wide.matches) return;
@@ -209,7 +213,7 @@
     topItem.addEventListener("mouseleave", function () {
       clearTimeout(closeTimer);
       if (!wide.matches) return;
-      closeTimer = setTimeout(function () { topItem.classList.remove("is-hover"); clearTimeout(aimTimer); setFly(null); locs = []; }, 500);
+      closeTimer = setTimeout(function () { topItem.classList.remove("is-hover"); clearTimeout(aimTimer); pendingEl = null; setFly(null); locs = []; }, 500);
     });
     // desktop: a category's pages open beside it on hover (CSS, a fixed flyout placed here): to its right, or to its left in the
     // last column, and kept inside the window
@@ -226,7 +230,7 @@
     });
     mega.addEventListener("mouseover", function (e) {
       if (!wide.matches) return;
-      if (e.target.closest && e.target.closest(".mega-preview")) { clearTimeout(aimTimer); return; }   // on the photos: keep them
+      if (e.target.closest && e.target.closest(".mega-preview")) { clearTimeout(aimTimer); pendingEl = null; return; }   // on the photos: keep them
       if (!e.target.closest || !e.target.closest(".sub-menu")) return;
       choose(e.target);
     });
@@ -456,10 +460,24 @@
         more.textContent = "Show all " + thumbs.length + " photos";
       });
     }
+    // hovering a thumbnail swaps the main photo too (mouse only; touch screens tap) — once the pointer rests on it: 140 ms, or
+    // 450 ms while it is moving up toward the large photo, so the rows crossed on the way up from the third row to the large
+    // photo do not swap it (the owner, Nov 7 2026); a click swaps at once
+    var hoverTimer = 0, hoverI = -1, lastY = null, upward = false;
+    var hoverWait = function () {
+      clearTimeout(hoverTimer);
+      if (hoverI < 0) return;
+      hoverTimer = setTimeout(function () { if (hoverI >= 0 && hoverI !== index) show(hoverI); }, upward ? 450 : 140);
+    };
     thumbs.forEach(function (t, i) {
-      t.addEventListener("click", function (e) { e.preventDefault(); show(i); });
-      // hovering a thumbnail swaps the main photo too (mouse only; touch screens tap)
-      t.addEventListener("mouseenter", function () { if (i !== index) show(i); });
+      t.addEventListener("click", function (e) { e.preventDefault(); clearTimeout(hoverTimer); hoverI = -1; show(i); });
+      t.addEventListener("mouseenter", function () { hoverI = i; hoverWait(); });
+      t.addEventListener("mousemove", function (e) {
+        if (lastY !== null && Math.abs(e.clientY - lastY) > 0.5) upward = e.clientY < lastY;
+        lastY = e.clientY;
+        hoverWait();                           // still moving: wait until the pointer rests
+      });
+      t.addEventListener("mouseleave", function () { if (hoverI === i) { hoverI = -1; clearTimeout(hoverTimer); } });
       t.addEventListener("focus", function () { if (i !== index) show(i); });
     });
     var prev = g.querySelector(".gal-prev"), next = g.querySelector(".gal-next");

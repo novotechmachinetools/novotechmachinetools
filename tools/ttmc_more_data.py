@@ -259,6 +259,7 @@ LOCK = [
 
 # =============================================================================================== belt grinders & sanders
 P_GRIND = "belt-grinder"
+P_BEVEL = "plate-beveler"           # the CMD / DM5 chamfering machines, at the end of the Cevisa page (the owner, Nov 7 2026)
 GRIND = [
     F("tt-s75", P_GRIND, "belt", "S-75 · S-150 pedestal belt grinders, 3″ and 6″ × 79″ belt", "S-75 / S-150 belt grinders", T["tt-s75"],
       "The everyday pedestal belt grinder for steel and stainless: a 79″ belt, 3″ wide on the S-75 and 6″ wide on the S-150, running up "
@@ -347,7 +348,7 @@ GRIND = [
       ["BG-8: 8 × 1″ wheels, 3/4 HP; BG-10: 10 × 1″ wheels, 1 HP", "Heavy-duty cast-iron construction",
        "BG-60 / BG-60A: Ø10 × 2-3/8″ wire wheel, 0.012″ wire, 2 – 3 HP"],
       ["tm-bg", "tm-bg60", "tm-bg60a"], headline="8″ and 10″ wheels", cap="[Wheel size]"),
-    F("tt-cmd", P_GRIND, "chamfer", "CMD-4 · CMD-80 edge chamfering machines and DM5 hand chamfering tools", "Chamfering machines", T["tt-cmd"],
+    F("tt-cmd", P_BEVEL, "tt-chamfer", "CMD-4 · CMD-80 edge chamfering machines and DM5 hand chamfering tools", "Chamfering machines", T["tt-cmd"],
       "Edge chamfering machines that put a 15 – 45° weld prep or a clean deburred edge on plate, strip and parts: the CMD-80 cuts chamfers "
       "up to 1/4″ (6 mm) from 1.5 HP, the CMD-4 up to 5/32″, and the compact DM5 units 3/16″ at 45°.",
       ["CMD-80: chamfers 0 – 1/4″ (6 mm) at 15 – 45°, 1.5 HP", "CMD-4: chamfers 0 – 5/32″ (4 mm) at 15 – 45°",

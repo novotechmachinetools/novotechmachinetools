@@ -203,10 +203,10 @@ small { font-size: .85em; }
    the photo and its name — at least 48 px tall with 8 px or more between tiles, so a finger hits the one it means. */
 .hero-stage { position: relative; width: 100%; display: grid; justify-items: center; }
 .hero-art.has-many .hero-band { top: 8%; height: 100%; }
-.hero-minis.is-many { list-style: none; margin: 6px 0 0; padding: 0; width: min(100%, 820px); justify-self: center; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 12px 10px; align-items: stretch; }
+.hero-minis.is-many { list-style: none; margin: 6px 0 0; padding: 0; width: min(100%, 943px); justify-self: center; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 12px 10px; align-items: stretch; }
 .hero-minis.is-many li { display: flex; justify-content: center; min-width: 0; }
 .hero-minis.is-many .hero-mini-link { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; width: 100%; min-height: 48px; padding: 6px 4px; border-radius: 8px; line-height: 1.2; text-decoration: none; color: var(--charcoal); }
-.hero-minis.is-many img { display: block; width: auto; max-width: 100%; height: var(--mh, 110px); object-fit: contain; object-position: bottom; filter: drop-shadow(0 8px 10px rgba(30, 30, 30, .28)); }
+.hero-minis.is-many img { display: block; width: auto; max-width: 100%; height: var(--mh, 127px); object-fit: contain; object-position: bottom; filter: drop-shadow(0 8px 10px rgba(30, 30, 30, .28)); }
 .hero-mini-cap { font-family: var(--sans); font-weight: 500; font-size: 13px; line-height: 1.3; letter-spacing: .01em; text-align: center; color: var(--steel); max-width: 22ch; overflow-wrap: anywhere; }
 /* the name of the large photo's machine: black on the orange band, no box (option A, the owner, Nov 1 2026) — 6.5:1 contrast */
 .hero-main-cap { position: relative; z-index: 2; margin: 4px 0 0; padding: 0; max-width: 90%; font-size: 14px; font-weight: 600; line-height: 1.3; letter-spacing: .01em; color: var(--ink); text-align: center; }
@@ -699,7 +699,7 @@ small { font-size: .85em; }
   /* phones and tablets: the every-product strip stays — up to three tiles a row, each at least 48 px tall with 8 px between,
      so they are easy to tap (the owner, Nov 1 2026) */
   .hero-minis.is-many { display: grid; grid-template-columns: repeat(var(--m), minmax(0, 1fr)); gap: 10px 8px; width: 100%; margin-top: 8px; }
-  .hero-minis.is-many img { width: 100%; max-width: 100%; height: var(--mhm, 66px); }
+  .hero-minis.is-many img { width: 100%; max-width: 100%; height: var(--mhm, 76px); }
   .hero-minis.is-many .hero-mini-link { padding: 6px 2px; }
   .hero-minis.is-many .hero-mini-cap { font-size: 12px; }
   /* the large photo's name stays on the orange: the band starts at 20 % of the width on phones */
@@ -1247,7 +1247,7 @@ body.ai-locked { overflow: hidden; }
 .calc-row label small { font-family: var(--sans); font-weight: 400; font-size: 12.5px; text-transform: none; letter-spacing: 0; color: var(--steel); }
 
 /* tablets: the tiles under the hero are wider than on a phone, so their photos are taller (the owner, Nov 1 2026) */
-@media (min-width: 600px) and (max-width: 960px) { .hero-minis.is-many img { height: calc(var(--mhm, 66px) * 1.5); } }
+@media (min-width: 600px) and (max-width: 960px) { .hero-minis.is-many img { height: calc(var(--mhm, 76px) * 1.5); } }
 
 /* loading options of the tube lasers: by hand, semi-automatic, fully automatic (the owner, Nov 1 2026) */
 .loading-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
