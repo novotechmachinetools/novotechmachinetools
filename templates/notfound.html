@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    <h1>{{ page.h1 }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+  </div>
+</section>
+
+<section class="wrap policy" aria-labelledby="notfound-next">
+  <div class="policy-section">
+    <h2 id="notfound-next">{{ page.links_title }}</h2>
+    <ul class="notfound-links">
+      {% for l in page.links %}<li><a href="{{ l.href }}">{{ l.label }}</a>{% if l.note %} — {{ l.note }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

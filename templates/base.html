@@ -3,11 +3,12 @@
 <html lang="en-CA">
 <head>
 <meta charset="utf-8">
+{% if page.base_href %}<base href="{{ page.base_href }}">{% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.meta_description }}">
-{% if staging or page.draft %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
-<link rel="canonical" href="{{ page.url }}">
+{% if staging or page.draft or page.noindex %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
+{% if not page.noindex %}<link rel="canonical" href="{{ page.url }}">{% endif %}
 <meta name="theme-color" content="#2D2E30">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="32x32">

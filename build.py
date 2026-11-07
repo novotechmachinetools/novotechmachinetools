@@ -1926,7 +1926,8 @@ def main():
         return site["domain"] + "/" if p["slug"] == "index" else f"{site['domain']}/{p['slug']}"
     def prio(p):
         return "1.0" if p["slug"] == "index" else "0.9" if p.get("subpages") or p["slug"] == "products" else "0.5" if p["slug"] == "privacy-policy" else "0.8"
-    urls = "".join(f"  <url><loc>{loc(p)}</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{prio(p)}</priority></url>\n" for p in pages)
+    urls = "".join(f"  <url><loc>{loc(p)}</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{prio(p)}</priority></url>\n" for p in pages
+                   if not p.get("noindex"))   # the page-not-found page stays out
     open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
     if STAGING:
         open(os.path.join(DIST, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
