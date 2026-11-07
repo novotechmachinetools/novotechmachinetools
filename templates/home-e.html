@@ -5,7 +5,7 @@
 
 {% block content %}
 {% set sc = page.showcase %}
-{% set extra = ["vl-wad-1", "is-eb-1240-cnc", "vn-ule-1", "sf-h-1", "bk-hero-hub", "nt-bs315gf-1", "sh-hpk60", "sh-hpk160dp", "dn-das-1", "vl-qc12k-1", "is-mrms-2050-190", "sh-hkm60", "h-45s", "sls-12", "cs-tbre", "tm-hwe", "gc-g135rb8", "es-p-group", "sh-dpm", "tb-hp80", "tm-pc510", "dn-panel-1", "is-sfc-350-vx", "sh-hnm6v", "tm-s75h", "dn-tube-2", "sh-hkm175", "is-mrmh-2050-180", "bk-bmdo-150xs-1", "is-bk-050"] %}
+{% set extra = ["vl-wad-1", "is-eb-1240-cnc", "vn-ule-1", "sf-h-1", "bk-hero-hub", "nt-bs315gf-1", "sh-hpk60", "sh-hpk160dp", "dn-das-1", "vl-qc12k-1", "is-mrms-2050-190", "sh-hkm60", "h-45s", "sls-12", "cs-tbre", "tm-hwe", "gc-g135rb8", "es-p-group", "sh-dpm", "tb-hp80", "tm-her", "dn-panel-1", "is-sfc-350-vx", "sh-hnm6v", "tm-s75h", "dn-tube-2", "sh-hkm175", "is-mrmh-2050-180", "bk-bmdo-150xs-1", "is-bk-050"] %}
 {% set tiles = [] %}
 {% for g in sc.groups %}{% set _ = tiles.append({"img": g.img, "href": g.href, "name": g.name}) %}{% endfor %}
 {% for n in extra %}{% set _ = tiles.append({"img": img(n), "href": None, "name": img(n).alt}) %}{% endfor %}
