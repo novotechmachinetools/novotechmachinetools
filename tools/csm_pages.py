@@ -139,7 +139,7 @@ PAGE_WIRE = dict(
           "a": "Yes — the WB 14-A with a CSM EF50 end former makes complete exhaust hangers: the wire is bent and cut and the ends are formed in one line. The videos below show the line in production; the EF end formers are on our tube end forming page."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about CNC wire benders",
-    related_pages=[{"href": "csm-tube-benders.html", "label": "CSM tube benders"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"},
+    related_pages=[{"href": "cnc-tube-benders.html", "label": "CNC tube benders"}, {"href": "pipe-benders.html", "label": "Pipe & tube benders"},
                    {"href": "tube-end-forming-machines.html", "label": "Tube end formers"}, {"href": "rebar-bender.html", "label": "Rebar benders"}],
     related_title="More bending machinery from NovoTech",
 )
@@ -200,7 +200,9 @@ def register_images():
             print("!! missing export for", key)
             continue
         ext = os.path.splitext(f[0])[1]
-        imap[key] = {"src": f"tools/src-images/csm/{key}{ext}", "alt": p["alt"], "section": "csm", "trim": False, "quality": 82, "cutout": bool(p.get("cutout"))}
+        old = imap.get(key, {}).get("cutout")   # a cutout method set by hand ("threshold", Nov 1 2026) is kept
+        imap[key] = {"src": f"tools/src-images/csm/{key}{ext}", "alt": p["alt"], "section": "csm", "trim": False, "quality": 82,
+                     "cutout": old if isinstance(old, str) else bool(p.get("cutout"))}
         keys.append(key)
     imap["csm-logo"] = {"src": "tools/src-images/csm-logo.png", "alt": "CSM", "section": "site", "trim": True, "quality": 90, "cutout": False}
     keys.append("csm-logo")

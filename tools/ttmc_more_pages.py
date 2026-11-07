@@ -266,36 +266,8 @@ PAGES = {
               "a": "No — the C41 hammers are self-contained: a 2 – 9.4 HP motor drives a compressor cylinder in the hammer itself, and that air drives the ram. They stand on a solid concrete foundation — the larger hammers on a separate anvil block of 441 to 1,874 lb — and forge stock heated in a forge. Choose the ram by the largest stock: the 35 – 55 lb rams for blades, tools and ornamental work up to about 1-1/2″ square, the 88 and 165 lb rams for 2 – 2-1/2″ square bar."},
              VOLT],
         related=[{"href": "bead-rollers.html", "label": "Bead rollers"}, {"href": "folder-sheet-metal-brake.html", "label": "Sheet metal brakes"},
-                 {"href": "angle-rolls.html", "label": "Angle rolls and ring rollers"}, {"href": "tube-bender.html", "label": "Tube and pipe benders"},
+                 {"href": "angle-rolls.html", "label": "Angle rolls and ring rollers"}, {"href": "rotary-draw-tube-benders.html", "label": "Hydraulic & rotary draw benders"},
                  {"href": "belt-grinder.html", "label": "Belt grinders"}],
-    ),
-    D.P_TUBE: dict(
-        title="Tube & Pipe Benders — Hydraulic & Electric | NovoTech",
-        meta="Tube and pipe benders: hydraulic PLC tube benders to 3-1/8″, an electric top bender to 2-1/2″, a 25-ton tubing bender, air and electric benders for 2″ schedule 40 pipe, exhaust benders and an electric pipe bender.",
-        h1="Tube and pipe benders — hydraulic, electric and air-hydraulic, value line",
-        nav="Tube & pipe benders · value line",
-        intro="Benders for the fabrication shop, the roll-cage and chassis builder, the exhaust shop and the plumber and electrician — lower in "
-              "price than the CNC and NC rotary-draw benders on the other pages of this section, for the shop that bends tube and pipe every "
-              "week but does not need mandrel bending or programmed 3-D parts. NovoTech's value-line benders are built in China to our "
-              "specification: JTB hydraulic PLC tube benders to 3-1/8″, the TBM-60 electric top bender to 2-1/2″, the HTB-25T 25-ton tubing "
-              "bender, the air- and electric-hydraulic TB-3 benders and the HTB-1000 for 2″ schedule 40 pipe, the HTB-2000 exhaust bender "
-              "with swager and expander and the EHB-10 electric hydraulic pipe bender. Dies, parts and support from Mississauga, ON, Canada.",
-        points=["JTB-40 / 50 / 80 hydraulic PLC tube benders: round tube to Ø3-1/8″, square tube to 3-1/8″, bending to 180°",
-                "TBM-60 electric top bender 1/4 – 2-1/2″; HTB-25T 25-ton tubing bender; TB-3 and HTB-1000 for 2″ schedule 40 pipe",
-                "HTB-2000 exhaust bender and HTES-3000 expander-swager; EHB-10 electric hydraulic pipe bender, 11 US tons, 1/2 – 2″ pipe"],
-        hero="tm-jtb50", minis=["tm-tbm60", "tm-htb1000"],
-        groups=[("power", "Hydraulic and electric tube benders", "Powered benders for tube, pipe, square tube and bar — from the PLC bender to the 25-ton tubing bender.", False),
-                ("pipe", "Electric hydraulic pipe bender", "A push-type bender with an electric pump for plumbing, electrical and maintenance pipe work.", False)],
-        faq=[{"q": "Rotary-draw, push-type or roll bending?",
-              "a": "A rotary-draw bender (JTB, TBM-60, HTB-25T, TB-3, HTB-1000) pulls the tube around a die with a clamp and a follower — a tight, accurate bend with little flattening, the method for roll cages, railings, frames and exhaust. A push-type hydraulic pipe bender (EHB-10) pushes the pipe into a die between two supports — simple and fast for plumbing and electrical pipe, where some ovality is acceptable. For large radii, rings and spirals, see the tube rollers on the angle rolls page."},
-             {"q": "What do I need to tell you to choose the dies?",
-              "a": "The outside diameter (or the square size), the wall thickness, the material and the centre-line radius (CLR) of the bend — usually 2 to 4 times the tube diameter. Tube and pipe sizes differ: 1-1/2″ schedule 40 pipe is 1.900″ OD, while 1-1/2″ tube is 1.500″ OD — the die must fit the OD exactly."},
-             {"q": "When do I need a CNC or mandrel bender instead?",
-              "a": "When the wall is thin for its diameter (thin-wall stainless, aluminum, exhaust tube on tight radii) a mandrel inside the tube prevents wrinkling and flattening; when parts have several bends in different planes, a CNC bender positions length and rotation automatically. The ISITAN CNC and NC tube benders on the other pages of this section do both."},
-             VOLT],
-        crumb={"label": "Pipe & tube benders", "href": "pipe-benders.html"},
-        related=[{"href": "pipe-notcher.html", "label": "Tube notchers"}, {"href": "angle-rolls.html", "label": "Angle rolls, tube rollers and ring rollers"},
-                 {"href": "tube-end-forming-machines.html", "label": "Tube end forming machines"}, {"href": "horizontal-press-brake.html", "label": "Horizontal benders"}],
     ),
     D.P_WOOD: dict(
         # keyword research (Ubersuggest, Canada, Oct 2026): "woodworking machinery" 320/mo, CPC $1.47; "woodworking machines" 320/mo, CPC $1.08
@@ -360,7 +332,7 @@ EXTRA = {
         points_add=["NovoTech value line: PTN-30 hole-saw notcher, UTN40 end-mill notchers, PRS belt tube-end grinders to Ø5-3/4″"],
         faq_add=[{"q": "Hole saw, end mill or belt — which notching method?",
                   "a": "A hole-saw notcher (PTN-30) is the lowest-cost way to cut a saddle: one inexpensive bi-metal hole saw per tube size, any angle, clean enough for most welding. An end-mill notcher (UTN40) cuts faster and more precisely, without coolant, and one cutter covers several sizes. A belt notcher (PRS) grinds the saddle against a contact roller: no burr, no sharp tooling, works on thin-wall stainless and aluminum and also finishes and deburrs. The premium-line PN machines are motorized notchers for production."}],
-        related_add=[{"href": "tube-bender.html", "label": "Tube and pipe benders · value line"}, {"href": "belt-grinder.html", "label": "Belt grinders"}],
+        related_add=[{"href": "rotary-draw-tube-benders.html", "label": "Hydraulic & rotary draw benders"}, {"href": "belt-grinder.html", "label": "Belt grinders"}],
         set={"hero_brand_line": "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components; NovoTech's value-line notchers are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_IRON: dict(
@@ -413,7 +385,7 @@ EXTRA = {
         groups=[("tt-horiz", "Hydraulic horizontal benders · value line", "Horizontal benders for flat bar from 11 to 44 US tons — NovoTech value line, built in China.", False, None)],
         intro_add="NovoTech's value-line HB-10T, HB-25T and HB-40T hydraulic benders, built in China, bend flat bar to 6-1/4 × 1/2″.",
         points_add=["NovoTech value line: HB-10T / 25T / 40T hydraulic horizontal benders, 11 – 44 US tons"],
-        related_add=[{"href": "tube-bender.html", "label": "Tube and pipe benders · value line"}],
+        related_add=[{"href": "rotary-draw-tube-benders.html", "label": "Hydraulic & rotary draw benders"}],
         set={"hero_brand_line": "The HP horizontal presses are built in Turkey for NovoTech's premium line, with European hydraulics and controls; NovoTech's value-line benders are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
     D2.P_ROLL: dict(
@@ -465,12 +437,6 @@ EXTRA = {
              "hero_brand_line": "The WP tilting positioners are built in Turkey for NovoTech's premium line, with European components; NovoTech's value-line positioners, turning rolls, stands and tables are built in China to NovoTech's specification. All sold, installed and supported in Canada by NovoTech."},
     ),
 }
-
-# ---------------------------------------------------------------------------------------------------------------- tube-bender page in the pipe-benders hub
-TUBE_SUBPAGE = {"slug": D.P_TUBE, "title": "Tube and pipe benders — hydraulic, electric and air-hydraulic · value line", "image": "tm-jtb50",
-                "blurb": "NovoTech's value-line benders, built in China: JTB hydraulic PLC tube benders to 3-1/8″, the TBM-60 electric bender, a 25-ton tubing bender, air and electric benders for 2″ schedule 40 pipe, exhaust benders and an electric hydraulic pipe bender.",
-                "nav_label": "Value-line tube & pipe benders", "families": [f["id"] for f in D.TUBE], "in_range": False}
-
 
 def group_entry(page_slug, gid, title, lead, manual, fams):
     g = {"id": f"{gid}-group", "title": title, "lead": lead, "brand": BRAND, "families": [f["id"] for f in fams if f["group"] == gid]}
@@ -564,9 +530,7 @@ def build():
         write_page(slug, p, [f for f in fams if f["page"] == slug])
     for slug, x in EXTRA.items():
         write_extra(slug, x, [f for f in fams if f["page"] == slug])
-    write_json(os.path.join(ROOT, "content", "extra_groups", "ttmc-pipe-benders.json"),
-               {"slug": "pipe-benders", "family_set": SET, "subpages": [TUBE_SUBPAGE],
-                "related_add": [{"href": "tube-bender.html", "label": "Tube and pipe benders · value line"}]})
+    # the value-line tube and pipe benders are on rotary-draw-tube-benders.html (tools/isitan_tube_benders.py, Nov 7 2026)
     used = {k for f in fams + D2.SHEAR for k in f["images"]} | {p["hero"] for p in PAGES.values()} | {m for p in PAGES.values() for m in p["minis"]}
     keys = register_images(used)
     print(f"ttmc-more: {len(fams)} families ({sum(len(f['specs']['models']) for f in fams)} models) · {len(PAGES)} new pages · "

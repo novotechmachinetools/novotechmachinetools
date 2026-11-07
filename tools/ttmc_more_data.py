@@ -689,4 +689,6 @@ WOOD = [
       ["tm-dc900"], headline="940 CFM"),
 ]
 
-NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + SHAPE + TUBE + WOOD
+# TUBE is not in the value-line family set any more: the benders are a group on rotary-draw-tube-benders.html,
+# written with the CSM / ISITAN / premium-line benders by tools/isitan_tube_benders.py (Nov 7 2026)
+NEW_FAMILIES = BRAKES + LOCK + GRIND + DRILL + MILL + CNC + SHAPE + WOOD

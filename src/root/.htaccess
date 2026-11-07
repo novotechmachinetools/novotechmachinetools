@@ -54,6 +54,9 @@ RedirectMatch 301 ^/dener-shears(\.html)?$ /hydraulic-shearing-machine
 RedirectMatch 301 ^/novotech-mechanical-shears(\.html)?$ /mechanical-guillotine-shear
 # two kinds of shear only (the owner, Nov 7 2026): the sheet metal shears page merged into the hydraulic and mechanical pages
 RedirectMatch 301 ^/sheet-metal-shears(\.html)?$ /mechanical-guillotine-shear
+# pipe benders by kind of machine (the owner, Nov 7 2026): the CSM line page and the value-line page merged into the three kind pages
+RedirectMatch 301 ^/csm-tube-benders(\.html)?$ /cnc-tube-benders
+RedirectMatch 301 ^/tube-bender(\.html)?$ /rotary-draw-tube-benders
 # CNC plasma tables are not sold any more (the owner, Nov 7 2026)
 RedirectMatch 301 ^/cnc-plasma-table(\.html)?$ /laser-cutting-machine
 # lasers are split by kind of machine, not by supplier (Oct 2026)

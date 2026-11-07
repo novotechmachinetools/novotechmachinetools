@@ -334,36 +334,6 @@
    "gecam-cws"
   ]
  ],
- "csm-tube-benders": [
-  [
-   "All-electric EMB / EMR",
-   "csm-emr"
-  ],
-  [
-   "Electric hybrid MBE / MRE",
-   "csm-mbe"
-  ],
-  [
-   "TBRE / TMRE, TSRE / TDRE",
-   "csm-tbre"
-  ],
-  [
-   "Hydraulic CNC TSR / TDR",
-   "csm-tsr"
-  ],
-  [
-   "NC TSRJ / TDRJ, TNCPB",
-   "csm-tsrj"
-  ],
-  [
-   "TNCB",
-   "csm-tncb"
-  ],
-  [
-   "F38 / F50 two-head symmetric benders",
-   "csm-f38"
-  ]
- ],
  "double-column-band-saws": [
   [
    "Semi-automatic",
@@ -1088,24 +1058,40 @@
  ],
  "rotary-draw-tube-benders": [
   [
-   "Touchscreen NC (PLC)",
+   "ISITAN BK rotary draw benders",
    "isitan-bk"
   ],
   [
-   "one-touch control",
-   "isitan-bk"
-  ],
-  [
-   "500-program NC (SPB)",
-   "sahinler-spb"
-  ],
-  [
-   "electric",
+   "TB 34 electric",
    "tubend-tb34"
   ],
   [
-   "17-ton hydraulic TB benders",
+   "17-ton TB 42 hydraulic pipe benders",
    "tubend-tb42"
+  ],
+  [
+   "SPB 60 / SPB 76 NC draw benders",
+   "sahinler-spb"
+  ],
+  [
+   "EHB-10",
+   "tt-hb-pipe"
+  ],
+  [
+   "TB-3 and HTB-1000",
+   "tt-tb3"
+  ],
+  [
+   "HTB-25T and TBM-60",
+   "tt-tbm60"
+  ],
+  [
+   "HTB-2000 exhaust bender",
+   "tt-exhaust"
+  ],
+  [
+   "JTB hydraulic PLC tube benders",
+   "tt-jtb"
   ]
  ],
  "semi-automatic-band-saws": [
@@ -1204,32 +1190,6 @@
   [
    "dies 55 and 100 mm (2.17 / 3.94″) high",
    "es-wi-die"
-  ]
- ],
- "tube-bender": [
-  [
-   "JTB-40 / 50 / 80 hydraulic PLC tube benders",
-   "tt-jtb"
-  ],
-  [
-   "TBM-60 electric top bender",
-   "tt-tbm60"
-  ],
-  [
-   "HTB-25T 25-ton tubing bender",
-   "tt-tbm60"
-  ],
-  [
-   "TB-3 and HTB-1000",
-   "tt-tb3"
-  ],
-  [
-   "HTB-2000 exhaust bender and HTES-3000 expander-swager",
-   "tt-exhaust"
-  ],
-  [
-   "EHB-10 electric hydraulic pipe bender",
-   "tt-hb-pipe"
   ]
  ],
  "tube-end-forming-machines": [
@@ -1636,6 +1596,62 @@
   [
    "Bekamak BMDO CS HSS saws",
    "bekamak-bmdo-cs"
+  ]
+ ],
+ "cnc-tube-benders": [
+  [
+   "all-electric EMB / EMR and MRE2-RBE",
+   "csm-emr"
+  ],
+  [
+   "TBRE / TDRE",
+   "csm-tbre"
+  ],
+  [
+   "MBE / MRE",
+   "csm-mbe"
+  ],
+  [
+   "CSM TSR / TDR hydraulic CNC pipe benders",
+   "csm-tsr"
+  ],
+  [
+   "ISITAN SFB CNC/A5",
+   "isitan-sfb-cnc-a5"
+  ],
+  [
+   "CNC/A3",
+   "isitan-sfb-cnc-a3"
+  ]
+ ],
+ "nc-tube-benders": [
+  [
+   "ISITAN SFB 32 compact",
+   "isitan-sfb-32"
+  ],
+  [
+   "SFB 38-NC/A aluminum-profile benders",
+   "isitan-sfb-38-nc-a"
+  ],
+  [
+   "SFB NC/C carrier",
+   "isitan-sfb-nc-c"
+  ],
+  [
+   "SFB NC Ø1-1/2″",
+   "isitan-sfb-nc"
+  ],
+  [
+   "CSM F38 / F50 symmetric benders",
+   "csm-f38"
+  ],
+  [
+   "TSRJ / TDRJ and TNCPB NC benders",
+   "csm-tsrj"
+  ],
+  [
+   "TNCB NC pipe benders",
+   "csm-tncb"
   ]
  ]
 }

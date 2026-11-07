@@ -299,7 +299,9 @@ CIRCULAR_FAMILIES = [
                    "20 ft (6 m) magazine loader for 6 to 17 bars; chip conveyor; ILC micro-spray coolant; blade brush; cover safety switch",
                    "Options: 20 ft (6 m) material roller table, air filter"],
          optional=["20 ft (6 m) material roller table", "Air filter", "HSS circular blades for tube", "208 / 240 / 480 V 3-phase"],
-         images=["bk-bmdo-150xs-1", "bk-bmdo-100xs-1", "bk-bmdo-75xs-1", "bk-bmdo-130xs-1", "bk-bmdo-150xs-2", "bk-bmdo-75xs-2", "bk-bmdo-150xs-3", "bk-bmdo-100xs-2", "bk-bmdo-75xs-3"],
+         images=["bk-bmdo-150xs-1", "bk-bmdo-100xs-1", "bk-bmdo-75xs-1", "bk-bmdo-130xs-1", "bk-bmdo-150xs-2", "bk-bmdo-75xs-2", "bk-bmdo-150xs-3", "bk-bmdo-100xs-2", "bk-bmdo-75xs-3",
+                 # the dealer-site photos (tools/dealer_photos.py, Oct 31 2026)
+                 "bkd-bmdo-150xs-loader", "bkd-bmdo-150xs-2", "bkd-bmdo-100xs-table", "bkd-bmdo-loader", "bkd-bmdo-75xs-panel", "bkd-bmdo-blade"],
          videos=V_BMDO_XS, specs=t_bmdo_xs(),
          headline="Solid bar Ø3/8″ to Ø6-1/4″ (10 – 160 mm) · TCT blades · servo feed · magazine loader"),
     dict(id="bekamak-bmdo-cs", group="bekamak-circular", brand="bekamak",

@@ -36,7 +36,6 @@
   "welding-positioners": "Welding positioners & turning rolls",
   "drill-press": "Drill presses",
   "pipe-benders": "Pipe & tube benders",
-  "tube-bender": "Tube & pipe benders · value line",
   "pipe-notcher": "Tube notchers",
   "tube-end-forming-machines": "Tube end forming machines",
   "pipe-sanding-polishing-machines": "Pipe sanding & polishing machines",
@@ -61,7 +60,10 @@
   "rebar-bender-and-cutter": "Rebar benders & cutters",
   "pvc-aluminum-window-machines": "Aluminum & PVC window machines",
   "woodworking-machinery": "Woodworking machinery",
-  "mechanical-guillotine-shear": "Mechanical shears"
+  "mechanical-guillotine-shear": "Mechanical shears",
+  "cnc-tube-benders": "CNC tube benders",
+  "nc-tube-benders": "NC mandrel benders",
+  "rotary-draw-tube-benders": "Hydraulic & rotary draw benders"
  },
  "pages": {
   "press-brake": [
@@ -456,25 +458,9 @@
    "pipe-sanding-polishing-machines",
    "band-saw"
   ],
-  "csm-tube-benders": [
-   "tube-end-forming-machines",
-   "circular-cold-saws",
-   "pipe-notcher",
-   "tube-laser-cutting-machine",
-   "pipe-sanding-polishing-machines",
-   "angle-rolls"
-  ],
-  "tube-bender": [
-   "pipe-benders",
-   "pipe-notcher",
-   "angle-rolls",
-   "circular-cold-saws",
-   "tube-end-forming-machines",
-   "band-saw"
-  ],
   "pipe-notcher": [
    "pipe-benders",
-   "tube-bender",
+   "rotary-draw-tube-benders",
    "circular-cold-saws",
    "band-saw",
    "welding-positioners",
@@ -496,7 +482,7 @@
   ],
   "wire-bending-machines": [
    "pipe-benders",
-   "tube-bender",
+   "rotary-draw-tube-benders",
    "tube-end-forming-machines",
    "rebar-bender-and-cutter"
   ],
