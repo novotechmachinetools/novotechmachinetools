@@ -671,8 +671,17 @@ small { font-size: .85em; }
   :root { --header-h: 64px; }
   .brand img { width: 170px; }
   .header-contact .btn { display: none; }
-  .site-nav { margin-left: auto; }
-  .nav-toggle { display: inline-block; font: 600 17px var(--cond); padding: 8px 12px; background: var(--charcoal); color: #fff; border: 0; border-radius: var(--radius); cursor: pointer; }
+  /* phones and tablets: the Menu button sits at the right edge of the header, under the right thumb — about two thirds of
+     people hold the phone in the right hand and the top-left corner is the hardest spot to reach one-handed (Hoober's thumb-zone
+     data); the AI finder and the phone number move left of it (the owner, Nov 8 2026) */
+  .site-nav { margin-left: 0; order: 3; }
+  .header-contact { margin-left: auto; order: 2; }
+  .nav-toggle { display: inline-flex; align-items: center; gap: 7px; font: 600 17px var(--cond); padding: 8px 12px 8px 10px; background: var(--charcoal); color: #fff; border: 0; border-radius: var(--radius); cursor: pointer; }
+  .nav-toggle-icon { flex: none; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+  .nav-toggle-icon path { transform-origin: 12px 12px; transition: transform .18s, opacity .12s; }
+  .nav-toggle[aria-expanded="true"] .nt-l1 { transform: translateY(5.5px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] .nt-l2 { opacity: 0; }
+  .nav-toggle[aria-expanded="true"] .nt-l3 { transform: translateY(-5.5px) rotate(-45deg); }
   .nav-menu { display: none; position: absolute; left: 0; right: 0; top: var(--header-h); background: #fff; border-bottom: 1px solid var(--line); padding: 8px 16px 16px; flex-direction: column; gap: 0; max-height: calc(100vh - var(--header-h)); overflow-y: auto; }
   .nav-menu.is-open { display: flex; }
   .nav-menu > li > a { border-bottom: 1px solid var(--line-soft); padding: 12px 4px; }
@@ -909,8 +918,13 @@ body.ai-locked { overflow: hidden; }
   .ai-form { padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); }
   .ai-foot { display: none; }
 }
-/* narrow phones: the logo keeps its room next to Menu, the AI button and the phone number */
-@media (max-width: 600px) { .header-row { gap: 12px; } .header-contact { gap: 10px; } .brand { flex: 0 1 auto; min-width: 72px; } }
+/* narrow phones: the logo keeps its room next to Menu, the AI button and the phone number — the Menu button shows the three
+   lines alone (its name stays for screen readers), so the logo keeps about 130 px on a 390 px phone */
+@media (max-width: 600px) {
+  .header-row { gap: 12px; } .header-contact { gap: 10px; } .brand { flex: 0 1 auto; min-width: 72px; }
+  .nav-toggle { gap: 0; padding: 8px 9px; font-size: 0; line-height: 0; min-width: 44px; min-height: 40px; justify-content: center; }
+  .nav-toggle-icon { width: 24px; height: 24px; }
+}
 @media (max-width: 400px) {
   .ai-open { padding: 5px 6px 5px 8px; gap: 4px; } .ai-open svg { width: 18px; height: 18px; }
   .header-contact .phone .flag-ca { display: none; }

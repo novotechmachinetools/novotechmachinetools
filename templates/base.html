@@ -49,7 +49,7 @@
       <img src="{{ logo.src }}" srcset="{{ logo.srcset }}" sizes="(max-width: 700px) 170px, 200px" width="{{ logo.w }}" height="{{ logo.h }}" alt="NovoTech Machine Tools Inc." fetchpriority="high">
     </a>
     <nav class="site-nav" aria-label="Main">
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu"><svg class="nav-toggle-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path class="nt-l1" d="M3 6.5h18"/><path class="nt-l2" d="M3 12h18"/><path class="nt-l3" d="M3 17.5h18"/></svg>Menu</button>
       <ul id="nav-menu" class="nav-menu">
         {% for item in site.nav %}
         <li class="{{ 'has-children' if item.children else '' }}{{ ' current' if nav_contains(item, page.slug) else '' }}">
