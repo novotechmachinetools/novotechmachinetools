@@ -734,7 +734,9 @@ small { font-size: .85em; }
   .family-grid, .videos-grid, .quote-grid, .agents-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
   .subpage-grid, .line-block .subpage-grid, .subpage-grid.is-4 { grid-template-columns: 1fr 1fr; }
   .family-cards { grid-template-columns: 1fr 1fr; }
-  .why-grid { grid-template-columns: 1fr 1fr; }
+  /* phones and tablets: each row as tall as its own text — with equal rows the long shipping and financing items stretched every
+     row to their height, leaving big empty gaps (the owner, Nov 8 2026) */
+  .why-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 14px 24px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
