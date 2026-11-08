@@ -222,7 +222,7 @@
     [/angle roll|section bend|profile bend|profile roll|ring roll|roll bender|pipe roll|tube roll|roll(ing)? (pipe|tube|bar|angle|beam|channel|profile)|coil(ing)? machine|tube coil/, { "angle-rolls": 15 }],
     [/tube bend|pipe bend|bend(ing)? (a |the )?(tube|pipe|tubing|exhaust|handrail|conduit)|mandrel|rotary draw|\bcnc bender|\bnc bender|draw bend|exhaust/, { "rotary-draw-tube-benders": 10, "nc-tube-benders": 9, "cnc-tube-benders": 8 }],
     [/tube end|end form|flar(e|ing)|tube expand|expander|swag|pipe reduc|tube reduc|beading tube/, { "tube-end-forming-machines": 15 }],
-    [/\blasers?\b/, { "fiber-laser-cutting-machine": 10, "tube-laser-cutting-machine": 7, "sheet-and-tube-laser": 6, "large-format-plate-laser": 5, "coil-fed-laser-cutting-line": 4, "3d-laser-cutting-machine": 4 }],
+    [/\blasers?\b/, { "fiber-laser-cutting-machine": 10, "tube-laser-cutting-machine": 6, "sheet-and-tube-laser": 6, "large-format-plate-laser": 6, "coil-fed-laser-cutting-line": 4, "3d-laser-cutting-machine": 4 }],
     [/(tube|pipe|profile|beam) laser|laser (for |to cut )?(tube|pipe|profile|beam)/, { "tube-laser-cutting-machine": 15, "sheet-and-tube-laser": 9 }],
     [/sheet (and|&) tube|sheet\/tube|both sheet/, { "sheet-and-tube-laser": 15 }],
     [/laser (weld|clean|cladd)|welding laser|handheld laser/, { "laser-welding-machine": 15 }],
@@ -230,16 +230,16 @@
     [/3d laser|five.?axis|5.?axis|robot laser|trim(ming)? (formed|pressed|hot)/, { "3d-laser-cutting-machine": 15 }],
     [/large (format|plate)|heavy plate laser|bevel(l?ing)? laser|laser.*bevel/, { "large-format-plate-laser": 13 }],
     [/plasma|water ?jet|oxy|flame cut/, { "fiber-laser-cutting-machine": 7, "large-format-plate-laser": 7 }],
-    [/band ?saws?/, { "semi-automatic-band-saws": 8, "automatic-band-saws": 7, "affordable-semi-automatic-band-saws": 7, "double-column-band-saws": 6, "manual-band-saws": 5, "automatic-feed-band-saws": 6, "twin-column-band-saws": 5, "vertical-band-saws": 3 }],
+    [/band ?saws?/, { "semi-automatic-band-saws": 8, "automatic-band-saws": 8, "affordable-semi-automatic-band-saws": 8, "double-column-band-saws": 7, "manual-band-saws": 6, "automatic-feed-band-saws": 8, "twin-column-band-saws": 7, "vertical-band-saws": 4 }],
     [/double.?column|twin.?column/, { "double-column-band-saws": 13, "twin-column-band-saws": 11 }],
     [/vertical (band ?)?saw|contour saw|plate saw/, { "vertical-band-saws": 14, "vertical-metal-band-saw": 12 }],
     [/cold saw|circular saw|circular cold|chop ?saw|friction saw|abrasive saw|cut.?off saw|\bhss saw|carbide saw|\btct\b/, { "cold-saws": 12, "automatic-cold-saws": 10 }],
     [/up.?cut|alumin(um|ium)? (profile|extrusion|window)s?|alumin(um|ium)? saw|pvc saw|double (head|miter) saw|window saw/, { "aluminum-and-pvc-upcut-saws": 15 }],
-    [/\bsaws?\b|\bsawing\b/, { "semi-automatic-band-saws": 6, "automatic-band-saws": 5, "cold-saws": 5, "affordable-semi-automatic-band-saws": 5, "double-column-band-saws": 4, "manual-band-saws": 3 }],
+    [/\bsaws?\b|\bsawing\b/, { "semi-automatic-band-saws": 6, "automatic-band-saws": 6, "cold-saws": 5, "affordable-semi-automatic-band-saws": 6, "double-column-band-saws": 5, "manual-band-saws": 5, "automatic-feed-band-saws": 5, "twin-column-band-saws": 5, "automatic-cold-saws": 5 }],
     [/blades?\b.*(band|saw)|(band|saw) blades?|\bwikus/, { "band-saw-blades": 15 }],
     [/rebar|reinforc/, { "rebar-bender": 10, "rebar-cutter": 8, "automatic-rebar-processing-lines": 5 }],
     [/stirrup|rebar (line|processing)|automatic rebar|\bmesh\b|dowel|spiral bend/, { "automatic-rebar-processing-lines": 11, "rebar-bender": 9 }],
-    [/hydraulic press|shop press|\bh.?frame|\bc.?frame|gap.?frame|deep.?draw|forging press|stamping press|four.?column press|4.?column press/, { "h-frame-hydraulic-press": 9, "hydraulic-shop-press": 9, "c-frame-hydraulic-press": 7, "hydraulic-straightening-press": 4 }],
+    [/hydraulic press(?!\s?brake)|shop press|\bh.?frame|\bc.?frame|gap.?frame|deep.?draw|forging press|stamping press|four.?column press|4.?column press/, { "h-frame-hydraulic-press": 9, "hydraulic-shop-press": 9, "c-frame-hydraulic-press": 7, "hydraulic-straightening-press": 4 }],
     [/shop press|garage press|bearing press|bench press\b/, { "hydraulic-shop-press": 14 }],
     [/\bh.?frame|four.?column|4.?column|deep.?draw/, { "h-frame-hydraulic-press": 14 }],
     [/\bc.?frame|gap.?frame|single.?column press|open.?front/, { "c-frame-hydraulic-press": 14 }],
@@ -255,9 +255,9 @@
     [/deburr|edge round|edge break|\bdross|\bslag|\bgrain(ing)?\b|wide.?belt|timesaver|sheet (sander|grinder)|plate (sander|grinder)/, { "sheet-metal-plate-deburring-edge-rounding-finishing-grinding": 15 }],
     [/belt grind|belt sander|knife|linisher|disc sander|bench grind|pedestal grind|\bgrinders?\b/, { "belt-grinder": 13 }],
     [/polish|pipe sand|tube sand|center.?less|mirror|satin finish|handrail (grind|finish)/, { "pipe-sanding-polishing-machines": 14 }],
-    [/corner grind/, { "corner-grinding-machines": 15 }],
-    [/tube end deburr|tube deburr|deburr (tube|pipe)|pipe (end )?deburr/, { "tube-end-deburring-machine": 15 }],
-    [/surface grind/, { "surface-grinder": 15 }],
+    [/corner grind/, { "corner-grinding-machines": 20 }],
+    [/tube end deburr|tube deburr|deburr(ring)? (the )?(tube|pipe)|pipe (end )?deburr|(tube|pipe) end (finish|brush|round)/, { "tube-end-deburring-machine": 22 }],
+    [/surface grind/, { "surface-grinder": 20 }],
     [/bevel|chamfer|weld prep|edge prep/, { "plate-beveler": 14 }],
     [/\blathe|\bturning\b(?!\s*rolls?)|cnc turn/, { "cnc-lathe": 15 }],
     [/vmc|vertical machining|machining cent(er|re)/, { "vertical-machining-center": 15 }],
@@ -271,7 +271,7 @@
     [/american (style|tool)|amada|promecam/, { "american-style-press-brake-tooling": 15 }],
     [/\bwila|trumpf|new standard/, { "trumpf-wila-press-brake-tooling": 15 }],
     [/bystronic|\blvd\b/, { "bystronic-lvd-press-brake-tooling": 15 }],
-    [/(press brake|brake) (tool|tooling|die|dies|punch|punches)|tooling|\bv.?dies?\b|gooseneck|\bdies?\b|\bpunches\b|euro(pean)? (style )?(tool|punch|die)/, { "european-press-brake-dies": 9, "european-press-brake-punches": 9, "american-style-press-brake-tooling": 7, "press-brake-tool-holders-adapters": 6 }],
+    [/(press brake|brake) (tool|tooling|die|dies|punch|punches)|tooling|\bv.?dies?\b|gooseneck|\bdies?\b|\bpunches\b|euro(pean)? (style )?(tool|punch|die)/, { "european-press-brake-dies": 15, "european-press-brake-punches": 15, "american-style-press-brake-tooling": 13, "press-brake-tool-holders-adapters": 12 }],
     [/tool holder|clamp(ing)? (system|holder)|adapter|intermediate/, { "press-brake-tool-holders-adapters": 14 }],
     [/lock ?former|pittsburgh|button.?lock|snap.?lock|\bseam(er|ing)\b|\bduct/, { "lock-former": 14, "circle-cutters-and-seamers": 5 }],
     [/bead(ing)? roll|\bbeader|roto.?die|rotary machine|swag(e|ing) (machine|roll)/, { "bead-rollers": 15 }],
@@ -291,13 +291,13 @@
     if (req.mats.indexOf("rebar") >= 0) req.mats = req.mats.filter(function (m) { return m === "rebar"; });
     req.mat = req.mats[0] || null;
     // qualifiers
-    var Q = [["cnc", /\bcnc\b/], ["nc", /\bnc\b/], ["auto", /\bauto(matic|mated|mation)?\b|production|high.?volume|unattended|bundle/], ["semi", /semi.?auto/],
+    var Q = [["cnc", /\bcnc\b/], ["nc", /\bnc\b/], ["auto", /\bauto(matic|mated|mation)?\b|\bauto[- ]?(feed|feeding|fed|cycle|cycling)|\bautofeed|automatic[- ]feed|bar[- ]?feed(er)?|\bfeeder\b|production|high.?volume|unattended|bundle/], ["semi", /semi.?auto/],
       ["manual", /\bmanual|\bhand\b|gravity|by hand/], ["hydraulic", /hydraulic/], ["electric", /electric|servo/], ["mechanical", /mechanical/],
-      ["premium", /premium|best|heavy.?duty|european|top quality|high.?end|dener|isitan|bekamak|\bgms\b|turkish|made in turkey/],
+      ["premium", /premium|\bbest\b|european|top quality|high.?end|dener|isitan|bekamak|\bgms\b|turkish|made in turkey/],
       ["value", /budget|cheap|affordable|low.?cost|value|econom|inexpensive|starter|hobby|small shop|entry/],
       ["small", /\bsmall|compact|portable|bench|mini|light(weight)?\b|table.?top/], ["heavy", /\bheavy|large|big|industrial|thick/],
       ["stainless", /stainless|\bss\b|\b304\b|\b316\b/], ["aluminum", /alumin/], ["single", /single.?phase|1.?phase|110 ?v|115 ?v|120 ?v|220 ?v|230 ?v/],
-      ["miter", /mit(er|re)|\bangle cut|\bangles? of|\b45\s?(°|deg|degree)|\b60\s?(°|deg|degree)|swivel/]];
+      ["miter", /mit(er|re)|\bangle cut|\bangles? of|\b(30|45|60)\s?(°|deg|degree)|\bat (30|45|60)\b(?!\s?(?:"|'|mm|ga|ton|kw|lb|kg|ft|in))|swivel/]];
     Q.forEach(function (x) { if (x[1].test(n)) req.qual[x[0]] = 1; });
     if (req.qual.semi) delete req.qual.auto;
     // machine types named in the question
@@ -326,6 +326,7 @@
     if ((m = /#\s?(\d{1,2})\b/.exec(n)) && US_BARS[m[1]]) N.bar = US_BARS[m[1]];
     if ((m = /\b(10|15|20|25|30|35|45|55)\s?m\b/.exec(n)) && (req.mat === "rebar" || /rebar|bar|bend|cut/.test(n))) N.bar = CA_BARS[m[1]];
     if (!N.bar && req.mat === "rebar" && (m = /(\d+(?:\.\d+)?)\s?mm/.exec(n))) N.bar = +m[1];
+    if (N.bar) req._barOnly = true;
     // gauge
     if ((m = /\b(\d{1,2})\s?(?:ga|gauge|gage)\b/.exec(n)) && GA[m[1]]) N.thk = GA[m[1]];
     // tons, kW, lb, kg, degrees
@@ -336,9 +337,10 @@
     if ((m = /(\d[\d,]*(?:\.\d+)?)\s?kgs?\b/.exec(n))) N.load = m[1].replace(/,/g, "") * 2.2046;
     if (N.ton && (req.ops.weld || /positioner|turning roll|rotator|load|weigh|tank|vessel/.test(n))) { N.load = N.ton * 2000; delete N.ton; }
     if ((m = /\b(\d{2})\s?(?:°|deg\b|degrees?\b)/.exec(n))) N.angle = +m[1];
+    else if ((m = /\bat\s+(\d{2})\b(?!\s?(?:"|'|mm|cm|ga|gauge|tons?|t\b|kw|lbs?|kgs?|ft|feet|in\b|inch|x\b))/.exec(n)) && +m[1] >= 15 && +m[1] <= 90) N.angle = +m[1];
     // "4x8 sheet", "5 x 10 ft" → bed; "6x4 tube" → rect; "1/4 x 10'" → thickness × length; "2x2x1/4 angle"
     var used = [];
-    re = new RegExp(NUMRX + "\\s?(\"|')?\\s?x\\s?" + NUMRX + "\\s?(\"|')?(?:\\s?x\\s?" + NUMRX + "\\s?(\"|')?)?", "g");
+    re = new RegExp(NUMRX + "\\s?(\"|')?\\s*x\\s*" + NUMRX + "\\s?(\"|')?(?:\\s*x\\s*" + NUMRX + "\\s?(\"|')?)?", "g");
     while ((m = re.exec(n))) {
       used.push([m.index, m.index + m[0].length]);
       var a = val(m[1]), ua = m[2], b = val(m[3]), ub = m[4], c = m[5] ? val(m[5]) : null;
@@ -369,7 +371,7 @@
       q.push({ v: v, at: m.index, end: m.index + m[0].length, unit: u });
     }
     // bare numbers before a material word ("2 pipe", "1/4 plate") count as inches
-    re = new RegExp("(?:^|\\s)" + NUMRX + "\\s+(?:dia(?:meter)?\\s+)?(pipe|tube|tubing|plate|sheet|bar|rod|angle|channel|flat|round|square|od|thick|nps|sch)", "g");
+    re = new RegExp("(?:^|\\s)" + NUMRX + "\\s+(?:dia(?:meter)?\\s+)?(pipe|tube|tubing|plate|sheet|bar|rod|angle|channel|flat|round|square|od|thick|nps|sch|holes?|stainless|alumin\\w*|mild|carbon)", "g");
     while ((m = re.exec(n))) {
       var at = m.index + m[0].indexOf(m[1]);
       if (!q.some(function (x) { return Math.abs(x.at - at) < 3; })) q.push({ v: val(m[1]), at: at, end: at + m[1].length, unit: "", bare: true });
@@ -391,6 +393,7 @@
       var before = n.slice(Math.max(0, x.at - 26), x.at), after = n.slice(x.end, x.end + 30);
       var aft = after.replace(/^\s*(dia(meter)?\s+)?/, "");
       if (used.some(function (u) { return x.at >= u[0] && x.at < u[1]; })) return;   // part of an A x B group, read above
+      if (/\bsch(edule)?\.?\s*$/.test(before)) { N.sch = x.v; return; }               // schedule 40 pipe: the wall class, not a size
       if (/radius|\bclr\b|\br\s*$/.test(before + " " + after.slice(0, 8)) && !/dia/.test(after.slice(0, 10))) { N.radius = x.v; return; }
       var dirDia = /^\s*(dia(meter)?|ring|circle|arc|hoop|radius)\b/.test(after) || x.unit !== "'" && /^\s*(cylinders?|tanks?|shells?|cones?)\b/.test(after),
         dirSize = /^\s*(dia(meter)?|od|o\.d\.)\s+(pipe|tube|tubing|bar|rod|round|solid|shaft)/.test(after) || /^\s*(dia(meter)?)\s+(of\s+)?\.?\d/.test(after);
@@ -405,6 +408,11 @@
       if (/^\s*(dia(meter)?\s+|od\s+|o\.d\.\s+)?(round )?(tube|tubing)/.test(after)) { N.size = x.v; if (!req.mat) req.mat = "tube"; return; }
       if (/^\s*(dia(meter)?\s+)?(round |solid )?(bar|rod|shaft|stock)/.test(after) || /^\s*(dia(meter)?\s+)?round\b/.test(after)) { N.size = x.v; if (!req.mat || req.mat === "profile") req.mat = req.mat || "rd_bar"; return; }
       if (/^\s*(dia(meter)?)\b/.test(after) && !N.size && (req.ops.cut || req.mats.length)) { N.size = x.v; return; }
+      if (/^\s*(stainless|alumin(um|ium)?|mild|steel|carbon|ms)\s+(steel\s+)?(round\s+)?(tube|tubing|pipe|bar|rod|shaft|angle|channel|beam|flat|square|hss|section|profile)/.test(after)) {
+        N.size = N.size || x.v;
+        if (req.mat === "pipe" && !N.nps) { N.nps = x.v; N.size = npsOd(x.v) || x.v; }
+        return;
+      }
       if (/^\s*(thick|plate|sheet|wall|ga\b|mild|steel|stainless|alumin|ms\b|carbon)/.test(after) || /thick(ness)?\s*(of\s*)?$/.test(before)) {
         if (/^\s*wall/.test(after) || /wall\s*$/.test(before)) N.wall = x.v; else if (x.v < 6) N.thk = N.thk || x.v;
         return;
@@ -412,6 +420,7 @@
       if (/^\s*(long|length|wide|width|bed|table|working)/.test(after) || /(length|width|long|wide|up to)\s*(of\s*)?$/.test(before) || (x.unit === "'" && x.v >= 24)) {
         N.len = Math.max(N.len || 0, x.v); return;
       }
+      if (!N.D && rollCtx && x.unit !== "'" && x.v >= 4 && /\b(to|into)(\s+an?)?\s*$/.test(before) && (N.size || N.thk)) { N.D = x.v; return; }   // "roll 2x2 angle to 60 inch"
       if (/(hole|punch)/.test(after.slice(0, 12)) || /(hole|punch)\s*(of\s*)?$/.test(before)) { N.hole = x.v; return; }
       if (/^\s*(angle|channel|beam|tee|flat|square|rect)/.test(aft) && !N.size) { N.size = x.v; return; }
       if (/(drill|tap)/.test(before + after)) { N.hole = x.v; return; }
@@ -423,6 +432,7 @@
       if (!N.size) N.size = x.v;
     });
     if (N.radius && !N.D && (req.ops.roll || N.radius > 10)) N.D = N.radius * 2;
+    if (req._barOnly) { delete N.size; delete N.thk; delete req._barOnly; }
     // a pipe size typed in inches is the nominal size (NPS): 2″ pipe = 2-3/8″ OD
     if (req.mat === "pipe" && N.size && !N.nps && N.size <= 24 && !/\bod\b|o\.d\./.test(n)) { N.nps = N.size; N.size = npsOd(N.size) || N.size; }
   }
@@ -431,15 +441,21 @@
     var P = req.pages || {};
     return !!(P["hydraulic-press-brake"] || P["hydraulic-shearing-machine"] || P["hydraulic-3-roll-plate-rollers"] || P["electric-press-brake"] || P["mechanical-guillotine-shear"] ||
       P["box-and-pan-brake"] || P["sheet-metal-hand-brake"] || P["hydraulic-folding-machine"] || P["panel-bender"] || P["motorized-plate-rollers"] || P["hydraulic-4-roll-plate-rollers"] ||
-      req.ops.bend && !req.mat || req.ops.roll && !req.mat);
+      P["corner-notcher"] || P["plate-beveler"] || P["v-grooving-machine"] || P["bead-rollers"] || P["lock-former"] || P["circle-cutters-and-seamers"] || P["roofing-siding-brake"] || P["magnetic-sheet-metal-brake"] ||
+      req.ops.bend && !req.mat || req.ops.roll && !req.mat || req.ops.notch && !req.mat || req.ops.bevel && !req.mat);
   }
   /* every kind of machine that bends sheet: a job given with sizes is answered with all of them (the owner, Nov 7 2026: "a 10 ft
      22 ga bending brake" is a press brake, a hydraulic folder, a box and pan brake, a hand brake…), the smallest first */
   var BEND_SHEET = { "hydraulic-press-brake": 11, "electric-press-brake": 8, "compact-hydraulic-press-brakes": 7, "hydraulic-folding-machine": 8,
     "box-and-pan-brake": 7, "sheet-metal-hand-brake": 6, "magnetic-sheet-metal-brake": 6, "roofing-siding-brake": 5, "shear-brake-roll-3-in-1": 5, "panel-bender": 5 };
   function allBendSheet(P, floor) {
-    for (var p in BEND_SHEET) P[p] = Math.max(P[p] || 0, Math.max(BEND_SHEET[p], floor || 0));
+    var top = 0, p;
+    for (p in P) if (P[p] > top) top = P[p];
+    for (p in BEND_SHEET) top = Math.max(top, BEND_SHEET[p]);
+    floor = Math.max(floor || 0, top * 0.75);          // every kind of brake counts as a full answer, not a "similar machine"
+    for (p in BEND_SHEET) P[p] = Math.max(P[p] || 0, Math.max(BEND_SHEET[p], floor));
   }
+  function TUBE_BENDERS_NAMED(P, maxW) { for (var p in TUBE_BENDERS) if (P[p] >= maxW) return true; return false; }
   /* machine types from the job (operation + material) when the question names no machine */
   function inferPages(req) {
     var P = req.pages, o = req.ops, mat = req.mat, long = mat && LONG[mat], N = req.nums;
@@ -450,10 +466,11 @@
     var maxW = 0;
     for (var k in P) if (P[k] > maxW) maxW = P[k];
     // (a 3-in-1 or a panel bender named by the visitor is a specific kind — only the brakes and folders open the whole list)
-    var bendNamed = Object.keys(P).some(function (p) { return BEND_SHEET[p] && p !== "shear-brake-roll-3-in-1" && p !== "panel-bender" && P[p] >= maxW * 0.7; }) &&
+    var GENERAL_BRAKE = { "hydraulic-press-brake": 1, "electric-press-brake": 1, "compact-hydraulic-press-brakes": 1, "hydraulic-folding-machine": 1, "sheet-metal-hand-brake": 1 };
+    var bendNamed = Object.keys(P).some(function (p) { return GENERAL_BRAKE[p] && P[p] >= maxW * 0.7; }) &&
       !(o.shear || o.cut || o.roll || o.punch || o.notch);
     if ((N.thk || N.len) && !long && mat !== "rebar" && (bendNamed || (o.bend && !named && (mat === "sheet" || mat === "plate" || !mat)))) {
-      allBendSheet(P, bendNamed ? maxW * 0.45 : 0);
+      allBendSheet(P, bendNamed ? maxW * 0.75 : 0);
       if (bendNamed) return;
     }
     if (mat === "rebar") {
@@ -472,7 +489,14 @@
     }
     if (named) {
       if (o.cut && long && P["fiber-laser-cutting-machine"] && !P["tube-laser-cutting-machine"]) add("tube-laser-cutting-machine", 12);
+      if (P["fiber-laser-cutting-machine"] && long && !/sheet|plate/.test(req.n)) { add("tube-laser-cutting-machine", maxW + 2); add("sheet-and-tube-laser", maxW); P["fiber-laser-cutting-machine"] = Math.min(P["fiber-laser-cutting-machine"], (maxW + 2) * 0.5); }
+      if (P["tube-laser-cutting-machine"] && (mat === "sheet" || mat === "plate" || N.bed) && !long) P["tube-laser-cutting-machine"] = Math.min(P["tube-laser-cutting-machine"], maxW * 0.5);
       if (o.punch && (o.cut || o.shear) && long) add("ironworker-machines", 15);
+      if (o.bend && !o.roll && !D && (mat === "pipe" || mat === "tube" || mat === "sq_tube" || mat === "rect_tube") && !TUBE_BENDERS_NAMED(P, maxW)) {
+        add("rotary-draw-tube-benders", 14); add("nc-tube-benders", 13); add("cnc-tube-benders", 12);
+        if (P["angle-rolls"]) P["angle-rolls"] = Math.min(P["angle-rolls"], 8);
+        if (P["pipe-notcher"]) P["pipe-notcher"] = Math.min(P["pipe-notcher"], 6);
+      }
       return;
     }
     if (o.roll && (mat === "plate" || mat === "sheet" || N.thk) || /cylinder|cone|tank shell/.test(req.n)) {
@@ -497,8 +521,8 @@
     if (o.cut && (long || N.rect || N.size)) {
       if (mat === "wood") { add("woodworking-machinery", 14); return; }
       if (mat === "pvc" || req.qual.aluminum && mat === "profile") { add("aluminum-and-pvc-upcut-saws", 14); return; }
-      add("semi-automatic-band-saws", 10); add("automatic-band-saws", 9); add("affordable-semi-automatic-band-saws", 8); add("double-column-band-saws", 7);
-      add("cold-saws", 8); add("automatic-cold-saws", 6); add("manual-band-saws", 5); add("automatic-feed-band-saws", 6); add("twin-column-band-saws", 5);
+      add("semi-automatic-band-saws", 10); add("automatic-band-saws", 10); add("affordable-semi-automatic-band-saws", 9); add("double-column-band-saws", 9);
+      add("cold-saws", 9); add("automatic-cold-saws", 8); add("manual-band-saws", 8); add("automatic-feed-band-saws", 9); add("twin-column-band-saws", 9);
       if (mat === "tube" || mat === "pipe" || mat === "sq_tube" || mat === "rect_tube") add("tube-laser-cutting-machine", 5);
       return;
     }
@@ -572,6 +596,7 @@
         if (base !== c && base.length >= 3) MODELS.push({ key: base, f: f, mi: mi, loose: true });
       });
       f._caps = f.caps || [];
+      f._auto = autoLevel(f);
       FAMBYID[f.id] = f;
     });
     NDOC = FAM.length;
@@ -584,6 +609,28 @@
     });
   }
   function idf(t) { var df = DF[t] || 0; return Math.log(1 + (NDOC - df + 0.5) / (df + 0.5)); }
+  /* how a series is driven — "auto" (automatic feed / CNC), "semi" (semi-automatic), "powered" (hydraulic, electric, NC… but
+     one cut or bend per cycle), "manual" (hand, foot, gravity) or null when the catalogue does not say — read from the page
+     slug, then the catalogue's automation group, then the names, then (saws) the Bekamak model prefix */
+  function autoLevel(f) {
+    var slug = f.page || "", a = String(f.automation || "").toLowerCase();
+    if (/^automatic-|automatic-feed/.test(slug)) return "auto";
+    if (/semi-automatic/.test(slug)) return "semi";
+    if (/^manual-/.test(slug)) return "manual";
+    if (a === "automatic") return "auto";
+    if (a === "semi-automatic" || a === "semi") return "semi";
+    if (a === "manual") return "manual";
+    var t = (f.name + " " + (f.short || "") + " " + (f.category || "")).toLowerCase();
+    if (/semi.?auto/.test(t)) return "semi";
+    if (/fully automatic|\bautomatic\b|\bcnc\b|servo/.test(t)) return "auto";
+    if (/hydraulic|electric|motori[sz]ed|pneumatic|\bnc\b|power(ed)?\b/.test(t)) return "powered";
+    if (/\bmanual\b|\bhand\b|hand[- ]|gravity|foot[- ]clamp|pull.?down|treadle|box and pan|\bbench\b|roofing|siding|magnetic/.test(t)) return "manual";
+    var names = f.models.map(function (m) { return m.name.toUpperCase(); });
+    if (names.length && names.every(function (x) { return x.indexOf("BMSO") === 0; })) return "auto";
+    if (names.length && names.every(function (x) { return x.indexOf("BMSY") === 0; })) return "semi";
+    if (names.length && names.every(function (x) { return /^BMS(?![OY])|^BMH/.test(x); })) return "manual";
+    return null;
+  }
 
   /* query terms with weights: the words themselves, a few synonyms, and the closest catalogue word for a typo */
   var SYN = { shear: ["guillotin"], guillotin: ["shear"], pip: ["tub"], tub: ["pip"], notch: ["cop"], bevel: ["chamf"], chamf: ["bevel"],
@@ -726,7 +773,8 @@
     }
     // sheet and plate machines: thickness and working length
     var thkCap = req.qual.stainless && c.thk_ss ? c.thk_ss : req.qual.aluminum && c.thk_al ? c.thk_al : c.thk;
-    if (N.thk && thkCap && (SHEET_THK[page] || PRESS_BRAKES[page] && !c.ton)) pass(N.thk <= thkCap * 1.07, fmtThk(thkCap) + (req.qual.stainless && c.thk_ss ? " stainless" : req.qual.aluminum && c.thk_al ? " aluminum" : " mild steel") + " capacity", N.thk / thkCap);
+    var ssGuess = req.qual.stainless && !c.thk_ss && thkCap;          // no stainless rating in the table: about 2/3 of the mild-steel figure
+    if (N.thk && thkCap && (SHEET_THK[page] || PRESS_BRAKES[page] && !c.ton)) pass(N.thk * (ssGuess ? 1.5 : 1) <= thkCap * 1.07, fmtThk(thkCap) + (req.qual.stainless && c.thk_ss ? " stainless" : req.qual.aluminum && c.thk_al ? " aluminum" : " mild steel") + " capacity" + (ssGuess ? " (about " + fmtThk(thkCap / 1.5) + " in stainless)" : ""), N.thk * (ssGuess ? 1.5 : 1) / thkCap);
     if (N.len && c.len && (SHEET_THK[page] || PRESS_BRAKES[page] || page === "horizontal-press-brake")) pass(N.len <= c.len * 1.01, fmtLen(c.len) + (PRESS_BRAKES[page] ? " bending length" : " working length"), N.len / c.len);
     if (N.D && c.min_d && !c.sec) pass(c.min_d <= N.D * 1.02, "rolls down to Ø" + fmtIn(c.min_d));
     // press brakes: the force a bend needs (air bending, die opening 8 × thickness): 575 × t² / V US tons per foot
@@ -747,7 +795,10 @@
         var capR = sq && c.rect ? c.rect[1] : (c.rnd || (c.rect ? c.rect[1] : 0));
         pass(N.size <= capR * 1.01, (sq ? "square " : "round ") + fmtIn(capR) + " at 90°", N.size / capR);
       }
-      if (N.angle && N.angle !== 90 && c.miter) pass(c.miter.indexOf(N.angle) >= 0 || c.miter.some(function (a) { return a >= N.angle; }), "miter cuts to " + Math.max.apply(null, c.miter) + "°");
+      if (N.angle && N.angle !== 90 && c.miter) {
+        pass(c.miter.indexOf(N.angle) >= 0 || c.miter.some(function (a) { return a >= N.angle; }), "miter cuts to " + Math.max.apply(null, c.miter) + "°");
+        if (N.size && N.angle === 45 && c.rnd45 && !N.rect) pass(N.size <= c.rnd45 * 1.01, "round " + fmtIn(c.rnd45) + " at 45°", N.size / c.rnd45);
+      } else if (req.qual.miter && c.miter && !N.angle) notes.push("miter cuts to " + Math.max.apply(null, c.miter) + "°" + (c.rnd45 ? " (round " + fmtIn(c.rnd45) + " at 45°)" : ""));
       else if ((N.angle && N.angle !== 90 || req.qual.miter) && SAWS[page] && !c.miter && page !== "cold-saws" && page !== "aluminum-and-pvc-upcut-saws" && c.rnd) pass(false, "cuts at 90° only");
     }
     // ironworkers and punching machines
@@ -792,8 +843,8 @@
   function fmtNum(x) { return Math.round(x * 100) / 100; }
   function barLabel(mm) {
     var ca = null, us = null, k;
-    for (k in CA_BARS) if (CA_BARS[k] <= mm + 0.3) ca = k;
-    for (k in US_BARS) if (US_BARS[k] <= mm + 0.3) us = k;
+    for (k in CA_BARS) if (CA_BARS[k] <= mm + 0.5) ca = k;
+    for (k in US_BARS) if (US_BARS[k] <= mm + 0.5) us = k;
     return mm + " mm" + (ca ? " (" + ca + "M" + (us ? ", #" + us : "") + ")" : us ? " (#" + us + ")" : "");
   }
 
@@ -807,7 +858,15 @@
       for (var len = 1; len <= 3 && i + len <= toks.length; len++) {
         var key = toks.slice(i, i + len).join("");
         if (key.length < 3 || !/\d/.test(key)) continue;
-        MODELS.forEach(function (m) { if (m.key === key) { var cur = modelHits[m.f.id]; if (!cur || !m.loose) modelHits[m.f.id] = { mi: m.mi, loose: m.loose }; } });
+        var mixed = /[a-z]/.test(key), pureNum = !mixed;
+        MODELS.forEach(function (m) {
+          var grade = 0;
+          if (m.key === key) grade = m.loose ? (pureNum ? 0 : 1) : 3;                      // a bare number ("350") never names a model loosely
+          else if (!m.loose && mixed && key.length >= 4 && m.key.length > key.length && m.key.slice(-key.length) === key && !/\d/.test(m.key.charAt(m.key.length - key.length - 1))) grade = 2;   // "350ga" ends "bmso350ga"
+          if (!grade) return;
+          var cur = modelHits[m.f.id];
+          if (!cur || grade > cur.grade) modelHits[m.f.id] = { mi: m.mi, loose: grade < 3, grade: grade };
+        });
       }
     }
     var anyPages = Object.keys(req.pages).length > 0, hasNums = Object.keys(req.nums).length > 0;
@@ -844,7 +903,7 @@
       var fit = best ? best.fit : null, relevant = !anyPages || intent > 0 || hit;
       if (fit && fit.ok && relevant) s += 7 + 3 * Math.min(1, fit.ratio != null ? fit.ratio : 0.5) + 1.5 * Math.min(3, fit.checks - 1);
       else if (fit && fit.ok === false) s -= 9;
-      if (s > 0.5) scored.push({ f: f, s: s, mi: hit && !hit.loose ? hit.mi : (best ? best.mi : (hit ? hit.mi : null)), fit: fit, hit: !!hit, intent: intent, cov: f._cov });
+      if (s > 0.5) scored.push({ f: f, s: s, mi: hit && !hit.loose ? hit.mi : (best ? best.mi : (hit ? hit.mi : null)), fit: fit, hit: !!hit, loose: !!(hit && hit.loose), intent: intent, cov: f._cov });
     });
     scored.sort(function (a, b) { return b.s - a.s; });
     return { list: scored, qt: qt, modelHit: Object.keys(modelHits).length > 0 };
@@ -923,57 +982,106 @@
   /* machines that do the job: the closest fit (just big enough) first */
   function cmpFit(a, b) {
     var ra = a.fit && a.fit.ratio, rb = b.fit && b.fit.ratio;
+    if (ra != null) ra = Math.min(1, ra);
+    if (rb != null) rb = Math.min(1, rb);
     if (ra != null && rb != null && Math.abs(ra - rb) > 0.004) return rb - ra;
     if (ra != null && rb == null) return -1;
     if (ra == null && rb != null) return 1;
+    if (a.w != null && b.w != null && a.w !== b.w) return b.w - a.w;
     return cmpSize(a, b);
   }
   function fam(f, why) { return { f: f, mi: null, fit: null, size: famSize(f), why: why || null }; }
   /* machines made for one special shape: below the list unless the question names it */
-  var SPECIAL = ["stirrup", "spiral", "dowel", "mesh", "combined", "bender-cutter", "coiler"];
+  var SPECIAL = [["stirrup", /stirr/], ["spiral", /spiral/], ["dowel", /dowel/], ["mesh", /\bmesh/], ["combined", /combin|bender.?cutter|cutter.?bender|cut and bend|bend and cut/],
+    ["bender-cutter", /combin|bender.?cutter|cutter.?bender|cut and bend|bend and cut/], ["coiler", /coil/]];
   function special(f, qn) {
-    var t = (f.short + " " + f.name).toLowerCase();
-    for (var i = 0; i < SPECIAL.length; i++) if (t.indexOf(SPECIAL[i]) >= 0 && qn.indexOf(SPECIAL[i].slice(0, 5)) < 0) return true;
-    return false;
+    if (f.page === "automatic-rebar-processing-lines") return false;
+    var t = (f.short + " " + f.name).toLowerCase(), words = SPECIAL.filter(function (w) { return t.indexOf(w[0]) >= 0; });
+    if (!words.length) return false;
+    return !words.some(function (w) { return w[1].test(qn); });
   }
-  /* the kind of machine the visitor asked for (automatic, CNC, electric, premium line…) */
-  function qualMismatch(f, Q) {
-    var label = (f.name + " " + f.category + " " + (f.automation || "") + " " + f.short).toLowerCase();
-    if (Q.auto && (/semi/.test(label) || !/automatic|cnc|\bauto|line\b/.test(label))) return "not automatic";
-    if (Q.semi && !/semi/.test(label)) return "not semi-automatic";
-    if (Q.manual && !/manual|gravity|hand/.test(label)) return "not manual";
-    if (Q.cnc && !/\bcnc\b/.test(label)) return "not CNC";
-    if (Q.nc && !/\bnc\b|\bcnc\b/.test(label)) return "not NC";
-    if (Q.electric && !/electric|servo/.test(label)) return "not electric";
-    if (Q.hydraulic && !/hydraulic/.test(label)) return "not hydraulic";
-    if (Q.mechanical && !/mechanical/.test(label)) return "not mechanical";
-    if (Q.premium && f.line === "Value line") return "not the premium line";
-    if (Q.value && f.line !== "Value line") return "not the value line";
-    if (Q.single) {
-      if (f._single == null) f._single = /single.?phase|1.?phase|\b(110|115|120|220|230) ?v/i.test(f.summary + " " + f.features.join(" ") + " " + JSON.stringify(f.models));
-      if (!f._single) return "three-phase";
+  /* the kind of machine the visitor asked for (automatic, CNC, electric, premium line…): what a series is, or null when it fits */
+  var QUAL_WORD = { auto: "automatic", semi: "semi-automatic", manual: "manual", cnc: "CNC", nc: "NC", electric: "electric", hydraulic: "hydraulic",
+    mechanical: "mechanical", premium: "premium-line", value: "value-line", single: "single-phase", miter: "miter-cutting" };
+  function qualLabel(f) { return (f.name + " " + f.category + " " + (f.automation || "") + " " + f.short).toLowerCase(); }
+  function hasMiter(f) { return (f._caps || []).some(function (c) { return c && c.miter; }); }
+  function qualOk(f, q) {
+    var label = qualLabel(f);
+    switch (q) {
+      case "auto": return f._auto === "auto";
+      case "semi": return f._auto === "semi";
+      case "manual": return f._auto === "manual";
+      case "cnc": return /\bcnc\b/.test(label);
+      case "nc": return /\bnc\b|\bcnc\b/.test(label);
+      case "electric": return /electric|servo/.test(label);
+      case "hydraulic": return /hydraulic/.test(label) || /hydraulic/.test(f.page) || f.page === "ironworker-machines";
+      case "mechanical": return /mechanical/.test(label);
+      case "premium": return f.line !== "Value line";
+      case "value": return f.line === "Value line";
+      case "single":
+        if (f._single == null) f._single = /single.?phase|1.?phase|\b(110|115|120|220|230) ?v/i.test(f.summary + " " + f.features.join(" ") + " " + JSON.stringify(f.models));
+        return !!f._single;
+      case "miter": return !SAWS[f.page] || f.page === "cold-saws" || f.page === "automatic-cold-saws" || f.page === "aluminum-and-pvc-upcut-saws" || !(f._caps || []).length || hasMiter(f);
+    }
+    return true;
+  }
+  var QUALS = ["auto", "semi", "manual", "cnc", "nc", "electric", "hydraulic", "mechanical", "premium", "value", "single", "miter"];
+  /* the qualifiers that can be checked for this question: the ones at least one of the candidate series satisfies
+     (a word no series of the kind carries — "hydraulic band saw", "cnc laser" — is not held against any of them) */
+  function applicableQuals(Q, cands) {
+    var out = [];
+    QUALS.forEach(function (q) { if (Q[q] && cands.some(function (f) { return qualOk(f, q); })) out.push(q); });
+    return out;
+  }
+  function qualMismatch(f, quals) {
+    for (var i = 0; i < quals.length; i++) if (!qualOk(f, quals[i])) {
+      var q = quals[i], t;
+      if (q === "auto" || q === "semi" || q === "manual") t = f._auto ? (f._auto === "powered" ? "not " + QUAL_WORD[q] + " (one cycle per stroke)" : f._auto === "auto" ? "automatic, not " + QUAL_WORD[q] : f._auto === "semi" ? "semi-automatic, not " + QUAL_WORD[q] : "manual, not " + QUAL_WORD[q]) : "not listed as " + QUAL_WORD[q];
+      else if (q === "miter") t = "cuts at 90° only";
+      else if (q === "single") t = "three-phase";
+      else t = "not " + QUAL_WORD[q];
+      return { q: q, text: t };
     }
     return null;
   }
   /* rebar: a bender is not a cutter, and the other way round */
   function opMismatch(f, req) {
     var caps = f._caps || [], ops = req.ops;
-    if (!caps.length) return false;
+    if (!caps.length) {
+      if (f.page !== "rebar-bender" && f.page !== "rebar-cutter" && f.page !== "automatic-rebar-processing-lines") return false;
+      var nm = (f.name + " " + f.short).toLowerCase();
+      if (ops.bend && !ops.cut && /shear|cutt(er|ing)/.test(nm) && !/bend/.test(nm)) return true;
+      if (ops.cut && !ops.bend && /bend/.test(nm) && !/shear|cutt(er|ing)/.test(nm)) return true;
+      return false;
+    }
     if (ops.bend && !ops.cut && caps.every(function (c) { return c.op === "cut"; })) return true;
     if (ops.cut && !ops.bend && caps.every(function (c) { return c.op === "bend" && !c.cut65; })) return true;
     return false;
   }
+  /* one card per series: the model that fits the job most closely, with the other models of the series that also do it */
+  function groupEntry(ok, why, mis) {
+    ok.sort(cmpFit);
+    var e = ok[0];
+    e.also = ok.slice(1).map(function (x) { return x.f.models[x.mi].name; });
+    e.count = ok.length;
+    if (why) { e.why = why; e.mis = mis ? mis.text : null; e.mq = mis ? mis.q : null; }
+    return e;
+  }
+  /* The owner (Nov 7–8 2026): list every kind of machine on the site that does the job, the smallest that does it first —
+     but one card per series, not every size of a series ("10 ft brake": the BSM, the box and pan, the straight brake, the
+     press brake… not the 100, 135, 170 and 220 ton press brakes one by one); and a qualifier the visitor gives (automatic,
+     miter, CNC, electric…) is a condition, not a preference: a machine without it is not an answer. */
   function machines(req, r) {
-    var pages = req.pages, max = 0, k, hasNums = Object.keys(req.nums).length > 0, Q = req.qual, qn = req.n;
+    var pages = req.pages, max = 0, k, hasNums = Object.keys(req.nums).length > 0, Q = req.qual, qn = req.n, N = req.nums;
     for (k in pages) if (pages[k] > max) max = pages[k];
-    var hits = {}, hitList = [];
-    r.list.forEach(function (x) { if (x.hit) { hits[x.f.id] = x; hitList.push(x); } });
-    var fits = [], maybe = [], fails = [], closest = [], mode = "models";
+    var hits = {}, hitList = [], exact = r.list.some(function (x) { return x.hit && !x.loose; });
+    r.list.forEach(function (x) { if (x.hit && (!exact || !x.loose)) { hits[x.f.id] = x; hitList.push(x); } });
+    var fits = [], maybe = [], fails = [], closest = [], dropped = [], mode = hasNums ? "models" : "families";
     // no machine type recognised, only words: the families the words point to, the most relevant first
     if (!max && !hitList.length) {
       var topS = r.list.length ? r.list[0].s : 0;
       r.list.forEach(function (x) { if (x.s >= topS * 0.45) fits.push(fam(x.f)); });
-      return { fits: fits, maybe: [], closest: [], mode: "relevance" };
+      return { fits: fits, maybe: [], closest: [], dropped: [], quals: [], mode: "relevance" };
     }
     // a model the visitor named: that model, then the rest of its series and the machines like it
     if (hitList.length && !hasNums) {
@@ -985,56 +1093,63 @@
       });
       FAM.forEach(function (f) { if (pg[f.page] && !seenF[f.id]) maybe.push(fam(f, "page")); });
       maybe.sort(function (a, b) { return (a.why === "page") - (b.why === "page") || cmpSize(a, b); });   // its own series first
-      return { fits: fits, maybe: maybe, closest: [], mode: "hit" };
+      return { fits: fits, maybe: maybe, closest: [], dropped: [], quals: [], mode: "hit" };
     }
-    var ACCESSORY = /dispenser|\bstands?\b|\bcarts?\b|accessor|conveyor|\btables?\b(?!.*weld)|dust collector/i;   // not machines that do a job
+    var ACCESSORY = /\bstands?\b(?! grinder)|dust collectors?|dispenser|^accessor/i;   // stands, dust collectors, coil dispensers: not machines that do a job
+    // the candidates: the kinds the question points to (a kind well below the strongest one is a "similar machine")
+    var cands = [], mains = [];
     FAM.forEach(function (f) {
       var w = pages[f.page] || 0, hit = hits[f.id];
       if (!hit && (!max || w < max * 0.4)) return;
       if (opMismatch(f, req)) return;
-      if (hasNums && !hit && w < max * 0.7 && ACCESSORY.test(f.short + " " + f.name)) return;
-      // a job with sizes: every kind that was inferred for it is a full answer, not a "similar machine"
-      var main = !!hit || w >= max * (hasNums ? 0.4 : 0.7), mis = qualMismatch(f, Q), sp = special(f, qn);
-      var why = hit ? null : !main ? "other" : sp ? "special" : mis ? "qual" : null;
+      if (!hit && ACCESSORY.test(f.short || "") && !ACCESSORY.test(qn)) return;
+      var main = !!hit || w >= max * 0.7;
+      cands.push({ f: f, hit: hit, main: main });
+      if (main) mains.push(f);
+    });
+    var quals = applicableQuals(Q, mains);
+    cands.forEach(function (x) {
+      var f = x.f, hit = x.hit, main = x.main;
+      var mis = qualMismatch(f, quals), sp = special(f, qn);
+      var why = hit ? null : !main ? "other" : sp ? "special" : null;
+      if (mis && !main) return;                       // another kind of machine without the qualifier: not an answer, not worth a count
       if (hasNums) {
-        var ok = [], unknown = !f.models.length;
+        var ok = [], unknown = !f.models.length, big = null;
         f.models.forEach(function (m, mi) {
-          var fit = fitModel(f, mi, req), e = { f: f, mi: mi, fit: fit, size: sizeKey(f, mi) };
-          if (fit.ok) ok.push(e); else if (fit.ok === null) unknown = true; else if (main && !why) fails.push(e);
+          var c = (f._caps || [])[mi] || {};
+          if (quals.indexOf("miter") >= 0 && SAWS[f.page] && Object.keys(c).length && !c.miter) return;   // the straight-cut model of a miter series
+          var fit = fitModel(f, mi, req), e = { f: f, mi: mi, fit: fit, size: sizeKey(f, mi), w: pages[f.page] || 0 };
+          if (fit.ok) ok.push(e); else if (fit.ok === null) unknown = true; else if (!big || cmpSize(e, big) > 0) big = e;
         });
         if (ok.length) {
-          if (why) { ok.sort(cmpFit); ok[0].why = why; ok[0].mis = mis; maybe.push(ok[0]); }      // the smallest of them that fits, as one card
-          else Array.prototype.push.apply(fits, ok);
-        } else if (unknown && main && !why) maybe.push(fam(f, "unknown"));
-      } else if (why) {
-        if (main) { var e2 = fam(f, why); e2.mis = mis; maybe.push(e2); }
-      } else if (f.models.length) {
-        f.models.forEach(function (m, mi) { fits.push({ f: f, mi: mi, fit: null, size: sizeKey(f, mi) }); });
-      } else fits.push(fam(f));
+          var g = groupEntry(ok, mis ? "qual" : why, mis);
+          if (mis) dropped.push(g); else if (why) maybe.push(g); else fits.push(g);
+        } else if (big && main && !mis && !why) fails.push(big);
+        else if (unknown && main && !mis && !why) maybe.push(fam(f, "unknown"));
+      } else {
+        var e2 = fam(f, mis ? "qual" : why);
+        if (mis) { e2.mis = mis.text; e2.mq = mis.q; dropped.push(e2); } else if (why) maybe.push(e2); else fits.push(e2);
+      }
     });
-    if (!fits.length && maybe.some(function (e) { return e.why === "qual"; })) {
-      maybe = maybe.filter(function (e) {
-        if (e.why !== "qual") return true;
-        if (hasNums) { if (e.mi != null) { e.why = null; fits.push(e); } }
-        else if (e.f.models.length) e.f.models.forEach(function (m, mi) { fits.push({ f: e.f, mi: mi, fit: null, size: sizeKey(e.f, mi) }); });
-        else fits.push(fam(e.f));
-        return false;
-      });
-    }
+    // nothing of the exact kind asked for: the machines that do the job but lack the qualifier, said so
+    var relaxed = false, oversized = 0;
+    if (!fits.length && dropped.length) { fits = dropped; dropped = []; relaxed = true; }
     if (hasNums) {
       fits.sort(cmpFit);
       if (!fits.length && fails.length) { fails.sort(function (a, b) { return cmpSize(b, a); }); closest = fails.slice(0, 3); }
-    } else {
-      fits.sort(cmpSize);
-      if (fits.length > 24) {       // a whole range (press brakes: 100+ models): one card per series, smallest first
-        var byF = {}, fl = [];
-        fits.forEach(function (e) { if (!byF[e.f.id]) { byF[e.f.id] = 1; fl.push(fam(e.f)); } });
-        fits = fl.sort(cmpSize); mode = "families";
+      // a small job fits every machine of the kind: the ones more than about three times its size are left out of a long list
+      if (fits.length > 12) {
+        var keep = fits.filter(function (e, i) { return i < 12 || !e.fit || e.fit.ratio == null || e.fit.ratio >= 0.4; });
+        oversized = fits.length - keep.length; fits = keep;
       }
-    }
-    // machines that fit go first in the similar list, the ones without data for this size after them
+    } else fits.sort(cmpSize);
+    dropped.sort(cmpSize);
+    // machines that fit go first in the similar list, the ones without data for this size after them; other kinds of
+    // machine (the question named a kind) are a short list, not every series of the site
     maybe.sort(function (a, b) { return (a.why === "unknown") - (b.why === "unknown") || cmpSize(a, b); });
-    return { fits: fits, maybe: maybe, closest: closest, mode: mode };
+    var nOther = 0, otherCap = hasNums ? 4 : (fits.length ? 0 : 6);
+    maybe = maybe.filter(function (e) { return e.why !== "other" || nOther++ < otherCap; });
+    return { fits: fits, maybe: maybe, closest: closest, dropped: dropped, quals: quals, relaxed: relaxed, oversized: oversized, mode: mode };
   }
   /* what the visitor asked for, in words: the common end of the product pages' names ("press brakes") */
   function typeLabel(req) {
@@ -1042,18 +1157,25 @@
     for (k in pages) if (pages[k] > max) max = pages[k];
     for (k in pages) if (pages[k] >= max * 0.7) {
       var p = pageBySlug(k), nm = p ? (p.nav || (p.h1 || "").split(" — ")[0]) : "";
-      if (nm) navs.push(nm.toLowerCase().replace(/[^a-z0-9 &-]+/g, " ").trim());
+      if (nm) navs.push(kindName(nm));
     }
     if (!navs.length) return "machines";
     if (navs.length === 1) return navs[0];
+    var TOOL = { "european-press-brake-dies": 1, "european-press-brake-punches": 1, "american-style-press-brake-tooling": 1, "press-brake-tool-holders-adapters": 1, "trumpf-wila-press-brake-tooling": 1, "bystronic-lvd-press-brake-tooling": 1 }, allTool = true;
+    for (k in pages) if (pages[k] >= max * 0.7 && !TOOL[k]) allTool = false;
+    if (allTool) return "press brake tooling";
     var w = navs.map(function (x) { return x.split(/\s+/); }), out = [];
     for (var i = 1; i <= w[0].length; i++) {
       var word = w[0][w[0].length - i];
       if (w.every(function (a) { return a[a.length - i] === word; })) out.unshift(word); else break;
     }
-    return out.length ? out.join(" ") : "machines";
+    if (out.length) return out.join(" ");
+    var topP = null;
+    for (k in pages) if (pages[k] === max) { topP = pageBySlug(k); break; }
+    return topP ? kindName(topP.nav || (topP.h1 || "").split(" — ")[0]) : "machines";
   }
 
+  function kindName(nm) { return nm.split(/,|—|\(/)[0].toLowerCase().replace(/[^a-z0-9 &-]+/g, " ").replace(/\s+/g, " ").trim(); }
   /* the kinds of machine in a list ("roofing brakes, folders, press brakes"), in the order they first appear */
   function kindsOf(list) {
     var seen = {}, out = [];
@@ -1061,7 +1183,7 @@
       if (seen[e.f.page]) return;
       seen[e.f.page] = 1;
       var p = pageBySlug(e.f.page), nm = p ? (p.nav || (p.h1 || "").split(" — ")[0]) : "";
-      if (nm) out.push(nm.toLowerCase().replace(/[^a-z0-9 &-]+/g, " ").replace(/\s+/g, " ").trim());
+      if (nm) out.push(kindName(nm));
     });
     return out;
   }
@@ -1090,7 +1212,7 @@
     var noMatch = "I could not match that to a machine in our catalogue. Describe the job — the material (plate, sheet, pipe, angle, rebar…), its size, and whether you want to cut, bend, roll, punch or weld it — or call **" + DATA.contact.phone + "** and we will help.";
     if (!list.length || (!strong && !anyPages && !info)) { res.text.push(noMatch); res.chips = DEFAULT_CHIPS; return res; }
     var M = machines(req, r);
-    res.fits = M.fits; res.maybe = M.maybe; res.closest = M.closest; res.mode = M.mode;
+    res.fits = M.fits; res.maybe = M.maybe; res.closest = M.closest; res.mode = M.mode; res.dropped = M.dropped || []; res.quals = M.quals || []; res.relaxed = !!M.relaxed; res.oversized = M.oversized || 0;
     var lead = res.fits[0] || res.closest[0] || res.maybe[0];
     if (!lead) { res.text.push(noMatch); res.chips = DEFAULT_CHIPS; return res; }
     res.best = lead;
@@ -1103,13 +1225,16 @@
     } else {
       var faq = !info && /\?|^(what|which|how|why|can|could|do|does|is|are|should|difference|vs\b)|\bor\b|\bvs\.?\b|difference|better/.test(n.trim()) ? faqMatch(req, r.qt, req.pages) : null;
       if (faq && faq.s >= 8) { res.faq = faq; res.text.push("**" + faq.qa[0] + "** " + faq.qa[1]); }
+      var qw = res.quals.map(function (q) { return QUAL_WORD[q]; }).join(" ");
       if (hasNums) {
         var job = jobLine(req);
         if (nF) {
           var why = lead.fit && lead.fit.notes.length ? " — " + lead.fit.notes.slice(0, 3).join("; ") : "";
-          var kinds = kindsOf(res.fits);
-          res.text.push((job ? job + " " : "") + (nF === 1 ? "One machine on our site does this job: the **" + what + "** (" + lineLabel(lead.f) + ")" + why + "." :
-            "**" + nF + " machines** on our site can do this job" + (kinds.length > 1 ? " — " + kinds.join(", ").replace(/, ([^,]*)$/, " and $1") : "") + ". The smallest that does it is the **" + what + "** (" + lineLabel(lead.f) + ")" + why + (nF === 2 ? ". Both are listed below, the smaller first." : ". All " + nF + " are listed below, from the smallest to the largest" + (kinds.length > 1 ? ", whatever their kind" : "") + ".")));
+          var kinds = kindsOf(res.fits), nModels = res.fits.reduce(function (a, e) { return a + (e.count || 1); }, 0);
+          var alsoTxt = lead.also && lead.also.length ? " The " + (lead.also.length === 1 ? lead.also[0] + " of the same series also does it." : "other " + lead.f.name.replace(/,.*$/, "") + " models that do it are named on its card.") : "";
+          if (res.relaxed) res.text.push((job ? job + " " : "") + "None of our **" + qw + " " + label + "** is rated for this job. The machines below do the job but are not " + qw + " — the closest fit first" + (nF > 1 ? ", one card per series" : "") + ".");
+          else res.text.push((job ? job + " " : "") + (nF === 1 ? "One series on our site does this job: the **" + what + "** (" + lineLabel(lead.f) + ")" + why + "." + alsoTxt :
+            "**" + nF + " series** on our site" + (nModels > nF ? " (" + nModels + " models)" : "") + " do this job" + (kinds.length > 1 ? " — " + kinds.join(", ").replace(/, ([^,]*)$/, " and $1") : "") + ". The smallest machine that does it is the **" + what + "** (" + lineLabel(lead.f) + ")" + why + ". Below is one card per series, the closest fit first; each card names the other sizes of its series that also do it."));
           if (lead.fit && lead.fit.caution && lead.fit.caution.length) res.text.push("Note: " + lead.fit.caution[0].replace(/^in /, "In ") + ".");
         } else if (res.closest.length) {
           res.text.push((job ? job + " " : "") + "None of our machines of this type is rated for every size you gave. The largest ones are below — call **" + DATA.contact.phone + "** and we will check your part against them.");
@@ -1119,12 +1244,20 @@
         if (req.need && PRESS_BRAKES[lead.f.page]) res.text.push("For air bending " + fmtThk(N.thk) + (req.qual.stainless ? " stainless" : " mild steel") + " on a die about 8 × thickness wide, a press brake needs about **" + Math.round(req.need.perFt) + " US tons per foot**" + (N.len ? " — " + Math.round(req.need.tons) + " US tons over " + fmtLen(N.len) : "") + ".");
       } else if (!res.faq) {
         if (M.mode === "relevance") res.text.push(nF === 1 ? "This machine on our site matches what you wrote:" : "These " + nF + " machines on our site match what you wrote, the closest match first:");
-        else if (M.mode === "families") {
+        else if (M.mode === "families" && nF) {
           var nm = res.fits.reduce(function (a, e) { return a + e.f.models.length; }, 0);
-          res.text.push("We sell **" + nF + " series of " + label + "** (" + nm + " models), listed below from the smallest to the largest. Tell me the material, the size and the length of your parts and I will list the exact models that do the job.");
+          if (res.relaxed) res.text.push("We have no **" + qw + " " + label + "** on our site. Below " + (nF === 1 ? "is the series" : "are the " + nF + " series") + " of " + label + " we sell — not " + qw + " — from the smallest to the largest.");
+          else res.text.push((nF === 1 ? "We sell **one series of " + (qw ? qw + " " : "") + label + "**" + (nm ? " (" + nm + (nm === 1 ? " model" : " models") + ")" : "") : "We sell **" + nF + " series of " + (qw ? qw + " " : "") + label + "**" + (nm ? " (" + nm + " models)" : "") + ", listed below from the smallest to the largest") + ". Tell me the material, the size and the length of your parts and I will show the exact models that do the job.");
         } else if (!nF) res.text.push("I found no machine of that exact kind on our site — the closest ones are below. Tell me the material, the size and the length of your parts and I will check which of them does the job.");
         else res.text.push(nF === 1 ? "Here is the one model we sell. Tell me the material and the size of your parts and I will check that it does the job." :
           "Here are all **" + nF + " " + label + "** we sell, from the smallest to the largest. Tell me the material, the size and the length of your parts and I will show only the models that do the job.");
+      }
+      if (res.oversized) res.text.push("Another " + res.oversized + " larger series (2½ times your size and more) also do it — not listed; ask me for them.");
+      if (res.dropped.length) {
+        var nd = res.dropped.length, dq = [], dWord;
+        res.dropped.forEach(function (e) { if (e.mq && dq.indexOf(QUAL_WORD[e.mq]) < 0) dq.push(QUAL_WORD[e.mq]); });
+        dWord = nd === 1 && res.dropped[0].mis ? res.dropped[0].mis.replace(/ \(.*\)$/, "") : "not " + (dq.length ? dq.join(" or ") : qw);
+        res.text.push("Not listed: " + (nd === 1 ? "one series that " : nd + " series that ") + (hasNums ? "also do" + (nd === 1 ? "es" : "") + " the job" : "we also sell") + " but " + (nd === 1 ? "is " : "are ") + dWord + " — ask me for " + (nd === 1 ? "it" : "them") + " if that is not essential.");
       }
       if (res.maybe.length) res.text.push(res.maybe.length === 1 ? "At the end of the list is one similar machine that may also do it — we confirm it with your drawing." :
         "At the end of the list are " + res.maybe.length + " similar machines that may also do it — we confirm those with your drawing.");
@@ -1259,10 +1392,11 @@
     var notes = e.fit && e.fit.ok ? e.fit.notes : (e.fit && e.fit.ok === false ? e.fit.warn : []);
     var cautions = (e.fit && e.fit.caution || []).slice();
     if (e.why === "unknown") cautions.push("our spec tables do not list this size for it — we check it with your drawing");
-    if (e.why === "qual" && e.mis) cautions.push(e.mis.replace(/^not /, "not ") + " — listed because it does the job");
+    if (e.why === "qual" && e.mis) cautions.push(e.mis + " — listed because it does the job");
     if (e.fit && e.fit.ok === false) cautions.push("below the size you gave");
     var specs = specRows(f, e.mi);
     if (e.mi == null && f.models.length) specs.unshift(["Models", f.models.length > 1 ? f.models[0].name + " … " + f.models[f.models.length - 1].name + " (" + f.models.length + ")" : f.models[0].name]);
+    var also = e.also && e.also.length ? '<p class="ai-also"><b>' + (e.also.length === 1 ? "Also does it:" : "Also do it (" + e.also.length + "):") + "</b> " + esc(e.also.slice(0, 6).join(", ")) + (e.also.length > 6 ? " and " + (e.also.length - 6) + " more" : "") + "</p>" : "";
     var im = cardImg(e);
     box.innerHTML = '<a class="ai-img' + (im.cut ? "" : " is-photo") + '" href="' + esc(f.href) + '" tabindex="-1" aria-hidden="true">' + im.html + "</a>" +
       '<div class="ai-body">' +
@@ -1271,7 +1405,7 @@
         '<span class="ai-fam">' + esc(series) + "</span>" +
         (notes.length ? '<ul class="ai-why' + (e.fit && e.fit.ok === false ? " is-bad" : "") + '">' + notes.map(function (t) { return "<li>" + esc(cap1(t)) + "</li>"; }).join("") + "</ul>" : (!e.fit && f.headline && e.mi == null ? '<p class="ai-cap">' + esc(f.headline) + "</p>" : "")) +
         (cautions.length ? '<ul class="ai-warn">' + cautions.map(function (t) { return "<li>" + esc(cap1(t)) + "</li>"; }).join("") + "</ul>" : "") +
-        (specs.length ? '<dl class="ai-specs">' + specs.map(function (r) { return "<div><dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("") + "</dl>" : "") +
+        (specs.length ? '<dl class="ai-specs">' + specs.map(function (r) { return "<div><dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("") + "</dl>" : "") + also +
         '<div class="ai-links"><a href="' + esc(f.href) + '">Specifications, photos and video →</a><a href="' + esc(f.page) + '#reques-a-quote">Get a quote</a>' +
           (f.pdf ? '<a href="' + esc(f.pdf) + '" target="_blank" rel="noopener">PDF brochure</a>' : "") + "</div>" +
       "</div>";
@@ -1294,7 +1428,7 @@
     }
     var n = res.fits.length, title = res.mode === "hit" ? "The machine you asked about" :
       res.mode === "relevance" ? "Machines that match" :
-      hasNums ? (n === 1 ? "The machine that does this job" : "Machines that do this job — smallest first (" + n + ")") :
+      hasNums ? (n === 1 ? "The series that does this job" : "Series that do this job — closest fit first (" + n + ")") :
       res.mode === "families" ? "Every series — smallest first (" + n + ")" : "Every model — smallest first (" + n + ")";
     section(title, res.fits, "is-fits", res.mode !== "hit" && res.mode !== "relevance" && n > 1, hasNums && n ? (n > 1 ? "Smallest that does it" : "Does the job") : null);
     section("Closest machines — below the size you gave", res.closest, "is-closest", false, null);
@@ -1313,7 +1447,7 @@
   }
   /* the machines Claude names (live site), checked against the catalogue */
   function picks(list, req) {
-    var out = [], seen = {}, hasNums = Object.keys(req.nums).length > 0;
+    var out = [], seen = {}, groups = {}, order = [], hasNums = Object.keys(req.nums).length > 0;
     (Array.isArray(list) ? list : []).forEach(function (x) {
       var f = x && FAMBYID[x.id];
       if (!f) return;
@@ -1322,7 +1456,17 @@
       var k = f.id + "|" + mi;
       if (seen[k]) return;
       seen[k] = 1;
-      out.push({ f: f, mi: mi, fit: mi != null && hasNums ? fitModel(f, mi, req) : null, size: mi != null ? sizeKey(f, mi) : famSize(f), why: x.note ? "llm" : null });
+      var e = { f: f, mi: mi, fit: mi != null && hasNums ? fitModel(f, mi, req) : null, size: mi != null ? sizeKey(f, mi) : famSize(f), why: x.note ? "llm" : null };
+      if (!groups[f.id]) { groups[f.id] = []; order.push(f.id); }
+      groups[f.id].push(e);
+    });
+    // one card per series, as the engine does: the closest fit (or the first named) with the other models on its card
+    order.forEach(function (id) {
+      var g = groups[id];
+      if (g.length > 1 && hasNums) g.sort(cmpFit);
+      var e = g[0];
+      if (g.length > 1) { e.also = g.slice(1).filter(function (x) { return x.mi != null; }).map(function (x) { return x.f.models[x.mi].name; }); e.count = g.length; }
+      out.push(e);
     });
     return out;
   }
@@ -1354,7 +1498,7 @@
         var tx = bubble.querySelector(".ai-text");
         var note = el("p", "ai-note", '<span class="ai-dots"><i></i><i></i><i></i></span> Writing a fuller answer…');
         tx.parentNode.insertBefore(note, tx.nextSibling);
-        var ref = function (e) { return { id: e.f.id, model: modelName(e) || "" }; };
+        var ref = function (e) { var r = { id: e.f.id, model: modelName(e) || "" }; if (e.also && e.also.length) r.also = e.also.slice(0, 12); return r; };
         var body = { messages: history.slice(-12), page: panel.dataset.page, engine: text, stream: true,
           fits: local.fits.slice(0, 90).map(ref), maybe: local.maybe.slice(0, 30).map(ref), closest: local.closest.map(ref) };
         var acc = "", final = null;

@@ -498,7 +498,14 @@ def family_caps(f, model_single=None, bandsaw_round0=None):
             for name, cell in zip(t.get("models") or [], r.get("cells") or []):
                 if name in out and isinstance(cell, str):
                     row_caps(r["label"], cell, out[name])
-    # a model with no table of its own (a family table listing other names) gets nothing — fine
+    # a model with no table of its own (a family table listing other names) gets nothing — except a press brake named by
+    # its force and length ("WAD-400T/4000": 400 t × 4,000 mm, the heavy-duty matrix table has only ✓ marks)
+    for n in names:
+        if not out[n]:
+            m = re.search(r"(\d{2,4})\s?T\s*/\s*(\d{4})\b", n)
+            if m:
+                out[n]["ton"] = r3(int(m[1]) * 1.1023)
+                out[n]["len"] = r3(int(m[2]) / 25.4)
     res = []
     for n in names:
         d = {k: v for k, v in out[n].items() if v not in (None, [], {})}

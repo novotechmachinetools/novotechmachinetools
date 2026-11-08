@@ -869,6 +869,8 @@ small { font-size: .85em; }
 .ai-specs div { min-width: 0; }
 .ai-specs dt { font-size: 11.5px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--steel); line-height: 1.25; }
 .ai-specs dd { margin: 2px 0 0; font-size: 14.5px; font-weight: 600; color: var(--ink); line-height: 1.3; overflow-wrap: anywhere; }
+.ai-also { margin: 8px 0 0; font-size: 14px; line-height: 1.4; color: var(--charcoal); }
+.ai-also b { font-weight: 600; color: var(--steel); }
 .ai-links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: auto; padding-top: 10px; font-size: 14.5px; font-weight: 600; }
 .ai-links a { color: var(--orange-ink); text-decoration: none; }
 .ai-links a:hover { text-decoration: underline; }
@@ -911,7 +913,7 @@ body.ai-locked { overflow: hidden; }
   .ai-card .ai-img.is-photo { padding: 0; }
   .ai-body { padding: 10px 10px 10px 12px; }
   .ai-name { font-size: 21px; }
-  .ai-fam, .ai-why li, .ai-warn li { font-size: 13.5px; }
+  .ai-fam, .ai-why li, .ai-warn li, .ai-also { font-size: 13.5px; }
   .ai-specs { grid-template-columns: minmax(0, 1fr); gap: 5px; }
   .ai-specs div { display: flex; gap: 8px; align-items: baseline; }
   .ai-specs dt { flex: 0 0 auto; max-width: 48%; font-size: 10.5px; }

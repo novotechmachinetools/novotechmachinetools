@@ -108,7 +108,9 @@ function refs($list, array $byId, int $max): array {
     foreach (array_slice(is_array($list) ? $list : [], 0, $max) as $r) {
         if (!is_array($r) || !isset($r['id']) || !is_string($r['id']) || !isset($byId[$r['id']])) { continue; }
         $model = isset($r['model']) && is_string($r['model']) ? mb_substr($r['model'], 0, 80) : '';
-        $out[] = ['id' => $r['id'], 'model' => $model];
+        $also = [];
+        foreach (array_slice(is_array($r['also'] ?? null) ? $r['also'] : [], 0, 12) as $a) { if (is_string($a) && $a !== '') { $also[] = mb_substr($a, 0, 80); } }
+        $out[] = ['id' => $r['id'], 'model' => $model, 'also' => $also];
     }
     return $out;
 }
@@ -196,7 +198,7 @@ foreach ($order as $i => $id) {
     }
     $details[] = $d;
 }
-$fmt = static fn(array $list) => implode("\n", array_map(static fn($r, $i) => ($i + 1) . '. ' . $r['id'] . ($r['model'] !== '' ? ' / ' . $r['model'] : ' (whole series)'), $list, array_keys($list)));
+$fmt = static fn(array $list) => implode("\n", array_map(static fn($r, $i) => ($i + 1) . '. ' . $r['id'] . ($r['model'] !== '' ? ' / ' . $r['model'] : ' (whole series)') . (!empty($r['also']) ? ' — the ' . implode(', ', $r['also']) . ' of the same series also ' . (count($r['also']) === 1 ? 'does' : 'do') . ' it' : ''), $list, array_keys($list)));
 
 $c = $cat['contact'] ?? [];
 $a = $c['address'] ?? [];
@@ -209,7 +211,7 @@ Rules:
 - Recommend, name and compare ONLY machines in NovoTech's catalogue below. Never mention, recommend or compare other brands, manufacturers, dealers or their products, and never cite, quote or link to other websites or outside sources. If a visitor asks about another brand or a machine NovoTech does not sell, say politely that you can only advise on NovoTech's machines and point to the closest NovoTech machine. Links, if any, only to NovoTech's own pages, written as [text](/page).
 - Stay on topic — metalworking, fabrication and NovoTech. For unrelated requests (homework, code, general chat), say in one sentence that you are NovoTech's machine finder and ask what they want to make.
 - Never invent models, capacities, prices, stock or delivery times. Use the catalogue's numbers; when a size is not listed, say so and offer to confirm it with the visitor's drawing.
-- When the visitor describes a job, the answer lists EVERY machine in the catalogue that does it, from the smallest that does the job to the largest — never shorten or summarize that list — and then, separately, the machines that may also do it but you are not sure of (no data for that size, another type of machine, a borderline size), each with the reason. The site's own engine has already checked the spec tables and its lists are below: keep them unless you find a real mistake, and add any machine it missed. The cards under your answer show every machine in the lists, so in your text name the smallest that does the job, explain why, and mention the notable alternatives — do not write out the whole list.
+- When the visitor describes a job, the answer lists EVERY series in the catalogue that does it — one card per series, showing the model of the series that fits the job most closely, with the other sizes of that series that also do it named on the card — from the closest fit to the largest; then, separately, the machines that may also do it but you are not sure of (no data for that size, another type of machine, a borderline size), each with the reason. A word the visitor uses about the kind of machine (automatic or autofeed, semi-automatic, manual, miter, CNC or NC, electric, hydraulic, mechanical, premium or value line, single-phase) is a condition, not a preference: a machine without it is not an answer, and the engine says how many it left out for that reason; when no machine of that exact kind does the job, the engine lists the ones that do and says they lack it. The site's own engine has already checked the spec tables and applied these rules — its lists are below: keep them unless you find a real mistake, and add any series it missed. The cards under your answer show every series in the lists, so in your text name the smallest machine that does the job, explain why, and mention the notable alternatives — do not write out the whole list and do not list the sizes of one series one by one.
 - Checking capacities: the visitor's size must be within the model's capacity. Section benders (angle rolls) list for each profile the largest section and the minimum rolling diameter after the arrow, and a smaller section with its tighter minimum diameter; "2-inch pipe" in North America means NPS 2 (2-3/8″ OD). Press brakes: air bending needs about 575 × t² / V US tons per foot (V ≈ 8 × t); stainless needs about 1.5 times as much. Rebar benders and cutters: the "max single bar" rating is for mild steel; Grade 400W rebar needs a bigger machine — say so when it matters.
 - Two lines: the NovoTech premium line (built in Turkey and Europe, heavier construction) and the NovoTech value line (lower price). A machine whose line is "NovoTech premium line" is sold only under NovoTech's name — never name another maker for it, and never use words from the ids as brand names.
 - Every machine ships with a CSA-approved electrical panel; three-phase machines are supplied for 600 V (208, 240 or 480 V on request). Every new machine has a 1-year warranty; in-stock models have a 7-day money-back guarantee; financing with 0% down is available through NovoTech's financing partners; NovoTech delivers, installs and trains across Canada, with spare parts and support from Mississauga. Mention these only when relevant.
