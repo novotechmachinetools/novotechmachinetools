@@ -9,15 +9,35 @@
    ]
   },
   {
+   "id": "sawing",
+   "title": "Sawing",
+   "lead": "Band saws, cold saws and the blades that go in them.",
+   "slugs": [
+    "band-saw",
+    "aluminum-and-pvc-upcut-saws",
+    "circular-cold-saws",
+    "band-saw-blades"
+   ]
+  },
+  {
+   "id": "rolling",
+   "title": "Plate and section rolling",
+   "lead": "Plate rollers and slip rolls for cylinders and cones, and angle rolls that bend sections into rings and arcs.",
+   "slugs": [
+    "angle-rolls",
+    "plate-rollers"
+   ]
+  },
+  {
    "id": "bending",
    "title": "Sheet metal bending",
    "lead": "Press brakes, panel benders, sheet metal brakes and the tooling that goes in them.",
    "slugs": [
     "press-brake",
-    "panel-bender",
-    "v-grooving-machine",
     "folder-sheet-metal-brake",
     "horizontal-press-brake",
+    "panel-bender",
+    "v-grooving-machine",
     "press-brake-tooling-punch-and-die"
    ]
   },
@@ -36,35 +56,10 @@
    "title": "Shearing, punching and notching",
    "lead": "Shears, ironworkers, notchers and plate bevellers.",
    "slugs": [
-    "shear-cutting",
     "ironworker-machines",
-    "plate-beveler",
-    "corner-notcher"
-   ]
-  },
-  {
-   "id": "rolling",
-   "title": "Rolling, pressing and forming",
-   "lead": "Plate and section rolling, presses, HVAC forming machines and metal shaping.",
-   "slugs": [
-    "plate-rollers",
-    "angle-rolls",
-    "hydraulic-press",
-    "riveting-machine",
-    "circle-cutters-and-seamers",
-    "bead-rollers",
-    "lock-former"
-   ]
-  },
-  {
-   "id": "sawing",
-   "title": "Sawing",
-   "lead": "Band saws, cold saws and the blades that go in them.",
-   "slugs": [
-    "band-saw",
-    "band-saw-blades",
-    "circular-cold-saws",
-    "aluminum-and-pvc-upcut-saws"
+    "shear-cutting",
+    "corner-notcher",
+    "plate-beveler"
    ]
   },
   {
@@ -73,9 +68,33 @@
    "lead": "Bending, notching and end forming of tube and pipe, and CNC wire bending.",
    "slugs": [
     "pipe-benders",
-    "wire-bending-machines",
     "pipe-notcher",
+    "wire-bending-machines",
     "tube-end-forming-machines"
+   ]
+  },
+  {
+   "id": "forming",
+   "title": "Pressing, riveting and HVAC forming",
+   "lead": "Hydraulic presses and riveting machines, and the circle cutters, bead rollers and lock formers of the duct shop.",
+   "slugs": [
+    "circle-cutters-and-seamers",
+    "bead-rollers",
+    "lock-former",
+    "hydraulic-press",
+    "riveting-machine"
+   ]
+  },
+  {
+   "id": "finishing",
+   "title": "Deburring, grinding and finishing",
+   "lead": "Deburring and edge rounding, belt grinders and sanders, corner grinding and pipe polishing.",
+   "slugs": [
+    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+    "pipe-sanding-polishing-machines",
+    "belt-grinder",
+    "corner-grinding-machines",
+    "tube-end-deburring-machine"
    ]
   },
   {
@@ -85,18 +104,6 @@
    "slugs": [
     "welding-automation",
     "corner-welding-machines"
-   ]
-  },
-  {
-   "id": "finishing",
-   "title": "Deburring, grinding and finishing",
-   "lead": "Deburring and edge rounding, belt grinders and sanders, corner grinding and pipe polishing.",
-   "slugs": [
-    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
-    "belt-grinder",
-    "corner-grinding-machines",
-    "pipe-sanding-polishing-machines",
-    "tube-end-deburring-machine"
    ]
   },
   {
@@ -543,7 +550,7 @@
    "title": "NovoTech premium-line plate rolls"
   },
   {
-   "group": "rolling",
+   "group": "forming",
    "file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf",
    "title": "ISITAN machinery catalogue"
   },
@@ -553,27 +560,27 @@
    "title": "Angle rolls and section benders"
   },
   {
-   "group": "rolling",
+   "group": "forming",
    "file": "files/NovoTech-Hydraulic-Shop-Presses-2026.pdf",
    "title": "Hydraulic shop presses"
   },
   {
-   "group": "rolling",
+   "group": "forming",
    "file": "files/NovoTech-Production-Hydraulic-Presses-2026.pdf",
    "title": "Production hydraulic presses"
   },
   {
-   "group": "rolling",
+   "group": "forming",
    "file": "files/NovoTech-Notchers-Circle-Cutters-Pipe-Polishers-Benders-2026.pdf",
    "title": "Corner notchers, circle cutters, pipe polishers and benders"
   },
   {
-   "group": "rolling",
+   "group": "forming",
    "file": "files/NovoTech-Hydraulic-Presses-Riveting-Machines-Value-Line-2026.pdf",
    "title": "NovoTech value-line hydraulic presses and riveting machines"
   },
   {
-   "group": "rolling",
+   "group": "forming",
    "file": "files/NovoTech-HVAC-Sheet-Metal-Machines-Value-Line-2026.pdf",
    "title": "NovoTech value-line HVAC and sheet metal machines"
   },

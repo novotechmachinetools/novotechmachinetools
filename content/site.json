@@ -120,123 +120,6 @@
      ]
     },
     {
-     "label": "Press brakes",
-     "href": "press-brake.html",
-     "children": [
-      {
-       "label": "Hydraulic press brakes",
-       "href": "hydraulic-press-brake.html"
-      },
-      {
-       "label": "Electric press brakes",
-       "href": "electric-press-brake.html"
-      },
-      {
-       "label": "Compact press brakes",
-       "href": "compact-hydraulic-press-brakes.html"
-      }
-     ]
-    },
-    {
-     "label": "Panel benders",
-     "href": "panel-bender.html"
-    },
-    {
-     "label": "V-grooving machines",
-     "href": "v-grooving-machine.html"
-    },
-    {
-     "label": "Sheet laser cutters",
-     "href": "laser-cutting-machine.html",
-     "children": [
-      {
-       "label": "Fiber laser cutters",
-       "href": "fiber-laser-cutting-machine.html"
-      },
-      {
-       "label": "Sheet & tube lasers",
-       "href": "sheet-and-tube-laser.html"
-      },
-      {
-       "label": "Large-format lasers",
-       "href": "large-format-plate-laser.html"
-      },
-      {
-       "label": "3D laser cells",
-       "href": "3d-laser-cutting-machine.html"
-      },
-      {
-       "label": "Coil-fed laser lines",
-       "href": "coil-fed-laser-cutting-line.html"
-      }
-     ]
-    },
-    {
-     "label": "Tube laser cutters",
-     "href": "tube-laser-cutting-machine.html"
-    },
-    {
-     "label": "Laser welding & cladding",
-     "href": "laser-welding-machine.html"
-    },
-    {
-     "label": "Shears",
-     "href": "shear-cutting.html",
-     "children": [
-      {
-       "label": "Hydraulic shears",
-       "href": "hydraulic-shearing-machine.html"
-      },
-      {
-       "label": "Mechanical shears",
-       "href": "mechanical-guillotine-shear.html"
-      }
-     ]
-    },
-    {
-     "label": "Ironworkers",
-     "href": "ironworker-machines.html",
-     "children": [
-      {
-       "label": "Hydraulic ironworkers",
-       "href": "ironworker-machines.html"
-      },
-      {
-       "label": "Hydraulic punching machines",
-       "href": "hydraulic-punching-machines.html"
-      }
-     ]
-    },
-    {
-     "label": "Plate rollers & slip rolls",
-     "href": "plate-rollers.html",
-     "children": [
-      {
-       "label": "Hydraulic 4-roll plate rollers",
-       "href": "hydraulic-4-roll-plate-rollers.html"
-      },
-      {
-       "label": "Hydraulic 3-roll plate rollers",
-       "href": "hydraulic-3-roll-plate-rollers.html"
-      },
-      {
-       "label": "Motorized 3-roll plate rollers",
-       "href": "motorized-plate-rollers.html"
-      },
-      {
-       "label": "Slip rolls · value line",
-       "href": "motorized-plate-rollers.html#tt-slip-group"
-      }
-     ]
-    },
-    {
-     "label": "Angle rolls",
-     "href": "angle-rolls.html",
-     "menu_swap": {
-      "sahinler-tc-42": "sahinler-hpk-65-80"
-     }
-    },
-    {
      "label": "Band saws",
      "href": "band-saw.html",
      "children": [
@@ -291,8 +174,8 @@
      ]
     },
     {
-     "label": "Band saw blades",
-     "href": "band-saw-blades.html"
+     "label": "Aluminum & PVC saws",
+     "href": "aluminum-and-pvc-upcut-saws.html"
     },
     {
      "label": "Cold saws",
@@ -305,6 +188,57 @@
       {
        "label": "Automatic cold saws",
        "href": "automatic-cold-saws.html"
+      }
+     ]
+    },
+    {
+     "label": "Band saw blades",
+     "href": "band-saw-blades.html"
+    },
+    {
+     "label": "Angle rolls",
+     "href": "angle-rolls.html",
+     "menu_swap": {
+      "sahinler-tc-42": "sahinler-hpk-65-80"
+     }
+    },
+    {
+     "label": "Plate rollers & slip rolls",
+     "href": "plate-rollers.html",
+     "children": [
+      {
+       "label": "Hydraulic 4-roll plate rollers",
+       "href": "hydraulic-4-roll-plate-rollers.html"
+      },
+      {
+       "label": "Hydraulic 3-roll plate rollers",
+       "href": "hydraulic-3-roll-plate-rollers.html"
+      },
+      {
+       "label": "Motorized 3-roll plate rollers",
+       "href": "motorized-plate-rollers.html"
+      },
+      {
+       "label": "Slip rolls · value line",
+       "href": "motorized-plate-rollers.html#tt-slip-group"
+      }
+     ]
+    },
+    {
+     "label": "Press brakes",
+     "href": "press-brake.html",
+     "children": [
+      {
+       "label": "Hydraulic press brakes",
+       "href": "hydraulic-press-brake.html"
+      },
+      {
+       "label": "Electric press brakes",
+       "href": "electric-press-brake.html"
+      },
+      {
+       "label": "Compact press brakes",
+       "href": "compact-hydraulic-press-brakes.html"
       }
      ]
     },
@@ -347,6 +281,114 @@
      "href": "horizontal-press-brake.html"
     },
     {
+     "label": "Panel benders",
+     "href": "panel-bender.html"
+    },
+    {
+     "label": "V-grooving machines",
+     "href": "v-grooving-machine.html"
+    },
+    {
+     "label": "Press brake tooling",
+     "href": "press-brake-tooling-punch-and-die.html",
+     "children": [
+      {
+       "label": "European punches · Amada-Promecam",
+       "href": "european-press-brake-punches.html"
+      },
+      {
+       "label": "European dies · Amada-Promecam",
+       "href": "european-press-brake-dies.html"
+      },
+      {
+       "label": "Trumpf & Wila-style tooling",
+       "href": "trumpf-wila-press-brake-tooling.html"
+      },
+      {
+       "label": "Bystronic & LVD-style tooling",
+       "href": "bystronic-lvd-press-brake-tooling.html"
+      },
+      {
+       "label": "American-style tooling",
+       "href": "american-style-press-brake-tooling.html"
+      },
+      {
+       "label": "Holders, adapters & clamps",
+       "href": "press-brake-tool-holders-adapters.html"
+      }
+     ]
+    },
+    {
+     "label": "Sheet laser cutters",
+     "href": "laser-cutting-machine.html",
+     "children": [
+      {
+       "label": "Fiber laser cutters",
+       "href": "fiber-laser-cutting-machine.html"
+      },
+      {
+       "label": "Sheet & tube lasers",
+       "href": "sheet-and-tube-laser.html"
+      },
+      {
+       "label": "Large-format lasers",
+       "href": "large-format-plate-laser.html"
+      },
+      {
+       "label": "3D laser cells",
+       "href": "3d-laser-cutting-machine.html"
+      },
+      {
+       "label": "Coil-fed laser lines",
+       "href": "coil-fed-laser-cutting-line.html"
+      }
+     ]
+    },
+    {
+     "label": "Tube laser cutters",
+     "href": "tube-laser-cutting-machine.html"
+    },
+    {
+     "label": "Laser welding & cladding",
+     "href": "laser-welding-machine.html"
+    },
+    {
+     "label": "Ironworkers",
+     "href": "ironworker-machines.html",
+     "children": [
+      {
+       "label": "Hydraulic ironworkers",
+       "href": "ironworker-machines.html"
+      },
+      {
+       "label": "Hydraulic punching machines",
+       "href": "hydraulic-punching-machines.html"
+      }
+     ]
+    },
+    {
+     "label": "Shears",
+     "href": "shear-cutting.html",
+     "children": [
+      {
+       "label": "Hydraulic shears",
+       "href": "hydraulic-shearing-machine.html"
+      },
+      {
+       "label": "Mechanical shears",
+       "href": "mechanical-guillotine-shear.html"
+      }
+     ]
+    },
+    {
+     "label": "Corner notchers",
+     "href": "corner-notcher.html"
+    },
+    {
+     "label": "Plate bevelers",
+     "href": "plate-beveler.html"
+    },
+    {
      "label": "Pipe & tube benders",
      "href": "pipe-benders.html",
      "children": [
@@ -366,8 +408,28 @@
      ]
     },
     {
+     "label": "Tube notchers",
+     "href": "pipe-notcher.html"
+    },
+    {
      "label": "Wire bending machines",
      "href": "wire-bending-machines.html"
+    },
+    {
+     "label": "Tube end formers",
+     "href": "tube-end-forming-machines.html"
+    },
+    {
+     "label": "Circle cutters & flanging",
+     "href": "circle-cutters-and-seamers.html"
+    },
+    {
+     "label": "Bead rollers",
+     "href": "bead-rollers.html"
+    },
+    {
+     "label": "Lock formers & HVAC machines",
+     "href": "lock-former.html"
     },
     {
      "label": "Hydraulic press",
@@ -396,8 +458,24 @@
      "href": "riveting-machine.html"
     },
     {
-     "label": "Plate bevelers",
-     "href": "plate-beveler.html"
+     "label": "Metal deburring & finishing machines",
+     "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
+    },
+    {
+     "label": "Pipe sanding & polishing machines",
+     "href": "pipe-sanding-polishing-machines.html"
+    },
+    {
+     "label": "Belt grinders & sanders",
+     "href": "belt-grinder.html"
+    },
+    {
+     "label": "Corner grinders",
+     "href": "corner-grinding-machines.html"
+    },
+    {
+     "label": "Tube end deburring machines",
+     "href": "tube-end-deburring-machine.html"
     },
     {
      "label": "Welding automation",
@@ -424,54 +502,6 @@
     {
      "label": "Corner welders",
      "href": "corner-welding-machines.html"
-    },
-    {
-     "label": "Circle cutters & flanging",
-     "href": "circle-cutters-and-seamers.html"
-    },
-    {
-     "label": "Bead rollers",
-     "href": "bead-rollers.html"
-    },
-    {
-     "label": "Lock formers & HVAC machines",
-     "href": "lock-former.html"
-    },
-    {
-     "label": "Metal deburring & finishing machines",
-     "href": "sheet-metal-plate-deburring-edge-rounding-finishing-grinding.html"
-    },
-    {
-     "label": "Belt grinders & sanders",
-     "href": "belt-grinder.html"
-    },
-    {
-     "label": "Corner grinders",
-     "href": "corner-grinding-machines.html"
-    },
-    {
-     "label": "Pipe sanding & polishing machines",
-     "href": "pipe-sanding-polishing-machines.html"
-    },
-    {
-     "label": "Tube end deburring machines",
-     "href": "tube-end-deburring-machine.html"
-    },
-    {
-     "label": "Tube notchers",
-     "href": "pipe-notcher.html"
-    },
-    {
-     "label": "Tube end formers",
-     "href": "tube-end-forming-machines.html"
-    },
-    {
-     "label": "Corner notchers",
-     "href": "corner-notcher.html"
-    },
-    {
-     "label": "Aluminum & PVC saws",
-     "href": "aluminum-and-pvc-upcut-saws.html"
     },
     {
      "label": "Drill presses",
@@ -518,36 +548,6 @@
     {
      "label": "Woodworking machinery",
      "href": "woodworking-machinery.html"
-    },
-    {
-     "label": "Press brake tooling",
-     "href": "press-brake-tooling-punch-and-die.html",
-     "children": [
-      {
-       "label": "European punches · Amada-Promecam",
-       "href": "european-press-brake-punches.html"
-      },
-      {
-       "label": "European dies · Amada-Promecam",
-       "href": "european-press-brake-dies.html"
-      },
-      {
-       "label": "Trumpf & Wila-style tooling",
-       "href": "trumpf-wila-press-brake-tooling.html"
-      },
-      {
-       "label": "Bystronic & LVD-style tooling",
-       "href": "bystronic-lvd-press-brake-tooling.html"
-      },
-      {
-       "label": "American-style tooling",
-       "href": "american-style-press-brake-tooling.html"
-      },
-      {
-       "label": "Holders, adapters & clamps",
-       "href": "press-brake-tool-holders-adapters.html"
-      }
-     ]
     }
    ]
   },
