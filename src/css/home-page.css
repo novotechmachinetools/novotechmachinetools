@@ -5,7 +5,7 @@
 /* ---------- shared section heads ---------- */
 .hp-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 10px 48px; align-items: end; margin-bottom: 26px; }
 .hp-head h2 { font-size: clamp(32px, 3.4vw, 48px); line-height: 1.02; margin: 0; }
-.hp-eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 8px; font-family: var(--cond); font-weight: 700; font-size: 15px; letter-spacing: .09em; text-transform: uppercase; color: var(--orange-deep); }
+.hp-eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 8px; font-family: var(--cond); font-weight: 700; font-size: 15px; letter-spacing: .09em; text-transform: uppercase; color: var(--orange-ink); }
 .hp-eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--orange); }
 .hp-head-lead { margin: 0; font-size: 18px; line-height: 1.5; color: var(--steel); max-width: 60ch; }
 .hp-head.is-dark h2 { color: #fff; }

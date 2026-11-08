@@ -31,8 +31,11 @@
 <meta name="twitter:description" content="{{ page.meta_description }}">
 <meta name="twitter:image" content="{{ site.domain }}/img/social/{{ page.slug }}.jpg">
 <link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-{% if page.hero_image and not page.hero_video %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, 520px">{% endif %}
+<link rel="preload" href="fonts/barlow-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+{% if page.hero_image and not page.hero_video %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, {{ page.hero_width or (820 if page.hero_large else 680) }}px" fetchpriority="high">{% endif %}
 {% if inline_css %}<style>{{ inline_css | safe }}</style>{% else %}<link rel="stylesheet" href="css/site.css?v={{ css_hash }}">{% endif %}
 {% block head %}{% endblock %}
 <script type="application/ld+json">{{ ld_json|safe }}</script>

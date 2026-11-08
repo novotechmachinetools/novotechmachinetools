@@ -102,7 +102,7 @@
       <button type="button" class="hp-arrow hp-next" aria-label="Next slide"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <ol class="hp-thumbs" aria-label="Choose a slide">
         {% for s in slides %}{% set im = img(s.image) %}
-        <li><button type="button" data-go="{{ loop.index0 }}" aria-label="Slide {{ loop.index }}: {{ s.title }}"><img src="{{ im.thumb }}" alt="" width="96" height="54" loading="lazy" decoding="async"><span>{{ s.kicker }}</span><i class="hp-bar" aria-hidden="true"></i></button></li>
+        <li><button type="button" data-go="{{ loop.index0 }}" aria-label="{{ s.kicker }} — slide {{ loop.index }}, {{ s.title }}"><img src="{{ im.thumb }}" alt="" width="96" height="54" loading="lazy" decoding="async"><span>{{ s.kicker }}</span><i class="hp-bar" aria-hidden="true"></i></button></li>
         {% endfor %}
       </ol>
     </div>

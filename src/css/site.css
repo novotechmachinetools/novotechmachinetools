@@ -25,10 +25,10 @@
 
 /* Metric-matched fallbacks (Arial scaled to Barlow's widths and vertical metrics) so the swap to the
    web font does not move the layout — keeps CLS near zero while the woff2 files load. */
-@font-face { font-family: "Barlow Fallback"; font-weight: 400; src: local("Arial"), local("ArialMT"), local("Helvetica"); size-adjust: 96.1%; ascent-override: 104.05%; descent-override: 20.81%; line-gap-override: 0%; }
-@font-face { font-family: "Barlow Fallback"; font-weight: 500 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"); size-adjust: 91%; ascent-override: 109.9%; descent-override: 21.98%; line-gap-override: 0%; }
-@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 500 600; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"); size-adjust: 74.4%; ascent-override: 134.4%; descent-override: 26.9%; line-gap-override: 0%; }
-@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"); size-adjust: 76.2%; ascent-override: 131.2%; descent-override: 26.25%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Fallback"; font-weight: 400; src: local("Arial"), local("ArialMT"), local("Helvetica"), local("Liberation Sans"); size-adjust: 96.1%; ascent-override: 104.05%; descent-override: 20.81%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Fallback"; font-weight: 500 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 91%; ascent-override: 109.9%; descent-override: 21.98%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 500 600; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 74.4%; ascent-override: 134.4%; descent-override: 26.9%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 76.2%; ascent-override: 131.2%; descent-override: 26.25%; line-gap-override: 0%; }
 
 @font-face { font-family: "Barlow Fallback R"; font-weight: 400; src: local("Roboto"), local("Roboto-Regular"); size-adjust: 96.7%; ascent-override: 103.4%; descent-override: 20.7%; line-gap-override: 0%; }
 @font-face { font-family: "Barlow Fallback R"; font-weight: 500 700; src: local("Roboto Bold"), local("Roboto-Bold"); size-adjust: 96.8%; ascent-override: 103.3%; descent-override: 20.7%; line-gap-override: 0%; }
@@ -267,7 +267,7 @@ small { font-size: .85em; }
 /* the option tab stands out (the owner, Nov 1 2026): an orange button, and its panel on an orange-tinted card with an orange frame */
 .equip-tab.is-option { background: var(--orange); color: var(--ink); border-radius: 6px 6px 0 0; padding: 8px 14px 7px; border-bottom-color: var(--orange-deep); }
 .equip-tab.is-option:hover { background: var(--orange-deep); color: var(--ink); }
-.equip-tab.is-option[aria-selected="true"] { background: var(--orange-deep); color: var(--white); border-bottom-color: var(--ink); }
+.equip-tab.is-option[aria-selected="true"] { background: var(--orange-deep); color: var(--ink); border-bottom-color: var(--ink); }
 .equip-chip { padding: 1px 7px; border-radius: 11px; background: var(--white); color: var(--orange-ink); font-family: var(--sans, inherit); font-weight: 700; font-size: 11px; line-height: 16px; letter-spacing: .06em; text-transform: uppercase; }
 .equip-x { background: var(--orange-tint); border: 2px solid var(--orange); border-radius: 8px; padding: 6px 18px 16px; margin-top: 12px; }
 .equip-x .features li { border-top-color: rgba(242, 138, 31, .28); }
@@ -1308,7 +1308,7 @@ body.ai-locked { overflow: hidden; }
 .force-chart caption small { display: block; font-family: var(--sans); font-weight: 400; font-size: 13.5px; color: var(--steel); margin-top: 2px; }
 .force-chart th, .force-chart td { border: 1px solid var(--line-soft); padding: 5px 2px; text-align: center; min-width: 38px; }
 .force-chart thead th { background: var(--charcoal); color: #fff; font-weight: 600; font-size: 12.5px; }
-.force-chart thead th.fc-key { background: var(--orange-deep); font-family: var(--cond); font-size: 17px; }
+.force-chart thead th.fc-key { background: var(--orange); color: var(--ink); font-family: var(--cond); font-size: 17px; }
 .force-chart tbody th { background: var(--paper); font-weight: 700; }
 .force-chart td.fc-side { background: var(--paper); color: var(--steel); }
 .force-chart td.is-near { background: #eef0f2; }
@@ -1322,14 +1322,14 @@ body.ai-locked { overflow: hidden; }
 }
 /* force charts: the banner that names the thickness row (S) and the row that names the cells (F) */
 .force-chart thead th.fc-s { background: var(--charcoal); color: #fff; font-family: var(--cond); font-size: 18px; font-weight: 600; text-align: left; padding: 7px 12px; letter-spacing: .01em; border-bottom: 1px solid #44464a; }
-.force-chart thead th.fc-key small { display: block; font-family: var(--sans); font-size: 10.5px; font-weight: 500; line-height: 1.15; margin-top: 1px; color: #fff; opacity: .92; }
+.force-chart thead th.fc-key small { display: block; font-family: var(--sans); font-size: 10.5px; font-weight: 500; line-height: 1.15; margin-top: 1px; color: var(--ink); opacity: .9; }
 .force-chart .fc-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; height: 26px; padding: 0 4px; margin-right: 6px; background: var(--orange); color: var(--ink); font-family: var(--cond); font-weight: 700; font-size: 18px; vertical-align: middle; }
 .force-chart .fc-arrow { color: var(--orange); font-weight: 700; margin-left: 4px; }
 .force-chart tr.fc-s-row th { background: #3a3c3f; }
 .force-chart tr.fc-f-row td { background: var(--paper); text-align: left; padding: 8px 12px; font-size: 13.5px; color: var(--ink); border-top: 2px solid var(--line); }
 .force-chart .fc-badge.is-f { background: var(--orange-deep); color: #fff; }
 /* controls table: automatic bend sequence and collision check, side by side */
-.ctl-table th.ctl-key { background: var(--orange-deep); color: #fff; }
+.ctl-table th.ctl-key { background: var(--orange); color: var(--ink); }
 .ctl-table .yn { display: inline-block; font-weight: 700; white-space: normal; }
 .ctl-table .yn::before { display: inline-block; width: 1.15em; font-weight: 700; }
 .ctl-table .yn.is-yes { color: var(--ink); }
