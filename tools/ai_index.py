@@ -79,11 +79,17 @@ def gauge_values(cell):
 
 def thickness(cell):
     """Largest thickness in a capacity cell, inches: '12 ga / 11 ga (2.5 / 3 mm)' → 0.118; '1/4″ (6 mm)' → 0.236."""
+    cell = re.sub(r"\S+″\s+offsets?\b[^,;]*", " ", cell)          # '20 ga — 1/2″ offsets to 90°': the offset is not a thickness
     mm = mm_values(cell)
     if mm:
-        return max(mm) / 25.4
-    vals = inch_values(cell) + gauge_values(cell)
-    return max(vals) if vals else None
+        top = max(mm) / 25.4
+    else:
+        vals = inch_values(cell)
+        top = max(vals) if vals else None
+    ga = gauge_values(cell)
+    if ga and (top is None or max(ga) >= top * 0.85):
+        return max(ga)            # the gauge is the rating a buyer reads ('24 ga (0.7 mm)' is a 24 ga brake, not a 23 ga one)
+    return top
 
 
 def length(cell):
@@ -288,6 +294,24 @@ def row_caps(label, cell, caps):
             if v:
                 caps["wall"] = r3(max(v, caps.get("wall") or 0))
             return
+        elif re.search(r"alumin|stainless|copper|brass", c, re.I):
+            # one cell, several materials: '24 ga (0.7 mm) steel, 0.032″ (0.8 mm) aluminum' — the mild-steel figure is the
+            # rating, the others are kept apart (a 22 ga steel job must not pass on the aluminum number)
+            v = None
+            for seg in re.split(r"[,;]|\s[—–-]\s", c):
+                sv = thickness(seg)
+                if not sv:
+                    continue
+                if re.search(r"stainless", seg, re.I):
+                    caps["thk_ss"] = r3(max(sv, caps.get("thk_ss") or 0))
+                elif re.search(r"alumin", seg, re.I):
+                    caps["thk_al"] = r3(max(sv, caps.get("thk_al") or 0))
+                elif re.search(r"copper|brass", seg, re.I):
+                    continue
+                else:
+                    v = max(v or 0, sv)
+            if v is None and not re.search(r"steel", c, re.I) and not re.search(r"mild steel", L):
+                return
         else:
             v = thickness(c)
         if v and v < 6:

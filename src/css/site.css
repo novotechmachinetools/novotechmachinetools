@@ -119,8 +119,10 @@ small { font-size: .85em; }
    path down to it does not close it (the owner, Nov 1 2026) */
 @media (min-width: 961px) { .nav-menu > li.is-hover .mega { display: grid; } }
 .sub-menu { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 18px; }
-.mega-preview { min-width: 0; padding-left: 26px; border-left: 1px solid var(--line-soft); }
-.mega-preview:empty { align-self: stretch; min-height: 280px; background: var(--paper); border-left: 0; }
+/* the photos stay in view while the long list scrolls (sticky inside the panel; their own scroll when a category has many cards) —
+   the owner, Nov 7 2026: "on the items at the bottom the photos cannot be seen at all" */
+.mega-preview { min-width: 0; padding-left: 26px; border-left: 1px solid var(--line-soft); position: sticky; top: 16px; align-self: start; max-height: calc(100vh - var(--header-h) - 46px); overflow-y: auto; overscroll-behavior: contain; }
+.mega-preview:empty { position: static; align-self: stretch; min-height: 280px; max-height: none; background: var(--paper); border-left: 0; }
 .mega-head { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
 .mega-title { margin: 0; font: 700 22px/1.2 var(--cond); }
 .mega-title a { color: var(--charcoal); text-decoration: none; }
@@ -791,10 +793,11 @@ small { font-size: .85em; }
 .ai-open:hover, .ai-open:focus-visible { border-color: var(--orange); color: var(--orange-ink); background: #FFF7EE; }
 .ai-open svg { flex: none; }
 .ai-open-badge { display: none; }
-.ai-panel { position: fixed; inset: 0; z-index: 90; display: flex; align-items: flex-start; justify-content: center; padding: 4vh 16px 16px; }
+/* the panel fills most of the screen: the answer is a long list of machine cards (the owner, Nov 7 2026: "a bit bigger — many models get listed") */
+.ai-panel { position: fixed; inset: 0; z-index: 90; display: flex; align-items: flex-start; justify-content: center; padding: 2vh 16px 12px; }
 .ai-panel[hidden] { display: none; }
 .ai-backdrop { position: absolute; inset: 0; background: rgba(31, 32, 34, .6); }
-.ai-dialog { position: relative; width: min(880px, 100%); height: min(860px, 92vh); display: flex; flex-direction: column; background: var(--white); border-radius: 14px; box-shadow: 0 24px 60px rgba(0, 0, 0, .35); overflow: hidden; }
+.ai-dialog { position: relative; width: min(1180px, 100%); height: min(1160px, 96vh); display: flex; flex-direction: column; background: var(--white); border-radius: 14px; box-shadow: 0 24px 60px rgba(0, 0, 0, .35); overflow: hidden; }
 .ai-head { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: var(--charcoal); color: #fff; border-bottom: 4px solid var(--orange); }
 .ai-logo, .ai-avatar { flex: none; display: inline-grid; place-items: center; border-radius: 50%; background: var(--orange); color: var(--ink); font-family: var(--cond); font-weight: 800; letter-spacing: .02em; }
 .ai-logo { width: 44px; height: 44px; font-size: 20px; box-shadow: 0 0 0 4px rgba(242, 138, 31, .25); }
@@ -845,6 +848,13 @@ small { font-size: .85em; }
 .ai-warn li { color: #7A4510; }
 .ai-warn li::before { content: "!"; position: absolute; left: 0; top: 1px; width: 17px; height: 17px; border-radius: 50%; background: var(--orange); color: var(--ink); font-weight: 800; font-size: 12px; line-height: 17px; text-align: center; }
 .ai-specs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 16px; margin: 9px 0 0; padding: 9px 0 0; border-top: 1px dashed var(--line); }
+@media (min-width: 1100px) {
+  .ai-log { padding: 20px 22px 10px; }
+  .ai-card { grid-template-columns: 270px minmax(0, 1fr); }
+  .ai-card .ai-img { min-height: 190px; }
+  .ai-card .ai-img img { max-height: 220px; }
+  .ai-specs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .ai-specs div { min-width: 0; }
 .ai-specs dt { font-size: 11.5px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--steel); line-height: 1.25; }
 .ai-specs dd { margin: 2px 0 0; font-size: 14.5px; font-weight: 600; color: var(--ink); line-height: 1.3; overflow-wrap: anywhere; }

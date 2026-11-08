@@ -725,8 +725,8 @@
       if (N.wall && c.wall) pass(N.wall <= c.wall * 1.02, "wall up to " + fmtIn(c.wall));
     }
     // sheet and plate machines: thickness and working length
-    var thkCap = req.qual.stainless && c.thk_ss ? c.thk_ss : c.thk;
-    if (N.thk && thkCap && (SHEET_THK[page] || PRESS_BRAKES[page] && !c.ton)) pass(N.thk <= thkCap * 1.07, fmtThk(thkCap) + (req.qual.stainless && c.thk_ss ? " stainless" : " mild steel") + " capacity", N.thk / thkCap);
+    var thkCap = req.qual.stainless && c.thk_ss ? c.thk_ss : req.qual.aluminum && c.thk_al ? c.thk_al : c.thk;
+    if (N.thk && thkCap && (SHEET_THK[page] || PRESS_BRAKES[page] && !c.ton)) pass(N.thk <= thkCap * 1.07, fmtThk(thkCap) + (req.qual.stainless && c.thk_ss ? " stainless" : req.qual.aluminum && c.thk_al ? " aluminum" : " mild steel") + " capacity", N.thk / thkCap);
     if (N.len && c.len && (SHEET_THK[page] || PRESS_BRAKES[page] || page === "horizontal-press-brake")) pass(N.len <= c.len * 1.01, fmtLen(c.len) + (PRESS_BRAKES[page] ? " bending length" : " working length"), N.len / c.len);
     if (N.D && c.min_d && !c.sec) pass(c.min_d <= N.D * 1.02, "rolls down to Ø" + fmtIn(c.min_d));
     // press brakes: the force a bend needs (air bending, die opening 8 × thickness): 575 × t² / V US tons per foot
