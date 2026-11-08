@@ -9,18 +9,23 @@ src/root/.htaccess will do on the server: the mod_alias Redirect / RedirectMatch
 The Search Console exports are private data: keep them outside the repository (e.g. /home/claude/seo-data/).
 Build the site first (python3 build.py) so dist/ holds the production pages.
 """
-import csv, os, re, sys
+import csv, os, re, shlex, sys
 from urllib.parse import urlsplit, unquote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
 rules = []
 for line in open(os.path.join(ROOT, "src", "root", ".htaccess"), encoding="utf-8"):
-    p = line.split()
+    try:
+        p = shlex.split(line)
+    except ValueError:
+        p = line.split()
     if not p or p[0].startswith("#"):
         continue
-    if p[0] == "RedirectMatch" and len(p) >= 4:
-        rules.append(("match", re.compile(p[2]), p[3]))
+    if p[0] == "RedirectMatch" and len(p) >= 3 and p[1] == "410":
+        rules.append(("gone", re.compile(p[2].replace("\\s", " ")), None))
+    elif p[0] == "RedirectMatch" and len(p) >= 4:
+        rules.append(("match", re.compile(p[2].replace("\\s", " ")), p[3]))
     elif p[0] == "Redirect" and len(p) >= 4:
         rules.append(("prefix", p[2], p[3]))
 
@@ -43,7 +48,10 @@ def exists(path):
 def step(path):
     """one request: (status, location or file)"""
     for kind, pat, dest in rules:
-        if kind == "match":
+        if kind == "gone":
+            if pat.search(path):
+                return 410, None
+        elif kind == "match":
             m = pat.search(path)
             if m:
                 return 301, m.expand(re.sub(r"\$(\d)", r"\\\1", dest))
@@ -75,14 +83,16 @@ def main():
                     continue
                 num = lambda x: float(x.replace(",", "").replace("%", "") or 0)
                 rows.append((r[0], num(r[1]) if len(r) > 1 else 0, num(r[2]) if len(r) > 2 else 0))
-    seen, bad, home, chains, ok = set(), [], [], [], 0
+    seen, bad, home, chains, ok, gone = set(), [], [], [], 0, 0
     for url, clicks, impr in sorted(rows, key=lambda x: -x[1]):
         u = urlsplit(url)
         if u.path in seen:
             continue
         seen.add(u.path)
         st, final, hops = follow(u.path or "/")
-        if st != 200:
+        if st == 410:
+            gone += 1
+        elif st != 200:
             bad.append((url, clicks, impr, st, final))
         elif hops and final in ("/", "/index"):
             home.append((url, clicks, impr))
@@ -91,7 +101,7 @@ def main():
         # one hop is the .html → clean address rule; a second one means a redirect that lands on a .html address
         if len(hops) > 1 and not (len(hops) == 2 and not hops[0].endswith(".html") and hops[1] == hops[0]):
             chains.append((url, hops))
-    print(f"{len(seen)} old addresses: {ok} reach a page, {len(home)} redirect to the home page, {len(bad)} end on an error")
+    print(f"{len(seen)} old addresses: {ok} reach a page, {len(home)} redirect to the home page, {gone} are marked gone (410, old pictures), {len(bad)} end on an error")
     for url, c, i, st, final in bad:
         print(f"  {st}  {int(c):5d} clicks {int(i):7d} impr  {url}  ->  {final}")
     for url, c, i in home:

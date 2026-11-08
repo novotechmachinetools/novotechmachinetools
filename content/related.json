@@ -76,11 +76,12 @@
  "pages": {
   "press-brake": [
    "press-brake-tooling-punch-and-die",
+   "folder-sheet-metal-brake",
+   "horizontal-press-brake",
    "panel-bender",
-   "shear-cutting",
-   "laser-cutting-machine",
    "v-grooving-machine",
-   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
+   "shear-cutting",
+   "laser-cutting-machine"
   ],
   "hydraulic-press-brake": [
    "press-brake-tooling-punch-and-die",
@@ -107,36 +108,40 @@
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
   ],
   "horizontal-press-brake": [
+   "press-brake",
+   "folder-sheet-metal-brake",
+   "panel-bender",
+   "v-grooving-machine",
+   "press-brake-tooling-punch-and-die",
    "ironworker-machines",
-   "angle-rolls",
-   "hydraulic-press",
-   "hydraulic-punching-machines",
-   "band-saw",
-   "pipe-benders"
+   "angle-rolls"
   ],
   "panel-bender": [
    "press-brake",
+   "folder-sheet-metal-brake",
+   "horizontal-press-brake",
+   "v-grooving-machine",
+   "press-brake-tooling-punch-and-die",
    "laser-cutting-machine",
-   "shear-cutting",
-   "corner-notcher",
-   "hydraulic-folding-machine",
-   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
+   "shear-cutting"
   ],
   "v-grooving-machine": [
    "press-brake",
+   "folder-sheet-metal-brake",
+   "horizontal-press-brake",
    "panel-bender",
    "press-brake-tooling-punch-and-die",
    "shear-cutting",
-   "laser-cutting-machine",
-   "corner-welding-machines"
+   "laser-cutting-machine"
   ],
   "press-brake-tooling-punch-and-die": [
    "press-brake",
-   "hydraulic-press-brake",
-   "electric-press-brake",
-   "compact-hydraulic-press-brakes",
+   "folder-sheet-metal-brake",
+   "horizontal-press-brake",
+   "panel-bender",
    "v-grooving-machine",
-   "laser-cutting-machine"
+   "hydraulic-press-brake",
+   "electric-press-brake"
   ],
   "european-press-brake-punches": [
    "press-brake",
@@ -181,12 +186,13 @@
    "v-grooving-machine"
   ],
   "folder-sheet-metal-brake": [
-   "shear-cutting",
-   "corner-notcher",
    "press-brake",
-   "bead-rollers",
-   "lock-former",
-   "panel-bender"
+   "horizontal-press-brake",
+   "panel-bender",
+   "v-grooving-machine",
+   "press-brake-tooling-punch-and-die",
+   "shear-cutting",
+   "corner-notcher"
   ],
   "box-and-pan-brake": [
    "mechanical-guillotine-shear",
@@ -231,10 +237,12 @@
    "corner-notcher"
   ],
   "shear-cutting": [
+   "ironworker-machines",
+   "corner-notcher",
+   "plate-beveler",
    "press-brake",
    "folder-sheet-metal-brake",
    "laser-cutting-machine",
-   "corner-notcher",
    "plate-rollers"
   ],
   "hydraulic-shearing-machine": [
@@ -252,10 +260,10 @@
    "plate-rollers"
   ],
   "laser-cutting-machine": [
-   "press-brake",
-   "panel-bender",
    "tube-laser-cutting-machine",
    "laser-welding-machine",
+   "press-brake",
+   "panel-bender",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
   ],
   "fiber-laser-cutting-machine": [
@@ -294,13 +302,13 @@
    "tube-laser-cutting-machine"
   ],
   "tube-laser-cutting-machine": [
+   "laser-cutting-machine",
+   "laser-welding-machine",
    "pipe-benders",
    "tube-end-forming-machines",
    "pipe-notcher",
    "band-saw",
-   "laser-welding-machine",
-   "pipe-sanding-polishing-machines",
-   "laser-cutting-machine"
+   "pipe-sanding-polishing-machines"
   ],
   "laser-welding-machine": [
    "laser-cutting-machine",
@@ -348,35 +356,40 @@
    "pipe-notcher"
   ],
   "bead-rollers": [
+   "circle-cutters-and-seamers",
+   "lock-former",
+   "hydraulic-press",
+   "riveting-machine",
    "sheet-metal-hand-brake",
    "mechanical-guillotine-shear",
-   "lock-former",
-   "circle-cutters-and-seamers",
    "box-and-pan-brake"
   ],
   "lock-former": [
+   "circle-cutters-and-seamers",
+   "bead-rollers",
+   "hydraulic-press",
+   "riveting-machine",
    "mechanical-guillotine-shear",
    "box-and-pan-brake",
-   "bead-rollers",
-   "circle-cutters-and-seamers",
-   "corner-notcher",
-   "folder-sheet-metal-brake"
+   "corner-notcher"
   ],
   "circle-cutters-and-seamers": [
+   "bead-rollers",
+   "lock-former",
+   "hydraulic-press",
+   "riveting-machine",
    "plate-rollers",
    "welding-automation",
-   "plate-beveler",
-   "shear-cutting",
-   "bead-rollers",
-   "lock-former"
+   "plate-beveler"
   ],
   "ironworker-machines": [
-   "hydraulic-punching-machines",
+   "shear-cutting",
    "corner-notcher",
+   "plate-beveler",
+   "hydraulic-punching-machines",
    "band-saw",
    "angle-rolls",
-   "horizontal-press-brake",
-   "drill-press"
+   "horizontal-press-brake"
   ],
   "hydraulic-punching-machines": [
    "ironworker-machines",
@@ -386,40 +399,46 @@
    "horizontal-press-brake"
   ],
   "corner-notcher": [
+   "ironworker-machines",
    "shear-cutting",
+   "plate-beveler",
    "compact-hydraulic-press-brakes",
    "folder-sheet-metal-brake",
-   "ironworker-machines",
    "hydraulic-punching-machines",
    "corner-welding-machines"
   ],
   "hydraulic-press": [
+   "circle-cutters-and-seamers",
+   "bead-rollers",
+   "lock-former",
    "riveting-machine",
    "horizontal-press-brake",
    "ironworker-machines",
-   "hydraulic-punching-machines",
-   "drill-press",
-   "welding-automation",
-   "plate-rollers"
+   "hydraulic-punching-machines"
   ],
   "plate-beveler": [
+   "ironworker-machines",
+   "shear-cutting",
+   "corner-notcher",
    "welding-automation",
    "plate-rollers",
    "large-format-plate-laser",
-   "hydraulic-shearing-machine",
-   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
+   "hydraulic-shearing-machine"
   ],
   "drill-press": [
    "milling-machine",
+   "cnc-lathe",
+   "vertical-machining-center",
+   "surface-grinder",
    "band-saw",
    "ironworker-machines",
-   "hydraulic-punching-machines",
-   "belt-grinder"
+   "hydraulic-punching-machines"
   ],
   "pipe-benders": [
-   "tube-laser-cutting-machine",
    "pipe-notcher",
+   "wire-bending-machines",
    "tube-end-forming-machines",
+   "tube-laser-cutting-machine",
    "circular-cold-saws",
    "pipe-sanding-polishing-machines",
    "angle-rolls"
@@ -450,40 +469,44 @@
   ],
   "pipe-notcher": [
    "pipe-benders",
+   "wire-bending-machines",
+   "tube-end-forming-machines",
    "rotary-draw-tube-benders",
    "circular-cold-saws",
    "band-saw",
-   "welding-automation",
-   "belt-grinder"
+   "welding-automation"
   ],
   "tube-end-forming-machines": [
    "pipe-benders",
+   "pipe-notcher",
+   "wire-bending-machines",
    "circular-cold-saws",
    "tube-laser-cutting-machine",
-   "pipe-notcher",
    "pipe-sanding-polishing-machines"
   ],
   "pipe-sanding-polishing-machines": [
-   "tube-end-deburring-machine",
-   "belt-grinder",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+   "belt-grinder",
+   "corner-grinding-machines",
+   "tube-end-deburring-machine",
    "pipe-benders",
    "tube-laser-cutting-machine",
    "pipe-notcher"
   ],
   "wire-bending-machines": [
    "pipe-benders",
-   "rotary-draw-tube-benders",
+   "pipe-notcher",
    "tube-end-forming-machines",
+   "rotary-draw-tube-benders",
    "rebar-bender-and-cutter"
   ],
   "band-saw": [
    "band-saw-blades",
+   "aluminum-and-pvc-upcut-saws",
    "circular-cold-saws",
    "ironworker-machines",
    "drill-press",
-   "pipe-notcher",
-   "aluminum-and-pvc-upcut-saws"
+   "pipe-notcher"
   ],
   "manual-band-saws": [
    "band-saw-blades",
@@ -550,6 +573,7 @@
   "circular-cold-saws": [
    "band-saw",
    "aluminum-and-pvc-upcut-saws",
+   "band-saw-blades",
    "pipe-notcher",
    "pipe-benders",
    "tube-end-forming-machines",
@@ -557,42 +581,50 @@
   ],
   "band-saw-blades": [
    "band-saw",
+   "aluminum-and-pvc-upcut-saws",
+   "circular-cold-saws",
    "semi-automatic-band-saws",
    "automatic-band-saws",
    "double-column-band-saws",
-   "vertical-band-saws",
-   "circular-cold-saws"
+   "vertical-band-saws"
   ],
   "aluminum-and-pvc-upcut-saws": [
-   "pvc-aluminum-window-machines",
-   "circular-cold-saws",
    "band-saw",
+   "circular-cold-saws",
+   "band-saw-blades",
+   "pvc-aluminum-window-machines",
    "woodworking-machinery",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding"
   ],
   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding": [
-   "laser-cutting-machine",
-   "press-brake",
+   "pipe-sanding-polishing-machines",
    "belt-grinder",
    "corner-grinding-machines",
+   "tube-end-deburring-machine",
+   "laser-cutting-machine",
+   "press-brake",
    "plate-beveler"
   ],
   "belt-grinder": [
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "pipe-sanding-polishing-machines",
    "corner-grinding-machines",
+   "tube-end-deburring-machine",
    "drill-press",
    "band-saw",
    "pipe-notcher"
   ],
   "corner-grinding-machines": [
-   "corner-welding-machines",
-   "belt-grinder",
    "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
+   "pipe-sanding-polishing-machines",
+   "belt-grinder",
+   "tube-end-deburring-machine",
+   "corner-welding-machines",
    "corner-notcher",
    "laser-welding-machine"
   ],
   "corner-welding-machines": [
+   "welding-automation",
    "corner-grinding-machines",
    "corner-notcher",
    "compact-hydraulic-press-brakes",
@@ -600,32 +632,32 @@
    "folder-sheet-metal-brake"
   ],
   "cnc-lathe": [
+   "drill-press",
+   "milling-machine",
    "vertical-machining-center",
    "surface-grinder",
-   "milling-machine",
-   "drill-press",
    "band-saw"
   ],
   "vertical-machining-center": [
+   "drill-press",
+   "milling-machine",
    "cnc-lathe",
    "surface-grinder",
-   "milling-machine",
-   "drill-press",
    "band-saw"
   ],
   "surface-grinder": [
+   "drill-press",
+   "milling-machine",
    "cnc-lathe",
    "vertical-machining-center",
-   "milling-machine",
-   "belt-grinder",
-   "drill-press"
+   "belt-grinder"
   ],
   "milling-machine": [
-   "vertical-machining-center",
-   "cnc-lathe",
    "drill-press",
-   "band-saw",
-   "surface-grinder"
+   "cnc-lathe",
+   "vertical-machining-center",
+   "surface-grinder",
+   "band-saw"
   ],
   "rebar-bender-and-cutter": [
    "wire-bending-machines",
@@ -682,18 +714,20 @@
    "band-saw"
   ],
   "tube-end-deburring-machine": [
+   "sheet-metal-plate-deburring-edge-rounding-finishing-grinding",
    "pipe-sanding-polishing-machines",
+   "belt-grinder",
+   "corner-grinding-machines",
    "pipe-notcher",
    "tube-end-forming-machines",
-   "circular-cold-saws",
-   "belt-grinder"
+   "circular-cold-saws"
   ],
   "welding-automation": [
+   "corner-welding-machines",
    "plate-rollers",
    "plate-beveler",
    "laser-welding-machine",
-   "pipe-notcher",
-   "corner-welding-machines"
+   "pipe-notcher"
   ],
   "welding-positioners": [
    "plate-beveler",
