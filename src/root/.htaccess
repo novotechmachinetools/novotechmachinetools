@@ -75,6 +75,10 @@ RedirectMatch 301 ^/tube-laser-cutter(\.html)?$ /tube-laser-cutting-machine
 RedirectMatch 301 ^/heavy-duty-tube-laser(\.html)?$ /tube-laser-cutting-machine
 RedirectMatch 301 ^/slip-rolls(\.html)?$ /plate-rollers
 RedirectMatch 301 ^/cold-saw-carbide-saw-cutting(\.html)?$ /automatic-cold-saws#bekamak-circular-group
+# Old pages with backlinks (Ahrefs, Nov 2026) whose products are no longer sold: the nearest page keeps the link value
+RedirectMatch 301 ^/magnetic-drill(\.html)?$ /drill-press
+RedirectMatch 301 ^/lifting-magnet(\.html)?$ /products
+RedirectMatch 301 ^/annular-cutter(s)?(\.html)?$ /drill-press
 
 # Old-site PDF brochures that earn search traffic (Search Console, Jun 2025 – Oct 2026) → the rebuilt page or the new catalogue.
 # PDFs of product lines not rebuilt yet stay where they are on the host until their pages exist.
