@@ -121467,5 +121467,47 @@
    "file": "img/site/nt-hero-poster-tall-thumb.webp",
    "bytes": 2214
   }
+ },
+ "nt-showroom-collage": {
+  "alt": "Twelve views of NovoTech's showroom and warehouse in Mississauga, ON: ironworkers, rebar benders and cutters, section benders, plate rollers, band saws and pipe polishers in stock",
+  "variants": [
+   {
+    "w": 2400,
+    "h": 1354,
+    "file": "img/site/nt-showroom-collage-2400.webp",
+    "bytes": 675280
+   },
+   {
+    "w": 1600,
+    "h": 903,
+    "file": "img/site/nt-showroom-collage-1600.webp",
+    "bytes": 330282
+   },
+   {
+    "w": 1280,
+    "h": 722,
+    "file": "img/site/nt-showroom-collage-1280.webp",
+    "bytes": 225422
+   },
+   {
+    "w": 960,
+    "h": 542,
+    "file": "img/site/nt-showroom-collage-960.webp",
+    "bytes": 140000
+   },
+   {
+    "w": 640,
+    "h": 361,
+    "file": "img/site/nt-showroom-collage-640.webp",
+    "bytes": 70630
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-showroom-collage-thumb.webp",
+   "bytes": 6108
+  }
  }
 }

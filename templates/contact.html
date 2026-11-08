@@ -54,7 +54,7 @@
       {% for v in page.visit %}<li>{{ v }}</li>{% endfor %}
     </ul>
     <p class="footer-title footer-follow">Follow NovoTech</p>
-    {{ social_links("social social-dark") }}
+    {{ social_links("social social-dark", more=True) }}
   </div>
   <div class="visit-photo">{{ photo(img(page.visit_image or "nt-showroom-building"), "(max-width: 900px) 92vw, 640px") }}</div>
 </section>
