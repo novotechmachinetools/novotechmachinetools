@@ -81,13 +81,7 @@
 {% set slides = page.work_slides %}
 <section class="hp-work" aria-labelledby="hp-work-title">
   <div class="wrap">
-    <div class="hp-head is-dark">
-      <div>
-        <p class="hp-eyebrow">Machines at work</p>
-        <h2 id="hp-work-title">See them cut, bend and roll</h2>
-      </div>
-      <p class="hp-head-lead">NovoTech's main machines at work. Open one for its models, specifications, photos and videos.</p>
-    </div>
+    <h2 id="hp-work-title" class="sr-only">NovoTech's main machines at work</h2>{# the owner: no heading text over the slides #}
     <div class="hp-slider" data-slider>
       <div class="hp-slides" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Machines at work">
         {% for s in slides %}{% set im = img(s.image) %}

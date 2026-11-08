@@ -82,7 +82,7 @@
 .hp-idx-img.is-cutout img { object-fit: contain; }
 
 /* ---------- machines at work ---------- */
-.hp-work { padding: 64px 0 60px; background: #1C1D1F; color: #fff; }
+.hp-work { padding: 40px 0 44px; background: #1C1D1F; color: #fff; }
 .hp-slider { position: relative; }
 .hp-slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; border-radius: 14px; outline: none; }
 .hp-slides::-webkit-scrollbar { display: none; }
@@ -178,7 +178,7 @@
   .hp-idx summary::after { content: ""; flex: none; width: 9px; height: 9px; margin: 0 4px 0 10px; border-right: 2.5px solid var(--charcoal); border-bottom: 2.5px solid var(--charcoal); transform: rotate(45deg); transition: transform .2s; }
   .hp-idx[open] summary::after { transform: rotate(-135deg); }
   .hp-idx summary span { margin-left: auto; }
-  .hp-work { padding: 42px 0 36px; }
+  .hp-work { padding: 24px 0 28px; }
   .hp-slides { border-radius: 10px; }
   .hp-cap h3 { font-size: 28px; }
   .hp-cap-line { font-size: 15.5px; margin-bottom: 16px; }
