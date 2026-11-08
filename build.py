@@ -6,6 +6,7 @@
 
 Content lives in content/, templates in templates/, static assets in src/.
 """
+import html as html_lib
 import urllib.parse
 import json, os, re, shutil, sys, datetime, hashlib
 import html as html_mod
@@ -2120,9 +2121,37 @@ def main():
         return site["domain"] + "/" if p["slug"] == "index" else f"{site['domain']}/{p['slug']}"
     def prio(p):
         return "1.0" if p["slug"] == "index" else "0.9" if p.get("subpages") or p["slug"] == "products" else "0.5" if p["slug"] == "privacy-policy" else "0.8"
-    urls = "".join(f"  <url><loc>{loc(p)}</loc><lastmod>{changed.get(p['slug'], today)}</lastmod><changefreq>monthly</changefreq><priority>{prio(p)}</priority></url>\n" for p in pages
+    def page_videos(p):
+        """<video:video> entries for the page: the VideoObjects of its JSON-LD (the same videos the page embeds), so Google's
+        video report finds them from the sitemap as it did on the old site (Nov 8 2026)."""
+        fn = os.path.join(DIST, ("index" if p["slug"] == "index" else p["slug"]) + ".html")
+        if not os.path.exists(fn):
+            return ""
+        out, seen = [], set()
+        for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', open(fn, encoding="utf-8").read(), re.S):
+            try:
+                data = json.loads(block)
+            except ValueError:
+                continue
+            for o in data.get("@graph", []) if isinstance(data, dict) else []:
+                if not isinstance(o, dict) or o.get("@type") != "VideoObject" or o.get("embedUrl") in seen or not o.get("thumbnailUrl"):
+                    continue
+                seen.add(o["embedUrl"])
+                m = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$", o.get("duration") or "")
+                secs = (int(m.group(1) or 0) * 3600 + int(m.group(2) or 0) * 60 + int(m.group(3) or 0)) if m else 0
+                e = lambda x: html_lib.escape(str(x), quote=True)
+                out.append("    <video:video><video:thumbnail_loc>" + e(o["thumbnailUrl"][0]) + "</video:thumbnail_loc>"
+                           + "<video:title>" + e(o["name"][:100]) + "</video:title><video:description>" + e(o.get("description", o["name"])[:2048]) + "</video:description>"
+                           + "<video:player_loc>" + e(o["embedUrl"]) + "</video:player_loc>"
+                           + (f"<video:duration>{secs}</video:duration>" if 0 < secs <= 28800 else "")
+                           + ("<video:publication_date>" + e(o["uploadDate"]) + "</video:publication_date>" if o.get("uploadDate") else "")
+                           + "<video:family_friendly>yes</video:family_friendly></video:video>\n")
+                if len(out) >= 100:
+                    break
+        return "".join(out)
+    urls = "".join(f"  <url><loc>{loc(p)}</loc><lastmod>{changed.get(p['slug'], today)}</lastmod><changefreq>monthly</changefreq><priority>{prio(p)}</priority>\n{page_videos(p)}  </url>\n" for p in pages
                    if not p.get("noindex"))   # the page-not-found page stays out
-    open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
+    open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n{urls}</urlset>\n')
     if STAGING:
         open(os.path.join(DIST, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
     if MISSING_IMAGES:
